@@ -1,0 +1,319 @@
+Name:
+basic
+
+Dependencies:
+L10N:l10n offuh oovbaapi svtools xmlscript framework salhelper LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %COMMON_DEST%\res%_EXT%
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\lib\basic.lib %_DEST%\lib%_EXT%\basic.lib
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.a %_DEST%\lib%_EXT%\*.a
+..\%__SRC%\slb\sb.lib %_DEST%\lib%_EXT%\xsb.lib
+..\%__SRC%\slb\sb.lib %_DEST%\lib%_EXT%\sb.lib
+..\%__SRC%\srs\classes.srs %_DEST%\res%_EXT%\basic.srs
+..\%COMMON_OUTDIR%\srs\classes_srs.hid %COMMON_DEST%\res%_EXT%\basic_srs.hid
+..\%__SRC%\bin\sb?????.dll %_DEST%\bin%_EXT%\sb?????.dll
+..\%__SRC%\bin\sb?????.sym %_DEST%\bin%_EXT%\sb?????.sym
+..\%__SRC%\misc\sb?????.map %_DEST%\bin%_EXT%\sb?????.map
+..\%__SRC%\bin\sb*.res %_DEST%\bin%_EXT%\sb*.res
+..\%__SRC%\lib\sample.lib %_DEST%\lib%_EXT%\sample.lib
+..\%__SRC%\lib\libsample.a %_DEST%\lib%_EXT%\libsample.a
+..\%__SRC%\lib\sb.lib %_DEST%\lib%_EXT%\sb.lib
+
+mkdir: %_DEST%\inc%_EXT%\basic
+..\inc\basic\*.hxx %_DEST%\inc%_EXT%\basic\*.hxx
+..\inc\basic\*.hrc %_DEST%\inc%_EXT%\basic\*.hrc
+..\inc\basic\*.h %_DEST%\inc%_EXT%\basic\*.h
+
+..\inc\modsizeexceeded.hxx %_DEST%\inc%_EXT%\basic\modsizeexceeded.hxx
+..\%__SRC%\misc\sb.component %_DEST%\xml%_EXT%\sb.component
+
+
+Source Files:
+inc\pch\precompiled_basic.cxx
+source\basmgr\basicmanagerrepository.cxx
+source\basmgr\basmgr.cxx
+source\basmgr\vbahelper.cxx
+source\classes\disas.cxx
+source\classes\errobject.cxx
+source\classes\eventatt.cxx
+source\classes\image.cxx
+source\classes\propacc.cxx
+source\classes\sb.cxx
+source\classes\sbintern.cxx
+source\classes\sbunoobj.cxx
+source\classes\sbxmod.cxx
+source\comp\buffer.cxx
+source\comp\codegen.cxx
+source\comp\dim.cxx
+source\comp\exprgen.cxx
+source\comp\exprnode.cxx
+source\comp\exprtree.cxx
+source\comp\io.cxx
+source\comp\loops.cxx
+source\comp\parser.cxx
+source\comp\sbcomp.cxx
+source\comp\scanner.cxx
+source\comp\symtbl.cxx
+source\comp\token.cxx
+source\runtime\basrdll.cxx
+source\runtime\comenumwrapper.cxx
+source\runtime\ddectrl.cxx
+source\runtime\dllmgr.cxx
+source\runtime\inputbox.cxx
+source\runtime\iosys.cxx
+source\runtime\methods.cxx
+source\runtime\methods1.cxx
+source\runtime\props.cxx
+source\runtime\runtime.cxx
+source\runtime\sbdiagnose.cxx
+source\runtime\stdobj.cxx
+source\runtime\stdobj1.cxx
+source\runtime\step0.cxx
+source\runtime\step1.cxx
+source\runtime\step2.cxx
+source\sample\collelem.cxx
+source\sample\object.cxx
+source\sbx\sbxarray.cxx
+source\sbx\sbxbase.cxx
+source\sbx\sbxbool.cxx
+source\sbx\sbxbyte.cxx
+source\sbx\sbxchar.cxx
+source\sbx\sbxcoll.cxx
+source\sbx\sbxcurr.cxx
+source\sbx\sbxdate.cxx
+source\sbx\sbxdbl.cxx
+source\sbx\sbxdec.cxx
+source\sbx\sbxexec.cxx
+source\sbx\sbxform.cxx
+source\sbx\sbxint.cxx
+source\sbx\sbxlng.cxx
+source\sbx\sbxmstrm.cxx
+source\sbx\sbxobj.cxx
+source\sbx\sbxres.cxx
+source\sbx\sbxscan.cxx
+source\sbx\sbxsng.cxx
+source\sbx\sbxstr.cxx
+source\sbx\sbxuint.cxx
+source\sbx\sbxulng.cxx
+source\sbx\sbxvals.cxx
+source\sbx\sbxvalue.cxx
+source\sbx\sbxvar.cxx
+source\uno\dlgcont.cxx
+source\uno\modsizeexceeded.cxx
+source\uno\namecont.cxx
+source\uno\sbmodule.cxx
+source\uno\sbservices.cxx
+source\uno\scriptcont.cxx
+workben\mgrtest.cxx
+
+Header Files:
+inc\basrid.hxx
+inc\sb.hrc
+inc\sb.hxx
+inc\basic\basicmanagerrepository.hxx
+inc\basic\basicrt.hxx
+inc\basic\basmgr.hxx
+inc\basic\basrdll.hxx
+inc\basic\dispdefs.hxx
+inc\basic\modsizeexceeded.hxx
+inc\basic\mybasic.hxx
+inc\basic\process.hxx
+inc\basic\sbdef.hxx
+inc\basic\sberrors.hxx
+inc\basic\sbmeth.hxx
+inc\basic\sbmod.hxx
+inc\basic\sbobjmod.hxx
+inc\basic\sbprop.hxx
+inc\basic\sbstar.hxx
+inc\basic\sbstdobj.hxx
+inc\basic\sbuno.hxx
+inc\basic\sbx.hxx
+inc\basic\sbxbase.hxx
+inc\basic\sbxcore.hxx
+inc\basic\sbxdef.hxx
+inc\basic\sbxfac.hxx
+inc\basic\sbxform.hxx
+inc\basic\sbxmeth.hxx
+inc\basic\sbxmstrm.hxx
+inc\basic\sbxobj.hxx
+inc\basic\sbxprop.hxx
+inc\basic\sbxvar.hxx
+inc\basic\svtmsg.hrc
+inc\basic\testtool.hrc
+inc\basic\testtool.hxx
+inc\basic\ttglobal.hrc
+inc\basic\ttmsg.hrc
+inc\basic\ttstrhlp.hxx
+inc\basic\vbahelper.hxx
+inc\pch\precompiled_basic.hxx
+source\inc\buffer.hxx
+source\inc\codegen.hxx
+source\inc\collelem.hxx
+source\inc\disas.hxx
+source\inc\dlgcont.hxx
+source\inc\errobject.hxx
+source\inc\expr.hxx
+source\inc\filefmt.hxx
+source\inc\image.hxx
+source\inc\iosys.hxx
+source\inc\namecont.hxx
+source\inc\object.hxx
+source\inc\opcodes.hxx
+source\inc\parser.hxx
+source\inc\propacc.hxx
+source\inc\runtime.hxx
+source\inc\sbcomp.hxx
+source\inc\sbdiagnose.hxx
+source\inc\sbintern.hxx
+source\inc\sbjsmeth.hxx
+source\inc\sbjsmod.hxx
+source\inc\sbtrace.hxx
+source\inc\sbunoobj.hxx
+source\inc\scanner.hxx
+source\inc\scriptcont.hxx
+source\inc\stdobj.hxx
+source\inc\symtbl.hxx
+source\inc\token.hxx
+source\runtime\comenumwrapper.hxx
+source\runtime\ddectrl.hxx
+source\runtime\dllmgr.hxx
+source\runtime\rtlproto.hxx
+source\sbx\sbxconv.hxx
+source\sbx\sbxdec.hxx
+source\sbx\sbxres.hxx
+source\uno\sbmodule.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=basic
+	TARGET=inc
+
+source\basmgr\makefile.mk
+	PRJNAME=basic
+	TARGET=basicmgr
+	SLOFILES=
+	$(SLO)$/basmgr.obj
+	$(SLO)$/basicmanagerrepository.obj
+	$(SLO)$/vbahelper.obj
+
+source\classes\makefile.mk
+	PRJNAME=basic
+	TARGET=classes
+	SLOFILES=
+	$(SLO)$/sb.obj
+	$(SLO)$/sbxmod.obj
+	$(SLO)$/image.obj
+	$(SLO)$/sbintern.obj
+	$(SLO)$/sbunoobj.obj
+	$(SLO)$/propacc.obj
+	$(SLO)$/disas.obj
+	$(SLO)$/errobject.obj
+	$(SLO)$/eventatt.obj
+	OBJFILES=
+	$(OBJ)$/sbintern.obj
+
+source\comp\makefile.mk
+	PRJNAME=basic
+	TARGET=comp
+	SLOFILES=
+	$(SLO)$/buffer.obj
+	$(SLO)$/codegen.obj
+	$(SLO)$/dim.obj
+	$(SLO)$/exprgen.obj
+	$(SLO)$/exprnode.obj
+	$(SLO)$/exprtree.obj
+	$(SLO)$/io.obj
+	$(SLO)$/loops.obj
+	$(SLO)$/parser.obj
+	$(SLO)$/sbcomp.obj
+	$(SLO)$/scanner.obj
+	$(SLO)$/symtbl.obj
+	$(SLO)$/token.obj
+
+source\runtime\makefile.mk
+	PRJNAME=basic
+	TARGET=runtime
+	SLOFILES=
+	$(SLO)$/basrdll.obj
+	$(SLO)$/comenumwrapper.obj
+	$(SLO)$/inputbox.obj
+	$(SLO)$/runtime.obj
+	$(SLO)$/step0.obj
+	$(SLO)$/step1.obj
+	$(SLO)$/step2.obj
+	$(SLO)$/iosys.obj
+	$(SLO)$/stdobj.obj
+	$(SLO)$/stdobj1.obj
+	$(SLO)$/methods.obj
+	$(SLO)$/methods1.obj
+	$(SLO)$/props.obj
+	$(SLO)$/ddectrl.obj
+	$(SLO)$/dllmgr.obj
+	$(SLO)$/sbdiagnose.obj
+	SLOFILES+=$(SLO)$/wnt.obj
+	SLOFILES+=$(SLO)$/wnt-mingw.obj
+
+source\sample\makefile.mk
+	PRJNAME=basic
+	TARGET=sample
+	OBJFILES=
+	$(OBJ)$/object.obj
+	$(OBJ)$/collelem.obj
+
+source\sbx\makefile.mk
+	PRJNAME=basic
+	TARGET=sbx
+	SLOFILES=
+	$(SLO)$/sbxbase.obj
+	$(SLO)$/sbxres.obj
+	$(SLO)$/sbxvalue.obj
+	$(SLO)$/sbxvals.obj
+	$(SLO)$/sbxvar.obj
+	$(SLO)$/sbxarray.obj
+	$(SLO)$/sbxobj.obj
+	$(SLO)$/sbxcoll.obj
+	$(SLO)$/sbxexec.obj
+	$(SLO)$/sbxint.obj
+	$(SLO)$/sbxlng.obj
+	$(SLO)$/sbxsng.obj
+	$(SLO)$/sbxmstrm.obj
+	$(SLO)$/sbxdbl.obj
+	$(SLO)$/sbxcurr.obj
+	$(SLO)$/sbxdate.obj
+	$(SLO)$/sbxstr.obj
+	$(SLO)$/sbxbool.obj
+	$(SLO)$/sbxchar.obj
+	$(SLO)$/sbxbyte.obj
+	$(SLO)$/sbxuint.obj
+	$(SLO)$/sbxulng.obj
+	$(SLO)$/sbxform.obj
+	$(SLO)$/sbxscan.obj
+	$(SLO)$/sbxdec.obj
+
+source\uno\makefile.mk
+	PRJNAME=basic
+	TARGET=uno
+	SLOFILES=
+	$(SLO)$/namecont.obj
+	$(SLO)$/scriptcont.obj
+	$(SLO)$/dlgcont.obj
+	$(SLO)$/sbmodule.obj
+	$(SLO)$/sbservices.obj
+	$(SLO)$/modsizeexceeded.obj
+
+util\makefile.mk
+	PRJNAME=basic
+	TARGET=sb
+
+workben\makefile.mk
+	PRJNAME=basic
+	TARGET=miniapp

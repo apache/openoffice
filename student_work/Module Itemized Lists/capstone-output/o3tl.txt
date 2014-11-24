@@ -1,0 +1,33 @@
+Name:
+o3tl
+
+Dependencies:
+sal BOOST:boost NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\o3tl
+..\inc\o3tl\*.hxx %_DEST%\inc%_EXT%\o3tl\*.hxx
+
+Source Files:
+qa\cow_wrapper_clients.cxx
+qa\test-cow_wrapper.cxx
+qa\test-heap_ptr.cxx
+qa\test-range.cxx
+qa\test-vector_pool.cxx
+
+Header Files:
+inc\o3tl\cow_wrapper.hxx
+inc\o3tl\heap_ptr.hxx
+inc\o3tl\lazy_update.hxx
+inc\o3tl\range.hxx
+inc\o3tl\vector_pool.hxx
+qa\cow_wrapper_clients.hxx
+
+Patch Files:
+
+Makefiles:
+
+qa\makefile.mk
+	PRJNAME=o3tl
+	TARGET=tests
+	SLOFILES=$(SHL1OBJS)

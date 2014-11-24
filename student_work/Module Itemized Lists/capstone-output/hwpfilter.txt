@@ -1,0 +1,85 @@
+Name:
+hwpfilter
+
+Dependencies:
+offuh cppuhelper comphelper ZLIB:zlib LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\hwp.dll %_DEST%\bin%_EXT%\hwp.dll
+..\%__SRC%\lib\ihwp*.lib %_DEST%\bin%_EXT%\ihwp*.lib
+..\%__SRC%\lib\libhwp.so %_DEST%\lib%_EXT%\libhwp.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\hwp.component %_DEST%\xml%_EXT%\hwp.component
+
+Source Files:
+inc\pch\precompiled_hwpfilter.cxx
+source\attributes.cxx
+source\hwpreader.cxx
+
+Header Files:
+inc\pch\precompiled_hwpfilter.hxx
+source\attributes.hxx
+source\cspline.h
+source\datecode.h
+source\drawdef.h
+source\drawing.h
+source\formula.h
+source\grammar.h
+source\hbox.h
+source\hcode.h
+source\hfont.h
+source\hgzip.h
+source\hinfo.h
+source\hiodev.h
+source\hpara.h
+source\hstream.h
+source\hstyle.h
+source\htags.h
+source\hutil.h
+source\hwpeq.h
+source\hwpfile.h
+source\hwplib.h
+source\hwpreader.hxx
+source\ksc5601.h
+source\list.hxx
+source\mapping.h
+source\mzstring.h
+source\nodes.h
+source\precompile.h
+source\solver.h
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=hwpfilter
+	TARGET=inc
+
+source\makefile.mk
+	PRJNAME=hwpfilter
+	TARGET=hwp
+	SLOFILES=
+	$(SLO)$/attributes.obj
+	$(SLO)$/cspline.obj
+	$(SLO)$/fontmap.obj
+	$(SLO)$/formula.obj
+	$(SLO)$/grammar.obj
+	$(SLO)$/hbox.obj
+	$(SLO)$/hcode.obj
+	$(SLO)$/hfont.obj
+	$(SLO)$/hgzip.obj
+	$(SLO)$/hinfo.obj
+	$(SLO)$/hiodev.obj
+	$(SLO)$/hpara.obj
+	$(SLO)$/hstream.obj
+	$(SLO)$/hstyle.obj
+	$(SLO)$/htags.obj
+	$(SLO)$/hutil.obj
+	$(SLO)$/hwpeq.obj
+	$(SLO)$/hwpfile.obj
+	$(SLO)$/hwpread.obj
+	$(SLO)$/hwpreader.obj
+	$(SLO)$/lexer.obj
+	$(SLO)$/mzstring.obj
+	$(SLO)$/solver.obj

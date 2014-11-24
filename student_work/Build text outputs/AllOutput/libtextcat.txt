@@ -1,0 +1,410 @@
+libtextcat
+=============
+
+Entering /cygdrive/c/steve/testarea/main/libtextcat
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/libtextcat-2.2 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/libtextcat-2.2 ./wntmsci12.pro/misc/build/libtextcat-2.2_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/libtextcat-2.2_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/128cfc86ed5953e57fe0f5ae98b62c2e-libtextcat-2.2.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_libtextcat
+libtextcat-2.2/
+libtextcat-2.2/README
+libtextcat-2.2/ChangeLog
+libtextcat-2.2/Makefile.am
+libtextcat-2.2/Makefile.in
+libtextcat-2.2/TODO
+libtextcat-2.2/aclocal.m4
+libtextcat-2.2/config.guess
+libtextcat-2.2/config.sub
+libtextcat-2.2/configure
+libtextcat-2.2/configure.ac
+libtextcat-2.2/depcomp
+libtextcat-2.2/install-sh
+libtextcat-2.2/ltmain.sh
+libtextcat-2.2/missing
+libtextcat-2.2/mkinstalldirs
+libtextcat-2.2/LICENSE
+libtextcat-2.2/langclass/
+libtextcat-2.2/langclass/CVS/
+libtextcat-2.2/langclass/CVS/Root
+libtextcat-2.2/langclass/CVS/Repository
+libtextcat-2.2/langclass/CVS/Entries
+libtextcat-2.2/langclass/conf.txt
+libtextcat-2.2/langclass/LM/
+libtextcat-2.2/langclass/LM/CVS/
+libtextcat-2.2/langclass/LM/CVS/Root
+libtextcat-2.2/langclass/LM/CVS/Repository
+libtextcat-2.2/langclass/LM/CVS/Entries
+libtextcat-2.2/langclass/LM/afrikaans.lm
+libtextcat-2.2/langclass/LM/albanian.lm
+libtextcat-2.2/langclass/LM/amharic-utf.lm
+libtextcat-2.2/langclass/LM/arabic-iso8859_6.lm
+libtextcat-2.2/langclass/LM/arabic-windows1256.lm
+libtextcat-2.2/langclass/LM/armenian.lm
+libtextcat-2.2/langclass/LM/basque.lm
+libtextcat-2.2/langclass/LM/belarus-windows1251.lm
+libtextcat-2.2/langclass/LM/bosnian.lm
+libtextcat-2.2/langclass/LM/breton.lm
+libtextcat-2.2/langclass/LM/bulgarian-iso8859_5.lm
+libtextcat-2.2/langclass/LM/catalan.lm
+libtextcat-2.2/langclass/LM/chinese-big5.lm
+libtextcat-2.2/langclass/LM/chinese-gb2312.lm
+libtextcat-2.2/langclass/LM/croatian-ascii.lm
+libtextcat-2.2/langclass/LM/czech-iso8859_2.lm
+libtextcat-2.2/langclass/LM/danish.lm
+libtextcat-2.2/langclass/LM/drents.lm
+libtextcat-2.2/langclass/LM/dutch.lm
+libtextcat-2.2/langclass/LM/english.lm
+libtextcat-2.2/langclass/LM/esperanto.lm
+libtextcat-2.2/langclass/LM/estonian.lm
+libtextcat-2.2/langclass/LM/finnish.lm
+libtextcat-2.2/langclass/LM/french.lm
+libtextcat-2.2/langclass/LM/frisian.lm
+libtextcat-2.2/langclass/LM/georgian.lm
+libtextcat-2.2/langclass/LM/german.lm
+libtextcat-2.2/langclass/LM/greek-iso8859-7.lm
+libtextcat-2.2/langclass/LM/hebrew-iso8859_8.lm
+libtextcat-2.2/langclass/LM/hindi.lm
+libtextcat-2.2/langclass/LM/hungarian.lm
+libtextcat-2.2/langclass/LM/icelandic.lm
+libtextcat-2.2/langclass/LM/indonesian.lm
+libtextcat-2.2/langclass/LM/irish.lm
+libtextcat-2.2/langclass/LM/italian.lm
+libtextcat-2.2/langclass/LM/japanese-euc_jp.lm
+libtextcat-2.2/langclass/LM/japanese-shift_jis.lm
+libtextcat-2.2/langclass/LM/korean.lm
+libtextcat-2.2/langclass/LM/latin.lm
+libtextcat-2.2/langclass/LM/latvian.lm
+libtextcat-2.2/langclass/LM/lithuanian.lm
+libtextcat-2.2/langclass/LM/malay.lm
+libtextcat-2.2/langclass/LM/manx.lm
+libtextcat-2.2/langclass/LM/marathi.lm
+libtextcat-2.2/langclass/LM/middle_frisian.lm
+libtextcat-2.2/langclass/LM/mingo.lm
+libtextcat-2.2/langclass/LM/nepali.lm
+libtextcat-2.2/langclass/LM/norwegian.lm
+libtextcat-2.2/langclass/LM/persian.lm
+libtextcat-2.2/langclass/LM/polish.lm
+libtextcat-2.2/langclass/LM/portuguese.lm
+libtextcat-2.2/langclass/LM/quechua.lm
+libtextcat-2.2/langclass/LM/romanian.lm
+libtextcat-2.2/langclass/LM/rumantsch.lm
+libtextcat-2.2/langclass/LM/russian-iso8859_5.lm
+libtextcat-2.2/langclass/LM/russian-koi8_r.lm
+libtextcat-2.2/langclass/LM/russian-windows1251.lm
+libtextcat-2.2/langclass/LM/sanskrit.lm
+libtextcat-2.2/langclass/LM/scots.lm
+libtextcat-2.2/langclass/LM/scots_gaelic.lm
+libtextcat-2.2/langclass/LM/serbian-ascii.lm
+libtextcat-2.2/langclass/LM/slovak-ascii.lm
+libtextcat-2.2/langclass/LM/slovak-windows1250.lm
+libtextcat-2.2/langclass/LM/slovenian-ascii.lm
+libtextcat-2.2/langclass/LM/slovenian-iso8859_2.lm
+libtextcat-2.2/langclass/LM/spanish.lm
+libtextcat-2.2/langclass/LM/swahili.lm
+libtextcat-2.2/langclass/LM/swedish.lm
+libtextcat-2.2/langclass/LM/tagalog.lm
+libtextcat-2.2/langclass/LM/tamil.lm
+libtextcat-2.2/langclass/LM/thai.lm
+libtextcat-2.2/langclass/LM/turkish.lm
+libtextcat-2.2/langclass/LM/ukrainian-koi8_r.lm
+libtextcat-2.2/langclass/LM/vietnamese.lm
+libtextcat-2.2/langclass/LM/welsh.lm
+libtextcat-2.2/langclass/LM/yiddish-utf.lm
+libtextcat-2.2/langclass/ShortTexts/
+libtextcat-2.2/langclass/ShortTexts/CVS/
+libtextcat-2.2/langclass/ShortTexts/CVS/Root
+libtextcat-2.2/langclass/ShortTexts/CVS/Repository
+libtextcat-2.2/langclass/ShortTexts/CVS/Entries
+libtextcat-2.2/langclass/ShortTexts/afrikaans.txt
+libtextcat-2.2/langclass/ShortTexts/albanian.txt
+libtextcat-2.2/langclass/ShortTexts/amharic-utf.txt
+libtextcat-2.2/langclass/ShortTexts/arabic-iso8859_6.txt
+libtextcat-2.2/langclass/ShortTexts/arabic-windows1256.txt
+libtextcat-2.2/langclass/ShortTexts/armenian.txt
+libtextcat-2.2/langclass/ShortTexts/basque.txt
+libtextcat-2.2/langclass/ShortTexts/belarus-windows1251.txt
+libtextcat-2.2/langclass/ShortTexts/bosnian.txt
+libtextcat-2.2/langclass/ShortTexts/breton.txt
+libtextcat-2.2/langclass/ShortTexts/bulgarian-iso8859_5.txt
+libtextcat-2.2/langclass/ShortTexts/catalan.txt
+libtextcat-2.2/langclass/ShortTexts/chinese-big5.txt
+libtextcat-2.2/langclass/ShortTexts/chinese-gb2312.txt
+libtextcat-2.2/langclass/ShortTexts/croatian-ascii.txt
+libtextcat-2.2/langclass/ShortTexts/czech-iso8859_2.txt
+libtextcat-2.2/langclass/ShortTexts/danish.txt
+libtextcat-2.2/langclass/ShortTexts/dutch.txt
+libtextcat-2.2/langclass/ShortTexts/english.txt
+libtextcat-2.2/langclass/ShortTexts/esperanto.txt
+libtextcat-2.2/langclass/ShortTexts/estonian.txt
+libtextcat-2.2/langclass/ShortTexts/finnish.txt
+libtextcat-2.2/langclass/ShortTexts/french.txt
+libtextcat-2.2/langclass/ShortTexts/frisian.txt
+libtextcat-2.2/langclass/ShortTexts/georgian.txt
+libtextcat-2.2/langclass/ShortTexts/german.txt
+libtextcat-2.2/langclass/ShortTexts/greek-iso8859-7.txt
+libtextcat-2.2/langclass/ShortTexts/hawaian.txt
+libtextcat-2.2/langclass/ShortTexts/hebrew-iso8859_8.txt
+libtextcat-2.2/langclass/ShortTexts/hindi.txt
+libtextcat-2.2/langclass/ShortTexts/hungarian.txt
+libtextcat-2.2/langclass/ShortTexts/icelandic.txt
+libtextcat-2.2/langclass/ShortTexts/indonesian.txt
+libtextcat-2.2/langclass/ShortTexts/irish.txt
+libtextcat-2.2/langclass/ShortTexts/italian.txt
+libtextcat-2.2/langclass/ShortTexts/japanese-euc_jp.txt
+libtextcat-2.2/langclass/ShortTexts/japanese-shift_jis.txt
+libtextcat-2.2/langclass/ShortTexts/korean.txt
+libtextcat-2.2/langclass/ShortTexts/latin.txt
+libtextcat-2.2/langclass/ShortTexts/latvian.txt
+libtextcat-2.2/langclass/ShortTexts/lithuanian.txt
+libtextcat-2.2/langclass/ShortTexts/malay.txt
+libtextcat-2.2/langclass/ShortTexts/manx.txt
+libtextcat-2.2/langclass/ShortTexts/marathi.txt
+libtextcat-2.2/langclass/ShortTexts/mf.txt
+libtextcat-2.2/langclass/ShortTexts/middle_frisian.txt
+libtextcat-2.2/langclass/ShortTexts/mingo.txt
+libtextcat-2.2/langclass/ShortTexts/nepali.txt
+libtextcat-2.2/langclass/ShortTexts/norwegian.txt
+libtextcat-2.2/langclass/ShortTexts/persian.txt
+libtextcat-2.2/langclass/ShortTexts/polish.txt
+libtextcat-2.2/langclass/ShortTexts/portuguese.txt
+libtextcat-2.2/langclass/ShortTexts/quechua.txt
+libtextcat-2.2/langclass/ShortTexts/romanian.txt
+libtextcat-2.2/langclass/ShortTexts/rumantsch.txt
+libtextcat-2.2/langclass/ShortTexts/russian-iso8859_5.txt
+libtextcat-2.2/langclass/ShortTexts/russian-koi8_r.txt
+libtextcat-2.2/langclass/ShortTexts/russian-windows1251.txt
+libtextcat-2.2/langclass/ShortTexts/sanskrit.txt
+libtextcat-2.2/langclass/ShortTexts/scots.txt
+libtextcat-2.2/langclass/ShortTexts/scots_gaelic.txt
+libtextcat-2.2/langclass/ShortTexts/serbian-ascii.txt
+libtextcat-2.2/langclass/ShortTexts/slovak-ascii.txt
+libtextcat-2.2/langclass/ShortTexts/slovak-windows1250.txt
+libtextcat-2.2/langclass/ShortTexts/slovenian-ascii.txt
+libtextcat-2.2/langclass/ShortTexts/slovenian-iso8859_2.txt
+libtextcat-2.2/langclass/ShortTexts/spanish.txt
+libtextcat-2.2/langclass/ShortTexts/swahili.txt
+libtextcat-2.2/langclass/ShortTexts/swedish.txt
+libtextcat-2.2/langclass/ShortTexts/tagalog.txt
+libtextcat-2.2/langclass/ShortTexts/tamil.txt
+libtextcat-2.2/langclass/ShortTexts/thai.txt
+libtextcat-2.2/langclass/ShortTexts/turkish.txt
+libtextcat-2.2/langclass/ShortTexts/ukrainian-koi8_r.txt
+libtextcat-2.2/langclass/ShortTexts/vietnamese.txt
+libtextcat-2.2/langclass/ShortTexts/welsh.txt
+libtextcat-2.2/langclass/ShortTexts/yiddish-utf.txt
+libtextcat-2.2/src/
+libtextcat-2.2/src/common.h
+libtextcat-2.2/src/constants.h
+libtextcat-2.2/src/fingerprint.h
+libtextcat-2.2/src/textcat.h
+libtextcat-2.2/src/wg_mempool.h
+libtextcat-2.2/src/Makefile.am
+libtextcat-2.2/src/Makefile.in
+libtextcat-2.2/src/config.h.in
+libtextcat-2.2/src/common.c
+libtextcat-2.2/src/fingerprint.c
+libtextcat-2.2/src/textcat.c
+libtextcat-2.2/src/wg_mempool.c
+libtextcat-2.2/src/createfp.c
+libtextcat-2.2/src/testtextcat.c
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.h.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.h.dummy
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.h
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.h
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.c.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.c.dummy
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.c
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.c
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h.dummy
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/makefile.mk
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/libtextcat.map.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/libtextcat.map.dummy
+echo dummy > ./wntmsci12.pro/misc/build/libtextcat-2.2/src/libtextcat.map
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/src/libtextcat.map
+cd ./wntmsci12.pro/misc/build && cat ../../..//libtextcat-2.2.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_libtextcat
+patching file libtextcat-2.2/configure
+Hunk #5 succeeded at 6365 (offset -1 lines).
+patching file libtextcat-2.2/src/Makefile.in
+patching file libtextcat-2.2/src/common.c
+patching file libtextcat-2.2/src/common.h
+patching file libtextcat-2.2/src/constants.h
+patching file libtextcat-2.2/src/fingerprint.c
+patching file libtextcat-2.2/src/fingerprint.h
+patching file libtextcat-2.2/src/libtextcat.map
+patching file libtextcat-2.2/src/makefile.mk
+patching file libtextcat-2.2/src/textcat.c
+patching file libtextcat-2.2/src/textcat.h
+patching file libtextcat-2.2/src/utf8misc.c
+patching file libtextcat-2.2/src/utf8misc.h
+patching file libtextcat-2.2/src/win32_config.h
+patching file libtextcat-2.2/config.guess
+patching file libtextcat-2.2/config.sub
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_libtextcat
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_libtextcat
+mkdir.exe ./wntmsci12.pro/misc/build/libtextcat-2.2/
+cd ./wntmsci12.pro/misc/build/libtextcat-2.2/ && cd src && dmake   && C:/cygwin/bin/touch.exe C:/steve/testarea/main/libtextcat/./wntmsci12.pro/misc/build/so_built_libtextcat
+Making:    all_libtextcat.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/libtextcat_version.h/ > ../../../../../wntmsci12.pro/misc/libtextcat_version.c
+Compiling: libtextcat/wntmsci12.pro/misc/libtextcat_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../../wntmsci12.pro/slo/libtextcat_version.obj ../../../../../wntmsci12.pro/misc/libtextcat_version.c
+libtextcat_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkTFRX2x > ../../../../../wntmsci12.pro/misc/s_libtextcat_version.dpcc
+/usr/bin/cp ../../../../../wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h   ../../../../../wntmsci12.pro/misc/build/libtextcat-2.2/src/config.h
+Compiling: libtextcat/wntmsci12.pro/misc/build/libtextcat-2.2/src/common.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/common.obj common.c
+common.c
+c:\steve\testarea\main\libtextcat\wntmsci12.pro\misc\build\libtextcat-2.2\src\common.c(153) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk1UnoSV > ../../../../../wntmsci12.pro/misc/s_common.dpcc
+Compiling: libtextcat/wntmsci12.pro/misc/build/libtextcat-2.2/src/fingerprint.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/fingerprint.obj fingerprint.c
+fingerprint.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk50Fy1E > ../../../../../wntmsci12.pro/misc/s_fingerprint.dpcc
+Compiling: libtextcat/wntmsci12.pro/misc/build/libtextcat-2.2/src/textcat.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/textcat.obj textcat.c
+textcat.c
+c:\steve\testarea\main\libtextcat\wntmsci12.pro\misc\build\libtextcat-2.2\src\textcat.c(158) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkharwdw > ../../../../../wntmsci12.pro/misc/s_textcat.dpcc
+Compiling: libtextcat/wntmsci12.pro/misc/build/libtextcat-2.2/src/wg_mempool.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/wg_mempool.obj wg_mempool.c
+wg_mempool.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkly2u5o > ../../../../../wntmsci12.pro/misc/s_wg_mempool.dpcc
+Compiling: libtextcat/wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/utf8misc.obj utf8misc.c
+utf8misc.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkuI9AD3 > ../../../../../wntmsci12.pro/misc/s_utf8misc.dpcc
+Making:    libtextcat.lib
+lib   /OUT:../../../../../wntmsci12.pro/slb/libtextcat.lib @C:/cygwin/tmp/mkWc22j7
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../../wntmsci12.pro/slo/common.obj 
+../../../../../wntmsci12.pro/slo/fingerprint.obj 
+../../../../../wntmsci12.pro/slo/textcat.obj 
+../../../../../wntmsci12.pro/slo/wg_mempool.obj 
+../../../../../wntmsci12.pro/slo/utf8misc.obj 
+------------------------------
+Making: ../../../../../wntmsci12.pro/misc/libtextcat.flt
+cat libtextcat.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../../../../wntmsci12.pro/misc/libtextcat_libtextcat.dxp
+Making:    module definition file libtextcat.def
+cat ../../../../../wntmsci12.pro/misc/libtextcat_libtextcat.dxp >> ../../../../../wntmsci12.pro/misc/libtextcat.def.tmpfile
+Making:    libtextcat.dll
+rc -DWIN32 -I. -I../../../../../wntmsci12.pro/inc/libtextcat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  ../../../../../wntmsci12.pro/misc/libtextcat_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../../../../wntmsci12.pro/misc/libtextcat_def.res > ../../../../../wntmsci12.pro/misc/libtextcat.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkYB4Wdg
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../../../../wntmsci12.pro/bin/libtextcat.dll -map:../../../../../wntmsci12.pro/misc/libtextcat.map -def:../../../../../wntmsci12.pro/misc/libtextcat.def -implib:../../../../../wntmsci12.pro/lib/ilibtextcat.lib ../../../../../wntmsci12.pro/slo/libtextcat_version.obj ../../../../../wntmsci12.pro/slb/libtextcat.lib msvcrt.lib msvcprt.lib kernel32.lib user32.lib oldnames.lib ../../../../../wntmsci12.pro/misc/libtextcat.res 
+   Creating library ../../../../../wntmsci12.pro/lib/ilibtextcat.lib and object ../../../../../wntmsci12.pro/lib/ilibtextcat.exp
+linking ../../../../../wntmsci12.pro/bin/libtextcat.dll.manifest ...
+if [ -f ../../../../../wntmsci12.pro/bin/libtextcat.dll.manifest ] ; then mt.exe  -manifest ../../../../../wntmsci12.pro/bin/libtextcat.dll.manifest -outputresource:../../../../../wntmsci12.pro/bin/libtextcat.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../../../../wntmsci12.pro/bin/libtextcat.dll.manifest ] ; then /bin/rm -f ../../../../../wntmsci12.pro/bin/libtextcat.dll.manifest ; fi
+if [ -f ../../../../../wntmsci12.pro/bin/libtextcat.dll.tmanifest ] ; then /bin/rm -f ../../../../../wntmsci12.pro/bin/libtextcat.dll.tmanifest ; fi
+Making:    ilibtextcat.lib
+build of ../../../../../wntmsci12.pro/bin/libtextcat.dll creates ../../../../../wntmsci12.pro/lib/ilibtextcat.lib
+Making:    all_libtextcat.dpslo
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_libtextcat
+cp ./wntmsci12.pro/misc/build/libtextcat-2.2//src/config.h ./wntmsci12.pro/misc/build/libtextcat-2.2//src/common.h ./wntmsci12.pro/misc/build/libtextcat-2.2//src/fingerprint.h ./wntmsci12.pro/misc/build/libtextcat-2.2//src/textcat.h ./wntmsci12.pro/misc/build/libtextcat-2.2//src/wg_mempool.h ./wntmsci12.pro/inc
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_libtextcat
+libtextcat deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/build.lst
+COPY: ../wntmsci12.pro/lib/ilibtextcat.exp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ilibtextcat.exp
+COPY: ../wntmsci12.pro/lib/ilibtextcat.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ilibtextcat.lib
+COPY: ../wntmsci12.pro/bin/libtextcat.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/libtextcat.dll
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/common.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/common.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/config.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/config.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/constants.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/constants.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/fingerprint.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/fingerprint.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/textcat.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/textcat.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/utf8misc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/utf8misc.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/wg_mempool.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/wg_mempool.h
+COPY: ../wntmsci12.pro/misc/build/libtextcat-2.2/src/win32_config.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/win32_config.h
+COPY: ../data/new_fingerprints/fpdb.conf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/fpdb.conf
+COPY: ../data/new_fingerprints/lm/afrikaans.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/afrikaans.lm
+COPY: ../data/new_fingerprints/lm/albanian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/albanian.lm
+COPY: ../data/new_fingerprints/lm/amharic_utf.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/amharic_utf.lm
+COPY: ../data/new_fingerprints/lm/arabic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/arabic.lm
+COPY: ../data/new_fingerprints/lm/armenian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/armenian.lm
+COPY: ../data/new_fingerprints/lm/basque.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basque.lm
+COPY: ../data/new_fingerprints/lm/belarus.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/belarus.lm
+COPY: ../data/new_fingerprints/lm/bosnian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/bosnian.lm
+COPY: ../data/new_fingerprints/lm/breton.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/breton.lm
+COPY: ../data/new_fingerprints/lm/catalan.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/catalan.lm
+COPY: ../data/new_fingerprints/lm/chinese_simplified.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/chinese_simplified.lm
+COPY: ../data/new_fingerprints/lm/chinese_traditional.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/chinese_traditional.lm
+COPY: ../data/new_fingerprints/lm/croatian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/croatian.lm
+COPY: ../data/new_fingerprints/lm/czech.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/czech.lm
+COPY: ../data/new_fingerprints/lm/danish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/danish.lm
+COPY: ../data/new_fingerprints/lm/drents.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/drents.lm
+COPY: ../data/new_fingerprints/lm/dutch.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/dutch.lm
+COPY: ../data/new_fingerprints/lm/english.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/english.lm
+COPY: ../data/new_fingerprints/lm/esperanto.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/esperanto.lm
+COPY: ../data/new_fingerprints/lm/estonian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/estonian.lm
+COPY: ../data/new_fingerprints/lm/finnish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/finnish.lm
+COPY: ../data/new_fingerprints/lm/french.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/french.lm
+COPY: ../data/new_fingerprints/lm/frisian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/frisian.lm
+COPY: ../data/new_fingerprints/lm/georgian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/georgian.lm
+COPY: ../data/new_fingerprints/lm/german.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/german.lm
+COPY: ../data/new_fingerprints/lm/greek.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/greek.lm
+COPY: ../data/new_fingerprints/lm/hebrew.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/hebrew.lm
+COPY: ../data/new_fingerprints/lm/hindi.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/hindi.lm
+COPY: ../data/new_fingerprints/lm/hungarian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/hungarian.lm
+COPY: ../data/new_fingerprints/lm/icelandic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/icelandic.lm
+COPY: ../data/new_fingerprints/lm/indonesian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/indonesian.lm
+COPY: ../data/new_fingerprints/lm/irish_gaelic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/irish_gaelic.lm
+COPY: ../data/new_fingerprints/lm/italian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/italian.lm
+COPY: ../data/new_fingerprints/lm/japanese.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/japanese.lm
+COPY: ../data/new_fingerprints/lm/korean.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/korean.lm
+COPY: ../data/new_fingerprints/lm/latin.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/latin.lm
+COPY: ../data/new_fingerprints/lm/latvian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/latvian.lm
+COPY: ../data/new_fingerprints/lm/lithuanian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/lithuanian.lm
+COPY: ../data/new_fingerprints/lm/luxembourgish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/luxembourgish.lm
+COPY: ../data/new_fingerprints/lm/malay.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/malay.lm
+COPY: ../data/new_fingerprints/lm/manx_gaelic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/manx_gaelic.lm
+COPY: ../data/new_fingerprints/lm/marathi.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/marathi.lm
+COPY: ../data/new_fingerprints/lm/middle_frisian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/middle_frisian.lm
+COPY: ../data/new_fingerprints/lm/mingo.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/mingo.lm
+COPY: ../data/new_fingerprints/lm/mongolian_cyrillic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/mongolian_cyrillic.lm
+COPY: ../data/new_fingerprints/lm/nepali.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/nepali.lm
+COPY: ../data/new_fingerprints/lm/norwegian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/norwegian.lm
+COPY: ../data/new_fingerprints/lm/persian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/persian.lm
+COPY: ../data/new_fingerprints/lm/polish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/polish.lm
+COPY: ../data/new_fingerprints/lm/portuguese.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/portuguese.lm
+COPY: ../data/new_fingerprints/lm/quechua.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/quechua.lm
+COPY: ../data/new_fingerprints/lm/romanian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/romanian.lm
+COPY: ../data/new_fingerprints/lm/romansh.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/romansh.lm
+COPY: ../data/new_fingerprints/lm/russian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/russian.lm
+COPY: ../data/new_fingerprints/lm/sanskrit.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/sanskrit.lm
+COPY: ../data/new_fingerprints/lm/scots.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/scots.lm
+COPY: ../data/new_fingerprints/lm/scots_gaelic.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/scots_gaelic.lm
+COPY: ../data/new_fingerprints/lm/serbian-latin.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/serbian-latin.lm
+COPY: ../data/new_fingerprints/lm/serbian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/serbian.lm
+COPY: ../data/new_fingerprints/lm/slovak_ascii.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/slovak_ascii.lm
+COPY: ../data/new_fingerprints/lm/slovenian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/slovenian.lm
+COPY: ../data/new_fingerprints/lm/spanish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/spanish.lm
+COPY: ../data/new_fingerprints/lm/swahili.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/swahili.lm
+COPY: ../data/new_fingerprints/lm/swedish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/swedish.lm
+COPY: ../data/new_fingerprints/lm/tagalog.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tagalog.lm
+COPY: ../data/new_fingerprints/lm/tamil.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tamil.lm
+COPY: ../data/new_fingerprints/lm/thai.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/thai.lm
+COPY: ../data/new_fingerprints/lm/turkish.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/turkish.lm
+COPY: ../data/new_fingerprints/lm/ukrainian.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/ukrainian.lm
+COPY: ../data/new_fingerprints/lm/vietnamese.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/vietnamese.lm
+COPY: ../data/new_fingerprints/lm/welsh.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/welsh.lm
+COPY: ../data/new_fingerprints/lm/yiddish_utf.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/yiddish_utf.lm
+COPY: ../data/new_fingerprints/lm/zulu.lm -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/zulu.lm
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/libtextcat/deliver.log
+Module 'libtextcat' delivered successfully. 86 files copied, 0 files unchanged
+
+=============

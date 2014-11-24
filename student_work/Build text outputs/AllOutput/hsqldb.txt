@@ -1,0 +1,888 @@
+hsqldb
+=============
+
+Entering /cygdrive/c/steve/testarea/main/hsqldb
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/hsqldb ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/hsqldb ./wntmsci12.pro/misc/build/hsqldb_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/hsqldb_removeme
+cd ./wntmsci12.pro/misc/build && ( unzip   -o C:/steve/TestArea/ext_sources/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip) && C:/cygwin/bin/touch.exe so_unpacked_so_hsqldb
+Archive:  C:/steve/TestArea/ext_sources/17410483b5b5f267aa18b7e00b65e6e0-hsqldb_1_8_0.zip
+   creating: hsqldb/
+   creating: hsqldb/bin/
+  inflating: hsqldb/bin/hsqldb       
+  inflating: hsqldb/bin/runUtil.bat  
+  inflating: hsqldb/bin/runUtil.sh   
+   creating: hsqldb/build/
+  inflating: hsqldb/build/build.properties  
+  inflating: hsqldb/build/build.xml  
+  inflating: hsqldb/build/buildDoc.bat  
+  inflating: hsqldb/build/buildJDK11.bat  
+  inflating: hsqldb/build/buildJDK12.bat  
+  inflating: hsqldb/build/buildJDK14.bat  
+   creating: hsqldb/build/packaging/
+   creating: hsqldb/build/packaging/pkg/
+   creating: hsqldb/build/packaging/pkg/cfg/
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.checkinstall  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.info  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.postinstall  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.postremove  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.preinstall  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.preremove  
+  inflating: hsqldb/build/packaging/pkg/cfg/HSQLhsqldb.proto  
+  inflating: hsqldb/build/packaging/pkg/cfg/server.properties  
+  inflating: hsqldb/build/packaging/pkg/cfg/sqltool.rc  
+  inflating: hsqldb/build/packaging/pkg/pkgbuild  
+  inflating: hsqldb/build/packaging/pkg/readme.txt  
+  inflating: hsqldb/build/packaging/pkg/upgrading.txt  
+   creating: hsqldb/build/packaging/zaurus/
+  inflating: hsqldb/build/packaging/zaurus/ipkg-build  
+  inflating: hsqldb/build/packaging/zaurus/makePackage  
+   creating: hsqldb/build/packaging/zaurus/package/
+   creating: hsqldb/build/packaging/zaurus/package/CONTROL/
+  inflating: hsqldb/build/packaging/zaurus/package/CONTROL/control  
+   creating: hsqldb/build/packaging/zaurus/package/home/
+   creating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/
+   creating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/apps/
+   creating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/apps/Jeode/
+  inflating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/apps/Jeode/hsqldb.desktop  
+   creating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/bin/
+  inflating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/bin/runhsqldb  
+   creating: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/pics/
+ extracting: hsqldb/build/packaging/zaurus/package/home/QtPalmtop/pics/hsqldb.png  
+  inflating: hsqldb/build/readmebuild.txt  
+  inflating: hsqldb/build/readmedocbook.txt  
+  inflating: hsqldb/build/switchToJDK11.bat  
+  inflating: hsqldb/build/switchToJDK12.bat  
+  inflating: hsqldb/build/switchToJDK14.bat  
+   creating: hsqldb/data/
+   creating: hsqldb/demo/
+  inflating: hsqldb/demo/localhost_clientserver.html  
+  inflating: hsqldb/demo/memorydbmanager.html  
+  inflating: hsqldb/demo/memoryquery.html  
+  inflating: hsqldb/demo/runManager.bat  
+  inflating: hsqldb/demo/runManager.sh  
+  inflating: hsqldb/demo/runManagerSwing.bat  
+  inflating: hsqldb/demo/runServer.bat  
+  inflating: hsqldb/demo/runServer.sh  
+  inflating: hsqldb/demo/runUtil.bat  
+  inflating: hsqldb/demo/runUtil.sh  
+  inflating: hsqldb/demo/runWebServer.bat  
+  inflating: hsqldb/demo/runWebServer.sh  
+  inflating: hsqldb/demo/servletdemo.html  
+   creating: hsqldb/doc/
+  inflating: hsqldb/doc/changelist_1_7_2.txt  
+  inflating: hsqldb/doc/changelist_1_7_3.txt  
+  inflating: hsqldb/doc/changelist_1_8_0.txt  
+  inflating: hsqldb/doc/changelog_1_7_1.txt  
+  inflating: hsqldb/doc/changelog_1_7_2.txt  
+  inflating: hsqldb/doc/changelog_1_8_0.txt  
+  inflating: hsqldb/doc/databaseinjar.txt  
+   creating: hsqldb/doc/guide/
+  inflating: hsqldb/doc/guide/apa.html  
+  inflating: hsqldb/doc/guide/apb.html  
+  inflating: hsqldb/doc/guide/apc.html  
+  inflating: hsqldb/doc/guide/apd.html  
+  inflating: hsqldb/doc/guide/ape.html  
+  inflating: hsqldb/doc/guide/apf.html  
+  inflating: hsqldb/doc/guide/apg.html  
+  inflating: hsqldb/doc/guide/ch01.html  
+  inflating: hsqldb/doc/guide/ch02.html  
+  inflating: hsqldb/doc/guide/ch03.html  
+  inflating: hsqldb/doc/guide/ch04.html  
+  inflating: hsqldb/doc/guide/ch05.html  
+  inflating: hsqldb/doc/guide/ch06.html  
+  inflating: hsqldb/doc/guide/ch07.html  
+  inflating: hsqldb/doc/guide/ch08.html  
+  inflating: hsqldb/doc/guide/ch09.html  
+  inflating: hsqldb/doc/guide/guide.css  
+  inflating: hsqldb/doc/guide/guide.html  
+  inflating: hsqldb/doc/guide/guide.pdf  
+  inflating: hsqldb/doc/guide/index.html  
+   creating: hsqldb/doc/guide/navicons/
+  inflating: hsqldb/doc/guide/navicons/home.gif  
+ extracting: hsqldb/doc/guide/navicons/next.gif  
+  inflating: hsqldb/doc/guide/navicons/prev.gif  
+  inflating: hsqldb/doc/guide/navicons/up.gif  
+  inflating: hsqldb/doc/guide/pr01.html  
+  inflating: hsqldb/doc/hsqldb_lic.txt  
+  inflating: hsqldb/doc/hsqlFindFile.html  
+  inflating: hsqldb/doc/hsqlSoftwareLinks.html  
+  inflating: hsqldb/doc/hypersonic_lic.txt  
+   creating: hsqldb/doc/images/
+  inflating: hsqldb/doc/images/sqlDDL.gif  
+  inflating: hsqldb/doc/images/sqlDML.gif  
+  inflating: hsqldb/doc/images/sqlOther.gif  
+  inflating: hsqldb/doc/images/sqlSecurity.gif  
+  inflating: hsqldb/doc/images/sqlSelect.gif  
+  inflating: hsqldb/doc/images/sqlTransact.gif  
+  inflating: hsqldb/doc/readme-docauthors.txt  
+  inflating: hsqldb/doc/readme_linux.txt  
+   creating: hsqldb/doc/src/
+  inflating: hsqldb/doc/src/.cvsignore  
+  inflating: hsqldb/doc/src/allclasses-frame.html  
+  inflating: hsqldb/doc/src/allclasses-noframe.html  
+  inflating: hsqldb/doc/src/constant-values.html  
+  inflating: hsqldb/doc/src/deprecated-list.html  
+  inflating: hsqldb/doc/src/help-doc.html  
+ extracting: hsqldb/doc/src/hsqldb.gif  
+  inflating: hsqldb/doc/src/hsqldbstylesheet.css  
+  inflating: hsqldb/doc/src/index-all.html  
+  inflating: hsqldb/doc/src/index.html  
+   creating: hsqldb/doc/src/org/
+   creating: hsqldb/doc/src/org/hsqldb/
+   creating: hsqldb/doc/src/org/hsqldb/class-use/
+  inflating: hsqldb/doc/src/org/hsqldb/class-use/jdbcDriver.html  
+  inflating: hsqldb/doc/src/org/hsqldb/class-use/Server.html  
+  inflating: hsqldb/doc/src/org/hsqldb/class-use/Trigger.html  
+  inflating: hsqldb/doc/src/org/hsqldb/class-use/WebServer.html  
+   creating: hsqldb/doc/src/org/hsqldb/jdbc/
+   creating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcBlob.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcCallableStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcClob.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcColumnMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcConnection.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcDatabaseMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcDataSource.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcDataSourceFactory.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcParameterMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcPreparedStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcResultSet.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcResultSetMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcSavepoint.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/jdbcStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/class-use/Util.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcBlob.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcCallableStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcClob.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcColumnMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcConnection.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcDatabaseMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcDataSource.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcDataSourceFactory.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcParameterMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcPreparedStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcResultSet.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcResultSetMetaData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcSavepoint.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/jdbcStatement.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/package-frame.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/package-summary.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/package-tree.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/package-use.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbc/Util.html  
+  inflating: hsqldb/doc/src/org/hsqldb/jdbcDriver.html  
+  inflating: hsqldb/doc/src/org/hsqldb/package-frame.html  
+  inflating: hsqldb/doc/src/org/hsqldb/package-summary.html  
+  inflating: hsqldb/doc/src/org/hsqldb/package-tree.html  
+  inflating: hsqldb/doc/src/org/hsqldb/package-use.html  
+   creating: hsqldb/doc/src/org/hsqldb/sample/
+   creating: hsqldb/doc/src/org/hsqldb/sample/class-use/
+  inflating: hsqldb/doc/src/org/hsqldb/sample/class-use/TriggerSample.html  
+  inflating: hsqldb/doc/src/org/hsqldb/sample/package-frame.html  
+  inflating: hsqldb/doc/src/org/hsqldb/sample/package-summary.html  
+  inflating: hsqldb/doc/src/org/hsqldb/sample/package-tree.html  
+  inflating: hsqldb/doc/src/org/hsqldb/sample/package-use.html  
+  inflating: hsqldb/doc/src/org/hsqldb/sample/TriggerSample.html  
+  inflating: hsqldb/doc/src/org/hsqldb/Server.html  
+  inflating: hsqldb/doc/src/org/hsqldb/Trigger.html  
+   creating: hsqldb/doc/src/org/hsqldb/util/
+   creating: hsqldb/doc/src/org/hsqldb/util/class-use/
+  inflating: hsqldb/doc/src/org/hsqldb/util/class-use/RCData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/class-use/SqlTool.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/class-use/SqlTool.SqlToolException.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/package-frame.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/package-summary.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/package-tree.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/package-use.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/RCData.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/SqlTool.html  
+  inflating: hsqldb/doc/src/org/hsqldb/util/SqlTool.SqlToolException.html  
+  inflating: hsqldb/doc/src/org/hsqldb/WebServer.html  
+  inflating: hsqldb/doc/src/overview-frame.html  
+  inflating: hsqldb/doc/src/overview-summary.html  
+  inflating: hsqldb/doc/src/overview-tree.html  
+  inflating: hsqldb/doc/src/package-list  
+  inflating: hsqldb/doc/src/packages.html  
+   creating: hsqldb/doc/src/resources/
+ extracting: hsqldb/doc/src/resources/inherit.gif  
+  inflating: hsqldb/doc/src/serialized-form.html  
+   creating: hsqldb/doc/zaurus/
+  inflating: hsqldb/doc/zaurus/building.html  
+  inflating: hsqldb/doc/zaurus/hsqlSyntax.html  
+   creating: hsqldb/doc/zaurus/images/
+ extracting: hsqldb/doc/zaurus/images/buttons.png  
+ extracting: hsqldb/doc/zaurus/images/commandBut.png  
+  inflating: hsqldb/doc/zaurus/images/constructor-index.gif  
+  inflating: hsqldb/doc/zaurus/images/constructors.gif  
+ extracting: hsqldb/doc/zaurus/images/editorBut.png  
+  inflating: hsqldb/doc/zaurus/images/green-ball-small.gif  
+  inflating: hsqldb/doc/zaurus/images/green-ball.gif  
+ extracting: hsqldb/doc/zaurus/images/hsqldb.gif  
+  inflating: hsqldb/doc/zaurus/images/method-index.gif  
+  inflating: hsqldb/doc/zaurus/images/methods.gif  
+ extracting: hsqldb/doc/zaurus/images/nicksant3.gif  
+  inflating: hsqldb/doc/zaurus/images/red-ball-small.gif  
+  inflating: hsqldb/doc/zaurus/images/red-ball.gif  
+  inflating: hsqldb/doc/zaurus/images/red_up.gif  
+  inflating: hsqldb/doc/zaurus/images/resultBut.png  
+  inflating: hsqldb/doc/zaurus/images/sharp1.jpeg  
+ extracting: hsqldb/doc/zaurus/images/sourceforge.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlDDL.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlDML.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlOther.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlSecurity.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlSelect.gif  
+  inflating: hsqldb/doc/zaurus/images/sqlTransact.gif  
+  inflating: hsqldb/doc/zaurus/images/treeBut.png  
+  inflating: hsqldb/doc/zaurus/images/yellow-ball-small.gif  
+  inflating: hsqldb/doc/zaurus/images/yellow-ball.gif  
+  inflating: hsqldb/doc/zaurus/images/zaurus.jpeg  
+  inflating: hsqldb/doc/zaurus/index.html  
+  inflating: hsqldb/doc/zaurus/installation.html  
+  inflating: hsqldb/doc/zaurus/org.hsqldb.util.ZaurusEditor.html  
+  inflating: hsqldb/doc/zaurus/readme  
+  inflating: hsqldb/doc/zaurus/todo.html  
+  inflating: hsqldb/doc/zaurus/usage.html  
+   creating: hsqldb/docsrc/
+  inflating: hsqldb/docsrc/formats-section.xml  
+   creating: hsqldb/docsrc/guide/
+  inflating: hsqldb/docsrc/guide/advancedtopics.xml  
+  inflating: hsqldb/docsrc/guide/building.xml  
+  inflating: hsqldb/docsrc/guide/dbfiles.xml  
+  inflating: hsqldb/docsrc/guide/dbmanager.xml  
+  inflating: hsqldb/docsrc/guide/deployment.xml  
+  inflating: hsqldb/docsrc/guide/guide.css  
+  inflating: hsqldb/docsrc/guide/guide.xml  
+   creating: hsqldb/docsrc/guide/navicons/
+  inflating: hsqldb/docsrc/guide/navicons/home.gif  
+ extracting: hsqldb/docsrc/guide/navicons/next.gif  
+  inflating: hsqldb/docsrc/guide/navicons/prev.gif  
+  inflating: hsqldb/docsrc/guide/navicons/up.gif  
+  inflating: hsqldb/docsrc/guide/openoffice.xml  
+  inflating: hsqldb/docsrc/guide/running.xml  
+  inflating: hsqldb/docsrc/guide/sqlissues.xml  
+  inflating: hsqldb/docsrc/guide/sqlsyntax.xml  
+  inflating: hsqldb/docsrc/guide/sqltool.xml  
+  inflating: hsqldb/docsrc/guide/testutility.xml  
+  inflating: hsqldb/docsrc/guide/texttables.xml  
+  inflating: hsqldb/docsrc/guide/tls.xml  
+  inflating: hsqldb/docsrc/guide/transfertool.xml  
+  inflating: hsqldb/docsrc/guide/unix.xml  
+  inflating: hsqldb/docsrc/readme-docauthors.txt  
+  inflating: hsqldb/index.html       
+   creating: hsqldb/lib/
+  inflating: hsqldb/lib/functions    
+  inflating: hsqldb/lib/hsqldb.jar   
+  inflating: hsqldb/lib/servlet.jar  
+  inflating: hsqldb/readme.txt       
+   creating: hsqldb/src/
+  inflating: hsqldb/src/hsqlServlet.java  
+   creating: hsqldb/src/org/
+   creating: hsqldb/src/org/hsqldb/
+  inflating: hsqldb/src/org/hsqldb/BaseMemoryNode.java  
+  inflating: hsqldb/src/org/hsqldb/BaseTable.java  
+  inflating: hsqldb/src/org/hsqldb/CachedDataRow.java  
+  inflating: hsqldb/src/org/hsqldb/CachedRow.java  
+  inflating: hsqldb/src/org/hsqldb/Collation.java  
+  inflating: hsqldb/src/org/hsqldb/Column.java  
+  inflating: hsqldb/src/org/hsqldb/CompiledStatement.java  
+  inflating: hsqldb/src/org/hsqldb/CompiledStatementExecutor.java  
+  inflating: hsqldb/src/org/hsqldb/CompiledStatementManager.java  
+  inflating: hsqldb/src/org/hsqldb/Constraint.java  
+  inflating: hsqldb/src/org/hsqldb/ConstraintCore.java  
+  inflating: hsqldb/src/org/hsqldb/Database.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseCommandInterpreter.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseInformation.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseInformationFull.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseInformationMain.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseManager.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseObjectNames.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseScript.java  
+  inflating: hsqldb/src/org/hsqldb/DatabaseURL.java  
+  inflating: hsqldb/src/org/hsqldb/DINameSpace.java  
+  inflating: hsqldb/src/org/hsqldb/DIProcedureInfo.java  
+  inflating: hsqldb/src/org/hsqldb/DiskNode.java  
+  inflating: hsqldb/src/org/hsqldb/DITableInfo.java  
+  inflating: hsqldb/src/org/hsqldb/DITypeInfo.java  
+  inflating: hsqldb/src/org/hsqldb/Expression.java  
+  inflating: hsqldb/src/org/hsqldb/Function.java  
+  inflating: hsqldb/src/org/hsqldb/GrantConstants.java  
+  inflating: hsqldb/src/org/hsqldb/Grantee.java  
+  inflating: hsqldb/src/org/hsqldb/GranteeManager.java  
+  inflating: hsqldb/src/org/hsqldb/GroupedResult.java  
+  inflating: hsqldb/src/org/hsqldb/HSQLClientConnection.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlDateTime.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlException.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlInternalException.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlNameManager.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlServerFactory.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlSocketFactory.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlSocketFactorySecure.java  
+  inflating: hsqldb/src/org/hsqldb/HsqlSocketRequestHandler.java  
+  inflating: hsqldb/src/org/hsqldb/HTTPClientConnection.java  
+   creating: hsqldb/src/org/hsqldb/index/
+  inflating: hsqldb/src/org/hsqldb/index/RowIterator.java  
+  inflating: hsqldb/src/org/hsqldb/Index.java  
+   creating: hsqldb/src/org/hsqldb/jdbc/
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcBlob.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcCallableStatement.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcClob.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcColumnMetaData.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcConnection.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcDatabaseMetaData.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcDataSource.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcDataSourceFactory.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcParameterMetaData.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcPreparedStatement.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcResultSet.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcResultSetMetaData.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcSavepoint.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcStatement.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/jdbcStubs.java  
+  inflating: hsqldb/src/org/hsqldb/jdbc/Util.java  
+  inflating: hsqldb/src/org/hsqldb/jdbcDriver.java  
+   creating: hsqldb/src/org/hsqldb/lib/
+  inflating: hsqldb/src/org/hsqldb/lib/ArrayCounter.java  
+  inflating: hsqldb/src/org/hsqldb/lib/ArrayUtil.java  
+  inflating: hsqldb/src/org/hsqldb/lib/AsciiStringInputStream.java  
+  inflating: hsqldb/src/org/hsqldb/lib/BaseList.java  
+  inflating: hsqldb/src/org/hsqldb/lib/Collection.java  
+  inflating: hsqldb/src/org/hsqldb/lib/DoubleIntIndex.java  
+  inflating: hsqldb/src/org/hsqldb/lib/FileAccess.java  
+  inflating: hsqldb/src/org/hsqldb/lib/FileUtil.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HashMappedList.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HashSet.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlArrayHeap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlArrayList.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlByteArrayInputStream.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlByteArrayOutputStream.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlDeque.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlHeap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlLinkedList.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlList.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlTaskQueue.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlThreadFactory.java  
+  inflating: hsqldb/src/org/hsqldb/lib/HsqlTimer.java  
+  inflating: hsqldb/src/org/hsqldb/lib/InOutUtil.java  
+  inflating: hsqldb/src/org/hsqldb/lib/IntKeyHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/IntKeyIntValueHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/IntKeyLongValueHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/IntLookup.java  
+  inflating: hsqldb/src/org/hsqldb/lib/IntValueHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/Iterator.java  
+   creating: hsqldb/src/org/hsqldb/lib/java/
+  inflating: hsqldb/src/org/hsqldb/lib/java/JavaSystem.java  
+  inflating: hsqldb/src/org/hsqldb/lib/LongKeyIntValueHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/lib/MD5.java  
+  inflating: hsqldb/src/org/hsqldb/lib/ObjectComparator.java  
+  inflating: hsqldb/src/org/hsqldb/lib/Set.java  
+  inflating: hsqldb/src/org/hsqldb/lib/SimpleLog.java  
+  inflating: hsqldb/src/org/hsqldb/lib/Sort.java  
+  inflating: hsqldb/src/org/hsqldb/lib/StopWatch.java  
+  inflating: hsqldb/src/org/hsqldb/lib/Storage.java  
+  inflating: hsqldb/src/org/hsqldb/lib/StringConverter.java  
+  inflating: hsqldb/src/org/hsqldb/lib/StringInputStream.java  
+  inflating: hsqldb/src/org/hsqldb/lib/StringUtil.java  
+  inflating: hsqldb/src/org/hsqldb/lib/ThreadFactory.java  
+  inflating: hsqldb/src/org/hsqldb/lib/WrapperIterator.java  
+  inflating: hsqldb/src/org/hsqldb/lib/ZipUnzipFile.java  
+  inflating: hsqldb/src/org/hsqldb/Library.java  
+  inflating: hsqldb/src/org/hsqldb/Like.java  
+  inflating: hsqldb/src/org/hsqldb/MemoryNode.java  
+  inflating: hsqldb/src/org/hsqldb/Node.java  
+  inflating: hsqldb/src/org/hsqldb/NumberSequence.java  
+  inflating: hsqldb/src/org/hsqldb/Parser.java  
+   creating: hsqldb/src/org/hsqldb/persist/
+  inflating: hsqldb/src/org/hsqldb/persist/Cache.java  
+  inflating: hsqldb/src/org/hsqldb/persist/CachedObject.java  
+  inflating: hsqldb/src/org/hsqldb/persist/DataFileBlockManager.java  
+  inflating: hsqldb/src/org/hsqldb/persist/DataFileCache.java  
+  inflating: hsqldb/src/org/hsqldb/persist/DataFileDefrag.java  
+  inflating: hsqldb/src/org/hsqldb/persist/HsqlDatabaseProperties.java  
+  inflating: hsqldb/src/org/hsqldb/persist/HsqlProperties.java  
+  inflating: hsqldb/src/org/hsqldb/persist/LockFile.java  
+  inflating: hsqldb/src/org/hsqldb/persist/Log.java  
+  inflating: hsqldb/src/org/hsqldb/persist/Logger.java  
+  inflating: hsqldb/src/org/hsqldb/persist/NIOLockFile.java  
+  inflating: hsqldb/src/org/hsqldb/persist/PersistentStore.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScaledRAFile.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScaledRAFileHybrid.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScaledRAFileInJar.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScaledRAFileNIO.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScaledRAInterface.java  
+  inflating: hsqldb/src/org/hsqldb/persist/ScriptRunner.java  
+  inflating: hsqldb/src/org/hsqldb/persist/TextCache.java  
+  inflating: hsqldb/src/org/hsqldb/PointerNode.java  
+  inflating: hsqldb/src/org/hsqldb/Record.java  
+   creating: hsqldb/src/org/hsqldb/resources/
+  inflating: hsqldb/src/org/hsqldb/resources/BundleHandler.java  
+  inflating: hsqldb/src/org/hsqldb/resources/column-remarks.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/content-types.properties  
+ extracting: hsqldb/src/org/hsqldb/resources/data-type-create-parameters.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/data-type-names.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/data-type-remarks.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/java_lang_Math.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/org_hsqldb_DatabaseClassLoader.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/org_hsqldb_Library.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/org_hsqldb_Server_messages.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/sql-error-messages.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/sql-error-messages_it.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/table-remarks.properties  
+  inflating: hsqldb/src/org/hsqldb/resources/webserver.properties  
+  inflating: hsqldb/src/org/hsqldb/Result.java  
+  inflating: hsqldb/src/org/hsqldb/ResultBase.java  
+  inflating: hsqldb/src/org/hsqldb/ResultConstants.java  
+  inflating: hsqldb/src/org/hsqldb/Row.java  
+   creating: hsqldb/src/org/hsqldb/rowio/
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputBase.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputBinary.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputInterface.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputText.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputTextLog.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowInputTextQuoted.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputBase.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputBinary.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputInterface.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputText.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputTextLog.java  
+  inflating: hsqldb/src/org/hsqldb/rowio/RowOutputTextQuoted.java  
+   creating: hsqldb/src/org/hsqldb/sample/
+  inflating: hsqldb/src/org/hsqldb/sample/ConnectionTypesSample.java  
+  inflating: hsqldb/src/org/hsqldb/sample/DatabaseManagerSample.java  
+  inflating: hsqldb/src/org/hsqldb/sample/dsv-sample.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/FindFile.java  
+  inflating: hsqldb/src/org/hsqldb/sample/load_binding_lu.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/pl.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/plsql.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/sample-hsqldb.cfg  
+  inflating: hsqldb/src/org/hsqldb/sample/sample-server.properties  
+  inflating: hsqldb/src/org/hsqldb/sample/sample.dsv  
+  inflating: hsqldb/src/org/hsqldb/sample/sample.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/sampledata.sql  
+  inflating: hsqldb/src/org/hsqldb/sample/sqltool.rc  
+  inflating: hsqldb/src/org/hsqldb/sample/StartupParameters.plist  
+  inflating: hsqldb/src/org/hsqldb/sample/Testdb.java  
+  inflating: hsqldb/src/org/hsqldb/sample/TriggerSample.java  
+  inflating: hsqldb/src/org/hsqldb/sample/weapondef.csv  
+  inflating: hsqldb/src/org/hsqldb/SchemaManager.java  
+   creating: hsqldb/src/org/hsqldb/scriptio/
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptReaderBase.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptReaderBinary.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptReaderText.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptReaderZipped.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptWriterBase.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptWriterBinary.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptWriterText.java  
+  inflating: hsqldb/src/org/hsqldb/scriptio/ScriptWriterZipped.java  
+  inflating: hsqldb/src/org/hsqldb/Select.java  
+  inflating: hsqldb/src/org/hsqldb/SequenceManager.java  
+  inflating: hsqldb/src/org/hsqldb/Server.java  
+  inflating: hsqldb/src/org/hsqldb/ServerConfiguration.java  
+  inflating: hsqldb/src/org/hsqldb/ServerConnection.java  
+  inflating: hsqldb/src/org/hsqldb/ServerConstants.java  
+  inflating: hsqldb/src/org/hsqldb/Servlet.java  
+  inflating: hsqldb/src/org/hsqldb/Session.java  
+  inflating: hsqldb/src/org/hsqldb/SessionInterface.java  
+  inflating: hsqldb/src/org/hsqldb/SessionManager.java  
+  inflating: hsqldb/src/org/hsqldb/SetFunction.java  
+   creating: hsqldb/src/org/hsqldb/store/
+  inflating: hsqldb/src/org/hsqldb/store/BaseHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/store/BitMap.java  
+  inflating: hsqldb/src/org/hsqldb/store/HashIndex.java  
+  inflating: hsqldb/src/org/hsqldb/store/ObjectCacheHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/store/ValuePool.java  
+  inflating: hsqldb/src/org/hsqldb/store/ValuePoolHashMap.java  
+  inflating: hsqldb/src/org/hsqldb/SubQuery.java  
+  inflating: hsqldb/src/org/hsqldb/Table.java  
+  inflating: hsqldb/src/org/hsqldb/TableFilter.java  
+  inflating: hsqldb/src/org/hsqldb/TableWorks.java  
+   creating: hsqldb/src/org/hsqldb/test/
+  inflating: hsqldb/src/org/hsqldb/test/AllTests.java  
+  inflating: hsqldb/src/org/hsqldb/test/ClearTests.java  
+  inflating: hsqldb/src/org/hsqldb/test/ExecHarness.java  
+  inflating: hsqldb/src/org/hsqldb/test/JDBCBench.java  
+  inflating: hsqldb/src/org/hsqldb/test/SqlToolHarness.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestAll.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestAllTypes.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBase.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBatchBug.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBatchExecution.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBug778213.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBug785429.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBug808460.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestBugBase.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestCacheSize.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestCascade.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestCollation.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestDatabaseMetaData.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestDataStructures.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestDateTime.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestGroupByHaving.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestHashStructures.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestINPredicateParameterizationAndCorrelation.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestInstantiation.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestJDBCSavepoints.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestLibSpeed.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestLikePredicateOptimizations.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestMultipleConnections.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestObjectSize.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestPreparedSubQueries.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestQuotes.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSchemaParse.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestScript.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSelf.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSql.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSqlPersistent.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSqlTool.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestStoredProcedure.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestStressInsert.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSubQueriesInPreparedStatements.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestSubselect.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestTextTable.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestTextTables.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestTimestamp.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestUtil.java  
+  inflating: hsqldb/src/org/hsqldb/test/TestViewAsterisks.java  
+  inflating: hsqldb/src/org/hsqldb/TextTable.java  
+  inflating: hsqldb/src/org/hsqldb/Token.java  
+  inflating: hsqldb/src/org/hsqldb/Tokenizer.java  
+  inflating: hsqldb/src/org/hsqldb/Trace.java  
+  inflating: hsqldb/src/org/hsqldb/Transaction.java  
+  inflating: hsqldb/src/org/hsqldb/TransactionManager.java  
+  inflating: hsqldb/src/org/hsqldb/Trigger.java  
+  inflating: hsqldb/src/org/hsqldb/TriggerDef.java  
+   creating: hsqldb/src/org/hsqldb/types/
+  inflating: hsqldb/src/org/hsqldb/types/Binary.java  
+  inflating: hsqldb/src/org/hsqldb/types/JavaObject.java  
+  inflating: hsqldb/src/org/hsqldb/Types.java  
+  inflating: hsqldb/src/org/hsqldb/User.java  
+  inflating: hsqldb/src/org/hsqldb/UserManager.java  
+   creating: hsqldb/src/org/hsqldb/util/
+  inflating: hsqldb/src/org/hsqldb/util/AppendableException.java  
+  inflating: hsqldb/src/org/hsqldb/util/Bold.gif  
+ extracting: hsqldb/src/org/hsqldb/util/Clear.png  
+  inflating: hsqldb/src/org/hsqldb/util/Close.png  
+  inflating: hsqldb/src/org/hsqldb/util/CodeSwitcher.java  
+  inflating: hsqldb/src/org/hsqldb/util/Colors.png  
+  inflating: hsqldb/src/org/hsqldb/util/CommonSwing.java  
+  inflating: hsqldb/src/org/hsqldb/util/ConnectionDialog.java  
+  inflating: hsqldb/src/org/hsqldb/util/ConnectionDialogCommon.java  
+  inflating: hsqldb/src/org/hsqldb/util/ConnectionDialogSwing.java  
+  inflating: hsqldb/src/org/hsqldb/util/ConnectionSetting.java  
+  inflating: hsqldb/src/org/hsqldb/util/CSVWriter.java  
+  inflating: hsqldb/src/org/hsqldb/util/DataAccessPoint.java  
+  inflating: hsqldb/src/org/hsqldb/util/DataAccessPointException.java  
+  inflating: hsqldb/src/org/hsqldb/util/DatabaseManager.java  
+  inflating: hsqldb/src/org/hsqldb/util/DatabaseManagerCommon.java  
+  inflating: hsqldb/src/org/hsqldb/util/DatabaseManagerSwing.java  
+  inflating: hsqldb/src/org/hsqldb/util/FontDialogSwing.java  
+  inflating: hsqldb/src/org/hsqldb/util/GreenCircle.gif  
+  inflating: hsqldb/src/org/hsqldb/util/Grid.java  
+  inflating: hsqldb/src/org/hsqldb/util/GridSwing.java  
+  inflating: hsqldb/src/org/hsqldb/util/HelperFactory.java  
+  inflating: hsqldb/src/org/hsqldb/util/Hourglass.gif  
+ extracting: hsqldb/src/org/hsqldb/util/hsqldb.gif  
+  inflating: hsqldb/src/org/hsqldb/util/HsqldbTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/InformixTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/Italic.gif  
+  inflating: hsqldb/src/org/hsqldb/util/JDBCTypes.java  
+  inflating: hsqldb/src/org/hsqldb/util/MainInvoker.java  
+  inflating: hsqldb/src/org/hsqldb/util/McKoiTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/OracleTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/PostgresTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/problems.gif  
+  inflating: hsqldb/src/org/hsqldb/util/QueryTool.java  
+  inflating: hsqldb/src/org/hsqldb/util/RCData.java  
+  inflating: hsqldb/src/org/hsqldb/util/RedCircle.gif  
+  inflating: hsqldb/src/org/hsqldb/util/RefCapablePropertyResourceBundle.java  
+ extracting: hsqldb/src/org/hsqldb/util/run_exc.gif  
+  inflating: hsqldb/src/org/hsqldb/util/ScriptTool.java  
+  inflating: hsqldb/src/org/hsqldb/util/ShutdownServer.java  
+  inflating: hsqldb/src/org/hsqldb/util/SqlFile.java  
+  inflating: hsqldb/src/org/hsqldb/util/SqlServerTransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/SQLStatements.java  
+   creating: hsqldb/src/org/hsqldb/util/sqltool/
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/buffer.help.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/buffer.help_de.text  
+   creating: hsqldb/src/org/hsqldb/util/sqltool/CVS/
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Entries  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Entries.Extra  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Entries.Extra.Old  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Entries.Old  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Repository  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/CVS/Root  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/d.options.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/d.options_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/dsv.options.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/dsv.options_de.text  
+ extracting: hsqldb/src/org/hsqldb/util/sqltool/errorat.text  
+ extracting: hsqldb/src/org/hsqldb/util/sqltool/errorat_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/pl.help.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/pl.help_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/raw.leadin.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/raw.leadin_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.bottom.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.bottom_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.row.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.row_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.top.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/rejectreport.top_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/special.help.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/special.help_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/SqlFile.banner.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/SqlFile.banner_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/SqlTool.syntax.text  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool/SqlTool.syntax_de.text  
+  inflating: hsqldb/src/org/hsqldb/util/SqlTool.java  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool.properties  
+  inflating: hsqldb/src/org/hsqldb/util/SqlToolError.java  
+  inflating: hsqldb/src/org/hsqldb/util/SqltoolRB.java  
+  inflating: hsqldb/src/org/hsqldb/util/SqlToolSprayer.java  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool_de.properties  
+  inflating: hsqldb/src/org/hsqldb/util/sqltool_nl.properties  
+  inflating: hsqldb/src/org/hsqldb/util/TableSorter.java  
+  inflating: hsqldb/src/org/hsqldb/util/Traceable.java  
+  inflating: hsqldb/src/org/hsqldb/util/Transfer.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferCommon.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferDb.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferHelper.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferResultSet.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferSQLText.java  
+  inflating: hsqldb/src/org/hsqldb/util/TransferTable.java  
+  inflating: hsqldb/src/org/hsqldb/util/Tree.java  
+  inflating: hsqldb/src/org/hsqldb/util/ValidatingResourceBundle.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusChoice.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusComponent.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusConnectionDialog.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusDatabaseManager.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusEditor.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusTableForm.java  
+  inflating: hsqldb/src/org/hsqldb/util/ZaurusTextField.java  
+  inflating: hsqldb/src/org/hsqldb/View.java  
+  inflating: hsqldb/src/org/hsqldb/WebServer.java  
+  inflating: hsqldb/src/org/hsqldb/WebServerConnection.java  
+   creating: hsqldb/testrun/
+   creating: hsqldb/testrun/hsqldb/
+  inflating: hsqldb/testrun/hsqldb/runTest.bat  
+  inflating: hsqldb/testrun/hsqldb/runTest.sh  
+  inflating: hsqldb/testrun/hsqldb/TestSelf.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfAlterColumn.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfAlterTable.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfCasewhen.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfCheckConstraints.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfConstraints.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfConversions.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfCreate.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfFieldLimits.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfFKModes.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfGrantees.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfGroupBy.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfImmediateShutdown.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfImmediateShutdownRecover.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfInPredicateReferencing.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfInsertDeleteQueries.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfIssues.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfJoins.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfLeftJoin.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfModify.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfMultiGrants.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfNameResolution.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfNameResolutionSchemas.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfNot.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfPrimaryKeys.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfQueries.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfRightCaching.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfRoleNesting.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPerCachTbl1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPerCachTbl2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistA1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistA2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistB1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistB2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistC1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistC2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistD1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSchemaPersistD2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSubselects.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfSysTables.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfTempTable1.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfTempTable2.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfTransaction.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfUnions.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfUserFunction.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfVerify.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfViews.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfViewSchemaResolve.txt  
+  inflating: hsqldb/testrun/hsqldb/TestSelfViewsReconnect.txt  
+   creating: hsqldb/testrun/sqltool/
+  inflating: hsqldb/testrun/sqltool/annotated-file.sql  
+  inflating: hsqldb/testrun/sqltool/annotated-interactive.sql  
+  inflating: hsqldb/testrun/sqltool/annotated-raw.sql  
+  inflating: hsqldb/testrun/sqltool/append.inter  
+  inflating: hsqldb/testrun/sqltool/args-noinput.sql  
+  inflating: hsqldb/testrun/sqltool/args-sql.sql  
+  inflating: hsqldb/testrun/sqltool/args-sqlni.sql  
+  inflating: hsqldb/testrun/sqltool/badsqlonly.nsql  
+  inflating: hsqldb/testrun/sqltool/comment-midline.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-constcols.dsv  
+  inflating: hsqldb/testrun/sqltool/dsv-constcols.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-omits.dsv  
+  inflating: hsqldb/testrun/sqltool/dsv-omits.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-prepare.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-rejects.dsv  
+  inflating: hsqldb/testrun/sqltool/dsv-rejects.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-roundtrip.sql  
+  inflating: hsqldb/testrun/sqltool/dsv-trimming-alt.dsv  
+  inflating: hsqldb/testrun/sqltool/dsv-trimming.dsv  
+  inflating: hsqldb/testrun/sqltool/dsv-trimming.sql  
+  inflating: hsqldb/testrun/sqltool/edit-a.sql  
+  inflating: hsqldb/testrun/sqltool/edit-s-noswitches.sql  
+  inflating: hsqldb/testrun/sqltool/edit-s-switches.sql  
+  inflating: hsqldb/testrun/sqltool/goodsqlonly.sql  
+  inflating: hsqldb/testrun/sqltool/hist-recall-19.sql  
+  inflating: hsqldb/testrun/sqltool/hist-recall-runquery.sql  
+  inflating: hsqldb/testrun/sqltool/history.inter  
+  inflating: hsqldb/testrun/sqltool/lastval.sql  
+  inflating: hsqldb/testrun/sqltool/logic.sql  
+  inflating: hsqldb/testrun/sqltool/noop.sql  
+  inflating: hsqldb/testrun/sqltool/nq-arg1.isql  
+  inflating: hsqldb/testrun/sqltool/nq-arg1.nsql  
+  inflating: hsqldb/testrun/sqltool/nq-noarg1.isql  
+  inflating: hsqldb/testrun/sqltool/nq-noarg1.sql  
+  inflating: hsqldb/testrun/sqltool/nullrep-alt.dsv  
+  inflating: hsqldb/testrun/sqltool/nullrep.dsv  
+  inflating: hsqldb/testrun/sqltool/nullrep.sql  
+  inflating: hsqldb/testrun/sqltool/pl-variable.sql  
+  inflating: hsqldb/testrun/sqltool/plcontrolflow.sql  
+  inflating: hsqldb/testrun/sqltool/q-arg1.nsql  
+  inflating: hsqldb/testrun/sqltool/q-noarg1.sql  
+  inflating: hsqldb/testrun/sqltool/rawmode.sql  
+  inflating: hsqldb/testrun/sqltool/readme.txt  
+  inflating: hsqldb/testrun/sqltool/runtests.bash  
+  inflating: hsqldb/testrun/sqltool/special-d.sql  
+  inflating: hsqldb/testrun/sqltool/special-q-arg.sql  
+  inflating: hsqldb/testrun/sqltool/special-q.sql  
+  inflating: hsqldb/testrun/sqltool/sql-blankfile.sql  
+  inflating: hsqldb/testrun/sqltool/sql-blankint.sql  
+  inflating: hsqldb/testrun/sqltool/subst.inter  
+  inflating: hsqldb/testrun/sqltool/testArgs.list  
+  inflating: hsqldb/testrun/sqltool/testcases.txt  
+  inflating: hsqldb/testrun/sqltool/testComments.list  
+  inflating: hsqldb/testrun/sqltool/testEditing.list  
+  inflating: hsqldb/testrun/sqltool/testHistory.list  
+  inflating: hsqldb/testrun/sqltool/testPL.list  
+  inflating: hsqldb/testrun/sqltool/testSpecials.list  
+  inflating: hsqldb/testrun/sqltool/testSQL.list  
+  inflating: hsqldb/testrun/sqltool/write.inter  
+make writeable...
+C:/cygwin/bin/perl C:/steve/TestArea/main/solenv/bin/leconvert.pl unix ./wntmsci12.pro/misc/build/hsqldb/build/build.xml ./wntmsci12.pro/misc/build/hsqldb/src/org/hsqldb/persist/HsqlDatabaseProperties.java ./wntmsci12.pro/misc/build/hsqldb/src/org/hsqldb/Library.java && C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/so_hsqldb_convert_unx_flag
+cd ./wntmsci12.pro/misc/build && cat ../../..//patches/i121754.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_so_hsqldb
+patching file hsqldb/build/build.xml
+patching file hsqldb/src/org/hsqldb/Expression.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcCallableStatement.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcConnection.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcDatabaseMetaData.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcDataSource.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcPreparedStatement.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcResultSet.java
+patching file hsqldb/src/org/hsqldb/jdbc/jdbcStatement.java
+patching file hsqldb/src/org/hsqldb/jdbcDriver.java
+patching file hsqldb/src/org/hsqldb/lib/StringComparator.java
+patching file hsqldb/src/org/hsqldb/Library.java
+patching file hsqldb/src/org/hsqldb/persist/HsqlDatabaseProperties.java
+patching file hsqldb/src/org/hsqldb/Select.java
+patching file hsqldb/src/org/hsqldb/Table.java
+patching file hsqldb/src/org/hsqldb/TableWorks.java
+C:/cygwin/bin/perl C:/steve/TestArea/main/solenv/bin/leconvert.pl dos  ./wntmsci12.pro/misc/build/hsqldb/build/build.xml ./wntmsci12.pro/misc/build/hsqldb/src/org/hsqldb/persist/HsqlDatabaseProperties.java ./wntmsci12.pro/misc/build/hsqldb/src/org/hsqldb/Library.java && C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/so_hsqldb_convert_dos_flag
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_so_hsqldb
+mkdir.exe ./wntmsci12.pro/misc/build/hsqldb/
+cd ./wntmsci12.pro/misc/build/hsqldb/ && C:/Apache-Ant/apache-ant-1.9.2/bin/ant -Dbuild.label="build-410m1(Build:9750)" -f build/build.xml jar  && C:/cygwin/bin/touch.exe C:/steve/testarea/main/hsqldb/./wntmsci12.pro/misc/build/so_built_so_hsqldb
+Buildfile: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml
+
+init:
+
+javaversion6:
+
+javaversion4:
+
+javaversion2:
+
+-prepare:
+    [mkdir] Created dir: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+
+codeswitcher:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:135: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 1 source file to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+    [javac] Note: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\src\org\hsqldb\util\CodeSwitcher.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+switches:
+
+switchtojdk13:
+
+switchtojdk14:
+     [java] .........................
+
+switchtojdk16:
+
+store:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:293: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+
+lib:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:304: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 41 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+    [javac] Note: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\src\org\hsqldb\lib\java\JavaSystem.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+-javajsse:
+     [echo] ant.java.hasjsse=true
+
+classes:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:316: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 14 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+    [javac] Note: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\src\org\hsqldb\DIProcedureInfo.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 41 files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+
+classes14:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:351: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 4 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+
+util:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:381: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 47 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+    [javac] Note: Some input files use or override a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+     [copy] Copying 11 files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes\org\hsqldb\util
+
+swing:
+    [javac] C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\build\build.xml:397: warning: 'includeantruntime' was not set, defaulting to build.sysclasspath=last; set to false for repeatable builds
+    [javac] Compiling 6 source files to C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\classes
+    [javac] Note: Some input files use unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+hsqldb:
+      [jar] Building jar: C:\steve\testarea\main\hsqldb\wntmsci12.pro\misc\build\hsqldb\lib\hsqldb.jar
+
+jar:
+
+BUILD SUCCESSFUL
+Total time: 11 seconds
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_so_hsqldb
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_so_hsqldb
+hsqldb deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/hsqldb/build.lst
+COPY: ../wntmsci12.pro/misc/build/hsqldb/lib/hsqldb.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/hsqldb.jar
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/hsqldb/deliver.log
+Module 'hsqldb' delivered successfully. 2 files copied, 0 files unchanged
+
+=============

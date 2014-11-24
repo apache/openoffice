@@ -1,0 +1,16 @@
+twain
+=============
+
+Entering /cygdrive/c/steve/testarea/main/twain/util
+
+mkout -- version: 1.8
+mkdir.exe ../wntmsci12.pro/inc/
+cp ../inc/twain.h ../wntmsci12.pro/inc/twain.h
+twain deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/twain/build.lst
+COPY: ../wntmsci12.pro/inc/twain.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/twain/twain.h
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/twain/deliver.log
+Module 'twain' delivered successfully. 2 files copied, 0 files unchanged
+
+=============

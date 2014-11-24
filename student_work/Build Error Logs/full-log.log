@@ -1,0 +1,820 @@
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ find . -type f -name "*.pl" -exec /cygdrive/c/steve/fixeol.sh {} \;
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ find . -type f -name "*.xml" -exec /cygdrive/c/steve/fixeol.sh {} \;
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ find . -type f -name "*.mk" -exec /cygdrive/c/steve/fixeol.sh {} \;
+mv: try to overwrite `./makefile.mk', overriding mode 0000 (---------)? y
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ find . -type f -name "*.patch" -exec /cygdrive/c/steve/fixeol.sh {} \;
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ autoconf
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ ./configure --without-junit
+checking whether configure is up-to-date... yes
+********************************************************************
+*                                                                  *
+*   Apache OpenOffice build configuration.                         *
+*                                                                  *
+*   The configure process checks your platform to see whether      *
+*   you can build Apache OpenOffice on it.                         *
+*   This process checks all pre-requisites and generates a file    *
+*   containing the necessary environment variables.                *
+*   Source this file after configure has ended successfully.       *
+*                                                                  *
+*   Warnings that are generated during the configure process       *
+*   must be taken into account since it can be a reason for        *
+*   an unsuccessful build of Apache OpenOffice.                    *
+*                                                                  *
+********************************************************************
+
+********************************************************************
+*                                                                  *
+*   Checking the platform pre-requisites.                          *
+*                                                                  *
+********************************************************************
+
+checking for grep that handles long lines and -e... C:/cygwin/bin/grep.exe
+checking for egrep... C:/cygwin/bin/grep.exe -E
+checking for gawk... gawk
+checking for gawk... /usr/bin/gawk
+checking for sed... /usr/bin/sed
+checking for solenv environment... default
+checking for custom pack.lst... no
+checking build system type... i686-pc-cygwin
+checking host system type... i686-pc-cygwin
+checking target system type... i686-pc-cygwin
+cygwin
+checking Cygwin version... 1.7.25(0.270/5/3)
+head: cannot open `/etc/*-release' for reading: No such file or directory
+CYGWIN_NT-6.1-WOW64 asfwin01 1.7.25(0.270/5/3) 2013-08-31 20:39 i686 Cygwin
+checking for pkg-config... no
+checking whether to enable crashdump feature... no
+checking whether to use the standard non-optimizing compiler... no
+checking whether to build/use the Windows 64bit shell extensions... no
+checking whether to turn warnings to errors... no
+checking whether to do a debug build... no
+checking whether to build with additional debug utilities... no, full product build
+checking whether to include symbols into final build... no
+checking whether to strip the solver or not.... yes
+checking whether to enable category B components... no: disabled modules moz, nss, hunspell, hyphen, saxon, rhino, beanshell, graphite, coinmp
+checking whether to enable the Online Update support... yes
+checking whether to enable native CUPS support... no
+checking whether to enable fontconfig support... no
+checking whether to use DirectX... yes
+checking whether to use ActiveX... yes
+checking whether to use ATL... yes
+checking whether to use RPATH in shared libraries... yes
+checking whether to use dicts from external paths... no
+checking Windows build environment sanity... ok
+checking for cygwin gcc/g++... found
+checking for bash... /usr/bin/bash
+checking gcc home... /usr
+checking whether to enable pch feature... no
+checking for GNU make... make
+checking the GNU make version... make 4.0
+3+:
+checking for dmake... checking for dmake... /usr/bin/dmake
+using system dmake
+checking whether the found dmake is the right dmake... yes
+checking the dmake version... OK, >= 4.11
+checking for GNU or compatible BSD tar... tar
+checking for perl... C:/cygwin/bin/perl
+checking the Perl version... checked (perl 5)
+checking for required Perl modules... all modules found
+checking for friendly registry keys... done
+checking the Microsoft C/C++ Compiler... found (/cygdrive/c/PROGRA~2/MICROS~1.0/VC/bin/cl.exe)
+checking the Version of Microsoft C/C++ Compiler... found Compiler version 001500003072 in "Microsoft (R) 32-bit C/C++ Optimizing Compiler Version 15.00.30729.0" for 80x86
+found .NET 2008 / VS 9.0.
+checking for midl.exe... /cygdrive/c/PROGRA~2/WI3CF2~1/8.0/bin/x86/midl.exe
+checking for csc.exe... /cygdrive/c/Windows/MICROS~1.NET/FRAMEW~1/V20~1.507/csc.exe
+checking .NET Framework... Use of uninitialized value in print at ./oowintool line 269.
+found
+checking for sys/types.h... no
+checking for sys/stat.h... no
+checking for stdlib.h... no
+checking for string.h... no
+checking for memory.h... no
+checking for strings.h... no
+checking for inttypes.h... no
+checking for stdint.h... no
+checking for unistd.h... no
+checking size of long... 4
+checking whether byte ordering is bigendian... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... unknown
+checking for _LARGE_FILES value needed for large files... unknown
+no g++ includes
+checking exception type...
+checking what the default STL should be... stlport
+checking for STL providing headers... using internal stlport.
+checking whether we are allowed and able to use --ccache-skip... only used on Mac currently, skipping
+checking which memory allocator to use... internal
+checking whether to add custom build version... no
+checking whether to build with Java support... yes
+Use of uninitialized value in print at ./oowintool line 280.
+checking for java... C:/PROGRA~1/Java/JDK17~1.0_4/bin/java.exe
+checking the installed JDK... checked (JDK 1.7.0_45)
+checking for javac... C:/PROGRA~1/Java/JDK17~1.0_4/bin/javac.exe
+checking for javadoc... C:/PROGRA~1/Java/JDK17~1.0_4/bin/javadoc.exe
+checking for jawt lib name... -ljawt
+checking whether to enable gcj aot compilation... no
+checking whether to enable EPM for packing... yes
+checking which package format to use... msi
+checking for gperf... /usr/bin/gperf
+checking for gperf... (cached) /usr/bin/gperf
+checking gperf version... OK
+checking whether to build the stax... yes
+checking whether to build the ODK... yes
+checking for external/unowinreg/unowinreg.dll... not found, will be built
+checking whether to provide libstdc++/libgcc_s in the installset... yes
+checking which zlib to use... internal
+checking which jpeg to use... internal
+checking which expat to use... internal
+checking which libwpd to use... no
+checking which cppunit to use... configure: WARNING: not using cppunit
+checking which libxslt to use... internal
+checking which libxml to use... internal
+checking which python to use... internal
+checking for bzip2... /usr/bin/bzip2
+checking which lucene to use... internal
+checking whether to build the MySQL Connector extension... no
+checking which hsqldb to use... internal
+checking which beanshell to use... none (disabled)
+checking which saxon to use... none (disabled)
+checking whether to enable support for JavaScript... no
+checking which libapr to use... internal
+checking which libapr-util to use... internal
+checking which libserf to use... internal
+checking whether to enable support for CoinMP... no
+checking which curl to use... internal
+checking which mdds to use... internal
+checking which boost to use... internal
+checking which vigra to use... internal
+checking which odbc headers to use... internal
+checking whether to enable build of Mozilla/Mozilla NSS-using components... no
+checking whether to build Mozilla addressbook connectivity... no
+checking whether to build XML Security support... no, since Mozilla (NSS) disabled but needed
+checking whether to build LDAP configuration backend... no. Either Mozilla or OpenLDAP needed
+checking which mozilla to use... none
+checking which sane header to use... internal
+checking which icu to use... internal
+checking whether to enable graphite support... no
+checking whether to link to Xrender... no, dynamically open it
+checking which Xrender headers to use... internal
+checking whether to enable RandR support... no
+checking which libssl to use... internal
+checking which redland library to use... internal
+checking whether to build the Spell Checking component... no
+checking whether to build the Hyphenator component... no
+checking which mythes to use... internal
+checking which libtextcat to use... internal
+checking which libtextcat data directory to use... internal
+checking for getopt... no
+checking for readdir_r... no
+checking for PSDK files... SDK files found ...)
+Found Windows SDK 7.0 (/cygdrive/c/PROGRA~1/MIA713~1/Windows/v7.0)
+checking for DirectX SDK files... found
+checking for ATL and MFC... configure: testing ATL/MFC libs and includes
+configure: looking for atlbase.h in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/include"
+configure: found atlbase.h in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/include"? "no"
+configure: looking for afx.h in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/include"
+configure: found afx.h in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/include"? "no"
+configure: looking for atls.lib in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/lib"
+configure: found atls.lib in "/cygdrive/c/PROGRA~2/MICROS~1.0/VC/atlmfc/lib"? "no"
+ATL/MFC disabled
+checking for NSIS... checking for nsis.exe... /cygdrive/c/NSIS-3/nsis.exe
+found (/cygdrive/c/NSIS-3)
+checking for bison... /usr/bin/bison
+checking the bison version... checked (/usr/bin/bison 2.7.12-4996)
+checking for flex... /usr/bin/flex
+checking for patch... /usr/bin/patch
+checking for gnucp... no
+checking for cp... /usr/bin/cp
+checking whether /usr/bin/cp is GNU cp from coreutils with preserve= support... yes
+checking for bash... /usr/bin/bash
+checking ml.exe assembler path... checking for ml.exe... /cygdrive/c/PROGRA~2/MICROS~1.0/VC/bin/ml.exe
+
+checking for zip... /usr/bin/zip
+checking for unzip... /usr/bin/unzip
+checking for dbghelp.dll... found and executable
+checking for vcredist_x86.exe... found and executable
+checking for vcredist_x64.exe... found and executable
+Copying /cygdrive/C/Program Files (x86)/Microsoft Visual Studio 9.0/VC/redist/x86/Microsoft.VC90.CRT/msvcp90.dll to ./external/msvcp90
+Copying /cygdrive/C/Program Files (x86)/Microsoft Visual Studio 9.0/VC/redist/x86/Microsoft.VC90.CRT/msvcr90.dll to ./external/msvcp90
+Copying /cygdrive/C/Program Files (x86)/Microsoft Visual Studio 9.0/VC/redist/x86/Microsoft.VC90.CRT/msvcm90.dll to ./external/msvcp90
+Copying /cygdrive/C/Program Files (x86)/Microsoft Visual Studio 9.0/VC/redist/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest to ./external/msvcp90
+checking for gdiplus.dll... found and executable
+checking for msvcr100.dll... found and executable
+checking which VCLplugs shall be built... gtk
+checking whether to enable GConf support... no
+checking whether to enable GNOME VFS support... no
+checking whether to use cairo... no
+checking whether to build the OpenGL Transitions component... no
+checking whether to build the PDF Import extension... no
+checking whether to build the Wiki Publisher extension... no
+checking whether to build the Report Builder extension... no
+checking whether to enable the lockdown pieces... no
+checking whether to enable evolution 2 support... no
+checking whether to enable KDE address book support... no
+checking whether to include MathMLDTD... yes
+checking whether to include category B fonts... no
+checking whether to include category A fonts... yes
+checking whether any fonts are included... yes
+checking whether to include PPDs... yes
+checking whether to include AFMs... yes
+checking whether and how to use Xinerama... no
+checking whether to build own version of libpng... yes
+checking whether to build own version of libjpeg... yes
+checking whether to trigger rat scan... no
+checking for jakarta-ant... C:/Apache-Ant/apache-ant-1.9.2/bin/ant
+checking if C:/Apache-Ant/apache-ant-1.9.2/bin/ant works... Ant works
+checking Ant lib directory... Ant lib directory found.
+checking whether ant is >= 1.6.0... yes, 1.9.2
+checking which languages to be built... en-US
+checking which languages have poor help localizations... none
+checking which dictionaries to include... ALL
+checking for additional 'intro' bitmaps... none
+checking for additional 'about' bitmaps... none
+checking for vendor... not set
+checking for UNIX wrapper name... not set
+checking whether to statically link to Gtk... no
+checking whether to use layout dialogs... no
+checking build verbosity... not set
+checking whether to enable dependency tracking... yes
+********************************************************************
+*                                                                  *
+*   Setting up the build environment variables.                    *
+*                                                                  *
+********************************************************************
+checking solver path... default
+configure: writing config.status
+configure: creating ./config.status
+config.status: creating set_soenv
+config.status: creating Makefile.gb
+Unrecognized escape \A passed through at ./set_soenv line 1590.
+Unrecognized escape \A passed through at ./set_soenv line 1591.
+Setting up the environment for building Apache OpenOffice
+Setting platform independent values... Setting W32 build with bash shell specific values... done
+Setting the environment variables... done
+Setting the aliases... done
+The variable SRC_ROOT          is set to: C:/svn/capstone2013/main
+The variable OOO_SHELL         is set to: /usr/bin/bash
+The variable JAVA_HOME         is set to: C:/PROGRA~1/Java/JDK17~1.0_4
+The variable ANT_HOME          is set to: C:Apache-Ant
+The variable ANT_LIB           is set to: C:Apache-Ant
+The variable ANT               is set to: C:/Apache-Ant/apache-ant-1.9.2/bin/ant
+The variable JDKLIB            is set to: C:/PROGRA~1/Java/JDK17~1.0_4/lib
+The variable STLPORT4          is set to: NO_STLPORT4
+The variable STLPORT_VER       is set to: 400
+The variable ASM_PATH          is set to: ASM_IN_PATH
+The variable BUILD_SOSL        is set to: true
+The variable FRAMEWORKSHOME    is set to: unset
+
+#
+# Platform independent constant values.
+#
+The variable DIC_DADK          is set to: TRUE
+The variable DIC_DEDE          is set to: TRUE
+The variable DIC_ENGB          is set to: TRUE
+The variable DIC_ENUS          is set to: TRUE
+The variable DIC_HUHU          is set to: TRUE
+The variable DIC_ITIT          is set to: TRUE
+The variable DIC_RURU          is set to: TRUE
+The variable DIC_THTH          is set to: TRUE
+The variable DIC_SWTZ          is set to: TRUE
+The variable DIC_ALL           is set to: TRUE
+The variable WITH_LANG         is set to: unset
+The variable INTRO_BITMAPS     is set to: unset
+The variable ABOUT_BITMAPS     is set to: unset
+The variable OOO_VENDOR        is set to: unset
+The variable OOODMAKEMODE      is set to: YES
+The variable WITH_POOR_HELP_LOCALIZATIONS is set to: unset
+The variable CALL_CDECL        is set to: TRUE
+The variable COMMON_OUTDIR     is set to: unset
+The variable common_build      is set to: unset
+The variable BMP_WRITES_FLAG   is set to: TRUE
+The variable BUILD_SOSL_RELEASE is set to: TRUE
+The variable NO_REC_RES        is set to: TRUE
+The variable SO3               is set to: TRUE
+The variable SOLAR_PLUGIN      is set to: TRUE
+The variable UPDATER           is set to: YES
+The variable build_deliver     is set to: true
+The variable VCL               is set to: TRUE
+The variable ENABLEUNICODE     is set to: TRUE
+The variable NEW_JAR_PACK      is set to: TRUE
+The variable NO_BSYMBOLIC      is set to: TRUE
+The variable TF_FILTER         is set to: TRUE
+The variable EXTERNAL_WARNINGS_NOT_ERRORS is set to: TRUE
+The variable PRODUCT           is set to: full
+The variable PROFULLSWITCH     is set to: product=full
+The variable PROEXT            is set to: .pro
+The variable VALGRIND_CFLAGS   is set to: unset
+The variable UNIXWRAPPERNAME   is set to: unset
+The variable BUILD_MOZAB       is set to: unset
+The variable PREBUILD_MOZAB    is set to: unset
+The variable MOZILLA_VERSION   is set to: unset
+The variable DEFAULT_MOZILLA_TOOLKIT is set to: unset
+The variable ENABLE_NSS_MODULE is set to: NO
+The variable MOZILLABUILD      is set to: unset
+The variable BUILD_VER_STRING  is set to: unset
+The variable DEFAULT_TO_ENGLISH_FOR_PACKING is set to: yes
+The variable ENABLE_GTK        is set to: TRUE
+The variable GTK_CFLAGS        is set to: unset
+The variable GTK_LIBS          is set to: unset
+The variable GTHREAD_CFLAGS    is set to: unset
+The variable GTHREAD_LIBS      is set to: unset
+The variable ENABLE_SYSTRAY_GTK is set to: unset
+The variable ENABLE_STATIC_GTK is set to: FALSE
+The variable ENABLE_GSTREAMER  is set to: unset
+The variable ENABLE_CAIRO      is set to: unset
+The variable ENABLE_CAIRO_CANVAS is set to: FALSE
+The variable ENABLE_OPENGL     is set to: unset
+The variable ENABLE_PDFIMPORT  is set to: NO
+The variable ENABLE_REPORTBUILDER is set to: NO
+The variable SYSTEM_JFREEREPORT is set to: unset
+The variable OOO_JUNIT_JAR     is set to: unset
+The variable SAC_JAR           is set to: unset
+The variable LIBXML_JAR        is set to: unset
+The variable FLUTE_JAR         is set to: unset
+The variable JFREEREPORT_JAR   is set to: unset
+The variable LIBLAYOUT_JAR     is set to: unset
+The variable LIBLOADER_JAR     is set to: unset
+The variable LIBFORMULA_JAR    is set to: unset
+The variable LIBREPOSITORY_JAR is set to: unset
+The variable LIBBASE_JAR       is set to: unset
+The variable LIBFONTS_JAR      is set to: unset
+The variable LIBSERIALIZER_JAR is set to: unset
+The variable ENABLE_MEDIAWIKI  is set to: NO
+The variable SYSTEM_APACHE_COMMONS is set to: unset
+The variable COMMONS_CODEC_JAR is set to: unset
+The variable COMMONS_LANG_JAR  is set to: unset
+The variable COMMONS_HTTPCLIENT_JAR is set to: unset
+The variable COMMONS_LOGGING_JAR is set to: unset
+The variable SYSTEM_SERVLETAPI is set to: unset
+The variable SERVLETAPI_JAR    is set to: unset
+The variable ENABLE_DBUS       is set to: unset
+The variable ENABLE_GCONF      is set to: unset
+The variable ENABLE_GNOMEVFS   is set to: unset
+The variable ENABLE_GIO        is set to: unset
+The variable ENABLE_KDE        is set to: unset
+The variable KDE_CFLAGS        is set to: unset
+The variable KDE_LIBS          is set to: unset
+The variable MOC               is set to: moc
+The variable ENABLE_KDE4       is set to: unset
+The variable KDE4_CFLAGS       is set to: unset
+The variable KDE4_LIBS         is set to: unset
+The variable MOC4              is set to: moc
+The variable ENABLE_KAB        is set to: unset
+The variable PSPRINT           is set to: TRUE
+The variable MKDEPENDSOLVER    is set to: TRUE
+The variable nodep             is set to: unset
+The variable TARFILE_LOCATION  is set to: C:/svn-new/aoo-trunk/ext_sources
+The variable DO_FETCH_TARBALLS is set to: yes
+The variable CUSTOM_PACK_LIST  is set to: unset
+The variable USE_PACKAGER      is set to: unset
+The variable ENABLE_ONLINE_UPDATE is set to: YES
+
+#
+# Platform dependent constant values.
+#
+The variable SOLAR_JAVA        is set to: TRUE
+The variable BIG_SVX           is set to: unset
+The variable COM               is set to: MSC
+The variable COMPATH           is set to: C:/PROGRA~2/MICROS~1.0/VC
+The variable CXX_X64_BINARY    is set to: C:/PROGRA~2/MICROS~1.0/VC/bin/amd64/cl.exe
+The variable LINK_X64_BINARY   is set to: C:/PROGRA~2/MICROS~1.0/VC/bin/amd64/link.exe
+The variable LIBMGR_X64_BINARY is set to: C:/PROGRA~2/MICROS~1.0/VC/bin/amd64/lib.exe
+The variable CPU               is set to: I
+The variable CPUNAME           is set to: INTEL
+The variable CVER              is set to: M1500
+The variable GUI               is set to: WNT
+The variable GLIBC             is set to: unset
+The variable GUIBASE           is set to: WIN
+The variable GVER              is set to: NT351
+The variable OS                is set to: WNT
+The variable OSVERSION         is set to: unset
+The variable PTHREAD_CFLAGS    is set to: unset
+The variable PTHREAD_LIBS      is set to: unset
+The variable OUTPATH           is set to: wntmsci12
+The variable INPATH            is set to: wntmsci12.pro
+The variable PATH_SEPERATOR    is set to: ;
+The variable COMEX             is set to: 12
+The variable CDPATHx           is set to: unset
+The variable DYNAMIC_CRT       is set to: TRUE
+The variable SET_EXCEPTIONS    is set to: TRUE
+The variable use_shl_versions  is set to: TRUE
+The variable FLIPCMD           is set to: slfl.pl
+The variable ARM_TARGET        is set to: unset
+
+#
+# Variable values.
+#
+The variable CYGWIN_PATH       is set to: C:/cygwin/bin
+The variable PSDK_HOME         is set to: C:/PROGRA~1/MIA713~1/Windows/v7.0
+The variable WINDOWS_VISTA_PSDK is set to: TRUE
+The variable DIRECTXSDK_LIB    is set to: C:/PROGRA~2/MI5E29~1/lib/x86
+The variable USE_DIRECTX5      is set to: unset
+The variable ATL_LIB           is set to: unset
+The variable ATL_LIB_X64       is set to: unset
+The variable ATL_INCLUDE       is set to: unset
+The variable HAVE_ATLTHUNK     is set to: unset
+The variable MFC_LIB           is set to: unset
+The variable MFC_INCLUDE       is set to: unset
+The variable NSIS_PATH         is set to: C:/NSIS-3
+The variable DISABLE_ACTIVEX   is set to: TRUE
+The variable DISABLE_ATL       is set to: TRUE
+The variable USE_NEW_SDK       is set to: TRUE
+The variable TMPDIR            is set to: /tmp
+The variable ENABLE_HUNSPELL   is set to: unset
+The variable ENABLE_HYPHEN     is set to: unset
+The variable PERL              is set to: C:/cygwin/bin/perl
+The variable RPM               is set to: unset
+The variable DPKG              is set to: unset
+The variable PKGMK             is set to: unset
+The variable GNUMAKE           is set to: make
+The variable GNUTAR            is set to: tar
+The variable UPD               is set to: 410
+The variable WORK_STAMP        is set to: AOO410
+The variable SOLARVER          is set to: C:/svn/capstone2013/main/solver/410
+The variable SOLARVERSION      is set to: $SOLARVER
+The variable WORKDIR           is set to: $SOLARVER/$INPATH/workdir
+The variable OUTDIR            is set to: $SOLARVER/$INPATH
+The variable SOLARENV          is set to: C:/svn/capstone2013/main/solenv
+The variable SOLARENVINC       is set to: $SOLARENV/inc
+The variable LOCALINI          is set to: $SOLARENV/config
+The variable STAR_INIROOT      is set to: $SOLARENV/config
+The variable STAR_INIROOTOLD   is set to: $SOLARENV/config
+The variable STAR_STANDLST     is set to: $SOLARENV/config/stand.lst
+The variable STAR_SSCOMMON     is set to: $SOLARENV/config/ssolar.cmn
+The variable STAR_SSOLARINI    is set to: $SOLARENV/config/ssolar.ini
+The variable DMAKEROOT         is set to: $SOLARENVINC/startup
+The variable CLASSPATH         is set to: $JAVA_HOME/jre/lib/rt.jar;.
+The variable XCLASSPATH        is set to: $JAVA_HOME/jre/lib/rt.jar;.
+The variable JDK               is set to: sun
+The variable JAVAFLAGS         is set to: unset
+The variable JAVAINTERPRETER   is set to: C:/PROGRA~1/Java/JDK17~1.0_4/bin/java.exe
+The variable JAVAIFLAGS        is set to: unset
+The variable JAVACOMPILER      is set to: C:/PROGRA~1/Java/JDK17~1.0_4/bin/javac.exe
+The variable JAVAAOTCOMPILER   is set to: unset
+The variable JAVADOC           is set to: C:/PROGRA~1/Java/JDK17~1.0_4/bin/javadoc.exe
+The variable SCPDEFS           is set to:  -DENABLE_ONLINE_UPDATE -DWITH_CATA_FONTS
+The variable SOLAREXTRAINC     is set to: unset
+The variable SOLAREXTRALIB     is set to: unset
+The variable PATH              is set to: .:/cygdrive/c/svn/capstone2013/main/solenv/bin:/cygdrive/c/svn/capstone2013/main/solenv/wntmsci12.pro/bin:/cygdrive/c/PROGRA~1/Java/JDK17~1.0_4/bin:/cygdrive/c/PROGRA~2/MICROS~1.0/VC/bin:/cygdrive/c/PROGRA~2/MICROS~1.0/Common7/IDE:/cygdrive/c/PROGRA~2/WI3CF2~1/8.0/bin/x86:/cygdrive/c/Windows/MICROS~1.NET/FRAMEW~1/V20~1.507:/cygdrive/c/PROGRA~1/MIA713~1/Windows/v7.0/bin:/usr/bin:/cygdrive/c/NSIS-3:/cygdrive/c/svn-new/aoo-trunk/main/solenv/bin:/cygdrive/c/svn-new/aoo-trunk/main/solenv/wntmsci12.pro/bin:/usr/local/bin:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/Common7/IDE/CommonExtensions/Microsoft/TestWindow:/cygdrive/c/Program Files (x86)/Microsoft SDKs/F#/3.0/Framework/v4.0:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/VSTSDB/Deploy:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/Common7/IDE:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/VC/BIN:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/Common7/Tools:/cygdrive/c/Windows/Microsoft.NET/Framework/v4.0.30319:/cygdrive/c/Windows/Microsoft.NET/Framework/v3.5:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/VC/VCPackages:/cygdrive/c/Program Files (x86)/HTML Help Workshop:/cygdrive/c/Program Files (x86)/Microsoft Visual Studio 11.0/Team Tools/Performance Tools:/cygdrive/c/Program Files (x86)/Windows Kits/8.0/bin/x86:/cygdrive/c/Program Files (x86)/Microsoft SDKs/Windows/v8.0A/bin/NETFX 4.0 Tools:/cygdrive/c/Program Files (x86)/Microsoft SDKs/Windows/v7.0A/Bin:/cygdrive/c/Windows/system32:/cygdrive/c/Windows:/cygdrive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0:/cygdrive/c/Program Files (x86)/Microsoft SQL Server/100/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/100/Tools/Binn:/cygdrive/c/Program Files/Microsoft SQL Server/100/DTS/Binn:/cygdrive/c/Program Files/Microsoft/Web Platform Installer:/cygdrive/c/Program Files (x86)/Microsoft ASP.NET/ASP.NET Web Pages/v1.0:/cygdrive/c/Program Files (x86)/Windows Kits/8.0/Windows Performance Toolkit:/cygdrive/c/Program Files/Microsoft SQL Server/110/Tools/Binn:/cygdrive/c/Program Files/SlikSvn/bin:/cygdrive/c/Program Files/Java/jdk1.7.0_45/bin:/cygdrive/c/Apache-Ant/apache-ant-1.9.2/bin
+The variable SOLARLIB          is set to:  -L$SOLARVER/$INPATH/lib -L../lib -L$SOLARENV/$OUTPATH/lib
+The variable SOLARINC          is set to:  -I. -I$SOLARVER/$INPATH/inc/stl -I$SOLARVER/$INPATH/inc/external -I$SOLARVER/$INPATH/inc -I$SOLARENV/$OUTPATH/inc -I$SOLARENV/inc -I$SRC_ROOT/res -IC:/svn/capstone2013/main/solver/410/wntmsci12.pro/inc/stl -I$JAVA_HOME/include/win32 -I$JAVA_HOME/include -I$PSDK_HOME/include -I$COMPATH/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include
+The variable COMP_ENV          is set to: wntmsci12
+The variable JAVAHOME          is set to: $JAVA_HOME
+The variable CC                is set to: C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe
+The variable HAVE_GCC_VISIBILITY_FEATURE is set to: unset
+The variable HAVE_LD_HASH_STYLE is set to: unset
+The variable HAVE_LD_BSYMBOLIC_FUNCTIONS is set to: unset
+The variable CXX               is set to: C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe
+The variable USE_CCACHE        is set to: unset
+The variable MINGWCXX          is set to: unset
+The variable MINGWSTRIP        is set to: unset
+The variable USE_SYSTEM_STL    is set to: unset
+The variable ALLOC             is set to: unset
+The variable ENABLE_SYMBOLS    is set to: unset
+The variable DISABLE_STRIP     is set to: unset
+The variable LFS_CFLAGS        is set to: -D_FILE_OFFSET_BITS=unknown -D_LARGE_FILES
+The variable ENABLE_CRASHDUMP  is set to: unset
+The variable ENABLE_CUPS       is set to: unset
+The variable ENABLE_RANDR      is set to: unset
+The variable ENABLE_FONTCONFIG is set to: unset
+The variable ENABLE_DIRECTX    is set to: TRUE
+The variable ENABLE_DIRECT_DRAW is set to: unset
+The variable ENABLE_LAYOUT     is set to: FALSE
+The variable ENABLE_PCH        is set to: unset
+The variable ENABLE_GRAPHITE   is set to: FALSE
+The variable SYSTEM_GRAPHITE   is set to: unset
+The variable GRAPHITE_LIBS     is set to: unset
+The variable GRAPHITE_CFLAGS   is set to: unset
+The variable VC_STANDARD       is set to: unset
+The variable BUILD_X64         is set to: unset
+The variable ENABLE_CATEGORY_B is set to: unset
+The variable BUNDLED_EXTENSION_BLOBS is set to: unset
+The variable BUNDLED_PREREG_EXTENSIONS is set to: unset
+The variable ENABLE_BUNDLED_DICTIONARIES is set to: unset
+The variable SYSTEM_DICTS      is set to: NO
+The variable DICT_SYSTEM_DIR   is set to: unset
+The variable HYPH_SYSTEM_DIR   is set to: unset
+The variable THES_SYSTEM_DIR   is set to: unset
+The variable ENABLE_LOCKDOWN   is set to: unset
+The variable WITH_LDAP         is set to: NO
+The variable WITH_OPENLDAP     is set to: unset
+The variable WITH_MOZILLA      is set to: NO
+The variable SYSTEM_MOZILLA    is set to: unset
+The variable MOZ_FLAVOUR       is set to: unset
+The variable NSPR_LIB          is set to: unset
+The variable NSS_LIB           is set to: unset
+The variable MOZ_INC           is set to: unset
+The variable MOZ_LIB           is set to: unset
+The variable MOZ_LIB_XPCOM     is set to: unset
+The variable MOZ_NSPR_CFLAGS   is set to: unset
+The variable MOZ_NSS_CFLAGS    is set to: unset
+The variable MOZ_LDAP_CFLAGS   is set to: unset
+The variable WITH_CATA_FONTS   is set to: YES
+The variable WITH_CATB_FONTS   is set to: NO
+The variable WITH_FONTS        is set to: YES
+The variable WITHOUT_AFMS      is set to: unset
+The variable WITHOUT_PPDS      is set to: unset
+The variable BUILD_TYPE        is set to: OOo TWAIN ODK ZLIB JPEG EXPAT LIBXSLT LIBXML2 LIBXMLSEC PYTHON LUCENE HSQLDB APR APR_UTIL SERF CURL MDDS BOOST VIGRA UNIXODBC SANE ICU X11_EXTENSIONS OPENSSL REDLAND MYTHES LIBTEXTCAT LIBTEXTCATDATA MATHMLDTD MORE_FONTS AFMS
+The variable ADDITIONAL_REPOSITORIES is set to: ../ext_libraries
+The variable VERBOSE           is set to: unset
+The variable ENABLE_EVOAB2     is set to: unset
+The variable GOBJECT_CFLAGS    is set to: unset
+The variable GOBJECT_LIBS      is set to: unset
+The variable EPM               is set to: unset
+The variable EPM_URL           is set to: unset
+The variable EPM_FLAGS         is set to: unset
+The variable BUILD_EPM         is set to: unset
+The variable PKGFORMAT         is set to: msi
+The variable SYSTEM_STDLIBS    is set to: NO
+The variable SYSTEM_ZLIB       is set to: NO
+The variable SYSTEM_OPENSSL    is set to: NO
+The variable OPENSSL_CFLAGS    is set to: unset
+The variable OPENSSL_LIBS      is set to: unset
+The variable SYSTEM_PYTHON     is set to: NO
+The variable PYTHON_CFLAGS     is set to: unset
+The variable PYTHON_LIBS       is set to: unset
+The variable HOME              is set to: /home/HostAdmin
+The variable SYSTEM_ICU        is set to: NO
+The variable ICU_MAJOR         is set to: unset
+The variable ICU_MINOR         is set to: unset
+The variable ICU_MICRO         is set to: unset
+The variable SYSTEM_GENBRK     is set to: unset
+The variable SYSTEM_GENCCODE   is set to: unset
+The variable SYSTEM_GENCMN     is set to: unset
+The variable SYSTEM_JPEG       is set to: NO
+The variable FREETYPE_CFLAGS   is set to: unset
+The variable FREETYPE_LIBS     is set to: unset
+The variable SYSTEM_POPPLER    is set to: unset
+The variable POPPLER_CFLAGS    is set to: unset
+The variable POPPLER_LIBS      is set to: unset
+The variable GSTREAMER_CFLAGS  is set to: unset
+The variable GSTREAMER_LIBS    is set to: unset
+The variable SYSTEM_CAIRO      is set to: unset
+The variable BUILD_PIXMAN      is set to: unset
+The variable CAIRO_CFLAGS      is set to: unset
+The variable CAIRO_LIBS        is set to: unset
+The variable XRANDR_CFLAGS     is set to: unset
+The variable XRANDR_LIBS       is set to: unset
+The variable XRANDR_DLOPEN     is set to: unset
+The variable SYSTEM_LIBWPD     is set to: unset
+The variable LIBWPD_CFLAGS     is set to: unset
+The variable LIBWPD_LIBS       is set to: unset
+The variable SYSTEM_CPPUNIT    is set to: NO
+The variable CPPUNIT_CFLAGS    is set to: unset
+The variable CPPUNIT_LIBS      is set to: unset
+The variable WITH_CPPUNIT      is set to: unset
+The variable SYSTEM_LIBXML     is set to: NO
+The variable USE_FT_EMBOLDEN   is set to: unset
+The variable LIBXML_CFLAGS     is set to: unset
+The variable LIBXML_LIBS       is set to: unset
+The variable SYSTEM_EXPAT      is set to: NO
+The variable ENABLE_MYSQLC     is set to: NO
+The variable SYSTEM_MYSQL      is set to: unset
+The variable SYSTEM_MYSQL_CPPCONN is set to: unset
+The variable MYSQL_INC         is set to: unset
+The variable MYSQL_LIB         is set to: unset
+The variable MYSQL_DEFINES     is set to: unset
+The variable LIBMYSQL_PATH     is set to: unset
+The variable SYSTEM_HSQLDB     is set to: NO
+The variable HSQLDB_JAR        is set to: unset
+The variable SYSTEM_LUCENE     is set to: NO
+The variable LUCENE_CORE_JAR   is set to: unset
+The variable LUCENE_ANALYZERS_JAR is set to: unset
+The variable SYSTEM_BSH        is set to: NO
+The variable BSH_JAR           is set to: unset
+The variable ENABLE_BEANSHELL  is set to: NO
+The variable SYSTEM_SAXON      is set to: NO
+The variable SAXON_JAR         is set to: unset
+The variable DISABLE_SAXON     is set to: YES
+The variable ENABLE_JAVASCRIPT is set to: NO
+The variable SYSTEM_APR        is set to: NO
+The variable APR_CFLAGS        is set to: unset
+The variable APR_LIBS          is set to: unset
+The variable SYSTEM_APR_UTIL   is set to: NO
+The variable APR_UTIL_CFLAGS   is set to: unset
+The variable APR_UTIL_LIBS     is set to: unset
+The variable SYSTEM_SERF       is set to: NO
+The variable SERF_CFLAGS       is set to: unset
+The variable SERF_LIBS         is set to: unset
+The variable SYSTEM_COINMP     is set to: NO
+The variable ENABLE_COINMP     is set to: NO
+The variable COINMP_CFLAGS     is set to: unset
+The variable COINMP_LIBS       is set to: unset
+The variable SYSTEM_ODBC_HEADERS is set to: NO
+The variable SYSTEM_LIBXSLT    is set to: NO
+The variable LIBXSLT_CFLAGS    is set to: unset
+The variable LIBXSLT_LIBS      is set to: unset
+The variable SYSTEM_SANE_HEADER is set to: NO
+The variable SYSTEM_XRENDER_HEADERS is set to: NO
+The variable SYSTEM_CURL       is set to: NO
+The variable CURL_CFLAGS       is set to: unset
+The variable CURL_LIBS         is set to: unset
+The variable SYSTEM_BOOST      is set to: NO
+The variable SYSTEM_MDDS       is set to: NO
+The variable SYSTEM_VIGRA      is set to: NO
+The variable SYSTEM_GDKPIXBUF  is set to: YES
+The variable SYSTEM_GLIB       is set to: YES
+The variable SYSTEM_GETTEXT    is set to: YES
+The variable SYSTEM_PANGO      is set to: YES
+The variable SYSTEM_LIBPNG     is set to: NO
+The variable SYSTEM_LIBJPEG    is set to: NO
+The variable RAT_JAR_HOME      is set to: unset
+The variable DISABLE_XAW       is set to: unset
+The variable DMAKE_URL         is set to: unset
+The variable DMAKE_PATH        is set to: /usr/bin/dmake
+The variable IS_SYSTEM_DMAKE   is set to: YES
+The variable BUILD_STAX        is set to: YES
+The variable BUILD_UNOWINREG   is set to: YES
+The variable USE_XINERAMA      is set to: unset
+The variable XINERAMA_LINK     is set to: unset
+The variable SYSTEM_REDLAND    is set to: NO
+The variable REDLAND_CFLAGS    is set to: unset
+The variable REDLAND_LIBS      is set to: unset
+The variable SYSTEM_HUNSPELL   is set to: unset
+The variable HUNSPELL_CFLAGS   is set to: unset
+The variable HUNSPELL_LIBS     is set to: unset
+The variable HAVE_GETOPT       is set to: NO
+The variable HAVE_READDIR_R    is set to: NO
+The variable SYSTEM_LIBC       is set to: unset
+The variable SYSTEM_HYPH       is set to: unset
+The variable HYPHEN_LIB        is set to: unset
+The variable SYSTEM_MYTHES     is set to: NO
+The variable MYTHES_CFLAGS     is set to: unset
+The variable MYTHES_LIBS       is set to: unset
+The variable SYSTEM_LIBTEXTCAT is set to: NO
+The variable SYSTEM_LIBTEXTCAT_DATA is set to: unset
+The variable PAM               is set to: unset
+The variable NEW_SHADOW_API    is set to: unset
+The variable PAM_LINK          is set to: unset
+The variable CRYPT_LINK        is set to: unset
+The variable XAU_LIBS          is set to: unset
+The variable GXX_INCLUDE_PATH  is set to: NO_GXX_INCLUDE
+The variable COMMON_BUILD_TOOLS is set to: $SRC_ROOT/external/common
+The variable SOLARSRC          is set to: $SRC_ROOT
+The variable SOURCE_ROOT_DIR   is set to: C:/svn/capstone2013
+The variable gb_REPOS          is set to: C:/svn/capstone2013/main /cygdrive/c/svn/capstone2013/ext_libraries
+The variable ILIB              is set to: .;C:\\svn\\capstone2013\\main\\solver\\410\\wntmsci12.pro\\lib;C:\\PROGRA~1\\Java\\JDK17~1.0_4\\lib;C:\\PROGRA~1\\MIA713~1\\Windows\\v7.0\\lib;C:\\PROGRA~1\\MIA713~1\\Windows\\v7.0\\lib;C:\\PROGRA~2\\MICROS~1.0\\VC\\lib
+The variable GREP              is set to: $CYGWIN_PATH/grep.exe
+The variable FIND              is set to: $CYGWIN_PATH/find.exe
+The variable LS                is set to: $CYGWIN_PATH/ls.exe
+The variable GNUCOPY           is set to: $CYGWIN_PATH/cp.exe
+The variable TOUCH             is set to: $CYGWIN_PATH/touch.exe
+The variable WITH_VC_REDIST    is set to: YES
+The variable DELIVER           is set to: deliver.pl
+The variable MKOUT             is set to: mkout.pl
+The variable ZIPDEP            is set to: zipdep.pl
+
+#
+# Aliases.
+#
+
+#
+# Don't set aliases when bootstrapping
+#
+The alias mkout is set to: "$PERL $SOLARENV/bin/mkout.pl"
+The alias deliver is set to: "$PERL $SOLARENV/bin/deliver.pl"
+The alias build is set to: "$PERL $SOLARENV/bin/build.pl"
+The alias build_client is set to: "$PERL $SOLARENV/bin/build_client.pl"
+The alias zipdep is set to: "$PERL $SOLARENV/bin/zipdep.pl"
+
+#
+# Check if the right dmake version is used.
+#
+The variable WORK_STAMP        is set to: _invalid_
+The variable WORK_STAMP        is set to: AOO410
+The variable GNUPATCH          is set to: unset
+The variable GPERF             is set to: /usr/bin/gperf
+The variable GNUCOPY           is set to: /usr/bin/cp
+The variable SAL_ENABLE_FILE_LOCKING is set to: 1
+****************************************************************************
+*
+* Apache OpenOffice 410 configuration.
+*
+*
+* Configuration part of Apache OpenOffice 410 build is finished.
+*
+* Note: Be aware that you might not be able to build Apache OpenOffice if
+* you ignore any warnings that were generated during this configuration
+* process.
+*
+*
+* USAGE:
+* Source winenv.set (in tcsh) or winenv.set.sh (in sh)
+* in order to set up the build-environment variables.
+*
+*
+****************************************************************************
+Configure completed
+
+Run ./bootstrap in C:/svn/capstone2013/main to provide build tools and get third-party packages
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ ./bootstrap
+ucpp-1.3.2.tar.gz exists, MD5 checksum is OK
+mythes-1.2.0.tar.gz exists, MD5 checksum is OK
+mdds_0.3.1.tar.bz2 exists, MD5 checksum is OK
+libtextcat-2.2.tar.gz exists, MD5 checksum is OK
+hsqldb_1_8_0.zip exists, MD5 checksum is OK
+Adobe-Core35_AFMs-314.tar.gz exists, MD5 checksum is OK
+lucene-2.9.4-src.tar.gz exists, MD5 checksum is OK
+ignoring xmlsec1-1.2.14.tar.gz because its prerequisites are not fulfilled
+raptor-1.4.18.tar.gz exists, MD5 checksum is OK
+redland-1.0.8.tar.gz exists, MD5 checksum is OK
+rasqal-0.9.16.tar.gz exists, MD5 checksum is OK
+zlib-1.2.7.tar.bz2 exists, MD5 checksum is OK
+ignoring commons-httpclient-3.1-src.tar.gz because its prerequisites are not fulfilled
+ignoring commons-codec-1.6-src.tar.gz because its prerequisites are not fulfilled
+icu4c-4_0_1-src.tgz exists, MD5 checksum is OK
+serf-1.2.1.tar.bz2 exists, SHA1 checksum is OK
+ignoring commons-logging-1.1.1-src.tar.gz because its prerequisites are not fulfilled
+jpeg-8d.tar.gz exists, MD5 checksum is OK
+ignoring commons-lang-2.4-src.tar.gz because its prerequisites are not fulfilled
+openssl-0.9.8o.tar.gz exists, MD5 checksum is OK
+apr-1.4.5.tar.gz exists, MD5 checksum is OK
+apr-util-1.4.1.tar.gz exists, MD5 checksum is OK
+STLport-4.0.tar.gz exists, MD5 checksum is OK
+STLport-4.5.tar.gz exists, MD5 checksum is OK
+STLport-4.5-0119.tar.gz exists, MD5 checksum is OK
+libxml2-2.7.8.tar.gz exists, MD5 checksum is OK
+libxslt-1.1.26.tar.gz exists, MD5 checksum is OK
+apache-tomcat-5.5.36-src.tar.gz exists, MD5 checksum is OK
+stax-src-1.2.0.zip exists, MD5 checksum is OK
+ignoring xsltml_2.1.2.zip because its prerequisites are not fulfilled
+Python-2.7.5.tar.bz2 exists, MD5 checksum is OK
+boost_1_48_0.tar.bz2 exists, MD5 checksum is OK
+vigra1.6.0.tar.gz exists, MD5 checksum is OK
+expat-2.1.0.tar.gz exists, MD5 checksum is OK
+curl-7.19.7.tar.gz exists, MD5 checksum is OK
+dejavu-fonts-ttf-2.33.zip exists, MD5 checksum is OK
+SampleICC-1.3.2.tar.gz exists, MD5 checksum is OK
+ignoring apache-rat-incubating-0.8-bin.tar.bz2 because its prerequisites are not fulfilled
+ignoring CoinMP-1.6.0.tgz because its prerequisites are not fulfilled
+ignoring gentiumbasic-fonts-1.10.zip because its prerequisites are not fulfilled
+ignoring hyphen-2.7.1.tar.gz because its prerequisites are not fulfilled
+ignoring croscorefonts-1.21.0.tar.gz because its prerequisites are not fulfilled
+ignoring hunspell-1.3.2.tar.gz because its prerequisites are not fulfilled
+ignoring rhino1_7R3.zip because its prerequisites are not fulfilled
+ignoring seamonkey-1.1.14.source.tar.gz because its prerequisites are not fulfilled
+ignoring nss-3.12.6-with-nspr-4.8.4.tar.gz because its prerequisites are not fulfilled
+ignoring LICENSE_source-9.0.0.7-bj.html because its prerequisites are not fulfilled
+ignoring README_source-9.0.0.7-bj.txt because its prerequisites are not fulfilled
+ignoring source-9.0.0.7-bj.zip because its prerequisites are not fulfilled
+ignoring README_silgraphite-2.3.1.txt because its prerequisites are not fulfilled
+ignoring silgraphite-2.3.1.tar.gz because its prerequisites are not fulfilled
+ignoring bsh-2.0b1-src.tar.gz because its prerequisites are not fulfilled
+all external libraries present
+
+dmake is located in search path
+
+bundling of dictionaries is disabled.
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ source winenv.set.sh
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main
+$ cd instsetoo_native/
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main/instsetoo_native
+$ build --all
+build -- version: 275224
+
+
+=============
+Building module solenv
+=============
+
+Entering /cygdrive/c/svn/capstone2013/main/solenv
+
+dmake:  Error executing 'mkout.pl': Permission denied
+dmake:  Error code -1, while making '/cygdrive/C/svn/capstone2013/main/solenv/wntmsci12.pro/inc/myworld.mk'
+
+1 module(s):
+        solenv
+need(s) to be rebuilt
+
+Reason(s):
+
+ERROR: error 65280 occurred while making /cygdrive/c/svn/capstone2013/main/solenv
+
+When you have fixed the errors in that module you can resume the build by running:
+
+        build --all:solenv
+
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main/instsetoo_native
+$ ^C
+
+HostAdmin@asfwin01 /cygdrive/c/svn/capstone2013/main/instsetoo_native
+$

@@ -1,0 +1,605 @@
+Name:
+ucb
+
+Dependencies:
+cppuhelper CURL:curl OPENSSL:openssl LIBXML2:libxml2 LIBXSLT:libxslt offapi sal salhelper ucbhelper udkapi comphelper SERF:serf tools NULL
+
+Build Rules:
+..\%__SRC%\bin\cached*.dll %_DEST%\bin%_EXT%\cached*.dll
+..\%__SRC%\lib\libcached*.* %_DEST%\lib%_EXT%\libcached*.*
+..\%__SRC%\bin\cached*.map %_DEST%\bin%_EXT%\cached*.map
+..\%__SRC%\bin\cached*.sym %_DEST%\bin%_EXT%\cached*.sym
+..\source\cacher\cached.xml %_DEST%\xml%_EXT%\cached.xml
+
+..\%__SRC%\bin\srtrs*.dll %_DEST%\bin%_EXT%\srtrs*.dll
+..\%__SRC%\lib\libsrtrs*.* %_DEST%\lib%_EXT%\libsrtrs*.*
+..\%__SRC%\bin\srtrs*.map %_DEST%\bin%_EXT%\srtrs*.map
+..\%__SRC%\bin\srtrs*.sym %_DEST%\bin%_EXT%\srtrs*.sym
+..\source\sorter\srtrs.xml %_DEST%\xml%_EXT%\srtrs.xml
+
+..\%__SRC%\bin\ucb*.dll %_DEST%\bin%_EXT%\ucb*.dll
+..\%__SRC%\lib\libucb*.* %_DEST%\lib%_EXT%\libucb*.*
+..\%__SRC%\misc\ucb*.map %_DEST%\bin%_EXT%\ucb*.map
+..\%__SRC%\misc\ucb*.sym %_DEST%\bin%_EXT%\ucb*.sym
+..\source\core\ucb.xml %_DEST%\xml%_EXT%\ucb.xml
+
+..\%__SRC%\bin\ucp*.dll %_DEST%\bin%_EXT%\ucp*.dll
+..\%__SRC%\lib\libucp*.so %_DEST%\lib%_EXT%\libucp*.so
+..\%__SRC%\lib\libucp*.dylib %_DEST%\lib%_EXT%\libucp*.dylib
+..\%__SRC%\lib\ucp*.uno.so %_DEST%\lib%_EXT%\ucp*.uno.so
+..\%__SRC%\lib\ucp*.uno.dylib %_DEST%\lib%_EXT%\ucp*.uno.dylib
+..\%__SRC%\misc\ucp*.map %_DEST%\bin%_EXT%\ucp*.map
+..\%__SRC%\misc\ucp*.sym %_DEST%\bin%_EXT%\ucp*.sym
+..\source\ucp\file\ucpfile.xml %_DEST%\xml%_EXT%\ucpfile.xml
+..\source\ucp\ftp\ucpftp.xml %_DEST%\xml%_EXT%\ucpftp.xml
+..\source\ucp\hierarchy\ucphier.xml %_DEST%\xml%_EXT%\ucphier.xml
+..\source\ucp\package\ucppkg.xml %_DEST%\xml%_EXT%\ucppkg.xml
+..\source\ucp\webdav\ucpdav.xml %_DEST%\xml%_EXT%\ucpdav.xml
+..\source\ucp\gvfs\ucpgvfs.xml %_DEST%\xml%_EXT%\ucpgvfs.xml
+..\source\ucp\tdoc\ucptdoc.xml %_DEST%\xml%_EXT%\ucptdoc.xml
+
+..\%__SRC%\misc\ucpgvfs.component  %_DEST%\xml%_EXT%\ucpgvfs.component
+..\%__SRC%\misc\ucpgio.component  %_DEST%\xml%_EXT%\ucpgio.component
+..\%__SRC%\misc\cached1.component %_DEST%\xml%_EXT%\cached1.component
+..\%__SRC%\misc\srtrs1.component %_DEST%\xml%_EXT%\srtrs1.component
+..\%__SRC%\misc\ucb1.component %_DEST%\xml%_EXT%\ucb1.component
+..\%__SRC%\misc\ucpdav1.component %_DEST%\xml%_EXT%\ucpdav1.component
+..\%__SRC%\misc\ucpexpand1.component %_DEST%\xml%_EXT%\ucpexpand1.component
+..\%__SRC%\misc\ucpext.component %_DEST%\xml%_EXT%\ucpext.component
+..\%__SRC%\misc\ucpfile1.component %_DEST%\xml%_EXT%\ucpfile1.component
+..\%__SRC%\misc\ucpftp1.component %_DEST%\xml%_EXT%\ucpftp1.component
+..\%__SRC%\misc\ucphier1.component %_DEST%\xml%_EXT%\ucphier1.component
+..\%__SRC%\misc\ucppkg1.component %_DEST%\xml%_EXT%\ucppkg1.component
+..\%__SRC%\misc\ucptdoc1.component %_DEST%\xml%_EXT%\ucptdoc1.component
+
+Source Files:
+inc\pch\precompiled_ucb.cxx
+source\cacher\cachedcontentresultset.cxx
+source\cacher\cachedcontentresultsetstub.cxx
+source\cacher\cacheddynamicresultset.cxx
+source\cacher\cacheddynamicresultsetstub.cxx
+source\cacher\cacheserv.cxx
+source\cacher\contentresultsetwrapper.cxx
+source\cacher\dynamicresultsetwrapper.cxx
+source\core\cmdenv.cxx
+source\core\identify.cxx
+source\core\provprox.cxx
+source\core\ucb.cxx
+source\core\ucbcmds.cxx
+source\core\ucbprops.cxx
+source\core\ucbserv.cxx
+source\core\ucbstore.cxx
+source\regexp\regexp.cxx
+source\sorter\sortdynres.cxx
+source\sorter\sortmain.cxx
+source\sorter\sortresult.cxx
+source\ucp\expand\ucpexpand.cxx
+source\ucp\ext\ucpext_content.cxx
+source\ucp\ext\ucpext_datasupplier.cxx
+source\ucp\ext\ucpext_provider.cxx
+source\ucp\ext\ucpext_resultset.cxx
+source\ucp\ext\ucpext_services.cxx
+source\ucp\file\bc.cxx
+source\ucp\file\filcmd.cxx
+source\ucp\file\filglob.cxx
+source\ucp\file\filid.cxx
+source\ucp\file\filinpstr.cxx
+source\ucp\file\filinsreq.cxx
+source\ucp\file\filnot.cxx
+source\ucp\file\filprp.cxx
+source\ucp\file\filrec.cxx
+source\ucp\file\filrow.cxx
+source\ucp\file\filrset.cxx
+source\ucp\file\filstr.cxx
+source\ucp\file\filtask.cxx
+source\ucp\file\prov.cxx
+source\ucp\file\shell.cxx
+source\ucp\ftp\ftpcfunc.cxx
+source\ucp\ftp\ftpcontent.cxx
+source\ucp\ftp\ftpcontentcaps.cxx
+source\ucp\ftp\ftpcontentidentifier.cxx
+source\ucp\ftp\ftpcontentprovider.cxx
+source\ucp\ftp\ftpdirp.cxx
+source\ucp\ftp\ftpdynresultset.cxx
+source\ucp\ftp\ftpinpstr.cxx
+source\ucp\ftp\ftpintreq.cxx
+source\ucp\ftp\ftploaderthread.cxx
+source\ucp\ftp\ftpresultsetbase.cxx
+source\ucp\ftp\ftpresultsetI.cxx
+source\ucp\ftp\ftpservices.cxx
+source\ucp\ftp\ftpurl.cxx
+source\ucp\ftp\test.cxx
+source\ucp\ftp\test_activedatasink.cxx
+source\ucp\ftp\test_ftpurl.cxx
+source\ucp\ftp\test_multiservicefac.cxx
+source\ucp\gio\gio_content.cxx
+source\ucp\gio\gio_datasupplier.cxx
+source\ucp\gio\gio_inputstream.cxx
+source\ucp\gio\gio_mount.cxx
+source\ucp\gio\gio_outputstream.cxx
+source\ucp\gio\gio_provider.cxx
+source\ucp\gio\gio_resultset.cxx
+source\ucp\gio\gio_seekable.cxx
+source\ucp\gvfs\gvfs_content.cxx
+source\ucp\gvfs\gvfs_directory.cxx
+source\ucp\gvfs\gvfs_provider.cxx
+source\ucp\gvfs\gvfs_stream.cxx
+source\ucp\hierarchy\dynamicresultset.cxx
+source\ucp\hierarchy\hierarchycontent.cxx
+source\ucp\hierarchy\hierarchycontentcaps.cxx
+source\ucp\hierarchy\hierarchydata.cxx
+source\ucp\hierarchy\hierarchydatasource.cxx
+source\ucp\hierarchy\hierarchydatasupplier.cxx
+source\ucp\hierarchy\hierarchyprovider.cxx
+source\ucp\hierarchy\hierarchyservices.cxx
+source\ucp\hierarchy\hierarchyuri.cxx
+source\ucp\odma\odma_content.cxx
+source\ucp\odma\odma_contentcaps.cxx
+source\ucp\odma\odma_datasupplier.cxx
+source\ucp\odma\odma_inputstream.cxx
+source\ucp\odma\odma_lib.cxx
+source\ucp\odma\odma_main.cxx
+source\ucp\odma\odma_provider.cxx
+source\ucp\odma\odma_resultset.cxx
+source\ucp\odma\odma_services.cxx
+source\ucp\package\pkgcontent.cxx
+source\ucp\package\pkgcontentcaps.cxx
+source\ucp\package\pkgdatasupplier.cxx
+source\ucp\package\pkgprovider.cxx
+source\ucp\package\pkgresultset.cxx
+source\ucp\package\pkgservices.cxx
+source\ucp\package\pkguri.cxx
+source\ucp\tdoc\tdoc_content.cxx
+source\ucp\tdoc\tdoc_contentcaps.cxx
+source\ucp\tdoc\tdoc_datasupplier.cxx
+source\ucp\tdoc\tdoc_docmgr.cxx
+source\ucp\tdoc\tdoc_documentcontentfactory.cxx
+source\ucp\tdoc\tdoc_passwordrequest.cxx
+source\ucp\tdoc\tdoc_provider.cxx
+source\ucp\tdoc\tdoc_resultset.cxx
+source\ucp\tdoc\tdoc_services.cxx
+source\ucp\tdoc\tdoc_stgelems.cxx
+source\ucp\tdoc\tdoc_storage.cxx
+source\ucp\tdoc\tdoc_uri.cxx
+source\ucp\webdav\AprEnv.cxx
+source\ucp\webdav\ContentProperties.cxx
+source\ucp\webdav\DateTimeHelper.cxx
+source\ucp\webdav\DAVProperties.cxx
+source\ucp\webdav\DAVResourceAccess.cxx
+source\ucp\webdav\DAVSessionFactory.cxx
+source\ucp\webdav\SerfCallbacks.cxx
+source\ucp\webdav\SerfCopyReqProcImpl.cxx
+source\ucp\webdav\SerfDeleteReqProcImpl.cxx
+source\ucp\webdav\SerfGetReqProcImpl.cxx
+source\ucp\webdav\SerfHeadReqProcImpl.cxx
+source\ucp\webdav\SerfInputStream.cxx
+source\ucp\webdav\SerfLockStore.cxx
+source\ucp\webdav\SerfMkColReqProcImpl.cxx
+source\ucp\webdav\SerfMoveReqProcImpl.cxx
+source\ucp\webdav\SerfPostReqProcImpl.cxx
+source\ucp\webdav\SerfPropFindReqProcImpl.cxx
+source\ucp\webdav\SerfPropPatchReqProcImpl.cxx
+source\ucp\webdav\SerfPutReqProcImpl.cxx
+source\ucp\webdav\SerfRequestProcessor.cxx
+source\ucp\webdav\SerfRequestProcessorImpl.cxx
+source\ucp\webdav\SerfRequestProcessorImplFac.cxx
+source\ucp\webdav\SerfSession.cxx
+source\ucp\webdav\SerfUri.cxx
+source\ucp\webdav\UCBDeadPropertyValue.cxx
+source\ucp\webdav\webdavcontent.cxx
+source\ucp\webdav\webdavcontentcaps.cxx
+source\ucp\webdav\webdavdatasupplier.cxx
+source\ucp\webdav\webdavprovider.cxx
+source\ucp\webdav\webdavresponseparser.cxx
+source\ucp\webdav\webdavresultset.cxx
+source\ucp\webdav\webdavservices.cxx
+workben\cachemap\cachemapobject1.cxx
+workben\cachemap\cachemapobject3.cxx
+workben\cachemap\cachemapobjectcontainer2.cxx
+workben\cachemap\cachemaptest.cxx
+workben\ucb\srcharg.cxx
+workben\ucb\ucbdemo.cxx
+
+Header Files:
+inc\pch\precompiled_ucb.hxx
+source\cacher\cachedcontentresultset.hxx
+source\cacher\cachedcontentresultsetstub.hxx
+source\cacher\cacheddynamicresultset.hxx
+source\cacher\cacheddynamicresultsetstub.hxx
+source\cacher\contentresultsetwrapper.hxx
+source\cacher\dynamicresultsetwrapper.hxx
+source\core\cmdenv.hxx
+source\core\identify.hxx
+source\core\providermap.hxx
+source\core\provprox.hxx
+source\core\ucb.hxx
+source\core\ucbcmds.hxx
+source\core\ucbprops.hxx
+source\core\ucbstore.hxx
+source\inc\regexp.hxx
+source\inc\regexpmap.hxx
+source\sorter\sortdynres.hxx
+source\sorter\sortresult.hxx
+source\ucp\ext\ucpext_content.hxx
+source\ucp\ext\ucpext_datasupplier.hxx
+source\ucp\ext\ucpext_provider.hxx
+source\ucp\ext\ucpext_resultset.hxx
+source\ucp\file\bc.hxx
+source\ucp\file\filcmd.hxx
+source\ucp\file\filerror.hxx
+source\ucp\file\filglob.hxx
+source\ucp\file\filid.hxx
+source\ucp\file\filinl.hxx
+source\ucp\file\filinpstr.hxx
+source\ucp\file\filinsreq.hxx
+source\ucp\file\filnot.hxx
+source\ucp\file\filprp.hxx
+source\ucp\file\filrec.hxx
+source\ucp\file\filrow.hxx
+source\ucp\file\filrset.hxx
+source\ucp\file\filstr.hxx
+source\ucp\file\filtask.hxx
+source\ucp\file\prov.hxx
+source\ucp\file\shell.hxx
+source\ucp\ftp\curl.hxx
+source\ucp\ftp\ftpcfunc.hxx
+source\ucp\ftp\ftpcontainer.hxx
+source\ucp\ftp\ftpcontent.hxx
+source\ucp\ftp\ftpcontentidentifier.hxx
+source\ucp\ftp\ftpcontentprovider.hxx
+source\ucp\ftp\ftpdirp.hxx
+source\ucp\ftp\ftpdynresultset.hxx
+source\ucp\ftp\ftphandleprovider.hxx
+source\ucp\ftp\ftpinpstr.hxx
+source\ucp\ftp\ftpintreq.hxx
+source\ucp\ftp\ftploaderthread.hxx
+source\ucp\ftp\ftpresultsetbase.hxx
+source\ucp\ftp\ftpresultsetfactory.hxx
+source\ucp\ftp\ftpresultsetI.hxx
+source\ucp\ftp\ftpstrcont.hxx
+source\ucp\ftp\ftpurl.hxx
+source\ucp\ftp\test_activedatasink.hxx
+source\ucp\ftp\test_ftpurl.hxx
+source\ucp\ftp\test_interactionhandler.hxx
+source\ucp\ftp\test_multiservicefac.hxx
+source\ucp\gio\gio_content.hxx
+source\ucp\gio\gio_datasupplier.hxx
+source\ucp\gio\gio_inputstream.hxx
+source\ucp\gio\gio_mount.hxx
+source\ucp\gio\gio_outputstream.hxx
+source\ucp\gio\gio_provider.hxx
+source\ucp\gio\gio_resultset.hxx
+source\ucp\gio\gio_seekable.hxx
+source\ucp\gvfs\gvfs_content.hxx
+source\ucp\gvfs\gvfs_directory.hxx
+source\ucp\gvfs\gvfs_provider.hxx
+source\ucp\gvfs\gvfs_stream.hxx
+source\ucp\hierarchy\dynamicresultset.hxx
+source\ucp\hierarchy\hierarchycontent.hxx
+source\ucp\hierarchy\hierarchydata.hxx
+source\ucp\hierarchy\hierarchydatasource.hxx
+source\ucp\hierarchy\hierarchydatasupplier.hxx
+source\ucp\hierarchy\hierarchyprovider.hxx
+source\ucp\hierarchy\hierarchyuri.hxx
+source\ucp\inc\urihelper.hxx
+source\ucp\odma\odma.h
+source\ucp\odma\odma_content.hxx
+source\ucp\odma\odma_contentprops.hxx
+source\ucp\odma\odma_datasupplier.hxx
+source\ucp\odma\odma_inputstream.hxx
+source\ucp\odma\odma_lib.hxx
+source\ucp\odma\odma_provider.hxx
+source\ucp\odma\odma_resultset.hxx
+source\ucp\package\pkgcontent.hxx
+source\ucp\package\pkgdatasupplier.hxx
+source\ucp\package\pkgprovider.hxx
+source\ucp\package\pkgresultset.hxx
+source\ucp\package\pkguri.hxx
+source\ucp\tdoc\tdoc_content.hxx
+source\ucp\tdoc\tdoc_datasupplier.hxx
+source\ucp\tdoc\tdoc_docmgr.hxx
+source\ucp\tdoc\tdoc_documentcontentfactory.hxx
+source\ucp\tdoc\tdoc_passwordrequest.hxx
+source\ucp\tdoc\tdoc_provider.hxx
+source\ucp\tdoc\tdoc_resultset.hxx
+source\ucp\tdoc\tdoc_stgelems.hxx
+source\ucp\tdoc\tdoc_storage.hxx
+source\ucp\tdoc\tdoc_uri.hxx
+source\ucp\webdav\AprEnv.hxx
+source\ucp\webdav\ContentProperties.hxx
+source\ucp\webdav\DateTimeHelper.hxx
+source\ucp\webdav\DAVAuthListener.hxx
+source\ucp\webdav\DAVAuthListenerImpl.hxx
+source\ucp\webdav\DAVException.hxx
+source\ucp\webdav\DAVProperties.hxx
+source\ucp\webdav\DAVRequestEnvironment.hxx
+source\ucp\webdav\DAVResource.hxx
+source\ucp\webdav\DAVResourceAccess.hxx
+source\ucp\webdav\DAVSession.hxx
+source\ucp\webdav\DAVSessionFactory.hxx
+source\ucp\webdav\DAVTypes.hxx
+source\ucp\webdav\PropertyMap.hxx
+source\ucp\webdav\SerfCallbacks.hxx
+source\ucp\webdav\SerfCopyReqProcImpl.hxx
+source\ucp\webdav\SerfDeleteReqProcImpl.hxx
+source\ucp\webdav\SerfGetReqProcImpl.hxx
+source\ucp\webdav\SerfHeadReqProcImpl.hxx
+source\ucp\webdav\SerfInputStream.hxx
+source\ucp\webdav\SerfLockStore.hxx
+source\ucp\webdav\SerfMkColReqProcImpl.hxx
+source\ucp\webdav\SerfMoveReqProcImpl.hxx
+source\ucp\webdav\SerfPostReqProcImpl.hxx
+source\ucp\webdav\SerfPropFindReqProcImpl.hxx
+source\ucp\webdav\SerfPropPatchReqProcImpl.hxx
+source\ucp\webdav\SerfPutReqProcImpl.hxx
+source\ucp\webdav\SerfRequestProcessor.hxx
+source\ucp\webdav\SerfRequestProcessorImpl.hxx
+source\ucp\webdav\SerfRequestProcessorImplFac.hxx
+source\ucp\webdav\SerfSession.hxx
+source\ucp\webdav\SerfTypes.hxx
+source\ucp\webdav\SerfUri.hxx
+source\ucp\webdav\UCBDeadPropertyValue.hxx
+source\ucp\webdav\webdavcontent.hxx
+source\ucp\webdav\webdavdatasupplier.hxx
+source\ucp\webdav\webdavprovider.hxx
+source\ucp\webdav\webdavresponseparser.hxx
+source\ucp\webdav\webdavresultset.hxx
+source\ucp\webdav\webdavuseragent.hxx
+workben\cachemap\cachemapobject1.hxx
+workben\cachemap\cachemapobject2.hxx
+workben\cachemap\cachemapobject3.hxx
+workben\cachemap\cachemapobjectcontainer2.hxx
+workben\ucb\srcharg.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=ucb
+	TARGET=inc
+
+qa\complex\tdoc\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_tdoc
+
+qa\complex\tdoc\interfaces\makefile.mk
+	TARGET=TransientDocument
+	PRJNAME=$(TARGET)
+
+qa\complex\ucb\makefile.mk
+	PRJNAME=UCB
+	TARGET=qa_complex_ucb
+
+qa\unoapi\makefile.mk
+	PRJNAME=ucb
+	TARGET=qa_unoapi
+
+source\cacher\makefile.mk
+	PRJNAME=ucb
+	TARGET=cached
+	SLOFILES=
+	$(SLO)$/contentresultsetwrapper.obj
+	$(SLO)$/cachedcontentresultsetstub.obj
+	$(SLO)$/cachedcontentresultset.obj
+	$(SLO)$/dynamicresultsetwrapper.obj
+	$(SLO)$/cacheddynamicresultsetstub.obj
+	$(SLO)$/cacheddynamicresultset.obj
+	$(SLO)$/cacheserv.obj
+
+source\core\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucb
+	SLOFILES=
+	$(SLO)$/identify.obj
+	$(SLO)$/ucb.obj
+	$(SLO)$/ucbserv.obj
+	$(SLO)$/ucbstore.obj
+	$(SLO)$/ucbprops.obj
+	$(SLO)$/provprox.obj
+	$(SLO)$/ucbcmds.obj
+	$(SLO)$/cmdenv.obj
+
+source\regexp\makefile.mk
+	PRJNAME=ucb
+	TARGET=regexp
+	SLOFILES=
+	$(SLO)$/regexp.obj
+
+source\sorter\makefile.mk
+	PRJNAME=ucb
+	TARGET=srtrs
+	SLOFILES=
+	$(SLO)$/sortdynres.obj
+	$(SLO)$/sortresult.obj
+	$(SLO)$/sortmain.obj
+
+source\ucp\expand\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpexpand$(UCPEXPAND_MAJOR).uno
+	SLOFILES=
+	$(SLO)$/ucpexpand.obj
+
+source\ucp\ext\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpext.uno
+	SLOFILES=
+	$(SLO)$/ucpext_provider.obj
+	$(SLO)$/ucpext_content.obj
+	$(SLO)$/ucpext_services.obj
+	$(SLO)$/ucpext_resultset.obj
+	$(SLO)$/ucpext_datasupplier.obj
+
+source\ucp\file\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpfile
+	SLOFILES=
+	$(SLO)$/prov.obj
+	$(SLO)$/bc.obj
+	$(SLO)$/shell.obj
+	$(SLO)$/filtask.obj
+	$(SLO)$/filrow.obj
+	$(SLO)$/filrset.obj
+	$(SLO)$/filid.obj
+	$(SLO)$/filnot.obj
+	$(SLO)$/filprp.obj
+	$(SLO)$/filinpstr.obj
+	$(SLO)$/filstr.obj
+	$(SLO)$/filcmd.obj
+	$(SLO)$/filglob.obj
+	$(SLO)$/filinsreq.obj
+	$(SLO)$/filrec.obj
+
+source\ucp\ftp\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpftp
+	SLOFILES1=
+	$(SLO)$/ftpservices.obj
+	$(SLO)$/ftpcontentprovider.obj
+	$(SLO)$/ftpcontent.obj
+	$(SLO)$/ftpcontentidentifier.obj
+	$(SLO)$/ftpcontentcaps.obj
+	$(SLO)$/ftpdynresultset.obj
+	$(SLO)$/ftpresultsetbase.obj
+	$(SLO)$/ftpresultsetI.obj
+	$(SLO)$/ftploaderthread.obj
+	$(SLO)$/ftpinpstr.obj
+	$(SLO)$/ftpdirp.obj
+	$(SLO)$/ftpcfunc.obj
+	$(SLO)$/ftpurl.obj
+	$(SLO)$/ftpintreq.obj
+
+source\ucp\gio\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpgio
+	SLOFILES=$(SLO)$/gio_provider.obj
+	$(SLO)$/gio_content.obj
+	$(SLO)$/gio_resultset.obj
+	$(SLO)$/gio_datasupplier.obj
+	$(SLO)$/gio_seekable.obj
+	$(SLO)$/gio_inputstream.obj
+	$(SLO)$/gio_outputstream.obj
+	$(SLO)$/gio_mount.obj
+
+source\ucp\gvfs\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucpgvfs
+	SLOFILES=
+	$(SLO)$/gvfs_content.obj
+	$(SLO)$/gvfs_directory.obj
+	$(SLO)$/gvfs_stream.obj
+	$(SLO)$/gvfs_provider.obj
+
+source\ucp\hierarchy\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucphier
+	SLOFILES=
+	$(SLO)$/hierarchyservices.obj
+	$(SLO)$/hierarchydata.obj
+	$(SLO)$/hierarchyprovider.obj
+	$(SLO)$/hierarchycontent.obj
+	$(SLO)$/hierarchycontentcaps.obj
+	$(SLO)$/hierarchydatasupplier.obj
+	$(SLO)$/dynamicresultset.obj
+	$(SLO)$/hierarchydatasource.obj
+	$(SLO)$/hierarchyuri.obj
+
+source\ucp\odma\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucp$(UCP_NAME)
+	TARGET2=s$(UCP_NAME)
+	SLOFILES=
+	$(SLO)$/odma_lib.obj
+	$(SLO)$/odma_services.obj
+	$(SLO)$/odma_provider.obj
+	$(SLO)$/odma_content.obj
+	$(SLO)$/odma_resultset.obj
+	$(SLO)$/odma_datasupplier.obj
+	$(SLO)$/odma_inputstream.obj
+	$(SLO)$/odma_contentcaps.obj
+	OBJFILES=$(OBJ)$/odma_main.obj
+
+source\ucp\package\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucp$(UCP_NAME)
+	SLOFILES=
+	$(SLO)$/pkgservices.obj
+	$(SLO)$/pkguri.obj
+	$(SLO)$/pkgprovider.obj
+	$(SLO)$/pkgcontent.obj
+	$(SLO)$/pkgcontentcaps.obj
+	$(SLO)$/pkgresultset.obj
+	$(SLO)$/pkgdatasupplier.obj
+
+source\ucp\tdoc\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucptdoc$(UCPTDOC_MAJOR).uno
+	SLOFILES=
+	$(SLO)$/tdoc_provider.obj
+	$(SLO)$/tdoc_services.obj
+	$(SLO)$/tdoc_uri.obj
+	$(SLO)$/tdoc_content.obj
+	$(SLO)$/tdoc_contentcaps.obj
+	$(SLO)$/tdoc_storage.obj
+	$(SLO)$/tdoc_docmgr.obj
+	$(SLO)$/tdoc_datasupplier.obj
+	$(SLO)$/tdoc_resultset.obj
+	$(SLO)$/tdoc_documentcontentfactory.obj
+	$(SLO)$/tdoc_passwordrequest.obj
+	$(SLO)$/tdoc_stgelems.obj
+
+source\ucp\webdav\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucp$(UCP_NAME)
+	SLOFILES=
+	$(SLO)$/webdavservices.obj
+	$(SLO)$/webdavprovider.obj
+	$(SLO)$/webdavcontent.obj
+	$(SLO)$/webdavcontentcaps.obj
+	$(SLO)$/webdavresultset.obj
+	$(SLO)$/webdavdatasupplier.obj
+	$(SLO)$/ContentProperties.obj
+	$(SLO)$/DAVProperties.obj
+	$(SLO)$/DAVSessionFactory.obj
+	$(SLO)$/DAVResourceAccess.obj
+	$(SLO)$/AprEnv.obj
+	$(SLO)$/webdavresponseparser.obj
+	$(SLO)$/SerfUri.obj
+	$(SLO)$/SerfRequestProcessor.obj
+	$(SLO)$/SerfRequestProcessorImpl.obj
+	$(SLO)$/SerfRequestProcessorImplFac.obj
+	$(SLO)$/SerfPropFindReqProcImpl.obj
+	$(SLO)$/SerfPropPatchReqProcImpl.obj
+	$(SLO)$/SerfGetReqProcImpl.obj
+	$(SLO)$/SerfHeadReqProcImpl.obj
+	$(SLO)$/SerfPutReqProcImpl.obj
+	$(SLO)$/SerfPostReqProcImpl.obj
+	$(SLO)$/SerfDeleteReqProcImpl.obj
+	$(SLO)$/SerfMkColReqProcImpl.obj
+	$(SLO)$/SerfCopyReqProcImpl.obj
+	$(SLO)$/SerfMoveReqProcImpl.obj
+	$(SLO)$/SerfSession.obj
+	$(SLO)$/SerfCallbacks.obj
+	$(SLO)$/SerfInputStream.obj
+	$(SLO)$/DateTimeHelper.obj
+	$(SLO)$/UCBDeadPropertyValue.obj
+
+test\com\sun\star\comp\ucb\makefile.mk
+	PRJNAME:=ucb
+	TARGET:=test_com_sun_star_comp_ucb
+
+workben\cachemap\makefile.mk
+	PRJNAME=ucb
+	TARGET=cachemap
+	OBJFILES=
+	$(OBJ)$/cachemapobject1.obj
+	$(OBJ)$/cachemapobjectcontainer2.obj
+	$(OBJ)$/cachemapobject3.obj
+	$(OBJ)$/cachemaptest.obj
+
+workben\ucb\makefile.mk
+	PRJNAME=ucb
+	TARGET=ucbdemo
+	OBJFILES=
+	$(OBJ)$/srcharg.obj
+	$(OBJ)$/ucbdemo.obj

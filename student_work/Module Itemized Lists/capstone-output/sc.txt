@@ -1,0 +1,2348 @@
+Name:
+sc
+
+Dependencies:
+filter L10N:l10n vbahelper oovbaapi svx uui stoc BOOST:boost formula MDDS:mdds oox LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\scalc
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\scalc\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\scalc\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\scalc\statusbar
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\inc\sc.lst %_DEST%\inc%_EXT%\sc.lst
+..\%__SRC%\bin\scalc3.exe %_DEST%\bin%_EXT%\scalc3.exe
+..\%__SRC%\bin\*.sym %_DEST%\bin%_EXT%\*.sym
+..\%__SRC%\bin\scalc3.pdb %_DEST%\bin%_EXT%\scalc3.pdb
+..\%__SRC%\bin\scslots.tlb %_DEST%\bin%_EXT%\scslots.tlb
+..\%__SRC%\bin\sc*.dll %_DEST%\bin%_EXT%\sc*.dll
+..\%__SRC%\bin\sc*.res %_DEST%\bin%_EXT%\sc*.res
+..\%__SRC%\bin\scui?????.dll %_DEST%\bin%_EXT%\scui?????.dll
+..\%__SRC%\bin\dfa?????.dll %_DEST%\bin%_EXT%\dfa?????.dll
+..\%__SRC%\bin\rot?????.dll %_DEST%\bin%_EXT%\rot?????.dll
+..\%__SRC%\bin\vba*.* %_DEST%\bin%_EXT%\vba*.*
+..\%__SRC%\bin\addin.zip %_DEST%\bin%_EXT%\addin.zip
+..\%__SRC%\misc\*.map %_DEST%\bin%_EXT%\*.map
+..\%__SRC%\misc\sc.csv %_DEST%\inc%_EXT%\sc.csv
+..\%__SRC%\lib\sci.lib %_DEST%\lib%_EXT%\sci.lib
+..\%__SRC%\lib\vba*.* %_DEST%\lib%_EXT%\vba*.*
+..\%__SRC%\slb\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\xml\*.xml %_DEST%\xml%_EXT%\*.xml
+
+..\uiconfig\scalc\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\scalc\menubar\*.xml
+..\uiconfig\scalc\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\scalc\toolbar\*.xml
+..\uiconfig\scalc\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\scalc\statusbar\*.xml
+
+..\%__SRC%\bin\*-layout.zip %_DEST%\pck%_EXT%\*.*
+..\%__SRC%\misc\sc.component %_DEST%\xml%_EXT%\sc.component
+..\%__SRC%\misc\scd.component %_DEST%\xml%_EXT%\scd.component
+..\%__SRC%\misc\vbaobj.component %_DEST%\xml%_EXT%\vbaobj.component
+
+Source Files:
+inc\pch\precompiled_sc.cxx
+source\core\data\attarray.cxx
+source\core\data\attrib.cxx
+source\core\data\autonamecache.cxx
+source\core\data\bcaslot.cxx
+source\core\data\cell.cxx
+source\core\data\cell2.cxx
+source\core\data\clipparam.cxx
+source\core\data\column.cxx
+source\core\data\column2.cxx
+source\core\data\column3.cxx
+source\core\data\compressedarray.cxx
+source\core\data\conditio.cxx
+source\core\data\dbdocutl.cxx
+source\core\data\dociter.cxx
+source\core\data\docpool.cxx
+source\core\data\documen2.cxx
+source\core\data\documen3.cxx
+source\core\data\documen4.cxx
+source\core\data\documen5.cxx
+source\core\data\documen6.cxx
+source\core\data\documen7.cxx
+source\core\data\documen8.cxx
+source\core\data\documen9.cxx
+source\core\data\document.cxx
+source\core\data\dpcachetable.cxx
+source\core\data\dpdimsave.cxx
+source\core\data\dpglobal.cxx
+source\core\data\dpgroup.cxx
+source\core\data\dpobject.cxx
+source\core\data\dpoutput.cxx
+source\core\data\dpoutputgeometry.cxx
+source\core\data\dpsave.cxx
+source\core\data\dpsdbtab.cxx
+source\core\data\dpshttab.cxx
+source\core\data\dptabdat.cxx
+source\core\data\dptablecache.cxx
+source\core\data\dptabres.cxx
+source\core\data\dptabsrc.cxx
+source\core\data\drawpage.cxx
+source\core\data\drwlayer.cxx
+source\core\data\fillinfo.cxx
+source\core\data\global.cxx
+source\core\data\global2.cxx
+source\core\data\globalx.cxx
+source\core\data\markarr.cxx
+source\core\data\markdata.cxx
+source\core\data\olinetab.cxx
+source\core\data\pagepar.cxx
+source\core\data\patattr.cxx
+source\core\data\pivot2.cxx
+source\core\data\poolhelp.cxx
+source\core\data\postit.cxx
+source\core\data\scdpoutputimpl.cxx
+source\core\data\segmenttree.cxx
+source\core\data\sheetevents.cxx
+source\core\data\sortparam.cxx
+source\core\data\stlpool.cxx
+source\core\data\stlsheet.cxx
+source\core\data\tabbgcolor.cxx
+source\core\data\table1.cxx
+source\core\data\table2.cxx
+source\core\data\table3.cxx
+source\core\data\table4.cxx
+source\core\data\table5.cxx
+source\core\data\table6.cxx
+source\core\data\tabprotection.cxx
+source\core\data\userdat.cxx
+source\core\data\validat.cxx
+source\core\tool\addincfg.cxx
+source\core\tool\addincol.cxx
+source\core\tool\addinhelpid.cxx
+source\core\tool\addinlis.cxx
+source\core\tool\address.cxx
+source\core\tool\adiasync.cxx
+source\core\tool\appoptio.cxx
+source\core\tool\autoform.cxx
+source\core\tool\callform.cxx
+source\core\tool\cellform.cxx
+source\core\tool\cellkeytranslator.cxx
+source\core\tool\chartarr.cxx
+source\core\tool\charthelper.cxx
+source\core\tool\chartlis.cxx
+source\core\tool\chartlock.cxx
+source\core\tool\chartpos.cxx
+source\core\tool\chgtrack.cxx
+source\core\tool\chgviset.cxx
+source\core\tool\collect.cxx
+source\core\tool\compiler.cxx
+source\core\tool\consoli.cxx
+source\core\tool\dbcolect.cxx
+source\core\tool\ddelink.cxx
+source\core\tool\detdata.cxx
+source\core\tool\detfunc.cxx
+source\core\tool\docoptio.cxx
+source\core\tool\doubleref.cxx
+source\core\tool\editutil.cxx
+source\core\tool\filtopt.cxx
+source\core\tool\formulaparserpool.cxx
+source\core\tool\hints.cxx
+source\core\tool\inputopt.cxx
+source\core\tool\interpr1.cxx
+source\core\tool\interpr2.cxx
+source\core\tool\interpr3.cxx
+source\core\tool\interpr4.cxx
+source\core\tool\interpr5.cxx
+source\core\tool\interpr6.cxx
+source\core\tool\lookupcache.cxx
+source\core\tool\navicfg.cxx
+source\core\tool\odffmap.cxx
+source\core\tool\optutil.cxx
+source\core\tool\parclass.cxx
+source\core\tool\printopt.cxx
+source\core\tool\prnsave.cxx
+source\core\tool\progress.cxx
+source\core\tool\queryparam.cxx
+source\core\tool\rangelst.cxx
+source\core\tool\rangenam.cxx
+source\core\tool\rangeseq.cxx
+source\core\tool\rangeutl.cxx
+source\core\tool\rechead.cxx
+source\core\tool\refdata.cxx
+source\core\tool\reffind.cxx
+source\core\tool\refreshtimer.cxx
+source\core\tool\reftokenhelper.cxx
+source\core\tool\refupdat.cxx
+source\core\tool\scmatrix.cxx
+source\core\tool\stringutil.cxx
+source\core\tool\subtotal.cxx
+source\core\tool\token.cxx
+source\core\tool\unitconv.cxx
+source\core\tool\userlist.cxx
+source\core\tool\viewopti.cxx
+source\core\tool\zforauto.cxx
+source\filter\dif\difexp.cxx
+source\filter\dif\difimp.cxx
+source\filter\excel\colrowst.cxx
+source\filter\excel\excdoc.cxx
+source\filter\excel\excel.cxx
+source\filter\excel\excform.cxx
+source\filter\excel\excform8.cxx
+source\filter\excel\excimp8.cxx
+source\filter\excel\excrecds.cxx
+source\filter\excel\exctools.cxx
+source\filter\excel\expop2.cxx
+source\filter\excel\fontbuff.cxx
+source\filter\excel\frmbase.cxx
+source\filter\excel\impop.cxx
+source\filter\excel\namebuff.cxx
+source\filter\excel\read.cxx
+source\filter\excel\tokstack.cxx
+source\filter\excel\xechart.cxx
+source\filter\excel\xecontent.cxx
+source\filter\excel\xeescher.cxx
+source\filter\excel\xeformula.cxx
+source\filter\excel\xehelper.cxx
+source\filter\excel\xelink.cxx
+source\filter\excel\xename.cxx
+source\filter\excel\xepage.cxx
+source\filter\excel\xepivot.cxx
+source\filter\excel\xerecord.cxx
+source\filter\excel\xeroot.cxx
+source\filter\excel\xestream.cxx
+source\filter\excel\xestring.cxx
+source\filter\excel\xestyle.cxx
+source\filter\excel\xetable.cxx
+source\filter\excel\xeview.cxx
+source\filter\excel\xichart.cxx
+source\filter\excel\xicontent.cxx
+source\filter\excel\xiescher.cxx
+source\filter\excel\xiformula.cxx
+source\filter\excel\xihelper.cxx
+source\filter\excel\xilink.cxx
+source\filter\excel\xiname.cxx
+source\filter\excel\xipage.cxx
+source\filter\excel\xipivot.cxx
+source\filter\excel\xiroot.cxx
+source\filter\excel\xistream.cxx
+source\filter\excel\xistring.cxx
+source\filter\excel\xistyle.cxx
+source\filter\excel\xiview.cxx
+source\filter\excel\xladdress.cxx
+source\filter\excel\xlchart.cxx
+source\filter\excel\xlescher.cxx
+source\filter\excel\xlformula.cxx
+source\filter\excel\xlpage.cxx
+source\filter\excel\xlpivot.cxx
+source\filter\excel\xlroot.cxx
+source\filter\excel\xlstyle.cxx
+source\filter\excel\xltools.cxx
+source\filter\excel\xltracer.cxx
+source\filter\excel\xlview.cxx
+source\filter\ftools\fapihelper.cxx
+source\filter\ftools\fprogressbar.cxx
+source\filter\ftools\ftools.cxx
+source\filter\html\htmlexp.cxx
+source\filter\html\htmlexp2.cxx
+source\filter\html\htmlimp.cxx
+source\filter\html\htmlpars.cxx
+source\filter\lotus\expop.cxx
+source\filter\lotus\export.cxx
+source\filter\lotus\filter.cxx
+source\filter\lotus\lotattr.cxx
+source\filter\lotus\lotform.cxx
+source\filter\lotus\lotimpop.cxx
+source\filter\lotus\lotread.cxx
+source\filter\lotus\lotus.cxx
+source\filter\lotus\memory.cxx
+source\filter\lotus\op.cxx
+source\filter\lotus\optab.cxx
+source\filter\lotus\tool.cxx
+source\filter\qpro\biff.cxx
+source\filter\qpro\qpro.cxx
+source\filter\qpro\qproform.cxx
+source\filter\qpro\qprostyle.cxx
+source\filter\rtf\eeimpars.cxx
+source\filter\rtf\expbase.cxx
+source\filter\rtf\rtfexp.cxx
+source\filter\rtf\rtfimp.cxx
+source\filter\rtf\rtfparse.cxx
+source\filter\starcalc\scflt.cxx
+source\filter\starcalc\scfobj.cxx
+source\filter\xcl97\xcl97dum.cxx
+source\filter\xcl97\xcl97esc.cxx
+source\filter\xcl97\xcl97rec.cxx
+source\filter\xcl97\XclExpChangeTrack.cxx
+source\filter\xcl97\XclImpChangeTrack.cxx
+source\filter\xml\sheetdata.cxx
+source\filter\xml\xmlannoi.cxx
+source\filter\xml\xmlbodyi.cxx
+source\filter\xml\XMLCalculationSettingsContext.cxx
+source\filter\xml\xmlcelli.cxx
+source\filter\xml\XMLCellRangeSourceContext.cxx
+source\filter\xml\XMLChangeTrackingExportHelper.cxx
+source\filter\xml\XMLChangeTrackingImportHelper.cxx
+source\filter\xml\XMLCodeNameProvider.cxx
+source\filter\xml\xmlcoli.cxx
+source\filter\xml\XMLColumnRowGroupExport.cxx
+source\filter\xml\XMLConsolidationContext.cxx
+source\filter\xml\xmlconti.cxx
+source\filter\xml\XMLConverter.cxx
+source\filter\xml\xmlcvali.cxx
+source\filter\xml\XMLDDELinksContext.cxx
+source\filter\xml\XMLDetectiveContext.cxx
+source\filter\xml\xmldpimp.cxx
+source\filter\xml\xmldrani.cxx
+source\filter\xml\XMLEmptyContext.cxx
+source\filter\xml\XMLExportDatabaseRanges.cxx
+source\filter\xml\XMLExportDataPilot.cxx
+source\filter\xml\XMLExportDDELinks.cxx
+source\filter\xml\XMLExportIterator.cxx
+source\filter\xml\XMLExportSharedData.cxx
+source\filter\xml\xmlexprt.cxx
+source\filter\xml\xmlexternaltabi.cxx
+source\filter\xml\xmlfilti.cxx
+source\filter\xml\xmlfonte.cxx
+source\filter\xml\xmlimprt.cxx
+source\filter\xml\xmllabri.cxx
+source\filter\xml\xmlnexpi.cxx
+source\filter\xml\xmlrowi.cxx
+source\filter\xml\xmlsceni.cxx
+source\filter\xml\xmlsorti.cxx
+source\filter\xml\xmlstyle.cxx
+source\filter\xml\XMLStylesExportHelper.cxx
+source\filter\xml\XMLStylesImportHelper.cxx
+source\filter\xml\xmlstyli.cxx
+source\filter\xml\xmlsubti.cxx
+source\filter\xml\xmltabi.cxx
+source\filter\xml\XMLTableHeaderFooterContext.cxx
+source\filter\xml\XMLTableMasterPageExport.cxx
+source\filter\xml\XMLTableShapeImportHelper.cxx
+source\filter\xml\XMLTableShapeResizer.cxx
+source\filter\xml\XMLTableShapesContext.cxx
+source\filter\xml\XMLTableSourceContext.cxx
+source\filter\xml\XMLTextPContext.cxx
+source\filter\xml\XMLTrackedChangesContext.cxx
+source\filter\xml\xmlwrap.cxx
+source\ui\Accessibility\AccessibilityHints.cxx
+source\ui\Accessibility\AccessibleCell.cxx
+source\ui\Accessibility\AccessibleCellBase.cxx
+source\ui\Accessibility\AccessibleContextBase.cxx
+source\ui\Accessibility\AccessibleCsvControl.cxx
+source\ui\Accessibility\AccessibleDataPilotControl.cxx
+source\ui\Accessibility\AccessibleDocument.cxx
+source\ui\Accessibility\AccessibleDocumentBase.cxx
+source\ui\Accessibility\AccessibleDocumentPagePreview.cxx
+source\ui\Accessibility\AccessibleEditObject.cxx
+source\ui\Accessibility\AccessibleFilterMenu.cxx
+source\ui\Accessibility\AccessibleFilterMenuItem.cxx
+source\ui\Accessibility\AccessibleFilterTopWindow.cxx
+source\ui\Accessibility\AccessibleGlobal.cxx
+source\ui\Accessibility\AccessiblePageHeader.cxx
+source\ui\Accessibility\AccessiblePageHeaderArea.cxx
+source\ui\Accessibility\AccessiblePreviewCell.cxx
+source\ui\Accessibility\AccessiblePreviewHeaderCell.cxx
+source\ui\Accessibility\AccessiblePreviewTable.cxx
+source\ui\Accessibility\AccessibleSpreadsheet.cxx
+source\ui\Accessibility\AccessibleTableBase.cxx
+source\ui\Accessibility\AccessibleText.cxx
+source\ui\Accessibility\DrawModelBroadcaster.cxx
+source\ui\app\client.cxx
+source\ui\app\drwtrans.cxx
+source\ui\app\inputhdl.cxx
+source\ui\app\inputwin.cxx
+source\ui\app\lnktrans.cxx
+source\ui\app\msgpool.cxx
+source\ui\app\rfindlst.cxx
+source\ui\app\scdll.cxx
+source\ui\app\scmod.cxx
+source\ui\app\scmod2.cxx
+source\ui\app\seltrans.cxx
+source\ui\app\template.cxx
+source\ui\app\transobj.cxx
+source\ui\app\typemap.cxx
+source\ui\app\uiitems.cxx
+source\ui\app\wtcdummy.cxx
+source\ui\attrdlg\attrdlg.cxx
+source\ui\attrdlg\condfrmt.cxx
+source\ui\attrdlg\scabstdlg.cxx
+source\ui\attrdlg\scdlgfact.cxx
+source\ui\attrdlg\scuiexp.cxx
+source\ui\attrdlg\tabpages.cxx
+source\ui\cctrl\cbuttonw.cxx
+source\ui\cctrl\dpcontrol.cxx
+source\ui\cctrl\editfield.cxx
+source\ui\cctrl\popmenu.cxx
+source\ui\cctrl\tbinsert.cxx
+source\ui\cctrl\tbzoomsliderctrl.cxx
+source\ui\dbgui\asciiopt.cxx
+source\ui\dbgui\consdlg.cxx
+source\ui\dbgui\csvcontrol.cxx
+source\ui\dbgui\csvgrid.cxx
+source\ui\dbgui\csvruler.cxx
+source\ui\dbgui\csvsplits.cxx
+source\ui\dbgui\csvtablebox.cxx
+source\ui\dbgui\dapidata.cxx
+source\ui\dbgui\dapitype.cxx
+source\ui\dbgui\dbnamdlg.cxx
+source\ui\dbgui\dpgroupdlg.cxx
+source\ui\dbgui\expftext.cxx
+source\ui\dbgui\fieldwnd.cxx
+source\ui\dbgui\filtdlg.cxx
+source\ui\dbgui\foptmgr.cxx
+source\ui\dbgui\imoptdlg.cxx
+source\ui\dbgui\pfiltdlg.cxx
+source\ui\dbgui\pvfundlg.cxx
+source\ui\dbgui\pvlaydlg.cxx
+source\ui\dbgui\scendlg.cxx
+source\ui\dbgui\scuiasciiopt.cxx
+source\ui\dbgui\scuiimoptdlg.cxx
+source\ui\dbgui\sfiltdlg.cxx
+source\ui\dbgui\sortdlg.cxx
+source\ui\dbgui\subtdlg.cxx
+source\ui\dbgui\textimportoptions.cxx
+source\ui\dbgui\tpsort.cxx
+source\ui\dbgui\tpsubt.cxx
+source\ui\dbgui\validate.cxx
+source\ui\docshell\arealink.cxx
+source\ui\docshell\autostyl.cxx
+source\ui\docshell\dbdocfun.cxx
+source\ui\docshell\dbdocimp.cxx
+source\ui\docshell\docfunc.cxx
+source\ui\docshell\docsh.cxx
+source\ui\docshell\docsh2.cxx
+source\ui\docshell\docsh3.cxx
+source\ui\docshell\docsh4.cxx
+source\ui\docshell\docsh5.cxx
+source\ui\docshell\docsh6.cxx
+source\ui\docshell\docsh7.cxx
+source\ui\docshell\docsh8.cxx
+source\ui\docshell\editable.cxx
+source\ui\docshell\externalrefmgr.cxx
+source\ui\docshell\hiranges.cxx
+source\ui\docshell\impex.cxx
+source\ui\docshell\olinefun.cxx
+source\ui\docshell\pagedata.cxx
+source\ui\docshell\pntlock.cxx
+source\ui\docshell\servobj.cxx
+source\ui\docshell\sizedev.cxx
+source\ui\docshell\tablink.cxx
+source\ui\docshell\tpstat.cxx
+source\ui\drawfunc\chartsh.cxx
+source\ui\drawfunc\drawsh.cxx
+source\ui\drawfunc\drawsh2.cxx
+source\ui\drawfunc\drawsh4.cxx
+source\ui\drawfunc\drawsh5.cxx
+source\ui\drawfunc\drformsh.cxx
+source\ui\drawfunc\drtxtob.cxx
+source\ui\drawfunc\drtxtob1.cxx
+source\ui\drawfunc\drtxtob2.cxx
+source\ui\drawfunc\fuconarc.cxx
+source\ui\drawfunc\fuconcustomshape.cxx
+source\ui\drawfunc\fuconpol.cxx
+source\ui\drawfunc\fuconrec.cxx
+source\ui\drawfunc\fuconstr.cxx
+source\ui\drawfunc\fuconuno.cxx
+source\ui\drawfunc\fudraw.cxx
+source\ui\drawfunc\fuins1.cxx
+source\ui\drawfunc\fuins2.cxx
+source\ui\drawfunc\fumark.cxx
+source\ui\drawfunc\fupoor.cxx
+source\ui\drawfunc\fusel.cxx
+source\ui\drawfunc\fusel2.cxx
+source\ui\drawfunc\futext.cxx
+source\ui\drawfunc\futext2.cxx
+source\ui\drawfunc\futext3.cxx
+source\ui\drawfunc\graphsh.cxx
+source\ui\drawfunc\mediash.cxx
+source\ui\drawfunc\oleobjsh.cxx
+source\ui\formdlg\dwfunctr.cxx
+source\ui\formdlg\formdata.cxx
+source\ui\formdlg\formula.cxx
+source\ui\formdlg\privsplt.cxx
+source\ui\miscdlgs\acredlin.cxx
+source\ui\miscdlgs\anyrefdg.cxx
+source\ui\miscdlgs\autofmt.cxx
+source\ui\miscdlgs\conflictsdlg.cxx
+source\ui\miscdlgs\crdlg.cxx
+source\ui\miscdlgs\crnrdlg.cxx
+source\ui\miscdlgs\delcldlg.cxx
+source\ui\miscdlgs\delcodlg.cxx
+source\ui\miscdlgs\filldlg.cxx
+source\ui\miscdlgs\groupdlg.cxx
+source\ui\miscdlgs\highred.cxx
+source\ui\miscdlgs\inscldlg.cxx
+source\ui\miscdlgs\inscodlg.cxx
+source\ui\miscdlgs\instbdlg.cxx
+source\ui\miscdlgs\lbseldlg.cxx
+source\ui\miscdlgs\linkarea.cxx
+source\ui\miscdlgs\mtrindlg.cxx
+source\ui\miscdlgs\mvtabdlg.cxx
+source\ui\miscdlgs\namecrea.cxx
+source\ui\miscdlgs\namepast.cxx
+source\ui\miscdlgs\optsolver.cxx
+source\ui\miscdlgs\protectiondlg.cxx
+source\ui\miscdlgs\redcom.cxx
+source\ui\miscdlgs\retypepassdlg.cxx
+source\ui\miscdlgs\scuiautofmt.cxx
+source\ui\miscdlgs\sharedocdlg.cxx
+source\ui\miscdlgs\shtabdlg.cxx
+source\ui\miscdlgs\simpref.cxx
+source\ui\miscdlgs\solveroptions.cxx
+source\ui\miscdlgs\solverutil.cxx
+source\ui\miscdlgs\solvrdlg.cxx
+source\ui\miscdlgs\strindlg.cxx
+source\ui\miscdlgs\tabbgcolordlg.cxx
+source\ui\miscdlgs\tabopdlg.cxx
+source\ui\miscdlgs\textdlgs.cxx
+source\ui\miscdlgs\warnbox.cxx
+source\ui\namedlg\namedlg.cxx
+source\ui\navipi\content.cxx
+source\ui\navipi\navcitem.cxx
+source\ui\navipi\navipi.cxx
+source\ui\navipi\scenwnd.cxx
+source\ui\optdlg\opredlin.cxx
+source\ui\optdlg\tpcalc.cxx
+source\ui\optdlg\tpprint.cxx
+source\ui\optdlg\tpusrlst.cxx
+source\ui\optdlg\tpview.cxx
+source\ui\pagedlg\areasdlg.cxx
+source\ui\pagedlg\hfedtdlg.cxx
+source\ui\pagedlg\scuitphfedit.cxx
+source\ui\pagedlg\tphf.cxx
+source\ui\pagedlg\tphfedit.cxx
+source\ui\pagedlg\tptable.cxx
+source\ui\sidebar\AlignmentPropertyPanel.cxx
+source\ui\sidebar\CellAppearancePropertyPanel.cxx
+source\ui\sidebar\CellBorderStyleControl.cxx
+source\ui\sidebar\CellBorderStylePopup.cxx
+source\ui\sidebar\CellBorderUpdater.cxx
+source\ui\sidebar\CellLineStyleControl.cxx
+source\ui\sidebar\CellLineStylePopup.cxx
+source\ui\sidebar\CellLineStyleValueSet.cxx
+source\ui\sidebar\NumberFormatPropertyPanel.cxx
+source\ui\sidebar\ScPanelFactory.cxx
+source\ui\styleui\styledlg.cxx
+source\ui\undo\areasave.cxx
+source\ui\undo\refundo.cxx
+source\ui\undo\target.cxx
+source\ui\undo\undobase.cxx
+source\ui\undo\undoblk.cxx
+source\ui\undo\undoblk2.cxx
+source\ui\undo\undoblk3.cxx
+source\ui\undo\undocell.cxx
+source\ui\undo\undodat.cxx
+source\ui\undo\undodraw.cxx
+source\ui\undo\undoolk.cxx
+source\ui\undo\undostyl.cxx
+source\ui\undo\undotab.cxx
+source\ui\undo\undoutil.cxx
+source\ui\unoobj\addruno.cxx
+source\ui\unoobj\afmtuno.cxx
+source\ui\unoobj\appluno.cxx
+source\ui\unoobj\celllistsource.cxx
+source\ui\unoobj\cellsuno.cxx
+source\ui\unoobj\cellvaluebinding.cxx
+source\ui\unoobj\chart2uno.cxx
+source\ui\unoobj\ChartRangeSelectionListener.cxx
+source\ui\unoobj\chartuno.cxx
+source\ui\unoobj\confuno.cxx
+source\ui\unoobj\convuno.cxx
+source\ui\unoobj\cursuno.cxx
+source\ui\unoobj\dapiuno.cxx
+source\ui\unoobj\datauno.cxx
+source\ui\unoobj\defltuno.cxx
+source\ui\unoobj\detreg.cxx
+source\ui\unoobj\dispuno.cxx
+source\ui\unoobj\docuno.cxx
+source\ui\unoobj\drdefuno.cxx
+source\ui\unoobj\editsrc.cxx
+source\ui\unoobj\eventuno.cxx
+source\ui\unoobj\fielduno.cxx
+source\ui\unoobj\filtuno.cxx
+source\ui\unoobj\fmtuno.cxx
+source\ui\unoobj\forbiuno.cxx
+source\ui\unoobj\funcuno.cxx
+source\ui\unoobj\linkuno.cxx
+source\ui\unoobj\listenercalls.cxx
+source\ui\unoobj\miscuno.cxx
+source\ui\unoobj\nameuno.cxx
+source\ui\unoobj\notesuno.cxx
+source\ui\unoobj\optuno.cxx
+source\ui\unoobj\pageuno.cxx
+source\ui\unoobj\scdetect.cxx
+source\ui\unoobj\servuno.cxx
+source\ui\unoobj\shapeuno.cxx
+source\ui\unoobj\srchuno.cxx
+source\ui\unoobj\styleuno.cxx
+source\ui\unoobj\targuno.cxx
+source\ui\unoobj\textuno.cxx
+source\ui\unoobj\tokenuno.cxx
+source\ui\unoobj\unodoc.cxx
+source\ui\unoobj\unoguard.cxx
+source\ui\unoobj\unoreflist.cxx
+source\ui\unoobj\viewuno.cxx
+source\ui\unoobj\warnpassword.cxx
+source\ui\vba\excelvbahelper.cxx
+source\ui\vba\service.cxx
+source\ui\vba\vbaapplication.cxx
+source\ui\vba\vbaassistant.cxx
+source\ui\vba\vbaaxes.cxx
+source\ui\vba\vbaaxis.cxx
+source\ui\vba\vbaaxistitle.cxx
+source\ui\vba\vbaborders.cxx
+source\ui\vba\vbacharacters.cxx
+source\ui\vba\vbachart.cxx
+source\ui\vba\vbachartobject.cxx
+source\ui\vba\vbachartobjects.cxx
+source\ui\vba\vbacharts.cxx
+source\ui\vba\vbacharttitle.cxx
+source\ui\vba\vbacomment.cxx
+source\ui\vba\vbacomments.cxx
+source\ui\vba\vbacondition.cxx
+source\ui\vba\vbadialog.cxx
+source\ui\vba\vbadialogs.cxx
+source\ui\vba\vbaeventshelper.cxx
+source\ui\vba\vbafont.cxx
+source\ui\vba\vbaformat.cxx
+source\ui\vba\vbaformatcondition.cxx
+source\ui\vba\vbaformatconditions.cxx
+source\ui\vba\vbaglobals.cxx
+source\ui\vba\vbahelper.cxx
+source\ui\vba\vbahyperlink.cxx
+source\ui\vba\vbahyperlinks.cxx
+source\ui\vba\vbainterior.cxx
+source\ui\vba\vbaname.cxx
+source\ui\vba\vbanames.cxx
+source\ui\vba\vbaoleobject.cxx
+source\ui\vba\vbaoleobjects.cxx
+source\ui\vba\vbaoutline.cxx
+source\ui\vba\vbapagebreak.cxx
+source\ui\vba\vbapagebreaks.cxx
+source\ui\vba\vbapagesetup.cxx
+source\ui\vba\vbapalette.cxx
+source\ui\vba\vbapane.cxx
+source\ui\vba\vbapivotcache.cxx
+source\ui\vba\vbapivottable.cxx
+source\ui\vba\vbapivottables.cxx
+source\ui\vba\vbapropvalue.cxx
+source\ui\vba\vbarange.cxx
+source\ui\vba\vbaseriescollection.cxx
+source\ui\vba\vbasheetobject.cxx
+source\ui\vba\vbasheetobjects.cxx
+source\ui\vba\vbastyle.cxx
+source\ui\vba\vbastyles.cxx
+source\ui\vba\vbatextboxshape.cxx
+source\ui\vba\vbatextframe.cxx
+source\ui\vba\vbavalidation.cxx
+source\ui\vba\vbawindow.cxx
+source\ui\vba\vbawindows.cxx
+source\ui\vba\vbaworkbook.cxx
+source\ui\vba\vbaworkbooks.cxx
+source\ui\vba\vbaworksheet.cxx
+source\ui\vba\vbaworksheets.cxx
+source\ui\vba\vbawsfunction.cxx
+source\ui\vba\testvba\testvba.cxx
+source\ui\view\auditsh.cxx
+source\ui\view\cellsh.cxx
+source\ui\view\cellsh1.cxx
+source\ui\view\cellsh2.cxx
+source\ui\view\cellsh3.cxx
+source\ui\view\cellsh4.cxx
+source\ui\view\colrowba.cxx
+source\ui\view\dbfunc.cxx
+source\ui\view\dbfunc2.cxx
+source\ui\view\dbfunc3.cxx
+source\ui\view\dbfunc4.cxx
+source\ui\view\drawattr.cxx
+source\ui\view\drawutil.cxx
+source\ui\view\drawvie2.cxx
+source\ui\view\drawvie3.cxx
+source\ui\view\drawvie4.cxx
+source\ui\view\drawview.cxx
+source\ui\view\editsh.cxx
+source\ui\view\formatsh.cxx
+source\ui\view\gridmerg.cxx
+source\ui\view\gridwin.cxx
+source\ui\view\gridwin2.cxx
+source\ui\view\gridwin3.cxx
+source\ui\view\gridwin4.cxx
+source\ui\view\gridwin5.cxx
+source\ui\view\hdrcont.cxx
+source\ui\view\hintwin.cxx
+source\ui\view\imapwrap.cxx
+source\ui\view\invmerge.cxx
+source\ui\view\notemark.cxx
+source\ui\view\olinewin.cxx
+source\ui\view\olkact.cxx
+source\ui\view\output.cxx
+source\ui\view\output2.cxx
+source\ui\view\output3.cxx
+source\ui\view\pfuncache.cxx
+source\ui\view\pgbrksh.cxx
+source\ui\view\pivotsh.cxx
+source\ui\view\preview.cxx
+source\ui\view\prevloc.cxx
+source\ui\view\prevwsh.cxx
+source\ui\view\prevwsh2.cxx
+source\ui\view\printfun.cxx
+source\ui\view\reffact.cxx
+source\ui\view\scextopt.cxx
+source\ui\view\select.cxx
+source\ui\view\selectionstate.cxx
+source\ui\view\spelldialog.cxx
+source\ui\view\spelleng.cxx
+source\ui\view\tabcont.cxx
+source\ui\view\tabpopsh.cxx
+source\ui\view\tabsplit.cxx
+source\ui\view\tabview.cxx
+source\ui\view\tabview2.cxx
+source\ui\view\tabview3.cxx
+source\ui\view\tabview4.cxx
+source\ui\view\tabview5.cxx
+source\ui\view\tabvwsh.cxx
+source\ui\view\tabvwsh2.cxx
+source\ui\view\tabvwsh3.cxx
+source\ui\view\tabvwsh4.cxx
+source\ui\view\tabvwsh5.cxx
+source\ui\view\tabvwsh8.cxx
+source\ui\view\tabvwsh9.cxx
+source\ui\view\tabvwsha.cxx
+source\ui\view\tabvwshb.cxx
+source\ui\view\tabvwshc.cxx
+source\ui\view\tabvwshd.cxx
+source\ui\view\tabvwshe.cxx
+source\ui\view\tabvwshf.cxx
+source\ui\view\tabvwshg.cxx
+source\ui\view\tabvwshh.cxx
+source\ui\view\viewdata.cxx
+source\ui\view\viewfun2.cxx
+source\ui\view\viewfun3.cxx
+source\ui\view\viewfun4.cxx
+source\ui\view\viewfun5.cxx
+source\ui\view\viewfun6.cxx
+source\ui\view\viewfun7.cxx
+source\ui\view\viewfunc.cxx
+source\ui\view\viewutil.cxx
+source\ui\view\waitoff.cxx
+workben\addin.cxx
+workben\result.cxx
+workben\test.cxx
+
+Header Files:
+addin\inc\addin.h
+addin\inc\dfa.hrc
+addin\inc\rot13.hrc
+inc\AccessibleFilterMenu.hxx
+inc\AccessibleFilterMenuItem.hxx
+inc\AccessibleFilterTopWindow.hxx
+inc\AccessibleGlobal.hxx
+inc\addincfg.hxx
+inc\addincol.hxx
+inc\address.hxx
+inc\addruno.hxx
+inc\afmtuno.hxx
+inc\appluno.hxx
+inc\appoptio.hxx
+inc\arealink.hxx
+inc\attarray.hxx
+inc\attrib.hxx
+inc\autoform.hxx
+inc\autonamecache.hxx
+inc\bigrange.hxx
+inc\brdcst.hxx
+inc\callform.hxx
+inc\cell.hxx
+inc\cellform.hxx
+inc\cellsuno.hxx
+inc\cfgids.hxx
+inc\chart2uno.hxx
+inc\chartarr.hxx
+inc\charthelper.hxx
+inc\chartlis.hxx
+inc\chartlock.hxx
+inc\chartpos.hxx
+inc\chartuno.hxx
+inc\chgtrack.hxx
+inc\chgviset.hxx
+inc\clipparam.hxx
+inc\collect.hxx
+inc\column.hxx
+inc\compiler.hxx
+inc\compressedarray.hxx
+inc\conditio.hxx
+inc\confuno.hxx
+inc\consoli.hxx
+inc\convuno.hxx
+inc\cursuno.hxx
+inc\dapiuno.hxx
+inc\datauno.hxx
+inc\dbcolect.hxx
+inc\dbdocutl.hxx
+inc\dbtoken.hxx
+inc\defltuno.hxx
+inc\detdata.hxx
+inc\detfunc.hxx
+inc\dispuno.hxx
+inc\dociter.hxx
+inc\docoptio.hxx
+inc\docpool.hxx
+inc\document.hxx
+inc\docuno.hxx
+inc\dpcachetable.hxx
+inc\dpdimsave.hxx
+inc\dpglobal.hxx
+inc\dpgroup.hxx
+inc\dpobject.hxx
+inc\dpoutput.hxx
+inc\dpoutputgeometry.hxx
+inc\dpsave.hxx
+inc\dpsdbtab.hxx
+inc\dpshttab.hxx
+inc\dptabdat.hxx
+inc\dptablecache.hxx
+inc\dptabres.hxx
+inc\dptabsrc.hxx
+inc\drawattr.hxx
+inc\drawpage.hxx
+inc\drdefuno.hxx
+inc\drwlayer.hxx
+inc\editsrc.hxx
+inc\editutil.hxx
+inc\eventuno.hxx
+inc\externalrefmgr.hxx
+inc\fielduno.hxx
+inc\fillinfo.hxx
+inc\filter.hxx
+inc\filtopt.hxx
+inc\filtuno.hxx
+inc\fmtuno.hxx
+inc\forbiuno.hxx
+inc\formulaparserpool.hxx
+inc\formularesult.hxx
+inc\funcdesc.hxx
+inc\funcuno.hxx
+inc\global.hxx
+inc\globstr.hrc
+inc\helpids.h
+inc\hints.hxx
+inc\inputopt.hxx
+inc\linkuno.hxx
+inc\listenercalls.hxx
+inc\lookupcache.hxx
+inc\markarr.hxx
+inc\markdata.hxx
+inc\miscuno.hxx
+inc\mutexhlp.hxx
+inc\nameuno.hxx
+inc\navicfg.hxx
+inc\notesuno.hxx
+inc\olinetab.hxx
+inc\optuno.hxx
+inc\optutil.hxx
+inc\pagepar.hxx
+inc\pageuno.hxx
+inc\paramisc.hxx
+inc\patattr.hxx
+inc\pivot.hxx
+inc\postit.hxx
+inc\printopt.hxx
+inc\prnsave.hxx
+inc\progress.hxx
+inc\queryparam.hxx
+inc\rangelst.hxx
+inc\rangenam.hxx
+inc\rangeseq.hxx
+inc\rangeutl.hxx
+inc\rechead.hxx
+inc\recursionhelper.hxx
+inc\refdata.hxx
+inc\reffind.hxx
+inc\refreshtimer.hxx
+inc\reftokenhelper.hxx
+inc\sc.hrc
+inc\scabstdlg.hxx
+inc\sccommands.h
+inc\scdll.hxx
+inc\scdllapi.h
+inc\scerrors.hxx
+inc\scextopt.hxx
+inc\scfuncs.hrc
+inc\scitems.hxx
+inc\scmatrix.hxx
+inc\scmod.hxx
+inc\ScPanelFactory.hxx
+inc\scresid.hxx
+inc\scwarngs.hxx
+inc\segmenttree.hxx
+inc\servuno.hxx
+inc\shapeuno.hxx
+inc\sheetdata.hxx
+inc\sheetevents.hxx
+inc\shellids.hxx
+inc\sortparam.hxx
+inc\srchuno.hxx
+inc\stlpool.hxx
+inc\stlsheet.hxx
+inc\stringutil.hxx
+inc\strload.hxx
+inc\styleuno.hxx
+inc\subtotal.hxx
+inc\tabbgcolor.hxx
+inc\table.hxx
+inc\tablink.hxx
+inc\tabopparams.hxx
+inc\tabprotection.hxx
+inc\targuno.hxx
+inc\textuno.hxx
+inc\token.hxx
+inc\tokenarray.hxx
+inc\tokenuno.hxx
+inc\unitconv.hxx
+inc\unoguard.hxx
+inc\unonames.hxx
+inc\unoreflist.hxx
+inc\unowids.hxx
+inc\userdat.hxx
+inc\userlist.hxx
+inc\validat.hxx
+inc\viewopti.hxx
+inc\ViewSettingsSequenceDefines.hxx
+inc\viewuno.hxx
+inc\waitoff.hxx
+inc\warnpassword.hxx
+inc\xmlwrap.hxx
+inc\zforauto.hxx
+inc\pch\precompiled_sc.hxx
+sdi\scslots.hrc
+source\core\data\scdpoutputimpl.hxx
+source\core\inc\addinhelpid.hxx
+source\core\inc\addinlis.hxx
+source\core\inc\adiasync.hxx
+source\core\inc\bcaslot.hxx
+source\core\inc\cellkeytranslator.hxx
+source\core\inc\core_pch.hxx
+source\core\inc\ddelink.hxx
+source\core\inc\doubleref.hxx
+source\core\inc\interpre.hxx
+source\core\inc\jumpmatrix.hxx
+source\core\inc\parclass.hxx
+source\core\inc\poolhelp.hxx
+source\core\inc\refupdat.hxx
+source\core\inc\scrdata.hxx
+source\filter\inc\biff.hxx
+source\filter\inc\colrowst.hxx
+source\filter\inc\decl.h
+source\filter\inc\dif.hxx
+source\filter\inc\eeimport.hxx
+source\filter\inc\eeparser.hxx
+source\filter\inc\excdefs.hxx
+source\filter\inc\excdoc.hxx
+source\filter\inc\excform.hxx
+source\filter\inc\excimp8.hxx
+source\filter\inc\excrecds.hxx
+source\filter\inc\excscen.hxx
+source\filter\inc\expbase.hxx
+source\filter\inc\exp_op.hxx
+source\filter\inc\fapihelper.hxx
+source\filter\inc\filt_pch.hxx
+source\filter\inc\fkttab.h
+source\filter\inc\flttypes.hxx
+source\filter\inc\formel.hxx
+source\filter\inc\fprogressbar.hxx
+source\filter\inc\ftools.hxx
+source\filter\inc\funktion.h
+source\filter\inc\htmlexp.hxx
+source\filter\inc\htmlimp.hxx
+source\filter\inc\htmlpars.hxx
+source\filter\inc\imp_op.hxx
+source\filter\inc\lotattr.hxx
+source\filter\inc\lotfntbf.hxx
+source\filter\inc\lotform.hxx
+source\filter\inc\lotimpop.hxx
+source\filter\inc\lotrange.hxx
+source\filter\inc\namebuff.hxx
+source\filter\inc\op.h
+source\filter\inc\optab.h
+source\filter\inc\otlnbuff.hxx
+source\filter\inc\qpro.hxx
+source\filter\inc\qproform.hxx
+source\filter\inc\qprostyle.hxx
+source\filter\inc\root.hxx
+source\filter\inc\rtfexp.hxx
+source\filter\inc\rtfimp.hxx
+source\filter\inc\rtfparse.hxx
+source\filter\inc\scflt.hxx
+source\filter\inc\scfobj.hxx
+source\filter\inc\scmem.h
+source\filter\inc\tokstack.hxx
+source\filter\inc\tool.h
+source\filter\inc\xcl97dum.hxx
+source\filter\inc\xcl97esc.hxx
+source\filter\inc\xcl97rec.hxx
+source\filter\inc\XclExpChangeTrack.hxx
+source\filter\inc\XclImpChangeTrack.hxx
+source\filter\inc\xechart.hxx
+source\filter\inc\xecontent.hxx
+source\filter\inc\xeescher.hxx
+source\filter\inc\xeformula.hxx
+source\filter\inc\xehelper.hxx
+source\filter\inc\xelink.hxx
+source\filter\inc\xename.hxx
+source\filter\inc\xepage.hxx
+source\filter\inc\xepivot.hxx
+source\filter\inc\xerecord.hxx
+source\filter\inc\xeroot.hxx
+source\filter\inc\xestream.hxx
+source\filter\inc\xestring.hxx
+source\filter\inc\xestyle.hxx
+source\filter\inc\xetable.hxx
+source\filter\inc\xeview.hxx
+source\filter\inc\xichart.hxx
+source\filter\inc\xicontent.hxx
+source\filter\inc\xiescher.hxx
+source\filter\inc\xiformula.hxx
+source\filter\inc\xihelper.hxx
+source\filter\inc\xilink.hxx
+source\filter\inc\xiname.hxx
+source\filter\inc\xipage.hxx
+source\filter\inc\xipivot.hxx
+source\filter\inc\xiroot.hxx
+source\filter\inc\xistream.hxx
+source\filter\inc\xistring.hxx
+source\filter\inc\xistyle.hxx
+source\filter\inc\xiview.hxx
+source\filter\inc\xladdress.hxx
+source\filter\inc\xlchart.hxx
+source\filter\inc\xlconst.hxx
+source\filter\inc\xlcontent.hxx
+source\filter\inc\xlescher.hxx
+source\filter\inc\xlformula.hxx
+source\filter\inc\xllink.hxx
+source\filter\inc\xlname.hxx
+source\filter\inc\xlpage.hxx
+source\filter\inc\xlpivot.hxx
+source\filter\inc\xlroot.hxx
+source\filter\inc\xlstream.hxx
+source\filter\inc\xlstring.hxx
+source\filter\inc\xlstyle.hxx
+source\filter\inc\xltable.hxx
+source\filter\inc\xltools.hxx
+source\filter\inc\xltracer.hxx
+source\filter\inc\xlview.hxx
+source\filter\xml\xmlannoi.hxx
+source\filter\xml\xmlbodyi.hxx
+source\filter\xml\XMLCalculationSettingsContext.hxx
+source\filter\xml\xmlcelli.hxx
+source\filter\xml\XMLCellRangeSourceContext.hxx
+source\filter\xml\XMLChangeTrackingExportHelper.hxx
+source\filter\xml\XMLChangeTrackingImportHelper.hxx
+source\filter\xml\XMLCodeNameProvider.hxx
+source\filter\xml\xmlcoli.hxx
+source\filter\xml\XMLColumnRowGroupExport.hxx
+source\filter\xml\XMLConsolidationContext.hxx
+source\filter\xml\xmlconti.hxx
+source\filter\xml\XMLConverter.hxx
+source\filter\xml\xmlcvali.hxx
+source\filter\xml\XMLDDELinksContext.hxx
+source\filter\xml\XMLDetectiveContext.hxx
+source\filter\xml\xmldpimp.hxx
+source\filter\xml\xmldrani.hxx
+source\filter\xml\XMLEmptyContext.hxx
+source\filter\xml\XMLExportDatabaseRanges.hxx
+source\filter\xml\XMLExportDataPilot.hxx
+source\filter\xml\XMLExportDDELinks.hxx
+source\filter\xml\XMLExportIterator.hxx
+source\filter\xml\XMLExportSharedData.hxx
+source\filter\xml\xmlexprt.hxx
+source\filter\xml\xmlexternaltabi.hxx
+source\filter\xml\xmlfilti.hxx
+source\filter\xml\xmlimprt.hxx
+source\filter\xml\xmllabri.hxx
+source\filter\xml\xmlnexpi.hxx
+source\filter\xml\xmlrowi.hxx
+source\filter\xml\xmlsceni.hxx
+source\filter\xml\xmlsorti.hxx
+source\filter\xml\xmlstyle.hxx
+source\filter\xml\XMLStylesExportHelper.hxx
+source\filter\xml\XMLStylesImportHelper.hxx
+source\filter\xml\xmlstyli.hxx
+source\filter\xml\xmlsubti.hxx
+source\filter\xml\xmltabi.hxx
+source\filter\xml\XMLTableHeaderFooterContext.hxx
+source\filter\xml\XMLTableMasterPageExport.hxx
+source\filter\xml\XMLTableShapeImportHelper.hxx
+source\filter\xml\XMLTableShapeResizer.hxx
+source\filter\xml\XMLTableShapesContext.hxx
+source\filter\xml\XMLTableSourceContext.hxx
+source\filter\xml\XMLTextPContext.hxx
+source\filter\xml\XMLTrackedChangesContext.hxx
+source\ui\attrdlg\scdlgfact.hxx
+source\ui\dbgui\asciiopt.hrc
+source\ui\dbgui\consdlg.hrc
+source\ui\dbgui\dapitype.hrc
+source\ui\dbgui\dpgroupdlg.hrc
+source\ui\dbgui\imoptdlg.hrc
+source\ui\dbgui\pivot.hrc
+source\ui\dbgui\pvfundlg.hrc
+source\ui\dbgui\scendlg.hrc
+source\ui\docshell\docshimp.hxx
+source\ui\docshell\tpstat.hrc
+source\ui\formdlg\dwfunctr.hrc
+source\ui\inc\AccessibilityHints.hxx
+source\ui\inc\AccessibleCell.hxx
+source\ui\inc\AccessibleCellBase.hxx
+source\ui\inc\AccessibleContextBase.hxx
+source\ui\inc\AccessibleCsvControl.hxx
+source\ui\inc\AccessibleDataPilotControl.hxx
+source\ui\inc\AccessibleDocument.hxx
+source\ui\inc\AccessibleDocumentBase.hxx
+source\ui\inc\AccessibleDocumentPagePreview.hxx
+source\ui\inc\AccessibleEditObject.hxx
+source\ui\inc\AccessiblePageHeader.hxx
+source\ui\inc\AccessiblePageHeaderArea.hxx
+source\ui\inc\AccessiblePreviewCell.hxx
+source\ui\inc\AccessiblePreviewHeaderCell.hxx
+source\ui\inc\AccessiblePreviewTable.hxx
+source\ui\inc\AccessibleSpreadsheet.hxx
+source\ui\inc\AccessibleTableBase.hxx
+source\ui\inc\AccessibleText.hxx
+source\ui\inc\acredlin.hrc
+source\ui\inc\acredlin.hxx
+source\ui\inc\anyrefdg.hxx
+source\ui\inc\areasave.hxx
+source\ui\inc\areasdlg.hxx
+source\ui\inc\asciiopt.hxx
+source\ui\inc\attrdlg.hrc
+source\ui\inc\attrdlg.hxx
+source\ui\inc\auditsh.hxx
+source\ui\inc\autofmt.hxx
+source\ui\inc\autostyl.hxx
+source\ui\inc\cbutton.hxx
+source\ui\inc\cellsh.hxx
+source\ui\inc\ChartRangeSelectionListener.hxx
+source\ui\inc\chartsh.hxx
+source\ui\inc\client.hxx
+source\ui\inc\colrowba.hxx
+source\ui\inc\condfrmt.hrc
+source\ui\inc\condfrmt.hxx
+source\ui\inc\conflictsdlg.hrc
+source\ui\inc\conflictsdlg.hxx
+source\ui\inc\consdlg.hxx
+source\ui\inc\content.hxx
+source\ui\inc\corodlg.hxx
+source\ui\inc\crdlg.hxx
+source\ui\inc\crnrdlg.hrc
+source\ui\inc\crnrdlg.hxx
+source\ui\inc\csvcontrol.hxx
+source\ui\inc\csvgrid.hxx
+source\ui\inc\csvruler.hxx
+source\ui\inc\csvsplits.hxx
+source\ui\inc\csvtablebox.hxx
+source\ui\inc\dapidata.hxx
+source\ui\inc\dapitype.hxx
+source\ui\inc\dbdocfun.hxx
+source\ui\inc\dbfunc.hxx
+source\ui\inc\dbnamdlg.hrc
+source\ui\inc\dbnamdlg.hxx
+source\ui\inc\delcldlg.hxx
+source\ui\inc\delcodlg.hxx
+source\ui\inc\docfunc.hxx
+source\ui\inc\docsh.hxx
+source\ui\inc\dpcontrol.hrc
+source\ui\inc\dpcontrol.hxx
+source\ui\inc\dpgroupdlg.hxx
+source\ui\inc\DrawModelBroadcaster.hxx
+source\ui\inc\drawsh.hxx
+source\ui\inc\drawutil.hxx
+source\ui\inc\drawview.hxx
+source\ui\inc\drformsh.hxx
+source\ui\inc\drtxtob.hxx
+source\ui\inc\drwtrans.hxx
+source\ui\inc\dwfunctr.hxx
+source\ui\inc\editable.hxx
+source\ui\inc\editfield.hxx
+source\ui\inc\editsh.hxx
+source\ui\inc\expftext.hxx
+source\ui\inc\fieldwnd.hxx
+source\ui\inc\filldlg.hxx
+source\ui\inc\filtdlg.hxx
+source\ui\inc\filter.hrc
+source\ui\inc\foptmgr.hxx
+source\ui\inc\formatsh.hxx
+source\ui\inc\formdata.hxx
+source\ui\inc\formula.hxx
+source\ui\inc\fuconarc.hxx
+source\ui\inc\fuconcustomshape.hxx
+source\ui\inc\fuconpol.hxx
+source\ui\inc\fuconrec.hxx
+source\ui\inc\fuconstr.hxx
+source\ui\inc\fuconuno.hxx
+source\ui\inc\fudraw.hxx
+source\ui\inc\fuedipo.hxx
+source\ui\inc\fuinsert.hxx
+source\ui\inc\fumark.hxx
+source\ui\inc\funcpage.hxx
+source\ui\inc\funcutl.hxx
+source\ui\inc\fupoor.hxx
+source\ui\inc\fusel.hxx
+source\ui\inc\futext.hxx
+source\ui\inc\graphsh.hxx
+source\ui\inc\gridmerg.hxx
+source\ui\inc\gridwin.hxx
+source\ui\inc\groupdlg.hxx
+source\ui\inc\hdrcont.hxx
+source\ui\inc\hfedtdlg.hxx
+source\ui\inc\highred.hrc
+source\ui\inc\highred.hxx
+source\ui\inc\hintwin.hxx
+source\ui\inc\hiranges.hxx
+source\ui\inc\IAnyRefDialog.hxx
+source\ui\inc\imoptdlg.hxx
+source\ui\inc\impex.hxx
+source\ui\inc\inputhdl.hxx
+source\ui\inc\inputwin.hxx
+source\ui\inc\inscldlg.hxx
+source\ui\inc\inscodlg.hxx
+source\ui\inc\instbdlg.hrc
+source\ui\inc\instbdlg.hxx
+source\ui\inc\invmerge.hxx
+source\ui\inc\lbseldlg.hxx
+source\ui\inc\linkarea.hrc
+source\ui\inc\linkarea.hxx
+source\ui\inc\lnktrans.hxx
+source\ui\inc\mediash.hxx
+source\ui\inc\miscdlgs.hrc
+source\ui\inc\msgpool.hxx
+source\ui\inc\mtrindlg.hxx
+source\ui\inc\mvtabdlg.hxx
+source\ui\inc\namecrea.hxx
+source\ui\inc\namedlg.hrc
+source\ui\inc\namedlg.hxx
+source\ui\inc\namepast.hxx
+source\ui\inc\navcitem.hxx
+source\ui\inc\navipi.hxx
+source\ui\inc\navsett.hxx
+source\ui\inc\notemark.hxx
+source\ui\inc\oleobjsh.hxx
+source\ui\inc\olinefun.hxx
+source\ui\inc\olinewin.hxx
+source\ui\inc\opredlin.hrc
+source\ui\inc\opredlin.hxx
+source\ui\inc\optdlg.hrc
+source\ui\inc\optload.hrc
+source\ui\inc\optload.hxx
+source\ui\inc\optsolver.hrc
+source\ui\inc\optsolver.hxx
+source\ui\inc\output.hxx
+source\ui\inc\pagedata.hxx
+source\ui\inc\parawin.hxx
+source\ui\inc\pfiltdlg.hxx
+source\ui\inc\pfuncache.hxx
+source\ui\inc\pgbrksh.hxx
+source\ui\inc\pivotsh.hxx
+source\ui\inc\pntlock.hxx
+source\ui\inc\popmenu.hxx
+source\ui\inc\preview.hxx
+source\ui\inc\prevloc.hxx
+source\ui\inc\prevwsh.hxx
+source\ui\inc\printfun.hxx
+source\ui\inc\privsplt.hxx
+source\ui\inc\protectiondlg.hrc
+source\ui\inc\protectiondlg.hxx
+source\ui\inc\pvfundlg.hxx
+source\ui\inc\pvlaydlg.hxx
+source\ui\inc\redcom.hxx
+source\ui\inc\reffact.hxx
+source\ui\inc\refundo.hxx
+source\ui\inc\retypepassdlg.hrc
+source\ui\inc\retypepassdlg.hxx
+source\ui\inc\rfindlst.hxx
+source\ui\inc\ScDevChart.hxx
+source\ui\inc\scendlg.hxx
+source\ui\inc\scuiasciiopt.hxx
+source\ui\inc\scuiautofmt.hxx
+source\ui\inc\scuiimoptdlg.hxx
+source\ui\inc\scuitphfedit.hxx
+source\ui\inc\scui_def.hxx
+source\ui\inc\select.hxx
+source\ui\inc\selectionstate.hxx
+source\ui\inc\seltrans.hxx
+source\ui\inc\servobj.hxx
+source\ui\inc\sharedocdlg.hrc
+source\ui\inc\sharedocdlg.hxx
+source\ui\inc\shtabdlg.hxx
+source\ui\inc\simpref.hrc
+source\ui\inc\simpref.hxx
+source\ui\inc\sizedev.hxx
+source\ui\inc\solveroptions.hrc
+source\ui\inc\solveroptions.hxx
+source\ui\inc\solverutil.hxx
+source\ui\inc\solvrdlg.hrc
+source\ui\inc\solvrdlg.hxx
+source\ui\inc\sortdlg.hrc
+source\ui\inc\sortdlg.hxx
+source\ui\inc\spelldialog.hxx
+source\ui\inc\spelleng.hxx
+source\ui\inc\spellparam.hxx
+source\ui\inc\strindlg.hxx
+source\ui\inc\styledlg.hrc
+source\ui\inc\styledlg.hxx
+source\ui\inc\submenu.hrc
+source\ui\inc\subtdlg.hrc
+source\ui\inc\subtdlg.hxx
+source\ui\inc\tabbgcolordlg.hxx
+source\ui\inc\tabcont.hxx
+source\ui\inc\tabopdlg.hrc
+source\ui\inc\tabopdlg.hxx
+source\ui\inc\tabpages.hxx
+source\ui\inc\tabpopsh.hxx
+source\ui\inc\tabsplit.hxx
+source\ui\inc\tabview.hxx
+source\ui\inc\tabvwsh.hxx
+source\ui\inc\target.hxx
+source\ui\inc\tbinsert.hrc
+source\ui\inc\tbinsert.hxx
+source\ui\inc\tbzoomsliderctrl.hxx
+source\ui\inc\textdlgs.hxx
+source\ui\inc\textimportoptions.hrc
+source\ui\inc\textimportoptions.hxx
+source\ui\inc\tpcalc.hxx
+source\ui\inc\tphf.hxx
+source\ui\inc\tphfedit.hxx
+source\ui\inc\tpprint.hxx
+source\ui\inc\tpsort.hxx
+source\ui\inc\tpstat.hxx
+source\ui\inc\tpsubt.hxx
+source\ui\inc\tptable.hxx
+source\ui\inc\tpusrlst.hxx
+source\ui\inc\tpview.hxx
+source\ui\inc\transobj.hxx
+source\ui\inc\uiitems.hxx
+source\ui\inc\ui_pch.hxx
+source\ui\inc\undobase.hxx
+source\ui\inc\undoblk.hxx
+source\ui\inc\undocell.hxx
+source\ui\inc\undodat.hxx
+source\ui\inc\undodraw.hxx
+source\ui\inc\undoolk.hxx
+source\ui\inc\undostyl.hxx
+source\ui\inc\undotab.hxx
+source\ui\inc\undoutil.hxx
+source\ui\inc\validate.hrc
+source\ui\inc\validate.hxx
+source\ui\inc\viewdata.hxx
+source\ui\inc\viewfunc.hxx
+source\ui\inc\viewutil.hxx
+source\ui\inc\warnbox.hxx
+source\ui\navipi\navipi.hrc
+source\ui\pagedlg\hfedtdlg.hrc
+source\ui\pagedlg\pagedlg.hrc
+source\ui\sidebar\AlignmentPropertyPanel.hrc
+source\ui\sidebar\AlignmentPropertyPanel.hxx
+source\ui\sidebar\CellAppearancePropertyPanel.hrc
+source\ui\sidebar\CellAppearancePropertyPanel.hxx
+source\ui\sidebar\CellBorderStyleControl.hxx
+source\ui\sidebar\CellBorderStylePopup.hxx
+source\ui\sidebar\CellBorderUpdater.hxx
+source\ui\sidebar\CellLineStyleControl.hxx
+source\ui\sidebar\CellLineStylePopup.hxx
+source\ui\sidebar\CellLineStyleValueSet.hxx
+source\ui\sidebar\NumberFormatPropertyPanel.hrc
+source\ui\sidebar\NumberFormatPropertyPanel.hxx
+source\ui\unoobj\celllistsource.hxx
+source\ui\unoobj\cellvaluebinding.hxx
+source\ui\unoobj\scdetect.hxx
+source\ui\vba\excelvbahelper.hxx
+source\ui\vba\helperdecl.hxx
+source\ui\vba\vbaapplication.hxx
+source\ui\vba\vbaassistant.hxx
+source\ui\vba\vbaaxes.hxx
+source\ui\vba\vbaaxis.hxx
+source\ui\vba\vbaaxistitle.hxx
+source\ui\vba\vbaborders.hxx
+source\ui\vba\vbacharacters.hxx
+source\ui\vba\vbachart.hxx
+source\ui\vba\vbachartobject.hxx
+source\ui\vba\vbachartobjects.hxx
+source\ui\vba\vbacharts.hxx
+source\ui\vba\vbacharttitle.hxx
+source\ui\vba\vbacomment.hxx
+source\ui\vba\vbacomments.hxx
+source\ui\vba\vbacondition.hxx
+source\ui\vba\vbadialog.hxx
+source\ui\vba\vbadialogs.hxx
+source\ui\vba\vbaeventshelper.hxx
+source\ui\vba\vbafont.hxx
+source\ui\vba\vbaformat.hxx
+source\ui\vba\vbaformatcondition.hxx
+source\ui\vba\vbaformatconditions.hxx
+source\ui\vba\vbaglobals.hxx
+source\ui\vba\vbahyperlink.hxx
+source\ui\vba\vbahyperlinks.hxx
+source\ui\vba\vbainterior.hxx
+source\ui\vba\vbaname.hxx
+source\ui\vba\vbanames.hxx
+source\ui\vba\vbaoleobject.hxx
+source\ui\vba\vbaoleobjects.hxx
+source\ui\vba\vbaoutline.hxx
+source\ui\vba\vbapagebreak.hxx
+source\ui\vba\vbapagebreaks.hxx
+source\ui\vba\vbapagesetup.hxx
+source\ui\vba\vbapalette.hxx
+source\ui\vba\vbapane.hxx
+source\ui\vba\vbapivotcache.hxx
+source\ui\vba\vbapivottable.hxx
+source\ui\vba\vbapivottables.hxx
+source\ui\vba\vbapropvalue.hxx
+source\ui\vba\vbarange.hxx
+source\ui\vba\vbaseriescollection.hxx
+source\ui\vba\vbasheetobject.hxx
+source\ui\vba\vbasheetobjects.hxx
+source\ui\vba\vbastyle.hxx
+source\ui\vba\vbastyles.hxx
+source\ui\vba\vbatextboxshape.hxx
+source\ui\vba\vbatextframe.hxx
+source\ui\vba\vbatitle.hxx
+source\ui\vba\vbavalidation.hxx
+source\ui\vba\vbawindow.hxx
+source\ui\vba\vbawindows.hxx
+source\ui\vba\vbaworkbook.hxx
+source\ui\vba\vbaworkbooks.hxx
+source\ui\vba\vbaworksheet.hxx
+source\ui\vba\vbaworksheets.hxx
+source\ui\vba\vbawsfunction.hxx
+workben\addin.hxx
+workben\result.hxx
+
+Patch Files:
+
+Makefiles:
+
+addin\makefile.mk
+	PRJNAME=sc
+	TARGET=addin
+
+addin\datefunc\makefile.mk
+	PRJNAME=sc
+	TARGET=dfa
+	SLOFILES=
+	$(SLO)$/x$(TARGET).obj
+	..$/inc$/$(TARGET).hrc
+	..$/inc$/addin.h
+
+addin\rot13\makefile.mk
+	PRJNAME=sc
+	TARGET=rot
+	SLOFILES=
+	$(SLO)$/x$(TARGET).obj
+
+addin\util\makefile.mk
+	PRJNAME=sc
+	TARGET=autil
+
+inc\makefile.mk
+	PRJNAME=sc
+	TARGET=inc
+
+qa\complex\calcPreview\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_calcpreview
+	#TARGET=ViewForward
+	#PRJNAME=$(TARGET)
+
+qa\complex\cellRanges\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_cellRanges
+
+qa\complex\dataPilot\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_datapilot
+
+qa\complex\dataPilot\interfaceTests\beans\makefile.mk
+	TARGET=DataPilotInterfaceBeans
+	PRJNAME=sc
+
+qa\complex\dataPilot\interfaceTests\container\makefile.mk
+	TARGET=DataPilotInterfaceContainer
+	PRJNAME=sc
+
+qa\complex\dataPilot\interfaceTests\sheet\makefile.mk
+	TARGET=DataPilotInterfaceSheet
+	PRJNAME=sc
+
+qa\complex\sc\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_sc
+
+qa\unoapi\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_unoapi
+
+sdi\makefile.mk
+	PRJNAME=sc
+	TARGET=scslots
+
+source\core\data\makefile.mk
+	PRJNAME=sc
+	TARGET=data
+	SLOFILES=
+	$(SLO)$/attarray.obj
+	$(SLO)$/attrib.obj
+	$(SLO)$/autonamecache.obj
+	$(SLO)$/bcaslot.obj
+	$(SLO)$/cell.obj
+	$(SLO)$/cell2.obj
+	$(SLO)$/clipparam.obj
+	$(SLO)$/column.obj
+	$(SLO)$/column2.obj
+	$(SLO)$/column3.obj
+	$(SLO)$/compressedarray.obj
+	$(SLO)$/conditio.obj
+	$(SLO)$/dbdocutl.obj
+	$(SLO)$/dociter.obj
+	$(SLO)$/docpool.obj
+	$(SLO)$/documen2.obj
+	$(SLO)$/documen3.obj
+	$(SLO)$/documen4.obj
+	$(SLO)$/documen5.obj
+	$(SLO)$/documen6.obj
+	$(SLO)$/documen7.obj
+	$(SLO)$/documen8.obj
+	$(SLO)$/documen9.obj
+	$(SLO)$/document.obj
+	$(SLO)$/dpcachetable.obj
+	$(SLO)$/dpdimsave.obj
+	$(SLO)$/dpglobal.obj
+	$(SLO)$/dpgroup.obj
+	$(SLO)$/dpobject.obj
+	$(SLO)$/dpoutput.obj
+	$(SLO)$/dpoutputgeometry.obj
+	$(SLO)$/dpsave.obj
+	$(SLO)$/dpsdbtab.obj
+	$(SLO)$/dpshttab.obj
+	$(SLO)$/dptabdat.obj
+	$(SLO)$/dptabres.obj
+	$(SLO)$/dptabsrc.obj
+	$(SLO)$/dptablecache.obj
+	$(SLO)$/scdpoutputimpl.obj
+	$(SLO)$/drawpage.obj
+	$(SLO)$/drwlayer.obj
+	$(SLO)$/fillinfo.obj
+	$(SLO)$/global.obj
+	$(SLO)$/global2.obj
+	$(SLO)$/globalx.obj
+	$(SLO)$/markarr.obj
+	$(SLO)$/markdata.obj
+	$(SLO)$/olinetab.obj
+	$(SLO)$/pagepar.obj
+	$(SLO)$/patattr.obj
+	$(SLO)$/pivot2.obj
+	$(SLO)$/poolhelp.obj
+	$(SLO)$/sheetevents.obj
+	$(SLO)$/segmenttree.obj
+	$(SLO)$/sortparam.obj
+	$(SLO)$/stlpool.obj
+	$(SLO)$/stlsheet.obj
+	$(SLO)$/tabbgcolor.obj
+	$(SLO)$/table1.obj
+	$(SLO)$/table2.obj
+	$(SLO)$/table3.obj
+	$(SLO)$/table4.obj
+	$(SLO)$/table5.obj
+	$(SLO)$/table6.obj
+	$(SLO)$/tabprotection.obj
+	$(SLO)$/userdat.obj
+	$(SLO)$/validat.obj
+	$(SLO)$/postit.obj
+
+source\core\inc\makefile.mk
+
+source\core\src\makefile.mk
+	PRJNAME=sc
+	TARGET=core
+
+source\core\tool\makefile.mk
+	PRJNAME=sc
+	TARGET=tool
+	SLOFILES=
+	$(SLO)$/addincfg.obj
+	$(SLO)$/addincol.obj
+	$(SLO)$/addinhelpid.obj
+	$(SLO)$/addinlis.obj
+	$(SLO)$/address.obj
+	$(SLO)$/adiasync.obj
+	$(SLO)$/appoptio.obj
+	$(SLO)$/autoform.obj
+	$(SLO)$/callform.obj
+	$(SLO)$/cellform.obj
+	$(SLO)$/cellkeytranslator.obj
+	$(SLO)$/charthelper.obj
+	$(SLO)$/chartarr.obj
+	$(SLO)$/chartpos.obj
+	$(SLO)$/chartlis.obj
+	$(SLO)$/chartlock.obj
+	$(SLO)$/chgtrack.obj
+	$(SLO)$/chgviset.obj
+	$(SLO)$/collect.obj
+	$(SLO)$/compiler.obj
+	$(SLO)$/consoli.obj
+	$(SLO)$/dbcolect.obj
+	$(SLO)$/ddelink.obj
+	$(SLO)$/detdata.obj
+	$(SLO)$/detfunc.obj
+	$(SLO)$/docoptio.obj
+	$(SLO)$/doubleref.obj
+	$(SLO)$/editutil.obj
+	$(SLO)$/filtopt.obj
+	$(SLO)$/formulaparserpool.obj
+	$(SLO)$/hints.obj
+	$(SLO)$/inputopt.obj
+	$(SLO)$/interpr1.obj
+	$(SLO)$/interpr2.obj
+	$(SLO)$/interpr3.obj
+	$(SLO)$/interpr4.obj
+	$(SLO)$/interpr5.obj
+	$(SLO)$/interpr6.obj
+	$(SLO)$/lookupcache.obj
+	$(SLO)$/navicfg.obj
+	$(SLO)$/odffmap.obj
+	$(SLO)$/optutil.obj
+	$(SLO)$/parclass.obj
+	$(SLO)$/printopt.obj
+	$(SLO)$/prnsave.obj
+	$(SLO)$/progress.obj
+	$(SLO)$/queryparam.obj
+	$(SLO)$/rangelst.obj
+	$(SLO)$/rangenam.obj
+	$(SLO)$/rangeseq.obj
+	$(SLO)$/rangeutl.obj
+	$(SLO)$/rechead.obj
+	$(SLO)$/refdata.obj
+	$(SLO)$/reffind.obj
+	$(SLO)$/refreshtimer.obj
+	$(SLO)$/reftokenhelper.obj
+	$(SLO)$/refupdat.obj
+	$(SLO)$/scmatrix.obj
+	$(SLO)$/stringutil.obj
+	$(SLO)$/subtotal.obj
+	$(SLO)$/token.obj
+	$(SLO)$/unitconv.obj
+	$(SLO)$/userlist.obj
+	$(SLO)$/viewopti.obj
+	$(SLO)$/zforauto.obj
+
+source\filter\dif\makefile.mk
+	PRJNAME=sc
+	TARGET=dif
+	SLOFILES=
+	$(SLO)$/difimp.obj
+	$(SLO)$/difexp.obj
+
+source\filter\excel\makefile.mk
+	PRJNAME=sc
+	TARGET=excel
+	SLOFILES=
+	$(SLO)$/colrowst.obj
+	$(SLO)$/excdoc.obj
+	$(SLO)$/excel.obj
+	$(SLO)$/excform.obj
+	$(SLO)$/excform8.obj
+	$(SLO)$/excimp8.obj
+	$(SLO)$/excrecds.obj
+	$(SLO)$/exctools.obj
+	$(SLO)$/expop2.obj
+	$(SLO)$/fontbuff.obj
+	$(SLO)$/frmbase.obj
+	$(SLO)$/impop.obj
+	$(SLO)$/namebuff.obj
+	$(SLO)$/read.obj
+	$(SLO)$/tokstack.obj
+	$(SLO)$/xechart.obj
+	$(SLO)$/xecontent.obj
+	$(SLO)$/xeescher.obj
+	$(SLO)$/xeformula.obj
+	$(SLO)$/xehelper.obj
+	$(SLO)$/xelink.obj
+	$(SLO)$/xename.obj
+	$(SLO)$/xepage.obj
+	$(SLO)$/xepivot.obj
+	$(SLO)$/xerecord.obj
+	$(SLO)$/xeroot.obj
+	$(SLO)$/xestream.obj
+	$(SLO)$/xestring.obj
+	$(SLO)$/xestyle.obj
+	$(SLO)$/xetable.obj
+	$(SLO)$/xeview.obj
+	$(SLO)$/xichart.obj
+	$(SLO)$/xicontent.obj
+	$(SLO)$/xiescher.obj
+	$(SLO)$/xiformula.obj
+	$(SLO)$/xihelper.obj
+	$(SLO)$/xilink.obj
+	$(SLO)$/xiname.obj
+	$(SLO)$/xipage.obj
+	$(SLO)$/xipivot.obj
+	$(SLO)$/xiroot.obj
+	$(SLO)$/xistream.obj
+	$(SLO)$/xistring.obj
+	$(SLO)$/xistyle.obj
+	$(SLO)$/xiview.obj
+	$(SLO)$/xladdress.obj
+	$(SLO)$/xlchart.obj
+	$(SLO)$/xlescher.obj
+	$(SLO)$/xlformula.obj
+	$(SLO)$/xlpage.obj
+	$(SLO)$/xlpivot.obj
+	$(SLO)$/xlroot.obj
+	$(SLO)$/xlstyle.obj
+	$(SLO)$/xltools.obj
+	$(SLO)$/xltracer.obj
+	$(SLO)$/xlview.obj
+
+source\filter\ftools\makefile.mk
+	PRJNAME=sc
+	TARGET=ftools
+	SLOFILES=
+	$(SLO)$/fapihelper.obj
+	$(SLO)$/fprogressbar.obj
+	$(SLO)$/ftools.obj
+
+source\filter\html\makefile.mk
+	PRJNAME=sc
+	TARGET=html
+	SLOFILES=
+	$(SLO)$/htmlexp.obj
+	$(SLO)$/htmlexp2.obj
+	$(SLO)$/htmlimp.obj
+	$(SLO)$/htmlpars.obj
+
+source\filter\inc\makefile.mk
+
+source\filter\lotus\makefile.mk
+	PRJNAME=sc
+	TARGET=lotus
+	SLOFILES=
+	$(SLO)$/filter.obj
+	$(SLO)$/lotus.obj
+	$(SLO)$/lotimpop.obj
+	$(SLO)$/lotread.obj
+	$(SLO)$/lotform.obj
+	$(SLO)$/memory.obj
+	$(SLO)$/op.obj
+	$(SLO)$/optab.obj
+	$(SLO)$/tool.obj
+	$(SLO)$/expop.obj
+	$(SLO)$/export.obj
+	$(SLO)$/lotattr.obj
+
+source\filter\qpro\makefile.mk
+	PRJNAME=sc
+	TARGET=qpro
+	SLOFILES=
+	$(SLO)$/qpro.obj
+	$(SLO)$/qproform.obj
+	$(SLO)$/qprostyle.obj
+	$(SLO)$/biff.obj
+
+source\filter\rtf\makefile.mk
+	PRJNAME=sc
+	TARGET=rtf
+	SLOFILES=
+	$(SLO)$/eeimpars.obj
+	$(SLO)$/expbase.obj
+	$(SLO)$/rtfexp.obj
+	$(SLO)$/rtfimp.obj
+	$(SLO)$/rtfparse.obj
+
+source\filter\starcalc\makefile.mk
+	PRJNAME=sc
+	TARGET=scflt
+	SLOFILES=
+	$(SLO)$/scflt.obj
+	$(SLO)$/scfobj.obj
+
+source\filter\xcl97\makefile.mk
+	PRJNAME=sc
+	TARGET=xcl97
+	SLOFILES=
+	$(SLO)$/xcl97esc.obj
+	$(SLO)$/xcl97rec.obj
+	$(SLO)$/XclImpChangeTrack.obj
+	$(SLO)$/XclExpChangeTrack.obj
+
+source\filter\xml\makefile.mk
+	PRJNAME=sc
+	TARGET=xml
+	SLOFILES=
+	$(SLO)$/sheetdata.obj
+	$(SLO)$/xmlwrap.obj
+	$(SLO)$/xmlimprt.obj
+	$(SLO)$/xmlexprt.obj
+	$(SLO)$/xmlbodyi.obj
+	$(SLO)$/xmltabi.obj
+	$(SLO)$/xmlexternaltabi.obj
+	$(SLO)$/xmlrowi.obj
+	$(SLO)$/xmlcelli.obj
+	$(SLO)$/xmlconti.obj
+	$(SLO)$/xmlcoli.obj
+	$(SLO)$/xmlsubti.obj
+	$(SLO)$/xmlnexpi.obj
+	$(SLO)$/xmldrani.obj
+	$(SLO)$/xmlfilti.obj
+	$(SLO)$/xmlsorti.obj
+	$(SLO)$/xmlstyle.obj
+	$(SLO)$/xmlstyli.obj
+	$(SLO)$/xmldpimp.obj
+	$(SLO)$/xmlannoi.obj
+	$(SLO)$/xmlsceni.obj
+	$(SLO)$/xmlcvali.obj
+	$(SLO)$/XMLTableMasterPageExport.obj
+	$(SLO)$/xmllabri.obj
+	$(SLO)$/XMLTableHeaderFooterContext.obj
+	$(SLO)$/XMLDetectiveContext.obj
+	$(SLO)$/XMLCellRangeSourceContext.obj
+	$(SLO)$/XMLConsolidationContext.obj
+	$(SLO)$/XMLConverter.obj
+	$(SLO)$/XMLExportIterator.obj
+	$(SLO)$/XMLColumnRowGroupExport.obj
+	$(SLO)$/XMLStylesExportHelper.obj
+	$(SLO)$/XMLStylesImportHelper.obj
+	$(SLO)$/XMLExportDataPilot.obj
+	$(SLO)$/XMLExportDatabaseRanges.obj
+	$(SLO)$/XMLTableShapeImportHelper.obj
+	$(SLO)$/XMLTableShapesContext.obj
+	$(SLO)$/XMLExportDDELinks.obj
+	$(SLO)$/XMLDDELinksContext.obj
+	$(SLO)$/XMLCalculationSettingsContext.obj
+	$(SLO)$/XMLTableSourceContext.obj
+	$(SLO)$/XMLTextPContext.obj
+	$(SLO)$/XMLTableShapeResizer.obj
+	$(SLO)$/XMLChangeTrackingExportHelper.obj
+	$(SLO)$/xmlfonte.obj
+	$(SLO)$/XMLChangeTrackingImportHelper.obj
+	$(SLO)$/XMLTrackedChangesContext.obj
+	$(SLO)$/XMLExportSharedData.obj
+	$(SLO)$/XMLEmptyContext.obj
+	$(SLO)$/XMLCodeNameProvider.obj
+
+source\ui\Accessibility\makefile.mk
+	PRJNAME=sc
+	TARGET=accessibility
+	SLOFILES=
+	$(SLO)$/AccessibleContextBase.obj
+	$(SLO)$/AccessibleTableBase.obj
+	$(SLO)$/AccessibleDocument.obj
+	$(SLO)$/AccessibleGlobal.obj
+	$(SLO)$/AccessibleSpreadsheet.obj
+	$(SLO)$/AccessibleCell.obj
+	$(SLO)$/AccessibilityHints.obj
+	$(SLO)$/AccessibleDocumentBase.obj
+	$(SLO)$/AccessibleCellBase.obj
+	$(SLO)$/AccessibleDocumentPagePreview.obj
+	$(SLO)$/AccessibleFilterMenu.obj
+	$(SLO)$/AccessibleFilterMenuItem.obj
+	$(SLO)$/AccessibleFilterTopWindow.obj
+	$(SLO)$/AccessiblePreviewTable.obj
+	$(SLO)$/AccessiblePreviewCell.obj
+	$(SLO)$/AccessiblePreviewHeaderCell.obj
+	$(SLO)$/AccessiblePageHeader.obj
+	$(SLO)$/AccessibleText.obj
+	$(SLO)$/AccessiblePageHeaderArea.obj
+	$(SLO)$/DrawModelBroadcaster.obj
+	$(SLO)$/AccessibleEditObject.obj
+	$(SLO)$/AccessibleDataPilotControl.obj
+	$(SLO)$/AccessibleCsvControl.obj
+
+source\ui\app\makefile.mk
+	PRJNAME=sc
+	TARGET=app
+	SLOFILES=
+	$(SLO)$/scmod.obj
+	$(SLO)$/scmod2.obj
+	$(SLO)$/scdll.obj
+	$(SLO)$/typemap.obj
+	$(SLO)$/transobj.obj
+	$(SLO)$/drwtrans.obj
+	$(SLO)$/lnktrans.obj
+	$(SLO)$/seltrans.obj
+	$(SLO)$/inputhdl.obj
+	$(SLO)$/inputwin.obj
+	$(SLO)$/rfindlst.obj
+	$(SLO)$/uiitems.obj
+	$(SLO)$/msgpool.obj
+	$(SLO)$/client.obj
+
+source\ui\attrdlg\makefile.mk
+	PRJNAME=sc
+	TARGET=attrdlg
+	SLOFILES=$(SLO)$/attrdlg.obj
+	$(SLO)$/tabpages.obj
+	$(SLO)$/condfrmt.obj
+	$(SLO)$/scabstdlg.obj
+	$(SLO)$/scuiexp.obj
+	$(SLO)$/scdlgfact.obj
+
+source\ui\cctrl\makefile.mk
+	PRJNAME=sc
+	TARGET=cctrl
+	SLOFILES=
+	$(SLO)$/popmenu.obj
+	$(SLO)$/tbinsert.obj
+	$(SLO)$/cbuttonw.obj
+	$(SLO)$/dpcontrol.obj
+	$(SLO)$/editfield.obj
+	$(EXCEPTIONSFILES)
+
+source\ui\dbgui\makefile.mk
+	PRJNAME=sc
+	TARGET=dbgui
+	SLOFILES=
+	$(SLO)$/sortdlg.obj
+	$(SLO)$/tpsort.obj
+	$(SLO)$/filtdlg.obj
+	$(SLO)$/sfiltdlg.obj
+	$(SLO)$/foptmgr.obj
+	$(SLO)$/pfiltdlg.obj
+	$(SLO)$/dbnamdlg.obj
+	$(SLO)$/expftext.obj
+	$(SLO)$/textimportoptions.obj
+	$(SLO)$/subtdlg.obj
+	$(SLO)$/tpsubt.obj
+	$(SLO)$/fieldwnd.obj
+	$(SLO)$/pvlaydlg.obj
+	$(SLO)$/pvfundlg.obj
+	$(SLO)$/dpgroupdlg.obj
+	$(SLO)$/dapitype.obj
+	$(SLO)$/dapidata.obj
+	$(SLO)$/consdlg.obj
+	$(SLO)$/scendlg.obj
+	$(SLO)$/imoptdlg.obj
+	$(SLO)$/validate.obj
+	$(SLO)$/csvsplits.obj
+	$(SLO)$/csvcontrol.obj
+	$(SLO)$/csvruler.obj
+	$(SLO)$/csvgrid.obj
+	$(SLO)$/csvtablebox.obj
+	$(SLO)$/asciiopt.obj
+	$(SLO)$/scuiasciiopt.obj
+	$(SLO)$/scuiimoptdlg.obj
+
+source\ui\docshell\makefile.mk
+	PRJNAME=sc
+	TARGET=docshell
+	SLOFILES=
+	$(SLO)$/docsh.obj
+	$(SLO)$/docsh2.obj
+	$(SLO)$/docsh3.obj
+	$(SLO)$/docsh4.obj
+	$(SLO)$/docsh5.obj
+	$(SLO)$/docsh6.obj
+	$(SLO)$/docsh7.obj
+	$(SLO)$/docsh8.obj
+	$(SLO)$/externalrefmgr.obj
+	$(SLO)$/tablink.obj
+	$(SLO)$/arealink.obj
+	$(SLO)$/dbdocfun.obj
+	$(SLO)$/dbdocimp.obj
+	$(SLO)$/impex.obj
+	$(SLO)$/docfunc.obj
+	$(SLO)$/olinefun.obj
+	$(SLO)$/servobj.obj
+	$(SLO)$/tpstat.obj
+	$(SLO)$/autostyl.obj
+	$(SLO)$/pagedata.obj
+	$(SLO)$/hiranges.obj
+	$(SLO)$/pntlock.obj
+	$(SLO)$/sizedev.obj
+	$(SLO)$/editable.obj
+
+source\ui\drawfunc\makefile.mk
+	PRJNAME=sc
+	TARGET=drawfunc
+	SLOFILES=
+	$(SLO)$/fupoor.obj
+	$(SLO)$/fumark.obj
+	$(SLO)$/fudraw.obj
+	$(SLO)$/fusel.obj
+	$(SLO)$/fusel2.obj
+	$(SLO)$/fuconstr.obj
+	$(SLO)$/fuconrec.obj
+	$(SLO)$/fuconarc.obj
+	$(SLO)$/fuconuno.obj
+	$(SLO)$/fuconpol.obj
+	$(SLO)$/fuconcustomshape.obj
+	$(SLO)$/fuins1.obj
+	$(SLO)$/fuins2.obj
+	$(SLO)$/futext.obj
+	$(SLO)$/futext2.obj
+	$(SLO)$/futext3.obj
+	$(SLO)$/drawsh.obj
+	$(SLO)$/drawsh2.obj
+	$(SLO)$/drawsh4.obj
+	$(SLO)$/drawsh5.obj
+	$(SLO)$/drtxtob.obj
+	$(SLO)$/drtxtob1.obj
+	$(SLO)$/drtxtob2.obj
+	$(SLO)$/drformsh.obj
+	$(SLO)$/oleobjsh.obj
+	$(SLO)$/chartsh.obj
+	$(SLO)$/graphsh.obj
+	$(SLO)$/mediash.obj
+
+source\ui\formdlg\makefile.mk
+	PRJNAME=sc
+	TARGET=formdlgs
+	SLOFILES=
+	$(SLO)$/formula.obj
+	$(SLO)$/formdata.obj
+	$(SLO)$/privsplt.obj
+	$(SLO)$/dwfunctr.obj
+
+source\ui\inc\makefile.mk
+
+source\ui\miscdlgs\makefile.mk
+	PRJNAME=sc
+	TARGET=miscdlgs
+	SLOFILES=
+	$(SLO)$/delcldlg.obj
+	$(SLO)$/inscldlg.obj
+	$(SLO)$/delcodlg.obj
+	$(SLO)$/inscodlg.obj
+	$(SLO)$/strindlg.obj
+	$(SLO)$/mtrindlg.obj
+	$(SLO)$/lbseldlg.obj
+	$(SLO)$/filldlg.obj
+	$(SLO)$/autofmt.obj
+	$(SLO)$/solvrdlg.obj
+	$(SLO)$/optsolver.obj
+	$(SLO)$/solveroptions.obj
+	$(SLO)$/solverutil.obj
+	$(SLO)$/mvtabdlg.obj
+	$(SLO)$/groupdlg.obj
+	$(SLO)$/tabopdlg.obj
+	$(SLO)$/crdlg.obj
+	$(SLO)$/namecrea.obj
+	$(SLO)$/namepast.obj
+	$(SLO)$/textdlgs.obj
+	$(SLO)$/anyrefdg.obj
+	$(SLO)$/crnrdlg.obj
+	$(SLO)$/shtabdlg.obj
+	$(SLO)$/instbdlg.obj
+	$(SLO)$/acredlin.obj
+	$(SLO)$/highred.obj
+	$(SLO)$/simpref.obj
+	$(SLO)$/redcom.obj
+	$(SLO)$/linkarea.obj
+	$(SLO)$/warnbox.obj
+	$(SLO)$/scuiautofmt.obj
+	$(SLO)$/conflictsdlg.obj
+	$(SLO)$/sharedocdlg.obj
+	$(SLO)$/protectiondlg.obj
+	$(SLO)$/tabbgcolordlg.obj
+	$(SLO)$/retypepassdlg.obj
+
+source\ui\namedlg\makefile.mk
+	PRJNAME=sc
+	TARGET=namedlg
+	SLOFILES=
+	$(SLO)$/namedlg.obj
+
+source\ui\navipi\makefile.mk
+	PRJNAME=sc
+	TARGET=navipi
+	SLOFILES=
+	$(SLO)$/navipi.obj
+	$(SLO)$/navcitem.obj
+	$(SLO)$/scenwnd.obj
+	$(SLO)$/content.obj
+
+source\ui\optdlg\makefile.mk
+	PRJNAME=sc
+	TARGET=optdlg
+	SLOFILES=
+	$(SLO)$/tpusrlst.obj
+	$(SLO)$/tpview.obj
+	$(SLO)$/tpcalc.obj
+	$(SLO)$/tpprint.obj
+	$(SLO)$/opredlin.obj
+
+source\ui\pagedlg\makefile.mk
+	PRJNAME=sc
+	TARGET=pagedlg
+	SLOFILES=
+	$(SLO)$/areasdlg.obj
+	$(SLO)$/hfedtdlg.obj
+	$(SLO)$/tptable.obj
+	$(SLO)$/tphf.obj
+	$(SLO)$/tphfedit.obj
+	$(SLO)$/scuitphfedit.obj
+
+source\ui\sidebar\makefile.mk
+	PRJNAME=sc
+	TARGET=sidebar
+	SLOFILES=
+	$(SLO)$/ScPanelFactory.obj
+	$(SLO)$/AlignmentPropertyPanel.obj
+	$(SLO)$/CellLineStyleControl.obj
+	$(SLO)$/CellLineStylePopup.obj
+	$(SLO)$/CellLineStyleValueSet.obj
+	$(SLO)$/CellBorderUpdater.obj
+	$(SLO)$/CellAppearancePropertyPanel.obj
+	$(SLO)$/CellBorderStyleControl.obj
+	$(SLO)$/CellBorderStylePopup.obj
+	$(SLO)$/NumberFormatPropertyPanel.obj
+
+source\ui\src\makefile.mk
+	PRJNAME=sc
+	TARGET=ui
+
+source\ui\styleui\makefile.mk
+	PRJNAME=sc
+	TARGET=styleui
+	SLOFILES=
+	$(SLO)$/styledlg.obj
+	
+
+source\ui\undo\makefile.mk
+	PRJNAME=sc
+	TARGET=undo
+	SLOFILES=
+	$(SLO)$/target.obj
+	$(SLO)$/refundo.obj
+	$(SLO)$/areasave.obj
+	$(SLO)$/undobase.obj
+	$(SLO)$/undoutil.obj
+	$(SLO)$/undocell.obj
+	$(SLO)$/undostyl.obj
+	$(SLO)$/undoolk.obj
+	$(SLO)$/undoblk.obj
+	$(SLO)$/undoblk2.obj
+	$(SLO)$/undoblk3.obj
+	$(SLO)$/undodat.obj
+	$(SLO)$/undodraw.obj
+	$(SLO)$/undotab.obj
+
+source\ui\unoobj\makefile.mk
+	PRJNAME=sc
+	TARGET=unoobj
+	SLO1FILES=
+	$(SLO)$/docuno.obj
+	$(SLO)$/servuno.obj
+	$(SLO)$/defltuno.obj
+	$(SLO)$/drdefuno.obj
+	$(SLO)$/cellsuno.obj
+	$(SLO)$/tokenuno.obj
+	$(SLO)$/textuno.obj
+	$(SLO)$/notesuno.obj
+	$(SLO)$/cursuno.obj
+	$(SLO)$/srchuno.obj
+	$(SLO)$/fielduno.obj
+	$(SLO)$/miscuno.obj
+	$(SLO)$/optuno.obj
+	$(SLO)$/appluno.obj
+	$(SLO)$/funcuno.obj
+	$(SLO)$/nameuno.obj
+	$(SLO)$/viewuno.obj
+	$(SLO)$/dispuno.obj
+	$(SLO)$/datauno.obj
+	$(SLO)$/dapiuno.obj
+	$(SLO)$/chartuno.obj
+	$(SLO)$/chart2uno.obj
+	$(SLO)$/shapeuno.obj
+	$(SLO)$/pageuno.obj
+	$(SLO)$/forbiuno.obj
+	$(SLO)$/styleuno.obj
+	$(SLO)$/afmtuno.obj
+	$(SLO)$/fmtuno.obj
+	$(SLO)$/linkuno.obj
+	$(SLO)$/targuno.obj
+	$(SLO)$/convuno.obj
+	$(SLO)$/editsrc.obj
+	$(SLO)$/unoguard.obj
+	$(SLO)$/confuno.obj
+	$(SLO)$/filtuno.obj
+	$(SLO)$/unodoc.obj
+	$(SLO)$/addruno.obj
+	$(SLO)$/eventuno.obj
+	$(SLO)$/listenercalls.obj
+	$(SLO)$/cellvaluebinding.obj
+	$(SLO)$/celllistsource.obj
+	$(SLO)$/warnpassword.obj
+	$(SLO)$/unoreflist.obj
+	$(SLO)$/ChartRangeSelectionListener.obj
+	SLO2FILES=
+	$(SLO)$/scdetect.obj
+	$(SLO)$/detreg.obj
+	SLOFILES=
+	$(SLO1FILES)
+	$(SLO2FILES)
+	$(SLO1FILES)
+
+source\ui\vba\makefile.mk
+	PRJNAME=sc
+	TARGET=vbaobj
+	SLOFILES=
+	$(SLO)$/excelvbahelper.obj
+	$(SLO)$/service.obj
+	$(SLO)$/vbaapplication.obj
+	$(SLO)$/vbaassistant.obj
+	$(SLO)$/vbaaxes.obj
+	$(SLO)$/vbaaxis.obj
+	$(SLO)$/vbaaxistitle.obj
+	$(SLO)$/vbaborders.obj
+	$(SLO)$/vbacharacters.obj
+	$(SLO)$/vbachart.obj
+	$(SLO)$/vbachartobject.obj
+	$(SLO)$/vbachartobjects.obj
+	$(SLO)$/vbacharts.obj
+	$(SLO)$/vbacharttitle.obj
+	$(SLO)$/vbacomment.obj
+	$(SLO)$/vbacomments.obj
+	$(SLO)$/vbacondition.obj
+	$(SLO)$/vbadialog.obj
+	$(SLO)$/vbadialogs.obj
+	$(SLO)$/vbaeventshelper.obj
+	$(SLO)$/vbafont.obj
+	$(SLO)$/vbaformat.obj
+	$(SLO)$/vbaformatcondition.obj
+	$(SLO)$/vbaformatconditions.obj
+	$(SLO)$/vbaglobals.obj
+	$(SLO)$/vbahyperlink.obj
+	$(SLO)$/vbahyperlinks.obj
+	$(SLO)$/vbainterior.obj
+	$(SLO)$/vbaname.obj
+	$(SLO)$/vbanames.obj
+	$(SLO)$/vbaoleobject.obj
+	$(SLO)$/vbaoleobjects.obj
+	$(SLO)$/vbaoutline.obj
+	$(SLO)$/vbapagebreak.obj
+	$(SLO)$/vbapagebreaks.obj
+	$(SLO)$/vbapagesetup.obj
+	$(SLO)$/vbapalette.obj
+	$(SLO)$/vbapane.obj
+	$(SLO)$/vbapivotcache.obj
+	$(SLO)$/vbapivottable.obj
+	$(SLO)$/vbapivottables.obj
+	$(SLO)$/vbarange.obj
+	$(SLO)$/vbaseriescollection.obj
+	$(SLO)$/vbasheetobject.obj
+	$(SLO)$/vbasheetobjects.obj
+	$(SLO)$/vbastyle.obj
+	$(SLO)$/vbastyles.obj
+	$(SLO)$/vbatextboxshape.obj
+	$(SLO)$/vbatextframe.obj
+	$(SLO)$/vbavalidation.obj
+	$(SLO)$/vbawindow.obj
+	$(SLO)$/vbawindows.obj
+	$(SLO)$/vbaworkbook.obj
+	$(SLO)$/vbaworkbooks.obj
+	$(SLO)$/vbaworksheet.obj
+	$(SLO)$/vbaworksheets.obj
+	$(SLO)$/vbawsfunction.obj
+
+source\ui\vba\testvba\makefile.mk
+	PRJNAME=sc
+	TARGET=testvba
+	SLOFILES=
+	$(SLO)$/testvba.obj
+	
+
+source\ui\view\makefile.mk
+	PRJNAME=sc
+	TARGET=view
+	SLOFILES=
+	$(SLO)$/tabview.obj
+	$(SLO)$/tabview2.obj
+	$(SLO)$/tabview3.obj
+	$(SLO)$/tabview4.obj
+	$(SLO)$/tabview5.obj
+	$(SLO)$/viewfunc.obj
+	$(SLO)$/viewfun2.obj
+	$(SLO)$/viewfun3.obj
+	$(SLO)$/viewfun4.obj
+	$(SLO)$/viewfun5.obj
+	$(SLO)$/viewfun6.obj
+	$(SLO)$/viewfun7.obj
+	$(SLO)$/dbfunc.obj
+	$(SLO)$/dbfunc2.obj
+	$(SLO)$/dbfunc3.obj
+	$(SLO)$/dbfunc4.obj
+	$(SLO)$/tabvwsh.obj
+	$(SLO)$/tabvwsh2.obj
+	$(SLO)$/tabvwsh3.obj
+	$(SLO)$/tabvwsh4.obj
+	$(SLO)$/tabvwsh5.obj
+	$(SLO)$/tabvwsh8.obj
+	$(SLO)$/tabvwsh9.obj
+	$(SLO)$/tabvwsha.obj
+	$(SLO)$/tabvwshb.obj
+	$(SLO)$/tabvwshc.obj
+	$(SLO)$/tabvwshd.obj
+	$(SLO)$/tabvwshe.obj
+	$(SLO)$/tabvwshf.obj
+	$(SLO)$/tabvwshg.obj
+	$(SLO)$/tabvwshh.obj
+	$(SLO)$/printfun.obj
+	$(SLO)$/pfuncache.obj
+	$(SLO)$/preview.obj
+	$(SLO)$/prevwsh.obj
+	$(SLO)$/prevwsh2.obj
+	$(SLO)$/prevloc.obj
+	$(SLO)$/editsh.obj
+	$(SLO)$/pivotsh.obj
+	$(SLO)$/auditsh.obj
+	$(SLO)$/gridwin.obj
+	$(SLO)$/gridwin2.obj
+	$(SLO)$/gridwin3.obj
+	$(SLO)$/gridwin4.obj
+	$(SLO)$/gridwin5.obj
+	$(SLO)$/drawview.obj
+	$(SLO)$/drawvie2.obj
+	$(SLO)$/drawvie3.obj
+	$(SLO)$/drawvie4.obj
+	$(SLO)$/drawutil.obj
+	$(SLO)$/output.obj
+	$(SLO)$/output2.obj
+	$(SLO)$/output3.obj
+	$(SLO)$/gridmerg.obj
+	$(SLO)$/invmerge.obj
+	$(SLO)$/select.obj
+	$(SLO)$/olinewin.obj
+	$(SLO)$/hintwin.obj
+	$(SLO)$/notemark.obj
+	$(SLO)$/tabcont.obj
+	$(SLO)$/tabsplit.obj
+	$(SLO)$/viewutil.obj
+	$(SLO)$/hdrcont.obj
+	$(SLO)$/colrowba.obj
+	$(SLO)$/olkact.obj
+	$(SLO)$/imapwrap.obj
+	$(SLO)$/reffact.obj
+	$(SLO)$/selectionstate.obj
+	$(SLO)$/spelleng.obj
+	$(SLO)$/spelldialog.obj
+	$(SLO)$/waitoff.obj
+	$(SLO)$/cellsh.obj
+	$(SLO)$/cellsh1.obj
+	$(SLO)$/cellsh2.obj
+	$(SLO)$/cellsh3.obj
+	$(SLO)$/cellsh4.obj
+	$(SLO)$/formatsh.obj
+	$(SLO)$/pgbrksh.obj
+	$(SLO)$/viewdata.obj
+	$(SLO)$/scextopt.obj
+
+uiconfig\layout\makefile.mk
+	PRJNAME=sc
+	TARGET=layout
+
+util\makefile.mk
+	PRJNAME=sc
+	TARGET=scalc3
+
+util\makefile.pmk
+
+workben\makefile.mk
+	PRJNAME=sc
+	TARGET=tst
+	SLOFILES=
+	$(SLO)$/addin.obj
+	$(SLO)$/result.obj

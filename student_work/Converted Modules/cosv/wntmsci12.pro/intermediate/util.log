@@ -1,0 +1,25 @@
+﻿Build started 5/14/2014 3:38:26 PM.
+     1>Project "C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\util.vcxproj" on node 4 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+         Creating directory "wntmsci12.pro/lib/cosv\".
+     1>InitializeBuildStatus:
+         Creating "wntmsci12.pro/intermediate/util.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(1151,5): warning MSB8012: TargetPath(C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\wntmsci12.pro/lib/cosv\cosv.lib) does not match the Library's OutputFile property value (C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\wntmsci12.pro\lib\cosv.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+       Lib:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"wntmsci12.pro/lib/cosv.lib" wntmsci12.pro/lib/cosv_service.lib wntmsci12.pro/lib/cosv_storage.lib wntmsci12.pro/lib/cosv_strings.lib wntmsci12.pro/lib/cosv_badcast_wnt.lib wntmsci12.pro\lib\cosv_badcast_wnt.lib
+         wntmsci12.pro\lib\cosv_service.lib
+         wntmsci12.pro\lib\cosv_storage.lib
+         wntmsci12.pro\lib\cosv_strings.lib
+         Microsoft (R) Library Manager Version 10.00.40219.01
+         Copyright (C) Microsoft Corporation.  All rights reserved.
+         
+         "/OUT:wntmsci12.pro/lib/cosv.lib" wntmsci12.pro/lib/cosv_service.lib wntmsci12.pro/lib/cosv_storage.lib wntmsci12.pro/lib/cosv_strings.lib wntmsci12.pro/lib/cosv_badcast_wnt.lib wntmsci12.pro\lib\cosv_badcast_wnt.lib 
+         wntmsci12.pro\lib\cosv_service.lib 
+         wntmsci12.pro\lib\cosv_storage.lib 
+         wntmsci12.pro\lib\cosv_strings.lib 
+     1>LINK : fatal error LNK1181: cannot open input file 'wntmsci12.pro/lib/cosv_service.lib'
+     1>Done Building Project "C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\util.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.11

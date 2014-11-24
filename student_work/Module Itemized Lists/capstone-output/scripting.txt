@@ -1,0 +1,230 @@
+Name:
+scripting
+
+Dependencies:
+oovbaapi vbahelper bridges rdbmaker vcl xmlscript basic sfx2 RHINO:rhino BSH:beanshell javaunohelper LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\scripting
+mkdir: %_DEST%\lib%_EXT%\pyuno
+mkdir: %_DEST%\bin%_EXT%\pyuno
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*
+..\%__SRC%\bin\*.zip %COMMON_DEST%\pck%_EXT%\*
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*
+..\%__SRC%\bin\*.py %_DEST%\bin%_EXT%\pyuno\*
+..\%__SRC%\lib\*.py %_DEST%\lib%_EXT%\pyuno\*
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+..\%__SRC%\bin\*.rdb %_DEST%\rdb%_EXT%\*
+
+..\source\storage\storage.xml %_DEST%\xml%_EXT%\storage.xml
+
+..\%__SRC%\lib\lib*static*.dylib %_DEST%\lib%_EXT%\lib*static*.dylib
+..\%__SRC%\misc\mailmerge.component %_DEST%\xml%_EXT%\mailmerge.component
+..\%__SRC%\misc\pythonscript.component %_DEST%\xml%_EXT%\pythonscript.component
+..\%__SRC%\misc\ScriptFramework.component %_DEST%\xml%_EXT%\ScriptFramework.component
+..\%__SRC%\misc\ScriptProviderForBeanShell.component %_DEST%\xml%_EXT%\ScriptProviderForBeanShell.component
+..\%__SRC%\misc\ScriptProviderForJava.component %_DEST%\xml%_EXT%\ScriptProviderForJava.component
+..\%__SRC%\misc\ScriptProviderForJavaScript.component %_DEST%\xml%_EXT%\ScriptProviderForJavaScript.component
+..\%__SRC%\misc\basprov.component %_DEST%\xml%_EXT%\basprov.component
+..\%__SRC%\misc\dlgprov.component %_DEST%\xml%_EXT%\dlgprov.component
+..\%__SRC%\misc\protocolhandler.component %_DEST%\xml%_EXT%\protocolhandler.component
+..\%__SRC%\misc\scriptframe.component %_DEST%\xml%_EXT%\scriptframe.component
+..\%__SRC%\misc\stringresource.component %_DEST%\xml%_EXT%\stringresource.component
+..\%__SRC%\misc\vbaevents.component %_DEST%\xml%_EXT%\vbaevents.component
+
+Source Files:
+inc\pch\precompiled_scripting.cxx
+source\basprov\baslibnode.cxx
+source\basprov\basmethnode.cxx
+source\basprov\basmodnode.cxx
+source\basprov\basprov.cxx
+source\basprov\basscript.cxx
+source\dlgprov\DialogModelProvider.cxx
+source\dlgprov\dlgevtatt.cxx
+source\dlgprov\dlgprov.cxx
+source\protocolhandler\scripthandler.cxx
+source\provider\ActiveMSPList.cxx
+source\provider\BrowseNodeFactoryImpl.cxx
+source\provider\MasterScriptProvider.cxx
+source\provider\MasterScriptProviderFactory.cxx
+source\provider\ProviderCache.cxx
+source\provider\ScriptImpl.cxx
+source\provider\ScriptingContext.cxx
+source\provider\URIHelper.cxx
+source\runtimemgr\ScriptNameResolverImpl.cxx
+source\runtimemgr\ScriptRuntimeManager.cxx
+source\runtimemgr\StorageBridge.cxx
+source\runtimemgr\StorageBridgeFactory.cxx
+source\storage\ScriptElement.cxx
+source\storage\ScriptInfo.cxx
+source\storage\ScriptMetadataImporter.cxx
+source\storage\ScriptSecurityManager.cxx
+source\storage\ScriptStorage.cxx
+source\storage\ScriptStorageManager.cxx
+source\storage\ScriptURI.cxx
+source\storage\XMLElement.cxx
+source\stringresource\stringresource.cxx
+source\vbaevents\eventhelper.cxx
+source\vbaevents\service.cxx
+
+Header Files:
+inc\pch\precompiled_scripting.hxx
+source\basprov\baslibnode.hxx
+source\basprov\basmethnode.hxx
+source\basprov\basmodnode.hxx
+source\basprov\basprov.hxx
+source\basprov\basscript.hxx
+source\dlgprov\DialogModelProvider.hxx
+source\dlgprov\dlgevtatt.hxx
+source\dlgprov\dlgprov.hxx
+source\inc\bcholder.hxx
+source\inc\util\MiscUtils.hxx
+source\inc\util\scriptingconstants.hxx
+source\inc\util\util.hxx
+source\protocolhandler\scripthandler.hxx
+source\provider\ActiveMSPList.hxx
+source\provider\BrowseNodeFactoryImpl.hxx
+source\provider\MasterScriptProvider.hxx
+source\provider\MasterScriptProviderFactory.hxx
+source\provider\ProviderCache.hxx
+source\provider\ScriptImpl.hxx
+source\provider\ScriptingContext.hxx
+source\provider\URIHelper.hxx
+source\runtimemgr\ScriptExecDialog.hrc
+source\runtimemgr\ScriptNameResolverImpl.hxx
+source\runtimemgr\ScriptRuntimeManager.hxx
+source\runtimemgr\StorageBridge.hxx
+source\runtimemgr\StorageBridgeFactory.hxx
+source\storage\ScriptData.hxx
+source\storage\ScriptElement.hxx
+source\storage\ScriptInfo.hxx
+source\storage\ScriptInfoImpl.hxx
+source\storage\ScriptMetadataImporter.hxx
+source\storage\ScriptSecurityManager.hxx
+source\storage\ScriptStorage.hxx
+source\storage\ScriptStorageManager.hxx
+source\storage\ScriptURI.hxx
+source\storage\XMLElement.hxx
+source\stringresource\stringresource.hxx
+
+Patch Files:
+
+Makefiles:
+
+examples\makefile.mk
+	PRJNAME=scriptinginstaller
+	TARGET=scriptinginstaller
+
+examples\java\makefile.mk
+	PRJNAME=scripting
+	TARGET=javaexamples
+
+inc\makefile.mk
+	PRJNAME=scripting
+	TARGET=inc
+
+java\makefile.mk
+	PRJNAME=scripting
+	TARGET=scriptruntimeforjava
+
+source\basprov\makefile.mk
+	PRJNAME=scripting
+	TARGET=basprov
+	SLOFILES=
+	$(SLO)$/basprov.obj
+	$(SLO)$/basscript.obj
+	$(SLO)$/baslibnode.obj
+	$(SLO)$/basmodnode.obj
+	$(SLO)$/basmethnode.obj
+
+source\dlgprov\makefile.mk
+	PRJNAME=scripting
+	TARGET=dlgprov
+	SLOFILES=
+	$(SLO)$/dlgprov.obj
+	$(SLO)$/DialogModelProvider.obj
+	$(SLO)$/dlgevtatt.obj
+
+source\protocolhandler\makefile.mk
+	PRJNAME=scripting
+	TARGET=protocolhandler
+	SLOFILES=
+	$(SLO)$/scripthandler.obj
+	
+
+source\provider\makefile.mk
+	PRJNAME=scripting
+	TARGET=provider
+	SLOFILES=
+	$(SLO)$/MasterScriptProvider.obj
+	$(SLO)$/URIHelper.obj
+	$(SLO)$/ActiveMSPList.obj
+	$(SLO)$/ProviderCache.obj
+	$(SLO)$/MasterScriptProviderFactory.obj
+	$(SLO)$/BrowseNodeFactoryImpl.obj
+	
+
+source\pyprov\makefile.mk
+	PRJNAME=scripting
+	TARGET=pyprov
+
+source\runtimemgr\makefile.mk
+	PRJNAME=scripting
+	TARGET=runtimemgr
+	SLOFILES=
+	$(SLO)$/ScriptNameResolverImpl.obj
+	$(SLO)$/ScriptRuntimeManager.obj
+	
+
+source\storage\makefile.mk
+	PRJNAME=scripting
+	TARGET=storage
+	SLOFILES=
+	$(SLO)$/ScriptURI.obj
+	$(SLO)$/ScriptStorage.obj
+	$(SLO)$/ScriptInfo.obj
+	$(SLO)$/ScriptMetadataImporter.obj
+	$(SLO)$/ScriptElement.obj
+	$(SLO)$/XMLElement.obj
+	$(SLO)$/ScriptStorageManager.obj
+	$(SLO)$/ScriptSecurityManager.obj
+	
+
+source\stringresource\makefile.mk
+	PRJNAME=scripting
+	TARGET=stringresource
+	SLOFILES=
+	$(SLO)$/stringresource.obj
+	
+
+source\vbaevents\makefile.mk
+	PRJNAME=scripting
+	TARGET=vbaevents
+	SLOFILES=
+	$(SLO)$/service.obj
+	$(SLO)$/eventhelper.obj
+
+util\ant.pmk
+
+util\makefile.mk
+	PRJNAME=scripting
+	TARGET=scriptframe
+
+util\makefile.pmk
+
+util\target.pmk
+
+workben\makefile.mk
+	PRJNAME=scriptinginstaller
+	TARGET=scriptinginstaller
+
+workben\ifc\scripting\makefile.mk
+	PRJNAME=testcase
+	TARGET=testcase
+
+workben\mod\_scripting\makefile.mk
+	PRJNAME=testcase
+	TARGET=testcase

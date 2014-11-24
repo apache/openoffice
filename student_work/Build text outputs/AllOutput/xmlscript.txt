@@ -1,0 +1,286 @@
+xmlscript
+=============
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/inc
+
+mkout -- version: 1.8
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkVtCfas
+precompiled_xmlscript.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkWuwUMv
+precompiled_xmlscript.cxx
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/xml_helper
+
+Making:    all_xml_helper.dpslo
+Compiling: xmlscript/source/xml_helper/xml_impctx.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xml_helper -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xml_impctx.obj C:/steve/testarea/main/xmlscript/source/xml_helper/xml_impctx.cxx 
+xml_impctx.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,sal_Int32>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,sal_Int32>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,sal_Int32>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,sal_Int32>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,sal_Int32,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,sal_Int32>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=sal_Int32,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,sal_Int32>>
+        ]
+        C:/steve/testarea/main/xmlscript/source/xml_helper/xml_impctx.cxx(117) : see reference to class template instantiation 'std::hash_map<__K,__T,__H>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=sal_Int32,
+            __H=rtl::OUStringHash
+        ]
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,xmlscript::PrefixEntry *>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,xmlscript::PrefixEntry *>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,xmlscript::PrefixEntry *>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,xmlscript::PrefixEntry *>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,xmlscript::PrefixEntry *,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,xmlscript::PrefixEntry *>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=xmlscript::PrefixEntry *,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,xmlscript::PrefixEntry *>>
+        ]
+        C:/steve/testarea/main/xmlscript/source/xml_helper/xml_impctx.cxx(126) : see reference to class template instantiation 'std::hash_map<__K,__T,__H>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=xmlscript::PrefixEntry *,
+            __H=rtl::OUStringHash
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkKSu6Ds > ../../wntmsci12.pro/misc/s_xml_impctx.dpcc
+Compiling: xmlscript/source/xml_helper/xml_element.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xml_helper -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xml_element.obj C:/steve/testarea/main/xmlscript/source/xml_helper/xml_element.cxx 
+xml_element.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkdk2AMq > ../../wntmsci12.pro/misc/s_xml_element.dpcc
+Compiling: xmlscript/source/xml_helper/xml_byteseq.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xml_helper -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xml_byteseq.obj C:/steve/testarea/main/xmlscript/source/xml_helper/xml_byteseq.cxx 
+xml_byteseq.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mksZph9A > ../../wntmsci12.pro/misc/s_xml_byteseq.dpcc
+Making:    xml_helper.lib
+lib   /OUT:../../wntmsci12.pro/slb/xml_helper.lib @C:/cygwin/tmp/mkzOyGcn
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/xml_impctx.obj 
+../../wntmsci12.pro/slo/xml_element.obj 
+../../wntmsci12.pro/slo/xml_byteseq.obj 
+Making:    all_xml_helper.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/xmldlg_imexp
+
+Making:    all_xmldlg_imexp.dpslo
+Compiling: xmlscript/source/xmldlg_imexp/xmldlg_import.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmldlg_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmldlg_import.obj C:/steve/testarea/main/xmlscript/source/xmldlg_imexp/xmldlg_import.cxx 
+xmldlg_import.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkPQOYas > ../../wntmsci12.pro/misc/s_xmldlg_import.dpcc
+Compiling: xmlscript/source/xmldlg_imexp/xmldlg_impmodels.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmldlg_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmldlg_impmodels.obj C:/steve/testarea/main/xmlscript/source/xmldlg_imexp/xmldlg_impmodels.cxx 
+xmldlg_impmodels.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkkemSPZ > ../../wntmsci12.pro/misc/s_xmldlg_impmodels.dpcc
+Compiling: xmlscript/source/xmldlg_imexp/xmldlg_export.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmldlg_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmldlg_export.obj C:/steve/testarea/main/xmlscript/source/xmldlg_imexp/xmldlg_export.cxx 
+xmldlg_export.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk4x93vK > ../../wntmsci12.pro/misc/s_xmldlg_export.dpcc
+Compiling: xmlscript/source/xmldlg_imexp/xmldlg_expmodels.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmldlg_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmldlg_expmodels.obj C:/steve/testarea/main/xmlscript/source/xmldlg_imexp/xmldlg_expmodels.cxx 
+xmldlg_expmodels.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkrpefd8 > ../../wntmsci12.pro/misc/s_xmldlg_expmodels.dpcc
+Compiling: xmlscript/source/xmldlg_imexp/xmldlg_addfunc.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmldlg_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmldlg_addfunc.obj C:/steve/testarea/main/xmlscript/source/xmldlg_imexp/xmldlg_addfunc.cxx 
+xmldlg_addfunc.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkqd2zK2 > ../../wntmsci12.pro/misc/s_xmldlg_addfunc.dpcc
+Making:    xmldlg_imexp.lib
+lib   /OUT:../../wntmsci12.pro/slb/xmldlg_imexp.lib @C:/cygwin/tmp/mk1Vpj68
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/xmldlg_import.obj 
+../../wntmsci12.pro/slo/xmldlg_impmodels.obj 
+../../wntmsci12.pro/slo/xmldlg_export.obj 
+../../wntmsci12.pro/slo/xmldlg_expmodels.obj 
+../../wntmsci12.pro/slo/xmldlg_addfunc.obj 
+Making:    all_xmldlg_imexp.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/misc
+
+Making:    all_misc.dpslo
+Compiling: xmlscript/source/misc/unoservices.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/misc -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/unoservices.obj C:/steve/testarea/main/xmlscript/source/misc/unoservices.cxx 
+unoservices.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkJsdrcV > ../../wntmsci12.pro/misc/s_unoservices.dpcc
+Making:    misc.lib
+lib   /OUT:../../wntmsci12.pro/slb/misc.lib @C:/cygwin/tmp/mkvwGbwU
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/unoservices.obj 
+Making:    all_misc.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/xmlflat_imexp
+
+Making:    all_xmlflat_imexp.dpslo
+Compiling: xmlscript/source/xmlflat_imexp/xmlbas_export.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmlflat_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmlbas_export.obj C:/steve/testarea/main/xmlscript/source/xmlflat_imexp/xmlbas_export.cxx 
+xmlbas_export.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkfCWmg0 > ../../wntmsci12.pro/misc/s_xmlbas_export.dpcc
+Compiling: xmlscript/source/xmlflat_imexp/xmlbas_import.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmlflat_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmlbas_import.obj C:/steve/testarea/main/xmlscript/source/xmlflat_imexp/xmlbas_import.cxx 
+xmlbas_import.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mklfDOAS > ../../wntmsci12.pro/misc/s_xmlbas_import.dpcc
+Making:    xmlflat_imexp.lib
+lib   /OUT:../../wntmsci12.pro/slb/xmlflat_imexp.lib @C:/cygwin/tmp/mklqcPDU
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/xmlbas_export.obj 
+../../wntmsci12.pro/slo/xmlbas_import.obj 
+Making:    all_xmlflat_imexp.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/xmllib_imexp
+
+Making:    all_xmllib_imexp.dpslo
+Compiling: xmlscript/source/xmllib_imexp/xmllib_import.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmllib_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmllib_import.obj C:/steve/testarea/main/xmlscript/source/xmllib_imexp/xmllib_import.cxx 
+xmllib_import.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGd9GsX > ../../wntmsci12.pro/misc/s_xmllib_import.dpcc
+Compiling: xmlscript/source/xmllib_imexp/xmllib_export.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmllib_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmllib_export.obj C:/steve/testarea/main/xmlscript/source/xmllib_imexp/xmllib_export.cxx 
+xmllib_export.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkIOc7vw > ../../wntmsci12.pro/misc/s_xmllib_export.dpcc
+Making:    xmllib_imexp.lib
+lib   /OUT:../../wntmsci12.pro/slb/xmllib_imexp.lib @C:/cygwin/tmp/mk6kZeDD
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/xmllib_import.obj 
+../../wntmsci12.pro/slo/xmllib_export.obj 
+Making:    all_xmllib_imexp.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/source/xmlmod_imexp
+
+Making:    all_xmlmod_imexp.dpslo
+Compiling: xmlscript/source/xmlmod_imexp/xmlmod_import.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmlmod_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmlmod_import.obj C:/steve/testarea/main/xmlscript/source/xmlmod_imexp/xmlmod_import.cxx 
+xmlmod_import.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkoJLIq4 > ../../wntmsci12.pro/misc/s_xmlmod_import.dpcc
+Compiling: xmlscript/source/xmlmod_imexp/xmlmod_export.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_xmlscript.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_xmlscript.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/xmlmod_imexp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/xmlmod_export.obj C:/steve/testarea/main/xmlscript/source/xmlmod_imexp/xmlmod_export.cxx 
+xmlmod_export.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkapEoIM > ../../wntmsci12.pro/misc/s_xmlmod_export.dpcc
+Making:    xmlmod_imexp.lib
+lib   /OUT:../../wntmsci12.pro/slb/xmlmod_imexp.lib @C:/cygwin/tmp/mkqPwGCr
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/xmlmod_import.obj 
+../../wntmsci12.pro/slo/xmlmod_export.obj 
+Making:    all_xmlmod_imexp.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/xmlscript/util
+
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/xcr_version.h/ > ../wntmsci12.pro/misc/xcr_version.c
+Compiling: xmlscript/wntmsci12.pro/misc/xcr_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/xcr -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/xcr_version.obj ../wntmsci12.pro/misc/xcr_version.c
+xcr_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk6XdM10 > ../wntmsci12.pro/misc/s_xcr_version.dpcc
+------------------------------
+using: ../wntmsci12.pro/slb/xml_helper.lib				../wntmsci12.pro/slb/xmldlg_imexp.lib			../wntmsci12.pro/slb/xmllib_imexp.lib			../wntmsci12.pro/slb/xmlmod_imexp.lib			../wntmsci12.pro/slb/xmlflat_imexp.lib			../wntmsci12.pro/slb/misc.lib
+using: ../wntmsci12.pro/slb/xcr.lib
+------------------------------
+Making:    xcr.lib
+lib   /OUT:../wntmsci12.pro/slb/xcr.lib @C:/cygwin/tmp/mkScgTui
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slb/xml_helper.lib ../wntmsci12.pro/slb/xmldlg_imexp.lib ../wntmsci12.pro/slb/xmllib_imexp.lib ../wntmsci12.pro/slb/xmlmod_imexp.lib ../wntmsci12.pro/slb/xmlflat_imexp.lib ../wntmsci12.pro/slb/misc.lib 
+
+------------------------------
+Making: ../wntmsci12.pro/misc/xcr.flt
+cat xcr.flt > ../wntmsci12.pro/misc/xcr.flt
+Making:    module definition file xcr.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/xcr.exp
+Making:    ixcr.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkPx6y5M
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/ixcr.lib -def:../wntmsci12.pro/misc/xcr.def 
+   Creating library ../wntmsci12.pro/lib/ixcr.lib and object ../wntmsci12.pro/lib/ixcr.exp
+Making:    xcr.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/xcr -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/xcr_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/xcr_def.res > ../wntmsci12.pro/misc/xcr.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkkOw3EK
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/xcr.dll -map:../wntmsci12.pro/misc/xcr.map ../wntmsci12.pro/lib/ixcr.exp ../wntmsci12.pro/slo/xcr_version.obj ../wntmsci12.pro/slb/xcr.lib icppuhelper.lib icppu.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/xcr.res 
+linking ../wntmsci12.pro/bin/xcr.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/xcr.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/xcr.dll.manifest -outputresource:../wntmsci12.pro/bin/xcr.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/xcr.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/xcr.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/xcr.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/xcr.dll.tmanifest ; fi
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/xcr.dll' -o ../wntmsci12.pro/misc/xcr.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt xcr.component
+xmlscript deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/build.lst
+COPY: ../wntmsci12.pro/bin/xcr.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xcr.dll
+COPY: ../wntmsci12.pro/lib/ixcr.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ixcr.lib
+COPY: ../inc/xmlscript/xml_helper.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/xml_helper.hxx
+COPY: ../inc/xmlscript/xmldlg_imexp.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/xmldlg_imexp.hxx
+COPY: ../inc/xmlscript/xmllib_imexp.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/xmllib_imexp.hxx
+COPY: ../inc/xmlscript/xmlmod_imexp.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/xmlmod_imexp.hxx
+COPY: ../inc/xmlscript/xmlns.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/xmlns.h
+COPY: ../dtd/dialog.dtd -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/dialog.dtd
+COPY: ../dtd/libraries.dtd -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/libraries.dtd
+COPY: ../dtd/library.dtd -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/library.dtd
+COPY: ../dtd/module.dtd -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/module.dtd
+COPY: ../wntmsci12.pro/misc/xcr.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/xcr.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/xmlscript/deliver.log
+Module 'xmlscript' delivered successfully. 13 files copied, 0 files unchanged
+
+=============

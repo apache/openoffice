@@ -1,0 +1,19 @@
+Name:
+sane
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\external
+mkdir: %_DEST%\inc%_EXT%\external\sane
+..\inc\sane.h %_DEST%\inc%_EXT%\external\sane\sane.h
+
+Source Files:
+
+Header Files:
+inc\sane.h
+
+Patch Files:
+
+Makefiles:

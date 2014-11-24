@@ -1,0 +1,126 @@
+Name:
+xmlhelp
+
+Dependencies:
+comphelper ucbhelper LIBXSLT:libxslt unoil LUCENE:lucene javaunohelper l10ntools NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.*
+..\%__SRC%\bin\HelpLinker* %_DEST%\bin%_EXT%
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.*
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.*
+..\util\ucpchelp.xml %_DEST%\xml%_EXT%\ucpchelp.xml
+..\util\*.xsl %_DEST%\bin%_EXT%\*.*
+..\%__SRC%\lib\ihelplinker.lib %_DEST%\lib%_EXT%\ihelplinker.lib
+..\%__SRC%\bin\helpxsl.zip %_DEST%\pck%_EXT%\helpxsl.zip
+..\%__SRC%\misc\LuceneHelpWrapper.component %_DEST%\xml%_EXT%\LuceneHelpWrapper.component
+..\%__SRC%\misc\tvhlp1.component %_DEST%\xml%_EXT%\tvhlp1.component
+..\%__SRC%\misc\ucpchelp1.component %_DEST%\xml%_EXT%\ucpchelp1.component
+
+Source Files:
+inc\pch\precompiled_xmlhelp.cxx
+source\cxxhelp\provider\bufferedinputstream.cxx
+source\cxxhelp\provider\content.cxx
+source\cxxhelp\provider\contentcaps.cxx
+source\cxxhelp\provider\databases.cxx
+source\cxxhelp\provider\db.cxx
+source\cxxhelp\provider\inputstream.cxx
+source\cxxhelp\provider\provider.cxx
+source\cxxhelp\provider\resultset.cxx
+source\cxxhelp\provider\resultsetbase.cxx
+source\cxxhelp\provider\resultsetforquery.cxx
+source\cxxhelp\provider\resultsetforroot.cxx
+source\cxxhelp\provider\services.cxx
+source\cxxhelp\provider\urlparameter.cxx
+source\cxxhelp\qe\DocGenerator.cxx
+source\cxxhelp\test\searchdemo.cxx
+source\cxxhelp\util\Decompressor.cxx
+source\treeview\tvfactory.cxx
+source\treeview\tvread.cxx
+
+Header Files:
+inc\pch\precompiled_xmlhelp.hxx
+source\cxxhelp\inc\db\EntryProcessor.hxx
+source\cxxhelp\inc\excep\XmlSearchExceptions.hxx
+source\cxxhelp\inc\qe\DocGenerator.hxx
+source\cxxhelp\inc\qe\Query.hxx
+source\cxxhelp\inc\util\CompressorIterator.hxx
+source\cxxhelp\inc\util\ConceptList.hxx
+source\cxxhelp\inc\util\Decompressor.hxx
+source\cxxhelp\inc\util\RandomAccessStream.hxx
+source\cxxhelp\provider\bufferedinputstream.hxx
+source\cxxhelp\provider\content.hxx
+source\cxxhelp\provider\databases.hxx
+source\cxxhelp\provider\db.hxx
+source\cxxhelp\provider\inputstream.hxx
+source\cxxhelp\provider\provider.hxx
+source\cxxhelp\provider\resultset.hxx
+source\cxxhelp\provider\resultsetbase.hxx
+source\cxxhelp\provider\resultsetfactory.hxx
+source\cxxhelp\provider\resultsetforquery.hxx
+source\cxxhelp\provider\resultsetforroot.hxx
+source\cxxhelp\provider\urlparameter.hxx
+source\cxxhelp\test\abidebug.hxx
+source\treeview\tvfactory.hxx
+source\treeview\tvread.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=inc
+
+source\com\sun\star\help\helplinker.pmk
+
+source\com\sun\star\help\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=HelpLinker
+
+source\cxxhelp\provider\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=chelp
+	SLOFILES=
+	$(SLO)$/db.obj
+	$(SLO)$/databases.obj
+	$(SLO)$/services.obj
+	$(SLO)$/resultset.obj
+	$(SLO)$/resultsetbase.obj
+	$(SLO)$/resultsetforroot.obj
+	$(SLO)$/resultsetforquery.obj
+	$(SLO)$/contentcaps.obj
+	$(SLO)$/provider.obj
+	$(SLO)$/content.obj
+	$(SLO)$/urlparameter.obj
+	$(SLO)$/inputstream.obj
+	$(SLO)$/bufferedinputstream.obj
+
+source\cxxhelp\qe\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=jaqe
+	SLOFILES=$(SLO)$/DocGenerator.obj
+
+source\cxxhelp\test\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=searchdemo
+	OBJFILES=
+	$(OBJ)$/searchdemo.obj
+
+source\cxxhelp\util\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=jautil
+	SLOFILES=
+	$(SLO)$/Decompressor.obj
+
+source\treeview\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=tvhlp
+	SLOFILES=
+	$(SLO)$/tvfactory.obj
+	$(SLO)$/tvread.obj
+
+util\makefile.mk
+	PRJNAME=xmlhelp
+	TARGET=ucp$(UCP_NAME)

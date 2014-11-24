@@ -1,0 +1,26 @@
+Name:
+x11_extensions
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\X11
+mkdir: %_DEST%\inc%_EXT%\X11\extensions
+
+..\inc\*.h %_DEST%\inc%_EXT%\X11\extensions\*.h
+
+
+Source Files:
+
+Header Files:
+inc\randr.h
+inc\randrproto.h
+inc\render.h
+inc\renderproto.h
+inc\Xrandr.h
+inc\Xrender.h
+
+Patch Files:
+
+Makefiles:

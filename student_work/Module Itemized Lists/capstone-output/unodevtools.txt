@@ -1,0 +1,49 @@
+Name:
+unodevtools
+
+Dependencies:
+codemaker cppuhelper NULL
+
+Build Rules:
+..\%__SRC%\bin\uno-skeletonmaker.exe %_DEST%\bin%_EXT%\uno-skeletonmaker.exe
+..\%__SRC%\bin\uno-skeletonmaker.pdb %_DEST%\bin%_EXT%\uno-skeletonmaker.pdb
+
+..\%__SRC%\bin\uno-skeletonmaker %_DEST%\bin%_EXT%\uno-skeletonmaker
+
+
+Source Files:
+source\skeletonmaker\cppcompskeleton.cxx
+source\skeletonmaker\cpptypemaker.cxx
+source\skeletonmaker\javacompskeleton.cxx
+source\skeletonmaker\javatypemaker.cxx
+source\skeletonmaker\skeletoncommon.cxx
+source\skeletonmaker\skeletonmaker.cxx
+source\unodevtools\options.cxx
+source\unodevtools\typeblob.cxx
+source\unodevtools\typemanager.cxx
+
+Header Files:
+inc\unodevtools\options.hxx
+inc\unodevtools\typemanager.hxx
+source\skeletonmaker\skeletoncommon.hxx
+source\skeletonmaker\skeletoncpp.hxx
+source\skeletonmaker\skeletonjava.hxx
+
+Patch Files:
+
+Makefiles:
+
+unodevtools.pmk
+
+source\skeletonmaker\makefile.mk
+	PRJNAME:=unodevtools
+	TARGET:=uno-skeletonmaker
+	OBJFILES=$(APP1OBJS)
+
+source\unodevtools\makefile.mk
+	PRJNAME=unodevtools
+	TARGET=unodevtools
+	SLOFILES=
+	$(SLO)$/typemanager.obj
+	$(SLO)$/typeblob.obj
+	$(SLO)$/options.obj

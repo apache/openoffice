@@ -1,0 +1,183 @@
+Name:
+basctl
+
+Dependencies:
+LIBXSLT:libxslt L10N:l10n svx NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\statusbar
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\inc\basslots.ilb %_DEST%\inc%_EXT%\basslots.ilb
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\bin\basctl*.dll %_DEST%\bin%_EXT%\basctl*.dll
+..\%__SRC%\bin\basctl*.res %_DEST%\bin%_EXT%\basctl*.res
+..\%__SRC%\misc\basctl*.map %_DEST%\bin%_EXT%\basctl*.map
+..\%__SRC%\misc\basctl.csv %_DEST%\inc%_EXT%\basctl.csv
+
+mkdir: %_DEST%\inc%_EXT%\basctl
+
+..\util\basctl.xml %_DEST%\xml%_EXT%\basctl.xml
+
+..\uiconfig\basicide\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\menubar\*.xml
+..\uiconfig\basicide\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\toolbar\*.xml
+..\uiconfig\basicide\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\BasicIDE\statusbar\*.xml
+..\%__SRC%\misc\basctl.component %_DEST%\xml%_EXT%\basctl.component
+
+Source Files:
+inc\pch\precompiled_basctl.cxx
+source\accessibility\accessibledialogcontrolshape.cxx
+source\accessibility\accessibledialogwindow.cxx
+source\basicide\basdoc.cxx
+source\basicide\basicbox.cxx
+source\basicide\basicrenderable.cxx
+source\basicide\baside2.cxx
+source\basicide\baside2b.cxx
+source\basicide\baside3.cxx
+source\basicide\basidectrlr.cxx
+source\basicide\basides1.cxx
+source\basicide\basides2.cxx
+source\basicide\basides3.cxx
+source\basicide\basidesh.cxx
+source\basicide\basobj2.cxx
+source\basicide\basobj3.cxx
+source\basicide\bastype2.cxx
+source\basicide\bastype3.cxx
+source\basicide\bastypes.cxx
+source\basicide\brkdlg.cxx
+source\basicide\doceventnotifier.cxx
+source\basicide\docsignature.cxx
+source\basicide\documentenumeration.cxx
+source\basicide\iderdll.cxx
+source\basicide\ide_pch.cxx
+source\basicide\localizationmgr.cxx
+source\basicide\macrodlg.cxx
+source\basicide\moduldl2.cxx
+source\basicide\moduldlg.cxx
+source\basicide\objdlg.cxx
+source\basicide\register.cxx
+source\basicide\scriptdocument.cxx
+source\basicide\tbxctl.cxx
+source\basicide\unomodel.cxx
+source\dlged\dlged.cxx
+source\dlged\dlgedclip.cxx
+source\dlged\dlgedfac.cxx
+source\dlged\dlgedfunc.cxx
+source\dlged\dlgedlist.cxx
+source\dlged\dlgedmod.cxx
+source\dlged\dlgedobj.cxx
+source\dlged\dlgedpage.cxx
+source\dlged\dlgedview.cxx
+source\dlged\managelang.cxx
+source\dlged\propbrw.cxx
+
+Header Files:
+inc\basidesh.hrc
+inc\helpid.hrc
+inc\iderdll.hxx
+inc\pch\precompiled_basctl.hxx
+sdi\basslots.hrc
+source\basicide\basdoc.hxx
+source\basicide\basicbox.hxx
+source\basicide\basicmod.hxx
+source\basicide\basicrenderable.hxx
+source\basicide\baside2.hrc
+source\basicide\baside2.hxx
+source\basicide\bastype2.hxx
+source\basicide\bastype3.hxx
+source\basicide\bastype4.hxx
+source\basicide\brkdlg.hrc
+source\basicide\brkdlg.hxx
+source\basicide\documentenumeration.hxx
+source\basicide\iderdll2.hxx
+source\basicide\idetemp.hxx
+source\basicide\ide_pch.hxx
+source\basicide\macrodlg.hrc
+source\basicide\macrodlg.hxx
+source\basicide\moduldlg.hrc
+source\basicide\moduldlg.hxx
+source\basicide\moptions.hrc
+source\basicide\objdlg.hrc
+source\basicide\objdlg.hxx
+source\basicide\tbxctl.hrc
+source\basicide\tbxctl.hxx
+source\basicide\unomodel.hxx
+source\dlged\managelang.hrc
+source\inc\accessibledialogcontrolshape.hxx
+source\inc\accessibledialogwindow.hxx
+source\inc\baside3.hxx
+source\inc\basidectrlr.hxx
+source\inc\basidesh.hxx
+source\inc\basobj.hxx
+source\inc\bastypes.hxx
+source\inc\dlged.hxx
+source\inc\dlgedclip.hxx
+source\inc\dlgeddef.hxx
+source\inc\dlgedfac.hxx
+source\inc\dlgedfunc.hxx
+source\inc\dlgedlist.hxx
+source\inc\dlgedmod.hxx
+source\inc\dlgedobj.hxx
+source\inc\dlgedpage.hxx
+source\inc\dlgedview.hxx
+source\inc\dlgresid.hrc
+source\inc\doceventnotifier.hxx
+source\inc\docsignature.hxx
+source\inc\iderid.hxx
+source\inc\localizationmgr.hxx
+source\inc\managelang.hxx
+source\inc\propbrw.hxx
+source\inc\sbxitem.hxx
+source\inc\scriptdocument.hxx
+source\inc\svheader.hxx
+util\hidother.hrc
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=basctl
+	TARGET=inc
+
+sdi\makefile.mk
+	PRJNAME=basctl
+	TARGET=basslots
+
+source\accessibility\makefile.mk
+	PRJNAME=basctl
+	TARGET=accessibility
+	SLOFILES=
+	$(SLO)$/accessibledialogwindow.obj
+	$(SLO)$/accessibledialogcontrolshape.obj
+
+source\basicide\makefile.mk
+	PRJNAME=basctl
+	TARGET=basicide
+	SLOFILES=$(EXCEPTIONSFILES)
+	$(SLO)$/baside2b.obj
+	$(SLO)$/brkdlg.obj
+	$(SLO)$/objdlg.obj
+	
+
+source\dlged\makefile.mk
+	PRJNAME=basctl
+	TARGET=dlged
+	SLOFILES=$(EXCEPTIONSFILES)
+	$(SLO)$/dlgedfunc.obj
+	$(SLO)$/dlgedmod.obj
+	$(SLO)$/dlgedpage.obj
+	$(SLO)$/dlgedview.obj
+	$(SLO)$/managelang.obj
+
+util\makefile.mk
+	PRJNAME=basctl
+	TARGET=basctl
+
+util\makefile.pmk

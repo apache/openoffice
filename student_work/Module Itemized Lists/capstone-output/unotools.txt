@@ -1,0 +1,317 @@
+Name:
+unotools
+
+Dependencies:
+LIBXSLT:libxslt comphelper cppuhelper offuh tools ucbhelper NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\bin\*.bin %_DEST%\bin%_EXT%\*.bin
+..\%__SRC%\inc\*.bin %_DEST%\bin%_EXT%\*.bin
+
+mkdir: %_DEST%\inc%_EXT%\unotools
+..\inc\unotools\*.hxx %_DEST%\inc%_EXT%\unotools\*.hxx
+..\inc\unotools\unotoolsdllapi.h %_DEST%\inc%_EXT%\unotools\unotoolsdllapi.h
+..\%__SRC%\misc\utl.component %_DEST%\xml%_EXT%\utl.component
+
+Source Files:
+inc\pch\precompiled_unotools.cxx
+source\accessibility\accessiblerelationsethelper.cxx
+source\accessibility\accessiblestatesethelper.cxx
+source\config\accelcfg.cxx
+source\config\bootstrap.cxx
+source\config\cacheoptions.cxx
+source\config\cmdoptions.cxx
+source\config\compatibility.cxx
+source\config\configitem.cxx
+source\config\configmgr.cxx
+source\config\confignode.cxx
+source\config\configpathes.cxx
+source\config\configvaluecontainer.cxx
+source\config\defaultoptions.cxx
+source\config\docinfohelper.cxx
+source\config\dynamicmenuoptions.cxx
+source\config\eventcfg.cxx
+source\config\extendedsecurityoptions.cxx
+source\config\fltrcfg.cxx
+source\config\fontcfg.cxx
+source\config\fontoptions.cxx
+source\config\historyoptions.cxx
+source\config\inetoptions.cxx
+source\config\internaloptions.cxx
+source\config\itemholder1.cxx
+source\config\javaoptions.cxx
+source\config\lingucfg.cxx
+source\config\localisationoptions.cxx
+source\config\misccfg.cxx
+source\config\moduleoptions.cxx
+source\config\options.cxx
+source\config\optionsdlg.cxx
+source\config\optionsdrawinglayer.cxx
+source\config\pathoptions.cxx
+source\config\printwarningoptions.cxx
+source\config\saveopt.cxx
+source\config\searchopt.cxx
+source\config\securityoptions.cxx
+source\config\sourceviewconfig.cxx
+source\config\startoptions.cxx
+source\config\syslocaleoptions.cxx
+source\config\undoopt.cxx
+source\config\useroptions.cxx
+source\config\viewoptions.cxx
+source\config\workingsetoptions.cxx
+source\config\xmlaccelcfg.cxx
+source\i18n\calendarwrapper.cxx
+source\i18n\charclass.cxx
+source\i18n\collatorwrapper.cxx
+source\i18n\intlwrapper.cxx
+source\i18n\localedatawrapper.cxx
+source\i18n\nativenumberwrapper.cxx
+source\i18n\numberformatcodewrapper.cxx
+source\i18n\readwritemutexguard.cxx
+source\i18n\textsearch.cxx
+source\i18n\transliterationwrapper.cxx
+source\misc\atom.cxx
+source\misc\componentresmodule.cxx
+source\misc\datetime.cxx
+source\misc\desktopterminationobserver.cxx
+source\misc\eventlisteneradapter.cxx
+source\misc\fontcvt.cxx
+source\misc\fontdefs.cxx
+source\misc\sharedunocomponent.cxx
+source\misc\syslocale.cxx
+source\processfactory\componentfactory.cxx
+source\processfactory\processfactory.cxx
+source\property\propertysethelper.cxx
+source\property\propertysetinfo.cxx
+source\streaming\streamhelper.cxx
+source\streaming\streamwrap.cxx
+source\ucbhelper\localfilehelper.cxx
+source\ucbhelper\progresshandlerwrap.cxx
+source\ucbhelper\tempfile.cxx
+source\ucbhelper\ucbhelper.cxx
+source\ucbhelper\ucblockbytes.cxx
+source\ucbhelper\ucbstreamhelper.cxx
+source\ucbhelper\xtempfile.cxx
+
+Header Files:
+inc\pch\precompiled_unotools.hxx
+inc\unotools\accelcfg.hxx
+inc\unotools\accessiblerelationsethelper.hxx
+inc\unotools\accessiblestatesethelper.hxx
+inc\unotools\atom.hxx
+inc\unotools\bootstrap.hxx
+inc\unotools\cacheoptions.hxx
+inc\unotools\calendarwrapper.hxx
+inc\unotools\charclass.hxx
+inc\unotools\cmdoptions.hxx
+inc\unotools\collatorwrapper.hxx
+inc\unotools\compatibility.hxx
+inc\unotools\componentresmodule.hxx
+inc\unotools\configitem.hxx
+inc\unotools\configmgr.hxx
+inc\unotools\confignode.hxx
+inc\unotools\configpathes.hxx
+inc\unotools\configvaluecontainer.hxx
+inc\unotools\datetime.hxx
+inc\unotools\defaultoptions.hxx
+inc\unotools\desktopterminationobserver.hxx
+inc\unotools\digitgroupingiterator.hxx
+inc\unotools\docinfohelper.hxx
+inc\unotools\dynamicmenuoptions.hxx
+inc\unotools\eventcfg.hxx
+inc\unotools\eventlisteneradapter.hxx
+inc\unotools\extendedsecurityoptions.hxx
+inc\unotools\fltrcfg.hxx
+inc\unotools\fontcfg.hxx
+inc\unotools\fontcvt.hxx
+inc\unotools\fontdefs.hxx
+inc\unotools\fontoptions.hxx
+inc\unotools\historyoptions.hxx
+inc\unotools\historyoptions_const.hxx
+inc\unotools\idhelper.hxx
+inc\unotools\inetoptions.hxx
+inc\unotools\internaloptions.hxx
+inc\unotools\intlwrapper.hxx
+inc\unotools\itemholderbase.hxx
+inc\unotools\javaoptions.hxx
+inc\unotools\lingucfg.hxx
+inc\unotools\linguprops.hxx
+inc\unotools\localedatawrapper.hxx
+inc\unotools\localfilehelper.hxx
+inc\unotools\localisationoptions.hxx
+inc\unotools\loghelper.hxx
+inc\unotools\misccfg.hxx
+inc\unotools\moduleoptions.hxx
+inc\unotools\nativenumberwrapper.hxx
+inc\unotools\numberformatcodewrapper.hxx
+inc\unotools\options.hxx
+inc\unotools\optionsdlg.hxx
+inc\unotools\pathoptions.hxx
+inc\unotools\printwarningoptions.hxx
+inc\unotools\processfactory.hxx
+inc\unotools\progresshandlerwrap.hxx
+inc\unotools\propertysethelper.hxx
+inc\unotools\propertysetinfo.hxx
+inc\unotools\querydeep.hxx
+inc\unotools\readwritemutexguard.hxx
+inc\unotools\regpathhelper.hxx
+inc\unotools\saveopt.hxx
+inc\unotools\searchopt.hxx
+inc\unotools\securityoptions.hxx
+inc\unotools\sharedunocomponent.hxx
+inc\unotools\sourceviewconfig.hxx
+inc\unotools\startoptions.hxx
+inc\unotools\streamhelper.hxx
+inc\unotools\streamsection.hxx
+inc\unotools\streamwrap.hxx
+inc\unotools\syslocale.hxx
+inc\unotools\syslocaleoptions.hxx
+inc\unotools\tempfile.hxx
+inc\unotools\textsearch.hxx
+inc\unotools\transliterationwrapper.hxx
+inc\unotools\ucbhelper.hxx
+inc\unotools\ucblockbytes.hxx
+inc\unotools\ucbstreamhelper.hxx
+inc\unotools\undoopt.hxx
+inc\unotools\unotoolsdllapi.h
+inc\unotools\unotunnelhelper.hxx
+inc\unotools\useroptions.hxx
+inc\unotools\useroptions_const.hxx
+inc\unotools\viewoptions.hxx
+inc\unotools\workingsetoptions.hxx
+inc\unotools\xmlaccelcfg.hxx
+source\config\itemholder1.hxx
+source\ucbhelper\XTempFile.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=unotools
+	TARGET=inc
+
+qa\complex\tempfile\makefile.mk
+	PRJNAME=unotools
+	TARGET=qa_complex_tempfile
+
+source\accessibility\makefile.mk
+	PRJNAME=unotools
+	TARGET=accessibility
+	SLOFILES=$(SLO)$/accessiblestatesethelper.obj
+	$(SLO)$/accessiblerelationsethelper.obj
+
+source\config\makefile.mk
+	PRJNAME=unotools
+	TARGET=config
+	SLOFILES=
+	$(SLO)$/syslocaleoptions.obj
+	$(SLO)$/configvaluecontainer.obj
+	$(SLO)$/confignode.obj
+	$(SLO)$/configitem.obj
+	$(SLO)$/configmgr.obj
+	$(SLO)$/configpathes.obj
+	$(SLO)$/docinfohelper.obj
+	$(SLO)$/bootstrap.obj
+	$(SLO)$/accelcfg.obj
+	$(SLO)$/cacheoptions.obj
+	$(SLO)$/cmdoptions.obj
+	$(SLO)$/compatibility.obj
+	$(SLO)$/defaultoptions.obj
+	$(SLO)$/dynamicmenuoptions.obj
+	$(SLO)$/eventcfg.obj
+	$(SLO)$/extendedsecurityoptions.obj
+	$(SLO)$/fltrcfg.obj
+	$(SLO)$/fontcfg.obj
+	$(SLO)$/fontoptions.obj
+	$(SLO)$/historyoptions.obj
+	$(SLO)$/inetoptions.obj
+	$(SLO)$/internaloptions.obj
+	$(SLO)$/itemholder1.obj
+	$(SLO)$/javaoptions.obj
+	$(SLO)$/lingucfg.obj
+	$(SLO)$/localisationoptions.obj
+	$(SLO)$/misccfg.obj
+	$(SLO)$/moduleoptions.obj
+	$(SLO)$/options.obj
+	$(SLO)$/optionsdlg.obj
+	$(SLO)$/pathoptions.obj
+	$(SLO)$/printwarningoptions.obj
+	$(SLO)$/saveopt.obj
+	$(SLO)$/searchopt.obj
+	$(SLO)$/securityoptions.obj
+	$(SLO)$/sourceviewconfig.obj
+	$(SLO)$/startoptions.obj
+	$(SLO)$/undoopt.obj
+	$(SLO)$/useroptions.obj
+	$(SLO)$/viewoptions.obj
+	$(SLO)$/workingsetoptions.obj
+	$(SLO)$/xmlaccelcfg.obj
+
+source\i18n\makefile.mk
+	PRJNAME=unotools
+	TARGET=i18n
+	SLOFILES=
+	$(SLO)$/charclass.obj
+	$(SLO)$/calendarwrapper.obj
+	$(SLO)$/collatorwrapper.obj
+	$(SLO)$/intlwrapper.obj
+	$(SLO)$/localedatawrapper.obj
+	$(SLO)$/nativenumberwrapper.obj
+	$(SLO)$/numberformatcodewrapper.obj
+	$(SLO)$/readwritemutexguard.obj
+	$(SLO)$/transliterationwrapper.obj
+	$(SLO)$/textsearch.obj
+
+source\misc\makefile.mk
+	PRJNAME=unotools
+	TARGET=misc
+	SLOFILES=$(SLO)$/atom.obj
+	$(SLO)$/datetime.obj
+	$(SLO)$/syslocale.obj
+	$(SLO)$/eventlisteneradapter.obj
+	$(SLO)$/fontcvt.obj
+	$(SLO)$/fontdefs.obj
+	$(SLO)$/desktopterminationobserver.obj
+	$(SLO)$/sharedunocomponent.obj
+	$(SLO)$/componentresmodule.obj
+
+source\processfactory\makefile.mk
+	PRJNAME=unotools
+	TARGET=procfact
+	SLOFILES=$(SLO)$/processfactory.obj
+
+source\property\makefile.mk
+	PRJNAME=unotools
+	TARGET=property
+	SLOFILES=$(SLO)$/propertysetinfo.obj
+	$(SLO)$/propertysethelper.obj
+
+source\streaming\makefile.mk
+	PRJNAME=unotools
+	TARGET=streaming
+	SLOFILES=$(SLO)$/streamhelper.obj
+	$(SLO)$/streamwrap.obj
+
+source\ucbhelper\makefile.mk
+	PRJNAME=unotools
+	TARGET=ucbhelp
+	SLOFILES=
+	$(SLO)$/ucblockbytes.obj
+	$(SLO)$/localfilehelper.obj
+	$(SLO)$/ucbhelper.obj
+	$(SLO)$/ucbstreamhelper.obj
+	$(SLO)$/tempfile.obj
+	$(SLO)$/xtempfile.obj
+	$(SLO)$/progresshandlerwrap.obj
+
+util\makefile.mk
+	PRJNAME=unotools
+	TARGET=utl
+
+util\makefile.pmk

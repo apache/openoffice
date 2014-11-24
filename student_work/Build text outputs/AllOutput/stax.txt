@@ -1,0 +1,244 @@
+stax
+=============
+
+Entering /cygdrive/c/steve/testarea/main/stax
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/src ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/src ./wntmsci12.pro/misc/build/src_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/src_removeme
+cd ./wntmsci12.pro/misc/build && ( unzip   -o C:/steve/TestArea/ext_sources/980143f96b3f6ce45d2e4947da21a5e9-stax-src-1.2.0.zip) && C:/cygwin/bin/touch.exe so_unpacked_stax
+Archive:  C:/steve/TestArea/ext_sources/980143f96b3f6ce45d2e4947da21a5e9-stax-src-1.2.0.zip
+   creating: META-INF/
+  inflating: META-INF/MANIFEST.MF    
+   creating: src/
+   creating: src/com/
+   creating: src/com/bea/
+   creating: src/com/bea/xml/
+   creating: src/com/bea/xml/stream/
+   creating: src/com/bea/xml/stream/events/
+   creating: src/com/bea/xml/stream/filters/
+   creating: src/com/bea/xml/stream/reader/
+   creating: src/com/bea/xml/stream/samples/
+   creating: src/com/bea/xml/stream/util/
+   creating: src/com/wutka/
+   creating: src/com/wutka/dtd/
+   creating: src/javax/
+   creating: src/javax/xml/
+   creating: src/javax/xml/namespace/
+   creating: src/javax/xml/stream/
+   creating: src/javax/xml/stream/events/
+   creating: src/javax/xml/stream/util/
+   creating: src/org/
+   creating: src/org/codehaus/
+   creating: src/org/codehaus/stax/
+   creating: src/org/codehaus/stax/test/
+   creating: src/org/codehaus/stax/test/evt/
+   creating: src/org/codehaus/stax/test/stream/
+   creating: src/org/codehaus/stax/test/vstream/
+   creating: src/org/codehaus/stax/test/wstream/
+   creating: src/samples/
+   creating: src/test/
+   creating: src/test/files/
+  inflating: src/com/bea/xml/stream/AttributeBase.java  
+  inflating: src/com/bea/xml/stream/ConfigurationContextBase.java  
+  inflating: src/com/bea/xml/stream/EventFactory.java  
+  inflating: src/com/bea/xml/stream/EventReaderFilter.java  
+  inflating: src/com/bea/xml/stream/EventScanner.java  
+  inflating: src/com/bea/xml/stream/EventState.java  
+  inflating: src/com/bea/xml/stream/MXParser.java  
+  inflating: src/com/bea/xml/stream/MXParserFactory.java  
+  inflating: src/com/bea/xml/stream/NamespaceBase.java  
+  inflating: src/com/bea/xml/stream/ReadOnlyNamespaceContextBase.java  
+  inflating: src/com/bea/xml/stream/ReaderDelegate.java  
+  inflating: src/com/bea/xml/stream/ReaderToWriter.java  
+  inflating: src/com/bea/xml/stream/StaticAllocator.java  
+  inflating: src/com/bea/xml/stream/StreamReaderFilter.java  
+  inflating: src/com/bea/xml/stream/SubReader.java  
+  inflating: src/com/bea/xml/stream/XMLEventAllocatorBase.java  
+  inflating: src/com/bea/xml/stream/XMLEventPlayer.java  
+  inflating: src/com/bea/xml/stream/XMLEventReaderBase.java  
+  inflating: src/com/bea/xml/stream/XMLEventWriterBase.java  
+  inflating: src/com/bea/xml/stream/XMLOutputFactoryBase.java  
+  inflating: src/com/bea/xml/stream/XMLStreamPlayer.java  
+  inflating: src/com/bea/xml/stream/XMLStreamRecorder.java  
+  inflating: src/com/bea/xml/stream/XMLWriterBase.java  
+  inflating: src/com/bea/xml/stream/events/BaseEvent.java  
+  inflating: src/com/bea/xml/stream/events/CharactersEvent.java  
+  inflating: src/com/bea/xml/stream/events/CommentEvent.java  
+  inflating: src/com/bea/xml/stream/events/DTDEvent.java  
+  inflating: src/com/bea/xml/stream/events/EndDocumentEvent.java  
+  inflating: src/com/bea/xml/stream/events/EndElementEvent.java  
+  inflating: src/com/bea/xml/stream/events/EntityDeclarationEvent.java  
+  inflating: src/com/bea/xml/stream/events/EntityReferenceEvent.java  
+  inflating: src/com/bea/xml/stream/events/NamedEvent.java  
+  inflating: src/com/bea/xml/stream/events/NotationDeclarationEvent.java  
+  inflating: src/com/bea/xml/stream/events/ProcessingInstructionEvent.java  
+  inflating: src/com/bea/xml/stream/events/StartDocumentEvent.java  
+  inflating: src/com/bea/xml/stream/events/StartElementEvent.java  
+  inflating: src/com/bea/xml/stream/filters/NameFilter.java  
+  inflating: src/com/bea/xml/stream/filters/TypeFilter.java  
+  inflating: src/com/bea/xml/stream/reader/XmlChars.java  
+  inflating: src/com/bea/xml/stream/reader/XmlReader.java  
+  inflating: src/com/bea/xml/stream/samples/AllocEventParser.java  
+  inflating: src/com/bea/xml/stream/samples/EventParse.java  
+  inflating: src/com/bea/xml/stream/samples/EventWrite.java  
+  inflating: src/com/bea/xml/stream/samples/NoAllocEventParser.java  
+  inflating: src/com/bea/xml/stream/samples/Parse.java  
+  inflating: src/com/bea/xml/stream/util/ArrayIterator.java  
+  inflating: src/com/bea/xml/stream/util/CircularQueue.java  
+  inflating: src/com/bea/xml/stream/util/ElementTypeNames.java  
+  inflating: src/com/bea/xml/stream/util/EmptyIterator.java  
+  inflating: src/com/bea/xml/stream/util/NamespaceContextImpl.java  
+  inflating: src/com/bea/xml/stream/util/Stack.java  
+  inflating: src/com/bea/xml/stream/util/Symbol.java  
+  inflating: src/com/bea/xml/stream/util/SymbolTable.java  
+  inflating: src/com/wutka/dtd/DTD.java  
+  inflating: src/com/wutka/dtd/DTDAny.java  
+  inflating: src/com/wutka/dtd/DTDAttlist.java  
+  inflating: src/com/wutka/dtd/DTDAttribute.java  
+  inflating: src/com/wutka/dtd/DTDCardinal.java  
+  inflating: src/com/wutka/dtd/DTDChoice.java  
+  inflating: src/com/wutka/dtd/DTDComment.java  
+  inflating: src/com/wutka/dtd/DTDContainer.java  
+  inflating: src/com/wutka/dtd/DTDDecl.java  
+  inflating: src/com/wutka/dtd/DTDElement.java  
+  inflating: src/com/wutka/dtd/DTDEmpty.java  
+  inflating: src/com/wutka/dtd/DTDEntity.java  
+  inflating: src/com/wutka/dtd/DTDEnumeration.java  
+  inflating: src/com/wutka/dtd/DTDExternalID.java  
+  inflating: src/com/wutka/dtd/DTDItem.java  
+  inflating: src/com/wutka/dtd/DTDMixed.java  
+  inflating: src/com/wutka/dtd/DTDName.java  
+  inflating: src/com/wutka/dtd/DTDNotation.java  
+  inflating: src/com/wutka/dtd/DTDNotationList.java  
+  inflating: src/com/wutka/dtd/DTDOutput.java  
+  inflating: src/com/wutka/dtd/DTDPCData.java  
+  inflating: src/com/wutka/dtd/DTDParseException.java  
+  inflating: src/com/wutka/dtd/DTDParser.java  
+  inflating: src/com/wutka/dtd/DTDProcessingInstruction.java  
+  inflating: src/com/wutka/dtd/DTDPublic.java  
+  inflating: src/com/wutka/dtd/DTDSequence.java  
+  inflating: src/com/wutka/dtd/DTDSystem.java  
+  inflating: src/com/wutka/dtd/EntityExpansion.java  
+  inflating: src/com/wutka/dtd/Scanner.java  
+  inflating: src/com/wutka/dtd/Token.java  
+  inflating: src/com/wutka/dtd/TokenType.java  
+  inflating: src/com/wutka/dtd/Tokenize.java  
+  inflating: src/javax/xml/XMLConstants.java  
+  inflating: src/javax/xml/namespace/NamespaceContext.java  
+  inflating: src/javax/xml/namespace/QName.java  
+  inflating: src/javax/xml/namespace/package.html  
+  inflating: src/javax/xml/package.html  
+  inflating: src/javax/xml/stream/EventFilter.java  
+  inflating: src/javax/xml/stream/FactoryConfigurationError.java  
+  inflating: src/javax/xml/stream/FactoryFinder.java  
+  inflating: src/javax/xml/stream/Location.java  
+  inflating: src/javax/xml/stream/StreamFilter.java  
+  inflating: src/javax/xml/stream/XMLEventFactory.java  
+  inflating: src/javax/xml/stream/XMLEventReader.java  
+  inflating: src/javax/xml/stream/XMLEventWriter.java  
+  inflating: src/javax/xml/stream/XMLInputFactory.java  
+  inflating: src/javax/xml/stream/XMLOutputFactory.java  
+  inflating: src/javax/xml/stream/XMLReporter.java  
+  inflating: src/javax/xml/stream/XMLResolver.java  
+  inflating: src/javax/xml/stream/XMLStreamConstants.java  
+  inflating: src/javax/xml/stream/XMLStreamException.java  
+  inflating: src/javax/xml/stream/XMLStreamReader.java  
+  inflating: src/javax/xml/stream/XMLStreamWriter.java  
+  inflating: src/javax/xml/stream/events/Attribute.java  
+  inflating: src/javax/xml/stream/events/Characters.java  
+  inflating: src/javax/xml/stream/events/Comment.java  
+  inflating: src/javax/xml/stream/events/DTD.java  
+  inflating: src/javax/xml/stream/events/EndDocument.java  
+  inflating: src/javax/xml/stream/events/EndElement.java  
+  inflating: src/javax/xml/stream/events/EntityDeclaration.java  
+  inflating: src/javax/xml/stream/events/EntityReference.java  
+  inflating: src/javax/xml/stream/events/Namespace.java  
+  inflating: src/javax/xml/stream/events/NotationDeclaration.java  
+  inflating: src/javax/xml/stream/events/ProcessingInstruction.java  
+  inflating: src/javax/xml/stream/events/StartDocument.java  
+  inflating: src/javax/xml/stream/events/StartElement.java  
+  inflating: src/javax/xml/stream/events/XMLEvent.java  
+  inflating: src/javax/xml/stream/events/package.html  
+  inflating: src/javax/xml/stream/package.html  
+  inflating: src/javax/xml/stream/util/EventReaderDelegate.java  
+  inflating: src/javax/xml/stream/util/StreamReaderDelegate.java  
+  inflating: src/javax/xml/stream/util/XMLEventAllocator.java  
+  inflating: src/javax/xml/stream/util/XMLEventConsumer.java  
+  inflating: src/javax/xml/stream/util/package.html  
+  inflating: src/org/codehaus/stax/test/BaseStaxTest.java  
+  inflating: src/org/codehaus/stax/test/SimpleResolver.java  
+  inflating: src/org/codehaus/stax/test/evt/BaseEventTest.java  
+  inflating: src/org/codehaus/stax/test/evt/TestEventFactory.java  
+  inflating: src/org/codehaus/stax/test/evt/TestEventReader.java  
+  inflating: src/org/codehaus/stax/test/evt/TestEventTypes.java  
+  inflating: src/org/codehaus/stax/test/evt/TestEventWriter.java  
+  inflating: src/org/codehaus/stax/test/evt/TestFilteredReader.java  
+  inflating: src/org/codehaus/stax/test/evt/TestStartElem.java  
+  inflating: src/org/codehaus/stax/test/stream/BaseStreamTest.java  
+  inflating: src/org/codehaus/stax/test/stream/BlockingStream.java  
+  inflating: src/org/codehaus/stax/test/stream/TestAttributeRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestCDataRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestCommentRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestDoctypeDecl.java  
+  inflating: src/org/codehaus/stax/test/stream/TestElements.java  
+  inflating: src/org/codehaus/stax/test/stream/TestEncodingRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestEntityRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestEpilog.java  
+  inflating: src/org/codehaus/stax/test/stream/TestFilteredReader.java  
+  inflating: src/org/codehaus/stax/test/stream/TestGetSegmentedText.java  
+  inflating: src/org/codehaus/stax/test/stream/TestLinefeeds.java  
+  inflating: src/org/codehaus/stax/test/stream/TestMisc.java  
+  inflating: src/org/codehaus/stax/test/stream/TestNamespaces.java  
+  inflating: src/org/codehaus/stax/test/stream/TestProcInstrRead.java  
+  inflating: src/org/codehaus/stax/test/stream/TestRandomStream.java  
+  inflating: src/org/codehaus/stax/test/stream/TestStreaming.java  
+  inflating: src/org/codehaus/stax/test/stream/TestTextCoalescing.java  
+  inflating: src/org/codehaus/stax/test/stream/TestXmlDecl.java  
+  inflating: src/org/codehaus/stax/test/vstream/BaseVStreamTest.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestAttrTypes.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestDTDElemRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestEntityAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestEnumAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestExternalSubset.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestIdAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestIncludes.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestInvalidDTD.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestNmTokenAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestNotationAttrRead.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestParamEntities.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestStructuralValidation.java  
+  inflating: src/org/codehaus/stax/test/vstream/TestSubsetCombination.java  
+  inflating: src/org/codehaus/stax/test/wstream/BaseWriterTest.java  
+  inflating: src/org/codehaus/stax/test/wstream/TestOutputEncoding.java  
+  inflating: src/org/codehaus/stax/test/wstream/TestRepairingWriter.java  
+  inflating: src/org/codehaus/stax/test/wstream/TestSimpleWriter.java  
+  inflating: src/samples/TestCdataReport.java  
+  inflating: src/samples/TestPi.java  
+  inflating: src/samples/TestSerializeEmptyEl.java  
+  inflating: src/samples/TestSerializer.java  
+  inflating: src/samples/TestSerializer2.java  
+  inflating: src/samples/TestStreamReader.java  
+  inflating: src/samples/TestXml.java  
+  inflating: src/test/XmlEscapingTest.java  
+  inflating: src/test/files/test.xml  
+  inflating: ASF2.0.txt              
+  inflating: build.xml               
+make writeable...
+no patch needed...
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_stax
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_stax
+mkdir.exe ./wntmsci12.pro/misc/build/src/
+cd ./wntmsci12.pro/misc/build/src/ && javac javax/xml/stream/*.java && jar -cf stax-1.2.0.jar javax/xml/stream/*.class javax/xml/stream/events/*.class javax/xml/stream/util/*.class  && C:/cygwin/bin/touch.exe C:/steve/testarea/main/stax/./wntmsci12.pro/misc/build/so_built_stax
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_stax
+cp ./wntmsci12.pro/misc/build/src/stax-1.2.0.jar ./wntmsci12.pro/class
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_stax
+stax deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stax/build.lst
+COPY: ../wntmsci12.pro/class/stax-1.2.0.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/stax-1.2.0.jar
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stax/deliver.log
+Module 'stax' delivered successfully. 2 files copied, 0 files unchanged
+
+=============

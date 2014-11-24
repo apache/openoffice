@@ -1,0 +1,326 @@
+Name:
+accessibility
+
+Dependencies:
+L10N:l10n tools jurt offuh unoil vcl javaunohelper jvmaccess cppu sal toolkit svtools LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\class\java_uno_accessbridge.jar %_DEST%\bin%_EXT%\java_uno_accessbridge.jar
+..\%__SRC%\class\java_accessibility.jar %_DEST%\bin%_EXT%\java_accessibility.jar
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\java_uno_accessbridge.component %_DEST%\xml\java_uno_accessbridge.component
+
+Source Files:
+test.c
+bridge\source\java\WindowsAccessBridgeAdapter.cxx
+inc\pch\precompiled_accessibility.cxx
+source\extended\AccessibleBrowseBox.cxx
+source\extended\AccessibleBrowseBoxBase.cxx
+source\extended\accessiblebrowseboxcell.cxx
+source\extended\AccessibleBrowseBoxCheckBoxCell.cxx
+source\extended\AccessibleBrowseBoxHeaderBar.cxx
+source\extended\AccessibleBrowseBoxHeaderCell.cxx
+source\extended\AccessibleBrowseBoxTable.cxx
+source\extended\AccessibleBrowseBoxTableBase.cxx
+source\extended\AccessibleBrowseBoxTableCell.cxx
+source\extended\accessibleeditbrowseboxcell.cxx
+source\extended\AccessibleGridControl.cxx
+source\extended\AccessibleGridControlBase.cxx
+source\extended\AccessibleGridControlHeader.cxx
+source\extended\AccessibleGridControlHeaderCell.cxx
+source\extended\AccessibleGridControlTable.cxx
+source\extended\AccessibleGridControlTableBase.cxx
+source\extended\AccessibleGridControlTableCell.cxx
+source\extended\accessibleiconchoicectrl.cxx
+source\extended\accessibleiconchoicectrlentry.cxx
+source\extended\accessiblelistbox.cxx
+source\extended\accessiblelistboxentry.cxx
+source\extended\accessibletabbar.cxx
+source\extended\accessibletabbarbase.cxx
+source\extended\accessibletabbarpage.cxx
+source\extended\accessibletabbarpagelist.cxx
+source\extended\accessibletablistbox.cxx
+source\extended\accessibletablistboxtable.cxx
+source\extended\AccessibleToolPanelDeck.cxx
+source\extended\AccessibleToolPanelDeckTabBar.cxx
+source\extended\AccessibleToolPanelDeckTabBarItem.cxx
+source\extended\listboxaccessible.cxx
+source\extended\textwindowaccessibility.cxx
+source\helper\accresmgr.cxx
+source\helper\acc_factory.cxx
+source\helper\characterattributeshelper.cxx
+source\standard\accessiblemenubasecomponent.cxx
+source\standard\accessiblemenucomponent.cxx
+source\standard\accessiblemenuitemcomponent.cxx
+source\standard\floatingwindowaccessible.cxx
+source\standard\vclxaccessiblebox.cxx
+source\standard\vclxaccessiblebutton.cxx
+source\standard\vclxaccessiblecheckbox.cxx
+source\standard\vclxaccessiblecombobox.cxx
+source\standard\vclxaccessibledropdowncombobox.cxx
+source\standard\vclxaccessibledropdownlistbox.cxx
+source\standard\vclxaccessibleedit.cxx
+source\standard\vclxaccessiblefixedhyperlink.cxx
+source\standard\vclxaccessiblefixedtext.cxx
+source\standard\vclxaccessiblelist.cxx
+source\standard\vclxaccessiblelistbox.cxx
+source\standard\vclxaccessiblelistitem.cxx
+source\standard\vclxaccessiblemenu.cxx
+source\standard\vclxaccessiblemenubar.cxx
+source\standard\vclxaccessiblemenuitem.cxx
+source\standard\vclxaccessiblemenuseparator.cxx
+source\standard\vclxaccessiblepopupmenu.cxx
+source\standard\vclxaccessibleradiobutton.cxx
+source\standard\vclxaccessiblescrollbar.cxx
+source\standard\vclxaccessiblestatusbar.cxx
+source\standard\vclxaccessiblestatusbaritem.cxx
+source\standard\vclxaccessibletabcontrol.cxx
+source\standard\vclxaccessibletabpage.cxx
+source\standard\vclxaccessibletabpagewindow.cxx
+source\standard\vclxaccessibletextcomponent.cxx
+source\standard\vclxaccessibletextfield.cxx
+source\standard\vclxaccessibletoolbox.cxx
+source\standard\vclxaccessibletoolboxitem.cxx
+
+Header Files:
+inc\accessibility\extended\AccessibleBrowseBox.hxx
+inc\accessibility\extended\AccessibleBrowseBoxBase.hxx
+inc\accessibility\extended\accessiblebrowseboxcell.hxx
+inc\accessibility\extended\AccessibleBrowseBoxCheckBoxCell.hxx
+inc\accessibility\extended\AccessibleBrowseBoxHeaderBar.hxx
+inc\accessibility\extended\AccessibleBrowseBoxHeaderCell.hxx
+inc\accessibility\extended\AccessibleBrowseBoxTable.hxx
+inc\accessibility\extended\AccessibleBrowseBoxTableBase.hxx
+inc\accessibility\extended\AccessibleBrowseBoxTableCell.hxx
+inc\accessibility\extended\accessibleeditbrowseboxcell.hxx
+inc\accessibility\extended\AccessibleGridControl.hxx
+inc\accessibility\extended\AccessibleGridControlBase.hxx
+inc\accessibility\extended\AccessibleGridControlHeader.hxx
+inc\accessibility\extended\AccessibleGridControlHeaderCell.hxx
+inc\accessibility\extended\AccessibleGridControlTable.hxx
+inc\accessibility\extended\AccessibleGridControlTableBase.hxx
+inc\accessibility\extended\AccessibleGridControlTableCell.hxx
+inc\accessibility\extended\accessibleiconchoicectrl.hxx
+inc\accessibility\extended\accessibleiconchoicectrlentry.hxx
+inc\accessibility\extended\accessiblelistbox.hxx
+inc\accessibility\extended\accessiblelistboxentry.hxx
+inc\accessibility\extended\accessibletabbar.hxx
+inc\accessibility\extended\accessibletabbarbase.hxx
+inc\accessibility\extended\accessibletabbarpage.hxx
+inc\accessibility\extended\accessibletabbarpagelist.hxx
+inc\accessibility\extended\accessibletablistbox.hxx
+inc\accessibility\extended\accessibletablistboxtable.hxx
+inc\accessibility\extended\AccessibleToolPanelDeck.hxx
+inc\accessibility\extended\AccessibleToolPanelDeckTabBar.hxx
+inc\accessibility\extended\AccessibleToolPanelDeckTabBarItem.hxx
+inc\accessibility\extended\listboxaccessible.hxx
+inc\accessibility\extended\textwindowaccessibility.hxx
+inc\accessibility\helper\accessiblestrings.hrc
+inc\accessibility\helper\accresmgr.hxx
+inc\accessibility\helper\acc_factory.hxx
+inc\accessibility\helper\characterattributeshelper.hxx
+inc\accessibility\helper\IComboListBoxHelper.hxx
+inc\accessibility\helper\listboxhelper.hxx
+inc\accessibility\standard\accessiblemenubasecomponent.hxx
+inc\accessibility\standard\accessiblemenucomponent.hxx
+inc\accessibility\standard\accessiblemenuitemcomponent.hxx
+inc\accessibility\standard\vclxaccessiblebox.hxx
+inc\accessibility\standard\vclxaccessiblebutton.hxx
+inc\accessibility\standard\vclxaccessiblecheckbox.hxx
+inc\accessibility\standard\vclxaccessiblecombobox.hxx
+inc\accessibility\standard\vclxaccessibledropdowncombobox.hxx
+inc\accessibility\standard\vclxaccessibledropdownlistbox.hxx
+inc\accessibility\standard\vclxaccessibleedit.hxx
+inc\accessibility\standard\vclxaccessiblefixedhyperlink.hxx
+inc\accessibility\standard\vclxaccessiblefixedtext.hxx
+inc\accessibility\standard\vclxaccessiblelist.hxx
+inc\accessibility\standard\vclxaccessiblelistbox.hxx
+inc\accessibility\standard\vclxaccessiblelistitem.hxx
+inc\accessibility\standard\vclxaccessiblemenu.hxx
+inc\accessibility\standard\vclxaccessiblemenubar.hxx
+inc\accessibility\standard\vclxaccessiblemenuitem.hxx
+inc\accessibility\standard\vclxaccessiblemenuseparator.hxx
+inc\accessibility\standard\vclxaccessiblepopupmenu.hxx
+inc\accessibility\standard\vclxaccessibleradiobutton.hxx
+inc\accessibility\standard\vclxaccessiblescrollbar.hxx
+inc\accessibility\standard\vclxaccessiblestatusbar.hxx
+inc\accessibility\standard\vclxaccessiblestatusbaritem.hxx
+inc\accessibility\standard\vclxaccessibletabcontrol.hxx
+inc\accessibility\standard\vclxaccessibletabpage.hxx
+inc\accessibility\standard\vclxaccessibletabpagewindow.hxx
+inc\accessibility\standard\vclxaccessibletextcomponent.hxx
+inc\accessibility\standard\vclxaccessibletextfield.hxx
+inc\accessibility\standard\vclxaccessibletoolbox.hxx
+inc\accessibility\standard\vclxaccessibletoolboxitem.hxx
+inc\pch\precompiled_accessibility.hxx
+source\inc\floatingwindowaccessible.hxx
+
+Patch Files:
+
+Makefiles:
+
+test.mk
+
+bridge\org\openoffice\accessibility\makefile.mk
+	PRJNAME=accessibility
+	TARGET=java_uno_accessbridge
+
+bridge\org\openoffice\java\accessibility\makefile.mk
+	PRJNAME=accessibility
+	TARGET=java_accessibility
+
+bridge\source\java\makefile.mk
+	PRJNAME=accessibility
+	TARGET=accessbridge
+	SLOFILES=$(SLO)$/WindowsAccessBridgeAdapter.obj
+
+inc\makefile.mk
+	PRJNAME=accessibility
+	TARGET=inc
+
+source\extended\makefile.mk
+	PRJNAME=accessibility
+	TARGET=extended
+	SLOFILES=
+	$(SLO)$/AccessibleBrowseBoxCheckBoxCell.obj
+	$(SLO)$/AccessibleBrowseBoxBase.obj
+	$(SLO)$/AccessibleBrowseBox.obj
+	$(SLO)$/AccessibleBrowseBoxTableCell.obj
+	$(SLO)$/AccessibleBrowseBoxHeaderCell.obj
+	$(SLO)$/AccessibleBrowseBoxTableBase.obj
+	$(SLO)$/AccessibleBrowseBoxTable.obj
+	$(SLO)$/AccessibleBrowseBoxHeaderBar.obj
+	$(SLO)$/accessibleiconchoicectrl.obj
+	$(SLO)$/accessibleiconchoicectrlentry.obj
+	$(SLO)$/accessiblelistbox.obj
+	$(SLO)$/accessiblelistboxentry.obj
+	$(SLO)$/accessibletabbarbase.obj
+	$(SLO)$/accessibletabbar.obj
+	$(SLO)$/accessibletabbarpage.obj
+	$(SLO)$/accessibletabbarpagelist.obj
+	$(SLO)$/accessibletablistbox.obj
+	$(SLO)$/accessibletablistboxtable.obj
+	$(SLO)$/listboxaccessible.obj
+	$(SLO)$/accessiblebrowseboxcell.obj
+	$(SLO)$/accessibleeditbrowseboxcell.obj
+	$(SLO)$/textwindowaccessibility.obj
+	$(SLO)$/AccessibleGridControlBase.obj
+	$(SLO)$/AccessibleGridControl.obj
+	$(SLO)$/AccessibleGridControlTableBase.obj
+	$(SLO)$/AccessibleGridControlHeader.obj
+	$(SLO)$/AccessibleGridControlTableCell.obj
+	$(SLO)$/AccessibleGridControlHeaderCell.obj
+	$(SLO)$/AccessibleGridControlTable.obj
+	$(SLO)$/AccessibleToolPanelDeck.obj
+	$(SLO)$/AccessibleToolPanelDeckTabBar.obj
+	$(SLO)$/AccessibleToolPanelDeckTabBarItem.obj
+
+source\helper\makefile.mk
+	PRJNAME=accessibility
+	TARGET=helper
+	SLOFILES=
+	$(SLO)$/acc_factory.obj
+	$(SLO)$/accresmgr.obj
+	$(SLO)$/characterattributeshelper.obj
+	
+
+source\standard\makefile.mk
+	PRJNAME=accessibility
+	TARGET=standard
+	SLOFILES=
+	$(SLO)$/accessiblemenubasecomponent.obj
+	$(SLO)$/accessiblemenucomponent.obj
+	$(SLO)$/accessiblemenuitemcomponent.obj
+	$(SLO)$/floatingwindowaccessible.obj
+	$(SLO)$/vclxaccessiblebox.obj
+	$(SLO)$/vclxaccessiblebutton.obj
+	$(SLO)$/vclxaccessiblecheckbox.obj
+	$(SLO)$/vclxaccessiblecombobox.obj
+	$(SLO)$/vclxaccessibledropdowncombobox.obj
+	$(SLO)$/vclxaccessibledropdownlistbox.obj
+	$(SLO)$/vclxaccessibleedit.obj
+	$(SLO)$/vclxaccessiblefixedhyperlink.obj
+	$(SLO)$/vclxaccessiblefixedtext.obj
+	$(SLO)$/vclxaccessiblelist.obj
+	$(SLO)$/vclxaccessiblelistbox.obj
+	$(SLO)$/vclxaccessiblelistitem.obj
+	$(SLO)$/vclxaccessiblemenu.obj
+	$(SLO)$/vclxaccessiblemenubar.obj
+	$(SLO)$/vclxaccessiblemenuitem.obj
+	$(SLO)$/vclxaccessiblemenuseparator.obj
+	$(SLO)$/vclxaccessiblepopupmenu.obj
+	$(SLO)$/vclxaccessibleradiobutton.obj
+	$(SLO)$/vclxaccessiblescrollbar.obj
+	$(SLO)$/vclxaccessiblestatusbar.obj
+	$(SLO)$/vclxaccessiblestatusbaritem.obj
+	$(SLO)$/vclxaccessibletabcontrol.obj
+	$(SLO)$/vclxaccessibletabpage.obj
+	$(SLO)$/vclxaccessibletabpagewindow.obj
+	$(SLO)$/vclxaccessibletextcomponent.obj
+	$(SLO)$/vclxaccessibletextfield.obj
+	$(SLO)$/vclxaccessibletoolbox.obj
+	$(SLO)$/vclxaccessibletoolboxitem.obj
+
+util\makefile.mk
+	PRJNAME=accessibility
+	TARGET=acc
+
+workben\makefile
+
+workben\makefile.in
+
+workben\makefile.mk
+
+workben\org\openoffice\accessibility\Makefile
+
+workben\org\openoffice\accessibility\awb\Makefile
+
+workben\org\openoffice\accessibility\awb\makefile.common
+
+workben\org\openoffice\accessibility\awb\makefile.mk
+	PRJNAME=awb
+	TARGET=java_awb
+
+workben\org\openoffice\accessibility\awb\canvas\Makefile
+
+workben\org\openoffice\accessibility\awb\canvas\makefile.common
+
+workben\org\openoffice\accessibility\awb\canvas\makefile.mk
+	PRJNAME=awb
+	TARGET=awb_canvas
+
+workben\org\openoffice\accessibility\awb\tree\Makefile
+
+workben\org\openoffice\accessibility\awb\tree\makefile.common
+
+workben\org\openoffice\accessibility\awb\tree\makefile.mk
+	PRJNAME=awb
+	TARGET=java_tree
+
+workben\org\openoffice\accessibility\awb\view\Makefile
+
+workben\org\openoffice\accessibility\awb\view\makefile.common
+
+workben\org\openoffice\accessibility\awb\view\makefile.mk
+	PRJNAME=awb
+	TARGET=awb_view
+
+workben\org\openoffice\accessibility\awb\view\text\Makefile
+
+workben\org\openoffice\accessibility\awb\view\text\makefile.common
+
+workben\org\openoffice\accessibility\awb\view\text\makefile.mk
+	PRJNAME=awb
+	TARGET=awb_view_text
+
+workben\org\openoffice\accessibility\misc\Makefile
+
+workben\org\openoffice\accessibility\misc\makefile.common
+
+workben\org\openoffice\accessibility\misc\makefile.mk
+	PRJNAME=awb
+	TARGET=java_misc

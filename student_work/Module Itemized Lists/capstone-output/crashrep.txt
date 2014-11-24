@@ -1,0 +1,38 @@
+Name:
+crashrep
+
+Dependencies:
+L10N:l10n sal sysui SO:tools shell NULL
+
+Build Rules:
+..\%__SRC%\bin\soreport.exe %_DEST%\bin%_EXT%\crashrep.exe
+..\%__SRC%\bin\soreport.exe.manifest %_DEST%\bin%_EXT%\crashrep.exe.manifest
+..\%__SRC%\bin\crashrep %_DEST%\bin%_EXT%\crashrep
+
+Source Files:
+source\unx\main.cxx
+
+Header Files:
+source\win32\base64.h
+source\win32\resource.h
+
+Patch Files:
+
+Makefiles:
+
+source\all\makefile.mk
+	PRJNAME=crashrep
+	TARGET=crash_res
+
+source\unx\makefile.mk
+	PRJNAME=crashrep
+	TARGET=crashrep
+	OBJFILES=
+	$(OBJ)$/main.obj
+
+source\win32\makefile.mk
+	PRJNAME=crashrep
+	TARGET=soreport
+	OBJFILES=
+	$(OBJ)$/soreport.obj
+	$(OBJ)$/base64.obj

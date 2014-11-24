@@ -1,0 +1,21 @@
+Name:
+tomcat
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+..\%__SRC%\misc\build\apache-tomcat-5.5.36-src\servletapi\jsr154\dist\lib\servlet-api.jar %_DEST%\bin%_EXT%\servlet-api.jar
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+tomcat.patch
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=tomcat
+	TARGET=servlet

@@ -1,0 +1,122 @@
+Name:
+xmlscript
+
+Dependencies:
+comphelper tools offapi LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\xmlscript
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%\lib*.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+..\inc\xmlscript\xml_helper.hxx %_DEST%\inc%_EXT%\xmlscript\xml_helper.hxx
+..\inc\xmlscript\xmldlg_imexp.hxx %_DEST%\inc%_EXT%\xmlscript\xmldlg_imexp.hxx
+..\inc\xmlscript\xmllib_imexp.hxx %_DEST%\inc%_EXT%\xmlscript\xmllib_imexp.hxx
+..\inc\xmlscript\xmlmod_imexp.hxx %_DEST%\inc%_EXT%\xmlscript\xmlmod_imexp.hxx
+..\inc\xmlscript\xmlns.h %_DEST%\inc%_EXT%\xmlscript\xmlns.h
+
+..\dtd\*.dtd %_DEST%\bin%_EXT%\*.dtd
+..\%__SRC%\misc\xcr.component %_DEST%\xml%_EXT%\xcr.component
+
+Source Files:
+inc\pch\precompiled_xmlscript.cxx
+source\misc\unoservices.cxx
+source\xmldlg_imexp\xmldlg_addfunc.cxx
+source\xmldlg_imexp\xmldlg_expmodels.cxx
+source\xmldlg_imexp\xmldlg_export.cxx
+source\xmldlg_imexp\xmldlg_impmodels.cxx
+source\xmldlg_imexp\xmldlg_import.cxx
+source\xmlflat_imexp\xmlbas_export.cxx
+source\xmlflat_imexp\xmlbas_import.cxx
+source\xmllib_imexp\xmllib_export.cxx
+source\xmllib_imexp\xmllib_import.cxx
+source\xmlmod_imexp\xmlmod_export.cxx
+source\xmlmod_imexp\xmlmod_import.cxx
+source\xml_helper\xml_byteseq.cxx
+source\xml_helper\xml_element.cxx
+source\xml_helper\xml_impctx.cxx
+test\imexp.cxx
+
+Header Files:
+inc\pch\precompiled_xmlscript.hxx
+inc\xmlscript\xmldlg_imexp.hxx
+inc\xmlscript\xmllib_imexp.hxx
+inc\xmlscript\xmlmod_imexp.hxx
+inc\xmlscript\xmlns.h
+inc\xmlscript\xml_helper.hxx
+inc\xmlscript\xml_import.hxx
+source\inc\misc.hxx
+source\xmldlg_imexp\common.hxx
+source\xmldlg_imexp\exp_share.hxx
+source\xmldlg_imexp\imp_share.hxx
+source\xmlflat_imexp\xmlbas_export.hxx
+source\xmlflat_imexp\xmlbas_import.hxx
+source\xmllib_imexp\imp_share.hxx
+source\xmlmod_imexp\imp_share.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=inc
+
+source\misc\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=misc
+	SLOFILES=
+	$(SLO)$/unoservices.obj
+
+source\xmldlg_imexp\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xmldlg_imexp
+	SLOFILES=
+	$(SLO)$/xmldlg_import.obj
+	$(SLO)$/xmldlg_impmodels.obj
+	$(SLO)$/xmldlg_export.obj
+	$(SLO)$/xmldlg_expmodels.obj
+	$(SLO)$/xmldlg_addfunc.obj
+
+source\xmlflat_imexp\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xmlflat_imexp
+	SLOFILES=
+	$(SLO)$/xmlbas_export.obj
+	$(SLO)$/xmlbas_import.obj
+
+source\xmllib_imexp\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xmllib_imexp
+	SLOFILES=
+	$(SLO)$/xmllib_import.obj
+	$(SLO)$/xmllib_export.obj
+
+source\xmlmod_imexp\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xmlmod_imexp
+	SLOFILES=
+	$(SLO)$/xmlmod_import.obj
+	$(SLO)$/xmlmod_export.obj
+
+source\xml_helper\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xml_helper
+	SLOFILES=
+	$(SLO)$/xml_impctx.obj
+	$(SLO)$/xml_element.obj
+	$(SLO)$/xml_byteseq.obj
+
+test\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=imexp
+	OBJFILES=
+	$(OBJ)$/imexp.obj
+
+util\makefile.mk
+	PRJNAME=xmlscript
+	TARGET=xcr
+
+util\target.pmk

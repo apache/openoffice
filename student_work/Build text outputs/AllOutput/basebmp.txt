@@ -1,0 +1,674 @@
+basebmp
+=============
+
+Entering /cygdrive/c/steve/testarea/main/basebmp/source
+
+mkout -- version: 1.8
+Making:    all_wrapper.dpslo
+Compiling: basebmp/source/bitmapdevice.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I..//wntmsci12.pro/inc/wrapper -I../inc -I..//inc/pch -I..//inc -I..//WIN/inc -I..//wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I..//res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo..//wntmsci12.pro/slo/bitmapdevice.obj C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx 
+bitmapdevice.cxx
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const unsigned char &)'
+        with
+        [
+            PIXELTYPE=unsigned char
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=unsigned char
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,T1,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            T3=basebmp::NonStandardAccessor<sal_uInt8>,
+            WrappedAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            SetterFunctor=basebmp::XorFunctor<unsigned char>,
+            SourceIter=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            SourceAcc=basebmp::NonStandardAccessor<sal_uInt8>,
+            DestIter=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(645) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::NonStandardAccessor<ValueType>,Iterator,RawAcc>(const vigra::triple<T1,T2,T3> &,const vigra::triple<T1,T2,RawAcc> &,bool)' being compiled
+        with
+        [
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            ValueType=sal_uInt8,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,
+            T1=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            T2=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            T3=basebmp::NonStandardAccessor<sal_uInt8>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(676) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawBitmap<basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const RawAcc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            SetterFunctor=basebmp::XorFunctor<unsigned char>,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(670) : while compiling class template member function 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::drawBitmap_i(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,basebmp::DrawMode)'
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1674) : see reference to class template instantiation 'basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1728) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<FormatTraits,MaskTraits>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,const basebmp::NonStandardAccessor<ValueType> &,const basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor> &,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            FormatTraits=basebmp::PixelFormatTraits_GREY1_MSB,
+            MaskTraits=basebmp::StdMasks,
+            ValueType=sal_uInt8,
+            WrappedAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            GetterFunctor=basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,
+            SetterFunctor=basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>,
+            T=sal_uInt8
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1861) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<basebmp::PixelFormatTraits_GREY1_MSB,basebmp::StdMasks>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            T=sal_uInt8
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const basebmp::Color &)'
+        with
+        [
+            PIXELTYPE=basebmp::GenericColorImageAccessor::value_type
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=basebmp::GenericColorImageAccessor::value_type
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=vigra::Diff2D,
+            T3=basebmp::GenericColorImageAccessor,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,
+            GetterFunctor=basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,
+            SetterFunctor=basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>,
+            SourceIter=vigra::Diff2D,
+            SourceAcc=basebmp::GenericColorImageAccessor,
+            DestIter=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            DestAcc=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(663) : see reference to function template instantiation 'void basebmp::scaleImage<vigra::Diff2D,basebmp::GenericColorImageAccessor,Iterator,Acc>(const vigra::triple<T1,T2,T3> &,const vigra::triple<Iterator,Iterator,Acc> &,bool)' being compiled
+        with
+        [
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            Acc=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            T1=vigra::Diff2D,
+            T2=vigra::Diff2D,
+            T3=basebmp::GenericColorImageAccessor
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(687) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawBitmapGeneric<basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const Acc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,
+            GetterFunctor=basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,
+            SetterFunctor=basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            Acc=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const std::pair<_Ty1,_Ty2> &)'
+        with
+        [
+            PIXELTYPE=std::pair<basebmp::Color,unsigned char>,
+            _Ty1=basebmp::Color,
+            _Ty2=unsigned char
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=std::pair<basebmp::Color,unsigned char>
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::CompositeIterator2D<basebmp::PackedPixelIterator<sal_uInt8,1,true>,basebmp::PackedPixelIterator<sal_uInt8,1,true>>,
+            T3=basebmp::JoinImageAccessorAdapter<basebmp::UnaryFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,basebmp::NonStandardAccessor<sal_uInt8>>,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            SetterFunctor=basebmp::BinaryFunctorSplittingWrapper<basebmp::ColorBitmaskOutputMaskFunctor<false>>,
+            SourceIter=basebmp::CompositeIterator2D<basebmp::PackedPixelIterator<sal_uInt8,1,true>,basebmp::PackedPixelIterator<sal_uInt8,1,true>>,
+            SourceAcc=basebmp::JoinImageAccessorAdapter<basebmp::UnaryFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,basebmp::NonStandardAccessor<sal_uInt8>>,
+            DestIter=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,basebmp::BinaryFunctorSplittingWrapper<basebmp::ColorBitmaskOutputMaskFunctor<false>>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(862) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::CompositeIterator2D<Iterator1,Iterator2>,basebmp::JoinImageAccessorAdapter<WrappedAccessor1,WrappedAccessor2>,Iterator,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const vigra::triple<T1,T2,T3> &,const vigra::triple<Iterator,Iterator,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>> &,bool)' being compiled
+        with
+        [
+            Iterator1=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            Iterator2=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            WrappedAccessor1=basebmp::UnaryFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            WrappedAccessor2=basebmp::NonStandardAccessor<sal_uInt8>,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            WrappedAccessor=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            SetterFunctor=basebmp::BinaryFunctorSplittingWrapper<basebmp::ColorBitmaskOutputMaskFunctor<false>>,
+            T1=basebmp::CompositeIterator2D<basebmp::PackedPixelIterator<sal_uInt8,1,true>,basebmp::PackedPixelIterator<sal_uInt8,1,true>>,
+            T2=basebmp::CompositeIterator2D<basebmp::PackedPixelIterator<sal_uInt8,1,true>,basebmp::PackedPixelIterator<sal_uInt8,1,true>>,
+            T3=basebmp::JoinImageAccessorAdapter<basebmp::UnaryFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,basebmp::NonStandardAccessor<sal_uInt8>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(911) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawMaskedBitmap<basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const Acc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,
+            GetterFunctor=basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,
+            SetterFunctor=basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            Acc=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(903) : while compiling class template member function 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::drawMaskedBitmap_i(const basebmp::BitmapDeviceSharedPtr &,const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,basebmp::DrawMode)'
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const std::pair<_Ty1,_Ty2> &)'
+        with
+        [
+            PIXELTYPE=std::pair<basebmp::GenericColorImageAccessor::value_type,basebmp::GenericColorImageAccessor::value_type>,
+            _Ty1=basebmp::GenericColorImageAccessor::value_type,
+            _Ty2=basebmp::GenericColorImageAccessor::value_type
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=std::pair<basebmp::GenericColorImageAccessor::value_type,basebmp::GenericColorImageAccessor::value_type>
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::CompositeIterator2D<vigra::Diff2D,vigra::Diff2D>,
+            T3=basebmp::JoinImageAccessorAdapter<basebmp::GenericColorImageAccessor,basebmp::GenericColorImageAccessor>,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            SetterFunctor=basebmp::BinaryFunctorSplittingWrapper<basebmp::GenericOutputMaskFunctor<basebmp::Color,basebmp::Color,false>>,
+            SourceIter=basebmp::CompositeIterator2D<vigra::Diff2D,vigra::Diff2D>,
+            SourceAcc=basebmp::JoinImageAccessorAdapter<basebmp::GenericColorImageAccessor,basebmp::GenericColorImageAccessor>,
+            DestIter=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,basebmp::BinaryFunctorSplittingWrapper<basebmp::GenericOutputMaskFunctor<basebmp::Color,basebmp::Color,false>>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(895) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::CompositeIterator2D<Iterator1,Iterator2>,basebmp::JoinImageAccessorAdapter<WrappedAccessor1,WrappedAccessor2>,Iterator,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const vigra::triple<T1,T2,T3> &,const vigra::triple<Iterator,Iterator,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>> &,bool)' being compiled
+        with
+        [
+            Iterator1=vigra::Diff2D,
+            Iterator2=vigra::Diff2D,
+            WrappedAccessor1=basebmp::GenericColorImageAccessor,
+            WrappedAccessor2=basebmp::GenericColorImageAccessor,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            WrappedAccessor=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            SetterFunctor=basebmp::BinaryFunctorSplittingWrapper<basebmp::GenericOutputMaskFunctor<basebmp::Color,basebmp::Color,false>>,
+            T1=basebmp::CompositeIterator2D<vigra::Diff2D,vigra::Diff2D>,
+            T2=basebmp::CompositeIterator2D<vigra::Diff2D,vigra::Diff2D>,
+            T3=basebmp::JoinImageAccessorAdapter<basebmp::GenericColorImageAccessor,basebmp::GenericColorImageAccessor>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(924) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawMaskedBitmapGeneric<basebmp::PackedPixelIterator<Valuetype,bits_per_pixel,MsbFirst>,basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const Acc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::NonStandardAccessor<sal_uInt8>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=sal_uInt8,
+            bits_per_pixel=1,
+            MsbFirst=true,
+            WrappedAccessor=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,
+            GetterFunctor=basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,
+            SetterFunctor=basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>,
+            Iterator=basebmp::PackedPixelIterator<sal_uInt8,1,true>,
+            Acc=basebmp::UnaryFunctionAccessorAdapter<basebmp::BinarySetterFunctionAccessorAdapter<basebmp::NonStandardAccessor<sal_uInt8>,basebmp::XorFunctor<unsigned char>>,basebmp::GreylevelGetter<unsigned char,basebmp::Color,1>,basebmp::GreylevelSetter<unsigned char,basebmp::Color,1>>
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const unsigned short &)'
+        with
+        [
+            PIXELTYPE=unsigned short
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=unsigned short
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,T1,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::PixelIterator<unsigned short>,
+            T3=basebmp::StandardAccessor<unsigned short>,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned short>,
+            SetterFunctor=basebmp::XorFunctor<unsigned short>,
+            SourceIter=basebmp::PixelIterator<unsigned short>,
+            SourceAcc=basebmp::StandardAccessor<unsigned short>,
+            DestIter=basebmp::PixelIterator<unsigned short>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned short>,basebmp::XorFunctor<unsigned short>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(645) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::PixelIterator<Valuetype>,basebmp::StandardAccessor<ValueType>,Iterator,RawAcc>(const vigra::triple<T1,T2,T3> &,const vigra::triple<T1,T2,RawAcc> &,bool)' being compiled
+        with
+        [
+            Valuetype=unsigned short,
+            ValueType=unsigned short,
+            Iterator=basebmp::PixelIterator<unsigned short>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned short>,basebmp::XorFunctor<unsigned short>>,
+            T1=basebmp::PixelIterator<unsigned short>,
+            T2=basebmp::PixelIterator<unsigned short>,
+            T3=basebmp::StandardAccessor<unsigned short>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(676) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawBitmap<basebmp::PixelIterator<Valuetype>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const RawAcc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned short>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned short,basebmp::Color,63488,2016,31,false>,basebmp::RGBMaskSetter<unsigned short,basebmp::Color,63488,2016,31,false>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=unsigned short,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned short>,
+            SetterFunctor=basebmp::XorFunctor<unsigned short>,
+            Iterator=basebmp::PixelIterator<unsigned short>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned short>,basebmp::XorFunctor<unsigned short>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(670) : while compiling class template member function 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::drawBitmap_i(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,basebmp::DrawMode)'
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned short>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned short,basebmp::Color,63488,2016,31,false>,basebmp::RGBMaskSetter<unsigned short,basebmp::Color,63488,2016,31,false>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1674) : see reference to class template instantiation 'basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned short>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned short,basebmp::Color,63488,2016,31,false>,basebmp::RGBMaskSetter<unsigned short,basebmp::Color,63488,2016,31,false>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1728) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<FormatTraits,MaskTraits>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,const basebmp::StandardAccessor<ValueType> &,const basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor> &,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            FormatTraits=basebmp::PixelFormatTraits_RGB16_565_LSB,
+            MaskTraits=basebmp::StdMasks,
+            ValueType=unsigned short,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned short>,
+            GetterFunctor=basebmp::RGBMaskGetter<unsigned short,basebmp::Color,63488,2016,31,false>,
+            SetterFunctor=basebmp::RGBMaskSetter<unsigned short,basebmp::Color,63488,2016,31,false>,
+            T=sal_uInt8
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1928) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<basebmp::PixelFormatTraits_RGB16_565_LSB,basebmp::StdMasks>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            T=sal_uInt8
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const vigra::RGBValue<VALUETYPE,RED_IDX,GREEN_IDX,BLUE_IDX> &)'
+        with
+        [
+            PIXELTYPE=vigra::RGBValue<sal_uInt8,2,1,0>,
+            VALUETYPE=sal_uInt8,
+            RED_IDX=2,
+            GREEN_IDX=1,
+            BLUE_IDX=0
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=vigra::RGBValue<sal_uInt8,2,1,0>
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,T1,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            T3=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            WrappedAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            SetterFunctor=basebmp::XorFunctor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            SourceIter=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            SourceAcc=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            DestIter=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,basebmp::XorFunctor<vigra::RGBValue<sal_uInt8,2,1,0>>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(645) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::PixelIterator<Valuetype>,basebmp::StandardAccessor<ValueType>,Iterator,RawAcc>(const vigra::triple<T1,T2,T3> &,const vigra::triple<T1,T2,RawAcc> &,bool)' being compiled
+        with
+        [
+            Valuetype=vigra::RGBValue<sal_uInt8,2,1,0>,
+            ValueType=vigra::RGBValue<sal_uInt8,2,1,0>,
+            Iterator=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,basebmp::XorFunctor<vigra::RGBValue<sal_uInt8,2,1,0>>>,
+            T1=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            T2=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            T3=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(676) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawBitmap<basebmp::PixelIterator<Valuetype>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const RawAcc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBValueGetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>,basebmp::RGBValueSetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=vigra::RGBValue<sal_uInt8,2,1,0>,
+            WrappedAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            SetterFunctor=basebmp::XorFunctor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            Iterator=basebmp::PixelIterator<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,basebmp::XorFunctor<vigra::RGBValue<sal_uInt8,2,1,0>>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(670) : while compiling class template member function 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::drawBitmap_i(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,basebmp::DrawMode)'
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBValueGetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>,basebmp::RGBValueSetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1674) : see reference to class template instantiation 'basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBValueGetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>,basebmp::RGBValueSetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1728) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<FormatTraits,MaskTraits>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,const basebmp::StandardAccessor<ValueType> &,const basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor> &,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            FormatTraits=basebmp::PixelFormatTraits_BGR24,
+            MaskTraits=basebmp::StdMasks,
+            ValueType=vigra::RGBValue<sal_uInt8,2,1,0>,
+            WrappedAccessor=basebmp::StandardAccessor<vigra::RGBValue<sal_uInt8,2,1,0>>,
+            GetterFunctor=basebmp::RGBValueGetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>,
+            SetterFunctor=basebmp::RGBValueSetter<vigra::RGBValue<sal_uInt8,2,1,0>,basebmp::Color>,
+            T=sal_uInt8
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1941) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<basebmp::PixelFormatTraits_BGR24,basebmp::StdMasks>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            T=sal_uInt8
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1116) : warning C4996: 'std::uninitialized_fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\memory(369) : see declaration of 'std::uninitialized_fill_n'
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1102) : while compiling class template member function 'void vigra::BasicImage<PIXELTYPE>::resize(int,int,const unsigned long &)'
+        with
+        [
+            PIXELTYPE=unsigned long
+        ]
+        ../inc\basebmp/scaleimage.hxx(143) : see reference to class template instantiation 'vigra::BasicImage<PIXELTYPE>' being compiled
+        with
+        [
+            PIXELTYPE=unsigned long
+        ]
+        ../inc\basebmp/scaleimage.hxx(186) : see reference to function template instantiation 'void basebmp::scaleImage<T1,T3,T1,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(SourceIter,SourceIter,SourceAcc,DestIter,DestIter,DestAcc,bool)' being compiled
+        with
+        [
+            T1=basebmp::PixelIterator<unsigned long>,
+            T3=basebmp::StandardAccessor<unsigned long>,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned long>,
+            SetterFunctor=basebmp::XorFunctor<unsigned long>,
+            SourceIter=basebmp::PixelIterator<unsigned long>,
+            SourceAcc=basebmp::StandardAccessor<unsigned long>,
+            DestIter=basebmp::PixelIterator<unsigned long>,
+            DestAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned long>,basebmp::XorFunctor<unsigned long>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(645) : see reference to function template instantiation 'void basebmp::scaleImage<basebmp::PixelIterator<Valuetype>,basebmp::StandardAccessor<ValueType>,Iterator,RawAcc>(const vigra::triple<T1,T2,T3> &,const vigra::triple<T1,T2,RawAcc> &,bool)' being compiled
+        with
+        [
+            Valuetype=unsigned long,
+            ValueType=unsigned long,
+            Iterator=basebmp::PixelIterator<unsigned long>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned long>,basebmp::XorFunctor<unsigned long>>,
+            T1=basebmp::PixelIterator<unsigned long>,
+            T2=basebmp::PixelIterator<unsigned long>,
+            T3=basebmp::StandardAccessor<unsigned long>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(676) : see reference to function template instantiation 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::implDrawBitmap<basebmp::PixelIterator<Valuetype>,basebmp::BinarySetterFunctionAccessorAdapter<WrappedAccessor,SetterFunctor>>(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,const Iterator &,const RawAcc &)' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned long>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned long,basebmp::Color,16711680,65280,255,false>,basebmp::RGBMaskSetter<unsigned long,basebmp::Color,16711680,65280,255,false>>,
+            Masks=basebmp::StdMasks,
+            Valuetype=unsigned long,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned long>,
+            SetterFunctor=basebmp::XorFunctor<unsigned long>,
+            Iterator=basebmp::PixelIterator<unsigned long>,
+            RawAcc=basebmp::BinarySetterFunctionAccessorAdapter<basebmp::StandardAccessor<unsigned long>,basebmp::XorFunctor<unsigned long>>
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(670) : while compiling class template member function 'void basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>::drawBitmap_i(const basebmp::BitmapDeviceSharedPtr &,const basegfx::B2IRange &,const basegfx::B2IRange &,basebmp::DrawMode)'
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned long>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned long,basebmp::Color,16711680,65280,255,false>,basebmp::RGBMaskSetter<unsigned long,basebmp::Color,16711680,65280,255,false>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1674) : see reference to class template instantiation 'basebmp::`anonymous-namespace'::BitmapRenderer<DestIterator,RawAccessor,AccessorSelector,Masks>' being compiled
+        with
+        [
+            DestIterator=Iterator,
+            RawAccessor=basebmp::StandardAccessor<unsigned long>,
+            AccessorSelector=basebmp::AccessorSelector<basebmp::RGBMaskGetter<unsigned long,basebmp::Color,16711680,65280,255,false>,basebmp::RGBMaskSetter<unsigned long,basebmp::Color,16711680,65280,255,false>>,
+            Masks=basebmp::StdMasks
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1728) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<FormatTraits,MaskTraits>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,const basebmp::StandardAccessor<ValueType> &,const basebmp::UnaryFunctionAccessorAdapter<WrappedAccessor,GetterFunctor,SetterFunctor> &,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            FormatTraits=basebmp::PixelFormatTraits_RGB32_888,
+            MaskTraits=basebmp::StdMasks,
+            ValueType=unsigned long,
+            WrappedAccessor=basebmp::StandardAccessor<unsigned long>,
+            GetterFunctor=basebmp::RGBMaskGetter<unsigned long,basebmp::Color,16711680,65280,255,false>,
+            SetterFunctor=basebmp::RGBMaskSetter<unsigned long,basebmp::Color,16711680,65280,255,false>,
+            T=sal_uInt8
+        ]
+        C:/steve/testarea/main/basebmp/source/bitmapdevice.cxx(1950) : see reference to function template instantiation 'basebmp::BitmapDeviceSharedPtr basebmp::createRenderer<basebmp::PixelFormatTraits_RGB32_888,basebmp::StdMasks>(const basegfx::B2IRange &,sal_Int32,sal_Int32,sal_uInt8 *,boost::shared_array<T>,const basebmp::PaletteMemorySharedVector &)' being compiled
+        with
+        [
+            T=sal_uInt8
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1123) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vigra/basicimage.hxx(1140) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkJynfFC > ..//wntmsci12.pro/misc/s_bitmapdevice.dpcc
+Compiling: basebmp/source/debug.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I..//wntmsci12.pro/inc/wrapper -I../inc -I..//inc/pch -I..//inc -I..//WIN/inc -I..//wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I..//res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo..//wntmsci12.pro/slo/debug.obj C:/steve/testarea/main/basebmp/source/debug.cxx 
+debug.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGrSBQI > ..//wntmsci12.pro/misc/s_debug.dpcc
+Compiling: basebmp/source/polypolygonrenderer.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I..//wntmsci12.pro/inc/wrapper -I../inc -I..//inc/pch -I..//inc -I..//WIN/inc -I..//wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I..//res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo..//wntmsci12.pro/slo/polypolygonrenderer.obj C:/steve/testarea/main/basebmp/source/polypolygonrenderer.cxx 
+polypolygonrenderer.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkbTBv3S > ..//wntmsci12.pro/misc/s_polypolygonrenderer.dpcc
+Making:    wrapper.lib
+lib   /OUT:../wntmsci12.pro/slb/wrapper.lib @C:/cygwin/tmp/mkZxziJA
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slo/bitmapdevice.obj 
+../wntmsci12.pro/slo/debug.obj 
+../wntmsci12.pro/slo/polypolygonrenderer.obj 
+Making:    all_wrapper.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/basebmp/util
+
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/basebmp_version.h/ > ../wntmsci12.pro/misc/basebmp_version.c
+Compiling: basebmp/wntmsci12.pro/misc/basebmp_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/basebmp -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/basebmp_version.obj ../wntmsci12.pro/misc/basebmp_version.c
+basebmp_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkuVoiTo > ../wntmsci12.pro/misc/s_basebmp_version.dpcc
+------------------------------
+using: ../wntmsci12.pro/slb/wrapper.lib
+using: ../wntmsci12.pro/slb/basebmp.lib
+------------------------------
+Making:    basebmp.lib
+lib   /OUT:../wntmsci12.pro/slb/basebmp.lib @C:/cygwin/tmp/mkD8aTrv
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slb/wrapper.lib 
+
+Making:    module definition file basebmp.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/basebmp.exp
+Making:    ibasebmp.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkzzi0LY
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/ibasebmp.lib -def:../wntmsci12.pro/misc/basebmp.def 
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall boost::exception_detail::clone_impl<struct boost::exception_detail::error_info_injector<class boost::bad_weak_ptr> >::`vector deleting destructor'`adjustor{32}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall boost::exception_detail::clone_impl<struct boost::exception_detail::error_info_injector<class boost::bad_weak_ptr> >::`vector deleting destructor'`adjustor{12}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall boost::exception_detail::error_info_injector<class boost::bad_weak_ptr>::`vector deleting destructor'`adjustor{12}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::exception_detail::clone_impl<struct boost::exception_detail::error_info_injector<class boost::bad_weak_ptr> >::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::exception_detail::error_info_injector<class boost::bad_weak_ptr>::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::detail::sp_counted_impl_p<class std::vector<class basebmp::Color,class std::allocator<class basebmp::Color> > >::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::detail::sp_counted_impl_pd<unsigned char *,void (__cdecl*)(void *)>::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::detail::sp_counted_impl_pd<unsigned char *,struct boost::checked_array_deleter<unsigned char> >::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall std::vector<struct basebmp::detail::Vertex,class std::allocator<struct basebmp::detail::Vertex> >::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall std::vector<class basebmp::Color,class std::allocator<class basebmp::Color> >::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall basebmp::BitmapDevice::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vigra::ContractViolation::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vigra::PreconditionViolation::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::bad_alloc::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::bad_weak_ptr::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::exception_detail::clone_base::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::length_error::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::logic_error::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::out_of_range::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/basebmp.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall boost::detail::sp_counted_base::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+   Creating library ../wntmsci12.pro/lib/ibasebmp.lib and object ../wntmsci12.pro/lib/ibasebmp.exp
+Making:    basebmp.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/basebmp -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/basebmp_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/basebmp_def.res > ../wntmsci12.pro/misc/basebmp.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkqa5xHD
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/basebmp.dll -map:../wntmsci12.pro/misc/basebmp.map ../wntmsci12.pro/lib/ibasebmp.exp ../wntmsci12.pro/slo/basebmp_version.obj ../wntmsci12.pro/slb/basebmp.lib isal.lib ibasegfx.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/basebmp.res 
+linking ../wntmsci12.pro/bin/basebmp.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/basebmp.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/basebmp.dll.manifest -outputresource:../wntmsci12.pro/bin/basebmp.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/basebmp.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/basebmp.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/basebmp.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/basebmp.dll.tmanifest ; fi
+
+Entering /cygdrive/c/steve/testarea/main/basebmp/test
+
+cppunit disabled. nothing do do.
+basebmp deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/build.lst
+COPY: ../wntmsci12.pro/lib/ibasebmp.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ibasebmp.lib
+COPY: ../wntmsci12.pro/bin/basebmp.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/basebmp.dll
+COPY: ../inc/basebmp/accessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/accessor.hxx
+COPY: ../inc/basebmp/accessoradapters.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/accessoradapters.hxx
+COPY: ../inc/basebmp/accessorfunctors.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/accessorfunctors.hxx
+COPY: ../inc/basebmp/accessortraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/accessortraits.hxx
+COPY: ../inc/basebmp/bitmapdevice.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/bitmapdevice.hxx
+COPY: ../inc/basebmp/clippedlinerenderer.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/clippedlinerenderer.hxx
+COPY: ../inc/basebmp/color.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/color.hxx
+COPY: ../inc/basebmp/colorblendaccessoradapter.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/colorblendaccessoradapter.hxx
+COPY: ../inc/basebmp/colormisc.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/colormisc.hxx
+COPY: ../inc/basebmp/colortraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/colortraits.hxx
+COPY: ../inc/basebmp/compositeiterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/compositeiterator.hxx
+COPY: ../inc/basebmp/debug.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/debug.hxx
+COPY: ../inc/basebmp/drawmodes.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/drawmodes.hxx
+COPY: ../inc/basebmp/endian.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/endian.hxx
+COPY: ../inc/basebmp/fillimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/fillimage.hxx
+COPY: ../inc/basebmp/genericcolorimageaccessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/genericcolorimageaccessor.hxx
+COPY: ../inc/basebmp/greylevelformats.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/greylevelformats.hxx
+COPY: ../inc/basebmp/iteratortraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/iteratortraits.hxx
+COPY: ../inc/basebmp/linerenderer.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/linerenderer.hxx
+COPY: ../inc/basebmp/metafunctions.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/metafunctions.hxx
+COPY: ../inc/basebmp/nonstandarditerator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/nonstandarditerator.hxx
+COPY: ../inc/basebmp/packedpixeliterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/packedpixeliterator.hxx
+COPY: ../inc/basebmp/paletteformats.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/paletteformats.hxx
+COPY: ../inc/basebmp/paletteimageaccessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/paletteimageaccessor.hxx
+COPY: ../inc/basebmp/pixelformatadapters.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/pixelformatadapters.hxx
+COPY: ../inc/basebmp/pixeliterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/pixeliterator.hxx
+COPY: ../inc/basebmp/polypolygonrenderer.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/polypolygonrenderer.hxx
+COPY: ../inc/basebmp/rgb24pixelformats.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/rgb24pixelformats.hxx
+COPY: ../inc/basebmp/rgbmaskpixelformats.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/rgbmaskpixelformats.hxx
+COPY: ../inc/basebmp/scaleimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/scaleimage.hxx
+COPY: ../inc/basebmp/scanlineformats.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/scanlineformats.hxx
+COPY: ../inc/basebmp/stridedarrayiterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/stridedarrayiterator.hxx
+COPY: ../inc/basebmp/tools.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/tools.hxx
+COPY: ../inc/basebmp/truecolormaskaccessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/truecolormaskaccessor.hxx
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basebmp/deliver.log
+Module 'basebmp' delivered successfully. 37 files copied, 0 files unchanged
+
+=============

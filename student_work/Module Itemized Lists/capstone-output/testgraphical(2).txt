@@ -1,0 +1,37 @@
+Name:
+testgraphical
+
+Dependencies:
+instsetoo_native qadevOOo NULL
+
+Build Rules:
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+prechecks\makefile.mk
+	PRJNAME=gfxcmp_prechecks
+	TARGET=notargetyet
+
+qa\graphical\makefile.mk
+	PRJNAME=testgraphical
+	TARGET=qa_graphical
+
+source\makefile.mk
+	PRJNAME=gfxcmp
+	TARGET=notargetyet
+
+ui\java\makefile.mk
+	PRJNAME=gfxcmp_ui_java
+	TARGET=notargetyet
+
+ui\java\ConvwatchGUIProject\makefile.mk
+	PRJNAME=gfxcmp_ui_java_convwatchgui
+	TARGET=notargetyet
+
+util\makefile.pmk

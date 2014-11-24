@@ -1,0 +1,727 @@
+Name:
+desktop
+
+Dependencies:
+L10N:l10n sfx2 stoc sysui SO:sysui_so BOOST:boost svx xmlhelp sal unoil officecfg offuh filter LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\bin%_EXT%\so
+mkdir: %_DEST%\bin%_EXT%\c01
+mkdir: %_DEST%\bin%_EXT%\c05
+mkdir: %_DEST%\bin%_EXT%\c08
+mkdir: %_DEST%\bin%_EXT%\odf4ms
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\soffice.bin %_DEST%\bin%_EXT%\soffice.bin
+..\%__SRC%\bin\officeloader.exe %_DEST%\bin%_EXT%\soffice.exe
+..\%__SRC%\bin\soffice %_DEST%\bin%_EXT%\soffice.bin
+..\%__SRC%\bin\soffice_mac %_DEST%\bin%_EXT%\soffice
+..\%__SRC%\bin\so\soffice.bin %_DEST%\bin%_EXT%\so\soffice.bin
+..\%__SRC%\bin\so\officeloader.exe %_DEST%\bin%_EXT%\so\soffice.exe
+..\%__SRC%\bin\so\soffice %_DEST%\bin%_EXT%\so\soffice.bin
+..\%__SRC%\bin\so\soffice_mac %_DEST%\bin%_EXT%\so\soffice
+..\%__SRC%\bin\sofficea*.dll %_DEST%\bin%_EXT%\sofficea*.dll
+..\%__SRC%\lib\isofficeapp.lib %_DEST%\lib%_EXT%\isofficeapp.lib
+..\%__SRC%\lib\libsofficeapp.dylib %_DEST%\lib%_EXT%\libsofficeapp.dylib
+..\%__SRC%\lib\libsofficeapp.so %_DEST%\lib%_EXT%\libsofficeapp.so
+
+..\%__SRC%\bin\soffice_oo.exe %_DEST%\bin%_EXT%\soffice_oo.exe
+..\%__SRC%\bin\soffice_oo %_DEST%\bin%_EXT%\soffice_oo.bin
+..\%__SRC%\bin\so\soffice_so.exe %_DEST%\bin%_EXT%\so\soffice_so.exe
+..\%__SRC%\bin\so\soffice_so %_DEST%\bin%_EXT%\so\soffice_so.bin
+
+..\%__SRC%\bin\scalc.exe %_DEST%\bin%_EXT%\scalc.exe
+..\%__SRC%\bin\sdraw.exe %_DEST%\bin%_EXT%\sdraw.exe
+..\%__SRC%\bin\simpress.exe %_DEST%\bin%_EXT%\simpress.exe
+..\%__SRC%\bin\smath.exe %_DEST%\bin%_EXT%\smath.exe
+..\%__SRC%\bin\swriter.exe %_DEST%\bin%_EXT%\swriter.exe
+..\%__SRC%\bin\sbase.exe %_DEST%\bin%_EXT%\sbase.exe
+..\%__SRC%\bin\sweb.exe %_DEST%\bin%_EXT%\sweb.exe
+..\%__SRC%\bin\os2quickstart.exe %_DEST%\bin%_EXT%\quickstart.exe
+..\%__SRC%\bin\so\scalc.exe %_DEST%\bin%_EXT%\so\scalc.exe
+..\%__SRC%\bin\so\sdraw.exe %_DEST%\bin%_EXT%\so\sdraw.exe
+..\%__SRC%\bin\so\simpress.exe %_DEST%\bin%_EXT%\so\simpress.exe
+..\%__SRC%\bin\so\smath.exe %_DEST%\bin%_EXT%\so\smath.exe
+..\%__SRC%\bin\so\swriter.exe %_DEST%\bin%_EXT%\so\swriter.exe
+..\%__SRC%\bin\so\sbase.exe %_DEST%\bin%_EXT%\so\sbase.exe
+..\%__SRC%\bin\so\sweb.exe %_DEST%\bin%_EXT%\so\sweb.exe
+
+..\%__SRC%\bin\quickstart.exe %_DEST%\bin%_EXT%\quickstart.exe
+..\%__SRC%\bin\quickstart.exe %_DEST%\bin%_EXT%\install_quickstart.exe
+..\%__SRC%\bin\soquickstart.exe %_DEST%\bin%_EXT%\so\quickstart.exe
+..\%__SRC%\bin\soquickstart.exe %_DEST%\bin%_EXT%\so\install_quickstart.exe
+
+..\%__SRC%\misc\soffice.exe.manifest %_DEST%\bin%_EXT%\soffice.exe.manifest
+..\%__SRC%\misc\soffice.bin.manifest %_DEST%\bin%_EXT%\soffice.bin.manifest
+..\%__SRC%\bin\wrp*.dll %_DEST%\bin%_EXT%\wrp*.dll
+..\%__SRC%\bin\spl*.dll %_DEST%\bin%_EXT%\spl*.dll
+..\%__SRC%\bin\socomp.dll %_DEST%\bin%_EXT%\socomp.dll
+..\%__SRC%\obj\officeloader.obj %_DEST%\lib%_EXT%\officeloader.obj
+..\%__SRC%\obj\extendloaderenvironment.obj %_DEST%\lib%_EXT%\extendloaderenvironment.obj
+..\%__SRC%\obj\copyright_ascii_sun.obj %_DEST%\lib%_EXT%\copyright_ascii_sun.obj
+..\%__SRC%\obj\main.obj %_DEST%\lib%_EXT%\main.obj
+..\%__SRC%\lib\libwrp*.so %_DEST%\lib%_EXT%\libwrp*.so
+..\%__SRC%\lib\libwrp*.dylib %_DEST%\lib%_EXT%\libwrp*.dylib
+..\%__SRC%\lib\libspl*.so %_DEST%\lib%_EXT%\libspl*.so
+..\%__SRC%\lib\libspl*.dylib %_DEST%\lib%_EXT%\libspl*.dylib
+..\%__SRC%\lib\libsocomp.so %_DEST%\lib%_EXT%\libsocomp.so
+..\%__SRC%\lib\libsocomp.dylib %_DEST%\lib%_EXT%\libsocomp.dylib
+..\%__SRC%\bin\offacc*.dll %_DEST%\bin%_EXT%\offacc*.dll
+..\%__SRC%\lib\liboffacc*.so %_DEST%\lib%_EXT%\liboffacc*.so
+..\%__SRC%\lib\liboffacc*.dylib %_DEST%\lib%_EXT%\liboffacc*.dylib
+..\%__SRC%\bin\migr*.dll %_DEST%\bin%_EXT%\migr*.dll
+..\%__SRC%\lib\migratio*.uno.so %_DEST%\lib%_EXT%\migratio*.uno.so
+..\%__SRC%\lib\migratio*.uno.dylib %_DEST%\lib%_EXT%\migratio*.uno.dylib
+
+..\%__SRC%\bin\sweb %_DEST%\bin%_EXT%\sweb.bin
+
+..\%__SRC%\bin\loader2.ex? %_DEST%\bin%_EXT%\loader2.ex?
+
+..\%__SRC%\bin\depl*.dll %_DEST%\bin%_EXT%\depl*.dll
+..\%__SRC%\lib\deployment*.uno.so %_DEST%\lib%_EXT%\deployment*.uno.so
+..\%__SRC%\lib\deployment*.uno.dylib %_DEST%\lib%_EXT%\deployment*.uno.dylib
+..\%__SRC%\bin\deploymentgui*.dll %_DEST%\bin%_EXT%\deploymentgui*.dll
+..\%__SRC%\lib\libdeploymentgui*.uno.so %_DEST%\lib%_EXT%\libdeploymentgui*.uno.so
+..\%__SRC%\lib\libdeploymentgui*.uno.dylib %_DEST%\lib%_EXT%\libdeploymentgui*.uno.dylib
+..\%__SRC%\bin\deploymentmisc*.dll %_DEST%\bin%_EXT%\deploymentmisc*.dll
+..\%__SRC%\lib\libdeploymentmisc*.so %_DEST%\lib%_EXT%\libdeploymentmisc*.so
+..\%__SRC%\lib\libdeploymentmisc*.dylib %_DEST%\lib%_EXT%\libdeploymentmisc*.dylib
+..\%__SRC%\bin\guiloader.exe %_DEST%\bin%_EXT%\unopkg.exe
+..\%__SRC%\bin\so\guiloader.exe %_DEST%\bin%_EXT%\so\unopkg.exe
+..\%__SRC%\bin\unopkg %_DEST%\bin%_EXT%\unopkg.bin
+..\%__SRC%\bin\so\unopkg %_DEST%\bin%_EXT%\so\unopkg.bin
+..\%__SRC%\bin\unopkg.exe %_DEST%\bin%_EXT%\unopkg.bin
+..\%__SRC%\bin\so\unopkg.exe %_DEST%\bin%_EXT%\so\unopkg.bin
+..\%__SRC%\misc\unopkg.sh %_DEST%\bin%_EXT%\unopkg
+..\%__SRC%\bin\unopkga*.dll %_DEST%\bin%_EXT%\unopkga*.dll
+..\%__SRC%\lib\libunopkgapp.dylib %_DEST%\lib%_EXT%\libunopkgapp.dylib
+..\%__SRC%\lib\libunopkgapp.so %_DEST%\lib%_EXT%\libunopkgapp.so
+..\%__SRC%\bin\rebasegui.exe %_DEST%\bin%_EXT%\rebasegui.exe
+..\%__SRC%\bin\rebaseoo.exe %_DEST%\bin%_EXT%\rebaseoo.exe
+
+..\%__SRC%\bin\pagein %_DEST%\bin%_EXT%\pagein
+..\%__SRC%\misc\pagein-* %_DEST%\bin%_EXT%\pagein-*
+
+..\%__SRC%\bin\unoinfo.exe %_DEST%\bin%_EXT%\unoinfo.exe
+..\%__SRC%\misc\unoinfo.sh %_DEST%\bin%_EXT%\unoinfo
+
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+..\%__SRC%\misc\soffice.sh-expanded %_DEST%\bin%_EXT%\soffice
+..\%__SRC%\misc\sbase.sh %_DEST%\bin%_EXT%\sbase
+..\%__SRC%\misc\scalc.sh %_DEST%\bin%_EXT%\scalc
+..\%__SRC%\misc\sdraw.sh %_DEST%\bin%_EXT%\sdraw
+..\%__SRC%\misc\simpress.sh %_DEST%\bin%_EXT%\simpress
+..\%__SRC%\misc\smaster.sh %_DEST%\bin%_EXT%\smaster
+..\%__SRC%\misc\smath.sh %_DEST%\bin%_EXT%\smath
+..\%__SRC%\misc\sweb.sh %_DEST%\bin%_EXT%\sweb
+..\%__SRC%\misc\swriter.sh %_DEST%\bin%_EXT%\swriter
+..\%__SRC%\misc\nswrapper.sh %_DEST%\bin%_EXT%\nswrapper
+..\%__SRC%\misc\mozwrapper.sh %_DEST%\bin%_EXT%\mozwrapper
+
+mkdir: %COMMON_DEST%\pck%_EXT%\openoffice_dev
+mkdir: %COMMON_DEST%\pck%_EXT%\openoffice_dev_nologo
+mkdir: %COMMON_DEST%\pck%_EXT%\openoffice_nologo
+..\%__SRC%\bin\intro\intro.zip %COMMON_DEST%\pck%_EXT%\intro.zip
+..\%__SRC%\bin\dev\intro.zip %COMMON_DEST%\pck%_EXT%\openoffice_dev\intro.zip
+..\%__SRC%\bin\dev_nologo\intro.zip %COMMON_DEST%\pck%_EXT%\openoffice_dev_nologo\intro.zip
+..\%__SRC%\bin\nologo\intro.zip %COMMON_DEST%\pck%_EXT%\openoffice_nologo\intro.zip
+
+..\%__SRC%\bin\guiloader.exe %_DEST%\bin%_EXT%\testtool.exe
+
+..\%__SRC%\bin\guistdio.exe %_DEST%\bin%_EXT%\guistdio.com
+..\%__SRC%\bin\guistdio.exe %_DEST%\bin%_EXT%\crashrep.com
+..\%__SRC%\bin\unopkgio.exe %_DEST%\bin%_EXT%\unopkg.com
+
+..\scripts\ure-link %_DEST%\bin%_EXT%\ure-link
+..\scripts\basis-link %_DEST%\bin%_EXT%\basis-link
+..\scripts\basis-link %_DEST%\bin%_EXT%\c01\basis-link
+..\scripts\basis-link %_DEST%\bin%_EXT%\c05\basis-link
+..\scripts\basis-link %_DEST%\bin%_EXT%\c08\basis-link
+..\scripts\so-basis-link %_DEST%\bin%_EXT%\so\basis-link
+..\scripts\odf-basis-link %_DEST%\bin%_EXT%\odf4ms\basis-link
+
+mkdir: %_DEST%\xml%_EXT%\registry\spool
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\Jobs\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+..\%__SRC%\misc\deployment.component %_DEST%\xml%_EXT%\deployment.component
+..\%__SRC%\misc\deploymentgui.component %_DEST%\xml%_EXT%\deploymentgui.component
+..\%__SRC%\misc\migrationoo2.component %_DEST%\xml%_EXT%\migrationoo2.component
+..\%__SRC%\misc\offacc.component %_DEST%\xml%_EXT%\offacc.component
+..\%__SRC%\misc\socomp.component %_DEST%\xml%_EXT%\socomp.component
+..\%__SRC%\misc\spl.component %_DEST%\xml%_EXT%\spl.component
+
+Source Files:
+inc\pch\precompiled_desktop.cxx
+os2\source\applauncher\launcher.cxx
+os2\source\applauncher\officeloader.cxx
+os2\source\applauncher\os2quickstart.cxx
+os2\source\applauncher\sbase.cxx
+os2\source\applauncher\scalc.cxx
+os2\source\applauncher\sdraw.cxx
+os2\source\applauncher\simpress.cxx
+os2\source\applauncher\smath.cxx
+os2\source\applauncher\swriter.cxx
+qa\deployment_misc\test_dp_version.cxx
+source\app\app.cxx
+source\app\appfirststart.cxx
+source\app\appinit.cxx
+source\app\appsys.cxx
+source\app\checkinstall.cxx
+source\app\check_ext_deps.cxx
+source\app\cmdlineargs.cxx
+source\app\cmdlinehelp.cxx
+source\app\configinit.cxx
+source\app\copyright_ascii_ooo.c
+source\app\copyright_ascii_sun.c
+source\app\desktopcontext.cxx
+source\app\desktopresid.cxx
+source\app\dispatchwatcher.cxx
+source\app\langselect.cxx
+source\app\lockfile.cxx
+source\app\lockfile2.cxx
+source\app\main.c
+source\app\officeipcthread.cxx
+source\app\sofficemain.cxx
+source\app\userinstall.cxx
+source\deployment\dp_log.cxx
+source\deployment\dp_persmap.cxx
+source\deployment\dp_services.cxx
+source\deployment\dp_xml.cxx
+source\deployment\gui\descedit.cxx
+source\deployment\gui\dp_gui_autoscrolledit.cxx
+source\deployment\gui\dp_gui_dependencydialog.cxx
+source\deployment\gui\dp_gui_dialog2.cxx
+source\deployment\gui\dp_gui_extensioncmdqueue.cxx
+source\deployment\gui\dp_gui_extlistbox.cxx
+source\deployment\gui\dp_gui_handleversionexception.cxx
+source\deployment\gui\dp_gui_service.cxx
+source\deployment\gui\dp_gui_system.cxx
+source\deployment\gui\dp_gui_theextmgr.cxx
+source\deployment\gui\dp_gui_thread.cxx
+source\deployment\gui\dp_gui_updatedialog.cxx
+source\deployment\gui\dp_gui_updateinstalldialog.cxx
+source\deployment\gui\license_dialog.cxx
+source\deployment\manager\dp_activepackages.cxx
+source\deployment\manager\dp_commandenvironments.cxx
+source\deployment\manager\dp_extensionmanager.cxx
+source\deployment\manager\dp_informationprovider.cxx
+source\deployment\manager\dp_manager.cxx
+source\deployment\manager\dp_managerfac.cxx
+source\deployment\manager\dp_properties.cxx
+source\deployment\misc\dp_dependencies.cxx
+source\deployment\misc\dp_descriptioninfoset.cxx
+source\deployment\misc\dp_identifier.cxx
+source\deployment\misc\dp_interact.cxx
+source\deployment\misc\dp_misc.cxx
+source\deployment\misc\dp_platform.cxx
+source\deployment\misc\dp_resource.cxx
+source\deployment\misc\dp_ucb.cxx
+source\deployment\misc\dp_update.cxx
+source\deployment\misc\dp_version.cxx
+source\deployment\registry\dp_backend.cxx
+source\deployment\registry\dp_backenddb.cxx
+source\deployment\registry\dp_registry.cxx
+source\deployment\registry\component\dp_compbackenddb.cxx
+source\deployment\registry\component\dp_component.cxx
+source\deployment\registry\configuration\dp_configuration.cxx
+source\deployment\registry\configuration\dp_configurationbackenddb.cxx
+source\deployment\registry\executable\dp_executable.cxx
+source\deployment\registry\executable\dp_executablebackenddb.cxx
+source\deployment\registry\help\dp_help.cxx
+source\deployment\registry\help\dp_helpbackenddb.cxx
+source\deployment\registry\package\dp_extbackenddb.cxx
+source\deployment\registry\package\dp_package.cxx
+source\deployment\registry\script\dp_lib_container.cxx
+source\deployment\registry\script\dp_script.cxx
+source\deployment\registry\script\dp_scriptbackenddb.cxx
+source\deployment\registry\sfwk\dp_parceldesc.cxx
+source\deployment\registry\sfwk\dp_sfwk.cxx
+source\migration\cfgfilter.cxx
+source\migration\migration.cxx
+source\migration\pages.cxx
+source\migration\wizard.cxx
+source\migration\services\autocorrmigration.cxx
+source\migration\services\basicmigration.cxx
+source\migration\services\cexports.cxx
+source\migration\services\cexportsoo3.cxx
+source\migration\services\jvmfwk.cxx
+source\migration\services\oo3extensionmigration.cxx
+source\migration\services\wordbookmigration.cxx
+source\offacc\acceptor.cxx
+source\pagein\file_image_unx.c
+source\pagein\pagein.c
+source\pkgchk\unopkg\unopkg_app.cxx
+source\pkgchk\unopkg\unopkg_cmdenv.cxx
+source\pkgchk\unopkg\unopkg_main.c
+source\pkgchk\unopkg\unopkg_misc.cxx
+source\so_comp\evaluation.cxx
+source\so_comp\oemjob.cxx
+source\so_comp\services.cxx
+source\splash\firststart.cxx
+source\splash\services_spl.cxx
+source\splash\splash.cxx
+test\deployment\active\active_native.cxx
+test\deployment\boxt\boxt.cxx
+test\deployment\executable_content\build\hello.c
+test\deployment\passive\passive_native.cxx
+unx\source\officeloader\officeloader.cxx
+win32\source\extendloaderenvironment.cxx
+win32\source\lwrapa.cxx
+win32\source\lwrapw.cxx
+win32\source\rwrapa.cxx
+win32\source\rwrapw.cxx
+win32\source\sowrapper.cxx
+win32\source\unoinfo.cxx
+win32\source\wrappera.cxx
+win32\source\wrapperw.cxx
+win32\source\applauncher\launcher.cxx
+win32\source\applauncher\sbase.cxx
+win32\source\applauncher\scalc.cxx
+win32\source\applauncher\sdraw.cxx
+win32\source\applauncher\simpress.cxx
+win32\source\applauncher\smath.cxx
+win32\source\applauncher\sweb.cxx
+win32\source\applauncher\swriter.cxx
+win32\source\guiloader\genericloader.cxx
+win32\source\guistdio\guistdio.cxx
+win32\source\guistdio\unopkgio.cxx
+win32\source\officeloader\officeloader.cxx
+win32\source\rebase\rebase.cxx
+win32\source\rebase\rebasegui.cxx
+win32\source\setup\setup_a.cxx
+win32\source\setup\setup_main.cxx
+win32\source\setup\setup_w.cxx
+
+Header Files:
+inc\app.hxx
+inc\deployment.hrc
+inc\pch\precompiled_desktop.hxx
+os2\source\applauncher\launcher.hxx
+source\app\appinit.hxx
+source\app\appsys.hxx
+source\app\checkinstall.hxx
+source\app\cmdlineargs.hxx
+source\app\cmdlinehelp.hxx
+source\app\configinit.hxx
+source\app\desktop.hrc
+source\app\desktopcontext.hxx
+source\app\desktopresid.hxx
+source\app\dispatchwatcher.hxx
+source\app\langselect.hxx
+source\app\lockfile.hxx
+source\app\officeipcthread.hxx
+source\app\omutexmember.hxx
+source\app\sofficemain.h
+source\app\userinstall.hxx
+source\deployment\gui\descedit.hxx
+source\deployment\gui\dp_gui.h
+source\deployment\gui\dp_gui.hrc
+source\deployment\gui\dp_gui_autoscrolledit.hxx
+source\deployment\gui\dp_gui_dependencydialog.hxx
+source\deployment\gui\dp_gui_dialog2.hxx
+source\deployment\gui\dp_gui_extensioncmdqueue.hxx
+source\deployment\gui\dp_gui_extlistbox.hxx
+source\deployment\gui\dp_gui_shared.hxx
+source\deployment\gui\dp_gui_system.hxx
+source\deployment\gui\dp_gui_theextmgr.hxx
+source\deployment\gui\dp_gui_thread.hxx
+source\deployment\gui\dp_gui_updatedata.hxx
+source\deployment\gui\dp_gui_updatedialog.hxx
+source\deployment\gui\dp_gui_updateinstalldialog.hxx
+source\deployment\gui\license_dialog.hxx
+source\deployment\inc\dp_dependencies.hxx
+source\deployment\inc\dp_descriptioninfoset.hxx
+source\deployment\inc\dp_identifier.hxx
+source\deployment\inc\dp_interact.h
+source\deployment\inc\dp_misc.h
+source\deployment\inc\dp_misc_api.hxx
+source\deployment\inc\dp_persmap.h
+source\deployment\inc\dp_platform.hxx
+source\deployment\inc\dp_resource.h
+source\deployment\inc\dp_ucb.h
+source\deployment\inc\dp_update.hxx
+source\deployment\inc\dp_version.hxx
+source\deployment\inc\dp_xml.h
+source\deployment\manager\dp_activepackages.hxx
+source\deployment\manager\dp_commandenvironments.hxx
+source\deployment\manager\dp_extensionmanager.hxx
+source\deployment\manager\dp_manager.h
+source\deployment\manager\dp_manager.hrc
+source\deployment\manager\dp_properties.hxx
+source\deployment\misc\dp_misc.hrc
+source\deployment\registry\component\dp_compbackenddb.hxx
+source\deployment\registry\component\dp_component.hrc
+source\deployment\registry\configuration\dp_configuration.hrc
+source\deployment\registry\configuration\dp_configurationbackenddb.hxx
+source\deployment\registry\executable\dp_executablebackenddb.hxx
+source\deployment\registry\help\dp_help.hrc
+source\deployment\registry\help\dp_helpbackenddb.hxx
+source\deployment\registry\inc\dp_backend.h
+source\deployment\registry\inc\dp_backenddb.hxx
+source\deployment\registry\inc\dp_registry.hrc
+source\deployment\registry\package\dp_extbackenddb.hxx
+source\deployment\registry\package\dp_package.hrc
+source\deployment\registry\script\dp_lib_container.h
+source\deployment\registry\script\dp_script.hrc
+source\deployment\registry\script\dp_scriptbackenddb.hxx
+source\deployment\registry\sfwk\dp_parceldesc.hxx
+source\deployment\registry\sfwk\dp_sfwk.hrc
+source\inc\dp_gui_api.hxx
+source\inc\dp_gui_handleversionexception.hxx
+source\inc\exithelper.hxx
+source\inc\helpid.hrc
+source\migration\cfgfilter.hxx
+source\migration\migration.hxx
+source\migration\migration_impl.hxx
+source\migration\pages.hxx
+source\migration\wizard.hrc
+source\migration\wizard.hxx
+source\migration\services\autocorrmigration.hxx
+source\migration\services\basicmigration.hxx
+source\migration\services\jvmfwk.hxx
+source\migration\services\misc.hxx
+source\migration\services\oo3extensionmigration.hxx
+source\migration\services\wordbookmigration.hxx
+source\offacc\acceptor.hxx
+source\pagein\file_image.h
+source\pkgchk\unopkg\unopkg_main.h
+source\pkgchk\unopkg\unopkg_shared.h
+source\so_comp\evaluation.hxx
+source\so_comp\oemjob.hxx
+source\splash\firststart.hxx
+source\splash\splash.hxx
+win32\source\extendloaderenvironment.hxx
+win32\source\main.h
+win32\source\wrapper.h
+win32\source\applauncher\launcher.hxx
+win32\source\QuickStart\QuickStart.h
+win32\source\QuickStart\resource.h
+win32\source\QuickStart\StdAfx.h
+win32\source\rebase\Resource.h
+win32\source\setup\Resource.h
+win32\source\setup\setup.hxx
+win32\source\setup\setup_help.hxx
+win32\source\setup\setup_main.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=desktop
+	TARGET=inc
+
+os2\source\applauncher\makefile.mk
+	PRJNAME=desktop
+	TARGET=applauncher
+	OBJFILES=
+	$(OBJ)$/launcher.obj
+	$(OBJ)$/swriter.obj
+	$(OBJ)$/scalc.obj
+	$(OBJ)$/sdraw.obj
+	$(OBJ)$/simpress.obj
+	$(OBJ)$/sbase.obj
+	$(OBJ)$/smath.obj
+	$(OBJ)$/officeloader.obj
+	$(OBJ)$/os2quickstart.obj
+
+qa\deployment_misc\makefile.mk
+	PRJNAME:=desktop
+	TARGET:=qa_dpl_m
+	TARGET:=qa_deployment_misc
+	SLOFILES=$(SHL1OBJS)
+
+registry\data\org\openoffice\Office\makefile.mk
+	PRJNAME=setup_native
+	TARGET=data_registration
+
+scripts\makefile.mk
+	PRJNAME=desktop
+	TARGET=scripts
+
+source\app\makefile.mk
+	PRJNAME=desktop
+	TARGET=dkt
+	OBJFILES=
+	$(OBJ)$/copyright_ascii_ooo.obj
+	$(OBJ)$/main.obj
+	OBJFILES+=
+	$(OBJ)$/copyright_ascii_sun.obj
+	SLOFILES=$(SHL1OBJS)
+
+source\deployment\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment
+	SLOFILES=$(LIB1OBJFILES)
+
+source\deployment\target.pmk
+
+source\deployment\gui\makefile.mk
+	PRJNAME=desktop
+	TARGET=deploymentgui
+	SLOFILES=$(SHL1OBJS)
+
+source\deployment\inc\dp_gui.mk
+
+source\deployment\inc\dp_misc.mk
+
+source\deployment\manager\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_manager
+	SLOFILES=
+	$(SLO)$/dp_activepackages.obj
+	$(SLO)$/dp_manager.obj
+	$(SLO)$/dp_managerfac.obj
+	$(SLO)$/dp_informationprovider.obj
+	$(SLO)$/dp_extensionmanager.obj
+	$(SLO)$/dp_commandenvironments.obj
+	$(SLO)$/dp_properties.obj
+
+source\deployment\misc\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_misc
+	TARGET=deplmisc
+	SLOFILES=$(SHL1OBJS)
+
+source\deployment\registry\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry
+	SLOFILES=
+	$(SLO)$/dp_backend.obj
+	$(SLO)$/dp_registry.obj
+	$(SLO)$/dp_backenddb.obj
+
+source\deployment\registry\component\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_component
+	SLOFILES=
+	$(SLO)$/dp_component.obj
+	$(SLO)$/dp_compbackenddb.obj
+
+source\deployment\registry\configuration\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_configuration
+	SLOFILES=
+	$(SLO)$/dp_configuration.obj
+	$(SLO)$/dp_configurationbackenddb.obj
+
+source\deployment\registry\executable\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_executable
+	SLOFILES=
+	$(SLO)$/dp_executable.obj
+	$(SLO)$/dp_executablebackenddb.obj
+
+source\deployment\registry\help\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_help
+	SLOFILES=
+	$(SLO)$/dp_help.obj
+	$(SLO)$/dp_helpbackenddb.obj
+
+source\deployment\registry\package\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_package
+	SLOFILES=
+	$(SLO)$/dp_package.obj
+	$(SLO)$/dp_extbackenddb.obj
+
+source\deployment\registry\script\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_script
+	SLOFILES=
+	$(SLO)$/dp_script.obj
+	$(SLO)$/dp_lib_container.obj
+	$(SLO)$/dp_scriptbackenddb.obj
+
+source\deployment\registry\sfwk\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_registry_sfwk
+	SLOFILES=
+	$(SLO)$/dp_parceldesc.obj
+	$(SLO)$/dp_sfwk.obj
+
+source\deployment\unopkg\makefile.mk
+	PRJNAME=desktop
+	TARGET=deployment_unopkg
+	SLOFILES=
+
+source\migration\makefile.mk
+	PRJNAME=desktop
+	TARGET=mig
+	SLOFILES=
+	$(SLO)$/migration.obj
+	$(SLO)$/wizard.obj
+	$(SLO)$/pages.obj
+	$(SLO)$/cfgfilter.obj
+
+source\migration\services\cppumaker.mk
+
+source\migration\services\makefile.mk
+	PRJNAME=desktop
+	TARGET=migroo2
+	TARGET=migrationoo2.uno
+	SLOFILES=
+	$(SLO)$/jvmfwk.obj
+	$(SLO)$/cexports.obj
+	$(SLO)$/basicmigration.obj
+	$(SLO)$/wordbookmigration.obj
+	$(SLO)$/autocorrmigration.obj
+	$(SLO)$/oo3extensionmigration.obj
+
+source\offacc\makefile.mk
+	PRJNAME=desktop
+	TARGET=offacc
+	SLOFILES=$(SLO)$/acceptor.obj
+
+source\pagein\makefile.mk
+	PRJNAME=desktop
+	TARGET=pagein
+	OBJFILES=
+	$(OBJ)$/pagein.obj
+	$(OBJ)$/file_image_unx.obj
+
+source\pkgchk\unopkg\makefile.mk
+	PRJNAME=desktop
+	TARGET=unopkg
+	SLOFILES=
+	$(SLO)$/unopkg_app.obj
+	$(SLO)$/unopkg_cmdenv.obj
+	$(SLO)$/unopkg_misc.obj
+	OBJFILES=$(OBJ)$/unopkg_main.obj
+
+source\so_comp\makefile.mk
+	PRJNAME=desktop
+	TARGET=socomp
+	SLOFILES=$(SLO)$/evaluation.obj
+	$(SLO)$/oemjob.obj
+	$(SLO)$/services.obj
+
+source\splash\makefile.mk
+	PRJNAME=desktop
+	TARGET=spl
+	SLOFILES=$(SLO)$/splash.obj
+	$(SLO)$/firststart.obj
+	$(SLO)$/services_spl.obj
+
+test\deployment\active\makefile.mk
+	PRJNAME=desktop
+	TARGET=test_deployment_active
+	SLOFILES=$(SHL1OBJS)
+
+test\deployment\boxt\makefile.mk
+	PRJNAME=desktop
+	TARGET=test_deployment_boxt
+	SLOFILES=$(SHL1OBJS)
+
+test\deployment\executable_content\build\makefile.mk
+	PRJNAME=desktop
+	TARGET=hello
+
+test\deployment\locationtest\makefile.mk
+	PRJNAME=location_test
+	TARGET=com_sun_star_comp_smoketest
+
+test\deployment\options\handler\com\sun\star\comp\extensionoptions\makefile.mk
+	PRJNAME=desktop
+	TARGET=options
+
+test\deployment\passive\makefile.mk
+	PRJNAME=desktop
+	TARGET=test_deployment_passive
+	SLOFILES=$(SHL1OBJS)
+
+test\deployment\update\updateinfocreation\build\makefile.mk
+	PRJNAME=updateinfo
+	TARGET=com_sun_star_comp_smoketest
+
+unx\source\officeloader\makefile.mk
+	PRJNAME=desktop
+	TARGET=officeloader
+	OBJFILES=
+	$(OBJ)$/officeloader.obj
+
+util\makefile.mk
+	PRJNAME=desktop
+	TARGET=soffice
+
+win32\source\makefile.mk
+	PRJNAME=desktop
+	TARGET=sowrap
+	OBJFILES=
+	$(OBJ)$/wrappera.obj
+	$(OBJ)$/wrapperw.obj
+	$(OBJ)$/lwrapa.obj
+	$(OBJ)$/lwrapw.obj
+	$(OBJ)$/rwrapa.obj
+	$(OBJ)$/rwrapw.obj
+	$(OBJ)$/sowrapper.obj
+	$(OBJ)$/extendloaderenvironment.obj
+	$(OBJ)$/unoinfo.obj
+
+win32\source\applauncher\makefile.mk
+	PRJNAME=desktop
+	TARGET=applauncher
+	OBJFILES=
+	$(OBJ)$/launcher.obj
+	$(OBJ)$/swriter.obj
+	$(OBJ)$/scalc.obj
+	$(OBJ)$/sdraw.obj
+	$(OBJ)$/simpress.obj
+	$(OBJ)$/sbase.obj
+	$(OBJ)$/smath.obj
+	$(OBJ)$/sweb.obj
+
+win32\source\applauncher\ooo\makefile.mk
+	PRJNAME=desktop
+	TARGET=applauncher
+
+win32\source\guiloader\makefile.mk
+	PRJNAME=desktop
+	TARGET=guiloader
+
+win32\source\guistdio\makefile.mk
+	PRJNAME=desktop
+	TARGET=guistdio
+	OBJFILES=$(APP1OBJS)$(APP2OBJS)
+
+win32\source\officeloader\makefile.mk
+	PRJNAME=desktop
+	TARGET=officeloader
+	OBJFILES=
+	$(OBJ)$/officeloader.obj
+
+win32\source\QuickStart\makefile.mk
+	PRJNAME=sysui
+	TARGET=quickstart
+	OBJFILES=$(OBJ)$/QuickStart.obj
+
+win32\source\QuickStart\so\makefile.mk
+	PRJNAME=sysui
+	TARGET=soquickstart
+	OBJFILES=$(OBJ)$/QuickStart.obj
+
+win32\source\rebase\makefile.mk
+	PRJNAME=desktop
+	TARGET=rebasegui
+	OBJFILES=
+	$(OBJ)$/rebase.obj
+	$(OBJ)$/rebasegui.obj
+
+win32\source\setup\makefile.mk
+	PRJNAME=desktop
+	TARGET=loader2
+	OBJFILES=$(OBJ)$/setup_main.obj
+	$(OBJ)$/setup_a.obj
+	$(OBJ)$/setup_w.obj
+
+zipintro\makefile.mk
+	PRJNAME=desktop
+	TARGET=zipintro

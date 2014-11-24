@@ -1,0 +1,60 @@
+ure
+=============
+
+Entering /cygdrive/c/steve/testarea/main/ure/source
+
+mkout -- version: 1.8
+Making:    source.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/uretest.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/uretest.zip "uretest" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/uretest.dpzz
+cat ../wntmsci12.pro/misc/uretest.dpzz C:/cygwin/tmp/mkzScZqd | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/source.dpz
+Making:    uretest.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -r ../wntmsci12.pro/bin/uretest.zip uretest -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: uretest/ (stored 0%)
+  adding: uretest/cppmain.cc (deflated 73%)
+  adding: uretest/cppserver.cc (deflated 63%)
+  adding: uretest/cpptest.cc (deflated 64%)
+  adding: uretest/JavaClient.java (deflated 61%)
+  adding: uretest/javaclient.mf.template (deflated 15%)
+  adding: uretest/JavaMain.java (deflated 61%)
+  adding: uretest/javamain.mf.template (deflated 13%)
+  adding: uretest/JavaNative.java (deflated 50%)
+  adding: uretest/javanative.mf.template (deflated 15%)
+  adding: uretest/JavaTest.java (deflated 59%)
+  adding: uretest/javatest.mf.template (deflated 16%)
+  adding: uretest/Makefile (deflated 78%)
+  adding: uretest/Makefile.pln (deflated 80%)
+  adding: uretest/README (deflated 62%)
+  adding: uretest/Runner.java (deflated 50%)
+  adding: uretest/runner.mf.template (deflated 12%)
+  adding: uretest/Tester.java (deflated 56%)
+  adding: uretest/tester.mf.template (deflated 14%)
+  adding: uretest/types.idl (deflated 51%)
+  adding: uretest/types.mf.template (deflated 5%)
+  adding: uretest/version.map (deflated 51%)
+if [ -f ../wntmsci12.pro/bin/uretest.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../wntmsci12.pro/bin/uretest.zip \
+	    ; fi
+echo \
+        '<list><filename>acceptor.component</filename> <filename>binaryurp.component</filename> <filename>bootstrap.component</filename> <filename>connector.component</filename> <filename>introspection.component</filename> <filename>invocadapt.component</filename> <filename>invocation.component</filename> <filename>javaloader.component</filename> <filename>javavm.component</filename> <filename>juh.component</filename> <filename>namingservice.component</filename> <filename>proxyfac.component</filename> <filename>reflection.component</filename> <filename>stocservices.component</filename> <filename>streams.component</filename> <filename>textinstream.component</filename> <filename>textoutstream.component</filename> <filename>uuresolver.component</filename></list>' \
+        > ../wntmsci12.pro/misc/services.input
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam prefix C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ -o ../wntmsci12.pro/misc/services.rdb \
+        C:/steve/TestArea/main/solenv/bin/packcomponents.xslt ../wntmsci12.pro/misc/services.input
+ure deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/ure/build.lst
+COPY: ../wntmsci12.pro/bin/uretest.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/uretest.zip
+COPY: ../wntmsci12.pro/misc/services.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ure/services.rdb
+COPY: ../source/README -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/README
+COPY: ../source/jvmfwk3.ini -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/jvmfwk3.ini
+COPY: ../source/jvmfwk3rc -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/jvmfwk3rc
+COPY: ../source/startup.sh -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/startup.sh
+COPY: ../source/uno.ini -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/uno.ini
+COPY: ../source/unorc -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/unorc
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/ure/deliver.log
+Module 'ure' delivered successfully. 9 files copied, 0 files unchanged
+
+=============

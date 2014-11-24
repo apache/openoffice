@@ -1,0 +1,136 @@
+Name:
+automation
+
+Dependencies:
+basic fpicker NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\inc%_EXT%\automation
+
+#..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\util\manually_added_ids.hid %COMMON_DEST%\bin%_EXT%\hid\manually_added_ids.hid
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib* %_DEST%\lib%_EXT%\*
+..\%__SRC%\lib\ists.lib %_DEST%\lib%_EXT%\ists.lib
+..\%__SRC%\lib\isimplecm.lib %_DEST%\lib%_EXT%\isimplecm.lib
+..\%__SRC%\lib\icommuni.lib %_DEST%\lib%_EXT%\icommuni.lib
+
+..\inc\automation\automation.hxx %_DEST%\inc%_EXT%\automation\automation.hxx
+..\inc\automation\commdefines.hxx %_DEST%\inc%_EXT%\automation\commdefines.hxx
+..\inc\automation\commtypes.hxx %_DEST%\inc%_EXT%\automation\commtypes.hxx
+..\inc\automation\communi.hxx %_DEST%\inc%_EXT%\automation\communi.hxx
+..\inc\automation\simplecm.hxx %_DEST%\inc%_EXT%\automation\simplecm.hxx
+
+..\%__SRC%\bin\testtool.exe %_DEST%\bin%_EXT%\testtool.bin
+..\%__SRC%\bin\testtool %_DEST%\bin%_EXT%\testtool.bin
+..\%__SRC%\inc\classes %_DEST%\bin%_EXT%\classes
+..\%__SRC%\inc\keycodes %_DEST%\bin%_EXT%\keycodes
+..\%__SRC%\inc\res_type %_DEST%\bin%_EXT%\res_type
+
+..\%COMMON_OUTDIR%\bin\images_tt.zip %COMMON_DEST%\bin%_EXT%\images_tt.zip
+
+..\%__SRC%\bin\testtoolrc %_DEST%\lib%_EXT%\testtoolrc
+..\%__SRC%\bin\testtool.ini %_DEST%\bin%_EXT%\testtool.ini
+
+Source Files:
+inc\pch\precompiled_automation.cxx
+source\app\testbasi.cxx
+source\communi\communi.cxx
+source\server\cmdbasestream.cxx
+source\server\editwin.cxx
+source\server\profiler.cxx
+source\server\prof_nul.cxx
+source\server\prof_usl.cxx
+source\server\recorder.cxx
+source\server\retstrm.cxx
+source\server\scmdstrm.cxx
+source\server\server.cxx
+source\server\statemnt.cxx
+source\server\sta_list.cxx
+source\server\svcommstream.cxx
+source\server\XMLParser.cxx
+source\simplecm\packethandler.cxx
+source\simplecm\simplecm.cxx
+source\simplecm\tcpio.cxx
+
+Header Files:
+inc\automation\automation.hxx
+inc\automation\commdefines.hxx
+inc\automation\commtypes.hxx
+inc\automation\communi.hxx
+inc\automation\simplecm.hxx
+inc\pch\precompiled_automation.hxx
+source\app\testbasi.hxx
+source\inc\cmdbasestream.hxx
+source\inc\icommstream.hxx
+source\inc\rcontrol.hxx
+source\inc\sttresid.hxx
+source\inc\svcommstream.hxx
+source\inc\testapp.hxx
+source\inc\testtool.hxx
+source\server\editwin.hxx
+source\server\profiler.hxx
+source\server\recorder.hxx
+source\server\retstrm.hxx
+source\server\scmdstrm.hxx
+source\server\server.hxx
+source\server\statemnt.hxx
+source\server\testtool.hrc
+source\simplecm\communiio.hxx
+source\simplecm\packethandler.hxx
+source\simplecm\tcpio.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=automation
+	TARGET=inc
+
+source\app\makefile.mk
+	PRJNAME=automation
+	TARGET=app
+	OBJFILES=
+	$(OBJ)$/testbasi.obj
+
+source\communi\makefile.mk
+	PRJNAME=automation
+	TARGET=communi
+	SLOFILES=
+	$(SLO)$/communi.obj
+
+source\server\makefile.mk
+	PRJNAME=automation
+	TARGET=server
+	SLOFILES=
+	$(SLO)$/XMLParser.obj
+	$(SLO)$/recorder.obj
+	$(SLO)$/svcommstream.obj
+	$(SLO)$/cmdbasestream.obj
+	$(SLO)$/scmdstrm.obj
+	$(SLO)$/statemnt.obj
+	$(SLO)$/sta_list.obj
+	$(SLO)$/editwin.obj
+	$(SLO)$/server.obj
+	$(SLO)$/retstrm.obj
+	$(SLO)$/profiler.obj
+	OBJFILES=
+	$(OBJ)$/cmdbasestream.obj
+	$(OBJ)$/svcommstream.obj
+	SLOFILES+=$(SLO)$/prof_usl.obj
+	SLOFILES+=$(SLO)$/prof_nul.obj
+
+source\simplecm\makefile.mk
+	PRJNAME=automation
+	TARGET=simplecm
+	SLOFILES=
+	$(SLO)$/tcpio.obj
+	$(SLO)$/packethandler.obj
+	$(SLO)$/simplecm.obj
+	
+
+util\makefile.mk
+	PRJNAME=automation
+	TARGET=automation

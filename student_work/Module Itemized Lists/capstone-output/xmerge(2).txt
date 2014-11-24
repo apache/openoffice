@@ -1,0 +1,88 @@
+Name:
+xmerge
+
+Dependencies:
+solenv unoil javaunohelper LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\class\xmerge.jar %_DEST%\bin%_EXT%\xmerge.jar
+..\%__SRC%\class\pexcel.jar %_DEST%\bin%_EXT%\pexcel.jar
+..\%__SRC%\class\htmlsoff.jar %_DEST%\bin%_EXT%\htmlsoff.jar
+..\%__SRC%\class\aportisdoc.jar  %_DEST%\bin%_EXT%\aportisdoc.jar
+..\%__SRC%\class\XMergeBridge.jar %_DEST%\bin%_EXT%\XMergeBridge.jar
+..\%__SRC%\class\pocketword.jar  %_DEST%\bin%_EXT%\pocketword.jar
+..\%__SRC%\bin\xmergesync.dll  %_DEST%\bin%_EXT%\xmergesync.dll
+mkdir: %_DEST%\doc%_EXT%\xmerge
+..\%__SRC%\doc\javadoc\package-list %_DEST%\doc%_EXT%\xmerge\package-list
+..\%__SRC%\doc\xmerge_javadoc.zip %_DEST%\doc%_EXT%\xmerge_javadoc.zip
+..\%__SRC%\doc\writer2latex_javadoc.zip %_DEST%\doc%_EXT%\writer2latex_javadoc.zip
+..\%__SRC%\misc\XMergeBridge.component %_DEST%\xml%_EXT%\XMergeBridge.component
+
+Source Files:
+inc\pch\precompiled_xmerge.cxx
+
+Header Files:
+inc\pch\precompiled_xmerge.hxx
+source\activesync\resource.h
+source\activesync\stdafx.h
+source\activesync\XMergeFactory.h
+source\activesync\XMergeFilter.h
+source\activesync\XMergeSync.h
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=xmerge
+	TARGET=inc
+
+source\activesync\makefile.mk
+	PRJNAME=xmerge
+	TARGET=xmergesync
+	SLOFILES=
+	$(SLO)$/XMergeFactory.obj
+	$(SLO)$/XMergeSync.obj
+	$(SLO)$/XMergeFilter.obj
+
+source\aportisdoc\makefile.mk
+	TARGET=aportisdoc
+	PRJNAME=xmerge
+
+source\bridge\makefile.mk
+	TARGET=XMergeBridge
+	PRJNAME=xmerge
+
+source\htmlsoff\makefile.mk
+	TARGET=htmlsoff
+	PRJNAME=xmerge
+
+source\minicalc\makefile.mk
+	TARGET=minicalc
+	PRJNAME=xmerge
+
+source\pexcel\makefile.mk
+	TARGET=pexcel
+	PRJNAME=xmerge
+
+source\pocketword\makefile.mk
+	TARGET=pocketword
+	PRJNAME=xmerge
+
+source\regutil\makefile.mk
+	PRJNAME=xmerge
+	TARGET=regutil
+	OBJFILES=$(OBJ)$/regutil.obj
+
+source\wordsmith\makefile.mk
+	TARGET=wordsmith
+	PRJNAME=xmerge
+
+source\xmerge\makefile.mk
+	TARGET=xmerge
+
+util\makefile.mk
+	TARGET=xmrg_util
+
+workben\makefile.mk
+	TARGET=xmrg_workben

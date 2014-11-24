@@ -1,0 +1,127 @@
+Name:
+soldep
+
+Dependencies:
+svtools NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\soldep
+mkdir: %_DEST%\inc%_EXT%\bootstrp2
+mkdir: %COMMON_DEST%\bin%_EXT%\additional
+mkdir: %COMMON_DEST%\res%_EXT%\img\additional
+
+..\inc\soldep\sdtresid.hxx %_DEST%\inc%_EXT%\soldep\sdtresid.hxx
+..\%__SRC%\bin\soldepl.exe %_DEST%\bin%_EXT%\soldepl.exe
+..\%__SRC%\bin\bootstrpdt?????.dll %_DEST%\bin%_EXT%\bootstrpdt?????.dll
+..\%__SRC%\bin\soldep?????.dll %_DEST%\bin%_EXT%\soldep?????.dll
+..\%__SRC%\lib\libbootstrpdt*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libsoldep*.* %_DEST%\lib%_EXT%
+..\%__SRC%\slb\*.a %_DEST%\lib%_EXT%\*.a
+
+..\util\perl.mk  %_DEST%\inc%_EXT%\soldep\perl.mk
+
+..\inc\soldep\soldep.hxx %_DEST%\inc%_EXT%\soldep\soldep.hxx
+..\inc\soldep\soldlg.hxx %_DEST%\inc%_EXT%\soldep\soldlg.hxx
+..\inc\soldep\hashtbl.hxx %_DEST%\inc%_EXT%\soldep\hashtbl.hxx
+..\inc\soldep\depper.hxx %_DEST%\inc%_EXT%\soldep\depper.hxx
+..\inc\soldep\objwin.hxx %_DEST%\inc%_EXT%\soldep\objwin.hxx
+..\inc\soldep\connctr.hxx %_DEST%\inc%_EXT%\soldep\connctr.hxx
+..\inc\soldep\depwin.hxx %_DEST%\inc%_EXT%\soldep\depwin.hxx
+..\inc\soldep\graphwin.hxx %_DEST%\inc%_EXT%\soldep\graphwin.hxx
+..\inc\soldep\tbox.hxx %_DEST%\inc%_EXT%\soldep\tbox.hxx
+..\inc\soldep\hashobj.hxx %_DEST%\inc%_EXT%\soldep\hashobj.hxx
+..\inc\minormk.hxx %_DEST%\inc%_EXT%\soldep\minormk.hxx
+..\inc\soldep\prj.hxx %_DEST%\inc%_EXT%\soldep\prj.hxx
+..\inc\dep.hxx %_DEST%\inc%_EXT%\soldep\dep.hxx
+..\inc\prodmap.hxx %_DEST%\inc%_EXT%\soldep\prodmap.hxx
+..\inc\soldep\appdef.hxx %_DEST%\inc%_EXT%\soldep\appdef.hxx
+..\inc\soldep\soldlg.hrc %_DEST%\inc%_EXT%\soldep\soldlg.hrc
+..\inc\soldep\sstring.hxx %_DEST%\inc%_EXT%\soldep\sstring.hxx
+..\inc\soldep\command.hxx %_DEST%\inc%_EXT%\soldep\command.hxx
+..\inc\soldep\listmacr.hxx %_DEST%\inc%_EXT%\soldep\listmacr.hxx
+
+..\%__SRC%\lib\soldep.lib %_DEST%\lib%_EXT%\soldep.lib
+..\%__SRC%\lib\bootstrpdt.lib %_DEST%\lib%_EXT%\bootstrpdt.lib
+
+..\%__SRC%\lib\lib*static*.dylib %_DEST%\lib%_EXT%\lib*static*.dylib
+..\%__SRC%\bin\dep*.res %COMMON_DEST%\bin%_EXT%\additional\dep*.res
+
+
+Source Files:
+bootstrp\appdef.cxx
+bootstrp\command.cxx
+bootstrp\dep.cxx
+bootstrp\hashtbl.cxx
+bootstrp\minormk.cxx
+bootstrp\prj.cxx
+bootstrp\prodmap.cxx
+bootstrp\sstring.cxx
+source\connctr.cxx
+source\depapp.cxx
+source\depper.cxx
+source\depwin.cxx
+source\graphwin.cxx
+source\hashobj.cxx
+source\objwin.cxx
+source\sdtresid.cxx
+source\soldep.cxx
+source\soldlg.cxx
+source\tbox.cxx
+
+Header Files:
+inc\dep.hxx
+inc\dtsodcmp.hrc
+inc\minormk.hxx
+inc\prodmap.hxx
+inc\soldep\appdef.hxx
+inc\soldep\command.hxx
+inc\soldep\connctr.hxx
+inc\soldep\depper.hxx
+inc\soldep\depwin.hxx
+inc\soldep\graphwin.hxx
+inc\soldep\hashobj.hxx
+inc\soldep\hashtbl.hxx
+inc\soldep\listmacr.hxx
+inc\soldep\objwin.hxx
+inc\soldep\prj.hxx
+inc\soldep\sdtresid.hxx
+inc\soldep\soldep.hxx
+inc\soldep\soldlg.hrc
+inc\soldep\soldlg.hxx
+inc\soldep\sstring.hxx
+inc\soldep\tbox.hxx
+source\depapp.hxx
+
+Patch Files:
+
+Makefiles:
+
+bootstrp\makefile.mk
+	PRJNAME=soldep
+	TARGET=bootstrpdt
+	SLOFILES=
+	$(SLO)$/command.obj
+	$(SLO)$/dep.obj
+	$(SLO)$/minormk.obj
+	$(SLO)$/prodmap.obj
+	$(SLO)$/appdef.obj
+	$(SLO)$/hashtbl.obj
+	$(SLO)$/sstring.obj
+	$(SLO)$/prj.obj
+
+source\makefile.mk
+	PRJNAME=soldep
+	TARGET=soldep
+	SLOFILES=
+	$(SLO)$/soldep.obj
+	$(SLO)$/soldlg.obj
+	$(SLO)$/depper.obj
+	$(SLO)$/hashobj.obj
+	$(SLO)$/connctr.obj
+	$(SLO)$/depwin.obj
+	$(SLO)$/graphwin.obj
+	$(SLO)$/tbox.obj
+	$(SLO)$/sdtresid.obj
+	$(SLO)$/objwin.obj
+
+util\perl.mk

@@ -1,0 +1,270 @@
+Name:
+setup_native
+
+Dependencies:
+L10N:l10n l10ntools soltools sal xml2cmp NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%\osl
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.exe %_DEST%\bin%_EXT%\*.exe
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+
+mkdir: %_DEST%\bin%_EXT%\userscripts
+..\%__SRC%\bin\install %_DEST%\bin%_EXT%\userscripts\install
+..\%__SRC%\bin\uninstall %_DEST%\bin%_EXT%\userscripts\uninstall
+..\%__SRC%\bin\noarch\fake-db-1.0-0.noarch.rpm %_DEST%\bin%_EXT%\openoffice.org-userland-1.0-0.noarch.rpm
+
+mkdir: %_DEST%\bin%_EXT%\osolsmf
+..\%__SRC%\bin\ulfconv %_DEST%\bin%_EXT%\ulfconv
+..\%__SRC%\bin\langpackscript.sh %_DEST%\bin%_EXT%\langpackscript.sh
+..\%__SRC%\bin\linuxpatchscript.sh %_DEST%\bin%_EXT%\linuxpatchscript.sh
+..\%__SRC%\bin\downloadscript.sh %_DEST%\bin%_EXT%\downloadscript.sh
+..\%__SRC%\bin\register_extensions %_DEST%\bin%_EXT%\register_extensions
+..\%__SRC%\bin\deregister_extensions %_DEST%\bin%_EXT%\deregister_extensions
+..\%__SRC%\bin\unpack_update.sh %_DEST%\bin%_EXT%\unpack_update
+..\%__SRC%\bin\update.sh %_DEST%\bin%_EXT%\update
+..\%__SRC%\bin\javaloader.sh %_DEST%\bin%_EXT%\javaloader.sh
+..\%__SRC%\bin\stclient_wrapper.sh %_DEST%\bin%_EXT%\stclient_wrapper
+..\%__SRC%\bin\stclient_wrapper.exe %_DEST%\bin%_EXT%\stclient_wrapper.exe
+..\%__SRC%\misc\mac_ulffiles_dest\*.ulf %_DEST%\bin%_EXT%\*.ulf
+..\source\win32\msi-encodinglist.txt %_DEST%\bin%_EXT%\msi-encodinglist.txt
+..\source\win32\patchlist.txt %_DEST%\bin%_EXT%\patchlist.txt
+..\source\win32\desktophelper.txt %_DEST%\bin%_EXT%\desktophelper.txt
+..\source\win32\get_retval.bat %_DEST%\bin%_EXT%\get_retval.bat
+..\source\win32\nsis\downloadtemplate.nsi %_DEST%\bin%_EXT%\downloadtemplate.nsi
+..\source\win32\nsis\*.ico %_DEST%\bin%_EXT%\*.ico
+..\source\win32\nsis\*.bmp %_DEST%\bin%_EXT%\*.bmp
+..\source\linux\*.dat %_DEST%\bin%_EXT%\*.dat
+..\source\mac\*.icns %_DEST%\bin%_EXT%\*.icns
+..\source\mac\Info.plist.langpack %_DEST%\bin%_EXT%\Info.plist.langpack
+..\source\mac\ooo\osxdndinstall.png %_DEST%\bin%_EXT%\osl\osxdndinstall.png
+..\source\mac\ooo\osxdndinstall_nologo.png %_DEST%\bin%_EXT%\osl\osxdndinstall_nologo.png
+..\source\mac\ooo\DS_Store %_DEST%\bin%_EXT%\osl\DS_Store
+..\source\mac\ooo\DS_Store_Dev %_DEST%\bin%_EXT%\osl\DS_Store_Dev
+..\source\mac\ooo\DS_Store_Langpack %_DEST%\bin%_EXT%\osl\DS_Store_Langpack
+..\source\mac\sdk\DS_Store_SDK %_DEST%\bin%_EXT%\osl\DS_Store_SDK
+..\source\java\openofficeorg_setup.gif %_DEST%\bin%_EXT%\osl\Setup.gif
+..\source\java\javaversion.dat %_DEST%\bin%_EXT%\javaversion.dat
+..\source\java\javaversion2.dat %_DEST%\bin%_EXT%\javaversion2.dat
+..\source\opensolaris\bundledextensions\installed %_DEST%\bin%_EXT%\osolsmf\installed
+..\source\opensolaris\bundledextensions\README %_DEST%\bin%_EXT%\osolsmf\README
+..\source\opensolaris\bundledextensions\ooo_bundled_extensions.xml %_DEST%\bin%_EXT%\osolsmf\ooo_bundled_extensions.xml
+..\source\opensolaris\bundledextensions\svc-ooo_bundled_extensions %_DEST%\bin%_EXT%\osolsmf\svc-ooo_bundled_extensions
+..\source\packinfo\solariscopyrightfile %_DEST%\bin%_EXT%\solariscopyrightfile
+..\source\packinfo\linuxcopyrightfile %_DEST%\bin%_EXT%\linuxcopyrightfile
+..\source\packinfo\*.txt %_DEST%\bin%_EXT%\*.txt
+..\source\packinfo\*.pcp %_DEST%\bin%_EXT%\*.pcp
+..\scripts\admin.pl %_DEST%\bin%_EXT%\admin.pl
+..\scripts\*.txt %_DEST%\bin%_EXT%\*.txt
+..\scripts\mac_install.script %_DEST%\bin%_EXT%\mac_install.script
+..\scripts\osx_install_languagepack.applescript %_DEST%\bin%_EXT%\osx_install_languagepack.applescript
+..\scripts\osx_install_patch.applescript %_DEST%\bin%_EXT%\osx_install_patch.applescript
+
+..\%__SRC%\lib\getuid.so %_DEST%\bin%_EXT%\getuid.so
+
+..\inc\setup_native\qswin32.h %_DEST%\inc%_EXT%\setup_native\qswin32.h
+
+
+Source Files:
+scripts\source\getuid.c
+source\ulfconv\ulfconv.cxx
+source\win32\customactions\indexingfilter\restartindexingservice.cxx
+source\win32\customactions\javafilter\jfregca.cxx
+source\win32\customactions\languagepacks\checkrunningofficelanguagepack.cxx
+source\win32\customactions\languagepacks\lngpckinsthelper.cxx
+source\win32\customactions\languagepacks\respintest.cxx
+source\win32\customactions\patch\swappatchfiles.cxx
+source\win32\customactions\quickstarter\quickstarter.cxx
+source\win32\customactions\quickstarter\remove_quickstart_link.cxx
+source\win32\customactions\quickstarter\shutdown_quickstart.cxx
+source\win32\customactions\rebase\rebase.cxx
+source\win32\customactions\reg4allmsdoc\reg4allmsi.cxx
+source\win32\customactions\reg4msdoc\msihelper.cxx
+source\win32\customactions\reg4msdoc\reg4msdocmsi.cxx
+source\win32\customactions\reg4msdoc\register.cxx
+source\win32\customactions\reg4msdoc\registrar.cxx
+source\win32\customactions\reg4msdoc\registrationcontextinformation.cxx
+source\win32\customactions\reg4msdoc\registry.cxx
+source\win32\customactions\reg4msdoc\registryexception.cxx
+source\win32\customactions\reg4msdoc\registryvalueimpl.cxx
+source\win32\customactions\reg4msdoc\registryw9x.cxx
+source\win32\customactions\reg4msdoc\registrywnt.cxx
+source\win32\customactions\reg4msdoc\stringconverter.cxx
+source\win32\customactions\reg4msdoc\userregistrar.cxx
+source\win32\customactions\reg4msdoc\windowsregistry.cxx
+source\win32\customactions\reg64\reg64.cxx
+source\win32\customactions\regactivex\regactivex.cxx
+source\win32\customactions\regpatchactivex\regpatchactivex.cxx
+source\win32\customactions\relnotes\relnotes.cxx
+source\win32\customactions\shellextensions\checkdirectory.cxx
+source\win32\customactions\shellextensions\checkpatches.cxx
+source\win32\customactions\shellextensions\checkrunningoffice.cxx
+source\win32\customactions\shellextensions\completeinstallpath.cxx
+source\win32\customactions\shellextensions\copyeditiondata.cxx
+source\win32\customactions\shellextensions\copyextensiondata.cxx
+source\win32\customactions\shellextensions\dotnetcheck.cxx
+source\win32\customactions\shellextensions\iconcache.cxx
+source\win32\customactions\shellextensions\layerlinks.cxx
+source\win32\customactions\shellextensions\migrateinstallpath.cxx
+source\win32\customactions\shellextensions\postuninstall.cxx
+source\win32\customactions\shellextensions\registerextensions.cxx
+source\win32\customactions\shellextensions\setadmininstall.cxx
+source\win32\customactions\shellextensions\shellextensions.cxx
+source\win32\customactions\shellextensions\startmenuicon.cxx
+source\win32\customactions\shellextensions\upgrade.cxx
+source\win32\customactions\shellextensions\vistaspecial.cxx
+source\win32\customactions\tools\checkversion.cxx
+source\win32\customactions\tools\seterror.cxx
+source\win32\stwrapper\stwrapper.cxx
+
+Header Files:
+inc\setup_native\qswin32.h
+source\win32\customactions\quickstarter\quickstarter.hxx
+source\win32\customactions\reg4msdoc\constants.hxx
+source\win32\customactions\reg4msdoc\msihelper.hxx
+source\win32\customactions\reg4msdoc\register.hxx
+source\win32\customactions\reg4msdoc\registrar.hxx
+source\win32\customactions\reg4msdoc\registrationcontextinformation.hxx
+source\win32\customactions\reg4msdoc\registry.hxx
+source\win32\customactions\reg4msdoc\registryexception.hxx
+source\win32\customactions\reg4msdoc\registryvalueimpl.hxx
+source\win32\customactions\reg4msdoc\registryw9x.hxx
+source\win32\customactions\reg4msdoc\registrywnt.hxx
+source\win32\customactions\reg4msdoc\stringconverter.hxx
+source\win32\customactions\reg4msdoc\userregistrar.hxx
+source\win32\customactions\reg4msdoc\windowsregistry.hxx
+source\win32\customactions\tools\seterror.hxx
+
+Patch Files:
+
+Makefiles:
+
+scripts\makefile.mk
+	PRJNAME=setup_native
+	TARGET=install
+
+scripts\source\makefile.mk
+	PRJNAME=setup_native
+	TARGET=getuid
+	SLOFILES=$(SLO)$/getuid.obj
+
+source\mac\makefile.mk
+	PRJNAME=setup_native
+	TARGET=mac_ulffiles
+
+source\ulfconv\makefile.mk
+	PRJNAME=setup_native
+	TARGET=ulfconv
+	SLOFILES=$(SLO)$/$(TARGET).obj
+
+source\win32\customactions\indexingfilter\makefile.mk
+	PRJNAME=setup_native
+	TARGET=instooofiltmsi
+	SLOFILES=$(SLO)$/restartindexingservice.obj
+
+source\win32\customactions\javafilter\makefile.mk
+	PRJNAME=setup_native
+	TARGET=jfregca
+	SLOFILES=$(SLO)$/jfregca.obj
+
+source\win32\customactions\languagepacks\makefile.mk
+	PRJNAME=setup_native
+	TARGET=lngpckinsthlp
+	SLOFILES=$(SLO)$/lngpckinsthelper.obj
+	$(SLO)$/respintest.obj
+	$(SLO)$/checkrunningofficelanguagepack.obj
+
+source\win32\customactions\patch\makefile.mk
+	PRJNAME=setup_native
+	TARGET=patchmsi
+	SLOFILES=
+	$(SLO)$/swappatchfiles.obj
+
+source\win32\customactions\quickstarter\makefile.mk
+	PRJNAME=setup_native
+	TARGET=quickstarter
+	TARGET1=sdqsmsi
+	TARGET2=qslnkmsi
+
+source\win32\customactions\rebase\makefile.mk
+	PRJNAME=setup_native
+	TARGET=rebase
+
+source\win32\customactions\reg4allmsdoc\makefile.mk
+	PRJNAME=setup_native
+	TARGET=reg4allmsdoc
+	SLOFILES=$(SLO)$/reg4allmsi.obj
+
+source\win32\customactions\reg4msdoc\makefile.mk
+	PRJNAME=setup_native
+	TARGET=reg4msdocmsi
+	SLOFILES=$(SLO)$/msihelper.obj
+	$(SLO)$/windowsregistry.obj
+	$(SLO)$/userregistrar.obj
+	$(SLO)$/stringconverter.obj
+	$(SLO)$/registrywnt.obj
+	$(SLO)$/registryw9x.obj
+	$(SLO)$/registryvalueimpl.obj
+	$(SLO)$/registryexception.obj
+	$(SLO)$/registry.obj
+	$(SLO)$/registrationcontextinformation.obj
+	$(SLO)$/registrar.obj
+	$(SLO)$/register.obj
+	$(SLO)$/reg4msdocmsi.obj
+
+source\win32\customactions\reg64\makefile.mk
+	PRJNAME=setup_native
+	TARGET=reg64msi
+	SLOFILES=
+	$(SLO)$/reg64.obj
+	#OBJFILES=$(OBJ)$/reg64.obj
+
+source\win32\customactions\regactivex\makefile.mk
+	PRJNAME=setup_native
+	TARGET=regactivex
+	SLOFILES=$(SLO)$/regactivex.obj
+
+source\win32\customactions\regpatchactivex\makefile.mk
+	PRJNAME=setup_native
+	TARGET=regpatchactivex
+	SLOFILES=$(SLO)$/regpatchactivex.obj
+
+source\win32\customactions\relnotes\makefile.mk
+	PRJNAME=setup_native
+	TARGET=relnotes
+	SLOFILES=$(SLO)$/relnotes.obj
+
+source\win32\customactions\shellextensions\makefile.mk
+	PRJNAME=setup_native
+	TARGET=shlxtmsi
+	SLOFILES=
+	$(SLO)$/shellextensions.obj
+	$(SLO)$/startmenuicon.obj
+	$(SLO)$/upgrade.obj
+	$(SLO)$/iconcache.obj
+	$(SLO)$/postuninstall.obj
+	$(SLO)$/migrateinstallpath.obj
+	$(SLO)$/completeinstallpath.obj
+	$(SLO)$/checkdirectory.obj
+	$(SLO)$/setadmininstall.obj
+	$(SLO)$/layerlinks.obj
+	$(SLO)$/dotnetcheck.obj
+	$(SLO)$/registerextensions.obj
+	$(SLO)$/copyeditiondata.obj
+	$(SLO)$/vistaspecial.obj
+	$(SLO)$/checkrunningoffice.obj
+	$(SLO)$/checkpatches.obj
+	$(SLO)$/copyextensiondata.obj
+
+source\win32\customactions\tools\makefile.mk
+	PRJNAME=setup_native
+	TARGET=sn_tools
+	SLOFILES=$(SLO)$/seterror.obj
+	$(SLO)$/checkversion.obj
+
+source\win32\stwrapper\makefile.mk
+	PRJNAME=setup_native
+	TARGET=stclient_wrapper
+	OBJFILES=
+	$(OBJ)$/stwrapper.obj

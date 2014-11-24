@@ -1,0 +1,261 @@
+Name:
+cppu
+
+Dependencies:
+sal salhelper offuh BOOST:boost NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\cppu
+mkdir: %_DEST%\inc%_EXT%\cppu\helper\purpenv
+mkdir: %_DEST%\inc%_EXT%\com
+mkdir: %_DEST%\inc%_EXT%\com\sun
+mkdir: %_DEST%\inc%_EXT%\com\sun\star
+mkdir: %_DEST%\inc%_EXT%\com\sun\star\uno
+mkdir: %_DEST%\inc%_EXT%\typelib
+mkdir: %_DEST%\inc%_EXT%\uno
+
+..\inc\cppu\macros.hxx %_DEST%\inc%_EXT%\cppu\macros.hxx
+..\inc\cppu\unotype.hxx %_DEST%\inc%_EXT%\cppu\unotype.hxx
+
+..\inc\com\sun\star\uno\Reference.h %_DEST%\inc%_EXT%\com\sun\star\uno\Reference.h
+..\inc\com\sun\star\uno\Reference.hxx %_DEST%\inc%_EXT%\com\sun\star\uno\Reference.hxx
+..\inc\com\sun\star\uno\Type.h %_DEST%\inc%_EXT%\com\sun\star\uno\Type.h
+..\inc\com\sun\star\uno\Type.hxx %_DEST%\inc%_EXT%\com\sun\star\uno\Type.hxx
+..\inc\com\sun\star\uno\Any.h %_DEST%\inc%_EXT%\com\sun\star\uno\Any.h
+..\inc\com\sun\star\uno\Any.hxx %_DEST%\inc%_EXT%\com\sun\star\uno\Any.hxx
+..\inc\com\sun\star\uno\Sequence.h %_DEST%\inc%_EXT%\com\sun\star\uno\Sequence.h
+..\inc\com\sun\star\uno\Sequence.hxx %_DEST%\inc%_EXT%\com\sun\star\uno\Sequence.hxx
+..\inc\com\sun\star\uno\genfunc.h %_DEST%\inc%_EXT%\com\sun\star\uno\genfunc.h
+..\inc\com\sun\star\uno\genfunc.hxx %_DEST%\inc%_EXT%\com\sun\star\uno\genfunc.hxx
+
+..\inc\typelib\typeclass.h %_DEST%\inc%_EXT%\typelib\typeclass.h
+..\inc\typelib\typedescription.h %_DEST%\inc%_EXT%\typelib\typedescription.h
+..\inc\typelib\typedescription.hxx %_DEST%\inc%_EXT%\typelib\typedescription.hxx
+..\inc\typelib\uik.h %_DEST%\inc%_EXT%\typelib\uik.h
+
+..\inc\uno\dispatcher.h %_DEST%\inc%_EXT%\uno\dispatcher.h
+..\inc\uno\dispatcher.hxx %_DEST%\inc%_EXT%\uno\dispatcher.hxx
+..\inc\uno\any2.h %_DEST%\inc%_EXT%\uno\any2.h
+..\inc\uno\sequence2.h %_DEST%\inc%_EXT%\uno\sequence2.h
+..\inc\uno\data.h %_DEST%\inc%_EXT%\uno\data.h
+..\inc\uno\lbnames.h %_DEST%\inc%_EXT%\uno\lbnames.h
+..\inc\uno\environment.h %_DEST%\inc%_EXT%\uno\environment.h
+..\inc\uno\environment.hxx %_DEST%\inc%_EXT%\uno\environment.hxx
+..\inc\uno\mapping.h %_DEST%\inc%_EXT%\uno\mapping.h
+..\inc\uno\mapping.hxx %_DEST%\inc%_EXT%\uno\mapping.hxx
+..\inc\uno\threadpool.h %_DEST%\inc%_EXT%\uno\threadpool.h
+..\inc\uno\current_context.h %_DEST%\inc%_EXT%\uno\current_context.h
+..\inc\uno\current_context.hxx %_DEST%\inc%_EXT%\uno\current_context.hxx
+..\inc\uno\cuno.h %_DEST%\inc%_EXT%\uno\cuno.h
+..\inc\uno\EnvDcp.h              %_DEST%\inc%_EXT%\uno\EnvDcp.h
+..\inc\uno\Enterable.h           %_DEST%\inc%_EXT%\uno\Enterable.h
+
+..\inc\cppu\EnvDcp.hxx           %_DEST%\inc%_EXT%\cppu\EnvDcp.hxx
+..\inc\cppu\Enterable.hxx        %_DEST%\inc%_EXT%\cppu\Enterable.hxx
+..\inc\cppu\EnvGuards.hxx        %_DEST%\inc%_EXT%\cppu\EnvGuards.hxx
+..\inc\cppu\FreeReference.hxx    %_DEST%\inc%_EXT%\cppu\FreeReference.hxx
+..\inc\cppu\Map.hxx              %_DEST%\inc%_EXT%\cppu\Map.hxx
+..\inc\cppu\Shield.hxx           %_DEST%\inc%_EXT%\cppu\Shield.hxx
+
+..\inc\cppu\helper\purpenv\Environment.hxx  %_DEST%\inc%_EXT%\cppu\helper\purpenv\Environment.hxx
+..\inc\cppu\helper\purpenv\Mapping.hxx      %_DEST%\inc%_EXT%\cppu\helper\purpenv\Mapping.hxx
+
+..\%__SRC%\lib\icppu.lib %_DEST%\lib%_EXT%\icppu.lib
+..\%__SRC%\lib\cppu*.lib %_DEST%\lib%_EXT%\*
+..\%__SRC%\bin\cppu* %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\libuno_cppu.*.* %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\lib\ipurpenvhelper*        %_DEST%\lib%_EXT%\*
+..\%__SRC%\bin\purpe*.dll     %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\libuno_purpenvhelper*.*.* %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\bin\unsafe_u*.dll    %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\libunsafe_uno_uno.*    %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\bin\affine_u*.dll   %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\libaffine_uno_uno.*   %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\bin\log_u*.dll   %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\liblog_uno_uno.*   %_DEST%\lib%_EXT%\*
+
+linklib: libuno_cppu.*.*
+linklib: libuno_purpenvhelper*.*.*
+
+Source Files:
+inc\pch\precompiled_cppu.cxx
+qa\test_any.cxx
+qa\test_recursion.cxx
+qa\test_reference.cxx
+qa\test_unotype.cxx
+source\AffineBridge\AffineBridge.cxx
+source\cppu\cppu_opt.cxx
+source\helper\purpenv\helper_purpenv_Environment.cxx
+source\helper\purpenv\helper_purpenv_Mapping.cxx
+source\helper\purpenv\helper_purpenv_Proxy.cxx
+source\LogBridge\LogBridge.cxx
+source\threadpool\current.cxx
+source\threadpool\jobqueue.cxx
+source\threadpool\thread.cxx
+source\threadpool\threadident.cxx
+source\threadpool\threadpool.cxx
+source\typelib\static_types.cxx
+source\typelib\typelib.cxx
+source\uno\any.cxx
+source\uno\cascade_mapping.cxx
+source\uno\data.cxx
+source\uno\EnvDcp.c
+source\uno\EnvStack.cxx
+source\uno\env_subst.cxx
+source\uno\IdentityMapping.cxx
+source\uno\lbenv.cxx
+source\uno\lbmap.cxx
+source\uno\loadmodule.cxx
+source\uno\sequence.cxx
+source\UnsafeBridge\UnsafeBridge.cxx
+
+Header Files:
+inc\com\sun\star\uno\Any.h
+inc\com\sun\star\uno\Any.hxx
+inc\com\sun\star\uno\genfunc.h
+inc\com\sun\star\uno\genfunc.hxx
+inc\com\sun\star\uno\Reference.h
+inc\com\sun\star\uno\Reference.hxx
+inc\com\sun\star\uno\Sequence.h
+inc\com\sun\star\uno\Sequence.hxx
+inc\com\sun\star\uno\Type.h
+inc\com\sun\star\uno\Type.hxx
+inc\cppu\Enterable.hxx
+inc\cppu\EnvDcp.hxx
+inc\cppu\EnvGuards.hxx
+inc\cppu\FreeReference.hxx
+inc\cppu\macros.hxx
+inc\cppu\Map.hxx
+inc\cppu\Shield.hxx
+inc\cppu\unotype.hxx
+inc\cppu\helper\purpenv\Environment.hxx
+inc\cppu\helper\purpenv\Mapping.hxx
+inc\pch\precompiled_cppu.hxx
+inc\typelib\typeclass.h
+inc\typelib\typedescription.h
+inc\typelib\typedescription.hxx
+inc\typelib\uik.h
+inc\uno\any2.h
+inc\uno\cuno.h
+inc\uno\current_context.h
+inc\uno\current_context.hxx
+inc\uno\data.h
+inc\uno\dispatcher.h
+inc\uno\dispatcher.hxx
+inc\uno\Enterable.h
+inc\uno\EnvDcp.h
+inc\uno\environment.h
+inc\uno\environment.hxx
+inc\uno\lbnames.h
+inc\uno\mapping.h
+inc\uno\mapping.hxx
+inc\uno\sequence2.h
+inc\uno\threadpool.h
+source\helper\purpenv\Proxy.hxx
+source\threadpool\current.hxx
+source\threadpool\jobqueue.hxx
+source\threadpool\thread.hxx
+source\threadpool\threadpool.hxx
+source\uno\assign.hxx
+source\uno\cascade_mapping.hxx
+source\uno\constr.hxx
+source\uno\copy.hxx
+source\uno\destr.hxx
+source\uno\env_subst.hxx
+source\uno\eq.hxx
+source\uno\IdentityMapping.hxx
+source\uno\loadmodule.hxx
+source\uno\prim.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=cppu
+	TARGET=inc
+
+qa\makefile.mk
+	PRJNAME:=cppu
+	TARGET:=qa
+	SLOFILES=$(SHL1OBJS)$(SHL2OBJS)$(SHL3OBJS)$(SHL4OBJS)
+
+source\AffineBridge\makefile.mk
+	PRJNAME:=cppu
+	TARGET:=AffineBridge
+	SLOFILES:=$(SLO)$/AffineBridge.obj
+
+source\cppu\makefile.mk
+	PRJNAME=cppu
+	TARGET=cppu_cppu
+	SLOFILES=
+	$(SLO)$/cppu_opt.obj
+
+source\helper\purpenv\export.mk
+
+source\helper\purpenv\makefile.mk
+	PRJNAME:=cppu
+	TARGET:=helper_purpenv
+	SLOFILES:=
+	$(SLO)$/helper_purpenv_Environment.obj
+	$(SLO)$/helper_purpenv_Mapping.obj
+	$(SLO)$/helper_purpenv_Proxy.obj
+
+source\LogBridge\makefile.mk
+	PRJNAME:=cppu
+	TARGET:=LogBridge
+	SLOFILES:=$(SLO)$/LogBridge.obj
+
+source\threadpool\makefile.mk
+	PRJNAME=cppu
+	TARGET=cppu_threadpool
+	SLOFILES=
+	$(SLO)$/threadpool.obj
+	$(SLO)$/jobqueue.obj
+	$(SLO)$/thread.obj
+	$(SLO)$/threadident.obj
+	$(SLO)$/current.obj
+
+source\typelib\makefile.mk
+	PRJNAME=cppu
+	TARGET=cppu_typelib
+	SLOFILES=
+	$(SLO)$/typelib.obj
+	$(SLO)$/static_types.obj
+
+source\uno\makefile.mk
+	PRJNAME=cppu
+	TARGET=cppu_uno
+	SLOFILES=
+	$(SLO)$/data.obj
+	$(SLO)$/sequence.obj
+	$(SLO)$/any.obj
+	$(SLO)$/lbmap.obj
+	$(SLO)$/lbenv.obj
+	$(SLO)$/IdentityMapping.obj
+	$(SLO)$/EnvDcp.obj
+	$(SLO)$/cascade_mapping.obj
+	$(SLO)$/EnvStack.obj
+	$(SLO)$/env_subst.obj
+	$(SLO)$/loadmodule.obj
+
+source\UnsafeBridge\makefile.mk
+	PRJNAME:=cppu
+	TARGET:=UnsafeBridge
+	SLOFILES:=$(SLO)$/UnsafeBridge.obj
+
+util\extra.mk
+	PRJNAME:=cppu
+	TARGET:=cppu
+
+util\makefile.mk
+	PRJNAME=cppu
+	TARGET=cppu
+
+util\makefile.pmk
+
+util\target.pmk

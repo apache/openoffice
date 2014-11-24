@@ -1,0 +1,22 @@
+Name:
+vigra
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\vigra
+
+..\%__SRC%\misc\build\vigra1.6.0\include\vigra\*.hxx %_DEST%\inc%_EXT%\vigra\*.hxx
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=vigra
+	TARGET=vigra

@@ -1,0 +1,52 @@
+Name:
+padmin
+
+Dependencies:
+vcl svtools NULL
+
+Build Rules:
+
+
+Source Files:
+source\adddlg.cxx
+source\cmddlg.cxx
+source\desktopcontext.cxx
+source\fontentry.cxx
+source\helper.cxx
+source\newppdlg.cxx
+source\padialog.cxx
+source\pamain.cxx
+source\progress.cxx
+source\prtsetup.cxx
+source\titlectrl.cxx
+
+Header Files:
+source\adddlg.hxx
+source\cmddlg.hxx
+source\desktopcontext.hxx
+source\fontentry.hxx
+source\helper.hxx
+source\newppdlg.hxx
+source\padialog.hrc
+source\padialog.hxx
+source\progress.hxx
+source\prtsetup.hxx
+source\rtsetup.hrc
+source\titlectrl.hxx
+
+Patch Files:
+
+Makefiles:
+
+AllLangResTarget_spa.mk
+
+Library_spa.mk
+
+Makefile.gb
+
+Module_padmin.mk
+
+Package_inc.mk
+
+prj\makefile.mk
+	TARGET=prj

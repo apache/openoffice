@@ -1,0 +1,129 @@
+Name:
+configmgr
+
+Dependencies:
+BOOST:boost LIBXSLT:libxslt comphelper cppu cppuhelper offuh sal salhelper stlport xmlreader NULL
+
+Build Rules:
+..\%__SRC%\bin\configmg*.dll %_DEST%\bin%_EXT%\configmg*.dll
+..\%__SRC%\lib\configmgr.uno.dylib %_DEST%\lib%_EXT%\configmgr.uno.dylib
+..\%__SRC%\lib\configmgr.uno.so %_DEST%\lib%_EXT%\configmgr.uno.so
+..\%__SRC%\misc\configmgr.component %_DEST%\xml%_EXT%\configmgr.component
+
+Source Files:
+inc\pch\precompiled_configmgr.cxx
+qa\unit\test.cxx
+source\access.cxx
+source\broadcaster.cxx
+source\childaccess.cxx
+source\components.cxx
+source\configurationprovider.cxx
+source\configurationregistry.cxx
+source\data.cxx
+source\defaultprovider.cxx
+source\groupnode.cxx
+source\localizedpropertynode.cxx
+source\localizedvaluenode.cxx
+source\lock.cxx
+source\modifications.cxx
+source\node.cxx
+source\nodemap.cxx
+source\parsemanager.cxx
+source\partial.cxx
+source\propertynode.cxx
+source\rootaccess.cxx
+source\services.cxx
+source\setnode.cxx
+source\type.cxx
+source\update.cxx
+source\valueparser.cxx
+source\writemodfile.cxx
+source\xcdparser.cxx
+source\xcsparser.cxx
+source\xcuparser.cxx
+source\xmldata.cxx
+
+Header Files:
+inc\pch\precompiled_configmgr.hxx
+source\access.hxx
+source\additions.hxx
+source\broadcaster.hxx
+source\childaccess.hxx
+source\components.hxx
+source\configurationprovider.hxx
+source\configurationregistry.hxx
+source\data.hxx
+source\defaultprovider.hxx
+source\groupnode.hxx
+source\localizedpropertynode.hxx
+source\localizedvaluenode.hxx
+source\lock.hxx
+source\modifications.hxx
+source\node.hxx
+source\nodemap.hxx
+source\parsemanager.hxx
+source\parser.hxx
+source\partial.hxx
+source\path.hxx
+source\propertynode.hxx
+source\rootaccess.hxx
+source\setnode.hxx
+source\type.hxx
+source\update.hxx
+source\valueparser.hxx
+source\writemodfile.hxx
+source\xcdparser.hxx
+source\xcsparser.hxx
+source\xcuparser.hxx
+source\xmldata.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=configmgr
+	TARGET=inc
+
+qa\unit\makefile.mk
+	PRJNAME=configmgr
+	TARGET=unit
+	SLOFILES=$(SLO)/test.obj
+
+qa\unoapi\makefile.mk
+	PRJNAME=configmgr
+	TARGET=qa_unoapi
+
+source\makefile.mk
+	PRJNAME=configmgr
+	TARGET=configmgr
+	SLOFILES=
+	$(SLO)/access.obj
+	$(SLO)/broadcaster.obj
+	$(SLO)/childaccess.obj
+	$(SLO)/components.obj
+	$(SLO)/configurationprovider.obj
+	$(SLO)/configurationregistry.obj
+	$(SLO)/data.obj
+	$(SLO)/defaultprovider.obj
+	$(SLO)/groupnode.obj
+	$(SLO)/localizedpropertynode.obj
+	$(SLO)/localizedvaluenode.obj
+	$(SLO)/lock.obj
+	$(SLO)/modifications.obj
+	$(SLO)/node.obj
+	$(SLO)/nodemap.obj
+	$(SLO)/parsemanager.obj
+	$(SLO)/partial.obj
+	$(SLO)/propertynode.obj
+	$(SLO)/rootaccess.obj
+	$(SLO)/services.obj
+	$(SLO)/setnode.obj
+	$(SLO)/type.obj
+	$(SLO)/update.obj
+	$(SLO)/valueparser.obj
+	$(SLO)/writemodfile.obj
+	$(SLO)/xcdparser.obj
+	$(SLO)/xcsparser.obj
+	$(SLO)/xcuparser.obj
+	$(SLO)/xmldata.obj

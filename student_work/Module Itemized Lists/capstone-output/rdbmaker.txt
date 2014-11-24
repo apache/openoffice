@@ -1,0 +1,54 @@
+Name:
+rdbmaker
+
+Dependencies:
+cppuhelper NULL
+
+Build Rules:
+..\%__SRC%\bin\rdbmaker.exe %_DEST%\bin%_EXT%\rdbmaker.exe
+..\%__SRC%\bin\rdbmaker.pdb %_DEST%\bin%_EXT%\rdbmaker.pdb
+
+..\%__SRC%\bin\rdbmaker %_DEST%\bin%_EXT%\rdbmaker
+
+Source Files:
+source\codemaker\dependency.cxx
+source\codemaker\global.cxx
+source\codemaker\options.cxx
+source\codemaker\typemanager.cxx
+source\rdbmaker\rdbmaker.cxx
+source\rdbmaker\rdboptions.cxx
+source\rdbmaker\rdbtype.cxx
+source\rdbmaker\specialtypemanager.cxx
+source\rdbmaker\typeblop.cxx
+
+Header Files:
+inc\codemaker\dependency.hxx
+inc\codemaker\global.hxx
+inc\codemaker\options.hxx
+inc\codemaker\registry.hxx
+inc\codemaker\typemanager.hxx
+source\rdbmaker\rdboptions.hxx
+source\rdbmaker\rdbtype.hxx
+source\rdbmaker\specialtypemanager.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\codemaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=$(PRJNAME)
+	OBJFILES=
+	$(OBJ)$/global.obj
+	$(OBJ)$/options.obj
+	$(OBJ)$/typemanager.obj
+	$(OBJ)$/dependency.obj
+
+source\rdbmaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=rdbmaker
+	OBJFILES=$(OBJ)$/rdbmaker.obj
+	$(OBJ)$/rdboptions.obj
+	$(OBJ)$/typeblop.obj
+	$(OBJ)$/specialtypemanager.obj
+	$(OBJ)$/rdbtype.obj

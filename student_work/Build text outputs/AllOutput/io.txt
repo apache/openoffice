@@ -1,0 +1,423 @@
+io
+=============
+
+Entering /cygdrive/c/steve/testarea/main/io/inc
+
+mkout -- version: 1.8
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkOBh7ov
+precompiled_io.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mk70A23m
+precompiled_io.cxx
+
+Entering /cygdrive/c/steve/testarea/main/io/source/TextInputStream
+
+Making:    all_textinstream.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/textinstream.uno_version.h/ > ../../wntmsci12.pro/misc/textinstream.uno_version.c
+Compiling: io/wntmsci12.pro/misc/textinstream.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/textinstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/textinstream.uno_version.obj ../../wntmsci12.pro/misc/textinstream.uno_version.c
+textinstream.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkJOipYK > ../../wntmsci12.pro/misc/s_textinstream.uno_version.dpcc
+Compiling: io/source/TextInputStream/TextInputStream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/textinstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/TextInputStream.obj C:/steve/testarea/main/io/source/TextInputStream/TextInputStream.cxx 
+TextInputStream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkTChBhG > ../../wntmsci12.pro/misc/s_TextInputStream.dpcc
+Making:    textinstream.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/textinstream.uno.lib @C:/cygwin/tmp/mk9kngPG
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/TextInputStream.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_textinstream.uno.dxp
+Making:    module definition file textinstream.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_textinstream.uno.dxp >> ../../wntmsci12.pro/misc/textinstream.uno.def.tmpfile
+Making:    itextinstream.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkpKk6ji
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/itextinstream.uno.lib -def:../../wntmsci12.pro/misc/textinstream.uno.def 
+   Creating library ../../wntmsci12.pro/lib/itextinstream.uno.lib and object ../../wntmsci12.pro/lib/itextinstream.uno.exp
+Making:    textinstream.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/textinstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/textinstream.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/textinstream.uno_def.res > ../../wntmsci12.pro/misc/textinstream.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkNy5cOD
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/textinstream.uno.dll -map:../../wntmsci12.pro/misc/textinstream.uno.map ../../wntmsci12.pro/lib/itextinstream.uno.exp ../../wntmsci12.pro/slo/textinstream.uno_version.obj ../../wntmsci12.pro/slb/textinstream.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/textinstream.uno.res 
+linking ../../wntmsci12.pro/bin/textinstream.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/textinstream.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/textinstream.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/textinstream.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/textinstream.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/textinstream.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/textinstream.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/textinstream.uno.dll.tmanifest ; fi
+Making:    all_textinstream.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/textinstream.uno.dll' -o ../../wntmsci12.pro/misc/textinstream.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt textinstream.component
+
+Entering /cygdrive/c/steve/testarea/main/io/source/TextOutputStream
+
+Making:    all_textoutstream.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/textoutstream.uno_version.h/ > ../../wntmsci12.pro/misc/textoutstream.uno_version.c
+Compiling: io/wntmsci12.pro/misc/textoutstream.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/textoutstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/textoutstream.uno_version.obj ../../wntmsci12.pro/misc/textoutstream.uno_version.c
+textoutstream.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkxRCJw3 > ../../wntmsci12.pro/misc/s_textoutstream.uno_version.dpcc
+Compiling: io/source/TextOutputStream/TextOutputStream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/textoutstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/TextOutputStream.obj C:/steve/testarea/main/io/source/TextOutputStream/TextOutputStream.cxx 
+TextOutputStream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkCxTXCG > ../../wntmsci12.pro/misc/s_TextOutputStream.dpcc
+Making:    textoutstream.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/textoutstream.uno.lib @C:/cygwin/tmp/mklya13H
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/TextOutputStream.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_textoutstream.uno.dxp
+Making:    module definition file textoutstream.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_textoutstream.uno.dxp >> ../../wntmsci12.pro/misc/textoutstream.uno.def.tmpfile
+Making:    itextoutstream.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkVhOlS2
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/itextoutstream.uno.lib -def:../../wntmsci12.pro/misc/textoutstream.uno.def 
+   Creating library ../../wntmsci12.pro/lib/itextoutstream.uno.lib and object ../../wntmsci12.pro/lib/itextoutstream.uno.exp
+Making:    textoutstream.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/textoutstream.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/textoutstream.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/textoutstream.uno_def.res > ../../wntmsci12.pro/misc/textoutstream.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mk6eTVvT
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/textoutstream.uno.dll -map:../../wntmsci12.pro/misc/textoutstream.uno.map ../../wntmsci12.pro/lib/itextoutstream.uno.exp ../../wntmsci12.pro/slo/textoutstream.uno_version.obj ../../wntmsci12.pro/slb/textoutstream.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/textoutstream.uno.res 
+linking ../../wntmsci12.pro/bin/textoutstream.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/textoutstream.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/textoutstream.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/textoutstream.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/textoutstream.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/textoutstream.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/textoutstream.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/textoutstream.uno.dll.tmanifest ; fi
+Making:    all_textoutstream.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/textoutstream.uno.dll' -o ../../wntmsci12.pro/misc/textoutstream.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt textoutstream.component
+
+Entering /cygdrive/c/steve/testarea/main/io/source/stm
+
+cp stm.xml ../../wntmsci12.pro/misc/stm.xml
+Making:    all_streams.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/streams.uno_version.h/ > ../../wntmsci12.pro/misc/streams.uno_version.c
+Compiling: io/wntmsci12.pro/misc/streams.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/streams.uno_version.obj ../../wntmsci12.pro/misc/streams.uno_version.c
+streams.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk9jLWCt > ../../wntmsci12.pro/misc/s_streams.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkciP4W9 && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/streams.uno_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/stm.rdb @C:/cygwin/tmp/mkQlQxOJ
+Compiling: io/source/stm/opipe.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/opipe.obj C:/steve/testarea/main/io/source/stm/opipe.cxx 
+opipe.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkjgCLZT > ../../wntmsci12.pro/misc/s_opipe.dpcc
+Compiling: io/source/stm/factreg.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/factreg.obj C:/steve/testarea/main/io/source/stm/factreg.cxx 
+factreg.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkdtpMW1 > ../../wntmsci12.pro/misc/s_factreg.dpcc
+Compiling: io/source/stm/omark.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/omark.obj C:/steve/testarea/main/io/source/stm/omark.cxx 
+omark.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mktHjNXo > ../../wntmsci12.pro/misc/s_omark.dpcc
+Compiling: io/source/stm/odata.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/odata.obj C:/steve/testarea/main/io/source/stm/odata.cxx 
+odata.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>,
+            _Ax=std::allocator<std::pair<const com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>,
+            _Ax=std::allocator<std::pair<const com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32,stdext::_Hash_compare<com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,io_stm::hashObjectContainer_Impl,io_stm::equalObjectContainer_Impl>,std::allocator<std::pair<com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,
+            _Ty=sal_Int32,
+            _Hasher=io_stm::hashObjectContainer_Impl,
+            _Keyeq=io_stm::equalObjectContainer_Impl,
+            _Alloc=std::allocator<std::pair<com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,sal_Int32>>
+        ]
+        C:/steve/testarea/main/io/source/stm/odata.cxx(1049) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=com::sun::star::uno::Reference<com::sun::star::uno::XInterface>,
+            __T=sal_Int32,
+            __H=io_stm::hashObjectContainer_Impl,
+            __E=io_stm::equalObjectContainer_Impl
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkIIuGXt > ../../wntmsci12.pro/misc/s_odata.dpcc
+Compiling: io/source/stm/streamhelper.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/streamhelper.obj C:/steve/testarea/main/io/source/stm/streamhelper.cxx 
+streamhelper.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8WveGV > ../../wntmsci12.pro/misc/s_streamhelper.dpcc
+Compiling: io/source/stm/opump.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/opump.obj C:/steve/testarea/main/io/source/stm/opump.cxx 
+opump.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkNjSIWi > ../../wntmsci12.pro/misc/s_opump.dpcc
+Making:    streams.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/streams.uno.lib @C:/cygwin/tmp/mkhJwPd3
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/opipe.obj 
+../../wntmsci12.pro/slo/factreg.obj 
+../../wntmsci12.pro/slo/omark.obj 
+../../wntmsci12.pro/slo/odata.obj 
+../../wntmsci12.pro/slo/streamhelper.obj 
+../../wntmsci12.pro/slo/opump.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_streams.uno.dxp
+Making:    module definition file streams.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_streams.uno.dxp >> ../../wntmsci12.pro/misc/streams.uno.def.tmpfile
+Making:    istreams.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkUo2aAg
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/istreams.uno.lib -def:../../wntmsci12.pro/misc/streams.uno.def 
+   Creating library ../../wntmsci12.pro/lib/istreams.uno.lib and object ../../wntmsci12.pro/lib/istreams.uno.exp
+Making:    streams.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/stm -I../../wntmsci12.pro/inc/stm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/streams.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/streams.uno_def.res > ../../wntmsci12.pro/misc/streams.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkQwW2Se
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/streams.uno.dll -map:../../wntmsci12.pro/misc/streams.uno.map ../../wntmsci12.pro/lib/istreams.uno.exp ../../wntmsci12.pro/slo/streams.uno_version.obj ../../wntmsci12.pro/slb/streams.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/streams.uno.res 
+linking ../../wntmsci12.pro/bin/streams.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/streams.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/streams.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/streams.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/streams.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/streams.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/streams.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/streams.uno.dll.tmanifest ; fi
+Making:    all_streams.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/streams.uno.dll' -o ../../wntmsci12.pro/misc/streams.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt streams.component
+
+Entering /cygdrive/c/steve/testarea/main/io/source/connector
+
+cp connectr.xml ../../wntmsci12.pro/misc/connectr.xml
+Making:    all_connector.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/connector.uno_version.h/ > ../../wntmsci12.pro/misc/connector.uno_version.c
+Compiling: io/wntmsci12.pro/misc/connector.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/connector -I../../wntmsci12.pro/inc/connector -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/connector.uno_version.obj ../../wntmsci12.pro/misc/connector.uno_version.c
+connector.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkF8GMxb > ../../wntmsci12.pro/misc/s_connector.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkkVk2vS && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/connector.uno_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/connectr.rdb @C:/cygwin/tmp/mklyXMeK
+Compiling: io/source/connector/connector.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/connector -I../../wntmsci12.pro/inc/connector -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/connector.obj C:/steve/testarea/main/io/source/connector/connector.cxx 
+connector.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkDGiJYb > ../../wntmsci12.pro/misc/s_connector.dpcc
+Compiling: io/source/connector/ctr_pipe.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/connector -I../../wntmsci12.pro/inc/connector -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/ctr_pipe.obj C:/steve/testarea/main/io/source/connector/ctr_pipe.cxx 
+ctr_pipe.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkg6NSS2 > ../../wntmsci12.pro/misc/s_ctr_pipe.dpcc
+Compiling: io/source/connector/ctr_socket.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/connector -I../../wntmsci12.pro/inc/connector -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/ctr_socket.obj C:/steve/testarea/main/io/source/connector/ctr_socket.cxx 
+ctr_socket.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Ax=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Ax=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_set(65) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Uset_traits<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,stdext::_Hash_compare<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,stoc_connector::ReferenceHash<com::sun::star::io::XStreamListener>,stoc_connector::ReferenceEqual<com::sun::star::io::XStreamListener>>,std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_set(56) : see reference to class template instantiation 'std::tr1::unordered_set<_Kty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Hasher=stoc_connector::ReferenceHash<com::sun::star::io::XStreamListener>,
+            _Keyeq=stoc_connector::ReferenceEqual<com::sun::star::io::XStreamListener>,
+            _Alloc=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>
+        ]
+        c:\steve\testarea\main\io\source\connector\connector.hxx(136) : see reference to class template instantiation 'std::hash_set<__K,__H,__E>' being compiled
+        with
+        [
+            __K=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            __H=stoc_connector::ReferenceHash<com::sun::star::io::XStreamListener>,
+            __E=stoc_connector::ReferenceEqual<com::sun::star::io::XStreamListener>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkh9hM74 > ../../wntmsci12.pro/misc/s_ctr_socket.dpcc
+Making:    connector.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/connector.uno.lib @C:/cygwin/tmp/mkjyHgNX
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/connector.obj 
+../../wntmsci12.pro/slo/ctr_pipe.obj 
+../../wntmsci12.pro/slo/ctr_socket.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_connector.uno.dxp
+Making:    module definition file connector.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_connector.uno.dxp >> ../../wntmsci12.pro/misc/connector.uno.def.tmpfile
+Making:    iconnector.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkxYL35P
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/iconnector.uno.lib -def:../../wntmsci12.pro/misc/connector.uno.def 
+   Creating library ../../wntmsci12.pro/lib/iconnector.uno.lib and object ../../wntmsci12.pro/lib/iconnector.uno.exp
+Making:    connector.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/connector -I../../wntmsci12.pro/inc/connector -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/connector.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/connector.uno_def.res > ../../wntmsci12.pro/misc/connector.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkaQmLxL
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/connector.uno.dll -map:../../wntmsci12.pro/misc/connector.uno.map ../../wntmsci12.pro/lib/iconnector.uno.exp ../../wntmsci12.pro/slo/connector.uno_version.obj ../../wntmsci12.pro/slb/connector.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/connector.uno.res 
+linking ../../wntmsci12.pro/bin/connector.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/connector.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/connector.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/connector.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/connector.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/connector.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/connector.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/connector.uno.dll.tmanifest ; fi
+Making:    all_connector.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/connector.uno.dll' -o ../../wntmsci12.pro/misc/connector.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt connector.component
+
+Entering /cygdrive/c/steve/testarea/main/io/source/acceptor
+
+cp acceptor.xml ../../wntmsci12.pro/misc/acceptor.xml
+Making:    all_acceptor.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/acceptor.uno_version.h/ > ../../wntmsci12.pro/misc/acceptor.uno_version.c
+Compiling: io/wntmsci12.pro/misc/acceptor.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/acceptor -I../../wntmsci12.pro/inc/acceptor -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/acceptor.uno_version.obj ../../wntmsci12.pro/misc/acceptor.uno_version.c
+acceptor.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkKQMrAl > ../../wntmsci12.pro/misc/s_acceptor.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mk5NlZAf && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/acceptor.uno_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/acceptor.rdb @C:/cygwin/tmp/mkdqRVRI
+Compiling: io/source/acceptor/acceptor.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/acceptor -I../../wntmsci12.pro/inc/acceptor -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/acceptor.obj C:/steve/testarea/main/io/source/acceptor/acceptor.cxx 
+acceptor.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkgEO0Ds > ../../wntmsci12.pro/misc/s_acceptor.dpcc
+Compiling: io/source/acceptor/acc_pipe.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/acceptor -I../../wntmsci12.pro/inc/acceptor -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/acc_pipe.obj C:/steve/testarea/main/io/source/acceptor/acc_pipe.cxx 
+acc_pipe.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkNKzKGA > ../../wntmsci12.pro/misc/s_acc_pipe.dpcc
+Compiling: io/source/acceptor/acc_socket.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_io.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_io.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/acceptor -I../../wntmsci12.pro/inc/acceptor -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/acc_socket.obj C:/steve/testarea/main/io/source/acceptor/acc_socket.cxx 
+acc_socket.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Ax=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Ax=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_set(65) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Uset_traits<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,stdext::_Hash_compare<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,io_acceptor::ReferenceHash<com::sun::star::io::XStreamListener>,io_acceptor::ReferenceEqual<com::sun::star::io::XStreamListener>>,std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_set(56) : see reference to class template instantiation 'std::tr1::unordered_set<_Kty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            _Hasher=io_acceptor::ReferenceHash<com::sun::star::io::XStreamListener>,
+            _Keyeq=io_acceptor::ReferenceEqual<com::sun::star::io::XStreamListener>,
+            _Alloc=std::allocator<com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>>
+        ]
+        C:/steve/testarea/main/io/source/acceptor/acc_socket.cxx(115) : see reference to class template instantiation 'std::hash_set<__K,__H,__E>' being compiled
+        with
+        [
+            __K=com::sun::star::uno::Reference<com::sun::star::io::XStreamListener>,
+            __H=io_acceptor::ReferenceHash<com::sun::star::io::XStreamListener>,
+            __E=io_acceptor::ReferenceEqual<com::sun::star::io::XStreamListener>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkM95DQy > ../../wntmsci12.pro/misc/s_acc_socket.dpcc
+Making:    acceptor.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/acceptor.uno.lib @C:/cygwin/tmp/mkEdea7s
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/acceptor.obj 
+../../wntmsci12.pro/slo/acc_pipe.obj 
+../../wntmsci12.pro/slo/acc_socket.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_acceptor.uno.dxp
+Making:    module definition file acceptor.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_acceptor.uno.dxp >> ../../wntmsci12.pro/misc/acceptor.uno.def.tmpfile
+Making:    iacceptor.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkDgiG6K
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/iacceptor.uno.lib -def:../../wntmsci12.pro/misc/acceptor.uno.def 
+   Creating library ../../wntmsci12.pro/lib/iacceptor.uno.lib and object ../../wntmsci12.pro/lib/iacceptor.uno.exp
+Making:    acceptor.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/acceptor -I../../wntmsci12.pro/inc/acceptor -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/acceptor.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/acceptor.uno_def.res > ../../wntmsci12.pro/misc/acceptor.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkoF2vrL
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/acceptor.uno.dll -map:../../wntmsci12.pro/misc/acceptor.uno.map ../../wntmsci12.pro/lib/iacceptor.uno.exp ../../wntmsci12.pro/slo/acceptor.uno_version.obj ../../wntmsci12.pro/slb/acceptor.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/acceptor.uno.res 
+linking ../../wntmsci12.pro/bin/acceptor.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/acceptor.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/acceptor.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/acceptor.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/acceptor.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/acceptor.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/acceptor.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/acceptor.uno.dll.tmanifest ; fi
+Making:    all_acceptor.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/acceptor.uno.dll' -o ../../wntmsci12.pro/misc/acceptor.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt acceptor.component
+io deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/io/build.lst
+COPY: ../wntmsci12.pro/bin/acceptor.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/acceptor.uno.dll
+COPY: ../wntmsci12.pro/bin/connector.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/connector.uno.dll
+COPY: ../wntmsci12.pro/bin/streams.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/streams.uno.dll
+COPY: ../wntmsci12.pro/bin/textinstream.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/textinstream.uno.dll
+COPY: ../wntmsci12.pro/bin/textoutstream.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/textoutstream.uno.dll
+COPY: ../wntmsci12.pro/bin/acceptor.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/acceptor.rdb
+COPY: ../wntmsci12.pro/bin/connectr.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/connectr.rdb
+COPY: ../wntmsci12.pro/bin/stm.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/stm.rdb
+COPY: ../source/acceptor/acceptor.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/acceptor.uno.xml
+COPY: ../source/connector/connectr.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/connector.uno.xml
+COPY: ../source/stm/stm.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/streams.uno.xml
+COPY: ../wntmsci12.pro/misc/acceptor.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/acceptor.component
+COPY: ../wntmsci12.pro/misc/connector.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/connector.component
+COPY: ../wntmsci12.pro/misc/streams.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/streams.component
+COPY: ../wntmsci12.pro/misc/textinstream.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/textinstream.component
+COPY: ../wntmsci12.pro/misc/textoutstream.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/textoutstream.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/io/deliver.log
+Module 'io' delivered successfully. 17 files copied, 0 files unchanged
+
+=============

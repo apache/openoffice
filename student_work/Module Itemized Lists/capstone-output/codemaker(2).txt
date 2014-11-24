@@ -1,0 +1,153 @@
+Name:
+codemaker
+
+Dependencies:
+udkapi NULL
+
+Build Rules:
+..\%__SRC%\bin\cppumaker.exe %_DEST%\bin%_EXT%\cppumaker.exe
+..\%__SRC%\bin\cppumaker.pdb %_DEST%\bin%_EXT%\cppumaker.pdb
+..\%__SRC%\bin\javamaker.exe %_DEST%\bin%_EXT%\javamaker.exe
+..\%__SRC%\bin\javamaker.pdb %_DEST%\bin%_EXT%\javamaker.pdb
+
+..\inc\codemaker\*.h %_DEST%\inc%_EXT%\codemaker\*.h
+..\inc\codemaker\*.hxx %_DEST%\inc%_EXT%\codemaker\*.hxx
+
+..\%__SRC%\bin\cppumaker %_DEST%\bin%_EXT%\cppumaker
+..\%__SRC%\bin\javamaker %_DEST%\bin%_EXT%\javamaker
+
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\lib\i*.lib %_DEST%\lib%_EXT%\i*.lib
+..\%__SRC%\lib\*.a %_DEST%\lib%_EXT%\*.a
+
+Source Files:
+inc\pch\precompiled_codemaker.cxx
+source\bonobowrappermaker\corbamaker.cxx
+source\bonobowrappermaker\corbaoptions.cxx
+source\bonobowrappermaker\corbatype.cxx
+source\codemaker\codemaker.cxx
+source\codemaker\dependencies.cxx
+source\codemaker\exceptiontree.cxx
+source\codemaker\global.cxx
+source\codemaker\options.cxx
+source\codemaker\typemanager.cxx
+source\codemaker\unotype.cxx
+source\commoncpp\commoncpp.cxx
+source\commonjava\commonjava.cxx
+source\cppumaker\cppumaker.cxx
+source\cppumaker\cppuoptions.cxx
+source\cppumaker\cpputype.cxx
+source\cppumaker\dumputils.cxx
+source\cppumaker\includes.cxx
+source\cunomaker\cunomaker.cxx
+source\cunomaker\cunooptions.cxx
+source\cunomaker\cunotype.cxx
+source\idlmaker\idlmaker.cxx
+source\idlmaker\idloptions.cxx
+source\idlmaker\idltype.cxx
+source\javamaker\classfile.cxx
+source\javamaker\javamaker.cxx
+source\javamaker\javaoptions.cxx
+source\javamaker\javatype.cxx
+test\cppumaker\test_codemaker_cppumaker.cxx
+
+Header Files:
+inc\codemaker\codemaker.hxx
+inc\codemaker\commoncpp.hxx
+inc\codemaker\commonjava.hxx
+inc\codemaker\dependencies.hxx
+inc\codemaker\exceptiontree.hxx
+inc\codemaker\generatedtypeset.hxx
+inc\codemaker\global.hxx
+inc\codemaker\options.hxx
+inc\codemaker\typemanager.hxx
+inc\codemaker\unotype.hxx
+inc\pch\precompiled_codemaker.hxx
+source\bonobowrappermaker\corbaoptions.hxx
+source\bonobowrappermaker\corbatype.hxx
+source\cppumaker\cppuoptions.hxx
+source\cppumaker\cpputype.hxx
+source\cppumaker\dumputils.hxx
+source\cppumaker\includes.hxx
+source\cunomaker\cunooptions.hxx
+source\cunomaker\cunotype.hxx
+source\idlmaker\idloptions.hxx
+source\idlmaker\idltype.hxx
+source\javamaker\classfile.hxx
+source\javamaker\javaoptions.hxx
+source\javamaker\javatype.hxx
+
+Patch Files:
+
+Makefiles:
+
+codemaker.pmk
+
+inc\makefile.mk
+	PRJNAME=codemaker
+	TARGET=inc
+
+source\bonobowrappermaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=bonobowrappermaker
+
+source\codemaker\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=codemaker
+	SLOFILES=
+	$(SLO)$/dependencies.obj
+	$(SLO)$/exceptiontree.obj
+	$(SLO)$/global.obj
+	$(SLO)$/options.obj
+	$(SLO)$/typemanager.obj
+	$(SLO)$/unotype.obj
+	$(SLO)$/codemaker.obj
+
+source\commoncpp\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=commoncpp
+	SLOFILES=$(SLO)$/commoncpp.obj
+
+source\commonjava\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=commonjava
+	SLOFILES=$(SLO)$/commonjava.obj
+
+source\cppumaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=cppumaker
+	OBJFILES=$(OBJ)$/cppumaker.obj
+	$(OBJ)$/cppuoptions.obj
+	$(OBJ)$/cpputype.obj
+	$(OBJ)$/dumputils.obj
+	$(OBJ)$/includes.obj
+
+source\cunomaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=cunomaker
+
+source\idlmaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=idlmaker
+
+source\javamaker\makefile.mk
+	PRJNAME=codemaker
+	TARGET=javamaker
+	OBJFILES=
+	$(OBJ)$/classfile.obj
+	$(OBJ)$/javamaker.obj
+	$(OBJ)$/javaoptions.obj
+	$(OBJ)$/javatype.obj
+
+test\cppumaker\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=test_codemaker_cppumaker
+	SLOFILES=$(SHL1OBJS)
+
+test\javamaker\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=test_codemaker_javamaker
+
+test\javamaker\java15\makefile.mk
+	PRJNAME:=codemaker
+	TARGET:=test_codemaker_javamaker_java15

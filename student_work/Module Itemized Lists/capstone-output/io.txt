@@ -1,0 +1,113 @@
+Name:
+io
+
+Dependencies:
+LIBXSLT:libxslt rdbmaker NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*
+..\%__SRC%\bin\*.rdb %_DEST%\rdb%_EXT%\*
+..\source\acceptor\acceptor.xml %_DEST%\xml%_EXT%\acceptor.uno.xml
+..\source\connector\connectr.xml %_DEST%\xml%_EXT%\connector.uno.xml
+..\source\stm\stm.xml %_DEST%\xml%_EXT%\streams.uno.xml
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*
+..\%__SRC%\misc\acceptor.component %_DEST%\xml%_EXT%\acceptor.component
+..\%__SRC%\misc\connector.component %_DEST%\xml%_EXT%\connector.component
+..\%__SRC%\misc\streams.component %_DEST%\xml%_EXT%\streams.component
+..\%__SRC%\misc\textinstream.component %_DEST%\xml%_EXT%\textinstream.component
+..\%__SRC%\misc\textoutstream.component %_DEST%\xml%_EXT%\textoutstream.component
+
+Source Files:
+inc\pch\precompiled_io.cxx
+source\acceptor\acceptor.cxx
+source\acceptor\acc_pipe.cxx
+source\acceptor\acc_socket.cxx
+source\connector\connector.cxx
+source\connector\ctr_pipe.cxx
+source\connector\ctr_socket.cxx
+source\stm\factreg.cxx
+source\stm\odata.cxx
+source\stm\omark.cxx
+source\stm\opipe.cxx
+source\stm\opump.cxx
+source\stm\streamhelper.cxx
+source\TextInputStream\TextInputStream.cxx
+source\TextOutputStream\TextOutputStream.cxx
+test\testcomponent.cxx
+test\testconnection.cxx
+test\stm\datatest.cxx
+test\stm\marktest.cxx
+test\stm\pipetest.cxx
+test\stm\pumptest.cxx
+test\stm\testfactreg.cxx
+
+Header Files:
+inc\pch\precompiled_io.hxx
+source\acceptor\acceptor.hxx
+source\connector\connector.hxx
+source\stm\factreg.hxx
+source\stm\streamhelper.hxx
+test\stm\testfactreg.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=io
+	TARGET=inc
+
+source\acceptor\makefile.mk
+	PRJNAME=io
+	TARGET=acceptor.uno
+	SLOFILES=
+	$(SLO)$/acceptor.obj
+	$(SLO)$/acc_pipe.obj
+	$(SLO)$/acc_socket.obj
+
+source\connector\makefile.mk
+	PRJNAME=io
+	TARGET=connector.uno
+	SLOFILES=
+	$(SLO)$/connector.obj
+	$(SLO)$/ctr_pipe.obj
+	$(SLO)$/ctr_socket.obj
+
+source\stm\makefile.mk
+	PRJNAME=io
+	TARGET=streams.uno
+	SLOFILES=$(SLO)$/opipe.obj
+	$(SLO)$/factreg.obj
+	$(SLO)$/omark.obj
+	$(SLO)$/odata.obj
+	$(SLO)$/streamhelper.obj
+	$(SLO)$/opump.obj
+
+source\TextInputStream\makefile.mk
+	PRJNAME=io
+	TARGET=textinstream.uno
+	SLOFILES=
+	$(SLO)$/TextInputStream.obj
+
+source\TextOutputStream\makefile.mk
+	PRJNAME=io
+	TARGET=textoutstream.uno
+	SLOFILES=
+	$(SLO)$/TextOutputStream.obj
+
+test\makefile.mk
+	PRJNAME=extensions
+	TARGET=workben
+	OBJFILES=$(OBJ)$/testcomponent.obj
+	$(OBJ)$/testconnection.obj
+
+test\stm\makefile.mk
+	PRJNAME=io
+	TARGET=teststm
+	SLOFILES=
+	$(SLO)$/testfactreg.obj
+	$(SLO)$/pipetest.obj
+	$(SLO)$/datatest.obj
+	$(SLO)$/marktest.obj
+	$(SLO)$/pumptest.obj

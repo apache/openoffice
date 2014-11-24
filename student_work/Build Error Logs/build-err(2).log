@@ -1,0 +1,24 @@
+$ build --all
+build -- version: 275224
+
+
+=============
+Building module solenv
+=============
+
+Entering /cygdrive/c/svn/capstone2013/main/solenv
+
+dmake:  Error executing 'mkout.pl': Permission denied
+dmake:  Error code -1, while making '/cygdrive/C/svn/capstone2013/main/solenv/wntmsci12.pro/inc/myworld.mk'
+
+1 module(s):
+        solenv
+need(s) to be rebuilt
+
+Reason(s):
+
+ERROR: error 65280 occurred while making /cygdrive/c/svn/capstone2013/main/solenv
+
+When you have fixed the errors in that module you can resume the build by running:
+
+        build --all:solenv

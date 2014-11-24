@@ -1,0 +1,90 @@
+Name:
+basebmp
+
+Dependencies:
+sal VIGRA:vigra basegfx BOOST:boost NULL
+
+Build Rules:
+..\%__SRC%\lib\ibasebmp.lib %_DEST%\lib%_EXT%\ibasebmp.lib
+
+..\%__SRC%\bin\basebmp?????.dll %_DEST%\bin%_EXT%\basebmp?????.dll
+
+..\%__SRC%\lib\libbasebmp*.* %_DEST%\lib%_EXT%\libbasebmp*.*
+..\%__SRC%\lib\*.a %_DEST%\lib%_EXT%\*.a
+
+mkdir: %_DEST%\inc%_EXT%\basebmp
+..\inc\basebmp\*.hxx %_DEST%\inc%_EXT%\basebmp\*.hxx
+
+Source Files:
+source\bitmapdevice.cxx
+source\debug.cxx
+source\polypolygonrenderer.cxx
+test\basictest.cxx
+test\bmpdemo.cxx
+test\bmpmasktest.cxx
+test\bmptest.cxx
+test\cliptest.cxx
+test\filltest.cxx
+test\linetest.cxx
+test\masktest.cxx
+test\polytest.cxx
+test\tools.cxx
+
+Header Files:
+inc\basebmp\accessor.hxx
+inc\basebmp\accessoradapters.hxx
+inc\basebmp\accessorfunctors.hxx
+inc\basebmp\accessortraits.hxx
+inc\basebmp\bitmapdevice.hxx
+inc\basebmp\clippedlinerenderer.hxx
+inc\basebmp\color.hxx
+inc\basebmp\colorblendaccessoradapter.hxx
+inc\basebmp\colormisc.hxx
+inc\basebmp\colortraits.hxx
+inc\basebmp\compositeiterator.hxx
+inc\basebmp\debug.hxx
+inc\basebmp\drawmodes.hxx
+inc\basebmp\endian.hxx
+inc\basebmp\fillimage.hxx
+inc\basebmp\genericcolorimageaccessor.hxx
+inc\basebmp\greylevelformats.hxx
+inc\basebmp\iteratortraits.hxx
+inc\basebmp\linerenderer.hxx
+inc\basebmp\metafunctions.hxx
+inc\basebmp\nonstandarditerator.hxx
+inc\basebmp\packedpixeliterator.hxx
+inc\basebmp\paletteformats.hxx
+inc\basebmp\paletteimageaccessor.hxx
+inc\basebmp\pixelformatadapters.hxx
+inc\basebmp\pixeliterator.hxx
+inc\basebmp\polypolygonrenderer.hxx
+inc\basebmp\rgb24pixelformats.hxx
+inc\basebmp\rgbmaskpixelformats.hxx
+inc\basebmp\scaleimage.hxx
+inc\basebmp\scanlineformats.hxx
+inc\basebmp\stridedarrayiterator.hxx
+inc\basebmp\tools.hxx
+inc\basebmp\truecolormaskaccessor.hxx
+source\intconversion.hxx
+test\tools.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\makefile.mk
+	PRJNAME=basebmp
+	TARGET=wrapper
+	SLOFILES=
+	$(SLO)$/bitmapdevice.obj
+	$(SLO)$/debug.obj
+	$(SLO)$/polypolygonrenderer.obj
+
+test\makefile.mk
+	PRJNAME=basebmp
+	TARGET=tests
+	SLOFILES=$(SHL1OBJS)
+
+util\makefile.mk
+	PRJNAME=basebmp
+	TARGET=basebmp

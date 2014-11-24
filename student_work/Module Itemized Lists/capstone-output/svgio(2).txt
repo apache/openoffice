@@ -1,0 +1,97 @@
+Name:
+svgio
+
+Dependencies:
+sal basegfx drawinglayer cppuhelper cppu svtools NULL
+
+Build Rules:
+
+Source Files:
+inc\pch\precompiled_svgio.cxx
+source\svgreader\svgcharacternode.cxx
+source\svgreader\svgcirclenode.cxx
+source\svgreader\svgclippathnode.cxx
+source\svgreader\svgdocument.cxx
+source\svgreader\svgdocumenthandler.cxx
+source\svgreader\svgellipsenode.cxx
+source\svgreader\svggnode.cxx
+source\svgreader\svggradientnode.cxx
+source\svgreader\svggradientstopnode.cxx
+source\svgreader\svgimagenode.cxx
+source\svgreader\svglinenode.cxx
+source\svgreader\svgmarkernode.cxx
+source\svgreader\svgmasknode.cxx
+source\svgreader\svgnode.cxx
+source\svgreader\svgpaint.cxx
+source\svgreader\svgpathnode.cxx
+source\svgreader\svgpatternnode.cxx
+source\svgreader\svgpolynode.cxx
+source\svgreader\svgrectnode.cxx
+source\svgreader\svgstyleattributes.cxx
+source\svgreader\svgstylenode.cxx
+source\svgreader\svgsvgnode.cxx
+source\svgreader\svgsymbolnode.cxx
+source\svgreader\svgtextnode.cxx
+source\svgreader\svgtextpathnode.cxx
+source\svgreader\svgtitledescnode.cxx
+source\svgreader\svgtoken.cxx
+source\svgreader\svgtools.cxx
+source\svgreader\svgtrefnode.cxx
+source\svgreader\svgtspannode.cxx
+source\svgreader\svgusenode.cxx
+source\svguno\svguno.cxx
+source\svguno\xsvgparser.cxx
+
+Header Files:
+inc\pch\precompiled_svgio.hxx
+inc\svgio\svgiodllapi.h
+inc\svgio\svgreader\svgcharacternode.hxx
+inc\svgio\svgreader\svgcirclenode.hxx
+inc\svgio\svgreader\svgclippathnode.hxx
+inc\svgio\svgreader\svgdocument.hxx
+inc\svgio\svgreader\svgdocumenthandler.hxx
+inc\svgio\svgreader\svgellipsenode.hxx
+inc\svgio\svgreader\svggnode.hxx
+inc\svgio\svgreader\svggradientnode.hxx
+inc\svgio\svgreader\svggradientstopnode.hxx
+inc\svgio\svgreader\svgimagenode.hxx
+inc\svgio\svgreader\svglinenode.hxx
+inc\svgio\svgreader\svgmarkernode.hxx
+inc\svgio\svgreader\svgmasknode.hxx
+inc\svgio\svgreader\svgnode.hxx
+inc\svgio\svgreader\svgpaint.hxx
+inc\svgio\svgreader\svgpathnode.hxx
+inc\svgio\svgreader\svgpatternnode.hxx
+inc\svgio\svgreader\svgpolynode.hxx
+inc\svgio\svgreader\svgrectnode.hxx
+inc\svgio\svgreader\svgstyleattributes.hxx
+inc\svgio\svgreader\svgstylenode.hxx
+inc\svgio\svgreader\svgsvgnode.hxx
+inc\svgio\svgreader\svgsymbolnode.hxx
+inc\svgio\svgreader\svgtextnode.hxx
+inc\svgio\svgreader\svgtextpathnode.hxx
+inc\svgio\svgreader\svgtitledescnode.hxx
+inc\svgio\svgreader\svgtoken.hxx
+inc\svgio\svgreader\svgtools.hxx
+inc\svgio\svgreader\svgtrefnode.hxx
+inc\svgio\svgreader\svgtspannode.hxx
+inc\svgio\svgreader\svgusenode.hxx
+
+Patch Files:
+
+Makefiles:
+
+Library_svgio.mk
+
+Makefile.gb
+
+Module_svgio.mk
+
+Package_inc.mk
+
+inc\makefile.mk
+	PRJNAME=svgio
+	TARGET=inc
+
+prj\makefile.mk
+	TARGET=prj

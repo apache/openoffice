@@ -1,0 +1,981 @@
+Name:
+autodoc
+
+Dependencies:
+cosv udm sal NULL
+
+Build Rules:
+..\%__SRC%\bin\autodoc.exe %_DEST%\bin%_EXT%\autodoc.exe
+..\%__SRC%\bin\autodoc %_DEST%\bin%_EXT%\autodoc
+
+
+Source Files:
+source\ary\cpp\ca_ce.cxx
+source\ary\cpp\ca_def.cxx
+source\ary\cpp\ca_type.cxx
+source\ary\cpp\cs_ce.cxx
+source\ary\cpp\cs_def.cxx
+source\ary\cpp\cs_type.cxx
+source\ary\cpp\c_builtintype.cxx
+source\ary\cpp\c_class.cxx
+source\ary\cpp\c_de.cxx
+source\ary\cpp\c_define.cxx
+source\ary\cpp\c_enum.cxx
+source\ary\cpp\c_enuval.cxx
+source\ary\cpp\c_funct.cxx
+source\ary\cpp\c_macro.cxx
+source\ary\cpp\c_namesp.cxx
+source\ary\cpp\c_osigna.cxx
+source\ary\cpp\c_reposypart.cxx
+source\ary\cpp\c_slots.cxx
+source\ary\cpp\c_traits.cxx
+source\ary\cpp\c_tydef.cxx
+source\ary\cpp\c_vari.cxx
+source\ary\cpp\namechain.cxx
+source\ary\cpp\tplparam.cxx
+source\ary\cpp\usedtype.cxx
+source\ary\doc\d_boolean.cxx
+source\ary\doc\d_docu.cxx
+source\ary\doc\d_node.cxx
+source\ary\doc\d_oldcppdocu.cxx
+source\ary\doc\d_oldidldocu.cxx
+source\ary\idl\i2s_calculator.cxx
+source\ary\idl\ia_ce.cxx
+source\ary\idl\ia_type.cxx
+source\ary\idl\is_ce.cxx
+source\ary\idl\is_type.cxx
+source\ary\idl\it_builtin.cxx
+source\ary\idl\it_ce.cxx
+source\ary\idl\it_explicit.cxx
+source\ary\idl\it_sequence.cxx
+source\ary\idl\it_tplparam.cxx
+source\ary\idl\it_xnameroom.cxx
+source\ary\idl\i_attribute.cxx
+source\ary\idl\i_ce.cxx
+source\ary\idl\i_ce2s.cxx
+source\ary\idl\i_comrela.cxx
+source\ary\idl\i_constant.cxx
+source\ary\idl\i_constgroup.cxx
+source\ary\idl\i_enum.cxx
+source\ary\idl\i_enumvalue.cxx
+source\ary\idl\i_exception.cxx
+source\ary\idl\i_function.cxx
+source\ary\idl\i_interface.cxx
+source\ary\idl\i_module.cxx
+source\ary\idl\i_namelookup.cxx
+source\ary\idl\i_param.cxx
+source\ary\idl\i_property.cxx
+source\ary\idl\i_reposypart.cxx
+source\ary\idl\i_service.cxx
+source\ary\idl\i_singleton.cxx
+source\ary\idl\i_siservice.cxx
+source\ary\idl\i_sisingleton.cxx
+source\ary\idl\i_struct.cxx
+source\ary\idl\i_structelem.cxx
+source\ary\idl\i_traits.cxx
+source\ary\idl\i_typedef.cxx
+source\ary\info\all_dts.cxx
+source\ary\info\all_tags.cxx
+source\ary\info\ci_attag.cxx
+source\ary\info\ci_text.cxx
+source\ary\kernel\ary_disp.cxx
+source\ary\kernel\cessentl.cxx
+source\ary\kernel\namesort.cxx
+source\ary\kernel\qualiname.cxx
+source\ary\kernel\reposy.cxx
+source\ary\kernel\slots.cxx
+source\ary\loc\loca_le.cxx
+source\ary\loc\locs_le.cxx
+source\ary\loc\loc_dir.cxx
+source\ary\loc\loc_file.cxx
+source\ary\loc\loc_filebase.cxx
+source\ary\loc\loc_root.cxx
+source\ary\loc\loc_traits.cxx
+source\ary_i\kernel\ci_atag2.cxx
+source\ary_i\kernel\ci_text2.cxx
+source\ary_i\kernel\d_token.cxx
+source\display\html\aryattrs.cxx
+source\display\html\cfrstd.cxx
+source\display\html\chd_udk2.cxx
+source\display\html\cre_link.cxx
+source\display\html\dsply_cl.cxx
+source\display\html\dsply_da.cxx
+source\display\html\dsply_op.cxx
+source\display\html\easywri.cxx
+source\display\html\hdimpl.cxx
+source\display\html\hd_chlst.cxx
+source\display\html\hd_docu.cxx
+source\display\html\html_kit.cxx
+source\display\html\navibar.cxx
+source\display\html\nav_main.cxx
+source\display\html\opageenv.cxx
+source\display\html\outfile.cxx
+source\display\html\pagemake.cxx
+source\display\html\pm_aldef.cxx
+source\display\html\pm_base.cxx
+source\display\html\pm_class.cxx
+source\display\html\pm_help.cxx
+source\display\html\pm_index.cxx
+source\display\html\pm_namsp.cxx
+source\display\html\pm_start.cxx
+source\display\html\protarea.cxx
+source\display\idl\hfi_constgroup.cxx
+source\display\idl\hfi_doc.cxx
+source\display\idl\hfi_enum.cxx
+source\display\idl\hfi_globalindex.cxx
+source\display\idl\hfi_hierarchy.cxx
+source\display\idl\hfi_interface.cxx
+source\display\idl\hfi_linklist.cxx
+source\display\idl\hfi_method.cxx
+source\display\idl\hfi_module.cxx
+source\display\idl\hfi_navibar.cxx
+source\display\idl\hfi_property.cxx
+source\display\idl\hfi_service.cxx
+source\display\idl\hfi_singleton.cxx
+source\display\idl\hfi_siservice.cxx
+source\display\idl\hfi_struct.cxx
+source\display\idl\hfi_tag.cxx
+source\display\idl\hfi_typedef.cxx
+source\display\idl\hfi_typetext.cxx
+source\display\idl\hfi_xrefpage.cxx
+source\display\idl\hi_ary.cxx
+source\display\idl\hi_display.cxx
+source\display\idl\hi_env.cxx
+source\display\idl\hi_factory.cxx
+source\display\idl\hi_linkhelper.cxx
+source\display\idl\hi_main.cxx
+source\display\kernel\displfct.cxx
+source\display\toolkit\hf_docentry.cxx
+source\display\toolkit\hf_funcdecl.cxx
+source\display\toolkit\hf_linachain.cxx
+source\display\toolkit\hf_navi_main.cxx
+source\display\toolkit\hf_navi_sub.cxx
+source\display\toolkit\hf_title.cxx
+source\display\toolkit\htmlfile.cxx
+source\display\toolkit\outputstack.cxx
+source\display\toolkit\out_node.cxx
+source\display\toolkit\out_position.cxx
+source\display\toolkit\out_tree.cxx
+source\exes\adc_uni\adc_cl.cxx
+source\exes\adc_uni\adc_cmds.cxx
+source\exes\adc_uni\adc_cmd_parse.cxx
+source\exes\adc_uni\adc_msg.cxx
+source\exes\adc_uni\cmd_run.cxx
+source\exes\adc_uni\cmd_sincedata.cxx
+source\exes\adc_uni\main.cxx
+source\parser\adoc\adoc_tok.cxx
+source\parser\adoc\a_rdocu.cxx
+source\parser\adoc\cx_a_std.cxx
+source\parser\adoc\cx_a_sub.cxx
+source\parser\adoc\docu_pe.cxx
+source\parser\adoc\prs_adoc.cxx
+source\parser\adoc\tk_attag.cxx
+source\parser\adoc\tk_docw.cxx
+source\parser\cpp\all_toks.cxx
+source\parser\cpp\cpp_pe.cxx
+source\parser\cpp\cxt2ary.cxx
+source\parser\cpp\cx_base.cxx
+source\parser\cpp\cx_c_pp.cxx
+source\parser\cpp\cx_c_std.cxx
+source\parser\cpp\cx_c_sub.cxx
+source\parser\cpp\c_dealer.cxx
+source\parser\cpp\c_rcode.cxx
+source\parser\cpp\defdescr.cxx
+source\parser\cpp\icprivow.cxx
+source\parser\cpp\pe_base.cxx
+source\parser\cpp\pe_class.cxx
+source\parser\cpp\pe_defs.cxx
+source\parser\cpp\pe_enum.cxx
+source\parser\cpp\pe_enval.cxx
+source\parser\cpp\pe_expr.cxx
+source\parser\cpp\pe_file.cxx
+source\parser\cpp\pe_funct.cxx
+source\parser\cpp\pe_ignor.cxx
+source\parser\cpp\pe_namsp.cxx
+source\parser\cpp\pe_param.cxx
+source\parser\cpp\pe_tpltp.cxx
+source\parser\cpp\pe_tydef.cxx
+source\parser\cpp\pe_type.cxx
+source\parser\cpp\pe_vafu.cxx
+source\parser\cpp\pe_vari.cxx
+source\parser\cpp\preproc.cxx
+source\parser\cpp\prs_cpp.cxx
+source\parser\cpp\tkp_cpp.cxx
+source\parser\kernel\parsefct.cxx
+source\parser\kernel\x_docu.cxx
+source\parser\kernel\x_parse.cxx
+source\parser\semantic\parseenv.cxx
+source\parser\tokens\stmstarr.cxx
+source\parser\tokens\stmstate.cxx
+source\parser\tokens\stmstfin.cxx
+source\parser\tokens\tkp.cxx
+source\parser\tokens\tkpcontx.cxx
+source\parser\tokens\tkpstama.cxx
+source\parser\tokens\tokdeal.cxx
+source\parser_i\idl\cx_idlco.cxx
+source\parser_i\idl\cx_sub.cxx
+source\parser_i\idl\distrib.cxx
+source\parser_i\idl\parsenv2.cxx
+source\parser_i\idl\pestate.cxx
+source\parser_i\idl\pe_attri.cxx
+source\parser_i\idl\pe_const.cxx
+source\parser_i\idl\pe_enum2.cxx
+source\parser_i\idl\pe_evalu.cxx
+source\parser_i\idl\pe_excp.cxx
+source\parser_i\idl\pe_file2.cxx
+source\parser_i\idl\pe_func2.cxx
+source\parser_i\idl\pe_iface.cxx
+source\parser_i\idl\pe_property.cxx
+source\parser_i\idl\pe_selem.cxx
+source\parser_i\idl\pe_servi.cxx
+source\parser_i\idl\pe_singl.cxx
+source\parser_i\idl\pe_struc.cxx
+source\parser_i\idl\pe_tydf2.cxx
+source\parser_i\idl\pe_type2.cxx
+source\parser_i\idl\pe_vari2.cxx
+source\parser_i\idl\semnode.cxx
+source\parser_i\idl\tkp_uidl.cxx
+source\parser_i\idl\tk_const.cxx
+source\parser_i\idl\tk_ident.cxx
+source\parser_i\idl\tk_keyw.cxx
+source\parser_i\idl\tk_punct.cxx
+source\parser_i\idl\unoidl.cxx
+source\parser_i\idoc\cx_docu2.cxx
+source\parser_i\idoc\cx_dsapi.cxx
+source\parser_i\idoc\docu_pe2.cxx
+source\parser_i\idoc\tk_atag2.cxx
+source\parser_i\idoc\tk_docw2.cxx
+source\parser_i\idoc\tk_html.cxx
+source\parser_i\idoc\tk_xml.cxx
+source\parser_i\tokens\stmstar2.cxx
+source\parser_i\tokens\stmstat2.cxx
+source\parser_i\tokens\stmstfi2.cxx
+source\parser_i\tokens\tkp2.cxx
+source\parser_i\tokens\tkpcont2.cxx
+source\parser_i\tokens\tkpstam2.cxx
+source\parser_i\tokens\x_parse2.cxx
+source\tools\filecoll.cxx
+source\tools\tkpchars.cxx
+
+Header Files:
+inc\ary\actions.hxx
+inc\ary\ary.hxx
+inc\ary\arygroup.hxx
+inc\ary\ary_disp.hxx
+inc\ary\ceslot.hxx
+inc\ary\cessentl.hxx
+inc\ary\entity.hxx
+inc\ary\getncast.hxx
+inc\ary\itrange.hxx
+inc\ary\namesort.hxx
+inc\ary\object.hxx
+inc\ary\qualiname.hxx
+inc\ary\sequentialids.hxx
+inc\ary\stdconstiter.hxx
+inc\ary\symtreenode.hxx
+inc\ary\types.hxx
+inc\ary\udmhost.hxx
+inc\ary\cpp\cp_ce.hxx
+inc\ary\cpp\cp_def.hxx
+inc\ary\cpp\cp_type.hxx
+inc\ary\cpp\c_builtintype.hxx
+inc\ary\cpp\c_ce.hxx
+inc\ary\cpp\c_class.hxx
+inc\ary\cpp\c_cppentity.hxx
+inc\ary\cpp\c_de.hxx
+inc\ary\cpp\c_define.hxx
+inc\ary\cpp\c_enum.hxx
+inc\ary\cpp\c_enuval.hxx
+inc\ary\cpp\c_funct.hxx
+inc\ary\cpp\c_gate.hxx
+inc\ary\cpp\c_macro.hxx
+inc\ary\cpp\c_namesp.hxx
+inc\ary\cpp\c_osigna.hxx
+inc\ary\cpp\c_slntry.hxx
+inc\ary\cpp\c_traits.hxx
+inc\ary\cpp\c_tydef.hxx
+inc\ary\cpp\c_type.hxx
+inc\ary\cpp\c_types4cpp.hxx
+inc\ary\cpp\c_vari.hxx
+inc\ary\cpp\c_vfflag.hxx
+inc\ary\cpp\inpcontx.hxx
+inc\ary\cpp\namechain.hxx
+inc\ary\cpp\usedtype.hxx
+inc\ary\doc\d_boolean.hxx
+inc\ary\doc\d_docu.hxx
+inc\ary\doc\d_node.hxx
+inc\ary\doc\d_oldcppdocu.hxx
+inc\ary\doc\d_oldidldocu.hxx
+inc\ary\doc\d_parametrized.hxx
+inc\ary\doc\d_types4doc.hxx
+inc\ary\doc\ht\dht_interpreter.hxx
+inc\ary\idl\ik_attribute.hxx
+inc\ary\idl\ik_ce.hxx
+inc\ary\idl\ik_constant.hxx
+inc\ary\idl\ik_constgroup.hxx
+inc\ary\idl\ik_enum.hxx
+inc\ary\idl\ik_enumvalue.hxx
+inc\ary\idl\ik_exception.hxx
+inc\ary\idl\ik_function.hxx
+inc\ary\idl\ik_interface.hxx
+inc\ary\idl\ik_module.hxx
+inc\ary\idl\ik_property.hxx
+inc\ary\idl\ik_service.hxx
+inc\ary\idl\ik_singleton.hxx
+inc\ary\idl\ik_siservice.hxx
+inc\ary\idl\ik_sisingleton.hxx
+inc\ary\idl\ik_struct.hxx
+inc\ary\idl\ik_structelem.hxx
+inc\ary\idl\ik_typedef.hxx
+inc\ary\idl\ip_ce.hxx
+inc\ary\idl\ip_type.hxx
+inc\ary\idl\i_attribute.hxx
+inc\ary\idl\i_ce.hxx
+inc\ary\idl\i_ce2s.hxx
+inc\ary\idl\i_comrela.hxx
+inc\ary\idl\i_constant.hxx
+inc\ary\idl\i_constgroup.hxx
+inc\ary\idl\i_enum.hxx
+inc\ary\idl\i_enumvalue.hxx
+inc\ary\idl\i_exception.hxx
+inc\ary\idl\i_function.hxx
+inc\ary\idl\i_gate.hxx
+inc\ary\idl\i_interface.hxx
+inc\ary\idl\i_module.hxx
+inc\ary\idl\i_namelookup.hxx
+inc\ary\idl\i_param.hxx
+inc\ary\idl\i_property.hxx
+inc\ary\idl\i_service.hxx
+inc\ary\idl\i_singleton.hxx
+inc\ary\idl\i_siservice.hxx
+inc\ary\idl\i_sisingleton.hxx
+inc\ary\idl\i_struct.hxx
+inc\ary\idl\i_structelem.hxx
+inc\ary\idl\i_traits.hxx
+inc\ary\idl\i_type.hxx
+inc\ary\idl\i_typedef.hxx
+inc\ary\idl\i_types4idl.hxx
+inc\ary\info\all_dts.hxx
+inc\ary\info\all_tags.hxx
+inc\ary\info\ci_attag.hxx
+inc\ary\info\ci_text.hxx
+inc\ary\info\docstore.hxx
+inc\ary\info\infodisp.hxx
+inc\ary\info\inftypes.hxx
+inc\ary\loc\locp_le.hxx
+inc\ary\loc\loc_dir.hxx
+inc\ary\loc\loc_file.hxx
+inc\ary\loc\loc_filebase.hxx
+inc\ary\loc\loc_le.hxx
+inc\ary\loc\loc_root.hxx
+inc\ary\loc\loc_traits.hxx
+inc\ary\loc\loc_types4loc.hxx
+inc\ary_i\ci_atag2.hxx
+inc\ary_i\ci_text2.hxx
+inc\ary_i\disdocum.hxx
+inc\ary_i\d_token.hxx
+inc\autodoc\displaying.hxx
+inc\autodoc\dsp_html_std.hxx
+inc\autodoc\dsp_txt_flist.hxx
+inc\autodoc\filecoli.hxx
+inc\autodoc\parsing.hxx
+inc\autodoc\prs_code.hxx
+inc\autodoc\prs_docu.hxx
+inc\autodoc\x_parsing.hxx
+inc\display\corframe.hxx
+inc\parser\parser.hxx
+inc\parser\parserinfo.hxx
+inc\parser\unoidl.hxx
+source\ary\cpp\ca_ce.hxx
+source\ary\cpp\ca_def.hxx
+source\ary\cpp\ca_type.hxx
+source\ary\cpp\cs_ce.hxx
+source\ary\cpp\cs_def.hxx
+source\ary\cpp\cs_type.hxx
+source\ary\cpp\c_reposypart.hxx
+source\ary\cpp\c_slots.hxx
+source\ary\cpp\tplparam.hxx
+source\ary\idl\i2s_calculator.hxx
+source\ary\idl\ia_ce.hxx
+source\ary\idl\ia_type.hxx
+source\ary\idl\is_ce.hxx
+source\ary\idl\is_type.hxx
+source\ary\idl\it_builtin.hxx
+source\ary\idl\it_ce.hxx
+source\ary\idl\it_explicit.hxx
+source\ary\idl\it_named.hxx
+source\ary\idl\it_sequence.hxx
+source\ary\idl\it_tplparam.hxx
+source\ary\idl\it_xnameroom.hxx
+source\ary\idl\i_nnfinder.hxx
+source\ary\idl\i_reposypart.hxx
+source\ary\inc\cpp_internalgate.hxx
+source\ary\inc\cross_refs.hxx
+source\ary\inc\idl_internalgate.hxx
+source\ary\inc\idsort.hxx
+source\ary\inc\loc_internalgate.hxx
+source\ary\inc\nametreenode.hxx
+source\ary\inc\reposy.hxx
+source\ary\inc\sci_impl.hxx
+source\ary\inc\slots.hxx
+source\ary\inc\sortedids.hxx
+source\ary\inc\sorted_idset.hxx
+source\ary\inc\traits_impl.hxx
+source\ary\inc\store\s_base.hxx
+source\ary\inc\store\s_iterator.hxx
+source\ary\inc\store\s_storage.hxx
+source\ary\loc\loca_le.hxx
+source\ary\loc\locs_le.hxx
+source\display\html\aryattrs.hxx
+source\display\html\cre_link.hxx
+source\display\html\dsply_cl.hxx
+source\display\html\dsply_da.hxx
+source\display\html\dsply_op.hxx
+source\display\html\easywri.hxx
+source\display\html\hdimpl.hxx
+source\display\html\hd_chlst.hxx
+source\display\html\hd_docu.hxx
+source\display\html\html_kit.hxx
+source\display\html\navibar.hxx
+source\display\html\nav_main.hxx
+source\display\html\opageenv.hxx
+source\display\html\outfile.hxx
+source\display\html\pagemake.hxx
+source\display\html\pm_aldef.hxx
+source\display\html\pm_base.hxx
+source\display\html\pm_class.hxx
+source\display\html\pm_help.hxx
+source\display\html\pm_index.hxx
+source\display\html\pm_namsp.hxx
+source\display\html\pm_start.hxx
+source\display\html\protarea.hxx
+source\display\html\strconst.hxx
+source\display\idl\hfi_constgroup.hxx
+source\display\idl\hfi_doc.hxx
+source\display\idl\hfi_enum.hxx
+source\display\idl\hfi_globalindex.hxx
+source\display\idl\hfi_hierarchy.hxx
+source\display\idl\hfi_interface.hxx
+source\display\idl\hfi_linklist.hxx
+source\display\idl\hfi_method.hxx
+source\display\idl\hfi_module.hxx
+source\display\idl\hfi_navibar.hxx
+source\display\idl\hfi_property.hxx
+source\display\idl\hfi_service.hxx
+source\display\idl\hfi_singleton.hxx
+source\display\idl\hfi_siservice.hxx
+source\display\idl\hfi_struct.hxx
+source\display\idl\hfi_tag.hxx
+source\display\idl\hfi_typedef.hxx
+source\display\idl\hfi_typetext.hxx
+source\display\idl\hfi_xrefpage.hxx
+source\display\idl\hi_ary.hxx
+source\display\idl\hi_env.hxx
+source\display\idl\hi_factory.hxx
+source\display\idl\hi_linkhelper.hxx
+source\display\idl\hi_main.hxx
+source\display\inc\cfrstd.hxx
+source\display\inc\html\chd_udk2.hxx
+source\display\inc\idl\hi_display.hxx
+source\display\inc\toolkit\hf_docentry.hxx
+source\display\inc\toolkit\hf_funcdecl.hxx
+source\display\inc\toolkit\hf_linachain.hxx
+source\display\inc\toolkit\hf_navi_main.hxx
+source\display\inc\toolkit\hf_navi_sub.hxx
+source\display\inc\toolkit\hf_title.hxx
+source\display\inc\toolkit\htmlfactory.hxx
+source\display\inc\toolkit\htmlfile.hxx
+source\display\inc\toolkit\outputstack.hxx
+source\display\inc\toolkit\out_node.hxx
+source\display\inc\toolkit\out_position.hxx
+source\display\inc\toolkit\out_tree.hxx
+source\display\kernel\displfct.hxx
+source\exes\adc_uni\adc_cmd.hxx
+source\exes\adc_uni\adc_cmds.hxx
+source\exes\adc_uni\adc_cmd_parse.hxx
+source\exes\adc_uni\cmd_run.hxx
+source\exes\adc_uni\cmd_sincedata.hxx
+source\inc\adc_cl.hxx
+source\inc\adc_msg.hxx
+source\inc\docu_node_ids.hxx
+source\inc\estack.hxx
+source\inc\luxenum.hxx
+source\inc\manip.hxx
+source\inc\precomp.h
+source\inc\prprpr.hxx
+source\inc\tools\filecoll.hxx
+source\inc\tools\tkpchars.hxx
+source\parser\cpp\all_toks.hxx
+source\parser\cpp\cpp_pe.hxx
+source\parser\cpp\cpp_tok.hxx
+source\parser\cpp\cxt2ary.hxx
+source\parser\cpp\cx_base.hxx
+source\parser\cpp\cx_c_pp.hxx
+source\parser\cpp\cx_c_std.hxx
+source\parser\cpp\cx_c_sub.hxx
+source\parser\cpp\c_dealer.hxx
+source\parser\cpp\c_rcode.hxx
+source\parser\cpp\defdescr.hxx
+source\parser\cpp\fevnthdl.hxx
+source\parser\cpp\icprivow.hxx
+source\parser\cpp\pev.hxx
+source\parser\cpp\pe_base.hxx
+source\parser\cpp\pe_class.hxx
+source\parser\cpp\pe_defs.hxx
+source\parser\cpp\pe_enum.hxx
+source\parser\cpp\pe_enval.hxx
+source\parser\cpp\pe_expr.hxx
+source\parser\cpp\pe_file.hxx
+source\parser\cpp\pe_funct.hxx
+source\parser\cpp\pe_ignor.hxx
+source\parser\cpp\pe_namsp.hxx
+source\parser\cpp\pe_param.hxx
+source\parser\cpp\pe_tpltp.hxx
+source\parser\cpp\pe_tydef.hxx
+source\parser\cpp\pe_type.hxx
+source\parser\cpp\pe_vafu.hxx
+source\parser\cpp\pe_vari.hxx
+source\parser\cpp\preproc.hxx
+source\parser\cpp\sdocdist.hxx
+source\parser\cpp\sfscope.hxx
+source\parser\cpp\sownstck.hxx
+source\parser\cpp\srecover.hxx
+source\parser\cpp\tkp_cpp.hxx
+source\parser\cpp\tokintpr.hxx
+source\parser\inc\doc_deal.hxx
+source\parser\inc\x_docu.hxx
+source\parser\inc\x_parse.hxx
+source\parser\inc\adoc\adoc_tok.hxx
+source\parser\inc\adoc\atokdeal.hxx
+source\parser\inc\adoc\a_rdocu.hxx
+source\parser\inc\adoc\cx_a_std.hxx
+source\parser\inc\adoc\cx_a_sub.hxx
+source\parser\inc\adoc\docu_pe.hxx
+source\parser\inc\adoc\prs_adoc.hxx
+source\parser\inc\adoc\tk_attag.hxx
+source\parser\inc\adoc\tk_docw.hxx
+source\parser\inc\adoc\tokintpr.hxx
+source\parser\inc\cpp\ctokdeal.hxx
+source\parser\inc\cpp\prs_cpp.hxx
+source\parser\inc\semantic\callf.hxx
+source\parser\inc\semantic\parseenv.hxx
+source\parser\inc\semantic\sub_pe.hxx
+source\parser\inc\semantic\sub_peu.hxx
+source\parser\inc\tokens\parseinc.hxx
+source\parser\inc\tokens\stmstarr.hxx
+source\parser\inc\tokens\stmstate.hxx
+source\parser\inc\tokens\stmstfin.hxx
+source\parser\inc\tokens\tkp.hxx
+source\parser\inc\tokens\tkpcontx.hxx
+source\parser\inc\tokens\tkpstama.hxx
+source\parser\inc\tokens\tokdeal.hxx
+source\parser\inc\tokens\token.hxx
+source\parser\inc\tokens\tokproct.hxx
+source\parser\kernel\parsefct.hxx
+source\parser_i\inc\x_parse2.hxx
+source\parser_i\inc\s2_dsapi\cx_docu2.hxx
+source\parser_i\inc\s2_dsapi\cx_dsapi.hxx
+source\parser_i\inc\s2_dsapi\docu_pe2.hxx
+source\parser_i\inc\s2_dsapi\dsapitok.hxx
+source\parser_i\inc\s2_dsapi\tk_atag2.hxx
+source\parser_i\inc\s2_dsapi\tk_docw2.hxx
+source\parser_i\inc\s2_dsapi\tk_html.hxx
+source\parser_i\inc\s2_dsapi\tk_xml.hxx
+source\parser_i\inc\s2_dsapi\tokintpr.hxx
+source\parser_i\inc\s2_dsapi\tokrecv.hxx
+source\parser_i\inc\s2_luidl\cx_idlco.hxx
+source\parser_i\inc\s2_luidl\cx_sub.hxx
+source\parser_i\inc\s2_luidl\distrib.hxx
+source\parser_i\inc\s2_luidl\parsenv2.hxx
+source\parser_i\inc\s2_luidl\pestate.hxx
+source\parser_i\inc\s2_luidl\pe_attri.hxx
+source\parser_i\inc\s2_luidl\pe_const.hxx
+source\parser_i\inc\s2_luidl\pe_enum2.hxx
+source\parser_i\inc\s2_luidl\pe_evalu.hxx
+source\parser_i\inc\s2_luidl\pe_excp.hxx
+source\parser_i\inc\s2_luidl\pe_file2.hxx
+source\parser_i\inc\s2_luidl\pe_func2.hxx
+source\parser_i\inc\s2_luidl\pe_iface.hxx
+source\parser_i\inc\s2_luidl\pe_modul.hxx
+source\parser_i\inc\s2_luidl\pe_property.hxx
+source\parser_i\inc\s2_luidl\pe_selem.hxx
+source\parser_i\inc\s2_luidl\pe_servi.hxx
+source\parser_i\inc\s2_luidl\pe_singl.hxx
+source\parser_i\inc\s2_luidl\pe_struc.hxx
+source\parser_i\inc\s2_luidl\pe_tydf2.hxx
+source\parser_i\inc\s2_luidl\pe_type2.hxx
+source\parser_i\inc\s2_luidl\pe_vari2.hxx
+source\parser_i\inc\s2_luidl\semnode.hxx
+source\parser_i\inc\s2_luidl\smp_uidl.hxx
+source\parser_i\inc\s2_luidl\tkp_uidl.hxx
+source\parser_i\inc\s2_luidl\tk_const.hxx
+source\parser_i\inc\s2_luidl\tk_ident.hxx
+source\parser_i\inc\s2_luidl\tk_keyw.hxx
+source\parser_i\inc\s2_luidl\tk_punct.hxx
+source\parser_i\inc\s2_luidl\tokintpr.hxx
+source\parser_i\inc\s2_luidl\tokproct.hxx
+source\parser_i\inc\s2_luidl\tokrecv.hxx
+source\parser_i\inc\s2_luidl\uidl_tok.hxx
+source\parser_i\inc\semantic\parsenv2.hxx
+source\parser_i\inc\tokens\stmstar2.hxx
+source\parser_i\inc\tokens\stmstat2.hxx
+source\parser_i\inc\tokens\stmstfi2.hxx
+source\parser_i\inc\tokens\tkp2.hxx
+source\parser_i\inc\tokens\tkpcont2.hxx
+source\parser_i\inc\tokens\tkpstam2.hxx
+source\parser_i\inc\tokens\token2.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\ary\cpp\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_cpp
+	OBJFILES=
+	$(OBJ)$/c_builtintype.obj
+	$(OBJ)$/c_class.obj
+	$(OBJ)$/c_de.obj
+	$(OBJ)$/c_define.obj
+	$(OBJ)$/c_enum.obj
+	$(OBJ)$/c_enuval.obj
+	$(OBJ)$/c_funct.obj
+	$(OBJ)$/c_macro.obj
+	$(OBJ)$/c_namesp.obj
+	$(OBJ)$/c_osigna.obj
+	$(OBJ)$/c_reposypart.obj
+	$(OBJ)$/c_slots.obj
+	$(OBJ)$/c_traits.obj
+	$(OBJ)$/c_tydef.obj
+	$(OBJ)$/c_vari.obj
+	$(OBJ)$/ca_ce.obj
+	$(OBJ)$/ca_def.obj
+	$(OBJ)$/ca_type.obj
+	$(OBJ)$/cs_ce.obj
+	$(OBJ)$/cs_def.obj
+	$(OBJ)$/cs_type.obj
+	$(OBJ)$/namechain.obj
+	$(OBJ)$/tplparam.obj
+	$(OBJ)$/usedtype.obj
+
+source\ary\doc\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_doc
+	OBJFILES=
+	$(OBJ)$/d_boolean.obj
+	$(OBJ)$/d_docu.obj
+	$(OBJ)$/d_node.obj
+	$(OBJ)$/d_oldcppdocu.obj
+	$(OBJ)$/d_oldidldocu.obj
+
+source\ary\idl\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_idl
+	OBJFILES=
+	$(OBJ)$/i_attribute.obj
+	$(OBJ)$/i_ce.obj
+	$(OBJ)$/i_ce2s.obj
+	$(OBJ)$/i_comrela.obj
+	$(OBJ)$/i_constant.obj
+	$(OBJ)$/i_constgroup.obj
+	$(OBJ)$/i_enum.obj
+	$(OBJ)$/i_enumvalue.obj
+	$(OBJ)$/i_exception.obj
+	$(OBJ)$/i_function.obj
+	$(OBJ)$/i_interface.obj
+	$(OBJ)$/i_module.obj
+	$(OBJ)$/i_namelookup.obj
+	$(OBJ)$/i_param.obj
+	$(OBJ)$/i_property.obj
+	$(OBJ)$/i_reposypart.obj
+	$(OBJ)$/i_service.obj
+	$(OBJ)$/i_singleton.obj
+	$(OBJ)$/i_siservice.obj
+	$(OBJ)$/i_sisingleton.obj
+	$(OBJ)$/i_struct.obj
+	$(OBJ)$/i_structelem.obj
+	$(OBJ)$/i_traits.obj
+	$(OBJ)$/i_typedef.obj
+	$(OBJ)$/i2s_calculator.obj
+	$(OBJ)$/ia_ce.obj
+	$(OBJ)$/ia_type.obj
+	$(OBJ)$/is_ce.obj
+	$(OBJ)$/is_type.obj
+	$(OBJ)$/it_builtin.obj
+	$(OBJ)$/it_ce.obj
+	$(OBJ)$/it_explicit.obj
+	$(OBJ)$/it_sequence.obj
+	$(OBJ)$/it_tplparam.obj
+	$(OBJ)$/it_xnameroom.obj
+
+source\ary\info\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_info
+	OBJFILES=
+	$(OBJ)$/all_dts.obj
+	$(OBJ)$/all_tags.obj
+	$(OBJ)$/ci_attag.obj
+	$(OBJ)$/ci_text.obj
+
+source\ary\kernel\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_kernel
+	OBJFILES=
+	$(OBJ)$/ary_disp.obj
+	$(OBJ)$/cessentl.obj
+	$(OBJ)$/namesort.obj
+	$(OBJ)$/qualiname.obj
+	$(OBJ)$/reposy.obj
+	$(OBJ)$/slots.obj
+
+source\ary\loc\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary_loc
+	OBJFILES=
+	$(OBJ)$/loc_dir.obj
+	$(OBJ)$/loc_file.obj
+	$(OBJ)$/loc_filebase.obj
+	$(OBJ)$/loc_root.obj
+	$(OBJ)$/loc_traits.obj
+	$(OBJ)$/loca_le.obj
+	$(OBJ)$/locs_le.obj
+
+source\ary_i\kernel\makefile.mk
+	PRJNAME=autodoc
+	TARGET=ary2_cinfo
+	OBJFILES=
+	$(OBJ)$/ci_atag2.obj
+	$(OBJ)$/ci_text2.obj
+	$(OBJ)$/d_token.obj
+
+source\display\html\makefile.mk
+	PRJNAME=autodoc
+	TARGET=display_html
+	OBJFILES=
+	$(OBJ)$/aryattrs.obj
+	$(OBJ)$/cfrstd.obj
+	$(OBJ)$/chd_udk2.obj
+	$(OBJ)$/cre_link.obj
+	$(OBJ)$/dsply_cl.obj
+	$(OBJ)$/dsply_da.obj
+	$(OBJ)$/dsply_op.obj
+	$(OBJ)$/easywri.obj
+	$(OBJ)$/hd_chlst.obj
+	$(OBJ)$/hd_docu.obj
+	$(OBJ)$/hdimpl.obj
+	$(OBJ)$/html_kit.obj
+	$(OBJ)$/nav_main.obj
+	$(OBJ)$/navibar.obj
+	$(OBJ)$/outfile.obj
+	$(OBJ)$/opageenv.obj
+	$(OBJ)$/pagemake.obj
+	$(OBJ)$/pm_aldef.obj
+	$(OBJ)$/pm_base.obj
+	$(OBJ)$/pm_class.obj
+	$(OBJ)$/pm_help.obj
+	$(OBJ)$/pm_index.obj
+	$(OBJ)$/pm_namsp.obj
+	$(OBJ)$/pm_start.obj
+	$(OBJ)$/protarea.obj
+
+source\display\idl\makefile.mk
+	PRJNAME=autodoc
+	TARGET=display_idl
+	OBJFILES=
+	$(OBJ)$/hfi_constgroup.obj
+	$(OBJ)$/hfi_doc.obj
+	$(OBJ)$/hfi_enum.obj
+	$(OBJ)$/hfi_globalindex.obj
+	$(OBJ)$/hfi_hierarchy.obj
+	$(OBJ)$/hfi_interface.obj
+	$(OBJ)$/hfi_method.obj
+	$(OBJ)$/hfi_module.obj
+	$(OBJ)$/hfi_navibar.obj
+	$(OBJ)$/hfi_property.obj
+	$(OBJ)$/hfi_service.obj
+	$(OBJ)$/hfi_singleton.obj
+	$(OBJ)$/hfi_siservice.obj
+	$(OBJ)$/hfi_struct.obj
+	$(OBJ)$/hfi_tag.obj
+	$(OBJ)$/hfi_typedef.obj
+	$(OBJ)$/hfi_typetext.obj
+	$(OBJ)$/hfi_xrefpage.obj
+	$(OBJ)$/hi_ary.obj
+	$(OBJ)$/hi_display.obj
+	$(OBJ)$/hi_env.obj
+	$(OBJ)$/hi_factory.obj
+	$(OBJ)$/hi_linkhelper.obj
+	$(OBJ)$/hi_main.obj
+
+source\display\kernel\makefile.mk
+	PRJNAME=autodoc
+	TARGET=display_kernel
+	OBJFILES=
+	$(OBJ)$/displfct.obj
+
+source\display\toolkit\makefile.mk
+	PRJNAME=autodoc
+	TARGET=display_toolkit
+	OBJFILES=
+	$(OBJ)$/hf_docentry.obj
+	$(OBJ)$/hf_funcdecl.obj
+	$(OBJ)$/hf_linachain.obj
+	$(OBJ)$/hf_navi_main.obj
+	$(OBJ)$/hf_navi_sub.obj
+	$(OBJ)$/hf_title.obj
+	$(OBJ)$/htmlfile.obj
+	$(OBJ)$/out_node.obj
+	$(OBJ)$/out_position.obj
+	$(OBJ)$/out_tree.obj
+	$(OBJ)$/outputstack.obj
+
+source\exes\adc_uni\makefile.mk
+	PRJNAME=autodoc
+	TARGET=autodoc
+	OBJFILES=
+	$(OBJ)$/adc_cl.obj
+	$(OBJ)$/adc_cmd_parse.obj
+	$(OBJ)$/adc_cmds.obj
+	$(OBJ)$/adc_msg.obj
+	$(OBJ)$/cmd_run.obj
+	$(OBJ)$/cmd_sincedata.obj
+
+source\mkinc\fullcpp.mk
+
+source\parser\adoc\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser_adoc
+	OBJFILES=
+	$(OBJ)$/adoc_tok.obj
+	$(OBJ)$/a_rdocu.obj
+	$(OBJ)$/cx_a_std.obj
+	$(OBJ)$/cx_a_sub.obj
+	$(OBJ)$/docu_pe.obj
+	$(OBJ)$/prs_adoc.obj
+	$(OBJ)$/tk_attag.obj
+	$(OBJ)$/tk_docw.obj
+
+source\parser\cpp\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser_cpp
+	OBJFILES=
+	$(OBJ)$/all_toks.obj
+	$(OBJ)$/c_dealer.obj
+	$(OBJ)$/c_rcode.obj
+	$(OBJ)$/cpp_pe.obj
+	$(OBJ)$/cx_base.obj
+	$(OBJ)$/cx_c_pp.obj
+	$(OBJ)$/cx_c_std.obj
+	$(OBJ)$/cx_c_sub.obj
+	$(OBJ)$/cxt2ary.obj
+	$(OBJ)$/defdescr.obj
+	$(OBJ)$/icprivow.obj
+	$(OBJ)$/pe_base.obj
+	$(OBJ)$/pe_class.obj
+	$(OBJ)$/pe_defs.obj
+	$(OBJ)$/pe_expr.obj
+	$(OBJ)$/pe_enum.obj
+	$(OBJ)$/pe_enval.obj
+	$(OBJ)$/pe_file.obj
+	$(OBJ)$/pe_funct.obj
+	$(OBJ)$/pe_ignor.obj
+	$(OBJ)$/pe_namsp.obj
+	$(OBJ)$/pe_param.obj
+	$(OBJ)$/pe_tpltp.obj
+	$(OBJ)$/pe_type.obj
+	$(OBJ)$/pe_tydef.obj
+	$(OBJ)$/pe_vafu.obj
+	$(OBJ)$/pe_vari.obj
+	$(OBJ)$/preproc.obj
+	$(OBJ)$/prs_cpp.obj
+	$(OBJ)$/tkp_cpp.obj
+
+source\parser\kernel\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser_kernel
+	OBJFILES=
+	$(OBJ)$/parsefct.obj
+	$(OBJ)$/x_docu.obj
+	$(OBJ)$/x_parse.obj
+
+source\parser\semantic\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser_semantic
+	OBJFILES=
+	$(OBJ)$/parseenv.obj
+
+source\parser\tokens\makefile.mk
+	PRJNAME=garden
+	TARGET=parser_tokens
+	OBJFILES=
+	$(OBJ)$/stmstarr.obj
+	$(OBJ)$/stmstate.obj
+	$(OBJ)$/stmstfin.obj
+	$(OBJ)$/tkpstama.obj
+	$(OBJ)$/tkp.obj
+	$(OBJ)$/tkpcontx.obj
+	$(OBJ)$/tokdeal.obj
+
+source\parser_i\idl\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser2_s2_luidl
+	OBJFILES=
+	$(OBJ)$/cx_idlco.obj
+	$(OBJ)$/cx_sub.obj
+	$(OBJ)$/distrib.obj
+	$(OBJ)$/parsenv2.obj
+	$(OBJ)$/pe_attri.obj
+	$(OBJ)$/pe_const.obj
+	$(OBJ)$/pe_enum2.obj
+	$(OBJ)$/pe_evalu.obj
+	$(OBJ)$/pe_excp.obj
+	$(OBJ)$/pe_file2.obj
+	$(OBJ)$/pe_func2.obj
+	$(OBJ)$/pe_iface.obj
+	$(OBJ)$/pe_property.obj
+	$(OBJ)$/pe_selem.obj
+	$(OBJ)$/pe_servi.obj
+	$(OBJ)$/pe_singl.obj
+	$(OBJ)$/pe_struc.obj
+	$(OBJ)$/pe_tydf2.obj
+	$(OBJ)$/pe_type2.obj
+	$(OBJ)$/pe_vari2.obj
+	$(OBJ)$/pestate.obj
+	$(OBJ)$/semnode.obj
+	$(OBJ)$/tk_const.obj
+	$(OBJ)$/tk_ident.obj
+	$(OBJ)$/tk_keyw.obj
+	$(OBJ)$/tk_punct.obj
+	$(OBJ)$/tkp_uidl.obj
+	$(OBJ)$/unoidl.obj
+
+source\parser_i\idoc\makefile.mk
+	PRJNAME=autodoc
+	TARGET=parser2_s2_dsapi
+	OBJFILES=
+	$(OBJ)$/cx_docu2.obj
+	$(OBJ)$/cx_dsapi.obj
+	$(OBJ)$/docu_pe2.obj
+	$(OBJ)$/tk_atag2.obj
+	$(OBJ)$/tk_docw2.obj
+	$(OBJ)$/tk_html.obj
+	$(OBJ)$/tk_xml.obj
+
+source\parser_i\tokens\makefile.mk
+	PRJNAME=garden
+	TARGET=parser2_tokens
+	OBJFILES=
+	$(OBJ)$/stmstar2.obj
+	$(OBJ)$/stmstat2.obj
+	$(OBJ)$/stmstfi2.obj
+	$(OBJ)$/tkpstam2.obj
+	$(OBJ)$/tkp2.obj
+	$(OBJ)$/tkpcont2.obj
+	$(OBJ)$/x_parse2.obj
+
+source\tools\makefile.mk
+	PRJNAME=autodoc
+	TARGET=autodoc_tools
+	OBJFILES=
+	$(OBJ)$/filecoll.obj
+	$(OBJ)$/tkpchars.obj

@@ -1,0 +1,355 @@
+Name:
+canvas
+
+Dependencies:
+javaunohelper comphelper cppuhelper offuh unoil tools svtools vcl basegfx CAIRO:cairo LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\canvasto*.dll %_DEST%\bin%_EXT%\canvasto*.dll
+..\%__SRC%\bin\cairocan*.dll %_DEST%\bin%_EXT%\cairocan*.dll
+..\%__SRC%\bin\directx*.dll  %_DEST%\bin%_EXT%\directx*.dll
+..\%__SRC%\bin\gdiplus*.dll  %_DEST%\bin%_EXT%\gdiplus*.dll
+..\%__SRC%\bin\vclcanva*.dll %_DEST%\bin%_EXT%\vclcanva*.dll
+..\%__SRC%\bin\nullcanv*.dll %_DEST%\bin%_EXT%\nullcanv*.dll
+..\%__SRC%\bin\simpleca*.dll %_DEST%\bin%_EXT%\simpleca*.dll
+..\%__SRC%\bin\canvasfa*.dll %_DEST%\bin%_EXT%\canvasfa*.dll
+..\%__SRC%\lib\icanvastools.lib %_DEST%\lib%_EXT%\icanvastools.lib
+..\%__SRC%\lib\canvastools.lib %_DEST%\lib%_EXT%\canvastools.lib
+..\%__SRC%\lib\libcanvastools*.so %_DEST%\lib%_EXT%\
+..\%__SRC%\lib\cairocanvas.uno.so %_DEST%\lib%_EXT%\cairocanvas.uno.so
+..\%__SRC%\lib\vclcanvas.uno.so %_DEST%\lib%_EXT%\vclcanvas.uno.so
+..\%__SRC%\lib\nullcanvas.uno.so %_DEST%\lib%_EXT%\nullcanvas.uno.so
+..\%__SRC%\lib\simplecanvas.uno.so %_DEST%\lib%_EXT%\simplecanvas.uno.so
+..\%__SRC%\lib\canvasfactory.uno.so %_DEST%\lib%_EXT%\canvasfactory.uno.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\class\javacanvas.uno.jar %_DEST%\bin%_EXT%\javacanvas.uno.jar
+..\%__SRC%\misc\cairocanvas.component %_DEST%\xml%_EXT%\cairocanvas.component
+
+mkdir: %_DEST%\inc%_EXT%\canvas\base
+..\inc\canvas\base\*.hxx %_DEST%\inc%_EXT%\canvas\base\*.hxx
+
+mkdir: %_DEST%\inc%_EXT%\canvas\rendering
+..\inc\canvas\rendering\*.hxx %_DEST%\inc%_EXT%\canvas\rendering\*.hxx
+
+mkdir: %_DEST%\inc%_EXT%\canvas
+..\inc\canvas\*.hxx %_DEST%\inc%_EXT%\canvas\*.hxx
+..\%__SRC%\misc\canvasfactory.component %_DEST%\xml%_EXT%\canvasfactory.component
+..\%__SRC%\misc\directx5canvas.component %_DEST%\xml%_EXT%\directx5canvas.component
+..\%__SRC%\misc\directx9canvas.component %_DEST%\xml%_EXT%\directx9canvas.component
+..\%__SRC%\misc\gdipluscanvas.component %_DEST%\xml%_EXT%\gdipluscanvas.component
+..\%__SRC%\misc\simplecanvas.component %_DEST%\xml%_EXT%\simplecanvas.component
+..\%__SRC%\misc\vclcanvas.component %_DEST%\xml%_EXT%\vclcanvas.component
+
+Source Files:
+inc\pch\precompiled_canvas.cxx
+source\cairo\cairo_cachedbitmap.cxx
+source\cairo\cairo_cairo.cxx
+source\cairo\cairo_canvas.cxx
+source\cairo\cairo_canvasbitmap.cxx
+source\cairo\cairo_canvascustomsprite.cxx
+source\cairo\cairo_canvasfont.cxx
+source\cairo\cairo_canvashelper.cxx
+source\cairo\cairo_canvashelper_text.cxx
+source\cairo\cairo_canvashelper_texturefill.cxx
+source\cairo\cairo_devicehelper.cxx
+source\cairo\cairo_quartz_cairo.cxx
+source\cairo\cairo_services.cxx
+source\cairo\cairo_spritecanvas.cxx
+source\cairo\cairo_spritecanvashelper.cxx
+source\cairo\cairo_spritedevicehelper.cxx
+source\cairo\cairo_spritehelper.cxx
+source\cairo\cairo_textlayout.cxx
+source\cairo\cairo_win32_cairo.cxx
+source\cairo\cairo_xlib_cairo.cxx
+source\directx\dx_5rm.cxx
+source\directx\dx_9rm.cxx
+source\directx\dx_bitmap.cxx
+source\directx\dx_bitmapcanvashelper.cxx
+source\directx\dx_canvas.cxx
+source\directx\dx_canvasbitmap.cxx
+source\directx\dx_canvascustomsprite.cxx
+source\directx\dx_canvasfont.cxx
+source\directx\dx_canvashelper.cxx
+source\directx\dx_canvashelper_texturefill.cxx
+source\directx\dx_config.cxx
+source\directx\dx_devicehelper.cxx
+source\directx\dx_gdiplususer.cxx
+source\directx\dx_impltools.cxx
+source\directx\dx_linepolypolygon.cxx
+source\directx\dx_spritecanvas.cxx
+source\directx\dx_spritecanvashelper.cxx
+source\directx\dx_spritedevicehelper.cxx
+source\directx\dx_spritehelper.cxx
+source\directx\dx_surfacebitmap.cxx
+source\directx\dx_surfacegraphics.cxx
+source\directx\dx_textlayout.cxx
+source\directx\dx_textlayout_drawhelper.cxx
+source\directx\dx_vcltools.cxx
+source\factory\cf_service.cxx
+source\null\null_canvasbitmap.cxx
+source\null\null_canvascustomsprite.cxx
+source\null\null_canvasfont.cxx
+source\null\null_canvashelper.cxx
+source\null\null_devicehelper.cxx
+source\null\null_spritecanvas.cxx
+source\null\null_spritecanvashelper.cxx
+source\null\null_spritehelper.cxx
+source\null\null_textlayout.cxx
+source\simplecanvas\simplecanvasimpl.cxx
+source\tools\cachedprimitivebase.cxx
+source\tools\canvascustomspritehelper.cxx
+source\tools\canvastools.cxx
+source\tools\elapsedtime.cxx
+source\tools\page.cxx
+source\tools\pagemanager.cxx
+source\tools\parametricpolypolygon.cxx
+source\tools\prioritybooster.cxx
+source\tools\propertysethelper.cxx
+source\tools\spriteredrawmanager.cxx
+source\tools\surface.cxx
+source\tools\surfaceproxy.cxx
+source\tools\surfaceproxymanager.cxx
+source\tools\verifyinput.cxx
+source\vcl\backbuffer.cxx
+source\vcl\bitmapbackbuffer.cxx
+source\vcl\cachedbitmap.cxx
+source\vcl\canvas.cxx
+source\vcl\canvasbitmap.cxx
+source\vcl\canvasbitmaphelper.cxx
+source\vcl\canvascustomsprite.cxx
+source\vcl\canvasfont.cxx
+source\vcl\canvashelper.cxx
+source\vcl\canvashelper_texturefill.cxx
+source\vcl\devicehelper.cxx
+source\vcl\impltools.cxx
+source\vcl\services.cxx
+source\vcl\spritecanvas.cxx
+source\vcl\spritecanvashelper.cxx
+source\vcl\spritedevicehelper.cxx
+source\vcl\spritehelper.cxx
+source\vcl\textlayout.cxx
+source\vcl\windowoutdevholder.cxx
+workben\canvasdemo.cxx
+
+Header Files:
+inc\canvas\canvastools.hxx
+inc\canvas\debug.hxx
+inc\canvas\elapsedtime.hxx
+inc\canvas\parametricpolypolygon.hxx
+inc\canvas\prioritybooster.hxx
+inc\canvas\propertysethelper.hxx
+inc\canvas\spriteredrawmanager.hxx
+inc\canvas\vclwrapper.hxx
+inc\canvas\verbosetrace.hxx
+inc\canvas\verifyinput.hxx
+inc\canvas\base\basemutexhelper.hxx
+inc\canvas\base\bitmapcanvasbase.hxx
+inc\canvas\base\bufferedgraphicdevicebase.hxx
+inc\canvas\base\cachedprimitivebase.hxx
+inc\canvas\base\canvasbase.hxx
+inc\canvas\base\canvascustomspritebase.hxx
+inc\canvas\base\canvascustomspritehelper.hxx
+inc\canvas\base\doublebitmapbase.hxx
+inc\canvas\base\floatbitmapbase.hxx
+inc\canvas\base\graphicdevicebase.hxx
+inc\canvas\base\integerbitmapbase.hxx
+inc\canvas\base\sprite.hxx
+inc\canvas\base\spritecanvasbase.hxx
+inc\canvas\base\spritesurface.hxx
+inc\canvas\rendering\bitmap.hxx
+inc\canvas\rendering\icachedprimitive.hxx
+inc\canvas\rendering\icolorbuffer.hxx
+inc\canvas\rendering\irendermodule.hxx
+inc\canvas\rendering\isurface.hxx
+inc\canvas\rendering\isurfaceproxy.hxx
+inc\canvas\rendering\isurfaceproxymanager.hxx
+inc\pch\precompiled_canvas.hxx
+source\cairo\cairo_cachedbitmap.hxx
+source\cairo\cairo_cairo.hxx
+source\cairo\cairo_canvas.hxx
+source\cairo\cairo_canvasbitmap.hxx
+source\cairo\cairo_canvascustomsprite.hxx
+source\cairo\cairo_canvasfont.hxx
+source\cairo\cairo_canvashelper.hxx
+source\cairo\cairo_devicehelper.hxx
+source\cairo\cairo_quartz_cairo.hxx
+source\cairo\cairo_repainttarget.hxx
+source\cairo\cairo_sprite.hxx
+source\cairo\cairo_spritecanvas.hxx
+source\cairo\cairo_spritecanvashelper.hxx
+source\cairo\cairo_spritedevicehelper.hxx
+source\cairo\cairo_spritehelper.hxx
+source\cairo\cairo_spritesurface.hxx
+source\cairo\cairo_surfaceprovider.hxx
+source\cairo\cairo_textlayout.hxx
+source\cairo\cairo_win32_cairo.hxx
+source\cairo\cairo_xlib_cairo.hxx
+source\directx\dx_bitmap.hxx
+source\directx\dx_bitmapcanvashelper.hxx
+source\directx\dx_bitmapprovider.hxx
+source\directx\dx_canvas.hxx
+source\directx\dx_canvasbitmap.hxx
+source\directx\dx_canvascustomsprite.hxx
+source\directx\dx_canvasfont.hxx
+source\directx\dx_canvashelper.hxx
+source\directx\dx_config.hxx
+source\directx\dx_devicehelper.hxx
+source\directx\dx_gdiplususer.hxx
+source\directx\dx_graphicsprovider.hxx
+source\directx\dx_ibitmap.hxx
+source\directx\dx_impltools.hxx
+source\directx\dx_linepolypolygon.hxx
+source\directx\dx_rendermodule.hxx
+source\directx\dx_sprite.hxx
+source\directx\dx_spritecanvas.hxx
+source\directx\dx_spritecanvashelper.hxx
+source\directx\dx_spritedevicehelper.hxx
+source\directx\dx_spritehelper.hxx
+source\directx\dx_surfacebitmap.hxx
+source\directx\dx_surfacegraphics.hxx
+source\directx\dx_textlayout.hxx
+source\directx\dx_textlayout_drawhelper.hxx
+source\directx\dx_vcltools.hxx
+source\directx\dx_winstuff.hxx
+source\null\null_canvasbitmap.hxx
+source\null\null_canvascustomsprite.hxx
+source\null\null_canvasfont.hxx
+source\null\null_canvashelper.hxx
+source\null\null_devicehelper.hxx
+source\null\null_spritecanvas.hxx
+source\null\null_spritecanvashelper.hxx
+source\null\null_spritehelper.hxx
+source\null\null_textlayout.hxx
+source\null\null_usagecounter.hxx
+source\null\sprite.hxx
+source\tools\page.hxx
+source\tools\pagemanager.hxx
+source\tools\surface.hxx
+source\tools\surfaceproxy.hxx
+source\tools\surfacerect.hxx
+source\vcl\backbuffer.hxx
+source\vcl\bitmapbackbuffer.hxx
+source\vcl\cachedbitmap.hxx
+source\vcl\canvas.hxx
+source\vcl\canvasbitmap.hxx
+source\vcl\canvasbitmaphelper.hxx
+source\vcl\canvascustomsprite.hxx
+source\vcl\canvasfont.hxx
+source\vcl\canvashelper.hxx
+source\vcl\devicehelper.hxx
+source\vcl\impltools.hxx
+source\vcl\outdevprovider.hxx
+source\vcl\repainttarget.hxx
+source\vcl\sprite.hxx
+source\vcl\spritecanvas.hxx
+source\vcl\spritecanvashelper.hxx
+source\vcl\spritedevicehelper.hxx
+source\vcl\spritehelper.hxx
+source\vcl\textlayout.hxx
+source\vcl\windowoutdevholder.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=canvas
+	TARGET=inc
+
+source\cairo\makefile.mk
+	PRJNAME=canvas
+	TARGET=cairocanvas
+	SLOFILES=$(SLO)$/cairo_cachedbitmap.obj
+	$(SLO)$/cairo_cairo.obj
+	$(SLO)$/cairo_canvas.obj
+	$(SLO)$/cairo_canvasbitmap.obj
+	$(SLO)$/cairo_canvascustomsprite.obj
+	$(SLO)$/cairo_canvasfont.obj
+	$(SLO)$/cairo_canvashelper.obj
+	$(SLO)$/cairo_canvashelper_text.obj
+	$(SLO)$/cairo_devicehelper.obj
+	$(SLO)$/cairo_services.obj
+	$(SLO)$/cairo_spritecanvas.obj
+	$(SLO)$/cairo_spritecanvashelper.obj
+	$(SLO)$/cairo_spritedevicehelper.obj
+	$(SLO)$/cairo_spritehelper.obj
+	$(SLO)$/cairo_textlayout.obj
+	SLOFILES+=$(SLO)$/cairo_quartz_cairo.obj
+	SLOFILES+=$(SLO)$/cairo_xlib_cairo.obj
+	SLOFILES+=$(SLO)$/cairo_win32_cairo.obj
+
+source\directx\makefile.mk
+	PRJNAME=canvas
+	TARGET=directx9canvas
+	TARGET2=directx5canvas
+	TARGET3=gdipluscanvas
+
+source\factory\makefile.mk
+	PRJNAME=canvas
+	TARGET=canvasfactory.uno
+	SLOFILES=
+	$(SLO)$/cf_service.obj
+
+source\null\makefile.mk
+	PRJNAME=canvas
+	TARGET=nullcanvas
+	SLOFILES=$(SLO)$/null_canvasbitmap.obj
+	$(SLO)$/null_canvascustomsprite.obj
+	$(SLO)$/null_canvasfont.obj
+	$(SLO)$/null_canvashelper.obj
+	$(SLO)$/null_devicehelper.obj
+	$(SLO)$/null_spritecanvas.obj
+	$(SLO)$/null_spritecanvashelper.obj
+	$(SLO)$/null_spritehelper.obj
+	$(SLO)$/null_textlayout.obj
+
+source\simplecanvas\makefile.mk
+	PRJNAME=canvas
+	TARGET=simplecanvas
+	SLOFILES=$(SLO)$/simplecanvasimpl.obj
+
+source\tools\makefile.mk
+	PRJNAME=canvas
+	TARGET=canvastools
+	SLOFILES=
+	$(SLO)$/cachedprimitivebase.obj
+	$(SLO)$/canvascustomspritehelper.obj
+	$(SLO)$/canvastools.obj
+	$(SLO)$/elapsedtime.obj
+	$(SLO)$/parametricpolypolygon.obj
+	$(SLO)$/prioritybooster.obj
+	$(SLO)$/propertysethelper.obj
+	$(SLO)$/spriteredrawmanager.obj
+	$(SLO)$/surface.obj
+	$(SLO)$/surfaceproxy.obj
+	$(SLO)$/surfaceproxymanager.obj
+	$(SLO)$/pagemanager.obj
+	$(SLO)$/page.obj
+	$(SLO)$/verifyinput.obj
+
+source\vcl\makefile.mk
+	PRJNAME=canvas
+	TARGET=vclcanvas
+	SLOFILES=$(SLO)$/backbuffer.obj
+	$(SLO)$/bitmapbackbuffer.obj
+	$(SLO)$/cachedbitmap.obj
+	$(SLO)$/canvas.obj
+	$(SLO)$/canvasbitmap.obj
+	$(SLO)$/canvasbitmaphelper.obj
+	$(SLO)$/canvascustomsprite.obj
+	$(SLO)$/canvasfont.obj
+	$(SLO)$/canvashelper.obj
+	$(SLO)$/canvashelper_texturefill.obj
+	$(SLO)$/devicehelper.obj
+	$(SLO)$/impltools.obj
+	$(SLO)$/services.obj
+	$(SLO)$/spritecanvas.obj
+	$(SLO)$/spritecanvashelper.obj
+	$(SLO)$/spritedevicehelper.obj
+	$(SLO)$/spritehelper.obj
+	$(SLO)$/textlayout.obj
+	$(SLO)$/windowoutdevholder.obj
+
+workben\makefile.mk
+	PRJNAME=canvas
+	TARGET=canvasdemo

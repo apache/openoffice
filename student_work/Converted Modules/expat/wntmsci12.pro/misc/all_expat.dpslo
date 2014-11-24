@@ -1,0 +1,20 @@
+
+../../../../../wntmsci12.pro/slo/xmlparse.obj: winconfig.h ascii.h expat.h
+../../../../../wntmsci12.pro/slo/xmlparse.obj: expat_external.h internal.h
+../../../../../wntmsci12.pro/slo/xmlparse.obj: xmltok.h xmlrole.h
+
+../../../../../wntmsci12.pro/slo/xmlrole.obj: winconfig.h expat_external.h
+../../../../../wntmsci12.pro/slo/xmlrole.obj: internal.h xmlrole.h xmltok.h
+../../../../../wntmsci12.pro/slo/xmlrole.obj: ascii.h
+
+../../../../../wntmsci12.pro/slo/xmltok.obj: winconfig.h expat_external.h
+../../../../../wntmsci12.pro/slo/xmltok.obj: internal.h xmltok.h nametab.h
+../../../../../wntmsci12.pro/slo/xmltok.obj: xmltok_impl.h ascii.h
+../../../../../wntmsci12.pro/slo/xmltok.obj: xmltok_impl.c asciitab.h
+../../../../../wntmsci12.pro/slo/xmltok.obj: utf8tab.h iasciitab.h
+../../../../../wntmsci12.pro/slo/xmltok.obj: latin1tab.h xmltok_ns.c
+
+../../../../../wntmsci12.pro/misc/all_expat.dpslo : ../../../../../wntmsci12.pro/misc/s_xmlparse.dpcc 
+../../../../../wntmsci12.pro/misc/all_expat.dpslo : ../../../../../wntmsci12.pro/misc/s_xmlrole.dpcc 
+../../../../../wntmsci12.pro/misc/all_expat.dpslo : ../../../../../wntmsci12.pro/misc/s_xmltok.dpcc 
+expat_known_dpcc+=s_xmlparse.dpcc s_xmlrole.dpcc s_xmltok.dpcc 

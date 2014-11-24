@@ -1,0 +1,686 @@
+Name:
+filter
+
+Dependencies:
+L10N:l10n svtools unotools xmloff cppu tools cppuhelper sal svx javaunohelper jvmaccess canvas SAXON:saxon LIBXSLT:libxslt basegfx NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\lib*.dylib %_DEST%\lib%_EXT%
+..\%__SRC%\lib\imsfilter.lib %_DEST%\lib%_EXT%\imsfilter.lib
+..\%__SRC%\lib\msfilter.lib %_DEST%\lib%_EXT%\msfilter.lib
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\class\XSLTFilter\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\class\XSLTValidate\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+mkdir: %_DEST%\bin%_EXT%\xslt
+mkdir: %_DEST%\bin%_EXT%\xslt\common
+mkdir: %_DEST%\bin%_EXT%\xslt\export
+mkdir: %_DEST%\bin%_EXT%\xslt\export\common
+mkdir: %_DEST%\bin%_EXT%\xslt\export\common\styles
+mkdir: %_DEST%\bin%_EXT%\xslt\export\common\table
+mkdir: %_DEST%\bin%_EXT%\xslt\export\spreadsheetml
+mkdir: %_DEST%\bin%_EXT%\xslt\export\wiki
+mkdir: %_DEST%\bin%_EXT%\xslt\export\wordml
+mkdir: %_DEST%\bin%_EXT%\xslt\export\uof
+mkdir: %_DEST%\bin%_EXT%\xslt\export\uof2
+mkdir: %_DEST%\bin%_EXT%\xslt\export\xhtml
+mkdir: %_DEST%\bin%_EXT%\xslt\import
+mkdir: %_DEST%\bin%_EXT%\xslt\import\common
+mkdir: %_DEST%\bin%_EXT%\xslt\import\spreadsheetml
+mkdir: %_DEST%\bin%_EXT%\xslt\import\uof
+mkdir: %_DEST%\bin%_EXT%\xslt\import\uof2
+mkdir: %_DEST%\bin%_EXT%\xslt\import\wordml
+mkdir: %_DEST%\xml%_EXT%\registry
+mkdir: %_DEST%\xml%_EXT%\registry\spool
+mkdir: %_DEST%\bin%_EXT%\pdfimport
+..\source\xslt\common\*.xsl %_DEST%\bin%_EXT%\xslt\common\*.xsl
+..\source\xslt\export\common\*.xsl %_DEST%\bin%_EXT%\xslt\export\common\*.xsl
+..\source\xslt\odf2xhtml\export\common\*.xsl %_DEST%\bin%_EXT%\xslt\export\common\*.xsl
+..\source\xslt\odf2xhtml\export\common\styles\*.xsl %_DEST%\bin%_EXT%\xslt\export\common\styles\*.xsl
+..\source\xslt\odf2xhtml\export\common\table\*.xsl %_DEST%\bin%_EXT%\xslt\export\common\table\*.xsl
+..\source\xslt\export\spreadsheetml\*.xsl %_DEST%\bin%_EXT%\xslt\export\spreadsheetml\*.xsl
+..\source\xslt\export\wiki\*.xsl %_DEST%\bin%_EXT%\xslt\export\wiki\*.xsl
+..\source\xslt\export\wiki\*.ott %_DEST%\bin%_EXT%\xslt\export\wiki\*.ott
+..\source\xslt\export\wordml\*.xsl %_DEST%\bin%_EXT%\xslt\export\wordml\*.xsl
+..\source\xslt\export\uof\*.xsl %_DEST%\bin%_EXT%\xslt\export\uof\*.xsl
+..\source\xslt\export\uof2\*.xsl %_DEST%\bin%_EXT%\xslt\export\uof2\*.xsl
+..\source\xslt\export\xhtml\*.xsl %_DEST%\bin%_EXT%\xslt\export\xhtml\*.xsl
+..\source\xslt\odf2xhtml\export\xhtml\*.xsl %_DEST%\bin%_EXT%\xslt\export\xhtml\*.xsl
+..\source\xslt\import\common\*.xsl %_DEST%\bin%_EXT%\xslt\import\common\*.xsl
+..\source\xslt\import\spreadsheetml\*.xsl %_DEST%\bin%_EXT%\xslt\import\spreadsheetml\*.xsl
+..\source\xslt\import\wordml\*.xsl %_DEST%\bin%_EXT%\xslt\import\wordml\*.xsl
+..\source\xslt\import\uof\*.xsl %_DEST%\bin%_EXT%\xslt\import\uof\*.xsl
+..\source\xslt\import\uof2\*.xsl %_DEST%\bin%_EXT%\xslt\import\uof2\*.xsl
+..\%__SRC%\bin\*.xsl %_DEST%\bin%_EXT%\*.xsl
+..\%__SRC%\bin\*.stw %_DEST%\bin%_EXT%\*.stw
+..\%__SRC%\bin\pdf2xml.* %_DEST%\bin%_EXT%\pdf2xml.*
+..\%__SRC%\bin\pdfunzip.* %_DEST%\bin%_EXT%\pdfunzip.*
+..\%__SRC%\misc\filters\modulepacks\fcfg_*.xcu %_DEST%\xml%_EXT%\registry\spool\fcfg_*.xcu
+..\%COMMON_OUTDIR%\bin\fcfg_langpack_*.zip %_DEST%\pck%_EXT%\fcfg_langpack_*.zip
+..\%__SRC%\misc\t602filter.component %_DEST%\xml%_EXT%\t602filter.component
+
+mkdir: %_DEST%\inc%_EXT%\filter
+mkdir: %_DEST%\inc%_EXT%\filter\msfilter
+..\inc\filter\msfilter\*.hxx %_DEST%\inc%_EXT%\filter\msfilter\*.hxx
+..\inc\filter\msfilter\*.h %_DEST%\inc%_EXT%\filter\msfilter\*.h
+
+..\%__SRC%\misc\XSLTFilter.jar.component %_DEST%\xml%_EXT%\XSLTFilter.jar.component
+..\%__SRC%\misc\XSLTValidate.component %_DEST%\xml%_EXT%\XSLTValidate.component
+..\%__SRC%\misc\filterconfig1.component %_DEST%\xml%_EXT%\filterconfig1.component
+..\%__SRC%\misc\flash.component %_DEST%\xml%_EXT%\flash.component
+..\%__SRC%\misc\msfilter.component %_DEST%\xml%_EXT%\msfilter.component
+..\%__SRC%\misc\pdffilter.component %_DEST%\xml%_EXT%\pdffilter.component
+..\%__SRC%\misc\placeware.component %_DEST%\xml%_EXT%\placeware.component
+..\%__SRC%\misc\svgfilter.component %_DEST%\xml%_EXT%\svgfilter.component
+..\%__SRC%\misc\xmlfa.component %_DEST%\xml%_EXT%\xmlfa.component
+..\%__SRC%\misc\xmlfd.component %_DEST%\xml%_EXT%\xmlfd.component
+..\%__SRC%\misc\xsltdlg.component %_DEST%\xml%_EXT%\xsltdlg.component
+..\%__SRC%\misc\xsltfilter.component %_DEST%\xml%_EXT%\xsltfilter.component
+
+Source Files:
+inc\pch\precompiled_filter.cxx
+source\config\cache\basecontainer.cxx
+source\config\cache\cacheitem.cxx
+source\config\cache\cacheupdatelistener.cxx
+source\config\cache\configflush.cxx
+source\config\cache\contenthandlerfactory.cxx
+source\config\cache\filtercache.cxx
+source\config\cache\filterfactory.cxx
+source\config\cache\frameloaderfactory.cxx
+source\config\cache\lateinitlistener.cxx
+source\config\cache\lateinitthread.cxx
+source\config\cache\querytokenizer.cxx
+source\config\cache\registration.cxx
+source\config\cache\typedetection.cxx
+source\filtertracer\filtertracer.cxx
+source\filtertracer\filtertraceruno.cxx
+source\flash\impswfdialog.cxx
+source\flash\swfdialog.cxx
+source\flash\swfexporter.cxx
+source\flash\swffilter.cxx
+source\flash\swfuno.cxx
+source\flash\swfwriter.cxx
+source\flash\swfwriter1.cxx
+source\flash\swfwriter2.cxx
+source\graphicfilter\egif\egif.cxx
+source\graphicfilter\egif\giflzwc.cxx
+source\graphicfilter\eos2met\eos2met.cxx
+source\graphicfilter\epbm\epbm.cxx
+source\graphicfilter\epgm\epgm.cxx
+source\graphicfilter\epict\epict.cxx
+source\graphicfilter\eppm\eppm.cxx
+source\graphicfilter\eps\eps.cxx
+source\graphicfilter\eras\eras.cxx
+source\graphicfilter\etiff\etiff.cxx
+source\graphicfilter\expm\expm.cxx
+source\graphicfilter\icgm\actimpr.cxx
+source\graphicfilter\icgm\bitmap.cxx
+source\graphicfilter\icgm\bundles.cxx
+source\graphicfilter\icgm\cgm.cxx
+source\graphicfilter\icgm\chart.cxx
+source\graphicfilter\icgm\class0.cxx
+source\graphicfilter\icgm\class1.cxx
+source\graphicfilter\icgm\class2.cxx
+source\graphicfilter\icgm\class3.cxx
+source\graphicfilter\icgm\class4.cxx
+source\graphicfilter\icgm\class5.cxx
+source\graphicfilter\icgm\class7.cxx
+source\graphicfilter\icgm\classx.cxx
+source\graphicfilter\icgm\elements.cxx
+source\graphicfilter\icgm\outact.cxx
+source\graphicfilter\idxf\dxf2mtf.cxx
+source\graphicfilter\idxf\dxfblkrd.cxx
+source\graphicfilter\idxf\dxfentrd.cxx
+source\graphicfilter\idxf\dxfgrprd.cxx
+source\graphicfilter\idxf\dxfreprd.cxx
+source\graphicfilter\idxf\dxftblrd.cxx
+source\graphicfilter\idxf\dxfvec.cxx
+source\graphicfilter\idxf\idxf.cxx
+source\graphicfilter\ieps\ieps.cxx
+source\graphicfilter\ios2met\ios2met.cxx
+source\graphicfilter\ipbm\ipbm.cxx
+source\graphicfilter\ipcd\ipcd.cxx
+source\graphicfilter\ipcx\ipcx.cxx
+source\graphicfilter\ipict\ipict.cxx
+source\graphicfilter\ipict\shape.cxx
+source\graphicfilter\ipsd\ipsd.cxx
+source\graphicfilter\iras\iras.cxx
+source\graphicfilter\itga\itga.cxx
+source\graphicfilter\itiff\ccidecom.cxx
+source\graphicfilter\itiff\itiff.cxx
+source\graphicfilter\itiff\lzwdecom.cxx
+source\msfilter\countryid.cxx
+source\msfilter\dffpropset.cxx
+source\msfilter\dffrecordheader.cxx
+source\msfilter\escherex.cxx
+source\msfilter\eschesdo.cxx
+source\msfilter\mscodec.cxx
+source\msfilter\msdffimp.cxx
+source\msfilter\msfiltertracer.cxx
+source\msfilter\msocximex.cxx
+source\msfilter\msoleexp.cxx
+source\msfilter\msvbahelper.cxx
+source\msfilter\msvbasic.cxx
+source\msfilter\services.cxx
+source\msfilter\svdfppt.cxx
+source\msfilter\svxmsbas.cxx
+source\msfilter\svxmsbas2.cxx
+source\msfilter\powerpoint\pptimporter.cxx
+source\msfilter\powerpoint\pptimporteruno.cxx
+source\msfilter\powerpoint\ppttoxml.cxx
+source\pdf\impdialog.cxx
+source\pdf\pdfdialog.cxx
+source\pdf\pdfexport.cxx
+source\pdf\pdffilter.cxx
+source\pdf\pdfinteract.cxx
+source\pdf\pdfuno.cxx
+source\placeware\Base64Codec.cxx
+source\placeware\exporter.cxx
+source\placeware\filter.cxx
+source\placeware\tempfile.cxx
+source\placeware\uno.cxx
+source\placeware\zip.cxx
+source\svg\impsvgdialog.cxx
+source\svg\svgdialog.cxx
+source\svg\svgexport.cxx
+source\svg\svgfilter.cxx
+source\svg\svgfontexport.cxx
+source\svg\svgimport.cxx
+source\svg\svguno.cxx
+source\svg\svgwriter.cxx
+source\t602\filterenv.cxx
+source\t602\t602filter.cxx
+source\xmlfilteradaptor\genericfilter.cxx
+source\xmlfilteradaptor\streamwrap.cxx
+source\xmlfilteradaptor\XmlFilterAdaptor.cxx
+source\xmlfilterdetect\fdcomp.cxx
+source\xmlfilterdetect\filterdetect.cxx
+source\xsltdialog\typedetectionexport.cxx
+source\xsltdialog\typedetectionimport.cxx
+source\xsltdialog\xmlfileview.cxx
+source\xsltdialog\xmlfilterdialogcomponent.cxx
+source\xsltdialog\xmlfilterjar.cxx
+source\xsltdialog\xmlfiltersettingsdialog.cxx
+source\xsltdialog\xmlfiltertabdialog.cxx
+source\xsltdialog\xmlfiltertabpagebasic.cxx
+source\xsltdialog\xmlfiltertabpagexslt.cxx
+source\xsltdialog\xmlfiltertestdialog.cxx
+source\xsltfilter\uof2merge.cxx
+source\xsltfilter\uof2splithandler.cxx
+source\xsltfilter\uof2splitter.cxx
+source\xsltfilter\uof2storage.cxx
+source\xsltfilter\XMLBase64Codec.cxx
+source\xsltfilter\XSLTFilter.cxx
+
+Header Files:
+inc\filter.hrc
+inc\filter\msfilter\countryid.hxx
+inc\filter\msfilter\dffpropset.hxx
+inc\filter\msfilter\dffrecordheader.hxx
+inc\filter\msfilter\escherex.hxx
+inc\filter\msfilter\mscodec.hxx
+inc\filter\msfilter\msdffimp.hxx
+inc\filter\msfilter\msfilterdllapi.h
+inc\filter\msfilter\msfiltertracer.hxx
+inc\filter\msfilter\msocximex.hxx
+inc\filter\msfilter\msoleexp.hxx
+inc\filter\msfilter\msvbahelper.hxx
+inc\filter\msfilter\svdfppt.hxx
+inc\filter\msfilter\svxmsbas.hxx
+inc\pch\precompiled_filter.hxx
+source\config\cache\basecontainer.hxx
+source\config\cache\cacheitem.hxx
+source\config\cache\cacheupdatelistener.hxx
+source\config\cache\configflush.hxx
+source\config\cache\constant.hxx
+source\config\cache\contenthandlerfactory.hxx
+source\config\cache\filtercache.hxx
+source\config\cache\filterfactory.hxx
+source\config\cache\frameloaderfactory.hxx
+source\config\cache\lateinitlistener.hxx
+source\config\cache\lateinitthread.hxx
+source\config\cache\macros.hxx
+source\config\cache\querytokenizer.hxx
+source\config\cache\registration.hxx
+source\config\cache\typedetection.hxx
+source\config\cache\versions.hxx
+source\filtertracer\filtertracer.hxx
+source\flash\impswfdialog.hrc
+source\flash\impswfdialog.hxx
+source\flash\swfdialog.hxx
+source\flash\swfexporter.hxx
+source\flash\swfwriter.hxx
+source\graphicfilter\egif\giflzwc.hxx
+source\graphicfilter\eps\strings.hrc
+source\graphicfilter\icgm\bitmap.hxx
+source\graphicfilter\icgm\bundles.hxx
+source\graphicfilter\icgm\cgm.hxx
+source\graphicfilter\icgm\cgmres.hrc
+source\graphicfilter\icgm\cgmtypes.hxx
+source\graphicfilter\icgm\chart.hxx
+source\graphicfilter\icgm\elements.hxx
+source\graphicfilter\icgm\main.hxx
+source\graphicfilter\icgm\outact.hxx
+source\graphicfilter\idxf\dxf2mtf.hxx
+source\graphicfilter\idxf\dxfblkrd.hxx
+source\graphicfilter\idxf\dxfentrd.hxx
+source\graphicfilter\idxf\dxfgrprd.hxx
+source\graphicfilter\idxf\dxfreprd.hxx
+source\graphicfilter\idxf\dxftblrd.hxx
+source\graphicfilter\idxf\dxfvec.hxx
+source\graphicfilter\ipict\shape.hxx
+source\graphicfilter\itiff\ccidecom.hxx
+source\graphicfilter\itiff\lzwdecom.hxx
+source\msfilter\eschesdo.hxx
+source\msfilter\msvbasic.hxx
+source\msfilter\viscache.hxx
+source\msfilter\powerpoint\pptcom.hxx
+source\msfilter\powerpoint\pptimporter.hxx
+source\msfilter\powerpoint\ppttoxml.hxx
+source\pdf\impdialog.hrc
+source\pdf\impdialog.hxx
+source\pdf\pdf.hrc
+source\pdf\pdfdialog.hxx
+source\pdf\pdfexport.hxx
+source\pdf\pdffilter.hxx
+source\pdf\pdfinteract.hxx
+source\placeware\Base64Codec.hxx
+source\placeware\exporter.hxx
+source\placeware\tempfile.hxx
+source\placeware\zip.hxx
+source\placeware\zipfile.hxx
+source\svg\impsvgdialog.hxx
+source\svg\svgdialog.hxx
+source\svg\svgfilter.hxx
+source\svg\svgfontexport.hxx
+source\svg\svgscript.hxx
+source\svg\svgwriter.hxx
+source\t602\t602filter.hrc
+source\t602\t602filter.hxx
+source\xmlfilteradaptor\streamwrap.hxx
+source\xmlfilteradaptor\XmlFilterAdaptor.hxx
+source\xmlfilterdetect\filterdetect.hxx
+source\xsltdialog\typedetectionexport.hxx
+source\xsltdialog\typedetectionimport.hxx
+source\xsltdialog\xmlfileview.hrc
+source\xsltdialog\xmlfileview.hxx
+source\xsltdialog\xmlfiltercommon.hrc
+source\xsltdialog\xmlfiltercommon.hxx
+source\xsltdialog\xmlfilterdialogstrings.hrc
+source\xsltdialog\xmlfilterhelpids.hrc
+source\xsltdialog\xmlfilterjar.hxx
+source\xsltdialog\xmlfiltersettingsdialog.hrc
+source\xsltdialog\xmlfiltersettingsdialog.hxx
+source\xsltdialog\xmlfiltertabdialog.hrc
+source\xsltdialog\xmlfiltertabdialog.hxx
+source\xsltdialog\xmlfiltertabpagebasic.hrc
+source\xsltdialog\xmlfiltertabpagebasic.hxx
+source\xsltdialog\xmlfiltertabpagexslt.hrc
+source\xsltdialog\xmlfiltertabpagexslt.hxx
+source\xsltdialog\xmlfiltertestdialog.hrc
+source\xsltdialog\xmlfiltertestdialog.hxx
+source\xsltfilter\containerhelper.hxx
+source\xsltfilter\uof2merge.hxx
+source\xsltfilter\uof2splithandler.hxx
+source\xsltfilter\uof2splitter.hxx
+source\xsltfilter\uof2storage.hxx
+source\xsltfilter\XMLBase64Codec.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=filter
+	TARGET=inc
+
+qa\complex\filter\detection\typeDetection\makefile.mk
+	PRJNAME=filter
+	TARGET=TypeDetection
+
+qa\complex\filter\misc\makefile.mk
+	PRJNAME=filter
+	TARGET=qa_complex_filter_misc
+
+source\config\cache\makefile.mk
+	PRJNAME=filter
+	TARGET=filterconfig
+	SLOFILES=
+	$(SLO)$/configflush.obj
+	$(SLO)$/basecontainer.obj
+	$(SLO)$/cacheitem.obj
+	$(SLO)$/contenthandlerfactory.obj
+	$(SLO)$/filtercache.obj
+	$(SLO)$/filterfactory.obj
+	$(SLO)$/frameloaderfactory.obj
+	$(SLO)$/lateinitlistener.obj
+	$(SLO)$/lateinitthread.obj
+	$(SLO)$/querytokenizer.obj
+	$(SLO)$/registration.obj
+	$(SLO)$/typedetection.obj
+	$(SLO)$/cacheupdatelistener.obj
+
+source\config\fragments\fcfg_base.mk
+
+source\config\fragments\fcfg_calc.mk
+
+source\config\fragments\fcfg_chart.mk
+
+source\config\fragments\fcfg_database.mk
+
+source\config\fragments\fcfg_draw.mk
+
+source\config\fragments\fcfg_drawgraphics.mk
+
+source\config\fragments\fcfg_global.mk
+
+source\config\fragments\fcfg_impress.mk
+
+source\config\fragments\fcfg_impressgraphics.mk
+
+source\config\fragments\fcfg_internalgraphics.mk
+
+source\config\fragments\fcfg_math.mk
+
+source\config\fragments\fcfg_palm.mk
+
+source\config\fragments\fcfg_pocketexcel.mk
+
+source\config\fragments\fcfg_pocketword.mk
+
+source\config\fragments\fcfg_w4w.mk
+
+source\config\fragments\fcfg_web.mk
+
+source\config\fragments\fcfg_writer.mk
+
+source\config\fragments\fcfg_xslt.mk
+
+source\config\fragments\makefile.mk
+	TARGET=FCFGPkg
+	PRJNAME=filter
+
+source\config\fragments\packagedef.mk
+
+source\config\fragments\filters\makefile.mk
+	TARGET=FCFGPkgFilters
+	PRJNAME=filter
+
+source\config\fragments\types\makefile.mk
+	TARGET=FCFGPkgTypes
+	PRJNAME=filter
+
+source\config\tools\split\makefile.mk
+	PRJNAME=filter
+	TARGET=FCFGSplit
+
+source\docbook\makefile.mk
+	PRJNAME=filter
+	TARGET=fl_javafilter_binaries
+
+source\filtertracer\makefile.mk
+	PRJNAME=filter
+	TARGET=filtertracer
+	SLOFILES=$(SLO)$/filtertracer.obj
+	$(SLO)$/filtertraceruno.obj
+
+source\flash\makefile.mk
+	PRJNAME=filter
+	TARGET=flash
+	SLOFILES=$(SLO)$/swffilter.obj
+	$(SLO)$/swfwriter.obj
+	$(SLO)$/swfwriter1.obj
+	$(SLO)$/swfwriter2.obj
+	$(SLO)$/swfuno.obj
+	$(SLO)$/swfexporter.obj
+	$(SLO)$/swfdialog.obj
+	$(SLO)$/impswfdialog.obj
+
+source\graphicfilter\egif\makefile.mk
+	PRJNAME=filter
+	TARGET=egif
+	TARGET2=egi
+	SLOFILES=$(SLO)$/egif.obj
+	$(SLO)$/giflzwc.obj
+
+source\graphicfilter\eos2met\makefile.mk
+	PRJNAME=filter
+	TARGET=eos2met
+	TARGET2=eme
+	SLOFILES=$(SLO)$/eos2met.obj
+
+source\graphicfilter\epbm\makefile.mk
+	PRJNAME=filter
+	TARGET=epbm
+	TARGET2=epb
+	SLOFILES=$(SLO)$/epbm.obj
+
+source\graphicfilter\epgm\makefile.mk
+	PRJNAME=filter
+	TARGET=epgm
+	TARGET2=epg
+	SLOFILES=$(SLO)$/epgm.obj
+
+source\graphicfilter\epict\makefile.mk
+	PRJNAME=filter
+	TARGET=epict
+	TARGET2=ept
+	SLOFILES=$(SLO)$/epict.obj
+
+source\graphicfilter\eppm\makefile.mk
+	PRJNAME=filter
+	TARGET=eppm
+	TARGET2=epp
+	SLOFILES=$(SLO)$/eppm.obj
+
+source\graphicfilter\eps\makefile.mk
+	PRJNAME=filter
+	TARGET=eps
+	SLOFILES=$(SLO)$/eps.obj
+
+source\graphicfilter\eras\makefile.mk
+	PRJNAME=filter
+	TARGET=eras
+	SLOFILES=$(SLO)$/eras.obj
+
+source\graphicfilter\etiff\makefile.mk
+	PRJNAME=filter
+	TARGET=etiff
+	SLOFILES=$(SLO)$/etiff.obj
+
+source\graphicfilter\expm\makefile.mk
+	PRJNAME=filter
+	TARGET=expm
+	SLOFILES=$(SLO)$/expm.obj
+
+source\graphicfilter\icgm\makefile.mk
+	PRJNAME=filter
+	TARGET=icgm
+	SLOFILES=$(SLO)$/cgm.obj
+	$(SLO)$/chart.obj
+	$(SLO)$/class0.obj
+	$(SLO)$/class1.obj
+	$(SLO)$/class2.obj
+	$(SLO)$/class3.obj
+	$(SLO)$/class4.obj
+	$(SLO)$/class5.obj
+	$(SLO)$/class7.obj
+	$(SLO)$/classx.obj
+	$(SLO)$/outact.obj
+	$(SLO)$/actimpr.obj
+	$(SLO)$/bundles.obj
+	$(SLO)$/bitmap.obj
+	$(SLO)$/elements.obj
+
+source\graphicfilter\idxf\makefile.mk
+	PRJNAME=filter
+	TARGET=idxf
+	SLOFILES=$(SLO)$/dxfgrprd.obj
+	$(SLO)$/dxfvec.obj
+	$(SLO)$/dxfentrd.obj
+	$(SLO)$/dxfblkrd.obj
+	$(SLO)$/dxftblrd.obj
+	$(SLO)$/dxfreprd.obj
+	$(SLO)$/dxf2mtf.obj
+	$(SLO)$/idxf.obj
+
+source\graphicfilter\ieps\makefile.mk
+	PRJNAME=filter
+	TARGET=ieps
+	SLOFILES=$(SLO)$/ieps.obj
+
+source\graphicfilter\ios2met\makefile.mk
+	PRJNAME=filter
+	TARGET=ios2met
+	SLOFILES=$(SLO)$/ios2met.obj
+
+source\graphicfilter\ipbm\makefile.mk
+	PRJNAME=filter
+	TARGET=ipbm
+	SLOFILES=$(SLO)$/ipbm.obj
+
+source\graphicfilter\ipcd\makefile.mk
+	PRJNAME=filter
+	TARGET=ipcd
+	SLOFILES=$(SLO)$/ipcd.obj
+
+source\graphicfilter\ipcx\makefile.mk
+	PRJNAME=filter
+	TARGET=ipcx
+	SLOFILES=$(SLO)$/ipcx.obj
+
+source\graphicfilter\ipict\makefile.mk
+	PRJNAME=filter
+	TARGET=ipict
+	SLOFILES=$(SLO)$/ipict.obj$(SLO)$/shape.obj
+
+source\graphicfilter\ipsd\makefile.mk
+	PRJNAME=filter
+	TARGET=ipsd
+	SLOFILES=$(SLO)$/ipsd.obj
+
+source\graphicfilter\iras\makefile.mk
+	PRJNAME=filter
+	TARGET=iras
+	SLOFILES=$(SLO)$/iras.obj
+
+source\graphicfilter\itga\makefile.mk
+	PRJNAME=filter
+	TARGET=itga
+	SLOFILES=$(SLO)$/itga.obj
+
+source\graphicfilter\itiff\makefile.mk
+	PRJNAME=filter
+	TARGET=itiff
+	SLOFILES=$(SLO)$/itiff.obj
+	$(SLO)$/lzwdecom.obj
+	$(SLO)$/ccidecom.obj
+
+source\msfilter\makefile.mk
+	PRJNAME=filter
+	TARGET=msfilter
+	SLOFILES=
+	$(SLO)$/countryid.obj
+	$(SLO)$/escherex.obj
+	$(SLO)$/eschesdo.obj
+	$(SLO)$/dffrecordheader.obj
+	$(SLO)$/dffpropset.obj
+	$(SLO)$/mscodec.obj
+	$(SLO)$/msdffimp.obj
+	$(SLO)$/msfiltertracer.obj
+	$(SLO)$/msocximex.obj
+	$(SLO)$/msoleexp.obj
+	$(SLO)$/msvbahelper.obj
+	$(SLO)$/msvbasic.obj
+	$(SLO)$/services.obj
+	$(SLO)$/svdfppt.obj
+	$(SLO)$/svxmsbas.obj
+	$(SLO)$/svxmsbas2.obj
+
+source\msfilter\makefile.pmk
+
+source\msfilter\powerpoint\makefile.mk
+	PRJNAME=filter
+	TARGET=PptImporter
+	SLOFILES=$(SLO)$/pptimporter.obj
+	$(SLO)$/pptimporteruno.obj
+	$(SLO)$/ppttoxml.obj
+
+source\pdf\makefile.mk
+	PRJNAME=filter
+	TARGET=pdffilter
+	SLOFILES=$(SLO)$/pdfuno.obj
+	$(SLO)$/pdfdialog.obj
+	$(SLO)$/impdialog.obj
+	$(SLO)$/pdffilter.obj
+	$(SLO)$/pdfinteract.obj
+	$(SLO)$/pdfexport.obj
+
+source\placeware\makefile.mk
+	PRJNAME=filter
+	TARGET=placeware
+	SLOFILES=$(SLO)$/zip.obj
+	$(SLO)$/filter.obj
+	$(SLO)$/uno.obj
+	$(SLO)$/exporter.obj
+	$(SLO)$/Base64Codec.obj
+	$(SLO)$/tempfile.obj
+
+source\svg\makefile.mk
+	PRJNAME=filter
+	TARGET=svgfilter
+	SLOFILES=$(SLO)$/svguno.obj
+	$(SLO)$/svgdialog.obj
+	$(SLO)$/impsvgdialog.obj
+	$(SLO)$/svgfilter.obj
+	$(SLO)$/svgexport.obj
+	$(SLO)$/svgfontexport.obj
+	$(SLO)$/svgwriter.obj
+	SLOFILES+=$(SLO)$/svgimport.obj
+
+source\t602\makefile.mk
+	PRJNAME=filter
+	TARGET=t602filter
+	SLOFILES=$(SLO)$/t602filter.obj
+	$(SLO)$/filterenv.obj
+
+source\xmlfilteradaptor\makefile.mk
+	PRJNAME=filter
+	TARGET=fl_xmlfilteradaptor
+
+source\xmlfilterdetect\makefile.mk
+	PRJNAME=filter
+	TARGET=fl_xmlfilterdetect
+
+source\xsltdialog\makefile.mk
+	PRJNAME=filter
+	TARGET=xsltdlg
+	SLOFILES=$(SLO)$/typedetectionimport.obj
+	$(SLO)$/typedetectionexport.obj
+	$(SLO)$/xmlfilterjar.obj
+	$(SLO)$/xmlfilterdialogcomponent.obj
+	$(SLO)$/xmlfiltersettingsdialog.obj
+	$(SLO)$/xmlfiltertabdialog.obj
+	$(SLO)$/xmlfiltertabpagebasic.obj
+	$(SLO)$/xmlfiltertabpagexslt.obj
+	$(SLO)$/xmlfiltertestdialog.obj
+	$(SLO)$/xmlfileview.obj
+
+source\xsltfilter\makefile.mk
+	PRJNAME=filter
+	TARGET=XSLTFilter
+	SLOFILES=
+	$(SLO)$/XSLTFilter.obj
+	$(SLO)$/uof2storage.obj
+	$(SLO)$/uof2merge.obj
+	$(SLO)$/XMLBase64Codec.obj
+	$(SLO)$/uof2splithandler.obj
+	$(SLO)$/uof2splitter.obj
+
+source\xsltvalidate\makefile.mk
+	PRJNAME=filter
+	TARGET=XSLTValidate

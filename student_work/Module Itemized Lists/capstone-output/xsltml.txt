@@ -1,0 +1,25 @@
+Name:
+xsltml
+
+Dependencies:
+solenv external NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%\xslt
+mkdir: %_DEST%\bin%_EXT%\xslt\export
+mkdir: %_DEST%\bin%_EXT%\xslt\export\xsltml
+
+..\%__SRC%\misc\build\xsltml_2.1.2\*.xsl %_DEST%\bin%_EXT%\xslt\export\xsltml\*.xsl
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=xsltml
+	TARGET=xsltml

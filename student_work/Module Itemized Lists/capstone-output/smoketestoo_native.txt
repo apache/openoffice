@@ -1,0 +1,21 @@
+Name:
+smoketestoo_native
+
+Dependencies:
+:       instsetoo_native test smoketestdoc NULL
+
+Build Rules:
+
+Source Files:
+smoketest.cxx
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=smoketestoo_native
+	TARGET=smoketest
+	SLOFILES=$(SHL1OBJS)

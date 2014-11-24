@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6EB09D85-8627-6418-DB62-2E6B0E2FF865}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>purpenvhelper3MSC_dll</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  	<Import Project="..\AOOWinGlobal.props" />
+	</ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>
+    </LinkIncremental>
+    <OutDir>wntmsci12.pro\bin\</OutDir>
+    <IntDir>wntmsci12.pro\intermediate\purpenvhelper3MSC_dll\</IntDir>
+    <TargetName>purpenvhelper3MSC</TargetName>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <IgnoreImportLibrary />
+    <GenerateManifest />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>
+      </Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWarningAsError>
+      </TreatWarningAsError>
+      <InlineFunctionExpansion>
+      </InlineFunctionExpansion>
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <EnableFiberSafeOptimizations>
+      </EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>
+      </WholeProgramOptimization>
+      <UndefineAllPreprocessorDefinitions>
+      </UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>
+      </IgnoreStandardIncludePath>
+      <PreprocessToFile>
+      </PreprocessToFile>
+      <PreprocessSuppressLineNumbers>
+      </PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>
+      </PreprocessKeepComments>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <StructMemberAlignment>
+      </StructMemberAlignment>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ExpandAttributedSource>
+      </ExpandAttributedSource>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>wntmsci12.pro/slo/</ObjectFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles>
+      </GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>
+      </XMLDocumentationFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <CallingConvention>
+      </CallingConvention>
+      <CompileAs>
+      </CompileAs>
+      <ShowIncludes>
+      </ShowIncludes>
+      <UseFullPaths>
+      </UseFullPaths>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+      <ErrorReporting>
+      </ErrorReporting>
+      <AdditionalOptions>ch -Yuprecompiled_cppu.hxx -Fpwntmsci12.pro/slo/pch_ex/precompiled_cppu.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -I. -Iwntmsci12.pro/inc/helper_purpenv -I../inc -Iinc/pch -Iinc -IWIN/inc -Iwntmsci12.pro/inc -I. -I../solver/410/wntmsci12.pro/inc/stl -I../solver/410/wntmsci12.pro/inc/external -I../solver/410/wntmsci12.pro/inc -I../solenv/wntmsci12/inc -I../solenv/inc -I../res -I../solver/410/wntmsci12.pro/inc/offuh -I. -Ires -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275 -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626 -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619 -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005 -wd4180 -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON -Fowntmsci12.pro/slo/ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>
+      </GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+      <OutputFile>wntmsci12.pro\bin\purpenvhelper3MSC.dll</OutputFile>
+      <ShowProgress>
+      </ShowProgress>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <RegisterOutput>
+      </RegisterOutput>
+      <PerUserRedirection>
+      </PerUserRedirection>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <ManifestFile>
+      </ManifestFile>
+      <AllowIsolation>
+      </AllowIsolation>
+      <EnableUAC>
+      </EnableUAC>
+      <UACExecutionLevel>
+      </UACExecutionLevel>
+      <UACUIAccess></UACUIAccess>
+      <ProgramDatabaseFile>
+      </ProgramDatabaseFile>
+      <GenerateMapFile></GenerateMapFile>
+      <MapExports>
+      </MapExports>
+      <SwapRunFromCD>
+      </SwapRunFromCD>
+      <SwapRunFromNET>
+      </SwapRunFromNET>
+      <Driver>
+      </Driver>
+      <ProfileGuidedDatabase>
+      </ProfileGuidedDatabase>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <IgnoreEmbeddedIDL>
+      </IgnoreEmbeddedIDL>
+      <TypeLibraryResourceID>
+      </TypeLibraryResourceID>
+      <NoEntryPoint>
+      </NoEntryPoint>
+      <SetChecksum>
+      </SetChecksum>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TurnOffAssemblyGeneration>
+      </TurnOffAssemblyGeneration>
+      <TargetMachine>
+      </TargetMachine>
+      <Profile>
+      </Profile>
+      <CLRImageType>
+      </CLRImageType>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
+      <AdditionalOptions>/MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 /MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -def:wntmsci12.pro/misc/purpenvhelper3MSC.def -implib:wntmsci12.pro/lib/ipurpenvhelper3MSC.lib wntmsci12.pro/lib/ipurpenvhelper3MSC.lib %(AdditionalOptions)</AdditionalOptions>
+<AdditionalLibraryDirectories>..\solver\410\wntmsci12.pro\lib;wntmsci12.pro\lib;wntmsci12.pro\slb</AdditionalLibraryDirectories>
+    <MapFileName></MapFileName>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>
+      </LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference>
+      <UseLibraryDependencyInputs>
+      </UseLibraryDependencyInputs>
+    </ProjectReference>
+    <PreBuildEvent>
+      <Command></Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command></Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="wntmsci12.pro/misc/purpenvhelper3MSC_version.c" >
+	<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">-Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -I. -Iwntmsci12.pro/inc/cppu -Iinc -Iinc/pch -Iinc -IWIN/inc -Iwntmsci12.pro/inc -I. -I../solver/410/wntmsci12.pro/incdont_use_stl -I../solver/410/wntmsci12.pro/inc/external -I../solver/410/wntmsci12.pro/inc -I../solenv/wntmsci12/inc -I../solenv/inc -I../res -I../solver/410/wntmsci12.pro/inc/offuh -I. -Ires -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275 -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626 -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619 -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005 -wd4180 -wd4255 -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -Fowntmsci12.pro/slo/ %(AdditionalOptions)</AdditionalOptions>
+
+</ClCompile>
+<ClCompile Include="C:/steve/testarea/main/cppu/source/helper/purpenv/helper_purpenv_Environment.cxx" />
+	<ClCompile Include="C:/steve/testarea/main/cppu/source/helper/purpenv/helper_purpenv_Mapping.cxx" />
+	<ClCompile Include="C:/steve/testarea/main/cppu/source/helper/purpenv/helper_purpenv_Proxy.cxx" />
+	
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

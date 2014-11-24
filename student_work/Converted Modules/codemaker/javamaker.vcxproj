@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C2A6D924-15AB-4D62-89A2-F93DF8EB9F49}</ProjectGuid>
+    <RootNamespace>javamaker</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>wntmsci12.pro\bin\</OutDir>
+    <IntDir>wntmsci12.pro\obj\</IntDir>
+    <TargetExt>.exe</TargetExt>
+    <IgnoreImportLibrary />
+    <GenerateManifest />
+    <LibraryPath>..\solver\410\wntmsci12.pro\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <Optimization>
+      </Optimization>
+      <DebugInformationFormat />
+      <SuppressStartupBanner />
+      <TreatWarningAsError />
+      <InlineFunctionExpansion />
+      <IntrinsicFunctions />
+      <FavorSizeOrSpeed />
+      <OmitFramePointers />
+      <EnableFiberSafeOptimizations />
+      <WholeProgramOptimization />
+      <PreprocessorDefinitions />
+      <UndefineAllPreprocessorDefinitions />
+      <IgnoreStandardIncludePath />
+      <PreprocessToFile />
+      <PreprocessSuppressLineNumbers />
+      <PreprocessKeepComments />
+      <MinimalRebuild />
+      <ExceptionHandling />
+      <SmallerTypeCheck />
+      <BasicRuntimeChecks />
+      <RuntimeLibrary />
+      <StructMemberAlignment />
+      <BufferSecurityCheck />
+      <EnableEnhancedInstructionSet />
+      <FloatingPointModel />
+      <DisableLanguageExtensions />
+      <TreatWChar_tAsBuiltInType />
+      <ForceConformanceInForLoopScope />
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <PrecompiledHeaderOutputFile />
+      <ExpandAttributedSource />
+      <AssemblerOutput />
+      <AssemblerListingLocation />
+      <ObjectFileName>wntmsci12.pro\obj\</ObjectFileName>
+      <ProgramDataBaseFileName />
+      <GenerateXMLDocumentationFiles />
+      <XMLDocumentationFileName />
+      <BrowseInformation />
+      <BrowseInformationFile />
+      <CallingConvention />
+      <CompileAs />
+      <ShowIncludes />
+      <UseFullPaths />
+      <OmitDefaultLibName />
+      <ErrorReporting />
+      <AdditionalOptions>-Zm500 -Zc:wchar_t -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -Iwntmsci12.pro/inc/javamaker -Iinc -Iinc/pch -Iinc -IWIN/inc -Iwntmsci12.pro/inc -I. -I../solver/410/wntmsci12.pro/inc/stl -I../solver/410/wntmsci12.pro/inc/external -I../solver/410/wntmsci12.pro/inc -I../solenv/wntmsci12/inc -I../solenv/inc -I../res  -I../solver/410/wntmsci12.pro/inc/offuh -I. -Ires -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>
+      </GenerateDebugInformation>
+      <NoEntryPoint />
+      <SetChecksum />
+      <RandomizedBaseAddress />
+      <DataExecutionPrevention />
+      <TurnOffAssemblyGeneration />
+      <Profile />
+      <CLRImageType />
+      <LinkErrorReporting />
+      <OutputFile>wntmsci12.pro\bin\javamaker.exe</OutputFile>
+      <ShowProgress />
+      <SuppressStartupBanner />
+      <RegisterOutput />
+      <PerUserRedirection />
+      <AdditionalDependencies />
+      <ManifestFile />
+      <AllowIsolation />
+      <EnableUAC />
+      <UACExecutionLevel />
+      <UACUIAccess />
+      <ProgramDatabaseFile />
+      <GenerateMapFile />
+      <MapExports />
+      <SwapRunFromCD />
+      <SwapRunFromNET />
+      <Driver />
+      <ProfileGuidedDatabase />
+      <IgnoreEmbeddedIDL />
+      <TypeLibraryResourceID />
+      <AdditionalOptions>/IGNORE:4102 /IGNORE:4197 /MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -map:wntmsci12.pro/misc/javamaker.map isal.lib isalhelper.lib ireg.lib wntmsci12.pro\lib\codemaker.lib commonjava.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies />
+    </ProjectReference>
+    <ProjectReference>
+      <UseLibraryDependencyInputs />
+    </ProjectReference>
+    <PostBuildEvent>
+      <Command>xcopy wntmsci12.pro\bin\javamaker.* ..\solver\410\wntmsci12.pro\bin\javamaker.* /D /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\javamaker\classfile.cxx" />
+    <ClCompile Include="source\javamaker\javamaker.cxx" />
+    <ClCompile Include="source\javamaker\javaoptions.cxx" />
+    <ClCompile Include="source\javamaker\javatype.cxx" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

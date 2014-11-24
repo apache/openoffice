@@ -1,0 +1,32 @@
+Name:
+remotebridges
+
+Dependencies:
+LIBXSLT:libxslt cppu cppuhelper offuh rdbmaker sal NULL
+
+Build Rules:
+..\%__SRC%\bin\uuresolv*.dll %_DEST%\bin%_EXT%\uuresolv*.dll
+..\%__SRC%\lib\uuresolver.uno.dylib %_DEST%\lib%_EXT%\uuresolver.uno.dylib
+..\%__SRC%\lib\uuresolver.uno.so %_DEST%\lib%_EXT%\uuresolver.uno.so
+..\%__SRC%\misc\uuresolver.component %_DEST%\xml%_EXT%\uuresolver.component
+
+Source Files:
+examples\officeclient.cxx
+source\unourl_resolver\unourl_resolver.cxx
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+examples\makefile.mk
+	PRJNAME=remotebridges
+	TARGET=officeclientsample
+	SLOFILES=$(SLO)$/officeclient.obj
+
+source\unourl_resolver\makefile.mk
+	PRJNAME=remotebridges
+	TARGET=uuresolver.uno
+	SLOFILES=
+	$(SLO)$/unourl_resolver.obj

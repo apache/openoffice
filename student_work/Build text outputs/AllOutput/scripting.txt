@@ -1,0 +1,921 @@
+scripting
+=============
+
+Entering /cygdrive/c/steve/testarea/main/scripting/inc
+
+mkout -- version: 1.8
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkWPstnc
+precompiled_scripting.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkX1iR2f
+precompiled_scripting.cxx
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/pyprov
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.openoffice.pymodule:mailmerge' -o ../../wntmsci12.pro/misc/mailmerge.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt mailmerge.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.openoffice.pymodule:pythonscript' -o ../../wntmsci12.pro/misc/pythonscript.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt pythonscript.component
+cp pythonscript.py ../../wntmsci12.pro/bin/pythonscript.py
+cp officehelper.py ../../wntmsci12.pro/bin/officehelper.py
+cp mailmerge.py ../../wntmsci12.pro/bin/mailmerge.py
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/basprov
+
+cp basprov.xml ../../wntmsci12.pro/misc/basprov.xml
+Making:    all_basprov.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/basprov.uno_version.h/ > ../../wntmsci12.pro/misc/basprov.uno_version.c
+Compiling: scripting/wntmsci12.pro/misc/basprov.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/basprov.uno_version.obj ../../wntmsci12.pro/misc/basprov.uno_version.c
+basprov.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mklInWmM > ../../wntmsci12.pro/misc/s_basprov.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkqQKDAH && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/basprov_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/basprov.rdb @C:/cygwin/tmp/mkYDCbPn
+Compiling: scripting/source/basprov/basprov.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/basprov.obj C:/steve/testarea/main/scripting/source/basprov/basprov.cxx 
+basprov.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8KlUmL > ../../wntmsci12.pro/misc/s_basprov.dpcc
+Compiling: scripting/source/basprov/basscript.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/basscript.obj C:/steve/testarea/main/scripting/source/basprov/basscript.cxx 
+basscript.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk81tDz9 > ../../wntmsci12.pro/misc/s_basscript.dpcc
+Compiling: scripting/source/basprov/baslibnode.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/baslibnode.obj C:/steve/testarea/main/scripting/source/basprov/baslibnode.cxx 
+baslibnode.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkvfphqN > ../../wntmsci12.pro/misc/s_baslibnode.dpcc
+Compiling: scripting/source/basprov/basmodnode.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/basmodnode.obj C:/steve/testarea/main/scripting/source/basprov/basmodnode.cxx 
+basmodnode.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkE8M9O5 > ../../wntmsci12.pro/misc/s_basmodnode.dpcc
+Compiling: scripting/source/basprov/basmethnode.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/basmethnode.obj C:/steve/testarea/main/scripting/source/basprov/basmethnode.cxx 
+basmethnode.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkls6sQB > ../../wntmsci12.pro/misc/s_basmethnode.dpcc
+Making:    basprov.lib
+lib   /OUT:../../wntmsci12.pro/slb/basprov.lib @C:/cygwin/tmp/mkjTzjfX
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/basprov.obj 
+../../wntmsci12.pro/slo/basscript.obj 
+../../wntmsci12.pro/slo/baslibnode.obj 
+../../wntmsci12.pro/slo/basmodnode.obj 
+../../wntmsci12.pro/slo/basmethnode.obj 
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_basprov.uno.dxp
+Making:    module definition file basprov.uno.def
+cat ../../wntmsci12.pro/misc/component_basprov.uno.dxp >> ../../wntmsci12.pro/misc/basprov.uno.def.tmpfile
+Making:    ibasprov.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkm3uchp
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/ibasprov.lib -def:../../wntmsci12.pro/misc/basprov.uno.def 
+   Creating library ../../wntmsci12.pro/lib/ibasprov.lib and object ../../wntmsci12.pro/lib/ibasprov.exp
+Making:    basprov.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/basprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/basprov.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/basprov.uno_def.res > ../../wntmsci12.pro/misc/basprov.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mk2AXzh1
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/basprov.uno.dll -map:../../wntmsci12.pro/misc/basprov.uno.map ../../wntmsci12.pro/lib/ibasprov.exp ../../wntmsci12.pro/slo/basprov.uno_version.obj ../../wntmsci12.pro/slb/basprov.lib sfx.lib basic.lib ivcl.lib isvl.lib itools.lib iucbhelper.lib icomphelp.lib icppuhelper.lib icppu.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/basprov.uno.res 
+linking ../../wntmsci12.pro/bin/basprov.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/basprov.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/basprov.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/basprov.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/basprov.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/basprov.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/basprov.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/basprov.uno.dll.tmanifest ; fi
+Making:    all_basprov.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/basprov.uno.dll' -o ../../wntmsci12.pro/misc/basprov.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt basprov.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/vbaevents
+
+cp vbaevents.xml ../../wntmsci12.pro/misc/vbaevents.xml
+Making:    all_vbaevents.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/vbaevents.uno_version.h/ > ../../wntmsci12.pro/misc/vbaevents.uno_version.c
+Compiling: scripting/wntmsci12.pro/misc/vbaevents.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/vbaevents -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/vbaevents.uno_version.obj ../../wntmsci12.pro/misc/vbaevents.uno_version.c
+vbaevents.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkQS8vpR > ../../wntmsci12.pro/misc/s_vbaevents.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkwZk5bZ && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/vbaevents_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/vbaevents.rdb @C:/cygwin/tmp/mkzqDx2a
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker -O../../wntmsci12.pro/inc/vbaevents -BUCR C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/oovbaapi.rdb -XC:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb && echo > ../../wntmsci12.pro/misc/vbaevents.don
+echo ../../wntmsci12.pro/misc/vbaevents.don
+../../wntmsci12.pro/misc/vbaevents.don
+Compiling: scripting/source/vbaevents/service.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/vbaevents -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/service.obj C:/steve/testarea/main/scripting/source/vbaevents/service.cxx 
+service.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkXSMX91 > ../../wntmsci12.pro/misc/s_service.dpcc
+Compiling: scripting/source/vbaevents/eventhelper.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/vbaevents -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/eventhelper.obj C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx 
+eventhelper.cxx
+C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx(757) : warning C4100: 'GetsOwnership' : unreferenced formal parameter
+C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx(757) : warning C4100: 'Source' : unreferenced formal parameter
+C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx(763) : warning C4100: 'Source' : unreferenced formal parameter
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,std::list<TranslateInfo>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,std::list<TranslateInfo>>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,std::list<TranslateInfo>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,std::list<TranslateInfo>>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,std::list<TranslateInfo>,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,std::list<TranslateInfo>>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=std::list<TranslateInfo>,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,std::list<TranslateInfo>>>
+        ]
+        C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx(355) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=std::list<TranslateInfo>,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Any>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Any>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Any>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Any>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,com::sun::star::uno::Any,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Any>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=com::sun::star::uno::Any,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Any>>
+        ]
+        C:/steve/testarea/main/scripting/source/vbaevents/eventhelper.cxx(569) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=com::sun::star::uno::Any,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkwAlh67 > ../../wntmsci12.pro/misc/s_eventhelper.dpcc
+Making:    vbaevents.lib
+lib   /OUT:../../wntmsci12.pro/slb/vbaevents.lib @C:/cygwin/tmp/mkFLKhR6
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/service.obj 
+../../wntmsci12.pro/slo/eventhelper.obj 
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_vbaevents.uno.dxp
+Making:    module definition file vbaevents.uno.def
+cat ../../wntmsci12.pro/misc/component_vbaevents.uno.dxp >> ../../wntmsci12.pro/misc/vbaevents.uno.def.tmpfile
+Making:    ivbaevents.lib
+lib -machine:IX86 @C:/cygwin/tmp/mke0tW3r
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/ivbaevents.lib -def:../../wntmsci12.pro/misc/vbaevents.uno.def 
+   Creating library ../../wntmsci12.pro/lib/ivbaevents.lib and object ../../wntmsci12.pro/lib/ivbaevents.exp
+Making:    vbaevents.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/vbaevents -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/vbaevents.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/vbaevents.uno_def.res > ../../wntmsci12.pro/misc/vbaevents.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkXCK2ow
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/vbaevents.uno.dll -map:../../wntmsci12.pro/misc/vbaevents.uno.map ../../wntmsci12.pro/lib/ivbaevents.exp ../../wntmsci12.pro/slo/vbaevents.uno_version.obj ../../wntmsci12.pro/slb/vbaevents.lib icppuhelper.lib basic.lib icomphelp.lib sfx.lib icppu.lib itools.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/vbaevents.uno.res 
+linking ../../wntmsci12.pro/bin/vbaevents.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/vbaevents.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/vbaevents.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/vbaevents.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/vbaevents.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/vbaevents.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/vbaevents.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/vbaevents.uno.dll.tmanifest ; fi
+Making:    all_vbaevents.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/vbaevents.uno.dll' -o ../../wntmsci12.pro/misc/vbaevents.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt vbaevents.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/stringresource
+
+Making:    all_stringresource.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/stringresource.uno_version.h/ > ../../wntmsci12.pro/misc/stringresource.uno_version.c
+Compiling: scripting/wntmsci12.pro/misc/stringresource.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stringresource -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/stringresource.uno_version.obj ../../wntmsci12.pro/misc/stringresource.uno_version.c
+stringresource.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk1IG3bO > ../../wntmsci12.pro/misc/s_stringresource.uno_version.dpcc
+Compiling: scripting/source/stringresource/stringresource.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/stringresource -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/stringresource.obj C:/steve/testarea/main/scripting/source/stringresource/stringresource.cxx 
+stringresource.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,rtl::OUString>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,rtl::OUString>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,rtl::OUString>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,rtl::OUString>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,rtl::OUString,stdext::_Hash_compare<rtl::OUString,stringresource::hashName_Impl,stringresource::eqName_Impl>,std::allocator<std::pair<rtl::OUString,rtl::OUString>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=rtl::OUString,
+            _Hasher=stringresource::hashName_Impl,
+            _Keyeq=stringresource::eqName_Impl,
+            _Alloc=std::allocator<std::pair<rtl::OUString,rtl::OUString>>
+        ]
+        c:\steve\testarea\main\scripting\source\stringresource\stringresource.hxx(102) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=rtl::OUString,
+            __H=stringresource::hashName_Impl,
+            __E=stringresource::eqName_Impl
+        ]
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,sal_Int32>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,sal_Int32>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,sal_Int32>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,sal_Int32>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,sal_Int32,stdext::_Hash_compare<rtl::OUString,stringresource::hashName_Impl,stringresource::eqName_Impl>,std::allocator<std::pair<rtl::OUString,sal_Int32>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=sal_Int32,
+            _Hasher=stringresource::hashName_Impl,
+            _Keyeq=stringresource::eqName_Impl,
+            _Alloc=std::allocator<std::pair<rtl::OUString,sal_Int32>>
+        ]
+        c:\steve\testarea\main\scripting\source\stringresource\stringresource.hxx(103) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=sal_Int32,
+            __H=stringresource::hashName_Impl,
+            __E=stringresource::eqName_Impl
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkz5DUev > ../../wntmsci12.pro/misc/s_stringresource.dpcc
+Making:    stringresource.lib
+lib   /OUT:../../wntmsci12.pro/slb/stringresource.lib @C:/cygwin/tmp/mkSWiZKA
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/stringresource.obj 
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_stringresource.uno.dxp
+Making:    module definition file stringresource.uno.def
+cat ../../wntmsci12.pro/misc/component_stringresource.uno.dxp >> ../../wntmsci12.pro/misc/stringresource.uno.def.tmpfile
+Making:    istringresource.lib
+lib -machine:IX86 @C:/cygwin/tmp/mk8WTDp9
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/istringresource.lib -def:../../wntmsci12.pro/misc/stringresource.uno.def 
+   Creating library ../../wntmsci12.pro/lib/istringresource.lib and object ../../wntmsci12.pro/lib/istringresource.exp
+Making:    stringresource.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/stringresource -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/stringresource.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/stringresource.uno_def.res > ../../wntmsci12.pro/misc/stringresource.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkGwJ354
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/stringresource.uno.dll -map:../../wntmsci12.pro/misc/stringresource.uno.map ../../wntmsci12.pro/lib/istringresource.exp ../../wntmsci12.pro/slo/stringresource.uno_version.obj ../../wntmsci12.pro/slb/stringresource.lib itools.lib icppuhelper.lib icppu.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/stringresource.uno.res 
+linking ../../wntmsci12.pro/bin/stringresource.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/stringresource.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/stringresource.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/stringresource.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/stringresource.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/stringresource.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/stringresource.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/stringresource.uno.dll.tmanifest ; fi
+Making:    all_stringresource.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/stringresource.uno.dll' -o ../../wntmsci12.pro/misc/stringresource.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt stringresource.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/provider
+
+cp provider.xml ../../wntmsci12.pro/misc/provider.xml
+Making:    all_provider.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkLg4uRI && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/provider_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/provider.rdb @C:/cygwin/tmp/mkCDcCFq
+Compiling: scripting/source/provider/MasterScriptProvider.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/MasterScriptProvider.obj C:/steve/testarea/main/scripting/source/provider/MasterScriptProvider.cxx 
+MasterScriptProvider.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkgEoUpb > ../../wntmsci12.pro/misc/s_MasterScriptProvider.dpcc
+Compiling: scripting/source/provider/URIHelper.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/URIHelper.obj C:/steve/testarea/main/scripting/source/provider/URIHelper.cxx 
+URIHelper.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkTkRVeJ > ../../wntmsci12.pro/misc/s_URIHelper.dpcc
+Compiling: scripting/source/provider/ActiveMSPList.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/ActiveMSPList.obj C:/steve/testarea/main/scripting/source/provider/ActiveMSPList.cxx 
+ActiveMSPList.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>>>
+        ]
+        c:\steve\testarea\main\scripting\source\provider\ActiveMSPList.hxx(101) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=com::sun::star::uno::Reference<com::sun::star::script::provider::XScriptProvider>,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk6jJtYH > ../../wntmsci12.pro/misc/s_ActiveMSPList.dpcc
+Compiling: scripting/source/provider/ProviderCache.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/ProviderCache.obj C:/steve/testarea/main/scripting/source/provider/ProviderCache.cxx 
+ProviderCache.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,func_provider::ProviderDetails>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,func_provider::ProviderDetails>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,func_provider::ProviderDetails>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,func_provider::ProviderDetails>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,func_provider::ProviderDetails,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,func_provider::ProviderDetails>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=func_provider::ProviderDetails,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,func_provider::ProviderDetails>>
+        ]
+        c:\steve\testarea\main\scripting\source\provider\ProviderCache.hxx(95) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=func_provider::ProviderDetails,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkIAGsNq > ../../wntmsci12.pro/misc/s_ProviderCache.dpcc
+Compiling: scripting/source/provider/MasterScriptProviderFactory.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/MasterScriptProviderFactory.obj C:/steve/testarea/main/scripting/source/provider/MasterScriptProviderFactory.cxx 
+MasterScriptProviderFactory.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkCfuGtw > ../../wntmsci12.pro/misc/s_MasterScriptProviderFactory.dpcc
+Compiling: scripting/source/provider/BrowseNodeFactoryImpl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/provider -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/BrowseNodeFactoryImpl.obj C:/steve/testarea/main/scripting/source/provider/BrowseNodeFactoryImpl.cxx 
+BrowseNodeFactoryImpl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>>>
+        ]
+        C:/steve/testarea/main/scripting/source/provider/BrowseNodeFactoryImpl.cxx(203) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=com::sun::star::uno::Reference<com::sun::star::script::browse::XBrowseNode>,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkuImZom > ../../wntmsci12.pro/misc/s_BrowseNodeFactoryImpl.dpcc
+Making:    provider.lib
+lib   /OUT:../../wntmsci12.pro/slb/provider.lib @C:/cygwin/tmp/mk4XQWnn
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/MasterScriptProvider.obj 
+../../wntmsci12.pro/slo/URIHelper.obj 
+../../wntmsci12.pro/slo/ActiveMSPList.obj 
+../../wntmsci12.pro/slo/ProviderCache.obj 
+../../wntmsci12.pro/slo/MasterScriptProviderFactory.obj 
+../../wntmsci12.pro/slo/BrowseNodeFactoryImpl.obj 
+Making:    all_provider.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/protocolhandler
+
+cp protocolhandler.xml ../../wntmsci12.pro/misc/protocolhandler.xml
+Making:    all_protocolhandler.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/protocolhandler_version.h/ > ../../wntmsci12.pro/misc/protocolhandler_version.c
+Compiling: scripting/wntmsci12.pro/misc/protocolhandler_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/protocolhandler -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/protocolhandler_version.obj ../../wntmsci12.pro/misc/protocolhandler_version.c
+protocolhandler_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkiNQ4xi > ../../wntmsci12.pro/misc/s_protocolhandler_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkOyHS7Z && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/protocolhandler_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/protocolhandler.rdb @C:/cygwin/tmp/mkUCA9yl
+Compiling: scripting/source/protocolhandler/scripthandler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/protocolhandler -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/scripthandler.obj C:/steve/testarea/main/scripting/source/protocolhandler/scripthandler.cxx 
+scripthandler.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkKgJQqy > ../../wntmsci12.pro/misc/s_scripthandler.dpcc
+Making:    protocolhandler.lib
+lib   /OUT:../../wntmsci12.pro/slb/protocolhandler.lib @C:/cygwin/tmp/mkTC22Ks
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/scripthandler.obj 
+Making:    module definition file protocolhandler.def
+cat exports.dxp >> ../../wntmsci12.pro/misc/protocolhandler.def.tmpfile
+Making:    protocolhandler.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/protocolhandler -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/protocolhandler_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/protocolhandler_def.res > ../../wntmsci12.pro/misc/protocolhandler.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkm5Gz1j
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/protocolhandler.dll -map:../../wntmsci12.pro/misc/protocolhandler.map -def:../../wntmsci12.pro/misc/protocolhandler.def -implib:../../wntmsci12.pro/lib/iprotocolhandler.lib ../../wntmsci12.pro/slo/protocolhandler_version.obj ../../wntmsci12.pro/slb/protocolhandler.lib sfx.lib ifwe.lib icppu.lib icppuhelper.lib ivcl.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/protocolhandler.res 
+   Creating library ../../wntmsci12.pro/lib/iprotocolhandler.lib and object ../../wntmsci12.pro/lib/iprotocolhandler.exp
+linking ../../wntmsci12.pro/bin/protocolhandler.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/protocolhandler.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/protocolhandler.dll.manifest -outputresource:../../wntmsci12.pro/bin/protocolhandler.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/protocolhandler.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/protocolhandler.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/protocolhandler.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/protocolhandler.dll.tmanifest ; fi
+Making:    all_protocolhandler.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/protocolhandler.dll' -o ../../wntmsci12.pro/misc/protocolhandler.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt protocolhandler.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/java
+
+C:/Apache-Ant/apache-ant-1.9.2/bin/ant -Dprj=.. -Dprjname=scripting -Ddebug=off -Doptimize=on  -Dtarget=scriptruntimeforjava -Dsolar.update=on -Dout=../wntmsci12.pro -Dinpath=wntmsci12.pro -Dproext=".pro"  -Dsolar.bin=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.doc=C:/steve/TestArea/main/solver/410/wntmsci12.pro/doc  -Dcommon.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dcommon.doc=  -Dsolar.sourceversion=AOO410 -Dsolar.lastminor=m1  -Dsolar.build=9750 -f build.xml  -emacs
+Buildfile: C:\steve\testarea\main\scripting\java\build.xml
+
+prepare:
+
+eval_environment:
+
+compile:
+Compiling 41 source files to C:\steve\testarea\main\scripting\wntmsci12.pro\class
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+Compiling 1 source file to C:\steve\testarea\main\scripting\wntmsci12.pro\class
+
+jar.provider.java:
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\ScriptProviderForJava.jar
+
+jar.provider.beanshell:
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\ScriptProviderForBeanShell.jar
+
+jar.provider.javascript:
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\ScriptProviderForJavaScript.jar
+
+jar.scriptframework:
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\ScriptFramework.jar
+
+jar:
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 7 seconds
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/ScriptFramework.jar' -o ../wntmsci12.pro/misc/ScriptFramework.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt ScriptFramework.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/ScriptProviderForBeanShell.jar' -o ../wntmsci12.pro/misc/ScriptProviderForBeanShell.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt \
+        ScriptProviderForBeanShell.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/ScriptProviderForJava.jar' -o ../wntmsci12.pro/misc/ScriptProviderForJava.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt ScriptProviderForJava.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/ScriptProviderForJavaScript.jar' -o ../wntmsci12.pro/misc/ScriptProviderForJavaScript.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt \
+        ScriptProviderForJavaScript.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/examples/java
+
+C:/Apache-Ant/apache-ant-1.9.2/bin/ant -Dprj=../.. -Dprjname=scripting -Ddebug=off -Doptimize=on  -Dtarget=javaexamples -Dsolar.update=on -Dout=../../wntmsci12.pro -Dinpath=wntmsci12.pro -Dproext=".pro"  -Dsolar.bin=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.doc=C:/steve/TestArea/main/solver/410/wntmsci12.pro/doc  -Dcommon.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dcommon.doc=  -Dsolar.sourceversion=AOO410 -Dsolar.lastminor=m1  -Dsolar.build=9750 -f build.xml  -emacs
+Buildfile: C:\steve\testarea\main\scripting\examples\java\build.xml
+
+HelloWorld:
+Created dir: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld
+Compiling 1 source file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld\HelloWorld.jar
+Deleting: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\HelloWorld\HelloWorld.class
+
+Highlight:
+Created dir: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight
+Compiling 1 source file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight\Highlight.jar
+Deleting: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\Highlight\HighlightText.class
+
+MemoryUsage:
+Created dir: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage
+Compiling 1 source file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage
+Copying 1 file to C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage
+Building jar: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage\MemoryUsage.jar
+Deleting: C:\steve\testarea\main\scripting\wntmsci12.pro\class\examples\java\MemoryUsage\MemoryUsage.class
+
+all:
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+Entering /cygdrive/c/steve/testarea/main/scripting/examples
+
+Making:    scriptinginstaller.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/ScriptsJava.dpzz ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz ../wntmsci12.pro/misc/ScriptsPython.dpzz ../wntmsci12.pro/misc/scriptbindinglib.dpzz
+
+mkdir.exe -p ../wntmsci12.pro/class/examples
+cd ../wntmsci12.pro/class/examples && zipdep.pl -r -prefix ../wntmsci12.pro/class/examples/ ../wntmsci12.pro/bin/ScriptsJava.zip "java" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/scripting/examples/../wntmsci12.pro/misc/ScriptsJava.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsBeanShell.zip "beanshell/HelloWorld" "beanshell/Highlight" "beanshell/WordCount" "beanshell/Capitalise" "beanshell/MemoryUsage" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsJavaScript.zip "javascript" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsPython.zip "python/HelloWorld.py" "python/Capitalise.py" "python/pythonSamples" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsPython.dpzz
+
+mkdir.exe -p ../workben/bindings
+cd ../workben/bindings && zipdep.pl -r -prefix ../workben/bindings/ ../wntmsci12.pro/bin/scriptbindinglib.zip "*.xlb" "Highlight.xdl" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/scripting/examples/../wntmsci12.pro/misc/scriptbindinglib.dpzz
+cat ../wntmsci12.pro/misc/ScriptsJava.dpzz ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz ../wntmsci12.pro/misc/ScriptsPython.dpzz ../wntmsci12.pro/misc/scriptbindinglib.dpzz C:/cygwin/tmp/mkBP8V73 | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/scriptinginstaller.dpz
+Making:    ScriptsJava.zip
+rebuilding zipfiles
+------------------------------ 
+cd ../wntmsci12.pro/class/examples && zip  -r C:/cygwin/tmp/mklRh5Yn.ScriptsJava_.zip java -x delzip  -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: java/ (stored 0%)
+  adding: java/HelloWorld/ (stored 0%)
+  adding: java/HelloWorld/HelloWorld.jar (deflated 18%)
+  adding: java/HelloWorld/HelloWorld.java (deflated 54%)
+  adding: java/HelloWorld/parcel-descriptor.xml (deflated 54%)
+  adding: java/Highlight/ (stored 0%)
+  adding: java/Highlight/Highlight.jar (deflated 4%)
+  adding: java/Highlight/HighlightText.java (deflated 73%)
+  adding: java/Highlight/parcel-descriptor.xml (deflated 55%)
+  adding: java/MemoryUsage/ (stored 0%)
+  adding: java/MemoryUsage/MemoryUsage.jar (deflated 5%)
+  adding: java/MemoryUsage/MemoryUsage.java (deflated 68%)
+  adding: java/MemoryUsage/parcel-descriptor.xml (deflated 54%)
+if [ -f C:/cygwin/tmp/mklRh5Yn.ScriptsJava_.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl C:/cygwin/tmp/mklRh5Yn.ScriptsJava_.zip \
+	    ; fi
+cp C:/cygwin/tmp/mklRh5Yn.ScriptsJava_.zip  ../wntmsci12.pro/bin/ScriptsJava.zip 
+/bin/rm -f C:/cygwin/tmp/mklRh5Yn.ScriptsJava_.zip
+Making:    ScriptsBeanShell.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -r ../wntmsci12.pro/bin/ScriptsBeanShell.zip beanshell/HelloWorld beanshell/Highlight beanshell/WordCount beanshell/Capitalise beanshell/MemoryUsage -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: beanshell/HelloWorld/ (stored 0%)
+  adding: beanshell/HelloWorld/helloworld.bsh (deflated 54%)
+  adding: beanshell/HelloWorld/parcel-descriptor.xml (deflated 53%)
+  adding: beanshell/Highlight/ (stored 0%)
+  adding: beanshell/Highlight/ButtonPressHandler.bsh (deflated 64%)
+  adding: beanshell/Highlight/highlighter.bsh (deflated 66%)
+  adding: beanshell/Highlight/parcel-descriptor.xml (deflated 58%)
+  adding: beanshell/Highlight/ShowDialog.bsh (deflated 67%)
+  adding: beanshell/WordCount/ (stored 0%)
+  adding: beanshell/WordCount/parcel-descriptor.xml (deflated 52%)
+  adding: beanshell/WordCount/wordcount.bsh (deflated 59%)
+  adding: beanshell/Capitalise/ (stored 0%)
+  adding: beanshell/Capitalise/capitalise.bsh (deflated 67%)
+  adding: beanshell/Capitalise/parcel-descriptor.xml (deflated 53%)
+  adding: beanshell/MemoryUsage/ (stored 0%)
+  adding: beanshell/MemoryUsage/memusage.bsh (deflated 64%)
+  adding: beanshell/MemoryUsage/parcel-descriptor.xml (deflated 52%)
+if [ -f ../wntmsci12.pro/bin/ScriptsBeanShell.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../wntmsci12.pro/bin/ScriptsBeanShell.zip \
+	    ; fi
+Making:    ScriptsJavaScript.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -r ../wntmsci12.pro/bin/ScriptsJavaScript.zip javascript -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: javascript/ (stored 0%)
+  adding: javascript/ExportSheetsToHTML/ (stored 0%)
+  adding: javascript/ExportSheetsToHTML/exportsheetstohtml.js (deflated 65%)
+  adding: javascript/ExportSheetsToHTML/parcel-descriptor.xml (deflated 52%)
+  adding: javascript/HelloWorld/ (stored 0%)
+  adding: javascript/HelloWorld/helloworld.js (deflated 57%)
+  adding: javascript/HelloWorld/parcel-descriptor.xml (deflated 52%)
+  adding: javascript/Highlight/ (stored 0%)
+  adding: javascript/Highlight/ButtonPressHandler.js (deflated 65%)
+  adding: javascript/Highlight/parcel-descriptor.xml (deflated 59%)
+  adding: javascript/Highlight/ShowDialog.js (deflated 66%)
+if [ -f ../wntmsci12.pro/bin/ScriptsJavaScript.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../wntmsci12.pro/bin/ScriptsJavaScript.zip \
+	    ; fi
+Making:    ScriptsPython.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -r ../wntmsci12.pro/bin/ScriptsPython.zip python/HelloWorld.py python/Capitalise.py python/pythonSamples -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: python/HelloWorld.py (deflated 51%)
+  adding: python/Capitalise.py (deflated 61%)
+  adding: python/pythonSamples/ (stored 0%)
+  adding: python/pythonSamples/TableSample.py (deflated 66%)
+if [ -f ../wntmsci12.pro/bin/ScriptsPython.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../wntmsci12.pro/bin/ScriptsPython.zip \
+	    ; fi
+Making:    scriptbindinglib.zip
+rebuilding zipfiles
+------------------------------ 
+cd ../workben/bindings && zip  -r C:/cygwin/tmp/mkKVaU8z.scriptbindinglib_.zip *.xlb Highlight.xdl -x delzip  -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: dialog.xlb (deflated 43%)
+  adding: script.xlb (deflated 36%)
+  adding: Highlight.xdl (deflated 60%)
+if [ -f C:/cygwin/tmp/mkKVaU8z.scriptbindinglib_.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl C:/cygwin/tmp/mkKVaU8z.scriptbindinglib_.zip \
+	    ; fi
+cp C:/cygwin/tmp/mkKVaU8z.scriptbindinglib_.zip  ../wntmsci12.pro/bin/scriptbindinglib.zip 
+/bin/rm -f C:/cygwin/tmp/mkKVaU8z.scriptbindinglib_.zip
+Making:    scriptinginstaller.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/ScriptsJava.dpzz ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz ../wntmsci12.pro/misc/ScriptsPython.dpzz ../wntmsci12.pro/misc/scriptbindinglib.dpzz
+
+mkdir.exe -p ../wntmsci12.pro/class/examples
+cd ../wntmsci12.pro/class/examples && zipdep.pl -r -prefix ../wntmsci12.pro/class/examples/ ../wntmsci12.pro/bin/ScriptsJava.zip "java" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/scripting/examples/../wntmsci12.pro/misc/ScriptsJava.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsBeanShell.zip "beanshell/HelloWorld" "beanshell/Highlight" "beanshell/WordCount" "beanshell/Capitalise" "beanshell/MemoryUsage" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsJavaScript.zip "javascript" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz
+
+zipdep.pl -r ../wntmsci12.pro/bin/ScriptsPython.zip "python/HelloWorld.py" "python/Capitalise.py" "python/pythonSamples" -x "*CVS*" -x "*.svn*" >> ../wntmsci12.pro/misc/ScriptsPython.dpzz
+
+mkdir.exe -p ../workben/bindings
+cd ../workben/bindings && zipdep.pl -r -prefix ../workben/bindings/ ../wntmsci12.pro/bin/scriptbindinglib.zip "*.xlb" "Highlight.xdl" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/scripting/examples/../wntmsci12.pro/misc/scriptbindinglib.dpzz
+cat ../wntmsci12.pro/misc/ScriptsJava.dpzz ../wntmsci12.pro/misc/ScriptsBeanShell.dpzz ../wntmsci12.pro/misc/ScriptsJavaScript.dpzz ../wntmsci12.pro/misc/ScriptsPython.dpzz ../wntmsci12.pro/misc/scriptbindinglib.dpzz C:/cygwin/tmp/mkd3fw3n | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/scriptinginstaller.dpz
+
+Entering /cygdrive/c/steve/testarea/main/scripting/util
+
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/scriptframe_version.h/ > ../wntmsci12.pro/misc/scriptframe_version.c
+Compiling: scripting/wntmsci12.pro/misc/scriptframe_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/scriptframe -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/scriptframe_version.obj ../wntmsci12.pro/misc/scriptframe_version.c
+scriptframe_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGX58Ya > ../wntmsci12.pro/misc/s_scriptframe_version.dpcc
+------------------------------
+using: ../wntmsci12.pro/slb/provider.lib
+using: ../wntmsci12.pro/slb/scriptframe.lib
+------------------------------
+Making:    scriptframe.lib
+lib   /OUT:../wntmsci12.pro/slb/scriptframe.lib @C:/cygwin/tmp/mkX0Kjfw
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slb/provider.lib 
+
+Making:    module definition file scriptframe.def
+cat exports.dxp >> ../wntmsci12.pro/misc/scriptframe.def.tmpfile
+Making:    scriptframe.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/scriptframe -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/scriptframe_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/scriptframe_def.res > ../wntmsci12.pro/misc/scriptframe.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkSPoGlO
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/scriptframe.dll -map:../wntmsci12.pro/misc/scriptframe.map -def:../wntmsci12.pro/misc/scriptframe.def -implib:../wntmsci12.pro/lib/scriptframe.lib ../wntmsci12.pro/slo/scriptframe_version.obj ../wntmsci12.pro/slb/scriptframe.lib itools.lib icppu.lib icppuhelper.lib icomphelp.lib iucbhelper.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/scriptframe.res 
+   Creating library ../wntmsci12.pro/lib/scriptframe.lib and object ../wntmsci12.pro/lib/scriptframe.exp
+linking ../wntmsci12.pro/bin/scriptframe.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/scriptframe.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/scriptframe.dll.manifest -outputresource:../wntmsci12.pro/bin/scriptframe.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/scriptframe.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/scriptframe.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/scriptframe.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/scriptframe.dll.tmanifest ; fi
+Making:    scriptframe.lib
+build of ../wntmsci12.pro/bin/scriptframe.dll creates ../wntmsci12.pro/lib/scriptframe.lib
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/scriptframe.dll' -o ../wntmsci12.pro/misc/scriptframe.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt scriptframe.component
+
+Entering /cygdrive/c/steve/testarea/main/scripting/source/dlgprov
+
+cp dlgprov.xml ../../wntmsci12.pro/misc/dlgprov.xml
+Making:    all_dlgprov.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/dlgprov.uno_version.h/ > ../../wntmsci12.pro/misc/dlgprov.uno_version.c
+Compiling: scripting/wntmsci12.pro/misc/dlgprov.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/dlgprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/dlgprov.uno_version.obj ../../wntmsci12.pro/misc/dlgprov.uno_version.c
+dlgprov.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkKS3S2L > ../../wntmsci12.pro/misc/s_dlgprov.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkomUz6r && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/dlgprov_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/dlgprov.rdb @C:/cygwin/tmp/mkZ0bLoj
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker -O../../wntmsci12.pro/inc/dlgprov -BUCR C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/oovbaapi.rdb -XC:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb && echo > ../../wntmsci12.pro/misc/dlgprov.don
+echo ../../wntmsci12.pro/misc/dlgprov.don
+../../wntmsci12.pro/misc/dlgprov.don
+Compiling: scripting/source/dlgprov/dlgprov.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/dlgprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/dlgprov.obj C:/steve/testarea/main/scripting/source/dlgprov/dlgprov.cxx 
+dlgprov.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkZ68x8l > ../../wntmsci12.pro/misc/s_dlgprov.dpcc
+Compiling: scripting/source/dlgprov/DialogModelProvider.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/dlgprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/DialogModelProvider.obj C:/steve/testarea/main/scripting/source/dlgprov/DialogModelProvider.cxx 
+DialogModelProvider.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkG7mzGP > ../../wntmsci12.pro/misc/s_DialogModelProvider.dpcc
+Compiling: scripting/source/dlgprov/dlgevtatt.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_scripting.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_scripting.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/dlgprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/dlgevtatt.obj C:/steve/testarea/main/scripting/source/dlgprov/dlgevtatt.cxx 
+dlgevtatt.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>>>
+        ]
+        c:\steve\testarea\main\scripting\source\dlgprov\dlgevtatt.hxx(64) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=com::sun::star::uno::Reference<com::sun::star::script::XScriptListener>,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkjAB0CA > ../../wntmsci12.pro/misc/s_dlgevtatt.dpcc
+Making:    dlgprov.lib
+lib   /OUT:../../wntmsci12.pro/slb/dlgprov.lib @C:/cygwin/tmp/mkzY8f4k
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/dlgprov.obj 
+../../wntmsci12.pro/slo/DialogModelProvider.obj 
+../../wntmsci12.pro/slo/dlgevtatt.obj 
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_dlgprov.uno.dxp
+Making:    module definition file dlgprov.uno.def
+cat ../../wntmsci12.pro/misc/component_dlgprov.uno.dxp >> ../../wntmsci12.pro/misc/dlgprov.uno.def.tmpfile
+Making:    idlgprov.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkSqXlCy
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/idlgprov.lib -def:../../wntmsci12.pro/misc/dlgprov.uno.def 
+   Creating library ../../wntmsci12.pro/lib/idlgprov.lib and object ../../wntmsci12.pro/lib/idlgprov.exp
+Making:    dlgprov.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/dlgprov -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/dlgprov.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/dlgprov.uno_def.res > ../../wntmsci12.pro/misc/dlgprov.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkUvj8IU
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/dlgprov.uno.dll -map:../../wntmsci12.pro/misc/dlgprov.uno.map ../../wntmsci12.pro/lib/idlgprov.exp ../../wntmsci12.pro/slo/dlgprov.uno_version.obj ../../wntmsci12.pro/slb/dlgprov.lib sfx.lib ivcl.lib itools.lib ixcr.lib icppuhelper.lib icomphelp.lib iucbhelper.lib vbahelper.lib icppu.lib basic.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/dlgprov.uno.res 
+linking ../../wntmsci12.pro/bin/dlgprov.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/dlgprov.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/dlgprov.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/dlgprov.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/dlgprov.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/dlgprov.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/dlgprov.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/dlgprov.uno.dll.tmanifest ; fi
+Making:    all_dlgprov.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/dlgprov.uno.dll' -o ../../wntmsci12.pro/misc/dlgprov.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt dlgprov.component
+scripting deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/scripting/build.lst
+COPY: ../wntmsci12.pro/bin/basprov.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/basprov.uno.dll
+COPY: ../wntmsci12.pro/bin/dlgprov.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/dlgprov.uno.dll
+COPY: ../wntmsci12.pro/bin/protocolhandler.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/protocolhandler.dll
+COPY: ../wntmsci12.pro/bin/scriptframe.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/scriptframe.dll
+COPY: ../wntmsci12.pro/bin/stringresource.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/stringresource.uno.dll
+COPY: ../wntmsci12.pro/bin/vbaevents.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/vbaevents.uno.dll
+COPY: ../wntmsci12.pro/bin/scriptbindinglib.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/scriptbindinglib.zip
+COPY: ../wntmsci12.pro/bin/ScriptsBeanShell.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/ScriptsBeanShell.zip
+COPY: ../wntmsci12.pro/bin/ScriptsJava.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/ScriptsJava.zip
+COPY: ../wntmsci12.pro/bin/ScriptsJavaScript.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/ScriptsJavaScript.zip
+COPY: ../wntmsci12.pro/bin/ScriptsPython.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/ScriptsPython.zip
+COPY: ../wntmsci12.pro/class/ScriptFramework.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ScriptFramework.jar
+COPY: ../wntmsci12.pro/class/ScriptProviderForBeanShell.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ScriptProviderForBeanShell.jar
+COPY: ../wntmsci12.pro/class/ScriptProviderForJava.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ScriptProviderForJava.jar
+COPY: ../wntmsci12.pro/class/ScriptProviderForJavaScript.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ScriptProviderForJavaScript.jar
+COPY: ../wntmsci12.pro/bin/mailmerge.py -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/pyuno/mailmerge.py
+COPY: ../wntmsci12.pro/bin/officehelper.py -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/pyuno/officehelper.py
+COPY: ../wntmsci12.pro/bin/pythonscript.py -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/pyuno/pythonscript.py
+COPY: ../wntmsci12.pro/bin/basprov.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/basprov.rdb
+COPY: ../wntmsci12.pro/bin/dlgprov.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/dlgprov.rdb
+COPY: ../wntmsci12.pro/bin/protocolhandler.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/protocolhandler.rdb
+COPY: ../wntmsci12.pro/bin/provider.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/provider.rdb
+COPY: ../wntmsci12.pro/bin/vbaevents.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/vbaevents.rdb
+COPY: ../source/storage/storage.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/storage.xml
+COPY: ../wntmsci12.pro/misc/mailmerge.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/mailmerge.component
+COPY: ../wntmsci12.pro/misc/pythonscript.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/pythonscript.component
+COPY: ../wntmsci12.pro/misc/ScriptFramework.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ScriptFramework.component
+COPY: ../wntmsci12.pro/misc/ScriptProviderForBeanShell.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ScriptProviderForBeanShell.component
+COPY: ../wntmsci12.pro/misc/ScriptProviderForJava.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ScriptProviderForJava.component
+COPY: ../wntmsci12.pro/misc/ScriptProviderForJavaScript.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ScriptProviderForJavaScript.component
+COPY: ../wntmsci12.pro/misc/basprov.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/basprov.component
+COPY: ../wntmsci12.pro/misc/dlgprov.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/dlgprov.component
+COPY: ../wntmsci12.pro/misc/protocolhandler.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/protocolhandler.component
+COPY: ../wntmsci12.pro/misc/scriptframe.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/scriptframe.component
+COPY: ../wntmsci12.pro/misc/stringresource.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/stringresource.component
+COPY: ../wntmsci12.pro/misc/vbaevents.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/vbaevents.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/scripting/deliver.log
+Module 'scripting' delivered successfully. 37 files copied, 0 files unchanged
+
+=============

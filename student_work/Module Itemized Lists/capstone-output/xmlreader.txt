@@ -1,0 +1,47 @@
+Name:
+xmlreader
+
+Dependencies:
+BOOST:boost cppu offuh sal stlport NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\xmlreader
+mkdir: %_DEST%\inc%_EXT%\xmlreader\detail
+..\%__SRC%\bin\xmlread*.dll %_DEST%\bin%_EXT%\xmlread*.dll
+..\%__SRC%\lib\ixmlreader.lib %_DEST%\lib%_EXT%\ixmlreader.lib
+..\%__SRC%\lib\xmlreader*.lib %_DEST%\lib%_EXT%\xmlreader*.lib
+..\%__SRC%\lib\libxmlreader.dylib %_DEST%\lib%_EXT%\libxmlreader.dylib
+..\%__SRC%\lib\libxmlreader.so %_DEST%\lib%_EXT%\libxmlreader.so
+..\inc\xmlreader\detail\xmlreaderdllapi.hxx %_DEST%\inc%_EXT%\xmlreader\detail\xmlreaderdllapi.hxx
+..\inc\xmlreader\pad.hxx %_DEST%\inc%_EXT%\xmlreader\pad.hxx
+..\inc\xmlreader\span.hxx %_DEST%\inc%_EXT%\xmlreader\span.hxx
+..\inc\xmlreader\xmlreader.hxx %_DEST%\inc%_EXT%\xmlreader\xmlreader.hxx
+
+Source Files:
+inc\pch\precompiled_xmlreader.cxx
+source\pad.cxx
+source\span.cxx
+source\xmlreader.cxx
+
+Header Files:
+inc\pch\precompiled_xmlreader.hxx
+inc\xmlreader\pad.hxx
+inc\xmlreader\span.hxx
+inc\xmlreader\xmlreader.hxx
+inc\xmlreader\detail\xmlreaderdllapi.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=xmlreader
+	TARGET=inc
+
+source\makefile.mk
+	PRJNAME=xmlreader
+	TARGET=xmlreader
+	SLOFILES=
+	$(SLO)/pad.obj
+	$(SLO)/span.obj
+	$(SLO)/xmlreader.obj

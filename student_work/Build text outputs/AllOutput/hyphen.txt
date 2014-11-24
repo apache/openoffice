@@ -1,0 +1,204 @@
+hyphen
+=============
+
+Entering /cygdrive/c/steve/testarea/main/hyphen
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/hyphen-2.7.1 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/hyphen-2.7.1 ./wntmsci12.pro/misc/build/hyphen-2.7.1_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/hyphen-2.7.1_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/48a9f787f43a09c0a9b7b00cd1fddbbf-hyphen-2.7.1.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_hyphen
+hyphen-2.7.1/
+hyphen-2.7.1/substrings.c
+hyphen-2.7.1/substrings.pl
+hyphen-2.7.1/hyphen.tex
+hyphen-2.7.1/ooopatch.sed
+hyphen-2.7.1/hnjalloc.h
+hyphen-2.7.1/ligpatch.txt
+hyphen-2.7.1/missing
+hyphen-2.7.1/tests/
+hyphen-2.7.1/tests/alt.word
+hyphen-2.7.1/tests/alt6.word
+hyphen-2.7.1/tests/settings3.test
+hyphen-2.7.1/tests/alt2.test
+hyphen-2.7.1/tests/rhmin.pat
+hyphen-2.7.1/tests/compound3.hyph
+hyphen-2.7.1/tests/lhmin.test
+hyphen-2.7.1/tests/settings3.word
+hyphen-2.7.1/tests/conv.pat
+hyphen-2.7.1/tests/compound4.word
+hyphen-2.7.1/tests/base.word
+hyphen-2.7.1/tests/basealt2.test
+hyphen-2.7.1/tests/alt.hyph
+hyphen-2.7.1/tests/alt2.hyph
+hyphen-2.7.1/tests/compound.word
+hyphen-2.7.1/tests/basealt.hyph
+hyphen-2.7.1/tests/settings3.hyph
+hyphen-2.7.1/tests/alt6.hyph
+hyphen-2.7.1/tests/unicode.test
+hyphen-2.7.1/tests/lhmin.hyph
+hyphen-2.7.1/tests/unicode.pat
+hyphen-2.7.1/tests/conv.hyph
+hyphen-2.7.1/tests/settings2.hyph
+hyphen-2.7.1/tests/alt3.pat
+hyphen-2.7.1/tests/Makefile.in
+hyphen-2.7.1/tests/lig.word
+hyphen-2.7.1/tests/settings3.pat
+hyphen-2.7.1/tests/alt.test
+hyphen-2.7.1/tests/rhmin.test
+hyphen-2.7.1/tests/alt4.test
+hyphen-2.7.1/tests/compound.test
+hyphen-2.7.1/tests/lhmin.pat
+hyphen-2.7.1/tests/settings.word
+hyphen-2.7.1/tests/compound4.pat
+hyphen-2.7.1/tests/basealt.word
+hyphen-2.7.1/tests/Makefile.am
+hyphen-2.7.1/tests/basealt2.pat
+hyphen-2.7.1/tests/hyphen.pat
+hyphen-2.7.1/tests/compound4.test
+hyphen-2.7.1/tests/compound4.hyph
+hyphen-2.7.1/tests/alt4.word
+hyphen-2.7.1/tests/alt4.hyph
+hyphen-2.7.1/tests/conv.dic
+hyphen-2.7.1/tests/basealt2.hyph
+hyphen-2.7.1/tests/settings.test
+hyphen-2.7.1/tests/settings4.test
+hyphen-2.7.1/tests/alt5.pat
+hyphen-2.7.1/tests/settings.hyph
+hyphen-2.7.1/tests/test.sh
+hyphen-2.7.1/tests/hyphen.hyph
+hyphen-2.7.1/tests/lig.test
+hyphen-2.7.1/tests/alt3.test
+hyphen-2.7.1/tests/compound.pat
+hyphen-2.7.1/tests/alt4.pat
+hyphen-2.7.1/tests/alt5.hyph
+hyphen-2.7.1/tests/rhmin.hyph
+hyphen-2.7.1/tests/basealt2.word
+hyphen-2.7.1/tests/conv.test
+hyphen-2.7.1/tests/alt6.test
+hyphen-2.7.1/tests/compound2.word
+hyphen-2.7.1/tests/alt2.pat
+hyphen-2.7.1/tests/compound2.test
+hyphen-2.7.1/tests/unicode.word
+hyphen-2.7.1/tests/base.pat
+hyphen-2.7.1/tests/base.test
+hyphen-2.7.1/tests/conv.word
+hyphen-2.7.1/tests/compound2.pat
+hyphen-2.7.1/tests/settings4.pat
+hyphen-2.7.1/tests/alt5.test
+hyphen-2.7.1/tests/settings4.word
+hyphen-2.7.1/tests/compound.hyph
+hyphen-2.7.1/tests/lig.pat
+hyphen-2.7.1/tests/alt2.word
+hyphen-2.7.1/tests/lhmin.word
+hyphen-2.7.1/tests/settings2.pat
+hyphen-2.7.1/tests/alt3.word
+hyphen-2.7.1/tests/basealt.pat
+hyphen-2.7.1/tests/hyphen.test
+hyphen-2.7.1/tests/settings2.test
+hyphen-2.7.1/tests/compound2.hyph
+hyphen-2.7.1/tests/alt5.word
+hyphen-2.7.1/tests/alt.pat
+hyphen-2.7.1/tests/hyphen.word
+hyphen-2.7.1/tests/compound3.test
+hyphen-2.7.1/tests/alt6.pat
+hyphen-2.7.1/tests/settings.pat
+hyphen-2.7.1/tests/compound3.pat
+hyphen-2.7.1/tests/settings2.word
+hyphen-2.7.1/tests/base.hyph
+hyphen-2.7.1/tests/unicode.hyph
+hyphen-2.7.1/tests/lig.hyph
+hyphen-2.7.1/tests/settings4.hyph
+hyphen-2.7.1/tests/rhmin.word
+hyphen-2.7.1/tests/basealt.test
+hyphen-2.7.1/tests/alt3.hyph
+hyphen-2.7.1/tests/compound3.word
+hyphen-2.7.1/depcomp
+hyphen-2.7.1/TODO
+hyphen-2.7.1/README_hyph_en_US.txt
+hyphen-2.7.1/example.c
+hyphen-2.7.1/hyphen.c
+hyphen-2.7.1/configure
+hyphen-2.7.1/hnjalloc.c
+hyphen-2.7.1/checkme.lst
+hyphen-2.7.1/COPYING.MPL
+hyphen-2.7.1/install-sh
+hyphen-2.7.1/Makefile.in
+hyphen-2.7.1/COPYING.LGPL
+hyphen-2.7.1/NEWS
+hyphen-2.7.1/lig.awk
+hyphen-2.7.1/doc/
+hyphen-2.7.1/doc/tb87nemeth.pdf
+hyphen-2.7.1/doc/Makefile.in
+hyphen-2.7.1/doc/Makefile.am
+hyphen-2.7.1/Makefile.am
+hyphen-2.7.1/hyphen.h
+hyphen-2.7.1/THANKS
+hyphen-2.7.1/README.nonstandard
+hyphen-2.7.1/ChangeLog
+hyphen-2.7.1/INSTALL
+hyphen-2.7.1/AUTHORS
+hyphen-2.7.1/aclocal.m4
+hyphen-2.7.1/README.compound
+hyphen-2.7.1/README
+hyphen-2.7.1/README.hyphen
+hyphen-2.7.1/ltmain.sh
+hyphen-2.7.1/tbhyphext.sh
+hyphen-2.7.1/hyph_en_US.dic
+hyphen-2.7.1/hyphen.patch
+hyphen-2.7.1/configure.in
+hyphen-2.7.1/tbhyphext.tex
+hyphen-2.7.1/COPYING
+hyphen-2.7.1/config.sub
+hyphen-2.7.1/config.guess
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/hyphen-2.7.1/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/hyphen-2.7.1/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/hyphen-2.7.1/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/hyphen-2.7.1/makefile.mk
+cd ./wntmsci12.pro/misc/build && cat ../../..//hyphen-2.7.1.patch ../../..//hyphen-2.7.1-read-charset.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_hyphen
+patching file hyphen-2.7.1/Makefile.am
+patching file hyphen-2.7.1/Makefile.in
+patching file hyphen-2.7.1/makefile.mk
+patching file hyphen-2.7.1/hyphen.c
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_hyphen
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_hyphen
+mkdir.exe ./wntmsci12.pro/misc/build/hyphen-2.7.1/
+cd ./wntmsci12.pro/misc/build/hyphen-2.7.1/ && dmake  && C:/cygwin/bin/touch.exe C:/steve/testarea/main/hyphen/./wntmsci12.pro/misc/build/so_built_hyphen
+Making:    all_hyphen.dpslo
+Compiling: hyphen/wntmsci12.pro/misc/build/hyphen-2.7.1/hyphen.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/hyphen -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/hyphen.obj hyphen.c
+hyphen.c
+hyphen.c(312) : warning C4242: '=' : conversion from 'int' to 'char', possible loss of data
+hyphen.c(315) : warning C4242: '=' : conversion from 'int' to 'char', possible loss of data
+hyphen.c(318) : warning C4242: '=' : conversion from 'int' to 'char', possible loss of data
+hyphen.c(321) : warning C4242: '=' : conversion from 'int' to 'char', possible loss of data
+hyphen.c(386) : warning C4018: '<' : signed/unsigned mismatch
+hyphen.c(663) : warning C4100: 'word_size' : unreferenced formal parameter
+c:\steve\testarea\main\hyphen\wntmsci12.pro\misc\build\hyphen-2.7.1\hyphen.c(112) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk9w7H6z > ../../../../wntmsci12.pro/misc/s_hyphen.dpcc
+Compiling: hyphen/wntmsci12.pro/misc/build/hyphen-2.7.1/hnjalloc.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/hyphen -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/hnjalloc.obj hnjalloc.c
+hnjalloc.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkixzKQl > ../../../../wntmsci12.pro/misc/s_hnjalloc.dpcc
+Making:    hyphen.lib
+lib   /OUT:../../../../wntmsci12.pro/slb/hyphen.lib @C:/cygwin/tmp/mk8v6fKI
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../wntmsci12.pro/slo/hyphen.obj 
+../../../../wntmsci12.pro/slo/hnjalloc.obj 
+Making:    all_hyphen.dpslo
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_hyphen
+cp ./wntmsci12.pro/misc/build/hyphen-2.7.1/hyphen.h ./wntmsci12.pro/inc
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_hyphen
+hyphen deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/hyphen/build.lst
+COPY: ../wntmsci12.pro/slb/hyphen.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/hyphen.lib
+COPY: ../wntmsci12.pro/inc/hyphen.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/hyphen.h
+COPY: ../wntmsci12.pro/misc/build/hyphen-2.7.1/hyph_en_US.dic -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/hyph_en_US.dic
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/hyphen/deliver.log
+Module 'hyphen' delivered successfully. 4 files copied, 1 files unchanged
+
+=============

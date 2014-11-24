@@ -1,0 +1,40 @@
+Name:
+apache-commons
+
+Dependencies:
+solenv TOMCAT:tomcat NULL
+
+Build Rules:
+..\%__SRC%\class\commons-logging-1.1.1-SNAPSHOT.jar %_DEST%\bin%_EXT%\commons-logging-1.1.1.jar
+..\%__SRC%\class\commons-codec-1.6-SNAPSHOT.jar %_DEST%\bin%_EXT%\commons-codec-1.6.jar
+..\%__SRC%\class\commons-httpclient.jar %_DEST%\bin%_EXT%\commons-httpclient-3.1.jar
+..\%__SRC%\class\commons-lang-2.4.jar %_DEST%\bin%_EXT%\commons-lang-2.4.jar
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+patches\codec.patch
+patches\httpclient.patch
+patches\httpclient_no_javadoc.patch
+patches\logging.patch
+
+Makefiles:
+
+java\codec\makefile.mk
+	PRJNAME=apache-commons
+	TARGET=commons-codec
+
+java\httpclient\makefile.mk
+	PRJNAME=apache-commons
+	TARGET=commons-httpclient
+
+java\lang\makefile.mk
+	PRJNAME=apache-commons
+	TARGET=commons-lang
+
+java\logging\makefile.mk
+	PRJNAME=apache-commons
+	TARGET=commons-logging

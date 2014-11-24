@@ -1,0 +1,133 @@
+Name:
+formula
+
+Dependencies:
+BOOST:boost LIBXSLT:libxslt comphelper svx NULL
+
+Build Rules:
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+
+dos: sh -c "if test %OS% = MACOSX; then create-bundle %_DEST%\lib%_EXT%\*.dylib; fi"
+
+# Libraries
+..\%__SRC%\bin\for*.dll %_DEST%\bin%_EXT%\for*.dll
+..\%__SRC%\lib\libfor*.so %_DEST%\lib%_EXT%\libfor*.so
+..\%__SRC%\lib\ifor*.lib %_DEST%\lib%_EXT%\ifor*.lib
+..\%__SRC%\lib\for*.lib %_DEST%\lib%_EXT%\for*.lib
+..\%__SRC%\lib\libfor*.dylib %_DEST%\lib%_EXT%\libfor*.dylib
+
+# Resources
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+mkdir: %_DEST%\inc%_EXT%\formula
+..\inc\formula\formdata.hxx %_DEST%\inc%_EXT%\formula\formdata.hxx
+..\inc\formula\formula.hxx %_DEST%\inc%_EXT%\formula\formula.hxx
+..\inc\formula\formulahelper.hxx %_DEST%\inc%_EXT%\formula\formulahelper.hxx
+..\inc\formula\funcutl.hxx %_DEST%\inc%_EXT%\formula\funcutl.hxx
+..\inc\formula\IControlReferenceHandler.hxx %_DEST%\inc%_EXT%\formula\IControlReferenceHandler.hxx
+..\inc\formula\IFunctionDescription.hxx %_DEST%\inc%_EXT%\formula\IFunctionDescription.hxx
+..\inc\formula\ExternalReferenceHelper.hxx %_DEST%\inc%_EXT%\formula\ExternalReferenceHelper.hxx
+..\inc\formula\formuladllapi.h %_DEST%\inc%_EXT%\formula\formuladllapi.h
+..\inc\formula\opcode.hxx %_DEST%\inc%_EXT%\formula\opcode.hxx
+..\inc\formula\grammar.hxx %_DEST%\inc%_EXT%\formula\grammar.hxx
+..\inc\formula\FormulaCompiler.hxx %_DEST%\inc%_EXT%\formula\FormulaCompiler.hxx
+..\inc\formula\FormulaOpCodeMapperObj.hxx %_DEST%\inc%_EXT%\formula\FormulaOpCodeMapperObj.hxx
+..\inc\formula\compiler.hrc %_DEST%\inc%_EXT%\formula\compiler.hrc
+..\inc\formula\token.hxx %_DEST%\inc%_EXT%\formula\token.hxx
+..\inc\formula\tokenarray.hxx %_DEST%\inc%_EXT%\formula\tokenarray.hxx
+..\inc\formula\errorcodes.hxx %_DEST%\inc%_EXT%\formula\errorcodes.hxx
+..\inc\formula\intruref.hxx %_DEST%\inc%_EXT%\formula\intruref.hxx
+
+
+
+
+
+..\%__SRC%\misc\for.component %_DEST%\xml%_EXT%\for.component
+
+Source Files:
+inc\pch\precompiled_formula.cxx
+source\core\api\FormulaCompiler.cxx
+source\core\api\FormulaOpCodeMapperObj.cxx
+source\core\api\services.cxx
+source\core\api\token.cxx
+source\core\resource\core_resource.cxx
+source\ui\dlg\formula.cxx
+source\ui\dlg\FormulaHelper.cxx
+source\ui\dlg\funcpage.cxx
+source\ui\dlg\funcutl.cxx
+source\ui\dlg\parawin.cxx
+source\ui\dlg\structpg.cxx
+source\ui\resource\ModuleHelper.cxx
+
+Header Files:
+inc\AddressConvention.hxx
+inc\helpids.hrc
+inc\formula\compiler.hrc
+inc\formula\errorcodes.hxx
+inc\formula\ExternalReferenceHelper.hxx
+inc\formula\formdata.hxx
+inc\formula\formula.hxx
+inc\formula\FormulaCompiler.hxx
+inc\formula\formuladllapi.h
+inc\formula\formulahelper.hxx
+inc\formula\FormulaOpCodeMapperObj.hxx
+inc\formula\funcutl.hxx
+inc\formula\grammar.hxx
+inc\formula\IControlReferenceHandler.hxx
+inc\formula\IFunctionDescription.hxx
+inc\formula\intruref.hxx
+inc\formula\opcode.hxx
+inc\formula\token.hxx
+inc\formula\tokenarray.hxx
+inc\pch\precompiled_formula.hxx
+source\core\inc\core_resource.hrc
+source\core\inc\core_resource.hxx
+source\ui\dlg\ControlHelper.hxx
+source\ui\dlg\formdlgs.hrc
+source\ui\dlg\funcpage.hxx
+source\ui\dlg\parawin.hrc
+source\ui\dlg\parawin.hxx
+source\ui\dlg\structpg.hxx
+source\ui\inc\ForResId.hrc
+source\ui\inc\ModuleHelper.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=formula
+	TARGET=inc
+
+source\core\api\makefile.mk
+	PRJNAME=formula
+	TARGET=core_api
+	SLOFILES=$(SLO)$/FormulaOpCodeMapperObj.obj
+	$(SLO)$/FormulaCompiler.obj
+	$(SLO)$/token.obj
+	$(SLO)$/services.obj
+
+source\core\resource\makefile.mk
+	PRJNAME=formula
+	TARGET=core_resource
+	SLOFILES=$(SLO)$/core_resource.obj
+
+source\ui\dlg\makefile.mk
+	PRJNAME=formula
+	TARGET=uidlg
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+
+source\ui\resource\makefile.mk
+	PRJNAME=formula
+	TARGET=ui_resource
+	SLOFILES=$(SLO)$/ModuleHelper.obj
+	
+
+util\makefile.mk
+	PRJNAME=formula
+	TARGET=for
+	TARGET2=forui
+
+util\makefile.pmk

@@ -1,0 +1,510 @@
+Name:
+cui
+
+Dependencies:
+svx sax sot NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %COMMON_DEST%\res%_EXT%
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+
+mkdir: %COMMON_DEST%\xml%_EXT%\component\cui\util
+..\%__SRC%\misc\cui.component %_DEST%\xml%_EXT%\component\cui\util\cui.component
+
+Source Files:
+inc\pch\precompiled_cui.cxx
+source\customize\acccfg.cxx
+source\customize\cfg.cxx
+source\customize\cfgutil.cxx
+source\customize\eventdlg.cxx
+source\customize\macropg.cxx
+source\customize\selector.cxx
+source\dialogs\about.cxx
+source\dialogs\colorpicker.cxx
+source\dialogs\commonlingui.cxx
+source\dialogs\cuicharmap.cxx
+source\dialogs\cuifmsearch.cxx
+source\dialogs\cuigaldlg.cxx
+source\dialogs\cuigrfflt.cxx
+source\dialogs\cuihyperdlg.cxx
+source\dialogs\cuiimapwnd.cxx
+source\dialogs\cuitbxform.cxx
+source\dialogs\dlgname.cxx
+source\dialogs\hangulhanjadlg.cxx
+source\dialogs\hldocntp.cxx
+source\dialogs\hldoctp.cxx
+source\dialogs\hlinettp.cxx
+source\dialogs\hlmailtp.cxx
+source\dialogs\hlmarkwn.cxx
+source\dialogs\hltpbase.cxx
+source\dialogs\hyphen.cxx
+source\dialogs\iconcdlg.cxx
+source\dialogs\insdlg.cxx
+source\dialogs\insrc.cxx
+source\dialogs\linkdlg.cxx
+source\dialogs\multifil.cxx
+source\dialogs\multipat.cxx
+source\dialogs\newtabledlg.cxx
+source\dialogs\passwdomdlg.cxx
+source\dialogs\pastedlg.cxx
+source\dialogs\plfilter.cxx
+source\dialogs\postdlg.cxx
+source\dialogs\scriptdlg.cxx
+source\dialogs\sdrcelldlg.cxx
+source\dialogs\showcols.cxx
+source\dialogs\SpellAttrib.cxx
+source\dialogs\SpellDialog.cxx
+source\dialogs\splitcelldlg.cxx
+source\dialogs\srchxtra.cxx
+source\dialogs\thesdlg.cxx
+source\dialogs\zoom.cxx
+source\factory\cuiexp.cxx
+source\factory\cuiresmgr.cxx
+source\factory\dlgfact.cxx
+source\factory\init.cxx
+source\options\cfgchart.cxx
+source\options\connpoolconfig.cxx
+source\options\connpooloptions.cxx
+source\options\connpoolsettings.cxx
+source\options\cuisrchdlg.cxx
+source\options\dbregister.cxx
+source\options\dbregisterednamesconfig.cxx
+source\options\dbregistersettings.cxx
+source\options\doclinkdialog.cxx
+source\options\fontsubs.cxx
+source\options\internationaloptions.cxx
+source\options\optaccessibility.cxx
+source\options\optasian.cxx
+source\options\optchart.cxx
+source\options\optcolor.cxx
+source\options\optctl.cxx
+source\options\optdict.cxx
+source\options\optfltr.cxx
+source\options\optgdlg.cxx
+source\options\optgenrl.cxx
+source\options\optHeaderTabListbox.cxx
+source\options\opthtml.cxx
+source\options\optimprove.cxx
+source\options\optimprove2.cxx
+source\options\optinet2.cxx
+source\options\optjava.cxx
+source\options\optjsearch.cxx
+source\options\optlingu.cxx
+source\options\optmemory.cxx
+source\options\optpath.cxx
+source\options\optsave.cxx
+source\options\optupdt.cxx
+source\options\radiobtnbox.cxx
+source\options\readonlyimage.cxx
+source\options\sdbcdriverenum.cxx
+source\options\securityoptions.cxx
+source\options\treeopt.cxx
+source\options\webconninfo.cxx
+source\tabpages\align.cxx
+source\tabpages\autocdlg.cxx
+source\tabpages\backgrnd.cxx
+source\tabpages\bbdlg.cxx
+source\tabpages\border.cxx
+source\tabpages\borderconn.cxx
+source\tabpages\chardlg.cxx
+source\tabpages\connect.cxx
+source\tabpages\dstribut.cxx
+source\tabpages\grfpage.cxx
+source\tabpages\labdlg.cxx
+source\tabpages\macroass.cxx
+source\tabpages\measure.cxx
+source\tabpages\numfmt.cxx
+source\tabpages\numpages.cxx
+source\tabpages\page.cxx
+source\tabpages\paragrph.cxx
+source\tabpages\swpossizetabpage.cxx
+source\tabpages\tabarea.cxx
+source\tabpages\tabline.cxx
+source\tabpages\tabstpge.cxx
+source\tabpages\textanim.cxx
+source\tabpages\textattr.cxx
+source\tabpages\tparea.cxx
+source\tabpages\tpbitmap.cxx
+source\tabpages\tpcolor.cxx
+source\tabpages\tpgradnt.cxx
+source\tabpages\tphatch.cxx
+source\tabpages\tpline.cxx
+source\tabpages\tplnedef.cxx
+source\tabpages\tplneend.cxx
+source\tabpages\tpshadow.cxx
+source\tabpages\transfrm.cxx
+source\uno\services\services.cxx
+
+Header Files:
+inc\pch\precompiled_cui.hxx
+source\customize\acccfg.hrc
+source\customize\cfg.hrc
+source\customize\eventdlg.hrc
+source\customize\eventdlg.hxx
+source\customize\macropg.hrc
+source\customize\macropg_impl.hxx
+source\customize\selector.hrc
+source\dialogs\about.hrc
+source\dialogs\charmap.hrc
+source\dialogs\colorpicker.hrc
+source\dialogs\commonlingui.hxx
+source\dialogs\cuiimapdlg.hrc
+source\dialogs\dlgname.hrc
+source\dialogs\fmsearch.hrc
+source\dialogs\grfflt.hrc
+source\dialogs\hangulhanjadlg.hrc
+source\dialogs\hlmarkwn.hrc
+source\dialogs\hyperdlg.hrc
+source\dialogs\hyphen.hrc
+source\dialogs\insrc.hrc
+source\dialogs\multipat.hrc
+source\dialogs\newtabledlg.hrc
+source\dialogs\passwdomdlg.hrc
+source\dialogs\postdlg.hrc
+source\dialogs\scriptdlg.hrc
+source\dialogs\SpellAttrib.hxx
+source\dialogs\SpellDialog.hrc
+source\dialogs\splitcelldlg.hrc
+source\dialogs\srchxtra.hrc
+source\dialogs\svuidlg.hrc
+source\dialogs\thesdlg.hrc
+source\dialogs\thesdlg_impl.hxx
+source\dialogs\zoom.hrc
+source\factory\dlgfact.hxx
+source\inc\about.hxx
+source\inc\acccfg.hxx
+source\inc\align.hxx
+source\inc\autocdlg.hxx
+source\inc\backgrnd.hxx
+source\inc\bbdlg.hxx
+source\inc\border.hxx
+source\inc\cfg.hxx
+source\inc\cfgutil.hxx
+source\inc\chardlg.hxx
+source\inc\connect.hxx
+source\inc\ControlFocusHelper.hxx
+source\inc\cuicharmap.hxx
+source\inc\cuifmsearch.hxx
+source\inc\cuigaldlg.hxx
+source\inc\cuigrfflt.hxx
+source\inc\cuihyperdlg.hxx
+source\inc\cuiimapwnd.hxx
+source\inc\cuioptgenrl.hxx
+source\inc\cuires.hrc
+source\inc\cuisrchdlg.hxx
+source\inc\cuitabarea.hxx
+source\inc\cuitabline.hxx
+source\inc\cuitbxform.hxx
+source\inc\dbregister.hxx
+source\inc\defdlgname.hxx
+source\inc\dialmgr.hxx
+source\inc\dlgname.hxx
+source\inc\dstribut.hxx
+source\inc\gallery.hrc
+source\inc\grfpage.hxx
+source\inc\hangulhanjadlg.hxx
+source\inc\headertablistbox.hxx
+source\inc\helpid.hrc
+source\inc\hldocntp.hxx
+source\inc\hldoctp.hxx
+source\inc\hlinettp.hxx
+source\inc\hlmailtp.hxx
+source\inc\hlmarkwn.hxx
+source\inc\hlmarkwn_def.hxx
+source\inc\hltpbase.hxx
+source\inc\hyphen.hxx
+source\inc\iconcdlg.hxx
+source\inc\insdlg.hxx
+source\inc\insrc.hxx
+source\inc\internationaloptions.hxx
+source\inc\labdlg.hxx
+source\inc\linkdlg.hxx
+source\inc\macroass.hxx
+source\inc\macropg.hxx
+source\inc\measure.hxx
+source\inc\multifil.hxx
+source\inc\multipat.hxx
+source\inc\newtabledlg.hxx
+source\inc\numfmt.hxx
+source\inc\numpages.hxx
+source\inc\optasian.hxx
+source\inc\optdict.hxx
+source\inc\optimprove.hxx
+source\inc\optlingu.hxx
+source\inc\optpath.hxx
+source\inc\page.hxx
+source\inc\paragrph.hxx
+source\inc\passwdomdlg.hxx
+source\inc\pastedlg.hxx
+source\inc\postdlg.hxx
+source\inc\radiobtnbox.hxx
+source\inc\scriptdlg.hxx
+source\inc\sdrcelldlg.hxx
+source\inc\selector.hxx
+source\inc\showcols.hxx
+source\inc\SpellDialog.hxx
+source\inc\splitcelldlg.hxx
+source\inc\srchxtra.hxx
+source\inc\tabstpge.hxx
+source\inc\textanim.hxx
+source\inc\textattr.hxx
+source\inc\thesdlg.hxx
+source\inc\transfrm.hxx
+source\inc\treeopt.hxx
+source\inc\zoom.hxx
+source\options\cfgchart.hxx
+source\options\connpoolconfig.hxx
+source\options\connpooloptions.hrc
+source\options\connpooloptions.hxx
+source\options\connpoolsettings.hxx
+source\options\dbregister.hrc
+source\options\dbregisterednamesconfig.hxx
+source\options\dbregistersettings.hxx
+source\options\doclinkdialog.hrc
+source\options\doclinkdialog.hxx
+source\options\fontsubs.hrc
+source\options\fontsubs.hxx
+source\options\internationaloptions.hrc
+source\options\optaccessibility.hrc
+source\options\optaccessibility.hxx
+source\options\optasian.hrc
+source\options\optchart.hrc
+source\options\optchart.hxx
+source\options\optcolor.hrc
+source\options\optcolor.hxx
+source\options\optctl.hrc
+source\options\optctl.hxx
+source\options\optdict.hrc
+source\options\optfltr.hrc
+source\options\optfltr.hxx
+source\options\optgdlg.hrc
+source\options\optgdlg.hxx
+source\options\optgenrl.hrc
+source\options\optHeaderTabListbox.hxx
+source\options\opthtml.hrc
+source\options\opthtml.hxx
+source\options\optimprove.hrc
+source\options\optinet2.hrc
+source\options\optinet2.hxx
+source\options\optjava.hrc
+source\options\optjava.hxx
+source\options\optjsearch.hrc
+source\options\optjsearch.hxx
+source\options\optlingu.hrc
+source\options\optmemory.hrc
+source\options\optmemory.hxx
+source\options\optpath.hrc
+source\options\optsave.hrc
+source\options\optsave.hxx
+source\options\optspell.hrc
+source\options\optupdt.hrc
+source\options\optupdt.hxx
+source\options\readonlyimage.hxx
+source\options\sdbcdriverenum.hxx
+source\options\securityoptions.hrc
+source\options\securityoptions.hxx
+source\options\treeopt.hrc
+source\options\webconninfo.hrc
+source\options\webconninfo.hxx
+source\tabpages\align.hrc
+source\tabpages\autocdlg.hrc
+source\tabpages\backgrnd.hrc
+source\tabpages\border.hrc
+source\tabpages\borderconn.hxx
+source\tabpages\chardlg.h
+source\tabpages\chardlg.hrc
+source\tabpages\connect.hrc
+source\tabpages\dstribut.hrc
+source\tabpages\grfpage.hrc
+source\tabpages\labdlg.hrc
+source\tabpages\macroass.hrc
+source\tabpages\measure.hrc
+source\tabpages\numfmt.hrc
+source\tabpages\numpages.hrc
+source\tabpages\page.h
+source\tabpages\page.hrc
+source\tabpages\paragrph.hrc
+source\tabpages\swpossizetabpage.hrc
+source\tabpages\swpossizetabpage.hxx
+source\tabpages\tabarea.hrc
+source\tabpages\tabline.hrc
+source\tabpages\tabstpge.hrc
+source\tabpages\textanim.hrc
+source\tabpages\textattr.hrc
+source\tabpages\transfrm.hrc
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=cui
+	TARGET=inc
+
+source\customize\makefile.mk
+	PRJNAME=cui
+	TARGET=customize
+	SLOFILES+=
+	$(SLO)$/acccfg.obj
+	$(SLO)$/cfg.obj
+	$(SLO)$/cfgutil.obj
+	$(SLO)$/eventdlg.obj
+	$(SLO)$/macropg.obj
+	$(SLO)$/selector.obj
+	
+
+source\dialogs\makefile.mk
+	PRJNAME=cui
+	TARGET=dialogs
+	SLOFILES+=
+	$(SLO)$/about.obj
+	$(SLO)$/colorpicker.obj
+	$(SLO)$/commonlingui.obj
+	$(SLO)$/cuicharmap.obj
+	$(SLO)$/cuifmsearch.obj
+	$(SLO)$/cuigaldlg.obj
+	$(SLO)$/cuigrfflt.obj
+	$(SLO)$/cuihyperdlg.obj
+	$(SLO)$/cuiimapwnd.obj
+	$(SLO)$/cuitbxform.obj
+	$(SLO)$/dlgname.obj
+	$(SLO)$/hangulhanjadlg.obj
+	$(SLO)$/hldocntp.obj
+	$(SLO)$/hldoctp.obj
+	$(SLO)$/hlinettp.obj
+	$(SLO)$/hlmailtp.obj
+	$(SLO)$/hlmarkwn.obj
+	$(SLO)$/hltpbase.obj
+	$(SLO)$/hyphen.obj
+	$(SLO)$/iconcdlg.obj
+	$(SLO)$/insdlg.obj
+	$(SLO)$/insrc.obj
+	$(SLO)$/linkdlg.obj
+	$(SLO)$/multifil.obj
+	$(SLO)$/multipat.obj
+	$(SLO)$/newtabledlg.obj
+	$(SLO)$/passwdomdlg.obj
+	$(SLO)$/pastedlg.obj
+	$(SLO)$/plfilter.obj
+	$(SLO)$/postdlg.obj
+	$(SLO)$/scriptdlg.obj
+	$(SLO)$/sdrcelldlg.obj
+	$(SLO)$/showcols.obj
+	$(SLO)$/SpellAttrib.obj
+	$(SLO)$/SpellDialog.obj
+	$(SLO)$/splitcelldlg.obj
+	$(SLO)$/srchxtra.obj
+	$(SLO)$/thesdlg.obj
+	$(SLO)$/zoom.obj
+	
+	SLOFILES+=$(SLO)$/winpluginlib.obj
+
+source\factory\makefile.mk
+	PRJNAME=cui
+	TARGET=factory
+	SLOFILES+=
+	$(SLO)$/dlgfact.obj
+	$(SLO)$/cuiexp.obj
+	$(SLO)$/cuiresmgr.obj
+	$(SLO)$/init.obj
+	
+
+source\options\makefile.mk
+	PRJNAME=cui
+	TARGET=options
+	SLOFILES+=
+	$(SLO)$/cfgchart.obj
+	$(SLO)$/connpoolconfig.obj
+	$(SLO)$/connpooloptions.obj
+	$(SLO)$/connpoolsettings.obj
+	$(SLO)$/cuisrchdlg.obj
+	$(SLO)$/dbregister.obj
+	$(SLO)$/dbregisterednamesconfig.obj
+	$(SLO)$/dbregistersettings.obj
+	$(SLO)$/doclinkdialog.obj
+	$(SLO)$/fontsubs.obj
+	$(SLO)$/internationaloptions.obj
+	$(SLO)$/optaccessibility.obj
+	$(SLO)$/optasian.obj
+	$(SLO)$/optchart.obj
+	$(SLO)$/optcolor.obj
+	$(SLO)$/optctl.obj
+	$(SLO)$/optdict.obj
+	$(SLO)$/optfltr.obj
+	$(SLO)$/optgdlg.obj
+	$(SLO)$/optgenrl.obj
+	$(SLO)$/optHeaderTabListbox.obj
+	$(SLO)$/opthtml.obj
+	$(SLO)$/optimprove.obj
+	$(SLO)$/optimprove2.obj
+	$(SLO)$/optinet2.obj
+	$(SLO)$/optjava.obj
+	$(SLO)$/optjsearch.obj
+	$(SLO)$/optlingu.obj
+	$(SLO)$/optmemory.obj
+	$(SLO)$/optpath.obj
+	$(SLO)$/optsave.obj
+	$(SLO)$/optupdt.obj
+	$(SLO)$/radiobtnbox.obj
+	$(SLO)$/readonlyimage.obj
+	$(SLO)$/sdbcdriverenum.obj
+	$(SLO)$/securityoptions.obj
+	$(SLO)$/treeopt.obj
+	$(SLO)$/webconninfo.obj
+	
+
+source\tabpages\makefile.mk
+	PRJNAME=cui
+	TARGET=tabpages
+	SLOFILES+=
+	$(SLO)$/align.obj
+	$(SLO)$/autocdlg.obj
+	$(SLO)$/backgrnd.obj
+	$(SLO)$/bbdlg.obj
+	$(SLO)$/border.obj
+	$(SLO)$/borderconn.obj
+	$(SLO)$/chardlg.obj
+	$(SLO)$/connect.obj
+	$(SLO)$/dstribut.obj
+	$(SLO)$/grfpage.obj
+	$(SLO)$/labdlg.obj
+	$(SLO)$/macroass.obj
+	$(SLO)$/measure.obj
+	$(SLO)$/numfmt.obj
+	$(SLO)$/numpages.obj
+	$(SLO)$/page.obj
+	$(SLO)$/paragrph.obj
+	$(SLO)$/swpossizetabpage.obj
+	$(SLO)$/tabarea.obj
+	$(SLO)$/tabline.obj
+	$(SLO)$/tabstpge.obj
+	$(SLO)$/textanim.obj
+	$(SLO)$/textattr.obj
+	$(SLO)$/tparea.obj
+	$(SLO)$/tpbitmap.obj
+	$(SLO)$/tpcolor.obj
+	$(SLO)$/tpgradnt.obj
+	$(SLO)$/tphatch.obj
+	$(SLO)$/tpline.obj
+	$(SLO)$/tplnedef.obj
+	$(SLO)$/tplneend.obj
+	$(SLO)$/tpshadow.obj
+	$(SLO)$/transfrm.obj
+	
+
+source\uno\services\makefile.mk
+	PRJNAME=cui
+	TARGET=services
+	SLOFILES+=
+	$(SLO)$/services.obj
+
+util\makefile.mk
+	PRJNAME=cui
+	TARGET=cui
+
+util\makefile.pmk

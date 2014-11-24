@@ -1,0 +1,110 @@
+Name:
+sysui
+
+Dependencies:
+L10N:l10n offapi xml2cmp rdbmaker l10ntools setup_native NULL
+
+Build Rules:
+mkdir: %_DEST%\res%_EXT%\icons
+mkdir: %_DEST%\inc%_EXT%\icons
+mkdir: %_DEST%\bin%_EXT%\so
+mkdir: %_DEST%\bin%_EXT%\desktop-integration
+mkdir: %_DEST%\bin%_EXT%\desktop-integration\rpm
+mkdir: %_DEST%\bin%_EXT%\desktop-integration\deb
+mkdir: %_DEST%\bin%_EXT%\desktop-integration\pkg
+
+..\%__SRC%\misc\*.ico %_DEST%\res%_EXT%\icons\*.ico
+..\%__SRC%\misc\*.gif %_DEST%\res%_EXT%\icons\*.gif
+..\%__SRC%\bin\*.zip %_DEST%\bin%_EXT%\*.zip
+..\%__SRC%\bin\*.tar.gz %_DEST%\bin%_EXT%\*.tar.gz
+..\%__SRC%\bin\rpm\*.tar.gz %_DEST%\bin%_EXT%\desktop-integration\rpm\*.tar.gz
+..\%__SRC%\bin\deb\*.tar.gz %_DEST%\bin%_EXT%\desktop-integration\deb\*.tar.gz
+..\%__SRC%\bin\pkg\*.tar.gz %_DEST%\bin%_EXT%\desktop-integration\pkg\*.tar.gz
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+
+..\%__SRC%\misc\ooo3_main_app.ico %_DEST%\bin%_EXT%\soffice.ico
+
+..\%__SRC%\misc\desktopshare\*.desktop %_DEST%\pck%_EXT%\*.desktop
+..\%__SRC%\misc\PkgInfo %_DEST%\pck%_EXT%\PkgInfo
+..\%__SRC%\misc\Info.plist %_DEST%\pck%_EXT%\Info.plist
+
+Source Files:
+source\win32\misc\AutoBuffer.cxx
+source\win32\misc\resourceprovider.cxx
+source\win32\misc\WinImplHelper.cxx
+
+Header Files:
+source\win32\misc\AutoBuffer.hxx
+source\win32\misc\resourceprovider.hxx
+source\win32\misc\WinImplHelper.hxx
+
+Patch Files:
+
+Makefiles:
+
+desktop\productversion.mk
+
+desktop\tg_rpm.mk
+
+desktop\cleanversion\makefile.mk
+	PRJNAME=sysui
+	TARGET=cleanversion
+
+desktop\debian\makefile.mk
+	PRJNAME=sysui
+	TARGET=debian
+
+desktop\freedesktop\makefile.mk
+	PRJNAME=sysui
+	TARGET=freedesktop
+
+desktop\icons\makefile.mk
+	PRJNAME=sysui
+	TARGET=icons
+
+desktop\macosx\makefile.mk
+	TARGET=desktopmacosx
+
+desktop\mandriva\makefile.mk
+	PRJNAME=sysui
+	TARGET=mandriva
+
+desktop\os2\makefile.mk
+	PRJNAME=sysui
+	TARGET=icons
+
+desktop\redhat\makefile.mk
+	PRJNAME=sysui
+	TARGET=redhat
+
+desktop\share\makefile.mk
+	PRJNAME=sysui
+	TARGET=desktopshare
+
+desktop\slackware\makefile.mk
+	PRJNAME=sysui
+	TARGET=slackware
+
+desktop\solaris\makefile.mk
+	PRJNAME=sysui
+	TARGET=solaris
+
+desktop\suse\makefile.mk
+	PRJNAME=sysui
+	TARGET=suse
+
+desktop\util\makefile.mk
+	PRJNAME=sysui
+	TARGET=launcher
+
+source\win32\misc\makefile.mk
+	PRJNAME=sysui
+	TARGET=utils
+	SLOFILES=$(SLO)$/WinImplHelper.obj
+	$(SLO)$/AutoBuffer.obj
+	$(SLO)$/resourceprovider.obj
+
+util\makefile.mk
+	PRJNAME=sysui
+	TARGET=sysui

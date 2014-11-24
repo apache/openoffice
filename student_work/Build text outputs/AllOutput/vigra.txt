@@ -1,0 +1,1295 @@
+vigra
+=============
+
+Entering /cygdrive/c/steve/testarea/main/vigra
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/vigra1.6.0 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/vigra1.6.0 ./wntmsci12.pro/misc/build/vigra1.6.0_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/vigra1.6.0_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/d62650a6f908e85643e557a236ea989c-vigra1.6.0.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_vigra
+vigra1.6.0/
+vigra1.6.0/t
+vigra1.6.0/config/
+vigra1.6.0/config/acinclude.m4
+vigra1.6.0/config/aclocal.m4
+vigra1.6.0/config/config.guess
+vigra1.6.0/config/config.sub
+vigra1.6.0/config/configure.in
+vigra1.6.0/config/install-sh
+vigra1.6.0/config/libtool.m4
+vigra1.6.0/config/ltmain.sh
+vigra1.6.0/config/Makefile.include
+vigra1.6.0/config/Makefile.include.empty
+vigra1.6.0/config/Makefile.include.in
+vigra1.6.0/config/status.m4
+vigra1.6.0/config/vigra-config.in
+vigra1.6.0/config/winsetup.iss
+vigra1.6.0/configure
+vigra1.6.0/doc/
+vigra1.6.0/doc/vigra/
+vigra1.6.0/doc/vigra/accessor_8hxx-source.html
+vigra1.6.0/doc/vigra/affinegeometry_8hxx-source.html
+vigra1.6.0/doc/vigra/affine__registration_8hxx-source.html
+vigra1.6.0/doc/vigra/AlgebraicConcepts.html
+vigra1.6.0/doc/vigra/annotated.html
+vigra1.6.0/doc/vigra/ArgumentObjectFactories.html
+vigra1.6.0/doc/vigra/array__vector_8hxx-source.html
+vigra1.6.0/doc/vigra/basicgeometry_8hxx-source.html
+vigra1.6.0/doc/vigra/basicimageview_8hxx-source.html
+vigra1.6.0/doc/vigra/basicimage_8hxx-source.html
+vigra1.6.0/doc/vigra/BorderTreatmentMode.html
+vigra1.6.0/doc/vigra/bordertreatment_8hxx-source.html
+vigra1.6.0/doc/vigra/boundarytensor_8cxx-example.html
+vigra1.6.0/doc/vigra/boundarytensor_8hxx-source.html
+vigra1.6.0/doc/vigra/classes.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayOfRegionStatistics-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayOfRegionStatistics.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVector-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVector.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVector.png
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVectorView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVectorView.html
+vigra1.6.0/doc/vigra/classvigra_1_1ArrayVectorView.png
+vigra1.6.0/doc/vigra/Examples.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImage-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImage.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIteratorBase-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIteratorBase.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageIteratorBase.png
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BasicImageView.html
+vigra1.6.0/doc/vigra/classvigra_1_1BilinearInterpolatingAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BilinearInterpolatingAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1BlueAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BlueAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1BrightnessContrastFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BrightnessContrastFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1BSpline-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BSpline.html
+vigra1.6.0/doc/vigra/classvigra_1_1BSpline.png
+vigra1.6.0/doc/vigra/classvigra_1_1BSplineBase-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1BSplineBase.html
+vigra1.6.0/doc/vigra/classvigra_1_1BSplineBase.png
+vigra1.6.0/doc/vigra/classvigra_1_1CatmullRomSpline-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1CatmullRomSpline.html
+vigra1.6.0/doc/vigra/classvigra_1_1ColumnIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ColumnIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstBasicImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstBasicImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstBasicImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1ConstImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1ConstStridedImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstStridedImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstStridedImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1ConstValueIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ConstValueIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1CoscotFunction-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1CoscotFunction.html
+vigra1.6.0/doc/vigra/classvigra_1_1Diff2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1CrackContourCirculator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1CrackContourCirculator.html
+vigra1.6.0/doc/vigra/classvigra_1_1Diff2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Diff2D.png
+vigra1.6.0/doc/vigra/classvigra_1_1DiffusivityFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1DiffusivityFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Dist2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Dist2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Edgel-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Edgel.html
+vigra1.6.0/doc/vigra/classvigra_1_1EightNeighborhood_1_1NeighborCode.html
+vigra1.6.0/doc/vigra/classvigra_1_1EightNeighborhood_1_1NeighborCode-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWComplex-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWComplex.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWImaginaryAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWImaginaryAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWMagnitudeAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWMagnitudeAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWPhaseAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWPhaseAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWRealAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWRealAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWRealAccessor.png
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWWriteRealAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWWriteRealAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1FFTWWriteRealAccessor.png
+vigra1.6.0/doc/vigra/classvigra_1_1FindAverage-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindAverage.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindAverageAndVariance-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindAverageAndVariance.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindBoundingRectangle-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindBoundingRectangle.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindMinMax-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindMinMax.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindROISize-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FindROISize.html
+vigra1.6.0/doc/vigra/classvigra_1_1FixedPoint-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FixedPoint.html
+vigra1.6.0/doc/vigra/classvigra_1_1FourNeighborhood_1_1NeighborCode-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FourNeighborhood_1_1NeighborCode.html
+vigra1.6.0/doc/vigra/classvigra_1_1FunctorTraits-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1FunctorTraits.html
+vigra1.6.0/doc/vigra/classvigra_1_1GaborFilterFamily-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1GaborFilterFamily.html
+vigra1.6.0/doc/vigra/classvigra_1_1GaborFilterFamily.png
+vigra1.6.0/doc/vigra/classvigra_1_1GammaFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1GammaFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Gaussian-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Gaussian.html
+vigra1.6.0/doc/vigra/classvigra_1_1GrayToRGBAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1GreenAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1GrayToRGBAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1GreenAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageArray-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageArray.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageArray.png
+vigra1.6.0/doc/vigra/classvigra_1_1ImageExportInfo-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageExportInfo.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageImportInfo-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageImportInfo.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIteratorBase-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIteratorBase.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImageIteratorBase.png
+vigra1.6.0/doc/vigra/classvigra_1_1ImagePyramid-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ImagePyramid.html
+vigra1.6.0/doc/vigra/classvigra_1_1IteratorAdaptor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1IteratorAdaptor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Kernel1D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Kernel1D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Kernel2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Kernel2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2RGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2RGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2XYZFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Lab2XYZFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1LastValueFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1LastValueFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1linalg_1_1Matrix-members.html
+vigra1.6.0/doc/vigra/FFTWComplexTraits.html
+vigra1.6.0/doc/vigra/classvigra_1_1linalg_1_1Matrix.html
+vigra1.6.0/doc/vigra/classvigra_1_1linalg_1_1Matrix.png
+vigra1.6.0/doc/vigra/classvigra_1_1LineIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1LineIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2RGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2RGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2XYZFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Luv2XYZFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArray.html
+vigra1.6.0/doc/vigra/classvigra_1_1MagnitudeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MagnitudeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArray-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArray.png
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayNavigator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayNavigator.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayShape-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayShape.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiArrayView.html
+vigra1.6.0/doc/vigra/fftw3_8hxx-source.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiImageAccessor2-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiImageAccessor2.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1MultiIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1Neighborhood3DSix_1_1NeighborCode3D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Neighborhood3DSix_1_1NeighborCode3D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Neighborhood3DTwentySix_1_1NeighborCode3D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Neighborhood3DTwentySix_1_1NeighborCode3D.html
+vigra1.6.0/doc/vigra/classvigra_1_1NeighborhoodCirculator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1NeighborhoodCirculator.html
+vigra1.6.0/doc/vigra/classvigra_1_1NeighborhoodCirculator.png
+vigra1.6.0/doc/vigra/classvigra_1_1NeighborOffsetCirculator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1NeighborOffsetCirculator.html
+vigra1.6.0/doc/vigra/classvigra_1_1NoiseNormalizationOptions-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1NoiseNormalizationOptions.html
+vigra1.6.0/doc/vigra/classvigra_1_1Point2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Point2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Point2D.png
+vigra1.6.0/doc/vigra/classvigra_1_1Polynomial-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Polynomial.html
+vigra1.6.0/doc/vigra/classvigra_1_1Polynomial.png
+vigra1.6.0/doc/vigra/classvigra_1_1PolynomialView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1PolynomialView.html
+vigra1.6.0/doc/vigra/classvigra_1_1PolynomialView.png
+vigra1.6.0/doc/vigra/classvigra_1_1RandomNumberGenerator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RandomNumberGenerator.html
+vigra1.6.0/doc/vigra/classvigra_1_1Rational-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Rational.html
+vigra1.6.0/doc/vigra/classvigra_1_1Rect2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Rect2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1RedAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RedAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1ReduceFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1ReduceFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RestrictedNeighborhoodCirculator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RestrictedNeighborhoodCirculator.html
+vigra1.6.0/doc/vigra/classvigra_1_1RestrictedNeighborhoodCirculator.png
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2LabFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2LabFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2LuvFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2LuvFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2sRGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2sRGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2XYZFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGB2XYZFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBAccessor.html
+vigra1.6.0/doc/vigra/Convolution.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBAccessor.png
+vigra1.6.0/doc/vigra/classvigra_1_1RGBGradientMagnitudeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBGradientMagnitudeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2LabFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2LabFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2LuvFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2LuvFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2RGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2RGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBValue.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2XYZFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2XYZFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeCbCrFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeCbCrFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeIQFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeIQFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimePbPrFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimePbPrFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeUVFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBPrime2YPrimeUVFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBToGrayAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBToGrayAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBValue-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RGBValue.png
+vigra1.6.0/doc/vigra/classvigra_1_1RowIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1RowIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1SeedRgDirectValueFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SeedRgDirectValueFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1SequenceAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SequenceAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1SequenceAccessor.png
+vigra1.6.0/doc/vigra/classvigra_1_1Size2D-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Size2D.html
+vigra1.6.0/doc/vigra/classvigra_1_1Size2D.png
+vigra1.6.0/doc/vigra/classvigra_1_1SlantedEdgeMTFOptions-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SlantedEdgeMTFOptions.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView0-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView0.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView1-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1SplineImageView1.html
+vigra1.6.0/doc/vigra/classvigra_1_1sRGB2RGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1sRGB2RGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardConstAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardConstAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardConstValueAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StaticPolynomial.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardConstValueAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardValueAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StandardValueAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1StaticPolynomial-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StaticPolynomial.png
+vigra1.6.0/doc/vigra/classvigra_1_1StridedImageIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1StridedImageIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1StridedImageIterator.png
+vigra1.6.0/doc/vigra/classvigra_1_1StridedMultiIterator-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1Threshold.html
+vigra1.6.0/doc/vigra/classvigra_1_1StridedMultiIterator.html
+vigra1.6.0/doc/vigra/classvigra_1_1Threshold-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVector-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVector.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVector.png
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorBase-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorBase.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorBase.png
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorView-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorView.html
+vigra1.6.0/doc/vigra/classvigra_1_1TinyVectorView.png
+vigra1.6.0/doc/vigra/classvigra_1_1UniformIntRandomFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1UniformIntRandomFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1UniformRandomFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1UniformRandomFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorAccessor.png
+vigra1.6.0/doc/vigra/classvigra_1_1VectorComponentAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorComponentAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2LabFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorComponentValueAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorComponentValueAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorElementAccessor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorElementAccessor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorNormFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorNormFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorNormSqFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1VectorNormSqFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2LabFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2LuvFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2LuvFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2RGBFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2RGBFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1XYZ2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeCbCr2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeCbCr2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeIQ2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/convert_8cxx-example.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeIQ2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimePbPr2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimePbPr2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeUV2RGBPrimeFunctor-members.html
+vigra1.6.0/doc/vigra/classvigra_1_1YPrimeUV2RGBPrimeFunctor.html
+vigra1.6.0/doc/vigra/codec_8hxx-source.html
+vigra1.6.0/doc/vigra/colorconversions_8hxx-source.html
+vigra1.6.0/doc/vigra/combineimages_8hxx-source.html
+vigra1.6.0/doc/vigra/Concepts.html
+vigra1.6.0/doc/vigra/config_8hxx-source.html
+vigra1.6.0/doc/vigra/contourcirculator_8hxx-source.html
+vigra1.6.0/doc/vigra/convolution_8hxx-source.html
+vigra1.6.0/doc/vigra/copyimage_8hxx-source.html
+vigra1.6.0/doc/vigra/cornerdetection_8hxx-source.html
+vigra1.6.0/doc/vigra/CrackEdgeImage.html
+vigra1.6.0/doc/vigra/CreditsChangelog.html
+vigra1.6.0/doc/vigra/deprecated.html
+vigra1.6.0/doc/vigra/diff2d_8hxx-source.html
+vigra1.6.0/doc/vigra/distancetransform_8hxx-source.html
+vigra1.6.0/doc/vigra/documents/
+vigra1.6.0/doc/vigra/documents/bullet.gif
+vigra1.6.0/doc/vigra/documents/DataAccessors.ps
+vigra1.6.0/doc/vigra/documents/FunctorFactory.ps
+vigra1.6.0/doc/vigra/documents/GenericProg2D.ps
+vigra1.6.0/doc/vigra/documents/pfeil.gif
+vigra1.6.0/doc/vigra/documents/pfeilGross.gif
+vigra1.6.0/doc/vigra/documents/viff.ps
+vigra1.6.0/doc/vigra/documents/vigra.gif
+vigra1.6.0/doc/vigra/doxygen.png
+vigra1.6.0/doc/vigra/edgedetection_8hxx-source.html
+vigra1.6.0/doc/vigra/edge_8cxx-example.html
+vigra1.6.0/doc/vigra/eigensystem_8hxx-source.html
+vigra1.6.0/doc/vigra/ErrorReporting.html
+vigra1.6.0/doc/vigra/error_8hxx-source.html
+vigra1.6.0/doc/vigra/files.html
+vigra1.6.0/doc/vigra/FixedPointTraits.html
+vigra1.6.0/doc/vigra/fixedpoint_8hxx-source.html
+vigra1.6.0/doc/vigra/flatmorphology_8hxx-source.html
+vigra1.6.0/doc/vigra/functionindex.html
+vigra1.6.0/doc/vigra/functions.html
+vigra1.6.0/doc/vigra/functions_0x62.html
+vigra1.6.0/doc/vigra/functions_0x63.html
+vigra1.6.0/doc/vigra/functions_0x64.html
+vigra1.6.0/doc/vigra/functions_0x65.html
+vigra1.6.0/doc/vigra/functions_0x66.html
+vigra1.6.0/doc/vigra/functions_0x67.html
+vigra1.6.0/doc/vigra/functions_0x68.html
+vigra1.6.0/doc/vigra/functions_0x69.html
+vigra1.6.0/doc/vigra/functions_0x6b.html
+vigra1.6.0/doc/vigra/functions_0x6c.html
+vigra1.6.0/doc/vigra/functions_0x6d.html
+vigra1.6.0/doc/vigra/functions_0x6e.html
+vigra1.6.0/doc/vigra/functions_0x6f.html
+vigra1.6.0/doc/vigra/functions_0x70.html
+vigra1.6.0/doc/vigra/functions_0x72.html
+vigra1.6.0/doc/vigra/functions_0x73.html
+vigra1.6.0/doc/vigra/functions_0x74.html
+vigra1.6.0/doc/vigra/functions_0x75.html
+vigra1.6.0/doc/vigra/functions_0x76.html
+vigra1.6.0/doc/vigra/functions_0x77.html
+vigra1.6.0/doc/vigra/functions_0x78.html
+vigra1.6.0/doc/vigra/functions_0x79.html
+vigra1.6.0/doc/vigra/functions_0x7e.html
+vigra1.6.0/doc/vigra/functions_enum.html
+vigra1.6.0/doc/vigra/functions_eval.html
+vigra1.6.0/doc/vigra/functions_func.html
+vigra1.6.0/doc/vigra/functions_func_0x62.html
+vigra1.6.0/doc/vigra/functions_func_0x63.html
+vigra1.6.0/doc/vigra/functions_func_0x64.html
+vigra1.6.0/doc/vigra/functions_func_0x65.html
+vigra1.6.0/doc/vigra/functions_func_0x66.html
+vigra1.6.0/doc/vigra/functions_func_0x67.html
+vigra1.6.0/doc/vigra/functions_func_0x68.html
+vigra1.6.0/doc/vigra/functions_func_0x69.html
+vigra1.6.0/doc/vigra/functions_func_0x6b.html
+vigra1.6.0/doc/vigra/functions_func_0x6c.html
+vigra1.6.0/doc/vigra/functions_func_0x6d.html
+vigra1.6.0/doc/vigra/functions_func_0x6e.html
+vigra1.6.0/doc/vigra/functions_func_0x6f.html
+vigra1.6.0/doc/vigra/functions_func_0x70.html
+vigra1.6.0/doc/vigra/functions_func_0x72.html
+vigra1.6.0/doc/vigra/functions_func_0x73.html
+vigra1.6.0/doc/vigra/functions_func_0x74.html
+vigra1.6.0/doc/vigra/functions_func_0x75.html
+vigra1.6.0/doc/vigra/functions_func_0x76.html
+vigra1.6.0/doc/vigra/functions_func_0x77.html
+vigra1.6.0/doc/vigra/functions_func_0x78.html
+vigra1.6.0/doc/vigra/functions_func_0x79.html
+vigra1.6.0/doc/vigra/functions_func_0x7e.html
+vigra1.6.0/doc/vigra/functions_type.html
+vigra1.6.0/doc/vigra/functions_type_0x62.html
+vigra1.6.0/doc/vigra/functions_type_0x63.html
+vigra1.6.0/doc/vigra/functions_type_0x64.html
+vigra1.6.0/doc/vigra/functions_type_0x66.html
+vigra1.6.0/doc/vigra/functions_type_0x69.html
+vigra1.6.0/doc/vigra/functions_type_0x6d.html
+vigra1.6.0/doc/vigra/functions_type_0x6e.html
+vigra1.6.0/doc/vigra/functions_type_0x70.html
+vigra1.6.0/doc/vigra/functions_type_0x72.html
+vigra1.6.0/doc/vigra/functions_type_0x73.html
+vigra1.6.0/doc/vigra/functions_type_0x74.html
+vigra1.6.0/doc/vigra/functions_type_0x76.html
+vigra1.6.0/doc/vigra/functions_vars.html
+vigra1.6.0/doc/vigra/FunctorExpressions.html
+vigra1.6.0/doc/vigra/functorexpression_8hxx-source.html
+vigra1.6.0/doc/vigra/functortraits_8hxx-source.html
+vigra1.6.0/doc/vigra/gaborfilter_8hxx-source.html
+vigra1.6.0/doc/vigra/gaussians_8hxx-source.html
+vigra1.6.0/doc/vigra/gradient__energy__tensor_8hxx-source.html
+vigra1.6.0/doc/vigra/group__ColorConversions.html
+vigra1.6.0/doc/vigra/group__CombineAlgo.html
+vigra1.6.0/doc/vigra/group__CombineFunctor.html
+vigra1.6.0/doc/vigra/group__CommonConvolutionFilters.html
+vigra1.6.0/doc/vigra/group__CopyAlgo.html
+vigra1.6.0/doc/vigra/group__CornerDetection.html
+vigra1.6.0/doc/vigra/group__DataAccessors.html
+vigra1.6.0/doc/vigra/group__DistanceTransform.html
+vigra1.6.0/doc/vigra/group__EdgeDetection.html
+vigra1.6.0/doc/vigra/group__FFTWComplexAccessors.html
+vigra1.6.0/doc/vigra/group__FFTWComplexOperators.html
+vigra1.6.0/doc/vigra/group__FixedPointOperations.html
+vigra1.6.0/doc/vigra/group__FixedSizeInt.html
+vigra1.6.0/doc/vigra/group__FourierTransform.html
+vigra1.6.0/doc/vigra/group__Functors.html
+vigra1.6.0/doc/vigra/group__GaborFilter.html
+vigra1.6.0/doc/vigra/group__GeometricTransformations.html
+vigra1.6.0/doc/vigra/group__ImageContainers.html
+vigra1.6.0/doc/vigra/group__ImageIteratorAdapters.html
+vigra1.6.0/doc/vigra/group__ImageIterators.html
+vigra1.6.0/doc/vigra/group__InitAlgo.html
+vigra1.6.0/doc/vigra/group__InspectAlgo.html
+vigra1.6.0/doc/vigra/group__InspectFunctor.html
+vigra1.6.0/doc/vigra/group__Labeling.html
+vigra1.6.0/doc/vigra/group__LinearAlgebraFunctions.html
+vigra1.6.0/doc/vigra/group__LinearAlgebraModule.html
+vigra1.6.0/doc/vigra/group__LocalMinMax.html
+vigra1.6.0/doc/vigra/group__MathFunctions.html
+vigra1.6.0/doc/vigra/group__MatrixAlgebra.html
+vigra1.6.0/doc/vigra/group__Morphology.html
+vigra1.6.0/doc/vigra/group__MultiArrayConvolutionFilters.html
+vigra1.6.0/doc/vigra/group__MultiArrayDistanceTransform.html
+vigra1.6.0/doc/vigra/group__MultiArrayMorphology.html
+vigra1.6.0/doc/vigra/group__MultiArrayTags.html
+vigra1.6.0/doc/vigra/group__MultiArrayToImage.html
+vigra1.6.0/doc/vigra/group__MultiIteratorGroup.html
+vigra1.6.0/doc/vigra/group__MultiPointoperators.html
+vigra1.6.0/doc/vigra/group__NoiseNormalization.html
+vigra1.6.0/doc/vigra/group__NonLinearDiffusion.html
+vigra1.6.0/doc/vigra/group__PixelNeighborhood.html
+vigra1.6.0/doc/vigra/group__PolarColors.html
+vigra1.6.0/doc/vigra/group__Polynomials.html
+vigra1.6.0/doc/vigra/group__RandomNumberGeneration.html
+vigra1.6.0/doc/vigra/group__RangesAndPoints.html
+vigra1.6.0/doc/vigra/group__RationalOperations.html
+vigra1.6.0/doc/vigra/group__RecursiveConvolution.html
+vigra1.6.0/doc/vigra/group__Registration.html
+vigra1.6.0/doc/vigra/group__ResamplingConvolutionFilters.html
+vigra1.6.0/doc/vigra/group__RGBValueAccessors.html
+vigra1.6.0/doc/vigra/group__RGBValueOperators.html
+vigra1.6.0/doc/vigra/group__SeededRegionGrowing.html
+vigra1.6.0/doc/vigra/group__SeparableConvolution.html
+vigra1.6.0/doc/vigra/MathConstants.html
+vigra1.6.0/doc/vigra/group__SlantedEdgeMTF.html
+vigra1.6.0/doc/vigra/group__StandardConvolution.html
+vigra1.6.0/doc/vigra/group__StandardImageTypes.html
+vigra1.6.0/doc/vigra/group__SymmetryDetection.html
+vigra1.6.0/doc/vigra/group__TensorImaging.html
+vigra1.6.0/doc/vigra/group__TIFFImpex.html
+vigra1.6.0/doc/vigra/group__TinyVectorOperators.html
+vigra1.6.0/doc/vigra/group__TransformAlgo.html
+vigra1.6.0/doc/vigra/group__TransformFunctor.html
+vigra1.6.0/doc/vigra/group__VigraImpex.html
+vigra1.6.0/doc/vigra/group__VolumeImpex.html
+vigra1.6.0/doc/vigra/group__VoxelNeighborhood.html
+vigra1.6.0/doc/vigra/hierarchy.html
+vigra1.6.0/doc/vigra/ImageAnalysis.html
+vigra1.6.0/doc/vigra/imagecontainer_8hxx-source.html
+vigra1.6.0/doc/vigra/ImageDataStructures.html
+vigra1.6.0/doc/vigra/imageinfo_8hxx-source.html
+vigra1.6.0/doc/vigra/imageiteratoradapter_8hxx-source.html
+vigra1.6.0/doc/vigra/imageiterator_8hxx-source.html
+vigra1.6.0/doc/vigra/ImageProcessing.html
+vigra1.6.0/doc/vigra/impex_8hxx-source.html
+vigra1.6.0/doc/vigra/impex_8hxx.html
+vigra1.6.0/doc/vigra/ImportExport.html
+vigra1.6.0/doc/vigra/index.html
+vigra1.6.0/doc/vigra/index.html.in
+vigra1.6.0/doc/vigra/initimage_8hxx-source.html
+vigra1.6.0/doc/vigra/inspectimage_8hxx-source.html
+vigra1.6.0/doc/vigra/Installation.html
+vigra1.6.0/doc/vigra/localminmax_8hxx-source.html
+vigra1.6.0/doc/vigra/interpolating__accessor_8hxx-source.html
+vigra1.6.0/doc/vigra/invert_8cxx-example.html
+vigra1.6.0/doc/vigra/invert__explicitly_8cxx-example.html
+vigra1.6.0/doc/vigra/iteratoradapter_8hxx-source.html
+vigra1.6.0/doc/vigra/iteratortags_8hxx-source.html
+vigra1.6.0/doc/vigra/iteratortraits_8hxx-source.html
+vigra1.6.0/doc/vigra/KernelArgumentObjectFactories.html
+vigra1.6.0/doc/vigra/labelimage_8hxx-source.html
+vigra1.6.0/doc/vigra/labelvolume_8hxx-source.html
+vigra1.6.0/doc/vigra/lenna_color.gif
+vigra1.6.0/doc/vigra/lenna_gray.gif
+vigra1.6.0/doc/vigra/linear__algebra_8hxx-source.html
+vigra1.6.0/doc/vigra/linear__solve_8hxx-source.html
+vigra1.6.0/doc/vigra/MathFunctionality.html
+vigra1.6.0/doc/vigra/mathutil_8hxx-source.html
+vigra1.6.0/doc/vigra/matrix_8hxx-source.html
+vigra1.6.0/doc/vigra/memory_8hxx-source.html
+vigra1.6.0/doc/vigra/metaprogramming_8hxx-source.html
+vigra1.6.0/doc/vigra/modules.html
+vigra1.6.0/doc/vigra/MultiDimensionalArrays.html
+vigra1.6.0/doc/vigra/MultiIteratorPage.html
+vigra1.6.0/doc/vigra/multi__array_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__convolution_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__distance_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__impex_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__iterator_8hxx-source.html
+vigra1.6.0/doc/vigra/namespacevigra.html
+vigra1.6.0/doc/vigra/multi__morphology_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__pointoperators_8hxx-source.html
+vigra1.6.0/doc/vigra/multi__resize_8hxx-source.html
+vigra1.6.0/doc/vigra/namespacemembers.html
+vigra1.6.0/doc/vigra/namespacemembers_0x62.html
+vigra1.6.0/doc/vigra/namespacemembers_0x63.html
+vigra1.6.0/doc/vigra/namespacemembers_0x64.html
+vigra1.6.0/doc/vigra/namespacemembers_0x65.html
+vigra1.6.0/doc/vigra/namespacemembers_0x66.html
+vigra1.6.0/doc/vigra/namespacemembers_0x67.html
+vigra1.6.0/doc/vigra/namespacemembers_0x68.html
+vigra1.6.0/doc/vigra/namespacemembers_0x69.html
+vigra1.6.0/doc/vigra/namespacemembers_0x6a.html
+vigra1.6.0/doc/vigra/namespacemembers_0x6c.html
+vigra1.6.0/doc/vigra/namespacemembers_0x6d.html
+vigra1.6.0/doc/vigra/namespacemembers_0x6e.html
+vigra1.6.0/doc/vigra/namespacemembers_0x6f.html
+vigra1.6.0/doc/vigra/namespacemembers_0x70.html
+vigra1.6.0/doc/vigra/namespacemembers_0x71.html
+vigra1.6.0/doc/vigra/namespacemembers_0x72.html
+vigra1.6.0/doc/vigra/namespacemembers_0x73.html
+vigra1.6.0/doc/vigra/namespacemembers_0x74.html
+vigra1.6.0/doc/vigra/namespacemembers_0x75.html
+vigra1.6.0/doc/vigra/namespacemembers_0x76.html
+vigra1.6.0/doc/vigra/namespacemembers_0x77.html
+vigra1.6.0/doc/vigra/namespacemembers_0x79.html
+vigra1.6.0/doc/vigra/namespacemembers_enum.html
+vigra1.6.0/doc/vigra/namespacemembers_eval.html
+vigra1.6.0/doc/vigra/namespacemembers_func.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x62.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x63.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x64.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x65.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x66.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x67.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x68.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x69.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x6a.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x6c.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x6d.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x6e.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x6f.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x70.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x71.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x72.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x73.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x74.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x76.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x77.html
+vigra1.6.0/doc/vigra/namespacemembers_func_0x79.html
+vigra1.6.0/doc/vigra/namespacemembers_type.html
+vigra1.6.0/doc/vigra/namespacemembers_vars.html
+vigra1.6.0/doc/vigra/namespaces.html
+vigra1.6.0/doc/vigra/namespacevigra_1_1EightNeighborhood.html
+vigra1.6.0/doc/vigra/namespacevigra_1_1FourNeighborhood.html
+vigra1.6.0/doc/vigra/namespacevigra_1_1linalg.html
+vigra1.6.0/doc/vigra/namespacevigra_1_1Neighborhood3DSix.html
+vigra1.6.0/doc/vigra/namespacevigra_1_1Neighborhood3DTwentySix.html
+vigra1.6.0/doc/vigra/navigator_8hxx-source.html
+vigra1.6.0/doc/vigra/noise__normalization_8hxx-source.html
+vigra1.6.0/doc/vigra/nonlineardiffusion_8hxx-source.html
+vigra1.6.0/doc/vigra/NormTraits.html
+vigra1.6.0/doc/vigra/NumericPromotionTraits.html
+vigra1.6.0/doc/vigra/NumericTraits.html
+vigra1.6.0/doc/vigra/numerictraits_8hxx-source.html
+vigra1.6.0/doc/vigra/orientedtensorfilters_8hxx-source.html
+vigra1.6.0/doc/vigra/pages.html
+vigra1.6.0/doc/vigra/palette_8cxx-example.html
+vigra1.6.0/doc/vigra/pixelneighborhood_8hxx-source.html
+vigra1.6.0/doc/vigra/PixelTypes.html
+vigra1.6.0/doc/vigra/PointOperators.html
+vigra1.6.0/doc/vigra/polynomial_8hxx-source.html
+vigra1.6.0/doc/vigra/profile_8cxx-example.html
+vigra1.6.0/doc/vigra/PromoteTraits.html
+vigra1.6.0/doc/vigra/promote__traits_8hxx-source.html
+vigra1.6.0/doc/vigra/pyramid_8cxx-example.html
+vigra1.6.0/doc/vigra/random_8hxx-source.html
+vigra1.6.0/doc/vigra/RationalTraits.html
+vigra1.6.0/doc/vigra/rational_8hxx-source.html
+vigra1.6.0/doc/vigra/sized__int_8hxx-source.html
+vigra1.6.0/doc/vigra/recursiveconvolution_8hxx-source.html
+vigra1.6.0/doc/vigra/regression_8hxx-source.html
+vigra1.6.0/doc/vigra/resampling__convolution_8hxx-source.html
+vigra1.6.0/doc/vigra/resizeimage_8hxx-source.html
+vigra1.6.0/doc/vigra/resize_8cxx-example.html
+vigra1.6.0/doc/vigra/rfftw_8hxx-source.html
+vigra1.6.0/doc/vigra/RGBValueTraits.html
+vigra1.6.0/doc/vigra/rgbvalue_8hxx-source.html
+vigra1.6.0/doc/vigra/seededregiongrowing3d_8hxx-source.html
+vigra1.6.0/doc/vigra/seededregiongrowing_8hxx-source.html
+vigra1.6.0/doc/vigra/separableconvolution_8hxx-source.html
+vigra1.6.0/doc/vigra/singular__value__decomposition_8hxx-source.html
+vigra1.6.0/doc/vigra/slanted__edge__mtf_8hxx-source.html
+vigra1.6.0/doc/vigra/smooth_8cxx-example.html
+vigra1.6.0/doc/vigra/splineimageview_8hxx-source.html
+vigra1.6.0/doc/vigra/splines_8hxx-source.html
+vigra1.6.0/doc/vigra/SquareRootTraits.html
+vigra1.6.0/doc/vigra/static__assert_8hxx-source.html
+vigra1.6.0/doc/vigra/stdconvolution_8hxx-source.html
+vigra1.6.0/doc/vigra/stdimagefunctions_8hxx-source.html
+vigra1.6.0/doc/vigra/stdimage_8hxx-source.html
+vigra1.6.0/doc/vigra/structvigra_1_1IteratorTraits-members.html
+vigra1.6.0/doc/vigra/structvigra_1_1IteratorTraits.html
+vigra1.6.0/doc/vigra/structvigra_1_1NormalRandomFunctor-members.html
+vigra1.6.0/doc/vigra/structvigra_1_1NormalRandomFunctor.html
+vigra1.6.0/doc/vigra/structvigra_1_1StridedArrayTag.html
+vigra1.6.0/doc/vigra/structvigra_1_1UnstridedArrayTag.html
+vigra1.6.0/doc/vigra/subimage_8cxx-example.html
+vigra1.6.0/doc/vigra/symmetry_8hxx-source.html
+vigra1.6.0/doc/vigra/tabs.css
+vigra1.6.0/doc/vigra/tab_b.gif
+vigra1.6.0/doc/vigra/tab_l.gif
+vigra1.6.0/doc/vigra/tab_r.gif
+vigra1.6.0/doc/vigra/tensorutilities_8hxx-source.html
+vigra1.6.0/doc/vigra/tiff_8hxx-source.html
+vigra1.6.0/doc/vigra/TinyVectorTraits.html
+vigra1.6.0/doc/vigra/tinyvector_8hxx-source.html
+vigra1.6.0/doc/vigra/transformimage_8hxx-source.html
+vigra1.6.0/doc/vigra/TupleTypes.html
+vigra1.6.0/doc/vigra/tuple_8hxx-source.html
+vigra1.6.0/doc/vigra/Utilities.html
+vigra1.6.0/doc/vigra/utilities_8hxx-source.html
+vigra1.6.0/doc/vigra/vigra.css
+vigra1.6.0/doc/vigra/voronoi_8cxx-example.html
+vigra1.6.0/doc/vigra/voxelneighborhood_8hxx-source.html
+vigra1.6.0/doc/vigra/watersheds3d_8hxx-source.html
+vigra1.6.0/doc/vigra/watersheds_8hxx-source.html
+vigra1.6.0/doc/vigra/watershed_8cxx-example.html
+vigra1.6.0/doc/vigra/_form0.eps
+vigra1.6.0/doc/vigra/_form0.ps
+vigra1.6.0/doc/vigra/_formulas.aux
+vigra1.6.0/doc/vigra/_formulas.dvi
+vigra1.6.0/doc/vigra/_formulas.log
+vigra1.6.0/doc/vigra/_formulas.tex
+vigra1.6.0/include/
+vigra1.6.0/include/IRIX/
+vigra1.6.0/include/IRIX/algorithm
+vigra1.6.0/include/IRIX/deque
+vigra1.6.0/include/IRIX/functional
+vigra1.6.0/include/IRIX/hash_map
+vigra1.6.0/include/IRIX/hash_set
+vigra1.6.0/include/IRIX/iostream
+vigra1.6.0/include/IRIX/iterator
+vigra1.6.0/include/IRIX/list
+vigra1.6.0/include/IRIX/Makefile
+vigra1.6.0/include/IRIX/map
+vigra1.6.0/include/IRIX/memory
+vigra1.6.0/include/IRIX/new
+vigra1.6.0/include/IRIX/numeric
+vigra1.6.0/include/IRIX/queue
+vigra1.6.0/include/IRIX/set
+vigra1.6.0/include/IRIX/stack
+vigra1.6.0/include/IRIX/stdexcept
+vigra1.6.0/include/IRIX/string
+vigra1.6.0/include/IRIX/strstream
+vigra1.6.0/include/IRIX/typeinfo
+vigra1.6.0/include/IRIX/utility
+vigra1.6.0/include/IRIX/vector
+vigra1.6.0/include/vigra/
+vigra1.6.0/include/vigra/accessor.hxx
+vigra1.6.0/include/vigra/affinegeometry.hxx
+vigra1.6.0/include/vigra/affine_registration.hxx
+vigra1.6.0/include/vigra/array_vector.hxx
+vigra1.6.0/include/vigra/basicgeometry.hxx
+vigra1.6.0/include/vigra/basicimage.hxx
+vigra1.6.0/include/vigra/basicimageview.hxx
+vigra1.6.0/include/vigra/bordertreatment.hxx
+vigra1.6.0/include/vigra/boundarytensor.hxx
+vigra1.6.0/include/vigra/codec.hxx
+vigra1.6.0/include/vigra/colorconversions.hxx
+vigra1.6.0/include/vigra/combineimages.hxx
+vigra1.6.0/include/vigra/config.hxx
+vigra1.6.0/include/vigra/contourcirculator.hxx
+vigra1.6.0/include/vigra/convolution.hxx
+vigra1.6.0/include/vigra/copyimage.hxx
+vigra1.6.0/include/vigra/cornerdetection.hxx
+vigra1.6.0/include/vigra/diff2d.hxx
+vigra1.6.0/include/vigra/distancetransform.hxx
+vigra1.6.0/include/vigra/edgedetection.hxx
+vigra1.6.0/include/vigra/eigensystem.hxx
+vigra1.6.0/include/vigra/error.hxx
+vigra1.6.0/include/vigra/fftw.hxx
+vigra1.6.0/include/vigra/fftw3.hxx
+vigra1.6.0/include/vigra/fixedpoint.hxx
+vigra1.6.0/include/vigra/flatmorphology.hxx
+vigra1.6.0/include/vigra/functorexpression.hxx
+vigra1.6.0/include/vigra/functortraits.hxx
+vigra1.6.0/include/vigra/gaborfilter.hxx
+vigra1.6.0/include/vigra/gaussians.hxx
+vigra1.6.0/include/vigra/gradient_energy_tensor.hxx
+vigra1.6.0/include/vigra/imagecontainer.hxx
+vigra1.6.0/include/vigra/imageinfo.hxx
+vigra1.6.0/include/vigra/imageiterator.hxx
+vigra1.6.0/include/vigra/imageiteratoradapter.hxx
+vigra1.6.0/include/vigra/impex.hxx
+vigra1.6.0/include/vigra/initimage.hxx
+vigra1.6.0/include/vigra/inspectimage.hxx
+vigra1.6.0/include/vigra/interpolating_accessor.hxx
+vigra1.6.0/include/vigra/iteratoradapter.hxx
+vigra1.6.0/include/vigra/iteratortags.hxx
+vigra1.6.0/include/vigra/iteratortraits.hxx
+vigra1.6.0/include/vigra/labelimage.hxx
+vigra1.6.0/include/vigra/labelvolume.hxx
+vigra1.6.0/include/vigra/linear_algebra.hxx
+vigra1.6.0/include/vigra/linear_solve.hxx
+vigra1.6.0/include/vigra/localminmax.hxx
+vigra1.6.0/include/vigra/mathutil.hxx
+vigra1.6.0/include/vigra/matrix.hxx
+vigra1.6.0/include/vigra/memory.hxx
+vigra1.6.0/include/vigra/metaprogramming.hxx
+vigra1.6.0/include/vigra/multi_array.hxx
+vigra1.6.0/include/vigra/multi_convolution.hxx
+vigra1.6.0/include/vigra/multi_distance.hxx
+vigra1.6.0/include/vigra/multi_impex.hxx
+vigra1.6.0/include/vigra/multi_iterator.hxx
+vigra1.6.0/include/vigra/multi_morphology.hxx
+vigra1.6.0/include/vigra/multi_pointoperators.hxx
+vigra1.6.0/include/vigra/multi_resize.hxx
+vigra1.6.0/include/vigra/navigator.hxx
+vigra1.6.0/include/vigra/noise_normalization.hxx
+vigra1.6.0/include/vigra/nonlineardiffusion.hxx
+vigra1.6.0/include/vigra/numerictraits.hxx
+vigra1.6.0/include/vigra/orientedtensorfilters.hxx
+vigra1.6.0/include/vigra/pixelneighborhood.hxx
+vigra1.6.0/include/vigra/polynomial.hxx
+vigra1.6.0/include/vigra/promote_traits.hxx
+vigra1.6.0/include/vigra/promote_traits.hxx.py
+vigra1.6.0/include/vigra/random.hxx
+vigra1.6.0/include/vigra/rational.hxx
+vigra1.6.0/include/vigra/recursiveconvolution.hxx
+vigra1.6.0/include/vigra/regression.hxx
+vigra1.6.0/include/vigra/resampling_convolution.hxx
+vigra1.6.0/include/vigra/resizeimage.hxx
+vigra1.6.0/include/vigra/rfftw.hxx
+vigra1.6.0/include/vigra/rgbvalue.hxx
+vigra1.6.0/include/vigra/seededregiongrowing.hxx
+vigra1.6.0/include/vigra/seededregiongrowing3d.hxx
+vigra1.6.0/include/vigra/separableconvolution.hxx
+vigra1.6.0/include/vigra/singular_value_decomposition.hxx
+vigra1.6.0/include/vigra/sized_int.hxx
+vigra1.6.0/include/vigra/slanted_edge_mtf.hxx
+vigra1.6.0/include/vigra/splineimageview.hxx
+vigra1.6.0/include/vigra/splines.hxx
+vigra1.6.0/include/vigra/static_assert.hxx
+vigra1.6.0/include/vigra/stdconvolution.hxx
+vigra1.6.0/include/vigra/stdimage.hxx
+vigra1.6.0/include/vigra/stdimagefunctions.hxx
+vigra1.6.0/include/vigra/symmetry.hxx
+vigra1.6.0/include/vigra/tensorutilities.hxx
+vigra1.6.0/include/vigra/tiff.hxx
+vigra1.6.0/include/vigra/tinyvector.hxx
+vigra1.6.0/include/vigra/transformimage.hxx
+vigra1.6.0/include/vigra/tuple.hxx
+vigra1.6.0/include/vigra/utilities.hxx
+vigra1.6.0/include/vigra/voxelneighborhood.hxx
+vigra1.6.0/include/vigra/watersheds.hxx
+vigra1.6.0/include/vigra/watersheds3d.hxx
+vigra1.6.0/include/vigra/windows.h
+vigra1.6.0/LICENSE.txt
+vigra1.6.0/Makefile.in
+vigra1.6.0/README.txt
+vigra1.6.0/src/
+vigra1.6.0/src/examples/
+vigra1.6.0/src/examples/block.tif
+vigra1.6.0/src/examples/boundarytensor-vc71.vcproj
+vigra1.6.0/src/examples/boundarytensor.cxx
+vigra1.6.0/src/examples/boundarytensor.vcproj
+vigra1.6.0/src/examples/convert-vc71.vcproj
+vigra1.6.0/src/examples/convert.cxx
+vigra1.6.0/src/examples/convert.dsp
+vigra1.6.0/src/examples/convert.vcproj
+vigra1.6.0/src/examples/distance.cxx
+vigra1.6.0/src/examples/edge-vc71.vcproj
+vigra1.6.0/src/examples/edge.cxx
+vigra1.6.0/src/examples/edge.dsp
+vigra1.6.0/src/examples/edge.vcproj
+vigra1.6.0/src/examples/house.tif
+vigra1.6.0/src/examples/invert-vc71.vcproj
+vigra1.6.0/src/examples/invert.cxx
+vigra1.6.0/src/examples/invert.dsp
+vigra1.6.0/src/examples/invert.vcproj
+vigra1.6.0/src/examples/invert_explicit.dsp
+vigra1.6.0/src/examples/invert_explicitly-vc71.vcproj
+vigra1.6.0/src/examples/invert_explicitly.cxx
+vigra1.6.0/src/examples/invert_explicitly.dsp
+vigra1.6.0/src/examples/invert_explicitly.vcproj
+vigra1.6.0/src/examples/lenna_color.gif
+vigra1.6.0/src/examples/lenna_gray.gif
+vigra1.6.0/src/examples/Makefile.in
+vigra1.6.0/src/examples/palette.cxx
+vigra1.6.0/src/examples/profile-vc71.vcproj
+vigra1.6.0/src/examples/profile.cxx
+vigra1.6.0/src/examples/profile.dsp
+vigra1.6.0/src/examples/profile.vcproj
+vigra1.6.0/src/examples/pyramid-vc71.vcproj
+vigra1.6.0/src/examples/pyramid.cxx
+vigra1.6.0/src/examples/pyramid.dsp
+vigra1.6.0/src/examples/pyramid.vcproj
+vigra1.6.0/src/examples/resize-vc71.vcproj
+vigra1.6.0/src/examples/resize.cxx
+vigra1.6.0/src/examples/resize.dsp
+vigra1.6.0/src/examples/resize.vcproj
+vigra1.6.0/src/examples/smooth-vc71.vcproj
+vigra1.6.0/src/examples/smooth.cxx
+vigra1.6.0/src/examples/smooth.dsp
+vigra1.6.0/src/examples/smooth.vcproj
+vigra1.6.0/src/examples/subimage-vc71.vcproj
+vigra1.6.0/src/examples/subimage.cxx
+vigra1.6.0/src/examples/subimage.dsp
+vigra1.6.0/src/examples/subimage.vcproj
+vigra1.6.0/src/examples/voronoi-vc71.vcproj
+vigra1.6.0/src/examples/voronoi.cxx
+vigra1.6.0/src/examples/voronoi.dsp
+vigra1.6.0/src/examples/voronoi.vcproj
+vigra1.6.0/src/examples/watershed-vc71.vcproj
+vigra1.6.0/src/examples/watershed.cxx
+vigra1.6.0/src/examples/watershed.dsp
+vigra1.6.0/src/examples/watershed.vcproj
+vigra1.6.0/src/examples/weightedWatersheds.cxx
+vigra1.6.0/src/impex/
+vigra1.6.0/src/impex/auto_file.hxx
+vigra1.6.0/src/impex/bmp.cxx
+vigra1.6.0/src/impex/bmp.hxx
+vigra1.6.0/src/impex/byteorder.cxx
+vigra1.6.0/src/impex/byteorder.hxx
+vigra1.6.0/src/impex/codecmanager.cxx
+vigra1.6.0/src/impex/codecmanager.hxx
+vigra1.6.0/src/impex/error.hxx
+vigra1.6.0/src/impex/gif.cxx
+vigra1.6.0/src/impex/gif.hxx
+vigra1.6.0/src/impex/hdr.cxx
+vigra1.6.0/src/impex/hdr.hxx
+vigra1.6.0/src/impex/iccjpeg.c
+vigra1.6.0/src/impex/iccjpeg.h
+vigra1.6.0/src/impex/imageinfo.cxx
+vigra1.6.0/src/impex/impex-vc71.vcproj
+vigra1.6.0/src/impex/impex.dev
+vigra1.6.0/src/impex/impex.dsp
+vigra1.6.0/src/impex/impex.vcproj
+vigra1.6.0/src/impex/jpeg.cxx
+vigra1.6.0/src/impex/jpeg.hxx
+vigra1.6.0/src/impex/Makefile.in
+vigra1.6.0/src/impex/png.cxx
+vigra1.6.0/src/impex/png.hxx
+vigra1.6.0/src/impex/pnm.cxx
+vigra1.6.0/src/impex/pnm.hxx
+vigra1.6.0/src/impex/rgbe.c
+vigra1.6.0/src/impex/rgbe.h
+vigra1.6.0/src/impex/sun.cxx
+vigra1.6.0/src/impex/sun.hxx
+vigra1.6.0/src/impex/tiff.cxx
+vigra1.6.0/src/impex/tiff.hxx
+vigra1.6.0/src/impex/viff.cxx
+vigra1.6.0/src/impex/viff.hxx
+vigra1.6.0/src/impex/vigraimpex_dll-vc71.vcproj
+vigra1.6.0/src/impex/vigraimpex_dll.vcproj
+vigra1.6.0/src/impex/void_vector.cxx
+vigra1.6.0/src/impex/void_vector.hxx
+vigra1.6.0/src/Makefile.in
+vigra1.6.0/src/vigra-vc71.sln
+vigra1.6.0/src/vigra.dsw
+vigra1.6.0/src/vigra.sln
+vigra1.6.0/test/
+vigra1.6.0/test/colorspaces/
+vigra1.6.0/test/colorspaces/colorspaces-vc71.vcproj
+vigra1.6.0/test/colorspaces/colorspaces.vcproj
+vigra1.6.0/test/colorspaces/Makefile.in
+vigra1.6.0/test/colorspaces/test.cxx
+vigra1.6.0/test/convolution/
+vigra1.6.0/test/convolution/convolution-vc71.vcproj
+vigra1.6.0/test/convolution/convolution.vcproj
+vigra1.6.0/test/convolution/coscot.xv
+vigra1.6.0/test/convolution/lenna128.xv
+vigra1.6.0/test/convolution/lenna128nonlinear.xv
+vigra1.6.0/test/convolution/lenna128recgrad.xv
+vigra1.6.0/test/convolution/lenna128rgb.xv
+vigra1.6.0/test/convolution/lenna128rgbsepgrad.xv
+vigra1.6.0/test/convolution/lenna128sepgrad.xv
+vigra1.6.0/test/convolution/lennahessxx.xv
+vigra1.6.0/test/convolution/lennahessxy.xv
+vigra1.6.0/test/convolution/lennahessyy.xv
+vigra1.6.0/test/convolution/lennargbst.xv
+vigra1.6.0/test/convolution/lennastxx.xv
+vigra1.6.0/test/convolution/lennastxy.xv
+vigra1.6.0/test/convolution/lennastyy.xv
+vigra1.6.0/test/convolution/lenna_gaussian_sharpening_orig.xv
+vigra1.6.0/test/convolution/lenna_level-1.xv
+vigra1.6.0/test/convolution/lenna_level-2.xv
+vigra1.6.0/test/convolution/lenna_level1.xv
+vigra1.6.0/test/convolution/lenna_level2.xv
+vigra1.6.0/test/convolution/lenna_levellap0.xv
+vigra1.6.0/test/convolution/lenna_levellap1.xv
+vigra1.6.0/test/convolution/lenna_levellap2.xv
+vigra1.6.0/test/convolution/lenna_simple_sharpening_orig.xv
+vigra1.6.0/test/convolution/Makefile.in
+vigra1.6.0/test/convolution/resampling.xv
+vigra1.6.0/test/convolution/test.cxx
+vigra1.6.0/test/error/
+vigra1.6.0/test/error/error-vc71.vcproj
+vigra1.6.0/test/error/error.vcproj
+vigra1.6.0/test/error/Makefile.in
+vigra1.6.0/test/error/test.cxx
+vigra1.6.0/test/fourier/
+vigra1.6.0/test/fourier/filter.xv
+vigra1.6.0/test/fourier/fourier-vc71.vcproj
+vigra1.6.0/test/fourier/fourier.vcproj
+vigra1.6.0/test/fourier/gaborresult.xv
+vigra1.6.0/test/fourier/ghouse.gif
+vigra1.6.0/test/fourier/Makefile.in
+vigra1.6.0/test/fourier/test.cxx
+vigra1.6.0/test/functorexpression/
+vigra1.6.0/test/functorexpression/functorexpression-vc71.vcproj
+vigra1.6.0/test/functorexpression/functorexpression.vcproj
+vigra1.6.0/test/functorexpression/Makefile.in
+vigra1.6.0/test/functorexpression/test.cxx
+vigra1.6.0/test/image/
+vigra1.6.0/test/image/image-vc71.vcproj
+vigra1.6.0/test/image/image.vcproj
+vigra1.6.0/test/image/lenna.gif
+vigra1.6.0/test/image/lenna.xv
+vigra1.6.0/test/image/Makefile.in
+vigra1.6.0/test/image/test.cxx
+vigra1.6.0/test/imagehierarchy/
+vigra1.6.0/test/imagehierarchy/basic_image_test.hxx
+vigra1.6.0/test/imagehierarchy/g++_relops_workaround.hxx
+vigra1.6.0/test/imagehierarchy/gray_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/imagehierarchy-vc71.vcproj
+vigra1.6.0/test/imagehierarchy/imagehierarchy.vcproj
+vigra1.6.0/test/imagehierarchy/imagehierarchy_test.hxx
+vigra1.6.0/test/imagehierarchy/NewImHier.hxx
+vigra1.6.0/test/imagehierarchy/one_band_basic_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/one_band_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/parent_test_class.hxx
+vigra1.6.0/test/imagehierarchy/rgb_basic_image_test.hxx
+vigra1.6.0/test/imagehierarchy/rgb_basic_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/rgb_imagehierarchy_test.hxx
+vigra1.6.0/test/imagehierarchy/rgb_imagehierarchy_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/rgb_images_policy.hxx
+vigra1.6.0/test/imagehierarchy/select_band_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/select_band_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/select_image_test.hxx
+vigra1.6.0/test/imagehierarchy/single_band_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/single_band_image_test.hxx
+vigra1.6.0/test/imagehierarchy/single_band_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/tests_start_suite.cxx
+vigra1.6.0/test/imagehierarchy/test_policy_parent.hxx
+vigra1.6.0/test/imagehierarchy/variable_bands_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/variable_bands_image_test.hxx
+vigra1.6.0/test/imagehierarchy/variable_bands_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_2_basic_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_2_imagehierarchy_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_2_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/vector_3_basic_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_3_imagehierarchy_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_3_image_policy.hxx
+vigra1.6.0/test/imagehierarchy/vector_4_basic_image_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_4_imagehierarchy_test_suite.cxx
+vigra1.6.0/test/imagehierarchy/vector_4_image_policy.hxx
+vigra1.6.0/test/imgproc/
+vigra1.6.0/test/imgproc/imgproc-vc71.vcproj
+vigra1.6.0/test/imgproc/imgproc.vcproj
+vigra1.6.0/test/imgproc/lenna128.xv
+vigra1.6.0/test/imgproc/lenna128rgb.xv
+vigra1.6.0/test/imgproc/lenna288.xv
+vigra1.6.0/test/imgproc/lenna288neu.xv
+vigra1.6.0/test/imgproc/lenna288rgb.xv
+vigra1.6.0/test/imgproc/lenna288rgbneu.xv
+vigra1.6.0/test/imgproc/lenna367FIR.xv
+vigra1.6.0/test/imgproc/lenna367IIR.xv
+vigra1.6.0/test/imgproc/lenna42.xv
+vigra1.6.0/test/imgproc/lenna42FIR.xv
+vigra1.6.0/test/imgproc/lenna42IIR.xv
+vigra1.6.0/test/imgproc/lenna42lin.xv
+vigra1.6.0/test/imgproc/lenna42linrgb.xv
+vigra1.6.0/test/imgproc/lenna42neu.xv
+vigra1.6.0/test/imgproc/lenna42rgb.xv
+vigra1.6.0/test/imgproc/lenna42rgbneu.xv
+vigra1.6.0/test/imgproc/lennargb42FIR.xv
+vigra1.6.0/test/imgproc/lennargb42IIR.xv
+vigra1.6.0/test/imgproc/lenna_rotate.xv
+vigra1.6.0/test/imgproc/Makefile.in
+vigra1.6.0/test/imgproc/splineimageview2.xv
+vigra1.6.0/test/imgproc/splineimageview3.xv
+vigra1.6.0/test/imgproc/splineimageview5.xv
+vigra1.6.0/test/imgproc/test.cxx
+vigra1.6.0/test/impex/
+vigra1.6.0/test/impex/impex.vcproj
+vigra1.6.0/test/impex/impextest-vc71.vcproj
+vigra1.6.0/test/impex/impextest.vcproj
+vigra1.6.0/test/impex/lenna.xv
+vigra1.6.0/test/impex/lennafloat.xv
+vigra1.6.0/test/impex/lennafloatrgb.xv
+vigra1.6.0/test/impex/lennargb.xv
+vigra1.6.0/test/impex/lenna_gifref.xv
+vigra1.6.0/test/impex/Makefile.in
+vigra1.6.0/test/impex/test.cxx
+vigra1.6.0/test/include/
+vigra1.6.0/test/include/unittest.hxx
+vigra1.6.0/test/Makefile.in
+vigra1.6.0/test/Makefile.include
+vigra1.6.0/test/Makefile.include.in
+vigra1.6.0/test/math/
+vigra1.6.0/test/math/Makefile.in
+vigra1.6.0/test/math/math-vc71.vcproj
+vigra1.6.0/test/math/math.vcproj
+vigra1.6.0/test/math/test.cxx
+vigra1.6.0/test/morphology/
+vigra1.6.0/test/morphology/Makefile.in
+vigra1.6.0/test/morphology/morphology-vc71.vcproj
+vigra1.6.0/test/morphology/morphology.vcproj
+vigra1.6.0/test/morphology/test.cxx
+vigra1.6.0/test/multiarray/
+vigra1.6.0/test/multiarray/Makefile.in
+vigra1.6.0/test/multiarray/multiarray-vc71.vcproj
+vigra1.6.0/test/multiarray/multiarray.vcproj
+vigra1.6.0/test/multiarray/test.cxx
+vigra1.6.0/test/multiconvolution/
+vigra1.6.0/test/multiconvolution/Makefile.in
+vigra1.6.0/test/multiconvolution/multiconvolution-vc71.vcproj
+vigra1.6.0/test/multiconvolution/multiconvolution.vcproj
+vigra1.6.0/test/multiconvolution/speedtest.cxx
+vigra1.6.0/test/multiconvolution/test.cxx
+vigra1.6.0/test/multidistance/
+vigra1.6.0/test/multidistance/Makefile.in
+vigra1.6.0/test/multidistance/multidistance-vc71.vcproj
+vigra1.6.0/test/multidistance/multidistance.vcproj
+vigra1.6.0/test/multidistance/test.cxx
+vigra1.6.0/test/multimorphology/
+vigra1.6.0/test/multimorphology/Makefile.in
+vigra1.6.0/test/multimorphology/multimorphology-vc71.vcproj
+vigra1.6.0/test/multimorphology/multimorphology.vcproj
+vigra1.6.0/test/multimorphology/test.cxx
+vigra1.6.0/test/pixeltypes/
+vigra1.6.0/test/pixeltypes/Makefile.in
+vigra1.6.0/test/pixeltypes/pixeltypes-vc71.vcproj
+vigra1.6.0/test/pixeltypes/pixeltypes.vcproj
+vigra1.6.0/test/pixeltypes/test.cxx
+vigra1.6.0/test/seededRegionGrowing3d/
+vigra1.6.0/test/seededRegionGrowing3d/Makefile.in
+vigra1.6.0/test/seededRegionGrowing3d/seededregiongrowing3d-vc71.vcproj
+vigra1.6.0/test/seededRegionGrowing3d/seededregiongrowing3d.vcproj
+vigra1.6.0/test/seededRegionGrowing3d/test.cxx
+vigra1.6.0/test/syntax/
+vigra1.6.0/test/syntax/Makefile.in
+vigra1.6.0/test/syntax/syntax-vc71.vcproj
+vigra1.6.0/test/syntax/syntax.vcproj
+vigra1.6.0/test/simpleanalysis/
+vigra1.6.0/test/simpleanalysis/lenna128.xv
+vigra1.6.0/test/simpleanalysis/Makefile.in
+vigra1.6.0/test/simpleanalysis/noiseNormalizationTest.xv
+vigra1.6.0/test/simpleanalysis/simpleanalysis-vc71.vcproj
+vigra1.6.0/test/simpleanalysis/simpleanalysis.vcproj
+vigra1.6.0/test/simpleanalysis/slantedEdgeMTF.xv
+vigra1.6.0/test/simpleanalysis/test.cxx
+vigra1.6.0/test/simpleanalysis/test_freaky.cxx
+vigra1.6.0/test/tensorimaging/
+vigra1.6.0/test/tensorimaging/boundaryTensor.xv
+vigra1.6.0/test/tensorimaging/l2.xv
+vigra1.6.0/test/tensorimaging/l2_boundary.xv
+vigra1.6.0/test/tensorimaging/l2_boundary1.xv
+vigra1.6.0/test/tensorimaging/l2_get.xv
+vigra1.6.0/test/tensorimaging/l2_hourglass.xv
+vigra1.6.0/test/tensorimaging/Makefile.in
+vigra1.6.0/test/tensorimaging/riesz00.xv
+vigra1.6.0/test/tensorimaging/riesz01.xv
+vigra1.6.0/test/tensorimaging/riesz02.xv
+vigra1.6.0/test/tensorimaging/riesz10.xv
+vigra1.6.0/test/tensorimaging/riesz11.xv
+vigra1.6.0/test/tensorimaging/riesz20.xv
+vigra1.6.0/test/tensorimaging/tensorimaging-vc71.vcproj
+vigra1.6.0/test/tensorimaging/tensorimaging.vcproj
+vigra1.6.0/test/tensorimaging/test.cxx
+vigra1.6.0/test/test-vc71.sln
+vigra1.6.0/test/test.sln
+vigra1.6.0/test/testOrDelete.bat
+vigra1.6.0/test/utilities/
+vigra1.6.0/test/utilities/Makefile.in
+vigra1.6.0/test/utilities/test.cxx
+vigra1.6.0/test/utilities/utilities-vc71.vcproj
+vigra1.6.0/test/utilities/utilities.vcproj
+vigra1.6.0/test/volumelabeling/
+vigra1.6.0/test/volumelabeling/Makefile.in
+vigra1.6.0/test/volumelabeling/test.cxx
+vigra1.6.0/test/volumelabeling/volumelabeling-vc71.vcproj
+vigra1.6.0/test/volumelabeling/volumelabeling.vcproj
+vigra1.6.0/test/voxelneighborhood/
+vigra1.6.0/test/voxelneighborhood/Makefile.in
+vigra1.6.0/test/voxelneighborhood/test.cxx
+vigra1.6.0/test/voxelneighborhood/voxelneighborhood-vc71.vcproj
+vigra1.6.0/test/voxelneighborhood/voxelneighborhood.vcproj
+vigra1.6.0/test/watersheds3d/
+vigra1.6.0/test/watersheds3d/Makefile.in
+vigra1.6.0/test/watersheds3d/test.cxx
+vigra1.6.0/test/watersheds3d/watersheds3d-vc71.vcproj
+vigra1.6.0/test/watersheds3d/watersheds3d.vcproj
+make writeable...
+cd ./wntmsci12.pro/misc/build && cat ../../..//vigra1.6.0.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_vigra
+patching file vigra1.6.0/configure
+patching file vigra1.6.0/include/vigra/array_vector.hxx
+patching file vigra1.6.0/include/vigra/basicimage.hxx
+patching file vigra1.6.0/include/vigra/basicimageview.hxx
+patching file vigra1.6.0/include/vigra/boundarytensor.hxx
+patching file vigra1.6.0/include/vigra/config.hxx
+patching file vigra1.6.0/include/vigra/diff2d.hxx
+patching file vigra1.6.0/include/vigra/fftw.hxx
+patching file vigra1.6.0/include/vigra/fftw3.hxx
+patching file vigra1.6.0/include/vigra/fixedpoint.hxx
+patching file vigra1.6.0/include/vigra/gaborfilter.hxx
+patching file vigra1.6.0/include/vigra/gaussians.hxx
+patching file vigra1.6.0/include/vigra/mathutil.hxx
+patching file vigra1.6.0/include/vigra/numerictraits.hxx
+patching file vigra1.6.0/include/vigra/orientedtensorfilters.hxx
+patching file vigra1.6.0/include/vigra/polynomial.hxx
+patching file vigra1.6.0/include/vigra/recursiveconvolution.hxx
+patching file vigra1.6.0/include/vigra/rgbvalue.hxx
+patching file vigra1.6.0/include/vigra/separableconvolution.hxx
+patching file vigra1.6.0/include/vigra/sized_int.hxx
+patching file vigra1.6.0/include/vigra/splines.hxx
+patching file vigra1.6.0/include/vigra/static_assert.hxx
+patching file vigra1.6.0/include/vigra/tinyvector.hxx
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_vigra
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_built_vigra
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_vigra
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_vigra
+vigra deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/build.lst
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/accessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/accessor.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/affinegeometry.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/affinegeometry.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/affine_registration.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/affine_registration.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/array_vector.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/array_vector.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/basicgeometry.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/basicgeometry.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/basicimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/basicimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/basicimageview.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/basicimageview.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/bordertreatment.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/bordertreatment.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/boundarytensor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/boundarytensor.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/codec.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/codec.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/colorconversions.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/colorconversions.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/combineimages.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/combineimages.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/config.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/config.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/contourcirculator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/contourcirculator.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/convolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/convolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/copyimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/copyimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/cornerdetection.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/cornerdetection.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/diff2d.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/diff2d.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/distancetransform.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/distancetransform.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/edgedetection.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/edgedetection.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/eigensystem.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/eigensystem.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/error.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/error.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/fftw.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/fftw.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/fftw3.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/fftw3.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/fixedpoint.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/fixedpoint.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/flatmorphology.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/flatmorphology.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/functorexpression.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/functorexpression.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/functortraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/functortraits.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/gaborfilter.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/gaborfilter.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/gaussians.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/gaussians.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/gradient_energy_tensor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/gradient_energy_tensor.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/imagecontainer.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/imagecontainer.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/imageinfo.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/imageinfo.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/imageiterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/imageiterator.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/imageiteratoradapter.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/imageiteratoradapter.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/impex.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/impex.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/initimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/initimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/inspectimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/inspectimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/interpolating_accessor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/interpolating_accessor.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/iteratoradapter.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/iteratoradapter.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/iteratortags.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/iteratortags.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/iteratortraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/iteratortraits.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/labelimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/labelimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/labelvolume.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/labelvolume.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/linear_algebra.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/linear_algebra.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/linear_solve.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/linear_solve.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/localminmax.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/localminmax.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/mathutil.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/mathutil.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/matrix.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/matrix.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/memory.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/memory.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/metaprogramming.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/metaprogramming.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_array.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_array.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_convolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_convolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_distance.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_distance.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_impex.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_impex.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_iterator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_iterator.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_morphology.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_morphology.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_pointoperators.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_pointoperators.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/multi_resize.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/multi_resize.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/navigator.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/navigator.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/noise_normalization.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/noise_normalization.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/nonlineardiffusion.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/nonlineardiffusion.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/numerictraits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/numerictraits.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/orientedtensorfilters.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/orientedtensorfilters.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/pixelneighborhood.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/pixelneighborhood.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/polynomial.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/polynomial.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/promote_traits.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/promote_traits.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/random.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/random.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/rational.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/rational.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/recursiveconvolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/recursiveconvolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/regression.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/regression.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/resampling_convolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/resampling_convolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/resizeimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/resizeimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/rfftw.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/rfftw.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/rgbvalue.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/rgbvalue.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/seededregiongrowing.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/seededregiongrowing.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/seededregiongrowing3d.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/seededregiongrowing3d.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/separableconvolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/separableconvolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/singular_value_decomposition.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/singular_value_decomposition.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/sized_int.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/sized_int.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/slanted_edge_mtf.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/slanted_edge_mtf.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/splineimageview.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/splineimageview.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/splines.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/splines.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/static_assert.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/static_assert.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/stdconvolution.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/stdconvolution.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/stdimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/stdimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/stdimagefunctions.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/stdimagefunctions.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/symmetry.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/symmetry.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/tensorutilities.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/tensorutilities.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/tiff.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/tiff.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/tinyvector.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/tinyvector.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/transformimage.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/transformimage.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/tuple.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/tuple.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/utilities.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/utilities.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/voxelneighborhood.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/voxelneighborhood.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/watersheds.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/watersheds.hxx
+COPY: ../wntmsci12.pro/misc/build/vigra1.6.0/include/vigra/watersheds3d.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/watersheds3d.hxx
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/vigra/deliver.log
+Module 'vigra' delivered successfully. 98 files copied, 0 files unchanged
+
+=============

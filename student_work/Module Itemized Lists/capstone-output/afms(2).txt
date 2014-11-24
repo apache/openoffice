@@ -1,0 +1,22 @@
+Name:
+afms
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+mkdir: %_DEST%\pck%_EXT%
+..\%__SRC%\bin\*.zip %_DEST%\pck%_EXT%\*.zip
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=afms
+	TARGET=afms

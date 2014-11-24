@@ -1,0 +1,806 @@
+Name:
+extensions
+
+Dependencies:
+officecfg  L10N:l10n rdbmaker svx SANE:sane TWAIN:twain offuh stoc ZLIB:zlib CURL:curl LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sbibliography
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sbibliography\menubar
+mkdir: %_DEST%\bin%_EXT%\odf4ms
+mkdir: %_DEST%\bin%_EXT%\so
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\ldapbe2.uno.so %_DEST%\lib%_EXT%\ldapbe2.uno.so
+..\%__SRC%\lib\updchk.uno.so %_DEST%\lib%_EXT%\updchk.uno.so
+..\%__SRC%\lib\updatefeed.uno.so %_DEST%\lib%_EXT%\updatefeed.uno.so
+..\%__SRC%\bin\oleautobridge2.uno.dll %_DEST%\bin%_EXT%\odf4ms\oleautobridge.uno.dll
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\bin\x64\so_activex.dll %_DEST%\bin%_EXT%\so_activex_x64.dll
+..\%__SRC%\bin\mdibundle.zip %_DEST%\bin%_EXT%\mdibundle.zip
+..\%__SRC%\misc\oleautobridge.component %_DEST%\xml%_EXT%\oleautobridge.component
+
+..\source\bibliography\uiconfig\sbibliography\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sbibliography\menubar\*.xml
+
+..\source\propctrlr\pcr.xml %_DEST%\xml%_EXT%\pcr.xml
+
+mkdir: %_DEST%\xml%_EXT%\registry\spool
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Addons
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Logging
+
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\Addons\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Addons
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\Jobs\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\Logging\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Logging
+
+..\%__SRC%\bin\*.oxt %_DEST%\pck%_EXT%\*
+..\%__SRC%\misc\abp.component %_DEST%\xml%_EXT%\abp.component
+..\%__SRC%\misc\bib.component %_DEST%\xml%_EXT%\bib.component
+..\%__SRC%\misc\dbp.component %_DEST%\xml%_EXT%\dbp.component
+..\%__SRC%\misc\ldapbe2.component %_DEST%\xml%_EXT%\ldapbe2.component
+..\%__SRC%\misc\log.component %_DEST%\xml%_EXT%\log.component
+..\%__SRC%\misc\oooimprovecore.component %_DEST%\xml%_EXT%\oooimprovecore.component
+..\%__SRC%\misc\oooimprovement.component %_DEST%\xml%_EXT%\oooimprovement.component
+..\%__SRC%\misc\pcr.component %_DEST%\xml%_EXT%\pcr.component
+..\%__SRC%\misc\preload.component %_DEST%\xml%_EXT%\preload.component
+..\%__SRC%\misc\res.component %_DEST%\xml%_EXT%\res.component
+..\%__SRC%\misc\scn.component %_DEST%\xml%_EXT%\scn.component
+..\%__SRC%\misc\updatefeed.component %_DEST%\xml%_EXT%\updatefeed.component
+..\%__SRC%\misc\updchk.component %_DEST%\xml%_EXT%\updchk.component
+..\%__SRC%\misc\updchk.uno.component %_DEST%\xml%_EXT%\updchk.uno.component
+..\%__SRC%\misc\xmx.component %_DEST%\xml%_EXT%\xmx.component
+
+Source Files:
+inc\pch\precompiled_extensions.cxx
+source\abpilot\abpfinalpage.cxx
+source\abpilot\abpservices.cxx
+source\abpilot\abspage.cxx
+source\abpilot\abspilot.cxx
+source\abpilot\admininvokationimpl.cxx
+source\abpilot\admininvokationpage.cxx
+source\abpilot\datasourcehandling.cxx
+source\abpilot\fieldmappingimpl.cxx
+source\abpilot\fieldmappingpage.cxx
+source\abpilot\moduleabp.cxx
+source\abpilot\tableselectionpage.cxx
+source\abpilot\typeselectionpage.cxx
+source\abpilot\unodialogabp.cxx
+source\bibliography\bibbeam.cxx
+source\bibliography\bibconfig.cxx
+source\bibliography\bibcont.cxx
+source\bibliography\bibload.cxx
+source\bibliography\bibmod.cxx
+source\bibliography\bibview.cxx
+source\bibliography\datman.cxx
+source\bibliography\formcontrolcontainer.cxx
+source\bibliography\framectr.cxx
+source\bibliography\general.cxx
+source\bibliography\loadlisteneradapter.cxx
+source\bibliography\toolbar.cxx
+source\config\ldap\componentdef.cxx
+source\config\ldap\ldapaccess.cxx
+source\config\ldap\ldapuserprofilebe.cxx
+source\dbpilots\commonpagesdbp.cxx
+source\dbpilots\controlwizard.cxx
+source\dbpilots\dbpservices.cxx
+source\dbpilots\dbptools.cxx
+source\dbpilots\gridwizard.cxx
+source\dbpilots\groupboxwiz.cxx
+source\dbpilots\listcombowizard.cxx
+source\dbpilots\moduledbp.cxx
+source\dbpilots\optiongrouplayouter.cxx
+source\dbpilots\wizardservices.cxx
+source\inc\componentmodule.cxx
+source\logging\consolehandler.cxx
+source\logging\csvformatter.cxx
+source\logging\filehandler.cxx
+source\logging\logger.cxx
+source\logging\loggerconfig.cxx
+source\logging\loghandler.cxx
+source\logging\logrecord.cxx
+source\logging\log_module.cxx
+source\logging\log_services.cxx
+source\logging\plaintextformatter.cxx
+source\ole\jscriptclasses.cxx
+source\ole\ole2uno.cxx
+source\ole\oledll.cxx
+source\ole\oleobjw.cxx
+source\ole\olethread.cxx
+source\ole\servprov.cxx
+source\ole\servreg.cxx
+source\ole\unoobjw.cxx
+source\ole\unotypewrapper.cxx
+source\ole\windata.cxx
+source\oooimprovecore\core.cxx
+source\oooimprovecore\oooimprovecore_module.cxx
+source\oooimprovecore\oooimprovecore_services.cxx
+source\oooimprovement\config.cxx
+source\oooimprovement\corecontroller.cxx
+source\oooimprovement\errormail.cxx
+source\oooimprovement\invite_job.cxx
+source\oooimprovement\logpacker.cxx
+source\oooimprovement\logstorage.cxx
+source\oooimprovement\myconfigurationhelper.cxx
+source\oooimprovement\onlogrotate_job.cxx
+source\oooimprovement\oooimprovement_exports.cxx
+source\oooimprovement\soaprequest.cxx
+source\oooimprovement\soapsender.cxx
+source\preload\modulepreload.cxx
+source\preload\oemwiz.cxx
+source\preload\preloadservices.cxx
+source\preload\services.cxx
+source\propctrlr\browserline.cxx
+source\propctrlr\browserlistbox.cxx
+source\propctrlr\browserpage.cxx
+source\propctrlr\browserview.cxx
+source\propctrlr\buttonnavigationhandler.cxx
+source\propctrlr\cellbindinghandler.cxx
+source\propctrlr\cellbindinghelper.cxx
+source\propctrlr\commoncontrol.cxx
+source\propctrlr\composeduiupdate.cxx
+source\propctrlr\controlfontdialog.cxx
+source\propctrlr\defaultforminspection.cxx
+source\propctrlr\defaulthelpprovider.cxx
+source\propctrlr\editpropertyhandler.cxx
+source\propctrlr\eformshelper.cxx
+source\propctrlr\eformspropertyhandler.cxx
+source\propctrlr\eventhandler.cxx
+source\propctrlr\fontdialog.cxx
+source\propctrlr\formbrowsertools.cxx
+source\propctrlr\formcomponenthandler.cxx
+source\propctrlr\formcontroller.cxx
+source\propctrlr\formgeometryhandler.cxx
+source\propctrlr\formlinkdialog.cxx
+source\propctrlr\formmetadata.cxx
+source\propctrlr\formstrings.cxx
+source\propctrlr\genericpropertyhandler.cxx
+source\propctrlr\handlerhelper.cxx
+source\propctrlr\inspectorhelpwindow.cxx
+source\propctrlr\inspectormodelbase.cxx
+source\propctrlr\listselectiondlg.cxx
+source\propctrlr\MasterDetailLinkDialog.cxx
+source\propctrlr\modulepcr.cxx
+source\propctrlr\newdatatype.cxx
+source\propctrlr\objectinspectormodel.cxx
+source\propctrlr\pcrcommon.cxx
+source\propctrlr\pcrcomponentcontext.cxx
+source\propctrlr\pcrservices.cxx
+source\propctrlr\pcrstrings.cxx
+source\propctrlr\pcrunodialogs.cxx
+source\propctrlr\propcontroller.cxx
+source\propctrlr\propertycomposer.cxx
+source\propctrlr\propertycontrolextender.cxx
+source\propctrlr\propertyeditor.cxx
+source\propctrlr\propertyhandler.cxx
+source\propctrlr\propeventtranslation.cxx
+source\propctrlr\pushbuttonnavigation.cxx
+source\propctrlr\selectlabeldialog.cxx
+source\propctrlr\sqlcommanddesign.cxx
+source\propctrlr\standardcontrol.cxx
+source\propctrlr\stringrepresentation.cxx
+source\propctrlr\submissionhandler.cxx
+source\propctrlr\taborder.cxx
+source\propctrlr\unourl.cxx
+source\propctrlr\usercontrol.cxx
+source\propctrlr\xsddatatypes.cxx
+source\propctrlr\xsdvalidationhelper.cxx
+source\propctrlr\xsdvalidationpropertyhandler.cxx
+source\resource\oooresourceloader.cxx
+source\resource\resource.cxx
+source\resource\res_services.cxx
+source\scanner\grid.cxx
+source\scanner\sane.cxx
+source\scanner\sanedlg.cxx
+source\scanner\scanner.cxx
+source\scanner\scanunx.cxx
+source\scanner\scanwin.cxx
+source\scanner\scnserv.cxx
+source\scanner\twain.cxx
+source\unoactivex\main\initwindowpeer.cxx
+source\update\check\download.cxx
+source\update\check\updatecheck.cxx
+source\update\check\updatecheckconfig.cxx
+source\update\check\updatecheckjob.cxx
+source\update\check\updatehdl.cxx
+source\update\check\updateprotocol.cxx
+source\update\check\updateprotocoltest.cxx
+source\update\feed\updatefeed.cxx
+source\update\feed\test\updatefeedtest.cxx
+source\update\tools\ztool.cxx
+source\update\ui\updatecheckui.cxx
+source\xmlextract\xmxtrct.cxx
+source\xmlextract\xmxuno.cxx
+test\ole\cpnt\cpnt.cxx
+test\ole\cpptest\cpptest.cxx
+test\ole\cppToUno\testcppuno.cxx
+test\ole\OleClient\axhost.cxx
+test\ole\OleClient\clientTest.cxx
+test\ole\OleClient\funcs.cxx
+test\ole\OleConverterVar1\convTest.cxx
+test\ole\unloading\unloadTest.cxx
+test\sax\testsax.cxx
+test\sax\testwriter.cxx
+test\stm\datatest.cxx
+test\stm\marktest.cxx
+test\stm\pipetest.cxx
+test\stm\testfactreg.cxx
+workben\pythonautotest.cxx
+workben\pythontest.cxx
+workben\testcomponent.cxx
+workben\testframecontrol.cxx
+workben\testpgp.cxx
+workben\testresource.cxx
+
+Header Files:
+inc\abpilot.hrc
+inc\appsettings.hxx
+inc\bibliography.hrc
+inc\dbpilots.hrc
+inc\extensio.hrc
+inc\propctrlr.hrc
+inc\update.hrc
+inc\pch\precompiled_extensions.hxx
+inc\ucbhelper\ext_content.hxx
+source\abpilot\abpfinalpage.hxx
+source\abpilot\abpresid.hrc
+source\abpilot\abptypes.hxx
+source\abpilot\abspage.hxx
+source\abpilot\abspilot.hxx
+source\abpilot\addresssettings.hxx
+source\abpilot\admininvokationimpl.hxx
+source\abpilot\admininvokationpage.hxx
+source\abpilot\datasourcehandling.hxx
+source\abpilot\fieldmappingimpl.hxx
+source\abpilot\fieldmappingpage.hxx
+source\abpilot\tableselectionpage.hxx
+source\abpilot\typeselectionpage.hxx
+source\abpilot\unodialogabp.hxx
+source\activex\main\com_uno_helper.h
+source\activex\main\resource.h
+source\activex\main\SOActionsApproval.h
+source\activex\main\SOActiveX.h
+source\activex\main\SOComWindowPeer.h
+source\activex\main\SODispatchInterceptor.h
+source\activex\main\StdAfx2.h
+source\bibliography\bib.hrc
+source\bibliography\bibbeam.hxx
+source\bibliography\bibconfig.hxx
+source\bibliography\bibcont.hxx
+source\bibliography\bibmod.hxx
+source\bibliography\bibprop.hrc
+source\bibliography\bibresid.hxx
+source\bibliography\bibshortcuthandler.hxx
+source\bibliography\bibtools.hxx
+source\bibliography\bibview.hxx
+source\bibliography\datman.hrc
+source\bibliography\datman.hxx
+source\bibliography\formcontrolcontainer.hxx
+source\bibliography\framectr.hxx
+source\bibliography\general.hxx
+source\bibliography\loadlisteneradapter.hxx
+source\bibliography\sections.hrc
+source\bibliography\toolbar.hrc
+source\bibliography\toolbar.hxx
+source\config\ldap\ldapaccess.hxx
+source\config\ldap\ldapuserprofilebe.hxx
+source\config\ldap\wrapldapinclude.hxx
+source\dbpilots\commonpagesdbp.hxx
+source\dbpilots\controlwizard.hxx
+source\dbpilots\dbpresid.hrc
+source\dbpilots\dbptools.hxx
+source\dbpilots\dbptypes.hxx
+source\dbpilots\gridwizard.hxx
+source\dbpilots\groupboxwiz.hxx
+source\dbpilots\listcombowizard.hxx
+source\dbpilots\optiongrouplayouter.hxx
+source\dbpilots\unoautopilot.hxx
+source\dbpilots\wizardcontext.hxx
+source\dbpilots\wizardservices.hxx
+source\inc\componentmodule.hxx
+source\logging\loggerconfig.hxx
+source\logging\loghandler.hxx
+source\logging\logrecord.hxx
+source\logging\log_module.hxx
+source\logging\methodguard.hxx
+source\macosx\spotlight\ioapi.h
+source\macosx\spotlight\OOoContentDataParser.h
+source\macosx\spotlight\OOoMetaDataParser.h
+source\macosx\spotlight\OOoSpotlightImporter.h
+source\macosx\spotlight\unzip.h
+source\ole\comifaces.hxx
+source\ole\jscriptclasses.hxx
+source\ole\ole2uno.hxx
+source\ole\oleobjw.hxx
+source\ole\servprov.hxx
+source\ole\unoconversionutilities.hxx
+source\ole\unoobjw.hxx
+source\ole\unotypewrapper.hxx
+source\ole\windata.hxx
+source\oooimprovecore\oooimprovecore_module.hxx
+source\oooimprovement\config.hxx
+source\oooimprovement\corecontroller.hxx
+source\oooimprovement\errormail.hxx
+source\oooimprovement\invite_job.hxx
+source\oooimprovement\logpacker.hxx
+source\oooimprovement\logstorage.hxx
+source\oooimprovement\myconfigurationhelper.hxx
+source\oooimprovement\onlogrotate_job.hxx
+source\oooimprovement\soaprequest.hxx
+source\oooimprovement\soapsender.hxx
+source\preload\oemwiz.hxx
+source\preload\preload.hrc
+source\preload\preloadservices.hxx
+source\preload\unoautopilot.hxx
+source\propctrlr\browserline.hxx
+source\propctrlr\browserlistbox.hxx
+source\propctrlr\browserpage.hxx
+source\propctrlr\browserview.hxx
+source\propctrlr\buttonnavigationhandler.hxx
+source\propctrlr\cellbindinghandler.hxx
+source\propctrlr\cellbindinghelper.hxx
+source\propctrlr\commoncontrol.hxx
+source\propctrlr\composeduiupdate.hxx
+source\propctrlr\controlfontdialog.hxx
+source\propctrlr\controltype.hxx
+source\propctrlr\defaultforminspection.hxx
+source\propctrlr\defaulthelpprovider.hxx
+source\propctrlr\editpropertyhandler.hxx
+source\propctrlr\eformshelper.hxx
+source\propctrlr\eformspropertyhandler.hxx
+source\propctrlr\enumrepresentation.hxx
+source\propctrlr\eventhandler.hxx
+source\propctrlr\fontdialog.hxx
+source\propctrlr\fontitemids.hxx
+source\propctrlr\formbrowsertools.hxx
+source\propctrlr\formcomponenthandler.hxx
+source\propctrlr\formcontroller.hxx
+source\propctrlr\formlinkdialog.hrc
+source\propctrlr\formlinkdialog.hxx
+source\propctrlr\formlocalid.hrc
+source\propctrlr\formmetadata.hxx
+source\propctrlr\formresid.hrc
+source\propctrlr\formstrings.hxx
+source\propctrlr\genericpropertyhandler.hxx
+source\propctrlr\handlerhelper.hxx
+source\propctrlr\inspectorhelpwindow.hxx
+source\propctrlr\inspectormodelbase.hxx
+source\propctrlr\linedescriptor.hxx
+source\propctrlr\listselectiondlg.hrc
+source\propctrlr\listselectiondlg.hxx
+source\propctrlr\MasterDetailLinkDialog.hxx
+source\propctrlr\modulepcr.hxx
+source\propctrlr\newdatatype.hrc
+source\propctrlr\newdatatype.hxx
+source\propctrlr\pcrcommon.hxx
+source\propctrlr\pcrcommontypes.hxx
+source\propctrlr\pcrcomponentcontext.hxx
+source\propctrlr\pcrstrings.hxx
+source\propctrlr\pcrunodialogs.hxx
+source\propctrlr\propcontroller.hxx
+source\propctrlr\propcontrolobserver.hxx
+source\propctrlr\propertycomposer.hxx
+source\propctrlr\propertycontrolextender.hxx
+source\propctrlr\propertyeditor.hxx
+source\propctrlr\propertyhandler.hxx
+source\propctrlr\propertyinfo.hxx
+source\propctrlr\propeventtranslation.hxx
+source\propctrlr\proplinelistener.hxx
+source\propctrlr\propresid.hrc
+source\propctrlr\pushbuttonnavigation.hxx
+source\propctrlr\selectlabeldialog.hxx
+source\propctrlr\sqlcommanddesign.hxx
+source\propctrlr\standardcontrol.hxx
+source\propctrlr\stlops.hxx
+source\propctrlr\stringdefine.hxx
+source\propctrlr\submissionhandler.hxx
+source\propctrlr\taborder.hrc
+source\propctrlr\taborder.hxx
+source\propctrlr\unourl.hxx
+source\propctrlr\usercontrol.hxx
+source\propctrlr\xsddatatypes.hxx
+source\propctrlr\xsdvalidationhelper.hxx
+source\propctrlr\xsdvalidationpropertyhandler.hxx
+source\resource\res_services.hxx
+source\scanner\grid.hrc
+source\scanner\grid.hxx
+source\scanner\sane.hxx
+source\scanner\sanedlg.hrc
+source\scanner\sanedlg.hxx
+source\scanner\scanner.hxx
+source\scanner\twain.hxx
+source\update\check\actionlistener.hxx
+source\update\check\download.hxx
+source\update\check\updatecheck.hxx
+source\update\check\updatecheckconfig.hxx
+source\update\check\updatecheckconfiglistener.hxx
+source\update\check\updatehdl.hrc
+source\update\check\updatehdl.hxx
+source\update\check\updateinfo.hxx
+source\update\check\updateprotocol.hxx
+source\update\ui\updatecheckui.hrc
+source\xmlextract\xmxcom.hxx
+source\xmlextract\xmxtrct.hxx
+test\ole\AxTestComponents\Basic.h
+test\ole\AxTestComponents\Foo.h
+test\ole\AxTestComponents\resource.h
+test\ole\AxTestComponents\StdAfx.h
+test\ole\EventListenerSample\EventListener\EvtListener.h
+test\ole\EventListenerSample\EventListener\resource.h
+test\ole\EventListenerSample\EventListener\StdAfx.h
+test\ole\MfcControl\MfcControl.h
+test\ole\MfcControl\MfcControlCtl.h
+test\ole\MfcControl\MfcControlPpg.h
+test\ole\MfcControl\Resource.h
+test\ole\MfcControl\StdAfx.h
+test\ole\OleClient\axhost.hxx
+test\ole\OleConverterVar1\smartarray.h
+test\ole\unoTocomCalls\Test\StdAfx.h
+test\ole\unoTocomCalls\XCallback_Impl\Callback.h
+test\ole\unoTocomCalls\XCallback_Impl\resource.h
+test\ole\unoTocomCalls\XCallback_Impl\Simple.h
+test\ole\unoTocomCalls\XCallback_Impl\StdAfx.h
+test\sax\factory.hxx
+test\stm\testfactreg.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=extensions
+	TARGET=inc
+
+qa\complex\extensions\makefile.mk
+	PRJNAME=extensions
+	TARGET=qa_complex_extensions
+
+qa\integration\extensions\makefile.mk
+	TARGET=ExtensionsIntegrationTests
+	PRJNAME=extensions
+
+qa\unoapi\makefile.mk
+	PRJNAME=extensions
+	TARGET=qa_unoapi
+
+source\abpilot\makefile.mk
+	PRJNAME=extensions
+	TARGET=abp
+	SLOFILES=
+	$(SLO)$/fieldmappingpage.obj
+	$(SLO)$/abpfinalpage.obj
+	$(SLO)$/tableselectionpage.obj
+	$(SLO)$/admininvokationpage.obj
+	$(SLO)$/abspage.obj
+	$(SLO)$/abspilot.obj
+	$(EXCEPTIONSFILES)
+
+source\activex\main\makefile.mk
+	PRJNAME=extensions
+	TARGET=so_activex
+	$(TARGET).rc
+	SLOFILES=
+	$(SLO)$/so_activex.obj
+	$(SLO)$/SOActiveX.obj
+	$(SLO)$/SOComWindowPeer.obj
+	$(SLO)$/SODispatchInterceptor.obj
+	$(SLO)$/SOActionsApproval.obj
+	$(SLO)$/StdAfx2.obj
+
+source\activex\msidl\makefile.mk
+	PRJNAME=extensions
+	TARGET=msidl
+
+source\bibliography\makefile.mk
+	PRJNAME=extensions
+	TARGET=bib
+	SLOFILES=$(SLO)$/formcontrolcontainer.obj
+	$(SLO)$/loadlisteneradapter.obj
+	$(SLO)$/bibconfig.obj
+	$(SLO)$/bibcont.obj
+	$(SLO)$/bibload.obj
+	$(SLO)$/bibmod.obj
+	$(SLO)$/general.obj
+	$(SLO)$/framectr.obj
+	$(SLO)$/bibview.obj
+	$(SLO)$/bibbeam.obj
+	$(SLO)$/toolbar.obj
+	$(SLO)$/datman.obj
+	
+
+source\config\ldap\makefile.mk
+	PRJNAME=extensions
+	TARGET=ldapbe
+	SLOFILES=
+	$(SLO)$/ldapuserprofilebe.obj
+	$(SLO)$/ldapaccess.obj
+	$(SLO)$/componentdef.obj
+
+source\dbpilots\makefile.mk
+	PRJNAME=extensions
+	TARGET=dbp
+	SLOFILES=$(SLO)$/dbptools.obj
+	$(SLO)$/gridwizard.obj
+	$(SLO)$/listcombowizard.obj
+	$(SLO)$/optiongrouplayouter.obj
+	$(SLO)$/commonpagesdbp.obj
+	$(SLO)$/groupboxwiz.obj
+	$(SLO)$/wizardservices.obj
+	$(SLO)$/controlwizard.obj
+	$(SLO)$/moduledbp.obj
+	$(SLO)$/dbpservices.obj
+
+source\logging\makefile.mk
+	PRJNAME=extensions
+	TARGET=log
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/log_module.obj
+	$(SLO)$/logrecord.obj
+	
+
+source\macosx\spotlight\makefile.mk
+	PRJNAME=extensions
+	TARGET=spotlightplugin
+	SLOFILES=
+	$(SLO)$/ioapi.obj
+	$(SLO)$/unzip.obj
+	$(SLO)$/main.obj
+	$(SLO)$/GetMetadataForFile.obj
+	$(SLO)$/OOoContentDataParser.obj
+	$(SLO)$/OOoMetaDataParser.obj
+	$(SLO)$/OOoSpotlightImporter.obj
+	
+
+source\ole\makefile.mk
+	PRJNAME=extensions
+	TARGET=oleautobridge.uno
+	TARGET2=oleautobridge2.uno
+	SLOFILES=
+	$(SLO)$/servreg.obj
+	$(SLO)$/servprov.obj
+	$(SLO)$/unoobjw.obj
+	$(SLO)$/oleobjw.obj
+	$(SLO)$/olethread.obj
+	$(SLO)$/oledll.obj
+	$(SLO)$/jscriptclasses.obj
+	$(SLO)$/ole2uno.obj
+	$(SLO)$/windata.obj
+	$(SLO)$/unotypewrapper.obj
+
+source\oooimprovecore\makefile.mk
+	PRJNAME=extensions
+	TARGET=oooimprovecore
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/oooimprovecore_module.obj
+	
+
+source\oooimprovement\makefile.mk
+	PRJNAME=extensions
+	TARGET=oooimprovement
+	SLOFILES=
+	$(SLO)$/myconfigurationhelper.obj
+	$(SLO)$/config.obj
+	$(SLO)$/corecontroller.obj
+	$(SLO)$/errormail.obj
+	$(SLO)$/invite_job.obj
+	$(SLO)$/logpacker.obj
+	$(SLO)$/logstorage.obj
+	$(SLO)$/onlogrotate_job.obj
+	$(SLO)$/oooimprovement_exports.obj
+	$(SLO)$/soaprequest.obj
+	$(SLO)$/soapsender.obj
+	
+
+source\oooimprovement\makefile.pmk
+
+source\preload\makefile.mk
+	PRJNAME=extensions
+	TARGET=preload
+	SLOFILES=$(SLO)$/services.obj
+	$(SLO)$/modulepreload.obj
+	$(SLO)$/preloadservices.obj
+	$(SLO)$/oemwiz.obj
+
+source\propctrlr\makefile.mk
+	PRJNAME=extensions
+	TARGET=pcr
+	SLOFILES=$(SLO)$/controlfontdialog.obj
+	$(SLO)$/fontdialog.obj
+	$(SLO)$/pcrservices.obj
+	$(SLO)$/selectlabeldialog.obj
+	$(SLO)$/propcontroller.obj
+	$(SLO)$/formcontroller.obj
+	$(SLO)$/modulepcr.obj
+	$(SLO)$/cellbindinghelper.obj
+	$(SLO)$/taborder.obj
+	$(SLO)$/pcrunodialogs.obj
+	$(SLO)$/unourl.obj
+	$(SLO)$/formlinkdialog.obj
+	$(SLO)$/listselectiondlg.obj
+	$(SLO)$/browserlistbox.obj
+	$(SLO)$/stringrepresentation.obj
+	$(SLO)$/eformshelper.obj
+	$(SLO)$/xsddatatypes.obj
+	$(SLO)$/xsdvalidationhelper.obj
+	$(SLO)$/pushbuttonnavigation.obj
+	$(SLO)$/sqlcommanddesign.obj
+	$(SLO)$/composeduiupdate.obj
+	$(SLO)$/propertycomposer.obj
+	$(SLO)$/pcrcomponentcontext.obj
+	$(SLO)$/commoncontrol.obj
+	$(SLO)$/standardcontrol.obj
+	$(SLO)$/usercontrol.obj
+	$(SLO)$/browserline.obj
+	$(SLO)$/genericpropertyhandler.obj
+	$(SLO)$/buttonnavigationhandler.obj
+	$(SLO)$/handlerhelper.obj
+	$(SLO)$/propertyhandler.obj
+	$(SLO)$/eventhandler.obj
+	$(SLO)$/editpropertyhandler.obj
+	$(SLO)$/eformspropertyhandler.obj
+	$(SLO)$/cellbindinghandler.obj
+	$(SLO)$/submissionhandler.obj
+	$(SLO)$/xsdvalidationpropertyhandler.obj
+	$(SLO)$/formcomponenthandler.obj
+	$(SLO)$/formmetadata.obj
+	$(SLO)$/defaultforminspection.obj
+	$(SLO)$/formbrowsertools.obj
+	$(SLO)$/browserpage.obj
+	$(SLO)$/propertyeditor.obj
+	$(SLO)$/formstrings.obj
+	$(SLO)$/pcrstrings.obj
+	$(SLO)$/browserview.obj
+	$(SLO)$/pcrcommon.obj
+	$(SLO)$/newdatatype.obj
+	$(SLO)$/propeventtranslation.obj
+	$(SLO)$/objectinspectormodel.obj
+	$(SLO)$/inspectorhelpwindow.obj
+	$(SLO)$/defaulthelpprovider.obj
+	$(SLO)$/MasterDetailLinkDialog.obj
+	$(SLO)$/inspectormodelbase.obj
+	$(SLO)$/propertycontrolextender.obj
+	$(SLO)$/formgeometryhandler.obj
+
+source\resource\makefile.mk
+	PRJNAME=extensions
+	TARGET=res
+	SLOFILES=$(SLO)$/resource.obj
+	$(SLO)$/oooresourceloader.obj
+	$(SLO)$/res_services.obj
+
+source\scanner\makefile.mk
+	PRJNAME=extensions
+	TARGET=scn
+	SLOFILES=
+	$(SLO)$/scnserv.obj
+	$(SLO)$/scanner.obj
+	SLOFILES+=
+	$(SLO)$/scanwin.obj
+	SLOFILES+=
+	$(SLO)$/sane.obj
+	$(SLO)$/sanedlg.obj
+	$(SLO)$/scanunx.obj
+	$(SLO)$/grid.obj
+
+source\update\check\makefile.mk
+	PRJNAME=extensions
+	TARGET=updchk
+	SLOFILES=
+	$(SLO)$/download.obj
+	$(SLO)$/updatecheck.obj
+	$(SLO)$/updatecheckjob.obj
+	$(SLO)$/updatecheckconfig.obj
+	$(SLO)$/updateprotocol.obj
+	$(SLO)$/updatehdl.obj
+
+source\update\feed\makefile.mk
+	PRJNAME=extensions
+	TARGET=updatefeed
+	SLOFILES=
+	$(SLO)$/updatefeed.obj
+	
+
+source\update\feed\test\makefile.mk
+	PRJNAME=extensions
+	TARGET=updatefeedtest
+	SLOFILES=
+	$(SLO)$/updatefeedtest.obj
+	
+
+source\update\tools\makefile.mk
+	PRJNAME=extensions
+	TARGET=ztool
+	OBJFILES=
+	$(OBJ)$/ztool.obj
+
+source\update\ui\makefile.mk
+	PRJNAME=extensions
+	TARGET=updchkui
+	SLOFILES=
+	$(SLO)$/updatecheckui.obj
+
+source\xmlextract\makefile.mk
+	PRJNAME=extensions
+	TARGET=xmx
+	SLOFILES=$(SLO)$/xmxuno.obj
+	$(SLO)$/xmxtrct.obj
+
+stardiv\fontest\makefile.mk
+	PRJNAME=extensions
+	TARGET=fontestidl
+
+stardiv\oinstchk\makefile.mk
+	PRJNAME=extensions
+	TARGET=oinstchkidl
+
+stardiv\pgp\makefile.mk
+	PRJNAME=extensions
+	TARGET=pgpidl
+
+test\ole\cpnt\makefile.mk
+	PRJNAME=extensions
+	TARGET=oletest
+	SLOFILES=
+	$(SLO)$/cpnt.obj
+
+test\ole\cpptest\makefile.mk
+	PRJNAME=extensions
+	TARGET=cppTest
+
+test\ole\cppToUno\makefile.mk
+	PRJNAME=extensions
+	TARGET=testcppuno
+
+test\ole\OleClient\makefile.mk
+	PRJNAME=extensions
+	TARGET=clientTest
+
+test\ole\OleConverterVar1\makefile.mk
+	PRJNAME=extensions
+	TARGET=convTest
+
+test\ole\unloading\makefile.mk
+	PRJNAME=extensions
+	TARGET=unloadtest
+
+test\pgp\makefile.mk
+	PRJNAME:=extensions
+	TARGET:=test_com_sun_star_pgp
+
+test\sax\makefile.mk
+	PRJNAME=extensions
+	TARGET=testsax
+	OBJFILES=$(SLO)$/testsax.obj$(SLO)$/testwriter.obj
+
+test\stm\makefile.mk
+	PRJNAME=extensions
+	TARGET=teststm
+	OBJFILES=$(SLO)$/pipetest.obj$(SLO)$/testfactreg.obj$(SLO)$/datatest.obj
+	$(SLO)$/marktest.obj
+
+util\makefile.mk
+	PRJNAME=extensions
+	TARGET=ext
+
+util\makefile.pmk
+
+util\target.pmk
+
+workben\makefile.mk
+	PRJNAME=extensions
+	TARGET=workben
+	OBJFILES=$(OBJ)$/testpgp.obj
+	OBJFILES=$(OBJ)$/testcomponent.obj
+	OBJFILES=$(OBJ)$/pythontest.obj
+	OBJFILES=$(OBJ)$/pythonautotest.obj
+	OBJFILES=$(OBJ)$/testresource.obj
+	OBJFILES=$(OBJ)$/testframecontrol.obj

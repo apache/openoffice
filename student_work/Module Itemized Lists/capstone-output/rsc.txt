@@ -1,0 +1,159 @@
+Name:
+rsc
+
+Dependencies:
+tools NULL
+
+Build Rules:
+..\%__SRC%\bin\rsc.exe %_DEST%\bin%_EXT%\rsc.exe
+..\%__SRC%\bin\rsc2.exe %_DEST%\bin%_EXT%\rsc2.exe
+..\%__SRC%\bin\rsc %_DEST%\bin%_EXT%\rsc
+..\%__SRC%\bin\rsc2 %_DEST%\bin%_EXT%\rsc2
+..\%__SRC%\bin\rscpp.exe %_DEST%\bin%_EXT%\rscpp.exe
+..\%__SRC%\bin\rscpp %_DEST%\bin%_EXT%\rscpp
+
+mkdir: %_DEST%\inc%_EXT%\rsc
+..\inc\rsc/rscsfx.hxx %_DEST%\inc%_EXT%\rsc\rscsfx.hxx
+
+Source Files:
+inc\pch\precompiled_rsc.cxx
+source\misc\rscdbl.cxx
+source\misc\rsclst.cxx
+source\parser\erscerr.cxx
+source\parser\rscdb.cxx
+source\parser\rscibas.cxx
+source\parser\rscicpx.cxx
+source\parser\rscinit.cxx
+source\parser\rsckey.cxx
+source\parser\rsclex.cxx
+source\parser\rscpar.cxx
+source\parser\rscyacc.cxx
+source\parser\rscyacc.y
+source\prj\gui.cxx
+source\prj\start.cxx
+source\res\rscall.cxx
+source\res\rscarray.cxx
+source\res\rscclass.cxx
+source\res\rscclobj.cxx
+source\res\rscconst.cxx
+source\res\rsccont.cxx
+source\res\rscflag.cxx
+source\res\rscmgr.cxx
+source\res\rscrange.cxx
+source\res\rscstr.cxx
+source\res\rsctop.cxx
+source\rsc\rsc.cxx
+source\rscpp\cpp1.c
+source\rscpp\cpp2.c
+source\rscpp\cpp3.c
+source\rscpp\cpp4.c
+source\rscpp\cpp5.c
+source\rscpp\cpp6.c
+source\rscpp\cppmain.c
+source\tools\rscchar.cxx
+source\tools\rscdef.cxx
+source\tools\rschash.cxx
+source\tools\rsctools.cxx
+source\tools\rsctree.cxx
+
+Header Files:
+inc\rscall.h
+inc\rscarray.hxx
+inc\rscclass.hxx
+inc\rscclobj.hxx
+inc\rscconst.hxx
+inc\rsccont.hxx
+inc\rscdb.hxx
+inc\rscdef.hxx
+inc\rscerror.h
+inc\rscflag.hxx
+inc\rschash.hxx
+inc\rscinst.hxx
+inc\rsckey.hxx
+inc\rsclst.hxx
+inc\rscmgr.hxx
+inc\rscpar.hxx
+inc\rscrange.hxx
+inc\rscrsc.hxx
+inc\rscstr.hxx
+inc\rsctools.hxx
+inc\rsctop.hxx
+inc\rsctree.hxx
+inc\vclrsc.hxx
+inc\pch\precompiled_rsc.hxx
+inc\rsc\rscsfx.hxx
+source\parser\rsclex.hxx
+source\rscpp\cpp.h
+source\rscpp\cppdef.h
+
+Patch Files:
+
+Makefiles:
+
+source\misc\makefile.mk
+	PRJNAME=rsc
+	TARGET=rscmis
+	OBJFILES=$(OBJ)$/rsclst.obj
+	$(OBJ)$/rscdbl.obj
+
+source\parser\makefile.mk
+	PRJNAME=rsc
+	TARGET=rscpar
+	OBJFILES=$(OBJ)$/rscpar.obj
+	$(OBJ)$/rscyacc.obj
+	$(OBJ)$/rsclex.obj
+	$(OBJ)$/erscerr.obj
+	$(OBJ)$/rsckey.obj
+	$(OBJ)$/rscinit.obj
+	$(OBJ)$/rscibas.obj
+	$(OBJ)$/rscdb.obj
+	$(OBJ)$/rscicpx.obj
+
+source\prj\makefile.mk
+	PRJNAME=rsc
+	TARGET=rsc
+	OBJFILES=$(OBJ)$/gui.obj
+	$(OBJ)$/start.obj
+
+source\res\makefile.mk
+	PRJNAME=rsc
+	TARGET=rscres
+	OBJFILES=$(OBJ)$/rscclobj.obj
+	$(OBJ)$/rsccont.obj
+	$(OBJ)$/rsctop.obj
+	$(OBJ)$/rscrange.obj
+	$(OBJ)$/rscconst.obj
+	$(OBJ)$/rscflag.obj
+	$(OBJ)$/rscstr.obj
+	$(OBJ)$/rscall.obj
+	$(OBJ)$/rscmgr.obj
+	$(OBJ)$/rscclass.obj
+	$(OBJ)$/rscarray.obj
+
+source\rsc\makefile.mk
+	PRJNAME=rsc
+	TARGET=rscrsc
+	OBJFILES=$(OBJ)$/rsc.obj
+
+source\rscpp\makefile.mk
+	PRJNAME=rsc
+	TARGET=rscpp
+	PRJNAME=CPP
+	TARGET=cpp
+	OBJFILES=
+	$(OBJ)$/cpp1.obj
+	$(OBJ)$/cpp2.obj
+	$(OBJ)$/cpp3.obj
+	$(OBJ)$/cpp4.obj
+	$(OBJ)$/cpp5.obj
+	$(OBJ)$/cpp6.obj
+	
+
+source\tools\makefile.mk
+	PRJNAME=rsc
+	TARGET=rsctoo
+	OBJFILES=$(OBJ)$/rschash.obj
+	$(OBJ)$/rsctree.obj
+	$(OBJ)$/rsctools.obj
+	$(OBJ)$/rscchar.obj
+	$(OBJ)$/rscdef.obj

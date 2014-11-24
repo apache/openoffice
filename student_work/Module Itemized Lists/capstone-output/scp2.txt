@@ -1,0 +1,138 @@
+Name:
+scp2
+
+Dependencies:
+L10N:l10n i18npool setup_native l10ntools PYTHON:python ICU:icu REDLAND:redland LIBXSLT:libxslt APR:apr apr-util SERF:serf NULL
+
+Build Rules:
+..\%__SRC%\bin\osl\setup_osl.inf %_DEST%\bin%_EXT%\setup_osl.inf
+..\%__SRC%\bin\osl\setup_osl.ins %_DEST%\bin%_EXT%\setup_osl.ins
+..\%__SRC%\bin\osl\ure.inf %_DEST%\bin%_EXT%\ure.inf
+..\%__SRC%\bin\osl\ure.ins %_DEST%\bin%_EXT%\ure.ins
+..\%__SRC%\bin\osl\sdkoo.inf %_DEST%\bin%_EXT%\sdkoo.inf
+..\%__SRC%\bin\osl\sdkoo.ins %_DEST%\bin%_EXT%\sdkoo.ins
+..\%__SRC%\bin\osl\setup_osljre.inf %_DEST%\bin%_EXT%\setup_osljre.inf
+..\%__SRC%\bin\osl\setup_osljre.ins %_DEST%\bin%_EXT%\setup_osljre.ins
+
+mkdir: %_DEST%\par%_EXT%
+
+mkdir: %_DEST%\par%_EXT%\osl
+mkdir: %_DEST%\par%_EXT%\fat
+mkdir: %_DEST%\par%_EXT%\fam
+mkdir: %_DEST%\par%_EXT%\ada
+mkdir: %_DEST%\par%_EXT%\adm
+mkdir: %_DEST%\par%_EXT%\omc
+
+..\%__SRC%\par\osl\*.par %_DEST%\par%_EXT%\osl\*.par
+..\%__SRC%\par\fat\*.par %_DEST%\par%_EXT%\fat\*.par
+..\%__SRC%\par\fam\*.par %_DEST%\par%_EXT%\fam\*.par
+..\%__SRC%\par\ada\*.par %_DEST%\par%_EXT%\ada\*.par
+..\%__SRC%\par\adm\*.par %_DEST%\par%_EXT%\adm\*.par
+..\%__SRC%\par\omc\*.par %_DEST%\par%_EXT%\omc\*.par
+
+..\inc\macros.inc %_DEST%\inc%_EXT%\macros.inc
+..\%__SRC%\inc\langmacros.inc %_DEST%\inc%_EXT%\langmacros.inc
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+macros\makefile.mk
+	PRJNAME=scp2
+	TARGET=macros
+
+source\activex\makefile.mk
+	PRJNAME=scp2
+	TARGET=activex
+
+source\base\makefile.mk
+	PRJNAME=scp2
+	TARGET=base
+
+source\calc\makefile.mk
+	PRJNAME=scp2
+	TARGET=calc
+
+source\canvas\makefile.mk
+	PRJNAME=scp2
+	TARGET=canvas
+
+source\crashrep\makefile.mk
+	PRJNAME=scp2
+	TARGET=crashrep
+
+source\draw\makefile.mk
+	PRJNAME=scp2
+	TARGET=draw
+
+source\gnome\makefile.mk
+	PRJNAME=scp2
+	TARGET=gnome
+
+source\graphicfilter\makefile.mk
+	PRJNAME=scp2
+	TARGET=graphicfilter
+
+source\impress\makefile.mk
+	PRJNAME=scp2
+	TARGET=impress
+
+source\javafilter\makefile.mk
+	PRJNAME=scp2
+	TARGET=javafilter
+
+source\kde\makefile.mk
+	PRJNAME=scp2
+	TARGET=kde
+
+source\layout\makefile.mk
+	PRJNAME=scp2
+	TARGET=layout
+
+source\math\makefile.mk
+	PRJNAME=scp2
+	TARGET=math
+
+source\onlineupdate\makefile.mk
+	PRJNAME=scp2
+	TARGET=update
+
+source\ooo\makefile.mk
+	PRJNAME=scp2
+	TARGET=ooo
+
+source\python\makefile.mk
+	PRJNAME=scp2
+	TARGET=python
+
+source\quickstart\makefile.mk
+	PRJNAME=scp2
+	TARGET=quickstart
+
+source\sdkoo\makefile.mk
+	PRJNAME=scp2so
+	TARGET=sdkoo
+
+source\templates\makefile.mk
+	PRJNAME=scp2
+	TARGET=templates
+
+source\winexplorerext\makefile.mk
+	PRJNAME=scp2
+	TARGET=winexpext
+
+source\writer\makefile.mk
+	PRJNAME=scp2
+	TARGET=writer
+
+source\xsltfilter\makefile.mk
+	PRJNAME=scp2
+	TARGET=xsltfilter
+
+util\makefile.mk
+	PRJNAME=scp2
+	TARGET=setup

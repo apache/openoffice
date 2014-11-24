@@ -1,0 +1,1 @@
+del /f wntmsci12.pro\inc\twain.h

@@ -1,0 +1,68 @@
+mdds
+=============
+
+Entering /cygdrive/c/steve/testarea/main/mdds
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/mdds_0.3.1 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/mdds_0.3.1 ./wntmsci12.pro/misc/build/mdds_0.3.1_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/mdds_0.3.1_removeme
+cd ./wntmsci12.pro/misc/build && ( bzip2 -cd C:/steve/TestArea/ext_sources/0dd138efff4412c707e239290fb82d4f-mdds_0.3.1.tar.bz2  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_mdds
+mdds_0.3.1/
+mdds_0.3.1/README
+mdds_0.3.1/example/
+mdds_0.3.1/example/point_quad_tree.cpp
+mdds_0.3.1/example/rectangle_set.cpp
+mdds_0.3.1/example/flat_segment_tree.cpp
+mdds_0.3.1/example/segment_tree.cpp
+mdds_0.3.1/example/Makefile
+mdds_0.3.1/include/
+mdds_0.3.1/include/nodecontainer.hpp
+mdds_0.3.1/include/rangetree.hpp
+mdds_0.3.1/include/mdds/
+mdds_0.3.1/include/mdds/point_quad_tree.hpp
+mdds_0.3.1/include/mdds/quad_node.hpp
+mdds_0.3.1/include/mdds/hash_container/
+mdds_0.3.1/include/mdds/hash_container/map.hpp
+mdds_0.3.1/include/mdds/segment_tree.hpp
+mdds_0.3.1/include/mdds/quad_type_matrix.hpp
+mdds_0.3.1/include/mdds/global.hpp
+mdds_0.3.1/include/mdds/flat_segment_tree.hpp
+mdds_0.3.1/include/mdds/node.hpp
+mdds_0.3.1/include/mdds/rectangle_set.hpp
+mdds_0.3.1/Makefile.in
+mdds_0.3.1/configure
+mdds_0.3.1/AUTHORS
+mdds_0.3.1/NEWS
+mdds_0.3.1/src/
+mdds_0.3.1/src/stlperf_test.cpp
+mdds_0.3.1/src/nodecontainer.cpp
+mdds_0.3.1/src/rectangle_set_test.cpp
+mdds_0.3.1/src/point_quad_tree_test.cpp
+mdds_0.3.1/src/template_test.cpp
+mdds_0.3.1/src/rangetree.cpp
+mdds_0.3.1/src/flat_segment_tree_test.cpp
+mdds_0.3.1/src/quad_type_matrix_test.cpp
+mdds_0.3.1/src/segment_tree_test.cpp
+make writeable...
+no patch needed...
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_mdds
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_mdds
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_built_mdds
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_mdds
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_mdds
+mdds deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/build.lst
+COPY: ../wntmsci12.pro/inc/mdds/flat_segment_tree.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/flat_segment_tree.hpp
+COPY: ../wntmsci12.pro/inc/mdds/global.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/global.hpp
+COPY: ../wntmsci12.pro/inc/mdds/node.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/node.hpp
+COPY: ../wntmsci12.pro/inc/mdds/point_quad_tree.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/point_quad_tree.hpp
+COPY: ../wntmsci12.pro/inc/mdds/quad_node.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/quad_node.hpp
+COPY: ../wntmsci12.pro/inc/mdds/quad_type_matrix.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/quad_type_matrix.hpp
+COPY: ../wntmsci12.pro/inc/mdds/rectangle_set.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/rectangle_set.hpp
+COPY: ../wntmsci12.pro/inc/mdds/segment_tree.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/segment_tree.hpp
+COPY: ../wntmsci12.pro/inc/mdds/hash_container/map.hpp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/hash_container/map.hpp
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mdds/deliver.log
+Module 'mdds' delivered successfully. 10 files copied, 0 files unchanged
+
+=============

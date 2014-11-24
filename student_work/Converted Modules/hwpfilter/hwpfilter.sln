@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{815BF9D7-9FAA-DEFD-304F-7BCFDAAE5A8D}") = "misc_lib", "misc_lib.vcxproj", "{A1A0D450-9609-5968-AA77-224EEDA18F73}"
+EndProject
+Project("{815BF9D7-9FAA-DEFD-304F-7BCFDAAE5A8D}") = "misc_dll", "misc_dll.vcxproj", "{D7E377CB-2648-C396-8EA1-B2E86E28CFB7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A1A0D450-9609-5968-AA77-224EEDA18F73} = {A1A0D450-9609-5968-AA77-224EEDA18F73}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1A0D450-9609-5968-AA77-224EEDA18F73}.Release|Win32.ActiveCfg = Release|Win32
+		{A1A0D450-9609-5968-AA77-224EEDA18F73}.Release|Win32.Build.0 = Release|Win32
+		{D7E377CB-2648-C396-8EA1-B2E86E28CFB7}.Release|Win32.ActiveCfg = Release|Win32
+		{D7E377CB-2648-C396-8EA1-B2E86E28CFB7}.Release|Win32.Build.0 = Release|Win32
+EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+

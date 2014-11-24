@@ -1,0 +1,369 @@
+Name:
+stoc
+
+Dependencies:
+rdbmaker cppuhelper cppu jvmaccess sal salhelper jvmfwk xmlreader LIBXSTL:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\stoc
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\bin\*.rdb %_DEST%\rdb%_EXT%\*
+..\%__SRC%\misc\bootstrap.component %_DEST%\xml%_EXT%\bootstrap.component
+..\%__SRC%\misc\introspection.component %_DEST%\xml%_EXT%\introspection.component
+..\%__SRC%\misc\invocadapt.component %_DEST%\xml%_EXT%\invocadapt.component
+..\%__SRC%\misc\invocation.component %_DEST%\xml%_EXT%\invocation.component
+..\%__SRC%\misc\javaloader.component %_DEST%\xml%_EXT%\javaloader.component
+..\%__SRC%\misc\javavm.component %_DEST%\xml%_EXT%\javavm.component
+..\%__SRC%\misc\namingservice.component %_DEST%\xml%_EXT%\namingservice.component
+..\%__SRC%\misc\proxyfac.component %_DEST%\xml%_EXT%\proxyfac.component
+..\%__SRC%\misc\reflection.component %_DEST%\xml%_EXT%\reflection.component
+..\%__SRC%\misc\stocservices.component %_DEST%\xml%_EXT%\stocservices.component
+
+..\source\module-description.dtd %_DEST%\xml%_EXT%\module-description.dtd
+..\source\corereflection\corefl.xml %_DEST%\xml%_EXT%\reflection.uno.xml
+..\source\inspect\insp.xml %_DEST%\xml%_EXT%\introspection.uno.xml
+..\source\invocation\inv.xml %_DEST%\xml%_EXT%\invocation.uno.xml
+..\source\invocation_adapterfactory\invadp.xml %_DEST%\xml%_EXT%\invocadapt.uno.xml
+..\source\javavm\jen.xml %_DEST%\xml%_EXT%\javavm.uno.xml
+..\source\javaloader\javaloader.xml %_DEST%\xml%_EXT%\javaloader.uno.xml
+..\source\namingservice\namingservice.xml %_DEST%\xml%_EXT%\namingservice.uno.xml
+..\source\proxy_factory\proxyfac.xml %_DEST%\xml%_EXT%\proxyfac.uno.xml
+..\source\bootstrap\bootstrap.xml %_DEST%\xml%_EXT%\bootstrap.uno.xml
+..\source\typeconv\stocserv.xml %_DEST%\xml%_EXT%\stocserv.uno.xml
+
+Source Files:
+inc\pch\precompiled_stoc.cxx
+source\bootstrap\services.cxx
+source\corereflection\crarray.cxx
+source\corereflection\crbase.cxx
+source\corereflection\crcomp.cxx
+source\corereflection\crefl.cxx
+source\corereflection\crenum.cxx
+source\corereflection\criface.cxx
+source\defaultregistry\defaultregistry.cxx
+source\implementationregistration\implreg.cxx
+source\implementationregistration\mergekeys.cxx
+source\inspect\introspection.cxx
+source\invocation\invocation.cxx
+source\invocation_adapterfactory\iafactory.cxx
+source\javaloader\javaloader.cxx
+source\javavm\interact.cxx
+source\javavm\javavm.cxx
+source\javavm\jvmargs.cxx
+source\loader\dllcomponentloader.cxx
+source\namingservice\namingservice.cxx
+source\proxy_factory\proxyfac.cxx
+source\registry_tdprovider\functiondescription.cxx
+source\registry_tdprovider\methoddescription.cxx
+source\registry_tdprovider\rdbtdp_tdenumeration.cxx
+source\registry_tdprovider\structtypedescription.cxx
+source\registry_tdprovider\td.cxx
+source\registry_tdprovider\tdcomp.cxx
+source\registry_tdprovider\tdconsts.cxx
+source\registry_tdprovider\tdef.cxx
+source\registry_tdprovider\tdenum.cxx
+source\registry_tdprovider\tdiface.cxx
+source\registry_tdprovider\tdmodule.cxx
+source\registry_tdprovider\tdprop.cxx
+source\registry_tdprovider\tdprovider.cxx
+source\registry_tdprovider\tdservice.cxx
+source\registry_tdprovider\tdsingleton.cxx
+source\security\access_controller.cxx
+source\security\file_policy.cxx
+source\security\permissions.cxx
+source\servicemanager\servicemanager.cxx
+source\simpleregistry\simpleregistry.cxx
+source\simpleregistry\textualservices.cxx
+source\stocservices\stocservices.cxx
+source\tdmanager\tdmgr.cxx
+source\tdmanager\tdmgr_check.cxx
+source\tdmanager\tdmgr_tdenumeration.cxx
+source\typeconv\convert.cxx
+source\uriproc\ExternalUriReferenceTranslator.cxx
+source\uriproc\supportsService.cxx
+source\uriproc\UriReference.cxx
+source\uriproc\UriReferenceFactory.cxx
+source\uriproc\UriSchemeParser_vndDOTsunDOTstarDOTexpand.cxx
+source\uriproc\UriSchemeParser_vndDOTsunDOTstarDOTscript.cxx
+source\uriproc\VndSunStarPkgUrlReferenceFactory.cxx
+test\mergekeys_.cxx
+test\testconv.cxx
+test\testcorefl.cxx
+test\testiadapter.cxx
+test\testintrosp.cxx
+test\testloader.cxx
+test\testproxyfac.cxx
+test\testregistry.cxx
+test\testsmgr.cxx
+test\testsmgr2.cxx
+test\testsmgr_cpnt.cxx
+test\excomp\excomp.cxx
+test\excomp\excomp1.cxx
+test\excomp\excomp2.cxx
+test\javavm\testjavavm.cxx
+test\javavm\jvm_interaction\interactionhandler.cxx
+test\registry_tdprovider\testregistrytdprovider.cxx
+test\security\test_security.cxx
+test\tdmanager\testtdmanager.cxx
+test\uriproc\test_uriproc.cxx
+
+Header Files:
+inc\bootstrapservices.hxx
+inc\stocservices.hxx
+inc\pch\precompiled_stoc.hxx
+source\corereflection\base.hxx
+source\corereflection\lrucache.hxx
+source\implementationregistration\mergekeys.hxx
+source\javavm\interact.hxx
+source\javavm\javavm.hxx
+source\javavm\jvmargs.hxx
+source\registry_tdprovider\base.hxx
+source\registry_tdprovider\functiondescription.hxx
+source\registry_tdprovider\methoddescription.hxx
+source\registry_tdprovider\rdbtdp_tdenumeration.hxx
+source\registry_tdprovider\structtypedescription.hxx
+source\security\lru_cache.h
+source\security\permissions.h
+source\simpleregistry\textualservices.hxx
+source\tdmanager\lrucache.hxx
+source\tdmanager\tdmgr_common.hxx
+source\tdmanager\tdmgr_tdenumeration.hxx
+source\uriproc\ExternalUriReferenceTranslator.hxx
+source\uriproc\supportsService.hxx
+source\uriproc\UriReference.hxx
+source\uriproc\UriReferenceFactory.hxx
+source\uriproc\UriSchemeParser_vndDOTsunDOTstarDOTexpand.hxx
+source\uriproc\UriSchemeParser_vndDOTsunDOTstarDOTscript.hxx
+source\uriproc\VndSunStarPkgUrlReferenceFactory.hxx
+
+Patch Files:
+
+Makefiles:
+
+unosdk.mk
+
+inc\makefile.mk
+	PRJNAME=stoc
+	TARGET=inc
+
+source\cppumaker.mk
+
+source\bootstrap\makefile.mk
+	PRJNAME=stoc
+	TARGET=bootstrap
+	SLOFILES=
+	$(SLO)$/services.obj
+
+source\corereflection\makefile.mk
+	PRJNAME=stoc
+	TARGET=reflection.uno
+	SLOFILES=
+	$(SLO)$/crefl.obj
+	$(SLO)$/crbase.obj
+	$(SLO)$/crarray.obj
+	$(SLO)$/crcomp.obj
+	$(SLO)$/criface.obj
+	$(SLO)$/crenum.obj
+
+source\defaultregistry\makefile.mk
+	PRJNAME=stoc
+	TARGET=nestedreg
+	SLOFILES=
+	$(SLO)$/defaultregistry.obj
+
+source\implementationregistration\makefile.mk
+	PRJNAME=stoc
+	TARGET=implreg
+	SLOFILES=
+	$(SLO)$/mergekeys.obj
+	$(SLO)$/implreg.obj
+
+source\inspect\makefile.mk
+	PRJNAME=stoc
+	TARGET=introspection.uno
+	SLOFILES=
+	$(SLO)$/introspection.obj
+
+source\invocation\makefile.mk
+	PRJNAME=stoc
+	TARGET=invocation.uno
+	SLOFILES=
+	$(SLO)$/invocation.obj
+
+source\invocation_adapterfactory\makefile.mk
+	PRJNAME=stoc
+	TARGET=invocadapt.uno
+	SLOFILES=
+	$(SLO)$/iafactory.obj
+
+source\javaloader\makefile.mk
+	PRJNAME=stoc
+	TARGET=javaloader.uno
+	SLOFILES=$(SLO)$/javaloader.obj
+
+source\javavm\makefile.mk
+	PRJNAME=stoc
+	TARGET=javavm.uno
+	SLOFILES=
+	$(SLO)$/javavm.obj
+	$(SLO)$/jvmargs.obj
+	$(SLO)$/interact.obj
+
+source\loader\makefile.mk
+	PRJNAME=stoc
+	TARGET=shlibloader
+	SLOFILES=
+	$(SLO)$/dllcomponentloader.obj
+
+source\namingservice\makefile.mk
+	PRJNAME=stoc
+	TARGET=namingservice.uno
+	SLOFILES=
+	$(SLO)$/namingservice.obj
+
+source\proxy_factory\makefile.mk
+	PRJNAME=stoc
+	TARGET=proxyfac.uno
+	SLOFILES=
+	$(SLO)$/proxyfac.obj
+
+source\registry_tdprovider\makefile.mk
+	PRJNAME=stoc
+	TARGET=regtypeprov
+	SLOFILES=
+	$(SLO)$/tdprovider.obj
+	$(SLO)$/td.obj
+	$(SLO)$/tdef.obj
+	$(SLO)$/tdenum.obj
+	$(SLO)$/tdcomp.obj
+	$(SLO)$/tdconsts.obj
+	$(SLO)$/tdiface.obj
+	$(SLO)$/tdmodule.obj
+	$(SLO)$/tdprop.obj
+	$(SLO)$/tdservice.obj
+	$(SLO)$/tdsingleton.obj
+	$(SLO)$/rdbtdp_tdenumeration.obj
+	$(SLO)$/functiondescription.obj
+	$(SLO)$/methoddescription.obj
+	$(SLO)$/structtypedescription.obj
+
+source\security\makefile.mk
+	PRJNAME=stoc
+	TARGET=security
+	SLOFILES=
+	$(SLO)$/permissions.obj
+	$(SLO)$/access_controller.obj
+	$(SLO)$/file_policy.obj
+
+source\servicemanager\makefile.mk
+	PRJNAME=stoc
+	TARGET=servicemgr
+	SLOFILES=
+	$(SLO)$/servicemanager.obj
+
+source\simpleregistry\makefile.mk
+	PRJNAME=stoc
+	TARGET=simplereg
+	SLOFILES=
+	$(SLO)/simpleregistry.obj
+	$(SLO)/textualservices.obj
+
+source\stocservices\makefile.mk
+	PRJNAME=stoc
+	TARGET=stocservices
+	SLOFILES=
+	$(SLO)$/stocservices.obj
+
+source\tdmanager\makefile.mk
+	PRJNAME=stoc
+	TARGET=typemgr
+	SLOFILES=
+	$(SLO)$/tdmgr.obj
+	$(SLO)$/tdmgr_check.obj
+	$(SLO)$/tdmgr_tdenumeration.obj
+
+source\typeconv\makefile.mk
+	PRJNAME=stoc
+	TARGET=typeconverter
+	SLOFILES=
+	$(SLO)$/convert.obj
+
+source\uriproc\makefile.mk
+	PRJNAME=stoc
+	TARGET=uriproc
+	SLOFILES=
+	$(SLO)$/ExternalUriReferenceTranslator.obj
+	$(SLO)$/UriReference.obj
+	$(SLO)$/UriReferenceFactory.obj
+	$(SLO)$/UriSchemeParser_vndDOTsunDOTstarDOTexpand.obj
+	$(SLO)$/UriSchemeParser_vndDOTsunDOTstarDOTscript.obj
+	$(SLO)$/VndSunStarPkgUrlReferenceFactory.obj
+	$(SLO)$/supportsService.obj
+
+test\makefile.mk
+	PRJNAME=stoc
+	TARGET=stoc
+	TARGET1=testloader
+	TARGET2=testregistry
+	TARGET3=testsmgr
+	TARGET4=testcorefl
+	TARGET5=testinvocation
+	TARGET6=testintrosp
+	TARGET7=testconv
+	TARGET8=testproxyfac
+	TARGET9=testsmgr2
+
+test\excomp\makefile.mk
+	PRJNAME=stoc
+	TARGET=excomp
+	TARGET1=excomp1
+	TARGET2=excomp2
+	SLOFILES=
+	$(SLO)$/excomp1.obj
+	$(SLO)$/$(COMP1TYPELIST)_description.obj
+	$(SLO)$/excomp2.obj
+	$(SLO)$/$(COMP2TYPELIST)_description.obj
+
+test\javavm\makefile.mk
+	TARGET=testjavavm
+	PRJNAME=stoc
+	TARGET6=testjavavm
+
+test\javavm\jvm_interaction\makefile.mk
+	TARGET=jvminteraction
+	PRJNAME=stoc
+	TARGET6=$(TARGET)
+
+test\javavm\testapplet\makefile.mk
+	PRJNAME=testapplet
+	TARGET=TestApplet
+
+test\javavm\testcomponent\makefile.mk
+	PRJNAME=testcomponent
+	TARGET=JavaTestComponent
+
+test\registry_tdprovider\makefile.mk
+	PRJNAME:=stoc
+	TARGET:=test_registry_tdprovider
+	SLOFILES=$(SLO)$/testregistrytdprovider.obj
+
+test\security\makefile.mk
+	PRJNAME=stoc
+	TARGET=test_security
+
+test\tdmanager\makefile.mk
+	PRJNAME:=stoc
+	TARGET:=test_tdmanager
+	SLOFILES=$(SLO)$/testtdmanager.obj
+
+test\uriproc\makefile.mk
+	PRJNAME:=stoc
+	TARGET:=test_uriproc
+	SLOFILES=$(SHL1OBJS)
+
+util\makefile.mk
+	PRJNAME=bootstrap
+	TARGET=bootstrap.uno

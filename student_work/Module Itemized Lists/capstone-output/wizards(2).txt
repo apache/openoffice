@@ -1,0 +1,157 @@
+Name:
+wizards
+
+Dependencies:
+L10N:l10n rsc javaunohelper unoil LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\pck%_EXT%
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\*.zip %_DEST%\pck%_EXT%\*.zip
+ ..\%__SRC%\bin\wzi*.res %_DEST%\bin%_EXT%\wzi*.res
+..\%__SRC%\bin\dbw*.res %_DEST%\bin%_EXT%\dbw*.res
+..\%__SRC%\bin\tpl*.res %_DEST%\bin%_EXT%\tpl*.res
+..\%__SRC%\bin\imp*.res %_DEST%\bin%_EXT%\imp*.res
+..\%__SRC%\bin\wwz*.res %_DEST%\bin%_EXT%\wwz*.res
+..\%__SRC%\bin\eur*.res %_DEST%\bin%_EXT%\eur*.res
+..\%__SRC%\bin\cal*.res %_DEST%\bin%_EXT%\cal*.res
+..\%__SRC%\bin\com*.res %_DEST%\bin%_EXT%\com*.res
+REM ..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\misc\agenda.component %_DEST%\xml%_EXT%\agenda.component
+..\%__SRC%\misc\fax.component %_DEST%\xml%_EXT%\fax.component
+..\%__SRC%\misc\form.component %_DEST%\xml%_EXT%\form.component
+..\%__SRC%\misc\letter.component %_DEST%\xml%_EXT%\letter.component
+..\%__SRC%\misc\query.component %_DEST%\xml%_EXT%\query.component
+..\%__SRC%\misc\report.component %_DEST%\xml%_EXT%\report.component
+..\%__SRC%\misc\table.component %_DEST%\xml%_EXT%\table.component
+..\%__SRC%\misc\web.component %_DEST%\xml%_EXT%\web.component
+
+Source Files:
+
+Header Files:
+util\helpids.h
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\wizards\makefile.mk
+	PRJNAME=wizards
+	TARGET=wizards_common
+
+com\sun\star\wizards\agenda\makefile.mk
+	PRJNAME=wizards
+	TARGET=agenda
+
+com\sun\star\wizards\fax\makefile.mk
+	PRJNAME=wizards
+	TARGET=fax
+
+com\sun\star\wizards\form\makefile.mk
+	PRJNAME=wizards
+	TARGET=form
+
+com\sun\star\wizards\letter\makefile.mk
+	PRJNAME=wizards
+	TARGET=letter
+
+com\sun\star\wizards\query\makefile.mk
+	PRJNAME=wizards
+	TARGET=query
+
+com\sun\star\wizards\report\makefile.mk
+	PRJNAME=wizards
+	TARGET=report
+
+com\sun\star\wizards\reportbuilder\makefile.mk
+	PRJNAME=wizards
+	TARGET=reportbuilderwizard
+
+com\sun\star\wizards\reportbuilder\layout\makefile.mk
+	PRJNAME=wizards
+	TARGET=reportbuilderwizardlayouts
+
+com\sun\star\wizards\table\makefile.mk
+	PRJNAME=wizards
+	TARGET=table
+
+com\sun\star\wizards\web\makefile.mk
+	PRJNAME=wizards
+	TARGET=web
+
+com\sun\star\wizards\web\data\makefile.mk
+	PRJNAME=wizards
+	TARGET=web_data
+
+com\sun\star\wizards\web\export\makefile.mk
+	PRJNAME=wizards
+	TARGET=web_export
+
+source\config\makefile.mk
+	PRJNAME=wizards
+	TARGET=configall
+
+source\configshare\makefile.mk
+	PRJNAME=wizards
+	TARGET=configshare
+
+source\depot\makefile.mk
+	PRJNAME=wizards
+	TARGET=depotall
+
+source\euro\makefile.mk
+	PRJNAME=wizards
+	TARGET=euro
+
+source\formwizard\makefile.mk
+	PRJNAME=wizards
+	TARGET=formwizardall
+
+source\gimmicks\makefile.mk
+	PRJNAME=wizards
+	TARGET=gimmicks
+
+source\imagelists\makefile.mk
+	PRJNAME=wizards
+	TARGET=wzimglst
+
+source\importwizard\makefile.mk
+	PRJNAME=wizards
+	TARGET=importwizardall
+
+source\launcher\makefile.mk
+	PRJNAME=wizards
+	TARGET=launcher
+
+source\schedule\makefile.mk
+	PRJNAME=wizards
+	TARGET=scheduleall
+
+source\standard\makefile.mk
+	PRJNAME=wizards
+	TARGET=standard
+
+source\template\makefile.mk
+	PRJNAME=wizards
+	TARGET=template
+
+source\tools\makefile.mk
+	PRJNAME=wizards
+	TARGET=tools
+
+source\tutorials\makefile.mk
+	PRJNAME=wizards
+	TARGET=tutorials
+
+source\webwizard\makefile.mk
+	PRJNAME=wizards
+	TARGET=webwizardall
+
+util\makefile.mk
+	PRJNAME=wizards
+	TARGET=NOTARGET
+
+util\target.pmk

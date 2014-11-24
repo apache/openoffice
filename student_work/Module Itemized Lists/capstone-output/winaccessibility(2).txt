@@ -1,0 +1,150 @@
+Name:
+winaccessibility
+
+Dependencies:
+vcl toolkit NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\winaccessibility
+mkdir: %_DEST%\inc%_EXT%\winaccessibility\UAccCOM
+
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\misc\winaccessibility.component %_DEST%\xml%_EXT%\winaccessibility.component
+
+#..\%__SRC%\inc\*.hxx %_DEST%\inc%_EXT%\winaccessibility\*.hxx
+#..\%__SRC%\inc\UAccCOM\*.h %_DEST%\inc%_EXT%\winaccessibility\UAccCOM\*.h
+#..\%__SRC%\inc\UAccCOM\*.c %_DEST%\inc%_EXT%\winaccessibility\UAccCOM\*.c
+
+Source Files:
+source\service\AccComponentEventListener.cxx
+source\service\AccContainerEventListener.cxx
+source\service\AccDescendantManagerEventListener.cxx
+source\service\AccDialogEventListener.cxx
+source\service\AccEventListener.cxx
+source\service\AccFrameEventListener.cxx
+source\service\AccListEventListener.cxx
+source\service\AccMenuEventListener.cxx
+source\service\AccObject.cxx
+source\service\AccObjectContainerEventListener.cxx
+source\service\AccObjectManagerAgent.cxx
+source\service\AccObjectWinManager.cxx
+source\service\AccParagraphEventListener.cxx
+source\service\AccResource.cxx
+source\service\AccTableEventListener.cxx
+source\service\AccTextComponentEventListener.cxx
+source\service\AccTopWindowListener.cxx
+source\service\AccTreeEventListener.cxx
+source\service\AccWindowEventListener.cxx
+source\service\checkmt.cxx
+source\service\msaaservice_impl.cxx
+source\service\ResIDGenerator.cxx
+source\UAccCOMIDL\dlldata.c
+
+Header Files:
+inc\AccComponentEventListener.hxx
+inc\AccContainerEventListener.hxx
+inc\AccDescendantManagerEventListener.hxx
+inc\AccDialogEventListener.hxx
+inc\AccEventListener.hxx
+inc\AccFrameEventListener.hxx
+inc\accHelper.hxx
+inc\AccListEventListener.hxx
+inc\AccMenuEventListener.hxx
+inc\AccObject.hxx
+inc\AccObjectContainerEventListener.hxx
+inc\AccObjectManagerAgent.hxx
+inc\AccObjectWinManager.hxx
+inc\AccParagraphEventListener.hxx
+inc\AccResource.hxx
+inc\AccTableEventListener.hxx
+inc\AccTextComponentEventListener.hxx
+inc\AccTopWindowListener.hxx
+inc\AccTreeEventListener.hxx
+inc\AccWindowEventListener.hxx
+inc\act.hxx
+inc\g_msacc.hxx
+inc\ResIDGenerator.hxx
+inc\UAccCOM2.h
+inc\unomsaaevent.hxx
+source\service\checkmt.hxx
+source\UAccCOM\AccAction.h
+source\UAccCOM\AccActionBase.h
+source\UAccCOM\acccommon.h
+source\UAccCOM\AccComponent.h
+source\UAccCOM\AccComponentBase.h
+source\UAccCOM\AccEditableText.h
+source\UAccCOM\AccessibleKeyStroke.h
+source\UAccCOM\AccHyperLink.h
+source\UAccCOM\AccHypertext.h
+source\UAccCOM\AccImage.h
+source\UAccCOM\AccRelation.h
+source\UAccCOM\AccTable.h
+source\UAccCOM\AccText.h
+source\UAccCOM\AccTextBase.h
+source\UAccCOM\AccValue.h
+source\UAccCOM\CheckEnableAccessible.h
+source\UAccCOM\EnumVariant.h
+source\UAccCOM\MAccessible.h
+source\UAccCOM\Resource.h
+source\UAccCOM\stdafx.h
+source\UAccCOM\UNOXWrapper.h
+
+Patch Files:
+
+Makefiles:
+
+source\service\makefile.mk
+	PRJNAME=winaccessibility
+	TARGET=winaccessibility
+	SLOFILES=$(SLO)$/AccObject.obj
+	$(SLO)$/ResIDGenerator.obj
+	$(SLO)$/AccObjectWinManager.obj
+	$(SLO)$/AccObjectManagerAgent.obj
+	$(SLO)$/AccEventListener.obj
+	$(SLO)$/AccComponentEventListener.obj
+	$(SLO)$/AccContainerEventListener.obj
+	$(SLO)$/AccDialogEventListener.obj
+	$(SLO)$/AccFrameEventListener.obj
+	$(SLO)$/AccWindowEventListener.obj
+	$(SLO)$/AccMenuEventListener.obj
+	$(SLO)$/AccTextComponentEventListener.obj
+	$(SLO)$/AccObjectContainerEventListener.obj
+	$(SLO)$/AccParagraphEventListener.obj
+	$(SLO)$/AccDescendantManagerEventListener.obj
+	$(SLO)$/AccListEventListener.obj
+	$(SLO)$/AccTableEventListener.obj
+	$(SLO)$/AccTreeEventListener.obj
+	$(SLO)$/AccTopWindowListener.obj
+	$(SLO)$/msaaservice_impl.obj
+	$(SLO)$/checkmt.obj
+	$(SLO)$/AccResource.obj
+
+source\UAccCOM\makefile.mk
+	PRJNAME=winaccessibility
+	TARGET=UAccCOM
+	$(TARGET).rc
+	SLOFILES=
+	$(SLO)$/AccAction.obj
+	$(SLO)$/AccActionBase.obj
+	$(SLO)$/AccComponent.obj
+	$(SLO)$/AccComponentBase.obj
+	$(SLO)$/AccEditableText.obj
+	$(SLO)$/AccHyperLink.obj
+	$(SLO)$/AccHypertext.obj
+	$(SLO)$/AccImage.obj
+	$(SLO)$/AccRelation.obj
+	$(SLO)$/AccText.obj
+	$(SLO)$/AccValue.obj
+	$(SLO)$/EnumVariant.obj
+	$(SLO)$/StdAfx.obj
+	$(SLO)$/UAccCOM.obj
+	$(SLO)$/UNOXWrapper.obj
+	$(SLO)$/AccTable.obj
+	$(SLO)$/AccTextBase.obj
+	$(SLO)$/MAccessible.obj
+	$(SLO)$/CheckEnableAccessible.obj
+	
+
+source\UAccCOMIDL\makefile.mk
+	PRJNAME=winaccessibility
+	TARGET=UAccComIDL

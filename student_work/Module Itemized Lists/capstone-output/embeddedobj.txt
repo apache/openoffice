@@ -1,0 +1,152 @@
+Name:
+embeddedobj
+
+Dependencies:
+offuh sal cppu cppuhelper comphelper tools unotools vos LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\xml%_EXT%\registry\spool
+..\%__SRC%\misc\*.map %_DEST%\bin%_EXT%\*.map
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%\lib*.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\dtd\*.dtd %_DEST%\bin%_EXT%\*.*
+..\%__SRC%\misc\embobj.component %_DEST%\xml%_EXT%\embobj.component
+..\%__SRC%\misc\emboleobj.component %_DEST%\xml%_EXT%\emboleobj.component
+
+Source Files:
+inc\pch\precompiled_embeddedobj.cxx
+source\commonembedding\embedobj.cxx
+source\commonembedding\inplaceobj.cxx
+source\commonembedding\miscobj.cxx
+source\commonembedding\persistence.cxx
+source\commonembedding\register.cxx
+source\commonembedding\specialobject.cxx
+source\commonembedding\visobj.cxx
+source\commonembedding\xfactory.cxx
+source\general\docholder.cxx
+source\general\dummyobject.cxx
+source\general\intercept.cxx
+source\general\xcreator.cxx
+source\msole\advisesink.cxx
+source\msole\closepreventer.cxx
+source\msole\graphconvert.cxx
+source\msole\olecomponent.cxx
+source\msole\oleembed.cxx
+source\msole\olemisc.cxx
+source\msole\olepersist.cxx
+source\msole\oleregister.cxx
+source\msole\olevisual.cxx
+source\msole\olewrapclient.cxx
+source\msole\ownview.cxx
+source\msole\xdialogcreator.cxx
+source\msole\xolefactory.cxx
+test\Container1\nativelib\nativeview.c
+test\MainThreadExecutor\register.cxx
+test\MainThreadExecutor\xexecutor.cxx
+test\mtexecutor\bitmapcreator.cxx
+test\mtexecutor\mainthreadexecutor.cxx
+test\mtexecutor\mteregister.cxx
+
+Header Files:
+inc\pch\precompiled_embeddedobj.hxx
+source\commonembedding\xfactory.hxx
+source\inc\closepreventer.hxx
+source\inc\commonembobj.hxx
+source\inc\docholder.hxx
+source\inc\dummyobject.hxx
+source\inc\intercept.hxx
+source\inc\oleembobj.hxx
+source\inc\specialobject.hxx
+source\inc\targetstatecontrol.hxx
+source\inc\xcreator.hxx
+source\msole\advisesink.hxx
+source\msole\mtnotification.hxx
+source\msole\olecomponent.hxx
+source\msole\olewrapclient.hxx
+source\msole\ownview.hxx
+source\msole\platform.h
+source\msole\xdialogcreator.hxx
+source\msole\xolefactory.hxx
+test\Container1\nativelib\nativeview.h
+test\MainThreadExecutor\xexecutor.hxx
+test\mtexecutor\bitmapcreator.hxx
+test\mtexecutor\mainthreadexecutor.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=embeddedobj
+
+qa\embedding\makefile.mk
+	TARGET=EmbeddingUnitTest
+	PRJNAME=embeddedobj
+
+source\commonembedding\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=commonembed
+	SLOFILES=
+	$(SLO)$/register.obj
+	$(SLO)$/xfactory.obj
+	$(SLO)$/miscobj.obj
+	$(SLO)$/embedobj.obj
+	$(SLO)$/specialobject.obj
+	$(SLO)$/persistence.obj
+	$(SLO)$/inplaceobj.obj
+	$(SLO)$/visobj.obj
+
+source\general\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=embedobj
+	SLOFILES=
+	$(SLO)$/xcreator.obj
+	$(SLO)$/docholder.obj
+	$(SLO)$/dummyobject.obj
+	$(SLO)$/intercept.obj
+
+source\msole\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=emboleobj
+	SLOFILES=
+	$(SLO)$/closepreventer.obj
+	$(SLO)$/oleregister.obj
+	$(SLO)$/xolefactory.obj
+	$(SLO)$/olepersist.obj
+	$(SLO)$/oleembed.obj
+	$(SLO)$/olevisual.obj
+	$(SLO)$/olemisc.obj
+	$(SLO)$/ownview.obj
+	SLOFILES+=
+	$(SLO)$/graphconvert.obj
+	$(SLO)$/olecomponent.obj
+	$(SLO)$/olewrapclient.obj
+	$(SLO)$/xdialogcreator.obj
+	$(SLO)$/advisesink.obj
+
+test\Container1\makefile.mk
+	TARGET=EmbedContFrame
+	PRJNAME=embeddedobj
+
+test\Container1\nativelib\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=nativeview
+	SLOFILES=$(SLO)$/nativeview.obj
+
+test\MainThreadExecutor\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=mainexec
+
+test\mtexecutor\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=mainthrexec
+	SLOFILES=
+	$(SLO)$/mainthreadexecutor.obj
+	$(SLO)$/bitmapcreator.obj
+	$(SLO)$/mteregister.obj
+
+util\makefile.mk
+	PRJNAME=embeddedobj
+	TARGET=embobj

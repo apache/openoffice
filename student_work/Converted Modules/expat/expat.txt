@@ -1,0 +1,398 @@
+build -- version: 275224
+
+
+=============
+Building module expat
+=============
+
+Entering /cygdrive/c/steve/TestArea/main/expat
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/expat-2.1.0 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/expat-2.1.0 ./wntmsci12.pro/misc/build/expat-2.1.0_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/expat-2.1.0_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/dd7dab7a5fea97d2a6a43f511449b7cd-expat-2.1.0.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_so_expat
+expat-2.1.0/
+expat-2.1.0/COPYING
+expat-2.1.0/CMakeLists.txt
+expat-2.1.0/expat.dsw
+expat-2.1.0/conftools/
+expat-2.1.0/conftools/PrintPath
+expat-2.1.0/conftools/mkinstalldirs
+expat-2.1.0/conftools/expat.m4
+expat-2.1.0/conftools/config.sub
+expat-2.1.0/conftools/install-sh
+expat-2.1.0/conftools/ltmain.sh
+expat-2.1.0/conftools/ac_c_bigendian_cross.m4
+expat-2.1.0/conftools/config.guess
+expat-2.1.0/conftools/get-version.sh
+expat-2.1.0/README
+expat-2.1.0/examples/
+expat-2.1.0/examples/outline.c
+expat-2.1.0/examples/elements.c
+expat-2.1.0/examples/elements.dsp
+expat-2.1.0/examples/outline.dsp
+expat-2.1.0/bcb5/
+expat-2.1.0/bcb5/expat_static.mak
+expat-2.1.0/bcb5/outline.mak
+expat-2.1.0/bcb5/xmlwf.bpf
+expat-2.1.0/bcb5/all_projects.bpg
+expat-2.1.0/bcb5/expatw.mak
+expat-2.1.0/bcb5/expat.mak
+expat-2.1.0/bcb5/xmlwf.bpr
+expat-2.1.0/bcb5/libexpatw_mtd.def
+expat-2.1.0/bcb5/expatw.bpf
+expat-2.1.0/bcb5/makefile.mak
+expat-2.1.0/bcb5/outline.bpr
+expat-2.1.0/bcb5/expatw.bpr
+expat-2.1.0/bcb5/expat.bpf
+expat-2.1.0/bcb5/setup.bat
+expat-2.1.0/bcb5/outline.bpf
+expat-2.1.0/bcb5/elements.bpr
+expat-2.1.0/bcb5/elements.mak
+expat-2.1.0/bcb5/elements.bpf
+expat-2.1.0/bcb5/README.txt
+expat-2.1.0/bcb5/expat_static.bpf
+expat-2.1.0/bcb5/expatw_static.mak
+expat-2.1.0/bcb5/expatw_static.bpf
+expat-2.1.0/bcb5/libexpat_mtd.def
+expat-2.1.0/bcb5/expat_static.bpr
+expat-2.1.0/bcb5/expatw_static.bpr
+expat-2.1.0/bcb5/expat.bpr
+expat-2.1.0/bcb5/xmlwf.mak
+expat-2.1.0/m4/
+expat-2.1.0/m4/ltoptions.m4
+expat-2.1.0/m4/lt~obsolete.m4
+expat-2.1.0/m4/libtool.m4
+expat-2.1.0/m4/ltsugar.m4
+expat-2.1.0/m4/ltversion.m4
+expat-2.1.0/ConfigureChecks.cmake
+expat-2.1.0/Changes
+expat-2.1.0/amiga/
+expat-2.1.0/amiga/expat_68k_handler_stubs.c
+expat-2.1.0/amiga/expat_base.h
+expat-2.1.0/amiga/include/
+expat-2.1.0/amiga/include/libraries/
+expat-2.1.0/amiga/include/libraries/expat.h
+expat-2.1.0/amiga/include/interfaces/
+expat-2.1.0/amiga/include/interfaces/expat.h
+expat-2.1.0/amiga/include/proto/
+expat-2.1.0/amiga/include/proto/expat.h
+expat-2.1.0/amiga/include/inline4/
+expat-2.1.0/amiga/include/inline4/expat.h
+expat-2.1.0/amiga/expat_68k.c
+expat-2.1.0/amiga/expat_vectors.c
+expat-2.1.0/amiga/expat_68k.h
+expat-2.1.0/amiga/Makefile
+expat-2.1.0/amiga/README.txt
+expat-2.1.0/amiga/launch.c
+expat-2.1.0/amiga/expat.xml
+expat-2.1.0/amiga/expat_lib.c
+expat-2.1.0/configure
+expat-2.1.0/doc/
+expat-2.1.0/doc/reference.html
+expat-2.1.0/doc/valid-xhtml10.png
+expat-2.1.0/doc/expat.png
+expat-2.1.0/doc/style.css
+expat-2.1.0/doc/xmlwf.1
+expat-2.1.0/doc/xmlwf.sgml
+expat-2.1.0/expat.pc.in
+expat-2.1.0/win32/
+expat-2.1.0/win32/MANIFEST.txt
+expat-2.1.0/win32/README.txt
+expat-2.1.0/win32/expat.iss
+expat-2.1.0/tests/
+expat-2.1.0/tests/runtests.c
+expat-2.1.0/tests/chardata.c
+expat-2.1.0/tests/xmltest.sh
+expat-2.1.0/tests/minicheck.h
+expat-2.1.0/tests/runtestspp.cpp
+expat-2.1.0/tests/README.txt
+expat-2.1.0/tests/benchmark/
+expat-2.1.0/tests/benchmark/benchmark.dsw
+expat-2.1.0/tests/benchmark/benchmark.dsp
+expat-2.1.0/tests/benchmark/README.txt
+expat-2.1.0/tests/benchmark/benchmark.c
+expat-2.1.0/tests/chardata.h
+expat-2.1.0/tests/minicheck.c
+expat-2.1.0/expat_config.h.cmake
+expat-2.1.0/CMake.README
+expat-2.1.0/MANIFEST
+expat-2.1.0/expat_config.h.in
+expat-2.1.0/vms/
+expat-2.1.0/vms/descrip.mms
+expat-2.1.0/vms/expat_config.h
+expat-2.1.0/vms/README.vms
+expat-2.1.0/Makefile.in
+expat-2.1.0/xmlwf/
+expat-2.1.0/xmlwf/xmlfile.h
+expat-2.1.0/xmlwf/xmlurl.h
+expat-2.1.0/xmlwf/readfilemap.c
+expat-2.1.0/xmlwf/win32filemap.c
+expat-2.1.0/xmlwf/unixfilemap.c
+expat-2.1.0/xmlwf/xmlmime.h
+expat-2.1.0/xmlwf/ct.c
+expat-2.1.0/xmlwf/xmlwf.dsp
+expat-2.1.0/xmlwf/filemap.h
+expat-2.1.0/xmlwf/codepage.c
+expat-2.1.0/xmlwf/xmlfile.c
+expat-2.1.0/xmlwf/xmlmime.c
+expat-2.1.0/xmlwf/xmlwf.c
+expat-2.1.0/xmlwf/xmlwin32url.cxx
+expat-2.1.0/xmlwf/xmltchar.h
+expat-2.1.0/xmlwf/codepage.h
+expat-2.1.0/configure.in
+expat-2.1.0/lib/
+expat-2.1.0/lib/xmltok_ns.c
+expat-2.1.0/lib/amigaconfig.h
+expat-2.1.0/lib/xmltok.h
+expat-2.1.0/lib/expat_external.h
+expat-2.1.0/lib/iasciitab.h
+expat-2.1.0/lib/Makefile.MPW
+expat-2.1.0/lib/libexpat.def
+expat-2.1.0/lib/winconfig.h
+expat-2.1.0/lib/nametab.h
+expat-2.1.0/lib/internal.h
+expat-2.1.0/lib/xmlrole.c
+expat-2.1.0/lib/expatw.dsp
+expat-2.1.0/lib/asciitab.h
+expat-2.1.0/lib/utf8tab.h
+expat-2.1.0/lib/libexpatw.def
+expat-2.1.0/lib/xmlparse.c
+expat-2.1.0/lib/xmltok.c
+expat-2.1.0/lib/ascii.h
+expat-2.1.0/lib/xmltok_impl.h
+expat-2.1.0/lib/latin1tab.h
+expat-2.1.0/lib/expatw_static.dsp
+expat-2.1.0/lib/macconfig.h
+expat-2.1.0/lib/expat.dsp
+expat-2.1.0/lib/xmlrole.h
+expat-2.1.0/lib/xmltok_impl.c
+expat-2.1.0/lib/expat_static.dsp
+expat-2.1.0/lib/expat.h
+expat-2.1.0/aclocal.m4
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/expat-2.1.0/lib/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/expat-2.1.0/lib/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/expat-2.1.0/lib/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/expat-2.1.0/lib/makefile.mk
+cd ./wntmsci12.pro/misc/build && cat ../../..//expat-2.1.0.patch ../../..//expat-winapi.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_so_expat
+patching file expat-2.1.0/lib/makefile.mk
+patching file expat-2.1.0/lib/expat_external.h
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_so_expat
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_so_expat
+mkdir.exe ./wntmsci12.pro/misc/build/expat-2.1.0/lib
+cd ./wntmsci12.pro/misc/build/expat-2.1.0/lib && dmake    && C:/cygwin/bin/touch.exe C:/steve/TestArea/main/expat/./wntmsci12.pro/misc/build/so_built_so_expat
+Making:    all_expat.dpslo
+Compiling: expat/wntmsci12.pro/misc/build/expat-2.1.0/lib/xmlparse.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I.. -I. -I../../../../../wntmsci12.pro/inc/expat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DCOMPILED_FROM_DSP -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/xmlparse.obj xmlparse.c
+xmlparse.c
+xmlparse.c(4916) : warning C4100: 'nextPtr' : unreferenced formal parameter
+xmlparse.c(4915) : warning C4100: 'end' : unreferenced formal parameter
+xmlparse.c(4914) : warning C4100: 's' : unreferenced formal parameter
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkcVJRmx > ../../../../../wntmsci12.pro/misc/s_xmlparse.dpcc
+Compiling: expat/wntmsci12.pro/misc/build/expat-2.1.0/lib/xmlrole.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I.. -I. -I../../../../../wntmsci12.pro/inc/expat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DCOMPILED_FROM_DSP -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/xmlrole.obj xmlrole.c
+xmlrole.c
+xmlrole.c(200) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(199) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(198) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(221) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(220) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(219) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(269) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(268) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(267) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(286) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(285) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(284) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(303) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(302) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(301) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(323) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(322) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(321) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(442) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(441) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(440) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(462) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(461) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(460) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(507) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(506) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(505) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(524) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(523) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(522) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(564) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(563) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(562) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(610) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(609) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(608) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(627) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(626) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(625) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(644) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(643) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(642) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(661) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(660) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(659) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(702) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(701) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(700) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(719) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(718) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(717) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(737) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(736) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(735) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(758) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(757) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(756) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(776) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(775) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(774) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(838) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(837) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(836) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(857) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(856) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(855) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(877) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(876) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(875) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(894) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(893) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(892) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(911) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(910) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(909) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(972) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(971) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(970) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(989) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(988) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(987) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1077) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1076) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1075) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1102) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1101) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1100) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1120) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1119) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1118) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1141) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1140) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1139) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1171) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1170) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1169) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1245) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1244) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1243) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1263) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1262) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1261) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1282) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1281) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1280) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1299) : warning C4100: 'enc' : unreferenced formal parameter
+xmlrole.c(1298) : warning C4100: 'end' : unreferenced formal parameter
+xmlrole.c(1297) : warning C4100: 'ptr' : unreferenced formal parameter
+xmlrole.c(1296) : warning C4100: 'tok' : unreferenced formal parameter
+xmlrole.c(1295) : warning C4100: 'state' : unreferenced formal parameter
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkoVasWI > ../../../../../wntmsci12.pro/misc/s_xmlrole.dpcc
+Compiling: expat/wntmsci12.pro/misc/build/expat-2.1.0/lib/xmltok.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I.. -I. -I../../../../../wntmsci12.pro/inc/expat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DCOMPILED_FROM_DSP -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/xmltok.obj xmltok.c
+xmltok.c
+xmltok.c(125) : warning C4100: 'p' : unreferenced formal parameter
+xmltok.c(125) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(131) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(137) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(145) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(151) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(159) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(165) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(171) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(178) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(285) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1524) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1568) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1686) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(322) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(429) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(454) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(487) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(620) : warning C4244: '=' : conversion from 'int' to 'char', possible loss of data
+xmltok.c(620) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(621) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(632) : warning C4244: '=' : conversion from 'int' to 'char', possible loss of data
+xmltok.c(632) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(633) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(178) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(285) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1524) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1568) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1686) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(178) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(285) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1524) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1568) : warning C4100: 'enc' : unreferenced formal parameter
+c:\steve\testarea\main\expat\wntmsci12.pro\misc\build\expat-2.1.0\lib\xmltok_impl.c(1686) : warning C4100: 'enc' : unreferenced formal parameter
+xmltok.c(941) : warning C4100: 'enc' : unreferenced formal parameter
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk7d1bTN > ../../../../../wntmsci12.pro/misc/s_xmltok.dpcc
+------------------------------
+using: 
+using: ../../../../../wntmsci12.pro/slb/ascii_expat_xmlparse.lib
+------------------------------
+Making:    ascii_expat_xmlparse.lib
+lib   /OUT:../../../../../wntmsci12.pro/slb/ascii_expat_xmlparse.lib @C:/cygwin/tmp/mkUh7Gou
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../../wntmsci12.pro/slo/xmlparse.obj 
+
+Making:    ../../../../../wntmsci12.pro/slo/UNICODE_xmlparse.obj
+cat C:/cygwin/tmp/mkwhIh8Z
+-Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I.. -I. -I../../../../../wntmsci12.pro/inc/expat -I../inc -I../../../../../inc/pch -I../../../../../inc -I../../../../../WIN/inc -I../../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DCOMPILED_FROM_DSP -DXML_UNICODE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../../wntmsci12.pro/slo/UNICODE_xmlparse.obj xmlparse.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkkOs6Te
+xmlparse.c
+xmlparse.c(4916) : warning C4100: 'nextPtr' : unreferenced formal parameter
+xmlparse.c(4915) : warning C4100: 'end' : unreferenced formal parameter
+xmlparse.c(4914) : warning C4100: 's' : unreferenced formal parameter
+------------------------------
+using: 
+using: ../../../../../wntmsci12.pro/slb/expat_xmlparse.lib
+------------------------------
+Making:    expat_xmlparse.lib
+lib   /OUT:../../../../../wntmsci12.pro/slb/expat_xmlparse.lib @C:/cygwin/tmp/mkQHwjDP
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../../wntmsci12.pro/slo/UNICODE_xmlparse.obj 
+
+------------------------------
+using: 
+using: ../../../../../wntmsci12.pro/slb/expat_xmltok.lib
+------------------------------
+Making:    expat_xmltok.lib
+lib   /OUT:../../../../../wntmsci12.pro/slb/expat_xmltok.lib @C:/cygwin/tmp/mkLEFzVV
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../../wntmsci12.pro/slo/xmlrole.obj ../../../../../wntmsci12.pro/slo/xmltok.obj 
+
+Making:    all_expat.dpslo
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_so_expat
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_so_expat
+expat deliver
+deliver -- version: 275594
+COPY: ../wntmsci12.pro/misc/build/expat-2.1.0/lib/expat_external.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/expat_external.h
+COPY: ../wntmsci12.pro/slb/expat_xmltok.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/expat_xmltok.lib
+COPY: ../wntmsci12.pro/slb/expat_xmlparse.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/expat_xmlparse.lib
+COPY: ../wntmsci12.pro/slb/ascii_expat_xmlparse.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ascii_expat_xmlparse.lib
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/expat/deliver.log
+Module 'expat' delivered successfully. 4 files copied, 9 files unchanged

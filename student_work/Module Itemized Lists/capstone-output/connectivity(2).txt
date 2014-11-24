@@ -1,0 +1,1095 @@
+Name:
+connectivity
+
+Dependencies:
+shell  L10N:l10n comphelper SO:moz_prebuilt svl UNIXODBC:unixODBC unoil javaunohelper HSQLDB:hsqldb qadevOOo officecfg NSS:nss LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.jnilib %_DEST%\lib%_EXT%\*.jnilib
+..\%__SRC%\slb\connectivity*.* %_DEST%\lib%_EXT%\connectivity*.*
+..\%__SRC%\lib\idbt* %_DEST%\lib%_EXT%\idbt*
+..\%__SRC%\lib\dbt*.lib %_DEST%\lib%_EXT%\dbt*.lib
+
+..\source\cpool\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\adabas\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\ado\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\kab\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\macab\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\file\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\flat\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\dbase\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\jdbc\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\odbc\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\evoab2\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\calc\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\drivers\mysql\*.xml %_DEST%\xml%_EXT%\*.xml
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+
+mkdir: %_DEST%\inc%_EXT%\connectivity
+mkdir: %_DEST%\inc%_EXT%\connectivity\sdbcx
+mkdir: %_DEST%\xml%_EXT%\registry\spool\DataAccess
+
+..\inc\connectivity\*.hxx %_DEST%\inc%_EXT%\connectivity\*.hxx
+..\%__SRC%\inc\sqlbison.hxx %_DEST%\inc%_EXT%\connectivity\sqlbison.hxx
+..\inc\connectivity\sdbcx\*.hxx %_DEST%\inc%_EXT%\connectivity\sdbcx\*.hxx
+#..\version.mk %_DEST%\inc%_EXT%\connectivity\version.mk
+..\%__SRC%\misc\registry\data\org\openoffice\Office\DataAccess\*.xcu %_DEST%\xml%_EXT%\registry\spool\DataAccess\*.xcu
+..\%COMMON_OUTDIR%\bin\fcfg_drivers_*.zip %_DEST%\pck%_EXT%\fcfg_drivers_*.zip
+..\%__SRC%\bin\fcfg_drivers_*.zip %_DEST%\pck%_EXT%\fcfg_drivers_*.zip
+..\%__SRC%\misc\adabas.component %_DEST%\xml%_EXT%\adabas.component
+..\%__SRC%\misc\ado.component %_DEST%\xml%_EXT%\ado.component
+..\%__SRC%\misc\calc.component %_DEST%\xml%_EXT%\calc.component
+..\%__SRC%\misc\dbase.component %_DEST%\xml%_EXT%\dbase.component
+..\%__SRC%\misc\dbpool2.component %_DEST%\xml%_EXT%\dbpool2.component
+..\%__SRC%\misc\dbtools.component %_DEST%\xml%_EXT%\dbtools.component
+..\%__SRC%\misc\evoab.component %_DEST%\xml%_EXT%\evoab.component
+..\%__SRC%\misc\flat.component %_DEST%\xml%_EXT%\flat.component
+..\%__SRC%\misc\hsqldb.component %_DEST%\xml%_EXT%\hsqldb.component
+..\%__SRC%\misc\jdbc.component %_DEST%\xml%_EXT%\jdbc.component
+..\%__SRC%\misc\kab1.component %_DEST%\xml%_EXT%\kab1.component
+..\%__SRC%\misc\macab1.component %_DEST%\xml%_EXT%\macab1.component
+..\%__SRC%\misc\mysql.component %_DEST%\xml%_EXT%\mysql.component
+..\%__SRC%\misc\odbc.component %_DEST%\xml%_EXT%\odbc.component
+..\%__SRC%\misc\sdbc2.component %_DEST%\xml%_EXT%\sdbc2.component
+
+Source Files:
+inc\pch\precompiled_connectivity.cxx
+source\commontools\AutoRetrievingBase.cxx
+source\commontools\BlobHelper.cxx
+source\commontools\CommonTools.cxx
+source\commontools\conncleanup.cxx
+source\commontools\ConnectionWrapper.cxx
+source\commontools\DateConversion.cxx
+source\commontools\dbcharset.cxx
+source\commontools\dbconversion.cxx
+source\commontools\dbexception.cxx
+source\commontools\dbmetadata.cxx
+source\commontools\dbtools.cxx
+source\commontools\dbtools2.cxx
+source\commontools\DriversConfig.cxx
+source\commontools\FDatabaseMetaDataResultSet.cxx
+source\commontools\FDatabaseMetaDataResultSetMetaData.cxx
+source\commontools\filtermanager.cxx
+source\commontools\formattedcolumnvalue.cxx
+source\commontools\FValue.cxx
+source\commontools\parameters.cxx
+source\commontools\ParamterSubstitution.cxx
+source\commontools\paramwrapper.cxx
+source\commontools\predicateinput.cxx
+source\commontools\propertyids.cxx
+source\commontools\RowFunctionParser.cxx
+source\commontools\sqlerror.cxx
+source\commontools\statementcomposer.cxx
+source\commontools\TColumnsHelper.cxx
+source\commontools\TConnection.cxx
+source\commontools\TDatabaseMetaDataBase.cxx
+source\commontools\TIndex.cxx
+source\commontools\TIndexColumns.cxx
+source\commontools\TIndexes.cxx
+source\commontools\TKey.cxx
+source\commontools\TKeyColumns.cxx
+source\commontools\TKeys.cxx
+source\commontools\TPrivilegesResultSet.cxx
+source\commontools\TSkipDeletedSet.cxx
+source\commontools\TSortIndex.cxx
+source\commontools\TTableHelper.cxx
+source\commontools\warningscontainer.cxx
+source\cpool\ZConnectionPool.cxx
+source\cpool\ZConnectionWrapper.cxx
+source\cpool\ZDriverWrapper.cxx
+source\cpool\ZPoolCollection.cxx
+source\cpool\ZPooledConnection.cxx
+source\cpool\Zregistration.cxx
+source\drivers\adabas\BCatalog.cxx
+source\drivers\adabas\BColumns.cxx
+source\drivers\adabas\BConnection.cxx
+source\drivers\adabas\BDatabaseMetaData.cxx
+source\drivers\adabas\BDriver.cxx
+source\drivers\adabas\BFunctions.cxx
+source\drivers\adabas\BGroup.cxx
+source\drivers\adabas\BGroups.cxx
+source\drivers\adabas\BIndex.cxx
+source\drivers\adabas\BIndexColumns.cxx
+source\drivers\adabas\BIndexes.cxx
+source\drivers\adabas\BKeys.cxx
+source\drivers\adabas\BPreparedStatement.cxx
+source\drivers\adabas\BResultSet.cxx
+source\drivers\adabas\BResultSetMetaData.cxx
+source\drivers\adabas\Bservices.cxx
+source\drivers\adabas\BStatement.cxx
+source\drivers\adabas\BTable.cxx
+source\drivers\adabas\BTables.cxx
+source\drivers\adabas\BUser.cxx
+source\drivers\adabas\BUsers.cxx
+source\drivers\adabas\BViews.cxx
+source\drivers\ado\ACallableStatement.cxx
+source\drivers\ado\ACatalog.cxx
+source\drivers\ado\AColumn.cxx
+source\drivers\ado\AColumns.cxx
+source\drivers\ado\AConnection.cxx
+source\drivers\ado\ADatabaseMetaData.cxx
+source\drivers\ado\ADatabaseMetaDataImpl.cxx
+source\drivers\ado\ADatabaseMetaDataResultSet.cxx
+source\drivers\ado\ADatabaseMetaDataResultSetMetaData.cxx
+source\drivers\ado\adoimp.cxx
+source\drivers\ado\ADriver.cxx
+source\drivers\ado\AGroup.cxx
+source\drivers\ado\AGroups.cxx
+source\drivers\ado\AIndex.cxx
+source\drivers\ado\AIndexes.cxx
+source\drivers\ado\AKey.cxx
+source\drivers\ado\AKeyColumn.cxx
+source\drivers\ado\AKeyColumns.cxx
+source\drivers\ado\AKeys.cxx
+source\drivers\ado\Aolevariant.cxx
+source\drivers\ado\APreparedStatement.cxx
+source\drivers\ado\AResultSet.cxx
+source\drivers\ado\AResultSetMetaData.cxx
+source\drivers\ado\Aservices.cxx
+source\drivers\ado\AStatement.cxx
+source\drivers\ado\ATable.cxx
+source\drivers\ado\ATables.cxx
+source\drivers\ado\AUser.cxx
+source\drivers\ado\AUsers.cxx
+source\drivers\ado\AView.cxx
+source\drivers\ado\AViews.cxx
+source\drivers\ado\Awrapado.cxx
+source\drivers\calc\CCatalog.cxx
+source\drivers\calc\CColumns.cxx
+source\drivers\calc\CConnection.cxx
+source\drivers\calc\CDatabaseMetaData.cxx
+source\drivers\calc\CDriver.cxx
+source\drivers\calc\CPreparedStatement.cxx
+source\drivers\calc\CResultSet.cxx
+source\drivers\calc\Cservices.cxx
+source\drivers\calc\CStatement.cxx
+source\drivers\calc\CTable.cxx
+source\drivers\calc\CTables.cxx
+source\drivers\dbase\DCatalog.cxx
+source\drivers\dbase\DCode.cxx
+source\drivers\dbase\DColumns.cxx
+source\drivers\dbase\DConnection.cxx
+source\drivers\dbase\DDatabaseMetaData.cxx
+source\drivers\dbase\DDriver.cxx
+source\drivers\dbase\DIndex.cxx
+source\drivers\dbase\DIndexColumns.cxx
+source\drivers\dbase\DIndexes.cxx
+source\drivers\dbase\DIndexIter.cxx
+source\drivers\dbase\dindexnode.cxx
+source\drivers\dbase\DNoException.cxx
+source\drivers\dbase\DPreparedStatement.cxx
+source\drivers\dbase\DResultSet.cxx
+source\drivers\dbase\Dservices.cxx
+source\drivers\dbase\DStatement.cxx
+source\drivers\dbase\DTable.cxx
+source\drivers\dbase\DTables.cxx
+source\drivers\evoab2\EApi.cxx
+source\drivers\evoab2\NCatalog.cxx
+source\drivers\evoab2\NColumns.cxx
+source\drivers\evoab2\NConnection.cxx
+source\drivers\evoab2\NDatabaseMetaData.cxx
+source\drivers\evoab2\NDebug.cxx
+source\drivers\evoab2\NDriver.cxx
+source\drivers\evoab2\NPreparedStatement.cxx
+source\drivers\evoab2\NResultSet.cxx
+source\drivers\evoab2\NResultSetMetaData.cxx
+source\drivers\evoab2\NServices.cxx
+source\drivers\evoab2\NStatement.cxx
+source\drivers\evoab2\NTable.cxx
+source\drivers\evoab2\NTables.cxx
+source\drivers\file\fanalyzer.cxx
+source\drivers\file\FCatalog.cxx
+source\drivers\file\fcode.cxx
+source\drivers\file\FColumns.cxx
+source\drivers\file\fcomp.cxx
+source\drivers\file\FConnection.cxx
+source\drivers\file\FDatabaseMetaData.cxx
+source\drivers\file\FDateFunctions.cxx
+source\drivers\file\FDriver.cxx
+source\drivers\file\FNoException.cxx
+source\drivers\file\FNumericFunctions.cxx
+source\drivers\file\FPreparedStatement.cxx
+source\drivers\file\FResultSet.cxx
+source\drivers\file\FResultSetMetaData.cxx
+source\drivers\file\FStatement.cxx
+source\drivers\file\FStringFunctions.cxx
+source\drivers\file\FTable.cxx
+source\drivers\file\FTables.cxx
+source\drivers\file\quotedstring.cxx
+source\drivers\flat\ECatalog.cxx
+source\drivers\flat\EColumns.cxx
+source\drivers\flat\EConnection.cxx
+source\drivers\flat\EDatabaseMetaData.cxx
+source\drivers\flat\EDriver.cxx
+source\drivers\flat\EPreparedStatement.cxx
+source\drivers\flat\EResultSet.cxx
+source\drivers\flat\Eservices.cxx
+source\drivers\flat\EStatement.cxx
+source\drivers\flat\ETable.cxx
+source\drivers\flat\ETables.cxx
+source\drivers\hsqldb\accesslog.cxx
+source\drivers\hsqldb\HCatalog.cxx
+source\drivers\hsqldb\HColumns.cxx
+source\drivers\hsqldb\HConnection.cxx
+source\drivers\hsqldb\HDriver.cxx
+source\drivers\hsqldb\Hservices.cxx
+source\drivers\hsqldb\HStorageAccess.cxx
+source\drivers\hsqldb\HStorageMap.cxx
+source\drivers\hsqldb\HTable.cxx
+source\drivers\hsqldb\HTables.cxx
+source\drivers\hsqldb\HTerminateListener.cxx
+source\drivers\hsqldb\HTools.cxx
+source\drivers\hsqldb\HUser.cxx
+source\drivers\hsqldb\HUsers.cxx
+source\drivers\hsqldb\HView.cxx
+source\drivers\hsqldb\HViews.cxx
+source\drivers\hsqldb\StorageFileAccess.cxx
+source\drivers\hsqldb\StorageNativeInputStream.cxx
+source\drivers\hsqldb\StorageNativeOutputStream.cxx
+source\drivers\jdbc\Array.cxx
+source\drivers\jdbc\Blob.cxx
+source\drivers\jdbc\Boolean.cxx
+source\drivers\jdbc\CallableStatement.cxx
+source\drivers\jdbc\Class.cxx
+source\drivers\jdbc\Clob.cxx
+source\drivers\jdbc\ConnectionLog.cxx
+source\drivers\jdbc\ContextClassLoader.cxx
+source\drivers\jdbc\DatabaseMetaData.cxx
+source\drivers\jdbc\Date.cxx
+source\drivers\jdbc\DriverPropertyInfo.cxx
+source\drivers\jdbc\Exception.cxx
+source\drivers\jdbc\InputStream.cxx
+source\drivers\jdbc\JBigDecimal.cxx
+source\drivers\jdbc\JConnection.cxx
+source\drivers\jdbc\JDriver.cxx
+source\drivers\jdbc\jservices.cxx
+source\drivers\jdbc\JStatement.cxx
+source\drivers\jdbc\Object.cxx
+source\drivers\jdbc\PreparedStatement.cxx
+source\drivers\jdbc\Reader.cxx
+source\drivers\jdbc\Ref.cxx
+source\drivers\jdbc\ResultSet.cxx
+source\drivers\jdbc\ResultSetMetaData.cxx
+source\drivers\jdbc\SQLException.cxx
+source\drivers\jdbc\SQLWarning.cxx
+source\drivers\jdbc\String.cxx
+source\drivers\jdbc\Throwable.cxx
+source\drivers\jdbc\Timestamp.cxx
+source\drivers\jdbc\tools.cxx
+source\drivers\kab\KCatalog.cxx
+source\drivers\kab\KColumns.cxx
+source\drivers\kab\kcondition.cxx
+source\drivers\kab\KConnection.cxx
+source\drivers\kab\KDatabaseMetaData.cxx
+source\drivers\kab\KDEInit.cxx
+source\drivers\kab\KDriver.cxx
+source\drivers\kab\kfields.cxx
+source\drivers\kab\korder.cxx
+source\drivers\kab\KPreparedStatement.cxx
+source\drivers\kab\KResultSet.cxx
+source\drivers\kab\KResultSetMetaData.cxx
+source\drivers\kab\KServices.cxx
+source\drivers\kab\KStatement.cxx
+source\drivers\kab\KTable.cxx
+source\drivers\kab\KTables.cxx
+source\drivers\macab\MacabAddressBook.cxx
+source\drivers\macab\MacabCatalog.cxx
+source\drivers\macab\MacabColumns.cxx
+source\drivers\macab\macabcondition.cxx
+source\drivers\macab\MacabConnection.cxx
+source\drivers\macab\MacabDatabaseMetaData.cxx
+source\drivers\macab\MacabDriver.cxx
+source\drivers\macab\MacabGroup.cxx
+source\drivers\macab\MacabHeader.cxx
+source\drivers\macab\macaborder.cxx
+source\drivers\macab\MacabPreparedStatement.cxx
+source\drivers\macab\MacabRecord.cxx
+source\drivers\macab\MacabRecords.cxx
+source\drivers\macab\MacabResultSet.cxx
+source\drivers\macab\MacabResultSetMetaData.cxx
+source\drivers\macab\MacabServices.cxx
+source\drivers\macab\MacabStatement.cxx
+source\drivers\macab\MacabTable.cxx
+source\drivers\macab\MacabTables.cxx
+source\drivers\mysql\YCatalog.cxx
+source\drivers\mysql\YColumns.cxx
+source\drivers\mysql\YDriver.cxx
+source\drivers\mysql\Yservices.cxx
+source\drivers\mysql\YTable.cxx
+source\drivers\mysql\YTables.cxx
+source\drivers\mysql\YUser.cxx
+source\drivers\mysql\YUsers.cxx
+source\drivers\mysql\YViews.cxx
+source\drivers\odbc\OFunctions.cxx
+source\drivers\odbc\ORealDriver.cxx
+source\drivers\odbc\oservices.cxx
+source\drivers\odbcbase\OConnection.cxx
+source\drivers\odbcbase\ODatabaseMetaData.cxx
+source\drivers\odbcbase\ODatabaseMetaDataResultSet.cxx
+source\drivers\odbcbase\ODriver.cxx
+source\drivers\odbcbase\OPreparedStatement.cxx
+source\drivers\odbcbase\OResultSet.cxx
+source\drivers\odbcbase\OResultSetMetaData.cxx
+source\drivers\odbcbase\OStatement.cxx
+source\drivers\odbcbase\OTools.cxx
+source\manager\mdrivermanager.cxx
+source\manager\mregistration.cxx
+source\parse\internalnode.cxx
+source\parse\PColumn.cxx
+source\parse\sqlbison.y
+source\parse\sqlflex.l
+source\parse\sqliterator.cxx
+source\parse\sqlnode.cxx
+source\parse\wrap_sqlbison.cxx
+source\parse\wrap_sqlflex.cxx
+source\resource\sharedresources.cxx
+source\sdbcx\VCatalog.cxx
+source\sdbcx\VCollection.cxx
+source\sdbcx\VColumn.cxx
+source\sdbcx\VDescriptor.cxx
+source\sdbcx\VGroup.cxx
+source\sdbcx\VIndex.cxx
+source\sdbcx\VIndexColumn.cxx
+source\sdbcx\VKey.cxx
+source\sdbcx\VKeyColumn.cxx
+source\sdbcx\VTable.cxx
+source\sdbcx\VUser.cxx
+source\sdbcx\VView.cxx
+source\simpledbt\charset_s.cxx
+source\simpledbt\dbtfactory.cxx
+source\simpledbt\parsenode_s.cxx
+source\simpledbt\parser_s.cxx
+source\simpledbt\refbase.cxx
+source\simpledbt\staticdbtools_s.cxx
+workben\iniParser\main.cxx
+workben\little\main.cxx
+
+Header Files:
+inc\connectivity\BlobHelper.hxx
+inc\connectivity\CommonTools.hxx
+inc\connectivity\conncleanup.hxx
+inc\connectivity\ConnectionWrapper.hxx
+inc\connectivity\DateConversion.hxx
+inc\connectivity\dbcharset.hxx
+inc\connectivity\dbconversion.hxx
+inc\connectivity\dbexception.hxx
+inc\connectivity\dbmetadata.hxx
+inc\connectivity\dbtools.hxx
+inc\connectivity\dbtoolsdllapi.hxx
+inc\connectivity\DriversConfig.hxx
+inc\connectivity\filtermanager.hxx
+inc\connectivity\formattedcolumnvalue.hxx
+inc\connectivity\FValue.hxx
+inc\connectivity\IParseContext.hxx
+inc\connectivity\ParameterCont.hxx
+inc\connectivity\parameters.hxx
+inc\connectivity\paramwrapper.hxx
+inc\connectivity\PColumn.hxx
+inc\connectivity\predicateinput.hxx
+inc\connectivity\sqlerror.hxx
+inc\connectivity\sqliterator.hxx
+inc\connectivity\sqlnode.hxx
+inc\connectivity\sqlparse.hxx
+inc\connectivity\SQLStatementHelper.hxx
+inc\connectivity\standardsqlstate.hxx
+inc\connectivity\statementcomposer.hxx
+inc\connectivity\StdTypeDefs.hxx
+inc\connectivity\TColumnsHelper.hxx
+inc\connectivity\TIndex.hxx
+inc\connectivity\TIndexColumns.hxx
+inc\connectivity\TIndexes.hxx
+inc\connectivity\TKey.hxx
+inc\connectivity\TKeyColumns.hxx
+inc\connectivity\TKeys.hxx
+inc\connectivity\TTableHelper.hxx
+inc\connectivity\virtualdbtools.hxx
+inc\connectivity\warningscontainer.hxx
+inc\connectivity\sdbcx\IRefreshable.hxx
+inc\connectivity\sdbcx\VCatalog.hxx
+inc\connectivity\sdbcx\VCollection.hxx
+inc\connectivity\sdbcx\VColumn.hxx
+inc\connectivity\sdbcx\VDescriptor.hxx
+inc\connectivity\sdbcx\VGroup.hxx
+inc\connectivity\sdbcx\VIndex.hxx
+inc\connectivity\sdbcx\VIndexColumn.hxx
+inc\connectivity\sdbcx\VKey.hxx
+inc\connectivity\sdbcx\VKeyColumn.hxx
+inc\connectivity\sdbcx\VTable.hxx
+inc\connectivity\sdbcx\VTypeDef.hxx
+inc\connectivity\sdbcx\VUser.hxx
+inc\connectivity\sdbcx\VView.hxx
+inc\pch\precompiled_connectivity.hxx
+source\cpool\ZConnectionPool.hxx
+source\cpool\ZConnectionWrapper.hxx
+source\cpool\ZDriverWrapper.hxx
+source\cpool\ZPoolCollection.hxx
+source\cpool\ZPooledConnection.hxx
+source\drivers\ado\ado_post_sys_include.h
+source\drivers\ado\ado_pre_sys_include.h
+source\drivers\evoab2\EApi.h
+source\drivers\evoab2\NCatalog.hxx
+source\drivers\evoab2\NColumns.hxx
+source\drivers\evoab2\NConnection.hxx
+source\drivers\evoab2\NDatabaseMetaData.hxx
+source\drivers\evoab2\NDebug.hxx
+source\drivers\evoab2\NDriver.hxx
+source\drivers\evoab2\NPreparedStatement.hxx
+source\drivers\evoab2\NResultSet.hxx
+source\drivers\evoab2\NResultSetMetaData.hxx
+source\drivers\evoab2\NStatement.hxx
+source\drivers\evoab2\NTable.hxx
+source\drivers\evoab2\NTables.hxx
+source\drivers\hsqldb\accesslog.hxx
+source\drivers\hsqldb\hsqlui.hrc
+source\drivers\hsqldb\HStorage.hxx
+source\drivers\hsqldb\HTerminateListener.hxx
+source\drivers\kab\KCatalog.hxx
+source\drivers\kab\KColumns.hxx
+source\drivers\kab\kcondition.hxx
+source\drivers\kab\KConnection.hxx
+source\drivers\kab\KDatabaseMetaData.hxx
+source\drivers\kab\KDEInit.h
+source\drivers\kab\KDriver.hxx
+source\drivers\kab\kfields.hxx
+source\drivers\kab\korder.hxx
+source\drivers\kab\KPreparedStatement.hxx
+source\drivers\kab\KResultSet.hxx
+source\drivers\kab\KResultSetMetaData.hxx
+source\drivers\kab\KStatement.hxx
+source\drivers\kab\KTable.hxx
+source\drivers\kab\KTables.hxx
+source\drivers\macab\MacabAddressBook.hxx
+source\drivers\macab\MacabCatalog.hxx
+source\drivers\macab\MacabColumns.hxx
+source\drivers\macab\macabcondition.hxx
+source\drivers\macab\MacabConnection.hxx
+source\drivers\macab\MacabDatabaseMetaData.hxx
+source\drivers\macab\MacabDriver.hxx
+source\drivers\macab\MacabGroup.hxx
+source\drivers\macab\MacabHeader.hxx
+source\drivers\macab\macaborder.hxx
+source\drivers\macab\MacabPreparedStatement.hxx
+source\drivers\macab\MacabRecord.hxx
+source\drivers\macab\MacabRecords.hxx
+source\drivers\macab\MacabResultSet.hxx
+source\drivers\macab\MacabResultSetMetaData.hxx
+source\drivers\macab\MacabStatement.hxx
+source\drivers\macab\MacabTable.hxx
+source\drivers\macab\MacabTables.hxx
+source\drivers\macab\macabutilities.hxx
+source\drivers\odbc\ORealDriver.hxx
+source\inc\AutoRetrievingBase.hxx
+source\inc\diagnose_ex.h
+source\inc\FDatabaseMetaDataResultSet.hxx
+source\inc\FDatabaseMetaDataResultSetMetaData.hxx
+source\inc\internalnode.hxx
+source\inc\OColumn.hxx
+source\inc\OSubComponent.hxx
+source\inc\OTypeInfo.hxx
+source\inc\ParameterSubstitution.hxx
+source\inc\propertyids.hxx
+source\inc\RowFunctionParser.hxx
+source\inc\sqlscan.hxx
+source\inc\TConnection.hxx
+source\inc\TDatabaseMetaDataBase.hxx
+source\inc\TKeyValue.hxx
+source\inc\TPrivilegesResultSet.hxx
+source\inc\TResultSetHelper.hxx
+source\inc\TSkipDeletedSet.hxx
+source\inc\TSortIndex.hxx
+source\inc\UStringDescription_Impl.hxx
+source\inc\adabas\BCatalog.hxx
+source\inc\adabas\BColumn.hxx
+source\inc\adabas\BColumns.hxx
+source\inc\adabas\BConnection.hxx
+source\inc\adabas\BDatabaseMetaData.hxx
+source\inc\adabas\BDriver.hxx
+source\inc\adabas\BGroup.hxx
+source\inc\adabas\BGroups.hxx
+source\inc\adabas\BIndex.hxx
+source\inc\adabas\BIndexColumn.hxx
+source\inc\adabas\BIndexColumns.hxx
+source\inc\adabas\BIndexes.hxx
+source\inc\adabas\BKeys.hxx
+source\inc\adabas\BPreparedStatement.hxx
+source\inc\adabas\BResultSet.hxx
+source\inc\adabas\BResultSetMetaData.hxx
+source\inc\adabas\BStatement.hxx
+source\inc\adabas\BTable.hxx
+source\inc\adabas\BTables.hxx
+source\inc\adabas\BUser.hxx
+source\inc\adabas\BUsers.hxx
+source\inc\adabas\BViews.hxx
+source\inc\ado\ACallableStatement.hxx
+source\inc\ado\ACatalog.hxx
+source\inc\ado\ACollection.hxx
+source\inc\ado\AColumn.hxx
+source\inc\ado\AColumns.hxx
+source\inc\ado\AConnection.hxx
+source\inc\ado\ADatabaseMetaData.hxx
+source\inc\ado\ADatabaseMetaDataResultSet.hxx
+source\inc\ado\ADatabaseMetaDataResultSetMetaData.hxx
+source\inc\ado\adoimp.hxx
+source\inc\ado\ADriver.hxx
+source\inc\ado\AGroup.hxx
+source\inc\ado\AGroups.hxx
+source\inc\ado\AIndex.hxx
+source\inc\ado\AIndexColumn.hxx
+source\inc\ado\AIndexColumns.hxx
+source\inc\ado\AIndexes.hxx
+source\inc\ado\AKey.hxx
+source\inc\ado\AKeyColumn.hxx
+source\inc\ado\AKeyColumns.hxx
+source\inc\ado\AKeys.hxx
+source\inc\ado\Aolevariant.hxx
+source\inc\ado\Aolewrap.hxx
+source\inc\ado\APreparedStatement.hxx
+source\inc\ado\AResultSet.hxx
+source\inc\ado\AResultSetMetaData.hxx
+source\inc\ado\AStatement.hxx
+source\inc\ado\ATable.hxx
+source\inc\ado\ATables.hxx
+source\inc\ado\AUser.hxx
+source\inc\ado\AUsers.hxx
+source\inc\ado\AView.hxx
+source\inc\ado\AViews.hxx
+source\inc\ado\Awrapado.hxx
+source\inc\ado\Awrapadox.hxx
+source\inc\ado\WrapCatalog.hxx
+source\inc\ado\WrapColumn.hxx
+source\inc\ado\WrapIndex.hxx
+source\inc\ado\WrapKey.hxx
+source\inc\ado\WrapTable.hxx
+source\inc\ado\WrapTypeDefs.hxx
+source\inc\calc\CCatalog.hxx
+source\inc\calc\CColumns.hxx
+source\inc\calc\CConnection.hxx
+source\inc\calc\CDatabaseMetaData.hxx
+source\inc\calc\CDriver.hxx
+source\inc\calc\CPreparedStatement.hxx
+source\inc\calc\CResultSet.hxx
+source\inc\calc\CStatement.hxx
+source\inc\calc\CTable.hxx
+source\inc\calc\CTables.hxx
+source\inc\dbase\DCatalog.hxx
+source\inc\dbase\DCode.hxx
+source\inc\dbase\DColumns.hxx
+source\inc\dbase\DConnection.hxx
+source\inc\dbase\DDatabaseMetaData.hxx
+source\inc\dbase\DDatabaseMetaDataResultSet.hxx
+source\inc\dbase\DDatabaseMetaDataResultSetMetaData.hxx
+source\inc\dbase\DDriver.hxx
+source\inc\dbase\DIndex.hxx
+source\inc\dbase\DIndexColumns.hxx
+source\inc\dbase\DIndexes.hxx
+source\inc\dbase\DIndexIter.hxx
+source\inc\dbase\dindexnode.hxx
+source\inc\dbase\DIndexPage.hxx
+source\inc\dbase\DPreparedStatement.hxx
+source\inc\dbase\DResultSet.hxx
+source\inc\dbase\DStatement.hxx
+source\inc\dbase\DTable.hxx
+source\inc\dbase\DTables.hxx
+source\inc\file\fanalyzer.hxx
+source\inc\file\FCatalog.hxx
+source\inc\file\fcode.hxx
+source\inc\file\FColumns.hxx
+source\inc\file\fcomp.hxx
+source\inc\file\FConnection.hxx
+source\inc\file\FDatabaseMetaData.hxx
+source\inc\file\FDateFunctions.hxx
+source\inc\file\FDriver.hxx
+source\inc\file\filedllapi.hxx
+source\inc\file\FNumericFunctions.hxx
+source\inc\file\FPreparedStatement.hxx
+source\inc\file\FResultSet.hxx
+source\inc\file\FResultSetMetaData.hxx
+source\inc\file\FStatement.hxx
+source\inc\file\FStringFunctions.hxx
+source\inc\file\FTable.hxx
+source\inc\file\FTables.hxx
+source\inc\file\quotedstring.hxx
+source\inc\flat\ECatalog.hxx
+source\inc\flat\EColumns.hxx
+source\inc\flat\EConnection.hxx
+source\inc\flat\EDatabaseMetaData.hxx
+source\inc\flat\EDriver.hxx
+source\inc\flat\EPreparedStatement.hxx
+source\inc\flat\EResultSet.hxx
+source\inc\flat\EStatement.hxx
+source\inc\flat\ETable.hxx
+source\inc\flat\ETables.hxx
+source\inc\hsqldb\HCatalog.hxx
+source\inc\hsqldb\HColumns.hxx
+source\inc\hsqldb\HConnection.hxx
+source\inc\hsqldb\HDriver.hxx
+source\inc\hsqldb\HStorageAccess.h
+source\inc\hsqldb\HStorageAccess.hxx
+source\inc\hsqldb\HStorageMap.hxx
+source\inc\hsqldb\HTable.hxx
+source\inc\hsqldb\HTables.hxx
+source\inc\hsqldb\HTools.hxx
+source\inc\hsqldb\HUser.hxx
+source\inc\hsqldb\HUsers.hxx
+source\inc\hsqldb\HView.hxx
+source\inc\hsqldb\HViews.hxx
+source\inc\hsqldb\StorageFileAccess.h
+source\inc\hsqldb\StorageNativeInputStream.h
+source\inc\java\ContextClassLoader.hxx
+source\inc\java\GlobalRef.hxx
+source\inc\java\LocalRef.hxx
+source\inc\java\tools.hxx
+source\inc\java\io\InputStream.hxx
+source\inc\java\io\Reader.hxx
+source\inc\java\lang\Boolean.hxx
+source\inc\java\lang\Class.hxx
+source\inc\java\lang\Exception.hxx
+source\inc\java\lang\Object.hxx
+source\inc\java\lang\String.hxx
+source\inc\java\lang\Throwable.hxx
+source\inc\java\math\BigDecimal.hxx
+source\inc\java\sql\Array.hxx
+source\inc\java\sql\Blob.hxx
+source\inc\java\sql\CallableStatement.hxx
+source\inc\java\sql\Clob.hxx
+source\inc\java\sql\Connection.hxx
+source\inc\java\sql\ConnectionLog.hxx
+source\inc\java\sql\DatabaseMetaData.hxx
+source\inc\java\sql\Driver.hxx
+source\inc\java\sql\DriverPropertyInfo.hxx
+source\inc\java\sql\JStatement.hxx
+source\inc\java\sql\PreparedStatement.hxx
+source\inc\java\sql\Ref.hxx
+source\inc\java\sql\ResultSet.hxx
+source\inc\java\sql\ResultSetMetaData.hxx
+source\inc\java\sql\SQLException.hxx
+source\inc\java\sql\SQLWarning.hxx
+source\inc\java\sql\Timestamp.hxx
+source\inc\java\util\Date.hxx
+source\inc\java\util\Property.hxx
+source\inc\mysql\YCatalog.hxx
+source\inc\mysql\YColumns.hxx
+source\inc\mysql\YDriver.hxx
+source\inc\mysql\YTable.hxx
+source\inc\mysql\YTables.hxx
+source\inc\mysql\YUser.hxx
+source\inc\mysql\YUsers.hxx
+source\inc\mysql\YViews.hxx
+source\inc\odbc\OBoundParam.hxx
+source\inc\odbc\OConnection.hxx
+source\inc\odbc\ODatabaseMetaData.hxx
+source\inc\odbc\ODatabaseMetaDataResultSet.hxx
+source\inc\odbc\odbcbasedllapi.hxx
+source\inc\odbc\ODefs3.hxx
+source\inc\odbc\ODriver.hxx
+source\inc\odbc\OFunctiondefs.hxx
+source\inc\odbc\OFunctions.hxx
+source\inc\odbc\OPreparedStatement.hxx
+source\inc\odbc\OResultSet.hxx
+source\inc\odbc\OResultSetMetaData.hxx
+source\inc\odbc\OStatement.hxx
+source\inc\odbc\OTools.hxx
+source\inc\resource\adabas_res.hrc
+source\inc\resource\ado_res.hrc
+source\inc\resource\calc_res.hrc
+source\inc\resource\common_res.hrc
+source\inc\resource\conn_shared_res.hrc
+source\inc\resource\dbase_res.hrc
+source\inc\resource\evoab2_res.hrc
+source\inc\resource\file_res.hrc
+source\inc\resource\hsqldb_res.hrc
+source\inc\resource\jdbc_log.hrc
+source\inc\resource\kab_res.hrc
+source\inc\resource\macab_res.hrc
+source\inc\resource\mozab_res.hrc
+source\inc\resource\sharedresources.hxx
+source\manager\mdrivermanager.hxx
+source\simpledbt\charset_s.hxx
+source\simpledbt\dbtfactory.hxx
+source\simpledbt\parsenode_s.hxx
+source\simpledbt\parser_s.hxx
+source\simpledbt\refbase.hxx
+source\simpledbt\staticdbtools_s.hxx
+workben\skeleton\SResultSet.hxx
+
+Patch Files:
+
+Makefiles:
+
+dbtools.pmk
+
+makefile.pmk
+
+target.pmk
+
+version.mk
+
+com\sun\star\sdbcx\comp\hsqldb\makefile.mk
+	PRJNAME=connectivity
+	TARGET=sdbc_hsqldb
+
+inc\makefile.mk
+	PRJNAME=connectivity
+	TARGET=inc
+
+qa\makefile.mk
+	TARGET=ConnectivityComplexTests
+	PRJNAME=connectivity
+
+qa\connectivity\tools\makefile.mk
+	TARGET=ConnectivityTools
+	PRJNAME=connectivity
+
+source\commontools\makefile.mk
+	PRJNAME=connectivity
+	TARGET=commontools
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/AutoRetrievingBase.obj
+	$(SLO)$/dbconversion.obj
+
+source\cpool\makefile.mk
+	PRJNAME=connectivity
+	TARGET=dbpool
+	SLOFILES=
+	$(SLO)$/ZConnectionWrapper.obj
+	$(SLO)$/ZDriverWrapper.obj
+	$(SLO)$/ZPooledConnection.obj
+	$(SLO)$/ZConnectionPool.obj
+	$(SLO)$/ZPoolCollection.obj
+	$(SLO)$/Zregistration.obj
+
+source\dbtools\makefile.mk
+	PRJNAME=connectivity
+	TARGET=dbt
+
+source\drivers\adabas\makefile.mk
+	PRJNAME=connectivity
+	TARGET=adabas
+	SLOFILES=
+	$(SLO)$/BFunctions.obj
+	$(SLO)$/BConnection.obj
+	$(SLO)$/BDriver.obj
+	$(SLO)$/BCatalog.obj
+	$(SLO)$/BGroups.obj
+	$(SLO)$/BGroup.obj
+	$(SLO)$/BUser.obj
+	$(SLO)$/BUsers.obj
+	$(SLO)$/BKeys.obj
+	$(SLO)$/BColumns.obj
+	$(SLO)$/BIndex.obj
+	$(SLO)$/BIndexColumns.obj
+	$(SLO)$/BIndexes.obj
+	$(SLO)$/BTable.obj
+	$(SLO)$/BTables.obj
+	$(SLO)$/BViews.obj
+	$(SLO)$/Bservices.obj
+	$(SLO)$/BDatabaseMetaData.obj
+	$(SLO)$/BPreparedStatement.obj
+	$(SLO)$/BStatement.obj
+	$(SLO)$/BResultSetMetaData.obj
+	$(SLO)$/BResultSet.obj
+
+source\drivers\ado\makefile.mk
+	PRJNAME=connectivity
+	TARGET=ado
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/Awrapado.obj
+	$(SLO)$/adoimp.obj
+
+source\drivers\calc\makefile.mk
+	PRJNAME=connectivity
+	TARGET=calc
+	SLOFILES=
+	$(SLO)$/CResultSet.obj
+	$(SLO)$/CStatement.obj
+	$(SLO)$/CPreparedStatement.obj
+	$(SLO)$/CDatabaseMetaData.obj
+	$(SLO)$/CCatalog.obj
+	$(SLO)$/CColumns.obj
+	$(SLO)$/CTable.obj
+	$(SLO)$/CTables.obj
+	$(SLO)$/CConnection.obj
+	$(SLO)$/Cservices.obj
+	$(SLO)$/CDriver.obj
+
+source\drivers\dbase\makefile.mk
+	PRJNAME=connectivity
+	TARGET=dbase
+	SLOFILES=
+	$(SLO)$/DCode.obj
+	$(SLO)$/DResultSet.obj
+	$(SLO)$/DStatement.obj
+	$(SLO)$/DPreparedStatement.obj
+	$(SLO)$/dindexnode.obj
+	$(SLO)$/DIndexIter.obj
+	$(SLO)$/DDatabaseMetaData.obj
+	$(SLO)$/DCatalog.obj
+	$(SLO)$/DColumns.obj
+	$(SLO)$/DIndexColumns.obj
+	$(SLO)$/DIndex.obj
+	$(SLO)$/DIndexes.obj
+	$(SLO)$/DTable.obj
+	$(SLO)$/DTables.obj
+	$(SLO)$/DConnection.obj
+	$(SLO)$/Dservices.obj
+	$(SLO)$/DDriver.obj
+
+source\drivers\evoab2\makefile.mk
+	PRJNAME=connectivity
+	TARGET=evoab2
+	SLOFILES=
+	$(SLO)$/NDriver.obj
+	$(SLO)$/NTable.obj
+	$(SLO)$/NColumns.obj
+	$(SLO)$/NTables.obj
+	$(SLO)$/NCatalog.obj
+	$(SLO)$/NConnection.obj
+	$(SLO)$/NDatabaseMetaData.obj
+	$(SLO)$/NStatement.obj
+	$(SLO)$/NPreparedStatement.obj
+	$(SLO)$/NServices.obj
+	$(SLO)$/NResultSet.obj
+	$(SLO)$/NResultSetMetaData.obj
+	$(SLO)$/EApi.obj
+	$(SLO)$/NDebug.obj
+
+source\drivers\file\makefile.mk
+	PRJNAME=connectivity
+	TARGET=file
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/FStringFunctions.obj
+	$(SLO)$/FDateFunctions.obj
+	$(SLO)$/FNumericFunctions.obj
+	$(SLO)$/quotedstring.obj
+
+source\drivers\flat\makefile.mk
+	PRJNAME=connectivity
+	TARGET=flat
+	SLOFILES=
+	$(SLO)$/EResultSet.obj
+	$(SLO)$/EStatement.obj
+	$(SLO)$/EPreparedStatement.obj
+	$(SLO)$/ETable.obj
+	$(SLO)$/EDatabaseMetaData.obj
+	$(SLO)$/ECatalog.obj
+	$(SLO)$/EColumns.obj
+	$(SLO)$/ETables.obj
+	$(SLO)$/EConnection.obj
+	$(SLO)$/Eservices.obj
+	$(SLO)$/EDriver.obj
+
+source\drivers\hsqldb\makefile.mk
+	PRJNAME=connectivity
+	TARGET=hsqldb
+	SLOFILES=
+	$(SLO)$/HStorageMap.obj
+	$(SLO)$/HStorageAccess.obj
+	$(SLO)$/HDriver.obj
+	$(SLO)$/HConnection.obj
+	$(SLO)$/HTerminateListener.obj
+	$(SLO)$/StorageNativeOutputStream.obj
+	$(SLO)$/StorageNativeInputStream.obj
+	$(SLO)$/StorageFileAccess.obj
+	$(SLO)$/HTables.obj
+	$(SLO)$/HTable.obj
+	$(SLO)$/HView.obj
+	$(SLO)$/HViews.obj
+	$(SLO)$/HCatalog.obj
+	$(SLO)$/HColumns.obj
+	$(SLO)$/HUser.obj
+	$(SLO)$/HUsers.obj
+	$(SLO)$/Hservices.obj
+	$(SLO)$/HTools.obj
+	$(SLO)$/accesslog.obj
+
+source\drivers\jdbc\makefile.mk
+	PRJNAME=connectivity
+	TARGET=jdbc
+	SLOFILES=
+	$(SLO)$/Array.obj
+	$(SLO)$/Blob.obj
+	$(SLO)$/Boolean.obj
+	$(SLO)$/CallableStatement.obj
+	$(SLO)$/Class.obj
+	$(SLO)$/Clob.obj
+	$(SLO)$/ConnectionLog.obj
+	$(SLO)$/DatabaseMetaData.obj
+	$(SLO)$/Date.obj
+	$(SLO)$/DriverPropertyInfo.obj
+	$(SLO)$/Exception.obj
+	$(SLO)$/InputStream.obj
+	$(SLO)$/JConnection.obj
+	$(SLO)$/JDriver.obj
+	$(SLO)$/JStatement.obj
+	$(SLO)$/Object.obj
+	$(SLO)$/PreparedStatement.obj
+	$(SLO)$/Reader.obj
+	$(SLO)$/Ref.obj
+	$(SLO)$/ResultSet.obj
+	$(SLO)$/ResultSetMetaData.obj
+	$(SLO)$/SQLException.obj
+	$(SLO)$/SQLWarning.obj
+	$(SLO)$/String.obj
+	$(SLO)$/Throwable.obj
+	$(SLO)$/Timestamp.obj
+	$(SLO)$/jservices.obj
+	$(SLO)$/JBigDecimal.obj
+	$(SLO)$/tools.obj
+	$(SLO)$/ContextClassLoader.obj
+
+source\drivers\kab\makefile.mk
+	PRJNAME=connectivity
+	TARGET=kab
+	TARGET2=$(TARGET)drv
+	SLOFILES=
+	$(SLO)$/KDriver.obj
+	$(SLO)$/KServices.obj
+	$(SLO2FILES)
+	SLO2FILES=
+	$(SLO)$/KColumns.obj
+	$(SLO)$/KTable.obj
+	$(SLO)$/KTables.obj
+	$(SLO)$/KCatalog.obj
+	$(SLO)$/KResultSet.obj
+	$(SLO)$/KStatement.obj
+	$(SLO)$/KPreparedStatement.obj
+	$(SLO)$/KDatabaseMetaData.obj
+	$(SLO)$/KConnection.obj
+	$(SLO)$/KResultSetMetaData.obj
+	$(SLO)$/kcondition.obj
+	$(SLO)$/korder.obj
+	$(SLO)$/kfields.obj
+	$(SLO)$/KDEInit.obj
+
+source\drivers\macab\makefile.mk
+	PRJNAME=connectivity
+	TARGET=macab
+	TARGET2=$(TARGET)drv
+	SLOFILES=
+	$(SLO)$/MacabDriver.obj
+	$(SLO)$/MacabServices.obj
+	$(SLO2FILES)
+	SLO2FILES=
+	$(SLO)$/MacabColumns.obj
+	$(SLO)$/MacabTable.obj
+	$(SLO)$/MacabTables.obj
+	$(SLO)$/MacabCatalog.obj
+	$(SLO)$/MacabResultSet.obj
+	$(SLO)$/MacabStatement.obj
+	$(SLO)$/MacabPreparedStatement.obj
+	$(SLO)$/MacabDatabaseMetaData.obj
+	$(SLO)$/MacabConnection.obj
+	$(SLO)$/MacabResultSetMetaData.obj
+	$(SLO)$/macabcondition.obj
+	$(SLO)$/macaborder.obj
+	$(SLO)$/MacabRecord.obj
+	$(SLO)$/MacabRecords.obj
+	$(SLO)$/MacabHeader.obj
+	$(SLO)$/MacabGroup.obj
+	$(SLO)$/MacabAddressBook.obj
+
+source\drivers\mysql\makefile.mk
+	PRJNAME=connectivity
+	TARGET=mysql
+	SLOFILES=
+	$(SLO)$/YDriver.obj
+	$(SLO)$/YTables.obj
+	$(SLO)$/YTable.obj
+	$(SLO)$/YViews.obj
+	$(SLO)$/YCatalog.obj
+	$(SLO)$/YColumns.obj
+	$(SLO)$/YUser.obj
+	$(SLO)$/YUsers.obj
+	$(SLO)$/Yservices.obj
+
+source\drivers\odbc\makefile.mk
+	PRJNAME=connectivity
+	TARGET=odbc
+	SLOFILES=
+	$(SLO)$/oservices.obj
+	$(SLO)$/ORealDriver.obj
+	$(SLO)$/OFunctions.obj
+
+source\drivers\odbcbase\makefile.mk
+	PRJNAME=connectivity
+	TARGET=odbcbase
+	SLOFILES=
+	$(SLO)$/OPreparedStatement.obj
+	$(SLO)$/OStatement.obj
+	$(SLO)$/OResultSetMetaData.obj
+	$(SLO)$/OResultSet.obj
+	$(SLO)$/OTools.obj
+	$(SLO)$/ODatabaseMetaDataResultSet.obj
+	$(SLO)$/ODatabaseMetaData.obj
+	$(SLO)$/ODriver.obj
+	$(SLO)$/OConnection.obj
+
+source\manager\makefile.mk
+	PRJNAME=connectivity
+	TARGET=sdbc
+	SLOFILES=
+	$(SLO)$/mdrivermanager.obj
+	$(SLO)$/mregistration.obj
+	
+
+source\parse\makefile.mk
+	PRJNAME=connectivity
+	TARGET=sql
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/wrap_sqlflex.obj
+
+source\resource\makefile.mk
+	PRJNAME=connectivity
+	TARGET=cnr
+	TARGET2=sdbcl
+	TARGET3=sdberr
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+
+source\sdbcx\makefile.mk
+	PRJNAME=connectivity
+	TARGET=sdbcx
+	SLOFILES=
+	$(SLO)$/VDescriptor.obj
+	$(SLO)$/VCollection.obj
+	$(SLO)$/VColumn.obj
+	$(SLO)$/VIndexColumn.obj
+	$(SLO)$/VKeyColumn.obj
+	$(SLO)$/VUser.obj
+	$(SLO)$/VGroup.obj
+	$(SLO)$/VTable.obj
+	$(SLO)$/VKey.obj
+	$(SLO)$/VIndex.obj
+	$(SLO)$/VCatalog.obj
+	$(SLO)$/VView.obj
+
+source\simpledbt\makefile.mk
+	PRJNAME=connectivity
+	TARGET=simpledbt
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/refbase.obj
+	$(SLO)$/dbtfactory.obj
+	
+
+util\makefile.mk
+	PRJNAME=connectivity
+	TARGET=connectivity
+
+workben\iniParser\makefile.mk
+	PRJNAME=connectivity
+	TARGET=iniparser
+	OBJFILES=$(OBJ)$/main.obj
+
+workben\little\makefile.mk
+	PRJNAME=connectivity
+	TARGET=little
+	OBJFILES=$(OBJ)$/main.obj

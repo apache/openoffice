@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jaricom.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcapimin.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcapistd.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcarith.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jccoefct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jccolor.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcdctmgr.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jchuff.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcinit.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcmainct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcmarker.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcmaster.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcomapi.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcparam.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcprepct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jcsample.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jctrans.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdapimin.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdapistd.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdarith.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdatadst.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdatasrc.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdcoefct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdcolor.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jddctmgr.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdhuff.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdinput.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdmainct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdmarker.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdmaster.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdmerge.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdpostct.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdsample.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jdtrans.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jerror.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jfdctflt.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jfdctfst.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jfdctint.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jidctflt.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jidctfst.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jidctint.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jquant1.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jquant2.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jutils.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jmemmgr.c" />
+    <ClCompile Include="wntmsci12.pro/misc/build/jpeg-8d/jmemnobs.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0C24649D-5269-CA93-203F-49AA345600FB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>jpeg-8d</RootNamespace>
+    <ProjectName>jpeg</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>..\solver\410\wntmsci12.pro\lib\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>wntmsci12.pro\slb\</OutDir>
+    <IntDir>wntmsci12.pro\intermediate\jpeg-8d\</IntDir>
+    <TargetName>jpeglib</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>
+      </Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWarningAsError>
+      </TreatWarningAsError>
+      <InlineFunctionExpansion>
+      </InlineFunctionExpansion>
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <EnableFiberSafeOptimizations>
+      </EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>
+      </WholeProgramOptimization>
+      <UndefineAllPreprocessorDefinitions>
+      </UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>
+      </IgnoreStandardIncludePath>
+      <PreprocessToFile>
+      </PreprocessToFile>
+      <PreprocessSuppressLineNumbers>
+      </PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>
+      </PreprocessKeepComments>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <StructMemberAlignment>
+      </StructMemberAlignment>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ExpandAttributedSource>
+      </ExpandAttributedSource>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>wntmsci12.pro/slo/</ObjectFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles>
+      </GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>
+      </XMLDocumentationFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <CallingConvention>
+      </CallingConvention>
+      <CompileAs>
+      </CompileAs>
+      <ShowIncludes>
+      </ShowIncludes>
+      <UseFullPaths>
+      </UseFullPaths>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+      <ErrorReporting>
+      </ErrorReporting>
+      <AdditionalOptions>-Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -I. -Iwntmsci12.pro/inc/jpeglib -I../inc -Iinc/pch -Iinc -IWIN/inc -Iwntmsci12.pro/inc -I. -I../solver/410/wntmsci12.pro/incdont_use_stl -I../solver/410/wntmsci12.pro/inc/external -I../solver/410/wntmsci12.pro/inc -I../solenv/wntmsci12/inc -I../solenv/inc -I../res -I../solver/410/wntmsci12.pro/inc/offuh -I. -Ires -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275 -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626 -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619 -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005 -wd4180 -wd4255 -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Iwntmsci12.pro/misc/build/jpeg-8d  %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>
+      </GenerateDebugInformation>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <OptimizeReferences>
+      </OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>wntmsci12.pro\slb\jpeglib.lib</OutputFile>
+    </Lib>
+    <Lib>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>
+      </LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Lib>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

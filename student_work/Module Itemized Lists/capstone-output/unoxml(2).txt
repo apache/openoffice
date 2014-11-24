@@ -1,0 +1,106 @@
+Name:
+unoxml
+
+Dependencies:
+offuh cppuhelper LIBXML2:libxml2 LIBXSLT:libxslt REDLAND:redland sax comphelper ucbhelper NULL
+
+Build Rules:
+
+Source Files:
+source\dom\attr.cxx
+source\dom\attributesmap.cxx
+source\dom\cdatasection.cxx
+source\dom\characterdata.cxx
+source\dom\childlist.cxx
+source\dom\comment.cxx
+source\dom\document.cxx
+source\dom\documentbuilder.cxx
+source\dom\documentfragment.cxx
+source\dom\documenttype.cxx
+source\dom\domimplementation.cxx
+source\dom\element.cxx
+source\dom\elementlist.cxx
+source\dom\entitiesmap.cxx
+source\dom\entity.cxx
+source\dom\entityreference.cxx
+source\dom\node.cxx
+source\dom\notation.cxx
+source\dom\notationsmap.cxx
+source\dom\processinginstruction.cxx
+source\dom\saxbuilder.cxx
+source\dom\text.cxx
+source\events\event.cxx
+source\events\eventdispatcher.cxx
+source\events\mouseevent.cxx
+source\events\mutationevent.cxx
+source\events\testlistener.cxx
+source\events\uievent.cxx
+source\rdf\CBlankNode.cxx
+source\rdf\CLiteral.cxx
+source\rdf\CURI.cxx
+source\rdf\librdf_repository.cxx
+source\rdf\librdf_services.cxx
+source\service\services.cxx
+source\xpath\nodelist.cxx
+source\xpath\xpathapi.cxx
+source\xpath\xpathobject.cxx
+test\domtest.cxx
+
+Header Files:
+source\dom\attr.hxx
+source\dom\attributesmap.hxx
+source\dom\cdatasection.hxx
+source\dom\characterdata.hxx
+source\dom\childlist.hxx
+source\dom\comment.hxx
+source\dom\document.hxx
+source\dom\documentbuilder.hxx
+source\dom\documentfragment.hxx
+source\dom\documenttype.hxx
+source\dom\domimplementation.hxx
+source\dom\element.hxx
+source\dom\elementlist.hxx
+source\dom\entitiesmap.hxx
+source\dom\entity.hxx
+source\dom\entityreference.hxx
+source\dom\node.hxx
+source\dom\notation.hxx
+source\dom\notationsmap.hxx
+source\dom\processinginstruction.hxx
+source\dom\saxbuilder.hxx
+source\dom\text.hxx
+source\events\event.hxx
+source\events\eventdispatcher.hxx
+source\events\mouseevent.hxx
+source\events\mutationevent.hxx
+source\events\testlistener.hxx
+source\events\uievent.hxx
+source\rdf\CNodes.hxx
+source\rdf\librdf_repository.hxx
+source\xpath\nodelist.hxx
+source\xpath\xpathapi.hxx
+source\xpath\xpathobject.hxx
+
+Patch Files:
+
+Makefiles:
+
+JunitTest_unordf_complex.mk
+
+JunitTest_unoxml_complex.mk
+
+Library_unordf.mk
+
+Library_unoxml.mk
+
+Makefile.gb
+
+Module_unoxml.mk
+
+prj\makefile.mk
+	TARGET=prj
+
+test\makefile.mk
+	PRJNAME=unoxml
+	TARGET=tests
+	SLOFILES=$(SHL1OBJS)

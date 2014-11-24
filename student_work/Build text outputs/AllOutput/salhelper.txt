@@ -1,0 +1,70 @@
+salhelper
+=============
+
+Entering /cygdrive/c/steve/testarea/main/salhelper/source
+
+mkout -- version: 1.8
+Making:    all_salhelper.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/salhelper3MSC_version.h/ > ../wntmsci12.pro/misc/salhelper3MSC_version.c
+Compiling: salhelper/wntmsci12.pro/misc/salhelper3MSC_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/salhelper -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/salhelper3MSC_version.obj ../wntmsci12.pro/misc/salhelper3MSC_version.c
+salhelper3MSC_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkwCN1CX > ../wntmsci12.pro/misc/s_salhelper3MSC_version.dpcc
+Compiling: salhelper/source/condition.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/salhelper -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/condition.obj C:/steve/testarea/main/salhelper/source/condition.cxx 
+condition.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkMAvS4Z > ../wntmsci12.pro/misc/s_condition.dpcc
+Compiling: salhelper/source/dynload.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/salhelper -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/dynload.obj C:/steve/testarea/main/salhelper/source/dynload.cxx 
+dynload.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk4BQevf > ../wntmsci12.pro/misc/s_dynload.dpcc
+Compiling: salhelper/source/simplereferenceobject.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/salhelper -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/simplereferenceobject.obj C:/steve/testarea/main/salhelper/source/simplereferenceobject.cxx 
+simplereferenceobject.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk4cKViT > ../wntmsci12.pro/misc/s_simplereferenceobject.dpcc
+Making:    salhelper.lib
+lib   /OUT:../wntmsci12.pro/slb/salhelper.lib @C:/cygwin/tmp/mkBbJwoD
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slo/condition.obj 
+../wntmsci12.pro/slo/dynload.obj 
+../wntmsci12.pro/slo/simplereferenceobject.obj 
+cat msci.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../wntmsci12.pro/misc/msci_salhelper3MSC.dxp
+Making:    module definition file salhelper3MSC.def
+cat ../wntmsci12.pro/misc/msci_salhelper3MSC.dxp >> ../wntmsci12.pro/misc/salhelper3MSC.def.tmpfile
+Making:    salhelper3MSC.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/salhelper -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/salhelper3MSC_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/salhelper3MSC_def.res > ../wntmsci12.pro/misc/salhelper3MSC.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkQuYkNy
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/salhelper3MSC.dll -map:../wntmsci12.pro/misc/salhelper3MSC.map -def:../wntmsci12.pro/misc/salhelper3MSC.def -implib:../wntmsci12.pro/lib/isalhelper.lib ../wntmsci12.pro/slo/salhelper3MSC_version.obj ../wntmsci12.pro/slb/salhelper.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/salhelper3MSC.res 
+   Creating library ../wntmsci12.pro/lib/isalhelper.lib and object ../wntmsci12.pro/lib/isalhelper.exp
+linking ../wntmsci12.pro/bin/salhelper3MSC.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/salhelper3MSC.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/salhelper3MSC.dll.manifest -outputresource:../wntmsci12.pro/bin/salhelper3MSC.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/salhelper3MSC.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/salhelper3MSC.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/salhelper3MSC.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/salhelper3MSC.dll.tmanifest ; fi
+Making:    isalhelper.lib
+build of ../wntmsci12.pro/bin/salhelper3MSC.dll creates ../wntmsci12.pro/lib/isalhelper.lib
+Making:    all_salhelper.dpslo
+salhelper deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/build.lst
+COPY: ../inc/salhelper/condition.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/condition.hxx
+COPY: ../inc/salhelper/dynload.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/dynload.hxx
+COPY: ../inc/salhelper/future.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/future.hxx
+COPY: ../inc/salhelper/futurequeue.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/futurequeue.hxx
+COPY: ../inc/salhelper/monitor.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/monitor.hxx
+COPY: ../inc/salhelper/queue.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/queue.hxx
+COPY: ../inc/salhelper/refobj.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/refobj.hxx
+COPY: ../inc/salhelper/simplereferenceobject.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/simplereferenceobject.hxx
+COPY: ../inc/salhelper/singletonref.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/singletonref.hxx
+COPY: ../wntmsci12.pro/bin/salhelper3MSC.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/salhelper3MSC.dll
+COPY: ../wntmsci12.pro/lib/isalhelper.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/isalhelper.lib
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/salhelper/deliver.log
+Module 'salhelper' delivered successfully. 12 files copied, 0 files unchanged
+
+=============

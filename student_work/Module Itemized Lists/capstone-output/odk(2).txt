@@ -1,0 +1,388 @@
+Name:
+odk
+
+Dependencies:
+:      cppuhelper jurt javaunohelper udkapi ridljar offapi autodoc unodevtools external NULL
+
+Build Rules:
+..\%__SRC%\bin\odkcommon.zip %_DEST%\bin%_EXT%\odkcommon.zip
+
+..\%__SRC%\bin\uno_loader_classes.zip %_DEST%\bin%_EXT%\uno_loader_classes.zip
+
+..\%__SRC%\bin\odkexamples.zip %COMMON_DEST%\bin%_EXT%\odkexamples.zip
+
+Source Files:
+examples\cpp\complextoolbarcontrols\exports.cxx
+examples\cpp\complextoolbarcontrols\ListenerHelper.cxx
+examples\cpp\complextoolbarcontrols\MyProtocolHandler.cxx
+examples\cpp\counter\counter.cxx
+examples\cpp\counter\countermain.cxx
+examples\cpp\custompanel\ctp_factory.cxx
+examples\cpp\custompanel\ctp_panel.cxx
+examples\cpp\custompanel\ctp_services.cxx
+examples\cpp\DocumentLoader\DocumentLoader.cxx
+examples\cpp\remoteclient\remoteclient.cxx
+examples\DevelopersGuide\Components\Addons\ProtocolHandlerAddon_cpp\addon.cxx
+examples\DevelopersGuide\Components\Addons\ProtocolHandlerAddon_cpp\component.cxx
+examples\DevelopersGuide\Components\CppComponent\service1_impl.cxx
+examples\DevelopersGuide\Components\CppComponent\service2_impl.cxx
+examples\DevelopersGuide\Components\CppComponent\TestCppComponent.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\propertyids.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SConnection.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SDatabaseMetaData.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SDriver.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SPreparedStatement.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SResultSet.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SResultSetMetaData.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SServices.cxx
+examples\DevelopersGuide\Database\DriverSkeleton\SStatement.cxx
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\unix\nativeview.c
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\windows\nativeview.c
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilterDetection\fdcomp.cxx
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilterDetection\filterdetect.cxx
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilter_cpp\FlatXml.cxx
+examples\DevelopersGuide\ProfUNO\CppBinding\office_connect.cxx
+examples\DevelopersGuide\ProfUNO\CppBinding\string_samples.cxx
+examples\DevelopersGuide\ProfUNO\Lifetime\object_lifetime.cxx
+examples\DevelopersGuide\ProfUNO\SimpleBootstrap_cpp\SimpleBootstrap_cpp.cxx
+inc\pch\precompiled_odk.cxx
+source\unoapploader\unx\unoapploader.c
+source\unoapploader\win\unoapploader.c
+source\unowinreg\win\unowinreg.cxx
+
+Header Files:
+examples\cpp\complextoolbarcontrols\ListenerHelper.h
+examples\cpp\complextoolbarcontrols\MyProtocolHandler.h
+examples\cpp\custompanel\ctp_factory.hxx
+examples\cpp\custompanel\ctp_panel.hxx
+examples\DevelopersGuide\Components\Addons\ProtocolHandlerAddon_cpp\addon.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\OSubComponent.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\OTypeInfo.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\propertyids.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SConnection.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SDatabaseMetaData.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SDriver.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SPreparedStatement.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SResultSet.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SResultSetMetaData.hxx
+examples\DevelopersGuide\Database\DriverSkeleton\SStatement.hxx
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\unix\nativeview.h
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\windows\nativeview.h
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilterDetection\filterdetect.hxx
+examples\OLE\activex\resource.h
+examples\OLE\activex\SOActiveX.h
+examples\OLE\activex\SOComWindowPeer.h
+examples\OLE\activex\StdAfx2.h
+inc\pch\precompiled_odk.hxx
+
+Patch Files:
+pack\gendocu\idl_ref_javadoc.patch
+
+Makefiles:
+
+examples\basic\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\CLI\makefile.mk
+	PRJNAME=odk
+	TARGET=cli
+
+examples\CLI\CSharp\Spreadsheet\Makefile
+
+examples\CLI\VB.NET\WriterDemo\Makefile
+
+examples\cpp\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\cpp\complextoolbarcontrols\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\cpp\counter\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(COMPCXXFILES))
+	OBJFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\cpp\custompanel\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\cpp\DocumentLoader\Makefile
+	OBJFILES=$(patsubst%.cxx,$(OUT_SLO_COMP)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\cpp\remoteclient\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\Accessibility\Makefile
+
+examples\DevelopersGuide\Accessibility\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\BasicAndDialogs\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\BasicAndDialogs\CreatingDialogs\Makefile
+
+examples\DevelopersGuide\BasicAndDialogs\ToolkitControls\Makefile
+
+examples\DevelopersGuide\Charts\Makefile
+
+examples\DevelopersGuide\Charts\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Components\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Components\Addons\JobsAddon\Makefile
+
+examples\DevelopersGuide\Components\Addons\ProtocolHandlerAddon_cpp\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\Components\Addons\ProtocolHandlerAddon_java\Makefile
+
+examples\DevelopersGuide\Components\CppComponent\Makefile
+	SLOFILES=$(patsubst%.cxx,$(SAMPLE_SLO_OUT)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\Components\dialogcomponent\Makefile
+
+examples\DevelopersGuide\Components\JavaComponent\Makefile
+
+examples\DevelopersGuide\Components\SimpleLicense\Makefile
+
+examples\DevelopersGuide\Components\Thumbs\Makefile
+
+examples\DevelopersGuide\Components\Thumbs\thumbs.mk
+
+examples\DevelopersGuide\Components\Thumbs\org\openoffice\comp\test\Makefile
+
+examples\DevelopersGuide\Components\Thumbs\org\openoffice\test\Makefile
+
+examples\DevelopersGuide\Config\Makefile
+
+examples\DevelopersGuide\Config\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Database\Makefile
+
+examples\DevelopersGuide\Database\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Database\DriverSkeleton\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\Drawing\Makefile
+
+examples\DevelopersGuide\Drawing\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Extensions\DialogWithHelp\Makefile
+
+examples\DevelopersGuide\FirstSteps\Makefile
+
+examples\DevelopersGuide\FirstSteps\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Forms\Makefile
+
+examples\DevelopersGuide\Forms\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\GUI\Makefile
+
+examples\DevelopersGuide\OfficeBean\Makefile
+
+examples\DevelopersGuide\OfficeBean\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\OfficeDev\Makefile
+
+examples\DevelopersGuide\OfficeDev\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\OfficeDev\Clipboard\Makefile
+
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\Makefile
+
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\unix\Makefile
+	SLOFILES=$(patsubst%.c,$(OUT_SHL_SLO)/%.$(OBJ_EXT),$(CFILES))
+
+examples\DevelopersGuide\OfficeDev\DesktopEnvironment\nativelib\windows\Makefile
+	SLOFILES=$(patsubst%.c,$(OUT_SHL_SLO)/%.$(OBJ_EXT),$(CFILES))
+	$(SLOFILES)jawt.libmsvcrt.libkernel32.libuser32.lib
+
+examples\DevelopersGuide\OfficeDev\DisableCommands\Makefile
+
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\AsciiFilter\Makefile
+
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilterDetection\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilter_cpp\Makefile
+	SLOFILES=$(patsubst%.cxx,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\OfficeDev\FilterDevelopment\FlatXmlFilter_java\Makefile
+
+examples\DevelopersGuide\OfficeDev\Linguistic\Makefile
+
+examples\DevelopersGuide\OfficeDev\PathSettings\Makefile
+
+examples\DevelopersGuide\OfficeDev\PathSubstitution\Makefile
+
+examples\DevelopersGuide\OfficeDev\TerminationTest\Makefile
+
+examples\DevelopersGuide\ProfUNO\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\ProfUNO\CppBinding\Makefile
+
+examples\DevelopersGuide\ProfUNO\InterprocessConn\Makefile
+
+examples\DevelopersGuide\ProfUNO\Lifetime\Makefile
+	OBJFILES=$(patsubst%.cxx,$(OUT_COMP_OBJ)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\ProfUNO\SimpleBootstrap_cpp\Makefile
+	OBJFILES=$(patsubst%.cxx,$(OUT_SLO_COMP)/%.$(OBJ_EXT),$(CXXFILES))
+
+examples\DevelopersGuide\ProfUNO\SimpleBootstrap_java\Makefile
+
+examples\DevelopersGuide\ScriptingFramework\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\ScriptingFramework\SayHello\Makefile
+
+examples\DevelopersGuide\ScriptingFramework\ScriptSelector\Makefile
+
+examples\DevelopersGuide\Spreadsheet\Makefile
+
+examples\DevelopersGuide\Spreadsheet\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\Text\Makefile
+
+examples\DevelopersGuide\Text\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\DevelopersGuide\UCB\Makefile
+
+examples\DevelopersGuide\UCB\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\java\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\java\ConverterServlet\Makefile
+
+examples\java\DocumentHandling\Makefile
+
+examples\java\Drawing\Makefile
+
+examples\java\EmbedDocument\Container1\Makefile
+
+examples\java\EmbedDocument\EmbeddedObject\Makefile
+
+examples\java\Inspector\Makefile
+
+examples\java\MinimalComponent\Makefile
+
+examples\java\NotesAccess\Makefile
+
+examples\java\PropertySet\Makefile
+
+examples\java\Spreadsheet\Makefile
+
+examples\java\Storage\Makefile
+
+examples\java\Text\Makefile
+
+examples\java\ToDo\Makefile
+
+examples\OLE\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+examples\OLE\activex\Makefile
+	SLOFILES=$(patsubst%.cpp,$(OUT_COMP_SLO)/%.$(OBJ_EXT),$(CXXFILES))
+
+inc\makefile.mk
+	PRJNAME=odk
+	TARGET=inc
+
+pack\checkbin\makefile.mk
+	PRJNAME=odk
+	TARGET=checkbin
+
+pack\checkidl\makefile.mk
+	PRJNAME=odk
+	TARGET=checkidl
+
+pack\checkinc\makefile.mk
+	PRJNAME=odk
+	TARGET=checkinc
+
+pack\checkinc2\makefile.mk
+	PRJNAME=odk
+	TARGET=checkinc2
+
+pack\copying\dk.mk
+
+pack\copying\makefile.mk
+	PRJNAME=odk
+	TARGET=copying
+
+pack\gendocu\makefile.mk
+	PRJNAME=odk
+	TARGET=gendocu
+
+pack\unzip_udk\makefile.mk
+	PRJNAME=odk
+	TARGET=unzip_udk
+
+settings\platform.mk
+
+settings\settings.mk
+
+settings\std.mk
+
+settings\stdtarget.mk
+
+source\com\sun\star\lib\loader\makefile.mk
+	PRJNAME=odk
+	TARGET=com_sun_star_lib_loader
+
+source\unoapploader\unx\makefile.mk
+	PRJNAME=odk
+	TARGET=unoapploader
+
+source\unoapploader\win\makefile.mk
+	PRJNAME=odk
+	TARGET=unoapploader
+
+source\unowinreg\win\makefile.mk
+	PRJNAME=odk
+	TARGET=unowinreg
+	SLOFILES=
+	$(SLO)$/unowinreg.obj
+
+util\makefile.mk
+	PRJNAME=odk
+	TARGET=odk
+
+util\makefile.pmk
+
+util\odk_rules.pmk

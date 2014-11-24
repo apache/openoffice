@@ -1,0 +1,79 @@
+Name:
+idl
+
+Dependencies:
+tools NULL
+
+Build Rules:
+..\%__SRC%\bin\svidl.exe %_DEST%\bin%_EXT%\svidl.exe
+..\%__SRC%\bin\svidl %_DEST%\bin%_EXT%\svidl
+
+Source Files:
+inc\pch\precompiled_idl.cxx
+source\cmptools\char.cxx
+source\cmptools\hash.cxx
+source\cmptools\lex.cxx
+source\objects\basobj.cxx
+source\objects\bastype.cxx
+source\objects\module.cxx
+source\objects\object.cxx
+source\objects\slot.cxx
+source\objects\types.cxx
+source\prj\command.cxx
+source\prj\database.cxx
+source\prj\globals.cxx
+source\prj\svidl.cxx
+util\idlpch.cxx
+
+Header Files:
+inc\attrib.hxx
+inc\basobj.hxx
+inc\bastype.hxx
+inc\char.hxx
+inc\command.hxx
+inc\database.hxx
+inc\globals.hxx
+inc\hash.hxx
+inc\lex.hxx
+inc\module.hxx
+inc\object.hxx
+inc\slot.hxx
+inc\types.hxx
+inc\pch\precompiled_idl.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=idl
+	TARGET=inc
+
+source\cmptools\makefile.mk
+	PRJNAME=idl
+	TARGET=cmptools
+	OBJFILES=$(OBJ)$/lex.obj
+	$(OBJ)$/char.obj
+	$(OBJ)$/hash.obj
+
+source\objects\makefile.mk
+	PRJNAME=idl
+	TARGET=objects
+	OBJFILES=$(OBJ)$/bastype.obj
+	$(OBJ)$/basobj.obj
+	$(OBJ)$/types.obj
+	$(OBJ)$/object.obj
+	$(OBJ)$/slot.obj
+	$(OBJ)$/module.obj
+
+source\prj\makefile.mk
+	PRJNAME=idl
+	TARGET=prj
+	OBJFILES=$(OBJ)$/command.obj
+	$(OBJ)$/svidl.obj
+	$(OBJ)$/globals.obj
+	$(OBJ)$/database.obj
+
+util\makefile.mk
+	PRJNAME=idl
+	TARGET=idl

@@ -1,0 +1,20 @@
+padmin
+=============
+
+Entering /cygdrive/c/steve/testarea/main/padmin/prj
+
+cd .. && make -f Makefile.gb  -r -j1  
+[ build MOD ] padmin
+R=/cygdrive/c/steve/TestArea && S=$R/main && O=$S/solver/410/wntmsci12.pro && W=$O/workdir &&  mkdir -p $W/Module/ && touch $W/Module/padmin
+[ build ALL ] top level modules: padmin
+[ build ALL ] loaded modules: padmin
+[ build CHK ] padmin
+R=/cygdrive/c/steve/TestArea && S=$R/main && O=$S/solver/410/wntmsci12.pro && W=$O/workdir &&  mkdir -p $W/Module/check/ && touch $W/Module/check/padmin
+[ build CHK ] loaded modules: padmin
+padmin deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/padmin/build.lst
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/padmin/deliver.log
+Module 'padmin' delivered successfully. 1 files copied, 0 files unchanged
+
+=============

@@ -1,0 +1,57 @@
+Name:
+jvmaccess
+
+Dependencies:
+offuh ridljar cppu sal salhelper NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\jvmaccess
+..\inc\jvmaccess\classpath.hxx %_DEST%\inc%_EXT%\jvmaccess\classpath.hxx
+..\inc\jvmaccess\unovirtualmachine.hxx %_DEST%\inc%_EXT%\jvmaccess\unovirtualmachine.hxx
+..\inc\jvmaccess\virtualmachine.hxx %_DEST%\inc%_EXT%\jvmaccess\virtualmachine.hxx
+..\%__SRC%\bin\jvmacces*.dll %_DEST%\bin%_EXT%\*
+..\%__SRC%\lib\ijvmaccess.lib %_DEST%\lib%_EXT%\ijvmaccess.lib
+..\%__SRC%\lib\jvmaccess*.lib %_DEST%\lib%_EXT%\jvmaccess*.lib
+..\%__SRC%\lib\libjvmaccess*.*.* %_DEST%\lib%_EXT%\*
+linklib: libjvmaccess*.*.*
+
+Source Files:
+source\classpath.cxx
+source\unovirtualmachine.cxx
+source\virtualmachine.cxx
+workbench\exceptiontest1.cxx
+workbench\exceptiontest2.cxx
+workbench\javainfo\javainfotest.cxx
+
+Header Files:
+inc\jvmaccess\classpath.hxx
+inc\jvmaccess\unovirtualmachine.hxx
+inc\jvmaccess\virtualmachine.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\makefile.mk
+	PRJNAME=jvmaccess
+	TARGET=$(PRJNAME)
+	SLOFILES=
+	$(SLO)$/classpath.obj
+	$(SLO)$/unovirtualmachine.obj
+	$(SLO)$/virtualmachine.obj
+
+util\makefile.mk
+	PRJNAME=jvmaccess
+	TARGET=$(PRJNAME)
+
+workbench\makefile.mk
+	PRJNAME=jvmaccess
+	TARGET=workbench
+
+workbench\java\makefile.mk
+	PRJNAME=jvmaccess
+	TARGET=workbench_java
+
+workbench\javainfo\makefile.mk
+	PRJNAME=jvmaccess
+	TARGET=workbench_javainfo

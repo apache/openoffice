@@ -1,0 +1,127 @@
+Name:
+cosv
+
+Dependencies:
+soltools stlport NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\cosv
+mkdir: %_DEST%\inc%_EXT%\cosv\tpl
+
+..\%__SRC%\lib\cosv.lib %_DEST%\lib%_EXT%\cosv.lib
+..\%__SRC%\lib\libcosv.a %_DEST%\lib%_EXT%\libcosv.a
+..\inc\cosv\*.hxx %_DEST%\inc%_EXT%\cosv\*.hxx
+..\inc\cosv\*.h %_DEST%\inc%_EXT%\cosv\*.h
+..\inc\cosv\tpl\*.hxx %_DEST%\inc%_EXT%\cosv\tpl\*.hxx
+
+Source Files:
+source\comphelp\badcast.cxx
+source\service\comdline.cxx
+source\service\comfunc.cxx
+source\service\commandline.cxx
+source\service\csv_ostream.cxx
+source\service\datetime.cxx
+source\service\std_outp.cxx
+source\storage\dirchain.cxx
+source\storage\file.cxx
+source\storage\mbstream.cxx
+source\storage\persist.cxx
+source\storage\ploc.cxx
+source\storage\plocroot.cxx
+source\storage\ploc_dir.cxx
+source\strings\streamstr.cxx
+source\strings\string.cxx
+source\strings\str_types.cxx
+source\unittest\file_ut.cxx
+source\unittest\string_ut.cxx
+source\unittest\ut_main.cxx
+
+Header Files:
+inc\cosv\bstream.hxx
+inc\cosv\comdline.hxx
+inc\cosv\comfunc.hxx
+inc\cosv\commandline.hxx
+inc\cosv\csv_env.hxx
+inc\cosv\csv_ostream.hxx
+inc\cosv\csv_precomp.h
+inc\cosv\datetime.hxx
+inc\cosv\dirchain.hxx
+inc\cosv\file.hxx
+inc\cosv\mbstream.hxx
+inc\cosv\openclose.hxx
+inc\cosv\persist.hxx
+inc\cosv\ploc.hxx
+inc\cosv\plocroot.hxx
+inc\cosv\ploc_dir.hxx
+inc\cosv\std_outp.hxx
+inc\cosv\streamstr.hxx
+inc\cosv\string.hxx
+inc\cosv\stringdata.hxx
+inc\cosv\str_types.hxx
+inc\cosv\x.hxx
+inc\cosv\tpl\dyn.hxx
+inc\cosv\tpl\funcall.hxx
+inc\cosv\tpl\processor.hxx
+inc\cosv\tpl\range.hxx
+inc\cosv\tpl\swelist.hxx
+inc\cosv\tpl\tpltools.hxx
+inc\cosv\tpl\vvector.hxx
+source\inc\precomp.h
+source\unittest\ut.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\fullcpp.mk
+
+source\comphelp\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv_badcast_wnt
+	OBJFILES=
+	$(OBJ)$/badcast.obj
+
+source\service\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv_service
+	OBJFILES=
+	$(OBJ)$/comdline.obj
+	$(OBJ)$/comfunc.obj
+	$(OBJ)$/csv_ostream.obj
+	$(OBJ)$/datetime.obj
+	$(OBJ)$/std_outp.obj
+
+source\storage\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv_storage
+	OBJFILES=
+	$(OBJ)$/dirchain.obj
+	$(OBJ)$/file.obj
+	$(OBJ)$/mbstream.obj
+	$(OBJ)$/persist.obj
+	$(OBJ)$/ploc.obj
+	$(OBJ)$/ploc_dir.obj
+	$(OBJ)$/plocroot.obj
+	#SLOFILES=
+	#$(SLO)$/file.obj
+	#$(SLO)$/csfileim.obj
+	#$(SLO)$/memstorg.obj
+
+source\strings\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv_strings
+	OBJFILES=
+	$(OBJ)$/str_types.obj
+	$(OBJ)$/streamstr.obj
+	$(OBJ)$/string.obj
+
+source\unittest\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv_unittest
+	OBJFILES=
+	$(OBJ)$/file_ut.obj
+	$(OBJ)$/simplestring_ut.obj
+
+util\makefile.mk
+	PRJNAME=cosv
+	TARGET=cosv

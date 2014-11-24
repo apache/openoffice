@@ -1,0 +1,303 @@
+javaunohelper
+=============
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/inc
+
+mkout -- version: 1.8
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mknaxh1K
+precompiled_javaunohelper.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkUszl3R
+precompiled_javaunohelper.cxx
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/com/sun/star/lib/uno/helper
+
+Making:    com_sun_star_lib_uno_helper.dpj
+javadeps
+
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_helper_dummy.java
+javac -classpath ".;../../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkpy3em9
+Making:    com_sun_star_lib_uno_helper.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/source
+
+Making:    all_juh.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/juhx_version.h/ > ../wntmsci12.pro/misc/juhx_version.c
+Compiling: javaunohelper/wntmsci12.pro/misc/juhx_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/juhx_version.obj ../wntmsci12.pro/misc/juhx_version.c
+juhx_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkjLynvT > ../wntmsci12.pro/misc/s_juhx_version.dpcc
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/juh_version.h/ > ../wntmsci12.pro/misc/juh_version.c
+Compiling: javaunohelper/wntmsci12.pro/misc/juh_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/juh_version.obj ../wntmsci12.pro/misc/juh_version.c
+juh_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkTIhW3D > ../wntmsci12.pro/misc/s_juh_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkErP6Bs && C:/cygwin/bin/touch.exe ../wntmsci12.pro/inc/juh_headergen.done
+Compiling: javaunohelper/source/javaunohelper.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../inc/pch -Yuprecompiled_javaunohelper.hxx -Fp../wntmsci12.pro/slo/pch_ex/precompiled_javaunohelper.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/javaunohelper.obj C:/steve/testarea/main/javaunohelper/source/javaunohelper.cxx 
+javaunohelper.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkkbfHzm > ../wntmsci12.pro/misc/s_javaunohelper.dpcc
+Compiling: javaunohelper/source/bootstrap.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../inc/pch -Yuprecompiled_javaunohelper.hxx -Fp../wntmsci12.pro/slo/pch_ex/precompiled_javaunohelper.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/bootstrap.obj C:/steve/testarea/main/javaunohelper/source/bootstrap.cxx 
+bootstrap.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mksDkgLL > ../wntmsci12.pro/misc/s_bootstrap.dpcc
+Compiling: javaunohelper/source/preload.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../inc/pch -Yuprecompiled_javaunohelper.hxx -Fp../wntmsci12.pro/slo/pch_ex/precompiled_javaunohelper.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/preload.obj C:/steve/testarea/main/javaunohelper/source/preload.cxx 
+preload.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkENtOhh > ../wntmsci12.pro/misc/s_preload.dpcc
+Compiling: javaunohelper/source/vm.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../inc/pch -Yuprecompiled_javaunohelper.hxx -Fp../wntmsci12.pro/slo/pch_ex/precompiled_javaunohelper.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/vm.obj C:/steve/testarea/main/javaunohelper/source/vm.cxx 
+vm.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk17ieOd > ../wntmsci12.pro/misc/s_vm.dpcc
+------------------------------
+using: 
+using: ../wntmsci12.pro/slb/juhx.lib
+------------------------------
+Making:    juhx.lib
+lib   /OUT:../wntmsci12.pro/slb/juhx.lib @C:/cygwin/tmp/mk5mFdnX
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slo/javaunohelper.obj ../wntmsci12.pro/slo/bootstrap.obj ../wntmsci12.pro/slo/vm.obj 
+
+------------------------------
+using: 
+using: ../wntmsci12.pro/slb/juh.lib
+------------------------------
+Making:    juh.lib
+lib   /OUT:../wntmsci12.pro/slb/juh.lib @C:/cygwin/tmp/mkR71Hmz
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slo/preload.obj 
+
+cat javaunohelper.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../wntmsci12.pro/misc/javaunohelper_juhx.dxp
+Making:    module definition file juhx.def
+cat ../wntmsci12.pro/misc/javaunohelper_juhx.dxp >> ../wntmsci12.pro/misc/juhx.def.tmpfile
+cat javaunohelper.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../wntmsci12.pro/misc/javaunohelper_juh.dxp
+Making:    module definition file juh.def
+cat ../wntmsci12.pro/misc/javaunohelper_juh.dxp >> ../wntmsci12.pro/misc/juh.def.tmpfile
+Making:    juhx.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I.  ../wntmsci12.pro/misc/juhx_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/juhx_def.res > ../wntmsci12.pro/misc/juhx.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkWeVlrF
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/juhx.dll -map:../wntmsci12.pro/misc/juhx.map -def:../wntmsci12.pro/misc/juhx.def -implib:../wntmsci12.pro/lib/ijuhx.lib ../wntmsci12.pro/slo/juhx_version.obj ../wntmsci12.pro/slb/juhx.lib ijvmaccess.lib isalhelper.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/juhx.res 
+   Creating library ../wntmsci12.pro/lib/ijuhx.lib and object ../wntmsci12.pro/lib/ijuhx.exp
+linking ../wntmsci12.pro/bin/juhx.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/juhx.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/juhx.dll.manifest -outputresource:../wntmsci12.pro/bin/juhx.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/juhx.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/juhx.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/juhx.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/juhx.dll.tmanifest ; fi
+Making:    juh.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/comprehensive -I../wntmsci12.pro/inc/comprehensive -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../res -I.  ../wntmsci12.pro/misc/juh_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/juh_def.res > ../wntmsci12.pro/misc/juh.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkIhKrwt
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/juh.dll -map:../wntmsci12.pro/misc/juh.map -def:../wntmsci12.pro/misc/juh.def -implib:../wntmsci12.pro/lib/ijuh.lib ../wntmsci12.pro/slo/juh_version.obj ../wntmsci12.pro/slb/juh.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/juh.res 
+   Creating library ../wntmsci12.pro/lib/ijuh.lib and object ../wntmsci12.pro/lib/ijuh.exp
+linking ../wntmsci12.pro/bin/juh.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/juh.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/juh.dll.manifest -outputresource:../wntmsci12.pro/bin/juh.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/juh.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/juh.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/juh.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/juh.dll.tmanifest ; fi
+Making:    all_juh.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/com/sun/star/comp/helper
+
+Making:    com_sun_star_comp_helper.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_helper_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkrc4NE1
+Making:    com_sun_star_comp_helper.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/com/sun/star/comp/juhtest
+
+Making:    com_sun_star_comp_juhtest.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_juhtest_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkdzUdfV
+Making:    com_sun_star_comp_juhtest.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/com/sun/star/comp
+
+Making:    com_sun_star_comp.dpj
+javadeps
+
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_comp_dummy.java
+javac -classpath ".;../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkr943l0
+Making:    com_sun_star_comp.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/com/sun/star/lib/uno/adapter
+
+Making:    com_sun_star_lib_uno_adapter.dpj
+javadeps
+
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/com_sun_star_lib_uno_adapter_dummy.java
+javac -classpath ".;../../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mknEERcP
+Making:    com_sun_star_lib_uno_adapter.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/javaunohelper/util
+
+Making:    juh.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/juh_src.dpzz
+
+mkdir.exe -p ..
+cd .. && zipdep.pl -u -r -prefix ../ ../wntmsci12.pro/bin/juh_src.zip "com" "-x" "*makefile.mk" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/javaunohelper/util/../wntmsci12.pro/misc/juh_src.dpzz
+cat ../wntmsci12.pro/misc/juh_src.dpzz C:/cygwin/tmp/mkgc3rLG | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/juh.dpz
+Making:    juh_src.zip
+rebuilding zipfiles
+------------------------------ 
+cd .. && zip  -u -r C:/cygwin/tmp/mkMml4tk.juh_src_.zip com -x "*makefile.mk" -x delzip  -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: C:/cygwin/tmp/mkMml4tk.juh_src_.zip not found or empty
+  adding: com/ (stored 0%)
+  adding: com/sun/ (stored 0%)
+  adding: com/sun/star/ (stored 0%)
+  adding: com/sun/star/comp/ (stored 0%)
+  adding: com/sun/star/comp/helper/ (stored 0%)
+  adding: com/sun/star/comp/helper/Bootstrap.java (deflated 74%)
+  adding: com/sun/star/comp/helper/BootstrapException.java (deflated 66%)
+  adding: com/sun/star/comp/helper/ComponentContext.java (deflated 79%)
+  adding: com/sun/star/comp/helper/ComponentContextEntry.java (deflated 60%)
+  adding: com/sun/star/comp/helper/RegistryServiceFactory.java (deflated 74%)
+  adding: com/sun/star/comp/helper/SharedLibraryLoader.java (deflated 74%)
+  adding: com/sun/star/comp/helper/UnoInfo.java (deflated 63%)
+  adding: com/sun/star/comp/JavaUNOHelperServices.java (deflated 58%)
+  adding: com/sun/star/comp/juhtest/ (stored 0%)
+  adding: com/sun/star/comp/juhtest/SmoketestCommandEnvironment.java (deflated 68%)
+  adding: com/sun/star/lib/ (stored 0%)
+  adding: com/sun/star/lib/uno/ (stored 0%)
+  adding: com/sun/star/lib/uno/adapter/ (stored 0%)
+  adding: com/sun/star/lib/uno/adapter/ByteArrayToXInputStreamAdapter.java (deflated 73%)
+  adding: com/sun/star/lib/uno/adapter/InputStreamToXInputStreamAdapter.java (deflated 72%)
+  adding: com/sun/star/lib/uno/adapter/OutputStreamToXOutputStreamAdapter.java (deflated 63%)
+  adding: com/sun/star/lib/uno/adapter/XInputStreamToInputStreamAdapter.java (deflated 70%)
+  adding: com/sun/star/lib/uno/adapter/XOutputStreamToByteArrayAdapter.java (deflated 67%)
+  adding: com/sun/star/lib/uno/adapter/XOutputStreamToOutputStreamAdapter.java (deflated 66%)
+  adding: com/sun/star/lib/uno/helper/ (stored 0%)
+  adding: com/sun/star/lib/uno/helper/ComponentBase.java (deflated 64%)
+  adding: com/sun/star/lib/uno/helper/Factory.java (deflated 77%)
+  adding: com/sun/star/lib/uno/helper/InterfaceContainer.java (deflated 77%)
+  adding: com/sun/star/lib/uno/helper/MultiTypeInterfaceContainer.java (deflated 70%)
+  adding: com/sun/star/lib/uno/helper/PropertySet.java (deflated 80%)
+  adding: com/sun/star/lib/uno/helper/PropertySetMixin.java (deflated 83%)
+  adding: com/sun/star/lib/uno/helper/UnoUrl.java (deflated 72%)
+  adding: com/sun/star/lib/uno/helper/WeakAdapter.java (deflated 62%)
+  adding: com/sun/star/lib/uno/helper/WeakBase.java (deflated 64%)
+if [ -f C:/cygwin/tmp/mkMml4tk.juh_src_.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl C:/cygwin/tmp/mkMml4tk.juh_src_.zip \
+	    ; fi
+cp C:/cygwin/tmp/mkMml4tk.juh_src_.zip  ../wntmsci12.pro/bin/juh_src.zip 
+/bin/rm -f C:/cygwin/tmp/mkMml4tk.juh_src_.zip
+Making:    juh.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/juh_src.dpzz
+
+mkdir.exe -p ..
+cd .. && zipdep.pl -u -r -prefix ../ ../wntmsci12.pro/bin/juh_src.zip "com" "-x" "*makefile.mk" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/javaunohelper/util/../wntmsci12.pro/misc/juh_src.dpzz
+cat ../wntmsci12.pro/misc/juh_src.dpzz C:/cygwin/tmp/mknZbXZs | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/juh.dpz
+/bin/rm -f ../wntmsci12.pro/misc/juh_manifest
+cp C:/steve/testarea/main/javaunohelper/util/manifest ../wntmsci12.pro/misc/juh_manifest
+echo Manifest-Version: 1.0 > ../wntmsci12.pro/class/juh/META-INF/MANIFEST.MF
+echo "Class-Path: ridl.jar jurt.jar ../../lib/ ../bin/" >> ../wntmsci12.pro/class/juh/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../wntmsci12.pro/class/juh/META-INF/MANIFEST.MF
+cat ../wntmsci12.pro/misc/juh_manifest >> ../wntmsci12.pro/class/juh/META-INF/MANIFEST.MF
+cd ../wntmsci12.pro/class/juh && zip  -u -rX ../juh.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../juh.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 19%)
+cd ../wntmsci12.pro/class && zip  -u -rX juh.jar com  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/ (stored 0%)
+  adding: com/sun/ (stored 0%)
+  adding: com/sun/star/ (stored 0%)
+  adding: com/sun/star/comp/ (stored 0%)
+  adding: com/sun/star/comp/helper/ (stored 0%)
+  adding: com/sun/star/comp/helper/Bootstrap$1.class (deflated 46%)
+  adding: com/sun/star/comp/helper/Bootstrap.class (deflated 54%)
+  adding: com/sun/star/comp/helper/BootstrapException.class (deflated 47%)
+  adding: com/sun/star/comp/helper/ComponentContext.class (deflated 48%)
+  adding: com/sun/star/comp/helper/ComponentContextEntry.class (deflated 37%)
+  adding: com/sun/star/comp/helper/Disposer.class (deflated 38%)
+  adding: com/sun/star/comp/helper/RegistryServiceFactory.class (deflated 56%)
+  adding: com/sun/star/comp/helper/SharedLibraryLoader.class (deflated 61%)
+  adding: com/sun/star/comp/helper/UnoInfo.class (deflated 40%)
+  adding: com/sun/star/comp/JavaUNOHelperServices.class (deflated 45%)
+  adding: com/sun/star/comp/juhtest/ (stored 0%)
+  adding: com/sun/star/comp/juhtest/InteractionImpl.class (deflated 42%)
+  adding: com/sun/star/comp/juhtest/ProgressImpl.class (deflated 35%)
+  adding: com/sun/star/comp/juhtest/SmoketestCommandEnvironment.class (deflated 49%)
+  adding: com/sun/star/lib/ (stored 0%)
+  adding: com/sun/star/lib/uno/ (stored 0%)
+  adding: com/sun/star/lib/uno/adapter/ (stored 0%)
+  adding: com/sun/star/lib/uno/adapter/ByteArrayToXInputStreamAdapter.class (deflated 44%)
+  adding: com/sun/star/lib/uno/adapter/InputStreamToXInputStreamAdapter.class (deflated 47%)
+  adding: com/sun/star/lib/uno/adapter/OutputStreamToXOutputStreamAdapter.class (deflated 46%)
+  adding: com/sun/star/lib/uno/adapter/XInputStreamToInputStreamAdapter.class (deflated 43%)
+  adding: com/sun/star/lib/uno/adapter/XOutputStreamToByteArrayAdapter.class (deflated 42%)
+  adding: com/sun/star/lib/uno/adapter/XOutputStreamToOutputStreamAdapter.class (deflated 48%)
+  adding: com/sun/star/lib/uno/helper/ (stored 0%)
+  adding: com/sun/star/lib/uno/helper/ComponentBase.class (deflated 46%)
+  adding: com/sun/star/lib/uno/helper/Factory.class (deflated 54%)
+  adding: com/sun/star/lib/uno/helper/InterfaceContainer$Itr.class (deflated 43%)
+  adding: com/sun/star/lib/uno/helper/InterfaceContainer$LstItr.class (deflated 51%)
+  adding: com/sun/star/lib/uno/helper/InterfaceContainer.class (deflated 48%)
+  adding: com/sun/star/lib/uno/helper/MultiTypeInterfaceContainer.class (deflated 45%)
+  adding: com/sun/star/lib/uno/helper/PropertySet$1.class (deflated 29%)
+  adding: com/sun/star/lib/uno/helper/PropertySet$PropertySetInfo.class (deflated 55%)
+  adding: com/sun/star/lib/uno/helper/PropertySet.class (deflated 54%)
+  adding: com/sun/star/lib/uno/helper/PropertySetMixin$BoundListeners.class (deflated 54%)
+  adding: com/sun/star/lib/uno/helper/PropertySetMixin$Info.class (deflated 53%)
+  adding: com/sun/star/lib/uno/helper/PropertySetMixin$PropertyData.class (deflated 36%)
+  adding: com/sun/star/lib/uno/helper/PropertySetMixin.class (deflated 57%)
+  adding: com/sun/star/lib/uno/helper/UnoUrl$UnoUrlPart.class (deflated 50%)
+  adding: com/sun/star/lib/uno/helper/UnoUrl.class (deflated 51%)
+  adding: com/sun/star/lib/uno/helper/WeakAdapter.class (deflated 44%)
+  adding: com/sun/star/lib/uno/helper/WeakBase.class (deflated 44%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri 'vnd.sun.star.expand:$URE_INTERNAL_JAVA_DIR/juh.jar' \
+        -o ../wntmsci12.pro/misc/juh.component C:/steve/TestArea/main/solenv/bin/createcomponent.xslt juh.component
+javaunohelper deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/javaunohelper/build.lst
+COPY: ../wntmsci12.pro/class/juh.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar
+COPY: ../wntmsci12.pro/bin/juh.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.dll
+COPY: ../wntmsci12.pro/bin/juhx.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juhx.dll
+COPY: ../wntmsci12.pro/misc/juh.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/juh.component
+COPY: ../wntmsci12.pro/bin/juh_src.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh_src.zip
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/javaunohelper/deliver.log
+Module 'javaunohelper' delivered successfully. 6 files copied, 0 files unchanged
+
+=============

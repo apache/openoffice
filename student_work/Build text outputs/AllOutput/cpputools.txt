@@ -1,0 +1,95 @@
+cpputools
+=============
+
+Entering /cygdrive/c/steve/testarea/main/cpputools/source/registercomponent
+
+mkout -- version: 1.8
+Making:    all_regcomp.dpobj
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mktDxyTG && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/regcomp_headergen.done
+Compiling: cpputools/source/registercomponent/registercomponent.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/regcomp -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/obj/registercomponent.obj C:/steve/testarea/main/cpputools/source/registercomponent/registercomponent.cxx
+registercomponent.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkuiQYjC > ../../wntmsci12.pro/misc/o_registercomponent.dpcc
+Making:    regcomp.exe
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkEm4sZU
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -out:../../wntmsci12.pro/bin/regcomp.exe -map:../../wntmsci12.pro/misc/regcomp.map ../../wntmsci12.pro/obj/registercomponent.obj isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib 
+linking ../../wntmsci12.pro/bin/regcomp.exe.manifest ...
+if [ -f ../../wntmsci12.pro/bin/regcomp.exe.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/regcomp.exe.manifest -outputresource:../../wntmsci12.pro/bin/regcomp.exe\;1 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/regcomp.exe.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/regcomp.exe.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/regcomp.exe.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/regcomp.exe.tmanifest ; fi
+Making:    all_regcomp.dpobj
+
+Entering /cygdrive/c/steve/testarea/main/cpputools/source/unoexe
+
+Making:    all_uno.dpobj
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mk85jCQA && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/uno_headergen.done
+Compiling: cpputools/source/unoexe/unoexe.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/obj/unoexe.obj C:/steve/testarea/main/cpputools/source/unoexe/unoexe.cxx
+unoexe.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkb6D6xP > ../../wntmsci12.pro/misc/o_unoexe.dpcc
+Making:    uno.exe
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkiV2tYj
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -out:../../wntmsci12.pro/bin/uno.exe -map:../../wntmsci12.pro/misc/uno.map ../../wntmsci12.pro/obj/unoexe.obj isal.lib isalhelper.lib icppu.lib icppuhelper.lib libxml2.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib 
+linking ../../wntmsci12.pro/bin/uno.exe.manifest ...
+if [ -f ../../wntmsci12.pro/bin/uno.exe.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/uno.exe.manifest -outputresource:../../wntmsci12.pro/bin/uno.exe\;1 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/uno.exe.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/uno.exe.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/uno.exe.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/uno.exe.tmanifest ; fi
+Making:    all_uno.dpobj
+
+Entering /cygdrive/c/steve/testarea/main/cpputools/source/regsingleton
+
+Making:    all_regsingleton.dpobj
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mkUpQIZV && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/regsingleton_headergen.done
+Compiling: cpputools/source/regsingleton/regsingleton.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/regsingleton -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include   -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/obj/regsingleton.obj C:/steve/testarea/main/cpputools/source/regsingleton/regsingleton.cxx
+regsingleton.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkw58V6N > ../../wntmsci12.pro/misc/o_regsingleton.dpcc
+Making:    regsingleton.exe
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkWMPhQc
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -out:../../wntmsci12.pro/bin/regsingleton.exe -map:../../wntmsci12.pro/misc/regsingleton.map ../../wntmsci12.pro/obj/regsingleton.obj isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib 
+linking ../../wntmsci12.pro/bin/regsingleton.exe.manifest ...
+if [ -f ../../wntmsci12.pro/bin/regsingleton.exe.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/regsingleton.exe.manifest -outputresource:../../wntmsci12.pro/bin/regsingleton.exe\;1 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/regsingleton.exe.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/regsingleton.exe.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/regsingleton.exe.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/regsingleton.exe.tmanifest ; fi
+Making:    all_regsingleton.dpobj
+
+Entering /cygdrive/c/steve/testarea/main/cpputools/source/sp2bv
+
+Making:    all_sp2bv.dpobj
+Compiling: cpputools/source/sp2bv/sp2bv.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/sp2bv -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/obj/sp2bv.obj C:/steve/testarea/main/cpputools/source/sp2bv/sp2bv.cxx
+sp2bv.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkOPXESB > ../../wntmsci12.pro/misc/o_sp2bv.dpcc
+Making:    sp2bv.exe
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkf1OYIo
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -out:../../wntmsci12.pro/bin/sp2bv.exe -map:../../wntmsci12.pro/misc/sp2bv.map ../../wntmsci12.pro/obj/sp2bv.obj isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib 
+linking ../../wntmsci12.pro/bin/sp2bv.exe.manifest ...
+if [ -f ../../wntmsci12.pro/bin/sp2bv.exe.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/sp2bv.exe.manifest -outputresource:../../wntmsci12.pro/bin/sp2bv.exe\;1 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/sp2bv.exe.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/sp2bv.exe.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/sp2bv.exe.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/sp2bv.exe.tmanifest ; fi
+Making:    all_sp2bv.dpobj
+cpputools deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/cpputools/build.lst
+COPY: ../wntmsci12.pro/bin/regcomp.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regcomp.exe
+COPY: ../wntmsci12.pro/bin/regcomp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regcomp.bin
+COPY: ../wntmsci12.pro/bin/uno.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/uno.exe
+COPY: ../wntmsci12.pro/bin/uno -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/uno.bin
+COPY: ../wntmsci12.pro/bin/regsingleton.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regsingleton.exe
+COPY: ../wntmsci12.pro/bin/sp2bv.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/sp2bv.exe
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/cpputools/deliver.log
+Module 'cpputools' delivered successfully. 7 files copied, 4 files unchanged
+
+=============

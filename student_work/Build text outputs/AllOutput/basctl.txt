@@ -1,0 +1,67 @@
+basctl
+=============
+
+Entering /cygdrive/c/steve/testarea/main/basctl/sdi
+
+
+Entering /cygdrive/c/steve/testarea/main/basctl/inc
+
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkHtLBGV
+precompiled_basctl.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkQ3YB42
+precompiled_basctl.cxx
+
+Entering /cygdrive/c/steve/testarea/main/basctl/source/accessibility
+
+
+Entering /cygdrive/c/steve/testarea/main/basctl/source/basicide
+
+
+Entering /cygdrive/c/steve/testarea/main/basctl/source/dlged
+
+
+Entering /cygdrive/c/steve/testarea/main/basctl/util
+
+Making:    basctl.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/basctl -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/basctl_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/basctl_def.res > ../wntmsci12.pro/misc/basctl.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkHb7EPh
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/basctl.dll -map:../wntmsci12.pro/misc/basctl.map ../wntmsci12.pro/lib/basctl.exp ../wntmsci12.pro/slo/basctl_version.obj ../wntmsci12.pro/slb/basctl.lib iediteng.lib isvxcore.lib isvx.lib sfx.lib ifwe.lib basic.lib svtool.lib iootk.lib ivcl.lib isvl.lib sot.lib iutl.lib itools.lib ixcr.lib icomphelp.lib icppuhelper.lib iucbhelper.lib icppu.lib isal.lib gdi32.lib shell32.lib advapi32.lib comdlg32.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/basctl.res 
+linking ../wntmsci12.pro/bin/basctl.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/basctl.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/basctl.dll.manifest -outputresource:../wntmsci12.pro/bin/basctl.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/basctl.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/basctl.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/basctl.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/basctl.dll.tmanifest ; fi
+Making:    basctlen-US.res
+Compiling: rsc_basctl
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mk46rw88 > /dev/null
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/basctl.dll' -o ../wntmsci12.pro/misc/basctl.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt basctl.component
+basctl deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basctl/build.lst
+COPY: ../wntmsci12.pro/inc/basslots.ilb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basslots.ilb
+COPY: ../wntmsci12.pro/bin/basctl.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/basctl.dll
+COPY: ../wntmsci12.pro/bin/basctlen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/basctlen-US.res
+COPY: ../wntmsci12.pro/bin/basctlen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/basctlen-US.ilst
+COPY: ../wntmsci12.pro/misc/basctl.map -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/basctl.map
+COPY: ../util/basctl.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/basctl.xml
+COPY: ../uiconfig/basicide/menubar/menubar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/menubar/menubar.xml
+COPY: ../uiconfig/basicide/toolbar/dialogbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/dialogbar.xml
+COPY: ../uiconfig/basicide/toolbar/fullscreenbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/fullscreenbar.xml
+COPY: ../uiconfig/basicide/toolbar/insertcontrolsbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/insertcontrolsbar.xml
+COPY: ../uiconfig/basicide/toolbar/macrobar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/macrobar.xml
+COPY: ../uiconfig/basicide/toolbar/standardbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/standardbar.xml
+COPY: ../uiconfig/basicide/toolbar/translationbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/toolbar/translationbar.xml
+COPY: ../uiconfig/basicide/statusbar/statusbar.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uiconfig/modules/BasicIDE/statusbar/statusbar.xml
+COPY: ../wntmsci12.pro/misc/basctl.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/basctl.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/basctl/deliver.log
+Module 'basctl' delivered successfully. 16 files copied, 1 files unchanged
+
+=============

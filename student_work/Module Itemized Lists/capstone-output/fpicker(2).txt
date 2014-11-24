@@ -1,0 +1,295 @@
+Name:
+fpicker
+
+Dependencies:
+LIBXSLT:libxslt L10N:l10n rdbmaker svtools NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+
+..\%__SRC%\bin\f*.res %_DEST%\bin%_EXT%\
+..\%__SRC%\bin\f*.dll %_DEST%\bin%_EXT%\
+..\%__SRC%\lib\f*.so %_DEST%\lib%_EXT%\
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+..\source\win32\filepicker\*.xml %_DEST%\xml%_EXT%\*.xml
+..\source\win32\folderpicker\*.xml %_DEST%\xml%_EXT%\*.xml
+..\%__SRC%\misc\fop.component %_DEST%\xml%_EXT%\fop.component
+..\%__SRC%\misc\fpicker.component %_DEST%\xml%_EXT%\fpicker.component
+..\%__SRC%\misc\fps.component %_DEST%\xml%_EXT%\fps.component
+..\%__SRC%\misc\fps_aqua.component %_DEST%\xml%_EXT%\fps_aqua.component
+..\%__SRC%\misc\fps_gnome.component %_DEST%\xml%_EXT%\fps_gnome.component
+..\%__SRC%\misc\fps_kde4.component %_DEST%\xml%_EXT%\fps_kde4.component
+..\%__SRC%\misc\fps_office.component %_DEST%\xml%_EXT%\fps_office.component
+
+Source Files:
+inc\pch\precompiled_fpicker.cxx
+source\aqua\CFStringUtilities.cxx
+source\aqua\ControlHelper.cxx
+source\aqua\FilterHelper.cxx
+source\aqua\FPentry.cxx
+source\aqua\resourceprovider.cxx
+source\aqua\SalAquaFilePicker.cxx
+source\aqua\SalAquaFolderPicker.cxx
+source\aqua\SalAquaPicker.cxx
+source\generic\fpicker.cxx
+source\office\asyncfilepicker.cxx
+source\office\commonpicker.cxx
+source\office\fpinteraction.cxx
+source\office\fpsmartcontent.cxx
+source\office\fps_office.cxx
+source\office\iodlg.cxx
+source\office\iodlgimp.cxx
+source\office\OfficeControlAccess.cxx
+source\office\OfficeFilePicker.cxx
+source\office\OfficeFolderPicker.cxx
+source\unx\gnome\FPentry.cxx
+source\unx\gnome\resourceprovider.cxx
+source\unx\gnome\SalGtkFilePicker.cxx
+source\unx\gnome\SalGtkFolderPicker.cxx
+source\unx\gnome\SalGtkPicker.cxx
+source\unx\kde4\KDE4FilePicker.cxx
+source\unx\kde4\KDE4FPEntry.cxx
+source\win32\filepicker\asynceventnotifier.cxx
+source\win32\filepicker\asyncrequests.cxx
+source\win32\filepicker\controlaccess.cxx
+source\win32\filepicker\controlcommand.cxx
+source\win32\filepicker\customcontrol.cxx
+source\win32\filepicker\customcontrolcontainer.cxx
+source\win32\filepicker\customcontrolfactory.cxx
+source\win32\filepicker\dialogcustomcontrols.cxx
+source\win32\filepicker\dibpreview.cxx
+source\win32\filepicker\FileOpenDlg.cxx
+source\win32\filepicker\FilePicker.cxx
+source\win32\filepicker\filepickereventnotification.cxx
+source\win32\filepicker\filepickerstate.cxx
+source\win32\filepicker\FilterContainer.cxx
+source\win32\filepicker\FPentry.cxx
+source\win32\filepicker\getfilenamewrapper.cxx
+source\win32\filepicker\helppopupwindow.cxx
+source\win32\filepicker\previewadapter.cxx
+source\win32\filepicker\previewbase.cxx
+source\win32\filepicker\PreviewCtrl.cxx
+source\win32\filepicker\SolarMutex.cxx
+source\win32\filepicker\VistaFilePicker.cxx
+source\win32\filepicker\VistaFilePickerEventHandler.cxx
+source\win32\filepicker\VistaFilePickerImpl.cxx
+source\win32\filepicker\WinFileOpenImpl.cxx
+source\win32\filepicker\workbench\Test_fps.cxx
+source\win32\folderpicker\FolderPicker.cxx
+source\win32\folderpicker\Fopentry.cxx
+source\win32\folderpicker\MtaFop.cxx
+source\win32\folderpicker\WinFOPImpl.cxx
+source\win32\folderpicker\workbench\Test_fops.cxx
+source\win32\misc\AutoBuffer.cxx
+source\win32\misc\resourceprovider.cxx
+source\win32\misc\WinImplHelper.cxx
+test\svdem.cxx
+
+Header Files:
+inc\pch\precompiled_fpicker.hxx
+source\aqua\AquaFilePickerDelegate.hxx
+source\aqua\CFStringUtilities.hxx
+source\aqua\ControlHelper.hxx
+source\aqua\FilterHelper.hxx
+source\aqua\FPServiceInfo.hxx
+source\aqua\NSString_OOoAdditions.hxx
+source\aqua\NSURL_OOoAdditions.hxx
+source\aqua\resourceprovider.hxx
+source\aqua\SalAquaConstants.h
+source\aqua\SalAquaFilePicker.hxx
+source\aqua\SalAquaFolderPicker.hxx
+source\aqua\SalAquaPicker.hxx
+source\office\asyncfilepicker.hxx
+source\office\commonpicker.hxx
+source\office\fpinteraction.hxx
+source\office\fpsmartcontent.hxx
+source\office\iodlg.hrc
+source\office\iodlg.hxx
+source\office\iodlgimp.hxx
+source\office\OfficeControlAccess.hxx
+source\office\OfficeFilePicker.hxx
+source\office\OfficeFolderPicker.hxx
+source\office\pickercallbacks.hxx
+source\unx\gnome\eventnotification.hxx
+source\unx\gnome\FPServiceInfo.hxx
+source\unx\gnome\resourceprovider.hxx
+source\unx\gnome\SalGtkFilePicker.hxx
+source\unx\gnome\SalGtkFolderPicker.hxx
+source\unx\gnome\SalGtkPicker.hxx
+source\unx\kde4\FPServiceInfo.hxx
+source\unx\kde4\KDE4FilePicker.hxx
+source\win32\filepicker\afxres.h
+source\win32\filepicker\asynceventnotifier.hxx
+source\win32\filepicker\asyncrequests.hxx
+source\win32\filepicker\comptr.hxx
+source\win32\filepicker\controlaccess.hxx
+source\win32\filepicker\controlcommand.hxx
+source\win32\filepicker\controlcommandrequest.hxx
+source\win32\filepicker\controlcommandresult.hxx
+source\win32\filepicker\customcontrol.hxx
+source\win32\filepicker\customcontrolcontainer.hxx
+source\win32\filepicker\customcontrolfactory.hxx
+source\win32\filepicker\dialogcustomcontrols.hxx
+source\win32\filepicker\dibpreview.hxx
+source\win32\filepicker\eventnotification.hxx
+source\win32\filepicker\FileOpenDlg.hxx
+source\win32\filepicker\FilePicker.hxx
+source\win32\filepicker\filepickereventnotification.hxx
+source\win32\filepicker\filepickerstate.hxx
+source\win32\filepicker\FilterContainer.hxx
+source\win32\filepicker\FPServiceInfo.hxx
+source\win32\filepicker\getfilenamewrapper.hxx
+source\win32\filepicker\helppopupwindow.hxx
+source\win32\filepicker\IVistaFilePickerInternalNotify.hxx
+source\win32\filepicker\platform_vista.h
+source\win32\filepicker\platform_xp.h
+source\win32\filepicker\previewadapter.hxx
+source\win32\filepicker\previewbase.hxx
+source\win32\filepicker\PreviewCtrl.hxx
+source\win32\filepicker\propmap.hxx
+source\win32\filepicker\resource.h
+source\win32\filepicker\shared.hxx
+source\win32\filepicker\SolarMutex.hxx
+source\win32\filepicker\VistaFilePicker.hxx
+source\win32\filepicker\VistaFilePickerEventHandler.hxx
+source\win32\filepicker\VistaFilePickerImpl.hxx
+source\win32\filepicker\vistatypes.h
+source\win32\filepicker\WinFileOpenImpl.hxx
+source\win32\folderpicker\FolderPicker.hxx
+source\win32\folderpicker\FopEvtDisp.hxx
+source\win32\folderpicker\FOPServiceInfo.hxx
+source\win32\folderpicker\MtaFop.hxx
+source\win32\folderpicker\WinFOPImpl.hxx
+source\win32\misc\AutoBuffer.hxx
+source\win32\misc\resourceprovider.hxx
+source\win32\misc\WinImplHelper.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=fpicker
+	TARGET=inc
+
+source\aqua\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fps_aqua.uno
+	SLOFILES=
+	$(SLO)$/resourceprovider.obj
+	$(SLO)$/FPentry.obj
+	$(SLO)$/SalAquaPicker.obj
+	$(SLO)$/SalAquaFilePicker.obj
+	$(SLO)$/SalAquaFolderPicker.obj
+	$(SLO)$/CFStringUtilities.obj
+	$(SLO)$/FilterHelper.obj
+	$(SLO)$/ControlHelper.obj
+	$(SLO)$/NSString_OOoAdditions.obj
+	$(SLO)$/NSURL_OOoAdditions.obj
+	$(SLO)$/AquaFilePickerDelegate.obj
+
+source\generic\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fpicker.uno
+	SLOFILES=
+	$(SLO)$/fpicker.obj
+
+source\office\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fps_office
+	SLOFILES=
+	$(SLO)$/asyncfilepicker.obj
+	$(SLO)$/commonpicker.obj
+	$(SLO)$/OfficeControlAccess.obj
+	$(SLO)$/OfficeFilePicker.obj
+	$(SLO)$/OfficeFolderPicker.obj
+	$(SLO)$/fpinteraction.obj
+	$(SLO)$/fpsmartcontent.obj
+	$(SLO)$/fps_office.obj
+	$(SLO)$/iodlg.obj
+	$(SLO)$/iodlgimp.obj
+
+source\unx\gnome\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fps_gnome.uno
+	SLOFILES=
+	$(SLO)$/SalGtkPicker.obj
+	$(SLO)$/SalGtkFilePicker.obj
+	$(SLO)$/SalGtkFolderPicker.obj
+	$(SLO)$/resourceprovider.obj
+	$(SLO)$/FPentry.obj
+
+source\unx\kde4\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fps_kde4.uno
+	SLOFILES=
+	$(SLO)$/KDE4FilePicker.obj
+	$(SLO)$/KDE4FilePicker.moc.obj
+	$(SLO)$/KDE4FPEntry.obj
+
+source\win32\filepicker\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fps
+	SLOFILES=$(SLO)$/FileOpenDlg.obj
+	$(SLO)$/FPentry.obj
+	$(SLO)$/FilePicker.obj
+	$(SLO)$/WinFileOpenImpl.obj
+	$(SLO)$/FilterContainer.obj
+	$(SLO)$/controlaccess.obj
+	$(SLO)$/dibpreview.obj
+	$(SLO)$/helppopupwindow.obj
+	$(SLO)$/controlcommand.obj
+	$(SLO)$/filepickerstate.obj
+	$(SLO)$/getfilenamewrapper.obj
+	$(SLO)$/asynceventnotifier.obj
+	$(SLO)$/previewadapter.obj
+	$(SLO)$/previewbase.obj
+	$(SLO)$/filepickereventnotification.obj
+	$(SLO)$/customcontrol.obj
+	$(SLO)$/customcontrolcontainer.obj
+	$(SLO)$/customcontrolfactory.obj
+	$(SLO)$/dialogcustomcontrols.obj
+	$(SLO)$/asyncrequests.obj
+	$(SLO)$/VistaFilePickerEventHandler.obj
+	$(SLO)$/VistaFilePickerImpl.obj
+	$(SLO)$/VistaFilePicker.obj
+	$(SLO)$/SolarMutex.obj
+
+source\win32\filepicker\workbench\makefile.mk
+	PRJNAME=sysui
+	TARGET=testfps
+	OBJFILES=$(OBJ)$/test_fps.obj
+
+source\win32\folderpicker\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fop
+	SLOFILES=$(SLO)$/fopentry.obj
+	$(SLO)$/folderpicker.obj
+	$(SLO)$/WinFopImpl.obj
+	$(SLO)$/MtaFop.obj
+
+source\win32\folderpicker\workbench\makefile.mk
+	PRJNAME=sysui
+	TARGET=testfops
+	OBJFILES=$(OBJ)$/test_fops.obj
+
+source\win32\misc\makefile.mk
+	PRJNAME=fpicker
+	TARGET=utils
+	SLOFILES=$(SLO)$/WinImplHelper.obj
+	$(SLO)$/AutoBuffer.obj
+	$(SLO)$/resourceprovider.obj
+
+test\makefile.mk
+	PRJNAME=SV
+	TARGET=svdem
+	OBJFILES=$(OBJ)$/svdem.obj
+
+util\makefile.mk
+	PRJNAME=fpicker
+	TARGET=fpicker
+	TARGET1=fps
+	TARGET2=fop

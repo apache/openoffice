@@ -1,0 +1,118 @@
+Name:
+idlc
+
+Dependencies:
+ucpp registry NULL
+
+Build Rules:
+..\%__SRC%\bin\idlc.exe %_DEST%\bin%_EXT%\idlc.exe
+..\%__SRC%\bin\idlc.pdb %_DEST%\bin%_EXT%\idlc.pdb
+
+..\%__SRC%\bin\idlc %_DEST%\bin%_EXT%\idlc
+
+Source Files:
+inc\pch\precompiled_idlc.cxx
+source\astarray.cxx
+source\astconstant.cxx
+source\astdeclaration.cxx
+source\astdump.cxx
+source\astenum.cxx
+source\astexpression.cxx
+source\astinterface.cxx
+source\astoperation.cxx
+source\astscope.cxx
+source\astservice.cxx
+source\aststack.cxx
+source\aststruct.cxx
+source\aststructinstance.cxx
+source\astunion.cxx
+source\errorhandler.cxx
+source\fehelper.cxx
+source\idlc.cxx
+source\idlccompile.cxx
+source\idlcmain.cxx
+source\idlcproduce.cxx
+source\options.cxx
+source\parser.y
+source\scanner.ll
+source\wrap_parser.cxx
+source\wrap_scanner.cxx
+
+Header Files:
+inc\idlc\astarray.hxx
+inc\idlc\astattribute.hxx
+inc\idlc\astbasetype.hxx
+inc\idlc\astconstant.hxx
+inc\idlc\astconstants.hxx
+inc\idlc\astdeclaration.hxx
+inc\idlc\astenum.hxx
+inc\idlc\astexception.hxx
+inc\idlc\astexpression.hxx
+inc\idlc\astinterface.hxx
+inc\idlc\astinterfacemember.hxx
+inc\idlc\astmember.hxx
+inc\idlc\astmodule.hxx
+inc\idlc\astneeds.hxx
+inc\idlc\astobserves.hxx
+inc\idlc\astoperation.hxx
+inc\idlc\astparameter.hxx
+inc\idlc\astscope.hxx
+inc\idlc\astsequence.hxx
+inc\idlc\astservice.hxx
+inc\idlc\astservicemember.hxx
+inc\idlc\aststack.hxx
+inc\idlc\aststruct.hxx
+inc\idlc\aststructinstance.hxx
+inc\idlc\asttype.hxx
+inc\idlc\asttypedef.hxx
+inc\idlc\astunion.hxx
+inc\idlc\astunionbranch.hxx
+inc\idlc\astunionlabel.hxx
+inc\idlc\errorhandler.hxx
+inc\idlc\fehelper.hxx
+inc\idlc\idlc.hxx
+inc\idlc\idlctypes.hxx
+inc\idlc\inheritedinterface.hxx
+inc\idlc\options.hxx
+inc\pch\precompiled_idlc.hxx
+source\attributeexceptions.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=idlc
+	TARGET=inc
+
+source\makefile.mk
+	PRJNAME=idlc
+	TARGET=idlc
+	OBJFILES=
+	$(OBJ)$/wrap_scanner.obj
+	$(OBJ)$/wrap_parser.obj
+	$(OBJ)$/idlcmain.obj
+	$(OBJ)$/idlc.obj
+	$(OBJ)$/idlccompile.obj
+	$(OBJ)$/idlcproduce.obj
+	$(OBJ)$/errorhandler.obj
+	$(OBJ)$/options.obj
+	$(OBJ)$/fehelper.obj
+	$(OBJ)$/astdeclaration.obj
+	$(OBJ)$/astscope.obj
+	$(OBJ)$/aststack.obj
+	$(OBJ)$/astdump.obj
+	$(OBJ)$/astinterface.obj
+	$(OBJ)$/aststruct.obj
+	$(OBJ)$/aststructinstance.obj
+	$(OBJ)$/astoperation.obj
+	$(OBJ)$/astconstant.obj
+	$(OBJ)$/astenum.obj
+	$(OBJ)$/astarray.obj
+	$(OBJ)$/astunion.obj
+	$(OBJ)$/astexpression.obj
+	$(OBJ)$/astservice.obj
+
+test\parser\makefile.mk
+	PRJNAME:=idlc
+	TARGET:=test_parser

@@ -1,0 +1,92 @@
+mythes
+=============
+
+Entering /cygdrive/c/steve/testarea/main/mythes
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/mythes-1.2.0 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/mythes-1.2.0 ./wntmsci12.pro/misc/build/mythes-1.2.0_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/mythes-1.2.0_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/067201ea8b126597670b5eff72e1f66c-mythes-1.2.0.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_mythes
+mythes-1.2.0/
+mythes-1.2.0/checkme.lst
+mythes-1.2.0/morph.dic
+mythes-1.2.0/example.cxx
+mythes-1.2.0/WordNet_license.txt
+mythes-1.2.0/missing
+mythes-1.2.0/m4/
+mythes-1.2.0/m4/lib-link.m4
+mythes-1.2.0/INSTALL
+mythes-1.2.0/config.h.in
+mythes-1.2.0/aclocal.m4
+mythes-1.2.0/morph.idx
+mythes-1.2.0/makefile.mk
+mythes-1.2.0/depcomp
+mythes-1.2.0/th_en_US_new.idx
+mythes-1.2.0/morph.dat
+mythes-1.2.0/mythes.pc.in
+mythes-1.2.0/morph.aff
+mythes-1.2.0/config.sub
+mythes-1.2.0/mythes.cxx
+mythes-1.2.0/configure.ac
+mythes-1.2.0/Makefile.am
+mythes-1.2.0/install-sh
+mythes-1.2.0/ltmain.sh
+mythes-1.2.0/AUTHORS
+mythes-1.2.0/config.guess
+mythes-1.2.0/COPYING
+mythes-1.2.0/th_gen_idx.pl
+mythes-1.2.0/Makefile.in
+mythes-1.2.0/th_en_US_new.dat
+mythes-1.2.0/data_layout.txt
+mythes-1.2.0/morph.lst
+mythes-1.2.0/WordNet_readme.txt
+mythes-1.2.0/mythes.hxx
+mythes-1.2.0/README
+mythes-1.2.0/configure
+mythes-1.2.0/config.rpath
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/mythes-1.2.0/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/mythes-1.2.0/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/mythes-1.2.0/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/mythes-1.2.0/makefile.mk
+cd ./wntmsci12.pro/misc/build && cat ../../..//mythes-1.2.0-vanilla-th-gen-idx.patch ../../..//mythes-1.2.0-overflow.patch ../../..//mythes-1.2.0-makefile-mk.patch ../../..//mythes-1.2.0-disable-example.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_mythes
+patching file mythes-1.2.0/th_gen_idx.pl
+patching file mythes-1.2.0/mythes.cxx
+patching file mythes-1.2.0/makefile.mk
+patching file mythes-1.2.0/configure
+patching file mythes-1.2.0/Makefile.in
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_mythes
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_mythes
+mkdir.exe ./wntmsci12.pro/misc/build/mythes-1.2.0/
+cd ./wntmsci12.pro/misc/build/mythes-1.2.0/ && dmake  && C:/cygwin/bin/touch.exe C:/steve/testarea/main/mythes/./wntmsci12.pro/misc/build/so_built_mythes
+Making:    all_mythes.dpslo
+Compiling: mythes/wntmsci12.pro/misc/build/mythes-1.2.0/mythes.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/mythes -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../../../wntmsci12.pro/slo/mythes.obj C:/steve/testarea/main/mythes/wntmsci12.pro/misc/build/mythes-1.2.0/mythes.cxx 
+mythes.cxx
+C:/steve/testarea/main/mythes/wntmsci12.pro/misc/build/mythes-1.2.0/mythes.cxx(210) : warning C4018: '<' : signed/unsigned mismatch
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkauxHMB > ../../../../wntmsci12.pro/misc/s_mythes.dpcc
+------------------------------
+using: 
+using: ../../../../wntmsci12.pro/slb/libmythes.lib
+------------------------------
+Making:    libmythes.lib
+lib   /OUT:../../../../wntmsci12.pro/slb/libmythes.lib @C:/cygwin/tmp/mk0xHmrX
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../wntmsci12.pro/slo/mythes.obj 
+
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_mythes
+cp ./wntmsci12.pro/misc/build/mythes-1.2.0/mythes.hxx ./wntmsci12.pro/inc
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_mythes
+mythes deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mythes/build.lst
+COPY: ../wntmsci12.pro/slb/libmythes.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/libmythes.lib
+COPY: ../wntmsci12.pro/inc/mythes.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mythes.hxx
+COPY: ../wntmsci12.pro/misc/build/mythes-1.2.0/th_gen_idx.pl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/th_gen_idx.pl
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/mythes/deliver.log
+Module 'mythes' delivered successfully. 4 files copied, 2 files unchanged
+
+=============

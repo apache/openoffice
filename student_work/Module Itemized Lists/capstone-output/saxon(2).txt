@@ -1,0 +1,20 @@
+Name:
+saxon
+
+Dependencies:
+solenv stax NULL
+
+Build Rules:
+..\%__SRC%\class\saxon9.jar %_DEST%\bin%_EXT%\saxon9.jar
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=saxon
+	TARGET=saxon

@@ -1,0 +1,163 @@
+more_fonts
+=============
+
+Entering /cygdrive/c/steve/testarea/main/more_fonts/fonts/ttf_croscore
+
+mkout -- version: 1.8
+if [ -d ../../wntmsci12.pro/misc/build/croscorefonts-1.21.0 ] ; then echo "moving" && mv ../../wntmsci12.pro/misc/build/croscorefonts-1.21.0 ../../wntmsci12.pro/misc/build/croscorefonts-1.21.0_removeme ; fi
+rm -rf ../../wntmsci12.pro/misc/build/croscorefonts-1.21.0_removeme
+cd ../../wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/61f59e4110781cbe66b46449eadac231-croscorefonts-1.21.0.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_ttf_croscore
+croscorefonts-1.21.0/
+croscorefonts-1.21.0/Arimo-Italic.ttf
+croscorefonts-1.21.0/Cousine-BoldItalic.ttf
+croscorefonts-1.21.0/LICENSE
+croscorefonts-1.21.0/Tinos-Bold.ttf
+croscorefonts-1.21.0/Cousine-Regular.ttf
+croscorefonts-1.21.0/Tinos-Italic.ttf
+croscorefonts-1.21.0/Arimo-Bold.ttf
+croscorefonts-1.21.0/SymbolNeu.ttf
+croscorefonts-1.21.0/Arimo-BoldItalic.ttf
+croscorefonts-1.21.0/Cousine-Italic.ttf
+croscorefonts-1.21.0/Arimo-Regular.ttf
+croscorefonts-1.21.0/Cousine-Bold.ttf
+croscorefonts-1.21.0/Tinos-Regular.ttf
+croscorefonts-1.21.0/Tinos-BoldItalic.ttf
+make writeable...
+no patch needed...
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_patched_ttf_croscore
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_configured_ttf_croscore
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_built_ttf_croscore
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_installed_ttf_croscore
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_predeliver_ttf_croscore
+
+Entering /cygdrive/c/steve/testarea/main/more_fonts/fonts/ttf_dejavu
+
+if [ -d ../../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33 ] ; then echo "moving" && mv ../../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33 ../../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33_removeme ; fi
+rm -rf ../../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33_removeme
+cd ../../wntmsci12.pro/misc/build && ( unzip   -o C:/steve/TestArea/ext_sources/f872f4ac066433d8ff92f5e316b36ff9-dejavu-fonts-ttf-2.33.zip) && C:/cygwin/bin/touch.exe so_unpacked_ttf_dejavu
+Archive:  C:/steve/TestArea/ext_sources/f872f4ac066433d8ff92f5e316b36ff9-dejavu-fonts-ttf-2.33.zip
+   creating: dejavu-fonts-ttf-2.33/
+  inflating: dejavu-fonts-ttf-2.33/BUGS  
+   creating: dejavu-fonts-ttf-2.33/ttf/
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-Bold.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-Bold.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-Oblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-Oblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-Italic.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-BoldOblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-BoldItalic.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSans-ExtraLight.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-BoldOblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-Bold.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerif.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSans-Bold.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-Italic.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-BoldItalic.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSans-BoldOblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSans-Oblique.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSans.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono.ttf  
+  inflating: dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-Bold.ttf  
+  inflating: dejavu-fonts-ttf-2.33/AUTHORS  
+  inflating: dejavu-fonts-ttf-2.33/LICENSE  
+  inflating: dejavu-fonts-ttf-2.33/README  
+   creating: dejavu-fonts-ttf-2.33/fontconfig/
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/20-unhint-small-dejavu-sans.conf  
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/57-dejavu-sans.conf  
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/20-unhint-small-dejavu-serif.conf  
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/57-dejavu-serif.conf  
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/20-unhint-small-dejavu-sans-mono.conf  
+  inflating: dejavu-fonts-ttf-2.33/fontconfig/57-dejavu-sans-mono.conf  
+  inflating: dejavu-fonts-ttf-2.33/status.txt  
+  inflating: dejavu-fonts-ttf-2.33/NEWS  
+  inflating: dejavu-fonts-ttf-2.33/langcover.txt  
+  inflating: dejavu-fonts-ttf-2.33/unicover.txt  
+make writeable...
+no patch needed...
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_patched_ttf_dejavu
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_configured_ttf_dejavu
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_built_ttf_dejavu
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_installed_ttf_dejavu
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_predeliver_ttf_dejavu
+
+Entering /cygdrive/c/steve/testarea/main/more_fonts/fonts/ttf_gentium
+
+if [ -d ../../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10 ] ; then echo "moving" && mv ../../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10 ../../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10_removeme ; fi
+rm -rf ../../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10_removeme
+cd ../../wntmsci12.pro/misc/build && ( unzip   -o C:/steve/TestArea/ext_sources/35efabc239af896dfb79be7ebdd6e6b9-gentiumbasic-fonts-1.10.zip) && C:/cygwin/bin/touch.exe so_unpacked_ttf_gentium
+Archive:  C:/steve/TestArea/ext_sources/35efabc239af896dfb79be7ebdd6e6b9-gentiumbasic-fonts-1.10.zip
+   creating: gentiumbasic-fonts-1.10/
+  inflating: gentiumbasic-fonts-1.10/FONTLOG.txt  
+  inflating: gentiumbasic-fonts-1.10/GenBkBasI.ttf  
+  inflating: gentiumbasic-fonts-1.10/GenBasBI.ttf  
+  inflating: gentiumbasic-fonts-1.10/GenBkBasR.ttf  
+  inflating: gentiumbasic-fonts-1.10/OFL-FAQ.txt  
+  inflating: gentiumbasic-fonts-1.10/GenBkBasB.ttf  
+  inflating: gentiumbasic-fonts-1.10/GenBkBasBI.ttf  
+  inflating: gentiumbasic-fonts-1.10/GenBasR.ttf  
+  inflating: gentiumbasic-fonts-1.10/GenBasI.ttf  
+  inflating: gentiumbasic-fonts-1.10/GENTIUM-FAQ.txt  
+  inflating: gentiumbasic-fonts-1.10/GenBasB.ttf  
+  inflating: gentiumbasic-fonts-1.10/OFL.txt  
+make writeable...
+no patch needed...
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_patched_ttf_gentium
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_configured_ttf_gentium
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_built_ttf_gentium
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_installed_ttf_gentium
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/build/so_predeliver_ttf_gentium
+more_fonts deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/more_fonts/build.lst
+COPY: ../fonts/fc_local.conf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/fc_local.conf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSans-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSans-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSans-BoldOblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSans-BoldOblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSans-ExtraLight.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSans-ExtraLight.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSans-Oblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSans-Oblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSans.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSans.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansCondensed-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-BoldOblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansCondensed-BoldOblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed-Oblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansCondensed-Oblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansCondensed.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansCondensed.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansMono-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-BoldOblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansMono-BoldOblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono-Oblique.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansMono-Oblique.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSansMono.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSansMono.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerif-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-BoldItalic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerif-BoldItalic.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerif-Italic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerif-Italic.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerif.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerif.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerifCondensed-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-BoldItalic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerifCondensed-BoldItalic.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed-Italic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerifCondensed-Italic.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/ttf/DejaVuSerifCondensed.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/DejaVuSerifCondensed.ttf
+COPY: ../wntmsci12.pro/misc/build/dejavu-fonts-ttf-2.33/LICENSE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/LICENSE_dejavu
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Arimo-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Arimo-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Arimo-BoldItalic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Arimo-BoldItalic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Arimo-Italic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Arimo-Italic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Arimo-Regular.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Arimo-Regular.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Cousine-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Cousine-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Cousine-BoldItalic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Cousine-BoldItalic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Cousine-Italic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Cousine-Italic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Cousine-Regular.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Cousine-Regular.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/SymbolNeu.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/SymbolNeu.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Tinos-Bold.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Tinos-Bold.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Tinos-BoldItalic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Tinos-BoldItalic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Tinos-Italic.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Tinos-Italic.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/Tinos-Regular.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/Tinos-Regular.ttf
+COPY: ../wntmsci12.pro/misc/build/croscorefonts-1.21.0/LICENSE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/LICENSE_croscorefonts
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBasB.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBasB.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBasBI.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBasBI.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBasI.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBasI.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBasR.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBasR.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBkBasB.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBkBasB.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBkBasBI.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBkBasBI.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBkBasI.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBkBasI.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/GenBkBasR.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/GenBkBasR.ttf
+COPY: ../wntmsci12.pro/misc/build/gentiumbasic-fonts-1.10/OFL.txt -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/LICENSE_gentium
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/more_fonts/deliver.log
+Module 'more_fonts' delivered successfully. 47 files copied, 0 files unchanged
+
+=============

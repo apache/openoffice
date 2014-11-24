@@ -1,0 +1,63 @@
+fileaccess
+=============
+
+Entering /cygdrive/c/steve/testarea/main/fileaccess/source
+
+mkout -- version: 1.8
+cp fileacc.xml ../wntmsci12.pro/misc/fileacc.xml
+Making:    all_fileacc.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/fileacc_version.h/ > ../wntmsci12.pro/misc/fileacc_version.c
+Compiling: fileaccess/wntmsci12.pro/misc/fileacc_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/fileacc -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/fileacc_version.obj ../wntmsci12.pro/misc/fileacc_version.c
+fileacc_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkkLHDuF > ../wntmsci12.pro/misc/s_fileacc_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mk98IkC4 && C:/cygwin/bin/touch.exe ../wntmsci12.pro/inc/fileacc_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../wntmsci12.pro/bin/fileacc.rdb @C:/cygwin/tmp/mkBuesV9
+Compiling: fileaccess/source/FileAccess.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/fileacc -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../wntmsci12.pro/slo/FileAccess.obj C:/steve/testarea/main/fileaccess/source/FileAccess.cxx 
+FileAccess.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mki64SRR > ../wntmsci12.pro/misc/s_FileAccess.dpcc
+Making:    fileacc.lib
+lib   /OUT:../wntmsci12.pro/slb/fileacc.lib @C:/cygwin/tmp/mkYnNFrN
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slo/FileAccess.obj 
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../wntmsci12.pro/misc/component_fileacc.dxp
+Making:    module definition file fileacc.def
+cat ../wntmsci12.pro/misc/component_fileacc.dxp >> ../wntmsci12.pro/misc/fileacc.def.tmpfile
+Making:    ifileacc.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkjZZgd4
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/ifileacc.lib -def:../wntmsci12.pro/misc/fileacc.def 
+   Creating library ../wntmsci12.pro/lib/ifileacc.lib and object ../wntmsci12.pro/lib/ifileacc.exp
+Making:    fileacc.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/fileacc -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/fileacc_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/fileacc_def.res > ../wntmsci12.pro/misc/fileacc.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkcpHOHl
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/fileacc.dll -map:../wntmsci12.pro/misc/fileacc.map ../wntmsci12.pro/lib/ifileacc.exp ../wntmsci12.pro/slo/fileacc_version.obj ../wntmsci12.pro/slb/fileacc.lib iutl.lib itools.lib iucbhelper.lib icppuhelper.lib icppu.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/fileacc.res 
+linking ../wntmsci12.pro/bin/fileacc.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/fileacc.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/fileacc.dll.manifest -outputresource:../wntmsci12.pro/bin/fileacc.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/fileacc.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/fileacc.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/fileacc.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/fileacc.dll.tmanifest ; fi
+Making:    all_fileacc.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/fileacc.dll' -o ../wntmsci12.pro/misc/fileacc.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt fileacc.component
+fileaccess deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/fileaccess/build.lst
+COPY: ../wntmsci12.pro/bin/fileacc.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/fileacc.dll
+COPY: ../wntmsci12.pro/bin/fileacc.rdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/rdb/fileacc.rdb
+COPY: ../source/fileacc.xml -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/fileacc.xml
+COPY: ../wntmsci12.pro/misc/fileacc.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/fileacc.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/fileaccess/deliver.log
+Module 'fileaccess' delivered successfully. 5 files copied, 0 files unchanged
+
+=============

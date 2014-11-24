@@ -1,0 +1,1048 @@
+Name:
+sal
+
+Dependencies:
+xml2cmp stlport external BOOST:boost NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\cppunittester
+mkdir: %_DEST%\inc%_EXT%\sal
+mkdir: %_DEST%\inc%_EXT%\osl
+mkdir: %_DEST%\inc%_EXT%\rtl
+mkdir: %_DEST%\inc%_EXT%\systools
+mkdir: %_DEST%\inc%_EXT%\systools\win32
+
+..\inc\cppunittester\protectorfactory.hxx %_DEST%\inc%_EXT%\protectorfactory.hxx
+..\%__SRC%\inc\rtlbootstrap.mk %_DEST%\inc%_EXT%\rtlbootstrap.mk
+..\inc\sal\*.h %_DEST%\inc%_EXT%\sal\*.h
+..\%__SRC%\inc\sal\typesizes.h %_DEST%\inc%_EXT%\sal\typesizes.h
+..\inc\osl\*.h %_DEST%\inc%_EXT%\osl\*.h
+..\inc\osl\*.hxx %_DEST%\inc%_EXT%\osl\*.hxx
+..\inc\rtl\*.h %_DEST%\inc%_EXT%\rtl\*.h
+..\inc\rtl\*.hxx %_DEST%\inc%_EXT%\rtl\*.hxx
+..\inc\systools\win32\*.h %_DEST%\inc%_EXT%\systools\win32\*.h
+..\inc\systools\win32\*.hxx %_DEST%\inc%_EXT%\systools\win32\*.hxx
+
+..\%__SRC%\lib\libsalalloc_malloc.so.3 %_DEST%\lib%_EXT%\libsalalloc_malloc.so.3
+symlink: %_DEST%\lib%_EXT%\libsalalloc_malloc.so.3 %_DEST%\lib%_EXT%\libsalalloc_malloc.so
+..\%__SRC%\lib\libuno_sal.so.3 %_DEST%\lib%_EXT%\libuno_sal.so.3
+symlink: %_DEST%\lib%_EXT%\libuno_sal.so.3 %_DEST%\lib%_EXT%\libuno_sal.so
+..\%__SRC%\lib\libuno_sal.dylib.3 %_DEST%\lib%_EXT%\libuno_sal.dylib.3
+symlink: %_DEST%\lib%_EXT%\libuno_sal.dylib.3 %_DEST%\lib%_EXT%\libuno_sal.dylib
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\lib\*.a %_DEST%\lib%_EXT%\*.a
+
+..\%__SRC%\slb\sal.lib %_DEST%\lib%_EXT%\xsal.lib
+
+..\%__SRC%\bin\kill.exe %_DEST%\bin%_EXT%\kill.exe
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\bin\*.bin %_DEST%\bin%_EXT%\*.bin
+..\%__SRC%\misc\*.hid %_DEST%\bin%_EXT%\*.hid
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+..\%__SRC%\inc\udkversion.h %_DEST%\inc%_EXT%\sal\udkversion.h
+
+..\%__SRC%\bin\cppunittester %_DEST%\bin%_EXT%\cppunittester
+..\%__SRC%\bin\cppunittester.exe %_DEST%\bin%_EXT%\cppunittester.exe
+
+Source Files:
+cpprt\operators_new_delete.cxx
+cppunittester\cppunittester.cxx
+inc\pch\precompiled_sal.cxx
+osl\all\debugbase.cxx
+osl\all\filepath.c
+osl\all\loadmodulerelative.cxx
+osl\all\printtrace.cxx
+osl\all\utility.cxx
+osl\os2\conditn.c
+osl\os2\debug_printf.c
+osl\os2\diagnose.c
+osl\os2\dllentry.c
+osl\os2\file.cxx
+osl\os2\file_error_transl.cxx
+osl\os2\file_path_helper.cxx
+osl\os2\file_url.cxx
+osl\os2\interlck.c
+osl\os2\libutil.c
+osl\os2\module.c
+osl\os2\mutex.c
+osl\os2\nlsupport.c
+osl\os2\path_helper.cxx
+osl\os2\pipe.cxx
+osl\os2\pipeimpl.cxx
+osl\os2\process.c
+osl\os2\process_impl.cxx
+osl\os2\profile.c
+osl\os2\salinit.cxx
+osl\os2\security.c
+osl\os2\semaphor.c
+osl\os2\signal.c
+osl\os2\socket.c
+osl\os2\tempfile.c
+osl\os2\thread.c
+osl\os2\time.c
+osl\os2\util.c
+osl\os2\uunxapi.cxx
+osl\unx\backtrace.c
+osl\unx\conditn.c
+osl\unx\diagnose.c
+osl\unx\file.cxx
+osl\unx\file_error_transl.cxx
+osl\unx\file_misc.cxx
+osl\unx\file_path_helper.cxx
+osl\unx\file_stat.cxx
+osl\unx\file_url.cxx
+osl\unx\file_volume.cxx
+osl\unx\interlck.c
+osl\unx\module.c
+osl\unx\mutex.c
+osl\unx\nlsupport.c
+osl\unx\osxlocale.cxx
+osl\unx\pipe.c
+osl\unx\process.c
+osl\unx\process_impl.cxx
+osl\unx\profile.c
+osl\unx\salinit.cxx
+osl\unx\security.c
+osl\unx\semaphor.c
+osl\unx\signal.c
+osl\unx\socket.c
+osl\unx\system.c
+osl\unx\tempfile.c
+osl\unx\thread.c
+osl\unx\time.c
+osl\unx\util.c
+osl\unx\uunxapi.cxx
+osl\w32\conditn.c
+osl\w32\diagnose.c
+osl\w32\dllentry.c
+osl\w32\file.cxx
+osl\w32\file_dirvol.cxx
+osl\w32\file_error.c
+osl\w32\file_url.cxx
+osl\w32\interlck.c
+osl\w32\libutil.c
+osl\w32\module.cxx
+osl\w32\mutex.c
+osl\w32\nlsupport.c
+osl\w32\path_helper.cxx
+osl\w32\pipe.c
+osl\w32\pipeimpl.cxx
+osl\w32\process.cxx
+osl\w32\procimpl.cxx
+osl\w32\profile.cxx
+osl\w32\salinit.cxx
+osl\w32\security.c
+osl\w32\semaphor.c
+osl\w32\signal.cxx
+osl\w32\socket.cxx
+osl\w32\tempfile.cxx
+osl\w32\thread.c
+osl\w32\time.c
+osl\w32\util.c
+qa\ByteSequence\ByteSequence.cxx
+qa\osl\condition\osl_Condition.cxx
+qa\osl\file\osl_File.cxx
+qa\osl\file\osl_old_test_file.cxx
+qa\osl\file\test_cpy_wrt_file.cxx
+qa\osl\module\osl_Module.cxx
+qa\osl\module\osl_Module_DLL.cxx
+qa\osl\mutex\osl_Mutex.cxx
+qa\osl\pipe\osl_Pipe.cxx
+qa\osl\process\osl_process.cxx
+qa\osl\process\osl_process_child.cxx
+qa\osl\process\osl_Thread.cxx
+qa\osl\profile\osl_old_testprofile.cxx
+qa\osl\security\osl_Security.cxx
+qa\osl\setthreadname\test-setthreadname.cxx
+qa\osl\socket\osl_AcceptorSocket.cxx
+qa\osl\socket\osl_ConnectorSocket.cxx
+qa\osl\socket\osl_DatagramSocket.cxx
+qa\osl\socket\osl_Socket.cxx
+qa\osl\socket\osl_Socket2.cxx
+qa\osl\socket\osl_SocketAddr.cxx
+qa\osl\socket\osl_Socket_tests.cxx
+qa\osl\socket\osl_StreamSocket.cxx
+qa\osl\socket\sockethelper.cxx
+qa\osl\thread\test_thread.cxx
+qa\OStringBuffer\rtl_OStringBuffer.cxx
+qa\OStringBuffer\rtl_String_Utils.cxx
+qa\rtl\alloc\rtl_alloc.cxx
+qa\rtl\bootstrap\bootstrap_process.cxx
+qa\rtl\bootstrap\rtl_Bootstrap.cxx
+qa\rtl\cipher\rtl_cipher.cxx
+qa\rtl\crc32\rtl_crc32.cxx
+qa\rtl\digest\rtl_digest.cxx
+qa\rtl\doublelock\rtl_doublelocking.cxx
+qa\rtl\locale\rtl_locale.cxx
+qa\rtl\logfile\rtl_logfile.cxx
+qa\rtl\math\test-rtl-math.cxx
+qa\rtl\ostring\rtl_OString2.cxx
+qa\rtl\ostring\rtl_str.cxx
+qa\rtl\ostring\rtl_string.cxx
+qa\rtl\oustring\rtl_OUString2.cxx
+qa\rtl\oustring\rtl_ustr.cxx
+qa\rtl\oustringbuffer\rtl_OUStringBuffer2.cxx
+qa\rtl\process\child_process.cxx
+qa\rtl\process\child_process_id.cxx
+qa\rtl\process\rtl_Process.cxx
+qa\rtl\random\rtl_random.cxx
+qa\rtl\strings\test_oustringbuffer_utf32.cxx
+qa\rtl\strings\test_oustring_compare.cxx
+qa\rtl\strings\test_oustring_convert.cxx
+qa\rtl\strings\test_oustring_endswith.cxx
+qa\rtl\strings\test_oustring_noadditional.cxx
+qa\rtl\textenc\rtl_tencinfo.cxx
+qa\rtl\textenc\rtl_textcvt.cxx
+qa\rtl\uri\rtl_testuri.cxx
+qa\rtl\uri\rtl_Uri.cxx
+qa\rtl\uuid\rtl_Uuid.cxx
+qa\rtl_strings\rtl_old_testostring.cxx
+qa\rtl_strings\rtl_old_testowstring.cxx
+qa\rtl_strings\rtl_old_teststrbuf.cxx
+qa\rtl_strings\rtl_OString.cxx
+qa\rtl_strings\rtl_OUString.cxx
+qa\rtl_strings\rtl_OUStringBuffer.cxx
+qa\rtl_strings\rtl_String_Utils.cxx
+qa\sal\test_types.cxx
+qa\systools\test_comtools.cxx
+qa\testHelperFunctions\testHelperFunctions.cxx
+qa\testHelperFunctions\testHelperFunctions2.cxx
+rtl\source\alloc_arena.c
+rtl\source\alloc_cache.c
+rtl\source\alloc_fini.cxx
+rtl\source\alloc_global.c
+rtl\source\bootstrap.cxx
+rtl\source\byteseq.c
+rtl\source\cipher.c
+rtl\source\cmdargs.cxx
+rtl\source\crc.c
+rtl\source\debugprint.cxx
+rtl\source\digest.c
+rtl\source\gen_makefile.cxx
+rtl\source\hash.cxx
+rtl\source\locale.c
+rtl\source\logfile.cxx
+rtl\source\math.cxx
+rtl\source\memory.c
+rtl\source\random.c
+rtl\source\rtl_process.c
+rtl\source\strbuf.c
+rtl\source\strimp.c
+rtl\source\string.c
+rtl\source\strtmpl.c
+rtl\source\tres.c
+rtl\source\unload.cxx
+rtl\source\uri.cxx
+rtl\source\ustrbuf.c
+rtl\source\ustring.c
+rtl\source\uuid.cxx
+systools\win32\kill\kill.cxx
+systools\win32\onlineupdate\onlinecheck.cxx
+systools\win32\uwinapi\snprintf.c
+systools\win32\uwinapi\sntprintf.c
+systools\win32\uwinapi\snwprintf.c
+test\testbootstrap.cxx
+test\test_salmain.cxx
+test\test_salmainwithargs.cxx
+test\unloading\samplelib1.cxx
+test\unloading\samplelib2.cxx
+test\unloading\unloadTest.cxx
+textenc\context.c
+textenc\convertbig5hkscs.c
+textenc\converter.c
+textenc\converteuctw.c
+textenc\convertgb18030.c
+textenc\convertiso2022cn.c
+textenc\convertiso2022jp.c
+textenc\convertiso2022kr.c
+textenc\convertsinglebytetobmpunicode.cxx
+textenc\tcvtbyte.c
+textenc\tcvtmb.c
+textenc\tcvtutf7.c
+textenc\tcvtutf8.c
+textenc\tenchelp.c
+textenc\tencinfo.c
+textenc\textcvt.c
+textenc\textenc.cxx
+textenc\unichars.c
+typesconfig\typesconfig.c
+workben\getlocaleinfotest.cxx
+workben\saldyntest.c
+workben\salstattest.c
+workben\test.cxx
+workben\testfile.cxx
+workben\testpip2.cxx
+workben\testpipe.cxx
+workben\testproc.cxx
+workben\tgetpwnam.cxx
+workben\t_cipher.c
+workben\t_digest.c
+workben\t_ojp_exe.cxx
+workben\t_osl_getVolInfo.cxx
+workben\t_osl_joinProcess.cxx
+workben\t_random.c
+workben\t_readline.c
+workben\clipboardwben\testcopy\cbcpytest.cxx
+workben\clipboardwben\testcopy\XTDataObject.cxx
+workben\clipboardwben\testpaste\cbptest.cxx
+workben\clipboardwben\testviewer\cbvtest.cxx
+
+Header Files:
+inc\cppunittester\protectorfactory.hxx
+inc\internal\once.h
+inc\osl\conditn.h
+inc\osl\conditn.hxx
+inc\osl\diagnose.h
+inc\osl\diagnose.hxx
+inc\osl\doublecheckedlocking.h
+inc\osl\endian.h
+inc\osl\file.h
+inc\osl\file.hxx
+inc\osl\getglobalmutex.hxx
+inc\osl\interlck.h
+inc\osl\module.h
+inc\osl\module.hxx
+inc\osl\mutex.h
+inc\osl\mutex.hxx
+inc\osl\nlsupport.h
+inc\osl\pipe.h
+inc\osl\pipe.hxx
+inc\osl\pipe_decl.hxx
+inc\osl\process.h
+inc\osl\profile.h
+inc\osl\profile.hxx
+inc\osl\security.h
+inc\osl\security.hxx
+inc\osl\security_decl.hxx
+inc\osl\semaphor.h
+inc\osl\semaphor.hxx
+inc\osl\signal.h
+inc\osl\socket.h
+inc\osl\socket.hxx
+inc\osl\socket_decl.hxx
+inc\osl\thread.h
+inc\osl\thread.hxx
+inc\osl\time.h
+inc\osl\util.h
+inc\pch\precompiled_sal.hxx
+inc\rtl\alloc.h
+inc\rtl\allocator.hxx
+inc\rtl\bootstrap.h
+inc\rtl\bootstrap.hxx
+inc\rtl\byteseq.h
+inc\rtl\byteseq.hxx
+inc\rtl\cipher.h
+inc\rtl\crc.h
+inc\rtl\digest.h
+inc\rtl\instance.hxx
+inc\rtl\locale.h
+inc\rtl\locale.hxx
+inc\rtl\logfile.h
+inc\rtl\logfile.hxx
+inc\rtl\malformeduriexception.hxx
+inc\rtl\math.h
+inc\rtl\math.hxx
+inc\rtl\memory.h
+inc\rtl\process.h
+inc\rtl\random.h
+inc\rtl\ref.hxx
+inc\rtl\strbuf.h
+inc\rtl\strbuf.hxx
+inc\rtl\string.h
+inc\rtl\string.hxx
+inc\rtl\tencinfo.h
+inc\rtl\textcvt.h
+inc\rtl\textenc.h
+inc\rtl\tres.h
+inc\rtl\tres.hxx
+inc\rtl\unload.h
+inc\rtl\uri.h
+inc\rtl\uri.hxx
+inc\rtl\ustrbuf.h
+inc\rtl\ustrbuf.hxx
+inc\rtl\ustring.h
+inc\rtl\ustring.hxx
+inc\rtl\uuid.h
+inc\sal\alloca.h
+inc\sal\config.h
+inc\sal\cppunit.h
+inc\sal\macros.h
+inc\sal\main.h
+inc\sal\mathconf.h
+inc\sal\types.h
+inc\systools\win32\advapi9x.h
+inc\systools\win32\AutoSystoolInit.hxx
+inc\systools\win32\comdlg9x.h
+inc\systools\win32\comptr.hxx
+inc\systools\win32\comtools.hxx
+inc\systools\win32\kernel9x.h
+inc\systools\win32\mpr9x.h
+inc\systools\win32\shell9x.h
+inc\systools\win32\snprintf.h
+inc\systools\win32\StrConvert.h
+inc\systools\win32\SyncObjects.hxx
+inc\systools\win32\user9x.h
+inc\systools\win32\uwinapi.h
+osl\inc\printtrace.h
+osl\os2\file_error_transl.h
+osl\os2\file_path_helper.h
+osl\os2\file_path_helper.hxx
+osl\os2\file_url.h
+osl\os2\path_helper.h
+osl\os2\path_helper.hxx
+osl\os2\pipeimpl.h
+osl\os2\procimpl.h
+osl\os2\secimpl.h
+osl\os2\sockimpl.h
+osl\os2\system.h
+osl\os2\uunxapi.h
+osl\os2\uunxapi.hxx
+osl\unx\backtrace.h
+osl\unx\file_error_transl.h
+osl\unx\file_impl.hxx
+osl\unx\file_path_helper.h
+osl\unx\file_path_helper.hxx
+osl\unx\file_url.h
+osl\unx\procimpl.h
+osl\unx\secimpl.h
+osl\unx\sockimpl.h
+osl\unx\system.h
+osl\unx\uunxapi.h
+osl\unx\uunxapi.hxx
+osl\w32\file_error.h
+osl\w32\file_url.h
+osl\w32\path_helper.h
+osl\w32\path_helper.hxx
+osl\w32\pipeimpl.h
+osl\w32\procimpl.h
+osl\w32\secimpl.h
+osl\w32\sockimpl.h
+osl\w32\system.h
+qa\inc\stringhelper.hxx
+qa\inc\valueequal.hxx
+qa\osl\condition\osl_Condition_Const.h
+qa\osl\file\osl_File_Const.h
+qa\osl\module\osl_Module_Const.h
+qa\osl\mutex\osl_Mutex_Const.h
+qa\osl\security\osl_Security_Const.h
+qa\osl\socket\osl_Socket_Const.h
+qa\osl\socket\osl_Socket_Const_orig.h
+qa\osl\socket\sockethelper.hxx
+qa\OStringBuffer\rtl_String_Const.h
+qa\OStringBuffer\rtl_String_Utils.hxx
+qa\OStringBuffer\rtl_String_Utils_Const.h
+qa\rtl\process\rtl_Process_Const.h
+qa\rtl_strings\rtl_String_Const.h
+qa\rtl_strings\rtl_String_Utils.hxx
+qa\rtl_strings\rtl_String_Utils_Const.h
+rtl\source\alloc_arena.h
+rtl\source\alloc_cache.h
+rtl\source\alloc_impl.h
+rtl\source\hash.h
+rtl\source\macro.hxx
+rtl\source\strimp.h
+rtl\source\surrogates.h
+systools\win32\uwinapi\macros.h
+systools\win32\uwinapi\Uwinapi.h
+systools\win32\uwinapi\win95sys.h
+textenc\context.h
+textenc\convertbig5hkscs.h
+textenc\converter.h
+textenc\converteuctw.h
+textenc\convertgb18030.h
+textenc\convertiso2022cn.h
+textenc\convertiso2022jp.h
+textenc\convertiso2022kr.h
+textenc\convertsinglebytetobmpunicode.hxx
+textenc\gettextencodingdata.h
+textenc\tenchelp.h
+textenc\unichars.h
+workben\clipboardwben\testcopy\resource.h
+workben\clipboardwben\testcopy\StdAfx.h
+workben\clipboardwben\testcopy\XTDataObject.hxx
+workben\clipboardwben\testpaste\resource.h
+workben\clipboardwben\testpaste\StdAfx.h
+workben\clipboardwben\testviewer\resource.h
+workben\clipboardwben\testviewer\StdAfx.h
+
+Patch Files:
+
+Makefiles:
+
+unosdk.mk
+
+version.mk
+
+cpprt\makefile.mk
+	PRJNAME=SAL
+	TARGET=salcpprt
+	SLOFILES=
+	$(SLO)$/operators_new_delete.obj
+
+cppunittester\makefile.mk
+	PRJNAME=sal
+	TARGET=cppunittester
+	OBJFILES=$(APP1OBJS)
+
+inc\makefile.mk
+	PRJNAME=sal
+	TARGET=inc
+
+osl\all\makefile.mk
+	PRJNAME=sal
+	TARGET=oslall
+	SLOFILES=
+	$(SLO)$/utility.obj
+	$(SLO)$/filepath.obj
+	$(SLO)$/debugbase.obj
+	$(SLO)$/loadmodulerelative.obj
+	$(SLO)/printtrace.obj
+	OBJFILES=
+	$(OBJ)$/utility.obj
+	$(OBJ)$/filepath.obj
+	$(OBJ)$/debugbase.obj
+	$(OBJ)$/loadmodulerelative.obj
+	$(OBJ)/printtrace.obj
+
+osl\os2\makefile.mk
+	PRJNAME=sal
+	TARGET=cpposl
+	SLOFILES=$(SLO)$/conditn.obj
+	$(SLO)$/diagnose.obj
+	$(SLO)$/dllentry.obj
+	$(SLO)$/semaphor.obj
+	$(SLO)$/interlck.obj
+	$(SLO)$/nlsupport.obj
+	$(SLO)$/mutex.obj
+	$(SLO)$/module.obj
+	$(SLO)$/process.obj
+	$(SLO)$/time.obj
+	$(SLO)$/signal.obj
+	$(SLO)$/pipe.obj
+	$(SLO)$/util.obj
+	$(SLO)$/socket.obj
+	$(SLO)$/thread.obj
+	$(SLO)$/security.obj
+	$(SLO)$/profile.obj
+	$(SLO)$/tempfile.obj
+	$(SLO)$/process_impl.obj
+	$(SLO)$/uunxapi.obj
+	$(SLO)$/file.obj
+	$(SLO)$/file_url.obj
+	$(SLO)$/file_error_transl.obj
+	$(SLO)$/file_path_helper.obj
+	$(SLO)$/debug_printf.obj
+	$(SLO)$/salinit.obj
+	OBJFILES=$(OBJ)$/conditn.obj
+	$(OBJ)$/diagnose.obj
+	$(OBJ)$/libutil.obj
+	$(OBJ)$/semaphor.obj
+	$(OBJ)$/interlck.obj
+	$(OBJ)$/nlsupport.obj
+	$(OBJ)$/mutex.obj
+	$(OBJ)$/module.obj
+	$(OBJ)$/process.obj
+	$(OBJ)$/time.obj
+	$(OBJ)$/signal.obj
+	$(OBJ)$/pipe.obj
+	$(OBJ)$/util.obj
+	$(OBJ)$/socket.obj
+	$(OBJ)$/thread.obj
+	$(OBJ)$/security.obj
+	$(OBJ)$/profile.obj
+	$(OBJ)$/tempfile.obj
+	$(OBJ)$/process_impl.obj
+	$(OBJ)$/uunxapi.obj
+	$(OBJ)$/file.obj
+	$(OBJ)$/file_url.obj
+	$(OBJ)$/file_error_transl.obj
+	$(OBJ)$/file_path_helper.obj
+	$(OBJ)$/debug_printf.obj
+	$(OBJ)$/salinit.obj
+
+osl\unx\makefile.mk
+	PRJNAME=sal
+	TARGET=cppsal
+	TARGET=cpposl
+	SLOFILES=
+	$(SLO)$/conditn.obj
+	$(SLO)$/diagnose.obj
+	$(SLO)$/semaphor.obj
+	$(SLO)$/socket.obj
+	$(SLO)$/interlck.obj
+	$(SLO)$/mutex.obj
+	$(SLO)$/nlsupport.obj
+	$(SLO)$/thread.obj
+	$(SLO)$/module.obj
+	$(SLO)$/process.obj
+	$(SLO)$/security.obj
+	$(SLO)$/profile.obj
+	$(SLO)$/time.obj
+	$(SLO)$/signal.obj
+	$(SLO)$/pipe.obj
+	$(SLO)$/system.obj
+	$(SLO)$/util.obj
+	$(SLO)$/tempfile.obj
+	$(SLO)$/file.obj
+	$(SLO)$/file_misc.obj
+	$(SLO)$/file_url.obj
+	$(SLO)$/file_error_transl.obj
+	$(SLO)$/file_path_helper.obj
+	$(SLO)$/file_stat.obj
+	$(SLO)$/file_volume.obj
+	$(SLO)$/uunxapi.obj
+	$(SLO)$/process_impl.obj
+	$(SLO)$/salinit.obj
+	OBJFILES=$(OBJ)$/conditn.obj
+	$(OBJ)$/diagnose.obj
+	$(OBJ)$/semaphor.obj
+	$(OBJ)$/socket.obj
+	$(OBJ)$/interlck.obj
+	$(OBJ)$/mutex.obj
+	$(OBJ)$/nlsupport.obj
+	$(OBJ)$/thread.obj
+	$(OBJ)$/module.obj
+	$(OBJ)$/process.obj
+	$(OBJ)$/security.obj
+	$(OBJ)$/profile.obj
+	$(OBJ)$/time.obj
+	$(OBJ)$/signal.obj
+	$(OBJ)$/pipe.obj
+	$(OBJ)$/system.obj
+	$(OBJ)$/util.obj
+	$(OBJ)$/tempfile.obj
+	$(OBJ)$/file.obj
+	$(OBJ)$/file_misc.obj
+	$(OBJ)$/file_url.obj
+	$(OBJ)$/file_error_transl.obj
+	$(OBJ)$/file_path_helper.obj
+	$(OBJ)$/file_stat.obj
+	$(OBJ)$/file_volume.obj
+	$(OBJ)$/uunxapi.obj
+	$(OBJ)$/process_impl.obj
+	$(OBJ)$/salinit.obj
+	SLOFILES+=$(SLO)$/osxlocale.obj
+	SLOFILES+=$(SLO)$/backtrace.obj
+	OBJFILES+=$(OBJ)$/backtrace.obj
+
+qa\makefile.mk
+	PRJNAME=sal
+	TARGET=whole_sal_qa
+
+qa\ByteSequence\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_ByteSequence
+	SLOFILES=$(SHL1OBJS)
+
+qa\osl\condition\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_condition
+
+qa\osl\file\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_file
+	SLOFILES=$(SHL1OBJS)
+
+qa\osl\module\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_module
+
+qa\osl\mutex\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_mutex
+
+qa\osl\pipe\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_pipe
+
+qa\osl\process\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_process
+	OBJ3FILES=$(OBJ)$/osl_process_child.obj
+	SLOFILES=$(SHL2OBJS)
+	SLOFILES=$(SHL1OBJS)$(SHL2OBJS)
+
+qa\osl\profile\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_profile
+	SLOFILES=
+	$(SHL1OBJS)
+
+qa\osl\security\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_security
+
+qa\osl\setthreadname\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_setthreadname
+	SLOFILES=$(SHL1OBJS)
+
+qa\osl\socket\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_osl_socket
+	#SLOFILES=$(SHL1OBJS)$(SHL2OBJS)
+
+qa\osl\thread\makefile.mk
+	PRJNAME:=sal
+	TARGET:=qa_osl_thread
+	SLOFILES=$(SHL1OBJS)
+
+qa\OStringBuffer\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_ostringbuffer
+	#SLOFILES=
+	#$(SLO)$/OStringBuffer.obj
+	SLOFILES=$(SHL1OBJS)
+
+qa\rtl\alloc\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_alloc
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\bootstrap\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_bootstrap
+	OBJ2FILES=$(OBJ)$/bootstrap_process.obj
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\cipher\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_cipher
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\crc32\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_crc32
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\digest\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_digest
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\doublelock\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_doublelock
+	SLOFILES=$(SHL1OBJS)
+
+qa\rtl\locale\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_locale
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\logfile\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_logfile
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\math\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_profile
+	SLOFILES=$(SHL1OBJS)
+
+qa\rtl\ostring\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_ostring2
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\oustring\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_oustring2
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\oustringbuffer\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_oustringbuffer2
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\process\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_Process
+	OBJ3FILES=$(OBJ)$/child_process.obj
+	OBJ4FILES=$(OBJ)$/child_process_id.obj
+	SLOFILES=$(SHL1OBJS)
+
+qa\rtl\random\makefile.add
+
+qa\rtl\random\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_random
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\strings\makefile.mk
+	PRJNAME:=sal
+	TARGET:=qa_rtl_strings
+
+qa\rtl\textenc\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_textenc
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\uri\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_uritest
+	#SLOFILES=$(SHL1OBJS)
+
+qa\rtl\uuid\makefile.mk
+	PRJNAME=sal
+	TARGET=rtl_uuid
+	SLOFILES=$(SHL1OBJS)
+
+qa\rtl_strings\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_rtl_strings
+	SLOFILES=
+	$(SHL1OBJS)
+	$(SHL2OBJS)
+	$(SHL3OBJS)
+	$(SHL4OBJS)
+	$(SHL5OBJS)
+	$(SHL6OBJS)
+
+qa\sal\makefile.mk
+	PRJNAME:=sal
+	TARGET:=qa_sal
+	SLOFILES=$(SHL1OBJS)
+
+qa\systools\makefile.mk
+	PRJNAME=sal
+	TARGET=test_comtools
+	#SLOFILES=$(SHL1OBJS)
+
+qa\testHelperFunctions\makefile.mk
+	PRJNAME=sal
+	TARGET=qa_testHelperFunctions
+	#SLOFILES=$(SHL1OBJS)
+
+rtl\source\makefile.mk
+	PRJNAME=sal
+	TARGET=cpprtl
+	SLOFILES=
+	$(SLO)$/memory.obj
+	$(SLO)$/cipher.obj
+	$(SLO)$/crc.obj
+	$(SLO)$/digest.obj
+	$(SLO)$/random.obj
+	$(SLO)$/locale.obj
+	$(SLO)$/strimp.obj
+	$(SLO)$/hash.obj
+	$(SLO)$/string.obj
+	$(SLO)$/ustring.obj
+	$(SLO)$/strbuf.obj
+	$(SLO)$/ustrbuf.obj
+	$(SLO)$/uuid.obj
+	$(SLO)$/rtl_process.obj
+	$(SLO)$/byteseq.obj
+	$(SLO)$/uri.obj
+	$(SLO)$/bootstrap.obj
+	$(SLO)$/cmdargs.obj
+	$(SLO)$/unload.obj
+	$(SLO)$/logfile.obj
+	$(SLO)$/tres.obj
+	$(SLO)$/debugprint.obj
+	$(SLO)$/math.obj
+	$(SLO)$/alloc_global.obj
+	$(SLO)$/alloc_cache.obj
+	$(SLO)$/alloc_arena.obj
+	SLOFILES+=$(SLO)$/alloc_fini.obj
+	OBJFILES=
+	$(OBJ)$/memory.obj
+	$(OBJ)$/cipher.obj
+	$(OBJ)$/crc.obj
+	$(OBJ)$/digest.obj
+	$(OBJ)$/random.obj
+	$(OBJ)$/locale.obj
+	$(OBJ)$/strimp.obj
+	$(OBJ)$/hash.obj
+	$(OBJ)$/string.obj
+	$(OBJ)$/ustring.obj
+	$(OBJ)$/strbuf.obj
+	$(OBJ)$/ustrbuf.obj
+	$(OBJ)$/uuid.obj
+	$(OBJ)$/rtl_process.obj
+	$(OBJ)$/byteseq.obj
+	$(OBJ)$/uri.obj
+	$(OBJ)$/bootstrap.obj
+	$(OBJ)$/cmdargs.obj
+	$(OBJ)$/unload.obj
+	$(OBJ)$/logfile.obj
+	$(OBJ)$/tres.obj
+	$(OBJ)$/math.obj
+	$(OBJ)$/alloc_global.obj
+	$(OBJ)$/alloc_cache.obj
+	$(OBJ)$/alloc_arena.obj
+	OBJFILES+=$(OBJ)$/alloc_fini.obj
+
+systools\win32\kill\makefile.mk
+	PRJNAME=sal
+	TARGET=kill
+	OBJFILES=
+	$(OBJ)$/kill.obj
+
+systools\win32\onlineupdate\makefile.mk
+	PRJNAME=sal
+	TARGET=onlinecheck
+	SLOFILES=
+	$(SLO)$/onlinecheck.obj
+
+systools\win32\uwinapi\makefile.mk
+	PRJNAME=sal
+	TARGET=uwinapi
+	SLOFILES=
+	$(SLO)$/CheckTokenMembership.obj
+	$(SLO)$/CommandLineToArgvW.obj
+	$(SLO)$/CopyFileExA.obj
+	$(SLO)$/CopyFileExW.obj
+	$(SLO)$/DrawStateW.obj
+	$(SLO)$/EnumProcesses.obj
+	$(SLO)$/GetLogicalDriveStringsW.obj
+	$(SLO)$/GetLongPathNameA.obj
+	$(SLO)$/GetLongPathNameW.obj
+	$(SLO)$/GetModuleFileNameExA.obj
+	$(SLO)$/GetModuleFileNameExW.obj
+	$(SLO)$/GetProcessId.obj
+	$(SLO)$/GetUserDefaultUILanguage.obj
+	$(SLO)$/GetUserDomainA.obj
+	$(SLO)$/GetUserDomainW.obj
+	$(SLO)$/GetDiskFreeSpaceExA.obj
+	$(SLO)$/GetDiskFreeSpaceExW.obj
+	$(SLO)$/MoveFileExA.obj
+	$(SLO)$/MoveFileExW.obj
+	$(SLO)$/toolhelp.obj
+	$(SLO)$/ResolveThunk.obj
+	$(SLO)$/ResolveUnicows.obj
+	$(SLO)$/snprintf.obj
+	$(SLO)$/snwprintf.obj
+	$(SLO)$/FindFirstVolumeA.obj
+	$(SLO)$/FindFirstVolumeW.obj
+	$(SLO)$/FindNextVolumeA.obj
+	$(SLO)$/FindNextVolumeW.obj
+	$(SLO)$/FindVolumeClose.obj
+	$(SLO)$/FindFirstVolumeMountPointA.obj
+	$(SLO)$/FindFirstVolumeMountPointW.obj
+	$(SLO)$/FindNextVolumeMountPointA.obj
+	$(SLO)$/FindNextVolumeMountPointW.obj
+	$(SLO)$/FindVolumeMountPointClose.obj
+	$(SLO)$/GetVolumeNameForVolumeMountPointA.obj
+	$(SLO)$/GetVolumeNameForVolumeMountPointW.obj
+	$(SLO)$/DeleteVolumeMountPointA.obj
+	$(SLO)$/DeleteVolumeMountPointW.obj
+	$(SLO)$/GetVolumePathNameA.obj
+	$(SLO)$/GetVolumePathNameW.obj
+	$(SLO)$/SetVolumeMountPointA.obj
+	$(SLO)$/SetVolumeMountPointW.obj
+	$(SLO)$/PathAddBackslashW.obj
+	$(SLO)$/PathCompactPathExW.obj
+	$(SLO)$/PathFileExistsW.obj
+	$(SLO)$/PathFindExtensionW.obj
+	$(SLO)$/PathFindFileNameW.obj
+	$(SLO)$/PathIsFileSpecW.obj
+	$(SLO)$/PathIsUNCW.obj
+	$(SLO)$/PathRemoveExtensionW.obj
+	$(SLO)$/PathRemoveFileSpecW.obj
+	$(SLO)$/PathSetDlgItemPathW.obj
+	$(SLO)$/PathStripToRootW.obj
+	$(SLO)$/SHCreateItemFromParsingName.obj
+
+test\makefile.mk
+	PRJNAME=sal
+	TARGET=saltest
+	OBJFILES=
+	$(APP2OBJS)
+
+test\unloading\makefile.mk
+	PRJNAME=sal
+	TARGET=unloading
+	TARGET1=samplelib1
+	TARGET2=samplelib2
+	#SLOFILES=
+	#$(SLO)$/samplelib1.obj
+	#$(SLO)$/samplelib2.obj
+
+textenc\makefile.mk
+	PRJNAME=sal
+	TARGET=textenc
+	SLOFILES=
+	$(SLO)$/context.obj
+	$(SLO)$/convertbig5hkscs.obj
+	$(SLO)$/converter.obj
+	$(SLO)$/converteuctw.obj
+	$(SLO)$/convertgb18030.obj
+	$(SLO)$/convertiso2022cn.obj
+	$(SLO)$/convertiso2022jp.obj
+	$(SLO)$/convertiso2022kr.obj
+	$(SLO)$/convertsinglebytetobmpunicode.obj
+	$(SLO)$/tcvtbyte.obj
+	$(SLO)$/tcvtmb.obj
+	$(SLO)$/tcvtutf7.obj
+	$(SLO)$/tcvtutf8.obj
+	$(SLO)$/tenchelp.obj
+	$(SLO)$/tencinfo.obj
+	$(SLO)$/textcvt.obj
+	$(SLO)$/textenc.obj
+	$(SLO)$/unichars.obj
+	OBJFILES=
+	$(OBJ)$/context.obj
+	$(OBJ)$/convertbig5hkscs.obj
+	$(OBJ)$/converter.obj
+	$(OBJ)$/converteuctw.obj
+	$(OBJ)$/convertgb18030.obj
+	$(OBJ)$/convertiso2022cn.obj
+	$(OBJ)$/convertiso2022jp.obj
+	$(OBJ)$/convertiso2022kr.obj
+	$(OBJ)$/convertsinglebytetobmpunicode.obj
+	$(OBJ)$/tcvtbyte.obj
+	$(OBJ)$/tcvtmb.obj
+	$(OBJ)$/tcvtutf7.obj
+	$(OBJ)$/tcvtutf8.obj
+	$(OBJ)$/tenchelp.obj
+	$(OBJ)$/tencinfo.obj
+	$(OBJ)$/textcvt.obj
+	$(OBJ)$/textenc.obj
+	$(OBJ)$/unichars.obj
+
+typesconfig\makefile.mk
+	PRJNAME=sal
+	TARGET=typesconfig
+
+util\makefile.mk
+	PRJNAME=sal
+	TARGET=sal
+	TARGET2=salalloc_malloc
+
+workben\makefile.mk
+	PRJNAME=sal
+	TARGET=workben
+	OBJFILES=$(OBJ)$/t_ojp_exe.obj
+	OBJFILES=$(OBJ)$/getlocaleinfotest.obj
+	OBJFILES=$(OBJ)$/salstattest.obj
+	OBJFILES=$(OBJ)$/saldyntest.obj
+	OBJFILES=$(OBJ)$/t_readline.obj
+	OBJFILES=$(OBJ)$/t_cipher.obj
+	OBJFILES=$(OBJ)$/t_digest.obj
+	OBJFILES=$(OBJ)$/t_random.obj
+	OBJFILES=$(OBJ)$/t_layer.obj
+	OBJFILES=$(OBJ)$/t_tls.obj
+	OBJFILES=$(OBJ)$/t_zip.obj
+	OBJFILES=$(OBJ)$/testfile.obj
+	OBJFILES=$(OBJ)$/testpipe.obj
+	OBJFILES=$(OBJ)$/testpip2.obj
+	OBJFILES=$(OBJ)$/testproc.obj
+	OBJFILES=$(OBJ)$/tgetpwnam.obj
+
+workben\clipboardwben\testcopy\makefile.mk
+	PRJNAME=sal
+	TARGET=cbcpytest
+	OBJFILES=$(OBJ)$/cbcpytest.obj$(OBJ)$/XTDataObject.obj
+
+workben\clipboardwben\testpaste\makefile.mk
+	PRJNAME=sal
+	TARGET=cbptest
+	OBJFILES=$(OBJ)$/cbptest.obj
+
+workben\clipboardwben\testviewer\makefile.mk
+	PRJNAME=sal
+	TARGET=cbvtest
+	OBJFILES=$(OBJ)$/cbvtest.obj

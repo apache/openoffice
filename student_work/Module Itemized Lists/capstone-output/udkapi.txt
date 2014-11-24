@@ -1,0 +1,182 @@
+Name:
+udkapi
+
+Dependencies:
+idlc NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\idl%_EXT%\com
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\beans
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\bridge
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\bridge\oleautomation
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\connection
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\container
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\io
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\java
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\lang
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\reflection
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\registry
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\loader
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\script
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\test
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\test\performance
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\test\bridge
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\uno
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\util
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\util\logging
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\security
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\task
+mkdir: %COMMON_DEST%\idl%_EXT%\com\sun\star\uri
+mkdir: %_DEST%\bin%_EXT%\ure
+
+..\%__SRC%\misc\udkapi.autodoc %_DEST%\idl%_EXT%\udkapi.autodoc
+..\%__SRC%\ucr\udkapi.db %_DEST%\bin%_EXT%\udkapi.rdb
+..\%__SRC%\ucr\udkapi.db %_DEST%\bin%_EXT%\ure\types.rdb
+..\%__SRC%\ucrdoc\udkapi_doc.db %_DEST%\bin%_EXT%\udkapi_doc.rdb
+
+..\com\sun\star\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star
+..\com\sun\star\beans\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\beans
+..\com\sun\star\bridge\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\bridge
+..\com\sun\star\bridge\oleautomation\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\bridge\oleautomation
+..\com\sun\star\connection\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\connection
+..\com\sun\star\container\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\container
+..\com\sun\star\io\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\io
+..\com\sun\star\java\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\java
+..\com\sun\star\lang\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\lang
+..\com\sun\star\reflection\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\reflection
+..\com\sun\star\registry\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\registry
+..\com\sun\star\loader\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\loader
+..\com\sun\star\script\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\script
+..\com\sun\star\test\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\test
+..\com\sun\star\test\performance\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\test\performance
+..\com\sun\star\test\bridge\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\test\bridge
+..\com\sun\star\uno\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\uno
+..\com\sun\star\util\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\util
+..\com\sun\star\util\logging\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\util\logging
+..\com\sun\star\security\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\security
+..\com\sun\star\task\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\task
+..\com\sun\star\uri\*.idl %COMMON_DEST%\idl%_EXT%\com\sun\star\uri
+
+..\%__SRC%\lib\lib*static*.dylib %_DEST%\lib%_EXT%\lib*static*.dylib
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\makefile.mk
+	PRJNAME=api
+	TARGET=css
+
+com\sun\star\beans\makefile.mk
+	PRJNAME=api
+	TARGET=cssbeans
+
+com\sun\star\bridge\makefile.mk
+	PRJNAME=api
+	TARGET=cssbridge
+
+com\sun\star\bridge\oleautomation\makefile.mk
+	PRJNAME=api
+	TARGET=cssboleautomation
+
+com\sun\star\connection\makefile.mk
+	PRJNAME=api
+	TARGET=cssconnection
+
+com\sun\star\container\makefile.mk
+	PRJNAME=api
+	TARGET=csscontainer
+
+com\sun\star\corba\makefile.mk
+	PRJNAME=api
+	TARGET=csscorba
+
+com\sun\star\corba\giop\makefile.mk
+	PRJNAME=api
+	TARGET=cssgiop
+
+com\sun\star\corba\iiop\makefile.mk
+	PRJNAME=api
+	TARGET=cssiiop
+
+com\sun\star\corba\iop\makefile.mk
+	PRJNAME=api
+	TARGET=cssiop
+
+com\sun\star\io\makefile.mk
+	PRJNAME=api
+	TARGET=cssio
+
+com\sun\star\java\makefile.mk
+	PRJNAME=api
+	TARGET=cssjava
+
+com\sun\star\lang\makefile.mk
+	PRJNAME=api
+	TARGET=csslang
+
+com\sun\star\loader\makefile.mk
+	PRJNAME=api
+	TARGET=cssloader
+
+com\sun\star\reflection\makefile.mk
+	PRJNAME=api
+	TARGET=cssreflection
+
+com\sun\star\registry\makefile.mk
+	PRJNAME=api
+	TARGET=cssregistry
+
+com\sun\star\script\makefile.mk
+	PRJNAME=api
+	TARGET=cssscript
+
+com\sun\star\security\makefile.mk
+	PRJNAME=udkapi
+	TARGET=csssec
+
+com\sun\star\task\makefile.mk
+	PRJNAME=api
+	TARGET=csstask
+
+com\sun\star\test\makefile.mk
+	PRJNAME=api
+	TARGET=csstest
+
+com\sun\star\test\bridge\makefile.mk
+	PRJNAME=api
+	TARGET=cssbridgetest
+
+com\sun\star\test\performance\makefile.mk
+	PRJNAME=api
+	TARGET=cssperftest
+
+com\sun\star\uno\makefile.mk
+	PRJNAME=api
+	TARGET=cssuno
+
+com\sun\star\uri\makefile.mk
+	PRJNAME:=api
+	TARGET:=cssuri
+
+com\sun\star\util\makefile.mk
+	PRJNAME=api
+	TARGET=cssutil
+
+com\sun\star\util\logging\makefile.mk
+	PRJNAME=logging
+	TARGET=cssulog
+
+util\makefile.mk
+	PRJNAME=udkapi
+	TARGET=udkapi
+
+util\makefile.pmk
+
+util\target.pmk

@@ -1,0 +1,375 @@
+Name:
+shell
+
+Dependencies:
+L10N:l10n offuh rdbmaker tools sal EXPAT:expat LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\slb\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\slb\*.a %_DEST%\lib%_EXT%\*.a
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.uno.so %_DEST%\lib%_EXT%\*.uno.so
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\bin\*.exe %_DEST%\bin%_EXT%\*.exe
+..\%__SRC%\bin\x64\shlxthdl.dll %_DEST%\bin%_EXT%\shlxthdl_x64.dll
+..\%__SRC%\bin\x64\ooofiltproxy.dll %_DEST%\bin%_EXT%\ooofiltproxy_x64.dll
+..\%__SRC%\bin\x64\ooofilt.dll %_DEST%\bin%_EXT%\ooofilt_x64.dll
+..\%__SRC%\bin\x64\propertyhdl.dll %_DEST%\bin%_EXT%\propertyhdl_x64.dll
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.a %_DEST%\lib%_EXT%\*.a
+..\%__SRC%\misc\cmdmail.component %_DEST%\xml%_EXT%\cmdmail.component
+
+..\%__SRC%\bin\open-url %_DEST%\bin%_EXT%\open-url
+..\%__SRC%\bin\cde-open-url %_DEST%\bin%_EXT%\cde-open-url
+..\%__SRC%\bin\kde-open-url %_DEST%\bin%_EXT%\kde-open-url
+..\%__SRC%\bin\gnome-open-url %_DEST%\bin%_EXT%\gnome-open-url
+..\%__SRC%\bin\gnome-open-url.bin %_DEST%\bin%_EXT%\gnome-open-url.bin
+..\%__SRC%\bin\senddoc %_DEST%\bin%_EXT%\senddoc
+..\%__SRC%\bin\uri-encode %_DEST%\bin%_EXT%\uri-encode
+
+..\%__SRC%\misc\*.xml %_DEST%\xml%_EXT%\*.xml
+
+..\%__SRC%\misc\desktopbe1.component  %_DEST%\xml%_EXT%\desktopbe1.component
+..\%__SRC%\misc\gconfbe1.component  %_DEST%\xml%_EXT%\gconfbe1.component
+..\%__SRC%\misc\kde4be1.component  %_DEST%\xml%_EXT%\kde4be1.component
+..\%__SRC%\misc\kdebe1.component  %_DEST%\xml%_EXT%\kdebe1.component
+..\inc\kde_headers.h %_DEST%\inc%_EXT%\shell\kde_headers.h
+..\%__SRC%\misc\localebe1.component %_DEST%\xml%_EXT%\localebe1.component
+..\%__SRC%\misc\macbe1.component %_DEST%\xml%_EXT%\macbe1.component
+..\%__SRC%\misc\sysmail.component %_DEST%\xml%_EXT%\sysmail.component
+..\%__SRC%\misc\syssh.component %_DEST%\xml%_EXT%\syssh.component
+..\%__SRC%\misc\wininetbe1.component %_DEST%\xml%_EXT%\wininetbe1.component
+
+Source Files:
+inc\pch\precompiled_shell.cxx
+qa\zip\ziptest.cxx
+qa\zip\testimpl\testzipimpl.cxx
+source\all\xml_parser.cxx
+source\all\ooofilereader\autostyletag.cxx
+source\all\ooofilereader\basereader.cxx
+source\all\ooofilereader\contentreader.cxx
+source\all\ooofilereader\keywordstag.cxx
+source\all\ooofilereader\metainforeader.cxx
+source\all\ooofilereader\simpletag.cxx
+source\all\zipfile\zipexcptn.cxx
+source\all\zipfile\zipfile.cxx
+source\backends\desktopbe\desktopbackend.cxx
+source\backends\gconfbe\gconfaccess.cxx
+source\backends\gconfbe\gconfbackend.cxx
+source\backends\kde4be\kde4access.cxx
+source\backends\kde4be\kde4backend.cxx
+source\backends\kdebe\kdeaccess.cxx
+source\backends\kdebe\kdebackend.cxx
+source\backends\localebe\localebackend.cxx
+source\backends\localebe\localebecdef.cxx
+source\backends\macbe\macbackend.cxx
+source\backends\macbe\macbecdef.cxx
+source\backends\wininetbe\wininetbackend.cxx
+source\backends\wininetbe\wininetbecdef.cxx
+source\cmdmail\cmdmailentry.cxx
+source\cmdmail\cmdmailmsg.cxx
+source\cmdmail\syscmdmail.cxx
+source\tools\lngconvex\cmdline.cxx
+source\tools\lngconvex\lngconvex.cxx
+source\tools\regsvrex\regsvrex.cxx
+source\unix\exec\shellexec.cxx
+source\unix\exec\shellexecentry.cxx
+source\unix\exec\urltest.cxx
+source\unix\misc\gnome-open-url.c
+source\unix\misc\open-url.c
+source\unix\misc\senddoc.c
+source\unix\misc\uri-encode.c
+source\unix\sysshell\recently_used_file.cxx
+source\unix\sysshell\recently_used_file_handler.cxx
+source\win32\SysShentry.cxx
+source\win32\SysShExec.cxx
+source\win32\shlxthandler\classfactory.cxx
+source\win32\shlxthandler\shlxthdl.cxx
+source\win32\shlxthandler\columninfo\columninfo.cxx
+source\win32\shlxthandler\infotips\infotips.cxx
+source\win32\shlxthandler\ooofilt\ooofilt.cxx
+source\win32\shlxthandler\ooofilt\propspec.cxx
+source\win32\shlxthandler\ooofilt\stream_helper.cxx
+source\win32\shlxthandler\prophdl\propertyhdl.cxx
+source\win32\shlxthandler\propsheets\document_statistic.cxx
+source\win32\shlxthandler\propsheets\listviewbuilder.cxx
+source\win32\shlxthandler\propsheets\propsheets.cxx
+source\win32\shlxthandler\thumbviewer\thumbviewer.cxx
+source\win32\shlxthandler\util\dbgmacros.cxx
+source\win32\shlxthandler\util\fileextensions.cxx
+source\win32\shlxthandler\util\iso8601_converter.cxx
+source\win32\shlxthandler\util\registry.cxx
+source\win32\shlxthandler\util\utilities.cxx
+source\win32\sysmail\senddoc.cxx
+source\win32\sysmail\sysmailclient.cxx
+source\win32\sysmail\sysmailentry.cxx
+source\win32\sysmail\sysmailmsg.cxx
+source\win32\sysmail\sysmailprov.cxx
+source\win32\sysmail\sysmapi.cxx
+source\win32\workbench\TestSmplMail.cxx
+source\win32\workbench\TestSysShExec.cxx
+
+Header Files:
+inc\kde_headers.h
+inc\internal\basereader.hxx
+inc\internal\columninfo.hxx
+inc\internal\config.hxx
+inc\internal\contentreader.hxx
+inc\internal\dbgmacros.hxx
+inc\internal\fileextensions.hxx
+inc\internal\global.hxx
+inc\internal\infotips.hxx
+inc\internal\iso8601_converter.hxx
+inc\internal\i_xml_parser_event_handler.hxx
+inc\internal\metainforeader.hxx
+inc\internal\propertyhdl.hxx
+inc\internal\propsheets.hxx
+inc\internal\registry.hxx
+inc\internal\resource.h
+inc\internal\shlxthdl.hxx
+inc\internal\stream_helper.hxx
+inc\internal\thumbviewer.hxx
+inc\internal\types.hxx
+inc\internal\utilities.hxx
+inc\internal\xml_parser.hxx
+inc\internal\zipfile.hxx
+inc\pch\precompiled_shell.hxx
+qa\zip\testimpl\testzipimpl.hxx
+source\all\ooofilereader\autostyletag.hxx
+source\all\ooofilereader\dummytag.hxx
+source\all\ooofilereader\itag.hxx
+source\all\ooofilereader\keywordstag.hxx
+source\all\ooofilereader\simpletag.hxx
+source\all\zipfile\zipexcptn.hxx
+source\backends\gconfbe\gconfaccess.hxx
+source\backends\gconfbe\orbit.h
+source\backends\kde4be\kde4access.hxx
+source\backends\kdebe\kdeaccess.hxx
+source\backends\localebe\localebackend.hxx
+source\backends\macbe\macbackend.hxx
+source\backends\wininetbe\wininetbackend.hxx
+source\cmdmail\cmdmailmsg.hxx
+source\cmdmail\syscmdmail.hxx
+source\tools\lngconvex\cmdline.hxx
+source\tools\lngconvex\defs.hxx
+source\unix\exec\shellexec.hxx
+source\unix\sysshell\recently_used_file.hxx
+source\win32\SysShExec.hxx
+source\win32\shlxthandler\classfactory.hxx
+source\win32\shlxthandler\ooofilt\ooofilt.hxx
+source\win32\shlxthandler\ooofilt\propspec.hxx
+source\win32\shlxthandler\propsheets\document_statistic.hxx
+source\win32\shlxthandler\propsheets\listviewbuilder.hxx
+source\win32\sysmail\sysmailclient.hxx
+source\win32\sysmail\sysmailmsg.hxx
+source\win32\sysmail\sysmailprov.hxx
+source\win32\sysmail\sysmapi.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=shell
+	TARGET=inc
+
+qa\zip\makefile.mk
+	PRJNAME=shell
+	TARGET=qa_zip
+	SLOFILES=$(SLO)$/ziptest.obj
+
+qa\zip\testimpl\makefile.mk
+	PRJNAME=shell
+	TARGET=qa_zipimpl
+	SLOFILES=$(SLO)$/testzipimpl.obj
+
+source\all\makefile.mk
+	PRJNAME=shell
+	TARGET=xmlparser
+	SLOFILES=$(SLO)$/xml_parser.obj
+
+source\all\ooofilereader\makefile.mk
+	PRJNAME=shell
+	TARGET=ooofilereader
+	SLOFILES=$(SLO)$/basereader.obj
+	$(SLO)$/metainforeader.obj
+	$(SLO)$/contentreader.obj
+	$(SLO)$/simpletag.obj
+	$(SLO)$/keywordstag.obj
+	$(SLO)$/autostyletag.obj
+
+source\all\zipfile\makefile.mk
+	PRJNAME=shell
+	TARGET=zipfile
+	SLOFILES=$(SLO)$/zipfile.obj
+	$(SLO)$/zipexcptn.obj
+
+source\backends\desktopbe\makefile.mk
+	PRJNAME=shell
+	TARGET=desktopbe
+	SLOFILES=$(SLO)/desktopbackend.obj
+
+source\backends\gconfbe\makefile.mk
+	PRJNAME=shell
+	TARGET=gconfbe
+	SLOFILES=
+	$(SLO)$/gconfaccess.obj
+	$(SLO)$/gconfbackend.obj
+
+source\backends\kde4be\makefile.mk
+	PRJNAME=shell
+	TARGET=kde4be
+	SLOFILES=
+	$(SLO)$/kde4access.obj
+	$(SLO)$/kde4backend.obj
+
+source\backends\kdebe\makefile.mk
+	PRJNAME=shell
+	TARGET=kdebe
+	SLOFILES=
+	$(SLO)$/kdeaccess.obj
+	$(SLO)$/kdebackend.obj
+
+source\backends\localebe\makefile.mk
+	PRJNAME=shell
+	TARGET=localebe
+	SLOFILES=
+	$(SLO)$/localebecdef.obj
+	$(SLO)$/localebackend.obj
+
+source\backends\macbe\makefile.mk
+	PRJNAME=shell
+	TARGET=macbe
+	SLOFILES=
+	$(SLO)$/macbecdef.obj
+	$(SLO)$/macbackend.obj
+
+source\backends\wininetbe\makefile.mk
+	PRJNAME=shell
+	TARGET=wininetbe
+	SLOFILES=
+	$(SLO)$/wininetbecdef.obj
+	$(SLO)$/wininetbackend.obj
+
+source\cmdmail\makefile.mk
+	PRJNAME=shell
+	TARGET=cmdmail
+	SLOFILES=
+	$(SLO)$/syscmdmail.obj
+	$(SLO)$/cmdmailmsg.obj
+	$(SLO)$/cmdmailentry.obj
+
+source\tools\lngconvex\makefile.mk
+	PRJNAME=shell
+	TARGET=lngconvex
+
+source\tools\regsvrex\makefile.mk
+	PRJNAME=shell
+	TARGET=regsvrex
+	OBJFILES=$(OBJ)$/regsvrex.obj
+
+source\unix\exec\makefile.mk
+	PRJNAME=shell
+	TARGET=exec
+	SLOFILES=$(SLO)$/shellexec.obj
+	$(SLO)$/shellexecentry.obj
+
+source\unix\misc\makefile.mk
+	PRJNAME=shell
+	TARGET=misc
+	OBJFILES=$(APP1OBJS)$(APP2OBJS)
+
+source\unix\sysshell\makefile.mk
+	PRJNAME=shell
+	TARGET=sysshell
+	SLOFILES=$(SLO)$/recently_used_file.obj
+	$(SLO)$/recently_used_file_handler.obj
+
+source\win32\makefile.mk
+	PRJNAME=shell
+	TARGET=syssh
+	SLOFILES=$(SLO)$/SysShentry.obj
+	$(SLO)$/SysShExec.obj
+
+source\win32\shlxthandler\makefile.mk
+	PRJNAME=shell
+	TARGET=shlxthdl
+	SLOFILES=$(SLO)$/classfactory.obj
+	$(SLO)$/columninfo.obj
+	$(SLO)$/infotips.obj
+	$(SLO)$/propsheets.obj
+	$(SLO)$/shlxthdl.obj
+	$(SLO)$/listviewbuilder.obj
+	$(SLO)$/document_statistic.obj
+	$(SLO)$/thumbviewer.obj
+	
+
+source\win32\shlxthandler\columninfo\makefile.mk
+	PRJNAME=shell
+	TARGET=columninfo
+	SLOFILES=$(SLO)$/columninfo.obj
+
+source\win32\shlxthandler\infotips\makefile.mk
+	PRJNAME=shell
+	TARGET=infotips
+	SLOFILES=$(SLO)$/$(TARGET).obj
+
+source\win32\shlxthandler\ooofilt\makefile.mk
+	PRJNAME=shell
+	TARGET=ooofilt
+	SLOFILES=$(SLO)$/ooofilt.obj
+	$(SLO)$/propspec.obj
+	$(SLO)$/stream_helper.obj
+
+source\win32\shlxthandler\prophdl\makefile.mk
+	PRJNAME=shell
+	TARGET=propertyhdl
+	SLOFILES=$(SLO)$/$(TARGET).obj
+	$(SLO)$/stream_helper.obj
+
+source\win32\shlxthandler\propsheets\makefile.mk
+	PRJNAME=shell
+	TARGET=propsheets
+	SLOFILES=$(SLO)$/propsheets.obj
+	$(SLO)$/listviewbuilder.obj
+	$(SLO)$/document_statistic.obj
+
+source\win32\shlxthandler\res\makefile.mk
+	PRJNAME=shell
+	TARGET=shlxthdl
+
+source\win32\shlxthandler\thumbviewer\makefile.mk
+	PRJNAME=shell
+	TARGET=thumbviewer
+	SLOFILES=$(SLO)$/$(TARGET).obj
+
+source\win32\shlxthandler\util\makefile.mk
+	PRJNAME=shell
+	TARGET=util
+	SLOFILES=$(SLO)$/dbgmacros.obj
+	$(SLO)$/fileextensions.obj
+	$(SLO)$/registry.obj
+	$(SLO)$/utilities.obj
+	$(SLO)$/iso8601_converter.obj
+
+source\win32\sysmail\makefile.mk
+	PRJNAME=shell
+	TARGET=sysmail
+	SLOFILES=$(SLO)$/sysmailentry.obj
+	$(SLO)$/sysmailmsg.obj
+	$(SLO)$/sysmailclient.obj
+	$(SLO)$/sysmailprov.obj
+	OBJFILES=$(OBJ)$/senddoc.obj
+	$(OBJ)$/sysmapi.obj
+
+source\win32\workbench\makefile.mk
+	PRJNAME=shell
+	TARGET=testsyssh
+	TARGET1=testsmplmail
+	TARGET2=testprx
+	TARGET4=testfopen
+	OBJFILES1=$(OBJ)$/TestSysShExec.obj
+	OBJFILES2=$(OBJ)$/TestSmplMail.obj
+	OBJFILES4=$(OBJ)$/Testfopen.obj
+	OBJFILES=$(OBJFILES1)
+	$(OBJFILES2)

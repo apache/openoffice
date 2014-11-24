@@ -1,0 +1,153 @@
+Name:
+starmath
+
+Dependencies:
+LIBXSLT:libxslt L10N:l10n svx NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\smath
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\smath\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\smath\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\smath\statusbar
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\misc\*.map %_DEST%\bin%_EXT%\*.map
+..\xml\*.xml %_DEST%\xml%_EXT%\*.xml
+..\%__SRC%\bin\sm?????.dll %_DEST%\bin%_EXT%\sm?????.dll
+..\%__SRC%\bin\smd?????.dll %_DEST%\bin%_EXT%\smd?????.dll
+..\%__SRC%\bin\sm*.res %_DEST%\bin%_EXT%\sm*.res
+..\%__SRC%\bin\sm?????.sym %_DEST%\bin%_EXT%\sm?????.sym
+mkdir: %_DEST%\inc%_EXT%\starmath
+
+..\uiconfig\smath\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\smath\menubar\*.xml
+..\uiconfig\smath\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\smath\toolbar\*.xml
+..\uiconfig\smath\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\smath\statusbar\*.xml
+..\%__SRC%\misc\sm.component %_DEST%\xml%_EXT%\sm.component
+..\%__SRC%\misc\smd.component %_DEST%\xml%_EXT%\smd.component
+
+Source Files:
+inc\pch\precompiled_starmath.cxx
+source\accessibility.cxx
+source\action.cxx
+source\cfgitem.cxx
+source\config.cxx
+source\detreg.cxx
+source\dialog.cxx
+source\document.cxx
+source\edit.cxx
+source\eqnolefilehdr.cxx
+source\format.cxx
+source\mathmlexport.cxx
+source\mathmlimport.cxx
+source\mathtype.cxx
+source\node.cxx
+source\parse.cxx
+source\rect.cxx
+source\register.cxx
+source\smdetect.cxx
+source\smdll.cxx
+source\smmod.cxx
+source\symbol.cxx
+source\toolbox.cxx
+source\typemap.cxx
+source\types.cxx
+source\unodoc.cxx
+source\unomodel.cxx
+source\utility.cxx
+source\view.cxx
+
+Header Files:
+inc\action.hxx
+inc\applicat.hxx
+inc\config.hxx
+inc\dialog.hxx
+inc\document.hxx
+inc\edit.hxx
+inc\format.hxx
+inc\helpids.h
+inc\node.hxx
+inc\parse.hxx
+inc\rect.hxx
+inc\smcommands.h
+inc\smdll.hxx
+inc\smmod.hxx
+inc\starmath.hrc
+inc\symbol.hxx
+inc\toolbox.hxx
+inc\types.hxx
+inc\unomodel.hxx
+inc\utility.hxx
+inc\view.hxx
+inc\pch\precompiled_starmath.hxx
+source\accessibility.hxx
+source\cfgitem.hxx
+source\dialog.hrc
+source\eqnolefilehdr.hxx
+source\mathmlexport.hxx
+source\mathmlimport.hxx
+source\mathtype.hxx
+source\smdetect.hxx
+source\toolbox.hrc
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=starmath
+	TARGET=inc
+
+qa\unoapi\makefile.mk
+	PRJNAME=starmath
+	TARGET=qa_unoapi
+
+sdi\makefile.mk
+	PRJNAME=starmath
+	TARGET=smslots
+
+source\makefile.mk
+	PRJNAME=starmath
+	TARGET=starmath
+	SLO1FILES=
+	$(SLO)$/accessibility.obj
+	$(SLO)$/action.obj
+	$(SLO)$/cfgitem.obj
+	$(SLO)$/config.obj
+	$(SLO)$/dialog.obj
+	$(SLO)$/document.obj
+	$(SLO)$/edit.obj
+	$(SLO)$/eqnolefilehdr.obj
+	$(SLO)$/format.obj
+	$(SLO)$/mathmlexport.obj
+	$(SLO)$/mathmlimport.obj
+	$(SLO)$/mathtype.obj
+	$(SLO)$/node.obj
+	$(SLO)$/parse.obj
+	$(SLO)$/rect.obj
+	$(SLO)$/register.obj
+	$(SLO)$/smdll.obj
+	$(SLO)$/smmod.obj
+	$(SLO)$/symbol.obj
+	$(SLO)$/toolbox.obj
+	$(SLO)$/typemap.obj
+	$(SLO)$/types.obj
+	$(SLO)$/unodoc.obj
+	$(SLO)$/utility.obj
+	$(SLO)$/view.obj
+	$(SLO)$/unomodel.obj
+	SLO2FILES=
+	$(SLO)$/register.obj
+	$(SLO)$/detreg.obj
+	SLOFILES=
+	$(SLO)$/smdetect.obj
+	$(SLO1FILES)
+	$(SLO2FILES)
+	$(SLO1FILES)
+
+util\makefile.mk
+	PRJNAME=starmath
+	TARGET=smath3

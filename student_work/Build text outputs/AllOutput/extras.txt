@@ -1,0 +1,2943 @@
+extras
+=============
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/autotext
+
+mkout -- version: 1.8
+Making:    autotextnolang.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/autotextuser.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/autotextuser.zip "mytexts.bau" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/autotextuser.dpzz
+cat ../../wntmsci12.pro/misc/autotextuser.dpzz C:/cygwin/tmp/mkEN6zQz | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/autotextnolang.dpz
+Making:    autotextuser.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/autotextuser.zip mytexts.bau -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/autotextuser.zip not found or empty
+  adding: mytexts.bau (deflated 20%)
+if [ -f ../../wntmsci12.pro/bin/autotextuser.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/autotextuser.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/sounds
+
+Making:    gallerysounds.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsounds.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsounds.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsounds.dpzz
+cat ../../../wntmsci12.pro/misc/gallsounds.dpzz C:/cygwin/tmp/mkq9wOyb | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerysounds.dpz
+Making:    gallsounds.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallsounds.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallsounds.zip not found or empty
+  adding: apert.wav (deflated 49%)
+  adding: apert2.wav (deflated 44%)
+  adding: applause.wav (deflated 43%)
+  adding: beam.wav (deflated 35%)
+  adding: beam2.wav (deflated 47%)
+  adding: cow.wav (deflated 37%)
+  adding: curve.wav (deflated 26%)
+  adding: drama.wav (deflated 39%)
+  adding: explos.wav (deflated 38%)
+  adding: falling.wav (deflated 41%)
+  adding: glasses.wav (deflated 40%)
+  adding: gong.wav (deflated 37%)
+  adding: horse.wav (deflated 40%)
+  adding: kling.wav (deflated 44%)
+  adding: kongas.wav (deflated 44%)
+  adding: laser.wav (deflated 31%)
+  adding: left.wav (deflated 39%)
+  adding: nature1.wav (deflated 44%)
+  adding: nature2.wav (deflated 44%)
+  adding: ok.wav (deflated 40%)
+  adding: pluck.wav (deflated 40%)
+  adding: roll.wav (deflated 7%)
+  adding: romans.wav (deflated 42%)
+  adding: soft.wav (deflated 44%)
+  adding: space.wav (deflated 45%)
+  adding: space2.wav (deflated 49%)
+  adding: space3.wav (deflated 58%)
+  adding: sparcle.wav (deflated 44%)
+  adding: strom.wav (deflated 45%)
+  adding: theetone.wav (deflated 44%)
+  adding: top.wav (deflated 39%)
+  adding: train.wav (deflated 40%)
+  adding: untie.wav (deflated 40%)
+  adding: ups.wav (deflated 38%)
+  adding: wallewal.wav (deflated 42%)
+if [ -f ../../../wntmsci12.pro/bin/gallsounds.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallsounds.zip \
+	    ; fi
+Making:    gallerysounds.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsounds.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsounds.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsounds.dpzz
+cat ../../../wntmsci12.pro/misc/gallsounds.dpzz C:/cygwin/tmp/mkBfXoDR | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerysounds.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/database
+
+Making:    databasegeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/database.dpzz ../../wntmsci12.pro/misc/databasebiblio.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/database.zip "biblio.odb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/database.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/databasebiblio.zip "biblio.dbf" "biblio.dbt" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/databasebiblio.dpzz
+cat ../../wntmsci12.pro/misc/database.dpzz ../../wntmsci12.pro/misc/databasebiblio.dpzz C:/cygwin/tmp/mkhnq2O7 | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/databasegeneral.dpz
+Making:    database.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/database.zip biblio.odb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/database.zip not found or empty
+  adding: biblio.odb (deflated 23%)
+if [ -f ../../wntmsci12.pro/bin/database.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/database.zip \
+	    ; fi
+Making:    databasebiblio.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/databasebiblio.zip biblio.dbf biblio.dbt -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/databasebiblio.zip not found or empty
+  adding: biblio.dbf (deflated 98%)
+  adding: biblio.dbt (deflated 99%)
+if [ -f ../../wntmsci12.pro/bin/databasebiblio.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/databasebiblio.zip \
+	    ; fi
+Making:    databasegeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/database.dpzz ../../wntmsci12.pro/misc/databasebiblio.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/database.zip "biblio.odb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/database.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/databasebiblio.zip "biblio.dbf" "biblio.dbt" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/databasebiblio.dpzz
+cat ../../wntmsci12.pro/misc/database.dpzz ../../wntmsci12.pro/misc/databasebiblio.dpzz C:/cygwin/tmp/mkc3en40 | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/databasegeneral.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/agenda/lang
+
+Making:    templateswizardagenda.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizagenda_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizagenda_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizagenda_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizagenda_en-US.dpzz C:/cygwin/tmp/mk6nsNLa | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardagenda.dpz
+Making:    tplwizagenda_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../../wntmsci12.pro/bin/tplwizagenda_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../../wntmsci12.pro/bin/tplwizagenda_en-US.zip not found or empty
+  adding: 10grey.ott (deflated 7%)
+  adding: 1simple.ott (deflated 7%)
+  adding: 2elegant.ott (deflated 6%)
+  adding: 3modern.ott (deflated 7%)
+  adding: 4classic.ott (deflated 7%)
+  adding: 5blue.ott (deflated 7%)
+  adding: 6orange.ott (deflated 7%)
+  adding: 7red.ott (deflated 7%)
+  adding: 8green.ott (deflated 7%)
+  adding: 9colorful.ott (deflated 7%)
+  adding: aw-10grey.ott (deflated 7%)
+  adding: aw-1simple.ott (deflated 7%)
+  adding: aw-2elegant.ott (deflated 6%)
+  adding: aw-3modern.ott (deflated 7%)
+  adding: aw-4classic.ott (deflated 7%)
+  adding: aw-5blue.ott (deflated 7%)
+  adding: aw-6orange.ott (deflated 7%)
+  adding: aw-7red.ott (deflated 10%)
+  adding: aw-8green.ott (deflated 7%)
+  adding: aw-9colorful.ott (deflated 7%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizagenda_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizagenda_en-US.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/autotext/lang
+
+Making:    autotext.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz ../../../wntmsci12.pro/misc/autocorr.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/autotextshare_en-US.zip "en-US/standar?.bau" "en-US/templat?.bau" "en-US/crd*.bau" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/autocorr.zip "./*/acor*.dat" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/autocorr.dpzz
+cat ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz ../../../wntmsci12.pro/misc/autocorr.dpzz C:/cygwin/tmp/mkG9paYL | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/autotext.dpz
+Making:    autotextshare_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/autotextshare_en-US.zip en-US/standar?.bau en-US/templat?.bau en-US/crd*.bau -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/autotextshare_en-US.zip not found or empty
+  adding: standard.bau (deflated 50%)
+  adding: template.bau (deflated 35%)
+  adding: crdbus50.bau (deflated 30%)
+if [ -f ../../../wntmsci12.pro/bin/autotextshare_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/autotextshare_en-US.zip \
+	    ; fi
+Making:    autocorr.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/autocorr.zip ./*/acor*.dat -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/autocorr.zip not found or empty
+  adding: acor_af-ZA.dat (deflated 6%)
+  adding: acor_bg-BG.dat (deflated 79%)
+  adding: acor_cs-CZ.dat (deflated 89%)
+  adding: acor_da-DK.dat (deflated 6%)
+  adding: acor_de-DE.dat (deflated 90%)
+  adding: acor_en-AU.dat (deflated 90%)
+  adding: acor_en-GB.dat (deflated 90%)
+  adding: acor_en-US.dat (deflated 90%)
+  adding: acor_en-ZA.dat (deflated 4%)
+  adding: acor_es-ES.dat (deflated 90%)
+  adding: acor_eu.dat (deflated 91%)
+  adding: acor_fa-IR.dat (deflated 92%)
+  adding: acor_fi-FI.dat (deflated 85%)
+  adding: acor_fr-FR.dat (deflated 7%)
+  adding: acor_ga-IE.dat (deflated 2%)
+  adding: acor_hr-HR.dat (deflated 5%)
+  adding: acor_hu-HU.dat (deflated 90%)
+  adding: acor_it-IT.dat (deflated 89%)
+  adding: acor_ja-JP.dat (deflated 90%)
+  adding: acor_ko-KR.dat (deflated 91%)
+  adding: acor_lb-LU.dat (deflated 89%)
+  adding: acor_lt-LT.dat (deflated 12%)
+  adding: acor_mn-MN.dat (deflated 7%)
+  adding: acor_nl-BE.dat (deflated 87%)
+  adding: acor_nl-NL.dat (deflated 88%)
+  adding: acor_pl-PL.dat (deflated 4%)
+  adding: acor_pt-BR.dat (deflated 1%)
+  adding: acor_pt-PT.dat (deflated 89%)
+  adding: acor_ru-RU.dat (deflated 88%)
+  adding: acor_sh-ME.dat (deflated 30%)
+  adding: acor_sh-RS.dat (deflated 30%)
+  adding: acor_sh-YU.dat (deflated 30%)
+  adding: acor_sk-SK.dat (deflated 9%)
+  adding: acor_sl-SI.dat (deflated 90%)
+  adding: acor_sr-ME.dat (deflated 29%)
+  adding: acor_sr-RS.dat (deflated 29%)
+  adding: acor_sr-YU.dat (deflated 29%)
+  adding: acor_sv-SE.dat (deflated 86%)
+  adding: acor_tr-TR.dat (deflated 88%)
+  adding: acor_vi-VN.dat (deflated 89%)
+  adding: acor_zh-CN.dat (deflated 47%)
+  adding: acor_zh-TW.dat (deflated 47%)
+if [ -f ../../../wntmsci12.pro/bin/autocorr.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/autocorr.zip \
+	    ; fi
+Making:    autotext.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz ../../../wntmsci12.pro/misc/autocorr.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/autotextshare_en-US.zip "en-US/standar?.bau" "en-US/templat?.bau" "en-US/crd*.bau" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/autocorr.zip "./*/acor*.dat" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/autocorr.dpzz
+cat ../../../wntmsci12.pro/misc/autotextshare_en-US.dpzz ../../../wntmsci12.pro/misc/autocorr.dpzz C:/cygwin/tmp/mkXemyu3 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/autotext.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/styles/lang
+
+Making:    templateswizardstyles.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz C:/cygwin/tmp/mklgdDss | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardstyles.dpz
+Making:    tplwizstyles_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip not found or empty
+  adding: black_white.ots (deflated 8%)
+  adding: blackberry.ots (deflated 8%)
+  adding: default.ots (deflated 8%)
+  adding: diner.ots (deflated 7%)
+  adding: fall.ots (deflated 8%)
+  adding: glacier.ots (deflated 8%)
+  adding: green_grapes.ots (deflated 8%)
+  adding: jeans.ots (deflated 8%)
+  adding: marine.ots (deflated 8%)
+  adding: millennium.ots (deflated 8%)
+  adding: nature.ots (deflated 8%)
+  adding: neon.ots (deflated 8%)
+  adding: night.ots (deflated 8%)
+  adding: nostalgic.ots (deflated 8%)
+  adding: pastell.ots (deflated 8%)
+  adding: pool.ots (deflated 8%)
+  adding: pumpkin.ots (deflated 8%)
+  adding: xos.ots (deflated 8%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip \
+	    ; fi
+Making:    templateswizardstyles.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizstyles_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizstyles_en-US.dpzz C:/cygwin/tmp/mkcTJJBV | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardstyles.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/finance
+
+Making:    galleryfinance.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallfinance.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallfinance.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallfinance.dpzz
+cat ../../../wntmsci12.pro/misc/gallfinance.dpzz C:/cygwin/tmp/mkdyMi2b | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryfinance.dpz
+Making:    gallfinance.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallfinance.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallfinance.zip not found or empty
+  adding: ATM01.png (deflated 0%)
+  adding: ATM02.png (deflated 0%)
+  adding: Agreement.png (deflated 3%)
+  adding: Balance-Balanced1.png (deflated 2%)
+  adding: Balance-Balanced2.png (deflated 4%)
+  adding: Balance-Unbalanced1.png (deflated 1%)
+  adding: Balance-Unbalanced2.png (deflated 2%)
+  adding: Calculator.png (deflated 1%)
+  adding: Chart-Decrease1.png (deflated 3%)
+  adding: Chart-Decrease2.png (deflated 3%)
+  adding: Chart-Increase1.png (deflated 3%)
+  adding: Chart-Increase2.png (deflated 2%)
+  adding: Chart-Plateau.png (deflated 5%)
+  adding: Check.png (deflated 0%)
+  adding: Contract.png (deflated 2%)
+  adding: CreditCard-Black.png (deflated 3%)
+  adding: CreditCard-Cut.png (stored 0%)
+  adding: CreditCard-Gold.png (deflated 2%)
+  adding: Currency-Dollar.png (deflated 1%)
+  adding: Currency-Dollars.png (deflated 1%)
+  adding: Currency-Stack.png (deflated 2%)
+  adding: Currency-StackCoins.png (deflated 2%)
+  adding: GoldBar-Stack.png (deflated 2%)
+  adding: GoldBar.png (deflated 3%)
+  adding: MoneyBag01.png (stored 0%)
+  adding: MoneyBag02.png (deflated 1%)
+  adding: PercentSign.png (deflated 1%)
+  adding: PiggyBank-Coins.png (deflated 1%)
+  adding: PiggyBank-Currency.png (deflated 1%)
+  adding: PiggyBank01-Broken.png (deflated 1%)
+  adding: PiggyBank02-Broken.png (deflated 1%)
+  adding: Portfolio.png (deflated 1%)
+  adding: PriceTag.png (deflated 4%)
+  adding: Safe-Closed.png (deflated 1%)
+  adding: Safe-Empty.png (deflated 1%)
+  adding: Safe-Full.png (deflated 2%)
+  adding: Seal-Gold.png (deflated 1%)
+  adding: Seal-Red.png (deflated 0%)
+  adding: Seal-Silver.png (deflated 1%)
+  adding: Wallet-Empty.png (stored 0%)
+  adding: Wallet-Full1.png (deflated 2%)
+  adding: Wallet-Full2.png (deflated 2%)
+if [ -f ../../../wntmsci12.pro/bin/gallfinance.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallfinance.zip \
+	    ; fi
+Making:    galleryfinance.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallfinance.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallfinance.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallfinance.dpzz
+cat ../../../wntmsci12.pro/misc/gallfinance.dpzz C:/cygwin/tmp/mky33DNT | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryfinance.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/www-back
+
+Making:    gallerywwwback.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallwwwback.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallwwwback.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallwwwback.dpzz
+cat ../../../wntmsci12.pro/misc/gallwwwback.dpzz C:/cygwin/tmp/mkFZSqLx | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerywwwback.dpz
+Making:    gallwwwback.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallwwwback.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallwwwback.zip not found or empty
+  adding: aqua.jpg (deflated 2%)
+  adding: bathroom.jpg (deflated 4%)
+  adding: blocks.jpg (deflated 2%)
+  adding: blow_green.jpg (deflated 3%)
+  adding: blueblop.jpg (deflated 2%)
+  adding: bulging.jpg (deflated 2%)
+  adding: canvas_blue.jpg (deflated 2%)
+  adding: cheese.jpg (deflated 4%)
+  adding: chocolate.jpg (deflated 2%)
+  adding: citrus.jpg (deflated 2%)
+  adding: confetti.jpg (deflated 1%)
+  adding: daisy.jpg (deflated 1%)
+  adding: fluffy-grey.jpg (deflated 2%)
+  adding: fluffy.jpg (deflated 1%)
+  adding: fuzzy-blue.jpg (deflated 1%)
+  adding: fuzzy-darkgrey.jpg (deflated 2%)
+  adding: fuzzy-grey.jpg (deflated 2%)
+  adding: fuzzy-lightgrey.jpg (deflated 3%)
+  adding: fuzzy_light.jpg (deflated 2%)
+  adding: gregre.gif (stored 0%)
+  adding: grey.gif (deflated 3%)
+  adding: grypaws.gif (deflated 2%)
+  adding: ice-blue.jpg (deflated 2%)
+  adding: ice-light.jpg (deflated 4%)
+  adding: imitation_leather.jpg (deflated 3%)
+  adding: interstices.jpg (deflated 3%)
+  adding: jeans.jpg (deflated 1%)
+  adding: jeansblk.jpg (deflated 2%)
+  adding: lawn-artificial.jpg (deflated 1%)
+  adding: lawn.jpg (deflated 1%)
+  adding: lightblue-wet.jpg (deflated 2%)
+  adding: linen-fine.jpg (deflated 2%)
+  adding: lino-green.jpg (deflated 2%)
+  adding: liquid-blue.jpg (deflated 3%)
+  adding: marble.jpg (deflated 3%)
+  adding: marble_dark.jpg (deflated 2%)
+  adding: mazes.jpg (deflated 4%)
+  adding: mint.gif (stored 0%)
+  adding: notes.gif (stored 0%)
+  adding: pattern.jpg (deflated 1%)
+  adding: pebble-light.jpg (deflated 2%)
+  adding: pink.gif (deflated 3%)
+  adding: pool.jpg (deflated 2%)
+  adding: popcorn.jpg (deflated 1%)
+  adding: purple.jpg (deflated 3%)
+  adding: reddark.jpg (deflated 2%)
+  adding: rings-green.jpg (deflated 2%)
+  adding: rings-orange.jpg (deflated 2%)
+  adding: roses.jpg (deflated 1%)
+  adding: sand-light.jpg (deflated 3%)
+  adding: sand.jpg (deflated 2%)
+  adding: sky.jpg (deflated 6%)
+  adding: soft-structure_grey.jpg (deflated 2%)
+  adding: space.jpg (deflated 5%)
+  adding: stone-dark.jpg (deflated 2%)
+  adding: stone.jpg (deflated 2%)
+  adding: structure.jpg (deflated 3%)
+  adding: structure_darkgreen.gif (stored 0%)
+  adding: structure_green.jpg (deflated 3%)
+  adding: wall-grey.jpg (deflated 2%)
+  adding: wet-turquoise.jpg (deflated 4%)
+  adding: wood.jpg (deflated 1%)
+if [ -f ../../../wntmsci12.pro/bin/gallwwwback.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallwwwback.zip \
+	    ; fi
+Making:    gallerywwwback.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallwwwback.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallwwwback.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallwwwback.dpzz
+cat ../../../wntmsci12.pro/misc/gallwwwback.dpzz C:/cygwin/tmp/mkdT734j | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerywwwback.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/symbols
+
+Making:    symbols.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/symbols.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/symbols.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/symbols.dpzz
+cat ../../wntmsci12.pro/misc/symbols.dpzz C:/cygwin/tmp/mkirZlRG | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/symbols.dpz
+Making:    symbols.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/symbols.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/symbols.zip not found or empty
+  adding: l_2people.bmp (deflated 92%)
+  adding: l_attention1.bmp (deflated 93%)
+  adding: l_attention2.bmp (deflated 91%)
+  adding: l_attention3.bmp (deflated 91%)
+  adding: l_candy.bmp (deflated 89%)
+  adding: l_face.bmp (deflated 88%)
+  adding: l_flower.bmp (deflated 88%)
+  adding: l_ghost.bmp (deflated 91%)
+  adding: l_halloween.bmp (deflated 88%)
+  adding: l_home.bmp (deflated 89%)
+  adding: l_lamp.bmp (deflated 93%)
+  adding: l_lock.bmp (deflated 92%)
+  adding: l_page_b.bmp (deflated 94%)
+  adding: l_page_g.bmp (deflated 94%)
+  adding: l_page_y.bmp (deflated 94%)
+  adding: l_people.bmp (deflated 94%)
+  adding: l_rose.bmp (deflated 90%)
+  adding: l_save.bmp (deflated 91%)
+  adding: l_smiley_1.bmp (deflated 89%)
+  adding: l_smiley_oh.bmp (deflated 88%)
+  adding: l_smiley_sad.bmp (deflated 88%)
+  adding: l_snow.bmp (deflated 90%)
+  adding: l_star.bmp (deflated 86%)
+  adding: s_arrow-1.bmp (deflated 87%)
+  adding: s_arrow-2.bmp (deflated 87%)
+  adding: s_arrow-3.bmp (deflated 87%)
+  adding: s_arrow-4.bmp (deflated 87%)
+  adding: s_attention1.bmp (deflated 87%)
+  adding: s_attention2.bmp (deflated 88%)
+  adding: s_attention3.bmp (deflated 88%)
+  adding: s_ball-b.bmp (deflated 82%)
+  adding: s_ball-g.bmp (deflated 83%)
+  adding: s_ball-r.bmp (deflated 83%)
+  adding: s_ball.bmp (deflated 82%)
+  adding: s_bug.bmp (deflated 83%)
+  adding: s_clover.bmp (deflated 80%)
+  adding: s_egg.bmp (deflated 89%)
+  adding: s_face.bmp (deflated 81%)
+  adding: s_flower.bmp (deflated 61%)
+  adding: s_ghost.bmp (deflated 87%)
+  adding: s_group.bmp (deflated 86%)
+  adding: s_halloween.bmp (deflated 81%)
+  adding: s_heart.bmp (deflated 84%)
+  adding: s_home.bmp (deflated 83%)
+  adding: s_lock.bmp (deflated 83%)
+  adding: s_ok-g.bmp (deflated 88%)
+  adding: s_ok-r.bmp (deflated 88%)
+  adding: s_ok.bmp (deflated 88%)
+  adding: s_page_b.bmp (deflated 88%)
+  adding: s_page_g.bmp (deflated 88%)
+  adding: s_page_y.bmp (deflated 88%)
+  adding: s_pen-b.bmp (deflated 88%)
+  adding: s_pen-g.bmp (deflated 88%)
+  adding: s_pen-r.bmp (deflated 88%)
+  adding: s_people.bmp (deflated 91%)
+  adding: s_smily_1.bmp (deflated 84%)
+  adding: s_smily_oh.bmp (deflated 84%)
+  adding: s_smily_sad.bmp (deflated 84%)
+  adding: s_snow.bmp (deflated 84%)
+  adding: s_star.bmp (deflated 82%)
+  adding: s_team.bmp (deflated 88%)
+  adding: s_x-g.bmp (deflated 84%)
+  adding: s_x-r.bmp (deflated 84%)
+  adding: s_x.bmp (deflated 83%)
+if [ -f ../../wntmsci12.pro/bin/symbols.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/symbols.zip \
+	    ; fi
+Making:    symbols.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/symbols.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/symbols.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/symbols.dpzz
+cat ../../wntmsci12.pro/misc/symbols.dpzz C:/cygwin/tmp/mkqtRlys | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/symbols.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery
+
+Making:    gallerygeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/gallroot.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/gallroot.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/gallroot.dpzz
+cat ../../wntmsci12.pro/misc/gallroot.dpzz C:/cygwin/tmp/mkt48Cni | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/gallerygeneral.dpz
+Making:    gallroot.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/gallroot.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/gallroot.zip not found or empty
+  adding: apples.gif (deflated 2%)
+  adding: bigapple.gif (deflated 0%)
+  adding: flower.gif (deflated 1%)
+  adding: flowers.gif (deflated 3%)
+  adding: sky.gif (deflated 1%)
+if [ -f ../../wntmsci12.pro/bin/gallroot.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/gallroot.zip \
+	    ; fi
+Making:    gallerygeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/gallroot.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/gallroot.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/gallroot.dpzz
+cat ../../wntmsci12.pro/misc/gallroot.dpzz C:/cygwin/tmp/mkPBDobV | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/gallerygeneral.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/bitmap
+
+Making:    templateswizardbitmap.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tplwizbitmap.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz
+cat ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz C:/cygwin/tmp/mkjIRmDq | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templateswizardbitmap.dpz
+Making:    tplwizbitmap.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../wntmsci12.pro/bin/tplwizbitmap.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../wntmsci12.pro/bin/tplwizbitmap.zip not found or empty
+  adding: Import_1.bmp (deflated 82%)
+  adding: Import_3.bmp (deflated 85%)
+  adding: Import_4.bmp (deflated 72%)
+  adding: MS-Import_2-1.bmp (deflated 84%)
+  adding: MS-Import_2-2.bmp (deflated 84%)
+  adding: MS-Import_2-3.bmp (deflated 84%)
+  adding: XML-Import_2-1.bmp (deflated 82%)
+  adding: XML-Import_2-2.bmp (deflated 83%)
+  adding: XML-Import_2-3.bmp (deflated 82%)
+  adding: XML-Import_2-4.bmp (deflated 82%)
+  adding: brasil.gif (deflated 1%)
+  adding: cancel_down.bmp (deflated 62%)
+  adding: cancel_up.bmp (deflated 61%)
+  adding: china.gif (deflated 2%)
+  adding: denmark.gif (deflated 3%)
+  adding: down.bmp (deflated 83%)
+  adding: end.bmp (deflated 87%)
+  adding: euro_1.bmp (deflated 27%)
+  adding: euro_2.bmp (deflated 9%)
+  adding: euro_3.bmp (deflated 33%)
+  adding: finland.gif (deflated 2%)
+  adding: france.gif (deflated 1%)
+  adding: ftpconnected.gif (stored 0%)
+  adding: ftpconnecting.gif (deflated 3%)
+  adding: ftperror.gif (stored 0%)
+  adding: ftpunknown.gif (deflated 11%)
+  adding: germany.wmf (deflated 34%)
+  adding: greece.gif (deflated 3%)
+  adding: italia.gif (deflated 2%)
+  adding: japan.gif (deflated 2%)
+  adding: maximize.bmp (deflated 87%)
+  adding: minimize.bmp (deflated 84%)
+  adding: netherlands.gif (deflated 2%)
+  adding: okay_down.bmp (deflated 66%)
+  adding: okay_up.bmp (deflated 65%)
+  adding: polska.gif (deflated 2%)
+  adding: portugal.gif (deflated 1%)
+  adding: report.bmp (deflated 74%)
+  adding: russia.gif (deflated 3%)
+  adding: spain.gif (deflated 1%)
+  adding: sweden.gif (deflated 1%)
+  adding: taiwan.gif (deflated 0%)
+  adding: turkey.gif (deflated 2%)
+  adding: tutorial_background.gif (stored 0%)
+  adding: up.bmp (deflated 84%)
+  adding: usa.gif (deflated 2%)
+if [ -f ../../../../wntmsci12.pro/bin/tplwizbitmap.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../wntmsci12.pro/bin/tplwizbitmap.zip \
+	    ; fi
+Making:    templateswizardbitmap.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tplwizbitmap.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz
+cat ../../../../wntmsci12.pro/misc/tplwizbitmap.dpzz C:/cygwin/tmp/mk8VZs9V | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templateswizardbitmap.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/desktop/lang
+
+Making:    templateswizarddesktop.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz C:/cygwin/tmp/mkXCyA3h | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizarddesktop.dpz
+Making:    tplwizdesktop_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip not found or empty
+  adding: html.stw (deflated 6%)
+  adding: idxexample.odt (deflated 6%)
+  adding: url_transfer.htm (deflated 65%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip \
+	    ; fi
+Making:    templateswizarddesktop.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizdesktop_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizdesktop_en-US.dpzz C:/cygwin/tmp/mkCw7lfZ | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizarddesktop.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/letter/lang
+
+Making:    templateswizardletter.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter.zip "*/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_en-US.zip "en-US/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_bg.zip "bg/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_cs.zip "cs/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_da.zip "da/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_de.zip "de/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_en-GB.zip "en-GB/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_es.zip "es/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_eu.zip "eu/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_fr.zip "fr/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_hu.zip "hu/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_it.zip "it/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ja.zip "ja/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_km.zip "km/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ko.zip "ko/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_nl.zip "nl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pl.zip "pl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pt.zip "pt/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pt-BR.zip "pt-BR/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ru.zip "ru/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sk.zip "sk/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sl.zip "sl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sv.zip "sv/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_tr.zip "tr/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_vi.zip "vi/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_zh-CN.zip "zh-CN/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_zh-TW.zip "zh-TW/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz C:/cygwin/tmp/mkqfCajM | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardletter.dpz
+Making:    tplwizletter.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter.zip */*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: bg/bus-elegant_l.ott (deflated 6%)
+  adding: bg/bus-modern_l.ott (deflated 6%)
+  adding: bg/bus-office_l.ott (deflated 6%)
+  adding: bg/off-elegant_l.ott (deflated 13%)
+  adding: bg/off-modern_l.ott (deflated 14%)
+  adding: bg/off-office_l.ott (deflated 14%)
+  adding: bg/pri-bottle_l.ott (deflated 2%)
+  adding: bg/pri-mail_l.ott (deflated 5%)
+  adding: bg/pri-marine_l.ott (deflated 6%)
+  adding: bg/pri-redline_l.ott (deflated 9%)
+  adding: cs/bus-elegant_l.ott (deflated 4%)
+  adding: cs/bus-modern_l.ott (deflated 4%)
+  adding: cs/bus-office_l.ott (deflated 4%)
+  adding: cs/off-elegant_l.ott (deflated 8%)
+  adding: cs/off-modern_l.ott (deflated 9%)
+  adding: cs/off-office_l.ott (deflated 8%)
+  adding: cs/pri-bottle_l.ott (deflated 2%)
+  adding: cs/pri-mail_l.ott (deflated 5%)
+  adding: cs/pri-marine_l.ott (deflated 6%)
+  adding: cs/pri-redline_l.ott (deflated 10%)
+  adding: da/bus-elegant_l.ott (deflated 4%)
+  adding: da/bus-modern_l.ott (deflated 4%)
+  adding: da/bus-office_l.ott (deflated 4%)
+  adding: da/off-elegant_l.ott (deflated 9%)
+  adding: da/off-modern_l.ott (deflated 9%)
+  adding: da/off-office_l.ott (deflated 9%)
+  adding: da/pri-bottle_l.ott (deflated 1%)
+  adding: da/pri-mail_l.ott (deflated 3%)
+  adding: da/pri-marine_l.ott (deflated 3%)
+  adding: da/pri-redline_l.ott (deflated 5%)
+  adding: de/bus-elegant_l.ott (deflated 5%)
+  adding: de/bus-modern_l.ott (deflated 5%)
+  adding: de/bus-office_l.ott (deflated 5%)
+  adding: de/off-elegant_l.ott (deflated 9%)
+  adding: de/off-modern_l.ott (deflated 9%)
+  adding: de/off-office_l.ott (deflated 9%)
+  adding: de/pri-bottle_l.ott (deflated 2%)
+  adding: de/pri-mail_l.ott (deflated 5%)
+  adding: de/pri-marine_l.ott (deflated 6%)
+  adding: de/pri-redline_l.ott (deflated 9%)
+  adding: en-GB/bus-elegant_l.ott (deflated 4%)
+  adding: en-GB/bus-modern_l.ott (deflated 4%)
+  adding: en-GB/bus-office_l.ott (deflated 4%)
+  adding: en-GB/off-elegant_l.ott (deflated 9%)
+  adding: en-GB/off-modern_l.ott (deflated 9%)
+  adding: en-GB/off-office_l.ott (deflated 9%)
+  adding: en-GB/pri-bottle_l.ott (deflated 2%)
+  adding: en-GB/pri-mail_l.ott (deflated 5%)
+  adding: en-GB/pri-marine_l.ott (deflated 6%)
+  adding: en-GB/pri-redline_l.ott (deflated 10%)
+  adding: en-US/bus-elegant_l.ott (deflated 4%)
+  adding: en-US/bus-modern_l.ott (deflated 4%)
+  adding: en-US/bus-office_l.ott (deflated 4%)
+  adding: en-US/off-elegant_l.ott (deflated 9%)
+  adding: en-US/off-modern_l.ott (deflated 9%)
+  adding: en-US/off-office_l.ott (deflated 9%)
+  adding: en-US/pri-bottle_l.ott (deflated 2%)
+  adding: en-US/pri-mail_l.ott (deflated 5%)
+  adding: en-US/pri-marine_l.ott (deflated 6%)
+  adding: en-US/pri-redline_l.ott (deflated 9%)
+  adding: es/bus-elegant_l.ott (deflated 4%)
+  adding: es/bus-modern_l.ott (deflated 4%)
+  adding: es/bus-office_l.ott (deflated 4%)
+  adding: es/off-elegant_l.ott (deflated 9%)
+  adding: es/off-modern_l.ott (deflated 9%)
+  adding: es/off-office_l.ott (deflated 9%)
+  adding: es/pri-bottle_l.ott (deflated 2%)
+  adding: es/pri-mail_l.ott (deflated 5%)
+  adding: es/pri-marine_l.ott (deflated 6%)
+  adding: es/pri-redline_l.ott (deflated 9%)
+  adding: eu/bus-elegant_l.ott (deflated 6%)
+  adding: eu/bus-modern_l.ott (deflated 6%)
+  adding: eu/bus-office_l.ott (deflated 6%)
+  adding: eu/off-elegant_l.ott (deflated 13%)
+  adding: eu/off-modern_l.ott (deflated 13%)
+  adding: eu/off-office_l.ott (deflated 13%)
+  adding: eu/pri-bottle_l.ott (deflated 4%)
+  adding: eu/pri-mail_l.ott (deflated 8%)
+  adding: eu/pri-marine_l.ott (deflated 10%)
+  adding: eu/pri-redline_l.ott (deflated 14%)
+  adding: fr/bus-elegant_l.ott (deflated 4%)
+  adding: fr/bus-modern_l.ott (deflated 4%)
+  adding: fr/bus-office_l.ott (deflated 4%)
+  adding: fr/off-elegant_l.ott (deflated 9%)
+  adding: fr/off-modern_l.ott (deflated 9%)
+  adding: fr/off-office_l.ott (deflated 9%)
+  adding: fr/pri-bottle_l.ott (deflated 2%)
+  adding: fr/pri-mail_l.ott (deflated 5%)
+  adding: fr/pri-marine_l.ott (deflated 6%)
+  adding: fr/pri-redline_l.ott (deflated 9%)
+  adding: hu/bus-elegant_l.ott (deflated 5%)
+  adding: hu/bus-modern_l.ott (deflated 5%)
+  adding: hu/bus-office_l.ott (deflated 5%)
+  adding: hu/off-elegant_l.ott (deflated 8%)
+  adding: hu/off-modern_l.ott (deflated 8%)
+  adding: hu/off-office_l.ott (deflated 8%)
+  adding: hu/pri-bottle_l.ott (deflated 2%)
+  adding: hu/pri-mail_l.ott (deflated 5%)
+  adding: hu/pri-marine_l.ott (deflated 6%)
+  adding: hu/pri-redline_l.ott (deflated 9%)
+  adding: it/bus-elegant_l.ott (deflated 4%)
+  adding: it/bus-modern_l.ott (deflated 4%)
+  adding: it/bus-office_l.ott (deflated 4%)
+  adding: it/off-elegant_l.ott (deflated 9%)
+  adding: it/off-modern_l.ott (deflated 9%)
+  adding: it/off-office_l.ott (deflated 9%)
+  adding: it/pri-bottle_l.ott (deflated 2%)
+  adding: it/pri-mail_l.ott (deflated 5%)
+  adding: it/pri-marine_l.ott (deflated 6%)
+  adding: it/pri-redline_l.ott (deflated 10%)
+  adding: ja/bus-elegant_l.ott (deflated 2%)
+  adding: ja/bus-modern_l.ott (deflated 2%)
+  adding: ja/bus-office_l.ott (deflated 2%)
+  adding: ja/off-elegant_l.ott (deflated 5%)
+  adding: ja/off-modern_l.ott (deflated 5%)
+  adding: ja/off-office_l.ott (deflated 5%)
+  adding: ja/pri-bottle_l.ott (deflated 2%)
+  adding: ja/pri-mail_l.ott (deflated 5%)
+  adding: ja/pri-marine_l.ott (deflated 6%)
+  adding: ja/pri-redline_l.ott (deflated 9%)
+  adding: km/bus-elegant_l.ott (deflated 4%)
+  adding: km/bus-modern_l.ott (deflated 3%)
+  adding: km/bus-office_l.ott (deflated 4%)
+  adding: km/off-elegant_l.ott (deflated 8%)
+  adding: km/off-modern_l.ott (deflated 8%)
+  adding: km/off-office_l.ott (deflated 8%)
+  adding: km/pri-bottle_l.ott (deflated 2%)
+  adding: km/pri-mail_l.ott (deflated 5%)
+  adding: km/pri-marine_l.ott (deflated 6%)
+  adding: km/pri-redline_l.ott (deflated 9%)
+  adding: ko/bus-elegant_l.ott (deflated 2%)
+  adding: ko/bus-modern_l.ott (deflated 2%)
+  adding: ko/bus-office_l.ott (deflated 2%)
+  adding: ko/off-elegant_l.ott (deflated 5%)
+  adding: ko/off-modern_l.ott (deflated 5%)
+  adding: ko/off-office_l.ott (deflated 5%)
+  adding: ko/pri-bottle_l.ott (deflated 2%)
+  adding: ko/pri-mail_l.ott (deflated 5%)
+  adding: ko/pri-marine_l.ott (deflated 6%)
+  adding: ko/pri-redline_l.ott (deflated 9%)
+  adding: nl/bus-elegant_l.ott (deflated 4%)
+  adding: nl/bus-modern_l.ott (deflated 4%)
+  adding: nl/bus-office_l.ott (deflated 4%)
+  adding: nl/off-elegant_l.ott (deflated 9%)
+  adding: nl/off-modern_l.ott (deflated 9%)
+  adding: nl/off-office_l.ott (deflated 9%)
+  adding: nl/pri-bottle_l.ott (deflated 2%)
+  adding: nl/pri-mail_l.ott (deflated 5%)
+  adding: nl/pri-marine_l.ott (deflated 6%)
+  adding: nl/pri-redline_l.ott (deflated 10%)
+  adding: pl/bus-elegant_l.ott (deflated 4%)
+  adding: pl/bus-modern_l.ott (deflated 4%)
+  adding: pl/bus-office_l.ott (deflated 4%)
+  adding: pl/off-elegant_l.ott (deflated 9%)
+  adding: pl/off-modern_l.ott (deflated 9%)
+  adding: pl/off-office_l.ott (deflated 9%)
+  adding: pl/pri-bottle_l.ott (deflated 2%)
+  adding: pl/pri-mail_l.ott (deflated 5%)
+  adding: pl/pri-marine_l.ott (deflated 6%)
+  adding: pl/pri-redline_l.ott (deflated 9%)
+  adding: pt-BR/bus-elegant_l.ott (deflated 2%)
+  adding: pt-BR/bus-modern_l.ott (deflated 2%)
+  adding: pt-BR/bus-office_l.ott (deflated 2%)
+  adding: pt-BR/off-elegant_l.ott (deflated 5%)
+  adding: pt-BR/off-modern_l.ott (deflated 5%)
+  adding: pt-BR/off-office_l.ott (deflated 5%)
+  adding: pt-BR/pri-bottle_l.ott (deflated 2%)
+  adding: pt-BR/pri-mail_l.ott (deflated 5%)
+  adding: pt-BR/pri-marine_l.ott (deflated 6%)
+  adding: pt-BR/pri-redline_l.ott (deflated 9%)
+  adding: pt/bus-elegant_l.ott (deflated 4%)
+  adding: pt/bus-modern_l.ott (deflated 4%)
+  adding: pt/bus-office_l.ott (deflated 4%)
+  adding: pt/off-elegant_l.ott (deflated 9%)
+  adding: pt/off-modern_l.ott (deflated 9%)
+  adding: pt/off-office_l.ott (deflated 9%)
+  adding: pt/pri-bottle_l.ott (deflated 4%)
+  adding: pt/pri-mail_l.ott (deflated 8%)
+  adding: pt/pri-marine_l.ott (deflated 9%)
+  adding: pt/pri-redline_l.ott (deflated 14%)
+  adding: ru/bus-elegant_l.ott (deflated 4%)
+  adding: ru/bus-modern_l.ott (deflated 4%)
+  adding: ru/bus-office_l.ott (deflated 4%)
+  adding: ru/off-elegant_l.ott (deflated 9%)
+  adding: ru/off-modern_l.ott (deflated 9%)
+  adding: ru/off-office_l.ott (deflated 9%)
+  adding: ru/pri-bottle_l.ott (deflated 2%)
+  adding: ru/pri-mail_l.ott (deflated 5%)
+  adding: ru/pri-marine_l.ott (deflated 6%)
+  adding: ru/pri-redline_l.ott (deflated 10%)
+  adding: sk/bus-elegant_l.ott (deflated 4%)
+  adding: sk/bus-modern_l.ott (deflated 4%)
+  adding: sk/bus-office_l.ott (deflated 4%)
+  adding: sk/off-elegant_l.ott (deflated 8%)
+  adding: sk/off-modern_l.ott (deflated 9%)
+  adding: sk/off-office_l.ott (deflated 9%)
+  adding: sk/pri-bottle_l.ott (deflated 2%)
+  adding: sk/pri-mail_l.ott (deflated 5%)
+  adding: sk/pri-marine_l.ott (deflated 6%)
+  adding: sk/pri-redline_l.ott (deflated 9%)
+  adding: sl/bus-elegant_l.ott (deflated 6%)
+  adding: sl/bus-modern_l.ott (deflated 6%)
+  adding: sl/bus-office_l.ott (deflated 6%)
+  adding: sl/off-elegant_l.ott (deflated 9%)
+  adding: sl/off-modern_l.ott (deflated 9%)
+  adding: sl/off-office_l.ott (deflated 9%)
+  adding: sl/pri-bottle_l.ott (deflated 2%)
+  adding: sl/pri-mail_l.ott (deflated 5%)
+  adding: sl/pri-marine_l.ott (deflated 6%)
+  adding: sl/pri-redline_l.ott (deflated 9%)
+  adding: sv/bus-elegant_l.ott (deflated 4%)
+  adding: sv/bus-modern_l.ott (deflated 4%)
+  adding: sv/bus-office_l.ott (deflated 4%)
+  adding: sv/off-elegant_l.ott (deflated 9%)
+  adding: sv/off-modern_l.ott (deflated 9%)
+  adding: sv/off-office_l.ott (deflated 9%)
+  adding: sv/pri-bottle_l.ott (deflated 2%)
+  adding: sv/pri-mail_l.ott (deflated 5%)
+  adding: sv/pri-marine_l.ott (deflated 6%)
+  adding: sv/pri-redline_l.ott (deflated 9%)
+  adding: tr/bus-elegant_l.ott (deflated 4%)
+  adding: tr/bus-modern_l.ott (deflated 4%)
+  adding: tr/bus-office_l.ott (deflated 4%)
+  adding: tr/off-elegant_l.ott (deflated 8%)
+  adding: tr/off-modern_l.ott (deflated 9%)
+  adding: tr/off-office_l.ott (deflated 9%)
+  adding: tr/pri-bottle_l.ott (deflated 2%)
+  adding: tr/pri-mail_l.ott (deflated 5%)
+  adding: tr/pri-marine_l.ott (deflated 6%)
+  adding: tr/pri-redline_l.ott (deflated 10%)
+  adding: vi/bus-elegant_l.ott (deflated 6%)
+  adding: vi/bus-modern_l.ott (deflated 6%)
+  adding: vi/bus-office_l.ott (deflated 6%)
+  adding: vi/off-elegant_l.ott (deflated 14%)
+  adding: vi/off-modern_l.ott (deflated 14%)
+  adding: vi/off-office_l.ott (deflated 14%)
+  adding: vi/pri-bottle_l.ott (deflated 4%)
+  adding: vi/pri-mail_l.ott (deflated 8%)
+  adding: vi/pri-marine_l.ott (deflated 10%)
+  adding: vi/pri-redline_l.ott (deflated 15%)
+  adding: zh-CN/bus-elegant_l.ott (deflated 2%)
+  adding: zh-CN/bus-modern_l.ott (deflated 2%)
+  adding: zh-CN/bus-office_l.ott (deflated 2%)
+  adding: zh-CN/off-elegant_l.ott (deflated 5%)
+  adding: zh-CN/off-modern_l.ott (deflated 5%)
+  adding: zh-CN/off-office_l.ott (deflated 5%)
+  adding: zh-CN/pri-bottle_l.ott (deflated 2%)
+  adding: zh-CN/pri-mail_l.ott (deflated 5%)
+  adding: zh-CN/pri-marine_l.ott (deflated 6%)
+  adding: zh-CN/pri-redline_l.ott (deflated 9%)
+  adding: zh-TW/bus-elegant_l.ott (deflated 2%)
+  adding: zh-TW/bus-modern_l.ott (deflated 2%)
+  adding: zh-TW/bus-office_l.ott (deflated 2%)
+  adding: zh-TW/off-elegant_l.ott (deflated 5%)
+  adding: zh-TW/off-modern_l.ott (deflated 5%)
+  adding: zh-TW/off-office_l.ott (deflated 5%)
+  adding: zh-TW/pri-bottle_l.ott (deflated 2%)
+  adding: zh-TW/pri-mail_l.ott (deflated 5%)
+  adding: zh-TW/pri-marine_l.ott (deflated 6%)
+  adding: zh-TW/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter.zip \
+	    ; fi
+Making:    tplwizletter_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_en-US.zip en-US/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: en-US/bus-elegant_l.ott (deflated 4%)
+  adding: en-US/bus-modern_l.ott (deflated 4%)
+  adding: en-US/bus-office_l.ott (deflated 4%)
+  adding: en-US/off-elegant_l.ott (deflated 9%)
+  adding: en-US/off-modern_l.ott (deflated 9%)
+  adding: en-US/off-office_l.ott (deflated 9%)
+  adding: en-US/pri-bottle_l.ott (deflated 2%)
+  adding: en-US/pri-mail_l.ott (deflated 5%)
+  adding: en-US/pri-marine_l.ott (deflated 6%)
+  adding: en-US/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_en-US.zip \
+	    ; fi
+Making:    tplwizletter_bg.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_bg.zip bg/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: bg/bus-elegant_l.ott (deflated 6%)
+  adding: bg/bus-modern_l.ott (deflated 6%)
+  adding: bg/bus-office_l.ott (deflated 6%)
+  adding: bg/off-elegant_l.ott (deflated 13%)
+  adding: bg/off-modern_l.ott (deflated 14%)
+  adding: bg/off-office_l.ott (deflated 14%)
+  adding: bg/pri-bottle_l.ott (deflated 2%)
+  adding: bg/pri-mail_l.ott (deflated 5%)
+  adding: bg/pri-marine_l.ott (deflated 6%)
+  adding: bg/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_bg.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_bg.zip \
+	    ; fi
+Making:    tplwizletter_cs.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_cs.zip cs/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: cs/bus-elegant_l.ott (deflated 4%)
+  adding: cs/bus-modern_l.ott (deflated 4%)
+  adding: cs/bus-office_l.ott (deflated 4%)
+  adding: cs/off-elegant_l.ott (deflated 8%)
+  adding: cs/off-modern_l.ott (deflated 9%)
+  adding: cs/off-office_l.ott (deflated 8%)
+  adding: cs/pri-bottle_l.ott (deflated 2%)
+  adding: cs/pri-mail_l.ott (deflated 5%)
+  adding: cs/pri-marine_l.ott (deflated 6%)
+  adding: cs/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_cs.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_cs.zip \
+	    ; fi
+Making:    tplwizletter_da.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_da.zip da/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: da/bus-elegant_l.ott (deflated 4%)
+  adding: da/bus-modern_l.ott (deflated 4%)
+  adding: da/bus-office_l.ott (deflated 4%)
+  adding: da/off-elegant_l.ott (deflated 9%)
+  adding: da/off-modern_l.ott (deflated 9%)
+  adding: da/off-office_l.ott (deflated 9%)
+  adding: da/pri-bottle_l.ott (deflated 1%)
+  adding: da/pri-mail_l.ott (deflated 3%)
+  adding: da/pri-marine_l.ott (deflated 3%)
+  adding: da/pri-redline_l.ott (deflated 5%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_da.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_da.zip \
+	    ; fi
+Making:    tplwizletter_de.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_de.zip de/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: de/bus-elegant_l.ott (deflated 5%)
+  adding: de/bus-modern_l.ott (deflated 5%)
+  adding: de/bus-office_l.ott (deflated 5%)
+  adding: de/off-elegant_l.ott (deflated 9%)
+  adding: de/off-modern_l.ott (deflated 9%)
+  adding: de/off-office_l.ott (deflated 9%)
+  adding: de/pri-bottle_l.ott (deflated 2%)
+  adding: de/pri-mail_l.ott (deflated 5%)
+  adding: de/pri-marine_l.ott (deflated 6%)
+  adding: de/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_de.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_de.zip \
+	    ; fi
+Making:    tplwizletter_en-GB.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_en-GB.zip en-GB/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: en-GB/bus-elegant_l.ott (deflated 4%)
+  adding: en-GB/bus-modern_l.ott (deflated 4%)
+  adding: en-GB/bus-office_l.ott (deflated 4%)
+  adding: en-GB/off-elegant_l.ott (deflated 9%)
+  adding: en-GB/off-modern_l.ott (deflated 9%)
+  adding: en-GB/off-office_l.ott (deflated 9%)
+  adding: en-GB/pri-bottle_l.ott (deflated 2%)
+  adding: en-GB/pri-mail_l.ott (deflated 5%)
+  adding: en-GB/pri-marine_l.ott (deflated 6%)
+  adding: en-GB/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_en-GB.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_en-GB.zip \
+	    ; fi
+Making:    tplwizletter_es.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_es.zip es/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: es/bus-elegant_l.ott (deflated 4%)
+  adding: es/bus-modern_l.ott (deflated 4%)
+  adding: es/bus-office_l.ott (deflated 4%)
+  adding: es/off-elegant_l.ott (deflated 9%)
+  adding: es/off-modern_l.ott (deflated 9%)
+  adding: es/off-office_l.ott (deflated 9%)
+  adding: es/pri-bottle_l.ott (deflated 2%)
+  adding: es/pri-mail_l.ott (deflated 5%)
+  adding: es/pri-marine_l.ott (deflated 6%)
+  adding: es/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_es.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_es.zip \
+	    ; fi
+Making:    tplwizletter_eu.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_eu.zip eu/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: eu/bus-elegant_l.ott (deflated 6%)
+  adding: eu/bus-modern_l.ott (deflated 6%)
+  adding: eu/bus-office_l.ott (deflated 6%)
+  adding: eu/off-elegant_l.ott (deflated 13%)
+  adding: eu/off-modern_l.ott (deflated 13%)
+  adding: eu/off-office_l.ott (deflated 13%)
+  adding: eu/pri-bottle_l.ott (deflated 4%)
+  adding: eu/pri-mail_l.ott (deflated 8%)
+  adding: eu/pri-marine_l.ott (deflated 10%)
+  adding: eu/pri-redline_l.ott (deflated 14%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_eu.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_eu.zip \
+	    ; fi
+Making:    tplwizletter_fr.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_fr.zip fr/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: fr/bus-elegant_l.ott (deflated 4%)
+  adding: fr/bus-modern_l.ott (deflated 4%)
+  adding: fr/bus-office_l.ott (deflated 4%)
+  adding: fr/off-elegant_l.ott (deflated 9%)
+  adding: fr/off-modern_l.ott (deflated 9%)
+  adding: fr/off-office_l.ott (deflated 9%)
+  adding: fr/pri-bottle_l.ott (deflated 2%)
+  adding: fr/pri-mail_l.ott (deflated 5%)
+  adding: fr/pri-marine_l.ott (deflated 6%)
+  adding: fr/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_fr.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_fr.zip \
+	    ; fi
+Making:    tplwizletter_hu.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_hu.zip hu/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: hu/bus-elegant_l.ott (deflated 5%)
+  adding: hu/bus-modern_l.ott (deflated 5%)
+  adding: hu/bus-office_l.ott (deflated 5%)
+  adding: hu/off-elegant_l.ott (deflated 8%)
+  adding: hu/off-modern_l.ott (deflated 8%)
+  adding: hu/off-office_l.ott (deflated 8%)
+  adding: hu/pri-bottle_l.ott (deflated 2%)
+  adding: hu/pri-mail_l.ott (deflated 5%)
+  adding: hu/pri-marine_l.ott (deflated 6%)
+  adding: hu/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_hu.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_hu.zip \
+	    ; fi
+Making:    tplwizletter_it.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_it.zip it/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: it/bus-elegant_l.ott (deflated 4%)
+  adding: it/bus-modern_l.ott (deflated 4%)
+  adding: it/bus-office_l.ott (deflated 4%)
+  adding: it/off-elegant_l.ott (deflated 9%)
+  adding: it/off-modern_l.ott (deflated 9%)
+  adding: it/off-office_l.ott (deflated 9%)
+  adding: it/pri-bottle_l.ott (deflated 2%)
+  adding: it/pri-mail_l.ott (deflated 5%)
+  adding: it/pri-marine_l.ott (deflated 6%)
+  adding: it/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_it.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_it.zip \
+	    ; fi
+Making:    tplwizletter_ja.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_ja.zip ja/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: ja/bus-elegant_l.ott (deflated 2%)
+  adding: ja/bus-modern_l.ott (deflated 2%)
+  adding: ja/bus-office_l.ott (deflated 2%)
+  adding: ja/off-elegant_l.ott (deflated 5%)
+  adding: ja/off-modern_l.ott (deflated 5%)
+  adding: ja/off-office_l.ott (deflated 5%)
+  adding: ja/pri-bottle_l.ott (deflated 2%)
+  adding: ja/pri-mail_l.ott (deflated 5%)
+  adding: ja/pri-marine_l.ott (deflated 6%)
+  adding: ja/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_ja.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_ja.zip \
+	    ; fi
+Making:    tplwizletter_km.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_km.zip km/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: km/bus-elegant_l.ott (deflated 4%)
+  adding: km/bus-modern_l.ott (deflated 3%)
+  adding: km/bus-office_l.ott (deflated 4%)
+  adding: km/off-elegant_l.ott (deflated 8%)
+  adding: km/off-modern_l.ott (deflated 8%)
+  adding: km/off-office_l.ott (deflated 8%)
+  adding: km/pri-bottle_l.ott (deflated 2%)
+  adding: km/pri-mail_l.ott (deflated 5%)
+  adding: km/pri-marine_l.ott (deflated 6%)
+  adding: km/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_km.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_km.zip \
+	    ; fi
+Making:    tplwizletter_ko.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_ko.zip ko/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: ko/bus-elegant_l.ott (deflated 2%)
+  adding: ko/bus-modern_l.ott (deflated 2%)
+  adding: ko/bus-office_l.ott (deflated 2%)
+  adding: ko/off-elegant_l.ott (deflated 5%)
+  adding: ko/off-modern_l.ott (deflated 5%)
+  adding: ko/off-office_l.ott (deflated 5%)
+  adding: ko/pri-bottle_l.ott (deflated 2%)
+  adding: ko/pri-mail_l.ott (deflated 5%)
+  adding: ko/pri-marine_l.ott (deflated 6%)
+  adding: ko/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_ko.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_ko.zip \
+	    ; fi
+Making:    tplwizletter_nl.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_nl.zip nl/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: nl/bus-elegant_l.ott (deflated 4%)
+  adding: nl/bus-modern_l.ott (deflated 4%)
+  adding: nl/bus-office_l.ott (deflated 4%)
+  adding: nl/off-elegant_l.ott (deflated 9%)
+  adding: nl/off-modern_l.ott (deflated 9%)
+  adding: nl/off-office_l.ott (deflated 9%)
+  adding: nl/pri-bottle_l.ott (deflated 2%)
+  adding: nl/pri-mail_l.ott (deflated 5%)
+  adding: nl/pri-marine_l.ott (deflated 6%)
+  adding: nl/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_nl.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_nl.zip \
+	    ; fi
+Making:    tplwizletter_pl.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_pl.zip pl/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: pl/bus-elegant_l.ott (deflated 4%)
+  adding: pl/bus-modern_l.ott (deflated 4%)
+  adding: pl/bus-office_l.ott (deflated 4%)
+  adding: pl/off-elegant_l.ott (deflated 9%)
+  adding: pl/off-modern_l.ott (deflated 9%)
+  adding: pl/off-office_l.ott (deflated 9%)
+  adding: pl/pri-bottle_l.ott (deflated 2%)
+  adding: pl/pri-mail_l.ott (deflated 5%)
+  adding: pl/pri-marine_l.ott (deflated 6%)
+  adding: pl/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_pl.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_pl.zip \
+	    ; fi
+Making:    tplwizletter_pt.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_pt.zip pt/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: pt/bus-elegant_l.ott (deflated 4%)
+  adding: pt/bus-modern_l.ott (deflated 4%)
+  adding: pt/bus-office_l.ott (deflated 4%)
+  adding: pt/off-elegant_l.ott (deflated 9%)
+  adding: pt/off-modern_l.ott (deflated 9%)
+  adding: pt/off-office_l.ott (deflated 9%)
+  adding: pt/pri-bottle_l.ott (deflated 4%)
+  adding: pt/pri-mail_l.ott (deflated 8%)
+  adding: pt/pri-marine_l.ott (deflated 9%)
+  adding: pt/pri-redline_l.ott (deflated 14%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_pt.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_pt.zip \
+	    ; fi
+Making:    tplwizletter_pt-BR.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_pt-BR.zip pt-BR/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: pt-BR/bus-elegant_l.ott (deflated 2%)
+  adding: pt-BR/bus-modern_l.ott (deflated 2%)
+  adding: pt-BR/bus-office_l.ott (deflated 2%)
+  adding: pt-BR/off-elegant_l.ott (deflated 5%)
+  adding: pt-BR/off-modern_l.ott (deflated 5%)
+  adding: pt-BR/off-office_l.ott (deflated 5%)
+  adding: pt-BR/pri-bottle_l.ott (deflated 2%)
+  adding: pt-BR/pri-mail_l.ott (deflated 5%)
+  adding: pt-BR/pri-marine_l.ott (deflated 6%)
+  adding: pt-BR/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_pt-BR.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_pt-BR.zip \
+	    ; fi
+Making:    tplwizletter_ru.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_ru.zip ru/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: ru/bus-elegant_l.ott (deflated 4%)
+  adding: ru/bus-modern_l.ott (deflated 4%)
+  adding: ru/bus-office_l.ott (deflated 4%)
+  adding: ru/off-elegant_l.ott (deflated 9%)
+  adding: ru/off-modern_l.ott (deflated 9%)
+  adding: ru/off-office_l.ott (deflated 9%)
+  adding: ru/pri-bottle_l.ott (deflated 2%)
+  adding: ru/pri-mail_l.ott (deflated 5%)
+  adding: ru/pri-marine_l.ott (deflated 6%)
+  adding: ru/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_ru.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_ru.zip \
+	    ; fi
+Making:    tplwizletter_sk.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_sk.zip sk/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: sk/bus-elegant_l.ott (deflated 4%)
+  adding: sk/bus-modern_l.ott (deflated 4%)
+  adding: sk/bus-office_l.ott (deflated 4%)
+  adding: sk/off-elegant_l.ott (deflated 8%)
+  adding: sk/off-modern_l.ott (deflated 9%)
+  adding: sk/off-office_l.ott (deflated 9%)
+  adding: sk/pri-bottle_l.ott (deflated 2%)
+  adding: sk/pri-mail_l.ott (deflated 5%)
+  adding: sk/pri-marine_l.ott (deflated 6%)
+  adding: sk/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_sk.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_sk.zip \
+	    ; fi
+Making:    tplwizletter_sl.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_sl.zip sl/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: sl/bus-elegant_l.ott (deflated 6%)
+  adding: sl/bus-modern_l.ott (deflated 6%)
+  adding: sl/bus-office_l.ott (deflated 6%)
+  adding: sl/off-elegant_l.ott (deflated 9%)
+  adding: sl/off-modern_l.ott (deflated 9%)
+  adding: sl/off-office_l.ott (deflated 9%)
+  adding: sl/pri-bottle_l.ott (deflated 2%)
+  adding: sl/pri-mail_l.ott (deflated 5%)
+  adding: sl/pri-marine_l.ott (deflated 6%)
+  adding: sl/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_sl.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_sl.zip \
+	    ; fi
+Making:    tplwizletter_sv.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_sv.zip sv/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: sv/bus-elegant_l.ott (deflated 4%)
+  adding: sv/bus-modern_l.ott (deflated 4%)
+  adding: sv/bus-office_l.ott (deflated 4%)
+  adding: sv/off-elegant_l.ott (deflated 9%)
+  adding: sv/off-modern_l.ott (deflated 9%)
+  adding: sv/off-office_l.ott (deflated 9%)
+  adding: sv/pri-bottle_l.ott (deflated 2%)
+  adding: sv/pri-mail_l.ott (deflated 5%)
+  adding: sv/pri-marine_l.ott (deflated 6%)
+  adding: sv/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_sv.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_sv.zip \
+	    ; fi
+Making:    tplwizletter_tr.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_tr.zip tr/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: tr/bus-elegant_l.ott (deflated 4%)
+  adding: tr/bus-modern_l.ott (deflated 4%)
+  adding: tr/bus-office_l.ott (deflated 4%)
+  adding: tr/off-elegant_l.ott (deflated 8%)
+  adding: tr/off-modern_l.ott (deflated 9%)
+  adding: tr/off-office_l.ott (deflated 9%)
+  adding: tr/pri-bottle_l.ott (deflated 2%)
+  adding: tr/pri-mail_l.ott (deflated 5%)
+  adding: tr/pri-marine_l.ott (deflated 6%)
+  adding: tr/pri-redline_l.ott (deflated 10%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_tr.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_tr.zip \
+	    ; fi
+Making:    tplwizletter_vi.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_vi.zip vi/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: vi/bus-elegant_l.ott (deflated 6%)
+  adding: vi/bus-modern_l.ott (deflated 6%)
+  adding: vi/bus-office_l.ott (deflated 6%)
+  adding: vi/off-elegant_l.ott (deflated 14%)
+  adding: vi/off-modern_l.ott (deflated 14%)
+  adding: vi/off-office_l.ott (deflated 14%)
+  adding: vi/pri-bottle_l.ott (deflated 4%)
+  adding: vi/pri-mail_l.ott (deflated 8%)
+  adding: vi/pri-marine_l.ott (deflated 10%)
+  adding: vi/pri-redline_l.ott (deflated 15%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_vi.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_vi.zip \
+	    ; fi
+Making:    tplwizletter_zh-CN.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_zh-CN.zip zh-CN/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: zh-CN/bus-elegant_l.ott (deflated 2%)
+  adding: zh-CN/bus-modern_l.ott (deflated 2%)
+  adding: zh-CN/bus-office_l.ott (deflated 2%)
+  adding: zh-CN/off-elegant_l.ott (deflated 5%)
+  adding: zh-CN/off-modern_l.ott (deflated 5%)
+  adding: zh-CN/off-office_l.ott (deflated 5%)
+  adding: zh-CN/pri-bottle_l.ott (deflated 2%)
+  adding: zh-CN/pri-mail_l.ott (deflated 5%)
+  adding: zh-CN/pri-marine_l.ott (deflated 6%)
+  adding: zh-CN/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_zh-CN.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_zh-CN.zip \
+	    ; fi
+Making:    tplwizletter_zh-TW.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../../../../wntmsci12.pro/bin/tplwizletter_zh-TW.zip zh-TW/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: zh-TW/bus-elegant_l.ott (deflated 2%)
+  adding: zh-TW/bus-modern_l.ott (deflated 2%)
+  adding: zh-TW/bus-office_l.ott (deflated 2%)
+  adding: zh-TW/off-elegant_l.ott (deflated 5%)
+  adding: zh-TW/off-modern_l.ott (deflated 5%)
+  adding: zh-TW/off-office_l.ott (deflated 5%)
+  adding: zh-TW/pri-bottle_l.ott (deflated 2%)
+  adding: zh-TW/pri-mail_l.ott (deflated 5%)
+  adding: zh-TW/pri-marine_l.ott (deflated 6%)
+  adding: zh-TW/pri-redline_l.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizletter_zh-TW.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizletter_zh-TW.zip \
+	    ; fi
+Making:    templateswizardletter.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter.zip "*/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_en-US.zip "en-US/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_bg.zip "bg/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_cs.zip "cs/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_da.zip "da/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_de.zip "de/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_en-GB.zip "en-GB/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_es.zip "es/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_eu.zip "eu/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_fr.zip "fr/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_hu.zip "hu/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_it.zip "it/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ja.zip "ja/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_km.zip "km/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ko.zip "ko/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_nl.zip "nl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pl.zip "pl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pt.zip "pt/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_pt-BR.zip "pt-BR/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_ru.zip "ru/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sk.zip "sk/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sl.zip "sl/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_sv.zip "sv/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_tr.zip "tr/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_vi.zip "vi/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_zh-CN.zip "zh-CN/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz
+
+zipdep.pl  ../../../../../wntmsci12.pro/bin/tplwizletter_zh-TW.zip "zh-TW/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizletter.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-US.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_bg.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_cs.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_da.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_de.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_en-GB.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_es.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_eu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_fr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_hu.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_it.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ja.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_km.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ko.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_nl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_pt-BR.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_ru.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sk.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sl.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_sv.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_tr.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_vi.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-CN.dpzz ../../../../../wntmsci12.pro/misc/tplwizletter_zh-TW.dpzz C:/cygwin/tmp/mkc2aBT2 | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardletter.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/wordbook
+
+Making:    wordbookall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/wordbook.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/wordbook.zip "business.dic" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/wordbook.dpzz
+cat ../../wntmsci12.pro/misc/wordbook.dpzz C:/cygwin/tmp/mk8jXgmu | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/wordbookall.dpz
+Making:    wordbook.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/wordbook.zip business.dic -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/wordbook.zip not found or empty
+  adding: business.dic (deflated 31%)
+if [ -f ../../wntmsci12.pro/bin/wordbook.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/wordbook.zip \
+	    ; fi
+Making:    wordbookall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/wordbook.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/wordbook.zip "business.dic" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/wordbook.dpzz
+cat ../../wntmsci12.pro/misc/wordbook.dpzz C:/cygwin/tmp/mkPT9f4i | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/wordbookall.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/diagrams
+
+Making:    gallerydiagrams.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galldiagrams.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galldiagrams.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galldiagrams.dpzz
+cat ../../../wntmsci12.pro/misc/galldiagrams.dpzz C:/cygwin/tmp/mkfixOq7 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerydiagrams.dpz
+Making:    galldiagrams.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/galldiagrams.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/galldiagrams.zip not found or empty
+  adding: Component-Circle01-Transparent-DarkBlue.svg (deflated 32%)
+  adding: Component-Circle02-Transparent-Bule.svg (deflated 32%)
+  adding: Component-Circle03-Transparent-Green.svg (deflated 32%)
+  adding: Component-Circle04-Transparent-Orange.svg (deflated 32%)
+  adding: Component-Circle05-Transparent-Red.svg (deflated 32%)
+  adding: Component-Cube01-DarkBlue.svg (deflated 57%)
+  adding: Component-Cube02-LightBlue.svg (deflated 57%)
+  adding: Component-Cube03-Green.svg (deflated 57%)
+  adding: Component-Cube04-Orange.svg (deflated 56%)
+  adding: Component-Cube05-DarkRed.svg (deflated 57%)
+  adding: Component-Cuboid01-DarkBlue.svg (deflated 59%)
+  adding: Component-Cuboid02-Blue.svg (deflated 58%)
+  adding: Component-Cuboid03-Green.svg (deflated 64%)
+  adding: Component-Cuboid04-Orange.svg (deflated 63%)
+  adding: Component-Cuboid05-Red.svg (deflated 63%)
+  adding: Component-Gear01-DarkBlue.svg (deflated 31%)
+  adding: Component-Gear02-LightBlue.svg (deflated 31%)
+  adding: Component-Gear03-Green.svg (deflated 34%)
+  adding: Component-Gear04-DarkRed.svg (deflated 31%)
+  adding: Component-Gear05-Orange.svg (deflated 31%)
+  adding: Component-Person01-DarkBlue.svg (deflated 31%)
+  adding: Component-Person02-Blue.svg (deflated 31%)
+  adding: Component-Person03-Green.svg (deflated 31%)
+  adding: Component-Person04-DarkRed.svg (deflated 31%)
+  adding: Component-Person05-Orange.svg (deflated 31%)
+  adding: Component-PuzzlePiece01-DarkBlue.svg (deflated 58%)
+  adding: Component-PuzzlePiece02-Blue.svg (deflated 59%)
+  adding: Component-PuzzlePiece03-Green.svg (deflated 59%)
+  adding: Component-PuzzlePiece04-Red.svg (deflated 60%)
+  adding: Component-PuzzlePiece05-Orange.svg (deflated 63%)
+  adding: Component-Sphere01-DarkBlue.svg (deflated 63%)
+  adding: Component-Sphere02-LightBlue.svg (deflated 30%)
+  adding: Component-Sphere03-Green.svg (deflated 65%)
+  adding: Component-Sphere04-DarkRed.svg (deflated 62%)
+  adding: Component-Sphere05-Orange.svg (deflated 63%)
+  adding: Cycle01-Transparent.svg (deflated 52%)
+  adding: Cycle02-Transparent-Blue.svg (deflated 68%)
+  adding: Cycle03-Blue.svg (deflated 34%)
+  adding: Cycle04-Blue.svg (deflated 43%)
+  adding: Cycle05.svg (deflated 41%)
+  adding: Cycle06.svg (deflated 48%)
+  adding: Cycle07.svg (deflated 57%)
+  adding: Cycle08-Blue.svg (deflated 67%)
+  adding: Cycle09-Orange.svg (deflated 72%)
+  adding: Donut01-LightBlue.svg (deflated 55%)
+  adding: Donut02-Blue.svg (deflated 63%)
+  adding: Donut03-Blue.svg (deflated 61%)
+  adding: Donut04-DarkBlue.svg (deflated 61%)
+  adding: Donut05-DarkBlue.svg (deflated 65%)
+  adding: Donut06-Blue.svg (deflated 65%)
+  adding: Donut07-Blue.svg (deflated 69%)
+  adding: Graph.svg (deflated 51%)
+  adding: People01-Blue.svg (deflated 40%)
+  adding: People02.svg (deflated 43%)
+  adding: Pillars01-Orange.svg (deflated 74%)
+  adding: Pillars02-LightBlue.svg (deflated 74%)
+  adding: Process01-Blue.svg (deflated 42%)
+  adding: Process02-Blue.svg (deflated 44%)
+  adding: Process03-Blue.svg (deflated 47%)
+  adding: Process04-GoUp-Blue.svg (deflated 54%)
+  adding: Process05-GoUp-Red.svg (deflated 53%)
+  adding: Process06-GoUp-Yellow.svg (deflated 54%)
+  adding: Process07-Blue.svg (deflated 45%)
+  adding: Pyramid01.svg (deflated 54%)
+  adding: Pyramid02-Blue.svg (deflated 58%)
+  adding: Pyramid03.svg (deflated 44%)
+  adding: Radial01-Green.svg (deflated 53%)
+  adding: Radial02-Green.svg (deflated 48%)
+  adding: Radial03-Sphere.svg (deflated 45%)
+  adding: Radial04-Sphere-Red.svg (deflated 44%)
+  adding: Radial05-Sphere-Blue.svg (deflated 41%)
+  adding: Radial06-Arrows-DarkBlue.svg (deflated 66%)
+  adding: Radial07-Arrows-DarkBlue.svg (deflated 66%)
+  adding: Section-Circle.svg (deflated 40%)
+  adding: Section-Cubes01.svg (deflated 58%)
+  adding: Section-Cubes02-Blue.svg (deflated 58%)
+  adding: Section-Cubes03-Orange.svg (deflated 58%)
+  adding: Section-Cubes04.svg (deflated 56%)
+  adding: Section-Cubes05.svg (deflated 54%)
+  adding: Section-Cuboids01-Blue.svg (deflated 79%)
+  adding: Section-Cuboids02-Blue.svg (deflated 78%)
+  adding: Section-Cuboids03.svg (deflated 76%)
+  adding: Section-Gears01.svg (deflated 74%)
+  adding: Section-Gears02-Blue.svg (deflated 51%)
+  adding: Section-Gears03-Blue.svg (deflated 39%)
+  adding: Section-Hexagons01.svg (deflated 31%)
+  adding: Section-Hexagons02-Blue.svg (deflated 32%)
+  adding: Section-Hexagons03-Blue.svg (deflated 34%)
+  adding: Section-Hexagons04-Orange.svg (deflated 55%)
+  adding: Section-Leaves01-LightBlue.svg (deflated 37%)
+  adding: Section-Leaves02-Green.svg (deflated 34%)
+  adding: Section-Pasters01.svg (deflated 77%)
+  adding: Section-Pasters02-Blue.emf (deflated 63%)
+  adding: Section-Puzzle01.svg (deflated 57%)
+  adding: Section-Puzzle02.svg (deflated 71%)
+  adding: Section-Puzzle03.svg (deflated 71%)
+  adding: Section-Rectangles.svg (deflated 76%)
+  adding: Section-Squares.svg (deflated 78%)
+  adding: Section-Triangle.svg (deflated 56%)
+  adding: Target.svg (deflated 58%)
+  adding: Venn01.svg (deflated 36%)
+  adding: Venn02.svg (deflated 33%)
+  adding: Venn03.svg (deflated 35%)
+  adding: Venn04.svg (deflated 77%)
+  adding: Venn05.svg (deflated 30%)
+  adding: Venn06-Blue.svg (deflated 30%)
+  adding: Venn07-Blue.svg (deflated 45%)
+  adding: Venn08.svg (deflated 54%)
+if [ -f ../../../wntmsci12.pro/bin/galldiagrams.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/galldiagrams.zip \
+	    ; fi
+Making:    gallerydiagrams.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galldiagrams.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galldiagrams.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galldiagrams.dpzz
+cat ../../../wntmsci12.pro/misc/galldiagrams.dpzz C:/cygwin/tmp/mkCfyeqv | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerydiagrams.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/unx/source/bitmaps
+
+Making:    unxbitmaps.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/cfgsrvbitmapunx.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/cfgsrvbitmapunx.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/cfgsrvbitmapunx.dpzz
+cat ../../../wntmsci12.pro/misc/cfgsrvbitmapunx.dpzz C:/cygwin/tmp/mktoH7uM | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/unxbitmaps.dpz
+Making:    cfgsrvbitmapunx.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/cfgsrvbitmapunx.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/cfgsrvbitmapunx.zip not found or empty
+  adding: psetup.xpm (deflated 51%)
+  adding: psetupl.xpm (deflated 65%)
+if [ -f ../../../wntmsci12.pro/bin/cfgsrvbitmapunx.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/cfgsrvbitmapunx.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/rulers
+
+Making:    galleryrulers.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallrulers.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallrulers.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallrulers.dpzz
+cat ../../../wntmsci12.pro/misc/gallrulers.dpzz C:/cygwin/tmp/mkpQPgEZ | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryrulers.dpz
+Making:    gallrulers.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallrulers.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallrulers.zip not found or empty
+  adding: blkballs.gif (deflated 24%)
+  adding: blurulr1.gif (deflated 1%)
+  adding: blurulr2.gif (deflated 10%)
+  adding: blurulr3.gif (deflated 16%)
+  adding: blurulr4.gif (deflated 12%)
+  adding: blurulr5.gif (deflated 2%)
+  adding: blurulr6.gif (deflated 7%)
+  adding: gldballs.gif (deflated 25%)
+  adding: grnballs.gif (deflated 5%)
+  adding: grnrulr1.gif (deflated 13%)
+  adding: grnrulr2.gif (deflated 11%)
+  adding: grnrulr3.gif (deflated 12%)
+  adding: grnrulr4.gif (deflated 10%)
+  adding: gryrulr1.gif (deflated 15%)
+  adding: gryrulr2.gif (deflated 10%)
+  adding: gryrulr3.gif (deflated 23%)
+  adding: orgrulr1.gif (deflated 9%)
+  adding: redrulr1.gif (deflated 15%)
+  adding: redrulr2.gif (deflated 15%)
+  adding: redrulr3.gif (deflated 14%)
+  adding: redrulr4.gif (deflated 15%)
+  adding: redrulr5.gif (deflated 26%)
+  adding: striped.gif (deflated 22%)
+  adding: whtballs.gif (deflated 4%)
+  adding: ylwrulr1.gif (deflated 9%)
+if [ -f ../../../wntmsci12.pro/bin/gallrulers.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallrulers.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/bullets
+
+Making:    gallerybullets.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallbullets.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallbullets.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallbullets.dpzz
+cat ../../../wntmsci12.pro/misc/gallbullets.dpzz C:/cygwin/tmp/mkK4dx74 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerybullets.dpz
+Making:    gallbullets.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallbullets.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallbullets.zip not found or empty
+  adding: Bullet01-Circle-DarkRed.svg (deflated 53%)
+  adding: Bullet02-Circle-Blue.svg (deflated 53%)
+  adding: Bullet03-Circle-Green.svg (deflated 54%)
+  adding: Bullet04-Square-Black.svg (deflated 54%)
+  adding: Bullet05-Square-Orange.svg (deflated 56%)
+  adding: Bullet06-Square-Purple.svg (deflated 54%)
+  adding: Bullet07-Diamond-Blue.svg (deflated 83%)
+  adding: Bullet08-Diamond-LightBlue.svg (deflated 53%)
+  adding: Bullet09-Diamond-Red.svg (deflated 54%)
+  adding: Bullet10-Star-Yellow.svg (deflated 39%)
+  adding: Bullet11-Star-Blue.svg (deflated 39%)
+  adding: Bullet12-Triangle-Blue.svg (deflated 39%)
+  adding: Bullet13-Triangle-DarkGreen.svg (deflated 40%)
+  adding: Bullet14-Arrow-Red.svg (deflated 55%)
+  adding: Bullet15-Arrow-Blue.svg (deflated 54%)
+  adding: Bullet16-Box-Blue.svg (deflated 60%)
+  adding: Bullet17-Box-Red.svg (deflated 64%)
+  adding: Bullet18-Asterisk-LightBlue.svg (deflated 34%)
+  adding: Bullet19-Leaves-Red.svg (deflated 49%)
+  adding: Bullet20-Target-Blue.svg (deflated 42%)
+  adding: Bullet21-Arrow-Blue.svg (deflated 50%)
+  adding: Bullet22-Arrow-DarkBlue.svg (deflated 38%)
+  adding: Bullet23-Arrow-Brown.svg (deflated 38%)
+  adding: Bullet24-Flag-Red.svg (deflated 37%)
+  adding: Bullet25-Flag-Green.svg (deflated 37%)
+  adding: Bullet26-X-Red.svg (deflated 43%)
+  adding: Bullet27-X-Black.svg (deflated 38%)
+  adding: Bullet28-Checkmark-Green.svg (deflated 39%)
+  adding: Bullet29-Checkmark-Blue.svg (deflated 38%)
+  adding: Bullet30-Square-DarkRed.svg (deflated 37%)
+  adding: blkpearl.gif (deflated 65%)
+  adding: bluarrow.gif (stored 0%)
+  adding: bluball.gif (stored 0%)
+  adding: bludiamd.gif (stored 0%)
+  adding: bluered.gif (deflated 35%)
+  adding: blusqare.gif (stored 0%)
+  adding: blustar.gif (stored 0%)
+  adding: coffee_1.gif (stored 0%)
+  adding: coffee_2.gif (stored 0%)
+  adding: coffee_3.gif (stored 0%)
+  adding: coffee_4.gif (stored 0%)
+  adding: coffee_5.gif (stored 0%)
+  adding: con-blue.gif (deflated 17%)
+  adding: con-cyan.gif (deflated 7%)
+  adding: con-green.gif (deflated 6%)
+  adding: con-lilac.gif (deflated 24%)
+  adding: con-oran.gif (deflated 16%)
+  adding: con-pink.gif (deflated 6%)
+  adding: con-red.gif (deflated 8%)
+  adding: con-yellow.gif (deflated 6%)
+  adding: corner_1.gif (stored 0%)
+  adding: corner_2.gif (stored 0%)
+  adding: corner_3.gif (stored 0%)
+  adding: corner_4.gif (stored 0%)
+  adding: darkball.gif (deflated 46%)
+  adding: darkblue.gif (deflated 25%)
+  adding: gldpearl.gif (deflated 65%)
+  adding: golfball.gif (deflated 43%)
+  adding: grnarrow.gif (stored 0%)
+  adding: grnball.gif (stored 0%)
+  adding: grndiamd.gif (stored 0%)
+  adding: grnpearl.gif (deflated 59%)
+  adding: grnsqare.gif (stored 0%)
+  adding: grnstar.gif (stored 0%)
+  adding: gryarrow.gif (stored 0%)
+  adding: gryball.gif (deflated 3%)
+  adding: grydiamd.gif (deflated 2%)
+  adding: grysqare.gif (stored 0%)
+  adding: grystar.gif (stored 0%)
+  adding: orgarrow.gif (stored 0%)
+  adding: orgball.gif (stored 0%)
+  adding: orgdiamd.gif (deflated 3%)
+  adding: orgsqare.gif (stored 0%)
+  adding: orgstar.gif (stored 0%)
+  adding: pebble_1.gif (stored 0%)
+  adding: pebble_2.gif (stored 0%)
+  adding: pebble_3.gif (stored 0%)
+  adding: poliball.gif (deflated 44%)
+  adding: popcorn_1.gif (stored 0%)
+  adding: popcorn_2.gif (deflated 0%)
+  adding: rainbow.gif (deflated 20%)
+  adding: redarrow.gif (stored 0%)
+  adding: redball.gif (stored 0%)
+  adding: reddiamd.gif (deflated 1%)
+  adding: redsqare.gif (stored 0%)
+  adding: redstar.gif (deflated 1%)
+  adding: whtpearl.gif (deflated 61%)
+  adding: ylwarrow.gif (deflated 17%)
+  adding: ylwball.gif (deflated 15%)
+  adding: ylwdiamd.gif (deflated 12%)
+  adding: ylwsqare.gif (deflated 2%)
+  adding: ylwstar.gif (stored 0%)
+if [ -f ../../../wntmsci12.pro/bin/gallbullets.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallbullets.zip \
+	    ; fi
+Making:    gallerybullets.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallbullets.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallbullets.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallbullets.dpzz
+cat ../../../wntmsci12.pro/misc/gallbullets.dpzz C:/cygwin/tmp/mk8CDaYq | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerybullets.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/palettes
+
+Making:    palettesgeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/palettes.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/palettes.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/palettes.dpzz
+cat ../../wntmsci12.pro/misc/palettes.dpzz C:/cygwin/tmp/mkrfAsPC | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/palettesgeneral.dpz
+Making:    palettes.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/palettes.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/palettes.zip not found or empty
+  adding: cmyk.soc (deflated 89%)
+  adding: gallery.soc (deflated 80%)
+  adding: html.soc (deflated 73%)
+  adding: scribus.soc (deflated 86%)
+  adding: standard.sob (deflated 2%)
+  adding: standard.soc (deflated 85%)
+  adding: standard.sod (deflated 78%)
+  adding: standard.soe (deflated 65%)
+  adding: standard.sog (deflated 86%)
+  adding: standard.soh (deflated 79%)
+  adding: web.soc (deflated 88%)
+if [ -f ../../wntmsci12.pro/bin/palettes.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/palettes.zip \
+	    ; fi
+Making:    palettesgeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/palettes.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/palettes.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/palettes.dpzz
+cat ../../wntmsci12.pro/misc/palettes.dpzz C:/cygwin/tmp/mk1gyLjx | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/palettesgeneral.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/www-graf
+
+Making:    gallerywwwgraf.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallwwwgraf.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz
+cat ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz C:/cygwin/tmp/mkdIOO8Y | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerywwwgraf.dpz
+Making:    gallwwwgraf.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallwwwgraf.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallwwwgraf.zip not found or empty
+  adding: bluat.gif (deflated 26%)
+  adding: bluback.gif (deflated 40%)
+  adding: bludisk.gif (deflated 39%)
+  adding: bludown.gif (deflated 39%)
+  adding: bluhome.gif (deflated 38%)
+  adding: bluinfo.gif (deflated 40%)
+  adding: bluleft.gif (deflated 39%)
+  adding: blumail.gif (deflated 39%)
+  adding: bluminus.gif (deflated 40%)
+  adding: bluplus.gif (deflated 40%)
+  adding: bluquest.gif (deflated 38%)
+  adding: bluright.gif (deflated 39%)
+  adding: bluup.gif (deflated 39%)
+  adding: gredisk.gif (deflated 39%)
+  adding: gredown.gif (deflated 39%)
+  adding: grehome.gif (deflated 38%)
+  adding: greinfo.gif (deflated 40%)
+  adding: greleft.gif (deflated 38%)
+  adding: gremail.gif (deflated 39%)
+  adding: greminus.gif (deflated 40%)
+  adding: greplus.gif (deflated 39%)
+  adding: grequest.gif (deflated 38%)
+  adding: greright.gif (deflated 39%)
+  adding: greup.gif (deflated 39%)
+  adding: grnat.gif (deflated 28%)
+  adding: grnback.gif (deflated 36%)
+  adding: grndisk.gif (deflated 29%)
+  adding: grndown.gif (deflated 29%)
+  adding: grnexcla.gif (deflated 30%)
+  adding: grnhome.gif (deflated 2%)
+  adding: grninfo.gif (deflated 30%)
+  adding: grnleft.gif (deflated 30%)
+  adding: grnmail.gif (deflated 30%)
+  adding: grnminus.gif (deflated 31%)
+  adding: grnplus.gif (deflated 30%)
+  adding: grnquest.gif (deflated 29%)
+  adding: grnright.gif (deflated 30%)
+  adding: grnup.gif (deflated 30%)
+  adding: gryat.gif (deflated 37%)
+  adding: gryback.gif (deflated 38%)
+  adding: grydisk.gif (deflated 37%)
+  adding: grydown.gif (deflated 39%)
+  adding: gryhome.gif (deflated 37%)
+  adding: gryinfo.gif (deflated 39%)
+  adding: gryleft.gif (deflated 38%)
+  adding: grymail.gif (deflated 38%)
+  adding: gryminus.gif (deflated 39%)
+  adding: gryplus.gif (deflated 38%)
+  adding: gryquest.gif (deflated 39%)
+  adding: gryright.gif (deflated 38%)
+  adding: gryup.gif (deflated 38%)
+  adding: men@work.gif (deflated 28%)
+  adding: orgat.gif (deflated 11%)
+  adding: orgback.gif (deflated 18%)
+  adding: orgdisk.gif (stored 0%)
+  adding: orgdown.gif (deflated 10%)
+  adding: orghome.gif (deflated 5%)
+  adding: orginfo.gif (deflated 9%)
+  adding: orgleft.gif (deflated 4%)
+  adding: orgmail.gif (deflated 9%)
+  adding: orgminus.gif (deflated 3%)
+  adding: orgplus.gif (deflated 2%)
+  adding: orgquest.gif (stored 0%)
+  adding: orgright.gif (deflated 1%)
+  adding: orgup.gif (deflated 44%)
+  adding: redat.gif (deflated 25%)
+  adding: redback.gif (deflated 38%)
+  adding: reddisk.gif (deflated 39%)
+  adding: reddown.gif (deflated 39%)
+  adding: redhome.gif (deflated 38%)
+  adding: redinfo.gif (deflated 40%)
+  adding: redleft.gif (deflated 38%)
+  adding: redmail.gif (deflated 39%)
+  adding: redminus.gif (deflated 40%)
+  adding: redplus.gif (deflated 39%)
+  adding: redquest.gif (deflated 37%)
+  adding: redright.gif (deflated 39%)
+  adding: redup.gif (deflated 39%)
+  adding: turdown.gif (deflated 16%)
+  adding: turhome.gif (deflated 0%)
+  adding: turleft.gif (deflated 17%)
+  adding: turright.gif (deflated 17%)
+  adding: turup.gif (deflated 17%)
+  adding: viohome.gif (stored 0%)
+  adding: violeft.gif (stored 0%)
+  adding: vioright.gif (stored 0%)
+  adding: vioup.gif (stored 0%)
+  adding: ylwdown.gif (deflated 1%)
+  adding: ylwhome.gif (stored 0%)
+  adding: ylwleft.gif (deflated 1%)
+  adding: ylwmail.gif (deflated 1%)
+  adding: ylwright.gif (stored 0%)
+  adding: ylwup.gif (stored 0%)
+if [ -f ../../../wntmsci12.pro/bin/gallwwwgraf.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallwwwgraf.zip \
+	    ; fi
+Making:    gallerywwwgraf.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallwwwgraf.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz
+cat ../../../wntmsci12.pro/misc/gallwwwgraf.dpzz C:/cygwin/tmp/mkbOhTUN | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerywwwgraf.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/people
+
+Making:    gallerypeople.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallpeople.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallpeople.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallpeople.dpzz
+cat ../../../wntmsci12.pro/misc/gallpeople.dpzz C:/cygwin/tmp/mkgbyOou | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerypeople.dpz
+Making:    gallpeople.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallpeople.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallpeople.zip not found or empty
+  adding: Artist-Female1.png (deflated 0%)
+  adding: Artist-Female2.png (deflated 0%)
+  adding: Artist-Male1.png (deflated 0%)
+  adding: Artist-Male2.png (deflated 0%)
+  adding: BusinessPerson-Female1.png (deflated 0%)
+  adding: BusinessPerson-Female2.png (deflated 0%)
+  adding: BusinessPerson-Female3.png (deflated 0%)
+  adding: BusinessPerson-Female4.png (deflated 0%)
+  adding: BusinessPerson-Female5.png (deflated 0%)
+  adding: BusinessPerson-Female6.png (deflated 0%)
+  adding: BusinessPerson-HeadSet1.png (deflated 0%)
+  adding: BusinessPerson-HeadSet2.png (deflated 0%)
+  adding: BusinessPerson-Male1.png (deflated 0%)
+  adding: BusinessPerson-Male2.png (deflated 0%)
+  adding: BusinessPerson-Male3.png (deflated 0%)
+  adding: BusinessPerson-Male4.png (deflated 0%)
+  adding: BusinessPerson-Male5.png (deflated 0%)
+  adding: BusinessPerson-Male6.png (deflated 0%)
+  adding: Chef1.png (deflated 0%)
+  adding: Chef2.png (deflated 0%)
+  adding: Computer-User-Female1.png (deflated 0%)
+  adding: Computer-User-Female2.png (deflated 0%)
+  adding: Computer-User-Male1.png (deflated 0%)
+  adding: Computer-User-Male2.png (deflated 0%)
+  adding: ConstructionWorker.png (deflated 0%)
+  adding: ConstructionWorker2.png (deflated 0%)
+  adding: Detective1.png (deflated 0%)
+  adding: Detective2.png (deflated 0%)
+  adding: Doctor-Female1.png (deflated 0%)
+  adding: Doctor-Female2.png (deflated 0%)
+  adding: Doctor-Male1.png (deflated 0%)
+  adding: Doctor-Male2.png (deflated 0%)
+  adding: Nurse1.png (deflated 0%)
+  adding: Nurse2.png (deflated 0%)
+  adding: PoliceOfficer1.png (deflated 0%)
+  adding: PoliceOfficer2.png (deflated 0%)
+  adding: Presenter-Female1.png (deflated 1%)
+  adding: Presenter-Female2.png (deflated 1%)
+  adding: Presenter-Male1.png (deflated 1%)
+  adding: Presenter-Male2.png (deflated 1%)
+  adding: Student-Female.png (deflated 0%)
+  adding: Student-Male.png (deflated 1%)
+  adding: Surgeon-Female1.png (deflated 0%)
+  adding: Surgeon-Female2.png (deflated 0%)
+  adding: Surgeon1.png (deflated 0%)
+  adding: Surgeon2.png (deflated 0%)
+  adding: Teacher1.png (deflated 2%)
+  adding: Teacher2.png (deflated 2%)
+  adding: Tourist-Female1.png (deflated 0%)
+  adding: Tourist-Female2.png (deflated 0%)
+  adding: Tourist-Male1.png (deflated 0%)
+  adding: Tourist-Male2.png (deflated 0%)
+if [ -f ../../../wntmsci12.pro/bin/gallpeople.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallpeople.zip \
+	    ; fi
+Making:    gallerypeople.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallpeople.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallpeople.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallpeople.dpzz
+cat ../../../wntmsci12.pro/misc/gallpeople.dpzz C:/cygwin/tmp/mk1WCGo6 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerypeople.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/gallery_system
+
+Making:    gallerygallerysystem.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsystem.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsystem.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsystem.dpzz
+cat ../../../wntmsci12.pro/misc/gallsystem.dpzz C:/cygwin/tmp/mkFfALRy | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerygallerysystem.dpz
+Making:    gallsystem.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallsystem.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallsystem.zip not found or empty
+  adding: sg1.sdg (deflated 41%)
+  adding: sg1.sdv (deflated 95%)
+  adding: sg1.thm (deflated 73%)
+  adding: sg10.sdg (deflated 11%)
+  adding: sg10.sdv (deflated 95%)
+  adding: sg10.thm (deflated 76%)
+  adding: sg11.sdg (deflated 7%)
+  adding: sg11.sdv (deflated 95%)
+  adding: sg11.thm (deflated 73%)
+  adding: sg12.sdg (deflated 10%)
+  adding: sg12.sdv (deflated 95%)
+  adding: sg12.thm (deflated 76%)
+  adding: sg13.sdg (deflated 6%)
+  adding: sg13.sdv (deflated 95%)
+  adding: sg13.thm (deflated 74%)
+  adding: sg14.sdg (deflated 5%)
+  adding: sg14.sdv (deflated 95%)
+  adding: sg14.thm (deflated 74%)
+  adding: sg15.sdg (deflated 6%)
+  adding: sg15.sdv (deflated 95%)
+  adding: sg15.thm (deflated 71%)
+  adding: sg16.sdg (deflated 5%)
+  adding: sg16.sdv (deflated 95%)
+  adding: sg16.thm (deflated 77%)
+  adding: sg17.sdg (deflated 7%)
+  adding: sg17.sdv (deflated 95%)
+  adding: sg17.thm (deflated 70%)
+  adding: sg18.sdg (deflated 6%)
+  adding: sg18.sdv (deflated 95%)
+  adding: sg18.thm (deflated 74%)
+  adding: sg19.sdg (deflated 10%)
+  adding: sg19.sdv (deflated 95%)
+  adding: sg19.thm (deflated 77%)
+  adding: sg2.sdg (deflated 13%)
+  adding: sg2.sdv (deflated 95%)
+  adding: sg2.thm (deflated 80%)
+  adding: sg24.sdg (deflated 10%)
+  adding: sg24.sdv (deflated 17%)
+  adding: sg24.thm (deflated 76%)
+  adding: sg3.sdg (deflated 2%)
+  adding: sg3.sdv (deflated 95%)
+  adding: sg3.thm (deflated 68%)
+  adding: sg36.sdg (deflated 6%)
+  adding: sg36.sdv (deflated 6%)
+  adding: sg36.thm (deflated 78%)
+  adding: sg4.sdg (deflated 33%)
+  adding: sg4.sdv (deflated 95%)
+  adding: sg4.thm (deflated 78%)
+  adding: sg9.sdg (deflated 93%)
+  adding: sg9.sdv (deflated 95%)
+  adding: sg9.thm (deflated 73%)
+if [ -f ../../../wntmsci12.pro/bin/gallsystem.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallsystem.zip \
+	    ; fi
+Making:    gallerygallerysystem.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsystem.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsystem.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsystem.dpzz
+cat ../../../wntmsci12.pro/misc/gallsystem.dpzz C:/cygwin/tmp/mkGk6bar | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerygallerysystem.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/computers
+
+Making:    gallerycomputers.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallcomputers.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallcomputers.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallcomputers.dpzz
+cat ../../../wntmsci12.pro/misc/gallcomputers.dpzz C:/cygwin/tmp/mkDN9Bw2 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerycomputers.dpz
+Making:    gallcomputers.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallcomputers.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallcomputers.zip not found or empty
+  adding: Computer-Cloud.png (deflated 1%)
+  adding: Computer-Desktop.png (deflated 4%)
+  adding: Computer-Laptop-Black.png (deflated 7%)
+  adding: Computer-Laptop-Silver.png (deflated 4%)
+  adding: Database-Add.png (deflated 7%)
+  adding: Database-Delete.png (deflated 7%)
+  adding: Database-Download.png (deflated 6%)
+  adding: Database.png (deflated 6%)
+  adding: Folder01-Blue.png (stored 0%)
+  adding: Folder02-Green.png (deflated 0%)
+  adding: Folder03-Manilla.png (deflated 1%)
+  adding: Folder04-Yellow.png (deflated 0%)
+  adding: Folder05-OpenBlue.png (deflated 1%)
+  adding: Folder06-OpenGreen.png (deflated 1%)
+  adding: Folder07-OpenManilla.png (deflated 3%)
+  adding: Folder08-OpenYellow.png (deflated 1%)
+  adding: Server.png (stored 0%)
+  adding: WirelessAccessPoint.png (deflated 2%)
+if [ -f ../../../wntmsci12.pro/bin/gallcomputers.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallcomputers.zip \
+	    ; fi
+Making:    gallerycomputers.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallcomputers.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallcomputers.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallcomputers.dpzz
+cat ../../../wntmsci12.pro/misc/gallcomputers.dpzz C:/cygwin/tmp/mk3k5bMV | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerycomputers.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/palettes/lang
+
+Making:    palettes.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/palettes_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/palettes_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/palettes_en-US.dpzz
+cat ../../../wntmsci12.pro/misc/palettes_en-US.dpzz C:/cygwin/tmp/mkqPWlxB | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/palettes.dpz
+Making:    palettes_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/palettes_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/palettes_en-US.zip not found or empty
+  adding: arrowhd_en-US.soe (deflated 70%)
+  adding: classic_en-US.sog (deflated 95%)
+  adding: hatching_en-US.soh (deflated 88%)
+  adding: modern_en-US.sog (deflated 87%)
+  adding: palette_en-US.soc (deflated 83%)
+  adding: styles_en-US.sod (deflated 78%)
+if [ -f ../../../wntmsci12.pro/bin/palettes_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/palettes_en-US.zip \
+	    ; fi
+Making:    palettes.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/palettes_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/palettes_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/palettes_en-US.dpzz
+cat ../../../wntmsci12.pro/misc/palettes_en-US.dpzz C:/cygwin/tmp/mk6huDDP | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/palettes.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/txtshapes
+
+Making:    gallerytxtshapes.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galltxtshapes.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galltxtshapes.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galltxtshapes.dpzz
+cat ../../../wntmsci12.pro/misc/galltxtshapes.dpzz C:/cygwin/tmp/mk495tzI | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerytxtshapes.dpz
+Making:    galltxtshapes.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/galltxtshapes.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/galltxtshapes.zip not found or empty
+  adding: Circle01-DarkBlue.svg (deflated 26%)
+  adding: Circle02-LightBlue.svg (deflated 26%)
+  adding: Circle03-Green.svg (deflated 26%)
+  adding: Circle04-DarkRed.svg (deflated 26%)
+  adding: Circle05-Orange.svg (deflated 26%)
+  adding: Hexagon01-DarkBlue.svg (deflated 27%)
+  adding: Hexagon02-Blue.svg (deflated 27%)
+  adding: Hexagon03-Green.svg (deflated 27%)
+  adding: Hexagon04-DarkRed.svg (deflated 27%)
+  adding: Hexagon05-Orange.svg (deflated 27%)
+  adding: Leaf01-DarkBlue.svg (deflated 27%)
+  adding: Leaf02-LightBlue.svg (deflated 27%)
+  adding: Leaf03-Green.svg (deflated 27%)
+  adding: Leaf04-DarkRed.svg (deflated 27%)
+  adding: Leaf05-Orange.svg (deflated 27%)
+  adding: Paster01-DarkBlue.svg (deflated 41%)
+  adding: Paster02-LightBlue.svg (deflated 41%)
+  adding: Paster03-Green.svg (deflated 57%)
+  adding: Paster04-Red.svg (deflated 42%)
+  adding: Paster05-Orange.svg (deflated 41%)
+  adding: Rectangle01-DarkBlue.svg (deflated 34%)
+  adding: Rectangle02-LightBlue.svg (deflated 34%)
+  adding: Rectangle03-Green.svg (deflated 34%)
+  adding: Rectangle04-DarkRed.svg (deflated 34%)
+  adding: Rectangle05-Orange.svg (deflated 34%)
+  adding: Rectangle06-Striped-Blue.svg (deflated 41%)
+  adding: Rectangle07-Striped-Green.svg (deflated 40%)
+  adding: Rectangle08-Striped-Red.svg (deflated 40%)
+  adding: Rectangle09-Striped-Orange.svg (deflated 40%)
+  adding: Square01-DarkBlue.svg (deflated 32%)
+  adding: Square02-LightBlue.svg (deflated 32%)
+  adding: Square03-Green.svg (deflated 32%)
+  adding: Square04-DarkRed.svg (deflated 33%)
+  adding: Square05-Orange.svg (deflated 32%)
+  adding: Square06-Striped-Blue.svg (deflated 42%)
+  adding: Square07-Striped-Green.svg (deflated 40%)
+  adding: Square08-Striped-Red.svg (deflated 46%)
+  adding: Square09-Striped-Orange.svg (deflated 40%)
+if [ -f ../../../wntmsci12.pro/bin/galltxtshapes.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/galltxtshapes.zip \
+	    ; fi
+Making:    gallerytxtshapes.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galltxtshapes.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galltxtshapes.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galltxtshapes.dpzz
+cat ../../../wntmsci12.pro/misc/galltxtshapes.dpzz C:/cygwin/tmp/mk3zQlyb | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerytxtshapes.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/report/lang
+
+Making:    templateswizardreport.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz C:/cygwin/tmp/mktI0A5n | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardreport.dpz
+Making:    tplwizreport_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip not found or empty
+  adding: cnt-01.ott (deflated 7%)
+  adding: cnt-011.ott (deflated 7%)
+  adding: cnt-012.ott (deflated 7%)
+  adding: cnt-02.ott (deflated 7%)
+  adding: cnt-021.ott (deflated 7%)
+  adding: cnt-022.ott (deflated 7%)
+  adding: cnt-03.ott (deflated 7%)
+  adding: cnt-031.ott (deflated 7%)
+  adding: cnt-032.ott (deflated 7%)
+  adding: cnt-04.ott (deflated 7%)
+  adding: cnt-041.ott (deflated 7%)
+  adding: cnt-042.ott (deflated 7%)
+  adding: cnt-05.ott (deflated 7%)
+  adding: cnt-051.ott (deflated 7%)
+  adding: cnt-052.ott (deflated 7%)
+  adding: cnt-06.ott (deflated 7%)
+  adding: cnt-061.ott (deflated 7%)
+  adding: cnt-062.ott (deflated 7%)
+  adding: cnt-default.ott (deflated 7%)
+  adding: stl-01.ott (deflated 2%)
+  adding: stl-02.ott (deflated 3%)
+  adding: stl-03.ott (deflated 1%)
+  adding: stl-04.ott (deflated 3%)
+  adding: stl-05.ott (deflated 1%)
+  adding: stl-06.ott (deflated 5%)
+  adding: stl-07.ott (deflated 8%)
+  adding: stl-08.ott (deflated 6%)
+  adding: stl-09.ott (deflated 2%)
+  adding: stl-default.ott (deflated 9%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip \
+	    ; fi
+Making:    templateswizardreport.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizreport_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizreport_en-US.dpzz C:/cygwin/tmp/mkzPpYvk | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardreport.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/htmlexpo
+
+Making:    galleryhtmlexpo.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallhtmlexpo.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallhtmlexpo.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallhtmlexpo.dpzz
+cat ../../../wntmsci12.pro/misc/gallhtmlexpo.dpzz C:/cygwin/tmp/mkGBrUb8 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryhtmlexpo.dpz
+Making:    gallhtmlexpo.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallhtmlexpo.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallhtmlexpo.zip not found or empty
+  adding: bludown.gif (deflated 7%)
+  adding: blufirs.gif (stored 0%)
+  adding: blufirs_.gif (deflated 1%)
+  adding: blulast.gif (deflated 6%)
+  adding: blulast_.gif (deflated 2%)
+  adding: blunav.gif (deflated 7%)
+  adding: blunext.gif (deflated 6%)
+  adding: blunext_.gif (deflated 2%)
+  adding: bluprev.gif (stored 0%)
+  adding: bluprev_.gif (deflated 2%)
+  adding: blutext.gif (deflated 16%)
+  adding: bluup.gif (deflated 7%)
+  adding: cubdown.gif (deflated 10%)
+  adding: cubfirs.gif (deflated 5%)
+  adding: cubfirs_.gif (deflated 10%)
+  adding: cublast.gif (deflated 5%)
+  adding: cublast_.gif (deflated 11%)
+  adding: cubnav.gif (deflated 4%)
+  adding: cubnext.gif (deflated 10%)
+  adding: cubnext_.gif (deflated 12%)
+  adding: cubprev.gif (deflated 10%)
+  adding: cubprev_.gif (deflated 13%)
+  adding: cubtext.gif (deflated 4%)
+  adding: cubup.gif (deflated 10%)
+  adding: gredown.gif (deflated 13%)
+  adding: grefirs.gif (deflated 27%)
+  adding: grefirs_.gif (deflated 22%)
+  adding: grelast.gif (stored 0%)
+  adding: grelast_.gif (deflated 27%)
+  adding: grenav.gif (deflated 16%)
+  adding: grenext.gif (deflated 13%)
+  adding: grenext_.gif (stored 0%)
+  adding: greprev.gif (deflated 14%)
+  adding: greprev_.gif (stored 0%)
+  adding: gretext.gif (deflated 3%)
+  adding: greup.gif (deflated 14%)
+  adding: simdown.gif (deflated 3%)
+  adding: simfirs.gif (deflated 2%)
+  adding: simfirs_.gif (stored 0%)
+  adding: simlast.gif (deflated 2%)
+  adding: simlast_.gif (deflated 2%)
+  adding: simnav.gif (deflated 4%)
+  adding: simnext.gif (deflated 2%)
+  adding: simnext_.gif (stored 0%)
+  adding: simprev.gif (deflated 2%)
+  adding: simprev_.gif (stored 0%)
+  adding: simtext.gif (deflated 11%)
+  adding: simup.gif (deflated 3%)
+if [ -f ../../../wntmsci12.pro/bin/gallhtmlexpo.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallhtmlexpo.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/wizard/fax/lang
+
+Making:    templateswizardfax.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/tplwizfax_en-US.dpzz
+
+zipdep.pl -u -j ../../../../../wntmsci12.pro/bin/tplwizfax_en-US.zip "en-US/*.ott" -x "*CVS*" -x "*.svn*" >> ../../../../../wntmsci12.pro/misc/tplwizfax_en-US.dpzz
+cat ../../../../../wntmsci12.pro/misc/tplwizfax_en-US.dpzz C:/cygwin/tmp/mkEEN549 | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/templateswizardfax.dpz
+Making:    tplwizfax_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../../wntmsci12.pro/bin/tplwizfax_en-US.zip en-US/*.ott -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../../wntmsci12.pro/bin/tplwizfax_en-US.zip not found or empty
+  adding: bus-classic-pri_f.ott (deflated 5%)
+  adding: bus-classic_f.ott (deflated 3%)
+  adding: bus-modern-pri_f.ott (deflated 5%)
+  adding: bus-modern_f.ott (deflated 3%)
+  adding: pri-bottle_f.ott (deflated 1%)
+  adding: pri-fax_f.ott (deflated 1%)
+  adding: pri-lines_f.ott (deflated 6%)
+  adding: pri-marine_f.ott (deflated 4%)
+if [ -f ../../../../../wntmsci12.pro/bin/tplwizfax_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../../wntmsci12.pro/bin/tplwizfax_en-US.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/wordbook/lang
+
+Making:    wordbook.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/wordbook_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz
+cat ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz C:/cygwin/tmp/mkRK4p9s | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/wordbook.dpz
+Making:    wordbook_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/wordbook_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/wordbook_en-US.zip not found or empty
+  adding: soffice.dic (deflated 35%)
+if [ -f ../../../wntmsci12.pro/bin/wordbook_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/wordbook_en-US.zip \
+	    ; fi
+Making:    wordbook.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/wordbook_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz
+cat ../../../wntmsci12.pro/misc/wordbook_en-US.dpzz C:/cygwin/tmp/mkiQn0kQ | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/wordbook.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/layout/lang
+
+Making:    templateslayout.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz
+cat ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz C:/cygwin/tmp/mk98ITyt | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templateslayout.dpz
+Making:    tpllayoutimpr_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip not found or empty
+  adding: lyt-aqua.otp (deflated 6%)
+  adding: lyt-blackandwhite.otp (deflated 1%)
+  adding: lyt-bluegrey.otp (deflated 0%)
+  adding: lyt-bluelinesgrad.otp (deflated 5%)
+  adding: lyt-bluetitledown.otp (deflated 4%)
+  adding: lyt-book.otp (deflated 0%)
+  adding: lyt-brown.otp (deflated 2%)
+  adding: lyt-charglow.otp (deflated 2%)
+  adding: lyt-forest.otp (deflated 0%)
+  adding: lyt-frepa.otp (deflated 2%)
+  adding: lyt-glacier.otp (deflated 0%)
+  adding: lyt-greengradlines.otp (deflated 4%)
+  adding: lyt-keyboard.otp (deflated 0%)
+  adding: lyt-movwaves.otp (deflated 2%)
+  adding: lyt-numdark.otp (deflated 0%)
+  adding: lyt-ocean.otp (deflated 27%)
+  adding: lyt-organic.otp (deflated 4%)
+  adding: lyt-paper.otp (deflated 0%)
+  adding: lyt-rededges.otp (deflated 0%)
+  adding: lyt-roundedrect.otp (deflated 1%)
+  adding: lyt-sunrise.otp (deflated 1%)
+  adding: lyt-techpoly.otp (deflated 1%)
+  adding: lyt-tunnel.otp (deflated 6%)
+  adding: lyt-water.otp (deflated 0%)
+  adding: lyt-wine.otp (deflated 0%)
+if [ -f ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip \
+	    ; fi
+Making:    templateslayout.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz
+cat ../../../../wntmsci12.pro/misc/tpllayoutimpr_en-US.dpzz C:/cygwin/tmp/mkztIoS7 | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templateslayout.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/arrows
+
+Making:    galleryarrows.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallarrows.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallarrows.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallarrows.dpzz
+cat ../../../wntmsci12.pro/misc/gallarrows.dpzz C:/cygwin/tmp/mk9rZ9Mf | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryarrows.dpz
+Making:    gallarrows.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallarrows.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallarrows.zip not found or empty
+  adding: A01-Arrow-Gray-Left.svg (deflated 35%)
+  adding: A02-Arrow-DarkBlue-Right.svg (deflated 37%)
+  adding: A03-Arrow-Gray-Left.svg (deflated 53%)
+  adding: A04-Arrow-DarkRed-Right.svg (deflated 41%)
+  adding: A05-Arrow-Blue-Left.svg (deflated 40%)
+  adding: A06-Arrow-Red-Right.svg (deflated 41%)
+  adding: A07-Arrow-LightBlue-Left.svg (deflated 39%)
+  adding: A08-Arrow-DarkRed-Right.svg (deflated 53%)
+  adding: A09-Arrow-Gray-Left.svg (deflated 36%)
+  adding: A10-Arrow-Purple-Right.svg (deflated 36%)
+  adding: A11-Arrow-Gray-Left.svg (deflated 53%)
+  adding: A12-Arrow-LightBlue-Right.svg (deflated 37%)
+  adding: A13-Arrow-Gray-Right.svg (deflated 40%)
+  adding: A14-CircleArrow-Green.svg (deflated 65%)
+  adding: A15-CircleArrow.svg (deflated 61%)
+  adding: A16-CircleArrow.png (deflated 4%)
+  adding: A17-CircleArrow.png (deflated 4%)
+  adding: A18-CircleArrow.png (deflated 4%)
+  adding: A19-CircleArrow.png (deflated 4%)
+  adding: A20-CircleArrow-LightBlue.svg (deflated 52%)
+  adding: A21-CircleArrow-Green.svg (deflated 62%)
+  adding: A22-CircleArrow.svg (deflated 65%)
+  adding: A23-CurvedArrow-Gray-Left.svg (deflated 36%)
+  adding: A24-CurvedArrow-LightBlue-Right.svg (deflated 36%)
+  adding: A25-CurvedArrow-DarkBlue.svg (deflated 51%)
+  adding: A26-CurvedArrow-Orange.png (deflated 7%)
+  adding: A27-CurvedArrow-DarkRed.png (deflated 7%)
+  adding: A28-CurvedArrow-DarkBlue.png (deflated 6%)
+  adding: A29-CurvedArrow-Green.png (deflated 5%)
+  adding: A30-CurvedArrow-Gray.svg (deflated 42%)
+  adding: A31-CurvedArrow-LightBlue.svg (deflated 53%)
+  adding: A32-CurvedArrow-Orange.svg (deflated 54%)
+  adding: A33-CurvedArrow-LightBlue-TwoDirections.svg (deflated 46%)
+  adding: A34-CurvedArrow-Green-TwoDirections.svg (deflated 45%)
+  adding: A35-CurvedArrow-Brown-Left.svg (deflated 41%)
+  adding: A36-CurvedArrow-LightBlue-Up.svg (deflated 40%)
+  adding: A37-CurvedArrow-Gray-TwoDirections.svg (deflated 47%)
+  adding: A38-CurvedArrow-Gray-TwoDirections.svg (deflated 46%)
+  adding: A39-CurvedArrow-Gray-Left.svg (deflated 43%)
+  adding: A40-CurvedArrow-Gray-Up.svg (deflated 42%)
+  adding: A41-CurvedArrow-Gray-Left.svg (deflated 38%)
+  adding: A42-TrendArrow-Red-GoUp.svg (deflated 51%)
+  adding: A43-TrendArrow-Green-GoDown.svg (deflated 61%)
+  adding: A44-TrendArrow-Orange-GoUp.png (deflated 22%)
+  adding: A45-TrendArrow-Red-GoUp.png (deflated 18%)
+  adding: A46-TrendArrow-Orange-GoUp.svg (deflated 39%)
+  adding: A47-TrendArrow-LightBlue.png (deflated 11%)
+  adding: A48-TrendArrow-Orange-TwoDirections.svg (deflated 47%)
+  adding: A49-TrendArrow-Yellow-ThreeDirections.svg (deflated 53%)
+  adding: A50-TrendArrow-LightBlue-FourDirections.svg (deflated 61%)
+  adding: A51-TrendArrow-Blue-FourDirections.svg (deflated 43%)
+  adding: A52-TrendArrow-Blue-FourDirections.svg (deflated 41%)
+  adding: A53-TrendArrow-LightBlue-TwoDirections.svg (deflated 61%)
+  adding: A54-TrendArrow-Red-TwoDirections.svg (deflated 65%)
+  adding: A55-TrendArrow-TwoDirections.svg (deflated 59%)
+  adding: A56-TrendArrow-Blue-TwoDirections.svg (deflated 63%)
+  adding: A57-Arrow-Yellow-Left.svg (deflated 54%)
+  adding: A58-Arrow-Red-Right.svg (deflated 53%)
+  adding: A59-CurvedArrow-Gray-Left.svg (deflated 35%)
+  adding: A60-CurvedArrow-Purple-Right.svg (deflated 35%)
+  adding: A61-Arrow-StripedOrange-Left.svg (deflated 48%)
+  adding: A62-Arrow-StripedBlue-Right.svg (deflated 48%)
+  adding: A63-Arrow-LightBlue-Left.svg (deflated 55%)
+  adding: A64-Arrow-Green-Right.svg (deflated 51%)
+  adding: A65-Arrow-DarkBlue-Up.svg (deflated 32%)
+  adding: A66-Arrow-Green-Down.svg (deflated 31%)
+  adding: A67-Arrow-Yellow-Left.svg (deflated 49%)
+  adding: A68-Arrow-Gray-Right.svg (deflated 39%)
+if [ -f ../../../wntmsci12.pro/bin/gallarrows.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallarrows.zip \
+	    ; fi
+Making:    galleryarrows.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallarrows.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallarrows.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallarrows.dpzz
+cat ../../../wntmsci12.pro/misc/gallarrows.dpzz C:/cygwin/tmp/mkalGqD0 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryarrows.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/transportation
+
+Making:    gallerytransport.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galltransport.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galltransport.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galltransport.dpzz
+cat ../../../wntmsci12.pro/misc/galltransport.dpzz C:/cygwin/tmp/mkklsDj1 | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerytransport.dpz
+Making:    galltransport.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/galltransport.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/galltransport.zip not found or empty
+  adding: Airplane-Blue.png (deflated 10%)
+  adding: Bicycle-Blue.png (deflated 2%)
+  adding: Boat.png (deflated 11%)
+  adding: Bus.png (deflated 4%)
+  adding: Canoe-Blue.png (deflated 8%)
+  adding: Car-Red.png (deflated 4%)
+  adding: Helicopter-Blue.png (deflated 6%)
+  adding: Motorcycle-Red.png (deflated 3%)
+  adding: Pedestrian-Blue.png (deflated 3%)
+  adding: PersonalTransporter-Green.png (deflated 5%)
+  adding: Sailboat-Red.png (deflated 8%)
+  adding: Scooter-Orange.png (deflated 6%)
+  adding: Train-Red.png (deflated 4%)
+  adding: Truck-Blue.png (deflated 10%)
+if [ -f ../../../wntmsci12.pro/bin/galltransport.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/galltransport.zip \
+	    ; fi
+Making:    gallerytransport.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galltransport.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galltransport.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galltransport.dpzz
+cat ../../../wntmsci12.pro/misc/galltransport.dpzz C:/cygwin/tmp/mkwEAZoS | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerytransport.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/misc_config
+
+Making:    miscconfiggeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz ../../wntmsci12.pro/misc/cfgusr.dpzz
+
+zipdep.pl  ../../wntmsci12.pro/bin/cfgsrvnolang.zip "wizard/*" "wizard/*/*" "wizard/*/*/*" "wizard/*/*/*/*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz
+
+zipdep.pl  ../../wntmsci12.pro/bin/cfgusr.zip "autotbl.fmt" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/cfgusr.dpzz
+cat ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz ../../wntmsci12.pro/misc/cfgusr.dpzz C:/cygwin/tmp/mk6miM6C | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/miscconfiggeneral.dpz
+Making:    cfgsrvnolang.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../wntmsci12.pro/bin/cfgsrvnolang.zip wizard/* wizard/*/* wizard/*/*/* wizard/*/*/*/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: wizard/form/ (stored 0%)
+  adding: wizard/web/ (stored 0%)
+  adding: wizard/form/styles/ (stored 0%)
+  adding: wizard/web/images/ (stored 0%)
+  adding: wizard/web/layouts/ (stored 0%)
+  adding: wizard/web/preview.html (deflated 62%)
+  adding: wizard/web/styles/ (stored 0%)
+  adding: wizard/form/styles/beige.css (deflated 69%)
+  adding: wizard/form/styles/bgr.css (deflated 68%)
+  adding: wizard/form/styles/dark.css (deflated 69%)
+  adding: wizard/form/styles/grey.css (deflated 69%)
+  adding: wizard/form/styles/ibg.css (deflated 69%)
+  adding: wizard/form/styles/ice.css (deflated 69%)
+  adding: wizard/form/styles/orange.css (deflated 69%)
+  adding: wizard/form/styles/red.css (deflated 69%)
+  adding: wizard/form/styles/violet.css (deflated 69%)
+  adding: wizard/form/styles/water.css (deflated 68%)
+  adding: wizard/web/images/calc.gif (deflated 21%)
+  adding: wizard/web/images/draw.gif (deflated 3%)
+  adding: wizard/web/images/fls.gif (deflated 1%)
+  adding: wizard/web/images/graphics.gif (stored 0%)
+  adding: wizard/web/images/html.gif (deflated 21%)
+  adding: wizard/web/images/impress.gif (deflated 16%)
+  adding: wizard/web/images/media.gif (deflated 20%)
+  adding: wizard/web/images/other.gif (deflated 27%)
+  adding: wizard/web/images/pdf.gif (stored 0%)
+  adding: wizard/web/images/writer.gif (deflated 11%)
+  adding: wizard/web/layouts/diagonal/ (stored 0%)
+  adding: wizard/web/layouts/frame_bottom/ (stored 0%)
+  adding: wizard/web/layouts/frame_left/ (stored 0%)
+  adding: wizard/web/layouts/frame_right/ (stored 0%)
+  adding: wizard/web/layouts/frame_top/ (stored 0%)
+  adding: wizard/web/layouts/layout.xsl (deflated 69%)
+  adding: wizard/web/layouts/layoutF.xsl (deflated 60%)
+  adding: wizard/web/layouts/layoutX.xsl (deflated 71%)
+  adding: wizard/web/layouts/simple/ (stored 0%)
+  adding: wizard/web/layouts/source.xml.xsl (deflated 54%)
+  adding: wizard/web/layouts/table_2/ (stored 0%)
+  adding: wizard/web/layouts/table_3/ (stored 0%)
+  adding: wizard/web/layouts/zigzag/ (stored 0%)
+  adding: wizard/web/styles/beige.css (deflated 69%)
+  adding: wizard/web/styles/bg.css (deflated 69%)
+  adding: wizard/web/styles/bgr.css (deflated 68%)
+  adding: wizard/web/styles/bgrey.css (deflated 68%)
+  adding: wizard/web/styles/bwb.css (deflated 69%)
+  adding: wizard/web/styles/bwo.css (deflated 69%)
+  adding: wizard/web/styles/dark.css (deflated 70%)
+  adding: wizard/web/styles/dp.css (deflated 69%)
+  adding: wizard/web/styles/forest.css (deflated 69%)
+  adding: wizard/web/styles/green.css (deflated 69%)
+  adding: wizard/web/styles/greenred.css (deflated 69%)
+  adding: wizard/web/styles/grey.css (deflated 69%)
+  adding: wizard/web/styles/ibg.css (deflated 69%)
+  adding: wizard/web/styles/ice.css (deflated 69%)
+  adding: wizard/web/styles/marine.css (deflated 69%)
+  adding: wizard/web/styles/orange.css (deflated 69%)
+  adding: wizard/web/styles/pc_old.css (deflated 70%)
+  adding: wizard/web/styles/red.css (deflated 69%)
+  adding: wizard/web/styles/rgb.css (deflated 70%)
+  adding: wizard/web/styles/strange.css (deflated 69%)
+  adding: wizard/web/styles/violet.css (deflated 69%)
+  adding: wizard/web/styles/water.css (deflated 68%)
+  adding: wizard/web/layouts/diagonal/index.html.xsl (deflated 63%)
+  adding: wizard/web/layouts/frame_bottom/index.html.xsl (deflated 61%)
+  adding: wizard/web/layouts/frame_bottom/mainframe.html (deflated 49%)
+  adding: wizard/web/layouts/frame_bottom/tocframe.html.xsl (deflated 60%)
+  adding: wizard/web/layouts/frame_left/index.html.xsl (deflated 61%)
+  adding: wizard/web/layouts/frame_left/mainframe.html (deflated 49%)
+  adding: wizard/web/layouts/frame_left/tocframe.html.xsl (deflated 59%)
+  adding: wizard/web/layouts/frame_right/index.html.xsl (deflated 61%)
+  adding: wizard/web/layouts/frame_right/mainframe.html (deflated 49%)
+  adding: wizard/web/layouts/frame_right/tocframe.html.xsl (deflated 59%)
+  adding: wizard/web/layouts/frame_top/index.html.xsl (deflated 61%)
+  adding: wizard/web/layouts/frame_top/mainframe.html (deflated 49%)
+  adding: wizard/web/layouts/frame_top/tocframe.html.xsl (deflated 60%)
+  adding: wizard/web/layouts/simple/index.html.xsl (deflated 62%)
+  adding: wizard/web/layouts/table_2/index.html.xsl (deflated 65%)
+  adding: wizard/web/layouts/table_3/index.html.xsl (deflated 66%)
+  adding: wizard/web/layouts/zigzag/index.html.xsl (deflated 67%)
+if [ -f ../../wntmsci12.pro/bin/cfgsrvnolang.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/cfgsrvnolang.zip \
+	    ; fi
+Making:    cfgusr.zip
+rebuilding zipfiles
+------------------------------ 
+zip   ../../wntmsci12.pro/bin/cfgusr.zip autotbl.fmt -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: autotbl.fmt (deflated 97%)
+if [ -f ../../wntmsci12.pro/bin/cfgusr.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/cfgusr.zip \
+	    ; fi
+Making:    miscconfiggeneral.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz ../../wntmsci12.pro/misc/cfgusr.dpzz
+
+zipdep.pl  ../../wntmsci12.pro/bin/cfgsrvnolang.zip "wizard/*" "wizard/*/*" "wizard/*/*/*" "wizard/*/*/*/*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz
+
+zipdep.pl  ../../wntmsci12.pro/bin/cfgusr.zip "autotbl.fmt" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/cfgusr.dpzz
+cat ../../wntmsci12.pro/misc/cfgsrvnolang.dpzz ../../wntmsci12.pro/misc/cfgusr.dpzz C:/cygwin/tmp/mkw2Mdcj | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/miscconfiggeneral.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/education
+
+Making:    galleryeducation.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galleducation.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galleducation.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galleducation.dpzz
+cat ../../../wntmsci12.pro/misc/galleducation.dpzz C:/cygwin/tmp/mk6209Ju | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryeducation.dpz
+Making:    galleducation.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/galleducation.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/galleducation.zip not found or empty
+  adding: Blackboard.png (deflated 13%)
+  adding: Books.png (deflated 7%)
+  adding: Chalk.png (deflated 14%)
+  adding: Globe.png (deflated 1%)
+  adding: Glue.png (deflated 10%)
+  adding: GraduationCap.png (deflated 24%)
+  adding: Microscope.png (deflated 4%)
+  adding: Notebook.png (deflated 2%)
+  adding: PaperClip-Blue.png (deflated 5%)
+  adding: PaperClip-Red.png (deflated 6%)
+  adding: Pencil.png (deflated 16%)
+  adding: Ruler.png (deflated 29%)
+  adding: TestTubes.png (deflated 10%)
+if [ -f ../../../wntmsci12.pro/bin/galleducation.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/galleducation.zip \
+	    ; fi
+Making:    galleryeducation.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/galleducation.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/galleducation.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/galleducation.dpzz
+cat ../../../wntmsci12.pro/misc/galleducation.dpzz C:/cygwin/tmp/mkBzNmLx | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryeducation.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/symbols
+
+Making:    gallerysymbols.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsymbols.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsymbols.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsymbols.dpzz
+cat ../../../wntmsci12.pro/misc/gallsymbols.dpzz C:/cygwin/tmp/mkgPKfpy | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerysymbols.dpz
+Making:    gallsymbols.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallsymbols.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallsymbols.zip not found or empty
+  adding: Book.svg (deflated 67%)
+  adding: Box01.svg (deflated 62%)
+  adding: Box02.svg (deflated 57%)
+  adding: Bulb01-Yellow.svg (deflated 41%)
+  adding: Bulb02-Yellow.svg (deflated 53%)
+  adding: Calendar.svg (deflated 73%)
+  adding: Chart.svg (deflated 71%)
+  adding: Clipboard.svg (deflated 52%)
+  adding: Clock.svg (deflated 76%)
+  adding: Compass.svg (deflated 64%)
+  adding: Emotion01-Laughing.svg (deflated 61%)
+  adding: Emotion02-Smiling.svg (deflated 67%)
+  adding: Emotion03-Calm.svg (deflated 61%)
+  adding: Emotion04-Frowning.svg (deflated 65%)
+  adding: Emotion05-Angry.svg (deflated 63%)
+  adding: Emotion06-Crying.svg (deflated 61%)
+  adding: Flag01-Red.svg (deflated 55%)
+  adding: Flag02-Green.svg (deflated 54%)
+  adding: Flag03-Blue.svg (deflated 55%)
+  adding: Gift.svg (deflated 66%)
+  adding: House.svg (deflated 57%)
+  adding: Icon-Computer01-White.svg (deflated 71%)
+  adding: Icon-Computer02-Black.svg (deflated 70%)
+  adding: Icon-Disk01-Blue.svg (deflated 70%)
+  adding: Icon-Disk02-Green.svg (deflated 69%)
+  adding: Icon-Document01-Grey.svg (deflated 51%)
+  adding: Icon-Document02-Grey.svg (deflated 46%)
+  adding: Icon-Document03-Blue.svg (deflated 46%)
+  adding: Icon-Document04-Blue.svg (deflated 39%)
+  adding: Icon-Envelope01-Blue.svg (deflated 50%)
+  adding: Icon-Envelope02-Yellow.svg (deflated 67%)
+  adding: Icon-Envelope03-Open-Yellow.svg (deflated 61%)
+  adding: Icon-Envelope04-Open-Yellow.svg (deflated 58%)
+  adding: Icon-Folder01-Yellow.svg (deflated 60%)
+  adding: Icon-Folder02-Yellow.svg (deflated 50%)
+  adding: Icon-Folder03-Open-Yellow.svg (deflated 70%)
+  adding: Icon-Folder04-Open-Yellow.svg (deflated 62%)
+  adding: Icon-Gear01-Grey.svg (deflated 65%)
+  adding: Icon-Gear02-Blue.svg (deflated 64%)
+  adding: Icon-Network01-Blue.svg (deflated 51%)
+  adding: Icon-Network02.svg (deflated 53%)
+  adding: Icon-Pencil01.svg (deflated 54%)
+  adding: Icon-Pencil02.svg (deflated 52%)
+  adding: Icon-Printer01-White.svg (deflated 60%)
+  adding: Icon-Printer02-Black.svg (deflated 63%)
+  adding: Key01.svg (deflated 67%)
+  adding: Key02.svg (deflated 65%)
+  adding: Lock01-Yellow.svg (deflated 73%)
+  adding: Lock02-Yellow.svg (deflated 65%)
+  adding: Lock03-Blue.svg (deflated 69%)
+  adding: Lock04-Blue.svg (deflated 65%)
+  adding: Magnet.svg (deflated 67%)
+  adding: MagnifyingGlass.svg (deflated 59%)
+  adding: Metal.svg (deflated 62%)
+  adding: Notebook.svg (deflated 67%)
+  adding: Phone.svg (deflated 57%)
+  adding: PieChart.svg (deflated 64%)
+  adding: Pin.svg (deflated 63%)
+  adding: PuzzlePiece.svg (deflated 53%)
+  adding: PuzzlePieces.svg (deflated 60%)
+  adding: Roadblock.svg (deflated 68%)
+  adding: Scissors.svg (deflated 57%)
+  adding: Shield01.svg (deflated 76%)
+  adding: Shield02-Orange.svg (deflated 67%)
+  adding: Shield03-Blue.svg (deflated 69%)
+  adding: Sign-Ban01.svg (deflated 63%)
+  adding: Sign-Ban02.svg (deflated 61%)
+  adding: Sign-CheckBox01.svg (deflated 30%)
+  adding: Sign-CheckBox02-Unchecked.svg (deflated 43%)
+  adding: Sign-Checkmark01-Green.svg (deflated 38%)
+  adding: Sign-Checkmark02-Green.svg (deflated 63%)
+  adding: Sign-DoNotEnter.svg (deflated 59%)
+  adding: Sign-Error01.svg (deflated 62%)
+  adding: Sign-Error02.svg (deflated 61%)
+  adding: Sign-ExclamationPoint01-Red.svg (deflated 63%)
+  adding: Sign-ExclamationPoint02-Orange.svg (deflated 62%)
+  adding: Sign-Help01-Green.svg (deflated 59%)
+  adding: Sign-Help02-Blue.svg (deflated 60%)
+  adding: Sign-Information.svg (deflated 60%)
+  adding: Sign-Null.svg (deflated 56%)
+  adding: Sign-QuestionMark01-Blue.svg (deflated 58%)
+  adding: Sign-QuestionMark02-Red.svg (deflated 58%)
+  adding: Sign-RadioButton01.svg (deflated 28%)
+  adding: Sign-RadioButton02-Unchecked.svg (deflated 41%)
+  adding: Sign-Warning01-Red.svg (deflated 59%)
+  adding: Sign-Warning02-Orange.svg (deflated 60%)
+  adding: Sign-X01-Red.svg (deflated 42%)
+  adding: Sign-X02-Red.svg (deflated 64%)
+  adding: Star-Yellow.svg (deflated 55%)
+  adding: Wrench.svg (deflated 66%)
+if [ -f ../../../wntmsci12.pro/bin/gallsymbols.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallsymbols.zip \
+	    ; fi
+Making:    gallerysymbols.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsymbols.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsymbols.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsymbols.dpzz
+cat ../../../wntmsci12.pro/misc/gallsymbols.dpzz C:/cygwin/tmp/mkXh84TV | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerysymbols.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/gallery_sound
+
+Making:    gallerygallerysound.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsound.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsound.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsound.dpzz
+cat ../../../wntmsci12.pro/misc/gallsound.dpzz C:/cygwin/tmp/mkJ8v7YX | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerygallerysound.dpz
+Making:    gallsound.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallsound.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallsound.zip not found or empty
+  adding: sg100.sdv (deflated 95%)
+  adding: sg100.thm (deflated 93%)
+  adding: sg30.sdv (deflated 95%)
+  adding: sg30.thm (deflated 88%)
+if [ -f ../../../wntmsci12.pro/bin/gallsound.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallsound.zip \
+	    ; fi
+Making:    gallerygallerysound.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallsound.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallsound.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallsound.dpzz
+cat ../../../wntmsci12.pro/misc/gallsound.dpzz C:/cygwin/tmp/mkesxKdA | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/gallerygallerysound.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/templates/presnt/lang
+
+Making:    templatespresnt.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz
+cat ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz C:/cygwin/tmp/mkyhgVGQ | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templatespresnt.dpz
+Making:    tplpresntimpr_en-US.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip en-US/* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip not found or empty
+  adding: prs-novelty.otp (deflated 3%)
+  adding: prs-strategy.otp (deflated 1%)
+if [ -f ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip \
+	    ; fi
+Making:    templatespresnt.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz
+
+zipdep.pl -u -j ../../../../wntmsci12.pro/bin/tplpresntimpr_en-US.zip "en-US/*" -x "*CVS*" -x "*.svn*" >> ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz
+cat ../../../../wntmsci12.pro/misc/tplpresntimpr_en-US.dpzz C:/cygwin/tmp/mkwyYDeH | grep -v "CVS" | grep -v "\.svn" >> ../../../../wntmsci12.pro/misc/templatespresnt.dpz
+
+Entering /cygdrive/c/steve/testarea/main/extras/source/gallery/environment
+
+Making:    galleryenvironment.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallenvironment.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallenvironment.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallenvironment.dpzz
+cat ../../../wntmsci12.pro/misc/gallenvironment.dpzz C:/cygwin/tmp/mkKTDSwA | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryenvironment.dpz
+Making:    gallenvironment.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../../wntmsci12.pro/bin/gallenvironment.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../../wntmsci12.pro/bin/gallenvironment.zip not found or empty
+  adding: DrippingFaucet.png (deflated 1%)
+  adding: Earth.png (deflated 1%)
+  adding: EndangeredAnimals1.png (deflated 0%)
+  adding: EndangeredAnimals2.png (deflated 1%)
+  adding: GreenCar.png (deflated 1%)
+  adding: GreenFactory.png (deflated 1%)
+  adding: GreenHouse.png (deflated 2%)
+  adding: Leaf1.png (deflated 0%)
+  adding: Leaf2.png (deflated 0%)
+  adding: LightBulb-Flourescent-Off.png (deflated 1%)
+  adding: LightBulb-Flourescent-On.png (deflated 0%)
+  adding: LightBulb-Standard-Off1.png (deflated 1%)
+  adding: LightBulb-Standard-Off2.png (deflated 1%)
+  adding: LightBulb-Standard-On.png (deflated 0%)
+  adding: Pollution-Car.png (deflated 1%)
+  adding: Pollution-Factory.png (deflated 1%)
+  adding: Raindrop.png (deflated 0%)
+  adding: RecycleBin.png (deflated 1%)
+  adding: RecycleSymbol.png (deflated 0%)
+  adding: RenewableEnergy-Solar.png (deflated 0%)
+  adding: RenewableEnergy-Water.png (deflated 0%)
+  adding: RenewableEnergy-Wind.png (deflated 0%)
+  adding: RenewableEnergySymbol.png (deflated 0%)
+  adding: Sun1.png (deflated 0%)
+  adding: Sun2.png (deflated 1%)
+if [ -f ../../../wntmsci12.pro/bin/gallenvironment.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../../wntmsci12.pro/bin/gallenvironment.zip \
+	    ; fi
+Making:    galleryenvironment.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../wntmsci12.pro/misc/gallenvironment.dpzz
+
+zipdep.pl -u -j ../../../wntmsci12.pro/bin/gallenvironment.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../../wntmsci12.pro/misc/gallenvironment.dpzz
+cat ../../../wntmsci12.pro/misc/gallenvironment.dpzz C:/cygwin/tmp/mkl8bk9d | grep -v "CVS" | grep -v "\.svn" >> ../../../wntmsci12.pro/misc/galleryenvironment.dpz
+extras deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/extras/build.lst
+COPY: ../wntmsci12.pro/bin/autocorr.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/autocorr.zip
+COPY: ../wntmsci12.pro/bin/autotextshare_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/autotextshare_en-US.zip
+COPY: ../wntmsci12.pro/bin/autotextuser.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/autotextuser.zip
+COPY: ../wntmsci12.pro/bin/cfgsrvbitmapunx.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/cfgsrvbitmapunx.zip
+COPY: ../wntmsci12.pro/bin/cfgsrvnolang.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/cfgsrvnolang.zip
+COPY: ../wntmsci12.pro/bin/cfgusr.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/cfgusr.zip
+COPY: ../wntmsci12.pro/bin/database.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/database.zip
+COPY: ../wntmsci12.pro/bin/databasebiblio.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/databasebiblio.zip
+COPY: ../wntmsci12.pro/bin/gallarrows.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallarrows.zip
+COPY: ../wntmsci12.pro/bin/gallbullets.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallbullets.zip
+COPY: ../wntmsci12.pro/bin/gallcomputers.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallcomputers.zip
+COPY: ../wntmsci12.pro/bin/galldiagrams.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/galldiagrams.zip
+COPY: ../wntmsci12.pro/bin/galleducation.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/galleducation.zip
+COPY: ../wntmsci12.pro/bin/gallenvironment.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallenvironment.zip
+COPY: ../wntmsci12.pro/bin/gallfinance.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallfinance.zip
+COPY: ../wntmsci12.pro/bin/gallhtmlexpo.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallhtmlexpo.zip
+COPY: ../wntmsci12.pro/bin/gallpeople.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallpeople.zip
+COPY: ../wntmsci12.pro/bin/gallroot.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallroot.zip
+COPY: ../wntmsci12.pro/bin/gallrulers.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallrulers.zip
+COPY: ../wntmsci12.pro/bin/gallsound.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallsound.zip
+COPY: ../wntmsci12.pro/bin/gallsounds.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallsounds.zip
+COPY: ../wntmsci12.pro/bin/gallsymbols.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallsymbols.zip
+COPY: ../wntmsci12.pro/bin/gallsystem.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallsystem.zip
+COPY: ../wntmsci12.pro/bin/galltransport.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/galltransport.zip
+COPY: ../wntmsci12.pro/bin/galltxtshapes.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/galltxtshapes.zip
+COPY: ../wntmsci12.pro/bin/gallwwwback.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallwwwback.zip
+COPY: ../wntmsci12.pro/bin/gallwwwgraf.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/gallwwwgraf.zip
+COPY: ../wntmsci12.pro/bin/palettes.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/palettes.zip
+COPY: ../wntmsci12.pro/bin/palettes_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/palettes_en-US.zip
+COPY: ../wntmsci12.pro/bin/symbols.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/symbols.zip
+COPY: ../wntmsci12.pro/bin/tpllayoutimpr_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tpllayoutimpr_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplpresntimpr_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplpresntimpr_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizagenda_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizagenda_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizbitmap.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizbitmap.zip
+COPY: ../wntmsci12.pro/bin/tplwizdesktop_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizdesktop_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizfax_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizfax_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_bg.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_bg.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_cs.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_cs.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_da.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_da.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_de.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_de.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_en-GB.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_en-GB.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_es.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_es.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_eu.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_eu.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_fr.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_fr.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_hu.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_hu.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_it.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_it.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_ja.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_ja.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_km.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_km.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_ko.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_ko.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_nl.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_nl.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_pl.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_pl.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_pt-BR.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_pt-BR.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_pt.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_pt.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_ru.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_ru.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_sk.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_sk.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_sl.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_sl.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_sv.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_sv.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_tr.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_tr.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_vi.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_vi.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_zh-CN.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_zh-CN.zip
+COPY: ../wntmsci12.pro/bin/tplwizletter_zh-TW.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizletter_zh-TW.zip
+COPY: ../wntmsci12.pro/bin/tplwizreport_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizreport_en-US.zip
+COPY: ../wntmsci12.pro/bin/tplwizstyles_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/tplwizstyles_en-US.zip
+COPY: ../wntmsci12.pro/bin/wordbook.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook.zip
+COPY: ../wntmsci12.pro/bin/wordbook_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook_en-US.zip
+COPY: ../wntmsci12.pro/bin/wordbook_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook_ja.zip
+COPY: ../wntmsci12.pro/bin/wordbook_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook_ko.zip
+COPY: ../wntmsci12.pro/bin/wordbook_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook_zh-CN.zip
+COPY: ../wntmsci12.pro/bin/wordbook_en-US.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/wordbook_zh-TW.zip
+COPY: ../source/truetype/symbol/opens___.ttf -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/opens___.ttf
+COPY: ../source/shellnew/soffice.html -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/soffice.html
+COPY: ../source/shellnew/soffice.odg -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/soffice.odg
+COPY: ../source/shellnew/soffice.odp -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/soffice.odp
+COPY: ../source/shellnew/soffice.ods -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/soffice.ods
+COPY: ../source/shellnew/soffice.odt -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/soffice.odt
+COPY: ../unx/source/fonts/fonts.dir -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/openoffice/fonts.dir
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/extras/deliver.log
+Module 'extras' delivered successfully. 79 files copied, 0 files unchanged
+
+=============

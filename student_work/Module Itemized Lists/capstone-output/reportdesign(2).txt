@@ -1,0 +1,425 @@
+Name:
+reportdesign
+
+Dependencies:
+L10N:l10n BOOST:boost comphelper dbaccess formula LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\statusbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\toolbar
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+
+dos: sh -c "if test %OS% = MACOSX; then create-bundle %_DEST%\lib%_EXT%\*.dylib; fi"
+
+# Libraries
+..\%__SRC%\bin\rpt*.dll %_DEST%\bin%_EXT%\rpt*.dll
+..\%__SRC%\lib\librpt*.so %_DEST%\lib%_EXT%\librpt*.so
+# ..\%__SRC%\lib\irpt*.lib %_DEST%\lib%_EXT%\irpt*.lib
+..\%__SRC%\lib\librpt*.dylib %_DEST%\lib%_EXT%\librpt*.dylib
+
+# Resources
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+..\uiconfig\dbreport\menubar\*.xml           %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\menubar\*.xml
+..\uiconfig\dbreport\statusbar\*.xml         %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\statusbar\*.xml
+..\uiconfig\dbreport\toolbar\*.xml           %_DEST%\xml%_EXT%\uiconfig\modules\dbreport\toolbar\*.xml
+
+..\%__SRC%\misc\rpt.component %_DEST%\xml%_EXT%\rpt.component
+..\%__SRC%\misc\rptui.component %_DEST%\xml%_EXT%\rptui.component
+..\%__SRC%\misc\rptxml.component %_DEST%\xml%_EXT%\rptxml.component
+
+Source Files:
+inc\pch\precompiled_reportdesign.cxx
+source\core\api\FixedLine.cxx
+source\core\api\FixedText.cxx
+source\core\api\FormatCondition.cxx
+source\core\api\FormattedField.cxx
+source\core\api\Function.cxx
+source\core\api\Functions.cxx
+source\core\api\Group.cxx
+source\core\api\Groups.cxx
+source\core\api\ImageControl.cxx
+source\core\api\ReportComponent.cxx
+source\core\api\ReportControlModel.cxx
+source\core\api\ReportDefinition.cxx
+source\core\api\ReportEngineJFree.cxx
+source\core\api\ReportVisitor.cxx
+source\core\api\Section.cxx
+source\core\api\services.cxx
+source\core\api\Shape.cxx
+source\core\api\Tools.cxx
+source\core\misc\conditionalexpression.cxx
+source\core\misc\conditionupdater.cxx
+source\core\misc\reportformula.cxx
+source\core\resource\core_resource.cxx
+source\core\sdr\formatnormalizer.cxx
+source\core\sdr\ModuleHelper.cxx
+source\core\sdr\PropertyForward.cxx
+source\core\sdr\ReportDrawPage.cxx
+source\core\sdr\ReportUndoFactory.cxx
+source\core\sdr\RptModel.cxx
+source\core\sdr\RptObject.cxx
+source\core\sdr\RptObjectListener.cxx
+source\core\sdr\RptPage.cxx
+source\core\sdr\UndoActions.cxx
+source\core\sdr\UndoEnv.cxx
+source\filter\xml\dbloader2.cxx
+source\filter\xml\xmlAutoStyle.cxx
+source\filter\xml\xmlCell.cxx
+source\filter\xml\xmlColumn.cxx
+source\filter\xml\xmlComponent.cxx
+source\filter\xml\xmlCondPrtExpr.cxx
+source\filter\xml\xmlControlProperty.cxx
+source\filter\xml\xmlExport.cxx
+source\filter\xml\xmlExportDocumentHandler.cxx
+source\filter\xml\xmlfilter.cxx
+source\filter\xml\xmlFixedContent.cxx
+source\filter\xml\xmlFormatCondition.cxx
+source\filter\xml\xmlFormattedField.cxx
+source\filter\xml\xmlFunction.cxx
+source\filter\xml\xmlGroup.cxx
+source\filter\xml\xmlHelper.cxx
+source\filter\xml\xmlImage.cxx
+source\filter\xml\xmlImportDocumentHandler.cxx
+source\filter\xml\xmlMasterFields.cxx
+source\filter\xml\xmlPropertyHandler.cxx
+source\filter\xml\xmlReport.cxx
+source\filter\xml\xmlReportElement.cxx
+source\filter\xml\xmlReportElementBase.cxx
+source\filter\xml\xmlRow.cxx
+source\filter\xml\xmlSection.cxx
+source\filter\xml\xmlservices.cxx
+source\filter\xml\xmlStyleImport.cxx
+source\filter\xml\xmlSubDocument.cxx
+source\filter\xml\xmlTable.cxx
+source\shared\corestrings.cxx
+source\shared\stringconstants.cxx
+source\shared\uistrings.cxx
+source\shared\xmlstrings.cxx
+source\ui\dlg\AddField.cxx
+source\ui\dlg\CondFormat.cxx
+source\ui\dlg\Condition.cxx
+source\ui\dlg\DateTime.cxx
+source\ui\dlg\dlgpage.cxx
+source\ui\dlg\Formula.cxx
+source\ui\dlg\GroupExchange.cxx
+source\ui\dlg\GroupsSorting.cxx
+source\ui\dlg\Navigator.cxx
+source\ui\dlg\PageNumber.cxx
+source\ui\inspection\DataProviderHandler.cxx
+source\ui\inspection\DefaultInspection.cxx
+source\ui\inspection\GeometryHandler.cxx
+source\ui\inspection\metadata.cxx
+source\ui\inspection\ReportComponentHandler.cxx
+source\ui\misc\ColorListener.cxx
+source\ui\misc\FunctionHelper.cxx
+source\ui\misc\rptuiservices.cxx
+source\ui\misc\RptUndo.cxx
+source\ui\misc\statusbarcontroller.cxx
+source\ui\misc\toolboxcontroller.cxx
+source\ui\misc\UITools.cxx
+source\ui\report\DesignView.cxx
+source\ui\report\dlgedclip.cxx
+source\ui\report\dlgedfac.cxx
+source\ui\report\dlgedfunc.cxx
+source\ui\report\EndMarker.cxx
+source\ui\report\FixedTextColor.cxx
+source\ui\report\FormattedFieldBeautifier.cxx
+source\ui\report\propbrw.cxx
+source\ui\report\ReportController.cxx
+source\ui\report\ReportControllerObserver.cxx
+source\ui\report\ReportRuler.cxx
+source\ui\report\ReportSection.cxx
+source\ui\report\ReportWindow.cxx
+source\ui\report\ScrollHelper.cxx
+source\ui\report\SectionView.cxx
+source\ui\report\SectionWindow.cxx
+source\ui\report\StartMarker.cxx
+source\ui\report\ViewsWindow.cxx
+
+Header Files:
+inc\conditionalexpression.hxx
+inc\dllapi.h
+inc\helpids.hrc
+inc\ModuleHelper.hxx
+inc\PropertyForward.hxx
+inc\ReportDefinition.hxx
+inc\reportformula.hxx
+inc\ReportHelperDefines.hxx
+inc\ReportVisitor.hxx
+inc\RptDef.hxx
+inc\RptModel.hxx
+inc\RptObject.hxx
+inc\RptPage.hxx
+inc\RptResId.hrc
+inc\rptui_slotid.hrc
+inc\UndoActions.hxx
+inc\UndoEnv.hxx
+inc\pch\precompiled_reportdesign.hxx
+source\core\inc\conditionupdater.hxx
+source\core\inc\core_resource.hrc
+source\core\inc\core_resource.hxx
+source\core\inc\FixedLine.hxx
+source\core\inc\FixedText.hxx
+source\core\inc\FormatCondition.hxx
+source\core\inc\FormattedField.hxx
+source\core\inc\Function.hxx
+source\core\inc\Functions.hxx
+source\core\inc\Group.hxx
+source\core\inc\Groups.hxx
+source\core\inc\ImageControl.hxx
+source\core\inc\ReportComponent.hxx
+source\core\inc\ReportControlModel.hxx
+source\core\inc\ReportDrawPage.hxx
+source\core\inc\ReportEngineJFree.hxx
+source\core\inc\ReportHelperImpl.hxx
+source\core\inc\ReportUndoFactory.hxx
+source\core\inc\RptObjectListener.hxx
+source\core\inc\Section.hxx
+source\core\inc\Shape.hxx
+source\core\inc\Tools.hxx
+source\core\sdr\formatnormalizer.hxx
+source\filter\xml\dbloader2.hxx
+source\filter\xml\xmlAutoStyle.hxx
+source\filter\xml\xmlCell.hxx
+source\filter\xml\xmlColumn.hxx
+source\filter\xml\xmlComponent.hxx
+source\filter\xml\xmlCondPrtExpr.hxx
+source\filter\xml\xmlControlProperty.hxx
+source\filter\xml\xmlEnums.hxx
+source\filter\xml\xmlExport.hxx
+source\filter\xml\xmlExportDocumentHandler.hxx
+source\filter\xml\xmlfilter.hxx
+source\filter\xml\xmlFixedContent.hxx
+source\filter\xml\xmlFormatCondition.hxx
+source\filter\xml\xmlFormattedField.hxx
+source\filter\xml\xmlFunction.hxx
+source\filter\xml\xmlGroup.hxx
+source\filter\xml\xmlHelper.hxx
+source\filter\xml\xmlImage.hxx
+source\filter\xml\xmlImportDocumentHandler.hxx
+source\filter\xml\xmlMasterFields.hxx
+source\filter\xml\xmlPropertyHandler.hxx
+source\filter\xml\xmlReport.hxx
+source\filter\xml\xmlReportElement.hxx
+source\filter\xml\xmlReportElementBase.hxx
+source\filter\xml\xmlRow.hxx
+source\filter\xml\xmlSection.hxx
+source\filter\xml\xmlStyleImport.hxx
+source\filter\xml\xmlSubDocument.hxx
+source\filter\xml\xmlTable.hxx
+source\inc\constasciistring.hxx
+source\inc\corestrings.hrc
+source\inc\GroupProperties.hxx
+source\inc\stringconstants.hrc
+source\inc\uistrings.hrc
+source\inc\xmlstrings.hrc
+source\ui\dlg\CondFormat.hrc
+source\ui\dlg\Condition.hxx
+source\ui\dlg\DateTime.hrc
+source\ui\dlg\GroupExchange.hxx
+source\ui\dlg\GroupsSorting.hrc
+source\ui\dlg\PageNumber.hrc
+source\ui\inc\AddField.hxx
+source\ui\inc\ColorChanger.hxx
+source\ui\inc\ColorListener.hxx
+source\ui\inc\ColumnInfo.hxx
+source\ui\inc\CondFormat.hxx
+source\ui\inc\DataProviderHandler.hxx
+source\ui\inc\DateTime.hxx
+source\ui\inc\DefaultInspection.hxx
+source\ui\inc\DesignView.hxx
+source\ui\inc\dlgedclip.hxx
+source\ui\inc\dlgedfac.hxx
+source\ui\inc\dlgedfunc.hxx
+source\ui\inc\dlgpage.hxx
+source\ui\inc\EndMarker.hxx
+source\ui\inc\FixedTextColor.hxx
+source\ui\inc\FormattedFieldBeautifier.hxx
+source\ui\inc\Formula.hxx
+source\ui\inc\FunctionHelper.hxx
+source\ui\inc\GeometryHandler.hxx
+source\ui\inc\GroupsSorting.hxx
+source\ui\inc\InsertFunctions.hxx
+source\ui\inc\IReportControllerObserver.hxx
+source\ui\inc\MarkedSection.hxx
+source\ui\inc\metadata.hxx
+source\ui\inc\Navigator.hxx
+source\ui\inc\PageNumber.hxx
+source\ui\inc\propbrw.hxx
+source\ui\inc\ReportComponentHandler.hxx
+source\ui\inc\ReportController.hxx
+source\ui\inc\ReportControllerObserver.hxx
+source\ui\inc\ReportDefines.hxx
+source\ui\inc\ReportRuler.hxx
+source\ui\inc\ReportSection.hxx
+source\ui\inc\ReportWindow.hxx
+source\ui\inc\RptUndo.hxx
+source\ui\inc\ScrollHelper.hxx
+source\ui\inc\SectionView.hxx
+source\ui\inc\SectionWindow.hxx
+source\ui\inc\StartMarker.hxx
+source\ui\inc\statusbarcontroller.hxx
+source\ui\inc\toolboxcontroller.hxx
+source\ui\inc\UITools.hxx
+source\ui\inc\ViewsWindow.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=inc
+
+qa\complex\reportdesign\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=qa_complex_reportdesign
+
+source\core\api\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=api
+	SLOFILES=
+	$(SLO)$/FormattedField.obj
+	$(SLO)$/Groups.obj
+	$(SLO)$/Group.obj
+	$(SLO)$/Section.obj
+	$(SLO)$/services.obj
+	$(SLO)$/FixedText.obj
+	$(SLO)$/ImageControl.obj
+	$(SLO)$/ReportDefinition.obj
+	$(SLO)$/ReportComponent.obj
+	$(SLO)$/ReportEngineJFree.obj
+	$(SLO)$/Tools.obj
+	$(SLO)$/Function.obj
+	$(SLO)$/Functions.obj
+	$(SLO)$/ReportControlModel.obj
+	$(SLO)$/FormatCondition.obj
+	$(SLO)$/ReportVisitor.obj
+	$(SLO)$/Shape.obj
+	$(SLO)$/FixedLine.obj
+
+source\core\misc\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=core_misc
+	SLOFILES=$(SLO)$/conditionalexpression.obj
+	$(SLO)$/conditionupdater.obj
+	$(SLO)$/reportformula.obj
+
+source\core\resource\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=core_resource
+	SLOFILES=$(SLO)$/core_resource.obj
+	
+
+source\core\sdr\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=core_sdr
+	SLOFILES=$(SLO)$/RptModel.obj
+	$(SLO)$/RptPage.obj
+	$(SLO)$/UndoActions.obj
+	$(SLO)$/RptObject.obj
+	$(SLO)$/RptObjectListener.obj
+	$(SLO)$/ModuleHelper.obj
+	$(SLO)$/PropertyForward.obj
+	$(SLO)$/ReportDrawPage.obj
+	$(SLO)$/ReportUndoFactory.obj
+	$(SLO)$/UndoEnv.obj
+	$(SLO)$/formatnormalizer.obj
+
+source\filter\xml\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=rptxml
+	SLOFILES=$(SLO)$/xmlfilter.obj
+	$(SLO)$/xmlReport.obj
+	$(SLO)$/xmlMasterFields.obj
+	$(SLO)$/xmlGroup.obj
+	$(SLO)$/xmlHelper.obj
+	$(SLO)$/xmlSection.obj
+	$(SLO)$/xmlComponent.obj
+	$(SLO)$/xmlControlProperty.obj
+	$(SLO)$/xmlFormattedField.obj
+	$(SLO)$/xmlReportElement.obj
+	$(SLO)$/xmlReportElementBase.obj
+	$(SLO)$/xmlCondPrtExpr.obj
+	$(SLO)$/xmlImage.obj
+	$(SLO)$/xmlFunction.obj
+	$(SLO)$/xmlStyleImport.obj
+	$(SLO)$/xmlAutoStyle.obj
+	$(SLO)$/xmlExport.obj
+	$(SLO)$/dbloader2.obj
+	$(SLO)$/xmlFormatCondition.obj
+	$(SLO)$/xmlPropertyHandler.obj
+	$(SLO)$/xmlColumn.obj
+	$(SLO)$/xmlCell.obj
+	$(SLO)$/xmlTable.obj
+	$(SLO)$/xmlFixedContent.obj
+	$(SLO)$/xmlSubDocument.obj
+	$(SLO)$/xmlservices.obj
+	$(SLO)$/xmlImportDocumentHandler.obj
+	$(SLO)$/xmlExportDocumentHandler.obj
+
+source\shared\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=shared
+	SLOFILES=
+	$(SLO)$/corestrings.obj
+	$(SLO)$/uistrings.obj
+	$(SLO)$/xmlstrings.obj
+	
+
+source\ui\dlg\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=uidlg
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	
+
+source\ui\inspection\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=ui_inspection
+	SLOFILES=
+	$(SLO)$/DefaultInspection.obj
+	$(SLO)$/ReportComponentHandler.obj
+	$(SLO)$/GeometryHandler.obj
+	$(SLO)$/DataProviderHandler.obj
+	$(SLO)$/metadata.obj
+
+source\ui\misc\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=uimisc
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+
+source\ui\report\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=report
+	SLOFILES=
+	$(SLO)$/SectionWindow.obj
+	$(SLO)$/ReportController.obj
+	$(SLO)$/ReportControllerObserver.obj
+	$(SLO)$/FormattedFieldBeautifier.obj
+	$(SLO)$/FixedTextColor.obj
+	$(SLO)$/ReportSection.obj
+	$(SLO)$/SectionView.obj
+	$(SLO)$/ViewsWindow.obj
+	$(SLO)$/ScrollHelper.obj
+	$(SLO)$/StartMarker.obj
+	$(SLO)$/EndMarker.obj
+	$(SLO)$/dlgedfunc.obj
+	$(SLO)$/dlgedfac.obj
+	$(SLO)$/dlgedclip.obj
+	$(SLO)$/ReportWindow.obj
+	$(SLO)$/DesignView.obj
+	$(SLO)$/propbrw.obj
+
+util\dll.pmk
+
+util\makefile.mk
+	PRJNAME=reportdesign
+	TARGET=rpt
+	TARGET2=$(TARGET)ui
+	i$(TARGET).lib
+	TARGET3=rptxml

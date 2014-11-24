@@ -1,0 +1,109 @@
+Name:
+sax
+
+Dependencies:
+offapi cppuhelper EXPAT:expat comphelper LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\misc\fastsax.component %_DEST%\xml%_EXT%\fastsax.component
+..\%__SRC%\misc\sax.component %_DEST%\xml%_EXT%\sax.component
+..\%__SRC%\misc\sax.inbuild.component %_DEST%\xml%_EXT%\sax.inbuild.component
+
+mkdir: %_DEST%\inc%_EXT%\sax
+mkdir: %_DEST%\inc%_EXT%\sax\tools
+..\inc\sax\dllapi.h %_DEST%\inc%_EXT%\sax\dllapi.h
+..\inc\sax\fshelper.hxx %_DEST%\inc%_EXT%\sax\fshelper.hxx
+..\inc\sax\fastattribs.hxx %_DEST%\inc%_EXT%\sax\fastattribs.hxx
+..\inc\sax\tools\converter.hxx %_DEST%\inc%_EXT%\sax\tools\converter.hxx
+
+dos: sh -c "if test %OS% = MACOSX; then macosx-create-bundle %_DEST%\lib%_EXT%\*.dylib; fi"
+
+Source Files:
+qa\cppunit\test_converter.cxx
+source\expatwrap\attrlistimpl.cxx
+source\expatwrap\saxwriter.cxx
+source\expatwrap\sax_expat.cxx
+source\expatwrap\xml2utf.cxx
+source\fastparser\facreg.cxx
+source\fastparser\fastparser.cxx
+source\tools\converter.cxx
+source\tools\fastattribs.cxx
+source\tools\fastserializer.cxx
+source\tools\fshelper.cxx
+test\saxdemo.cxx
+test\testcomponent.cxx
+test\sax\testsax.cxx
+test\sax\testwriter.cxx
+
+Header Files:
+inc\xml2utf.hxx
+inc\sax\dllapi.h
+inc\sax\fastattribs.hxx
+inc\sax\fshelper.hxx
+inc\sax\parser\saxparser.hxx
+inc\sax\tools\attributemap.hxx
+inc\sax\tools\converter.hxx
+inc\sax\tools\saxobject.hxx
+inc\sax\tools\tokenmap.hxx
+source\expatwrap\attrlistimpl.hxx
+source\expatwrap\factory.hxx
+source\fastparser\fastparser.hxx
+source\tools\fastserializer.hxx
+test\sax\factory.hxx
+
+Patch Files:
+
+Makefiles:
+
+qa\cppunit\makefile.mk
+	PRJNAME=sax
+	TARGET=qa_cppunit
+	SLOFILES=
+	$(SHL1OBJS)
+	
+
+source\expatwrap\makefile.mk
+	PRJNAME=sax
+	TARGET=sax.uno
+	SLOFILES=
+	$(SLO)$/xml2utf.obj
+	$(SLO)$/attrlistimpl.obj
+	$(SLO)$/sax_expat.obj
+	$(SLO)$/saxwriter.obj
+
+source\fastparser\makefile.mk
+	PRJNAME=sax
+	TARGET=fastsax.uno
+	SLOFILES=
+	$(SLO)$/facreg.obj
+	$(SLO)$/fastparser.obj
+	$(SLO)$/xml2utf.obj
+
+source\tools\makefile.mk
+	PRJNAME=sax
+	TARGET=sax
+	SLOFILES=
+	$(SLO)$/converter.obj
+	$(SLO)$/fastattribs.obj
+	$(SLO)$/fastserializer.obj
+	$(SLO)$/fshelper.obj
+
+test\makefile.mk
+	PRJNAME=extensions
+	TARGET=workben
+
+test\sax\makefile.mk
+	PRJNAME=extensions
+	TARGET=testsax
+	SLOFILES=$(SLO)$/testsax.obj
+	$(SLO)$/testwriter.obj
+
+util\makefile.mk
+	PRJNAME=sax
+	TARGET=sax
+
+util\makefile.pmk

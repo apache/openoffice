@@ -1,0 +1,421 @@
+Name:
+i18npool
+
+Dependencies:
+bridges sax stoc comphelper ICU:icu i18nutil LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\xml%_EXT%
+..\xml\*.xml %_DEST%\xml%_EXT%\*.xml
+
+mkdir: %_DEST%\inc%_EXT%\i18npool
+
+..\inc\i18npool\*.* %_DEST%\inc%_EXT%\i18npool\*.*
+
+..\%__SRC%\bin\i18npoo*.dll %_DEST%\bin%_EXT%\i18npoo*.dll
+..\%__SRC%\lib\i18npool.uno.so %_DEST%\lib%_EXT%\i18npool.uno.so
+..\%__SRC%\lib\i18npool.uno.dylib %_DEST%\lib%_EXT%\i18npool.uno.dylib
+
+..\%__SRC%\bin\i18nsea*.dll %_DEST%\bin%_EXT%\i18nsea*.dll
+..\%__SRC%\lib\i18nsearch.uno.so %_DEST%\lib%_EXT%\i18nsearch.uno.so
+..\%__SRC%\lib\i18nsearch.uno.dylib %_DEST%\lib%_EXT%\i18nsearch.uno.dylib
+
+..\%__SRC%\bin\localedata_*.dll %_DEST%\bin%_EXT%\localedata_*.dll
+..\%__SRC%\bin\ld_*.dll %_DEST%\bin%_EXT%\ld_*.dll
+..\%__SRC%\lib\liblocaledata_*.so %_DEST%\lib%_EXT%\liblocaledata_*.so
+..\%__SRC%\lib\liblocaledata_*.dylib %_DEST%\lib%_EXT%\liblocaledata_*.dylib
+
+..\%__SRC%\bin\dict_*.dll %_DEST%\bin%_EXT%\dict_*.dll
+..\%__SRC%\lib\libdict_*.so %_DEST%\lib%_EXT%\libdict_*.so
+..\%__SRC%\lib\libdict_*.dylib %_DEST%\lib%_EXT%\libdict_*.dylib
+
+..\%__SRC%\bin\collator*.dll %_DEST%\bin%_EXT%\collator*.dll
+..\%__SRC%\lib\libcollator_data.so %_DEST%\lib%_EXT%\libcollator_data.so
+..\%__SRC%\lib\libcollator_data.dylib %_DEST%\lib%_EXT%\libcollator_data.dylib
+
+..\%__SRC%\bin\index_da*.dll %_DEST%\bin%_EXT%\index_da*.dll
+..\%__SRC%\lib\libindex_data.so %_DEST%\lib%_EXT%\libindex_data.so
+..\%__SRC%\lib\libindex_data.dylib %_DEST%\lib%_EXT%\libindex_data.dylib
+
+..\%__SRC%\bin\textconv*.dll %_DEST%\bin%_EXT%\textconv*.dll
+..\%__SRC%\lib\libtextconv_dict.so %_DEST%\lib%_EXT%\libtextconv_dict.so
+..\%__SRC%\lib\libtextconv_dict.dylib %_DEST%\lib%_EXT%\libtextconv_dict.dylib
+
+..\version.mk  %_DEST%\inc%_EXT%\i18npool\version.mk
+
+..\%__SRC%\lib\ii18nisolang*.lib %_DEST%\lib%_EXT%\ii18nisolang*.lib
+..\%__SRC%\lib\i18nisolang*.lib %_DEST%\lib%_EXT%\i18nisolang*.lib
+..\%__SRC%\bin\i18nisol*.dll %_DEST%\bin%_EXT%\i18nisol*.dll
+..\%__SRC%\lib\libi18nisolang*.so %_DEST%\lib%_EXT%\libi18nisolang*.so
+..\%__SRC%\lib\libi18nisolang*.dylib %_DEST%\lib%_EXT%\libi18nisolang*.dylib
+
+..\%__SRC%\lib\ii18npaper*.lib %_DEST%\lib%_EXT%\ii18npaper*.lib
+..\%__SRC%\lib\i18npaper*.lib %_DEST%\lib%_EXT%\i18npaper*.lib
+..\%__SRC%\bin\i18npape*.dll %_DEST%\bin%_EXT%\i18npape*.dll
+..\%__SRC%\lib\libi18npaper*.so %_DEST%\lib%_EXT%\libi18npaper*.so
+..\%__SRC%\lib\libi18npaper*.dylib %_DEST%\lib%_EXT%\libi18npaper*.dylib
+
+..\%__SRC%\misc\i18npool.component %_DEST%\xml%_EXT%\i18npool.component
+..\%__SRC%\misc\i18nsearch.component %_DEST%\xml%_EXT%\i18nsearch.component
+
+Source Files:
+inc\pch\precompiled_i18npool.cxx
+source\breakiterator\breakiteratorImpl.cxx
+source\breakiterator\breakiterator_cjk.cxx
+source\breakiterator\breakiterator_ctl.cxx
+source\breakiterator\breakiterator_th.cxx
+source\breakiterator\breakiterator_unicode.cxx
+source\breakiterator\gendict.cxx
+source\breakiterator\xdictionary.cxx
+source\calendar\calendarImpl.cxx
+source\calendar\calendar_gregorian.cxx
+source\calendar\calendar_hijri.cxx
+source\calendar\calendar_jewish.cxx
+source\characterclassification\cclass_unicode.cxx
+source\characterclassification\cclass_unicode_parser.cxx
+source\characterclassification\characterclassificationImpl.cxx
+source\characterclassification\scripttypedetector.cxx
+source\collator\chaptercollator.cxx
+source\collator\collatorImpl.cxx
+source\collator\collator_unicode.cxx
+source\collator\gencoll_rule.cxx
+source\defaultnumberingprovider\defaultnumberingprovider.cxx
+source\indexentry\genindex_data.cxx
+source\indexentry\indexentrysupplier.cxx
+source\indexentry\indexentrysupplier_asian.cxx
+source\indexentry\indexentrysupplier_common.cxx
+source\indexentry\indexentrysupplier_default.cxx
+source\indexentry\indexentrysupplier_ja_phonetic.cxx
+source\inputchecker\inputsequencechecker.cxx
+source\inputchecker\inputsequencechecker_hi.cxx
+source\inputchecker\inputsequencechecker_th.cxx
+source\isolang\insys.cxx
+source\isolang\inunx.cxx
+source\isolang\inwnt.cxx
+source\isolang\isolang.cxx
+source\isolang\mslangid.cxx
+source\localedata\filewriter.cxx
+source\localedata\localedata.cxx
+source\localedata\LocaleNode.cxx
+source\localedata\saxparser.cxx
+source\nativenumber\nativenumbersupplier.cxx
+source\numberformatcode\numberformatcode.cxx
+source\ordinalsuffix\ordinalsuffix.cxx
+source\paper\paper.cxx
+source\registerservices\registerservices.cxx
+source\search\levdis.cxx
+source\search\textsearch.cxx
+source\textconversion\genconv_dict.cxx
+source\textconversion\textconversion.cxx
+source\textconversion\textconversionImpl.cxx
+source\textconversion\textconversion_ko.cxx
+source\textconversion\textconversion_zh.cxx
+source\transliteration\chartonum.cxx
+source\transliteration\fullwidthToHalfwidth.cxx
+source\transliteration\halfwidthToFullwidth.cxx
+source\transliteration\hiraganaToKatakana.cxx
+source\transliteration\ignoreBaFa_ja_JP.cxx
+source\transliteration\ignoreHyuByu_ja_JP.cxx
+source\transliteration\ignoreIandEfollowedByYa_ja_JP.cxx
+source\transliteration\ignoreIterationMark_ja_JP.cxx
+source\transliteration\ignoreKana.cxx
+source\transliteration\ignoreKiKuFollowedBySa_ja_JP.cxx
+source\transliteration\ignoreMiddleDot_ja_JP.cxx
+source\transliteration\ignoreMinusSign_ja_JP.cxx
+source\transliteration\ignoreProlongedSoundMark_ja_JP.cxx
+source\transliteration\ignoreSeparator_ja_JP.cxx
+source\transliteration\ignoreSeZe_ja_JP.cxx
+source\transliteration\ignoreSize_ja_JP.cxx
+source\transliteration\ignoreSpace_ja_JP.cxx
+source\transliteration\ignoreTiJi_ja_JP.cxx
+source\transliteration\ignoreTraditionalKana_ja_JP.cxx
+source\transliteration\ignoreTraditionalKanji_ja_JP.cxx
+source\transliteration\ignoreWidth.cxx
+source\transliteration\ignoreZiZu_ja_JP.cxx
+source\transliteration\katakanaToHiragana.cxx
+source\transliteration\largeToSmall_ja_JP.cxx
+source\transliteration\numtochar.cxx
+source\transliteration\numtotext_cjk.cxx
+source\transliteration\smallToLarge_ja_JP.cxx
+source\transliteration\texttonum.cxx
+source\transliteration\textToPronounce_zh.cxx
+source\transliteration\transliterationImpl.cxx
+source\transliteration\transliteration_body.cxx
+source\transliteration\transliteration_caseignore.cxx
+source\transliteration\transliteration_commonclass.cxx
+source\transliteration\transliteration_Ignore.cxx
+source\transliteration\transliteration_Numeric.cxx
+source\transliteration\transliteration_OneToOne.cxx
+
+Header Files:
+inc\breakiteratorImpl.hxx
+inc\breakiterator_cjk.hxx
+inc\breakiterator_ctl.hxx
+inc\breakiterator_th.hxx
+inc\breakiterator_unicode.hxx
+inc\bullet.h
+inc\calendarImpl.hxx
+inc\calendar_gregorian.hxx
+inc\calendar_hijri.hxx
+inc\calendar_jewish.hxx
+inc\cclass_cjk.hxx
+inc\cclass_unicode.hxx
+inc\chaptercollator.hxx
+inc\characterclassificationImpl.hxx
+inc\chartonum.hxx
+inc\collatorImpl.hxx
+inc\collator_unicode.hxx
+inc\defaultnumberingprovider.hxx
+inc\indexentrysupplier.hxx
+inc\indexentrysupplier_asian.hxx
+inc\indexentrysupplier_common.hxx
+inc\indexentrysupplier_default.hxx
+inc\indexentrysupplier_ja_phonetic.hxx
+inc\inputsequencechecker.hxx
+inc\inputsequencechecker_hi.hxx
+inc\inputsequencechecker_th.hxx
+inc\localedata.hxx
+inc\nativenumbersupplier.hxx
+inc\numberformatcode.hxx
+inc\numtochar.hxx
+inc\numtotext_cjk.hxx
+inc\ordinalsuffix.hxx
+inc\scripttypedetector.hxx
+inc\servicename.hxx
+inc\textconversion.hxx
+inc\textconversionImpl.hxx
+inc\texttonum.hxx
+inc\textToPronounce_zh.hxx
+inc\transliterationImpl.hxx
+inc\transliteration_body.hxx
+inc\transliteration_caseignore.hxx
+inc\transliteration_commonclass.hxx
+inc\transliteration_Ignore.hxx
+inc\transliteration_Numeric.hxx
+inc\transliteration_OneToOne.hxx
+inc\warnings_guard_unicode_brkiter.h
+inc\warnings_guard_unicode_calendar.h
+inc\warnings_guard_unicode_tblcoll.h
+inc\wtt.h
+inc\xdictionary.hxx
+inc\i18npool\i18npooldllapi.h
+inc\i18npool\lang.h
+inc\i18npool\mslangid.hxx
+inc\i18npool\paper.hxx
+inc\pch\precompiled_i18npool.hxx
+source\indexentry\data\indexdata_alphanumeric.h
+source\indexentry\data\indexdata_ja_phonetic.h
+source\localedata\LocaleNode.hxx
+source\nativenumber\data\numberchar.h
+source\search\levdis.hxx
+source\search\textsearch.hxx
+source\transliteration\data\numberchar.h
+
+Patch Files:
+
+Makefiles:
+
+version.mk
+
+inc\makefile.mk
+	PRJNAME=i18npool
+	TARGET=inc
+
+source\breakiterator\makefile.mk
+	PRJNAME=i18npool
+	TARGET=breakiterator
+	SLOFILES=
+	$(SLO)$/breakiteratorImpl.obj
+	$(SLO)$/breakiterator_cjk.obj
+	$(SLO)$/breakiterator_ctl.obj
+	$(SLO)$/breakiterator_th.obj
+	$(SLO)$/breakiterator_unicode.obj
+	$(SLO)$/xdictionary.obj
+	$(subst,$(MISC)$/,$(SLO)$/$(MY_MISC_CXXFILES:s/.c/.obj/))
+	OBJFILES=$(OBJ)$/gendict.obj
+
+source\breakiterator\data\makefile.mk
+	PRJNAME=i18npool
+	TARGET=dict
+	$(SLO1FILES)
+	$(SLO2FILES)
+
+source\calendar\makefile.mk
+	PRJNAME=i18npool
+	TARGET=calendar
+	SLOFILES=
+	$(SLO)$/calendarImpl.obj
+	$(SLO)$/calendar_gregorian.obj
+	$(SLO)$/calendar_hijri.obj
+	$(SLO)$/calendar_jewish.obj
+
+source\characterclassification\makefile.mk
+	PRJNAME=i18npool
+	TARGET=characterclassification
+	SLOFILES=
+	$(SLO)$/characterclassificationImpl.obj
+	$(SLO)$/cclass_unicode.obj
+	$(SLO)$/cclass_unicode_parser.obj
+	$(SLO)$/scripttypedetector.obj
+
+source\collator\makefile.mk
+	PRJNAME=i18npool
+	TARGET=collator
+	SLOFILES=
+	$(SLO)$/collatorImpl.obj
+	$(SLO)$/chaptercollator.obj
+	$(rules_obj)
+
+source\collator\data\makefile.mk
+	PRJNAME=i18npool
+	TARGET=collator_data
+	SLOFILES=$(subst,./,$(SLO)$/collator_$(DATA_TXTFILES:s/.txt/.obj/))
+
+source\defaultnumberingprovider\makefile.mk
+	PRJNAME=i18npool
+	TARGET=defaultnumberingprovider
+	SLOFILES=
+	$(SLO)$/defaultnumberingprovider.obj
+	
+
+source\indexentry\makefile.mk
+	PRJNAME=i18npool
+	TARGET=indexentry
+	SLOFILES=
+	$(SLO)$/indexentrysupplier.obj
+	$(SLO)$/indexentrysupplier_asian.obj
+	$(SLO)$/indexentrysupplier_ja_phonetic.obj
+	$(SLO)$/indexentrysupplier_default.obj
+	$(SLO)$/indexentrysupplier_common.obj
+	OBJFILES=$(OBJ)$/genindex_data.obj
+
+source\indexentry\data\makefile.mk
+	PRJNAME=i18npool
+	TARGET=index_data
+
+source\inputchecker\makefile.mk
+	PRJNAME=i18npool
+	TARGET=inputchecker
+	SLOFILES=
+	$(SLO)$/inputsequencechecker.obj
+	$(SLO)$/inputsequencechecker_th.obj
+	$(SLO)$/inputsequencechecker_hi.obj
+
+source\isolang\makefile.mk
+	PRJNAME=i18npool
+	TARGET=i18nisolang
+	SLOFILES=$(SLO)$/insys.obj
+	$(SLO)$/isolang.obj
+	$(SLO)$/mslangid.obj
+
+source\localedata\makefile.mk
+	PRJNAME=i18npool
+	TARGET=locale
+	SLOFILES=$(SLO)$/localedata.obj
+	OBJFILES=
+	$(OBJ)$/saxparser.obj
+	$(OBJ)$/LocaleNode.obj
+	$(OBJ)$/filewriter.obj
+
+source\localedata\data\makefile.mk
+	PRJNAME=i18npool
+	TARGET=localedata
+	TARGET=ld
+
+source\nativenumber\makefile.mk
+	PRJNAME=i18npool
+	TARGET=nativenumber
+	SLOFILES=
+	$(SLO)$/nativenumbersupplier.obj
+	
+
+source\numberformatcode\makefile.mk
+	PRJNAME=i18npool
+	TARGET=numberformatcode
+	SLOFILES=
+	$(SLO)$/numberformatcode.obj
+
+source\ordinalsuffix\makefile.mk
+	PRJNAME=i18npool
+	TARGET=ordinalsuffix
+	SLOFILES=
+	$(SLO)$/ordinalsuffix.obj
+
+source\paper\makefile.mk
+	PRJNAME=i18npool
+	TARGET=i18npaper
+	SLOFILES=$(SLO)$/paper.obj
+
+source\registerservices\makefile.mk
+	PRJNAME=i18npool
+	TARGET=registerservices
+	SLOFILES=
+	$(SLO)$/registerservices.obj
+
+source\search\makefile.mk
+	PRJNAME=i18npool
+	TARGET=i18nsearch.uno
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/levdis.obj
+
+source\textconversion\makefile.mk
+	PRJNAME=i18npool
+	TARGET=textconversion
+	SLOFILES=
+	$(SLO)$/textconversionImpl.obj
+	$(SLO)$/textconversion.obj
+	$(SLO)$/textconversion_ko.obj
+	$(SLO)$/textconversion_zh.obj
+	OBJFILES=$(OBJ)$/genconv_dict.obj
+
+source\textconversion\data\makefile.mk
+	PRJNAME=i18npool
+	TARGET=textconv_dict
+
+source\transliteration\makefile.mk
+	PRJNAME=i18npool
+	TARGET=transliterationImpl
+	SLOFILES=
+	$(SLO)$/transliteration_body.obj
+	$(SLO)$/transliteration_caseignore.obj
+	$(SLO)$/transliterationImpl.obj
+	$(SLO)$/transliteration_commonclass.obj
+	$(SLO)$/transliteration_OneToOne.obj
+	$(SLO)$/transliteration_Ignore.obj
+	$(SLO)$/transliteration_Numeric.obj
+	$(SLO)$/hiraganaToKatakana.obj
+	$(SLO)$/katakanaToHiragana.obj
+	$(SLO)$/ignoreKana.obj
+	$(SLO)$/halfwidthToFullwidth.obj
+	$(SLO)$/fullwidthToHalfwidth.obj
+	$(SLO)$/ignoreWidth.obj
+	$(SLO)$/smallToLarge_ja_JP.obj
+	$(SLO)$/largeToSmall_ja_JP.obj
+	$(SLO)$/ignoreSize_ja_JP.obj
+	$(SLO)$/ignoreMinusSign_ja_JP.obj
+	$(SLO)$/ignoreIterationMark_ja_JP.obj
+	$(SLO)$/ignoreTraditionalKana_ja_JP.obj
+	$(SLO)$/ignoreTraditionalKanji_ja_JP.obj
+	$(SLO)$/ignoreProlongedSoundMark_ja_JP.obj
+	$(SLO)$/ignoreZiZu_ja_JP.obj
+	$(SLO)$/ignoreBaFa_ja_JP.obj
+	$(SLO)$/ignoreTiJi_ja_JP.obj
+	$(SLO)$/ignoreHyuByu_ja_JP.obj
+	$(SLO)$/ignoreSeZe_ja_JP.obj
+	$(SLO)$/ignoreIandEfollowedByYa_ja_JP.obj
+	$(SLO)$/ignoreKiKuFollowedBySa_ja_JP.obj
+	$(SLO)$/ignoreSeparator_ja_JP.obj
+	$(SLO)$/ignoreSpace_ja_JP.obj
+	$(SLO)$/ignoreMiddleDot_ja_JP.obj
+	$(SLO)$/textToPronounce_zh.obj
+	$(SLO)$/numtochar.obj
+	$(SLO)$/numtotext_cjk.obj
+	$(SLO)$/chartonum.obj
+	$(SLO)$/texttonum.obj
+
+util\makefile.mk
+	PRJNAME=i18npool
+	TARGET=i18npool.uno
+
+util\makefile.pmk

@@ -1,0 +1,40 @@
+Name:
+apple_remote
+
+Dependencies:
+solenv	soltools NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\apple_remote
+..\inc\*.h %_DEST%\inc%_EXT%\apple_remote\*
+
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+
+Source Files:
+
+Header Files:
+inc\AppleRemote.h
+inc\GlobalKeyboardDevice.h
+inc\HIDRemoteControlDevice.h
+inc\KeyspanFrontRowControl.h
+inc\MultiClickRemoteBehavior.h
+inc\RemoteControl.h
+inc\RemoteControlContainer.h
+inc\RemoteMainController.h
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=external
+	TARGET=AppleRemote
+	SLOFILES=
+	$(SLO)$/AppleRemote.obj
+	$(SLO)$/RemoteControl.obj
+	$(SLO)$/RemoteControlContainer.obj
+	$(SLO)$/GlobalKeyboardDevice.obj
+	$(SLO)$/HIDRemoteControlDevice.obj
+	$(SLO)$/MultiClickRemoteBehavior.obj
+	$(SLO)$/RemoteMainController.obj

@@ -1,0 +1,21 @@
+Name:
+rhino
+
+Dependencies:
+soltools NULL
+
+Build Rules:
+..\%__SRC%\misc\build\rhino1_7R3\build\rhino1_7R3\js.jar %_DEST%\bin%_EXT%\js.jar
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+rhino1_7R3.patch
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=ooo_rhino
+	TARGET=ooo_rhino

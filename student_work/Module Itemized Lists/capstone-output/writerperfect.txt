@@ -1,0 +1,79 @@
+Name:
+writerperfect
+
+Dependencies:
+sot comphelper xmloff LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\lib\libwpft*.so %_DEST%\lib%_EXT%
+..\%__SRC%\bin\wpft*.dll %_DEST%\bin%_EXT%
+..\%__SRC%\bin\wpftgo.dll %_DEST%\bin%_EXT%\wpftgo.dll
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\wpft.component %_DEST%\xml%_EXT%\wpft.component
+
+Source Files:
+source\filter\DocumentCollector.cxx
+source\filter\DocumentElement.cxx
+source\filter\DocumentHandler.cxx
+source\filter\FontStyle.cxx
+source\filter\ListStyle.cxx
+source\filter\PageSpan.cxx
+source\filter\SectionStyle.cxx
+source\filter\TableStyle.cxx
+source\filter\TextRunStyle.cxx
+source\stream\WPXSvStream.cxx
+source\wpdimp\WordPerfectCollector.cxx
+source\wpdimp\WordPerfectImportFilter.cxx
+source\wpdimp\wpft_genericfilter.cxx
+
+Header Files:
+source\filter\DocumentCollector.hxx
+source\filter\DocumentElement.hxx
+source\filter\DocumentHandler.hxx
+source\filter\FilterInternal.hxx
+source\filter\FontStyle.hxx
+source\filter\ListStyle.hxx
+source\filter\PageSpan.hxx
+source\filter\SectionStyle.hxx
+source\filter\Style.hxx
+source\filter\TableStyle.hxx
+source\filter\TextRunStyle.hxx
+source\filter\WriterProperties.hxx
+source\stream\WPXSvStream.h
+source\wpdimp\WordPerfectCollector.hxx
+source\wpdimp\WordPerfectImportFilter.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\filter\makefile.mk
+	PRJNAME=writerperfect
+	TARGET=filter
+	SLOFILES=
+	$(SLO)$/DocumentElement.obj
+	$(SLO)$/FontStyle.obj
+	$(SLO)$/ListStyle.obj
+	$(SLO)$/DocumentHandler.obj
+	$(SLO)$/PageSpan.obj
+	$(SLO)$/SectionStyle.obj
+	$(SLO)$/TableStyle.obj
+	$(SLO)$/TextRunStyle.obj
+	$(SLO)$/DocumentCollector.obj
+
+source\stream\makefile.mk
+	PRJNAME=writerperfect
+	TARGET=stream
+	SLOFILES=$(SLO)$/WPXSvStream.obj
+
+source\wpdimp\makefile.mk
+	PRJNAME=writerperfect
+	TARGET=wpdimp
+	SLOFILES=
+	$(SLO)$/WordPerfectCollector.obj
+	$(SLO)$/WordPerfectImportFilter.obj
+	$(SLO)$/wpft_genericfilter.obj
+
+util\makefile.mk
+	PRJNAME=writerperfect
+	TARGET=writerperfect

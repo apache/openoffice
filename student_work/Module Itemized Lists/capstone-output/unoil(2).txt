@@ -1,0 +1,58 @@
+Name:
+unoil
+
+Dependencies:
+: codemaker offapi ridljar solenv cli_ure NULL
+
+Build Rules:
+..\%__SRC%\class\unoil.jar %_DEST%\bin%_EXT%\unoil.jar
+..\%__SRC%\bin\cli_oootypes.dll %_DEST%\bin%_EXT%\cli_oootypes.dll
+..\%__SRC%\bin\cli_oootypes.config %_DEST%\bin%_EXT%\cli_oootypes.config
+..\%__SRC%\bin\policy*.dll %_DEST%\bin%_EXT%\policy*.dll
+..\%__SRC%\bin\clioootypesversion.mk %_DEST%\bin%_EXT%\clioootypesversion.mk 
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+climaker\makefile.mk
+	PRJNAME=unoil
+	TARGET=unotypes
+
+com\sun\star\deployment\ui\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_deployment_ui
+
+com\sun\star\frame\status\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_framestatus
+
+com\sun\star\graphic\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_graphic
+
+com\sun\star\mail\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_mail
+
+com\sun\star\media\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_media
+
+drafts\com\sun\star\frame\status\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil_framestatus_drafts
+
+javamaker\makefile.mk
+	PRJNAME:=unoil
+	TARGET:=javamaker
+
+util\makefile.mk
+	PRJNAME=unoil
+	TARGET=unoil
+
+util\makefile.pmk

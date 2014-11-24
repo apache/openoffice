@@ -1,0 +1,52 @@
+Name:
+swext
+
+Dependencies:
+officecfg L10N:l10n javaunohelper ridljar unoil jurt APACHE_COMMONS:apache-commons readlicense_oo xsltml xmlhelp NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%\swext
+..\%__SRC%\bin\wiki-publisher.oxt %_DEST%\bin%_EXT%\swext\wiki-publisher.oxt
+..\%__SRC%\bin\mediawiki_develop.zip %_DEST%\bin%_EXT%\swext\mediawiki_develop.zip
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.pmk
+
+mediawiki\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki
+
+mediawiki\help\makefile.mk
+	PRJNAME=swext
+	TARGET=$(PRJNAME)_help
+	LINKNAME:=help
+	LINKLINKFILES=
+	$(PACKAGE)/{$(XHPFILES)}
+
+mediawiki\src\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki
+
+mediawiki\src\registry\data\org\openoffice\Office\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki_registry_data_office
+
+mediawiki\src\registry\data\org\openoffice\Office\Custom\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki_registry_data_Custom
+
+mediawiki\src\registry\data\org\openoffice\TypeDetection\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki_registry_data_typedetection
+
+mediawiki\src\registry\schema\org\openoffice\Office\Custom\makefile.mk
+	PRJNAME=swext
+	TARGET=mediawiki_registry_schema_custom

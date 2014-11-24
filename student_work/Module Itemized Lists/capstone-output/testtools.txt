@@ -1,0 +1,81 @@
+Name:
+testtools
+
+Dependencies:
+cpputools io remotebridges stoc javaunohelper pyuno cli_ure offapi ure LIBXSLT:libxslt NULL
+
+Build Rules:
+
+Source Files:
+inc\pch\precompiled_testtools.cxx
+source\bridgetest\bridgetest.cxx
+source\bridgetest\constructors.cxx
+source\bridgetest\cppobj.cxx
+source\bridgetest\currentcontextchecker.cxx
+source\bridgetest\multi.cxx
+source\bridgetest\cli\cli_cpp_bridgetest.cxx
+source\performance\pseudo.cxx
+source\performance\ubobject.cxx
+source\performance\ubtest.cxx
+
+Header Files:
+inc\pch\precompiled_testtools.hxx
+source\bridgetest\currentcontextchecker.hxx
+source\bridgetest\multi.hxx
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\comp\bridge\makefile.mk
+	PRJNAME=testtools
+	TARGET=com_sun_star_comp_bridge
+
+inc\makefile.mk
+	PRJNAME=testtools
+	TARGET=inc
+
+qa\cli\makefile.mk
+	PRJNAME:=testtools
+	TARGET:=test_cli
+
+qa\cliversioning\makefile.mk
+	PRJNAME=cli_ure
+	TARGET:=qa_test_climaker
+
+source\bridgetest\makefile.mk
+	PRJNAME=testtools
+	TARGET=bridgetest
+	SLOFILES=
+	$(SLO)$/bridgetest.obj
+	$(SLO)$/cppobj.obj
+	$(SLO)$/currentcontextchecker.obj
+	$(SLO)$/multi.obj
+
+source\bridgetest\cli\makefile.mk
+	PRJNAME=testtools
+	TARGET=cli_cpp_bridgetest.uno
+	SLOFILES=
+	$(SLO)$/cli_cpp_bridgetest.obj
+
+source\bridgetest\idl\makefile.mk
+	PRJNAME:=testtools
+	TARGET:=bridgetest_idl
+
+source\bridgetest\pyuno\makefile.mk
+	PRJNAME=pyuno
+	TARGET=test
+
+source\cliversioning\makefile.mk
+	PRJNAME=cli_ure
+	TARGET:=test_climaker
+
+source\performance\makefile.mk
+	PRJNAME=testtools
+	TARGET=performancetest
+
+source\servicetests\makefile.mk
+	PRJNAME:=testtools
+	TARGET:=testtools_servicetests
+
+util\makefile.pmk

@@ -1,0 +1,1280 @@
+wizards
+=============
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/config
+
+mkout -- version: 1.8
+Making:    configall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicusr.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicusr.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicusr.dpzz
+cat ../../wntmsci12.pro/misc/basicusr.dpzz C:/cygwin/tmp/mkZ8vPNF | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/configall.dpz
+Making:    basicusr.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicusr.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicusr.zip not found or empty
+  adding: dialog.xlc (deflated 37%)
+  adding: script.xlc (deflated 37%)
+if [ -f ../../wntmsci12.pro/bin/basicusr.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicusr.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/wizards/util
+
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/tutorials
+
+Making:    tutorials.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvtutorials.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz C:/cygwin/tmp/mk2yQI4x | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/tutorials.dpz
+Making:    basicsrvtutorials.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvtutorials.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvtutorials.zip not found or empty
+  adding: TutorialCloseDialog.xdl (deflated 55%)
+  adding: TutorialOpenDialog.xdl (deflated 66%)
+  adding: TutorialsDialog.xdl (deflated 65%)
+  adding: Functions.xba (deflated 71%)
+  adding: RoadMap.xba (deflated 65%)
+  adding: ShowInfoDialog.xba (deflated 73%)
+  adding: TutorialClose.xba (deflated 50%)
+  adding: TutorialCreator.xba (deflated 49%)
+  adding: TutorialOpen.xba (deflated 60%)
+  adding: dialog.xlb (deflated 52%)
+  adding: script.xlb (deflated 56%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvtutorials.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvtutorials.zip \
+	    ; fi
+Making:    tutorials.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvtutorials.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvtutorials.dpzz C:/cygwin/tmp/mkAOPTSI | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/tutorials.dpz
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/imagelists
+
+Making:    wzimglst.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/wzimglst.wzimglst.dprr
+Making:    wzimglst.wzimglst.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/wzimglst.srs -fo=../../wntmsci12.pro/misc/wzimglst.wzimglst.dprr -p=wzimglst imagelists.src
+cat ../../wntmsci12.pro/misc/wzimglst.*.dprr >> ../../wntmsci12.pro/misc/wzimglst.dpr
+Making:    wzimglst.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkwqoNjV
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\wzimglst -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" imagelists.src C:\cygwin\tmp\7B1E.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\7B1F.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\7B3F.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/wzimglst.srs
+mv ../../wntmsci12.pro/srs/wzimglst.srs.wntmsci12.pro ../../wntmsci12.pro/srs/wzimglst.srs
+/bin/rm -f ../../wntmsci12.pro/srs/wzimglst.srs.wntmsci12.pro
+Making:    wzien-US.res
+Compiling: rsc_wzi
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mk5zJSy7 > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/gimmicks
+
+Making:    gimmicks.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvgimmicks.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz C:/cygwin/tmp/mk7SdABN | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/gimmicks.dpz
+Making:    basicsrvgimmicks.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvgimmicks.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvgimmicks.zip not found or empty
+  adding: ReadFolderDlg.xdl (deflated 66%)
+  adding: UserfieldDlg.xdl (deflated 76%)
+  adding: AutoText.xba (deflated 66%)
+  adding: ChangeAllChars.xba (deflated 59%)
+  adding: GetTexts.xba (deflated 74%)
+  adding: ReadDir.xba (deflated 69%)
+  adding: Userfields.xba (deflated 72%)
+  adding: dialog.xlb (deflated 43%)
+  adding: script.xlb (deflated 53%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvgimmicks.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvgimmicks.zip \
+	    ; fi
+Making:    gimmicks.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvgimmicks.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvgimmicks.dpzz C:/cygwin/tmp/mkx7Bsov | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/gimmicks.dpz
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/template
+
+Making:    template.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/template.template.dprr
+Making:    template.dpz
+dmake  -f makefile.mk make_srs_deps="true" make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvtemplate.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz C:/cygwin/tmp/mkFfRtXw | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/template.dpz
+Making:    template.template.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/template.srs -fo=../../wntmsci12.pro/misc/template.template.dprr -p=template template.src
+cat ../../wntmsci12.pro/misc/template.*.dprr >> ../../wntmsci12.pro/misc/template.dpr
+Making:    basicsrvtemplate.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvtemplate.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvtemplate.zip not found or empty
+  adding: DialogStyles.xdl (deflated 61%)
+  adding: TemplateDialog.xdl (deflated 70%)
+  adding: Autotext.xba (deflated 64%)
+  adding: Correspondence.xba (deflated 71%)
+  adding: ModuleAgenda.xba (deflated 69%)
+  adding: Samples.xba (deflated 64%)
+  adding: dialog.xlb (deflated 48%)
+  adding: script.xlb (deflated 50%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvtemplate.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvtemplate.zip \
+	    ; fi
+Making:    template.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvtemplate.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvtemplate.dpzz C:/cygwin/tmp/mkMVcIhw | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/template.dpz
+Making:    template.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkULfjYm
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\template -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" template.src C:\cygwin\tmp\8D75.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\8D76.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\8D87.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/template.srs
+mv ../../wntmsci12.pro/srs/template.srs.wntmsci12.pro ../../wntmsci12.pro/srs/template.srs
+/bin/rm -f ../../wntmsci12.pro/srs/template.srs.wntmsci12.pro
+Making:    tplen-US.res
+Compiling: rsc_tpl
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mk8612cN > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/tools
+
+Making:    tools.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvtools.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvtools.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvtools.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvtools.dpzz C:/cygwin/tmp/mkSLLhLc | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/tools.dpz
+Making:    basicsrvtools.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvtools.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvtools.zip not found or empty
+  adding: DlgOverwriteAll.xdl (deflated 64%)
+  adding: Debug.xba (deflated 71%)
+  adding: Listbox.xba (deflated 75%)
+  adding: Misc.xba (deflated 72%)
+  adding: ModuleControls.xba (deflated 72%)
+  adding: Strings.xba (deflated 72%)
+  adding: UCB.xba (deflated 68%)
+  adding: dialog.xlb (deflated 37%)
+  adding: script.xlb (deflated 55%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvtools.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvtools.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards
+
+Making:    wizards_common.dpj
+javadeps
+
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/wizards_common_dummy.java
+javac -classpath ".;../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jut.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/saxon9.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkoLHkqE
+Making:    wizards_common.dpj
+javadeps
+
+echo Manifest-Version: 1.0 > ../../../../wntmsci12.pro/class/wizards_common/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../wntmsci12.pro/class/wizards_common/META-INF/MANIFEST.MF
+cd ../../../../wntmsci12.pro/class/wizards_common && zip  -u -rX ../commonwizards.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../commonwizards.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 11%)
+cd ../../../../wntmsci12.pro/class && zip  -u -rX commonwizards.jar com/sun/star/wizards/common	       	 			com/sun/star/wizards/db	       	 			com/sun/star/wizards/ui	       	 			com/sun/star/wizards/document     	 			com/sun/star/wizards/text  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/common/ (stored 0%)
+  adding: com/sun/star/wizards/common/ConfigGroup.class (deflated 54%)
+  adding: com/sun/star/wizards/common/ConfigNode.class (deflated 34%)
+  adding: com/sun/star/wizards/common/ConfigSet.class (deflated 51%)
+  adding: com/sun/star/wizards/common/Configuration.class (deflated 60%)
+  adding: com/sun/star/wizards/common/DebugHelper.class (deflated 50%)
+  adding: com/sun/star/wizards/common/Desktop$OfficePathRetriever.class (deflated 50%)
+  adding: com/sun/star/wizards/common/Desktop.class (deflated 60%)
+  adding: com/sun/star/wizards/common/FileAccess.class (deflated 53%)
+  adding: com/sun/star/wizards/common/Helper$DateUtils.class (deflated 53%)
+  adding: com/sun/star/wizards/common/Helper.class (deflated 53%)
+  adding: com/sun/star/wizards/common/HelpIds.class (deflated 72%)
+  adding: com/sun/star/wizards/common/Indexable.class (deflated 12%)
+  adding: com/sun/star/wizards/common/InvalidQueryException.class (deflated 39%)
+  adding: com/sun/star/wizards/common/IRenderer.class (deflated 22%)
+  adding: com/sun/star/wizards/common/JavaTools.class (deflated 50%)
+  adding: com/sun/star/wizards/common/NamedValueCollection.class (deflated 54%)
+  adding: com/sun/star/wizards/common/NoValidPathException.class (deflated 39%)
+  adding: com/sun/star/wizards/common/NumberFormatter.class (deflated 57%)
+  adding: com/sun/star/wizards/common/NumericalHelper$1.class (deflated 31%)
+  adding: com/sun/star/wizards/common/NumericalHelper$RomanNumbering.class (deflated 43%)
+  adding: com/sun/star/wizards/common/NumericalHelper$TransformNumToHex.class (deflated 38%)
+  adding: com/sun/star/wizards/common/NumericalHelper$TypeObject.class (deflated 45%)
+  adding: com/sun/star/wizards/common/NumericalHelper.class (deflated 55%)
+  adding: com/sun/star/wizards/common/Properties.class (deflated 53%)
+  adding: com/sun/star/wizards/common/PropertyNames.class (deflated 40%)
+  adding: com/sun/star/wizards/common/PropertySetHelper.class (deflated 53%)
+  adding: com/sun/star/wizards/common/Resource.class (deflated 52%)
+  adding: com/sun/star/wizards/common/SystemDialog.class (deflated 56%)
+  adding: com/sun/star/wizards/common/TerminateWizardException.class (deflated 44%)
+  adding: com/sun/star/wizards/common/UCB$Verifier.class (deflated 27%)
+  adding: com/sun/star/wizards/common/UCB.class (deflated 52%)
+  adding: com/sun/star/wizards/common/XMLHelper.class (deflated 47%)
+  adding: com/sun/star/wizards/common/XMLProvider.class (deflated 20%)
+  adding: com/sun/star/wizards/db/ (stored 0%)
+  adding: com/sun/star/wizards/db/BlindtextCreator.class (deflated 49%)
+  adding: com/sun/star/wizards/db/ColumnPropertySet.class (deflated 52%)
+  adding: com/sun/star/wizards/db/CommandMetaData.class (deflated 55%)
+  adding: com/sun/star/wizards/db/CommandName.class (deflated 54%)
+  adding: com/sun/star/wizards/db/DatabaseObjectWizard.class (deflated 53%)
+  adding: com/sun/star/wizards/db/DBMetaData$CommandObject.class (deflated 55%)
+  adding: com/sun/star/wizards/db/DBMetaData.class (deflated 56%)
+  adding: com/sun/star/wizards/db/FieldColumn.class (deflated 54%)
+  adding: com/sun/star/wizards/db/QueryMetaData$QueryType.class (deflated 31%)
+  adding: com/sun/star/wizards/db/QueryMetaData.class (deflated 54%)
+  adding: com/sun/star/wizards/db/RecordParser.class (deflated 52%)
+  adding: com/sun/star/wizards/db/RelationController.class (deflated 49%)
+  adding: com/sun/star/wizards/db/SQLQueryComposer.class (deflated 53%)
+  adding: com/sun/star/wizards/db/TableDescriptor$ColumnDescriptor.class (deflated 45%)
+  adding: com/sun/star/wizards/db/TableDescriptor.class (deflated 54%)
+  adding: com/sun/star/wizards/db/TypeInspector$TypeInfo.class (deflated 40%)
+  adding: com/sun/star/wizards/db/TypeInspector.class (deflated 46%)
+  adding: com/sun/star/wizards/ui/ (stored 0%)
+  adding: com/sun/star/wizards/ui/AggregateComponent$ActionListenerImpl.class (deflated 48%)
+  adding: com/sun/star/wizards/ui/AggregateComponent$ControlRow$ItemListenerImpl.class (deflated 50%)
+  adding: com/sun/star/wizards/ui/AggregateComponent$ControlRow.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/AggregateComponent.class (deflated 53%)
+  adding: com/sun/star/wizards/ui/ButtonList$1.class (deflated 27%)
+  adding: com/sun/star/wizards/ui/ButtonList$Counter.class (deflated 28%)
+  adding: com/sun/star/wizards/ui/ButtonList$IImageRenderer.class (deflated 38%)
+  adding: com/sun/star/wizards/ui/ButtonList$SimpleCounterRenderer.class (deflated 49%)
+  adding: com/sun/star/wizards/ui/ButtonList.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/CommandFieldSelection$ItemListenerImpl.class (deflated 54%)
+  adding: com/sun/star/wizards/ui/CommandFieldSelection.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/ControlScroller$AdjustmentListenerImpl.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/ControlScroller.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/DBLimitedFieldSelection.class (deflated 48%)
+  adding: com/sun/star/wizards/ui/DocumentPreview.class (deflated 52%)
+  adding: com/sun/star/wizards/ui/event/ (stored 0%)
+  adding: com/sun/star/wizards/ui/event/AbstractListener.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/event/CommonListener.class (deflated 63%)
+  adding: com/sun/star/wizards/ui/event/DataAware$Listener.class (deflated 31%)
+  adding: com/sun/star/wizards/ui/event/DataAware$PropertyValue.class (deflated 51%)
+  adding: com/sun/star/wizards/ui/event/DataAware$Value.class (deflated 40%)
+  adding: com/sun/star/wizards/ui/event/DataAware.class (deflated 51%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$BooleanFieldValue.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$ConvertedStringValue.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$DoubleFieldValue.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$FieldValue.class (deflated 46%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$IntFieldValue.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields$SimpleFieldValue.class (deflated 43%)
+  adding: com/sun/star/wizards/ui/event/DataAwareFields.class (deflated 53%)
+  adding: com/sun/star/wizards/ui/event/EventNames.class (deflated 48%)
+  adding: com/sun/star/wizards/ui/event/ListModelBinder$1.class (deflated 46%)
+  adding: com/sun/star/wizards/ui/event/ListModelBinder$Renderer.class (deflated 36%)
+  adding: com/sun/star/wizards/ui/event/ListModelBinder.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/event/MethodInvocation.class (deflated 54%)
+  adding: com/sun/star/wizards/ui/event/RadioDataAware.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/event/SimpleDataAware.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/event/Task.class (deflated 57%)
+  adding: com/sun/star/wizards/ui/event/TaskEvent.class (deflated 41%)
+  adding: com/sun/star/wizards/ui/event/TaskListener.class (deflated 33%)
+  adding: com/sun/star/wizards/ui/event/UnoDataAware$1.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/event/UnoDataAware$2.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/event/UnoDataAware.class (deflated 59%)
+  adding: com/sun/star/wizards/ui/FieldSelection$ActionListenerImpl.class (deflated 48%)
+  adding: com/sun/star/wizards/ui/FieldSelection$ItemListenerImpl.class (deflated 49%)
+  adding: com/sun/star/wizards/ui/FieldSelection.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/FilterComponent$ControlRow.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/FilterComponent$ItemListenerImpl.class (deflated 56%)
+  adding: com/sun/star/wizards/ui/FilterComponent$TextListenerImpl.class (deflated 54%)
+  adding: com/sun/star/wizards/ui/FilterComponent.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/ImageList$1.class (deflated 26%)
+  adding: com/sun/star/wizards/ui/ImageList$Counter.class (deflated 28%)
+  adding: com/sun/star/wizards/ui/ImageList$IImageRenderer.class (deflated 39%)
+  adding: com/sun/star/wizards/ui/ImageList$ImageKeyListener.class (deflated 50%)
+  adding: com/sun/star/wizards/ui/ImageList$OMouseListener.class (deflated 52%)
+  adding: com/sun/star/wizards/ui/ImageList$SimpleCounterRenderer.class (deflated 49%)
+  adding: com/sun/star/wizards/ui/ImageList.class (deflated 57%)
+  adding: com/sun/star/wizards/ui/PathSelection$DialogTypes.class (deflated 31%)
+  adding: com/sun/star/wizards/ui/PathSelection$TransferMode.class (deflated 31%)
+  adding: com/sun/star/wizards/ui/PathSelection.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/PeerConfig$ControlTask.class (deflated 43%)
+  adding: com/sun/star/wizards/ui/PeerConfig$ImageUrlTask.class (deflated 43%)
+  adding: com/sun/star/wizards/ui/PeerConfig$PeerTask.class (deflated 45%)
+  adding: com/sun/star/wizards/ui/PeerConfig.class (deflated 57%)
+  adding: com/sun/star/wizards/ui/SortingComponent$ItemListenerImpl.class (deflated 51%)
+  adding: com/sun/star/wizards/ui/SortingComponent.class (deflated 51%)
+  adding: com/sun/star/wizards/ui/TitlesComponent$ControlRow.class (deflated 52%)
+  adding: com/sun/star/wizards/ui/TitlesComponent.class (deflated 54%)
+  adding: com/sun/star/wizards/ui/UIConsts$CONTROLTYPE.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/UIConsts.class (deflated 47%)
+  adding: com/sun/star/wizards/ui/UnoDialog.class (deflated 58%)
+  adding: com/sun/star/wizards/ui/UnoDialog2.class (deflated 71%)
+  adding: com/sun/star/wizards/ui/WizardDialog.class (deflated 55%)
+  adding: com/sun/star/wizards/ui/XCommandSelectionListener.class (deflated 24%)
+  adding: com/sun/star/wizards/ui/XCompletion.class (deflated 31%)
+  adding: com/sun/star/wizards/ui/XFieldSelectionListener.class (deflated 36%)
+  adding: com/sun/star/wizards/ui/XPathSelectionListener.class (deflated 19%)
+  adding: com/sun/star/wizards/document/ (stored 0%)
+  adding: com/sun/star/wizards/document/Control.class (deflated 57%)
+  adding: com/sun/star/wizards/document/DatabaseControl.class (deflated 56%)
+  adding: com/sun/star/wizards/document/FormHandler$ControlData.class (deflated 41%)
+  adding: com/sun/star/wizards/document/FormHandler.class (deflated 56%)
+  adding: com/sun/star/wizards/document/GridControl.class (deflated 58%)
+  adding: com/sun/star/wizards/document/OfficeDocument.class (deflated 54%)
+  adding: com/sun/star/wizards/document/Shape.class (deflated 54%)
+  adding: com/sun/star/wizards/document/TimeStampControl.class (deflated 56%)
+  adding: com/sun/star/wizards/text/ (stored 0%)
+  adding: com/sun/star/wizards/text/TextDocument$ModuleIdentifier.class (deflated 37%)
+  adding: com/sun/star/wizards/text/TextDocument.class (deflated 56%)
+  adding: com/sun/star/wizards/text/TextFieldHandler.class (deflated 53%)
+  adding: com/sun/star/wizards/text/TextFrameHandler.class (deflated 46%)
+  adding: com/sun/star/wizards/text/TextSectionHandler.class (deflated 54%)
+  adding: com/sun/star/wizards/text/TextStyleHandler.class (deflated 50%)
+  adding: com/sun/star/wizards/text/TextTableHandler.class (deflated 56%)
+  adding: com/sun/star/wizards/text/ViewHandler.class (deflated 55%)
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/fax
+
+Making:    fax.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkCDvQA2
+Making:    fax.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/fax_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/fax/MANIFEST.MF ../../../../../wntmsci12.pro/misc/fax_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/fax/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/fax/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/fax/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/fax_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/fax/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/fax && zip  -u -rX ../fax.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../fax.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 19%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX fax.jar com/sun/star/wizards/fax  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/fax/ (stored 0%)
+  adding: com/sun/star/wizards/fax/CallWizard$WizardImplementation.class (deflated 49%)
+  adding: com/sun/star/wizards/fax/CallWizard.class (deflated 49%)
+  adding: com/sun/star/wizards/fax/CGFax.class (deflated 48%)
+  adding: com/sun/star/wizards/fax/CGFaxWizard.class (deflated 34%)
+  adding: com/sun/star/wizards/fax/FaxDocument.class (deflated 53%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialog.class (deflated 67%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialogConst.class (deflated 60%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialogImpl$1.class (deflated 32%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialogImpl$myPathSelectionListener.class (deflated 55%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialogImpl.class (deflated 58%)
+  adding: com/sun/star/wizards/fax/FaxWizardDialogResources.class (deflated 54%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/fax.jar' -o ../../../../../wntmsci12.pro/misc/fax.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt fax.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/form
+
+Making:    form.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mk2ZqCd0
+Making:    form.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/form_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/form/MANIFEST.MF ../../../../../wntmsci12.pro/misc/form_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/form/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/form/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/form/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/form_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/form/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/form && zip  -u -rX ../form.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../form.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 19%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX form.jar com/sun/star/wizards/form  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/form/ (stored 0%)
+  adding: com/sun/star/wizards/form/CallFormWizard$FormWizardImplementation.class (deflated 53%)
+  adding: com/sun/star/wizards/form/CallFormWizard.class (deflated 50%)
+  adding: com/sun/star/wizards/form/DataEntrySetter.class (deflated 57%)
+  adding: com/sun/star/wizards/form/FieldLinker$ItemListenerImpl.class (deflated 50%)
+  adding: com/sun/star/wizards/form/FieldLinker.class (deflated 54%)
+  adding: com/sun/star/wizards/form/Finalizer.class (deflated 56%)
+  adding: com/sun/star/wizards/form/FormConfiguration.class (deflated 56%)
+  adding: com/sun/star/wizards/form/FormControlArranger.class (deflated 50%)
+  adding: com/sun/star/wizards/form/FormDocument$ControlForm.class (deflated 60%)
+  adding: com/sun/star/wizards/form/FormDocument.class (deflated 58%)
+  adding: com/sun/star/wizards/form/FormWizard$FieldSelectionListener.class (deflated 53%)
+  adding: com/sun/star/wizards/form/FormWizard.class (deflated 57%)
+  adding: com/sun/star/wizards/form/StyleApplier.class (deflated 55%)
+  adding: com/sun/star/wizards/form/UIControlArranger$1.class (deflated 31%)
+  adding: com/sun/star/wizards/form/UIControlArranger$ArrangeButtonList.class (deflated 57%)
+  adding: com/sun/star/wizards/form/UIControlArranger$LayoutRenderer.class (deflated 52%)
+  adding: com/sun/star/wizards/form/UIControlArranger.class (deflated 58%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/form.jar' -o ../../../../../wntmsci12.pro/misc/form.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt form.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/table
+
+Making:    table.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkSHZQSA
+Making:    table.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/table_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/table/MANIFEST.MF ../../../../../wntmsci12.pro/misc/table_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/table/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/table/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/table/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/table_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/table/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/table && zip  -u -rX ../table.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../table.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 20%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX table.jar com/sun/star/wizards/table  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/table/ (stored 0%)
+  adding: com/sun/star/wizards/table/CallTableWizard$TableWizardImplementation.class (deflated 51%)
+  adding: com/sun/star/wizards/table/CallTableWizard.class (deflated 51%)
+  adding: com/sun/star/wizards/table/CGCategory.class (deflated 50%)
+  adding: com/sun/star/wizards/table/CGTable.class (deflated 51%)
+  adding: com/sun/star/wizards/table/FieldDescription.class (deflated 53%)
+  adding: com/sun/star/wizards/table/FieldFormatter.class (deflated 56%)
+  adding: com/sun/star/wizards/table/Finalizer.class (deflated 56%)
+  adding: com/sun/star/wizards/table/PrimaryKeyHandler.class (deflated 58%)
+  adding: com/sun/star/wizards/table/ScenarioSelector.class (deflated 55%)
+  adding: com/sun/star/wizards/table/TableWizard.class (deflated 52%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/table.jar' -o ../../../../../wntmsci12.pro/misc/table.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt table.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/web/data
+
+Making:    web_data.dpj
+javadeps
+
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_data_dummy.java
+javac -classpath ".;../../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jut.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/saxon9.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkhwhM5d
+Making:    web_data.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/web/export
+
+Making:    web_export.dpj
+javadeps
+
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/web_export_dummy.java
+javac -classpath ".;../../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/saxon9.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkjX5sez
+Making:    web_export.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/depot
+
+Making:    depotall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvdepot.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvdepot.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvdepot.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvdepot.dpzz C:/cygwin/tmp/mkvYyvbh | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/depotall.dpz
+Making:    basicsrvdepot.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvdepot.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvdepot.zip not found or empty
+  adding: Dialog2.xdl (deflated 74%)
+  adding: Dialog3.xdl (deflated 76%)
+  adding: Dialog4.xdl (deflated 63%)
+  adding: CommonLang.xba (deflated 72%)
+  adding: Currency.xba (deflated 64%)
+  adding: Depot.xba (deflated 75%)
+  adding: Internet.xba (deflated 70%)
+  adding: Lang_de.xba (deflated 65%)
+  adding: Lang_en.xba (deflated 67%)
+  adding: Lang_es.xba (deflated 66%)
+  adding: Lang_fr.xba (deflated 66%)
+  adding: Lang_it.xba (deflated 66%)
+  adding: Lang_ja.xba (deflated 64%)
+  adding: Lang_ko.xba (deflated 64%)
+  adding: Lang_sv.xba (deflated 65%)
+  adding: Lang_tw.xba (deflated 64%)
+  adding: Lang_zh.xba (deflated 63%)
+  adding: tools.xba (deflated 67%)
+  adding: dialog.xlb (deflated 48%)
+  adding: script.xlb (deflated 70%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvdepot.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvdepot.zip \
+	    ; fi
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/web
+
+Making:    web.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jut.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/saxon9.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkSUOS9e
+Making:    web.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/web_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/web/MANIFEST.MF ../../../../../wntmsci12.pro/misc/web_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/web/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar saxon9.jar" >> ../../../../../wntmsci12.pro/class/web/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/web/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/web_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/web/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/web && zip  -u -rX ../web.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../web.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 20%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX web.jar com/sun/star/wizards/web  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/web/ (stored 0%)
+  adding: com/sun/star/wizards/web/AbstractErrorHandler.class (deflated 55%)
+  adding: com/sun/star/wizards/web/BackgroundsDialog$BGRenderer.class (deflated 52%)
+  adding: com/sun/star/wizards/web/BackgroundsDialog$Model.class (deflated 51%)
+  adding: com/sun/star/wizards/web/BackgroundsDialog.class (deflated 57%)
+  adding: com/sun/star/wizards/web/CallWizard$WizardImplementation.class (deflated 48%)
+  adding: com/sun/star/wizards/web/CallWizard.class (deflated 49%)
+  adding: com/sun/star/wizards/web/data/ (stored 0%)
+  adding: com/sun/star/wizards/web/data/CGArgument.class (deflated 22%)
+  adding: com/sun/star/wizards/web/data/CGContent.class (deflated 47%)
+  adding: com/sun/star/wizards/web/data/CGDesign.class (deflated 52%)
+  adding: com/sun/star/wizards/web/data/CGDocument.class (deflated 55%)
+  adding: com/sun/star/wizards/web/data/CGExporter.class (deflated 45%)
+  adding: com/sun/star/wizards/web/data/CGFilter.class (deflated 25%)
+  adding: com/sun/star/wizards/web/data/CGGeneralInfo.class (deflated 48%)
+  adding: com/sun/star/wizards/web/data/CGIconSet.class (deflated 27%)
+  adding: com/sun/star/wizards/web/data/CGImage.class (deflated 21%)
+  adding: com/sun/star/wizards/web/data/CGLayout.class (deflated 49%)
+  adding: com/sun/star/wizards/web/data/CGPublish.class (deflated 47%)
+  adding: com/sun/star/wizards/web/data/CGSession.class (deflated 56%)
+  adding: com/sun/star/wizards/web/data/CGSessionName.class (deflated 34%)
+  adding: com/sun/star/wizards/web/data/CGSettings$Formatter.class (deflated 54%)
+  adding: com/sun/star/wizards/web/data/CGSettings.class (deflated 56%)
+  adding: com/sun/star/wizards/web/data/CGStyle.class (deflated 36%)
+  adding: com/sun/star/wizards/web/data/ConfigSetItem.class (deflated 41%)
+  adding: com/sun/star/wizards/web/data/TypeDetection.class (deflated 32%)
+  adding: com/sun/star/wizards/web/ErrorHandler.class (deflated 52%)
+  adding: com/sun/star/wizards/web/export/ (stored 0%)
+  adding: com/sun/star/wizards/web/export/AbstractExporter.class (deflated 58%)
+  adding: com/sun/star/wizards/web/export/ConfiguredExporter.class (deflated 51%)
+  adding: com/sun/star/wizards/web/export/CopyExporter.class (deflated 57%)
+  adding: com/sun/star/wizards/web/export/Exporter.class (deflated 39%)
+  adding: com/sun/star/wizards/web/export/FilterExporter.class (deflated 54%)
+  adding: com/sun/star/wizards/web/export/ImpressHTMLExporter.class (deflated 54%)
+  adding: com/sun/star/wizards/web/ExtensionVerifier.class (deflated 42%)
+  adding: com/sun/star/wizards/web/FTPDialog.class (deflated 54%)
+  adding: com/sun/star/wizards/web/FTPDialogResources.class (deflated 48%)
+  adding: com/sun/star/wizards/web/IconsDialog.class (deflated 52%)
+  adding: com/sun/star/wizards/web/ImageListDialog$ARenderer.class (deflated 50%)
+  adding: com/sun/star/wizards/web/ImageListDialog.class (deflated 51%)
+  adding: com/sun/star/wizards/web/LogTaskListener.class (deflated 52%)
+  adding: com/sun/star/wizards/web/Process.class (deflated 54%)
+  adding: com/sun/star/wizards/web/ProcessErrorHandler.class (deflated 52%)
+  adding: com/sun/star/wizards/web/ProcessErrors.class (deflated 45%)
+  adding: com/sun/star/wizards/web/ProcessStatusRenderer.class (deflated 50%)
+  adding: com/sun/star/wizards/web/StatusDialog.class (deflated 55%)
+  adding: com/sun/star/wizards/web/StylePreview.class (deflated 51%)
+  adding: com/sun/star/wizards/web/TOCPreview.class (deflated 60%)
+  adding: com/sun/star/wizards/web/WebWizard.class (deflated 36%)
+  adding: com/sun/star/wizards/web/WebWizardConst.class (deflated 54%)
+  adding: com/sun/star/wizards/web/WebWizardDialog$1.class (deflated 29%)
+  adding: com/sun/star/wizards/web/WebWizardDialog$LayoutRenderer.class (deflated 52%)
+  adding: com/sun/star/wizards/web/WebWizardDialog.class (deflated 64%)
+  adding: com/sun/star/wizards/web/WebWizardDialogResources.class (deflated 57%)
+  adding: com/sun/star/wizards/web/WWD_Events$1.class (deflated 26%)
+  adding: com/sun/star/wizards/web/WWD_Events$Create.class (deflated 47%)
+  adding: com/sun/star/wizards/web/WWD_Events$LoadDocs.class (deflated 51%)
+  adding: com/sun/star/wizards/web/WWD_Events.class (deflated 55%)
+  adding: com/sun/star/wizards/web/WWD_General.class (deflated 57%)
+  adding: com/sun/star/wizards/web/WWD_Startup$1.class (deflated 26%)
+  adding: com/sun/star/wizards/web/WWD_Startup$CheckPublish.class (deflated 51%)
+  adding: com/sun/star/wizards/web/WWD_Startup$SimpleDataawareUpdater.class (deflated 47%)
+  adding: com/sun/star/wizards/web/WWD_Startup$StylesComparator.class (deflated 49%)
+  adding: com/sun/star/wizards/web/WWD_Startup.class (deflated 56%)
+  adding: com/sun/star/wizards/web/WWHID.class (deflated 67%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/web.jar' -o ../../../../../wntmsci12.pro/misc/web.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt web.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/standard
+
+Making:    standard.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvstandard.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvstandard.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvstandard.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvstandard.dpzz C:/cygwin/tmp/mk5OP96Q | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/standard.dpz
+Making:    basicsrvstandard.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvstandard.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvstandard.zip not found or empty
+	zip warning: name not matched: *.xdl
+  adding: Module1.xba (deflated 48%)
+  adding: dialog.xlb (deflated 33%)
+  adding: script.xlb (deflated 38%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvstandard.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvstandard.zip \
+	    ; fi
+Making:    standard.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvstandard.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvstandard.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvstandard.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvstandard.dpzz C:/cygwin/tmp/mkS6jWql | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/standard.dpz
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/agenda
+
+Making:    agenda.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkJD5X0A
+Making:    agenda.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/agenda_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/agenda/MANIFEST.MF ../../../../../wntmsci12.pro/misc/agenda_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/agenda/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/agenda/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/agenda/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/agenda_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/agenda/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/agenda && zip  -u -rX ../agenda.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../agenda.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 20%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX agenda.jar com/sun/star/wizards/agenda  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/agenda/ (stored 0%)
+  adding: com/sun/star/wizards/agenda/AgendaElement.class (deflated 23%)
+  adding: com/sun/star/wizards/agenda/AgendaItem.class (deflated 49%)
+  adding: com/sun/star/wizards/agenda/AgendaTemplate$ItemsTable.class (deflated 50%)
+  adding: com/sun/star/wizards/agenda/AgendaTemplate$Topics.class (deflated 49%)
+  adding: com/sun/star/wizards/agenda/AgendaTemplate.class (deflated 54%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialog.class (deflated 63%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogConst.class (deflated 48%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogImpl$1.class (deflated 46%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogImpl$myPathSelectionListener.class (deflated 57%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogImpl$RedrawListener.class (deflated 53%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogImpl.class (deflated 56%)
+  adding: com/sun/star/wizards/agenda/AgendaWizardDialogResources.class (deflated 54%)
+  adding: com/sun/star/wizards/agenda/CallWizard$WizardImplementation.class (deflated 48%)
+  adding: com/sun/star/wizards/agenda/CallWizard.class (deflated 50%)
+  adding: com/sun/star/wizards/agenda/CGAgenda.class (deflated 45%)
+  adding: com/sun/star/wizards/agenda/CGTopic.class (deflated 46%)
+  adding: com/sun/star/wizards/agenda/ParaStyled.class (deflated 45%)
+  adding: com/sun/star/wizards/agenda/PlaceholderElement.class (deflated 50%)
+  adding: com/sun/star/wizards/agenda/PlaceholderTextElement.class (deflated 54%)
+  adding: com/sun/star/wizards/agenda/TableCellFormatter.class (deflated 41%)
+  adding: com/sun/star/wizards/agenda/TemplateConsts.class (deflated 60%)
+  adding: com/sun/star/wizards/agenda/TextElement.class (deflated 46%)
+  adding: com/sun/star/wizards/agenda/TopicsControl$ControlRow.class (deflated 55%)
+  adding: com/sun/star/wizards/agenda/TopicsControl.class (deflated 56%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/agenda.jar' -o ../../../../../wntmsci12.pro/misc/agenda.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt agenda.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/formwizard
+
+Making:    formwizardall.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/formwizardall.dbwizres.dprr
+Making:    formwizardall.dpz
+dmake  -f makefile.mk make_srs_deps="true" make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvform.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvform.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvform.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvform.dpzz C:/cygwin/tmp/mkWU9jED | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/formwizardall.dpz
+Making:    formwizardall.dbwizres.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/dbwizres.srs -fo=../../wntmsci12.pro/misc/formwizardall.dbwizres.dprr -p=formwizardall dbwizres.src
+cat ../../wntmsci12.pro/misc/formwizardall.*.dprr >> ../../wntmsci12.pro/misc/formwizardall.dpr
+Making:    basicsrvform.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvform.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvform.zip not found or empty
+  adding: DlgFormDB.xdl (deflated 84%)
+  adding: DBMeta.xba (deflated 70%)
+  adding: FormWizard.xba (deflated 72%)
+  adding: Language.xba (deflated 76%)
+  adding: Layouter.xba (deflated 71%)
+  adding: develop.xba (deflated 75%)
+  adding: tools.xba (deflated 70%)
+  adding: dialog.xlb (deflated 37%)
+  adding: script.xlb (deflated 56%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvform.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvform.zip \
+	    ; fi
+Making:    dbwizres.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkVLpxf6
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\formwizardall -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" dbwizres.src C:\cygwin\tmp\256.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\257.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\268.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/dbwizres.srs
+mv ../../wntmsci12.pro/srs/dbwizres.srs.wntmsci12.pro ../../wntmsci12.pro/srs/dbwizres.srs
+/bin/rm -f ../../wntmsci12.pro/srs/dbwizres.srs.wntmsci12.pro
+Making:    dbwen-US.res
+Compiling: rsc_dbw
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkOIHHTr > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/schedule
+
+Making:    scheduleall.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/scheduleall.schedule.dprr
+Making:    scheduleall.dpz
+dmake  -f makefile.mk make_srs_deps="true" make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvschedule.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvschedule.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvschedule.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvschedule.dpzz C:/cygwin/tmp/mkVl5M2V | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/scheduleall.dpz
+Making:    scheduleall.schedule.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/schedule.srs -fo=../../wntmsci12.pro/misc/scheduleall.schedule.dprr -p=scheduleall schedule.src
+cat ../../wntmsci12.pro/misc/scheduleall.*.dprr >> ../../wntmsci12.pro/misc/scheduleall.dpr
+Making:    basicsrvschedule.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvschedule.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvschedule.zip not found or empty
+  adding: DlgCalendar.xdl (deflated 79%)
+  adding: BankHoliday.xba (deflated 60%)
+  adding: CalendarMain.xba (deflated 71%)
+  adding: CreateTable.xba (deflated 65%)
+  adding: DlgControl.xba (deflated 67%)
+  adding: GermanHolidays.xba (deflated 73%)
+  adding: Language.xba (deflated 64%)
+  adding: LocalHolidays.xba (deflated 81%)
+  adding: OwnEvents.xba (deflated 69%)
+  adding: dialog.xlb (deflated 37%)
+  adding: script.xlb (deflated 58%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvschedule.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvschedule.zip \
+	    ; fi
+Making:    scheduleall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvschedule.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvschedule.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvschedule.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvschedule.dpzz C:/cygwin/tmp/mkW1xTQI | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/scheduleall.dpz
+Making:    schedule.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkNWTHX8
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\scheduleall -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" schedule.src C:\cygwin\tmp\D6D.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\D6E.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\D7F.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/schedule.srs
+mv ../../wntmsci12.pro/srs/schedule.srs.wntmsci12.pro ../../wntmsci12.pro/srs/schedule.srs
+/bin/rm -f ../../wntmsci12.pro/srs/schedule.srs.wntmsci12.pro
+Making:    calen-US.res
+Compiling: rsc_cal
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkDfhDa7 > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/euro
+
+Making:    euro.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/euro.euro.dprr
+Making:    euro.dpz
+dmake  -f makefile.mk make_srs_deps="true" make_zip_deps=true ../../wntmsci12.pro/misc/basicsrveuro.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrveuro.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrveuro.dpzz
+cat ../../wntmsci12.pro/misc/basicsrveuro.dpzz C:/cygwin/tmp/mkKRnLur | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/euro.dpz
+Making:    euro.euro.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/euro.srs -fo=../../wntmsci12.pro/misc/euro.euro.dprr -p=euro euro.src
+cat ../../wntmsci12.pro/misc/euro.*.dprr >> ../../wntmsci12.pro/misc/euro.dpr
+Making:    basicsrveuro.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrveuro.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrveuro.zip not found or empty
+  adding: DlgConvert.xdl (deflated 80%)
+  adding: DlgPassword.xdl (deflated 61%)
+  adding: AutoPilotRun.xba (deflated 73%)
+  adding: Common.xba (deflated 67%)
+  adding: ConvertRun.xba (deflated 70%)
+  adding: Hard.xba (deflated 66%)
+  adding: Init.xba (deflated 75%)
+  adding: Protect.xba (deflated 66%)
+  adding: Soft.xba (deflated 71%)
+  adding: Writer.xba (deflated 61%)
+  adding: dialog.xlb (deflated 43%)
+  adding: script.xlb (deflated 60%)
+if [ -f ../../wntmsci12.pro/bin/basicsrveuro.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrveuro.zip \
+	    ; fi
+Making:    euro.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mk17NWwo
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\euro -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" euro.src C:\cygwin\tmp\15F5.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\15F6.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\1607.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/euro.srs
+mv ../../wntmsci12.pro/srs/euro.srs.wntmsci12.pro ../../wntmsci12.pro/srs/euro.srs
+/bin/rm -f ../../wntmsci12.pro/srs/euro.srs.wntmsci12.pro
+Making:    euren-US.res
+Compiling: rsc_eur
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkhGqui8 > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/importwizard
+
+Making:    importwizardall.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/importwizardall.importwi.dprr
+Making:    importwizardall.dpz
+dmake  -f makefile.mk make_srs_deps="true" make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvimport.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvimport.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvimport.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvimport.dpzz C:/cygwin/tmp/mkk9PMjg | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/importwizardall.dpz
+Making:    importwizardall.importwi.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/importwi.srs -fo=../../wntmsci12.pro/misc/importwizardall.importwi.dprr -p=importwizardall importwi.src
+cat ../../wntmsci12.pro/misc/importwizardall.*.dprr >> ../../wntmsci12.pro/misc/importwizardall.dpr
+Making:    basicsrvimport.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicsrvimport.zip *.xdl *.xba *.xlb -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicsrvimport.zip not found or empty
+  adding: ImportDialog.xdl (deflated 84%)
+  adding: API.xba (deflated 70%)
+  adding: DialogModul.xba (deflated 78%)
+  adding: FilesModul.xba (deflated 76%)
+  adding: Language.xba (deflated 70%)
+  adding: Main.xba (deflated 70%)
+  adding: dialog.xlb (deflated 38%)
+  adding: script.xlb (deflated 52%)
+if [ -f ../../wntmsci12.pro/bin/basicsrvimport.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicsrvimport.zip \
+	    ; fi
+Making:    importwizardall.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicsrvimport.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicsrvimport.zip "*.xdl" "*.xba" "*.xlb" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicsrvimport.dpzz
+cat ../../wntmsci12.pro/misc/basicsrvimport.dpzz C:/cygwin/tmp/mkZcSFPs | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/importwizardall.dpz
+Making:    importwi.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkVLShSl
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\importwizardall -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" importwi.src C:\cygwin\tmp\209F.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\20A0.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\20B1.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/importwi.srs
+mv ../../wntmsci12.pro/srs/importwi.srs.wntmsci12.pro ../../wntmsci12.pro/srs/importwi.srs
+/bin/rm -f ../../wntmsci12.pro/srs/importwi.srs.wntmsci12.pro
+Making:    impen-US.res
+Compiling: rsc_imp
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkfnLs2K > /dev/null
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/letter
+
+Making:    letter.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno_accessbridge;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mk1t3UGy
+Making:    letter.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/letter_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/letter/MANIFEST.MF ../../../../../wntmsci12.pro/misc/letter_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/letter/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/letter/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/letter/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/letter_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/letter/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/letter && zip  -u -rX ../letter.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../letter.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 20%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX letter.jar com/sun/star/wizards/letter  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/letter/ (stored 0%)
+  adding: com/sun/star/wizards/letter/CallWizard$WizardImplementation.class (deflated 49%)
+  adding: com/sun/star/wizards/letter/CallWizard.class (deflated 50%)
+  adding: com/sun/star/wizards/letter/CGLetter.class (deflated 51%)
+  adding: com/sun/star/wizards/letter/CGLetterWizard.class (deflated 40%)
+  adding: com/sun/star/wizards/letter/CGPaperElementLocation.class (deflated 30%)
+  adding: com/sun/star/wizards/letter/LetterDocument$BusinessPaperObject.class (deflated 49%)
+  adding: com/sun/star/wizards/letter/LetterDocument.class (deflated 53%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialog.class (deflated 70%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogConst.class (deflated 64%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogEvents.class (deflated 60%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogImpl$1.class (deflated 34%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogImpl$myPathSelectionListener.class (deflated 56%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogImpl.class (deflated 57%)
+  adding: com/sun/star/wizards/letter/LetterWizardDialogResources.class (deflated 56%)
+  adding: com/sun/star/wizards/letter/LocaleCodes.class (deflated 40%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/letter.jar' -o ../../../../../wntmsci12.pro/misc/letter.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt letter.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/query
+
+Making:    query.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/query_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/query_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/query_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/query_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jut.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkmgIsxm
+Making:    query.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/query_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/query/MANIFEST.MF ../../../../../wntmsci12.pro/misc/query_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/query/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/query/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/query/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/query_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/query/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/query && zip  -u -rX ../query.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../query.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 20%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX query.jar com/sun/star/wizards/query  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/query/ (stored 0%)
+  adding: com/sun/star/wizards/query/CallQueryWizard$QueryWizardImplementation.class (deflated 51%)
+  adding: com/sun/star/wizards/query/CallQueryWizard.class (deflated 51%)
+  adding: com/sun/star/wizards/query/Finalizer.class (deflated 57%)
+  adding: com/sun/star/wizards/query/QuerySummary.class (deflated 51%)
+  adding: com/sun/star/wizards/query/QueryWizard$FieldSelectionListener.class (deflated 56%)
+  adding: com/sun/star/wizards/query/QueryWizard.class (deflated 56%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/query.jar' -o ../../../../../wntmsci12.pro/misc/query.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt query.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/report
+
+Making:    report.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mk761Dts
+Making:    report.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/report_MANIFEST.MF
+cp C:/steve/testarea/main/wizards/com/sun/star/wizards/report/MANIFEST.MF ../../../../../wntmsci12.pro/misc/report_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/report/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar" >> ../../../../../wntmsci12.pro/class/report/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/report/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/report_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/report/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/report && zip  -u -rX ../report.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../report.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 21%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX report.jar com/sun/star/wizards/report  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/report/ (stored 0%)
+  adding: com/sun/star/wizards/report/CallReportWizard$ReportWizardImplementation.class (deflated 53%)
+  adding: com/sun/star/wizards/report/CallReportWizard.class (deflated 51%)
+  adding: com/sun/star/wizards/report/Dataimport.class (deflated 57%)
+  adding: com/sun/star/wizards/report/DBColumn.class (deflated 56%)
+  adding: com/sun/star/wizards/report/GroupFieldHandler$FieldSelectionListener.class (deflated 56%)
+  adding: com/sun/star/wizards/report/GroupFieldHandler.class (deflated 55%)
+  adding: com/sun/star/wizards/report/IReportBuilderLayouter.class (deflated 47%)
+  adding: com/sun/star/wizards/report/IReportDefinitionReadAccess.class (deflated 35%)
+  adding: com/sun/star/wizards/report/IReportDocument.class (deflated 57%)
+  adding: com/sun/star/wizards/report/RecordTable.class (deflated 53%)
+  adding: com/sun/star/wizards/report/ReportFinalizer.class (deflated 57%)
+  adding: com/sun/star/wizards/report/ReportImplementationHelper.class (deflated 46%)
+  adding: com/sun/star/wizards/report/ReportLayouter$ActionListenerImpl.class (deflated 49%)
+  adding: com/sun/star/wizards/report/ReportLayouter$ItemListenerImpl.class (deflated 51%)
+  adding: com/sun/star/wizards/report/ReportLayouter.class (deflated 57%)
+  adding: com/sun/star/wizards/report/ReportTextDocument.class (deflated 56%)
+  adding: com/sun/star/wizards/report/ReportTextImplementation.class (deflated 58%)
+  adding: com/sun/star/wizards/report/ReportWizard$FieldSelectionListener.class (deflated 54%)
+  adding: com/sun/star/wizards/report/ReportWizard.class (deflated 56%)
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/report.jar' -o ../../../../../wntmsci12.pro/misc/report.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt report.component
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/reportbuilder/layout
+
+Making:    reportbuilderwizardlayouts.dpj
+javadeps
+
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+/bin/rm -f ../../../../../../wntmsci12.pro/misc/reportbuilderwizardlayouts_dummy.java
+javac -classpath ".;../../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../../wntmsci12.pro/class/commonwizards.jar;../../../../../../wntmsci12.pro/class/report.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkgsL0OC
+Making:    reportbuilderwizardlayouts.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/wizards/com/sun/star/wizards/reportbuilder
+
+Making:    reportbuilderwizard.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/reportbuilderwizard_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../../../../../wntmsci12.pro/class/commonwizards.jar;../../../../../wntmsci12.pro/class/report.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkbRJQVL
+Making:    reportbuilderwizard.dpj
+javadeps
+
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/reportbuilderwizard/META-INF/MANIFEST.MF
+echo "Class-Path: commonwizards.jar report.jar" >> ../../../../../wntmsci12.pro/class/reportbuilderwizard/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/reportbuilderwizard/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/reportbuilderwizard && zip  -u -rX ../reportbuilderwizard.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../reportbuilderwizard.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 9%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX reportbuilderwizard.jar com/sun/star/wizards/reportbuilder  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/wizards/reportbuilder/ (stored 0%)
+  adding: com/sun/star/wizards/reportbuilder/layout/ (stored 0%)
+  adding: com/sun/star/wizards/reportbuilder/layout/ColumnarSingleColumn.class (deflated 53%)
+  adding: com/sun/star/wizards/reportbuilder/layout/ColumnarThreeColumns.class (deflated 47%)
+  adding: com/sun/star/wizards/reportbuilder/layout/ColumnarTwoColumns.class (deflated 51%)
+  adding: com/sun/star/wizards/reportbuilder/layout/DesignTemplate.class (deflated 57%)
+  adding: com/sun/star/wizards/reportbuilder/layout/InBlocksLabelsAbove.class (deflated 51%)
+  adding: com/sun/star/wizards/reportbuilder/layout/InBlocksLabelsLeft.class (deflated 51%)
+  adding: com/sun/star/wizards/reportbuilder/layout/LayoutConstants.class (deflated 37%)
+  adding: com/sun/star/wizards/reportbuilder/layout/ReportBuilderLayouter.class (deflated 53%)
+  adding: com/sun/star/wizards/reportbuilder/layout/SectionEmptyObject.class (deflated 43%)
+  adding: com/sun/star/wizards/reportbuilder/layout/SectionLabel.class (deflated 44%)
+  adding: com/sun/star/wizards/reportbuilder/layout/SectionObject.class (deflated 49%)
+  adding: com/sun/star/wizards/reportbuilder/layout/SectionTextField.class (deflated 45%)
+  adding: com/sun/star/wizards/reportbuilder/layout/Tabular.class (deflated 50%)
+  adding: com/sun/star/wizards/reportbuilder/ReportBuilderImplementation.class (deflated 56%)
+
+Entering /cygdrive/c/steve/testarea/main/wizards/source/configshare
+
+Making:    configshare.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../wntmsci12.pro/misc/basicshare.dpzz
+
+zipdep.pl -u -j ../../wntmsci12.pro/bin/basicshare.zip "*" "-x" "makefile.*" -x "*CVS*" -x "*.svn*" >> ../../wntmsci12.pro/misc/basicshare.dpzz
+cat ../../wntmsci12.pro/misc/basicshare.dpzz C:/cygwin/tmp/mkIRHS3t | grep -v "CVS" | grep -v "\.svn" >> ../../wntmsci12.pro/misc/configshare.dpz
+Making:    basicshare.zip
+rebuilding zipfiles
+------------------------------ 
+zip  -u -j ../../wntmsci12.pro/bin/basicshare.zip * -x makefile.* -x delzip -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../../wntmsci12.pro/bin/basicshare.zip not found or empty
+  adding: dialog.xlc (deflated 79%)
+  adding: script.xlc (deflated 79%)
+if [ -f ../../wntmsci12.pro/bin/basicshare.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl ../../wntmsci12.pro/bin/basicshare.zip \
+	    ; fi
+wizards deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/wizards/build.lst
+COPY: ../wntmsci12.pro/bin/basicshare.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicshare.zip
+COPY: ../wntmsci12.pro/bin/basicsrvdepot.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvdepot.zip
+COPY: ../wntmsci12.pro/bin/basicsrveuro.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrveuro.zip
+COPY: ../wntmsci12.pro/bin/basicsrvform.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvform.zip
+COPY: ../wntmsci12.pro/bin/basicsrvgimmicks.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvgimmicks.zip
+COPY: ../wntmsci12.pro/bin/basicsrvimport.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvimport.zip
+COPY: ../wntmsci12.pro/bin/basicsrvschedule.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvschedule.zip
+COPY: ../wntmsci12.pro/bin/basicsrvstandard.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvstandard.zip
+COPY: ../wntmsci12.pro/bin/basicsrvtemplate.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvtemplate.zip
+COPY: ../wntmsci12.pro/bin/basicsrvtools.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvtools.zip
+COPY: ../wntmsci12.pro/bin/basicsrvtutorials.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicsrvtutorials.zip
+COPY: ../wntmsci12.pro/bin/basicusr.zip -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/pck/basicusr.zip
+COPY: ../wntmsci12.pro/bin/wzien-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/wzien-US.res
+COPY: ../wntmsci12.pro/bin/wzien-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/wzien-US.ilst
+COPY: ../wntmsci12.pro/bin/dbwen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/dbwen-US.res
+COPY: ../wntmsci12.pro/bin/dbwen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/dbwen-US.ilst
+COPY: ../wntmsci12.pro/bin/tplen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/tplen-US.res
+COPY: ../wntmsci12.pro/bin/tplen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/tplen-US.ilst
+COPY: ../wntmsci12.pro/bin/impen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/impen-US.res
+COPY: ../wntmsci12.pro/bin/impen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/impen-US.ilst
+COPY: ../wntmsci12.pro/bin/euren-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/euren-US.res
+COPY: ../wntmsci12.pro/bin/euren-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/euren-US.ilst
+COPY: ../wntmsci12.pro/bin/calen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/calen-US.res
+COPY: ../wntmsci12.pro/bin/calen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/calen-US.ilst
+COPY: ../wntmsci12.pro/class/agenda.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/agenda.jar
+COPY: ../wntmsci12.pro/class/commonwizards.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/commonwizards.jar
+COPY: ../wntmsci12.pro/class/fax.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/fax.jar
+COPY: ../wntmsci12.pro/class/form.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/form.jar
+COPY: ../wntmsci12.pro/class/letter.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/letter.jar
+COPY: ../wntmsci12.pro/class/query.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/query.jar
+COPY: ../wntmsci12.pro/class/report.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/report.jar
+COPY: ../wntmsci12.pro/class/reportbuilderwizard.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/reportbuilderwizard.jar
+COPY: ../wntmsci12.pro/class/table.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/table.jar
+COPY: ../wntmsci12.pro/class/web.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/web.jar
+COPY: ../wntmsci12.pro/misc/agenda.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/agenda.component
+COPY: ../wntmsci12.pro/misc/fax.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/fax.component
+COPY: ../wntmsci12.pro/misc/form.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/form.component
+COPY: ../wntmsci12.pro/misc/letter.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/letter.component
+COPY: ../wntmsci12.pro/misc/query.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/query.component
+COPY: ../wntmsci12.pro/misc/report.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/report.component
+COPY: ../wntmsci12.pro/misc/table.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/table.component
+COPY: ../wntmsci12.pro/misc/web.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/web.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/wizards/deliver.log
+Module 'wizards' delivered successfully. 43 files copied, 2 files unchanged
+
+=============

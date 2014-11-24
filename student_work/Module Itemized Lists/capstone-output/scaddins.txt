@@ -1,0 +1,58 @@
+Name:
+scaddins
+
+Dependencies:
+LIBXSLT:libxslt L10N:l10n vcl NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\class\*.jar %_DEST%\bin%_EXT%\*.jar
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\bin\*.bin %_DEST%\bin%_EXT%\*.bin
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\misc\analysis.component %_DEST%\xml%_EXT%\analysis.component
+..\%__SRC%\misc\date.component %_DEST%\xml%_EXT%\date.component
+
+Source Files:
+source\analysis\analysis.cxx
+source\analysis\analysishelper.cxx
+source\analysis\bessel.cxx
+source\analysis\financial.cxx
+source\datefunc\datefunc.cxx
+
+Header Files:
+source\analysis\analysis.hrc
+source\analysis\analysis.hxx
+source\analysis\analysisdefs.hxx
+source\analysis\analysishelper.hxx
+source\analysis\bessel.hxx
+source\datefunc\datefunc.hrc
+source\datefunc\datefunc.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\analysis\makefile.mk
+	PRJNAME=scaddins
+	TARGET=analysis
+	SLOFILES=
+	$(SLO)$/analysis.obj
+	$(SLO)$/financial.obj
+	$(SLO)$/analysishelper.obj
+	$(SLO)$/bessel.obj
+	SLOFILES+=$(SLO)$/staticmb.obj
+
+source\datefunc\makefile.mk
+	PRJNAME=scaddins
+	TARGET=date
+	SLOFILES=
+	$(SLO)$/datefunc.obj
+
+source\datefunc\msdev.mk
+	TARGET=$(BINOUT)datefunc.dll
+	

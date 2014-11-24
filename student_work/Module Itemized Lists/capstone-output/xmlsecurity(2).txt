@@ -1,0 +1,315 @@
+Name:
+xmlsecurity
+
+Dependencies:
+L10N:l10n xmloff unotools offapi unoil svx LIBXMLSEC:libxmlsec NSS:nss LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\xsec_fw.dll %_DEST%\bin%_EXT%\xsec_fw.dll
+..\%__SRC%\bin\xsec_xmlsec.dll %_DEST%\bin%_EXT%\xsec_xmlsec.dll
+..\%__SRC%\bin\xmlsecurity.dll %_DEST%\bin%_EXT%\xmlsecurity.dll
+..\%__SRC%\lib\libxsec_fw.so %_DEST%\lib%_EXT%\libxsec_fw.so
+..\%__SRC%\lib\libxsec_xmlsec.so %_DEST%\lib%_EXT%\libxsec_xmlsec.so
+..\%__SRC%\lib\libxmlsecurity.so %_DEST%\lib%_EXT%\libxmlsecurity.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*
+..\%__SRC%\bin\xmlsec*.res %_DEST%\bin%_EXT%\xmlsec*.res
+..\%__SRC%\misc\xmlsecurity.component %_DEST%\xml%_EXT%\xmlsecurity.component
+..\%__SRC%\misc\xsec_fw.component %_DEST%\xml%_EXT%\xsec_fw.component
+..\%__SRC%\misc\xsec_xmlsec.component %_DEST%\xml%_EXT%\xsec_xmlsec.component
+
+Source Files:
+inc\pch\precompiled_xmlsecurity.cxx
+qa\certext\SanCertExt.cxx
+source\component\certificatecontainer.cxx
+source\component\documentdigitalsignatures.cxx
+source\component\registerservices.cxx
+source\dialogs\certificatechooser.cxx
+source\dialogs\certificateviewer.cxx
+source\dialogs\digitalsignaturesdialog.cxx
+source\dialogs\macrosecurity.cxx
+source\dialogs\resourcemanager.cxx
+source\dialogs\stbcontrl.cxx
+source\dialogs\warnings.cxx
+source\framework\buffernode.cxx
+source\framework\decryptorimpl.cxx
+source\framework\elementcollector.cxx
+source\framework\elementmark.cxx
+source\framework\encryptionengine.cxx
+source\framework\encryptorimpl.cxx
+source\framework\saxeventkeeperimpl.cxx
+source\framework\securityengine.cxx
+source\framework\signaturecreatorimpl.cxx
+source\framework\signatureengine.cxx
+source\framework\signatureverifierimpl.cxx
+source\framework\xmlencryptiontemplateimpl.cxx
+source\framework\xmlsignaturetemplateimpl.cxx
+source\framework\xsec_framework.cxx
+source\helper\documentsignaturehelper.cxx
+source\helper\xmlsignaturehelper.cxx
+source\helper\xmlsignaturehelper2.cxx
+source\helper\xsecctl.cxx
+source\helper\xsecparser.cxx
+source\helper\xsecsign.cxx
+source\helper\xsecverify.cxx
+source\xmlsec\biginteger.cxx
+source\xmlsec\certificateextension_xmlsecimpl.cxx
+source\xmlsec\certvalidity.cxx
+source\xmlsec\diagnose.cxx
+source\xmlsec\errorcallback.cxx
+source\xmlsec\saxhelper.cxx
+source\xmlsec\xmldocumentwrapper_xmlsecimpl.cxx
+source\xmlsec\xmlelementwrapper_xmlsecimpl.cxx
+source\xmlsec\xmlstreamio.cxx
+source\xmlsec\xsec_xmlsec.cxx
+source\xmlsec\mscrypt\sanextension_mscryptimpl.cxx
+source\xmlsec\mscrypt\securityenvironment_mscryptimpl.cxx
+source\xmlsec\mscrypt\seinitializer_mscryptimpl.cxx
+source\xmlsec\mscrypt\x509certificate_mscryptimpl.cxx
+source\xmlsec\mscrypt\xmlencryption_mscryptimpl.cxx
+source\xmlsec\mscrypt\xmlsecuritycontext_mscryptimpl.cxx
+source\xmlsec\mscrypt\xmlsignature_mscryptimpl.cxx
+source\xmlsec\mscrypt\xsec_mscrypt.cxx
+source\xmlsec\nss\ciphercontext.cxx
+source\xmlsec\nss\digestcontext.cxx
+source\xmlsec\nss\nssinitializer.cxx
+source\xmlsec\nss\sanextension_nssimpl.cxx
+source\xmlsec\nss\secerror.cxx
+source\xmlsec\nss\securityenvironment_nssimpl.cxx
+source\xmlsec\nss\seinitializer_nssimpl.cxx
+source\xmlsec\nss\x509certificate_nssimpl.cxx
+source\xmlsec\nss\xmlencryption_nssimpl.cxx
+source\xmlsec\nss\xmlsecuritycontext_nssimpl.cxx
+source\xmlsec\nss\xmlsignature_nssimpl.cxx
+source\xmlsec\nss\xsec_nss.cxx
+tools\demo\mozprofile.cxx
+tools\demo\multisigdemo.cxx
+tools\demo\performance.cxx
+tools\demo\signdemo.cxx
+tools\demo\util.cxx
+tools\demo\util2.cxx
+tools\demo\verifydemo.cxx
+tools\standalone\csfit\certmngr.cxx
+tools\standalone\csfit\decrypter.cxx
+tools\standalone\csfit\encrypter.cxx
+tools\standalone\csfit\helper.cxx
+tools\standalone\csfit\signer.cxx
+tools\standalone\csfit\verifier.cxx
+tools\standalone\mscsfit\certmngr.cxx
+tools\standalone\mscsfit\decrypter.cxx
+tools\standalone\mscsfit\encrypter.cxx
+tools\standalone\mscsfit\helper.cxx
+tools\standalone\mscsfit\signer.cxx
+tools\standalone\mscsfit\verifier.cxx
+workben\signaturetest.cxx
+
+Header Files:
+inc\pch\precompiled_xmlsecurity.hxx
+inc\xmlsecurity\biginteger.hxx
+inc\xmlsecurity\certificatechooser.hxx
+inc\xmlsecurity\certificateviewer.hxx
+inc\xmlsecurity\certvalidity.hxx
+inc\xmlsecurity\digitalsignaturesdialog.hxx
+inc\xmlsecurity\documentsignaturehelper.hxx
+inc\xmlsecurity\global.hrc
+inc\xmlsecurity\macrosecurity.hxx
+inc\xmlsecurity\sigstruct.hxx
+inc\xmlsecurity\stbcontrl.hxx
+inc\xmlsecurity\warnings.hxx
+inc\xmlsecurity\xmlsignaturehelper.hxx
+source\component\certificatecontainer.hxx
+source\component\documentdigitalsignatures.hxx
+source\dialogs\dialogs.hrc
+source\dialogs\digitalsignaturesdialog.hrc
+source\dialogs\helpids.hrc
+source\dialogs\resourcemanager.hxx
+source\framework\buffernode.hxx
+source\framework\decryptorimpl.hxx
+source\framework\elementcollector.hxx
+source\framework\elementmark.hxx
+source\framework\encryptionengine.hxx
+source\framework\encryptorimpl.hxx
+source\framework\saxeventkeeperimpl.hxx
+source\framework\securityengine.hxx
+source\framework\signaturecreatorimpl.hxx
+source\framework\signatureengine.hxx
+source\framework\signatureverifierimpl.hxx
+source\framework\xmlencryptiontemplateimpl.hxx
+source\framework\xmlsignaturetemplateimpl.hxx
+source\helper\xmlsignaturehelper2.hxx
+source\helper\xsecctl.hxx
+source\helper\xsecparser.hxx
+source\xmlsec\certificateextension_xmlsecimpl.hxx
+source\xmlsec\diagnose.hxx
+source\xmlsec\errorcallback.hxx
+source\xmlsec\saxhelper.hxx
+source\xmlsec\xmldocumentwrapper_xmlsecimpl.hxx
+source\xmlsec\xmlelementwrapper_xmlsecimpl.hxx
+source\xmlsec\xmlstreamio.hxx
+source\xmlsec\mscrypt\oid.hxx
+source\xmlsec\mscrypt\sanextension_mscryptimpl.hxx
+source\xmlsec\mscrypt\securityenvironment_mscryptimpl.hxx
+source\xmlsec\mscrypt\seinitializer_mscryptimpl.hxx
+source\xmlsec\mscrypt\x509certificate_mscryptimpl.hxx
+source\xmlsec\mscrypt\xmlencryption_mscryptimpl.hxx
+source\xmlsec\mscrypt\xmlsecuritycontext_mscryptimpl.hxx
+source\xmlsec\mscrypt\xmlsignature_mscryptimpl.hxx
+source\xmlsec\nss\certerrors.h
+source\xmlsec\nss\ciphercontext.hxx
+source\xmlsec\nss\digestcontext.hxx
+source\xmlsec\nss\nssinitializer.hxx
+source\xmlsec\nss\sanextension_nssimpl.hxx
+source\xmlsec\nss\secerror.hxx
+source\xmlsec\nss\securityenvironment_nssimpl.hxx
+source\xmlsec\nss\seinitializer_nssimpl.hxx
+source\xmlsec\nss\x509certificate_nssimpl.hxx
+source\xmlsec\nss\xmlencryption_nssimpl.hxx
+source\xmlsec\nss\xmlsecuritycontext_nssimpl.hxx
+source\xmlsec\nss\xmlsignature_nssimpl.hxx
+tools\demo\util.hxx
+tools\standalone\csfit\helper.hxx
+tools\standalone\mscsfit\helper.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=inc
+
+qa\certext\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=qa_certext
+	SLOFILES=$(SLO)/SanCertExt.obj
+
+source\component\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=component
+	SLOFILES=
+	$(SLO)$/documentdigitalsignatures.obj
+	$(SLO)$/registerservices.obj
+	$(SLO)$/certificatecontainer.obj
+
+source\dialogs\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=dialogs
+	SLOFILES=
+	$(SLO)$/digitalsignaturesdialog.obj
+	$(SLO)$/certificatechooser.obj
+	$(SLO)$/certificateviewer.obj
+	$(SLO)$/macrosecurity.obj
+	$(SLO)$/resourcemanager.obj
+
+source\framework\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=fw
+	SLOFILES=
+	$(SLO)$/buffernode.obj
+	$(SLO)$/elementcollector.obj
+	$(SLO)$/elementmark.obj
+	$(SLO)$/securityengine.obj
+	$(SLO)$/signatureengine.obj
+	$(SLO)$/encryptionengine.obj
+	$(SLO)$/signaturecreatorimpl.obj
+	$(SLO)$/signatureverifierimpl.obj
+	$(SLO)$/encryptorimpl.obj
+	$(SLO)$/decryptorimpl.obj
+	$(SLO)$/saxeventkeeperimpl.obj
+	$(SLO)$/xmlencryptiontemplateimpl.obj
+	$(SLO)$/xmlsignaturetemplateimpl.obj
+	$(SLO)$/xsec_framework.obj
+
+source\helper\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=helper
+	SLOFILES=
+	$(SLO)$/documentsignaturehelper.obj
+	$(SLO)$/xmlsignaturehelper.obj
+	$(SLO)$/xmlsignaturehelper2.obj
+	$(SLO)$/xsecctl.obj
+	$(SLO)$/xsecparser.obj
+	$(SLO)$/xsecsign.obj
+	$(SLO)$/xsecverify.obj
+
+source\xmlsec\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xs_comm
+	SLOFILES=
+	$(SLO)$/biginteger.obj
+	$(SLO)$/certvalidity.obj
+	$(SLO)$/saxhelper.obj
+	$(SLO)$/xmldocumentwrapper_xmlsecimpl.obj
+	$(SLO)$/xmlelementwrapper_xmlsecimpl.obj
+	$(SLO)$/certificateextension_xmlsecimpl.obj
+	$(SLO)$/xmlstreamio.obj
+	$(SLO)$/errorcallback.obj
+	$(SLO)$/xsec_xmlsec.obj
+	$(SLO)$/diagnose.obj
+
+source\xmlsec\mscrypt\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xs_mscrypt
+	SLOFILES=
+	$(SLO)$/securityenvironment_mscryptimpl.obj
+	$(SLO)$/xmlencryption_mscryptimpl.obj
+	$(SLO)$/xmlsecuritycontext_mscryptimpl.obj
+	$(SLO)$/xmlsignature_mscryptimpl.obj
+	$(SLO)$/x509certificate_mscryptimpl.obj
+	$(SLO)$/seinitializer_mscryptimpl.obj
+	$(SLO)$/xsec_mscrypt.obj
+	$(SLO)$/sanextension_mscryptimpl.obj
+
+source\xmlsec\nss\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xs_nss
+	SLOFILES=
+	$(SLO)$/nssinitializer.obj
+	$(SLO)$/digestcontext.obj
+	$(SLO)$/ciphercontext.obj
+	$(SLO)$/xsec_nss.obj
+	SLOFILES+=
+	$(SLO)$/securityenvironment_nssimpl.obj
+	$(SLO)$/seinitializer_nssimpl.obj
+	$(SLO)$/xmlencryption_nssimpl.obj
+	$(SLO)$/xmlsecuritycontext_nssimpl.obj
+	$(SLO)$/xmlsignature_nssimpl.obj
+	$(SLO)$/x509certificate_nssimpl.obj
+	$(SLO)$/sanextension_nssimpl.obj
+	$(SLO)$/secerror.obj
+
+tools\demo\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=demo
+
+tools\standalone\csfit\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity-cxsfit
+
+tools\standalone\csfit\util\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity-secfit-boot
+
+tools\standalone\mscsfit\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity-mscxsfit
+
+tools\standalone\mscsfit\util\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity-mscsfit-boot
+
+tools\uno\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity-uno
+
+util\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=xmlsecurity
+
+util\target.pmk
+
+workben\makefile.mk
+	PRJNAME=xmlsecurity
+	TARGET=signaturetest
+	OBJFILES=$(OBJ)$/signaturetest.obj

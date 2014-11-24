@@ -1,0 +1,38 @@
+Name:
+libxmlsec
+
+Dependencies:
+stlport soltools LIBXML2:libxml2 NSS:nss NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\external\xmlsec
+mkdir: %_DEST%\inc%_EXT%\external\xmlsec\nss
+mkdir: %_DEST%\inc%_EXT%\external\xmlsec\mscrypto
+..\%__SRC%\inc\xmlsec\*.h %_DEST%\inc%_EXT%\external\xmlsec\*.h
+..\%__SRC%\inc\xmlsec\nss\*.h %_DEST%\inc%_EXT%\external\xmlsec\nss\*.h
+..\%__SRC%\inc\xmlsec\mscrypto\*.h %_DEST%\inc%_EXT%\external\xmlsec\mscrypto\*.h
+..\%__SRC%\lib\lib*.a %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+xmlsec1-configure-libxml-libxslt.patch
+xmlsec1-configure.patch
+xmlsec1-customkeymanage.patch
+xmlsec1-mingw-keymgr-mscrypto.patch
+xmlsec1-mingw32.patch
+xmlsec1-noverify.patch
+xmlsec1-nssdisablecallbacks.patch
+xmlsec1-nssmangleciphers.patch
+xmlsec1-olderlibxml2.patch
+xmlsec1-update-config-sub-and-guess.patch
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=xmlsec1
+	TARGET=so_xmlsec1

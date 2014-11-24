@@ -1,0 +1,349 @@
+Name:
+sdext
+
+Dependencies:
+L10N:l10n offuh comphelper unotools readlicense_oo cppu tools cppuhelper sal javaunohelper officecfg LIBXSLT:libxslt xmlhelp NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%\pdfimport
+..\%__SRC%\bin\pdf2xml.* %_DEST%\bin%_EXT%\pdf2xml.*
+..\%__SRC%\bin\pdfunzip.* %_DEST%\bin%_EXT%\pdfunzip.*
+..\%__SRC%\bin\pdfimport.oxt %_DEST%\bin%_EXT%\pdfimport\pdfimport.oxt
+
+
+
+mkdir: %COMMON_DEST%\res%_EXT%
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+
+mkdir: %_DEST%\xml%_EXT%
+mkdir: %_DEST%\xml%_EXT%\registry
+mkdir: %_DEST%\xml%_EXT%\registry\spool
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+mkdir: %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\ProtocolHandler
+
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\Jobs\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\Jobs
+..\%__SRC%\misc\registry\spool\org\openoffice\Office\ProtocolHandler\*.xcu %_DEST%\xml%_EXT%\registry\spool\org\openoffice\Office\ProtocolHandler
+
+mkdir: %_DEST%\xml%_EXT%
+..\%__SRC%\misc\PresentationMinimizer.component %_DEST%\xml%_EXT%\PresentationMinimizer.component
+..\%__SRC%\misc\PresenterScreen.component %_DEST%\xml%_EXT%\PresenterScreen.component
+
+..\%__SRC%\bin\PresentationMinimizer*.dll %_DEST%\bin%_EXT%\PresentationMinimizer*.dll
+..\%__SRC%\bin\PreMin*.dll %_DEST%\bin%_EXT%\PreMin*.dll
+..\%__SRC%\lib\PresentationMinimizer*.so %_DEST%\lib%_EXT%
+..\%__SRC%\bin\PresenterScreen*.dll %_DEST%\bin%_EXT%\PresenterScreen*.dll
+..\%__SRC%\bin\PreScr*.dll %_DEST%\bin%_EXT%\PreScr*.dll
+..\%__SRC%\lib\PresenterScreen*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+Source Files:
+inc\pch\precompiled_sdext.cxx
+source\minimizer\configurationaccess.cxx
+source\minimizer\fileopendialog.cxx
+source\minimizer\graphiccollector.cxx
+source\minimizer\impoptimizer.cxx
+source\minimizer\informationdialog.cxx
+source\minimizer\optimizationstats.cxx
+source\minimizer\optimizerdialog.cxx
+source\minimizer\optimizerdialogcontrols.cxx
+source\minimizer\pagecollector.cxx
+source\minimizer\pppoptimizer.cxx
+source\minimizer\pppoptimizerdialog.cxx
+source\minimizer\pppoptimizertoken.cxx
+source\minimizer\pppoptimizeruno.cxx
+source\minimizer\unodialog.cxx
+source\pdfimport\filterdet.cxx
+source\pdfimport\pdfiadaptor.cxx
+source\pdfimport\services.cxx
+source\pdfimport\misc\pdfihelper.cxx
+source\pdfimport\misc\pwdinteract.cxx
+source\pdfimport\odf\odfemitter.cxx
+source\pdfimport\pdfparse\pdfentries.cxx
+source\pdfimport\pdfparse\pdfparse.cxx
+source\pdfimport\sax\emitcontext.cxx
+source\pdfimport\sax\saxattrlist.cxx
+source\pdfimport\test\pdf2xml.cxx
+source\pdfimport\test\pdfunzip.cxx
+source\pdfimport\test\tests.cxx
+source\pdfimport\tree\drawtreevisiting.cxx
+source\pdfimport\tree\genericelements.cxx
+source\pdfimport\tree\imagecontainer.cxx
+source\pdfimport\tree\pdfiprocessor.cxx
+source\pdfimport\tree\style.cxx
+source\pdfimport\tree\treevisitorfactory.cxx
+source\pdfimport\tree\writertreevisiting.cxx
+source\pdfimport\wrapper\hash.cxx
+source\pdfimport\wrapper\wrapper.cxx
+source\pdfimport\xpdfwrapper\pdfioutdev_gpl.cxx
+source\pdfimport\xpdfwrapper\pnghelper.cxx
+source\pdfimport\xpdfwrapper\wrapper_gpl.cxx
+source\presenter\components.cxx
+source\presenter\PresenterAccessibility.cxx
+source\presenter\PresenterAnimation.cxx
+source\presenter\PresenterAnimator.cxx
+source\presenter\PresenterBitmapContainer.cxx
+source\presenter\PresenterButton.cxx
+source\presenter\PresenterCanvasHelper.cxx
+source\presenter\PresenterClock.cxx
+source\presenter\PresenterConfigurationAccess.cxx
+source\presenter\PresenterController.cxx
+source\presenter\PresenterCurrentSlideObserver.cxx
+source\presenter\PresenterFrameworkObserver.cxx
+source\presenter\PresenterGeometryHelper.cxx
+source\presenter\PresenterHelper.cxx
+source\presenter\PresenterHelpView.cxx
+source\presenter\PresenterNotesView.cxx
+source\presenter\PresenterPaintManager.cxx
+source\presenter\PresenterPane.cxx
+source\presenter\PresenterPaneAnimator.cxx
+source\presenter\PresenterPaneBase.cxx
+source\presenter\PresenterPaneBorderManager.cxx
+source\presenter\PresenterPaneBorderPainter.cxx
+source\presenter\PresenterPaneContainer.cxx
+source\presenter\PresenterPaneFactory.cxx
+source\presenter\PresenterProtocolHandler.cxx
+source\presenter\PresenterScreen.cxx
+source\presenter\PresenterScrollBar.cxx
+source\presenter\PresenterSlidePreview.cxx
+source\presenter\PresenterSlideShowView.cxx
+source\presenter\PresenterSlideSorter.cxx
+source\presenter\PresenterSprite.cxx
+source\presenter\PresenterSpritePane.cxx
+source\presenter\PresenterTextView.cxx
+source\presenter\PresenterTheme.cxx
+source\presenter\PresenterTimer.cxx
+source\presenter\PresenterToolBar.cxx
+source\presenter\PresenterUIPainter.cxx
+source\presenter\PresenterViewFactory.cxx
+source\presenter\PresenterWindowManager.cxx
+
+Header Files:
+inc\pch\precompiled_sdext.hxx
+source\minimizer\configurationaccess.hxx
+source\minimizer\fileopendialog.hxx
+source\minimizer\graphiccollector.hxx
+source\minimizer\helpid.hrc
+source\minimizer\impoptimizer.hxx
+source\minimizer\informationdialog.hxx
+source\minimizer\minimizer.hrc
+source\minimizer\optimizationstats.hxx
+source\minimizer\optimizerdialog.hrc
+source\minimizer\optimizerdialog.hxx
+source\minimizer\pagecollector.hxx
+source\minimizer\pppoptimizer.hxx
+source\minimizer\pppoptimizerdialog.hxx
+source\minimizer\pppoptimizertoken.hxx
+source\minimizer\unodialog.hxx
+source\pdfimport\filterdet.hxx
+source\pdfimport\pdfiadaptor.hxx
+source\pdfimport\inc\contentsink.hxx
+source\pdfimport\inc\odfemitter.hxx
+source\pdfimport\inc\pdfihelper.hxx
+source\pdfimport\inc\pdfparse.hxx
+source\pdfimport\inc\saxemitter.hxx
+source\pdfimport\inc\treevisitorfactory.hxx
+source\pdfimport\inc\wrapper.hxx
+source\pdfimport\inc\xmlemitter.hxx
+source\pdfimport\sax\emitcontext.hxx
+source\pdfimport\sax\saxattrlist.hxx
+source\pdfimport\test\outputwrap.hxx
+source\pdfimport\tree\drawtreevisiting.hxx
+source\pdfimport\tree\genericelements.hxx
+source\pdfimport\tree\imagecontainer.hxx
+source\pdfimport\tree\pdfiprocessor.hxx
+source\pdfimport\tree\style.hxx
+source\pdfimport\tree\treevisiting.hxx
+source\pdfimport\tree\writertreevisiting.hxx
+source\pdfimport\xpdfwrapper\pdfioutdev_gpl.hxx
+source\pdfimport\xpdfwrapper\pnghelper.hxx
+source\presenter\PresenterAccessibility.hxx
+source\presenter\PresenterAnimation.hxx
+source\presenter\PresenterAnimator.hxx
+source\presenter\PresenterBitmapContainer.hxx
+source\presenter\PresenterButton.hxx
+source\presenter\PresenterCanvasHelper.hxx
+source\presenter\PresenterClock.hxx
+source\presenter\PresenterConfigurationAccess.hxx
+source\presenter\PresenterController.hxx
+source\presenter\PresenterCurrentSlideObserver.hxx
+source\presenter\PresenterFrameworkObserver.hxx
+source\presenter\PresenterGeometryHelper.hxx
+source\presenter\PresenterHelper.hxx
+source\presenter\PresenterHelpView.hxx
+source\presenter\PresenterNotesView.hxx
+source\presenter\PresenterPaintManager.hxx
+source\presenter\PresenterPane.hxx
+source\presenter\PresenterPaneAnimator.hxx
+source\presenter\PresenterPaneBase.hxx
+source\presenter\PresenterPaneBorderManager.hxx
+source\presenter\PresenterPaneBorderPainter.hxx
+source\presenter\PresenterPaneContainer.hxx
+source\presenter\PresenterPaneFactory.hxx
+source\presenter\PresenterProtocolHandler.hxx
+source\presenter\PresenterScreen.hrc
+source\presenter\PresenterScreen.hxx
+source\presenter\PresenterScrollBar.hxx
+source\presenter\PresenterSlidePreview.hxx
+source\presenter\PresenterSlideShowView.hxx
+source\presenter\PresenterSlideSorter.hxx
+source\presenter\PresenterSprite.hxx
+source\presenter\PresenterSpritePane.hxx
+source\presenter\PresenterTextView.hxx
+source\presenter\PresenterTheme.hxx
+source\presenter\PresenterTimer.hxx
+source\presenter\PresenterToolBar.hxx
+source\presenter\PresenterUIPainter.hxx
+source\presenter\PresenterViewFactory.hxx
+source\presenter\PresenterWindowManager.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=sdext
+	TARGET=inc
+
+source\minimizer\makefile.mk
+	PRJNAME=sdext
+	TARGET=PresentationMinimizer
+	SLOFILES=
+	$(SLO)$/unodialog.obj
+	$(SLO)$/optimizerdialog.obj
+	$(SLO)$/informationdialog.obj
+	$(SLO)$/fileopendialog.obj
+	$(SLO)$/optimizerdialogcontrols.obj
+	$(SLO)$/configurationaccess.obj
+	$(SLO)$/impoptimizer.obj
+	$(SLO)$/pppoptimizer.obj
+	$(SLO)$/pppoptimizeruno.obj
+	$(SLO)$/pppoptimizertoken.obj
+	$(SLO)$/pppoptimizerdialog.obj
+	$(SLO)$/optimizationstats.obj
+	$(SLO)$/graphiccollector.obj
+	$(SLO)$/pagecollector.obj
+	
+
+source\pdfimport\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfimport
+	SLOFILES=
+	$(SLO)$/filterdet.obj
+	$(SLO)$/pdfiadaptor.obj
+	$(SLO)$/services.obj
+
+source\pdfimport\pdfisettings.pmk
+
+source\pdfimport\misc\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfmisc
+	SLOFILES=
+	$(SLO)$/pdfihelper.obj
+	$(SLO)$/pwdinteract.obj
+
+source\pdfimport\odf\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfodf
+	SLOFILES=
+	$(SLO)$/odfemitter.obj
+
+source\pdfimport\pdfparse\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfparse
+	SLOFILES=
+	$(SLO)$/pdfparse.obj
+	$(SLO)$/pdfentries.obj
+
+source\pdfimport\sax\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfsax
+	SLOFILES=
+	$(SLO)$/emitcontext.obj
+	$(SLO)$/saxattrlist.obj
+
+source\pdfimport\test\makefile.mk
+	PRJNAME=sdext
+	TARGET=tests
+	TARGET2=pdf2xml
+	TARGET3=pdfunzip
+
+source\pdfimport\test\testdocs\makefile.mk
+	PRJNAME=sdext
+	TARGET=testdocs
+
+source\pdfimport\tree\makefile.mk
+	PRJNAME=sdext
+	TARGET=pdfparsetree
+	SLOFILES=
+	$(SLO)$/genericelements.obj
+	$(SLO)$/imagecontainer.obj
+	$(SLO)$/pdfiprocessor.obj
+	$(SLO)$/writertreevisiting.obj
+	$(SLO)$/drawtreevisiting.obj
+	$(SLO)$/treevisitorfactory.obj
+	$(SLO)$/style.obj
+
+source\pdfimport\wrapper\makefile.mk
+	PRJNAME=sdext
+	TARGET=xpdfwrapper
+	SLOFILES=
+	$(SLO)$/wrapper.obj
+
+source\pdfimport\xpdftest\makefile.mk
+	PRJNAME=sdext
+	TARGET=xpdftest
+
+source\pdfimport\xpdfwrapper\makefile.mk
+	PRJNAME=sdext
+	TARGET=xpdfimport
+
+source\presenter\makefile.mk
+	PRJNAME=sdext
+	TARGET=PresenterScreen
+	SLOFILES=
+	$(SLO)$/components.obj
+	$(SLO)$/PresenterAccessibility.obj
+	$(SLO)$/PresenterAnimation.obj
+	$(SLO)$/PresenterAnimator.obj
+	$(SLO)$/PresenterBitmapContainer.obj
+	$(SLO)$/PresenterButton.obj
+	$(SLO)$/PresenterCanvasHelper.obj
+	$(SLO)$/PresenterConfigurationAccess.obj
+	$(SLO)$/PresenterController.obj
+	$(SLO)$/PresenterCurrentSlideObserver.obj
+	$(SLO)$/PresenterFrameworkObserver.obj
+	$(SLO)$/PresenterGeometryHelper.obj
+	$(SLO)$/PresenterHelper.obj
+	$(SLO)$/PresenterHelpView.obj
+	$(SLO)$/PresenterNotesView.obj
+	$(SLO)$/PresenterPaintManager.obj
+	$(SLO)$/PresenterPane.obj
+	$(SLO)$/PresenterPaneAnimator.obj
+	$(SLO)$/PresenterPaneBase.obj
+	$(SLO)$/PresenterPaneBorderManager.obj
+	$(SLO)$/PresenterPaneBorderPainter.obj
+	$(SLO)$/PresenterPaneContainer.obj
+	$(SLO)$/PresenterPaneFactory.obj
+	$(SLO)$/PresenterProtocolHandler.obj
+	$(SLO)$/PresenterScreen.obj
+	$(SLO)$/PresenterScrollBar.obj
+	$(SLO)$/PresenterSlidePreview.obj
+	$(SLO)$/PresenterSlideShowView.obj
+	$(SLO)$/PresenterSlideSorter.obj
+	$(SLO)$/PresenterSprite.obj
+	$(SLO)$/PresenterSpritePane.obj
+	$(SLO)$/PresenterTextView.obj
+	$(SLO)$/PresenterTheme.obj
+	$(SLO)$/PresenterTimer.obj
+	$(SLO)$/PresenterToolBar.obj
+	$(SLO)$/PresenterUIPainter.obj
+	$(SLO)$/PresenterViewFactory.obj
+	$(SLO)$/PresenterWindowManager.obj
+	
+	$(TARGET).src
+	
+
+util\makefile.pmk

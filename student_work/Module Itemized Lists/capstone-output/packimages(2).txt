@@ -1,0 +1,21 @@
+Name:
+packimages
+
+Dependencies:
+:	postprocess NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%
+..\%__SRC%\bin\*.zip %COMMON_DEST%\bin%_EXT%
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+pack\makefile.mk
+	PRJNAME=packimages
+	TARGET=packimages

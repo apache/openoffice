@@ -1,0 +1,42 @@
+readlicense_oo
+=============
+
+Entering /cygdrive/c/steve/testarea/main/readlicense_oo/docs/readme
+
+mkout -- version: 1.8
+mkdir.exe -p ../../wntmsci12.pro/misc/WNT
+cp ../readme.dtd ../../wntmsci12.pro/misc/readme.dtd
+sed '' < ../readme.xsl > ../../wntmsci12.pro/misc/readme_text.xsl
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --novalid -o ../../wntmsci12.pro/misc/WNT/readme_en-US.txt \
+	--stringparam os1 WNT	--stringparam gui1 WNT	--stringparam com1  MSC \
+	--stringparam cp1 INTEL	--stringparam type text	--stringparam lang1 en-US \
+	../../wntmsci12.pro/misc/readme_text.xsl	./readme.xrm
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --novalid -o ../../wntmsci12.pro/misc/WNT/readme_en-US.html \
+	--stringparam os1 WNT	--stringparam gui1 WNT	--stringparam com1  MSC \
+	--stringparam cp1 INTEL	--stringparam type html	--stringparam lang1 en-US \
+	../readme.xsl	./readme.xrm
+
+Entering /cygdrive/c/steve/testarea/main/readlicense_oo
+
+C:/cygwin/bin/perl -p -e 's/\r?\n$/\r\n/' > ./wntmsci12.pro/misc/SUM_LICENSE ../LICENSE ../LICENSE_category_b
+C:/cygwin/bin/perl -p -e 's/\r?\n$/\r\n/' > ./wntmsci12.pro/misc/SUM_NOTICE ../NOTICE ../NOTICE_category_b
+readlicense_oo deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/readlicense_oo/build.lst
+=====================================================================
+Delivering README files
+=====================================================================
+COPY: ../wntmsci12.pro/misc/WNT/readme_en-US.txt -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/readme_en-US.txt
+COPY: ../wntmsci12.pro/misc/WNT/readme_en-US.html -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/readme_en-US.html
+=====================================================================
+Delivering the LICENSE and NOTICE files
+=====================================================================
+COPY: ../wntmsci12.pro/misc/SUM_NOTICE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/NOTICE
+COPY: ../wntmsci12.pro/misc/SUM_LICENSE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/LICENSE
+COPY: ../wntmsci12.pro/misc/SUM_NOTICE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/NOTICE.txt
+COPY: ../wntmsci12.pro/misc/SUM_LICENSE -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/LICENSE.txt
+COPY: ../../LICENSE_ALv2 -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/osl/LICENSE_ALv2
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/readlicense_oo/deliver.log
+Module 'readlicense_oo' delivered successfully. 8 files copied, 0 files unchanged
+
+=============

@@ -1,0 +1,683 @@
+testtools
+=============
+
+Entering /cygdrive/c/steve/testarea/main/testtools/source/cliversioning
+
+mkout -- version: 1.8
+slfl.pl csc -optimize+ -target:exe -out:../../wntmsci12.pro/bin/runtests.exe -platform:x86\
+		runtests.cs
+Microsoft (R) Visual C# 2005 Compiler version 8.00.50727.4927
+for Microsoft (R) Windows (R) 2005 Framework version 2.0.50727
+Copyright (C) Microsoft Corporation 2001-2005. All rights reserved.
+
+slfl.pl csc -optimize+ -target:library -out:../../wntmsci12.pro/bin/version_current.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+ 		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+ 		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_cppuhelper.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_oootypes.dll \
+		version.cs
+Microsoft (R) Visual C# 2005 Compiler version 8.00.50727.4927
+for Microsoft (R) Windows (R) 2005 Framework version 2.0.50727
+Copyright (C) Microsoft Corporation 2001-2005. All rights reserved.
+
+version.cs(592,13): warning CS0168: The variable 'd' is declared but never used
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_cppuhelper.dll ../../wntmsci12.pro/bin/cli_cppuhelper.dll
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll ../../wntmsci12.pro/bin/cli_basetypes.dll
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll ../../wntmsci12.pro/bin/cli_uretypes.dll
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll ../../wntmsci12.pro/bin/cli_ure.dll
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_oootypes.dll ../../wntmsci12.pro/bin/cli_oootypes.dll
+C:/cygwin/bin/touch.exe ../../wntmsci12.pro/misc/copyassemblies.done
+/usr/bin/cp version_libs/* ../../wntmsci12.pro/bin
+.
+
+. 
+To run the test go to qacliversioning, run dmake and follow instructions.
+.
+Or install an office with full system integration and run ../../wntmsci12.pro/bin/runtests.exe 
+in a console withouth build environment.
+.
+Or install an office with setup /a. Expand PATH with the bin folder of the URE.
+Set UNO_PATH=system_path_to_program_folder
+This must be the program folder of the brand layer.
+For example, c:starofficeSunstaroffice 9program
+Run runtests.exe.
+.
+To build a test library with run.
+
+dmake name=version_10_10_10.dll
+
+The name must always start with version_.
+
+.
+.	
+
+Entering /cygdrive/c/steve/testarea/main/testtools/inc
+
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkqS5TZp
+precompiled_testtools.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mk7QMsgU
+precompiled_testtools.cxx
+
+Entering /cygdrive/c/steve/testarea/main/testtools/source/bridgetest/idl
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -O../../../wntmsci12.pro/misc/bridgetest_idl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/idl -cid -we bridgetest.idl
+Compiling: bridgetest.idl
+/bin/rm -f ../../../wntmsci12.pro/bin/bridgetest.rdb
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../wntmsci12.pro/bin/bridgetest.rdb /UCR ../../../wntmsci12.pro/misc/bridgetest_idl/bridgetest.urd
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker -O../../../wntmsci12.pro/inc -BUCR ../../../wntmsci12.pro/bin/bridgetest.rdb -XC:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb
+C:/cygwin/bin/touch.exe ../../../wntmsci12.pro/misc/bridgetest_idl.cppumaker.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/javamaker -O../../../wntmsci12.pro/class -BUCR -nD -XC:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb ../../../wntmsci12.pro/bin/bridgetest.rdb
+C:/cygwin/bin/touch.exe ../../../wntmsci12.pro/misc/bridgetest_idl.javamaker.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/climaker  --out ../../../wntmsci12.pro/bin/cli_types_bridgetest.dll -r C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		-X C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb ../../../wntmsci12.pro/bin/bridgetest.rdb 
+C:/cygwin/bin/touch.exe ../../../wntmsci12.pro/bin/cli_types_bridgetest.dll
+
+Entering /cygdrive/c/steve/testarea/main/testtools/source/bridgetest
+
+Making:    all_bridgetest.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/cppobj.uno_version.h/ > ../../wntmsci12.pro/misc/cppobj.uno_version.c
+Compiling: testtools/wntmsci12.pro/misc/cppobj.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/cppobj.uno_version.obj ../../wntmsci12.pro/misc/cppobj.uno_version.c
+cppobj.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkSYGm80 > ../../wntmsci12.pro/misc/s_cppobj.uno_version.dpcc
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/bridgetest.uno_version.h/ > ../../wntmsci12.pro/misc/bridgetest.uno_version.c
+Compiling: testtools/wntmsci12.pro/misc/bridgetest.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/bridgetest.uno_version.obj ../../wntmsci12.pro/misc/bridgetest.uno_version.c
+bridgetest.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkN6Wtw2 > ../../wntmsci12.pro/misc/s_bridgetest.uno_version.dpcc
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/constructors.uno_version.h/ > ../../wntmsci12.pro/misc/constructors.uno_version.c
+Compiling: testtools/wntmsci12.pro/misc/constructors.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/constructors.uno_version.obj ../../wntmsci12.pro/misc/constructors.uno_version.c
+constructors.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8gADUX > ../../wntmsci12.pro/misc/s_constructors.uno_version.dpcc
+Compiling: testtools/source/bridgetest/bridgetest.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_testtools.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_testtools.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/bridgetest.obj C:/steve/testarea/main/testtools/source/bridgetest/bridgetest.cxx 
+bridgetest.cxx
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(std::_List_nod<_Ty,_Alloc>::_Node *)'
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node,
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(51) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(59) : see reference to class template instantiation 'std::_List_nod<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(79) : see reference to class template instantiation 'std::_List_ptr<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(96) : see reference to class template instantiation 'std::_List_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Ax=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_set(65) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_set(56) : see reference to class template instantiation 'std::tr1::unordered_set<_Kty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=const void *,
+            _Hasher=osl::detail::VoidPtrHash,
+            _Keyeq=std::equal_to<const void *>,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\osl/diagnose.hxx(104) : see reference to class template instantiation 'std::hash_set<__K,__H,__E,__A>' being compiled
+        with
+        [
+            __K=const void *,
+            __H=osl::detail::VoidPtrHash,
+            __E=std::equal_to<const void *>,
+            __A=rtl::Allocator<const void *>
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(stdext::_Hash<_Traits>::_List_position *)'
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(442) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(421) : see reference to class template instantiation 'std::_Container_base_aux_alloc_real<_Alloc>' being compiled
+        with
+        [
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(439) : see reference to class template instantiation 'std::_Vector_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(894) : see reference to class template instantiation 'std::vector<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Ax=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkUUeMJy > ../../wntmsci12.pro/misc/s_bridgetest.dpcc
+Compiling: testtools/source/bridgetest/cppobj.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_testtools.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_testtools.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/cppobj.obj C:/steve/testarea/main/testtools/source/bridgetest/cppobj.cxx 
+cppobj.cxx
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(std::_List_nod<_Ty,_Alloc>::_Node *)'
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node,
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(51) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(59) : see reference to class template instantiation 'std::_List_nod<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(79) : see reference to class template instantiation 'std::_List_ptr<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(96) : see reference to class template instantiation 'std::_List_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Ax=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_set(65) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_set(56) : see reference to class template instantiation 'std::tr1::unordered_set<_Kty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=const void *,
+            _Hasher=osl::detail::VoidPtrHash,
+            _Keyeq=std::equal_to<const void *>,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\osl/diagnose.hxx(104) : see reference to class template instantiation 'std::hash_set<__K,__H,__E,__A>' being compiled
+        with
+        [
+            __K=const void *,
+            __H=osl::detail::VoidPtrHash,
+            __E=std::equal_to<const void *>,
+            __A=rtl::Allocator<const void *>
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(stdext::_Hash<_Traits>::_List_position *)'
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(442) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(421) : see reference to class template instantiation 'std::_Container_base_aux_alloc_real<_Alloc>' being compiled
+        with
+        [
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(439) : see reference to class template instantiation 'std::_Vector_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(894) : see reference to class template instantiation 'std::vector<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Ax=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkCNpNWJ > ../../wntmsci12.pro/misc/s_cppobj.dpcc
+Compiling: testtools/source/bridgetest/currentcontextchecker.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_testtools.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_testtools.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/currentcontextchecker.obj C:/steve/testarea/main/testtools/source/bridgetest/currentcontextchecker.cxx 
+currentcontextchecker.cxx
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(std::_List_nod<_Ty,_Alloc>::_Node *)'
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node,
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(51) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=std::_List_nod<const void *,rtl::Allocator<const void *>>::_Node
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(59) : see reference to class template instantiation 'std::_List_nod<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(79) : see reference to class template instantiation 'std::_List_ptr<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(96) : see reference to class template instantiation 'std::_List_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=const void *,
+            _Ax=rtl::Allocator<const void *>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_set(65) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_set(56) : see reference to class template instantiation 'std::tr1::unordered_set<_Kty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=const void *,
+            _Hasher=osl::detail::VoidPtrHash,
+            _Keyeq=std::equal_to<const void *>,
+            _Alloc=rtl::Allocator<const void *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\osl/diagnose.hxx(104) : see reference to class template instantiation 'std::hash_set<__K,__H,__E,__A>' being compiled
+        with
+        [
+            __K=const void *,
+            __H=osl::detail::VoidPtrHash,
+            __E=std::equal_to<const void *>,
+            __A=rtl::Allocator<const void *>
+        ]
+C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(143) : warning C4100: 'p' : unreferenced formal parameter
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\rtl/allocator.hxx(144) : while compiling class template member function 'void rtl::Allocator<T>::destroy(stdext::_Hash<_Traits>::_List_position *)'
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Traits=std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(442) : see reference to class template instantiation 'rtl::Allocator<T>' being compiled
+        with
+        [
+            T=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(421) : see reference to class template instantiation 'std::_Container_base_aux_alloc_real<_Alloc>' being compiled
+        with
+        [
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/vector(439) : see reference to class template instantiation 'std::_Vector_val<_Ty,_Alloc>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Alloc=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(894) : see reference to class template instantiation 'std::vector<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position,
+            _Ax=rtl::Allocator<stdext::_Hash<std::tr1::_Uset_traits<const void *,stdext::_Hash_compare<const void *,osl::detail::VoidPtrHash,std::equal_to<const void *>>,rtl::Allocator<const void *>,false>>::_List_position>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkBvKimw > ../../wntmsci12.pro/misc/s_currentcontextchecker.dpcc
+Compiling: testtools/source/bridgetest/multi.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_testtools.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_testtools.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/multi.obj C:/steve/testarea/main/testtools/source/bridgetest/multi.cxx 
+multi.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGhmASk > ../../wntmsci12.pro/misc/s_multi.dpcc
+------------------------------
+using: 
+using: ../../wntmsci12.pro/slb/cppobj.lib
+------------------------------
+Making:    cppobj.lib
+lib   /OUT:../../wntmsci12.pro/slb/cppobj.lib @C:/cygwin/tmp/mkCLRyEP
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/cppobj.obj ../../wntmsci12.pro/slo/currentcontextchecker.obj ../../wntmsci12.pro/slo/multi.obj 
+
+------------------------------
+using: 
+using: ../../wntmsci12.pro/slb/bridgetest.lib
+------------------------------
+Making:    bridgetest.lib
+lib   /OUT:../../wntmsci12.pro/slb/bridgetest.lib @C:/cygwin/tmp/mkcVsUWW
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/bridgetest.obj ../../wntmsci12.pro/slo/currentcontextchecker.obj ../../wntmsci12.pro/slo/multi.obj 
+
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_cppobj.uno.dxp
+Making:    module definition file cppobj.uno.def
+cat ../../wntmsci12.pro/misc/component_cppobj.uno.dxp >> ../../wntmsci12.pro/misc/cppobj.uno.def.tmpfile
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_bridgetest.uno.dxp
+Making:    module definition file bridgetest.uno.def
+cat ../../wntmsci12.pro/misc/component_bridgetest.uno.dxp >> ../../wntmsci12.pro/misc/bridgetest.uno.def.tmpfile
+cat C:/steve/TestArea/main/solenv/src/component.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/component_constructors.uno.dxp
+Making:    module definition file constructors.uno.def
+cat ../../wntmsci12.pro/misc/component_constructors.uno.dxp >> ../../wntmsci12.pro/misc/constructors.uno.def.tmpfile
+Making:    cppobj.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/cppobj.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/cppobj.uno_def.res > ../../wntmsci12.pro/misc/cppobj.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkuo29xD
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/cppobj.uno.dll -map:../../wntmsci12.pro/misc/cppobj.uno.map -def:../../wntmsci12.pro/misc/cppobj.uno.def -implib:../../wntmsci12.pro/lib/ibridgetest_t1.lib ../../wntmsci12.pro/slo/cppobj.uno_version.obj ../../wntmsci12.pro/slb/cppobj.lib icppu.lib icppuhelper.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/cppobj.uno.res 
+   Creating library ../../wntmsci12.pro/lib/ibridgetest_t1.lib and object ../../wntmsci12.pro/lib/ibridgetest_t1.exp
+linking ../../wntmsci12.pro/bin/cppobj.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/cppobj.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/cppobj.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/cppobj.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/cppobj.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/cppobj.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/cppobj.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/cppobj.uno.dll.tmanifest ; fi
+Making:    bridgetest.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/bridgetest.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/bridgetest.uno_def.res > ../../wntmsci12.pro/misc/bridgetest.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkrW6hKK
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/bridgetest.uno.dll -map:../../wntmsci12.pro/misc/bridgetest.uno.map -def:../../wntmsci12.pro/misc/bridgetest.uno.def -implib:../../wntmsci12.pro/lib/ibridgetest_t2.lib ../../wntmsci12.pro/slo/bridgetest.uno_version.obj ../../wntmsci12.pro/slb/bridgetest.lib icppu.lib icppuhelper.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/bridgetest.uno.res 
+   Creating library ../../wntmsci12.pro/lib/ibridgetest_t2.lib and object ../../wntmsci12.pro/lib/ibridgetest_t2.exp
+linking ../../wntmsci12.pro/bin/bridgetest.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/bridgetest.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/bridgetest.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/bridgetest.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/bridgetest.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/bridgetest.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/bridgetest.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/bridgetest.uno.dll.tmanifest ; fi
+Compiling: testtools/source/bridgetest/constructors.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_testtools.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_testtools.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/constructors.obj C:/steve/testarea/main/testtools/source/bridgetest/constructors.cxx 
+constructors.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkkugSD4 > ../../wntmsci12.pro/misc/s_constructors.dpcc
+Making:    constructors.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/bridgetest -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/constructors.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/constructors.uno_def.res > ../../wntmsci12.pro/misc/constructors.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mk4Yun3e
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/constructors.uno.dll -map:../../wntmsci12.pro/misc/constructors.uno.map -def:../../wntmsci12.pro/misc/constructors.uno.def -implib:../../wntmsci12.pro/lib/iconstructors.uno.lib ../../wntmsci12.pro/slo/constructors.uno_version.obj ../../wntmsci12.pro/slo/constructors.obj icppu.lib icppuhelper.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/constructors.uno.res 
+   Creating library ../../wntmsci12.pro/lib/iconstructors.uno.lib and object ../../wntmsci12.pro/lib/iconstructors.uno.exp
+linking ../../wntmsci12.pro/bin/constructors.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/constructors.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/constructors.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/constructors.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/constructors.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/constructors.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/constructors.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/constructors.uno.dll.tmanifest ; fi
+Making:    ibridgetest_t1.lib
+build of ../../wntmsci12.pro/bin/cppobj.uno.dll creates ../../wntmsci12.pro/lib/ibridgetest_t1.lib
+Making:    all_bridgetest.dpslo
+echo ../../wntmsci12.pro/bin
+../../wntmsci12.pro/bin
+/usr/bin/cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/udkapi.rdb ../../wntmsci12.pro/bin/uno_types.rdb
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../wntmsci12.pro/bin/uno_types.rdb / ../../wntmsci12.pro/bin/bridgetest.rdb
+echo \
+        '<list><filename>bridgetest.component</filename> <filename>constructors.component</filename> <filename>cppobj.component</filename> <filename>testComponent.component</filename></list>' \
+        > ../../wntmsci12.pro/misc/uno_services.input
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri './bridgetest.uno.dll' -o ../../wntmsci12.pro/misc/bridgetest.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt bridgetest.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri './constructors.uno.dll' -o ../../wntmsci12.pro/misc/constructors.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt constructors.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri './cppobj.uno.dll' -o ../../wntmsci12.pro/misc/cppobj.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt cppobj.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:${MY_CLASSDIR_URL}testComponent.jar' -o ../../wntmsci12.pro/misc/testComponent.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt testComponent.component
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam prefix C:/steve/testarea/main/testtools/source/bridgetest/../../wntmsci12.pro/misc/ -o ../../wntmsci12.pro/bin/uno_services.rdb \
+        C:/steve/TestArea/main/solenv/bin/packcomponents.xslt ../../wntmsci12.pro/misc/uno_services.input
+cd ../../wntmsci12.pro/bin && : &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/uno \
+		-ro uno_services.rdb -ro uno_types.rdb \
+		-s com.sun.star.test.bridge.BridgeTest -- \
+		com.sun.star.test.bridge.CppTestObject
+
+
+ ### test succeeded!
+cp C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ure/services.rdb ../../wntmsci12.pro/bin/services.rdb
+echo ': &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}}' 'C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin'/uno -ro uno_services.rdb -ro uno_types.rdb \
+        -s com.sun.star.test.bridge.CppTestObject \
+        -u \''uno:socket,host=127.0.0.1,port=2002;urp;test'\' --singleaccept \
+        > ../../wntmsci12.pro/bin/bridgetest_server.bat
+../../wntmsci12.pro/bin/bridgetest_server.bat
+echo ': &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}}' 'C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin'/uno -ro services.rdb \
+        -ro uno_services.rdb -ro uno_types.rdb \
+        -s com.sun.star.test.bridge.BridgeTest -- \
+        -u \''uno:socket,host=127.0.0.1,port=2002;urp;test'\' > ../../wntmsci12.pro/bin/bridgetest_client.bat
+../../wntmsci12.pro/bin/bridgetest_client.bat
+rm -f ../../wntmsci12.pro/bin/bridgetest_javaserver.bat
+echo java -classpath "C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/java_uno.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;../class;../class/testComponent.jar" \
+		com.sun.star.comp.bridge.TestComponentMain \""uno:socket,host=127.0.0.1,port=2002;urp;test"\" singleaccept > ../../wntmsci12.pro/bin/bridgetest_javaserver.bat
+../../wntmsci12.pro/bin/bridgetest_javaserver.bat
+dmake: Executing shell macro: $(WRAPCMD) echo $(PWD)/$(CLASSDIR)/
+echo ': &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}}' 'C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin'/uno -ro services.rdb \
+        -ro uno_services.rdb -ro uno_types.rdb \
+        -s com.sun.star.test.bridge.BridgeTest \
+        -env:URE_INTERNAL_JAVA_DIR=file:///C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin \
+        -env:MY_CLASSDIR_URL=file:///C:/steve/testarea/main/testtools/source/bridgetest/../../wntmsci12.pro/class/ \
+        -- com.sun.star.test.bridge.JavaTestObject noCurrentContext > ../../wntmsci12.pro/bin/bridgetest_inprocess_java.bat
+../../wntmsci12.pro/bin/bridgetest_inprocess_java.bat
+
+Entering /cygdrive/c/steve/testarea/main/testtools/com/sun/star/comp/bridge
+
+Making:    com_sun_star_comp_bridge.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkXJTKv7
+Making:    com_sun_star_comp_bridge.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_manifest
+cp C:/steve/testarea/main/testtools/com/sun/star/comp/bridge/manifest ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_manifest
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/com_sun_star_comp_bridge/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/com_sun_star_comp_bridge/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/com_sun_star_comp_bridge_manifest >> ../../../../../wntmsci12.pro/class/com_sun_star_comp_bridge/META-INF/MANIFEST.MF
+cd ../../../../../wntmsci12.pro/class/com_sun_star_comp_bridge && zip  -u -rX ../testComponent.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../testComponent.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 11%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX testComponent.jar com/sun/star/comp/bridge test/testtools/bridgetest  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/comp/bridge/ (stored 0%)
+  adding: com/sun/star/comp/bridge/CurrentContextChecker$1.class (deflated 46%)
+  adding: com/sun/star/comp/bridge/CurrentContextChecker.class (deflated 49%)
+  adding: com/sun/star/comp/bridge/TestComponent$_PerformancTestObject.class (deflated 65%)
+  adding: com/sun/star/comp/bridge/TestComponent$_TestObject$1.class (deflated 60%)
+  adding: com/sun/star/comp/bridge/TestComponent$_TestObject$CheckFailed.class (deflated 39%)
+  adding: com/sun/star/comp/bridge/TestComponent$_TestObject.class (deflated 67%)
+  adding: com/sun/star/comp/bridge/TestComponent.class (deflated 51%)
+  adding: com/sun/star/comp/bridge/TestComponentMain$1.class (deflated 32%)
+  adding: com/sun/star/comp/bridge/TestComponentMain$InstanceProvider.class (deflated 52%)
+  adding: com/sun/star/comp/bridge/TestComponentMain$Listener.class (deflated 43%)
+  adding: com/sun/star/comp/bridge/TestComponentMain.class (deflated 54%)
+  adding: test/testtools/bridgetest/ (stored 0%)
+  adding: test/testtools/bridgetest/AllFloats.class (deflated 36%)
+  adding: test/testtools/bridgetest/BadConstructorArguments.class (deflated 29%)
+  adding: test/testtools/bridgetest/BigStruct.class (deflated 40%)
+  adding: test/testtools/bridgetest/Constructors.class (deflated 66%)
+  adding: test/testtools/bridgetest/Constructors2.class (deflated 85%)
+  adding: test/testtools/bridgetest/MediumStruct.class (deflated 37%)
+  adding: test/testtools/bridgetest/SmallStruct.class (deflated 35%)
+  adding: test/testtools/bridgetest/TestBadEnum.class (deflated 43%)
+  adding: test/testtools/bridgetest/TestDataElements.class (deflated 51%)
+  adding: test/testtools/bridgetest/TestElement.class (deflated 46%)
+  adding: test/testtools/bridgetest/TestEnum.class (deflated 48%)
+  adding: test/testtools/bridgetest/TestPolyStruct.class (deflated 43%)
+  adding: test/testtools/bridgetest/TestPolyStruct2.class (deflated 44%)
+  adding: test/testtools/bridgetest/TestSimple.class (deflated 44%)
+  adding: test/testtools/bridgetest/TestStruct.class (deflated 35%)
+  adding: test/testtools/bridgetest/XBridgeTest.class (deflated 50%)
+  adding: test/testtools/bridgetest/XBridgeTest2.class (deflated 57%)
+  adding: test/testtools/bridgetest/XBridgeTestBase.class (deflated 67%)
+  adding: test/testtools/bridgetest/XCurrentContextChecker.class (deflated 37%)
+  adding: test/testtools/bridgetest/XMulti.class (deflated 43%)
+  adding: test/testtools/bridgetest/XMultiBase1.class (deflated 40%)
+  adding: test/testtools/bridgetest/XMultiBase2.class (deflated 40%)
+  adding: test/testtools/bridgetest/XMultiBase3.class (deflated 40%)
+  adding: test/testtools/bridgetest/XMultiBase3a.class (deflated 30%)
+  adding: test/testtools/bridgetest/XMultiBase4.class (deflated 32%)
+  adding: test/testtools/bridgetest/XMultiBase5.class (deflated 52%)
+  adding: test/testtools/bridgetest/XMultiBase6.class (deflated 45%)
+  adding: test/testtools/bridgetest/XMultiBase7.class (deflated 37%)
+  adding: test/testtools/bridgetest/XRecursiveCall.class (deflated 37%)
+
+Entering /cygdrive/c/steve/testarea/main/testtools/source/bridgetest/cli
+
+Making:    all_cli_cpp_bridgetest.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/cli_cpp_bridgetest.uno_version.h/ > ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno_version.c
+Compiling: testtools/wntmsci12.pro/misc/cli_cpp_bridgetest.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../wntmsci12.pro/inc/cli_cpp_bridgetest.uno -I../inc -I../../../inc/pch -I../../../inc -I../../../WIN/inc -I../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../wntmsci12.pro/slo/cli_cpp_bridgetest.uno_version.obj ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno_version.c
+cli_cpp_bridgetest.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkDKsCJp > ../../../wntmsci12.pro/misc/s_cli_cpp_bridgetest.uno_version.dpcc
+Compiling: testtools/source/bridgetest/cli/cli_cpp_bridgetest.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../wntmsci12.pro/inc/cli_cpp_bridgetest.uno -I../inc -I../../../inc/pch -I../../../inc -I../../../WIN/inc -I../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180  -clr:oldSyntax -AI ../../../wntmsci12.pro/bin -AI C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../../wntmsci12.pro/slo/cli_cpp_bridgetest.obj C:/steve/testarea/main/testtools/source/bridgetest/cli/cli_cpp_bridgetest.cxx 
+cli_cpp_bridgetest.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkRivrjp > ../../../wntmsci12.pro/misc/s_cli_cpp_bridgetest.dpcc
+Making:    module definition file cli_cpp_bridgetest.uno.def
+Making:    cli_cpp_bridgetest.uno.dll
+rc -DWIN32 -I. -I../../../wntmsci12.pro/inc/cli_cpp_bridgetest.uno -I../inc -I../../../inc/pch -I../../../inc -I../../../WIN/inc -I../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../res -I.  ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno_def.res > ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkruneTq
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll -map:../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno.map -def:../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno.def -implib:../../../wntmsci12.pro/lib/icli_cpp_bridgetest.uno_t1.lib ../../../wntmsci12.pro/slo/cli_cpp_bridgetest.uno_version.obj ../../../wntmsci12.pro/slo/cli_cpp_bridgetest.obj mscoree.lib msvcmrt.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../../wntmsci12.pro/misc/cli_cpp_bridgetest.uno.res 
+   Creating library ../../../wntmsci12.pro/lib/icli_cpp_bridgetest.uno_t1.lib and object ../../../wntmsci12.pro/lib/icli_cpp_bridgetest.uno_t1.exp
+linking ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.manifest ...
+if [ -f ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.manifest ] ; then mt.exe  -manifest ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.manifest -outputresource:../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.manifest ] ; then /bin/rm -f ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.manifest ; fi
+if [ -f ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.tmanifest ] ; then /bin/rm -f ../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll.tmanifest ; fi
+Making:    all_cli_cpp_bridgetest.uno.dpslo
+slfl.pl csc -warnaserror+ -optimize -target:library -out:../../../wntmsci12.pro/bin/cli_cs_bridgetest.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_types_bridgetest.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+		-reference:System.dll \
+		cli_cs_bridgetest.cs
+Microsoft (R) Visual C# 2005 Compiler version 8.00.50727.4927
+for Microsoft (R) Windows (R) 2005 Framework version 2.0.50727
+Copyright (C) Microsoft Corporation 2001-2005. All rights reserved.
+
+slfl.pl csc -warnaserror+ -optimize -target:library -out:../../../wntmsci12.pro/bin/cli_cs_testobj.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_types_bridgetest.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+ 		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		cli_cs_testobj.cs cli_cs_multi.cs
+Microsoft (R) Visual C# 2005 Compiler version 8.00.50727.4927
+for Microsoft (R) Windows (R) 2005 Framework version 2.0.50727
+Copyright (C) Microsoft Corporation 2001-2005. All rights reserved.
+
+vbc -nowarn:42030 -warnaserror+ -optimize \
+		-target:library \
+		-out:../../../wntmsci12.pro/bin/cli_vb_bridgetest.uno.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_types_bridgetest.dll \
+		-reference:System.dll \
+		-reference:System.Drawing.dll \
+		-reference:System.Windows.Forms.dll \
+		cli_vb_bridgetest.vb
+Microsoft (R) Visual Basic Compiler version 8.0.50727.5420
+for Microsoft (R) .NET Framework version 2.0.50727.5477
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+vbc -nowarn:42030 -warnaserror+ -optimize \
+		-target:library \
+		-out:../../../wntmsci12.pro/bin/cli_vb_testobj.uno.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_types_bridgetest.dll \
+		-reference:System.dll \
+		-reference:System.Drawing.dll \
+		-reference:System.Windows.Forms.dll \
+		cli_vb_testobj.vb
+Microsoft (R) Visual Basic Compiler version 8.0.50727.5420
+for Microsoft (R) .NET Framework version 2.0.50727.5477
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+slfl.pl csc -warnaserror+ -optimize -target:exe -out:../../../wntmsci12.pro/bin/cli_bridgetest_inprocess.exe \
+		-reference:../../../wntmsci12.pro/bin/cli_types_bridgetest.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_basetypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_uretypes.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_ure.dll \
+		-reference:C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cli_cppuhelper.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_cs_bridgetest.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_cs_testobj.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_vb_bridgetest.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_vb_testobj.uno.dll \
+		-reference:../../../wntmsci12.pro/bin/cli_cpp_bridgetest.uno.dll \
+		cli_bridgetest_inprocess.cs
+Microsoft (R) Visual C# 2005 Compiler version 8.00.50727.4927
+for Microsoft (R) Windows (R) 2005 Framework version 2.0.50727
+Copyright (C) Microsoft Corporation 2001-2005. All rights reserved.
+
+/usr/bin/cp cli_bridgetest_inprocess.ini ../../../wntmsci12.pro/bin
+
+Entering /cygdrive/c/steve/testarea/main/testtools/source/bridgetest/pyuno
+
+cp core.py ../../../wntmsci12.pro/bin/core.py
+cp importer.py ../../../wntmsci12.pro/bin/importer.py
+cp main.py ../../../wntmsci12.pro/bin/main.py
+cp impl.py ../../../wntmsci12.pro/bin/impl.py
+cp samplecomponent.py ../../../wntmsci12.pro/bin/samplecomponent.py
+cp testcomp.py ../../../wntmsci12.pro/bin/testcomp.py
+echo \
+        '<list><filename>pythonloader.component</filename></list>' \
+        > ../../../wntmsci12.pro/misc/pyuno_services.input
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam prefix C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/ -o ../../../wntmsci12.pro/bin/pyuno_services.rdb \
+        C:/steve/TestArea/main/solenv/bin/packcomponents.xslt ../../../wntmsci12.pro/misc/pyuno_services.input
+start test with  dmake runtest
+testtools deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/testtools/build.lst
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/testtools/deliver.log
+Module 'testtools' delivered successfully. 1 files copied, 0 files unchanged
+
+=============

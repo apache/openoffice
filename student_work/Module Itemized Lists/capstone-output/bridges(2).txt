@@ -1,0 +1,517 @@
+Name:
+bridges
+
+Dependencies:
+cppuhelper jurt jvmaccess salhelper NULL
+
+Build Rules:
+..\%__SRC%\lib\libjava_uno* %_DEST%\lib%_EXT%\libjava_uno*
+..\%__SRC%\bin\java_uno* %_DEST%\bin%_EXT%\java_uno*
+..\%__SRC%\class\java_uno*.jar %_DEST%\bin%_EXT%\java_uno*.jar
+
+..\%__SRC%\bin\msci_uno.* %_DEST%\bin%_EXT%\msci_uno.*
+..\%__SRC%\bin\gcc3_uno.dll %_DEST%\bin%_EXT%\gcc3_uno.dll
+..\%__SRC%\lib\libgcc2_uno.* %_DEST%\lib%_EXT%\libgcc2_uno.*
+..\%__SRC%\lib\libgcc3_uno.* %_DEST%\lib%_EXT%\libgcc3_uno.*
+..\%__SRC%\lib\libcxx_uno.* %_DEST%\lib%_EXT%\libcxx_uno.*
+..\%__SRC%\bin\gcc3_uno.* %_DEST%\bin%_EXT%\gcc3_uno.*
+..\%__SRC%\lib\libsunpro5_uno.* %_DEST%\lib%_EXT%\libsunpro5_uno.*
+
+Source Files:
+inc\pch\precompiled_bridges.cxx
+source\cpp_uno\cc50_solaris_intel\cpp2uno.cxx
+source\cpp_uno\cc50_solaris_intel\except.cxx
+source\cpp_uno\cc50_solaris_intel\hash.cxx
+source\cpp_uno\cc50_solaris_intel\uno2cpp.cxx
+source\cpp_uno\cc50_solaris_sparc\cpp2uno.cxx
+source\cpp_uno\cc50_solaris_sparc\except.cxx
+source\cpp_uno\cc50_solaris_sparc\hash.cxx
+source\cpp_uno\cc50_solaris_sparc\uno2cpp.cxx
+source\cpp_uno\cc5_solaris_sparc64\cpp2uno.cxx
+source\cpp_uno\cc5_solaris_sparc64\exceptions.cxx
+source\cpp_uno\cc5_solaris_sparc64\isdirectreturntype.cxx
+source\cpp_uno\cc5_solaris_sparc64\uno2cpp.cxx
+source\cpp_uno\cxx_macosx_x86-64\abi.cxx
+source\cpp_uno\cxx_macosx_x86-64\cpp2uno.cxx
+source\cpp_uno\cxx_macosx_x86-64\except.cxx
+source\cpp_uno\cxx_macosx_x86-64\uno2cpp.cxx
+source\cpp_uno\gcc3_freebsd_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_freebsd_intel\except.cxx
+source\cpp_uno\gcc3_freebsd_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_freebsd_x86-64\abi.cxx
+source\cpp_uno\gcc3_freebsd_x86-64\cpp2uno.cxx
+source\cpp_uno\gcc3_freebsd_x86-64\except.cxx
+source\cpp_uno\gcc3_freebsd_x86-64\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_alpha\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_alpha\except.cxx
+source\cpp_uno\gcc3_linux_alpha\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_arm\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_arm\except.cxx
+source\cpp_uno\gcc3_linux_arm\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_hppa\call.cxx
+source\cpp_uno\gcc3_linux_hppa\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_hppa\except.cxx
+source\cpp_uno\gcc3_linux_hppa\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_ia64\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_ia64\except.cxx
+source\cpp_uno\gcc3_linux_ia64\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_intel\except.cxx
+source\cpp_uno\gcc3_linux_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_m68k\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_m68k\except.cxx
+source\cpp_uno\gcc3_linux_m68k\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_mips\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_mips\except.cxx
+source\cpp_uno\gcc3_linux_mips\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_powerpc\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_powerpc\except.cxx
+source\cpp_uno\gcc3_linux_powerpc\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_powerpc64\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_powerpc64\except.cxx
+source\cpp_uno\gcc3_linux_powerpc64\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_s390\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_s390\except.cxx
+source\cpp_uno\gcc3_linux_s390\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_s390x\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_s390x\except.cxx
+source\cpp_uno\gcc3_linux_s390x\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_sparc\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_sparc\except.cxx
+source\cpp_uno\gcc3_linux_sparc\uno2cpp.cxx
+source\cpp_uno\gcc3_linux_x86-64\abi.cxx
+source\cpp_uno\gcc3_linux_x86-64\cpp2uno.cxx
+source\cpp_uno\gcc3_linux_x86-64\except.cxx
+source\cpp_uno\gcc3_linux_x86-64\uno2cpp.cxx
+source\cpp_uno\gcc3_macosx_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_macosx_intel\except.cxx
+source\cpp_uno\gcc3_macosx_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_macosx_powerpc\cpp2uno.cxx
+source\cpp_uno\gcc3_macosx_powerpc\except.cxx
+source\cpp_uno\gcc3_macosx_powerpc\uno2cpp.cxx
+source\cpp_uno\gcc3_netbsd_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_netbsd_intel\except.cxx
+source\cpp_uno\gcc3_netbsd_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_os2_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_os2_intel\except.cxx
+source\cpp_uno\gcc3_os2_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_solaris_intel\cpp2uno.cxx
+source\cpp_uno\gcc3_solaris_intel\except.cxx
+source\cpp_uno\gcc3_solaris_intel\uno2cpp.cxx
+source\cpp_uno\gcc3_solaris_sparc\cpp2uno.cxx
+source\cpp_uno\gcc3_solaris_sparc\except.cxx
+source\cpp_uno\gcc3_solaris_sparc\uno2cpp.cxx
+source\cpp_uno\mingw_intel\cpp2uno.cxx
+source\cpp_uno\mingw_intel\dllinit.cxx
+source\cpp_uno\mingw_intel\except.cxx
+source\cpp_uno\mingw_intel\smallstruct.cxx
+source\cpp_uno\mingw_intel\uno2cpp.cxx
+source\cpp_uno\msvc_win32_intel\cpp2uno.cxx
+source\cpp_uno\msvc_win32_intel\dllinit.cxx
+source\cpp_uno\msvc_win32_intel\except.cxx
+source\cpp_uno\msvc_win32_intel\uno2cpp.cxx
+source\cpp_uno\shared\bridge.cxx
+source\cpp_uno\shared\component.cxx
+source\cpp_uno\shared\cppinterfaceproxy.cxx
+source\cpp_uno\shared\types.cxx
+source\cpp_uno\shared\unointerfaceproxy.cxx
+source\cpp_uno\shared\vtablefactory.cxx
+source\cpp_uno\shared\vtables.cxx
+source\jni_uno\jni_bridge.cxx
+source\jni_uno\jni_data.cxx
+source\jni_uno\jni_info.cxx
+source\jni_uno\jni_java2uno.cxx
+source\jni_uno\jni_uno2java.cxx
+source\jni_uno\nativethreadpool.cxx
+test\testclient.cxx
+test\testcomp.cxx
+test\testoffice.cxx
+test\testsameprocess.cxx
+test\testserver.cxx
+test\inter_libs_exc\inter.cxx
+test\inter_libs_exc\starter.cxx
+test\inter_libs_exc\thrower.cxx
+test\java_uno\acquire\testacquire.cxx
+test\java_uno\any\transport.cxx
+test\java_uno\equals\testequals.cxx
+test\java_uno\nativethreadpool\testnativethreadpoolclient.cxx
+test\java_uno\nativethreadpool\testnativethreadpoolserver.cxx
+test\performance\testperformance.cxx
+
+Header Files:
+inc\bridges\cpp_uno\bridge.hxx
+inc\bridges\cpp_uno\type_misc.hxx
+inc\bridges\cpp_uno\shared\arraypointer.hxx
+inc\bridges\cpp_uno\shared\bridge.hxx
+inc\bridges\cpp_uno\shared\cppinterfaceproxy.hxx
+inc\bridges\cpp_uno\shared\types.hxx
+inc\bridges\cpp_uno\shared\unointerfaceproxy.hxx
+inc\bridges\cpp_uno\shared\vtablefactory.hxx
+inc\bridges\cpp_uno\shared\vtables.hxx
+inc\pch\precompiled_bridges.hxx
+source\cpp_uno\cc50_solaris_intel\cc50_solaris_intel.hxx
+source\cpp_uno\cc50_solaris_sparc\cc50_solaris_sparc.hxx
+source\cpp_uno\cc50_solaris_sparc\flushcode.hxx
+source\cpp_uno\cc5_solaris_sparc64\callvirtualmethod.hxx
+source\cpp_uno\cc5_solaris_sparc64\exceptions.hxx
+source\cpp_uno\cc5_solaris_sparc64\flushcode.hxx
+source\cpp_uno\cc5_solaris_sparc64\fp.hxx
+source\cpp_uno\cc5_solaris_sparc64\isdirectreturntype.hxx
+source\cpp_uno\cc5_solaris_sparc64\vtableslotcall.hxx
+source\cpp_uno\cxx_macosx_x86-64\abi.hxx
+source\cpp_uno\cxx_macosx_x86-64\share.hxx
+source\cpp_uno\gcc3_freebsd_intel\share.hxx
+source\cpp_uno\gcc3_freebsd_x86-64\abi.hxx
+source\cpp_uno\gcc3_freebsd_x86-64\share.hxx
+source\cpp_uno\gcc3_linux_alpha\share.hxx
+source\cpp_uno\gcc3_linux_arm\share.hxx
+source\cpp_uno\gcc3_linux_hppa\share.hxx
+source\cpp_uno\gcc3_linux_ia64\share.hxx
+source\cpp_uno\gcc3_linux_intel\share.hxx
+source\cpp_uno\gcc3_linux_m68k\share.hxx
+source\cpp_uno\gcc3_linux_mips\share.hxx
+source\cpp_uno\gcc3_linux_powerpc\share.hxx
+source\cpp_uno\gcc3_linux_powerpc64\share.hxx
+source\cpp_uno\gcc3_linux_s390\share.hxx
+source\cpp_uno\gcc3_linux_s390x\share.hxx
+source\cpp_uno\gcc3_linux_sparc\share.hxx
+source\cpp_uno\gcc3_linux_x86-64\abi.hxx
+source\cpp_uno\gcc3_linux_x86-64\share.hxx
+source\cpp_uno\gcc3_macosx_intel\share.hxx
+source\cpp_uno\gcc3_macosx_powerpc\share.hxx
+source\cpp_uno\gcc3_netbsd_intel\share.hxx
+source\cpp_uno\gcc3_os2_intel\share.hxx
+source\cpp_uno\gcc3_solaris_intel\share.hxx
+source\cpp_uno\gcc3_solaris_sparc\share.hxx
+source\cpp_uno\mingw_intel\share.hxx
+source\cpp_uno\mingw_intel\smallstruct.hxx
+source\cpp_uno\msvc_win32_intel\msci.hxx
+source\cpp_uno\shared\component.hxx
+source\cpp_uno\shared\guardedarray.hxx
+source\jni_uno\jni_base.h
+source\jni_uno\jni_bridge.h
+source\jni_uno\jni_helper.h
+source\jni_uno\jni_info.h
+test\testcomp.h
+test\inter_libs_exc\share.h
+
+Patch Files:
+
+Makefiles:
+
+version.mk
+
+inc\makefile.mk
+	PRJNAME=bridges
+	TARGET=inc
+
+source\cpp_uno\cc50_solaris_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=sunpro5_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/except.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\cc50_solaris_sparc\makefile.mk
+	PRJNAME=bridges
+	TARGET=sunpro5_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/except.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\cc5_solaris_sparc64\makefile.mk
+	PRJNAME:=bridges
+	TARGET:=sunpro5_uno
+	SLOFILES=$(SHL1OBJS)
+
+source\cpp_uno\cxx_macosx_x86-64\makefile.mk
+	PRJNAME=bridges
+	TARGET=cxx_uno
+	SLOFILES=
+	$(SLO)$/abi.obj
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_freebsd_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_freebsd_x86-64\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/abi.obj
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_linux_alpha\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_arm\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/except.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/armhelper.obj
+
+source\cpp_uno\gcc3_linux_hppa\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/except.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_linux_ia64\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_linux_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_linux_m68k\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/except.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_mips\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_powerpc\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_powerpc64\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_s390\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_s390x\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_linux_sparc\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_linux_x86-64\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/abi.obj
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_macosx_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=$(COMNAME)_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\gcc3_macosx_powerpc\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_netbsd_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_os2_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_solaris_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\gcc3_solaris_sparc\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+
+source\cpp_uno\mingw_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=gcc3_uno
+	SLOFILES=
+	$(SLO)$/dllinit.obj
+	$(SLO)$/smallstruct.obj
+	$(SLO)$/except.obj
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/call.obj
+
+source\cpp_uno\msvc_win32_intel\makefile.mk
+	PRJNAME=bridges
+	TARGET=msci_uno
+	SLOFILES=
+	$(SLO)$/cpp2uno.obj
+	$(SLO)$/uno2cpp.obj
+	$(SLO)$/dllinit.obj
+	$(SLO)$/except.obj
+
+source\cpp_uno\shared\makefile.mk
+	PRJNAME=bridges
+	TARGET=cpp_uno_shared
+	SLOFILES=
+	$(SLO)$/bridge.obj
+	$(SLO)$/component.obj
+	$(SLO)$/cppinterfaceproxy.obj
+	$(SLO)$/types.obj
+	$(SLO)$/unointerfaceproxy.obj
+	$(SLO)$/vtablefactory.obj
+	$(SLO)$/vtables.obj
+
+source\jni_uno\makefile.mk
+	PRJNAME=bridges
+	TARGET=java_uno
+	SLOFILES=
+	$(SLO)$/jni_info.obj
+	$(SLO)$/jni_data.obj
+	$(SLO)$/jni_uno2java.obj
+	$(SLO)$/jni_java2uno.obj
+	$(SLO)$/jni_bridge.obj
+	$(SLO)$/nativethreadpool.obj
+
+source\jni_uno\java\com\sun\star\bridges\jni_uno\makefile.mk
+	PRJNAME=bridges
+	TARGET=java_uno
+
+test\makefile.mk
+	PRJNAME=bridges
+	TARGET=test
+	OBJFILES=
+	$(OBJ)$/testserver.obj
+	$(OBJ)$/testclient.obj
+	$(OBJ)$/testcomp.obj
+	$(OBJ)$/testsameprocess.obj
+
+test\com\sun\star\lib\makefile.mk
+	PRJNAME:=bridges
+	TARGET:=test_com_sun_star_lib
+
+test\com\sun\star\lib\uno\bridges\java_remote\makefile.mk
+	PRJNAME:=bridges
+	TARGET:=test_com_sun_star_lib_uno_bridges_javaremote
+
+test\inter_libs_exc\makefile.mk
+	PRJNAME=bridges
+	TARGET=inter
+	SLOFILES=$(SLO)$/starter.obj$(SLO)$/thrower.obj
+	OBJFILES=$(OBJ)$/inter.obj
+
+test\java_uno\acquire\makefile.mk
+	PRJNAME:=bridges
+	TARGET:=test_javauno_acquire
+	SLOFILES=$(SLO)$/testacquire.obj
+
+test\java_uno\any\makefile.mk
+	PRJNAME=bridges
+	TARGET=test_javauno_any
+	SLOFILES=
+	$(SLO)$/transport.obj
+
+test\java_uno\equals\makefile.mk
+	PRJNAME=bridges
+	TARGET=test_javauno_equals
+	SLOFILES=$(SLO)$/testequals.obj
+
+test\java_uno\nativethreadpool\makefile.mk
+	PRJNAME:=bridges
+	TARGET:=test_javauno_nativethreadpool
+	SLOFILES=$(SHL1OBJS)$(SHL2OBJS)
+
+test\performance\makefile.mk
+	PRJNAME=bridges
+	TARGET=test
+	OBJFILES=$(OBJ)$/testperformance.obj
+
+unotypes\makefile.mk
+	PRJNAME=bridges
+	TARGET=unotypes

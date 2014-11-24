@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{90C8F31B-AD80-302F-88C6-D457BA12B763}") = "lib", "expat\lib.vcxproj", "{0DAD588D-747B-C663-9C4A-5AF340D8E388}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "expat_deliver", "expat_deliver.vcxproj", "{F0BD0E72-0D51-3D0D-B6E6-900BEA94AEBB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0DAD588D-747B-C663-9C4A-5AF340D8E388} = {0DAD588D-747B-C663-9C4A-5AF340D8E388}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DAD588D-747B-C663-9C4A-5AF340D8E388}.Release|Win32.ActiveCfg = Release|Win32
+		{0DAD588D-747B-C663-9C4A-5AF340D8E388}.Release|Win32.Build.0 = Release|Win32
+		{F0BD0E72-0D51-3D0D-B6E6-900BEA94AEBB}.Release|Win32.ActiveCfg = Debug|Win32
+		{F0BD0E72-0D51-3D0D-B6E6-900BEA94AEBB}.Release|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,64 @@
+Name:
+bean
+
+Dependencies:
+javaunohelper jurt ridljar unoil offapi udkapi NULL
+
+Build Rules:
+..\%__SRC%\class\officebean.jar %_DEST%\bin%_EXT%\officebean.jar
+
+..\%__SRC%\bin\officebean.dll %_DEST%\bin%_EXT%\officebean.dll
+..\%__SRC%\lib\libofficebean.so %_DEST%\lib%_EXT%\libofficebean.so
+..\%__SRC%\lib\*officebean.dylib %_DEST%\lib%_EXT%\*officebean.dylib
+
+Source Files:
+native\unix\com_sun_star_beans_LocalOfficeWindow.c
+native\unix\com_sun_star_comp_beans_LocalOfficeWindow.c
+native\win32\com_sun_star_beans_LocalOfficeWindow.c
+native\win32\com_sun_star_comp_beans_LocalOfficeWindow.c
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\beans\makefile.mk
+	PRJNAME=beans
+	TARGET=com_sun_star_beans
+
+com\sun\star\comp\beans\makefile.mk
+	PRJNAME=beans
+	TARGET=com_sun_star_comp_beans
+
+native\unix\makefile.mk
+	PRJNAME=beans
+	TARGET=officebean
+	SLOFILES=
+	$(SLO)$/com_sun_star_comp_beans_LocalOfficeWindow.obj
+	$(SLO)$/com_sun_star_beans_LocalOfficeWindow.obj
+
+native\win32\makefile.mk
+	PRJNAME=odk
+	TARGET=officebean
+	SLOFILES=
+	$(SLO)$/com_sun_star_comp_beans_LocalOfficeWindow.obj
+	$(SLO)$/com_sun_star_beans_LocalOfficeWindow.obj
+
+qa\complex\bean\makefile.mk
+	PRJNAME=bean
+	TARGET=qa_complex_bean
+	#PRJNAME:=bean
+	#TARGET:=test_bean
+
+test\makefile.mk
+	PRJNAME:=bean
+	TARGET:=test
+
+test\applet\oooapplet\makefile.mk
+	PRJNAME:=bean
+	TARGET:=oooapplet
+
+util\makefile.mk
+	PRJNAME=bean
+	TARGET=officebean

@@ -1,0 +1,94 @@
+Name:
+salhelper
+
+Dependencies:
+sal NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\salhelper
+
+..\inc\salhelper\condition.hxx %_DEST%\inc%_EXT%\salhelper\condition.hxx
+..\inc\salhelper\dynload.hxx %_DEST%\inc%_EXT%\salhelper\dynload.hxx
+..\inc\salhelper\future.hxx %_DEST%\inc%_EXT%\salhelper\future.hxx
+..\inc\salhelper\futurequeue.hxx %_DEST%\inc%_EXT%\salhelper\futurequeue.hxx
+..\inc\salhelper\monitor.hxx %_DEST%\inc%_EXT%\salhelper\monitor.hxx
+..\inc\salhelper\queue.hxx %_DEST%\inc%_EXT%\salhelper\queue.hxx
+..\inc\salhelper\refobj.hxx %_DEST%\inc%_EXT%\salhelper\refobj.hxx
+..\inc\salhelper\simplereferenceobject.hxx %_DEST%\inc%_EXT%\salhelper\simplereferenceobject.hxx
+..\inc\salhelper\singletonref.hxx %_DEST%\inc%_EXT%\salhelper\singletonref.hxx
+
+..\%__SRC%\bin\salhelp*.dll %_DEST%\bin%_EXT%\salhelp*.dll
+..\%__SRC%\lib\*salhelper*.lib %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\lib\libuno_salhelper*.*.* %_DEST%\lib%_EXT%\*
+
+..\%__SRC%\lib\libsalhelper*.a %_DEST%\lib%_EXT%\*
+..\%__SRC%\lib\salhelp*.lib %_DEST%\lib%_EXT%\*
+
+linklib: libuno_salhelper*.*.*
+
+Source Files:
+qa\test_api.cxx
+source\condition.cxx
+source\dynload.cxx
+source\simplereferenceobject.cxx
+test\dynamicloader\loader.cxx
+test\dynamicloader\samplelib.cxx
+test\rtti\rttitest.cxx
+test\rtti\samplelibrtti.cxx
+test\Symbols\loader.cxx
+test\Symbols\samplelib.cxx
+
+Header Files:
+inc\salhelper\condition.hxx
+inc\salhelper\dynload.hxx
+inc\salhelper\future.hxx
+inc\salhelper\futurequeue.hxx
+inc\salhelper\monitor.hxx
+inc\salhelper\queue.hxx
+inc\salhelper\refobj.hxx
+inc\salhelper\simplereferenceobject.hxx
+inc\salhelper\singletonref.hxx
+test\dynamicloader\samplelib.hxx
+test\rtti\samplelibrtti.hxx
+test\Symbols\samplelib.hxx
+
+Patch Files:
+
+Makefiles:
+
+version.mk
+
+qa\makefile.mk
+	PRJNAME:=salhelper
+	TARGET:=qa
+	SLOFILES=$(SHL1OBJS)
+
+source\makefile.mk
+	PRJNAME=salhelper
+	TARGET=salhelper
+	SLOFILES=
+	$(SLO)$/condition.obj
+	$(SLO)$/dynload.obj
+	$(SLO)$/simplereferenceobject.obj
+
+test\dynamicloader\makefile.mk
+	PRJNAME=salhelper
+	TARGET=dynloader
+	TARGET1=samplelib
+	SLOFILES=
+	$(SLO)$/samplelib.obj
+
+test\rtti\makefile.mk
+	PRJNAME=salhelper
+	TARGET=rtti
+	TARGET1=samplelibrtti
+	SLOFILES=
+	$(SLO)$/samplelibrtti.obj
+
+test\Symbols\makefile.mk
+	PRJNAME=salhelper
+	TARGET=dynloader
+	TARGET1=samplelib
+	SLOFILES=$(SLO)$/samplelib.obj
+	OBJFILES=$(OBJ)$/loader.obj

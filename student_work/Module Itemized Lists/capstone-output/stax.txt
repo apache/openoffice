@@ -1,0 +1,20 @@
+Name:
+stax
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+..\%__SRC%\class\stax*.jar %_DEST%\bin%_EXT%
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=stax
+	TARGET=stax

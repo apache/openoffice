@@ -1,0 +1,1 @@
+xcopy "source\activesync\BIN\xmergesync.dll" "wntmsci12.pro\bin\" /D /Y /c

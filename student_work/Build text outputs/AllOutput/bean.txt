@@ -1,0 +1,204 @@
+bean
+=============
+
+Entering /cygdrive/c/steve/testarea/main/bean/native/win32
+
+mkout -- version: 1.8
+Making:    all_officebean.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/officebean_version.h/ > ../../wntmsci12.pro/misc/officebean_version.c
+Compiling: odk/wntmsci12.pro/misc/officebean_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/officebean -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/officebean_version.obj ../../wntmsci12.pro/misc/officebean_version.c
+officebean_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk1Lq9Tz > ../../wntmsci12.pro/misc/s_officebean_version.dpcc
+Compiling: odk/native/win32/com_sun_star_comp_beans_LocalOfficeWindow.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/officebean -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../wntmsci12.pro/slo/com_sun_star_comp_beans_LocalOfficeWindow.obj com_sun_star_comp_beans_LocalOfficeWindow.c
+com_sun_star_comp_beans_LocalOfficeWindow.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkAkPlgS > ../../wntmsci12.pro/misc/s_com_sun_star_comp_beans_LocalOfficeWindow.dpcc
+Compiling: odk/native/win32/com_sun_star_beans_LocalOfficeWindow.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/officebean -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../wntmsci12.pro/slo/com_sun_star_beans_LocalOfficeWindow.obj com_sun_star_beans_LocalOfficeWindow.c
+com_sun_star_beans_LocalOfficeWindow.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkguhIw2 > ../../wntmsci12.pro/misc/s_com_sun_star_beans_LocalOfficeWindow.dpcc
+Making:    officebean.lib
+lib   /OUT:../../wntmsci12.pro/slb/officebean.lib @C:/cygwin/tmp/mkNuSu0V
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/com_sun_star_comp_beans_LocalOfficeWindow.obj 
+../../wntmsci12.pro/slo/com_sun_star_beans_LocalOfficeWindow.obj 
+Making:    module definition file officebean.def
+cat officebean.dxp >> ../../wntmsci12.pro/misc/officebean.def.tmpfile
+Making:    officebean.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/officebean -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/officebean_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/officebean_def.res > ../../wntmsci12.pro/misc/officebean.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkkY2YGc
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/officebean.dll -map:../../wntmsci12.pro/misc/officebean.map -def:../../wntmsci12.pro/misc/officebean.def -implib:../../wntmsci12.pro/lib/iofficebean_t1.lib ../../wntmsci12.pro/slo/officebean_version.obj ../../wntmsci12.pro/slb/officebean.lib jawt.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/officebean.res 
+   Creating library ../../wntmsci12.pro/lib/iofficebean_t1.lib and object ../../wntmsci12.pro/lib/iofficebean_t1.exp
+linking ../../wntmsci12.pro/bin/officebean.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/officebean.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/officebean.dll.manifest -outputresource:../../wntmsci12.pro/bin/officebean.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/officebean.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/officebean.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/officebean.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/officebean.dll.tmanifest ; fi
+Making:    iofficebean_t1.lib
+build of ../../wntmsci12.pro/bin/officebean.dll creates ../../wntmsci12.pro/lib/iofficebean_t1.lib
+Making:    all_officebean.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/bean/com/sun/star/comp/beans
+
+Making:    com_sun_star_comp_beans.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_beans_dummy.java
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkvyDpf3
+Making:    com_sun_star_comp_beans.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/bean/com/sun/star/beans
+
+Making:    com_sun_star_beans.dpj
+javadeps
+
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+/bin/rm -f ../../../../wntmsci12.pro/misc/com_sun_star_beans_dummy.java
+javac -classpath ".;../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkAzkEO9
+Making:    com_sun_star_beans.dpj
+javadeps
+
+
+Entering /cygdrive/c/steve/testarea/main/bean/util
+
+Making:    officebean.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/officebean_src.dpzz
+
+mkdir.exe -p ..
+cd .. && zipdep.pl -u -r -prefix ../ ../wntmsci12.pro/bin/officebean_src.zip "com" "-x" "*makefile.mk" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/bean/util/../wntmsci12.pro/misc/officebean_src.dpzz
+cat ../wntmsci12.pro/misc/officebean_src.dpzz C:/cygwin/tmp/mkILondR | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/officebean.dpz
+Making:    officebean_src.zip
+rebuilding zipfiles
+------------------------------ 
+cd .. && zip  -u -r C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip com -x "*makefile.mk" -x delzip  -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip not found or empty
+  adding: com/ (stored 0%)
+  adding: com/sun/ (stored 0%)
+  adding: com/sun/star/ (stored 0%)
+  adding: com/sun/star/beans/ (stored 0%)
+  adding: com/sun/star/beans/ContainerFactory.java (deflated 50%)
+  adding: com/sun/star/beans/JavaWindowPeerFake.java (deflated 64%)
+  adding: com/sun/star/beans/LocalOfficeConnection.java (deflated 70%)
+  adding: com/sun/star/beans/LocalOfficeWindow.java (deflated 71%)
+  adding: com/sun/star/beans/NativeConnection.java (deflated 59%)
+  adding: com/sun/star/beans/NativeService.java (deflated 49%)
+  adding: com/sun/star/beans/OfficeConnection.java (deflated 56%)
+  adding: com/sun/star/beans/OfficeWindow.java (deflated 56%)
+  adding: com/sun/star/comp/ (stored 0%)
+  adding: com/sun/star/comp/beans/ (stored 0%)
+  adding: com/sun/star/comp/beans/CallWatchThread.java (deflated 67%)
+  adding: com/sun/star/comp/beans/ContainerFactory.java (deflated 51%)
+  adding: com/sun/star/comp/beans/Controller.java (deflated 68%)
+  adding: com/sun/star/comp/beans/Frame.java (deflated 75%)
+  adding: com/sun/star/comp/beans/HasConnectionException.java (deflated 49%)
+  adding: com/sun/star/comp/beans/InvalidArgumentException.java (deflated 49%)
+  adding: com/sun/star/comp/beans/JavaWindowPeerFake.java (deflated 65%)
+  adding: com/sun/star/comp/beans/LocalOfficeConnection.java (deflated 72%)
+  adding: com/sun/star/comp/beans/LocalOfficeWindow.java (deflated 68%)
+  adding: com/sun/star/comp/beans/NativeConnection.java (deflated 59%)
+  adding: com/sun/star/comp/beans/NativeService.java (deflated 49%)
+  adding: com/sun/star/comp/beans/NoConnectionException.java (deflated 50%)
+  adding: com/sun/star/comp/beans/NoDocumentException.java (deflated 49%)
+  adding: com/sun/star/comp/beans/OfficeConnection.java (deflated 56%)
+  adding: com/sun/star/comp/beans/OfficeDocument.java (deflated 76%)
+  adding: com/sun/star/comp/beans/OfficeWindow.java (deflated 56%)
+  adding: com/sun/star/comp/beans/OOoBean.java (deflated 78%)
+  adding: com/sun/star/comp/beans/SystemWindowException.java (deflated 50%)
+  adding: com/sun/star/comp/beans/Wrapper.java (deflated 64%)
+if [ -f C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip \
+	    ; fi
+cp C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip  ../wntmsci12.pro/bin/officebean_src.zip 
+/bin/rm -f C:/cygwin/tmp/mk0J1RAb.officebean_src_.zip
+Making:    officebean.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../wntmsci12.pro/misc/officebean_src.dpzz
+
+mkdir.exe -p ..
+cd .. && zipdep.pl -u -r -prefix ../ ../wntmsci12.pro/bin/officebean_src.zip "com" "-x" "*makefile.mk" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/bean/util/../wntmsci12.pro/misc/officebean_src.dpzz
+cat ../wntmsci12.pro/misc/officebean_src.dpzz C:/cygwin/tmp/mkL8vdAH | grep -v "CVS" | grep -v "\.svn" >> ../wntmsci12.pro/misc/officebean.dpz
+echo Manifest-Version: 1.0 > ../wntmsci12.pro/class/officebean/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../wntmsci12.pro/class/officebean/META-INF/MANIFEST.MF
+cd ../wntmsci12.pro/class/officebean && zip  -u -rX ../officebean.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../officebean.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 11%)
+cd ../wntmsci12.pro/class && zip  -u -rX officebean.jar com/sun/star/comp/beans     com/sun/star/beans  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/sun/star/comp/beans/ (stored 0%)
+  adding: com/sun/star/comp/beans/CallWatchThread.class (deflated 47%)
+  adding: com/sun/star/comp/beans/ContainerFactory.class (deflated 24%)
+  adding: com/sun/star/comp/beans/Controller.class (deflated 57%)
+  adding: com/sun/star/comp/beans/Frame.class (deflated 62%)
+  adding: com/sun/star/comp/beans/HasConnectionException.class (deflated 23%)
+  adding: com/sun/star/comp/beans/InvalidArgumentException.class (deflated 23%)
+  adding: com/sun/star/comp/beans/JavaWindowPeerFake.class (deflated 53%)
+  adding: com/sun/star/comp/beans/LocalOfficeConnection$1.class (deflated 34%)
+  adding: com/sun/star/comp/beans/LocalOfficeConnection$OfficeService.class (deflated 52%)
+  adding: com/sun/star/comp/beans/LocalOfficeConnection$StreamProcessor.class (deflated 45%)
+  adding: com/sun/star/comp/beans/LocalOfficeConnection.class (deflated 51%)
+  adding: com/sun/star/comp/beans/LocalOfficeWindow.class (deflated 50%)
+  adding: com/sun/star/comp/beans/NativeConnection.class (deflated 42%)
+  adding: com/sun/star/comp/beans/NativeService.class (deflated 26%)
+  adding: com/sun/star/comp/beans/NoConnectionException.class (deflated 23%)
+  adding: com/sun/star/comp/beans/NoDocumentException.class (deflated 22%)
+  adding: com/sun/star/comp/beans/OfficeConnection.class (deflated 43%)
+  adding: com/sun/star/comp/beans/OfficeDocument.class (deflated 61%)
+  adding: com/sun/star/comp/beans/OfficeWindow.class (deflated 24%)
+  adding: com/sun/star/comp/beans/OOoBean$1.class (deflated 54%)
+  adding: com/sun/star/comp/beans/OOoBean$EventListener.class (deflated 51%)
+  adding: com/sun/star/comp/beans/OOoBean.class (deflated 56%)
+  adding: com/sun/star/comp/beans/SystemWindowException.class (deflated 22%)
+  adding: com/sun/star/comp/beans/Wrapper.class (deflated 50%)
+  adding: com/sun/star/beans/ (stored 0%)
+  adding: com/sun/star/beans/ContainerFactory.class (deflated 22%)
+  adding: com/sun/star/beans/JavaWindowPeerFake.class (deflated 52%)
+  adding: com/sun/star/beans/LocalOfficeConnection$1.class (deflated 32%)
+  adding: com/sun/star/beans/LocalOfficeConnection$OfficeService.class (deflated 53%)
+  adding: com/sun/star/beans/LocalOfficeConnection.class (deflated 51%)
+  adding: com/sun/star/beans/LocalOfficeWindow$CallWatchThread.class (deflated 40%)
+  adding: com/sun/star/beans/LocalOfficeWindow$ComponentEventHandler.class (deflated 45%)
+  adding: com/sun/star/beans/LocalOfficeWindow.class (deflated 50%)
+  adding: com/sun/star/beans/NativeConnection.class (deflated 42%)
+  adding: com/sun/star/beans/NativeService.class (deflated 25%)
+  adding: com/sun/star/beans/OfficeConnection.class (deflated 41%)
+  adding: com/sun/star/beans/OfficeWindow.class (deflated 27%)
+bean deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/bean/build.lst
+COPY: ../wntmsci12.pro/class/officebean.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/officebean.jar
+COPY: ../wntmsci12.pro/bin/officebean.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/officebean.dll
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/bean/deliver.log
+Module 'bean' delivered successfully. 3 files copied, 1 files unchanged
+
+=============

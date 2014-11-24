@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    ^BEGIN_CLCOMPILE^<ClCompile Include="^CLFILENAME^"/>^END_CLCOMPILE^
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{^GUID^}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>^PROJ_NAME^</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>..\solver\410\wntmsci12.pro\lib\;$(LibraryPath)</LibraryPath>
+    <IncludePath>^INCLUDE^</IncludePath>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>wntmsci12.pro\lib\</OutDir>
+    <IntDir>wntmsci12.pro\intermediate\^PROJ_NAME^\</IntDir>
+    <TargetName>^OUTPUT_FILE_NAME^</TargetName>
+  </PropertyGroup>
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>
+      </Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWarningAsError>
+      </TreatWarningAsError>
+      <InlineFunctionExpansion>
+      </InlineFunctionExpansion>
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <EnableFiberSafeOptimizations>
+      </EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>
+      </WholeProgramOptimization>
+      <UndefineAllPreprocessorDefinitions>
+      </UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>
+      </IgnoreStandardIncludePath>
+      <PreprocessToFile>
+      </PreprocessToFile>
+      <PreprocessSuppressLineNumbers>
+      </PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>
+      </PreprocessKeepComments>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <StructMemberAlignment>
+      </StructMemberAlignment>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ExpandAttributedSource>
+      </ExpandAttributedSource>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>^OBJ_FILE_NAME^</ObjectFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles>
+      </GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>
+      </XMLDocumentationFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <CallingConvention>
+      </CallingConvention>
+      <CompileAs>
+      </CompileAs>
+      <ShowIncludes>
+      </ShowIncludes>
+      <UseFullPaths>
+      </UseFullPaths>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+      <ErrorReporting>
+      </ErrorReporting>
+      <AdditionalOptions>^ADDITIONAL_OPTIONS^ %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem></SubSystem>
+      <GenerateDebugInformation></GenerateDebugInformation>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+      <OptimizeReferences></OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>^LIB_OUTPUT_FILE^</OutputFile>
+    </Lib>
+    <Lib>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>
+      </LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <AdditionalOptions>^LIB_OPTIONS^%(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PreBuildEvent>
+      <Command>^PREBUILD^</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>^POSTBUILD^</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

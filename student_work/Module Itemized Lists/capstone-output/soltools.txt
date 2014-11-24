@@ -1,0 +1,168 @@
+Name:
+soltools
+
+Dependencies:
+solenv SUN:so_prereq NULL
+
+Build Rules:
+..\%__SRC%\bin\ldump4.exe %_DEST%\bin%_EXT%\ldump4.exe
+..\%__SRC%\bin\makedepend.exe %_DEST%\bin%_EXT%\makedepend.exe
+..\%__SRC%\bin\makedepend %_DEST%\bin%_EXT%\makedepend
+..\%__SRC%\bin\adjustvisibility %_DEST%\bin%_EXT%\adjustvisibility
+..\%__SRC%\bin\javadep.exe %_DEST%\bin%_EXT%\javadep.exe
+..\%__SRC%\bin\javadep %_DEST%\bin%_EXT%\javadep
+..\%__SRC%\bin\checkdll %_DEST%\bin%_EXT%\checkdll
+..\%__SRC%\bin\cpp.exe %_DEST%\bin%_EXT%\cpplcc.exe
+..\%__SRC%\bin\cpp %_DEST%\bin%_EXT%\cpp.lcc
+..\%__SRC%\inc\unistd.h %_DEST%\inc%_EXT%\unistd.h
+..\%__SRC%\bin\testhxx* %_DEST%\bin%_EXT%\testhxx*
+
+Source Files:
+adjustvisibility\adjustvisibility.cxx
+checkdll\checkdll.c
+cpp\_cpp.c
+cpp\_eval.c
+cpp\_getopt.c
+cpp\_include.c
+cpp\_lex.c
+cpp\_macro.c
+cpp\_mcrvalid.c
+cpp\_nlist.c
+cpp\_tokens.c
+cpp\_unix.c
+giparser\gen_info.cxx
+giparser\gi_list.cxx
+giparser\gi_parse.cxx
+giparser\st_gilrw.cxx
+inc\pch\precompiled_soltools.cxx
+javadep\javadep.c
+ldump\hashtbl.cxx
+ldump\ldump.cxx
+mkdepend\collectdircontent.cxx
+mkdepend\cppsetup.c
+mkdepend\ifparser.c
+mkdepend\include.c
+mkdepend\main.c
+mkdepend\parse.c
+mkdepend\pr.c
+support\simstr.cxx
+testhxx\testhxx.cxx
+testSHL\testshl.cxx
+testSHL\util\tlog.cxx
+testSHL\util\tstMgr.cxx
+testSHL\util\tutil.cxx
+
+Header Files:
+cpp\cpp.h
+inc\gen_info.hxx
+inc\gilacces.hxx
+inc\gi_list.hxx
+inc\gi_parse.hxx
+inc\simstr.hxx
+inc\st_gilrw.hxx
+inc\st_list.hxx
+inc\st_types.hxx
+inc\pch\precompiled_soltools.hxx
+ldump\hashtbl.hxx
+ldump\ldump.hxx
+mkdepend\collectdircontent.hxx
+mkdepend\def.h
+mkdepend\ifparser.h
+mkdepend\imakemdep.h
+testSHL\inc\tlog.hxx
+testSHL\inc\tstMgr.hxx
+testSHL\inc\tutil.hxx
+winunistd\unistd.h
+
+Patch Files:
+
+Makefiles:
+
+adjustvisibility\makefile.mk
+	PRJNAME=soltools
+	TARGET=adjustvisibility
+
+checkdll\makefile.mk
+	PRJNAME=soltools
+	TARGET=checkdll
+
+cpp\makefile.mk
+	PRJNAME=soltools
+	TARGET=cpp
+	OBJFILES=
+	$(OBJ)$/_cpp.obj
+	$(OBJ)$/_eval.obj
+	$(OBJ)$/_include.obj
+	$(OBJ)$/_lex.obj
+	$(OBJ)$/_macro.obj
+	$(OBJ)$/_mcrvalid.obj
+	$(OBJ)$/_nlist.obj
+	$(OBJ)$/_tokens.obj
+	$(OBJ)$/_unix.obj
+	OBJFILES+=$(OBJ)$/_getopt.obj
+
+giparser\makefile.mk
+	PRJNAME=soltools
+	TARGET=soltools_giparser
+	OBJFILES=
+	$(OBJ)$/gen_info.obj
+	$(OBJ)$/gi_list.obj
+	$(OBJ)$/gi_parse.obj
+	$(OBJ)$/st_gilrw.obj
+	SLOFILES=
+	$(SLO)$/gen_info.obj
+	$(SLO)$/gi_list.obj
+	$(SLO)$/gi_parse.obj
+	$(SLO)$/st_gilrw.obj
+
+javadep\makefile.mk
+	PRJNAME=soltools
+	TARGET=javadep
+
+ldump\makefile.mk
+	PRJNAME=ldump
+	TARGET=ldump
+
+mkdepend\makefile.mk
+	PRJNAME=soltools
+	TARGET=make_makedepend
+	OBJFILES=
+	$(OBJ)$/cppsetup.obj
+	$(OBJ)$/ifparser.obj
+	$(OBJ)$/include.obj
+	$(OBJ)$/main.obj
+	$(OBJ)$/parse.obj
+	$(OBJ)$/pr.obj
+	$(OBJ)$/collectdircontent.obj
+	$(NULL)
+
+support\makefile.mk
+	PRJNAME=soltools
+	TARGET=soltools_support
+	OBJFILES=
+	$(OBJ)$/simstr.obj
+	SLOFILES=
+	$(SLO)$/simstr.obj
+
+testhxx\makefile.mk
+	PRJNAME:=soltools
+	TARGET:=testhxx
+	SLOFILES=$(SLO)$/testhxx.obj
+
+testSHL\makefile.mk
+	PRJNAME=soltools
+	TARGET=testshl
+
+testSHL\util\makefile.mk
+	PRJNAME=soltools
+	TARGET=tstutil
+	OBJFILES=
+	$(OBJ)$/tlog.obj
+	$(OBJ)$/tutil.obj
+	$(OBJ)$/tstMgr.obj
+
+util\makefile.pmk
+
+winunistd\makefile.mk
+	PRJNAME=soltools
+	TARGET=winunistd

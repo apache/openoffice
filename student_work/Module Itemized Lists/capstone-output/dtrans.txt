@@ -1,0 +1,225 @@
+Name:
+dtrans
+
+Dependencies:
+unotools offapi offuh rdbmaker vos stoc LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+..\source\win32\clipb\sysdtrans.xml %_DEST%\xml%_EXT%\sysdtrans.xml
+..\source\win32\dnd\dnd.xml %_DEST%\xml%_EXT%\dnd.xml
+..\source\win32\ftransl\ftransl.xml %_DEST%\xml%_EXT%\ftransl.xml
+..\source\cnttype\mcnttype.xml %_DEST%\xml%_EXT%\mcnttype.xml
+..\source\generic\dtrans.xml %_DEST%\xml%_EXT%\dtrans.xml
+..\%__SRC%\misc\dnd.component %_DEST%\xml%_EXT%\dnd.component
+..\%__SRC%\misc\dtrans.component %_DEST%\xml%_EXT%\dtrans.component
+..\%__SRC%\misc\ftransl.component %_DEST%\xml%_EXT%\ftransl.component
+..\%__SRC%\misc\mcnttype.component %_DEST%\xml%_EXT%\mcnttype.component
+..\%__SRC%\misc\sysdtrans.component %_DEST%\xml%_EXT%\sysdtrans.component
+
+Source Files:
+inc\pch\precompiled_dtrans.cxx
+source\cnttype\mcnttfactory.cxx
+source\cnttype\mcnttype.cxx
+source\cnttype\mctfentry.cxx
+source\cnttype\wbench\testcnttype.cxx
+source\generic\clipboardmanager.cxx
+source\generic\dtrans.cxx
+source\generic\generic_clipboard.cxx
+source\os2\clipb\OS2Bitmap.cxx
+source\os2\clipb\Os2Clipboard.cxx
+source\os2\clipb\Os2Service.cxx
+source\os2\clipb\Os2Transferable.cxx
+source\test\test_dtrans.cxx
+source\win32\clipb\wcbentry.cxx
+source\win32\clipb\WinClipbImpl.cxx
+source\win32\clipb\WinClipboard.cxx
+source\win32\dnd\dndentry.cxx
+source\win32\dnd\globals.cxx
+source\win32\dnd\idroptarget.cxx
+source\win32\dnd\source.cxx
+source\win32\dnd\sourcecontext.cxx
+source\win32\dnd\target.cxx
+source\win32\dnd\targetdragcontext.cxx
+source\win32\dnd\targetdropcontext.cxx
+source\win32\dtobj\APNDataObject.cxx
+source\win32\dtobj\DataFmtTransl.cxx
+source\win32\dtobj\DOTransferable.cxx
+source\win32\dtobj\DtObjFactory.cxx
+source\win32\dtobj\DTransHelper.cxx
+source\win32\dtobj\Fetc.cxx
+source\win32\dtobj\FetcList.cxx
+source\win32\dtobj\FmtFilter.cxx
+source\win32\dtobj\TxtCnvtHlp.cxx
+source\win32\dtobj\XNotifyingDataObject.cxx
+source\win32\dtobj\XTDataObject.cxx
+source\win32\ftransl\ftransl.cxx
+source\win32\ftransl\ftranslentry.cxx
+source\win32\misc\ImplHelper.cxx
+source\win32\mtaole\MtaOleClipb.cxx
+source\win32\workbench\testmarshal.cxx
+source\win32\workbench\test_wincb.cxx
+source\win32\workbench\XTDo.cxx
+test\win32\dnd\atlwindow.cxx
+test\win32\dnd\dndTest.cxx
+test\win32\dnd\sourcelistener.cxx
+test\win32\dnd\targetlistener.cxx
+test\win32\dnd\transferable.cxx
+
+Header Files:
+inc\pch\precompiled_dtrans.hxx
+source\cnttype\mcnttfactory.hxx
+source\cnttype\mcnttype.hxx
+source\generic\clipboardmanager.hxx
+source\generic\generic_clipboard.hxx
+source\inc\DtObjFactory.hxx
+source\inc\MtaOleClipb.hxx
+source\os2\clipb\Os2Clipboard.hxx
+source\os2\clipb\Os2Transferable.hxx
+source\win32\clipb\APNDataObject.hxx
+source\win32\clipb\WinClipbImpl.hxx
+source\win32\clipb\WinClipboard.hxx
+source\win32\dnd\globals.hxx
+source\win32\dnd\idroptarget.hxx
+source\win32\dnd\source.hxx
+source\win32\dnd\sourcecontext.hxx
+source\win32\dnd\target.hxx
+source\win32\dnd\targetdragcontext.hxx
+source\win32\dnd\targetdropcontext.hxx
+source\win32\dtobj\APNDataObject.hxx
+source\win32\dtobj\DataFmtTransl.hxx
+source\win32\dtobj\DOTransferable.hxx
+source\win32\dtobj\DTransHelper.hxx
+source\win32\dtobj\Fetc.hxx
+source\win32\dtobj\FetcList.hxx
+source\win32\dtobj\FmtFilter.hxx
+source\win32\dtobj\MimeAttrib.hxx
+source\win32\dtobj\TxtCnvtHlp.hxx
+source\win32\dtobj\XNotifyingDataObject.hxx
+source\win32\dtobj\XTDataObject.hxx
+source\win32\ftransl\ftransl.hxx
+source\win32\misc\ImplHelper.hxx
+source\win32\misc\WinClip.hxx
+source\win32\workbench\XTDo.hxx
+test\win32\dnd\atlwindow.hxx
+test\win32\dnd\sourcelistener.hxx
+test\win32\dnd\targetlistener.hxx
+test\win32\dnd\transferable.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=dtrans
+	TARGET=inc
+
+source\cnttype\makefile.mk
+	PRJNAME=dtrans
+	TARGET=mcnttype
+	SLOFILES=$(SLO)$/mctfentry.obj
+	$(SLO)$/mcnttfactory.obj
+	$(SLO)$/mcnttype.obj
+
+source\cnttype\wbench\makefile.mk
+	PRJNAME=dtrans
+	TARGET=testcnttype
+	OBJFILES=$(OBJ)$/testcnttype.obj
+
+source\generic\makefile.mk
+	PRJNAME=dtrans
+	TARGET=generic
+	SLOFILES=
+	$(SLO)$/generic_clipboard.obj
+	$(SLO)$/clipboardmanager.obj
+	$(SLO)$/dtrans.obj
+
+source\os2\clipb\makefile.mk
+	PRJNAME=dtrans
+	TARGET=sysdtrans
+	SLOFILES=$(SLO)$/Os2Clipboard.obj
+	$(SLO)$/Os2Bitmap.obj
+	$(SLO)$/Os2Service.obj
+	$(SLO)$/Os2Transferable.obj
+
+source\test\makefile.mk
+	PRJNAME=dtrans
+	TARGET=test_dtrans
+
+source\win32\clipb\makefile.mk
+	PRJNAME=dtrans
+	TARGET=sysdtrans
+	SLOFILES=$(SLO)$/WinClipboard.obj
+	$(SLO)$/WinClipbImpl.obj
+	$(SLO)$/wcbentry.obj
+
+source\win32\dnd\makefile.mk
+	PRJNAME=dtrans
+	TARGET=dnd
+	SLOFILES=$(SLO)$/dndentry.obj
+	$(SLO)$/target.obj
+	$(SLO)$/idroptarget.obj
+	$(SLO)$/source.obj
+	$(SLO)$/globals.obj
+	$(SLO)$/targetdropcontext.obj
+	$(SLO)$/targetdragcontext.obj
+	$(SLO)$/sourcecontext.obj
+
+source\win32\dtobj\makefile.mk
+	PRJNAME=dtrans
+	TARGET=dtobjfact
+	SLOFILES=$(SLO)$/DtObjFactory.obj
+	$(SLO)$/APNDataObject.obj
+	$(SLO)$/DOTransferable.obj
+	$(SLO)$/DTransHelper.obj
+	$(SLO)$/XTDataObject.obj
+	$(SLO)$/TxtCnvtHlp.obj
+	$(SLO)$/DataFmtTransl.obj
+	$(SLO)$/FmtFilter.obj
+	$(SLO)$/FetcList.obj
+	$(SLO)$/Fetc.obj
+	$(SLO)$/XNotifyingDataObject.obj
+
+source\win32\ftransl\makefile.mk
+	PRJNAME=dtrans
+	TARGET=ftransl
+	SLOFILES=$(SLO)$/ftranslentry.obj
+	$(SLO)$/ftransl.obj
+
+source\win32\misc\makefile.mk
+	PRJNAME=dtrans
+	TARGET=dtutils
+	SLOFILES=$(SLO)$/ImplHelper.obj
+
+source\win32\mtaole\makefile.mk
+	PRJNAME=dtrans
+	TARGET=mtaolecb
+	SLOFILES=$(SLO)$/MtaOleClipb.obj
+
+source\win32\workbench\makefile.mk
+	PRJNAME=dtrans
+	TARGET=testwincb
+	TARGET1=testmshl
+	OBJFILES=$(OBJ)$/test_wincb.obj
+	OBJFILES=$(OBJ)$/testmarshal.obj
+
+test\win32\dnd\makefile.mk
+	PRJNAME=dtrans
+	TARGET=dndTest
+	OBJFILES=$(OBJ)$/dndTest.obj
+	$(OBJ)$/atlwindow.obj
+	$(OBJ)$/targetlistener.obj
+	$(OBJ)$/sourcelistener.obj
+	$(OBJ)$/dataobject.obj
+
+util\makefile.mk
+	PRJNAME=dtrans
+	TARGET=dtrans
+	TARGET1=mcnttype
+	TARGET2=ftransl
+	TARGET3=sysdtrans
+	TARGET4=dnd
+	TARGET3=sysdtran

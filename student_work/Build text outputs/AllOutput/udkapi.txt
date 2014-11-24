@@ -1,0 +1,1728 @@
+udkapi
+=============
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/io
+
+mkout -- version: 1.8
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkqD4OUp
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 54 source files ... 
+Compiling: FilePermission.idl
+Compiling: BufferSizeExceededException.idl
+Compiling: MarkableInputStream.idl
+Compiling: MarkableOutputStream.idl
+Compiling: DataInputStream.idl
+Compiling: DataOutputStream.idl
+Compiling: DataTransferEvent.idl
+Compiling: IOException.idl
+Compiling: NotConnectedException.idl
+Compiling: AlreadyConnectedException.idl
+Compiling: ObjectInputStream.idl
+Compiling: ObjectOutputStream.idl
+Compiling: Pipe.idl
+Compiling: Pump.idl
+Compiling: SequenceInputStream.idl
+Compiling: SequenceOutputStream.idl
+Compiling: UnexpectedEOFException.idl
+Compiling: WrongFormatException.idl
+Compiling: XActiveDataControl.idl
+Compiling: XActiveDataSink.idl
+Compiling: XActiveDataSource.idl
+Compiling: XActiveDataStreamer.idl
+Compiling: XConnectable.idl
+Compiling: XDataExporter.idl
+Compiling: XDataImporter.idl
+Compiling: XDataInputStream.idl
+Compiling: XDataOutputStream.idl
+Compiling: XDataTransferEventListener.idl
+Compiling: XInputStream.idl
+Compiling: XStream.idl
+Compiling: XMarkableStream.idl
+Compiling: XObjectInputStream.idl
+Compiling: XObjectOutputStream.idl
+Compiling: XOutputStream.idl
+Compiling: XPersist.idl
+Compiling: XPersistObject.idl
+Compiling: XStreamListener.idl
+Compiling: XSeekable.idl
+Compiling: XSeekableInputStream.idl
+Compiling: XSequenceOutputStream.idl
+Compiling: TextInputStream.idl
+Compiling: TextOutputStream.idl
+Compiling: XTextInputStream.idl
+Compiling: XTextOutputStream.idl
+Compiling: XTruncate.idl
+Compiling: XXMLExtractor.idl
+Compiling: XInputStreamProvider.idl
+Compiling: UnknownHostException.idl
+Compiling: SocketException.idl
+Compiling: NoRouteToHostException.idl
+Compiling: ConnectException.idl
+Compiling: XAsyncOutputMonitor.idl
+Compiling: XTempFile.idl
+Compiling: TempFile.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssio.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssio.db UCR @C:/cygwin/tmp/mktpzcFn
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk5Cqn40
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 54 source files ... 
+Compiling: FilePermission.idl
+Compiling: BufferSizeExceededException.idl
+Compiling: MarkableInputStream.idl
+Compiling: MarkableOutputStream.idl
+Compiling: DataInputStream.idl
+Compiling: DataOutputStream.idl
+Compiling: DataTransferEvent.idl
+Compiling: IOException.idl
+Compiling: NotConnectedException.idl
+Compiling: AlreadyConnectedException.idl
+Compiling: ObjectInputStream.idl
+Compiling: ObjectOutputStream.idl
+Compiling: Pipe.idl
+Compiling: Pump.idl
+Compiling: SequenceInputStream.idl
+Compiling: SequenceOutputStream.idl
+Compiling: UnexpectedEOFException.idl
+Compiling: WrongFormatException.idl
+Compiling: XActiveDataControl.idl
+Compiling: XActiveDataSink.idl
+Compiling: XActiveDataSource.idl
+Compiling: XActiveDataStreamer.idl
+Compiling: XConnectable.idl
+Compiling: XDataExporter.idl
+Compiling: XDataImporter.idl
+Compiling: XDataInputStream.idl
+Compiling: XDataOutputStream.idl
+Compiling: XDataTransferEventListener.idl
+Compiling: XInputStream.idl
+Compiling: XStream.idl
+Compiling: XMarkableStream.idl
+Compiling: XObjectInputStream.idl
+Compiling: XObjectOutputStream.idl
+Compiling: XOutputStream.idl
+Compiling: XPersist.idl
+Compiling: XPersistObject.idl
+Compiling: XStreamListener.idl
+Compiling: XSeekable.idl
+Compiling: XSeekableInputStream.idl
+Compiling: XSequenceOutputStream.idl
+Compiling: TextInputStream.idl
+Compiling: TextOutputStream.idl
+Compiling: XTextInputStream.idl
+Compiling: XTextOutputStream.idl
+Compiling: XTruncate.idl
+Compiling: XXMLExtractor.idl
+Compiling: XInputStreamProvider.idl
+Compiling: UnknownHostException.idl
+Compiling: SocketException.idl
+Compiling: NoRouteToHostException.idl
+Compiling: ConnectException.idl
+Compiling: XAsyncOutputMonitor.idl
+Compiling: XTempFile.idl
+Compiling: TempFile.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssio.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssio.db UCR @C:/cygwin/tmp/mkbnKyPM
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssio.idls
+cat C:/cygwin/tmp/mkjtdyc7 >>../../../../wntmsci12.pro/misc/cssio.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkUozbeH
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: udk-modules.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../wntmsci12.pro/ucr/css.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../wntmsci12.pro/ucr/css.db UCR @C:/cygwin/tmp/mkfk8yom
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkYxi3Z7
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: udk-modules.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../wntmsci12.pro/ucrdoc/css.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../wntmsci12.pro/ucrdoc/css.db UCR @C:/cygwin/tmp/mkzWG1uh
+/bin/rm -f ../../../wntmsci12.pro/misc/css.idls
+cat C:/cygwin/tmp/mkrHI4b7 >>../../../wntmsci12.pro/misc/css.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/connection
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkpoDmLv
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 11 source files ... 
+Compiling: SocketPermission.idl
+Compiling: XConnection.idl
+Compiling: XConnection2.idl
+Compiling: XConnectionBroadcaster.idl
+Compiling: XAcceptor.idl
+Compiling: XConnector.idl
+Compiling: NoConnectException.idl
+Compiling: AlreadyAcceptingException.idl
+Compiling: ConnectionSetupException.idl
+Compiling: Connector.idl
+Compiling: Acceptor.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssconnection.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssconnection.db UCR @C:/cygwin/tmp/mkJ2bXMk
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkO3pcVg
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 11 source files ... 
+Compiling: SocketPermission.idl
+Compiling: XConnection.idl
+Compiling: XConnection2.idl
+Compiling: XConnectionBroadcaster.idl
+Compiling: XAcceptor.idl
+Compiling: XConnector.idl
+Compiling: NoConnectException.idl
+Compiling: AlreadyAcceptingException.idl
+Compiling: ConnectionSetupException.idl
+Compiling: Connector.idl
+Compiling: Acceptor.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssconnection.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssconnection.db UCR @C:/cygwin/tmp/mkIqdQig
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssconnection.idls
+cat C:/cygwin/tmp/mkvAqHvC >>../../../../wntmsci12.pro/misc/cssconnection.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/reflection
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkLZSwwh
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 48 source files ... 
+Compiling: CoreReflection.idl
+Compiling: FieldAccessMode.idl
+Compiling: InvalidTypeNameException.idl
+Compiling: InvocationTargetException.idl
+Compiling: MethodMode.idl
+Compiling: NoSuchTypeNameException.idl
+Compiling: ParamInfo.idl
+Compiling: ParamMode.idl
+Compiling: ProxyFactory.idl
+Compiling: TypeDescriptionManager.idl
+Compiling: TypeDescriptionProvider.idl
+Compiling: TypeDescriptionSearchDepth.idl
+Compiling: XArrayTypeDescription.idl
+Compiling: XCompoundTypeDescription.idl
+Compiling: XConstantTypeDescription.idl
+Compiling: XConstantsTypeDescription.idl
+Compiling: XUnionTypeDescription.idl
+Compiling: XEnumTypeDescription.idl
+Compiling: XIdlArray.idl
+Compiling: XIdlClass.idl
+Compiling: XIdlClassProvider.idl
+Compiling: XIdlField.idl
+Compiling: XIdlField2.idl
+Compiling: XIdlMember.idl
+Compiling: XIdlMethod.idl
+Compiling: XIdlReflection.idl
+Compiling: XIndirectTypeDescription.idl
+Compiling: XInterfaceAttributeTypeDescription.idl
+Compiling: XInterfaceAttributeTypeDescription2.idl
+Compiling: XInterfaceMemberTypeDescription.idl
+Compiling: XInterfaceMethodTypeDescription.idl
+Compiling: XInterfaceTypeDescription.idl
+Compiling: XInterfaceTypeDescription2.idl
+Compiling: XMethodParameter.idl
+Compiling: XModuleTypeDescription.idl
+Compiling: XParameter.idl
+Compiling: XPropertyTypeDescription.idl
+Compiling: XProxyFactory.idl
+Compiling: XPublished.idl
+Compiling: XServiceConstructorDescription.idl
+Compiling: XServiceTypeDescription.idl
+Compiling: XServiceTypeDescription2.idl
+Compiling: XSingletonTypeDescription.idl
+Compiling: XSingletonTypeDescription2.idl
+Compiling: XStructTypeDescription.idl
+Compiling: XTypeDescription.idl
+Compiling: XTypeDescriptionEnumeration.idl
+Compiling: XTypeDescriptionEnumerationAccess.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssreflection.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssreflection.db UCR @C:/cygwin/tmp/mkWMPFWx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkCNFGPB
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 48 source files ... 
+Compiling: CoreReflection.idl
+Compiling: FieldAccessMode.idl
+Compiling: InvalidTypeNameException.idl
+Compiling: InvocationTargetException.idl
+Compiling: MethodMode.idl
+Compiling: NoSuchTypeNameException.idl
+Compiling: ParamInfo.idl
+Compiling: ParamMode.idl
+Compiling: ProxyFactory.idl
+Compiling: TypeDescriptionManager.idl
+Compiling: TypeDescriptionProvider.idl
+Compiling: TypeDescriptionSearchDepth.idl
+Compiling: XArrayTypeDescription.idl
+Compiling: XCompoundTypeDescription.idl
+Compiling: XConstantTypeDescription.idl
+Compiling: XConstantsTypeDescription.idl
+Compiling: XUnionTypeDescription.idl
+Compiling: XEnumTypeDescription.idl
+Compiling: XIdlArray.idl
+Compiling: XIdlClass.idl
+Compiling: XIdlClassProvider.idl
+Compiling: XIdlField.idl
+Compiling: XIdlField2.idl
+Compiling: XIdlMember.idl
+Compiling: XIdlMethod.idl
+Compiling: XIdlReflection.idl
+Compiling: XIndirectTypeDescription.idl
+Compiling: XInterfaceAttributeTypeDescription.idl
+Compiling: XInterfaceAttributeTypeDescription2.idl
+Compiling: XInterfaceMemberTypeDescription.idl
+Compiling: XInterfaceMethodTypeDescription.idl
+Compiling: XInterfaceTypeDescription.idl
+Compiling: XInterfaceTypeDescription2.idl
+Compiling: XMethodParameter.idl
+Compiling: XModuleTypeDescription.idl
+Compiling: XParameter.idl
+Compiling: XPropertyTypeDescription.idl
+Compiling: XProxyFactory.idl
+Compiling: XPublished.idl
+Compiling: XServiceConstructorDescription.idl
+Compiling: XServiceTypeDescription.idl
+Compiling: XServiceTypeDescription2.idl
+Compiling: XSingletonTypeDescription.idl
+Compiling: XSingletonTypeDescription2.idl
+Compiling: XStructTypeDescription.idl
+Compiling: XTypeDescription.idl
+Compiling: XTypeDescriptionEnumeration.idl
+Compiling: XTypeDescriptionEnumerationAccess.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssreflection.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssreflection.db UCR @C:/cygwin/tmp/mkMEpcRL
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssreflection.idls
+cat C:/cygwin/tmp/mkxjsKMi >>../../../../wntmsci12.pro/misc/cssreflection.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/corba
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkNVq6wq
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: corba.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 33 warnings compiling file 'corba.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csscorba.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csscorba.db UCR @C:/cygwin/tmp/mksrqRZc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkPTPVPv
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: corba.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 33 warnings compiling file 'corba.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csscorba.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csscorba.db UCR @C:/cygwin/tmp/mkl7uIoB
+/bin/rm -f ../../../../wntmsci12.pro/misc/csscorba.idls
+cat C:/cygwin/tmp/mk6qjCkK >>../../../../wntmsci12.pro/misc/csscorba.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/uno
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkQN2Hdl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 16 source files ... 
+Compiling: Exception.idl
+Compiling: NamingService.idl
+Compiling: RuntimeException.idl
+Compiling: SecurityException.idl
+Compiling: DeploymentException.idl
+Compiling: TypeClass.idl
+Compiling: Uik.idl
+Compiling: XAdapter.idl
+Compiling: XAggregation.idl
+Compiling: XInterface.idl
+Compiling: XNamingService.idl
+Compiling: XReference.idl
+Compiling: XWeak.idl
+Compiling: XComponentContext.idl
+Compiling: XCurrentContext.idl
+Compiling: XUnloadingPreference.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssuno.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssuno.db UCR @C:/cygwin/tmp/mkjYMGYM
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkywmMko
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 16 source files ... 
+Compiling: Exception.idl
+Compiling: NamingService.idl
+Compiling: RuntimeException.idl
+Compiling: SecurityException.idl
+Compiling: DeploymentException.idl
+Compiling: TypeClass.idl
+Compiling: Uik.idl
+Compiling: XAdapter.idl
+Compiling: XAggregation.idl
+Compiling: XInterface.idl
+Compiling: XNamingService.idl
+Compiling: XReference.idl
+Compiling: XWeak.idl
+Compiling: XComponentContext.idl
+Compiling: XCurrentContext.idl
+Compiling: XUnloadingPreference.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssuno.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssuno.db UCR @C:/cygwin/tmp/mkkBbVp8
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssuno.idls
+cat C:/cygwin/tmp/mkMrYL7q >>../../../../wntmsci12.pro/misc/cssuno.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/uri
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkleWm1Z
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 15 source files ... 
+Compiling: ExternalUriReferenceTranslator.idl
+Compiling: RelativeUriExcessParentSegments.idl
+Compiling: UriReferenceFactory.idl
+Compiling: UriSchemeParser_vndDOTsunDOTstarDOTexpand.idl
+Compiling: UriSchemeParser_vndDOTsunDOTstarDOTscript.idl
+Compiling: VndSunStarPkgUrlReferenceFactory.idl
+Compiling: XExternalUriReferenceTranslator.idl
+Compiling: XUriReference.idl
+Compiling: XUriReferenceFactory.idl
+Compiling: XUriSchemeParser.idl
+Compiling: XVndSunStarExpandUrl.idl
+Compiling: XVndSunStarExpandUrlReference.idl
+Compiling: XVndSunStarPkgUrlReferenceFactory.idl
+Compiling: XVndSunStarScriptUrl.idl
+Compiling: XVndSunStarScriptUrlReference.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssuri.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssuri.db UCR @C:/cygwin/tmp/mk2KVZX3
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkZ6zKe4
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 15 source files ... 
+Compiling: ExternalUriReferenceTranslator.idl
+Compiling: RelativeUriExcessParentSegments.idl
+Compiling: UriReferenceFactory.idl
+Compiling: UriSchemeParser_vndDOTsunDOTstarDOTexpand.idl
+Compiling: UriSchemeParser_vndDOTsunDOTstarDOTscript.idl
+Compiling: VndSunStarPkgUrlReferenceFactory.idl
+Compiling: XExternalUriReferenceTranslator.idl
+Compiling: XUriReference.idl
+Compiling: XUriReferenceFactory.idl
+Compiling: XUriSchemeParser.idl
+Compiling: XVndSunStarExpandUrl.idl
+Compiling: XVndSunStarExpandUrlReference.idl
+Compiling: XVndSunStarPkgUrlReferenceFactory.idl
+Compiling: XVndSunStarScriptUrl.idl
+Compiling: XVndSunStarScriptUrlReference.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssuri.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssuri.db UCR @C:/cygwin/tmp/mk2Bg1Dk
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssuri.idls
+cat C:/cygwin/tmp/mkaChygD >>../../../../wntmsci12.pro/misc/cssuri.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/registry
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkWMh30Q
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 14 source files ... 
+Compiling: CannotRegisterImplementationException.idl
+Compiling: DefaultRegistry.idl
+Compiling: ImplementationRegistration.idl
+Compiling: InvalidRegistryException.idl
+Compiling: InvalidValueException.idl
+Compiling: MergeConflictException.idl
+Compiling: NestedRegistry.idl
+Compiling: RegistryKeyType.idl
+Compiling: RegistryValueType.idl
+Compiling: SimpleRegistry.idl
+Compiling: XImplementationRegistration.idl
+Compiling: XImplementationRegistration2.idl
+Compiling: XRegistryKey.idl
+Compiling: XSimpleRegistry.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssregistry.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssregistry.db UCR @C:/cygwin/tmp/mkjqCnY2
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk7hMdgr
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 14 source files ... 
+Compiling: CannotRegisterImplementationException.idl
+Compiling: DefaultRegistry.idl
+Compiling: ImplementationRegistration.idl
+Compiling: InvalidRegistryException.idl
+Compiling: InvalidValueException.idl
+Compiling: MergeConflictException.idl
+Compiling: NestedRegistry.idl
+Compiling: RegistryKeyType.idl
+Compiling: RegistryValueType.idl
+Compiling: SimpleRegistry.idl
+Compiling: XImplementationRegistration.idl
+Compiling: XImplementationRegistration2.idl
+Compiling: XRegistryKey.idl
+Compiling: XSimpleRegistry.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssregistry.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssregistry.db UCR @C:/cygwin/tmp/mkJP1tRh
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssregistry.idls
+cat C:/cygwin/tmp/mkKRhlY2 >>../../../../wntmsci12.pro/misc/cssregistry.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/corba/giop
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk1vQlFz
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: giop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 84 warnings compiling file 'giop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssgiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssgiop.db UCR @C:/cygwin/tmp/mk44HOhD
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk0eJfHa
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: giop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 84 warnings compiling file 'giop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssgiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssgiop.db UCR @C:/cygwin/tmp/mk9PVkBS
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssgiop.idls
+cat C:/cygwin/tmp/mk7n0zo4 >>../../../../../wntmsci12.pro/misc/cssgiop.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/lang
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkd4uRg6
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 38 source files ... 
+Compiling: ArrayIndexOutOfBoundsException.idl
+Compiling: ClassNotFoundException.idl
+Compiling: DisposedException.idl
+Compiling: EventObject.idl
+Compiling: IllegalAccessException.idl
+Compiling: IllegalArgumentException.idl
+Compiling: IndexOutOfBoundsException.idl
+Compiling: InvalidListenerException.idl
+Compiling: ListenerExistException.idl
+Compiling: Locale.idl
+Compiling: MultiServiceFactory.idl
+Compiling: NoSuchFieldException.idl
+Compiling: NoSuchMethodException.idl
+Compiling: NoSupportException.idl
+Compiling: NotInitializedException.idl
+Compiling: NullPointerException.idl
+Compiling: RegistryServiceManager.idl
+Compiling: ServiceManager.idl
+Compiling: ServiceNotRegisteredException.idl
+Compiling: SystemDependent.idl
+Compiling: WrappedTargetException.idl
+Compiling: WrappedTargetRuntimeException.idl
+Compiling: XComponent.idl
+Compiling: XConnectionPoint.idl
+Compiling: XConnectionPointContainer.idl
+Compiling: XEventListener.idl
+Compiling: XInitialization.idl
+Compiling: XLocalizable.idl
+Compiling: XMultiServiceFactory.idl
+Compiling: XMultiComponentFactory.idl
+Compiling: XServiceDisplayName.idl
+Compiling: XServiceInfo.idl
+Compiling: XServiceName.idl
+Compiling: XSingleServiceFactory.idl
+Compiling: XSingleComponentFactory.idl
+Compiling: XTypeProvider.idl
+Compiling: XUnoTunnel.idl
+Compiling: XMain.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csslang.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csslang.db UCR @C:/cygwin/tmp/mk3EVCkt
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkQF9phB
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 38 source files ... 
+Compiling: ArrayIndexOutOfBoundsException.idl
+Compiling: ClassNotFoundException.idl
+Compiling: DisposedException.idl
+Compiling: EventObject.idl
+Compiling: IllegalAccessException.idl
+Compiling: IllegalArgumentException.idl
+Compiling: IndexOutOfBoundsException.idl
+Compiling: InvalidListenerException.idl
+Compiling: ListenerExistException.idl
+Compiling: Locale.idl
+Compiling: MultiServiceFactory.idl
+Compiling: NoSuchFieldException.idl
+Compiling: NoSuchMethodException.idl
+Compiling: NoSupportException.idl
+Compiling: NotInitializedException.idl
+Compiling: NullPointerException.idl
+Compiling: RegistryServiceManager.idl
+Compiling: ServiceManager.idl
+Compiling: ServiceNotRegisteredException.idl
+Compiling: SystemDependent.idl
+Compiling: WrappedTargetException.idl
+Compiling: WrappedTargetRuntimeException.idl
+Compiling: XComponent.idl
+Compiling: XConnectionPoint.idl
+Compiling: XConnectionPointContainer.idl
+Compiling: XEventListener.idl
+Compiling: XInitialization.idl
+Compiling: XLocalizable.idl
+Compiling: XMultiServiceFactory.idl
+Compiling: XMultiComponentFactory.idl
+Compiling: XServiceDisplayName.idl
+Compiling: XServiceInfo.idl
+Compiling: XServiceName.idl
+Compiling: XSingleServiceFactory.idl
+Compiling: XSingleComponentFactory.idl
+Compiling: XTypeProvider.idl
+Compiling: XUnoTunnel.idl
+Compiling: XMain.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csslang.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csslang.db UCR @C:/cygwin/tmp/mkBbjKbg
+/bin/rm -f ../../../../wntmsci12.pro/misc/csslang.idls
+cat C:/cygwin/tmp/mkoVTUwY >>../../../../wntmsci12.pro/misc/csslang.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/script
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkbOogNQ
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 44 source files ... 
+Compiling: AllEventObject.idl
+Compiling: AllListenerAdapter.idl
+Compiling: BasicErrorException.idl
+Compiling: CannotConvertException.idl
+Compiling: CannotCreateAdapterException.idl
+Compiling: ContextInformation.idl
+Compiling: Converter.idl
+Compiling: Engine.idl
+Compiling: FailReason.idl
+Compiling: FinishEngineEvent.idl
+Compiling: FinishReason.idl
+Compiling: InterruptEngineEvent.idl
+Compiling: InterruptReason.idl
+Compiling: Invocation.idl
+Compiling: InvocationAdapterFactory.idl
+Compiling: JavaScript.idl
+Compiling: ScriptEvent.idl
+Compiling: ScriptEventDescriptor.idl
+Compiling: ArrayWrapper.idl
+Compiling: XAllListener.idl
+Compiling: XAllListenerAdapterService.idl
+Compiling: XDebugging.idl
+Compiling: XDirectInvocation.idl
+Compiling: XEngine.idl
+Compiling: XEngineListener.idl
+Compiling: XEventAttacher.idl
+Compiling: XEventAttacherManager.idl
+Compiling: XInvocationAdapterFactory.idl
+Compiling: XInvocationAdapterFactory2.idl
+Compiling: XInvocation.idl
+Compiling: XInvocation2.idl
+Compiling: InvocationInfo.idl
+Compiling: MemberType.idl
+Compiling: XLibraryAccess.idl
+Compiling: XScriptListener.idl
+Compiling: XTypeConverter.idl
+Compiling: XStarBasicAccess.idl
+Compiling: XStarBasicModuleInfo.idl
+Compiling: XStarBasicDialogInfo.idl
+Compiling: XStarBasicLibraryInfo.idl
+Compiling: XScriptEventsSupplier.idl
+Compiling: XScriptEventsAttacher.idl
+Compiling: XDefaultMethod.idl
+Compiling: XDefaultProperty.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssscript.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssscript.db UCR @C:/cygwin/tmp/mkCTzZpF
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkpsonCf
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 44 source files ... 
+Compiling: AllEventObject.idl
+Compiling: AllListenerAdapter.idl
+Compiling: BasicErrorException.idl
+Compiling: CannotConvertException.idl
+Compiling: CannotCreateAdapterException.idl
+Compiling: ContextInformation.idl
+Compiling: Converter.idl
+Compiling: Engine.idl
+Compiling: FailReason.idl
+Compiling: FinishEngineEvent.idl
+Compiling: FinishReason.idl
+Compiling: InterruptEngineEvent.idl
+Compiling: InterruptReason.idl
+Compiling: Invocation.idl
+Compiling: InvocationAdapterFactory.idl
+Compiling: JavaScript.idl
+Compiling: ScriptEvent.idl
+Compiling: ScriptEventDescriptor.idl
+Compiling: ArrayWrapper.idl
+Compiling: XAllListener.idl
+Compiling: XAllListenerAdapterService.idl
+Compiling: XDebugging.idl
+Compiling: XDirectInvocation.idl
+Compiling: XEngine.idl
+Compiling: XEngineListener.idl
+Compiling: XEventAttacher.idl
+Compiling: XEventAttacherManager.idl
+Compiling: XInvocationAdapterFactory.idl
+Compiling: XInvocationAdapterFactory2.idl
+Compiling: XInvocation.idl
+Compiling: XInvocation2.idl
+Compiling: InvocationInfo.idl
+Compiling: MemberType.idl
+Compiling: XLibraryAccess.idl
+Compiling: XScriptListener.idl
+Compiling: XTypeConverter.idl
+Compiling: XStarBasicAccess.idl
+Compiling: XStarBasicModuleInfo.idl
+Compiling: XStarBasicDialogInfo.idl
+Compiling: XStarBasicLibraryInfo.idl
+Compiling: XScriptEventsSupplier.idl
+Compiling: XScriptEventsAttacher.idl
+Compiling: XDefaultMethod.idl
+Compiling: XDefaultProperty.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssscript.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssscript.db UCR @C:/cygwin/tmp/mkNThwhg
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssscript.idls
+cat C:/cygwin/tmp/mktFqfKR >>../../../../wntmsci12.pro/misc/cssscript.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/test/bridge
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk2SvUl2
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: XBridgeTest.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssbridgetest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssbridgetest.db UCR @C:/cygwin/tmp/mkEGkM51
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk4aT7EM
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: XBridgeTest.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssbridgetest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssbridgetest.db UCR @C:/cygwin/tmp/mkKuTcPg
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssbridgetest.idls
+cat C:/cygwin/tmp/mktBmXr9 >>../../../../../wntmsci12.pro/misc/cssbridgetest.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/test
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk4iHdfE
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: TestFactory.idl
+Compiling: XSimpleTest.idl
+Compiling: TestEvent.idl
+Compiling: XTest.idl
+Compiling: XTestListener.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csstest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csstest.db UCR @C:/cygwin/tmp/mk5edtkO
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkgqyBpv
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: TestFactory.idl
+Compiling: XSimpleTest.idl
+Compiling: TestEvent.idl
+Compiling: XTest.idl
+Compiling: XTestListener.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csstest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csstest.db UCR @C:/cygwin/tmp/mkMQyDJa
+/bin/rm -f ../../../../wntmsci12.pro/misc/csstest.idls
+cat C:/cygwin/tmp/mkyZrEKk >>../../../../wntmsci12.pro/misc/csstest.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/beans
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkJsOWmF
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 56 source files ... 
+Compiling: Ambiguous.idl
+Compiling: Defaulted.idl
+Compiling: GetDirectPropertyTolerantResult.idl
+Compiling: GetPropertyTolerantResult.idl
+Compiling: IllegalTypeException.idl
+Compiling: Introspection.idl
+Compiling: IntrospectionException.idl
+Compiling: MethodConcept.idl
+Compiling: NamedValue.idl
+Compiling: NotRemoveableException.idl
+Compiling: Optional.idl
+Compiling: Pair.idl
+Compiling: Property.idl
+Compiling: PropertyAttribute.idl
+Compiling: PropertyBag.idl
+Compiling: PropertyChangeEvent.idl
+Compiling: PropertyConcept.idl
+Compiling: PropertyExistException.idl
+Compiling: PropertySet.idl
+Compiling: PropertySetInfoChange.idl
+Compiling: PropertySetInfoChangeEvent.idl
+Compiling: PropertyState.idl
+Compiling: PropertyStateChangeEvent.idl
+Compiling: PropertyValue.idl
+Compiling: PropertyValues.idl
+Compiling: PropertyVetoException.idl
+Compiling: SetPropertyTolerantFailed.idl
+Compiling: StringPair.idl
+Compiling: TolerantPropertySetResultType.idl
+Compiling: UnknownPropertyException.idl
+Compiling: XExactName.idl
+Compiling: XFastPropertySet.idl
+Compiling: XHierarchicalPropertySet.idl
+Compiling: XHierarchicalPropertySetInfo.idl
+Compiling: XIntrospection.idl
+Compiling: XIntrospectionAccess.idl
+Compiling: XIntroTest.idl
+Compiling: XMaterialHolder.idl
+Compiling: XMultiPropertySet.idl
+Compiling: XMultiPropertyStates.idl
+Compiling: XMultiHierarchicalPropertySet.idl
+Compiling: XPropertiesChangeListener.idl
+Compiling: XPropertiesChangeNotifier.idl
+Compiling: XProperty.idl
+Compiling: XPropertyAccess.idl
+Compiling: XPropertyChangeListener.idl
+Compiling: XPropertyContainer.idl
+Compiling: XPropertySet.idl
+Compiling: XPropertySetInfo.idl
+Compiling: XPropertySetInfoChangeListener.idl
+Compiling: XPropertySetInfoChangeNotifier.idl
+Compiling: XPropertyState.idl
+Compiling: XPropertyStateChangeListener.idl
+Compiling: XPropertyWithState.idl
+Compiling: XTolerantMultiPropertySet.idl
+Compiling: XVetoableChangeListener.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssbeans.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssbeans.db UCR @C:/cygwin/tmp/mkQeW6ZG
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkE3rbKA
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 56 source files ... 
+Compiling: Ambiguous.idl
+Compiling: Defaulted.idl
+Compiling: GetDirectPropertyTolerantResult.idl
+Compiling: GetPropertyTolerantResult.idl
+Compiling: IllegalTypeException.idl
+Compiling: Introspection.idl
+Compiling: IntrospectionException.idl
+Compiling: MethodConcept.idl
+Compiling: NamedValue.idl
+Compiling: NotRemoveableException.idl
+Compiling: Optional.idl
+Compiling: Pair.idl
+Compiling: Property.idl
+Compiling: PropertyAttribute.idl
+Compiling: PropertyBag.idl
+Compiling: PropertyChangeEvent.idl
+Compiling: PropertyConcept.idl
+Compiling: PropertyExistException.idl
+Compiling: PropertySet.idl
+Compiling: PropertySetInfoChange.idl
+Compiling: PropertySetInfoChangeEvent.idl
+Compiling: PropertyState.idl
+Compiling: PropertyStateChangeEvent.idl
+Compiling: PropertyValue.idl
+Compiling: PropertyValues.idl
+Compiling: PropertyVetoException.idl
+Compiling: SetPropertyTolerantFailed.idl
+Compiling: StringPair.idl
+Compiling: TolerantPropertySetResultType.idl
+Compiling: UnknownPropertyException.idl
+Compiling: XExactName.idl
+Compiling: XFastPropertySet.idl
+Compiling: XHierarchicalPropertySet.idl
+Compiling: XHierarchicalPropertySetInfo.idl
+Compiling: XIntrospection.idl
+Compiling: XIntrospectionAccess.idl
+Compiling: XIntroTest.idl
+Compiling: XMaterialHolder.idl
+Compiling: XMultiPropertySet.idl
+Compiling: XMultiPropertyStates.idl
+Compiling: XMultiHierarchicalPropertySet.idl
+Compiling: XPropertiesChangeListener.idl
+Compiling: XPropertiesChangeNotifier.idl
+Compiling: XProperty.idl
+Compiling: XPropertyAccess.idl
+Compiling: XPropertyChangeListener.idl
+Compiling: XPropertyContainer.idl
+Compiling: XPropertySet.idl
+Compiling: XPropertySetInfo.idl
+Compiling: XPropertySetInfoChangeListener.idl
+Compiling: XPropertySetInfoChangeNotifier.idl
+Compiling: XPropertyState.idl
+Compiling: XPropertyStateChangeListener.idl
+Compiling: XPropertyWithState.idl
+Compiling: XTolerantMultiPropertySet.idl
+Compiling: XVetoableChangeListener.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssbeans.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssbeans.db UCR @C:/cygwin/tmp/mkTSTcxM
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssbeans.idls
+cat C:/cygwin/tmp/mkWlkwN8 >>../../../../wntmsci12.pro/misc/cssbeans.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/test/performance
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk2XGJLK
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: XPerformanceTest.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 4 warnings compiling file 'XPerformanceTest.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssperftest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssperftest.db UCR @C:/cygwin/tmp/mkaQCIer
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkczrwMV
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: XPerformanceTest.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 4 warnings compiling file 'XPerformanceTest.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssperftest.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssperftest.db UCR @C:/cygwin/tmp/mke6nVDG
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssperftest.idls
+cat C:/cygwin/tmp/mkbjJXUd >>../../../../../wntmsci12.pro/misc/cssperftest.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/bridge
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk6Xu8CQ
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 21 source files ... 
+Compiling: ModelDependent.idl
+Compiling: OleApplicationRegistration.idl
+Compiling: OleBridgeSupplier.idl
+Compiling: OleBridgeSupplier2.idl
+Compiling: OleBridgeSupplierVar1.idl
+Compiling: OleObjectFactory.idl
+Compiling: XBridgeSupplier.idl
+Compiling: XBridgeSupplier2.idl
+Compiling: XBridge.idl
+Compiling: XBridgeFactory.idl
+Compiling: XInstanceProvider.idl
+Compiling: BridgeExistsException.idl
+Compiling: XUnoUrlResolver.idl
+Compiling: UnoUrlResolver.idl
+Compiling: XProtocolProperties.idl
+Compiling: ProtocolProperty.idl
+Compiling: InvalidProtocolChangeException.idl
+Compiling: Bridge.idl
+Compiling: BridgeFactory.idl
+Compiling: UrpBridge.idl
+Compiling: IiopBridge.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssbridge.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssbridge.db UCR @C:/cygwin/tmp/mkIO4CEJ
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkHKFJ7k
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 21 source files ... 
+Compiling: ModelDependent.idl
+Compiling: OleApplicationRegistration.idl
+Compiling: OleBridgeSupplier.idl
+Compiling: OleBridgeSupplier2.idl
+Compiling: OleBridgeSupplierVar1.idl
+Compiling: OleObjectFactory.idl
+Compiling: XBridgeSupplier.idl
+Compiling: XBridgeSupplier2.idl
+Compiling: XBridge.idl
+Compiling: XBridgeFactory.idl
+Compiling: XInstanceProvider.idl
+Compiling: BridgeExistsException.idl
+Compiling: XUnoUrlResolver.idl
+Compiling: UnoUrlResolver.idl
+Compiling: XProtocolProperties.idl
+Compiling: ProtocolProperty.idl
+Compiling: InvalidProtocolChangeException.idl
+Compiling: Bridge.idl
+Compiling: BridgeFactory.idl
+Compiling: UrpBridge.idl
+Compiling: IiopBridge.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssbridge.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssbridge.db UCR @C:/cygwin/tmp/mkmzyzz4
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssbridge.idls
+cat C:/cygwin/tmp/mkvI3JxD >>../../../../wntmsci12.pro/misc/cssbridge.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/corba/iop
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkIfuIgU
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: iop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 38 warnings compiling file 'iop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssiop.db UCR @C:/cygwin/tmp/mkR9uw7v
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkdNtf1w
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: iop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 38 warnings compiling file 'iop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssiop.db UCR @C:/cygwin/tmp/mkm7hyNM
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssiop.idls
+cat C:/cygwin/tmp/mkzqDwL5 >>../../../../../wntmsci12.pro/misc/cssiop.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/container
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkzL7sCe
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 38 source files ... 
+Compiling: XIdentifierAccess.idl
+Compiling: XIdentifierReplace.idl
+Compiling: XIdentifierContainer.idl
+Compiling: ContainerEvent.idl
+Compiling: ElementExistException.idl
+Compiling: EnumerableMap.idl
+Compiling: NoSuchElementException.idl
+Compiling: XChild.idl
+Compiling: XUniqueIDAccess.idl
+Compiling: XComponentEnumeration.idl
+Compiling: XComponentEnumerationAccess.idl
+Compiling: XContainer.idl
+Compiling: XContainerApproveBroadcaster.idl
+Compiling: XContainerApproveListener.idl
+Compiling: XContainerListener.idl
+Compiling: XContainerQuery.idl
+Compiling: XContentEnumerationAccess.idl
+Compiling: XElementAccess.idl
+Compiling: XEnumerableMap.idl
+Compiling: XEnumeration.idl
+Compiling: XEnumerationAccess.idl
+Compiling: XHierarchicalName.idl
+Compiling: XHierarchicalNameAccess.idl
+Compiling: XHierarchicalNameReplace.idl
+Compiling: XHierarchicalNameContainer.idl
+Compiling: XImplicitIDAccess.idl
+Compiling: XImplicitIDContainer.idl
+Compiling: XImplicitIDReplace.idl
+Compiling: XIndexAccess.idl
+Compiling: XIndexContainer.idl
+Compiling: XIndexReplace.idl
+Compiling: XMap.idl
+Compiling: XNameAccess.idl
+Compiling: XNameContainer.idl
+Compiling: XNamed.idl
+Compiling: XNameReplace.idl
+Compiling: XSet.idl
+Compiling: XStringKeyMap.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csscontainer.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csscontainer.db UCR @C:/cygwin/tmp/mkOxuV1v
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkjBx0Dy
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 38 source files ... 
+Compiling: XIdentifierAccess.idl
+Compiling: XIdentifierReplace.idl
+Compiling: XIdentifierContainer.idl
+Compiling: ContainerEvent.idl
+Compiling: ElementExistException.idl
+Compiling: EnumerableMap.idl
+Compiling: NoSuchElementException.idl
+Compiling: XChild.idl
+Compiling: XUniqueIDAccess.idl
+Compiling: XComponentEnumeration.idl
+Compiling: XComponentEnumerationAccess.idl
+Compiling: XContainer.idl
+Compiling: XContainerApproveBroadcaster.idl
+Compiling: XContainerApproveListener.idl
+Compiling: XContainerListener.idl
+Compiling: XContainerQuery.idl
+Compiling: XContentEnumerationAccess.idl
+Compiling: XElementAccess.idl
+Compiling: XEnumerableMap.idl
+Compiling: XEnumeration.idl
+Compiling: XEnumerationAccess.idl
+Compiling: XHierarchicalName.idl
+Compiling: XHierarchicalNameAccess.idl
+Compiling: XHierarchicalNameReplace.idl
+Compiling: XHierarchicalNameContainer.idl
+Compiling: XImplicitIDAccess.idl
+Compiling: XImplicitIDContainer.idl
+Compiling: XImplicitIDReplace.idl
+Compiling: XIndexAccess.idl
+Compiling: XIndexContainer.idl
+Compiling: XIndexReplace.idl
+Compiling: XMap.idl
+Compiling: XNameAccess.idl
+Compiling: XNameContainer.idl
+Compiling: XNamed.idl
+Compiling: XNameReplace.idl
+Compiling: XSet.idl
+Compiling: XStringKeyMap.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csscontainer.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csscontainer.db UCR @C:/cygwin/tmp/mkRtDnR4
+/bin/rm -f ../../../../wntmsci12.pro/misc/csscontainer.idls
+cat C:/cygwin/tmp/mkeVR6DM >>../../../../wntmsci12.pro/misc/csscontainer.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/loader
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkEovPwP
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 6 source files ... 
+Compiling: CannotActivateFactoryException.idl
+Compiling: Java.idl
+Compiling: Java2.idl
+Compiling: Dynamic.idl
+Compiling: SharedLibrary.idl
+Compiling: XImplementationLoader.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssloader.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssloader.db UCR @C:/cygwin/tmp/mkq5cyxc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkVplhtw
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 6 source files ... 
+Compiling: CannotActivateFactoryException.idl
+Compiling: Java.idl
+Compiling: Java2.idl
+Compiling: Dynamic.idl
+Compiling: SharedLibrary.idl
+Compiling: XImplementationLoader.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssloader.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssloader.db UCR @C:/cygwin/tmp/mkH6E1Oa
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssloader.idls
+cat C:/cygwin/tmp/mkp3Ne3M >>../../../../wntmsci12.pro/misc/cssloader.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/java
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk8DOVrW
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 12 source files ... 
+Compiling: JavaVirtualMachine.idl
+Compiling: WrongJavaVersionException.idl
+Compiling: XJavaThreadRegister_11.idl
+Compiling: XJavaVM.idl
+Compiling: JavaInitializationException.idl
+Compiling: JavaDisabledException.idl
+Compiling: JavaNotConfiguredException.idl
+Compiling: MissingJavaRuntimeException.idl
+Compiling: JavaVMCreationFailureException.idl
+Compiling: JavaNotFoundException.idl
+Compiling: InvalidJavaSettingsException.idl
+Compiling: RestartRequiredException.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssjava.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssjava.db UCR @C:/cygwin/tmp/mki3FlTH
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkr32lJ8
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 12 source files ... 
+Compiling: JavaVirtualMachine.idl
+Compiling: WrongJavaVersionException.idl
+Compiling: XJavaThreadRegister_11.idl
+Compiling: XJavaVM.idl
+Compiling: JavaInitializationException.idl
+Compiling: JavaDisabledException.idl
+Compiling: JavaNotConfiguredException.idl
+Compiling: MissingJavaRuntimeException.idl
+Compiling: JavaVMCreationFailureException.idl
+Compiling: JavaNotFoundException.idl
+Compiling: InvalidJavaSettingsException.idl
+Compiling: RestartRequiredException.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssjava.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssjava.db UCR @C:/cygwin/tmp/mkKowLsu
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssjava.idls
+cat C:/cygwin/tmp/mkYhQwZe >>../../../../wntmsci12.pro/misc/cssjava.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/corba/iiop
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkcWK2mJ
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: iiop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 89 warnings compiling file 'iiop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssiiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssiiop.db UCR @C:/cygwin/tmp/mkp2bxkD
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mk8Slm8n
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 1 source files ... 
+Compiling: iiop.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: detected 89 warnings compiling file 'iiop.idl'
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssiiop.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssiiop.db UCR @C:/cygwin/tmp/mkpv3W30
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssiiop.idls
+cat C:/cygwin/tmp/mkds7eAt >>../../../../../wntmsci12.pro/misc/cssiiop.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/task
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkero1um
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 6 source files ... 
+Compiling: XInteractionAbort.idl
+Compiling: XInteractionContinuation.idl
+Compiling: XInteractionHandler.idl
+Compiling: XInteractionHandler2.idl
+Compiling: XInteractionRequest.idl
+Compiling: XInteractionRetry.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csstask.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csstask.db UCR @C:/cygwin/tmp/mkqqRp2K
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkQKgztL
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 6 source files ... 
+Compiling: XInteractionAbort.idl
+Compiling: XInteractionContinuation.idl
+Compiling: XInteractionHandler.idl
+Compiling: XInteractionHandler2.idl
+Compiling: XInteractionRequest.idl
+Compiling: XInteractionRetry.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csstask.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csstask.db UCR @C:/cygwin/tmp/mkjlXqrF
+/bin/rm -f ../../../../wntmsci12.pro/misc/csstask.idls
+cat C:/cygwin/tmp/mk1ldStO >>../../../../wntmsci12.pro/misc/csstask.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/util
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkh3mWY1
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: XVeto.idl
+Compiling: XMacroExpander.idl
+Compiling: MacroExpander.idl
+Compiling: BootstrapMacroExpander.idl
+Compiling: theMacroExpander.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/cssutil.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/cssutil.db UCR @C:/cygwin/tmp/mkXlutrH
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mksmf2NP
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: XVeto.idl
+Compiling: XMacroExpander.idl
+Compiling: MacroExpander.idl
+Compiling: BootstrapMacroExpander.idl
+Compiling: theMacroExpander.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/cssutil.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/cssutil.db UCR @C:/cygwin/tmp/mkKjrYxy
+/bin/rm -f ../../../../wntmsci12.pro/misc/cssutil.idls
+cat C:/cygwin/tmp/mkDRR9yL >>../../../../wntmsci12.pro/misc/cssutil.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/util/logging
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkBVUUj9
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: LogLevel.idl
+Compiling: XLogger.idl
+Compiling: XLoggerRemote.idl
+Compiling: Logger.idl
+Compiling: LoggerRemote.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssulog.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssulog.db UCR @C:/cygwin/tmp/mkH463Ni
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkYL15p6
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 5 source files ... 
+Compiling: LogLevel.idl
+Compiling: XLogger.idl
+Compiling: XLoggerRemote.idl
+Compiling: Logger.idl
+Compiling: LoggerRemote.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssulog.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssulog.db UCR @C:/cygwin/tmp/mkAfzkUq
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssulog.idls
+cat C:/cygwin/tmp/mkvrYzjI >>../../../../../wntmsci12.pro/misc/cssulog.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/security
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkVRKqZf
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 9 source files ... 
+Compiling: AllPermission.idl
+Compiling: RuntimePermission.idl
+Compiling: Policy.idl
+Compiling: XPolicy.idl
+Compiling: AccessController.idl
+Compiling: XAccessController.idl
+Compiling: XAccessControlContext.idl
+Compiling: XAction.idl
+Compiling: AccessControlException.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucr/csssec.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucr/csssec.db UCR @C:/cygwin/tmp/mklkVTke
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkmTDvVO
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 9 source files ... 
+Compiling: AllPermission.idl
+Compiling: RuntimePermission.idl
+Compiling: Policy.idl
+Compiling: XPolicy.idl
+Compiling: AccessController.idl
+Compiling: XAccessController.idl
+Compiling: XAccessControlContext.idl
+Compiling: XAction.idl
+Compiling: AccessControlException.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../wntmsci12.pro/ucrdoc/csssec.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../wntmsci12.pro/ucrdoc/csssec.db UCR @C:/cygwin/tmp/mkmGFF2C
+/bin/rm -f ../../../../wntmsci12.pro/misc/csssec.idls
+cat C:/cygwin/tmp/mkyRODuX >>../../../../wntmsci12.pro/misc/csssec.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/com/sun/star/bridge/oleautomation
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkUHk4sb
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 10 source files ... 
+Compiling: ApplicationRegistration.idl
+Compiling: BridgeSupplier.idl
+Compiling: Factory.idl
+Compiling: Decimal.idl
+Compiling: Currency.idl
+Compiling: Date.idl
+Compiling: NamedArgument.idl
+Compiling: SCode.idl
+Compiling: PropertyPutArgument.idl
+Compiling: XAutomationObject.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucr/cssboleautomation.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucr/cssboleautomation.db UCR @C:/cygwin/tmp/mks3mEaq
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -verbose @C:/cygwin/tmp/mkXNC3za
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: compiling 10 source files ... 
+Compiling: ApplicationRegistration.idl
+Compiling: BridgeSupplier.idl
+Compiling: Factory.idl
+Compiling: Decimal.idl
+Compiling: Currency.idl
+Compiling: Date.idl
+Compiling: NamedArgument.idl
+Compiling: SCode.idl
+Compiling: PropertyPutArgument.idl
+Compiling: XAutomationObject.idl
+C:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe: returned successfulC:\steve\TestArea\main\solver\410\wntmsci12.pro\bin\idlc.exe Version 1.1
+
+/bin/rm -f ../../../../../wntmsci12.pro/ucrdoc/cssboleautomation.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/ucrdoc/cssboleautomation.db UCR @C:/cygwin/tmp/mkAiCkJU
+/bin/rm -f ../../../../../wntmsci12.pro/misc/cssboleautomation.idls
+cat C:/cygwin/tmp/mkDVyYgA >>../../../../../wntmsci12.pro/misc/cssboleautomation.idls
+
+Entering /cygdrive/c/steve/testarea/main/udkapi/util
+
+/bin/rm -f ../wntmsci12.pro/ucr/udkapi.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../wntmsci12.pro/ucr/udkapi.db / @C:/cygwin/tmp/mk7tIk8u
+/bin/rm -f ../wntmsci12.pro/ucrdoc/udkapi_doc.db
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../wntmsci12.pro/ucrdoc/udkapi_doc.db / @C:/cygwin/tmp/mkShtXBI
+udkapi deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/udkapi/build.lst
+COPY: ../wntmsci12.pro/ucr/udkapi.db -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/udkapi.rdb
+COPY: ../wntmsci12.pro/ucr/udkapi.db -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ure/types.rdb
+COPY: ../wntmsci12.pro/ucrdoc/udkapi_doc.db -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/udkapi_doc.rdb
+COPY: ../com/sun/star/udk-modules.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/udk-modules.idl
+COPY: ../com/sun/star/beans/Ambiguous.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Ambiguous.idl
+COPY: ../com/sun/star/beans/Defaulted.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Defaulted.idl
+COPY: ../com/sun/star/beans/GetDirectPropertyTolerantResult.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/GetDirectPropertyTolerantResult.idl
+COPY: ../com/sun/star/beans/GetPropertyTolerantResult.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/GetPropertyTolerantResult.idl
+COPY: ../com/sun/star/beans/IllegalTypeException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/IllegalTypeException.idl
+COPY: ../com/sun/star/beans/Introspection.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Introspection.idl
+COPY: ../com/sun/star/beans/IntrospectionException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/IntrospectionException.idl
+COPY: ../com/sun/star/beans/MethodConcept.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/MethodConcept.idl
+COPY: ../com/sun/star/beans/NamedValue.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/NamedValue.idl
+COPY: ../com/sun/star/beans/NotRemoveableException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/NotRemoveableException.idl
+COPY: ../com/sun/star/beans/Optional.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Optional.idl
+COPY: ../com/sun/star/beans/Pair.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Pair.idl
+COPY: ../com/sun/star/beans/Property.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/Property.idl
+COPY: ../com/sun/star/beans/PropertyAttribute.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyAttribute.idl
+COPY: ../com/sun/star/beans/PropertyBag.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyBag.idl
+COPY: ../com/sun/star/beans/PropertyChangeEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyChangeEvent.idl
+COPY: ../com/sun/star/beans/PropertyConcept.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyConcept.idl
+COPY: ../com/sun/star/beans/PropertyExistException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyExistException.idl
+COPY: ../com/sun/star/beans/PropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertySet.idl
+COPY: ../com/sun/star/beans/PropertySetInfoChange.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertySetInfoChange.idl
+COPY: ../com/sun/star/beans/PropertySetInfoChangeEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertySetInfoChangeEvent.idl
+COPY: ../com/sun/star/beans/PropertyState.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyState.idl
+COPY: ../com/sun/star/beans/PropertyStateChangeEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyStateChangeEvent.idl
+COPY: ../com/sun/star/beans/PropertyValue.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyValue.idl
+COPY: ../com/sun/star/beans/PropertyValues.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyValues.idl
+COPY: ../com/sun/star/beans/PropertyVetoException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/PropertyVetoException.idl
+COPY: ../com/sun/star/beans/SetPropertyTolerantFailed.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/SetPropertyTolerantFailed.idl
+COPY: ../com/sun/star/beans/StringPair.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/StringPair.idl
+COPY: ../com/sun/star/beans/TolerantPropertySetResultType.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/TolerantPropertySetResultType.idl
+COPY: ../com/sun/star/beans/UnknownPropertyException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/UnknownPropertyException.idl
+COPY: ../com/sun/star/beans/XExactName.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XExactName.idl
+COPY: ../com/sun/star/beans/XFastPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XFastPropertySet.idl
+COPY: ../com/sun/star/beans/XHierarchicalPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XHierarchicalPropertySet.idl
+COPY: ../com/sun/star/beans/XHierarchicalPropertySetInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XHierarchicalPropertySetInfo.idl
+COPY: ../com/sun/star/beans/XIntrospection.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XIntrospection.idl
+COPY: ../com/sun/star/beans/XIntrospectionAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XIntrospectionAccess.idl
+COPY: ../com/sun/star/beans/XIntroTest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XIntroTest.idl
+COPY: ../com/sun/star/beans/XMaterialHolder.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XMaterialHolder.idl
+COPY: ../com/sun/star/beans/XMultiHierarchicalPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XMultiHierarchicalPropertySet.idl
+COPY: ../com/sun/star/beans/XMultiPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XMultiPropertySet.idl
+COPY: ../com/sun/star/beans/XMultiPropertyStates.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XMultiPropertyStates.idl
+COPY: ../com/sun/star/beans/XPropertiesChangeListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertiesChangeListener.idl
+COPY: ../com/sun/star/beans/XPropertiesChangeNotifier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertiesChangeNotifier.idl
+COPY: ../com/sun/star/beans/XProperty.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XProperty.idl
+COPY: ../com/sun/star/beans/XPropertyAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyAccess.idl
+COPY: ../com/sun/star/beans/XPropertyChangeListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyChangeListener.idl
+COPY: ../com/sun/star/beans/XPropertyContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyContainer.idl
+COPY: ../com/sun/star/beans/XPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertySet.idl
+COPY: ../com/sun/star/beans/XPropertySetInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertySetInfo.idl
+COPY: ../com/sun/star/beans/XPropertySetInfoChangeListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertySetInfoChangeListener.idl
+COPY: ../com/sun/star/beans/XPropertySetInfoChangeNotifier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertySetInfoChangeNotifier.idl
+COPY: ../com/sun/star/beans/XPropertyState.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyState.idl
+COPY: ../com/sun/star/beans/XPropertyStateChangeListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyStateChangeListener.idl
+COPY: ../com/sun/star/beans/XPropertyWithState.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XPropertyWithState.idl
+COPY: ../com/sun/star/beans/XTolerantMultiPropertySet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XTolerantMultiPropertySet.idl
+COPY: ../com/sun/star/beans/XVetoableChangeListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/beans/XVetoableChangeListener.idl
+COPY: ../com/sun/star/bridge/Bridge.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/Bridge.idl
+COPY: ../com/sun/star/bridge/BridgeExistsException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/BridgeExistsException.idl
+COPY: ../com/sun/star/bridge/BridgeFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/BridgeFactory.idl
+COPY: ../com/sun/star/bridge/IiopBridge.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/IiopBridge.idl
+COPY: ../com/sun/star/bridge/InvalidProtocolChangeException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/InvalidProtocolChangeException.idl
+COPY: ../com/sun/star/bridge/ModelDependent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/ModelDependent.idl
+COPY: ../com/sun/star/bridge/OleApplicationRegistration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/OleApplicationRegistration.idl
+COPY: ../com/sun/star/bridge/OleBridgeSupplier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/OleBridgeSupplier.idl
+COPY: ../com/sun/star/bridge/OleBridgeSupplier2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/OleBridgeSupplier2.idl
+COPY: ../com/sun/star/bridge/OleBridgeSupplierVar1.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/OleBridgeSupplierVar1.idl
+COPY: ../com/sun/star/bridge/OleObjectFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/OleObjectFactory.idl
+COPY: ../com/sun/star/bridge/ProtocolProperty.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/ProtocolProperty.idl
+COPY: ../com/sun/star/bridge/UnoUrlResolver.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/UnoUrlResolver.idl
+COPY: ../com/sun/star/bridge/UrpBridge.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/UrpBridge.idl
+COPY: ../com/sun/star/bridge/XBridge.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XBridge.idl
+COPY: ../com/sun/star/bridge/XBridgeFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XBridgeFactory.idl
+COPY: ../com/sun/star/bridge/XBridgeSupplier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XBridgeSupplier.idl
+COPY: ../com/sun/star/bridge/XBridgeSupplier2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XBridgeSupplier2.idl
+COPY: ../com/sun/star/bridge/XInstanceProvider.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XInstanceProvider.idl
+COPY: ../com/sun/star/bridge/XProtocolProperties.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XProtocolProperties.idl
+COPY: ../com/sun/star/bridge/XUnoUrlResolver.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/XUnoUrlResolver.idl
+COPY: ../com/sun/star/bridge/oleautomation/ApplicationRegistration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/ApplicationRegistration.idl
+COPY: ../com/sun/star/bridge/oleautomation/BridgeSupplier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/BridgeSupplier.idl
+COPY: ../com/sun/star/bridge/oleautomation/Currency.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/Currency.idl
+COPY: ../com/sun/star/bridge/oleautomation/Date.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/Date.idl
+COPY: ../com/sun/star/bridge/oleautomation/Decimal.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/Decimal.idl
+COPY: ../com/sun/star/bridge/oleautomation/Factory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/Factory.idl
+COPY: ../com/sun/star/bridge/oleautomation/NamedArgument.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/NamedArgument.idl
+COPY: ../com/sun/star/bridge/oleautomation/PropertyPutArgument.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/PropertyPutArgument.idl
+COPY: ../com/sun/star/bridge/oleautomation/SCode.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/SCode.idl
+COPY: ../com/sun/star/bridge/oleautomation/XAutomationObject.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/bridge/oleautomation/XAutomationObject.idl
+COPY: ../com/sun/star/connection/Acceptor.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/Acceptor.idl
+COPY: ../com/sun/star/connection/AlreadyAcceptingException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/AlreadyAcceptingException.idl
+COPY: ../com/sun/star/connection/ConnectionSetupException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/ConnectionSetupException.idl
+COPY: ../com/sun/star/connection/Connector.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/Connector.idl
+COPY: ../com/sun/star/connection/NoConnectException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/NoConnectException.idl
+COPY: ../com/sun/star/connection/SocketPermission.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/SocketPermission.idl
+COPY: ../com/sun/star/connection/XAcceptor.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/XAcceptor.idl
+COPY: ../com/sun/star/connection/XConnection.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/XConnection.idl
+COPY: ../com/sun/star/connection/XConnection2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/XConnection2.idl
+COPY: ../com/sun/star/connection/XConnectionBroadcaster.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/XConnectionBroadcaster.idl
+COPY: ../com/sun/star/connection/XConnector.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/connection/XConnector.idl
+COPY: ../com/sun/star/container/ContainerEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/ContainerEvent.idl
+COPY: ../com/sun/star/container/ElementExistException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/ElementExistException.idl
+COPY: ../com/sun/star/container/EnumerableMap.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/EnumerableMap.idl
+COPY: ../com/sun/star/container/NoSuchElementException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/NoSuchElementException.idl
+COPY: ../com/sun/star/container/XChild.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XChild.idl
+COPY: ../com/sun/star/container/XComponentEnumeration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XComponentEnumeration.idl
+COPY: ../com/sun/star/container/XComponentEnumerationAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XComponentEnumerationAccess.idl
+COPY: ../com/sun/star/container/XContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContainer.idl
+COPY: ../com/sun/star/container/XContainerApproveBroadcaster.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContainerApproveBroadcaster.idl
+COPY: ../com/sun/star/container/XContainerApproveListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContainerApproveListener.idl
+COPY: ../com/sun/star/container/XContainerListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContainerListener.idl
+COPY: ../com/sun/star/container/XContainerQuery.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContainerQuery.idl
+COPY: ../com/sun/star/container/XContentEnumerationAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XContentEnumerationAccess.idl
+COPY: ../com/sun/star/container/XElementAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XElementAccess.idl
+COPY: ../com/sun/star/container/XEnumerableMap.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XEnumerableMap.idl
+COPY: ../com/sun/star/container/XEnumeration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XEnumeration.idl
+COPY: ../com/sun/star/container/XEnumerationAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XEnumerationAccess.idl
+COPY: ../com/sun/star/container/XHierarchicalName.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XHierarchicalName.idl
+COPY: ../com/sun/star/container/XHierarchicalNameAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XHierarchicalNameAccess.idl
+COPY: ../com/sun/star/container/XHierarchicalNameContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XHierarchicalNameContainer.idl
+COPY: ../com/sun/star/container/XHierarchicalNameReplace.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XHierarchicalNameReplace.idl
+COPY: ../com/sun/star/container/XIdentifierAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIdentifierAccess.idl
+COPY: ../com/sun/star/container/XIdentifierContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIdentifierContainer.idl
+COPY: ../com/sun/star/container/XIdentifierReplace.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIdentifierReplace.idl
+COPY: ../com/sun/star/container/XImplicitIDAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XImplicitIDAccess.idl
+COPY: ../com/sun/star/container/XImplicitIDContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XImplicitIDContainer.idl
+COPY: ../com/sun/star/container/XImplicitIDReplace.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XImplicitIDReplace.idl
+COPY: ../com/sun/star/container/XIndexAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIndexAccess.idl
+COPY: ../com/sun/star/container/XIndexContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIndexContainer.idl
+COPY: ../com/sun/star/container/XIndexReplace.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XIndexReplace.idl
+COPY: ../com/sun/star/container/XMap.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XMap.idl
+COPY: ../com/sun/star/container/XNameAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XNameAccess.idl
+COPY: ../com/sun/star/container/XNameContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XNameContainer.idl
+COPY: ../com/sun/star/container/XNamed.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XNamed.idl
+COPY: ../com/sun/star/container/XNameReplace.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XNameReplace.idl
+COPY: ../com/sun/star/container/XSet.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XSet.idl
+COPY: ../com/sun/star/container/XStringKeyMap.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XStringKeyMap.idl
+COPY: ../com/sun/star/container/XUniqueIDAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/container/XUniqueIDAccess.idl
+COPY: ../com/sun/star/io/AlreadyConnectedException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/AlreadyConnectedException.idl
+COPY: ../com/sun/star/io/BufferSizeExceededException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/BufferSizeExceededException.idl
+COPY: ../com/sun/star/io/ConnectException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/ConnectException.idl
+COPY: ../com/sun/star/io/DataInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/DataInputStream.idl
+COPY: ../com/sun/star/io/DataOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/DataOutputStream.idl
+COPY: ../com/sun/star/io/DataTransferEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/DataTransferEvent.idl
+COPY: ../com/sun/star/io/FilePermission.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/FilePermission.idl
+COPY: ../com/sun/star/io/IOException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/IOException.idl
+COPY: ../com/sun/star/io/MarkableInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/MarkableInputStream.idl
+COPY: ../com/sun/star/io/MarkableOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/MarkableOutputStream.idl
+COPY: ../com/sun/star/io/NoRouteToHostException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/NoRouteToHostException.idl
+COPY: ../com/sun/star/io/NotConnectedException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/NotConnectedException.idl
+COPY: ../com/sun/star/io/ObjectInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/ObjectInputStream.idl
+COPY: ../com/sun/star/io/ObjectOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/ObjectOutputStream.idl
+COPY: ../com/sun/star/io/Pipe.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/Pipe.idl
+COPY: ../com/sun/star/io/Pump.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/Pump.idl
+COPY: ../com/sun/star/io/SequenceInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/SequenceInputStream.idl
+COPY: ../com/sun/star/io/SequenceOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/SequenceOutputStream.idl
+COPY: ../com/sun/star/io/SocketException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/SocketException.idl
+COPY: ../com/sun/star/io/TempFile.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/TempFile.idl
+COPY: ../com/sun/star/io/TextInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/TextInputStream.idl
+COPY: ../com/sun/star/io/TextOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/TextOutputStream.idl
+COPY: ../com/sun/star/io/UnexpectedEOFException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/UnexpectedEOFException.idl
+COPY: ../com/sun/star/io/UnknownHostException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/UnknownHostException.idl
+COPY: ../com/sun/star/io/WrongFormatException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/WrongFormatException.idl
+COPY: ../com/sun/star/io/XActiveDataControl.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XActiveDataControl.idl
+COPY: ../com/sun/star/io/XActiveDataSink.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XActiveDataSink.idl
+COPY: ../com/sun/star/io/XActiveDataSource.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XActiveDataSource.idl
+COPY: ../com/sun/star/io/XActiveDataStreamer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XActiveDataStreamer.idl
+COPY: ../com/sun/star/io/XAsyncOutputMonitor.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XAsyncOutputMonitor.idl
+COPY: ../com/sun/star/io/XConnectable.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XConnectable.idl
+COPY: ../com/sun/star/io/XDataExporter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XDataExporter.idl
+COPY: ../com/sun/star/io/XDataImporter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XDataImporter.idl
+COPY: ../com/sun/star/io/XDataInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XDataInputStream.idl
+COPY: ../com/sun/star/io/XDataOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XDataOutputStream.idl
+COPY: ../com/sun/star/io/XDataTransferEventListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XDataTransferEventListener.idl
+COPY: ../com/sun/star/io/XInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XInputStream.idl
+COPY: ../com/sun/star/io/XInputStreamProvider.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XInputStreamProvider.idl
+COPY: ../com/sun/star/io/XMarkableStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XMarkableStream.idl
+COPY: ../com/sun/star/io/XObjectInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XObjectInputStream.idl
+COPY: ../com/sun/star/io/XObjectOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XObjectOutputStream.idl
+COPY: ../com/sun/star/io/XOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XOutputStream.idl
+COPY: ../com/sun/star/io/XPersist.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XPersist.idl
+COPY: ../com/sun/star/io/XPersistObject.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XPersistObject.idl
+COPY: ../com/sun/star/io/XSeekable.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XSeekable.idl
+COPY: ../com/sun/star/io/XSeekableInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XSeekableInputStream.idl
+COPY: ../com/sun/star/io/XSequenceOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XSequenceOutputStream.idl
+COPY: ../com/sun/star/io/XStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XStream.idl
+COPY: ../com/sun/star/io/XStreamListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XStreamListener.idl
+COPY: ../com/sun/star/io/XTempFile.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XTempFile.idl
+COPY: ../com/sun/star/io/XTextInputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XTextInputStream.idl
+COPY: ../com/sun/star/io/XTextOutputStream.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XTextOutputStream.idl
+COPY: ../com/sun/star/io/XTruncate.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XTruncate.idl
+COPY: ../com/sun/star/io/XXMLExtractor.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/io/XXMLExtractor.idl
+COPY: ../com/sun/star/java/InvalidJavaSettingsException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/InvalidJavaSettingsException.idl
+COPY: ../com/sun/star/java/JavaDisabledException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaDisabledException.idl
+COPY: ../com/sun/star/java/JavaInitializationException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaInitializationException.idl
+COPY: ../com/sun/star/java/JavaNotConfiguredException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaNotConfiguredException.idl
+COPY: ../com/sun/star/java/JavaNotFoundException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaNotFoundException.idl
+COPY: ../com/sun/star/java/JavaVirtualMachine.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaVirtualMachine.idl
+COPY: ../com/sun/star/java/JavaVMCreationFailureException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/JavaVMCreationFailureException.idl
+COPY: ../com/sun/star/java/MissingJavaRuntimeException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/MissingJavaRuntimeException.idl
+COPY: ../com/sun/star/java/RestartRequiredException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/RestartRequiredException.idl
+COPY: ../com/sun/star/java/WrongJavaVersionException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/WrongJavaVersionException.idl
+COPY: ../com/sun/star/java/XJavaThreadRegister_11.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/XJavaThreadRegister_11.idl
+COPY: ../com/sun/star/java/XJavaVM.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/java/XJavaVM.idl
+COPY: ../com/sun/star/lang/ArrayIndexOutOfBoundsException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/ArrayIndexOutOfBoundsException.idl
+COPY: ../com/sun/star/lang/ClassNotFoundException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/ClassNotFoundException.idl
+COPY: ../com/sun/star/lang/DisposedException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/DisposedException.idl
+COPY: ../com/sun/star/lang/EventObject.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/EventObject.idl
+COPY: ../com/sun/star/lang/IllegalAccessException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/IllegalAccessException.idl
+COPY: ../com/sun/star/lang/IllegalArgumentException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/IllegalArgumentException.idl
+COPY: ../com/sun/star/lang/IndexOutOfBoundsException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/IndexOutOfBoundsException.idl
+COPY: ../com/sun/star/lang/InvalidListenerException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/InvalidListenerException.idl
+COPY: ../com/sun/star/lang/ListenerExistException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/ListenerExistException.idl
+COPY: ../com/sun/star/lang/Locale.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/Locale.idl
+COPY: ../com/sun/star/lang/MultiServiceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/MultiServiceFactory.idl
+COPY: ../com/sun/star/lang/NoSuchFieldException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/NoSuchFieldException.idl
+COPY: ../com/sun/star/lang/NoSuchMethodException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/NoSuchMethodException.idl
+COPY: ../com/sun/star/lang/NoSupportException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/NoSupportException.idl
+COPY: ../com/sun/star/lang/NotInitializedException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/NotInitializedException.idl
+COPY: ../com/sun/star/lang/NullPointerException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/NullPointerException.idl
+COPY: ../com/sun/star/lang/RegistryServiceManager.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/RegistryServiceManager.idl
+COPY: ../com/sun/star/lang/ServiceManager.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/ServiceManager.idl
+COPY: ../com/sun/star/lang/ServiceNotRegisteredException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/ServiceNotRegisteredException.idl
+COPY: ../com/sun/star/lang/SystemDependent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/SystemDependent.idl
+COPY: ../com/sun/star/lang/WrappedTargetException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/WrappedTargetException.idl
+COPY: ../com/sun/star/lang/WrappedTargetRuntimeException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/WrappedTargetRuntimeException.idl
+COPY: ../com/sun/star/lang/XComponent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XComponent.idl
+COPY: ../com/sun/star/lang/XConnectionPoint.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XConnectionPoint.idl
+COPY: ../com/sun/star/lang/XConnectionPointContainer.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XConnectionPointContainer.idl
+COPY: ../com/sun/star/lang/XEventListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XEventListener.idl
+COPY: ../com/sun/star/lang/XInitialization.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XInitialization.idl
+COPY: ../com/sun/star/lang/XLocalizable.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XLocalizable.idl
+COPY: ../com/sun/star/lang/XMain.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XMain.idl
+COPY: ../com/sun/star/lang/XMultiComponentFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XMultiComponentFactory.idl
+COPY: ../com/sun/star/lang/XMultiServiceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XMultiServiceFactory.idl
+COPY: ../com/sun/star/lang/XServiceDisplayName.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XServiceDisplayName.idl
+COPY: ../com/sun/star/lang/XServiceInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XServiceInfo.idl
+COPY: ../com/sun/star/lang/XServiceName.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XServiceName.idl
+COPY: ../com/sun/star/lang/XSingleComponentFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XSingleComponentFactory.idl
+COPY: ../com/sun/star/lang/XSingleServiceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XSingleServiceFactory.idl
+COPY: ../com/sun/star/lang/XTypeProvider.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XTypeProvider.idl
+COPY: ../com/sun/star/lang/XUnoTunnel.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/lang/XUnoTunnel.idl
+COPY: ../com/sun/star/reflection/CoreReflection.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/CoreReflection.idl
+COPY: ../com/sun/star/reflection/FieldAccessMode.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/FieldAccessMode.idl
+COPY: ../com/sun/star/reflection/InvalidTypeNameException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/InvalidTypeNameException.idl
+COPY: ../com/sun/star/reflection/InvocationTargetException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/InvocationTargetException.idl
+COPY: ../com/sun/star/reflection/MethodMode.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/MethodMode.idl
+COPY: ../com/sun/star/reflection/NoSuchTypeNameException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/NoSuchTypeNameException.idl
+COPY: ../com/sun/star/reflection/ParamInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/ParamInfo.idl
+COPY: ../com/sun/star/reflection/ParamMode.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/ParamMode.idl
+COPY: ../com/sun/star/reflection/ProxyFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/ProxyFactory.idl
+COPY: ../com/sun/star/reflection/TypeDescriptionManager.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/TypeDescriptionManager.idl
+COPY: ../com/sun/star/reflection/TypeDescriptionProvider.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/TypeDescriptionProvider.idl
+COPY: ../com/sun/star/reflection/TypeDescriptionSearchDepth.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/TypeDescriptionSearchDepth.idl
+COPY: ../com/sun/star/reflection/XArrayTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XArrayTypeDescription.idl
+COPY: ../com/sun/star/reflection/XCompoundTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XCompoundTypeDescription.idl
+COPY: ../com/sun/star/reflection/XConstantsTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XConstantsTypeDescription.idl
+COPY: ../com/sun/star/reflection/XConstantTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XConstantTypeDescription.idl
+COPY: ../com/sun/star/reflection/XEnumTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XEnumTypeDescription.idl
+COPY: ../com/sun/star/reflection/XIdlArray.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlArray.idl
+COPY: ../com/sun/star/reflection/XIdlClass.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlClass.idl
+COPY: ../com/sun/star/reflection/XIdlClassProvider.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlClassProvider.idl
+COPY: ../com/sun/star/reflection/XIdlField.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlField.idl
+COPY: ../com/sun/star/reflection/XIdlField2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlField2.idl
+COPY: ../com/sun/star/reflection/XIdlMember.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlMember.idl
+COPY: ../com/sun/star/reflection/XIdlMethod.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlMethod.idl
+COPY: ../com/sun/star/reflection/XIdlReflection.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIdlReflection.idl
+COPY: ../com/sun/star/reflection/XIndirectTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XIndirectTypeDescription.idl
+COPY: ../com/sun/star/reflection/XInterfaceAttributeTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceAttributeTypeDescription.idl
+COPY: ../com/sun/star/reflection/XInterfaceAttributeTypeDescription2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceAttributeTypeDescription2.idl
+COPY: ../com/sun/star/reflection/XInterfaceMemberTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceMemberTypeDescription.idl
+COPY: ../com/sun/star/reflection/XInterfaceMethodTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceMethodTypeDescription.idl
+COPY: ../com/sun/star/reflection/XInterfaceTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceTypeDescription.idl
+COPY: ../com/sun/star/reflection/XInterfaceTypeDescription2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XInterfaceTypeDescription2.idl
+COPY: ../com/sun/star/reflection/XMethodParameter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XMethodParameter.idl
+COPY: ../com/sun/star/reflection/XModuleTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XModuleTypeDescription.idl
+COPY: ../com/sun/star/reflection/XParameter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XParameter.idl
+COPY: ../com/sun/star/reflection/XPropertyTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XPropertyTypeDescription.idl
+COPY: ../com/sun/star/reflection/XProxyFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XProxyFactory.idl
+COPY: ../com/sun/star/reflection/XPublished.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XPublished.idl
+COPY: ../com/sun/star/reflection/XServiceConstructorDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XServiceConstructorDescription.idl
+COPY: ../com/sun/star/reflection/XServiceTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XServiceTypeDescription.idl
+COPY: ../com/sun/star/reflection/XServiceTypeDescription2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XServiceTypeDescription2.idl
+COPY: ../com/sun/star/reflection/XSingletonTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XSingletonTypeDescription.idl
+COPY: ../com/sun/star/reflection/XSingletonTypeDescription2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XSingletonTypeDescription2.idl
+COPY: ../com/sun/star/reflection/XStructTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XStructTypeDescription.idl
+COPY: ../com/sun/star/reflection/XTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XTypeDescription.idl
+COPY: ../com/sun/star/reflection/XTypeDescriptionEnumeration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XTypeDescriptionEnumeration.idl
+COPY: ../com/sun/star/reflection/XTypeDescriptionEnumerationAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XTypeDescriptionEnumerationAccess.idl
+COPY: ../com/sun/star/reflection/XUnionTypeDescription.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/reflection/XUnionTypeDescription.idl
+COPY: ../com/sun/star/registry/CannotRegisterImplementationException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/CannotRegisterImplementationException.idl
+COPY: ../com/sun/star/registry/DefaultRegistry.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/DefaultRegistry.idl
+COPY: ../com/sun/star/registry/ImplementationRegistration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/ImplementationRegistration.idl
+COPY: ../com/sun/star/registry/InvalidRegistryException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/InvalidRegistryException.idl
+COPY: ../com/sun/star/registry/InvalidValueException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/InvalidValueException.idl
+COPY: ../com/sun/star/registry/MergeConflictException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/MergeConflictException.idl
+COPY: ../com/sun/star/registry/NestedRegistry.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/NestedRegistry.idl
+COPY: ../com/sun/star/registry/RegistryKeyType.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/RegistryKeyType.idl
+COPY: ../com/sun/star/registry/RegistryValueType.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/RegistryValueType.idl
+COPY: ../com/sun/star/registry/SimpleRegistry.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/SimpleRegistry.idl
+COPY: ../com/sun/star/registry/XImplementationRegistration.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/XImplementationRegistration.idl
+COPY: ../com/sun/star/registry/XImplementationRegistration2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/XImplementationRegistration2.idl
+COPY: ../com/sun/star/registry/XRegistryKey.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/XRegistryKey.idl
+COPY: ../com/sun/star/registry/XSimpleRegistry.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/registry/XSimpleRegistry.idl
+COPY: ../com/sun/star/loader/CannotActivateFactoryException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/CannotActivateFactoryException.idl
+COPY: ../com/sun/star/loader/Dynamic.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/Dynamic.idl
+COPY: ../com/sun/star/loader/Java.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/Java.idl
+COPY: ../com/sun/star/loader/Java2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/Java2.idl
+COPY: ../com/sun/star/loader/SharedLibrary.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/SharedLibrary.idl
+COPY: ../com/sun/star/loader/XImplementationLoader.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/loader/XImplementationLoader.idl
+COPY: ../com/sun/star/script/AllEventObject.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/AllEventObject.idl
+COPY: ../com/sun/star/script/AllListenerAdapter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/AllListenerAdapter.idl
+COPY: ../com/sun/star/script/ArrayWrapper.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/ArrayWrapper.idl
+COPY: ../com/sun/star/script/BasicErrorException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/BasicErrorException.idl
+COPY: ../com/sun/star/script/CannotConvertException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/CannotConvertException.idl
+COPY: ../com/sun/star/script/CannotCreateAdapterException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/CannotCreateAdapterException.idl
+COPY: ../com/sun/star/script/ContextInformation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/ContextInformation.idl
+COPY: ../com/sun/star/script/Converter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/Converter.idl
+COPY: ../com/sun/star/script/Engine.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/Engine.idl
+COPY: ../com/sun/star/script/FailReason.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/FailReason.idl
+COPY: ../com/sun/star/script/FinishEngineEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/FinishEngineEvent.idl
+COPY: ../com/sun/star/script/FinishReason.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/FinishReason.idl
+COPY: ../com/sun/star/script/InterruptEngineEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/InterruptEngineEvent.idl
+COPY: ../com/sun/star/script/InterruptReason.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/InterruptReason.idl
+COPY: ../com/sun/star/script/Invocation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/Invocation.idl
+COPY: ../com/sun/star/script/InvocationAdapterFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/InvocationAdapterFactory.idl
+COPY: ../com/sun/star/script/InvocationInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/InvocationInfo.idl
+COPY: ../com/sun/star/script/JavaScript.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/JavaScript.idl
+COPY: ../com/sun/star/script/MemberType.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/MemberType.idl
+COPY: ../com/sun/star/script/ScriptEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/ScriptEvent.idl
+COPY: ../com/sun/star/script/ScriptEventDescriptor.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/ScriptEventDescriptor.idl
+COPY: ../com/sun/star/script/XAllListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XAllListener.idl
+COPY: ../com/sun/star/script/XAllListenerAdapterService.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XAllListenerAdapterService.idl
+COPY: ../com/sun/star/script/XDebugging.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XDebugging.idl
+COPY: ../com/sun/star/script/XDefaultMethod.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XDefaultMethod.idl
+COPY: ../com/sun/star/script/XDefaultProperty.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XDefaultProperty.idl
+COPY: ../com/sun/star/script/XDirectInvocation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XDirectInvocation.idl
+COPY: ../com/sun/star/script/XEngine.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XEngine.idl
+COPY: ../com/sun/star/script/XEngineListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XEngineListener.idl
+COPY: ../com/sun/star/script/XEventAttacher.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XEventAttacher.idl
+COPY: ../com/sun/star/script/XEventAttacherManager.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XEventAttacherManager.idl
+COPY: ../com/sun/star/script/XInvocation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XInvocation.idl
+COPY: ../com/sun/star/script/XInvocation2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XInvocation2.idl
+COPY: ../com/sun/star/script/XInvocationAdapterFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XInvocationAdapterFactory.idl
+COPY: ../com/sun/star/script/XInvocationAdapterFactory2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XInvocationAdapterFactory2.idl
+COPY: ../com/sun/star/script/XLibraryAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XLibraryAccess.idl
+COPY: ../com/sun/star/script/XScriptEventsAttacher.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XScriptEventsAttacher.idl
+COPY: ../com/sun/star/script/XScriptEventsSupplier.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XScriptEventsSupplier.idl
+COPY: ../com/sun/star/script/XScriptListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XScriptListener.idl
+COPY: ../com/sun/star/script/XStarBasicAccess.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XStarBasicAccess.idl
+COPY: ../com/sun/star/script/XStarBasicDialogInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XStarBasicDialogInfo.idl
+COPY: ../com/sun/star/script/XStarBasicLibraryInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XStarBasicLibraryInfo.idl
+COPY: ../com/sun/star/script/XStarBasicModuleInfo.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XStarBasicModuleInfo.idl
+COPY: ../com/sun/star/script/XTypeConverter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/script/XTypeConverter.idl
+COPY: ../com/sun/star/test/TestEvent.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/TestEvent.idl
+COPY: ../com/sun/star/test/TestFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/TestFactory.idl
+COPY: ../com/sun/star/test/XSimpleTest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/XSimpleTest.idl
+COPY: ../com/sun/star/test/XTest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/XTest.idl
+COPY: ../com/sun/star/test/XTestListener.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/XTestListener.idl
+COPY: ../com/sun/star/test/performance/XPerformanceTest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/performance/XPerformanceTest.idl
+COPY: ../com/sun/star/test/bridge/XBridgeTest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/test/bridge/XBridgeTest.idl
+COPY: ../com/sun/star/uno/DeploymentException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/DeploymentException.idl
+COPY: ../com/sun/star/uno/Exception.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/Exception.idl
+COPY: ../com/sun/star/uno/NamingService.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/NamingService.idl
+COPY: ../com/sun/star/uno/RuntimeException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/RuntimeException.idl
+COPY: ../com/sun/star/uno/SecurityException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/SecurityException.idl
+COPY: ../com/sun/star/uno/TypeClass.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/TypeClass.idl
+COPY: ../com/sun/star/uno/Uik.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/Uik.idl
+COPY: ../com/sun/star/uno/XAdapter.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XAdapter.idl
+COPY: ../com/sun/star/uno/XAggregation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XAggregation.idl
+COPY: ../com/sun/star/uno/XComponentContext.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XComponentContext.idl
+COPY: ../com/sun/star/uno/XCurrentContext.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XCurrentContext.idl
+COPY: ../com/sun/star/uno/XInterface.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XInterface.idl
+COPY: ../com/sun/star/uno/XNamingService.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XNamingService.idl
+COPY: ../com/sun/star/uno/XReference.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XReference.idl
+COPY: ../com/sun/star/uno/XUnloadingPreference.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XUnloadingPreference.idl
+COPY: ../com/sun/star/uno/XWeak.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uno/XWeak.idl
+COPY: ../com/sun/star/util/BootstrapMacroExpander.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/BootstrapMacroExpander.idl
+COPY: ../com/sun/star/util/MacroExpander.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/MacroExpander.idl
+COPY: ../com/sun/star/util/theMacroExpander.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/theMacroExpander.idl
+COPY: ../com/sun/star/util/XMacroExpander.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/XMacroExpander.idl
+COPY: ../com/sun/star/util/XVeto.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/XVeto.idl
+COPY: ../com/sun/star/util/logging/Logger.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/logging/Logger.idl
+COPY: ../com/sun/star/util/logging/LoggerRemote.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/logging/LoggerRemote.idl
+COPY: ../com/sun/star/util/logging/LogLevel.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/logging/LogLevel.idl
+COPY: ../com/sun/star/util/logging/XLogger.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/logging/XLogger.idl
+COPY: ../com/sun/star/util/logging/XLoggerRemote.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/util/logging/XLoggerRemote.idl
+COPY: ../com/sun/star/security/AccessControlException.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/AccessControlException.idl
+COPY: ../com/sun/star/security/AccessController.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/AccessController.idl
+COPY: ../com/sun/star/security/AllPermission.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/AllPermission.idl
+COPY: ../com/sun/star/security/Policy.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/Policy.idl
+COPY: ../com/sun/star/security/RuntimePermission.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/RuntimePermission.idl
+COPY: ../com/sun/star/security/XAccessControlContext.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/XAccessControlContext.idl
+COPY: ../com/sun/star/security/XAccessController.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/XAccessController.idl
+COPY: ../com/sun/star/security/XAction.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/XAction.idl
+COPY: ../com/sun/star/security/XPolicy.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/security/XPolicy.idl
+COPY: ../com/sun/star/task/XInteractionAbort.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionAbort.idl
+COPY: ../com/sun/star/task/XInteractionContinuation.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionContinuation.idl
+COPY: ../com/sun/star/task/XInteractionHandler.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionHandler.idl
+COPY: ../com/sun/star/task/XInteractionHandler2.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionHandler2.idl
+COPY: ../com/sun/star/task/XInteractionRequest.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionRequest.idl
+COPY: ../com/sun/star/task/XInteractionRetry.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/task/XInteractionRetry.idl
+COPY: ../com/sun/star/uri/ExternalUriReferenceTranslator.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/ExternalUriReferenceTranslator.idl
+COPY: ../com/sun/star/uri/RelativeUriExcessParentSegments.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/RelativeUriExcessParentSegments.idl
+COPY: ../com/sun/star/uri/UriReferenceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/UriReferenceFactory.idl
+COPY: ../com/sun/star/uri/UriSchemeParser_vndDOTsunDOTstarDOTexpand.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/UriSchemeParser_vndDOTsunDOTstarDOTexpand.idl
+COPY: ../com/sun/star/uri/UriSchemeParser_vndDOTsunDOTstarDOTscript.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/UriSchemeParser_vndDOTsunDOTstarDOTscript.idl
+COPY: ../com/sun/star/uri/VndSunStarPkgUrlReferenceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/VndSunStarPkgUrlReferenceFactory.idl
+COPY: ../com/sun/star/uri/XExternalUriReferenceTranslator.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XExternalUriReferenceTranslator.idl
+COPY: ../com/sun/star/uri/XUriReference.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XUriReference.idl
+COPY: ../com/sun/star/uri/XUriReferenceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XUriReferenceFactory.idl
+COPY: ../com/sun/star/uri/XUriSchemeParser.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XUriSchemeParser.idl
+COPY: ../com/sun/star/uri/XVndSunStarExpandUrl.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XVndSunStarExpandUrl.idl
+COPY: ../com/sun/star/uri/XVndSunStarExpandUrlReference.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XVndSunStarExpandUrlReference.idl
+COPY: ../com/sun/star/uri/XVndSunStarPkgUrlReferenceFactory.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XVndSunStarPkgUrlReferenceFactory.idl
+COPY: ../com/sun/star/uri/XVndSunStarScriptUrl.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XVndSunStarScriptUrl.idl
+COPY: ../com/sun/star/uri/XVndSunStarScriptUrlReference.idl -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/idl/com/sun/star/uri/XVndSunStarScriptUrlReference.idl
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/udkapi/deliver.log
+Module 'udkapi' delivered successfully. 420 files copied, 1 files unchanged
+
+=============

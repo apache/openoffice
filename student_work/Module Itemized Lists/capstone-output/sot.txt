@@ -1,0 +1,79 @@
+Name:
+sot
+
+Dependencies:
+tools ucbhelper unotools NULL
+
+Build Rules:
+
+Source Files:
+inc\pch\precompiled_sot.cxx
+source\base\exchange.cxx
+source\base\factory.cxx
+source\base\filelist.cxx
+source\base\formats.cxx
+source\base\object.cxx
+source\sdstor\stg.cxx
+source\sdstor\stgavl.cxx
+source\sdstor\stgcache.cxx
+source\sdstor\stgdir.cxx
+source\sdstor\stgelem.cxx
+source\sdstor\stgio.cxx
+source\sdstor\stgole.cxx
+source\sdstor\stgstrms.cxx
+source\sdstor\storage.cxx
+source\sdstor\storinfo.cxx
+source\sdstor\ucbstorage.cxx
+source\sdstor\unostorageholder.cxx
+source\unoolestorage\register.cxx
+source\unoolestorage\xolesimplestorage.cxx
+workben\testsot.cxx
+
+Header Files:
+inc\pch\precompiled_sot.hxx
+inc\sot\absdev.hxx
+inc\sot\agg.hxx
+inc\sot\clsids.hxx
+inc\sot\exchange.hxx
+inc\sot\factory.hxx
+inc\sot\filelist.hxx
+inc\sot\formats.hxx
+inc\sot\object.hxx
+inc\sot\sotdata.hxx
+inc\sot\sotdllapi.h
+inc\sot\sotref.hxx
+inc\sot\stg.hxx
+inc\sot\storage.hxx
+inc\sot\storinfo.hxx
+source\sdstor\stgavl.hxx
+source\sdstor\stgcache.hxx
+source\sdstor\stgdir.hxx
+source\sdstor\stgelem.hxx
+source\sdstor\stgio.hxx
+source\sdstor\stgole.hxx
+source\sdstor\stgstrms.hxx
+source\sdstor\unostorageholder.hxx
+source\unoolestorage\xolesimplestorage.hxx
+
+Patch Files:
+
+Makefiles:
+
+JunitTest_sot_complex.mk
+
+Library_sot.mk
+
+Makefile.gb
+
+Module_sot.mk
+
+Package_inc.mk
+
+prj\makefile.mk
+	TARGET=prj
+
+workben\makefile.mk
+	PRJNAME=sot
+	TARGET=workben
+	OBJFILES=
+	$(OBJ)$/testsot.obj

@@ -1,0 +1,37 @@
+Name:
+animations
+
+Dependencies:
+cppuhelper comphelper offuh LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\animcore.dll %_DEST%\bin%_EXT%\animcore.dll
+..\%__SRC%\lib\libanimcore.so %_DEST%\lib%_EXT%\libanimcore.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*
+..\source\animcore\animcore.xml %_DEST%\xml%_EXT%\animcore.xml
+
+..\%__SRC%\lib\lib*static*.dylib %_DEST%\lib%_EXT%\lib*static*.dylib
+
+mkdir: %_DEST%\inc%_EXT%\animations
+..\inc\animations\animationnodehelper.hxx %_DEST%\inc%_EXT%\animations\animationnodehelper.hxx
+..\%__SRC%\misc\animcore.component %_DEST%\xml%_EXT%\animcore.component
+
+Source Files:
+source\animcore\animcore.cxx
+source\animcore\factreg.cxx
+source\animcore\targetpropertiescreator.cxx
+
+Header Files:
+inc\animations\animationnodehelper.hxx
+source\animcore\factreg.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\animcore\makefile.mk
+	PRJNAME=animations
+	TARGET=animcore
+	SLOFILES=$(SLO)$/animcore.obj
+	$(SLO)$/factreg.obj
+	$(SLO)$/targetpropertiescreator.obj

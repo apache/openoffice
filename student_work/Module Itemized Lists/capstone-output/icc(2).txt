@@ -1,0 +1,28 @@
+Name:
+icc
+
+Dependencies:
+solenv stlport external sal NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\icc
+mkdir: %_DEST%\inc%_EXT%\external\icc
+
+..\%__SRC%\misc\build\SampleICC*\Contrib\CmdLine\create_sRGB_profile\sRGB*.hxx %_DEST%\inc%_EXT%\icc\sRGB*.hxx
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=icc
+	TARGET=icc
+
+source\create_sRGB_profile\Makefile.am
+
+source\create_sRGB_profile\Makefile.in

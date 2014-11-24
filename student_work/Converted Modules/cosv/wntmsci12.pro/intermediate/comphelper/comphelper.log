@@ -1,0 +1,15 @@
+﻿Build started 5/14/2014 3:38:25 PM.
+     1>Project "C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\comphelper.vcxproj" on node 2 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(298,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+         Creating directory "wntmsci12.pro\lib\".
+     1>InitializeBuildStatus:
+         Creating "wntmsci12.pro\intermediate\comphelper\comphelper.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Fo"wntmsci12.pro\obj\\" /analyze- source\comphelp\badcast.cxx -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -Iwntmsci12.pro\inc\cosv_badcast_wnt -Isource\inc -Iinc\pch -Iinc -IWIN\inc -Iwntmsci12.pro\inc -I. -I..\solver\410\wntmsci12.pro\inc\stl -I..\solver\410\wntmsci12.pro\inc\external -I..\solver\410\wntmsci12.pro\inc -I..\solenv\wntmsci12\inc -I..\solenv\inc -I..\res  -I..\solver\410\wntmsci12.pro\inc\offuh -I. -Ires -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL -EHa -DEXCEPTIONS_ON 
+         badcast.cxx
+     1>c1xx : fatal error C1083: Cannot open source file: 'source\comphelp\badcast.cxx': No such file or directory
+     1>Done Building Project "C:\Users\Nick\Google Drive\OSU Senior Project\Converted Modules\cosv\comphelper.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.31

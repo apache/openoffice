@@ -1,0 +1,892 @@
+Name:
+oox
+
+Dependencies:
+vos cppu cppuhelper comphelper sal offapi sax basegfx xmlscript tools vcl BOOST:boost OPENSSL:openssl LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\oox
+mkdir: %_DEST%\inc%_EXT%\oox\core
+mkdir: %_DEST%\inc%_EXT%\oox\drawingml
+mkdir: %_DEST%\inc%_EXT%\oox\drawingml\chart
+mkdir: %_DEST%\inc%_EXT%\oox\drawingml\table
+mkdir: %_DEST%\inc%_EXT%\oox\helper
+mkdir: %_DEST%\inc%_EXT%\oox\ole
+mkdir: %_DEST%\inc%_EXT%\oox\token
+mkdir: %_DEST%\inc%_EXT%\oox\vml
+mkdir: %_DEST%\inc%_EXT%\oox\xls
+
+..\%__SRC%\misc\*.map %_DEST%\bin%_EXT%\*.map
+..\%__SRC%\lib\ixo.lib %_DEST%\lib%_EXT%\ixo.lib
+..\%__SRC%\lib\xol.lib %_DEST%\lib%_EXT%\xol.lib
+..\%__SRC%\lib\libxol.a %_DEST%\lib%_EXT%\libxol.a
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%\lib*.so
+..\%__SRC%\lib\i*.lib %_DEST%\lib%_EXT%\i*.lib
+..\%__SRC%\lib\oox.lib %_DEST%\lib%_EXT%\oox.lib
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+
+..\%__SRC%\inc\oox\token\tokens.hxx %_DEST%\inc%_EXT%\oox\token\tokens.hxx
+..\%__SRC%\misc\namespaces.txt %_DEST%\inc%_EXT%\oox\token\namespaces.txt
+
+..\source\token\tokens.txt %_DEST%\inc%_EXT%\oox\token\tokens.txt
+
+..\inc\oox\dllapi.h %_DEST%\inc%_EXT%\oox\dllapi.h
+..\inc\oox\helper\binarystreambase.hxx %_DEST%\inc%_EXT%\oox\helper\binarystreambase.hxx
+..\inc\oox\helper\helper.hxx %_DEST%\inc%_EXT%\oox\helper\helper.hxx
+..\inc\oox\helper\refmap.hxx %_DEST%\inc%_EXT%\oox\helper\refmap.hxx
+..\inc\oox\helper\refvector.hxx %_DEST%\inc%_EXT%\oox\helper\refvector.hxx
+..\inc\oox\helper\storagebase.hxx %_DEST%\inc%_EXT%\oox\helper\storagebase.hxx
+..\inc\oox\helper\zipstorage.hxx %_DEST%\inc%_EXT%\oox\helper\zipstorage.hxx
+..\inc\oox\core\filterbase.hxx %_DEST%\inc%_EXT%\oox\core\filterbase.hxx
+..\inc\oox\core\filterdetect.hxx %_DEST%\inc%_EXT%\oox\core\filterdetect.hxx
+..\inc\oox\core\relations.hxx %_DEST%\inc%_EXT%\oox\core\relations.hxx
+..\inc\oox\core\xmlfilterbase.hxx %_DEST%\inc%_EXT%\oox\core\xmlfilterbase.hxx
+..\inc\oox\drawingml\chart\chartconverter.hxx %_DEST%\inc%_EXT%\oox\drawingml\chart\chartconverter.hxx
+..\inc\oox\drawingml\table\tablestylelist.hxx %_DEST%\inc%_EXT%\oox\drawingml\table\tablestylelist.hxx
+..\inc\oox\ole\vbaproject.hxx %_DEST%\inc%_EXT%\oox\ole\vbaproject.hxx
+..\inc\oox\vml\vmldrawing.hxx %_DEST%\inc%_EXT%\oox\vml\vmldrawing.hxx
+..\inc\oox\vml\vmlshape.hxx %_DEST%\inc%_EXT%\oox\vml\vmlshape.hxx
+..\inc\oox\xls\excelvbaproject.hxx %_DEST%\inc%_EXT%\oox\xls\excelvbaproject.hxx
+
+dos: sh -c "if test %OS% = MACOSX; then create-bundle %_DEST%\lib%_EXT%\*.dylib; fi"
+
+..\xml\components.xml %_DEST%\xml%_EXT%\components.xml
+..\%__SRC%\misc\oox.component %_DEST%\xml%_EXT%\oox.component
+
+Source Files:
+source\core\binarycodec.cxx
+source\core\binaryfilterbase.cxx
+source\core\contexthandler.cxx
+source\core\contexthandler2.cxx
+source\core\fastparser.cxx
+source\core\fasttokenhandler.cxx
+source\core\filterbase.cxx
+source\core\filterdetect.cxx
+source\core\fragmenthandler.cxx
+source\core\fragmenthandler2.cxx
+source\core\recordparser.cxx
+source\core\relations.cxx
+source\core\relationshandler.cxx
+source\core\services.cxx
+source\core\xmlfilterbase.cxx
+source\docprop\docprophandler.cxx
+source\docprop\ooxmldocpropimport.cxx
+source\drawingml\clrscheme.cxx
+source\drawingml\clrschemecontext.cxx
+source\drawingml\color.cxx
+source\drawingml\colorchoicecontext.cxx
+source\drawingml\connectorshapecontext.cxx
+source\drawingml\customshapegeometry.cxx
+source\drawingml\customshapeproperties.cxx
+source\drawingml\drawingmltypes.cxx
+source\drawingml\embeddedwavaudiofile.cxx
+source\drawingml\fillproperties.cxx
+source\drawingml\fillpropertiesgroupcontext.cxx
+source\drawingml\graphicshapecontext.cxx
+source\drawingml\guidcontext.cxx
+source\drawingml\hyperlinkcontext.cxx
+source\drawingml\lineproperties.cxx
+source\drawingml\linepropertiescontext.cxx
+source\drawingml\objectdefaultcontext.cxx
+source\drawingml\shape.cxx
+source\drawingml\shapecontext.cxx
+source\drawingml\shapegroupcontext.cxx
+source\drawingml\shapepropertiescontext.cxx
+source\drawingml\shapepropertymap.cxx
+source\drawingml\shapestylecontext.cxx
+source\drawingml\spdefcontext.cxx
+source\drawingml\textbody.cxx
+source\drawingml\textbodycontext.cxx
+source\drawingml\textbodyproperties.cxx
+source\drawingml\textbodypropertiescontext.cxx
+source\drawingml\textcharacterproperties.cxx
+source\drawingml\textcharacterpropertiescontext.cxx
+source\drawingml\textfield.cxx
+source\drawingml\textfieldcontext.cxx
+source\drawingml\textfont.cxx
+source\drawingml\textliststyle.cxx
+source\drawingml\textliststylecontext.cxx
+source\drawingml\textparagraph.cxx
+source\drawingml\textparagraphproperties.cxx
+source\drawingml\textparagraphpropertiescontext.cxx
+source\drawingml\textrun.cxx
+source\drawingml\textspacingcontext.cxx
+source\drawingml\texttabstoplistcontext.cxx
+source\drawingml\theme.cxx
+source\drawingml\themeelementscontext.cxx
+source\drawingml\themefragmenthandler.cxx
+source\drawingml\transform2dcontext.cxx
+source\drawingml\chart\axiscontext.cxx
+source\drawingml\chart\axisconverter.cxx
+source\drawingml\chart\axismodel.cxx
+source\drawingml\chart\chartcontextbase.cxx
+source\drawingml\chart\chartconverter.cxx
+source\drawingml\chart\chartdrawingfragment.cxx
+source\drawingml\chart\chartspaceconverter.cxx
+source\drawingml\chart\chartspacefragment.cxx
+source\drawingml\chart\chartspacemodel.cxx
+source\drawingml\chart\converterbase.cxx
+source\drawingml\chart\datasourcecontext.cxx
+source\drawingml\chart\datasourceconverter.cxx
+source\drawingml\chart\datasourcemodel.cxx
+source\drawingml\chart\modelbase.cxx
+source\drawingml\chart\objectformatter.cxx
+source\drawingml\chart\plotareacontext.cxx
+source\drawingml\chart\plotareaconverter.cxx
+source\drawingml\chart\plotareamodel.cxx
+source\drawingml\chart\seriescontext.cxx
+source\drawingml\chart\seriesconverter.cxx
+source\drawingml\chart\seriesmodel.cxx
+source\drawingml\chart\titlecontext.cxx
+source\drawingml\chart\titleconverter.cxx
+source\drawingml\chart\titlemodel.cxx
+source\drawingml\chart\typegroupcontext.cxx
+source\drawingml\chart\typegroupconverter.cxx
+source\drawingml\chart\typegroupmodel.cxx
+source\drawingml\diagram\datamodelcontext.cxx
+source\drawingml\diagram\diagram.cxx
+source\drawingml\diagram\diagramdefinitioncontext.cxx
+source\drawingml\diagram\diagramfragmenthandler.cxx
+source\drawingml\diagram\diagramlayoutatoms.cxx
+source\drawingml\diagram\layoutnodecontext.cxx
+source\drawingml\table\tablebackgroundstylecontext.cxx
+source\drawingml\table\tablecell.cxx
+source\drawingml\table\tablecellcontext.cxx
+source\drawingml\table\tablecontext.cxx
+source\drawingml\table\tablepartstylecontext.cxx
+source\drawingml\table\tableproperties.cxx
+source\drawingml\table\tablerow.cxx
+source\drawingml\table\tablerowcontext.cxx
+source\drawingml\table\tablestyle.cxx
+source\drawingml\table\tablestylecellstylecontext.cxx
+source\drawingml\table\tablestylecontext.cxx
+source\drawingml\table\tablestylelist.cxx
+source\drawingml\table\tablestylelistfragmenthandler.cxx
+source\drawingml\table\tablestylepart.cxx
+source\drawingml\table\tablestyletextstylecontext.cxx
+source\dump\biffdumper.cxx
+source\dump\dffdumper.cxx
+source\dump\dumperbase.cxx
+source\dump\oledumper.cxx
+source\dump\pptxdumper.cxx
+source\dump\xlsbdumper.cxx
+source\export\drawingml.cxx
+source\export\shapes.cxx
+source\export\vmlexport.cxx
+source\helper\attributelist.cxx
+source\helper\binaryinputstream.cxx
+source\helper\binaryoutputstream.cxx
+source\helper\binarystreambase.cxx
+source\helper\containerhelper.cxx
+source\helper\graphichelper.cxx
+source\helper\modelobjecthelper.cxx
+source\helper\progressbar.cxx
+source\helper\propertymap.cxx
+source\helper\propertyset.cxx
+source\helper\storagebase.cxx
+source\helper\textinputstream.cxx
+source\helper\zipstorage.cxx
+source\ole\axbinaryreader.cxx
+source\ole\axcontrol.cxx
+source\ole\axcontrolfragment.cxx
+source\ole\olehelper.cxx
+source\ole\oleobjecthelper.cxx
+source\ole\olestorage.cxx
+source\ole\vbacontrol.cxx
+source\ole\vbahelper.cxx
+source\ole\vbainputstream.cxx
+source\ole\vbamodule.cxx
+source\ole\vbaproject.cxx
+source\ole\vbaprojectfilter.cxx
+source\ppt\animationspersist.cxx
+source\ppt\animationtypes.cxx
+source\ppt\animvariantcontext.cxx
+source\ppt\backgroundproperties.cxx
+source\ppt\buildlistcontext.cxx
+source\ppt\commonbehaviorcontext.cxx
+source\ppt\commontimenodecontext.cxx
+source\ppt\conditioncontext.cxx
+source\ppt\customshowlistcontext.cxx
+source\ppt\headerfootercontext.cxx
+source\ppt\layoutfragmenthandler.cxx
+source\ppt\pptfilterhelpers.cxx
+source\ppt\pptimport.cxx
+source\ppt\pptshape.cxx
+source\ppt\pptshapecontext.cxx
+source\ppt\pptshapegroupcontext.cxx
+source\ppt\pptshapepropertiescontext.cxx
+source\ppt\presentationfragmenthandler.cxx
+source\ppt\slidefragmenthandler.cxx
+source\ppt\slidemastertextstylescontext.cxx
+source\ppt\slidepersist.cxx
+source\ppt\slidetimingcontext.cxx
+source\ppt\slidetransition.cxx
+source\ppt\slidetransitioncontext.cxx
+source\ppt\soundactioncontext.cxx
+source\ppt\timeanimvaluecontext.cxx
+source\ppt\timenode.cxx
+source\ppt\timenodelistcontext.cxx
+source\ppt\timetargetelementcontext.cxx
+source\shape\ShapeContextHandler.cxx
+source\shape\ShapeFilterBase.cxx
+source\token\namespacemap.cxx
+source\token\propertynames.cxx
+source\token\tokenmap.cxx
+source\vml\vmldrawing.cxx
+source\vml\vmldrawingfragment.cxx
+source\vml\vmlformatting.cxx
+source\vml\vmlinputstream.cxx
+source\vml\vmlshape.cxx
+source\vml\vmlshapecontainer.cxx
+source\vml\vmlshapecontext.cxx
+source\vml\vmltextbox.cxx
+source\vml\vmltextboxcontext.cxx
+source\xls\addressconverter.cxx
+source\xls\autofilterbuffer.cxx
+source\xls\autofiltercontext.cxx
+source\xls\biffcodec.cxx
+source\xls\biffdetector.cxx
+source\xls\biffhelper.cxx
+source\xls\biffinputstream.cxx
+source\xls\biffoutputstream.cxx
+source\xls\chartsheetfragment.cxx
+source\xls\commentsbuffer.cxx
+source\xls\commentsfragment.cxx
+source\xls\condformatbuffer.cxx
+source\xls\condformatcontext.cxx
+source\xls\connectionsbuffer.cxx
+source\xls\connectionsfragment.cxx
+source\xls\defnamesbuffer.cxx
+source\xls\drawingbase.cxx
+source\xls\drawingfragment.cxx
+source\xls\drawingmanager.cxx
+source\xls\excelchartconverter.cxx
+source\xls\excelfilter.cxx
+source\xls\excelhandlers.cxx
+source\xls\excelvbaproject.cxx
+source\xls\externallinkbuffer.cxx
+source\xls\externallinkfragment.cxx
+source\xls\formulabase.cxx
+source\xls\formulaparser.cxx
+source\xls\numberformatsbuffer.cxx
+source\xls\ooxformulaparser.cxx
+source\xls\pagesettings.cxx
+source\xls\pivotcachebuffer.cxx
+source\xls\pivotcachefragment.cxx
+source\xls\pivottablebuffer.cxx
+source\xls\pivottablefragment.cxx
+source\xls\querytablebuffer.cxx
+source\xls\querytablefragment.cxx
+source\xls\richstring.cxx
+source\xls\richstringcontext.cxx
+source\xls\scenariobuffer.cxx
+source\xls\scenariocontext.cxx
+source\xls\sharedstringsbuffer.cxx
+source\xls\sharedstringsfragment.cxx
+source\xls\sheetdatabuffer.cxx
+source\xls\sheetdatacontext.cxx
+source\xls\stylesbuffer.cxx
+source\xls\stylesfragment.cxx
+source\xls\tablebuffer.cxx
+source\xls\tablefragment.cxx
+source\xls\themebuffer.cxx
+source\xls\unitconverter.cxx
+source\xls\viewsettings.cxx
+source\xls\workbookfragment.cxx
+source\xls\workbookhelper.cxx
+source\xls\workbooksettings.cxx
+source\xls\worksheetbuffer.cxx
+source\xls\worksheetfragment.cxx
+source\xls\worksheethelper.cxx
+source\xls\worksheetsettings.cxx
+
+Header Files:
+inc\oox\dllapi.h
+inc\oox\core\binarycodec.hxx
+inc\oox\core\binaryfilterbase.hxx
+inc\oox\core\contexthandler.hxx
+inc\oox\core\contexthandler2.hxx
+inc\oox\core\fastparser.hxx
+inc\oox\core\fasttokenhandler.hxx
+inc\oox\core\filterbase.hxx
+inc\oox\core\filterdetect.hxx
+inc\oox\core\fragmenthandler.hxx
+inc\oox\core\fragmenthandler2.hxx
+inc\oox\core\recordparser.hxx
+inc\oox\core\relations.hxx
+inc\oox\core\relationshandler.hxx
+inc\oox\core\xmlfilterbase.hxx
+inc\oox\drawingml\clrscheme.hxx
+inc\oox\drawingml\clrschemecontext.hxx
+inc\oox\drawingml\color.hxx
+inc\oox\drawingml\colorchoicecontext.hxx
+inc\oox\drawingml\connectorshapecontext.hxx
+inc\oox\drawingml\customshapegeometry.hxx
+inc\oox\drawingml\customshapeproperties.hxx
+inc\oox\drawingml\drawingmltypes.hxx
+inc\oox\drawingml\embeddedwavaudiofile.hxx
+inc\oox\drawingml\fillproperties.hxx
+inc\oox\drawingml\fillpropertiesgroupcontext.hxx
+inc\oox\drawingml\graphicshapecontext.hxx
+inc\oox\drawingml\guidcontext.hxx
+inc\oox\drawingml\lineproperties.hxx
+inc\oox\drawingml\linepropertiescontext.hxx
+inc\oox\drawingml\objectdefaultcontext.hxx
+inc\oox\drawingml\shape.hxx
+inc\oox\drawingml\shapecontext.hxx
+inc\oox\drawingml\shapegroupcontext.hxx
+inc\oox\drawingml\shapepropertiescontext.hxx
+inc\oox\drawingml\shapepropertymap.hxx
+inc\oox\drawingml\shapestylecontext.hxx
+inc\oox\drawingml\spdefcontext.hxx
+inc\oox\drawingml\textbody.hxx
+inc\oox\drawingml\textbodycontext.hxx
+inc\oox\drawingml\textbodyproperties.hxx
+inc\oox\drawingml\textbodypropertiescontext.hxx
+inc\oox\drawingml\textcharacterproperties.hxx
+inc\oox\drawingml\textcharacterpropertiescontext.hxx
+inc\oox\drawingml\textfield.hxx
+inc\oox\drawingml\textfieldcontext.hxx
+inc\oox\drawingml\textfont.hxx
+inc\oox\drawingml\textliststyle.hxx
+inc\oox\drawingml\textliststylecontext.hxx
+inc\oox\drawingml\textparagraph.hxx
+inc\oox\drawingml\textparagraphproperties.hxx
+inc\oox\drawingml\textparagraphpropertiescontext.hxx
+inc\oox\drawingml\textrun.hxx
+inc\oox\drawingml\textspacing.hxx
+inc\oox\drawingml\theme.hxx
+inc\oox\drawingml\themeelementscontext.hxx
+inc\oox\drawingml\themefragmenthandler.hxx
+inc\oox\drawingml\transform2dcontext.hxx
+inc\oox\drawingml\chart\axiscontext.hxx
+inc\oox\drawingml\chart\axisconverter.hxx
+inc\oox\drawingml\chart\axismodel.hxx
+inc\oox\drawingml\chart\chartcontextbase.hxx
+inc\oox\drawingml\chart\chartconverter.hxx
+inc\oox\drawingml\chart\chartdrawingfragment.hxx
+inc\oox\drawingml\chart\chartspaceconverter.hxx
+inc\oox\drawingml\chart\chartspacefragment.hxx
+inc\oox\drawingml\chart\chartspacemodel.hxx
+inc\oox\drawingml\chart\converterbase.hxx
+inc\oox\drawingml\chart\datasourcecontext.hxx
+inc\oox\drawingml\chart\datasourceconverter.hxx
+inc\oox\drawingml\chart\datasourcemodel.hxx
+inc\oox\drawingml\chart\modelbase.hxx
+inc\oox\drawingml\chart\objectformatter.hxx
+inc\oox\drawingml\chart\plotareacontext.hxx
+inc\oox\drawingml\chart\plotareaconverter.hxx
+inc\oox\drawingml\chart\plotareamodel.hxx
+inc\oox\drawingml\chart\seriescontext.hxx
+inc\oox\drawingml\chart\seriesconverter.hxx
+inc\oox\drawingml\chart\seriesmodel.hxx
+inc\oox\drawingml\chart\titlecontext.hxx
+inc\oox\drawingml\chart\titleconverter.hxx
+inc\oox\drawingml\chart\titlemodel.hxx
+inc\oox\drawingml\chart\typegroupcontext.hxx
+inc\oox\drawingml\chart\typegroupconverter.hxx
+inc\oox\drawingml\chart\typegroupmodel.hxx
+inc\oox\drawingml\diagram\datamodelcontext.hxx
+inc\oox\drawingml\diagram\diagram.hxx
+inc\oox\drawingml\diagram\diagramfragmenthandler.hxx
+inc\oox\drawingml\diagram\diagramlayoutatoms.hxx
+inc\oox\drawingml\table\tablebackgroundstylecontext.hxx
+inc\oox\drawingml\table\tablecell.hxx
+inc\oox\drawingml\table\tablecellcontext.hxx
+inc\oox\drawingml\table\tablecontext.hxx
+inc\oox\drawingml\table\tablepartstylecontext.hxx
+inc\oox\drawingml\table\tableproperties.hxx
+inc\oox\drawingml\table\tablerow.hxx
+inc\oox\drawingml\table\tablerowcontext.hxx
+inc\oox\drawingml\table\tablestyle.hxx
+inc\oox\drawingml\table\tablestylecellstylecontext.hxx
+inc\oox\drawingml\table\tablestylecontext.hxx
+inc\oox\drawingml\table\tablestylelist.hxx
+inc\oox\drawingml\table\tablestylelistfragmenthandler.hxx
+inc\oox\drawingml\table\tablestylepart.hxx
+inc\oox\drawingml\table\tablestyletextstylecontext.hxx
+inc\oox\dump\biffdumper.hxx
+inc\oox\dump\dffdumper.hxx
+inc\oox\dump\dumperbase.hxx
+inc\oox\dump\oledumper.hxx
+inc\oox\dump\pptxdumper.hxx
+inc\oox\dump\xlsbdumper.hxx
+inc\oox\export\drawingml.hxx
+inc\oox\export\shapes.hxx
+inc\oox\export\utils.hxx
+inc\oox\export\vmlexport.hxx
+inc\oox\helper\attributelist.hxx
+inc\oox\helper\binaryinputstream.hxx
+inc\oox\helper\binaryoutputstream.hxx
+inc\oox\helper\binarystreambase.hxx
+inc\oox\helper\containerhelper.hxx
+inc\oox\helper\graphichelper.hxx
+inc\oox\helper\helper.hxx
+inc\oox\helper\modelobjecthelper.hxx
+inc\oox\helper\progressbar.hxx
+inc\oox\helper\propertymap.hxx
+inc\oox\helper\propertyset.hxx
+inc\oox\helper\refmap.hxx
+inc\oox\helper\refvector.hxx
+inc\oox\helper\storagebase.hxx
+inc\oox\helper\textinputstream.hxx
+inc\oox\helper\zipstorage.hxx
+inc\oox\ole\axbinaryreader.hxx
+inc\oox\ole\axcontrol.hxx
+inc\oox\ole\axcontrolfragment.hxx
+inc\oox\ole\olehelper.hxx
+inc\oox\ole\oleobjecthelper.hxx
+inc\oox\ole\olestorage.hxx
+inc\oox\ole\vbacontrol.hxx
+inc\oox\ole\vbahelper.hxx
+inc\oox\ole\vbainputstream.hxx
+inc\oox\ole\vbamodule.hxx
+inc\oox\ole\vbaproject.hxx
+inc\oox\ole\vbaprojectfilter.hxx
+inc\oox\ppt\animationspersist.hxx
+inc\oox\ppt\backgroundproperties.hxx
+inc\oox\ppt\headerfooter.hxx
+inc\oox\ppt\layoutfragmenthandler.hxx
+inc\oox\ppt\pptimport.hxx
+inc\oox\ppt\pptshape.hxx
+inc\oox\ppt\pptshapecontext.hxx
+inc\oox\ppt\pptshapegroupcontext.hxx
+inc\oox\ppt\pptshapepropertiescontext.hxx
+inc\oox\ppt\presentationfragmenthandler.hxx
+inc\oox\ppt\slidefragmenthandler.hxx
+inc\oox\ppt\slidemastertextstylescontext.hxx
+inc\oox\ppt\slidepersist.hxx
+inc\oox\ppt\slidetimingcontext.hxx
+inc\oox\ppt\slidetransition.hxx
+inc\oox\ppt\slidetransitioncontext.hxx
+inc\oox\ppt\soundactioncontext.hxx
+inc\oox\ppt\timenode.hxx
+inc\oox\ppt\timenodelistcontext.hxx
+inc\oox\token\namespacemap.hxx
+inc\oox\token\propertynames.hxx
+inc\oox\token\tokenmap.hxx
+inc\oox\vml\vmldrawing.hxx
+inc\oox\vml\vmldrawingfragment.hxx
+inc\oox\vml\vmlformatting.hxx
+inc\oox\vml\vmlinputstream.hxx
+inc\oox\vml\vmlshape.hxx
+inc\oox\vml\vmlshapecontainer.hxx
+inc\oox\vml\vmlshapecontext.hxx
+inc\oox\vml\vmltextbox.hxx
+inc\oox\vml\vmltextboxcontext.hxx
+inc\oox\xls\addressconverter.hxx
+inc\oox\xls\autofilterbuffer.hxx
+inc\oox\xls\autofiltercontext.hxx
+inc\oox\xls\biffcodec.hxx
+inc\oox\xls\biffdetector.hxx
+inc\oox\xls\biffhelper.hxx
+inc\oox\xls\biffinputstream.hxx
+inc\oox\xls\biffoutputstream.hxx
+inc\oox\xls\chartsheetfragment.hxx
+inc\oox\xls\commentsbuffer.hxx
+inc\oox\xls\commentsfragment.hxx
+inc\oox\xls\condformatbuffer.hxx
+inc\oox\xls\condformatcontext.hxx
+inc\oox\xls\connectionsbuffer.hxx
+inc\oox\xls\connectionsfragment.hxx
+inc\oox\xls\defnamesbuffer.hxx
+inc\oox\xls\drawingbase.hxx
+inc\oox\xls\drawingfragment.hxx
+inc\oox\xls\drawingmanager.hxx
+inc\oox\xls\excelchartconverter.hxx
+inc\oox\xls\excelfilter.hxx
+inc\oox\xls\excelhandlers.hxx
+inc\oox\xls\excelvbaproject.hxx
+inc\oox\xls\externallinkbuffer.hxx
+inc\oox\xls\externallinkfragment.hxx
+inc\oox\xls\formulabase.hxx
+inc\oox\xls\formulaparser.hxx
+inc\oox\xls\numberformatsbuffer.hxx
+inc\oox\xls\ooxformulaparser.hxx
+inc\oox\xls\pagesettings.hxx
+inc\oox\xls\pivotcachebuffer.hxx
+inc\oox\xls\pivotcachefragment.hxx
+inc\oox\xls\pivottablebuffer.hxx
+inc\oox\xls\pivottablefragment.hxx
+inc\oox\xls\querytablebuffer.hxx
+inc\oox\xls\querytablefragment.hxx
+inc\oox\xls\richstring.hxx
+inc\oox\xls\richstringcontext.hxx
+inc\oox\xls\scenariobuffer.hxx
+inc\oox\xls\scenariocontext.hxx
+inc\oox\xls\sharedstringsbuffer.hxx
+inc\oox\xls\sharedstringsfragment.hxx
+inc\oox\xls\sheetdatabuffer.hxx
+inc\oox\xls\sheetdatacontext.hxx
+inc\oox\xls\stylesbuffer.hxx
+inc\oox\xls\stylesfragment.hxx
+inc\oox\xls\tablebuffer.hxx
+inc\oox\xls\tablefragment.hxx
+inc\oox\xls\themebuffer.hxx
+inc\oox\xls\unitconverter.hxx
+inc\oox\xls\viewsettings.hxx
+inc\oox\xls\workbookfragment.hxx
+inc\oox\xls\workbookhelper.hxx
+inc\oox\xls\workbooksettings.hxx
+inc\oox\xls\worksheetbuffer.hxx
+inc\oox\xls\worksheetfragment.hxx
+inc\oox\xls\worksheethelper.hxx
+inc\oox\xls\worksheetsettings.hxx
+source\docprop\docprophandler.hxx
+source\docprop\ooxmldocpropimport.hxx
+source\drawingml\hyperlinkcontext.hxx
+source\drawingml\textspacingcontext.hxx
+source\drawingml\texttabstoplistcontext.hxx
+source\drawingml\diagram\diagramdefinitioncontext.hxx
+source\drawingml\diagram\layoutnodecontext.hxx
+source\ppt\animationtypes.hxx
+source\ppt\animvariantcontext.hxx
+source\ppt\buildlistcontext.hxx
+source\ppt\commonbehaviorcontext.hxx
+source\ppt\commontimenodecontext.hxx
+source\ppt\conditioncontext.hxx
+source\ppt\customshowlistcontext.hxx
+source\ppt\headerfootercontext.hxx
+source\ppt\pptfilterhelpers.hxx
+source\ppt\timeanimvaluecontext.hxx
+source\ppt\timetargetelementcontext.hxx
+source\shape\ShapeContextHandler.hxx
+source\shape\ShapeFilterBase.hxx
+source\token\namespaces.hxx.head
+source\token\namespaces.hxx.tail
+source\token\properties.hxx.head
+source\token\properties.hxx.tail
+source\token\tokens.hxx.head
+source\token\tokens.hxx.tail
+
+Patch Files:
+
+Makefiles:
+
+source\core\makefile.mk
+	PRJNAME=oox
+	TARGET=core
+	SLOFILES=
+	$(SLO)$/binarycodec.obj
+	$(SLO)$/binaryfilterbase.obj
+	$(SLO)$/contexthandler.obj
+	$(SLO)$/contexthandler2.obj
+	$(SLO)$/fastparser.obj
+	$(SLO)$/fasttokenhandler.obj
+	$(SLO)$/filterbase.obj
+	$(SLO)$/filterdetect.obj
+	$(SLO)$/fragmenthandler.obj
+	$(SLO)$/fragmenthandler2.obj
+	$(SLO)$/recordparser.obj
+	$(SLO)$/relations.obj
+	$(SLO)$/relationshandler.obj
+	$(SLO)$/services.obj
+	$(SLO)$/xmlfilterbase.obj
+
+source\docprop\makefile.mk
+	PRJNAME=oox
+	TARGET=docprop
+	SLOFILES=
+	$(SLO)$/ooxmldocpropimport.obj
+	$(SLO)$/docprophandler.obj
+
+source\drawingml\makefile.mk
+	PRJNAME=oox
+	TARGET=drawingml
+	SLOFILES=
+	$(SLO)$/clrscheme.obj
+	$(SLO)$/clrschemecontext.obj
+	$(SLO)$/color.obj
+	$(SLO)$/colorchoicecontext.obj
+	$(SLO)$/connectorshapecontext.obj
+	$(SLO)$/customshapegeometry.obj
+	$(SLO)$/customshapeproperties.obj
+	$(SLO)$/drawingmltypes.obj
+	$(SLO)$/embeddedwavaudiofile.obj
+	$(SLO)$/fillproperties.obj
+	$(SLO)$/fillpropertiesgroupcontext.obj
+	$(SLO)$/graphicshapecontext.obj
+	$(SLO)$/guidcontext.obj
+	$(SLO)$/hyperlinkcontext.obj
+	$(SLO)$/lineproperties.obj
+	$(SLO)$/linepropertiescontext.obj
+	$(SLO)$/objectdefaultcontext.obj
+	$(SLO)$/shape.obj
+	$(SLO)$/shapecontext.obj
+	$(SLO)$/shapegroupcontext.obj
+	$(SLO)$/shapepropertiescontext.obj
+	$(SLO)$/shapepropertymap.obj
+	$(SLO)$/shapestylecontext.obj
+	$(SLO)$/spdefcontext.obj
+	$(SLO)$/textbody.obj
+	$(SLO)$/textbodycontext.obj
+	$(SLO)$/textbodyproperties.obj
+	$(SLO)$/textbodypropertiescontext.obj
+	$(SLO)$/textcharacterproperties.obj
+	$(SLO)$/textcharacterpropertiescontext.obj
+	$(SLO)$/textfield.obj
+	$(SLO)$/textfieldcontext.obj
+	$(SLO)$/textfont.obj
+	$(SLO)$/textliststyle.obj
+	$(SLO)$/textliststylecontext.obj
+	$(SLO)$/textparagraph.obj
+	$(SLO)$/textparagraphproperties.obj
+	$(SLO)$/textparagraphpropertiescontext.obj
+	$(SLO)$/textrun.obj
+	$(SLO)$/textspacingcontext.obj
+	$(SLO)$/texttabstoplistcontext.obj
+	$(SLO)$/theme.obj
+	$(SLO)$/themeelementscontext.obj
+	$(SLO)$/themefragmenthandler.obj
+	$(SLO)$/transform2dcontext.obj
+
+source\drawingml\chart\makefile.mk
+	PRJNAME=oox
+	TARGET=chart
+	SLOFILES=
+	$(SLO)$/axiscontext.obj
+	$(SLO)$/axisconverter.obj
+	$(SLO)$/axismodel.obj
+	$(SLO)$/chartcontextbase.obj
+	$(SLO)$/chartconverter.obj
+	$(SLO)$/chartdrawingfragment.obj
+	$(SLO)$/chartspaceconverter.obj
+	$(SLO)$/chartspacefragment.obj
+	$(SLO)$/chartspacemodel.obj
+	$(SLO)$/converterbase.obj
+	$(SLO)$/datasourcecontext.obj
+	$(SLO)$/datasourceconverter.obj
+	$(SLO)$/datasourcemodel.obj
+	$(SLO)$/modelbase.obj
+	$(SLO)$/objectformatter.obj
+	$(SLO)$/plotareacontext.obj
+	$(SLO)$/plotareaconverter.obj
+	$(SLO)$/plotareamodel.obj
+	$(SLO)$/seriescontext.obj
+	$(SLO)$/seriesconverter.obj
+	$(SLO)$/seriesmodel.obj
+	$(SLO)$/titlecontext.obj
+	$(SLO)$/titleconverter.obj
+	$(SLO)$/titlemodel.obj
+	$(SLO)$/typegroupcontext.obj
+	$(SLO)$/typegroupconverter.obj
+	$(SLO)$/typegroupmodel.obj
+
+source\drawingml\diagram\makefile.mk
+	PRJNAME=oox
+	TARGET=diagram
+	SLOFILES=
+	$(SLO)$/diagram.obj
+	$(SLO)$/diagramfragmenthandler.obj
+	$(SLO)$/diagramdefinitioncontext.obj
+	$(SLO)$/diagramlayoutatoms.obj
+	$(SLO)$/datamodelcontext.obj
+	$(SLO)$/layoutnodecontext.obj
+
+source\drawingml\table\makefile.mk
+	PRJNAME=oox
+	TARGET=table
+	SLOFILES=
+	$(SLO)$/tablecontext.obj
+	$(SLO)$/tableproperties.obj
+	$(SLO)$/tablerow.obj
+	$(SLO)$/tablerowcontext.obj
+	$(SLO)$/tablecell.obj
+	$(SLO)$/tablecellcontext.obj
+	$(SLO)$/tablestylelist.obj
+	$(SLO)$/tablestylelistfragmenthandler.obj
+	$(SLO)$/tablestylecontext.obj
+	$(SLO)$/tablestyle.obj
+	$(SLO)$/tablebackgroundstylecontext.obj
+	$(SLO)$/tablepartstylecontext.obj
+	$(SLO)$/tablestyletextstylecontext.obj
+	$(SLO)$/tablestylecellstylecontext.obj
+	$(SLO)$/tablestylepart.obj
+
+source\dump\makefile.mk
+	PRJNAME=oox
+	TARGET=dump
+	SLOFILES=
+	$(SLO)$/biffdumper.obj
+	$(SLO)$/dffdumper.obj
+	$(SLO)$/dumperbase.obj
+	$(SLO)$/oledumper.obj
+	$(SLO)$/pptxdumper.obj
+	$(SLO)$/xlsbdumper.obj
+
+source\export\makefile.mk
+	PRJNAME=oox
+	TARGET=export
+	SLOFILES=
+	$(SLO)$/drawingml.obj
+	$(SLO)$/shapes.obj
+	$(SLO)$/vmlexport.obj
+	$(SLO)$/vmlexport-shape-types.obj
+
+source\helper\makefile.mk
+	PRJNAME=oox
+	TARGET=helper
+	SLOFILES=
+	$(SLO)$/attributelist.obj
+	$(SLO)$/binaryinputstream.obj
+	$(SLO)$/binaryoutputstream.obj
+	$(SLO)$/binarystreambase.obj
+	$(SLO)$/containerhelper.obj
+	$(SLO)$/graphichelper.obj
+	$(SLO)$/modelobjecthelper.obj
+	$(SLO)$/progressbar.obj
+	$(SLO)$/propertymap.obj
+	$(SLO)$/propertyset.obj
+	$(SLO)$/storagebase.obj
+	$(SLO)$/textinputstream.obj
+	$(SLO)$/zipstorage.obj
+
+source\ole\makefile.mk
+	PRJNAME=oox
+	TARGET=ole
+	SLOFILES=
+	$(SLO)$/axbinaryreader.obj
+	$(SLO)$/axcontrol.obj
+	$(SLO)$/axcontrolfragment.obj
+	$(SLO)$/olehelper.obj
+	$(SLO)$/oleobjecthelper.obj
+	$(SLO)$/olestorage.obj
+	$(SLO)$/vbacontrol.obj
+	$(SLO)$/vbahelper.obj
+	$(SLO)$/vbainputstream.obj
+	$(SLO)$/vbamodule.obj
+	$(SLO)$/vbaproject.obj
+	$(SLO)$/vbaprojectfilter.obj
+
+source\ppt\makefile.mk
+	PRJNAME=oox
+	TARGET=ppt
+	SLOFILES=
+	$(SLO)$/animationspersist.obj
+	$(SLO)$/animationtypes.obj
+	$(SLO)$/animvariantcontext.obj
+	$(SLO)$/backgroundproperties.obj
+	$(SLO)$/buildlistcontext.obj
+	$(SLO)$/commonbehaviorcontext.obj
+	$(SLO)$/commontimenodecontext.obj
+	$(SLO)$/conditioncontext.obj
+	$(SLO)$/customshowlistcontext.obj
+	$(SLO)$/headerfootercontext.obj
+	$(SLO)$/layoutfragmenthandler.obj
+	$(SLO)$/pptfilterhelpers.obj
+	$(SLO)$/pptimport.obj
+	$(SLO)$/pptshape.obj
+	$(SLO)$/pptshapecontext.obj
+	$(SLO)$/pptshapegroupcontext.obj
+	$(SLO)$/pptshapepropertiescontext.obj
+	$(SLO)$/presentationfragmenthandler.obj
+	$(SLO)$/slidefragmenthandler.obj
+	$(SLO)$/slidemastertextstylescontext.obj
+	$(SLO)$/slidepersist.obj
+	$(SLO)$/slidetimingcontext.obj
+	$(SLO)$/slidetransition.obj
+	$(SLO)$/slidetransitioncontext.obj
+	$(SLO)$/soundactioncontext.obj
+	$(SLO)$/timeanimvaluecontext.obj
+	$(SLO)$/timenode.obj
+	$(SLO)$/timenodelistcontext.obj
+	$(SLO)$/timetargetelementcontext.obj
+
+source\shape\makefile.mk
+	PRJNAME=oox
+	TARGET=shape
+	SLOFILES=
+	$(SLO)$/ShapeContextHandler.obj
+	$(SLO)$/ShapeFilterBase.obj
+
+source\token\makefile.mk
+	PRJNAME=oox
+	TARGET=token
+	SLOFILES=
+	$(SLO)$/namespacemap.obj
+	$(SLO)$/propertynames.obj
+	$(SLO)$/tokenmap.obj
+
+source\vml\makefile.mk
+	PRJNAME=oox
+	TARGET=vml
+	SLOFILES=
+	$(SLO)$/vmldrawing.obj
+	$(SLO)$/vmldrawingfragment.obj
+	$(SLO)$/vmlformatting.obj
+	$(SLO)$/vmlinputstream.obj
+	$(SLO)$/vmlshape.obj
+	$(SLO)$/vmlshapecontainer.obj
+	$(SLO)$/vmlshapecontext.obj
+	$(SLO)$/vmltextbox.obj
+	$(SLO)$/vmltextboxcontext.obj
+
+source\xls\makefile.mk
+	PRJNAME=oox
+	TARGET=xls
+	SLOFILES=
+	$(SLO)$/addressconverter.obj
+	$(SLO)$/autofilterbuffer.obj
+	$(SLO)$/autofiltercontext.obj
+	$(SLO)$/biffcodec.obj
+	$(SLO)$/biffdetector.obj
+	$(SLO)$/biffhelper.obj
+	$(SLO)$/biffinputstream.obj
+	$(SLO)$/biffoutputstream.obj
+	$(SLO)$/chartsheetfragment.obj
+	$(SLO)$/commentsbuffer.obj
+	$(SLO)$/commentsfragment.obj
+	$(SLO)$/condformatbuffer.obj
+	$(SLO)$/condformatcontext.obj
+	$(SLO)$/connectionsbuffer.obj
+	$(SLO)$/connectionsfragment.obj
+	$(SLO)$/defnamesbuffer.obj
+	$(SLO)$/drawingbase.obj
+	$(SLO)$/drawingfragment.obj
+	$(SLO)$/drawingmanager.obj
+	$(SLO)$/excelchartconverter.obj
+	$(SLO)$/excelfilter.obj
+	$(SLO)$/excelhandlers.obj
+	$(SLO)$/excelvbaproject.obj
+	$(SLO)$/externallinkbuffer.obj
+	$(SLO)$/externallinkfragment.obj
+	$(SLO)$/formulabase.obj
+	$(SLO)$/formulaparser.obj
+	$(SLO)$/numberformatsbuffer.obj
+	$(SLO)$/ooxformulaparser.obj
+	$(SLO)$/pagesettings.obj
+	$(SLO)$/pivotcachebuffer.obj
+	$(SLO)$/pivotcachefragment.obj
+	$(SLO)$/pivottablebuffer.obj
+	$(SLO)$/pivottablefragment.obj
+	$(SLO)$/querytablebuffer.obj
+	$(SLO)$/querytablefragment.obj
+	$(SLO)$/richstring.obj
+	$(SLO)$/richstringcontext.obj
+	$(SLO)$/scenariobuffer.obj
+	$(SLO)$/scenariocontext.obj
+	$(SLO)$/sharedstringsbuffer.obj
+	$(SLO)$/sharedstringsfragment.obj
+	$(SLO)$/sheetdatabuffer.obj
+	$(SLO)$/sheetdatacontext.obj
+	$(SLO)$/stylesbuffer.obj
+	$(SLO)$/stylesfragment.obj
+	$(SLO)$/tablebuffer.obj
+	$(SLO)$/tablefragment.obj
+	$(SLO)$/themebuffer.obj
+	$(SLO)$/unitconverter.obj
+	$(SLO)$/viewsettings.obj
+	$(SLO)$/workbookfragment.obj
+	$(SLO)$/workbookhelper.obj
+	$(SLO)$/workbooksettings.obj
+	$(SLO)$/worksheetbuffer.obj
+	$(SLO)$/worksheetfragment.obj
+	$(SLO)$/worksheethelper.obj
+	$(SLO)$/worksheetsettings.obj
+
+util\makefile.mk
+	PRJNAME=oox
+	TARGET=oox
+
+util\makefile.pmk

@@ -1,0 +1,47 @@
+Name:
+mysqlc
+
+Dependencies:
+solenv offuh cppu soltools cppuhelper readlicense_oo NULL
+
+Build Rules:
+# Extensions
+
+..\%__SRC%\bin\*.oxt %_DEST%\bin%_EXT%\*.oxt
+
+
+Source Files:
+source\mysqlc_connection.cxx
+source\mysqlc_databasemetadata.cxx
+source\mysqlc_driver.cxx
+source\mysqlc_general.cxx
+source\mysqlc_preparedstatement.cxx
+source\mysqlc_propertyids.cxx
+source\mysqlc_resultset.cxx
+source\mysqlc_resultsetmetadata.cxx
+source\mysqlc_services.cxx
+source\mysqlc_statement.cxx
+source\mysqlc_types.cxx
+
+Header Files:
+source\mysqlc_connection.hxx
+source\mysqlc_databasemetadata.hxx
+source\mysqlc_driver.hxx
+source\mysqlc_general.hxx
+source\mysqlc_preparedstatement.hxx
+source\mysqlc_propertyids.hxx
+source\mysqlc_resultset.hxx
+source\mysqlc_resultsetmetadata.hxx
+source\mysqlc_statement.hxx
+source\mysqlc_subcomponent.hxx
+source\mysqlc_types.hxx
+
+Patch Files:
+
+Makefiles:
+
+version.mk
+
+source\makefile.mk
+	PRJNAME=mysqlc
+	TARGET=mysqlc

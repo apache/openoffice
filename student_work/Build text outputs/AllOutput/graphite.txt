@@ -1,0 +1,534 @@
+graphite
+=============
+
+Entering /cygdrive/c/steve/testarea/main/graphite
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/silgraphite-2.3.1 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/silgraphite-2.3.1 ./wntmsci12.pro/misc/build/silgraphite-2.3.1_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/silgraphite-2.3.1_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/d35724900f6a4105550293686688bbb3-silgraphite-2.3.1.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_so_graphite
+silgraphite-2.3.1/
+silgraphite-2.3.1/aclocal.m4
+silgraphite-2.3.1/COPYING
+silgraphite-2.3.1/build_d.bat
+silgraphite-2.3.1/Makefile.in
+silgraphite-2.3.1/configure.ac
+silgraphite-2.3.1/engine/
+silgraphite-2.3.1/engine/aclocal.m4
+silgraphite-2.3.1/engine/COPYING
+silgraphite-2.3.1/engine/include/
+silgraphite-2.3.1/engine/include/graphite/
+silgraphite-2.3.1/engine/include/graphite/Segment.h
+silgraphite-2.3.1/engine/include/graphite/SegmentAux.h
+silgraphite-2.3.1/engine/include/graphite/SegmentPainter.h
+silgraphite-2.3.1/engine/include/graphite/HashMap.h
+silgraphite-2.3.1/engine/include/graphite/GraphiteProcess.h
+silgraphite-2.3.1/engine/include/graphite/GrStructs.h
+silgraphite-2.3.1/engine/include/graphite/GrWrappers.h
+silgraphite-2.3.1/engine/include/graphite/GrDebug.h
+silgraphite-2.3.1/engine/include/graphite/GrMstypes.h
+silgraphite-2.3.1/engine/include/graphite/IGrEngine.h
+silgraphite-2.3.1/engine/include/graphite/GrConstants.h
+silgraphite-2.3.1/engine/include/graphite/GenericResource.h
+silgraphite-2.3.1/engine/include/graphite/GrCommon.h
+silgraphite-2.3.1/engine/include/graphite/ITextSource.h
+silgraphite-2.3.1/engine/include/graphite/GrData.h
+silgraphite-2.3.1/engine/include/graphite/GrExt.h
+silgraphite-2.3.1/engine/include/graphite/FileFont.h
+silgraphite-2.3.1/engine/include/graphite/IGraphiteProcess.h
+silgraphite-2.3.1/engine/include/graphite/BinTree.h
+silgraphite-2.3.1/engine/include/graphite/MemoryUsage.h
+silgraphite-2.3.1/engine/include/graphite/GrFeature.h
+silgraphite-2.3.1/engine/include/graphite/GrPlatform.h
+silgraphite-2.3.1/engine/include/graphite/IGrJustifier.h
+silgraphite-2.3.1/engine/include/graphite/GrClient.h
+silgraphite-2.3.1/engine/include/graphite/Font.h
+silgraphite-2.3.1/engine/include/graphite/GrResult.h
+silgraphite-2.3.1/engine/include/graphite/GrAppData.h
+silgraphite-2.3.1/engine/include/Makefile.am
+silgraphite-2.3.1/engine/build_d.bat
+silgraphite-2.3.1/engine/Makefile.in
+silgraphite-2.3.1/engine/TODO
+silgraphite-2.3.1/engine/makefile.vc8
+silgraphite-2.3.1/engine/silgraphite.pc.in
+silgraphite-2.3.1/engine/configure.ac
+silgraphite-2.3.1/engine/src/
+silgraphite-2.3.1/engine/src/generic/
+silgraphite-2.3.1/engine/src/generic/HashMap.h
+silgraphite-2.3.1/engine/src/generic/GenericResource.h
+silgraphite-2.3.1/engine/src/generic/BinTree_i.cpp
+silgraphite-2.3.1/engine/src/generic/Debug.cpp
+silgraphite-2.3.1/engine/src/generic/BinTree.h
+silgraphite-2.3.1/engine/src/generic/Makefile.am
+silgraphite-2.3.1/engine/src/generic/Util.cpp
+silgraphite-2.3.1/engine/src/generic/HashMap_i.cpp
+silgraphite-2.3.1/engine/src/Makefile.in
+silgraphite-2.3.1/engine/src/painter/
+silgraphite-2.3.1/engine/src/painter/SegmentPainter.cpp
+silgraphite-2.3.1/engine/src/painter/Makefile.am
+silgraphite-2.3.1/engine/src/segment/
+silgraphite-2.3.1/engine/src/segment/MemoryUsage.cpp
+silgraphite-2.3.1/engine/src/segment/GrPass.h
+silgraphite-2.3.1/engine/src/segment/GrFSM.cpp
+silgraphite-2.3.1/engine/src/segment/GrSlotStream.cpp
+silgraphite-2.3.1/engine/src/segment/GrSlotStream.h
+silgraphite-2.3.1/engine/src/segment/FontFace.cpp
+silgraphite-2.3.1/engine/src/segment/GrFeature.cpp
+silgraphite-2.3.1/engine/src/segment/GrGlyphTable.h
+silgraphite-2.3.1/engine/src/segment/FontFace.h
+silgraphite-2.3.1/engine/src/segment/GrCharStream.h
+silgraphite-2.3.1/engine/src/segment/GrSlotState.cpp
+silgraphite-2.3.1/engine/src/segment/FontCache.cpp
+silgraphite-2.3.1/engine/src/segment/SegmentAux.cpp
+silgraphite-2.3.1/engine/src/segment/Segment.cpp
+silgraphite-2.3.1/engine/src/segment/FontCache.h
+silgraphite-2.3.1/engine/src/segment/GrPseudoMap.h
+silgraphite-2.3.1/engine/src/segment/GrCharStream.cpp
+silgraphite-2.3.1/engine/src/segment/GrSlotState.h
+silgraphite-2.3.1/engine/src/segment/GrTableManager.cpp
+silgraphite-2.3.1/engine/src/segment/GrFSM.h
+silgraphite-2.3.1/engine/src/segment/GrPassActionCode.cpp
+silgraphite-2.3.1/engine/src/segment/GrPass.cpp
+silgraphite-2.3.1/engine/src/segment/GrEngine.cpp
+silgraphite-2.3.1/engine/src/segment/FileInput.h
+silgraphite-2.3.1/engine/src/segment/resource.h
+silgraphite-2.3.1/engine/src/segment/TestFSM.cpp
+silgraphite-2.3.1/engine/src/segment/GrFeatureValues.h
+silgraphite-2.3.1/engine/src/segment/GrGlyphTable.cpp
+silgraphite-2.3.1/engine/src/segment/FileInput.cpp
+silgraphite-2.3.1/engine/src/segment/Main.h
+silgraphite-2.3.1/engine/src/segment/Makefile.am
+silgraphite-2.3.1/engine/src/segment/TestPasses.cpp
+silgraphite-2.3.1/engine/src/segment/GrClassTable.cpp
+silgraphite-2.3.1/engine/src/segment/GrEngine.h
+silgraphite-2.3.1/engine/src/segment/GrClassTable.h
+silgraphite-2.3.1/engine/src/segment/Platform.cpp
+silgraphite-2.3.1/engine/src/segment/GrTableManager.h
+silgraphite-2.3.1/engine/src/segment/TransductionLog.cpp
+silgraphite-2.3.1/engine/src/font/
+silgraphite-2.3.1/engine/src/font/Font.cpp
+silgraphite-2.3.1/engine/src/font/TtfUtil.h
+silgraphite-2.3.1/engine/src/font/FontTableCache.h
+silgraphite-2.3.1/engine/src/font/TtfTypes.h
+silgraphite-2.3.1/engine/src/font/Makefile.am
+silgraphite-2.3.1/engine/src/font/FileFont.cpp
+silgraphite-2.3.1/engine/src/font/TtfUtil.cpp
+silgraphite-2.3.1/engine/src/Makefile.am
+silgraphite-2.3.1/engine/test/
+silgraphite-2.3.1/engine/test/fonterrors/
+silgraphite-2.3.1/engine/test/fonterrors/fonterrors.gdl
+silgraphite-2.3.1/engine/test/fonterrors/errTooManyClasses.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errSubsUnderflow.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errGarbageFsm.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errBadVersion.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errBadStackMachine.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errBadGloc.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errSilfVerMismatch.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errGarbageSilf.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errBadGloc2.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errGarbageGlat.ttf
+silgraphite-2.3.1/engine/test/fonterrors/readme.txt
+silgraphite-2.3.1/engine/test/fonterrors/errBadPass.ttf
+silgraphite-2.3.1/engine/test/fonterrors/errBadSubs.ttf
+silgraphite-2.3.1/engine/test/Makefile.in
+silgraphite-2.3.1/engine/test/ProfileHarness/
+silgraphite-2.3.1/engine/test/ProfileHarness/GrUtfTextSrc.cpp
+silgraphite-2.3.1/engine/test/ProfileHarness/Makefile.in
+silgraphite-2.3.1/engine/test/ProfileHarness/ProfileHarness.cpp
+silgraphite-2.3.1/engine/test/ProfileHarness/GrUtfTextSrc.h
+silgraphite-2.3.1/engine/test/ProfileHarness/Makefile.am
+silgraphite-2.3.1/engine/test/RegressionTest/
+silgraphite-2.3.1/engine/test/RegressionTest/RtTextSrc.h
+silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.cpp
+silgraphite-2.3.1/engine/test/RegressionTest/xline.gdl
+silgraphite-2.3.1/engine/test/RegressionTest/Makefile.in
+silgraphite-2.3.1/engine/test/RegressionTest/stdafx.h
+silgraphite-2.3.1/engine/test/RegressionTest/burmeseText.wpx
+silgraphite-2.3.1/engine/test/RegressionTest/TestCase.cpp
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_xline.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/TestCase.h
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_badVersion.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/makedebug.bat
+silgraphite-2.3.1/engine/test/RegressionTest/main.h
+silgraphite-2.3.1/engine/test/RegressionTest/stdafx.cpp
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_burmese.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_arabic.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_taiviet.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/readme.txt
+silgraphite-2.3.1/engine/test/RegressionTest/GrJustifier.cpp
+silgraphite-2.3.1/engine/test/RegressionTest/Makefile.vc
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_badCmap.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/grtest_roman.ttf
+silgraphite-2.3.1/engine/test/RegressionTest/Makefile.am
+silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.h
+silgraphite-2.3.1/engine/test/RegressionTest/GrJustifier.h
+silgraphite-2.3.1/engine/test/RegressionTest/RegressionTest.cpp
+silgraphite-2.3.1/engine/test/RegressionTest/xlineText.wpx
+silgraphite-2.3.1/engine/test/RegressionTest/romanText.wpx
+silgraphite-2.3.1/engine/test/Makefile.am
+silgraphite-2.3.1/engine/uninstalled-top.pc.in
+silgraphite-2.3.1/engine/doc/
+silgraphite-2.3.1/engine/doc/V2_Engine_Interface.odt
+silgraphite-2.3.1/engine/doc/V2_TextSource_Interface.odt
+silgraphite-2.3.1/engine/doc/hungarian.txt
+silgraphite-2.3.1/engine/doc/V2_Segment_Interface.odt
+silgraphite-2.3.1/engine/doc/GTF_3_0.odt
+silgraphite-2.3.1/engine/doc/policy.txt
+silgraphite-2.3.1/engine/license/
+silgraphite-2.3.1/engine/license/License_CPLv05.txt
+silgraphite-2.3.1/engine/license/License_GPLv2.txt
+silgraphite-2.3.1/engine/license/License_LGPLv21.txt
+silgraphite-2.3.1/engine/license/LICENSING.txt
+silgraphite-2.3.1/engine/config/
+silgraphite-2.3.1/engine/config/missing
+silgraphite-2.3.1/engine/config/ltmain.sh
+silgraphite-2.3.1/engine/config/depcomp
+silgraphite-2.3.1/engine/config/config.sub
+silgraphite-2.3.1/engine/config/install-sh
+silgraphite-2.3.1/engine/config/config.guess
+silgraphite-2.3.1/engine/build.bat
+silgraphite-2.3.1/engine/makefile.vc7
+silgraphite-2.3.1/engine/configure
+silgraphite-2.3.1/engine/Makefile.am
+silgraphite-2.3.1/engine/installed-top.pc.in
+silgraphite-2.3.1/engine/README
+silgraphite-2.3.1/engine/INSTALL
+silgraphite-2.3.1/examples/
+silgraphite-2.3.1/examples/SimpleEdit/
+silgraphite-2.3.1/examples/SimpleEdit/SimpleEdit.ico
+silgraphite-2.3.1/examples/SimpleEdit/small.ico
+silgraphite-2.3.1/examples/SimpleEdit/makefile
+silgraphite-2.3.1/examples/SimpleEdit/SimpleEdit.cpp
+silgraphite-2.3.1/examples/SimpleEdit/StdAfx.h
+silgraphite-2.3.1/examples/SimpleEdit/resource.h
+silgraphite-2.3.1/examples/SimpleEdit/readme.txt
+silgraphite-2.3.1/examples/SimpleEdit/SimpleEdit.rc
+silgraphite-2.3.1/examples/JustTestApp/
+silgraphite-2.3.1/examples/JustTestApp/small.ico
+silgraphite-2.3.1/examples/JustTestApp/makefile
+silgraphite-2.3.1/examples/JustTestApp/JustTestApp.ico
+silgraphite-2.3.1/examples/JustTestApp/StdAfx.h
+silgraphite-2.3.1/examples/JustTestApp/JustTestApp.rc
+silgraphite-2.3.1/examples/JustTestApp/resource.h
+silgraphite-2.3.1/examples/JustTestApp/readme.txt
+silgraphite-2.3.1/examples/JustTestApp/JtaTextSrc.h
+silgraphite-2.3.1/examples/JustTestApp/JustTestApp.cpp
+silgraphite-2.3.1/examples/applib/
+silgraphite-2.3.1/examples/applib/SimpleTextSrc.cpp
+silgraphite-2.3.1/examples/applib/readme.txt
+silgraphite-2.3.1/examples/applib/GrJustifier.cpp
+silgraphite-2.3.1/examples/applib/SimpleTextSrc.h
+silgraphite-2.3.1/examples/applib/GrJustifier.h
+silgraphite-2.3.1/examples/HelloWorld/
+silgraphite-2.3.1/examples/HelloWorld/small.ico
+silgraphite-2.3.1/examples/HelloWorld/HelloWorld.rc
+silgraphite-2.3.1/examples/HelloWorld/HelloWorld.ico
+silgraphite-2.3.1/examples/HelloWorld/HelloWorld.cpp
+silgraphite-2.3.1/examples/HelloWorld/HwTextSrc.h
+silgraphite-2.3.1/examples/HelloWorld/makefile
+silgraphite-2.3.1/examples/HelloWorld/StdAfx.h
+silgraphite-2.3.1/examples/HelloWorld/HwTextSrc.cpp
+silgraphite-2.3.1/examples/HelloWorld/resource.h
+silgraphite-2.3.1/examples/HelloWorld/readme.txt
+silgraphite-2.3.1/license/
+silgraphite-2.3.1/license/License_CPLv05.txt
+silgraphite-2.3.1/license/License_GPLv2.txt
+silgraphite-2.3.1/license/License_LGPLv21.txt
+silgraphite-2.3.1/license/LICENSING.txt
+silgraphite-2.3.1/wrappers/
+silgraphite-2.3.1/wrappers/aclocal.m4
+silgraphite-2.3.1/wrappers/xft/
+silgraphite-2.3.1/wrappers/xft/aclocal.m4
+silgraphite-2.3.1/wrappers/xft/COPYING
+silgraphite-2.3.1/wrappers/xft/XftGrFont.cpp
+silgraphite-2.3.1/wrappers/xft/graphite/
+silgraphite-2.3.1/wrappers/xft/graphite/XftGrFont.h
+silgraphite-2.3.1/wrappers/xft/Makefile.in
+silgraphite-2.3.1/wrappers/xft/configure.ac
+silgraphite-2.3.1/wrappers/xft/silgraphite-xft.pc.in
+silgraphite-2.3.1/wrappers/xft/uninstalled-top.pc.in
+silgraphite-2.3.1/wrappers/xft/config/
+silgraphite-2.3.1/wrappers/xft/config/missing
+silgraphite-2.3.1/wrappers/xft/config/ltmain.sh
+silgraphite-2.3.1/wrappers/xft/config/depcomp
+silgraphite-2.3.1/wrappers/xft/config/config.sub
+silgraphite-2.3.1/wrappers/xft/config/install-sh
+silgraphite-2.3.1/wrappers/xft/config/config.guess
+silgraphite-2.3.1/wrappers/xft/configure
+silgraphite-2.3.1/wrappers/xft/Makefile.am
+silgraphite-2.3.1/wrappers/xft/installed-top.pc.in
+silgraphite-2.3.1/wrappers/xft/README
+silgraphite-2.3.1/wrappers/Makefile.in
+silgraphite-2.3.1/wrappers/configure.ac
+silgraphite-2.3.1/wrappers/pangographite/
+silgraphite-2.3.1/wrappers/pangographite/silgraphite-fc.c
+silgraphite-2.3.1/wrappers/pangographite/aclocal.m4
+silgraphite-2.3.1/wrappers/pangographite/PangoTextSrc.h
+silgraphite-2.3.1/wrappers/pangographite/PangoGrFont.h
+silgraphite-2.3.1/wrappers/pangographite/COPYING
+silgraphite-2.3.1/wrappers/pangographite/pangographite.h
+silgraphite-2.3.1/wrappers/pangographite/PangoGrFont.cpp
+silgraphite-2.3.1/wrappers/pangographite/graphite/
+silgraphite-2.3.1/wrappers/pangographite/graphite/Makefile.am
+silgraphite-2.3.1/wrappers/pangographite/Makefile.in
+silgraphite-2.3.1/wrappers/pangographite/PangoTextSrc.cpp
+silgraphite-2.3.1/wrappers/pangographite/configure.ac
+silgraphite-2.3.1/wrappers/pangographite/FreetypeFont.h
+silgraphite-2.3.1/wrappers/pangographite/pango.txt
+silgraphite-2.3.1/wrappers/pangographite/pangographite.cpp
+silgraphite-2.3.1/wrappers/pangographite/silgraphite-break.c
+silgraphite-2.3.1/wrappers/pangographite/graphite-module.c
+silgraphite-2.3.1/wrappers/pangographite/graphitecache.h
+silgraphite-2.3.1/wrappers/pangographite/testtext.c
+silgraphite-2.3.1/wrappers/pangographite/pango.diff
+silgraphite-2.3.1/wrappers/pangographite/config/
+silgraphite-2.3.1/wrappers/pangographite/config/missing
+silgraphite-2.3.1/wrappers/pangographite/config/ltmain.sh
+silgraphite-2.3.1/wrappers/pangographite/config/depcomp
+silgraphite-2.3.1/wrappers/pangographite/config/config.sub
+silgraphite-2.3.1/wrappers/pangographite/config/install-sh
+silgraphite-2.3.1/wrappers/pangographite/config/config.guess
+silgraphite-2.3.1/wrappers/pangographite/autogen.sh
+silgraphite-2.3.1/wrappers/pangographite/TtfUtil.h
+silgraphite-2.3.1/wrappers/pangographite/FontTableCache.h
+silgraphite-2.3.1/wrappers/pangographite/testbuffer.c
+silgraphite-2.3.1/wrappers/pangographite/prop-editor.h
+silgraphite-2.3.1/wrappers/pangographite/XftGrFont.h
+silgraphite-2.3.1/wrappers/pangographite/querymodules.c
+silgraphite-2.3.1/wrappers/pangographite/configure
+silgraphite-2.3.1/wrappers/pangographite/prop-editor.c
+silgraphite-2.3.1/wrappers/pangographite/Makefile.am
+silgraphite-2.3.1/wrappers/pangographite/graphitecache.cpp
+silgraphite-2.3.1/wrappers/pangographite/FreetypeFont.cpp
+silgraphite-2.3.1/wrappers/pangographite/README
+silgraphite-2.3.1/wrappers/config/
+silgraphite-2.3.1/wrappers/config/missing
+silgraphite-2.3.1/wrappers/config/install-sh
+silgraphite-2.3.1/wrappers/configure
+silgraphite-2.3.1/wrappers/Makefile.am
+silgraphite-2.3.1/wrappers/freetype/
+silgraphite-2.3.1/wrappers/freetype/aclocal.m4
+silgraphite-2.3.1/wrappers/freetype/COPYING
+silgraphite-2.3.1/wrappers/freetype/graphite/
+silgraphite-2.3.1/wrappers/freetype/graphite/FreetypeFont.h
+silgraphite-2.3.1/wrappers/freetype/silgraphite-ft.pc.in
+silgraphite-2.3.1/wrappers/freetype/Makefile.in
+silgraphite-2.3.1/wrappers/freetype/configure.ac
+silgraphite-2.3.1/wrappers/freetype/uninstalled-top.pc.in
+silgraphite-2.3.1/wrappers/freetype/config/
+silgraphite-2.3.1/wrappers/freetype/config/missing
+silgraphite-2.3.1/wrappers/freetype/config/ltmain.sh
+silgraphite-2.3.1/wrappers/freetype/config/depcomp
+silgraphite-2.3.1/wrappers/freetype/config/config.sub
+silgraphite-2.3.1/wrappers/freetype/config/install-sh
+silgraphite-2.3.1/wrappers/freetype/config/config.guess
+silgraphite-2.3.1/wrappers/freetype/configure
+silgraphite-2.3.1/wrappers/freetype/Makefile.am
+silgraphite-2.3.1/wrappers/freetype/FreetypeFont.cpp
+silgraphite-2.3.1/wrappers/freetype/installed-top.pc.in
+silgraphite-2.3.1/wrappers/freetype/README
+silgraphite-2.3.1/wrappers/win32/
+silgraphite-2.3.1/wrappers/win32/win32_dll.cpp
+silgraphite-2.3.1/wrappers/win32/WinFont.h
+silgraphite-2.3.1/wrappers/win32/WinSegmentPainter.h
+silgraphite-2.3.1/wrappers/win32/WinSegmentPainter.cpp
+silgraphite-2.3.1/wrappers/win32/WinFont.cpp
+silgraphite-2.3.1/wrappers/README
+silgraphite-2.3.1/config/
+silgraphite-2.3.1/config/missing
+silgraphite-2.3.1/config/install-sh
+silgraphite-2.3.1/build.bat
+silgraphite-2.3.1/configure
+silgraphite-2.3.1/Makefile.am
+silgraphite-2.3.1/README
+silgraphite-2.3.1/INSTALL
+make writeable...
+C:/cygwin/bin/perl C:/steve/TestArea/main/solenv/bin/leconvert.pl unix ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/makefile.vc8 ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/test/RegressionTest/RtTextSrc.h && C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/so_graphite_convert_unx_flag
+cd ./wntmsci12.pro/misc/build && cat ../../..//graphite-2.3.1.patch ../../..//graphite-2.3.1_debug.patch ../../..//graphite-2.3.1_stlportemu.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_so_graphite
+patching file silgraphite-2.3.1/engine/include/graphite/GrCommon.h
+patching file silgraphite-2.3.1/engine/include/graphite/GrMstypes.h
+patching file silgraphite-2.3.1/engine/makefile.vc7
+patching file silgraphite-2.3.1/engine/makefile.vc8
+patching file silgraphite-2.3.1/engine/src/font/FileFont.cpp
+patching file silgraphite-2.3.1/engine/src/font/Font.cpp
+patching file silgraphite-2.3.1/engine/src/font/TtfUtil.cpp
+patching file silgraphite-2.3.1/engine/src/painter/SegmentPainter.cpp
+patching file silgraphite-2.3.1/engine/src/segment/FileInput.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrCharStream.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrClassTable.h
+patching file silgraphite-2.3.1/engine/src/segment/GrEngine.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrFSM.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrFeature.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrPass.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrPass.h
+patching file silgraphite-2.3.1/engine/src/segment/GrPassActionCode.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrSlotState.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrSlotState.h
+patching file silgraphite-2.3.1/engine/src/segment/GrSlotStream.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrSlotStream.h
+patching file silgraphite-2.3.1/engine/src/segment/GrTableManager.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrTableManager.h
+patching file silgraphite-2.3.1/engine/src/segment/Platform.cpp
+patching file silgraphite-2.3.1/engine/src/segment/Segment.cpp
+patching file silgraphite-2.3.1/engine/src/segment/TransductionLog.cpp
+patching file silgraphite-2.3.1/engine/test/ProfileHarness/GrUtfTextSrc.cpp
+patching file silgraphite-2.3.1/engine/test/ProfileHarness/GrUtfTextSrc.h
+patching file silgraphite-2.3.1/engine/test/ProfileHarness/ProfileHarness.cpp
+patching file silgraphite-2.3.1/engine/test/RegressionTest/GrJustifier.cpp
+patching file silgraphite-2.3.1/engine/test/RegressionTest/RegressionTest.cpp
+patching file silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.cpp
+patching file silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.h
+patching file silgraphite-2.3.1/wrappers/win32/WinFont.cpp
+patching file silgraphite-2.3.1/wrappers/win32/WinFont.h
+patching file silgraphite-2.3.1/engine/test/RegressionTest/RtTextSrc.h
+patching file silgraphite-2.3.1/engine/test/RegressionTest/GrJustifier.cpp
+patching file silgraphite-2.3.1/engine/test/RegressionTest/GrJustifier.h
+patching file silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.h
+patching file silgraphite-2.3.1/engine/test/RegressionTest/SimpleTextSrc.cpp
+patching file silgraphite-2.3.1/engine/src/segment/MemoryUsage.cpp
+patching file silgraphite-2.3.1/engine/src/segment/GrSlotState.h
+patching file silgraphite-2.3.1/engine/src/segment/Segment.cpp
+patching file silgraphite-2.3.1/wrappers/win32/win32_dll.cpp
+patching file silgraphite-2.3.1/engine/include/graphite/GrFeature.h
+patching file silgraphite-2.3.1/engine/src/segment/SegmentAux.cpp
+patching file silgraphite-2.3.1/wrappers/win32/WinFont.cpp
+patching file silgraphite-2.3.1/wrappers/win32/WinFont.h
+patching file silgraphite-2.3.1/engine/include/graphite/GrCommon.h
+C:/cygwin/bin/perl C:/steve/TestArea/main/solenv/bin/leconvert.pl dos  ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/makefile.vc8 ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/test/RegressionTest/RtTextSrc.h && C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/so_graphite_convert_dos_flag
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_so_graphite
+mkdir.exe ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine
+cd ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine && nmake VERBOSE=1 "CFLAGS4MSC=/Zm500 /Zc:wchar_t- /GR /GS /c /nologo /Gs  /Gy /Ob1 /Oxs /Oy- /DENABLE_LAYOUT=0 /DENABLE_LAYOUT_EXPERIMENTAL=0 /Gd  /O2 /Wall /wd4061 /wd4127 /wd4191 /wd4217 /wd4250 /wd4251 /wd4275     /wd4290 /wd4294 /wd4355 /wd4511 /wd4512 /wd4514 /wd4611 /wd4625 /wd4626     /wd4640 /wd4675 /wd4710 /wd4711 /wd4786 /wd4800 /wd4820 /wd4503 /wd4619     /wd4365 /wd4668 /wd4738 /wd4826 /wd4350 /wd4505 /wd4692 /wd4189 /wd4005     /wd4180  /EHa /DWNT /DWNT /DNT351 /DMSC /DM1500 /DINTEL /D_X86_=1 /D_CRT_SECURE_NO_DEPRECATE /D_CRT_NONSTDC_NO_DEPRECATE /D_CRT_NON_CONFORMING_SWPRINTFS /DFULL_DESK /DBOOST_MEM_FN_ENABLE_CDECL /D_MT /DWINVER=0x0500 /D_WIN32_WINNT=0x0500 /D_WIN32_IE=0x0500 /DCPPU_ENV=msci /DSUPD=410 /DPRODUCT /DNDEBUG /DOSL_DEBUG_LEVEL=0 /DOPTIMIZE /DCUI /DSOLAR_JAVA  " /F makefile.vc8 lib_dll && C:/cygwin/bin/touch.exe C:/steve/testarea/main/graphite/./wntmsci12.pro/misc/build/so_built_so_graphite
+	if not exist ".\release/" mkdir ".\release"
+	if not exist ".\release_temp/" mkdir ".\release_temp"
+Debug.cpp
+Util.cpp
+Font.cpp
+WinFont.cpp
+C:/PROGRA~2/MICROS~1.0/VC/include\list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue>,
+            _Ax=std::allocator<std::pair<const gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue>,
+            _Ax=std::allocator<std::pair<const gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\hash_map(88) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=stdext::_Hmap_traits<gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue,gr3ooo::WinFont::LogFontHashFuncs,std::allocator<std::pair<const gr3ooo::WinFont::LogFontWrapper,gr3ooo::WinFont::FontHandleCache::FontCacheValue>>,false>
+        ]
+        c:\steve\testarea\main\graphite\wntmsci12.pro\misc\build\silgraphite-2.3.1\wrappers\win32\WinFont.h(222) : see reference to class template instantiation 'stdext::hash_map<_Kty,_Ty,_Tr>' being compiled
+        with
+        [
+            _Kty=gr3ooo::WinFont::LogFontWrapper,
+            _Ty=gr3ooo::WinFont::FontHandleCache::FontCacheValue,
+            _Tr=gr3ooo::WinFont::LogFontHashFuncs
+        ]
+	cl.exe /Zm500 /Zc:wchar_t- /GR /GS /c /nologo /Gs  /Gy /Ob1 /Oxs /Oy- /DENABLE_LAYOUT=0 /DENABLE_LAYOUT_EXPERIMENTAL=0 /Gd  /O2 /Wall /wd4061 /wd4127 /wd4191 /wd4217 /wd4250 /wd4251 /wd4275     /wd4290 /wd4294 /wd4355 /wd4511 /wd4512 /wd4514 /wd4611 /wd4625 /wd4626     /wd4640 /wd4675 /wd4710 /wd4711 /wd4786 /wd4800 /wd4820 /wd4503 /wd4619     /wd4365 /wd4668 /wd4738 /wd4826 /wd4350 /wd4505 /wd4692 /wd4189 /wd4005     /wd4180  /EHa /DWNT /DWNT /DNT351 /DMSC /DM1500 /DINTEL /D_X86_=1 /D_CRT_SECURE_NO_DEPRECATE /D_CRT_NONSTDC_NO_DEPRECATE /D_CRT_NON_CONFORMING_SWPRINTFS /DFULL_DESK /DBOOST_MEM_FN_ENABLE_CDECL /D_MT /DWINVER=0x0500 /D_WIN32_WINNT=0x0500 /D_WIN32_IE=0x0500 /DCPPU_ENV=msci /DSUPD=410 /DPRODUCT /DNDEBUG /DOSL_DEBUG_LEVEL=0 /DOPTIMIZE /DCUI /DSOLAR_JAVA   /nologo /W4 /I "./src/font" /I "./src/painter" /I "./src/segment" /I "./src/textsource" /I "./src/generic" /I "./include/graphite" /I "../wrappers/win32" /D "GR_NAMESPACE" /D "WIN32" /D "_WINDOWS" /D "_UNICODE" /D "UNICODE" /D "TRACING"  /Fp".\release_temp\graphite.pch" /FD /c /D "_DLL" /Fo".\release_temp\FileFont_dll.obj" "src/font/FileFont.cpp"
+FileFont.cpp
+FontCache.cpp
+FontFace.cpp
+FileInput.cpp
+src/segment/FileInput.cpp(178) : warning C4996: 'std::copy': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(2576) : see declaration of 'std::copy'
+GrCharStream.cpp
+GrClassTable.cpp
+GrEngine.cpp
+C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3198) : warning C4242: '=' : conversion from 'const int' to 'OLECHAR', possible loss of data
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3254) : see reference to function template instantiation 'void std::_Fill_n<unsigned short*,_Diff,_Ty>(_OutIt,_Diff,const _Ty &,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _Diff=int,
+            _Ty=int,
+            _OutIt=unsigned short *
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3285) : see reference to function template instantiation 'void std::_Fill_n<_OutIt,_Diff,_Ty>(_OutIt,_Diff,const _Ty &,std::random_access_iterator_tag,std::_Range_checked_iterator_tag)' being compiled
+        with
+        [
+            _OutIt=OLECHAR *,
+            _Diff=int,
+            _Ty=int
+        ]
+        src/segment/GrEngine.cpp(787) : see reference to function template instantiation 'void std::fill_n<OLECHAR*,int,int>(_OutIt,_Diff,const _Ty &)' being compiled
+        with
+        [
+            _OutIt=OLECHAR *,
+            _Diff=int,
+            _Ty=int
+        ]
+GrFeature.cpp
+GrFSM.cpp
+GrGlyphTable.cpp
+GrPass.cpp
+GrPassActionCode.cpp
+GrSlotState.cpp
+GrSlotStream.cpp
+GrTableManager.cpp
+MemoryUsage.cpp
+Segment.cpp
+SegmentAux.cpp
+SegmentPainter.cpp
+TransductionLog.cpp
+WinSegmentPainter.cpp
+Platform.cpp
+TtfUtil.cpp
+src/font/TtfUtil.cpp(787) : warning C4996: 'std::transform': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\algorithm(710) : see declaration of 'std::transform'
+src/font/TtfUtil.cpp(1682) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+src/font/TtfUtil.cpp(1754) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+src/font/TtfUtil.cpp(1755) : warning C4996: 'std::fill_n': Function call with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+        C:/PROGRA~2/MICROS~1.0/VC/include\xutility(3283) : see declaration of 'std::fill_n'
+	lib @C:\cygwin\tmp\nm3B1C.tmp
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+"/OUT:.\release/graphite_dll.lib" ".\release_temp\Debug_dll.obj" ".\release_temp\Util_dll.obj" ".\release_temp\Font_dll.obj" ".\release_temp\WinFont_dll.obj" ".\release_temp\FileFont_dll.obj" ".\release_temp\FontCache_dll.obj" ".\release_temp\FontFace_dll.obj" ".\release_temp\FileInput_dll.obj" ".\release_temp\GrCharStream_dll.obj" ".\release_temp\GrClassTable_dll.obj" ".\release_temp\GrEngine_dll.obj" ".\release_temp\GrFeature_dll.obj" ".\release_temp\GrFSM_dll.obj" ".\release_temp\GrGlyphTable_dll.obj" ".\release_temp\GrPass_dll.obj" ".\release_temp\GrPassActionCode_dll.obj" ".\release_temp\GrSlotState_dll.obj" ".\release_temp\GrSlotStream_dll.obj" ".\release_temp\GrTableManager_dll.obj" ".\release_temp\MemoryUsage_dll.obj" ".\release_temp\Segment_dll.obj" ".\release_temp\SegmentAux_dll.obj" ".\release_temp\SegmentPainter_dll.obj" ".\release_temp\TransductionLog_dll.obj" ".\release_temp\WinSegmentPainter_dll.obj" ".\release_temp\Platform_dll.obj" ".\release_temp\TtfUtil_dll.obj" 
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_so_graphite
+cp ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/release/*.lib ./wntmsci12.pro/lib
+cp ./wntmsci12.pro/misc/build/silgraphite-2.3.1/wrappers/win32/WinFont.h ./wntmsci12.pro/inc
+cp -L -r ./wntmsci12.pro/misc/build/silgraphite-2.3.1/engine/include/graphite ./wntmsci12.pro/inc
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_so_graphite
+graphite deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/build.lst
+COPY: ../wntmsci12.pro/inc/graphite/BinTree.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/BinTree.h
+COPY: ../wntmsci12.pro/inc/graphite/FileFont.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/FileFont.h
+COPY: ../wntmsci12.pro/inc/graphite/Font.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/Font.h
+COPY: ../wntmsci12.pro/inc/graphite/GenericResource.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GenericResource.h
+COPY: ../wntmsci12.pro/inc/graphite/GraphiteProcess.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GraphiteProcess.h
+COPY: ../wntmsci12.pro/inc/graphite/GrAppData.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrAppData.h
+COPY: ../wntmsci12.pro/inc/graphite/GrClient.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrClient.h
+COPY: ../wntmsci12.pro/inc/graphite/GrCommon.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrCommon.h
+COPY: ../wntmsci12.pro/inc/graphite/GrConstants.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrConstants.h
+COPY: ../wntmsci12.pro/inc/graphite/GrData.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrData.h
+COPY: ../wntmsci12.pro/inc/graphite/GrDebug.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrDebug.h
+COPY: ../wntmsci12.pro/inc/graphite/GrExt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrExt.h
+COPY: ../wntmsci12.pro/inc/graphite/GrFeature.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrFeature.h
+COPY: ../wntmsci12.pro/inc/graphite/GrMstypes.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrMstypes.h
+COPY: ../wntmsci12.pro/inc/graphite/GrPlatform.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrPlatform.h
+COPY: ../wntmsci12.pro/inc/graphite/GrResult.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrResult.h
+COPY: ../wntmsci12.pro/inc/graphite/GrStructs.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrStructs.h
+COPY: ../wntmsci12.pro/inc/graphite/GrWrappers.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/GrWrappers.h
+COPY: ../wntmsci12.pro/inc/graphite/HashMap.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/HashMap.h
+COPY: ../wntmsci12.pro/inc/graphite/IGraphiteProcess.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/IGraphiteProcess.h
+COPY: ../wntmsci12.pro/inc/graphite/IGrEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/IGrEngine.h
+COPY: ../wntmsci12.pro/inc/graphite/IGrJustifier.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/IGrJustifier.h
+COPY: ../wntmsci12.pro/inc/graphite/ITextSource.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/ITextSource.h
+COPY: ../wntmsci12.pro/inc/graphite/MemoryUsage.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/MemoryUsage.h
+COPY: ../wntmsci12.pro/inc/graphite/Segment.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/Segment.h
+COPY: ../wntmsci12.pro/inc/graphite/SegmentAux.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/SegmentAux.h
+COPY: ../wntmsci12.pro/inc/graphite/SegmentPainter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/SegmentPainter.h
+COPY: ../wntmsci12.pro/inc/WinFont.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/WinFont.h
+COPY: ../wntmsci12.pro/lib/graphite_dll.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/graphite_dll.lib
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/graphite/deliver.log
+Module 'graphite' delivered successfully. 30 files copied, 1 files unchanged
+
+=============

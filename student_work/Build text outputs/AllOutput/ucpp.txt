@@ -1,0 +1,192 @@
+ucpp
+=============
+
+Entering /cygdrive/c/steve/testarea/main/ucpp
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/ucpp ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/ucpp ./wntmsci12.pro/misc/build/ucpp_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/ucpp_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/0168229624cfac409e766913506961a8-ucpp-1.3.2.tar.gz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_ucpp
+ucpp/
+ucpp/arith.c
+ucpp/arith.h
+ucpp/assert.c
+ucpp/atest.c
+ucpp/CHANGELOG
+ucpp/config.h
+ucpp/cpp.c
+ucpp/cpp.h
+ucpp/eval.c
+ucpp/hash.c
+ucpp/hash.h
+ucpp/lexer.c
+ucpp/macro.c
+ucpp/Makefile
+ucpp/mem.c
+ucpp/mem.h
+ucpp/nhash.c
+ucpp/nhash.h
+ucpp/README
+ucpp/sample.c
+ucpp/tune.h
+ucpp/ucpp.1
+ucpp/ucppi.h
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/ucpp/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/ucpp/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/ucpp/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/ucpp/makefile.mk
+cd ./wntmsci12.pro/misc/build && cat ../../..//ucpp.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_ucpp
+patching file ucpp/makefile.mk
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_ucpp
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_ucpp
+mkdir.exe ./wntmsci12.pro/misc/build/ucpp/
+cd ./wntmsci12.pro/misc/build/ucpp/ && dmake    && C:/cygwin/bin/touch.exe C:/steve/testarea/main/ucpp/./wntmsci12.pro/misc/build/so_built_ucpp
+Making:    all_ucpp.dpobj
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/assert.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/assert.obj assert.c
+assert.c
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(772) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(773) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(780) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(857) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(858) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(867) : warning C4068: unknown pragma
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\assert.c(144) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\assert.c(227) : warning C4701: potentially uninitialized local variable 'a' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\assert.c(226) : warning C4701: potentially uninitialized local variable 'aname' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\assert.c(258) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\assert.c(295) : warning C4701: potentially uninitialized local variable 'atl' used
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkVc5qs7 > ../../../../wntmsci12.pro/misc/o_assert.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/cpp.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/cpp.obj cpp.c
+cpp.c
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(772) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(773) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(780) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(857) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(858) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(867) : warning C4068: unknown pragma
+cpp.c(326) : warning C4100: 'wb' : unreferenced formal parameter
+cpp.c(1603) : warning C4242: '=' : conversion from 'int' to 'unsigned char', possible loss of data
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(737) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1646) : warning C4701: potentially uninitialized local variable 'tf' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1005) : warning C4701: potentially uninitialized local variable 'tf' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1042) : warning C4701: potentially uninitialized local variable 'tf1' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1111) : warning C4701: potentially uninitialized local variable 'atl' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1167) : warning C4701: potentially uninitialized local variable 'tf3' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1260) : warning C4701: potentially uninitialized local variable 'fname' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1283) : warning C4701: potentially uninitialized local variable 'tf' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\cpp.c(1459) : warning C4701: potentially uninitialized local variable 'tf' used
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkKZ5vVm > ../../../../wntmsci12.pro/misc/o_cpp.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/eval.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/eval.obj eval.c
+eval.c
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(772) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(773) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(780) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(857) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(858) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(867) : warning C4068: unknown pragma
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\arith.c(240) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\eval.c(228) : warning C4702: unreachable code
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mksewYX0 > ../../../../wntmsci12.pro/misc/o_eval.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/hash.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/hash.obj hash.c
+hash.c
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\hash.c(151) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkMAJZbd > ../../../../wntmsci12.pro/misc/o_hash.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/lexer.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/lexer.obj lexer.c
+lexer.c
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(772) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(773) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(780) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(857) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(858) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(867) : warning C4068: unknown pragma
+lexer.c(511) : warning C4242: '=' : conversion from 'int' to 'unsigned char', possible loss of data
+lexer.c(671) : warning C4295: 'hex' : array is too small to include a terminating null character
+lexer.c(686) : warning C4242: '=' : conversion from 'unsigned long' to 'unsigned char', possible loss of data
+lexer.c(949) : warning C4242: 'function' : conversion from 'int' to 'unsigned char', possible loss of data
+lexer.c(952) : warning C4242: 'function' : conversion from 'int' to 'unsigned char', possible loss of data
+lexer.c(958) : warning C4242: 'function' : conversion from 'int' to 'unsigned char', possible loss of data
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\lexer.c(966) : warning C4701: potentially uninitialized local variable 'utf8' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\lexer.c(820) : warning C4701: potentially uninitialized local variable 'shift_state' used
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkVuZDTQ > ../../../../wntmsci12.pro/misc/o_lexer.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/macro.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/macro.obj macro.c
+macro.c
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(772) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(773) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(780) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(857) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(858) : warning C4068: unknown pragma
+C:/PROGRA~2/MICROS~1.0/VC/include\stdlib.h(867) : warning C4068: unknown pragma
+macro.c(650) : warning C4242: '=' : conversion from 'int' to 'unsigned char', possible loss of data
+macro.c(662) : warning C4244: '=' : conversion from 'unsigned int' to 'unsigned char', possible loss of data
+macro.c(665) : warning C4242: '=' : conversion from 'unsigned int' to 'unsigned char', possible loss of data
+macro.c(1757) : warning C4100: 'ls' : unreferenced formal parameter
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(692) : warning C4701: potentially uninitialized local variable 'mv' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(583) : warning C4701: potentially uninitialized local variable 'nt' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(733) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(733) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(752) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(752) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(759) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(759) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(835) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(835) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(904) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(910) : warning C4701: potentially uninitialized local variable 'tf' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(938) : warning C4701: potentially uninitialized local variable 'd' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1450) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1618) : warning C4706: assignment within conditional expression
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1408) : warning C4701: potentially uninitialized local variable 't' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1150) : warning C4701: potentially uninitialized local variable 'atl' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1371) : warning C4701: potentially uninitialized local variable 'etl' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1640) : warning C4701: potentially uninitialized local variable 'save_tfi' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\macro.c(1718) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8noW5U > ../../../../wntmsci12.pro/misc/o_macro.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/mem.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/mem.obj mem.c
+mem.c
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\mem.c(109) : warning C4706: assignment within conditional expression
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkkiawIN > ../../../../wntmsci12.pro/misc/o_mem.dpcc
+Compiling: ucpp/wntmsci12.pro/misc/build/ucpp/nhash.c
+Cflags: -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -DNO_UCPP_BUF -DUCPP_CONFIG -DSTAND_ALONE -I. -I../../../../wntmsci12.pro/inc/ucpp -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/obj/nhash.obj nhash.c
+nhash.c
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\nhash.c(156) : warning C4701: potentially uninitialized local variable 'ls' used
+c:\steve\testarea\main\ucpp\wntmsci12.pro\misc\build\ucpp\nhash.c(275) : warning C4701: potentially uninitialized local variable 'pnode' used
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk7UFBBj > ../../../../wntmsci12.pro/misc/o_nhash.dpcc
+Making:    ucpp.exe
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkZEjofs
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /BASE:0x1b000000 -out:../../../../wntmsci12.pro/bin/ucpp.exe -map:../../../../wntmsci12.pro/misc/ucpp.map ../../../../wntmsci12.pro/obj/assert.obj ../../../../wntmsci12.pro/obj/cpp.obj ../../../../wntmsci12.pro/obj/eval.obj ../../../../wntmsci12.pro/obj/hash.obj ../../../../wntmsci12.pro/obj/lexer.obj ../../../../wntmsci12.pro/obj/macro.obj ../../../../wntmsci12.pro/obj/mem.obj ../../../../wntmsci12.pro/obj/nhash.obj msvcrt.lib msvcprt.lib kernel32.lib user32.lib oldnames.lib 
+linking ../../../../wntmsci12.pro/bin/ucpp.exe.manifest ...
+if [ -f ../../../../wntmsci12.pro/bin/ucpp.exe.manifest ] ; then mt.exe  -manifest ../../../../wntmsci12.pro/bin/ucpp.exe.manifest -outputresource:../../../../wntmsci12.pro/bin/ucpp.exe\;1 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../../../wntmsci12.pro/bin/ucpp.exe.manifest ] ; then /bin/rm -f ../../../../wntmsci12.pro/bin/ucpp.exe.manifest ; fi
+if [ -f ../../../../wntmsci12.pro/bin/ucpp.exe.tmanifest ] ; then /bin/rm -f ../../../../wntmsci12.pro/bin/ucpp.exe.tmanifest ; fi
+Making:    all_ucpp.dpobj
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_ucpp
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_ucpp
+ucpp deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/ucpp/build.lst
+COPY: ../wntmsci12.pro/bin/ucpp.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ucpp.exe
+COPY: ../wntmsci12.pro/bin/ucpp.pdb -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ucpp.pdb
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/ucpp/deliver.log
+Module 'ucpp' delivered successfully. 3 files copied, 1 files unchanged
+
+=============

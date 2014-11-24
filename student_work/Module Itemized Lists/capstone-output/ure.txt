@@ -1,0 +1,33 @@
+Name:
+ure
+
+Dependencies:
+LIBXSLT:libxslt binaryurp cli_ure io javaunohelper remotebridges solenv stoc NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%\ure
+mkdir: %_DEST%\xml%_EXT%\ure
+..\%__SRC%\bin\uretest.zip %COMMON_DEST%\bin%_EXT%\uretest.zip
+..\%__SRC%\misc\services.rdb %_DEST%\xml%_EXT%\ure\services.rdb
+..\source\README %_DEST%\bin%_EXT%\ure\README
+..\source\jvmfwk3.ini %_DEST%\bin%_EXT%\ure\jvmfwk3.ini
+..\source\jvmfwk3rc %_DEST%\bin%_EXT%\ure\jvmfwk3rc
+..\source\startup.sh %_DEST%\bin%_EXT%\ure\startup.sh
+..\source\uno.ini %_DEST%\bin%_EXT%\ure\uno.ini
+..\source\unorc %_DEST%\bin%_EXT%\ure\unorc
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+source\makefile.mk
+	PRJNAME=ure
+	TARGET=source
+
+source\uretest\Makefile
+
+source\uretest\Makefile.pln

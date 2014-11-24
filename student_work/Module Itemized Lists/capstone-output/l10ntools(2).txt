@@ -1,0 +1,214 @@
+Name:
+l10ntools
+
+Dependencies:
+tools LIBXSLT:libxslt LUCENE:lucene PYTHON:python NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\l10ntools
+mkdir: %_DEST%\bin%_EXT%
+mkdir: %_DEST%\bin%_EXT%\help
+mkdir: %_DEST%\bin%_EXT%\help\com
+mkdir: %_DEST%\bin%_EXT%\help\com\sun
+mkdir: %_DEST%\bin%_EXT%\help\com\sun\star
+mkdir: %_DEST%\bin%_EXT%\help\com\sun\star\help
+
+..\%__SRC%\bin\cfgex.exe %_DEST%\bin%_EXT%\cfgex.exe
+..\%__SRC%\bin\cfgex %_DEST%\bin%_EXT%\cfgex
+..\%__SRC%\bin\transex3.exe %_DEST%\bin%_EXT%\transex3.exe
+..\%__SRC%\bin\transex3 %_DEST%\bin%_EXT%\transex3
+..\%__SRC%\bin\lngex.exe %_DEST%\bin%_EXT%\lngex.exe
+..\%__SRC%\bin\lngex %_DEST%\bin%_EXT%\lngex
+..\%__SRC%\bin\localize_sl.exe %_DEST%\bin%_EXT%\localize_sl.exe
+..\%__SRC%\bin\localize_sl %_DEST%\bin%_EXT%\localize_sl
+..\%__SRC%\bin\xrmex.exe %_DEST%\bin%_EXT%\xrmex.exe
+..\%__SRC%\bin\xrmex %_DEST%\bin%_EXT%\xrmex
+..\%__SRC%\bin\gsicheck.exe %_DEST%\bin%_EXT%\gsicheck.exe
+..\%__SRC%\bin\gsicheck %_DEST%\bin%_EXT%\gsicheck
+..\%__SRC%\bin\helpex.exe %_DEST%\bin%_EXT%\helpex.exe
+..\%__SRC%\bin\helpex %_DEST%\bin%_EXT%\helpex
+..\%__SRC%\bin\ulfex.exe %_DEST%\bin%_EXT%\ulfex.exe
+..\%__SRC%\bin\ulfex %_DEST%\bin%_EXT%\ulfex
+..\%__SRC%\bin\txtconv.exe %_DEST%\bin%_EXT%\txtconv.exe
+..\%__SRC%\bin\txtconv %_DEST%\bin%_EXT%\txtconv
+..\%__SRC%\bin\tralay.exe %_DEST%\bin%_EXT%\tralay.exe
+..\%__SRC%\bin\tralay %_DEST%\bin%_EXT%\tralay
+..\%__SRC%\bin\ulfconv %_DEST%\bin%_EXT%\ulfconv
+..\%__SRC%\class\FCFGMerge.jar %_DEST%\bin%_EXT%\FCFGMerge.jar
+..\%__SRC%\class\HelpIndexerTool.jar %_DEST%\bin%_EXT%\HelpIndexerTool.jar
+..\%__SRC%\class\jpropex\jpropex.jar %_DEST%\bin%_EXT%\jpropex.jar
+..\%__SRC%\bin\HelpLinker %_DEST%\bin%_EXT%\HelpLinker
+..\%__SRC%\bin\HelpCompiler %_DEST%\bin%_EXT%\HelpCompiler
+..\%__SRC%\bin\HelpCompiler.exe %_DEST%\bin%_EXT%\HelpCompiler.exe
+..\%__SRC%\bin\HelpLinker.exe %_DEST%\bin%_EXT%\HelpLinker.exe
+..\%__SRC%\bin\HelpLink* %_DEST%\bin%_EXT%
+
+..\%__SRC%\class\converter\converter.jar %_DEST%\bin%_EXT%\converter.jar
+..\%__SRC%\doc\converter_javadoc.zip %_DEST%\bin%_EXT%\converter_javadoc.zip
+
+..\%__SRC%\class\receditor\receditor.jar %_DEST%\bin%_EXT%\receditor.jar
+
+..\java\jpropex\jpropex %_DEST%\bin%_EXT%\jpropex
+..\scripts\localize.pl %_DEST%\bin%_EXT%\localize.pl
+..\scripts\localize_old.pl %_DEST%\bin%_EXT%\localize_old.pl
+..\scripts\localize %_DEST%\bin%_EXT%\localize
+..\scripts\fast_merge.pl %_DEST%\bin%_EXT%\fast_merge.pl
+..\scripts\keyidGen.pl %_DEST%\bin%_EXT%\keyidGen.pl
+..\scripts\xtxex %_DEST%\bin%_EXT%\xtxex
+..\scripts\xhtex %_DEST%\bin%_EXT%\xhtex
+..\%__SRC%\bin\const.py %_DEST%\bin%_EXT%\const.py
+..\%__SRC%\bin\l10ntool.py %_DEST%\bin%_EXT%\l10ntool.py
+..\%__SRC%\bin\pseudo.py %_DEST%\bin%_EXT%\pseudo.py
+..\%__SRC%\bin\sdf.py %_DEST%\bin%_EXT%\sdf.py
+..\%__SRC%\bin\const.pyc %_DEST%\bin%_EXT%\const.pyc
+..\%__SRC%\bin\l10ntool.pyc %_DEST%\bin%_EXT%\l10ntool.pyc
+..\%__SRC%\bin\pseudo.pyc %_DEST%\bin%_EXT%\pseudo.pyc
+..\%__SRC%\bin\sdf.pyc %_DEST%\bin%_EXT%\sdf.pyc
+..\%__SRC%\bin\xhtex.py %_DEST%\bin%_EXT%\xhtex.py
+..\%__SRC%\bin\xtxex.py %_DEST%\bin%_EXT%\xtxex.py
+..\%__SRC%\bin\xhtex.pyc %_DEST%\bin%_EXT%\xhtex.pyc
+..\%__SRC%\bin\xtxex.pyc %_DEST%\bin%_EXT%\xtxex.pyc
+..\inc\export.hxx %_DEST%\inc%_EXT%\l10ntools\export.hxx
+..\inc\l10ntools\directory.hxx %_DEST%\inc%_EXT%\l10ntools\directory.hxx
+..\inc\l10ntools\file.hxx %_DEST%\inc%_EXT%\l10ntools\file.hxx
+..\inc\l10ntools\vosapp.hxx %_DEST%\inc%_EXT%\l10ntools\vosapp.hxx
+..\source\filter\merge\FCFGMerge.cfg  %_DEST%\inc%_EXT%\l10ntools\FCFGMerge.cfg
+
+..\inc\utf8conv.hxx %_DEST%\inc%_EXT%\l10ntools\utf8conv.hxx
+..\%__SRC%\lib\transex.lib %_DEST%\lib%_EXT%\transex.lib
+..\%__SRC%\lib\libtransex.a %_DEST%\lib%_EXT%\libtransex.a
+
+..\source\help\compilehelp.hxx %_DEST%\inc%_EXT%\l10ntools\compilehelp.hxx
+#..\source\help\helplinkerdllapi.h  %_DEST%\inc%_EXT%\l10ntools\helplinkerdllapi.h
+..\%__SRC%\lib\* %_DEST%\lib%_EXT%\*
+..\%__SRC%\class\com\sun\star\help\* %_DEST%\bin%_EXT%\help\com\sun\star\help\*
+
+Source Files:
+inc\pch\precompiled_l10ntools.cxx
+layout\layoutparse.cxx
+layout\tralay.cxx
+source\cfglex.l
+source\cfgmerge.cxx
+source\cfg_yy_wrapper.c
+source\directory.cxx
+source\export.cxx
+source\export2.cxx
+source\file.cxx
+source\gsicheck.cxx
+source\gsiconv.cxx
+source\helpex.cxx
+source\helpmerge.cxx
+source\inireader.cxx
+source\lngex.cxx
+source\lngmerge.cxx
+source\localize.cxx
+source\merge.cxx
+source\srciter.cxx
+source\srclex.l
+source\src_yy_wrapper.c
+source\tagtest.cxx
+source\treeconfig.cxx
+source\utf8conv.cxx
+source\wtranode.cxx
+source\wtratree.cxx
+source\xgfconv.cxx
+source\xmlparse.cxx
+source\xrmlex.l
+source\xrmmerge.cxx
+source\xrm_yy_wrapper.c
+source\help\HelpCompiler.cxx
+source\help\HelpLinker.cxx
+
+Header Files:
+inc\cfgmerge.hxx
+inc\export.hxx
+inc\gsicheck.hxx
+inc\helpmerge.hxx
+inc\inireader.hxx
+inc\lngmerge.hxx
+inc\srciter.hxx
+inc\tagtest.hxx
+inc\tokens.h
+inc\treeconfig.hxx
+inc\utf8conv.hxx
+inc\wtranode.hxx
+inc\wtratree.hxx
+inc\xmlparse.hxx
+inc\xmlutil.hxx
+inc\xrmmerge.hxx
+inc\l10ntools\directory.hxx
+inc\l10ntools\file.hxx
+inc\l10ntools\vosapp.hxx
+inc\pch\precompiled_l10ntools.hxx
+layout\layoutparse.hxx
+source\help\compilehelp.hxx
+source\help\HelpCompiler.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=inc
+
+java\jpropex\makefile.mk
+	PRJNAME=transex3
+	TARGET=jpropex
+
+java\l10nconv\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=converter
+
+java\receditor\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=receditor
+
+layout\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=tralay
+	OBJFILES=
+	$(OBJ)/export2.obj
+	$(OBJ)/helpmerge.obj
+	$(OBJ)/layoutparse.obj
+	$(OBJ)/merge.obj
+	$(OBJ)/tralay.obj
+	$(OBJ)/xmlparse.obj
+
+scripts\makefile.mk
+	TARGET=l10ntools_dummy_pyc
+
+source\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=transex
+	OBJFILES=
+	$(OBJ)$/export.obj
+	$(OBJ)$/export2.obj
+	$(OBJ)$/merge.obj
+	$(OBJ)$/srciter.obj
+	$(OBJ)$/utf8conv.obj
+	$(OBJ)$/xmlparse.obj
+	$(OBJ)$/helpmerge.obj
+	$(OBJ)$/helpex.obj
+	$(OBJ)$/file.obj
+	$(OBJ)$/directory.obj
+
+source\filter\merge\makefile.mk
+	TARGET=FCFGMerge
+	PRJNAME=l10ntools
+
+source\filter\utils\makefile.mk
+	TARGET=FCFGUtils
+	PRJNAME=l10ntools
+
+source\help\helplinker.pmk
+
+source\help\makefile.mk
+	PRJNAME=l10ntools
+	TARGET=HelpLinker
+	OBJFILES=
+	$(OBJ)$/HelpLinker.obj
+	$(OBJ)$/HelpCompiler.obj
+	SLOFILES=
+	$(SLO)$/HelpLinker.obj
+	$(SLO)$/HelpCompiler.obj

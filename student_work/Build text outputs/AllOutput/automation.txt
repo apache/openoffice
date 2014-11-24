@@ -1,0 +1,415 @@
+automation
+=============
+
+Entering /cygdrive/c/steve/testarea/main/automation/inc
+
+mkout -- version: 1.8
+mkdir.exe -p ../wntmsci12.pro/slo/pch
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkMHJTfm
+precompiled_automation.cxx
+mkdir.exe -p ../wntmsci12.pro/slo/pch_ex
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe @C:/cygwin/tmp/mkgNOIEr
+precompiled_automation.cxx
+
+Entering /cygdrive/c/steve/testarea/main/automation/source/simplecm
+
+Making:    all_simplecm.dpslo
+Compiling: automation/source/simplecm/tcpio.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/simplecm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/tcpio.obj C:/steve/testarea/main/automation/source/simplecm/tcpio.cxx 
+tcpio.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkFo75Fd > ../../wntmsci12.pro/misc/s_tcpio.dpcc
+Compiling: automation/source/simplecm/packethandler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/simplecm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/packethandler.obj C:/steve/testarea/main/automation/source/simplecm/packethandler.cxx 
+packethandler.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkYY0tJj > ../../wntmsci12.pro/misc/s_packethandler.dpcc
+Compiling: automation/source/simplecm/simplecm.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/simplecm -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/simplecm.obj C:/steve/testarea/main/automation/source/simplecm/simplecm.cxx 
+simplecm.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkl5UUsb > ../../wntmsci12.pro/misc/s_simplecm.dpcc
+Making:    simplecm.lib
+lib   /OUT:../../wntmsci12.pro/slb/simplecm.lib @C:/cygwin/tmp/mkdHtxBd
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/tcpio.obj 
+../../wntmsci12.pro/slo/packethandler.obj 
+../../wntmsci12.pro/slo/simplecm.obj 
+Making:    all_simplecm.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/automation/source/server
+
+Making:    all_server.dpslo
+Making:    all_server.dpobj
+--- NOOPTFILES ---
+Compiling: automation/source/server/statemnt.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Od -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/statemnt.obj C:/steve/testarea/main/automation/source/server/statemnt.cxx 
+statemnt.cxx
+C:/steve/testarea/main/automation/source/server/statemnt.cxx(3492) : warning C4244: 'argument' : conversion from 'comm_ULONG' to 'sal_Char', possible loss of data
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkliOk8C > ../../wntmsci12.pro/misc/s_statemnt.dpcc
+--- NOOPTFILES OVER ---
+Compiling: automation/source/server/cmdbasestream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/obj/cmdbasestream.obj C:/steve/testarea/main/automation/source/server/cmdbasestream.cxx
+cmdbasestream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkEajZxl > ../../wntmsci12.pro/misc/o_cmdbasestream.dpcc
+Compiling: automation/source/server/svcommstream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/obj/svcommstream.obj C:/steve/testarea/main/automation/source/server/svcommstream.cxx
+svcommstream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkMUJYJU > ../../wntmsci12.pro/misc/o_svcommstream.dpcc
+Making:    server.lib
+lib   /OUT:../../wntmsci12.pro/lib/server.lib @C:/cygwin/tmp/mkXPJ4D8
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/obj/cmdbasestream.obj 
+../../wntmsci12.pro/obj/svcommstream.obj 
+Compiling: automation/source/server/XMLParser.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/XMLParser.obj C:/steve/testarea/main/automation/source/server/XMLParser.cxx 
+XMLParser.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkx9fEuZ > ../../wntmsci12.pro/misc/s_XMLParser.dpcc
+Compiling: automation/source/server/recorder.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/recorder.obj C:/steve/testarea/main/automation/source/server/recorder.cxx 
+recorder.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xlocale(342) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk2stjfD > ../../wntmsci12.pro/misc/s_recorder.dpcc
+Compiling: automation/source/server/svcommstream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/svcommstream.obj C:/steve/testarea/main/automation/source/server/svcommstream.cxx 
+svcommstream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk2lFTfK > ../../wntmsci12.pro/misc/s_svcommstream.dpcc
+Compiling: automation/source/server/cmdbasestream.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/cmdbasestream.obj C:/steve/testarea/main/automation/source/server/cmdbasestream.cxx 
+cmdbasestream.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkfhGNVC > ../../wntmsci12.pro/misc/s_cmdbasestream.dpcc
+Compiling: automation/source/server/scmdstrm.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/scmdstrm.obj C:/steve/testarea/main/automation/source/server/scmdstrm.cxx 
+scmdstrm.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8bAjxt > ../../wntmsci12.pro/misc/s_scmdstrm.dpcc
+Compiling: automation/source/server/sta_list.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/sta_list.obj C:/steve/testarea/main/automation/source/server/sta_list.cxx 
+sta_list.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xlocale(342) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkauwWLe > ../../wntmsci12.pro/misc/s_sta_list.dpcc
+Compiling: automation/source/server/editwin.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/editwin.obj C:/steve/testarea/main/automation/source/server/editwin.cxx 
+editwin.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkoAL7sV > ../../wntmsci12.pro/misc/s_editwin.dpcc
+Compiling: automation/source/server/server.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch_ex/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS  -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/server.obj C:/steve/testarea/main/automation/source/server/server.cxx 
+server.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkyoytnm > ../../wntmsci12.pro/misc/s_server.dpcc
+Compiling: automation/source/server/retstrm.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/retstrm.obj C:/steve/testarea/main/automation/source/server/retstrm.cxx 
+retstrm.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkFrpOWC > ../../wntmsci12.pro/misc/s_retstrm.dpcc
+Compiling: automation/source/server/profiler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/profiler.obj C:/steve/testarea/main/automation/source/server/profiler.cxx 
+profiler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1175) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1171) : while compiling class template member function 'std::_List_nod<_Ty,_Alloc>::_Node *std::list<_Ty>::_Buynode(void)'
+        with
+        [
+            _Ty=vcl::DeletionListener *,
+            _Alloc=std::allocator<vcl::DeletionListener *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vcl/impdel.hxx(36) : see reference to class template instantiation 'std::list<_Ty>' being compiled
+        with
+        [
+            _Ty=vcl::DeletionListener *
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk95imC6 > ../../wntmsci12.pro/misc/s_profiler.dpcc
+Compiling: automation/source/server/prof_nul.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/server -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/prof_nul.obj C:/steve/testarea/main/automation/source/server/prof_nul.cxx 
+prof_nul.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkAvYV1u > ../../wntmsci12.pro/misc/s_prof_nul.dpcc
+Making:    server.lib
+lib   /OUT:../../wntmsci12.pro/slb/server.lib @C:/cygwin/tmp/mkn0MIGl
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/XMLParser.obj 
+../../wntmsci12.pro/slo/recorder.obj 
+../../wntmsci12.pro/slo/svcommstream.obj 
+../../wntmsci12.pro/slo/cmdbasestream.obj 
+../../wntmsci12.pro/slo/scmdstrm.obj 
+../../wntmsci12.pro/slo/statemnt.obj 
+../../wntmsci12.pro/slo/sta_list.obj 
+../../wntmsci12.pro/slo/editwin.obj 
+../../wntmsci12.pro/slo/server.obj 
+../../wntmsci12.pro/slo/retstrm.obj 
+../../wntmsci12.pro/slo/profiler.obj 
+../../wntmsci12.pro/slo/prof_nul.obj 
+Making:    all_server.dpslo
+Making:    all_server.dpobj
+
+Entering /cygdrive/c/steve/testarea/main/automation/source/communi
+
+Making:    all_communi.dpslo
+Compiling: automation/source/communi/communi.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe  -I../../inc/pch -Yuprecompiled_automation.hxx -Fp../../wntmsci12.pro/slo/pch/precompiled_automation.hxx.pch -DPRECOMPILED_HEADERS -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/communi -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/communi.obj C:/steve/testarea/main/automation/source/communi/communi.cxx 
+communi.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1175) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1171) : while compiling class template member function 'std::_List_nod<_Ty,_Alloc>::_Node *std::list<_Ty>::_Buynode(void)'
+        with
+        [
+            _Ty=vcl::DeletionListener *,
+            _Alloc=std::allocator<vcl::DeletionListener *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vcl/impdel.hxx(36) : see reference to class template instantiation 'std::list<_Ty>' being compiled
+        with
+        [
+            _Ty=vcl::DeletionListener *
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk6b1vgl > ../../wntmsci12.pro/misc/s_communi.dpcc
+Making:    communi.lib
+lib   /OUT:../../wntmsci12.pro/slb/communi.lib @C:/cygwin/tmp/mkMftRUZ
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/communi.obj 
+Making:    all_communi.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/automation/source/app
+
+Making:    all_app.dpobj
+Compiling: automation/source/app/testbasi.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/app -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA    -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/obj/testbasi.obj C:/steve/testarea/main/automation/source/app/testbasi.cxx
+testbasi.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2092) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2083) : while compiling class template member function 'void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned int,unsigned int)'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2221) : see reference to class template instantiation 'std::basic_string<_Elem,_Traits,_Ax>' being compiled
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk7Fe0jO > ../../wntmsci12.pro/misc/o_testbasi.dpcc
+Making:    all_app.dpobj
+
+Entering /cygdrive/c/steve/testarea/main/automation/util
+
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/sts_version.h/ > ../wntmsci12.pro/misc/sts_version.c
+Compiling: automation/wntmsci12.pro/misc/sts_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DGUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/sts_version.obj ../wntmsci12.pro/misc/sts_version.c
+sts_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkqjA9MU > ../wntmsci12.pro/misc/s_sts_version.dpcc
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/simplecm_version.h/ > ../wntmsci12.pro/misc/simplecm_version.c
+Compiling: automation/wntmsci12.pro/misc/simplecm_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DGUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/simplecm_version.obj ../wntmsci12.pro/misc/simplecm_version.c
+simplecm_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkNVBVXv > ../wntmsci12.pro/misc/s_simplecm_version.dpcc
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/communi_version.h/ > ../wntmsci12.pro/misc/communi_version.c
+Compiling: automation/wntmsci12.pro/misc/communi_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DGUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/communi_version.obj ../wntmsci12.pro/misc/communi_version.c
+communi_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGc8ICq > ../wntmsci12.pro/misc/s_communi_version.dpcc
+------------------------------
+using: ../wntmsci12.pro/slb/server.lib     	../wntmsci12.pro/slb/simplecm.lib   	../wntmsci12.pro/slb/communi.lib
+using: ../wntmsci12.pro/slb/automation.lib
+------------------------------
+Making:    automation.lib
+lib   /OUT:../wntmsci12.pro/slb/automation.lib @C:/cygwin/tmp/mkjTUMgA
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slb/server.lib ../wntmsci12.pro/slb/simplecm.lib ../wntmsci12.pro/slb/communi.lib 
+
+------------------------------
+Making: ../wntmsci12.pro/misc/sts.flt
+Making:    module definition file sts.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/sts.exp
+------------------------------
+Making: ../wntmsci12.pro/misc/simplecm.flt
+Making:    module definition file simplecm.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/simplecm.exp
+------------------------------
+Making: ../wntmsci12.pro/misc/communi.flt
+Making:    module definition file communi.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/communi.exp
+Making:    ists.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkfQbkp6
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/ists.lib -def:../wntmsci12.pro/misc/sts.def 
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CharacterNode::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ElementNode::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall Node::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SAXParser::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SVInputStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SvFileStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'private: void * __thiscall MacroRecorder::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ICommStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SvCommStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall CmdBaseStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SCmdStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SfxBoolItem::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SfxStringItem::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SfxUInt16Item::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SfxUInt32Item::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall Edit::`vector deleting destructor'`adjustor{296}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall DisplayHidWin::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall DockingWindow::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall Edit::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall FindShortcutErrors::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ModelessDialog::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall Search::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SlotStatusListener::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall SotStorage::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementCommand::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementFlow::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementSlot::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementUnoSlot::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SysWinContainer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall TranslateWin::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SafePointer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchActive::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchFadeSplitWin::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchPopupFloatingWin::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchRT::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchScroll::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchUID::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SearchWinPtr::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall StatementList::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ExtraIdle::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall ImplRemoteControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall RemoteControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall RemoteControlCommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall Timer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall RetStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SvMemoryStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall TTProfiler::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vos::OGuard::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall TCPIO::`vector deleting destructor'`adjustor{8}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall CommunicationLink::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall IReceiver::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ITransmiter::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall SimpleCommunicationLinkViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SimpleCommunicationLinkViaSocketWithReceiveCallbacks::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SingleCommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SingleCommunicationManagerClientViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall TCPIO::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationLinkViaSocket::`vector deleting destructor'`adjustor{76}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationLinkViaSocket::`vector deleting destructor'`adjustor{80}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationManagerServerAcceptThread::`vector deleting destructor'`adjustor{4}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall CommunicationLinkList::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationLinkViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerClient::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerClientViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServerAcceptThread::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServerViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/sts.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall MultiCommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+   Creating library ../wntmsci12.pro/lib/ists.lib and object ../wntmsci12.pro/lib/ists.exp
+Making:    sts.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/sts_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/sts_def.res > ../wntmsci12.pro/misc/sts.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkwpyNYc
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:WINDOWS /DLL -out:../wntmsci12.pro/bin/sts.dll -map:../wntmsci12.pro/misc/sts.map ../wntmsci12.pro/lib/ists.exp ../wntmsci12.pro/slo/sts_version.obj ../wntmsci12.pro/slb/automation.lib itools.lib iutl.lib svtool.lib isvl.lib ivcl.lib basic.lib ivos.lib isal.lib icppuhelper.lib icppu.lib icomphelp.lib sot.lib advapi32.lib gdi32.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/sts.res 
+linking ../wntmsci12.pro/bin/sts.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/sts.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/sts.dll.manifest -outputresource:../wntmsci12.pro/bin/sts.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/sts.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/sts.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/sts.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/sts.dll.tmanifest ; fi
+Making:    isimplecm.lib
+lib -machine:IX86 @C:/cygwin/tmp/mk2CM7Uq
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/isimplecm.lib -def:../wntmsci12.pro/misc/simplecm.def 
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall TCPIO::`vector deleting destructor'`adjustor{8}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall CommunicationLink::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall IReceiver::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ITransmiter::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'protected: virtual void * __thiscall SimpleCommunicationLinkViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SimpleCommunicationLinkViaSocketWithReceiveCallbacks::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SingleCommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SingleCommunicationManagerClientViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall SvMemoryStream::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall TCPIO::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/simplecm.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vos::OGuard::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+   Creating library ../wntmsci12.pro/lib/isimplecm.lib and object ../wntmsci12.pro/lib/isimplecm.exp
+Making:    simplecm.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/simplecm_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/simplecm_def.res > ../wntmsci12.pro/misc/simplecm.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkSPtTFo
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:WINDOWS /DLL -out:../wntmsci12.pro/bin/simplecm.dll -map:../wntmsci12.pro/misc/simplecm.map ../wntmsci12.pro/lib/isimplecm.exp ../wntmsci12.pro/slo/simplecm_version.obj ../wntmsci12.pro/slb/simplecm.lib itools.lib ivos.lib isal.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/simplecm.res 
+linking ../wntmsci12.pro/bin/simplecm.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/simplecm.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/simplecm.dll.manifest -outputresource:../wntmsci12.pro/bin/simplecm.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/simplecm.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/simplecm.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/simplecm.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/simplecm.dll.tmanifest ; fi
+Making:    icommuni.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkQ4CqmJ
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/icommuni.lib -def:../wntmsci12.pro/misc/communi.def 
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationLinkViaSocket::`vector deleting destructor'`adjustor{76}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationLinkViaSocket::`vector deleting destructor'`adjustor{80}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall CommunicationManagerServerAcceptThread::`vector deleting destructor'`adjustor{4}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall CommunicationLinkList::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationLinkViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerClient::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerClientViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServerAcceptThread::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall CommunicationManagerServerViaSocket::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall MultiCommunicationManager::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/communi.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vos::OGuard::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+   Creating library ../wntmsci12.pro/lib/icommuni.lib and object ../wntmsci12.pro/lib/icommuni.exp
+Making:    communi.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/automation -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/communi_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/communi_def.res > ../wntmsci12.pro/misc/communi.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkYN38h7
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:WINDOWS /DLL -out:../wntmsci12.pro/bin/communi.dll -map:../wntmsci12.pro/misc/communi.map ../wntmsci12.pro/lib/icommuni.exp ../wntmsci12.pro/slo/communi_version.obj ../wntmsci12.pro/slb/communi.lib itools.lib isvl.lib ivcl.lib ivos.lib isal.lib ivos.lib isimplecm.lib advapi32.lib gdi32.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/communi.res 
+linking ../wntmsci12.pro/bin/communi.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/communi.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/communi.dll.manifest -outputresource:../wntmsci12.pro/bin/communi.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/communi.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/communi.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/communi.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/communi.dll.tmanifest ; fi
+automation deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/build.lst
+COPY: ../util/manually_added_ids.hid -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/hid/manually_added_ids.hid
+COPY: ../wntmsci12.pro/bin/communi.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/communi.dll
+COPY: ../wntmsci12.pro/bin/simplecm.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/simplecm.dll
+COPY: ../wntmsci12.pro/bin/sts.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/sts.dll
+COPY: ../wntmsci12.pro/lib/ists.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/ists.lib
+COPY: ../wntmsci12.pro/lib/isimplecm.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/isimplecm.lib
+COPY: ../wntmsci12.pro/lib/icommuni.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icommuni.lib
+COPY: ../inc/automation/automation.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/automation.hxx
+COPY: ../inc/automation/commdefines.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/commdefines.hxx
+COPY: ../inc/automation/commtypes.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/commtypes.hxx
+COPY: ../inc/automation/communi.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/communi.hxx
+COPY: ../inc/automation/simplecm.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/simplecm.hxx
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/automation/deliver.log
+Module 'automation' delivered successfully. 13 files copied, 8 files unchanged
+
+=============

@@ -1,0 +1,32 @@
+Name:
+javainstaller2
+
+Dependencies:
+L10N:l10n setup_native NULL
+
+Build Rules:
+..\%__SRC%\bin\*.jar %_DEST%\bin%_EXT%
+..\%__SRC%\bin\*.html %_DEST%\pck%_EXT%
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	TARGET=javainstaller2
+
+src\Helpfiles\makefile.mk
+	PRJNAME=javainstaller2
+	TARGET=create_help_files
+
+src\Localization\makefile.mk
+	PRJNAME=javainstaller2
+	TARGET=java_ulffiles
+
+src\Properties\makefile.mk
+	PRJNAME=javainstaller2
+	TARGET=create_property_files

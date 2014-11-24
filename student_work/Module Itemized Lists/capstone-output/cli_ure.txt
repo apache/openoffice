@@ -1,0 +1,106 @@
+Name:
+cli_ure
+
+Dependencies:
+cppu cppuhelper sal codemaker stoc udkapi bridges NULL
+
+Build Rules:
+..\%__SRC%\bin\climaker.exe %_DEST%\bin%_EXT%\climaker.exe
+..\%__SRC%\bin\climaker.pdb %_DEST%\bin%_EXT%\climaker.pdb
+..\%__SRC%\bin\climaker.exe.config %_DEST%\bin%_EXT%\climaker.exe.config
+
+..\%__SRC%\bin\cli_*.dll %_DEST%\bin%_EXT%\cli_*.dll
+..\%__SRC%\bin\cli_*.pdb %_DEST%\bin%_EXT%\cli_*.pdb
+..\%__SRC%\bin\cli_*.config %_DEST%\bin%_EXT%\cli_*.config
+..\%__SRC%\bin\policy*.dll %_DEST%\bin%_EXT%\policy*.dll
+..\%__SRC%\bin\cli_uno.* %_DEST%\bin%_EXT%\cli_uno.*
+
+..\%__SRC%\bin\cliuno.snk %_DEST%\bin%_EXT%\cliuno.snk
+
+..\%__SRC%\bin\cliureversion.mk %_DEST%\bin%_EXT%\cliureversion.mk
+Source Files:
+inc\pch\precompiled_cli_ure.cxx
+source\climaker\climaker_app.cxx
+source\climaker\climaker_emit.cxx
+source\native\assembly.cxx
+source\native\native_bootstrap.cxx
+source\native\path.cxx
+source\uno_bridge\cli_bridge.cxx
+source\uno_bridge\cli_data.cxx
+source\uno_bridge\cli_environment.cxx
+source\uno_bridge\cli_proxy.cxx
+source\uno_bridge\cli_uno.cxx
+
+Header Files:
+inc\pch\precompiled_cli_ure.hxx
+source\climaker\climaker_share.h
+source\native\native_share.h
+source\uno_bridge\cli_base.h
+source\uno_bridge\cli_bridge.h
+source\uno_bridge\cli_environment.h
+source\uno_bridge\cli_proxy.h
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=inc
+
+qa\climaker\makefile.mk
+	PRJNAME:=cli_ure
+	TARGET:=test_climaker
+
+source\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=sourcedir
+
+source\basetypes\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=basetypes
+
+source\climaker\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=climaker
+	OBJFILES=
+	$(OBJ)$/climaker_app.obj
+	$(OBJ)$/climaker_emit.obj
+
+source\native\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=cli_cppuhelper
+	SLOFILES=
+	$(SLO)$/native_bootstrap.obj
+	$(SLO)$/path.obj
+	$(SLO)$/assembly_cppuhelper.obj
+
+source\uno_bridge\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=cli_uno
+	SLOFILES=
+	$(SLO)$/cli_environment.obj
+	$(SLO)$/cli_bridge.obj
+	$(SLO)$/cli_data.obj
+	$(SLO)$/cli_proxy.obj
+	$(SLO)$/cli_uno.obj
+
+source\ure\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=ure
+
+unotypes\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=unotypes
+
+util\makefile.pmk
+
+util\target.pmk
+
+version\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=cliureversion.mk
+
+workbench\dynload\makefile.mk
+	PRJNAME=cli_ure
+	TARGET=dynload

@@ -1,0 +1,167 @@
+Name:
+avmedia
+
+Dependencies:
+L10N:l10n tools sfx2 LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %COMMON_DEST%\res%_EXT%
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\avmedia*.dll %_DEST%\bin%_EXT%\avmedia*.dll
+..\source\java\avmedia.jar %_DEST%\bin%_EXT%\avmedia.jar
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\lib\*.lib %_DEST%\lib%_EXT%\*.lib
+..\%__SRC%\bin\avmedia*.res %_DEST%\bin%_EXT%\avmedia*.res
+
+mkdir: %_DEST%\inc%_EXT%\avmedia
+
+..\inc\avmedia\mediawindow.hxx %_DEST%\inc%_EXT%\avmedia\mediawindow.hxx
+..\inc\avmedia\mediaitem.hxx %_DEST%\inc%_EXT%\avmedia\mediaitem.hxx
+..\inc\avmedia\mediaplayer.hxx %_DEST%\inc%_EXT%\avmedia\mediaplayer.hxx
+..\inc\avmedia\mediatoolbox.hxx %_DEST%\inc%_EXT%\avmedia\mediatoolbox.hxx
+
+..\%__SRC%\class\avmedia.jar %_DEST%\bin%_EXT%\avmedia.jar
+..\%__SRC%\misc\avmedia.component %_DEST%\xml%_EXT%\avmedia.component
+..\%__SRC%\misc\avmedia.jar.component %_DEST%\xml%_EXT%\avmedia.jar.component
+..\%__SRC%\misc\avmediaQuickTime.component %_DEST%\xml%_EXT%\avmediaQuickTime.component
+..\%__SRC%\misc\avmediagst.component %_DEST%\xml%_EXT%\avmediagst.component
+..\%__SRC%\misc\avmediawin.component %_DEST%\xml%_EXT%\avmediawin.component
+
+Source Files:
+source\framework\mediacontrol.cxx
+source\framework\mediaitem.cxx
+source\framework\mediamisc.cxx
+source\framework\mediaplayer.cxx
+source\framework\mediatoolbox.cxx
+source\framework\soundhandler.cxx
+source\gstreamer\gstframegrabber.cxx
+source\gstreamer\gstmanager.cxx
+source\gstreamer\gstplayer.cxx
+source\gstreamer\gstuno.cxx
+source\gstreamer\gstwindow.cxx
+source\quicktime\framegrabber.cxx
+source\quicktime\manager.cxx
+source\quicktime\player.cxx
+source\quicktime\quicktimeuno.cxx
+source\quicktime\window.cxx
+source\viewer\mediaevent_impl.cxx
+source\viewer\mediawindow.cxx
+source\viewer\mediawindowbase_impl.cxx
+source\viewer\mediawindow_impl.cxx
+source\win\framegrabber.cxx
+source\win\manager.cxx
+source\win\player.cxx
+source\win\window.cxx
+source\win\winuno.cxx
+source\xine\manager.cxx
+source\xine\player.cxx
+source\xine\window.cxx
+source\xine\xineuno.cxx
+
+Header Files:
+inc\helpids.hrc
+inc\mediacontrol.hxx
+inc\avmedia\mediaitem.hxx
+inc\avmedia\mediaplayer.hxx
+inc\avmedia\mediatoolbox.hxx
+inc\avmedia\mediawindow.hxx
+source\framework\mediacontrol.hrc
+source\framework\soundhandler.hxx
+source\gstreamer\gstcommon.hxx
+source\gstreamer\gstframegrabber.hxx
+source\gstreamer\gstmanager.hxx
+source\gstreamer\gstplayer.hxx
+source\gstreamer\gstwindow.hxx
+source\inc\mediamisc.hxx
+source\quicktime\framegrabber.hxx
+source\quicktime\manager.hxx
+source\quicktime\player.hxx
+source\quicktime\quicktimecommon.hxx
+source\quicktime\window.hxx
+source\viewer\mediaevent_impl.hxx
+source\viewer\mediawindow.hrc
+source\viewer\mediawindowbase_impl.hxx
+source\viewer\mediawindow_impl.hxx
+source\win\framegrabber.hxx
+source\win\interface.hxx
+source\win\manager.hxx
+source\win\player.hxx
+source\win\wincommon.hxx
+source\win\window.hxx
+source\xine\manager.hxx
+source\xine\player.hxx
+source\xine\window.hxx
+source\xine\xinecommon.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\framework\makefile.mk
+	PRJNAME=avmedia
+	TARGET=framework
+	SLOFILES=
+	$(SLO)$/mediaitem.obj
+	$(SLO)$/mediamisc.obj
+	$(SLO)$/mediacontrol.obj
+	$(SLO)$/mediatoolbox.obj
+	$(SLO)$/mediaplayer.obj
+	$(SLO)$/soundhandler.obj
+
+source\gstreamer\makefile.mk
+	PRJNAME=avmediagst
+	TARGET=avmediagst
+	SLOFILES=
+	$(SLO)$/gstuno.obj
+	$(SLO)$/gstmanager.obj
+	$(SLO)$/gstwindow.obj
+	$(SLO)$/gstplayer.obj
+	$(SLO)$/gstframegrabber.obj
+
+source\java\makefile.mk
+	PRJNAME=avmedia
+	TARGET=avmedia
+
+source\quicktime\makefile.mk
+	PRJNAME=avmedia
+	TARGET=avmediaQuickTime
+	SLOFILES=
+	$(SLO)$/quicktimeuno.obj
+	$(SLO)$/manager.obj
+	$(SLO)$/window.obj
+	$(SLO)$/framegrabber.obj
+	$(SLO)$/player.obj
+
+source\viewer\makefile.mk
+	PRJNAME=avmedia
+	TARGET=viewer
+	SLOFILES=
+	$(SLO)$/mediaevent_impl.obj
+	$(SLO)$/mediawindowbase_impl.obj
+	$(SLO)$/mediawindow_impl.obj
+	$(SLO)$/mediawindow.obj
+
+source\win\makefile.mk
+	PRJNAME=avmedia
+	TARGET=avmediawin
+	SLOFILES=
+	$(SLO)$/winuno.obj
+	$(SLO)$/manager.obj
+	$(SLO)$/window.obj
+	$(SLO)$/player.obj
+	$(SLO)$/framegrabber.obj
+
+source\xine\makefile.mk
+	PRJNAME=avmediaxine
+	TARGET=avmediaxine
+	SLOFILES=
+	$(SLO)$/xineuno.obj
+	$(SLO)$/manager.obj
+	$(SLO)$/window.obj
+	$(SLO)$/player.obj
+
+util\makefile.mk
+	PRJNAME=avmedia
+	TARGET=avmedia

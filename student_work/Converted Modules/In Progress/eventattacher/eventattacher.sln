@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{3B7F6986-FA00-D1B5-97CC-1890CD7B47B1}") = "misc_lib", "misc_lib.vcxproj", "{FFF62E31-F2C6-75E8-F093-A572359ED33A}"
+EndProject
+Project("{3B7F6986-FA00-D1B5-97CC-1890CD7B47B1}") = "misc_dll", "misc_dll.vcxproj", "{D9EF4612-82F9-7DBA-D074-D35538F84736}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FFF62E31-F2C6-75E8-F093-A572359ED33A} = {FFF62E31-F2C6-75E8-F093-A572359ED33A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFF62E31-F2C6-75E8-F093-A572359ED33A}.Release|Win32.ActiveCfg = Release|Win32
+		{FFF62E31-F2C6-75E8-F093-A572359ED33A}.Release|Win32.Build.0 = Release|Win32
+		{D9EF4612-82F9-7DBA-D074-D35538F84736}.Release|Win32.ActiveCfg = Release|Win32
+		{D9EF4612-82F9-7DBA-D074-D35538F84736}.Release|Win32.Build.0 = Release|Win32
+EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+

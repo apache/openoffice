@@ -1,0 +1,1160 @@
+Name:
+dbaccess
+
+Dependencies:
+L10N:l10n BOOST:boost connectivity svx stoc qadevOOo xmlscript LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbapp
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbbrowser
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtdata
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbquery
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbrelation
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtable
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\statusbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbbrowser\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbbrowser\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtdata\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtdata\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbquery\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbquery\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbrelation\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbrelation\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtable\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\dbtable\toolbar
+
+mkdir: %_DEST%\inc%_EXT%\dbaccess
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\lib*.dylib %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\bin\*.bin %_DEST%\bin%_EXT%\*.bin
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\bin\*.exe %_DEST%\bin%_EXT%\*.exe
+..\%__SRC%\lib\idbu* %_DEST%\lib%_EXT%\idbu*
+..\%__SRC%\lib\db?.lib %_DEST%\lib%_EXT%\db?.lib
+*.xml %_DEST%\xml%_EXT%\*.xml
+
+touch: ..\%__SRC%\misc\dbaccess.hid %_DEST%\bin%_EXT%\dba.hid
+
+..\uiconfig\dbapp\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\menubar\*.xml
+..\uiconfig\dbtdata\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbtdata\menubar\*.xml
+..\uiconfig\dbquery\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbquery\menubar\*.xml
+..\uiconfig\dbrelation\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbrelation\menubar\*.xml
+..\uiconfig\dbtable\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbtable\menubar\*.xml
+..\uiconfig\dbapp\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\toolbar\*.xml
+..\uiconfig\dbapp\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbapp\statusbar\*.xml
+..\uiconfig\dbbrowser\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbbrowser\menubar\*.xml
+..\uiconfig\dbbrowser\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbbrowser\toolbar\*.xml
+..\uiconfig\dbtdata\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbtdata\toolbar\*.xml
+..\uiconfig\dbquery\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbquery\toolbar\*.xml
+..\uiconfig\dbrelation\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbrelation\toolbar\*.xml
+..\uiconfig\dbtable\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\dbtable\toolbar\*.xml
+..\inc\*.hxx %_DEST%\inc%_EXT%\dbaccess\*.hxx
+..\inc\*.h %_DEST%\inc%_EXT%\dbaccess\*.h
+
+..\%__SRC%\misc\adabasui.component %_DEST%\xml%_EXT%\adabasui.component
+..\%__SRC%\misc\dba.component %_DEST%\xml%_EXT%\dba.component
+..\%__SRC%\misc\dbaxml.component %_DEST%\xml%_EXT%\dbaxml.component
+..\%__SRC%\misc\dbmm.component %_DEST%\xml%_EXT%\dbmm.component
+..\%__SRC%\misc\dbu.component %_DEST%\xml%_EXT%\dbu.component
+..\%__SRC%\misc\sdbt.component %_DEST%\xml%_EXT%\sdbt.component
+
+Source Files:
+inc\pch\precompiled_dbaccess.cxx
+source\core\api\BookmarkSet.cxx
+source\core\api\CacheSet.cxx
+source\core\api\callablestatement.cxx
+source\core\api\CIndexes.cxx
+source\core\api\column.cxx
+source\core\api\columnsettings.cxx
+source\core\api\CRowSetColumn.cxx
+source\core\api\CRowSetDataColumn.cxx
+source\core\api\datacolumn.cxx
+source\core\api\datasettings.cxx
+source\core\api\definitioncolumn.cxx
+source\core\api\FilteredContainer.cxx
+source\core\api\HelperCollections.cxx
+source\core\api\KeySet.cxx
+source\core\api\OptimisticSet.cxx
+source\core\api\preparedstatement.cxx
+source\core\api\PrivateRow.cxx
+source\core\api\query.cxx
+source\core\api\querycomposer.cxx
+source\core\api\querycontainer.cxx
+source\core\api\querydescriptor.cxx
+source\core\api\resultcolumn.cxx
+source\core\api\resultset.cxx
+source\core\api\RowSet.cxx
+source\core\api\RowSetBase.cxx
+source\core\api\RowSetCache.cxx
+source\core\api\RowSetCacheIterator.cxx
+source\core\api\SingleSelectQueryComposer.cxx
+source\core\api\statement.cxx
+source\core\api\StaticSet.cxx
+source\core\api\table.cxx
+source\core\api\tablecontainer.cxx
+source\core\api\TableDeco.cxx
+source\core\api\View.cxx
+source\core\api\viewcontainer.cxx
+source\core\api\WrappedResultSet.cxx
+source\core\dataaccess\bookmarkcontainer.cxx
+source\core\dataaccess\commandcontainer.cxx
+source\core\dataaccess\commanddefinition.cxx
+source\core\dataaccess\ComponentDefinition.cxx
+source\core\dataaccess\connection.cxx
+source\core\dataaccess\ContentHelper.cxx
+source\core\dataaccess\dataaccessdescriptor.cxx
+source\core\dataaccess\databasecontext.cxx
+source\core\dataaccess\databasedocument.cxx
+source\core\dataaccess\databaseregistrations.cxx
+source\core\dataaccess\datasource.cxx
+source\core\dataaccess\definitioncontainer.cxx
+source\core\dataaccess\documentcontainer.cxx
+source\core\dataaccess\documentdefinition.cxx
+source\core\dataaccess\documenteventexecutor.cxx
+source\core\dataaccess\documenteventnotifier.cxx
+source\core\dataaccess\documentevents.cxx
+source\core\dataaccess\intercept.cxx
+source\core\dataaccess\ModelImpl.cxx
+source\core\dataaccess\myucp_datasupplier.cxx
+source\core\dataaccess\myucp_resultset.cxx
+source\core\dataaccess\SharedConnection.cxx
+source\core\misc\apitools.cxx
+source\core\misc\ContainerListener.cxx
+source\core\misc\ContainerMediator.cxx
+source\core\misc\DatabaseDataProvider.cxx
+source\core\misc\dbastrings.cxx
+source\core\misc\dsntypes.cxx
+source\core\misc\module_dba.cxx
+source\core\misc\objectnameapproval.cxx
+source\core\misc\PropertyForward.cxx
+source\core\misc\sdbcoretools.cxx
+source\core\misc\services.cxx
+source\core\misc\userinformation.cxx
+source\core\misc\veto.cxx
+source\core\recovery\dbdocrecovery.cxx
+source\core\recovery\settingsimport.cxx
+source\core\recovery\storagestream.cxx
+source\core\recovery\storagetextstream.cxx
+source\core\recovery\storagexmlstream.cxx
+source\core\recovery\subcomponentloader.cxx
+source\core\recovery\subcomponentrecovery.cxx
+source\core\resource\core_resource.cxx
+source\ext\adabas\Acomponentmodule.cxx
+source\ext\adabas\AdabasNewDb.cxx
+source\ext\adabas\adabasuistrings.cxx
+source\ext\adabas\ANewDb.cxx
+source\ext\adabas\Aservices.cxx
+source\ext\adabas\ASqlNameEdit.cxx
+source\ext\adabas\Astringconstants.cxx
+source\ext\macromigration\dbmm_module.cxx
+source\ext\macromigration\dbmm_services.cxx
+source\ext\macromigration\dbmm_types.cxx
+source\ext\macromigration\docinteraction.cxx
+source\ext\macromigration\macromigrationdialog.cxx
+source\ext\macromigration\macromigrationpages.cxx
+source\ext\macromigration\macromigrationwizard.cxx
+source\ext\macromigration\migrationengine.cxx
+source\ext\macromigration\migrationlog.cxx
+source\ext\macromigration\progresscapture.cxx
+source\ext\macromigration\progressmixer.cxx
+source\filter\xml\dbloader2.cxx
+source\filter\xml\xmlAutoStyle.cxx
+source\filter\xml\xmlColumn.cxx
+source\filter\xml\xmlComponent.cxx
+source\filter\xml\xmlConnectionData.cxx
+source\filter\xml\xmlConnectionResource.cxx
+source\filter\xml\xmlDatabase.cxx
+source\filter\xml\xmlDatabaseDescription.cxx
+source\filter\xml\xmlDataSource.cxx
+source\filter\xml\xmlDataSourceInfo.cxx
+source\filter\xml\xmlDataSourceSetting.cxx
+source\filter\xml\xmlDataSourceSettings.cxx
+source\filter\xml\xmlDocuments.cxx
+source\filter\xml\xmlExport.cxx
+source\filter\xml\xmlFileBasedDatabase.cxx
+source\filter\xml\xmlfilter.cxx
+source\filter\xml\xmlHelper.cxx
+source\filter\xml\xmlHierarchyCollection.cxx
+source\filter\xml\xmlLogin.cxx
+source\filter\xml\xmlQuery.cxx
+source\filter\xml\xmlServerDatabase.cxx
+source\filter\xml\xmlservices.cxx
+source\filter\xml\xmlStyleImport.cxx
+source\filter\xml\xmlTable.cxx
+source\filter\xml\xmlTableFilterList.cxx
+source\filter\xml\xmlTableFilterPattern.cxx
+source\sdbtools\connection\connectiontools.cxx
+source\sdbtools\connection\datasourcemetadata.cxx
+source\sdbtools\connection\objectnames.cxx
+source\sdbtools\connection\tablename.cxx
+source\sdbtools\misc\module_sdbt.cxx
+source\sdbtools\misc\sdbt_services.cxx
+source\shared\dbustrings.cxx
+source\shared\dbu_reghelper.cxx
+source\shared\flt_reghelper.cxx
+source\shared\registrationhelper.cxx
+source\shared\sdbtstrings.cxx
+source\shared\xmlstrings.cxx
+source\ui\app\AppController.cxx
+source\ui\app\AppControllerDnD.cxx
+source\ui\app\AppControllerGen.cxx
+source\ui\app\AppDetailPageHelper.cxx
+source\ui\app\AppDetailView.cxx
+source\ui\app\AppIconControl.cxx
+source\ui\app\AppSwapWindow.cxx
+source\ui\app\AppTitleWindow.cxx
+source\ui\app\AppView.cxx
+source\ui\app\closeveto.cxx
+source\ui\app\subcomponentmanager.cxx
+source\ui\browser\AsyncronousLink.cxx
+source\ui\browser\brwctrlr.cxx
+source\ui\browser\brwview.cxx
+source\ui\browser\dataview.cxx
+source\ui\browser\dbexchange.cxx
+source\ui\browser\dbloader.cxx
+source\ui\browser\dbtreemodel.cxx
+source\ui\browser\dbtreeview.cxx
+source\ui\browser\dsbrowserDnD.cxx
+source\ui\browser\dsEntriesNoExp.cxx
+source\ui\browser\exsrcbrw.cxx
+source\ui\browser\formadapter.cxx
+source\ui\browser\genericcontroller.cxx
+source\ui\browser\sbagrid.cxx
+source\ui\browser\sbamultiplex.cxx
+source\ui\browser\unodatbr.cxx
+source\ui\control\charsetlistbox.cxx
+source\ui\control\ColumnControlWindow.cxx
+source\ui\control\curledit.cxx
+source\ui\control\dbtreelistbox.cxx
+source\ui\control\FieldDescControl.cxx
+source\ui\control\listviewitems.cxx
+source\ui\control\marktree.cxx
+source\ui\control\opendoccontrols.cxx
+source\ui\control\RelationControl.cxx
+source\ui\control\ScrollHelper.cxx
+source\ui\control\sqledit.cxx
+source\ui\control\SqlNameEdit.cxx
+source\ui\control\TableGrantCtrl.cxx
+source\ui\control\tabletree.cxx
+source\ui\control\toolboxcontroller.cxx
+source\ui\control\undosqledit.cxx
+source\ui\control\VertSplitView.cxx
+source\ui\dlg\AdabasStat.cxx
+source\ui\dlg\admincontrols.cxx
+source\ui\dlg\adminpages.cxx
+source\ui\dlg\adodatalinks.cxx
+source\ui\dlg\adtabdlg.cxx
+source\ui\dlg\advancedsettings.cxx
+source\ui\dlg\CollectionView.cxx
+source\ui\dlg\ConnectionHelper.cxx
+source\ui\dlg\ConnectionPage.cxx
+source\ui\dlg\ConnectionPageSetup.cxx
+source\ui\dlg\dbadmin.cxx
+source\ui\dlg\DbAdminImpl.cxx
+source\ui\dlg\dbfindex.cxx
+source\ui\dlg\DBSetupConnectionPages.cxx
+source\ui\dlg\dbwiz.cxx
+source\ui\dlg\dbwizsetup.cxx
+source\ui\dlg\detailpages.cxx
+source\ui\dlg\directsql.cxx
+source\ui\dlg\dlgattr.cxx
+source\ui\dlg\dlgsave.cxx
+source\ui\dlg\dlgsize.cxx
+source\ui\dlg\DriverSettings.cxx
+source\ui\dlg\dsselect.cxx
+source\ui\dlg\finteraction.cxx
+source\ui\dlg\generalpage.cxx
+source\ui\dlg\indexdialog.cxx
+source\ui\dlg\indexfieldscontrol.cxx
+source\ui\dlg\odbcconfig.cxx
+source\ui\dlg\optionalboolitem.cxx
+source\ui\dlg\paramdialog.cxx
+source\ui\dlg\queryfilter.cxx
+source\ui\dlg\queryorder.cxx
+source\ui\dlg\RelationDlg.cxx
+source\ui\dlg\sqlmessage.cxx
+source\ui\dlg\tablespage.cxx
+source\ui\dlg\TablesSingleDlg.cxx
+source\ui\dlg\TextConnectionHelper.cxx
+source\ui\dlg\textconnectionsettings.cxx
+source\ui\dlg\UserAdmin.cxx
+source\ui\dlg\UserAdminDlg.cxx
+source\ui\misc\asyncmodaldialog.cxx
+source\ui\misc\charsets.cxx
+source\ui\misc\controllerframe.cxx
+source\ui\misc\databaseobjectview.cxx
+source\ui\misc\datasourceconnector.cxx
+source\ui\misc\dbaundomanager.cxx
+source\ui\misc\dbsubcomponentcontroller.cxx
+source\ui\misc\defaultobjectnamecheck.cxx
+source\ui\misc\DExport.cxx
+source\ui\misc\dsmeta.cxx
+source\ui\misc\HtmlReader.cxx
+source\ui\misc\imageprovider.cxx
+source\ui\misc\indexcollection.cxx
+source\ui\misc\linkeddocuments.cxx
+source\ui\misc\moduledbu.cxx
+source\ui\misc\ModuleHelper.cxx
+source\ui\misc\propertysetitem.cxx
+source\ui\misc\propertystorage.cxx
+source\ui\misc\RowSetDrop.cxx
+source\ui\misc\RtfReader.cxx
+source\ui\misc\singledoccontroller.cxx
+source\ui\misc\stringlistitem.cxx
+source\ui\misc\TableCopyHelper.cxx
+source\ui\misc\TokenWriter.cxx
+source\ui\misc\ToolBoxHelper.cxx
+source\ui\misc\uiservices.cxx
+source\ui\misc\UITools.cxx
+source\ui\misc\WColumnSelect.cxx
+source\ui\misc\WCopyTable.cxx
+source\ui\misc\WCPage.cxx
+source\ui\misc\WExtendPages.cxx
+source\ui\misc\WNameMatch.cxx
+source\ui\misc\WTypeSelect.cxx
+source\ui\querydesign\ConnectionLine.cxx
+source\ui\querydesign\ConnectionLineAccess.cxx
+source\ui\querydesign\ConnectionLineData.cxx
+source\ui\querydesign\JAccess.cxx
+source\ui\querydesign\JoinController.cxx
+source\ui\querydesign\JoinDesignView.cxx
+source\ui\querydesign\JoinExchange.cxx
+source\ui\querydesign\JoinTableView.cxx
+source\ui\querydesign\QTableConnection.cxx
+source\ui\querydesign\QTableConnectionData.cxx
+source\ui\querydesign\QTableWindow.cxx
+source\ui\querydesign\QTableWindowData.cxx
+source\ui\querydesign\querycontainerwindow.cxx
+source\ui\querydesign\querycontroller.cxx
+source\ui\querydesign\QueryDesignView.cxx
+source\ui\querydesign\querydlg.cxx
+source\ui\querydesign\QueryMoveTabWinUndoAct.cxx
+source\ui\querydesign\QueryTabConnUndoAction.cxx
+source\ui\querydesign\QueryTableView.cxx
+source\ui\querydesign\QueryTabWinUndoAct.cxx
+source\ui\querydesign\QueryTextView.cxx
+source\ui\querydesign\queryview.cxx
+source\ui\querydesign\QueryViewSwitch.cxx
+source\ui\querydesign\SelectionBrowseBox.cxx
+source\ui\querydesign\TableConnection.cxx
+source\ui\querydesign\TableConnectionData.cxx
+source\ui\querydesign\TableFieldDescription.cxx
+source\ui\querydesign\TableFieldInfo.cxx
+source\ui\querydesign\TableWindow.cxx
+source\ui\querydesign\TableWindowAccess.cxx
+source\ui\querydesign\TableWindowData.cxx
+source\ui\querydesign\TableWindowListBox.cxx
+source\ui\querydesign\TableWindowTitle.cxx
+source\ui\relationdesign\RelationController.cxx
+source\ui\relationdesign\RelationDesignView.cxx
+source\ui\relationdesign\RelationTableView.cxx
+source\ui\relationdesign\RTableConnection.cxx
+source\ui\relationdesign\RTableConnectionData.cxx
+source\ui\tabledesign\FieldDescGenWin.cxx
+source\ui\tabledesign\FieldDescriptions.cxx
+source\ui\tabledesign\TableController.cxx
+source\ui\tabledesign\TableDesignControl.cxx
+source\ui\tabledesign\TableDesignHelpBar.cxx
+source\ui\tabledesign\TableDesignView.cxx
+source\ui\tabledesign\TableFieldControl.cxx
+source\ui\tabledesign\TableFieldDescWin.cxx
+source\ui\tabledesign\TableRow.cxx
+source\ui\tabledesign\TableRowExchange.cxx
+source\ui\tabledesign\TableUndo.cxx
+source\ui\tabledesign\TEditControl.cxx
+source\ui\uno\AdabasSettingsDlg.cxx
+source\ui\uno\admindlg.cxx
+source\ui\uno\AdvancedSettingsDlg.cxx
+source\ui\uno\ColumnControl.cxx
+source\ui\uno\ColumnModel.cxx
+source\ui\uno\ColumnPeer.cxx
+source\ui\uno\composerdialogs.cxx
+source\ui\uno\copytablewizard.cxx
+source\ui\uno\dbinteraction.cxx
+source\ui\uno\DBTypeWizDlg.cxx
+source\ui\uno\DBTypeWizDlgSetup.cxx
+source\ui\uno\TableFilterDlg.cxx
+source\ui\uno\textconnectionsettings_uno.cxx
+source\ui\uno\unoadmin.cxx
+source\ui\uno\unoDirectSql.cxx
+source\ui\uno\unosqlmessage.cxx
+source\ui\uno\UserSettingsDlg.cxx
+win32\source\odbcconfig\odbcconfig.cxx
+
+Header Files:
+inc\AsyncronousLink.hxx
+inc\controllerframe.hxx
+inc\dataview.hxx
+inc\dbaccessdllapi.h
+inc\dbaccess_helpid.hrc
+inc\dbaccess_slotid.hrc
+inc\dbaundomanager.hxx
+inc\dbsubcomponentcontroller.hxx
+inc\genericcontroller.hxx
+inc\IController.hxx
+inc\IReference.hxx
+inc\ToolBoxHelper.hxx
+inc\pch\precompiled_dbaccess.hxx
+source\core\api\BookmarkSet.hxx
+source\core\api\CacheSet.hxx
+source\core\api\CIndexColumn.hxx
+source\core\api\CIndexes.hxx
+source\core\api\CRowSetColumn.hxx
+source\core\api\CRowSetDataColumn.hxx
+source\core\api\datacolumn.hxx
+source\core\api\HelperCollections.hxx
+source\core\api\KeySet.hxx
+source\core\api\OptimisticSet.hxx
+source\core\api\PrivateRow.hxx
+source\core\api\query.hxx
+source\core\api\querydescriptor.hxx
+source\core\api\resultcolumn.hxx
+source\core\api\resultset.hxx
+source\core\api\RowSet.hxx
+source\core\api\RowSetBase.hxx
+source\core\api\RowSetCache.hxx
+source\core\api\RowSetCacheIterator.hxx
+source\core\api\RowSetRow.hxx
+source\core\api\StaticSet.hxx
+source\core\api\WrappedResultSet.hxx
+source\core\dataaccess\bookmarkcontainer.hxx
+source\core\dataaccess\commandcontainer.hxx
+source\core\dataaccess\commanddefinition.hxx
+source\core\dataaccess\ComponentDefinition.hxx
+source\core\dataaccess\connection.hxx
+source\core\dataaccess\databasecontext.hxx
+source\core\dataaccess\databasedocument.hxx
+source\core\dataaccess\databaseregistrations.hxx
+source\core\dataaccess\datasource.hxx
+source\core\dataaccess\documentcontainer.hxx
+source\core\dataaccess\documentdefinition.hxx
+source\core\dataaccess\documenteventexecutor.hxx
+source\core\dataaccess\documenteventnotifier.hxx
+source\core\dataaccess\documentevents.hxx
+source\core\dataaccess\intercept.hxx
+source\core\dataaccess\ModelImpl.hxx
+source\core\dataaccess\myucp_datasupplier.hxx
+source\core\dataaccess\myucp_resultset.hxx
+source\core\dataaccess\SharedConnection.hxx
+source\core\inc\callablestatement.hxx
+source\core\inc\column.hxx
+source\core\inc\columnsettings.hxx
+source\core\inc\commandbase.hxx
+source\core\inc\composertools.hxx
+source\core\inc\containerapprove.hxx
+source\core\inc\ContainerListener.hxx
+source\core\inc\ContainerMediator.hxx
+source\core\inc\ContentHelper.hxx
+source\core\inc\core_resource.hrc
+source\core\inc\core_resource.hxx
+source\core\inc\DatabaseDataProvider.hxx
+source\core\inc\datasettings.hxx
+source\core\inc\dbamiscres.hrc
+source\core\inc\definitioncolumn.hxx
+source\core\inc\definitioncontainer.hxx
+source\core\inc\FilteredContainer.hxx
+source\core\inc\module_dba.hxx
+source\core\inc\object.hxx
+source\core\inc\objectnameapproval.hxx
+source\core\inc\preparedstatement.hxx
+source\core\inc\PropertyForward.hxx
+source\core\inc\querycomposer.hxx
+source\core\inc\querycontainer.hxx
+source\core\inc\RefreshListener.hxx
+source\core\inc\sdbcoretools.hxx
+source\core\inc\SingleSelectQueryComposer.hxx
+source\core\inc\statement.hxx
+source\core\inc\table.hxx
+source\core\inc\tablecontainer.hxx
+source\core\inc\TableDeco.hxx
+source\core\inc\userinformation.hxx
+source\core\inc\veto.hxx
+source\core\inc\View.hxx
+source\core\inc\viewcontainer.hxx
+source\core\inc\recovery\dbdocrecovery.hxx
+source\core\recovery\settingsimport.hxx
+source\core\recovery\storagestream.hxx
+source\core\recovery\storagetextstream.hxx
+source\core\recovery\storagexmlstream.hxx
+source\core\recovery\subcomponentloader.hxx
+source\core\recovery\subcomponentrecovery.hxx
+source\core\recovery\subcomponents.hxx
+source\ext\adabas\Acomponentmodule.hxx
+source\ext\adabas\AdabasNewDb.hrc
+source\ext\adabas\AdabasNewDb.hxx
+source\ext\adabas\adabasuistrings.hrc
+source\ext\adabas\adabasui_resource.hrc
+source\ext\adabas\ANewDb.hxx
+source\ext\adabas\ASQLNameEdit.hxx
+source\ext\adabas\Astringconstants.hrc
+source\ext\macromigration\dbmm_global.hrc
+source\ext\macromigration\dbmm_module.hxx
+source\ext\macromigration\dbmm_types.hxx
+source\ext\macromigration\docinteraction.hxx
+source\ext\macromigration\macromigration.hrc
+source\ext\macromigration\macromigrationdialog.hxx
+source\ext\macromigration\macromigrationpages.hxx
+source\ext\macromigration\migrationengine.hxx
+source\ext\macromigration\migrationerror.hxx
+source\ext\macromigration\migrationlog.hxx
+source\ext\macromigration\migrationprogress.hxx
+source\ext\macromigration\progresscapture.hxx
+source\ext\macromigration\progressmixer.hxx
+source\ext\macromigration\rangeprogressbar.hxx
+source\filter\xml\xmlAutoStyle.hxx
+source\filter\xml\xmlColumn.hxx
+source\filter\xml\xmlComponent.hxx
+source\filter\xml\xmlConnectionData.hxx
+source\filter\xml\xmlConnectionResource.hxx
+source\filter\xml\xmlDatabase.hxx
+source\filter\xml\xmlDatabaseDescription.hxx
+source\filter\xml\xmlDataSource.hxx
+source\filter\xml\xmlDataSourceInfo.hxx
+source\filter\xml\xmlDataSourceSetting.hxx
+source\filter\xml\xmlDataSourceSettings.hxx
+source\filter\xml\xmlDocuments.hxx
+source\filter\xml\xmlEnums.hxx
+source\filter\xml\xmlExport.hxx
+source\filter\xml\xmlFileBasedDatabase.hxx
+source\filter\xml\xmlfilter.hxx
+source\filter\xml\xmlHelper.hxx
+source\filter\xml\xmlHierarchyCollection.hxx
+source\filter\xml\xmlLogin.hxx
+source\filter\xml\xmlQuery.hxx
+source\filter\xml\xmlServerDatabase.hxx
+source\filter\xml\xmlStyleImport.hxx
+source\filter\xml\xmlTable.hxx
+source\filter\xml\xmlTableFilterList.hxx
+source\filter\xml\xmlTableFilterPattern.hxx
+source\inc\apitools.hxx
+source\inc\constasciistring.hxx
+source\inc\dbadllapi.hxx
+source\inc\dbastrings.hrc
+source\inc\dbustrings.hrc
+source\inc\dbu_reghelper.hxx
+source\inc\dsntypes.hxx
+source\inc\flt_reghelper.hxx
+source\inc\OAuthenticationContinuation.hxx
+source\inc\registrationhelper.hxx
+source\inc\sdbtstrings.hrc
+source\inc\stringconstants.hrc
+source\inc\xmlstrings.hrc
+source\sdbtools\connection\connectiondependent.hxx
+source\sdbtools\connection\connectiontools.hxx
+source\sdbtools\connection\datasourcemetadata.hxx
+source\sdbtools\connection\objectnames.hxx
+source\sdbtools\connection\tablename.hxx
+source\sdbtools\inc\module_sdbt.hxx
+source\sdbtools\inc\sdbt_resource.hrc
+source\ui\app\AppController.hxx
+source\ui\app\AppDetailPageHelper.hxx
+source\ui\app\AppDetailView.hxx
+source\ui\app\AppIconControl.hxx
+source\ui\app\AppSwapWindow.hxx
+source\ui\app\AppTitleWindow.hxx
+source\ui\app\AppView.hxx
+source\ui\app\closeveto.hxx
+source\ui\app\dbu_app.hrc
+source\ui\app\IApplicationController.hxx
+source\ui\app\subcomponentmanager.hxx
+source\ui\browser\dbtreemodel.hxx
+source\ui\browser\dbtreeview.hxx
+source\ui\control\tabletree.hrc
+source\ui\dlg\AdabasPage.hrc
+source\ui\dlg\AdabasStat.hrc
+source\ui\dlg\AdabasStat.hxx
+source\ui\dlg\admincontrols.hrc
+source\ui\dlg\admincontrols.hxx
+source\ui\dlg\adminpages.hxx
+source\ui\dlg\adodatalinks.hxx
+source\ui\dlg\adtabdlg.hrc
+source\ui\dlg\advancedsettings.hrc
+source\ui\dlg\advancedsettings.hxx
+source\ui\dlg\AutoControls_tmpl.hrc
+source\ui\dlg\CollectionView.hrc
+source\ui\dlg\ConnectionHelper.hxx
+source\ui\dlg\ConnectionPage.hrc
+source\ui\dlg\ConnectionPage.hxx
+source\ui\dlg\ConnectionPageSetup.hxx
+source\ui\dlg\dbadmin.hrc
+source\ui\dlg\DbAdminImpl.hxx
+source\ui\dlg\dbadminsetup.hrc
+source\ui\dlg\dbfindex.hrc
+source\ui\dlg\dbfindex.hxx
+source\ui\dlg\DBSetupConnectionPages.hxx
+source\ui\dlg\detailpages.hxx
+source\ui\dlg\directsql.hrc
+source\ui\dlg\dlgsave.hrc
+source\ui\dlg\dlgsize.hrc
+source\ui\dlg\DriverSettings.hxx
+source\ui\dlg\dsnItem.hxx
+source\ui\dlg\dsselect.hrc
+source\ui\dlg\dsselect.hxx
+source\ui\dlg\finteraction.hxx
+source\ui\dlg\generalpage.hxx
+source\ui\dlg\indexdialog.hrc
+source\ui\dlg\odbcconfig.hxx
+source\ui\dlg\optionalboolitem.hxx
+source\ui\dlg\paramdialog.hrc
+source\ui\dlg\queryfilter.hrc
+source\ui\dlg\queryorder.hrc
+source\ui\dlg\RelationDlg.hrc
+source\ui\dlg\sqlmessage.hrc
+source\ui\dlg\tablespage.hxx
+source\ui\dlg\TextConnectionHelper.hxx
+source\ui\dlg\UserAdmin.hrc
+source\ui\dlg\UserAdmin.hxx
+source\ui\dlg\UserAdminDlg.hrc
+source\ui\inc\AccessibleBaseIFace.hxx
+source\ui\inc\adtabdlg.hxx
+source\ui\inc\advancedsettingsdlg.hxx
+source\ui\inc\AppElementType.hxx
+source\ui\inc\asyncmodaldialog.hxx
+source\ui\inc\browserids.hxx
+source\ui\inc\brwctrlr.hxx
+source\ui\inc\brwview.hxx
+source\ui\inc\callbacks.hxx
+source\ui\inc\charsetlistbox.hxx
+source\ui\inc\charsets.hxx
+source\ui\inc\CollectionView.hxx
+source\ui\inc\ColumnControlWindow.hxx
+source\ui\inc\commontypes.hxx
+source\ui\inc\ConnectionLine.hxx
+source\ui\inc\ConnectionLineAccess.hxx
+source\ui\inc\ConnectionLineData.hxx
+source\ui\inc\curledit.hxx
+source\ui\inc\databaseobjectview.hxx
+source\ui\inc\datasourceconnector.hxx
+source\ui\inc\datasourcemap.hxx
+source\ui\inc\dbadmin.hxx
+source\ui\inc\dbexchange.hxx
+source\ui\inc\dbtreelistbox.hxx
+source\ui\inc\dbu_brw.hrc
+source\ui\inc\dbu_control.hrc
+source\ui\inc\dbu_dlg.hrc
+source\ui\inc\dbu_misc.hrc
+source\ui\inc\dbu_qry.hrc
+source\ui\inc\dbu_rel.hrc
+source\ui\inc\dbu_resource.hrc
+source\ui\inc\dbu_tbl.hrc
+source\ui\inc\dbu_uno.hrc
+source\ui\inc\dbwiz.hxx
+source\ui\inc\dbwizsetup.hxx
+source\ui\inc\defaultobjectnamecheck.hxx
+source\ui\inc\DExport.hxx
+source\ui\inc\directsql.hxx
+source\ui\inc\dlgattr.hrc
+source\ui\inc\dlgattr.hxx
+source\ui\inc\dlgsave.hxx
+source\ui\inc\dlgsize.hxx
+source\ui\inc\dsitems.hxx
+source\ui\inc\dsmeta.hxx
+source\ui\inc\exsrcbrw.hxx
+source\ui\inc\FieldControls.hxx
+source\ui\inc\FieldDescControl.hxx
+source\ui\inc\FieldDescriptions.hxx
+source\ui\inc\formadapter.hxx
+source\ui\inc\GeneralUndo.hxx
+source\ui\inc\HtmlReader.hxx
+source\ui\inc\IClipBoardTest.hxx
+source\ui\inc\IItemSetHelper.hxx
+source\ui\inc\imageprovider.hxx
+source\ui\inc\indexcollection.hxx
+source\ui\inc\indexdialog.hxx
+source\ui\inc\indexes.hxx
+source\ui\inc\indexfieldscontrol.hxx
+source\ui\inc\IUpdateHelper.hxx
+source\ui\inc\JAccess.hxx
+source\ui\inc\JoinController.hxx
+source\ui\inc\JoinDesignView.hxx
+source\ui\inc\JoinExchange.hxx
+source\ui\inc\JoinTableView.hxx
+source\ui\inc\linkeddocuments.hxx
+source\ui\inc\listviewitems.hxx
+source\ui\inc\localresaccess.hxx
+source\ui\inc\marktree.hxx
+source\ui\inc\moduledbu.hxx
+source\ui\inc\objectnamecheck.hxx
+source\ui\inc\opendoccontrols.hxx
+source\ui\inc\paramdialog.hxx
+source\ui\inc\propertysetitem.hxx
+source\ui\inc\propertystorage.hxx
+source\ui\inc\QEnumTypes.hxx
+source\ui\inc\querycontainerwindow.hxx
+source\ui\inc\querycontroller.hxx
+source\ui\inc\QueryDesignView.hxx
+source\ui\inc\queryfilter.hxx
+source\ui\inc\queryorder.hxx
+source\ui\inc\QueryTableView.hxx
+source\ui\inc\QueryTextView.hxx
+source\ui\inc\queryview.hxx
+source\ui\inc\QueryViewSwitch.hxx
+source\ui\inc\RefFunctor.hxx
+source\ui\inc\RelationControl.hrc
+source\ui\inc\RelationControl.hxx
+source\ui\inc\RelationController.hxx
+source\ui\inc\RelationDesignView.hxx
+source\ui\inc\RelationDlg.hxx
+source\ui\inc\RelationTableView.hxx
+source\ui\inc\RelControliFace.hxx
+source\ui\inc\RTableConnectionData.hxx
+source\ui\inc\RtfReader.hxx
+source\ui\inc\sbagrid.hrc
+source\ui\inc\sbagrid.hxx
+source\ui\inc\sbamultiplex.hxx
+source\ui\inc\ScrollHelper.hxx
+source\ui\inc\singledoccontroller.hxx
+source\ui\inc\sqledit.hxx
+source\ui\inc\sqlmessage.hxx
+source\ui\inc\SqlNameEdit.hxx
+source\ui\inc\stringlistitem.hxx
+source\ui\inc\TableConnection.hxx
+source\ui\inc\TableConnectionData.hxx
+source\ui\inc\TableController.hxx
+source\ui\inc\TableCopyHelper.hxx
+source\ui\inc\TableDesignControl.hxx
+source\ui\inc\TableDesignHelpBar.hxx
+source\ui\inc\TableDesignView.hxx
+source\ui\inc\TableFieldDescription.hxx
+source\ui\inc\TableGrantCtrl.hxx
+source\ui\inc\TableRow.hxx
+source\ui\inc\TableRowExchange.hxx
+source\ui\inc\TablesSingleDlg.hxx
+source\ui\inc\tabletree.hxx
+source\ui\inc\TableWindow.hxx
+source\ui\inc\TableWindowAccess.hxx
+source\ui\inc\TableWindowData.hxx
+source\ui\inc\TableWindowListBox.hxx
+source\ui\inc\TableWindowTitle.hxx
+source\ui\inc\textconnectionsettings.hxx
+source\ui\inc\TokenWriter.hxx
+source\ui\inc\toolboxcontroller.hxx
+source\ui\inc\toolbox_tmpl.hrc
+source\ui\inc\TypeInfo.hxx
+source\ui\inc\UITools.hxx
+source\ui\inc\undosqledit.hxx
+source\ui\inc\unoadmin.hxx
+source\ui\inc\unodatbr.hxx
+source\ui\inc\unosqlmessage.hxx
+source\ui\inc\UserAdminDlg.hxx
+source\ui\inc\VertSplitView.hxx
+source\ui\inc\WColumnSelect.hxx
+source\ui\inc\WCopyTable.hxx
+source\ui\inc\WCPage.hxx
+source\ui\inc\WExtendPages.hxx
+source\ui\inc\WNameMatch.hxx
+source\ui\inc\WTabPage.hxx
+source\ui\inc\WTypeSelect.hxx
+source\ui\misc\dbumiscres.hrc
+source\ui\misc\UpdateHelperImpl.hxx
+source\ui\misc\WizardPages.hrc
+source\ui\querydesign\ConnectionData.hxx
+source\ui\querydesign\QTableConnection.hxx
+source\ui\querydesign\QTableConnectionData.hxx
+source\ui\querydesign\QTableWindow.hxx
+source\ui\querydesign\QTableWindowData.hxx
+source\ui\querydesign\Query.hrc
+source\ui\querydesign\QueryAddTabConnUndoAction.hxx
+source\ui\querydesign\QueryDesignFieldUndoAct.hxx
+source\ui\querydesign\QueryDesignUndoAction.hxx
+source\ui\querydesign\querydlg.hrc
+source\ui\querydesign\querydlg.hxx
+source\ui\querydesign\QueryMoveTabWinUndoAct.hxx
+source\ui\querydesign\QuerySizeTabWinUndoAct.hxx
+source\ui\querydesign\QueryTabConnUndoAction.hxx
+source\ui\querydesign\QueryTabWinShowUndoAct.hxx
+source\ui\querydesign\QueryTabWinUndoAct.hxx
+source\ui\querydesign\SelectionBrowseBox.hxx
+source\ui\querydesign\TableFieldInfo.hxx
+source\ui\relationdesign\RTableConnection.hxx
+source\ui\relationdesign\RTableWindow.hxx
+source\ui\tabledesign\FieldDescGenWin.hxx
+source\ui\tabledesign\TableFieldControl.hxx
+source\ui\tabledesign\TableFieldDescWin.hxx
+source\ui\tabledesign\TableUndo.hxx
+source\ui\tabledesign\TEditControl.hxx
+source\ui\uno\AdabasSettingsDlg.hxx
+source\ui\uno\admindlg.hxx
+source\ui\uno\ColumnControl.hxx
+source\ui\uno\ColumnModel.hxx
+source\ui\uno\ColumnPeer.hxx
+source\ui\uno\composerdialogs.hxx
+source\ui\uno\dbinteraction.hxx
+source\ui\uno\DBTypeWizDlg.hxx
+source\ui\uno\DBTypeWizDlgSetup.hxx
+source\ui\uno\TableFilterDlg.hxx
+source\ui\uno\unoDirectSql.hxx
+source\ui\uno\UserSettingsDlg.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=inc
+
+qa\complex\dbaccess\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=qa_complex_dbaccess
+
+qa\unoapi\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=qa_unoapi
+
+source\core\api\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=api
+	SLOFILES=
+	$(SLO)$/querydescriptor.obj
+	$(SLO)$/FilteredContainer.obj
+	$(SLO)$/TableDeco.obj
+	$(SLO)$/RowSetCacheIterator.obj
+	$(SLO)$/RowSet.obj
+	$(SLO)$/column.obj
+	$(SLO)$/RowSetBase.obj
+	$(SLO)$/CRowSetDataColumn.obj
+	$(SLO)$/CRowSetColumn.obj
+	$(SLO)$/querycomposer.obj
+	$(SLO)$/CIndexes.obj
+	$(SLO)$/BookmarkSet.obj
+	$(SLO)$/KeySet.obj
+	$(SLO)$/StaticSet.obj
+	$(SLO)$/CacheSet.obj
+	$(SLO)$/RowSetCache.obj
+	$(SLO)$/definitioncolumn.obj
+	$(SLO)$/resultcolumn.obj
+	$(SLO)$/datacolumn.obj
+	$(SLO)$/resultset.obj
+	$(SLO)$/statement.obj
+	$(SLO)$/preparedstatement.obj
+	$(SLO)$/callablestatement.obj
+	$(SLO)$/query.obj
+	$(SLO)$/querycontainer.obj
+	$(SLO)$/table.obj
+	$(SLO)$/viewcontainer.obj
+	$(SLO)$/tablecontainer.obj
+	$(SLO)$/SingleSelectQueryComposer.obj
+	$(SLO)$/HelperCollections.obj
+	$(SLO)$/datasettings.obj
+	$(SLO)$/View.obj
+	$(SLO)$/WrappedResultSet.obj
+	$(SLO)$/OptimisticSet.obj
+	$(SLO)$/PrivateRow.obj
+	$(SLO)$/columnsettings.obj
+
+source\core\dataaccess\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=dataaccess
+	SLOFILES=
+	$(SLO)$/SharedConnection.obj
+	$(SLO)$/ContentHelper.obj
+	$(SLO)$/bookmarkcontainer.obj
+	$(SLO)$/definitioncontainer.obj
+	$(SLO)$/commanddefinition.obj
+	$(SLO)$/documentcontainer.obj
+	$(SLO)$/commandcontainer.obj
+	$(SLO)$/documentdefinition.obj
+	$(SLO)$/ComponentDefinition.obj
+	$(SLO)$/databasecontext.obj
+	$(SLO)$/connection.obj
+	$(SLO)$/datasource.obj
+	$(SLO)$/databaseregistrations.obj
+	$(SLO)$/intercept.obj
+	$(SLO)$/myucp_datasupplier.obj
+	$(SLO)$/myucp_resultset.obj
+	$(SLO)$/databasedocument.obj
+	$(SLO)$/dataaccessdescriptor.obj
+	$(SLO)$/ModelImpl.obj
+	$(SLO)$/documentevents.obj
+	$(SLO)$/documenteventexecutor.obj
+	$(SLO)$/documenteventnotifier.obj
+	
+
+source\core\misc\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=misc
+	SLOFILES=
+	$(SLO)$/sdbcoretools.obj
+	$(SLO)$/services.obj
+	$(SLO)$/PropertyForward.obj
+	$(SLO)$/ContainerMediator.obj
+	$(SLO)$/userinformation.obj
+	$(SLO)$/ContainerListener.obj
+	$(SLO)$/objectnameapproval.obj
+	$(SLO)$/DatabaseDataProvider.obj
+	$(SLO)$/module_dba.obj
+	$(SLO)$/dsntypes.obj
+	$(SLO)$/veto.obj
+	$(SLO)$/apitools.obj
+	$(SLO)$/dbastrings.obj
+
+source\core\recovery\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=recovery
+	SLOFILES=
+	$(SLO)$/dbdocrecovery.obj
+	$(SLO)$/subcomponentloader.obj
+	$(SLO)$/storagestream.obj
+	$(SLO)$/storagexmlstream.obj
+	$(SLO)$/storagetextstream.obj
+	$(SLO)$/subcomponentrecovery.obj
+	$(SLO)$/settingsimport.obj
+
+source\core\resource\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=core_resource
+	SLOFILES=$(SLO)$/core_resource.obj
+	
+
+source\ext\adabas\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=adabasui
+	SLOFILES=
+	$(SLO)$/ASqlNameEdit.obj
+	$(SLO)$/AdabasNewDb.obj
+	$(SLO)$/ANewDb.obj
+	$(SLO)$/adabasuistrings.obj
+	$(SLO)$/Aservices.obj
+	$(SLO)$/Acomponentmodule.obj
+
+source\ext\macromigration\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=dbmm
+	SLOFILES=$(SLO)$/macromigrationwizard.obj
+	$(SLO)$/macromigrationdialog.obj
+	$(SLO)$/macromigrationpages.obj
+	$(SLO)$/dbmm_module.obj
+	$(SLO)$/dbmm_services.obj
+	$(SLO)$/migrationengine.obj
+	$(SLO)$/docinteraction.obj
+	$(SLO)$/progresscapture.obj
+	$(SLO)$/progressmixer.obj
+	$(SLO)$/migrationlog.obj
+	$(SLO)$/dbmm_types.obj
+	
+
+source\filter\xml\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=dbaxml
+	SLOFILES=$(SLO)$/xmlfilter.obj
+	$(SLO)$/dbloader2.obj
+	$(SLO)$/xmlDatabase.obj
+	$(SLO)$/xmlDataSource.obj
+	$(SLO)$/xmlTableFilterPattern.obj
+	$(SLO)$/xmlTableFilterList.obj
+	$(SLO)$/xmlDataSourceInfo.obj
+	$(SLO)$/xmlDataSourceSetting.obj
+	$(SLO)$/xmlDataSourceSettings.obj
+	$(SLO)$/xmlDocuments.obj
+	$(SLO)$/xmlComponent.obj
+	$(SLO)$/xmlHierarchyCollection.obj
+	$(SLO)$/xmlLogin.obj
+	$(SLO)$/xmlExport.obj
+	$(SLO)$/xmlQuery.obj
+	$(SLO)$/xmlTable.obj
+	$(SLO)$/xmlColumn.obj
+	$(SLO)$/xmlStyleImport.obj
+	$(SLO)$/xmlHelper.obj
+	$(SLO)$/xmlAutoStyle.obj
+	$(SLO)$/xmlConnectionData.obj
+	$(SLO)$/xmlDatabaseDescription.obj
+	$(SLO)$/xmlFileBasedDatabase.obj
+	$(SLO)$/xmlServerDatabase.obj
+	$(SLO)$/xmlConnectionResource.obj
+	$(SLO)$/xmlservices.obj
+
+source\sdbtools\connection\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=conntools
+	SLOFILES=
+	$(SLO)$/connectiontools.obj
+	$(SLO)$/tablename.obj
+	$(SLO)$/objectnames.obj
+	$(SLO)$/datasourcemetadata.obj
+
+source\sdbtools\misc\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=sdbtmisc
+	SLOFILES=
+	$(SLO)$/sdbt_services.obj
+	$(SLO)$/module_sdbt.obj
+
+source\sdbtools\resource\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=sdbt_resource
+
+source\shared\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=shared
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/xmlstrings.obj
+	$(SLO)$/dbustrings.obj
+
+source\ui\app\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=app
+	SLOFILES=
+	$(SLO)$/AppIconControl.obj
+	$(EXCEPTIONSFILES)
+
+source\ui\browser\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=browser
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/AsyncronousLink.obj
+
+source\ui\control\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=uicontrols
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/ScrollHelper.obj
+	$(SLO)$/VertSplitView.obj
+	$(SLO)$/SqlNameEdit.obj
+	$(SLO)$/listviewitems.obj
+	$(SLO)$/undosqledit.obj
+	$(SLO)$/marktree.obj
+	$(SLO)$/curledit.obj
+	$(SLO)$/charsetlistbox.obj
+
+source\ui\dlg\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=uidlg
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/dlgsize.obj
+	$(SLO)$/dlgattr.obj
+	$(SLO)$/optionalboolitem.obj
+	SLOFILES+=$(SLO)$/adodatalinks.obj
+
+source\ui\imagelists\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=uiimglst
+
+source\ui\inc\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=dba_uiinc
+
+source\ui\misc\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=uimisc
+	SLOFILES=
+	$(SLO)/asyncmodaldialog.obj
+	$(SLO)/imageprovider.obj
+	$(SLO)/singledoccontroller.obj
+	$(SLO)/dbsubcomponentcontroller.obj
+	$(SLO)/datasourceconnector.obj
+	$(SLO)/linkeddocuments.obj
+	$(SLO)/indexcollection.obj
+	$(SLO)/UITools.obj
+	$(SLO)/WCPage.obj
+	$(SLO)/WCopyTable.obj
+	$(SLO)/WTypeSelect.obj
+	$(SLO)/TokenWriter.obj
+	$(SLO)/HtmlReader.obj
+	$(SLO)/RtfReader.obj
+	$(SLO)/propertysetitem.obj
+	$(SLO)/databaseobjectview.obj
+	$(SLO)/DExport.obj
+	$(SLO)/uiservices.obj
+	$(SLO)/RowSetDrop.obj
+	$(SLO)/TableCopyHelper.obj
+	$(SLO)/moduledbu.obj
+	$(SLO)/WColumnSelect.obj
+	$(SLO)/WExtendPages.obj
+	$(SLO)/WNameMatch.obj
+	$(SLO)/ToolBoxHelper.obj
+	$(SLO)/stringlistitem.obj
+	$(SLO)/charsets.obj
+	$(SLO)/defaultobjectnamecheck.obj
+	$(SLO)/dsmeta.obj
+	$(SLO)/controllerframe.obj
+	$(SLO)/propertystorage.obj
+	$(SLO)/dbaundomanager.obj
+	
+
+source\ui\querydesign\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=querydesign
+	SLOFILES=
+	$(EXCEPTIONSFILES)
+	$(SLO)$/TableFieldInfo.obj
+	$(SLO)$/QTableConnectionData.obj
+	$(SLO)$/QTableWindowData.obj
+	$(SLO)$/ConnectionLine.obj
+	$(SLO)$/ConnectionLineData.obj
+
+source\ui\relationdesign\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=relationdesign
+	SLOFILES=
+	$(SLO)$/RTableConnection.obj
+	$(SLO)$/RTableConnectionData.obj
+	$(SLO)$/RelationTableView.obj
+	$(SLO)$/RelationDesignView.obj
+	$(SLO)$/RelationController.obj
+
+source\ui\tabledesign\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=tabledesign
+	SLOFILES=
+	$(SLO)$/TableDesignControl.obj
+	$(SLO)$/TableFieldDescWin.obj
+	$(SLO)$/TableController.obj
+	$(SLO)$/TableDesignView.obj
+	$(SLO)$/TEditControl.obj
+	$(SLO)$/TableFieldControl.obj
+	$(SLO)$/TableDesignHelpBar.obj
+	$(SLO)$/FieldDescGenWin.obj
+	$(SLO)$/FieldDescriptions.obj
+	$(SLO)$/TableRow.obj
+	$(SLO)$/TableRowExchange.obj
+	$(SLO)$/TableUndo.obj
+
+source\ui\uno\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=uiuno
+	SLOFILES=
+	$(SLO)$/copytablewizard.obj
+	$(SLO)$/composerdialogs.obj
+	$(SLO)$/unosqlmessage.obj
+	$(SLO)$/unoadmin.obj
+	$(SLO)$/admindlg.obj
+	$(SLO)$/TableFilterDlg.obj
+	$(SLO)$/AdvancedSettingsDlg.obj
+	$(SLO)$/unoDirectSql.obj
+	$(SLO)$/DBTypeWizDlg.obj
+	$(SLO)$/DBTypeWizDlgSetup.obj
+	$(SLO)$/UserSettingsDlg.obj
+	$(SLO)$/ColumnModel.obj
+	$(SLO)$/ColumnControl.obj
+	$(SLO)$/ColumnPeer.obj
+	$(SLO)$/dbinteraction.obj
+	$(SLO)$/textconnectionsettings_uno.obj
+
+util\dba.pmk
+
+util\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=dba
+	TARGET2=dbu
+	TARGET3=sdbt
+
+util\makefile.pmk
+
+win32\source\odbcconfig\makefile.mk
+	PRJNAME=dbaccess
+	TARGET=odbcconfig
+	OBJFILES=
+	$(OBJ)$/odbcconfig.obj

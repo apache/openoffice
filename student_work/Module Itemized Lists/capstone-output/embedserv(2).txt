@@ -1,0 +1,78 @@
+Name:
+embedserv
+
+Dependencies:
+offuh sal cppu cppuhelper comphelper LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\misc\emser.component %_DEST%\xml%_EXT%\emser.component
+
+Source Files:
+source\embed\docholder.cxx
+source\embed\ed_idataobj.cxx
+source\embed\ed_iinplace.cxx
+source\embed\ed_ioleobject.cxx
+source\embed\ed_ipersiststr.cxx
+source\embed\esdll.cxx
+source\embed\guid.cxx
+source\embed\iipaobj.cxx
+source\embed\intercept.cxx
+source\embed\register.cxx
+source\embed\servprov.cxx
+source\embed\syswinwrapper.cxx
+source\embed\tracker.cxx
+source\embed\xwin.cxx
+source\inprocserv\advisesink.cxx
+source\inprocserv\dllentry.cxx
+source\inprocserv\inprocembobj.cxx
+
+Header Files:
+source\inc\common.h
+source\inc\docholder.hxx
+source\inc\embeddoc.hxx
+source\inc\embeddocaccess.hxx
+source\inc\embservconst.h
+source\inc\iipaobj.hxx
+source\inc\intercept.hxx
+source\inc\servprov.hxx
+source\inc\stdafx.h
+source\inc\syswinwrapper.hxx
+source\inc\xwin.hxx
+source\inprocserv\advisesink.hxx
+source\inprocserv\inprocembobj.h
+source\inprocserv\smartpointer.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\embed\makefile.mk
+	PRJNAME=embedserv
+	TARGET=emser
+	SLOFILES=
+	$(SLO)$/register.obj
+	$(SLO)$/servprov.obj
+	$(SLO)$/docholder.obj
+	$(SLO)$/ed_ipersiststr.obj
+	$(SLO)$/ed_idataobj.obj
+	$(SLO)$/ed_ioleobject.obj
+	$(SLO)$/ed_iinplace.obj
+	$(SLO)$/iipaobj.obj
+	$(SLO)$/guid.obj
+	$(SLO)$/esdll.obj
+	$(SLO)$/intercept.obj
+	$(SLO)$/syswinwrapper.obj
+	$(SLO)$/tracker.obj
+
+source\inprocserv\makefile.mk
+	PRJNAME=embedserv
+	TARGET=inprocserv
+	SLOFILES=
+	$(SLO)$/dllentry.obj
+	$(SLO)$/advisesink.obj
+	$(SLO)$/inprocembobj.obj
+
+util\makefile.mk
+	PRJNAME=embedserv
+	TARGET=emser

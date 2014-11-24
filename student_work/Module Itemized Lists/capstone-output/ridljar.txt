@@ -1,0 +1,53 @@
+Name:
+ridljar
+
+Dependencies:
+codemaker solenv udkapi NULL
+
+Build Rules:
+..\%__SRC%\bin\ridl_src.zip %COMMON_DEST%\bin%_EXT%\ridl_src.zip
+..\%__SRC%\class\ridl.jar %_DEST%\bin%_EXT%\ridl.jar
+..\%__SRC%\class\unoloader\unoloader.jar %_DEST%\bin%_EXT%\unoloader.jar
+..\%__SRC%\bin\unoloader_src.zip %COMMON_DEST%\bin%_EXT%\unoloader_src.zip
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+com\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=com
+
+javamaker\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=javamaker
+
+source\unoloader\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=unoloader
+
+source\unoloader\com\sun\star\lib\unoloader\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=unoloader_cssl_unoloader
+
+test\makefile.mk
+
+test\com\sun\star\lib\uno\typedesc\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=test_com_sun_star_lib_uno_typedesc
+
+test\com\sun\star\lib\util\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=test_com_sun_star_lib_util
+
+test\com\sun\star\uno\makefile.mk
+	PRJNAME:=ridljar
+	TARGET:=test_com_sun_star_uno
+
+util\makefile.mk
+	PRJNAME=ridljar
+	TARGET=ridl

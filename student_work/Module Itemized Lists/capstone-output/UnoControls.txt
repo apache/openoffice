@@ -1,0 +1,68 @@
+Name:
+UnoControls
+
+Dependencies:
+LIBXSLT:libxslt cppuhelper offuh tools NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\ctl.component %_DEST%\xml%_EXT%\ctl.component
+
+Source Files:
+source\base\basecontainercontrol.cxx
+source\base\basecontrol.cxx
+source\base\multiplexer.cxx
+source\base\registercontrols.cxx
+source\controls\framecontrol.cxx
+source\controls\OConnectionPointContainerHelper.cxx
+source\controls\OConnectionPointHelper.cxx
+source\controls\progressbar.cxx
+source\controls\progressmonitor.cxx
+source\controls\statusindicator.cxx
+
+Header Files:
+inc\basecontainercontrol.hxx
+inc\basecontrol.hxx
+inc\definesunocontrols.hxx
+inc\multiplexer.hxx
+source\inc\framecontrol.hxx
+source\inc\OConnectionPointContainerHelper.hxx
+source\inc\OConnectionPointHelper.hxx
+source\inc\progressbar.hxx
+source\inc\progressmonitor.hxx
+source\inc\statusindicator.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\base\makefile.mk
+	PRJNAME=UnoControls
+	TARGET=base
+	SLOFILES=$(SLO)$/multiplexer.obj
+	$(SLO)$/basecontrol.obj
+	$(SLO)$/basecontainercontrol.obj
+	$(SLO)$/registercontrols.obj
+
+source\controls\makefile.mk
+	PRJNAME=UnoControls
+	TARGET=controls
+	SLOFILES=
+	$(SLO)$/progressbar.obj
+	$(SLO)$/framecontrol.obj
+	$(SLO)$/progressmonitor.obj
+	$(SLO)$/OConnectionPointHelper.obj
+	$(SLO)$/OConnectionPointContainerHelper.obj
+	$(SLO)$/statusindicator.obj
+
+util\makefile.mk
+	PRJNAME=UnoControls
+	TARGET=ctl
+
+util\makefile.pmk
+
+util\target.pmk

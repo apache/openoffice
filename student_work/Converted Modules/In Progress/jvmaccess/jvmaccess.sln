@@ -1,0 +1,40 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jvmaccess_prebuild", "jvmaccess_prebuild.vcxproj", "{921393B4-4482-2BFC-7217-DAFFA6ED9994}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jvmaccess_lib", "jvmaccess_lib.vcxproj", "{9649D520-7CCD-29F2-BAB1-B739E00495CB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{921393B4-4482-2BFC-7217-DAFFA6ED9994} = {921393B4-4482-2BFC-7217-DAFFA6ED9994}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jvmaccess3MSC_dll", "jvmaccess3MSC_dll.vcxproj", "{D1C00581-D216-317C-F49F-CDAF422D2502}"
+	ProjectSection(ProjectDependencies) = postProject
+		{921393B4-4482-2BFC-7217-DAFFA6ED9994} = {921393B4-4482-2BFC-7217-DAFFA6ED9994}
+		{9649D520-7CCD-29F2-BAB1-B739E00495CB} = {9649D520-7CCD-29F2-BAB1-B739E00495CB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "jvmaccess_deliver", "jvmaccess_deliver.vcxproj", "{BB3FCD01-6BBB-EDEB-A0EE-E9001EBF35E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{921393B4-4482-2BFC-7217-DAFFA6ED9994} = {921393B4-4482-2BFC-7217-DAFFA6ED9994}
+		{9649D520-7CCD-29F2-BAB1-B739E00495CB} = {9649D520-7CCD-29F2-BAB1-B739E00495CB}
+		{D1C00581-D216-317C-F49F-CDAF422D2502} = {D1C00581-D216-317C-F49F-CDAF422D2502}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{921393B4-4482-2BFC-7217-DAFFA6ED9994}.Release|Win32.ActiveCfg = Debug|Win32
+		{921393B4-4482-2BFC-7217-DAFFA6ED9994}.Release|Win32.Build.0 = Debug|Win32
+		{9649D520-7CCD-29F2-BAB1-B739E00495CB}.Release|Win32.ActiveCfg = Release|Win32
+		{9649D520-7CCD-29F2-BAB1-B739E00495CB}.Release|Win32.Build.0 = Release|Win32
+		{D1C00581-D216-317C-F49F-CDAF422D2502}.Release|Win32.ActiveCfg = Release|Win32
+		{D1C00581-D216-317C-F49F-CDAF422D2502}.Release|Win32.Build.0 = Release|Win32
+		{BB3FCD01-6BBB-EDEB-A0EE-E9001EBF35E0}.Release|Win32.ActiveCfg = Debug|Win32
+		{BB3FCD01-6BBB-EDEB-A0EE-E9001EBF35E0}.Release|Win32.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

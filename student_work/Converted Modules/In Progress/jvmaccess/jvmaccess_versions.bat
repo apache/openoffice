@@ -1,0 +1,1 @@
+python ..\versionReplace.py ..\solenv\src\version.c wntmsci12.pro\misc\jvmaccess3MSC_version.c _version.h jvmaccess3MSC_version.h

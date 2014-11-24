@@ -1,0 +1,30 @@
+Name:
+instsetoo_native
+
+Dependencies:
+:	L10N:l10n postprocess packimages RAT:ratscan NULL
+
+Build Rules:
+mkdir: %_DEST%\pus%_EXT%
+..\%COMMON_OUTDIR%\bin\hid\userfeedback_VCL_names.csv %COMMON_DEST%\bin%_EXT%\userfeedback_VCL_names.csv
+..\%__SRC%\misc\*.update.xml %_DEST%\pus%_EXT%\*.update.xml
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+inc_openoffice\unix\makefile.mk
+	PRJNAME=instsetoo_native
+	TARGET=find-requires
+
+inc_openoffice\windows\msi_languages\makefile.mk
+	PRJNAME=instsetoo_native
+	TARGET=win_ulffiles
+
+util\makefile.mk
+	PRJNAME=instsetoo_native
+	TARGET=util

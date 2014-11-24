@@ -1,0 +1,24 @@
+Name:
+mdds
+
+Dependencies:
+solenv BOOST:boost NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\mdds
+mkdir: %_DEST%\inc%_EXT%\mdds\hash_container
+
+..\%__SRC%\inc\mdds\* %_DEST%\inc%_EXT%\mdds
+..\%__SRC%\inc\mdds\hash_container\* %_DEST%\inc%_EXT%\mdds\hash_container
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=mdds
+	TARGET=mdds

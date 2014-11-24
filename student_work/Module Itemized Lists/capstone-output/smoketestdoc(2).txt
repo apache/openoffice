@@ -1,0 +1,27 @@
+Name:
+smoketestdoc
+
+Dependencies:
+: soltools codemaker unoil javaunohelper NULL
+
+Build Rules:
+mkdir: %_DEST%\bin%_EXT%
+
+..\%__SRC%\bin\smoketestdoc.sxw %_DEST%\bin%_EXT%\smoketestdoc.sxw
+..\%__SRC%\bin\TestExtension.oxt %_DEST%\bin%_EXT%\TestExtension.oxt
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\comp\smoketest\makefile.mk
+	PRJNAME=smoketestdoc
+	TARGET=com_sun_star_comp_smoketest
+
+data\makefile.mk
+	PRJNAME=smoketestdoc
+	TARGET=data

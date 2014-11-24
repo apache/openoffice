@@ -1,0 +1,26 @@
+Name:
+eventattacher
+
+Dependencies:
+offapi cppuhelper vos LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%
+..\%__SRC%\misc\evtatt.component %_DEST%\xml%_EXT%\evtatt.component
+
+Source Files:
+source\eventattacher.cxx
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+source\makefile.mk
+	PRJNAME=eventattacher
+	TARGET=evtatt
+	SLOFILES=
+	$(SLO)$/eventattacher.obj

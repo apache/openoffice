@@ -1,0 +1,44 @@
+qadevOOo
+=============
+
+Entering /cygdrive/c/steve/testarea/main/qadevOOo
+
+mkout -- version: 1.8
+C:/Apache-Ant/apache-ant-1.9.2/bin/ant -Dprj=. -Dprjname=OOoRunner -Ddebug=on -Doptimize=off  -Dtarget=qadevOOo -Dsolar.update=on -Dout=./wntmsci12.pro -Dinpath=wntmsci12.pro -Dproext=".pro"  -Dsolar.bin=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dsolar.doc=C:/steve/TestArea/main/solver/410/wntmsci12.pro/doc  -Dcommon.jar=C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin -Dcommon.doc=  -Dsolar.sourceversion=AOO410 -Dsolar.lastminor=m1  -Dsolar.build=9750 -f build.xml  -emacs -Dbuild.source=1.5
+Buildfile: C:\steve\testarea\main\qadevOOo\build.xml
+
+qadevOOo_runner_build:
+Compiling 195 source files to C:\steve\testarea\main\qadevOOo\wntmsci12.pro\class
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+qadevOOo_tests_build:
+Compiling 1364 source files to C:\steve\testarea\main\qadevOOo\wntmsci12.pro\class
+Note: C:\steve\testarea\main\qadevOOo\tests\java\ifc\ucb\_XSimpleFileAccess.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+main:
+
+BUILD SUCCESSFUL
+Total time: 22 seconds
+
+Entering /cygdrive/c/steve/testarea/main/qadevOOo/runner
+
+jar cfm ../wntmsci12.pro/class/OOoRunnerLight.jar manifest -C ../wntmsci12.pro/class util -C ../wntmsci12.pro/class share -C ../wntmsci12.pro/class stats -C ../wntmsci12.pro/class lib -C ../wntmsci12.pro/class complexlib -C ../wntmsci12.pro/class helper -C ../wntmsci12.pro/class basicrunner -C ../wntmsci12.pro/class base -C ../wntmsci12.pro/class org/openoffice -C ../wntmsci12.pro/class convwatch -C ../wntmsci12.pro/class graphical
+jar cfm ../wntmsci12.pro/class/OOoRunner.jar manifest -C .. objdsc -C ../wntmsci12.pro/class mod -C ../wntmsci12.pro/class ifc -C ../wntmsci12.pro/class complex -C ../wntmsci12.pro/class util -C ../wntmsci12.pro/class share -C ../wntmsci12.pro/class stats -C ../wntmsci12.pro/class lib -C ../wntmsci12.pro/class complexlib -C ../wntmsci12.pro/class helper -C ../wntmsci12.pro/class basicrunner -C ../wntmsci12.pro/class base -C ../wntmsci12.pro/class org/openoffice -C ../wntmsci12.pro/class convwatch -C ../wntmsci12.pro/class graphical
+
+Entering /cygdrive/c/steve/testarea/main/qadevOOo/qa/unoapi
+
+qadevOOo deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/qadevOOo/build.lst
+COPY: ../wntmsci12.pro/class/OOoRunner.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/OOoRunner.jar
+COPY: ../wntmsci12.pro/class/OOoRunnerLight.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/OOoRunnerLight.jar
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/qadevOOo/deliver.log
+Module 'qadevOOo' delivered successfully. 3 files copied, 0 files unchanged
+
+=============

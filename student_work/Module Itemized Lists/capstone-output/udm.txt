@@ -1,0 +1,54 @@
+Name:
+udm
+
+Dependencies:
+cosv NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\udm
+mkdir: %_DEST%\inc%_EXT%\udm\html
+mkdir: %_DEST%\inc%_EXT%\udm\xml
+
+..\%__SRC%\lib\udm.lib %_DEST%\lib%_EXT%\udm.lib
+..\%__SRC%\lib\libudm.a %_DEST%\lib%_EXT%\libudm.a
+..\inc\udm\html\*.hxx %_DEST%\inc%_EXT%\udm\html\*.hxx
+..\inc\udm\xml\*.hxx %_DEST%\inc%_EXT%\udm\xml\*.hxx
+
+
+Source Files:
+source\html\htmlitem.cxx
+source\unittest\test.cxx
+source\xml\xmlitem.cxx
+
+Header Files:
+inc\udm\html\htmlitem.hxx
+inc\udm\xml\xmlitem.hxx
+source\inc\precomp.h
+
+Patch Files:
+
+Makefiles:
+
+source\html\makefile.mk
+	PRJNAME=udm
+	TARGET=csi_html
+	OBJFILES=
+	$(OBJ)$/htmlitem.obj
+
+source\mkinc\fullcpp.mk
+
+source\unittest\makefile.mk
+	PRJNAME=cosv
+	TARGET=udm_unittest
+	OBJFILES=
+	$(OBJ)$/test.obj
+
+source\xml\makefile.mk
+	PRJNAME=udm
+	TARGET=csi_xml
+	OBJFILES=
+	$(OBJ)$/xmlitem.obj
+
+util\makefile.mk
+	PRJNAME=udm
+	TARGET=udm

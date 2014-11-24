@@ -1,0 +1,1669 @@
+Name:
+sd
+
+Dependencies:
+filter L10N:l10n animations svx sfx2 stoc canvas LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+mkdir: %COMMON_DEST%\res%_EXT%
+mkdir: %_DEST%\xml%_EXT%\uiconfig
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sdraw
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\simpress
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\simpress\menubar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\simpress\toolbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\statusbar
+mkdir: %_DEST%\xml%_EXT%\uiconfig\modules\simpress\statusbar
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%COMMON_OUTDIR%\srs\core_srs.hid %COMMON_DEST%\res%_EXT%\sdcore_srs.hid
+
+..\%__SRC%\misc\*.map %_DEST%\bin%_EXT%\*.map
+..\%__SRC%\lib\sdi.lib %_DEST%\lib%_EXT%\sdi.lib
+..\%__SRC%\slb\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+..\%__SRC%\bin\sd?????.dll %_DEST%\bin%_EXT%\sd?????.dll
+..\%__SRC%\bin\sd??????.dll %_DEST%\bin%_EXT%\sd??????.dll
+..\%__SRC%\bin\sd*.res %_DEST%\bin%_EXT%\sd*.res
+..\%__SRC%\bin\sd???????.dll %_DEST%\bin%_EXT%\sd???????.dll
+..\%__SRC%\bin\emp?????.* %_DEST%\bin%_EXT%\emp?????.*
+
+mkdir: %_DEST%\pck%_EXT%
+..\res\webview\common.inc %_DEST%\pck%_EXT%\common.inc
+..\res\webview\common.pl %_DEST%\pck%_EXT%\common.pl
+..\res\webview\edit.asp %_DEST%\pck%_EXT%\edit.asp
+..\res\webview\edit.pl %_DEST%\pck%_EXT%\edit.pl
+..\res\webview\editpic.asp %_DEST%\pck%_EXT%\editpic.asp
+..\res\webview\editpic.pl %_DEST%\pck%_EXT%\editpic.pl
+..\res\webview\index.pl %_DEST%\pck%_EXT%\index.pl
+..\res\webview\poll.asp %_DEST%\pck%_EXT%\poll.asp
+..\res\webview\poll.pl %_DEST%\pck%_EXT%\poll.pl
+..\res\webview\savepic.asp %_DEST%\pck%_EXT%\savepic.asp
+..\res\webview\savepic.pl %_DEST%\pck%_EXT%\savepic.pl
+..\res\webview\show.asp %_DEST%\pck%_EXT%\show.asp
+..\res\webview\show.pl %_DEST%\pck%_EXT%\show.pl
+..\res\webview\webview.asp %_DEST%\pck%_EXT%\webcast.asp
+..\res\webview\webview.pl %_DEST%\pck%_EXT%\webcast.pl
+
+..\res\buttons\*.zip %_DEST%\pck%_EXT%\*.zip
+
+mkdir: %_DEST%\inc%_EXT%\sd
+..\inc\sddll.hxx %_DEST%\inc%_EXT%\sd\sddll.hxx
+
+..\xml\*.xml %_DEST%\xml%_EXT%\*.xml
+
+..\uiconfig\sdraw\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\menubar\*.xml
+..\uiconfig\simpress\menubar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\menubar\*.xml
+..\uiconfig\sdraw\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\toolbar\*.xml
+..\uiconfig\simpress\toolbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\toolbar\*.xml
+..\uiconfig\sdraw\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\sdraw\statusbar\*.xml
+..\uiconfig\simpress\statusbar\*.xml %_DEST%\xml%_EXT%\uiconfig\modules\simpress\statusbar\*.xml
+
+..\%__SRC%\misc\sd.component %_DEST%\xml%_EXT%\sd.component
+..\%__SRC%\misc\sdd.component %_DEST%\xml%_EXT%\sdd.component
+
+Source Files:
+inc\pch\precompiled_sd.cxx
+source\core\anminfo.cxx
+source\core\cusshow.cxx
+source\core\CustomAnimationCloner.cxx
+source\core\CustomAnimationEffect.cxx
+source\core\CustomAnimationPreset.cxx
+source\core\drawdoc.cxx
+source\core\drawdoc2.cxx
+source\core\drawdoc3.cxx
+source\core\drawdoc4.cxx
+source\core\drawdoc_animations.cxx
+source\core\EffectMigration.cxx
+source\core\PageListWatcher.cxx
+source\core\pglink.cxx
+source\core\sdattr.cxx
+source\core\sdiocmpt.cxx
+source\core\sdobjfac.cxx
+source\core\sdpage.cxx
+source\core\sdpage2.cxx
+source\core\sdpage_animations.cxx
+source\core\shapelist.cxx
+source\core\stlfamily.cxx
+source\core\stlpool.cxx
+source\core\stlsheet.cxx
+source\core\TransitionPreset.cxx
+source\core\typemap.cxx
+source\core\undoanim.cxx
+source\core\annotations\Annotation.cxx
+source\core\annotations\AnnotationAccess.cxx
+source\core\annotations\AnnotationEnumeration.cxx
+source\core\text\textapi.cxx
+source\core\undo\undofactory.cxx
+source\core\undo\undomanager.cxx
+source\core\undo\undoobjects.cxx
+source\filter\sdfilter.cxx
+source\filter\sdpptwrp.cxx
+source\filter\cgm\sdcgmfilter.cxx
+source\filter\eppt\eppt.cxx
+source\filter\eppt\epptso.cxx
+source\filter\eppt\escherex.cxx
+source\filter\eppt\pptexanimations.cxx
+source\filter\eppt\pptexsoundcollection.cxx
+source\filter\grf\sdgrffilter.cxx
+source\filter\html\buttonset.cxx
+source\filter\html\htmlattr.cxx
+source\filter\html\htmlex.cxx
+source\filter\html\HtmlOptionsDialog.cxx
+source\filter\html\pubdlg.cxx
+source\filter\html\sdhtmlfilter.cxx
+source\filter\ppt\ppt97animations.cxx
+source\filter\ppt\pptin.cxx
+source\filter\ppt\pptinanimations.cxx
+source\filter\ppt\propread.cxx
+source\filter\xml\sdtransform.cxx
+source\filter\xml\sdxmlwrp.cxx
+source\helper\simplereferencecomponent.cxx
+source\ui\accessibility\AccessibleDocumentViewBase.cxx
+source\ui\accessibility\AccessibleDrawDocumentView.cxx
+source\ui\accessibility\AccessibleOutlineEditSource.cxx
+source\ui\accessibility\AccessibleOutlineView.cxx
+source\ui\accessibility\AccessiblePageShape.cxx
+source\ui\accessibility\AccessiblePresentationGraphicShape.cxx
+source\ui\accessibility\AccessiblePresentationOLEShape.cxx
+source\ui\accessibility\AccessiblePresentationShape.cxx
+source\ui\accessibility\AccessibleScrollPanel.cxx
+source\ui\accessibility\AccessibleSlideSorterObject.cxx
+source\ui\accessibility\AccessibleSlideSorterView.cxx
+source\ui\accessibility\AccessibleTreeNode.cxx
+source\ui\accessibility\AccessibleViewForwarder.cxx
+source\ui\accessibility\SdShapeTypes.cxx
+source\ui\animations\CustomAnimationCreateDialog.cxx
+source\ui\animations\CustomAnimationDialog.cxx
+source\ui\animations\CustomAnimationList.cxx
+source\ui\animations\CustomAnimationPane.cxx
+source\ui\animations\DialogListBox.cxx
+source\ui\animations\motionpathtag.cxx
+source\ui\animations\SlideTransitionPane.cxx
+source\ui\animations\STLPropertySet.cxx
+source\ui\annotations\annotationmanager.cxx
+source\ui\annotations\annotationtag.cxx
+source\ui\annotations\annotationwindow.cxx
+source\ui\app\optsitem.cxx
+source\ui\app\sddll.cxx
+source\ui\app\sddll1.cxx
+source\ui\app\sddll2.cxx
+source\ui\app\sdmod.cxx
+source\ui\app\sdmod1.cxx
+source\ui\app\sdmod2.cxx
+source\ui\app\sdpopup.cxx
+source\ui\app\sdresid.cxx
+source\ui\app\sdxfer.cxx
+source\ui\app\tbxww.cxx
+source\ui\app\tmplctrl.cxx
+source\ui\controller\slidelayoutcontroller.cxx
+source\ui\dlg\AnimationChildWindow.cxx
+source\ui\dlg\animobjs.cxx
+source\ui\dlg\assclass.cxx
+source\ui\dlg\brkdlg.cxx
+source\ui\dlg\copydlg.cxx
+source\ui\dlg\custsdlg.cxx
+source\ui\dlg\diactrl.cxx
+source\ui\dlg\dlgass.cxx
+source\ui\dlg\dlgassim.cxx
+source\ui\dlg\dlgchar.cxx
+source\ui\dlg\dlgctrls.cxx
+source\ui\dlg\dlgfield.cxx
+source\ui\dlg\dlgolbul.cxx
+source\ui\dlg\dlgpage.cxx
+source\ui\dlg\dlgsnap.cxx
+source\ui\dlg\docprev.cxx
+source\ui\dlg\filedlg.cxx
+source\ui\dlg\gluectrl.cxx
+source\ui\dlg\headerfooterdlg.cxx
+source\ui\dlg\inspagob.cxx
+source\ui\dlg\ins_paste.cxx
+source\ui\dlg\LayerDialogChildWindow.cxx
+source\ui\dlg\LayerDialogContent.cxx
+source\ui\dlg\layeroptionsdlg.cxx
+source\ui\dlg\LayerTabBar.cxx
+source\ui\dlg\masterlayoutdlg.cxx
+source\ui\dlg\morphdlg.cxx
+source\ui\dlg\NavigatorChildWindow.cxx
+source\ui\dlg\navigatr.cxx
+source\ui\dlg\PaneChildWindows.cxx
+source\ui\dlg\PaneDockingWindow.cxx
+source\ui\dlg\PaneShells.cxx
+source\ui\dlg\paragr.cxx
+source\ui\dlg\present.cxx
+source\ui\dlg\prltempl.cxx
+source\ui\dlg\prntopts.cxx
+source\ui\dlg\sdabstdlg.cxx
+source\ui\dlg\sddlgfact.cxx
+source\ui\dlg\sdpreslt.cxx
+source\ui\dlg\sdtreelb.cxx
+source\ui\dlg\sduiexp.cxx
+source\ui\dlg\SpellDialogChildWindow.cxx
+source\ui\dlg\tabtempl.cxx
+source\ui\dlg\TemplateScanner.cxx
+source\ui\dlg\tpaction.cxx
+source\ui\dlg\tpoption.cxx
+source\ui\dlg\unchss.cxx
+source\ui\dlg\vectdlg.cxx
+source\ui\docshell\docshel2.cxx
+source\ui\docshell\docshel3.cxx
+source\ui\docshell\docshel4.cxx
+source\ui\docshell\docshell.cxx
+source\ui\docshell\grdocsh.cxx
+source\ui\docshell\sdclient.cxx
+source\ui\framework\configuration\ChangeRequestQueue.cxx
+source\ui\framework\configuration\ChangeRequestQueueProcessor.cxx
+source\ui\framework\configuration\Configuration.cxx
+source\ui\framework\configuration\ConfigurationClassifier.cxx
+source\ui\framework\configuration\ConfigurationController.cxx
+source\ui\framework\configuration\ConfigurationControllerBroadcaster.cxx
+source\ui\framework\configuration\ConfigurationControllerResourceManager.cxx
+source\ui\framework\configuration\ConfigurationTracer.cxx
+source\ui\framework\configuration\ConfigurationUpdater.cxx
+source\ui\framework\configuration\GenericConfigurationChangeRequest.cxx
+source\ui\framework\configuration\ResourceFactoryManager.cxx
+source\ui\framework\configuration\ResourceId.cxx
+source\ui\framework\configuration\UpdateRequest.cxx
+source\ui\framework\factories\BasicPaneFactory.cxx
+source\ui\framework\factories\BasicToolBarFactory.cxx
+source\ui\framework\factories\BasicViewFactory.cxx
+source\ui\framework\factories\ChildWindowPane.cxx
+source\ui\framework\factories\FrameWindowPane.cxx
+source\ui\framework\factories\FullScreenPane.cxx
+source\ui\framework\factories\Pane.cxx
+source\ui\framework\factories\PresentationFactory.cxx
+source\ui\framework\factories\TaskPanelResource.cxx
+source\ui\framework\factories\ViewShellWrapper.cxx
+source\ui\framework\module\CenterViewFocusModule.cxx
+source\ui\framework\module\DrawModule.cxx
+source\ui\framework\module\ImpressModule.cxx
+source\ui\framework\module\ModuleController.cxx
+source\ui\framework\module\PresentationModule.cxx
+source\ui\framework\module\ReadOnlyModeObserver.cxx
+source\ui\framework\module\ResourceManager.cxx
+source\ui\framework\module\ShellStackGuard.cxx
+source\ui\framework\module\SlideSorterModule.cxx
+source\ui\framework\module\ToolBarModule.cxx
+source\ui\framework\module\ToolPanelModule.cxx
+source\ui\framework\module\ViewTabBarModule.cxx
+source\ui\framework\tools\FrameworkHelper.cxx
+source\ui\func\bulmaper.cxx
+source\ui\func\fuarea.cxx
+source\ui\func\fubullet.cxx
+source\ui\func\fuchar.cxx
+source\ui\func\fucon3d.cxx
+source\ui\func\fuconarc.cxx
+source\ui\func\fuconbez.cxx
+source\ui\func\fuconcs.cxx
+source\ui\func\fuconnct.cxx
+source\ui\func\fuconrec.cxx
+source\ui\func\fuconstr.cxx
+source\ui\func\fuconuno.cxx
+source\ui\func\fucopy.cxx
+source\ui\func\fucushow.cxx
+source\ui\func\fudraw.cxx
+source\ui\func\fudspord.cxx
+source\ui\func\fuediglu.cxx
+source\ui\func\fuexpand.cxx
+source\ui\func\fuformatpaintbrush.cxx
+source\ui\func\fuhhconv.cxx
+source\ui\func\fuinsert.cxx
+source\ui\func\fuinsfil.cxx
+source\ui\func\fuline.cxx
+source\ui\func\fulinend.cxx
+source\ui\func\fulink.cxx
+source\ui\func\fumeasur.cxx
+source\ui\func\fumorph.cxx
+source\ui\func\fuoaprms.cxx
+source\ui\func\fuolbull.cxx
+source\ui\func\fuoltext.cxx
+source\ui\func\fuoutl.cxx
+source\ui\func\fupage.cxx
+source\ui\func\fuparagr.cxx
+source\ui\func\fupoor.cxx
+source\ui\func\fuprlout.cxx
+source\ui\func\fuprobjs.cxx
+source\ui\func\fuscale.cxx
+source\ui\func\fusearch.cxx
+source\ui\func\fusel.cxx
+source\ui\func\fusldlg.cxx
+source\ui\func\fusnapln.cxx
+source\ui\func\fusumry.cxx
+source\ui\func\futempl.cxx
+source\ui\func\futext.cxx
+source\ui\func\futhes.cxx
+source\ui\func\futransf.cxx
+source\ui\func\futxtatt.cxx
+source\ui\func\fuvect.cxx
+source\ui\func\fuzoom.cxx
+source\ui\func\sdundo.cxx
+source\ui\func\sdundogr.cxx
+source\ui\func\smarttag.cxx
+source\ui\func\undoback.cxx
+source\ui\func\undoheaderfooter.cxx
+source\ui\func\undolayer.cxx
+source\ui\func\undopage.cxx
+source\ui\func\unmovss.cxx
+source\ui\func\unoaprms.cxx
+source\ui\func\unprlout.cxx
+source\ui\notes\EditWindow.cxx
+source\ui\notes\NotesChildWindow.cxx
+source\ui\notes\NotesDockingWindow.cxx
+source\ui\notes\TextLogger.cxx
+source\ui\presenter\CanvasUpdateRequester.cxx
+source\ui\presenter\PresenterCanvas.cxx
+source\ui\presenter\PresenterCanvasFactory.cxx
+source\ui\presenter\PresenterHelper.cxx
+source\ui\presenter\PresenterPreviewCache.cxx
+source\ui\presenter\PresenterTextView.cxx
+source\ui\presenter\SlideRenderer.cxx
+source\ui\sidebar\AllMasterPagesSelector.cxx
+source\ui\sidebar\CurrentMasterPagesSelector.cxx
+source\ui\sidebar\CustomAnimationPanel.cxx
+source\ui\sidebar\DocumentHelper.cxx
+source\ui\sidebar\LayoutMenu.cxx
+source\ui\sidebar\MasterPageContainer.cxx
+source\ui\sidebar\MasterPageContainerFiller.cxx
+source\ui\sidebar\MasterPageContainerProviders.cxx
+source\ui\sidebar\MasterPageContainerQueue.cxx
+source\ui\sidebar\MasterPageDescriptor.cxx
+source\ui\sidebar\MasterPageObserver.cxx
+source\ui\sidebar\MasterPagesSelector.cxx
+source\ui\sidebar\NavigatorWrapper.cxx
+source\ui\sidebar\PanelBase.cxx
+source\ui\sidebar\PanelFactory.cxx
+source\ui\sidebar\PreviewValueSet.cxx
+source\ui\sidebar\RecentlyUsedMasterPages.cxx
+source\ui\sidebar\RecentMasterPagesSelector.cxx
+source\ui\sidebar\SidebarFactory.cxx
+source\ui\sidebar\SidebarShellManager.cxx
+source\ui\sidebar\SlideTransitionPanel.cxx
+source\ui\sidebar\TableDesignPanel.cxx
+source\ui\slideshow\PaneHider.cxx
+source\ui\slideshow\showwin.cxx
+source\ui\slideshow\slideshow.cxx
+source\ui\slideshow\slideshowimpl.cxx
+source\ui\slideshow\SlideShowRestarter.cxx
+source\ui\slideshow\slideshowviewimpl.cxx
+source\ui\slidesorter\cache\SlsBitmapCache.cxx
+source\ui\slidesorter\cache\SlsBitmapCompressor.cxx
+source\ui\slidesorter\cache\SlsBitmapFactory.cxx
+source\ui\slidesorter\cache\SlsCacheCompactor.cxx
+source\ui\slidesorter\cache\SlsCacheConfiguration.cxx
+source\ui\slidesorter\cache\SlsGenericPageCache.cxx
+source\ui\slidesorter\cache\SlsPageCache.cxx
+source\ui\slidesorter\cache\SlsPageCacheManager.cxx
+source\ui\slidesorter\cache\SlsQueueProcessor.cxx
+source\ui\slidesorter\cache\SlsRequestFactory.cxx
+source\ui\slidesorter\cache\SlsRequestQueue.cxx
+source\ui\slidesorter\controller\SlideSorterController.cxx
+source\ui\slidesorter\controller\SlsAnimationFunction.cxx
+source\ui\slidesorter\controller\SlsAnimator.cxx
+source\ui\slidesorter\controller\SlsClipboard.cxx
+source\ui\slidesorter\controller\SlsCurrentSlideManager.cxx
+source\ui\slidesorter\controller\SlsDragAndDropContext.cxx
+source\ui\slidesorter\controller\SlsFocusManager.cxx
+source\ui\slidesorter\controller\SlsHideSlideFunction.cxx
+source\ui\slidesorter\controller\SlsInsertionIndicatorHandler.cxx
+source\ui\slidesorter\controller\SlsListener.cxx
+source\ui\slidesorter\controller\SlsPageSelector.cxx
+source\ui\slidesorter\controller\SlsProperties.cxx
+source\ui\slidesorter\controller\SlsScrollBarManager.cxx
+source\ui\slidesorter\controller\SlsSelectionCommand.cxx
+source\ui\slidesorter\controller\SlsSelectionFunction.cxx
+source\ui\slidesorter\controller\SlsSelectionManager.cxx
+source\ui\slidesorter\controller\SlsSelectionObserver.cxx
+source\ui\slidesorter\controller\SlsSlideFunction.cxx
+source\ui\slidesorter\controller\SlsSlotManager.cxx
+source\ui\slidesorter\controller\SlsTransferableData.cxx
+source\ui\slidesorter\controller\SlsVisibleAreaManager.cxx
+source\ui\slidesorter\model\SlideSorterModel.cxx
+source\ui\slidesorter\model\SlsPageDescriptor.cxx
+source\ui\slidesorter\model\SlsPageEnumeration.cxx
+source\ui\slidesorter\model\SlsPageEnumerationProvider.cxx
+source\ui\slidesorter\model\SlsVisualState.cxx
+source\ui\slidesorter\shell\SlideSorter.cxx
+source\ui\slidesorter\shell\SlideSorterChildWindow.cxx
+source\ui\slidesorter\shell\SlideSorterService.cxx
+source\ui\slidesorter\shell\SlideSorterViewShell.cxx
+source\ui\slidesorter\view\SlideSorterView.cxx
+source\ui\slidesorter\view\SlsButtonBar.cxx
+source\ui\slidesorter\view\SlsFontProvider.cxx
+source\ui\slidesorter\view\SlsFramePainter.cxx
+source\ui\slidesorter\view\SlsInsertAnimator.cxx
+source\ui\slidesorter\view\SlsInsertionIndicatorOverlay.cxx
+source\ui\slidesorter\view\SlsLayeredDevice.cxx
+source\ui\slidesorter\view\SlsLayouter.cxx
+source\ui\slidesorter\view\SlsPageObjectLayouter.cxx
+source\ui\slidesorter\view\SlsPageObjectPainter.cxx
+source\ui\slidesorter\view\SlsTheme.cxx
+source\ui\slidesorter\view\SlsToolTip.cxx
+source\ui\slidesorter\view\SlsViewCacheContext.cxx
+source\ui\table\TableDesignPane.cxx
+source\ui\table\tablefunction.cxx
+source\ui\table\tableobjectbar.cxx
+source\ui\tools\AsynchronousCall.cxx
+source\ui\tools\ConfigurationAccess.cxx
+source\ui\tools\EventMultiplexer.cxx
+source\ui\tools\IconCache.cxx
+source\ui\tools\IdleDetection.cxx
+source\ui\tools\PreviewRenderer.cxx
+source\ui\tools\PropertySet.cxx
+source\ui\tools\SdGlobalResourceContainer.cxx
+source\ui\tools\SlotStateListener.cxx
+source\ui\tools\TimerBasedTaskExecution.cxx
+source\ui\unoidl\detreg.cxx
+source\ui\unoidl\DrawController.cxx
+source\ui\unoidl\facreg.cxx
+source\ui\unoidl\randomnode.cxx
+source\ui\unoidl\sddetect.cxx
+source\ui\unoidl\SdUnoDrawView.cxx
+source\ui\unoidl\SdUnoOutlineView.cxx
+source\ui\unoidl\SdUnoSlideView.cxx
+source\ui\unoidl\unocpres.cxx
+source\ui\unoidl\unodoc.cxx
+source\ui\unoidl\UnoDocumentSettings.cxx
+source\ui\unoidl\unokywds.cxx
+source\ui\unoidl\unolayer.cxx
+source\ui\unoidl\unomodel.cxx
+source\ui\unoidl\unomodule.cxx
+source\ui\unoidl\unoobj.cxx
+source\ui\unoidl\unopage.cxx
+source\ui\unoidl\unopback.cxx
+source\ui\unoidl\unopool.cxx
+source\ui\unoidl\unosrch.cxx
+source\ui\unoidl\unowcntr.cxx
+source\ui\view\bmcache.cxx
+source\ui\view\clview.cxx
+source\ui\view\DocumentRenderer.cxx
+source\ui\view\drawview.cxx
+source\ui\view\drbezob.cxx
+source\ui\view\drtxtob.cxx
+source\ui\view\drtxtob1.cxx
+source\ui\view\drviews1.cxx
+source\ui\view\drviews2.cxx
+source\ui\view\drviews3.cxx
+source\ui\view\drviews4.cxx
+source\ui\view\drviews5.cxx
+source\ui\view\drviews6.cxx
+source\ui\view\drviews7.cxx
+source\ui\view\drviews8.cxx
+source\ui\view\drviews9.cxx
+source\ui\view\drviewsa.cxx
+source\ui\view\drviewsb.cxx
+source\ui\view\drviewsc.cxx
+source\ui\view\drviewsd.cxx
+source\ui\view\drviewse.cxx
+source\ui\view\drviewsf.cxx
+source\ui\view\drviewsg.cxx
+source\ui\view\drviewsh.cxx
+source\ui\view\drviewsi.cxx
+source\ui\view\drviewsj.cxx
+source\ui\view\drvwshrg.cxx
+source\ui\view\FormShellManager.cxx
+source\ui\view\frmview.cxx
+source\ui\view\GraphicObjectBar.cxx
+source\ui\view\GraphicViewShellBase.cxx
+source\ui\view\grviewsh.cxx
+source\ui\view\ImpressViewShellBase.cxx
+source\ui\view\MediaObjectBar.cxx
+source\ui\view\Outliner.cxx
+source\ui\view\OutlinerIterator.cxx
+source\ui\view\OutlineViewShellBase.cxx
+source\ui\view\outlnvs2.cxx
+source\ui\view\outlnvsh.cxx
+source\ui\view\outlview.cxx
+source\ui\view\PresentationViewShellBase.cxx
+source\ui\view\presvish.cxx
+source\ui\view\sdruler.cxx
+source\ui\view\sdview.cxx
+source\ui\view\sdview2.cxx
+source\ui\view\sdview3.cxx
+source\ui\view\sdview4.cxx
+source\ui\view\sdview5.cxx
+source\ui\view\sdwindow.cxx
+source\ui\view\SlideSorterViewShellBase.cxx
+source\ui\view\tabcontr.cxx
+source\ui\view\ToolBarManager.cxx
+source\ui\view\unmodpg.cxx
+source\ui\view\UpdateLockManager.cxx
+source\ui\view\ViewClipboard.cxx
+source\ui\view\viewoverlaymanager.cxx
+source\ui\view\viewshe2.cxx
+source\ui\view\viewshe3.cxx
+source\ui\view\viewshel.cxx
+source\ui\view\ViewShellBase.cxx
+source\ui\view\ViewShellHint.cxx
+source\ui\view\ViewShellImplementation.cxx
+source\ui\view\ViewShellManager.cxx
+source\ui\view\ViewTabBar.cxx
+source\ui\view\WindowUpdater.cxx
+source\ui\view\zoomlist.cxx
+workben\custompanel\ctp_panel.cxx
+
+Header Files:
+inc\animations.hxx
+inc\anmdef.hxx
+inc\anminfo.hxx
+inc\app.hrc
+inc\app.hxx
+inc\cusshow.hxx
+inc\CustomAnimationCloner.hxx
+inc\CustomAnimationEffect.hxx
+inc\CustomAnimationPreset.hxx
+inc\diadef.h
+inc\drawdoc.hxx
+inc\eetext.hxx
+inc\EffectMigration.hxx
+inc\FactoryIds.hxx
+inc\fadedef.h
+inc\glob.hrc
+inc\glob.hxx
+inc\helpids.h
+inc\imapinfo.hxx
+inc\misc.hxx
+inc\movedef.hxx
+inc\Outliner.hxx
+inc\OutlinerIterator.hxx
+inc\pglink.hxx
+inc\pres.hxx
+inc\prlayout.hxx
+inc\resltn.hxx
+inc\sdabstdlg.hxx
+inc\sdattr.hrc
+inc\sdattr.hxx
+inc\sdcgmfilter.hxx
+inc\sdcommands.h
+inc\sddll.hxx
+inc\sddllapi.h
+inc\sdenumdef.hxx
+inc\sderror.hxx
+inc\sdfilter.hxx
+inc\sdgrffilter.hxx
+inc\sdhtmlfilter.hxx
+inc\sdiocmpt.hxx
+inc\sdmod.hxx
+inc\sdobjfac.hxx
+inc\sdpage.hxx
+inc\sdpptwrp.hxx
+inc\sdresid.hxx
+inc\SdShapeTypes.hxx
+inc\sduiks.hrc
+inc\sdundo.hxx
+inc\sdxmlwrp.hxx
+inc\sd_primitivetypes2d.hxx
+inc\shapelist.hxx
+inc\stlfamily.hxx
+inc\stlpool.hxx
+inc\stlsheet.hxx
+inc\strmname.h
+inc\textapi.hxx
+inc\TransitionPreset.hxx
+inc\undoanim.hxx
+inc\helper\simplereferencecomponent.hxx
+inc\misc\scopelock.hxx
+inc\pch\precompiled_sd.hxx
+inc\undo\undofactory.hxx
+inc\undo\undomanager.hxx
+inc\undo\undoobjects.hxx
+sdi\sdslots.hrc
+source\core\PageListWatcher.hxx
+source\filter\eppt\eppt.hxx
+source\filter\eppt\epptdef.hxx
+source\filter\eppt\escherex.hxx
+source\filter\eppt\pptexanimations.hxx
+source\filter\eppt\pptexsoundcollection.hxx
+source\filter\html\buttonset.hxx
+source\filter\html\htmlattr.hxx
+source\filter\html\htmlex.hxx
+source\filter\ppt\ppt97animations.hxx
+source\filter\ppt\pptanimations.hxx
+source\filter\ppt\pptatom.hxx
+source\filter\ppt\pptin.hxx
+source\filter\ppt\pptinanimations.hxx
+source\filter\ppt\propread.hxx
+source\ui\accessibility\accessibility.hrc
+source\ui\animations\CustomAnimation.hrc
+source\ui\animations\CustomAnimationCreateDialog.hrc
+source\ui\animations\CustomAnimationCreateDialog.hxx
+source\ui\animations\CustomAnimationDialog.hrc
+source\ui\animations\CustomAnimationDialog.hxx
+source\ui\animations\CustomAnimationList.hxx
+source\ui\animations\CustomAnimationPane.hrc
+source\ui\animations\CustomAnimationPane.hxx
+source\ui\animations\motionpathtag.hxx
+source\ui\animations\SlideTransitionPane.hrc
+source\ui\animations\SlideTransitionPane.hxx
+source\ui\animations\STLPropertySet.hxx
+source\ui\annotations\annotationmanagerimpl.hxx
+source\ui\annotations\annotations.hrc
+source\ui\annotations\annotationtag.hxx
+source\ui\annotations\annotationwindow.hxx
+source\ui\app\_app.hrc
+source\ui\controller\slidelayoutcontroller.hxx
+source\ui\dlg\dlgassim.hxx
+source\ui\dlg\sddlgfact.hxx
+source\ui\framework\configuration\ChangeRequestQueue.hxx
+source\ui\framework\configuration\ChangeRequestQueueProcessor.hxx
+source\ui\framework\configuration\ConfigurationClassifier.hxx
+source\ui\framework\configuration\ConfigurationControllerBroadcaster.hxx
+source\ui\framework\configuration\ConfigurationControllerResourceManager.hxx
+source\ui\framework\configuration\ConfigurationTracer.hxx
+source\ui\framework\configuration\ConfigurationUpdater.hxx
+source\ui\framework\configuration\GenericConfigurationChangeRequest.hxx
+source\ui\framework\configuration\ResourceFactoryManager.hxx
+source\ui\framework\configuration\UpdateRequest.hxx
+source\ui\framework\factories\BasicPaneFactory.hxx
+source\ui\framework\factories\BasicToolBarFactory.hxx
+source\ui\framework\factories\BasicViewFactory.hxx
+source\ui\framework\factories\ChildWindowPane.hxx
+source\ui\framework\factories\FrameWindowPane.hxx
+source\ui\framework\factories\FullScreenPane.hxx
+source\ui\framework\module\CenterViewFocusModule.hxx
+source\ui\framework\module\ReadOnlyModeObserver.hxx
+source\ui\framework\module\ResourceManager.hxx
+source\ui\framework\module\ShellStackGuard.hxx
+source\ui\framework\module\SlideSorterModule.hxx
+source\ui\framework\module\ToolBarModule.hxx
+source\ui\framework\module\ToolPanelModule.hxx
+source\ui\framework\module\ViewTabBarModule.hxx
+source\ui\inc\3dchld.hxx
+source\ui\inc\AccessibleDocumentViewBase.hxx
+source\ui\inc\AccessibleDrawDocumentView.hxx
+source\ui\inc\AccessibleOutlineEditSource.hxx
+source\ui\inc\AccessibleOutlineView.hxx
+source\ui\inc\AccessiblePageShape.hxx
+source\ui\inc\AccessiblePresentationGraphicShape.hxx
+source\ui\inc\AccessiblePresentationOLEShape.hxx
+source\ui\inc\AccessiblePresentationShape.hxx
+source\ui\inc\AccessibleScrollPanel.hxx
+source\ui\inc\AccessibleSlideSorterObject.hxx
+source\ui\inc\AccessibleSlideSorterView.hxx
+source\ui\inc\AccessibleSlideView.hxx
+source\ui\inc\AccessibleTreeNode.hxx
+source\ui\inc\AccessibleViewForwarder.hxx
+source\ui\inc\AnimationChildWindow.hxx
+source\ui\inc\animobjs.hrc
+source\ui\inc\animobjs.hxx
+source\ui\inc\annotationmanager.hxx
+source\ui\inc\assclass.hxx
+source\ui\inc\BezierObjectBar.hxx
+source\ui\inc\bmcache.hxx
+source\ui\inc\BreakDlg.hxx
+source\ui\inc\brkdlg.hrc
+source\ui\inc\bulmaper.hxx
+source\ui\inc\cfgids.hxx
+source\ui\inc\Client.hxx
+source\ui\inc\ClientView.hxx
+source\ui\inc\copydlg.hrc
+source\ui\inc\copydlg.hxx
+source\ui\inc\CustomAnimation.hxx
+source\ui\inc\custsdlg.hrc
+source\ui\inc\custsdlg.hxx
+source\ui\inc\diactrl.hxx
+source\ui\inc\DialogListBox.hxx
+source\ui\inc\dialogs.hrc
+source\ui\inc\dlgass.hrc
+source\ui\inc\dlgass.hxx
+source\ui\inc\dlgctrls.hxx
+source\ui\inc\dlgfield.hrc
+source\ui\inc\dlgfield.hxx
+source\ui\inc\dlgolbul.hrc
+source\ui\inc\dlgpage.hrc
+source\ui\inc\dlgpage.hxx
+source\ui\inc\dlgsnap.hrc
+source\ui\inc\dlgsnap.hxx
+source\ui\inc\dlg_char.hrc
+source\ui\inc\dlg_char.hxx
+source\ui\inc\docprev.hxx
+source\ui\inc\DocumentRenderer.hxx
+source\ui\inc\DrawController.hxx
+source\ui\inc\DrawDocShell.hxx
+source\ui\inc\DrawSubController.hxx
+source\ui\inc\drawview.hxx
+source\ui\inc\DrawViewShell.hxx
+source\ui\inc\enumdlg.hrc
+source\ui\inc\EventMultiplexer.hxx
+source\ui\inc\filedlg.hxx
+source\ui\inc\fontwork.hrc
+source\ui\inc\FormShellManager.hxx
+source\ui\inc\FrameView.hxx
+source\ui\inc\fuarea.hxx
+source\ui\inc\fubullet.hxx
+source\ui\inc\fuchar.hxx
+source\ui\inc\fucon3d.hxx
+source\ui\inc\fuconarc.hxx
+source\ui\inc\fuconbez.hxx
+source\ui\inc\fuconcs.hxx
+source\ui\inc\fuconnct.hxx
+source\ui\inc\fuconrec.hxx
+source\ui\inc\fuconstr.hxx
+source\ui\inc\fuconuno.hxx
+source\ui\inc\fucopy.hxx
+source\ui\inc\fucushow.hxx
+source\ui\inc\fudraw.hxx
+source\ui\inc\fudspord.hxx
+source\ui\inc\fuediglu.hxx
+source\ui\inc\fuexpand.hxx
+source\ui\inc\fuformatpaintbrush.hxx
+source\ui\inc\fugrid.hxx
+source\ui\inc\fuhhconv.hxx
+source\ui\inc\fuinsert.hxx
+source\ui\inc\fuinsfil.hxx
+source\ui\inc\fuline.hxx
+source\ui\inc\fulinend.hxx
+source\ui\inc\fulink.hxx
+source\ui\inc\fumeasur.hxx
+source\ui\inc\fumorph.hxx
+source\ui\inc\fuoaprms.hxx
+source\ui\inc\fuolbull.hxx
+source\ui\inc\fuoltext.hxx
+source\ui\inc\fuoutl.hxx
+source\ui\inc\fupage.hxx
+source\ui\inc\fuparagr.hxx
+source\ui\inc\fupoor.hxx
+source\ui\inc\fuprlout.hxx
+source\ui\inc\fuprobjs.hxx
+source\ui\inc\fuscale.hxx
+source\ui\inc\fusearch.hxx
+source\ui\inc\fusel.hxx
+source\ui\inc\fusldlg.hxx
+source\ui\inc\fuslhide.hxx
+source\ui\inc\fuslid.hxx
+source\ui\inc\fuslsel.hxx
+source\ui\inc\fusnapln.hxx
+source\ui\inc\fusumry.hxx
+source\ui\inc\futempl.hxx
+source\ui\inc\futext.hxx
+source\ui\inc\futhes.hxx
+source\ui\inc\futransf.hxx
+source\ui\inc\futxtatt.hxx
+source\ui\inc\fuvect.hxx
+source\ui\inc\fuzoom.hxx
+source\ui\inc\gluectrl.hxx
+source\ui\inc\GraphicDocShell.hxx
+source\ui\inc\GraphicObjectBar.hxx
+source\ui\inc\GraphicViewShell.hxx
+source\ui\inc\GraphicViewShellBase.hxx
+source\ui\inc\headerfooterdlg.hrc
+source\ui\inc\headerfooterdlg.hxx
+source\ui\inc\ImpressViewShellBase.hxx
+source\ui\inc\inspagob.hrc
+source\ui\inc\inspagob.hxx
+source\ui\inc\ins_paste.hrc
+source\ui\inc\ins_paste.hxx
+source\ui\inc\LayerDialog.hrc
+source\ui\inc\LayerDialogChildWindow.hxx
+source\ui\inc\LayerDialogContent.hxx
+source\ui\inc\layeroptionsdlg.hrc
+source\ui\inc\layeroptionsdlg.hxx
+source\ui\inc\LayerTabBar.hxx
+source\ui\inc\masterlayoutdlg.hrc
+source\ui\inc\masterlayoutdlg.hxx
+source\ui\inc\MasterPageObserver.hxx
+source\ui\inc\MediaObjectBar.hxx
+source\ui\inc\morphdlg.hrc
+source\ui\inc\morphdlg.hxx
+source\ui\inc\MutexOwner.hxx
+source\ui\inc\NavigatorChildWindow.hxx
+source\ui\inc\navigatr.hrc
+source\ui\inc\navigatr.hxx
+source\ui\inc\NotesChildWindow.hrc
+source\ui\inc\NotesChildWindow.hxx
+source\ui\inc\optdlg.hrc
+source\ui\inc\optdlg.hxx
+source\ui\inc\optsitem.hxx
+source\ui\inc\OutlineBulletDlg.hxx
+source\ui\inc\OutlinerIteratorImpl.hxx
+source\ui\inc\OutlineView.hxx
+source\ui\inc\OutlineViewShell.hxx
+source\ui\inc\OutlineViewShellBase.hxx
+source\ui\inc\packgdlg.hrc
+source\ui\inc\PaneChildWindows.hxx
+source\ui\inc\PaneDockingWindow.hrc
+source\ui\inc\PaneDockingWindow.hxx
+source\ui\inc\PaneShells.hxx
+source\ui\inc\paragr.hrc
+source\ui\inc\paragr.hxx
+source\ui\inc\pgjump.hxx
+source\ui\inc\present.hrc
+source\ui\inc\present.hxx
+source\ui\inc\PresentationViewShell.hxx
+source\ui\inc\PresentationViewShellBase.hxx
+source\ui\inc\preview.hrc
+source\ui\inc\PreviewRenderer.hxx
+source\ui\inc\prltempl.hrc
+source\ui\inc\prltempl.hxx
+source\ui\inc\prntopts.hrc
+source\ui\inc\prntopts.hxx
+source\ui\inc\pubdlg.hrc
+source\ui\inc\pubdlg.hxx
+source\ui\inc\res_bmp.hrc
+source\ui\inc\Ruler.hxx
+source\ui\inc\sdpopup.hxx
+source\ui\inc\sdpreslt.hrc
+source\ui\inc\sdpreslt.hxx
+source\ui\inc\sdstring.hrc
+source\ui\inc\sdtreelb.hxx
+source\ui\inc\sdundogr.hxx
+source\ui\inc\SdUnoDrawView.hxx
+source\ui\inc\SdUnoOutlineView.hxx
+source\ui\inc\SdUnoSlideView.hxx
+source\ui\inc\sdxfer.hxx
+source\ui\inc\ShellFactory.hxx
+source\ui\inc\SidebarPanelId.hxx
+source\ui\inc\slideshow.hxx
+source\ui\inc\SlideSorter.hxx
+source\ui\inc\SlideSorterChildWindow.hrc
+source\ui\inc\SlideSorterChildWindow.hxx
+source\ui\inc\SlideSorterViewShell.hxx
+source\ui\inc\SlideSorterViewShellBase.hxx
+source\ui\inc\SlideView.hxx
+source\ui\inc\SlideViewShell.hxx
+source\ui\inc\smarttag.hxx
+source\ui\inc\SpellDialogChildWindow.hxx
+source\ui\inc\sprite.hxx
+source\ui\inc\strings.hrc
+source\ui\inc\TabControl.hxx
+source\ui\inc\tabtempl.hrc
+source\ui\inc\tabtempl.hxx
+source\ui\inc\tbx_ww.hrc
+source\ui\inc\tbx_ww.hxx
+source\ui\inc\TemplateScanner.hxx
+source\ui\inc\TextLogger.hxx
+source\ui\inc\TextObjectBar.hxx
+source\ui\inc\tmplctrl.hxx
+source\ui\inc\ToolBarManager.hxx
+source\ui\inc\tpaction.hrc
+source\ui\inc\tpaction.hxx
+source\ui\inc\tpoption.hrc
+source\ui\inc\tpoption.hxx
+source\ui\inc\unchss.hxx
+source\ui\inc\undoback.hxx
+source\ui\inc\undoheaderfooter.hxx
+source\ui\inc\undolayer.hxx
+source\ui\inc\undopage.hxx
+source\ui\inc\unmodpg.hxx
+source\ui\inc\unmovss.hxx
+source\ui\inc\unoaprms.hxx
+source\ui\inc\unokywds.hxx
+source\ui\inc\unomodel.hxx
+source\ui\inc\unoprnms.hxx
+source\ui\inc\unosrch.hxx
+source\ui\inc\unprlout.hxx
+source\ui\inc\unslsel.hxx
+source\ui\inc\UpdateLockManager.hxx
+source\ui\inc\vectdlg.hrc
+source\ui\inc\vectdlg.hxx
+source\ui\inc\View.hxx
+source\ui\inc\ViewClipboard.hxx
+source\ui\inc\ViewShell.hxx
+source\ui\inc\ViewShellBase.hxx
+source\ui\inc\ViewShellHint.hxx
+source\ui\inc\ViewShellImplementation.hxx
+source\ui\inc\ViewShellManager.hxx
+source\ui\inc\ViewTabBar.hxx
+source\ui\inc\ViewTabControl.hxx
+source\ui\inc\Window.hxx
+source\ui\inc\WindowUpdater.hxx
+source\ui\inc\zoomlist.hxx
+source\ui\inc\framework\Configuration.hxx
+source\ui\inc\framework\ConfigurationController.hxx
+source\ui\inc\framework\DrawModule.hxx
+source\ui\inc\framework\FrameworkHelper.hxx
+source\ui\inc\framework\ImpressModule.hxx
+source\ui\inc\framework\ModuleController.hxx
+source\ui\inc\framework\Pane.hxx
+source\ui\inc\framework\PresentationFactory.hxx
+source\ui\inc\framework\PresentationModule.hxx
+source\ui\inc\framework\ResourceId.hxx
+source\ui\inc\framework\TaskPanelResource.hxx
+source\ui\inc\framework\ViewShellWrapper.hxx
+source\ui\inc\taskpane\ControlContainer.hxx
+source\ui\inc\taskpane\ScrollPanel.hxx
+source\ui\inc\taskpane\SlideSorterCacheDisplay.hxx
+source\ui\inc\taskpane\SubToolPanel.hxx
+source\ui\inc\taskpane\TaskPaneControlFactory.hxx
+source\ui\inc\taskpane\TaskPaneTreeNode.hxx
+source\ui\inc\taskpane\TitleBar.hxx
+source\ui\inc\taskpane\TitledControl.hxx
+source\ui\inc\taskpane\ToolPanelViewShell.hxx
+source\ui\inc\tools\AsynchronousCall.hxx
+source\ui\inc\tools\AsynchronousTask.hxx
+source\ui\inc\tools\ConfigurationAccess.hxx
+source\ui\inc\tools\IconCache.hxx
+source\ui\inc\tools\IdleDetection.hxx
+source\ui\inc\tools\PropertySet.hxx
+source\ui\inc\tools\SdGlobalResourceContainer.hxx
+source\ui\inc\tools\SlotStateListener.hxx
+source\ui\inc\tools\TimerBasedTaskExecution.hxx
+source\ui\inc\view\viewoverlaymanager.hxx
+source\ui\notes\EditWindow.hxx
+source\ui\notes\NotesDockingWindow.hxx
+source\ui\presenter\CanvasUpdateRequester.hxx
+source\ui\presenter\PresenterCanvas.hxx
+source\ui\presenter\PresenterHelper.hxx
+source\ui\presenter\PresenterPreviewCache.hxx
+source\ui\presenter\PresenterTextView.hxx
+source\ui\presenter\SlideRenderer.hxx
+source\ui\sidebar\AllMasterPagesSelector.hxx
+source\ui\sidebar\CurrentMasterPagesSelector.hxx
+source\ui\sidebar\CustomAnimationPanel.hxx
+source\ui\sidebar\DocumentHelper.hxx
+source\ui\sidebar\IDisposable.hxx
+source\ui\sidebar\ISidebarReceiver.hxx
+source\ui\sidebar\LayoutMenu.hxx
+source\ui\sidebar\MasterPageContainer.hxx
+source\ui\sidebar\MasterPageContainerFiller.hxx
+source\ui\sidebar\MasterPageContainerProviders.hxx
+source\ui\sidebar\MasterPageContainerQueue.hxx
+source\ui\sidebar\MasterPageDescriptor.hxx
+source\ui\sidebar\MasterPagesSelector.hxx
+source\ui\sidebar\NavigatorWrapper.hxx
+source\ui\sidebar\PanelBase.hxx
+source\ui\sidebar\PanelFactory.hxx
+source\ui\sidebar\PreviewValueSet.hxx
+source\ui\sidebar\RecentlyUsedMasterPages.hxx
+source\ui\sidebar\RecentMasterPagesSelector.hxx
+source\ui\sidebar\SidebarFactory.hxx
+source\ui\sidebar\SidebarFocusManager.hxx
+source\ui\sidebar\SidebarShellManager.hxx
+source\ui\sidebar\SlideTransitionPanel.hxx
+source\ui\sidebar\TableDesignPanel.hxx
+source\ui\slideshow\PaneHider.hxx
+source\ui\slideshow\showwindow.hxx
+source\ui\slideshow\slideshow.hrc
+source\ui\slideshow\slideshowimpl.hxx
+source\ui\slideshow\SlideShowRestarter.hxx
+source\ui\slideshow\slideshowviewimpl.hxx
+source\ui\slidesorter\cache\SlsBitmapCache.hxx
+source\ui\slidesorter\cache\SlsBitmapCompressor.hxx
+source\ui\slidesorter\cache\SlsBitmapFactory.hxx
+source\ui\slidesorter\cache\SlsCacheCompactor.hxx
+source\ui\slidesorter\cache\SlsCacheConfiguration.hxx
+source\ui\slidesorter\cache\SlsGenericPageCache.hxx
+source\ui\slidesorter\cache\SlsQueueProcessor.hxx
+source\ui\slidesorter\cache\SlsQueueProcessorThread.hxx
+source\ui\slidesorter\cache\SlsRequestFactory.hxx
+source\ui\slidesorter\cache\SlsRequestPriorityClass.hxx
+source\ui\slidesorter\cache\SlsRequestQueue.hxx
+source\ui\slidesorter\controller\SlsCommand.hxx
+source\ui\slidesorter\controller\SlsDragAndDropContext.hxx
+source\ui\slidesorter\controller\SlsHideSlideFunction.hxx
+source\ui\slidesorter\controller\SlsListener.hxx
+source\ui\slidesorter\controller\SlsSelectionCommand.hxx
+source\ui\slidesorter\inc\cache\SlsCacheContext.hxx
+source\ui\slidesorter\inc\cache\SlsPageCache.hxx
+source\ui\slidesorter\inc\cache\SlsPageCacheManager.hxx
+source\ui\slidesorter\inc\controller\SlideSorterController.hxx
+source\ui\slidesorter\inc\controller\SlsAnimationFunction.hxx
+source\ui\slidesorter\inc\controller\SlsAnimator.hxx
+source\ui\slidesorter\inc\controller\SlsClipboard.hxx
+source\ui\slidesorter\inc\controller\SlsCurrentSlideManager.hxx
+source\ui\slidesorter\inc\controller\SlsFocusManager.hxx
+source\ui\slidesorter\inc\controller\SlsInsertionIndicatorHandler.hxx
+source\ui\slidesorter\inc\controller\SlsPageSelector.hxx
+source\ui\slidesorter\inc\controller\SlsProperties.hxx
+source\ui\slidesorter\inc\controller\SlsScrollBarManager.hxx
+source\ui\slidesorter\inc\controller\SlsSelectionFunction.hxx
+source\ui\slidesorter\inc\controller\SlsSelectionManager.hxx
+source\ui\slidesorter\inc\controller\SlsSelectionObserver.hxx
+source\ui\slidesorter\inc\controller\SlsSlideFunction.hxx
+source\ui\slidesorter\inc\controller\SlsSlotManager.hxx
+source\ui\slidesorter\inc\controller\SlsTransferableData.hxx
+source\ui\slidesorter\inc\controller\SlsVisibleAreaManager.hxx
+source\ui\slidesorter\inc\model\SlideSorterModel.hxx
+source\ui\slidesorter\inc\model\SlsEnumeration.hxx
+source\ui\slidesorter\inc\model\SlsPageDescriptor.hxx
+source\ui\slidesorter\inc\model\SlsPageEnumeration.hxx
+source\ui\slidesorter\inc\model\SlsPageEnumerationProvider.hxx
+source\ui\slidesorter\inc\model\SlsSharedPageDescriptor.hxx
+source\ui\slidesorter\inc\model\SlsVisualState.hxx
+source\ui\slidesorter\inc\view\SlideSorterView.hxx
+source\ui\slidesorter\inc\view\SlsButtonBar.hxx
+source\ui\slidesorter\inc\view\SlsFontProvider.hxx
+source\ui\slidesorter\inc\view\SlsILayerPainter.hxx
+source\ui\slidesorter\inc\view\SlsInsertAnimator.hxx
+source\ui\slidesorter\inc\view\SlsInsertionIndicatorOverlay.hxx
+source\ui\slidesorter\inc\view\SlsLayouter.hxx
+source\ui\slidesorter\inc\view\SlsPageObjectLayouter.hxx
+source\ui\slidesorter\inc\view\SlsPageObjectPainter.hxx
+source\ui\slidesorter\inc\view\SlsPageObjectViewContact.hxx
+source\ui\slidesorter\inc\view\SlsPageObjectViewObjectContact.hxx
+source\ui\slidesorter\inc\view\SlsResource.hrc
+source\ui\slidesorter\inc\view\SlsTheme.hxx
+source\ui\slidesorter\inc\view\SlsToolTip.hxx
+source\ui\slidesorter\shell\SlideSorterService.hxx
+source\ui\slidesorter\view\SlsFramePainter.hxx
+source\ui\slidesorter\view\SlsLayeredDevice.hxx
+source\ui\slidesorter\view\SlsResource.hxx
+source\ui\slidesorter\view\SlsViewCacheContext.hxx
+source\ui\table\TableDesignPane.hrc
+source\ui\table\TableDesignPane.hxx
+source\ui\table\tableobjectbar.hxx
+source\ui\unoidl\sddetect.hxx
+source\ui\unoidl\unocpres.hxx
+source\ui\unoidl\UnoDocumentSettings.hxx
+source\ui\unoidl\unohelp.hxx
+source\ui\unoidl\unolayer.hxx
+source\ui\unoidl\unomodule.hxx
+source\ui\unoidl\unoobj.hxx
+source\ui\unoidl\unopage.hxx
+source\ui\unoidl\unopback.hxx
+source\ui\unoidl\unowcntr.hxx
+source\ui\view\DocumentRenderer.hrc
+util\hidother.hrc
+workben\custompanel\ctp_panel.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=sd
+	TARGET=inc
+
+qa\unoapi\makefile.mk
+	PRJNAME=sd
+	TARGET=qa_unoapi
+
+sdi\makefile.mk
+	PRJNAME=sd
+	TARGET=sdslots
+	TARGET2=sdgslots
+
+source\core\makefile.mk
+	PRJNAME=sd
+	TARGET=core
+	SLOFILES=$(SLO)$/stlsheet.obj
+	$(SLO)$/stlfamily.obj
+	$(SLO)$/stlpool.obj
+	$(SLO)$/drawdoc.obj
+	$(SLO)$/drawdoc2.obj
+	$(SLO)$/drawdoc3.obj
+	$(SLO)$/drawdoc4.obj
+	$(SLO)$/drawdoc_animations.obj
+	$(SLO)$/sdpage.obj
+	$(SLO)$/sdpage2.obj
+	$(SLO)$/sdattr.obj
+	$(SLO)$/sdobjfac.obj
+	$(SLO)$/anminfo.obj
+	$(SLO)$/sdiocmpt.obj
+	$(SLO)$/typemap.obj
+	$(SLO)$/pglink.obj
+	$(SLO)$/cusshow.obj
+	$(SLO)$/PageListWatcher.obj
+	$(SLO)$/sdpage_animations.obj
+	$(SLO)$/CustomAnimationPreset.obj
+	$(SLO)$/CustomAnimationEffect.obj
+	$(SLO)$/TransitionPreset.obj
+	$(SLO)$/undoanim.obj
+	$(SLO)$/EffectMigration.obj
+	$(SLO)$/CustomAnimationCloner.obj
+	$(SLO)$/shapelist.obj
+
+source\core\annotations\makefile.mk
+	PRJNAME=sd
+	TARGET=annotations
+	SLOFILES=$(SLO)$/Annotation.obj
+	$(SLO)$/AnnotationEnumeration.obj
+
+source\core\text\makefile.mk
+	PRJNAME=sd
+	TARGET=text
+	SLOFILES=$(SLO)$/textapi.obj
+
+source\core\undo\makefile.mk
+	PRJNAME=sd
+	TARGET=undo
+	SLOFILES=$(SLO)$/undomanager.obj
+	$(SLO)$/undofactory.obj
+	$(SLO)$/undoobjects.obj
+
+source\filter\makefile.mk
+	PRJNAME=sd
+	TARGET=filter
+	SLOFILES=
+	$(SLO)$/sdfilter.obj
+	$(SLO)$/sdpptwrp.obj
+
+source\filter\cgm\makefile.mk
+	PRJNAME=sd
+	TARGET=cgm
+	SLOFILES=$(SLO)$/sdcgmfilter.obj
+
+source\filter\eppt\makefile.mk
+	PRJNAME=sd
+	TARGET=eppt
+	SLOFILES=$(SLO)$/eppt.obj
+	$(SLO)$/epptso.obj
+	$(SLO)$/escherex.obj
+	$(SLO)$/pptexanimations.obj
+	$(SLO)$/pptexsoundcollection.obj
+
+source\filter\grf\makefile.mk
+	PRJNAME=sd
+	TARGET=grf
+	SLOFILES=$(SLO)$/sdgrffilter.obj
+
+source\filter\html\makefile.mk
+	PRJNAME=sd
+	TARGET=html
+	SLOFILES=$(SLO)$/HtmlOptionsDialog.obj
+	$(SLO)$/buttonset.obj
+	$(SLO)$/sdhtmlfilter.obj
+	$(SLO)$/htmlex.obj
+	$(SLO)$/htmlattr.obj
+	$(SLO)$/pubdlg.obj
+
+source\filter\ppt\makefile.mk
+	PRJNAME=sd
+	TARGET=ppt
+	SLOFILES=
+	$(SLO)$/propread.obj
+	$(SLO)$/pptin.obj
+	$(SLO)$/pptinanimations.obj
+	$(SLO)$/pptatom.obj
+	$(SLO)$/ppt97animations.obj
+
+source\filter\xml\makefile.mk
+	PRJNAME=sd
+	TARGET=xml
+	SLOFILES=
+	$(SLO)$/sdtransform.obj
+	$(SLO)$/sdxmlwrp.obj
+
+source\helper\makefile.mk
+	PRJNAME=sd
+	TARGET=helper
+	SLOFILES=
+	$(SLO)$/simplereferencecomponent.obj
+
+source\ui\accessibility\makefile.mk
+	PRJNAME=sd
+	TARGET=accessibility
+	SLOFILES=
+	$(SLO)$/AccessibleDocumentViewBase.obj
+	$(SLO)$/AccessibleDrawDocumentView.obj
+	$(SLO)$/AccessibleOutlineView.obj
+	$(SLO)$/AccessiblePresentationShape.obj
+	$(SLO)$/AccessiblePresentationGraphicShape.obj
+	$(SLO)$/AccessiblePresentationOLEShape.obj
+	$(SLO)$/AccessibleViewForwarder.obj
+	$(SLO)$/AccessibleOutlineEditSource.obj
+	$(SLO)$/AccessiblePageShape.obj
+	$(SLO)$/AccessibleSlideSorterView.obj
+	$(SLO)$/AccessibleSlideSorterObject.obj
+	$(SLO)$/SdShapeTypes.obj
+
+source\ui\animations\makefile.mk
+	PRJNAME=sd
+	TARGET=animui
+	SLOFILES=
+	$(SLO)$/CustomAnimationCreateDialog.obj
+	$(SLO)$/CustomAnimationDialog.obj
+	$(SLO)$/CustomAnimationPane.obj
+	$(SLO)$/CustomAnimationList.obj
+	$(SLO)$/DialogListBox.obj
+	$(SLO)$/SlideTransitionPane.obj
+	$(SLO)$/STLPropertySet.obj
+	$(SLO)$/motionpathtag.obj
+
+source\ui\annotations\makefile.mk
+	PRJNAME=sd
+	TARGET=uiannotations
+	SLOFILES=
+	$(SLO)$/annotationwindow.obj
+	$(SLO)$/annotationtag.obj
+	$(SLO)$/annotationmanager.obj
+
+source\ui\app\makefile.mk
+	PRJNAME=sd
+	TARGET=app
+	#OBJFILES=
+	#$(OBJ)$/sdlib.obj
+	#$(OBJ)$/sdresid.obj
+	
+	SLOFILES=
+	$(SLO)$/sdmod.obj
+	$(SLO)$/sdmod1.obj
+	$(SLO)$/sdmod2.obj
+	$(SLO)$/sddll.obj
+	$(SLO)$/sddll1.obj
+	$(SLO)$/sddll2.obj
+	$(SLO)$/tbxww.obj
+	$(SLO)$/optsitem.obj
+	$(SLO)$/sdresid.obj
+	$(SLO)$/sdpopup.obj
+	$(SLO)$/sdxfer.obj
+	$(SLO)$/tmplctrl.obj
+
+source\ui\controller\makefile.mk
+	PRJNAME=sd
+	TARGET=controller
+	SLOFILES=
+	$(SLO)$/slidelayoutcontroller.obj
+
+source\ui\dlg\makefile.mk
+	PRJNAME=sd
+	TARGET=dlg
+	SLOFILES=
+	$(SLO)$/inspagob.obj
+	$(SLO)$/ins_paste.obj
+	$(SLO)$/present.obj
+	$(SLO)$/dlgctrls.obj
+	$(SLO)$/dlgchar.obj
+	$(SLO)$/paragr.obj
+	$(SLO)$/tabtempl.obj
+	$(SLO)$/dlgpage.obj
+	$(SLO)$/diactrl.obj
+	$(SLO)$/gluectrl.obj
+	$(SLO)$/sdtreelb.obj
+	$(SLO)$/animobjs.obj
+	$(SLO)$/prltempl.obj
+	$(SLO)$/prntopts.obj
+	$(SLO)$/dlgsnap.obj
+	$(SLO)$/copydlg.obj
+	$(SLO)$/dlgolbul.obj
+	$(SLO)$/tpaction.obj
+	$(SLO)$/tpoption.obj
+	$(SLO)$/filedlg.obj
+	$(SLO)$/unchss.obj
+	$(SLO)$/dlgassim.obj
+	$(SLO)$/dlgass.obj
+	$(SLO)$/assclass.obj
+	$(SLO)$/navigatr.obj
+	$(SLO)$/sdpreslt.obj
+	$(SLO)$/morphdlg.obj
+	$(SLO)$/dlgfield.obj
+	$(SLO)$/custsdlg.obj
+	$(SLO)$/brkdlg.obj
+	$(SLO)$/vectdlg.obj
+	$(SLO)$/docprev.obj
+	$(SLO)$/SpellDialogChildWindow.obj
+	$(SLO)$/AnimationChildWindow.obj
+	$(SLO)$/LayerDialogChildWindow.obj
+	$(SLO)$/LayerDialogContent.obj
+	$(SLO)$/LayerTabBar.obj
+	$(SLO)$/NavigatorChildWindow.obj
+	$(SLO)$/TemplateScanner.obj
+	$(SLO)$/sduiexp.obj
+	$(SLO)$/sddlgfact.obj
+	$(SLO)$/sdabstdlg.obj
+	$(SLO)$/PaneChildWindows.obj
+	$(SLO)$/PaneDockingWindow.obj
+	$(SLO)$/PaneShells.obj
+
+source\ui\docshell\makefile.mk
+	PRJNAME=sd
+	TARGET=docshell
+	SLOFILES=
+	$(SLO)$/docshell.obj
+	$(SLO)$/docshel2.obj
+	$(SLO)$/docshel3.obj
+	$(SLO)$/docshel4.obj
+	$(SLO)$/sdclient.obj
+	$(SLO)$/grdocsh.obj
+
+source\ui\framework\configuration\makefile.mk
+	PRJNAME=sd
+	TARGET=framework_configuration
+	SLOFILES=
+	$(SLO)$/ChangeRequestQueue.obj
+	$(SLO)$/ChangeRequestQueueProcessor.obj
+	$(SLO)$/Configuration.obj
+	$(SLO)$/ConfigurationClassifier.obj
+	$(SLO)$/ConfigurationController.obj
+	$(SLO)$/ConfigurationControllerBroadcaster.obj
+	$(SLO)$/ConfigurationControllerResourceManager.obj
+	$(SLO)$/ConfigurationTracer.obj
+	$(SLO)$/ConfigurationUpdater.obj
+	$(SLO)$/GenericConfigurationChangeRequest.obj
+	$(SLO)$/ResourceId.obj
+	$(SLO)$/ResourceFactoryManager.obj
+	$(SLO)$/UpdateRequest.obj
+
+source\ui\framework\factories\makefile.mk
+	PRJNAME=sd
+	TARGET=framework_factories
+	SLOFILES=
+	$(SLO)$/BasicPaneFactory.obj
+	$(SLO)$/BasicToolBarFactory.obj
+	$(SLO)$/BasicViewFactory.obj
+	$(SLO)$/ChildWindowPane.obj
+	$(SLO)$/FrameWindowPane.obj
+	$(SLO)$/FullScreenPane.obj
+	$(SLO)$/Pane.obj
+	$(SLO)$/PresentationFactory.obj
+	$(SLO)$/ViewShellWrapper.obj
+
+source\ui\framework\module\makefile.mk
+	PRJNAME=sd
+	TARGET=framework_module
+	SLOFILES=
+	$(SLO)$/CenterViewFocusModule.obj
+	$(SLO)$/DrawModule.obj
+	$(SLO)$/ImpressModule.obj
+	$(SLO)$/ModuleController.obj
+	$(SLO)$/PresentationModule.obj
+	$(SLO)$/ReadOnlyModeObserver.obj
+	$(SLO)$/ResourceManager.obj
+	$(SLO)$/ShellStackGuard.obj
+	$(SLO)$/SlideSorterModule.obj
+	$(SLO)$/ToolPanelModule.obj
+	$(SLO)$/ToolBarModule.obj
+	$(SLO)$/ViewTabBarModule.obj
+
+source\ui\framework\tools\makefile.mk
+	PRJNAME=sd
+	TARGET=framework_tools
+	SLOFILES=
+	$(SLO)$/FrameworkHelper.obj
+
+source\ui\func\makefile.mk
+	PRJNAME=sd
+	TARGET=func
+	SLOFILES=
+	$(SLO)$/fuformatpaintbrush.obj
+	$(SLO)$/fuhhconv.obj
+	$(SLO)$/undoheaderfooter.obj
+	$(SLO)$/undolayer.obj
+	$(SLO)$/fupoor.obj
+	$(SLO)$/fudraw.obj
+	$(SLO)$/fuzoom.obj
+	$(SLO)$/fusel.obj
+	$(SLO)$/fuconstr.obj
+	$(SLO)$/fuconrec.obj
+	$(SLO)$/fuconuno.obj
+	$(SLO)$/fuconbez.obj
+	$(SLO)$/fuediglu.obj
+	$(SLO)$/fusldlg.obj
+	$(SLO)$/fuscale.obj
+	$(SLO)$/futransf.obj
+	$(SLO)$/futext.obj
+	$(SLO)$/fuline.obj
+	$(SLO)$/sdundo.obj
+	$(SLO)$/sdundogr.obj
+	$(SLO)$/fuoaprms.obj
+	$(SLO)$/unoaprms.obj
+	$(SLO)$/fuarea.obj
+	$(SLO)$/fuchar.obj
+	$(SLO)$/fuconarc.obj
+	$(SLO)$/fuparagr.obj
+	$(SLO)$/fubullet.obj
+	$(SLO)$/futempl.obj
+	$(SLO)$/fuoutl.obj
+	$(SLO)$/fuoltext.obj
+	$(SLO)$/fuinsert.obj
+	$(SLO)$/fupage.obj
+	$(SLO)$/undopage.obj
+	$(SLO)$/fuprlout.obj
+	$(SLO)$/fuprobjs.obj
+	$(SLO)$/fulinend.obj
+	$(SLO)$/fusnapln.obj
+	$(SLO)$/fuolbull.obj
+	$(SLO)$/fucopy.obj
+	$(SLO)$/fulink.obj
+	$(SLO)$/futhes.obj
+	$(SLO)$/fusearch.obj
+	$(SLO)$/fuinsfil.obj
+	$(SLO)$/futxtatt.obj
+	$(SLO)$/fumeasur.obj
+	$(SLO)$/fuconnct.obj
+	$(SLO)$/unprlout.obj
+	$(SLO)$/fudspord.obj
+	$(SLO)$/unmovss.obj
+	$(SLO)$/fucon3d.obj
+	$(SLO)$/fumorph.obj
+	$(SLO)$/fuexpand.obj
+	$(SLO)$/fusumry.obj
+	$(SLO)$/fucushow.obj
+	$(SLO)$/fuvect.obj
+	$(SLO)$/bulmaper.obj
+	$(SLO)$/undoback.obj
+	$(SLO)$/fuconcs.obj
+	$(SLO)$/smarttag.obj
+
+source\ui\notes\makefile.mk
+	PRJNAME=sd
+	TARGET=notes
+	SLOFILES=
+	$(SLO)$/EditWindow.obj
+	$(SLO)$/NotesChildWindow.obj
+	$(SLO)$/NotesDockingWindow.obj
+	$(SLO)$/TextLogger.obj
+
+source\ui\presenter\makefile.mk
+	PRJNAME=sd
+	TARGET=presenter
+	SLOFILES=
+	$(SLO)$/CanvasUpdateRequester.obj
+	$(SLO)$/PresenterCanvas.obj
+	$(SLO)$/PresenterHelper.obj
+	$(SLO)$/PresenterPreviewCache.obj
+	$(SLO)$/PresenterTextView.obj
+	$(SLO)$/SlideRenderer.obj
+
+source\ui\sidebar\makefile.mk
+	PRJNAME=sd
+	TARGET=sidebar
+	SLOFILES=
+	$(SLO)$/AllMasterPagesSelector.obj
+	$(SLO)$/CurrentMasterPagesSelector.obj
+	$(SLO)$/CustomAnimationPanel.obj
+	$(SLO)$/DocumentHelper.obj
+	$(SLO)$/LayoutMenu.obj
+	$(SLO)$/MasterPageContainer.obj
+	$(SLO)$/MasterPageContainerFiller.obj
+	$(SLO)$/MasterPageContainerProviders.obj
+	$(SLO)$/MasterPageContainerQueue.obj
+	$(SLO)$/MasterPageDescriptor.obj
+	$(SLO)$/MasterPageObserver.obj
+	$(SLO)$/MasterPagesSelector.obj
+	$(SLO)$/NavigatorWrapper.obj
+	$(SLO)$/PanelBase.obj
+	$(SLO)$/PanelFactory.obj
+	$(SLO)$/PreviewValueSet.obj
+	$(SLO)$/RecentlyUsedMasterPages.obj
+	$(SLO)$/RecentMasterPagesSelector.obj
+	$(SLO)$/SlideTransitionPanel.obj
+
+source\ui\slideshow\makefile.mk
+	PRJNAME=sd
+	TARGET=slideshow
+	SLOFILES=
+	$(SLO)$/slideshow.obj
+	$(SLO)$/showwin.obj
+	$(SLO)$/slideshowimpl.obj
+	$(SLO)$/slideshowviewimpl.obj
+	$(SLO)$/PaneHider.obj
+	$(SLO)$/SlideShowRestarter.obj
+
+source\ui\slidesorter\makefile.mk
+	PRJNAME=sd
+	TARGET=slidesorter
+	SLOFILES=
+	$(SLO)$/SlideSorter.obj
+	$(SLO)$/SlideSorterChildWindow.obj
+	$(SLO)$/SlideSorterViewShell.obj
+
+source\ui\slidesorter\cache\makefile.mk
+	PRJNAME=sd
+	TARGET=slscache
+	SLOFILES=
+	$(SLO)$/SlsBitmapCache.obj
+	$(SLO)$/SlsBitmapCompressor.obj
+	$(SLO)$/SlsBitmapFactory.obj
+	$(SLO)$/SlsCacheCompactor.obj
+	$(SLO)$/SlsCacheConfiguration.obj
+	$(SLO)$/SlsGenericPageCache.obj
+	$(SLO)$/SlsPageCache.obj
+	$(SLO)$/SlsPageCacheManager.obj
+	$(SLO)$/SlsQueueProcessor.obj
+	$(SLO)$/SlsRequestFactory.obj
+	$(SLO)$/SlsRequestQueue.obj
+
+source\ui\slidesorter\controller\makefile.mk
+	PRJNAME=sd
+	TARGET=slscontroller
+	SLOFILES=
+	$(SLO)$/SlideSorterController.obj
+	$(SLO)$/SlsAnimator.obj
+	$(SLO)$/SlsAnimationFunction.obj
+	$(SLO)$/SlsClipboard.obj
+	$(SLO)$/SlsCurrentSlideManager.obj
+	$(SLO)$/SlsDragAndDropContext.obj
+	$(SLO)$/SlsFocusManager.obj
+	$(SLO)$/SlsInsertionIndicatorHandler.obj
+	$(SLO)$/SlsListener.obj
+	$(SLO)$/SlsPageSelector.obj
+	$(SLO)$/SlsProperties.obj
+	$(SLO)$/SlsScrollBarManager.obj
+	$(SLO)$/SlsSelectionCommand.obj
+	$(SLO)$/SlsSelectionFunction.obj
+	$(SLO)$/SlsSelectionManager.obj
+	$(SLO)$/SlsSelectionObserver.obj
+	$(SLO)$/SlsSlotManager.obj
+	$(SLO)$/SlsTransferableData.obj
+	$(SLO)$/SlsVisibleAreaManager.obj
+
+source\ui\slidesorter\model\makefile.mk
+	PRJNAME=sd
+	TARGET=slsmodel
+	SLOFILES=
+	$(SLO)$/SlsPageDescriptor.obj
+	$(SLO)$/SlsPageEnumeration.obj
+	$(SLO)$/SlsPageEnumerationProvider.obj
+	$(SLO)$/SlsVisualState.obj
+	$(SLO)$/SlideSorterModel.obj
+
+source\ui\slidesorter\shell\makefile.mk
+	PRJNAME=sd
+	TARGET=slsshell
+	SLOFILES=
+	$(SLO)$/SlideSorter.obj
+	$(SLO)$/SlideSorterService.obj
+	$(SLO)$/SlideSorterViewShell.obj
+
+source\ui\slidesorter\view\makefile.mk
+	PRJNAME=sd
+	TARGET=slsview
+	SLOFILES=
+	$(SLO)$/SlideSorterView.obj
+	$(SLO)$/SlsButtonBar.obj
+	$(SLO)$/SlsFontProvider.obj
+	$(SLO)$/SlsFramePainter.obj
+	$(SLO)$/SlsInsertAnimator.obj
+	$(SLO)$/SlsInsertionIndicatorOverlay.obj
+	$(SLO)$/SlsLayeredDevice.obj
+	$(SLO)$/SlsLayouter.obj
+	$(SLO)$/SlsPageObjectLayouter.obj
+	$(SLO)$/SlsPageObjectPainter.obj
+	$(SLO)$/SlsTheme.obj
+	$(SLO)$/SlsToolTip.obj
+	$(SLO)$/SlsViewCacheContext.obj
+
+source\ui\table\makefile.mk
+	PRJNAME=sd
+	TARGET=uitable
+	SLOFILES=
+	$(SLO)$/tablefunction.obj
+	$(SLO)$/tableobjectbar.obj
+	$(SLO)$/TableDesignPane.obj
+
+source\ui\tools\makefile.mk
+	PRJNAME=sd
+	TARGET=uitools
+	SLOFILES=
+	$(SLO)$/AsynchronousCall.obj
+	$(SLO)$/ConfigurationAccess.obj
+	$(SLO)$/IconCache.obj
+	$(SLO)$/IdleDetection.obj
+	$(SLO)$/EventMultiplexer.obj
+	$(SLO)$/PreviewRenderer.obj
+	$(SLO)$/PropertySet.obj
+	$(SLO)$/SdGlobalResourceContainer.obj
+	$(SLO)$/SlotStateListener.obj
+	$(SLO)$/TimerBasedTaskExecution.obj
+
+source\ui\unoidl\makefile.mk
+	PRJNAME=sd
+	TARGET=unoidl
+	SLO1FILES=
+	$(SLO)$/DrawController.obj
+	$(SLO)$/SdUnoSlideView.obj
+	$(SLO)$/SdUnoOutlineView.obj
+	$(SLO)$/SdUnoDrawView.obj
+	$(SLO)$/unopool.obj
+	$(SLO)$/UnoDocumentSettings.obj
+	$(SLO)$/facreg.obj
+	$(SLO)$/unomodel.obj
+	$(SLO)$/unopage.obj
+	$(SLO)$/unolayer.obj
+	$(SLO)$/unocpres.obj
+	$(SLO)$/unoobj.obj
+	$(SLO)$/unosrch.obj
+	$(SLO)$/unowcntr.obj
+	$(SLO)$/unokywds.obj
+	$(SLO)$/unopback.obj
+	$(SLO)$/unodoc.obj
+	$(SLO)$/unomodule.obj
+	$(SLO)$/randomnode.obj
+	SLO2FILES=
+	$(SLO)$/sddetect.obj
+	$(SLO)$/detreg.obj
+	SLOFILES=
+	$(SLO1FILES)
+	$(SLO2FILES)
+	$(SLO1FILES)
+
+source\ui\view\makefile.mk
+	PRJNAME=sd
+	TARGET=view
+	SLOFILES=
+	$(SLO)$/sdview.obj
+	$(SLO)$/sdview2.obj
+	$(SLO)$/sdview3.obj
+	$(SLO)$/sdview4.obj
+	$(SLO)$/sdview5.obj
+	$(SLO)$/viewshel.obj
+	$(SLO)$/viewshe2.obj
+	$(SLO)$/viewshe3.obj
+	$(SLO)$/sdwindow.obj
+	$(SLO)$/drviewsh.obj
+	$(SLO)$/drviews1.obj
+	$(SLO)$/drviews2.obj
+	$(SLO)$/drviews3.obj
+	$(SLO)$/drviews4.obj
+	$(SLO)$/drviews5.obj
+	$(SLO)$/drviews6.obj
+	$(SLO)$/drviews7.obj
+	$(SLO)$/drviews8.obj
+	$(SLO)$/drviews9.obj
+	$(SLO)$/drviewsa.obj
+	$(SLO)$/drviewsb.obj
+	$(SLO)$/drviewsc.obj
+	$(SLO)$/drviewsd.obj
+	$(SLO)$/drviewse.obj
+	$(SLO)$/drviewsf.obj
+	$(SLO)$/drviewsg.obj
+	$(SLO)$/drviewsi.obj
+	$(SLO)$/drviewsj.obj
+	$(SLO)$/drvwshrg.obj
+	$(SLO)$/drawview.obj
+	$(SLO)$/grviewsh.obj
+	$(SLO)$/outlnvsh.obj
+	$(SLO)$/outlnvs2.obj
+	$(SLO)$/presvish.obj
+	$(SLO)$/outlview.obj
+	$(SLO)$/tabcontr.obj
+	$(SLO)$/bmcache.obj
+	$(SLO)$/drbezob.obj
+	$(SLO)$/drtxtob.obj
+	$(SLO)$/drtxtob1.obj
+	$(SLO)$/sdruler.obj
+	$(SLO)$/frmview.obj
+	$(SLO)$/clview.obj
+	$(SLO)$/zoomlist.obj
+	$(SLO)$/unmodpg.obj
+	$(SLO)$/DocumentRenderer.obj
+	$(SLO)$/FormShellManager.obj
+	$(SLO)$/GraphicObjectBar.obj
+	$(SLO)$/GraphicViewShellBase.obj
+	$(SLO)$/ImpressViewShellBase.obj
+	$(SLO)$/MediaObjectBar.obj
+	$(SLO)$/Outliner.obj
+	$(SLO)$/OutlinerIterator.obj
+	$(SLO)$/OutlineViewShellBase.obj
+	$(SLO)$/SlideSorterViewShellBase.obj
+	$(SLO)$/PresentationViewShellBase.obj
+	$(SLO)$/ToolBarManager.obj
+	$(SLO)$/UpdateLockManager.obj
+	$(SLO)$/ViewClipboard.obj
+	$(SLO)$/ViewShellBase.obj
+	$(SLO)$/ViewShellImplementation.obj
+	$(SLO)$/ViewShellManager.obj
+	$(SLO)$/ViewShellHint.obj
+	$(SLO)$/ViewTabBar.obj
+	$(SLO)$/WindowUpdater.obj
+	$(SLO)$/viewoverlaymanager.obj
+
+source\unotypes\makefile.mk
+	PRJNAME=sd
+	TARGET=unotypesanim
+
+util\makefile.mk
+	PRJNAME=sd
+	TARGET=sdraw3
+
+util\makefile.pmk
+
+workben\testdll\makefile
+	PRJNAME=test
+	TARGET=tst
+	SLOFILES=
+	$(SLO)test.obj
+	#SRC1FILES=

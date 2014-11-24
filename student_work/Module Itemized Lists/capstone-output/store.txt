@@ -1,0 +1,108 @@
+Name:
+store
+
+Dependencies:
+sal NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\store
+..\inc\store\*.h %_DEST%\inc%_EXT%\store\*.h
+..\inc\store\store.hxx %_DEST%\inc%_EXT%\store\store.hxx
+..\inc\store\store.inl %_DEST%\inc%_EXT%\store\store.inl
+..\util\store.xml %_DEST%\xml%_EXT%\store.xml
+
+..\%__SRC%\lib\istore.lib %_DEST%\lib%_EXT%\istore.lib
+..\%__SRC%\lib\store*.lib %_DEST%\lib%_EXT%\store*.lib
+..\%__SRC%\lib\libstore.*.* %_DEST%\lib%_EXT%\*
+..\%__SRC%\bin\sto*.dll %_DEST%\bin%_EXT%\sto*.dll
+
+
+
+linklib: libstore.*.*
+
+Source Files:
+inc\pch\precompiled_store.cxx
+source\lockbyte.cxx
+source\object.cxx
+source\storbase.cxx
+source\storbios.cxx
+source\storcach.cxx
+source\stordata.cxx
+source\stordir.cxx
+source\store.cxx
+source\storlckb.cxx
+source\storpage.cxx
+source\stortree.cxx
+workben\t_base.cxx
+workben\t_file.cxx
+workben\t_leak.cxx
+workben\t_page.cxx
+workben\t_store.cxx
+
+Header Files:
+inc\pch\precompiled_store.hxx
+inc\store\store.h
+inc\store\store.hxx
+inc\store\types.h
+source\lockbyte.hxx
+source\object.hxx
+source\storbase.hxx
+source\storbios.hxx
+source\storcach.hxx
+source\stordata.hxx
+source\stordir.hxx
+source\storlckb.hxx
+source\storpage.hxx
+source\stortree.hxx
+
+Patch Files:
+
+Makefiles:
+
+version.mk
+
+inc\makefile.mk
+	PRJNAME=store
+	TARGET=inc
+
+source\makefile.mk
+	PRJNAME=store
+	TARGET=store
+	SLOFILES=
+	$(SLO)$/object.obj
+	$(SLO)$/lockbyte.obj
+	$(SLO)$/storbase.obj
+	$(SLO)$/storbios.obj
+	$(SLO)$/storcach.obj
+	$(SLO)$/stordata.obj
+	$(SLO)$/stordir.obj
+	$(SLO)$/storlckb.obj
+	$(SLO)$/stortree.obj
+	$(SLO)$/storpage.obj
+	$(SLO)$/store.obj
+	OBJFILES=
+	$(OBJ)$/object.obj
+	$(OBJ)$/lockbyte.obj
+	$(OBJ)$/storbase.obj
+	$(OBJ)$/storbios.obj
+	$(OBJ)$/storcach.obj
+	$(OBJ)$/stordata.obj
+	$(OBJ)$/stordir.obj
+	$(OBJ)$/storlckb.obj
+	$(OBJ)$/stortree.obj
+	$(OBJ)$/storpage.obj
+	$(OBJ)$/store.obj
+
+util\makefile.mk
+	PRJNAME=store
+	TARGET=store
+
+workben\makefile.mk
+	PRJNAME=store
+	TARGET=workben
+	OBJFILES=
+	$(OBJ)$/t_leak.obj
+	$(OBJ)$/t_file.obj
+	$(OBJ)$/t_page.obj
+	$(OBJ)$/t_base.obj
+	$(OBJ)$/t_store.obj

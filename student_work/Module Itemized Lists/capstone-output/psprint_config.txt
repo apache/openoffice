@@ -1,0 +1,27 @@
+Name:
+psprint_config
+
+Dependencies:
+soltools AFMS:afms NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\pck%_EXT%
+
+..\%__SRC%\bin\*.zip %_DEST%\pck%_EXT%\*.zip
+
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+configuration\makefile.mk
+	PRJNAME=psprint_config
+	TARGET=unxfontspsprintgeneral
+
+configuration\ppds\makefile.mk
+	PRJNAME=psp_config
+	TARGET=unxfontsxp3ppds

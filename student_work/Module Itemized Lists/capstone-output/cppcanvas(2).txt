@@ -1,0 +1,140 @@
+Name:
+cppcanvas
+
+Dependencies:
+comphelper cppuhelper offuh tools vcl basegfx canvas NULL
+
+Build Rules:
+..\%__SRC%\bin\cppcanv*.dll %_DEST%\bin%_EXT%\cppcanv*.dll
+..\%__SRC%\lib\icppcanvas.lib %_DEST%\lib%_EXT%\icppcanvas.lib
+..\%__SRC%\lib\cppcanvas.lib %_DEST%\lib%_EXT%\cppcanvas.lib
+..\%__SRC%\lib\lib*.* %_DEST%\lib%_EXT%\lib*.*
+
+mkdir: %_DEST%\inc%_EXT%\cppcanvas
+..\inc\cppcanvas\bitmap.hxx %_DEST%\inc%_EXT%\cppcanvas\bitmap.hxx
+..\inc\cppcanvas\bitmapcanvas.hxx %_DEST%\inc%_EXT%\cppcanvas\bitmapcanvas.hxx
+..\inc\cppcanvas\canvas.hxx %_DEST%\inc%_EXT%\cppcanvas\canvas.hxx
+..\inc\cppcanvas\canvasgraphic.hxx %_DEST%\inc%_EXT%\cppcanvas\canvasgraphic.hxx
+..\inc\cppcanvas\color.hxx %_DEST%\inc%_EXT%\cppcanvas\color.hxx
+..\inc\cppcanvas\customsprite.hxx %_DEST%\inc%_EXT%\cppcanvas\customsprite.hxx
+..\inc\cppcanvas\font.hxx %_DEST%\inc%_EXT%\cppcanvas\font.hxx
+..\inc\cppcanvas\polypolygon.hxx %_DEST%\inc%_EXT%\cppcanvas\polypolygon.hxx
+..\inc\cppcanvas\renderer.hxx %_DEST%\inc%_EXT%\cppcanvas\renderer.hxx
+..\inc\cppcanvas\sprite.hxx %_DEST%\inc%_EXT%\cppcanvas\sprite.hxx
+..\inc\cppcanvas\spritecanvas.hxx %_DEST%\inc%_EXT%\cppcanvas\spritecanvas.hxx
+..\inc\cppcanvas\text.hxx %_DEST%\inc%_EXT%\cppcanvas\text.hxx
+..\inc\cppcanvas\vclfactory.hxx %_DEST%\inc%_EXT%\cppcanvas\vclfactory.hxx
+..\inc\cppcanvas\basegfxfactory.hxx %_DEST%\inc%_EXT%\cppcanvas\basegfxfactory.hxx
+
+Source Files:
+inc\pch\precompiled_cppcanvas.cxx
+source\mtfrenderer\bitmapaction.cxx
+source\mtfrenderer\cachedprimitivebase.cxx
+source\mtfrenderer\implrenderer.cxx
+source\mtfrenderer\lineaction.cxx
+source\mtfrenderer\mtftools.cxx
+source\mtfrenderer\pointaction.cxx
+source\mtfrenderer\polypolyaction.cxx
+source\mtfrenderer\textaction.cxx
+source\mtfrenderer\transparencygroupaction.cxx
+source\tools\canvasgraphichelper.cxx
+source\tools\tools.cxx
+source\wrapper\basegfxfactory.cxx
+source\wrapper\implbitmap.cxx
+source\wrapper\implbitmapcanvas.cxx
+source\wrapper\implcanvas.cxx
+source\wrapper\implcolor.cxx
+source\wrapper\implcustomsprite.cxx
+source\wrapper\implfont.cxx
+source\wrapper\implpolypolygon.cxx
+source\wrapper\implsprite.cxx
+source\wrapper\implspritecanvas.cxx
+source\wrapper\impltext.cxx
+source\wrapper\vclfactory.cxx
+
+Header Files:
+inc\cppcanvas\basegfxfactory.hxx
+inc\cppcanvas\bitmap.hxx
+inc\cppcanvas\bitmapcanvas.hxx
+inc\cppcanvas\canvas.hxx
+inc\cppcanvas\canvasgraphic.hxx
+inc\cppcanvas\color.hxx
+inc\cppcanvas\customsprite.hxx
+inc\cppcanvas\font.hxx
+inc\cppcanvas\polypolygon.hxx
+inc\cppcanvas\renderer.hxx
+inc\cppcanvas\sprite.hxx
+inc\cppcanvas\spritecanvas.hxx
+inc\cppcanvas\text.hxx
+inc\cppcanvas\vclfactory.hxx
+inc\pch\precompiled_cppcanvas.hxx
+source\inc\action.hxx
+source\inc\canvasgraphichelper.hxx
+source\inc\implrenderer.hxx
+source\inc\tools.hxx
+source\mtfrenderer\bitmapaction.hxx
+source\mtfrenderer\cachedprimitivebase.hxx
+source\mtfrenderer\lineaction.hxx
+source\mtfrenderer\mtftools.hxx
+source\mtfrenderer\outdevstate.hxx
+source\mtfrenderer\pointaction.hxx
+source\mtfrenderer\polypolyaction.hxx
+source\mtfrenderer\textaction.hxx
+source\mtfrenderer\transparencygroupaction.hxx
+source\wrapper\implbitmap.hxx
+source\wrapper\implbitmapcanvas.hxx
+source\wrapper\implcanvas.hxx
+source\wrapper\implcolor.hxx
+source\wrapper\implcustomsprite.hxx
+source\wrapper\implfont.hxx
+source\wrapper\implpolypolygon.hxx
+source\wrapper\implsprite.hxx
+source\wrapper\implspritecanvas.hxx
+source\wrapper\impltext.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=cppcanvas
+	TARGET=inc
+
+source\mtfrenderer\makefile.mk
+	PRJNAME=cppcanvas
+	TARGET=metafilerenderer
+	SLOFILES=$(SLO)$/cachedprimitivebase.obj
+	$(SLO)$/bitmapaction.obj
+	$(SLO)$/implrenderer.obj
+	$(SLO)$/lineaction.obj
+	$(SLO)$/pointaction.obj
+	$(SLO)$/polypolyaction.obj
+	$(SLO)$/textaction.obj
+	$(SLO)$/transparencygroupaction.obj
+	$(SLO)$/mtftools.obj
+
+source\tools\makefile.mk
+	PRJNAME=cppcanvas
+	TARGET=cppcanvastools
+	SLOFILES=$(SLO)$/canvasgraphichelper.obj
+	$(SLO)$/tools.obj
+
+source\wrapper\makefile.mk
+	PRJNAME=cppcanvas
+	TARGET=canvaswrapper
+	SLOFILES=$(SLO)$/implbitmap.obj
+	$(SLO)$/implcanvas.obj
+	$(SLO)$/implcolor.obj
+	$(SLO)$/implfont.obj
+	$(SLO)$/vclfactory.obj
+	$(SLO)$/basegfxfactory.obj
+	$(SLO)$/impltext.obj
+	$(SLO)$/implpolypolygon.obj
+	$(SLO)$/implbitmapcanvas.obj
+	$(SLO)$/implspritecanvas.obj
+	$(SLO)$/implsprite.obj
+	$(SLO)$/implcustomsprite.obj
+
+util\makefile.mk
+	PRJNAME=cppcanvas
+	TARGET=cppcanvas

@@ -1,0 +1,76 @@
+Name:
+javaunohelper
+
+Dependencies:
+LIBXSLT:libxslt bridges cppuhelper jurt ridljar unoil NULL
+
+Build Rules:
+..\%__SRC%\class\juh.jar %_DEST%\bin%_EXT%\juh.jar
+..\%__SRC%\bin\juh*.dll %_DEST%\bin%_EXT%\juh*.dll
+..\%__SRC%\lib\libjuh*.so %_DEST%\lib%_EXT%\libjuh*.so
+..\%__SRC%\lib\libjuh*.dylib %_DEST%\lib%_EXT%\libjuh*.dylib
+..\%__SRC%\misc\juh.component %_DEST%\xml%_EXT%\juh.component
+
+..\%__SRC%\bin\juh_src.zip %COMMON_DEST%\bin%_EXT%\juh_src.zip
+
+Source Files:
+inc\pch\precompiled_javaunohelper.cxx
+source\bootstrap.cxx
+source\javaunohelper.cxx
+source\preload.cxx
+source\vm.cxx
+
+Header Files:
+inc\pch\precompiled_javaunohelper.hxx
+source\vm.hxx
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\comp\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_comp
+
+com\sun\star\comp\helper\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_comp_helper
+
+com\sun\star\comp\juhtest\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_comp_juhtest
+
+com\sun\star\lib\uno\adapter\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_lib_uno_adapter
+
+com\sun\star\lib\uno\helper\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_lib_uno_helper
+
+inc\makefile.mk
+	PRJNAME=javaunohelper
+	TARGET=inc
+
+source\makefile.mk
+	PRJNAME=javaunohelper
+	TARGET=juh
+	SLOFILES=
+	$(SLO)$/javaunohelper.obj
+	$(SLO)$/bootstrap.obj
+	$(SLO)$/preload.obj
+	$(SLO)$/vm.obj
+
+test\com\sun\star\comp\helper\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_comp_helper_test
+
+test\com\sun\star\lib\uno\helper\makefile.mk
+	PRJNAME=juhelper
+	TARGET=com_sun_star_lib_uno_helper_test
+
+util\makefile.mk
+	PRJNAME=juhelper
+	TARGET=juh
+
+util\settings.pmk

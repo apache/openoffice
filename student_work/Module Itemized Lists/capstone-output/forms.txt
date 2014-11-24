@@ -1,0 +1,409 @@
+Name:
+forms
+
+Dependencies:
+L10N:l10n oovbaapi svx sfx2 qadevOOo LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\lib*.so %_DEST%\lib%_EXT%
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\lib\*.sl %_DEST%\lib%_EXT%\*.sl
+..\%__SRC%\bin\*.bin %_DEST%\bin%_EXT%\*.bin
+..\%__SRC%\bin\*.res %_DEST%\bin%_EXT%\*.res
+..\util\*.xml %_DEST%\xml%_EXT%\*.xml
+..\%__SRC%\misc\frm.component %_DEST%\xml%_EXT%\frm.component
+
+Source Files:
+inc\pch\precompiled_forms.cxx
+source\component\Button.cxx
+source\component\cachedrowset.cxx
+source\component\CheckBox.cxx
+source\component\clickableimage.cxx
+source\component\cloneable.cxx
+source\component\Columns.cxx
+source\component\ComboBox.cxx
+source\component\Currency.cxx
+source\component\DatabaseForm.cxx
+source\component\Date.cxx
+source\component\Edit.cxx
+source\component\EditBase.cxx
+source\component\entrylisthelper.cxx
+source\component\errorbroadcaster.cxx
+source\component\EventThread.cxx
+source\component\File.cxx
+source\component\Filter.cxx
+source\component\findpos.cxx
+source\component\FixedText.cxx
+source\component\FormattedField.cxx
+source\component\FormattedFieldWrapper.cxx
+source\component\FormComponent.cxx
+source\component\formcontrolfont.cxx
+source\component\FormsCollection.cxx
+source\component\Grid.cxx
+source\component\GroupBox.cxx
+source\component\GroupManager.cxx
+source\component\Hidden.cxx
+source\component\ImageButton.cxx
+source\component\ImageControl.cxx
+source\component\imgprod.cxx
+source\component\ListBox.cxx
+source\component\navigationbar.cxx
+source\component\Numeric.cxx
+source\component\Pattern.cxx
+source\component\propertybaghelper.cxx
+source\component\RadioButton.cxx
+source\component\refvaluecomponent.cxx
+source\component\scrollbar.cxx
+source\component\spinbutton.cxx
+source\component\Time.cxx
+source\helper\commanddescriptionprovider.cxx
+source\helper\commandimageprovider.cxx
+source\helper\controlfeatureinterception.cxx
+source\helper\formnavigation.cxx
+source\helper\resettable.cxx
+source\helper\urltransformer.cxx
+source\helper\windowstateguard.cxx
+source\misc\componenttools.cxx
+source\misc\frm_module.cxx
+source\misc\frm_strings.cxx
+source\misc\ids.cxx
+source\misc\InterfaceContainer.cxx
+source\misc\limitedformats.cxx
+source\misc\listenercontainers.cxx
+source\misc\property.cxx
+source\misc\services.cxx
+source\resource\frm_resource.cxx
+source\richtext\attributedispatcher.cxx
+source\richtext\clipboarddispatcher.cxx
+source\richtext\featuredispatcher.cxx
+source\richtext\parametrizedattributedispatcher.cxx
+source\richtext\richtextcontrol.cxx
+source\richtext\richtextengine.cxx
+source\richtext\richtextimplcontrol.cxx
+source\richtext\richtextmodel.cxx
+source\richtext\richtextunowrapper.cxx
+source\richtext\richtextvclcontrol.cxx
+source\richtext\richtextviewport.cxx
+source\richtext\rtattributehandler.cxx
+source\richtext\specialdispatchers.cxx
+source\runtime\formoperations.cxx
+source\solar\component\navbarcontrol.cxx
+source\solar\control\navtoolbar.cxx
+source\xforms\binding.cxx
+source\xforms\boolexpression.cxx
+source\xforms\computedexpression.cxx
+source\xforms\convert.cxx
+source\xforms\datatyperepository.cxx
+source\xforms\datatypes.cxx
+source\xforms\enumeration.cxx
+source\xforms\mip.cxx
+source\xforms\model.cxx
+source\xforms\model_ui.cxx
+source\xforms\pathexpression.cxx
+source\xforms\propertysetbase.cxx
+source\xforms\resourcehelper.cxx
+source\xforms\submission.cxx
+source\xforms\unohelper.cxx
+source\xforms\xformsevent.cxx
+source\xforms\xforms_services.cxx
+source\xforms\xmlhelper.cxx
+source\xforms\submission\replace.cxx
+source\xforms\submission\serialization_app_xml.cxx
+source\xforms\submission\serialization_urlencoded.cxx
+source\xforms\submission\submission_get.cxx
+source\xforms\submission\submission_post.cxx
+source\xforms\submission\submission_put.cxx
+source\xforms\xpathlib\extension.cxx
+source\xforms\xpathlib\xpathlib.cxx
+
+Header Files:
+inc\pch\precompiled_forms.hxx
+source\component\BaseListBox.hxx
+source\component\Button.hxx
+source\component\cachedrowset.hxx
+source\component\CheckBox.hxx
+source\component\clickableimage.hxx
+source\component\Columns.hxx
+source\component\ComboBox.hxx
+source\component\Currency.hxx
+source\component\DatabaseForm.hxx
+source\component\Date.hxx
+source\component\Edit.hxx
+source\component\EditBase.hxx
+source\component\entrylisthelper.hxx
+source\component\errorbroadcaster.hxx
+source\component\EventThread.hxx
+source\component\File.hxx
+source\component\Filter.hxx
+source\component\findpos.hxx
+source\component\FixedText.hxx
+source\component\FormattedField.hxx
+source\component\FormattedFieldWrapper.hxx
+source\component\FormsCollection.hxx
+source\component\Grid.hxx
+source\component\GroupBox.hxx
+source\component\GroupManager.hxx
+source\component\Hidden.hxx
+source\component\ImageButton.hxx
+source\component\ImageControl.hxx
+source\component\imgprod.hxx
+source\component\ListBox.hxx
+source\component\navigationbar.hxx
+source\component\Numeric.hxx
+source\component\Pattern.hxx
+source\component\RadioButton.hxx
+source\component\refvaluecomponent.hxx
+source\component\scrollbar.hxx
+source\component\spinbutton.hxx
+source\component\Time.hxx
+source\inc\cloneable.hxx
+source\inc\commanddescriptionprovider.hxx
+source\inc\commandimageprovider.hxx
+source\inc\componenttools.hxx
+source\inc\controlfeatureinterception.hxx
+source\inc\featuredispatcher.hxx
+source\inc\FormComponent.hxx
+source\inc\formcontrolfont.hxx
+source\inc\formnavigation.hxx
+source\inc\forms_module.hxx
+source\inc\forms_module_impl.hxx
+source\inc\frm_module.hxx
+source\inc\frm_resource.hrc
+source\inc\frm_resource.hxx
+source\inc\frm_strings.hxx
+source\inc\ids.hxx
+source\inc\InterfaceContainer.hxx
+source\inc\limitedformats.hxx
+source\inc\listenercontainers.hxx
+source\inc\property.hrc
+source\inc\property.hxx
+source\inc\propertybaghelper.hxx
+source\inc\resettable.hxx
+source\inc\services.hxx
+source\inc\togglestate.hxx
+source\inc\urltransformer.hxx
+source\inc\windowstateguard.hxx
+source\richtext\attributedispatcher.hxx
+source\richtext\clipboarddispatcher.hxx
+source\richtext\featuredispatcher.hxx
+source\richtext\parametrizedattributedispatcher.hxx
+source\richtext\richtextcontrol.hxx
+source\richtext\richtextengine.hxx
+source\richtext\richtextimplcontrol.hxx
+source\richtext\richtextmodel.hxx
+source\richtext\richtextunowrapper.hxx
+source\richtext\richtextvclcontrol.hxx
+source\richtext\richtextviewport.hxx
+source\richtext\rtattributehandler.hxx
+source\richtext\rtattributes.hxx
+source\richtext\specialdispatchers.hxx
+source\richtext\textattributelistener.hxx
+source\runtime\formoperations.hxx
+source\solar\component\navbarcontrol.hxx
+source\solar\inc\navtoolbar.hxx
+source\xforms\binding.hxx
+source\xforms\boolexpression.hxx
+source\xforms\collection.hxx
+source\xforms\computedexpression.hxx
+source\xforms\convert.hxx
+source\xforms\datatyperepository.hxx
+source\xforms\datatypes.hxx
+source\xforms\datatypes_impl.hxx
+source\xforms\enumeration.hxx
+source\xforms\evaluationcontext.hxx
+source\xforms\mip.hxx
+source\xforms\model.hxx
+source\xforms\model_helper.hxx
+source\xforms\NameContainer.hxx
+source\xforms\namedcollection.hxx
+source\xforms\pathexpression.hxx
+source\xforms\propertysetbase.hxx
+source\xforms\resourcehelper.hxx
+source\xforms\submission.hxx
+source\xforms\unohelper.hxx
+source\xforms\warnings_guard_unicode_regex.h
+source\xforms\xformsevent.hxx
+source\xforms\xforms_services.hxx
+source\xforms\xmlhelper.hxx
+source\xforms\submission\serialization.hxx
+source\xforms\submission\serialization_app_xml.hxx
+source\xforms\submission\serialization_urlencoded.hxx
+source\xforms\submission\submission.hxx
+source\xforms\submission\submission_get.hxx
+source\xforms\submission\submission_post.hxx
+source\xforms\submission\submission_put.hxx
+source\xforms\xpathlib\extension.hxx
+source\xforms\xpathlib\xpathlib.hxx
+
+Patch Files:
+
+Makefiles:
+
+makefile.pmk
+
+inc\makefile.mk
+	PRJNAME=forms
+	TARGET=inc
+
+qa\makefile.mk
+	TARGET=FormIntegrationTest
+	PRJNAME=forms
+
+qa\complex\forms\makefile.mk
+	PRJNAME=forms
+	TARGET=qa_complex_forms
+	#TARGET=CheckOGroupBoxModel
+	#PRJNAME=$(TARGET)
+
+qa\unoapi\makefile.mk
+	PRJNAME=forms
+	TARGET=qa_unoapi
+
+source\component\makefile.mk
+	PRJNAME=forms
+	TARGET=component
+	SLOFILES=$(SLO)$/Grid.obj
+	$(SLO)$/Columns.obj
+	$(SLO)$/DatabaseForm.obj
+	$(SLO)$/GroupManager.obj
+	$(SLO)$/FormsCollection.obj
+	$(SLO)$/EventThread.obj
+	$(SLO)$/File.obj
+	$(SLO)$/Edit.obj
+	$(SLO)$/EditBase.obj
+	$(SLO)$/Numeric.obj
+	$(SLO)$/Pattern.obj
+	$(SLO)$/Currency.obj
+	$(SLO)$/Date.obj
+	$(SLO)$/Time.obj
+	$(SLO)$/FormattedField.obj
+	$(SLO)$/FormattedFieldWrapper.obj
+	$(SLO)$/ListBox.obj
+	$(SLO)$/ComboBox.obj
+	$(SLO)$/GroupBox.obj
+	$(SLO)$/Hidden.obj
+	$(SLO)$/CheckBox.obj
+	$(SLO)$/RadioButton.obj
+	$(SLO)$/FixedText.obj
+	$(SLO)$/FormComponent.obj
+	$(SLO)$/clickableimage.obj
+	$(SLO)$/Button.obj
+	$(SLO)$/ImageButton.obj
+	$(SLO)$/ImageControl.obj
+	$(SLO)$/errorbroadcaster.obj
+	$(SLO)$/cloneable.obj
+	$(SLO)$/Filter.obj
+	$(SLO)$/entrylisthelper.obj
+	$(SLO)$/scrollbar.obj
+	$(SLO)$/spinbutton.obj
+	$(SLO)$/navigationbar.obj
+	$(SLO)$/formcontrolfont.obj
+	$(SLO)$/refvaluecomponent.obj
+	$(SLO)$/imgprod.obj
+	$(SLO)$/findpos.obj
+	$(SLO)$/propertybaghelper.obj
+	$(SLO)$/cachedrowset.obj
+	
+
+source\helper\makefile.mk
+	PRJNAME=forms
+	TARGET=helper
+	SLOFILES=$(SLO)$/formnavigation.obj
+	$(SLO)$/controlfeatureinterception.obj
+	$(SLO)$/urltransformer.obj
+	$(SLO)$/windowstateguard.obj
+	$(SLO)$/resettable.obj
+	$(SLO)$/commandimageprovider.obj
+	$(SLO)$/commanddescriptionprovider.obj
+	
+
+source\misc\makefile.mk
+	PRJNAME=forms
+	TARGET=common
+	SLOFILES=$(SLO)$/limitedformats.obj
+	$(SLO)$/property.obj
+	$(SLO)$/services.obj
+	$(SLO)$/InterfaceContainer.obj
+	$(SLO)$/ids.obj
+	$(SLO)$/frm_module.obj
+	$(SLO)$/frm_strings.obj
+	$(SLO)$/listenercontainers.obj
+	$(SLO)$/componenttools.obj
+	
+
+source\resource\makefile.mk
+	PRJNAME=forms
+	TARGET=resource
+	SLOFILES=$(SLO)$/frm_resource.obj
+	
+
+source\richtext\makefile.mk
+	PRJNAME=forms
+	TARGET=richtext
+	SLOFILES=$(EXCEPTIONSFILES)
+	$(SLO)$/richtextvclcontrol.obj
+	$(SLO)$/richtextviewport.obj
+	$(SLO)$/rtattributehandler.obj
+	
+
+source\runtime\makefile.mk
+	PRJNAME=forms
+	TARGET=runtime
+	SLOFILES=$(SLO)$/formoperations.obj
+
+source\solar\component\makefile.mk
+	PRJNAME=forms
+	TARGET=solarcomponent
+	SLOFILES=$(SLO)$/navbarcontrol.obj
+
+source\solar\control\makefile.mk
+	PRJNAME=forms
+	TARGET=solarcontrol
+	SLOFILES=$(SLO)$/navtoolbar.obj
+	
+
+source\xforms\makefile.mk
+	PRJNAME=forms
+	TARGET=xforms
+	SLOFILES=
+	$(SLO)$/model.obj
+	$(SLO)$/model_ui.obj
+	$(SLO)$/binding.obj
+	$(SLO)$/xforms_services.obj
+	$(SLO)$/unohelper.obj
+	$(SLO)$/propertysetbase.obj
+	$(SLO)$/pathexpression.obj
+	$(SLO)$/computedexpression.obj
+	$(SLO)$/boolexpression.obj
+	$(SLO)$/mip.obj
+	$(SLO)$/submission.obj
+	$(SLO)$/datatyperepository.obj
+	$(SLO)$/datatypes.obj
+	$(SLO)$/convert.obj
+	$(SLO)$/enumeration.obj
+	$(SLO)$/resourcehelper.obj
+	$(SLO)$/xmlhelper.obj
+	$(SLO)$/xformsevent.obj
+
+source\xforms\submission\makefile.mk
+	PRJNAME=forms
+	TARGET=xformssubmit
+	SLOFILES=
+	$(SLO)$/serialization_app_xml.obj
+	$(SLO)$/serialization_urlencoded.obj
+	$(SLO)$/submission_post.obj
+	$(SLO)$/submission_put.obj
+	$(SLO)$/submission_get.obj
+	$(SLO)$/replace.obj
+
+source\xforms\xpathlib\makefile.mk
+	PRJNAME=forms
+	TARGET=xformsxpath
+	SLOFILES=
+	$(SLO)$/xpathlib.obj
+	$(SLO)$/extension.obj
+
+util\makefile.mk
+	PRJNAME=forms
+	TARGET=frm

@@ -1,0 +1,3702 @@
+icu
+=============
+
+Entering /cygdrive/c/steve/testarea/main/icu
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/icu ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/icu ./wntmsci12.pro/misc/build/icu_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/icu_removeme
+cd ./wntmsci12.pro/misc/build && ( gzip -d -c C:/steve/TestArea/ext_sources/2f6ecca935948f7db92d925d88d0d078-icu4c-4_0_1-src.tgz  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_so_icu
+icu/
+icu/APIChangeReport_401.html
+icu/packaging/
+icu/packaging/debian/
+icu/packaging/debian/README
+icu/packaging/README
+icu/packaging/PACKAGES
+icu/packaging/rpm/
+icu/packaging/rpm/icu.spec
+icu/source/
+icu/source/common/
+icu/source/common/ubidiwrt.c
+icu/source/common/resbund.cpp
+icu/source/common/ucmndata.c
+icu/source/common/locbased.cpp
+icu/source/common/rbbistbl.cpp
+icu/source/common/normlzr.cpp
+icu/source/common/putilimp.h
+icu/source/common/locutil.h
+icu/source/common/uinvchar.c
+icu/source/common/ucnv_u8.c
+icu/source/common/msvcres.h
+icu/source/common/uset_imp.h
+icu/source/common/rbbirb.h
+icu/source/common/ucnv_set.c
+icu/source/common/unisetspan.h
+icu/source/common/rbbinode.cpp
+icu/source/common/util_props.cpp
+icu/source/common/uvector.h
+icu/source/common/ulocimp.h
+icu/source/common/sprpimpl.h
+icu/source/common/ucnv_u32.c
+icu/source/common/uresdata.h
+icu/source/common/uchar_props_data.c
+icu/source/common/uinvchar.h
+icu/source/common/unifunct.cpp
+icu/source/common/unifilt.cpp
+icu/source/common/usprep.cpp
+icu/source/common/wintz.h
+icu/source/common/util.cpp
+icu/source/common/unistr_props.cpp
+icu/source/common/servlkf.cpp
+icu/source/common/udatamem.h
+icu/source/common/rbbirpt.txt
+icu/source/common/ucln.h
+icu/source/common/ucln_cmn.h
+icu/source/common/wintz.c
+icu/source/common/locmap.h
+icu/source/common/uniset.cpp
+icu/source/common/utracimp.h
+icu/source/common/ustrtrns.c
+icu/source/common/utf_impl.c
+icu/source/common/umutex.c
+icu/source/common/unorm_it.h
+icu/source/common/uarrsort.c
+icu/source/common/unisetspan.cpp
+icu/source/common/uresbund.c
+icu/source/common/ucnv_io.h
+icu/source/common/locutil.cpp
+icu/source/common/ucmndata.h
+icu/source/common/cmemory.c
+icu/source/common/ubidiimp.h
+icu/source/common/servnotf.h
+icu/source/common/bmpset.h
+icu/source/common/utypes.c
+icu/source/common/ustr_cnv.h
+icu/source/common/umutex.h
+icu/source/common/utext.cpp
+icu/source/common/rbbidata.cpp
+icu/source/common/rbbiscan.h
+icu/source/common/unistr.cpp
+icu/source/common/ucnvhz.c
+icu/source/common/ucnvdisp.c
+icu/source/common/ucnv_cb.c
+icu/source/common/ubidi_props.h
+icu/source/common/util.h
+icu/source/common/ucnv_err.c
+icu/source/common/charstr.h
+icu/source/common/unorm_it.c
+icu/source/common/uidna.cpp
+icu/source/common/ustr_imp.h
+icu/source/common/ucnv_bld.h
+icu/source/common/cwchar.c
+icu/source/common/unorm_props_data.c
+icu/source/common/ucnv_u16.c
+icu/source/common/umapfile.h
+icu/source/common/ubidiln.c
+icu/source/common/uinit.c
+icu/source/common/rbbirpt.h
+icu/source/common/punycode.h
+icu/source/common/udatamem.c
+icu/source/common/ucnvisci.c
+icu/source/common/udataswp.h
+icu/source/common/ubrk.cpp
+icu/source/common/ucol_swp.c
+icu/source/common/dictbe.cpp
+icu/source/common/ustack.cpp
+icu/source/common/parsepos.cpp
+icu/source/common/ucasemap.c
+icu/source/common/ucnvbocu.c
+icu/source/common/usc_impl.c
+icu/source/common/locbased.h
+icu/source/common/cstring.h
+icu/source/common/rbbidata.h
+icu/source/common/servnotf.cpp
+icu/source/common/bmpset.cpp
+icu/source/common/uresimp.h
+icu/source/common/udata.c
+icu/source/common/ucase.h
+icu/source/common/utrace.c
+icu/source/common/ucat.c
+icu/source/common/ustrenum.cpp
+icu/source/common/servlk.cpp
+icu/source/common/mutex.h
+icu/source/common/ushape.c
+icu/source/common/unorm.cpp
+icu/source/common/caniter.cpp
+icu/source/common/brkeng.h
+icu/source/common/unicode/
+icu/source/common/unicode/pwin32.h
+icu/source/common/unicode/ustring.h
+icu/source/common/unicode/parseerr.h
+icu/source/common/unicode/uniset.h
+icu/source/common/unicode/utf_old.h
+icu/source/common/unicode/ures.h
+icu/source/common/unicode/urep.h
+icu/source/common/unicode/utf.h
+icu/source/common/unicode/symtable.h
+icu/source/common/unicode/ubrk.h
+icu/source/common/unicode/unimatch.h
+icu/source/common/unicode/ucnv_err.h
+icu/source/common/unicode/uscript.h
+icu/source/common/unicode/udraft.h
+icu/source/common/unicode/putil.h
+icu/source/common/unicode/ucat.h
+icu/source/common/unicode/uconfig.h
+icu/source/common/unicode/umisc.h
+icu/source/common/unicode/umachine.h
+icu/source/common/unicode/usprep.h
+icu/source/common/unicode/uobslete.h
+icu/source/common/unicode/usystem.h
+icu/source/common/unicode/utypes.h
+icu/source/common/unicode/ushape.h
+icu/source/common/unicode/udata.h
+icu/source/common/unicode/rbbi.h
+icu/source/common/unicode/normlzr.h
+icu/source/common/unicode/parsepos.h
+icu/source/common/unicode/uloc.h
+icu/source/common/unicode/caniter.h
+icu/source/common/unicode/schriter.h
+icu/source/common/unicode/locid.h
+icu/source/common/unicode/rep.h
+icu/source/common/unicode/uidna.h
+icu/source/common/unicode/uchriter.h
+icu/source/common/unicode/unifunct.h
+icu/source/common/unicode/dtintrv.h
+icu/source/common/unicode/uversion.h
+icu/source/common/unicode/utf32.h
+icu/source/common/unicode/uclean.h
+icu/source/common/unicode/dbbi.h
+icu/source/common/unicode/brkiter.h
+icu/source/common/unicode/unifilt.h
+icu/source/common/unicode/chariter.h
+icu/source/common/unicode/utrace.h
+icu/source/common/unicode/uset.h
+icu/source/common/unicode/uobject.h
+icu/source/common/unicode/utext.h
+icu/source/common/unicode/urename.h
+icu/source/common/unicode/ucnv.h
+icu/source/common/unicode/ucasemap.h
+icu/source/common/unicode/uchar.h
+icu/source/common/unicode/uintrnal.h
+icu/source/common/unicode/unistr.h
+icu/source/common/unicode/ppalmos.h
+icu/source/common/unicode/docmain.h
+icu/source/common/unicode/usetiter.h
+icu/source/common/unicode/ubidi.h
+icu/source/common/unicode/ucnv_cb.h
+icu/source/common/unicode/strenum.h
+icu/source/common/unicode/uiter.h
+icu/source/common/unicode/resbund.h
+icu/source/common/unicode/uenum.h
+icu/source/common/unicode/utf16.h
+icu/source/common/unicode/udeprctd.h
+icu/source/common/unicode/utf8.h
+icu/source/common/unicode/unorm.h
+icu/source/common/unicode/platform.h.in
+icu/source/common/cpputils.h
+icu/source/common/propname.cpp
+icu/source/common/hash.h
+icu/source/common/rbbinode.h
+icu/source/common/ucnv_imp.h
+icu/source/common/uhash_us.cpp
+icu/source/common/uvectr32.h
+icu/source/common/uhash.h
+icu/source/common/rbbisetb.h
+icu/source/common/uchriter.cpp
+icu/source/common/ucln_cmn.c
+icu/source/common/rbbicst.pl
+icu/source/common/uprops.c
+icu/source/common/ustrfmt.c
+icu/source/common/brkeng.cpp
+icu/source/common/uassert.h
+icu/source/common/uarrsort.h
+icu/source/common/mutex.cpp
+icu/source/common/ucase.c
+icu/source/common/cstring.c
+icu/source/common/utrie.c
+icu/source/common/udataswp.c
+icu/source/common/uset.cpp
+icu/source/common/ubrkimpl.h
+icu/source/common/ustrcase.c
+icu/source/common/punycode.c
+icu/source/common/servloc.h
+icu/source/common/propname.h
+icu/source/common/common.rc
+icu/source/common/ucnv_ext.h
+icu/source/common/uprops.h
+icu/source/common/localsvc.h
+icu/source/common/ruleiter.cpp
+icu/source/common/ucnv_ext.c
+icu/source/common/ucnvmbcs.c
+icu/source/common/uniset_props.cpp
+icu/source/common/ucnv_lmb.c
+icu/source/common/ucol_swp.h
+icu/source/common/ucase_props_data.c
+icu/source/common/unistr_case.cpp
+icu/source/common/unormimp.h
+icu/source/common/ucnv_cnv.h
+icu/source/common/uhash.c
+icu/source/common/utrie.h
+icu/source/common/uenum.c
+icu/source/common/umath.c
+icu/source/common/dictbe.h
+icu/source/common/uenumimp.h
+icu/source/common/ucnv.c
+icu/source/common/rbbi.cpp
+icu/source/common/ucnvlat1.c
+icu/source/common/uset_props.cpp
+icu/source/common/umapfile.c
+icu/source/common/usetiter.cpp
+icu/source/common/unistr_cnv.cpp
+icu/source/common/ustrenum.h
+icu/source/common/rbbisetb.cpp
+icu/source/common/serv.cpp
+icu/source/common/uloc.c
+icu/source/common/cmemory.h
+icu/source/common/uiter.cpp
+icu/source/common/Makefile.in
+icu/source/common/ucnvmbcs.h
+icu/source/common/servrbf.cpp
+icu/source/common/rbbiscan.cpp
+icu/source/common/serv.h
+icu/source/common/locid.cpp
+icu/source/common/servls.cpp
+icu/source/common/usc_impl.h
+icu/source/common/ucnv_bld.c
+icu/source/common/ruleiter.h
+icu/source/common/chariter.cpp
+icu/source/common/ucnv2022.c
+icu/source/common/ustr_cnv.c
+icu/source/common/uresdata.c
+icu/source/common/ustrfmt.h
+icu/source/common/ubidi_props_data.c
+icu/source/common/unames.c
+icu/source/common/dtintrv.cpp
+icu/source/common/uvector.cpp
+icu/source/common/ucnvscsu.c
+icu/source/common/uscript.c
+icu/source/common/uchar.c
+icu/source/common/common.vcproj
+icu/source/common/ucnv_io.c
+icu/source/common/ustr_wcs.c
+icu/source/common/resbund_cnv.cpp
+icu/source/common/uobject.cpp
+icu/source/common/ucnv_u7.c
+icu/source/common/servslkf.cpp
+icu/source/common/icucfg.h.in
+icu/source/common/rbbitblb.cpp
+icu/source/common/putil.c
+icu/source/common/unormcmp.cpp
+icu/source/common/brkiter.cpp
+icu/source/common/ucnv_cnv.c
+icu/source/common/ustring.c
+icu/source/common/uvectr32.cpp
+icu/source/common/schriter.cpp
+icu/source/common/rbbirb.cpp
+icu/source/common/ubidi_props.c
+icu/source/common/cwchar.h
+icu/source/common/ubidi.c
+icu/source/common/ures_cnv.c
+icu/source/common/rbbitblb.h
+icu/source/common/triedict.h
+icu/source/common/triedict.cpp
+icu/source/common/locmap.c
+icu/source/test/
+icu/source/test/testdata/
+icu/source/test/testdata/GraphemeClusterBreakTest.txt
+icu/source/test/testdata/riwords.txt
+icu/source/test/testdata/sh_YU.txt
+icu/source/test/testdata/nfs4_mixed_prep_p.txt
+icu/source/test/testdata/te.txt
+icu/source/test/testdata/importtest.bin
+icu/source/test/testdata/nfs4_cs_prep_cs.txt
+icu/source/test/testdata/default.txt
+icu/source/test/testdata/testtypes.txt
+icu/source/test/testdata/test4x.ucm
+icu/source/test/testdata/test1bmp.ucm
+icu/source/test/testdata/test1.ucm
+icu/source/test/testdata/DataDrivenCollationTest.txt
+icu/source/test/testdata/tstfiles.mk
+icu/source/test/testdata/letest.xml
+icu/source/test/testdata/structLocale.txt
+icu/source/test/testdata/ibm9027.ucm
+icu/source/test/testdata/rbbitst.txt
+icu/source/test/testdata/conversion.txt
+icu/source/test/testdata/nfs4_mixed_prep_s.txt
+icu/source/test/testdata/casing.txt
+icu/source/test/testdata/mc.txt
+icu/source/test/testdata/NormalizationTest-3.2.0.txt
+icu/source/test/testdata/te_IN.txt
+icu/source/test/testdata/TestFont1.otf
+icu/source/test/testdata/testempty.txt
+icu/source/test/testdata/icuio.txt
+icu/source/test/testdata/te_IN_REVISED.txt
+icu/source/test/testdata/test4.ucm
+icu/source/test/testdata/nfs4_cis_prep.txt
+icu/source/test/testdata/SentenceBreakTest.txt
+icu/source/test/testdata/NumberFormatTestCases.txt
+icu/source/test/testdata/idna_rules.txt
+icu/source/test/testdata/csdetest.xml
+icu/source/test/testdata/ssearch.xml
+icu/source/test/testdata/readme.txt
+icu/source/test/testdata/ra.txt
+icu/source/test/testdata/pkgdata.inc.in
+icu/source/test/testdata/root.txt
+icu/source/test/testdata/icu26e_testtypes.res
+icu/source/test/testdata/format.txt
+icu/source/test/testdata/regextst.txt
+icu/source/test/testdata/iscii.bin
+icu/source/test/testdata/idna_conf.txt
+icu/source/test/testdata/uni-text.bin
+icu/source/test/testdata/test3.ucm
+icu/source/test/testdata/LineBreakTest.txt
+icu/source/test/testdata/sh.txt
+icu/source/test/testdata/nfs4_cs_prep_ci.txt
+icu/source/test/testdata/calendar.txt
+icu/source/test/testdata/testdata.mak
+icu/source/test/testdata/testaliases.txt
+icu/source/test/testdata/Makefile.in
+icu/source/test/testdata/CollationTest_SHIFTED_STUB.txt
+icu/source/test/testdata/GraphemeBreakTest.txt
+icu/source/test/testdata/re_tests.txt
+icu/source/test/testdata/translit_rules.txt
+icu/source/test/testdata/WordBreakTest.txt
+icu/source/test/testdata/icu26_testtypes.res
+icu/source/test/testdata/CollationTest_NON_IGNORABLE_STUB.txt
+icu/source/test/testdata/ra.xlf
+icu/source/test/testmap/
+icu/source/test/testmap/testmap.dsp
+icu/source/test/testmap/Makefile.in
+icu/source/test/testmap/testmap.c
+icu/source/test/intltest/
+icu/source/test/intltest/itutil.h
+icu/source/test/intltest/tzrulets.cpp
+icu/source/test/intltest/caltest.cpp
+icu/source/test/intltest/callimts.cpp
+icu/source/test/intltest/ucaconf.h
+icu/source/test/intltest/lcukocol.cpp
+icu/source/test/intltest/rndmcoll.cpp
+icu/source/test/intltest/ssearch.h
+icu/source/test/intltest/itutil.cpp
+icu/source/test/intltest/dtfmtrtts.h
+icu/source/test/intltest/winnmtst.h
+icu/source/test/intltest/pptest.cpp
+icu/source/test/intltest/wbnf.h
+icu/source/test/intltest/dadrcal.h
+icu/source/test/intltest/idnaconf.cpp
+icu/source/test/intltest/strcase.cpp
+icu/source/test/intltest/dtfmtrtts.cpp
+icu/source/test/intltest/regextst.h
+icu/source/test/intltest/plurults.h
+icu/source/test/intltest/mnkytst.cpp
+icu/source/test/intltest/sfwdchit.h
+icu/source/test/intltest/msfmrgts.h
+icu/source/test/intltest/dtptngts.h
+icu/source/test/intltest/apicoll.cpp
+icu/source/test/intltest/winutil.cpp
+icu/source/test/intltest/reptest.cpp
+icu/source/test/intltest/svccoll.h
+icu/source/test/intltest/ssearch.cpp
+icu/source/test/intltest/canittst.h
+icu/source/test/intltest/pptest.h
+icu/source/test/intltest/tzregts.cpp
+icu/source/test/intltest/numfmtst.cpp
+icu/source/test/intltest/idnaref.cpp
+icu/source/test/intltest/regcoll.cpp
+icu/source/test/intltest/dtfmapts.cpp
+icu/source/test/intltest/dtifmtts.cpp
+icu/source/test/intltest/icusvtst.cpp
+icu/source/test/intltest/ustrtest.h
+icu/source/test/intltest/dtptngts.cpp
+icu/source/test/intltest/csdetest.cpp
+icu/source/test/intltest/strtest.cpp
+icu/source/test/intltest/ustrtest.cpp
+icu/source/test/intltest/uobjtest.cpp
+icu/source/test/intltest/convtest.cpp
+icu/source/test/intltest/restsnew.cpp
+icu/source/test/intltest/sfwdchit.cpp
+icu/source/test/intltest/icusvtst.h
+icu/source/test/intltest/ittrans.cpp
+icu/source/test/intltest/miscdtfm.cpp
+icu/source/test/intltest/plurfmts.h
+icu/source/test/intltest/dadrfmt.h
+icu/source/test/intltest/loctest.cpp
+icu/source/test/intltest/nptrans.h
+icu/source/test/intltest/tsmthred.cpp
+icu/source/test/intltest/itrbnfrt.cpp
+icu/source/test/intltest/usettest.h
+icu/source/test/intltest/usettest.cpp
+icu/source/test/intltest/tscoll.cpp
+icu/source/test/intltest/itmajor.h
+icu/source/test/intltest/tfsmalls.cpp
+icu/source/test/intltest/citrtest.cpp
+icu/source/test/intltest/jamotest.h
+icu/source/test/intltest/trcoll.cpp
+icu/source/test/intltest/itrbnfrt.h
+icu/source/test/intltest/sdtfmtts.h
+icu/source/test/intltest/rbbitst.cpp
+icu/source/test/intltest/testutil.cpp
+icu/source/test/intltest/reptest.h
+icu/source/test/intltest/tmsgfmt.cpp
+icu/source/test/intltest/idnaref.h
+icu/source/test/intltest/rndmcoll.h
+icu/source/test/intltest/cntabcol.cpp
+icu/source/test/intltest/numfmtst.h
+icu/source/test/intltest/tzfmttst.cpp
+icu/source/test/intltest/testidna.cpp
+icu/source/test/intltest/ucaconf.cpp
+icu/source/test/intltest/encoll.h
+icu/source/test/intltest/nmfmapts.h
+icu/source/test/intltest/tchcfmt.cpp
+icu/source/test/intltest/dtfmrgts.cpp
+icu/source/test/intltest/ucdtest.cpp
+icu/source/test/intltest/nmfmapts.cpp
+icu/source/test/intltest/srchtest.h
+icu/source/test/intltest/ficoll.h
+icu/source/test/intltest/nptrans.cpp
+icu/source/test/intltest/tzrulets.h
+icu/source/test/intltest/textfile.h
+icu/source/test/intltest/itercoll.h
+icu/source/test/intltest/nmfmtrt.h
+icu/source/test/intltest/normconf.cpp
+icu/source/test/intltest/tscoll.h
+icu/source/test/intltest/tzoffloc.cpp
+icu/source/test/intltest/g7coll.cpp
+icu/source/test/intltest/tokiter.cpp
+icu/source/test/intltest/uobjtest.h
+icu/source/test/intltest/intltest.h
+icu/source/test/intltest/g7coll.h
+icu/source/test/intltest/dadrcal.cpp
+icu/source/test/intltest/citrtest.h
+icu/source/test/intltest/numrgts.h
+icu/source/test/intltest/utxttest.cpp
+icu/source/test/intltest/itrbnf.h
+icu/source/test/intltest/rbbiapts.cpp
+icu/source/test/intltest/decoll.cpp
+icu/source/test/intltest/thcoll.h
+icu/source/test/intltest/decoll.h
+icu/source/test/intltest/itmajor.cpp
+icu/source/test/intltest/punyref.h
+icu/source/test/intltest/csdetest.h
+icu/source/test/intltest/allcoll.cpp
+icu/source/test/intltest/v32test.cpp
+icu/source/test/intltest/mnkytst.h
+icu/source/test/intltest/tfsmalls.h
+icu/source/test/intltest/aliastst.h
+icu/source/test/intltest/aliastst.cpp
+icu/source/test/intltest/itrbnf.cpp
+icu/source/test/intltest/astrotst.cpp
+icu/source/test/intltest/itformat.h
+icu/source/test/intltest/dadrcoll.h
+icu/source/test/intltest/itrbnfp.cpp
+icu/source/test/intltest/transapi.h
+icu/source/test/intltest/escoll.cpp
+icu/source/test/intltest/calcasts.cpp
+icu/source/test/intltest/msfmrgts.cpp
+icu/source/test/intltest/lcukocol.h
+icu/source/test/intltest/incaltst.cpp
+icu/source/test/intltest/currcoll.h
+icu/source/test/intltest/convtest.h
+icu/source/test/intltest/tstnorm.h
+icu/source/test/intltest/frcoll.h
+icu/source/test/intltest/tsdtfmsy.h
+icu/source/test/intltest/fldset.cpp
+icu/source/test/intltest/testidna.h
+icu/source/test/intltest/regcoll.h
+icu/source/test/intltest/utxttest.h
+icu/source/test/intltest/tzbdtest.h
+icu/source/test/intltest/textfile.cpp
+icu/source/test/intltest/tzbdtest.cpp
+icu/source/test/intltest/dadrcoll.cpp
+icu/source/test/intltest/calregts.cpp
+icu/source/test/intltest/dcfmapts.h
+icu/source/test/intltest/itrbbi.h
+icu/source/test/intltest/tsdate.h
+icu/source/test/intltest/plurults.cpp
+icu/source/test/intltest/dtfmrgts.h
+icu/source/test/intltest/trnserr.cpp
+icu/source/test/intltest/idnaconf.h
+icu/source/test/intltest/tsdtfmsy.cpp
+icu/source/test/intltest/svccoll.cpp
+icu/source/test/intltest/trnserr.h
+icu/source/test/intltest/tsputil.cpp
+icu/source/test/intltest/uvectest.h
+icu/source/test/intltest/tsdcfmsy.h
+icu/source/test/intltest/thcoll.cpp
+icu/source/test/intltest/tzregts.h
+icu/source/test/intltest/tokiter.h
+icu/source/test/intltest/nmfmtrt.cpp
+icu/source/test/intltest/intltest.cpp
+icu/source/test/intltest/dtifmtts.h
+icu/source/test/intltest/fldset.h
+icu/source/test/intltest/intltest.vcproj
+icu/source/test/intltest/caltztst.cpp
+icu/source/test/intltest/tzoffloc.h
+icu/source/test/intltest/tchcfmt.h
+icu/source/test/intltest/miscdtfm.h
+icu/source/test/intltest/tsdcfmsy.cpp
+icu/source/test/intltest/restest.cpp
+icu/source/test/intltest/regextst.cpp
+icu/source/test/intltest/jacoll.h
+icu/source/test/intltest/restsnew.h
+icu/source/test/intltest/tztest.h
+icu/source/test/intltest/currcoll.cpp
+icu/source/test/intltest/calcasts.h
+icu/source/test/intltest/canittst.cpp
+icu/source/test/intltest/callimts.h
+icu/source/test/intltest/normconf.h
+icu/source/test/intltest/ittrans.h
+icu/source/test/intltest/jamotest.cpp
+icu/source/test/intltest/dtfmapts.h
+icu/source/test/intltest/srchtest.cpp
+icu/source/test/intltest/tstnrapi.cpp
+icu/source/test/intltest/tzfmttst.h
+icu/source/test/intltest/itrbnfp.h
+icu/source/test/intltest/loctest.h
+icu/source/test/intltest/itformat.cpp
+icu/source/test/intltest/transrt.h
+icu/source/test/intltest/apicoll.h
+icu/source/test/intltest/itrbbi.cpp
+icu/source/test/intltest/cpdtrtst.h
+icu/source/test/intltest/itercoll.cpp
+icu/source/test/intltest/v32test.h
+icu/source/test/intltest/rbbiapts.h
+icu/source/test/intltest/calregts.h
+icu/source/test/intltest/restest.h
+icu/source/test/intltest/caltztst.h
+icu/source/test/intltest/allcoll.h
+icu/source/test/intltest/incaltst.h
+icu/source/test/intltest/dcfmapts.cpp
+icu/source/test/intltest/Makefile.in
+icu/source/test/intltest/ucdtest.h
+icu/source/test/intltest/dtfmttst.h
+icu/source/test/intltest/testutil.h
+icu/source/test/intltest/ficoll.cpp
+icu/source/test/intltest/cpdtrtst.cpp
+icu/source/test/intltest/caltest.h
+icu/source/test/intltest/testidn.cpp
+icu/source/test/intltest/sdtfmtts.cpp
+icu/source/test/intltest/windttst.cpp
+icu/source/test/intltest/transtst.h
+icu/source/test/intltest/tsnmfmt.cpp
+icu/source/test/intltest/dadrfmt.cpp
+icu/source/test/intltest/tmsgfmt.h
+icu/source/test/intltest/tstnorm.cpp
+icu/source/test/intltest/rbbitst.h
+icu/source/test/intltest/frcoll.cpp
+icu/source/test/intltest/cntabcol.h
+icu/source/test/intltest/jacoll.cpp
+icu/source/test/intltest/tsdate.cpp
+icu/source/test/intltest/encoll.cpp
+icu/source/test/intltest/numrgts.cpp
+icu/source/test/intltest/windttst.h
+icu/source/test/intltest/transtst.cpp
+icu/source/test/intltest/astrotst.h
+icu/source/test/intltest/dtfmttst.cpp
+icu/source/test/intltest/winutil.h
+icu/source/test/intltest/transrt.cpp
+icu/source/test/intltest/trcoll.h
+icu/source/test/intltest/wbnf.cpp
+icu/source/test/intltest/tsnmfmt.h
+icu/source/test/intltest/uvectest.cpp
+icu/source/test/intltest/strtest.h
+icu/source/test/intltest/tsmthred.h
+icu/source/test/intltest/winnmtst.cpp
+icu/source/test/intltest/punyref.c
+icu/source/test/intltest/tsputil.h
+icu/source/test/intltest/transapi.cpp
+icu/source/test/intltest/tztest.cpp
+icu/source/test/intltest/plurfmts.cpp
+icu/source/test/intltest/escoll.h
+icu/source/test/hdrtst/
+icu/source/test/hdrtst/dfiles.txt
+icu/source/test/hdrtst/pfiles.txt
+icu/source/test/hdrtst/cxxfiles.txt
+icu/source/test/hdrtst/Makefile.in
+icu/source/test/cintltst/
+icu/source/test/cintltst/callcoll.c
+icu/source/test/cintltst/currtest.c
+icu/source/test/cintltst/usrchtst.c
+icu/source/test/cintltst/tracetst.c
+icu/source/test/cintltst/utmstest.c
+icu/source/test/cintltst/cdtdptst.h
+icu/source/test/cintltst/usrchdat.c
+icu/source/test/cintltst/sorttest.c
+icu/source/test/cintltst/cdtrgtst.c
+icu/source/test/cintltst/custrtrn.c
+icu/source/test/cintltst/ncnvtst.c
+icu/source/test/cintltst/utransts.c
+icu/source/test/cintltst/spreptst.c
+icu/source/test/cintltst/cdattst.h
+icu/source/test/cintltst/cbiditst.c
+icu/source/test/cintltst/cmsgtst.c
+icu/source/test/cintltst/cloctst.c
+icu/source/test/cintltst/reapits.c
+icu/source/test/cintltst/ccapitst.c
+icu/source/test/cintltst/nfsprep.c
+icu/source/test/cintltst/cposxtst.c
+icu/source/test/cintltst/calldata.h
+icu/source/test/cintltst/calltest.c
+icu/source/test/cintltst/creststn.h
+icu/source/test/cintltst/hpmufn.c
+icu/source/test/cintltst/creststn.c
+icu/source/test/cintltst/capitst.c
+icu/source/test/cintltst/cucdapi.c
+icu/source/test/cintltst/ncnvfbts.c
+icu/source/test/cintltst/cbkittst.c
+icu/source/test/cintltst/crestst.c
+icu/source/test/cintltst/cjaptst.h
+icu/source/test/cintltst/cldrtest.c
+icu/source/test/cintltst/cstrcase.c
+icu/source/test/cintltst/udatatst.c
+icu/source/test/cintltst/cjaptst.c
+icu/source/test/cintltst/cfintst.c
+icu/source/test/cintltst/ccolltst.c
+icu/source/test/cintltst/cturtst.h
+icu/source/test/cintltst/encoll.h
+icu/source/test/cintltst/cdetst.c
+icu/source/test/cintltst/stdnmtst.c
+icu/source/test/cintltst/cucdtst.c
+icu/source/test/cintltst/cdetst.h
+icu/source/test/cintltst/putiltst.c
+icu/source/test/cintltst/custrtst.c
+icu/source/test/cintltst/cmsccoll.c
+icu/source/test/cintltst/cbiditst.h
+icu/source/test/cintltst/citertst.h
+icu/source/test/cintltst/cbiapts.h
+icu/source/test/cintltst/colutil.c
+icu/source/test/cintltst/cctest.c
+icu/source/test/cintltst/ccaltst.h
+icu/source/test/cintltst/citertst.c
+icu/source/test/cintltst/cnormtst.h
+icu/source/test/cintltst/ccapitst.h
+icu/source/test/cintltst/cintltst.vcproj
+icu/source/test/cintltst/nccbtst.c
+icu/source/test/cintltst/cdattst.c
+icu/source/test/cintltst/cutiltst.c
+icu/source/test/cintltst/cmsgtst.h
+icu/source/test/cintltst/cbididat.c
+icu/source/test/cintltst/cbiapts.c
+icu/source/test/cintltst/utf8tst.c
+icu/source/test/cintltst/cturtst.c
+icu/source/test/cintltst/nucnvtst.c
+icu/source/test/cintltst/cstrtest.c
+icu/source/test/cintltst/cformtst.c
+icu/source/test/cintltst/cg7coll.c
+icu/source/test/cintltst/cnumtst.c
+icu/source/test/cintltst/idnatest.c
+icu/source/test/cintltst/cnumtst.h
+icu/source/test/cintltst/ccaltst.c
+icu/source/test/cintltst/ccurrtst.h
+icu/source/test/cintltst/ucsdetst.c
+icu/source/test/cintltst/ncnvfbts.h
+icu/source/test/cintltst/utf16tst.c
+icu/source/test/cintltst/cintltst.h
+icu/source/test/cintltst/trietest.c
+icu/source/test/cintltst/nfsprep.h
+icu/source/test/cintltst/ccurrtst.c
+icu/source/test/cintltst/cformtst.h
+icu/source/test/cintltst/cnmdptst.c
+icu/source/test/cintltst/encoll.c
+icu/source/test/cintltst/cnormtst.c
+icu/source/test/cintltst/ccolltst.h
+icu/source/test/cintltst/cfintst.h
+icu/source/test/cintltst/udatpg_test.c
+icu/source/test/cintltst/cintltst.c
+icu/source/test/cintltst/cdtrgtst.h
+icu/source/test/cintltst/cestst.h
+icu/source/test/cintltst/cfrtst.c
+icu/source/test/cintltst/cestst.c
+icu/source/test/cintltst/crestst.h
+icu/source/test/cintltst/Makefile.in
+icu/source/test/cintltst/cg7coll.h
+icu/source/test/cintltst/cnmdptst.h
+icu/source/test/cintltst/callcoll.h
+icu/source/test/cintltst/cfrtst.h
+icu/source/test/cintltst/sprpdata.c
+icu/source/test/cintltst/cucdapi.h
+icu/source/test/cintltst/eurocreg.c
+icu/source/test/cintltst/cconvtst.c
+icu/source/test/cintltst/utexttst.c
+icu/source/test/cintltst/cdtdptst.c
+icu/source/test/cintltst/bocu1tst.c
+icu/source/test/cintltst/cloctst.h
+icu/source/test/cintltst/usettest.c
+icu/source/test/cintltst/chashtst.c
+icu/source/test/cintltst/capitst.h
+icu/source/test/cintltst/nccbtst.h
+icu/source/test/cintltst/uenumtst.c
+icu/source/test/cintltst/nucnvtst.h
+icu/source/test/compat/
+icu/source/test/compat/tzone.pl
+icu/source/test/compat/readme.txt
+icu/source/test/compat/tzdate.c
+icu/source/test/compat/Makefile.in
+icu/source/test/letest/
+icu/source/test/letest/FontObject.h
+icu/source/test/letest/sfnt.h
+icu/source/test/letest/letest.vcproj
+icu/source/test/letest/cletest.c
+icu/source/test/letest/SimpleFontInstance.h
+icu/source/test/letest/letsutil.cpp
+icu/source/test/letest/cletest.sln
+icu/source/test/letest/FontTableCache.cpp
+icu/source/test/letest/xmlreader.h
+icu/source/test/letest/letest.cpp
+icu/source/test/letest/cfonts.h
+icu/source/test/letest/cmaps.cpp
+icu/source/test/letest/testdata.cpp
+icu/source/test/letest/gendata.cpp
+icu/source/test/letest/FontObject.cpp
+icu/source/test/letest/gendata.vcproj
+icu/source/test/letest/cmaps.h
+icu/source/test/letest/gendata.xml
+icu/source/test/letest/gendata.sln
+icu/source/test/letest/PortableFontInstance.h
+icu/source/test/letest/SimpleFontInstance.cpp
+icu/source/test/letest/letest.h
+icu/source/test/letest/readme.html
+icu/source/test/letest/cletest.vcproj
+icu/source/test/letest/letsutil.h
+icu/source/test/letest/FontTableCache.h
+icu/source/test/letest/PortableFontInstance.cpp
+icu/source/test/letest/Makefile.in
+icu/source/test/letest/xmlreader.cpp
+icu/source/test/letest/letest.sln
+icu/source/test/letest/cfonts.cpp
+icu/source/test/Makefile.in
+icu/source/test/thaitest/
+icu/source/test/thaitest/space.txt
+icu/source/test/thaitest/thaitest.dsp
+icu/source/test/thaitest/thaitest.cpp
+icu/source/test/thaitest/Makefile.in
+icu/source/test/threadtest/
+icu/source/test/threadtest/stringtest.cpp
+icu/source/test/threadtest/threadtest.h
+icu/source/test/threadtest/threadtest.dsw
+icu/source/test/threadtest/converttest.cpp
+icu/source/test/threadtest/threadtest.dsp
+icu/source/test/threadtest/threadtest.cpp
+icu/source/test/threadtest/Makefile.in
+icu/source/test/perf/
+icu/source/test/perf/convperf/
+icu/source/test/perf/convperf/convperf.vcproj
+icu/source/test/perf/convperf/ConvPerf_r.pl
+icu/source/test/perf/convperf/convperf.h
+icu/source/test/perf/convperf/data.h
+icu/source/test/perf/convperf/convperf_iml.pl
+icu/source/test/perf/convperf/convperf.cpp
+icu/source/test/perf/convperf/convperf_ansi.pl
+icu/source/test/perf/convperf/Makefile.in
+icu/source/test/perf/perf.sln
+icu/source/test/perf/README
+icu/source/test/perf/results/
+icu/source/test/perf/strsrchperf/
+icu/source/test/perf/strsrchperf/strsrchperf.h
+icu/source/test/perf/strsrchperf/StrSrchPerf_r.pl
+icu/source/test/perf/strsrchperf/strsrchperf.cpp
+icu/source/test/perf/strsrchperf/Makefile.in
+icu/source/test/perf/strsrchperf/strsrchperf.vcproj
+icu/source/test/perf/collationperf/
+icu/source/test/perf/collationperf/collperf.cpp
+icu/source/test/perf/collationperf/readme.html
+icu/source/test/perf/collationperf/CollPerf.pl
+icu/source/test/perf/collationperf/Makefile.in
+icu/source/test/perf/ubrkperf/
+icu/source/test/perf/ubrkperf/ubrkperf.cpp
+icu/source/test/perf/ubrkperf/ubrkperf.vcproj
+icu/source/test/perf/ubrkperf/ubrkperfold.cpp
+icu/source/test/perf/ubrkperf/ubrkperf.dsp
+icu/source/test/perf/ubrkperf/UBrkPerf_r.pl
+icu/source/test/perf/ubrkperf/UBrkPerf.pl
+icu/source/test/perf/ubrkperf/ubrkperf.h
+icu/source/test/perf/ubrkperf/ubrkperf20.dsp
+icu/source/test/perf/ubrkperf/Makefile.in
+icu/source/test/perf/ubrkperf/ubrkperfold.dsp
+icu/source/test/perf/perldriver/
+icu/source/test/perf/perldriver/Dataset.pm
+icu/source/test/perf/perldriver/Output.pm
+icu/source/test/perf/perldriver/PerfFramework.pm
+icu/source/test/perf/perldriver/Common.pl
+icu/source/test/perf/perldriver/Format.pm
+icu/source/test/perf/ustrperf/
+icu/source/test/perf/ustrperf/StringPerf.pl
+icu/source/test/perf/ustrperf/stringperf.vcproj
+icu/source/test/perf/ustrperf/stringperf.cpp
+icu/source/test/perf/ustrperf/StringPerf_r.pl
+icu/source/test/perf/ustrperf/Makefile.in
+icu/source/test/perf/ustrperf/stringperf.h
+icu/source/test/perf/usetperf/
+icu/source/test/perf/usetperf/usetperf.cpp
+icu/source/test/perf/usetperf/usetperf.vcproj
+icu/source/test/perf/usetperf/bitset.cpp
+icu/source/test/perf/usetperf/UsetPerf.pl
+icu/source/test/perf/usetperf/bitset.h
+icu/source/test/perf/usetperf/Makefile.in
+icu/source/test/perf/utfperf/
+icu/source/test/perf/utfperf/UtfPerf.pl
+icu/source/test/perf/utfperf/utfperf.cpp
+icu/source/test/perf/utfperf/Makefile.in
+icu/source/test/perf/utfperf/utfperf.vcproj
+icu/source/test/perf/normperf/
+icu/source/test/perf/normperf/NormPerf_r.pl
+icu/source/test/perf/normperf/normperf.cpp
+icu/source/test/perf/normperf/normperf.h
+icu/source/test/perf/normperf/NormPerf.pl
+icu/source/test/perf/normperf/Makefile.in
+icu/source/test/perf/normperf/normperf.vcproj
+icu/source/test/perf/Makefile.in
+icu/source/test/perf/collperf/
+icu/source/test/perf/collperf/collperf.vcproj
+icu/source/test/perf/collperf/collperf.cpp
+icu/source/test/perf/collperf/CollPerf_r.pl
+icu/source/test/perf/collperf/CollPerf.pl
+icu/source/test/perf/collperf/Makefile.in
+icu/source/test/perf/charperf/
+icu/source/test/perf/charperf/CharPerf_r.pl
+icu/source/test/perf/charperf/charperf.cpp
+icu/source/test/perf/charperf/charperf.h
+icu/source/test/perf/charperf/charperf.vcproj
+icu/source/test/perf/charperf/Makefile.in
+icu/source/test/perf/charperf/CharPerf.pl
+icu/source/test/perf/unisetperf/
+icu/source/test/perf/unisetperf/unisetperf.cpp
+icu/source/test/perf/unisetperf/unisetperf.vcproj
+icu/source/test/perf/unisetperf/Makefile.in
+icu/source/test/perf/unisetperf/unisetperf.pl
+icu/source/test/perf/unisetperf/draft/
+icu/source/test/perf/unisetperf/draft/contperf.bat
+icu/source/test/perf/unisetperf/draft/unicont.h
+icu/source/test/perf/unisetperf/draft/span16perf.bat
+icu/source/test/perf/unisetperf/draft/span8perf.sh
+icu/source/test/perf/unisetperf/draft/span16perf.sh
+icu/source/test/perf/unisetperf/draft/contperf.sh
+icu/source/test/perf/unisetperf/draft/trieset.cpp
+icu/source/test/perf/unisetperf/draft/bitset.cpp
+icu/source/test/perf/unisetperf/draft/span8perf.bat
+icu/source/test/iotest/
+icu/source/test/iotest/iotest.vcproj
+icu/source/test/iotest/stream.cpp
+icu/source/test/iotest/trnstst.c
+icu/source/test/iotest/strtst.c
+icu/source/test/iotest/filetst.c
+icu/source/test/iotest/Makefile.in
+icu/source/test/iotest/iotest.cpp
+icu/source/test/iotest/iotest.h
+icu/source/config.sub
+icu/source/mkinstalldirs
+icu/source/config/
+icu/source/config/test-icu-config.sh
+icu/source/config/mh-aix-va
+icu/source/config/mh-solaris-gcc
+icu/source/config/mh-qnx
+icu/source/config/icu-config-top
+icu/source/config/mh-cygwin-msvc
+icu/source/config/mh-alpha-linux-gcc
+icu/source/config/mh-hpux-acc
+icu/source/config/mh-darwin
+icu/source/config/make2sh.sed
+icu/source/config/mh-aix-gcc
+icu/source/config/Makefile.inc.in
+icu/source/config/mh-unknown
+icu/source/config/mh-solaris
+icu/source/config/mh-cygwin
+icu/source/config/mh-hpux-gcc
+icu/source/config/mh-irix
+icu/source/config/mh-bsd-gcc
+icu/source/config/mh-mpras
+icu/source/config/mh-os390
+icu/source/config/mh-alpha-linux-cc
+icu/source/config/mh-beos
+icu/source/config/icu-config-bottom
+icu/source/config/mh-linux
+icu/source/config/icu-config.1.in
+icu/source/config/mh-alpha-osf
+icu/source/config/mh-os400
+icu/source/config/mh-mingw
+icu/source/config/mh-linux-va
+icu/source/aclocal.m4
+icu/source/io/
+icu/source/io/sprintf.c
+icu/source/io/ucln_io.c
+icu/source/io/uprintf.h
+icu/source/io/locbund.c
+icu/source/io/uscanf.c
+icu/source/io/uprintf.c
+icu/source/io/io.vcproj
+icu/source/io/uprntf_p.c
+icu/source/io/ufile.h
+icu/source/io/io.rc
+icu/source/io/unicode/
+icu/source/io/unicode/ustdio.h
+icu/source/io/unicode/ustream.h
+icu/source/io/uscanf.h
+icu/source/io/ufmt_cmn.h
+icu/source/io/ustdio.c
+icu/source/io/ucln_io.h
+icu/source/io/locbund.h
+icu/source/io/uscanf_p.c
+icu/source/io/Makefile.in
+icu/source/io/ustream.cpp
+icu/source/io/ufmt_cmn.c
+icu/source/io/sscanf.c
+icu/source/io/ufile.c
+icu/source/i18n/
+icu/source/i18n/strmatch.cpp
+icu/source/i18n/csmatch.cpp
+icu/source/i18n/uregexc.cpp
+icu/source/i18n/toupptrn.h
+icu/source/i18n/measure.cpp
+icu/source/i18n/ucol.cpp
+icu/source/i18n/i18n.vcproj
+icu/source/i18n/ucln_in.h
+icu/source/i18n/taiwncal.cpp
+icu/source/i18n/csrmbcs.cpp
+icu/source/i18n/sortkey.cpp
+icu/source/i18n/winnmfmt.cpp
+icu/source/i18n/titletrn.cpp
+icu/source/i18n/ucurr.cpp
+icu/source/i18n/dtitvinf.cpp
+icu/source/i18n/curramt.cpp
+icu/source/i18n/coptccal.cpp
+icu/source/i18n/esctrn.h
+icu/source/i18n/inputext.cpp
+icu/source/i18n/dcfmtsym.cpp
+icu/source/i18n/regexcst.h
+icu/source/i18n/dtrule.cpp
+icu/source/i18n/cpdtrans.h
+icu/source/i18n/strrepl.h
+icu/source/i18n/astro.h
+icu/source/i18n/strmatch.h
+icu/source/i18n/cpdtrans.cpp
+icu/source/i18n/ucol_cnt.h
+icu/source/i18n/plurrule.cpp
+icu/source/i18n/csrecog.h
+icu/source/i18n/esctrn.cpp
+icu/source/i18n/timezone.cpp
+icu/source/i18n/brktrans.cpp
+icu/source/i18n/hebrwcal.cpp
+icu/source/i18n/gregoimp.cpp
+icu/source/i18n/csmatch.h
+icu/source/i18n/bms.cpp
+icu/source/i18n/olsontz.h
+icu/source/i18n/toupptrn.cpp
+icu/source/i18n/i18n.rc
+icu/source/i18n/ucol_elm.cpp
+icu/source/i18n/nortrans.cpp
+icu/source/i18n/dtptngen_impl.h
+icu/source/i18n/plurrule_impl.h
+icu/source/i18n/rbnf.cpp
+icu/source/i18n/remtrans.cpp
+icu/source/i18n/ucol_elm.h
+icu/source/i18n/regexcst.txt
+icu/source/i18n/unesctrn.cpp
+icu/source/i18n/rbt_data.cpp
+icu/source/i18n/choicfmt.cpp
+icu/source/i18n/casetrn.h
+icu/source/i18n/csrecog.cpp
+icu/source/i18n/casetrn.cpp
+icu/source/i18n/udatpg.cpp
+icu/source/i18n/funcrepl.h
+icu/source/i18n/winnmfmt.h
+icu/source/i18n/simpletz.cpp
+icu/source/i18n/tblcoll.cpp
+icu/source/i18n/zstrfmt.cpp
+icu/source/i18n/ucal.cpp
+icu/source/i18n/format.cpp
+icu/source/i18n/ucol_wgt.h
+icu/source/i18n/usearch.cpp
+icu/source/i18n/stsearch.cpp
+icu/source/i18n/persncal.cpp
+icu/source/i18n/umsg_imp.h
+icu/source/i18n/search.cpp
+icu/source/i18n/islamcal.h
+icu/source/i18n/tztrans.cpp
+icu/source/i18n/rbt.cpp
+icu/source/i18n/ulocdata.c
+icu/source/i18n/ucol_tok.cpp
+icu/source/i18n/name2uni.h
+icu/source/i18n/currfmt.h
+icu/source/i18n/csr2022.cpp
+icu/source/i18n/zonemeta.cpp
+icu/source/i18n/reldtfmt.cpp
+icu/source/i18n/remtrans.h
+icu/source/i18n/transreg.cpp
+icu/source/i18n/tridpars.h
+icu/source/i18n/plurfmt.cpp
+icu/source/i18n/fmtable_cnv.cpp
+icu/source/i18n/rbt_set.cpp
+icu/source/i18n/dtfmtsym.cpp
+icu/source/i18n/anytrans.cpp
+icu/source/i18n/taiwncal.h
+icu/source/i18n/ucoleitr.cpp
+icu/source/i18n/utmscale.c
+icu/source/i18n/titletrn.h
+icu/source/i18n/nfrs.h
+icu/source/i18n/strrepl.cpp
+icu/source/i18n/msgfmt_impl.h
+icu/source/i18n/zonemeta.h
+icu/source/i18n/ucol_bld.h
+icu/source/i18n/basictz.cpp
+icu/source/i18n/measfmt.cpp
+icu/source/i18n/persncal.h
+icu/source/i18n/nfrule.cpp
+icu/source/i18n/csrucode.h
+icu/source/i18n/bocsu.c
+icu/source/i18n/csr2022.h
+icu/source/i18n/ucol_cnt.cpp
+icu/source/i18n/indiancal.h
+icu/source/i18n/cecal.h
+icu/source/i18n/ethpccal.h
+icu/source/i18n/chnsecal.cpp
+icu/source/i18n/udat.cpp
+icu/source/i18n/calendar.cpp
+icu/source/i18n/regexst.h
+icu/source/i18n/nfrlist.h
+icu/source/i18n/csrutf8.h
+icu/source/i18n/rbt_pars.cpp
+icu/source/i18n/inputext.h
+icu/source/i18n/csdetect.h
+icu/source/i18n/windtfmt.h
+icu/source/i18n/nultrans.cpp
+icu/source/i18n/unicode/
+icu/source/i18n/unicode/regex.h
+icu/source/i18n/unicode/ucurr.h
+icu/source/i18n/unicode/unirepl.h
+icu/source/i18n/unicode/fmtable.h
+icu/source/i18n/unicode/currunit.h
+icu/source/i18n/unicode/gregocal.h
+icu/source/i18n/unicode/plurfmt.h
+icu/source/i18n/unicode/decimfmt.h
+icu/source/i18n/unicode/udatpg.h
+icu/source/i18n/unicode/umsg.h
+icu/source/i18n/unicode/vtzone.h
+icu/source/i18n/unicode/translit.h
+icu/source/i18n/unicode/format.h
+icu/source/i18n/unicode/basictz.h
+icu/source/i18n/unicode/msgfmt.h
+icu/source/i18n/unicode/timezone.h
+icu/source/i18n/unicode/ucsdet.h
+icu/source/i18n/unicode/plurrule.h
+icu/source/i18n/unicode/curramt.h
+icu/source/i18n/unicode/utrans.h
+icu/source/i18n/unicode/udat.h
+icu/source/i18n/unicode/smpdtfmt.h
+icu/source/i18n/unicode/rbtz.h
+icu/source/i18n/unicode/dtrule.h
+icu/source/i18n/unicode/fieldpos.h
+icu/source/i18n/unicode/ucoleitr.h
+icu/source/i18n/unicode/ulocdata.h
+icu/source/i18n/unicode/sortkey.h
+icu/source/i18n/unicode/unum.h
+icu/source/i18n/unicode/bmsearch.h
+icu/source/i18n/unicode/coll.h
+icu/source/i18n/unicode/dcfmtsym.h
+icu/source/i18n/unicode/tztrans.h
+icu/source/i18n/unicode/dtptngen.h
+icu/source/i18n/unicode/colldata.h
+icu/source/i18n/unicode/calendar.h
+icu/source/i18n/unicode/coleitr.h
+icu/source/i18n/unicode/dtitvfmt.h
+icu/source/i18n/unicode/search.h
+icu/source/i18n/unicode/datefmt.h
+icu/source/i18n/unicode/numfmt.h
+icu/source/i18n/unicode/bms.h
+icu/source/i18n/unicode/choicfmt.h
+icu/source/i18n/unicode/dtitvinf.h
+icu/source/i18n/unicode/usearch.h
+icu/source/i18n/unicode/simpletz.h
+icu/source/i18n/unicode/stsearch.h
+icu/source/i18n/unicode/utmscale.h
+icu/source/i18n/unicode/measfmt.h
+icu/source/i18n/unicode/measure.h
+icu/source/i18n/unicode/uregex.h
+icu/source/i18n/unicode/ucal.h
+icu/source/i18n/unicode/measunit.h
+icu/source/i18n/unicode/tblcoll.h
+icu/source/i18n/unicode/dtfmtsym.h
+icu/source/i18n/unicode/ucol.h
+icu/source/i18n/unicode/tzrule.h
+icu/source/i18n/unicode/rbnf.h
+icu/source/i18n/nortrans.h
+icu/source/i18n/csdetect.cpp
+icu/source/i18n/uregex.cpp
+icu/source/i18n/cecal.cpp
+icu/source/i18n/currunit.cpp
+icu/source/i18n/rbt_rule.cpp
+icu/source/i18n/translit.cpp
+icu/source/i18n/nfrs.cpp
+icu/source/i18n/numfmt.cpp
+icu/source/i18n/regexst.cpp
+icu/source/i18n/nfsubs.cpp
+icu/source/i18n/ucol_res.cpp
+icu/source/i18n/brktrans.h
+icu/source/i18n/ucol_tok.h
+icu/source/i18n/ucol_imp.h
+icu/source/i18n/digitlst.h
+icu/source/i18n/ucsdet.cpp
+icu/source/i18n/zstrfmt.h
+icu/source/i18n/digitlst.cpp
+icu/source/i18n/quant.cpp
+icu/source/i18n/csrsbcs.cpp
+icu/source/i18n/ucol_bld.cpp
+icu/source/i18n/tolowtrn.h
+icu/source/i18n/uni2name.h
+icu/source/i18n/quant.h
+icu/source/i18n/nfrule.h
+icu/source/i18n/tzrule.cpp
+icu/source/i18n/csrmbcs.h
+icu/source/i18n/buddhcal.cpp
+icu/source/i18n/dtptngen.cpp
+icu/source/i18n/unesctrn.h
+icu/source/i18n/regeximp.h
+icu/source/i18n/regexcst.pl
+icu/source/i18n/vtzone.cpp
+icu/source/i18n/dtitvfmt.cpp
+icu/source/i18n/funcrepl.cpp
+icu/source/i18n/csrucode.cpp
+icu/source/i18n/csrsbcs.h
+icu/source/i18n/coll.cpp
+icu/source/i18n/colldata.cpp
+icu/source/i18n/astro.cpp
+icu/source/i18n/repattrn.cpp
+icu/source/i18n/islamcal.cpp
+icu/source/i18n/ucol_wgt.c
+icu/source/i18n/unum.cpp
+icu/source/i18n/nultrans.h
+icu/source/i18n/rbtz.cpp
+icu/source/i18n/dtitv_impl.h
+icu/source/i18n/buddhcal.h
+icu/source/i18n/rbt_pars.h
+icu/source/i18n/rematch.cpp
+icu/source/i18n/transreg.h
+icu/source/i18n/tolowtrn.cpp
+icu/source/i18n/japancal.cpp
+icu/source/i18n/japancal.h
+icu/source/i18n/reldtfmt.h
+icu/source/i18n/name2uni.cpp
+icu/source/i18n/rbt.h
+icu/source/i18n/ucol_sit.cpp
+icu/source/i18n/gregocal.cpp
+icu/source/i18n/Makefile.in
+icu/source/i18n/windtfmt.cpp
+icu/source/i18n/currfmt.cpp
+icu/source/i18n/chnsecal.h
+icu/source/i18n/uni2name.cpp
+icu/source/i18n/smpdtfmt.cpp
+icu/source/i18n/csrutf8.cpp
+icu/source/i18n/fmtable.cpp
+icu/source/i18n/hebrwcal.h
+icu/source/i18n/utrans.cpp
+icu/source/i18n/indiancal.cpp
+icu/source/i18n/olsontz.cpp
+icu/source/i18n/rbt_set.h
+icu/source/i18n/gregoimp.h
+icu/source/i18n/coleitr.cpp
+icu/source/i18n/ethpccal.cpp
+icu/source/i18n/msgfmt.cpp
+icu/source/i18n/rbt_rule.h
+icu/source/i18n/regexcmp.cpp
+icu/source/i18n/datefmt.cpp
+icu/source/i18n/rbt_data.h
+icu/source/i18n/bocsu.h
+icu/source/i18n/ucln_in.c
+icu/source/i18n/nfsubs.h
+icu/source/i18n/decimfmt.cpp
+icu/source/i18n/ucurrimp.h
+icu/source/i18n/anytrans.h
+icu/source/i18n/tridpars.cpp
+icu/source/i18n/bmsearch.cpp
+icu/source/i18n/regexcmp.h
+icu/source/i18n/usrchimp.h
+icu/source/i18n/umsg.cpp
+icu/source/i18n/coptccal.h
+icu/source/samples/
+icu/source/samples/coll/
+icu/source/samples/coll/coll.vcproj
+icu/source/samples/coll/readme.txt
+icu/source/samples/coll/coll.cpp
+icu/source/samples/coll/Makefile
+icu/source/samples/coll/coll.sln
+icu/source/samples/citer/
+icu/source/samples/citer/citer.vcproj
+icu/source/samples/citer/citer.cpp
+icu/source/samples/citer/readme.txt
+icu/source/samples/citer/Makefile
+icu/source/samples/datefmt/
+icu/source/samples/datefmt/util.cpp
+icu/source/samples/datefmt/util.h
+icu/source/samples/datefmt/main.cpp
+icu/source/samples/datefmt/datefmt.sln
+icu/source/samples/datefmt/datefmt.vcproj
+icu/source/samples/datefmt/README.TXT
+icu/source/samples/datefmt/Makefile
+icu/source/samples/datefmt/answers/
+icu/source/samples/datefmt/answers/main_0.cpp
+icu/source/samples/datefmt/answers/main_1.cpp
+icu/source/samples/datefmt/answers/main_2.cpp
+icu/source/samples/datefmt/answers/main_3.cpp
+icu/source/samples/break/
+icu/source/samples/break/ubreak.c
+icu/source/samples/break/readme.txt
+icu/source/samples/break/break.vcproj
+icu/source/samples/break/Makefile
+icu/source/samples/break/break.sln
+icu/source/samples/break/break.cpp
+icu/source/samples/uresb/
+icu/source/samples/uresb/resources.vcproj
+icu/source/samples/uresb/resources.mak
+icu/source/samples/uresb/en.txt
+icu/source/samples/uresb/readme.txt
+icu/source/samples/uresb/root.txt
+icu/source/samples/uresb/Makefile
+icu/source/samples/uresb/uresb.vcproj
+icu/source/samples/uresb/uresb.c
+icu/source/samples/uresb/uresb.sln
+icu/source/samples/uresb/sr.txt
+icu/source/samples/cal/
+icu/source/samples/cal/cal.c
+icu/source/samples/cal/cal.sln
+icu/source/samples/cal/cal.vcproj
+icu/source/samples/cal/readme.txt
+icu/source/samples/cal/uprint.h
+icu/source/samples/cal/uprint.c
+icu/source/samples/cal/Makefile.in
+icu/source/samples/uciter8/
+icu/source/samples/uciter8/uciter8.sln
+icu/source/samples/uciter8/uciter8.c
+icu/source/samples/uciter8/uit_len8.h
+icu/source/samples/uciter8/readme.txt
+icu/source/samples/uciter8/uciter8.vcproj
+icu/source/samples/uciter8/uit_len8.c
+icu/source/samples/uciter8/Makefile
+icu/source/samples/props/
+icu/source/samples/props/readme.txt
+icu/source/samples/props/Makefile
+icu/source/samples/props/props.sln
+icu/source/samples/props/props.cpp
+icu/source/samples/props/props.vcproj
+icu/source/samples/ufortune/
+icu/source/samples/ufortune/resources/
+icu/source/samples/ufortune/resources/res-file-list.txt
+icu/source/samples/ufortune/resources/fortune_resources.mak
+icu/source/samples/ufortune/resources/es.txt
+icu/source/samples/ufortune/resources/root.txt
+icu/source/samples/ufortune/resources/Makefile
+icu/source/samples/ufortune/readme.txt
+icu/source/samples/ufortune/ufortune.c
+icu/source/samples/ufortune/Makefile
+icu/source/samples/ufortune/ufortune.sln
+icu/source/samples/ufortune/fortunedefs.mk
+icu/source/samples/ufortune/ufortune.vcproj
+icu/source/samples/legacy/
+icu/source/samples/legacy/README
+icu/source/samples/legacy/oldcol.cpp
+icu/source/samples/legacy/legacy.vcproj
+icu/source/samples/legacy/Makefile
+icu/source/samples/legacy/legacy.sln
+icu/source/samples/legacy/legacy.cpp
+icu/source/samples/legacy/newcol.cpp
+icu/source/samples/csdet/
+icu/source/samples/csdet/csdet.vcproj
+icu/source/samples/csdet/csdet.c
+icu/source/samples/csdet/Makefile
+icu/source/samples/strsrch/
+icu/source/samples/strsrch/strsrch.cpp
+icu/source/samples/strsrch/strsrch.vcproj
+icu/source/samples/strsrch/strsrch.sln
+icu/source/samples/strsrch/readme.txt
+icu/source/samples/strsrch/Makefile
+icu/source/samples/numfmt/
+icu/source/samples/numfmt/util.cpp
+icu/source/samples/numfmt/numfmt.sln
+icu/source/samples/numfmt/util.h
+icu/source/samples/numfmt/numfmt.vcproj
+icu/source/samples/numfmt/main.cpp
+icu/source/samples/numfmt/readme.txt
+icu/source/samples/numfmt/capi.c
+icu/source/samples/numfmt/Makefile
+icu/source/samples/udata/
+icu/source/samples/udata/writer.c
+icu/source/samples/udata/reader.vcproj
+icu/source/samples/udata/writer.vcproj
+icu/source/samples/udata/readme.txt
+icu/source/samples/udata/Makefile
+icu/source/samples/udata/udata.sln
+icu/source/samples/udata/reader.c
+icu/source/samples/msgfmt/
+icu/source/samples/msgfmt/util.cpp
+icu/source/samples/msgfmt/msgfmt.vcproj
+icu/source/samples/msgfmt/util.h
+icu/source/samples/msgfmt/main.cpp
+icu/source/samples/msgfmt/README.TXT
+icu/source/samples/msgfmt/Makefile
+icu/source/samples/msgfmt/answers/
+icu/source/samples/msgfmt/answers/main_0.cpp
+icu/source/samples/msgfmt/answers/main_1.cpp
+icu/source/samples/msgfmt/answers/main_2.cpp
+icu/source/samples/msgfmt/answers/main_3.cpp
+icu/source/samples/msgfmt/msgfmt.sln
+icu/source/samples/datecal/
+icu/source/samples/datecal/cal.cpp
+icu/source/samples/datecal/Makefile
+icu/source/samples/datecal/ccal.c
+icu/source/samples/ucnv/
+icu/source/samples/ucnv/data01.txt
+icu/source/samples/ucnv/ucnv.sln
+icu/source/samples/ucnv/ucnv.vcproj
+icu/source/samples/ucnv/flagcb.c
+icu/source/samples/ucnv/data06.txt
+icu/source/samples/ucnv/flagcb.h
+icu/source/samples/ucnv/convsamp.cpp
+icu/source/samples/ucnv/readme.txt
+icu/source/samples/ucnv/Makefile
+icu/source/samples/ucnv/data02.bin
+icu/source/samples/readme.txt
+icu/source/samples/translit/
+icu/source/samples/translit/unaccent.cpp
+icu/source/samples/translit/util.cpp
+icu/source/samples/translit/util.h
+icu/source/samples/translit/main.cpp
+icu/source/samples/translit/translit.sln
+icu/source/samples/translit/README.TXT
+icu/source/samples/translit/Makefile
+icu/source/samples/translit/unaccent.h
+icu/source/samples/translit/answers/
+icu/source/samples/translit/answers/unaccent.cpp
+icu/source/samples/translit/answers/main_1.cpp
+icu/source/samples/translit/answers/main_2.cpp
+icu/source/samples/translit/answers/main_4.cpp
+icu/source/samples/translit/answers/main_3.cpp
+icu/source/samples/translit/answers/unaccent.h
+icu/source/samples/translit/translit.vcproj
+icu/source/samples/defs.mk
+icu/source/samples/rules.mk
+icu/source/samples/case/
+icu/source/samples/case/case.cpp
+icu/source/samples/case/ucase.c
+icu/source/samples/case/readme.txt
+icu/source/samples/case/Makefile
+icu/source/samples/case/case.sln
+icu/source/samples/case/case.vcproj
+icu/source/samples/Makefile.in
+icu/source/samples/all/
+icu/source/samples/all/all.sln
+icu/source/samples/ugrep/
+icu/source/samples/ugrep/ugrep.sln
+icu/source/samples/ugrep/readme.txt
+icu/source/samples/ugrep/ugrep.vcproj
+icu/source/samples/ugrep/Makefile
+icu/source/samples/ugrep/ugrep.cpp
+icu/source/samples/ustring/
+icu/source/samples/ustring/ustring.vcproj
+icu/source/samples/ustring/ustring.sln
+icu/source/samples/ustring/readme.txt
+icu/source/samples/ustring/Makefile
+icu/source/samples/ustring/ustring.cpp
+icu/source/samples/date/
+icu/source/samples/date/date.sln
+icu/source/samples/date/readme.txt
+icu/source/samples/date/date.vcproj
+icu/source/samples/date/uprint.h
+icu/source/samples/date/date.c
+icu/source/samples/date/uprint.c
+icu/source/samples/date/Makefile.in
+icu/source/samples/layout/
+icu/source/samples/layout/GDIFontInstance.h
+icu/source/samples/layout/sfnt.h
+icu/source/samples/layout/UnicodeReader.h
+icu/source/samples/layout/GnomeGUISupport.h
+icu/source/samples/layout/GDIGUISupport.h
+icu/source/samples/layout/ScriptCompositeFontInstance.h
+icu/source/samples/layout/GnomeFontMap.cpp
+icu/source/samples/layout/Surface.cpp
+icu/source/samples/layout/ucreader.cpp
+icu/source/samples/layout/layout.vcproj
+icu/source/samples/layout/gnomelayout.cpp
+icu/source/samples/layout/ucreader.h
+icu/source/samples/layout/GnomeFontInstance.cpp
+icu/source/samples/layout/gdiglue.h
+icu/source/samples/layout/clayout.c
+icu/source/samples/layout/cgnomelayout.c
+icu/source/samples/layout/RenderingSurface.h
+icu/source/samples/layout/resource.h
+icu/source/samples/layout/FontTableCache.cpp
+icu/source/samples/layout/rsurface.cpp
+icu/source/samples/layout/paragraph.h
+icu/source/samples/layout/GnomeFontInstance.h
+icu/source/samples/layout/UnicodeReader.cpp
+icu/source/samples/layout/ScriptCompositeFontInstance.cpp
+icu/source/samples/layout/GUISupport.h
+icu/source/samples/layout/GnomeGUISupport.cpp
+icu/source/samples/layout/FontMap.h
+icu/source/samples/layout/GDIGUISupport.cpp
+icu/source/samples/layout/rsurface.h
+icu/source/samples/layout/FontMap.Gnome
+icu/source/samples/layout/gdiglue.cpp
+icu/source/samples/layout/GnomeFontMap.h
+icu/source/samples/layout/cmaps.cpp
+icu/source/samples/layout/Sample.txt
+icu/source/samples/layout/cmaps.h
+icu/source/samples/layout/layout.cpp
+icu/source/samples/layout/paragraph.cpp
+icu/source/samples/layout/gnomeglue.h
+icu/source/samples/layout/GDIFontMap.h
+icu/source/samples/layout/readme.html
+icu/source/samples/layout/FontMap.GDI
+icu/source/samples/layout/Surface.h
+icu/source/samples/layout/FontTableCache.h
+icu/source/samples/layout/layout.sln
+icu/source/samples/layout/GDIFontMap.cpp
+icu/source/samples/layout/Makefile.in
+icu/source/samples/layout/LayoutSample.rc
+icu/source/samples/layout/arraymem.h
+icu/source/samples/layout/gsupport.h
+icu/source/samples/layout/gnomeglue.cpp
+icu/source/samples/layout/GDIFontInstance.cpp
+icu/source/samples/layout/pflow.h
+icu/source/samples/layout/FontMap.cpp
+icu/source/samples/layout/pflow.c
+icu/source/configure.in
+icu/source/data/
+icu/source/data/makedata.mak
+icu/source/data/in/
+icu/source/data/in/icudt40l.dat
+icu/source/data/cldr-icu-readme.txt
+icu/source/data/unidata/
+icu/source/data/unidata/DerivedNormalizationProps.txt
+icu/source/data/unidata/changes.txt
+icu/source/data/unidata/GraphemeBreakProperty.txt
+icu/source/data/unidata/DerivedBidiClass.txt
+icu/source/data/unidata/Scripts.txt
+icu/source/data/unidata/SpecialCasing.txt
+icu/source/data/unidata/UCARules.txt
+icu/source/data/unidata/Blocks.txt
+icu/source/data/unidata/DerivedNumericValues.txt
+icu/source/data/unidata/BidiMirroring.txt
+icu/source/data/unidata/ucdterms.txt
+icu/source/data/unidata/DerivedCoreProperties.txt
+icu/source/data/unidata/NormalizationCorrections.txt
+icu/source/data/unidata/CaseFolding.txt
+icu/source/data/unidata/EastAsianWidth.txt
+icu/source/data/unidata/PropertyValueAliases.txt
+icu/source/data/unidata/WordBreakProperty.txt
+icu/source/data/unidata/SentenceBreakProperty.txt
+icu/source/data/unidata/PropertyAliases.txt
+icu/source/data/unidata/NormalizationTest.txt
+icu/source/data/unidata/DerivedJoiningType.txt
+icu/source/data/unidata/FractionalUCA.txt
+icu/source/data/unidata/DerivedAge.txt
+icu/source/data/unidata/LineBreak.txt
+icu/source/data/unidata/DerivedJoiningGroup.txt
+icu/source/data/unidata/PropList.txt
+icu/source/data/unidata/UnicodeData.txt
+icu/source/data/build.xml
+icu/source/data/misc/
+icu/source/data/misc/plurals.txt
+icu/source/data/misc/NamePrepProfile.txt
+icu/source/data/misc/supplementalData.txt
+icu/source/data/misc/icudata.rc
+icu/source/data/misc/likelySubtags.txt
+icu/source/data/misc/zoneinfo.txt
+icu/source/data/misc/metazoneInfo.txt
+icu/source/data/misc/miscfiles.mk
+icu/source/data/icu-config.xml
+icu/source/data/icupkg.inc.in
+icu/source/data/makedata.vcproj
+icu/source/data/Makefile.in
+icu/source/install-sh
+icu/source/extra/
+icu/source/extra/uconv/
+icu/source/extra/uconv/makedata.mak
+icu/source/extra/uconv/uwmsg.c
+icu/source/extra/uconv/README
+icu/source/extra/uconv/samples/
+icu/source/extra/uconv/samples/hangul-eucKR.txt
+icu/source/extra/uconv/samples/hania-eucKR.txt
+icu/source/extra/uconv/samples/utf8/
+icu/source/extra/uconv/samples/utf8/many.txt
+icu/source/extra/uconv/samples/utf8/utf-8-demo.txt
+icu/source/extra/uconv/samples/utf8/banviet.txt
+icu/source/extra/uconv/samples/utf8/linji.txt
+icu/source/extra/uconv/samples/utf8/hania.txt
+icu/source/extra/uconv/samples/utf8/hangul.txt
+icu/source/extra/uconv/samples/utf8/croat.txt
+icu/source/extra/uconv/samples/utf8/simplechinese.txt
+icu/source/extra/uconv/samples/utf8/jap.txt
+icu/source/extra/uconv/samples/utf8/korean.txt
+icu/source/extra/uconv/samples/utf8/armenian.txt
+icu/source/extra/uconv/samples/utf8/russian.txt
+icu/source/extra/uconv/samples/utf8/maopoem.txt
+icu/source/extra/uconv/samples/utf8/danish.txt
+icu/source/extra/uconv/samples/utf8/turkish.txt
+icu/source/extra/uconv/samples/utf8/chinese-ulysses.txt
+icu/source/extra/uconv/samples/utf8/greek.txt
+icu/source/extra/uconv/samples/ISO-8859-2.txt
+icu/source/extra/uconv/samples/danish-ISO-8859-1.txt
+icu/source/extra/uconv/samples/ISO-8859-3.txt
+icu/source/extra/uconv/samples/eucJP.txt
+icu/source/extra/uconv/samples/iso8859-1.txt
+icu/source/extra/uconv/samples/koi8r.txt
+icu/source/extra/uconv/resources/
+icu/source/extra/uconv/resources/fr.txt
+icu/source/extra/uconv/resources/root.txt
+icu/source/extra/uconv/resfiles.mk
+icu/source/extra/uconv/unicode/
+icu/source/extra/uconv/unicode/uwmsg.h
+icu/source/extra/uconv/pkgdata.inc.in
+icu/source/extra/uconv/uconv.1.in
+icu/source/extra/uconv/uconv.cpp
+icu/source/extra/uconv/uconv.vcproj
+icu/source/extra/uconv/Makefile.in
+icu/source/extra/Makefile.in
+icu/source/extra/scrptrun/
+icu/source/extra/scrptrun/srtest.dsp
+icu/source/extra/scrptrun/srtest.cpp
+icu/source/extra/scrptrun/scrptrun.h
+icu/source/extra/scrptrun/readme.html
+icu/source/extra/scrptrun/Makefile.in
+icu/source/extra/scrptrun/scrptrun.cpp
+icu/source/extra/scrptrun/srtest.dsw
+icu/source/icudefs.mk.in
+icu/source/stubdata/
+icu/source/stubdata/stubdata.vcproj
+icu/source/stubdata/Makefile.in
+icu/source/stubdata/stubdata.c
+icu/source/allinone/
+icu/source/allinone/allinone.sln
+icu/source/Makefile.in
+icu/source/layoutex/
+icu/source/layoutex/plruns.cpp
+icu/source/layoutex/layoutex.rc
+icu/source/layoutex/ParagraphLayout.cpp
+icu/source/layoutex/RunArrays.cpp
+icu/source/layoutex/LXUtilities.cpp
+icu/source/layoutex/LXUtilities.h
+icu/source/layoutex/playout.cpp
+icu/source/layoutex/Makefile.in
+icu/source/layoutex/layoutex.vcproj
+icu/source/layoutex/layout/
+icu/source/layoutex/layout/RunArrays.h
+icu/source/layoutex/layout/playout.h
+icu/source/layoutex/layout/plruns.h
+icu/source/layoutex/layout/ParagraphLayout.h
+icu/source/Doxyfile.in
+icu/source/configure
+icu/source/config.guess
+icu/source/runConfigureICU
+icu/source/tools/
+icu/source/tools/genctd/
+icu/source/tools/genctd/genctd.cpp
+icu/source/tools/genctd/genctd.1.in
+icu/source/tools/genctd/genctd.vcproj
+icu/source/tools/genctd/Makefile.in
+icu/source/tools/gencmn/
+icu/source/tools/gencmn/gencmn.c
+icu/source/tools/gencmn/gencmn.vcproj
+icu/source/tools/gencmn/Makefile.in
+icu/source/tools/gencmn/gencmn.8.in
+icu/source/tools/dumpce/
+icu/source/tools/dumpce/dumpce.dsp
+icu/source/tools/dumpce/dumpce.cpp
+icu/source/tools/dumpce/Makefile.in
+icu/source/tools/dumpce/dumpce.dsw
+icu/source/tools/genccode/
+icu/source/tools/genccode/genccode.c
+icu/source/tools/genccode/genccode.8.in
+icu/source/tools/genccode/Makefile.in
+icu/source/tools/genccode/genccode.vcproj
+icu/source/tools/icuswap/
+icu/source/tools/icuswap/icuswap.vcproj
+icu/source/tools/icuswap/Makefile.in
+icu/source/tools/icuswap/icuswap.cpp
+icu/source/tools/ctestfw/
+icu/source/tools/ctestfw/ctestfw.vcproj
+icu/source/tools/ctestfw/uperf.cpp
+icu/source/tools/ctestfw/tstdtmod.cpp
+icu/source/tools/ctestfw/datamap.cpp
+icu/source/tools/ctestfw/udbgutil.cpp
+icu/source/tools/ctestfw/dbgutil.cpp
+icu/source/tools/ctestfw/ctest.c
+icu/source/tools/ctestfw/testdata.cpp
+icu/source/tools/ctestfw/unicode/
+icu/source/tools/ctestfw/unicode/testlog.h
+icu/source/tools/ctestfw/unicode/testtype.h
+icu/source/tools/ctestfw/unicode/tstdtmod.h
+icu/source/tools/ctestfw/unicode/testdata.h
+icu/source/tools/ctestfw/unicode/uperf.h
+icu/source/tools/ctestfw/unicode/dbgutil.h
+icu/source/tools/ctestfw/unicode/udbgutil.h
+icu/source/tools/ctestfw/unicode/datamap.h
+icu/source/tools/ctestfw/unicode/ctest.h
+icu/source/tools/ctestfw/unicode/utimer.h
+icu/source/tools/ctestfw/Makefile.in
+icu/source/tools/gennames/
+icu/source/tools/gennames/gennames.vcproj
+icu/source/tools/gennames/gennames.c
+icu/source/tools/gennames/Makefile.in
+icu/source/tools/toolutil/
+icu/source/tools/toolutil/toolutil.vcproj
+icu/source/tools/toolutil/uoptions.h
+icu/source/tools/toolutil/ucm.h
+icu/source/tools/toolutil/writesrc.c
+icu/source/tools/toolutil/ucm.c
+icu/source/tools/toolutil/toolutil.c
+icu/source/tools/toolutil/propsvec.h
+icu/source/tools/toolutil/pkg_imp.h
+icu/source/tools/toolutil/uparse.h
+icu/source/tools/toolutil/swapimpl.cpp
+icu/source/tools/toolutil/filestrm.c
+icu/source/tools/toolutil/uparse.c
+icu/source/tools/toolutil/ucbuf.h
+icu/source/tools/toolutil/package.h
+icu/source/tools/toolutil/propsvec.c
+icu/source/tools/toolutil/toolutil.h
+icu/source/tools/toolutil/unewdata.c
+icu/source/tools/toolutil/unewdata.h
+icu/source/tools/toolutil/package.cpp
+icu/source/tools/toolutil/swapimpl.h
+icu/source/tools/toolutil/ucbuf.c
+icu/source/tools/toolutil/Makefile.in
+icu/source/tools/toolutil/xmlparser.cpp
+icu/source/tools/toolutil/pkgitems.cpp
+icu/source/tools/toolutil/xmlparser.h
+icu/source/tools/toolutil/writesrc.h
+icu/source/tools/toolutil/ucmstate.c
+icu/source/tools/toolutil/filestrm.h
+icu/source/tools/toolutil/uoptions.c
+icu/source/tools/gencnval/
+icu/source/tools/gencnval/gencnval.c
+icu/source/tools/gencnval/gencnval.1.in
+icu/source/tools/gencnval/Makefile.in
+icu/source/tools/gencnval/gencnval.vcproj
+icu/source/tools/genren/
+icu/source/tools/genren/README
+icu/source/tools/genren/genren.pl
+icu/source/tools/genren/Makefile
+icu/source/tools/genprops/
+icu/source/tools/genprops/store.c
+icu/source/tools/genprops/genprops.vcproj
+icu/source/tools/genprops/props2.c
+icu/source/tools/genprops/misc/
+icu/source/tools/genprops/misc/ucdstrip.pl
+icu/source/tools/genprops/misc/ucdmerge.c
+icu/source/tools/genprops/misc/ucdstrip.c
+icu/source/tools/genprops/genprops.h
+icu/source/tools/genprops/genprops.c
+icu/source/tools/genprops/Makefile.in
+icu/source/tools/icupkg/
+icu/source/tools/icupkg/icupkg.8.in
+icu/source/tools/icupkg/icupkg.vcproj
+icu/source/tools/icupkg/icupkg.cpp
+icu/source/tools/icupkg/Makefile.in
+icu/source/tools/gennorm/
+icu/source/tools/gennorm/store.c
+icu/source/tools/gennorm/gennorm.h
+icu/source/tools/gennorm/gennorm.vcproj
+icu/source/tools/gennorm/Makefile.in
+icu/source/tools/gennorm/gennorm.c
+icu/source/tools/genpname/
+icu/source/tools/genpname/preparse.pl
+icu/source/tools/genpname/genpname.vcproj
+icu/source/tools/genpname/SyntheticPropertyValueAliases.txt
+icu/source/tools/genpname/data.h
+icu/source/tools/genpname/genpname.cpp
+icu/source/tools/genpname/gensvpa.pl
+icu/source/tools/genpname/Makefile.in
+icu/source/tools/genpname/SyntheticPropertyAliases.txt
+icu/source/tools/gendraft/
+icu/source/tools/gendraft/exclude.txt
+icu/source/tools/gendraft/Makefile
+icu/source/tools/gendraft/genheaders.pl
+icu/source/tools/gensprep/
+icu/source/tools/gensprep/gensprep.vcproj
+icu/source/tools/gensprep/store.c
+icu/source/tools/gensprep/filterRFC3454.pl
+icu/source/tools/gensprep/gensprep.c
+icu/source/tools/gensprep/gensprep.h
+icu/source/tools/gensprep/gensprep.8.in
+icu/source/tools/gensprep/Makefile.in
+icu/source/tools/makeconv/
+icu/source/tools/makeconv/makeconv.c
+icu/source/tools/makeconv/genmbcs.h
+icu/source/tools/makeconv/makeconv.h
+icu/source/tools/makeconv/gencnvex.c
+icu/source/tools/makeconv/ucnvstat.c
+icu/source/tools/makeconv/makeconv.vcproj
+icu/source/tools/makeconv/makeconv.1.in
+icu/source/tools/makeconv/Makefile.in
+icu/source/tools/makeconv/genmbcs.c
+icu/source/tools/genrb/
+icu/source/tools/genrb/reslist.c
+icu/source/tools/genrb/errmsg.h
+icu/source/tools/genrb/errmsg.c
+icu/source/tools/genrb/genrb.h
+icu/source/tools/genrb/gendtjar.pl
+icu/source/tools/genrb/parse.h
+icu/source/tools/genrb/genrb.c
+icu/source/tools/genrb/reslist.h
+icu/source/tools/genrb/read.c
+icu/source/tools/genrb/genrb.vcproj
+icu/source/tools/genrb/ustr.c
+icu/source/tools/genrb/read.h
+icu/source/tools/genrb/ustr.h
+icu/source/tools/genrb/rbutil.h
+icu/source/tools/genrb/rle.c
+icu/source/tools/genrb/derb.vcproj
+icu/source/tools/genrb/rle.h
+icu/source/tools/genrb/derb.c
+icu/source/tools/genrb/prscmnts.cpp
+icu/source/tools/genrb/genrb.1.in
+icu/source/tools/genrb/prscmnts.h
+icu/source/tools/genrb/parse.c
+icu/source/tools/genrb/Makefile.in
+icu/source/tools/genrb/derb.1.in
+icu/source/tools/genrb/rbutil.c
+icu/source/tools/genrb/wrtxml.cpp
+icu/source/tools/genrb/wrtjava.c
+icu/source/tools/tzcode/
+icu/source/tools/tzcode/tz2icu.h
+icu/source/tools/tzcode/icuzdump.cpp
+icu/source/tools/tzcode/tzfile.h
+icu/source/tools/tzcode/icuzdump.vcproj
+icu/source/tools/tzcode/zic.c
+icu/source/tools/tzcode/tz.alias
+icu/source/tools/tzcode/icuzones
+icu/source/tools/tzcode/tzselect.ksh
+icu/source/tools/tzcode/readme.txt
+icu/source/tools/tzcode/scheck.c
+icu/source/tools/tzcode/tz2icu.cpp
+icu/source/tools/tzcode/zdump.c
+icu/source/tools/tzcode/ialloc.c
+icu/source/tools/tzcode/Makefile.in
+icu/source/tools/tzcode/private.h
+icu/source/tools/tzcode/localtime.c
+icu/source/tools/tzcode/asctime.c
+icu/source/tools/gencase/
+icu/source/tools/gencase/gencase.h
+icu/source/tools/gencase/store.c
+icu/source/tools/gencase/gencase.vcproj
+icu/source/tools/gencase/gencase.c
+icu/source/tools/gencase/Makefile.in
+icu/source/tools/pkgdata/
+icu/source/tools/pkgdata/makefile.h
+icu/source/tools/pkgdata/pkgdata.vcproj
+icu/source/tools/pkgdata/pkgtypes.h
+icu/source/tools/pkgdata/sttcmode.c
+icu/source/tools/pkgdata/pkgdata.c
+icu/source/tools/pkgdata/winmode.c
+icu/source/tools/pkgdata/dllmode.c
+icu/source/tools/pkgdata/pkgtypes.c
+icu/source/tools/pkgdata/cmnmode.c
+icu/source/tools/pkgdata/make.c
+icu/source/tools/pkgdata/filemode.c
+icu/source/tools/pkgdata/pkgdata.1.in
+icu/source/tools/pkgdata/Makefile.in
+icu/source/tools/genuca/
+icu/source/tools/genuca/genuca.8.in
+icu/source/tools/genuca/genuca.vcproj
+icu/source/tools/genuca/genuca.cpp
+icu/source/tools/genuca/Makefile.in
+icu/source/tools/genuca/genuca.h
+icu/source/tools/Makefile.in
+icu/source/tools/genbrk/
+icu/source/tools/genbrk/genbrk.vcproj
+icu/source/tools/genbrk/Makefile.in
+icu/source/tools/genbrk/genbrk.1.in
+icu/source/tools/genbrk/genbrk.cpp
+icu/source/tools/memcheck/
+icu/source/tools/memcheck/ICUMemCheck.pl
+icu/source/tools/gentest/
+icu/source/tools/gentest/gentest.h
+icu/source/tools/gentest/gentest.c
+icu/source/tools/gentest/gentest.vcproj
+icu/source/tools/gentest/genres32.c
+icu/source/tools/gentest/Makefile.in
+icu/source/tools/genbidi/
+icu/source/tools/genbidi/store.c
+icu/source/tools/genbidi/genbidi.h
+icu/source/tools/genbidi/genbidi.c
+icu/source/tools/genbidi/genbidi.vcproj
+icu/source/tools/genbidi/Makefile.in
+icu/source/layout/
+icu/source/layout/CanonShaping.cpp
+icu/source/layout/GlyphPosnLookupProc.cpp
+icu/source/layout/Features.cpp
+icu/source/layout/LigatureSubstProc.h
+icu/source/layout/MarkToMarkPosnSubtables.cpp
+icu/source/layout/MultipleSubstSubtables.cpp
+icu/source/layout/GlyphPositionAdjustments.h
+icu/source/layout/ClassDefinitionTables.cpp
+icu/source/layout/KernTable.h
+icu/source/layout/IndicLayoutEngine.cpp
+icu/source/layout/GlyphLookupTables.h
+icu/source/layout/SegmentSingleProcessor.h
+icu/source/layout/GlyphSubstitutionTables.cpp
+icu/source/layout/DeviceTables.h
+icu/source/layout/CursiveAttachmentSubtables.h
+icu/source/layout/SubstitutionLookups.cpp
+icu/source/layout/HangulLayoutEngine.cpp
+icu/source/layout/ScriptAndLanguage.cpp
+icu/source/layout/GlyphSubstitutionTables.h
+icu/source/layout/LigatureSubstSubtables.cpp
+icu/source/layout/GlyphSubstLookupProc.cpp
+icu/source/layout/TrimmedArrayProcessor.cpp
+icu/source/layout/MultipleSubstSubtables.h
+icu/source/layout/ContextualSubstSubtables.cpp
+icu/source/layout/IndicClassTables.cpp
+icu/source/layout/LEInsertionList.cpp
+icu/source/layout/MarkToLigaturePosnSubtables.h
+icu/source/layout/layout.vcproj
+icu/source/layout/IndicRearrangementProcessor.h
+icu/source/layout/MarkArrays.cpp
+icu/source/layout/KhmerReordering.h
+icu/source/layout/IndicReordering.h
+icu/source/layout/SubtableProcessor.cpp
+icu/source/layout/AlternateSubstSubtables.cpp
+icu/source/layout/GXLayoutEngine.cpp
+icu/source/layout/IndicRearrangement.h
+icu/source/layout/SingleTableProcessor.h
+icu/source/layout/Lookups.cpp
+icu/source/layout/LigatureSubstitution.h
+icu/source/layout/ContextualSubstSubtables.h
+icu/source/layout/GlyphLookupTables.cpp
+icu/source/layout/LayoutEngine.h
+icu/source/layout/SingleSubstitutionSubtables.cpp
+icu/source/layout/MarkToBasePosnSubtables.h
+icu/source/layout/StateTableProcessor.cpp
+icu/source/layout/LEInsertionList.h
+icu/source/layout/GlyphPositioningTables.h
+icu/source/layout/CoverageTables.cpp
+icu/source/layout/HanLayoutEngine.h
+icu/source/layout/DeviceTables.cpp
+icu/source/layout/IndicLayoutEngine.h
+icu/source/layout/ContextualGlyphInsertion.h
+icu/source/layout/ThaiLayoutEngine.h
+icu/source/layout/LEGlyphFilter.h
+icu/source/layout/ClassDefinitionTables.h
+icu/source/layout/MorphStateTables.h
+icu/source/layout/MPreFixups.h
+icu/source/layout/LookupTables.cpp
+icu/source/layout/LayoutTables.h
+icu/source/layout/LayoutEngine.cpp
+icu/source/layout/PairPositioningSubtables.h
+icu/source/layout/MirroredCharData.cpp
+icu/source/layout/AnchorTables.cpp
+icu/source/layout/CoverageTables.h
+icu/source/layout/GlyphSubstLookupProc.h
+icu/source/layout/GXLayoutEngine.h
+icu/source/layout/KhmerLayoutEngine.h
+icu/source/layout/GlyphPosnLookupProc.h
+icu/source/layout/HindiFeatureTags.h
+icu/source/layout/LigatureSubstSubtables.h
+icu/source/layout/ScriptAndLanguage.h
+icu/source/layout/SegmentArrayProcessor.cpp
+icu/source/layout/OpenTypeUtilities.h
+icu/source/layout/ThaiLayoutEngine.cpp
+icu/source/layout/SimpleArrayProcessor.h
+icu/source/layout/MorphTables.cpp
+icu/source/layout/SimpleArrayProcessor.cpp
+icu/source/layout/CanonShaping.h
+icu/source/layout/Features.h
+icu/source/layout/MarkToBasePosnSubtables.cpp
+icu/source/layout/unicode/
+icu/source/layout/LEFontInstance.cpp
+icu/source/layout/SinglePositioningSubtables.h
+icu/source/layout/DefaultCharMapper.h
+icu/source/layout/MarkToLigaturePosnSubtables.cpp
+icu/source/layout/SubtableProcessor.h
+icu/source/layout/Lookups.h
+icu/source/layout/LookupProcessor.cpp
+icu/source/layout/TibetanReordering.h
+icu/source/layout/TibetanLayoutEngine.cpp
+icu/source/layout/ExtensionSubtables.h
+icu/source/layout/SingleTableProcessor.cpp
+icu/source/layout/GlyphPositionAdjustments.cpp
+icu/source/layout/LEGlyphStorage.h
+icu/source/layout/NonContextualGlyphSubstProc.h
+icu/source/layout/LEGlyphStorage.cpp
+icu/source/layout/ArabicLayoutEngine.cpp
+icu/source/layout/ContextualGlyphSubstProc.cpp
+icu/source/layout/ShapingTypeData.cpp
+icu/source/layout/ArabicShaping.h
+icu/source/layout/MarkArrays.h
+icu/source/layout/LookupProcessor.h
+icu/source/layout/TibetanLayoutEngine.h
+icu/source/layout/StateTables.h
+icu/source/layout/ThaiShaping.h
+icu/source/layout/LESwaps.h
+icu/source/layout/GDEFMarkFilter.cpp
+icu/source/layout/loengine.h
+icu/source/layout/ContextualGlyphSubstProc.h
+icu/source/layout/TibetanReordering.cpp
+icu/source/layout/NonContextualGlyphSubst.h
+icu/source/layout/AttachmentPosnSubtables.h
+icu/source/layout/LookupTables.h
+icu/source/layout/MorphTables.h
+icu/source/layout/ValueRecords.h
+icu/source/layout/GlyphPositioningTables.cpp
+icu/source/layout/GDEFMarkFilter.h
+icu/source/layout/OpenTypeLayoutEngine.cpp
+icu/source/layout/LELanguages.h
+icu/source/layout/KhmerLayoutEngine.cpp
+icu/source/layout/SegmentSingleProcessor.cpp
+icu/source/layout/layout.rc
+icu/source/layout/NonContextualGlyphSubstProc.cpp
+icu/source/layout/loengine.cpp
+icu/source/layout/AnchorTables.h
+icu/source/layout/ScriptAndLanguageTags.h
+icu/source/layout/GlyphIterator.cpp
+icu/source/layout/CanonData.cpp
+icu/source/layout/ExtensionSubtables.cpp
+icu/source/layout/AlternateSubstSubtables.h
+icu/source/layout/GlyphIterator.h
+icu/source/layout/HanLayoutEngine.cpp
+icu/source/layout/CharSubstitutionFilter.h
+icu/source/layout/KhmerReordering.cpp
+icu/source/layout/ContextualGlyphSubstitution.h
+icu/source/layout/Makefile.in
+icu/source/layout/OpenTypeUtilities.cpp
+icu/source/layout/GlyphDefinitionTables.cpp
+icu/source/layout/KernTable.cpp
+icu/source/layout/LEScripts.h
+icu/source/layout/IndicRearrangementProcessor.cpp
+icu/source/layout/ArabicLayoutEngine.h
+icu/source/layout/SubstitutionLookups.h
+icu/source/layout/MPreFixups.cpp
+icu/source/layout/MarkToMarkPosnSubtables.h
+icu/source/layout/ThaiShaping.cpp
+icu/source/layout/HangulLayoutEngine.h
+icu/source/layout/LEFontInstance.h
+icu/source/layout/OpenTypeLayoutEngine.h
+icu/source/layout/CursiveAttachmentSubtables.cpp
+icu/source/layout/ValueRecords.cpp
+icu/source/layout/IndicReordering.cpp
+icu/source/layout/ScriptAndLanguageTags.cpp
+icu/source/layout/SegmentArrayProcessor.h
+icu/source/layout/LigatureSubstProc.cpp
+icu/source/layout/ThaiStateTables.cpp
+icu/source/layout/SinglePositioningSubtables.cpp
+icu/source/layout/LETypes.h
+icu/source/layout/GlyphDefinitionTables.h
+icu/source/layout/SingleSubstitutionSubtables.h
+icu/source/layout/TrimmedArrayProcessor.h
+icu/source/layout/StateTableProcessor.h
+icu/source/layout/ArabicShaping.cpp
+icu/source/layout/OpenTypeTables.h
+icu/source/layout/PairPositioningSubtables.cpp
+icu/debian/
+icu/debian/README.Debian.libicu-dev
+icu/debian/.cvsignore
+icu/debian/postinst.in
+icu/debian/icu.postinst.in
+icu/debian/libicu.prerm.in
+icu/debian/rules
+icu/debian/control
+icu/debian/icu.conffiles.in
+icu/debian/prerm.in
+icu/debian/changelog
+icu/debian/watch.not-yet
+icu/debian/icu.prerm.in
+icu/debian/copyright
+icu/debian/libicu.postinst
+icu/debian/icu-doc.install
+icu/debian/icu-doc.doc-base
+icu/license.html
+icu/as_is/
+icu/as_is/os400/
+icu/as_is/os400/unpax-icu.sh
+icu/as_is/os400/convertConfigure.sed
+icu/as_is/os390/
+icu/as_is/os390/unpax-icu.sh
+icu/readme.html
+icu/icu4c.css
+icu/unicode-license.txt
+icu/APIChangeReport.html
+make writeable...
+cd ./wntmsci12.pro/misc/build && cat ../../..//icu4c-4_0_1-src.patch ../../..//icu-mp.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_so_icu
+patching file icu/source/config/mh-bsd-gcc
+patching file icu/source/common/putil.c
+patching file icu/source/common/unicode/pwin32.h
+patching file icu/source/config/mh-darwin
+patching file icu/source/config/mh-linux
+patching file icu/source/config/mh-mingw
+patching file icu/source/config/mh-solaris
+patching file icu/source/layout/ArabicShaping.cpp
+patching file icu/source/layoutex/ParagraphLayout.cpp
+patching file icu/source/tools/pkgdata/cmnmode.c
+patching file icu/source/tools/pkgdata/dllmode.c
+patching file icu/source/tools/pkgdata/make.c
+patching file icu/source/tools/pkgdata/pkgdata.c
+patching file icu/source/tools/pkgdata/sttcmode.c
+patching file icu/source/common/uloc.c
+patching file icu/source/tools/genuca/genuca.cpp
+patching file icu/source/data/Makefile.in
+patching file icu//source/data/Makefile.in
+mkdir.exe ./wntmsci12.pro/misc/build/icu/source
+cd ./wntmsci12.pro/misc/build/icu/source && C:/cygwin/bin/perl ../../../../../createmak.pl ../../../../../createmak.cfg .  && C:/cygwin/bin/touch.exe so_configured_so_icu
+203EC78A-0531-43F0-A636-285439BDE025  stubdata  "..\stubdata\stubdata.vcproj"
+73C0A65B-D1F2-4DE1-B3A6-15DAD2C23F3D  common  "..\common\common.vcproj"
+0178B127-6269-407D-B112-93877BB62776  i18n  "..\i18n\i18n.vcproj"
+6B231032-3CB5-4EED-9210-810D666A23A0  toolutil  "..\tools\toolutil\toolutil.vcproj"
+631C23CE-6C1D-4875-88F0-85E0A42B36EA  gensprep  "..\tools\gensprep\gensprep.vcproj"
+6F744648-D15F-478A-90C6-58E353B5DDB3  genprops  "..\tools\genprops\genprops.vcproj"
+62D4B15D-7A90-4ECB-BA19-5E021D6A21BC  icupkg  "..\tools\icupkg\icupkg.vcproj"
+A8D36F8D-09E6-4174-91C3-7BEAA9C3F04F  gencmn  "..\tools\gencmn\gencmn.vcproj"
+39690C2A-AD89-45E4-893A-899496B85785  icuswap  "..\tools\icuswap\icuswap.vcproj"
+FDD3C4F2-9805-44EB-9A77-BC1C1C95B547  genccode  "..\tools\genccode\genccode.vcproj"
+4C8454FE-81D3-4CA3-9927-29BA96F03DAC  pkgdata  "..\tools\pkgdata\pkgdata.vcproj"
+F5213103-6CBE-46E6-B4CC-2570B6837D86  gennorm  "..\tools\gennorm\gennorm.vcproj"
+C2BE5000-7501-4E87-9724-B8D82494FAE6  genbrk  "..\tools\genbrk\genbrk.vcproj"
+DBC0AF0B-B9FF-4B23-905B-4D4CDC2A91CB  genpname  "..\tools\genpname\genpname.vcproj"
+97521D06-EC47-45D4-8BD0-9E16B3F93B2A  genrb  "..\tools\genrb\genrb.vcproj"
+DBA4088D-F6F9-4F8F-8820-082A4765C16C  uconv  "..\extra\uconv\uconv.vcproj"
+F5281B04-A9E0-4680-BBA8-1D7F7D115458  gennames  "..\tools\gennames\gennames.vcproj"
+ECA6B435-B4FA-4F9F-BF95-F451D078FC47  ctestfw  "..\tools\ctestfw\ctestfw.vcproj"
+3D1246AE-1B32-479B-BECA-AEFA97BE2321  cintltst  "..\test\cintltst\cintltst.vcproj"
+77C78066-746F-4EA6-B3FE-B8C8A4A97891  gentest  "..\tools\gentest\gentest.vcproj"
+73632960-B3A6-464D-83A3-4B43365F19B8  intltest  "..\test\intltest\intltest.vcproj"
+DB312A49-12A9-4E07-9E96-451DC2D8FF61  gencase  "..\tools\gencase\gencase.vcproj"
+86829694-A375-4C58-B4EA-96EF514E3225  genuca  "..\tools\genuca\genuca.vcproj"
+F5AD9738-1A3D-4906-B9C4-A7D9CE33DC2C  makeconv  "..\tools\makeconv\makeconv.vcproj"
+8B41752B-5A52-41E4-B7E0-07921C0CC6BF  gencnval  "..\tools\gencnval\gencnval.vcproj"
+DB312A49-12A9-4E07-9E96-451DC2D8FF62  genbidi  "..\tools\genbidi\genbidi.vcproj"
+D3065ADB-8820-4CC7-9B6C-9510833961A3  derb  "..\tools\genrb\derb.vcproj"
+9D4211F7-2C77-439C-82F0-30A4E43BA569  genctd  "..\tools\genctd\genctd.vcproj"
+C2B04507-2521-4801-BF0D-5FD79D6D518C  io  "..\io\io.vcproj"
+E4993E82-D68A-46CA-BAE0-9D35E172E46F  iotest  "..\test\iotest\iotest.vcproj"
+C920062A-0647-4553-A3B2-37C58065664B  layout  "..\layout\layout.vcproj"
+37FC2C7F-1904-4811-8955-2F478830EAD1  layoutex  "..\layoutex\layoutex.vcproj"
+67351485-4D18-4245-BE39-A7EF0675ACD2  letest  "..\test\letest\letest.vcproj"
+D9DF7F2F-93B7-4810-B5CD-96F4F33C079B  makedata  "..\data\makedata.vcproj"
+.................................
+done
+mv ./wntmsci12.pro/misc/build/icu/source/so_configured_so_icu ./wntmsci12.pro/misc/build/so_configured_so_icu
+mkdir.exe ./wntmsci12.pro/misc/build/icu/source
+cd ./wntmsci12.pro/misc/build/icu/source && cd allinone && nmake /f all.mak EXFLAGS="-EHa -Zc:wchar_t-" && cd ../..  && C:/cygwin/bin/touch.exe C:/steve/testarea/main/icu/./wntmsci12.pro/misc/build/so_built_so_icu
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\stubdata"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F stubdata.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	rc.exe /l 0x409 /fo".\Release\icudata.res" /i "..\common" /d "NDEBUG" ..\data\misc\icudata.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nm365C.tmp
+stubdata.c
+	echo "File with stubdata build time, used as a dependency to trigger fresh data build, since stubdata dll will overwrite the real one." > .\stubdatabuilt.txt
+	link.exe kernel32.lib user32.lib /nologo /dll /incremental:yes /machine:I386 /pdb:".\Release\icudt.pdb" /out:"..\..\bin\icudt40.dll" /implib:"..\..\lib\icudata.lib" .\Release\stubdata.obj  .\Release\icudata.res
+   Creating library ..\..\lib\icudata.lib and object ..\..\lib\icudata.exp
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\common"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F common.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm390B.tmp
+putil.c
+	cl @C:\cygwin\tmp\nm3B3D.tmp
+ucol_swp.c
+	cl @C:\cygwin\tmp\nm3C19.tmp
+umapfile.c
+	cl @C:\cygwin\tmp\nm3E4B.tmp
+umutex.c
+	cl @C:\cygwin\tmp\nm4020.tmp
+wintz.c
+	rc.exe /l 0x409 /fo".\Release\common.res" /i "..\common" /d "NDEBUG" .\common.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nm4253.tmp
+bmpset.cpp
+brkeng.cpp
+brkiter.cpp
+caniter.cpp
+chariter.cpp
+dictbe.cpp
+dtintrv.cpp
+locbased.cpp
+locid.cpp
+locutil.cpp
+normlzr.cpp
+parsepos.cpp
+propname.cpp
+rbbi.cpp
+rbbidata.cpp
+rbbinode.cpp
+rbbirb.cpp
+rbbiscan.cpp
+rbbisetb.cpp
+rbbistbl.cpp
+Generating Code...
+Compiling...
+rbbitblb.cpp
+resbund.cpp
+resbund_cnv.cpp
+ruleiter.cpp
+schriter.cpp
+serv.cpp
+servlk.cpp
+servlkf.cpp
+servls.cpp
+servnotf.cpp
+servrbf.cpp
+servslkf.cpp
+triedict.cpp
+ubrk.cpp
+uchriter.cpp
+uhash_us.cpp
+uidna.cpp
+uiter.cpp
+unifilt.cpp
+unifunct.cpp
+Generating Code...
+Compiling...
+uniset.cpp
+uniset_props.cpp
+unisetspan.cpp
+unistr.cpp
+unistr_case.cpp
+unistr_cnv.cpp
+unistr_props.cpp
+unorm.cpp
+unormcmp.cpp
+uobject.cpp
+uset.cpp
+uset_props.cpp
+usetiter.cpp
+usprep.cpp
+ustack.cpp
+ustrenum.cpp
+utext.cpp
+util.cpp
+util_props.cpp
+uvector.cpp
+Generating Code...
+Compiling...
+uvectr32.cpp
+Generating Code...
+	cl @C:\cygwin\tmp\nmA6A2.tmp
+cmemory.c
+cstring.c
+cwchar.c
+locmap.c
+punycode.c
+uarrsort.c
+ubidi.c
+ubidi_props.c
+ubidiln.c
+ubidiwrt.c
+ucase.c
+ucasemap.c
+ucat.c
+uchar.c
+ucln_cmn.c
+ucmndata.c
+ucnv.c
+ucnv2022.c
+ucnv2022.c(2637) : warning C4244: '=' : conversion from 'UChar' to 'uint8_t', possible loss of data
+ucnv_bld.c
+ucnv_cb.c
+Generating Code...
+Compiling...
+ucnv_cnv.c
+ucnv_err.c
+ucnv_ext.c
+ucnv_io.c
+ucnv_lmb.c
+ucnv_set.c
+ucnv_u16.c
+ucnv_u32.c
+ucnv_u7.c
+ucnv_u8.c
+ucnvbocu.c
+ucnvdisp.c
+ucnvhz.c
+ucnvisci.c
+ucnvlat1.c
+ucnvmbcs.c
+ucnvscsu.c
+udata.c
+udatamem.c
+udataswp.c
+Generating Code...
+Compiling...
+uenum.c
+uhash.c
+uinit.c
+uinvchar.c
+uloc.c
+umath.c
+unames.c
+unorm_it.c
+uprops.c
+ures_cnv.c
+uresbund.c
+uresdata.c
+usc_impl.c
+uscript.c
+ushape.c
+ustr_cnv.c
+ustr_wcs.c
+ustrcase.c
+ustrcase.c(220) : warning C4101: 'indexSave' : unreferenced local variable
+ustrcase.c(220) : warning C4101: 'titleLimitSave' : unreferenced local variable
+ustrfmt.c
+ustring.c
+Generating Code...
+Compiling...
+ustrtrns.c
+utf_impl.c
+utrace.c
+utrie.c
+utypes.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmD705.tmp
+   Creating library .\..\..\lib\icuuc.lib and object .\..\..\lib\icuuc.exp
+	if exist ..\..\bin\icuuc40.dll.manifest mt.exe -manifest ..\..\bin\icuuc40.dll.manifest -outputresource:..\..\bin\icuuc40.dll;2
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\unicode\brkiter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\caniter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\chariter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\dbbi.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\docmain.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\locid.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\normlzr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\parseerr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\parsepos.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\putil.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\pwin32.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\rbbi.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\rep.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\resbund.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\schriter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\strenum.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\symtable.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ubidi.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ubrk.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucasemap.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucat.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uchar.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uchriter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uclean.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucnv.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucnv_cb.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucnv_err.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uconfig.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\udata.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\udeprctd.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\udraft.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uenum.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uidna.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uintrnal.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uiter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uloc.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\umachine.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\umisc.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unifilt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unifunct.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unimatch.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uniset.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unistr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unorm.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uobject.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uobslete.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\urename.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\urep.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ures.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uscript.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uset.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\usetiter.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ushape.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\usprep.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ustring.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\usystem.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utext.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utf.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utf16.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utf32.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utf8.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utf_old.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utrace.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utypes.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uversion.h" ..\..\include\unicode
+        1 file(s) copied.
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\i18n"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F i18n.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmE4D3.tmp
+windtfmt.cpp
+	cl @C:\cygwin\tmp\nmE88C.tmp
+winnmfmt.cpp
+	rc.exe /l 0x409 /fo".\Release\i18n.res" /i "..\common" /d "NDEBUG" .\i18n.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nmEC16.tmp
+anytrans.cpp
+astro.cpp
+basictz.cpp
+bms.cpp
+bmsearch.cpp
+brktrans.cpp
+buddhcal.cpp
+calendar.cpp
+casetrn.cpp
+cecal.cpp
+chnsecal.cpp
+choicfmt.cpp
+coleitr.cpp
+coll.cpp
+colldata.cpp
+colldata.cpp(97) : warning C4018: '>' : signed/unsigned mismatch
+coptccal.cpp
+cpdtrans.cpp
+csdetect.cpp
+csmatch.cpp
+csr2022.cpp
+Generating Code...
+Compiling...
+csrecog.cpp
+csrmbcs.cpp
+csrsbcs.cpp
+csrucode.cpp
+csrutf8.cpp
+curramt.cpp
+currfmt.cpp
+currunit.cpp
+datefmt.cpp
+dcfmtsym.cpp
+decimfmt.cpp
+digitlst.cpp
+dtfmtsym.cpp
+dtitvfmt.cpp
+dtitvinf.cpp
+dtptngen.cpp
+dtrule.cpp
+esctrn.cpp
+ethpccal.cpp
+fmtable.cpp
+Generating Code...
+Compiling...
+fmtable_cnv.cpp
+format.cpp
+funcrepl.cpp
+gregocal.cpp
+gregoimp.cpp
+hebrwcal.cpp
+indiancal.cpp
+inputext.cpp
+islamcal.cpp
+japancal.cpp
+measfmt.cpp
+measure.cpp
+msgfmt.cpp
+name2uni.cpp
+nfrs.cpp
+nfrule.cpp
+nfsubs.cpp
+nortrans.cpp
+nultrans.cpp
+numfmt.cpp
+Generating Code...
+Compiling...
+olsontz.cpp
+persncal.cpp
+plurfmt.cpp
+plurrule.cpp
+quant.cpp
+rbnf.cpp
+rbt.cpp
+rbt_data.cpp
+rbt_pars.cpp
+rbt_rule.cpp
+rbt_set.cpp
+rbtz.cpp
+regexcmp.cpp
+regexst.cpp
+reldtfmt.cpp
+rematch.cpp
+remtrans.cpp
+repattrn.cpp
+search.cpp
+simpletz.cpp
+Generating Code...
+Compiling...
+smpdtfmt.cpp
+sortkey.cpp
+strmatch.cpp
+strrepl.cpp
+stsearch.cpp
+taiwncal.cpp
+tblcoll.cpp
+timezone.cpp
+titletrn.cpp
+tolowtrn.cpp
+toupptrn.cpp
+translit.cpp
+transreg.cpp
+tridpars.cpp
+tzrule.cpp
+tztrans.cpp
+ucal.cpp
+ucol.cpp
+ucol_bld.cpp
+ucol_cnt.cpp
+Generating Code...
+Compiling...
+ucol_elm.cpp
+ucol_res.cpp
+ucol_sit.cpp
+ucol_tok.cpp
+ucoleitr.cpp
+ucsdet.cpp
+ucurr.cpp
+udat.cpp
+udatpg.cpp
+umsg.cpp
+unesctrn.cpp
+uni2name.cpp
+unum.cpp
+uregex.cpp
+uregexc.cpp
+usearch.cpp
+utrans.cpp
+vtzone.cpp
+zonemeta.cpp
+zstrfmt.cpp
+Generating Code...
+	cl @C:\cygwin\tmp\nm8BCF.tmp
+bocsu.c
+ucln_in.c
+ucol_wgt.c
+ulocdata.c
+utmscale.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm8E4F.tmp
+   Creating library .\..\..\lib\icuin.lib and object .\..\..\lib\icuin.exp
+	if exist ..\..\bin\icuin40.dll.manifest mt.exe -manifest ..\..\bin\icuin40.dll.manifest -outputresource:..\..\bin\icuin40.dll;2
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\unicode\basictz.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\bms.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\bmsearch.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\calendar.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\choicfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\coleitr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\coll.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\colldata.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\curramt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\currunit.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\datefmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\dcfmtsym.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\decimfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\dtfmtsym.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\dtptngen.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\dtrule.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\fieldpos.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\fmtable.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\format.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\gregocal.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\measfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\measunit.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\measure.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\msgfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\numfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\plurfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\plurrule.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\rbnf.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\rbtz.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\regex.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\search.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\simpletz.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\smpdtfmt.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\sortkey.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\stsearch.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\tblcoll.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\timezone.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\translit.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\tzrule.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\tztrans.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucal.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucol.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucoleitr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucsdet.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ucurr.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\udat.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\udatpg.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ulocdata.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\umsg.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unirepl.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\unum.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\uregex.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\usearch.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utmscale.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\utrans.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\vtzone.h" ..\..\include\unicode
+        1 file(s) copied.
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\toolutil"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F toolutil.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm9AAA.tmp
+toolutil.c
+	cl @C:\cygwin\tmp\nm9C9E.tmp
+filestrm.c
+propsvec.c
+ucbuf.c
+ucm.c
+ucmstate.c
+unewdata.c
+uoptions.c
+uparse.c
+writesrc.c
+Generating Code...
+	cl @C:\cygwin\tmp\nmA363.tmp
+package.cpp
+pkgitems.cpp
+swapimpl.cpp
+xmlparser.cpp
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmA8FF.tmp
+   Creating library .\..\..\..\lib\icutu.lib and object .\..\..\..\lib\icutu.exp
+	if exist ..\..\..\bin\icutu40.dll.manifest mt.exe -manifest ..\..\..\bin\icutu40.dll.manifest -outputresource:..\..\..\bin\icutu40.dll;2
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gensprep"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gensprep.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmAA44.tmp
+gensprep.c
+store.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmABBB.tmp
+	if exist .\Release/gensprep.exe.manifest mt.exe -manifest .\Release/gensprep.exe.manifest -outputresource:.\Release/gensprep.exe;1
+	copy ".\Release\gensprep.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genprops"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genprops.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmACB4.tmp
+genprops.c
+props2.c
+store.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmAF34.tmp
+	if exist .\Release/genprops.exe.manifest mt.exe -manifest .\Release/genprops.exe.manifest -outputresource:.\Release/genprops.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\genprops.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\icupkg"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F icupkg.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist "Release/" mkdir "Release"
+	cl @C:\cygwin\tmp\nmB03C.tmp
+icupkg.cpp
+	link.exe @C:\cygwin\tmp\nmB175.tmp
+	if exist Release/icupkg.exe.manifest mt.exe -manifest Release/icupkg.exe.manifest -outputresource:Release/icupkg.exe;1
+	copy "Release\icupkg.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gencmn"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gencmn.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmB30A.tmp
+gencmn.c
+	link.exe @C:\cygwin\tmp\nmB405.tmp
+	if exist .\Release/gencmn.exe.manifest mt.exe -manifest .\Release/gencmn.exe.manifest -outputresource:.\Release/gencmn.exe;1
+	copy ".\Release\gencmn.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\icuswap"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F icuswap.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmB4FD.tmp
+icuswap.cpp
+	link.exe @C:\cygwin\tmp\nmB655.tmp
+	if exist .\Release/icuswap.exe.manifest mt.exe -manifest .\Release/icuswap.exe.manifest -outputresource:.\Release/icuswap.exe;1
+	copy ".\Release\icuswap.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genccode"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genccode.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmB73E.tmp
+genccode.c
+	link.exe @C:\cygwin\tmp\nmB904.tmp
+	if exist .\Release/genccode.exe.manifest mt.exe -manifest .\Release/genccode.exe.manifest -outputresource:.\Release/genccode.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\genccode.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\pkgdata"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F pkgdata.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmBA1C.tmp
+filemode.c
+make.c
+pkgdata.c
+pkgtypes.c
+sttcmode.c
+winmode.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmBDA5.tmp
+	if exist .\Release/pkgdata.exe.manifest mt.exe -manifest .\Release/pkgdata.exe.manifest -outputresource:.\Release/pkgdata.exe;1
+	copy ".\Release\pkgdata.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gennorm"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gennorm.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmBE8E.tmp
+gennorm.c
+store.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmC0D1.tmp
+	if exist .\Release/gennorm.exe.manifest mt.exe -manifest .\Release/gennorm.exe.manifest -outputresource:.\Release/gennorm.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\gennorm.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genbrk"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genbrk.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmC1F8.tmp
+genbrk.cpp
+	link.exe @C:\cygwin\tmp\nmC553.tmp
+	if exist .\Release/genbrk.exe.manifest mt.exe -manifest .\Release/genbrk.exe.manifest -outputresource:.\Release/genbrk.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\genbrk.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genpname"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genpname.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmC65B.tmp
+genpname.cpp
+	link.exe @C:\cygwin\tmp\nmCB9A.tmp
+	if exist .\Release/genpname.exe.manifest mt.exe -manifest .\Release/genpname.exe.manifest -outputresource:.\Release/genpname.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\genpname.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genrb"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genrb.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmCCC1.tmp
+errmsg.c
+genrb.c
+parse.c
+rbutil.c
+read.c
+reslist.c
+rle.c
+ustr.c
+wrtjava.c
+Generating Code...
+	cl @C:\cygwin\tmp\nmD1B2.tmp
+prscmnts.cpp
+wrtxml.cpp
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmD3F4.tmp
+	if exist .\Release/genrb.exe.manifest mt.exe -manifest .\Release/genrb.exe.manifest -outputresource:.\Release/genrb.exe;1
+	copy ".\Release\genrb.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\extra\uconv"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F uconv.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	tempfile.bat
+ICU path is .\..\..\..
+Making Resource Bundle files
+	".\..\..\..\bin\genrb" -s resources -d resources root.txt
+Making Resource Bundle files
+	".\..\..\..\bin\genrb" -s resources -d resources fr.txt
+Building uconvmsg.lib
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin\icupkg.exe" -tl -C " Copyright (C) 2008, International Business Machines Corporation and others. All Rights Reserved. "  -s "resources" -a "pkgdatain.txt" new ".\Release\uconvmsg.dat"
+generating object code for .\Release\uconvmsg.dat
+genccode: --match-arch cpu=332 bits=32 big-endian=0
+	LIB.exe /nologo /out:".\Release\uconvmsg.lib" ".\Release\uconvmsg_dat.obj" 
+# ICUROOT is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin
+# Reading pkgdatain.txt..
+# Output .dll file: .\Release\uconvmsg.lib
+# Output file: .\Release\uconvmsg.dat
+nmake  -f ".\Release\uconvmsg_static.mak"    
+All targets are up to date (mode static)
+	cl @C:\cygwin\tmp\nmD7C9.tmp
+uconv.cpp
+	cl @C:\cygwin\tmp\nmD9DC.tmp
+uwmsg.c
+	link.exe @C:\cygwin\tmp\nmDAC7.tmp
+   Creating library .\Release\uconv.lib and object .\Release\uconv.exp
+	if exist .\Release/uconv.exe.manifest mt.exe -manifest .\Release/uconv.exe.manifest -outputresource:.\Release/uconv.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\uconv.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gennames"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gennames.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmDBEE.tmp
+gennames.c
+	link.exe @C:\cygwin\tmp\nmDD08.tmp
+	if exist .\Release/gennames.exe.manifest mt.exe -manifest .\Release/gennames.exe.manifest -outputresource:.\Release/gennames.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\gennames.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\ctestfw"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F ctestfw.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmDE1F.tmp
+uperf.cpp
+	cl @C:\cygwin\tmp\nmE0A0.tmp
+ctest.c
+	cl @C:\cygwin\tmp\nmE1C9.tmp
+datamap.cpp
+dbgutil.cpp
+testdata.cpp
+tstdtmod.cpp
+udbgutil.cpp
+Generating Code...
+	link.exe @C:\cygwin\tmp\nmE592.tmp
+   Creating library .\..\..\..\lib\icutest.lib and object .\..\..\..\lib\icutest.exp
+	if exist ..\..\..\bin\icutest.dll.manifest mt.exe -manifest ..\..\..\bin\icutest.dll.manifest -outputresource:..\..\..\bin\icutest.dll;2
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\test\cintltst"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F cintltst.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nmE6A7.tmp
+udatatst.c
+	cl @C:\cygwin\tmp\nmE86D.tmp
+bocu1tst.c
+callcoll.c
+calltest.c
+capitst.c
+cbiapts.c
+cbididat.c
+cbiditst.c
+cbkittst.c
+ccaltst.c
+ccapitst.c
+ccolltst.c
+cconvtst.c
+cctest.c
+ccurrtst.c
+cdattst.c
+cdetst.c
+cdtdptst.c
+cdtrgtst.c
+cestst.c
+cfintst.c
+Generating Code...
+Compiling...
+cformtst.c
+cfrtst.c
+cg7coll.c
+chashtst.c
+cintltst.c
+citertst.c
+cjaptst.c
+cldrtest.c
+cloctst.c
+cmsccoll.c
+cmsgtst.c
+cnmdptst.c
+cnormtst.c
+cnumtst.c
+cnumtst.c(1451) : warning C4101: 'testcase2' : unreferenced local variable
+colutil.c
+cposxtst.c
+crestst.c
+creststn.c
+cstrcase.c
+cstrtest.c
+Generating Code...
+Compiling...
+cturtst.c
+cucdapi.c
+cucdtst.c
+currtest.c
+custrtrn.c
+custrtst.c
+cutiltst.c
+encoll.c
+eurocreg.c
+hpmufn.c
+idnatest.c
+nccbtst.c
+ncnvfbts.c
+ncnvtst.c
+nfsprep.c
+nucnvtst.c
+nucnvtst.c(4479) : warning C4013: 'ucnv_cbToUWriteSub_4_0' undefined; assuming extern returning int
+putiltst.c
+reapits.c
+sorttest.c
+spreptst.c
+Generating Code...
+Compiling...
+sprpdata.c
+stdnmtst.c
+tracetst.c
+trietest.c
+ucsdetst.c
+udatpg_test.c
+uenumtst.c
+usettest.c
+usrchdat.c
+usrchtst.c
+utexttst.c
+utf16tst.c
+utf8tst.c
+utmstest.c
+utransts.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm279F.tmp
+	if exist .\Release/cintltst.exe.manifest mt.exe -manifest .\Release/cintltst.exe.manifest -outputresource:.\Release/cintltst.exe;1
+	copy ".\Release\cintltst.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gentest"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gentest.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm2B07.tmp
+genres32.c
+gentest.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm2C9D.tmp
+	if exist .\Release/gentest.exe.manifest mt.exe -manifest .\Release/gentest.exe.manifest -outputresource:.\Release/gentest.exe;1
+	copy ".\Release\gentest.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\test\intltest"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F intltest.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm2DB5.tmp
+strtest.cpp
+	cl @C:\cygwin\tmp\nm319C.tmp
+tsmthred.cpp
+	cl @C:\cygwin\tmp\nm3729.tmp
+ustrtest.cpp
+	cl @C:\cygwin\tmp\nm39F8.tmp
+windttst.cpp
+	cl @C:\cygwin\tmp\nm3D81.tmp
+winnmtst.cpp
+	cl @C:\cygwin\tmp\nm40BD.tmp
+winutil.cpp
+	cl @C:\cygwin\tmp\nm4292.tmp
+aliastst.cpp
+allcoll.cpp
+apicoll.cpp
+astrotst.cpp
+calcasts.cpp
+callimts.cpp
+calregts.cpp
+caltest.cpp
+caltztst.cpp
+canittst.cpp
+citrtest.cpp
+cntabcol.cpp
+convtest.cpp
+cpdtrtst.cpp
+csdetest.cpp
+currcoll.cpp
+dadrcal.cpp
+dadrcoll.cpp
+dadrfmt.cpp
+dcfmapts.cpp
+Generating Code...
+Compiling...
+decoll.cpp
+dtfmapts.cpp
+dtfmrgts.cpp
+dtfmtrtts.cpp
+dtfmttst.cpp
+dtifmtts.cpp
+dtptngts.cpp
+encoll.cpp
+escoll.cpp
+ficoll.cpp
+fldset.cpp
+frcoll.cpp
+g7coll.cpp
+icusvtst.cpp
+idnaconf.cpp
+idnaref.cpp
+incaltst.cpp
+intltest.cpp
+itercoll.cpp
+itformat.cpp
+Generating Code...
+Compiling...
+itmajor.cpp
+itrbbi.cpp
+itrbnf.cpp
+itrbnfp.cpp
+itrbnfrt.cpp
+ittrans.cpp
+itutil.cpp
+jacoll.cpp
+jamotest.cpp
+lcukocol.cpp
+loctest.cpp
+miscdtfm.cpp
+mnkytst.cpp
+msfmrgts.cpp
+nmfmapts.cpp
+nmfmtrt.cpp
+normconf.cpp
+nptrans.cpp
+numfmtst.cpp
+numrgts.cpp
+Generating Code...
+Compiling...
+plurfmts.cpp
+plurults.cpp
+pptest.cpp
+rbbiapts.cpp
+rbbitst.cpp
+regcoll.cpp
+regextst.cpp
+reptest.cpp
+restest.cpp
+restsnew.cpp
+sdtfmtts.cpp
+sfwdchit.cpp
+srchtest.cpp
+ssearch.cpp
+strcase.cpp
+svccoll.cpp
+tchcfmt.cpp
+testidn.cpp
+testidna.cpp
+testutil.cpp
+Generating Code...
+Compiling...
+textfile.cpp
+tfsmalls.cpp
+thcoll.cpp
+tmsgfmt.cpp
+tokiter.cpp
+transapi.cpp
+transrt.cpp
+transtst.cpp
+trcoll.cpp
+trnserr.cpp
+tscoll.cpp
+tsdate.cpp
+tsdcfmsy.cpp
+tsdtfmsy.cpp
+tsnmfmt.cpp
+tsputil.cpp
+tstnorm.cpp
+tstnrapi.cpp
+tzbdtest.cpp
+tzfmttst.cpp
+Generating Code...
+Compiling...
+tzoffloc.cpp
+tzregts.cpp
+tzrulets.cpp
+tztest.cpp
+ucaconf.cpp
+ucdtest.cpp
+uobjtest.cpp
+usettest.cpp
+utxttest.cpp
+uvectest.cpp
+v32test.cpp
+Generating Code...
+	cl @C:\cygwin\tmp\nm34CE.tmp
+punyref.c
+	link.exe @C:\cygwin\tmp\nm357A.tmp
+	if exist .\Release/intltest.exe.manifest mt.exe -manifest .\Release/intltest.exe.manifest -outputresource:.\Release/intltest.exe;1
+	copy ".\Release\intltest.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gencase"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gencase.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm388E.tmp
+gencase.c
+store.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm3A82.tmp
+	if exist .\Release/gencase.exe.manifest mt.exe -manifest .\Release/gencase.exe.manifest -outputresource:.\Release/gencase.exe;1
+	copy ".\Release\gencase.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genuca"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genuca.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm3B6B.tmp
+genuca.cpp
+	link.exe @C:\cygwin\tmp\nm3CF2.tmp
+	if exist .\Release/genuca.exe.manifest mt.exe -manifest .\Release/genuca.exe.manifest -outputresource:.\Release/genuca.exe;1
+	copy ".\Release\genuca.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\makeconv"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F makeconv.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm3E48.tmp
+gencnvex.c
+genmbcs.c
+makeconv.c
+ucnvstat.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm40D9.tmp
+	if exist .\Release/makeconv.exe.manifest mt.exe -manifest .\Release/makeconv.exe.manifest -outputresource:.\Release/makeconv.exe;1
+	copy ".\Release\makeconv.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\gencnval"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F gencnval.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm41D1.tmp
+gencnval.c
+	link.exe @C:\cygwin\tmp\nm42EB.tmp
+	if exist .\Release/gencnval.exe.manifest mt.exe -manifest .\Release/gencnval.exe.manifest -outputresource:.\Release/gencnval.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\gencnval.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genbidi"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genbidi.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm4412.tmp
+genbidi.c
+store.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm4599.tmp
+	if exist .\Release/genbidi.exe.manifest mt.exe -manifest .\Release/genbidi.exe.manifest -outputresource:.\Release/genbidi.exe;1
+	copy ".\Release\genbidi.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genrb"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F derb.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\derb_Win32_Release/" mkdir ".\derb_Win32_Release"
+	cl @C:\cygwin\tmp\nm4682.tmp
+derb.c
+	link.exe @C:\cygwin\tmp\nm476D.tmp
+	if exist .\derb_Win32_Release/derb.exe.manifest mt.exe -manifest .\derb_Win32_Release/derb.exe.manifest -outputresource:.\derb_Win32_Release/derb.exe;1
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\tools\genctd"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F genctd.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm4808.tmp
+genctd.cpp
+	link.exe @C:\cygwin\tmp\nm4932.tmp
+	if exist .\Release/genctd.exe.manifest mt.exe -manifest .\Release/genctd.exe.manifest -outputresource:.\Release/genctd.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\genctd.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\io"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F io.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm4A88.tmp
+ustream.cpp
+	rc.exe /l 0x409 /fo".\Release\io.res" /i "..\common" /d "NDEBUG" .\io.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nm4DB4.tmp
+locbund.c
+sprintf.c
+sscanf.c
+ucln_io.c
+ufile.c
+ufmt_cmn.c
+uprintf.c
+uprntf_p.c
+uscanf.c
+uscanf_p.c
+ustdio.c
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm544A.tmp
+   Creating library .\..\..\lib\icuio.lib and object .\..\..\lib\icuio.exp
+	if exist ..\..\bin\icuio40.dll.manifest mt.exe -manifest ..\..\bin\icuio40.dll.manifest -outputresource:..\..\bin\icuio40.dll;2
+	copy ".\unicode\ustdio.h" ..\..\include\unicode
+        1 file(s) copied.
+	copy ".\unicode\ustream.h" ..\..\include\unicode
+        1 file(s) copied.
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\test\iotest"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F iotest.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm560C.tmp
+stream.cpp
+	cl @C:\cygwin\tmp\nm5AAF.tmp
+filetst.c
+strtst.c
+trnstst.c
+Generating Code...
+	cl @C:\cygwin\tmp\nm5F61.tmp
+iotest.cpp
+	link.exe @C:\cygwin\tmp\nm6155.tmp
+	if exist .\Release/iotest.exe.manifest mt.exe -manifest .\Release/iotest.exe.manifest -outputresource:.\Release/iotest.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\iotest.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\layout"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F layout.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	rc.exe /l 0x409 /fo".\Release\layout.res" /i "..\common" /d "NDEBUG" .\layout.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nm6384.tmp
+AlternateSubstSubtables.cpp
+AnchorTables.cpp
+ArabicLayoutEngine.cpp
+ArabicShaping.cpp
+CanonData.cpp
+CanonShaping.cpp
+ClassDefinitionTables.cpp
+ContextualGlyphSubstProc.cpp
+ContextualSubstSubtables.cpp
+CoverageTables.cpp
+CursiveAttachmentSubtables.cpp
+DeviceTables.cpp
+ExtensionSubtables.cpp
+Features.cpp
+GDEFMarkFilter.cpp
+GXLayoutEngine.cpp
+GlyphDefinitionTables.cpp
+GlyphIterator.cpp
+GlyphLookupTables.cpp
+GlyphPositionAdjustments.cpp
+Generating Code...
+Compiling...
+GlyphPositioningTables.cpp
+GlyphPosnLookupProc.cpp
+GlyphSubstLookupProc.cpp
+GlyphSubstitutionTables.cpp
+HanLayoutEngine.cpp
+HangulLayoutEngine.cpp
+IndicClassTables.cpp
+IndicLayoutEngine.cpp
+IndicRearrangementProcessor.cpp
+IndicReordering.cpp
+KernTable.cpp
+KhmerLayoutEngine.cpp
+KhmerReordering.cpp
+LEFontInstance.cpp
+LEGlyphStorage.cpp
+LEInsertionList.cpp
+LayoutEngine.cpp
+LigatureSubstProc.cpp
+LigatureSubstSubtables.cpp
+LookupProcessor.cpp
+Generating Code...
+Compiling...
+LookupTables.cpp
+Lookups.cpp
+MPreFixups.cpp
+MarkArrays.cpp
+MarkToBasePosnSubtables.cpp
+MarkToLigaturePosnSubtables.cpp
+MarkToMarkPosnSubtables.cpp
+MirroredCharData.cpp
+MorphTables.cpp
+MultipleSubstSubtables.cpp
+NonContextualGlyphSubstProc.cpp
+OpenTypeLayoutEngine.cpp
+OpenTypeUtilities.cpp
+PairPositioningSubtables.cpp
+ScriptAndLanguage.cpp
+ScriptAndLanguageTags.cpp
+SegmentArrayProcessor.cpp
+SegmentSingleProcessor.cpp
+ShapingTypeData.cpp
+SimpleArrayProcessor.cpp
+Generating Code...
+Compiling...
+SinglePositioningSubtables.cpp
+SingleSubstitutionSubtables.cpp
+SingleTableProcessor.cpp
+StateTableProcessor.cpp
+SubstitutionLookups.cpp
+SubtableProcessor.cpp
+ThaiLayoutEngine.cpp
+ThaiShaping.cpp
+ThaiStateTables.cpp
+TibetanLayoutEngine.cpp
+TibetanReordering.cpp
+TrimmedArrayProcessor.cpp
+ValueRecords.cpp
+loengine.cpp
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm8B50.tmp
+   Creating library .\..\..\lib\icule.lib and object .\..\..\lib\icule.exp
+	if exist ..\..\bin\icule40.dll.manifest mt.exe -manifest ..\..\bin\icule40.dll.manifest -outputresource:..\..\bin\icule40.dll;2
+	copy ".\LEFontInstance.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LEGlyphFilter.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LEGlyphStorage.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LEInsertionList.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LELanguages.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LEScripts.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LESwaps.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LETypes.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\LayoutEngine.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\loengine.h" ..\..\include\layout
+        1 file(s) copied.
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\layoutex"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F layoutex.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	rc.exe /l 0x409 /fo".\Release\layoutex.res" /i "..\common" /d "NDEBUG" .\layoutex.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+	cl @C:\cygwin\tmp\nm8E6A.tmp
+LXUtilities.cpp
+ParagraphLayout.cpp
+RunArrays.cpp
+playout.cpp
+plruns.cpp
+Generating Code...
+	link.exe @C:\cygwin\tmp\nm93C8.tmp
+   Creating library .\..\..\lib\iculx.lib and object .\..\..\lib\iculx.exp
+	if exist ..\..\bin\iculx40.dll.manifest mt.exe -manifest ..\..\bin\iculx40.dll.manifest -outputresource:..\..\bin\iculx40.dll;2
+	copy ".\layout\ParagraphLayout.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\layout\RunArrays.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\layout\playout.h" ..\..\include\layout
+        1 file(s) copied.
+	copy ".\layout\plruns.h" ..\..\include\layout
+        1 file(s) copied.
+	cd "..\allinone"
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\test\letest"
+	C:\PROGRA~2\MICROS~1.0\VC\bin\nmake.exe /                   /F letest.mak EXCEPTIONSWITCH="-EHa -Zc:wchar_t-"
+	if not exist ".\Release/" mkdir ".\Release"
+	cl @C:\cygwin\tmp\nm953E.tmp
+FontTableCache.cpp
+PortableFontInstance.cpp
+SimpleFontInstance.cpp
+cfonts.cpp
+cmaps.cpp
+letest.cpp
+letsutil.cpp
+xmlreader.cpp
+Generating Code...
+	cl @C:\cygwin\tmp\nm9E15.tmp
+cletest.c
+	link.exe @C:\cygwin\tmp\nmA0E3.tmp
+   Creating library .\Release\letest.lib and object .\Release\letest.exp
+	if exist .\Release/letest.exe.manifest mt.exe -manifest .\Release/letest.exe.manifest -outputresource:.\Release/letest.exe;1
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.	copy ".\Release\letest.exe" .\..\..\..\bin
+        1 file(s) copied.
+	cd "..\..\allinone"
+	cd "..\data"
+	nmake /f makedata.mak icumake=C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data cfg=Release
+ICU data make path is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data
+ICU root path is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..
+ICU data source archive is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\data\in\icudt40l.dat
+Creating data DLL version information from C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\data\misc\icudata.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+Building icu data from C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\data\in\icudt40l.dat
+	cd "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l"
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\bin\icupkg" -x * --list "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\data\in\icudt40l.dat" > "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudata.lst"
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\bin\pkgdata" -f -e icudt40 -v -m dll -M"PKGDATA_LDFLAGS=/base:0x4ad00000" -c -p icudt40l -T "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp" -L icudt40 -d "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l" -s . "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudata.lst"
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin\icupkg.exe" -tl -C " Copyright (C) 2008, International Business Machines Corporation and others. All Rights Reserved. "  -s "." -a "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudata.lst" new "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudt40l.dat"
+generating object code for C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudt40l.dat
+genccode: --match-arch cpu=332 bits=32 big-endian=0
+	link.exe /nologo /release /out:"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40.dll" /DLL /NOENTRY /MANIFEST:NO  /base:0x4ad00000 /implib:"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40.lib" "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudt40l_dat.obj" "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudata.res"
+   Creating library C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40.lib and object C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40.exp
+# ICUROOT is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin
+# Reading C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudata.lst..
+# Output .dll file: C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40.dll
+# Output file: C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\build\icudt40l\icudt40l.dat
+nmake  -f "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudt40l_dll.mak"    PKGDATA_LDFLAGS=/base:0x4ad00000
+	copy "icudt40.dll" "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\bin"
+        1 file(s) copied.
+	copy "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\tmp\icudt40l.dat" "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\out\icudt40l.dat"
+        1 file(s) copied.
+building testdata...
+	nmake /nologo /f "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\testdata.mak" TESTDATA=. ICUTOOLS="C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\tools" ICUP="C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\.." CFG=Release TESTDATAOUT="C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out" TESTDATABLD="C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build"
+Making Test Resource Bundle file with encoding ISCII,version=0
+Making Test Resource Bundle file for IDNA reference implementation
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\tools\gentest\Release\gentest" -d"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build"
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\tools\gentest\Release\gentest" -r -d"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build"
+Generating testtable32.txt
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\tools\genrb\Release\genrb" -s"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build" -d"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build" testtable32.txt
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\test1.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\test1bmp.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\test3.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\test4.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\test4x.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\ibm9027.cnv
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\nfscsi.spp
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\nfscss.spp
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\nfscis.spp
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\nfsmxs.spp
+Building C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\nfsmxp.spp
+Making Test Resource Bundle files .\DataDrivenCollationTest.txt .\calendar.txt .\format.txt .\casing.txt .\conversion.txt .\icuio.txt .\mc.txt .\structLocale.txt .\root.txt .\sh.txt .\sh_YU.txt .\te.txt .\te_IN.txt .\te_IN_REVISED.txt .\testaliases.txt .\testtypes.txt .\testempty.txt .\DataDrivenCollationTest.txt
+Building test data
+        1 file(s) copied.
+        1 file(s) copied.
+        1 file(s) copied.
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\bin\pkgdata" -f -v -m common -c -p"testdata" -d "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out" -T "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build" -s "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build" C:\cygwin\tmp\nmC1E9.tmp
+	"C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin\icupkg.exe" -tl -C " Copyright (C) 2008, International Business Machines Corporation and others. All Rights Reserved. "  -s "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build" -a "C:\cygwin\tmp\nmC1E9.tmp" new "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\testdata.dat"
+# ICUROOT is C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\bin
+# Reading C:\cygwin\tmp\nmC1E9.tmp..
+# Output file: C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\testdata.dat
+nmake  -f "C:\steve\testarea\main\icu\wntmsci12.pro\misc\build\icu\source\allinone\..\data\..\..\source\test\testdata\out\build\testdata_common.mak"    
+Test data is built.
+All targets are up to date
+	cd "..\allinone"
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_so_icu
+cp ./wntmsci12.pro/misc/build/icu/source/../lib/icudata.lib ./wntmsci12.pro/misc/build/icu/source/../lib/icuin.lib ./wntmsci12.pro/misc/build/icu/source/../lib/icuuc.lib ./wntmsci12.pro/misc/build/icu/source/../lib/icule.lib ./wntmsci12.pro/misc/build/icu/source/../lib/icutu.lib ./wntmsci12.pro/lib
+cp ./wntmsci12.pro/misc/build/icu/source/../bin/icudt40.dll ./wntmsci12.pro/misc/build/icu/source/../bin/icuin40.dll ./wntmsci12.pro/misc/build/icu/source/../bin/icuuc40.dll ./wntmsci12.pro/misc/build/icu/source/../bin/icule40.dll ./wntmsci12.pro/misc/build/icu/source/../bin/icutu40.dll ./wntmsci12.pro/misc/build/icu/source/../bin/genccode.exe ./wntmsci12.pro/misc/build/icu/source/../bin/genbrk.exe ./wntmsci12.pro/misc/build/icu/source/../bin/gencmn.exe ./wntmsci12.pro/bin
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+dmake: Executing shell macro: -ls -1 $(PACKAGE_DIR)/$(TARFILE_ROOTDIR)/$k | $(GREP) .dll
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_so_icu
+icu deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/icu/build.lst
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/AlternateSubstSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/AlternateSubstSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/AnchorTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/AnchorTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ArabicLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ArabicLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ArabicShaping.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ArabicShaping.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/AttachmentPosnSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/AttachmentPosnSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/CanonShaping.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/CanonShaping.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/CharSubstitutionFilter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/CharSubstitutionFilter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ClassDefinitionTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ClassDefinitionTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ContextualGlyphInsertion.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ContextualGlyphInsertion.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ContextualGlyphSubstitution.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ContextualGlyphSubstitution.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ContextualGlyphSubstProc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ContextualGlyphSubstProc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ContextualSubstSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ContextualSubstSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/CoverageTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/CoverageTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/CursiveAttachmentSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/CursiveAttachmentSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/DefaultCharMapper.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/DefaultCharMapper.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/DeviceTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/DeviceTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ExtensionSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ExtensionSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/Features.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/Features.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GDEFMarkFilter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GDEFMarkFilter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphDefinitionTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphDefinitionTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphIterator.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphIterator.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphLookupTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphLookupTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphPositionAdjustments.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphPositionAdjustments.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphPositioningTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphPositioningTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphPosnLookupProc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphPosnLookupProc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphSubstitutionTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphSubstitutionTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GlyphSubstLookupProc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GlyphSubstLookupProc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/GXLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/GXLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/HangulLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/HangulLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/HanLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/HanLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/HindiFeatureTags.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/HindiFeatureTags.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/IndicLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/IndicLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/IndicRearrangement.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/IndicRearrangement.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/IndicRearrangementProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/IndicRearrangementProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/IndicReordering.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/IndicReordering.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/KernTable.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/KernTable.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/KhmerLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/KhmerLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/KhmerReordering.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/KhmerReordering.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LayoutTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LayoutTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LEFontInstance.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LEFontInstance.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LEGlyphFilter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LEGlyphFilter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LEGlyphStorage.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LEGlyphStorage.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LEInsertionList.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LEInsertionList.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LELanguages.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LELanguages.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LEScripts.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LEScripts.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LESwaps.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LESwaps.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LETypes.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LETypes.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LigatureSubstitution.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LigatureSubstitution.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LigatureSubstProc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LigatureSubstProc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LigatureSubstSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LigatureSubstSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/loengine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/loengine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LookupProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LookupProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/Lookups.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/Lookups.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/LookupTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/LookupTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MarkArrays.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MarkArrays.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MarkToBasePosnSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MarkToBasePosnSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MarkToLigaturePosnSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MarkToLigaturePosnSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MarkToMarkPosnSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MarkToMarkPosnSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MorphStateTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MorphStateTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MorphTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MorphTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MPreFixups.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MPreFixups.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/MultipleSubstSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/MultipleSubstSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/NonContextualGlyphSubst.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/NonContextualGlyphSubst.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/NonContextualGlyphSubstProc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/NonContextualGlyphSubstProc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/OpenTypeLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/OpenTypeLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/OpenTypeTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/OpenTypeTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/OpenTypeUtilities.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/OpenTypeUtilities.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/PairPositioningSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/PairPositioningSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ScriptAndLanguage.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ScriptAndLanguage.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ScriptAndLanguageTags.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ScriptAndLanguageTags.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SegmentArrayProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SegmentArrayProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SegmentSingleProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SegmentSingleProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SimpleArrayProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SimpleArrayProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SinglePositioningSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SinglePositioningSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SingleSubstitutionSubtables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SingleSubstitutionSubtables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SingleTableProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SingleTableProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/StateTableProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/StateTableProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/StateTables.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/StateTables.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SubstitutionLookups.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SubstitutionLookups.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/SubtableProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/SubtableProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ThaiLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ThaiLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ThaiShaping.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ThaiShaping.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/TibetanLayoutEngine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/TibetanLayoutEngine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/TibetanReordering.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/TibetanReordering.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/TrimmedArrayProcessor.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/TrimmedArrayProcessor.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/layout/ValueRecords.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/layout/ValueRecords.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/brkiter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/brkiter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/caniter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/caniter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/chariter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/chariter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/dbbi.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dbbi.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/docmain.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/docmain.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/dtintrv.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtintrv.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/locid.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/locid.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/normlzr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/normlzr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/parseerr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/parseerr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/parsepos.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/parsepos.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ppalmos.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ppalmos.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/putil.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/putil.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/pwin32.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/pwin32.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/rbbi.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/rbbi.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/rep.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/rep.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/resbund.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/resbund.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/schriter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/schriter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/strenum.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/strenum.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/symtable.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/symtable.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ubidi.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ubidi.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ubrk.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ubrk.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ucasemap.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucasemap.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ucat.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucat.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uchar.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uchar.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uchriter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uchriter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uclean.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uclean.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ucnv.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucnv.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ucnv_cb.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucnv_cb.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ucnv_err.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucnv_err.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uconfig.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uconfig.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/udata.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/udata.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/udeprctd.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/udeprctd.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/udraft.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/udraft.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uenum.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uenum.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uidna.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uidna.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uintrnal.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uintrnal.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uiter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uiter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uloc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uloc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/umachine.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/umachine.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/umisc.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/umisc.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/unifilt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unifilt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/unifunct.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unifunct.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/unimatch.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unimatch.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uniset.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uniset.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/unistr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unistr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/unorm.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unorm.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uobject.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uobject.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uobslete.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uobslete.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/urename.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/urename.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/urep.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/urep.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ures.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ures.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uscript.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uscript.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uset.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uset.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/usetiter.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/usetiter.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ushape.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ushape.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/usprep.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/usprep.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/ustring.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ustring.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/usystem.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/usystem.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utext.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utext.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utf.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utf.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utf16.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utf16.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utf32.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utf32.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utf8.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utf8.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utf_old.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utf_old.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utrace.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utrace.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/utypes.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utypes.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/common/unicode/uversion.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uversion.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/basictz.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/basictz.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/bms.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/bms.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/bmsearch.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/bmsearch.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/calendar.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/calendar.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/choicfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/choicfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/coleitr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/coleitr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/coll.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/coll.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/colldata.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/colldata.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/curramt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/curramt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/currunit.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/currunit.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/datefmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/datefmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dcfmtsym.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dcfmtsym.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/decimfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/decimfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dtfmtsym.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtfmtsym.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dtitvfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtitvfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dtitvinf.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtitvinf.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dtptngen.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtptngen.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/dtrule.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/dtrule.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/fieldpos.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/fieldpos.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/fmtable.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/fmtable.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/format.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/format.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/gregocal.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/gregocal.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/measfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/measfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/measunit.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/measunit.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/measure.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/measure.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/msgfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/msgfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/numfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/numfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/plurfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/plurfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/plurrule.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/plurrule.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/rbnf.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/rbnf.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/rbtz.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/rbtz.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/regex.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/regex.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/search.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/search.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/simpletz.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/simpletz.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/smpdtfmt.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/smpdtfmt.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/sortkey.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/sortkey.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/stsearch.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/stsearch.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/tblcoll.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/tblcoll.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/timezone.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/timezone.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/translit.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/translit.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/tzrule.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/tzrule.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/tztrans.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/tztrans.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ucal.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucal.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ucol.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucol.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ucoleitr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucoleitr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ucsdet.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucsdet.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ucurr.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ucurr.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/udat.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/udat.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/udatpg.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/udatpg.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/ulocdata.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/ulocdata.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/umsg.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/umsg.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/unirepl.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unirepl.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/unum.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/unum.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/uregex.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/uregex.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/usearch.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/usearch.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/utmscale.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utmscale.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/utrans.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/utrans.h
+COPY: ../wntmsci12.pro/misc/build/icu/source/i18n/unicode/vtzone.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/unicode/vtzone.h
+COPY: ../wntmsci12.pro/lib/icudata.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icudata.lib
+COPY: ../wntmsci12.pro/lib/icuin.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icuin.lib
+COPY: ../wntmsci12.pro/lib/icule.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icule.lib
+COPY: ../wntmsci12.pro/lib/icutu.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icutu.lib
+COPY: ../wntmsci12.pro/lib/icuuc.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/icuuc.lib
+COPY: ../wntmsci12.pro/bin/icudt40.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/icudt40.dll
+COPY: ../wntmsci12.pro/bin/icuin40.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/icuin40.dll
+COPY: ../wntmsci12.pro/bin/icule40.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/icule40.dll
+COPY: ../wntmsci12.pro/bin/icutu40.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/icutu40.dll
+COPY: ../wntmsci12.pro/bin/icuuc40.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/icuuc40.dll
+COPY: ../wntmsci12.pro/bin/genccode -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/genccode
+COPY: ../wntmsci12.pro/bin/genccode.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/genccode.exe
+COPY: ../wntmsci12.pro/bin/genbrk -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/genbrk
+COPY: ../wntmsci12.pro/bin/genbrk.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/genbrk.exe
+COPY: ../wntmsci12.pro/bin/gencmn -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/gencmn
+COPY: ../wntmsci12.pro/bin/gencmn.exe -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/gencmn.exe
+COPY: ../icuversion.mk -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/icuversion.mk
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/icu/deliver.log
+Module 'icu' delivered successfully. 230 files copied, 0 files unchanged
+
+=============

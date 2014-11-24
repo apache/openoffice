@@ -1,0 +1,386 @@
+Name:
+writerfilter
+
+Dependencies:
+soltools sal BOOST:boost cppu cppuhelper ucbhelper tools svx LIBXSLT:libxslt oox NULL
+
+Build Rules:
+..\%__SRC%\bin\*.exe %_DEST%\bin%_EXT%\*.exe
+..\%__SRC%\bin\*.dll %_DEST%\bin%_EXT%\*.dll
+..\%__SRC%\lib\*.so %_DEST%\lib%_EXT%\*.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\writerfilter.component %_DEST%\xml%_EXT%\writerfilter.component
+
+mkdir: %_DEST%\inc%_EXT%\writerfilter\doctok
+..\%__SRC%\inc\doctok\sprmids.hxx %_DEST%\inc%_EXT%\writerfilter\doctok\sprmids.hxx
+
+Source Files:
+documentation\AddingTable.cxx
+qa\cppunittests\doctok\testdoctok.cxx
+qa\cppunittests\odiapi\ExternalViewLogger.cxx
+qa\cppunittests\odiapi\FileLoggerImpl.cxx
+qa\cppunittests\odiapi\testCore.cxx
+qa\cppunittests\odiapi\testProperty.cxx
+qa\cppunittests\qname\testQName.cxx
+qa\cppunittests\sl\testOD_SL.cxx
+qa\cppunittests\xxml\testXXML.cxx
+source\dmapper\BorderHandler.cxx
+source\dmapper\CellColorHandler.cxx
+source\dmapper\CellMarginHandler.cxx
+source\dmapper\ConversionHelper.cxx
+source\dmapper\dmapperLoggers.cxx
+source\dmapper\DomainMapper.cxx
+source\dmapper\DomainMapperTableHandler.cxx
+source\dmapper\DomainMapperTableManager.cxx
+source\dmapper\DomainMapper_Impl.cxx
+source\dmapper\FFDataHandler.cxx
+source\dmapper\FontTable.cxx
+source\dmapper\FormControlHelper.cxx
+source\dmapper\GraphicHelpers.cxx
+source\dmapper\GraphicImport.cxx
+source\dmapper\MeasureHandler.cxx
+source\dmapper\ModelEventListener.cxx
+source\dmapper\NumberingManager.cxx
+source\dmapper\OLEHandler.cxx
+source\dmapper\PageBordersHandler.cxx
+source\dmapper\PropertyIds.cxx
+source\dmapper\PropertyMap.cxx
+source\dmapper\PropertyMapHelper.cxx
+source\dmapper\SectionColumnHandler.cxx
+source\dmapper\SettingsTable.cxx
+source\dmapper\StyleSheetTable.cxx
+source\dmapper\TablePropertiesHandler.cxx
+source\dmapper\TblStylePrHandler.cxx
+source\dmapper\TDefTableHandler.cxx
+source\dmapper\ThemeTable.cxx
+source\dmapper\WrapPolygonHandler.cxx
+source\doctok\Dff.cxx
+source\doctok\DffImpl.cxx
+source\doctok\WW8Annotation.cxx
+source\doctok\WW8BinTableImpl.cxx
+source\doctok\WW8Clx.cxx
+source\doctok\WW8CpAndFc.cxx
+source\doctok\WW8DocumentImpl.cxx
+source\doctok\WW8FKPImpl.cxx
+source\doctok\WW8FontTable.cxx
+source\doctok\WW8LFOTable.cxx
+source\doctok\WW8ListTable.cxx
+source\doctok\WW8OutputWithDepth.cxx
+source\doctok\WW8Picture.cxx
+source\doctok\WW8PieceTableImpl.cxx
+source\doctok\WW8PropertySetImpl.cxx
+source\doctok\WW8ResourceModelImpl.cxx
+source\doctok\WW8StreamImpl.cxx
+source\doctok\WW8StructBase.cxx
+source\doctok\WW8Sttbf.cxx
+source\doctok\WW8StyleSheet.cxx
+source\doctok\WW8Table.cxx
+source\doctok\WW8Text.cxx
+source\filter\ImportFilter.cxx
+source\filter\RtfFilter.cxx
+source\filter\WriterFilter.cxx
+source\filter\WriterFilterDetection.cxx
+source\ooxml\Handler.cxx
+source\ooxml\OOXMLBinaryObjectReference.cxx
+source\ooxml\OOXMLDocumentImpl.cxx
+source\ooxml\OOXMLFactory.cxx
+source\ooxml\OOXMLFastContextHandler.cxx
+source\ooxml\OOXMLFastDocumentHandler.cxx
+source\ooxml\OOXMLFastTokenHandler.cxx
+source\ooxml\OOXMLParserState.cxx
+source\ooxml\OOXMLPropertySetImpl.cxx
+source\ooxml\OOXMLStreamImpl.cxx
+source\resourcemodel\Fraction.cxx
+source\resourcemodel\LoggedResources.cxx
+source\resourcemodel\Protocol.cxx
+source\resourcemodel\resourcemodel.cxx
+source\resourcemodel\ResourceModelHelper.cxx
+source\resourcemodel\TagLogger.cxx
+source\resourcemodel\util.cxx
+source\resourcemodel\WW8Analyzer.cxx
+source\resourcemodel\XPathLogger.cxx
+source\rtftok\RTFParseException.cxx
+unocomponent\component.cxx
+unocomponent\debugservices\doctok\DocTokAnalyzeService.cxx
+unocomponent\debugservices\doctok\DocTokTestService.cxx
+unocomponent\debugservices\ooxml\OOXMLAnalyzeService.cxx
+unocomponent\debugservices\ooxml\OOXMLTestService.cxx
+unocomponent\debugservices\rtftok\ScannerTestService.cxx
+unocomponent\debugservices\rtftok\XMLScanner.cxx
+
+Header Files:
+inc\WriterFilterDllApi.hxx
+inc\dmapper\DomainMapper.hxx
+inc\doctok\WW8Document.hxx
+inc\ooxml\OOXMLDocument.hxx
+inc\resourcemodel\exceptions.hxx
+inc\resourcemodel\Fraction.hxx
+inc\resourcemodel\LoggedResources.hxx
+inc\resourcemodel\OutputWithDepth.hxx
+inc\resourcemodel\Protocol.hxx
+inc\resourcemodel\QNameToString.hxx
+inc\resourcemodel\ResourceModelHelper.hxx
+inc\resourcemodel\SubSequence.hxx
+inc\resourcemodel\TableData.hxx
+inc\resourcemodel\TableManager.hxx
+inc\resourcemodel\TagLogger.hxx
+inc\resourcemodel\util.hxx
+inc\resourcemodel\WW8ResourceModel.hxx
+inc\resourcemodel\XPathLogger.hxx
+inc\rtftok\RTFInputSource.hxx
+inc\rtftok\RTFParseException.hxx
+inc\rtftok\RTFScanner.hxx
+inc\rtftok\RTFScannerHandler.hxx
+qa\cppunittests\odiapi\ExternalViewLogger.hxx
+qa\cppunittests\odiapi\FileLoggerImpl.hxx
+source\dmapper\BorderHandler.hxx
+source\dmapper\CellColorHandler.hxx
+source\dmapper\CellMarginHandler.hxx
+source\dmapper\ConversionHelper.hxx
+source\dmapper\dmapperLoggers.hxx
+source\dmapper\DomainMapperTableHandler.hxx
+source\dmapper\DomainMapperTableManager.hxx
+source\dmapper\DomainMapper_Impl.hxx
+source\dmapper\FFDataHandler.hxx
+source\dmapper\FieldTypes.hxx
+source\dmapper\FontTable.hxx
+source\dmapper\FormControlHelper.hxx
+source\dmapper\GraphicHelpers.hxx
+source\dmapper\GraphicImport.hxx
+source\dmapper\MeasureHandler.hxx
+source\dmapper\ModelEventListener.hxx
+source\dmapper\NumberingManager.hxx
+source\dmapper\OLEHandler.hxx
+source\dmapper\PageBordersHandler.hxx
+source\dmapper\PropertyIds.hxx
+source\dmapper\PropertyMap.hxx
+source\dmapper\PropertyMapHelper.hxx
+source\dmapper\SectionColumnHandler.hxx
+source\dmapper\SettingsTable.hxx
+source\dmapper\StyleSheetTable.hxx
+source\dmapper\TablePropertiesHandler.hxx
+source\dmapper\TblStylePrHandler.hxx
+source\dmapper\TDefTableHandler.hxx
+source\dmapper\ThemeTable.hxx
+source\dmapper\WrapPolygonHandler.hxx
+source\doctok\Dff.hxx
+source\doctok\doctokLoggers.hxx
+source\doctok\PLCF.hxx
+source\doctok\WW8BinTable.hxx
+source\doctok\WW8BinTableImpl.hxx
+source\doctok\WW8Clx.hxx
+source\doctok\WW8CpAndFc.hxx
+source\doctok\WW8DocumentImpl.hxx
+source\doctok\WW8FKP.hxx
+source\doctok\WW8FKPImpl.hxx
+source\doctok\WW8OutputWithDepth.hxx
+source\doctok\WW8PieceTable.hxx
+source\doctok\WW8PieceTableImpl.hxx
+source\doctok\WW8PropertySetImpl.hxx
+source\doctok\WW8ResourceModelImpl.hxx
+source\doctok\WW8StreamImpl.hxx
+source\doctok\WW8StructBase.hxx
+source\doctok\WW8Sttbf.hxx
+source\doctok\XNoteHelper.hxx
+source\doctok\XNoteHelperImpl.hxx
+source\filter\RtfFilter.hxx
+source\filter\WriterFilter.hxx
+source\filter\WriterFilterDetection.hxx
+source\ooxml\Handler.hxx
+source\ooxml\OOXMLBinaryObjectReference.hxx
+source\ooxml\OOXMLDocumentImpl.hxx
+source\ooxml\OOXMLFactory.hxx
+source\ooxml\OOXMLFastContextHandler.hxx
+source\ooxml\OOXMLFastDocumentHandler.hxx
+source\ooxml\OOXMLFastHelper.hxx
+source\ooxml\OOXMLFastTokenHandler.hxx
+source\ooxml\ooxmlLoggers.hxx
+source\ooxml\OOXMLParserState.hxx
+source\ooxml\OOXMLPropertySet.hxx
+source\ooxml\OOXMLPropertySetImpl.hxx
+source\ooxml\OOXMLStreamImpl.hxx
+source\ooxml\RefAndPointer.hxx
+source\resourcemodel\resourcemodel.hxx
+source\resourcemodel\WW8Analyzer.hxx
+source\rtftok\FlexLexer.h
+unocomponent\debugservices\doctok\DocTokAnalyzeService.hxx
+unocomponent\debugservices\doctok\DocTokTestService.hxx
+unocomponent\debugservices\ooxml\OOXMLAnalyzeService.hxx
+unocomponent\debugservices\ooxml\OOXMLTestService.hxx
+unocomponent\debugservices\rtftok\ScannerTestService.hxx
+unocomponent\debugservices\rtftok\XMLScanner.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\writerfilter.mk
+
+qa\complex\ooxml\makefile.mk
+	TARGET=PropertyValues
+	PRJNAME=$(TARGET)
+
+qa\cppunittests\doctok\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=test-doctok
+
+qa\cppunittests\odiapi\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=test-odiapi
+
+qa\cppunittests\qname\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=test-qname
+
+qa\cppunittests\sl\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=test-od_sl
+
+qa\cppunittests\xxml\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=test-xxml
+
+source\dmapper\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=dmapper
+	SLOFILES=
+	$(SLO)$/BorderHandler.obj
+	$(SLO)$/CellColorHandler.obj
+	$(SLO)$/CellMarginHandler.obj
+	$(SLO)$/ConversionHelper.obj
+	$(SLO)$/DomainMapper.obj
+	$(SLO)$/DomainMapperTableHandler.obj
+	$(SLO)$/DomainMapperTableManager.obj
+	$(SLO)$/DomainMapper_Impl.obj
+	$(SLO)$/FFDataHandler.obj
+	$(SLO)$/FontTable.obj
+	$(SLO)$/FormControlHelper.obj
+	$(SLO)$/GraphicHelpers.obj
+	$(SLO)$/GraphicImport.obj
+	$(SLO)$/MeasureHandler.obj
+	$(SLO)$/ModelEventListener.obj
+	$(SLO)$/NumberingManager.obj
+	$(SLO)$/OLEHandler.obj
+	$(SLO)$/PageBordersHandler.obj
+	$(SLO)$/PropertyIds.obj
+	$(SLO)$/PropertyMap.obj
+	$(SLO)$/PropertyMapHelper.obj
+	$(SLO)$/SectionColumnHandler.obj
+	$(SLO)$/SettingsTable.obj
+	$(SLO)$/StyleSheetTable.obj
+	$(SLO)$/TDefTableHandler.obj
+	$(SLO)$/TablePropertiesHandler.obj
+	$(SLO)$/TblStylePrHandler.obj
+	$(SLO)$/ThemeTable.obj
+	$(SLO)$/WrapPolygonHandler.obj
+	
+
+source\doctok\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=doctok
+	SLOFILES=
+	$(SLO)$/WW8Annotation.obj
+	$(SLO)$/WW8OutputWithDepth.obj
+	$(SLO)$/WW8Text.obj
+	$(SLO)$/DffImpl.obj
+	$(SLO)$/Dff.obj
+	$(SLO)$/WW8Picture.obj
+	$(SLO)$/WW8Sttbf.obj
+	$(SLO)$/WW8Table.obj
+	$(SLO)$/WW8StyleSheet.obj
+	$(SLO)$/WW8FontTable.obj
+	$(SLO)$/WW8LFOTable.obj
+	$(SLO)$/WW8ListTable.obj
+	$(SLO)$/resources.obj
+	$(SLO)$/WW8CpAndFc.obj
+	$(SLO)$/WW8StructBase.obj
+	$(SLO)$/WW8Clx.obj
+	$(SLO)$/WW8FKPImpl.obj
+	$(SLO)$/WW8BinTableImpl.obj
+	$(SLO)$/WW8StreamImpl.obj
+	$(SLO)$/WW8PropertySetImpl.obj
+	$(SLO)$/WW8DocumentImpl.obj
+	$(SLO)$/WW8PieceTableImpl.obj
+	$(SLO)$/WW8ResourceModelImpl.obj
+
+source\filter\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=filter
+	SLOFILES=$(SLO)$/WriterFilter.obj
+	$(SLO)$/WriterFilterDetection.obj
+	$(SLO)$/ImportFilter.obj
+	$(SLO)$/RtfFilter.obj
+
+source\ooxml\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=ooxml
+	SLOFILES=
+	$(SLOFACTORIESNAMESPACES)
+	$(SLOFASTNAMESPACES)
+	$(SLO)$/OOXMLFactory_generated.obj
+	$(SLO)$/OOXMLFactory.obj
+	$(SLO)$/OOXMLBinaryObjectReference.obj
+	$(SLO)$/OOXMLFactory_values.obj
+	$(SLO)$/OOXMLPropertySetImpl.obj
+	$(SLO)$/OOXMLParserState.obj
+	$(SLO)$/Handler.obj
+	$(SLO)$/OOXMLDocumentImpl.obj
+	$(SLO)$/OOXMLStreamImpl.obj
+	$(SLO)$/OOXMLFastDocumentHandler.obj
+	$(SLO)$/OOXMLFastContextHandler.obj
+	$(SLO)$/OOXMLFastTokenHandler.obj
+	echo$(SLOFILES)
+
+source\resourcemodel\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=resourcemodel
+	SLOFILES=
+	$(SLO)$/Fraction.obj
+	$(SLO)$/LoggedResources.obj
+	$(SLO)$/Protocol.obj
+	$(SLO)$/ResourceModelHelper.obj
+	$(SLO)$/TagLogger.obj
+	$(SLO)$/WW8Analyzer.obj
+	$(SLO)$/XPathLogger.obj
+	$(SLO)$/qnametostr.obj
+	$(SLO)$/resourcemodel.obj
+	$(SLO)$/sprmcodetostr.obj
+	$(SLO)$/util.obj
+	
+
+source\rtftok\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=rtftok
+	SLOFILES=$(SLO)$/RTFScanner.obj$(SLO)$/RTFParseException.obj
+
+unocomponent\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=wfltuno
+	TARGET=writerfilter.uno
+	SLOFILES=$(SLO)$/component.obj
+
+unocomponent\debugservices\doctok\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=debugservices_doctok
+	SLOFILES=
+	$(SLO)$/DocTokTestService.obj
+	$(SLO)$/DocTokAnalyzeService.obj
+
+unocomponent\debugservices\ooxml\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=debugservices_ooxml
+	SLOFILES=
+	$(SLO)$/OOXMLTestService.obj
+	$(SLO)$/OOXMLAnalyzeService.obj
+
+unocomponent\debugservices\rtftok\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=debugservices_rtftok
+	SLOFILES=
+	$(SLO)$/ScannerTestService.obj
+	$(SLO)$/XMLScanner.obj
+
+util\makefile.mk
+	PRJNAME=writerfilter
+	TARGET=wfilt
+	TARGET=writerfilter

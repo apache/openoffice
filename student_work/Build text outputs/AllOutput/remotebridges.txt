@@ -1,0 +1,61 @@
+remotebridges
+=============
+
+Entering /cygdrive/c/steve/testarea/main/remotebridges/source/unourl_resolver
+
+mkout -- version: 1.8
+cp uuresolver.xml ../../wntmsci12.pro/misc/uuresolver.xml
+Making:    all_uuresolver.uno.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/uuresolver.uno_version.h/ > ../../wntmsci12.pro/misc/uuresolver.uno_version.c
+Compiling: remotebridges/wntmsci12.pro/misc/uuresolver.uno_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/uuresolver.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/uuresolver.uno_version.obj ../../wntmsci12.pro/misc/uuresolver.uno_version.c
+uuresolver.uno_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk05fPoE > ../../wntmsci12.pro/misc/s_uuresolver.uno_version.dpcc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/cppumaker @C:/cygwin/tmp/mksRYnff && C:/cygwin/bin/touch.exe ../../wntmsci12.pro/inc/uuresolver.uno_headergen.done
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rdbmaker -BUCR -O../../wntmsci12.pro/bin/uuresolver.rdb @C:/cygwin/tmp/mkvMhT3j
+Compiling: remotebridges/source/unourl_resolver/unourl_resolver.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/uuresolver.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/unourl_resolver.obj C:/steve/testarea/main/remotebridges/source/unourl_resolver/unourl_resolver.cxx 
+unourl_resolver.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk7CjEAV > ../../wntmsci12.pro/misc/s_unourl_resolver.dpcc
+Making:    uuresolver.uno.lib
+lib   /OUT:../../wntmsci12.pro/slb/uuresolver.uno.lib @C:/cygwin/tmp/mk02mvSn
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/unourl_resolver.obj 
+cat C:/steve/TestArea/main/solenv/src/unloadablecomponent.map | awk -f C:/steve/TestArea/main/solenv/bin/getcsym.awk > ../../wntmsci12.pro/misc/unloadablecomponent_uuresolver.uno.dxp
+Making:    module definition file uuresolver.uno.def
+cat ../../wntmsci12.pro/misc/unloadablecomponent_uuresolver.uno.dxp >> ../../wntmsci12.pro/misc/uuresolver.uno.def.tmpfile
+Making:    iuuresolver.uno.lib
+lib -machine:IX86 @C:/cygwin/tmp/mk9sk6Ls
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/iuuresolver.uno.lib -def:../../wntmsci12.pro/misc/uuresolver.uno.def 
+   Creating library ../../wntmsci12.pro/lib/iuuresolver.uno.lib and object ../../wntmsci12.pro/lib/iuuresolver.uno.exp
+Making:    uuresolver.uno.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/uuresolver.uno -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/uuresolver.uno_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/uuresolver.uno_def.res > ../../wntmsci12.pro/misc/uuresolver.uno.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mkEcAthL
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/uuresolver.uno.dll -map:../../wntmsci12.pro/misc/uuresolver.uno.map ../../wntmsci12.pro/lib/iuuresolver.uno.exp ../../wntmsci12.pro/slo/uuresolver.uno_version.obj ../../wntmsci12.pro/slb/uuresolver.uno.lib isal.lib icppu.lib icppuhelper.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/uuresolver.uno.res 
+linking ../../wntmsci12.pro/bin/uuresolver.uno.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/uuresolver.uno.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/uuresolver.uno.dll.manifest -outputresource:../../wntmsci12.pro/bin/uuresolver.uno.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/uuresolver.uno.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/uuresolver.uno.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/uuresolver.uno.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/uuresolver.uno.dll.tmanifest ; fi
+Making:    all_uuresolver.uno.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/uuresolver.uno.dll' -o ../../wntmsci12.pro/misc/uuresolver.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt uuresolver.component
+remotebridges deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/remotebridges/build.lst
+COPY: ../wntmsci12.pro/bin/uuresolver.uno.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/uuresolver.uno.dll
+COPY: ../wntmsci12.pro/misc/uuresolver.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/uuresolver.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/remotebridges/deliver.log
+Module 'remotebridges' delivered successfully. 3 files copied, 2 files unchanged
+
+=============

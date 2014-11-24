@@ -1,0 +1,426 @@
+Name:
+slideshow
+
+Dependencies:
+tools sal cppu vcl comphelper cppuhelper offuh cppcanvas basegfx svtools unotools toolkit animations avmedia LIBXSLT:libxslt NULL
+
+Build Rules:
+..\%__SRC%\bin\OGLTrans.uno.dll %_DEST%\bin%_EXT%\OGLTrans.uno.dll
+..\%__SRC%\bin\slidesho*.dll %_DEST%\bin%_EXT%\slidesho*.dll
+..\%__SRC%\bin\*.rdb %_DEST%\bin%_EXT%\*.rdb
+..\%__SRC%\lib\slideshow.uno.so %_DEST%\lib%_EXT%\slideshow.uno.so
+..\%__SRC%\lib\OGLTrans.uno.so %_DEST%\lib%_EXT%\OGLTrans.uno.so
+..\%__SRC%\lib\*.dylib %_DEST%\lib%_EXT%\*.dylib
+..\%__SRC%\misc\ogltrans.component %_DEST%\xml%_EXT%\ogltrans.component
+..\%__SRC%\misc\slideshow.component %_DEST%\xml%_EXT%\slideshow.component
+
+Source Files:
+inc\pch\precompiled_slideshow.cxx
+source\engine\activitiesqueue.cxx
+source\engine\animatedsprite.cxx
+source\engine\animationfactory.cxx
+source\engine\attributemap.cxx
+source\engine\color.cxx
+source\engine\debug.cxx
+source\engine\delayevent.cxx
+source\engine\effectrewinder.cxx
+source\engine\eventmultiplexer.cxx
+source\engine\eventqueue.cxx
+source\engine\expressionnodefactory.cxx
+source\engine\rehearsetimingsactivity.cxx
+source\engine\screenupdater.cxx
+source\engine\shapeattributelayer.cxx
+source\engine\shapesubset.cxx
+source\engine\slidebitmap.cxx
+source\engine\slideshowcontext.cxx
+source\engine\slideshowimpl.cxx
+source\engine\slideview.cxx
+source\engine\smilfunctionparser.cxx
+source\engine\soundplayer.cxx
+source\engine\sp_debug.cxx
+source\engine\tools.cxx
+source\engine\unoviewcontainer.cxx
+source\engine\usereventqueue.cxx
+source\engine\waitsymbol.cxx
+source\engine\wakeupevent.cxx
+source\engine\activities\activitiesfactory.cxx
+source\engine\activities\activitybase.cxx
+source\engine\activities\continuousactivitybase.cxx
+source\engine\activities\continuouskeytimeactivitybase.cxx
+source\engine\activities\discreteactivitybase.cxx
+source\engine\activities\simplecontinuousactivitybase.cxx
+source\engine\animationnodes\animationaudionode.cxx
+source\engine\animationnodes\animationbasenode.cxx
+source\engine\animationnodes\animationcolornode.cxx
+source\engine\animationnodes\animationcommandnode.cxx
+source\engine\animationnodes\animationnodefactory.cxx
+source\engine\animationnodes\animationpathmotionnode.cxx
+source\engine\animationnodes\animationsetnode.cxx
+source\engine\animationnodes\animationtransformnode.cxx
+source\engine\animationnodes\animationtransitionfilternode.cxx
+source\engine\animationnodes\basecontainernode.cxx
+source\engine\animationnodes\basenode.cxx
+source\engine\animationnodes\generateevent.cxx
+source\engine\animationnodes\nodetools.cxx
+source\engine\animationnodes\paralleltimecontainer.cxx
+source\engine\animationnodes\propertyanimationnode.cxx
+source\engine\animationnodes\sequentialtimecontainer.cxx
+source\engine\OGLTrans\OGLTrans_Shaders.cxx
+source\engine\OGLTrans\OGLTrans_TransitionerImpl.cxx
+source\engine\OGLTrans\OGLTrans_TransitionImpl.cxx
+source\engine\shapes\appletshape.cxx
+source\engine\shapes\backgroundshape.cxx
+source\engine\shapes\drawinglayeranimation.cxx
+source\engine\shapes\drawshape.cxx
+source\engine\shapes\drawshapesubsetting.cxx
+source\engine\shapes\externalshapebase.cxx
+source\engine\shapes\gdimtftools.cxx
+source\engine\shapes\intrinsicanimationactivity.cxx
+source\engine\shapes\mediashape.cxx
+source\engine\shapes\shapeimporter.cxx
+source\engine\shapes\viewappletshape.cxx
+source\engine\shapes\viewbackgroundshape.cxx
+source\engine\shapes\viewmediashape.cxx
+source\engine\shapes\viewshape.cxx
+source\engine\slide\layer.cxx
+source\engine\slide\layermanager.cxx
+source\engine\slide\shapemanagerimpl.cxx
+source\engine\slide\slideanimations.cxx
+source\engine\slide\slideimpl.cxx
+source\engine\slide\userpaintoverlay.cxx
+source\engine\transitions\barndoorwipe.cxx
+source\engine\transitions\barwipepolypolygon.cxx
+source\engine\transitions\boxwipe.cxx
+source\engine\transitions\checkerboardwipe.cxx
+source\engine\transitions\clippingfunctor.cxx
+source\engine\transitions\clockwipe.cxx
+source\engine\transitions\combtransition.cxx
+source\engine\transitions\doublediamondwipe.cxx
+source\engine\transitions\ellipsewipe.cxx
+source\engine\transitions\fanwipe.cxx
+source\engine\transitions\figurewipe.cxx
+source\engine\transitions\fourboxwipe.cxx
+source\engine\transitions\iriswipe.cxx
+source\engine\transitions\parametricpolypolygonfactory.cxx
+source\engine\transitions\pinwheelwipe.cxx
+source\engine\transitions\randomwipe.cxx
+source\engine\transitions\shapetransitionfactory.cxx
+source\engine\transitions\slidechangebase.cxx
+source\engine\transitions\slidetransitionfactory.cxx
+source\engine\transitions\snakewipe.cxx
+source\engine\transitions\spiralwipe.cxx
+source\engine\transitions\sweepwipe.cxx
+source\engine\transitions\transitionfactorytab.cxx
+source\engine\transitions\transitiontools.cxx
+source\engine\transitions\veewipe.cxx
+source\engine\transitions\waterfallwipe.cxx
+source\engine\transitions\zigzagwipe.cxx
+test\demoshow.cxx
+test\slidetest.cxx
+test\testshape.cxx
+test\testview.cxx
+test\views.cxx
+
+Header Files:
+inc\pch\precompiled_slideshow.hxx
+source\engine\effectrewinder.hxx
+source\engine\rehearsetimingsactivity.hxx
+source\engine\waitsymbol.hxx
+source\engine\activities\accumulation.hxx
+source\engine\activities\activitybase.hxx
+source\engine\activities\activityparameters.hxx
+source\engine\activities\continuousactivitybase.hxx
+source\engine\activities\continuouskeytimeactivitybase.hxx
+source\engine\activities\discreteactivitybase.hxx
+source\engine\activities\interpolation.hxx
+source\engine\activities\simplecontinuousactivitybase.hxx
+source\engine\animationnodes\animationaudionode.hxx
+source\engine\animationnodes\animationbasenode.hxx
+source\engine\animationnodes\animationcolornode.hxx
+source\engine\animationnodes\animationcommandnode.hxx
+source\engine\animationnodes\animationpathmotionnode.hxx
+source\engine\animationnodes\animationsetnode.hxx
+source\engine\animationnodes\animationtransformnode.hxx
+source\engine\animationnodes\animationtransitionfilternode.hxx
+source\engine\animationnodes\basecontainernode.hxx
+source\engine\animationnodes\basenode.hxx
+source\engine\animationnodes\generateevent.hxx
+source\engine\animationnodes\nodetools.hxx
+source\engine\animationnodes\paralleltimecontainer.hxx
+source\engine\animationnodes\propertyanimationnode.hxx
+source\engine\animationnodes\sequentialtimecontainer.hxx
+source\engine\animationnodes\setactivity.hxx
+source\engine\OGLTrans\OGLTrans_Shaders.hxx
+source\engine\OGLTrans\OGLTrans_TransitionImpl.hxx
+source\engine\shapes\appletshape.hxx
+source\engine\shapes\backgroundshape.hxx
+source\engine\shapes\drawinglayeranimation.hxx
+source\engine\shapes\drawshape.hxx
+source\engine\shapes\drawshapesubsetting.hxx
+source\engine\shapes\externalshapebase.hxx
+source\engine\shapes\gdimtftools.hxx
+source\engine\shapes\intrinsicanimationactivity.hxx
+source\engine\shapes\mediashape.hxx
+source\engine\shapes\viewappletshape.hxx
+source\engine\shapes\viewbackgroundshape.hxx
+source\engine\shapes\viewmediashape.hxx
+source\engine\shapes\viewshape.hxx
+source\engine\slide\layer.hxx
+source\engine\slide\layermanager.hxx
+source\engine\slide\shapemanagerimpl.hxx
+source\engine\slide\slideanimations.hxx
+source\engine\slide\userpaintoverlay.hxx
+source\engine\transitions\barndoorwipe.hxx
+source\engine\transitions\barwipepolypolygon.hxx
+source\engine\transitions\boxwipe.hxx
+source\engine\transitions\checkerboardwipe.hxx
+source\engine\transitions\clippingfunctor.hxx
+source\engine\transitions\clockwipe.hxx
+source\engine\transitions\combtransition.hxx
+source\engine\transitions\doublediamondwipe.hxx
+source\engine\transitions\ellipsewipe.hxx
+source\engine\transitions\fanwipe.hxx
+source\engine\transitions\figurewipe.hxx
+source\engine\transitions\fourboxwipe.hxx
+source\engine\transitions\iriswipe.hxx
+source\engine\transitions\parametricpolypolygon.hxx
+source\engine\transitions\parametricpolypolygonfactory.hxx
+source\engine\transitions\pinwheelwipe.hxx
+source\engine\transitions\randomwipe.hxx
+source\engine\transitions\slidechangebase.hxx
+source\engine\transitions\snakewipe.hxx
+source\engine\transitions\spiralwipe.hxx
+source\engine\transitions\sweepwipe.hxx
+source\engine\transitions\transitiontools.hxx
+source\engine\transitions\veewipe.hxx
+source\engine\transitions\waterfallwipe.hxx
+source\engine\transitions\zigzagwipe.hxx
+source\inc\activitiesfactory.hxx
+source\inc\activitiesqueue.hxx
+source\inc\activity.hxx
+source\inc\animatableshape.hxx
+source\inc\animatedsprite.hxx
+source\inc\animation.hxx
+source\inc\animationactivity.hxx
+source\inc\animationeventhandler.hxx
+source\inc\animationfactory.hxx
+source\inc\animationfunction.hxx
+source\inc\animationnode.hxx
+source\inc\animationnodefactory.hxx
+source\inc\attributableshape.hxx
+source\inc\attributemap.hxx
+source\inc\boolanimation.hxx
+source\inc\coloranimation.hxx
+source\inc\cursormanager.hxx
+source\inc\debug.hxx
+source\inc\delayevent.hxx
+source\inc\disposable.hxx
+source\inc\doctreenode.hxx
+source\inc\doctreenodesupplier.hxx
+source\inc\enumanimation.hxx
+source\inc\event.hxx
+source\inc\eventhandler.hxx
+source\inc\eventmultiplexer.hxx
+source\inc\eventqueue.hxx
+source\inc\expressionnode.hxx
+source\inc\expressionnodefactory.hxx
+source\inc\externalmediashape.hxx
+source\inc\framerate.hxx
+source\inc\hslcolor.hxx
+source\inc\hslcoloranimation.hxx
+source\inc\hyperlinkarea.hxx
+source\inc\hyperlinkhandler.hxx
+source\inc\interruptabledelayevent.hxx
+source\inc\intrinsicanimationeventhandler.hxx
+source\inc\listenercontainer.hxx
+source\inc\listenercontainerimpl.hxx
+source\inc\mouseeventhandler.hxx
+source\inc\numberanimation.hxx
+source\inc\pairanimation.hxx
+source\inc\pauseeventhandler.hxx
+source\inc\rgbcolor.hxx
+source\inc\screenupdater.hxx
+source\inc\shape.hxx
+source\inc\shapeattributelayer.hxx
+source\inc\shapeattributelayerholder.hxx
+source\inc\shapecursoreventhandler.hxx
+source\inc\shapeimporter.hxx
+source\inc\shapelistenereventhandler.hxx
+source\inc\shapemanager.hxx
+source\inc\shapemaps.hxx
+source\inc\shapesubset.hxx
+source\inc\slide.hxx
+source\inc\slidebitmap.hxx
+source\inc\slideshowcontext.hxx
+source\inc\slideshowexceptions.hxx
+source\inc\slideview.hxx
+source\inc\smilfunctionparser.hxx
+source\inc\soundplayer.hxx
+source\inc\state.hxx
+source\inc\stringanimation.hxx
+source\inc\subsettableshapemanager.hxx
+source\inc\tools.hxx
+source\inc\transitionfactory.hxx
+source\inc\transitioninfo.hxx
+source\inc\unoview.hxx
+source\inc\unoviewcontainer.hxx
+source\inc\usereventqueue.hxx
+source\inc\userpainteventhandler.hxx
+source\inc\view.hxx
+source\inc\vieweventhandler.hxx
+source\inc\viewlayer.hxx
+source\inc\viewrepainthandler.hxx
+source\inc\viewupdate.hxx
+source\inc\wakeupevent.hxx
+test\tests.hxx
+
+Patch Files:
+
+Makefiles:
+
+inc\makefile.mk
+	PRJNAME=slideshow
+	TARGET=inc
+
+source\engine\makefile.mk
+	PRJNAME=slideshow
+	TARGET=engine
+	SLOFILES=$(SLO)$/activitiesqueue.obj
+	$(SLO)$/animatedsprite.obj
+	$(SLO)$/animationfactory.obj
+	$(SLO)$/attributemap.obj
+	$(SLO)$/color.obj
+	$(SLO)$/delayevent.obj
+	$(SLO)$/effectrewinder.obj
+	$(SLO)$/eventmultiplexer.obj
+	$(SLO)$/eventqueue.obj
+	$(SLO)$/expressionnodefactory.obj
+	$(SLO)$/rehearsetimingsactivity.obj
+	$(SLO)$/screenupdater.obj
+	$(SLO)$/shapeattributelayer.obj
+	$(SLO)$/shapesubset.obj
+	$(SLO)$/slidebitmap.obj
+	$(SLO)$/slideshowcontext.obj
+	$(SLO)$/slideshowimpl.obj
+	$(SLO)$/slideview.obj
+	$(SLO)$/smilfunctionparser.obj
+	$(SLO)$/soundplayer.obj
+	$(SLO)$/tools.obj
+	$(SLO)$/unoviewcontainer.obj
+	$(SLO)$/usereventqueue.obj
+	$(SLO)$/waitsymbol.obj
+	$(SLO)$/wakeupevent.obj
+	$(SLO)$/debug.obj
+	SLOFILES+=$(SLO)$/sp_debug.obj
+
+source\engine\activities\makefile.mk
+	PRJNAME=slideshow
+	TARGET=activities
+	SLOFILES=$(SLO)$/activitybase.obj
+	$(SLO)$/activitiesfactory.obj
+	$(SLO)$/continuousactivitybase.obj
+	$(SLO)$/continuouskeytimeactivitybase.obj
+	$(SLO)$/discreteactivitybase.obj
+	$(SLO)$/simplecontinuousactivitybase.obj
+
+source\engine\animationnodes\makefile.mk
+	PRJNAME=slideshow
+	TARGET=animationnodes
+	SLOFILES=$(SLO)$/animationaudionode.obj
+	$(SLO)$/animationcommandnode.obj
+	$(SLO)$/animationbasenode.obj
+	$(SLO)$/animationcolornode.obj
+	$(SLO)$/animationnodefactory.obj
+	$(SLO)$/animationpathmotionnode.obj
+	$(SLO)$/animationsetnode.obj
+	$(SLO)$/animationtransformnode.obj
+	$(SLO)$/animationtransitionfilternode.obj
+	$(SLO)$/basecontainernode.obj
+	$(SLO)$/basenode.obj
+	$(SLO)$/nodetools.obj
+	$(SLO)$/paralleltimecontainer.obj
+	$(SLO)$/propertyanimationnode.obj
+	$(SLO)$/sequentialtimecontainer.obj
+	$(SLO)$/generateevent.obj
+
+source\engine\OGLTrans\makefile.mk
+	PRJNAME=slideshow
+	TARGET=OGLTrans
+	SLOFILES=
+	$(SLO)$/OGLTrans_TransitionImpl.obj
+	$(SLO)$/OGLTrans_Shaders.obj
+	$(SLO)$/OGLTrans_TransitionerImpl.obj
+
+source\engine\shapes\makefile.mk
+	PRJNAME=slideshow
+	TARGET=shapes
+	SLOFILES=$(SLO)$/appletshape.obj
+	$(SLO)$/backgroundshape.obj
+	$(SLO)$/drawinglayeranimation.obj
+	$(SLO)$/drawshape.obj
+	$(SLO)$/drawshapesubsetting.obj
+	$(SLO)$/externalshapebase.obj
+	$(SLO)$/gdimtftools.obj
+	$(SLO)$/intrinsicanimationactivity.obj
+	$(SLO)$/mediashape.obj
+	$(SLO)$/shapeimporter.obj
+	$(SLO)$/viewappletshape.obj
+	$(SLO)$/viewbackgroundshape.obj
+	$(SLO)$/viewmediashape.obj
+	$(SLO)$/viewshape.obj
+
+source\engine\slide\makefile.mk
+	PRJNAME=slideshow
+	TARGET=slide
+	SLOFILES=$(SLO)$/layer.obj
+	$(SLO)$/layermanager.obj
+	$(SLO)$/shapemanagerimpl.obj
+	$(SLO)$/slideanimations.obj
+	$(SLO)$/slideimpl.obj
+	$(SLO)$/userpaintoverlay.obj
+
+source\engine\transitions\makefile.mk
+	PRJNAME=slideshow
+	TARGET=transitions
+	SLOFILES=
+	$(SLO)$/barwipepolypolygon.obj
+	$(SLO)$/boxwipe.obj
+	$(SLO)$/clippingfunctor.obj
+	$(SLO)$/combtransition.obj
+	$(SLO)$/fourboxwipe.obj
+	$(SLO)$/barndoorwipe.obj
+	$(SLO)$/iriswipe.obj
+	$(SLO)$/veewipe.obj
+	$(SLO)$/ellipsewipe.obj
+	$(SLO)$/checkerboardwipe.obj
+	$(SLO)$/randomwipe.obj
+	$(SLO)$/waterfallwipe.obj
+	$(SLO)$/clockwipe.obj
+	$(SLO)$/fanwipe.obj
+	$(SLO)$/pinwheelwipe.obj
+	$(SLO)$/snakewipe.obj
+	$(SLO)$/spiralwipe.obj
+	$(SLO)$/sweepwipe.obj
+	$(SLO)$/figurewipe.obj
+	$(SLO)$/doublediamondwipe.obj
+	$(SLO)$/zigzagwipe.obj
+	$(SLO)$/parametricpolypolygonfactory.obj
+	$(SLO)$/shapetransitionfactory.obj
+	$(SLO)$/slidetransitionfactory.obj
+	$(SLO)$/transitionfactorytab.obj
+	$(SLO)$/transitiontools.obj
+	$(SLO)$/slidechangebase.obj
+
+test\makefile.mk
+	PRJNAME=slideshow
+	TARGET=tests
+	SLOFILES=$(SHL1OBJS)
+
+util\makefile.mk
+	PRJNAME=slideshow
+	TARGET=slideshow
+	TARGET2=slshtest
+	TARGET2=slideshowtest
+	$(TARGET2).flt
+
+util\makefile.pmk

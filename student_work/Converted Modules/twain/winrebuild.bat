@@ -1,0 +1,2 @@
+winclean.bat
+winmake.bat

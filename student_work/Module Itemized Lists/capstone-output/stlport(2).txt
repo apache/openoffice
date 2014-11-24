@@ -1,0 +1,26 @@
+Name:
+stlport
+
+Dependencies:
+SO:so_prereq solenv BOOST:boost NULL
+
+Build Rules:
+mkdir: %_DEST%\inc%_EXT%\stl
+..\%__SRC%\inc\stlport\* %_DEST%\inc%_EXT%\stl\*
+..\systemstlguards\*.h %_DEST%\inc%_EXT%\stl\*.h
+
+
+Source Files:
+
+Header Files:
+systemstlguards\postextstl.h
+systemstlguards\preextstl.h
+
+Patch Files:
+dos_lineends.patch
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=so_stlport
+	TARGET=so_stlport

@@ -1,0 +1,42 @@
+stlport
+=============
+
+Entering /cygdrive/c/steve/testarea/main/stlport
+
+mkout -- version: 1.8
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/functional ./wntmsci12.pro/inc/stlport/functional
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/hash_map ./wntmsci12.pro/inc/stlport/hash_map
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/hash_set ./wntmsci12.pro/inc/stlport/hash_set
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/list ./wntmsci12.pro/inc/stlport/list
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/map ./wntmsci12.pro/inc/stlport/map
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/numeric ./wntmsci12.pro/inc/stlport/numeric
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/set ./wntmsci12.pro/inc/stlport/set
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/slist ./wntmsci12.pro/inc/stlport/slist
+mkdir.exe -p ./wntmsci12.pro/inc/stlport/
+cp systemstl/vector ./wntmsci12.pro/inc/stlport/vector
+stlport deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stlport/build.lst
+COPY: ../wntmsci12.pro/inc/stlport/functional -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/functional
+COPY: ../wntmsci12.pro/inc/stlport/hash_map -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/hash_map
+COPY: ../wntmsci12.pro/inc/stlport/hash_set -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/hash_set
+COPY: ../wntmsci12.pro/inc/stlport/list -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/list
+COPY: ../wntmsci12.pro/inc/stlport/map -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/map
+COPY: ../wntmsci12.pro/inc/stlport/numeric -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/numeric
+COPY: ../wntmsci12.pro/inc/stlport/set -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/set
+COPY: ../wntmsci12.pro/inc/stlport/slist -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/slist
+COPY: ../wntmsci12.pro/inc/stlport/vector -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/vector
+COPY: ../systemstlguards/postextstl.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/postextstl.h
+COPY: ../systemstlguards/preextstl.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl/preextstl.h
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stlport/deliver.log
+Module 'stlport' delivered successfully. 12 files copied, 0 files unchanged
+
+=============

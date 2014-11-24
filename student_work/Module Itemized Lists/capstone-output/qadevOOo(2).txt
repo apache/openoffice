@@ -1,0 +1,96 @@
+Name:
+qadevOOo
+
+Dependencies:
+javaunohelper jurt ridljar unoil NULL
+
+Build Rules:
+..\%__SRC%\class\OOoRunner*.jar %_DEST%\bin%_EXT%
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=qadevOOo
+
+qa\complex\junitskeleton\makefile.mk
+	PRJNAME=sc
+	TARGET=qa_complex_junitskeleton
+
+qa\unoapi\makefile.mk
+	PRJNAME=qadevOOo
+	TARGET=qa_unoapi
+
+runner\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=$(PRJNAME)
+
+runner\base\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_base
+
+runner\basicrunner\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_basicrunner
+
+runner\basicrunner\basichelper\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_basichelper
+
+runner\complexlib\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_complexlib
+
+runner\convwatch\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_convwatch
+
+runner\graphical\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_convwatch
+
+runner\helper\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_helper
+
+runner\lib\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_lib
+
+runner\org\openoffice\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_org_openoffice
+
+runner\share\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_share
+
+runner\stats\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_stats
+
+runner\util\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_util
+
+runner\util\compare\makefile.mk
+	PRJNAME=OOoRunner
+	TARGET=runner_util_compare
+
+testdocs\backend\org\openoffice\makefile.mk
+	PRJNAME=JavaSystemBackend
+	TARGET=$(PRJNAME)
+
+testdocs\qadevlibs\source\com\sun\star\cmp\makefile.mk
+	PRJNAME=MyPersistObjectImpl
+	TARGET=MyPersistObjectImpl
+
+testdocs\qadevlibs\source\test\makefile.mk
+	PRJNAME=JobExecutor
+	TARGET=$(PRJNAME)

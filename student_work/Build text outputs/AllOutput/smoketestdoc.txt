@@ -1,0 +1,111 @@
+smoketestdoc
+=============
+
+Entering /cygdrive/c/steve/testarea/main/smoketestdoc/data
+
+mkout -- version: 1.8
+/bin/rm -f -r ../wntmsci12.pro/misc/zip
+mkdir.exe ../wntmsci12.pro/misc/zip
+cp content.xml meta.xml settings.xml styles.xml ../wntmsci12.pro/misc/zip/
+printf application/vnd.sun.xml.writer > ../wntmsci12.pro/misc/zip/mimetype
+mkdir.exe ../wntmsci12.pro/misc/zip/META-INF
+cp manifest.xml ../wntmsci12.pro/misc/zip/META-INF/
+mkdir.exe ../wntmsci12.pro/misc/zip/Basic
+cp script-lc.xml ../wntmsci12.pro/misc/zip/Basic/
+mkdir.exe ../wntmsci12.pro/misc/zip/Basic/Standard
+cp script-lb.xml Events.xml Global.xml Test_10er.xml Test_DB.xml \
+        Test_Ext.xml ../wntmsci12.pro/misc/zip/Basic/Standard/
+mkdir.exe ../wntmsci12.pro/misc/zip/Dialogs
+cp dialog-lc.xml ../wntmsci12.pro/misc/zip/Dialogs/
+mkdir.exe ../wntmsci12.pro/misc/zip/Dialogs/Standard
+cp dialog-lb.xml OptionsDlg.xml ../wntmsci12.pro/misc/zip/Dialogs/Standard/
+cd ../wntmsci12.pro/misc/zip && zip -rD smoketestdoc.sxw .
+  adding: Basic/script-lc.xml (deflated 50%)
+  adding: Basic/Standard/Events.xml (deflated 55%)
+  adding: Basic/Standard/Global.xml (deflated 76%)
+  adding: Basic/Standard/script-lb.xml (deflated 54%)
+  adding: Basic/Standard/Test_10er.xml (deflated 79%)
+  adding: Basic/Standard/Test_DB.xml (deflated 66%)
+  adding: Basic/Standard/Test_Ext.xml (deflated 62%)
+  adding: content.xml (deflated 77%)
+  adding: Dialogs/dialog-lc.xml (deflated 50%)
+  adding: Dialogs/Standard/dialog-lb.xml (deflated 50%)
+  adding: Dialogs/Standard/OptionsDlg.xml (deflated 73%)
+  adding: META-INF/manifest.xml (deflated 73%)
+  adding: meta.xml (deflated 55%)
+  adding: mimetype (stored 0%)
+  adding: settings.xml (deflated 79%)
+  adding: styles.xml (deflated 76%)
+cp ../wntmsci12.pro/misc/zip/smoketestdoc.sxw ../wntmsci12.pro/bin/smoketestdoc.sxw
+
+Entering /cygdrive/c/steve/testarea/main/smoketestdoc/com/sun/star/comp/smoketest
+
+Making:    com_sun_star_comp_smoketest.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/TestExtension.dpzz
+Making:    com_sun_star_comp_smoketest.dpj
+javadeps
+
+
+mkdir.exe -p ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest
+cd ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest && zipdep.pl -r -prefix ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/ ../../../../../wntmsci12.pro/bin/TestExtension.oxt "*" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/smoketestdoc/com/sun/star/comp/smoketest/../../../../../wntmsci12.pro/misc/TestExtension.dpzz
+cat ../../../../../wntmsci12.pro/misc/TestExtension.dpzz C:/cygwin/tmp/mkV8aCgG | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest.dpz
+Making:    com_sun_star_comp_smoketest.dpj
+javadeps
+
+/bin/rm -f ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest_MANIFEST.MF
+cp C:/steve/testarea/main/smoketestdoc/com/sun/star/comp/smoketest/MANIFEST.MF ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest_MANIFEST.MF
+echo Manifest-Version: 1.0 > ../../../../../wntmsci12.pro/class/com_sun_star_comp_smoketest/META-INF/MANIFEST.MF
+echo "Solar-Version: 410m1(Build:9750)" >> ../../../../../wntmsci12.pro/class/com_sun_star_comp_smoketest/META-INF/MANIFEST.MF
+cat ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest_MANIFEST.MF >> ../../../../../wntmsci12.pro/class/com_sun_star_comp_smoketest/META-INF/MANIFEST.MF
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/idlc -O../../../../../wntmsci12.pro/misc -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/idl -cid -we TestExtension.idl
+Compiling: TestExtension.idl
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/regmerge ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/TestExtension.rdb /UCR ../../../../../wntmsci12.pro/misc/TestExtension.urd
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/javamaker -O../../../../../wntmsci12.pro/class -BUCR -nD -XC:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/types.rdb ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/TestExtension.rdb
+javac -classpath ".;../../../../../wntmsci12.pro/class;C:/PROGRA~2/Java/JDK15~1.0_2/jre/lib/rt.jar;.;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/ridl.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/jurt.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/unoil.jar;C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/juh.jar;;C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib" -d ../../../../../wntmsci12.pro/class  @C:/cygwin/tmp/mkrn2s6O
+cd ../../../../../wntmsci12.pro/class/com_sun_star_comp_smoketest && zip  -u -rX ../TestExtension.jar META-INF/MANIFEST.MF  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+	zip warning: ../TestExtension.jar not found or empty
+  adding: META-INF/MANIFEST.MF (deflated 11%)
+cd ../../../../../wntmsci12.pro/class && zip  -u -rX TestExtension.jar .  || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: com/ (stored 0%)
+  adding: com/sun/ (stored 0%)
+  adding: com/sun/star/ (stored 0%)
+  adding: com/sun/star/comp/ (stored 0%)
+  adding: com/sun/star/comp/smoketest/ (stored 0%)
+  adding: com/sun/star/comp/smoketest/TestExtension$_TestExtension.class (deflated 47%)
+  adding: com/sun/star/comp/smoketest/TestExtension.class (deflated 50%)
+  adding: com_sun_star_comp_smoketest/ (stored 0%)
+  adding: com_sun_star_comp_smoketest/META-INF/ (stored 0%)
+  adding: com_sun_star_comp_smoketest/META-INF/MANIFEST.MF (deflated 11%)
+cp ../../../../../wntmsci12.pro/class/TestExtension.jar ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/TestExtension.jar
+cp manifest.xml ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/META-INF/manifest.xml
+Making:    TestExtension.oxt
+rebuilding zipfiles
+------------------------------ 
+cd ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest && zip  -r C:/cygwin/tmp/mkRQN3T0.TestExtension_.oxt * -x delzip  -x "*CVS*" -x "*.svn*" || ret=$?; if [[ "$ret" != "12" && "$ret" != "1" ]] ; then exit $ret ; fi && echo "Nothing to update for zip"
+  adding: META-INF/ (stored 0%)
+  adding: META-INF/manifest.xml (deflated 53%)
+  adding: TestExtension.jar (deflated 38%)
+  adding: TestExtension.rdb (deflated 90%)
+if [ -f C:/cygwin/tmp/mkRQN3T0.TestExtension_.oxt ] ; then \
+	    C:/cygwin/bin/perl -w C:/steve/TestArea/main/solenv/bin/cleanzip.pl C:/cygwin/tmp/mkRQN3T0.TestExtension_.oxt \
+	    ; fi
+cp C:/cygwin/tmp/mkRQN3T0.TestExtension_.oxt  ../../../../../wntmsci12.pro/bin/TestExtension.oxt 
+/bin/rm -f C:/cygwin/tmp/mkRQN3T0.TestExtension_.oxt
+Making:    com_sun_star_comp_smoketest.dpz
+dmake  -f makefile.mk  make_zip_deps=true ../../../../../wntmsci12.pro/misc/TestExtension.dpzz
+Making:    com_sun_star_comp_smoketest.dpj
+javadeps
+
+
+mkdir.exe -p ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest
+cd ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest && zipdep.pl -r -prefix ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest/ ../../../../../wntmsci12.pro/bin/TestExtension.oxt "*" -x "*CVS*" -x "*.svn*" >> C:/steve/testarea/main/smoketestdoc/com/sun/star/comp/smoketest/../../../../../wntmsci12.pro/misc/TestExtension.dpzz
+cat ../../../../../wntmsci12.pro/misc/TestExtension.dpzz C:/cygwin/tmp/mkQHnI6D | grep -v "CVS" | grep -v "\.svn" >> ../../../../../wntmsci12.pro/misc/com_sun_star_comp_smoketest.dpz
+smoketestdoc deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/smoketestdoc/build.lst
+COPY: ../wntmsci12.pro/bin/smoketestdoc.sxw -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/smoketestdoc.sxw
+COPY: ../wntmsci12.pro/bin/TestExtension.oxt -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/TestExtension.oxt
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/smoketestdoc/deliver.log
+Module 'smoketestdoc' delivered successfully. 3 files copied, 0 files unchanged
+
+=============

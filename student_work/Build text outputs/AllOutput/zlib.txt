@@ -1,0 +1,471 @@
+zlib
+=============
+
+Entering /cygdrive/c/steve/testarea/main/zlib
+
+mkout -- version: 1.8
+if [ -d ./wntmsci12.pro/misc/build/zlib-1.2.7 ] ; then echo "moving" && mv ./wntmsci12.pro/misc/build/zlib-1.2.7 ./wntmsci12.pro/misc/build/zlib-1.2.7_removeme ; fi
+rm -rf ./wntmsci12.pro/misc/build/zlib-1.2.7_removeme
+cd ./wntmsci12.pro/misc/build && ( bzip2 -cd C:/steve/TestArea/ext_sources/2ab442d169156f34c379c968f3f482dd-zlib-1.2.7.tar.bz2  | tar -xvf -) && C:/cygwin/bin/touch.exe so_unpacked_zlib
+zlib-1.2.7/
+zlib-1.2.7/adler32.c
+zlib-1.2.7/amiga/
+zlib-1.2.7/amiga/Makefile.pup
+zlib-1.2.7/amiga/Makefile.sas
+zlib-1.2.7/as400/
+zlib-1.2.7/as400/bndsrc
+zlib-1.2.7/as400/compile.clp
+zlib-1.2.7/as400/readme.txt
+zlib-1.2.7/as400/zlib.inc
+zlib-1.2.7/ChangeLog
+zlib-1.2.7/CMakeLists.txt
+zlib-1.2.7/compress.c
+zlib-1.2.7/configure
+zlib-1.2.7/contrib/
+zlib-1.2.7/contrib/ada/
+zlib-1.2.7/contrib/ada/buffer_demo.adb
+zlib-1.2.7/contrib/ada/mtest.adb
+zlib-1.2.7/contrib/ada/read.adb
+zlib-1.2.7/contrib/ada/readme.txt
+zlib-1.2.7/contrib/ada/test.adb
+zlib-1.2.7/contrib/ada/zlib-streams.adb
+zlib-1.2.7/contrib/ada/zlib-streams.ads
+zlib-1.2.7/contrib/ada/zlib-thin.adb
+zlib-1.2.7/contrib/ada/zlib-thin.ads
+zlib-1.2.7/contrib/ada/zlib.adb
+zlib-1.2.7/contrib/ada/zlib.ads
+zlib-1.2.7/contrib/ada/zlib.gpr
+zlib-1.2.7/contrib/amd64/
+zlib-1.2.7/contrib/amd64/amd64-match.S
+zlib-1.2.7/contrib/asm686/
+zlib-1.2.7/contrib/asm686/match.S
+zlib-1.2.7/contrib/asm686/README.686
+zlib-1.2.7/contrib/blast/
+zlib-1.2.7/contrib/blast/blast.c
+zlib-1.2.7/contrib/blast/blast.h
+zlib-1.2.7/contrib/blast/Makefile
+zlib-1.2.7/contrib/blast/README
+zlib-1.2.7/contrib/blast/test.pk
+zlib-1.2.7/contrib/blast/test.txt
+zlib-1.2.7/contrib/delphi/
+zlib-1.2.7/contrib/delphi/readme.txt
+zlib-1.2.7/contrib/delphi/ZLib.pas
+zlib-1.2.7/contrib/delphi/ZLibConst.pas
+zlib-1.2.7/contrib/delphi/zlibd32.mak
+zlib-1.2.7/contrib/dotzlib/
+zlib-1.2.7/contrib/dotzlib/DotZLib/
+zlib-1.2.7/contrib/dotzlib/DotZLib/AssemblyInfo.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/ChecksumImpl.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/CircularBuffer.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/CodecBase.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/Deflater.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/DotZLib.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/DotZLib.csproj
+zlib-1.2.7/contrib/dotzlib/DotZLib/GZipStream.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/Inflater.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib/UnitTests.cs
+zlib-1.2.7/contrib/dotzlib/DotZLib.build
+zlib-1.2.7/contrib/dotzlib/DotZLib.chm
+zlib-1.2.7/contrib/dotzlib/DotZLib.sln
+zlib-1.2.7/contrib/dotzlib/LICENSE_1_0.txt
+zlib-1.2.7/contrib/dotzlib/readme.txt
+zlib-1.2.7/contrib/gcc_gvmat64/
+zlib-1.2.7/contrib/gcc_gvmat64/gvmat64.S
+zlib-1.2.7/contrib/infback9/
+zlib-1.2.7/contrib/infback9/infback9.c
+zlib-1.2.7/contrib/infback9/infback9.h
+zlib-1.2.7/contrib/infback9/inffix9.h
+zlib-1.2.7/contrib/infback9/inflate9.h
+zlib-1.2.7/contrib/infback9/inftree9.c
+zlib-1.2.7/contrib/infback9/inftree9.h
+zlib-1.2.7/contrib/infback9/README
+zlib-1.2.7/contrib/inflate86/
+zlib-1.2.7/contrib/inflate86/inffas86.c
+zlib-1.2.7/contrib/inflate86/inffast.S
+zlib-1.2.7/contrib/iostream/
+zlib-1.2.7/contrib/iostream/test.cpp
+zlib-1.2.7/contrib/iostream/zfstream.cpp
+zlib-1.2.7/contrib/iostream/zfstream.h
+zlib-1.2.7/contrib/iostream2/
+zlib-1.2.7/contrib/iostream2/zstream.h
+zlib-1.2.7/contrib/iostream2/zstream_test.cpp
+zlib-1.2.7/contrib/iostream3/
+zlib-1.2.7/contrib/iostream3/README
+zlib-1.2.7/contrib/iostream3/test.cc
+zlib-1.2.7/contrib/iostream3/TODO
+zlib-1.2.7/contrib/iostream3/zfstream.cc
+zlib-1.2.7/contrib/iostream3/zfstream.h
+zlib-1.2.7/contrib/masmx64/
+zlib-1.2.7/contrib/masmx64/bld_ml64.bat
+zlib-1.2.7/contrib/masmx64/gvmat64.asm
+zlib-1.2.7/contrib/masmx64/inffas8664.c
+zlib-1.2.7/contrib/masmx64/inffasx64.asm
+zlib-1.2.7/contrib/masmx64/readme.txt
+zlib-1.2.7/contrib/masmx86/
+zlib-1.2.7/contrib/masmx86/bld_ml32.bat
+zlib-1.2.7/contrib/masmx86/inffas32.asm
+zlib-1.2.7/contrib/masmx86/match686.asm
+zlib-1.2.7/contrib/masmx86/readme.txt
+zlib-1.2.7/contrib/minizip/
+zlib-1.2.7/contrib/minizip/configure.ac
+zlib-1.2.7/contrib/minizip/crypt.h
+zlib-1.2.7/contrib/minizip/ioapi.c
+zlib-1.2.7/contrib/minizip/ioapi.h
+zlib-1.2.7/contrib/minizip/iowin32.c
+zlib-1.2.7/contrib/minizip/iowin32.h
+zlib-1.2.7/contrib/minizip/make_vms.com
+zlib-1.2.7/contrib/minizip/Makefile
+zlib-1.2.7/contrib/minizip/Makefile.am
+zlib-1.2.7/contrib/minizip/miniunz.c
+zlib-1.2.7/contrib/minizip/minizip.c
+zlib-1.2.7/contrib/minizip/minizip.pc.in
+zlib-1.2.7/contrib/minizip/MiniZip64_Changes.txt
+zlib-1.2.7/contrib/minizip/MiniZip64_info.txt
+zlib-1.2.7/contrib/minizip/mztools.c
+zlib-1.2.7/contrib/minizip/mztools.h
+zlib-1.2.7/contrib/minizip/unzip.c
+zlib-1.2.7/contrib/minizip/unzip.h
+zlib-1.2.7/contrib/minizip/zip.c
+zlib-1.2.7/contrib/minizip/zip.h
+zlib-1.2.7/contrib/pascal/
+zlib-1.2.7/contrib/pascal/example.pas
+zlib-1.2.7/contrib/pascal/readme.txt
+zlib-1.2.7/contrib/pascal/zlibd32.mak
+zlib-1.2.7/contrib/pascal/zlibpas.pas
+zlib-1.2.7/contrib/puff/
+zlib-1.2.7/contrib/puff/Makefile
+zlib-1.2.7/contrib/puff/puff.c
+zlib-1.2.7/contrib/puff/puff.h
+zlib-1.2.7/contrib/puff/pufftest.c
+zlib-1.2.7/contrib/puff/README
+zlib-1.2.7/contrib/puff/zeros.raw
+zlib-1.2.7/contrib/README.contrib
+zlib-1.2.7/contrib/testzlib/
+zlib-1.2.7/contrib/testzlib/testzlib.c
+zlib-1.2.7/contrib/testzlib/testzlib.txt
+zlib-1.2.7/contrib/untgz/
+zlib-1.2.7/contrib/untgz/Makefile
+zlib-1.2.7/contrib/untgz/Makefile.msc
+zlib-1.2.7/contrib/untgz/untgz.c
+zlib-1.2.7/contrib/vstudio/
+zlib-1.2.7/contrib/vstudio/readme.txt
+zlib-1.2.7/contrib/vstudio/vc10/
+zlib-1.2.7/contrib/vstudio/vc10/miniunz.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/miniunz.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/miniunz.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc10/minizip.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/minizip.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/minizip.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc10/testzlib.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/testzlib.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/testzlib.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc10/testzlibdll.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/testzlibdll.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/testzlibdll.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc10/zlib.rc
+zlib-1.2.7/contrib/vstudio/vc10/zlibstat.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/zlibstat.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/zlibstat.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc10/zlibvc.def
+zlib-1.2.7/contrib/vstudio/vc10/zlibvc.sln
+zlib-1.2.7/contrib/vstudio/vc10/zlibvc.vcxproj
+zlib-1.2.7/contrib/vstudio/vc10/zlibvc.vcxproj.filters
+zlib-1.2.7/contrib/vstudio/vc10/zlibvc.vcxproj.user
+zlib-1.2.7/contrib/vstudio/vc9/
+zlib-1.2.7/contrib/vstudio/vc9/miniunz.vcproj
+zlib-1.2.7/contrib/vstudio/vc9/minizip.vcproj
+zlib-1.2.7/contrib/vstudio/vc9/testzlib.vcproj
+zlib-1.2.7/contrib/vstudio/vc9/testzlibdll.vcproj
+zlib-1.2.7/contrib/vstudio/vc9/zlib.rc
+zlib-1.2.7/contrib/vstudio/vc9/zlibstat.vcproj
+zlib-1.2.7/contrib/vstudio/vc9/zlibvc.def
+zlib-1.2.7/contrib/vstudio/vc9/zlibvc.sln
+zlib-1.2.7/contrib/vstudio/vc9/zlibvc.vcproj
+zlib-1.2.7/crc32.c
+zlib-1.2.7/crc32.h
+zlib-1.2.7/deflate.c
+zlib-1.2.7/deflate.h
+zlib-1.2.7/doc/
+zlib-1.2.7/doc/algorithm.txt
+zlib-1.2.7/doc/rfc1950.txt
+zlib-1.2.7/doc/rfc1951.txt
+zlib-1.2.7/doc/rfc1952.txt
+zlib-1.2.7/doc/txtvsbin.txt
+zlib-1.2.7/examples/
+zlib-1.2.7/examples/enough.c
+zlib-1.2.7/examples/fitblk.c
+zlib-1.2.7/examples/gun.c
+zlib-1.2.7/examples/gzappend.c
+zlib-1.2.7/examples/gzjoin.c
+zlib-1.2.7/examples/gzlog.c
+zlib-1.2.7/examples/gzlog.h
+zlib-1.2.7/examples/README.examples
+zlib-1.2.7/examples/zlib_how.html
+zlib-1.2.7/examples/zpipe.c
+zlib-1.2.7/examples/zran.c
+zlib-1.2.7/FAQ
+zlib-1.2.7/gzclose.c
+zlib-1.2.7/gzguts.h
+zlib-1.2.7/gzlib.c
+zlib-1.2.7/gzread.c
+zlib-1.2.7/gzwrite.c
+zlib-1.2.7/INDEX
+zlib-1.2.7/infback.c
+zlib-1.2.7/inffast.c
+zlib-1.2.7/inffast.h
+zlib-1.2.7/inffixed.h
+zlib-1.2.7/inflate.c
+zlib-1.2.7/inflate.h
+zlib-1.2.7/inftrees.c
+zlib-1.2.7/inftrees.h
+zlib-1.2.7/make_vms.com
+zlib-1.2.7/Makefile
+zlib-1.2.7/Makefile.in
+zlib-1.2.7/msdos/
+zlib-1.2.7/msdos/Makefile.bor
+zlib-1.2.7/msdos/Makefile.dj2
+zlib-1.2.7/msdos/Makefile.emx
+zlib-1.2.7/msdos/Makefile.msc
+zlib-1.2.7/msdos/Makefile.tc
+zlib-1.2.7/nintendods/
+zlib-1.2.7/nintendods/Makefile
+zlib-1.2.7/nintendods/README
+zlib-1.2.7/old/
+zlib-1.2.7/old/descrip.mms
+zlib-1.2.7/old/Makefile.emx
+zlib-1.2.7/old/Makefile.riscos
+zlib-1.2.7/old/os2/
+zlib-1.2.7/old/os2/Makefile.os2
+zlib-1.2.7/old/os2/zlib.def
+zlib-1.2.7/old/README
+zlib-1.2.7/old/visual-basic.txt
+zlib-1.2.7/qnx/
+zlib-1.2.7/qnx/package.qpg
+zlib-1.2.7/README
+zlib-1.2.7/test/
+zlib-1.2.7/test/example.c
+zlib-1.2.7/test/infcover.c
+zlib-1.2.7/test/minigzip.c
+zlib-1.2.7/treebuild.xml
+zlib-1.2.7/trees.c
+zlib-1.2.7/trees.h
+zlib-1.2.7/uncompr.c
+zlib-1.2.7/watcom/
+zlib-1.2.7/watcom/watcom_f.mak
+zlib-1.2.7/watcom/watcom_l.mak
+zlib-1.2.7/win32/
+zlib-1.2.7/win32/DLL_FAQ.txt
+zlib-1.2.7/win32/Makefile.bor
+zlib-1.2.7/win32/Makefile.gcc
+zlib-1.2.7/win32/Makefile.msc
+zlib-1.2.7/win32/README-WIN32.txt
+zlib-1.2.7/win32/VisualC.txt
+zlib-1.2.7/win32/zlib.def
+zlib-1.2.7/win32/zlib1.rc
+zlib-1.2.7/zconf.h
+zlib-1.2.7/zconf.h.cmakein
+zlib-1.2.7/zconf.h.in
+zlib-1.2.7/zlib.3
+zlib-1.2.7/zlib.3.pdf
+zlib-1.2.7/zlib.h
+zlib-1.2.7/zlib.map
+zlib-1.2.7/zlib.pc.cmakein
+zlib-1.2.7/zlib.pc.in
+zlib-1.2.7/zlib2ansi
+zlib-1.2.7/zutil.c
+zlib-1.2.7/zutil.h
+make writeable...
+echo dummy > ./wntmsci12.pro/misc/build/zlib-1.2.7/makefile.mk.dummy
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/zlib-1.2.7/makefile.mk.dummy
+echo dummy > ./wntmsci12.pro/misc/build/zlib-1.2.7/makefile.mk
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/zlib-1.2.7/makefile.mk
+cd ./wntmsci12.pro/misc/build && cat ../../..//zlib-1.2.7.patch | patch --binary  -p2 && C:/cygwin/bin/touch.exe so_patched_zlib
+patching file zlib-1.2.7/makefile.mk
+sleep 2
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_patched_zlib
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_configured_zlib
+mkdir.exe ./wntmsci12.pro/misc/build/zlib-1.2.7/
+cd ./wntmsci12.pro/misc/build/zlib-1.2.7/ && dmake    && C:/cygwin/bin/touch.exe C:/steve/testarea/main/zlib/./wntmsci12.pro/misc/build/so_built_zlib
+------------------------------
+Making: ../../../../wntmsci12.pro/misc/ioapi.c
+------------------------------
+Making: ../../../../wntmsci12.pro/misc/unzip.c
+Making:    all_zlib.dpslo
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/adler32.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/adler32.obj adler32.c
+adler32.c
+adler32.c(66) : warning C4131: 'adler32' : uses old-style declarator
+adler32.c(137) : warning C4131: 'adler32_combine_' : uses old-style declarator
+adler32.c(166) : warning C4131: 'adler32_combine' : uses old-style declarator
+adler32.c(174) : warning C4131: 'adler32_combine64' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkSS3EJg > ../../../../wntmsci12.pro/misc/s_adler32.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/compress.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/compress.obj compress.c
+compress.c
+compress.c(23) : warning C4131: 'compress2' : uses old-style declarator
+compress.c(63) : warning C4131: 'compress' : uses old-style declarator
+compress.c(76) : warning C4131: 'compressBound' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk465hIw > ../../../../wntmsci12.pro/misc/s_compress.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/deflate.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/deflate.obj deflate.c
+deflate.c
+deflate.c(202) : warning C4131: 'deflateInit_' : uses old-style declarator
+deflate.c(215) : warning C4131: 'deflateInit2_' : uses old-style declarator
+deflate.c(324) : warning C4131: 'deflateSetDictionary' : uses old-style declarator
+deflate.c(393) : warning C4131: 'deflateResetKeep' : uses old-style declarator
+deflate.c(428) : warning C4131: 'deflateReset' : uses old-style declarator
+deflate.c(440) : warning C4131: 'deflateSetHeader' : uses old-style declarator
+deflate.c(451) : warning C4131: 'deflatePending' : uses old-style declarator
+deflate.c(465) : warning C4131: 'deflatePrime' : uses old-style declarator
+deflate.c(491) : warning C4131: 'deflateParams' : uses old-style declarator
+deflate.c(530) : warning C4131: 'deflateTune' : uses old-style declarator
+deflate.c(565) : warning C4131: 'deflateBound' : uses old-style declarator
+deflate.c(627) : warning C4131: 'putShortMSB' : uses old-style declarator
+deflate.c(641) : warning C4131: 'flush_pending' : uses old-style declarator
+deflate.c(664) : warning C4131: 'deflate' : uses old-style declarator
+deflate.c(809) : warning C4242: '=' : conversion from 'int' to 'Bytef', possible loss of data
+deflate.c(840) : warning C4242: '=' : conversion from 'int' to 'Bytef', possible loss of data
+deflate.c(978) : warning C4131: 'deflateEnd' : uses old-style declarator
+deflate.c(1013) : warning C4131: 'deflateCopy' : uses old-style declarator
+deflate.c(1075) : warning C4131: 'read_buf' : uses old-style declarator
+deflate.c(1105) : warning C4131: 'lm_init' : uses old-style declarator
+deflate.c(1147) : warning C4131: 'longest_match' : uses old-style declarator
+deflate.c(1389) : warning C4131: 'fill_window' : uses old-style declarator
+deflate.c(1563) : warning C4131: 'deflate_stored' : uses old-style declarator
+deflate.c(1627) : warning C4131: 'deflate_fast' : uses old-style declarator
+deflate.c(1670) : warning C4244: 'initializing' : conversion from 'uInt' to 'uch', possible loss of data
+deflate.c(1670) : warning C4244: 'initializing' : conversion from 'uInt' to 'ush', possible loss of data
+deflate.c(1729) : warning C4131: 'deflate_slow' : uses old-style declarator
+deflate.c(1795) : warning C4244: 'initializing' : conversion from 'uInt' to 'uch', possible loss of data
+deflate.c(1795) : warning C4244: 'initializing' : conversion from 'uInt' to 'ush', possible loss of data
+deflate.c(1860) : warning C4131: 'deflate_rle' : uses old-style declarator
+deflate.c(1904) : warning C4244: 'initializing' : conversion from 'uInt' to 'uch', possible loss of data
+deflate.c(1933) : warning C4131: 'deflate_huff' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkTFJJmg > ../../../../wntmsci12.pro/misc/s_deflate.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/crc32.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/crc32.obj crc32.c
+crc32.c
+crc32.c(205) : warning C4131: 'crc32' : uses old-style declarator
+crc32.c(248) : warning C4131: 'crc32_little' : uses old-style declarator
+crc32.c(288) : warning C4131: 'crc32_big' : uses old-style declarator
+crc32.c(328) : warning C4131: 'gf2_matrix_times' : uses old-style declarator
+crc32.c(345) : warning C4131: 'gf2_matrix_square' : uses old-style declarator
+crc32.c(356) : warning C4131: 'crc32_combine_' : uses old-style declarator
+crc32.c(412) : warning C4131: 'crc32_combine' : uses old-style declarator
+crc32.c(420) : warning C4131: 'crc32_combine64' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkNlP1ke > ../../../../wntmsci12.pro/misc/s_crc32.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/inffast.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/inffast.obj inffast.c
+inffast.c
+inffast.c(68) : warning C4131: 'inflate_fast' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk0KRhmF > ../../../../wntmsci12.pro/misc/s_inffast.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/inflate.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/inflate.obj inflate.c
+inflate.c
+inflate.c(104) : warning C4131: 'inflateResetKeep' : uses old-style declarator
+inflate.c(129) : warning C4131: 'inflateReset' : uses old-style declarator
+inflate.c(142) : warning C4131: 'inflateReset2' : uses old-style declarator
+inflate.c(180) : warning C4131: 'inflateInit2_' : uses old-style declarator
+inflate.c(222) : warning C4131: 'inflateInit_' : uses old-style declarator
+inflate.c(230) : warning C4131: 'inflatePrime' : uses old-style declarator
+inflate.c(261) : warning C4131: 'fixedtables' : uses old-style declarator
+inflate.c(379) : warning C4131: 'updatewindow' : uses old-style declarator
+inflate.c(605) : warning C4131: 'inflate' : uses old-style declarator
+inflate.c(763) : warning C4242: '=' : conversion from 'unsigned int' to 'Bytef', possible loss of data
+inflate.c(784) : warning C4242: '=' : conversion from 'unsigned int' to 'Bytef', possible loss of data
+inflate.c(1254) : warning C4131: 'inflateEnd' : uses old-style declarator
+inflate.c(1268) : warning C4131: 'inflateSetDictionary' : uses old-style declarator
+inflate.c(1311) : warning C4131: 'inflateGetHeader' : uses old-style declarator
+inflate.c(1339) : warning C4131: 'syncsearch' : uses old-style declarator
+inflate.c(1362) : warning C4131: 'inflateSync' : uses old-style declarator
+inflate.c(1413) : warning C4131: 'inflateSyncPoint' : uses old-style declarator
+inflate.c(1423) : warning C4131: 'inflateCopy' : uses old-style declarator
+inflate.c(1470) : warning C4131: 'inflateUndermine' : uses old-style declarator
+inflate.c(1487) : warning C4131: 'inflateMark' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mklD1fHo > ../../../../wntmsci12.pro/misc/s_inflate.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/inftrees.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/inftrees.obj inftrees.c
+inftrees.c
+inftrees.c(33) : warning C4131: 'inflate_table' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk6CNFrV > ../../../../wntmsci12.pro/misc/s_inftrees.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/trees.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/trees.obj trees.c
+trees.c
+trees.c(382) : warning C4131: '_tr_init' : uses old-style declarator
+trees.c(410) : warning C4131: 'init_block' : uses old-style declarator
+trees.c(454) : warning C4131: 'pqdownheap' : uses old-style declarator
+trees.c(489) : warning C4131: 'gen_bitlen' : uses old-style declarator
+trees.c(576) : warning C4131: 'gen_codes' : uses old-style declarator
+trees.c(602) : warning C4242: '=' : conversion from 'unsigned int' to 'ush', possible loss of data
+trees.c(618) : warning C4131: 'build_tree' : uses old-style declarator
+trees.c(706) : warning C4131: 'scan_tree' : uses old-style declarator
+trees.c(726) : warning C4242: '+=' : conversion from 'int' to 'ush', possible loss of data
+trees.c(751) : warning C4131: 'send_tree' : uses old-style declarator
+trees.c(802) : warning C4131: 'build_bl_tree' : uses old-style declarator
+trees.c(837) : warning C4131: 'send_all_trees' : uses old-style declarator
+trees.c(866) : warning C4131: '_tr_stored_block' : uses old-style declarator
+trees.c(883) : warning C4131: '_tr_flush_bits' : uses old-style declarator
+trees.c(893) : warning C4131: '_tr_align' : uses old-style declarator
+trees.c(908) : warning C4131: '_tr_flush_block' : uses old-style declarator
+trees.c(1009) : warning C4131: '_tr_tally' : uses old-style declarator
+trees.c(1059) : warning C4131: 'compress_block' : uses old-style declarator
+trees.c(1119) : warning C4131: 'detect_data_type' : uses old-style declarator
+trees.c(1153) : warning C4131: 'bi_reverse' : uses old-style declarator
+trees.c(1168) : warning C4131: 'bi_flush' : uses old-style declarator
+trees.c(1185) : warning C4131: 'bi_windup' : uses old-style declarator
+trees.c(1204) : warning C4131: 'copy_block' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkGCeual > ../../../../wntmsci12.pro/misc/s_trees.dpcc
+Compiling: zlib/wntmsci12.pro/misc/build/zlib-1.2.7/zutil.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -Fo../../../../wntmsci12.pro/slo/zutil.obj zutil.c
+zutil.c
+zutil.c(137) : warning C4131: 'zError' : uses old-style declarator
+zutil.c(305) : warning C4131: 'zcalloc' : uses old-style declarator
+zutil.c(315) : warning C4131: 'zcfree' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkgyoriJ > ../../../../wntmsci12.pro/misc/s_zutil.dpcc
+Compiling: zlib/wntmsci12.pro/misc/unzip.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/slo/unzip.obj ../../../../wntmsci12.pro/misc/unzip.c
+unzip.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkpjprij > ../../../../wntmsci12.pro/misc/s_unzip.dpcc
+Compiling: zlib/wntmsci12.pro/misc/ioapi.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../../../wntmsci12.pro/inc/zlib -I../inc -I../../../../inc/pch -I../../../../inc -I../../../../WIN/inc -I../../../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -Icontrib/minizip -I../../../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../../../wntmsci12.pro/slo/ioapi.obj ../../../../wntmsci12.pro/misc/ioapi.c
+ioapi.c
+../../../../wntmsci12.pro/misc/ioapi.c(95) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(113) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(132) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(139) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(146) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(154) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(161) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(184) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(210) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(217) : warning C4100: 'opaque' : unreferenced formal parameter
+../../../../wntmsci12.pro/misc/ioapi.c(225) : warning C4131: 'fill_fopen_filefunc' : uses old-style declarator
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkIddr5i > ../../../../wntmsci12.pro/misc/s_ioapi.dpcc
+------------------------------
+using: 
+using: ../../../../wntmsci12.pro/slb/zlib.lib
+------------------------------
+Making:    zlib.lib
+lib   /OUT:../../../../wntmsci12.pro/slb/zlib.lib @C:/cygwin/tmp/mkZ0gqXD
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../../../wntmsci12.pro/slo/adler32.obj ../../../../wntmsci12.pro/slo/compress.obj ../../../../wntmsci12.pro/slo/deflate.obj ../../../../wntmsci12.pro/slo/crc32.obj ../../../../wntmsci12.pro/slo/inffast.obj ../../../../wntmsci12.pro/slo/inflate.obj ../../../../wntmsci12.pro/slo/inftrees.obj ../../../../wntmsci12.pro/slo/trees.obj ../../../../wntmsci12.pro/slo/zutil.obj ../../../../wntmsci12.pro/slo/unzip.obj ../../../../wntmsci12.pro/slo/ioapi.obj 
+
+Making:    all_zlib.dpslo
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_installed_zlib
+cp ./wntmsci12.pro/misc/build/zlib-1.2.7/zlib.h ./wntmsci12.pro/misc/build/zlib-1.2.7/zconf.h ./wntmsci12.pro/misc/build/zlib-1.2.7/contrib/minizip/unzip.h ./wntmsci12.pro/misc/build/zlib-1.2.7/contrib/minizip/ioapi.h ./wntmsci12.pro/inc
+C:/cygwin/bin/touch.exe ./wntmsci12.pro/misc/build/so_predeliver_zlib
+zlib deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/zlib/build.lst
+COPY: ../wntmsci12.pro/inc/patched/zlib.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/zlib/zlib.h
+COPY: ../wntmsci12.pro/inc/unzip.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/zlib/unzip.h
+COPY: ../wntmsci12.pro/inc/ioapi.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/zlib/ioapi.h
+COPY: ../wntmsci12.pro/inc/zconf.h -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external/zlib/zconf.h
+COPY: ../wntmsci12.pro/slb/zlib.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/zlib.lib
+COPY: ../wntmsci12.pro/slb/zlib.lin -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/zlib.lin
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/zlib/deliver.log
+Module 'zlib' delivered successfully. 7 files copied, 3 files unchanged
+
+=============

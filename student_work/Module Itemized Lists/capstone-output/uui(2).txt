@@ -1,0 +1,125 @@
+Name:
+uui
+
+Dependencies:
+L10N:l10n vcl svtools LIBXSLT:libxslt NULL
+
+Build Rules:
+mkdir: %COMMON_DEST%\bin%_EXT%\hid
+
+..\%COMMON_OUTDIR%\misc\*.hid %COMMON_DEST%\bin%_EXT%\hid\*.hid
+..\%__SRC%\bin\uui*.dll %_DEST%\bin%_EXT%\uui*.dll
+..\%__SRC%\bin\uui*.res %_DEST%\bin%_EXT%\uui*.res
+..\%__SRC%\lib\libuui*.* %_DEST%\lib%_EXT%\libuui*.*
+..\%__SRC%\lib\iuui.lib %_DEST%\lib%_EXT%\iuui.lib
+
+..\util\uui.xml %_DEST%\xml%_EXT%\uui.xml
+..\%__SRC%\misc\uui.component %_DEST%\xml%_EXT%\uui.component
+
+Source Files:
+source\alreadyopen.cxx
+source\cookiedg.cxx
+source\filechanged.cxx
+source\fltdlg.cxx
+source\iahndl-authentication.cxx
+source\iahndl-cookies.cxx
+source\iahndl-errorhandler.cxx
+source\iahndl-filter.cxx
+source\iahndl-ioexceptions.cxx
+source\iahndl-locking.cxx
+source\iahndl-ssl.cxx
+source\iahndl.cxx
+source\interactionhandler.cxx
+source\lockfailed.cxx
+source\logindlg.cxx
+source\masterpasscrtdlg.cxx
+source\masterpassworddlg.cxx
+source\nameclashdlg.cxx
+source\newerverwarn.cxx
+source\openlocked.cxx
+source\passwordcontainer.cxx
+source\passworddlg.cxx
+source\requeststringresolver.cxx
+source\secmacrowarnings.cxx
+source\services.cxx
+source\sslwarndlg.cxx
+source\trylater.cxx
+source\unknownauthdlg.cxx
+
+Header Files:
+source\alreadyopen.hxx
+source\cookiedg.hrc
+source\cookiedg.hxx
+source\filechanged.hxx
+source\fltdlg.hrc
+source\fltdlg.hxx
+source\getcontinuations.hxx
+source\iahndl.hxx
+source\ids.hrc
+source\interactionhandler.hxx
+source\lockfailed.hxx
+source\logindlg.hrc
+source\logindlg.hxx
+source\loginerr.hxx
+source\masterpasscrtdlg.hrc
+source\masterpasscrtdlg.hxx
+source\masterpassworddlg.hrc
+source\masterpassworddlg.hxx
+source\mphndl.hxx
+source\nameclashdlg.hrc
+source\nameclashdlg.hxx
+source\newerverwarn.hrc
+source\newerverwarn.hxx
+source\openlocked.hxx
+source\passwordcontainer.hxx
+source\passworddlg.hrc
+source\passworddlg.hxx
+source\requeststringresolver.hxx
+source\secmacrowarnings.hrc
+source\secmacrowarnings.hxx
+source\sslwarndlg.hrc
+source\sslwarndlg.hxx
+source\trylater.hxx
+source\unknownauthdlg.hrc
+source\unknownauthdlg.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\makefile.mk
+	PRJNAME=uui
+	TARGET=source
+	SLOFILES=
+	$(SLO)$/cookiedg.obj
+	$(SLO)$/iahndl.obj
+	$(SLO)$/iahndl-authentication.obj
+	$(SLO)$/iahndl-ssl.obj
+	$(SLO)$/iahndl-cookies.obj
+	$(SLO)$/iahndl-filter.obj
+	$(SLO)$/iahndl-locking.obj
+	$(SLO)$/iahndl-ioexceptions.obj
+	$(SLO)$/iahndl-errorhandler.obj
+	$(SLO)$/logindlg.obj
+	$(SLO)$/services.obj
+	$(SLO)$/masterpassworddlg.obj
+	$(SLO)$/masterpasscrtdlg.obj
+	$(SLO)$/openlocked.obj
+	$(SLO)$/passworddlg.obj
+	$(SLO)$/fltdlg.obj
+	$(SLO)$/interactionhandler.obj
+	$(SLO)$/requeststringresolver.obj
+	$(SLO)$/unknownauthdlg.obj
+	$(SLO)$/sslwarndlg.obj
+	$(SLO)$/secmacrowarnings.obj
+	$(SLO)$/filechanged.obj
+	$(SLO)$/alreadyopen.obj
+	$(SLO)$/lockfailed.obj
+	$(SLO)$/trylater.obj
+	$(SLO)$/newerverwarn.obj
+	$(SLO)$/nameclashdlg.obj
+	$(SLO)$/passwordcontainer.obj
+
+util\makefile.mk
+	PRJNAME=uui
+	TARGET=uui

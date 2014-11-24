@@ -1,0 +1,40 @@
+Name:
+migrationanalysis
+
+Dependencies:
+soltools shell NULL
+
+Build Rules:
+
+
+Source Files:
+
+Header Files:
+src\msokill\StdAfx.h
+src\wizard\res_defines.h
+
+Patch Files:
+
+Makefiles:
+
+src\driver_docs\makefile.mk
+	PRJNAME=migrationanalysis
+	TARGET=driverdocs
+
+src\msokill\makefile.mk
+	PRJNAME=migrationanalysis
+	TARGET=msokill
+	OBJFILES=$(OBJ)$/msokill.obj
+	$(OBJ)$/StdAfx.obj
+
+src\resources\makefile.mk
+	PRJNAME=migrationanalysis
+	TARGET=resources
+
+src\wizard\makefile.mk
+	PRJNAME=migrationanalysis
+	TARGET=wizard
+
+util\makefile.mk
+	PRJNAME=migrationanalysis
+	TARGET=paw

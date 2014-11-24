@@ -1,0 +1,216 @@
+Name:
+extras
+
+Dependencies:
+solenv NULL
+
+Build Rules:
+mkdir: %_DEST%\pck%_EXT%
+mkdir: %COMMON_DEST%\pck%_EXT%
+mkdir: %COMMON_DEST%\pck%_EXT%\openoffice
+
+..\%COMMON_OUTDIR%\bin\*.zip %COMMON_DEST%\pck%_EXT%\*.zip
+..\%COMMON_OUTDIR%\bin\wordbook_en-US.zip %COMMON_DEST%\pck%_EXT%\wordbook_ja.zip
+..\%COMMON_OUTDIR%\bin\wordbook_en-US.zip %COMMON_DEST%\pck%_EXT%\wordbook_ko.zip
+..\%COMMON_OUTDIR%\bin\wordbook_en-US.zip %COMMON_DEST%\pck%_EXT%\wordbook_zh-CN.zip
+..\%COMMON_OUTDIR%\bin\wordbook_en-US.zip %COMMON_DEST%\pck%_EXT%\wordbook_zh-TW.zip
+..\source\truetype\symbol\*.ttf %COMMON_DEST%\pck%_EXT%\*.ttf
+..\source\shellnew\soffice.* %COMMON_DEST%\pck%_EXT%\soffice.*
+..\unx\source\fonts\fonts.dir %COMMON_DEST%\pck%_EXT%\openoffice\fonts.dir
+
+Source Files:
+unx\source\kde\applnk\.directory
+
+Header Files:
+unx\source\kde\applnk\.directory
+
+Patch Files:
+unx\source\kde\applnk\.directory
+
+Makefiles:
+
+source\autotext\makefile.mk
+	PRJNAME=extras
+	TARGET=autotextnolang
+
+source\autotext\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=autotext
+
+source\database\makefile.mk
+	PRJNAME=extras
+	TARGET=databasegeneral
+
+source\gallery\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerygeneral
+
+source\gallery\arrows\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryarrows
+
+source\gallery\bullets\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerybullets
+
+source\gallery\computers\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerycomputers
+
+source\gallery\diagrams\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerydiagrams
+
+source\gallery\education\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryeducation
+
+source\gallery\environment\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryenvironment
+
+source\gallery\finance\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryfinance
+
+source\gallery\gallery_sound\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerygallerysound
+
+source\gallery\gallery_system\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerygallerysystem
+
+source\gallery\htmlexpo\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryhtmlexpo
+
+source\gallery\people\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerypeople
+
+source\gallery\rulers\makefile.mk
+	PRJNAME=extras
+	TARGET=galleryrulers
+
+source\gallery\sounds\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerysounds
+
+source\gallery\symbols\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerysymbols
+
+source\gallery\transportation\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerytransport
+
+source\gallery\txtshapes\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerytxtshapes
+
+source\gallery\www-back\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerywwwback
+
+source\gallery\www-graf\makefile.mk
+	PRJNAME=extras
+	TARGET=gallerywwwgraf
+
+source\misc_config\makefile.mk
+	PRJNAME=extras
+	TARGET=miscconfiggeneral
+
+source\palettes\makefile.mk
+	PRJNAME=extras
+	TARGET=palettesgeneral
+
+source\palettes\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=palettes
+
+source\symbols\makefile.mk
+	PRJNAME=extras
+	TARGET=symbols
+
+source\templates\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templatesgeneral
+
+source\templates\layout\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateslayout
+
+source\templates\presnt\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templatespresnt
+
+source\templates\wizard\agenda\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardagenda
+
+source\templates\wizard\bitmap\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardbitmap
+
+source\templates\wizard\desktop\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizarddesktopgeneral
+
+source\templates\wizard\desktop\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizarddesktop
+
+source\templates\wizard\fax\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardfax
+
+source\templates\wizard\letter\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardletter
+
+source\templates\wizard\report\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardreport
+
+source\templates\wizard\styles\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardstyles
+
+source\templates\wizard\web\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=templateswizardweb
+
+source\wordbook\makefile.mk
+	PRJNAME=extras
+	TARGET=wordbookall
+
+source\wordbook\lang\makefile.mk
+	PRJNAME=extras
+	TARGET=wordbook
+
+unx\source\bitmaps\makefile.mk
+	PRJNAME=extras
+	TARGET=unxbitmaps
+
+unx\source\kde\applnk\makefile.mk
+	PRJNAME=extras
+	TARGET=unxkdeapplnk
+
+unx\source\kde\icons\makefile.mk
+	PRJNAME=extras
+	TARGET=unxkdeicons
+
+unx\source\kde\icons\mini\makefile.mk
+	PRJNAME=extras
+	TARGET=unxkdeiconsmini
+
+unx\source\kde\mimelnk\application\makefile.mk
+	PRJNAME=extras
+	TARGET=unxkdemimelnkapplication
+
+unx\source\kde\mimelnk\text\makefile.mk
+	PRJNAME=extras
+	TARGET=unxkdemimelnktext
+
+util\target.pmk

@@ -1,0 +1,139 @@
+Name:
+jurt
+
+Dependencies:
+ridljar sal NULL
+
+Build Rules:
+..\%__SRC%\class\jurt.jar %_DEST%\bin%_EXT%\jurt.jar
+..\%__SRC%\bin\jpipe.dll %_DEST%\bin%_EXT%\jpipe.dll
+..\%__SRC%\bin\jpipx.dll %_DEST%\bin%_EXT%\jpipx.dll
+..\%__SRC%\lib\libjpipe*.so %_DEST%\lib%_EXT%\libjpipe*.so
+..\%__SRC%\lib\libjpipe*.dylib %_DEST%\lib%_EXT%\libjpipe*.dylib
+..\%__SRC%\lib\libjpipe*.jnilib %_DEST%\lib%_EXT%\libjpipe*.jnilib
+
+..\%__SRC%\bin\jurt_src.zip %COMMON_DEST%\bin%_EXT%\jurt_src.zip
+
+Source Files:
+source\pipe\com_sun_star_lib_connections_pipe_PipeConnection.c
+source\pipe\wrapper\wrapper.c
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+com\sun\star\comp\bridgefactory\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_comp_bridgefactory
+
+com\sun\star\comp\connections\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_comp_connections
+
+com\sun\star\comp\loader\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_comp_loader
+
+com\sun\star\comp\servicemanager\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_comp_servicemanager
+
+com\sun\star\comp\urlresolver\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_comp_urlresolver
+
+com\sun\star\lib\connections\pipe\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_connections_pipe
+
+com\sun\star\lib\connections\socket\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_connections_socket
+
+com\sun\star\lib\uno\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_lib_uno
+
+com\sun\star\lib\uno\bridges\java_remote\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=com_sun_star_lib_uno_bridges_java_remote
+
+com\sun\star\lib\uno\environments\java\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_lib_uno_environments_java
+
+com\sun\star\lib\uno\environments\remote\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=com_sun_star_lib_uno_environments_remote
+
+com\sun\star\lib\uno\protocols\urp\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=com_sun_star_lib_uno_protocols_urp
+
+com\sun\star\lib\util\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=com_sun_star_lib_util
+
+com\sun\star\uno\makefile.mk
+	PRJNAME=jurt
+	TARGET=com_sun_star_uno
+
+demo\com\sun\star\demo\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=com_sun_star_demo
+
+source\pipe\makefile.mk
+	PRJNAME=jurt
+	TARGET=jpipe
+	SLOFILES=$(SHL1OBJS)
+
+source\pipe\wrapper\makefile.mk
+	PRJNAME=jurt
+	TARGET=wrapper
+	SLOFILES=$(SHL1OBJS)
+
+test\makefile.mk
+
+test\com\sun\star\comp\bridgefactory\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_comp_bridgefactory
+
+test\com\sun\star\comp\connections\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_comp_connections
+
+test\com\sun\star\lib\uno\bridges\java_remote\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_lib_uno_bridges_java_remote
+
+test\com\sun\star\lib\uno\environments\java\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_lib_uno_environments_java
+
+test\com\sun\star\lib\uno\environments\remote\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_lib_uno_environments_remote
+
+test\com\sun\star\lib\uno\protocols\urp\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_lib_uno_protocols_urp
+
+test\com\sun\star\lib\util\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_lib_util
+
+test\com\sun\star\uno\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=test_com_sun_star_uno
+
+util\makefile.mk
+	PRJNAME=jurt
+	TARGET=jurt
+
+util\makefile.pmk
+
+workbench\com\sun\star\comp\urlresolver\makefile.mk
+	PRJNAME:=jurt
+	TARGET:=workbench_com_sun_star_comp_urlresolver

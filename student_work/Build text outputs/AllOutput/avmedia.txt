@@ -1,0 +1,388 @@
+avmedia
+=============
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/framework
+
+mkout -- version: 1.8
+Making:    all_framework.dpslo
+Making:    framework.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/framework.framework.dprr
+Making:    framework.framework.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/framework.srs -fo=../../wntmsci12.pro/misc/framework.framework.dprr -p=framework mediacontrol.src
+cat ../../wntmsci12.pro/misc/framework.*.dprr >> ../../wntmsci12.pro/misc/framework.dpr
+Compiling: avmedia/source/framework/mediaitem.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/mediaitem.obj C:/steve/testarea/main/avmedia/source/framework/mediaitem.cxx 
+mediaitem.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkeTBpnz > ../../wntmsci12.pro/misc/s_mediaitem.dpcc
+Compiling: avmedia/source/framework/mediamisc.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/mediamisc.obj C:/steve/testarea/main/avmedia/source/framework/mediamisc.cxx 
+mediamisc.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1175) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1171) : while compiling class template member function 'std::_List_nod<_Ty,_Alloc>::_Node *std::list<_Ty>::_Buynode(void)'
+        with
+        [
+            _Ty=vcl::DeletionListener *,
+            _Alloc=std::allocator<vcl::DeletionListener *>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\vcl/impdel.hxx(36) : see reference to class template instantiation 'std::list<_Ty>' being compiled
+        with
+        [
+            _Ty=vcl::DeletionListener *
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkqk158w > ../../wntmsci12.pro/misc/s_mediamisc.dpcc
+Compiling: avmedia/source/framework/mediacontrol.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/mediacontrol.obj C:/steve/testarea/main/avmedia/source/framework/mediacontrol.cxx 
+mediacontrol.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xlocale(342) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkmTzGnZ > ../../wntmsci12.pro/misc/s_mediacontrol.dpcc
+Compiling: avmedia/source/framework/mediatoolbox.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/mediatoolbox.obj C:/steve/testarea/main/avmedia/source/framework/mediatoolbox.cxx 
+mediatoolbox.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkvh4uKM > ../../wntmsci12.pro/misc/s_mediatoolbox.dpcc
+Compiling: avmedia/source/framework/mediaplayer.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/mediaplayer.obj C:/steve/testarea/main/avmedia/source/framework/mediaplayer.cxx 
+mediaplayer.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xlocale(342) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk44paTc > ../../wntmsci12.pro/misc/s_mediaplayer.dpcc
+Compiling: avmedia/source/framework/soundhandler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/framework -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/soundhandler.obj C:/steve/testarea/main/avmedia/source/framework/soundhandler.cxx 
+soundhandler.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1137) : warning C4555: expression has no effect; expected expression with side-effect
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/list(1126) : while compiling class template member function 'void std::list<_Ty,_Ax>::_Splice(std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax> &,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,std::list<_Ty,_Ax>::_Const_iterator<_Secure_validation>,unsigned int,bool)'
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Any>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Any>>,
+            _Secure_validation=true
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xhash(205) : see reference to class template instantiation 'std::list<_Ty,_Ax>' being compiled
+        with
+        [
+            _Ty=std::pair<const rtl::OUString,com::sun::star::uno::Any>,
+            _Ax=std::allocator<std::pair<const rtl::OUString,com::sun::star::uno::Any>>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\../../VC/include/unordered_map(86) : see reference to class template instantiation 'stdext::_Hash<_Traits>' being compiled
+        with
+        [
+            _Traits=std::tr1::_Umap_traits<rtl::OUString,com::sun::star::uno::Any,stdext::_Hash_compare<rtl::OUString,rtl::OUStringHash,std::equal_to<rtl::OUString>>,std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Any>>,false>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl\hash_map(57) : see reference to class template instantiation 'std::tr1::unordered_map<_Kty,_Ty,_Hasher,_Keyeq,_Alloc>' being compiled
+        with
+        [
+            _Kty=rtl::OUString,
+            _Ty=com::sun::star::uno::Any,
+            _Hasher=rtl::OUStringHash,
+            _Keyeq=std::equal_to<rtl::OUString>,
+            _Alloc=std::allocator<std::pair<rtl::OUString,com::sun::star::uno::Any>>
+        ]
+        C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc\comphelper/sequenceashashmap.hxx(78) : see reference to class template instantiation 'std::hash_map<__K,__T,__H,__E>' being compiled
+        with
+        [
+            __K=rtl::OUString,
+            __T=com::sun::star::uno::Any,
+            __H=rtl::OUStringHash,
+            __E=std::equal_to<rtl::OUString>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkiVP9CT > ../../wntmsci12.pro/misc/s_soundhandler.dpcc
+Making:    framework.lib
+lib   /OUT:../../wntmsci12.pro/slb/framework.lib @C:/cygwin/tmp/mkq2hWOY
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/mediaitem.obj 
+../../wntmsci12.pro/slo/mediamisc.obj 
+../../wntmsci12.pro/slo/mediacontrol.obj 
+../../wntmsci12.pro/slo/mediatoolbox.obj 
+../../wntmsci12.pro/slo/mediaplayer.obj 
+../../wntmsci12.pro/slo/soundhandler.obj 
+Making:    framework.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkkhxaJ2
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\framework -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" mediacontrol.src C:\cygwin\tmp\7352.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\7353.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\7374.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/framework.srs
+mv ../../wntmsci12.pro/srs/framework.srs.wntmsci12.pro ../../wntmsci12.pro/srs/framework.srs
+/bin/rm -f ../../wntmsci12.pro/srs/framework.srs.wntmsci12.pro
+Making:    all_framework.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/java
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/classes/avmedia.jar' -o ../../wntmsci12.pro/misc/avmedia.jar.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt avmedia.jar.component
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/viewer
+
+Making:    all_viewer.dpslo
+Making:    viewer.dpr
+dmake  -f makefile.mk  make_srs_deps=true ../../wntmsci12.pro/misc/viewer.viewer.dprr
+Making:    viewer.viewer.dprr
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscdep -verbose  -CHARSET_DONTKNOW -s  -I. -I  -I../inc -I../../inc -I../../wntmsci12.pro/inc -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0  -DUPDVER="410m1(Build:9750)" -fp=../../wntmsci12.pro/srs/viewer.srs -fo=../../wntmsci12.pro/misc/viewer.viewer.dprr -p=viewer mediawindow.src
+cat ../../wntmsci12.pro/misc/viewer.*.dprr >> ../../wntmsci12.pro/misc/viewer.dpr
+Compiling: avmedia/source/viewer/mediaevent_impl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/viewer -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/mediaevent_impl.obj C:/steve/testarea/main/avmedia/source/viewer/mediaevent_impl.cxx 
+mediaevent_impl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xlocale(342) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkxmXLoi > ../../wntmsci12.pro/misc/s_mediaevent_impl.dpcc
+Compiling: avmedia/source/viewer/mediawindowbase_impl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/viewer -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/mediawindowbase_impl.obj C:/steve/testarea/main/avmedia/source/viewer/mediawindowbase_impl.cxx 
+mediawindowbase_impl.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkcNlRHL > ../../wntmsci12.pro/misc/s_mediawindowbase_impl.dpcc
+Compiling: avmedia/source/viewer/mediawindow_impl.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/viewer -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/mediawindow_impl.obj C:/steve/testarea/main/avmedia/source/viewer/mediawindow_impl.cxx 
+mediawindow_impl.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk8amU23 > ../../wntmsci12.pro/misc/s_mediawindow_impl.dpcc
+Compiling: avmedia/source/viewer/mediawindow.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/viewer -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/mediawindow.obj C:/steve/testarea/main/avmedia/source/viewer/mediawindow.cxx 
+mediawindow.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkLjY7zR > ../../wntmsci12.pro/misc/s_mediawindow.dpcc
+Making:    viewer.lib
+lib   /OUT:../../wntmsci12.pro/slb/viewer.lib @C:/cygwin/tmp/mkkahJGM
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/mediaevent_impl.obj 
+../../wntmsci12.pro/slo/mediawindowbase_impl.obj 
+../../wntmsci12.pro/slo/mediawindow_impl.obj 
+../../wntmsci12.pro/slo/mediawindow.obj 
+Making:    viewer.srs
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkATYtaA
+Preprocessor commandline:  -I. -I. -I..\..\wntmsci12.pro\inc\viewer -I..\inc -I..\..\inc\pch -I..\..\inc -I..\..\WIN\inc -I..\..\wntmsci12.pro\inc -I. -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\stl -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\external -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc -IC:\steve\TestArea\main\solenv\wntmsci12\inc -IC:\steve\TestArea\main\solenv\inc -IC:\steve\TestArea\main\res -IC:\PROGRA~2\Java\JDK15~1.0_2\include\win32 -IC:\PROGRA~2\Java\JDK15~1.0_2\include -IC:\PROGRA~2\MICROS~1\Windows\v7.0A\include -IC:\PROGRA~2\MICROS~1.0\VC\include -IC:\PROGRA~2\MI5E29~1\include -IC:\PROGRA~2\MI5E29~1\include -IC:\steve\TestArea\main\solver\410\wntmsci12.pro\inc\offuh -I. -I..\..\res -I. -DWNT -DNT351 -DMSC -DM1500 -DSOLAR_JAVA -DFULL_DESK -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DUPDVER="410m1(Build:9750)" mediawindow.src C:\cygwin\tmp\B245.tmp
+Preprocessor startline:  C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rscpp @C:\cygwin\tmp\B246.tmp
+Rsc2 commandline: C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc2 @C:\cygwin\tmp\B257.tmp
+/bin/rm -f ../../wntmsci12.pro/srs/viewer.srs
+mv ../../wntmsci12.pro/srs/viewer.srs.wntmsci12.pro ../../wntmsci12.pro/srs/viewer.srs
+/bin/rm -f ../../wntmsci12.pro/srs/viewer.srs.wntmsci12.pro
+Making:    all_viewer.dpslo
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/quicktime
+
+ Nothing to build for GUIBASE=WIN
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/win
+
+Making:    all_avmediawin.dpslo
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/avmediawin_version.h/ > ../../wntmsci12.pro/misc/avmediawin_version.c
+Compiling: avmedia/wntmsci12.pro/misc/avmediawin_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../../wntmsci12.pro/slo/avmediawin_version.obj ../../wntmsci12.pro/misc/avmediawin_version.c
+avmediawin_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkidI5py > ../../wntmsci12.pro/misc/s_avmediawin_version.dpcc
+Compiling: avmedia/source/win/winuno.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/winuno.obj C:/steve/testarea/main/avmedia/source/win/winuno.cxx 
+winuno.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkPeBxhl > ../../wntmsci12.pro/misc/s_winuno.dpcc
+Compiling: avmedia/source/win/manager.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/manager.obj C:/steve/testarea/main/avmedia/source/win/manager.cxx 
+manager.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2092) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2083) : while compiling class template member function 'void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned int,unsigned int)'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2221) : see reference to class template instantiation 'std::basic_string<_Elem,_Traits,_Ax>' being compiled
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mk4DVe4Y > ../../wntmsci12.pro/misc/s_manager.dpcc
+Compiling: avmedia/source/win/window.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/window.obj C:/steve/testarea/main/avmedia/source/win/window.cxx 
+window.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\cstdio(49) : warning C4995: 'gets': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cstdio(53) : warning C4995: 'sprintf': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cstdio(56) : warning C4995: 'vsprintf': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cstring(22) : warning C4995: 'strcat': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cstring(23) : warning C4995: 'strcpy': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cwchar(36) : warning C4995: 'swprintf': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cwchar(37) : warning C4995: 'vswprintf': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cwchar(39) : warning C4995: 'wcscat': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\cwchar(41) : warning C4995: 'wcscpy': name was marked as #pragma deprecated
+C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2092) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2083) : while compiling class template member function 'void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned int,unsigned int)'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2221) : see reference to class template instantiation 'std::basic_string<_Elem,_Traits,_Ax>' being compiled
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkPqNseg > ../../wntmsci12.pro/misc/s_window.dpcc
+Compiling: avmedia/source/win/player.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL   -DEXCEPTIONS_OFF  -Fo../../wntmsci12.pro/slo/player.obj C:/steve/testarea/main/avmedia/source/win/player.cxx 
+player.cxx
+C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2092) : warning C4530: C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2083) : while compiling class template member function 'void std::basic_string<_Elem,_Traits,_Ax>::_Copy(unsigned int,unsigned int)'
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+        C:/PROGRA~2/MICROS~1.0/VC/include\xstring(2221) : see reference to class template instantiation 'std::basic_string<_Elem,_Traits,_Ax>' being compiled
+        with
+        [
+            _Elem=char,
+            _Traits=std::char_traits<char>,
+            _Ax=std::allocator<char>
+        ]
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkld7DOw > ../../wntmsci12.pro/misc/s_player.dpcc
+Compiling: avmedia/source/win/framegrabber.cxx
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe   -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I. -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180   -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DVERBOSE -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -EHa -DEXCEPTIONS_ON  -Fo../../wntmsci12.pro/slo/framegrabber.obj C:/steve/testarea/main/avmedia/source/win/framegrabber.cxx 
+framegrabber.cxx
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkChYmXJ > ../../wntmsci12.pro/misc/s_framegrabber.dpcc
+Making:    avmediawin.lib
+lib   /OUT:../../wntmsci12.pro/slb/avmediawin.lib @C:/cygwin/tmp/mkBSkO7O
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../../wntmsci12.pro/slo/winuno.obj 
+../../wntmsci12.pro/slo/manager.obj 
+../../wntmsci12.pro/slo/window.obj 
+../../wntmsci12.pro/slo/player.obj 
+../../wntmsci12.pro/slo/framegrabber.obj 
+Making:    module definition file avmediawin.def
+cat exports.dxp >> ../../wntmsci12.pro/misc/avmediawin.def.tmpfile
+Making:    iavmediawin.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkpAeHoG
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../../wntmsci12.pro/lib/iavmediawin.lib -def:../../wntmsci12.pro/misc/avmediawin.def 
+   Creating library ../../wntmsci12.pro/lib/iavmediawin.lib and object ../../wntmsci12.pro/lib/iavmediawin.exp
+Making:    avmediawin.dll
+rc -DWIN32 -I. -I../../wntmsci12.pro/inc/avmediawin -I../inc -I../../inc/pch -I../../inc -I../../WIN/inc -I../../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../../res -I.  ../../wntmsci12.pro/misc/avmediawin_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../../wntmsci12.pro/misc/avmediawin_def.res > ../../wntmsci12.pro/misc/avmediawin.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mknREqSh
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../../wntmsci12.pro/bin/avmediawin.dll -map:../../wntmsci12.pro/misc/avmediawin.map ../../wntmsci12.pro/lib/iavmediawin.exp ../../wntmsci12.pro/slo/avmediawin_version.obj ../../wntmsci12.pro/slb/avmediawin.lib icppu.lib isal.lib icomphelp.lib icppuhelper.lib iutl.lib itools.lib ivcl.lib ole32.lib oleaut32.lib gdi32.lib strmiids.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../../wntmsci12.pro/misc/avmediawin.res 
+linking ../../wntmsci12.pro/bin/avmediawin.dll.manifest ...
+if [ -f ../../wntmsci12.pro/bin/avmediawin.dll.manifest ] ; then mt.exe  -manifest ../../wntmsci12.pro/bin/avmediawin.dll.manifest -outputresource:../../wntmsci12.pro/bin/avmediawin.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../../wntmsci12.pro/bin/avmediawin.dll.manifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/avmediawin.dll.manifest ; fi
+if [ -f ../../wntmsci12.pro/bin/avmediawin.dll.tmanifest ] ; then /bin/rm -f ../../wntmsci12.pro/bin/avmediawin.dll.tmanifest ; fi
+Making:    all_avmediawin.dpslo
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/avmediawin.dll' -o ../../wntmsci12.pro/misc/avmediawin.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt avmediawin.component
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/source/gstreamer
+
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/' -o ../../wntmsci12.pro/misc/avmediagst.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt avmediagst.component
+
+Entering /cygdrive/c/steve/testarea/main/avmedia/util
+
+cat C:/steve/TestArea/main/solenv/src/version.c | sed s/_version.h/avmedia_version.h/ > ../wntmsci12.pro/misc/avmedia_version.c
+Compiling: avmedia/wntmsci12.pro/misc/avmedia_version.c
+C:/PROGRA~2/MICROS~1.0/VC/bin/cl.exe -Zm500 -Zc:wchar_t- -GR -GS -c -nologo -Gs  -Gy -Ob1 -Oxs -Oy- -DENABLE_LAYOUT=0 -DENABLE_LAYOUT_EXPERIMENTAL=0 -Gd  -I. -I../wntmsci12.pro/inc/avmedia -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/incdont_use_stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  -Wall -wd4061 -wd4127 -wd4191 -wd4217 -wd4250 -wd4251 -wd4275     -wd4290 -wd4294 -wd4355 -wd4511 -wd4512 -wd4514 -wd4611 -wd4625 -wd4626     -wd4640 -wd4675 -wd4710 -wd4711 -wd4786 -wd4800 -wd4820 -wd4503 -wd4619     -wd4365 -wd4668 -wd4738 -wd4826 -wd4350 -wd4505 -wd4692 -wd4189 -wd4005     -wd4180 -wd4255  -DWNT -DWNT -DNT351 -DMSC -DM1500 -DINTEL -D_X86_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO_DEPRECATE -D_CRT_NON_CONFORMING_SWPRINTFS -DFULL_DESK -DBOOST_MEM_FN_ENABLE_CDECL -D_MT -DWINVER=0x0500 -D_WIN32_WINNT=0x0500 -D_WIN32_IE=0x0500 -DCPPU_ENV=msci -DSUPD=410 -DPRODUCT -DNDEBUG -DOSL_DEBUG_LEVEL=0 -DOPTIMIZE -DCUI -DSOLAR_JAVA   -DSHAREDLIB -D_DLL_ -DWIN32 -D_MT -D_DLL -DWIN32 -D_MT -D_DLL  -Fo../wntmsci12.pro/slo/avmedia_version.obj ../wntmsci12.pro/misc/avmedia_version.c
+avmedia_version.c
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/makedepend @C:/cygwin/tmp/mkpEjTTx > ../wntmsci12.pro/misc/s_avmedia_version.dpcc
+------------------------------
+using: ../wntmsci12.pro/slb/viewer.lib			../wntmsci12.pro/slb/framework.lib
+using: ../wntmsci12.pro/slb/avmedia.lib
+------------------------------
+Making:    avmedia.lib
+lib   /OUT:../wntmsci12.pro/slb/avmedia.lib @C:/cygwin/tmp/mkkrFGv4
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+../wntmsci12.pro/slb/viewer.lib ../wntmsci12.pro/slb/framework.lib 
+
+------------------------------
+Making: ../wntmsci12.pro/misc/avmedia.flt
+Making:    module definition file avmedia.def
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/bin/rm -f ../wntmsci12.pro/misc/avmedia.exp
+Making:    iavmedia.lib
+lib -machine:IX86 @C:/cygwin/tmp/mkuIyfuh
+Microsoft (R) Library Manager Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+-out:../wntmsci12.pro/lib/iavmedia.lib -def:../wntmsci12.pro/misc/avmedia.def 
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::priv::MediaEventListenersImpl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vos::OGuard::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::priv::MediaWindowBaseImpl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::priv::MediaWindowImpl::`vector deleting destructor'`adjustor{296}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::priv::MediaWindowImpl::`vector deleting destructor'`adjustor{320}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::priv::MediaWindowImpl::`vector deleting destructor'`adjustor{376}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall BitmapEx::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::priv::MediaChildWindow::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::priv::MediaWindowControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::priv::MediaWindowImpl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::bad_alloc::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall std::pair<class rtl::OUString,class rtl::OUString>::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall Graphic::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaWindow::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::length_error::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall std::logic_error::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaItem::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall ListBox::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::MediaToolBoxControl::`vector deleting destructor'`adjustor{28}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::MediaToolBoxControl::`vector deleting destructor'`adjustor{116}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::MediaToolBoxControl::`vector deleting destructor'`adjustor{120}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaToolBoxControl::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaFloater::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::MediaPlayer::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor '[thunk]:public: virtual void * __thiscall avmedia::SoundHandler::`vector deleting destructor'`adjustor{16}' (unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall vos::OClearableGuard::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: virtual void * __thiscall avmedia::SoundHandler::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+../wntmsci12.pro/misc/avmedia.def : warning LNK4102: export of deleting destructor 'public: void * __thiscall std::_List_nod<struct std::pair<class rtl::OUString const ,class com::sun::star::uno::Any>,class std::allocator<struct std::pair<class rtl::OUString const ,class com::sun::star::uno::Any> > >::_Node::`scalar deleting destructor'(unsigned int)'; image may not run correctly
+   Creating library ../wntmsci12.pro/lib/iavmedia.lib and object ../wntmsci12.pro/lib/iavmedia.exp
+Making:    avmedia.dll
+rc -DWIN32 -I. -I../wntmsci12.pro/inc/avmedia -I../inc -I../inc/pch -I../inc -I../WIN/inc -I../wntmsci12.pro/inc -I. -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/stl -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/external -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc -IC:/steve/TestArea/main/solenv/wntmsci12/inc -IC:/steve/TestArea/main/solenv/inc -IC:/steve/TestArea/main/res -IC:/PROGRA~2/Java/JDK15~1.0_2/include/win32 -IC:/PROGRA~2/Java/JDK15~1.0_2/include -IC:/PROGRA~2/MICROS~1/Windows/v7.0A/include -IC:/PROGRA~2/MICROS~1.0/VC/include -IC:/PROGRA~2/MI5E29~1/include -IC:/PROGRA~2/MI5E29~1/include  -IC:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/offuh -I. -I../res -I.  ../wntmsci12.pro/misc/avmedia_def.rc
+Microsoft (R) Windows (R) Resource Compiler Version 6.1.7600.16385Copyright (C) Microsoft Corporation.  All rights reserved.
+cat ../wntmsci12.pro/misc/avmedia_def.res > ../wntmsci12.pro/misc/avmedia.res
+link /MACHINE:IX86 /IGNORE:4102 /IGNORE:4197 @C:/cygwin/tmp/mk8k46D7
+Microsoft (R) Incremental Linker Version 9.00.30729.01
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/MAP /OPT:NOREF -safeseh -nxcompat -dynamicbase -NODEFAULTLIB -RELEASE -DEBUG -INCREMENTAL:NO /SUBSYSTEM:CONSOLE /DLL -out:../wntmsci12.pro/bin/avmedia.dll -map:../wntmsci12.pro/misc/avmedia.map ../wntmsci12.pro/lib/iavmedia.exp ../wntmsci12.pro/slo/avmedia_version.obj ../wntmsci12.pro/slb/avmedia.lib iutl.lib itools.lib icppu.lib icppuhelper.lib isal.lib ivcl.lib icomphelp.lib svtool.lib isvl.lib sfx.lib ivos.lib msvcrt.lib msvcprt.lib uwinapi.lib kernel32.lib user32.lib oldnames.lib ../wntmsci12.pro/misc/avmedia.res 
+linking ../wntmsci12.pro/bin/avmedia.dll.manifest ...
+if [ -f ../wntmsci12.pro/bin/avmedia.dll.manifest ] ; then mt.exe  -manifest ../wntmsci12.pro/bin/avmedia.dll.manifest -outputresource:../wntmsci12.pro/bin/avmedia.dll\;2 ; fi
+Microsoft (R) Manifest Tool version 5.2.3790.2076Copyright (c) Microsoft Corporation 2005. All rights reserved.if [ -f ../wntmsci12.pro/bin/avmedia.dll.manifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/avmedia.dll.manifest ; fi
+if [ -f ../wntmsci12.pro/bin/avmedia.dll.tmanifest ] ; then /bin/rm -f ../wntmsci12.pro/bin/avmedia.dll.tmanifest ; fi
+Making:    avmediaen-US.res
+Compiling: rsc_avmedia
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} slfl.pl C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/rsc -presponse -verbose @C:/cygwin/tmp/mkAQTi5f > /dev/null
+: &&     PATH=/cygdrive/c/steve/TestArea/main/solver/410/wntmsci12.pro/bin${PATH:+:${PATH}} C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/xsltproc --nonet --stringparam uri \
+        'vnd.sun.star.expand:$OOO_BASE_DIR/program/avmedia.dll' -o ../wntmsci12.pro/misc/avmedia.component \
+        C:/steve/TestArea/main/solenv/bin/createcomponent.xslt avmedia.component
+avmedia deliver
+deliver -- version: 275594
+COPY: build.lst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/build.lst
+COPY: ../wntmsci12.pro/bin/avmedia.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/avmedia.dll
+COPY: ../wntmsci12.pro/bin/avmediawin.dll -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/avmediawin.dll
+COPY: ../source/java/avmedia.jar -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/avmedia.jar
+COPY: ../wntmsci12.pro/lib/iavmedia.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/iavmedia.lib
+COPY: ../wntmsci12.pro/lib/iavmediawin.lib -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/lib/iavmediawin.lib
+COPY: ../wntmsci12.pro/bin/avmediaen-US.res -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/bin/avmediaen-US.res
+COPY: ../wntmsci12.pro/bin/avmediaen-US.ilst -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/res/img/avmediaen-US.ilst
+COPY: ../inc/avmedia/mediawindow.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/mediawindow.hxx
+COPY: ../inc/avmedia/mediaitem.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/mediaitem.hxx
+COPY: ../inc/avmedia/mediaplayer.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/mediaplayer.hxx
+COPY: ../inc/avmedia/mediatoolbox.hxx -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/mediatoolbox.hxx
+COPY: ../wntmsci12.pro/misc/avmedia.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/avmedia.component
+COPY: ../wntmsci12.pro/misc/avmedia.jar.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/avmedia.jar.component
+COPY: ../wntmsci12.pro/misc/avmediagst.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/avmediagst.component
+COPY: ../wntmsci12.pro/misc/avmediawin.component -> C:/steve/TestArea/main/solver/410/wntmsci12.pro/xml/avmediawin.component
+LOG: writing C:/steve/TestArea/main/solver/410/wntmsci12.pro/inc/avmedia/deliver.log
+Module 'avmedia' delivered successfully. 16 files copied, 2 files unchanged
+
+=============

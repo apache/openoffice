@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{324580B9-632C-DDDA-63A0-117BCF9AF51E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>oox_lib</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  <Import Project="..\AOOWinGlobal.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>..\solver\410\wntmsci12.pro\lib\;wntmsci12.pro\lib;wntmsci12.pro\slb;$(LibraryPath)</LibraryPath>
+</PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>wntmsci12.pro/slb/</OutDir>
+    <IntDir>wntmsci12.pro\intermediate\oox_lib\</IntDir>
+    <TargetName>oox</TargetName>
+  </PropertyGroup>
+<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>
+      </WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>
+      </Optimization>
+      <FunctionLevelLinking>
+      </FunctionLevelLinking>
+      <IntrinsicFunctions>
+      </IntrinsicFunctions>
+      <PreprocessorDefinitions>
+      </PreprocessorDefinitions>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWarningAsError>
+      </TreatWarningAsError>
+      <InlineFunctionExpansion>
+      </InlineFunctionExpansion>
+      <FavorSizeOrSpeed>
+      </FavorSizeOrSpeed>
+      <OmitFramePointers>
+      </OmitFramePointers>
+      <EnableFiberSafeOptimizations>
+      </EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>
+      </WholeProgramOptimization>
+      <UndefineAllPreprocessorDefinitions>
+      </UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath>
+      </IgnoreStandardIncludePath>
+      <PreprocessToFile>
+      </PreprocessToFile>
+      <PreprocessSuppressLineNumbers>
+      </PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments>
+      </PreprocessKeepComments>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <SmallerTypeCheck>
+      </SmallerTypeCheck>
+      <BasicRuntimeChecks>
+      </BasicRuntimeChecks>
+      <RuntimeLibrary>
+      </RuntimeLibrary>
+      <StructMemberAlignment>
+      </StructMemberAlignment>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>
+      </EnableEnhancedInstructionSet>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <DisableLanguageExtensions>
+      </DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <PrecompiledHeaderFile>
+      </PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>
+      </PrecompiledHeaderOutputFile>
+      <ExpandAttributedSource>
+      </ExpandAttributedSource>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <AssemblerListingLocation>
+      </AssemblerListingLocation>
+      <ObjectFileName>wntmsci12.pro/slb/</ObjectFileName>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles>
+      </GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName>
+      </XMLDocumentationFileName>
+      <BrowseInformation>
+      </BrowseInformation>
+      <BrowseInformationFile>
+      </BrowseInformationFile>
+      <CallingConvention>
+      </CallingConvention>
+      <CompileAs>
+      </CompileAs>
+      <ShowIncludes>
+      </ShowIncludes>
+      <UseFullPaths>
+      </UseFullPaths>
+      <OmitDefaultLibName>
+      </OmitDefaultLibName>
+      <ErrorReporting>
+      </ErrorReporting>
+      <AdditionalOptions> %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem></SubSystem>
+      <GenerateDebugInformation></GenerateDebugInformation>
+      <EnableCOMDATFolding></EnableCOMDATFolding>
+      <OptimizeReferences></OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>wntmsci12.pro/slb/oox.lib</OutputFile>
+    </Lib>
+    <Lib>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>
+      </LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <PreBuildEvent>
+      <Command></Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command></Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

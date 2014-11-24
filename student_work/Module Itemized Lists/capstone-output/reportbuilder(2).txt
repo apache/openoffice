@@ -1,0 +1,94 @@
+Name:
+reportbuilder
+
+Dependencies:
+BOOST:boost JFREEREPORT:jfreereport wizards readlicense_oo APACHE_COMMONS:apache-commons officecfg NULL
+
+Build Rules:
+# Extensions
+
+..\%__SRC%\bin\*.oxt %_DEST%\bin%_EXT%\*.oxt
+
+# License
+mkdir: %_DEST%\bin%_EXT%\reportbuilder
+
+..\license\license_en-US.txt %_DEST%\bin%_EXT%\reportbuilder\license_en-US.txt
+..\license\license_en-US.html %_DEST%\bin%_EXT%\reportbuilder\license_en-US.html
+..\license\readme_en-US.html %_DEST%\bin%_EXT%\reportbuilder\readme_en-US.html
+..\license\readme_en-US.txt %_DEST%\bin%_EXT%\reportbuilder\readme_en-US.txt
+
+Source Files:
+
+Header Files:
+
+Patch Files:
+
+Makefiles:
+
+java\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt_java
+
+java\com\sun\star\report\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt_java_css
+
+java\com\sun\star\report\function\metadata\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt_java_css_metadata
+
+java\com\sun\star\report\pentaho\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=sun-report-builder
+
+java\com\sun\star\report\util\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt_java_css_util
+
+registry\data\org\openoffice\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=data_ooOffice
+
+registry\data\org\openoffice\Office\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=data_ooOOffice
+
+registry\data\org\openoffice\Office\UI\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=data_ooOUI
+
+registry\data\org\openoffice\TypeDetection\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=data_ooType
+
+registry\schema\org\openoffice\Office\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=schema_ooOffice
+
+registry\schema\org\openoffice\Office\UI\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=schema_ooOfficeUI
+
+template\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt_templates
+
+template\en-US\wizard\report\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=template_en_us
+
+template\registry\data\org\openoffice\Office\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=template_data_ooOffice
+
+template\wizard\report\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=template
+
+util\makefile.mk
+	PRJNAME=reportbuilder
+	TARGET=rpt
+
+util\makefile.pmk
+
+util\target.pmk

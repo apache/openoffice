@@ -1,0 +1,88 @@
+Name:
+xml2cmp
+
+Dependencies:
+soltools stlport NULL
+
+Build Rules:
+..\%__SRC%\bin\xml2cmp.exe %_DEST%\bin%_EXT%\xml2cmp.exe
+..\%__SRC%\bin\xml2cmp %_DEST%\bin%_EXT%\xml2cmp
+..\%__SRC%\bin\srvdepy.exe %_DEST%\bin%_EXT%\srvdepy.exe
+..\%__SRC%\bin\srvdepy %_DEST%\bin%_EXT%\srvdepy
+
+Source Files:
+source\finder\dependy.cxx
+source\finder\dep_main.cxx
+source\support\badcast.cxx
+source\support\cmdline.cxx
+source\support\heap.cxx
+source\support\sistr.cxx
+source\support\syshelp.cxx
+source\x2cclass\xml_cdff.cxx
+source\x2cclass\xml_cdim.cxx
+source\xcd\cr_html.cxx
+source\xcd\cr_index.cxx
+source\xcd\cr_metho.cxx
+source\xcd\filebuff.cxx
+source\xcd\main.cxx
+source\xcd\parse.cxx
+source\xcd\xmlelem.cxx
+source\xcd\xmltree.cxx
+
+Header Files:
+source\finder\dependy.hxx
+source\inc\lst_str.h
+source\inc\new_del.h
+source\inc\precomp.h
+source\inc\str.h
+source\inc\textbuff.h
+source\inc\textfile.h
+source\support\cmdline.hxx
+source\support\heap.hxx
+source\support\list.hxx
+source\support\sistr.hxx
+source\support\syshelp.hxx
+source\x2cclass\x2cstl.hxx
+source\x2cclass\xml_cd.hxx
+source\x2cclass\xml_cdff.hxx
+source\x2cclass\xml_cdim.hxx
+source\xcd\cr_html.hxx
+source\xcd\cr_index.hxx
+source\xcd\cr_metho.hxx
+source\xcd\filebuff.hxx
+source\xcd\parse.hxx
+source\xcd\xmlelem.hxx
+source\xcd\xmltree.hxx
+
+Patch Files:
+
+Makefiles:
+
+source\finder\makefile.mk
+	PRJNAME=xml2cmp
+	TARGET=srvdepy
+	OBJFILES=
+	$(OBJ)$/dependy.obj
+	$(OBJ)$/dep_main.obj
+
+source\support\makefile.mk
+	PRJNAME=xml2cmp
+	TARGET=x2c_support
+	OBJFILES=
+	$(OBJ)$/cmdline.obj
+	$(OBJ)$/heap.obj
+	$(OBJ)$/sistr.obj
+	$(OBJ)$/syshelp.obj
+	$(OBJ)$/badcast.obj
+
+source\xcd\makefile.mk
+	PRJNAME=xml2cmp
+	TARGET=x2c_xcd
+	OBJFILES=
+	$(OBJ)$/main.obj
+	$(LIBONLYFILES)
+	$(OBJFILES)
+
+util\makefile.mk
+	PRJNAME=xml2cmp
+	TARGET=xml2cmp
