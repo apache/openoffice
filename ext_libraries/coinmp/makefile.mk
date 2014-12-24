@@ -55,7 +55,7 @@ BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\
 .ELSE
 CONFIGURE_ACTION=./configure
 #CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)' CFLAGS='$(ARCH_FLAGS) -Wc,-arch -Wc,i386' CPPFLAGS='$(ARCH_FLAGS)' LDFLAGS='$(ARCH_FLAGS)' compiler_flags='$(ARCH_FLAGS)'
-CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)'
+CONFIGURE_FLAGS=--disable-pkg-config --with-blas=BUILD --with-lapack=BUILD --disable-bzlib --disable-zlib CC='$(CC) $(ARCH_FLAGS)' CXX='$(CXX) $(ARCH_FLAGS)'
 #BUILD_ACTION= CC="$(CC) $(ARCH_FLAGS)" CPP="$(CXX) $(ARCH_FLAGS)" $(GNUMAKE) -j8
 BUILD_ACTION= $(GNUMAKE) -j$(MAXPROCESS)
 .ENDIF
