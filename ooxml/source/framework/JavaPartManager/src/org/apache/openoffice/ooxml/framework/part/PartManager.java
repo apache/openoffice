@@ -1,3 +1,24 @@
+/**************************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ *************************************************************/
+
 package org.apache.openoffice.ooxml.framework.part;
 
 import java.io.File;
@@ -27,10 +48,10 @@ public class PartManager
         maZipFile = aZipFile;
         maPartNameToPartMap = new HashMap<>();
     }
-    
-    
-    
-    
+
+
+
+
     public InputStream getStreamForPartName (final PartName aPartName)
     {
         final ZipEntry aEntry = maZipFile.getEntry(
@@ -48,10 +69,10 @@ public class PartManager
             return null;
         }
     }
-    
-    
-    
-    
+
+
+
+
     /** This is the low-level variant of getStreamForPartName().
      *  It can return streams for entries in the OOXML zip package
      *  that are not, technically, parts.
@@ -74,9 +95,9 @@ public class PartManager
         }
     }
 
-    
-    
-    
+
+
+
     public ContentTypes getContentTypes ()
     {
         if (maContentTypes == null)
@@ -85,18 +106,18 @@ public class PartManager
         }
         return maContentTypes;
     }
-    
-    
-    
-    
+
+
+
+
     private final String ToZipEntryName (final String sPath)
     {
         return sPath.substring(1);
     }
-    
 
-    
-    
+
+
+
     /** Return a list of the names of all streams.
      *  Note that that list is not necessarily identical to the list of part
      *  names.  It can contain entries that are not parts.
@@ -104,7 +125,7 @@ public class PartManager
     public final String[] listStreamNames ()
     {
         final Vector<String> aStreamNames =  new Vector<>();
-        
+
         final Enumeration<? extends ZipEntry> aEntries = maZipFile.entries();
         while (aEntries.hasMoreElements())
         {
@@ -114,10 +135,10 @@ public class PartManager
 
         return aStreamNames.toArray(new String[0]);
     }
-    
 
-    
-    
+
+
+
     public Part getPart (final PartName aName)
     {
         SoftReference<Part> aSoftPart = maPartNameToPartMap.get(aName);
@@ -125,19 +146,19 @@ public class PartManager
         if (aSoftPart != null)
             aPart = aSoftPart.get();
         if (aPart == null)
-        {   
+        {
             aPart = new Part(
                 getContentTypes().getTypeForPartName(aName),
-                this, 
+                this,
                 aName);
             maPartNameToPartMap.put(aName, new SoftReference<Part>(aPart));
         }
-        
+
         return aPart;
     }
-    
-    
-    
+
+
+
 
     private ZipFile maZipFile;
     private ContentTypes maContentTypes;
