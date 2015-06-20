@@ -581,12 +581,6 @@ void SmXMLImport::endDocument(void)
                 aText = pDocShell->GetText();
                 pTree->CreateTextFromNode(aText);
                 aText.EraseTrailingChars();
-                if ((aText.GetChar(0) == '{') &&
-                    (aText.GetChar(aText.Len()-1) == '}'))
-                {
-                    aText.Erase(0,1);
-                    aText.Erase(aText.Len()-1,1);
-                }
             }
             pDocShell->SetText( String() );
 
