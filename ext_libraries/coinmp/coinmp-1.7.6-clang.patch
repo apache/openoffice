@@ -1,25 +1,15 @@
 --- misc/CoinMP-1.7.6/CoinUtils/src/CoinSignal.hpp	2011-01-03 23:31:00.000000000 +0000
-+++ misc/build/CoinMP-1.7.6/CoinUtils/src/CoinSignal.hpp	2015-07-14 00:18:26.105360000 +0000
-@@ -43,7 +43,7 @@
- 
++++ misc/build/CoinMP-1.7.6/CoinUtils/src/CoinSignal.hpp	2015-08-04 23:25:43.468410000 +0000
+@@ -44,7 +44,11 @@
  //-----------------------------------------------------------------------------
  
--#if defined(__FreeBSD__) && defined(__GNUC__)
-+#if defined(__FreeBSD__) && defined(__GNUC__) && !defined(__clang__)
-    typedef typeof(SIG_DFL) CoinSighandler_t;
- #  define CoinSighandler_t_defined
- #endif
-@@ -100,6 +100,13 @@
+ #if defined(__FreeBSD__) && defined(__GNUC__)
+-   typedef typeof(SIG_DFL) CoinSighandler_t;
++   #if defined(__clang__)
++     typedef __decltype(SIG_DFL) CoinSighandler_t;
++   #else
++     typedef typeof(SIG_DFL) CoinSighandler_t;
++   #endif
  #  define CoinSighandler_t_defined
  #endif
  
-+//-----------------------------------------------------------------------------
-+
-+#if defined(__clang__)
-+   typedef __decltype(SIG_DFL) CoinSighandler_t;
-+#  define CoinSighandler_t_defined
-+#endif
-+
- //#############################################################################
- 
- #ifndef CoinSighandler_t_defined
