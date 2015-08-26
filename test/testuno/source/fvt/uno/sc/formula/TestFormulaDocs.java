@@ -36,6 +36,8 @@ import org.openoffice.test.uno.UnoApp;
 import testlib.uno.SCUtil;
 import static testlib.uno.TestUtil.*;
 
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.document.MacroExecMode;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
@@ -76,12 +78,18 @@ public class TestFormulaDocs {
 	@Test
 	public void testFormulaDocs() throws Exception {
 		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
+		testOneDoc( "uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods");
 	}
 
 	public void testOneDoc( String filename) throws Exception {
 		// open the spreadsheet document
 		String sample = Testspace.prepareData( filename);
-		XSpreadsheetDocument scDoc = SCUtil.openFile( sample, unoApp);
+		// enable macros
+		PropertyValue prop = new PropertyValue();
+		prop.Name = "MacroExecutionMode";
+		prop.Value = MacroExecMode.ALWAYS_EXECUTE_NO_WARN;
+		XSpreadsheetDocument scDoc = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+			XSpreadsheetDocument.class, unoApp.loadDocument(sample, prop));
 		XSpreadsheet xSheet = SCUtil.getCurrentSheet( scDoc);
 
 		// find the "TestID" and "TestOK" markers
@@ -89,7 +97,7 @@ public class TestFormulaDocs {
 		int nTestOkCol = -1;
 		int nTestRowStart = -1;
 		for( int y = 0; y < 8; ++y) {
-			for( int x = 0; x < 8; ++x) {
+			for( int x = 0; x < 26; ++x) {
 				XCell xCell = xSheet.getCellByPosition( x, y);
 				XText xText = (XText)UnoRuntime.queryInterface( XText.class, xCell);
 				String name = xText.getString();
