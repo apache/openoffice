@@ -79,6 +79,7 @@ public class TestFormulaDocs {
 	public void testFormulaDocs() throws Exception {
 		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
 		testOneDoc( "uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods");
+		testOneDoc( "uno/sc/fvt/StarBasicCLng.ods");
 	}
 
 	public void testOneDoc( String filename) throws Exception {
