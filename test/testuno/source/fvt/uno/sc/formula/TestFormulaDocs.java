@@ -80,6 +80,7 @@ public class TestFormulaDocs {
 		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
 		testOneDoc( "uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods");
 		testOneDoc( "uno/sc/fvt/StarBasicCLng.ods");
+		testOneDoc( "uno/sc/fvt/DGET on formulas.ods");
 	}
 
 	public void testOneDoc( String filename) throws Exception {
