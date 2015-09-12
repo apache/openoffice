@@ -553,12 +553,12 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_TYP" id="bm_id3146127" localize="false"/>
 <paragraph role="heading" id="hd_id3151255" xml-lang="en-US" level="2" l10n="U" oldref="136">TYPE</paragraph>
-<paragraph role="paragraph" id="par_id3155900" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid="HID_FUNC_TYP">Returns the type of value.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3155900" xml-lang="en-US" l10n="U" oldref="137"><ahelp hid="HID_FUNC_TYP">Returns the type of value, where 1 = number, 2 = text, 4 = Boolean value, 8 = formula, 16 = error value, 64 = array.</ahelp></paragraph>
 <embed href="text/shared/00/00000001.xhp#wahr"/>
 <paragraph role="heading" id="hd_id3149992" xml-lang="en-US" level="3" l10n="U" oldref="138">Syntax</paragraph>
 <paragraph role="code" id="par_id3148400" xml-lang="en-US" l10n="U" oldref="139">TYPE(Value)</paragraph>
 <paragraph role="paragraph" id="par_id3150830" xml-lang="en-US" l10n="U" oldref="140">
-<emph>Value</emph> is a specific value for which the data type is determined. Value 1 = number, value 2 = text, value 4 = Boolean value, value 8 = formula, value 16 = error value.</paragraph>
+<emph>Value</emph> is a specific value for which the data type is determined.</paragraph>
 <paragraph role="heading" id="hd_id3154363" xml-lang="en-US" level="3" l10n="U" oldref="141">Example (see example table above)</paragraph>
 <paragraph role="paragraph" id="par_id3153357" xml-lang="en-US" l10n="U" oldref="142">
 <item type="input">=TYPE(C2)</item> returns 2 as a result.</paragraph>
