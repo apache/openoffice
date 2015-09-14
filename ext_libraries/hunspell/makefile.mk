@@ -90,7 +90,7 @@ BUILD_ACTION= cd src/hunspell && cp ../win_api/config.h . && CDEFS_PRESET=-DBUIL
 .ENDIF # "$(GUI)"=="WNT"
 
 .IF "$(GUI)"=="OS2"
-BUILD_ACTION=cd src/hunspell && dmake
+BUILD_ACTION=cd src/hunspell && touch config.h && dmake
 .ENDIF # "$(GUI)"=="OS2"
 
 OUT2INC=									\

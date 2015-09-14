@@ -46,6 +46,9 @@ TARFILE_NAME=CoinMP-1.6.0
 TARFILE_MD5=2b5f1ca58d6ef30f18f1415b65bed81c
 
 PATCH_FILES=coinmp-1.6.0.patch coinmp-1.6.0-clang.patch
+.IF "$(OS)"=="OS2"
+PATCH_FILES+=coinmp-1.6.0-os2.patch
+.ENDIF
 
 .IF "$(COM)"=="MSC"
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv CoinMP\\MSVisualStudio\\v9\\CoinMP.sln "Release|Win32"
@@ -57,11 +60,18 @@ CONFIGURE_FLAGS=--disable-pkg-config --disable-bzlib --disable-zlib CC='$(CC) $(
 BUILD_ACTION= $(GNUMAKE) -j8
 .ENDIF
 
+.IF "$(OS)"=="OS2"
+CONFIGURE_FLAGS+= --disable-shared --enable-static
+.ENDIF
+
 OUT2INC+=CoinMP$/src/CoinMP.h
 
 .IF "$(OS)"=="WNT"
 OUT2BIN+=CoinMP$/MSVisualStudio$/v9$/release$/CoinMP.dll
 OUT2LIB+=CoinMP$/MSVisualStudio$/v9$/release$/CoinMP.lib
+.ELIF "$(OS)"=="OS2"
+OUT2BIN+=CoinMP$/src$/CoinMP.dll
+OUT2LIB+=CoinMP$/src$/.libs/CoinMP.lib
 .ELSE
 OUT2LIB+=CoinMP$/src$/.libs$/libCoinMP*$(DLLPOST)*
 OUT2LIB+=CoinUtils$/src$/.libs$/libCoinUtils*$(DLLPOST)*
