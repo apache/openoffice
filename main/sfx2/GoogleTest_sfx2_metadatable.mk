@@ -21,10 +21,27 @@
 
 
 
-UDK_3_0_0 {
-    global:
-        cppunitTestPlugIn;
+$(eval $(call gb_GoogleTest_GoogleTest,sfx2_metadatable))
 
-    local:
-        *;
-};
+$(eval $(call gb_GoogleTest_add_exception_objects,sfx2_metadatable, \
+	sfx2/qa/gtest/test_metadatable \
+))
+
+$(eval $(call gb_GoogleTest_add_linked_libs,sfx2_metadatable, \
+    sal \
+    sfx \
+    stl \
+    $(gb_STDLIBS) \
+))
+
+$(eval $(call gb_GoogleTest_set_include,sfx2_metadatable,\
+	$$(INCLUDE) \
+	-I$(OUTDIR)/inc/offuh \
+	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_GoogleTest_set_ldflags,sfx2_metadatable,\
+    $$(LDFLAGS) \
+))
+
+# vim: set noet sw=4 ts=4:
