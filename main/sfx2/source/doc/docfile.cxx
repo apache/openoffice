@@ -2533,7 +2533,7 @@ void SfxMedium::UseInteractionHandler( sal_Bool bUse )
 ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >
 SfxMedium::GetInteractionHandler()
 {
-    // if interaction isnt allowed explicitly ... return empty reference!
+    // if interaction isn't allowed explicitly ... return empty reference!
     if ( !pImp->bUseInteractionHandler )
         return ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >();
 
