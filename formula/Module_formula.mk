@@ -21,24 +21,15 @@
 
 
 
-PRJ=..$/..$/..
-PRJINC=$(PRJ)$/source
-PRJNAME=formula
-TARGET=core_resource
+$(eval $(call gb_Module_Module,formula))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Module_add_targets,formula,\
+	AllLangResTarget_for \
+	AllLangResTarget_forui \
+	Library_for \
+	Library_forui \
+	Package_inc \
+))
 
-.INCLUDE :  settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
 
-# --- Files --------------------------------------------------------
-
-SRS1NAME=core_strings
-SRC1FILES= \
-	core_resource.src
-
-SLOFILES=	$(SLO)$/core_resource.obj
-
-# --- Targets ----------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

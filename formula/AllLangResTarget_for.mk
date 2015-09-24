@@ -21,25 +21,25 @@
 
 
 
-PRJ=..$/..$/..
-PRJINC=$(PRJ)$/source
-PRJNAME=formula
-TARGET=ui_resource
-ENABLE_EXCEPTIONS=TRUE
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_AllLangResTarget_AllLangResTarget,for))
 
-.INCLUDE :  settings.mk
-.INCLUDE : $(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_AllLangResTarget_set_reslocation,for,formula))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_AllLangResTarget_add_srs,for,\
+	for/res \
+))
 
-#SRS1NAME=ui_res
-#SRC1FILES= \
-#    ui_resource.src
+$(eval $(call gb_SrsTarget_SrsTarget,for/res))
 
+$(eval $(call gb_SrsTarget_set_include,for/res,\
+	$$(INCLUDE) \
+	-I$(OUTDIR)/inc \
+	-I$(WORKDIR)/inc/formula \
+	-I$(SRCDIR)/formula/source/core/inc \
+	-I$(SRCDIR)/formula/source/core/api \
+	-I$(SRCDIR)/formula/source/core/resource \
+))
 
-SLOFILES=	$(SLO)$/ModuleHelper.obj \
-
-# --- Targets ----------------------------------
-
-.INCLUDE :  target.mk
+$(eval $(call gb_SrsTarget_add_files,for/res,\
+	formula/source/core/resource/core_resource.src \
+))
