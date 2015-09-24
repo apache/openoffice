@@ -21,23 +21,28 @@
 
 
 
-PRJ=..$/..$/..
-PRJINC=$(PRJ)$/source
-PRJNAME=formula
-TARGET=core_api
-ENABLE_EXCEPTIONS=TRUE
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_AllLangResTarget_AllLangResTarget,forui))
 
-.INCLUDE :  settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_AllLangResTarget_set_reslocation,forui,formula))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_AllLangResTarget_add_srs,forui,\
+	forui/res \
+))
 
-SLOFILES=	$(SLO)$/FormulaOpCodeMapperObj.obj  \
-            $(SLO)$/FormulaCompiler.obj         \
-            $(SLO)$/token.obj                   \
-            $(SLO)$/services.obj
+$(eval $(call gb_SrsTarget_SrsTarget,forui/res))
 
-# --- Targets ----------------------------------
+$(eval $(call gb_SrsTarget_set_include,forui/res,\
+	$$(INCLUDE) \
+	-I$(OUTDIR)/inc \
+	-I$(WORKDIR)/inc/formula \
+	-I$(SRCDIR)/formula/inc \
+	-I$(SRCDIR)/formula/inc/formula \
+	-I$(SRCDIR)/formula/source/ui/inc \
+	-I$(SRCDIR)/formula/source/ui/dlg \
+	-I$(SRCDIR)/formula/source/ui/resource \
+))
 
-.INCLUDE :  target.mk
+$(eval $(call gb_SrsTarget_add_files,forui/res,\
+	formula/source/ui/dlg/formdlgs.src \
+	formula/source/ui/dlg/parawin.src \
+))

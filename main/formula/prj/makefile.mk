@@ -21,42 +21,24 @@
 
 
 
-PRJ=..$/..$/..
-
-PRJNAME=formula
-TARGET=uidlg
-IMGLST_SRS=$(SRS)$/$(TARGET).srs
-BMP_IN=$(PRJ)$/res
-
-# --- Settings ----------------------------------
+PRJ=..
+TARGET=prj
 
 .INCLUDE : settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
 
-# --- Files -------------------------------------
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# ... resource files ............................
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-SRS1NAME=$(TARGET)
-SRC1FILES =	\
-		formdlgs.src	\
-		parawin.src	
-
-# ... object files ............................
-
-EXCEPTIONSFILES=	\
-		$(SLO)$/formula.obj					\
-		$(SLO)$/FormulaHelper.obj			\
-		$(SLO)$/parawin.obj				    \
-		$(SLO)$/funcutl.obj			        \
-		$(SLO)$/funcpage.obj			        \
-		$(SLO)$/structpg.obj
-		
-SLOFILES=	\
-		$(EXCEPTIONSFILES)
-
-
-# --- Targets ----------------------------------
-
-.INCLUDE : target.mk
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
