@@ -24,7 +24,12 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_bridges.hxx"
 
+#include <cstddef>
+#include <exception>
+#include <typeinfo>
+
 #include <stdio.h>
+#include <string.h>
 #include <dlfcn.h>
 #include <cxxabi.h>
 #include <hash_map>
@@ -177,7 +182,12 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 char const * rttiName = symName.getStr() +4;
 #if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
+#ifndef __GLIBCXX__ /* #i124421# */
+                const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
+                OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
+#endif /* __GLIBCXX__ */
 #endif
+#ifdef __GLIBCXX__ /* #i124421# */
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -191,6 +201,9 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     // this class has no base class
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
+#else /* __GLIBCXX__ */
+                rtti = NULL;
+#endif /* __GLIBCXX__ */
 
                 pair< t_rtti_map::iterator, bool > insertion(
                     m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
