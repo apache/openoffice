@@ -83,7 +83,6 @@ class Content : public ::ucbhelper::ContentImplHelper,
     rtl::OUString     m_aEscapedTitle;
     ResourceType      m_eResourceType;
     ContentProvider*  m_pProvider; // No need for a ref, base class holds object
-    // True if the DEV resource is a 'unmapped URL' as it is named in RFC4918
     bool              m_bTransient;
     bool              m_bCollection;
     bool              m_bDidGetOrHead;
@@ -138,20 +137,20 @@ private:
                      const std::auto_ptr< DAVResourceAccess > & rResAccess )
         throw ( ::com::sun::star::uno::Exception );
 
-    /// Command "open"
+    // Command "open"
     com::sun::star::uno::Any open(
                 const com::sun::star::ucb::OpenCommandArgument2 & rArg,
                 const com::sun::star::uno::Reference<
                     com::sun::star::ucb::XCommandEnvironment > & xEnv )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "post"
+    // Command "post"
     void post( const com::sun::star::ucb::PostCommandArgument2 & rArg,
                const com::sun::star::uno::Reference<
                     com::sun::star::ucb::XCommandEnvironment > & xEnv )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "insert"
+    // Command "insert"
     void insert( const ::com::sun::star::uno::Reference<
                      ::com::sun::star::io::XInputStream > & xInputStream,
                  sal_Bool bReplaceExisting,
@@ -159,22 +158,22 @@ private:
                      com::sun::star::ucb::XCommandEnvironment >& Environment )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "transfer"
+    // Command "transfer"
     void transfer( const ::com::sun::star::ucb::TransferInfo & rArgs,
                    const com::sun::star::uno::Reference<
                        com::sun::star::ucb::XCommandEnvironment >& Environment )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "delete"
+    // Command "delete"
     void destroy( sal_Bool bDeletePhysical )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "lock"
+    // Command "lock"
     void lock( const com::sun::star::uno::Reference<
                   com::sun::star::ucb::XCommandEnvironment >& Environment )
         throw( ::com::sun::star::uno::Exception );
 
-    /// Command "unlock"
+    // Command "unlock"
     void unlock( const com::sun::star::uno::Reference<
                   com::sun::star::ucb::XCommandEnvironment >& Environment )
         throw( ::com::sun::star::uno::Exception );
@@ -194,7 +193,7 @@ private:
         const com::sun::star::uno::Reference<
             com::sun::star::ucb::XCommandEnvironment >& Environment );
 
-    /// XPropertyContainer replacement
+    // XPropertyContainer replacement
     void addProperty( const com::sun::star::ucb::PropertyCommandArgument &aCmdArg,
                       const com::sun::star::uno::Reference<
                       com::sun::star::ucb::XCommandEnvironment >& Environment )
@@ -227,13 +226,13 @@ public:
         throw ( ::com::sun::star::ucb::ContentCreationException );
     virtual ~Content();
 
-    /// XInterface
+    // XInterface
     XINTERFACE_DECL()
 
-    /// XTypeProvider
+    // XTypeProvider
     XTYPEPROVIDER_DECL()
 
-    /// XServiceInfo
+    // XServiceInfo
     virtual ::rtl::OUString SAL_CALL
     getImplementationName()
         throw( ::com::sun::star::uno::RuntimeException );
@@ -242,12 +241,12 @@ public:
     getSupportedServiceNames()
         throw( ::com::sun::star::uno::RuntimeException );
 
-    /// XContent
+    // XContent
     virtual rtl::OUString SAL_CALL
     getContentType()
         throw( com::sun::star::uno::RuntimeException );
 
-    /// XCommandProcessor
+    // XCommandProcessor
     virtual com::sun::star::uno::Any SAL_CALL
     execute( const com::sun::star::ucb::Command& aCommand,
              sal_Int32 CommandId,
@@ -260,7 +259,7 @@ public:
     abort( sal_Int32 CommandId )
         throw( com::sun::star::uno::RuntimeException );
 
-    /// XPropertyContainer
+    // XPropertyContainer
     virtual void SAL_CALL
     addProperty( const rtl::OUString& Name,
                  sal_Int16 Attributes,
@@ -296,7 +295,7 @@ public:
 
     DAVResourceAccess & getResourceAccess() { return *m_xResAccess; }
 
-    /** Called from resultset data supplier. */
+    // Called from resultset data supplier.
     static ::com::sun::star::uno::Reference< ::com::sun::star::sdbc::XRow >
     getPropertyValues( const ::com::sun::star::uno::Reference<
                            ::com::sun::star::lang::XMultiServiceFactory >& rSMgr,
@@ -306,9 +305,6 @@ public:
                        const rtl::Reference<
                            ::ucbhelper::ContentProviderImplHelper >& rProvider,
                        const ::rtl::OUString& rContentId );
-
-    /** returns the owner of current resource lock */
-    rtl::OUString getLockOwner( const uno::Reference< ucb::XCommandEnvironment >& Environment );
 };
 
 }

@@ -32,12 +32,10 @@ namespace http_dav_ucp
 SerfCopyReqProcImpl::SerfCopyReqProcImpl( const char* inSourcePath,
                                           const DAVRequestHeaders& inRequestHeaders,
                                           const char* inDestinationPath,
-                                          const bool inOverwrite,
-                                          const char* inLockToken )
+                                          const bool inOverwrite )
     : SerfRequestProcessorImpl( inSourcePath, inRequestHeaders )
     , mDestPathStr( inDestinationPath )
     , mbOverwrite( inOverwrite )
-    , mpLockToken( inLockToken )
 {
 }
 
@@ -68,10 +66,6 @@ serf_bucket_t * SerfCopyReqProcImpl::createSerfRequestBucket( serf_request_t * i
     else
     {
         serf_bucket_headers_set( hdrs_bkt, "Overwrite", "F" );
-    }
-    if(mpLockToken)
-    {
-        serf_bucket_headers_set( hdrs_bkt, "if", mpLockToken );
     }
 
     return req_bkt;

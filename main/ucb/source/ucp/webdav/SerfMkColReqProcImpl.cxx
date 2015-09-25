@@ -30,10 +30,8 @@ namespace http_dav_ucp
 {
 
 SerfMkColReqProcImpl::SerfMkColReqProcImpl( const char* inPath,
-                                            const DAVRequestHeaders& inRequestHeaders,
-                                            const char* inLockToken )
+                                            const DAVRequestHeaders& inRequestHeaders )
     : SerfRequestProcessorImpl( inPath,inRequestHeaders )
-    , mpLockToken( inLockToken )
 {
 }
 

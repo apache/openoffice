@@ -131,10 +131,6 @@ SLOFILES=\
     $(SLO)$/SerfMkColReqProcImpl.obj \
     $(SLO)$/SerfCopyReqProcImpl.obj \
     $(SLO)$/SerfMoveReqProcImpl.obj \
-    $(SLO)$/SerfLockReqProcImpl.obj \
-    $(SLO)$/SerfLockRefreshProcImpl.obj \
-    $(SLO)$/SerfUnlockProcImpl.obj \
-    $(SLO)$/SerfLockStore.obj \
     $(SLO)$/SerfSession.obj \
     $(SLO)$/SerfCallbacks.obj \
     $(SLO)$/SerfInputStream.obj \
@@ -152,7 +148,6 @@ SHL1IMPLIB=i$(TARGET)
 SHL1VERSIONMAP=$(SOLARENV)/src/component.map
 
 SHL1STDLIBS+=\
-        $(TOOLSLIB) \
         $(CPPUHELPERLIB) \
         $(CPPULIB)       \
         $(SALLIB)        \

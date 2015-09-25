@@ -29,12 +29,9 @@ namespace http_dav_ucp
 
 class SerfDeleteReqProcImpl : public SerfRequestProcessorImpl
 {
-private:
-    const char* mpLockToken;
 public:
     SerfDeleteReqProcImpl( const char* inPath,
-                           const DAVRequestHeaders& inRequestHeaders,
-                           const char* inLockRToken );
+                           const DAVRequestHeaders& inRequestHeaders );
 
     virtual ~SerfDeleteReqProcImpl();
 

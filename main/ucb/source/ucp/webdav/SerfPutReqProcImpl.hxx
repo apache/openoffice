@@ -33,7 +33,6 @@ public:
     SerfPutReqProcImpl( const char* inPath,
                         const DAVRequestHeaders& inRequestHeaders,
                         const char* inData,
-                        const char* inLockToken,
                         apr_size_t inDataLen );
     
 
@@ -51,7 +50,6 @@ protected:
 
 private:
     const char* mpData;
-    const char* mpLockToken;
     apr_size_t mnDataLen;
 
 };

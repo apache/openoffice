@@ -35,11 +35,9 @@ namespace http_dav_ucp
 
 SerfPropPatchReqProcImpl::SerfPropPatchReqProcImpl( const char* inPath,
                                                     const DAVRequestHeaders& inRequestHeaders,
-                                                    const std::vector< ProppatchValue > & inProperties,
-                                                    const char* inLockToken )
+                                                    const std::vector< ProppatchValue > & inProperties )
     : SerfRequestProcessorImpl( inPath, inRequestHeaders )
     , mpProperties( &inProperties )
-    , mpLockToken( inLockToken )
 {
 }
 
@@ -169,10 +167,6 @@ serf_bucket_t * SerfPropPatchReqProcImpl::createSerfRequestBucket( serf_request_
         setRequestHeaders( hdrs_bkt );
 
         // request specific header fields
-        if(mpLockToken)
-        {
-            serf_bucket_headers_set( hdrs_bkt, "if", mpLockToken );
-        }
         if ( body_bkt != 0 && aBodyText.getLength() > 0 )
         {
             serf_bucket_headers_set( hdrs_bkt, "Content-Type", "application/xml" );

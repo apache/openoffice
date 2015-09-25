@@ -27,10 +27,9 @@
 #include <vector>
 #include <boost/shared_ptr.hpp>
 #include <osl/mutex.hxx>
-#include "DAVResource.hxx"
 #include "DAVSession.hxx"
 #include "SerfTypes.hxx"
-#include "SerfLockStore.hxx"
+//#include "SerfLockStore.hxx"
 #include "SerfUri.hxx"
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
@@ -55,9 +54,6 @@ private:
     
     rtl::OUString           m_aProxyName;
     sal_Int32               m_nProxyPort;
-    // The server, according RFC7231
-    // http://tools.ietf.org/html/rfc7231#section-7.4.2
-    rtl::OUString           m_aServerHeaderField;
     
     SerfConnection*         m_pSerfConnection;
     serf_context_t*         m_pSerfContext;
@@ -70,14 +66,12 @@ private:
 
     DAVRequestEnvironment m_aEnv;
 
-    static SerfLockStore m_aSerfLockStore;
+//    static SerfLockStore m_aSerfLockStore;
 
     char* getHostinfo();
     bool isSSLNeeded();
 
-    SerfRequestProcessor*   createReqProc( const rtl::OUString & inPath );
-
-    rtl::OUString           composeCurrentUri( const rtl::OUString & inPath );
+    SerfRequestProcessor* createReqProc( const rtl::OUString & inPath );
 
 protected:
     virtual ~SerfSession();
@@ -263,10 +257,6 @@ public:
     { return m_xFactory->getServiceFactory(); }
 
     sal_Bool isDomainMatch( rtl::OUString certHostName );
-
-    const rtl::OUString & getServerHeaderField() { return m_aServerHeaderField; };
-
-    void setServerHeaderField( rtl::OUString aServerHeaderField ) { m_aServerHeaderField = aServerHeaderField; };
 
 private:
     friend class SerfLockStore;

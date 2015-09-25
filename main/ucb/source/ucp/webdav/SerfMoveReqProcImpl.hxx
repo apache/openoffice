@@ -33,8 +33,7 @@ public:
     SerfMoveReqProcImpl( const char* inSourcePath,
                          const DAVRequestHeaders& inRequestHeaders,
                          const char* inDestinationPath,
-                         const bool inOverwrite,
-                         const char* inLockToken );
+                         const bool inOverwrite );
 
     virtual ~SerfMoveReqProcImpl();
 
@@ -50,8 +49,7 @@ protected:
 
 private:
     const char* mDestPathStr;
-    const bool  mbOverwrite;
-    const char* mpLockToken;
+    const bool mbOverwrite;
 };
 
 } // namespace http_dav_ucp

@@ -33,8 +33,7 @@ public:
     SerfCopyReqProcImpl( const char* inSourcePath,
                          const DAVRequestHeaders& inRequestHeaders,
                          const char* inDestinationPath,
-                         const bool inOverwrite,
-                         const char*  inLockToken );
+                         const bool inOverwrite );
 
     virtual ~SerfCopyReqProcImpl();
 
@@ -51,7 +50,6 @@ protected:
 private:
     const char* mDestPathStr;
     const bool mbOverwrite;
-    const char* mpLockToken;
 };
 
 } // namespace http_dav_ucp

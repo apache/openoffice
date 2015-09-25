@@ -27,7 +27,6 @@
 #include "DAVTypes.hxx"
 #include "DAVResource.hxx"
 
-#include "SerfTypes.hxx"
 #include "SerfRequestProcessorImpl.hxx"
 #include "SerfInputStream.hxx"
 #include <com/sun/star/io/XOutputStream.hpp>
@@ -47,8 +46,7 @@ namespace http_dav_ucp
 
     SerfRequestProcessorImpl* createPropPatchReqProcImpl( const char* inPath,
                                                           const DAVRequestHeaders& inRequestHeaders,
-                                                          const std::vector< ProppatchValue > & inProperties,
-                                                          const char* inLockToken );
+                                                          const std::vector< ProppatchValue > & inProperties );
 
     SerfRequestProcessorImpl* createGetReqProcImpl( const char* inPath,
                                                     const DAVRequestHeaders& inRequestHeaders,
@@ -78,14 +76,12 @@ namespace http_dav_ucp
     SerfRequestProcessorImpl* createPutReqProcImpl( const char* inPath,
                                                     const DAVRequestHeaders& inRequestHeaders,
                                                     const char* inData,
-                                                    const char* inLockToken,
                                                     apr_size_t inDataLen );
 
     SerfRequestProcessorImpl* createPostReqProcImpl( const char* inPath,
                                                      const DAVRequestHeaders& inRequestHeaders,
                                                      const char* inData,
                                                      apr_size_t inDataLen,
-                                                     const char* inLockToken,
                                                      const char* inContentType,
                                                      const char* inReferer,
                                                      const com::sun::star::uno::Reference< SerfInputStream >& xioInStrm );
@@ -94,48 +90,25 @@ namespace http_dav_ucp
                                                      const DAVRequestHeaders& inRequestHeaders,
                                                      const char* inData,
                                                      apr_size_t inDataLen,
-                                                     const char* inLockToken,
                                                      const char* inContentType,
                                                      const char* inReferer,
                                                      const com::sun::star::uno::Reference< com::sun::star::io::XOutputStream >& xioOutStrm );
 
     SerfRequestProcessorImpl* createDeleteReqProcImpl( const char* inPath,
-                                                       const DAVRequestHeaders& inRequestHeaders,
-                                                       const char * inLockToken );
+                                                       const DAVRequestHeaders& inRequestHeaders );
 
     SerfRequestProcessorImpl* createMkColReqProcImpl( const char* inPath,
-                                                      const DAVRequestHeaders& inRequestHeaders,
-                                                      const char * inLockToken );
+                                                      const DAVRequestHeaders& inRequestHeaders );
 
     SerfRequestProcessorImpl* createCopyReqProcImpl( const char* inSourcePath,
                                                      const DAVRequestHeaders& inRequestHeaders,
                                                      const char* inDestinationPath,
-                                                     const bool inOverwrite,
-                                                     const char* inLockToken );
+                                                     const bool inOverwrite );
 
     SerfRequestProcessorImpl* createMoveReqProcImpl( const char* inSourcePath,
                                                      const DAVRequestHeaders& inRequestHeaders,
                                                      const char* inDestinationPath,
-                                                     const bool inOverwrite,
-                                                     const char* inLockToken );
-
-    SerfRequestProcessorImpl* createLockReqProcImpl( const char* inSourcePath,
-                                                     const DAVRequestHeaders& inRequestHeaders,
-                                                     const ucb::Lock& inLock,
-                                                     const char* inTimeout,
-                                                     DAVPropertyValue & outLock );
-
-    SerfRequestProcessorImpl* createLockRefreshProcImpl( const char* inSourcePath,
-                                                     const DAVRequestHeaders& inRequestHeaders,
-                                                     const ucb::Lock& inLock,
-                                                     const char* inToken,
-                                                     const char* inTimeout,
-                                                     DAVPropertyValue & outLock );
-
-    SerfRequestProcessorImpl* createUnlockProcImpl( const char* inSourcePath,
-                                                     const DAVRequestHeaders& inRequestHeaders,
-                                                     const ucb::Lock& inLock,
-                                                     const char* inToken );
+                                                     const bool inOverwrite );
 
 } // namespace http_dav_ucp
 
