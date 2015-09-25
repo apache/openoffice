@@ -19,41 +19,33 @@
  * 
  *************************************************************/
 
-#ifndef INCLUDED_SERFCOPYREQPROCIMPL_HXX
-#define INCLUDED_SERFCOPYREQPROCIMPL_HXX
+#ifndef INCLUDED_SERFLOCKREFRESHPROCIMPL_HXX
+#define INCLUDED_SERFLOCKREFRESHPROCIMPL_HXX
 
-#include "SerfRequestProcessorImpl.hxx"
+#include "SerfLockReqProcImpl.hxx"
 
 namespace http_dav_ucp
 {
 
-class SerfCopyReqProcImpl : public SerfRequestProcessorImpl
-{
-public:
-    SerfCopyReqProcImpl( const char* inSourcePath,
-                         const DAVRequestHeaders& inRequestHeaders,
-                         const char* inDestinationPath,
-                         const bool inOverwrite,
-                         const char*  inLockToken );
+    class SerfLockRefreshProcImpl : public SerfLockReqProcImpl
+    {
+    protected:
+        const char*         mpLockToken;
 
-    virtual ~SerfCopyReqProcImpl();
+    public:
+        SerfLockRefreshProcImpl( const char* inSourcePath,
+                                 const DAVRequestHeaders& inRequestHeaders,
+                                 const ucb::Lock& inLock,
+                                 const char* inLockToken,
+                                 const char* inTimeout,
+                                 DAVPropertyValue & outLock);
 
-    virtual
-    serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest );
+        virtual ~SerfLockRefreshProcImpl();
 
-protected:
-    virtual
-    void processChunkOfResponseData( const char* data, apr_size_t len );
-
-    virtual
-    void handleEndOfResponseData( serf_bucket_t * inSerfResponseBucket );
-
-private:
-    const char* mDestPathStr;
-    const bool mbOverwrite;
-    const char* mpLockToken;
-};
+        virtual
+        serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest );
+    };
 
 } // namespace http_dav_ucp
 
-#endif // INCLUDED_SERFCOPYREQPROCIMPL_HXX
+#endif // INCLUDED_SERFLOCKREFRESHPROCIMPL_HXX

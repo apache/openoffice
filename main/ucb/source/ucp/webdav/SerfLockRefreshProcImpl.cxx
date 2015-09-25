@@ -22,51 +22,59 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_ucb.hxx"
 
-#include "SerfMkColReqProcImpl.hxx"
+#include "SerfTypes.hxx"
+#include "SerfLockRefreshProcImpl.hxx"
+#include "DAVProperties.hxx"
 
-#include <serf.h>
+#include "webdavresponseparser.hxx"
+#include <serf/serf.h>
+#include <rtl/ustrbuf.hxx>
+#include <apr/apr_strings.h>
 
 namespace http_dav_ucp
 {
 
-SerfMkColReqProcImpl::SerfMkColReqProcImpl( const char* inPath,
-                                            const DAVRequestHeaders& inRequestHeaders,
-                                            const char* inLockToken )
-    : SerfRequestProcessorImpl( inPath,inRequestHeaders )
+SerfLockRefreshProcImpl::SerfLockRefreshProcImpl( const char* inSourcePath,
+                                                  const DAVRequestHeaders& inRequestHeaders, // on debug the header look empty
+                                                  const ucb::Lock& inLock,
+                                                  const char* inLockToken,
+                                                  const char* inTimeout,
+                                          DAVPropertyValue & outLock)
+    : SerfLockReqProcImpl( inSourcePath, inRequestHeaders, inLock, inTimeout, outLock )
     , mpLockToken( inLockToken )
 {
 }
 
-SerfMkColReqProcImpl::~SerfMkColReqProcImpl()
+SerfLockRefreshProcImpl::~SerfLockRefreshProcImpl()
 {
 }
 
-serf_bucket_t * SerfMkColReqProcImpl::createSerfRequestBucket( serf_request_t * inSerfRequest )
+serf_bucket_t * SerfLockRefreshProcImpl::createSerfRequestBucket( serf_request_t * inSerfRequest )
 {
     // create serf request
-    serf_bucket_t *req_bkt = serf_request_bucket_request_create( inSerfRequest, 
-                                                                 "MKCOL",
+    serf_bucket_t *req_bkt = serf_request_bucket_request_create( inSerfRequest,
+                                                                 "LOCK",
                                                                  getPathStr(),
                                                                  0,
                                                                  serf_request_get_alloc( inSerfRequest ) );
-
     // set request header fields
     serf_bucket_t* hdrs_bkt = serf_bucket_request_get_headers( req_bkt );
-    // general header fields provided by caller
-    setRequestHeaders( hdrs_bkt );
+    if (hdrs_bkt != NULL)
+    {
+        // general header fields provided by caller
+        setRequestHeaders( hdrs_bkt );
 
+        // request specific header fields
+        if(mTimeout != 0)
+        {
+            serf_bucket_headers_set( hdrs_bkt, "Timeout", mTimeout );
+        }
+        if(mpLockToken != 0)
+        {
+            serf_bucket_headers_set( hdrs_bkt, "if", mpLockToken );
+        }
+    }
     return req_bkt;
-}
-
-void SerfMkColReqProcImpl::processChunkOfResponseData( const char* /*data*/, 
-                                                       apr_size_t /*len*/ )
-{
-    // nothing to do;
-}
-
-void SerfMkColReqProcImpl::handleEndOfResponseData( serf_bucket_t * /*inSerfResponseBucket*/ )
-{
-    // nothing to do;
 }
 
 } // namespace http_dav_ucp

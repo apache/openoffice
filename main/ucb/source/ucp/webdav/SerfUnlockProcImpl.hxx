@@ -19,42 +19,51 @@
  * 
  *************************************************************/
 
-#ifndef INCLUDED_SERFPROPPATCHREQPROCIMPL_HXX
-#define INCLUDED_SERFPROPPATCHREQPROCIMPL_HXX
+#ifndef INCLUDED_SERFUNLOCKPROCIMPL_HXX
+#define INCLUDED_SERFUNLOCKPROCIMPL_HXX
 
+#include "SerfTypes.hxx"
 #include "SerfRequestProcessorImpl.hxx"
 
+#include "SerfInputStream.hxx"
+
 #include <vector>
+#include <rtl/ustring.hxx>
+#include "SerfTypes.hxx"
 #include "DAVTypes.hxx"
+#include "DAVResource.hxx"
 
 namespace http_dav_ucp
 {
 
-class SerfPropPatchReqProcImpl : public SerfRequestProcessorImpl
-{
-public:
-    SerfPropPatchReqProcImpl( const char* inPath,
-                              const DAVRequestHeaders& inRequestHeaders,
-                              const std::vector< ProppatchValue > & inProperties,
-                              const char* inLockToken );
+    class SerfUnlockProcImpl : public SerfRequestProcessorImpl
+    {
 
-    virtual ~SerfPropPatchReqProcImpl();
+    protected:
+        const ucb::Lock     mLock;
+        const char*         mpLockToken;
+        com::sun::star::uno::Reference< SerfInputStream > xInputStream;
 
-    virtual
-    serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest );
+    public:
+        SerfUnlockProcImpl( const char* inSourcePath,
+                            const DAVRequestHeaders& inRequestHeaders,
+                            const ucb::Lock& inLock,
+                            const char* inLockToken );
 
-protected:
-    virtual
-    void processChunkOfResponseData( const char* data, apr_size_t len );
+        virtual ~SerfUnlockProcImpl();
 
-    virtual
-    void handleEndOfResponseData( serf_bucket_t * inSerfResponseBucket );
+        virtual
+        serf_bucket_t * createSerfRequestBucket( serf_request_t * inSerfRequest );
 
-private:
-    const std::vector< ProppatchValue > * mpProperties;
-    const  char *mpLockToken;
-};
+    protected:
+        virtual
+        void processChunkOfResponseData( const char* data, apr_size_t len );
+
+        virtual
+        void handleEndOfResponseData( serf_bucket_t * inSerfResponseBucket );
+
+    };
 
 } // namespace http_dav_ucp
 
-#endif // INCLUDED_SERFPROPPATCHREQPROCIMPL_HXX
+#endif // INCLUDED_SERFUNLOCKPROCIMPL_HXX

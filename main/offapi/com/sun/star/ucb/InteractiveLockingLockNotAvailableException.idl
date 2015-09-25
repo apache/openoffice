@@ -20,8 +20,8 @@
  *************************************************************/
 
 
-#ifndef __com_sun_star_ucb_InteractiveLockingLockedException_idl__
-#define __com_sun_star_ucb_InteractiveLockingLockedException_idl__
+#ifndef __com_sun_star_ucb_InteractiveLockingLockNotAvailableException_idl__
+#define __com_sun_star_ucb_InteractiveLockingLockNotAvailableException_idl__
 
 #ifndef __com_sun_star_ucb_InteractiveLockingException_idl__
 #include <com/sun/star/ucb/InteractiveLockingException.idl>
@@ -33,26 +33,12 @@
 module com { module sun { module star { module ucb {
 
 //=============================================================================
-/** An error indicating that the resource is locked.
+/** An error indicating that the resource can not be locked because the lock capabiliy is not available
 
-    @since OpenOffice 3.3
+    @since OpenOffice 4.2
 */
-/*published*/ exception InteractiveLockingLockedException : com::sun::star::ucb::InteractiveLockingException
+/*published*/ exception InteractiveLockingLockNotAvailableException : com::sun::star::ucb::InteractiveLockingException
 {
-    //-------------------------------------------------------------------------
-    /** The owner of the lock.
-
-        <true/>, the lock has been obtained by this OpenOffice session.
-        <false/> the lock has been obtained by another principal.
-    */
-    boolean SelfOwned;
-    //->i126305 -------------------------------------------------------------------------
-    /** The owner of the lock.
-     *
-     *  Used for WevDAV interface
-    */
-    string Owner;
-    //<-i126305
 };
 
 //=============================================================================
