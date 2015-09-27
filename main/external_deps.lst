@@ -25,7 +25,9 @@
 # fallback server is used.
 
 # The primary fallback site.
-OOO_EXTRAS=http://ooo-extras.apache-extras.org.codespot.com/files/
+# OOO_EXTRAS=http://ooo-extras.apache-extras.org.codespot.com/files/
+
+OOO_EXTRAS=http://sourceforge.net/projects/oooextras.mirror/files/
 
 # Must not fallback to svn
 # SVN_TRUNK=http://svn.apache.org/repos/asf/!svn/bc/1336449/incubator/ooo/trunk/ext_sources/
@@ -252,9 +254,10 @@ if (RAT_JAR_HOME==BUILD)
 #
 
 if (ENABLE_CATEGORY_B==YES && SYSTEM_COINMP!=YES)
-    MD5 = 2b5f1ca58d6ef30f18f1415b65bed81c
-    name = CoinMP-1.6.0.tgz
-    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+    MD5 = 1cce53bf4b40ae29790d2c5c9f8b1129
+    name = CoinMP-1.7.6.tgz
+    # URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL1 = http://www.coin-or.org/download/source/CoinMP/$(name)
 
 if (WITH_CATB_FONTS == YES)
     MD5 = 35efabc239af896dfb79be7ebdd6e6b9

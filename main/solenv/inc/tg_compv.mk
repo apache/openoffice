@@ -35,9 +35,15 @@ CFLAGSVERSION=-dumpversion
 CFLAGSVERSION_CMD=-dumpversion
 CFLAGSNUMVERSION_CMD=-dumpversion $(PIPEERROR) $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
 #CFLAGSNUMVERSION_CMD=-dumpversion | 2>&1  $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
+.ELIF "$(COM)"=="CLANG"
+CFLAGSVERSION=--version
+CFLAGSVERSION_CMD=--version | head -n1 | sed -e"s/.*version //" -e"s/ .*//"
+.IF "$(OS)"="FREEBSD"
+CFLAGSNUMVERSION_CMD=${CFLAGSVERSION_CMD} | $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
+.ELSE
+CFLAGSNUMVERSION_CMD=${CFLAGSVERSION_CMD} | sed -e"s/\.//"
 .ENDIF
-
-.IF "$(COM)"=="MSC"
+.ELIF "$(COM)"=="MSC"
 CFLAGSVERSION=
 CFLAGSVERSION_CMD=  $(PIPEERROR) $(AWK) -f $(SOLARENV)/bin/getcompver.awk
 CFLAGSNUMVERSION_CMD=  $(PIPEERROR) $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
@@ -130,8 +136,13 @@ COMNAME=MipsPro
 .ENDIF
 
 .IF "$(COM)"=="CLANG"
+.IF "$(OS)" == "FREEBSD"
+COMID=gcc3
+COMNAME=gcc3
+.ELSE
 COMID=s5abi
 COMNAME=s5abi
+.ENDIF
 .ENDIF
 
 .IF "$(COMNAME)"==""

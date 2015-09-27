@@ -24,14 +24,16 @@
 
 #include "SerfMkColReqProcImpl.hxx"
 
-#include <serf/serf.h>
+#include <serf.h>
 
 namespace http_dav_ucp
 {
 
 SerfMkColReqProcImpl::SerfMkColReqProcImpl( const char* inPath,
-                                            const DAVRequestHeaders& inRequestHeaders )
+                                            const DAVRequestHeaders& inRequestHeaders,
+                                            const char* inLockToken )
     : SerfRequestProcessorImpl( inPath,inRequestHeaders )
+    , mpLockToken( inLockToken )
 {
 }
 

@@ -1651,7 +1651,7 @@ WW8PLCFpcd* WW8ScannerBase::OpenPieceTable( SvStream* pStr, const WW8Fib* pWwF )
     sal_uInt8 clxt;
 
     pStr->Seek( nClxPos );
-    while( 1 ) // Zaehle Zahl der Grpprls
+    while( nGrpprl < SAL_MAX_INT16 ) // Zaehle Zahl der Grpprls
     {
         *pStr >> clxt;
         nLeft--;
@@ -1666,6 +1666,8 @@ WW8PLCFpcd* WW8ScannerBase::OpenPieceTable( SvStream* pStr, const WW8Fib* pWwF )
             return 0;                           // schiefgegangen
         pStr->SeekRel( nLen );                  // ueberlies grpprl
     }
+    if ( nGrpprl == SAL_MAX_INT16 )
+        return 0;
     pStr->Seek( nClxPos );
     nLeft = nClxLen;
     pPieceGrpprls = new sal_uInt8*[nGrpprl + 1];
@@ -4160,8 +4162,6 @@ WW8PLCFx_Book::WW8PLCFx_Book(SvStream* pTblSt, const WW8Fib& rFib)
 
         if( pBook[0]->GetIMax() < nIMax )   // Count of Bookmarks
             nIMax = pBook[0]->GetIMax();
-        if( pBook[1]->GetIMax() < nIMax )
-            nIMax = pBook[1]->GetIMax();
         pStatus = new eBookStatus[ nIMax ];
         memset( pStatus, 0, nIMax * sizeof( eBookStatus ) );
     }
@@ -4298,7 +4298,8 @@ long WW8PLCFx_Book::GetLen() const
 void WW8PLCFx_Book::SetStatus(sal_uInt16 nIndex, eBookStatus eStat )
 {
     ASSERT(nIndex < nIMax, "set status of non existing bookmark!");
-    pStatus[nIndex] = (eBookStatus)( pStatus[nIndex] | eStat );
+    if ( nIndex < nIMax )
+        pStatus[nIndex] = (eBookStatus)( pStatus[nIndex] | eStat );
 }
 
 eBookStatus WW8PLCFx_Book::GetStatus() const

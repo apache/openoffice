@@ -68,6 +68,9 @@ DEF1EXPORTFILE = xsec_fw.dxp
 #
 
 SHL2NAME=xsec_xmlsec
+.IF "$(GUI)"=="OS2"
+SHL2NAME=xsec_xs
+.ENDIF
 SHL2TARGET= $(SHL2NAME)
 
 
@@ -98,12 +101,16 @@ SHL2STDLIBS +=			\
 SHL2STDLIBS +=-ldl
 .ENDIF
 
-.IF "$(ENABLE_NSS_MODULE)"=="YES" && "$(SYSTEM_NSS)"!="YES"
+.IF "$(ENABLE_NSS_MODULE)"=="YES"
+.IF "$(SYSTEM_NSS)"!="YES"
 .IF "$(NSPR_LIB)" != ""
 SHL2STDLIBS += $(NSPR_LIB)
 .ENDIF
 .IF "$(NSS_LIB)" != ""
 SHL2STDLIBS += $(NSS_LIB)
+.ENDIF
+.ELSE
+SHL2STDLIBS += $(NSS_LIBS)
 .ENDIF
 .ENDIF
 
@@ -134,6 +141,9 @@ RESLIB1IMAGES=$(PRJ)$/res
 RESLIB1SRSFILES= $(SRSFILELIST)
 
 SHL4TARGET=$(TARGET)
+.IF "$(GUI)"=="OS2"
+SHL4TARGET=xmlsecur
+.ENDIF
 SHL4LIBS=\
                 $(SLB)$/helper.lib      \
                 $(SLB)$/dialogs.lib     \
