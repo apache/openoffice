@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter01mailmerge04xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Mail Merge Wizard - Greeting Line</title>
+<filename>/text/swriter/01/mailmerge04.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-07T13:13:31">UFI: Mail Merge Wizard page 4</created>
+<lastedited date="2007-02-05T09:48:21">DEDR: Reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="greetingline">
+<paragraph role="heading" id="par_idN10543" xml-lang="en-US" level="1" l10n="NEW"><link href="text/swriter/01/mailmerge04.xhp">Mail Merge Wizard - Create a Salutation</link></paragraph>
+<paragraph role="paragraph" id="par_idN10553" xml-lang="en-US" l10n="NEW">Specify the properties for the salutation. If the mail merge database contains gender information, you can specify different salutations based on the gender of the recipient.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/SW_CHECKBOX_DLG_MM_GREETINGS_PAGE_CB_GREETINGLINE" id="bm_id274666" localize="false"/>
+<paragraph role="heading" id="par_idN10556" xml-lang="en-US" level="2" l10n="NEW">This document should contain a salutation</paragraph>
+<paragraph role="paragraph" id="par_idN1055A" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Adds a salutation.</ahelp></paragraph>
+<!-- removed HID 898253826 -->
+<paragraph role="heading" id="par_idN1055D" xml-lang="en-US" level="3" l10n="NEW">Insert personalized salutation</paragraph>
+<paragraph role="paragraph" id="par_idN10561" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Adds a personalized salutation to the mail merge document. To use the default salutation, clear this check box.</ahelp></paragraph>
+<!-- removed HID 898256387 -->
+<paragraph role="heading" id="par_idN10564" xml-lang="en-US" level="4" l10n="NEW">Female</paragraph>
+<paragraph role="paragraph" id="par_idN10568" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the personalized greeting for a female recipient.</ahelp></paragraph>
+<!-- removed HID 898257412 -->
+<paragraph role="heading" id="par_idN1056B" xml-lang="en-US" level="4" l10n="NEW">New</paragraph>
+<paragraph role="paragraph" id="par_idN1056F" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/swriter/01/mm_cusgrelin.xhp">Custom Salutation</link> (Female recipient) dialog.</ahelp></paragraph>
+<!-- removed HID 898256389 -->
+<paragraph role="heading" id="par_idN10580" xml-lang="en-US" level="4" l10n="NEW">Male</paragraph>
+<paragraph role="paragraph" id="par_idN10584" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the personalized greeting for a male recipient.</ahelp></paragraph>
+<!-- removed HID 898257414 -->
+<paragraph role="heading" id="par_idN10587" xml-lang="en-US" level="4" l10n="NEW">New</paragraph>
+<paragraph role="paragraph" id="par_idN1058B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/swriter/01/mm_cusgrelin.xhp">Custom Salutation</link> (Male recipient) dialog.</ahelp></paragraph>
+<!-- removed HID 898256393 -->
+<paragraph role="heading" id="par_idN1059C" xml-lang="en-US" level="4" l10n="NEW">Field name</paragraph>
+<paragraph role="paragraph" id="par_idN105A0" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the field name of the address database field that contains the gender information.</ahelp></paragraph>
+<!-- removed HID 898256907 -->
+<paragraph role="heading" id="par_idN105A3" xml-lang="en-US" level="4" l10n="NEW">Field value</paragraph>
+<paragraph role="paragraph" id="par_idN105A7" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the field value that indicates the gender of the recipient.</ahelp></paragraph>
+<!-- removed HID 898256910 -->
+<paragraph role="heading" id="par_idN105AA" xml-lang="en-US" level="3" l10n="NEW">General salutation</paragraph>
+<paragraph role="paragraph" id="par_idN105AE" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the default salutation that is used when you do not specify a personalized salutation.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN105B1" xml-lang="en-US" level="3" l10n="NEW">Preview</paragraph>
+<paragraph role="paragraph" id="par_idN105B5" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Displays a preview of the salutation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_PUSHBUTTON_DLG_MM_GREETINGS_PAGE_PB_ASSIGN" id="bm_id9288918" localize="false"/>
+<paragraph role="heading" id="par_idN105B8" xml-lang="en-US" level="4" l10n="NEW">Match fields</paragraph>
+<paragraph role="paragraph" id="par_idN105BC" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the <link href="text/swriter/01/mm_matfie.xhp">Match Fields</link> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_IMAGEBUTTON_DLG_MM_GREETINGS_PAGE_IB_PREVSET" id="bm_id3859675" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_IMAGEBUTTON_DLG_MM_GREETINGS_PAGE_IB_NEXTSET" id="bm_id991546" localize="false"/>
+<paragraph role="heading" id="par_idN105CD" xml-lang="en-US" level="4" l10n="NEW">(Browse buttons)</paragraph>
+<paragraph role="paragraph" id="par_idN105D1" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Use the browse buttons to preview the information from the previous or next data record.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN105D4" xml-lang="en-US" l10n="CHG"><link href="text/swriter/01/mailmerge05.xhp" name="Mail Merge Wizard - Adjust layout">Mail Merge Wizard - Adjust layout</link></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01060500xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Calculate</title>
+         <filename>/text/shared/optionen/01060500.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="berechnen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149399"><bookmark_value>references; iterative (Calc)</bookmark_value>
+         <bookmark_value>calculating;iterative references (Calc)</bookmark_value>
+         <bookmark_value>iterative references in spreadsheets</bookmark_value>
+         <bookmark_value>recursions in spreadsheets</bookmark_value>
+         <bookmark_value>dates; default (Calc)</bookmark_value>
+         <bookmark_value>dates; start 1900/01/01 (Calc)</bookmark_value>
+         <bookmark_value>dates; start 1904/01/01 (Calc)</bookmark_value>
+         <bookmark_value>case sensitivity;comparing cell contents (Calc)</bookmark_value>
+         <bookmark_value>decimal places displayed (Calc)</bookmark_value>
+         <bookmark_value>precision as shown (Calc)</bookmark_value>
+         <bookmark_value>values; rounded as shown (Calc)</bookmark_value>
+         <bookmark_value>rounding precision (Calc)</bookmark_value>
+         <bookmark_value>search criteria for database functions in cells</bookmark_value>
+         <bookmark_value>Excel; search criteria</bookmark_value>
+</bookmark><comment>UFI: removed a double entry</comment><comment>mw changed "cell contents;" to "case sensitivity;.."</comment><comment>mw deleted "numbers;decimal places (Calc)"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_CALC" id="bm_id3149095" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145071" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01060500.xhp" name="Calculate">Calculate</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147576" role="paragraph" l10n="CHG" oldref="2"><ahelp hid=".">Defines the calculation settings for spreadsheets.</ahelp> Defines the behavior of spreadsheets with iterative references, the date settings, the number of decimal places, and if capitalization or lower cases are to be considered when searching within sheets.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#exopbe"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3149399" role="heading" level="2" l10n="U" oldref="3">Iterative references</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155419" role="paragraph" l10n="U" oldref="4">In this section you can delimit the number of approximation steps carried out during iterative calculations. In addition, you can specify the degree of precision of the answer.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_ITERATE" id="bm_id3156153" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154142" role="heading" level="3" l10n="U" oldref="5">Iterations</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149795" role="paragraph" l10n="U" oldref="6"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_ITERATE">Specifies whether formulas with iterative references (formulas that are continuously repeated until the problem is solved) are calculated after a specific number of repetitions.</ahelp> If the<emph> Iterations </emph>box is not marked, an iterative reference in the table will cause an error message.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148686" role="paragraph" l10n="CHG" oldref="7">
+         <emph>Example:</emph> calculating the cost of an item without the value-added tax.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156155" role="listitem" l10n="U" oldref="8">Type the text 'Selling price' in cell A5, the text 'Net' in cell A6, and the text 'Value-added tax' in cell A7.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147530" role="listitem" l10n="U" oldref="61">Now type a selling price (for example, 100) in cell B5. The net price should be shown in cell B6 and the value-added tax should be shown in cell B7. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153061" role="listitem" l10n="CHG" oldref="62">You know that the value-added tax is calculated as 'net price times 15%' and that you arrive at the net price by deducting the value-added tax from the selling price. Type the formula <item type="literal">=B5-B7</item> in B6 to calculate the net price, and type the formula <item type="literal">=B6*0.15</item> in cell B7 to calculate the value-added tax.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154760" role="listitem" l10n="U" oldref="63">Switch on the iterations to correctly calculate the formulas, otherwise a 'Circular reference' error message appears in the <emph>Status</emph> Bar.</paragraph>
+         </listitem>
+      </list>
+      <table id="tbl_id3149669">
+         <tablerow>
+            <tablecell>
+</tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154365" role="paragraph" l10n="U" oldref="9">A</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145606" role="paragraph" l10n="U" oldref="10">B</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149202" role="paragraph" l10n="U" oldref="11">5</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151041" role="paragraph" l10n="U" oldref="12">Selling Price</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159149" role="paragraph" l10n="U" oldref="13">100</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159254" role="paragraph" l10n="U" oldref="14">6</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147317" role="paragraph" l10n="U" oldref="15">Net</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147348" role="paragraph" l10n="U" oldref="16">=B5-B7</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154918" role="paragraph" l10n="U" oldref="17">7</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153573" role="paragraph" l10n="U" oldref="18">Tax</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154319" role="paragraph" l10n="U" oldref="19">=B6*0,15</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCPAGE_CALC:ED_STEPS" id="bm_id3146119" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145750" role="heading" level="3" l10n="U"
+                 oldref="22">Steps</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152576" role="paragraph" l10n="U" oldref="23"><ahelp hid="SC:NUMERICFIELD:RID_SCPAGE_CALC:ED_STEPS">Sets the maximum number of iteration steps.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCPAGE_CALC:ED_EPS" id="bm_id3145273" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153728" role="heading" level="3" l10n="U"
+                 oldref="24">Minimum Change</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153139" role="paragraph" l10n="CHG" oldref="25"><ahelp hid="SC:EDIT:RID_SCPAGE_CALC:ED_EPS">Specifies the difference between two consecutive iteration step results. If the result of the iteration is lower than the minimum change value, then the iteration will stop.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147125" role="heading" level="2" l10n="U"
+                 oldref="45">Date</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155416" role="paragraph" l10n="U" oldref="46">Select the start date for the internal conversion from days to numbers.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCPAGE_CALC:BTN_DATESTD" id="bm_id3153159" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147396" role="heading" level="3" l10n="U"
+                 oldref="47">12/30/1899 (default)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145646" role="paragraph" l10n="U" oldref="48"><ahelp hid="SC:RADIOBUTTON:RID_SCPAGE_CALC:BTN_DATESTD">Sets 12/30/1899 as day zero.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCPAGE_CALC:BTN_DATESC10" id="bm_id3150715" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156283" role="heading" level="3" l10n="U"
+                 oldref="49">01/01/1900 (StarCalc 1.0)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154018" role="paragraph" l10n="U" oldref="50"><ahelp hid="SC:RADIOBUTTON:RID_SCPAGE_CALC:BTN_DATESC10">Sets 1/1/1900 as day zero. Use this setting for StarCalc 1.0 spreadsheets containing date entries.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCPAGE_CALC:BTN_DATE1904" id="bm_id3147173" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156181" role="heading" level="3" l10n="U"
+                 oldref="51">01/01/1904</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153948" role="paragraph" l10n="U" oldref="52"><ahelp hid="SC:RADIOBUTTON:RID_SCPAGE_CALC:BTN_DATE1904">Sets 1/1/1904 as day zero. Use this setting for spreadsheets that are imported in a foreign format.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_CASE" id="bm_id3151205" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153838" role="heading" level="2" l10n="U"
+                 oldref="26">Case sensitive</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146793" role="paragraph" l10n="U" oldref="27"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_CASE">Specifies whether to distinguish between upper and lower case in texts when comparing cell contents.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153707" role="paragraph" l10n="U" oldref="28">
+         <emph>Example:</emph> Type the text 'Test' in cell A1; and the text 'test' in B1. Then type the formula "=A1=B1" in cell C1. If the <emph>Case sensitive</emph> box is marked, FALSE will appear in the cell; otherwise, TRUE will appear in the cell.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153965" role="note" l10n="U" oldref="29">The EXACT text function is always case-sensitive, independent of the settings in this dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCPAGE_CALC:ED_PREC" id="bm_id3147362" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145231" role="heading" level="2" l10n="U"
+                 oldref="53">Decimal places</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149568" role="paragraph" l10n="CHG" oldref="54"><ahelp hid="SC:NUMERICFIELD:RID_SCPAGE_CALC:ED_PREC">Defines the number of decimals to be displayed for numbers with the <emph>Standard</emph> number format. The numbers are displayed as rounded numbers, but are not saved as rounded numbers.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_CALC" id="bm_id3145766" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145150" role="heading" level="2" l10n="U"
+                 oldref="30">Precision as shown</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150644" role="paragraph" l10n="CHG" oldref="31"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_CALC">Specifies whether to make calculations using the rounded values displayed in the sheet. Charts will be shown with the displayed values. If the <emph>Precision as shown</emph> option is not marked, the displayed numbers are rounded, but they are calculated internally using the non-rounded number.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_MATCH" id="bm_id3150364" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152581" role="heading" level="2" l10n="U"
+                 oldref="32">Search criteria = and &lt;&gt; must apply to whole cells</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149211" role="paragraph" l10n="CHG" oldref="33"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_MATCH">Specifies that the search criteria you set for the Calc database functions must match the whole cell exactly. When the <emph>Search criteria = and &lt;&gt; must apply to whole cells</emph> box is marked, $[officename] Calc behaves exactly as MS Excel when searching cells in the database functions.</ahelp></paragraph>
+      <table id="tbl_id3149814">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148422" role="tablehead" l10n="U" oldref="34">.* in following position:</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156139" role="tablehead" l10n="U" oldref="35">Search result:</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150979" role="tablecontent" l10n="U" oldref="36">win</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159239" role="tablecontent" l10n="U" oldref="37">Finds win, but not win95, os2win, or upwind</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153782" role="tablecontent" l10n="U" oldref="38">win.*</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151278" role="tablecontent" l10n="U" oldref="39">Finds win and win95, but not os2win or upwind</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155506" role="tablecontent" l10n="U" oldref="40">.*win</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150886" role="tablecontent" l10n="U" oldref="41">Finds win and os2win, but not win95 or upwind</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147167" role="tablecontent" l10n="U" oldref="42">.*win.*</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152985" role="tablecontent" l10n="U" oldref="43">Finds win, win95, os2win, and upwind</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3148814" role="paragraph" l10n="U" oldref="44">If <emph>Search criteria = and &lt;&gt; must apply to whole cells </emph>is not enabled, the "win" search pattern acts like ".*win.*". The search pattern can be at any position within the cell when searching with the Calc database functions.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_REGEX" id="bm_id3154419" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156448" role="heading" level="2" l10n="U"
+                 oldref="58">Enable regular expressions in formulas</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155092" role="paragraph" l10n="U" oldref="59"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CALC_BTN_REGEX">Specifies that regular expressions are enabled when searching and also for character string comparisons.</ahelp><switchinline select="appl"><caseinline select="CALC"> This relates to the <link href="text/scalc/01/04060101.xhp" name="database functions">database functions</link>, and to VLOOKUP, HLOOKUP and SEARCH.
+</caseinline></switchinline><comment>Sorry, no more switches allowed inside AVIS tags</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_LOOKUP" id="bm_id3152901" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156199" role="heading" level="2" l10n="U"
+                 oldref="55">Automatically find column and row labels</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153818" role="paragraph" l10n="CHG" oldref="56"><ahelp hid="SC:CHECKBOX:RID_SCPAGE_CALC:BTN_LOOKUP">Specifies that you can use the text in any cell as a label for the column below the text or the row to the right of the text. The text must consist of at least one word and must not contain any operators.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151242" role="paragraph" l10n="U" oldref="57">
+         <emph>Example</emph>: Cell E5 contains the text "Europe". Below, in cell E6, is the value 100 and in cell E7 the value 200. If the <emph>Automatically find column and row labels</emph> box is marked, you can write the following formula in cell A1: =SUM(Europe).</paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CALC:BTN_GENERAL_PREC" id="bm_id315342901" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCPAGE_CALC:ED_PREC" id="bm_id315442901" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id315634199" role="heading" level="2" l10n="NEW">Limit decimals for general number format</paragraph>
+<paragraph xml-lang="en-US" id="par_id315343818" role="paragraph" l10n="NEW"><ahelp hid=".">You can specify the maximum number of decimal places that are shown by default for cells with General number format. If not enabled, cells with General number format show as many decimal places as the column width allows.</ahelp></paragraph>
+
+</body>
+</helpdocument>

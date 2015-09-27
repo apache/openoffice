@@ -1,0 +1,161 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_ui_dialogs_FilePicker_idl__
+#define __com_sun_star_ui_dialogs_FilePicker_idl__
+
+#ifndef __com_sun_star_lang_XComponent_idl__
+#include <com/sun/star/lang/XComponent.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XServiceInfo_idl__
+#include <com/sun/star/lang/XServiceInfo.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XTypeProvider_idl__
+#include <com/sun/star/lang/XTypeProvider.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XInitialization_idl__
+#include <com/sun/star/lang/XInitialization.idl>
+#endif
+
+#ifndef __com_sun_star_util_XCancellable_idl__ 
+#include <com/sun/star/util/XCancellable.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ui { module dialogs {
+
+//=============================================================================
+
+//=============================================================================
+/** A FilePicker. 
+
+    It is <strong>NOT</strong> recommended to cache a reference to a file 
+    picker instance. Due to restrictions by the underlying system there can 
+    be specific limitations possible. To overcome these problems it'
+    s recommended to create a new instance on demand.
+
+	@see XFilePicker
+*/
+
+ published interface XFilePicker;
+ published interface XFilePickerNotifier;
+ published interface XFilePickerControlAccess;
+ published interface XFilterManager;
+ published interface XFilePreview;
+ published interface XFilterGroupManager;
+    
+published service FilePicker
+{
+	//-------------------------------------------------------------------------
+	/** Allows to associate a help URL with the file picker instance.
+	*/
+	[optional, property] string HelpURL;
+
+	//-------------------------------------------------------------------------
+	/** Provides access to the basic FilePicker functionality.		
+	*/
+	interface XFilePicker;
+
+	//-------------------------------------------------------------------------
+	/** Provides the ability to request notifications about changes.
+	*/
+	interface XFilePickerNotifier;
+
+	//-------------------------------------------------------------------------
+	/** Provides the ability to add different filter, query for the current 
+		filters and set a current filter		
+	*/
+	interface XFilterManager;
+
+	//-------------------------------------------------------------------------
+	/** Provides the ability to show a preview of a selected file		
+	*/
+	[optional] interface XFilePreview;
+
+	//-------------------------------------------------------------------------
+	/** Provides the ability manage additional controls (checkboxes, listboxes etc.)
+		offered by an extended FilePicker, these controls extend the subset of
+		common controls that a FilePicker usually supports.
+
+		@see com::sun::star::ui::dialogs::CommonFilePickerElementIds
+		@see com::sun::star::ui::dialogs::ExtendedFilePickerElementIds		
+		
+		@deprecated
+	*/
+	[optional] interface XFilePickerControlAccess;
+
+	//-------------------------------------------------------------------------
+	/** An interface which allows manipulation of groups of filters
+	*/
+	[optional] interface XFilterGroupManager;
+
+	//-------------------------------------------------------------------------
+	/** Provides the ability to choose between different custom templates that
+		do extend the subset of common controls a FilePicker usually supports. 
+		Implementers may omit this interface if the FileOpen
+		dialog doesn't support custom templates. In this case a createInstance
+		will create an ordinary FileOpen dialog with only the common FilePicker
+		elements.
+		The client has to provide one of the specified constants in 
+		TemplateDescription.
+		<br/><br/>	
+		<p><strong>Notes for the implementation of a FileSave dialog:</strong>
+		The implementation of a FileSave dialog should automatically check 
+		for existens of a file and issue a warning if a file with the same 
+		name already exist.</p>
+		
+		@see com::sun::star::ui::dialogs::TemplateDescription
+	*/
+	[optional] interface com::sun::star::lang::XInitialization;
+
+	//-------------------------------------------------------------------------
+	/** For canceling a running dialog instance.
+		<p>This may be usefull for automatic test tools for instance.</p>
+	*/
+	[optional] interface com::sun::star::util::XCancellable;
+
+	//-------------------------------------------------------------------------
+	/** For shutdown and listener support.
+	*/
+	interface com::sun::star::lang::XComponent;
+
+	//-------------------------------------------------------------------------
+	/** Service should always support this interface.
+	*/
+	interface com::sun::star::lang::XServiceInfo;
+
+	//-------------------------------------------------------------------------
+	/** Service should always support this interface.
+	*/
+	interface com::sun::star::lang::XTypeProvider;
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

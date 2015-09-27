@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030303xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Timer Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030303.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:39:41">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="timer">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149346"><bookmark_value>Timer function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149346" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030303.xhp" name="Timer Function [Runtime]">Timer Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="2">Returns a value that specifies the number of seconds that have elapsed since midnight.</paragraph>
+</section>
+<paragraph role="note" id="par_id3156212" xml-lang="en-US" l10n="U" oldref="3">You must first declare a variable to call the Timer function and assign it the "Long " data type, otherwise a Date value is returned.</paragraph>
+<paragraph role="heading" id="hd_id3153768" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3161831" xml-lang="en-US" l10n="U" oldref="5">Timer</paragraph>
+<paragraph role="heading" id="hd_id3146975" xml-lang="en-US" level="2" l10n="U" oldref="6">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="7">Date</paragraph>
+<paragraph role="heading" id="hd_id3156442" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153951" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleTimer</paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="10">Dim lSec as long,lMin as long,lHour as long</paragraph>
+<paragraph role="paragraph" id="par_id3153092" xml-lang="en-US" l10n="U" oldref="11">lSec = Timer</paragraph>
+<paragraph role="paragraph" id="par_id3145748" xml-lang="en-US" l10n="U" oldref="12">MsgBox lSec,0,"Seconds since midnight"</paragraph>
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="13">lMin = lSec / 60</paragraph>
+<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="14">lSec = lSec Mod 60</paragraph>
+<paragraph role="paragraph" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="15">lHour = lMin / 60</paragraph>
+<paragraph role="paragraph" id="par_id3150418" xml-lang="en-US" l10n="U" oldref="16">lMin = lMin Mod 60</paragraph>
+<paragraph role="paragraph" id="par_id3156283" xml-lang="en-US" l10n="U" oldref="17">MsgBox Right("00" &amp; lHour , 2) &amp; ":"&amp; Right("00" &amp; lMin , 2) &amp; ":" &amp; Right("00" &amp; lSec , 2) ,0,"The time is"</paragraph>
+<paragraph role="paragraph" id="par_id3153158" xml-lang="en-US" l10n="U" oldref="18">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,117 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_text_VertOrientation_idl__ 
+#define __com_sun_star_text_VertOrientation_idl__ 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module text {  
+ 
+//============================================================================= 
+ 
+// DocMerge from idl: constants com::sun::star::text::VertOrientation
+/** These enumeration values are used to specify the vertical orientation.
+ */
+published constants VertOrientation
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::NONE
+	/** no hard alignment
+	 */
+	const short NONE = 0; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::TOP
+	/** aligned at the top
+	 */
+	const short TOP = 1; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::CENTER
+	/** aligned at the center
+	 */
+	const short CENTER = 2; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::BOTTOM
+	/** aligned at the bottom
+	 */
+	const short BOTTOM = 3; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::CHAR_TOP
+	/** aligned at the top of a character (anchored to character)
+	 */
+	const short CHAR_TOP = 4; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::CHAR_CENTER
+	/** aligned at the center of a character (anchored to character )
+	 */
+	const short CHAR_CENTER = 5; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::CHAR_BOTTOM
+	/** aligned at the bottom of a character (anchored to character )
+	 */
+	const short CHAR_BOTTOM = 6; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::LINE_TOP
+	/** aligned at the top of the line (anchored to character )
+	 */
+	const short LINE_TOP = 7; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::LINE_CENTER
+	/** aligned at the center of the line (anchored to character )
+	 */
+	const short LINE_CENTER = 8; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from idl: value com::sun::star::text::VertOrientation::LINE_BOTTOM
+	/** aligned at the bottom of the line (anchored to character )
+	 */
+	const short LINE_BOTTOM = 9; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

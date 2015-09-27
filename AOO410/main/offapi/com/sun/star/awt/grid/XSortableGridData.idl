@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_awt_grid_XSortableGridData_idl__
+#define __com_sun_star_awt_grid_XSortableGridData_idl__
+
+#include <com/sun/star/lang/IndexOutOfBoundsException.idl>
+#include <com/sun/star/beans/Pair.idl>
+
+//==================================================================================================================
+
+module com { module sun { module star { module awt { module grid {
+
+//==================================================================================================================
+
+/** allows to sort the data represented by a <type>XGridDataModel</type>
+ */
+interface XSortableGridData
+{
+    /** sorts the rows represented by the model by a given column's data.
+
+        @param ColumnIndex
+            the index of the column whose data should be used as sort key
+        @param SortAscending
+            is <TRUE/> if the data should be sorted ascending, <FALSE/> otherwise.
+        @throws ::com::sun::star::lang::IndexOutOfBoundsException
+            if <code>ColumnIndex</code> does not denote a valid column.
+    */
+    void    sortByColumn( [in] long ColumnIndex, [in] boolean SortAscending )
+        raises ( ::com::sun::star::lang::IndexOutOfBoundsException );
+
+    /** removes any possibly present sorting of the grid data
+    */
+    void    removeColumnSort();
+
+    /** returns the current sort order.
+
+        @return
+            a structure describing the current sort order. <member scope="::com::sun::star::beans">Pair::First</member>
+            denotes the column by which the data is sorted, or -1 if the data is currently unsorted.
+            <member scope="::com::sun::star::beans">Pair::Second</member> is <TRUE/> if the data is sorted ascending,
+            <FALSE/> otherwise.
+    */
+    ::com::sun::star::beans::Pair< long, boolean >
+            getCurrentSortOrder();
+};
+
+//==================================================================================================================
+
+}; }; }; }; }; 
+
+//==================================================================================================================
+
+#endif

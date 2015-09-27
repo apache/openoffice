@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01050100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Grid</title>
+         <filename>/text/shared/optionen/01050100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="raster">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147226"><bookmark_value>grids; defaults (Writer/Calc)</bookmark_value>
+         <bookmark_value>defaults; grids (Writer/Calc)</bookmark_value>
+         <bookmark_value>snap grid defaults (Writer/Calc)</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_OPTIONS_GRID" id="bm_id3155552" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147226" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01050100.xhp" name="Grid">Grid</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147088" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_GRID">Specifies the settings for the configurable grid on your document pages. This grid helps you determine the exact position of your objects. You can also set this grid in line with the "magnetic" snap grid.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#raster"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3153749" role="heading" level="2" l10n="U"
+                 oldref="11">Grid</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXPAGE_GRID:CBX_USE_GRIDSNAP" id="bm_id3150669" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145382" role="heading" level="3" l10n="U" oldref="5">Snap to grid</paragraph>
+      <section id="rasterfang">
+         <paragraph xml-lang="en-US" id="par_id3154897" role="paragraph" l10n="CHG" oldref="6"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_GRID_CBX_USE_GRIDSNAP">Specifies whether to move frames, drawing elements, and controls only between grid points.</ahelp> To change the status of the snap grip only for the current action, drag an object while holding down the <switchinline select="sys"><caseinline select="MAC">Control key
+</caseinline><defaultinline>Ctrl key</defaultinline></switchinline>.</paragraph>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/.uno:GridVisible" id="bm_id8442192" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GridVisible" id="bm_id3148473" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXPAGE_GRID:CBX_GRID_VISIBLE" id="bm_id3149795" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153824" role="heading" level="3" l10n="U" oldref="7">Visible grid</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149516" role="paragraph" l10n="CHG" oldref="8"><variable id="rastersicht"><ahelp hid="SVX_CHECKBOX_RID_SVXPAGE_GRID_CBX_GRID_VISIBLE">Specifies whether to display the grid.</ahelp>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149294" role="paragraph" l10n="CHG" oldref="29"><switchinline select="appl"><caseinline select="DRAW"><variable id="rastertextdraw">It is also possible to toggle the visibility of the grid with the <emph>Grid - Visible Grid</emph> command in the context menu for the page. You can also select the <emph>Grid - Grid to Front</emph> submenu of this context menu to display the grid in front of objects.
+</variable>
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150791" role="paragraph" l10n="CHG" oldref="30"><switchinline select="appl"><caseinline select="IMPRESS"><variable id="rastertext">It is also possible to toggle the visibility of the grid with the <emph>Grid - Visible Grid</emph> command in the context menu of the page. You can also select the <emph>Grid - Grid to Front</emph> submenu of this context menu to display the grid in front of objects.
+</variable>
+</caseinline></switchinline></paragraph>
+      <section id="aufun">
+         <paragraph xml-lang="en-US" id="hd_id3154684" role="heading" level="2" l10n="U"
+                    oldref="36">Resolution</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:MetricField:RID_SVXPAGE_GRID:MTR_FLD_DRAW_X" id="bm_id3151041" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149203" role="heading" level="3" l10n="U"
+                    oldref="13">Horizontal</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153104" role="paragraph" l10n="U" oldref="14"><ahelp hid="SVX_METRICFIELD_RID_SVXPAGE_GRID_MTR_FLD_DRAW_X">Defines the unit of measure for the spacing between grid points on the X-axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:MetricField:RID_SVXPAGE_GRID:MTR_FLD_DRAW_Y" id="bm_id3156280" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150447" role="heading" level="3" l10n="U"
+                    oldref="17">Vertical</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3148923" role="paragraph" l10n="U" oldref="18"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_GRID:MTR_FLD_DRAW_Y">Defines the grid points spacing in the desired unit of measurement on the Y-axis.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="hd_id3147228" role="heading" level="2" l10n="U"
+                    oldref="37">Subdivision</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:NumericField:RID_SVXPAGE_GRID:NUM_FLD_DIVISION_X" id="bm_id3145785" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153368" role="heading" level="3" l10n="U"
+                    oldref="15">Horizontal</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150439" role="paragraph" l10n="CHG" oldref="16"><ahelp hid=".">Specify the number of intermediate spaces between grid points on the X-axis.</ahelp><comment>UFI: see #i39831#</comment><comment>UFI: see #i112000</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:NumericField:RID_SVXPAGE_GRID:NUM_FLD_DIVISION_Y" id="bm_id3147428" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147441" role="heading" level="3" l10n="U"
+                    oldref="19">Vertical</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154918" role="paragraph" l10n="CHG" oldref="20"><ahelp hid=".">Specify the number of intermediate spaces between grid points on the Y-axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXPAGE_GRID:CBX_SYNCHRONIZE" id="bm_id3153138" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149667" role="heading" level="3" l10n="U" oldref="9">Synchronize axes</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147350" role="paragraph" l10n="U" oldref="10"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_GRID:CBX_SYNCHRONIZE">Specifies whether to change the current grid settings symmetrically.</ahelp> The resolution and subdivision for the X and Y axes remain the same.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3146121" role="paragraph" l10n="U" oldref="31"><switchinline select="appl"><caseinline select="DRAW">There are additional commands on the context menu of a page:
+</caseinline><caseinline select="IMPRESS">There are additional commands on the context menu of a page:
+</caseinline></switchinline></paragraph>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/.uno:GridFront" id="bm_id8062547" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:GridFront" id="bm_id3147319" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146984" role="heading" level="2" l10n="U"
+                 oldref="32"><switchinline select="appl"><caseinline select="DRAW">Grid to Front
+</caseinline><caseinline select="IMPRESS">Grid to Front
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153573" role="paragraph" l10n="CHG" oldref="33"><switchinline select="appl"><caseinline select="DRAW">Sets the visible grid in front of all objects.
+</caseinline><caseinline select="IMPRESS">Sets the visible grid in front of all objects.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id4122135" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Sets the visible grid in front of all objects.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:HelplinesFront" id="bm_id6135046" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:HelplinesFront" id="bm_id3150116" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149419" role="heading" level="2" l10n="U"
+                 oldref="34"><switchinline select="appl"><caseinline select="DRAW">Snap Lines to Front
+</caseinline><caseinline select="IMPRESS">Snap Lines to Front
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150592" role="paragraph" l10n="CHG" oldref="35"><switchinline select="appl"><caseinline select="DRAW">Sets the snap lines in front of all objects.
+</caseinline><caseinline select="IMPRESS">Sets the snap lines in front of all objects.
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id1251869" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Sets the snap lines in front of all objects.</ahelp></paragraph>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id984221" role="paragraph" l10n="NEW">Set the grid color on <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - <link href="text/shared/optionen/01012000.xhp">Appearance</link>.</paragraph>
+      </section>
+   </body>
+</helpdocument>

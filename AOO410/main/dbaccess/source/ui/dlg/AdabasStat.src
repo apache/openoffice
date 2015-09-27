@@ -1,0 +1,234 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef DBAUI_ADABASSTAT_HRC
+#include "AdabasStat.hrc"
+#endif
+#ifndef _DBU_DLG_HRC_
+#include "dbu_dlg.hrc"
+#endif
+
+#define WINDOW_SIZE_X 260
+#define WINDOW_SIZE_Y 190
+
+ModalDialog DLG_ADABASSTAT
+{
+    HelpID = "dbaccess:ModalDialog:DLG_ADABASSTAT";
+	OutputSize	= TRUE ;
+	Moveable	= TRUE ;
+	Closeable	= TRUE ;
+	SVLook		= TRUE ;
+	Size		= MAP_APPFONT ( WINDOW_SIZE_X , WINDOW_SIZE_Y ) ;
+
+    FixedLine FL_FILES
+	{
+		Pos					= MAP_APPFONT ( 6 , 3 ) ;
+        Size                = MAP_APPFONT ( WINDOW_SIZE_X - 12, 8 ) ;
+		Text [ en-US ] = "Database files";
+	};
+
+	FixedText FT_SYSDEVSPACE
+	{
+		Pos					= MAP_APPFONT ( 12 , 14 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "S~YSDEVSPACE:";
+	};
+
+	Edit ET_SYSDEVSPACE
+	{
+	    HelpID = "dbaccess:Edit:DLG_ADABASSTAT:ET_SYSDEVSPACE";
+		Border		= TRUE ;
+		Pos			= MAP_APPFONT ( 120 , 14 ) ;
+		Size		= MAP_APPFONT ( 128 , 12 ) ;
+		TabStop		= TRUE ;
+		ReadOnly	= TRUE;
+	};
+
+	FixedText FT_TRANSACTIONLOG
+	{
+		Pos					= MAP_APPFONT ( 12 , 32 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "~TRANSACTIONLOG:";
+	};
+
+	Edit ET_TRANSACTIONLOG
+	{
+	    HelpID = "dbaccess:Edit:DLG_ADABASSTAT:ET_TRANSACTIONLOG";
+		Border		= TRUE ;
+		Pos			= MAP_APPFONT ( 120 , 31 ) ;
+		Size		= MAP_APPFONT ( 128 , 12 ) ;
+		TabStop		= TRUE ;
+		ReadOnly	= TRUE;
+	};
+
+	FixedText FT_DATADEVSPACE
+	{
+		Pos					= MAP_APPFONT ( 12 , 49 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "DATAD~EVSPACE:";
+	};
+
+	ListBox LB_DATADEVS
+	{
+	    HelpID = "dbaccess:ListBox:DLG_ADABASSTAT:LB_DATADEVS";
+		Border		= TRUE ;
+		Pos			= MAP_APPFONT ( 120 , 48 ) ;
+		Size		= MAP_APPFONT ( 128 , 42 ) ;
+		TabStop		= TRUE;
+		AutoHScroll	= TRUE;
+		VScroll		= TRUE;
+		HScroll		= TRUE;
+	};
+    FixedLine FL_SIZES
+	{
+		Pos					= MAP_APPFONT ( 6 , 99 ) ;
+        Size                = MAP_APPFONT ( WINDOW_SIZE_X - 12 , 8 ) ;
+		Text [ en-US ] = "Database sizes";
+	};
+
+	FixedText FT_SIZE
+	{
+		Pos					= MAP_APPFONT ( 12 , 110 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "S~ize (MB):";
+	};
+
+	Edit ET_SIZE
+	{
+	    HelpID = "dbaccess:Edit:DLG_ADABASSTAT:ET_SIZE";
+		Border		= TRUE ;
+		Pos			= MAP_APPFONT ( 120 , 109 ) ;
+		Size		= MAP_APPFONT ( 60 , 12 ) ;
+		TabStop		= TRUE ;
+		ReadOnly	= TRUE;
+	};
+
+	FixedText FT_FREESIZE
+	{
+		Pos					= MAP_APPFONT ( 12 , 127 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "~Free memory space (MB):";
+	};
+
+	Edit ET_FREESIZE
+	{
+	    HelpID = "dbaccess:Edit:DLG_ADABASSTAT:ET_FREESIZE";
+		Border		= TRUE ;
+		Pos			= MAP_APPFONT ( 120 , 126 ) ;
+		Size		= MAP_APPFONT ( 60 , 12 ) ;
+		TabStop		= TRUE ;
+		ReadOnly	= TRUE;
+	};
+
+	FixedText FT_MEMORYUSING
+	{
+		Pos					= MAP_APPFONT ( 12 , 144 ) ;
+		Size				= MAP_APPFONT ( 102 , 10 ) ;
+		Text [ en-US ] = "~Memory utilization (in %):";
+	};
+
+	NumericField ET_MEMORYUSING
+	{
+	    HelpID = "dbaccess:NumericField:DLG_ADABASSTAT:ET_MEMORYUSING";
+		Border				= TRUE ;
+		Pos					= MAP_APPFONT ( 120 , 144 ) ;
+		Size				= MAP_APPFONT ( 60 , 12 ) ;
+		TabStop				= TRUE ;
+		ReadOnly			= TRUE;
+	};
+
+	OKButton PB_OK
+	{
+		Pos					= MAP_APPFONT ( WINDOW_SIZE_X - 56,WINDOW_SIZE_Y - 20 ) ;
+		Size				= MAP_APPFONT (  50, 14 ) ;
+		TabStop				= TRUE ;
+		DefButton			= TRUE ;
+	};
+
+	Text [ en-US ] = "Database Statistics";
+};
+
+String STR_ADABAS_HELP_SYSDEVSPACE
+{
+	Text [ en-US ] = "Contains the system tables";
+};
+
+String STR_ADABAS_HELP_TRANSACT
+{
+	Text [ en-US ] = "Contains information about transaction";
+};
+
+String STR_ADABAS_HELP_DATADEVSPACES
+{
+	Text [ en-US ] = "Contains all data files";
+};
+
+String STR_ADABAS_HELP_SIZE
+{
+	Text [ en-US ] = "Total size of the database files";
+};
+
+String STR_ADABAS_HELP_FREESIZE
+{
+	Text [ en-US ] = "Currently available space before a new datadev file is created.";
+};
+
+String STR_ADABAS_HELP_MEMORYUSING
+{
+	Text [ en-US ] = "Currently used memory";
+};
+
+String STR_ADABAS_ERROR_SYSTEMTABLES
+{
+	Text [ en-US ] = "No information could be displayed because no access rights exist for the required system tables.";
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

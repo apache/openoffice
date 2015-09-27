@@ -1,0 +1,102 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_XSessionManagerClient_idl__
+#define __com_sun_star_frame_XSessionManagerClient_idl__
+
+#ifndef __com_sun_star_frame_XSessionManagerListener_idl__
+#include <com/sun/star/frame/XSessionManagerListener.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module frame {
+
+//=============================================================================
+/** Connect to a session manager to get information about pending
+    desktop shutdown
+
+ */
+    interface XSessionManagerClient : com::sun::star::uno::XInterface
+    {
+
+        /** addSessionManagerListener registers a listener for session management events
+            
+        @param xListener
+        listener for session management events
+
+        @see XSessionManagerListener
+        @see XSessionManagerClient::removeSessionManagerListener()
+        */
+        [oneway] void addSessionManagerListener( [in] XSessionManagerListener xListener );
+
+        /** removeSessionManagerListener deregisters a listener for session events
+        
+        @param xListener
+            listener to be removed
+
+        @see XSessionManagerListener
+        @see XSessionManagerClient::addSessionManagerListener()
+        */
+        [oneway] void removeSessionManagerListener( [in] XSessionManagerListener xListener );
+
+        /** queryInteraction issues a request for a user interaction slot
+            from the session manager
+
+        @param xListener
+        the listener requesting user interaction
+
+        @see XSessionManagerListener
+        */
+        [oneway] void queryInteraction( [in] XSessionManagerListener xListener );
+
+        /** interactionDone is called when a listener has finished user interaction
+
+        @param xListener
+        the listener done with user interaction
+
+        @see XSessionManagerListener
+        */
+        [oneway] void interactionDone( [in] XSessionManagerListener xListener );
+
+        /** saveDone signals that a listener has processed a save request
+
+        @param listener
+        the listener having finished save request processing
+
+        @see XSessionManagerListener
+        */
+        [oneway] void saveDone( [in] XSessionManagerListener xListener );
+
+        /** Call cancelShutdown to try to cancel a desktop shutdown in progress
+
+        @returns
+        <TRUE/> if shutdown was canceled,
+        <FALSE/> else.
+        */
+        boolean cancelShutdown();
+    };
+
+}; }; }; };
+
+
+#endif

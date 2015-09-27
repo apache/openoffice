@@ -1,0 +1,73 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_util_ChangesEvent_idl__ 
+#define __com_sun_star_util_ChangesEvent_idl__ 
+ 
+#ifndef __com_sun_star_lang_EventObject_idl__ 
+#include <com/sun/star/lang/EventObject.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_util_ElementChange_idl__ 
+#include <com/sun/star/util/ElementChange.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_util_ChangesSet_idl__ 
+#include <com/sun/star/util/ChangesSet.idl> 
+#endif 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module util {  
+ 
+//============================================================================= 
+ 
+/** This event is fired when a set of changes becomes effective on the source of the event.
+
+	@see XChangesSet 
+	@see XChangesBatch 
+	@see XChangesListener 
+	@see XChangesNotifier 
+	@see com::sun::star::container::ContainerEvent 
+	@see ElementChange
+ */
+published struct ChangesEvent: com::sun::star::lang::EventObject
+{ 
+	//------------------------------------------------------------------------- 
+	/** contains the accessor to the common root of the changed elements.
+		
+		<p>Type and value of the accessor depend on the service.</p>
+	 */
+	any Base; 
+ 
+	//------------------------------------------------------------------------- 
+	/** contains the changes which occurred.
+	 */
+	ChangesSet Changes; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

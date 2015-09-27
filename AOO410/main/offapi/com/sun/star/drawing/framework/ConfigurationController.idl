@@ -1,0 +1,59 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_drawing_framework_ConfigurationController_idl__
+#define __com_sun_star_drawing_framework_ConfigurationController_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+#ifndef __com_sun_star_drawing_framework_XConfigurationController_idl__
+#include <com/sun/star/drawing/framework/XConfigurationController.idl>
+#endif
+#ifndef __com_sun_star_frame_XController_idl__
+#include <com/sun/star/frame/XController.idl>
+#endif
+
+module com { module sun { module star { module drawing { module framework {
+
+/** See <type>XConfigurationController</type> for a description of the
+    configuration controller.
+
+    <p>This service is used at the moment by the
+    <type>XControllerManager</type> to create a configuration controller. 
+    This allows developers to replace the default implementation of the
+    configuration controller with their own.  This may not be a usefull
+    feature.  Furthermore the sub controllers may need a tighter coupling
+    than the interfaces allow.  These are reasons for removing this service
+    in the future and let the controller manager create the sub controllers
+    directly.</p>
+*/
+service ConfigurationController
+    : XConfigurationController
+{
+    create ([in] ::com::sun::star::frame::XController xController);
+};
+
+}; }; }; }; }; // ::com::sun::star::drawing::framework
+
+#endif

@@ -1,0 +1,102 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SVX_BORDER_HRC
+#define _SVX_BORDER_HRC
+
+// defines ------------------------------------------------------------------
+
+#define FL_BORDER               10
+#define WIN_PRESETS             11
+#define WIN_FRAMESEL            12
+
+#define FL_SEPARATOR1           19
+#define FL_LINE                 20
+#define LB_LINESTYLE            21
+#define LB_LINECOLOR            22
+
+#define FL_SEPARATOR2           29
+#define FL_SHADOW               30
+#define FT_SHADOWPOS            31
+#define WIN_SHADOWS             32
+#define FT_SHADOWSIZE           33
+#define ED_SHADOWSIZE           34
+#define FT_SHADOWCOLOR          35
+#define LB_SHADOWCOLOR          36
+
+#define FT_XSPACE               41
+#define ED_XSPACE               42
+
+#define FL_DISTANCE             50
+#define FT_LEFT                 51
+#define MF_LEFT                 52
+#define FT_RIGHT                53
+#define MF_RIGHT                54
+#define FT_TOP                  55
+#define MF_TOP                  56
+#define FT_BOTTOM               57
+#define MF_BOTTOM               58
+#define CB_SYNC                 59
+#define FT_DEFAULT              60
+#define FT_USERDEF              61
+#define FT_STYLE                62
+#define FT_COLOR                63
+#define FL_PROPERTIES           64
+#define CB_MERGEWITHNEXT        65
+#define CB_MERGEADJACENTBORDERS 66
+
+// ImageListe fuer ValueSets:
+#define IL_PRE_BITMAPS			1400
+#define ILH_PRE_BITMAPS         1401
+#define IID_PRE_CELL_NONE       1
+#define IID_PRE_CELL_ALL        2
+#define IID_PRE_CELL_LR         3
+#define IID_PRE_CELL_TB         4
+#define IID_PRE_CELL_L          5
+#define IID_PRE_CELL_DIAG       6
+#define IID_PRE_HOR_NONE        7
+#define IID_PRE_HOR_OUTER       8
+#define IID_PRE_HOR_HOR         9
+#define IID_PRE_HOR_ALL         10
+#define IID_PRE_HOR_OUTER2      11
+#define IID_PRE_VER_NONE        12
+#define IID_PRE_VER_OUTER       13
+#define IID_PRE_VER_VER         14
+#define IID_PRE_VER_ALL         15
+#define IID_PRE_VER_OUTER2      16
+#define IID_PRE_TABLE_NONE      17
+#define IID_PRE_TABLE_OUTER     18
+#define IID_PRE_TABLE_OUTERH    19
+#define IID_PRE_TABLE_ALL       20
+#define IID_PRE_TABLE_OUTER2    21
+
+#define IL_SDW_BITMAPS			1500
+#define ILH_SDW_BITMAPS         1501
+#define IID_SHADOWNONE			1
+#define IID_SHADOW_BOT_RIGHT	2
+#define IID_SHADOW_BOT_LEFT		3
+#define IID_SHADOW_TOP_RIGHT	4
+#define IID_SHADOW_TOP_LEFT		5
+
+
+#endif
+

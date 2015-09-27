@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideanchor_objectxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Positioning Objects</title>
+         <filename>/text/swriter/guide/anchor_object.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147828"><bookmark_value>objects;anchoring options</bookmark_value>
+      <bookmark_value>positioning;objects (guide)</bookmark_value>
+      <bookmark_value>anchors;options</bookmark_value>
+      <bookmark_value>frames;anchoring options</bookmark_value>
+      <bookmark_value>pictures;anchoring options</bookmark_value>
+      <bookmark_value>centering;images on HTML pages</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3147828" role="heading" level="1" l10n="U"
+                 oldref="45"><variable id="anchor_object"><link href="text/swriter/guide/anchor_object.xhp" name="Positioning Objects">Positioning Objects</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147251" role="paragraph" l10n="U" oldref="46">You can use anchors to position an object, graphic, or frame in a document. An anchored item remains in place, or moves when you modify the document. The following anchoring options are available:</paragraph>
+      <table id="tbl_id3147268">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145599" role="tablehead" l10n="U" oldref="47">Anchoring</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145622" role="tablehead" l10n="U" oldref="48">Effect</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145650" role="tablecontent" l10n="U" oldref="49">As character</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151181" role="tablecontent" l10n="U" oldref="50">Anchors the selected item as a character in the current text. If the height of the selected item is greater than the current font size, the height of the line containing the item is increased.</paragraph>
+               <paragraph xml-lang="en-US" id="par_idN10674" role="tablecontent" l10n="NEW">To center an image on an HTML page, insert the image, anchor it "as character", then center the paragraph.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151212" role="tablecontent" l10n="U" oldref="51">To character</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151235" role="tablecontent" l10n="U" oldref="52">Anchors the selected item to a character.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155071" role="tablecontent" l10n="U" oldref="53">To paragraph</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155094" role="tablecontent" l10n="U" oldref="54">Anchors the selected item to the current paragraph.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155122" role="tablecontent" l10n="U" oldref="55">To page</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155144" role="tablecontent" l10n="U" oldref="56">Anchors the selected item to the current page.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145674" role="tablecontent" l10n="U" oldref="57">To frame</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145697" role="tablecontent" l10n="U" oldref="58">Anchors the selected item to the surrounding frame.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3145715" role="paragraph" l10n="U" oldref="59">When you insert an object, graphic, or frame, an anchor icon appears where the item is anchored. You can position an anchored item by dragging the item to another location. To change the anchoring options of an item, right-click the item, and then choose an option from the <item type="menuitem">Anchor</item>
+         <emph/>submenu.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/text_frame.xhp#text_frame"/>
+      </section>
+   </body>
+</helpdocument>

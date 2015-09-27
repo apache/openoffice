@@ -1,0 +1,96 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_text_fieldmaster_Bibliography_idl_
+#define __com_sun_star_text_fieldmaster_Bibliography_idl_
+
+#include <com/sun/star/text/TextFieldMaster.idl>
+#include <com/sun/star/beans/PropertyValues.idl>
+#include <com/sun/star/lang/Locale.idl>
+
+//=============================================================================
+
+module com { module sun { module star { module text { module fieldmaster {
+
+//=============================================================================
+/** specifies service of a Bibliography field master.
+	@see com::sun::star::text::TextField
+*/
+published service Bibliography
+{
+	service  com::sun::star::text::TextFieldMaster;
+
+	//------------------------------------------------------------------------
+    /** determins whether the bibiliography text fields are numbered. If <FALSE/> the
+	 short name of the bibliography entry is displayed instead.
+	 */
+	[property] boolean IsNumberEntries;
+	//------------------------------------------------------------------------
+	/** determins whether the bibliography entries in a bibliography index are sorted
+     by the document position. If <FALSE/> the SortKey property determins the
+	 sorting of the entries.
+	 */
+	[property] boolean IsSortByPosition;
+	//------------------------------------------------------------------------
+	/** determins the opening bracket used to display the bibliography text fields.
+	 */
+	[property] string BracketBefore;
+	//------------------------------------------------------------------------
+	/** determins the closing bracket used to display the bibliography text fields.
+	 */
+	[property] string BracketAfter;
+	//------------------------------------------------------------------------
+	/** determins the sorting of the bibliography entries in a bibliography index.
+		This property is used if the property IsSortByPosition is not set.
+		Each contained element of the sequence is a sequence of the following
+		two properties:
+		<UL>
+			<LI><P>[property] short SortKey;</P>
+			<UL>
+				<LI><P>Determins the bibliography field that is used to sort by.</P>
+			</UL>
+			<LI><P>[property] boolean IsSortAscending;</P>
+			<UL>
+				<LI><P>Determins wheter the sorting is ascending or descending.
+	 			It uses the type <type scope="com::sun::star::text">BibliographyDataField</type></P>
+			</UL>
+		</UL>
+	 */
+	[property] sequence< com::sun::star::beans::PropertyValues >  SortKeys;
+    //------------------------------------------------------------------------
+    /** contains the locale of the field master
+     */
+    [property] com::sun::star::lang::Locale  Locale;
+    //------------------------------------------------------------------------
+    /** contains the name of the sort algorithm that is used to sort the text fields.
+     */
+    [property] string SortAlgorithm;
+
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif
+

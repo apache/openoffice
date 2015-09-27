@@ -1,0 +1,78 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _ENVFMT_HRC
+#define _ENVFMT_HRC
+
+// #include *****************************************************************
+
+#include "envelp.hrc"
+
+// Lokale Resourcen *********************************************************
+
+#define FL_ADDRESSEE           11
+#define TXT_ADDR_POS		12
+#define TXT_ADDR_LEFT		13
+#define FLD_ADDR_LEFT		14
+#define TXT_ADDR_TOP		15
+#define FLD_ADDR_TOP		16
+#define TXT_ADDR_FORMAT		17
+#define BTN_ADDR_EDIT		18
+
+#define FL_SENDER                      21
+#define TXT_SEND_POS		22
+#define TXT_SEND_LEFT		23
+#define FLD_SEND_LEFT		24
+#define TXT_SEND_TOP		25
+#define FLD_SEND_TOP		26
+#define TXT_SEND_FORMAT		27
+#define BTN_SEND_EDIT		28
+
+#define FL_SIZE                        31
+#define TXT_SIZE_FORMAT		32
+#define BOX_SIZE_FORMAT		33
+#define TXT_SIZE_WIDTH		34
+#define FLD_SIZE_WIDTH		35
+#define TXT_SIZE_HEIGHT		36
+#define FLD_SIZE_HEIGHT		37
+
+#define WIN_PREVIEW			41
+
+
+#define MID_CHAR        1
+#define MID_PARA        2
+
+// Globale Resourcen ********************************************************
+
+#define MNU_EDIT  (RC_ENVFMT_BEGIN     )
+
+// Ueberlaufpruefung ********************************************************
+
+#define ENVFMT_ACT_END  MNU_EDIT
+
+#if ENVFMT_ACT_END > RC_ENVFMT_END
+#error Resource-Ueberlauf in #file, #line
+#endif
+
+#endif
+

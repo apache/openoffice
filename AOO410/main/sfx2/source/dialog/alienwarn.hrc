@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SFX_ALIENWARN_HRC
+#define _SFX_ALIENWARN_HRC
+
+#include <svtools/controldims.hrc>
+
+// dialog ids
+
+#define FI_QUERY        10
+#define FT_INFOTEXT     11
+#define PB_YES          12
+#define PB_NO           13
+#define PB_MOREINFO     14
+#define FL_OPTION       15
+#define CB_WARNING_OFF  16
+
+// --------- general metrics ---------
+
+#define SYMBOL_EDGE         20
+#define DIALOG_WIDTH        220
+#define INFO_TEXT_LINES     11
+
+#define AW_COL_1            (RSC_SP_DLG_INNERBORDER_LEFT)
+#define AW_COL_2            (AW_COL_1+SYMBOL_EDGE+RSC_SP_CTRL_DESC_X)
+#define AW_COL_3            (AW_COL_2+RSC_CD_PUSHBUTTON_WIDTH+RSC_SP_CTRL_DESC_X)
+#define AW_COL_4            (DIALOG_WIDTH-RSC_SP_DLG_INNERBORDER_RIGHT-RSC_CD_PUSHBUTTON_WIDTH)
+
+#define AW_ROW_1            (RSC_SP_DLG_INNERBORDER_TOP)
+#define AW_ROW_2            (AW_ROW_1+INFO_TEXT_LINES*RSC_CD_FIXEDTEXT_HEIGHT+RSC_SP_CTRL_Y)
+#define AW_ROW_3            (AW_ROW_2+RSC_CD_PUSHBUTTON_HEIGHT+RSC_SP_CTRL_DESC_Y)
+#define AW_ROW_4            (AW_ROW_3+RSC_CD_FIXEDLINE_HEIGHT+RSC_SP_CTRL_DESC_Y)
+
+#define DIALOG_HEIGHT       (AW_ROW_4+RSC_CD_CHECKBOX_HEIGHT+RSC_SP_DLG_INNERBORDER_BOTTOM)
+
+#endif
+

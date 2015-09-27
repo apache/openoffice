@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sheet_XSolver_idl__
+#define __com_sun_star_sheet_XSolver_idl__
+
+#ifndef __com_sun_star_sheet_XSpreadsheetDocument_idl__
+#include <com/sun/star/sheet/XSpreadsheetDocument.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_SolverConstraint_idl__
+#include <com/sun/star/sheet/SolverConstraint.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** allows to call a solver for a model that is defined by spreadsheet cells.
+ */
+interface XSolver: com::sun::star::uno::XInterface
+{
+    /// The spreadsheet document that contains the cells.
+    [attribute] XSpreadsheetDocument Document;
+
+    /// The address of the cell that contains the objective value.
+    [attribute] com::sun::star::table::CellAddress Objective;
+
+    /// The addresses of the cells that contain the variables.
+    [attribute] sequence< com::sun::star::table::CellAddress > Variables;
+
+    /// The constraints of the model.
+    [attribute] sequence< SolverConstraint > Constraints;
+
+    /// selects if the objective value is maximized or minimized.
+    [attribute] boolean Maximize;
+
+    /// executes the calculation and tries to find a solution.
+    void solve();
+
+    /// contains <TRUE/> if a solution was found.
+    [attribute, readonly] boolean Success;
+
+    /// contains the objective value for the solution, if a solution was found.
+    [attribute, readonly] double ResultValue;
+
+    /** contains the solution's value for each of the variables,
+        if a solution was found.
+     */
+    [attribute, readonly] sequence< double > Solution;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

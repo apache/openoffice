@@ -1,0 +1,83 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_document_XDocumentSubStorageSupplier_idl__
+#define __com_sun_star_document_XDocumentSubStorageSupplier_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_embed_XStorage_idl__
+#include <com/sun/star/embed/XStorage.idl>
+#endif
+
+
+//=============================================================================
+
+module com {   module sun {   module star {   module document {
+
+//=============================================================================
+/** through this interface documents can provide access to their substorages
+
+    <p>
+    A temporary interface to get access to documents substorages.
+    </p>
+
+    @see DocumentInfo
+    @see StandaloneDocumentInfo
+ */
+published interface XDocumentSubStorageSupplier: com::sun::star::uno::XInterface
+{
+    //-------------------------------------------------------------------------
+    /** provides the access to a substorage with specified name
+
+        @param sStorageName
+            the name of requested substorage
+
+        @param nMode
+            a mode the storage should be opened in can take value from ::com::sun::star::embed::ElementModes
+
+        @returns
+            XStorage implementation that refers to specified substorage
+     */
+    com::sun::star::embed::XStorage getDocumentSubStorage(
+                                        [in] string aStorageName,
+                                        [in] long nMode );
+
+    //-------------------------------------------------------------------------
+    /** provides the list of substorages
+
+        @returns
+            sequence of substorages names
+     */
+    sequence< string > getDocumentSubStoragesNames()
+        raises( ::com::sun::star::io::IOException );
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

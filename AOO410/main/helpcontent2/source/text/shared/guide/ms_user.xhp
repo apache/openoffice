@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textsharedguidems_userxml" indexer="include">
+<title id="tit" xml-lang="en-US">Using Microsoft Office and $[officename]</title>
+<filename>/text/shared/guide/ms_user.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150789"><bookmark_value>Office;Microsoft Office and $[officename]</bookmark_value>
+<bookmark_value>Microsoft Office;new users information</bookmark_value>
+<bookmark_value>opening;Microsoft Office files</bookmark_value>
+<bookmark_value>saving;in Microsoft Office file format</bookmark_value>
+<bookmark_value>macros; in MS Office documents</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150789" xml-lang="en-US" level="1" l10n="U" oldref="30"><variable id="ms_user"><link href="text/shared/guide/ms_user.xhp" name="Using Microsoft Office and $[officename]">Using Microsoft Office and $[officename]</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3152801" xml-lang="en-US" l10n="CHG" oldref="1">$[officename] can open and save documents in the Microsoft Office file formats. Microsoft Office Open XML formats can be read, but not saved.</paragraph>
+<paragraph role="heading" id="hd_id3145345" xml-lang="en-US" level="2" l10n="U" oldref="2">Opening a Microsoft Office File</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147008" xml-lang="en-US" l10n="U" oldref="3">Choose <emph>File - Open</emph>. Select a Microsoft Office file in the $[officename] file open dialog.</paragraph>
+</listitem>
+</list>
+<table id="tbl_id3147653">
+<tablerow>
+<tablecell>
+<paragraph role="tablehead" id="par_id3156346" xml-lang="en-US" l10n="U" oldref="4">MS Office file...</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablehead" id="par_id3155342" xml-lang="en-US" l10n="U" oldref="5">...will open in $[officename] module</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153543" xml-lang="en-US" l10n="U" oldref="6">MS Word, *.doc, *.docx</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147620" xml-lang="en-US" l10n="U" oldref="7">$[officename] Writer</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3154898" xml-lang="en-US" l10n="U" oldref="8">MS Excel, *.xls, *.xlsx</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3149580" xml-lang="en-US" l10n="U" oldref="9">$[officename] Calc</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="10">MS PowerPoint, *.ppt, *.pps, *.pptx</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3153626" xml-lang="en-US" l10n="U" oldref="11">$[officename] Impress</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3147303" xml-lang="en-US" level="2" l10n="U" oldref="12">Saving as a Microsoft Office File</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145068" xml-lang="en-US" l10n="U" oldref="13">Choose <emph>File - Save As</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153379" xml-lang="en-US" l10n="U" oldref="14">In the <emph>File type</emph> box, select a Microsoft Office file format.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154138" xml-lang="en-US" level="2" l10n="CHG" oldref="15">Saving Documents by Default in Microsoft Office Formats</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="16">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010200.xhp" name="Load/Save - General">Load/Save - General</link></emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148453" xml-lang="en-US" l10n="U" oldref="17">In the <emph>Default file format and ODF settings</emph> area, first select a document type, then select the file type for saving.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149807" xml-lang="en-US" l10n="U" oldref="18">From now on, if you save a document, the <emph>File type </emph>will be set according to your choice. Of course, you still can select another file type in the file save dialog.</paragraph>
+<switch select="sys">
+<case select="WIN">
+<paragraph role="heading" id="hd_id3156423" xml-lang="en-US" level="2" l10n="CHG" oldref="19">Opening Microsoft Office Files by Default</paragraph>
+<embed href="text/shared/guide/ms_doctypes.xhp#ms_extensions"/>
+</case>
+</switch>
+<paragraph role="heading" id="hd_id3153092" xml-lang="en-US" level="2" l10n="CHG" oldref="20">Converting Many Microsoft Office Files into OpenDocument Format</paragraph>
+<paragraph role="paragraph" id="par_id3146986" xml-lang="en-US" l10n="CHG" oldref="21">The <emph>Document Converter Wizard</emph> will copy and convert all Microsoft Office files in a folder into $[officename] documents in the OpenDocument file format. You can specify the folder to be read, and the folder where the converted files are to be saved.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150486" xml-lang="en-US" l10n="U" oldref="22">Choose <link href="text/shared/autopi/01130000.xhp" name="File - AutoPilot - Document Converter"><emph>File - Wizards - Document Converter</emph></link> to start the wizard.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3154319" xml-lang="en-US" level="2" l10n="U" oldref="23">Macros in Microsoft Office and $[officename]</paragraph>
+<paragraph role="paragraph" id="par_id3154921" xml-lang="en-US" l10n="U" oldref="24">With a few exceptions, Microsoft Office and $[officename] cannot run the same macro code. Microsoft Office uses VBA (Visual Basic for Applications) code, and $[officename] uses Basic code based on the $[officename] API (Application Program Interface) environment. Although the programming language is the same, the objects and methods are different.</paragraph>
+<paragraph role="note" id="par_id0804200804173539" xml-lang="en-US" l10n="NEW">The most recent versions of %PRODUCTNAME can run some Excel Visual Basic scripts if you enable this feature at <item type="menuitem"><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Load/Save - VBA Properties</item>.</paragraph>
+<paragraph role="paragraph" id="par_id3152577" xml-lang="en-US" l10n="U" oldref="25">If you use macros in one of the applications and want to use the same functionality in the other application, you must edit the macros. $[officename] can load the macros that are contained within Microsoft Office files and you can then view and edit the macro code in the $[officename] <link href="text/shared/main0600.xhp" name="Basic IDE">Basic IDE</link> editor.</paragraph>
+<paragraph role="heading" id="hd_id3152596" xml-lang="en-US" level="3" l10n="U" oldref="26">You can choose to preserve or delete VBA macros</paragraph>
+<paragraph role="paragraph" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="27">Open a Microsoft Office document that contains VBA macro code. Change only the normal contents (text, cells, graphics), and do not edit the macros. Save the document as a Microsoft Office file type. Open the file in Microsoft Office, and the VBA macros will run as before.</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="28">You may delete the VBA macros from the Microsoft Office file on loading or on saving.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155366" xml-lang="en-US" l10n="U" oldref="29">Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01130100.xhp" name="Load/Save - VBA Properties">Load/Save - VBA Properties</link></emph> to set the VBA macro handling of $[officename].</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/ms_import_export_limitations.xhp#about"/>
+<embed href="text/shared/guide/doc_open.xhp#doc_open"/>
+<embed href="text/shared/guide/import_ms.xhp#import_ms"/>
+<embed href="text/shared/guide/export_ms.xhp#export_ms"/>
+<switch select="sys">
+<case select="WIN"><embed href="text/shared/guide/ms_doctypes.xhp#ms_doctypes"/></case>
+</switch>
+</body>
+</helpdocument>

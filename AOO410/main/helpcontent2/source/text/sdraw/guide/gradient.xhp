@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsdrawguidegradientxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Creating Gradient Fills</title>
+<filename>/text/sdraw/guide/gradient.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150792"><bookmark_value>gradients; applying and defining</bookmark_value>
+<bookmark_value>editing;gradients</bookmark_value>
+<bookmark_value>defining;gradients</bookmark_value>
+<bookmark_value>custom gradients</bookmark_value>
+<bookmark_value>transparency;adjusting</bookmark_value>
+</bookmark>
+  <comment>mw deleted "applying;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3150792" role="heading" level="1" l10n="U" oldref="3"><variable id="gradient"><link href="text/sdraw/guide/gradient.xhp" name="Creating Gradient Fills">Creating Gradient Fills</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154012" role="paragraph" l10n="CHG" oldref="4">A gradient fill is an incremental blend of two different colors, or shades of the same color, that you can apply to a drawing object.</paragraph>
+  <paragraph xml-lang="en-US" id="hd_id3147436" role="heading" level="3" l10n="U" oldref="61">To apply a gradient:</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3146974" role="listitem" l10n="U" oldref="5">Select a drawing object.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154491" role="listitem" l10n="U" oldref="6">Choose <emph>Format - Area</emph> and select <emph>Gradient</emph> as the <emph>Fill</emph> type.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3153415" role="listitem" l10n="U" oldref="7">Select a gradient style from the list and click <emph>OK</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id3154702" role="heading" level="2" l10n="U" oldref="8">Creating Custom Gradients</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3145791" role="paragraph" l10n="CHG" oldref="9">You can define your own gradients and modify existing gradients, as well as save and load a list of gradient files.</paragraph>
+  <paragraph xml-lang="en-US" id="hd_id3145384" role="heading" level="3" l10n="U" oldref="62">To create a custom gradient:</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3151242" role="paragraph" l10n="U" oldref="11">Choose <emph>Format - Area</emph> and click the <emph>Gradients</emph> tab.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3150046" role="paragraph" l10n="U" oldref="12">Select a gradient from the list to use as the basis for your new gradient and click <emph>Add</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145116" role="paragraph" l10n="CHG" oldref="13">Type a name for the gradient in the text box and click <emph>OK</emph>.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id6535843" role="paragraph" l10n="NEW">The name appears at the end of the gradient list and is selected for editing.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3150391" role="paragraph" l10n="U" oldref="15">Set the gradient properties and click <emph>Modify</emph> to save the gradient.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3156396" role="paragraph" l10n="U" oldref="16">Click <emph>OK.</emph> </paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id3149947" role="heading" level="2" l10n="U" oldref="40">Using Gradients and Transparency</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3157905" role="paragraph" l10n="U" oldref="41">You can adjust the properties of a gradient as well as the transparency of a drawing object with your mouse.</paragraph>
+  <paragraph xml-lang="en-US" id="hd_id3150653" role="heading" level="3" l10n="U" oldref="63">To adjust the gradient of a drawing object:</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3154844" role="paragraph" l10n="CHG" oldref="42">Select a drawing object with the gradient that you want to modify.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3145592" role="paragraph" l10n="U" oldref="43">Choose <emph>Format - Area</emph> and click the <emph>Gradients</emph> tab.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_idN107BE" role="paragraph" l10n="CHG">Adjust the values for the gradient to suit your needs and click <emph>OK</emph>.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_id3150659" role="tip" l10n="U" oldref="46">To adjust the transparency of an object, select the object, choose <emph>Format - Area</emph> and click the <emph>Transparency</emph> tab.</paragraph>
+  <section id="relatedtopics">
+   
+   <embed href="text/sdraw/guide/color_define.xhp#color_define"/>
+   
+  </section>
+ </body>
+</helpdocument>

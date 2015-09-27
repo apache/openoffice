@@ -1,0 +1,130 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_awt_Command_idl__
+#define __com_sun_star_awt_Command_idl__
+
+//=============================================================================
+
+module com {  module sun {  module star {  module awt {
+
+/** these values specify the different command types available.
+*/
+
+published constants Command
+{
+
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a requests for a context menu.
+    */
+    const short CONTEXTMENU = 1;
+
+	//------------------------------------------------------------------------- 
+
+    /** specifies the beginning of a drag operation.
+    */
+    const short STARTDRAG = 2;
+	
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a mouse wheel operation.
+    */
+    const short WHEEL = 3;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies the begining of an auto scroll operation.
+    */
+    const short STARTAUTOSCROLL = 4;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies an auto scroll operation.
+    */
+    const short AUTOSCROLL = 5;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a request for a voice operation.
+    */
+    const short VOICE = 6;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies the beginning of an extended text input operation.
+    */
+    const short STARTEXTTEXTINPUT = 7;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies an extended text input operation.
+    */
+    const short EXTTEXTINPUT = 8;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies the end of an extended text input operation.
+    */
+    const short ENDEXTTEXTINPUT = 9;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies that the input context has been changed.
+    */
+    const short INPUTCONTEXTCHANGE = 10;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies the cursor position.
+    */
+    const short CURSORPOS = 11;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a paste selection command.
+    */
+    const short PASTESELECTION = 12;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies that the state of a key modifier has changed.
+    */
+    const short MODKEYCHANGE = 13;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a hangual hanja conversion command.
+    */
+    const short HANGUL_HANJA_CONVERSION = 14;
+    
+	//------------------------------------------------------------------------- 
+    
+    /** specifies a user-defined command.
+    */
+    const short USER = 4096;
+};          
+
+}; }; }; };
+
+#endif

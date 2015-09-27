@@ -1,0 +1,72 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+#ifndef SYSTEM_STL_FUNCTIONAL
+#define SYSTEM_STL_FUNCTIONAL
+
+#if defined(HAVE_STL_INCLUDE_PATH)
+	// TODO: use computed include file name
+	#include_next <functional>
+#elif defined(_MSC_VER)
+	#include <../../VC/include/functional>
+	namespace std { using tr1::hash; }
+#if 0 // TODO: enable only when std::_Swap_adl is not available
+	// note: VS2008SP1 has known problems after a security update (KB971092,KB974479,KB974223)
+	namespace std{ template<class _T> void _Swap_adl(_T& l, _T& r) {swap(l,r);} }
+#endif	
+#else // fall back to boost/tr1
+	#include <boost/tr1/tr1/functional>
+	#include <boost/functional/hash.hpp>
+#endif
+
+
+#ifndef NO_STLPORT4_EMULATION
+
+namespace std
+{
+// emulate SGI extensions to the STL using http://www.sgi.com/tech/stl/stl_function.h as reference
+template< typename T> struct identity : unary_function<T,T> { T operator()(const T& t) const { return t;} };
+template< typename T, typename U> struct project2nd : public binary_function<T,U,U> { U operator()(const T&, const U& u) const { return u;}};
+template<typename P> struct select1st : public unary_function<P, typename P::first_type> { const typename P::first_type& operator()(const P& p) const { return p.first; }};
+template<typename P> struct select2nd : public unary_function<P, typename P::second_type> { const typename P::second_type& operator()(const P& p) const { return p.second; }};
+
+#if (defined(_MSC_VER) && (_MSC_VER >= 1600)) || defined(__GXX_EXPERIMENTAL_CXX0X__)
+template<typename T> inline T&& forward( typename identity<T>::type&& t) { return t; }
+#endif // C++11 move semantics
+
+template<typename Op1, typename Op2> class unary_compose : public unary_function<typename Op2::argument_type, typename Op1::result_type> 
+{
+protected:
+	Op1 aOp1;
+	Op2 aOp2;
+public:
+	unary_compose( const Op1& rOp1, const Op2& rOp2) : aOp1(rOp1), aOp2(rOp2) {}
+	typename Op1::result_type operator()( const typename Op2::argument_type& x) const { return aOp1(aOp2(x)); }
+};
+
+template<typename Op1, typename Op2> inline unary_compose<Op1,Op2> compose1( const Op1& rOp1, const Op2& rOp2) { return unary_compose<Op1,Op2>(rOp1, rOp2); }
+
+} // namespace std
+
+#endif // NO_STLPORT4_EMULATION
+
+#endif
+

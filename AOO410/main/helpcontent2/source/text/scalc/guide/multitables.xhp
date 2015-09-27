@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidemultitablesxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Applying Multiple Sheets</title>
+         <filename>/text/scalc/guide/multitables.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154759"><bookmark_value>sheets; inserting</bookmark_value>
+      <bookmark_value>inserting; sheets</bookmark_value>
+      <bookmark_value>sheets; selecting multiple</bookmark_value>
+      <bookmark_value>appending sheets</bookmark_value>
+      <bookmark_value>selecting;multiple sheets</bookmark_value>
+      <bookmark_value>multiple sheets</bookmark_value>
+      <bookmark_value>calculating;multiple sheets</bookmark_value>
+</bookmark><comment>MW moved "sheets;simultaneous.." to edit_multitables.xhp, transferred 2 entries from there and added "calculating;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3154759" role="heading" level="1" l10n="U" oldref="9"><variable id="multitables"><link href="text/scalc/guide/multitables.xhp" name="Applying Multiple Sheets">Applying Multiple Sheets</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148576" role="heading" level="2" l10n="U"
+                 oldref="10">Inserting a Sheet</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154731" role="paragraph" l10n="CHG" oldref="4">Choose <item type="menuitem">Insert - Sheet</item> to insert a new sheet or an existing sheet from another file.</paragraph>
+         </listitem>
+      </list>
+
+<bookmark xml-lang="en-US" branch="hid/FID_TAB_EVENTS" id="bm_id906582498" localize="false"/><comment>Sheet Events</comment>
+<paragraph xml-lang="en-US" id="par_id05092009140203598" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog box where you can assign macros to sheet events.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/FID_TAB_MENU_SET_TAB_BG_COLOR" id="bm_id906582434" localize="false"/><comment>Tab Color</comment>
+<bookmark xml-lang="en-US" branch="hid/FID_TAB_SET_TAB_BG_COLOR" id="bm_id9016345434" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id05092009140203523" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a window where you can assign a color to the sheet tab.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:TableSelectAll" id="bm_id9065824" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id050920091402035" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to select all sheets in the document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:TableDeselectAll" id="bm_id9065825" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0509200914020391" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to deselect all sheets in the document, except the current sheet.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154491" role="heading" level="2" l10n="U"
+                 oldref="11">Selecting Multiple Sheets</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145251" role="paragraph" l10n="CHG" oldref="6">The sheet tab of the current sheet is always visible in white in front of the other sheet tabs. The other sheet tabs are gray when they are not selected. By clicking other sheet tabs while pressing <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl </defaultinline></switchinline>you can select multiple sheets.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN106B7" role="paragraph" l10n="CHG">You can use Shift+<switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Page Up or Page Down to select multiple sheets using the keyboard.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155600" role="heading" level="2" l10n="U"
+                 oldref="12">Undoing a Selection</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146969" role="paragraph" l10n="CHG" oldref="13">To undo the selection of a sheet, click its sheet tab again while pressing the <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl </defaultinline></switchinline>key. The sheet that is currently visible cannot be removed from the selection.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156382" role="heading" level="2" l10n="CHG"
+                 oldref="15">Calculating Across Multiple Sheets</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155333" role="paragraph" l10n="CHG" oldref="16">You can refer to a range of sheets in a formula by specifying the first and last sheet of the range, for example, <item type="literal">=SUM(Sheet1.A1:Sheet3.A1) </item>sums up all A1 cells on Sheet1 through Sheet3.</paragraph>
+
+
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/multi_tables.xhp#multi_tables"/>
+         <embed href="text/scalc/guide/edit_multitables.xhp#edit_multitables"/>
+      </section>
+   </body>
+</helpdocument>

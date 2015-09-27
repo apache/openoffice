@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01010200xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">General</title>
+         <filename>/text/shared/optionen/01010200.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="speichern">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143284"><bookmark_value>saving; options</bookmark_value>
+         <bookmark_value>defaults;of saving</bookmark_value>
+         <bookmark_value>URL; saving absolute/relative paths</bookmark_value>
+         <bookmark_value>relative saving of URLs</bookmark_value>
+         <bookmark_value>absolute saving of URLs</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_SAVE" id="bm_id3109850" localize="false"/>
+<paragraph role="heading" id="hd_id3143284" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010200.xhp" name="General">General</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145669" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_OPTIONS_SAVE">In the<emph> General</emph> section, you can select default settings for saving documents, and can select default file formats.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#rsave"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3154824" role="heading" level="2" l10n="U"
+                 oldref="65">Load</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:CB_LOAD_SETTINGS" id="bm_id3150444" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153311" role="heading" level="3" l10n="U"
+                 oldref="66">Load user-specific settings with the document</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147209" role="paragraph" l10n="U" oldref="67"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_CB_LOAD_SETTINGS">Loads the user-specific settings saved in a document with the document.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3166460" role="paragraph" l10n="U" oldref="68">If <emph>Load user-specific settings with the document </emph>is not selected, the following user-specific settings still apply:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155388" role="listitem" l10n="U" oldref="69">Settings available in <emph>File - Print - Options</emph>,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153348" role="listitem" l10n="U" oldref="70">Name of Fax,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150276" role="listitem" l10n="U" oldref="71">Spacing options for paragraphs before text tables,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148686" role="listitem" l10n="U" oldref="72">Information about automatic updating for links, field functions and charts,</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153254" role="listitem" l10n="U" oldref="73">Information about working with Asian character formats.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3153666" role="paragraph" l10n="U" oldref="74">The following settings are <emph>always</emph> loaded with a document, whether or not this option is marked:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3148946" role="listitem" l10n="U" oldref="76">Data source linked to the document and its view.</paragraph>
+         </listitem>
+      </list>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:CB_LOAD_DOCPRINTER" id="bm_id813156" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id927152" role="heading" level="3" l10n="NEW">Load printer settings with the document</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5684987" role="paragraph" l10n="NEW"><ahelp hid=".">If enabled, the printer settings will be loaded with the document. This can cause a document to be printed on a distant printer, if you do not change the printer manually in the Print dialog. If disabled, your standard printer will be used to print this document. The current printer settings will be stored with the document whether or not this option is checked.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3146794" role="heading" level="2" l10n="U" oldref="3">Save</paragraph>
+      <embed href="text/shared/guide/doc_autosave.xhp#doc_autosave"/>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_DOCINFO" id="bm_id3154939" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154071" role="heading" level="3" l10n="U" oldref="5">Edit document properties before saving</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148798" role="paragraph" l10n="U" oldref="6"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_DOCINFO">Specifies that the <emph>Properties</emph> dialog will appear every time you select the <emph>Save As</emph> command.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_BACKUP" id="bm_id3151380" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145606" role="heading" level="3" l10n="U" oldref="7">Always create backup copy</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154123" role="paragraph" l10n="CHG" oldref="8"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_BACKUP">Saves the previous version of a document as a backup copy whenever you save a document. Every time <item type="productname">%PRODUCTNAME</item> creates a backup copy, the previous backup copy is replaced. The backup copy gets the extension .BAK.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153192" role="paragraph" l10n="U" oldref="37">To change the location of the backup copy, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - Paths</emph>, and then enter a new path for the backup file.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_AUTOSAVE" id="bm_id3159252" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154908" role="heading" level="3" l10n="CHG"
+                 oldref="9">Save AutoRecovery information every</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149560" role="paragraph" l10n="CHG" oldref="10"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_AUTOSAVE">Specifies that <item type="productname">%PRODUCTNAME</item> saves the information needed to restore all open documents in case of a crash. You can specify the saving time interval.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SFXPAGE_SAVE:ED_AUTOSAVE" id="bm_id3155855" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146147" role="heading" level="3" l10n="U"
+                 oldref="11">Minutes</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152460" role="paragraph" l10n="CHG" oldref="12"><ahelp hid="SVX_NUMERICFIELD_RID_SFXPAGE_SAVE_ED_AUTOSAVE">Specifies the time interval in minutes for the automatic recovery option.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153575" role="heading" level="3" l10n="CHG"
+                 oldref="17">Save URLs relative to file system</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149484" role="paragraph" l10n="U" oldref="18">This option allows you to select the default for <link href="text/shared/00/00000005.xhp#speichern" name="relative">relative</link> addressing of URLs in the file system and on the Internet. Relative addressing is only possible if the source document and the referenced document are both on the same drive.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145799" role="paragraph" l10n="U" oldref="52">A relative address always starts from the directory in which the current document is located. In contrast, absolute addressing always starts from a root directory. The following table demonstrates the difference in syntax between relative and absolute referencing:</paragraph>
+      <table id="">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149413" role="tablehead" l10n="U" oldref="53">Examples</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148455" role="tablehead" l10n="U" oldref="54">File system</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150715" role="tablehead" l10n="U" oldref="55">Internet</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155602" role="tablecontent" l10n="U" oldref="56">relative</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147176" role="tablecontent" l10n="U" oldref="57">../images/img.jpg</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145652" role="tablecontent" l10n="U" oldref="58">../images/img.jpg</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155064" role="tablecontent" l10n="U" oldref="59">absolute</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154361" role="tablecontent" l10n="U" oldref="60">file:///c|/work/images/img.jpg</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148408" role="tablecontent" l10n="U" oldref="61">http://myserver.com/work/images/img.jpg</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3145148" role="warning" l10n="U" oldref="36">The Help tip always displays an absolute path. However, if a document is saved in HTML format, <item type="productname">%PRODUCTNAME</item> will enter a relative path if the appropriate check box is selected.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_RELATIVE_FSYS" id="bm_id3151187" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3155176" role="paragraph" l10n="U" oldref="20"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_RELATIVE_FSYS">Select this box for <link href="text/shared/00/00000005.xhp#speichern" name="relative saving">relative saving</link> of URLs in the file system.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_RELATIVE_INET" id="bm_id3154664" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155334" role="heading" level="3" l10n="CHG"
+                 oldref="21">Save URLs relative to internet</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155608" role="paragraph" l10n="U" oldref="22"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_RELATIVE_INET">Select this box for <link href="text/shared/00/00000005.xhp#speichern" name="relative saving">relative saving</link> of URLs to the Internet.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id2016968" role="heading" level="2" l10n="NEW">Default file format and ODF settings</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SFXPAGE_SAVE:LB_ODF_VERSION" id="bm_id810266" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id2659077" role="heading" level="3" l10n="NEW">ODF format version</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6944181" role="paragraph" l10n="NEW">OpenOffice.org 3 and StarOffice 9 introduce new features which have to be saved using the <link href="http://en.wikipedia.org/wiki/OpenDocument">OpenDocument</link> format (ODF) version 1.2. The prior versions of OpenOffice.org 2 and StarOffice 8 support the file formats ODF 1.0/1.1. Those prior file formats cannot store all new features of the new software.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id886257" role="paragraph" l10n="NEW">Current versions can open documents in ODF formats 1.0/1.1 and 1.2.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8892483" role="paragraph" l10n="NEW">When you save a document, you can select whether to save the document in the format ODF 1.2, ODF 1.2 (Extended), or in the prior format ODF 1.0/1.1.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0915200911205367" role="note" l10n="NEW">Currently, the ODF 1.2 (Extended) format enables files of Draw and Impress to contain comments. Those comments can be inserted by <item type="menuitem">Insert - Comment</item> in the latest software version. The comments get lost when loading files into prior software versions that were saved by the latest software version.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7198400" role="paragraph" l10n="CHG"><ahelp hid=".">Some companies or organizations may require ODF documents in the ODF 1.0/1.1 format. You can select that format to save in the listbox. This older format cannot store all new features, so the new format ODF 1.2 (Extended) is recommended where possible.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_NOPRETTYPRINTING" id="bm_id3155414" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154920" role="heading" level="3" l10n="CHG"
+                 oldref="77">Size optimization for ODF format</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150488" role="paragraph" l10n="U" oldref="78"><ahelp hid="SVX_CHECKBOX_RID_SFXPAGE_SAVE_BTN_NOPRETTYPRINTING">When saving the document, <item type="productname">%PRODUCTNAME</item> writes the XML data without indents and extra line breaks.</ahelp> This allows documents to be saved and opened more quickly, and the file size is smaller.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SFXPAGE_SAVE:BTN_WARNALIENFORMAT" id="bm_id6262092" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:RID_DLG_ALIEN_WARNING:CB_WARNING_OFF" id="bm_id7885982" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1091E" role="heading" level="3" l10n="CHG">Warn when not saving in ODF or default format</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10922" role="paragraph" l10n="CHG"><ahelp hid=".">You can choose to get a warning message when you save a document in a format that is not OpenDocument or which you did not set as default format in <emph>Load/Save - General</emph> in the Options dialog box.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3158444" role="paragraph" l10n="U" oldref="62">You can choose which file format will be applied as the default when saving documents of various document types. If you always exchange your documents with other persons who use Microsoft Office, for example, you may specify here that %PRODUCTNAME only uses the Microsoft Office file formats as a default.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SFXPAGE_SAVE:LB_APP" id="bm_id3149207" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153270" role="heading" level="3" l10n="U"
+                 oldref="50">Document type</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150828" role="paragraph" l10n="U" oldref="63"><ahelp hid="SVX_LISTBOX_RID_SFXPAGE_SAVE_LB_APP">Specifies the document type for which you want to define the default file format.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SFXPAGE_SAVE:LB_FILTER" id="bm_id3152775" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149527" role="heading" level="3" l10n="CHG"
+                 oldref="51">Always save as</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149035" role="paragraph" l10n="U" oldref="64"><ahelp hid="SVX_LISTBOX_RID_SFXPAGE_SAVE_LB_FILTER">Specifies how documents of the type selected on the left will always be saved as this file type. You may select another file type for the current document in the <emph>Save as</emph> dialog.</ahelp></paragraph>
+   </body>
+</helpdocument>

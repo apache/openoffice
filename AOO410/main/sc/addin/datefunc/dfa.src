@@ -1,0 +1,174 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "sc.hrc" // Definition RID_XXX in StarCalc
+#include "dfa.hrc"
+
+/* #i54546# The code belonging to this resource file is sample code for the
+ * legacy AddIn interface. The interface is still supported, but deprecated.
+ * The strings here were displayed in the function wizard. To prevent
+ * duplicated and useless translation effort (functions and strings are also
+ * part of the new scaddin module), the strings here are now layed out as fixed
+ * untranslatable strings. The entire mechanism with the ../util/cl2c.pl perl
+ * script merging the raw .cl and the .src during build time didn't work
+ * anymore anyway, since we switched from MS-LCIDs / telephone area codes to
+ * ISO codes for resources, and introduced localize.sdf files. Returned was
+ * always an empty string. Now at least the fixed English string is returned.
+ * */
+
+Resource RID_SC_ADDIN_DFA
+{
+	String DFA_PAR_DATE1_NAME // Name of Date1 Parameter
+	{
+		Text = "Date 1";
+	};
+	String DFA_PAR_DATE2_NAME // Name of Date2 Parameter
+	{
+		Text = "Date 2";
+	};
+	String DFA_PAR_MODE_NAME // Name of Mode Parameter
+	{
+		Text = "Mode";
+	};
+
+	String DFA_PAR_DATE_NAME // Name of Date Parameter
+	{
+		Text = "Date";
+	};
+
+	String DFA_PAR_DATE_DESC // Description of Date Parameter
+	{
+		Text = "Internal number of the date";
+	};
+
+/*-=======================================================================*/
+	String DFA_WEEK_NAME // Name
+	{
+		Text = "Weeks";
+	};
+	String DFA_WEEK_DESC // Description
+	{
+		Text = "Returns the difference in weeks between two dates";
+	};
+	String DFA_WEEK_PAR1_DESC // Description of Parameter 1
+	{
+		Text = "The end date for calculating the difference in weeks";
+	};
+	String DFA_WEEK_PAR2_DESC // Description of Parameter 2
+	{
+		Text = "The start date for calculating the difference weeks";
+	};
+	String DFA_WEEK_PAR3_DESC // Description of Parameter 3
+	{
+		Text = "Type of difference calculation: mode=0 means the interval, mode=1 means calendar weeks";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_MONTHS_NAME // Name
+	{
+		Text = "Months";
+	};
+	String DFA_MONTHS_DESC // Description
+	{
+		Text = "Determines the number of months between two dates";
+	};
+	String DFA_MONTHS_PAR1_DESC // Description of Parameter 1
+	{
+		Text = "The end date for calculating the difference in months";
+	};
+	String DFA_MONTHS_PAR2_DESC // Description of Parameter 2
+	{
+		Text = "The start date for calculating the difference in months";
+	};
+	String DFA_MONTHS_PAR3_DESC // Description of Parameter 2
+	{
+		Text = "Type of difference calculation: Mode = 0 means interval, mode = 1 means in calendar months";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_YEARS_NAME // Name
+	{
+		Text = "Years";
+	};
+	String DFA_YEARS_DESC // Description
+	{
+		Text = "Returns the difference in years between two dates";
+	};
+	String DFA_YEARS_PAR1_DESC // Description of Parameter 1
+	{
+		Text = "The end date for calculating the difference in years";
+	};
+	String DFA_YEARS_PAR2_DESC // Description of Parameter 2
+	{
+		Text = "The start date for calculating the difference in years";
+	};
+	String DFA_YEARS_PAR3_DESC // Description of Parameter 2
+	{
+		Text = "Type of difference calculation: Mode=0 means interval, mode=1 means in calendar years.";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_ISLEAPYEAR_NAME // Name
+	{
+		Text = "IsLeapYear";
+	};
+	String DFA_ISLEAPYEAR_DESC // Description
+	{
+		Text = "Returns 1 (TRUE) if a leap year is used, otherwise 0 (FALSE) is returned";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_DAYSINMONTH_NAME // Name
+	{
+		Text = "DaysInMonth";
+	};
+	String DFA_DAYSINMONTH_DESC // Description
+	{
+		Text = "Returns the number of days in the month in relation to the date entered";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_DAYSINYEAR_NAME // Name
+	{
+		Text = "DaysInYear";
+	};
+	String DFA_DAYSINYEAR_DESC // Description
+	{
+		Text = "Returns the number of days in a year in relation to the date entered";
+	};
+
+/*-=======================================================================*/
+
+	String DFA_WEEKSINYEAR_NAME // Name
+	{
+		Text = "WeeksInYear";
+	};
+	String DFA_WEEKSINYEAR_DESC // Description
+	{
+		Text = "Returns the number of weeks in the year in relation to a date";
+	};
+};

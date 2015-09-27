@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0206060000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Promote One Level</title>
+<filename>/text/shared/02/06060000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-09T13:08:41">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="hochstufen">
+<bookmark xml-lang="en-US" branch="hid/.uno:OutlineLeft" id="bm_id1102480" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:OutlineLeft" id="bm_id3154094" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:IncrementLevel" id="bm_id8156328" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:IncrementLevel" id="bm_id3154863" localize="false"/>
+<paragraph role="heading" id="hd_id3159225" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><switchinline select="appl"><caseinline select="WRITER"><link href="text/shared/02/06060000.xhp" name="Promote One Level">Promote One Level</link>
+</caseinline><defaultinline><link href="text/shared/02/06060000.xhp" name="Promote">Promote</link></defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3149999" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".uno:IncrementLevel">Moves the selected paragraph up one level in the numbering or bullets hierarchy.</ahelp></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3149205" xml-lang="en-US" l10n="CHG" oldref="4"><switchinline select="appl"><caseinline select="WRITER">The<emph> Promote One Level </emph>icon is on the <emph>Bullets and Numbering</emph> bar, which appears when the cursor is positioned on a numbering or bullets item. 
+</caseinline><caseinline select="IMPRESS">The<emph> Promote </emph>icon is on the <emph>Text Formatting</emph> bar, which appears when working in the outline view. 
+</caseinline></switchinline></paragraph>
+<section id="syhochstufen">
+<table id="tbl_id3147008">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149388" xml-lang="en-US" l10n="E">
+<image id="img_id3155535" src="res/commandimagelist/sc_outlineleft.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155535" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146958" xml-lang="en-US" l10n="CHG" oldref="3"><switchinline select="appl"><caseinline select="WRITER">Promote One Level 
+</caseinline><defaultinline>Promote</defaultinline></switchinline></paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+</body>
+</helpdocument>

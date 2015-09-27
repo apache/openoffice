@@ -1,0 +1,105 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_frame_DesktopTask_idl__
+#define __com_sun_star_frame_DesktopTask_idl__
+
+#ifndef __com_sun_star_frame_XDesktopTask_idl__
+#include <com/sun/star/frame/XDesktopTask.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XFrame_idl__
+#include <com/sun/star/frame/XFrame.idl>
+#endif
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XWindowArranger_idl__
+#include <com/sun/star/frame/XWindowArranger.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XFramesSupplier_idl__
+#include <com/sun/star/frame/XFramesSupplier.idl>
+#endif
+
+#ifndef __com_sun_star_awt_Point_idl__
+#include <com/sun/star/awt/Point.idl>
+#endif
+
+#ifndef __com_sun_star_awt_Size_idl__
+#include <com/sun/star/awt/Size.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module frame {
+
+//=============================================================================
+/** use the <type>Frame</type> service instead of this
+    @deprecated
+ */
+published service DesktopTask
+{
+        /** use <type>Frame</type> service */
+        interface com::sun::star::frame::XDesktopTask;
+
+        /** use the same interface at the <type>Frame</type> service */
+	interface com::sun::star::frame::XFrame;
+
+        /** use the same interface at the <type>Frame</type> service */
+	interface com::sun::star::beans::XPropertySet;
+
+        /** - */
+	interface com::sun::star::frame::XWindowArranger;
+
+        /** use the same interface at the <type>Desktop</type> or
+            <type>Frame</type> service */
+	interface com::sun::star::frame::XFramesSupplier;
+
+        /** use property <member>Frame::Title</member> instead of that */
+	[readonly, property] string Title;
+
+        /** - */
+	[readonly, property] boolean IsDesktop;
+
+        /** use th visible state of the frame container window instead of this */
+	[property] boolean IsVisible;
+
+        /** - */
+	[property] boolean IsFloating;
+        /** - */
+	[property] boolean IsAlwaysVisible;
+
+        /** use the position of the frame container window instead of this */
+	[property] com::sun::star::awt::Point Position;
+
+        /** use the size of the frame container window instead of this */
+	[property] com::sun::star::awt::Size Size;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

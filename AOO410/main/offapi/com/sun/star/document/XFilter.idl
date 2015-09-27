@@ -1,0 +1,84 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_document_XFilter_idl__
+#define __com_sun_star_document_XFilter_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_beans_PropertyValue_idl__
+#include <com/sun/star/beans/PropertyValue.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module document {
+
+//=============================================================================
+/** interface to filter documents
+
+    <p>
+    This interface will be used by service <type>ImportFilter</type> or
+    <type>ExportFilter</type> to support loading/saving of documents in
+    different formats. The target/source of such filter operations must
+    be known <em>before</em> filtering will be started.
+    (see <type>XImporter</type> and <type>XExporter</type> too)
+    Otherwise this interface can't work right.
+    <p>
+
+    @see ImportFilter
+    @see ExportFilter
+    @see XImporter
+    @see XExporter
+ */
+published interface XFilter: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+        /** filter the document.
+
+		<p>
+		The given <type>MediaDescriptor</type> holds all neccessary information
+		about the document.
+
+        Don't hold hard references to the descriptor items. You must copy needed information!
+        Otherwise we couldn't destroy (for example) an existing input stream!
+		</p>
+		@param aDescriptor
+			the MediaDescriptor describing the respective document.
+		@return a boolean value indicating whether the filter operation was successful or not.
+	 */
+	boolean filter( [in] sequence< com::sun::star::beans::PropertyValue > aDescriptor );
+
+	//-------------------------------------------------------------------------
+        /** cancel the process.
+	  */
+	void cancel();
+
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedoptionen01060100xml" indexer="include">
+         <title xml-lang="en-US" id="tit">View</title>
+         <filename>/text/shared/optionen/01060100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="inhalte">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147242"><bookmark_value>cells; showing grid lines (Calc)</bookmark_value>
+         <bookmark_value>borders; cells on screen (Calc)</bookmark_value>
+         <bookmark_value>grids; displaying lines (Calc)</bookmark_value>
+         <bookmark_value>colors; grid lines and cells (Calc)</bookmark_value>
+         <bookmark_value>page breaks; displaying (Calc)</bookmark_value>
+         <bookmark_value>guides; showing (Calc)</bookmark_value>
+         <bookmark_value>handles; showing simple/large handles (Calc)</bookmark_value>
+         <bookmark_value>displaying; zero values (Calc)</bookmark_value>
+         <bookmark_value>zero values; displaying (Calc)</bookmark_value>
+         <bookmark_value>tables in spreadsheets; value highlighting</bookmark_value>
+         <bookmark_value>cells; formatting without effect (Calc)</bookmark_value>
+         <bookmark_value>cells; coloring (Calc)</bookmark_value>
+         <bookmark_value>anchors; displaying (Calc)</bookmark_value>
+         <bookmark_value>colors;restriction (Calc)</bookmark_value>
+         <bookmark_value>text overflow in spreadsheet cells</bookmark_value>
+         <bookmark_value>references; displaying in color (Calc)</bookmark_value>
+         <bookmark_value>objects; displaying in spreadsheets</bookmark_value>
+         <bookmark_value>pictures; displaying in Calc</bookmark_value>
+         <bookmark_value>charts; displaying (Calc)</bookmark_value>
+         <bookmark_value>draw objects; displaying (Calc)</bookmark_value>
+         <bookmark_value>row headers; displaying (Calc)</bookmark_value>
+         <bookmark_value>column headers; displaying (Calc)</bookmark_value>
+         <bookmark_value>scrollbars; displaying (Calc)</bookmark_value>
+         <bookmark_value>sheet tabs; displaying</bookmark_value>
+         <bookmark_value>tabs; displaying sheet tabs</bookmark_value>
+         <bookmark_value>outlines;outline symbols</bookmark_value>
+</bookmark><comment>MW copied "displaying;comments" over to  Calc guide note_insert.xhp and deleted "comments;displaying"</comment>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_CONTENT" id="bm_id3157898" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150445" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01060100.xhp" name="View">View</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153988" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_SCPAGE_CONTENT">Defines which elements of the <item type="productname">%PRODUCTNAME</item> Calc main window are displayed. You can also show or hide highlighting of values in tables.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#tabelleinhalte"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3153682" role="heading" level="2" l10n="U"
+                 oldref="28">Visual aids</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153311" role="paragraph" l10n="U" oldref="29">Specifies which lines are displayed.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_GRID" id="bm_id3148538" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147242" role="heading" level="3" l10n="U"
+                 oldref="30">Grid lines</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153088" role="paragraph" l10n="U" oldref="31"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_GRID">Specifies whether to display grid lines between the cells.</ahelp><switchinline select="appl"><caseinline select="CALC">For printing, choose <emph>Format - Page - </emph><link href="text/scalc/01/05070500.xhp" name="Sheet"><emph>Sheet</emph></link> and mark the <emph>Grid</emph> check box.
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_CONTENT:LB_COLOR" id="bm_id3150504" localize="false"/>
+<paragraph role="heading" id="hd_id3156326" xml-lang="en-US" level="3" l10n="U" oldref="32">Color</paragraph>
+<paragraph role="paragraph" id="par_id3154286" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="SC_LISTBOX_RID_SCPAGE_CONTENT_LB_COLOR">Specifies a color for the grid lines in the current document.</ahelp> To see the grid line color that was saved with the document, go to <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - Appearance</emph>, under <emph>Scheme</emph> find the entry <emph>Spreadsheet - Grid lines</emph> and set the color to "Automatic".</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_PAGEBREAKS" id="bm_id3148563" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152349" role="heading" level="3" l10n="U"
+                 oldref="34">Page breaks</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151245" role="paragraph" l10n="U" oldref="35"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_PAGEBREAKS">Specifies whether to view the page breaks within a defined print area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_GUIDELINE" id="bm_id3148946" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149669" role="heading" level="3" l10n="U"
+                 oldref="36">Guides while moving</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148550" role="paragraph" l10n="U" oldref="37"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_GUIDELINE">Specifies whether to view guides when moving drawings, frames, graphics and other objects.</ahelp> These guides help you align objects.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_HANDLES" id="bm_id3153380" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150358" role="heading" level="3" l10n="U"
+                 oldref="38">Simple handles</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154140" role="paragraph" l10n="U" oldref="39"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_HANDLES">Specifies whether to display the handles (the eight points on a selection box) as simple squares without 3D effect.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_BIGHANDLES" id="bm_id3151176" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149202" role="heading" level="3" l10n="U"
+                 oldref="40">Large handles</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154123" role="paragraph" l10n="U" oldref="41"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_BIGHANDLES">Specifies that larger than normal handles (the eight points on a selection box) are displayed.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3152920" role="heading" level="2" l10n="U" oldref="3">Display</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3125864" role="paragraph" l10n="U" oldref="4">Select various options for the screen display.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_FORMULA" id="bm_id3150767" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154218" role="heading" level="3" l10n="U" oldref="5">Formulas</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150440" role="paragraph" l10n="U" oldref="6"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_FORMULA">Specifies whether to show formulas instead of results in the cells.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_NIL" id="bm_id3146146" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155132" role="heading" level="3" l10n="U" oldref="7">Zero values</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147318" role="paragraph" l10n="U" oldref="8"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_NIL">Specifies whether to show numbers with the value of 0.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_ANNOT" id="bm_id3163711" localize="false"/>
+<paragraph role="heading" id="hd_id3147348" xml-lang="en-US" level="3" l10n="U" oldref="9">Comment indicator</paragraph>
+<paragraph role="paragraph" id="par_id3146974" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_ANNOT">Specifies that a small rectangle in the top right corner of the cell indicates that a comment exists. The comment will be shown only when you enable tips under <emph>%PRODUCTNAME - General</emph> in the Options dialog box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:NoteVisible" id="bm_id2862651" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:NoteVisible" id="bm_id3153574" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3150487" role="paragraph" l10n="U" oldref="24"><ahelp hid=".uno:NoteVisible">To display a comment permanently, select the <emph>Show comment</emph> command from the cell's context menu.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149667" role="paragraph" l10n="CHG" oldref="25">You can type and edit comments with the <link href="text/shared/01/04050000.xhp" name="Insert - Comment"><emph>Insert - Comment</emph></link> command. Comments that are permanently displayed can be edited by clicking the comment box. Click the Navigator and under the <emph>Comments</emph> entry you can view all comments in the current document. By double clicking a comment in Navigator, the cursor will jump to the corresponding cell containing the comment.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_VALUE" id="bm_id3155306" localize="false"/>
+<paragraph role="heading" id="hd_id3150872" xml-lang="en-US" level="3" l10n="U" oldref="11">Value highlighting</paragraph>
+<paragraph role="paragraph" id="par_id3154792" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_VALUE">Mark the <emph>Value highlighting</emph> box to show the cell contents in different colors, depending on type. Text cells are formatted in black, formulas in green, and number cells in blue, no matter how their display is formatted.</ahelp></paragraph>
+<paragraph role="warning" id="par_id3151319" xml-lang="en-US" l10n="U" oldref="13">When this command is active, any colors assigned in the document will not be displayed until the function is deactivated.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_ANCHOR" id="bm_id3146972" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3157846" role="heading" level="3" l10n="U"
+                 oldref="14">Anchor</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147494" role="paragraph" l10n="U" oldref="15"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_ANCHOR">Specifies whether the anchor icon is displayed when an inserted object, such as a graphic, is selected.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_CLIP" id="bm_id3146789" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146898" role="heading" level="3" l10n="U"
+                 oldref="26">Text overflow</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153707" role="paragraph" l10n="CHG" oldref="27"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_CLIP">If a cell contains text that is wider than the width of the cell, the text is displayed over empty neighboring cells in the same row. If there is no empty neighboring cell, a small triangle at the cell border indicates that the text continues.</ahelp><comment>UFI: sc.features "Alignment of text that is larger than a cell"</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_RFIND" id="bm_id3153927" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150327" role="heading" level="3" l10n="U"
+                 oldref="54">Show references in color</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153766" role="paragraph" l10n="U" oldref="55"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_RFIND">Specifies that each reference is highlighted in color in the formula. The cell range is also enclosed by a colored border as soon as the cell containing the reference is selected for editing.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3155444" role="heading" level="2" l10n="U"
+                 oldref="16">Objects</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148405" role="paragraph" l10n="CHG" oldref="17">Defines whether to display or hide objects for up to three object groups.</paragraph><comment>removed "placeholder" text, see i81634</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_CONTENT:LB_OBJGRF" id="bm_id3154256" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150043" role="heading" level="3" l10n="U"
+                 oldref="18">Objects/Graphics</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3163549" role="paragraph" l10n="CHG" oldref="19"><ahelp hid="SC_LISTBOX_RID_SCPAGE_CONTENT_LB_OBJGRF">Defines if objects and graphics are shown or hidden.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_CONTENT:LB_DIAGRAM" id="bm_id3147344" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151249" role="heading" level="3" l10n="U"
+                 oldref="20">Charts</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149106" role="paragraph" l10n="CHG" oldref="21"><ahelp hid="SC_LISTBOX_RID_SCPAGE_CONTENT_LB_DIAGRAM">Defines if charts in your document are shown or hidden.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCPAGE_CONTENT:LB_DRAW" id="bm_id3155334" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154703" role="heading" level="3" l10n="U"
+                 oldref="22">Drawing objects</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155959" role="paragraph" l10n="CHG" oldref="23"><ahelp hid="SC_LISTBOX_RID_SCPAGE_CONTENT_LB_DRAW">Defines if drawing objects in your document are shown or hidden.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id0909200810585828" role="heading" level="2" l10n="NEW">Zoom</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_SYNCZOOM" id="bm_id0909200810584462" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0909200810585881" role="heading" level="3" l10n="NEW">Synchronize sheets</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0909200810585870" role="paragraph" l10n="NEW"><ahelp hid=".">If checked, all sheets are shown with the same zoom factor. If not checked, each sheet can have its own zoom factor.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153920" role="heading" level="2" l10n="U"
+                 oldref="42">Window</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154661" role="paragraph" l10n="U" oldref="43">Specifies whether some Help elements will or will not appear in the table.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_ROWCOLHEADER" id="bm_id3145791" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149923" role="heading" level="3" l10n="U"
+                 oldref="44">Column/Row headers</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149816" role="paragraph" l10n="U" oldref="45"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_ROWCOLHEADER">Specifies whether to display row and column headers.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_HSCROLL" id="bm_id3154120" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154205" role="heading" level="3" l10n="U"
+                 oldref="46">Horizontal scrollbar</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155578" role="paragraph" l10n="U" oldref="47"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_HSCROLL">Specifies whether to display a horizontal scrollbar at the bottom of the document window.</ahelp> Note that there is a slider between the horizontal scrollbar and the sheet tabs that may be set to one end.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_VSCROLL" id="bm_id3158413" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148422" role="heading" level="3" l10n="U"
+                 oldref="48">Vertical scrollbar</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147128" role="paragraph" l10n="U" oldref="49"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_VSCROLL">Specifies whether to display a vertical scrollbar at the right of the document window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_TBLREG" id="bm_id3158214" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150826" role="heading" level="3" l10n="U"
+                 oldref="50">Sheet tabs</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154658" role="paragraph" l10n="U" oldref="51"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_TBLREG">Specifies whether to display the sheet tabs at the bottom of the spreadsheet document.</ahelp> If this box is not checked, you will only be able to switch between the sheets through the <switchinline select="appl"><caseinline select="CALC"><link href="text/scalc/01/02110000.xhp" name="Navigator">Navigator</link>
+</caseinline><defaultinline>Navigator</defaultinline></switchinline>. Note that there is a slider between the horizontal scrollbar and the sheet tabs that may be set to one end.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_OUTLINE" id="bm_id3154199" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3152584" role="heading" level="3" l10n="U"
+                 oldref="52">Outline symbols</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145135" role="paragraph" l10n="U" oldref="53"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_OUTLINE">If you have defined an <switchinline select="appl"><caseinline select="CALC"><link href="text/scalc/01/12080000.xhp" name="outline">outline</link>
+</caseinline><defaultinline>outline</defaultinline></switchinline>, the <emph>Outline symbols</emph> option specifies whether to view the outline symbols at the border of the sheet.</ahelp></paragraph>
+   </body>
+</helpdocument>

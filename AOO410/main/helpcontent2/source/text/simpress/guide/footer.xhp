@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguidefooterxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Adding a Header or a Footer to All Slides</title>
+<filename>/text/simpress/guide/footer.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153191"><bookmark_value>footers;slide masters</bookmark_value>
+<bookmark_value>slide masters; headers and footers</bookmark_value>
+<bookmark_value>headers and footers; slide masters</bookmark_value>
+<bookmark_value>inserting;headers/footers in all slides</bookmark_value>
+<bookmark_value>slide numbers on all slides</bookmark_value>
+<bookmark_value>page numbers on all slides</bookmark_value>
+<bookmark_value>date on all slides</bookmark_value>
+<bookmark_value>time and date on all slides</bookmark_value>
+</bookmark>
+  <comment>mw changed "adding;" to "inserting;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3153191" role="heading" level="1" l10n="U" oldref="1"><variable id="footer"><link href="text/simpress/guide/footer.xhp" name="Adding a Header or a Footer to All Slides">Adding a Header or a Footer to All Slides</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id1356547" role="paragraph" l10n="NEW">Every slide is based on a slide master. The text, pictures, tables, fields or other objects that you place on the slide master are visible as a background on all slides that are based on that slide master.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id704672" role="paragraph" l10n="NEW">Masters exist for slides, notes, and handouts. </paragraph>
+  <list type="unordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id8403576" role="paragraph" l10n="NEW">To edit a slide master, choose <emph>View - Master - Slide Master</emph>. Click the Close Master View icon on the Master View toolbar, or choose <emph>View - Normal</emph>, to leave the slide master.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id5641651" role="paragraph" l10n="NEW">To edit a notes master, choose <emph>View - Master - Notes Master</emph>. Click the Close Master View icon on the Master View toolbar, or choose <emph>View - Normal</emph>, to leave the notes master.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id1583300" role="paragraph" l10n="NEW">To edit a handout master, click the Handout tab above the slide. Click the Normal tab to leave the handout master.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id7251808" role="heading" level="2" l10n="NEW">Adding predefined header or footer objects</paragraph>
+  <comment>see i53011</comment>
+  <paragraph xml-lang="en-US" id="par_id5015411" role="paragraph" l10n="NEW">Every type of master has some predefined areas to hold the date, footer, and slide numbers. </paragraph>
+  <paragraph xml-lang="en-US" id="par_id8217413" role="paragraph" l10n="NEW">When you switch to the master view, you can move that areas to any position on the master. You can enter additional text and resize the areas. You can select the contents of the areas and apply text formats. For example, you can change the font size or color.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id7549668" role="tip" l10n="NEW">A predefined Header Area is available only for notes and handouts. If you want a header on all slides, you can move the Footer Area on the slide master to the top.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id1829889" role="paragraph" l10n="NEW">Objects that you insert on a slide master are visible on all slides that are based on that slide master.</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id8843043" role="paragraph" l10n="NEW">Choose <emph>View - Header and Footer</emph>.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id1876583" role="paragraph" l10n="NEW">You see a dialog with two tab pages: <emph>Slide</emph> and <emph>Notes and Handouts</emph> where you can enter contents to the predefined areas. </paragraph>
+    <paragraph xml-lang="en-US" id="par_id4101077" role="paragraph" l10n="NEW">By default, the <emph>Date and Time</emph> checkbox is enabled, but the format is set to Fixed and the text input box is empty, so no date and time is visible on the slides.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id204779" role="paragraph" l10n="NEW">By default, the <emph>Footer</emph> checkbox is enabled, but the text input box is empty, so no footer is visible on the slides.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id1453901" role="paragraph" l10n="NEW">By default, the <emph>Slide number</emph> checkbox is cleared, so no slide numbers are visible.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id1445966" role="paragraph" l10n="NEW">Enter or select the contents that should be visible on all slides.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id1956236" role="paragraph" l10n="NEW">If you want to change the position and formatting of the master objects, choose <emph>View - Master - Slide Master</emph>.</paragraph>
+    <paragraph xml-lang="en-US" id="par_id5259559" role="paragraph" l10n="NEW">You see the slide master with areas near the bottom. You can move the areas , and you can select the fields and apply some formatting. You can also enter some text here which will be shown next to the fields.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id2521439" role="paragraph" l10n="NEW">Click the Date Area and move the time and date field. Select the &lt;date/time&gt; field and apply some formatting to change the format for the date and time on all slides. The same applies to the Footer Area and the Slide Number Area.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="hd_id4712057" role="heading" level="2" l10n="NEW">Adding text objects as header or footer objects</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3155064" role="paragraph" l10n="CHG" oldref="16">You can add a text object anywhere on the slide master.</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3148866" role="paragraph" l10n="CHG" oldref="14">Choose <emph>View - Master - Slide Master</emph>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3147295" role="paragraph" l10n="U" oldref="12">On the <emph>Drawing</emph> bar, select the <emph>Text</emph> icon 
+<image id="img_id3154654" src="res/commandimagelist/sc_texttoolbox.png" width="0.222inch" height="0.222inch"><alt xml-lang="en-US" id="alt_id3154654">Icon</alt>
+	</image>.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3149947" role="paragraph" l10n="CHG" oldref="10">Drag in the slide master to draw a text object, and then type or paste your text.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3155441" role="paragraph" l10n="CHG" oldref="4">Choose <emph>View - Normal</emph> when you are finished.</paragraph>
+   </listitem>
+  </list>
+  <paragraph xml-lang="en-US" id="par_id3150476" role="tip" l10n="U" oldref="17">You can also add fields, such as the date or page number, to a header or footer by choosing <emph>Insert - Fields</emph>.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3156320" role="note" l10n="CHG" oldref="18">You can hide the header or footer on the current slide by choosing <emph>Format</emph> - <link href="text/simpress/01/05130000.xhp" name="Modify Layout">Slide<emph> Layout</emph></link>, and clearing the <emph>Objects on background</emph> check box.</paragraph>
+  <section id="relatedtopics">
+   
+   <embed href="text/simpress/guide/background.xhp#background"/>
+   <embed href="text/simpress/guide/masterpage.xhp#masterpage"/>
+   <embed href="text/simpress/guide/layers.xhp#layers"/>
+   <paragraph xml-lang="en-US" id="par_id3155848" role="paragraph" l10n="U" oldref="21"><link href="text/simpress/01/04990000.xhp" name="Insert Fields">Insert Fields</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

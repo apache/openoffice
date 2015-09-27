@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106130500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Append libraries</title>
+<filename>/text/shared/01/06130500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-12-02T14:47:07">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3158442" xml-lang="en-US" level="1" l10n="U" oldref="1">Append libraries</paragraph>
+<paragraph role="paragraph" id="par_id3155271" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="">Locate the <item type="productname">%PRODUCTNAME</item> Basic library that you want to add to the current list, and then click Open.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_LIBSDLG_TREE" id="bm_id3152937" localize="false"/>
+<paragraph role="heading" id="hd_id3152952" xml-lang="en-US" level="2" l10n="U" oldref="3">File name:</paragraph>
+<paragraph role="paragraph" id="par_id3152876" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="HID_BASICIDE_LIBSDLG_TREE">Enter a name or the path to the library that you want to append. You can also select a library from the list.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147294" xml-lang="en-US" level="2" l10n="U" oldref="5">Options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:CheckBox:RID_DLG_LIBS:RID_CB_REF" id="bm_id3147090" localize="false"/>
+<paragraph role="heading" id="hd_id3143272" xml-lang="en-US" level="3" l10n="U" oldref="7">Insert as reference (read-only)</paragraph>
+<paragraph role="paragraph" id="par_id3154350" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REF">Adds the selected library as a read-only file. The library is reloaded each time you start <item type="productname">%PRODUCTNAME</item>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:CheckBox:RID_DLG_LIBS:RID_CB_REPL" id="bm_id3152895" localize="false"/>
+<paragraph role="heading" id="hd_id3154788" xml-lang="en-US" level="3" l10n="U" oldref="9">Replace existing libraries</paragraph>
+<paragraph role="paragraph" id="par_id3154894" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="BASCTL_CHECKBOX_RID_DLG_LIBS_RID_CB_REPL">Replaces a library that has the same name with the current library.</ahelp></paragraph>
+</body>
+</helpdocument>

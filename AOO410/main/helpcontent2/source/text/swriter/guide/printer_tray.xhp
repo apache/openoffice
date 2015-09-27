@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideprinter_trayxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Selecting printer paper trays</title>
+         <filename>/text/swriter/guide/printer_tray.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id6609088"><bookmark_value>selecting;paper trays</bookmark_value>
+      <bookmark_value>paper tray selection</bookmark_value>
+</bookmark><comment>mw made "paper trays;..." a one level entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3155909" role="heading" level="1" l10n="U" oldref="1"><variable id="printer_tray"><link href="text/swriter/guide/printer_tray.xhp" name="Selecting printer paper trays">Selecting Printer Paper Trays</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155858" role="paragraph" l10n="U" oldref="2">Use page styles to specify different paper sources for different pages in your document.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149841" role="listitem" l10n="U" oldref="7">Choose <emph>Format - Styles and Formatting</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156108" role="listitem" l10n="U" oldref="8">Click the <item type="menuitem">Page Styles</item>
+               <emph/>icon.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155066" role="listitem" l10n="U" oldref="9">Right-click the page style in the list that you want to specify the paper source for, and then choose <emph>Modify</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153416" role="listitem" l10n="U" oldref="10">In the <item type="menuitem">Paper tray</item>
+               <emph/>box, select the paper tray that you want to use.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153140" role="listitem" l10n="U" oldref="11">Click <emph>OK</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149649" role="listitem" l10n="U" oldref="12">Repeat steps 1-5 for each page style that you want to specify the paper for.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149616" role="listitem" l10n="U" oldref="5">Apply the page style to the pages that you want.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/print_preview.xhp#print_preview"/>
+      <paragraph xml-lang="en-US" id="par_id3154260" role="paragraph" l10n="U" oldref="13"><link href="text/swriter/guide/pagestyles.xhp" name="Creating and applying page styles">Creating and applying page styles</link></paragraph>
+   </body>
+</helpdocument>

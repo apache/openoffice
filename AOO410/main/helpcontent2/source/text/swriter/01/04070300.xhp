@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104070300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Printer</title>
+<filename>/text/swriter/01/04070300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-22T13:15:29">UFI: fixed bug #i27718# plus another wrong label</lastedited>
+</history>
+</meta>
+<body>
+<section id="drucker">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ENV_PRT" id="bm_id3149806" localize="false"/>
+<paragraph role="heading" id="hd_id3154104" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04070300.xhp">Printer</link></paragraph>
+<paragraph role="paragraph" id="par_id3153531" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_ENV_PRT">Set the print options for the envelope.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/swriter/00/00000404.xhp#druckerbr"/>
+</section>
+<paragraph role="paragraph" id="par_id3152960" xml-lang="en-US" l10n="U" oldref="3">Consult the documentation that came with your printer for setting up the printer for envelopes. Depending on the printer model, envelopes may have to be placed left, right, in the middle, and either face up or face down.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_HOR_LEFT" id="bm_id3153675" localize="false"/>
+<paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="2" l10n="U" oldref="5">Horizontal left</paragraph>
+<paragraph role="paragraph" id="par_id3154564" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="ITM_HOR_LEFT">Feeds the envelope horizontally from the left edge of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_HOR_CNTR" id="bm_id3149688" localize="false"/>
+<paragraph role="heading" id="hd_id3155898" xml-lang="en-US" level="2" l10n="U" oldref="7">Horizontal center</paragraph>
+<paragraph role="paragraph" id="par_id3149694" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="ITM_HOR_CNTR">Feeds the envelope horizontally from the center of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_HOR_RGHT" id="bm_id3155186" localize="false"/>
+<paragraph role="heading" id="hd_id3155174" xml-lang="en-US" level="2" l10n="U" oldref="9">Horizontal right</paragraph>
+<paragraph role="paragraph" id="par_id3143273" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="ITM_HOR_RGHT">Feeds the envelope horizontally from the right edge of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_VER_LEFT" id="bm_id3149817" localize="false"/>
+<paragraph role="heading" id="hd_id3149488" xml-lang="en-US" level="2" l10n="U" oldref="11">Vertical left</paragraph>
+<paragraph role="paragraph" id="par_id3149823" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="ITM_VER_LEFT">Feeds the envelope vertically from the left edge of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_VER_CNTR" id="bm_id3149104" localize="false"/>
+<paragraph role="heading" id="hd_id3151260" xml-lang="en-US" level="2" l10n="U" oldref="13">Vertical center</paragraph>
+<paragraph role="paragraph" id="par_id3148968" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="ITM_VER_CNTR">Feeds the envelope vertically from the center of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_ITM_VER_RGHT" id="bm_id3153644" localize="false"/>
+<paragraph role="heading" id="hd_id3153633" xml-lang="en-US" level="2" l10n="U" oldref="15">Vertical right</paragraph>
+<paragraph role="paragraph" id="par_id3149037" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="ITM_VER_RGHT">Feeds the envelope vertically from the right edge of the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_ENV_PRT:BTN_TOP" id="bm_id3145757" localize="false"/>
+<paragraph role="heading" id="hd_id3152773" xml-lang="en-US" level="2" l10n="U" oldref="17">Print from top</paragraph>
+<paragraph role="paragraph" id="par_id3145763" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:RADIOBUTTON:TP_ENV_PRT:BTN_TOP">Feeds the envelope with the print side face up in the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_ENV_PRT:BTN_BOTTOM" id="bm_id3149171" localize="false"/>
+<paragraph role="heading" id="hd_id3155146" xml-lang="en-US" level="2" l10n="U" oldref="19">Print from bottom</paragraph>
+<paragraph role="paragraph" id="par_id3149178" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW:RADIOBUTTON:TP_ENV_PRT:BTN_BOTTOM">Feeds the envelope with the print side face down in the printer tray.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_ENV_PRT:FLD_RIGHT" id="bm_id3145778" localize="false"/>
+<paragraph role="heading" id="hd_id3156279" xml-lang="en-US" level="2" l10n="U" oldref="21">Shift right</paragraph>
+<paragraph role="paragraph" id="par_id3145784" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SW:METRICFIELD:TP_ENV_PRT:FLD_RIGHT">Enter the amount to shift the print area to the right.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_ENV_PRT:FLD_DOWN" id="bm_id3151378" localize="false"/>
+<paragraph role="heading" id="hd_id3155921" xml-lang="en-US" level="2" l10n="U" oldref="23">Shift down</paragraph>
+<paragraph role="paragraph" id="par_id3151383" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SW:METRICFIELD:TP_ENV_PRT:FLD_DOWN">Enter the amount to shift the print area down.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150123" xml-lang="en-US" level="2" l10n="U" oldref="25">Current printer</paragraph>
+<paragraph role="paragraph" id="par_id3150696" xml-lang="en-US" l10n="U" oldref="26">Displays the name of the current printer.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_ENV_PRT:BTN_PRTSETUP" id="bm_id3147411" localize="false"/>
+<paragraph role="heading" id="hd_id3155862" xml-lang="en-US" level="2" l10n="U" oldref="27">Setup</paragraph>
+<paragraph role="paragraph" id="par_id3147418" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SW:PUSHBUTTON:TP_ENV_PRT:BTN_PRTSETUP">Opens the Print Setup dialog where you can define additional printer settings, such as paper format and orientation.</ahelp></paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,61 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _FILTER_HRC
+#define _FILTER_HRC
+
+// include ---------------------------------------------------------------
+
+#include <svl/solar.hrc>
+
+// Help-Ids --------------------------------------------------------------
+
+#define RID_PDF_DIALOG_START		(RID_FILTER_START +   0)
+#define RID_PDF_DIALOG_END		    (RID_FILTER_START +  19)
+#define RID_XSLT_DIALOG_START		(RID_FILTER_START +  20)
+#define RID_XSLT_DIALOG_END			(RID_FILTER_START +  69)
+#define RID_PDF_OLD_EXPORT_DLG		(RID_FILTER_START +  70)
+
+#define DLG_EXPORT_EPCT 				(RID_GOODIES_START+ 0)
+#define DLG_EXPORT_GIF					(RID_GOODIES_START+ 1)
+#define DLG_EXPORT_EMET 				(RID_GOODIES_START+ 2)
+#define DLG_EXPORT_JPG					(RID_GOODIES_START+ 3)
+#define DLG_IMPORT_PCD					(RID_GOODIES_START+ 4)
+#define DLG_EXPORT_EPNG 				(RID_GOODIES_START+ 5)
+#define DLG_EXPORT_EPS					(RID_GOODIES_START+ 8)
+#define DLG_EXPORT_EPBM					(RID_GOODIES_START+ 9)
+#define DLG_EXPORT_EPGM					(RID_GOODIES_START+ 10)
+#define DLG_EXPORT_EPPM					(RID_GOODIES_START+ 11)
+#define DLG_SSL_NEWCERT					(RID_GOODIES_START+ 12)
+#define DLG_SSL_INFCERT					(RID_GOODIES_START+ 13)
+
+// warning, next range is RID_FILTER_START + 100 !
+
+#define HID_FILTER_PDF_OPTIONS      "HID_FILTER_PDF_OPTIONS"
+#define HID_FILTER_PDF_INITIAL_VIEW   "HID_FILTER_PDF_INITIAL_VIEW"
+#define HID_FILTER_PDF_USER_INTERFACE "HID_FILTER_PDF_USER_INTERFACE"
+#define HID_FILTER_PDF_SECURITY       "HID_FILTER_PDF_SECURITY"
+#define HID_FILTER_PDF_LINKS          "HID_FILTER_PDF_LINKS"
+
+#endif
+

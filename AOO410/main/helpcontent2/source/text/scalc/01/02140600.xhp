@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0102140600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Fill Series</title>
+<filename>/text/scalc/01/02140600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-08-17T11:59:40">FPE: Inserted link for AutoFill</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:FillSeries" id="bm_id709198" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FillSeries" id="bm_id3150791" localize="false"/>
+<paragraph role="heading" id="hd_id3148664" xml-lang="en-US" level="1" l10n="U" oldref="1">Fill Series</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="2"><variable id="reihenfuellentext"><ahelp hid=".uno:FillSeries">Automatically generate series with the options in this dialog. Determine direction, increment, time unit and series type.</ahelp>
+</variable></paragraph>
+<paragraph role="note" id="par_id3146976" xml-lang="en-US" l10n="U" oldref="41">Before filling a series, first select the cell range.</paragraph>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000402.xhp#bausreihe"/>
+</section>
+<paragraph role="paragraph" id="par_id3145748" xml-lang="en-US" l10n="U" oldref="3">To automatically continue a series using the assumed completion rules, choose the <emph>AutoFill</emph> option after opening the <emph>Fill Series</emph> dialog.</paragraph>
+<paragraph role="heading" id="hd_id3147435" xml-lang="en-US" level="2" l10n="U" oldref="4">Direction</paragraph>
+<paragraph role="paragraph" id="par_id3154729" xml-lang="en-US" l10n="U" oldref="5">Determines the direction of series creation.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_BOTTOM" id="bm_id3147124" localize="false"/>
+<paragraph role="heading" id="hd_id3145253" xml-lang="en-US" level="3" l10n="U" oldref="6">Down</paragraph>
+<paragraph role="paragraph" id="par_id3155418" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_BOTTOM">Creates a downward series in the selected cell range for the column using the defined increment to the end value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_RIGHT" id="bm_id3153415" localize="false"/>
+<paragraph role="heading" id="hd_id3155738" xml-lang="en-US" level="3" l10n="U" oldref="8">Right</paragraph>
+<paragraph role="paragraph" id="par_id3149402" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_RIGHT">Creates a series running from left to right within the selected cell range using the defined increment to the end value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_TOP" id="bm_id3155067" localize="false"/>
+<paragraph role="heading" id="hd_id3146972" xml-lang="en-US" level="3" l10n="U" oldref="10">Up</paragraph>
+<paragraph role="paragraph" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_TOP">Creates an upward series in the cell range of the column using the defined increment to the end value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_LEFT" id="bm_id3147341" localize="false"/>
+<paragraph role="heading" id="hd_id3153764" xml-lang="en-US" level="3" l10n="U" oldref="12">Left</paragraph>
+<paragraph role="paragraph" id="par_id3156382" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_LEFT">Creates a series running from right to left in the selected cell range using the defined increment to the end value.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147344" xml-lang="en-US" level="2" l10n="U" oldref="14">Series Type</paragraph>
+<paragraph role="paragraph" id="par_id3149257" xml-lang="en-US" l10n="U" oldref="15">Defines the series type. Choose between <emph>Linear, Growth, Date </emph>and <emph>AutoFill</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_ARITHMETIC" id="bm_id3150298" localize="false"/>
+<paragraph role="heading" id="hd_id3148488" xml-lang="en-US" level="3" l10n="U" oldref="16">Linear</paragraph>
+<paragraph role="paragraph" id="par_id3159238" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_ARITHMETIC">Creates a linear number series using the defined increment and end value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_GEOMETRIC" id="bm_id3150784" localize="false"/>
+<paragraph role="heading" id="hd_id3149210" xml-lang="en-US" level="3" l10n="U" oldref="18">Growth</paragraph>
+<paragraph role="paragraph" id="par_id3150364" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_GEOMETRIC">Creates a growth series using the defined increment and end value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_DATE" id="bm_id3155378" localize="false"/>
+<paragraph role="heading" id="hd_id3149528" xml-lang="en-US" level="3" l10n="U" oldref="20">Date</paragraph>
+<paragraph role="paragraph" id="par_id3150887" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_DATE">Creates a date series using the defined increment and end date.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_AUTOFILL" id="bm_id3152985" localize="false"/>
+<paragraph role="heading" id="hd_id3150202" xml-lang="en-US" level="3" l10n="U" oldref="22">AutoFill</paragraph>
+<paragraph role="paragraph" id="par_id3156288" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_AUTOFILL">Forms a series directly in the sheet.</ahelp> The AutoFill function takes account of customized lists. For example, by entering <emph>January</emph> in the first cell, the series is completed using the list defined under <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Sort Lists</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3155811" xml-lang="en-US" l10n="U" oldref="24">AutoFill tries to complete a value series by using a defined pattern. The series 1,3,5 is automatically completed with 7,9,11,13, and so on. Date and time series are completed accordingly; for example, after 01.01.99 and 15.01.99, an interval of 14 days is used.</paragraph>
+<paragraph role="paragraph" id="par_id2956483" xml-lang="en-US" l10n="NEW" localize="false">
+<embedvar href="text/scalc/guide/calc_series.xhp#calc_series"/>
+</paragraph>
+<paragraph role="heading" id="hd_id3148700" xml-lang="en-US" level="2" l10n="U" oldref="25">Unit of Time</paragraph>
+<paragraph role="paragraph" id="par_id3153308" xml-lang="en-US" l10n="U" oldref="26">In this area you can specify the desired unit of time. This area is only active if the <emph>Date</emph> option has been chosen in the <emph>Series type</emph> area.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_DAY" id="bm_id3153913" localize="false"/>
+<paragraph role="heading" id="hd_id3148868" xml-lang="en-US" level="3" l10n="U" oldref="27">Day</paragraph>
+<paragraph role="paragraph" id="par_id3148605" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_DAY">Use the <emph>Date</emph> series type and this option to create a series using seven days.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_DAY_OF_WEEK" id="bm_id3145074" localize="false"/>
+<paragraph role="heading" id="hd_id3144771" xml-lang="en-US" level="3" l10n="U" oldref="29">Weekday</paragraph>
+<paragraph role="paragraph" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_DAY_OF_WEEK">Use the <emph>Date</emph> series type and this option to create a series of five day sets.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_MONTH" id="bm_id3159204" localize="false"/>
+<paragraph role="heading" id="hd_id3154957" xml-lang="en-US" level="3" l10n="U" oldref="31">Month</paragraph>
+<paragraph role="paragraph" id="par_id3149126" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_MONTH">Use the <emph>Date</emph> series type and this option to form a series from the names or abbreviations of the months.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_FILLSERIES:BTN_YEAR" id="bm_id3146777" localize="false"/>
+<paragraph role="heading" id="hd_id3152870" xml-lang="en-US" level="3" l10n="U" oldref="33">Year</paragraph>
+<paragraph role="paragraph" id="par_id3151300" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SC:RADIOBUTTON:RID_SCDLG_FILLSERIES:BTN_YEAR">Use the <emph>Date</emph> series type and this option to create a series of years.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_FILLSERIES:ED_START_VALUES" id="bm_id3145357" localize="false"/>
+<paragraph role="heading" id="hd_id3154762" xml-lang="en-US" level="2" l10n="U" oldref="35">Start Value</paragraph>
+<paragraph role="paragraph" id="par_id3149381" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SC:EDIT:RID_SCDLG_FILLSERIES:ED_START_VALUES">Determines the start value for the series.</ahelp> Use numbers, dates or times.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_FILLSERIES:ED_END_VALUES" id="bm_id3153557" localize="false"/>
+<paragraph role="heading" id="hd_id3153013" xml-lang="en-US" level="2" l10n="U" oldref="37">End Value</paragraph>
+<paragraph role="paragraph" id="par_id3153487" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SC:EDIT:RID_SCDLG_FILLSERIES:ED_END_VALUES">Determines the end value for the series.</ahelp> Use numbers, dates or times.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_FILLSERIES:ED_INCREMENT" id="bm_id3151196" localize="false"/>
+<paragraph role="heading" id="hd_id3149312" xml-lang="en-US" level="2" l10n="U" oldref="39">Increment</paragraph>
+<paragraph role="paragraph" id="par_id3154739" xml-lang="en-US" l10n="U" oldref="40">The term "increment" denotes the amount by which a given value increases.<ahelp hid="SC:EDIT:RID_SCDLG_FILLSERIES:ED_INCREMENT"> Determines the value by which the series of the selected type increases by each step.</ahelp> Entries can only be made if the linear, growth or date series types have been selected.</paragraph>
+</body>
+</helpdocument>

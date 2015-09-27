@@ -1,0 +1,225 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef OOX_CORE_XMLFILTERBASE_HXX
+#define OOX_CORE_XMLFILTERBASE_HXX
+
+#include <com/sun/star/text/XText.hpp>
+#include <com/sun/star/text/XTextCursor.hpp>
+#include <com/sun/star/text/XTextField.hpp>
+#include <rtl/ref.hxx>
+#include <rtl/string.hxx>
+#include <rtl/ustring.hxx>
+#include "oox/core/filterbase.hxx"
+#include "oox/core/relations.hxx"
+#include "oox/drawingml/table/tablestylelist.hxx"
+#include "oox/dllapi.h"
+
+namespace com { namespace sun { namespace star {
+    namespace container { class XNameContainer; }
+    namespace document { class XDocumentProperties; }
+    namespace xml { namespace sax { class XLocator; } }
+    namespace xml { namespace sax { class XFastDocumentHandler; } }
+} } }
+
+namespace oox {
+    namespace drawingml { class Theme; }
+    namespace drawingml { namespace chart { class ChartConverter; } }
+    namespace vml { class Drawing; }
+}
+
+namespace sax_fastparser {
+    class FastSerializerHelper;
+
+    typedef boost::shared_ptr< FastSerializerHelper > FSHelperPtr;
+}
+
+namespace oox {
+namespace core {
+
+class FragmentHandler;
+
+// ============================================================================
+
+struct TextField {
+	com::sun::star::uno::Reference< com::sun::star::text::XText > xText;
+	com::sun::star::uno::Reference< com::sun::star::text::XTextCursor > xTextCursor;
+	com::sun::star::uno::Reference< com::sun::star::text::XTextField > xTextField;
+};
+typedef std::vector< TextField > TextFieldStack;
+
+// ============================================================================
+
+struct XmlFilterBaseImpl;
+
+class OOX_DLLPUBLIC XmlFilterBase : public FilterBase
+{
+public:
+    explicit            XmlFilterBase(
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XComponentContext >& rxContext )
+                            throw( ::com::sun::star::uno::RuntimeException );
+
+    virtual             ~XmlFilterBase();
+
+    /** Has to be implemented by each filter, returns the current theme. */
+    virtual const ::oox::drawingml::Theme*
+                        getCurrentTheme() const = 0;
+
+    /** Has to be implemented by each filter to return the collection of VML shapes. */
+    virtual ::oox::vml::Drawing* getVmlDrawing() = 0;
+
+    /** Has to be implemented by each filter, returns a filter-specific chart
+        converter object, that should be global per imported document. */
+    virtual ::oox::drawingml::chart::ChartConverter& getChartConverter() = 0;
+
+    /** Has to be implemented by each filter to return the table style list. */
+	virtual const ::oox::drawingml::table::TableStyleListPtr getTableStyles() = 0;
+
+    // ------------------------------------------------------------------------
+
+    /** Returns the fragment path from the first relation of the passed type,
+        used for fragments referred by the root relations. */
+    ::rtl::OUString     getFragmentPathFromFirstType( const ::rtl::OUString& rType );
+
+    /** Imports a fragment using the passed fragment handler, which contains
+        the full path to the fragment stream.
+
+        @return  True, if the fragment could be imported.
+     */
+    bool                importFragment( const ::rtl::Reference< FragmentHandler >& rxHandler );
+
+    /** Imports the relations fragment associated with the specified fragment.
+
+        @return  The relations collection of the specified fragment.
+     */
+    RelationsRef        importRelations( const ::rtl::OUString& rFragmentPath );
+
+    /** Adds new relation.
+
+        @param rType
+            Relation type.
+
+        @param rTarget
+            Relation target.
+
+        @return  Added relation Id.
+     */
+    ::rtl::OUString     addRelation( const ::rtl::OUString& rType, const ::rtl::OUString& rTarget, bool bExternal = false );
+
+    /** Adds new relation to part's relations.
+
+        @param rPartName
+            Part name the relations are related to. The relations will be stored in <rPartName::path>/_rels/<rPartName::name>.rels.
+
+        @param rType
+            Relation type.
+
+        @param rTarget
+            Relation target.
+
+        @return  Added relation Id.
+     */
+    ::rtl::OUString     addRelation( const ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream > xOutputStream, const ::rtl::OUString& rType, const ::rtl::OUString& rTarget, bool bExternal = false );
+
+	/** Returns a stack of used textfields, used by the pptx importer to replace links to slidepages with rhe real page name */
+	TextFieldStack& getTextFieldStack() const;
+
+    /** Opens and returns the specified output stream from the base storage with specified media type.
+
+        @param rStreamName
+            The name of the embedded storage stream. The name may contain
+            slashes to open streams from embedded substorages. If base stream
+            access has been enabled in the storage, the base stream can be
+            accessed by passing an empty string as stream name.
+
+        @param rMediaType
+            The media type string, used in [Content_Types].xml stream in base
+            storage.
+
+        @return The opened output stream.
+     */
+    ::com::sun::star::uno::Reference< ::com::sun::star::io::XOutputStream >
+                        openFragmentStream(
+                            const ::rtl::OUString& rStreamName,
+                            const ::rtl::OUString& rMediaType );
+
+    /** Opens specified output stream from the base storage with specified
+        media type and returns new fast serializer for that stream.
+
+        @param rStreamName
+            The name of the embedded storage stream. The name may contain
+            slashes to open streams from embedded substorages. If base stream
+            access has been enabled in the storage, the base stream can be
+            accessed by passing an empty string as stream name.
+
+        @param rMediaType
+            The media type string, used in [Content_Types].xml stream in base
+            storage.
+
+        @return newly created serializer helper.
+     */
+    ::sax_fastparser::FSHelperPtr
+                        openFragmentStreamWithSerializer(
+                            const ::rtl::OUString& rStreamName,
+                            const ::rtl::OUString& rMediaType );
+
+    /** Returns new unique ID for exported document.
+
+        @return newly created ID.
+     */
+    inline sal_Int32 GetUniqueId() { return mnMaxDocId++; }
+    inline ::rtl::OString GetUniqueIdOString() { return ::rtl::OString::valueOf( mnMaxDocId++ ); }
+    inline ::rtl::OUString GetUniqueIdOUString() { return ::rtl::OUString::valueOf( mnMaxDocId++ ); }
+
+    /** Write the document properties into into the current OPC package.
+
+        @param xProperties  The document properties to export.
+
+        @return *this
+     */
+    XmlFilterBase& exportDocumentProperties( ::com::sun::star::uno::Reference< ::com::sun::star::document::XDocumentProperties > xProperties );
+
+protected:
+    virtual ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >
+                        implGetInputStream( ::comphelper::MediaDescriptor& rMediaDesc ) const;
+
+private:
+    virtual StorageRef  implCreateStorage(
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream >& rxInStream ) const;
+    virtual StorageRef  implCreateStorage(
+                            const ::com::sun::star::uno::Reference< ::com::sun::star::io::XStream >& rxOutStream ) const;
+
+private:
+    ::std::auto_ptr< XmlFilterBaseImpl > mxImpl;
+    sal_Int32 mnRelId;
+    sal_Int32 mnMaxDocId;
+};
+
+typedef ::rtl::Reference< XmlFilterBase > XmlFilterRef;
+
+// ============================================================================
+
+} // namespace core
+} // namespace oox
+
+#endif

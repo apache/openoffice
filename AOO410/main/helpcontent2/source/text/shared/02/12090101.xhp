@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared0212090101xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Comparison Operators</title>
+         <filename>/text/shared/02/12090101.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148983"><bookmark_value>comparisons;operators in standard filter dialog</bookmark_value>
+      <bookmark_value>operators;standard filters</bookmark_value>
+      <bookmark_value>standard filters;comparison operators</bookmark_value>
+      <bookmark_value>filters; comparison operators</bookmark_value>
+      <bookmark_value>equal sign, see also operators</bookmark_value>
+</bookmark><comment>mw added "equal sign,..."</comment><comment>MW changed "default filters;" into "standard filters;"</comment><comment>mw changed "comparisons;" and "operators;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3148983" role="heading" level="1" l10n="U" oldref="1">Comparison Operators</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155364" role="paragraph" l10n="U" oldref="2">The following comparative operators can be set under <item type="menuitem">Condition</item> in the <item type="menuitem">Standard Filter</item> dialog.</paragraph>
+      <table id="tbl_id3149760">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145313" role="paragraph" l10n="U" oldref="3">
+                  <emph>Comparative operator</emph>
+               </paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147089" role="paragraph" l10n="U" oldref="4">
+                  <emph>Effect</emph>
+               </paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147209" role="paragraph" l10n="U" oldref="5">Equal (=)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146797" role="paragraph" l10n="U" oldref="6">Shows values equal to the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3143271" role="paragraph" l10n="U" oldref="7">Less than (&lt;)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153761" role="paragraph" l10n="U" oldref="8">Shows values less than the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146807" role="paragraph" l10n="U" oldref="9">Greater than (&gt;)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154852" role="paragraph" l10n="U" oldref="10">Shows values greater than the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155342" role="paragraph" l10n="U" oldref="11">Less than or equal to (&lt; =)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154381" role="paragraph" l10n="U" oldref="12">Shows values that are less than or equal to the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153823" role="paragraph" l10n="U" oldref="13">Greater than or equal to (&gt; =)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154143" role="paragraph" l10n="U" oldref="14">Shows values that are greater than or equal to the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154811" role="paragraph" l10n="U" oldref="15">Not equal (&lt; &gt;)</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148944" role="paragraph" l10n="U" oldref="16">Shows the values not equal to the condition.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149669" role="paragraph" l10n="U" oldref="17">Largest</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3159413" role="paragraph" l10n="U" oldref="18">Shows the N (numeric value as parameter) largest values.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151054" role="paragraph" l10n="U" oldref="19">Smallest</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3161657" role="paragraph" l10n="U" oldref="20">Shows the N (numeric value as parameter) smallest values.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150400" role="paragraph" l10n="U" oldref="21">Largest %</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3161645" role="paragraph" l10n="U" oldref="22">Shows the largest N% (numeric value as parameter) of the total values.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149202" role="paragraph" l10n="U" oldref="23">Smallest %</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151176" role="paragraph" l10n="U" oldref="24">Shows the smallest N% (numeric value as parameter) of the entire values.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+   </body>
+</helpdocument>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidecaptions_numbersxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Adding Chapter Numbers to Captions</title>
+         <filename>/text/swriter/guide/captions_numbers.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147684"><bookmark_value>captions; adding chapter numbers</bookmark_value>
+      <bookmark_value>objects; captioning automatically</bookmark_value>
+      <bookmark_value>numbering; captions</bookmark_value>
+      <bookmark_value>automatic numbering;of objects</bookmark_value>
+      <bookmark_value>chapter numbers in captions</bookmark_value>
+      <bookmark_value>inserting;chapter numbers in captions</bookmark_value>
+</bookmark><comment>MW changed "adding;" to "inserting;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3147684" role="heading" level="1" l10n="U"
+                 oldref="14"><variable id="captions_numbers"><link href="text/swriter/guide/captions_numbers.xhp" name="Adding Chapter Numbers to Captions">Adding Chapter Numbers to Captions</link> 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147395" role="paragraph" l10n="U" oldref="15">You can include chapter numbers in captions.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147408" role="paragraph" l10n="U" oldref="16">Ensure that the text in your document is organized by chapters, and that the chapter titles and, if you want, the section titles, use one of the predefined heading paragraph styles. You must also assign a numbering option to the heading paragraph styles.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154249" role="listitem" l10n="U" oldref="17">Select the item that you want to add a caption to.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150503" role="listitem" l10n="U" oldref="18">Choose <emph>Insert - Caption</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150527" role="listitem" l10n="U" oldref="19">Select a caption title from the <item type="menuitem">Category</item>
+               <emph/>box, and select a numbering style in the <item type="menuitem">Numbering</item>
+               <emph/>box. <br/>You also can enter a caption text in this dialog. If you want, enter text in the <item type="menuitem">Caption</item>
+               <emph/>box.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153166" role="listitem" l10n="U" oldref="39">Click <emph>Options</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153190" role="listitem" l10n="U" oldref="45">In the <item type="menuitem">Level</item>
+               <emph/>box, select the number of heading levels to include in the chapter number.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155553" role="listitem" l10n="U" oldref="46">Type the character that you want to separate the chapter number(s) from the caption number in the<emph/>
+               <item type="menuitem">Separator</item> box, and then click <item type="menuitem">OK</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155586" role="listitem" l10n="U" oldref="40">In the <emph>Caption</emph> dialog, click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3147226" role="tip" l10n="U" oldref="43">$[officename] can automatically add a caption when you insert an object, graphic, or table. Choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Writer - AutoCaption</emph>.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/swriter/guide/captions.xhp#captions"/>
+         <paragraph xml-lang="en-US" id="par_id3145567" role="paragraph" l10n="CHG"><link href="text/shared/optionen/01041100.xhp" name="Caption dialog">AutoCaption dialog</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145574" role="paragraph" l10n="C"><link href="text/swriter/guide/chapter_numbering.xhp" name="Chapter numbering">Chapter numbering</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

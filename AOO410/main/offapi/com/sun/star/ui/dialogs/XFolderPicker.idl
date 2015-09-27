@@ -1,0 +1,96 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ui_dialogs_XFolderPicker_idl__
+#define __com_sun_star_ui_dialogs_XFolderPicker_idl__
+
+#ifndef __com_sun_star_lang_IllegalArgumentException_idl__
+#include <com/sun/star/lang/IllegalArgumentException.idl>
+#endif
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_ui_dialogs_XExecutableDialog_idl__
+#include <com/sun/star/ui/dialogs/XExecutableDialog.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ui { module dialogs {
+
+//=============================================================================
+/** Specifies a FolderPicker interface.
+*/
+ 
+published interface XFolderPicker: com::sun::star::ui::dialogs::XExecutableDialog
+{
+	//-------------------------------------------------------------------------
+	/**	Sets the root directory that the FolderPicker should display.
+		It is not specified which root directory the FolderPicker 
+		chooses if the specified root directory doesn't exist.
+		
+		@param aDirectory
+		Specifies the root directory in url format, conform to <a href="http://www.w3.org/Addressing/rfc1738.txt">Rfc1738</a>. 
+		
+		@throws	com::sun::star::lang::IllegalArgumentException
+		if the given url is invalid.
+	*/
+	void setDisplayDirectory( [in] string aDirectory )
+		raises( ::com::sun::star::lang::IllegalArgumentException );
+
+	//-------------------------------------------------------------------------
+	/**	Returns the root directory that the FolderPicker is showing. The 
+		return value is undefined if the client did not choose a root directory 
+		or the previously specified root directory doesn't exist.
+
+		@returns 
+		The directory in url format.
+	 */
+	string getDisplayDirectory();
+
+	//-------------------------------------------------------------------------
+	/** Returns the selected directory as url conform to <a href="http://www.w3.org/Addressing/rfc1738.txt">Rfc1738</a>.
+		
+		@returns
+		The selected directory as url if the user did close the dialog with ok
+		else the returned value is undefined.
+	*/
+	string getDirectory( );
+
+	//-------------------------------------------------------------------------
+	/** The implementation may optionally show the given text as a description 
+		for the user within the dialog, e.g. "Please select a directory". 
+		If the client doesn't set a description the dialog may show a default 
+		description.
+	*/
+	void setDescription( [in] string aDescription );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+
+#endif
+

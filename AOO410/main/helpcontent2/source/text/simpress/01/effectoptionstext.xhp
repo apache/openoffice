@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress01effectoptionstextxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text Animation</title>
+<filename>/text/simpress/01/effectoptionstext.xhp</filename>
+</topic>
+<history>
+<created date="2004-08-30T15:53:07">UFI: Effect Options, tab page Text Animation</created>
+<lastedited date="2005-02-16T10:48:39">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN105AE" xml-lang="en-US" level="1" l10n="NEW"><variable id="text"><link href="text/simpress/01/effectoptionstext.xhp">Text Animation</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN105CC" xml-lang="en-US" l10n="NEW">Specifies the text animation settings for the current effect in the <link href="text/simpress/01/effectoptions.xhp">Effect Options</link> dialog.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_TP_CUSTOMANIMATION_TEXT:LB_GROUP_TEXT" id="bm_id5857112" localize="false"/>
+<paragraph role="heading" id="par_idN105DD" xml-lang="en-US" level="2" l10n="NEW">Group text</paragraph>
+<paragraph role="paragraph" id="par_idN105E1" xml-lang="en-US" l10n="NEW"><ahelp hid="878857730">Specifies how multiple paragraphs are animated</ahelp>:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN105E7" xml-lang="en-US" l10n="NEW">
+<emph>As one object</emph> - all paragraphs are animated as one object.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105EE" xml-lang="en-US" l10n="NEW">
+<emph>All paragraphs at once</emph> - all paragraphs are animated at once, but can have different effects.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN105F5" xml-lang="en-US" l10n="NEW">
+<emph>By 1st level paragraphs</emph> - the first level paragraphs, including sub-level paragraphs, are animated one after another.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/sd:Checkbox:RID_TP_CUSTOMANIMATION_TEXT:CBX_GROUP_AUTO" id="bm_id2183294" localize="false"/>
+<paragraph role="heading" id="par_idN105FB" xml-lang="en-US" level="3" l10n="NEW">Automatically after</paragraph>
+<paragraph role="paragraph" id="par_idN105FF" xml-lang="en-US" l10n="NEW"><ahelp hid="878855171">If "Group text - By 1st level paragraphs" is selected, the paragraphs are animated one after the other.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:RID_TP_CUSTOMANIMATION_TEXT:MF_GROUP_AUTO" id="bm_id7408368" localize="false"/>
+<paragraph role="paragraph" id="par_idN1067F" xml-lang="en-US" l10n="NEW"><ahelp hid="878860804">Enter an additional delay in seconds to animate subsequent paragraphs.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Checkbox:RID_TP_CUSTOMANIMATION_TEXT:CBX_ANIMATE_FORM" id="bm_id5005035" localize="false"/>
+<paragraph role="heading" id="par_idN10602" xml-lang="en-US" level="3" l10n="NEW">Animate attached shape</paragraph>
+<paragraph role="paragraph" id="par_idN10606" xml-lang="en-US" l10n="NEW"><ahelp hid="878855173">Deselect this box to animate only the text, not the shape.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Checkbox:RID_TP_CUSTOMANIMATION_TEXT:CBX_REVERSE" id="bm_id7387005" localize="false"/>
+<paragraph role="heading" id="par_idN10609" xml-lang="en-US" level="3" l10n="NEW">In reverse order</paragraph>
+<paragraph role="paragraph" id="par_idN1060D" xml-lang="en-US" l10n="NEW"><ahelp hid="878855174">Animates the paragraphs in reverse order.</ahelp></paragraph>
+</body>
+</helpdocument>

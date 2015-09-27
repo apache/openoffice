@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedexplorerdatabasedabaadvpropdatxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Special Settings</title>
+         <filename>/text/shared/explorer/database/dabaadvpropdat.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="data">
+         <paragraph xml-lang="en-US" id="par_idN10556" role="heading" level="1" l10n="CHG"><link href="text/shared/explorer/database/dabaadvpropdat.xhp">Special Settings</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN10566" role="paragraph" l10n="NEW">Specifies the way you can work with data in a database.</paragraph>
+      </section>
+      <section id="howtoget">
+         <paragraph xml-lang="en-US" id="par_id7679372" role="paragraph" l10n="NEW">In a database window, choose <emph>Edit - Database - Advanced Settings</emph>
+         </paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id4572283" role="paragraph" l10n="NEW">The availability of the following controls depends on the type of database:</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10590" role="heading" level="2" l10n="NEW">Use SQL92 naming constraints<comment>UFI: found this for dBase and for text file folder</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10594" role="paragraph" l10n="NEW"><ahelp hid=".">Only allows characters that conform to the SQL92 naming convention in a name in a data source. All other characters are rejected. Each name must begin with a lowercase letter, an uppercase letter, or an underscore ( _ ). The remaining characters can be ASCII letters, numbers, and underscores.</ahelp></paragraph>
+      <bookmark xml-lang="en-US" branch="hid/HID_DSADMIN_AS_BEFORE_CORRELATION_NAME" id="bm_id6617777328" localize="false"/>
+      <paragraph xml-lang="en-US" id="par_idN105907" role="heading" level="2" l10n="NEW">Use keyword AS before table alias names</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105947" role="paragraph" l10n="NEW"><ahelp hid=".">Some databases use the keyword "AS" between a name and its alias, while other databases use a whitespace. Enable this option to insert AS before the alias.</ahelp><comment>http://dba.openoffice.org/specifications/Data_Source_Property_Dialog.sxw</comment></paragraph>
+
+
+      <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_DOSLINEENDS" id="bm_id6617328" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3534958" role="heading" level="2" l10n="NEW">End text lines with CR + LF<comment>UFI: found for dBase and text file folder</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id6151921" role="paragraph" l10n="NEW"><ahelp hid=".">Select to use the CR + LF code pair to end every text line (preferred for DOS and Windows operating systems).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_APPENDTABLEALIAS" id="bm_id9050569" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1059E" role="heading" level="2" l10n="NEW">Append the table alias name in SELECT statements</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105A2" role="paragraph" l10n="NEW"><ahelp hid=".">Appends the alias to the table name in SELECT statements.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_ENABLEOUTERJOIN" id="bm_id7278664" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105A5" role="heading" level="2" l10n="NEW">Use Outer Join syntax '{OJ }'</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105A9" role="paragraph" l10n="NEW"><ahelp hid=".">Use escape sequences for outer joins. The syntax for this escape sequence is {oj outer-join}</ahelp><comment>copied from shared\explorer\database\02010100.xhp</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105BE" role="paragraph" l10n="NEW">Example:</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105C1" role="example" l10n="NEW">select Article.* from {oj item LEFT OUTER JOIN orders ON item.no=orders.ANR}</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_IGNOREDRIVER_PRIV" id="bm_id3826715" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105C4" role="heading" level="2" l10n="NEW">Ignore the privileges from the database driver</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105C8" role="paragraph" l10n="NEW"><ahelp hid=".">Ignores access privileges that are provided by the database driver.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_PARAMETERNAMESUBST" id="bm_id8939786" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105CB" role="heading" level="2" l10n="NEW">Replace named parameters with ?</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105CF" role="paragraph" l10n="NEW"><ahelp hid=".">Replaces named parameters in a data source with a question mark (?).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_SUPPRESS_VERSIONCL" id="bm_id6642353" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105D2" role="heading" level="2" l10n="NEW">Display version columns (when available)</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105D6" role="paragraph" l10n="NEW">Some databases assign version numbers to fields to track changes to records. The version number of a field is incremented by one each time the contents of the field are changed. <ahelp hid="HID_DSADMIN_SUPPRESS_VERSIONCL">Displays the internal version number of the record in the database table.</ahelp><comment>copied from shared\explorer\database\11090000.xhp</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_CATALOG" id="bm_id2444532" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN105FA" role="heading" level="2" l10n="NEW">Use the catalog name in SELECT statements</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105FE" role="paragraph" l10n="NEW"><ahelp hid=".">Uses the current data source of the catalog. This option is useful when the ODBC data source is a database server. Do not select this option if the ODBC data source is a dBASE driver.</ahelp><comment>copie from shared\explorer\database\11020000.xhp</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_SCHEMA" id="bm_id7354655" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10613" role="heading" level="2" l10n="NEW">Use the schema name in SELECT statements</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10617" role="paragraph" l10n="NEW"><ahelp hid=".">Allows you to use the schema name in SELECT statements.</ahelp><comment>UFI: ???</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_IGNOREINDEXAPPENDIX" id="bm_id321665" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1061A" role="heading" level="2" l10n="NEW">Create index with ASC or DESC statement</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1061E" role="paragraph" l10n="NEW"><ahelp hid=".">Creates an index with ASC or DESC statements.</ahelp><comment>UFI: ???</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_BOOLEANCOMPARISON" id="bm_id5289773" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10621" role="heading" level="2" l10n="NEW">Comparison of Boolean values</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10625" role="paragraph" l10n="NEW"><ahelp hid=".">Select the type of Boolean comparison that you want to use.</ahelp><comment>UFI: ???</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_CHECK_REQUIRED_FIELDS" id="bm_id4741355" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id1101718" role="heading" level="2" l10n="NEW">Form data input checks for required fields<comment>i82291</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3783989" role="paragraph" l10n="NEW"><ahelp hid=".">When you enter a new record or update an existing record in a form, and you leave a field empty which is bound to a database column which requires input, then you will see a message complaining about the empty field.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id6684163" role="paragraph" l10n="NEW">If this control box is not enabled, then the forms in the current database will not be checked for required fields.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3837397" role="paragraph" l10n="NEW">The control box is available for all data source types which support write access to their data. The control box does not exist for spreadsheets, text, csv, and the various read-only address books.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id0909200811170166" role="heading" level="2" l10n="NEW">Ignore currency field information</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0909200811170221" role="paragraph" l10n="NEW"><ahelp hid=".">Only for Oracle JDBC connections. When enabled it specifies that no column is treated as a currency field. The field type returned from the database driver is discarded.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/HID_DSADMIN_ESCAPE_DATETIME" id="bm_id4743451355" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id040920092139524" role="heading" level="2" l10n="NEW">Use ODBC conformant date/time literals</paragraph>
+<paragraph xml-lang="en-US" id="par_id040920092139526" role="paragraph" l10n="CHG"><ahelp hid=".">Use date/time literals that conform to ODBC standard.</ahelp></paragraph>
+
+<bookmark xml-lang="en-US" branch="hid/HID_DSADMIN_PRIMARY_KEY_SUPPORT" id="bm_id47434523231355" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id04092009442139524" role="heading" level="2" l10n="NEW">Supports primary keys</paragraph>
+<paragraph xml-lang="en-US" id="par_id04096620092139526" role="paragraph" l10n="NEW"><ahelp hid=".">Enable to overrule Base's heuristics used to detect whether the database supports primary keys.</ahelp></paragraph>
+<paragraph xml-lang="en-US" id="par_id66841631" role="paragraph" l10n="NEW">When connecting to a database using a generic API like ODBC, JDBC, or ADO, Base currently applies heuristics to determine whether this database supports primary keys. None of those APIs has dedicated support to retrieve this information.</paragraph>
+<paragraph xml-lang="en-US" id="par_id66841632" role="paragraph" l10n="NEW">The heuristics sometimes fails. This tri-state check box by default is set to the undetermined state, which means "apply the heuristics". If the check box is enabled, primary key support is assumed. If the check box is disabled, no primary key support is assumed.</paragraph>
+<paragraph xml-lang="en-US" id="par_id66841633" role="paragraph" l10n="NEW">Note that if this option is just for overruling the heuristics. If you enable the check box for a database which actually does not support primary keys, you will see some errors.</paragraph>
+</body>
+</helpdocument>

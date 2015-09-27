@@ -1,0 +1,83 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_form_XUpdateListener_idl__ 
+#define __com_sun_star_form_XUpdateListener_idl__ 
+ 
+#ifndef __com_sun_star_lang_XEventListener_idl__ 
+#include <com/sun/star/lang/XEventListener.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_lang_EventObject_idl__ 
+#include <com/sun/star/lang/EventObject.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module form { 
+ 
+//============================================================================= 
+ 
+/** used to listen on objects which allow updating their data.
+	<p>In addition to just get notified when an data update happened, the listener
+	has a chance to veto updates <em>before</em> they happen.</p>
+	
+	@see XUpdateBroadcaster
+ */
+published interface XUpdateListener: com::sun::star::lang::XEventListener
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** is invoked to check the current data.
+
+		<p>For a given update process, if one of the <type>XUpdateListener</type>s
+		vetos the change, the update is canceled, and no further notification happens.</p>
+
+		@param aEvent
+			An event dedscriptor specifying the broadcaster of the change.
+
+		@returns 
+			<TRUE/> when the update was approved, otherwise <FALSE/>.
+	 */
+	boolean approveUpdate( [in] com::sun::star::lang::EventObject aEvent ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** is invoked when an object has finished processing the updates and
+		the data has been successfully written.
+
+		@param aEvent
+			A event dedscriptor specifying the broadcaster of the change.
+	 */
+	void updated( [in] com::sun::star::lang::EventObject aEvent ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

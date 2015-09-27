@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_RemoteAccessContentProvider_idl__
+#define __com_sun_star_ucb_RemoteAccessContentProvider_idl__
+
+#ifndef __com_sun_star_ucb_ContentProvider_idl__
+#include <com/sun/star/ucb/ContentProvider.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_XParameterizedContentProvider_idl__
+#include <com/sun/star/ucb/XParameterizedContentProvider.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** A <type>RemoteAccessContentProvider</type> is a
+	<type>ContentProvider</type> that provides access to contents available at
+	other (remote) UCBs.
+*/
+published service RemoteAccessContentProvider
+{
+	//-------------------------------------------------------------------------
+	/** A <type>RemoteAccessContentProvider</type> is a specialized
+		<type>ContentProvider</type>.
+	 */
+	service com::sun::star::ucb::ContentProvider;
+
+	//-------------------------------------------------------------------------
+	/** allows configuration of the <type>RemoteAccessContentProvider</type>,
+		to specify that certain <type>XContentIdentifier</type>s map to
+		<type>XContent</type>s from a certain remote UCB.  The Arguments
+		string in the
+		<member>XParameterizedContentProvider::registerInstance</member>
+		call must contain the UNO URL of the remote UCB.
+
+        @descr
+        The <type>XContentProvider</type>s obtained through this interface
+        implement the service <type>ContentProvider</type> and, if
+        appropriate, also the interface <type>XFileIdentifierConverter</type>.
+	 */
+	interface com::sun::star::ucb::XParameterizedContentProvider;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

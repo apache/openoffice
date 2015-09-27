@@ -1,0 +1,92 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_io_ObjectOutputStream_idl__ 
+#define __com_sun_star_io_ObjectOutputStream_idl__ 
+ 
+#ifndef __com_sun_star_io_XObjectOutputStream_idl__ 
+#include <com/sun/star/io/XObjectOutputStream.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_io_XActiveDataSource_idl__ 
+#include <com/sun/star/io/XActiveDataSource.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_io_XConnectable_idl__ 
+#include <com/sun/star/io/XConnectable.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module io {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: service com::sun::star::io::ObjectOutputStream
+/** is a stream which allows writing the data of persistent objects.
+	
+	<p>Implementations of this service must fulfill the specifications of the 
+	<type>DataOutputStream</type> service; futhermore, the stream needs to be chained to a 
+	<type>XMarkableStream</type>. Therefore, it also provides the <type>XMarkableStream</type>
+	interface, but it delegates the calls to the chained object.
+	The written objects are held until this instance is destroyed.
+	The references to the objects are written as four-byte integers 
+	and begin at 1. Data format is written: </p>
+	<pre>
+	short   InfoLength
+	long    ObjectReference // 0 indicates no object
+	UTF     ServiceName     // length of 0 indicates this is only a reference
+	long    ObjectLength    // 0 if it is a reference or no object, otherwise the len of the object data
+	Object  ObjectData      // the data of the object
+	</pre>
+	
+	@garantees
+	<ul>
+		<li>-thread safe </li>
+		<li>-allow buffer size is 2 ^ 31 -1 </li> 
+		<li>-maximum object reference identifier is the number of objects.  </li> 
+		<li>-object reference identifier 0 indicates no object </li>
+	</ul>
+ */
+published service ObjectOutputStream
+{ 
+    /** allows to write the data to the stream.
+     */
+	interface com::sun::star::io::XObjectOutputStream; 
+	
+	/** allows to set the underlying outputstream */
+	interface com::sun::star::io::XActiveDataSource; 
+	
+	/** allows to navigate via a chain of streams */
+	interface com::sun::star::io::XConnectable; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

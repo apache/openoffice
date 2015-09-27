@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriter0105040500xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Columns</title>
+         <filename>/text/swriter/01/05040500.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="spalten">
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatColumns" id="bm_id7831291" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatColumns" id="bm_id3151243" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_TABLE_COLUMN" id="bm_id3150212" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_COLUMN" id="bm_id3153246" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:PageColumnDialog" id="bm_id121220080934019" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:PageColumnDialog" id="bm_id1212200809342598" localize="false"/><comment>added two Help IDs, see i97180</comment>
+<paragraph xml-lang="en-US" id="hd_id3149875" role="heading" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05040500.xhp" name="Columns">Columns</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3151392" role="paragraph" l10n="U" oldref="2"><variable id="spaltentext"><ahelp hid="HID_COLUMN">Specifies the number of columns and the column layout for a page style, frame, or section.</ahelp>
+</variable></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/swriter/00/00000405.xhp#spaltens"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3155625" role="heading" level="2" l10n="U" oldref="3">Default settings</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149352" role="paragraph" l10n="U" oldref="4">You can select from predefined column layouts, or create your own. When you apply a layout to a page style, all pages that use the style are updated. Similarly, when you apply a column layout to a frame style, all frames that use that style are updated. You can also change the column layout for a single frame.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_COLUMN:ED_NUMBER" id="bm_id3154502" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_COLUMN_VALUESET" id="bm_id1212200810184474" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154562" role="heading" level="3" l10n="U" oldref="5">Columns</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154508" role="paragraph" l10n="U" oldref="6"><ahelp hid="SW_NUMERICFIELD_TP_COLUMN_ED_NUMBER">Enter the number of columns that you want in the page, frame, or section.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149884" role="paragraph" l10n="U" oldref="47">You can also select one of the predefined column layouts.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150933" role="heading" level="3" l10n="U"
+                 oldref="45">Selection fields</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_COLUMN:CB_BALANCECOLS" id="bm_id3150568" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148386" role="heading" level="3" l10n="CHG"
+                 oldref="52">Evenly distribute contents to all columns</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149024" role="paragraph" l10n="CHG" oldref="53"><ahelp hid="." visibility="hidden">Distributes the text in multi-column sections. The text flows into all columns to the same height. The height of the section adjusts automatically.</ahelp>Evenly distributes the text in <link href="text/swriter/01/04020000.xhp" name="multi-column sections">multi-column sections</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153924" role="heading" level="2" l10n="U"
+                 oldref="19">Width and spacing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147176" role="paragraph" l10n="CHG" oldref="20">If the <emph>Automatic width</emph> check box is not selected, enter the width and spacing options for the columns.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3147562" role="heading" level="3" l10n="U"
+                 oldref="21">(Column number)</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145206" role="paragraph" l10n="U" oldref="22">Displays the column number, as well as width and distance to the adjacent columns.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:TP_COLUMN:BTN_DOWN" id="bm_id3151189" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3156324" role="heading" level="3" l10n="U"
+                 oldref="23">Left Arrow</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150761" role="paragraph" l10n="U" oldref="24"><ahelp hid="SW_IMAGEBUTTON_TP_COLUMN_BTN_DOWN">Moves the column display one column to the left.</ahelp></paragraph>
+      <table id="tbl_id3150256">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149287" role="paragraph" l10n="E">
+<image id="img_id3149750" src="res/sc06301.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3149750">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154694" role="paragraph" l10n="U" oldref="48">Left Arrow</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:TP_COLUMN:BTN_UP" id="bm_id3147515" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145421" role="heading" level="3" l10n="U"
+                 oldref="25">Right Arrow</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153576" role="paragraph" l10n="U" oldref="26"><ahelp hid="SW_IMAGEBUTTON_TP_COLUMN_BTN_UP">Moves the column display one column to the right.</ahelp></paragraph>
+      <table id="tbl_id3154279">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152938" role="paragraph" l10n="E">
+<image id="img_id3152948" src="res/sc06300.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3152948">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153540" role="paragraph" l10n="U" oldref="49">Right Arrow</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_1" id="bm_id3154481" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_2" id="bm_id3152953" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_3" id="bm_id3152956" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154470" role="heading" level="3" l10n="U"
+                 oldref="42">Width</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152963" role="paragraph" l10n="U" oldref="43"><ahelp hid="SW_METRICFIELD_TP_COLUMN_ED_3">Enter the width of the column.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_DIST1" id="bm_id3151319" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_DIST2" id="bm_id3153665" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151308" role="heading" level="3" l10n="U" oldref="7">Spacing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153672" role="paragraph" l10n="U" oldref="8"><ahelp hid="SW_METRICFIELD_TP_COLUMN_ED_DIST2">Enter the amount of space that you want to leave between the columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_COLUMN:CB_AUTO_WIDTH" id="bm_id3154573" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147530" role="heading" level="3" l10n="CHG"
+                 oldref="9">AutoWidth</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150986" role="paragraph" l10n="U" oldref="10"><ahelp hid="SW_CHECKBOX_TP_COLUMN_CB_AUTO_WIDTH">Creates columns of equal width.</ahelp></paragraph>
+      <embed href="text/shared/00/00000001.xhp#vorschau"/>
+      <paragraph xml-lang="en-US" id="par_id3155892" role="paragraph" l10n="U" oldref="44">The column layout preview only shows the columns and not the surrounding page.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149685" role="heading" level="2" l10n="U"
+                 oldref="11">Separator line</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154188" role="paragraph" l10n="U" oldref="12">This area is only available if your layout contains more than one column.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_COLUMN:LB_STYLE" id="bm_id3155786" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155775" role="heading" level="3" l10n="U"
+                 oldref="13">Line</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159190" role="paragraph" l10n="U" oldref="14"><ahelp hid="SW_LISTBOX_TP_COLUMN_LB_STYLE">Select the formatting style for the column separator line. If you do not want a separator line, choose "None".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_COLUMN:ED_HEIGHT" id="bm_id3149303" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155184" role="heading" level="3" l10n="U"
+                 oldref="15">Height</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149309" role="paragraph" l10n="U" oldref="16"><ahelp hid="SW_METRICFIELD_TP_COLUMN_ED_HEIGHT">Enter the length of the separator line as a percentage of the height of the column area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_COLUMN:LB_POSITION" id="bm_id3143283" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3143271" role="heading" level="3" l10n="U"
+                 oldref="17">Position</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149485" role="paragraph" l10n="U" oldref="18"><ahelp hid="SW_LISTBOX_TP_COLUMN_LB_POSITION">Select the vertical alignment of the separator line. This option is only available if <emph>Height</emph> value of the line is less than 100%.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_COLUMN:LB_APPLY_TO" id="bm_id3151258" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151248" role="heading" level="2" l10n="U"
+                 oldref="50">Apply to</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154827" role="paragraph" l10n="U" oldref="51"><ahelp hid="SW_LISTBOX_DLG_COLUMN_LB_APPLY_TO">Select the item that you want to apply the column layout to.</ahelp> This option is only available if you access this dialog by choosing <emph>Format - Columns</emph>.</paragraph>
+      <section id="textflow">
+         <embed href="text/shared/01/05030700.xhp#textflow"/>
+      </section>
+   </body>
+</helpdocument>

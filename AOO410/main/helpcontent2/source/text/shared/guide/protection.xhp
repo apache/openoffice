@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedguideprotectionxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Protecting Content in %PRODUCTNAME</title>
+         <filename>/text/shared/guide/protection.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150620"><bookmark_value>protecting; contents</bookmark_value>
+      <bookmark_value>protected contents</bookmark_value>
+      <bookmark_value>contents protection</bookmark_value>
+      <bookmark_value>encryption of contents</bookmark_value>
+      <bookmark_value>passwords for protecting contents</bookmark_value>
+      <bookmark_value>security;protecting contents</bookmark_value>
+      <bookmark_value>form controls; protecting</bookmark_value>
+      <bookmark_value>draw objects;protecting</bookmark_value>
+      <bookmark_value>OLE objects;protecting</bookmark_value>
+      <bookmark_value>graphics;protecting</bookmark_value>
+      <bookmark_value>frames;protecting</bookmark_value>
+</bookmark><comment>mw moved 4 index entries to swriter/guide/protection.xhp</comment>
+<paragraph xml-lang="en-US" id="hd_id3155364" role="heading" level="1" l10n="U" oldref="2"><variable id="protection"><link href="text/shared/guide/protection.xhp" name="Protecting Content in %PRODUCTNAME">Protecting Content in <item type="productname">%PRODUCTNAME</item></link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153394" role="paragraph" l10n="U" oldref="3">The following is an overview of the different ways of protecting contents in <item type="productname">%PRODUCTNAME</item> from being modified, deleted or viewed.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3146957" role="heading" level="2" l10n="U" oldref="4">Protecting All Documents When Saving</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150775" role="paragraph" l10n="CHG" oldref="5">All documents that are saved in <link href="text/shared/00/00000021.xhp" name="OpenDocument format">OpenDocument format</link> can be saved with a password. Documents that are saved with a password cannot be opened without the password. The content is secured so that it cannot be read with an external editor. This applies to content, graphics and OLE objects.</paragraph>
+      <table id="tbl_id3145071">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3166410" role="paragraph" l10n="U" oldref="6">Turning on protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145121" role="paragraph" l10n="U" oldref="7">Choose <emph>File - Save As</emph> and mark the <emph>Save with password</emph> check box. Save the document.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154286" role="paragraph" l10n="U" oldref="8">Turning off protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148492" role="paragraph" l10n="U" oldref="9">Open the document, entering the correct password. Choose <emph>File - Save As</emph> and clear the <emph>Save with password</emph> check box.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id3145068" role="warning" l10n="U" oldref="64">Information entered in <emph>File - Properties</emph> is not encrypted. This includes the name of the author, creation date, word and character counts.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149294" role="heading" level="2" l10n="U"
+                 oldref="10">Protecting Revision Marking</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3161646" role="paragraph" l10n="U" oldref="11">With every change made in <item type="productname">%PRODUCTNAME</item> Calc and <item type="productname">%PRODUCTNAME</item> Writer, the review function records who made the change. This function can be turned on with protection, so that it can only be turned off when the correct password is entered. Until then, all changes will continue to be recorded. Acceptance or rejection of changes is not possible.</paragraph>
+      <table id="tbl_id3148797">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154684" role="paragraph" l10n="U" oldref="12">Turning on protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153104" role="paragraph" l10n="U" oldref="13">Choose <emph>Edit - Changes - Protect Records</emph>. Enter and confirm a password of at least 5 characters.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3144760" role="paragraph" l10n="U" oldref="14">Turning off protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3152920" role="paragraph" l10n="U" oldref="15">Choose <emph>Edit - Changes - Protect Records</emph>. Enter the correct password.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+<comment>MW moved contents of "Protecting Cell Ranges in Calc" to the Calc guides cell_protect.xhp and cell_unprotect.xhp.</comment><comment>MW moved Writer specific contents to the new writer guide protection.xhp</comment>
+<paragraph xml-lang="en-US" id="hd_id3155113" role="heading" level="2" l10n="U"
+                 oldref="52">Protecting Frames, Graphics, and OLE Objects</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153703" role="paragraph" l10n="U" oldref="53">You can protect the content, position and size of inserted graphics. The same applies to frames (in Writer) and OLE objects.</paragraph>
+      <table id="tbl_id3158447">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147131" role="paragraph" l10n="U" oldref="54">Turning on protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150088" role="paragraph" l10n="U" oldref="55">For example, for graphics inserted in Writer: Choose <emph>Format - Picture - Options</emph> tab. Under <emph>Protect</emph>, mark <emph>Contents</emph>, <emph>Position</emph> and/or <emph>Size</emph>.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147510" role="paragraph" l10n="U" oldref="56">Turning off protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153657" role="paragraph" l10n="U" oldref="57">For example, for graphics inserted in Writer: Choose <emph>Format - Picture - Options</emph> tab. Under <emph>Protect</emph>, unmark as appropriate.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="hd_id3152992" role="heading" level="2" l10n="U"
+                 oldref="58">Protecting Drawing Objects and Form Objects</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3166429" role="paragraph" l10n="CHG" oldref="59">The draw objects that you insert into your documents with the <emph>Drawing </emph>toolbar can be protected from being accidentally moved or changed in size. You can do the same with form objects inserted with the <emph>Form Controls</emph> toolbar.</paragraph>
+      <table id="tbl_id3151062">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153226" role="paragraph" l10n="U" oldref="60">Turning on protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148815" role="paragraph" l10n="CHG" oldref="61">Choose <emph>Format - Object - Position and Size </emph>- <emph>Position and Size</emph> tab. Mark the <emph>Position</emph> or <emph>Size</emph> check box.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156289" role="paragraph" l10n="U" oldref="62">Turning off protection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154991" role="paragraph" l10n="CHG" oldref="63">Choose <emph>Format - Object - Position and Size </emph>- <emph>Position and Size</emph> tab. Unmark the <emph>Position</emph> or <emph>Size</emph> check box.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+<comment>removed webdav text, see i71792</comment><comment>MW moved "Opening Microsoft Office Documents That Are Protected With a Password" to shared/guide/ms_import_export_limitations.xhp </comment><embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/shared/guide/doc_save.xhp#doc_save"/>
+      <embed href="text/shared/guide/redlining_protect.xhp#redlining_protect"/>
+      <paragraph xml-lang="en-US" id="par_idN10B8C" role="paragraph" l10n="NEW">
+<embedvar href="text/shared/guide/digital_signatures.xhp#digital_signatures"/>
+</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4680928" role="paragraph" l10n="NEW"><link href="text/swriter/guide/protection.xhp">Protecting Content in %PRODUCTNAME Writer</link></paragraph>
+      <paragraph xml-lang="en-US" id="par_id9014252" role="paragraph" l10n="NEW"><link href="text/scalc/guide/cell_protect.xhp">Protecting Cells in %PRODUCTNAME Calc</link></paragraph>
+   </body>
+</helpdocument>

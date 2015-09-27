@@ -1,0 +1,121 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_XFetchProviderForContentAccess_idl__
+#define __com_sun_star_ucb_XFetchProviderForContentAccess_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+#ifndef __com_sun_star_ucb_FetchResult_idl__
+#include <com/sun/star/ucb/FetchResult.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** provides the possibility to load information offered by a
+	<type>XContentAccess</type> for several rows of a
+	<type>ContentResultSet</type> with a single function call.
+*/
+published interface XFetchProviderForContentAccess: com::sun::star::uno::XInterface
+{
+	//-------------------------------------------------------------------------
+	/** returns the content identifier strings of the columns of the indicated
+	    rows
+
+		@returns
+		<member>FetchResult::Rows</member> contains a sequence of anys. Each
+		of these anys contains a string.
+
+		@param nRowStartPosition
+		the starting row of the resultset
+
+		@param nRowCount
+		the count of rows
+
+		@param bDirection
+		<TRUE/>, if you want the rows to be read in the same order, as they
+		are contained in the result set	( <TRUE/> &lt;-&gt; forward step;
+		<FALSE/> &lt;-&gt; backward step )
+	*/
+	com::sun::star::ucb::FetchResult
+		 fetchContentIdentifierStrings( [in] long nRowStartPosition
+									  , [in] long nRowCount
+									  , [in] boolean bDirection );
+
+	//-------------------------------------------------------------------------
+	/** returns the <type>XContentIdentifier</type>s of the columns of the
+	    indicated rows
+
+		@returns
+		<member>FetchResult::Rows</member> contains a sequence of anys. Each
+		of these anys contains an <type>XContentIdentifier</type>.
+
+		@param nRowStartPosition
+		the starting row of the resultset
+
+		@param nRowCount
+		the count of rows
+
+		@param bDirection
+		<TRUE/>, if you want the rows to be read in the same order, as they
+		are contained in the result set	( <TRUE/> &lt;-&gt; forward step;
+		<FALSE/> &lt;-&gt; backward step )
+	*/
+	com::sun::star::ucb::FetchResult
+		 fetchContentIdentifiers( [in] long nRowStartPosition
+								, [in] long nRowCount
+								, [in] boolean bDirection );
+
+	//-------------------------------------------------------------------------
+	/** returns the <type>XContent</types>s of the columns of the indicated rows
+
+		@returns
+		<member>FetchResult::Rows</member> contains a sequence of anys. Each
+		of these anys contains an <type>XContent</type>.
+
+		@param nRowStartPosition
+		the starting row of the resultset
+
+		@param nRowCount
+		the count of rows
+
+		@param bDirection
+		<TRUE/>, if you want the rows to be read in the same order, as they
+		are contained in the result set	( <TRUE/> &lt;-&gt; forward step;
+		<FALSE/> &lt;-&gt; backward step )
+	*/
+	com::sun::star::ucb::FetchResult
+		 fetchContents( [in] long nRowStartPosition
+					  , [in] long nRowCount
+					  , [in] boolean bDirection );
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

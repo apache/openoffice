@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01030500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">HTML compatibility</title>
+<filename>/text/shared/optionen/01030500.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="html">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155132"><bookmark_value>$[officename] Basic scripts in HTML documents</bookmark_value>
+<bookmark_value>HTML;compatibility settings</bookmark_value>
+</bookmark>
+<!-- removed HID OFFMGR:TABPAGE:RID_OFAPAGE_HTMLOPT -->
+<paragraph role="heading" id="hd_id3153821" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01030500.xhp" name="HTML compatibility">HTML compatibility</link></paragraph>
+<paragraph role="paragraph" id="par_id3156326" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="OFFMGR:TABPAGE:RID_OFAPAGE_HTMLOPT">Defines settings for HTML pages.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#html"/>
+</section>
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE1 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE2 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE3 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE4 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE5 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE6 -->
+<!-- removed HID OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE7 -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE1" id="bm_id6074098" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE2" id="bm_id8064821" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE3" id="bm_id7630542" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE4" id="bm_id5698416" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE5" id="bm_id9110080" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE6" id="bm_id494399" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_OFAPAGE_HTMLOPT:NF_SIZE7" id="bm_id534684" localize="false"/>
+<paragraph role="heading" id="hd_id3154897" xml-lang="en-US" level="2" l10n="U" oldref="3">Font sizes</paragraph>
+<paragraph role="paragraph" id="par_id3145673" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="OFFMGR:NUMERICFIELD:RID_OFAPAGE_HTMLOPT:NF_SIZE7">Use the spin buttons <emph>Size 1</emph> to <emph>Size 7</emph> to define the respective font sizes for the HTML &lt;font size=1&gt; to &lt;font size=7&gt; tags.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148943" xml-lang="en-US" level="2" l10n="U" oldref="5">Import</paragraph>
+<paragraph role="paragraph" id="par_id3151385" xml-lang="en-US" l10n="U" oldref="6">Defines the settings for importing HTML documents.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_NUMBERS_ENGLISH_US" id="bm_id4514297" localize="false"/>
+<paragraph role="heading" id="hd_id6065248" xml-lang="en-US" level="3" l10n="NEW">Use 'English (USA)' locale for numbers</paragraph>
+<paragraph role="paragraph" id="par_id8023926" xml-lang="en-US" l10n="CHG">When importing numbers from an HTML page, the decimal separator and the thousands separator characters differ according to the locale of the HTML page. The clipboard however contains no information about the locale. For example, the characters "1.000" copied from a German Web page most possibly mean "one thousand" because the period is the thousands separator in a German locale. If copied from an English Web page, the same characters stand for the number 1 as in "one dot zero zero zero".</paragraph>
+<paragraph role="paragraph" id="par_id7658314" xml-lang="en-US" l10n="CHG"><ahelp hid=".">If not checked, numbers will be interpreted according to the setting in <emph>Language Settings - Language of - Locale setting</emph> in the Options dialog box. If checked, numbers will be interpreted as 'English (USA)' locale.</ahelp></paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_UNKNOWN_TAGS -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_UNKNOWN_TAGS" id="bm_id2516251" localize="false"/>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="3" l10n="U" oldref="7">Import unknown HTML tags as fields</paragraph>
+<paragraph role="paragraph" id="par_id3149295" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_UNKNOWN_TAGS">Mark this check box if you want <link href="text/shared/00/00000002.xhp#tags" name="tags">tags</link> that are not recognized by $[officename] to be imported as fields.</ahelp> For an opening tag, an HTML_ON field will be created with the value of the tag name. For a closing tag, an HTML_OFF will be created. These fields will be converted to tags in the HTML export.</paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES" id="bm_id5614185" localize="false"/>
+<paragraph role="heading" id="hd_id3148797" xml-lang="en-US" level="3" l10n="U" oldref="43">Ignore font settings</paragraph>
+<paragraph role="paragraph" id="par_id3149202" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_IGNORE_FONTNAMES">Mark this check box to ignore all font settings when importing. The fonts that were defined in the HTML Page Style will be the fonts that will be used. </ahelp></paragraph>
+<!-- removed HID OFFMGR:LISTBOX:RID_OFAPAGE_HTMLOPT:LB_EXPORT -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_OFAPAGE_HTMLOPT:LB_EXPORT" id="bm_id1028473" localize="false"/>
+<paragraph role="heading" id="hd_id3151177" xml-lang="en-US" level="2" l10n="U" oldref="9">Export</paragraph>
+<paragraph role="paragraph" id="par_id3150449" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="OFFMGR:LISTBOX:RID_OFAPAGE_HTMLOPT:LB_EXPORT">Defines the settings for exporting HTML documents.</ahelp> To export in HTML format select the <emph>HTML Document</emph> file type in the <link href="text/shared/01/01070000.xhp" name="Save As"><emph>Save As</emph></link> dialog. You can find further instructions in the <link href="text/shared/00/00000020.xhp" name="Import and export filters">Import and export filters</link> description.</paragraph>
+<paragraph role="paragraph" id="par_id3145606" xml-lang="en-US" l10n="U" oldref="42">To optimize the HTML export, select a browser or HTML standard from the Export box. If "$[officename] Writer" is selected, specific $[officename] Writer instructions are exported.</paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_STARBASIC -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_STARBASIC" id="bm_id4532609" localize="false"/>
+<paragraph role="heading" id="hd_id3155132" xml-lang="en-US" level="3" l10n="U" oldref="16">$[officename] Basic</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="CHG" oldref="17"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_STARBASIC">Mark this check box to include the $[officename] Basic instructions when exporting to HTML format.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150872" xml-lang="en-US" l10n="U" oldref="29">You must activate this option before you create the $[officename] Basic Script, since otherwise it will not be inserted. $[officename] Basic Scripts must be located in the header of the HTML document. Once you have created the macro in the $[officename] Basic IDE, it appears in the source text of the HTML document in the header.</paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_STARBASIC_WARNING -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_STARBASIC_WARNING" id="bm_id1735892" localize="false"/>
+<paragraph role="heading" id="hd_id3149664" xml-lang="en-US" level="3" l10n="U" oldref="45">Display warning</paragraph>
+<paragraph role="paragraph" id="par_id3150420" xml-lang="en-US" l10n="CHG" oldref="46"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_STARBASIC_WARNING">If this field is marked, when exporting to HTML a warning is shown that %PRODUCTNAME Basic macros will be lost.</ahelp></paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_PRINT_EXTENSION -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_PRINT_EXTENSION" id="bm_id2938932" localize="false"/>
+<paragraph role="heading" id="hd_id3154729" xml-lang="en-US" level="3" l10n="U" oldref="28">Print layout</paragraph>
+<paragraph role="paragraph" id="par_id3145254" xml-lang="en-US" l10n="CHG" oldref="39"><ahelp hid=".">If you mark this field, the print layout of the current document is exported as well.</ahelp> It can be read by $[officename], Netscape Navigator, and MS Internet Explorer.</paragraph>
+<paragraph role="note" id="par_id3156276" xml-lang="en-US" l10n="U" oldref="41">The HTML filter supports CSS2 (Cascading Style Sheets Level 2) for printing documents. These capabilities are only effective if print layout export is activated.</paragraph>
+<!-- removed HID OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_LOCAL_GRF -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_OFAPAGE_HTMLOPT:CB_LOCAL_GRF" id="bm_id8177434" localize="false"/>
+<paragraph role="heading" id="hd_id3144764" xml-lang="en-US" level="3" l10n="U" oldref="24">Copy local graphics to Internet</paragraph>
+<paragraph role="paragraph" id="par_id3149379" xml-lang="en-US" l10n="CHG" oldref="25"><ahelp hid="OFFMGR:CHECKBOX:RID_OFAPAGE_HTMLOPT:CB_LOCAL_GRF">Mark this check box to automatically upload the embedded pictures to the Internet server when uploading using FTP. Use the <emph>Save As</emph> dialog to save the document and enter a complete FTP URL as the file name in the Internet.</ahelp></paragraph>
+<!-- removed HID OFFMGR_LISTBOX_RID_OFAPAGE_HTMLOPT_LB_CHARSET -->
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_OFAPAGE_HTMLOPT:LB_CHARSET" id="bm_id9777520" localize="false"/>
+<paragraph role="heading" id="hd_id3152960" xml-lang="en-US" level="3" l10n="U" oldref="48">Character set</paragraph>
+<paragraph role="paragraph" id="par_id3149018" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="OFFMGR_LISTBOX_RID_OFAPAGE_HTMLOPT_LB_CHARSET">Select the appropriate character set for the export</ahelp>.</paragraph>
+</body>
+</helpdocument>

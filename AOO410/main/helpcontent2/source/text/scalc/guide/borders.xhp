@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidebordersxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">User Defined Borders in Cells </title>
+         <filename>/text/scalc/guide/borders.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3457441"><bookmark_value>cells;borders</bookmark_value>
+      <bookmark_value>line arrangements with cells</bookmark_value>
+      <bookmark_value>borders;cells</bookmark_value>
+</bookmark><comment>MW made "line arrangement;" a one level entry</comment>
+<paragraph xml-lang="en-US" id="hd_id4544816" role="heading" level="1" l10n="NEW"><variable id="borders"><link href="text/scalc/guide/borders.xhp">User Defined Borders in Cells</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id2320017" role="paragraph" l10n="NEW">You can apply a variety of different lines to selected cells.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8055665" role="paragraph" l10n="NEW">Select the cell or a block of cells.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9181188" role="paragraph" l10n="NEW">Choose <item type="menuitem">Format - Cells</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9947508" role="paragraph" l10n="NEW">In the dialog, click the <emph>Borders</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7907956" role="paragraph" l10n="NEW">Choose the border options you want to apply and click OK.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id1342204" role="paragraph" l10n="NEW">The options in the <emph>Line arrangement</emph> area can be used to apply multiple border styles.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id4454481" role="heading" level="2" l10n="NEW">Selection of cells</paragraph>
+      <paragraph xml-lang="en-US" id="par_id7251503" role="paragraph" l10n="NEW">Depending on the selection of cells, the area looks different.</paragraph>
+      <table id="tbl_id4423352">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8716696" role="tablehead" l10n="NEW">Selection</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4677877" role="tablehead" l10n="NEW">Line arrangement area</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id807824" role="tablecontent" l10n="NEW">One cell</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8473464" role="tablecontent" l10n="NEW">
+<image id="img_id1737113" src="res/helpimg/border_ca_1.png" width="1.2602in" height="1.5937in"><alt xml-lang="en-US" id="alt_id1737113">borders with one cell selected</alt>
+	</image></paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3509933" role="tablecontent" l10n="NEW">Cells in a column</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6635639" role="tablecontent" l10n="NEW">
+<image id="img_id1680959" src="res/helpimg/border_ca_2.png" width="1.2602in" height="1.5937in"><alt xml-lang="en-US" id="alt_id1680959">borders with a column selected</alt>
+	</image></paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8073366" role="tablecontent" l10n="NEW">Cells in a row</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6054567" role="tablecontent" l10n="NEW">
+<image id="img_id9623096" src="res/helpimg/border_ca_3.png" width="1.2602in" height="1.5937in"><alt xml-lang="en-US" id="alt_id9623096">borders with a row selected</alt>
+	</image></paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id466322" role="tablecontent" l10n="NEW">Cells in a block of 2x2 or more</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4511551" role="tablecontent" l10n="NEW">
+<image id="img_id8139591" src="res/helpimg/border_ca_4.png" width="1.2602in" height="1.5937in"><alt xml-lang="en-US" id="alt_id8139591">borders with a block selected</alt>
+	</image></paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="par_id5383465" role="note" l10n="NEW">You cannot apply borders to multiple selections.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id7790154" role="heading" level="2" l10n="NEW">Default Settings</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2918485" role="paragraph" l10n="NEW">Click one of the <emph>Default</emph> icons to set or reset multiple borders.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1836909" role="listitem" l10n="NEW">The thin gray lines inside an icon show the borders that will be reset or cleared.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5212561" role="listitem" l10n="NEW">The dark lines inside an icon show the lines that will be set using the selected line style and color.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id4818872" role="listitem" l10n="NEW">The thick gray lines inside an icon show the lines that will not be changed.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id8989226" role="heading" level="3" l10n="NEW">Examples</paragraph>
+      <paragraph xml-lang="en-US" id="par_id622577" role="paragraph" l10n="NEW">Select a block of about 8x8 cells, then choose <emph>Format - Cells - Borders</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8119754" role="paragraph" l10n="NEW">
+<image id="img_id7261268" src="res/helpimg/border_ca_5.png" width="1.0937in" height="0.2189in"><alt xml-lang="en-US" id="alt_id7261268">default icon row of Borders tab page</alt>
+	</image></paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8964201" role="listitem" l10n="NEW">Click the left icon to clear all lines. This removes all outer borders, all inner lines, and all diagonal lines.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id6048463" role="listitem" l10n="NEW">Click the second icon from the left to set an outer border and to remove all other lines.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1495406" role="listitem" l10n="NEW">Click the rightmost icon to set an outer border. The inner lines are not changed, except the diagonal lines, which will be removed.<comment>is this a bug?</comment></paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id9269386" role="paragraph" l10n="NEW">Now you can continue to see which lines the other icons will set or remove.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3593554" role="heading" level="2" l10n="NEW">User Defined Settings</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4018066" role="paragraph" l10n="NEW">In the <emph>User defined</emph> area, you can click to set or remove individual lines. The preview shows lines in three different states. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id8004699" role="paragraph" l10n="NEW">Repeatedly click an edge or a corner to switch through the three different states.</paragraph>
+      <table id="tbl_id5196996">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8037659" role="tablehead" l10n="NEW">Line types</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2305978" role="tablehead" l10n="NEW">Image</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id8716086" role="tablehead" l10n="NEW">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3978087" role="tablecontent" l10n="NEW">A black line</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id4065065" role="tablecontent" l10n="NEW">
+<image id="img_id9379863" src="res/helpimg/border_ca_7.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id9379863">solid line for user defined border</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6987823" role="tablecontent" l10n="NEW">A black line sets the corresponding line of the selected cells. The line is shown as a dotted line when you choose the 0.05 pt line style. Double lines are shown when you select a double line style.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id1209143" role="tablecontent" l10n="NEW">A gray line</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id6653340" role="tablecontent" l10n="NEW">
+<image id="img_id6972563" src="res/helpimg/border_ca_gray.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id6972563">gray line for user defined border</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id2278817" role="tablecontent" l10n="NEW">A gray line is shown when the corresponding line of the selected cells will not be changed. No line will be set or removed at this position.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id5374919" role="tablecontent" l10n="NEW">A white line</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id52491" role="tablecontent" l10n="NEW">
+<image id="img_id3801080" src="res/helpimg/border_ca_white.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id3801080">white line for user defined border</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id372325" role="tablecontent" l10n="NEW">A white line is shown when the corresponding line of the selected cells will be removed.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <paragraph xml-lang="en-US" id="hd_id7282937" role="heading" level="3" l10n="NEW">Examples</paragraph>
+      <paragraph xml-lang="en-US" id="par_id4230780" role="paragraph" l10n="NEW">Select a single cell, then choose <emph>Format - Cells - Borders</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1712393" role="paragraph" l10n="NEW">Click the lower edge to set a very thin line as a lower border. All other lines will be removed from the cell.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5149693" role="paragraph" l10n="NEW">
+<image id="img_id9467452" src="res/helpimg/border_ca_6.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id9467452">setting a thin lower border</alt>
+	</image></paragraph>
+      <paragraph xml-lang="en-US" id="par_id5759453" role="paragraph" l10n="NEW">Choose a thicker line style and click the lower edge. This sets a thicker line as a lower border.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6342051" role="paragraph" l10n="NEW">
+<image id="img_id7431562" src="res/helpimg/border_ca_7.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id7431562">setting a thick line as a border</alt>
+	</image></paragraph>
+      <paragraph xml-lang="en-US" id="par_id5775322" role="paragraph" l10n="NEW">Click the second <emph>Default</emph> icon from the left to set all four borders. Then repeatedly click the lower edge until a white line is shown. This removes the lower border.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2882778" role="paragraph" l10n="NEW">
+<image id="img_id8155766.00000001" src="res/helpimg/border_ca_8.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id8155766.00000001">removing lower border</alt>
+	</image></paragraph>
+      <paragraph xml-lang="en-US" id="par_id8102053" role="paragraph" l10n="NEW">You can combine several line types and styles. The last image shows how to set thick outer borders (the thick black lines), while any diagonal lines inside the cell will not be touched (gray lines).</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2102420" role="paragraph" l10n="NEW">
+<image id="img_id5380718" src="res/helpimg/border_ca_9.png" width="1.2602in" height="1.1252in"><alt xml-lang="en-US" id="alt_id5380718">advanced example for cell borders</alt>
+	</image></paragraph>
+      <section id="relatedtopics">
+<switch select="appl">
+<case select="WRITER"><embed href="text/swriter/guide/border_page.xhp#border_page"/>
+</case>
+</switch><embed href="text/shared/guide/border_paragraph.xhp#border_paragraph"/>
+      </section>
+   </body>
+</helpdocument>

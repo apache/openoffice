@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01012000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Appearance</title>
+<filename>/text/shared/optionen/01012000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-07-26T09:00:35">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="appearance">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153527"><bookmark_value>colors; appearance</bookmark_value>
+<bookmark_value>options; appearance</bookmark_value>
+<bookmark_value>appearance options</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153527" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01012000.xhp" name="Appearance">Appearance</link></paragraph>
+<paragraph role="paragraph" id="par_id3145120" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid=".">Sets the colors for the $[officename] user interface.</ahelp> You can save the current settings as color scheme and load them later.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#appearance"/>
+</section>
+<embed href="text/shared/guide/accessibility.xhp#accessibility"/>
+<paragraph role="heading" id="hd_id3154046" xml-lang="en-US" level="2" l10n="U" oldref="3">Color scheme</paragraph>
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="4">Save and delete color schemes.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_COLORCONFIG:LB_COLORSCHEME" id="bm_id3154898" localize="false"/>
+<paragraph role="heading" id="hd_id3153252" xml-lang="en-US" level="3" l10n="U" oldref="5">Scheme</paragraph>
+<paragraph role="paragraph" id="par_id3153541" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_COLORCONFIG_LB_COLORSCHEME">Selects the color scheme you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_COLORCONFIG:PB_SAVESCHEME" id="bm_id3153088" localize="false"/>
+<paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="3" l10n="U" oldref="7">Save</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SVX_PUSHBUTTON_RID_SVXPAGE_COLORCONFIG_PB_SAVESCHEME">Saves the current settings as a color scheme that you can reload later.</ahelp> The name is added to the <emph>Scheme</emph> box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_COLORCONFIG_NAME_SCHEME" id="bm_id3148552" localize="false"/>
+<paragraph role="heading" id="hd_id3149669" xml-lang="en-US" level="3" l10n="U" oldref="9">Name of color scheme</paragraph>
+<paragraph role="paragraph" id="par_id3159413" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_OPTIONS_COLORCONFIG_NAME_SCHEME">Enter a name for the color scheme.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_COLORCONFIG:PB_DELETESCHEME" id="bm_id3154071" localize="false"/>
+<paragraph role="heading" id="hd_id3152811" xml-lang="en-US" level="3" l10n="U" oldref="11">Delete</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX_PUSHBUTTON_RID_SVXPAGE_COLORCONFIG_PB_DELETESCHEME">Deletes the color scheme shown in the <emph>Scheme</emph> box. You cannot delete the Default scheme.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_OPTIONS_COLORCONFIG_COLORLIST_WIN" id="bm_id3151380" localize="false"/>
+<paragraph role="heading" id="hd_id3148672" xml-lang="en-US" level="2" l10n="U" oldref="13">Scheme</paragraph>
+<paragraph role="paragraph" id="par_id3149204" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="HID_OPTIONS_COLORCONFIG_COLORLIST_WIN">Select the colors for the user interface elements.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="15">To apply a color to a user interface element, ensure that the checkbox in front of the name is marked. To hide a user interface element, clear the check box.</paragraph>
+<paragraph role="note" id="par_id3155430" xml-lang="en-US" l10n="U" oldref="18">Some user interface elements cannot be hidden.</paragraph>
+<paragraph role="note" id="par_id3145365" xml-lang="en-US" l10n="U" oldref="20">In order to enhance cursor visibility, if the user sets the application background color between 40% and 60% gray, it is automatically changed to 40% gray.</paragraph>
+<paragraph role="paragraph" id="par_id3153144" xml-lang="en-US" l10n="U" oldref="16">The <emph>Automatic</emph> color setting changes the user interface element to the preset color from the color scheme.</paragraph>
+<paragraph role="paragraph" id="par_id3154921" xml-lang="en-US" l10n="U" oldref="17">The color settings for "Visited links" and "Unvisited links" only apply to documents created after the settings are applied.</paragraph>
+</body>
+</helpdocument>

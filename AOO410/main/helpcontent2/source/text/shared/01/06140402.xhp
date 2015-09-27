@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0106140402xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Change Icon</title>
+<filename>/text/shared/01/06140402.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10543" xml-lang="en-US" level="1" l10n="NEW">Change Icon</paragraph>
+<paragraph role="heading" id="par_idN10547" xml-lang="en-US" level="2" l10n="CHG">Icons</paragraph>
+<paragraph role="paragraph" id="par_idN1054B" xml-lang="en-US" l10n="NEW">Displays the available icons in %PRODUCTNAME. To replace the icon that you selected in the <link href="text/shared/01/06140400.xhp">Customize</link> dialog, click an icon, then click the <emph>OK</emph> button.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:MD_ICONSELECTOR:BTN_IMPORT" id="bm_id1383709" localize="false"/>
+<paragraph role="heading" id="par_idN1055C" xml-lang="en-US" level="2" l10n="NEW">Import</paragraph>
+<paragraph role="paragraph" id="par_idN10560" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Adds new icons to the list of icons. You see a file open dialog that imports the selected icon or icons into the internal icon directory of %PRODUCTNAME.</ahelp></paragraph>
+<paragraph role="note" id="par_idN10575" xml-lang="en-US" l10n="NEW">You can only import icons that are in the PNG file format and that are 16x16 or 26x26 pixels in size.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:MD_ICONSELECTOR:BTN_DELETE" id="bm_id1383799" localize="false"/>
+<paragraph role="paragraph" id="par_id8224433" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to remove the selected icon from the list. Only user-defined icons can be removed.</ahelp></paragraph>
+</body>
+</helpdocument>

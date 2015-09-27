@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0104120221xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Entries (table of contents)</title>
+<filename>/text/swriter/01/04120221.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3145827" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04120221.xhp" name="Entries (table of contents)">Entries (table of contents)</link></paragraph>
+<paragraph role="paragraph" id="par_id3150017" xml-lang="en-US" l10n="U" oldref="2"><variable id="eintraege">Specify the format of the entries in the table of contents.
+</variable></paragraph>
+<section id="howtoget">
+<embed href="text/swriter/00/00000404.xhp#verz31"/>
+</section>
+<section id="ebene">
+<paragraph role="heading" id="hd_id3148774" xml-lang="en-US" level="2" l10n="U" oldref="3">Level</paragraph>
+<paragraph role="paragraph" id="par_id3147169" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid=".">Select the level that you want to define.</ahelp></paragraph>
+</section>
+<section id="aufbau">
+<paragraph role="heading" id="hd_id3147569" xml-lang="en-US" level="2" l10n="U" oldref="6">Structure and formatting</paragraph>
+<paragraph role="paragraph" id="par_id3154638" xml-lang="en-US" l10n="CHG" oldref="7">The <emph>Structure </emph>line defines how the entries in the index are composed. To change the appearance of an entry you can enter codes or text in the empty boxes on this line. You can also click in an empty box or on a code, and then click a code button.<comment>this line also appears for bibliographic index</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_TOX_ENTRY_BUTTON" id="bm_id3291421" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_TOX_ENTRY_EDIT" id="bm_id3981444" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_TOKEN_WINDOW" id="bm_id3151171" localize="false"/><paragraph role="paragraph" id="par_id3149292" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="." visibility="hidden">Displays the remainder of the <emph>Structure </emph>line.</ahelp><comment>UFI: see #i27934#</comment></paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147512" xml-lang="en-US" l10n="U" oldref="8">To delete a code from the <emph>Structure </emph>line, click the code, and then press the <item type="keycode">Delete</item> key.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149806" xml-lang="en-US" l10n="U" oldref="9">To replace a code from the <emph>Structure </emph>line, click the code, and then click a code button.</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154480" xml-lang="en-US" l10n="CHG" oldref="10">To add a code to the <emph>Structure </emph>line, click in an empty box, and then click a code button.</paragraph>
+</listitem>
+</list>
+</section>
+<section id="chapterno">
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_ENTRYNO" id="bm_id3152962" localize="false"/><paragraph role="heading" id="hd_id3153675" xml-lang="en-US" level="3" l10n="U" oldref="11">Chapter number (E#)</paragraph>
+<paragraph role="paragraph" id="par_id3154567" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_ENTRYNO">Inserts the chapter number. To assign chapter numbering to a heading style, choose<emph> Tools - Outline Numbering</emph>.</ahelp></paragraph>
+</section>
+<section id="eintragstext">
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_ENTRY" id="bm_id3154193" localize="false"/><paragraph role="heading" id="hd_id3149691" xml-lang="en-US" level="3" l10n="U" oldref="13">Entry text (E)</paragraph>
+<paragraph role="paragraph" id="par_id3154199" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_ENTRY">Inserts the text of the chapter heading.</ahelp></paragraph>
+</section>
+<section id="tabulator">
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_TAB" id="bm_id3149484" localize="false"/><paragraph role="heading" id="hd_id3143276" xml-lang="en-US" level="3" l10n="U" oldref="15">Tab stop (T)</paragraph>
+<paragraph role="paragraph" id="par_id3149490" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_TAB">Inserts a tab stop. To add leader dots to the tab stop, select a character in the <emph>Fill character box</emph>. To change the position of the tab stop, enter a value in the <emph>Tab stop position </emph>box, or select the <emph>Align right </emph>check box.</ahelp></paragraph>
+</section>
+<section id="seitennr">
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_PAGENO" id="bm_id3148974" localize="false"/><paragraph role="heading" id="hd_id3151257" xml-lang="en-US" level="3" l10n="U" oldref="17">Page number (#)</paragraph>
+<paragraph role="paragraph" id="par_id3148981" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_PAGENO">Inserts the page number of the entry.</ahelp></paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_HYPERLINK" id="bm_id3147224" localize="false"/><paragraph role="heading" id="hd_id3147212" xml-lang="en-US" level="3" l10n="U" oldref="19"> Hyperlink (LS and LE)</paragraph>
+<paragraph role="paragraph" id="par_id3153631" xml-lang="en-US" l10n="CHG" oldref="20"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_HYPERLINK">Creates a hyperlink for the part of the entry that you enclose by the opening (LS) and the closing (LE) hyperlink tags. On the <emph>Structure </emph>line, click in the empty box in front of the part that you want to create a hyperlink for, and then click this button. Click in the empty box after the part that you want to hyperlink, and then click this button again. All hyperlinks must be unique. Available only for a table of contents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_ALL_LEVELS" id="bm_id3152778" localize="false"/><paragraph role="heading" id="hd_id3152766" xml-lang="en-US" level="3" l10n="U" oldref="36">All</paragraph>
+<paragraph role="paragraph" id="par_id3155137" xml-lang="en-US" l10n="CHG" oldref="37"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_ALL_LEVELS">Applies the current settings without closing the dialog.</ahelp></paragraph>
+<section id="aufbau2">
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_CHARSTYLE" id="bm_id3156270" localize="false"/><paragraph role="heading" id="hd_id3153355" xml-lang="en-US" level="3" l10n="U" oldref="21">Character Style</paragraph>
+<paragraph role="paragraph" id="par_id3156277" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SW:LISTBOX:TP_TOX_ENTRY:LB_CHARSTYLE">Specify the formatting style for the selected part on the <emph>Structure line</emph>.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_TOX_ENTRY:PB_EDITSTYLE" id="bm_id3145784" localize="false"/><paragraph role="heading" id="hd_id3145772" xml-lang="en-US" level="3" l10n="U" oldref="23">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3151372" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SW:PUSHBUTTON:TP_TOX_ENTRY:PB_EDITSTYLE">Opens a dialog where you can edit the selected character style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ComboBox:TP_TOX_ENTRY:CB_FILLCHAR" id="bm_id3155921" localize="false"/><paragraph role="heading" id="hd_id3155909" xml-lang="en-US" level="3" l10n="U" oldref="25">Fill character</paragraph>
+<paragraph role="paragraph" id="par_id3150112" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SW:COMBOBOX:TP_TOX_ENTRY:CB_FILLCHAR">Select the tab leader that you want use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:MetricField:TP_TOX_ENTRY:MF_TABPOS" id="bm_id3155871" localize="false"/><paragraph role="heading" id="hd_id3155859" xml-lang="en-US" level="3" l10n="U" oldref="27">Tab stop position</paragraph>
+<paragraph role="paragraph" id="par_id3150689" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SW:METRICFIELD:TP_TOX_ENTRY:MF_TABPOS">Enter the distance to leave between the left page margin and the tab stop.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TOX_ENTRY:CB_AUTORIGHT" id="bm_id3147488" localize="false"/><paragraph role="heading" id="hd_id3147415" xml-lang="en-US" level="3" l10n="CHG" oldref="29">Align right</paragraph>
+<paragraph role="paragraph" id="par_id3147495" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SW:CHECKBOX:TP_TOX_ENTRY:CB_AUTORIGHT">Aligns the tab stop to the right page margin.</ahelp></paragraph>
+</section>
+<section id="formatierung">
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_TOX_ENTRY:LB_ENTRY_NO" id="bm_id9986877" localize="false"/><paragraph role="heading" id="hd_id3145269" xml-lang="en-US" level="3" l10n="U" oldref="31">Format</paragraph>
+<paragraph role="paragraph" id="par_id6499221" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Only visible when you click the E# button in the Structure line. Select to show the chapter number with or without separator.</ahelp></paragraph>
+<embed href="text/swriter/01/04120222.xhp#eval"/>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_TOX_ENTRY:CB_RELTOSTYLE" id="bm_id3150547" localize="false"/><paragraph role="heading" id="hd_id3149559" xml-lang="en-US" level="3" l10n="U" oldref="33">Tab position relative to Paragraph Style indent</paragraph>
+<paragraph role="paragraph" id="par_id3150554" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SW:CHECKBOX:TP_TOX_ENTRY:CB_RELTOSTYLE">Positions the tab stop relative to the "indent from left" value defined in the paragraph style selected on the <emph>Styles</emph> tab. Otherwise the tab stop is positioned relative to the left text margin.</ahelp></paragraph>
+</section>
+</body>
+</helpdocument>

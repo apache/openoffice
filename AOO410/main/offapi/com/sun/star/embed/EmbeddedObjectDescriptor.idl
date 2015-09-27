@@ -1,0 +1,110 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_embed_EmbeddedObjectDescriptor_idl__
+#define __com_sun_star_embed_EmbeddedObjectDescriptor_idl__
+
+#ifndef __com_sun_star_io_XInputStream_idl__
+#include <com/sun/star/io/XInputStream.idl>
+#endif
+
+#ifndef __com_sun_star_awt_Rectangle_idl__
+#include <com/sun/star/awt/Rectangle.idl>
+#endif
+
+#ifndef __com_sun_star_util_URL_idl__
+#include <com/sun/star/util/URL.idl>
+#endif
+
+#ifndef __com_sun_star_task_XInteractionHandler_idl__
+#include <com/sun/star/task/XInteractionHandler.idl>
+#endif
+
+#ifndef __com_sun_star_task_XStatusIndicator_idl__
+#include <com/sun/star/task/XStatusIndicator.idl>
+#endif
+
+#ifndef __com_sun_star_frame_XDispatchProviderInterceptor_idl__
+#include <com/sun/star/frame/XDispatchProviderInterceptor.idl>
+#endif
+
+#include <com/sun/star/embed/XStorage.idl>
+
+//============================================================================
+
+module com { module sun { module star { module embed {
+
+//============================================================================
+/** describes properties of an embedded object
+
+    <p>
+    This service may be represented by a
+    <type scope="com::sun::star::beans" dim="[]">PropertyValue</type>.
+    Such descriptors will be passed to different functions, included into
+	possible load/save proccesses. Every member of such process can use
+	this descriptor and may change it to actualize the informations about
+	the object. So this descriptor should be used as an in/out parameter.
+    </p>
+
+	@see com::sun::star::beans::PropertyValue
+ */
+published service EmbeddedObjectDescriptor
+{
+	//------------------------------------------------------------------------
+    /** lets the graphical representation of embedded document be stored.
+
+        <p>
+        Setting of this property to true tells the embedded object that
+		controlls the document to store or not to store the graphical
+		representation of the document in to the object persistence.
+		If this property is not set the object makes the decision itself.
+        </p>
+    */
+    [optional,property] boolean StoreVisualReplacement;
+
+	//------------------------------------------------------------------------
+    /** allows to provide a dispatch interceptor for outplace activation.
+    */
+    [optional,property] ::com::sun::star::frame::XDispatchProviderInterceptor
+												OutplaceDispatchInterceptor;
+
+    /** denotes the storage from which the embedded object is to be recovered.
+
+        <p>Upon activating the embedded object, it is normally loaded from a storage as denoted by
+        the parameters to the <type>XEmbedObjectCreator</type> method calls.</p>
+
+        <p>You can pass a non-<NULL/> <code>RecoveryStorage</code> in the object descriptor if you wish to load the
+        embedded object from an alternate storage.</p>
+
+        <p>The object will still be based on the storage denoted in the <code>XEmbedObjectCreator</code> method
+        call, i.e., subsequent save operations will still use that storage. <code>RecoveryStorage</code> is used
+        at loading time only, and then discarded.</p>
+    */
+    [optional, property] XStorage RecoveryStorage;
+};
+
+//============================================================================
+
+}; }; }; };
+
+#endif
+

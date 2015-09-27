@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102230402xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Filter</title>
+<filename>/text/shared/01/02230402.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="filter">
+<paragraph role="heading" id="hd_id3153323" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/02230402.xhp" name="Filter">Filter</link></paragraph>
+<paragraph role="paragraph" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="2">Set the criteria for filtering the list of changes on the <link href="text/shared/01/02230401.xhp" name="List"><emph>List</emph></link> tab.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#rotliniefilter"/>
+</section>
+<section id="calc">
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_CB_DATE" id="bm_id3149398" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_LB_DATE" id="bm_id3147653" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_DF_DATE" id="bm_id3156113" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_TF_DATE" id="bm_id3148992" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_DF_DATE2" id="bm_id3155450" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_TF_DATE2" id="bm_id3149795" localize="false"/><paragraph role="heading" id="hd_id3150355" xml-lang="en-US" level="2" l10n="U" oldref="3">Date</paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="HID_REDLINING_FILTER_TF_DATE2">Filters the list of changes according to the date and the time that you specify.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_IB_CLOCK" id="bm_id3155179" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_IB_CLOCK2" id="bm_id3156330" localize="false"/><paragraph role="heading" id="hd_id3154811" xml-lang="en-US" level="3" l10n="U" oldref="17">Set Date/Time</paragraph>
+<table id="tbl_id3156192">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159147" xml-lang="en-US" l10n="E">
+<image id="img_id3150771" src="res/commandimagelist/sc_timefield.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150771" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_REDLINING_FILTER_IB_CLOCK2">Enters the current date and time into the corresponding boxes.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_CB_AUTOR" id="bm_id3149955" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_LB_AUTOR" id="bm_id3149786" localize="false"/><paragraph role="heading" id="hd_id3155261" xml-lang="en-US" level="2" l10n="U" oldref="5">Author</paragraph>
+<paragraph role="paragraph" id="par_id3150084" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_REDLINING_FILTER_LB_AUTOR">Filters the list of changes according to the name of the author that you select from the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_CB_RANGE" id="bm_id3151246" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_ED_RANGE" id="bm_id3152472" localize="false"/><paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U" oldref="13"><switchinline select="appl"><caseinline select="CALC">Range 
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="14"><switchinline select="appl"><caseinline select="CALC"><ahelp hid="HID_REDLINING_FILTER_ED_RANGE">Filters the list of changes according to the range of cells that you specify. To select a range of cells in your sheet, click the <emph>Set Reference </emph>button (<emph>...</emph>).</ahelp>
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_BTN_REF" id="bm_id3149457" localize="false"/><paragraph role="paragraph" id="par_id4441663" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select the range of cells that you want to use as a filter.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147304" xml-lang="en-US" level="3" l10n="U" oldref="15"><switchinline select="appl"><caseinline select="CALC">Set Reference 
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="CALC"><table id="tbl_id3154073">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151210" xml-lang="en-US" l10n="E">
+<image id="img_id3154138" src="starmath/res/mi22011.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3154138" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156215" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_REDLINING_FILTER_BTN_REF">Select the range of cells that you want to use as a filter.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+</case>
+</switch>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_HIGHLIGHT_CHANGES:RB_ASSIGN" id="bm_id3147230" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_SIMPLEREF:RB_ASSIGN" id="bm_id3151044" localize="false"/><paragraph role="heading" id="hd_id3159149" xml-lang="en-US" level="3" l10n="U" oldref="20"><switchinline select="appl"><caseinline select="CALC">Shrink/Max 
+</caseinline></switchinline></paragraph>
+<switch select="appl">
+<case select="CALC"><table id="tbl_id3158407">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149809" xml-lang="en-US" l10n="E">
+<image id="img_id3154153" src="formula/res/refinp1.png" width="0.1327inch" height="0.1327inch"><alt id="alt_id3154153" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SC:IMAGEBUTTON:RID_SCDLG_SIMPLEREF:RB_ASSIGN">Select the range of cells that you want to use as a filter, and then click this button to return to the filter list.</ahelp></paragraph>
+</tablecell>
+</tablerow>
+</table>
+</case>
+</switch>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_CB_ACTION" id="bm_id3149984" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_LB_ACTION" id="bm_id3145785" localize="false"/><paragraph role="heading" id="hd_id3156543" xml-lang="en-US" level="2" l10n="U" oldref="9"><switchinline select="appl"><caseinline select="WRITER">Action 
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3155413" xml-lang="en-US" l10n="U" oldref="12"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="HID_REDLINING_FILTER_LB_ACTION">Filters the list of changes according to the type of change that you select in the <emph>Action</emph> box.</ahelp>
+</caseinline></switchinline></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_CB_COMMENT" id="bm_id3145264" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_REDLINING_FILTER_ED_COMMENT" id="bm_id3150105" localize="false"/><paragraph role="heading" id="hd_id3155855" xml-lang="en-US" level="2" l10n="U" oldref="22">Comment</paragraph>
+<paragraph role="paragraph" id="par_id3151114" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="HID_REDLINING_FILTER_ED_COMMENT">Filters the comments of the changes according to the keyword(s) that you enter. </ahelp></paragraph>
+<paragraph role="tip" id="par_id3163820" xml-lang="en-US" l10n="U" oldref="24">You can also use <link href="text/shared/01/02100000.xhp" name="regular expressions">regular expressions</link> (wildcards) when you filter the comments.</paragraph>
+</section>
+</body>
+</helpdocument>

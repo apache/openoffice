@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03020101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Close Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03020101.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-12-17T10:52:43">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="close">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157896"><bookmark_value>Close statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3157896" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03020101.xhp" name="Close Statement [Runtime]">Close Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147573" xml-lang="en-US" l10n="U" oldref="2">Closes a specified file that was opened with the Open statement.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3156344" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="4">Close FileNumber As Integer[, FileNumber2 As Integer[,...]] </paragraph>
+<paragraph role="heading" id="hd_id3153379" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3150791" xml-lang="en-US" l10n="U" oldref="6">
+<emph>FileNumber:</emph> Any integer expression that specifies the number of the data channel that was opened with the <emph>Open</emph> statement.</paragraph>
+<paragraph role="heading" id="hd_id3153192" xml-lang="en-US" level="2" l10n="U" oldref="7">Example:</paragraph>
+<paragraph role="code" id="par_id3154909" xml-lang="en-US" l10n="U" oldref="8">Sub ExampleWorkWithAFile</paragraph>
+<paragraph role="code" id="par_id3154124" xml-lang="en-US" l10n="U" oldref="9">Dim iNumber As Integer</paragraph>
+<paragraph role="code" id="par_id3155132" xml-lang="en-US" l10n="U" oldref="10">Dim sLine As String</paragraph>
+<paragraph role="code" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="11">Dim aFile As String</paragraph>
+<paragraph role="code" id="par_id3146985" xml-lang="en-US" l10n="U" oldref="34">Dim sMsg as String</paragraph>
+<paragraph role="code" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="12">aFile = "c:\data.txt"</paragraph>
+<paragraph role="code" id="par_id3152598" xml-lang="en-US" l10n="CHG" oldref="13">sMsg = ""</paragraph>
+<paragraph role="code" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="14">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="15">Open aFile For Output As #iNumber</paragraph>
+<paragraph role="code" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="16">Print #iNumber, "First line of text"</paragraph>
+<paragraph role="code" id="par_id3147350" xml-lang="en-US" l10n="U" oldref="17">Print #iNumber, "Another line of text"</paragraph>
+<paragraph role="code" id="par_id3149667" xml-lang="en-US" l10n="U" oldref="18">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3145801" xml-lang="en-US" l10n="U" oldref="22">iNumber = Freefile</paragraph>
+<paragraph role="code" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="23">Open aFile For Input As iNumber</paragraph>
+<paragraph role="code" id="par_id3147124" xml-lang="en-US" l10n="U" oldref="24">While not eof(iNumber)</paragraph>
+<paragraph role="code" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="25">Line Input #iNumber, sLine</paragraph>
+<paragraph role="code" id="par_id3149581" xml-lang="en-US" l10n="U" oldref="26">If sLine &lt;&gt;"" then</paragraph>
+<paragraph role="code" id="par_id3155602" xml-lang="en-US" l10n="U" oldref="27">sMsg = sMsg &amp; sLine &amp; chr(13)</paragraph>
+<paragraph role="code" id="par_id3154511" xml-lang="en-US" l10n="U" oldref="29">end if</paragraph>
+<paragraph role="code" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="30">wend</paragraph>
+<paragraph role="code" id="par_id3156276" xml-lang="en-US" l10n="U" oldref="31">Close #iNumber</paragraph>
+<paragraph role="code" id="par_id3155066" xml-lang="en-US" l10n="U" oldref="35">Msgbox sMsg</paragraph>
+<paragraph role="code" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="32">End Sub</paragraph>
+</body>
+</helpdocument>

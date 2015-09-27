@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguideprint_exactxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Defining Number of Pages for Printing</title>
+<filename>/text/scalc/guide/print_exact.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-08-15T09:39:49">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153194"><bookmark_value>printing; sheet counts</bookmark_value>
+<bookmark_value>sheets; printing sheet counts</bookmark_value>
+<bookmark_value>page breaks; spreadsheet preview</bookmark_value>
+<bookmark_value>editing;print ranges</bookmark_value>
+<bookmark_value>viewing;print ranges</bookmark_value>
+<bookmark_value>previews;page breaks for printing</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153194" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="print_exact"><link href="text/scalc/guide/print_exact.xhp" name="Defining Number of Pages for Printing">Defining Number of Pages for Printing</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153771" xml-lang="en-US" l10n="U" oldref="2">If a sheet is too large for a single printed page, $[officename] Calc will print the current sheet evenly divided over several pages. Since the automatic page break does not always take place in the optimal position, you can define the page distribution yourself.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3159155" xml-lang="en-US" l10n="U" oldref="3">Go to the sheet to be printed.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150012" xml-lang="en-US" l10n="U" oldref="4">Choose <emph>View - Page Break Preview</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146974" xml-lang="en-US" l10n="U" oldref="5">You will see the automatic distribution of the sheet across the print pages. The automatically created print ranges are indicated by dark blue lines, and the user-defined ones by light blue lines. The page breaks (line breaks and column breaks) are marked as black lines.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152578" xml-lang="en-US" l10n="U" oldref="6">You can move the blue lines with the mouse. You will find further options in the Context menu, including adding an additional print range, removing the scaling and inserting additional manual line and column breaks.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="7"><link href="text/scalc/01/03100000.xhp" name="View - Page Break Preview">View - Page Break Preview</link></paragraph>
+<embed href="text/scalc/guide/print_landscape.xhp#print_landscape"/>
+<embed href="text/scalc/guide/print_details.xhp#print_details"/>
+</section>
+</body>
+</helpdocument>

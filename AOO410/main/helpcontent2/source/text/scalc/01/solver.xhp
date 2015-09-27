@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textscalc01solverxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Solver</title>
+<filename>/text/scalc/01/solver.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="solverhead">
+<bookmark xml-lang="en-US" branch="index" id="bm_id7654652"><bookmark_value>goal seeking;solver</bookmark_value>
+<bookmark_value>what if operations;solver</bookmark_value>
+<bookmark_value>back-solving</bookmark_value>
+<bookmark_value>solver</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:SolverDialog" id="bm_id5634022" localize="false"/><comment>mw changed "what-if...", "goal seek;" and made "back-solving;" a one level entry</comment>
+<paragraph role="heading" id="hd_id9216284" xml-lang="en-US" level="1" l10n="NEW"><variable id="solver"><link href="text/scalc/01/solver.xhp">Solver</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id9210486" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the Solver dialog. A solver allows to solve equations with multiple unknown variables by goal seeking methods.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/scalc/00/00000406.xhp#solver"/>
+</section><comment>target cell</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_OBJECTIVECELL" id="bm_id8861964" localize="false"/>
+<paragraph role="paragraph" id="par_id8538773" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter or click the cell reference of the target cell. This field takes the address of the cell whose value is to be optimized.</ahelp></paragraph><comment>maximum</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_OPTSOLVER:RB_MAX" id="bm_id8373973" localize="false"/>
+<paragraph role="paragraph" id="par_id7564012" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Try to solve the equation for a maximum value of the target cell.</ahelp><comment>where is the equation?</comment></paragraph><comment>minimum</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_OPTSOLVER:RB_MIN" id="bm_id6767174" localize="false"/>
+<paragraph role="paragraph" id="par_id1186254" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Try to solve the equation for a minimum value of the target cell.</ahelp></paragraph><comment>value of</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:RadioButton:RID_SCDLG_OPTSOLVER:RB_VALUE" id="bm_id5222022" localize="false"/>
+<paragraph role="paragraph" id="par_id7432477" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Try to solve the equation to approach a given value of the target cell.</ahelp></paragraph><comment>value of text field</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_TARGET" id="bm_id2756126" localize="false"/>
+<paragraph role="paragraph" id="par_id7141026" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the value or a cell reference.</ahelp></paragraph><comment>by changing cells</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_VARIABLECELLS" id="bm_id4908902" localize="false"/>
+<paragraph role="paragraph" id="par_id8531449" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the cell range that can be changed.</ahelp></paragraph><comment>cell reference</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_LEFT1" id="bm_id8499099" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_LEFT2" id="bm_id9544663" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_LEFT3" id="bm_id5762199" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_LEFT4" id="bm_id9534287" localize="false"/>
+<paragraph role="paragraph" id="par_id9183935" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter a cell reference.</ahelp></paragraph><comment>operators</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_OPTSOLVER:LB_OP1" id="bm_id9408551" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_OPTSOLVER:LB_OP2" id="bm_id1329386" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_OPTSOLVER:LB_OP3" id="bm_id4931180" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ListBox:RID_SCDLG_OPTSOLVER:LB_OP4" id="bm_id5970030" localize="false"/>
+<paragraph role="paragraph" id="par_id946684" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select an operator from the list.</ahelp><comment>what do these operators do? what is the meaning of Integer and Binary here?
+I hate such spec docs that leave so many questions</comment></paragraph><comment>value</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_RIGHT1" id="bm_id496841" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_RIGHT2" id="bm_id7440717" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_RIGHT3" id="bm_id2470778" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:Edit:RID_SCDLG_OPTSOLVER:ED_RIGHT4" id="bm_id3389080" localize="false"/>
+<paragraph role="paragraph" id="par_id9607226" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Enter a value or a cell reference.</ahelp></paragraph><comment>shrinker</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_OBJECTIVECELL" id="bm_id5104220" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_TARGET" id="bm_id6714" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_VARIABLECELLS" id="bm_id8507339" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_LEFT1" id="bm_id5296792" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_LEFT2" id="bm_id3949400" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_LEFT3" id="bm_id9991760" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_LEFT4" id="bm_id2726828" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_RIGHT1" id="bm_id6034424" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_RIGHT2" id="bm_id6998809" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_RIGHT3" id="bm_id71413" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_RIGHT4" id="bm_id2924283" localize="false"/>
+<paragraph role="paragraph" id="par_id1939451" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Click to shrink or restore the dialog. You can click or select cells in the sheet. You can enter a cell reference manually in the input box.</ahelp></paragraph><comment>delete row</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_DELETE1" id="bm_id5781731" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_DELETE2" id="bm_id6942045" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_DELETE3" id="bm_id4721823" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:ImageButton:RID_SCDLG_OPTSOLVER:IB_DELETE4" id="bm_id5806756" localize="false"/>
+<paragraph role="paragraph" id="par_id9038972" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Click to remove the row from the list. Any rows from below this row move up.</ahelp></paragraph><comment>options button</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_OPTSOLVER:BTN_OPTIONS" id="bm_id8915372" localize="false"/>
+<paragraph role="paragraph" id="par_id2423780" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Opens the Options dialog.</ahelp></paragraph><comment>solve button</comment>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_OPTSOLVER:BTN_SOLVE" id="bm_id6070436" localize="false"/>
+<paragraph role="paragraph" id="par_id2569658" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Click to solve the equation with the current settings. The dialog settings are retained until you close the current document.</ahelp></paragraph>
+<paragraph role="heading" id="par_id5474410" xml-lang="en-US" level="2" l10n="NEW">To solve equations with the solver</paragraph>
+<paragraph role="paragraph" id="par_id2216559" xml-lang="en-US" l10n="NEW">The goal of the solver process is to find those variable values of an equation that result in an optimized value in the <emph>target cell</emph>, also named the "objective". You can choose whether the value in the target cell should be a maximum, a minimum, or approaching a given value.</paragraph>
+<paragraph role="paragraph" id="par_id7869502" xml-lang="en-US" l10n="NEW">The initial variable values are inserted in a rectangular cell range that you enter in the <emph>By changing cells</emph> box. </paragraph>
+<paragraph role="paragraph" id="par_id9852900" xml-lang="en-US" l10n="NEW">You can define a series of limiting conditions that set constraints for some cells. For example, you can set the constraint that one of the variables or cells must not be bigger than another variable, or not bigger than a given value. You can also define the constraint that one or more variables must be integers (values without decimals), or binary values (where only 0 and 1 are allowed).</paragraph>
+<paragraph role="note" id="par_id5323953" xml-lang="en-US" l10n="NEW">The default solver engine supports only linear equations.</paragraph><comment>Add an example. A good one is at http://www.solver.com/stepbystep.htm but that is not OpenSource</comment>
+</body>
+</helpdocument>

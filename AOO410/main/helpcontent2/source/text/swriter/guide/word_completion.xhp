@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguideword_completionxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Word Completion for Text Documents</title>
+         <filename>/text/swriter/guide/word_completion.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148882"><bookmark_value>automatic word completion</bookmark_value>
+      <bookmark_value>completion of words</bookmark_value>
+      <bookmark_value>AutoCorrect function; word completion</bookmark_value>
+      <bookmark_value>word completion;using/disabling</bookmark_value>
+      <bookmark_value>disabling;word completion</bookmark_value>
+      <bookmark_value>switching off;word completion</bookmark_value>
+      <bookmark_value>deactivating;word completion</bookmark_value>
+      <bookmark_value>refusing word completions</bookmark_value>
+      <bookmark_value>rejecting word completions</bookmark_value>
+</bookmark><comment>mw made a two level entry of "switching off..." and "word completion", copied two entries to word_completion_adjust.xhp and added a new entry</comment>
+<paragraph xml-lang="en-US" id="par_idN10751" role="heading" level="1" l10n="NEW"><variable id="word_completion"><link href="text/swriter/guide/word_completion.xhp">Word Completion for Text Documents</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1076F" role="paragraph" l10n="NEW">$[officename] collects words that you frequently use in the current session. When you later type the first three letters of a collected word, $[officename] automatically completes the word. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149346" role="paragraph" l10n="U" oldref="91">If there is more than one word in the AutoCorrect memory that matches the three letters that you type, press <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Tab to cycle through the available words. To cycle in the opposite direction, press <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Shift+Tab. </paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1078D" role="heading" level="2" l10n="NEW"> To Accept/Reject a Word Completion</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10794" role="listitem" l10n="NEW">By default, you accept the word completion by pressing the Enter key. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1079B" role="listitem" l10n="NEW"> To reject the word completion, continue typing with any other key. </paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_idN1079E" role="heading" level="2" l10n="NEW"> To Switch off the Word Completion </paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107A5" role="listitem" l10n="NEW"> Choose <item type="menuitem">Tools - AutoCorrect Options - Word Completion</item>. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN107AD" role="listitem" l10n="NEW"> Clear <emph>Enable word completion</emph> . </paragraph>
+         </listitem>
+      </list>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id7504806" role="paragraph" l10n="NEW"><link href="text/swriter/guide/word_completion_adjust.xhp">Fine-Tuning the Word Completion</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

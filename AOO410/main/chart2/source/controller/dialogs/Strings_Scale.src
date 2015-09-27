@@ -1,0 +1,48 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "Strings.hrc"
+
+String STR_INVALID_NUMBER
+{
+	Text [ en-US ] = "Numbers are required. Check your input." ;
+};
+String STR_STEP_GT_ZERO
+{
+	Text [ en-US ] = "The major interval requires a positive number. Check your input." ;
+};
+String STR_BAD_LOGARITHM
+{
+	Text [ en-US ] = "The logarithmic scale requires positive numbers. Check your input." ;
+};
+String STR_MIN_GREATER_MAX
+{
+	Text [ en-US ] = "The minimum must be lower than the maximum. Check your input." ;
+};
+String STR_INVALID_INTERVALS
+{
+	Text [ en-US ] = "The major interval needs to be greater than the minor interval. Check your input." ;
+};
+String STR_INVALID_TIME_UNIT
+{
+	Text [ en-US ] = "The major and minor interval need to be greater or equal to the resolution. Check your input." ;
+};

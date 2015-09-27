@@ -1,0 +1,57 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#define TB_BACK                     1
+#define ILIST_TBX                   90
+#define ILIST_TBX_HC                91
+
+#define FL_SEPARATOR                7
+
+#define FL_STATUS                   60
+#define FT_STATUS1                  61
+#define FL_TRANSFERSTATUS           62
+#define FT_TRANSFERSTATUS           63
+#define PB_PROGRESS                 64
+#define FT_ERRORSTATUS              65
+#define PB_DETAILS                  66
+#define LB_STATUS                   67
+#define FI_PAUSED                   68
+#define PB_STOP                     69
+#define PB_CLOSE                    70
+#define ST_CONTINUE                 71
+#define ST_LESS                     72
+#define ST_TASK                     73
+#define ST_STATUS                   74
+#define ILIST                       75
+#define ILIST_HC                    76
+#define ST_SEND                     77
+#define ST_SENDINGTO                78
+#define ST_COMPLETED                79
+#define ST_FAILED                   80
+#define ST_TERMINATEQUERY           81
+
+#define IM_WARNING                  10
+#define FI_WARNING                  11
+#define FT_DETAILS                  12
+#define ED_DETAILS                  13
+#define PB_OK                       14

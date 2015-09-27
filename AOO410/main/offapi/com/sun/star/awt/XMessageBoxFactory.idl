@@ -1,0 +1,74 @@
+/**************************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ *************************************************************/
+
+#ifndef __com_sun_star_awt_XMessageBoxFactory_idl__
+#define __com_sun_star_awt_XMessageBoxFactory_idl__
+
+#include <com/sun/star/awt/XWindowPeer.idl>
+#include <com/sun/star/awt/XMessageBox.idl>
+#include <com/sun/star/awt/MessageBoxButtons.idl>
+#include <com/sun/star/awt/MessageBoxType.idl>
+
+module com { module sun { module star { module awt {
+
+/** specifies a factory interface for creating message boxes.
+ */
+published interface XMessageBoxFactory : com::sun::star::uno::XInterface
+{
+    /** creates a message box.
+
+        @returns
+            the created message box or a null reference if it cannot be
+            created.
+
+        @param aParent
+            a valid XWindowPeer reference which is used as a parent.
+
+            <p>This parameter must not be null.</p>
+
+        @param aType
+            the message box type.
+
+        @param aButtons
+            specifies which buttons should be available on the message box.
+
+            <p>A combination of <type>MessageBoxButtons</type>.</p>
+            <p>A <member scope="com::sun::star::awt">MessageBoxType::INFOBOX</member>
+            ignores this paramter, instead it uses a
+            <member scope="com::sun::star::awt">MessageBoxButtons::BUTTONS_OK</member>.</p>
+
+        @param aTitle
+                specifies the title of the message box.
+
+        @param aMessage
+            specifies text which will be shown by the message box.
+            Line-breaks must be added using 'CR' or 'CR+LF'.
+    */
+    XMessageBox createMessageBox( [in] com::sun::star::awt::XWindowPeer aParent,
+                                  [in] MessageBoxType eType,
+                                  [in] long nButtons,
+                                  [in] string sTitle,
+                                  [in] string sMessage );
+};
+
+}; }; }; };
+
+#endif

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriterguidewords_countxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Counting Words</title>
+         <filename>/text/swriter/guide/words_count.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149686"><bookmark_value>words; counting in text</bookmark_value>
+      <bookmark_value>number of words</bookmark_value>
+      <bookmark_value>documents; number of words/characters</bookmark_value>
+      <bookmark_value>text; number of words/characters</bookmark_value>
+      <bookmark_value>characters; counting</bookmark_value>
+      <bookmark_value>number of characters</bookmark_value>
+      <bookmark_value>counting words</bookmark_value>
+      <bookmark_value>word counts</bookmark_value>
+</bookmark><comment>MW deleted "character counts"</comment>
+<paragraph xml-lang="en-US" id="hd_id3149686" role="heading" level="1" l10n="U" oldref="1"><variable id="words_count"><link href="text/swriter/guide/words_count.xhp" name="Counting Words">Counting Words</link>
+</variable></paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN106D1" role="listitem" l10n="NEW">If you want to count only some text of your document, select the text.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149821" role="listitem" l10n="CHG" oldref="5">Choose <emph>Tools - Word Count</emph>.</paragraph>
+         </listitem>
+      </list>
+      <section id="how">
+         <paragraph xml-lang="en-US" id="hd_id1116200901133957" role="heading" level="2" l10n="NEW">How does %PRODUCTNAME count words?</paragraph>
+         <paragraph xml-lang="en-US" id="par_id1116200901133998" role="paragraph" l10n="NEW">In general, every string of characters between two spaces is a word. Tabs, line breaks, and paragraph breaks are word limits, too.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id1116200901133985" role="paragraph" l10n="NEW">Words with dashes or always visible hyphens, as in plug-in, add-on, user/config, are counted as one word each.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id111620090113399" role="paragraph" l10n="NEW">The words can be a mix of letters, numbers, and special characters. So the following text counts as four words: abc123 1.23 "$" http://www.example.com.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_idN106E2" role="tip" l10n="NEW">To get some more statistics about the document, choose <emph>File - Properties - Statistics</emph>.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <paragraph xml-lang="en-US" id="par_id3147418" role="paragraph" l10n="U" oldref="4"><link href="text/shared/01/01100400.xhp" name="File - Properties - Statistics">File - Properties - Statistics</link></paragraph>
+   </body>
+</helpdocument>

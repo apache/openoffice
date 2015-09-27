@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102220000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">ImageMap Editor</title>
+<filename>/text/shared/01/02220000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:ImageMapDialog" id="bm_id7843932" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ImageMapDialog" id="bm_id3085157" localize="false"/>
+<!-- removed HID SVX:FLOATINGWINDOW:RID_SVXDLG_IMAP --><paragraph role="heading" id="hd_id3150502" xml-lang="en-US" level="1" l10n="U" oldref="1">ImageMap Editor</paragraph>
+<paragraph role="paragraph" id="par_id3159194" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="imagemaptext"><ahelp hid="SVX:FLOATINGWINDOW:RID_SVXDLG_IMAP">Allows you to attach URLs to specific areas, called hotspots, on a graphic or a group of graphics. An image map is a group of one or more hotspots.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#imagemap"/>
+</section>
+<embed href="text/shared/guide/imagemap.xhp#imagemap"/>
+<paragraph role="paragraph" id="par_id3149751" xml-lang="en-US" l10n="U" oldref="3">You can draw three types of hotspots: rectangles, ellipses, and polygons. When you click a hotspot, the URL is opened in the browser window or frame that you specify. You can also specify the text that appears when your mouse rests on the hotspot.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_APPLY" id="bm_id3149095" localize="false"/><paragraph role="heading" id="hd_id3154317" xml-lang="en-US" level="2" l10n="U" oldref="5">Apply</paragraph>
+<paragraph role="paragraph" id="par_id3150506" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="HID_IMAPDLG_APPLY">Applies the changes that you made to the image map.</ahelp></paragraph>
+<table id="tbl_id3154288">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149811" xml-lang="en-US" l10n="E">
+<image id="img_id3147275" src="svx/res/nu07.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147275" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153321" xml-lang="en-US" l10n="U" oldref="6">Apply</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_OPEN" id="bm_id3150669" localize="false"/><paragraph role="heading" id="hd_id3149579" xml-lang="en-US" level="2" l10n="U" oldref="8">Open</paragraph>
+<paragraph role="paragraph" id="par_id3155829" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_IMAPDLG_OPEN">Loads an existing image map in the <emph>MAP-CERN, MAP-NCSA</emph> or <emph>SIP StarView ImageMap </emph>file format.</ahelp></paragraph>
+<table id="tbl_id3149957">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149795" xml-lang="en-US" l10n="E">
+<image id="img_id3155503" src="res/commandimagelist/sc_open.png" width="0.222inch" height="0.222inch"><alt id="alt_id3155503" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="9">Open</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_SAVEAS" id="bm_id3144511" localize="false"/><paragraph role="heading" id="hd_id3147618" xml-lang="en-US" level="2" l10n="U" oldref="11">Save</paragraph>
+<paragraph role="paragraph" id="par_id3153626" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="HID_IMAPDLG_SAVEAS">Saves the image map in the<emph> MAP-CERN, MAP-NCSA</emph> or <emph>SIP StarView ImageMap </emph>file format.</ahelp></paragraph>
+<table id="tbl_id3148946">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154280" xml-lang="en-US" l10n="E">
+<image id="img_id3154923" src="res/commandimagelist/sc_saveas.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154923" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152772" xml-lang="en-US" l10n="U" oldref="12">Save</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_SELECT" id="bm_id3153381" localize="false"/><paragraph role="heading" id="hd_id3150791" xml-lang="en-US" level="2" l10n="U" oldref="14">Select</paragraph>
+<paragraph role="paragraph" id="par_id3154073" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_IMAPDLG_SELECT">Selects a hotspot in the image map for editing.</ahelp></paragraph>
+<table id="tbl_id3155101">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="E">
+<image id="img_id3153192" src="res/commandimagelist/sc_drawselect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153192" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153351" xml-lang="en-US" l10n="U" oldref="15">Select</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_RECT" id="bm_id3150742" localize="false"/><paragraph role="heading" id="hd_id3149807" xml-lang="en-US" level="2" l10n="U" oldref="17">Rectangle</paragraph>
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_IMAPDLG_RECT">Draws a rectangular hotspot where you drag in the graphic. After, you can enter the <emph>Address and the Text</emph> for the hotspot, and then select the <emph>Frame</emph> where you want the URL to open.</ahelp></paragraph>
+<table id="tbl_id3144432">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="E">
+<image id="img_id3154297" src="res/commandimagelist/sc_rect.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154297" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157894" xml-lang="en-US" l10n="U" oldref="18">Rectangle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_CIRCLE" id="bm_id3146986" localize="false"/><paragraph role="heading" id="hd_id3153518" xml-lang="en-US" level="2" l10n="U" oldref="20">Ellipse</paragraph>
+<paragraph role="paragraph" id="par_id3145591" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_IMAPDLG_CIRCLE">Draws an elliptical hotspot where you drag in the graphic. After, you can enter the <emph>Address and the Text</emph> for the hotspot, and then select the <emph>Frame</emph> where you want the URL to open.</ahelp></paragraph>
+<table id="tbl_id3159123">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="E">
+<image id="img_id3154011" src="res/commandimagelist/sc_ellipse.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154011" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153212" xml-lang="en-US" l10n="U" oldref="21">Ellipse</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_POLY" id="bm_id3154321" localize="false"/><paragraph role="heading" id="hd_id3153573" xml-lang="en-US" level="2" l10n="U" oldref="23">Polygon</paragraph>
+<paragraph role="paragraph" id="par_id3153190" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_IMAPDLG_POLY">Draws a polygonal hotspot in the graphic. Click this icon, drag in the graphic, and then click to define one side of the polygon. Move to where you want to place the end of the next side, and then click. Repeat until you have drawn all of the sides of the polygon. When you are finished, double-click to close the polygon. After, you can enter the <emph>Address and the Text</emph> for the hotspot, and then select the <emph>Frame</emph> where you want the URL to open.</ahelp></paragraph>
+<table id="tbl_id3149266">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148577" xml-lang="en-US" l10n="E">
+<image id="img_id3156005" src="res/commandimagelist/sc_polygon.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156005" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="24">Polygon</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_FREEPOLY" id="bm_id3159199" localize="false"/><paragraph role="heading" id="hd_id3153140" xml-lang="en-US" level="2" l10n="U" oldref="41">Freeform Polygon</paragraph>
+<paragraph role="paragraph" id="par_id3147046" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="HID_IMAPDLG_FREEPOLY">Draws a hotspot that is based on a freeform polygon. Click this icon and move to where you want to draw the hotspot. Drag a freeform line and release to close the shape. After, you can enter the <emph>Address and the Text</emph> for the hotspot, and then select the <emph>Frame</emph> where you want the URL to open.</ahelp></paragraph>
+<table id="tbl_id3149958">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153877" xml-lang="en-US" l10n="E">
+<image id="img_id3148386" src="res/commandimagelist/sc_freeline.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148386" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159128" xml-lang="en-US" l10n="U" oldref="43">Freeform Polygon</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_POLYEDIT" id="bm_id3151075" localize="false"/><paragraph role="heading" id="hd_id3145251" xml-lang="en-US" level="2" l10n="U" oldref="44">Edit Points</paragraph>
+<paragraph role="paragraph" id="par_id3153745" xml-lang="en-US" l10n="U" oldref="45"><ahelp hid="HID_IMAPDLG_POLYEDIT">Lets you change the shape of the selected hotspot by editing the anchor points.</ahelp></paragraph>
+<table id="tbl_id3147124">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145801" xml-lang="en-US" l10n="E">
+<image id="img_id3150113" src="res/commandimagelist/sc_toggleobjectbeziermode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150113" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="46">Edit points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_POLYMOVE" id="bm_id3159112" localize="false"/><paragraph role="heading" id="hd_id3155600" xml-lang="en-US" level="2" l10n="U" oldref="47">Move Points</paragraph>
+<paragraph role="paragraph" id="par_id3151318" xml-lang="en-US" l10n="U" oldref="48"><ahelp hid="HID_IMAPDLG_POLYMOVE">Lets you move the individual anchor points of the selected hotspot.</ahelp></paragraph>
+<table id="tbl_id3153003">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146971" xml-lang="en-US" l10n="E">
+<image id="img_id3148570" src="res/commandimagelist/sc_beziermove.png" width="0.222inch" height="0.222inch"><alt id="alt_id3148570" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153839" xml-lang="en-US" l10n="U" oldref="49">Move Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_POLYINSERT" id="bm_id3153532" localize="false"/><paragraph role="heading" id="hd_id3145162" xml-lang="en-US" level="2" l10n="U" oldref="50">Insert Points</paragraph>
+<paragraph role="paragraph" id="par_id3156355" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="HID_IMAPDLG_POLYINSERT">Adds an anchor point where you click on the outline of the hotspot.</ahelp></paragraph>
+<table id="tbl_id3154479">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="E">
+<image id="img_id3146793" src="res/commandimagelist/sc_bezierinsert.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146793" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148915" xml-lang="en-US" l10n="U" oldref="52">Insert Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_POLYDELETE" id="bm_id3145642" localize="false"/><paragraph role="heading" id="hd_id3083283" xml-lang="en-US" level="2" l10n="U" oldref="53">Delete Points</paragraph>
+<paragraph role="paragraph" id="par_id3163824" xml-lang="en-US" l10n="U" oldref="54"><ahelp hid="HID_IMAPDLG_POLYDELETE">Deletes the selected anchor point.</ahelp></paragraph>
+<table id="tbl_id3159183">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149021" xml-lang="en-US" l10n="E">
+<image id="img_id3154508" src="res/commandimagelist/sc_bezierdelete.png" width="0.222inch" height="0.222inch"><alt id="alt_id3154508" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147341" xml-lang="en-US" l10n="U" oldref="55">Delete Points</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_ACTIVE" id="bm_id3156089" localize="false"/><paragraph role="heading" id="hd_id3166448" xml-lang="en-US" level="2" l10n="U" oldref="26">Active</paragraph>
+<paragraph role="paragraph" id="par_id3146918" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_IMAPDLG_ACTIVE">Disables or enables the hyperlink for the selected hotspot. A disabled hotspot is transparent.</ahelp></paragraph>
+<table id="tbl_id3146317">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155901" xml-lang="en-US" l10n="E">
+<image id="img_id3145232" src="svx/res/id016.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145232" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155959" xml-lang="en-US" l10n="U" oldref="27">Active</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_MACRO" id="bm_id3151186" localize="false"/><paragraph role="heading" id="hd_id3153966" xml-lang="en-US" level="2" l10n="U" oldref="38">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3151250" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="HID_IMAPDLG_MACRO">Lets you assign a macro that runs when you click the selected hotspot in a browser.</ahelp></paragraph>
+<table id="tbl_id3149926">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145769" xml-lang="en-US" l10n="E">
+<image id="img_id3153922" src="res/commandimagelist/sc_choosemacro.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153922" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149239" xml-lang="en-US" l10n="U" oldref="39">Macro</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_PROPERTY" id="bm_id3145612" localize="false"/><paragraph role="heading" id="hd_id3149207" xml-lang="en-US" level="2" l10n="U" oldref="56">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3150785" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="HID_IMAPDLG_PROPERTY">Allows you to define the properties of the selected hotspot.</ahelp></paragraph>
+<table id="tbl_id3148800">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159104" xml-lang="en-US" l10n="E">
+<image id="img_id3149735" src="res/commandimagelist/sc_modifyframe.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149735" xml-lang="en-US">Icon</alt>
+	</image><comment>UFI: see #60783</comment></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153196" xml-lang="en-US" l10n="U" oldref="58">Properties</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/svx:ComboBox:RID_SVXDLG_IMAP:CBB_URL" id="bm_id3150662" localize="false"/><paragraph role="heading" id="hd_id3144418" xml-lang="en-US" level="2" l10n="U" oldref="29">Address:</paragraph>
+<paragraph role="paragraph" id="par_id3157969" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SVX:COMBOBOX:RID_SVXDLG_IMAP:CBB_URL">Enter the URL for the file that you want to open when you click the selected hotspot.</ahelp> If you want to jump to an anchor within the document, the address should be of the form "file:///C/document_name#anchor_name".</paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_IMAP:EDT_TEXT" id="bm_id3154199" localize="false"/><paragraph role="heading" id="hd_id3146132" xml-lang="en-US" level="2" l10n="U" oldref="31">Text:</paragraph>
+<paragraph role="paragraph" id="par_id3159090" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SVX:EDIT:RID_SVXDLG_IMAP:EDT_TEXT">Enter the text that you want to display when the mouse rests on the hotspot in a browser.</ahelp> If you do not enter any text, the <emph>Address </emph>is displayed.</paragraph>
+<paragraph role="heading" id="hd_id3158445" xml-lang="en-US" level="2" l10n="U" oldref="33">Frame:</paragraph>
+<paragraph role="paragraph" id="par_id3150208" xml-lang="en-US" l10n="U" oldref="34">Enter the name of the target frame that you want to open the URL in. You can also select a standard frame name from the list.</paragraph>
+<paragraph role="paragraph" id="par_id3153231" xml-lang="en-US" l10n="U" oldref="35"><link href="text/shared/01/01100500.xhp" name="List of frame types">List of frame types</link></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_IMAPDLG_GRAPHWND" id="bm_id3145131" localize="false"/><paragraph role="heading" id="hd_id3150345" xml-lang="en-US" level="2" l10n="U" oldref="36">Graphic View</paragraph>
+<paragraph role="paragraph" id="par_id3150382" xml-lang="en-US" l10n="U" oldref="37"><ahelp hid="HID_IMAPDLG_GRAPHWND"></ahelp><comment>dont hide the imagemap if extended tips are on</comment>Displays the image map, so that you can click and edit the hotspots.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3150983" xml-lang="en-US" l10n="C"><link href="text/shared/guide/keyboard.xhp" name="Controlling the ImageMap Editor With the Keyboard">Controlling the ImageMap Editor With the Keyboard</link></paragraph>
+</section>
+</body>
+</helpdocument>

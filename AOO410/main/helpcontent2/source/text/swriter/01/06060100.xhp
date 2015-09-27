@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0106060100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Numbering</title>
+<filename>/text/swriter/01/06060100.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-20T15:37:39">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="numerierung">
+<paragraph role="heading" id="hd_id3151387" xml-lang="en-US" level="1" l10n="U" oldref="34"><link href="text/swriter/01/06060100.xhp" name="Numbering">Numbering</link></paragraph>
+<paragraph role="paragraph" id="par_id3155620" xml-lang="en-US" l10n="U" oldref="35">Specifies the number format and the hierarchy for chapter numbering in the current document.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000406.xhp#kapitelnumerierung1"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OUTLINE_NUM:LB_LEVEL" id="bm_id3154508" localize="false"/>
+<paragraph role="heading" id="hd_id3153003" xml-lang="en-US" level="2" l10n="U" oldref="3">Level</paragraph>
+<paragraph role="paragraph" id="par_id3150018" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SW:LISTBOX:TP_OUTLINE_NUM:LB_LEVEL">Click the outline level that you want to modify, and then specify the numbering options for the level.</ahelp> To apply the numbering options, except for the paragraph style, to all of the levels, click "1-10".</paragraph>
+<paragraph role="heading" id="hd_id3145248" xml-lang="en-US" level="2" l10n="U" oldref="8">Numbering</paragraph>
+<paragraph role="paragraph" id="par_id3150930" xml-lang="en-US" l10n="U" oldref="9">Specify the formatting for the select outline level.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OUTLINE_NUM:LB_COLL" id="bm_id3153716" localize="false"/>
+<paragraph role="heading" id="hd_id3149030" xml-lang="en-US" level="3" l10n="U" oldref="10">Paragraph Style</paragraph>
+<paragraph role="paragraph" id="par_id3153722" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SW:LISTBOX:TP_OUTLINE_NUM:LB_COLL">Select the paragraph style that you want to assign to the selected outline level.</ahelp> If you click "None", the selected outline level is not defined.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OUTLINE_NUM:LB_NUMBER" id="bm_id3150766" localize="false"/>
+<paragraph role="heading" id="hd_id3151272" xml-lang="en-US" level="3" l10n="U" oldref="12">Number</paragraph>
+<paragraph role="paragraph" id="par_id3156319" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="SW:LISTBOX:TP_OUTLINE_NUM:LB_NUMBER">Select the numbering style that you want to apply to the selected outline level.</ahelp></paragraph>
+<table id="tbl_id3154642">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150258" xml-lang="en-US" l10n="U" oldref="14">
+<emph>Selection</emph>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149760" xml-lang="en-US" l10n="U" oldref="15">
+<emph>Description</emph>
+</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147513" xml-lang="en-US" l10n="U" oldref="16">A, B, C, ...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150708" xml-lang="en-US" l10n="U" oldref="17">Capital letters</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154104" xml-lang="en-US" l10n="U" oldref="18">a, b, c, ...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153533" xml-lang="en-US" l10n="U" oldref="19">Lowercase letters</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151314" xml-lang="en-US" l10n="U" oldref="20">I, II, III, ...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154470" xml-lang="en-US" l10n="U" oldref="21">Roman numerals (upper)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150360" xml-lang="en-US" l10n="U" oldref="22">i, ii, iii, ...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152960" xml-lang="en-US" l10n="U" oldref="23">Roman numerals (lower)</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155899" xml-lang="en-US" l10n="U" oldref="24">1, 2, 3, ...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154191" xml-lang="en-US" l10n="U" oldref="25">Arabic numerals</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149298" xml-lang="en-US" l10n="U" oldref="36">A,... AA,... AAA,...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151332" xml-lang="en-US" l10n="U" oldref="37">Alphabetical numbering with identical capital letters, where the number of letters indicates the chapter level. For example, the second number in level three is "BBB".</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3143284" xml-lang="en-US" l10n="U" oldref="38">a,... aa,... aaa,...</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149820" xml-lang="en-US" l10n="U" oldref="39">Alphabetical numbering with identical lower case letters, where the number of letters indicates the chapter level. For example, the third number in level two is "cc".</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154834" xml-lang="en-US" l10n="U" oldref="26">None</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148968" xml-lang="en-US" l10n="U" oldref="27">No numbering symbol. Only the character or symbol defined in the <emph>Separator</emph> fields appears at the beginning of the numbered line.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OUTLINE_NUM:LB_CHARFMT" id="bm_id3147218" localize="false"/>
+<paragraph role="heading" id="hd_id3147098" xml-lang="en-US" level="3" l10n="U" oldref="40">Character Style</paragraph>
+<paragraph role="paragraph" id="par_id3147224" xml-lang="en-US" l10n="U" oldref="41"><ahelp hid="SW:LISTBOX:TP_OUTLINE_NUM:LB_CHARFMT">Select the format of the numbering character.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_OUTLINE_NUM:NF_ALL_LEVEL" id="bm_id3149042" localize="false"/>
+<paragraph role="heading" id="hd_id3153643" xml-lang="en-US" level="3" l10n="U" oldref="28">Show sublevels</paragraph>
+<paragraph role="paragraph" id="par_id3147575" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SW:NUMERICFIELD:TP_OUTLINE_NUM:NF_ALL_LEVEL">Select the number of outline levels to include in the chapter numbering. For example, select "3" to display three levels of chapter numbering: 1.1.1</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_OUTLINE_NUM:ED_PREFIX" id="bm_id3155136" localize="false"/>
+<paragraph role="heading" id="hd_id3152772" xml-lang="en-US" level="3" l10n="U" oldref="30">Separator Before</paragraph>
+<paragraph role="paragraph" id="par_id3155142" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SW:EDIT:TP_OUTLINE_NUM:ED_PREFIX">Enter the text that you want to display before the chapter number.</ahelp> For example, type "Chapter " to display "Chapter 1".</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_OUTLINE_NUM:ED_SUFFIX" id="bm_id3153352" localize="false"/>
+<paragraph role="heading" id="hd_id3154386" xml-lang="en-US" level="3" l10n="U" oldref="32">Separator After</paragraph>
+<paragraph role="paragraph" id="par_id3153358" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="SW:EDIT:TP_OUTLINE_NUM:ED_SUFFIX">Enter the text that you want to display after the chapter number.</ahelp> For example, type a period (.) to display "1."</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_OUTLINE_NUM:ED_START" id="bm_id3149175" localize="false"/>
+<paragraph role="heading" id="hd_id3150590" xml-lang="en-US" level="3" l10n="U" oldref="6">Start at</paragraph>
+<paragraph role="paragraph" id="par_id3151023" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SW:NUMERICFIELD:TP_OUTLINE_NUM:ED_START">Enter the number that you want to restart the chapter numbering at.</ahelp></paragraph>
+</body>
+</helpdocument>

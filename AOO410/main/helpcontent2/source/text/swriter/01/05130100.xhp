@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textswriter0105130100xml" indexer="include">
+<title id="tit" xml-lang="en-US">Condition</title>
+<filename>/text/swriter/01/05130100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="bedingung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154656"><bookmark_value>styles; conditional</bookmark_value>
+<bookmark_value>conditional styles</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154656" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05130100.xhp" name="Condition">Condition</link></paragraph>
+<paragraph role="paragraph" id="par_id3154766" xml-lang="en-US" l10n="U" oldref="2">Define conditions for conditional styles here.</paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/swriter/00/00000405.xhp#vorlagenbedingt"/>
+</section>
+<paragraph role="paragraph" id="par_id3151391" xml-lang="en-US" l10n="CHG" oldref="10">Conditional styles are paragraph styles that have different properties depending on the context. Once defined, you cannot change the conditional properties of a conditional style.</paragraph>
+<paragraph role="paragraph" id="par_id3149349" xml-lang="en-US" l10n="U" oldref="11">$[officename] applies the paragraph properties of conditional styles as follows (the bold terms correspond to the titles of dialog fields): If a paragraph formatted with a conditional style is in a <emph>Context</emph> that has an <emph>Applied Style</emph> linked to it, then the <emph>Paragraph Style</emph> from that condition is used. If no style is linked to the <emph>Context</emph>, then the attributes defined in the conditional style apply. The following example illustrates this relationship:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3149883" xml-lang="en-US" l10n="U" oldref="12">Open a blank text document and write a short business letter with a header (<emph>Format</emph> - <emph>Page</emph> - <emph>Header</emph>).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148768" xml-lang="en-US" l10n="CHG" oldref="21">Define a new Paragraph Style by choosing <emph>New</emph> in the <emph>Styles and Formatting</emph> window, and selecting all the paragraph properties that you want for your business letter in the <emph>Paragraph Style</emph> dialog. Name this style "Business letter".</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153723" xml-lang="en-US" l10n="U" oldref="23">Then click the <emph>Condition</emph> tab and select the <emph>Conditional style</emph> field to define the new Paragraph Style as a conditional style.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154647" xml-lang="en-US" l10n="U" oldref="24">In <emph>Context</emph>, select the header entry and under <emph>Paragraph Styles</emph> select the style for the header in your business letter; for example, the default Paragraph Style "Header". You also can select your own style.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150760" xml-lang="en-US" l10n="U" oldref="25">You can apply the Paragraph Style to the context by double-clicking the selected entry in the <emph>Paragraph Styles</emph> list box or by using <emph>Apply</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149753" xml-lang="en-US" l10n="CHG" oldref="26">Click <emph>OK</emph> to close the Paragraph Style dialog, and then format all paragraphs in your business letter, including the header, with the new "Business letter" conditional Paragraph Style. (When you click in the header, you may need to display <item type="literal">All Styles</item> or <item type="literal">Custom Styles</item> in the style list to use the new business letter style.)</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3145412" xml-lang="en-US" l10n="U" oldref="27">The header text now has the attributes you specified in the Header Paragraph Style, while the other parts of the document have the attributes defined in the business letter conditional Paragraph Style.</paragraph>
+<paragraph role="tip" id="par_id3154473" xml-lang="en-US" l10n="U" oldref="13">The "Text body" Style was created as a conditional style. Therefore, any styles you derive from it can be used as conditional styles.</paragraph>
+<paragraph role="paragraph" id="par_id3151321" xml-lang="en-US" l10n="U" oldref="14">The Paragraph Style applied to the context is used when exporting to other formats (RTF, HTML, and so on).</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_CONDCOLL:CB_CONDITION" id="bm_id3152963" localize="false"/>
+<paragraph role="heading" id="hd_id3152952" xml-lang="en-US" level="2" l10n="U" oldref="3">Conditional style</paragraph>
+<paragraph role="paragraph" id="par_id3150974" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="SW:CHECKBOX:TP_CONDCOLL:CB_CONDITION">Check this box to define a new style as a conditional style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_COND_COLL_TABLIST" id="bm_id3147524" localize="false"/>
+<paragraph role="heading" id="hd_id3153672" xml-lang="en-US" level="2" l10n="U" oldref="4">Context</paragraph>
+<paragraph role="paragraph" id="par_id3147530" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_COND_COLL_TABLIST">Here you can see the $[officename] predefined contexts, including outline levels 1 to 10, numbering/bullets levels 1 to 10, table header, table contents, section, border, footnote, header and footer.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3155896" xml-lang="en-US" level="2" l10n="U" oldref="5">Applied Style</paragraph>
+<paragraph role="paragraph" id="par_id3149689" xml-lang="en-US" l10n="U" oldref="17">Here you can see the list of all Paragraph Styles applied to a context.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_CONDCOLL:LB_STYLE" id="bm_id3159190" localize="false"/>
+<paragraph role="heading" id="hd_id3154194" xml-lang="en-US" level="2" l10n="U" oldref="6">Styles</paragraph>
+<paragraph role="paragraph" id="par_id3159195" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:LISTBOX:TP_CONDCOLL:LB_STYLE">A list of all Paragraph Styles which can be assigned to a context is contained in the list box.</ahelp></paragraph>
+<embed href="text/swriter/01/05130000.xhp#vorlagenbereich"/>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_CONDCOLL:PB_REMOVE" id="bm_id3151329" localize="false"/>
+<paragraph role="heading" id="hd_id3149306" xml-lang="en-US" level="2" l10n="U" oldref="8">Remove</paragraph>
+<paragraph role="paragraph" id="par_id3151335" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SW:PUSHBUTTON:TP_CONDCOLL:PB_REMOVE">Click here to remove the current context assigned to the selected style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:TP_CONDCOLL:PB_ASSIGN" id="bm_id3149494" localize="false"/>
+<paragraph role="heading" id="hd_id3149483" xml-lang="en-US" level="2" l10n="U" oldref="9">Assign</paragraph>
+<paragraph role="paragraph" id="par_id3154829" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW:PUSHBUTTON:TP_CONDCOLL:PB_ASSIGN">Click <emph>Assign</emph> to apply the <emph>selected Paragraph Style</emph> to the defined <emph>context</emph>.</ahelp></paragraph>
+</body>
+</helpdocument>

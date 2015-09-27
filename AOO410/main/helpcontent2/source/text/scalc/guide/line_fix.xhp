@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguideline_fixxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Freezing Rows or Columns as Headers</title>
+<filename>/text/scalc/guide/line_fix.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-27T12:19:43">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154684"><bookmark_value>tables; freezing</bookmark_value>
+<bookmark_value>title rows; freezing during table split</bookmark_value>
+<bookmark_value>rows; freezing</bookmark_value>
+<bookmark_value>columns; freezing</bookmark_value>
+<bookmark_value>freezing rows or columns</bookmark_value>
+<bookmark_value>headers; freezing during table split</bookmark_value>
+<bookmark_value>scrolling prevention in tables</bookmark_value>
+<bookmark_value>windows; splitting</bookmark_value>
+<bookmark_value>tables; splitting windows</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154684" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="line_fix"><link href="text/scalc/guide/line_fix.xhp" name="Freezing Rows or Columns as Headers">Freezing Rows or Columns as Headers</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148576" xml-lang="en-US" l10n="CHG" oldref="2">If you have long rows or columns of data that extend beyond the viewable area of the sheet, you can freeze some rows or columns, which allows you to see the frozen columns or rows as you scroll through the rest of the data.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="3">Select the row below, or the column to the right of the row or column that you want to be in the frozen region. All rows above, or all columns to the left of the selection are frozen.</paragraph>
+<paragraph role="listitem" id="par_id3153158" xml-lang="en-US" l10n="U" oldref="13">To freeze both horizontally and vertically, select the <emph>cell</emph> that is below the row and to the right of the column that you want to freeze.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3156286" xml-lang="en-US" l10n="U" oldref="4">Choose <emph>Window - Freeze</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3151073" xml-lang="en-US" l10n="U" oldref="5">To deactivate, choose <emph>Window - Freeze </emph>again.</paragraph>
+</listitem>
+</list>
+<paragraph role="note" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="7">If the area defined is to be scrollable, apply the <emph>Window - Split</emph> command.</paragraph>
+<paragraph role="note" id="par_id3147345" xml-lang="en-US" l10n="U" oldref="8">If you want to print a certain row on all pages of a document, choose <emph>Format - Print ranges - Edit</emph>.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3147004" xml-lang="en-US" l10n="U" oldref="9"><link href="text/scalc/01/07090000.xhp" name="Window - Freeze">Window - Freeze</link></paragraph>
+<paragraph role="paragraph" id="par_id3150088" xml-lang="en-US" l10n="U" oldref="10"><link href="text/scalc/01/07080000.xhp" name="Window - Split">Window - Split</link></paragraph>
+<embed href="text/scalc/guide/print_title_row.xhp#print_title_row"/>
+<paragraph role="paragraph" id="par_id3150304" xml-lang="en-US" l10n="U" oldref="11"><link href="text/scalc/01/05080300.xhp" name="Format - Print ranges - Edit">Format - Print ranges - Edit</link></paragraph>
+</section>
+</body>
+</helpdocument>

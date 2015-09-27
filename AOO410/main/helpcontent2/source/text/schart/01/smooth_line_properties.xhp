@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textschart01smooth_line_propertiesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Smooth Line Properties</title>
+<filename>/text/schart/01/smooth_line_properties.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-29T11:42:46">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3803827"><bookmark_value>curves;properties in line charts/XY charts</bookmark_value>
+<bookmark_value>properties;smooth lines in line charts/XY charts</bookmark_value>
+</bookmark><comment>mw added two entries</comment>
+<paragraph role="heading" id="hd_id3050325" xml-lang="en-US" level="1" l10n="NEW">Smooth Line Properties</paragraph>
+<paragraph role="paragraph" id="par_id9421979" xml-lang="en-US" l10n="NEW">In a chart that displays lines (Line type or XY type), you can choose to show curves instead of straight lines. Some options control the properties of those curves.<comment>most possibly these curves are not Bezier curves.</comment></paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#slp"/>
+</section>
+<embed href="text/shared/00/00000001.xhp#ShiftF1"/>
+<paragraph role="heading" id="hd_id1228370" xml-lang="en-US" level="2" l10n="NEW">To change line properties</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id1601611" xml-lang="en-US" l10n="NEW">Select Cubic Spline or B-Spline.</paragraph>
+<paragraph role="paragraph" id="par_id879848" xml-lang="en-US" l10n="NEW">These are mathematical models that influence the display of the curves. The cubic spline line passes through all points, while the B-spline line connects the first and last point and passes by the intermediate points.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3464461" xml-lang="en-US" l10n="NEW">Optionally set the resolution. A higher value leads to a smoother line.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6998809" xml-lang="en-US" l10n="NEW">For B-spline lines optionally set the data points order.</paragraph>
+</listitem>
+</list><comment>1088553477 cubic spline</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:DLG_SPLINE_PROPERTIES:RB_SPLINES_CUBIC" id="bm_id1593676" localize="false"/>
+<paragraph role="paragraph" id="par_id3424481" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Apply a cubic spline model.</ahelp></paragraph><comment>1088553478 b-spline</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:DLG_SPLINE_PROPERTIES:RB_SPLINES_B" id="bm_id1243629" localize="false"/>
+<paragraph role="paragraph" id="par_id1068758" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Apply a B-spline model.</ahelp></paragraph><comment>1088559618 resolution</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:MetricField:DLG_SPLINE_PROPERTIES:MF_SPLINE_RESOLUTION" id="bm_id9044770" localize="false"/>
+<paragraph role="paragraph" id="par_id2320932" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Set the resolution.</ahelp></paragraph><comment>1088559617 data points order</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:MetricField:DLG_SPLINE_PROPERTIES:MF_SPLINE_ORDER" id="bm_id3674123" localize="false"/>
+<paragraph role="paragraph" id="par_id8638874" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Set the data points order.</ahelp></paragraph>
+</body>
+</helpdocument>

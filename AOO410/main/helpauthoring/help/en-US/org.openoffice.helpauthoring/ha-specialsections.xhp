@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+<meta>
+<topic id="topic_0805201012591739" indexer="topic_080520100201326">
+<title xml-lang="en-US" id="tit">Special Sections in Help Documents</title>
+<filename>org.openoffice.helpauthoring/ha-specialsections.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/vnd.sun.star.script:HelpAuthoring.OtherElements.InsertHowToGet?language=Basic&amp;location=application" id="bm_id071320100343056701" localize="false"/>
+<paragraph id="par_id0713201005170913" role="paragraph" xml-lang="en-US"><ahelp hid="" visibility="hidden">Inserts a "How to get this function" section.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/vnd.sun.star.script:HelpAuthoring.OtherElements.InsertRelatedTopics?language=Basic&amp;location=application" id="bm_id071320100343056799" localize="false"/>
+<paragraph id="par_id0713201005170923" role="paragraph" xml-lang="en-US"><ahelp hid="" visibility="hidden">Inserts a "Related Topics" section.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0805201012435066">
+<bookmark_value>Help Authoring;Special sections</bookmark_value>
+</bookmark>
+<paragraph id="hd_id080520101259183" role="heading" xml-lang="en-US" level="1">Special Sections in Help Documents</paragraph>
+<paragraph id="par_id0805201002013331" role="paragraph" xml-lang="en-US">There are two pre-defined sections available that trigger special visualization in the help viewer:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id0805201002013486" role="paragraph" xml-lang="en-US"><emph>How to get this function</emph></paragraph>
+<paragraph id="par_id0805201002013460" role="paragraph" xml-lang="en-US">This section contains information about how to execute the function described in the help file (key strokes, menu items, toolbar icons, etc) and is usually placed near the top of a help file.</paragraph>
+<paragraph id="par_id0805201002185331" role="paragraph" xml-lang="en-US">
+<image id="img_id080520100218213" src="../img/howtoget.png"><alt xml-lang="en-US" id="alt_id080520100218213">How to get this function</alt>
+	</image></paragraph>
+</listitem>
+<listitem>
+<paragraph id="par_id080520100201346" role="paragraph" xml-lang="en-US"><emph>Related topics</emph></paragraph>
+<paragraph id="par_id0805201002013467" role="paragraph" xml-lang="en-US">This section contains links to related help files and should be located at the very end of a help file.</paragraph>
+</listitem></list>
+<paragraph id="par_id080520100201349" role="paragraph" xml-lang="en-US">When selecting <item type="menuitem">Help Authoring &gt; "How to Get" Section</item> or <item type="menuitem">Help Authoring &gt; "Related Topics" Section</item> the corresponding sections are inserted into the document with the required meta data.</paragraph>
+<paragraph id="hd_id080520100212342" role="heading" xml-lang="en-US" level="4">To be added</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph id="par_id0805201002123497" role="ul_item" xml-lang="en-US">Example, Screenshot</paragraph>
+</listitem></list>
+</body>
+</helpdocument>

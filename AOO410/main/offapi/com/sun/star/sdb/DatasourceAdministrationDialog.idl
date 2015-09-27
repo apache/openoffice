@@ -1,0 +1,125 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_sdb_DatasourceAdministrationDialog_idl__ 
+#define __com_sun_star_sdb_DatasourceAdministrationDialog_idl__ 
+ 
+#ifndef __com_sun_star_ui_dialogs_XExecutableDialog_idl__ 
+#include <com/sun/star/ui/dialogs/XExecutableDialog.idl> 
+#endif 
+
+#ifndef __com_sun_star_awt_XWindow_idl__ 
+#include <com/sun/star/awt/XWindow.idl> 
+#endif 
+
+#ifndef __com_sun_star_lang_XInitialization_idl__ 
+#include <com/sun/star/lang/XInitialization.idl> 
+#endif 
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#include <com/sun/star/beans/XPropertySet.idl> 
+#endif 
+
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module sdb { 
+ 
+
+/** provides a user interface for administrating the system wide registered data sources.
+	<p>
+	Here, <em>system wide registered</em> means registered on the (one and only) instance
+	of the 
+	<type scope="com::sun::star::sdb">
+	DatabaseContext
+	</type> 
+	service.
+	</p>
+*/
+published service DatasourceAdministrationDialog
+{
+	/** the title of the (dialog) window
+	*/
+	[property] string Title;
+
+	/** parent window to use for the administration dialog
+		<p>
+		This property can't be set while the dialog is being displayed.
+		</p>
+	*/
+	[property] com::sun::star::awt::XWindow ParentWindow;
+
+	/** allows access to the properties of the object
+	*/
+	interface com::sun::star::beans::XPropertySet;
+
+	/** allows starting execution of the administration dialog
+	*/
+	interface com::sun::star::ui::dialogs::XExecutableDialog;
+
+	/** allows initializing the dialog
+		<p>
+		You do not need to call the initialize method directly, instead you may use the createInstanceWithArguments
+		method of your 
+		<type scope="com::sun::star::lang">XMultiServiceFactory</type>
+		.
+		</p>
+
+		<p>
+		You specify a parameter by passing one (or more) 
+		<type scope="com::sun::star::beans">PropertyValue</type>
+		object(s) to the initialize method, where the <em>Name</em> field contains a string describing which aspect
+		you want to affect, and the <em>Value</em> field containing a value.
+		<br/>
+		Imagine the initialization values as if you use setPropertyValue of the 
+		<type scope="com::sun::star::beans">XPropertySet</type>
+		interface ...
+		<br/>
+		allowed parameters are
+		<ul>
+			<li><b>Title</b><br/>
+				String describing the initial title of the dialog. 
+				If not specified, a default title is used.
+			</li>
+			<li><b>ParentWindow</b><br/>
+				<type scope="com::sun::star::awt">XWindow</type>
+				describing the parent window to use for the dialog.
+			</li>
+			<li><b>InitialSelection</b><br/>
+				String or XDataSource describing which data source should be selected initially. 
+				This String name must be known to the
+				<type scope="com::sun::star::sdb">
+				DatabaseContext
+				</type>
+				.
+			</li>
+		</ul>
+		</p>
+	*/
+	interface com::sun::star::lang::XInitialization;
+};
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+#endif

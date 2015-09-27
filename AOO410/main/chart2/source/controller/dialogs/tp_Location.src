@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include "HelpIds.hrc"
+#include "tp_Location.hrc"
+#include "dlg_CreationWizard.hrc"
+
+#ifndef _SVT_CONTROLDIMS_HRC_
+#include <svtools/controldims.hrc>
+#endif
+
+#define MASKCOLOR MaskColor = Color { Red = 0xC000 ; Green = 0xC000 ; Blue = 0xC000 ; }
+#define WIZ_POSX1 6
+#define WIZ_POSY1 6
+#define WIZ_POSX2 (6+4)
+#define WIZ_POSY2 (WIZ_POSY1+RSC_CD_FIXEDTEXT_HEIGHT+4)
+#define TEXT_WIDTH 50
+#define WIZ_POSX3 (WIZ_POSX2+TEXT_WIDTH+6)
+#define WIZ_FIXEDLINE_WIDTH (CHART_WIZARD_PAGEWIDTH-WIZ_POSX1-6)
+#define WIZ_LISTBOX_WIDTH (CHART_WIZARD_PAGEWIDTH-WIZ_POSX2-TEXT_WIDTH-6-6)
+
+
+TabPage TP_LOCATION
+{
+    HelpID = "chart2:TabPage:TP_LOCATION";
+	Hide = TRUE ;
+	SVLook = TRUE ;
+	Size = MAP_APPFONT ( CHART_WIZARD_PAGEWIDTH , CHART_WIZARD_PAGEHEIGHT ) ;
+
+	FixedLine FL_TABLE
+	{
+	    Pos = MAP_APPFONT ( WIZ_POSX1 , WIZ_POSY1 ) ;
+		Size = MAP_APPFONT ( WIZ_FIXEDLINE_WIDTH , RSC_CD_FIXEDTEXT_HEIGHT ) ;
+
+		Text [ en-US ] = "Place chart" ;
+	};
+	FixedText FT_TABLE
+	{
+        Pos = MAP_APPFONT ( WIZ_POSX2 , WIZ_POSY2 ) ;
+        Size = MAP_APPFONT ( TEXT_WIDTH , RSC_CD_FIXEDTEXT_HEIGHT ) ;
+
+		Text [ en-US ] = "~Insert in sheet" ;
+	};
+	ListBox LB_TABLE
+	{
+	    HelpID = "chart2:ListBox:TP_LOCATION:LB_TABLE";
+		Border = TRUE ;
+		DropDown = TRUE ;
+		Pos = MAP_APPFONT ( WIZ_POSX3 , WIZ_POSY2 ) ;
+        Size = MAP_APPFONT ( WIZ_LISTBOX_WIDTH , RSC_CD_FIXEDTEXT_HEIGHT ) ;
+	};
+};

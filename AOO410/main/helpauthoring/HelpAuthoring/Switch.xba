@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="Switch" script:language="StarBasic">REM  *****  BASIC  *****
+
+Dim oDialog AS Object
+Dim document AS Object
+
+Sub Main
+End Sub
+
+Sub InsertSwitch
+	InsertSwitchTag(FALSE)
+End Sub
+
+Sub InsertSwitchInline
+	InsertSwitchTag(TRUE)
+End Sub
+
+Sub InsertSwitchTag(bInline As Boolean)
+	document = StarDesktop.CurrentComponent
+	Dim oCur as Object
+
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
+	oDialogModel = oDialog.Model
+	
+	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
+	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
+	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
+	
+	If oDialog.Execute() = 1 Then
+		If oOptSys.State Then
+			sType = &quot;sys&quot;
+		ElseIf oOptAppl.State Then
+			sType = &quot;appl&quot;
+		ElseIf oOptDistrib.State Then
+			sType = &quot;distrib&quot;
+		End If
+	Else
+	End If
+	oDialog.Dispose
+
+	If bInline Then
+		oSel = thiscomponent.getcurrentcontroller.getselection
+		oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
+		
+		oStart = oCur.getStart
+		oCurStart = oStart.getText.createTextCursorByRange(oStart)
+			
+		oEnd = oCur.getEnd
+		oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
+		
+		thiscomponent.getcurrentcontroller.select(oCurStart)
+		InsertTag(&quot;SWITCHINLINE_&quot;,&quot;&lt;SWITCHINLINE select=&quot;&quot;&quot; + sType + &quot;&quot;&quot;&gt;&quot;,&quot;hlp_aux_switch&quot;)
+		InsertCase(sType,TRUE,oCur)
+		thiscomponent.getcurrentcontroller.select(oCurEnd)
+		CloseSwitchInline
+		GoLeft(1)
+	Else
+		CR_before
+		GoUp(1)
+		SetParaStyle(&quot;hlp_aux_switch&quot;)
+		InsertTag(&quot;SWITCH_&quot;,&quot;&lt;SWITCH select=&quot;&quot;&quot; + sType + &quot;&quot;&quot;&gt;&quot;,&quot;hlp_aux_switch&quot;)
+		GoLeft(1)
+		GoDown(1)
+		SetCharStyle(&quot;Default&quot;)
+		CloseSwitch
+		GoUp(1)
+		InsertCase(sType,FALSE,oCur)
+	End If
+End Sub
+
+Sub InsertCaseElement
+	document = StarDesktop.CurrentComponent
+	Dim oCur as Object
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
+	oDialogModel = oDialog.Model
+	
+	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
+	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
+	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
+	
+	If oDialog.Execute() = 1 Then
+		If oOptSys.State Then
+			sType = &quot;sys&quot;
+		ElseIf oOptAppl.State Then
+			sType = &quot;appl&quot;
+		ElseIf oOptDistrib.State Then
+			sType = &quot;distrib&quot;
+		End If
+	Else
+	End If
+	oDialog.Dispose
+
+	InsertCase(sType,FALSE,oCur)
+
+End Sub
+
+Sub InsertDefaultElement
+	document = StarDesktop.CurrentComponent
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+	
+	InsertDefault
+End Sub
+
+Sub InsertCaseInlineElement
+	document = StarDesktop.CurrentComponent
+	Dim oCur as Object
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgSwitch&quot;)
+	oDialogModel = oDialog.Model
+	
+	oOptSys = oDialog.GetControl(&quot;opSwitchSystem&quot;)
+	oOptAppl = oDialog.GetControl(&quot;opSwitchAppl&quot;)
+	oOptDistrib = oDialog.GetControl(&quot;opSwitchDistrib&quot;)
+	
+	If oDialog.Execute() = 1 Then
+		If oOptSys.State Then
+			sType = &quot;sys&quot;
+		ElseIf oOptAppl.State Then
+			sType = &quot;appl&quot;
+		ElseIf oOptDistrib.State Then
+			sType = &quot;distrib&quot;
+		End If
+	Else
+	End If
+	oDialog.Dispose
+
+	oSel = thiscomponent.getcurrentcontroller.getselection
+	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
+		
+	oStart = oCur.getStart
+	oCurStart = oStart.getText.createTextCursorByRange(oStart)
+			
+	oEnd = oCur.getEnd
+	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
+		
+	InsertCase(sType,TRUE,oCur)
+	GoLeft(1)
+End Sub
+
+Sub InsertDefaultInlineElement
+	document = StarDesktop.CurrentComponent
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+
+	oSel = thiscomponent.getcurrentcontroller.getselection
+	oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
+		
+	oStart = oCur.getStart
+	oCurStart = oStart.getText.createTextCursorByRange(oStart)
+			
+	oEnd = oCur.getEnd
+	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
+		
+	InsertDefaultInline(oCur)
+	GoLeft(1)
+End Sub
+
+
+Sub InsertCaseSys
+	InsertCase(&quot;sys&quot;,FALSE)
+End Sub
+
+Sub InsertCaseAppl
+	InsertCase(&quot;appl&quot;,FALSE)
+End Sub
+
+Sub InsertCaseDistrib
+	InsertCase(&quot;distrib&quot;,FALSE)
+End Sub
+
+Sub InsertCaseInlineSys
+	InsertCase(&quot;sys&quot;,TRUE)
+End Sub
+
+Sub InsertCaseInlineAppl
+	InsertCase(&quot;appl&quot;,TRUE)
+End Sub
+
+Sub InsertCaseInlineDistrib
+	InsertCase(&quot;distrib&quot;,TRUE)
+End Sub
+
+Sub InsertDefaultInline(oCur as Object)
+	oSel = thiscomponent.getcurrentcontroller.getselection
+	&apos;oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
+	
+	oStart = oCur.getStart
+	oCurStart = oStart.getText.createTextCursorByRange(oStart)
+			
+	oEnd = oCur.getEnd
+	oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
+		
+	thiscomponent.getcurrentcontroller.select(oCurStart)
+	InsertTag(&quot;DEFAULTINLINE_&quot;,&quot;&lt;DEFAULTINLINE&gt;&quot;)
+		
+	thiscomponent.getcurrentcontroller.select(oCurEnd)
+	InsertTag(&quot;_DEFAULTINLINE&quot;,&quot;&lt;/DEFAULTINLINE&gt;&quot;)
+End Sub
+
+Sub InsertCase(sType As String, bInline As Boolean,oCur As Object)
+	document = StarDesktop.CurrentComponent
+
+	BasicLibraries.LoadLibrary(&quot;HelpAuthoring&quot;)
+	oDialog = LoadDialog(&quot;HelpAuthoring&quot;, &quot;dlgCase&quot;)
+	oDialogModel = oDialog.Model
+	
+	oOptPredefined = oDialog.GetControl(&quot;opPredefined&quot;)
+	oCbPredefined = oDialog.GetControl(&quot;cbPredefined&quot;)
+	oOptSpecify = oDialog.GetControl(&quot;opSpecify&quot;)
+	oTxtSpecify = oDialog.GetControl(&quot;txtSpecify&quot;)
+	oTxtSpecify.setVisible(FALSE)
+	
+	If sType = &quot;sys&quot; Then
+		arItems = Array(&quot;WIN&quot;,&quot;UNIX&quot;,&quot;MAC&quot;)
+	ElseIf sType = &quot;appl&quot; Then
+		arItems = Array(&quot;CALC&quot;,&quot;CHART&quot;,&quot;DRAW&quot;,&quot;IMPRESS&quot;,&quot;MATH&quot;,&quot;WRITER&quot;,&quot;BASIC&quot;)
+	ElseIf sType = &quot;distrib&quot; Then
+		arItems = Array(&quot;OPENSOURCE&quot;,&quot;COMMERCIAL&quot;)
+	Else
+		msgbox &quot;Unknown Case. Go tell Frank about this&quot;,0,&quot;D&apos;oh!&quot;
+		Exit Sub
+	End If
+
+	oCbPredefined.AddItems(arItems,ubound(arItems))
+	oCbPredefined.SetText(arItems(0))
+	
+	If oDialog.Execute() = 1 Then
+
+		If oOptPredefined.State Then
+			sSelect = oCbPredefined.GetText
+		Else
+			sSelect = oTxtSpecify.Text
+		End If
+	
+		If bInline Then
+			oSel = thiscomponent.getcurrentcontroller.getselection
+			&apos;oCur = oSel(0).getText.createTextCursorByRange(oSel(0))
+			
+			oStart = oCur.getStart
+			oCurStart = oStart.getText.createTextCursorByRange(oStart)
+			
+			oEnd = oCur.getEnd
+			oCurEnd = oEnd.getText.createTextCursorByRange(oEnd)
+		
+			thiscomponent.getcurrentcontroller.select(oCurStart)
+			InsertTag(&quot;CASEINLINE_&quot;,&quot;&lt;CASEINLINE select=&quot;&quot;&quot;+sSelect+&quot;&quot;&quot;&gt;&quot;)
+		
+			thiscomponent.getcurrentcontroller.select(oCurEnd)
+			InsertTag(&quot;_CASEINLINE&quot;,&quot;&lt;/CASEINLINE&gt;&quot;)
+		Else
+			CR_before
+			GoUp(1)
+			SetParaStyle(&quot;hlp_aux_switch&quot;)
+			InsertTag(&quot;CASE_&quot;,&quot;&lt;CASE select=&quot;&quot;&quot; + sSelect+&quot;&quot;&quot;&gt;&quot;,&quot;hlp_aux_switch&quot;)
+			GoLeft(1)
+			GoDown(1)
+			SetCharStyle(&quot;Default&quot;)
+			CloseCase
+			GoUp(1)
+		End If
+	End If
+	oDialog.dispose
+End Sub
+
+Sub StatusChange
+	oOptPredefined = oDialog.GetControl(&quot;opPredefined&quot;)
+	oCbPredefined = oDialog.GetControl(&quot;cbPredefined&quot;)
+	oOptSpecify = oDialog.GetControl(&quot;opSpecify&quot;)
+	oTxtSpecify = oDialog.GetControl(&quot;txtSpecify&quot;)
+	
+	If oOptPredefined.State Then
+		oCbPredefined.setVisible(TRUE)
+		oTxtSpecify.setVisible(FALSE)
+	ElseIf oOptSpecify.State Then
+		oCbPredefined.setVisible(FALSE)
+		oTxtSpecify.setVisible(TRUE)
+	End If
+End Sub
+
+Sub CloseCase
+	CR
+	SetParaStyle(&quot;hlp_aux_switch&quot;)
+	InsertTag(&quot;_CASE&quot;,&quot;&lt;/CASE&gt;&quot;,&quot;hlp_aux_switch&quot;)
+End Sub
+
+Sub InsertDefault
+	CR_before
+	GoUp(1)
+	SetParaStyle(&quot;hlp_aux_switch&quot;)
+	InsertTag(&quot;DEFAULT_&quot;,&quot;&lt;DEFAULT&gt;&quot;,&quot;hlp_aux_switch&quot;)
+	GoLeft(1)
+	GoDown(1)
+	SetCharStyle(&quot;Default&quot;)
+	CloseDefault
+	GoUp(1)
+End Sub
+
+Sub CloseDefault
+	CR
+	SetParaStyle(&quot;hlp_aux_switch&quot;)
+	InsertTag(&quot;_DEFAULT&quot;,&quot;&lt;/DEFAULT&gt;&quot;,&quot;hlp_aux_switch&quot;)
+End Sub
+
+Sub CloseSwitch
+	CR
+	SetParaStyle(&quot;hlp_aux_switch&quot;)
+	InsertTag(&quot;_SWITCH&quot;,&quot;&lt;/SWITCH&gt;&quot;,&quot;hlp_aux_switch&quot;)
+End Sub
+
+Sub CloseSwitchInline
+	InsertTag(&quot;_SWITCHINLINE&quot;,&quot;&lt;/SWITCHINLINE&gt;&quot;)
+End Sub
+</script:module>

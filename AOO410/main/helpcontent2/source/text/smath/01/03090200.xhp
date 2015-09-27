@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Relations</title>
+<filename>/text/smath/01/03090200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-06T11:25:01">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="relationen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156316"><bookmark_value>relations; in $[officename] Math</bookmark_value>
+<bookmark_value>$[officename] Math; relations</bookmark_value>
+<bookmark_value>equal sign</bookmark_value>
+<bookmark_value>inequation</bookmark_value>
+<bookmark_value>unequal sign</bookmark_value>
+<bookmark_value>identical to relation</bookmark_value>
+<bookmark_value>congruent relation</bookmark_value>
+<bookmark_value>right angled relations</bookmark_value>
+<bookmark_value>orthogonal relations</bookmark_value>
+<bookmark_value>divides relation</bookmark_value>
+<bookmark_value>does not divide relation</bookmark_value>
+<bookmark_value>less than relations</bookmark_value>
+<bookmark_value>approximately equal to relation</bookmark_value>
+<bookmark_value>parallel relation</bookmark_value>
+<bookmark_value>less than or equal to signs</bookmark_value>
+<bookmark_value>greater than or equal to signs</bookmark_value>
+<bookmark_value>proportional to relation</bookmark_value>
+<bookmark_value>similar to relations</bookmark_value>
+<bookmark_value>toward relation</bookmark_value>
+<bookmark_value>logic symbols</bookmark_value>
+<bookmark_value>double arrow symbols</bookmark_value>
+<bookmark_value>much greater than relation</bookmark_value>
+<bookmark_value>considerably greater than relation</bookmark_value>
+<bookmark_value>greater than relations</bookmark_value>
+<bookmark_value>much less than relation</bookmark_value>
+<bookmark_value>considerably less than relation</bookmark_value>
+<bookmark_value>defined as relation</bookmark_value>
+<bookmark_value>correspondence; picture by</bookmark_value>
+<bookmark_value>picture by correspondence</bookmark_value>
+<bookmark_value>image of relation</bookmark_value>
+<bookmark_value>correspondence; original by</bookmark_value>
+<bookmark_value>original by correspondence</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_RELATIONS_TBX" id="bm_id3145204" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_RELATIONS_CAT" id="bm_id3145207" localize="false"/>
+<paragraph role="heading" id="hd_id3156316" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090200.xhp" name="Relations">Relations</link></paragraph>
+<paragraph role="paragraph" id="par_id3153152" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_SMA_RELATIONS_CAT">You can choose among various relations to structure your <emph>$[officename] Math</emph> formula. The relation functions are displayed in the lower part of the Elements window.</ahelp> The list is also in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All relations that are not contained in the Elements window or in the context menu can be typed manually in the Commands window.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#astbio"/>
+</section>
+<paragraph role="paragraph" id="par_id3147258" xml-lang="en-US" l10n="U" oldref="3">The following is a complete list of the relations. The symbol next to the name of the relation indicates that it can be accessed through the Elements window (choose <emph>View - Elements</emph>) or through the context menu of the <emph>Commands</emph> window.</paragraph>
+<paragraph role="heading" id="hd_id3148827" xml-lang="en-US" level="3" l10n="U" oldref="4">Relations:</paragraph>
+<table id="tbl_id3145414">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10086" xml-lang="en-US" l10n="F">
+<image id="img_id3153573" src="starmath/res/bi21301.png" width="0.847cm" height="0.847cm"><alt id="alt_id3153573" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XEQY" id="bm_id3153580" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154104" xml-lang="en-US" l10n="U" oldref="5">is equal</paragraph>
+<paragraph role="paragraph" id="par_id3152947" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_SMA_XEQY">Inserts an equal sign (=) with two placeholders.</ahelp> You can also directly type <emph>&lt;?&gt; = &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151098">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN100BF" xml-lang="en-US" l10n="F">
+<image id="img_id3147523" src="starmath/res/bi21302.png" width="0.847cm" height="0.847cm"><alt id="alt_id3147523" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XNEQY" id="bm_id3147529" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152959" xml-lang="en-US" l10n="U" oldref="54">does not equal</paragraph>
+<paragraph role="paragraph" id="par_id3150976" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="HID_SMA_XNEQY">The <emph>neq</emph> icon or command inserts an <emph>inequality</emph> with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; neq &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150831">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10101" xml-lang="en-US" l10n="F">
+<image id="img_id3154196" src="starmath/res/bi21303.png" width="0.847cm" height="0.847cm"><alt id="alt_id3154196" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XEQUIVY" id="bm_id3151322" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151332" xml-lang="en-US" l10n="U" oldref="56">identical to</paragraph>
+<paragraph role="paragraph" id="par_id3155181" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="HID_SMA_XEQUIVY">Inserts a character for the <emph>identical to</emph> (congruent) relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; equiv &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151256">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10140" xml-lang="en-US" l10n="F">
+<image id="img_id3154835" src="starmath/res/bi21304.png" width="0.847cm" height="0.847cm"><alt id="alt_id3154835" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XORTHOY" id="bm_id3147089" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147098" xml-lang="en-US" l10n="U" oldref="58">orthogonal to</paragraph>
+<paragraph role="paragraph" id="par_id3148976" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="HID_SMA_XORTHOY">Inserts a character for an <emph>orthogonal</emph> (right angled) relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; ortho &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3148734">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10182" xml-lang="en-US" l10n="F">
+<image id="img_id3147321" src="starmath/res/bi21322.png" width="0.847cm" height="0.847cm"><alt id="alt_id3147321" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XDIVIDESY" id="bm_id3153514" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153523" xml-lang="en-US" l10n="U" oldref="80">divides</paragraph>
+<paragraph role="paragraph" id="par_id3147079" xml-lang="en-US" l10n="U" oldref="79"><ahelp hid="HID_SMA_XDIVIDESY">Inserts the <emph>divides</emph> character.</ahelp> You can also type <emph>&lt;?&gt; divides &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3153355">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101BF" xml-lang="en-US" l10n="F">
+<image id="img_id3151030" src="starmath/res/bi21323.png" width="0.847cm" height="0.847cm"><alt id="alt_id3151030" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XNDIVIDESY" id="bm_id3156273" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="82">does not divide</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="81"><ahelp hid="HID_SMA_XNDIVIDESY">This icon inserts the <emph>does not divide</emph> character.</ahelp> You can also type <emph>&lt;?&gt;ndivides&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147318">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101FC" xml-lang="en-US" l10n="F">
+<image id="img_id3155133" src="starmath/res/bi21305.png" width="0.847cm" height="0.847cm"><alt id="alt_id3155133" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XLTY" id="bm_id3151381" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3148877" xml-lang="en-US" l10n="U" oldref="27">less than</paragraph>
+<paragraph role="paragraph" id="par_id3148889" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="HID_SMA_XLTY">Inserts the <emph>less than</emph> relation.</ahelp> You can also type <emph>&lt;?&gt;lt&lt;?&gt;</emph> or &lt;?&gt; &lt; &lt;?&gt; in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150112">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1023B" xml-lang="en-US" l10n="F">
+<image id="img_id3147468" src="starmath/res/bi21306.png" width="0.847cm" height="0.847cm"><alt id="alt_id3147468" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XGTY" id="bm_id3147475" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147495" xml-lang="en-US" l10n="U" oldref="25">greater than</paragraph>
+<paragraph role="paragraph" id="par_id3146904" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_SMA_XGTY">Inserts the <emph>greater than </emph>relation.</ahelp> You can also type <emph>&lt;?&gt; gt &lt;?&gt;</emph> or &lt;?&gt; &gt; &lt;?&gt; in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3149555">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10279" xml-lang="en-US" l10n="F">
+<image id="img_id3155982" src="starmath/res/bi21307.png" width="0.847cm" height="0.847cm"><alt id="alt_id3155982" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XAPPROXY" id="bm_id3153505" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149218" xml-lang="en-US" l10n="U" oldref="60">approximately equal to</paragraph>
+<paragraph role="paragraph" id="par_id3149231" xml-lang="en-US" l10n="U" oldref="59"><ahelp hid="HID_SMA_XAPPROXY">Inserts the <emph>approximately equal</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; approx &lt;?&gt; </emph>in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3146338">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN102B5" xml-lang="en-US" l10n="F">
+<image id="img_id3155773" src="starmath/res/bi21308.png" width="0.566cm" height="0.566cm"><alt id="alt_id3155773" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XPARALLELY" id="bm_id3155780" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147598" xml-lang="en-US" l10n="U" oldref="62">parallel to</paragraph>
+<paragraph role="paragraph" id="par_id3147449" xml-lang="en-US" l10n="U" oldref="61"><ahelp hid="HID_SMA_XPARALLELY">Inserts a <emph>parallel </emph>relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;parallel&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3155576">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN102F3" xml-lang="en-US" l10n="F">
+<image id="img_id3148442" src="starmath/res/bi21309.png" width="0.847cm" height="0.847cm"><alt id="alt_id3148442" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XLESLANTY" id="bm_id3151080" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151089" xml-lang="en-US" l10n="U" oldref="64">less than or equal to (slanted)</paragraph>
+<paragraph role="paragraph" id="par_id3154078" xml-lang="en-US" l10n="U" oldref="63"><ahelp hid="HID_SMA_XLESLANTY">Inserts a <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; leslant &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3153806">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10331" xml-lang="en-US" l10n="F">
+<image id="img_id3153299" src="starmath/res/bi21310.png" width="0.847cm" height="0.847cm"><alt id="alt_id3153299" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XGESLANTY" id="bm_id3150162" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150171" xml-lang="en-US" l10n="U" oldref="66">greater than or equal to (slanted)</paragraph>
+<paragraph role="paragraph" id="par_id3156098" xml-lang="en-US" l10n="U" oldref="65"><ahelp hid="HID_SMA_XGESLANTY">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;geslant&lt;?&gt; </emph>in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150466">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1036F" xml-lang="en-US" l10n="F">
+<image id="img_id3153976" src="starmath/res/bi21311.png" width="0.847cm" height="0.847cm"><alt id="alt_id3153976" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XSIMEQY" id="bm_id3145327" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3145336" xml-lang="en-US" l10n="U" oldref="68">similar or equal to</paragraph>
+<paragraph role="paragraph" id="par_id3155580" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid="HID_SMA_XSIMEQY">Inserts the <emph>similar or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;simeq&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150920">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN103AD" xml-lang="en-US" l10n="F">
+<image id="img_id3151195" src="starmath/res/bi21312.png" width="0.847cm" height="0.847cm"><alt id="alt_id3151195" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XPROPY" id="bm_id3149250" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155076" xml-lang="en-US" l10n="U" oldref="70">proportional to</paragraph>
+<paragraph role="paragraph" id="par_id3155088" xml-lang="en-US" l10n="U" oldref="69"><ahelp hid="HID_SMA_XPROPY">Inserts the <emph>proportional to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; prop &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3146946">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN103EB" xml-lang="en-US" l10n="F">
+<image id="img_id3150103" src="starmath/res/bi21313.png" width="0.847cm" height="0.847cm"><alt id="alt_id3150103" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XLEY" id="bm_id3149997" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150006" xml-lang="en-US" l10n="U" oldref="31">less than or equal to</paragraph>
+<paragraph role="paragraph" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_SMA_XLEY">Inserts the <emph>less than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; le &lt;?&gt;</emph> or <emph>&lt;?&gt; &lt;= &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147234">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1042C" xml-lang="en-US" l10n="F">
+<image id="img_id3151228" src="starmath/res/bi21314.png" width="0.847cm" height="0.847cm"><alt id="alt_id3151228" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XGEY" id="bm_id3153122" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153131" xml-lang="en-US" l10n="U" oldref="29">greater than or equal to</paragraph>
+<paragraph role="paragraph" id="par_id3155379" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_SMA_XGEY">Inserts the <emph>greater than or equal to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; ge &lt;?&gt;</emph> or <emph>&lt;?&gt; &gt;= &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3156090">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1046D" xml-lang="en-US" l10n="F">
+<image id="img_id3151003" src="starmath/res/bi21315.png" width="0.847cm" height="0.847cm"><alt id="alt_id3151003" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XSIMY" id="bm_id3154365" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155935" xml-lang="en-US" l10n="U" oldref="72">similar to</paragraph>
+<paragraph role="paragraph" id="par_id3155947" xml-lang="en-US" l10n="U" oldref="71"><ahelp hid="HID_SMA_XSIMY">This icon inserts the <emph>similar to</emph> relation with two placeholders.</ahelp> You can also type <emph>&lt;?&gt;sim&lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147398">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN104AB" xml-lang="en-US" l10n="F">
+<image id="img_id3149631" src="starmath/res/bi21316.png" width="0.847cm" height="0.847cm"><alt id="alt_id3149631" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_XTOWARDY" id="bm_id3146086" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150659" xml-lang="en-US" l10n="U" oldref="73">toward</paragraph>
+<paragraph role="paragraph" id="par_id3150670" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="HID_SMA_XTOWARDY">Inserts a <emph>toward</emph> relation symbol with two placeholders.</ahelp> You can also type <emph>&lt;?&gt; toward &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3154675">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN104E7" xml-lang="en-US" l10n="F">
+<image id="img_id3149969" src="starmath/res/bi21324.png" width="0.847cm" height="0.847cm"><alt id="alt_id3149969" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DLARROW" id="bm_id3147270" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147279" xml-lang="en-US" l10n="U" oldref="84">double arrow pointing left</paragraph>
+<paragraph role="paragraph" id="par_id3149599" xml-lang="en-US" l10n="U" oldref="83"><ahelp hid="HID_SMA_DLARROW">Inserts the logical relation <emph>arrow with double bar pointing left</emph>.</ahelp> You can also type <emph>dlarrow</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3145651">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10525" xml-lang="en-US" l10n="F">
+<image id="img_id3149516" src="starmath/res/bi21325.png" width="0.847cm" height="0.847cm"><alt id="alt_id3149516" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DLRARROW" id="bm_id3149204" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3148707" xml-lang="en-US" l10n="U" oldref="86">double arrow pointing left and right</paragraph>
+<paragraph role="paragraph" id="par_id3148721" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="HID_SMA_DLRARROW">Inserts the logical relation <emph>arrow with double bar pointing left and right</emph> with two operators.</ahelp> You can also type <emph>dlrarrow</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3155359">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10563" xml-lang="en-US" l10n="F">
+<image id="img_id3148697" src="starmath/res/bi21326.png" width="0.847cm" height="0.847cm"><alt id="alt_id3148697" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_DRARROW" id="bm_id3150844" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150853" xml-lang="en-US" l10n="U" oldref="88">double arrow pointing right</paragraph>
+<paragraph role="paragraph" id="par_id3150866" xml-lang="en-US" l10n="U" oldref="87"><ahelp hid="HID_SMA_DRARROW">Inserts the logical operator <emph>arrow with double bar pointing right</emph> with two placeholders.</ahelp> You can also type <emph>drarrow</emph> in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3153545" xml-lang="en-US" l10n="U" oldref="74">To create the <emph>much greater than</emph> relation with two placeholders, type <emph>&lt;?&gt; gg &lt;?&gt; </emph>or <emph>&gt;&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+<paragraph role="paragraph" id="par_id3156000" xml-lang="en-US" l10n="U" oldref="75">Type <emph>ll</emph> or <emph>&lt;&lt;</emph> in the <emph>Commands</emph> window to insert the <emph>much less than</emph> relation into the formula.</paragraph>
+<paragraph role="paragraph" id="par_id3153749" xml-lang="en-US" l10n="U" oldref="76">The <emph>is defined as</emph> relation with two placeholders is inserted by typing <emph>&lt;?&gt;def&lt;?&gt;</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3154068" xml-lang="en-US" l10n="U" oldref="77">Insert the <emph>picture by</emph> correspondence character with two placeholders by typing <emph>&lt;?&gt; transl &lt;?&gt;</emph> in the <emph>Commands</emph> window.</paragraph>
+<paragraph role="paragraph" id="par_id3149592" xml-lang="en-US" l10n="U" oldref="78">The <emph>&lt;?&gt;transr&lt;?&gt;</emph> command inserts the <emph>original by</emph> correspondence character with two placeholders.</paragraph>
+<paragraph role="warning" id="par_id3154735" xml-lang="en-US" l10n="U" oldref="52">When entering information manually in the <emph>Commands</emph> window, note that a number of operators require spaces for the correct structure. This is especially true if you are working with values instead of placeholders. For example, for the "is considerably greater" relation, type either <emph>10 gg 1</emph> or <emph>a gg b</emph>.</paragraph>
+</body>
+</helpdocument>

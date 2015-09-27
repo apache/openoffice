@@ -1,0 +1,51 @@
+###############################################################
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+###############################################################
+PRJ=$(ROOT)/..
+SETTINGS=$(OO_SDK_HOME)/settings
+include $(SETTINGS)/settings.mk
+include $(SETTINGS)/std.mk
+include $(SETTINGS)/dk.mk
+
+OUT_COMP_JAVA = $(OUT_CLASS)/$(patsubst .,/,$(PACKAGE))
+JAVAC=$(JAVA_HOME)/bin/javac
+JAVA=$(JAVA_HOME)/bin/java
+CLASS_FILES = $(patsubst %.java, %.class, $(JAVAFILES))
+CLASSPATH = $(subst $(EMPTYSTRING) $(PATH_SEPARATOR),$(PATH_SEPARATOR),$(OFFICE_CLASSES_DIR)/jurt.jar\
+		$(PATH_SEPARATOR)$(OFFICE_CLASSES_DIR)/unoil.jar\
+		$(PATH_SEPARATOR)$(OFFICE_CLASSES_DIR)/ridl.jar\
+		$(PATH_SEPARATOR)$(OFFICE_CLASSES_DIR)/juh.jar\
+		$(PATH_SEPARATOR)$(OUT_COMP_JAVA)\
+		$(PATH_SEPARATOR).\
+		$(PATH_SEPARATOR)$(ROOT)\
+		)
+
+subdirs:
+	$(foreach dir,$(SUBDIRS), cd $(dir);$(MAKE);cd ..;)
+
+clean:
+	-rm *.class *.jar
+	$(foreach dir,$(SUBDIRS), cd $(dir);$(MAKE) clean ; cd ..;)
+
+
+%.class : %.java
+	$(JAVAC) -classpath $(CLASSPATH) $<
+
+.PHONY: all package clean subdirs
