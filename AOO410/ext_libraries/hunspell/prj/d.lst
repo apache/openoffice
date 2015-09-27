@@ -1,6 +1,0 @@
-..\%__SRC%\lib\lib*.*           %_DEST%\lib%_EXT%\lib*.*
-..\%__SRC%\slb\lib*.*           %_DEST%\lib%_EXT%\lib*.*
-
-mkdir: %_DEST%\inc%_EXT%\hunspell
-..\%__SRC%\inc\*.hxx            %_DEST%\inc%_EXT%\hunspell\*.hxx
-..\%__SRC%\inc\hunvisapi.h      %_DEST%\inc%_EXT%\hunspell\hunvisapi.h
