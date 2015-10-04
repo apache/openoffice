@@ -21,10 +21,31 @@
 
 
 
-UDK_3_0_0 {
-    global:
-        registerAllTestFunction;
+$(eval $(call gb_GoogleTest_GoogleTest,comphelper_string))
 
-    local:
-        *;
-};
+$(eval $(call gb_GoogleTest_add_exception_objects,comphelper_string, \
+	comphelper/qa/test_string \
+))
+
+$(eval $(call gb_GoogleTest_add_linked_libs,comphelper_string, \
+    comphelper \
+    cppuhelper \
+    cppu \
+    sal \
+    stl \
+    $(gb_STDLIBS) \
+))
+
+$(eval $(call gb_GoogleTest_set_include,comphelper_string,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/formula/inc \
+	-I$(SRCDIR)/comphelper/inc/pch \
+	-I$(OUTDIR)/inc/offuh \
+	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_GoogleTest_set_ldflags,comphelper_string,\
+    $$(LDFLAGS) \
+))
+
+# vim: set noet sw=4 ts=4:
