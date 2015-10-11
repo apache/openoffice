@@ -639,9 +639,6 @@ AC_ARG_WITH(system-libtextcat,
 AC_ARG_WITH(external-libtextcat-data,
 [  --with-system-libtextcat-data Use libtextcat data already on system
 ],,)
-AC_ARG_WITH(system-cppunit,
-[  --with-system-cppunit         Use cppunit already on system
-],,)
 AC_ARG_WITH(system-redland,
 [  --with-system-redland   Use redland library already on system
 ],,)
@@ -3799,34 +3796,6 @@ fi
 AC_SUBST(SYSTEM_LIBWPD)
 AC_SUBST(LIBWPD_CFLAGS)
 AC_SUBST(LIBWPD_LIBS)
-
-dnl ===================================================================
-dnl Check for system cppunit
-dnl ===================================================================
-WITH_CPPUNIT=
-AC_MSG_CHECKING([which cppunit to use])
-if test -n "$with_system_cppunit" -o -n "$with_system_libs" && \
-        test "$with_system_cppunit" != "no"; then
-    SYSTEM_CPPUNIT=YES
-    # might work for earlier, too but go sure:
-    PKG_CHECK_MODULES( CPPUNIT, 
-                       cppunit >= 1.12.0,
-                       WITH_CPPUNIT="YES",
-                       WITH_CPPUNIT="")
-    if test -n "$WITH_CPPUNIT"; then
-       AC_MSG_RESULT([found system cppunit $CPPUNIT])
-    else
-       AC_MSG_WARN([dit not find system cppunit version 1.12.0 or later])
-    fi
-
-else
-    AC_MSG_WARN([not using cppunit])
-    SYSTEM_CPPUNIT=NO
-fi
-AC_SUBST(SYSTEM_CPPUNIT)
-AC_SUBST(CPPUNIT_CFLAGS)
-AC_SUBST(CPPUNIT_LIBS)
-AC_SUBST(WITH_CPPUNIT)
 
 dnl ===================================================================
 dnl Check whether freetype is available
