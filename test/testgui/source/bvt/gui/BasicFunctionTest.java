@@ -325,6 +325,7 @@ public class BasicFunctionTest {
 		assertEquals(
 				"Apache Awesome OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. Awesome OpenOffice is released on Windows, Solaris, Linux and Macintosh operation systems, with more communities joining, including a mature FreeBSD port. Awesome OpenOffice is localized, supporting over 110 languages worldwide. ",
 				copyAll());
+		discard();
 	}
 
 	@Test
