@@ -139,9 +139,19 @@
 	</target>
 	
 	<target name="test" depends="compile" description="start test">
+		<!-- Try the specified ${openoffice.home} first -->
 		<condition property="test.arg0" value="-Dopenoffice.home=${openoffice.home}">
 			<isset property="openoffice.home" />
 		</condition>
+
+		<!-- Next try the internal install path that the with-package-format=installed option to configure uses -->
+		<available type="dir" file="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice4/program"
+			property="internalInstalledDir" value="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/installed/install/en-US/openoffice4/program"/>
+		<condition property="test.arg0" value="-Dopenoffice.home=${internalInstalledDir}">
+			<isset property="internalInstalledDir" />
+		</condition>
+
+		<!-- Finally try the tar.gz and zip archives which build by default -->
 		<pathconvert property="openoffice.pack" setonempty="false">
 			<path>
 				<fileset dir="${env.SRC_ROOT}/instsetoo_native/${env.INPATH}/Apache_OpenOffice/archive/install/en-US" includes="*.tar.gz,*.zip"  erroronmissingdir="false"/>
@@ -150,6 +160,7 @@
 		<condition property="test.arg0" value="-Dopenoffice.pack=${openoffice.pack}">
 			<isset property="openoffice.pack" />
 		</condition>
+
 		<fail message="No OpenOffice available!" unless="test.arg0"/>
 		<condition property="test.executable" value="./run.bat">
 			<os family="windows" />
