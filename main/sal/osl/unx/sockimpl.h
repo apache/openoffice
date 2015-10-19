@@ -33,6 +33,12 @@ extern "C" {
 #endif
 
 typedef void* (*oslCloseCallback) (void*);
+
+#if defined(LINUX) || defined(FREEBSD) || defined(NETBSD)
+#define CLOSESOCKET_DOESNT_WAKE_UP_ACCEPT 1
+#else
+#define CLOSESOCKET_DOESNT_WAKE_UP_ACCEPT 0
+#endif
 	
 struct oslSocketImpl {
     int					m_Socket;
@@ -40,7 +46,7 @@ struct oslSocketImpl {
 	oslCloseCallback	m_CloseCallback;
 	void*				m_CallbackArg;
 	oslInterlockedCount m_nRefCount;
-#if defined(LINUX)
+#if CLOSESOCKET_DOESNT_WAKE_UP_ACCEPT
     sal_Bool            m_bIsAccepting;
     sal_Bool            m_bIsInShutdown;
 #endif
