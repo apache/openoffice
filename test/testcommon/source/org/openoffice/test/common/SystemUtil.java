@@ -96,6 +96,10 @@ public class SystemUtil {
 	public static boolean isMac() {
 		return platform.startsWith("Mac");
 	}
+	
+	public static boolean isBSD() {
+		return platform.endsWith("BSD");
+	}
 
 	public static String getOSName() {
 		return osName;
@@ -301,6 +305,8 @@ public class SystemUtil {
 					FileUtil.writeStringToFile(file.getAbsolutePath(), contents);
 //				}
 				exec(new String[] { "cscript", "//Nologo", file.getAbsolutePath()}, null, null, output, output);
+			} else if (isBSD()) {
+				exec(new String[] {"ps", "-wweo", "pid,command"}, null, null, output, output);
 			} else {
 				exec(new String[] {"ps", "-eo", "pid,command"}, null, null, output, output);
 			}
