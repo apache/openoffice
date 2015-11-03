@@ -327,6 +327,36 @@ public class BasicFunctionTest {
 				copyAll());
 		discard();
 	}
+	
+	@Test
+	public void testFindFormulasAndValues() {
+	    open(prepareData("bvt/searchFormulasValues.ods"));
+	    calc.waitForExistence(10, 2);
+	    
+	    // Searching for 2003 by formula finds A2
+	    SCTool.selectRange("A1");
+	    app.dispatch(".uno:SearchDialog");
+        findDlgFor.setText("2003");
+        findDlgMore.click();
+        findDlgCalcSearchIn.select("Formulas");
+        findDlgFind.click();
+        sleep(1);
+	    assertEquals("wrong cell found for formulas search", "A2", scInputBarPosition.getText());
+	    findDlg.close();
+	    
+	    // Searching for October by value finds A2
+	    SCTool.selectRange("A1");
+	    app.dispatch(".uno:SearchDialog");
+	    findDlgFor.setText("October");
+	    findDlgMore.click();
+	    findDlgCalcSearchIn.select("Values");
+	    findDlgFind.click();
+	    sleep(1);
+	    assertEquals("wrong cell found for values search", "A2", scInputBarPosition.getText());
+	    findDlg.close();
+	    
+	    discard();
+	}
 
 	@Test
 	public void testFillInSpreadsheet() {

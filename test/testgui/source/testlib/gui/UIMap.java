@@ -181,6 +181,7 @@ public class UIMap {
 	public static final VclButton findDlgMatchCase = button("svx:CheckBox:RID_SVXDLG_SEARCH:CB_MATCH_CASE");
 	public static final VclButton findDlgWholeWord = button("svx:CheckBox:RID_SVXDLG_SEARCH:CB_WHOLE_WORDS");
 	public static final VclButton findDlgMore = button("svx:MoreButton:RID_SVXDLG_SEARCH:BTN_MORE");
+	public static final VclListBox findDlgCalcSearchIn = listbox("svx:ListBox:RID_SVXDLG_SEARCH:LB_CALC_SEARCHIN");
 	public static final VclWindow chart = window("CHART2_HID_SCH_WIN_DOCUMENT");
 	public static final VclDialog chartWizard = dialog("CHART2_HID_SCH_CHART_AUTO_FORMAT");
 	public static final VclDialog filePrintDlg = dialog(".HelpID:vcl:PrintDialog:Dialog");
