@@ -631,6 +631,8 @@ GraphicBulletsTypeMgr::GraphicBulletsTypeMgr(const GraphicBulletsTypeMgr& aTypeM
 			pEntry->sDescription = pSrcEntry->sDescription;
 			aGrfDataLst.Insert( pEntry, LIST_APPEND );
 		}
+		else
+			delete pEntry;
 	}
 }
 void GraphicBulletsTypeMgr::Init()
