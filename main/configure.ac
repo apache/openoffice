@@ -1011,9 +1011,9 @@ AC_SUBST(_solenv)
 
 if test -e $_solenv/inc/minor.mk; then
    # Get UPD number from ./solenv/inc/minor.mk
-   UPD="`grep RSCVERSION= $_solenv/inc/minor.mk | $AWK -F"=" '{ print $2 }'`"
+   UPD="`$GREP RSCVERSION= $_solenv/inc/minor.mk | $AWK -F"=" '{ print $2 }'`"
    AC_SUBST(UPD)
-   SOURCEVERSION="`grep SOURCEVERSION= $_solenv/inc/minor.mk | $AWK -F"=" '{ print $2 }'`"
+   SOURCEVERSION="`$GREP SOURCEVERSION= $_solenv/inc/minor.mk | $AWK -F"=" '{ print $2 }'`"
    AC_SUBST(SOURCEVERSION)
 else
    AC_MSG_ERROR([$_solenv/inc/minor.mk missing but needed for architecture/os detecion and proper environment script generation...])
@@ -1051,7 +1051,7 @@ if test "$build" != "$host" -o "$build" != "$target" \
 	echo "cross-compiling by any means is not supported (yet)!" >> warn
 fi
 
-if echo "$build_os" | grep cygwin; then
+if echo "$build_os" | $GREP cygwin; then
    AC_MSG_CHECKING([Cygwin version])
    CygwinVer=`uname -r`
    AC_MSG_RESULT([$CygwinVer])
@@ -1690,7 +1690,7 @@ fi
 
 if test "$_os" = "FreeBSD"; then
     FBSD_GCC_RPATH=
-    if $CC --version 2>&1 | grep clang > /dev/null ; then
+    if $CC --version 2>&1 | $GREP clang > /dev/null ; then
         COM_IS=CLANG
     else
         COM_IS=GCC
@@ -1740,7 +1740,7 @@ if test \( "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes" \) -a "$GCC" = "yes"; th
    fi
    if test "$_os" = "SunOS"; then
       AC_MSG_CHECKING([gcc linker])
-      if $CC -Wl,--version 2>&1 |head -n 1| grep -v GNU > /dev/null;then
+      if $CC -Wl,--version 2>&1 |head -n 1| $GREP -v GNU > /dev/null;then
           AC_MSG_ERROR([failed (not GNU ld). Use GNU ld instead of Sun ld on Solaris])
       fi
       AC_MSG_RESULT([ok (GNU ld)])
@@ -1794,7 +1794,7 @@ dnl Search all the common names for GNU make
 dnl ===================================================================
 AC_MSG_CHECKING([for GNU make])
 for a in "$MAKE" $GNUMAKE make gmake gnumake; do
-      $a --version 2> /dev/null | grep GNU  2>&1 > /dev/null
+      $a --version 2> /dev/null | $GREP GNU  2>&1 > /dev/null
       if test $? -eq 0;  then
            GNUMAKE=$a
            break
@@ -1806,7 +1806,7 @@ if test -z "$GNUMAKE"; then
 fi
 
 AC_MSG_CHECKING([the GNU make version])
-_make_version=`$GNUMAKE --version | grep GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
+_make_version=`$GNUMAKE --version | $GREP GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
 _make_longver=`echo $_make_version | $AWK -F. '{ print \$1*10000+\$2*100+\$3 }'`
 if test "$_make_longver" -ge "038100" ; then
    AC_MSG_RESULT([$GNUMAKE $_make_version])
@@ -1860,7 +1860,7 @@ else
     # different
     # This test _should_ work because the one accepts -V (ours) and one
     # (the other) not...
-    $DMAKE -V 2>/dev/null | grep -E 'dmake(.exe)? .* Version .*' >/dev/null
+    $DMAKE -V 2>/dev/null | $GREP -E 'dmake(.exe)? .* Version .*' >/dev/null
     if test $? -eq 0; then 
        BUILD_DMAKE=NO
        AC_MSG_RESULT([yes])
@@ -1893,7 +1893,7 @@ dnl Search all the common names for GNU or BSD tar
 dnl ===================================================================
 AC_MSG_CHECKING([for GNU or compatible BSD tar])
 for a in $GNUTAR gtar gnutar bsdtar tar; do
-      $a --version 2> /dev/null | egrep "GNU|libarchive"  2>&1 > /dev/null
+      $a --version 2> /dev/null | $EGREP "GNU|libarchive"  2>&1 > /dev/null
       if test $? -eq 0;  then
            GNUTAR=$a
            break
@@ -1915,7 +1915,7 @@ if test "$_os" = "SunOS"; then
       COMPATH=`echo $_cc | $SED -n "s/\/bin\/cc//p"`
       AC_MSG_CHECKING([the SunStudio C/C++ compiler version])
       dnl cc -V outputs to standard error!!!!
-      _sunstudio_string=`$CC -V 2>&1 | grep '^cc' | sed -e 's/.* C //'`
+      _sunstudio_string=`$CC -V 2>&1 | $GREP '^cc' | sed -e 's/.* C //'`
       _sunstudio_version=`echo $_sunstudio_string | $AWK '{ print $1 }'`
       _sunstudio_major=`echo $_sunstudio_version | $AWK -F. '{ print $1 }'` 
       if test "$_sunstudio_major" != "5"; then
@@ -2126,7 +2126,7 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 		AC_MSG_CHECKING([the Mingwin32 C++ Compiler])
 		if test `$CC -dumpmachine | $SED -e 's/^.*-//'` = "mingw32"; then
 			AC_MSG_RESULT([found.])
-			if $CC -dumpspecs | grep -q "mno-cygwin"; then
+			if $CC -dumpspecs | $GREP -q "mno-cygwin"; then
 				USE_MINGW="cygwin"
 			else
 				USE_MINGW="pure-mingw"
@@ -2430,14 +2430,14 @@ if test "$GXX" = "yes"; then
          with_gxx_include_path=`cygpath -d "$with_gxx_include_path"`
          with_gxx_include_path=`cygpath -u "$with_gxx_include_path"`
       fi
-      if echo $with_gxx_include_path | grep -q linux; then
+      if echo $with_gxx_include_path | $GREP -q linux; then
          # workaround for Mandriva - issue 100049
          with_gxx_include_path=`cd $with_gxx_include_path && pwd`
       fi
    fi
 fi
 dnl This is the original code...
-dnl with_gxx_include_path=`$CXX -print-search-dirs | grep instal |$AWK '{ print \$2 }'`/include 
+dnl with_gxx_include_path=`$CXX -print-search-dirs | $GREP instal |$AWK '{ print \$2 }'`/include 
 if test -z "$with_gxx_include_path"; then
    with_gxx_include_path="NO_GXX_INCLUDE"
    AC_MSG_RESULT([no g++ includes])
@@ -2872,7 +2872,7 @@ if test "$with_alloc" = "system"; then
 fi
 if test "$with_alloc" = "tcmalloc"; then
     AC_MSG_RESULT(tcmalloc)
-    if ! echo $build_cpu | grep -E 'i[[3456]]86' 2>/dev/null >/dev/null; then
+    if ! echo $build_cpu | $GREP -E 'i[[3456]]86' 2>/dev/null >/dev/null; then
         AC_MSG_ERROR([tcmalloc only available/usable on ix86])
     fi
     AC_CHECK_LIB(tcmalloc, malloc, [],
@@ -2963,7 +2963,7 @@ if test "$SOLAR_JAVA" != ""; then
       fi
    fi
    if test "$_os" = "WINNT"; then
-      if test x`echo "$JAVAINTERPRETER" | grep -i '\.exe$'` = x; then
+      if test x`echo "$JAVAINTERPRETER" | $GREP -i '\.exe$'` = x; then
           JAVAINTERPRETER="${JAVAINTERPRETER}.exe"
       fi
       JAVAINTERPRETER=`cygpath -d "$JAVAINTERPRETER"`
@@ -2981,7 +2981,7 @@ if test "$SOLAR_JAVA" != ""; then
    AC_MSG_CHECKING([the installed JDK])
    if test -n "$JAVAINTERPRETER"; then
       dnl java -version sends output to stderr!
-      if test `$JAVAINTERPRETER -version 2>&1 | grep -c "Kaffe"` -gt 0; then
+      if test `$JAVAINTERPRETER -version 2>&1 | $GREP -c "Kaffe"` -gt 0; then
          AC_MSG_ERROR([No valid check available. Please check the block for your desired java in configure.in])
 #        dnl Kaffe specific tests
 #        KAFFE_VER=`$JAVAINTERPRETER -version 2>&1 | $EGREP "  Version:" | $SED -r "s/.*  Version: ([[0-9\.]]*).*/\1/"`
@@ -3000,13 +3000,13 @@ if test "$SOLAR_JAVA" != ""; then
 #        AC_MSG_WARN([EXPERIMENTAL: Kaffe is not a full JDK replacement - some projects will fail to compile])
 #        echo "EXPERIMENTAL: Kaffe is not a full JDK replacement - some projects will fail to compile" >>warn
 #        JAVA_HOME=`echo $JAVAINTERPRETER | $SED -n "s,//*bin//*java,,p"`
-      elif test `$JAVAINTERPRETER --version 2>&1 | grep -c "GNU libgcj"` -gt 0; then
+      elif test `$JAVAINTERPRETER --version 2>&1 | $GREP -c "GNU libgcj"` -gt 0; then
         JDK=gcj
         AC_MSG_RESULT([checked (gcj)]) 
-        _gij_version=`$JAVAINTERPRETER --version | grep GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
+        _gij_version=`$JAVAINTERPRETER --version | $GREP GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
         _gij_longver=`echo $_gij_version | $AWK -F. '{ print \$1*10000+\$2*100+\$3 }'`
 
-      elif test `$JAVAINTERPRETER -version 2>&1 | awk '{ print }' | grep -c "BEA"` -gt 0; then
+      elif test `$JAVAINTERPRETER -version 2>&1 | awk '{ print }' | $GREP -c "BEA"` -gt 0; then
          AC_MSG_ERROR([No valid check available. Please check the block for your desired java in configure.in])
 #        JDK=bea
 #
@@ -3030,7 +3030,7 @@ if test "$SOLAR_JAVA" != ""; then
 #
 #        JAVA_HOME=$with_jdk_home
 #
-      elif test `$JAVAINTERPRETER -version 2>&1 | awk '{ print }' | grep -c "IBM"` -gt 0; then
+      elif test `$JAVAINTERPRETER -version 2>&1 | awk '{ print }' | $GREP -c "IBM"` -gt 0; then
         JDK=ibm
 
         dnl IBM JDK specific tests
@@ -3087,7 +3087,7 @@ if test "$SOLAR_JAVA" != ""; then
         javacompiler="javac"
     fi
     if test "$_os" = "OS2"; then
-      if test x`echo "$javacompiler" | grep -i '\.exe$'` = x; then
+      if test x`echo "$javacompiler" | $GREP -i '\.exe$'` = x; then
           javacompiler="${javacompiler}.exe"
       fi
     fi
@@ -3104,19 +3104,19 @@ if test "$SOLAR_JAVA" != ""; then
       AC_MSG_ERROR([$javacompiler not found, please use --with-jdk-home])
     fi
     if test "$_os" = "WINNT"; then
-       if test x`echo "$JAVACOMPILER" | grep -i '\.exe$'` = x; then
+       if test x`echo "$JAVACOMPILER" | $GREP -i '\.exe$'` = x; then
           JAVACOMPILER="${JAVACOMPILER}.exe"
        fi
        JAVACOMPILER=`cygpath -d "$JAVACOMPILER"`
        JAVACOMPILER=`cygpath -u "$JAVACOMPILER"`
     fi
     if test "$_os" = "OS2"; then
-       if test x`echo "$JAVACOMPILER" | grep -i '\.exe$'` = x; then
+       if test x`echo "$JAVACOMPILER" | $GREP -i '\.exe$'` = x; then
           JAVACOMPILER="${JAVACOMPILER}.exe"
        fi
     fi
 
-    if test `$JAVACOMPILER -version 2>&1 | grep -c "Eclipse Java Compiler"` -gt 0; then
+    if test `$JAVACOMPILER -version 2>&1 | $GREP -c "Eclipse Java Compiler"` -gt 0; then
         AC_MSG_CHECKING([re-checking JDK])
         JDK=gcj
         AC_MSG_RESULT([checked (ecj)])
@@ -3131,7 +3131,7 @@ dnl ===================================================================
 dnl Checks that javac is gcj
 dnl ===================================================================
 if test "$SOLAR_JAVA" != ""; then
-    if test `$JAVACOMPILER --version 2>&1 | grep -c "GCC"` -gt 0; then
+    if test `$JAVACOMPILER --version 2>&1 | $GREP -c "GCC"` -gt 0; then
         JAVACISGCJ="yes"
     fi
 fi
@@ -3146,7 +3146,7 @@ if test "$SOLAR_JAVA" != ""; then
     else
         _javadoc_path="$with_jdk_home/bin/javadoc"
         if test "$_os" = "OS2"; then
-          if test x`echo "$_javadoc_path" | grep -i '\.exe$'` = x; then
+          if test x`echo "$_javadoc_path" | $GREP -i '\.exe$'` = x; then
               _javadoc_path="${_javadoc_path}.exe"
           fi
         fi
@@ -3161,14 +3161,14 @@ if test "$SOLAR_JAVA" != ""; then
       AC_MSG_ERROR([$_javadoc_path not found, please use --with-jdk-home])
     fi
     if test "$_os" = "WINNT"; then
-        if test x`echo "$JAVADOC" | grep -i '\.exe$'` = x; then
+        if test x`echo "$JAVADOC" | $GREP -i '\.exe$'` = x; then
             JAVADOC="${JAVADOC}.exe"
         fi
         JAVADOC=`cygpath -d "$JAVADOC"`
         JAVADOC=`cygpath -u "$JAVADOC"`
     fi
     if test "$_os" = "OS2"; then
-        if test x`echo "$JAVADOC" | grep -i '\.exe$'` = x; then
+        if test x`echo "$JAVADOC" | $GREP -i '\.exe$'` = x; then
             JAVADOC="${JAVADOC}.exe"
         fi
     fi
@@ -3326,7 +3326,7 @@ if test "$SOLAR_JAVA" != ""; then
   AC_MSG_CHECKING([whether to enable gcj aot compilation])
   if test -n "$enable_gcjaot" && test "$enable_gcjaot" != "no"; then
      AC_MSG_RESULT([yes])
-     if test `echo $WITH_JAVA | grep -c "gij"` -eq 0; then
+     if test `echo $WITH_JAVA | $GREP -c "gij"` -eq 0; then
         gcjaot="gcj"
      else
         gcjaot=`echo $WITH_JAVA | $SED -e "s/gij/gcj/g"`
@@ -3395,20 +3395,20 @@ if test "$enable_epm" = "yes"; then
 	 else
 	    # Gentoo has some epm which is something different...
             AC_MSG_CHECKING([whether the found epm is the right epm])
-            if $EPM | grep "ESP Package Manager" >/dev/null 2>/dev/null; then
+            if $EPM | $GREP "ESP Package Manager" >/dev/null 2>/dev/null; then
                AC_MSG_RESULT([yes])
             else
 	       AC_MSG_ERROR([no. Install ESP Package Manager (http://www.msweet.org/projects.php?Z2) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
             fi
             AC_MSG_CHECKING([epm version])
-            EPM_VERSION=`$EPM | grep 'ESP Package Manager' | cut -d' ' -f4 | $SED -e s/v//`
+            EPM_VERSION=`$EPM | $GREP 'ESP Package Manager' | cut -d' ' -f4 | $SED -e s/v//`
 	    if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "3" || \
 	       	    test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "3" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "7"; then
                AC_MSG_RESULT([OK, >= 3.7])
                BUILD_EPM=NO
 	       if test "$_os" = "Darwin"; then
                   AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
-        	  _pm=`strings $EPM | grep PackageMaker | cut -d" " -f1`
+        	  _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
         	  if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
           	     AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
         	  elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
@@ -3540,11 +3540,11 @@ msi - Windows .msi
       	if test "$EPM" != "no" && test "$EPM" != "internal"; then
            if test "`echo $EPM_VERSION | cut -d'.' -f1`" -lt "4"; then
                AC_MSG_CHECKING([whether epm is patched for OOos needs])
-               if grep "Patched for Apache OpenOffice" $EPM >/dev/null 2>/dev/null; then
+               if $GREP "Patched for Apache OpenOffice" $EPM >/dev/null 2>/dev/null; then
                   AC_MSG_RESULT([yes])
                else
                   AC_MSG_RESULT([no])
-                  if echo "$PKGFORMAT" | grep -q rpm; then
+                  if echo "$PKGFORMAT" | $GREP -q rpm; then
                       _pt="rpm"
                       AC_MSG_WARN([the rpms will need to be installed with --nodeps])
                       echo "the rpms will need to be installed with --nodeps" >> warn
@@ -3660,7 +3660,7 @@ if test "z$enable_odk" = "z" -o "$enable_odk" != "no"; then
          AC_MSG_ERROR(specified MinGW32 C++ cross-compiler not found. Install it or correct name.)
       fi
       AC_MSG_CHECKING(whether we are using the MinGW32 cross C++ compiler)
-      if ! echo "`$MINGWCXX -dumpmachine`" | grep -q mingw32; then
+      if ! echo "`$MINGWCXX -dumpmachine`" | $GREP -q mingw32; then
          AC_MSG_ERROR(no)
       else
          AC_MSG_RESULT(yes)
@@ -3918,7 +3918,7 @@ if test  "$_os" = "Darwin"; then
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
-      sdk_found=`xcodebuild -showsdks | egrep "sdk macosx10.(7|8|9|10|11)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|9|10|11)" | sed -e "s/.*sdk //" | tail -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
@@ -5305,13 +5305,13 @@ are installed or use --with-psdk-home .])
     fi
     AC_MSG_RESULT([SDK files found ...)])
 dnl Check if this is the right SDK.
-    if echo $PSDK_HOME | grep "v6.1" >/dev/null 2>/dev/null; then
+    if echo $PSDK_HOME | $GREP "v6.1" >/dev/null 2>/dev/null; then
         AC_MSG_RESULT([Found Windows SDK 6.1 ($PSDK_HOME)])
         WINDOWS_VISTA_PSDK=TRUE
-    elif echo $PSDK_HOME | grep "v6.0" >/dev/null 2>/dev/null; then
+    elif echo $PSDK_HOME | $GREP "v6.0" >/dev/null 2>/dev/null; then
         AC_MSG_RESULT([Found Windows SDK 6.0 ($PSDK_HOME)])
         WINDOWS_VISTA_PSDK=TRUE
-    elif echo $PSDK_HOME | grep "v7.0" >/dev/null 2>/dev/null; then
+    elif echo $PSDK_HOME | $GREP "v7.0" >/dev/null 2>/dev/null; then
         AC_MSG_RESULT([Found Windows SDK 7.0 ($PSDK_HOME)])
         WINDOWS_VISTA_PSDK=TRUE
     else
@@ -5538,7 +5538,7 @@ if test -z "$BISON"; then
    AC_MSG_ERROR([no bison found in \$PATH, install bison])
 else
    AC_MSG_CHECKING([the bison version])
-   _bison_version=`$BISON --version | grep GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
+   _bison_version=`$BISON --version | $GREP GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
     _bison_longver=`echo $_bison_version | $AWK -F. '{ print \$1*1000+\$2}'`
     # Accept newer than 1.875 or older(equal) than 1.75
     if test "$_bison_longver" -ge 1875 -o "$_bison_longver" -le 1075; then
@@ -5577,7 +5577,7 @@ if test "$_os" = "SunOS" -o "$_os" = "FreeBSD" -o "$_os" = "Darwin"; then
    fi
 
    AC_MSG_CHECKING([whether $GNUPATCH is GNU patch])
-   if $GNUPATCH --version | grep "Free Software Foundation" >/dev/null 2>/dev/null; then
+   if $GNUPATCH --version | $GREP "Free Software Foundation" >/dev/null 2>/dev/null; then
 	   AC_MSG_RESULT([yes])
    else
       AC_MSG_ERROR([no, GNU patch needed. install or specify with --with-gnu-patch=/path/to/it])
@@ -5605,7 +5605,7 @@ else
 fi
 
 AC_MSG_CHECKING([whether $GNUCP is GNU cp from coreutils with preserve= support])
-if $GNUCP --version 2>/dev/null | grep "coreutils" >/dev/null 2>/dev/null; then
+if $GNUCP --version 2>/dev/null | $GREP "coreutils" >/dev/null 2>/dev/null; then
    AC_MSG_RESULT([yes])
 else
    AC_MSG_RESULT([no])
@@ -5696,7 +5696,7 @@ dnl ===================================================================
 dnl Zip must be a specific type for different build types.
 dnl ===================================================================
 if test "$_os" = "WINNT"; then
-    if test -n "`$ZIP -h | grep -i WinNT`" ; then
+    if test -n "`$ZIP -h | $GREP -i WinNT`" ; then
 AC_MSG_ERROR([$ZIP found in the path is not the required cygwin version of Info-ZIPs zip.exe.])
     fi
 fi
@@ -6760,7 +6760,7 @@ elif test "$_os" = "Linux" -o "$_os" = "FreeBSD"; then
       XINERAMA_LINK=dynamic
    elif test -e "$XLIB/libXinerama.a"; then
       # static version
-      if echo $build_cpu | grep -E 'i[[3456]]86' 2>/dev/null >/dev/null; then
+      if echo $build_cpu | $GREP -E 'i[[3456]]86' 2>/dev/null >/dev/null; then
          USE_XINERAMA=YES
          XINERAMA_LINK=static
       else
@@ -7134,7 +7134,7 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no"; then
         OOO_JUNIT_JAR=`cygpath -m "$OOO_JUNIT_JAR"`
     fi
     "$JAVA_HOME/bin/jar" tf "$OOO_JUNIT_JAR" 2>&5 | \
-        grep org/junit/Before.class > /dev/null 2>&5
+        $GREP org/junit/Before.class > /dev/null 2>&5
     if test $? -eq 0; then
         AC_MSG_RESULT([$OOO_JUNIT_JAR])
     else
