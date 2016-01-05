@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedata_im_exportxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Importing and Exporting Data in Base </title>
+<filename>/text/shared/guide/data_im_export.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id6911546"><bookmark_value>databases;importing/exporting</bookmark_value>
+<bookmark_value>importing;databases</bookmark_value>
+<bookmark_value>copying; datasource records in spreadsheets</bookmark_value>
+<bookmark_value>inserting; datasource records in spreadsheets</bookmark_value>
+<bookmark_value>spreadsheets;inserting database records</bookmark_value>
+<bookmark_value>data sources;copying records to spreadsheets</bookmark_value>
+<bookmark_value>pasting;from data sources to %PRODUCTNAME Calc</bookmark_value>
+</bookmark><comment>MW reduced "databases;" entries into one entry and deleted "exporting;from.."</comment><paragraph role="heading" id="hd_id4547257" xml-lang="en-US" level="1" l10n="NEW"><variable id="data_im_export"><link href="text/shared/guide/data_im_export.xhp">Importing and Exporting Data in Base</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id2761314" xml-lang="en-US" l10n="NEW">An easy method to import and export database tables uses Calc as a "helper application".</paragraph>
+<paragraph role="heading" id="hd_id3912778" xml-lang="en-US" level="2" l10n="NEW">Exporting data from Base</paragraph>
+<paragraph role="paragraph" id="par_id3163853" xml-lang="en-US" l10n="NEW">You copy a table from Base to a new Calc sheet, then you can save or export the data to any file format that Calc supports.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id121158" xml-lang="en-US" l10n="NEW">Open the database file that contains the database table to be exported. Click Tables to view the tables, or click Queries to view the queries.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4644306" xml-lang="en-US" l10n="NEW">Choose <emph>File - New - Spreadsheet</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1331217" xml-lang="en-US" l10n="NEW">In the Base window, right-click the name of the table to export. Choose <emph>Copy</emph> from the context menu.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3806878" xml-lang="en-US" l10n="NEW">Click cell A1 in the new Calc window, then choose <emph>Edit - Paste</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id130619" xml-lang="en-US" l10n="NEW">Now you can save or export the data to many file types.</paragraph>
+<paragraph role="heading" id="hd_id9999694" xml-lang="en-US" level="2" l10n="NEW">Importing data to Base</paragraph>
+<paragraph role="note" id="par_id8494521" xml-lang="en-US" l10n="NEW">You can import text files, spreadsheet files, and your system address book in read-only mode only. </paragraph>
+<paragraph role="note" id="par_id9579760" xml-lang="en-US" l10n="NEW">When you import from a text or spreadsheet file, the file must have a first row of header information. The second row of the file is the first valid data row. The format of every field in the second row determines the format for the entire column. Any format information from a spreadsheet file gets lost when importing to Base.</paragraph>
+<paragraph role="note" id="par_id325632" xml-lang="en-US" l10n="NEW">For example, to ensure the first column has a text format, you must make sure that the first field of the first valid data row contains text. If a field in the first valid data row contains a number, the whole column is set to number format, and only numbers, no text, will be shown in that column. </paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id2216559" xml-lang="en-US" l10n="NEW">Open a Base file of the database type that you want. </paragraph>
+<paragraph role="paragraph" id="par_id7869502" xml-lang="en-US" l10n="NEW">Either create a new Base file using the <link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link>, or open any existing Base file that is not read-only.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id9852900" xml-lang="en-US" l10n="NEW">Open the Calc file that contains the data to be imported to Base. You can open a *.dbf dBASE file or many other file types. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3791924" xml-lang="en-US" l10n="NEW">Select the data to be copied to Base. </paragraph>
+<paragraph role="paragraph" id="par_id6173894" xml-lang="en-US" l10n="NEW">You can enter a range reference like A1:X500 in the Name Box if you don't want to scroll.</paragraph>
+<paragraph role="paragraph" id="par_id533768" xml-lang="en-US" l10n="NEW">If you copy a dBASE sheet, include the top row that contains the header data.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id5669423" xml-lang="en-US" l10n="NEW">Choose <emph>Edit - Copy</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3619495" xml-lang="en-US" l10n="NEW">In the Base window, click <emph>Tables</emph> to view the tables.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id1175572" xml-lang="en-US" l10n="NEW">In the Base window, choose <emph>Edit - Paste</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4815820" xml-lang="en-US" l10n="NEW">You see the Copy Table dialog. Most databases need a primary key, so you may want to check the <emph>Create primary key</emph> box.</paragraph>
+</listitem>
+</list>
+<paragraph role="tip" id="par_id2584002" xml-lang="en-US" l10n="NEW">On Windows systems, you can also use drag-and-drop instead of Copy and Paste. Also, for registered databases, you can open the datasource browser (press F4) instead of opening the Base window.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id5871761" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/explorer/database/main.xhp#base"/>
+</paragraph>
+<paragraph role="paragraph" id="par_id6531266" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/shared/guide/database_main.xhp#database_main"/>
+</paragraph><comment>ufi: removed switches for calc</comment><embed href="text/scalc/guide/dbase_files.xhp#dbase_files"/>
+<embed href="text/scalc/guide/csv_files.xhp#csv_files"/>
+</section>
+</body>
+</helpdocument>

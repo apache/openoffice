@@ -1,0 +1,236 @@
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+<!-- 
+Version 03-Feb-2006
+  added optional localize attribute to images
+-->
+
+<!ELEMENT ahelp (#PCDATA | embedvar | br | comment | emph | item | link | switchinline | variable)*>
+<!ATTLIST ahelp
+  hid CDATA #REQUIRED
+  visibility (hidden | visible) #IMPLIED
+>
+
+<!ELEMENT alt (#PCDATA)>
+<!ATTLIST alt
+  xml-lang CDATA #REQUIRED
+  id CDATA #REQUIRED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT body (section | paragraph | table | comment | bookmark | switch | embed | list | sort)*>
+
+<!ELEMENT bookmark (bookmark_value)*>
+<!ATTLIST bookmark
+  branch CDATA #REQUIRED
+  xml-lang CDATA #REQUIRED
+  id CDATA #REQUIRED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT bookmark_value (#PCDATA | embedvar)*>
+
+<!ELEMENT br EMPTY>
+
+<!ELEMENT caption (#PCDATA | embedvar | br | emph | item | link | switchinline | variable)*>
+<!ATTLIST caption
+  xml-lang CDATA #REQUIRED
+  id CDATA #REQUIRED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT case (paragraph | table | comment | bookmark | embed | link | list | switch | section | sort)*>
+<!ATTLIST case
+  select CDATA #REQUIRED
+>
+
+<!ELEMENT caseinline (#PCDATA | image | embedvar | br | emph | item | link | switchinline | variable | ahelp | object)*>
+<!ATTLIST caseinline
+  select CDATA #REQUIRED
+>
+
+<!ELEMENT comment (#PCDATA)>
+
+<!ELEMENT created (#PCDATA)>
+<!ATTLIST created
+  date CDATA #REQUIRED
+>
+
+<!ELEMENT default (paragraph | table | comment | bookmark | embed | link | list | switch | section | sort)*>
+
+<!ELEMENT defaultinline (#PCDATA | image | embedvar | br | emph | item | link | switchinline | variable | ahelp | object)*>
+
+<!ELEMENT embed EMPTY>
+<!ATTLIST embed
+  href CDATA #REQUIRED
+  role CDATA #IMPLIED
+  level CDATA #IMPLIED
+>
+
+<!ELEMENT embedvar EMPTY>
+<!ATTLIST embedvar
+  href CDATA #REQUIRED
+  markup (keep | ignore) #IMPLIED
+>
+
+<!ELEMENT emph (#PCDATA | item | comment | help-id-missing)*>
+
+<!ELEMENT filename (#PCDATA)>
+
+<!ELEMENT helpdocument (meta, body)>
+<!ATTLIST helpdocument
+  version CDATA #REQUIRED
+>
+
+<!ELEMENT history (created, lastedited)>
+
+<!ELEMENT image (caption* | alt+)?>
+<!ATTLIST image
+  src CDATA #REQUIRED
+  width CDATA #IMPLIED
+  height CDATA #IMPLIED
+  id CDATA #REQUIRED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+  type CDATA #REQUIRED
+>
+
+<!ELEMENT lastedited (#PCDATA)>
+<!ATTLIST lastedited
+  date CDATA #REQUIRED
+>
+
+<!ELEMENT link (#PCDATA | embedvar | emph | item | variable | switchinline)*>
+<!ATTLIST link
+  href CDATA #REQUIRED
+  name CDATA #IMPLIED
+  type CDATA #IMPLIED
+  target CDATA #IMPLIED
+>
+
+<!ELEMENT list (listitem | (comment)*)+>
+<!ATTLIST list
+  type CDATA #REQUIRED
+  startwith CDATA #IMPLIED
+  format (1 | i | I | a | A) #IMPLIED
+  bullet (disc | circle | square) #IMPLIED
+  sorted (asc | desc) #IMPLIED
+>
+
+<!ELEMENT listitem (comment | section | paragraph | table | switch | embed | bookmark)*>
+<!ATTLIST listitem
+  format (1 | i | I | a | A) #IMPLIED
+  bullet (disc | circle | square) #IMPLIED
+	class CDATA #IMPLIED
+>
+
+<!ELEMENT meta (topic, history?)>
+
+<!ELEMENT object EMPTY>
+<!ATTLIST object
+  type CDATA #REQUIRED
+  id CDATA #REQUIRED
+  data CDATA #REQUIRED
+  height CDATA #IMPLIED
+  width CDATA #IMPLIED
+>
+
+<!ELEMENT paragraph (#PCDATA | image | comment | embedvar | br | emph | item | link | switchinline | variable | ahelp | object | bookmark | help-id-missing)*>
+<!ATTLIST paragraph
+  role CDATA #REQUIRED
+  level CDATA #IMPLIED
+  id CDATA #REQUIRED
+  l10n CDATA #IMPLIED
+  xml-lang CDATA #REQUIRED
+  oldref CDATA #IMPLIED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT section (section | paragraph | table | list | comment | bookmark | embed | switch | sort )*>
+<!ATTLIST section
+  id CDATA #REQUIRED
+>
+
+<!ELEMENT sort (section+)>
+<!ATTLIST sort
+  order (asc | desc) #IMPLIED
+>
+
+<!ELEMENT switch ((case | comment)* | default?)*>
+<!ATTLIST switch
+  select (sys | appl | distrib | target | lang | ver) #REQUIRED
+>
+
+<!ELEMENT switchinline ((caseinline)+, (defaultinline?)?)>
+<!ATTLIST switchinline
+  select (sys | appl | distrib | target | ver | lang) #REQUIRED
+>
+
+<!ELEMENT table (caption*, tablerow+)>
+<!ATTLIST table
+  name CDATA #IMPLIED
+  width CDATA #IMPLIED
+  height CDATA #IMPLIED
+  unit CDATA #IMPLIED
+  class CDATA #IMPLIED
+  id CDATA #REQUIRED
+>
+
+<!ELEMENT tablecell (section | paragraph | comment | embed | bookmark | image | list)*>
+<!ATTLIST tablecell
+  colspan CDATA #IMPLIED
+  rowspan CDATA #IMPLIED
+  width CDATA #IMPLIED
+  class CDATA #IMPLIED
+  unit CDATA #IMPLIED
+>
+
+<!ELEMENT tablerow (tablecell+)>
+<!ATTLIST tablerow
+  height CDATA #IMPLIED
+  class CDATA #IMPLIED
+  unit CDATA #IMPLIED
+>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xml-lang CDATA #REQUIRED
+  id CDATA #REQUIRED
+  localize CDATA #IMPLIED
+>
+
+<!ELEMENT topic (title+, filename, bookmark*)>
+<!ATTLIST topic
+  id CDATA #REQUIRED
+  indexer (exclude | include) #IMPLIED
+	status (DRAFT | FINAL | PUBLISH | STALLED | DEPRECATED) #IMPLIED
+>
+
+<!ELEMENT variable (#PCDATA | ahelp | embedvar | br | emph | item | link | variable | image | object | switchinline)*>
+<!ATTLIST variable
+  id CDATA #REQUIRED
+  visibility (hidden | visible) #IMPLIED
+>
+
+<!ELEMENT help-id-missing EMPTY>

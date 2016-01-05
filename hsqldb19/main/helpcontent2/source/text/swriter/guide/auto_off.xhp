@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textswriterguideauto_offxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Turning Off AutoCorrect </title>
+         <filename>/text/swriter/guide/auto_off.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154250"><bookmark_value>turning off automatic correction</bookmark_value>
+      <bookmark_value>text;turning off automatic correction</bookmark_value>
+      <bookmark_value>uppercase;changing to lowercase</bookmark_value>
+      <bookmark_value>capital letters;changing to small letters after periods</bookmark_value>
+      <bookmark_value>quotation marks;changing automatically</bookmark_value>
+      <bookmark_value>words;automatic replacement on/off</bookmark_value>
+      <bookmark_value>lines;automatic drawing on/off</bookmark_value>
+      <bookmark_value>underlining;quick</bookmark_value>
+      <bookmark_value>borders; automatic drawing on/off</bookmark_value>
+      <bookmark_value>automatic changes on/off</bookmark_value>
+      <bookmark_value>changes;automatic</bookmark_value>
+      <bookmark_value>AutoCorrect function;turning off</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="par_id3154250" role="paragraph" l10n="E" oldref="1"
+                 localize="false"/>
+      <paragraph xml-lang="en-US" id="hd_id3147812" role="heading" level="1" l10n="U"
+                 oldref="16"><variable id="auto_off"><link href="text/swriter/guide/auto_off.xhp" name="Turning Off AutoFormat and AutoCorrect">Turning Off AutoCorrect</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147833" role="paragraph" l10n="CHG" oldref="2">By default, $[officename] automatically corrects many common typing errors and applies formatting while you type. </paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN1081B" role="listitem" l10n="NEW">To quickly undo an automatic correction or completion, press <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Z. </paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_idN10846" role="listitem" l10n="NEW">To turn off most AutoCorrect features, remove the check mark from the menu <emph>Format - AutoCorrect - While Typing</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3147251" role="heading" level="2" l10n="U"
+                 oldref="12">To Remove a Word from the AutoCorrect List</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147274" role="listitem" l10n="CHG" oldref="14">Choose <item type="menuitem">Tools - AutoCorrect Options</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145596" role="listitem" l10n="U" oldref="23">Click the <emph>Replace</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145620" role="listitem" l10n="U" oldref="15">In the <emph>AutoCorrect</emph> list, select the word pair that you want to remove.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145645" role="listitem" l10n="U" oldref="24">Click <emph>Delete</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3145668" role="heading" level="2" l10n="U" oldref="4">To Stop Replacing Quotation Marks</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151196" role="listitem" l10n="CHG" oldref="6">Choose <item type="menuitem">Tools - AutoCorrect Options</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151220" role="listitem" l10n="U" oldref="7">Click the <emph>Localized Options</emph> tab</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3151245" role="listitem" l10n="CHG" oldref="25">Clear the "Replace" check box(es).</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3155076" role="heading" level="2" l10n="U" oldref="8">To Stop Capitalizing the First Letter of a Sentence</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155099" role="listitem" l10n="CHG" oldref="10">Choose <item type="menuitem">Tools – AutoCorrect Options</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155123" role="listitem" l10n="U" oldref="11">Click the <emph>Options</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155148" role="listitem" l10n="CHG" oldref="26">Clear the "Capitalize first letter of every sentence" check box.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3155401" role="heading" level="2" l10n="U"
+                 oldref="17">To Stop Drawing a Line When You Type Three Identical Characters</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155415" role="paragraph" l10n="U" oldref="22">$[officename] automatically draws a line when you type three of the following characters and press Enter: - _ = * ~ #</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155439" role="listitem" l10n="CHG" oldref="19">Choose <item type="menuitem">Tools - AutoCorrect Options</item>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155463" role="listitem" l10n="U" oldref="20">Click the <emph>Options</emph> tab.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155488" role="listitem" l10n="U" oldref="27">Clear the "Apply border" check box.</paragraph>
+         </listitem>
+      </list>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/swriter/guide/autotext.xhp#autotext"/>
+      <embed href="text/shared/guide/line_intext.xhp#line_intext"/>
+      <embed href="text/swriter/guide/number_date_conv.xhp#number_date_conv"/>
+   </body>
+</helpdocument>

@@ -1,0 +1,64 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_script_XArrayWrapper_idl__
+#define __com_sun_star_script_XArrayWrapper_idl__
+
+#ifndef __com_sun_star_uno_XInterface_idl__
+#include <com/sun/star/uno/XInterface.idl>
+#endif
+
+//=============================================================================
+module com {  module sun {  module star { module script {
+
+//=============================================================================
+/** Allows an UNO sequence that is passed between different language
+    boundries to indicate it prefers to be represented as a multidimensional
+    array with 0 or 1 based indices. UNO does not natively represent
+    Multi-Dimensional arrays, instead a sequence can have elements that are
+    themselves sequences (an array of arrays ). <p>Some languages ( example
+    BASIC ) can natively represent both Multi-Dimentional arrays and array of
+    arrays.
+    Those languages could represent a sequence of sequences as either a
+    Multi-Dimentional array or array of arrays. This structure allows a
+    preference for a Multi-Dimensional array representation to be specified.</p>
+*/
+
+published struct ArrayWrapper
+{
+    /** Indicates whether the Array should be have 1 or 0 based indexing.
+    */
+    boolean IsZeroIndex;
+    /** Contains the Array to be passed.
+        <p> Multi-dimensional arrays can only be represented as a sequence where the elements of the sequence are themselves sequences. N-Levels of indirection are possible, where N is the number of dimensions. Note: its perfectly legal to use this structure with a single dimensioned array just to indicate the array indexing.</p>
+    */
+    any Array;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+
+

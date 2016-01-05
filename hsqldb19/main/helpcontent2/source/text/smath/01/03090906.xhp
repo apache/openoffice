@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090906xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Matrix in Bold Font</title>
+<filename>/text/smath/01/03090906.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-06T11:45:09">FPE: Icon resource modified</lastedited>
+</history>
+</meta>
+<body>
+<section id="matrix3">
+<paragraph role="heading" id="hd_id3154704" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090906.xhp" name="Matrix in Bold Font">Matrix in Bold Font</link></paragraph>
+<paragraph role="paragraph" id="par_id3150342" xml-lang="en-US" l10n="U" oldref="2">Here is an example of how to create a bold font matrix in <emph>$[officename] Math</emph>. You can copy this example to the <emph>Commands</emph> window using the clipboard and use it in your own formula.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3148866" xml-lang="en-US" l10n="E">
+<image id="img_id3150210" src="res/helpimg/smzb6.png" width="9.511cm" height="7.99cm"><alt id="alt_id3150210" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<paragraph role="code" id="par_id3154763" xml-lang="en-US" l10n="U" oldref="4">bold { f(x", "y) = left [ stack { x + y over z + left lbrace matrix { 2 # 3 # 4 ## 4 # 5 # 6 ## 6 # 7 # 8} right rbrace # {y + sin (x)} over %alpha # z + y over g } right ]}</paragraph>
+</body>
+</helpdocument>

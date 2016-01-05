@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030130xhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">DatePart Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030130.xhp</filename>
+</topic>
+<history>
+<created date="2005-04-25T13:49:19">DatePart</created>
+<lastedited date="2006-01-23T13:27:35">checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="datepart">
+<bookmark xml-lang="en-US" branch="index" id="bm_id249946"><bookmark_value>DatePart function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN10542" xml-lang="en-US" level="1" l10n="NEW"><link href="text/sbasic/shared/03030130.xhp">DatePart Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_idN10546" xml-lang="en-US" l10n="CHG">The DatePart function returns a specified part of a date.</paragraph>
+</section>
+<paragraph role="heading" id="par_idN10549" xml-lang="en-US" level="2" l10n="NEW">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_idN105E8" xml-lang="en-US" l10n="NEW">DatePart (Add, Date [, Week_start [, Year_start]])</paragraph>
+<paragraph role="heading" id="par_idN105EB" xml-lang="en-US" level="2" l10n="NEW">Return value:</paragraph>
+<paragraph role="paragraph" id="par_idN105EF" xml-lang="en-US" l10n="CHG">A Variant containing a date.</paragraph>
+<paragraph role="heading" id="par_idN105F2" xml-lang="en-US" level="2" l10n="NEW">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_idN105F6" xml-lang="en-US" l10n="NEW">
+<emph>Add</emph> - A string expression from the following table, specifying the date interval.</paragraph>
+<embed href="text/sbasic/shared/03030110.xhp#datetable"/>
+<paragraph role="paragraph" id="par_idN10604" xml-lang="en-US" l10n="NEW">
+<emph>Date</emph> - The date from which the result is calculated.</paragraph>
+<embed href="text/sbasic/shared/03030120.xhp#weekyear"/>
+<paragraph role="heading" id="par_idN10611" xml-lang="en-US" level="2" l10n="NEW">Example:</paragraph>
+<paragraph role="code" id="par_idN10615" xml-lang="en-US" l10n="NEW">Sub example_datepart</paragraph>
+<paragraph role="code" id="par_idN10618" xml-lang="en-US" l10n="NEW">msgbox DatePart("ww", "12/31/2005")</paragraph>
+<paragraph role="code" id="par_idN1061B" xml-lang="en-US" l10n="NEW">End Sub</paragraph>
+</body>
+</helpdocument>

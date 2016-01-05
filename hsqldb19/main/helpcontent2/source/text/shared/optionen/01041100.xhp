@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01041100xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">AutoCaption</title>
+<filename>/text/shared/optionen/01041100.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  <section id="autocaption">
+   
+   
+<bookmark xml-lang="en-US" branch="index" id="bm_id5164036"><bookmark_value>automatic captions (Writer)</bookmark_value>
+<bookmark_value>AutoCaption function in %PRODUCTNAME Writer</bookmark_value>
+<bookmark_value>captions;automatic captions (Writer)</bookmark_value>
+</bookmark>
+   <comment>mw deleted "adding;"</comment>
+   <paragraph xml-lang="en-US" id="par_idN10561" role="heading" level="1" l10n="NEW"><link href="text/shared/optionen/01041100.xhp">AutoCaption</link></paragraph>
+   <paragraph xml-lang="en-US" id="par_idN10571" role="paragraph" l10n="NEW">Specifies the settings for captions that are automatically added to inserted objects.</paragraph>
+   
+  </section>
+  <section id="howtoget">
+   
+   <embed href="text/shared/00/00000406.xhp#einfuegenbeschriftung"/>
+   
+  </section>
+  
+<bookmark xml-lang="en-US" branch="hid/SW_HID_OPTCAPTION_CLB" id="bm_id1826837" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN10588" role="heading" level="2" l10n="NEW">Add captions automatically when inserting</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1058C" role="paragraph" l10n="NEW"><ahelp hid=".">Select the object type for which the AutoCaption settings are to be valid.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1058F" role="heading" level="2" l10n="NEW">Caption</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN10593" role="paragraph" l10n="NEW">Defines the options to be applied to the selected object type. These options are identical to those in the <emph>Insert - Caption</emph> menu, which is available when an object is selected. Below the settings is a preview of the object category, together with numbering type.</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:ComboBox:TP_OPTCAPTION_PAGE:BOX_CATEGORY" id="bm_id3156330" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3146798" role="heading" level="3" l10n="U" oldref="5">Category</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3155419" role="paragraph" l10n="U" oldref="13"><ahelp hid="SW_COMBOBOX_TP_OPTCAPTION_PAGE_BOX_CATEGORY">Specifies the category of the selected object.</ahelp><comment>UFI: copied text from optionen/01040801</comment></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OPTCAPTION_PAGE:BOX_FORMAT" id="bm_id3149236" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3155628" role="heading" level="3" l10n="U" oldref="6">Numbering</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3149233" role="paragraph" l10n="U" oldref="18"><ahelp hid="SW_LISTBOX_TP_OPTCAPTION_PAGE_BOX_FORMAT">Specifies the type of numbering required.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_OPTCAPTION_PAGE:ED_SEPARATOR" id="bm_id3154071" localize="false"/>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_OPTCAPTION_PAGE:EDT_TEXT" id="bm_id4456617" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3149457" role="heading" level="3" l10n="U" oldref="10">Separator</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN106E2" role="paragraph" l10n="U" oldref="17"><ahelp hid="SW_EDIT_TP_OPTCAPTION_PAGE_ED_SEPARATOR">Defines the character to be displayed after the number of the heading or chapter level.</ahelp></paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OPTCAPTION_PAGE:BOX_POS" id="bm_id3153627" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3154514" role="heading" level="3" l10n="U" oldref="8">Position</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3151384" role="paragraph" l10n="U" oldref="15"><ahelp hid="SW_LISTBOX_TP_OPTCAPTION_PAGE_BOX_POS">Determines the position of the caption with respect to the object.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN1064E" role="heading" level="2" l10n="NEW">Numbering captions by chapter</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OPTCAPTION_PAGE:LB_LEVEL" id="bm_id3145068" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3145609" role="heading" level="3" l10n="U" oldref="9">Level</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3153898" role="paragraph" l10n="U" oldref="16"><ahelp hid="SW_LISTBOX_TP_OPTCAPTION_PAGE_LB_LEVEL">Specifies the headings or chapter levels where you want the numbering to start.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3153524" role="paragraph" l10n="U" oldref="17"><ahelp hid="SW_EDIT_TP_OPTCAPTION_PAGE_ED_SEPARATOR">Defines the character to be displayed after the number of the heading or chapter level.</ahelp></paragraph>
+  <paragraph xml-lang="en-US" id="par_idN106A8" role="heading" level="2" l10n="NEW">Category and frame format</paragraph>
+  
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_OPTCAPTION_PAGE:LB_CHARSTYLE" id="bm_id2708517" localize="false"/>
+  <paragraph xml-lang="en-US" id="par_idN106AE" role="heading" level="3" l10n="NEW">Character style</paragraph>
+  <paragraph xml-lang="en-US" id="par_idN106B4" role="paragraph" l10n="NEW"><ahelp hid=".">Specifies the character style.</ahelp></paragraph>
+  
+<!-- removed HID SW:CHECKBOX:DLG_CAPTION:CB_COPY_ATTR -->
+  
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTCAPTION_PAGE:CB_APPLYBORDER" id="bm_id346995" localize="false"/>
+  <paragraph xml-lang="en-US" id="hd_id3143280" role="heading" level="3" l10n="U" oldref="43">Apply border and shadow</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3149826" role="paragraph" l10n="CHG" oldref="44"><ahelp hid="SW:CHECKBOX:DLG_CAPTION:CB_COPY_ATTR">Applies the border and shadow of the object to the caption frame.</ahelp></paragraph>
+  <section id="relatedtopics">
+   
+   <embed href="text/swriter/guide/captions.xhp#captions"/>
+   <embed href="text/swriter/guide/captions_numbers.xhp#captions_numbers"/>
+   
+  </section>
+ </body>
+</helpdocument>

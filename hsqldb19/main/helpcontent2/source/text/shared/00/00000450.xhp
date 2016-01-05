@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000450xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Database</title>
+<filename>/text/shared/00/00000450.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="hd_id3154689" xml-lang="en-US" level="1" l10n="U" oldref="1">Database</paragraph>
+<paragraph role="paragraph" id="par_id3152876" xml-lang="en-US" l10n="CHG" oldref="7"><variable id="DBTab">In a database file window, choose <emph>Tools - Table Filter</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153244" xml-lang="en-US" l10n="CHG" oldref="57"><variable id="DBAbfragen"><emph>View - Database Objects - Queries</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147294" xml-lang="en-US" l10n="CHG" oldref="4"><variable id="Typ">In a database file window, choose <emph>Edit - Database - Properties - Advanced Settings</emph> tab
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3159411" xml-lang="en-US" l10n="CHG" oldref="5"><variable id="Datenquelle">In a database file window of type ODBC or Address book, choose Edit - Database - Connection Type
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149119" xml-lang="en-US" l10n="U" oldref="6"><variable id="Verzeichnis">Path selection button in various Wizards / <emph>Edit</emph> Buttons for some entries in <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - $[officename] - Paths</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154497" xml-lang="en-US" l10n="CHG" oldref="8"><variable id="ODBC">In a database file window of type ODBC, choose Edit - Database - Connection Type
+</variable><comment>see #i56356</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149355" xml-lang="en-US" l10n="CHG" oldref="61"><variable id="ldap">In a database file window of type Address book - LDAP, choose Edit - Database - Properties
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3157896" xml-lang="en-US" l10n="CHG" oldref="9"><variable id="JDBC">In a database file window of type JDBC, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148548" xml-lang="en-US" l10n="CHG" oldref="81"><variable id="mysql">In a database file window of type MySQL, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149346" xml-lang="en-US" l10n="CHG" oldref="10"><variable id="dBase">In a database file window of type dBASE, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147043" xml-lang="en-US" l10n="CHG" oldref="11"><variable id="dBasein">In a database file window of type dBASE, choose <emph>Edit - Database - Properties</emph>, click <emph>Indexes</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3154317" xml-lang="en-US" l10n="CHG" oldref="12"><variable id="Text">In a database file window of type Text, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150774" xml-lang="en-US" l10n="CHG" oldref="20"><variable id="ADO">In a database file window of type MS ADO, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="CHG" oldref="21"><variable id="SQLStatement">In a database file window, choose <emph>Tools - SQL</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147209" xml-lang="en-US" l10n="CHG" oldref="22"><variable id="Abfragen">In a database file window, click the <emph>Queries</emph> icon
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153880" xml-lang="en-US" l10n="CHG" oldref="62"><variable id="Tabellen">In a database file window, click the <emph>Tables</emph> icon
+</variable></paragraph>
+<section id="tabellehinzu">
+<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="CHG" oldref="64"><variable id="tabellenentwurf">In a database file window, click the Tables icon. Choose Insert -<emph> Table Design</emph> or <emph>Edit - Edit</emph>
+</variable></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="65"><variable id="indexentwurf">In a database file window, click the Tables icon. Choose <emph>Insert - Table Design</emph> or <emph>Edit - Edit</emph>
+</variable><comment>UFI: was: "... , then Tools - Index Design or Index Design button"
+ (don't know where that is now)</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154047" xml-lang="en-US" l10n="CHG" oldref="23"><variable id="AbfrageNeu">In a database file window, choose <emph>Insert - Query (Design view)</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149579" xml-lang="en-US" l10n="CHG" oldref="24"><variable id="entwab">In a database file window, click the <emph>Queries</emph> icon, then choose <emph>Edit - Edit</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149902" xml-lang="en-US" l10n="CHG" oldref="25"><variable id="FehlendesElement">In a database file window, click the <emph>Queries</emph> icon, then choose <emph>Edit - Edit</emph>. When referenced fields no longer exist, you see this dialog
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3159166" xml-lang="en-US" l10n="U" oldref="26"><variable id="Joins">Open query design and choose <emph>Insert - New Relation</emph>, or double-click on a connection line between two tables.
+</variable></paragraph>
+<section id="sytabelle">
+<table id="tbl_id3156192">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151245" xml-lang="en-US" l10n="E">
+<image id="img_id3153063" src="res/commandimagelist/sc_addtable.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153063" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="41">Insert Tables</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<section id="SyRelationen">
+<table id="tbl_id3152360">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="E">
+<image id="img_id3147282" src="res/commandimagelist/sc_dbaddrelation.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147282" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159085" xml-lang="en-US" l10n="U" oldref="43">New Relation</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<section id="datensuchen">
+<paragraph role="paragraph" id="par_id3150414" xml-lang="en-US" l10n="U" oldref="47">
+<emph>Find Record</emph> icon on the Table Data bar and Form Design bar</paragraph>
+<section id="sydatensuchen">
+<table id="tbl_id3148797">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157962" xml-lang="en-US" l10n="E">
+<image id="img_id3145419" src="res/commandimagelist/sc_recsearch.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145419" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157322" xml-lang="en-US" l10n="U" oldref="48">Find Record</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+</section>
+<section id="sortieren">
+<paragraph role="paragraph" id="par_id3150870" xml-lang="en-US" l10n="U" oldref="49">
+<emph>Sort Order</emph> icon on the Table Data bar and Form Design bar</paragraph>
+<section id="sysortieren">
+<table id="tbl_id3153353">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150393" xml-lang="en-US" l10n="E">
+<image id="img_id3145606" src="res/commandimagelist/sc_tablesort.png" width="0.222inch" height="0.222inch"><alt id="alt_id3145606" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145745" xml-lang="en-US" l10n="U" oldref="50">Sort Order</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+</section>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="CHG" oldref="55"><variable id="allgemein">In a database file window, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="CHG" oldref="63"><variable id="tabellecopy">Drag and drop a table or a query into the table part of another database file window
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3148560" xml-lang="en-US" l10n="CHG" oldref="66"><variable id="formularneu">In a database file window, choose<emph> Insert - Form</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3155430" xml-lang="en-US" l10n="CHG" oldref="67"><variable id="benutzereinstellungen">In a database file window, choose <emph>Edit - Database - Properties</emph>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3147441" xml-lang="en-US" l10n="CHG" oldref="69"><variable id="relationen">In a database file window, choose <emph>Tools - Relationships</emph>
+</variable></paragraph>
+</body>
+</helpdocument>

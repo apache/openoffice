@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared01xformsdataxhp" indexer="include">
+         <title xml-lang="en-US" id="tit">Data Navigator</title>
+         <filename>/text/shared/01/xformsdata.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="datanavigator">
+<bookmark xml-lang="en-US" branch="index" id="bm_id6823023"><bookmark_value>data structure of XForms</bookmark_value>
+         <bookmark_value>deleting;models/instances</bookmark_value>
+         <bookmark_value>models in XForms</bookmark_value>
+         <bookmark_value>Data Navigator;display options</bookmark_value>
+</bookmark><comment>MW made "Data Navigator.." a two level entry</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowDataNavigator" id="bm_id7463799" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ShowDataNavigator" id="bm_id7677236" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX" id="bm_id0130200901571189" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TAB_CONTROL" id="bm_id0130200901573014" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1054E" role="heading" level="1" l10n="NEW"><variable id="xformsdata"><link href="text/shared/01/xformsdata.xhp">Data Navigator</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN1056C" role="paragraph" l10n="CHG"><ahelp hid=".">Specifies the data structure of the current XForms document.</ahelp></paragraph>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_MODELS_LIST" id="bm_id759300" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1056F" role="heading" level="2" l10n="NEW">Model name</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10573" role="paragraph" l10n="NEW"><ahelp hid=".">Selects the XForms model that you want to use.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_MODELS_MENUBTN" id="bm_id6110721" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10576" role="heading" level="2" l10n="NEW">Models</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1057A" role="paragraph" l10n="NEW"><ahelp hid=".">Adds, renames, and removes XForms models.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_MODELS_ADD" id="bm_id6934415" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10604" role="heading" level="3" l10n="NEW">Add</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10608" role="paragraph" l10n="CHG"><ahelp hid=".">Opens the Add Model dialog where you can add an XForm model.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_ADD_MODEL:ED_INST_NAME" id="bm_id0130200901582112" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0130200901590878" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the name.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/svx:CheckBox:RID_SVXDLG_ADD_MODEL:CB_MODIFIES_DOCUMENT" id="bm_id0910200811130823" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0910200811173295" role="heading" level="3" l10n="NEW">Model data updates change document's modification status</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0910200811173255" role="paragraph" l10n="NEW"><ahelp hid=".">When enabled, the document status will be set to "modified" when you change any form control that is bound to any data in the model. When not enabled, such a change does not set the document status to "modified".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_MODELS_REMOVE" id="bm_id5671559" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10612" role="heading" level="3" l10n="NEW">Remove</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10616" role="paragraph" l10n="NEW"><ahelp hid=".">Deletes the selected XForm model. You cannot delete the last model.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_MODELS_EDIT" id="bm_id8617816" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10743" role="heading" level="3" l10n="NEW">Rename</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10749" role="paragraph" l10n="NEW"><ahelp hid=".">Renames the selected Xform model.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_SHOW_DETAILS" id="bm_id5646229" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10619" role="heading" level="3" l10n="NEW">Show Details</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1061D" role="paragraph" l10n="NEW"><ahelp hid=".">Switches the display to show or hide details.</ahelp><comment>UFI: not explained in spec</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_ITEMS_LIST" id="bm_id2524491" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1057D" role="heading" level="2" l10n="NEW">Instance</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10682" role="paragraph" l10n="NEW"><ahelp hid=".">Lists the items that belong to the current instance.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_ADD" id="bm_id4040955" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1058B" role="heading" level="2" l10n="NEW">Submissions</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1058F" role="paragraph" l10n="NEW"><ahelp hid=".">Lists the submissions.</ahelp><comment>UFI. it's not in the spec</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10592" role="heading" level="2" l10n="NEW">Bindings</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10596" role="paragraph" l10n="NEW"><ahelp hid=".">Lists the bindings for the XForm.</ahelp><comment>UFI. it's not in the spec</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_INSTANCES_MENUBTN" id="bm_id3339335" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10599" role="heading" level="2" l10n="NEW">Instances</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1059D" role="paragraph" l10n="NEW"><ahelp hid=".">This button has submenus to add, edit or remove instances.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_INSTANCES_ADD" id="bm_id9214148" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10649" role="heading" level="3" l10n="NEW">Add</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1064D" role="paragraph" l10n="CHG"><ahelp hid=".">Opens a dialog where you can add a new instance.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_INSTANCES_EDIT" id="bm_id4229255" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10650" role="heading" level="3" l10n="NEW">Edit</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10654" role="paragraph" l10n="CHG"><ahelp hid=".">Opens a dialog where you can modify the current instance.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_MN_XFORMS_INSTANCES_REMOVE" id="bm_id1858882" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10657" role="heading" level="3" l10n="NEW">Remove</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1065B" role="paragraph" l10n="NEW"><ahelp hid=".">Deletes the current instance. You cannot delete the last instance.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1065E" role="heading" level="3" l10n="NEW">Show data types</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10662" role="paragraph" l10n="NEW"><ahelp hid=".">Switches the display to show more or less details.</ahelp><comment>UFI: not explained in spec</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_ADD_ELEMENT" id="bm_id2156132" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_ADD_ATTRIBUTE" id="bm_id9931943" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_ADD" id="bm_id1840876" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10584" role="heading" level="3" l10n="CHG">Add</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10588" role="paragraph" l10n="CHG"><ahelp hid=".">Opens a dialog to add a new item (element, attribute, submission, or binding) as a sub-item of the current item.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_EDIT" id="bm_id1051362" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10624" role="heading" level="3" l10n="CHG">Edit</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10628" role="paragraph" l10n="CHG"><ahelp hid=".">Opens a dialog to edit the selected item (element, attribute, submission, or binding).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SVX_HID_XFORMS_TOOLBOX_ITEM_REMOVE" id="bm_id3862117" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1062B" role="heading" level="3" l10n="CHG">Delete</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1062F" role="paragraph" l10n="CHG"><ahelp hid=".">Deletes the selected item (element, attribute, submission, or binding).</ahelp></paragraph>
+   </body>
+</helpdocument>

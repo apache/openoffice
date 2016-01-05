@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textshared0105340300xml" indexer="include">
+<title id="tit" xml-lang="en-US">Alignment</title>
+<filename>/text/shared/01/05340300.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="ausrichtung">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154545"><bookmark_value>aligning; cells</bookmark_value>
+<bookmark_value>cells; aligning</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ALIGNMENT" id="bm_id3147477" localize="false"/>
+<paragraph role="heading" id="hd_id3154545" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05340300.xhp" name="Alignment">Alignment</link></paragraph>
+<paragraph role="paragraph" id="par_id3155577" xml-lang="en-US" l10n="U" oldref="52"><ahelp hid="HID_ALIGNMENT">Sets the alignment options for the contents of the current cell, or the selected cells.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00040503.xhp#fozelaus"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ALIGNMENT:LB_HORALIGN" id="bm_id3152821" localize="false"/>
+<paragraph role="heading" id="hd_id3153124" xml-lang="en-US" level="2" l10n="U" oldref="54">Horizontal</paragraph>
+<paragraph role="paragraph" id="par_id3144436" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ALIGNMENT_LB_HORALIGN">Select the horizontal alignment option that you want to apply to the cell contents.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146109" xml-lang="en-US" level="3" l10n="U" oldref="56">Default</paragraph>
+<paragraph role="paragraph" id="par_id3166445" xml-lang="en-US" l10n="U" oldref="57">Aligns numbers to the right, and text to the left.</paragraph>
+<paragraph role="note" id="par_id3147010" xml-lang="en-US" l10n="U" oldref="10">If the <emph>Default</emph> option is selected, numbers will be aligned to the right and text will be left-justified.</paragraph><comment>UFI: removed two help ids</comment><comment>UFI: reason: Help IDs .uno:AlignLeft, AlignRight, AlignBlock, AlignHorizontalCenter are the same for Objects in Draw/Impress and for text alignment in Calc. Unfortunately both sets of files are located in shared folder... Must create a special file in scalc or add those as hidden texts to a file in scalc.</comment>
+<paragraph role="heading" id="hd_id3153577" xml-lang="en-US" level="3" l10n="U" oldref="58">Left</paragraph>
+<paragraph role="paragraph" id="par_id3150506" xml-lang="en-US" l10n="U" oldref="59"><variable id="linkstext"><ahelp hid=".uno:AlignLeft">Aligns the contents of the cell to the left.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#sylinksbuendig"/><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3156347" xml-lang="en-US" level="3" l10n="U" oldref="60">Right</paragraph>
+<paragraph role="paragraph" id="par_id3148538" xml-lang="en-US" l10n="U" oldref="61"><variable id="rechtstext"><ahelp hid=".uno:AlignRight">Aligns the contents of the cell to the right.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syrechtsbuendig"/><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3153541" xml-lang="en-US" level="3" l10n="U" oldref="62">Center</paragraph>
+<paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="CHG" oldref="63"><variable id="zentrierttext"><ahelp hid=".">Horizontally centers the contents of the cell.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syzentriert"/><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3159166" xml-lang="en-US" level="3" l10n="CHG" oldref="64">Justified</paragraph>
+<paragraph role="paragraph" id="par_id3153665" xml-lang="en-US" l10n="U" oldref="65"><variable id="blocktext"><ahelp hid=".uno:AlignBlock">Aligns the contents of the cell to the left and to the right cell borders.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00040502.xhp#syblocksatz"/>
+<paragraph role="heading" id="par_idN1079C" xml-lang="en-US" level="3" l10n="NEW">Filled</paragraph>
+<paragraph role="paragraph" id="par_idN107A0" xml-lang="en-US" l10n="NEW">Repeats the cell contents (number and text) until the visible area of the cell is filled. This feature does not work on text that contains line breaks.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_ALIGNMENT:ED_INDENT" id="bm_id3156156" localize="false"/>
+<paragraph role="heading" id="hd_id3158432" xml-lang="en-US" level="2" l10n="U" oldref="41">Indent</paragraph>
+<paragraph role="paragraph" id="par_id3153716" xml-lang="en-US" l10n="U" oldref="42"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_ALIGNMENT:ED_INDENT">Indents from the left edge of the cell by the amount that you enter.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_ALIGNMENT:LB_VERALIGN" id="bm_id3153332" localize="false"/>
+<paragraph role="heading" id="hd_id3149903" xml-lang="en-US" level="2" l10n="U" oldref="66">Vertical</paragraph>
+<paragraph role="paragraph" id="par_id3148924" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ALIGNMENT_LB_VERALIGN">Select the vertical alignment option that you want to apply to the cell contents.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146848" xml-lang="en-US" level="3" l10n="U" oldref="68">Default</paragraph>
+<paragraph role="paragraph" id="par_id3150822" xml-lang="en-US" l10n="U" oldref="69"><ahelp hid="SVX_LISTBOX_RID_SVXPAGE_ALIGNMENT_LB_VERALIGN">Aligns the cell contents to the bottom of the cell.</ahelp></paragraph><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="3" l10n="U" oldref="70">Top</paragraph>
+<paragraph role="paragraph" id="par_id3145085" xml-lang="en-US" l10n="U" oldref="71"><variable id="obentext"><ahelp hid=".uno:AlignTop">Aligns the contents of the cell to the upper edge of the cell.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<switch select="appl">
+<case select="CHART">
+</case>
+<default><embed href="text/shared/00/00000004.xhp#syvertikaloben"/>
+</default>
+</switch><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3156343" xml-lang="en-US" level="3" l10n="U" oldref="72">Bottom</paragraph>
+<paragraph role="paragraph" id="par_id3152813" xml-lang="en-US" l10n="CHG" oldref="26"><variable id="untentext"><ahelp hid=".">Aligns the contents of the cell to the lower edge of the cell.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00000004.xhp#syvertikalunten"/><comment>UFI: removed two help ids</comment>
+<paragraph role="heading" id="hd_id3151106" xml-lang="en-US" level="3" l10n="U" oldref="73">Middle</paragraph>
+<paragraph role="paragraph" id="par_id3151210" xml-lang="en-US" l10n="U" oldref="74"><variable id="mittetext"><ahelp hid=".uno:AlignVCenter">Vertically centers the contents of the cell.</ahelp>
+</variable></paragraph>
+<embed href="text/shared/00/00000007.xhp#objektleiste"/>
+<embed href="text/shared/00/00000004.xhp#syvertikalmitte"/>
+<paragraph role="heading" id="hd_id3154154" xml-lang="en-US" level="2" l10n="CHG" oldref="51">Text orientation</paragraph>
+<paragraph role="paragraph" id="par_id3151380" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid=".uno:AlignVCenter">Sets the text orientation of the cell contents.</ahelp></paragraph>
+<switch select="appl">
+<case select="CALC"><embed href="text/scalc/guide/text_rotate.xhp#text_rotate"/>
+</case>
+</switch>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ALIGNMENT_CTR_DIAL" id="bm_id3151044" localize="false"/>
+<paragraph role="paragraph" id="par_id3147085" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="HID_ALIGNMENT_CTR_DIAL">Click in the dial to set the text orientation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:RID_SVXPAGE_ALIGNMENT:NF_DEGREES" id="bm_id3155742" localize="false"/>
+<paragraph role="heading" id="hd_id3150449" xml-lang="en-US" level="3" l10n="CHG" oldref="45">Degrees</paragraph>
+<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid="SVX_NUMERICFIELD_RID_SVXPAGE_ALIGNMENT_NF_DEGREES">Enter the rotation angle for the text in the selected cell(s). A positive number rotates the text to the left and a negative number rotates the text to the right.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_ALIGNMENT_CTR_BORDER_LOCK" id="bm_id3125865" localize="false"/>
+<paragraph role="heading" id="hd_id3150497" xml-lang="en-US" level="3" l10n="U" oldref="75">Reference edge</paragraph>
+<paragraph role="paragraph" id="par_id3154069" xml-lang="en-US" l10n="U" oldref="76"><ahelp hid="HID_ALIGNMENT_CTR_BORDER_LOCK">Specify the cell edge from which to write the rotated text.</ahelp></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147299" xml-lang="en-US" l10n="U" oldref="78">
+<emph>Text Extension From Lower Cell Border:</emph> Writes the rotated text from the bottom cell edge outwards.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149561" xml-lang="en-US" l10n="U" oldref="79">
+<emph>Text Extension From Upper Cell Border:</emph> Writes the rotated text from the top cell edge outwards.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="80">
+<emph>Text Extension Inside Cells:</emph> Writes the rotated text only within the cell.</paragraph>
+</listitem>
+</list>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_ALIGNMENT:BTN_TXTSTACKED" id="bm_id080420080320333" localize="false"/>
+<paragraph role="heading" id="par_idN109F4" xml-lang="en-US" level="3" l10n="NEW">Vertically stacked</paragraph>
+<paragraph role="paragraph" id="par_idN109F8" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Aligns text vertically.</ahelp><comment>UFI: see spec "Shrink to fit"</comment></paragraph>
+<embed href="text/shared/00/00000007.xhp#asiahinweis"/>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_ALIGNMENT:BTN_ASIAN_VERTICAL" id="bm_id3147441" localize="false"/>
+<paragraph role="heading" id="hd_id3152576" xml-lang="en-US" level="3" l10n="CHG" oldref="84">Asian layout mode</paragraph>
+<paragraph role="paragraph" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="85">This checkbox is only available if Asian language support is enabled and the text direction is set to vertical. <ahelp hid="SVX_TRISTATEBOX_RID_SVXPAGE_ALIGNMENT_BTN_ASIAN_VERTICAL">Aligns Asian characters one below the other in the selected cell(s). If the cell contains more than one line of text, the lines are converted to text columns that are arranged from right to left. Western characters in the converted text are rotated 90 degrees to the right. Asian characters are not rotated.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150032" xml-lang="en-US" level="2" l10n="CHG" oldref="43">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="44">Determine the text flow in a cell.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_ALIGNMENT:BTN_WRAP" id="bm_id3148577" localize="false"/>
+<paragraph role="heading" id="hd_id3145590" xml-lang="en-US" level="3" l10n="CHG" oldref="3">Wrap text automatically</paragraph>
+<paragraph role="paragraph" id="par_id3148555" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_ALIGNMENT:BTN_WRAP">Wraps text onto another line at the cell border. The number of lines depends on the width of the cell.</ahelp> To enter a manual line break, press <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter in the cell.<comment>conditional switches inside AVIS do not work</comment></paragraph>
+<embed href="text/shared/guide/breaking_lines.xhp#breaking_lines"/>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_ALIGNMENT:BTN_HYPH" id="bm_id3155415" localize="false"/>
+<paragraph role="heading" id="hd_id3147380" xml-lang="en-US" level="3" l10n="U" oldref="81">Hyphenation active</paragraph>
+<paragraph role="paragraph" id="par_id3148458" xml-lang="en-US" l10n="U" oldref="82"><ahelp hid="SVX_TRISTATEBOX_RID_SVXPAGE_ALIGNMENT_BTN_HYPH">Enables word hyphenation for text wrapping to the next line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_ALIGNMENT:BTN_SHRINK" id="bm_id080420080321345" localize="false"/>
+<paragraph role="heading" id="par_idN10AD3" xml-lang="en-US" level="3" l10n="NEW">Shrink to fit cell size</paragraph>
+<paragraph role="paragraph" id="par_idN10AD7" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Reduces the apparent size of the font so that the contents of the cell fit into the current cell width. You cannot apply this command to a cell that contains line breaks.</ahelp></paragraph>
+</body>
+</helpdocument>

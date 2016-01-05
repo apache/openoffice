@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01120200xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Group Element Wizard: Default Field Selection</title>
+<filename>/text/shared/autopi/01120200.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="seite2">
+  <paragraph id="hd_id3151299" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/shared/autopi/01120200.xhp" name="Group Element Wizard: Default Field Selection">Group Element Wizard: Default Field Selection</link></paragraph>
+  <paragraph role="paragraph" id="par_id3144740" l10n="U" xml-lang="en-US" oldref="2">Determines that you want one option field to be selected as the default choice.</paragraph>
+  </section>
+  <paragraph xml-lang="en-US" role="paragraph" id="par_id3154094" l10n="U" oldref="11">The default settings will be accepted if you open the form in the user mode. With these settings you determine the control property <link href="text/shared/02/01170101.xhp" name="Default Status">Default Status</link>.</paragraph>
+  <section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#gruppen2"/>
+</section>
+  <paragraph role="heading" level="2" id="hd_id3157896" l10n="U" xml-lang="en-US" oldref="3">Should one option field be selected as a default?</paragraph>
+  <paragraph role="paragraph" id="par_id3149346" l10n="U" xml-lang="en-US" oldref="4">Specifies whether you want to set default settings for the option box.</paragraph>
+  <!-- removed HID DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_YES --><paragraph role="heading" level="3" id="hd_id3147226" l10n="U" xml-lang="en-US" oldref="5">Yes, the following:</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150774" xml-lang="en-US" oldref="10"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_YES" visibility="visible">Specifies that you want an option field to be selected as a default after opening the form.</ahelp> Choose the option field from the box.</paragraph>
+  <!-- removed HID DBP_LISTBOX_RID_PAGE_DEFAULTFIELDSELECTION_LB_DEFSELECTIONFIELD --><paragraph role="heading" level="3" id="hd_id3153345" l10n="U" xml-lang="en-US" oldref="6">List box</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3146957" xml-lang="en-US" oldref="7"><ahelp hid="DBP_LISTBOX_RID_PAGE_DEFAULTFIELDSELECTION_LB_DEFSELECTIONFIELD" visibility="visible">Select the option field that you want to have as the default when opening the form.</ahelp></paragraph>
+  <!-- removed HID DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_NO --><paragraph role="heading" level="3" id="hd_id3147242" l10n="U" xml-lang="en-US" oldref="8">No, one particular field is not going to be selected</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3163802" xml-lang="en-US" oldref="9"><ahelp hid="DBP_RADIOBUTTON_RID_PAGE_DEFAULTFIELDSELECTION_RB_DEFSELECTION_NO" visibility="visible">Specifies that you do not want any option field to be the default choice.</ahelp></paragraph>
+ </body>
+</helpdocument>

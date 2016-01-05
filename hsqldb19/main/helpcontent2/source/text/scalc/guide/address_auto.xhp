@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguideaddress_autoxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Recognizing Names as Addressing</title>
+         <filename>/text/scalc/guide/address_auto.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148797"><bookmark_value>automatic addressing in tables</bookmark_value>
+      <bookmark_value>natural language addressing</bookmark_value>
+      <bookmark_value>formulas; using row/column labels</bookmark_value>
+      <bookmark_value>text in cells; as addressing</bookmark_value>
+      <bookmark_value>addressing; automatic</bookmark_value>
+      <bookmark_value>name recognition on/off</bookmark_value>
+      <bookmark_value>row headers;using in formulas</bookmark_value>
+      <bookmark_value>column headers;using in formulas</bookmark_value>
+      <bookmark_value>columns; finding labels automatically</bookmark_value>
+      <bookmark_value>rows; finding labels automatically</bookmark_value>
+      <bookmark_value>recognizing; column and row labels</bookmark_value>
+</bookmark><comment>mw changes "names;..." entry to "text in cells;..."</comment><comment>mw inserted three index entries from text/shared/optionen/01060500.xhp. Changed "finding;..." entry to "recognizing;..." entry. Adding (Calc) is no longer necessary in this file.</comment>
+<paragraph xml-lang="en-US" id="hd_id3148797" role="heading" level="1" l10n="U"
+                 oldref="20"><variable id="address_auto"><link href="text/scalc/guide/address_auto.xhp" name="Recognizing Names as Addressing">Recognizing Names as Addressing</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3152597" role="paragraph" l10n="CHG" oldref="21">You can use cells with text to refer to the rows or to the columns that contain the cells.</paragraph>
+<comment>removed table as a workaround for issue 108715</comment>
+               <paragraph xml-lang="en-US" id="par_id3156283" role="paragraph" l10n="E">
+<image id="img_id3154942" src="res/helpimg/names_as_addressing.png" width="2.1291in" height="0.8709in" localize="true"><alt xml-lang="en-US" id="alt_id3154942">Example spreadsheet</alt>
+	</image></paragraph>
+
+      <paragraph xml-lang="en-US" id="par_id3154512" role="paragraph" l10n="CHG" oldref="22">In the example spreadsheet, you can use the string <item type="literal">'Column One'</item> in a formula to refer to the cell range <item type="literal">B3</item> to <item type="literal">B5</item>, or <item type="literal">'Column Two'</item> for the cell range <item type="literal">C2</item> to <item type="literal">C5</item>. You can also use <item type="literal">'Row One'</item> for the cell range <item type="literal">B3</item> to <item type="literal">D3</item>, or <item type="literal">'Row Two'</item> for the cell range <item type="literal">B4</item> to <item type="literal">D4</item>. The result of a formula that uses a cell name, for example, <item type="literal">SUM('Column One')</item>, is 600.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155443" role="paragraph" l10n="CHG" oldref="24">This function is active by default. To turn this function off, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Calculate</emph> and clear the <emph>Automatically find column and row labels</emph> check box.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149210" role="tip" l10n="CHG" oldref="37">If you want a name to be automatically recognized by Calc, the name must start with a letter and be composed of alphanumeric characters. If you enter the name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must enter a backslash in front of the quotation mark, for example, <item type="literal">'Harry\'s Bar'.</item>
+</paragraph>
+      <section id="relatedtopics"><comment>mw changed reference to deleted Calc guide address_byname.xhp to refer to Calc guide value_with_name.xhp</comment><comment>UFI: changed embedvar links to embed links</comment><embed href="text/scalc/guide/value_with_name.xhp#value_with_name"/>
+         <embed href="text/scalc/01/04070400.xhp#define_label_range"/>
+         <embed href="text/scalc/guide/relativ_absolut_ref.xhp#relativ_absolut_ref"/>
+      </section>
+   </body>
+</helpdocument>

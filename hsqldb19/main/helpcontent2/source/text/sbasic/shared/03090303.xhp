@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090303xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">On...GoSub Statement; On...GoTo Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090303.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T13:49:47">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="ongosub">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153897"><bookmark_value>On...GoSub statement</bookmark_value>
+<bookmark_value>On...GoTo statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153897" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090303.xhp" name="On...GoSub Statement; On...GoTo Statement [Runtime]">On...GoSub Statement; On...GoTo Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150359" xml-lang="en-US" l10n="U" oldref="2">Branches to one of several specified lines in the program code, depending on the value of a numeric expression.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148798" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3154366" xml-lang="en-US" l10n="U" oldref="4">On N GoSub Label1[, Label2[, Label3[,...]]]</paragraph>
+<paragraph role="paragraph" id="par_id3150769" xml-lang="en-US" l10n="U" oldref="5">On NumExpression GoTo Label1[, Label2[, Label3[,...]]]</paragraph>
+<paragraph role="heading" id="hd_id3156215" xml-lang="en-US" level="2" l10n="U" oldref="6">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3148673" xml-lang="en-US" l10n="U" oldref="7">
+<emph>NumExpression:</emph> Any numeric expression between 0 and 255 that determines which of the lines the program branches to. If NumExpression is 0, the statement is not executed. If NumExpression is greater than 0, the program jumps to the label that has a position number that corresponds to the expression (1 = First label; 2 = Second label)</paragraph>
+<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Label:</emph> Target line according to<emph> GoTo </emph>or <emph>GoSub</emph> structure.</paragraph>
+<paragraph role="note" id="par_id3156442" xml-lang="en-US" l10n="U" oldref="9">The <emph>GoTo</emph> or <emph>GoSub </emph>conventions are valid.</paragraph>
+<paragraph role="heading" id="hd_id3148645" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3154014" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleOnGosub</paragraph>
+<paragraph role="paragraph" id="par_id3153158" xml-lang="en-US" l10n="U" oldref="13">Dim iVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3154490" xml-lang="en-US" l10n="U" oldref="14">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3155417" xml-lang="en-US" l10n="U" oldref="15">iVar = 2</paragraph>
+<paragraph role="paragraph" id="par_id3154730" xml-lang="en-US" l10n="U" oldref="16">sVar =""</paragraph>
+<paragraph role="paragraph" id="par_id3154942" xml-lang="en-US" l10n="U" oldref="17">On iVar GoSub Sub1, Sub2</paragraph>
+<paragraph role="paragraph" id="par_id3149378" xml-lang="en-US" l10n="U" oldref="18">On iVar GoTo Line1, Line2</paragraph>
+<paragraph role="paragraph" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="19">Exit Sub</paragraph>
+<paragraph role="paragraph" id="par_id3154015" xml-lang="en-US" l10n="U" oldref="20">Sub1:</paragraph>
+<paragraph role="paragraph" id="par_id3153948" xml-lang="en-US" l10n="U" oldref="21">sVar =sVar &amp; " From Sub 1 to" : Return</paragraph>
+<paragraph role="paragraph" id="par_id3150750" xml-lang="en-US" l10n="U" oldref="22">Sub2:</paragraph>
+<paragraph role="paragraph" id="par_id3153708" xml-lang="en-US" l10n="U" oldref="23">sVar =sVar &amp; " From Sub 2 to" : Return</paragraph>
+<paragraph role="paragraph" id="par_id3155067" xml-lang="en-US" l10n="U" oldref="24">Line1:</paragraph>
+<paragraph role="paragraph" id="par_id3150321" xml-lang="en-US" l10n="U" oldref="25">sVar =sVar &amp; " Label 1" : GoTo Ende</paragraph>
+<paragraph role="paragraph" id="par_id3149019" xml-lang="en-US" l10n="U" oldref="26">Line2:</paragraph>
+<paragraph role="paragraph" id="par_id3155764" xml-lang="en-US" l10n="U" oldref="27">sVar =sVar &amp; " Label 2"</paragraph>
+<paragraph role="paragraph" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="28">Ende:</paragraph>
+<paragraph role="paragraph" id="par_id3154253" xml-lang="en-US" l10n="U" oldref="29">MsgBox sVar,0,"On...Gosub"</paragraph>
+<paragraph role="paragraph" id="par_id3149565" xml-lang="en-US" l10n="U" oldref="30">End Sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,55 @@
+# *************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+# *************************************************************
+### i85237 ###
+svtools.AccessibleBrowseBox::com::sun::star::accessibility::XAccessibleEventBroadcaster
+
+### i85238 ###
+svtools.AccessibleBrowseBox::com::sun::star::accessibility::XAccessibleContext
+
+### i85239 ###
+svtools.AccessibleBrowseBoxHeaderBar::com::sun::star::accessibility::XAccessibleEventBroadcaster
+
+### i85240 ###
+svtools.AccessibleTabBar::com::sun::star::accessibility::XAccessibleEventBroadcaster
+
+### i85244 ###
+svtools.AccessibleTabBarPage::com::sun::star::accessibility::XAccessibleEventBroadcaster
+
+### i85245 ###
+svtools.AccessibleBrowseBoxTableCell
+# -> test is disabled in svtools.sce
+
+### i85246 ###
+svtools.AccessibleTabBarPageList
+# -> test is disabled in svtools.sce
+
+### i88276 ###
+svtools.AccessibleIconChoiceCtrlEntry
+# -> test is disabled in svtools.sce
+
+### i88296 ###
+svtools.AccessibleTreeListBox::com::sun::star::accessibility::XAccessibleEventBroadcaster
+
+### i88300 ###
+svtools.AccessibleTreeListBoxEntry::com::sun::star::accessibility::XAccessibleText
+
+### i88647 ###
+svtools.AccessibleTabBarPage

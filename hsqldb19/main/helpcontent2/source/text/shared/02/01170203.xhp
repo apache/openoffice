@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170203xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Data</title>
+<filename>/text/shared/02/01170203.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="daten">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150040"><bookmark_value>forms; data</bookmark_value>
+<bookmark_value>data; forms and subforms</bookmark_value>
+<bookmark_value>forms; subforms</bookmark_value>
+<bookmark_value>subforms; description</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170203.xhp" name="Data">Data</link></paragraph>
+<paragraph role="paragraph" id="par_id3147242" xml-lang="en-US" l10n="U" oldref="2">The<emph> Data </emph>tab page defines the form properties that refer to the database that is linked to the form.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3149398" xml-lang="en-US" l10n="U" oldref="107">Defines the data source on which the form is based, or specifies whether the data can be edited by the user. Apart from the sort and filter functions, you will also find all the necessary properties to create a <link href="text/shared/02/01170203.xhp" name="subform">subform</link>.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#formulareigenschaftendaten"/>
+</section>
+<sort>
+<section id="Section1">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATASOURCE" id="bm_id3153146" localize="false"/><paragraph role="heading" id="hd_id3154810" xml-lang="en-US" level="2" l10n="CHG" oldref="5">Data source<comment>UFI: was Database</comment></paragraph>
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="HID_PROP_DATASOURCE">Defines the data source to which the form should refer.</ahelp> If you click the <emph>...</emph> button, you call the <link href="text/shared/01/01020000.xhp" name="Open"><emph>Open</emph></link> dialog, where you can choose a data source.</paragraph>
+</section>
+<section id="Section2">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CURSORSOURCE" id="bm_id3150275" localize="false"/><paragraph role="heading" id="hd_id3146948" xml-lang="en-US" level="2" l10n="CHG" oldref="6">Content<comment>UFI: was Data source</comment></paragraph>
+<paragraph role="paragraph" id="par_id3155922" xml-lang="en-US" l10n="CHG" oldref="17"><ahelp hid="HID_PROP_CURSORSOURCE">Determines the content to be used for the form. The content can be an existing table or a query (previously created in the database), or it can be defined by an SQL-statement. Before you enter a content you have to define the exact type in <emph>Content type</emph>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149657" xml-lang="en-US" l10n="CHG" oldref="27">If you have selected either "Table" or "Query" in <emph>Content type</emph>, the box lists all the tables and queries set up in the selected database.</paragraph>
+</section>
+<section id="Section3">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CURSORSOURCETYPE" id="bm_id3153381" localize="false"/><paragraph role="heading" id="hd_id3148755" xml-lang="en-US" level="2" l10n="U" oldref="7">Content type</paragraph>
+<paragraph role="paragraph" id="par_id3150541" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="HID_PROP_CURSORSOURCETYPE">Defines whether the data source is to be an existing database table or query, or if the form is to be generated based on an SQL statement.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="CHG" oldref="29">If you choose "Table" or "Query", the form will refer to the table or query that you specify under <emph>Content</emph>. If you want to create a new query or a <link href="text/shared/02/01170203.xhp" name="subform">subform</link>, then you have to choose the "SQL" option. You can then enter the statement for the SQL query or the subform directly in the <emph>List content</emph> box on the Control properties Data tab page.</paragraph>
+</section>
+<section id="Section4">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ESCAPE_PROCESSING" id="bm_id3144433" localize="false"/><paragraph role="heading" id="hd_id3158409" xml-lang="en-US" level="2" l10n="U" oldref="105">Analyze SQL command</paragraph>
+<paragraph role="paragraph" id="par_id3145171" xml-lang="en-US" l10n="CHG" oldref="106"><ahelp hid="HID_PROP_ESCAPE_PROCESSING">Specifies whether the SQL statement is to be analyzed by %PRODUCTNAME.</ahelp> If set to Yes, you can click the <emph>...</emph> button next to the <emph>Content</emph> list box. This will open a window where you can graphically create a database query. When you close that window, the SQL statement for the created query will be inserted in the <emph>Content</emph> list box.</paragraph>
+</section>
+<section id="Section5">
+<!-- removed HID HID_PROP_FILTER_CRITERIA --><paragraph role="heading" id="hd_id3154684" xml-lang="en-US" level="2" l10n="U" oldref="81">Filter</paragraph>
+<paragraph role="paragraph" id="par_id3150449" xml-lang="en-US" l10n="CHG" oldref="82"><ahelp hid="HID_PROP_FILTER_CRITERIA">Enter the required conditions for filtering the data in the form. The filter specifications follow SQL rules without using the WHERE clause.</ahelp> For example, if you want to display all records with the "Mike" forename, type into the data field: Forename = 'Mike'. You can also combine conditions: Forename = 'Mike' OR Forename = 'Peter'. All records matching either of these two conditions will be displayed.</paragraph>
+<paragraph role="paragraph" id="par_id3156212" xml-lang="en-US" l10n="CHG" oldref="83">The filter function is available in user mode through the <link href="text/shared/02/12030000.xhp" name="AutoFilter"><emph>AutoFilter</emph></link> and <link href="text/shared/02/12090000.xhp" name="Default Filter"><emph>Default Filter</emph></link> icons on the <link href="text/shared/main0213.xhp" name="Form Navigation Bar"><emph>Form Navigation</emph> Bar</link>.</paragraph>
+</section>
+<section id="Section6">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SORT_CRITERIA" id="bm_id3151353" localize="false"/><paragraph role="heading" id="hd_id3156005" xml-lang="en-US" level="2" l10n="U" oldref="84">Sort</paragraph>
+<paragraph role="paragraph" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid="HID_PROP_SORT_CRITERIA">Specifies the conditions to sort the data in the form. The specification of the sorting conditions follows SQL rules without the use of the ORDER BY clause.</ahelp> For example, if you want all records of a database to be sorted in one field in an ascending order and in another field in a descending order, enter Forename ASC, Name DESC (presuming Forename and Name are the names of the data fields).</paragraph>
+<paragraph role="paragraph" id="par_id3156444" xml-lang="en-US" l10n="CHG" oldref="86">The appropriate icons on the <link href="text/shared/main0213.xhp" name="Form Navigation Bar"><emph>Form Navigation</emph> Bar</link> can be used in User mode to sort: <link href="text/shared/02/12010000.xhp" name="Sort Ascending"><emph>Sort Ascending</emph></link>, <link href="text/shared/02/12020000.xhp" name="Sort Descending"><emph>Sort Descending</emph></link>, <link href="text/shared/02/12100100.xhp" name="Sort"><emph>Sort</emph></link>.</paragraph>
+</section>
+<section id="Section7">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_DATAENTRY" id="bm_id3154129" localize="false"/><paragraph role="heading" id="hd_id3148616" xml-lang="en-US" level="2" l10n="U" oldref="8">Add data only</paragraph>
+<paragraph role="paragraph" id="par_id3153139" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="HID_PROP_DATAENTRY">Determines if the form only allows the addition of new data (Yes) or if it allows other properties as well (No).</ahelp></paragraph>
+<paragraph role="note" id="par_id3148575" xml-lang="en-US" l10n="U" oldref="21">If <emph>Add data only</emph> is set to "Yes", changing or deleting data is not possible.</paragraph>
+</section>
+<section id="Section8">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_NAVIGATION" id="bm_id3155418" localize="false"/><paragraph role="heading" id="hd_id3148455" xml-lang="en-US" level="2" l10n="U" oldref="9">Navigation bar</paragraph>
+<paragraph role="paragraph" id="par_id3157976" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_PROP_NAVIGATION">Specifies whether the navigation functions in the lower form bar can be used.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3149485" xml-lang="en-US" l10n="U" oldref="79">The "Parent Form" option is used for subforms. If you choose this option for a subform, you can navigate using the records of the main form if the cursor is placed in the subform. A subform is linked to the parent form by a 1:1 relationship, so navigation is always performed in the parent form.</paragraph>
+</section>
+<section id="Section9">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_CYCLE" id="bm_id3151282" localize="false"/><paragraph role="heading" id="hd_id3151051" xml-lang="en-US" level="2" l10n="U" oldref="10">Cycle</paragraph>
+<paragraph role="paragraph" id="par_id3154944" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="HID_PROP_CYCLE">Determines how the navigation should be done using the tab key.</ahelp> Using the tab key, you can move forward in the form. If you simultaneously press the Shift key, the navigation will follow the opposite direction. If you reach the last (or the first) field and press the tab key again, it can have various effects. Define the key control with the following options:</paragraph>
+<table id="tbl_id3150658">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3166413" xml-lang="en-US" l10n="U" oldref="87">Option</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150424" xml-lang="en-US" l10n="U" oldref="88">Meaning</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150417" xml-lang="en-US" l10n="U" oldref="89">Default</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3157847" xml-lang="en-US" l10n="U" oldref="90">This setting automatically defines a cycle which follows an existing database link: If the form contains a database link, the Tab key will, by default, initiate a change to the next or previous record on exit from the last field (see All Records). If there is no database link the next/previous form is shown (see Current Page).</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153418" xml-lang="en-US" l10n="U" oldref="91">All records</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152972" xml-lang="en-US" l10n="U" oldref="92">This option applies to database forms only and is used to navigate through all records. If you use the Tab key to exit from the last field of a form, the current record is changed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151020" xml-lang="en-US" l10n="U" oldref="93">Active record</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145301" xml-lang="en-US" l10n="U" oldref="94">This option applies to database forms only, and is used to navigate within the current record. If you use the Tab key to exit from the last field of a form, the current record is changed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146913" xml-lang="en-US" l10n="U" oldref="95">Current page</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150330" xml-lang="en-US" l10n="U" oldref="96">On exit from the last field of a form, the cursor skips to the first field in the next form. This is standard for HTML forms; therefore, this option is especially relevant for HTML forms.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+</section>
+<section id="Section10">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ALLOW_ADDITIONS" id="bm_id3155445" localize="false"/><paragraph role="heading" id="hd_id3155064" xml-lang="en-US" level="2" l10n="U" oldref="11">Allow additions</paragraph>
+<paragraph role="paragraph" id="par_id3154360" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="HID_PROP_ALLOW_ADDITIONS">Determines if data can be added.</ahelp></paragraph>
+</section>
+<section id="Section11">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ALLOW_EDITS" id="bm_id3083286" localize="false"/><paragraph role="heading" id="hd_id3156054" xml-lang="en-US" level="2" l10n="U" oldref="12">Allow modifications</paragraph>
+<paragraph role="paragraph" id="par_id3156377" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="HID_PROP_ALLOW_EDITS"> Determines if the data can be modified.</ahelp></paragraph>
+</section>
+<section id="Section12">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_ALLOW_DELETIONS" id="bm_id3153924" localize="false"/><paragraph role="heading" id="hd_id3149019" xml-lang="en-US" level="2" l10n="CHG" oldref="13">Allow deletions</paragraph>
+<paragraph role="paragraph" id="par_id3148995" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="HID_PROP_ALLOW_DELETIONS">Determines if the data can be deleted.</ahelp></paragraph>
+</section>
+<section id="Section13">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_MASTERFIELDS" id="bm_id3147097" localize="false"/><paragraph role="heading" id="hd_id3153714" xml-lang="en-US" level="2" l10n="U" oldref="3">Link master fields</paragraph>
+<paragraph role="paragraph" id="par_id3147339" xml-lang="en-US" l10n="CHG" oldref="14"><ahelp hid="HID_PROP_MASTERFIELDS">If you create a <link href="text/shared/02/01170203.xhp" name="subform">subform</link>, enter the data field of the parent form responsible for the synchronization between parent and subform.</ahelp> To enter multiple values, press Shift + Enter after each input line.<comment>UFI: fixes #i22439#</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149568" xml-lang="en-US" l10n="CHG" oldref="71">The subform is based on an <link href="text/shared/00/00000005.xhp#sql" name="SQL">SQL</link> query; more specifically, on a <link href="text/shared/explorer/database/02010100.xhp" name="Parameter Query">Parameter Query</link>. If a field name is entered in the <emph>Link master fields</emph> box, the data contained in that field in the main form is read to a variable that you must enter in <emph>Link slave fields</emph>. In an appropriate SQL statement, this variable is compared to the table data that the subform refers to. Alternatively, you can enter the column name in the <emph>Link master fields</emph> box.</paragraph>
+<paragraph role="paragraph" id="par_id3156089" xml-lang="en-US" l10n="U" oldref="72">Consider the following example:</paragraph>
+<paragraph role="paragraph" id="par_id3151017" xml-lang="en-US" l10n="U" oldref="30">The database table on which the form is based is, for example, a customer database ("Customer"), where every customer has been given a unique number in a data field named "Cust_ID". A customer's orders are maintained in another database table. You now want to see each customer's orders after entering them into the form. In order to do this you should create a subform. Under <emph>Link master fields</emph> enter the data field from the customer database which clearly identifies the customer, that is, Cust_ID. Under <emph>Link slave fields</emph> enter the name of a variable which is to accept the data of the field Cust_ID, for example, x.</paragraph>
+<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="73">The subform should show the appropriate data from the orders table ("Orders") for each customer ID (Customer_ID -&gt; x). This is only possible if each order is uniquely assigned to one customer in the orders table. Alternatively, you can use another field called Customer_ID; however, to make sure that this field is not confused with the same field from the main form, the field is called Customer_Number.</paragraph>
+<paragraph role="paragraph" id="par_id3153537" xml-lang="en-US" l10n="U" oldref="74">Now compare the Customer_Number in the "Orders" table with the Customer_ID from the "Customers" table, which can be done, for example, using the x variable with the following SQL statement:</paragraph>
+<paragraph role="paragraph" id="par_id3155335" xml-lang="en-US" l10n="U" oldref="75">SELECT * FROM Orders WHERE Customer_Number =: x (if you want the subform to show all data from the orders table)</paragraph>
+<paragraph role="paragraph" id="par_id3163727" xml-lang="en-US" l10n="U" oldref="76">or:</paragraph>
+<paragraph role="paragraph" id="par_id3153921" xml-lang="en-US" l10n="U" oldref="77">SELECT Item FROM Orders WHERE Customer_Number =: x (if you want the subform from the orders table to show only the data contained in the "Item" field)</paragraph>
+<paragraph role="paragraph" id="par_id3148488" xml-lang="en-US" l10n="U" oldref="78">The SQL statement can either be entered in the <emph>Data source</emph> field, or you can create an appropriate parameter query, which can be used to create the subform.</paragraph>
+</section>
+<section id="Section14">
+<bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_PROP_SLAVEFIELDS" id="bm_id3145789" localize="false"/><paragraph role="heading" id="hd_id3150648" xml-lang="en-US" level="2" l10n="U" oldref="4">Link slave fields</paragraph>
+<paragraph role="paragraph" id="par_id3149923" xml-lang="en-US" l10n="CHG" oldref="15"><ahelp hid="HID_PROP_SLAVEFIELDS">If you create a subform, enter the variable where possible values from the parent form field can be stored.</ahelp> If a subform is based on a query, enter the variable that you defined in the query. If you create a form using an SQL statement entered in the <emph>Data source</emph> field, enter the variable you used in the statement. You can choose any variable name. If you want to enter multiple values, press Shift + Enter.</paragraph>
+<paragraph role="paragraph" id="par_id3155114" xml-lang="en-US" l10n="U" oldref="31">If, for example, you specified the Customer_ID database field as a parent field under <emph>Link master fields</emph>, then you can define under <emph>Link slave fields</emph> the name of the variable in which the values of the Customer_ID database field are to be stored. If you now specify an SQL statement in the <emph>Data source</emph> box using this variable, the relevant values are displayed in the subform.</paragraph>
+</section>
+</sort>
+<paragraph role="heading" id="hd_id3152778" xml-lang="en-US" level="2" l10n="U" oldref="32">What is a subform?</paragraph>
+<paragraph role="paragraph" id="par_id3155579" xml-lang="en-US" l10n="U" oldref="33">Forms are created based on a database table or database query. They display the data in a visually pleasant fashion and can be used to enter data or edit data.</paragraph>
+<paragraph role="paragraph" id="par_id3147094" xml-lang="en-US" l10n="U" oldref="34"><variable id="wozu">If you require a form that can refer to the data in a table or query and can additionally display data from another table, you should create a subform. 
+</variable> For example, this subform can be a text box that displays the data of another database table.</paragraph>
+<paragraph role="paragraph" id="par_id3157972" xml-lang="en-US" l10n="U" oldref="35">A subform is an additional component of the main form. The main form can be called the "parent form" or "master". Subforms are needed as soon as you want to access more than one table from a form. Each additional table requires its own subform.</paragraph>
+<paragraph role="paragraph" id="par_id4807275" xml-lang="en-US" l10n="NEW">After creating a form, it can be changed into a subform. To do this, enter Design Mode, and open the Form Navigator. In the Form Navigator, drag a form (that will become a subform) onto any other form (that will become a master).</paragraph>
+<paragraph role="paragraph" id="par_id3158444" xml-lang="en-US" l10n="CHG" oldref="36">The user of your document will not see that a form has subforms. The user only sees a document in which data is entered or where existing data is displayed.</paragraph>
+<paragraph role="paragraph" id="par_idN10C2A" xml-lang="en-US" l10n="NEW">Specify the Link master field from the data fields in the master form. In the subform, the Link slave field can be set as a field which will be matched to the contents of the Link master field.</paragraph>
+<paragraph role="paragraph" id="par_idN10C2D" xml-lang="en-US" l10n="NEW">When the user navigates through the data, the form always displays the current data record. If there are subforms defined, the contents of the subforms will be displayed after a short delay of approximate 200 ms. This delay enables you to quickly browse through the data records of the master form. If you navigate to the next master data record within the delay limit, the subform data need not be retrieved and displayed.</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03101000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">CStr Function [Runtime]</title>
+<filename>/text/sbasic/shared/03101000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T11:14:19">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="cstr">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3146958"><bookmark_value>CStr function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3146958" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03101000.xhp" name="CStr Function [Runtime]">CStr Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3147574" xml-lang="en-US" l10n="U" oldref="2">Converts any numeric expression to a string expression.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3148473" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3145315" xml-lang="en-US" l10n="U" oldref="4">CStr (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3153062" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3154760" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149457" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Expression:</emph> Any valid string or numeric expression that you want to convert.</paragraph>
+<paragraph role="heading" id="hd_id3150358" xml-lang="en-US" level="2" l10n="U" oldref="9">Expression Types and Conversion Returns</paragraph>
+<table id="tbl_id3148797">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="10">Boolean :</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="11">String that evaluates to either <emph>True</emph> or <emph>False</emph>.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147287" xml-lang="en-US" l10n="U" oldref="12">Date :</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155411" xml-lang="en-US" l10n="U" oldref="13">String that contains the date and time.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147428" xml-lang="en-US" l10n="U" oldref="14">Null :</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150486" xml-lang="en-US" l10n="U" oldref="15">Run-time error.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153953" xml-lang="en-US" l10n="U" oldref="16">Empty :</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155306" xml-lang="en-US" l10n="U" oldref="17">String without any characters.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="18">Any :</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152938" xml-lang="en-US" l10n="U" oldref="19">Corresponding number as string.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3155738" xml-lang="en-US" l10n="U" oldref="20">Zeros at the end of a floating-point number are not included in the returned string.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3154729" xml-lang="en-US" level="2" l10n="U" oldref="21">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="22">Sub ExampleCSTR</paragraph>
+<paragraph role="paragraph" id="par_id3154943" xml-lang="en-US" l10n="U" oldref="23">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3156283" xml-lang="en-US" l10n="U" oldref="24">Msgbox CDbl(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3147396" xml-lang="en-US" l10n="U" oldref="25">Msgbox CInt(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3155600" xml-lang="en-US" l10n="U" oldref="26">Msgbox CLng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153416" xml-lang="en-US" l10n="U" oldref="27">Msgbox CSng(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3156559" xml-lang="en-US" l10n="U" oldref="28">sVar = CStr(1234.5678)</paragraph>
+<paragraph role="paragraph" id="par_id3153947" xml-lang="en-US" l10n="U" oldref="29">MsgBox sVar</paragraph>
+<paragraph role="paragraph" id="par_id3150327" xml-lang="en-US" l10n="U" oldref="30">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0000000210xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Warning Print Options</title>
+<filename>/text/shared/00/00000210.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/sd:ModalDialog:DLG_PRINT_WARNINGS" id="bm_id3158421" localize="false"/><paragraph role="heading" id="hd_id3145759" xml-lang="en-US" level="1" l10n="U" oldref="1">Warning Print Options</paragraph>
+<paragraph role="paragraph" id="par_id3152352" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SD:MODALDIALOG:DLG_PRINT_WARNINGS">The<emph> Warning Print Options </emph>dialog appears when the page setup does not match the defined print range.</ahelp> This is the case, for example, if you draw a rectangle that is larger than the current page format.</paragraph>
+<paragraph role="heading" id="hd_id3150620" xml-lang="en-US" level="2" l10n="U" oldref="3">Print options</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PRINT_WARNINGS:RBT_SCALE" id="bm_id3148765" localize="false"/><paragraph role="heading" id="hd_id3156324" xml-lang="en-US" level="3" l10n="U" oldref="5">Fit page to print range</paragraph>
+<embed href="text/shared/optionen/01070400.xhp#fittopage"/>
+<paragraph role="note" id="par_id3158405" xml-lang="en-US" l10n="U" oldref="7">If you select the <emph>Fit page to print range </emph>option, the <emph>Warning Print Options</emph> dialog will not appear in subsequent print runs of this document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PRINT_WARNINGS:RBT_POSTER" id="bm_id3147009" localize="false"/><paragraph role="heading" id="hd_id3156553" xml-lang="en-US" level="3" l10n="CHG" oldref="8">Print on multiple pages<comment>i78245</comment></paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SD:RADIOBUTTON:DLG_PRINT_WARNINGS:RBT_POSTER">Specifies whether to distribute the printout on multiple pages.</ahelp> The print range will be printed on multiple pages.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PRINT_WARNINGS:RBT_CUT" id="bm_id3160302" localize="false"/><paragraph role="heading" id="hd_id3147010" xml-lang="en-US" level="3" l10n="U" oldref="10">Trim</paragraph>
+<paragraph role="paragraph" id="par_id3151111" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SD:RADIOBUTTON:DLG_PRINT_WARNINGS:RBT_CUT">Specifies that anything extending beyond the maximum print range will be cut off and not included in the printing.</ahelp></paragraph>
+</body>
+</helpdocument>

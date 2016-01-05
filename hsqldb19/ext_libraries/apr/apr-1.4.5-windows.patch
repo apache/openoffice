@@ -1,0 +1,15 @@
+--- misc/apr-1.4.5/Makefile.win	2011-01-28 03:27:19.000000000 +0100
++++ misc/build/apr-1.4.5/Makefile.win	2013-05-27 11:35:37.224622100 +0200
+@@ -45,12 +45,7 @@
+ 
+ PREFIX=..\apr-dist
+ 
+-!IF [$(COMSPEC) /c cl /nologo /? \
+-	| $(SystemRoot)\System32\find.exe "x64" >NUL ] == 0
+-ARCH=x64 Release
+-!ELSE
+ ARCH=Win32 Release
+-!ENDIF
+ 
+ !MESSAGE ARCH        = $(ARCH)
+ !MESSAGE PREFIX      = $(PREFIX)  (install path)

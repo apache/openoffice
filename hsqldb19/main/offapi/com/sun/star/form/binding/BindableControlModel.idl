@@ -1,0 +1,88 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_form_binding_BindableControlModel_idl__
+#define __com_sun_star_form_binding_BindableControlModel_idl__
+
+#ifndef __com_sun_star_form_binding_XBindableValue_idl__
+#include <com/sun/star/form/binding/XBindableValue.idl>
+#endif
+#ifndef __com_sun_star_form_FormControlModel_idl__ 
+#include <com/sun/star/form/FormControlModel.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module form { module binding {
+
+/** specifies the model of a form control which supports binding to an external
+    value supplier.
+*/
+service BindableControlModel
+{
+    /** specifies the basic functionality for a form control model
+
+        <p>Via this service, bindable control models inherit the
+        <type scope="com::sun::star::util">XCloneable</type> interface.<br/>
+        If an bindable control model, at which a binding has been established (via
+        <member>XBindableValue::setValueBinding</member>), is being cloned, then the
+        binding is also established at the clone. Effectively, this means that
+        both control model instances share the same binding instance.</p>
+    */
+	service com::sun::star::form::FormControlModel; 
+
+    /** specifies support for being bound to an external value
+
+        <p>When a <type>BindableControlModel</type> is bound to an external value,
+        then every change in the control model's value is <em>immediately</em> reflected
+        in the external binding.</p>
+
+        <p>If the binding set via this interface supports the <member>ValueBinding::ReadOnly</member>
+        and <member>ValueBinding::Relevant</member> properties, they're respected by the control model:
+        <ul><li>The control model's own <code>ReadOnly</code> property (if present) is kept in sync with the
+                binding's <code>ReadOnly</code> property. That is, any control using the value
+                binding is read-only as long as the binding is.</li>
+            <li>The control model's own <code>Enabled</code> property (if present) is kept in sync
+                with the binding's <code>Relevant</code> property. That is, any control using
+                the value binding is disabled as long as the binding is not relevant.</li>
+        </ul>
+        </p>
+
+        <p>In both cases, explicit changes of the model's property are ignored if they would relax
+        the restriction imposed by the binding.<br/>
+        For instance, if the binding declares it's value to
+        be read-only (indicated by <member>ValueBinding::ReadOnly</member> being <TRUE/>), then
+        any attempt to set the <code>ReadOnly</code> property of the control model to <FALSE/> will
+        fail. However, if the binding's value is not read-only, then the <code>ReadOnly</code>
+        property at the control model can be freely set.<br/>
+        The very same holds for the binding's <member>ValueBinding::Relevant</member> and the control
+        model's <code>Enabled</code> properties.</p>
+    */
+    interface XBindableValue;
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

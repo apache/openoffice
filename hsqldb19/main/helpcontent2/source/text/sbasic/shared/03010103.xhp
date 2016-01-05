@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03010103xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Print Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03010103.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="print">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147230"><bookmark_value>Print statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3147230" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03010103.xhp" name="Print Statement [Runtime]">Print Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="CHG" oldref="2">Outputs the specified strings or numeric expressions to a dialog or to a file.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3145785" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="code" id="par_id3153188" xml-lang="en-US" l10n="CHG" oldref="4">Print [#FileName,] Expression1[{;|,} [Spc(Number As Integer);] [Tab(pos As Integer);] [Expression2[...]] </paragraph>
+<paragraph role="heading" id="hd_id3147348" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameter:</paragraph>
+<paragraph role="paragraph" id="par_id2508621" xml-lang="en-US" l10n="NEW">
+<emph>FileName:</emph> Any numeric expression that contains the file number that was set by the Open statement for the respective file.<comment>ufi: copied this para from Write statement, see i61758</comment></paragraph>
+<paragraph role="paragraph" id="par_id3163712" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Expression</emph>: Any numeric or string expression to be printed. Multiple expressions can be separated by a semicolon. If separated by a comma, the expressions are indented to the next tab stop. The tab stops cannot be adjusted.</paragraph>
+<paragraph role="paragraph" id="par_id3153092" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Number</emph>: Number of spaces to be inserted by the <emph>Spc</emph> function.</paragraph>
+<paragraph role="paragraph" id="par_id3145364" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Pos</emph>: Spaces are inserted until the specified position.</paragraph>
+<paragraph role="paragraph" id="par_id3154319" xml-lang="en-US" l10n="U" oldref="9">If a semicolon or comma appears after the last expression to be printed, $[officename] Basic stores the text in an internal buffer and continues program execution without printing. When another Print statement without a semicolon or comma at the end is encountered, all text to be printed is printed at once.</paragraph>
+<paragraph role="paragraph" id="par_id3145272" xml-lang="en-US" l10n="U" oldref="10">Positive numeric expressions are printed with a leading space. Negative expressions are printed with a leading minus sign. If a certain range is exceeded for floating-point values, the respective numeric expression is printed in exponential notation.</paragraph>
+<paragraph role="paragraph" id="par_id3154011" xml-lang="en-US" l10n="U" oldref="11">If the expression to be printed exceeds a certain length, the display will automatically wrap to the next line.</paragraph>
+<paragraph role="note" id="par_id3146969" xml-lang="en-US" l10n="U" oldref="12">You can insert the Tab function, enclosed by semicolons, between arguments to indent the output to a specific position, or you can use the <emph>Spc</emph> function to insert a specified number of spaces.</paragraph>
+<paragraph role="heading" id="hd_id3146912" xml-lang="en-US" level="2" l10n="U" oldref="13">Example:</paragraph>
+<paragraph role="code" id="par_id3153711" xml-lang="en-US" l10n="U" oldref="14">Sub ExamplePrint</paragraph>
+<paragraph role="code" id="par_id3153764" xml-lang="en-US" l10n="U" oldref="15">Print "ABC"</paragraph>
+<paragraph role="code" id="par_id3155764" xml-lang="en-US" l10n="U" oldref="16">Print "ABC","123"</paragraph>
+<paragraph role="code" id="par_id5484176" xml-lang="en-US" l10n="NEW">i = FreeFile()</paragraph>
+<paragraph role="code" id="par_id2904141" xml-lang="en-US" l10n="NEW">Open <switchinline select="sys"><caseinline select="WIN">"C:\Temp.txt"
+</caseinline><defaultinline>"~/temp.txt"</defaultinline></switchinline> For Output As i</paragraph>
+<paragraph role="code" id="par_id36317" xml-lang="en-US" l10n="NEW">Print #i, "ABC"</paragraph>
+<paragraph role="code" id="par_id7381817" xml-lang="en-US" l10n="NEW">Close #i</paragraph>
+<paragraph role="code" id="par_id3147339" xml-lang="en-US" l10n="U" oldref="17">end Sub</paragraph>
+</body>
+</helpdocument>

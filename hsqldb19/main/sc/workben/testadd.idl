@@ -1,0 +1,63 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef SC_WORKBEN_TESTADD_IDL
+#define SC_WORKBEN_TESTADD_IDL
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/beans/XPropertySet.idl>
+#include <com/sun/star/table/XCellRange.idl>
+#include <com/sun/star/sheet/XVolatileResult.idl>
+
+
+module stardiv
+{
+module starcalc
+{
+module test
+{
+
+/** test-interface for an AddIn implementation
+ */
+[ uik(2DB48150-7FBB-11d3-9F510050-042A51C9), ident("XTestAddIn", 1.0) ]
+interface XTestAddIn:com::sun::star::uno::XInterface
+{
+	long countParams([in]sequence<any> aArgs);
+	double addOne([in]double fValue);
+	string repeatStr([in]string aStr, [in]long nCount);
+	string getDateString([in]com::sun::star::beans::XPropertySet xCaller, [in]double fValue);
+	long getColorValue([in]com::sun::star::table::XCellRange xRange);
+	sequence< sequence<double> > transpose([in]sequence< sequence<double> > aMatrix);
+	sequence< sequence<long> > transposeInt([in]sequence< sequence<long> > aMatrix);
+	com::sun::star::sheet::XVolatileResult callAsync([in]string aString);
+	string repeatMultiple([in]long nCount, [in]any aFirst, [in]sequence<any> aFollow);
+	any getStrOrVal([in]long nFlag);
+};
+
+};
+};
+};
+
+
+
+#endif
+

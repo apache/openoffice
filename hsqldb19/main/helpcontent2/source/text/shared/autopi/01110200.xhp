@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedautopi01110200xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">HTML Export - Page 2</title>
+<filename>/text/shared/autopi/01110200.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="seite2">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149233"><bookmark_value>kiosk export</bookmark_value>
+<bookmark_value>HTML; live presentations</bookmark_value>
+<bookmark_value>live presentations on the Internet</bookmark_value>
+<bookmark_value>showing;live presentations on the Internet</bookmark_value>
+<bookmark_value>presentations; live on the Internet</bookmark_value>
+<bookmark_value>Internet; presentations</bookmark_value>
+<bookmark_value>WebCast export</bookmark_value>
+</bookmark><comment>changed "in the Internet" to "on the Internet", see i73714</comment>
+<bookmark xml-lang="en-US" branch="hid/SD_HID_SD_HTMLEXPORT_PAGE2" id="bm_id7226173" localize="false"/><comment>inserted this dialog id, see i72163</comment><paragraph role="heading" id="hd_id3154840" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/autopi/01110200.xhp" name="HTML Export - Page 2">HTML Export - Page 2</link></paragraph>
+<paragraph role="paragraph" id="par_id3154094" xml-lang="en-US" l10n="U" oldref="2">Determines the type of publication.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3151330" xml-lang="en-US" l10n="U" oldref="73">You can specify if you want to include frames, create a title, or display presentation notes.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000401.xhp#htmlspeichern2"/>
+</section>
+<paragraph role="heading" id="hd_id3152924" xml-lang="en-US" level="2" l10n="U" oldref="9">Publication type</paragraph>
+<paragraph role="paragraph" id="par_id3154751" xml-lang="en-US" l10n="U" oldref="10">Defines the basic settings for the intended export.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_STANDARD" id="bm_id3157958" localize="false"/><paragraph role="heading" id="hd_id3147399" xml-lang="en-US" level="2" l10n="U" oldref="3">Standard HTML format</paragraph>
+<paragraph role="paragraph" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_STANDARD">Creates standard HTML pages from export pages.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_FRAMES" id="bm_id3147009" localize="false"/><paragraph role="heading" id="hd_id3145071" xml-lang="en-US" level="2" l10n="U" oldref="5">Standard HTML with frames</paragraph>
+<paragraph role="paragraph" id="par_id3154824" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_FRAMES">Creates standard HTML pages with frames. The exported page will be placed in the main frame, and the frame to the left will display a table of contents in the form of hyperlinks.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:DLG_PUBLISHING:PAGE2_CONTENT" id="bm_id3147242" localize="false"/><paragraph role="heading" id="hd_id3149398" xml-lang="en-US" level="3" l10n="U" oldref="11">Create title page</paragraph>
+<paragraph role="paragraph" id="par_id3152780" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SD:CHECKBOX:DLG_PUBLISHING:PAGE2_CONTENT">Creates a title page for your document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:DLG_PUBLISHING:PAGE2_NOTES" id="bm_id3149236" localize="false"/><paragraph role="heading" id="hd_id3163804" xml-lang="en-US" level="3" l10n="U" oldref="13"><switchinline select="appl"><caseinline select="IMPRESS">Show notes 
+</caseinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SD:CHECKBOX:DLG_PUBLISHING:PAGE2_NOTES">Specifies that your notes are also displayed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_KIOSK" id="bm_id3147336" localize="false"/><paragraph role="heading" id="hd_id3156117" xml-lang="en-US" level="2" l10n="U" oldref="15">Automatic</paragraph>
+<paragraph role="paragraph" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_KIOSK">Creates a default HTML presentation as a kiosk export, in which the slides are automatically advanced after a specified amount of time.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_CHG_DEFAULT" id="bm_id3156327" localize="false"/><paragraph role="heading" id="hd_id3155421" xml-lang="en-US" level="3" l10n="U" oldref="17">As stated in document</paragraph>
+<paragraph role="paragraph" id="par_id3150275" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_CHG_DEFAULT">The slide transition depends on the timing that you set for each slide in the presentation. If you set a manual page transition, the HTML presentation introduces a new page by pressing any key from your keyboard.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_CHG_AUTO" id="bm_id3150772" localize="false"/><paragraph role="heading" id="hd_id3156307" xml-lang="en-US" level="3" l10n="U" oldref="19">Automatic</paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_CHG_AUTO">The page transition takes place automatically after the specified period of time elapses and does not depend on the presentation's contents</ahelp>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:TimeField:DLG_PUBLISHING:PAGE2_DURATION_TMF" id="bm_id3152472" localize="false"/><paragraph role="heading" id="hd_id3150503" xml-lang="en-US" level="3" l10n="U" oldref="21">Slide view time</paragraph>
+<paragraph role="paragraph" id="par_id3151245" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SD:TIMEFIELD:DLG_PUBLISHING:PAGE2_DURATION_TMF">Defines the amount of time for each slide display.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:DLG_PUBLISHING:PAGE2_ENDLESS" id="bm_id3149294" localize="false"/><paragraph role="heading" id="hd_id3154347" xml-lang="en-US" level="3" l10n="U" oldref="23">Endless</paragraph>
+<paragraph role="paragraph" id="par_id3149655" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SD:CHECKBOX:DLG_PUBLISHING:PAGE2_ENDLESS">Automatically restarts the HTML presentation after the last slide has been displayed.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_WEBCAST" id="bm_id3152811" localize="false"/><paragraph role="heading" id="hd_id3151054" xml-lang="en-US" level="2" l10n="U" oldref="25">WebCast</paragraph>
+<paragraph role="paragraph" id="par_id3150543" xml-lang="en-US" l10n="U" oldref="26"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_WEBCAST">In a WebCast export, automatic scripts will be generated with Perl or ASP support.</ahelp> This enables the speaker (for example, a speaker in a telephone conference using a slide show on the Internet) to change the slides in the audience's web browsers. You will find more information on <link href="text/shared/autopi/01110200.xhp" name="WebCast">WebCast</link> later in this section.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_ASP" id="bm_id3154684" localize="false"/><paragraph role="heading" id="hd_id3154365" xml-lang="en-US" level="3" l10n="U" oldref="27">Active Server Pages (ASP)</paragraph>
+<paragraph role="paragraph" id="par_id3148922" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_ASP">When you select the<emph> ASP </emph>option, the WebCast export creates ASP pages. Note that the HTML presentation can only be offered by a web server supporting ASP.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:DLG_PUBLISHING:PAGE2_PERL" id="bm_id3152920" localize="false"/><paragraph role="heading" id="hd_id3149765" xml-lang="en-US" level="3" l10n="U" oldref="29">Perl</paragraph>
+<paragraph role="paragraph" id="par_id3145174" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SD:RADIOBUTTON:DLG_PUBLISHING:PAGE2_PERL">Used by WebCast export to create HTML pages and Perl scripts.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:DLG_PUBLISHING:PAGE2_INDEX" id="bm_id3151382" localize="false"/><paragraph role="heading" id="hd_id3150868" xml-lang="en-US" level="4" l10n="U" oldref="31">URL for listeners</paragraph>
+<paragraph role="paragraph" id="par_id3149203" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SD:EDIT:DLG_PUBLISHING:PAGE2_INDEX">Specifies the URL (absolute or relative) to be entered by the viewer in order to see the presentation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:DLG_PUBLISHING:PAGE2_URL" id="bm_id3154218" localize="false"/><paragraph role="heading" id="hd_id3147228" xml-lang="en-US" level="4" l10n="U" oldref="33">URL for presentation</paragraph>
+<paragraph role="paragraph" id="par_id3156214" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SD:EDIT:DLG_PUBLISHING:PAGE2_URL">Specifies the URL (absolute or relative), where the created HTML presentation on the web server has been saved.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:DLG_PUBLISHING:PAGE2_CGI" id="bm_id3155429" localize="false"/><paragraph role="heading" id="hd_id3153367" xml-lang="en-US" level="4" l10n="U" oldref="35">URL for Perl scripts</paragraph>
+<paragraph role="paragraph" id="par_id3159255" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SD:EDIT:DLG_PUBLISHING:PAGE2_CGI">Specifies the URL (absolute or relative) for the generated Perl scripts.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3150486" xml-lang="en-US" level="2" l10n="U" oldref="37">More Information on WebCast Export</paragraph>
+<paragraph role="paragraph" id="par_id3152578" xml-lang="en-US" l10n="U" oldref="38">There are two possible options for exporting $[officename] Impress presentations using WebCast technology: Active Server Pages (ASP) and Perl.</paragraph>
+<paragraph role="warning" id="par_id3153364" xml-lang="en-US" l10n="U" oldref="71">In either case, the WebCast needs an HTTP server offering either Perl or ASP as scripting. Therefore, the exporting option depends on the HTTP server used.</paragraph>
+<paragraph role="heading" id="hd_id3151112" xml-lang="en-US" level="2" l10n="U" oldref="39">WebCast in ASP</paragraph>
+<paragraph role="heading" id="hd_id3159197" xml-lang="en-US" level="3" l10n="U" oldref="40">Exporting</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146119" xml-lang="en-US" l10n="U" oldref="41">To export to ASP, in a $[officename] Impress document choose <emph>File - Export</emph>. You then see the <emph>Export</emph> dialog in which you select <emph>HTML Document</emph> as the file type. Once you have selected a directory and entered a file name, click <emph>Export</emph>. For export as ASP, we recommend selecting a "secret" file name for the HTML file (see below for more details). You then see the <emph>HTML Export</emph> dialog. Several files will be written to the directory you have just selected.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149410" xml-lang="en-US" l10n="U" oldref="42">The presenter uses the entered file name to change between the slides viewed by the audience. You can save the WebCast files locally or save them directly to an HTTP server. You can later transfer locally saved files to the HTTP server by FTP. Note that WebCast only works if the files are requested over an HTTP server.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3157974" xml-lang="en-US" l10n="U" oldref="43">Do not use the same directory for two different HTML exports.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153157" xml-lang="en-US" l10n="U" oldref="44">Select <emph>WebCast</emph> as a publishing type on the second page of the HTML Export Wizard.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154790" xml-lang="en-US" l10n="U" oldref="45">In the options area for WebCast, select the <emph>Active Server Pages (ASP)</emph> option. You can now continue defining other settings or start the export by clicking the <emph>Create</emph> button.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3153281" xml-lang="en-US" level="3" l10n="U" oldref="46">Using ASP WebCast</paragraph>
+<paragraph role="paragraph" id="par_id3149910" xml-lang="en-US" l10n="U" oldref="47">You can use WebCast as soon as the exported files can be accessed from an HTTP server.</paragraph>
+<paragraph role="paragraph" id="par_id3154503" xml-lang="en-US" l10n="U" oldref="48">
+<emph>Example</emph>:</paragraph>
+<paragraph role="paragraph" id="par_id3152375" xml-lang="en-US" l10n="U" oldref="49">Let's assume that you installed the Microsoft Internet Information Server on your computer. You entered the "c:\Inet\wwwroot\presentation" directory as an HTML output directory during the IIS setup. The URL of your computer is assumed as follows: "http://myserver.com".</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150715" xml-lang="en-US" l10n="U" oldref="50">You have saved the files that have been created during the Export process in the c:\Inet\wwwroot\presentation\ directory. In this directory, the Export creates an HTML file that can be named, for example, as "secret.htm". You entered this name in the Save dialog (see above). The presenter can now browse to the HTML Export files by entering the http://myserver.com/presentation/secret.htm URL in any HTTP Browser having JavaScript support. The presenter is now able to modify the page using some form controls.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3159110" xml-lang="en-US" l10n="U" oldref="51">The audience can now view the slide selected by the presenter through the URL http://myserver.com/presentation/webcast.asp. They cannot move to other slides found at this URL, unless the file names are known. Please ensure that the HTTP server does not show the directory listing.</paragraph>
+<paragraph role="heading" id="hd_id3153732" xml-lang="en-US" level="2" l10n="U" oldref="52">WebCast over Perl</paragraph>
+<paragraph role="heading" id="hd_id3152999" xml-lang="en-US" level="3" l10n="U" oldref="53">Exporting</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3146972" xml-lang="en-US" l10n="U" oldref="54">To export, in a $[officename] Impress document choose <emph>File - Export</emph>. This opens the <emph>Export</emph> dialog, in which you select <emph>HTML Document</emph> as the file type. After selecting a folder and entering a file name, click <emph>Save</emph>. This opens the <emph>HTML Export Wizard</emph>. This will write some files to the folder you have just selected.</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3156362" xml-lang="en-US" l10n="U" oldref="55">The entered file name will be used by the presenter to switch through the slides. Please select an empty directory.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148432" xml-lang="en-US" l10n="U" oldref="56">In the second page of the HTML Export, select <emph>WebCast</emph> as the publication type.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149018" xml-lang="en-US" l10n="U" oldref="57">In the option area for WebCast, select <emph>Perl</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154509" xml-lang="en-US" l10n="U" oldref="58">In the <emph>URL for listeners</emph> text box, enter the file name of the HTML document that will be used by the audience. In <emph>URL for presentation</emph>, enter the URL of the directory that will be used for the presentation and, in <emph>URL for Perl scripts</emph>, enter the URL for the CGI script directory. You can now define further settings on the following pages of the Wizard or start the export process by clicking the <emph>Create</emph> button.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id3148996" xml-lang="en-US" level="3" l10n="U" oldref="59">Using Perl WebCast</paragraph>
+<paragraph role="paragraph" id="par_id3159268" xml-lang="en-US" l10n="U" oldref="60">The files that have been created during the export must now be set up in the Perl enabled HTTP server. This cannot be done automatically because of the variety of different HTTP servers having Perl support. The steps to follow will be described next. Please refer to your server manual or ask your network administrator how to apply these steps on your server.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147340" xml-lang="en-US" l10n="U" oldref="61">You should first move the files that have been created during the export into the correct directory on the HTTP server.</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155936" xml-lang="en-US" l10n="U" oldref="62">Move all files having the htm, jpg and gif extensions into the directory on your HTTP server that has been referred to in the text box <emph>URL for presentation</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151014" xml-lang="en-US" l10n="U" oldref="63">All files having the pl and txt extensions have to be moved into the directory on your HTTP server that has been referred to in the <emph>URL for Perl scripts</emph> text box. This directory has to be configured in a way that the Perl scripts contained there can also be run by an HTTP request.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151250" xml-lang="en-US" l10n="U" oldref="64">On UNIX systems grant the files with the pl extension the rights to be executable by the HTTP server. Normally, this is done with the chmod command. The rights of the currpic.txt file must be set to be writable by the HTTP server.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3153534" xml-lang="en-US" l10n="U" oldref="65">Now you should be able to use WebCast.</paragraph>
+<paragraph role="paragraph" id="par_id3156711" xml-lang="en-US" l10n="U" oldref="66">
+<emph>Example</emph>:</paragraph>
+<paragraph role="paragraph" id="par_id3147313" xml-lang="en-US" l10n="U" oldref="67">In this example, you have a Linux computer with an HTTP server. The URL of your HTTP server is http://myserver.com and the output directory of your HTML documents is the //user/local/http/ directory. Your Perl scripts are contained in the //user/local/http/cgi-bin/ directory. Enter secret.htm as an export file name and presentation.htm as <emph>URL for listeners</emph>. In the <emph>URL for presentation</emph> text box enter http://myserver.com/presentation/ and for the <emph>URL for Perl scripts</emph> enter http://myserver.com/cgi-bin/.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145792" xml-lang="en-US" l10n="U" oldref="68">Now, copy all *.htm, *.jpg and *.gif files from the directories that were specified during the export into the //user/local/http/presentation/ directory on your HTTP Server and copy all files with the *.pl and *.txt extensions into the //user/local/http/cgi-bin/ directory.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153920" xml-lang="en-US" l10n="U" oldref="69">Login on your server as root and switch to the //user/local/http/cgi-bin/ directory. You can define the corresponding rights using the chmod command.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3148479" xml-lang="en-US" l10n="U" oldref="70">Once you have finished installing the Perl files, the presenter will be able to give the presentation. The listeners can view this presentation under the URL http://myserver.com/presentation/presentation.htm.</paragraph>
+</body>
+</helpdocument>

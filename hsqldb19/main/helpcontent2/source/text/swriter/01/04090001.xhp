@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriter0104090001xml" indexer="include">
+         <title xml-lang="en-US" id="tit">Document</title>
+         <filename>/text/swriter/01/04090001.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="dokument">
+<bookmark xml-lang="en-US" branch="hid/SW_HID_FLD_DOK" id="bm_id3145246" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150017" role="heading" level="1" l10n="U" oldref="1"><link href="text/swriter/01/04090001.xhp" name="Document">Document</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147167" role="paragraph" l10n="U" oldref="2">Fields are used to insert information about the current document, for example, file name, template, statistics, user data, date, and time.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/swriter/00/00000404.xhp#felddokument"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3154470" role="note" l10n="U" oldref="3">For the HTML export and import of date and time fields, <link href="text/swriter/01/04090007.xhp#datumuhrzeit" name="special $[officename] formats">special $[officename] formats</link> are used.</paragraph>
+      <section id="feldtyp">
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOK:LB_DOKTYPE" id="bm_id3153666" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3151312" role="heading" level="2" l10n="U" oldref="4">Type</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153672" role="paragraph" l10n="U" oldref="5"><ahelp hid="SW:LISTBOX:TP_FLD_DOK:LB_DOKTYPE">Lists the available field types. To add a field to your document, click a field type, click a field in the <emph>Select </emph>list, and then click <emph>Insert</emph>.</ahelp> The following fields are available:</paragraph>
+      </section>
+      <table id="tbl_id3149686">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155182" role="tablehead" l10n="U" oldref="6">Type</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3143272" role="tablehead" l10n="U" oldref="7">Meaning</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151248" role="tablecontent" l10n="U" oldref="10">Author</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148975" role="tablecontent" l10n="CHG" oldref="11">Inserts the name of the current user. </paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145759" role="tablecontent" l10n="U" oldref="18">Chapter</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149172" role="tablecontent" l10n="U" oldref="19">Inserts the chapter number and/or the chapter name.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145771" role="tablecontent" l10n="U" oldref="14">Date</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151370" role="tablecontent" l10n="CHG" oldref="15">Inserts the current date. You can insert the date as a fixed field - <item type="literal">Date (fixed)</item> - that does not change, or as a dynamic field - <item type="literal">Date</item> - that it is updated automatically. To manually update the <item type="literal">Date</item> field, press F9.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150699" role="tablecontent" l10n="U" oldref="12">File name</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150122" role="tablecontent" l10n="U" oldref="13">Inserts the filename and/or the directory path of the current document, as well as the filename without extension.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3147495" role="tablecontent" l10n="U" oldref="20">Page</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3145264" role="tablecontent" l10n="U" oldref="21">Inserts the page number of the current, previous, or next page.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150561" role="tablecontent" l10n="U" oldref="8">Sender</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146341" role="tablecontent" l10n="U" oldref="9">Inserts fields containing user data. You can change the user-data that is displayed by choosing <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01010100.xhp" name="$[officename] - User Data">$[officename] - User Data</link></emph>.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148863" role="tablecontent" l10n="U" oldref="22">Statistics</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3151091" role="tablecontent" l10n="U" oldref="23">Inserts document statistics, such as page and word counts, as a field. To view the statistics of a document, choose <emph>File - Properties</emph>, and then click the <emph>Statistics</emph> tab.
+               </paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3153302" role="tablecontent" l10n="U" oldref="16">Templates</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3156123" role="tablecontent" l10n="U" oldref="17">Inserts the filename, the path, or the filename without the file extension of the current template. You can also insert the names of the "Category" and the "Style" formats used in the current template. To view the names of the template categories and the styles used in the templates, choose <emph>File - Templates -</emph><link href="text/shared/01/01110100.xhp" name="Organize"><emph>Organize</emph></link>.</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146939" role="tablecontent" l10n="U" oldref="24">Time</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3154340" role="tablecontent" l10n="CHG" oldref="25">Inserts the current time. You can insert the time as a fixed field - <item type="literal">Time (fixed)</item> - that does not change, or as a dynamic field - <item type="literal">Time</item> - that it is updated automatically. To manually update the <item type="literal">Time</item> field, press F9.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <section id="hinweis">
+         <paragraph xml-lang="en-US" id="par_id3154631" role="note" l10n="U" oldref="26">The following fields can only be inserted if the corresponding field type is selected in the <emph>Type </emph>list.</paragraph>
+      </section>
+      <section id="auswahl">
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOK:LB_DOKSELECTION" id="bm_id3150671" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150660" role="heading" level="2" l10n="CHG"
+                    oldref="27">Select<comment>on "Document" and "DocInformation" tab page this is called "Select", on the other tab pages "Selection"</comment></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150678" role="paragraph" l10n="U" oldref="28"><ahelp hid="SW:LISTBOX:TP_FLD_DOK:LB_DOKSELECTION">Lists the available fields for the field type selected in the <emph>Type </emph>list. To insert a field, click the field, and then click <emph>Insert</emph>.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155537" role="tip" l10n="U" oldref="53">To quickly insert a field from the list, hold down <switchinline select="sys"><caseinline select="MAC">Command 
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline> and double-click the field.</paragraph>
+         <table id="tbl_id3148722">
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3155359" role="tablehead" l10n="U" oldref="30">Fields</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3154220" role="tablehead" l10n="U" oldref="31">Function</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3145107" role="tablecontent" l10n="U" oldref="32">Previous page</paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3149595" role="tablecontent" l10n="U" oldref="33">Inserts the page number of the previous page in the document.</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3146896" role="tablecontent" l10n="U" oldref="34">Next page </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3148923" role="tablecontent" l10n="U" oldref="35">Inserts the page number of the next page in the document.</paragraph>
+               </tablecell>
+            </tablerow>
+            <tablerow>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3156032" role="tablecontent" l10n="U" oldref="36">Page Number </paragraph>
+               </tablecell>
+               <tablecell>
+                  <paragraph xml-lang="en-US" id="par_id3159212" role="tablecontent" l10n="U" oldref="37">Inserts the current page number.</paragraph>
+               </tablecell>
+            </tablerow>
+         </table>
+
+         <paragraph xml-lang="en-US" id="par_id3159229" role="paragraph" l10n="U" oldref="38">In the <emph>Format</emph>, click the numbering format that you want to use.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145188" role="paragraph" l10n="U" oldref="39">If you want, you can enter an <emph>Offset </emph>for the displayed page number. With an <emph>Offset</emph> value of 1, the field will display a number that is 1 more than the current page number, but only if a page with that number exists. On the last page of the document, this same field will be empty.</paragraph>
+      </section>
+      <section id="korrektur">
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:TP_FLD_DOK:ED_DOKVALUE" id="bm_id3150903" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3150891" role="heading" level="2" l10n="U"
+                    oldref="45">Offset</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155312" role="paragraph" l10n="U" oldref="46"><ahelp hid="SW:EDIT:TP_FLD_DOK:ED_DOKVALUE">Enter the offset value that you want to apply to a page number field, for example "+1".</ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3154948" role="tip" l10n="U" oldref="54">If you want to change the actual page number and not the displayed number, do not use the <emph>Offset</emph> value. To change page numbers, read the <link href="text/swriter/guide/pagenumbers.xhp" name="Page Numbers"><emph>Page Numbers</emph></link> guide.</paragraph>
+      <section id="format">
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOK:LB_DOKFORMAT" id="bm_id3145607" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145595" role="heading" level="2" l10n="U"
+                    oldref="41">Format</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145613" role="paragraph" l10n="U" oldref="42"><ahelp hid="SW:LISTBOX:TP_FLD_DOK:LB_DOKFORMAT">Click the format that you want to apply to the selected field, or click "Additional formats" to define a custom format.</ahelp></paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id3150138" role="paragraph" l10n="U" oldref="49"><variable id="datumuhrzeitformat">When you click "Additional formats", the <link href="text/shared/01/05020300.xhp" name="Number Format"><emph>Number Format</emph></link> dialog opens, where you can define a custom format. 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154867" role="paragraph" l10n="U" oldref="50">If you choose "Chapter number without separator" for a chapter field, the separators that are specified for chapter number in <link href="text/swriter/01/06060000.xhp" name="Tools - Outline numbering"><emph>Tools - Outline numbering</emph></link> are not displayed.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156079" role="paragraph" l10n="U" oldref="63">If you choose "chapter number" as the <emph>format</emph> for reference fields, only the number of the chapter heading containing the referenced object is displayed in the field. If the paragraph style for the chapter heading is not numbered, the field is left blank.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148682" role="paragraph" l10n="U" oldref="56">The following number range formats are for paragraphs formatted with numbered or bulleted lists:</paragraph>
+      <table id="tbl_id3149976">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3150006" role="tablecontent" l10n="U" oldref="57">Category and number</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155386" role="tablecontent" l10n="U" oldref="58">The format contains everything between the beginning of the paragraph and directly after the number-range field</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3146919" role="tablecontent" l10n="U" oldref="59">Caption text</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155929" role="tablecontent" l10n="U" oldref="60">The format contains the text following the number-range field up to the end of the paragraph</paragraph>
+            </tablecell>
+         </tablerow>
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148733" role="tablecontent" l10n="U" oldref="61">Number</paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3148755" role="tablecontent" l10n="U" oldref="62">The format only contains the reference number</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FLD_DOK:CB_DOKFIXEDCONTENT" id="bm_id3153014" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0902200804313432" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts the field as static content, that is, the field cannot be updated.</ahelp></paragraph>
+      <embed href="text/swriter/01/04090004.xhp#inhaltfix"/>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_FLD_DOK:ED_DOKLEVEL" id="bm_id3153038" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153026" role="heading" level="2" l10n="U"
+                 oldref="43">Layer</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154580" role="paragraph" l10n="U" oldref="44"><ahelp hid="SW:NUMERICFIELD:TP_FLD_DOK:ED_DOKLEVEL">Select the chapter heading level that you want to include in the selected field.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:NumericField:TP_FLD_DOK:ED_DOKDATEOFF" id="bm_id3154610" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154598" role="heading" level="2" l10n="U"
+                 oldref="51">Offset in days/minutes</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154899" role="paragraph" l10n="U" oldref="52"><ahelp hid="SW:NUMERICFIELD:TP_FLD_DOK:ED_DOKDATEOFF">Enter the offset that you want to apply to a date or time field.</ahelp></paragraph>
+      <section id="wert">
+         <paragraph xml-lang="en-US" id="hd_id3154922" role="heading" level="2" l10n="U"
+                    oldref="47">Value</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153049" role="paragraph" l10n="U" oldref="48"><ahelp hid="SW:NUMERICFIELD:TP_FLD_DOK:ED_DOKDATEOFF">Enter the contents that you want to add to a user-defined field.</ahelp></paragraph>
+      </section>
+   </body>
+</helpdocument>

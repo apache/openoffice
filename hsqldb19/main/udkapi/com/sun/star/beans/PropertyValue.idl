@@ -1,0 +1,81 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_beans_PropertyValue_idl__ 
+#define __com_sun_star_beans_PropertyValue_idl__ 
+ 
+#ifndef __com_sun_star_beans_Property_idl__ 
+#include <com/sun/star/beans/Property.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_beans_PropertyState_idl__ 
+#include <com/sun/star/beans/PropertyState.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module beans {  
+ 
+//============================================================================= 
+ 
+/** specifies a property value.
+ */
+published struct PropertyValue
+{
+	/** specifies the name of the property.
+		
+		<p>The name is unique within a sequence of <type>PropertyValue</type>s.
+		Upper and lower case are distinguished.</p>
+	 */
+	string Name; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** contains an implementation-specific handle for the property.
+		
+		<p>It may be -1 if the implementation has no handle. If available
+		it can be used for fast lookups.</p>
+	 */
+	long Handle; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** contains the value of the property or <void/>,
+		if no value is available.
+	 */
+	any Value; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** determines if the value comes from the object itself or from
+		a default and if the value cannot be determined exactly.
+	 */
+	com::sun::star::beans::PropertyState State; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

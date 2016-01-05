@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguidetext2curvexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Converting Text Characters into Drawing Objects</title>
+<filename>/text/simpress/guide/text2curve.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-08-30T15:06:35">FPE: Changed table to numbering list, resized image</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150717"><bookmark_value>text; converting to curves</bookmark_value>
+<bookmark_value>characters; converting to curves</bookmark_value>
+<bookmark_value>sign conversion to curves</bookmark_value>
+<bookmark_value>converting; text to curves</bookmark_value>
+<bookmark_value>draw objects;converting text to</bookmark_value>
+<bookmark_value>curves;converting text to</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150717" xml-lang="en-US" level="1" l10n="U" oldref="3"><variable id="text2curve"><link href="text/simpress/guide/text2curve.xhp" name="Converting Text Characters into Drawing Objects">Converting Text Characters into Drawing Objects</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3155960" xml-lang="en-US" l10n="U" oldref="21">You can convert text characters into curves that you can edit and resize as you would any drawing object. Once you convert text into a drawing object, you can no longer edit the content of the text.</paragraph>
+<paragraph role="heading" id="hd_id3153965" xml-lang="en-US" level="3" l10n="U" oldref="22">To convert text into a drawing object:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3146963" xml-lang="en-US" l10n="U" oldref="4">Select the text that you want to convert, and do one of the following:</paragraph>
+<paragraph role="listitem" id="par_id3149053" xml-lang="en-US" l10n="U" oldref="5">In $[officename] Draw, choose <emph>Modify - Convert - To Curve</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3150395" xml-lang="en-US" l10n="CHG" oldref="23">In $[officename] Impress, right-click the border of the text object, and then choose <emph>Convert - To Curve</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3150746" xml-lang="en-US" l10n="U" oldref="6">If your text contains more than one character, the converted text becomes a grouped object. Double-click the group to edit individual objects. Press Esc when finished.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3150336" xml-lang="en-US" l10n="CHG" oldref="7">Now, click the <emph>Points</emph> icon on the <emph>Drawing</emph> bar. Click the object. You can see all the Bézier points of the object. On the <emph>Edit Points</emph> bar, you can find various icons for editing, inserting and deleting points.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/line_draw.xhp#line_draw"/>
+<embed href="text/simpress/guide/line_edit.xhp#line_edit"/>
+<embed href="text/simpress/guide/vectorize.xhp#vectorize"/>
+<embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
+<embed href="text/shared/guide/fontwork.xhp#fontwork"/>
+</section>
+</body>
+</helpdocument>

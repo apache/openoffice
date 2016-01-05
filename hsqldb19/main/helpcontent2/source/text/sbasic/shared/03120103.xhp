@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120103xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Str Function [Runtime]</title>
+<filename>/text/sbasic/shared/03120103.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:32:55">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="str">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3143272"><bookmark_value>Str function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3143272" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120103.xhp" name="Str Function [Runtime]">Str Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155100" xml-lang="en-US" l10n="U" oldref="2">Converts a numeric expression into a string.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3109850" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149497" xml-lang="en-US" l10n="U" oldref="4">Str (Expression)</paragraph>
+<paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3146117" xml-lang="en-US" l10n="U" oldref="6">String</paragraph>
+<paragraph role="heading" id="hd_id3155805" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3149178" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Expression: </emph>Any numeric expression.</paragraph>
+<paragraph role="paragraph" id="par_id3146958" xml-lang="en-US" l10n="U" oldref="9">The <emph>Str</emph> function converts a numeric variable, or the result of a calculation into a string. Negative numbers are preceded by a minus sign. Positive numbers are preceded by a space (instead of the plus sign).</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="2" l10n="U" oldref="10">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3149514" xml-lang="en-US" l10n="U" oldref="11">Sub ExampleStr</paragraph>
+<paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="12">Dim iVar As Single</paragraph>
+<paragraph role="paragraph" id="par_id3153626" xml-lang="en-US" l10n="U" oldref="13">Dim sVar As String</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="14">iVar = 123.123</paragraph>
+<paragraph role="paragraph" id="par_id3153897" xml-lang="en-US" l10n="U" oldref="15">sVar = LTrim(Str(iVar))</paragraph>
+<paragraph role="paragraph" id="par_id3154924" xml-lang="en-US" l10n="U" oldref="16">Msgbox sVar &amp; chr(13) &amp; Str(iVar)</paragraph>
+<paragraph role="paragraph" id="par_id3152811" xml-lang="en-US" l10n="U" oldref="17">end sub</paragraph>
+</body>
+</helpdocument>

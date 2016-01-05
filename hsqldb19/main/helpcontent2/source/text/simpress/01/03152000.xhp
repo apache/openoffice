@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0103152000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Header and Footer</title>
+<filename>/text/simpress/01/03152000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id1374858"><bookmark_value>slides;page numbers</bookmark_value>
+<bookmark_value>slides;headers and footers</bookmark_value>
+<bookmark_value>footers;slides</bookmark_value>
+<bookmark_value>headers and footers;slides</bookmark_value>
+</bookmark>
+<section id="headerandfooter">
+<bookmark xml-lang="en-US" branch="hid/.uno:HeaderAndFooter" id="bm_id1853999" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:HeaderAndFooter" id="bm_id3146458" localize="false"/><paragraph role="heading" id="par_idN1053E" xml-lang="en-US" level="1" l10n="NEW"><link href="text/simpress/01/03152000.xhp">Header and Footer</link></paragraph>
+<paragraph role="paragraph" id="par_idN1054E" xml-lang="en-US" l10n="CHG"><ahelp hid="SID_HEADER_AND_FOOTER">Adds or changes text in placeholders at the top and the bottom of slides and slide masters.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000403.xhp#headerandfooter"/>
+</section>
+<paragraph role="paragraph" id="par_idN10697" xml-lang="en-US" l10n="NEW">The <emph>Header and Footer</emph> dialog contains the following tab pages: </paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN1069D" xml-lang="en-US" l10n="NEW">
+<emph>Slide</emph> tab page where you can specify options for the current slide or for all slides.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106A5" xml-lang="en-US" l10n="CHG">
+<emph>Notes and Handouts</emph> tab page where you can specify options for the notes pages and the handout pages.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3351542" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/simpress/guide/footer.xhp#footer"/>
+</paragraph>
+<paragraph role="paragraph" id="par_idN106AF" xml-lang="en-US" l10n="NEW">
+<embedvar href="text/simpress/guide/masterpage.xhp#masterpage"/>
+</paragraph>
+<paragraph role="heading" id="par_idN106B7" xml-lang="en-US" level="2" l10n="NEW">Include on slide</paragraph>
+<paragraph role="paragraph" id="par_idN106BA" xml-lang="en-US" l10n="NEW">Specify the elements to include on your slides.</paragraph>
+<paragraph role="heading" id="par_idN106BD" xml-lang="en-US" level="3" l10n="NEW">Footer</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_FOOTER" id="bm_id1378826" localize="false"/><paragraph role="paragraph" id="par_idN106C8" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_FOOTER">Adds the text that you enter in the <emph>Footer text</emph> box to the bottom of the slide.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN106D7" xml-lang="en-US" level="4" l10n="NEW">Footer text</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:RID_SD_TABPAGE_HEADERFOOTER:TB_FOOTER_FIXED" id="bm_id6931669" localize="false"/><paragraph role="paragraph" id="par_idN106E2" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:Edit:RID_SD_TABPAGE_HEADERFOOTER:TB_FOOTER_FIXED">Adds the text that you enter to the bottom of the slide.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN106F1" xml-lang="en-US" level="3" l10n="NEW">Header</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_HEADER" id="bm_id9151585" localize="false"/><paragraph role="paragraph" id="par_idN106FC" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_HEADER">Adds the text that you enter in the <emph>Header text</emph> box to the top of the slide.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN1070B" xml-lang="en-US" level="4" l10n="NEW">Header text</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:RID_SD_TABPAGE_HEADERFOOTER:TB_HEADER_FIXED" id="bm_id5169835" localize="false"/><paragraph role="paragraph" id="par_idN10716" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:Edit:RID_SD_TABPAGE_HEADERFOOTER:TB_HEADER_FIXED">Adds the text that you enter to the top of the slide.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_DATETIME" id="bm_id1400494" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertDateAndTime" id="bm_id4008911" localize="false"/><paragraph role="heading" id="par_idN1072D" xml-lang="en-US" level="3" l10n="NEW">Date and time</paragraph>
+<paragraph role="paragraph" id="par_idN10730" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_DATETIME">Adds the date and time to the slide.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:RID_SD_TABPAGE_HEADERFOOTER:RB_DATETIME_FIXED" id="bm_id5965758" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sd:Edit:RID_SD_TABPAGE_HEADERFOOTER:TB_DATETIME_FIXED" id="bm_id4139835" localize="false"/><paragraph role="heading" id="par_idN1074F" xml-lang="en-US" level="4" l10n="NEW">Fixed</paragraph>
+<paragraph role="paragraph" id="par_idN10752" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:RadioButton:RID_SD_TABPAGE_HEADERFOOTER:RB_DATETIME_FIXED">Displays the date and time that you enter in the text box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:RadioButton:RID_SD_TABPAGE_HEADERFOOTER:RB_DATETIME_AUTOMATIC" id="bm_id6618549" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_SD_TABPAGE_HEADERFOOTER:CB_DATETIME_FORMAT" id="bm_id9242835" localize="false"/><paragraph role="heading" id="par_idN10771" xml-lang="en-US" level="4" l10n="NEW">Variable</paragraph>
+<paragraph role="paragraph" id="par_idN10774" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:RadioButton:RID_SD_TABPAGE_HEADERFOOTER:RB_DATETIME_AUTOMATIC">Displays the date and time that the slide was created. Select a date format from the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ListBox:RID_SD_TABPAGE_HEADERFOOTER:CB_DATETIME_LANGUAGE" id="bm_id950346" localize="false"/><paragraph role="heading" id="par_idN1078B" xml-lang="en-US" level="4" l10n="NEW">Language</paragraph>
+<paragraph role="paragraph" id="par_idN1078E" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:ListBox:RID_SD_TABPAGE_HEADERFOOTER:CB_DATETIME_LANGUAGE">Select the language for the date and time format.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_SLIDENUMBER" id="bm_id5410016" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertPageNumber" id="bm_id8017517" localize="false"/><paragraph role="heading" id="par_idN107A5" xml-lang="en-US" level="3" l10n="NEW">Slide number / Page number</paragraph>
+<paragraph role="paragraph" id="par_idN107A8" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_SLIDENUMBER">Adds the slide number or the page number.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_NOTONTITLE" id="bm_id3088778" localize="false"/><paragraph role="heading" id="par_idN107BF" xml-lang="en-US" level="2" l10n="NEW">Do not show on first slide</paragraph>
+<paragraph role="paragraph" id="par_idN107C2" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:CheckBox:RID_SD_TABPAGE_HEADERFOOTER:CB_NOTONTITLE">Does not display your specified information on the first slide of your presentation.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN107D1" xml-lang="en-US" level="2" l10n="NEW">Apply to All</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:RID_SD_TABPAGE_HEADERFOOTER:BT_APPLYTOALL" id="bm_id4796899" localize="false"/><paragraph role="paragraph" id="par_idN107DC" xml-lang="en-US" l10n="CHG"><ahelp hid="sd:PushButton:RID_SD_TABPAGE_HEADERFOOTER:BT_APPLYTOALL">Applies the settings to all the slides in your presentation, including the corresponding slide masters.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:PushButton:RID_SD_TABPAGE_HEADERFOOTER:BT_APPLY" id="bm_id1924497" localize="false"/><paragraph role="heading" id="par_idN107FD" xml-lang="en-US" level="2" l10n="NEW">Apply</paragraph>
+<paragraph role="paragraph" id="par_idN10800" xml-lang="en-US" l10n="NEW"><ahelp hid="sd:PushButton:RID_SD_TABPAGE_HEADERFOOTER:BT_APPLY">Applies the current settings to the selected slides.</ahelp></paragraph>
+</body>
+</helpdocument>

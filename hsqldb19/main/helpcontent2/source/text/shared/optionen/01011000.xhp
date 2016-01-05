@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01011000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Memory</title>
+<filename>/text/shared/optionen/01011000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="arbeit">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153881"><bookmark_value>undoing; number of steps</bookmark_value>
+<bookmark_value>graphics; cache</bookmark_value>
+<bookmark_value>cache for graphics</bookmark_value>
+<bookmark_value>Quickstarter</bookmark_value>
+</bookmark><comment>MW moved "quickstarter" to the top of page and corrected a typo.</comment><paragraph role="heading" id="hd_id3157909" xml-lang="en-US" level="1" l10n="U" oldref="25"><link href="text/shared/optionen/01011000.xhp" name="Memory">Memory</link></paragraph>
+<paragraph role="paragraph" id="par_id3154307" xml-lang="en-US" l10n="CHG" oldref="26"><ahelp hid=".">Defines the settings for the graphics cache and the number of steps you can undo.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#arbeit"/>
+</section>
+<paragraph role="heading" id="hd_id3155390" xml-lang="en-US" level="2" l10n="U" oldref="1">Undo</paragraph>
+<paragraph role="paragraph" id="par_id3145673" xml-lang="en-US" l10n="U" oldref="2">Defines the maximum number of reverse steps allowed.</paragraph>
+<!-- removed HID OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_ED_UNDO -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_MEMORY:ED_UNDO" id="bm_id2490005" localize="false"/><paragraph role="heading" id="hd_id3153881" xml-lang="en-US" level="3" l10n="U" oldref="3">Number of steps</paragraph>
+<paragraph role="paragraph" id="par_id3148685" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_ED_UNDO">You can specify the number of steps which can be undone by selecting a number from the list.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3147530" xml-lang="en-US" level="2" l10n="U" oldref="10">Graphics cache</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="11">The graphics cache saves the graphics contained in a document in your computer's main memory. This means that the attributes of a graphic stored in the cache do not have to be re-calculated if you return to the page containing the graphic after scrolling through a document.</paragraph>
+<!-- removed HID OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_GRAPHICCACHE -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_MEMORY:NF_GRAPHICCACHE" id="bm_id8346201" localize="false"/><paragraph role="heading" id="hd_id3154924" xml-lang="en-US" level="3" l10n="U" oldref="12">Use for $[officename] (MB)</paragraph>
+<paragraph role="paragraph" id="par_id3152813" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid="OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_GRAPHICCACHE">Specifies the total cache size for all graphics.</ahelp></paragraph>
+<!-- removed HID OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_GRAPHICOBJECTCACHE -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_MEMORY:NF_GRAPHICOBJECTCACHE" id="bm_id3981749" localize="false"/><paragraph role="heading" id="hd_id3150359" xml-lang="en-US" level="3" l10n="U" oldref="14">Memory per object (MB)</paragraph>
+<paragraph role="paragraph" id="par_id3148797" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_GRAPHICOBJECTCACHE">Specifies that objects which are larger than the selected megabytes will not be placed in the cache.</ahelp></paragraph>
+<!-- removed HID OFFMGR_TIMEFIELD_OFA_TP_MEMORY_TF_GRAPHICOBJECTTIME -->
+<bookmark xml-lang="en-US" branch="hid/cui:TimeField:OFA_TP_MEMORY:TF_GRAPHICOBJECTTIME" id="bm_id1587878" localize="false"/><paragraph role="heading" id="hd_id3148920" xml-lang="en-US" level="3" l10n="U" oldref="16">Remove from memory after (hh:mm)</paragraph>
+<paragraph role="paragraph" id="par_id3148674" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="OFFMGR_TIMEFIELD_OFA_TP_MEMORY_TF_GRAPHICOBJECTTIME">Specifies the time that each graphic remains in the cache in hours and minutes.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U" oldref="18">Cache for inserted objects</paragraph>
+<!-- removed HID OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_OLECACHE -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:OFA_TP_MEMORY:NF_OLECACHE" id="bm_id5088045" localize="false"/><paragraph role="heading" id="hd_id3147085" xml-lang="en-US" level="3" l10n="U" oldref="19">Number of objects</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="OFFMGR_NUMERICFIELD_OFA_TP_MEMORY_NF_OLECACHE">Choose the maximum number of OLE objects that are pooled in the cache.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145171" xml-lang="en-US" level="2" l10n="CHG" oldref="21">$[officename] Quickstarter</paragraph>
+<!-- removed HID OFFMGR_CHECKBOX_OFA_TP_MEMORY_CB_QUICKLAUNCH -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:OFA_TP_MEMORY:CB_QUICKLAUNCH" id="bm_id4756004" localize="false"/><paragraph role="heading" id="hd_id3155429" xml-lang="en-US" level="3" l10n="CHG" oldref="22"><switchinline select="sys"><caseinline select="WIN">Load $[officename] during system start-up 
+</caseinline><defaultinline>Enable systray Quickstarter</defaultinline></switchinline><comment>UFI: new text seen in m187, see CWS gtkquickstart</comment></paragraph>
+<paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="CHG" oldref="23"><ahelp hid="OFFMGR_CHECKBOX_OFA_TP_MEMORY_CB_QUICKLAUNCH">Mark this check box if you want $[officename] to enable quickstart. This option is available if the Quickstart module has been installed.</ahelp><comment>UFI: had to remove explanation because on Windows it is at start-up, while on Unix it is a user-systray feature only. Cannot have switches inside AHID text.</comment></paragraph>
+</body>
+</helpdocument>

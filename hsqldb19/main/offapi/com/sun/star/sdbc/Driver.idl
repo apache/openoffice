@@ -1,0 +1,71 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdbc_Driver_idl__ 
+#define __com_sun_star_sdbc_Driver_idl__ 
+ 
+ module com {  module sun {  module star {  module sdbc { 
+ 
+ published interface XDriver; 
+ 
+ 
+/** is the service that every driver class must implement.
+	
+	<p>
+	Each driver should supply a service that implements
+	the Driver interface.
+	
+	</p>
+	<p>
+	The DriverManager will try to load as many drivers as it can
+	find and then for any given connection request, it will ask each
+	driver in turn to try to connect to the target URL.
+	
+	</p>
+	<p>
+	It is strongly recommended that each Driver object should be
+	small and standalone so that the Driver object can be loaded and
+	queried without bringing in vast quantities of supporting code.
+	
+	</p>
+	<p>
+	Each driver should be a one instance service.
+
+	</p>
+	@see com::sun::star::sdbc::XDriverManager 
+	@see com::sun::star::sdbc::XConnection
+ */
+published service Driver
+{ 
+	 
+	/** is the main interface to access a database driver.
+	 */
+	interface XDriver; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

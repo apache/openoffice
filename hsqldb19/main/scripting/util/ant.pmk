@@ -1,0 +1,51 @@
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+
+
+JARFILES*=../util/ant.jar
+
+# needs jdk1.2 !
+JAVAC_LIB:=$(JAVA_HOME)$/lib$/tools.jar
+
+STARDEP=@echo ANTBuild 
+
+OTHER=antbuild
+OTHERTARRGET=OTHERTARGET
+SOLARDOCDIR=$(SOLARVER)$/$(INPATH)$/doc$(EXT_UPDMINOR)
+
+
+ANT=java -Xmx128m org.apache.tools.ant.Main
+.IF "$(ANT_BUILDFILE)" ==""
+ANT_BUILDFILE=build.xml
+.ENDIF
+ANTFLAGS!:=-Dprj=$(PRJ) -Dant.home=$(SOLARBINDIR)$/.. -Dsolar.doc=$(SOLARDOCDIR) -f $(ANT_BUILDFILE) $(ANTFLAGS) -Djardir=$(JARDIR) -Dsolar.jar=$(SOLARBINDIR) -Dout=$(OUT) -Dinpath=$(INPATH)
+
+.INCLUDE : ../util/target.pmk
+
+ANT_CLASSPATH:=..$/util$/xerces.jar$(PATH_SEPERATOR)..$/util$/ant.jar$(PATH_SEPERATOR)..$/util$/junit.jar
+CLASSPATH!:=$(ANT_CLASSPATH)$(CLASSPATH)
+.EXPORT : CLASSPATH
+
+antbuild .PHONY:
+	$(ANT) $(ANTFLAGS)
+
+

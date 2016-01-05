@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedexplorerdatabaserep_sortxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Sorting and Grouping</title>
+         <filename>/text/shared/explorer/database/rep_sort.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="sort">
+<bookmark xml-lang="en-US" branch="hid/.uno:DbSortingAndGrouping" id="bm_id9569078" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3486434" role="heading" level="1" l10n="NEW"><variable id="rep_sort"><link href="text/shared/explorer/database/rep_sort.xhp">Sorting and Grouping</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3068636" role="paragraph" l10n="NEW"><ahelp hid=".">In the Sorting and Grouping dialog of <link href="text/shared/explorer/database/rep_main.xhp">Report Builder</link>, you can define the fields that should be sorted in your report, and the fields that should be kept together to form a group.</ahelp> If you group your report by a certain field, all records with the same value of that field will be kept together in one group.</paragraph>
+      </section>
+      <paragraph xml-lang="en-US" id="par_id876186" role="paragraph" l10n="NEW">The Groups box shows the fields in an order from top to bottom. You can select any field, then click the Move Up or Move Down button to move this field up or down in the list. </paragraph>
+      <paragraph xml-lang="en-US" id="par_id3939634" role="paragraph" l10n="NEW">The sorting and grouping will be applied in the order of the list from top to bottom.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_GROUPSBRW" id="bm_id2480849" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id599688" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the fields that will be used for sorting or grouping. The field at the top has the highest priority, the second field has the second priority, and so on.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_FIELDEXPRESSION" id="bm_id4181951" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id1371501" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to open a list from which you can select a field.</ahelp></paragraph>
+<!-- removed HID 2114727444 -->
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_GROUPSORT_MOVE_UP" id="bm_id2927436" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id4661702" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Moves the selected field up in the list.</ahelp></paragraph>
+<!-- removed HID 2114727445 -->
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_GROUPSORT_MOVE_DOWN" id="bm_id2107304" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id7868892" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Moves the selected field down in the list.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_LISTBOX_RID_GROUPS_SORTING_LST_ORDER" id="bm_id4071779" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id2188787" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select the sorting order.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_LISTBOX_RID_GROUPS_SORTING_LST_HEADERLST" id="bm_id7844477" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id5833307" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select to show or hide the Group Header.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_LISTBOX_RID_GROUPS_SORTING_LST_FOOTERLST" id="bm_id6478469" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id7726676" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select to show or hide the Group Footer.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_LISTBOX_RID_GROUPS_SORTING_LST_GROUPONLST" id="bm_id9038972" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3729361" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select to create a new group on each changed value, or on other properties.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_HID_RPT_GROUPSORT_DELETE" id="bm_id9038973" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0409200922142041" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Removes the selected field from the list.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3405560" role="paragraph" l10n="NEW">By default a new group is created on every changed value of a record from the selected field. You can change this property depending on the type of field:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3409527" role="paragraph" l10n="NEW">For fields of type Text, you can select Prefix Characters and enter a number n of characters in the text box below. The records which are identical in the first n characters will be grouped together.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7112338" role="paragraph" l10n="NEW">For fields of type Date/Time, you can group the records by the same year, quarter, month, week, day, hour, or minute. You can additionally specify an interval for weeks and hours: 2 weeks groups data in biweekly groups, 12 hours groups data in half-day groups.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id2855616" role="paragraph" l10n="NEW">For fields of type AutoNumber, Currency, or Number, you specify an interval.<comment>how?</comment></paragraph>
+         </listitem>
+      </list>
+<bookmark xml-lang="en-US" branch="hid/REPORTDESIGN_NUMERICFIELD_RID_GROUPS_SORTING_ED_GROUPINTERVALLST" id="bm_id7985168" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id7700430" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Enter the group interval value that records are grouped by.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/reportdesign:ListBox:RID_GROUPS_SORTING:LST_KEEPTOGETHERLST" id="bm_id9573961" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id1180455" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Select the level of detail by which a group is kept together on the same page.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id2091433" role="paragraph" l10n="NEW">When you specify to keep together some records on the same page, you have three choices:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5092318" role="paragraph" l10n="NEW">No - page boundaries are not taken into account.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9312417" role="paragraph" l10n="NEW">Whole Group - prints the group header, detail section, and group footer on the same page.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9089022" role="paragraph" l10n="NEW">With First Detail - prints the group header on a page only if the first detail record also can be printed on the same page.</paragraph>
+         </listitem>
+      </list>
+   </body>
+</helpdocument>

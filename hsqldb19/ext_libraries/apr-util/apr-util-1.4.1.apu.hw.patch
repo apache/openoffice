@@ -1,0 +1,13 @@
+--- misc/apr-util-1.4.1/include/apu.hw	2008-11-21 07:18:37.000000000 +0100
++++ misc/build/apr-util-1.4.1/include/apu.hw	2012-01-03 13:37:20.042007300 +0100
+@@ -132,8 +132,8 @@
+ #define APU_HAVE_NSS            0
+ #endif
+ 
+-#define APU_HAVE_APR_ICONV      1
+-#define APU_HAVE_ICONV          0
++#undef APU_HAVE_APR_ICONV
++#undef APU_HAVE_ICONV
+ #define APR_HAS_XLATE           (APU_HAVE_APR_ICONV || APU_HAVE_ICONV)
+ 
+ #endif /* APU_H */

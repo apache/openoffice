@@ -1,0 +1,77 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _XMLFILTERHELPIDS_HRC_
+#define _XMLFILTERHELPIDS_HRC_
+
+#define HID_XML_SOURCE_FILE_DIALOG                          "FILTER_HID_XML_SOURCE_FILE_DIALOG"
+#define HID_XML_SOURCE_FILE_VALIDATE                        "FILTER_HID_XML_SOURCE_FILE_VALIDATE"
+#define HID_XML_FILTER_SETTINGS_DIALOG                      "FILTER_HID_XML_FILTER_SETTINGS_DIALOG"
+#define HID_XML_FILTER_LIST                                 "FILTER_HID_XML_FILTER_LIST"
+#define HID_XML_FILTER_NEW                                  "FILTER_HID_XML_FILTER_NEW"
+#define HID_XML_FILTER_EDIT                                 "FILTER_HID_XML_FILTER_EDIT"
+#define HID_XML_FILTER_TEST                                 "FILTER_HID_XML_FILTER_TEST"
+#define HID_XML_FILTER_DELETE                               "FILTER_HID_XML_FILTER_DELETE"
+#define HID_XML_FILTER_SAVE                                 "FILTER_HID_XML_FILTER_SAVE"
+#define HID_XML_FILTER_OPEN                                 "FILTER_HID_XML_FILTER_OPEN"
+#define HID_XML_FILTER_CLOSE                                "FILTER_HID_XML_FILTER_CLOSE"
+
+#define HID_XML_FILTER_TABDIALOG                            "FILTER_HID_XML_FILTER_TABDIALOG"
+#define HID_XML_FILTER_TABPAGE_BASIC                        "FILTER_HID_XML_FILTER_TABPAGE_BASIC"
+#define HID_XML_FILTER_TABPAGE_XSLT                         "FILTER_HID_XML_FILTER_TABPAGE_XSLT"
+#define HID_XML_FILTER_NAME                                 "FILTER_HID_XML_FILTER_NAME"
+#define HID_XML_FILTER_APPLICATION                          "FILTER_HID_XML_FILTER_APPLICATION"
+#define HID_XML_FILTER_INTERFACE_NAME                       "FILTER_HID_XML_FILTER_INTERFACE_NAME"
+#define HID_XML_FILTER_EXTENSION                            "FILTER_HID_XML_FILTER_EXTENSION"
+#define HID_XML_FILTER_DESCRIPTION                          "FILTER_HID_XML_FILTER_DESCRIPTION"
+#define HID_XML_FILTER_DOCTYPE                              "FILTER_HID_XML_FILTER_DOCTYPE"
+#define HID_XML_FILTER_DTD                                  "FILTER_HID_XML_FILTER_DTD"
+#define HID_XML_FILTER_DTD_BROWSE                           "FILTER_HID_XML_FILTER_DTD_BROWSE"
+#define HID_XML_FILTER_EXPORT_XSLT                          "FILTER_HID_XML_FILTER_EXPORT_XSLT"
+#define HID_XML_FILTER_EXPORT_XSLT_BROWSE                   "FILTER_HID_XML_FILTER_EXPORT_XSLT_BROWSE"
+#define HID_XML_FILTER_IMPORT_XSLT                          "FILTER_HID_XML_FILTER_IMPORT_XSLT"
+#define HID_XML_FILTER_IMPORT_XSLT_BROWSE                   "FILTER_HID_XML_FILTER_IMPORT_XSLT_BROWSE"
+#define HID_XML_FILTER_IMPORT_TEMPLATE                      "FILTER_HID_XML_FILTER_IMPORT_TEMPLATE"
+#define HID_XML_FILTER_TEST_DIALOG                          "FILTER_HID_XML_FILTER_TEST_DIALOG"
+
+#define HID_XML_FILTER_TEST_EXPORT_BROWSE                   "FILTER_HID_XML_FILTER_TEST_EXPORT_BROWSE"
+#define HID_XML_FILTER_TEST_EXPORT_CURRENT                  "FILTER_HID_XML_FILTER_TEST_EXPORT_CURRENT"
+#define HID_XML_FILTER_TEST_EXPORT_CURRENT_FILE             "FILTER_HID_XML_FILTER_TEST_EXPORT_CURRENT_FILE"
+
+#define HID_XML_FILTER_TEST_IMPORT_XSLT_FILE                "FILTER_HID_XML_FILTER_TEST_IMPORT_XSLT_FILE"
+#define HID_XML_FILTER_TEST_IMPORT_TEMPLATE_FILE            "FILTER_HID_XML_FILTER_TEST_IMPORT_TEMPLATE_FILE"
+#define HID_XML_FILTER_TEST_IMPORT_DISPLAY_SOURCE           "FILTER_HID_XML_FILTER_TEST_IMPORT_DISPLAY_SOURCE"
+#define HID_XML_FILTER_TEST_IMPORT_BROWSE                   "FILTER_HID_XML_FILTER_TEST_IMPORT_BROWSE"
+#define HID_XML_FILTER_TEST_IMPORT_RECENT                   "FILTER_HID_XML_FILTER_TEST_IMPORT_RECENT"
+#define HID_XML_FILTER_TEST_IMPORT_RECENT_FILE              "FILTER_HID_XML_FILTER_TEST_IMPORT_RECENT_FILE"
+#define HID_XML_FILTER_TEST_CLOSE                           "FILTER_HID_XML_FILTER_TEST_CLOSE"
+
+#define HID_XML_FILTER_IMPORT_TEMPLATE_BROWSE               "FILTER_HID_XML_FILTER_IMPORT_TEMPLATE_BROWSE"
+
+#define HID_XML_FILTER_TEST_VALIDATE_OUPUT                  "FILTER_HID_XML_FILTER_TEST_VALIDATE_OUPUT"
+#define HID_XML_FILTER_OUTPUT_WINDOW                        "FILTER_HID_XML_FILTER_OUTPUT_WINDOW"
+
+#define HID_XML_FILTER_TEST_EXPORT_XSLT_FILE                "FILTER_HID_XML_FILTER_TEST_EXPORT_XSLT_FILE"
+
+#define HID_XML_FILTER_TABPAGE_CTRL                         "FILTER_HID_XML_FILTER_TABPAGE_CTRL"
+
+#endif

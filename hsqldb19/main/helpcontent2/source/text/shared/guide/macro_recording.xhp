@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidemacro_recordingxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Recording a Macro</title>
+<filename>/text/shared/guide/macro_recording.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3093440"><bookmark_value>macros; recording</bookmark_value>
+<bookmark_value>recording; macros</bookmark_value>
+<bookmark_value>Basic; recording macros</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3093440" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="macro_recording"><link href="text/shared/guide/macro_recording.xhp" name="Recording a Macro">Recording a Macro</link>
+</variable></paragraph>
+<switch select="appl">
+<case select="WRITER"><section id="macrorecorder">
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="4">Open the document for which you want to record a macro.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149398" xml-lang="en-US" l10n="CHG" oldref="5">Choose <emph>Tools - Macros - Record Macro</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3150275" xml-lang="en-US" l10n="U" oldref="6">You see the small <emph>Recording</emph> dialog with just one button called <emph>Stop Recording</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153087" xml-lang="en-US" l10n="U" oldref="7">Perform the actions you want to be recorded in the document.</paragraph>
+<paragraph role="listitem" id="par_id3150504" xml-lang="en-US" l10n="U" oldref="15">Press the Escape key to deselect an object, as the macro recorder currently does not record this action by mouse click.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148492" xml-lang="en-US" l10n="U" oldref="8">Click <emph>Stop Recording</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="9">The <emph>Macro</emph> dialog appears, in which you can save and run the macro.</paragraph>
+<paragraph role="listitem" id="par_id3159158" xml-lang="en-US" l10n="U" oldref="10">If you want to abort the recording without saving a macro, click the <emph>Close</emph> button of the <emph>Recording</emph> dialog.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3144510" xml-lang="en-US" l10n="U" oldref="11">To save the macro, first select the object where you want the macro to be saved in the <emph>Save macro in</emph> list box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3148550" xml-lang="en-US" l10n="U" oldref="12">If you want the macro to be saved into a new library or module, click the <emph>New Library </emph>or <emph>New Module </emph>button and enter a name for the library or module.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149456" xml-lang="en-US" l10n="CHG" oldref="13">Enter a name for the new macro in the <emph>Macro name</emph> text box. Do not use Basic keywords as a name.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="14">Click <emph>Save</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="head2" id="hd_id2486342" xml-lang="en-US" l10n="NEW">Limitations of the macro recorder</paragraph>
+<paragraph role="paragraph" id="par_id3608508" xml-lang="en-US" l10n="NEW">The following actions are <emph>not</emph> recorded:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id921353" xml-lang="en-US" l10n="NEW">Opening of windows is not recorded.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id9296243" xml-lang="en-US" l10n="NEW">Actions carried out in another window than where the recorder was started are not recorded.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4269234" xml-lang="en-US" l10n="NEW">Window switching is not recorded.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id8014465" xml-lang="en-US" l10n="NEW">Actions that are not related to the document contents are not recorded. For example, changes made in the Options dialog, macro organizer, customizing.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id2814416" xml-lang="en-US" l10n="NEW">Selections are recorded only if they are done by using the keyboard (cursor traveling), but not when the mouse is used.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id2522354" xml-lang="en-US" l10n="NEW">The macro recorder works only in Calc and Writer.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="C"><link href="text/shared/01/06130000.xhp" name="Macro">Macro</link></paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2"><link href="text/shared/main0600.xhp" name="macro programming in $[officename]">Programming in %PRODUCTNAME</link></paragraph><comment>how-to running a macro</comment><comment>how-to testing and debugging a macro</comment></section>
+</case>
+<case select="CALC"><embed href="text/shared/guide/macro_recording.xhp#macrorecorder"/>
+</case>
+<case select="BASIC"><embed href="text/shared/guide/macro_recording.xhp#macrorecorder"/>
+</case>
+<default>
+<paragraph role="paragraph" id="par_id7797242" xml-lang="en-US" l10n="NEW">The macro recording functionality is only available for text documents in %PRODUCTNAME Writer and for spreadsheets in %PRODUCTNAME Calc.</paragraph>
+</default>
+</switch></body>
+</helpdocument>

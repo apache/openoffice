@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103091503xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Set Operators</title>
+<filename>/text/smath/01/03091503.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157991"><bookmark_value>set operators;list of</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id4201178" xml-lang="en-US" level="1" l10n="NEW"><variable id="set"><link href="text/smath/01/03091503.xhp" name="set">Set Operators</link>
+</variable></paragraph>
+<table id="tbl_id3145680">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_idN1130F" xml-lang="en-US" l10n="NEW">Typed command(s)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3145724" xml-lang="en-US" l10n="U" oldref="478">Symbol in Elements Window</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3158137" xml-lang="en-US" l10n="U" oldref="480">Meaning</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1146D" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">aleph</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146505" xml-lang="en-US" l10n="E">
+<image id="img_id3146512" src="starmath/res/op22001.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3146512" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146625" xml-lang="en-US" l10n="U" oldref="214">Cardinal number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1131F" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">emptyset</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159379" xml-lang="en-US" l10n="E">
+<image id="img_id3159386" src="starmath/res/op22002.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3159386" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152374" xml-lang="en-US" l10n="U" oldref="218">Empty set</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id8198065" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">in</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158166" xml-lang="en-US" l10n="E">
+<image id="img_id3158173" src="starmath/res/op21401.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158173" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155037" xml-lang="en-US" l10n="U" oldref="102">is contained in</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11361" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">intersection</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152402" xml-lang="en-US" l10n="E">
+<image id="img_id3152408" src="starmath/res/op21405.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3152408" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152522" xml-lang="en-US" l10n="U" oldref="126">Intersection of sets</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11297" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">notin</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158212" xml-lang="en-US" l10n="E">
+<image id="img_id3158218" src="starmath/res/op21402.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158218" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158332" xml-lang="en-US" l10n="U" oldref="104">is not contained in</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN115B7" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">nsubset</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158819" xml-lang="en-US" l10n="E">
+<image id="img_id3158825" src="starmath/res/op21413.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158825" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158939" xml-lang="en-US" l10n="U" oldref="110">Not subset to</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN115F9" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">nsubseteq</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158966" xml-lang="en-US" l10n="E">
+<image id="img_id3158973" src="starmath/res/op21414.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158973" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159086" xml-lang="en-US" l10n="U" oldref="112">Not subset or equal to</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1163B" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">nsupset</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159114" xml-lang="en-US" l10n="E">
+<image id="img_id3159120" src="starmath/res/op21415.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3159120" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3162974" xml-lang="en-US" l10n="U" oldref="118">Not superset</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1167D" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">nsupseteq</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163002" xml-lang="en-US" l10n="E">
+<image id="img_id3163008" src="starmath/res/op21416.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3163008" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163122" xml-lang="en-US" l10n="U" oldref="120">Not superset or equal to</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN112D9" xml-lang="en-US" l10n="NEW">
+<item type="literal">owns</item> or <item type="literal">ni</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158359" xml-lang="en-US" l10n="E">
+<image id="img_id3158366" src="starmath/res/op21403.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158366" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3159352" xml-lang="en-US" l10n="U" oldref="122">Contains</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN117C7" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">setc</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156480" xml-lang="en-US" l10n="E">
+<image id="img_id3156486" src="starmath/res/op21421.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3156486" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156600" xml-lang="en-US" l10n="U" oldref="405">Complex number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN113E5" xml-lang="en-US" l10n="NEW">
+<item type="literal">setminus</item> or <item type="literal">bslash</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145932" xml-lang="en-US" l10n="E">
+<image id="img_id3145938" src="starmath/res/op21407.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3145938" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146052" xml-lang="en-US" l10n="U" oldref="128">Difference between sets</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN116BF" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">setn</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163149" xml-lang="en-US" l10n="E">
+<image id="img_id3163156" src="starmath/res/op21417.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3163156" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163269" xml-lang="en-US" l10n="U" oldref="397">Natural number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11743" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">setq</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163444" xml-lang="en-US" l10n="E">
+<image id="img_id3163450" src="starmath/res/op21419.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3163450" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163564" xml-lang="en-US" l10n="U" oldref="401">Rational number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11785" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">setr</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163591" xml-lang="en-US" l10n="E">
+<image id="img_id3163598" src="starmath/res/op21420.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3163598" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156453" xml-lang="en-US" l10n="U" oldref="403">Real number</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11701" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">setz</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163296" xml-lang="en-US" l10n="E">
+<image id="img_id3163303" src="starmath/res/op21418.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3163303" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3163416" xml-lang="en-US" l10n="U" oldref="399">Integer</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN1142B" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">slash</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146357" xml-lang="en-US" l10n="E">
+<image id="img_id3146363" src="starmath/res/op21408.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3146363" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146477" xml-lang="en-US" l10n="U" oldref="54">Slash / for quotient set (slash) between characters</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN114AF" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">subset</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146652" xml-lang="en-US" l10n="E">
+<image id="img_id3146659" src="starmath/res/op21409.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3146659" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146772" xml-lang="en-US" l10n="U" oldref="106">Subset</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN114F1" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">subseteq</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146800" xml-lang="en-US" l10n="E">
+<image id="img_id3146806" src="starmath/res/op21410.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3146806" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158496" xml-lang="en-US" l10n="U" oldref="108">Subset or equal to</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11533" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">supset</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158524" xml-lang="en-US" l10n="E">
+<image id="img_id3158530" src="starmath/res/op21411.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158530" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158644" xml-lang="en-US" l10n="U" oldref="114">Superset</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN11575" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">supseteq</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158671" xml-lang="en-US" l10n="E">
+<image id="img_id3158678" src="starmath/res/op21412.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3158678" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3158791" xml-lang="en-US" l10n="U" oldref="116">Superset or equal to</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_idN113A3" xml-lang="en-US" l10n="NEW" localize="false">
+<item type="literal">union</item>
+</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152548" xml-lang="en-US" l10n="E">
+<image id="img_id3152555" src="starmath/res/op21406.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3152555" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145904" xml-lang="en-US" l10n="U" oldref="124">Union of sets</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<section id="relatedtopics">
+<embed href="text/smath/01/03090800.xhp#mengenop"/>
+<embed href="text/smath/01/03091500.xhp#reference"/>
+</section>
+</body>
+</helpdocument>

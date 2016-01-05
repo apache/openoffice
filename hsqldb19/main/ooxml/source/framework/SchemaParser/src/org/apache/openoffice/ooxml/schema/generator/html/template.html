@@ -1,0 +1,41 @@
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one or more
+  contributor license agreements.  See the NOTICE file distributed with
+  this work for additional information regarding copyright ownership.
+  The ASF licenses this file to You under the Apache License, Version 2.0
+  (the "License"); you may not use this file except in compliance with
+  the License.  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <style type="text/css">
+    $CSS$
+    </style>
+    <script type="text/javascript">
+    $DATA$
+    </script>
+    <script type="text/javascript">
+    $CODE$
+    </script>
+  </head>
+  <body onLoad="InitializeSearch()">
+    <div id="message"></div>
+    <input onKeyUp="CheckInput(this,event)"></input>
+    <br><br><div id="match-count">Matches:</div><br>
+    <div id="history"></div>
+    <div id="matches" cols="100" rows="20" defaultValue="type text to see matching types"></div>
+    <br>
+    <div id="result">no result yet</div>
+  </body>
+</html>

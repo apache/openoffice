@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0212070100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Table</title>
+<filename>/text/shared/02/12070100.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_AS_TABLE" id="bm_id3109850" localize="false"/><paragraph role="heading" id="hd_id3151299" xml-lang="en-US" level="1" l10n="U" oldref="1">Table</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156183"><bookmark_value>database contents; inserting as tables</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3156183" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SW:RADIOBUTTON:DLG_AP_INSERT_DB_SEL:RB_AS_TABLE" visibility="hidden">Inserts data selected from the data source browser into the document as a table.</ahelp>In the <emph>Insert Database Columns</emph> dialog, select the <emph>Table</emph> option to insert the selected data into the document as a table. In the dialog, you can decide which database fields or columns are transferred, and how the text table is formatted.</paragraph>
+<paragraph role="heading" id="hd_id3152594" xml-lang="en-US" level="2" l10n="U" oldref="2">Table</paragraph>
+<paragraph role="paragraph" id="par_id3152918" xml-lang="en-US" l10n="U" oldref="19">In the <emph>Table</emph> area, use the arrow keys to select the columns of the database table that you want to apply to the text table.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_AP_INSERT_DB_SEL:LB_TBL_DB_COLUMN" id="bm_id3155805" localize="false"/><paragraph role="heading" id="hd_id3156042" xml-lang="en-US" level="3" l10n="U" oldref="3">Database columns</paragraph>
+<paragraph role="paragraph" id="par_id3152425" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SW:LISTBOX:DLG_AP_INSERT_DB_SEL:LB_TBL_DB_COLUMN">Specifies the database columns to be inserted into the text table.</ahelp> All database table columns that have not been accepted in the <emph>Table column(s)</emph> list box are listed here. The entries are sorted alphabetically. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_AP_INSERT_DB_SEL:LB_TABLE_COL" id="bm_id3157959" localize="false"/><paragraph role="heading" id="hd_id3147577" xml-lang="en-US" level="3" l10n="U" oldref="4">Table column(s)</paragraph>
+<paragraph role="paragraph" id="par_id3153527" xml-lang="en-US" l10n="U" oldref="21"><ahelp hid="SW:LISTBOX:DLG_AP_INSERT_DB_SEL:LB_TABLE_COL">Lists all database columns to be inserted into the document.</ahelp> A column will be assigned to each corresponding entry in the table. The entry order in the <emph>Table column(s)</emph> list box determines the data order in the text table.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:DLG_AP_INSERT_DB_SEL:IB_DBCOL_ALL_TO" id="bm_id3159234" localize="false"/><paragraph role="heading" id="hd_id3146958" xml-lang="en-US" level="3" l10n="U" oldref="5">&gt;&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3149750" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ALL_TO">Moves all listed database fields into the <emph>Table column(s)</emph> list box.</ahelp> All fields listed in the <emph>Table column(s)</emph> list box are inserted into the document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:DLG_AP_INSERT_DB_SEL:IB_DBCOL_ONE_TO" id="bm_id3148539" localize="false"/><paragraph role="heading" id="hd_id3163802" xml-lang="en-US" level="3" l10n="U" oldref="6">&gt;</paragraph>
+<paragraph role="paragraph" id="par_id3153662" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ONE_TO">Moves the selected database field into the <emph>Table column(s)</emph> list box. </ahelp> You can also double click an entry to move it to the <emph>Table column(s)</emph> list box. All fields listed in the <emph>Table column(s)</emph> list box are inserted into the document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:DLG_AP_INSERT_DB_SEL:IB_DBCOL_ONE_FROM" id="bm_id3148992" localize="false"/><paragraph role="heading" id="hd_id3149732" xml-lang="en-US" level="3" l10n="U" oldref="7">&lt;</paragraph>
+<paragraph role="paragraph" id="par_id3148685" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ONE_FROM">Removes the selected database field from the<emph> Table column(s)</emph> list box</ahelp> The removed field is not inserted into the document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:ImageButton:DLG_AP_INSERT_DB_SEL:IB_DBCOL_ALL_FROM" id="bm_id3154286" localize="false"/><paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="3" l10n="U" oldref="8">&lt;&lt;</paragraph>
+<paragraph role="paragraph" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SW_IMAGEBUTTON_DLG_AP_INSERT_DB_SEL_IB_DBCOL_ALL_FROM">Removes all database fields from the <emph>Table column(s)</emph> list box.</ahelp></paragraph>
+<section id="format">
+<paragraph role="heading" id="hd_id3159399" xml-lang="en-US" level="2" l10n="U" oldref="13">Format</paragraph>
+<paragraph role="paragraph" id="par_id3154380" xml-lang="en-US" l10n="U" oldref="30">Specifies the format for inserting the database fields into the document.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_DBFMT_FROM_DB" id="bm_id3146948" localize="false"/><paragraph role="heading" id="hd_id3156329" xml-lang="en-US" level="3" l10n="U" oldref="14">From database</paragraph>
+<paragraph role="paragraph" id="par_id3149415" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SW:RADIOBUTTON:DLG_AP_INSERT_DB_SEL:RB_DBFMT_FROM_DB">Accepts the database formats.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_DBFMT_FROM_USR" id="bm_id3151378" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_AP_INSERT_DB_SEL:LB_DBFMT_FROM_USR" id="bm_id3159177" localize="false"/><paragraph role="heading" id="hd_id3159148" xml-lang="en-US" level="3" l10n="U" oldref="15">Select</paragraph>
+<paragraph role="paragraph" id="par_id3152349" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SW:LISTBOX:DLG_AP_INSERT_DB_SEL:LB_DBFMT_FROM_USR">Specifies a format from the list, if the format information of certain data fields is not accepted.</ahelp> The formats supplied here are only available for certain database fields, such as numeric or Boolean fields. If you select a database field in text format, you will not be able to select any format from the selection list, since the text format will be automatically maintained.</paragraph>
+<paragraph role="paragraph" id="par_id3144511" xml-lang="en-US" l10n="U" oldref="33">If the format you want is not listed, select "Other Formats..." and define the desired format in the <link href="text/shared/01/05020300.xhp" name="Number Format"><emph>Number Format</emph></link> dialog.</paragraph>
+<paragraph role="paragraph" id="par_id3154282" xml-lang="en-US" l10n="U" oldref="34">The number format assigned using the selection list always refers to the database field selected in the <emph>Database columns</emph> list box.</paragraph>
+</section>
+<paragraph role="note" id="par_id3154138" xml-lang="en-US" l10n="U" oldref="35">To insert the data into the document in the form of a table, the correct <emph>Table</emph> option must be active. You can then select a database field from the <emph>Table column(s)</emph> list box to define the formatting of the database field. The changes to the number formats will be applied to the last selection. It does not matter whether the database field was selected from the <emph>Database columns</emph> list box or from the <emph>Table column(s)</emph> list box.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:DLG_AP_INSERT_DB_SEL:CB_TABLE_HEADON" id="bm_id3149167" localize="false"/><paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="3" l10n="U" oldref="10">Insert table heading</paragraph>
+<paragraph role="paragraph" id="par_id3150497" xml-lang="en-US" l10n="U" oldref="27"><ahelp hid="SW:CHECKBOX:DLG_AP_INSERT_DB_SEL:CB_TABLE_HEADON">Specifies whether to insert a heading line for the columns in the text table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_HEADL_COLNMS" id="bm_id3145606" localize="false"/><paragraph role="heading" id="hd_id3153178" xml-lang="en-US" level="3" l10n="U" oldref="11">Apply column name</paragraph>
+<paragraph role="paragraph" id="par_id3152922" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid="SW:RADIOBUTTON:DLG_AP_INSERT_DB_SEL:RB_HEADL_COLNMS">Uses the field names of the database table as headings for each of the text table columns.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:DLG_AP_INSERT_DB_SEL:RB_HEADL_EMPTY" id="bm_id3148920" localize="false"/><paragraph role="heading" id="hd_id3158407" xml-lang="en-US" level="3" l10n="U" oldref="12">Create row only</paragraph>
+<paragraph role="paragraph" id="par_id3153194" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SW:RADIOBUTTON:DLG_AP_INSERT_DB_SEL:RB_HEADL_EMPTY">Inserts an empty heading line into the text table.</ahelp> Using the<emph> Create row only </emph>option, you can define headings in the document, which do not correspond to the database field names.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_AP_INSERT_DB_SEL:PB_TBL_FORMAT" id="bm_id3155133" localize="false"/><paragraph role="heading" id="hd_id3153369" xml-lang="en-US" level="3" l10n="U" oldref="16">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3154299" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SW:PUSHBUTTON:DLG_AP_INSERT_DB_SEL:PB_TBL_FORMAT">Opens the <switchinline select="appl"><caseinline select="WRITER"><link href="text/swriter/01/05090000.xhp" name="Table Format"><emph>Table Format</emph></link>
+</caseinline><defaultinline>
+<emph>Table Format</emph></defaultinline></switchinline> dialog, which enables you to define the table properties such as borders, background, and column width.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:PushButton:DLG_AP_INSERT_DB_SEL:PB_TBL_AUTOFMT" id="bm_id3155411" localize="false"/><paragraph role="heading" id="hd_id3153728" xml-lang="en-US" level="3" l10n="U" oldref="17">AutoFormat</paragraph>
+<paragraph role="paragraph" id="par_id3154988" xml-lang="en-US" l10n="U" oldref="37"><ahelp hid="SW:PUSHBUTTON:DLG_AP_INSERT_DB_SEL:PB_TBL_AUTOFMT">Opens the <switchinline select="appl"><caseinline select="WRITER"><link href="text/swriter/01/05150101.xhp" name="AutoFormat"><emph>AutoFormat</emph></link>
+</caseinline><defaultinline>
+<emph>AutoFormat</emph></defaultinline></switchinline> dialog, in which you can select format styles that are immediately applied when inserting the table.</ahelp></paragraph>
+</body>
+</helpdocument>

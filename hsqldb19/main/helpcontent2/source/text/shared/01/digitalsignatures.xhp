@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared01digitalsignaturesxhp" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Digital Signatures</title>
+         <filename>/text/shared/01/digitalsignatures.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="digitalsignatures">
+<bookmark xml-lang="en-US" branch="hid/.uno:Signature" id="bm_id9475924" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Signature" id="bm_id127567" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sfx2:PushButton:TP_DOCINFODOC:BTN_SIGNATURE" id="bm_id4573503" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10544" role="heading" level="1" l10n="NEW"><link href="text/shared/01/digitalsignatures.xhp">Digital Signatures</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN10548" role="paragraph" l10n="NEW"><ahelp hid=".">Adds and removes digital signatures to and from your document. You can also use the dialog to view certificates.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000401.xhp#digitalsig"/>
+      </section>
+      <embed href="text/shared/guide/digital_signatures.xhp#digital_signatures"/>
+<!-- removed HID HID_XMLSEC_QUERY_SAVEBEFORESIGN -->
+<paragraph xml-lang="en-US" id="par_idN10629" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">You must save a file before you can apply a digital signature to the file.</ahelp></paragraph>
+<!-- removed HID HID_XMLSEC_INFO_WRONGDOCFORMAT -->
+<paragraph xml-lang="en-US" id="par_idN10644" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">You must save a file in OpenDocument format before you can apply a digital signature to the file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/XMLSECURITY_HID_XMLSEC_CTRL_SIGNATURESDLG" id="bm_id685445" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1055F" role="heading" level="2" l10n="NEW">List</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10563" role="paragraph" l10n="NEW"><ahelp hid=".">Lists the digital signatures for the current document.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10566" role="paragraph" l10n="NEW">The Signed icon
+<image id="img_id4557023" src="xmlsecurity/res/certificate_16.png" width="0.1665in" height="0.1146in"><alt xml-lang="en-US" id="alt_id4557023">Icon</alt>
+	</image> indicates a valid digital signature, while the Exclamation mark icon
+<image id="img_id249336" src="xmlsecurity/res/caution_11x16.png" width="0.1665in" height="0.1146in"><alt xml-lang="en-US" id="alt_id249336">Icon</alt>
+	</image> indicates an invalid digital signature.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0821200910573716" role="paragraph" l10n="NEW">See also <link href="text/shared/guide/digital_signatures.xhp">Digital Signatures</link>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/xmlsecurity:PushButton:RID_XMLSECDLG_DIGSIG:BTN_VIEWCERT" id="bm_id7360759" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN1056C" role="heading" level="2" l10n="NEW">View Certificate</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10570" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the <link href="text/shared/optionen/viewcertificate.xhp">View Certificate</link> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/padmin:PushButton:RID_PADIALOG:RID_PA_BTN_STD" id="bm_id2279122" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10581" role="heading" level="2" l10n="CHG">Sign Document</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10585" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the <link href="text/shared/01/selectcertificate.xhp">Select Certificate</link> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/padmin:PushButton:RID_PADIALOG:RID_PA_BTN_DEL" id="bm_id4170964" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10596" role="heading" level="2" l10n="NEW">Remove</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1059A" role="paragraph" l10n="NEW"><ahelp hid=".">Removes the selected source from the list.</ahelp></paragraph>
+   </body>
+</helpdocument>

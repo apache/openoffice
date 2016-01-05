@@ -1,0 +1,40 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#define DLG_SNAPLINE 312
+#define BTN_OK 1
+#define BTN_CANCEL 2
+#define BTN_HELP 3
+#define BTN_DELETE 4
+#define FL_POSITION 5
+#define FT_X 6
+#define MTR_FLD_X 7
+#define FT_Y 8
+#define MTR_FLD_Y 9
+#define FL_DIRECTION 10
+#define RB_HORIZONTAL 11
+#define RB_VERTICAL 12
+#define RB_POINT 13
+
+#define BMP_POINT_H 1
+#define BMP_VERTICAL_H 2
+#define BMP_HORIZONTAL_H 3

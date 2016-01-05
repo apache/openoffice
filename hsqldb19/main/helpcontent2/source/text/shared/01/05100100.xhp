@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0105100100xhp" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Merge</title>
+<filename>/text/shared/01/05100100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="verbinden">
+<bookmark xml-lang="en-US" branch="hid/.uno:MergeCells" id="bm_id1766491" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:MergeCells" id="bm_id3149051" localize="false"/>
+<paragraph role="heading" id="hd_id3154765" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05100100.xhp" name="Merge">Merge</link></paragraph>
+<paragraph role="paragraph" id="par_id3147406" xml-lang="en-US" l10n="U" oldref="2"><variable id="verbindentext"><ahelp hid=".">Combines the contents of the selected table cells into a single cell.</ahelp>
+</variable><comment>moved from swriter/01/05100100.xhp, see i86644</comment></paragraph>
+</section>
+<section id="howtoget">
+<switch select="appl">
+<case select="WRITER">
+<paragraph role="paragraph" id="par_id3154351" xml-lang="en-US" l10n="U" oldref="79">Choose <emph>Table - Merge Cells</emph>
+</paragraph>
+</case>
+</switch>
+<paragraph role="paragraph" id="par_id3154370" xml-lang="en-US" l10n="U" oldref="80">On the <emph>Table</emph> Bar, click</paragraph>
+<section id="syzellenverbinden">
+<table id="tbl_id3154636">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153996" xml-lang="en-US" l10n="E">
+<image id="img_id3154002" src="res/commandimagelist/sc_mergecells.png" width="0.423cm" height="0.423cm"><alt id="alt_id3154002" xml-lang="en-US">icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150662" xml-lang="en-US" l10n="U" oldref="81">Merge Cells</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+</section>
+<paragraph role="warning" id="par_id3153718" xml-lang="en-US" l10n="U" oldref="3">Merging cells can lead to calculation errors in formulas in the table.</paragraph>
+</body>
+</helpdocument>

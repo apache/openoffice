@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguideprint_detailsxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Printing Sheet Details</title>
+<filename>/text/scalc/guide/print_details.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-02-21T13:00:24">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154346"><bookmark_value>printing;sheet details</bookmark_value>
+<bookmark_value>sheets; printing details</bookmark_value>
+<bookmark_value>grids; printing sheet grids</bookmark_value>
+<bookmark_value>formulas; printing, instead of results</bookmark_value>
+<bookmark_value>comments; printing</bookmark_value>
+<bookmark_value>charts;printing</bookmark_value>
+<bookmark_value>sheet grids; printing</bookmark_value>
+<bookmark_value>cells; printing grids</bookmark_value>
+<bookmark_value>borders; printing cells</bookmark_value>
+<bookmark_value>zero values; printing</bookmark_value>
+<bookmark_value>null values; printing</bookmark_value>
+<bookmark_value>draw objects;printing</bookmark_value>
+</bookmark><comment>mw inserted 4 index entries from text/scalc/01/05070500.xhp. Added "draw objects;..." entry and changed "formulas;..." entry</comment>
+<paragraph role="heading" id="hd_id3154346" xml-lang="en-US" level="1" l10n="U" oldref="1"><variable id="print_details"><link href="text/scalc/guide/print_details.xhp" name="Printing Sheet Details">Printing Sheet Details</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3153728" xml-lang="en-US" l10n="U" oldref="2">When printing a sheet you can select which details are to be printed:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150010" xml-lang="en-US" l10n="U" oldref="3">Row and column headers</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154013" xml-lang="en-US" l10n="U" oldref="4">Sheet grid</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145273" xml-lang="en-US" l10n="U" oldref="5">Comments</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145801" xml-lang="en-US" l10n="U" oldref="6">Objects and graphics</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154491" xml-lang="en-US" l10n="U" oldref="7">Charts</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154731" xml-lang="en-US" l10n="U" oldref="8">Drawing objects</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149400" xml-lang="en-US" l10n="U" oldref="9">Formulas</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3150752" xml-lang="en-US" l10n="U" oldref="10">To choose the details proceed as follows:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145640" xml-lang="en-US" l10n="U" oldref="11">Select the sheet you want to print.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150042" xml-lang="en-US" l10n="U" oldref="12">Choose <emph>Format - Page</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3147340" xml-lang="en-US" l10n="CHG" oldref="13">The command is not visible if the sheet was opened with write protection on. In that case, click the <emph>Edit File </emph>icon on the <emph>Standard</emph> Bar.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146916" xml-lang="en-US" l10n="U" oldref="14">Select the <emph>Sheet</emph> tab. In the <emph>Print </emph>area mark the details to be printed and click OK.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145789" xml-lang="en-US" l10n="U" oldref="15">Print the document.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3150345" xml-lang="en-US" l10n="U" oldref="16"><link href="text/scalc/01/03100000.xhp" name="View - Page Break Preview">View - Page Break Preview</link></paragraph>
+<embed href="text/scalc/guide/print_exact.xhp#print_exact"/>
+</section>
+</body>
+</helpdocument>

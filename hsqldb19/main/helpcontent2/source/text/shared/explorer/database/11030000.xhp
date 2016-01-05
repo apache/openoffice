@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textsharedexplorerdatabase11030000xml" indexer="exclude">
+<title id="tit" xml-lang="en-US">dBASE</title>
+<filename>/text/shared/explorer/database/11030000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="dbase"><comment>ufi: removed remaining two index entries</comment><comment>mw added "(Base)" to all 4 entries  and transferred 2 entries to shared/explorer/database/dabawiz02dbase.xhp</comment>
+<paragraph role="heading" id="hd_id3153539" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/explorer/database/11030000.xhp" name="dBase">dBASE</link><comment>still two Help IDs in this file. Else file can be removed</comment></paragraph>
+<paragraph role="paragraph" id="par_id3147088" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="">Specify the settings for a dBASE database.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+<embed href="text/shared/00/00000450.xhp#dBase"/>
+</section>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="18">To be able to define relations between tables, use JDBC or ODBC from within $[officename].</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_SHOWDELETED" id="bm_id3154142" localize="false"/>
+<paragraph role="heading" id="hd_id3149233" xml-lang="en-US" level="2" l10n="U" oldref="4">Display inactive records</paragraph>
+<paragraph role="paragraph" id="par_id3153823" xml-lang="en-US" l10n="U" oldref="5"><ahelp hid="HID_DSADMIN_SHOWDELETED">Displays all the records in a file, including those marked as deleted. If you select this check box, you cannot delete records.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3156023" xml-lang="en-US" l10n="U" oldref="17">In dBASE format, deleted records remain in the file. </paragraph>
+<paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="15">To view any changes that you make to the database, close the connection to the database, and then reconnect the database.</paragraph>
+<paragraph role="paragraph" id="par_id6051820" xml-lang="en-US" l10n="NEW"><comment>UFI: deleted note about case sensitivity. Should be not other than for all other files.</comment></paragraph>
+<!-- removed HID HID_DSADMIN_CHARSET_DBASE -->
+<paragraph role="paragraph" id="par_id0904200811094971" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Select the code conversion that you want to use to view the database in $[officename]. This does not affect the database.</ahelp></paragraph>
+<embed href="text/shared/explorer/database/11020000.xhp#zeichensatz"/>
+<embed href="text/shared/explorer/database/11020000.xhp#sql92"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_DBASE_INDICIES" id="bm_id3151056" localize="false"/>
+<paragraph role="heading" id="hd_id3149047" xml-lang="en-US" level="2" l10n="U" oldref="8">Indexes</paragraph>
+<paragraph role="paragraph" id="par_id3161656" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="HID_DSADMIN_DBASE_INDICIES">Opens the <link href="text/shared/explorer/database/11030100.xhp" name="Indexes"><emph>Indexes</emph></link> dialog, where you can organize the table indexes in the current dBASE database.</ahelp></paragraph>
+</body>
+</helpdocument>

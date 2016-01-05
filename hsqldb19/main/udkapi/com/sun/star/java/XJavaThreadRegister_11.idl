@@ -1,0 +1,79 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_java_XJavaThreadRegister_11_idl__ 
+#define __com_sun_star_java_XJavaThreadRegister_11_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module java { 
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: interface com::sun::star::java::XJavaThreadRegister_11
+/** must be implemented by the user of the XJavaThreadRegister_11.
+
+	@incomplete
+	@deprecated
+ */
+published interface XJavaThreadRegister_11: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::java::XJavaThreadRegister_11::isThreadAttached
+	/** returns <true/> if the current thread is already attached to the VM otherwise <false/>.
+	 */
+	boolean isThreadAttached(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::java::XJavaThreadRegister_11::registerThread
+	/** registers the current thread. 
+
+		<p>This method should be called every time a JNI function is called from Java. </p>
+	 */
+	void registerThread(); 
+	 
+ 
+	//------------------------------------------------------------------------- 
+	  
+	// DocMerge from xml: method com::sun::star::java::XJavaThreadRegister_11::revokeThread
+	/** revokes the current thread from the list of registerd threads. 
+
+		<p>This method should be called at the end of every JNI call from Java. </p>
+	 */
+	void revokeThread(); 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

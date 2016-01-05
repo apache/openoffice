@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared01mediaplayerxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Media Player</title>
+         <filename>/text/shared/01/mediaplayer.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="mediaplayer">
+<bookmark xml-lang="en-US" branch="index" id="bm_id8659321"><bookmark_value>Media Player window</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:AVMediaPlayer" id="bm_id8777733" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:AVMediaPlayer" id="bm_id3334452" localize="false"/>
+<paragraph xml-lang="en-US" id="par_idN10550" role="heading" level="1" l10n="NEW"><variable id="mediaplayertitle"><link href="text/shared/01/mediaplayer.xhp">Media Player</link>
+</variable></paragraph>
+         <paragraph xml-lang="en-US" id="par_idN10560" role="paragraph" l10n="NEW"><ahelp hid=".">Opens the Media Player window where you can preview movie and sound files as well as insert these files into the current document.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00000406.xhp#mediaplayer"/>
+      </section>
+      <paragraph xml-lang="en-US" id="par_idN10577" role="paragraph" l10n="NEW">The Media Player supports many different media formats. You can also insert media files from the Media Player into your document.<comment>UFI: add a list of keyboard shortcuts to /04/ file when available</comment></paragraph>
+<switch select="sys">
+<case select="UNIX">
+<paragraph xml-lang="en-US" id="par_idN105EF" role="note" l10n="NEW">On Linux or Solaris systems, the Media Player requires the Java Media Framework API (JMF). Download and install the JMF files from http://java.sun.com/javase/technologies/desktop/media/jmf/index.jsp and add the path to the installed jmf.jar to the class path in the Options dialog box in %PRODUCTNAME - Java.</paragraph>
+</case>
+<case select="WIN">
+<paragraph xml-lang="en-US" id="par_idN1064F" role="note" l10n="NEW">On Windows systems, the Media Player uses DirectShow, which should be installed on your system by default.</paragraph>
+</case>
+</switch>
+<paragraph xml-lang="en-US" id="par_idN1057A" role="heading" level="2" l10n="NEW">Open</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1057E" role="paragraph" l10n="NEW">Opens a movie file or a sound file that you want to preview.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10581" role="heading" level="2" l10n="CHG">Apply</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10585" role="paragraph" l10n="NEW">Inserts the current movie file or sound file as a media object into the current document. </paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10588" role="heading" level="2" l10n="NEW">Play</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1058C" role="paragraph" l10n="NEW">Plays the current file.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1058F" role="heading" level="2" l10n="NEW">Pause</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10593" role="paragraph" l10n="NEW">Pauses or resumes the playback of the current file.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10596" role="heading" level="2" l10n="NEW">Stop</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1059A" role="paragraph" l10n="NEW">Stops the playback of the current file.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1059D" role="heading" level="2" l10n="NEW">Repeat</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105A1" role="paragraph" l10n="NEW">Plays the file repeatedly.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105A4" role="heading" level="2" l10n="NEW">Mute</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105A8" role="paragraph" l10n="NEW">Turns sound off and on.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105AB" role="heading" level="2" l10n="NEW">Volume slider</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105AF" role="paragraph" l10n="NEW">Adjusts the volume.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105B2" role="heading" level="2" l10n="CHG">View</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105B6" role="paragraph" l10n="NEW">Adjusts the size of the movie playback.</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105B9" role="heading" level="2" l10n="NEW">Position slider</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN105BD" role="paragraph" l10n="NEW">Moves to a different position in the file.</paragraph>
+      <section id="relatedtopics">
+         <embed href="text/shared/01/moviesound.xhp#moviesoundtitle"/>
+      </section>
+   </body>
+</helpdocument>

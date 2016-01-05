@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionenviewcertificatexhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">View Certificate</title>
+<filename>/text/shared/optionen/viewcertificate.xhp</filename>
+</topic>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10541" xml-lang="en-US" level="1" l10n="NEW">View Certificate</paragraph>
+<paragraph role="paragraph" id="par_idN10545" xml-lang="en-US" l10n="NEW">The View Certificate dialog opens when you click the View Certificate button on the <link href="text/shared/optionen/macrosecurity_ts.xhp">Trusted Sources</link> tab page of the <link href="text/shared/optionen/macrosecurity.xhp">Macro Security</link> dialog.</paragraph>
+<paragraph role="paragraph" id="par_idN10564" xml-lang="en-US" l10n="NEW">The dialog has the following tab pages:</paragraph>
+<embed href="text/shared/optionen/viewcertificate_g.xhp#general"/>
+<embed href="text/shared/optionen/viewcertificate_d.xhp#details"/>
+<embed href="text/shared/optionen/viewcertificate_c.xhp#certificatepath"/>
+</body>
+</helpdocument>

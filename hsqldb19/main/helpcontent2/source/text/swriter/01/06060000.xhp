@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0106060000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Outline Numbering</title>
+<filename>/text/swriter/01/06060000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:ChapterNumberingDialog" id="bm_id6638326" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ChapterNumberingDialog" id="bm_id3154501" localize="false"/><paragraph role="heading" id="hd_id3154561" xml-lang="en-US" level="1" l10n="U" oldref="1">Outline Numbering</paragraph>
+<paragraph role="paragraph" id="par_id3145246" xml-lang="en-US" l10n="U" oldref="2"><variable id="kapnum"><ahelp hid=".uno:ChapterNumberingDialog">Specifies the number format and the hierarchy for chapter numbering in the current document.</ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000406.xhp#kapitelnumerierung"/>
+</section>
+<paragraph role="paragraph" id="par_id3150934" xml-lang="en-US" l10n="U" oldref="54">Outline numbering is linked to paragraph styles. By default, the "Heading" paragraph styles (1-10) are assigned to the corresponding outline number levels (1-10). If you want, you can assign different paragraph styles to the outline number level.</paragraph>
+<paragraph role="tip" id="par_id8237250" xml-lang="en-US" l10n="NEW">If you want numbered headings, use the <emph>Tools - Outline Numbering</emph> menu command to assign numbering to a paragraph style. Do not use the Numbering icon on the Formatting toolbar.</paragraph>
+<paragraph role="note" id="par_id3147567" xml-lang="en-US" l10n="U" oldref="55">To highlight the screen display of outline numbers, choose <emph>View -</emph>
+<emph>Field Shadings</emph>.</paragraph>
+<embed href="text/swriter/01/06060100.xhp#numerierung"/>
+<embed href="text/shared/01/06050600.xhp#position_s"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_OUTLINE_FORM" id="bm_id3147506" localize="false"/><paragraph role="heading" id="hd_id3151168" xml-lang="en-US" level="2" l10n="U" oldref="56">Format</paragraph>
+<paragraph role="paragraph" id="par_id3147512" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="HID_OUTLINE_FORM">Saves or loads an outline number format. A saved outline number format is available to all text documents.</ahelp></paragraph>
+<paragraph role="note" id="par_id3150979" xml-lang="en-US" l10n="U" oldref="58">The <emph>Format</emph> button is only available for outline numbering. For numbered or bulleted list styles, modify the Numbering Styles of the paragraphs.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NUM_OUTL_NAMED_NUMS" id="bm_id3154474" localize="false"/><paragraph role="heading" id="hd_id3154572" xml-lang="en-US" level="3" l10n="U" oldref="59">Untitled 1 - 9</paragraph>
+<paragraph role="paragraph" id="par_id3150350" xml-lang="en-US" l10n="U" oldref="60"><ahelp hid="HID_NUM_OUTL_NAMED_NUMS">Select the predefined numbering style that you want to assign to the selected outline level.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_NUM_OUTL_NUM_SAVEAS" id="bm_id3152958" localize="false"/><paragraph role="heading" id="hd_id3153675" xml-lang="en-US" level="3" l10n="U" oldref="61">Save As</paragraph>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="62"><ahelp hid="HID_NUM_OUTL_NUM_SAVEAS">Opens a dialog where you can save the current settings for the selected outline level. You can then load these settings from another document.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:Edit:DLG_NUM_NAMES:ED_FORM" id="bm_id3154191" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sw:ListBox:DLG_NUM_NAMES:LB_FORM" id="bm_id3154194" localize="false"/><paragraph role="heading" id="hd_id3149689" xml-lang="en-US" level="3" l10n="U" oldref="63">Save As</paragraph>
+<paragraph role="paragraph" id="par_id3154200" xml-lang="en-US" l10n="U" oldref="64"><ahelp hid="SW:LISTBOX:DLG_NUM_NAMES:LB_FORM">Click a numbering style in the list, and then enter a name for the style. The numbers correspond to the outline level that the styles are assigned to.</ahelp></paragraph>
+</body>
+</helpdocument>

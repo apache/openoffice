@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<!DOCTYPE oor:component-data SYSTEM "../../../../component-update.dtd">
+<oor:component-data oor:name="Impress" oor:package="org.openoffice.Office" xmlns:install="http://openoffice.org/2004/installation" xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <node oor:name="MultiPaneGUI">
+    <node oor:name="Framework">
+      <node oor:name="ResourceFactories">
+        <node oor:name="F0" oor:op="replace">
+          <prop oor:name="ServiceName">
+            <value>com.sun.star.drawing.framework.BasicPaneFactory</value>
+          </prop>
+          <node oor:name="ResourceList">
+            <node oor:name="R0" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/pane/CenterPane</value>
+              </prop>
+            </node>
+            <node oor:name="R1" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/pane/LeftImpressPane</value>
+              </prop>
+            </node>
+            <node oor:name="R2" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/pane/LeftDrawPane</value>
+              </prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="F1" oor:op="replace">
+          <prop oor:name="ServiceName">
+            <value>com.sun.star.drawing.framework.BasicViewFactory</value>
+          </prop>
+          <node oor:name="ResourceList">
+            <node oor:name="R0" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/ImpressView</value>
+              </prop>
+            </node>
+            <node oor:name="R1" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/GraphicView</value>
+              </prop>
+            </node>
+            <node oor:name="R2" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/OutlineView</value>
+              </prop>
+            </node>
+            <node oor:name="R3" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/NotesView</value>
+              </prop>
+            </node>
+            <node oor:name="R4" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/HandoutView</value>
+              </prop>
+            </node>
+            <node oor:name="R5" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/SlideSorter</value>
+              </prop>
+            </node>
+            <node oor:name="R6" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/view/PresentationView</value>
+              </prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="F2" oor:op="replace">
+          <prop oor:name="ServiceName">
+            <value>com.sun.star.drawing.framework.BasicToolBarFactory</value>
+          </prop>
+          <node oor:name="ResourceList">
+            <node oor:name="R0" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolbar/ViewTabBar</value>
+              </prop>
+            </node>
+          </node>
+        </node>
+        <node oor:name="F3" oor:op="replace">
+          <prop oor:name="ServiceName">
+            <value>com.sun.star.comp.Draw.framework.TaskPanelFactory</value>
+          </prop>
+          <node oor:name="ResourceList">
+            <node oor:name="R0a" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/AllMasterPages</value>
+              </prop>
+            </node>
+            <node oor:name="R0b" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/RecentMasterPages</value>
+              </prop>
+            </node>
+            <node oor:name="R0c" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/UsedMasterPages</value>
+              </prop>
+            </node>
+            <node oor:name="R1" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/Layouts</value>
+              </prop>
+            </node>
+            <node oor:name="R2" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/TableDesign</value>
+              </prop>
+            </node>
+            <node oor:name="R3" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/CustomAnimations</value>
+              </prop>
+            </node>
+            <node oor:name="R4" oor:op="replace">
+              <prop oor:name="URL">
+                <value>private:resource/toolpanel/SlideTransitions</value>
+              </prop>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node oor:name="StartupServices">
+	<node oor:name="S0" oor:op="replace">
+	  <prop oor:name="ServiceName">
+	    <value>com.sun.star.drawing.framework.PresentationFactoryProvider</value>
+	  </prop>
+	</node>
+      </node>  
+    </node>
+  </node>
+  <node oor:name="Misc">
+    <prop oor:name="TransitionFiles" install:module="ogltrans">
+      <value oor:separator=";">vnd.sun.star.expand:$OOO_BASE_DIR/share/config/soffice.cfg/simpress/transitions.xml;vnd.sun.star.expand:$OOO_BASE_DIR/share/config/soffice.cfg/simpress/transitions-ogl.xml</value>
+    </prop>
+  </node>
+    <node oor:name="PresentationMinimizer">
+        <node oor:name="LastUsedSettings">
+            <prop oor:name="Name">
+                <value xml:lang="en-US">Projector optimized</value>
+            </prop>
+            <prop oor:name="JPEGCompression">
+                <value>true</value>
+            </prop>
+            <prop oor:name="JPEGQuality">
+                <value>50</value>
+            </prop>
+            <prop oor:name="RemoveCropArea">
+                <value>true</value>
+            </prop>
+            <prop oor:name="ImageResolution">
+                <value>150</value>
+            </prop>
+            <prop oor:name="EmbedLinkedGraphics">
+                <value>true</value>
+            </prop>
+            <prop oor:name="OLEOptimization">
+                <value>true</value>
+            </prop>
+            <prop oor:name="OLEOptimizationType">
+                <value>0</value>
+            </prop>
+            <prop oor:name="DeleteUnusedMasterPages">
+                <value>true</value>
+            </prop>
+            <prop oor:name="DeleteHiddenSlides">
+                <value>true</value>
+            </prop>
+            <prop oor:name="DeleteNotesPages">
+                <value>false</value>
+            </prop>
+            <prop oor:name="SaveAs">
+                <value>true</value>
+            </prop>
+            <prop oor:name="OpenNewDocument">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="Settings">
+            <node oor:name="Templates">
+                <node oor:name="template1" oor:op="replace">
+                    <prop oor:name="Name">
+                        <value xml:lang="en-US">Screen optimized (smallest file size)</value>
+                    </prop>
+                    <prop oor:name="JPEGCompression">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="JPEGQuality">
+                        <value>25</value>
+                    </prop>
+                    <prop oor:name="RemoveCropArea">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="ImageResolution">
+                        <value>90</value>
+                    </prop>
+                    <prop oor:name="EmbedLinkedGraphics">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimization">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimizationType">
+                        <value>0</value>
+                    </prop>
+                    <prop oor:name="DeleteUnusedMasterPages">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteHiddenSlides">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteNotesPages">
+                        <value>false</value>
+                    </prop>
+                    <prop oor:name="SaveAs">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OpenNewDocument">
+                        <value>true</value>
+                    </prop>
+                </node>
+                <node oor:name="template2" oor:op="replace">
+                    <prop oor:name="Name">
+                        <value xml:lang="en-US">Projector optimized</value>
+                    </prop>
+                    <prop oor:name="JPEGCompression">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="JPEGQuality">
+                        <value>50</value>
+                    </prop>
+                    <prop oor:name="RemoveCropArea">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="ImageResolution">
+                        <value>150</value>
+                    </prop>
+                    <prop oor:name="EmbedLinkedGraphics">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimization">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimizationType">
+                        <value>0</value>
+                    </prop>
+                    <prop oor:name="DeleteUnusedMasterPages">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteHiddenSlides">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteNotesPages">
+                        <value>false</value>
+                    </prop>
+                    <prop oor:name="SaveAs">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OpenNewDocument">
+                        <value>true</value>
+                    </prop>
+                </node>
+                <node oor:name="template3" oor:op="replace">
+                    <prop oor:name="Name">
+                        <value xml:lang="en-US">Print optimized</value>
+                    </prop>
+                    <prop oor:name="JPEGCompression">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="JPEGQuality">
+                        <value>75</value>
+                    </prop>
+                    <prop oor:name="RemoveCropArea">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="ImageResolution">
+                        <value>300</value>
+                    </prop>
+                    <prop oor:name="EmbedLinkedGraphics">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimization">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OLEOptimizationType">
+                        <value>0</value>
+                    </prop>
+                    <prop oor:name="DeleteUnusedMasterPages">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteHiddenSlides">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="DeleteNotesPages">
+                        <value>false</value>
+                    </prop>
+                    <prop oor:name="SaveAs">
+                        <value>true</value>
+                    </prop>
+                    <prop oor:name="OpenNewDocument">
+                        <value>true</value>
+                    </prop>
+                </node>
+            </node>
+        </node>
+    </node>
+</oor:component-data>

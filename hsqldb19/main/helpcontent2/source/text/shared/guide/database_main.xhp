@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedatabase_mainxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Database Overview</title>
+<filename>/text/shared/guide/database_main.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-06-14T15:08:46">FPE: Deleted screenshot.</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153031"><bookmark_value>databases; overview</bookmark_value>
+<bookmark_value>data source view; overview</bookmark_value>
+<bookmark_value>data source explorer</bookmark_value>
+<bookmark_value>explorer of data sources</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3153031" xml-lang="en-US" l10n="E" oldref="1" localize="false"/>
+<paragraph role="heading" id="hd_id3148474" xml-lang="en-US" level="1" l10n="CHG" oldref="2"><variable id="database_main"><link href="text/shared/guide/database_main.xhp" name="Data Source Overview">Database Overview</link>
+</variable><comment>remove this file when all links are resolved</comment></paragraph>
+<paragraph role="paragraph" id="par_idN105F1" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/main.xhp">Working with databases in %PRODUCTNAME</link></paragraph>
+<paragraph role="heading" id="hd_id3153821" xml-lang="en-US" level="2" l10n="U" oldref="3">Data Source View</paragraph>
+<paragraph role="paragraph" id="par_id3149415" xml-lang="en-US" l10n="CHG" oldref="4">Choose <emph>View - Data Sources</emph> or press F4 to call the data source view from a text document or spreadsheet.</paragraph>
+<paragraph role="paragraph" id="par_id3147531" xml-lang="en-US" l10n="U" oldref="5">On the left you can see the <link href="text/shared/02/12000000.xhp" name="Data source explorer">Data source explorer</link>. If you select a table or query there, you see the contents of this table or query on the right. At the top margin is the <link href="text/shared/main0212.xhp" name="Database bar">Table Data bar</link>.</paragraph>
+<paragraph role="heading" id="hd_id3149047" xml-lang="en-US" level="2" l10n="U" oldref="6">Data Sources</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="CHG" oldref="7"><link href="text/shared/guide/data_addressbook.xhp" name="address book as data source">Address book as data source</link></paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="9"><link href="text/shared/01/04180100.xhp" name="View data source contents">View data source contents</link></paragraph>
+<paragraph role="paragraph" id="par_idN106A4" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/menubar.xhp">Menu bar of a database file</link></paragraph>
+<paragraph role="heading" id="hd_id3154123" xml-lang="en-US" level="2" l10n="CHG" oldref="16">Forms and Reports</paragraph>
+<paragraph role="paragraph" id="par_id3154909" xml-lang="en-US" l10n="CHG" oldref="17"><link href="text/shared/explorer/database/04030000.xhp" name="Create new form document">Create new form document</link>, <link href="text/shared/02/01170000.xhp" name="edit form functions">edit form controls</link>, <link href="text/shared/autopi/01090000.xhp">Form Wizard</link></paragraph>
+<paragraph role="paragraph" id="par_id3152920" xml-lang="en-US" l10n="CHG" oldref="18"><link href="text/shared/02/01170500.xhp" name="entering data versus editing form">Entering data versus editing form</link></paragraph>
+<paragraph role="paragraph" id="par_id3151380" xml-lang="en-US" l10n="U" oldref="23"><link href="text/shared/autopi/01100000.xhp" name="Report AutoPilot">Report Wizard</link></paragraph>
+<embed href="text/shared/guide/data_report.xhp#data_report"/>
+<paragraph role="heading" id="hd_id3145606" xml-lang="en-US" level="2" l10n="U" oldref="13">Queries</paragraph>
+<paragraph role="paragraph" id="par_id3125864" xml-lang="en-US" l10n="U" oldref="14"><link href="text/shared/explorer/database/02000000.xhp" name="Create new query or table view, edit query structure">Create new query or table view, edit query structure</link></paragraph>
+<paragraph role="paragraph" id="par_idN1072A" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/querywizard00.xhp">Query Wizard</link></paragraph>
+<paragraph role="paragraph" id="par_id3155430" xml-lang="en-US" l10n="U" oldref="15"><link href="text/shared/01/05340400.xhp" name="Enter, edit and copy records">Enter, edit and copy records</link></paragraph>
+<paragraph role="heading" id="hd_id3147287" xml-lang="en-US" level="2" l10n="U" oldref="10">Tables</paragraph>
+<paragraph role="paragraph" id="par_id3163713" xml-lang="en-US" l10n="U" oldref="11"><link href="text/shared/explorer/database/05010000.xhp" name="Create new table, edit table structure">Create new table, edit table structure</link>, <link href="text/shared/explorer/database/05010100.xhp" name="index">index</link>, <link href="text/shared/explorer/database/05020000.xhp" name="relations">relations</link></paragraph>
+<paragraph role="paragraph" id="par_idN1078F" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/tablewizard00.xhp">Table Wizard</link></paragraph>
+<paragraph role="paragraph" id="par_id3159196" xml-lang="en-US" l10n="U" oldref="12"><link href="text/shared/01/05340400.xhp" name="Enter, edit and copy records">Enter, edit and copy records</link></paragraph>
+</body>
+</helpdocument>

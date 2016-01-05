@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguideredlining_doccomparexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Comparing Versions of a Document</title>
+<filename>/text/shared/guide/redlining_doccompare.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-02T16:33:28">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154788"><bookmark_value>documents; comparing</bookmark_value>
+<bookmark_value>comparisons;document versions</bookmark_value>
+<bookmark_value>versions; comparing documents</bookmark_value>
+<bookmark_value>changes;comparing to original</bookmark_value>
+<bookmark_value>review function; comparing documents</bookmark_value>
+</bookmark><comment>mw made "comparing..." a two level entry</comment>
+<paragraph role="heading" id="hd_id3154788" xml-lang="en-US" level="1" l10n="U" oldref="32"><variable id="redlining_doccompare"><link href="text/shared/guide/redlining_doccompare.xhp" name="Comparing Versions of a Document">Comparing Versions of a Document</link>
+</variable></paragraph>
+<paragraph role="note" id="par_id4186223" xml-lang="en-US" l10n="NEW">The review function is available in %PRODUCTNAME for text documents and spreadsheet documents.</paragraph>
+<paragraph role="paragraph" id="par_id3995178" xml-lang="en-US" l10n="NEW">Imagine you have some co-authors or reviewers who collaborate with you writing your original document. One day you send out copies of your document to all reviewers. You ask them to edit the copy and send it back.</paragraph>
+<paragraph role="paragraph" id="par_id9948423" xml-lang="en-US" l10n="NEW">Normally, the reviewers enable change tracking by <emph>Edit - Changes - Record</emph> and you can easily see the changes.</paragraph>
+<paragraph role="paragraph" id="par_id3155421" xml-lang="en-US" l10n="U" oldref="33">If one of the authors has made changes to a document without recording them, you can compare the changed document to your original document.</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3153087" xml-lang="en-US" l10n="CHG" oldref="35">Open the reviewer's document and then choose <emph>Edit - Compare Document</emph>.<comment>changed workflow, see i72652</comment></paragraph>
+<paragraph role="listitem" id="par_id4208807" xml-lang="en-US" l10n="NEW">You should always start with opening the newer document and compare it with the older document.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145315" xml-lang="en-US" l10n="CHG" oldref="36">A file selection dialog appears. Select your older original document and confirm the dialog.</paragraph>
+<paragraph role="listitem" id="par_id3149762" xml-lang="en-US" l10n="CHG" oldref="37">
+<item type="productname">%PRODUCTNAME</item> combines both documents into the reviewer's document. All text passages that occur in the reviewer's document but not in the original are identified as having been inserted, and all text passages that got deleted by the reviewer are identified as deletions.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3145674" xml-lang="en-US" l10n="CHG" oldref="38">You can now accept or reject the insertions and deletions. At the end you may save the reviewer's document as a new original with a new name.</paragraph>
+</listitem>
+</list>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/redlining.xhp#redlining"/>
+<embed href="text/shared/guide/redlining_enter.xhp#redlining_enter"/>
+<embed href="text/shared/guide/redlining_accept.xhp#redlining_accept"/>
+<embed href="text/shared/guide/redlining_docmerge.xhp#redlining_docmerge"/>
+<embed href="text/shared/guide/redlining_versions.xhp#redlining_versions"/>
+</body>
+</helpdocument>

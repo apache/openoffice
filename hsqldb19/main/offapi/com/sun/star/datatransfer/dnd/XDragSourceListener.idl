@@ -1,0 +1,110 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_datatransfer_dnd_XDragSourceListener_idl__
+#define __com_sun_star_datatransfer_dnd_XDragSourceListener_idl__
+
+#ifndef __com_sun_star_datatransfer_dnd_DragSourceDragEvent_idl__
+#include <com/sun/star/datatransfer/dnd/DragSourceDragEvent.idl>
+#endif
+
+#ifndef __com_sun_star_datatransfer_dnd_DragSourceDropEvent_idl__
+#include <com/sun/star/datatransfer/dnd/DragSourceDropEvent.idl>
+#endif
+
+#ifndef __com_sun_star_lang_XEventListener_idl__
+#include <com/sun/star/lang/XEventListener.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module datatransfer { module dnd {
+
+//=============================================================================
+/** This interface must be implemented by any drag gesture recognizer
+	implementation that a drag source supports.
+
+	@see com::sun::star::datatransfer::dnd::XDragGestureRecognizer
+	@see com::sun::star::datatransfer::dnd::XDragSource
+*/
+
+published interface XDragSourceListener: com::sun::star::lang::XEventListener
+{
+	//-------------------------------------------------------------------------
+	/** This method is invoked to signify that the Drag and Drop operation is 
+		complete.
+
+		@param dsde
+		The <type>DragSourceDropEvent</type>
+	*/
+
+	[oneway] void dragDropEnd( [in] DragSourceDropEvent dsde );
+
+  	//-------------------------------------------------------------------------
+	/** Called as the hotspot enters a platform dependent drop site.
+
+		<p><strong>NOTE:</strong> currently this notification can not be ensured by all 
+		implementations. Do not rely on it ! </p>
+
+		@param dsde
+		The <type>DragSourceDragEvent</type>.
+	*/
+		
+	[oneway] void dragEnter( [in] DragSourceDragEvent dsde );
+
+  	//-------------------------------------------------------------------------
+	/** Called as the hotspot exits a platform dependent drop site.
+
+		<p><strong>NOTE:</strong> Currently this notification can not be ensured by all 
+		implementations. Do not rely on it ! </p>
+
+		@param dse
+		The <type>DragSourceEvent</type>.
+	*/
+
+	[oneway] void dragExit( [in] DragSourceEvent dse );
+
+  	//-------------------------------------------------------------------------
+	/** Called as the hotspot moves over a platform dependent drop site.
+
+		@param dsde
+		The <type>DragSourceEvent</type>
+	*/
+
+	[oneway] void dragOver( [in] DragSourceDragEvent dsde );
+
+  	//-------------------------------------------------------------------------
+	/** Called when the user has modified the drop gesture.	
+
+		@param dsde
+		The <type>DragSourceEvent</type>.
+	*/
+
+	[oneway] void dropActionChanged( [in] DragSourceDragEvent dsde );
+};
+
+//=============================================================================
+
+}; }; }; }; };
+
+#endif

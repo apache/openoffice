@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguideauto_offxml" indexer="include">
+         <title xml-lang="en-US" id="tit">Deactivating Automatic Changes</title>
+         <filename>/text/scalc/guide/auto_off.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149456"><bookmark_value>deactivating; automatic changes</bookmark_value>
+      <bookmark_value>tables; deactivating automatic changes in</bookmark_value>
+      <bookmark_value>AutoInput function on/off</bookmark_value>
+      <bookmark_value>text in cells;AutoInput function</bookmark_value>
+      <bookmark_value>cells; AutoInput function of text</bookmark_value>
+      <bookmark_value>input support in spreadsheets</bookmark_value>
+      <bookmark_value>changing; input in cells</bookmark_value>
+      <bookmark_value>AutoCorrect function;cell contents</bookmark_value>
+      <bookmark_value>cell input;AutoInput function</bookmark_value>
+      <bookmark_value>lowercase letters;AutoInput function (in cells)</bookmark_value>
+      <bookmark_value>capital letters;AutoInput function (in cells)</bookmark_value>
+      <bookmark_value>date formats;avoiding conversion to</bookmark_value>
+      <bookmark_value>number completion on/off</bookmark_value>
+      <bookmark_value>text completion on/off</bookmark_value>
+      <bookmark_value>word completion on/off</bookmark_value>
+</bookmark><comment>mw added one entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3149456" role="heading" level="1" l10n="U" oldref="1"><variable id="auto_off"><link href="text/scalc/guide/auto_off.xhp" name="Deactivating Automatic Changes">Deactivating Automatic Changes</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156442" role="paragraph" l10n="U" oldref="2">By default, $[officename] automatically corrects many common typing errors and applies formatting while you type. You can immediately undo any automatic changes with <switchinline select="sys"><caseinline select="MAC">Command
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Z.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145273" role="paragraph" l10n="U" oldref="3">The following shows you how to deactivate and reactivate the automatic changes in $[officename] Calc:</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3145748" role="heading" level="2" l10n="U" oldref="4">Automatic Text or Number Completion</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154730" role="paragraph" l10n="U" oldref="5">When making an entry in a cell, $[officename] Calc automatically suggests matching input found in the same column. This function is known as <emph>AutoInput</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153878" role="paragraph" l10n="U" oldref="6">To turn the AutoInput on and off, set or remove the check mark in front of <link href="text/scalc/01/06130000.xhp" name="Tools - Cell Contents - AutoInput"><emph>Tools - Cell Contents - AutoInput</emph></link>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3146972" role="heading" level="2" l10n="U"
+                 oldref="21">Automatic Conversion to Date Format</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153707" role="paragraph" l10n="U" oldref="22">$[officename] Calc automatically converts certain entries to dates. For example, the entry <emph>1.1</emph> may be interpreted as January 1 of the current year, according to the locale settings of your operating system, and then displayed according to the date format applied to the cell.<comment>for sure 1.1 will not be interpreted as a date in the USofA !!</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159267" role="paragraph" l10n="U" oldref="23">To ensure that an entry is interpreted as text, add an apostrophe at the beginning of the entry. The apostrophe is not displayed in the cell.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150043" role="heading" level="2" l10n="U" oldref="7">Quotation Marks Replaced by Custom Quotes</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155333" role="paragraph" l10n="U" oldref="9">Choose <emph>Tools - AutoCorrect Options</emph>. Go to the <emph>Localized Options</emph> tab and unmark <emph>Replace</emph>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3149565" role="heading" level="2" l10n="U"
+                 oldref="11">Cell Content Always Begins With Uppercase</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147001" role="paragraph" l10n="U" oldref="13">Choose <item type="menuitem">Tools - AutoCorrect Options</item>. Go to the <item type="menuitem">Options</item> tab. Unmark <item type="menuitem">Capitalize first letter of every sentence</item>.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150345" role="heading" level="2" l10n="U"
+                 oldref="15">Replace Word With Another Word</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3166425" role="paragraph" l10n="U" oldref="17">Choose <item type="menuitem">Tools - AutoCorrect Options</item>. Go to the <item type="menuitem">Replace</item> tab. Select the word pair and click <item type="menuitem">Delete</item>.</paragraph>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3152992" role="paragraph" l10n="U" oldref="19"><link href="text/scalc/01/06130000.xhp" name="Tools - Cell Contents - AutoInput">Tools - Cell Contents - AutoInput</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154368" role="paragraph" l10n="U" oldref="20"><link href="text/shared/01/06040000.xhp" name="Tools - AutoCorrect">Tools - AutoCorrect Options</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

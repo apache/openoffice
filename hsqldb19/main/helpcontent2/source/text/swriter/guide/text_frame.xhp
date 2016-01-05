@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textswriterguidetext_framexml" indexer="include">
+         <title xml-lang="en-US" id="tit">Inserting, Editing, and Linking Text Frames</title>
+         <filename>/text/swriter/guide/text_frame.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149487"><bookmark_value>text frames; inserting/editing/linking</bookmark_value>
+      <bookmark_value>editing;text frames</bookmark_value>
+      <bookmark_value>inserting;text frames</bookmark_value>
+      <bookmark_value>resizing;text frames, by mouse</bookmark_value>
+      <bookmark_value>scaling; text frames, by mouse</bookmark_value>
+      <bookmark_value>links;text frames</bookmark_value>
+      <bookmark_value>text flow; from frame to frame</bookmark_value>
+      <bookmark_value>frames; linking</bookmark_value>
+      <bookmark_value>printing;hiding text frames from printing</bookmark_value>
+</bookmark><comment>mw deleted "text;" and changed "printing;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3149487" role="heading" level="1" l10n="U" oldref="3"><variable id="text_frame"><link href="text/swriter/guide/text_frame.xhp" name="Inserting, Editing, and Linking Text Frames">Inserting, Editing, and Linking Text Frames</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149842" role="paragraph" l10n="U" oldref="65">A text frame is a container for text and graphics that you can place anywhere on a page. You can also use a frame to apply a column layout to text.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3156104" role="heading" level="2" l10n="U"
+                 oldref="64">To Insert a Text Frame</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149961" role="listitem" l10n="CHG" oldref="5">Select the text that you want to include in the frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149602" role="listitem" l10n="CHG" oldref="9">Choose <emph>Insert - Frame</emph>, and click OK.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3145115" role="heading" level="2" l10n="U"
+                 oldref="66">To Edit a Text Frame</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3149578" role="listitem" l10n="U" oldref="16">To edit the contents of a text frame, click in the frame, and make the changes that you want.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156239" role="listitem" l10n="U" oldref="14">To edit a frame, select the frame, right-click, and then choose a formatting option. You can also right-click the selected frame, and choose <emph>Frame</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3156261" role="listitem" l10n="U" oldref="63">To resize a text frame, click an edge of the frame, and drag one of the edges or corners of the frame. Hold down Shift while you drag to maintain the proportion of the frame.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3153386" role="heading" level="2" l10n="U"
+                 oldref="98">To Hide Text From Printing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154262" role="paragraph" l10n="CHG" oldref="99">Any Writer text frame can be set to a mode which allows viewing the text on screen, but hides the text from printing.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154858" role="listitem" l10n="U" oldref="100">Select the text frame (you see the eight handles).</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155875" role="listitem" l10n="U" oldref="101">Choose <emph>Format - Frame/Object - Options</emph>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3155899" role="listitem" l10n="U" oldref="102">In the <emph>Properties</emph> area, unmark the <emph>Print</emph> check box and click <emph>OK</emph>.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="hd_id3148701" role="heading" level="2" l10n="U"
+                 oldref="83">To Link Text Frames</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149986" role="paragraph" l10n="CHG" oldref="84">You can link Writer text frames so that their contents automatically flow from one frame to another.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153025" role="listitem" l10n="U" oldref="71">Click the edge of a frame that you want to link. Selection handles appear on the edges of the frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150223" role="listitem" l10n="CHG" oldref="87">On the <item type="menuitem">Frame</item> Bar, click the <item type="menuitem">Link Frames</item> icon 
+<image id="img_id3148968" src="res/commandimagelist/sc_chainframes.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3148968">Icon</alt>
+	</image>.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150930" role="listitem" l10n="U" oldref="89">Click the frame that you want to link to.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3150947" role="paragraph" l10n="U" oldref="75">You can only link frames if:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150969" role="listitem" l10n="U" oldref="76">The target frame is empty.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154365" role="listitem" l10n="U" oldref="77">The target frame is not linked to another frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3154383" role="listitem" l10n="U" oldref="78">The source and the target frames are in the same section. For example, you cannot link a header frame to a footer frame.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145559" role="listitem" l10n="U" oldref="79">The source frame does not have a next link.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3145577" role="listitem" l10n="U" oldref="81">The target or the source frame are not contained in each other.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3151083" role="paragraph" l10n="U" oldref="90">When you select a linked frame, a line is displayed that connects the linked frames.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5853144" role="note" l10n="NEW">The AutoSize feature is available only for the last frame in a chain of linked frames.</paragraph><comment>UFI: removed 
+id="par_id3147542" l10n="U" oldref="72"You can only change the height of the last frame in a series of linked frames.
+Obviously this works now</comment>
+<section id="relatedtopics">
+         <embed href="text/swriter/guide/text_emphasize.xhp#text_emphasize"/>
+         <embed href="text/swriter/guide/text_centervert.xhp#text_centervert"/>
+         <embed href="text/swriter/guide/textdoc_inframe.xhp#textdoc_inframe"/>
+         <embed href="text/shared/guide/floating_toolbar.xhp#floating_toolbar"/>
+      </section>
+   </body>
+</helpdocument>

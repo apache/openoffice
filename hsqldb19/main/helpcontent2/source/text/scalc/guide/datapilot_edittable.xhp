@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalcguidedatapilot_edittablexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Editing Pivot Tables</title>
+         <filename>/text/scalc/guide/datapilot_edittable.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148663"><bookmark_value>pivot table function; editing tables</bookmark_value>
+<bookmark_value>editing;pivot tables</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3148663" role="heading" level="1" l10n="U" oldref="25"><variable id="datapilot_edittable"><link href="text/scalc/guide/datapilot_edittable.xhp" name="Editing Pivot Tables">Editing Pivot Tables</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150868" role="paragraph" l10n="U" oldref="26">Click one of the buttons in the pivot table and hold the mouse button down. A special symbol will appear next to the mouse pointer.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145786" role="paragraph" l10n="U" oldref="27">By dragging the button to a different position in the same row you can alter the order of the columns. If you drag a button to the left edge of the table into the row headings area, you can change a column into a row.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1648915" role="paragraph" l10n="NEW">In the Pivot Table dialog, you can drag a button to the <emph>Page Fields</emph> area to create a button and a listbox on top of the pivot table. The listbox can be used to filter the pivot table by the contents of the selected item. You can use drag-and-drop within the pivot table to use another page field as a filter.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147434" role="paragraph" l10n="U" oldref="29">To remove a button from the table, just drag it out of the pivot table. Release the mouse button when the mouse pointer positioned within the sheet has become a 'not allowed' icon. The button is deleted.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156442" role="paragraph" l10n="CHG" oldref="40">To edit the pivot table, click a cell inside the pivot table and open the context menu. In the context menu you find the command <emph>Edit Layout</emph>, which displays the <emph>Pivot Table</emph> dialog for the current pivot table.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2666096" role="paragraph" l10n="NEW">In the pivot table, you can use drag-and-drop or cut/paste commands to rearrange the order of data fields.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id266609688" role="paragraph" l10n="NEW">You can assign custom display names to fields, field members, subtotals (with some restrictions), and grand totals inside pivot tables. A custom display name is assigned to an item by overwriting the original name with another name.</paragraph>
+
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/datapilot.xhp#datapilot"/>
+         <embed href="text/scalc/guide/datapilot_createtable.xhp#datapilot_createtable"/>
+         <embed href="text/scalc/guide/datapilot_filtertable.xhp#datapilot_filtertable"/>
+         <embed href="text/scalc/guide/datapilot_updatetable.xhp#datapilot_updatetable"/>
+         <embed href="text/scalc/guide/datapilot_grouping.xhp#datapilot_grouping"/>
+         <embed href="text/scalc/guide/datapilot_tipps.xhp#datapilot_tipps"/>
+         <embed href="text/scalc/guide/datapilot_deletetable.xhp#datapilot_deletetable"/>
+      </section>
+   </body>
+</helpdocument>

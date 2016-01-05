@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">If...Then...Else Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090101.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="ifthenelse">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154422"><bookmark_value>If statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154422" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090101.xhp" name="If...Then...Else Statement [Runtime]">If...Then...Else Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3155555" xml-lang="en-US" l10n="U" oldref="2">Defines one or more statement blocks that you only want to execute if a given condition is True.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3146957" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3153126" xml-lang="en-US" l10n="CHG" oldref="4">If condition=true Then Statement block [ElseIf condition=true Then] Statement block [Else] Statement block EndIf<br/>Instead of Else If you can write ElseIf, instead of End If you can write EndIf.</paragraph>
+<paragraph role="heading" id="hd_id3155419" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153062" xml-lang="en-US" l10n="U" oldref="6">The <emph>If...Then</emph> statement executes program blocks depending on given conditions. When $[officename] Basic encounters an <emph>If</emph> statement, the condition is tested. If the condition is True, all subsequent statements up to the next <emph>Else</emph> or <emph>ElseIf</emph> statement are executed. If the condition is False, and an <emph>ElseIf</emph> statement follows, $[officename] Basic tests the next condition and executes the following statements if the condition is True. If False, the program continues either with the next <emph>ElseIf</emph> or <emph>Else</emph> statement. Statements following <emph>Else</emph> are executed only if none of the previously tested conditions were True. After all conditions are evaluated, and the corresponding statements executed, the program continues with the statement following <emph>EndIf</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3153192" xml-lang="en-US" l10n="U" oldref="7">You can nest multiple <emph>If...Then</emph> statements.</paragraph>
+<paragraph role="paragraph" id="par_id3154684" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Else</emph> and <emph>ElseIf</emph> statements are optional.</paragraph>
+<paragraph role="warning" id="par_id3152939" xml-lang="en-US" l10n="U" oldref="9">You can use <emph>GoTo</emph> and <emph>GoSub</emph> to jump out of an <emph>If...Then</emph> block, but not to jump into an <emph>If...Then</emph> structure.</paragraph>
+<paragraph role="paragraph" id="par_id3153951" xml-lang="en-US" l10n="U" oldref="10">The following example enables you to enter the expiration date of a product, and determines if the expiration date has passed.</paragraph>
+<paragraph role="heading" id="hd_id3152576" xml-lang="en-US" level="2" l10n="U" oldref="11">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150011" xml-lang="en-US" l10n="U" oldref="12">Sub ExampleIfThenDate</paragraph>
+<paragraph role="paragraph" id="par_id3148645" xml-lang="en-US" l10n="U" oldref="13">Dim sDate as String</paragraph>
+<paragraph role="paragraph" id="par_id3155855" xml-lang="en-US" l10n="U" oldref="14">Dim sToday as String</paragraph>
+<paragraph role="paragraph" id="par_id3154490" xml-lang="en-US" l10n="U" oldref="16">sDate = InputBox("Enter the expiration date (MM.DD.YYYY)")</paragraph>
+<paragraph role="paragraph" id="par_id3154943" xml-lang="en-US" l10n="U" oldref="17">sDate = Right$(sDate, 4) + Mid$(sDate, 4, 2) + Left$(sDate, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3154098" xml-lang="en-US" l10n="U" oldref="18">sToday = Date$</paragraph>
+<paragraph role="paragraph" id="par_id3144765" xml-lang="en-US" l10n="U" oldref="19">sToday = Right$(sToday, 4)+ Mid$(sToday, 4, 2) + Left$(sToday, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3154792" xml-lang="en-US" l10n="U" oldref="20">If sDate &lt; sToday Then</paragraph>
+<paragraph role="paragraph" id="par_id3155601" xml-lang="en-US" l10n="U" oldref="21">MsgBox "The expiration date has passed"</paragraph>
+<paragraph role="paragraph" id="par_id3146972" xml-lang="en-US" l10n="U" oldref="22">ElseIf sDate &gt; sToday Then</paragraph>
+<paragraph role="paragraph" id="par_id3146912" xml-lang="en-US" l10n="U" oldref="23">MsgBox "The expiration date has not yet passed"</paragraph>
+<paragraph role="paragraph" id="par_id3153710" xml-lang="en-US" l10n="U" oldref="24">Else</paragraph>
+<paragraph role="paragraph" id="par_id3154754" xml-lang="en-US" l10n="U" oldref="25">MsgBox "The expiration date is today"</paragraph>
+<paragraph role="paragraph" id="par_id3154361" xml-lang="en-US" l10n="U" oldref="26">End If</paragraph>
+<paragraph role="paragraph" id="par_id3148405" xml-lang="en-US" l10n="U" oldref="28">End Sub</paragraph>
+</body>
+</helpdocument>

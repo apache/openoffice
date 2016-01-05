@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_ucb_NameClash_idl__
+#define __com_sun_star_ucb_NameClash_idl__
+
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** These are the possible values for <member>TransferInfo::NameClash</member>.
+*/
+published constants NameClash
+{
+	//-------------------------------------------------------------------------
+	/** Means to set an error and cancel the operation.
+	*/
+	const long ERROR = 0;
+
+	//-------------------------------------------------------------------------
+	/** Means to overwrite the object in the target folder with the object to
+	    transfer.
+	*/
+	const long OVERWRITE = 1;
+
+	//-------------------------------------------------------------------------
+	/** Means to rename the object to transfer to solve the clash.
+
+	    <p>The implementation needs to supply and set a suitable new name.
+	*/
+	const long RENAME = 2;
+
+	//-------------------------------------------------------------------------
+	/** Deprecated. Do not use!
+
+		@deprecated
+	*/
+	const long KEEP = 3;
+
+	//-------------------------------------------------------------------------
+    /** Means to use a <type>NameClashResolveRequest</type> in order to solve
+        the name clash.
+
+        @see com::sun::star::task::XInteractionHandler
+	*/
+    const long ASK = 4;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

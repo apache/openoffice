@@ -1,0 +1,67 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_uno_XReference_idl__ 
+#define __com_sun_star_uno_XReference_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module uno {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: interface com::sun::star::uno::XReference
+/** must be implemented by anyone who holds the adapter on the client side.@see XWeak  
+		for decription af concepts.
+ */
+published interface XReference: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: method com::sun::star::uno::XReference::dispose
+	/** removes all references to the adapter.
+		
+		
+		
+		<p> This method is called when the adapted object dies. 
+		The implementation of the client-side's weak reference
+		must include removal of all references to the adapter.
+		Otherwise, the adapted object will be destroyed, but the 
+		adapter will be alive.</p>
+	 */
+	[oneway] void dispose(); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+/*============================================================================= 
+ 
+=============================================================================*/ 
+#endif 

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+<helpdocument version="1.0">
+    <meta>
+        <topic id="textsharedoptionen01010501xml" indexer="include" status="PUBLISH">
+            <title id="tit" xml-lang="en-US">Color</title>
+            <filename>/text/shared/optionen/01010501.xhp</filename>
+        </topic>
+        <history>
+            <created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+            <lastedited date="2007-02-22T15:37:30">converted from old format - fpe</lastedited>
+        </history>
+    </meta>
+    <body>
+        <!-- TITLE -->
+        <bookmark xml-lang="en-US" branch="hid/cui:ModalDialog:ColorPicker" id="bm_id5566778800" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778800" xml-lang="en-US" level="1" l10n="U">Color Picker</paragraph>
+
+        <bookmark xml-lang="en-US" branch="index" id="bm_id3150771">
+            <bookmark_value>defining;colors</bookmark_value>
+            <bookmark_value>colors;selection</bookmark_value>
+            <bookmark_value>colors;adding</bookmark_value>
+        </bookmark>
+
+        <paragraph role="paragraph" id="par_id3150771" xml-lang="en-US" l10n="U" oldref="2">
+            <variable id="farbentext">
+                <ahelp hid=".">Allows you to define your own colors.</ahelp>
+            </variable>
+        </paragraph>
+
+        <section id="howtoget">
+            <embed href="text/shared/00/00000406.xhp#color2"/>
+        </section>
+
+        <paragraph role="note" id="par_id9701528" xml-lang="en-US" l10n="NEW">%PRODUCTNAME uses only the RGB color model for printing in color. The CMYK controls are provided only to ease the input of color values using CMYK notation.</paragraph>
+
+        <!-- 1. Color field: the big,main control -->
+        <bookmark xml-lang="en-US" branch="hid/cui:Control:ColorPicker:ColorField" id="bm_id5566778801" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778801" xml-lang="en-US" level="2" l10n="U" oldref="3">Color Field</paragraph>
+        <paragraph role="paragraph" id="par_id5566778801" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:Control:ColorPicker:ColorField">In the big color field, you click to select a new color.</ahelp>
+        </paragraph>
+
+        <!-- 2. Color slider: the control with a slider -->
+        <bookmark xml-lang="en-US" branch="hid/cui:Control:ColorPicker:ColorSlider" id="bm_id5566778802" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778802" xml-lang="en-US" level="2" l10n="U" oldref="3">Color Slider</paragraph>
+        <paragraph role="paragraph" id="par_id5566778802" xml-lang="en-US" l10n="U">Click any of the six option buttons Red, Green, Blue, Hue, Saturation, or Brightness. The color slider changes to show the available range of values. <ahelp hid="cui:Control:ColorPicker:ColorSlider">In the color slider, you will see the range of values that you can change, depending on the selected option button. Click inside the color slider to change values in the big color field.</ahelp>
+        </paragraph>
+
+        <!-- 3. The color preview - bottom, left -->
+        <bookmark xml-lang="en-US" branch="hid/cui:Control:ColorPicker:ColorPreview" id="bm_id5566778803" localize="false"/>
+        <embed href="text/shared/00/00000001.xhp#vorschau"/>
+        <paragraph role="heading" id="hd_id5566778803" xml-lang="en-US" level="2" l10n="U" oldref="3">Current Color Preview</paragraph>
+        <paragraph role="paragraph" id="par_id5566778803" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:Control:ColorPicker:ColorPreview">In the left half of the preview field, you will always see the current result of your work in this dialog.</ahelp>
+        </paragraph>
+
+        <!-- 4. Previous color - bottom, right  -->
+        <bookmark xml-lang="en-US" branch="hid/cui:Control:ColorPicker:ColorPrevious" id="bm_id5566778803b" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778803b" xml-lang="en-US" level="2" l10n="U" oldref="3">Previous Color</paragraph>
+        <paragraph role="paragraph" id="par_id5566778803b" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:Control:ColorPicker:ColorPrevious">In the right half of the preview field, you will see the original color from the parent tab, <emph>Colors</emph>.</ahelp>
+        </paragraph>
+
+        <!--5. RGB -->
+        <paragraph role="heading" id="hd_id5566778804" xml-lang="en-US" level="2" l10n="U" oldref="3">RGB</paragraph>
+        <paragraph role="paragraph" id="par_id5566778804" xml-lang="en-US" l10n="U">These set of controls allow to choose a color in the RGB color model, where red, green, and blue are combined to produce a color.</paragraph>
+
+        <!-- 5.1. Red -->
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Red" id="bm_id5566778804" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Red" id="bm_id5566778805" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778805" xml-lang="en-US" level="3" l10n="U" oldref="3">Red</paragraph>
+        <paragraph role="paragraph" id="par_id5566778805" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Red">Sets the Red color value in the RGB color model.</ahelp>
+        </paragraph>
+
+        <!-- 5.2. Green -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Green" id="bm_id5566778806" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Green" id="bm_id5566778807" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778806" xml-lang="en-US" level="3" l10n="U" oldref="3">Green</paragraph>
+        <paragraph role="paragraph" id="par_id5566778806" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:RadioButton:ColorPicker:Green">Sets the Green color value in the RGB color model.</ahelp>
+        </paragraph>
+
+        <!-- 5.3. Blue  -->
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Blue" id="bm_id5566778808" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Blue" id="bm_id5566778809" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778807" xml-lang="en-US" level="3" l10n="U" oldref="3">Blue</paragraph>
+        <paragraph role="paragraph" id="par_id5566778807" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Blue">Sets the Blue color value in the RGB color model.</ahelp>
+        </paragraph>
+
+        <!-- 5.4. Hex  -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Hex" id="bm_id5566778810" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778808" xml-lang="en-US" level="3" l10n="U" oldref="3">Hex</paragraph>
+        <paragraph role="paragraph" id="par_id5566778808" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Hex">Sets the Red, Green, and Blue color value in the RGB color model, using a hexadecimal format RRGGBB.</ahelp>
+        </paragraph>
+
+        <!--6. HSB -->
+        <paragraph role="heading" id="hd_id5566778809" xml-lang="en-US" level="2" l10n="U" oldref="3">HSB</paragraph>
+        <paragraph role="paragraph" id="par_id5566778809" xml-lang="en-US" l10n="U">These set of controls allow to choose a color in the HSB color space.</paragraph>
+
+        <!-- 6.1. Hue -->
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Hue" id="bm_id5566778811" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Hue" id="bm_id5566778811" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778810" xml-lang="en-US" level="3" l10n="U" oldref="3">Hue</paragraph>
+        <paragraph role="paragraph" id="par_id5566778810" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Hue">Sets the Hue in the HSB color model.</ahelp>
+        </paragraph>
+
+        <!-- 6.2. Saturation -->
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Saturation" id="bm_id5566778812" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Saturation" id="bm_id5566778812" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778811" xml-lang="en-US" level="3" l10n="U" oldref="3">Saturation</paragraph>
+        <paragraph role="paragraph" id="par_id5566778811" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Saturation">Sets the Saturation in the HSB color model.</ahelp>
+        </paragraph>
+
+        <!-- 6.3. Brightness -->
+        <bookmark xml-lang="en-US" branch="hid/cui:RadioButton:ColorPicker:Brightness" id="bm_id5566778813" localize="false"/>
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Brightness" id="bm_id5566778813" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778812" xml-lang="en-US" level="3" l10n="U" oldref="3">Brightness</paragraph>
+        <paragraph role="paragraph" id="par_id5566778812" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Brightness">Sets the Brightness in the HSB color model.</ahelp>
+        </paragraph>
+
+        <!--7. CMYK -->
+        <paragraph role="heading" id="hd_id5566778813" xml-lang="en-US" level="2" l10n="U" oldref="3">CMYK</paragraph>
+        <paragraph role="paragraph" id="par_id5566778813" xml-lang="en-US" l10n="U">These set of controls allow to choose a color in the CMYK color model. CMYK refers to the four inks used in some color printing: cyan, magenta, yellow, and key (black).</paragraph>
+
+        <!-- 7.1. Cyan -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Cyan" id="bm_id5566778814" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778814" xml-lang="en-US" level="3" l10n="U" oldref="3">Cyan</paragraph>
+        <paragraph role="paragraph" id="par_id5566778814" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Cyan">Sets the Cyan color value in the CMYK color model.</ahelp>
+        </paragraph>
+
+        <!-- 7.2.  Magenta -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Magenta" id="bm_id5566778815" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778815" xml-lang="en-US" level="3" l10n="U" oldref="3">Magenta</paragraph>
+        <paragraph role="paragraph" id="par_id5566778815" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Magenta">Sets the Magenta color value in the CMYK color model.</ahelp>
+        </paragraph>
+
+        <!-- 7.3. Yellow  -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Yellow" id="bm_id5566778816" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778816" xml-lang="en-US" level="3" l10n="U" oldref="3">Yellow</paragraph>
+        <paragraph role="paragraph" id="par_id5566778816" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Yellow">Sets the Yellow color value in the CMYK color model.</ahelp>
+        </paragraph>
+
+        <!-- 7.4. Key -->
+        <bookmark xml-lang="en-US" branch="hid/cui:MetricField:ColorPicker:Key" id="bm_id5566778817" localize="false"/>
+        <paragraph role="heading" id="hd_id5566778817" xml-lang="en-US" level="3" l10n="U" oldref="3">Key</paragraph>
+        <paragraph role="paragraph" id="par_id5566778817" xml-lang="en-US" l10n="U">
+            <ahelp hid="cui:MetricField:ColorPicker:Key">Sets the Black color value or key (black) in the CMYK color model.</ahelp>
+        </paragraph>
+
+        <!-- TODO HelpButton BTN_HELP OKButton BTN_OK CancelButton BTN_CANCEL -->
+
+    </body>
+</helpdocument>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasemenubarxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Menus</title>
+<filename>/text/shared/explorer/database/menubar.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-29T13:33:27">UFI: Database Document Menu bar</created>
+<lastedited date="2004-10-28T10:21:03">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="menus">
+<paragraph role="heading" id="par_idN10552" xml-lang="en-US" level="1" l10n="NEW"><variable id="titletext"><link href="text/shared/explorer/database/menubar.xhp">Menus</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10562" xml-lang="en-US" l10n="NEW">In the database window, you see a new set of menu commands for working on the current database file.</paragraph>
+</section>
+<embed href="text/shared/explorer/database/menufile.xhp#file"/>
+<embed href="text/shared/explorer/database/menuedit.xhp#edit"/>
+<embed href="text/shared/explorer/database/menuview.xhp#view"/>
+<embed href="text/shared/explorer/database/menuinsert.xhp#insert"/>
+<embed href="text/shared/explorer/database/menutools.xhp#tools"/>
+</body>
+</helpdocument>

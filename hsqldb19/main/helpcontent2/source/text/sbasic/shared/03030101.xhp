@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03030101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">DateSerial Function [Runtime]</title>
+<filename>/text/sbasic/shared/03030101.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-10-30T11:41:13">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="dateserial">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3157896"><bookmark_value>DateSerial function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3157896" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03030101.xhp" name="DateSerial Function [Runtime]">DateSerial Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3143267" xml-lang="en-US" l10n="U" oldref="2">Returns a <emph>Date</emph> value for a specified year, month, or day.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147264" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="4">DateSerial (year, month, day)</paragraph>
+<paragraph role="heading" id="hd_id3150792" xml-lang="en-US" level="2" l10n="U" oldref="5">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="6">Date</paragraph>
+<paragraph role="heading" id="hd_id3154141" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3147229" xml-lang="en-US" l10n="U" oldref="8">
+<emph>Year:</emph> Integer expression that indicates a year. All values between 0 and 99 are interpreted as the years 1900-1999. For years that fall outside this range, you must enter all four digits.</paragraph>
+<paragraph role="paragraph" id="par_id3156280" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Month:</emph> Integer expression that indicates the month of the specified year. The accepted range is from 1-12.</paragraph>
+<paragraph role="paragraph" id="par_id3151043" xml-lang="en-US" l10n="CHG" oldref="10">
+<emph>Day:</emph> Integer expression that indicates the day of the specified month. The accepted range is from 1-31. No error is returned when you enter a non-existing day for a month shorter than 31 days. <comment>see i69463</comment></paragraph>
+<paragraph role="paragraph" id="par_id3161832" xml-lang="en-US" l10n="U" oldref="11">The <emph>DateSerial function</emph> returns the number of days between December 30,1899 and the given date. You can use this function to calculate the difference between two dates.</paragraph>
+<paragraph role="paragraph" id="par_id3155306" xml-lang="en-US" l10n="U" oldref="12">The <emph>DateSerial function</emph> returns the data type Variant with VarType 7 (Date). Internally, this value is stored as a Double value, so that when the given date is 1.1.1900, the returned value is 2. Negative values correspond to dates before December 30, 1899 (not inclusive).</paragraph>
+<paragraph role="paragraph" id="par_id3152576" xml-lang="en-US" l10n="U" oldref="13">If a date is defined that lies outside of the accepted range, $[officename] Basic returns an error message.</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="14">Whereas you define the <emph>DateValue function</emph> as a string that contains the date, the <emph>DateSerial function</emph> evaluates each of the parameters (year, month, day) as separate numeric expressions.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3155411" xml-lang="en-US" level="2" l10n="U" oldref="15">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3148646" xml-lang="en-US" l10n="U" oldref="16">Sub ExampleDateSerial</paragraph>
+<paragraph role="paragraph" id="par_id3156441" xml-lang="en-US" l10n="U" oldref="17">Dim lDate as Long</paragraph>
+<paragraph role="paragraph" id="par_id3154791" xml-lang="en-US" l10n="U" oldref="18">Dim sDate as String</paragraph>
+<paragraph role="paragraph" id="par_id3155415" xml-lang="en-US" l10n="U" oldref="19">lDate = DateSerial(1964, 4, 9)</paragraph>
+<paragraph role="paragraph" id="par_id3147125" xml-lang="en-US" l10n="U" oldref="20">sDate = DateSerial(1964, 4, 9)</paragraph>
+<paragraph role="paragraph" id="par_id3154942" xml-lang="en-US" l10n="U" oldref="21">msgbox lDate REM returns 23476</paragraph>
+<paragraph role="paragraph" id="par_id3151074" xml-lang="en-US" l10n="CHG" oldref="22">msgbox sDate REM returns 04/09/1964</paragraph>
+<paragraph role="paragraph" id="par_id3153878" xml-lang="en-US" l10n="U" oldref="23">end sub</paragraph>
+</body>
+</helpdocument>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textshared0105210600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Shadow</title>
+<filename>/text/shared/01/05210600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-11-29T14:24:12">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="schatten">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150014"><bookmark_value>areas; shadows</bookmark_value>
+<bookmark_value>shadows; areas</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_AREA_SHADOW" id="bm_id3150620" localize="false"/>
+<paragraph role="heading" id="hd_id3150014" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/05210600.xhp" name="Shadow">Shadow</link></paragraph>
+<paragraph role="paragraph" id="par_id3155069" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_AREA_SHADOW">Add a shadow to the selected drawing object, and define the properties of the shadow.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00040502.xhp#schatte"/>
+</section>
+<paragraph role="heading" id="hd_id3153748" xml-lang="en-US" level="2" l10n="U" oldref="3">Properties</paragraph>
+<paragraph role="paragraph" id="par_id3153345" xml-lang="en-US" l10n="U" oldref="4">Set the properties of the shadow that you want to apply.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:TriStateBox:RID_SVXPAGE_SHADOW:TSB_SHOW_SHADOW" id="bm_id3166411" localize="false"/>
+<paragraph role="heading" id="hd_id3150774" xml-lang="en-US" level="3" l10n="U" oldref="5">Use shadow</paragraph>
+<paragraph role="paragraph" id="par_id3154749" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SVX:TRISTATEBOX:RID_SVXPAGE_SHADOW:TSB_SHOW_SHADOW">Adds a shadow to the selected drawing object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_TPSHADOW_CTRL" id="bm_id3145315" localize="false"/>
+<paragraph role="heading" id="hd_id3166460" xml-lang="en-US" level="3" l10n="U" oldref="7">Position</paragraph>
+<paragraph role="paragraph" id="par_id3146138" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_TPSHADOW_CTRL">Click where you want to cast the shadow.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SHADOW:MTR_FLD_DISTANCE" id="bm_id3150085" localize="false"/>
+<paragraph role="heading" id="hd_id3154897" xml-lang="en-US" level="3" l10n="U" oldref="9">Distance</paragraph>
+<paragraph role="paragraph" id="par_id3146847" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_SHADOW:MTR_FLD_DISTANCE">Enter the distance that you want the shadow to be offset from the selected object.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_SHADOW:LB_SHADOW_COLOR" id="bm_id3155420" localize="false"/>
+<paragraph role="heading" id="hd_id3150276" xml-lang="en-US" level="3" l10n="U" oldref="11">Color</paragraph>
+<paragraph role="paragraph" id="par_id3155829" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_SHADOW:LB_SHADOW_COLOR">Select a color for the shadow.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:MetricField:RID_SVXPAGE_SHADOW:MTR_SHADOW_TRANSPARENT" id="bm_id3155180" localize="false"/>
+<paragraph role="heading" id="hd_id3148992" xml-lang="en-US" level="3" l10n="U" oldref="13">Transparency</paragraph>
+<paragraph role="paragraph" id="par_id3148642" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:METRICFIELD:RID_SVXPAGE_SHADOW:MTR_SHADOW_TRANSPARENT">Enter a percentage from 0% (opaque) to 100% (transparent) to specify the transparency of the shadow.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#vorschau"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FillShadow" id="bm_id9610993" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FillShadow" id="bm_id3149164" localize="false"/>
+<section id="syschatten">
+<paragraph role="heading" id="hd_id3154810" xml-lang="en-US" level="2" l10n="U" oldref="17">Shadow</paragraph>
+<paragraph role="paragraph" id="par_id3148924" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid=".uno:FillShadow">Adds a shadow to the selected object. If the object already has a shadow, the shadow is removed. If you click this icon when no object is selected, the shadow is added to the next object that you draw.</ahelp></paragraph>
+<table id="tbl_id3152472">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="E">
+<image id="img_id3149045" src="res/commandimagelist/sc_fillshadow.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149045" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154935" xml-lang="en-US" l10n="U" oldref="16">Shadow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+</section>
+</body>
+</helpdocument>

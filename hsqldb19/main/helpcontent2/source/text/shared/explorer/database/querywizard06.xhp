@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasequerywizard06xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Query Wizard - Grouping Conditions</title>
+<filename>/text/shared/explorer/database/querywizard06.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-06T10:00:57">UFI: new Query Wizard page 6</created>
+<lastedited date="2005-03-02T10:11:27">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<section id="groupingconditions">
+<paragraph role="heading" id="par_idN10546" xml-lang="en-US" level="1" l10n="NEW"><link href="text/shared/explorer/database/querywizard06.xhp">Query Wizard - Grouping Conditions</link></paragraph>
+<paragraph role="paragraph" id="par_idN10556" xml-lang="en-US" l10n="NEW">Specifies the conditions to group the query. The data source must support the SQL statement "Order by clauses" to enable this page of the Wizard.</paragraph>
+</section>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTGROUPMATCHALL" id="bm_id8115176" localize="false"/>
+<paragraph role="heading" id="par_idN10559" xml-lang="en-US" level="2" l10n="NEW">Match all of the following</paragraph>
+<paragraph role="paragraph" id="par_idN1055D" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to group the query by all the conditions using a logical AND.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_OPTGROUPMATCHANY" id="bm_id8760948" localize="false"/>
+<paragraph role="heading" id="par_idN10560" xml-lang="en-US" level="2" l10n="NEW">Match any of the following</paragraph>
+<paragraph role="paragraph" id="par_idN10564" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select to group the query by any of the conditions using a logical OR.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTERFIELDNAME_1" id="bm_id9920041.00000001" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTERFIELDNAME_2" id="bm_id9279457" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTERFIELDNAME_3" id="bm_id1897946" localize="false"/>
+<paragraph role="heading" id="par_idN10567" xml-lang="en-US" level="3" l10n="NEW">Field name</paragraph>
+<paragraph role="paragraph" id="par_idN1056B" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the field name for the grouping condition.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTEROPERATOR_1" id="bm_id6163823" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTEROPERATOR_2" id="bm_id2742088" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_LSTFILTEROPERATOR_3" id="bm_id465102" localize="false"/>
+<paragraph role="heading" id="par_idN1056E" xml-lang="en-US" level="3" l10n="NEW">Condition</paragraph>
+<paragraph role="paragraph" id="par_idN10572" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select the condition for the grouping.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_TXTFILTERVALUE_1" id="bm_id1756340" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_TXTFILTERVALUE_2" id="bm_id8361766" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/WIZARDS_HID_QUERYWIZARD_TXTFILTERVALUE_3" id="bm_id2075563" localize="false"/>
+<paragraph role="heading" id="par_idN10575" xml-lang="en-US" level="3" l10n="NEW">Value</paragraph>
+<paragraph role="paragraph" id="par_idN10579" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the value for the grouping condition.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN1057C" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/querywizard07.xhp" name="Query Wizard - Aliases">Query Wizard - Aliases</link></paragraph>
+</body>
+</helpdocument>

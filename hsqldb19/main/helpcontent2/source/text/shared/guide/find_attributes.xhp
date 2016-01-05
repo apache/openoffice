@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidefind_attributesxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Searching for Attributes</title>
+<filename>/text/shared/guide/find_attributes.xhp</filename>
+</topic>
+<history>
+<created date="2004-09-03T09:48:11">UFI: Attributes dialog of Find and Replace dialog</created>
+<lastedited date="2006-04-12T10:20:25">checked - yj</lastedited>
+</history>
+</meta>
+<body>
+<switch select="appl">
+<case select="WRITER">
+<bookmark xml-lang="en-US" branch="index" id="bm_id5681020"><bookmark_value>fonts;finding</bookmark_value>
+<bookmark_value>font attributes;finding</bookmark_value>
+<bookmark_value>text attributes;finding</bookmark_value>
+<bookmark_value>attributes; finding</bookmark_value>
+<bookmark_value>finding; attributes</bookmark_value>
+<bookmark_value>resetting;Find &amp; Replace mode</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="par_idN10663" xml-lang="en-US" level="1" l10n="NEW"><variable id="find_attributes"><link href="text/shared/guide/find_attributes.xhp">Searching for Attributes</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10681" xml-lang="en-US" l10n="NEW">You can search for text with attributes that are applied either by direct formatting or by styles. For example, if you search for the <emph>Font</emph> attribute, all instances of text that do not use the default font are found. All text that has a directly coded font attribute, and all text where a style switches the font attribute, are found.</paragraph>
+<paragraph role="tip" id="par_idN10688" xml-lang="en-US" l10n="NEW">If you want to find text with any font by name, click the <emph>Format</emph> button in the <link href="text/shared/01/02100000.xhp">Find &amp; Replace</link> dialog of %PRODUCTNAME Writer.</paragraph>
+<paragraph role="note" id="par_idN1069D" xml-lang="en-US" l10n="NEW">After you select the attributes that you want to search for, the <emph>Search for Styles</emph> box in the <emph>Options </emph>area of the %PRODUCTNAME Writer <emph>Find &amp; Replace </emph>dialog changes to <emph>Including Styles</emph>.</paragraph>
+<paragraph role="note" id="par_idN106B0" xml-lang="en-US" l10n="NEW">If you want to search for text in which attributes were set by using direct formatting and styles, select the <emph>Including Styles</emph> box.</paragraph>
+<paragraph role="note" id="par_idN106B7" xml-lang="en-US" l10n="NEW">The search criteria for attributes are listed below the <emph>Search for</emph> box.</paragraph>
+<paragraph role="heading" id="par_idN106BE" xml-lang="en-US" level="2" l10n="NEW">To search for all font changes</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN106C5" xml-lang="en-US" l10n="NEW">Choose <emph>Edit - Find &amp; Replace</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106CD" xml-lang="en-US" l10n="NEW">Clear the <emph>Search for</emph> text box if necessary.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106D5" xml-lang="en-US" l10n="NEW">Click <emph>Attributes</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106DD" xml-lang="en-US" l10n="NEW">In the <emph>Attributes</emph> dialog, select the <emph>Font</emph> check box, and click OK.</paragraph>
+<paragraph role="paragraph" id="par_idN106E8" xml-lang="en-US" l10n="NEW">In the <emph>Find &amp; Replace</emph> dialog, you now can read "Font" below the <emph>Search for</emph> text box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_idN106F4" xml-lang="en-US" l10n="NEW">Click <emph>Find</emph>.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_idN106FB" xml-lang="en-US" l10n="NEW">All places where a font change was applied, either directly or by assigning an appropriate style, are found.</paragraph>
+<paragraph role="heading" id="par_idN106FE" xml-lang="en-US" level="2" l10n="NEW">To reset the Find &amp; Replace mode</paragraph>
+<paragraph role="paragraph" id="par_idN10702" xml-lang="en-US" l10n="NEW">To stop searching for the current attributes, reset the <emph>Find &amp; Replace</emph> dialog to normal mode.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_idN1070C" xml-lang="en-US" l10n="NEW">Click <emph>No Format</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_idN1071E" xml-lang="en-US" l10n="NEW"><link href="text/shared/01/02100000.xhp">Find &amp; Replace</link> dialog</paragraph>
+</section>
+</case>
+<default>
+<paragraph role="paragraph" id="par_id6837672" xml-lang="en-US" l10n="NEW">Searching for attributes is available in the Find &amp; Replace dialog for text documents.</paragraph>
+</default>
+</switch>
+</body>
+</helpdocument>

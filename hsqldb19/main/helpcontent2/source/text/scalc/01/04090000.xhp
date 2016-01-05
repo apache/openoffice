@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textscalc0104090000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Link to External Data</title>
+         <filename>/text/scalc/01/04090000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="extdata">
+         <paragraph xml-lang="en-US" id="par_id3153361" role="paragraph" l10n="E" oldref="1"
+                    localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:PushButton:RID_SCDLG_LINKAREA:BTN_BROWSE" id="bm_id3151041" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3153192" role="paragraph" l10n="U" oldref="2"><ahelp hid="SC_PUSHBUTTON_RID_SCDLG_LINKAREA_BTN_BROWSE" visibility="hidden">Locate the file containing the data you want to insert.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertExternalDataSource" id="bm_id3748965" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertExternalDataSource" id="bm_id3150441" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145785" role="heading" level="1" l10n="CHG"
+                    oldref="3"><link href="text/scalc/01/04090000.xhp" name="External Data">Link to External Data</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149262" role="paragraph" l10n="U" oldref="4"><ahelp hid=".uno:InsertExternalDataSourc">Inserts data from an HTML, Calc, or Excel file into the current sheet as a link. The data must be located within a named range.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/scalc/00/00000404.xhp#eiextdata"/>
+      </section>
+      <embed href="text/scalc/guide/webquery.xhp#webquery"/>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_SCDLG_LINKAREAURL" id="bm_id3148577" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3146984" role="heading" level="2" l10n="U" oldref="5">URL of external data source.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145366" role="paragraph" l10n="U" oldref="6"><ahelp hid="HID_SCDLG_LINKAREAURL">Enter the URL or the file name that contains the data that you want to insert, and then press Enter.</ahelp><comment>only after Enter the URL will be requested from the net.</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:MultiListBox:RID_SCDLG_LINKAREA:LB_RANGES" id="bm_id3153876" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145251" role="heading" level="2" l10n="U" oldref="7">Available tables/ranges</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147397" role="paragraph" l10n="U" oldref="8"><ahelp hid="SC_MULTILISTBOX_RID_SCDLG_LINKAREA_LB_RANGES">Select the table or the data range that you want to insert.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCDLG_LINKAREA:BTN_RELOAD" id="bm_id3153418" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/sc:NumericField:RID_SCDLG_LINKAREA:NF_DELAY" id="bm_id3150718" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3154492" role="heading" level="2" l10n="U" oldref="9">Update every</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154017" role="paragraph" l10n="U" oldref="10"><ahelp hid="SC_NUMERICFIELD_RID_SCDLG_LINKAREA_NF_DELAY">Enter the number of seconds to wait before the external data are reloaded into the current document.</ahelp></paragraph>
+   </body>
+</helpdocument>

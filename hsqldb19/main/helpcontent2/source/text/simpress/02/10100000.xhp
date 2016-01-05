@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+<topic id="textsimpress0210100000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Connectors</title>
+<filename>/text/simpress/02/10100000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="verbinder">
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorToolbox" id="bm_id6113909" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorToolbox" id="bm_id3147436" localize="false"/>
+<paragraph role="heading" id="hd_id3149664" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/simpress/02/10100000.xhp" name="Connectors">Connectors</link></paragraph>
+<table id="tbl_id3154512">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155445" xml-lang="en-US" l10n="E">
+<image id="img_id3149018" src="res/commandimagelist/sc_connector.png" width="0.423cm" height="0.423cm"><alt id="alt_id3149018" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154702" xml-lang="en-US" l10n="U" oldref="3">Connector</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="paragraph" id="par_id3148488" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".uno:ConnectorToolbox">Open the <emph>Connectors</emph> toolbar, where you can add connectors to objects in the current slide. A connector is a line that joins objects, and remains attached when the objects are moved. If you copy an object with a connector, the connector is also copied.</ahelp></paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3154658" xml-lang="en-US" l10n="U" oldref="122">There are four types of connector lines:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145584" xml-lang="en-US" l10n="U" oldref="123">Standard (90-degree angle bends)</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154485" xml-lang="en-US" l10n="U" oldref="124">Line (two bends)</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153817" xml-lang="en-US" l10n="U" oldref="125">Straight</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149943" xml-lang="en-US" l10n="U" oldref="126">Curved</paragraph>
+</listitem>
+</list>
+
+<paragraph role="paragraph" id="par_id3148604" xml-lang="en-US" l10n="U" oldref="4">When you click a connector and move your mouse pointer over a filled object, or the edge of an unfilled object, gluepoints appear. A gluepoint is a fixed point where you can attach a connector line. You can add custom <link href="text/simpress/02/10030200.xhp" name="glue point">gluepoints</link> to an object.</paragraph>
+<paragraph role="paragraph" id="par_id3154762" xml-lang="en-US" l10n="U" oldref="5">To draw a connector line, click a gluepoint on an object, drag to a gluepoint on another object, and then release. You can also drag to an empty part of you document and click. The unattached end of the connector is locked in place, until you drag the end to a different location. To detach a connector, drag either end of the connector line to a different location.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:Connector" id="bm_id9771135" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:Connector" id="bm_id3150397" localize="false"/>
+<paragraph role="heading" id="hd_id3147297" xml-lang="en-US" level="2" l10n="U" oldref="9">Connector</paragraph>
+<paragraph role="paragraph" id="par_id3166468" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid=".uno:Connector">Draws a connector with one or more 90-degree angle bends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3150655">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150743" xml-lang="en-US" l10n="E">
+<image id="img_id3153037" src="res/commandimagelist/sc_connector.png" width="0.423cm" height="0.423cm"><alt id="alt_id3153037" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153084" xml-lang="en-US" l10n="U" oldref="11">Connector</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrowStart" id="bm_id5873530" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrowStart" id="bm_id3153108" localize="false"/>
+<paragraph role="heading" id="hd_id3145597" xml-lang="en-US" level="2" l10n="U" oldref="12">Connector Starts with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3153114" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".uno:ConnectorArrowStart">Draws a connector with one or more 90-degree angle bends and an arrow at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3153566">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155930" xml-lang="en-US" l10n="E">
+<image id="img_id3150021" src="res/commandimagelist/sc_connectorarrowstart.png" width="0.423cm" height="0.423cm"><alt id="alt_id3150021" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155434" xml-lang="en-US" l10n="U" oldref="14">Connector Starts with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrowEnd" id="bm_id6972811" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrowEnd" id="bm_id3145348" localize="false"/>
+<paragraph role="heading" id="hd_id3145248" xml-lang="en-US" level="2" l10n="U" oldref="15">Connector Ends with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3145353" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid=".uno:ConnectorArrowEnd">Draws a connector with one or more 90-degree angle bends and an arrow at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3145295">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150930" xml-lang="en-US" l10n="E">
+<image id="img_id3150936" src="res/commandimagelist/sc_connectorarrowend.png" width="0.423cm" height="0.423cm"><alt id="alt_id3150936" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3109843" xml-lang="en-US" l10n="U" oldref="17">Connector Ends with Arrow </paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrows" id="bm_id8192463" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorArrows" id="bm_id3155368" localize="false"/>
+<paragraph role="heading" id="hd_id3154865" xml-lang="en-US" level="2" l10n="U" oldref="18">Connector with Arrows</paragraph>
+<paragraph role="paragraph" id="par_id3155374" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid=".uno:ConnectorArrows">Draws a connector with one or more 90-degree angle bends and arrows at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3153919">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155987" xml-lang="en-US" l10n="E">
+<image id="img_id3153720" src="res/commandimagelist/sc_connectorarrows.png" width="0.423cm" height="0.423cm"><alt id="alt_id3153720" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149709" xml-lang="en-US" l10n="U" oldref="20">Connector with Arrows</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircleStart" id="bm_id7199750" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircleStart" id="bm_id3150968" localize="false"/>
+<paragraph role="heading" id="hd_id3149452" xml-lang="en-US" level="2" l10n="U" oldref="21">Connector Starts with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3151183" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid=".uno:ConnectorCircleStart">Draws a connector with one or more 90-degree angle bends and a circle at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3145208">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147565" xml-lang="en-US" l10n="E">
+<image id="img_id3147572" src="res/commandimagelist/sc_connectorcirclestart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3147572" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153219" xml-lang="en-US" l10n="U" oldref="23">Connector Starts with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircleEnd" id="bm_id5628898" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircleEnd" id="bm_id3154049" localize="false"/>
+<paragraph role="heading" id="hd_id3155847" xml-lang="en-US" level="2" l10n="U" oldref="24">Connector Ends with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3154054" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid=".uno:ConnectorCircleEnd">Draws a connector with one or more 90-degree angle bends and a circle at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3153627">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3143234" xml-lang="en-US" l10n="E">
+<image id="img_id3149289" src="res/commandimagelist/sc_connectorcircleend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3149289" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3159186" xml-lang="en-US" l10n="U" oldref="26">Connector Ends with Circle </paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircles" id="bm_id5676907" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCircles" id="bm_id3154692" localize="false"/>
+<paragraph role="heading" id="hd_id3151172" xml-lang="en-US" level="2" l10n="U" oldref="27">Connector with Circles</paragraph>
+<paragraph role="paragraph" id="par_id3154698" xml-lang="en-US" l10n="U" oldref="28"><ahelp hid=".uno:ConnectorCircles">Draws a connector with one or more 90-degree angle bends and circles at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3154938">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158400" xml-lang="en-US" l10n="E">
+<image id="img_id3154203" src="res/commandimagelist/sc_connectortoolbox.png" width="0.566cm" height="0.566cm"><alt id="alt_id3154203" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147509" xml-lang="en-US" l10n="U" oldref="29">Connector with Circles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLines" id="bm_id6535420" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLines" id="bm_id3153579" localize="false"/>
+<paragraph role="heading" id="hd_id3154265" xml-lang="en-US" level="2" l10n="U" oldref="30">Line Connector</paragraph>
+<paragraph role="paragraph" id="par_id3148906" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid=".uno:ConnectorLines">Draws a connector that bends near a gluepoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3148930">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150705" xml-lang="en-US" l10n="E">
+<image id="img_id3153679" src="res/commandimagelist/sc_connectorlines.png" width="0.566cm" height="0.566cm"><alt id="alt_id3153679" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="U" oldref="32">Line Connector</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrowStart" id="bm_id1992210" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrowStart" id="bm_id3153742" localize="false"/>
+<paragraph role="heading" id="hd_id3159274" xml-lang="en-US" level="2" l10n="U" oldref="33">Line Connector Starts with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3153747" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid=".uno:ConnectorLinesArrowStart">Draws a connector that starts with an arrow and bends near a gluepoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3148624">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154610" xml-lang="en-US" l10n="E">
+<image id="img_id3150629" src="res/commandimagelist/sc_connectorlinesarrowstart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3150629" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154798" xml-lang="en-US" l10n="U" oldref="35">Line Connector Starts with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrowEnd" id="bm_id8377087" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrowEnd" id="bm_id3149594" localize="false"/>
+<paragraph role="heading" id="hd_id3153539" xml-lang="en-US" level="2" l10n="U" oldref="36">Line Connector Ends with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3148686" xml-lang="en-US" l10n="U" oldref="37"><ahelp hid=".uno:ConnectorLinesArrowEnd">Draws a connector that ends with an arrow and bends near a gluepoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3151110">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150347" xml-lang="en-US" l10n="E">
+<image id="img_id3150357" src="res/commandimagelist/sc_connectorlinesarrowend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3150357" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152962" xml-lang="en-US" l10n="U" oldref="38">Line Connector Ends with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrows" id="bm_id356433" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesArrows" id="bm_id3148680" localize="false"/>
+<paragraph role="heading" id="hd_id3153678" xml-lang="en-US" level="2" l10n="U" oldref="39">Line Connector with Arrows</paragraph>
+<paragraph role="paragraph" id="par_id3158436" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid=".uno:ConnectorLinesArrows">Draws a connector that bends near a gluepoint and has arrows at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3154481">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150972" xml-lang="en-US" l10n="E">
+<image id="img_id3150982" src="res/commandimagelist/sc_connectorlinesarrows.png" width="0.566cm" height="0.566cm"><alt id="alt_id3150982" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155892" xml-lang="en-US" l10n="U" oldref="41">Line Connector with Arrows</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircleStart" id="bm_id9750013" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircleStart" id="bm_id3150838" localize="false"/>
+<paragraph role="heading" id="hd_id3150827" xml-lang="en-US" level="2" l10n="U" oldref="42">Line Connector Starts with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3149338" xml-lang="en-US" l10n="U" oldref="43"><ahelp hid=".uno:ConnectorLinesCircleStart">Draws a connector that starts with a circle and bends near a gluepoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3156201">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151274" xml-lang="en-US" l10n="E">
+<image id="img_id3151284" src="res/commandimagelist/sc_connectorlinescirclestart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3151284" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154136" xml-lang="en-US" l10n="U" oldref="44">Line Connector Starts with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircleEnd" id="bm_id4405805" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircleEnd" id="bm_id3155181" localize="false"/>
+<paragraph role="heading" id="hd_id3146932" xml-lang="en-US" level="2" l10n="U" oldref="45">Line Connector Ends with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3155187" xml-lang="en-US" l10n="U" oldref="46"><ahelp hid=".uno:ConnectorLinesCircleEnd">Draws a connector that ends with a circle and bends near a gluepoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3149305">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149578" xml-lang="en-US" l10n="E">
+<image id="img_id3151326" src="res/commandimagelist/sc_connectorlinescircleend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3151326" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152582" xml-lang="en-US" l10n="U" oldref="47">Line Connector Ends with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircles" id="bm_id4623889" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLinesCircles" id="bm_id3159113" localize="false"/>
+<paragraph role="heading" id="hd_id3159102" xml-lang="en-US" level="2" l10n="U" oldref="48">Line Connector with Circles</paragraph>
+<paragraph role="paragraph" id="par_id3149486" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid=".uno:ConnectorLinesCircles">Draws a connector that bends near a gluepoint and has circles at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release. To adjust the length of the line segment between a bend point and a gluepoint, click the connector and drag the bend point.</ahelp></paragraph>
+<table id="tbl_id3143283">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151262" xml-lang="en-US" l10n="E">
+<image id="img_id3154834" src="res/commandimagelist/sc_connectorlinecircles.png" width="0.566cm" height="0.566cm"><alt id="alt_id3154834" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149690" xml-lang="en-US" l10n="U" oldref="50">Line Connector with Circles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLine" id="bm_id1601366" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLine" id="bm_id3149787" localize="false"/>
+<paragraph role="heading" id="hd_id3153759" xml-lang="en-US" level="2" l10n="U" oldref="51">Straight Connector</paragraph>
+<paragraph role="paragraph" id="par_id3149793" xml-lang="en-US" l10n="U" oldref="52"><ahelp hid=".uno:ConnectorLine">Draws a straight line connector. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3156362">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148981" xml-lang="en-US" l10n="E">
+<image id="img_id3154223" src="res/commandimagelist/sc_connectorline.png" width="0.566cm" height="0.566cm"><alt id="alt_id3154223" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154901" xml-lang="en-US" l10n="U" oldref="53">Straight Connector</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrowStart" id="bm_id6481055" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrowStart" id="bm_id3149428" localize="false"/>
+<paragraph role="heading" id="hd_id3149037" xml-lang="en-US" level="2" l10n="U" oldref="54">Straight Connector Starts with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3149435" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid=".uno:ConnectorLineArrowStart">Draws a straight line connector with an arrow at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3147585">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3152775" xml-lang="en-US" l10n="E">
+<image id="img_id3156188" src="res/commandimagelist/sc_connectorlinearrowstart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3156188" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148932" xml-lang="en-US" l10n="U" oldref="56">Straight Connector Starts with Arrow </paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrowEnd" id="bm_id6335155" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrowEnd" id="bm_id3147332" localize="false"/>
+<paragraph role="heading" id="hd_id3147321" xml-lang="en-US" level="2" l10n="U" oldref="57">Straight Connector Ends with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3155135" xml-lang="en-US" l10n="U" oldref="58"><ahelp hid=".uno:ConnectorLineArrowEnd">Draws a straight line connector with an arrow at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3153516">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3147072" xml-lang="en-US" l10n="E">
+<image id="img_id3147082" src="res/commandimagelist/sc_connectorlinearrowend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3147082" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154520" xml-lang="en-US" l10n="U" oldref="59">Straight Connector Ends with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrows" id="bm_id5984332" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineArrows" id="bm_id3154390" localize="false"/>
+<paragraph role="heading" id="hd_id3154379" xml-lang="en-US" level="2" l10n="U" oldref="60">Straight Connector with Arrows</paragraph>
+<paragraph role="paragraph" id="par_id3148650" xml-lang="en-US" l10n="U" oldref="61"><ahelp hid=".uno:ConnectorLineArrows">Draws a straight line connector with arrows at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3153354">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3151027" xml-lang="en-US" l10n="E">
+<image id="img_id3151037" src="res/commandimagelist/sc_connectorlinearrows.png" width="0.566cm" height="0.566cm"><alt id="alt_id3151037" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149172" xml-lang="en-US" l10n="U" oldref="62">Straight Connector with Arrows</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircleStart" id="bm_id3534264" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircleStart" id="bm_id3151290" localize="false"/>
+<paragraph role="heading" id="hd_id3150581" xml-lang="en-US" level="2" l10n="U" oldref="63">Straight Connector Starts with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3151297" xml-lang="en-US" l10n="U" oldref="64"><ahelp hid=".uno:ConnectorLineCircleStar">Draws a straight line connector with a circle at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3154923">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3156370" xml-lang="en-US" l10n="E">
+<image id="img_id3156380" src="res/commandimagelist/sc_connectorlinecirclestart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3156380" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145780" xml-lang="en-US" l10n="U" oldref="65">Straight Connector Starts with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircleEnd" id="bm_id9058483" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircleEnd" id="bm_id3155118" localize="false"/>
+<paragraph role="heading" id="hd_id3148758" xml-lang="en-US" level="2" l10n="U" oldref="66">Straight Connector Ends with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3155124" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid=".uno:ConnectorLineCircleEnd">Draws a straight line connector with a circle at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3154068">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155912" xml-lang="en-US" l10n="E">
+<image id="img_id3155922" src="res/commandimagelist/sc_connectorlinecircleend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3155922" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153201" xml-lang="en-US" l10n="U" oldref="68">Straight Connector Ends with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircles" id="bm_id4648702" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorLineCircles" id="bm_id3149534" localize="false"/>
+<paragraph role="heading" id="hd_id3148881" xml-lang="en-US" level="2" l10n="U" oldref="69">Straight Connector with Circles</paragraph>
+<paragraph role="paragraph" id="par_id3149540" xml-lang="en-US" l10n="U" oldref="70"><ahelp hid=".uno:ConnectorLineCircles">Draws a straight line connector with circles at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3155865">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3150112" xml-lang="en-US" l10n="E">
+<image id="img_id3150122" src="res/commandimagelist/sc_connectorlinecircles.png" width="0.566cm" height="0.566cm"><alt id="alt_id3150122" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3158387" xml-lang="en-US" l10n="U" oldref="71">Straight Connector with Circles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurve" id="bm_id8076453" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurve" id="bm_id3153692" localize="false"/>
+<paragraph role="heading" id="hd_id3147475" xml-lang="en-US" level="2" l10n="U" oldref="72">Curved Connector</paragraph>
+<paragraph role="paragraph" id="par_id3153698" xml-lang="en-US" l10n="U" oldref="73"><ahelp hid=".uno:ConnectorCurve">Draws a curved line connector. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3159165">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146139" xml-lang="en-US" l10n="E">
+<image id="img_id3146149" src="res/commandimagelist/sc_connectorcurve.png" width="0.566cm" height="0.566cm"><alt id="alt_id3146149" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145259" xml-lang="en-US" l10n="U" oldref="74">Curved Connector</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrowStart" id="bm_id3147481" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrowStart" id="bm_id3149562" localize="false"/>
+<paragraph role="heading" id="hd_id3149551" xml-lang="en-US" level="2" l10n="U" oldref="75">Curved Connector Starts with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3149568" xml-lang="en-US" l10n="U" oldref="76"><ahelp hid=".uno:ConnectorCurveArrowStart">Draws a curved line connector with an arrow at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3145119">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3146914" xml-lang="en-US" l10n="E">
+<image id="img_id3154807" src="res/commandimagelist/sc_connectorcurvearrowstart.png" width="0.566cm" height="0.566cm"><alt id="alt_id3154807" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153265" xml-lang="en-US" l10n="U" oldref="77">Curved Connector Starts with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrowEnd" id="bm_id4116114" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrowEnd" id="bm_id3145073" localize="false"/>
+<paragraph role="heading" id="hd_id3147552" xml-lang="en-US" level="2" l10n="U" oldref="78">Curved Connector Ends with Arrow</paragraph>
+<paragraph role="paragraph" id="par_id3145079" xml-lang="en-US" l10n="U" oldref="79"><ahelp hid=".uno:ConnectorCurveArrowEnd">Draws a curved line connector with an arrow at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3155833">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145215" xml-lang="en-US" l10n="E">
+<image id="img_id3145225" src="res/commandimagelist/sc_connectorcurvearrowend.png" width="0.566cm" height="0.566cm"><alt id="alt_id3145225" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153087" xml-lang="en-US" l10n="U" oldref="80">Curved Connector Ends with Arrow</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrows" id="bm_id5275722" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveArrows" id="bm_id3154948" localize="false"/>
+<paragraph role="heading" id="hd_id3153103" xml-lang="en-US" level="2" l10n="U" oldref="81">Curved Connector with Arrows</paragraph>
+<paragraph role="paragraph" id="par_id3154954" xml-lang="en-US" l10n="U" oldref="82"><ahelp hid=".uno:ConnectorCurveArrows">Draws a curved line connector with arrows at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3147422">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3148438" xml-lang="en-US" l10n="E">
+<image id="img_id3148448" src="res/commandimagelist/sc_connectorcurvearrows.png" width="0.423cm" height="0.423cm"><alt id="alt_id3148448" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3145304" xml-lang="en-US" l10n="U" oldref="83">Curved Connector with Arrows</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircleStart" id="bm_id3001520" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircleStart" id="bm_id3153794" localize="false"/>
+<paragraph role="heading" id="hd_id3145320" xml-lang="en-US" level="2" l10n="U" oldref="84">Curved Connector Starts with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3153800" xml-lang="en-US" l10n="U" oldref="85"><ahelp hid=".uno:ConnectorCurveCircleStart">Draws a curved line connector with a circle at the starting point. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3150952">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3153291" xml-lang="en-US" l10n="E">
+<image id="img_id3153301" src="res/commandimagelist/sc_connectorcurvecirclestart.png" width="0.423cm" height="0.423cm"><alt id="alt_id3153301" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154596" xml-lang="en-US" l10n="U" oldref="86">Curved Connector Starts with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircleEnd" id="bm_id8884002" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircleEnd" id="bm_id3153970" localize="false"/>
+<paragraph role="heading" id="hd_id3154311" xml-lang="en-US" level="2" l10n="U" oldref="87">Curved Connector Ends with Circle</paragraph>
+<paragraph role="paragraph" id="par_id3153977" xml-lang="en-US" l10n="U" oldref="88"><ahelp hid=".uno:ConnectorCurveCircleEnd">Draws a curved line connector with a circle at the endpoint. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3157886">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3154724" xml-lang="en-US" l10n="E">
+<image id="img_id3156097" src="res/commandimagelist/sc_connectorcurvecircleend.png" width="0.423cm" height="0.423cm"><alt id="alt_id3156097" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149322" xml-lang="en-US" l10n="U" oldref="89">Curved Connector Ends with Circle</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircles" id="bm_id168872" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ConnectorCurveCircles" id="bm_id3150461" localize="false"/>
+<paragraph role="heading" id="hd_id3150450" xml-lang="en-US" level="2" l10n="U" oldref="90">Curved Connector with Circles</paragraph>
+<paragraph role="paragraph" id="par_id3156117" xml-lang="en-US" l10n="U" oldref="91"><ahelp hid=".uno:ConnectorCurveCircles">Draws a curved line connector with circles at both ends. Click a gluepoint on an object, drag to a gluepoint on another object, and then release.</ahelp></paragraph>
+<table id="tbl_id3150275">
+<tablerow>
+<tablecell>
+<paragraph role="paragraph" id="par_id3155588" xml-lang="en-US" l10n="E">
+<image id="img_id3155598" src="res/commandimagelist/sc_connectorcurvecircles.png" width="0.423cm" height="0.423cm"><alt id="alt_id3155598" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="paragraph" id="par_id3149766" xml-lang="en-US" l10n="U" oldref="92">Curved Connector with Circles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<section id="relatedtopics">
+<embed href="text/simpress/guide/orgchart.xhp#orgchart"/>
+</section>
+</body>
+</helpdocument>

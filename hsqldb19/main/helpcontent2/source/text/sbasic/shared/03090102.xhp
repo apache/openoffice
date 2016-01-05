@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03090102xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Select...Case Statement [Runtime]</title>
+<filename>/text/sbasic/shared/03090102.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:23:03">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="selectcase">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149416"><bookmark_value>Select...Case statement</bookmark_value>
+<bookmark_value>Case statement</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3149416" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03090102.xhp" name="Select...Case Statement [Runtime]">Select...Case Statement [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153896" xml-lang="en-US" l10n="U" oldref="2">Defines one or more statement blocks depending on the value of an expression.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3147265" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="4">Select Case condition Case expression Statement Block [Case expression2 Statement Block][Case Else] Statement Block End Select</paragraph>
+<paragraph role="heading" id="hd_id3150767" xml-lang="en-US" level="2" l10n="U" oldref="5">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="6">
+<emph>Condition:</emph> Any expression that controls if the statement block that follows the respective Case clause is executed.</paragraph>
+<paragraph role="paragraph" id="par_id3150448" xml-lang="en-US" l10n="U" oldref="7">
+<emph>Expression:</emph> Any expression that is compatible with the Condition type expression. The statement block that follows the Case clause is executed if <emph>Condition</emph> matches <emph>Expression</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153768" xml-lang="en-US" level="2" l10n="U" oldref="8">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150441" xml-lang="en-US" l10n="U" oldref="9">Sub ExampleRandomSelect</paragraph>
+<paragraph role="paragraph" id="par_id3152462" xml-lang="en-US" l10n="U" oldref="10">Dim iVar As Integer</paragraph>
+<paragraph role="paragraph" id="par_id3149260" xml-lang="en-US" l10n="U" oldref="11">iVar = Int((15 * Rnd) -2)</paragraph>
+<paragraph role="paragraph" id="par_id3151113" xml-lang="en-US" l10n="U" oldref="12">Select Case iVar</paragraph>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="13">Case 1 To 5</paragraph>
+<paragraph role="paragraph" id="par_id3152597" xml-lang="en-US" l10n="U" oldref="14">Print "Number from 1 to 5"</paragraph>
+<paragraph role="paragraph" id="par_id3147428" xml-lang="en-US" l10n="U" oldref="15">Case 6, 7, 8</paragraph>
+<paragraph role="paragraph" id="par_id3147349" xml-lang="en-US" l10n="U" oldref="16">Print "Number from 6 to 8"</paragraph>
+<paragraph role="paragraph" id="par_id3153729" xml-lang="en-US" l10n="U" oldref="17">Case 8 To 10</paragraph>
+<paragraph role="paragraph" id="par_id3152886" xml-lang="en-US" l10n="U" oldref="18">Print "Greater than 8"</paragraph>
+<paragraph role="paragraph" id="par_id3155414" xml-lang="en-US" l10n="U" oldref="19">Case Else</paragraph>
+<paragraph role="paragraph" id="par_id3146975" xml-lang="en-US" l10n="U" oldref="20">Print "Out of range 1 to 10"</paragraph>
+<paragraph role="paragraph" id="par_id3150419" xml-lang="en-US" l10n="U" oldref="21">End Select</paragraph>
+<paragraph role="paragraph" id="par_id3154943" xml-lang="en-US" l10n="U" oldref="22">end sub</paragraph>
+</body>
+</helpdocument>

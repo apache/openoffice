@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="source"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/testcommon"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="var" path="openoffice.home/program/classes"/>
+	<classpathentry kind="var" path="openoffice.home/program/classes/unoil.jar"/>
+	<classpathentry kind="var" path="openoffice.home/program/classes/jurt.jar"/>
+	<classpathentry kind="var" path="openoffice.home/program/classes/juh.jar"/>
+	<classpathentry kind="var" path="openoffice.home/program/classes/ridl.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

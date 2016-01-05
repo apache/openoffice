@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0209070100xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Internet</title>
+<filename>/text/shared/02/09070100.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="internet">
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HYPERLINK_INTERNET" id="bm_id3149119" localize="false"/><paragraph role="heading" id="hd_id3151100" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/02/09070100.xhp" name="Internet">Internet</link></paragraph>
+<paragraph role="paragraph" id="par_id3154230" xml-lang="en-US" l10n="U" oldref="2">Use the <emph>Internet</emph> page of the <link href="text/shared/02/09070000.xhp" name="Hyperlink dialog">Hyperlink dialog</link> to edit hyperlinks with WWW or FTP addresses.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000403.xhp#hypdiainternet"/>
+</section>
+<paragraph role="paragraph" id="par_id3147291" xml-lang="en-US" l10n="U" oldref="3">The fields for the login name, password and anonymous user are only available for FTP addresses.</paragraph>
+<paragraph role="heading" id="hd_id3145090" xml-lang="en-US" level="2" l10n="U" oldref="4">Type of hyperlink</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_INTERNET" id="bm_id3154823" localize="false"/><paragraph role="heading" id="hd_id3151226" xml-lang="en-US" level="3" l10n="CHG" oldref="6">Web</paragraph>
+<paragraph role="paragraph" id="par_id3145071" xml-lang="en-US" l10n="U" oldref="7"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_INTERNET">Creates an http hyperlink.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_FTP" id="bm_id3153311" localize="false"/><paragraph role="heading" id="hd_id3153683" xml-lang="en-US" level="3" l10n="U" oldref="8">FTP</paragraph>
+<paragraph role="paragraph" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_FTP">Creates an FTP hyperlink.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_TELNET" id="bm_id3154749" localize="false"/><paragraph role="heading" id="hd_id3149095" xml-lang="en-US" level="3" l10n="U" oldref="10">Telnet</paragraph>
+<paragraph role="paragraph" id="par_id3151110" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SVX:RADIOBUTTON:RID_SVXPAGE_HYPERLINK_INTERNET:RB_LINKTYP_TELNET">Creates a Telnet hyperlink.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HYPERDLG_INET_PATH" id="bm_id3146797" localize="false"/><paragraph role="heading" id="hd_id3150443" xml-lang="en-US" level="3" l10n="U" oldref="12">Target</paragraph>
+<paragraph role="paragraph" id="par_id9887081" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter a URL for the file that you want to open when you click the hyperlink. If you do not specify a target frame, the file opens in the current document or frame.</ahelp><comment>see i48946</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_INTERNET:BTN_BROWSE" id="bm_id3158432" localize="false"/><paragraph role="heading" id="hd_id3155628" xml-lang="en-US" level="3" l10n="U" oldref="13">WWW Browser</paragraph>
+<paragraph role="paragraph" id="par_id3153760" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_HYPERLINK_INTERNET:BTN_BROWSE">Opens a web browser, into which you can load the desired URL.</ahelp> You can then copy and paste the URL into the <emph>Target</emph> field.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_INTERNET:BTN_TARGET" id="bm_id3149578" localize="false"/><paragraph role="heading" id="hd_id3155421" xml-lang="en-US" level="3" l10n="U" oldref="31">Target in document</paragraph>
+<paragraph role="paragraph" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_HYPERLINK_INTERNET:BTN_TARGET">Opens the <emph>Target in Document</emph> dialog.</ahelp> There you can select the destination within a document and add it to the target URL with the <emph>Insert</emph> button.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HYPERLINK_MARKWND_TREE" id="bm_id3159167" localize="false"/><paragraph role="paragraph" id="par_id3147335" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="HID_HYPERLINK_MARKWND_TREE" visibility="hidden">Specifies the position in the target document where you wish to jump to.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HYPERLINK_MARKWND_APPLY" id="bm_id3159177" localize="false"/><paragraph role="paragraph" id="par_id3149164" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_HYPERLINK_MARKWND_APPLY" visibility="hidden">Inserts the target in the <emph>Target</emph> field of the <emph>Hyperlink</emph> dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_HYPERLINK_MARKWND_CLOSE" id="bm_id3145416" localize="false"/><paragraph role="paragraph" id="par_id3155388" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="HID_HYPERLINK_MARKWND_CLOSE" visibility="hidden">Once the hyperlink has been completely entered, click on <emph>Close</emph> to set the link and leave the dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_LOGIN" id="bm_id3154307" localize="false"/><paragraph role="heading" id="hd_id3153320" xml-lang="en-US" level="3" l10n="U" oldref="15">Login name</paragraph>
+<paragraph role="paragraph" id="par_id3151384" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SVX:EDIT:RID_SVXPAGE_HYPERLINK_INTERNET:ED_LOGIN">Specifies your login name, if you are working with FTP addresses.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_PASSWD" id="bm_id3154923" localize="false"/><paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="3" l10n="U" oldref="17">Password</paragraph>
+<paragraph role="paragraph" id="par_id3145069" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SVX:EDIT:RID_SVXPAGE_HYPERLINK_INTERNET:ED_PASSWD">Specifies your password, if you are working with FTP addresses.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_HYPERLINK_INTERNET:CBX_ANONYMOUS" id="bm_id3149294" localize="false"/><paragraph role="heading" id="hd_id3149046" xml-lang="en-US" level="3" l10n="U" oldref="19">Anonymous user</paragraph>
+<paragraph role="paragraph" id="par_id3152771" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="SVX:CHECKBOX:RID_SVXPAGE_HYPERLINK_INTERNET:CBX_ANONYMOUS">Allows you to log in to the FTP address as an anonymous user.</ahelp></paragraph>
+<section id="weitere">
+<paragraph role="heading" id="hd_id3148663" xml-lang="en-US" level="2" l10n="U" oldref="21">Further settings</paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_HYPERLINK_MAIL:CB_FRAME" id="bm_id3153778" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_HYPERLINK_DOCUMENT:CB_FRAME" id="bm_id3154072" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:CB_FRAME" id="bm_id3154138" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ComboBox:RID_SVXPAGE_HYPERLINK_INTERNET:CB_FRAME" id="bm_id7259437" localize="false"/><paragraph role="heading" id="hd_id3153525" xml-lang="en-US" level="3" l10n="U" oldref="23">Frame</paragraph>
+<paragraph role="paragraph" id="par_id2052980" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the name of the frame that you want the linked file to open in, or select a predefined frame from the list. If you leave this box blank, the linked file opens in the current browser window.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HYPERLINK_INTERNET:LB_FORM" id="bm_id3154819" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HYPERLINK_MAIL:LB_FORM" id="bm_id3144433" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HYPERLINK_DOCUMENT:LB_FORM" id="bm_id3156424" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ListBox:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:LB_FORM" id="bm_id3156215" localize="false"/><paragraph role="heading" id="hd_id3155101" xml-lang="en-US" level="3" l10n="U" oldref="24">Form</paragraph>
+<paragraph role="paragraph" id="par_id3149167" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SVX:LISTBOX:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:LB_FORM">Specifies whether the hyperlink is inserted as text or as a button.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_INTERNET:BTN_SCRIPT" id="bm_id3150871" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_MAIL:BTN_SCRIPT" id="bm_id3125863" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_DOCUMENT:BTN_SCRIPT" id="bm_id3157321" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:ImageButton:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:BTN_SCRIPT" id="bm_id3148678" localize="false"/><paragraph role="heading" id="hd_id3152920" xml-lang="en-US" level="3" l10n="U" oldref="26">Events</paragraph>
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="CHG" oldref="27"><ahelp hid="SVX:IMAGEBUTTON:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:BTN_SCRIPT">Opens the <emph>Assign Macro</emph> dialog, in which you can give events such as "mouse over object" or "trigger hyperlink" their own program codes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_INDICATION" id="bm_id3151383" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_MAIL:ED_INDICATION" id="bm_id3154685" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_DOCUMENT:ED_INDICATION" id="bm_id3154684" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:ED_INDICATION" id="bm_id3149983" localize="false"/><paragraph role="heading" id="hd_id3151041" xml-lang="en-US" level="3" l10n="U" oldref="28">Text</paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U" oldref="29"><ahelp hid="SVX:EDIT:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:ED_INDICATION">Specifies the visible text or button caption for the hyperlink.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_MAIL:ED_TEXT" id="bm_id3152598" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_DOCUMENT:ED_TEXT" id="bm_id3159198" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_NEWDOCUMENT:ED_TEXT" id="bm_id3146121" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_TEXT" id="bm_id2681356" localize="false"/><paragraph role="heading" id="hd_id3147354" xml-lang="en-US" level="3" l10n="U" oldref="30">Name</paragraph>
+<paragraph role="paragraph" id="par_id2801599" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter a name for the hyperlink.</ahelp> $[officename] inserts a NAME tag in the hyperlink.</paragraph>
+</section>
+</body>
+</helpdocument>
