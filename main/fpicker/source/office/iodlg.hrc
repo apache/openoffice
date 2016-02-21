@@ -1,0 +1,86 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef _SVTOOLS_IODLGIMPL_HRC
+#define _SVTOOLS_IODLGIMPL_HRC
+
+#include "svtools/svtools.hrc"
+#include "svtools/helpid.hrc"
+
+// ModalDialog DLG_SVT_EXPLORERFILE
+
+#define FT_EXPLORERFILE_CURRENTPATH			10
+#define BTN_EXPLORERFILE_NEWFOLDER			11
+#define BTN_EXPLORERFILE_LISTVIEW			12
+#define BTN_EXPLORERFILE_DETAILSVIEW		13
+#define BTN_EXPLORERFILE_UP					14
+#define BTN_EXPLORERFILE_STANDARD			15
+#define BTN_EXPLORERFILE_OPEN				16
+#define BTN_EXPLORERFILE_CANCEL				17
+#define BTN_EXPLORERFILE_HELP				18
+
+#define IMG_FILEDLG_BTN_UP					10
+#define IMG_FILEDLG_BTN_STD					11
+#define IMG_FILEDLG_CREATEFOLDER            14
+
+#define CTL_EXPLORERFILE_FILELIST			20
+
+#define FT_EXPLORERFILE_FILENAME			30
+#define ED_EXPLORERFILE_FILENAME			31
+#define FT_EXPLORERFILE_SHARED_LISTBOX		32
+#define LB_EXPLORERFILE_SHARED_LISTBOX		33
+#define FT_EXPLORERFILE_FILETYPE			34
+#define LB_EXPLORERFILE_FILETYPE			35
+
+#define CB_EXPLORERFILE_READONLY			40
+#define CB_EXPLORERFILE_PASSWORD			41
+#define CB_AUTO_EXTENSION					42
+#define CB_OPTIONS							43
+
+// -----------------------------------------------
+
+#define STR_EXPLORERFILE_OPEN               1
+#define STR_EXPLORERFILE_SAVE               2
+#define STR_EXPLORERFILE_BUTTONSAVE     	3
+#define STR_PATHNAME						4
+#define STR_PATHSELECT						5
+#define STR_BUTTONSELECT					6
+#define STR_ACTUALVERSION					7
+#define STR_PREVIEW				8
+
+// DLG_SVT_QUERYFOLDERNAME -----------------------
+
+#define FT_SVT_QUERYFOLDERNAME_DLG_NAME     10
+#define ED_SVT_QUERYFOLDERNAME_DLG_NAME     11
+#define FL_SVT_QUERYFOLDERNAME_DLG_NAME     12
+#define BT_SVT_QUERYFOLDERNAME_DLG_OK       13
+#define BT_SVT_QUERYFOLDERNAME_DLG_CANCEL   14
+#define BT_SVT_QUERYFOLDERNAME_DLG_HELP     15
+
+// -----------------------------------------------
+
+#define SID_SFX_START                       5000
+#define SID_OPENURL                     (SID_SFX_START + 596)
+
+#endif
+

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03120307xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Right Function [Runtime]</title>
+<filename>/text/sbasic/shared/03120307.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-21T12:00:17">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="right">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153311"><bookmark_value>Right function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153311" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120307.xhp" name="Right Function [Runtime]">Right Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="U" oldref="2">Returns the rightmost "n" characters of a string expression.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3149763" xml-lang="en-US" l10n="U" oldref="3">See also: <link href="text/sbasic/shared/03120303.xhp" name="Left Function">Left Function</link>.</paragraph>
+<paragraph role="heading" id="hd_id3145315" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax:</paragraph>
+<paragraph role="paragraph" id="par_id3153061" xml-lang="en-US" l10n="CHG" oldref="5">Right (Text As String, n As Long)</paragraph>
+<paragraph role="heading" id="hd_id3145068" xml-lang="en-US" level="2" l10n="U" oldref="6">Return value:</paragraph>
+<paragraph role="paragraph" id="par_id3156344" xml-lang="en-US" l10n="U" oldref="7">String</paragraph>
+<paragraph role="heading" id="hd_id3146795" xml-lang="en-US" level="2" l10n="U" oldref="8">Parameters:</paragraph>
+<paragraph role="paragraph" id="par_id3153526" xml-lang="en-US" l10n="U" oldref="9">
+<emph>Text:</emph> Any string expression that you want to return the rightmost characters of.</paragraph>
+<paragraph role="paragraph" id="par_id3151211" xml-lang="en-US" l10n="CHG" oldref="10">
+<emph>n:</emph> Numeric expression that defines the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 65535.</paragraph>
+<paragraph role="paragraph" id="par_id3158410" xml-lang="en-US" l10n="U" oldref="11">The following example converts a date in YYYY-MM-DD format to the US date format (MM/DD/YYYY).</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<paragraph role="heading" id="hd_id3156212" xml-lang="en-US" level="2" l10n="U" oldref="12">Example:</paragraph>
+<paragraph role="paragraph" id="par_id3150869" xml-lang="en-US" l10n="U" oldref="13">Sub ExampleUSDate</paragraph>
+<paragraph role="paragraph" id="par_id3153105" xml-lang="en-US" l10n="U" oldref="14">Dim sInput As String</paragraph>
+<paragraph role="paragraph" id="par_id3154124" xml-lang="en-US" l10n="U" oldref="15">Dim sUS_date As String</paragraph>
+<paragraph role="paragraph" id="par_id3159252" xml-lang="en-US" l10n="U" oldref="16">sInput = InputBox("Please input a date in the international format 'YYYY-MM-DD'")</paragraph>
+<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="U" oldref="17">sUS_date = Mid(sInput, 6, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3146984" xml-lang="en-US" l10n="U" oldref="18">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3155308" xml-lang="en-US" l10n="U" oldref="19">sUS_date = sUS_date &amp; Right(sInput, 2)</paragraph>
+<paragraph role="paragraph" id="par_id3153727" xml-lang="en-US" l10n="U" oldref="20">sUS_date = sUS_date &amp; "/"</paragraph>
+<paragraph role="paragraph" id="par_id3145365" xml-lang="en-US" l10n="U" oldref="21">sUS_date = sUS_date &amp; Left(sInput, 4)</paragraph>
+<paragraph role="paragraph" id="par_id3152940" xml-lang="en-US" l10n="U" oldref="22">MsgBox sUS_date</paragraph>
+<paragraph role="paragraph" id="par_id3146120" xml-lang="en-US" l10n="U" oldref="23">End Sub</paragraph>
+</body>
+</helpdocument>

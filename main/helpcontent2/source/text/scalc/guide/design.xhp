@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalcguidedesignxml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Selecting Themes for Sheets</title>
+<filename>/text/scalc/guide/design.xhp</filename>
+</topic>
+</meta>
+<body>
+  
+  
+  
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150791"><bookmark_value>theme selection for sheets</bookmark_value>
+<bookmark_value>layout;spreadsheets</bookmark_value>
+<bookmark_value>cell styles; selecting</bookmark_value>
+<bookmark_value>selecting;formatting themes</bookmark_value>
+<bookmark_value>sheets;formatting themes</bookmark_value>
+<bookmark_value>formats;themes for sheets</bookmark_value>
+<bookmark_value>formatting;themes for sheets</bookmark_value>
+</bookmark>
+  <comment>mw deleted "applying;"</comment>
+  <paragraph xml-lang="en-US" id="hd_id3150791" role="heading" level="1" l10n="U" oldref="6"><variable id="design"><link href="text/scalc/guide/design.xhp" name="Selecting Themes for Sheets">Selecting Themes for Sheets</link> 
+</variable></paragraph>
+  <paragraph xml-lang="en-US" id="par_id3145786" role="paragraph" l10n="U" oldref="13">$[officename] Calc comes with a predefined set of formatting themes that you can apply to your spreadsheets.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154490" role="paragraph" l10n="U" oldref="16">It is not possible to add themes to Calc, and they cannot be modified. However, you can modify their styles after you apply them to a spreadsheet.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3154757" role="paragraph" l10n="U" oldref="17">Before you format a sheet with a theme, you have to apply at least one custom cell style to the cells on the sheet. You can then change the cell formatting by selecting and applying a theme in the <emph>Theme Selection</emph> dialog.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3156382" role="paragraph" l10n="U" oldref="18">To apply a custom cell style to a cell, you can open the Styles and Formatting window and, in its lower list box, set the Custom Styles view. A list of the existing custom defined cell styles will be displayed. Double click a name from the Styles and Formatting window to apply this style to the selected cells.</paragraph>
+  <paragraph xml-lang="en-US" id="par_id3153963" role="paragraph" l10n="U" oldref="19">To apply a theme to a spreadsheet:</paragraph>
+  <list type="ordered">
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3146920" role="listitem" l10n="CHG" oldref="15">Click the <emph>Choose Themes</emph> icon in the <emph>Tools</emph> bar. </paragraph>
+    <embed href="text/scalc/02/06080000.xhp#sythemen"/>
+    <paragraph xml-lang="en-US" id="par_id3148488" role="listitem" l10n="CHG" oldref="20">The <emph>Theme Selection</emph> dialog appears. This dialog lists the available themes for the whole spreadsheet and the Styles and Formatting window lists the custom styles for specific cells.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3155114" role="listitem" l10n="U" oldref="9">In the <emph>Theme Selection </emph>dialog, select the theme that you want to apply to the spreadsheet.</paragraph>
+   </listitem>
+   <listitem>
+    <paragraph xml-lang="en-US" id="par_id3150090" role="listitem" l10n="U" oldref="21">Click OK</paragraph>
+    <paragraph xml-lang="en-US" id="par_id3150201" role="listitem" l10n="U" oldref="22">As soon as you select another theme in the <emph>Theme Selection</emph> dialog, some of the properties of the custom style will be applied to the current spreadsheet. The modifications will be immediately visible in your spreadsheet.</paragraph>
+   </listitem>
+  </list>
+  <section id="relatedtopics">
+   
+   <embed href="text/scalc/guide/autoformat.xhp#autoformat"/>
+   <paragraph xml-lang="en-US" id="par_id3146979" role="paragraph" l10n="U" oldref="12"><link href="text/scalc/02/06080000.xhp" name="Theme selection">Theme selection</link></paragraph>
+   
+  </section>
+ </body>
+</helpdocument>

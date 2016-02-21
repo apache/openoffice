@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textsharedguideerror_reportxml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Error Report Tool</title>
+         <filename>/text/shared/guide/error_report.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150616"><bookmark_value>Error Report Tool</bookmark_value>
+      <bookmark_value>reports;error reports</bookmark_value>
+      <bookmark_value>crash reports</bookmark_value>
+      <bookmark_value>activating;Error Report Tool</bookmark_value>
+</bookmark><comment>MW changed "reporting..." to "reports;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3150616" role="heading" level="1" l10n="U"
+                 oldref="17"><variable id="error_report"><link href="text/shared/guide/error_report.xhp" name="Error Report Tool">Error Report Tool</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153345" role="paragraph" l10n="U" oldref="1">The Error Report Tool starts automatically when a program crash occurs.<comment>removed sentene about manually - i96770</comment></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147088" role="paragraph" l10n="U" oldref="2">The Error Report Tool gathers all necessary information that can help the program developers to improve the code, so that in later versions this error can possibly be avoided. Please help us to improve the software and send the generated error report.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3148538" role="heading" level="2" l10n="U" oldref="4">Starting the Error Report Tool</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149811" role="paragraph" l10n="U" oldref="5">With most program crashes the Error Report Tool will start automatically.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3154046" role="heading" level="2" l10n="U" oldref="7">Completing the Report</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147335" role="paragraph" l10n="U" oldref="8">On the main Error Report Tool dialog, you can enter some additional information that may help the developers to localize the error. For example, if the error only appears after a change in your hardware or software environment, or if you clicked on a button, please include that information.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3159399" role="heading" level="2" l10n="U" oldref="9">Sending the Error Report</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150504" role="paragraph" l10n="U" oldref="10">The Error Report Tool uses the HTTP PUT / SOAP protocol to send the report data. You may optionally enter some descriptive text that will help us to identify the context of the program crash. Then click the <emph>Send</emph> button.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149670" role="warning" l10n="U" oldref="11">You will not get an answer to your error report. If you need support, please visit the <link href="text/shared/main0108.xhp">support forum</link> on the Internet.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153526" role="paragraph" l10n="U" oldref="12">You may choose to respond to questions that the developers may have about the reported error. Mark the check box if you allow to be contacted by e-mail, should additional information be required. By default this box is not marked, so you will not get any e-mail.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3150792" role="heading" level="2" l10n="U"
+                 oldref="13">What Data is Sent?</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154366" role="paragraph" l10n="U" oldref="14">The error report consists of several files. The main file contains information about the error type, operating system name and version, memory usage, and the description that you entered. You can click the <emph>Show Report</emph> button on the main dialog of the Error Report Tool to view what will get sent in the main file.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3151177" role="paragraph" l10n="U" oldref="15">In addition, relevant memory contents and stack traces are gathered by some system standard tools ("dbhhelp.dll" on Windows systems, "pstack" on UNIX systems). This information will be sent also.</paragraph>
+   </body>
+</helpdocument>

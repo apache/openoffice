@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0106020000xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Import formula</title>
+<filename>/text/smath/01/06020000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="importfile">
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3154659"><bookmark_value>importing; %PRODUCTNAME Math formulas</bookmark_value></bookmark>
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3154660"><bookmark_value>MathML; import from file</bookmark_value></bookmark>
+  <bookmark branch="hid/.uno:ImportFormula" xml-lang="en-US" id="bm_id3150346"/>
+  <paragraph role="heading" level="1" id="hd_id3154659" xml-lang="en-US">Import Formula from File</paragraph>
+  <paragraph role="paragraph" id="par_id3150251" xml-lang="en-US"><variable id="formelimportierentext"><ahelp hid=".uno:ImportFormula" visibility="visible">This command opens a dialog for importing a formula.</ahelp></variable></paragraph>
+  <paragraph role="paragraph" id="par_id3153916" xml-lang="en-US">The <emph>Insert</emph> dialog is set up like the <link href="text/shared/01/01020000.xhp" name="Open">Open</link> dialog under <emph>File</emph>. Use the <emph>Insert</emph> dialog to load, edit and display a formula saved as a file in the <emph>Commands</emph> window.</paragraph>
+  <paragraph role="paragraph" id="par_id3153917" xml-lang="en-US">You can import MathML files created by other applications as well. The MathML source must have a <item type="code">math</item> element with an <item type="code">xmlns</item> attribute with value "http://www.w3.org/1998/Math/MathML". The languages MathML and StarMath are not fully compatible, therefore you should revise the import result. For details about the language MathML see its <link href="http://www.w3.org/TR/#tr_MathML">specification</link>.</paragraph>
+  <section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#etsfim"/>
+  </section>
+</section>
+<section id="importclipboard">
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3154661"><bookmark_value>MathML; import via clipboard</bookmark_value></bookmark>
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3154662"><bookmark_value>importing; MathML</bookmark_value></bookmark>
+  <bookmark branch="hid/.uno:ImportMathMLClipboard" xml-lang="en-US" id="bm_id3150347"/>
+  <paragraph role="heading" level="1" id="hd_id3154661" xml-lang="en-US">Import MathML from Clipboard</paragraph>
+  <paragraph role="paragraph" id="par_id3150252" xml-lang="en-US"><variable id="mathmlimportierentext"><ahelp hid=".uno:ImportMathMLClipboard" visibility="visible">This command transforms MathML clipboard content to StarMath and inserts it at the current cursor position.</ahelp></variable></paragraph>
+  <paragraph role="paragraph" id="par_id3153918" xml-lang="en-US">If the transformation fails, nothing is inserted.</paragraph>
+  <section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#etsmim"/>
+  </section>
+  <paragraph role="paragraph" id="par_id3153919" xml-lang="en-US">This command handles only MathML content. If you have copied a %PRODUCTNAME Math formula to clipboard, insert it using the command <link href="text/shared/01/02060000.xhp" name="Paste">Paste</link> under <emph>Edit</emph>.</paragraph>
+</section>
+</body>
+</helpdocument>

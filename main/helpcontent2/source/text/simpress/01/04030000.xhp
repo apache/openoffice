@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0104030000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Snap Point/Line</title>
+<filename>/text/simpress/01/04030000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145800"><bookmark_value>snap lines, see also guides</bookmark_value>
+<bookmark_value>snap points;inserting</bookmark_value>
+<bookmark_value>guides; inserting</bookmark_value>
+<bookmark_value>magnetic lines in presentations</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:CapturePoint" id="bm_id1394129" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:CapturePoint" id="bm_id3155602" localize="false"/><paragraph role="heading" id="hd_id3145800" xml-lang="en-US" level="1" l10n="U" oldref="1">Snap Point/Line</paragraph>
+<paragraph role="paragraph" id="par_id3150752" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="fangtext"><ahelp hid=".uno:CapturePoint">Inserts a snap point or snap line (also known as guide) that you can use to quickly align objects.</ahelp>
+</variable> Snap points and snap lines do not appear in printed output.</paragraph>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000404.xhp#efgflp"/>
+</section>
+<paragraph role="tip" id="par_id3145388" xml-lang="en-US" l10n="U" oldref="19">You can drag a snap line from the rulers and drop them on the page. To delete a snap line, drag it back to the ruler.</paragraph>
+<paragraph role="paragraph" id="par_id3153815" xml-lang="en-US" l10n="U" oldref="3">Draw or move an object near a snap point or snap line to snap it in place.</paragraph>
+<paragraph role="paragraph" id="par_id3157978" xml-lang="en-US" l10n="U" oldref="4">To set the snap range, choose <switchinline select="appl"><caseinline select="DRAW"><link href="text/shared/optionen/01070300.xhp" name="Drawing - Grid"><emph>%PRODUCTNAME Draw - Grid</emph></link>
+</caseinline><defaultinline><link href="text/shared/optionen/01070300.xhp" name="Presentation - Grid"><emph>%PRODUCTNAME Impress - Grid</emph></link></defaultinline></switchinline> in the Options dialog box.</paragraph>
+<paragraph role="heading" id="hd_id3147402" xml-lang="en-US" level="2" l10n="U" oldref="5">Position</paragraph>
+<paragraph role="paragraph" id="par_id3150533" xml-lang="en-US" l10n="U" oldref="6">Sets the position of a selected snap point or line relative to the top left corner of the page. </paragraph>
+<paragraph role="note" id="par_id3153040" xml-lang="en-US" l10n="U" oldref="24">You can also drag a snap point or snap line to a new position.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_SNAPLINE:MTR_FLD_X" id="bm_id3145593" localize="false"/><paragraph role="heading" id="hd_id3153078" xml-lang="en-US" level="3" l10n="U" oldref="7">X axis</paragraph>
+<paragraph role="paragraph" id="par_id3149951" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SD:METRICFIELD:DLG_SNAPLINE:MTR_FLD_X">Enter the amount of space you want between the snap point or line and the left edge of the page.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:MetricField:DLG_SNAPLINE:MTR_FLD_Y" id="bm_id3149512" localize="false"/><paragraph role="heading" id="hd_id3153932" xml-lang="en-US" level="3" l10n="U" oldref="9">Y axis</paragraph>
+<paragraph role="paragraph" id="par_id3153113" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SD:METRICFIELD:DLG_SNAPLINE:MTR_FLD_Y">Enter the amount of space you want between the snap point or line and the top edge of the page.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145168" xml-lang="en-US" level="2" l10n="U" oldref="11">Type</paragraph>
+<paragraph role="paragraph" id="par_id3154503" xml-lang="en-US" l10n="U" oldref="12">Specified the type of snap object you want to insert.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ImageRadioButton:DLG_SNAPLINE:RB_POINT" id="bm_id3150131" localize="false"/><paragraph role="heading" id="hd_id3147366" xml-lang="en-US" level="3" l10n="U" oldref="13">Point</paragraph>
+<paragraph role="paragraph" id="par_id3155926" xml-lang="en-US" l10n="CHG" oldref="14"><ahelp hid="SD:IMAGERADIOBUTTON:DLG_SNAPLINE:RB_POINT">Inserts a snap point.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ImageRadioButton:DLG_SNAPLINE:RB_VERTICAL" id="bm_id3153733" localize="false"/><paragraph role="heading" id="hd_id3150014" xml-lang="en-US" level="3" l10n="U" oldref="15">Vertical</paragraph>
+<paragraph role="paragraph" id="par_id3145241" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SD:IMAGERADIOBUTTON:DLG_SNAPLINE:RB_VERTICAL">Inserts a vertical snap line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sd:ImageRadioButton:DLG_SNAPLINE:RB_HORIZONTAL" id="bm_id3148770" localize="false"/><paragraph role="heading" id="hd_id3148386" xml-lang="en-US" level="3" l10n="U" oldref="17">Horizontal</paragraph>
+<paragraph role="paragraph" id="par_id3145348" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="SD:IMAGERADIOBUTTON:DLG_SNAPLINE:RB_HORIZONTAL">Inserts a horizontal snap line.</ahelp></paragraph>
+</body>
+</helpdocument>

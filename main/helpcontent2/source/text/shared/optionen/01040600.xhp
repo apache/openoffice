@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedoptionen01040600xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Formatting Aids</title>
+<filename>/text/shared/optionen/01040600.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-02-19T16:27:31">UFI: spec "Hidden Text in Writer"; dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="schattencursor">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3144510"><bookmark_value>non-printing characters (Writer)</bookmark_value>
+<bookmark_value>displaying; non-printing characters (Writer)</bookmark_value>
+<bookmark_value>paragraph marks; displaying (Writer)</bookmark_value>
+<bookmark_value>characters; displaying only on screen (Writer)</bookmark_value>
+<bookmark_value>optional hyphens (Writer)</bookmark_value>
+<bookmark_value>hyphens; displaying custom (Writer)</bookmark_value>
+<bookmark_value>custom hyphens (Writer)</bookmark_value>
+<bookmark_value>spaces; displaying (Writer)</bookmark_value>
+<bookmark_value>spaces; showing protected spaces (Writer)</bookmark_value>
+<bookmark_value>protected spaces; showing (Writer)</bookmark_value>
+<bookmark_value>non-breaking spaces (Writer)</bookmark_value>
+<bookmark_value>tab stops; displaying (Writer)</bookmark_value>
+<bookmark_value>break display (Writer)</bookmark_value>
+<bookmark_value>hidden text;showing (Writer)</bookmark_value>
+<bookmark_value>hidden fields display (Writer)</bookmark_value>
+<bookmark_value>paragraphs; hidden paragraphs (Writer)</bookmark_value>
+<bookmark_value>cursor; allowing in protected areas (Writer)</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_OPTSHDWCRSR" id="bm_id3155388" localize="false"/>
+<paragraph role="heading" id="hd_id3154285" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01040600.xhp" name="Formatting Aids">Formatting Aids</link></paragraph>
+<paragraph role="paragraph" id="par_id3155450" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="HID_OPTSHDWCRSR">In $[officename] text and HTML documents, defines the display for certain characters and for the direct cursor.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/shared/00/00000406.xhp#registerschattencursor"/>
+</section>
+<paragraph role="heading" id="hd_id3144510" xml-lang="en-US" level="2" l10n="U" oldref="27">Display of</paragraph>
+<paragraph role="paragraph" id="par_id3156343" xml-lang="en-US" l10n="CHG" oldref="28">Defines which non-printing characters are visible on screen. Activate the <link href="text/swriter/01/03100000.xhp" name="Non-printing Characters On/Off"><emph>Non-printing Characters</emph></link> icon on the <emph>Standard</emph> bar. All characters that you have selected on the <emph>Formatting Aids</emph> tab page will be displayed.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_PARA" id="bm_id3150871" localize="false"/>
+<paragraph role="heading" id="hd_id3154140" xml-lang="en-US" level="3" l10n="U" oldref="29">Paragraph end</paragraph>
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_PARA">Specifies whether paragraph delimiters are displayed. The paragraph delimiters also contain paragraph format information.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_SHYPH" id="bm_id3148453" localize="false"/>
+<paragraph role="heading" id="hd_id3153193" xml-lang="en-US" level="3" l10n="U" oldref="31">Custom hyphens</paragraph>
+<paragraph role="paragraph" id="par_id3147230" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_SHYPH">Specifies whether user-defined delimiters are displayed. These are hidden delimiters that you enter within a word by pressing <switchinline select="sys"><caseinline select="MAC">Command+Hyphen(-) 
+</caseinline><defaultinline>Ctrl+Hyphen(-).</defaultinline></switchinline> Words with user-defined delimiters are only separated at the end of a line at the point where a user-defined delimiter has been inserted, irrespective of whether the automatic hyphenation is activated or deactivated.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_SPACE" id="bm_id3149562" localize="false"/>
+<paragraph role="heading" id="hd_id3147287" xml-lang="en-US" level="3" l10n="U" oldref="33">Spaces</paragraph>
+<paragraph role="paragraph" id="par_id3147427" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_SPACE">Specifies whether to represent every space in the text with a dot.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_HSPACE" id="bm_id3148616" localize="false"/>
+<paragraph role="heading" id="hd_id3145750" xml-lang="en-US" level="3" l10n="U" oldref="35">Non-breaking spaces</paragraph>
+<paragraph role="paragraph" id="par_id3152938" xml-lang="en-US" l10n="U" oldref="36"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_HSPACE">Specifies that non-breaking spaces are shown as gray boxes. Non-breaking spaces are not broken at the end of a line and are entered with the <switchinline select="sys"><caseinline select="MAC">Command+Shift+Spacebar 
+</caseinline><defaultinline>Ctrl+Shift+Spacebar</defaultinline></switchinline> shortcut keys.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_TAB" id="bm_id3152578" localize="false"/>
+<paragraph role="heading" id="hd_id3147348" xml-lang="en-US" level="3" l10n="U" oldref="37">Tabs</paragraph>
+<paragraph role="paragraph" id="par_id3153574" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_TAB">Specifies that tab stops are displayed as small arrows.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_BREAK" id="bm_id3150104" localize="false"/>
+<paragraph role="heading" id="hd_id3159154" xml-lang="en-US" level="3" l10n="U" oldref="39">Breaks</paragraph>
+<paragraph role="paragraph" id="par_id3150874" xml-lang="en-US" l10n="U" oldref="40"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_BREAK">Displays all line breaks inserted with the Shift+Enter shortcut. These breaks create a new line, but do not start a new paragraph.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_CHAR_HIDDEN" id="bm_id3112582" localize="false"/>
+<paragraph role="heading" id="par_idN108E5" xml-lang="en-US" level="3" l10n="NEW">Hidden text<comment>UFI: new, although name of control is re-used, see spec "Hidden Text in Writer"</comment></paragraph>
+<paragraph role="paragraph" id="par_idN108FB" xml-lang="en-US" l10n="CHG"><ahelp hid="sw:CheckBox:TP_OPTSHDWCRSR:CB_CHAR_HIDDEN">Displays text that uses the character format "hidden", when <emph>View - Non-printing Characters</emph> is enabled.</ahelp></paragraph>
+<!-- removed HID SW_CHECKBOX_TP_OPTSHDWCRSR_CB_HIDDEN -->
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_FLD_HIDDEN" id="bm_id5794244" localize="false"/>
+<paragraph role="heading" id="hd_id3149481" xml-lang="en-US" level="3" l10n="CHG" oldref="41">Fields: Hidden text (not for HTML documents)<comment>UFI: this is the old "Hidden text" control renamed</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149413" xml-lang="en-US" l10n="CHG" oldref="42"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_HIDDEN">Displays text that is hidden by <emph>Conditional Text</emph> or <emph>Hidden Text</emph> fields.</ahelp></paragraph>
+<!-- removed HID SW_CHECKBOX_TP_OPTSHDWCRSR_CB_HIDDEN_PARA -->
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_FLD_HIDDEN_PARA" id="bm_id468764" localize="false"/>
+<paragraph role="heading" id="hd_id3149300" xml-lang="en-US" level="3" l10n="CHG" oldref="43">Fields: Hidden paragraphs (not for HTML documents)</paragraph>
+<paragraph role="paragraph" id="par_id3149418" xml-lang="en-US" l10n="U" oldref="44"><ahelp hid="SW_CHECKBOX_TP_OPTSHDWCRSR_CB_HIDDEN_PARA">If you have inserted text using the <emph>Hidden Paragraph</emph> field, specifies whether to display the hidden paragraph.</ahelp> This option has the same function as the menu commands <switchinline select="appl"><caseinline select="WRITER"><link href="text/swriter/01/03140000.xhp" name="View - Hidden Paragraphs">View - Hidden Paragraphs</link>
+</caseinline><defaultinline>View - Hidden Paragraphs</defaultinline></switchinline> available in open text documents.</paragraph>
+<paragraph role="heading" id="hd_id3156180" xml-lang="en-US" level="2" l10n="U" oldref="3">Direct cursor (not for HTML documents)</paragraph>
+<paragraph role="paragraph" id="par_id3146900" xml-lang="en-US" l10n="CHG" oldref="4">Defines all the properties of the direct cursor.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_SHDWCRSONOFF" id="bm_id3150327" localize="false"/>
+<paragraph role="heading" id="hd_id3154273" xml-lang="en-US" level="3" l10n="U" oldref="5">Direct cursor</paragraph>
+<paragraph role="paragraph" id="par_id3150749" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="SW:CHECKBOX:TP_OPTSHDWCRSR:CB_SHDWCRSONOFF">Activates the direct cursor.</ahelp> You can also activate this function by clicking the <switchinline select="appl"><caseinline select="WRITER"><link href="text/swriter/02/18130000.xhp" name="Direct Cursor On/Off">Direct Cursor On/Off</link>
+</caseinline><defaultinline>Direct Cursor On/Off</defaultinline></switchinline> icon in a text document.</paragraph>
+<paragraph role="heading" id="hd_id3152962" xml-lang="en-US" level="2" l10n="U" oldref="7">Insert (not for HTML document)</paragraph>
+<paragraph role="paragraph" id="par_id3149020" xml-lang="en-US" l10n="U" oldref="8">Defines the insert options for the direct cursor. If you click at any position in your document, a new paragraph can be written or inserted exactly at this position. The properties of this paragraph depend on the selected option. You can select from the following options:</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_OPTSHDWCRSR:RB_SHDWCRSFILLMARGIN" id="bm_id3154755" localize="false"/>
+<paragraph role="heading" id="hd_id3148995" xml-lang="en-US" level="3" l10n="U" oldref="9">Paragraph alignment</paragraph>
+<paragraph role="paragraph" id="par_id3156384" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SW:RADIOBUTTON:TP_OPTSHDWCRSR:RB_SHDWCRSFILLMARGIN">Sets the paragraph alignment when the direct cursor is used. Depending on where the mouse is clicked, the paragraph is formatted left aligned, centered or right aligned. The cursor before the mouse-click shows, by means of a triangle, which alignment is set. </ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_OPTSHDWCRSR:RB_SHDWCRSFILLINDENT" id="bm_id3151249" localize="false"/>
+<paragraph role="heading" id="hd_id3150387" xml-lang="en-US" level="3" l10n="U" oldref="11">Left paragraph margin</paragraph>
+<paragraph role="paragraph" id="par_id3151188" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="SW:RADIOBUTTON:TP_OPTSHDWCRSR:RB_SHDWCRSFILLINDENT">When the direct cursor is used, the left paragraph indent is set at the horizontal position where you click the direct cursor. The paragraph is left aligned. </ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_OPTSHDWCRSR:RB_SHDWCRSFILLTAB" id="bm_id3153966" localize="false"/>
+<paragraph role="heading" id="hd_id3145147" xml-lang="en-US" level="3" l10n="U" oldref="13">Tabs</paragraph>
+<paragraph role="paragraph" id="par_id3155174" xml-lang="en-US" l10n="U" oldref="14"><ahelp hid="SW:RADIOBUTTON:TP_OPTSHDWCRSR:RB_SHDWCRSFILLTAB">When the direct cursor is used, as many tabs as necessary are added in the new paragraph until the clicked position is reached.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:RadioButton:TP_OPTSHDWCRSR:RB_SHDWCRSFILLSPACE" id="bm_id3146917" localize="false"/>
+<paragraph role="heading" id="hd_id3166449" xml-lang="en-US" level="3" l10n="U" oldref="15">Tabs and Spaces</paragraph>
+<paragraph role="paragraph" id="par_id3155904" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="SW:RADIOBUTTON:TP_OPTSHDWCRSR:RB_SHDWCRSFILLSPACE">When the Direct Cursor is used, a corresponding number of tabs and spaces are inserted in the new paragraph as necessary until the clicked position is reached.</ahelp></paragraph>
+<paragraph role="note" id="par_id3149964" xml-lang="en-US" l10n="U" oldref="17">All insert options refer only to the current paragraph generated with the Direct Cursor.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_OPTSHDWCRSR:CB_ALLOW_IN_PROT" id="bm_id3151275" localize="false"/>
+<paragraph role="heading" id="hd_id3146134" xml-lang="en-US" level="3" l10n="U" oldref="24">Cursor in protected areas - Enabled</paragraph>
+<paragraph role="paragraph" id="par_id3147508" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SW:CHECKBOX:TP_OPTSHDWCRSR:CB_ALLOW_IN_PROT">Specifies that you can set the cursor in a protected area, but cannot make any changes.</ahelp></paragraph>
+</body>
+</helpdocument>

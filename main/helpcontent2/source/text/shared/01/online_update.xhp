@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+<meta>
+      <topic id="textshared01online_updatexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Check for Updates </title>
+         <filename>/text/shared/01/online_update.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id7647328"><bookmark_value>updates;checking manually</bookmark_value>
+      <bookmark_value>online updates;checking manually</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id315256" role="heading" level="1" l10n="CHG"><variable id="online_update"><link href="text/shared/01/online_update.xhp">Check for Updates</link>
+</variable></paragraph><comment>UFI: changed name of page, see i76016</comment><comment>Next time start download automatically</comment>
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:RID_SVXPAGE_ONLINEUPDATE:CB_AUTODOWNLOAD" id="bm_id1509140" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id3174230" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Mark to enable the automatic check for updates. Choose %PRODUCTNAME - Online Update in the Options dialog box to disable or enable this feature.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_SVXPAGE_ONLINEUPDATE:PB_CHANGEPATH" id="bm_id0116200901051320" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0116200901063996" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Click to select a folder to download the files.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/desktop:CheckBox:TP_UPDATE_CHECK:CB_UPDATE_CHECK" id="bm_id6052125" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id6797082" role="paragraph" l10n="CHG"><ahelp hid=".">You can check for updates manually or automatically.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id4218878" role="note" l10n="NEW">Checking for updates will also look for updates of all installed extensions.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id8132267" role="paragraph" l10n="NEW">Choose <item type="menuitem">Help - Check for Updates</item> to check manually.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id702230" role="paragraph" l10n="NEW">You can disable or enable the automatic check in <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - <link href="text/shared/optionen/online_update.xhp">Online Update</link>.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3422345" role="paragraph" l10n="NEW">If an update is available, an icon
+<image id="img_id3155415" src="extensions/source/update/ui/onlineupdate_16.png" width="0.4583in" height="0.1354in"><alt xml-lang="en-US" id="alt_id3155415">Icon</alt>
+	</image> on the menu bar will notify you of the update. Click the icon to open a dialog with more information.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id9313638" role="paragraph" l10n="CHG">You will see the <link href="text/shared/01/online_update_dialog.xhp">Check for Updates</link> dialog with some information about the online update of %PRODUCTNAME.</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9951780" role="paragraph" l10n="NEW">Enable an Internet connection for %PRODUCTNAME.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id6479384" role="paragraph" l10n="CHG">If you need a proxy server, enter the proxy settings in <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Internet - Proxy.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3639027" role="paragraph" l10n="NEW">Choose <item type="menuitem">Check for Updates</item> to check for the availability of a newer version of your office suite.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3722342" role="paragraph" l10n="NEW">If a newer version is available and %PRODUCTNAME is not set up for automatic downloading, then you can select any of the following actions:</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id5106662" role="paragraph" l10n="CHG">Download the new version.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id4931485" role="paragraph" l10n="CHG">Install the downloaded files.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id9168980" role="paragraph" l10n="NEW">Abort this check for updates for now.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id9766533" role="paragraph" l10n="NEW">If %PRODUCTNAME is configured to download the files automatically, the download starts immediately. A download continues even when you minimize the dialog.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id927152" role="paragraph" l10n="NEW">If automatic downloads are disabled, start the download manually.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6081728" role="paragraph" l10n="NEW">If no update was found, you can close the dialog.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9219641" role="warning" l10n="NEW">You need Administrator rights to update %PRODUCTNAME.</paragraph>
+   </body>
+</helpdocument>

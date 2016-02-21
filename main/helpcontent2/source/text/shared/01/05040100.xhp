@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textshared0105040100xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Organizer</title>
+         <filename>/text/shared/01/05040100.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="verwalten">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153383"><bookmark_value>organizing; styles</bookmark_value>
+         <bookmark_value>styles; organizing</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_MANAGE_STYLES" id="bm_id3145356" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153383" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/01/05040100.xhp" name="Organizer">Organizer</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147588" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_MANAGE_STYLES">Set the options for the selected style.</ahelp></paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/shared/00/00040500.xhp#seiteverwalten"/>
+      </section>
+<bookmark xml-lang="en-US" branch="hid/sfx2:Edit:TP_MANAGE_STYLES:ED_NAME" id="bm_id3804437" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3149525" role="heading" level="2" l10n="U" oldref="3">Name</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3160481" role="paragraph" l10n="U" oldref="4"><ahelp hid="SFX2:EDIT:TP_MANAGE_STYLES:ED_NAME">Displays the name of the selected style. If you are creating or modifying a custom style, enter a name for the style. You cannot change the name of a predefined style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:CheckBox:TP_MANAGE_STYLES:CB_AUTO" id="bm_id8273873" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153750" role="heading" level="2" l10n="U"
+                 oldref="13"><switchinline select="appl"><caseinline select="WRITER">AutoUpdate 
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3153749" role="paragraph" l10n="U" oldref="14"><switchinline select="appl"><caseinline select="WRITER"><ahelp hid="SFX2:CHECKBOX:TP_MANAGE_STYLES:CB_AUTO">Updates the style when you apply direct formatting to a paragraph using this style in your document. The formatting of all paragraphs using this style is automatically updated.</ahelp>
+</caseinline></switchinline></paragraph>
+      <paragraph xml-lang="en-US" id="par_id0107200910584081" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Updates the style when you apply direct formatting to a paragraph using this style in your document. The formatting of all paragraphs using this style is automatically updated.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:ListBox:TP_MANAGE_STYLES:LB_NEXT" id="bm_id1614123" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3155392" role="heading" level="2" l10n="U" oldref="5">Next Style</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155941" role="paragraph" l10n="U" oldref="6"><ahelp hid="SFX2:LISTBOX:TP_MANAGE_STYLES:LB_NEXT">Select an existing style that you want to follow the current style in your document. For paragraph styles, the next style is applied to the paragraph that is created when you press Enter. For page styles, the next style is applied when a new page is created.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:ListBox:TP_MANAGE_STYLES:LB_BASE" id="bm_id373241" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3163802" role="heading" level="2" l10n="U" oldref="7">Linked with</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3166461" role="paragraph" l10n="U" oldref="8"><ahelp hid="SFX2:LISTBOX:TP_MANAGE_STYLES:LB_BASE">Select an existing style that you want to base the new style on, or select none to define your own style.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:ListBox:TP_MANAGE_STYLES:LB_REGION" id="bm_id7994018" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3148474" role="heading" level="2" l10n="U" oldref="9">Category</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159269" role="paragraph" l10n="U" oldref="10"><ahelp hid="SFX2:LISTBOX:TP_MANAGE_STYLES:LB_REGION">Displays the category for the current style. If you are creating or modifying a new style, select 'Custom Style' from the list.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150771" role="note" l10n="U" oldref="17">You cannot change the category for a predefined style.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/sfx2:MultiLineEdit:TP_MANAGE_STYLES:ED_DESC" id="bm_id3153127" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153717" role="heading" level="2" l10n="U"
+                 oldref="11">Contains</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154306" role="paragraph" l10n="U" oldref="12"><ahelp hid="SFX2:MULTILINEEDIT:TP_MANAGE_STYLES:ED_DESC">Describes the relevant formatting used in the current style.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_idN1072D" role="heading" level="2" l10n="NEW">Assign Shortcut Key</paragraph>
+      <paragraph xml-lang="en-US" id="par_idN10731" role="paragraph" l10n="NEW">Opens the <emph>Tools - Customize - Keyboard</emph> tab page where you can assign a shortcut key to the current Style.</paragraph>
+      <section id="relatedtopics">
+         <paragraph xml-lang="en-US" id="par_id3145085" role="paragraph" l10n="C"><link href="text/swriter/01/05140000.xhp" name="Update Style">Update Style</link></paragraph>
+      </section>
+   </body>
+</helpdocument>

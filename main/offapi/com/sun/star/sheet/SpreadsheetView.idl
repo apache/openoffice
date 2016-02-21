@@ -1,0 +1,144 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sheet_SpreadsheetView_idl__
+#define __com_sun_star_sheet_SpreadsheetView_idl__
+
+#ifndef __com_sun_star_frame_Controller_idl__
+#include <com/sun/star/frame/Controller.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_SpreadsheetViewSettings_idl__
+#include <com/sun/star/sheet/SpreadsheetViewSettings.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_SpreadsheetViewPane_idl__
+#include <com/sun/star/sheet/SpreadsheetViewPane.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XSpreadsheetView_idl__
+#include <com/sun/star/sheet/XSpreadsheetView.idl>
+#endif
+
+#ifndef __com_sun_star_container_XIndexAccess_idl__
+#include <com/sun/star/container/XIndexAccess.idl>
+#endif
+
+#ifndef __com_sun_star_view_XSelectionSupplier_idl__
+#include <com/sun/star/view/XSelectionSupplier.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XViewSplitable_idl__
+#include <com/sun/star/sheet/XViewSplitable.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XViewFreezable_idl__
+#include <com/sun/star/sheet/XViewFreezable.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XRangeSelection_idl__
+#include <com/sun/star/sheet/XRangeSelection.idl>
+#endif
+
+#ifndef __com_sun_star_container_XEnumerationAccess_idl__
+#include <com/sun/star/container/XEnumerationAccess.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XActivationBroadcaster_idl__
+#include <com/sun/star/sheet/XActivationBroadcaster.idl>
+#endif
+
+#ifndef __com_sun_star_sheet_XEnhancedMouseClickBroadcaster_idl__
+#include <com/sun/star/sheet/XEnhancedMouseClickBroadcaster.idl>
+#endif
+
+//=============================================================================
+
+ module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** represents a view of a spreadsheet document.
+ */
+published service SpreadsheetView
+{
+	/** provides the integration into the framework.
+	 */
+	service com::sun::star::frame::Controller;
+
+	/** provides the view's settings.
+	 */
+	service com::sun::star::sheet::SpreadsheetViewSettings;
+
+	/** provides direct access to the view's active pane.
+	 */
+	service com::sun::star::sheet::SpreadsheetViewPane;
+
+	/** provides access to the active sheet in the view.
+	 */
+	interface com::sun::star::sheet::XSpreadsheetView;
+
+	/** provides access to the collection of view panes.
+	 */
+	interface com::sun::star::container::XIndexAccess;
+
+	/** creates an enumeration of view panes.
+
+		@see com::sun::star::sheet::SpreadsheetViewPanesEnumeration
+
+	 */
+	interface com::sun::star::container::XEnumerationAccess;
+
+	/** provides access to the view's selection.
+	<p>The selection in a spreadsheet view can be a
+		<type scope="com::sun::star::sheet">SheetCell</type>,
+		<type scope="com::sun::star::sheet">SheetCellRange</type>,
+		<type scope="com::sun::star::sheet">SheetCellRanges</type>,
+		<type scope="com::sun::star::drawing">Shape</type> or
+		<type scope="com::sun::star::drawing">Shapes</type> object.
+	</p>
+	 */
+	interface com::sun::star::view::XSelectionSupplier;
+
+	/** allows to split the view.
+	 */
+	interface com::sun::star::sheet::XViewSplitable;
+
+	/** allows to freeze columns and rows of the view.
+	 */
+	interface com::sun::star::sheet::XViewFreezable;
+
+	/** allows to let the user interactively select a cell range.
+	 */
+	interface com::sun::star::sheet::XRangeSelection;
+
+	[optional] interface com::sun::star::sheet::XEnhancedMouseClickBroadcaster;
+
+	[optional] interface com::sun::star::sheet::XActivationBroadcaster;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif
+

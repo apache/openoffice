@@ -1,0 +1,82 @@
+: # -*- perl -*-
+#**************************************************************
+#  
+#  Licensed to the Apache Software Foundation (ASF) under one
+#  or more contributor license agreements.  See the NOTICE file
+#  distributed with this work for additional information
+#  regarding copyright ownership.  The ASF licenses this file
+#  to you under the Apache License, Version 2.0 (the
+#  "License"); you may not use this file except in compliance
+#  with the License.  You may obtain a copy of the License at
+#  
+#    http://www.apache.org/licenses/LICENSE-2.0
+#  
+#  Unless required by applicable law or agreed to in writing,
+#  software distributed under the License is distributed on an
+#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+#  specific language governing permissions and limitations
+#  under the License.
+#  
+#**************************************************************
+
+# generates of the component schema list an ldap schema in slapd format
+
+eval 'exec perl -wS $0 ${1+"$@"}'
+	if 0;
+
+#creating the output file
+open(OUTFILE, ">$ARGV[0]") or die "can't open >$ARGV[0]";
+
+#open the makefile
+open(INFILE, "makefile.mk") or die "can't open makefile.mk";
+
+$inxcs=0;
+
+#search all schemas in the makefile except userprofile and format them as e.g org.openoffice.Inet
+while(<INFILE>) {
+	tr/\r\n//d;
+	
+	if (/^\s*XCSFILES/) {
+		$inxcs++;
+	}
+	next unless $inxcs;
+
+	if ($inxcs) {
+		
+		$inxcs=0 unless /\\$/;
+
+		next if (/^\s*XCSFILES/);
+		next if (/UserProfile/);
+
+		s/^\s+//;
+		s/\s*\\$//;
+		s/\.xcs.*$//;		
+		s#\$/#.#g;
+
+		push(@comp_names, $_);
+	}	
+}
+close(INFILE);
+
+# generate the schema in slapd format
+
+foreach (@comp_names) {	
+		
+	s#org.openoffice.#oo-#g;
+	s#\.#-#g;
+
+	$myLdapName=lc $_;	
+
+	print OUTFILE "attribute $myLdapName-attr $myLdapName-attr-oid cis single\n";
+	print OUTFILE "objectclass $myLdapName-class\n";
+	print OUTFILE "\toid\n";
+	print OUTFILE "\t\t$myLdapName-class-oid\n";
+	print OUTFILE "\tsuperior top\n";
+	print OUTFILE "\tallows\n";
+	print OUTFILE "\t$myLdapName-attr\n";
+}
+
+close(OUTFILE);
+
+exit 0;

@@ -1,0 +1,133 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#include <svx/dialogs.hrc>
+#include "ruler.hrc"
+
+Menu RID_SVXMN_RULER
+{
+	ItemList =
+	{
+		MenuItem
+		{
+			Identifier = ID_MM ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Millimeter" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_CM ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Centimeter" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_M ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Meter" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_KM ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Kilometer" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_INCH ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Inch" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_FOOT ;
+			Checkable = TRUE ;
+			/* ### ACHTUNG: Neuer Text in Resource? Fuﬂ : Fuò */
+			/* ### ACHTUNG: Neuer Text in Resource? Fuﬂ : Fuò */
+			Text [ en-US ] = "Foot" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_MILE ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Miles" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_POINT ;
+			Checkable = TRUE ;
+			Text [ en-US ] = "Point" ;
+		};
+		MenuItem
+		{
+			Identifier = ID_PICA ;
+			Checkable = TRUE ;
+            Text [ en-US ] = "Pica" ;
+        };
+	};
+};
+String RID_SVXSTR_RULER_TAB_LEFT
+{
+	Text [ en-US ] = "Left" ;
+};
+String RID_SVXSTR_RULER_TAB_RIGHT
+{
+	Text [ en-US ] = "Right" ;
+};
+String RID_SVXSTR_RULER_TAB_DECIMAL
+{
+	Text [ en-US ] = "Decimal" ;
+};
+String RID_SVXSTR_RULER_TAB_CENTER
+{
+	Text [ en-US ] = "Center" ;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

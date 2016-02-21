@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textsharedguidedata_tabledefinexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Table Design</title>
+         <filename>/text/shared/guide/data_tabledefine.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155448"><bookmark_value>tables in databases; creating in design view (manually)</bookmark_value>
+      <bookmark_value>designing; database tables</bookmark_value>
+      <bookmark_value>properties;fields in databases</bookmark_value>
+      <bookmark_value>fields;database tables</bookmark_value>
+      <bookmark_value>AutoValue (Base)</bookmark_value>
+      <bookmark_value>primary keys;design view</bookmark_value>
+</bookmark><comment>MW deleted "database tables;" and changed "tables in databases;"</comment><comment>UFI added AutoValue and Primary Key entry - i48831</comment><comment>MW changed Tables in databases, AutoValue and Primary Key entries</comment>
+<paragraph xml-lang="en-US" id="par_id3155448" role="paragraph" l10n="E" oldref="103"
+                 localize="false"/>
+      <paragraph xml-lang="en-US" id="hd_id3149798" role="heading" level="1" l10n="U"
+                 oldref="104"><variable id="data_tabledefine"><link href="text/shared/guide/data_tabledefine.xhp" name="Table Design">Table Design</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155535" role="paragraph" l10n="U" oldref="2">This section contains information about how to create a new database table in the <link href="text/shared/explorer/database/05010000.xhp" name="design view">design view</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154288" role="paragraph" l10n="CHG" oldref="3">Open the database file of the database where you want a new table. Click the <emph>Tables</emph> icon. Choose <emph>Create Table in Design View</emph> to create a new table.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3146798" role="paragraph" l10n="U" oldref="4">In the Design view, you can now create the fields for your table.</paragraph>
+      <list type="unordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153349" role="listitem" l10n="U" oldref="5">Enter new fields in rows from top to bottom. Click the <emph>Field Name</emph> cell and enter a field name for each data field.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id1595507" role="listitem" l10n="NEW">Include a "primary key" data field. Base needs a primary key to be able to edit the table contents. A primary key has unique contents for each data record. For example, insert a numerical field, right-click the first column, and choose <emph>Primary Key</emph> from the context menu. Set <emph>AutoValue</emph> to "Yes", so Base can automatically increment the value for each new record.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3150084" role="listitem" l10n="U" oldref="6">In the next cell to the right, define the <emph>Field Type</emph>. When you click in the cell, you can select a field type in the combo box.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id3154760" role="note" l10n="U" oldref="38">Each field can only accept data corresponding to the specified field type. For example, it is not possible to enter text in a number field. Memo fields in dBASE III format are references to internally-managed text files which can hold up to 64KB text.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3149456" role="paragraph" l10n="U" oldref="41">You can enter an optional <emph>Description</emph> for each field. The text of the description will appear as a tip on the column headings in the table view.</paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153379" role="heading" level="2" l10n="U"
+                 oldref="42">Field Properties</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148798" role="paragraph" l10n="U" oldref="45">Enter properties for each selected data field. Depending on the database type, some input facilities may not be available.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3144762" role="paragraph" l10n="U" oldref="46">In the <emph>Default value</emph> box, enter the default contents for every new record. This contents can be edited later.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150869" role="paragraph" l10n="U" oldref="47">In the <emph>Entry required</emph> box, specify whether or not the field may remain empty.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154908" role="paragraph" l10n="U" oldref="7">For the <emph>Length</emph> box, a combo box may be shown that provides the available choices.</paragraph>
+      <embed href="text/shared/00/00000004.xhp#related"/>
+      <embed href="text/shared/guide/database_main.xhp#database_main"/>
+   </body>
+</helpdocument>

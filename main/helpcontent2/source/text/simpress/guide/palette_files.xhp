@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguidepalette_filesxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Loading Color, Gradient, and Hatching Lists</title>
+<filename>/text/simpress/guide/palette_files.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2005-11-14T13:24:37">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154510"><bookmark_value>colors;loading lists</bookmark_value>
+<bookmark_value>gradients;loading lists</bookmark_value>
+<bookmark_value>hatching;loading lists</bookmark_value>
+<bookmark_value>loading;colors/gradients/hatchings</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3154510" xml-lang="en-US" level="1" l10n="U" oldref="48"><variable id="palette_files"><link href="text/simpress/guide/palette_files.xhp" name="Loading Color, Gradient, and Hatching Lists">Loading Color, Gradient, and Hatching Lists</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3156385" xml-lang="en-US" l10n="CHG" oldref="73">You can use lists to organize colors, gradients, or hatching patterns. $[officename] provides several lists that you can load and use in your document. If you want, you can add or delete elements from a list, or even create custom lists. </paragraph>
+<paragraph role="heading" id="hd_id3155961" xml-lang="en-US" level="3" l10n="U" oldref="74">To load a color list:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3154656" xml-lang="en-US" l10n="U" oldref="47">Choose <emph>Format - Area</emph>, and then click the <emph>Colors</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3152896" xml-lang="en-US" l10n="U" oldref="75">Click the <emph>Load Color List</emph> button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3151239" xml-lang="en-US" l10n="U" oldref="76">Locate the color list that you want to load, and then click <emph>Open</emph>. A color list file has the format [filename].soc.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3154762" xml-lang="en-US" l10n="U" oldref="77">To save a color list, click the <emph>Save Color List</emph> button, enter a filename, and then click <emph>Save</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149871"><bookmark_value>colors; default colors</bookmark_value>
+</bookmark>
+<paragraph role="paragraph" id="par_id3149871" xml-lang="en-US" l10n="U" oldref="71">The CMYK list is optimized for print colors, whereas the colors in the Web and the HTML lists are optimized for displays using a resolution of 256 colors.</paragraph>
+<paragraph role="heading" id="hd_id3150435" xml-lang="en-US" level="3" l10n="U" oldref="78">To load a gradient list:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3150393" xml-lang="en-US" l10n="U" oldref="79">Choose <emph>Format - Area</emph>, and then click the <emph>Gradients</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3146322" xml-lang="en-US" l10n="U" oldref="80">Click the <emph>Load Gradients List</emph> button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149946" xml-lang="en-US" l10n="U" oldref="81">Locate the gradient list that you want to load, and then click <emph>Open</emph>. A gradient list file has the format [filename].sog.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3150740" xml-lang="en-US" l10n="U" oldref="82">To save a gradients list, click the <emph>Save Gradients List</emph> button, enter a filename, and then click <emph>Save</emph>.</paragraph>
+<paragraph role="heading" id="hd_id3153036" xml-lang="en-US" level="3" l10n="U" oldref="83">To load a hatching list:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3155255" xml-lang="en-US" l10n="U" oldref="84">Choose <emph>Format - Area</emph>, and then click the <emph>Hatching</emph> tab.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153004" xml-lang="en-US" l10n="U" oldref="85">Click the <emph>Load Hatches List</emph> button.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3154505" xml-lang="en-US" l10n="U" oldref="86">Locate the hatches list that you want to load, and then click <emph>Open</emph>. A hatches list file has the format [filename].soh.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149881" xml-lang="en-US" l10n="U" oldref="87">To save a hatches list, click the <emph>Save Hatches List</emph> button, enter a filename, and then click <emph>Save</emph>.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<paragraph role="paragraph" id="par_id3155437" xml-lang="en-US" l10n="U" oldref="72"><link href="text/shared/01/05210000.xhp" name="Format - Area">Format - Area</link></paragraph>
+<embed href="text/simpress/guide/line_arrow_styles.xhp#line_arrow_styles"/>
+</body>
+</helpdocument>

@@ -1,0 +1,97 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_awt_XView_idl__ 
+#define __com_sun_star_awt_XView_idl__ 
+ 
+#ifndef __com_sun_star_uno_XInterface_idl__ 
+#include <com/sun/star/uno/XInterface.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_XGraphics_idl__ 
+#include <com/sun/star/awt/XGraphics.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_awt_Size_idl__ 
+#include <com/sun/star/awt/Size.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module awt {  
+ 
+//============================================================================= 
+ 
+/** makes it possible to attach an oputput device to the object.
+			
+	<p>This kind of object is called view-object.</p>
+ */
+published interface XView: com::sun::star::uno::XInterface
+{ 
+	//------------------------------------------------------------------------- 
+	 
+	/** sets the output device.
+	 */
+	boolean setGraphics( [in] com::sun::star::awt::XGraphics aDevice ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the output device which was set using the method 
+		<member>XView::setGraphics</member>.
+	 */
+	com::sun::star::awt::XGraphics getGraphics(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** returns the size of the object in device units.
+
+        <p>A device must be set before.</p>				 
+	 */
+	com::sun::star::awt::Size getSize(); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** draws the object at the specified position.
+						
+		<p>If the output should be clipped, the caller has to set the
+		clipping region.</p>
+	 */
+	[oneway] void draw( [in] long nX, 
+			 [in] long nY ); 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	/** sets the zoom factor.
+						
+		<p>The zoom factor only affects the content of the view, not the size.</p>
+	 */
+	[oneway] void setZoom( [in] float fZoomX, 
+			 [in] float fZoomY ); 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

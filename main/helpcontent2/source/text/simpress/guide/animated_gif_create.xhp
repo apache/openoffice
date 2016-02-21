@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsimpressguideanimated_gif_createxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Creating Animated GIF Images</title>
+<filename>/text/simpress/guide/animated_gif_create.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-09-30T11:41:13">FPE: Cleaned. Needs rework (see last para comments)
+DEDR: Reviewed</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153188"><bookmark_value>cross-fading; creating cross-fades</bookmark_value>
+<bookmark_value>GIF images; animating</bookmark_value>
+<bookmark_value>animated GIFs</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3153188" xml-lang="en-US" level="1" l10n="U" oldref="55"><variable id="animated_gif_create"><link href="text/simpress/guide/animated_gif_create.xhp" name="Creating Animated GIF Images">Creating Animated GIF Images</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3149377" xml-lang="en-US" l10n="U" oldref="3">You can animate drawing objects, text objects, and graphic objects (images) on your slides to make your presentation more interesting. $[officename] Impress provides you with a simple animation editor where you can create animation images (frames) by assembling objects from your slide. The animation effect is achieved by rotating through the static frames that you create.</paragraph>
+<paragraph role="tip" id="par_id3154657" xml-lang="en-US" l10n="U" oldref="57">If you create a bitmap animation (animated GIF), you can assign a delay time to each frame, and specify the number of times the animation is played.</paragraph>
+<paragraph role="heading" id="hd_id3150250" xml-lang="en-US" level="3" l10n="U" oldref="58">To create an animated GIF:</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="listitem" id="par_id3148703" xml-lang="en-US" l10n="CHG" oldref="59">Select an object or group of objects that you want to include in your animation and choose<emph> Insert - Animated Image</emph>.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3149601" xml-lang="en-US" l10n="U" oldref="60">Do one of the following:</paragraph>
+</listitem>
+</list>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3145086" xml-lang="en-US" l10n="U" oldref="97">Click the <emph>Apply Object </emph>button 
+<image id="img_id3148489" src="sd/res/get1obj.png" width="0.423cm" height="0.423cm"><alt id="alt_id3148489" xml-lang="en-US">Note Icon</alt>
+	</image> to add a single object or a group of objects to the current animation frame.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3150860" xml-lang="en-US" l10n="U" oldref="98">Click the <emph>Apply Objects Individually </emph>button 
+<image id="img_id3149355" src="sd/res/getallob.png" width="0.423cm" height="0.423cm"><alt id="alt_id3149355" xml-lang="en-US">Tip Icon</alt>
+	</image> to create a separate animation frame for each of the selected objects.</paragraph>
+</listitem>
+</list>
+<list type="ordered" startwith="3">
+<listitem>
+<paragraph role="listitem" id="par_id3148391" xml-lang="en-US" l10n="U" oldref="61">In the <emph>Animation Group </emph>area, select <emph>Bitmap object</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3154871" xml-lang="en-US" l10n="U" oldref="99">Use the animation timeline to specify the duration for displaying a frame and the number of times an animation sequence is presented (looping).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3154644" xml-lang="en-US" l10n="U" oldref="62">Enter a frame number in the <emph>Image Number</emph> box (left box).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3150756" xml-lang="en-US" l10n="U" oldref="63">Enter the number of seconds you want the frame to display in the <emph>Duration </emph>box (middle box).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3151182" xml-lang="en-US" l10n="CHG" oldref="64">Repeat the last two steps for each frame in your animation.</paragraph>
+<paragraph role="tip" id="par_id3151177" xml-lang="en-US" l10n="U" oldref="100">You can preview your animation by using the controls to the left of the <emph>Image Number </emph>box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3154939" xml-lang="en-US" l10n="U" oldref="65">Select the number of times you want the animation sequence to repeat in the <emph>Loop count </emph>box (right box).</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3145421" xml-lang="en-US" l10n="U" oldref="88">Select an alignment option for the objects in the <emph>Alignment</emph> box.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="101">Click <emph>Create</emph>.</paragraph>
+</listitem>
+</list>
+<section id="relatedtopics">
+<embed href="text/simpress/guide/animated_gif_save.xhp#animated_gif_save"/>
+</section>
+</body>
+</helpdocument>

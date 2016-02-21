@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+<topic id="textshared0106130000xml" indexer="include">
+<title id="tit" xml-lang="en-US">Macro</title>
+<filename>/text/shared/01/06130000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/.uno:MacroDialog" id="bm_id870519" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:MacroDialog" id="bm_id3149948" localize="false"/>
+<paragraph role="heading" id="hd_id3157552" xml-lang="en-US" level="1" l10n="CHG" oldref="1">Macro</paragraph>
+<paragraph role="paragraph" id="par_id3148765" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="makro"><ahelp hid=".uno:MacroDialog">Opens a dialog to organize macros.</ahelp>
+</variable><comment>UFI: it is not the dialog to run a macro</comment></paragraph>
+<section id="howtoget">
+<embed href="text/shared/00/00000406.xhp#makro"/>
+</section>
+<embed href="text/shared/guide/macro_recording.xhp#macro_recording"/>
+<bookmark xml-lang="en-US" branch="hid/basctl:Edit:RID_MACROCHOOSER:RID_ED_MACRONAME" id="bm_id3155351" localize="false"/>
+<paragraph role="heading" id="par_id3154863" xml-lang="en-US" level="2" l10n="U" oldref="3">Macro name</paragraph>
+<paragraph role="paragraph" id="par_id3150040" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="BASCTL_EDIT_RID_MACROCHOOSER_RID_ED_MACRONAME">Displays the name of the selected macro. To create or to change the name of a macro, enter a name here.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_MACROS" id="bm_id3149283" localize="false"/>
+<paragraph role="paragraph" id="par_id3150902" xml-lang="en-US" l10n="CHG" oldref="6"><ahelp hid="." visibility="hidden">Lists the macros that are contained in the module selected in the <emph>Macro from </emph>list.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10642" xml-lang="en-US" l10n="NEW"><comment>UFI: Important: do not add Help IDS for SELECTOR_COMMANDS and SELECTOR_CATEGORIES, because they are reused for Customize dialog and will lead to display errors there if assigned. See #i51556#</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_LIBS" id="bm_id3152867" localize="false"/>
+<paragraph role="heading" id="hd_id3153750" xml-lang="en-US" level="2" l10n="U" oldref="7">Macro from / Save macro in</paragraph>
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="HID_BASICIDE_LIBS">Lists the libraries and the modules where you can open or save your macros. To save a macro with a particular document, open the document, and then open this dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_RUN" id="bm_id3147577" localize="false"/>
+<paragraph role="heading" id="hd_id3147373" xml-lang="en-US" level="2" l10n="U" oldref="11">Run / Save<comment>unfortunately both have the same Help ID</comment></paragraph>
+<paragraph role="paragraph" id="par_id3153748" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_RUN">Runs or saves the current macro.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_ASSIGN" id="bm_id3150694" localize="false"/>
+<paragraph role="heading" id="hd_id3149388" xml-lang="en-US" level="2" l10n="U" oldref="15">Assign</paragraph>
+<paragraph role="paragraph" id="par_id3153577" xml-lang="en-US" l10n="CHG" oldref="16"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ASSIGN">Opens the <link href="text/shared/01/06140000.xhp" name="Customize">Customize</link> dialog, where you can assign the selected macro to a menu command, a toolbar, or an event.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_EDIT" id="bm_id3147276" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_DLGS:RID_PB_EDIT" id="bm_id5118869" localize="false"/>
+<paragraph role="heading" id="hd_id3153662" xml-lang="en-US" level="2" l10n="U" oldref="17">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="CHG" oldref="18"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_EDIT">Starts the $[officename] Basic editor and opens the selected macro or dialog for editing.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_DEL" id="bm_id3155390" localize="false"/>
+<paragraph role="heading" id="hd_id3150772" xml-lang="en-US" level="2" l10n="U" oldref="19">New / Delete</paragraph>
+<paragraph role="paragraph" id="par_id3153257" xml-lang="en-US" l10n="CHG" oldref="61"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_DEL">Creates a new macro, or deletes the selected macro.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3154514" xml-lang="en-US" l10n="CHG" oldref="20">To create a new macro, select the "Standard" module in the <emph>Macro from</emph> list, and then click <emph>New</emph>.</paragraph>
+<paragraph role="paragraph" id="par_id3148474" xml-lang="en-US" l10n="U" oldref="21">To delete a macro, select it, and then click <emph>Delete</emph>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_NEWLIB" id="bm_id3152910" localize="false"/>
+<paragraph role="heading" id="hd_id3159342" xml-lang="en-US" level="2" l10n="U" oldref="64">New Library</paragraph>
+<paragraph role="paragraph" id="par_id3154897" xml-lang="en-US" l10n="U" oldref="65"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_NEWLIB">Saves the recorded macro in a new library.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_NEWMOD" id="bm_id3155262" localize="false"/>
+<paragraph role="heading" id="hd_id3154173" xml-lang="en-US" level="2" l10n="U" oldref="66">New Module</paragraph>
+<paragraph role="paragraph" id="par_id3155628" xml-lang="en-US" l10n="U" oldref="67"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_NEWMOD">Saves the recorded macro in a new module.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_MACROCHOOSER:RID_PB_ORG" id="bm_id3150118" localize="false"/>
+<paragraph role="heading" id="hd_id3153665" xml-lang="en-US" level="2" l10n="U" oldref="22">Organizer</paragraph>
+<paragraph role="paragraph" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ORG">Opens the <emph>Macro Organizer</emph> dialog, where you can add, edit, or delete existing macro modules, dialogs, and libraries.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3145609" xml-lang="en-US" level="3" l10n="CHG" oldref="24">Module/Dialog tab page</paragraph>
+<paragraph role="paragraph" id="par_id3155923" xml-lang="en-US" l10n="CHG" oldref="25"><ahelp hid="BASCTL_PUSHBUTTON_RID_MACROCHOOSER_RID_PB_ORG">Lets you manage modules or dialog boxes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_MODULES_TREE" id="bm_id3147304" localize="false"/>
+<paragraph role="heading" id="hd_id3148944" xml-lang="en-US" level="3" l10n="U" oldref="29">Module/Dialog</paragraph>
+<paragraph role="paragraph" id="par_id3145068" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_BASICIDE_MODULES_TREE">Lists the existing macros and dialogs.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_MODULS:RID_PB_EDIT" id="bm_id3153779" localize="false"/>
+<paragraph role="heading" id="hd_id3150398" xml-lang="en-US" level="3" l10n="U" oldref="34">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3150543" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_EDIT">Opens the selected macro or dialog for editing.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#schliessen"/>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_MODULS:RID_PB_NEWMOD" id="bm_id3156080" localize="false"/>
+<paragraph role="heading" id="hd_id3151210" xml-lang="en-US" level="3" l10n="CHG" oldref="36">New<comment>UFI: i40875</comment></paragraph>
+<paragraph role="paragraph" id="par_id3149291" xml-lang="en-US" l10n="CHG" oldref="37"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWMOD">Opens the editor and creates a new module.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_MODULS:RID_PB_NEWDLG" id="bm_id3150496" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_DLGS:RID_PB_NEWDLG" id="bm_id5659047" localize="false"/>
+<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="3" l10n="CHG" oldref="39">New</paragraph>
+<paragraph role="paragraph" id="par_id3150767" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_NEWDLG">Opens the editor and creates a new dialog.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen"/>
+<paragraph role="heading" id="hd_id3151177" xml-lang="en-US" level="3" l10n="U" oldref="42">Libraries tab page</paragraph><comment>the three tab pages have no Help button, so no need to have three help pages</comment>
+<paragraph role="paragraph" id="par_id3156281" xml-lang="en-US" l10n="U" oldref="43"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_MODULS_RID_PB_DELETE">Lets you manage the macro libraries for the current application and any open documents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:ListBox:RID_TP_LIBS:RID_LB_BASICS" id="bm_id3150650" localize="false"/>
+<paragraph role="heading" id="hd_id3144760" xml-lang="en-US" level="3" l10n="CHG" oldref="44">Location</paragraph>
+<paragraph role="paragraph" id="par_id3150290" xml-lang="en-US" l10n="U" oldref="45"><ahelp hid="BASCTL_LISTBOX_RID_TP_LIBS_RID_LB_BASICS">Select the application or the document containing the macro libraries that you want to organize.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/BASCTL_HID_BASICIDE_LIBS_TREE" id="bm_id3154910" localize="false"/>
+<paragraph role="heading" id="hd_id3159149" xml-lang="en-US" level="3" l10n="U" oldref="46">Library</paragraph>
+<paragraph role="paragraph" id="par_id3147500" xml-lang="en-US" l10n="U" oldref="47"><ahelp hid="HID_BASICIDE_LIBS_TREE">Lists the existing macro libraries for the current application and any open documents.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_LIBS:RID_PB_EDIT" id="bm_id3156212" localize="false"/>
+<paragraph role="heading" id="hd_id3157320" xml-lang="en-US" level="3" l10n="U" oldref="48">Edit</paragraph>
+<paragraph role="paragraph" id="par_id3150868" xml-lang="en-US" l10n="U" oldref="49"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_EDIT">Opens the $[officename] Basic editor so that you can modify the selected library.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#schliessen"/>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_LIBS:RID_PB_PASSWORD" id="bm_id3148561" localize="false"/>
+<paragraph role="heading" id="hd_id3153104" xml-lang="en-US" level="3" l10n="U" oldref="50">Password</paragraph>
+<paragraph role="paragraph" id="par_id3154299" xml-lang="en-US" l10n="U" oldref="51"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_PASSWORD">Assigns or edits the <link href="text/shared/01/06130100.xhp" name="password">password</link> for the selected library.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_LIBS:RID_PB_NEWLIB" id="bm_id3153056" localize="false"/>
+<paragraph role="heading" id="hd_id3147502" xml-lang="en-US" level="3" l10n="U" oldref="52">New</paragraph>
+<paragraph role="paragraph" id="par_id3149560" xml-lang="en-US" l10n="U" oldref="53"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_NEWLIB">Creates a new library.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:Edit:RID_DLG_NEWLIB:RID_ED_LIBNAME" id="bm_id3154985" localize="false"/>
+<paragraph role="heading" id="hd_id3153770" xml-lang="en-US" level="3" l10n="U" oldref="56">Name</paragraph>
+<paragraph role="paragraph" id="par_id3153726" xml-lang="en-US" l10n="U" oldref="57"><ahelp hid="BASCTL_EDIT_RID_DLG_NEWLIB_RID_ED_LIBNAME">Enter a name for the new library or module.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/basctl:PushButton:RID_TP_LIBS:RID_PB_APPEND" id="bm_id3153951" localize="false"/>
+<paragraph role="heading" id="hd_id3154693" xml-lang="en-US" level="3" l10n="CHG" oldref="54">Import<comment>changed in #i64102</comment></paragraph>
+<paragraph role="paragraph" id="par_id3147441" xml-lang="en-US" l10n="U" oldref="55"><ahelp hid="BASCTL_PUSHBUTTON_RID_TP_LIBS_RID_PB_APPEND">Locate that $[officename] Basic library that you want to add to the current list, and then click Open.</ahelp></paragraph>
+<embed href="text/shared/00/00000001.xhp#loeschen"/>
+<paragraph role="paragraph" id="par_idN10A39" xml-lang="en-US" l10n="NEW"><variable id="script">Scripts 
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN109BB" xml-lang="en-US" l10n="NEW">To open the BeanShell Macros dialog box, choose Tools - Macros - Organize Macros - BeanShell. To open the JavaScript dialog box, choose Tools - Macros - Organize Macros - JavaScript.</paragraph>
+<paragraph role="heading" id="hd_id6963408" xml-lang="en-US" level="2" l10n="NEW">Export</paragraph>
+<paragraph role="paragraph" id="par_id8968169" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Opens a dialog to export the selected library either as an extension or as a Basic library.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_SCRIPTSBOX" id="bm_id7982421" localize="false"/>
+<paragraph role="heading" id="par_idN109BE" xml-lang="en-US" level="2" l10n="NEW">Macros</paragraph>
+<paragraph role="paragraph" id="par_idN109C2" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Select a macro or script from "user", "share", or an open document. To view the available macros or scripts, double-click an entry.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_DLG_SCRIPTORGANIZER:SF_PB_RUN" id="bm_id8628498" localize="false"/>
+<paragraph role="heading" id="par_idN109CD" xml-lang="en-US" level="3" l10n="NEW">Run</paragraph>
+<paragraph role="paragraph" id="par_idN109D1" xml-lang="en-US" l10n="NEW"><ahelp hid="1241731587">To run a script, select a script in the list, and then click Run.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_DLG_SCRIPTORGANIZER:SF_PB_CREATE" id="bm_id6405835" localize="false"/>
+<paragraph role="heading" id="par_idN109E8" xml-lang="en-US" level="3" l10n="NEW">Create</paragraph>
+<paragraph role="paragraph" id="par_idN109EC" xml-lang="en-US" l10n="NEW"><ahelp hid="1241731589">Creates a new script.</ahelp> The default script editor opens after you enter a name for the script.</paragraph>
+<!-- removed HID svx:Edit:DLG_NEWLIB:ED_LIBNAME -->
+<paragraph role="paragraph" id="par_idN10A04" xml-lang="en-US" l10n="NEW"><ahelp hid="svx:Edit:DLG_NEWLIB:ED_LIBNAME">Enter a name for the script.</ahelp><comment>UFI: called from Create and from Rename</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_DLG_SCRIPTORGANIZER:SF_PB_EDIT" id="bm_id1055330" localize="false"/>
+<paragraph role="heading" id="par_idN10A2F" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN10A33" xml-lang="en-US" l10n="NEW"><ahelp hid="1241731590">Opens the default script editor for your operating system.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_DLG_SCRIPTORGANIZER:SF_PB_RENAME" id="bm_id9843745.00000001" localize="false"/>
+<paragraph role="heading" id="par_idN10A4B" xml-lang="en-US" level="3" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN10A4F" xml-lang="en-US" l10n="NEW"><ahelp hid="1241731591">Opens a dialog where you can change the name of the selected script.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:RID_DLG_SCRIPTORGANIZER:SF_PB_DEL" id="bm_id4198736" localize="false"/>
+<paragraph role="heading" id="par_idN10A66" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN10A6A" xml-lang="en-US" l10n="NEW"><ahelp hid="1241731592">Prompts you to delete the selected script.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN10AE5" xml-lang="en-US" l10n="NEW">The Macro Selector dialog contains two list boxes, namely the Library list box and the Macro name list box.</paragraph>
+<paragraph role="heading" id="par_idN10AFC" xml-lang="en-US" level="3" l10n="NEW">Library</paragraph>
+<paragraph role="paragraph" id="par_idN10B00" xml-lang="en-US" l10n="NEW">Select a macro or script from "user", "share", or an open document. To view the contents of a library, double-click an entry in the list.</paragraph>
+<paragraph role="heading" id="par_idN10B17" xml-lang="en-US" level="3" l10n="NEW">Macro name</paragraph>
+<paragraph role="paragraph" id="par_idN10B1B" xml-lang="en-US" l10n="NEW">Click a script, and then click a command button.</paragraph>
+<section id="relatedtopics">
+<paragraph role="paragraph" id="par_id3153138" xml-lang="en-US" l10n="C"><link href="text/shared/main0600.xhp" name="Macro programming in $[officename]">Macro programming in $[officename]</link></paragraph>
+<embed href="text/shared/guide/scripting.xhp#scripting"/>
+</section>
+</body>
+</helpdocument>

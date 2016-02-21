@@ -1,0 +1,79 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _SVX_OPTJAVA_HRC
+#define _SVX_OPTJAVA_HRC
+
+// defines ---------------------------------------------------------------
+
+// class SvxJavaOptionsPage ----------------------------------------------
+
+#define FL_JAVA				10
+#define CB_JAVA_ENABLE		11
+#define FT_JAVA_FOUND		12
+#define LB_JAVA				13
+#define FT_JAVA_PATH		14
+
+#define PB_ADD				20
+#define PB_PARAMETER		21
+#define PB_CLASSPATH		22
+
+#define STR_INSTALLED_IN	30
+#define STR_ACCESSIBILITY	31
+#define STR_ADDDLGTEXT		32
+
+#define STR_HEADER_VENDOR	40
+#define STR_HEADER_VERSION	41
+#define STR_HEADER_FEATURES	42
+
+// class SvxJavaParameterDlg ---------------------------------------------
+
+#define FT_PARAMETER		10
+#define ED_PARAMETER		11
+#define PB_ASSIGN			12
+
+#define FT_ASSIGNED			20
+#define LB_ASSIGNED			21
+#define FT_EXAMPLE			22
+#define PB_REMOVE			23
+
+#define FL_BUTTONS			30
+#define PB_PARAMETER_OK		31
+#define PB_PARAMETER_ESC	32
+#define PB_PARAMETER_HLP	33
+
+// class SvxJavaClassPathDlg ---------------------------------------------
+
+#define FT_PATH				10
+#define LB_PATH				11
+
+#define PB_ADDARCHIVE		20
+#define PB_ADDPATH			21
+#define PB_REMOVE_PATH		22
+
+#define FL_PATH_BUTTONS		30
+#define PB_PATH_OK			31
+#define PB_PATH_ESC			32
+#define PB_PATH_HLP			33
+
+#endif // #ifndef _SVX_OPTJAVA_HRC
+

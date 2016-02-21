@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasedabawiz02textxml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Text File Connection</title>
+<filename>/text/shared/explorer/database/dabawiz02text.xhp</filename>
+</topic>
+<history>
+<created date="2004-07-28T15:03:00">UFI: Database Wizard text file</created>
+<lastedited date="2007-03-01T12:29:25">YJ: checked</lastedited>
+</history>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id2517166"><bookmark_value>tables in databases;importing text formats (Base)</bookmark_value>
+<bookmark_value>text databases (Base)</bookmark_value>
+</bookmark><comment>mw changed "database tables;" to "tables in databases;"</comment>
+<paragraph role="heading" id="par_idN1054F" xml-lang="en-US" level="1" l10n="NEW">Text File Connection</paragraph>
+<paragraph role="paragraph" id="par_idN10553" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Specifies the settings for importing a database in text format.</ahelp><comment>UFI: most text copied without editing from shared\explorer\database\11040000</comment></paragraph>
+<paragraph role="paragraph" id="par_idN10568" xml-lang="en-US" l10n="NEW">In a text format database, data is stored in an unformatted ASCII file, where each record comprises a row. The data fields are divided by separators. Text in the data fields is divided by quotation marks.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_ET_LOCATIONTEXTFILE" id="bm_id1533860" localize="false"/>
+<paragraph role="heading" id="par_idN1056B" xml-lang="en-US" level="2" l10n="NEW">Path to text files</paragraph>
+<paragraph role="paragraph" id="par_idN1056F" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Enter the path to the text file or files. If you just want one text file, you can use any extension of the file name. If you enter a folder name, the text files in that folder must have the extension *.csv to be recognized as files of the text database.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_PB_LOCATIONTEXTFILE" id="bm_id1796624" localize="false"/>
+<paragraph role="heading" id="par_idN10572" xml-lang="en-US" level="2" l10n="NEW">Browse</paragraph>
+<paragraph role="paragraph" id="par_idN10576" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to open a file selection dialog.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_RB_ACCESSTXTFILES" id="bm_id3230994" localize="false"/>
+<paragraph role="heading" id="par_idN10616" xml-lang="en-US" level="2" l10n="NEW">Plain text files (*.txt)</paragraph>
+<paragraph role="paragraph" id="par_idN1061A" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to access txt files.</ahelp><comment>UFI: sorry, this is not in the spec.</comment></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_RB_ACCESSCSVFILES" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN10643" xml-lang="en-US" level="2" l10n="NEW">'Comma separated value' files (*.csv)</paragraph>
+<paragraph role="paragraph" id="par_idN10647" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to access csv files.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_RB_ACCESSOTHERFILES" id="bm_id2862636" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_PAGE_DBWIZARD_TEXT_ET_OWNEXTENSION" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN10666" xml-lang="en-US" level="2" l10n="NEW">Custom</paragraph>
+<paragraph role="paragraph" id="par_idN1066A" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Click to access custom files. Enter the extension in the text box.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_FIELD_SEPARATOR" id="bm_id3149578" localize="false"/>
+<paragraph role="heading" id="par_idN10581" xml-lang="en-US" level="2" l10n="NEW">Field separator</paragraph>
+<paragraph role="paragraph" id="par_idN10585" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_FIELD_SEPARATOR">Enter or select the character that separates data fields in the text file.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_TEXT_SEPARATOR" id="bm_id3149795" localize="false"/>
+<paragraph role="heading" id="par_idN1059C" xml-lang="en-US" level="2" l10n="NEW">Text separator</paragraph>
+<paragraph role="paragraph" id="par_idN105A0" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_TEXT_SEPARATOR">Enter or select the character that identifies a text field in the text file.</ahelp> You cannot use the same character as the field separator.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_DECIMAL_SEPARATOR" id="bm_id3151385" localize="false"/>
+<paragraph role="heading" id="par_idN105B8" xml-lang="en-US" level="2" l10n="NEW">Decimal separator</paragraph>
+<paragraph role="paragraph" id="par_idN105BC" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_DECIMAL_SEPARATOR">Enter or select the character that is used as a decimal separator in the text file, for example, a period (0.5) or a comma (0,5).</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_DSADMIN_THOUSANDS_SEPARATOR" id="bm_id3153897" localize="false"/>
+<paragraph role="heading" id="par_idN105D3" xml-lang="en-US" level="2" l10n="NEW">Thousands separator</paragraph>
+<paragraph role="paragraph" id="par_idN105D7" xml-lang="en-US" l10n="NEW"><ahelp hid="HID_DSADMIN_THOUSANDS_SEPARATOR">Enter or select the character that is used as a thousands separator in the text file, for example a comma (1,000), or a period (1.000).</ahelp></paragraph>
+<paragraph role="paragraph" id="par_idN105E6" xml-lang="en-US" l10n="NEW"><link href="text/shared/explorer/database/dabawiz00.xhp">Database Wizard</link></paragraph>
+</body>
+</helpdocument>

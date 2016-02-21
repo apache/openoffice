@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedguidedata_search2xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Searching With a Form Filter</title>
+<filename>/text/shared/guide/data_search2.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id8772545"><bookmark_value>form filters</bookmark_value>
+<bookmark_value>databases;form filters</bookmark_value>
+<bookmark_value>searching; form filters</bookmark_value>
+<bookmark_value>removing;form filters</bookmark_value>
+<bookmark_value>filtering; data in forms</bookmark_value>
+<bookmark_value>data;filtering in forms</bookmark_value>
+<bookmark_value>forms; filtering data</bookmark_value>
+<bookmark_value>data, see also values</bookmark_value>
+</bookmark><comment>MW inserted a cross-reference</comment><paragraph role="heading" id="hd_id3156042" xml-lang="en-US" level="1" l10n="U" oldref="5"><variable id="data_search2"><link href="text/shared/guide/data_search2.xhp" name="Searching With a Form Filter">Searching With a Form Filter</link>
+</variable></paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id3149182" xml-lang="en-US" l10n="CHG" oldref="17">Open a form document that contains database fields.</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="U" oldref="18">As an example, open an empty text document and press F4. Open the bibliography database table <emph>biblio</emph> in the data source view. While pressing Shift+<switchinline select="sys"><caseinline select="MAC">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>, drag a few column headers into the document so that the form fields are created.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3150984" xml-lang="en-US" l10n="CHG" oldref="19">On the <emph>Form Controls</emph> toolbar, click the <emph>Design Mode On/Off</emph> icon 
+<image id="img_id3147618" src="res/commandimagelist/sc_switchcontroldesignmode.png" width="0.222inch" height="0.222inch"><alt id="alt_id3147618" xml-lang="en-US">Icon</alt>
+	</image> to turn off the design mode.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3148672" xml-lang="en-US" l10n="CHG" oldref="6">On the <emph>Form Navigation</emph> toolbar, click the <emph>Form-Based Filters</emph> icon 
+<image id="img_id3149807" src="res/commandimagelist/sc_formfilter.png" width="0.222inch" height="0.222inch"><alt id="alt_id3149807" xml-lang="en-US">Icon</alt>
+	</image>. The current document is displayed with its form controls as an empty edit mask. The <emph>Form Filter </emph>toolbar appears.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3149666" xml-lang="en-US" l10n="CHG" oldref="7">Enter the filter conditions into one or several fields. Note that if you enter filter conditions into several fields, all of the entered conditions must match (Boolean AND).</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="8">More information about wildcards and operators can be found in <link href="text/shared/explorer/database/02010100.xhp" name="Query Design">Query Design</link>. </paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilterExecute" id="bm_id9819688" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilterExecute" id="bm_id3148617" localize="false"/><paragraph role="paragraph" id="par_id3152462" xml-lang="en-US" l10n="CHG" oldref="9"><ahelp hid=".uno:FormFilterExecute">If you click the <emph>Apply Form-Based Filter</emph> icon on the <emph>Form Filter</emph> toolbar, the filter will be applied.</ahelp> You see the <emph>Form Navigation</emph> toolbar and can browse through the found records.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilterExit" id="bm_id2865336" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormFilterExit" id="bm_id3149959" localize="false"/><paragraph role="paragraph" id="par_id3145273" xml-lang="en-US" l10n="CHG" oldref="10"><ahelp hid=".uno:FormFilterExit">If you click on the <emph>Close</emph> button on the <emph>Form Filter</emph> toolbar, the form is displayed without a filter.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150114" xml-lang="en-US" l10n="CHG" oldref="11">Click the <link href="text/shared/02/12120000.xhp" name="Apply Filter"><emph>Apply Filter</emph></link> icon 
+<image id="img_id3144764" src="res/commandimagelist/sc_datafilterstandardfilter.png" width="0.222inch" height="0.222inch"><alt id="alt_id3144764" xml-lang="en-US">Icon</alt>
+	</image> on the <emph>Form Navigation</emph> toolbar to change to the filtered view.</paragraph>
+<paragraph role="paragraph" id="par_id3146898" xml-lang="en-US" l10n="U" oldref="12">The filter that has been set can be removed by clicking <link href="text/shared/02/12040000.xhp" name="Remove Filter/Sort"><emph>Remove Filter/Sort</emph></link> icon 
+<image id="img_id3151318" src="res/commandimagelist/sc_removefiltersort.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151318" xml-lang="en-US">Icon</alt>
+	</image>.</paragraph>
+<embed href="text/shared/00/00000004.xhp#related"/>
+<embed href="text/shared/guide/filternavigator.xhp#filternavigator"/>
+<embed href="text/shared/guide/data_search.xhp#data_search"/>
+</body>
+</helpdocument>

@@ -1,0 +1,242 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+// MARKER(update_precomp.py): autogen include statement, do not remove
+#include "precompiled_svgio.hxx"
+
+#include <svgio/svgreader/svgstylenode.hxx>
+#include <svgio/svgreader/svgdocument.hxx>
+
+//////////////////////////////////////////////////////////////////////////////
+
+namespace svgio
+{
+    namespace svgreader
+    {
+        SvgStyleNode::SvgStyleNode(
+            SvgDocument& rDocument,
+            SvgNode* pParent)
+        :   SvgNode(SVGTokenStyle, rDocument, pParent),
+            maSvgStyleAttributes(),
+            mbTextCss(false)
+        {
+        }
+
+        SvgStyleNode::~SvgStyleNode()
+        {
+            while(!maSvgStyleAttributes.empty())
+            {
+                delete *(maSvgStyleAttributes.end() - 1);
+                maSvgStyleAttributes.pop_back();
+            }
+        }
+
+        // #125258# no parent when we are a CssStyle holder to break potential loops because
+        // when using CssStyles we jump uncontrolled inside the node tree hierarchy
+        bool SvgStyleNode::supportsParentStyle() const
+        {
+            if(isTextCss())
+            {
+                return false;
+            }
+
+            // call parent
+            return SvgNode::supportsParentStyle();
+        }
+
+        void SvgStyleNode::parseAttribute(const rtl::OUString& rTokenName, SVGToken aSVGToken, const rtl::OUString& aContent)
+        {
+            // call parent
+            SvgNode::parseAttribute(rTokenName, aSVGToken, aContent);
+
+            // parse own
+            switch(aSVGToken)
+            {
+                case SVGTokenType:
+                {
+                    if(aContent.getLength())
+                    {
+                        static rtl::OUString aStrTextCss(rtl::OUString::createFromAscii("text/css"));
+
+                        if(aContent.match(aStrTextCss))
+                        {
+                            setTextCss(true);
+                        }
+                    }
+                    break;
+                }
+                default:
+                {
+                    break;
+                }
+            }
+        }
+
+        void SvgStyleNode::addCssStyleSheet(const rtl::OUString& aSelectors, const SvgStyleAttributes& rNewStyle)
+        {
+            // aSelectors: CssStyle selectors, any combination, no comma separations, no spaces at start/end
+            // rNewStyle: the already preapared style to register on that name
+            if(aSelectors.getLength())
+            {
+                std::vector< rtl::OUString > aSelectorParts;
+                const sal_Int32 nLen(aSelectors.getLength());
+                sal_Int32 nPos(0);
+                rtl::OUStringBuffer aToken;
+
+                // split into single tokens (currently only space separator)
+                while(nPos < nLen)
+                {
+                    const sal_Int32 nInitPos(nPos);
+                    copyToLimiter(aSelectors, sal_Unicode(' '), nPos, aToken, nLen);
+                    skip_char(aSelectors, sal_Unicode(' '), nPos, nLen);
+                    const rtl::OUString aSelectorPart(aToken.makeStringAndClear().trim());
+
+                    if(aSelectorPart.getLength())
+                    {
+                        aSelectorParts.push_back(aSelectorPart);
+                    }
+
+                    if(nInitPos == nPos)
+                    {
+                        OSL_ENSURE(false, "Could not interpret on current position (!)");
+                        nPos++;
+                    }
+                }
+
+                if(aSelectorParts.size())
+                {
+                    rtl::OUString aConcatenatedSelector;
+
+                    // re-combine without spaces, create a unique name (for now)
+                    for(sal_uInt32 a(0); a < aSelectorParts.size(); a++)
+                    {
+                        aConcatenatedSelector += aSelectorParts[a];
+                    }
+
+                    // CssStyles in SVG are currently not completely supported; the current idea for
+                    // supporting the needed minimal set is to register CssStyles associated to a string
+                    // which is just the space-char cleaned, concatenated Selectors. The part to 'match'
+                    // these is in fillCssStyleVectorUsingHierarchyAndSelectors. There, the same string is
+                    // built up using the priorities of local CssStyle, Id, Class and other info combined
+                    // with the existing hierarchy. This creates a specificity- and priority-sorted local
+                    // list for each node which is then chained using get/setCssStyleParent.
+                    // The current solution is capable of solving space-separated selectors which can be
+                    // mixed between Id, Class and type specifiers.
+                    // When CssStyles need more specific solving, the start point is here; remember the
+                    // needed infos not in maIdStyleTokenMapperList at the document, but select evtl.
+                    // more specific infos there in a class capable of handling more complex matchings.
+                    // Additionally fillCssStyleVector (or the mechanism above that when a linked list of
+                    // SvgStyleAttributes will not do it) will have to be adapted to make use of it.
+
+                    // register new style at document for (evtl. concatenated) stylename
+                    const_cast< SvgDocument& >(getDocument()).addSvgStyleAttributesToMapper(aConcatenatedSelector, rNewStyle);
+                }
+            }
+        }
+
+        void SvgStyleNode::addCssStyleSheet(const rtl::OUString& aSelectors, const rtl::OUString& aContent)
+        {
+            // aSelectors: possible comma-separated list of CssStyle definitions, no spaces at start/end
+            // aContent: the svg style definitions as string
+            if(aSelectors.getLength() && aContent.getLength())
+            {
+                // create new style and add to local list (for ownership control)
+                SvgStyleAttributes* pNewStyle = new SvgStyleAttributes(*this);
+                maSvgStyleAttributes.push_back(pNewStyle);
+
+                // fill with content
+                pNewStyle->readCssStyle(aContent);
+
+                // comma-separated split (Css abbreviation for same style for multiple selectors)
+                const sal_Int32 nLen(aSelectors.getLength());
+                sal_Int32 nPos(0);
+                rtl::OUStringBuffer aToken;
+
+                while(nPos < nLen)
+                {
+                    const sal_Int32 nInitPos(nPos);
+                    copyToLimiter(aSelectors, sal_Unicode(','), nPos, aToken, nLen);
+                    skip_char(aSelectors, sal_Unicode(' '), sal_Unicode(','), nPos, nLen);
+
+                    const rtl::OUString aSingleName(aToken.makeStringAndClear().trim());
+
+                    if(aSingleName.getLength())
+                    {
+                        addCssStyleSheet(aSingleName, *pNewStyle);
+                    }
+
+                    if(nInitPos == nPos)
+                    {
+                        OSL_ENSURE(false, "Could not interpret on current position (!)");
+                        nPos++;
+                    }
+                }
+            }
+        }
+
+        void SvgStyleNode::addCssStyleSheet(const rtl::OUString& aSelectorsAndContent)
+        {
+            const sal_Int32 nLen(aSelectorsAndContent.getLength());
+
+            if(nLen)
+            {
+                sal_Int32 nPos(0);
+                rtl::OUStringBuffer aToken;
+
+                while(nPos < nLen)
+                {
+                    // read the full selectors (may be multiple, comma-separated)
+                    const sal_Int32 nInitPos(nPos);
+                    skip_char(aSelectorsAndContent, sal_Unicode(' '), nPos, nLen);
+                    copyToLimiter(aSelectorsAndContent, sal_Unicode('{'), nPos, aToken, nLen);
+                    skip_char(aSelectorsAndContent, sal_Unicode(' '), sal_Unicode('{'), nPos, nLen);
+
+                    const rtl::OUString aSelectors(aToken.makeStringAndClear().trim());
+                    rtl::OUString aContent;
+
+                    if(aSelectors.getLength() && nPos < nLen)
+                    {
+                        // isolate content as text, embraced by '{' and '}'
+                        copyToLimiter(aSelectorsAndContent, sal_Unicode('}'), nPos, aToken, nLen);
+                        skip_char(aSelectorsAndContent, sal_Unicode(' '), sal_Unicode('}'), nPos, nLen);
+
+                        aContent = aToken.makeStringAndClear().trim();
+                    }
+
+                    if(aSelectors.getLength() && aContent.getLength())
+                    {
+                        addCssStyleSheet(aSelectors, aContent);
+                    }
+
+                    if(nInitPos == nPos)
+                    {
+                        OSL_ENSURE(false, "Could not interpret on current position (!)");
+                        nPos++;
+                    }
+                }
+            }
+        }
+
+    } // end of namespace svgreader
+} // end of namespace svgio
+
+//////////////////////////////////////////////////////////////////////////////
+// eof

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0104010000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Insert Slide / Page</title>
+<filename>/text/simpress/01/04010000.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159155"><bookmark_value>inserting; slides</bookmark_value>
+<bookmark_value>slides; inserting</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertPage" id="bm_id8576712" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertPage" id="bm_id3149666" localize="false"/><paragraph role="heading" id="hd_id3159155" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/simpress/01/04010000.xhp" name="Insert Slide / Page">Insert Slide / Page</link></paragraph>
+<paragraph role="paragraph" id="par_id3146119" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="seitetext"><ahelp hid=".uno:InsertPage"><switchinline select="appl"><caseinline select="IMPRESS">Inserts a slide after the currently selected slide.
+</caseinline><defaultinline>Inserts a page after the currently selected page.</defaultinline></switchinline></ahelp>
+</variable></paragraph>
+<section id="howtoget">
+  <embed href="text/simpress/00/00000404.xhp#efgste"/>
+</section>
+<!-- removed HID SD:CHECKBOX:DLG_NEW_FOIL:CBX_BACKGROUND --><paragraph role="paragraph" id="par_id3149207" xml-lang="en-US" l10n="CHG" oldref="12"><ahelp hid="." visibility="hidden"><switchinline select="appl"><caseinline select="IMPRESS">Applies the slide master background to the new slide. 
+</caseinline><defaultinline>Applies the master page background to the new page.</defaultinline></switchinline></ahelp><comment>UFI: deleted some paras, changed avis to ahid tags, see #i60536</comment></paragraph>
+<!-- removed HID SD:CHECKBOX:DLG_NEW_FOIL:CBX_OBJECTS --><paragraph role="paragraph" id="par_id3145584" xml-lang="en-US" l10n="CHG" oldref="14"><ahelp hid="." visibility="hidden"><switchinline select="appl"><caseinline select="IMPRESS">Includes objects on the slide master in the new slide. 
+</caseinline><defaultinline>Includes objects on the master page in the new page.</defaultinline></switchinline></ahelp></paragraph>
+</body>
+</helpdocument>

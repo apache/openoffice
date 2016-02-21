@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsbasicshared03130500xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Shell Function [Runtime]</title>
+<filename>/text/sbasic/shared/03130500.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2004-08-24T14:25:04">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="shell">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150040"><bookmark_value>Shell function</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3150040" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03130500.xhp" name="Shell Function [Runtime]">Shell Function [Runtime]</link></paragraph>
+<paragraph role="paragraph" id="par_id3153394" xml-lang="en-US" l10n="U" oldref="2">Starts another application and defines the respective window style, if necessary.</paragraph>
+</section>
+<paragraph role="heading" id="hd_id3153345" xml-lang="en-US" level="2" l10n="U" oldref="4">Syntax</paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="5">Shell (Pathname As String[, Windowstyle As Integer][, Param As String][, bSync]) </paragraph>
+<paragraph role="heading" id="hd_id3149235" xml-lang="en-US" level="2" l10n="U" oldref="6">Parameter</paragraph>
+<paragraph role="heading" id="hd_id3154306" xml-lang="en-US" level="3" l10n="U" oldref="23">Pathname</paragraph>
+<paragraph role="paragraph" id="par_id3155419" xml-lang="en-US" l10n="U" oldref="7">Complete path and program name of the program that you want to start.</paragraph>
+<paragraph role="heading" id="hd_id3150771" xml-lang="en-US" level="3" l10n="U" oldref="24">Windowstyle</paragraph>
+<paragraph role="paragraph" id="par_id3145609" xml-lang="en-US" l10n="U" oldref="8">Optional integer expression that specifies the style of the window that the program is executed in. The following values are possible:</paragraph>
+<table id="tbl_id3156343">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148663" xml-lang="en-US" l10n="U" oldref="25">0</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153360" xml-lang="en-US" l10n="U" oldref="10">The focus is on the hidden program window.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154123" xml-lang="en-US" l10n="U" oldref="26">1</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3144760" xml-lang="en-US" l10n="U" oldref="11">The focus is on the program window in standard size.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156422" xml-lang="en-US" l10n="U" oldref="27">2</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3148451" xml-lang="en-US" l10n="U" oldref="12">The focus is on the minimized program window.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149561" xml-lang="en-US" l10n="U" oldref="28">3</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146921" xml-lang="en-US" l10n="U" oldref="13">focus is on the maximized program window.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149481" xml-lang="en-US" l10n="U" oldref="29">4</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3155854" xml-lang="en-US" l10n="U" oldref="14">Standard size program window, without focus.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145271" xml-lang="en-US" l10n="U" oldref="30">6</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3152938" xml-lang="en-US" l10n="U" oldref="15">Minimized program window, focus remains on the active window.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3146119" xml-lang="en-US" l10n="U" oldref="31">10</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3151112" xml-lang="en-US" l10n="U" oldref="16">Full-screen display.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="heading" id="hd_id3150419" xml-lang="en-US" level="3" l10n="U" oldref="33">Param</paragraph>
+<paragraph role="paragraph" id="par_id3149412" xml-lang="en-US" l10n="U" oldref="17">Any string expression that specifies the command line that want to pass.</paragraph>
+<paragraph role="heading" id="hd_id3148456" xml-lang="en-US" level="3" l10n="U" oldref="32">bSync</paragraph>
+<paragraph role="paragraph" id="par_id3154096" xml-lang="en-US" l10n="U" oldref="18">If this value is set to <emph>true</emph>, the <emph>Shell</emph> command and all $[officename] tasks wait until the shell process completes. If the value is set to <emph>false</emph>, the shell returns directly. The default value is <emph>false</emph>.</paragraph>
+<embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
+<embed href="text/sbasic/shared/00000003.xhp#err5"/>
+<embed href="text/sbasic/shared/00000003.xhp#err53"/>
+<embed href="text/sbasic/shared/00000003.xhp#err73"/>
+<paragraph role="heading" id="hd_id3154270" xml-lang="en-US" level="2" l10n="U" oldref="19">Example</paragraph>
+<paragraph role="paragraph" id="par_id3153948" xml-lang="en-US" l10n="U" oldref="20">Sub ExampleShellForWin</paragraph>
+<paragraph role="paragraph" id="par_id3154479" xml-lang="en-US" l10n="U" oldref="21"> Shell("c:\windows\calc.exe",2)</paragraph>
+<paragraph role="paragraph" id="par_id3153709" xml-lang="en-US" l10n="U" oldref="22">end sub</paragraph>
+</body>
+</helpdocument>

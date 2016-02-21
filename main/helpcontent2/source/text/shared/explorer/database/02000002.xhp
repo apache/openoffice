@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabase02000002xml" indexer="exclude" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Missing Element</title>
+<filename>/text/shared/explorer/database/02000002.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150445"><bookmark_value>queries; missing elements (Base)</bookmark_value>
+</bookmark><comment>mw added "(Base)"</comment><paragraph role="heading" id="hd_id3150445" xml-lang="en-US" level="1" l10n="U" oldref="1">Missing Element</paragraph>
+<paragraph role="paragraph" id="par_id3150247" xml-lang="en-US" l10n="U" oldref="2">If a query in which tables or fields no longer exist is opened, the<emph> Missing Element </emph>dialog appears. This dialog names the missing table or the field which cannot be interpreted and allows you to decide how to continue with the procedure.</paragraph>
+<section id="howtoget">
+<embed href="text/shared/00/00000450.xhp#FehlendesElement"/>
+</section>
+<paragraph role="heading" id="hd_id3145072" xml-lang="en-US" level="2" l10n="U" oldref="3">How to continue?</paragraph>
+<paragraph role="paragraph" id="par_id3149177" xml-lang="en-US" l10n="U" oldref="4">There are three options available for answering this question:</paragraph>
+<paragraph role="heading" id="hd_id3147576" xml-lang="en-US" level="3" l10n="U" oldref="5">Do you really want to open the query in the graphic view?</paragraph>
+<paragraph role="paragraph" id="par_id3166461" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".">Allows you to open the query in the <link href="text/shared/explorer/database/02010100.xhp" name="Design View">Design View</link> in spite of missing elements.</ahelp> This option also allows you to specify if other errors need to be ignored.</paragraph>
+<paragraph role="paragraph" id="par_id3153031" xml-lang="en-US" l10n="U" oldref="7">The query is opened in the Design View (the graphical interface). Missing tables appear blank and invalid fields appear with their (invalid) names in the list of fields. This lets you work with exactly those fields that caused the error.</paragraph>
+<paragraph role="heading" id="hd_id3149578" xml-lang="en-US" level="3" l10n="U" oldref="8">Open the query in the SQL View</paragraph>
+<paragraph role="paragraph" id="par_id3159157" xml-lang="en-US" l10n="CHG" oldref="9"><ahelp hid=".">Allows you to open the query design in the <link href="text/shared/explorer/database/02010100.xhp" name="SQL Mode">SQL Mode</link> and to interpret the query as a <link href="text/shared/02/14030000.xhp" name="Native SQL">Native SQL</link>.</ahelp> You can only quit the native SQL mode when the $[officename] statement is completely interpreted (only possible if the used tables or fields in the query really exist).</paragraph>
+<paragraph role="heading" id="hd_id3150984" xml-lang="en-US" level="3" l10n="U" oldref="10">Do not open the query</paragraph>
+<paragraph role="paragraph" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid=".">Allows you to cancel the procedure and specify that the query should not be opened.</ahelp> This option corresponds to the function of the <emph>Cancel</emph> dialog button.</paragraph>
+<paragraph role="heading" id="hd_id3148492" xml-lang="en-US" level="3" l10n="U" oldref="12">Also ignore similar errors</paragraph>
+<paragraph role="paragraph" id="par_id3154285" xml-lang="en-US" l10n="U" oldref="13"><ahelp hid=".">If you selected the first option, but you still want to open the query in the graphics view in spite of missing elements, you can specify whether other errors are ignored.</ahelp> Therefore, in the current opening process, no error message will be displayed if the query can not be correctly interpreted.</paragraph>
+</body>
+</helpdocument>

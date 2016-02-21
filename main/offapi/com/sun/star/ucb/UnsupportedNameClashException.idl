@@ -1,0 +1,69 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef __com_sun_star_ucb_UnsupportedNameClashException_idl__
+#define __com_sun_star_ucb_UnsupportedNameClashException_idl__
+
+#ifndef __com_sun_star_uno_Exception_idl__
+#include <com/sun/star/uno/Exception.idl>
+#endif
+
+//=============================================================================
+
+module com { module sun { module star { module ucb {
+
+//=============================================================================
+/** <p>This exception must be thrown in case the requested nameclash 
+    directive is not supported, because it is not possible to implement 
+    it or if it is just not (yet) implemented.
+
+    <p>Command 'transfer': Used if the nameclash directive specified in 
+    parameter NameClash of the supplied <type>TransferInfo</type> is not 
+    supported. For example, if the NameClash was set to NameClash::ERROR, 
+    to NameClash::RENAME or to NameClash::ASK, the implementation must be 
+    able determine whether there are existing data. This exception must also 
+    be used if NameClash::RENAME was specified and the implementation is 
+    unable to create a valid new name after a suitable number of tries.
+
+    <p>Command 'insert': Used if the parameter ReplaceExisting of the 
+    supplied <type>InsertCommandArgument</type> was set to <false/> and the 
+    implementation is unable to determine whether there are existing data. 
+    The member NameClash of the exception must be set to NameClash::ERROR
+   
+	@version	1.0
+	@author 	Kai Sommerfeld
+    @see        Content
+*/
+published exception UnsupportedNameClashException : com::sun::star::uno::Exception
+{
+	//-------------------------------------------------------------------------
+    /** contains the <type>NameClash</type> that is not supported.
+     */
+    long NameClash;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

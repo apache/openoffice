@@ -1,0 +1,44 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef _ADDRESSLISTDIALOG_HRC
+#define _ADDRESSLISTDIALOG_HRC
+
+#define FI_DESCRIPTION      1
+#define FT_LIST             2
+
+#define PB_EDIT             4
+#define LB_LIST             5
+#define PB_FILTER           6
+#define PB_LOADLIST         7
+#define PB_CREATELIST       8
+#define FL_SEPARATOR        9
+#define PB_OK               12
+#define PB_CANCEL           13
+#define PB_HELP             14
+#define ST_NAME             15
+#define ST_TABLE            16
+#define PB_TABLE            17
+#define ST_CONNECTING       18
+
+#endif
+

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textschartmain0000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Charts in $[officename]</title>
+         <filename>/text/schart/main0000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148664"><bookmark_value>charts; overview</bookmark_value>
+      <bookmark_value>HowTos for charts</bookmark_value>
+</bookmark><comment>MW added one entry</comment>
+<paragraph xml-lang="en-US" id="hd_id3148664" role="heading" level="1" l10n="U" oldref="1"><variable id="chart_main"><link href="text/schart/main0000.xhp" name="Charts in $[officename]">Using Charts in %PRODUCTNAME</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154685" role="paragraph" l10n="CHG" oldref="2"><variable id="chart">$[officename] lets you present data graphically in a chart, so that you can visually compare data series and view trends in the data. You can insert charts into spreadsheets, text documents, drawings, and presentations. 
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3153143" role="heading" level="2" l10n="CHG"
+                 oldref="5">Chart Data</paragraph>
+      <paragraph xml-lang="en-US" id="par_id5181432" role="paragraph" l10n="NEW">Charts can be based on the following data:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7787102" role="paragraph" l10n="NEW">Spreadsheet values from Calc cell ranges<comment>also Excel...</comment></paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7929929" role="paragraph" l10n="NEW">Cell values from a Writer table</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id4727011" role="paragraph" l10n="NEW">Values that you enter in the Chart Data Table dialog (you can create these charts in Writer, Draw, or Impress, and you can copy and paste them also to Calc)</paragraph>
+         </listitem>
+      </list><comment>command line Insert - (Object -) Chart, moved here from deleted shared/01/04160100.xhp</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectChart" id="bm_id2038889" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertObjectChart" id="bm_id3149551" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DrawChart" id="bm_id6209730" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:DrawChart" id="bm_id3154688" localize="false"/>
+<!-- removed HID SID_OPENDLG_CHART -->
+<bookmark xml-lang="en-US" branch="hid/.uno:StarChartDialog" id="bm_id3146060" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/SW_HID_INSERT_CHART" id="bm_id3149532" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id76601" role="paragraph" l10n="CHG"><ahelp hid="." visibility="hidden">Creates a chart in the current document. To use a continuous range of cells as the data source for your chart, click inside the cell range, and then choose this command. Alternatively, select some cells and choose this command to create a chart of the selected cells.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id5345011" role="heading" level="2" l10n="NEW">To insert a chart</paragraph>
+      <embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+      <embed href="text/schart/01/choose_chart_type.xhp#choose_chart_type"/>
+      <paragraph xml-lang="en-US" id="hd_id5631580" role="heading" level="2" l10n="NEW">To edit a chart</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7911008" role="paragraph" l10n="NEW">Click a chart to edit the object properties:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id9844660" role="paragraph" l10n="NEW">Size and position on the current page.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id8039796" role="paragraph" l10n="NEW">Alignment, text wrap, outer borders, and more.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id7986693" role="paragraph" l10n="NEW">Double-click a chart to enter the chart edit mode:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id2350840" role="paragraph" l10n="NEW">Chart data values (for charts with own data).</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3776055" role="paragraph" l10n="NEW">Chart type, axes, titles, walls, grid, and more.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8442335" role="paragraph" l10n="NEW">Double-click a chart element in chart edit mode:</paragraph>
+            <paragraph xml-lang="en-US" id="par_id4194769" role="paragraph" l10n="NEW">Double-click an axis to edit the scale, type, color, and more.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id8644672" role="paragraph" l10n="NEW">Double-click a data point to select and edit the data series to which the data point belongs.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id6574907" role="paragraph" l10n="NEW">With a data series selected, click, then double-click a single data point to edit the properties of this data point (for example, a single bar in a bar chart).</paragraph>
+            <paragraph xml-lang="en-US" id="par_id1019200902360575" role="paragraph" l10n="NEW">Double-click the legend to select and edit the legend. Click, then double-click a symbol in the selected legend to edit the associated data series.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id7528916" role="paragraph" l10n="NEW">Double-click any other chart element, or click the element and open the Format menu, to edit the properties.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id8420667" role="paragraph" l10n="NEW">Click outside the chart to leave the current edit mode.</paragraph>
+         </listitem>
+      </list>
+      <paragraph xml-lang="en-US" id="par_id4923856" role="tip" l10n="NEW">To print a chart in high quality, you can export the chart to a PDF file and print that file.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0810200912061033" role="paragraph" l10n="CHG">In chart edit mode, you see the <link href="text/schart/main0202.xhp">Formatting Bar</link> for charts near the upper border of the document. The Drawing Bar for charts appears near the lower border of the document. The Drawing Bar shows a subset of the icons from the <link href="text/simpress/main0210.xhp">Drawing</link> toolbar of Draw and Impress.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0810200902080452" role="paragraph" l10n="NEW">You can right-click an element of a chart to open the context menu. The context menu offers many commands to format the selected element.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatTitle" id="bm_id0810200903431839" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id081020090354489" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the selected title.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatChartArea" id="bm_id0810200903401642" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903405629" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the chart area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatWall" id="bm_id0810200903420337" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903544867" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the chart wall.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatFloor" id="bm_id0810200903424458" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903544952" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the chart floor.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatLegend" id="bm_id0810200903440259" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903544927" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the chart legend.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatAxis" id="bm_id0810200903443886" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903544949" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the selected axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatDataPoint" id="bm_id081020090345395" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903544984" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the selected data point.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatMajorGrid" id="bm_id0810200903463111" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545096" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the major grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatMinorGrid" id="bm_id081020090347088" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545057" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the minor grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatDataSeries" id="bm_id0810200903475043" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545095" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the data series.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatStockLoss" id="bm_id0810200903483389" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545094" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the stock loss indicators.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatStockGain" id="bm_id0810200903491288" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545113" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the stock gain indicators.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatDataLabels" id="bm_id0810200903510321" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545149" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the data labels.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatYErrorBars" id="bm_id0810200903522796" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545159" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the Y error bars.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatMeanValue" id="bm_id0810200903531785" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id081020090354524" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the mean value line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatTrendline" id="bm_id0810200903541347" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200903545274" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the trendline.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatTrendlineEquation" id="bm_id0810200903583324" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904063285" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the trendline equation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:FormatDataLabel" id="bm_id0810200903592433" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904063252" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Formats the selected data label.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertTitles" id="bm_id0810200904002651" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904063239" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog to insert chart titles.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertRemoveAxes" id="bm_id0810200904070699" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233047" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog to insert or delete axes.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAxis" id="bm_id0810200904131060" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233058" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog to insert an axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertAxisTitle" id="bm_id0810200904134569" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233089" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Opens a dialog to insert an axis title.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMajorGrid" id="bm_id081020090418240" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233160" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts a major grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertMinorGrid" id="bm_id0810200904190029" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233175" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts a minor grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertDataLabels" id="bm_id0810200904194557" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233111" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts data labels.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertTrendlineEquationAndR2" id="bm_id0810200904204069" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904233174" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts the trendline equation and the coefficient of determination R².</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertR2Value" id="bm_id0810200904250571" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904265639" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts the coefficient of determination R² value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:InsertDataLabel" id="bm_id081020090428246" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362614" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Inserts a single data label.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteLegend" id="bm_id0810200904303930" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362666" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the chart legend.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteAxis" id="bm_id0810200904311994" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362777" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the selected axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteMajorGrid" id="bm_id0810200904315530" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362785" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the major grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteMinorGrid" id="bm_id0810200904322666" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362748" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the minor grid.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteDataLabels" id="bm_id0810200904330358" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362778" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes all data labels.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteTrendlineEquation" id="bm_id0810200904341536" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362893" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the trendline equation.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteR2Value" id="bm_id0810200904345275" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362896" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the R² value.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteDataLabel" id="bm_id0810200904354291" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904362827" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the selected data label.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteMeanValue" id="bm_id0810200904405280" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904431376" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the mean value line.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DeleteYErrorBars" id="bm_id0810200904413070" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id081020090443142" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Deletes the Y error bars.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ResetDataPoint" id="bm_id081020090437598" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904393229" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Resets the selected data point to default format.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ResetAllDataPoints" id="bm_id0810200904383722" localize="false"/>
+<paragraph xml-lang="en-US" id="par_id0810200904393351" role="paragraph" l10n="NEW"><ahelp hid="." visibility="hidden">Resets all data points to default format.</ahelp></paragraph><comment>how to update chart data (drag&amp;drop vs chart data dialog)</comment><embed href="text/shared/guide/chart_title.xhp#chart_title"/>
+      <embed href="text/shared/guide/chart_axis.xhp#chart_axis"/>
+      <embed href="text/shared/guide/chart_legend.xhp#chart_legend"/>
+      <embed href="text/shared/guide/chart_barformat.xhp#chart_barformat"/>
+      <embed href="text/schart/01/three_d_view.xhp#three_d_view"/>
+   </body>
+</helpdocument>

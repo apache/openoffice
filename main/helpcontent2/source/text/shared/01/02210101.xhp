@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0102210101xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Floating Frame Properties</title>
+<filename>/text/shared/01/02210101.xhp</filename>
+</topic>
+</meta>
+<body>
+<!-- removed HID SFX2:TABPAGE:TP_FRAMEPROPERTIES --><paragraph role="heading" id="hd_id3150347" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/02210101.xhp" name="Floating Frame Properties">Floating Frame Properties</link></paragraph>
+<paragraph role="paragraph" id="par_id3149031" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid="SFX2:TABPAGE:TP_FRAMEPROPERTIES">Changes the properties of the selected floating frame. Floating frames work best when they contain an html document, and when they are inserted in another html document.</ahelp></paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00000402.xhp#rahmeneigenschaften"/>
+</section>
+<!-- removed HID SFX2:EDIT:TP_FRAMEPROPERTIES:ED_FRAMENAME -->
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:MD_INSERT_OBJECT_IFRAME:ED_FRAMENAME" id="bm_id8971221.00000001" localize="false"/><paragraph role="heading" id="hd_id3155364" xml-lang="en-US" level="2" l10n="U" oldref="3">Name</paragraph>
+<paragraph role="paragraph" id="par_id3149511" xml-lang="en-US" l10n="U" oldref="4"><ahelp hid="SFX2:EDIT:TP_FRAMEPROPERTIES:ED_FRAMENAME">Enter a name for the floating frame. The name cannot contain spaces, special characters, or begin with an underscore ( _ ).</ahelp></paragraph>
+<!-- removed HID SFX2:EDIT:TP_FRAMEPROPERTIES:ED_URL -->
+<bookmark xml-lang="en-US" branch="hid/cui:Edit:MD_INSERT_OBJECT_IFRAME:ED_URL" id="bm_id3061311" localize="false"/><paragraph role="heading" id="hd_id3150789" xml-lang="en-US" level="2" l10n="U" oldref="5">Contents</paragraph>
+<paragraph role="paragraph" id="par_id3156414" xml-lang="en-US" l10n="CHG" oldref="6"><ahelp hid="SFX2:EDIT:TP_FRAMEPROPERTIES:ED_URL">Enter the path and the name of the file that you want to display in the floating frame. You can also click the <emph>...</emph> button and locate the file that you want to display.</ahelp> For example, you can enter:</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="listitem" id="par_id3147399" xml-lang="en-US" l10n="U" oldref="7">http://www.example.com</paragraph>
+</listitem>
+<listitem>
+<paragraph role="listitem" id="par_id3153683" xml-lang="en-US" l10n="U" oldref="8">file:///c|/Readme.txt </paragraph>
+</listitem>
+</list>
+<!-- removed HID SFX2:PUSHBUTTON:TP_FRAMEPROPERTIES:BT_FILEOPEN -->
+<bookmark xml-lang="en-US" branch="hid/cui:PushButton:MD_INSERT_OBJECT_IFRAME:BT_FILEOPEN" id="bm_id1442609" localize="false"/><paragraph role="heading" id="hd_id3147088" xml-lang="en-US" level="2" l10n="U" oldref="10">...</paragraph>
+<paragraph role="paragraph" id="par_id3155355" xml-lang="en-US" l10n="U" oldref="11"><ahelp hid="SFX2:PUSHBUTTON:TP_FRAMEPROPERTIES:BT_FILEOPEN">Locate the file that you want to display in the selected floating frame, and then click <emph>Open</emph>.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3146957" xml-lang="en-US" level="2" l10n="U" oldref="12">Scrollbar</paragraph>
+<paragraph role="paragraph" id="par_id3156346" xml-lang="en-US" l10n="U" oldref="13">Add or remove a scrollbar from the selected floating frame.</paragraph>
+<!-- removed HID SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGON -->
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:MD_INSERT_OBJECT_IFRAME:RB_SCROLLINGON" id="bm_id6702475" localize="false"/><paragraph role="heading" id="hd_id3163802" xml-lang="en-US" level="3" l10n="U" oldref="14">On</paragraph>
+<paragraph role="paragraph" id="par_id3150355" xml-lang="en-US" l10n="U" oldref="15"><ahelp hid="SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGON">Displays the scrollbar for the floating frame.</ahelp></paragraph>
+<!-- removed HID SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGOFF -->
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:MD_INSERT_OBJECT_IFRAME:RB_SCROLLINGOFF" id="bm_id7322916" localize="false"/><paragraph role="heading" id="hd_id3155628" xml-lang="en-US" level="3" l10n="U" oldref="16">Off</paragraph>
+<paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGOFF">Hides the scrollbar for the floating frame.</ahelp></paragraph>
+<!-- removed HID SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGAUTO -->
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:MD_INSERT_OBJECT_IFRAME:RB_SCROLLINGAUTO" id="bm_id6200140" localize="false"/><paragraph role="heading" id="hd_id3150503" xml-lang="en-US" level="3" l10n="U" oldref="18">Automatic</paragraph>
+<paragraph role="paragraph" id="par_id3152909" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_SCROLLINGAUTO">Mark this option if the currently active floating frame can have a scrollbar when needed.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3156156" xml-lang="en-US" level="2" l10n="U" oldref="20">Border</paragraph>
+<paragraph role="paragraph" id="par_id3150943" xml-lang="en-US" l10n="U" oldref="21">Displays or hides the border of the floating frame.</paragraph>
+<!-- removed HID SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_FRMBORDER_ON -->
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:MD_INSERT_OBJECT_IFRAME:RB_FRMBORDER_ON" id="bm_id6881923" localize="false"/><paragraph role="heading" id="hd_id3146774" xml-lang="en-US" level="3" l10n="U" oldref="22">On</paragraph>
+<paragraph role="paragraph" id="par_id3159147" xml-lang="en-US" l10n="U" oldref="23"><ahelp hid="SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_FRMBORDER_ON">Displays the border of the floating frame.</ahelp></paragraph>
+<!-- removed HID SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_FRMBORDER_OFF -->
+<bookmark xml-lang="en-US" branch="hid/cui:RadioButton:MD_INSERT_OBJECT_IFRAME:RB_FRMBORDER_OFF" id="bm_id8719138" localize="false"/><paragraph role="heading" id="hd_id3153146" xml-lang="en-US" level="3" l10n="U" oldref="24">Off</paragraph>
+<paragraph role="paragraph" id="par_id3156329" xml-lang="en-US" l10n="U" oldref="25"><ahelp hid="SFX2:RADIOBUTTON:TP_FRAMEPROPERTIES:RB_FRMBORDER_OFF">Hides the border of the floating frame.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3148563" xml-lang="en-US" level="2" l10n="U" oldref="28">Spacing to contents</paragraph>
+<paragraph role="paragraph" id="par_id3148943" xml-lang="en-US" l10n="U" oldref="29">Define the amount of space that is left between the border of the floating frame and the contents of the floating frame provided that both documents inside and outside the floating frame are HTML documents.</paragraph>
+<!-- removed HID SFX2:NUMERICFIELD:TP_FRAMEPROPERTIES:NM_MARGINWIDTH -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:MD_INSERT_OBJECT_IFRAME:NM_MARGINWIDTH" id="bm_id1487472" localize="false"/><paragraph role="heading" id="hd_id3152473" xml-lang="en-US" level="3" l10n="U" oldref="30">Width</paragraph>
+<paragraph role="paragraph" id="par_id3149656" xml-lang="en-US" l10n="U" oldref="31"><ahelp hid="SFX2:NUMERICFIELD:TP_FRAMEPROPERTIES:NM_MARGINWIDTH">Enter the amount of horizontal space that you want to leave between the right and the left edges of the floating frame and the contents of the frame. Both documents inside and outside the floating frame must be HTML documents.</ahelp></paragraph>
+<!-- removed HID SFX2:NUMERICFIELD:TP_FRAMEPROPERTIES:NM_MARGINHEIGHT -->
+<bookmark xml-lang="en-US" branch="hid/cui:NumericField:MD_INSERT_OBJECT_IFRAME:NM_MARGINHEIGHT" id="bm_id869777" localize="false"/><paragraph role="heading" id="hd_id3147303" xml-lang="en-US" level="3" l10n="U" oldref="32">Height</paragraph>
+<paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="SFX2:NUMERICFIELD:TP_FRAMEPROPERTIES:NM_MARGINHEIGHT">Enter the amount of vertical space that you want to leave between the top and bottom edges of the floating frame and the contents of the frame. Both documents inside and outside the floating frame must be HTML documents.</ahelp></paragraph>
+<!-- removed HID SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINWIDTHDEFAULT -->
+<!-- removed HID SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINHEIGHTDEFAULT -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:MD_INSERT_OBJECT_IFRAME:CB_MARGINHEIGHTDEFAULT" id="bm_id1459089" localize="false"/><paragraph role="heading" id="hd_id3150865" xml-lang="en-US" level="3" l10n="U" oldref="34">Default</paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINHEIGHTDEFAULT">Applies the default spacing.</ahelp></paragraph>
+</body>
+</helpdocument>

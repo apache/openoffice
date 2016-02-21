@@ -1,0 +1,96 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sdb_DatabaseAccessConnection_idl__ 
+#define __com_sun_star_sdb_DatabaseAccessConnection_idl__ 
+ 
+#ifndef __com_sun_star_container_XChild_idl__ 
+#include <com/sun/star/container/XChild.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_sdbcx_DatabaseDefinition_idl__ 
+#include <com/sun/star/sdbcx/DatabaseDefinition.idl> 
+#endif 
+ 
+#ifndef __com_sun_star_sdbc_Connection_idl__ 
+#include <com/sun/star/sdbc/Connection.idl> 
+#endif 
+ 
+ module com {  module sun {  module star {  module sdb { 
+ 
+ published interface XQueriesSupplier; 
+ published interface XFormDocumentsSupplier; 
+ published interface XReportDocumentsSupplier; 
+ published interface XSQLQueryComposerFactory; 
+ 
+ 
+/** specifies a component, which supplies and stores additional information related
+	to a certain database connection, such as, DatabaseQueries, FormDocuments, and ReportDocuments.
+	Objects for data definition are supplied as well, for instance, Tables, Views, etc.
+	
+	<p>
+	Implements the service 
+	<type scope="com::sun::star::sdbc">Connection</type>
+	.
+	It is possible to open more than one connection at the same time, but the method 
+	<member scope="com::sun::star::sdb">DatabaseAccessConnection::dispose()</member>
+	will close only one of these connections. You have to close all connections in order 
+	to close the connection to the database.
+	</p>
+
+    @deprecated
+*/
+published service DatabaseAccessConnection
+{ 
+	/** supporting of the base connection service. 
+			 <p><B>Note:</B><br/> 
+				 Don't use the "dispose" method of the XComponent interface, as the DataAccess 
+				 uses a more sophisticated interface for closing a connection. 
+				 @see XDatabaseAccess
+			 </p>
+	 */
+	service com::sun::star::sdbc::Connection; 
+ 
+	/** access to the DatabaseDefinition beans of the connection.
+	 */
+	service com::sun::star::sdbcx::DatabaseDefinition; 
+ 
+	/** access to the owning data access bean.
+	 */
+	interface com::sun::star::container::XChild; 
+ 
+	/** returns a tool for composing queries.
+	 */
+	interface XSQLQueryComposerFactory; 
+ 
+	/** provides access to the queries.
+	*/
+	interface XQueriesSupplier; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; }; 
+ 
+/*=========================================================================== 
+===========================================================================*/ 
+#endif 

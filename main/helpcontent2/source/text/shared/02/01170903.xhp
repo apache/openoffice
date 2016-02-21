@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textshared0201170903xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">List Box Wizard: Field Link</title>
+<filename>/text/shared/02/01170903.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="seite3a">
+<paragraph role="heading" id="hd_id3149119" xml-lang="en-US" level="1" l10n="U" oldref="20"><link href="text/shared/02/01170903.xhp" name="List Box Wizard: Field Link">List Box Wizard: Field Link</link></paragraph>
+<paragraph role="paragraph" id="par_id3159224" xml-lang="en-US" l10n="U" oldref="15">Indicates through which fields tables of values and list tables are linked.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3150499" xml-lang="en-US" l10n="U" oldref="27">The value table is the table of the current form where the list field is inserted. The list table is the table whose data is to be shown in the list field. Both tables must be linked over a mutual data field. These links are to be entered on this page of the wizard. The field names must not necessarily be the same (this depends upon how the field names are defined in both tables), but both fields must have the same field type.</paragraph>
+<section id="howtoget">
+  <embed href="text/shared/00/00040501.xhp#aupikomli3a"/>
+</section>
+<!-- removed HID DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_VALUELISTFIELD --><paragraph role="heading" id="hd_id3149180" xml-lang="en-US" level="2" l10n="U" oldref="16">Value table field</paragraph>
+<paragraph role="paragraph" id="par_id3150789" xml-lang="en-US" l10n="U" oldref="17"><ahelp hid="DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_VALUELISTFIELD">Specifies the current form data field which should be related to a field in the linked table.</ahelp> In addition, click the desired data field in the list field below.</paragraph>
+<paragraph role="paragraph" id="par_id3145669" xml-lang="en-US" l10n="U" oldref="25">In <link href="text/shared/02/01170102.xhp" name="Control - Properties">Control - Properties</link>, the specified field will appear as an entry in the <emph>Data</emph> tab page under <emph>Data field</emph>.</paragraph>
+<!-- removed HID DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_TABLEFIELD --><paragraph role="heading" id="hd_id3149827" xml-lang="en-US" level="2" l10n="U" oldref="18">List table field</paragraph>
+<paragraph role="paragraph" id="par_id3155391" xml-lang="en-US" l10n="U" oldref="19"><ahelp hid="DBP_COMBOBOX_RID_PAGE_LCW_FIELDLINK_CMB_TABLEFIELD">Specifies the linked table data field, which is related to the specified value table field.</ahelp> In addition, click the data field in the lower list field.</paragraph>
+<paragraph role="paragraph" id="par_id3154823" xml-lang="en-US" l10n="U" oldref="26">In <link href="text/shared/02/01170102.xhp" name="Control - Properties">Control - Properties</link>, the specified field will appear in the <emph>Data</emph> tab page of a SQL statement under <emph>List Contents</emph>.</paragraph>
+</body>
+</helpdocument>

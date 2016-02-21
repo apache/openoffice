@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ *
+ ***********************************************************-->
+<helpdocument version="1.0">
+    <meta>
+        <topic id="sdextPresentationMinimizerStep5xhp" indexer="include">
+            <title xml-lang="en-US" id="tit">Presentation Minimizer - Summary</title>
+            <filename>/text/simpress/minimizer/step5.xhp</filename>
+        </topic>
+    </meta>
+    <body>
+        <section id="step5">
+            <!-- 5 Step  -->
+            <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step5" id="bm_id77665507" localize="false"/>
+            <paragraph xml-lang="en-US" id="par_id77665509" role="heading" level="1" l10n="NEW"><link href="text/simpress/minimizer/step5.xhp" name="Presentation Minimizer - Summary">Presentation Minimizer - Summary</link></paragraph>
+            <paragraph xml-lang="en-US" id="par_id77665510" role="paragraph" l10n="NEW"><ahelp hid="hid/sdext:Minimizer:Wizard:Step5">Choose where to apply the following changes.</ahelp></paragraph>
+        </section>
+        <section id="howtoget">
+            <embed href="text/simpress/minimizer/shared.xhp#step5"/>
+        </section>
+        <!-- 5 Step Radiobox - current presentation -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step5:RBCurDoc" id="bm_id77665521" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665501" role="heading" level="2" l10n="NEW">Apply changes to current presentation</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665500" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step5:RBCurDoc">Apply the changes to the current presentation.</ahelp></paragraph>
+        <!-- 5 Step Radiobox - duplicate presentation -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step5:RBNewDoc" id="bm_id77665522" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665502" role="heading" level="2" l10n="NEW">Duplicate presentation before applying changes</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665503r" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step5:RBNewDoc">Create a copy of the current presentation, and apply the changes only to this copy.</ahelp></paragraph>
+        <!-- 5 Step Radiobox - save settings -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step5:CBSaveSetts" id="bm_id77665523" localize="false"/>
+        <paragraph xml-lang="en-US" id="hd_id77665503" role="heading" level="2" l10n="NEW">Save settings as</paragraph>
+        <paragraph xml-lang="en-US" id="par_id77665502" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step5:CBSaveSetts">Apply the changes to the current presentation.</ahelp></paragraph>
+        <!-- 5 Step Radiobox - setting name -->
+        <bookmark xml-lang="en-US" branch="hid/sdext:Minimizer:Wizard:Step5:LBSettsName" id="bm_id77665524" localize="false"/>
+        <paragraph xml-lang="en-US" id="par_id77665503" role="paragraph" l10n="NEW"><ahelp hid="sdext:Minimizer:Wizard:Step5:LBSettsName">Enter the name of the settings to be stored.</ahelp></paragraph>
+        <paragraph role="paragraph" id="par_id3153087" xml-lang="en-US" l10n="NEW"><link href="text/simpress/minimizer/main.xhp" name="Go to Presentation Minimizer Wizard">Go to Presentation Minimizer Wizard</link></paragraph>
+    </body>
+</helpdocument>

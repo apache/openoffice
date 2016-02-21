@@ -1,0 +1,90 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_drawing_LineDash_idl__ 
+#define __com_sun_star_drawing_LineDash_idl__ 
+ 
+#ifndef __com_sun_star_drawing_DashStyle_idl__ 
+#include <com/sun/star/drawing/DashStyle.idl> 
+#endif 
+ 
+ 
+//============================================================================= 
+ 
+ module com {  module sun {  module star {  module drawing {  
+ 
+//============================================================================= 
+ 
+// DocMerge from xml: struct com::sun::star::drawing::LineDash
+/** A <type>LineDash</type> defines a non-continuous line.
+ */
+published struct LineDash
+{
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::Style
+	/** This sets the style of this <type>LineDash</type>.
+	 */
+	com::sun::star::drawing::DashStyle Style; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::Dots
+	/** This is the number of dots in this <type>LineDash</type>.
+	 */
+	short Dots; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::DotLen
+	/** This is the length of a dot.
+	 */
+	long DotLen; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::Dashes
+	/** This is the number of dashes.
+	 */
+	short Dashes; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::DashLen
+	/** This is the length of a single dash.
+	 */
+	long DashLen; 
+ 
+	//------------------------------------------------------------------------- 
+	 
+	// DocMerge from xml: field com::sun::star::drawing::LineDash::Distance
+	/** This is the distance between the dots.
+	 */
+	long Distance; 
+ 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+
+#endif 
+

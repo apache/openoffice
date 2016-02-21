@@ -1,0 +1,31 @@
+--- misc/commons-httpclient-3.1/build.xml	2007-08-18 11:02:14.000000000 +0200
++++ misc/build/commons-httpclient-3.1/build.xml	2014-03-11 15:25:51.000000000 +0100
+@@ -181,14 +181,16 @@
+            destdir     ="${build.home}/classes"
+            debug       ="${compile.debug}"
+            deprecation ="${compile.deprecation}"
+-           optimize    ="${compile.optimize}">
++           optimize    ="${compile.optimize}"
++           encoding    ="iso8859-1">
+       <classpath refid="compile.classpath"/>
+     </javac>
+     <javac srcdir      ="${source.home}/examples"
+            destdir     ="${build.home}/examples"
+            debug       ="${compile.debug}"
+            deprecation ="${compile.deprecation}"
+-           optimize    ="${compile.optimize}">
++           optimize    ="${compile.optimize}"
++           encoding    ="iso8859-1">
+       <classpath refid="compile.classpath"/>
+     </javac>
+   </target>
+@@ -199,7 +201,8 @@
+            destdir     ="${build.home}/tests"
+            debug       ="${compile.debug}"
+            deprecation ="${compile.deprecation}"
+-           optimize    ="${compile.optimize}">
++           optimize    ="${compile.optimize}"
++           encoding    ="iso8859-1">
+       <classpath refid="test.classpath"/>
+     </javac>
+     <copy todir="${build.home}/tests" filtering="on">

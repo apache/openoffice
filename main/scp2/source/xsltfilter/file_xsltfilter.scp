@@ -1,0 +1,81 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+File gid_File_Share_Registry_Xsltfilter_Xcd
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Registry;
+    Name = "xsltfilter.xcd";
+End
+
+File gid_File_Stw_Docbooktemplate
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Docbook;
+    Name = "DocBookTemplate.stw";
+End
+
+File gid_File_Xsl_Docbooktosoffheadings
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Docbook;
+    Name = "docbooktosoffheadings.xsl";
+End
+
+File gid_File_Xsl_Sofftodocbookheadings
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Docbook;
+    Name = "sofftodocbookheadings.xsl";
+End
+
+File gid_File_Xsl_Export_Xhtml_Body
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Export_Xhtml;
+    Name = "/xslt/export/xhtml/body.xsl";
+End
+
+File gid_File_Xsl_Export_Xhtml_Header
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Export_Xhtml;
+    Name = "/xslt/export/xhtml/header.xsl";
+End
+
+File gid_File_Xsl_Export_Xhtml_Ooo2xhtml
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Export_Xhtml;
+    Name = "/xslt/export/xhtml/opendoc2xhtml.xsl";
+End
+
+File gid_File_Xsl_Export_Xhtml_Table
+    TXT_FILE_BODY;
+    Styles = (PACKED);
+    Dir = gid_Dir_Share_Xslt_Export_Xhtml;
+    Name = "/xslt/export/xhtml/table.xsl";
+End
+

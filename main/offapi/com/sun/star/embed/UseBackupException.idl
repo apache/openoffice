@@ -1,0 +1,62 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_embed_UseBackupException_idl__ 
+#define __com_sun_star_embed_UseBackupException_idl__ 
+ 
+#ifndef __com_sun_star_io_IOException_idl__ 
+#include <com/sun/star/io/IOException.idl> 
+#endif 
+ 
+ 
+//============================================================================
+ 
+ module com {  module sun {  module star {  module embed {  
+ 
+//============================================================================
+ 
+/** This exception can be thrown in case a storage commit is failed.
+	<p>
+	If a commit process of a storage failes on last transfer and the original
+	content may be corrupted the storage should throw this exception to notify
+	the user that a backup usage is required to restore the original content.
+	</p>
+
+	<p>
+	The storage itself must disconnect from the medium it is based on to allow
+	restoring. Although the storage will still contain all the data
+	internally, and can be used as a temporary storage usually used.
+	</p>
+ */
+published exception UseBackupException: com::sun::star::io::IOException
+{
+	/** The URL of the temporary file the storage is based on now.
+	 */
+	string TemporaryFileURL;
+}; 
+ 
+//============================================================================
+ 
+}; }; }; };  
+ 
+#endif
+

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textsimpress0105100000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Styles and Formatting</title>
+<filename>/text/simpress/01/05100000.xhp</filename>
+</topic>
+</meta>
+<body>
+<section id="gestalter">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156024"><bookmark_value>Styles and Formatting window; graphics documents</bookmark_value>
+<bookmark_value>fill format mode; styles</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id3156024" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><link href="text/simpress/01/05100000.xhp" name="Styles and Formatting">Styles and Formatting</link></paragraph>
+<paragraph role="paragraph" id="par_id3150398" xml-lang="en-US" l10n="U" oldref="2">Lists available styles in a <link href="text/shared/00/00000005.xhp#andocken" name="floating window">floating window</link>.</paragraph>
+</section>
+<paragraph role="paragraph" id="par_id3150439" xml-lang="en-US" l10n="CHG" oldref="28">The Styles and Formatting window in <item type="productname">%PRODUCTNAME</item> Impress behaves differently than in other <item type="productname">%PRODUCTNAME</item> programs. For example, you can create, edit and apply <emph>Graphics Styles</emph>, but you can only edit <emph>Presentation Styles</emph>.</paragraph>
+<section id="howtoget">
+<embed href="text/shared/00/00040500.xhp#gestalter"/>
+</section>
+<paragraph role="paragraph" id="par_id3146121" xml-lang="en-US" l10n="U" oldref="3">When you edit a style, the changes are automatically applied to all of the elements formatted with this style in your document. If you want to ensure that the styles on a specific slide are not updated, create a new <link href="text/simpress/guide/masterpage.xhp" name="master page">master page</link> for the slide.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:ListStyle" id="bm_id2536167" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ListStyle" id="bm_id3155600" localize="false"/><paragraph role="heading" id="hd_id3145251" xml-lang="en-US" level="2" l10n="U" oldref="5">Presentation Styles</paragraph>
+<paragraph role="paragraph" id="par_id3153418" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".uno:TemplateFamily5">Show styles used in <item type="productname">%PRODUCTNAME</item> Impress AutoLayouts.</ahelp> You can only modify Presentation Styles.</paragraph>
+<table id="tbl_id3155064">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154253" xml-lang="en-US" l10n="E">
+<image id="img_id3156382" src="res/commandimagelist/sc_presentation.png" width="0.222inch" height="0.222inch"><alt id="alt_id3156382" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149128" xml-lang="en-US" l10n="U" oldref="7">Presentation Styles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id9814039" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:ParaStyle" id="bm_id3147002" localize="false"/><paragraph role="heading" id="hd_id3150297" xml-lang="en-US" level="2" l10n="U" oldref="8">Graphics Styles</paragraph>
+<paragraph role="paragraph" id="par_id3148488" xml-lang="en-US" l10n="U" oldref="9"><ahelp hid=".uno:ParaStyle">Show styles for formatting graphical elements, including text objects.</ahelp></paragraph>
+<table id="tbl_id3154659">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3145587" xml-lang="en-US" l10n="E">
+<image id="img_id3150370" src="res/commandimagelist/sc_objectcatalog.png" width="0.222inch" height="0.222inch"><alt id="alt_id3150370" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3154484" xml-lang="en-US" l10n="U" oldref="10">Graphics Styles</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_WATERCAN" id="bm_id3152896" localize="false"/><paragraph role="heading" id="hd_id3149404" xml-lang="en-US" level="2" l10n="U" oldref="11">Fill format mode</paragraph>
+<paragraph role="paragraph" id="par_id3149944" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_TEMPLDLG_WATERCAN">Applies the selected style to an object on your slide. Click the paint bucket icon and then click an object in your slide to apply the style. Click the paint bucket icon again to exit this mode.</ahelp></paragraph>
+<table id="tbl_id3148871">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3156020" xml-lang="en-US" l10n="E">
+<image id="img_id3153246" src="res/commandimagelist/sc_fillstyle.png" width="0.222inch" height="0.222inch"><alt id="alt_id3153246" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3159228" xml-lang="en-US" l10n="U" oldref="13">Fill format mode</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_NEWBYEXAMPLE" id="bm_id3153810" localize="false"/><paragraph role="heading" id="hd_id3145362" xml-lang="en-US" level="2" l10n="U" oldref="17">New Style from Selection</paragraph>
+<paragraph role="paragraph" id="par_id3153009" xml-lang="en-US" l10n="CHG" oldref="18"><ahelp hid="HID_TEMPLDLG_NEWBYEXAMPLE"><link href="text/shared/01/05140100.xhp" name="Creates a new style">Creates a new style</link> using the format attributes of a selected object.</ahelp></paragraph>
+<table id="tbl_id3153076">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3147297" xml-lang="en-US" l10n="E">
+<image id="img_id3151390" src="res/commandimagelist/sc_stylenewbyexample.png" width="0.222inch" height="0.222inch"><alt id="alt_id3151390" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3150534" xml-lang="en-US" l10n="U" oldref="19">New Style from selection</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLDLG_UPDATEBYEXAMPLE" id="bm_id3157875" localize="false"/><paragraph role="heading" id="hd_id3153119" xml-lang="en-US" level="2" l10n="U" oldref="20">Update Style</paragraph>
+<paragraph role="paragraph" id="par_id3150653" xml-lang="en-US" l10n="CHG" oldref="21"><ahelp hid="HID_TEMPLDLG_UPDATEBYEXAMPLE">Updates the Style selected in the Styles and Formatting window with the current formatting of the selected object.</ahelp></paragraph>
+<table id="tbl_id3154678">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3149888" xml-lang="en-US" l10n="E">
+<image id="img_id3146878" src="res/commandimagelist/sc_styleupdatebyexample.png" width="0.222inch" height="0.222inch"><alt id="alt_id3146878" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_id3153085" xml-lang="en-US" l10n="CHG" oldref="22">Update Style</paragraph>
+</tablecell>
+</tablerow>
+</table>
+<bookmark xml-lang="en-US" branch="hid/SFX2_HID_TEMPLATE_FMT" id="bm_id3149506" localize="false"/><paragraph role="heading" id="hd_id3153936" xml-lang="en-US" level="2" l10n="CHG" oldref="23">Style List / Style Groups / Context menu: New / Modify / Delete</paragraph>
+<paragraph role="paragraph" id="par_id3145590" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="HID_TEMPLATE_FMT">Create, edit, apply and manage styles.</ahelp></paragraph>
+</body>
+</helpdocument>

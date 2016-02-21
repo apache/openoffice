@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textscalc0105050000xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Sheet</title>
+<filename>/text/scalc/01/05050000.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-03-21T11:51:22">UFI: spec "Right-to-Left Canvas for Calc"
+dedr: reviewed</lastedited>
+</history>
+</meta>
+<body>
+<section id="tabelle">
+<bookmark xml-lang="en-US" branch="index" id="bm_id1245460"><bookmark_value>CTL;right-to-left sheets</bookmark_value>
+<bookmark_value>sheets;right-to-left</bookmark_value>
+<bookmark_value>right-to-left text;spreadsheets</bookmark_value>
+</bookmark><comment>mw changed "right-to-left;..."</comment>
+<bookmark xml-lang="en-US" branch="hid/.uno:SheetMenu" id="bm_id5620899" localize="false"/>
+<paragraph role="heading" id="hd_id3155923" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/scalc/01/05050000.xhp" name="Sheet">Sheet</link></paragraph>
+<paragraph role="paragraph" id="par_id3154758" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid=".">Sets the sheet name and hides or shows selected sheets.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/scalc/00/00000405.xhp#fot"/>
+</section>
+<paragraph role="heading" id="hd_id3156280" xml-lang="en-US" level="2" l10n="U" oldref="3"><link href="text/scalc/01/05050100.xhp" name="Rename">Rename</link></paragraph>
+<embed href="text/scalc/01/05050100.xhp#umbenennentext"/>
+<embed href="text/scalc/01/05030300.xhp#ausblenden"/>
+<paragraph role="heading" id="hd_id3145787" xml-lang="en-US" level="2" l10n="U" oldref="4"><link href="text/scalc/01/05050300.xhp" name="Show">Show</link></paragraph>
+<embed href="text/scalc/01/05050300.xhp#tabeintext"/>
+<paragraph role="paragraph" id="par_id3150542" xml-lang="en-US" l10n="U" oldref="5">If a sheet has been hidden, the Show Sheet dialog opens, which allows you to select a sheet to be shown again.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:SheetRightToLeft" id="bm_id9923771" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/.uno:SheetRightToLeft" id="bm_id2235175" localize="false"/>
+<paragraph role="heading" id="par_idN10656" xml-lang="en-US" level="2" l10n="NEW">Right-To-Left</paragraph>
+<paragraph role="paragraph" id="par_idN1065A" xml-lang="en-US" l10n="NEW"><ahelp hid=".uno:SheetRightToLeft">Changes the orientation of the current sheet to Right-To-Left if <link href="text/shared/optionen/01150300.xhp">CTL</link> support is enabled.</ahelp></paragraph>
+</body>
+</helpdocument>

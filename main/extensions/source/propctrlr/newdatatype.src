@@ -1,0 +1,75 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef EXTENSIONS_PROPRESID_HRC
+#include "formresid.hrc"
+#endif
+#ifndef EXTENSIONS_SOURCE_PROPCTRLR_NEWDATATYPE_HRC
+#include "newdatatype.hrc"
+#endif
+
+#define DIALOG_WIDTH    150
+#define DIALOG_HEIGHT   55
+#define BUTTON_WIDTH    50
+#define BUTTON_HEIGHT   14
+
+ModalDialog RID_DLG_NEW_DATA_TYPE
+{
+    HelpID = "extensions:ModalDialog:RID_DLG_NEW_DATA_TYPE";
+	OutputSize = TRUE ;
+	Moveable = TRUE ;
+	Closeable = TRUE ;
+	SVLook = TRUE ;
+    Size = MAP_APPFONT ( DIALOG_WIDTH, DIALOG_HEIGHT ) ;
+
+    Text [ en-US ] = "New Data Type";
+
+    FixedText FT_LABEL
+    {
+        Pos = MAP_APPFONT( 6, 6 );
+        Size = MAP_APPFONT( DIALOG_WIDTH - 2 * 6, 8 );
+
+        Text [ en-US ] = "Type a name for the new data type:";
+    };
+
+    Edit ED_NAME
+    {
+        HelpID = "extensions:Edit:RID_DLG_NEW_DATA_TYPE:ED_NAME";
+        Pos = MAP_APPFONT( 6, 17 );
+        Size = MAP_APPFONT( DIALOG_WIDTH - 2 * 6, 12 );
+        Border = TRUE;
+    };
+
+    OKButton PB_OK
+    {
+        Pos = MAP_APPFONT( DIALOG_WIDTH - 6 - BUTTON_WIDTH - 3 - BUTTON_WIDTH, 35 );
+        Size = MAP_APPFONT( BUTTON_WIDTH, BUTTON_HEIGHT );
+        DefButton = TRUE;
+    };
+
+    CancelButton PB_CANCEL
+    {
+        Pos = MAP_APPFONT( DIALOG_WIDTH - 6 - BUTTON_WIDTH, 35 );
+        Size = MAP_APPFONT( BUTTON_WIDTH, BUTTON_HEIGHT );
+    };
+};

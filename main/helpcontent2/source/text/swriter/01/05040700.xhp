@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105040700xml" indexer="include" status="PUBLISH">
+<title xml-lang="en-US" id="tit">Footnotes/Endnotes</title>
+<filename>/text/swriter/01/05040700.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2003-10-31T00:00:00">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+  
+  
+  <section id="fussendnoten">
+  <paragraph id="hd_id3149028" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/swriter/01/05040700.xhp" name="Footnotes/Endnotes">Footnotes/Endnotes</link></paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147170" xml-lang="en-US" oldref="2"><ahelp hid="" visibility="visible">Specifies where footnotes and endnotes are displayed as well as their numbering formats.</ahelp></paragraph>
+  </section>
+  <section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#fussendnoten"/>
+</section>
+  <paragraph xml-lang="en-US" role="note" id="par_id3149800" l10n="U" oldref="3">This tab is not available in <link href="text/swriter/01/03130000.xhp" name="Print Layout">Print Layout</link> view.</paragraph>
+  <paragraph role="heading" level="2" id="hd_id3153538" l10n="U" xml-lang="en-US" oldref="4">Footnotes</paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_FTN_AT_TXTEND" xml-lang="en-US" id="bm_id3154572"/><paragraph role="heading" level="3" id="hd_id3154480" l10n="U" xml-lang="en-US" oldref="5">Collect at end of text</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3151309" xml-lang="en-US" oldref="11"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_FTN_AT_TXTEND" visibility="visible">Adds footnotes at the end of the section. If the section spans more than one page, the footnotes are added to the bottom of the page on which the footnote anchors appear.</ahelp></paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_FTN_NUM" xml-lang="en-US" id="bm_id3153671"/><paragraph role="heading" level="3" id="hd_id3152960" l10n="U" xml-lang="en-US" oldref="6">Restart numbering</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3153677" xml-lang="en-US" oldref="12"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_FTN_NUM" visibility="visible">Restarts the footnote numbering at the number that you specify.</ahelp></paragraph>
+  <bookmark branch="hid/sw:NumericField:TP_SECTION_FTNENDNOTES:FLD_FTN_OFFSET" xml-lang="en-US" id="bm_id3154190"/><paragraph role="heading" level="3" id="hd_id3149688" l10n="U" xml-lang="en-US" oldref="13">Start at</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3154196" xml-lang="en-US" oldref="14"><ahelp hid="SW:NUMERICFIELD:TP_SECTION_FTNENDNOTES:FLD_FTN_OFFSET" visibility="visible">Enter the number that you want to assign the footnote.</ahelp></paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_FTN_NUM_FMT" xml-lang="en-US" id="bm_id3143277"/><paragraph role="heading" level="3" id="hd_id3155185" l10n="U" xml-lang="en-US" oldref="15">Custom format</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3143283" oldref="16"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_FTN_NUM_FMT" visibility="visible">Specifies a custom numbering format for footnotes.</ahelp> This check box is only available if the <emph>Restart numbering</emph> check box is selected.</paragraph>
+  <bookmark branch="hid/sw:Edit:TP_SECTION_FTNENDNOTES:ED_FTN_PREFIX" xml-lang="en-US" id="bm_id3149821"/><paragraph role="heading" level="3" id="hd_id3151258" l10n="U" xml-lang="en-US" oldref="17">Before</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3149827" xml-lang="en-US" oldref="18"><ahelp hid="SW:EDIT:TP_SECTION_FTNENDNOTES:ED_FTN_PREFIX" visibility="visible">Enter the text that you want to display in front of the footnote number.</ahelp></paragraph>
+  <bookmark branch="hid/sw:ListBox:TP_SECTION_FTNENDNOTES:LB_FTN_NUMVIEW" xml-lang="en-US" id="bm_id3154839"/><paragraph role="heading" level="3" id="hd_id3154827" l10n="U" xml-lang="en-US" oldref="19">Spin button own format</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147092" xml-lang="en-US" oldref="20"><ahelp hid="SW:LISTBOX:TP_SECTION_FTNENDNOTES:LB_FTN_NUMVIEW" visibility="visible">Select the numbering style for the footnotes.</ahelp></paragraph>
+  <bookmark branch="hid/sw:Edit:TP_SECTION_FTNENDNOTES:ED_FTN_SUFFIX" xml-lang="en-US" id="bm_id3147215"/><paragraph role="heading" level="3" id="hd_id3148975" l10n="U" xml-lang="en-US" oldref="21">After</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147221" xml-lang="en-US" oldref="22"><ahelp hid="SW:EDIT:TP_SECTION_FTNENDNOTES:ED_FTN_SUFFIX" visibility="visible">Enter the text that you want to display after the footnote number.</ahelp></paragraph>
+  <paragraph role="heading" level="2" id="hd_id3149044" l10n="U" xml-lang="en-US" oldref="7">Endnotes</paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_END_AT_TXTEND" xml-lang="en-US" id="bm_id3147579"/><paragraph role="heading" level="3" id="hd_id3153639" l10n="U" xml-lang="en-US" oldref="8">Collect at end of section</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147585" xml-lang="en-US" oldref="24"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_END_AT_TXTEND" visibility="visible">Adds endnotes at the end of the section.</ahelp></paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_END_NUM" xml-lang="en-US" id="bm_id3155145"/><paragraph role="heading" level="3" id="hd_id3152780" l10n="U" xml-lang="en-US" oldref="9">Restart numbering</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3153345" xml-lang="en-US" oldref="25"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_END_NUM" visibility="visible">Restarts the endnote numbering at the number that you specify.</ahelp></paragraph>
+  <bookmark branch="hid/sw:NumericField:TP_SECTION_FTNENDNOTES:FLD_END_OFFSET" xml-lang="en-US" id="bm_id3149178"/><paragraph role="heading" level="3" id="hd_id3149166" l10n="U" xml-lang="en-US" oldref="26">Start at</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3156270" xml-lang="en-US" oldref="27"><ahelp hid="SW:NUMERICFIELD:TP_SECTION_FTNENDNOTES:FLD_END_OFFSET" visibility="visible">Enter the number that you want to assign the endnote.</ahelp></paragraph>
+  <bookmark branch="hid/sw:CheckBox:TP_SECTION_FTNENDNOTES:CB_END_NUM_FMT" xml-lang="en-US" id="bm_id3151040"/><paragraph role="heading" level="3" id="hd_id3151027" l10n="U" xml-lang="en-US" oldref="28">Custom format</paragraph>
+  <paragraph l10n="U" xml-lang="en-US" role="paragraph" id="par_id3145776" oldref="29"><ahelp hid="SW:CHECKBOX:TP_SECTION_FTNENDNOTES:CB_END_NUM_FMT" visibility="visible">Specifies a custom numbering format for endnotes.</ahelp> This check box is only available if you the <emph>Restart numbering</emph> check box is selected.</paragraph>
+  <bookmark branch="hid/sw:Edit:TP_SECTION_FTNENDNOTES:ED_END_PREFIX" xml-lang="en-US" id="bm_id3155915"/><paragraph role="heading" level="3" id="hd_id3151383" l10n="U" xml-lang="en-US" oldref="30">Before</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3155921" xml-lang="en-US" oldref="31"><ahelp hid="SW:EDIT:TP_SECTION_FTNENDNOTES:ED_END_PREFIX" visibility="visible">Enter the text that you want to display in front of the endnote number</ahelp></paragraph>
+  <bookmark branch="hid/sw:ListBox:TP_SECTION_FTNENDNOTES:LB_END_NUMVIEW" xml-lang="en-US" id="bm_id3150118"/><paragraph role="heading" level="3" id="hd_id3150699" l10n="U" xml-lang="en-US" oldref="32">Spin button own format</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3150123" xml-lang="en-US" oldref="33"><ahelp hid="SW:LISTBOX:TP_SECTION_FTNENDNOTES:LB_END_NUMVIEW" visibility="visible">Select the numbering style for the endnotes.</ahelp></paragraph>
+  <bookmark branch="hid/sw:Edit:TP_SECTION_FTNENDNOTES:ED_END_SUFFIX" xml-lang="en-US" id="bm_id3147419"/><paragraph role="heading" level="3" id="hd_id3155871" l10n="U" xml-lang="en-US" oldref="34">After</paragraph>
+  <paragraph l10n="U" role="paragraph" id="par_id3147425" xml-lang="en-US" oldref="35"><ahelp hid="SW:EDIT:TP_SECTION_FTNENDNOTES:ED_END_SUFFIX" visibility="visible">Enter the text that you want to display after the endnote number.</ahelp></paragraph>
+  
+ </body>
+</helpdocument>

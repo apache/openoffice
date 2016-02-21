@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="sc_ScChartObj" script:language="StarBasic">
+
+
+'*************************************************************************
+'
+'  Licensed to the Apache Software Foundation (ASF) under one
+'  or more contributor license agreements.  See the NOTICE file
+'  distributed with this work for additional information
+'  regarding copyright ownership.  The ASF licenses this file
+'  to you under the Apache License, Version 2.0 (the
+'  "License"); you may not use this file except in compliance
+'  with the License.  You may obtain a copy of the License at
+'  
+'    http://www.apache.org/licenses/LICENSE-2.0
+'  
+'  Unless required by applicable law or agreed to in writing,
+'  software distributed under the License is distributed on an
+'  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+'  KIND, either express or implied.  See the License for the
+'  specific language governing permissions and limitations
+'  under the License.
+'
+'*************************************************************************
+
+
+
+
+
+' Be sure that all variables are dimensioned:
+option explicit
+
+
+' REQUIRED VARIABLES for interface/service tests:
+
+'Required for com.sun.star.container.XNamed
+Global cNameToSet As String ' "fixed" if name is fixed
+
+
+Sub CreateObj()
+
+'*************************************************************************
+' COMPONENT: 
+' sc.ScChartObj
+'*************************************************************************
+On Error Goto ErrHndl
+    Dim oCharts As Variant
+    Dim oSheet As Object
+    Dim i,j As Integer
+    Dim tRect As New com.sun.star.awt.Rectangle
+    Dim tAddr As New com.sun.star.table.CellRangeAddress
+    Dim oRanges(0) As New com.sun.star.table.CellRangeAddress
+
+
+    oDoc = utils.createDocument("scalc", cObjectName)
+    oSheet = oDoc.Sheets(0)
+
+    ' Filling some cells with the text
+    for i = 1 to 6
+        oSheet.getCellByPosition(0, i).setString("Row" &amp; i)
+        oSheet.getCellByPosition(i, 0).setString("Col" &amp; i)
+    next i
+
+    for i = 1 to 6
+        for j = 1 to 6
+            oSheet.getCellByPosition(i, j).Value = (i + 1) * j
+        next j
+    next i
+
+    tRect.X = 500
+    tRect.Y = 500
+    tRect.Width = 25000
+    tRect.Height = 15000
+
+    tAddr.Sheet = 0
+    tAddr.StartRow = 0
+    tAddr.StartColumn = 0
+    tAddr.EndRow = 6
+    tAddr.EndColumn = 6
+
+    oCharts = oSheet.getCharts()
+    oRanges(0) = tAddr
+    oCharts.addNewByName("ScChartObj", tRect, oRanges(), true, true)
+
+    oObj = oCharts.getByName("ScChartObj")
+
+    cNameToSet = "fixed"
+Exit Sub
+ErrHndl:
+    Test.Exception()
+End Sub
+</script:module>

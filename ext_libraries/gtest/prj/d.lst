@@ -1,0 +1,20 @@
+mkdir: %_DEST%\inc%_EXT%\gtest
+mkdir: %_DEST%\inc%_EXT%\gtest\internal
+..\%__SRC%\inc\gtest\gtest*.h %_DEST%\inc%_EXT%\gtest
+..\%__SRC%\inc\gtest\internal\gtest*.h %_DEST%\inc%_EXT%\gtest\internal
+..\gtest_version.mk %_DEST%\inc%_EXT%
+
+# Mac
+..\%__SRC%\lib\libgtest.*dylib %_DEST%\lib%_EXT%
+#..\%__SRC%\lib\libgtest-main.*dylib %_DEST%\lib%_EXT%
+
+# Linux, BSD, et al
+..\%__SRC%\lib\libgtest.so.*.* %_DEST%\lib%_EXT%
+..\%__SRC%\lib\libgtest.so.* %_DEST%\lib%_EXT%
+linklib: libgtest.so.*.*
+linklib: libgtest.so.*
+
+#..\%__SRC%\lib\libgtest_main.so.*.* %_DEST%\lib%_EXT%
+#..\%__SRC%\lib\libgtest_main.so.* %_DEST%\lib%_EXT%
+#linklib: libgtest_main.so.*.*
+#linklib: libgtest_main.so.*

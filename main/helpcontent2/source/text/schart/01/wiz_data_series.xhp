@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textschart01wiz_data_seriesxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Chart Wizard - Data Series</title>
+<filename>/text/schart/01/wiz_data_series.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id8641621"><bookmark_value>order of chart data</bookmark_value>
+<bookmark_value>data series</bookmark_value>
+</bookmark>
+<paragraph role="heading" id="hd_id6124149" xml-lang="en-US" level="1" l10n="NEW"><variable id="wiz_data_series"><link href="text/schart/01/wiz_data_series.xhp">Chart Wizard - Data Series</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id9651478" xml-lang="en-US" l10n="CHG">On this page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart Wizard</link> you can change the source range of all data series separately, including their labels. You can also change the range of the categories. You can first select the data range on the Data Range page and then remove unnecessary data series or add data series from other cells here.</paragraph>
+<paragraph role="tip" id="par_id6326487" xml-lang="en-US" l10n="NEW">If there seem to be too many options on this page, just define the data range on the Chart Wizard - Data Range page and skip this page.</paragraph>
+<section id="howtoget">
+  <embed href="text/schart/00/00000004.xhp#wiz_ranges"/>
+</section>
+<paragraph role="paragraph" id="par_id686361" xml-lang="en-US" l10n="NEW">This dialog is only available for charts based on a Calc or Writer table.</paragraph>
+<embed href="text/shared/00/00000001.xhp#ShiftF1"/>
+<paragraph role="heading" id="hd_id9241615" xml-lang="en-US" level="2" l10n="NEW">Organizing data series</paragraph>
+<paragraph role="paragraph" id="par_id7159337" xml-lang="en-US" l10n="NEW">In the Data Series list box you see a list of all data series in the current chart.</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id4921720" xml-lang="en-US" l10n="NEW">To organize the data series, select an entry in the list.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id6627094" xml-lang="en-US" l10n="CHG">Click Add to add another data series below the selected entry. The new data series has the same type as the selected entry.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id2926419" xml-lang="en-US" l10n="NEW">Click Remove to remove the selected entry from the Data Series list.</paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id4443800" xml-lang="en-US" l10n="CHG">Use the Up and Down arrow buttons to move the selected entry in the list up or down. This does not change the order in the data source table, but changes only the arrangement in the chart.</paragraph>
+</listitem>
+</list>
+<paragraph role="heading" id="hd_id9777520" xml-lang="en-US" level="2" l10n="NEW">Editing data series</paragraph>
+<list type="ordered">
+<listitem>
+<paragraph role="paragraph" id="par_id1474654" xml-lang="en-US" l10n="NEW">Click an entry in the list to view and edit the properties for that entry.</paragraph>
+<paragraph role="paragraph" id="par_id4855189" xml-lang="en-US" l10n="NEW">In the Data Ranges list box you see the role names and cell ranges of the data series components. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id9475081" xml-lang="en-US" l10n="NEW">Click an entry, then edit the contents in the text box below. </paragraph>
+<paragraph role="paragraph" id="par_id4695272" xml-lang="en-US" l10n="NEW">The label next to the text box states the currently selected role. </paragraph>
+</listitem>
+<listitem>
+<paragraph role="paragraph" id="par_id3931699" xml-lang="en-US" l10n="NEW">Enter the range or click <emph>Select data range</emph> to minimize the dialog and select the range with the mouse.</paragraph>
+<paragraph role="paragraph" id="par_id8626667" xml-lang="en-US" l10n="NEW">If you want a data range of multiple cell areas that are not next to each other, enter the first range, then manually add a semicolon at the end of the text box, then enter the other ranges. Use a semicolon as delimiter between ranges.</paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id5971556" xml-lang="en-US" l10n="NEW">The range for a data role, like Y-Values, must not include a label cell.</paragraph>
+<paragraph role="heading" id="hd_id7622608" xml-lang="en-US" level="2" l10n="NEW">Editing categories or data labels</paragraph>
+<list type="unordered">
+<listitem>
+<paragraph role="paragraph" id="par_id9222693" xml-lang="en-US" l10n="NEW">Enter or select a cell range that will be used as text for categories or data labels. <comment>UFI: red text means what?</comment></paragraph>
+</listitem>
+</list>
+<paragraph role="paragraph" id="par_id9500106" xml-lang="en-US" l10n="NEW">Depending on the chart type, the texts are shown on the X axis or as data labels. </paragraph><comment>Regina: If you enter a range here, the check box "First column as label" (assumed data series in columns) on the Data Range page of the dialog is marked automatically and if you erase the entry in the input field, it is unchecked automatically.</comment><comment>data series list box</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_SERIES_LIST" id="bm_id1831" localize="false"/><paragraph role="paragraph" id="par_id5201879" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Shows a list of all data series in the chart. Click an entry to view and edit that data series. Click <emph>Add</emph> to insert a new series into the list after the selected entry.</ahelp></paragraph><comment>data ranges list box</comment>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_DATA_RANGES_LIST" id="bm_id6718649" localize="false"/><paragraph role="paragraph" id="par_id2571794" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Shows all the data ranges used by the data series that is selected in the Data Series list box. Each data range shows the role name and the source range address.</ahelp></paragraph><comment>range for ... &amp; shrinky</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:Edit:TP_DATA_SOURCE:EDT_RANGE" id="bm_id1857051" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ImageButton:TP_DATA_SOURCE:IMB_RANGE_MAIN" id="bm_id8336741" localize="false"/><paragraph role="paragraph" id="par_id2254402" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Shows the source range address from the second column of the Data Range list box. You can change the range in the text box or by dragging in the document. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp></paragraph><comment>categories &amp; shrinky</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:Edit:TP_DATA_SOURCE:EDT_CATEGORIES" id="bm_id9499496" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/chart2:ImageButton:TP_DATA_SOURCE:IMB_RANGE_CAT" id="bm_id4844508" localize="false"/><paragraph role="paragraph" id="par_id2419507" xml-lang="en-US" l10n="CHG"><ahelp hid="." visibility="hidden">Shows the source range address of the categories (the texts you can see on the x-axis of a category chart). For an XY-chart, the text box contains the source range of the data labels which are displayed for the data points. To minimize this dialog while you select the data range in Calc, click the <emph>Select data range</emph> button.</ahelp></paragraph><comment>add button</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:PushButton:TP_DATA_SOURCE:BTN_ADD" id="bm_id5381328" localize="false"/><paragraph role="paragraph" id="par_id1091647" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Adds a new entry below the current entry in the Data Series list. If an entry is selected, the new data series gets the same chart type.</ahelp></paragraph><comment>Remove button</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:PushButton:TP_DATA_SOURCE:BTN_REMOVE" id="bm_id2036805" localize="false"/><paragraph role="paragraph" id="par_id8831446" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Removes the selected entry from the Data Series list.</ahelp></paragraph><comment>^ up button</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:PushButton:TP_DATA_SOURCE:BTN_UP" id="bm_id2141788" localize="false"/><paragraph role="paragraph" id="par_id7022309" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Moves up the selected entry in the Data Series list.</ahelp></paragraph><comment>v down button</comment>
+<bookmark xml-lang="en-US" branch="hid/chart2:PushButton:TP_DATA_SOURCE:BTN_DOWN" id="bm_id5013885" localize="false"/><paragraph role="paragraph" id="par_id2844019" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Moves down the selected entry in the Data Series list.</ahelp></paragraph>
+<section id="relatedtopics">
+<embed href="text/shared/guide/chart_insert.xhp#chart_insert"/>
+<embed href="text/schart/01/wiz_chart_type.xhp#wiz_chart_type"/>
+<embed href="text/schart/01/wiz_data_range.xhp#wiz_data_range"/>
+<embed href="text/schart/01/wiz_chart_elements.xhp#wiz_chart_elements"/>
+</section>
+</body>
+</helpdocument>

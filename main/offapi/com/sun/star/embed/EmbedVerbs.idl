@@ -1,0 +1,80 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_embed_EmbedVerbs_idl__
+#define __com_sun_star_embed_EmbedVerbs_idl__
+
+
+//============================================================================
+
+module com { module sun { module star { module embed {
+
+//============================================================================
+/** This constants set contains possible verbs for a contained object.
+
+	@see XEmbeddedObject
+*/
+published constants EmbedVerbs
+{
+	//------------------------------------------------------------------------
+	/** lets the object do default activation, as by doubleclick.
+	 */
+	const long MS_OLEVERB_PRIMARY = 0;
+
+	//------------------------------------------------------------------------
+	/** lets the object open itself for editing of viewing.
+	 */
+	const long MS_OLEVERB_SHOW = -1;
+
+	//------------------------------------------------------------------------
+	/** lets the object activate itself outplace.
+	 */
+	const long MS_OLEVERB_OPEN = -2;
+
+	//------------------------------------------------------------------------
+	/** lets the inplace object remove its UI from container.
+	 */
+	const long MS_OLEVERB_HIDE = -3;
+
+	//------------------------------------------------------------------------
+	/** lets the object proceed with UI activation.
+	 */
+	const long MS_OLEVERB_UIACTIVATE = -4;
+
+	//------------------------------------------------------------------------
+	/** lets the object activate itself inplace.
+	 */
+	const long MS_OLEVERB_IPACTIVATE = -5;
+
+	//------------------------------------------------------------------------
+	/** lets the object forget any undo state.
+	 */
+	const long MS_OLEVERB_DISCARDUNDOSTATE = -6;
+
+};
+
+//============================================================================
+
+}; }; }; };
+
+#endif
+

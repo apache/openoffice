@@ -1,0 +1,119 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#include "macros.inc"
+
+Module gid_Module_Optional_Javafilter
+    PackageInfo = "packinfo_office.txt";
+    MOD_NAME_DESC(MODULE_OPTIONAL_JAVAFILTER);
+    Sortkey = "900";
+    ParentID = gid_Module_Optional;
+    Files = ( gid_File_Lib_Jfregca );
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End
+
+Module gid_Module_Optional_Javafilter_Palm
+    MOD_NAME_DESC(MODULE_OPTIONAL_JAVAFILTER_PALM);
+    ParentID = gid_Module_Optional_Javafilter;
+    Sortkey = "100";
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End
+
+Module gid_Module_Optional_Javafilter_Palm_Aportisdoc
+    MOD_NAME_DESC(MODULE_OPTIONAL_JAVAFILTER_PALM_APORTISDOC);
+    ParentID = gid_Module_Optional_Javafilter_Palm;
+    Files = ( gid_File_Jar_Aportisdoc, gid_File_Share_Registry_Palm_Xcd );
+    Sortkey = "100";
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End
+
+Module gid_Module_Optional_Javafilter_Pocketpc
+    ALL_LANG(Name,STR_NAME_MODULE_OPTIONAL_JAVAFILTER_POCKETPC);
+  #ifdef WNT
+    ALL_LANG(Description,STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_WNT);
+  #else
+    ALL_LANG(Description,STR_DESC_MODULE_OPTIONAL_JAVAFILTER_POCKETPC_UNIX);
+  #endif
+    ParentID = gid_Module_Optional_Javafilter;
+    Sortkey = "200";
+    Files = ( gid_File_Lib_Xmergesync );
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End
+
+Module gid_Module_Optional_Javafilter_Pocketpc_Pocket_Word
+    MOD_NAME_DESC(MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_WORD);
+    ParentID = gid_Module_Optional_Javafilter_Pocketpc;
+    Sortkey = "100";
+    Files = ( gid_File_Lib_Xmergesync,gid_File_Jar_Pocketword, gid_File_Share_Registry_Pocketword_Xcd, gid_File_Tmp_Userinstall_Pocketpcword_Inf );
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End
+
+Module gid_Module_Optional_Javafilter_Pocketpc_Pocket_Excel
+    MOD_NAME_DESC(MODULE_OPTIONAL_JAVAFILTER_POCKETPC_POCKET_EXCEL);
+    ParentID = gid_Module_Optional_Javafilter_Pocketpc;
+    Sortkey = "200";
+    Files = ( gid_File_Lib_Xmergesync,gid_File_Jar_Pexcel, gid_File_Share_Registry_Pocketexcel_Xcd, gid_File_Tmp_Userinstall_Pocketpcexcel_Inf );
+    Minimal = NO;
+    Default = NO;
+    Styles (en-US) = ();
+    Styles (de) = ();
+    Styles (ja) = (HIDDEN_ROOT);
+    Styles (ko) = (HIDDEN_ROOT);
+    Styles (zh-CN) = (HIDDEN_ROOT);
+    Styles (zh-TW) = (HIDDEN_ROOT);
+End

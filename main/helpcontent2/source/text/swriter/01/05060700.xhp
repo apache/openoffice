@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textswriter0105060700xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Macro</title>
+<filename>/text/swriter/01/05060700.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2007-01-31T11:56:54">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="makro">
+<!-- removed HID SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN -->
+<paragraph role="heading" id="hd_id3145241" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05060700.xhp" name="Macro">Macro</link></paragraph>
+<paragraph role="paragraph" id="par_id3158429" xml-lang="en-US" l10n="U" oldref="2"><ahelp hid="SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN">Specifies the macro to run when you click a graphic, frame, or an OLE object.</ahelp></paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/swriter/00/00000405.xhp#makrografik"/>
+</section>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_MACRO_HEADERTABLISTBOX" id="bm_id9825434" localize="false"/>
+<paragraph role="heading" id="hd_id3147176" xml-lang="en-US" level="2" l10n="U" oldref="3">Event</paragraph>
+<paragraph role="paragraph" id="par_id3147564" xml-lang="en-US" l10n="CHG" oldref="4"><ahelp hid="SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN">Lists the events that can trigger a macro.</ahelp> Only the events that are relevant to the selected object are listed.</paragraph>
+<paragraph role="paragraph" id="par_id3149286" xml-lang="en-US" l10n="U" oldref="23">The following table lists the object types and the events that can trigger a macro:</paragraph>
+<table id="tbl_id3151173">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152949" xml-lang="en-US" l10n="U" oldref="24">Event</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149808" xml-lang="en-US" l10n="U" oldref="25">Event trigger</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3152957" xml-lang="en-US" l10n="U" oldref="26">OLE object</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154564" xml-lang="en-US" l10n="U" oldref="27">Graphics</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153675" xml-lang="en-US" l10n="U" oldref="28">Frame</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154473" xml-lang="en-US" l10n="U" oldref="29">AutoText</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149684" xml-lang="en-US" l10n="U" oldref="30">ImageMap area</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154197" xml-lang="en-US" l10n="U" oldref="31">Hyperlink</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155182" xml-lang="en-US" l10n="U" oldref="32">Click object</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149489" xml-lang="en-US" l10n="U" oldref="33">object is selected</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151249" xml-lang="en-US" l10n="U" oldref="34">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149104" xml-lang="en-US" l10n="U" oldref="35">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147089" xml-lang="en-US" l10n="U" oldref="36">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153637" xml-lang="en-US" l10n="U" oldref="37">Mouse over object</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147579" xml-lang="en-US" l10n="U" oldref="38">mouse pointer moves over the object</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3152779" xml-lang="en-US" l10n="U" oldref="39">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3153349" xml-lang="en-US" l10n="U" oldref="40">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149174" xml-lang="en-US" l10n="U" oldref="41">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151031" xml-lang="en-US" l10n="U" oldref="42">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145784" xml-lang="en-US" l10n="U" oldref="43">x</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155910" xml-lang="en-US" l10n="U" oldref="44">Trigger Hyperlink</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155857" xml-lang="en-US" l10n="U" oldref="45">hyperlink that is assigned to the object is clicked</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150693" xml-lang="en-US" l10n="U" oldref="46">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147423" xml-lang="en-US" l10n="U" oldref="47">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145256" xml-lang="en-US" l10n="U" oldref="48">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149554" xml-lang="en-US" l10n="U" oldref="49">x</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155976" xml-lang="en-US" l10n="U" oldref="50">Mouse leaves object </paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149216" xml-lang="en-US" l10n="U" oldref="51">mouse pointer moves off the object</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147739" xml-lang="en-US" l10n="U" oldref="52">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3146336" xml-lang="en-US" l10n="U" oldref="53">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149841" xml-lang="en-US" l10n="U" oldref="54">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148436" xml-lang="en-US" l10n="U" oldref="55">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3151082" xml-lang="en-US" l10n="U" oldref="56">x</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154780" xml-lang="en-US" l10n="U" oldref="57">Graphics load successful </paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145304" xml-lang="en-US" l10n="U" oldref="58">graphic is loaded successfully</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150169" xml-lang="en-US" l10n="U" oldref="59">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154718" xml-lang="en-US" l10n="U" oldref="60">Graphics load terminated</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156136" xml-lang="en-US" l10n="U" oldref="61">loading of the graphic is terminated by the user (for example, when downloading)</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156105" xml-lang="en-US" l10n="U" oldref="62">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155079" xml-lang="en-US" l10n="U" oldref="63">Graphics load faulty</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149250" xml-lang="en-US" l10n="U" oldref="64">graphic is not successfully loaded</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154327" xml-lang="en-US" l10n="U" oldref="65">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148779" xml-lang="en-US" l10n="U" oldref="66">Input of alpha characters </paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150030" xml-lang="en-US" l10n="U" oldref="67">text is inputted</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155792" xml-lang="en-US" l10n="U" oldref="68">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154623" xml-lang="en-US" l10n="U" oldref="69">Input of non-alpha characters </paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147391" xml-lang="en-US" l10n="U" oldref="70">Nonprinting characters, such as tabs and line breaks, are entered</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150666" xml-lang="en-US" l10n="U" oldref="71">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149963" xml-lang="en-US" l10n="U" oldref="72">Resize frame</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3147284" xml-lang="en-US" l10n="U" oldref="73">frame is resized</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3150774" xml-lang="en-US" l10n="U" oldref="74">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3148713" xml-lang="en-US" l10n="U" oldref="75">Move frame</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155349" xml-lang="en-US" l10n="U" oldref="76">frame is moved</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155553" xml-lang="en-US" l10n="U" oldref="77">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3154227" xml-lang="en-US" l10n="U" oldref="78">Before inserting AutoText</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3155785" xml-lang="en-US" l10n="U" oldref="79">before AutoText is inserted</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145292" xml-lang="en-US" l10n="U" oldref="80">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3145096" xml-lang="en-US" l10n="U" oldref="81">After inserting AutoText</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3149577" xml-lang="en-US" l10n="U" oldref="82">after AutoText is inserted</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablecontent" id="par_id3156237" xml-lang="en-US" l10n="U" oldref="83">x</paragraph>
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+<tablecell colspan="" rowspan="">
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="note" id="par_id3159203" xml-lang="en-US" l10n="U" oldref="89">For events that are linked to controls in forms, see <link href="text/shared/02/01170103.xhp" name="Control properties">Control properties</link> or <link href="text/shared/02/01170202.xhp" name="Form properties">Form properties</link>.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_MACRO_GROUP" id="bm_id4656819" localize="false"/>
+<paragraph role="heading" id="hd_id3156030" xml-lang="en-US" level="2" l10n="U" oldref="5">Macros</paragraph>
+<paragraph role="paragraph" id="par_id3156043" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid=".">Specify the macro that executes when the selected event occurs.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3156058" xml-lang="en-US" l10n="U" oldref="84">Frames allow you to link certain events to a function that then decides if the event is handled by $[officename] Writer or by the function. See the $[officename] Basic Help for more information.<comment>???</comment></paragraph>
+<paragraph role="heading" id="hd_id3149271" xml-lang="en-US" level="3" l10n="U" oldref="7">Category</paragraph>
+<paragraph role="paragraph" id="par_id3149284" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid="SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN">Lists the $[officename] program and any open $[officename] document.</ahelp> Within this list, select the location where you want to save the macros.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/CUI_HID_MACRO_MACROS" id="bm_id3767815" localize="false"/>
+<paragraph role="heading" id="hd_id3156441" xml-lang="en-US" level="3" l10n="U" oldref="9">Macro name</paragraph>
+<paragraph role="paragraph" id="par_id3148458" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="SFX2:TABPAGE:RID_SFX_TP_MACROASSIGN">Lists the available macros. Select the macro that you want to assign to the selected event, and then click <emph>Assign</emph>.</ahelp></paragraph>
+<!-- removed HID SFX2:PUSHBUTTON:RID_SFX_TP_MACROASSIGN:PB_ASSIGN -->
+<!-- removed HID SFX2:PUSHBUTTON:RID_SFX_SMALLTP_MACROASSIGN:PB_ASSIGN -->
+<paragraph role="heading" id="hd_id3145173" xml-lang="en-US" level="2" l10n="U" oldref="11">Assign</paragraph>
+<paragraph role="paragraph" id="par_id3145197" xml-lang="en-US" l10n="CHG" oldref="12"><ahelp hid="SFX2:PUSHBUTTON:RID_SFX_SMALLTP_MACROASSIGN:PB_ASSIGN">Assigns the selected macro to the selected event.</ahelp></paragraph>
+<!-- removed HID SFX2:PUSHBUTTON:RID_SFX_TP_MACROASSIGN:PB_DELETE -->
+<!-- removed HID SFX2:PUSHBUTTON:RID_SFX_SMALLTP_MACROASSIGN:PB_DELETE -->
+<paragraph role="heading" id="hd_id3150811" xml-lang="en-US" level="2" l10n="U" oldref="15">Remove</paragraph>
+<paragraph role="paragraph" id="par_id3150882" xml-lang="en-US" l10n="U" oldref="16"><variable id="aufheb"><ahelp hid="SFX2:PUSHBUTTON:RID_SFX_SMALLTP_MACROASSIGN:PB_DELETE">Removes the macro assignment from the selected entry.</ahelp>
+</variable></paragraph>
+</body>
+</helpdocument>

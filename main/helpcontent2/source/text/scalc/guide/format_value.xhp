@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textscalcguideformat_valuexml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Formatting Numbers With Decimals</title>
+         <filename>/text/scalc/guide/format_value.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3145367"><bookmark_value>numbers;formatting decimals</bookmark_value>
+      <bookmark_value>formats; numbers in tables</bookmark_value>
+      <bookmark_value>tables; number formats</bookmark_value>
+      <bookmark_value>defaults; number formats in spreadsheets</bookmark_value>
+      <bookmark_value>decimal places;formatting numbers</bookmark_value>
+      <bookmark_value>formatting;numbers with decimals</bookmark_value>
+      <bookmark_value>formatting;adding/deleting decimal places</bookmark_value>
+      <bookmark_value>number formats; adding/deleting decimal places in cells</bookmark_value>
+      <bookmark_value>deleting; decimal places</bookmark_value>
+      <bookmark_value>decimal places; adding/deleting</bookmark_value>
+</bookmark><comment>mw changed "numbers;"</comment>
+<paragraph xml-lang="en-US" id="hd_id3145367" role="heading" level="1" l10n="U" oldref="4"><variable id="format_value"><link href="text/scalc/guide/format_value.xhp" name="Formatting Numbers With Decimals">Formatting Numbers With Decimals</link>
+</variable></paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148576" role="paragraph" l10n="U" oldref="5">Enter a number into the sheet, for example, 1234.5678. This number will be displayed in the default number format, with two decimal places. You will see 1234.57 when you confirm the entry. Only the display in the document will be rounded off; internally, the number retains all four decimal places after the decimal point.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154012" role="paragraph" l10n="U" oldref="12">To format numbers with decimals:</paragraph>
+      <list type="ordered">
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3147394" role="listitem" l10n="U" oldref="6">Set the cursor at the number and choose <emph>Format - Cells</emph> to start the <emph>Format Cells</emph> dialog.</paragraph>
+         </listitem>
+         <listitem>
+            <paragraph xml-lang="en-US" id="par_id3153157" role="listitem" l10n="U" oldref="9">On the <emph>Numbers</emph> tab you will see a selection of predefined number formats. In the bottom right in the dialog you will see a preview of how your current number would look if you were to give it a particular format.</paragraph>
+         </listitem>
+      </list>
+      <table id="tbl_id3149121">
+         <tablerow>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3155766" role="paragraph" l10n="E">
+<image id="img_id3149021" src="res/commandimagelist/sc_numberformatincdecimals.png" width="0.222in" height="0.222in"><alt xml-lang="en-US" id="alt_id3149021">Icon</alt>
+	</image></paragraph>
+            </tablecell>
+            <tablecell>
+               <paragraph xml-lang="en-US" id="par_id3149256" role="paragraph" l10n="CHG" oldref="10">If you only want to modify the number of the decimal places displayed, the easiest method is to use the <emph>Number Format: Add Decimal Place</emph> or <emph>Number Format: Delete Decimal Place</emph> icons on the Formatting Bar.</paragraph>
+            </tablecell>
+         </tablerow>
+      </table>
+
+      <section id="relatedtopics">
+         <embed href="text/scalc/guide/format_value_userdef.xhp#format_value_userdef"/>
+         <embed href="text/scalc/guide/currency_format.xhp#currency_format"/>
+         <embed href="text/shared/01/05020301.xhp#zahlenformatcodes"/>
+         <embed href="text/scalc/guide/text_numbers.xhp#text_numbers"/>
+      </section>
+   </body>
+</helpdocument>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+	
+<helpdocument version="1.0">
+<meta>
+<topic id="textsharedexplorerdatabasetoolbarsxhp" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Toolbars</title>
+<filename>/text/shared/explorer/database/toolbars.xhp</filename>
+</topic>
+<history>
+<created date="2005-02-07T15:19:59">database toolbars</created>
+<lastedited date="2005-06-29T11:37:56"/>
+</history>
+</meta>
+<body>
+<paragraph role="heading" id="par_idN10541" xml-lang="en-US" level="1" l10n="NEW"><variable id="toolbars"><link href="text/shared/explorer/database/toolbars.xhp">Toolbars</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_idN10545" xml-lang="en-US" l10n="NEW">In a database file window, you can see the following toolbars.</paragraph>
+<paragraph role="heading" id="par_idN10548" xml-lang="en-US" level="2" l10n="NEW">Table</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBTableOpen" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN10554" xml-lang="en-US" level="3" l10n="NEW">Open database object</paragraph>
+<paragraph role="paragraph" id="par_idN10558" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected table so you can enter, edit, or delete records.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBTableEdit" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN1056F" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN10573" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected table so you can change the structure.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBTableDelete" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN1058A" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN1058E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Deletes the selected table.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBTableRename" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN105A5" xml-lang="en-US" level="3" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN105A9" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Renames the selected table.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN105B8" xml-lang="en-US" level="2" l10n="NEW">Query</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBQueryOpen" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN105C4" xml-lang="en-US" level="3" l10n="NEW">Open database object</paragraph>
+<paragraph role="paragraph" id="par_idN105C8" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected query so you can enter, edit, or delete records.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBQueryEdit" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN105DF" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN105E3" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected query so you can change the structure.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBQueryDelete" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN105FA" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN105FE" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Deletes the selected query.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBQueryRename" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN10615" xml-lang="en-US" level="3" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN10619" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Renames the selected query.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10628" xml-lang="en-US" level="2" l10n="NEW">Form</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBFormOpen" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN10634" xml-lang="en-US" level="3" l10n="NEW">Open database object</paragraph>
+<paragraph role="paragraph" id="par_idN10638" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected form so you can enter, edit, or delete records.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBFormEdit" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN1064F" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN10653" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected form so you can change the layout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBFormDelete" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN1066A" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN1066E" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Deletes the selected form.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBFormRename" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN10685" xml-lang="en-US" level="3" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN10689" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Renames the selected form.</ahelp></paragraph>
+<paragraph role="heading" id="par_idN10698" xml-lang="en-US" level="2" l10n="NEW">Report</paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBReportOpen" id="bm_id1720023" localize="false"/>
+<paragraph role="heading" id="par_idN106A4" xml-lang="en-US" level="3" l10n="NEW">Open database object</paragraph>
+<paragraph role="paragraph" id="par_idN106A8" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected report so you can enter, edit, or delete records.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBReportEdit" id="bm_id2862636" localize="false"/>
+<paragraph role="heading" id="par_idN106BF" xml-lang="en-US" level="3" l10n="NEW">Edit</paragraph>
+<paragraph role="paragraph" id="par_idN106C3" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Opens the selected report so you can change the layout.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBReportDelete" id="bm_id2447279" localize="false"/>
+<paragraph role="heading" id="par_idN106DA" xml-lang="en-US" level="3" l10n="NEW">Delete</paragraph>
+<paragraph role="paragraph" id="par_idN106DE" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Deletes the selected report.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/.uno:DBReportRename" id="bm_id4928739" localize="false"/>
+<paragraph role="heading" id="par_idN106F5" xml-lang="en-US" level="3" l10n="NEW">Rename</paragraph>
+<paragraph role="paragraph" id="par_idN106F9" xml-lang="en-US" l10n="NEW"><ahelp hid=".">Renames the selected report.</ahelp></paragraph>
+</body>
+</helpdocument>

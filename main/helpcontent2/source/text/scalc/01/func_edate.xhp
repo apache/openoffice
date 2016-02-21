@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+		<helpdocument version="1.0">
+<meta>
+<topic id="textscalc01func_edatexml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">EDATE</title>
+<filename>/text/scalc/01/func_edate.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3151184"><bookmark_value>EDATE function</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/SC_HID_AAI_FUNC_EDATE" id="bm_id3150761" localize="false"/><paragraph role="heading" id="hd_id3151184" xml-lang="en-US" level="2" l10n="U" oldref="213"><variable id="edate"><link href="text/scalc/01/func_edate.xhp">EDATE</link>
+</variable></paragraph>
+<paragraph role="paragraph" id="par_id3150880" xml-lang="en-US" l10n="U" oldref="214"><ahelp hid="HID_AAI_FUNC_EDATE">The result is a date which is a number of m<emph>onths</emph> away from the <emph>start date</emph>. Only months are considered; days are not used for calculation.</ahelp></paragraph>
+<paragraph role="heading" id="hd_id3154647" xml-lang="en-US" level="3" l10n="U" oldref="215">Syntax</paragraph>
+<paragraph role="code" id="par_id3153212" xml-lang="en-US" l10n="U" oldref="216">EDATE(StartDate; Months)</paragraph>
+<paragraph role="paragraph" id="par_id3146860" xml-lang="en-US" l10n="U" oldref="217">
+<emph>StartDate</emph> is a date.</paragraph>
+<paragraph role="paragraph" id="par_id3152929" xml-lang="en-US" l10n="U" oldref="218">
+<emph>Months</emph> is the number of months before (negative) or after (positive) the start date.</paragraph>
+<paragraph role="heading" id="hd_id3151289" xml-lang="en-US" level="3" l10n="U" oldref="219">Example</paragraph>
+<paragraph role="paragraph" id="par_id3155845" xml-lang="en-US" l10n="U" oldref="220">What date is one month prior to 3.31.2001?</paragraph>
+<paragraph role="paragraph" id="par_id3155999" xml-lang="en-US" l10n="U" oldref="221">
+<item type="input">=EDATE(3.31.2001;-1)</item> returns 2.28.2001.</paragraph>
+</body>
+</helpdocument>

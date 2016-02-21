@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<helpdocument version="1.0">
+	
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+	
+<meta>
+      <topic id="textschart0104060000xml" indexer="include" status="PUBLISH">
+         <title xml-lang="en-US" id="tit">Options</title>
+         <filename>/text/schart/01/04060000.xhp</filename>
+      </topic>
+   </meta>
+   <body>
+      <section id="optionen">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149400"><bookmark_value>aligning; 2D charts</bookmark_value>
+         <bookmark_value>charts; aligning</bookmark_value>
+         <bookmark_value>pie charts;options</bookmark_value>
+</bookmark>
+<paragraph xml-lang="en-US" id="hd_id3149400" role="heading" level="1" l10n="U" oldref="1"><link href="text/schart/01/04060000.xhp" name="Options">Options</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155067" role="paragraph" l10n="CHG" oldref="2">Use this dialog to define some options that are available for specific chart types. The contents of the Options dialog vary with the chart type.</paragraph>
+      </section>
+      <section id="howtoget">
+         <embed href="text/schart/00/00000004.xhp#optionen"/>
+      </section>
+      <paragraph xml-lang="en-US" id="hd_id3150043" role="heading" level="2" l10n="U" oldref="9">Align data series to:</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145228" role="paragraph" l10n="U" oldref="10">In this area you can choose between two Y axis scaling modes. The axes can only be scaled and given properties separately.</paragraph>
+<!-- removed HID SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1 -->
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RBT_OPT_AXIS_1" id="bm_id8064516" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3147346" role="heading" level="2" l10n="U" oldref="4">Primary Y axis</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3147005" role="paragraph" l10n="U" oldref="15"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_1">This option is active as default. All data series are aligned to the primary Y axis.</ahelp></paragraph>
+<!-- removed HID SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2 -->
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RBT_OPT_AXIS_2" id="bm_id9959715" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3143221" role="heading" level="2" l10n="U" oldref="5">Secondary Y axis</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3154656" role="paragraph" l10n="U" oldref="11"><ahelp hid="SCH:RADIOBUTTON:TP_OPTIONS:RBT_OPT_AXIS_2">Changes the scaling of the Y axis. This axis is only visible when at least one data series is assigned to it and the axis view is active.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id3166423" role="heading" level="2" l10n="U" oldref="6">Settings</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3150365" role="paragraph" l10n="U" oldref="12">Define the settings for a bar chart in this area. Any changes apply to all data series of the chart, not to the selected data only.</paragraph>
+<!-- removed HID SCH:METRICFIELD:TP_OPTIONS:MT_GAP -->
+<bookmark xml-lang="en-US" branch="hid/chart2:MetricField:TP_OPTIONS:MT_GAP" id="bm_id6286812" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145584" role="heading" level="2" l10n="U" oldref="7">Spacing</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3155376" role="paragraph" l10n="U" oldref="13"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_GAP">Defines the spacing between the columns in percent.</ahelp> The maximal spacing is 600%.</paragraph>
+<!-- removed HID SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP -->
+<bookmark xml-lang="en-US" branch="hid/chart2:MetricField:TP_OPTIONS:MT_OVERLAP" id="bm_id119022" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3145384" role="heading" level="2" l10n="U" oldref="8">Overlap</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3156447" role="paragraph" l10n="U" oldref="14"><ahelp hid="SCH:METRICFIELD:TP_OPTIONS:MT_OVERLAP">Defines the necessary settings for overlapping data series.</ahelp> You can choose between -100 and +100%.</paragraph>
+<!-- removed HID SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR -->
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_OPTIONS:CB_CONNECTOR" id="bm_id5567491" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3153305" role="heading" level="2" l10n="U"
+                 oldref="16">Connection Lines</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3148868" role="paragraph" l10n="U" oldref="17"><ahelp hid="SCH:CHECKBOX:TP_OPTIONS:CB_CONNECTOR">For "stacked" and "percent" column (vertical bar) charts, mark this check box to connect the column layers that belong together with lines.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_OPTIONS:CB_BARS_SIDE_BY_SIDE" id="bm_id8464003" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id9842219" role="heading" level="2" l10n="NEW">Show bars side by side</paragraph>
+      <paragraph xml-lang="en-US" id="par_id9800103" role="paragraph" l10n="NEW">If two axes are shown in a bar chart, and some data series are attached to the first axis, while some other data series are attached to the second axis, then both sets of data series are shown independently, overlapping each other.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2144535" role="paragraph" l10n="NEW">As a result, bars attached to the first y-axis are partly or completely hidden by bars attached to the second y-axis. To avoid this, enable the option to display bars side by side. <ahelp hid=".">The bars from different data series are shown as if they were attached only to one axis.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_POLAROPTIONS:CB_CLOCKWISE" id="bm_id7622913" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id24414" role="heading" level="2" l10n="NEW">Clockwise direction</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2527237" role="paragraph" l10n="NEW">Available for pie and donut charts. <ahelp hid=".">The default direction in which the pieces of a pie chart are ordered is counterclockwise. Enable the <emph>Clockwise direction</emph> checkbox to draw the pieces in opposite direction.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/CHART2_HID_SCH_STARTING_ANGLE_DIAL" id="bm_id2421643" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id401013" role="heading" level="2" l10n="NEW">Starting angle</paragraph>
+      <paragraph xml-lang="en-US" id="par_id761131" role="paragraph" l10n="NEW"><ahelp hid=".">Drag the small dot along the circle or click any position on the circle to set the starting angle of a pie or donut chart. The starting angle is the mathematical angle position where the first piece is drawn. The value of 90 degrees draws the first piece at the 12 o'clock position. A value of 0 degrees starts at the 3 o'clock position.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="par_id553910" role="note" l10n="NEW">In 3D pie and donut charts that were created with older versions of the software, the starting angle is 0 degrees instead of 90 degrees. For old and new 2D charts the default starting angle is 90 degrees.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id1414838" role="note" l10n="NEW">When you change the starting angle or the direction, only current versions of the software show the changed values. Older versions of the software display the same document using the default values: Always counterclockwise direction and a starting value of 90 degrees (2D pie charts) or 0 degrees (3D pie charts).</paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:NumericField:TP_POLAROPTIONS:NF_STARTING_ANGLE" id="bm_id5705740" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id3179723" role="heading" level="2" l10n="NEW">Degrees</paragraph>
+      <paragraph xml-lang="en-US" id="par_id2164067" role="paragraph" l10n="NEW"><ahelp hid=".">Enter the starting angle between 0 and 359 degrees. You can also click the arrows to change the displayed value.</ahelp></paragraph>
+      <paragraph xml-lang="en-US" id="hd_id0305200910524613" role="heading" level="2" l10n="NEW">Plot missing values</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0305200910524650" role="paragraph" l10n="NEW">Sometimes values are missing in a data series that is shown in a chart. You can select from different options how to plot the missing values. The options are available for some chart types only.</paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RB_DONT_PAINT" id="bm_id0305200910520854" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0305200910524823" role="heading" level="2" l10n="NEW">Leave gap</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0305200910524811" role="paragraph" l10n="NEW"><ahelp hid=".">For a missing value, no data will be shown. This is the default for chart types Column, Bar, Line, Net.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RB_ASSUME_ZERO" id="bm_id0305200910522325" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0305200910524811" role="heading" level="2" l10n="NEW">Assume zero</paragraph>
+      <paragraph xml-lang="en-US" id="par_id030520091052489" role="paragraph" l10n="NEW"><ahelp hid=".">For a missing value, the y-value will be shown as zero. This is the default for chart type Area.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:RadioButton:TP_OPTIONS:RB_CONTINUE_LINE" id="bm_id0305200910523975" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0305200910524837" role="heading" level="2" l10n="NEW">Continue line</paragraph>
+      <paragraph xml-lang="en-US" id="par_id0305200910524938" role="paragraph" l10n="NEW"><ahelp hid=".">For a missing value, the interpolation from the neighbor values will be shown. This is the default for chart type XY.</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="hid/chart2:CheckBox:TP_OPTIONS:CB_INCLUDE_HIDDEN_CELLS" id="bm_id0825200904350621" localize="false"/>
+<paragraph xml-lang="en-US" id="hd_id0305200910524937" role="heading" level="2" l10n="NEW">Include values from hidden cells</paragraph>
+      <paragraph xml-lang="en-US" id="par_id030520091052494" role="paragraph" l10n="NEW"><ahelp hid=".">Check to also show values of currently hidden cells within the source cell range.</ahelp></paragraph>
+   </body>
+</helpdocument>

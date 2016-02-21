@@ -1,0 +1,94 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_view_PrintOptions_idl__ 
+#define __com_sun_star_view_PrintOptions_idl__ 
+
+ 
+//============================================================================= 
+ 
+module com {  module sun {  module star {  module view {  
+ 
+//============================================================================= 
+ 
+/** describes the options for print jobs.
+
+	<p>These options are only valid for a single print job. They do not
+	change layout or formatting of the document.
+ */
+published service PrintOptions
+{ 
+	//------------------------------------------------------------------------- 
+	/** specifies the number of copies to print.
+	 */
+	[property] short CopyCount; 
+ 
+	//------------------------------------------------------------------------- 
+	/** if set, specifies the name of a file to print to.
+	 */
+	[property] string FileName; 
+ 
+	//------------------------------------------------------------------------- 
+	/** advises the printer to collate the pages of the copies.
+	 */
+	[property] boolean Collate; 
+ 
+	//------------------------------------------------------------------------- 
+	/** advises the printer to sort the pages of the copies.
+
+		@deprecated 	
+			Use <member>Collate</member> instead.
+	 */
+	[property] boolean Sort; 
+ 
+	//------------------------------------------------------------------------- 
+	/** specifies which pages to print.
+
+		<p>This range is given as at the user interface. For example: "1-4;10"
+		to print the pages 1 to 4 and 10. </p>
+	 */
+	[property] string Pages; 
+ 
+	//------------------------------------------------------------------------- 
+	/** if set to TRUE, the corresponding <type>XPrintable</type>.print() request will
+	    be executed synchronous.
+	    
+	    	<p>Default is the asynchronous print mode.</p>
+	    
+	    @attention	Using of this property with TRUE as value is highly reommended.
+	    		Otherwhise following actions (as e.g. closing the corresponding model) can fail.
+	 */
+	[optional, property] boolean Wait;
+	
+    //------------------------------------------------------------------------- 
+	/** determines the duplex mode for the print job. 
+	    
+	    @see <type>DuplexMode</type> for more information about supported values
+	 */
+    [optional, property] short DuplexMode; 
+}; 
+ 
+//============================================================================= 
+ 
+}; }; }; };  
+ 
+#endif 

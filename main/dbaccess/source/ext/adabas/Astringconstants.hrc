@@ -1,0 +1,99 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+#ifndef ADABASUI_STRINGCONSTANTS_HRC_
+#define ADABASUI_STRINGCONSTANTS_HRC_
+
+#ifndef STRINGCONSTANTS_INCLUDED_INDIRECT
+#error "don't include this file directly! use adabasuistrings.hrc instead!"
+#endif
+
+#ifndef _SAL_TYPES_H_
+#include <sal/types.h>
+#endif
+#ifndef _RTL_USTRING_HXX_
+#include <rtl/ustring.hxx>
+#endif
+
+//============================================================
+//= a helper for static ascii pseudo-unicode strings
+//============================================================
+// string constants
+struct _ConstAsciiString_
+{
+	sal_Int32 length;
+	sal_Char  const* str;
+
+	operator ::rtl::OUString () const { return ::rtl::OUString(str, length, RTL_TEXTENCODING_ASCII_US); }
+	operator const sal_Char* () const { return str; }
+};
+
+#define DECLARE_CONSTASCII_USTRING( name ) \
+	extern _ConstAsciiString_ const name
+
+#define IMPLEMENT_CONSTASCII_USTRING( name, string ) \
+	_ConstAsciiString_ const name = { sizeof(string)-1, string }
+
+//============================================================
+//= property ids
+//============================================================
+
+#define PROPERTY_ID_CREATECATALOG			3
+#define PROPERTY_ID_DATABASENAME			4
+#define PROPERTY_ID_CONTROL_USER			5
+#define PROPERTY_ID_CONTROL_PASSWORD		6
+#define PROPERTY_ID_USER					7
+#define PROPERTY_ID_PASSWORD				8
+#define PROPERTY_ID_CACHESIZE				9
+
+//============================================================
+//= property names
+//============================================================
+
+DECLARE_CONSTASCII_USTRING(PROPERTY_CREATECATALOG);
+DECLARE_CONSTASCII_USTRING(PROPERTY_DATABASENAME);
+DECLARE_CONSTASCII_USTRING(PROPERTY_USER);
+DECLARE_CONSTASCII_USTRING(PROPERTY_CONTROL_USER);
+DECLARE_CONSTASCII_USTRING(PROPERTY_CONTROL_PASSWORD);
+DECLARE_CONSTASCII_USTRING(PROPERTY_SYSDEVSPACE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_TRANSACTION_LOG);
+DECLARE_CONSTASCII_USTRING(PROPERTY_DATADEVSPACE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_BACKUPNAME);
+DECLARE_CONSTASCII_USTRING(PROPERTY_PASSWORD);
+DECLARE_CONSTASCII_USTRING(PROPERTY_CACHESIZE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_CACHESIZE_INCREMENT);
+DECLARE_CONSTASCII_USTRING(PROPERTY_RESTOREDATABASE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_DOMAINPASSWORD);
+DECLARE_CONSTASCII_USTRING(PROPERTY_LOGDEVSIZE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_DATADEVSIZE);
+DECLARE_CONSTASCII_USTRING(PROPERTY_SHUTDOWN);
+
+//============================================================
+//= SQLSTATE
+//============================================================
+DECLARE_CONSTASCII_USTRING(SQLSTATE_GENERAL);
+
+
+#endif // ADABASUI_STRINGCONSTANTS_HRC_
+
+

@@ -1,0 +1,133 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+#ifndef __com_sun_star_sheet_DocumentSettings_idl__
+#define __com_sun_star_sheet_DocumentSettings_idl__
+
+#ifndef __com_sun_star_beans_XPropertySet_idl__ 
+#include <com/sun/star/beans/XPropertySet.idl>
+#endif
+
+#ifndef __com_sun_star_util_Color_idl__
+#include <com/sun/star/util/Color.idl>
+#endif
+
+#ifndef __com_sun_star_document_Settings_idl__
+#include <com/sun/star/document/Settings.idl>
+#endif
+
+//=============================================================================
+
+module com {  module sun {  module star {  module sheet {
+
+//=============================================================================
+
+/** describes properties that apply to the whole spreadsheet document.
+
+    <p>For settings that affect view properties, these settings apply to
+    subsequently created views and are saved with the document, while
+    <type>SpreadsheetViewSettings</type> can be used to alter a specific
+    view that is already open.</p>
+ */
+published service DocumentSettings
+{
+    service com::sun::star::document::Settings;
+	
+    //-------------------------------------------------------------------------
+    /** provides access to the properties.
+     */
+    interface com::sun::star::beans::XPropertySet;
+
+    //-------------------------------------------------------------------------
+
+    /** enables display of zero-values.
+     */
+    [optional, property] boolean ShowZeroValues;
+
+    /** controls whether a marker is shown for notes in cells.
+     */
+    [optional, property] boolean ShowNotes;
+
+    /** enables the display of the cell grid.
+     */
+    [optional, property] boolean ShowGrid;
+
+    /** specifies the color in which the cell grid is displayed.
+     */
+    [optional, property] com::sun::star::util::Color GridColor;
+
+    /** enables display of page breaks.
+     */
+    [optional, property] boolean ShowPageBreaks;
+
+    /** enables the column and row headers of the view.
+     */
+    [optional, property] boolean HasColumnRowHeaders;
+
+    /** enables the sheet tabs of the view.
+     */
+    [optional, property] boolean HasSheetTabs;
+
+    /** enables the display of outline symbols.
+     */
+    [optional, property] boolean IsOutlineSymbolsSet;
+
+    /** enables the restriction of object movement and resizing
+        of drawing objects to the raster.
+     */
+    [optional, property] boolean IsSnapToRaster;
+
+    /** enables the display of the drawing object raster.
+     */
+    [optional, property] boolean RasterIsVisible;
+
+    /** specifies the distance between horizontal grid elements
+        in 1/100 mm.
+     */
+    [optional, property] long RasterResolutionX;
+
+    /** specifies the distance between vertical grid elements
+        in 1/100 mm.
+     */
+    [optional, property] long RasterResolutionY;
+
+    /** specifies the number of subdivisions between two horiontal
+        grid elements.
+     */
+    [optional, property] long RasterSubdivisionX;
+
+    /** specifies the number of subdivisions between two vertical
+        grid elements.
+     */
+    [optional, property] long RasterSubdivisionY;
+
+    /** enables the synchronization of horizontal and vertical
+        grid settings in the user interface.
+     */
+    [optional, property] boolean IsRasterAxisSynchronized;
+};
+
+//=============================================================================
+
+}; }; }; };
+
+#endif

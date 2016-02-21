@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+
+
+
+<helpdocument version="1.0">
+<meta>
+<topic id="textsmath0103090300xml" indexer="include" status="PUBLISH">
+<title id="tit" xml-lang="en-US">Operators</title>
+<filename>/text/smath/01/03090300.xhp</filename>
+</topic>
+<history>
+<created date="2003-10-31T00:00:00">Sun Microsystems, Inc.</created>
+<lastedited date="2006-01-02T13:12:08">converted from old format - fpe</lastedited>
+</history>
+</meta>
+<body>
+<section id="operatoren">
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153150"><bookmark_value>operators; general</bookmark_value>
+<bookmark_value>upper limits</bookmark_value>
+<bookmark_value>limits; in %PRODUCTNAME Math</bookmark_value>
+<bookmark_value>product</bookmark_value>
+<bookmark_value>coproduct</bookmark_value>
+<bookmark_value>lower limits</bookmark_value>
+<bookmark_value>curve integrals</bookmark_value>
+<bookmark_value>user-defined operators; general</bookmark_value>
+<bookmark_value>integrals; signs</bookmark_value>
+<bookmark_value>summation</bookmark_value>
+</bookmark>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_OPERATORS_TBX" id="bm_id3153623" localize="false"/>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_OPERATORS_CAT" id="bm_id3153626" localize="false"/>
+<paragraph role="heading" id="hd_id3153150" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/smath/01/03090300.xhp" name="Operators">Operators</link></paragraph>
+<paragraph role="paragraph" id="par_id3149755" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="HID_SMA_OPERATORS_CAT">You can choose among various operators to structure your <emph>$[officename] Math</emph> formula. All available operators appear in the lower part of the Elements window.</ahelp> They are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All operators not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
+</section>
+<section id="howtoget">
+  <embed href="text/smath/00/00000004.xhp#astopop"/>
+</section>
+<paragraph role="paragraph" id="par_id3153576" xml-lang="en-US" l10n="U" oldref="36">The following is a list of the available operators. An icon next to the operator name indicates that it can be accessed through the Elements window (choose <emph>View - Elements</emph>) or through the context menu of the <emph>Commands</emph> window.</paragraph>
+<paragraph role="heading" id="hd_id3147516" xml-lang="en-US" level="3" l10n="U" oldref="37">Operator Functions</paragraph>
+<table id="tbl_id3154282">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10088" xml-lang="en-US" l10n="F">
+<image id="img_id3152944" src="starmath/res/fo21601.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3152944" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LIMX" id="bm_id3154602" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153527" xml-lang="en-US" l10n="U" oldref="11">Limit</paragraph>
+<paragraph role="paragraph" id="par_id3153540" xml-lang="en-US" l10n="U" oldref="12"><ahelp hid="HID_SMA_LIMX">Inserts the <emph>limit sign</emph> with one placeholder.</ahelp> You can also enter <emph>lim &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150355">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN100C4" xml-lang="en-US" l10n="F">
+<image id="img_id3150970" src="starmath/res/fo21602.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3150970" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_SUMX" id="bm_id3151318" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3154475" xml-lang="en-US" l10n="U" oldref="38">Summation</paragraph>
+<paragraph role="paragraph" id="par_id3147523" xml-lang="en-US" l10n="U" oldref="6"><ahelp hid="HID_SMA_SUMX">Inserts a <emph>summation sign</emph> with one placeholder.</ahelp> You can also enter <emph>sum &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3149342">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10102" xml-lang="en-US" l10n="F">
+<image id="img_id3146932" src="starmath/res/fo21603.png" width="0.25inch" height="0.25inch"><alt id="alt_id3146932" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_PRODX" id="bm_id3155175" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155184" xml-lang="en-US" l10n="U" oldref="40">Product</paragraph>
+<paragraph role="paragraph" id="par_id3151332" xml-lang="en-US" l10n="U" oldref="39"><ahelp hid="HID_SMA_PRODX">Inserts a <emph>product sign</emph> with one placeholder.</ahelp> You can also type <emph>prod &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3151262">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1013E" xml-lang="en-US" l10n="F">
+<image id="img_id3149814" src="starmath/res/fo21604.png" width="0.25inch" height="0.25inch"><alt id="alt_id3149814" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_COPRODX" id="bm_id3148973" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3148982" xml-lang="en-US" l10n="U" oldref="9">Coproduct</paragraph>
+<paragraph role="paragraph" id="par_id3147098" xml-lang="en-US" l10n="U" oldref="10"><ahelp hid="HID_SMA_COPRODX">Inserts a <emph>coproduct symbol</emph> with one placeholder.</ahelp> You can also enter <emph>coprod &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147573">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1017A" xml-lang="en-US" l10n="F">
+<image id="img_id3152766" src="starmath/res/fo21613.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3152766" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FROMXTOY" id="bm_id3155137" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3155146" xml-lang="en-US" l10n="U" oldref="29">Upper and Lower Limit</paragraph>
+<paragraph role="paragraph" id="par_id3153518" xml-lang="en-US" l10n="U" oldref="30"><ahelp hid="HID_SMA_FROMXTOY">Inserts a range statement <emph>upper and lower limit</emph> for integral and summation with one placeholder.</ahelp> You can also type <emph>from{&lt;?&gt;} to{&lt;?&gt;} &lt;?&gt;</emph> directly in the <emph>Commands</emph> window. Limit statements must be combined with the appropriate operators. The limits will be centered above/below the summation character.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3153347">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101B8" xml-lang="en-US" l10n="F">
+<image id="img_id3151023" src="starmath/res/fo21605.png" width="0.25inch" height="0.25inch"><alt id="alt_id3151023" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_INTX" id="bm_id3149166" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149175" xml-lang="en-US" l10n="U" oldref="15">Integral</paragraph>
+<paragraph role="paragraph" id="par_id3156272" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid="HID_SMA_INTX">Inserts an <emph>integral</emph> sign with one placeholder.</ahelp> You can also type <emph>int &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3148754">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN101F4" xml-lang="en-US" l10n="F">
+<image id="img_id3145772" src="starmath/res/fo21606.png" width="0.25inch" height="0.25inch"><alt id="alt_id3145772" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_IINTX" id="bm_id3151370" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151379" xml-lang="en-US" l10n="U" oldref="17">Double Integral</paragraph>
+<paragraph role="paragraph" id="par_id3148879" xml-lang="en-US" l10n="U" oldref="18"><ahelp hid="HID_SMA_IINTX">Inserts a <emph>double integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>iint &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150688">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10230" xml-lang="en-US" l10n="F">
+<image id="img_id3147409" src="starmath/res/fo21607.png" width="0.25inch" height="0.25inch"><alt id="alt_id3147409" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_IIINTX" id="bm_id3147415" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3147618" xml-lang="en-US" l10n="U" oldref="19">Triple Integral</paragraph>
+<paragraph role="paragraph" id="par_id3147489" xml-lang="en-US" l10n="U" oldref="20"><ahelp hid="HID_SMA_IIINTX">Inserts <emph>a triple integral</emph> sign with one placeholder.</ahelp> You can also type <emph>iiint &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3145273">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1026C" xml-lang="en-US" l10n="F">
+<image id="img_id3149562" src="starmath/res/fo21614.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3149562" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_FROMX" id="bm_id3153499" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3153508" xml-lang="en-US" l10n="U" oldref="31">Lower Limit</paragraph>
+<paragraph role="paragraph" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_SMA_FROMX">Inserts a <emph>lower limit</emph> range statement for integral and sum with placeholders.</ahelp> You can also type <emph>from {&lt;?&gt;}&lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3147745">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN102AA" xml-lang="en-US" l10n="F">
+<image id="img_id3147109" src="starmath/res/fo21609.png" width="0.25inch" height="0.25inch"><alt id="alt_id3147109" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LINTX" id="bm_id3149830" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3149839" xml-lang="en-US" l10n="U" oldref="21">Curve Integral</paragraph>
+<paragraph role="paragraph" id="par_id3147592" xml-lang="en-US" l10n="U" oldref="22"><ahelp hid="HID_SMA_LINTX">Inserts a <emph>curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>lint &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3148857">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN102E6" xml-lang="en-US" l10n="F">
+<image id="img_id3147055" src="starmath/res/fo21610.png" width="0.25inch" height="0.25inch"><alt id="alt_id3147055" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LLINTX" id="bm_id3151077" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3151086" xml-lang="en-US" l10n="U" oldref="23">Double Curve Integral</paragraph>
+<paragraph role="paragraph" id="par_id3154770" xml-lang="en-US" l10n="U" oldref="24"><ahelp hid="HID_SMA_LLINTX">Inserts a <emph>double curve integral</emph> symbol with one placeholder.</ahelp> You can also type <emph>llint &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3145315">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN10322" xml-lang="en-US" l10n="F">
+<image id="img_id3154578" src="starmath/res/fo21611.png" width="0.25inch" height="0.25inch"><alt id="alt_id3154578" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_LLLINTX" id="bm_id3153305" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3150161" xml-lang="en-US" l10n="U" oldref="25">Triple Curve Integral</paragraph>
+<paragraph role="paragraph" id="par_id3150175" xml-lang="en-US" l10n="CHG" oldref="26"><ahelp hid="HID_SMA_LLLINTX">Inserts a <emph>triple curve integral</emph> sign with one placeholder.</ahelp> You can also type <emph>lllint &lt;?&gt;</emph> directly in the <emph>Commands</emph> window.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<table id="tbl_id3150450">
+<tablerow>
+<tablecell colspan="" rowspan="">
+<paragraph role="paragraph" id="par_idN1035E" xml-lang="en-US" l10n="F">
+<image id="img_id3149332" src="starmath/res/fo21615.png" width="0.3335inch" height="0.3335inch"><alt id="alt_id3149332" xml-lang="en-US">Icon</alt>
+	</image></paragraph>
+<bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_TOX" id="bm_id3145334" localize="false"/>
+</tablecell>
+<tablecell colspan="" rowspan="">
+<paragraph role="tablehead" id="par_id3145343" xml-lang="en-US" l10n="U" oldref="33">Upper Limit</paragraph>
+<paragraph role="paragraph" id="par_id3154715" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_SMA_TOX">Inserts the range statement <emph>upper limit</emph> for integral and summation with placeholders</ahelp> You can also type <emph>to &lt;?&gt;&lt;?&gt;</emph> directly in the <emph>Commands</emph> window. Limit statements can only be used if combined with the appropriate operators.</paragraph>
+</tablecell>
+</tablerow>
+</table>
+
+<paragraph role="tip" id="par_id3149233" xml-lang="en-US" l10n="U" oldref="47">You can also add limits to an operator (for example, an integral) by first clicking the desired operator and then clicking the <emph>limit</emph> symbol. This method is faster than typing the commands directly.</paragraph>
+<paragraph role="paragraph" id="par_id3155076" xml-lang="en-US" l10n="CHG" oldref="42">The command <emph>liminf</emph> inserts the <emph>limit inferior</emph> with one placeholder.</paragraph>
+<paragraph role="paragraph" id="par_id3154323" xml-lang="en-US" l10n="CHG" oldref="43">The command <emph>limsup</emph> inserts the <emph>limit superior</emph> with one placeholder.</paragraph>
+<paragraph role="paragraph" id="par_id3146956" xml-lang="en-US" l10n="U" oldref="45">By typing <emph>oper</emph> in the Commands window, you can insert <emph>user-defined operators</emph> in $[officename] Math, a feature useful for incorporating special characters into a formula. An example is <emph>oper %theta x</emph>. Using the <emph>oper</emph> command, you can also insert characters not in the default $[officename] character set. <emph>oper</emph> can also be used in connection with limits; for example, <emph>oper %union from {i=1} to n x_{i}</emph>. In this example, the union symbol is indicated by the name <emph>union</emph>. However, this is not one of the predefined symbols. To define it, choose <emph>Tools - Catalog</emph>. select <emph>Special</emph> as the symbol set in the dialog that appears, then click the <emph>Edit</emph> button. In the next dialog, select <emph>Special</emph> as the symbol set again. Enter a meaningful name in the <emph>Symbol</emph> text box, for example, "union" and then click the union symbol in the set of symbols. Click <emph>Add</emph> and then <emph>OK</emph>. Click <emph>Close</emph> to close the <emph>Symbols</emph> dialog. You are now finished and can type the union symbol in the Commands window, by entering <emph>oper %union</emph>.</paragraph>
+<paragraph role="tip" id="par_id3154243" xml-lang="en-US" l10n="U" oldref="48">Limits can be arranged in ways other than centered above/below the operator. Use the options provided by $[officename] Math for working with superscript and subscript indexes. For example, type <emph>sum_a^b c</emph> in the Commands window to arrange the limits to the right of the sum symbol. If your limit entries contain longer expressions, you must put them in group brackets, for example, sum_{i=1}^{2*n} b. When formulas are imported from older versions this is done automatically. To change the spacing (gaps) between the characters choose <emph>Format - Spacing - Category - </emph><link href="text/smath/01/05030000.xhp" name="Indexes"><emph>Indexes</emph></link> or <emph>Format - Spacing - Category - </emph><link href="text/smath/01/05030000.xhp" name="Limits"><emph>Limits</emph></link>. Additional basic information about indexes is given elsewhere in the <link href="text/smath/01/03091200.xhp" name="Help">Help</link>.</paragraph>
+<paragraph role="warning" id="par_id3155956" xml-lang="en-US" l10n="U" oldref="46">When you type information manually in the Commands window, note that a number of operators require spaces for correct structure. This is especially true when your operators are supplied with values instead of placeholders, for example, lim a_{n}=a.</paragraph>
+</body>
+</helpdocument>

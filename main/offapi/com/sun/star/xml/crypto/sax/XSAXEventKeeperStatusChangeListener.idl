@@ -1,0 +1,74 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+ 
+//i20156 - new file for xmlsecurity module
+
+/** -- idl definition -- **/
+
+#ifndef __com_sun_star_xml_crypto_sax_xsaxeventkeeperstatuschangelistener_idl_
+#define __com_sun_star_xml_crypto_sax_xsaxeventkeeperstatuschangelistener_idl_
+
+#include <com/sun/star/uno/XInterface.idl>
+#include <com/sun/star/uno/Exception.idl>
+
+module com { module sun { module star { module xml { module crypto { module sax {
+
+/**
+ * Interface of SAXEventKeeper Status Change Listener.
+ * <p>
+ * This interface is used to receive the SAXEventKeeper status change notification.
+ */
+interface XSAXEventKeeperStatusChangeListener : com::sun::star::uno::XInterface
+{
+	/**
+	 * Notifies the SAXEventKeeper is entering/leaving blocking state.
+	 *
+	 * @param isBlocking   <code>true</code> if the SAXEventKeeper is
+	 *                     entering blocking state, <code>false</code>
+	 *                     otherwise
+	 */
+	void blockingStatusChanged([in] boolean isBlocking);
+
+	/**
+	 * Notifies the SAXEventKeeper is entering/leaving collecting state.
+	 *
+	 * @param isInsideCollectedElement   <code>true</code> if the SAXEventKeeper is
+	 *                                   collecting some element, <code>false</code>
+	 *                                   otherwise
+	 */
+	void collectionStatusChanged([in] boolean isInsideCollectedElement);
+
+	/**
+	 * Notifies the SAXEventKeeper's buffer is empty/not empty
+	 *
+	 * @param isBufferEmpty   <code>true</code> if the SAXEventKeeper has no buffer
+	 *                        at all; <code>false</code> otherwise.
+	 */
+	void bufferStatusChanged([in] boolean isBufferEmpty);
+};
+
+} ; } ; } ; } ; } ; } ;
+
+
+#endif
+

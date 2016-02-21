@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><helpdocument version="1.0">
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+ 
+<meta>
+<topic id="topic_0805201012483523">
+<title xml-lang="en-US" id="tit">Setting the Document Root for Help Authoring</title>
+<filename>org.openoffice.helpauthoring/ha-docroot.xhp</filename>
+</topic>
+</meta>
+<body>
+<bookmark xml-lang="en-US" branch="hid/vnd.sun.star.script:HelpAuthoring.Helpers.SetDocumentRoot?language=Basic&amp;location=application" id="bm_id0713201003430568" localize="false"/>
+<paragraph id="par_id0805201012483620" role="paragraph" xml-lang="en-US"><ahelp hid="" visibility="hidden">Sets the root directory for the help documents. This is an important step since it determines the appearance of the relative URLs for links and embedded content in the help files. Select the folder that is the last in the path that should not appear in the URLs. For example, for core help files this would be "...helpcontent2/source/".</ahelp></paragraph>
+<bookmark xml-lang="en-US" branch="index" id="bm_id0805201012491583">
+<bookmark_value>Help Authoring;Document Root</bookmark_value>
+</bookmark>
+<paragraph id="hd_id0804201004494931" role="heading" xml-lang="en-US" level="2">Setting the Document Root for Help Authoring</paragraph>
+<paragraph id="par_id080420100449499" role="paragraph" xml-lang="en-US">The document root entry is required to correctly compute relative URLs for images, links and trandscluded (embedded) content. Make sure that you always have your document root set correctly, before working on a help file (unless you know what you are doing).</paragraph>
+<paragraph id="par_id0804201004494922" role="paragraph" xml-lang="en-US">When working on core help files, i.e. the ones inside the helpcontent2 module, the document root must be set to the <emph>helpcontent2/source</emph> directory. For example, <item type="literal">/cws/so-cwsserv01/hcshared99/DEV300/ooo.m99/helpcontent2/source</item>.</paragraph>
+<paragraph id="par_id0804201004494943" role="paragraph" xml-lang="en-US">When working on extension help files, the document root must be set to the help/en-US directory that contains the directory named after the extension identifier. For example, <item type="literal">/cws/so-cwsserv01/anextension/DEV300/sun.m99/weird_ext/help/en-US</item>.</paragraph>
+</body>
+</helpdocument>

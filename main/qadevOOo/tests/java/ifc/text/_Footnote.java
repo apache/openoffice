@@ -1,0 +1,52 @@
+/**************************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ *************************************************************/
+
+
+
+package ifc.text;
+
+import lib.MultiPropertyTest;
+
+/**
+* Testing <code>com.sun.star.text.Footnote</code>
+* service properties :
+* <ul>
+*  <li><code> ReferenceId</code></li>
+* </ul> <p>
+* Properties testing is automated by <code>lib.MultiPropertyTest</code>.
+* @see com.sun.star.text.Footnote
+*/
+public class _Footnote extends MultiPropertyTest {
+
+    /**
+    * This property can be VOID, and in case if it is so new
+    * value must be defined.
+    */
+    public void _ReferenceId() {
+        final Short val1 = new Short( (short) 1);
+        final Short val2 = new Short( (short) 2);
+
+        log.println("Testing with custom Property tester");
+        testProperty("ReferenceId", val1, val2);
+    }
+
+} //finish class _Footnote
+

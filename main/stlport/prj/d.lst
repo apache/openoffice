@@ -1,0 +1,4 @@
+mkdir: %_DEST%\inc%_EXT%\stl
+..\%__SRC%\inc\stlport\* %_DEST%\inc%_EXT%\stl\*
+..\systemstlguards\*.h %_DEST%\inc%_EXT%\stl\*.h
+
