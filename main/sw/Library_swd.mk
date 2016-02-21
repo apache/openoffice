@@ -34,7 +34,11 @@ $(eval $(call gb_Library_set_include,swd,\
 	-I$(SRCDIR)/sw/source/core/inc \
 	-I$(SRCDIR)/sw/source/filter/inc \
 	-I$(SRCDIR)/sw/source/ui/inc \
-	-I$(OUTDIR)/inc/offuh \
+))
+
+$(eval $(call gb_Library_add_api,swd,\
+	udkapi \
+	offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,swd,\

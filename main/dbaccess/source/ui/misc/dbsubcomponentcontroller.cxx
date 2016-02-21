@@ -50,7 +50,7 @@
 #include <connectivity/dbtools.hxx>
 #include <cppuhelper/typeprovider.hxx>
 #include <rtl/ustrbuf.hxx>
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 #include <tools/debug.hxx>
 #include <tools/diagnose_ex.h>
 #include <vcl/msgbox.hxx>

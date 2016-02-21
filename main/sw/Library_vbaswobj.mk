@@ -33,8 +33,13 @@ $(eval $(call gb_Library_set_include,vbaswobj,\
 	-I$(SRCDIR)/sw/inc \
 	-I$(WORKDIR)/Misc/sw/ \
 	$$(INCLUDE) \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc/ \
+))
+
+$(eval $(call gb_Library_add_api,vbaswobj,\
+	udkapi \
+	offapi \
+	oovbaapi \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vbaswobj,\

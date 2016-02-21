@@ -40,7 +40,7 @@
 #include "JoinController.hxx"
 #endif
 #ifndef _TOOLKIT_HELPER_VCLUNOHELPER_HXX_ 
-#include <toolkit/unohlp.hxx>
+#include <toolkit/helper/vclunohelper.hxx>
 #endif
 #ifndef DBACCESS_SHARED_DBUSTRINGS_HRC
 #include "dbustrings.hrc"

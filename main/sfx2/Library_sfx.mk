@@ -34,6 +34,11 @@ $(eval $(call gb_Library_add_sdi_headers,sfx,sfx2/sdi/sfxslots))
 
 $(eval $(call gb_Library_set_componentfile,sfx,sfx2/util/sfx))
 
+$(eval $(call gb_Library_add_api,sfx,\
+	udkapi \
+	offapi \
+))
+
 $(eval $(call gb_Library_set_include,sfx,\
 	-I$(SRCDIR)/sfx2/inc \
 	-I$(SRCDIR)/sfx2/inc/sfx2 \
@@ -42,7 +47,6 @@ $(eval $(call gb_Library_set_include,sfx,\
 	-I$(WORKDIR)/SdiTarget/sfx2/sdi \
 	-I$(WORKDIR)/inc/ \
 	$$(INCLUDE) \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc \
 	$(LIBXML_CFLAGS) \
 ))

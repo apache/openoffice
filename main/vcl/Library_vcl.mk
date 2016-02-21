@@ -35,12 +35,16 @@ endif
 
 $(eval $(call gb_Library_add_package_headers,vcl,vcl_inc))
 
+$(eval $(call gb_Library_add_api,vcl,\
+	udkapi \
+	offapi \
+))
+
 $(eval $(call gb_Library_set_include,vcl,\
 	$$(INCLUDE) \
 	-I$(SRCDIR)/vcl/inc \
 	-I$(SRCDIR)/vcl/inc/pch \
 	-I$(SRCDIR)/solenv/inc \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc/stl \
 	-I$(OUTDIR)/inc \
     $$(FREETYPE_CFLAGS) \
