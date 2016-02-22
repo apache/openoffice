@@ -33,7 +33,11 @@ $(eval $(call gb_Library_set_include,forui,\
 	-I$(SRCDIR)/formula/inc/pch \
 	-I$(SRCDIR)/formula/source/ui/inc \
 	-I$(OUTDIR)/inc \
-	-I$(OUTDIR)/inc/offuh \
+))
+
+$(eval $(call gb_Library_add_api,forui, \
+        udkapi \
+        offapi \
 ))
 
 $(eval $(call gb_Library_set_defs,forui,\
