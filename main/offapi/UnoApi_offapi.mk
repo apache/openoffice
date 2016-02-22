@@ -43,6 +43,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_nohdl,offapi,\
     offapi/com/sun/star/awt/ContainerWindowProvider \
     offapi/com/sun/star/awt/DialogProvider \
     offapi/com/sun/star/awt/DialogProvider2 \
+    offapi/com/sun/star/awt/PrinterServer \
     offapi/com/sun/star/awt/UnoControlDialogModelProvider \
     offapi/com/sun/star/awt/grid/DefaultGridDataModel \
     offapi/com/sun/star/awt/grid/SortableGridDataModel \
@@ -146,6 +147,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_nohdl,offapi,\
     offapi/com/sun/star/task/OfficeRestartManager \
     offapi/com/sun/star/task/PasswordContainerInteractionHandler \
     offapi/com/sun/star/ucb/CommandEnvironment \
+    offapi/com/sun/star/ui/ContextChangeEventMultiplexer \
     offapi/com/sun/star/ui/GlobalAcceleratorConfiguration \
     offapi/com/sun/star/ui/WindowContentFactory \
     offapi/com/sun/star/ui/dialogs/Wizard \
@@ -159,6 +161,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/accessibility/AccessBridge \
     offapi/com/sun/star/accessibility/Accessible \
     offapi/com/sun/star/accessibility/AccessibleContext \
+    offapi/com/sun/star/accessibility/MSAAService \
     offapi/com/sun/star/auth/SSOExceptions \
     offapi/com/sun/star/auth/SSOManagerFactory \
     offapi/com/sun/star/auth/SSOPasswordCache \
@@ -249,12 +252,8 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/awt/UnoControlRoadmapModel \
     offapi/com/sun/star/awt/UnoControlScrollBar \
     offapi/com/sun/star/awt/UnoControlScrollBarModel \
-    offapi/com/sun/star/awt/UnoControlSimpleAnimation \
-    offapi/com/sun/star/awt/UnoControlSimpleAnimationModel \
     offapi/com/sun/star/awt/UnoControlSpinButton \
     offapi/com/sun/star/awt/UnoControlSpinButtonModel \
-    offapi/com/sun/star/awt/UnoControlThrobber \
-    offapi/com/sun/star/awt/UnoControlThrobberModel \
     offapi/com/sun/star/awt/UnoControlTimeField \
     offapi/com/sun/star/awt/UnoControlTimeFieldModel \
     offapi/com/sun/star/awt/XLayoutFlowContainer \
@@ -583,6 +582,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/frame/Task \
     offapi/com/sun/star/frame/TemplateAccess \
     offapi/com/sun/star/frame/ToolbarController \
+    offapi/com/sun/star/frame/ToolbarControllerFactory \
     offapi/com/sun/star/frame/TransientDocumentsDocumentContentFactory \
     offapi/com/sun/star/gallery/GalleryItem \
     offapi/com/sun/star/gallery/GalleryTheme \
@@ -905,11 +905,8 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/style/StyleFamily \
     offapi/com/sun/star/sync/SyncCollector \
     offapi/com/sun/star/sync/Synchronizer \
-    offapi/com/sun/star/system/ProxySettings \
-    offapi/com/sun/star/system/SOffice52ProxySettings \
-    offapi/com/sun/star/system/SimpleCommandMail \
-    offapi/com/sun/star/system/SimpleSystemMail \
-    offapi/com/sun/star/system/SystemProxySettings \
+    offapi/com/sun/star/system/MailClientFlags \
+    offapi/com/sun/star/system/SystemMailProvider \
     offapi/com/sun/star/system/SystemShellExecute \
     offapi/com/sun/star/table/AccessibleCellView \
     offapi/com/sun/star/table/AccessibleTableView \
@@ -1269,7 +1266,10 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/accessibility/XAccessibleEditableText \
     offapi/com/sun/star/accessibility/XAccessibleEventBroadcaster \
     offapi/com/sun/star/accessibility/XAccessibleEventListener \
+    offapi/com/sun/star/accessibility/XAccessibleExtendedAttributes \
     offapi/com/sun/star/accessibility/XAccessibleExtendedComponent \
+    offapi/com/sun/star/accessibility/XAccessibleGetAccFlowTo \
+    offapi/com/sun/star/accessibility/XAccessibleGroupPosition \
     offapi/com/sun/star/accessibility/XAccessibleHyperlink \
     offapi/com/sun/star/accessibility/XAccessibleHypertext \
     offapi/com/sun/star/accessibility/XAccessibleImage \
@@ -1279,10 +1279,13 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/accessibility/XAccessibleSelection \
     offapi/com/sun/star/accessibility/XAccessibleStateSet \
     offapi/com/sun/star/accessibility/XAccessibleTable \
+    offapi/com/sun/star/accessibility/XAccessibleTableSelection \
     offapi/com/sun/star/accessibility/XAccessibleText \
     offapi/com/sun/star/accessibility/XAccessibleTextAttributes \
     offapi/com/sun/star/accessibility/XAccessibleTextMarkup \
+    offapi/com/sun/star/accessibility/XAccessibleTextSelection \
     offapi/com/sun/star/accessibility/XAccessibleValue \
+    offapi/com/sun/star/accessibility/XMSAAService \
     offapi/com/sun/star/animations/AnimationAdditiveMode \
     offapi/com/sun/star/animations/AnimationCalcMode \
     offapi/com/sun/star/animations/AnimationColorSpace \
@@ -1356,6 +1359,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/Gradient \
     offapi/com/sun/star/awt/GradientStyle \
     offapi/com/sun/star/awt/ImageAlign \
+    offapi/com/sun/star/awt/ImageDrawMode \
     offapi/com/sun/star/awt/ImagePosition \
     offapi/com/sun/star/awt/ImageScaleMode \
     offapi/com/sun/star/awt/ImageStatus \
@@ -1374,9 +1378,9 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/MenuEvent \
     offapi/com/sun/star/awt/MenuItemStyle \
     offapi/com/sun/star/awt/MenuItemType \
-    offapi/com/sun/star/awt/MenuLogo \
     offapi/com/sun/star/awt/MessageBoxButtons \
-    offapi/com/sun/star/awt/MessageBoxCommand \
+    offapi/com/sun/star/awt/MessageBoxResults \
+    offapi/com/sun/star/awt/MessageBoxType \
     offapi/com/sun/star/awt/MouseButton \
     offapi/com/sun/star/awt/MouseEvent \
     offapi/com/sun/star/awt/MouseWheelBehavior \
@@ -1461,9 +1465,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/XListBox \
     offapi/com/sun/star/awt/XMenu \
     offapi/com/sun/star/awt/XMenuBar \
-    offapi/com/sun/star/awt/XMenuBarExtended \
-    offapi/com/sun/star/awt/XMenuExtended \
-    offapi/com/sun/star/awt/XMenuExtended2 \
     offapi/com/sun/star/awt/XMenuListener \
     offapi/com/sun/star/awt/XMessageBox \
     offapi/com/sun/star/awt/XMessageBoxFactory \
@@ -1477,7 +1478,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/XPatternField \
     offapi/com/sun/star/awt/XPointer \
     offapi/com/sun/star/awt/XPopupMenu \
-    offapi/com/sun/star/awt/XPopupMenuExtended \
     offapi/com/sun/star/awt/XPrinter \
     offapi/com/sun/star/awt/XPrinterPropertySet \
     offapi/com/sun/star/awt/XPrinterServer \
@@ -1488,7 +1488,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/XRequestCallback \
     offapi/com/sun/star/awt/XReschedule \
     offapi/com/sun/star/awt/XScrollBar \
-    offapi/com/sun/star/awt/XSimpleAnimation \
     offapi/com/sun/star/awt/XSimpleTabController \
     offapi/com/sun/star/awt/XSpinField \
     offapi/com/sun/star/awt/XSpinListener \
@@ -1507,7 +1506,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/XTextEditField \
     offapi/com/sun/star/awt/XTextLayoutConstrains \
     offapi/com/sun/star/awt/XTextListener \
-    offapi/com/sun/star/awt/XThrobber \
     offapi/com/sun/star/awt/XTimeField \
     offapi/com/sun/star/awt/XToggleButton \
     offapi/com/sun/star/awt/XToolkit \
@@ -1540,7 +1538,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/awt/grid/XGridDataModel \
     offapi/com/sun/star/awt/grid/XGridRowSelection \
     offapi/com/sun/star/awt/grid/XGridSelectionListener \
-    offapi/com/sun/star/awt/grid/XMutableGridDataModel \
     offapi/com/sun/star/awt/grid/XMutableGridDataModel \
     offapi/com/sun/star/awt/grid/XSortableGridData \
     offapi/com/sun/star/awt/grid/XSortableMutableGridDataModel \
@@ -2203,6 +2200,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/frame/XTitleChangeListener \
     offapi/com/sun/star/frame/XToolbarController \
     offapi/com/sun/star/frame/XTransientDocumentsDocumentContentFactory \
+    offapi/com/sun/star/frame/XUIControllerFactory \
     offapi/com/sun/star/frame/XUIControllerRegistration \
     offapi/com/sun/star/frame/XUntitledNumbers \
     offapi/com/sun/star/frame/XUrlList \
@@ -3038,6 +3036,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/smarttags/SmartTagRecognizerMode \
     offapi/com/sun/star/smarttags/XSmartTagAction \
     offapi/com/sun/star/smarttags/XSmartTagRecognizer \
+    offapi/com/sun/star/smarttags/XRangeBasedSmartTagRecognizer \
     offapi/com/sun/star/style/BreakType \
     offapi/com/sun/star/style/CaseMap \
     offapi/com/sun/star/style/DropCapFormat \
@@ -3077,13 +3076,11 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/sync/XSyncCollector \
     offapi/com/sun/star/sync/XSynchronizer \
     offapi/com/sun/star/sync2/BadPartnershipException \
-    offapi/com/sun/star/system/SimpleMailClientFlags \
     offapi/com/sun/star/system/SystemShellExecuteException \
     offapi/com/sun/star/system/SystemShellExecuteFlags \
-    offapi/com/sun/star/system/XProxySettings \
-    offapi/com/sun/star/system/XSimpleMailClient \
-    offapi/com/sun/star/system/XSimpleMailClientSupplier \
-    offapi/com/sun/star/system/XSimpleMailMessage \
+    offapi/com/sun/star/system/XMailClient \
+    offapi/com/sun/star/system/XMailMessage \
+    offapi/com/sun/star/system/XSystemMailProvider \
     offapi/com/sun/star/system/XSystemShellExecute \
     offapi/com/sun/star/table/BorderLine \
     offapi/com/sun/star/table/CellAddress \
@@ -3225,6 +3222,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/text/XLineNumberingSupplier \
     offapi/com/sun/star/text/XMailMergeBroadcaster \
     offapi/com/sun/star/text/XMailMergeListener \
+    offapi/com/sun/star/text/XMarkingAccess \
     offapi/com/sun/star/text/XModule \
     offapi/com/sun/star/text/XMultiTextMarkup \
     offapi/com/sun/star/text/XNumberingFormatter \
@@ -3320,6 +3318,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/ucb/InteractiveIOException \
     offapi/com/sun/star/ucb/InteractiveLockingException \
     offapi/com/sun/star/ucb/InteractiveLockingLockExpiredException \
+    offapi/com/sun/star/ucb/InteractiveLockingLockNotAvailableException \
     offapi/com/sun/star/ucb/InteractiveLockingLockedException \
     offapi/com/sun/star/ucb/InteractiveLockingNotLockedException \
     offapi/com/sun/star/ucb/InteractiveNetworkConnectException \
@@ -3353,6 +3352,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/ucb/PostCommandArgument \
     offapi/com/sun/star/ucb/PostCommandArgument2 \
     offapi/com/sun/star/ucb/Priority \
+    offapi/com/sun/star/ucb/PropertyCommandArgument \
     offapi/com/sun/star/ucb/PropertyValueInfo \
     offapi/com/sun/star/ucb/PropertyValueState \
     offapi/com/sun/star/ucb/RecipientInfo \
@@ -3383,6 +3383,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/ucb/UnsupportedNameClashException \
     offapi/com/sun/star/ucb/UnsupportedOpenModeException \
     offapi/com/sun/star/ucb/VerificationMode \
+    offapi/com/sun/star/ucb/WebDAVHTTPMethod \
     offapi/com/sun/star/ucb/WelcomeDynamicResultSetStruct \
     offapi/com/sun/star/ucb/XAnyCompare \
     offapi/com/sun/star/ucb/XAnyCompareFactory \
@@ -3444,20 +3445,27 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/ucb/XWebDAVCommandEnvironment \
     offapi/com/sun/star/ui/ActionTriggerSeparatorType \
     offapi/com/sun/star/ui/ConfigurationEvent \
+    offapi/com/sun/star/ui/ContextChangeEventObject \
     offapi/com/sun/star/ui/ContextMenuExecuteEvent \
     offapi/com/sun/star/ui/ContextMenuInterceptorAction \
     offapi/com/sun/star/ui/DockingArea \
     offapi/com/sun/star/ui/ImageType \
     offapi/com/sun/star/ui/ItemStyle \
     offapi/com/sun/star/ui/ItemType \
+    offapi/com/sun/star/ui/LayoutSize \
     offapi/com/sun/star/ui/UIElementType \
     offapi/com/sun/star/ui/XAcceleratorConfiguration \
+    offapi/com/sun/star/ui/XContextChangeEventListener \
+    offapi/com/sun/star/ui/XContextChangeEventMultiplexer \
     offapi/com/sun/star/ui/XContextMenuInterception \
     offapi/com/sun/star/ui/XContextMenuInterceptor \
     offapi/com/sun/star/ui/XDockingAreaAcceptor \
     offapi/com/sun/star/ui/XImageManager \
     offapi/com/sun/star/ui/XModuleUIConfigurationManager \
     offapi/com/sun/star/ui/XModuleUIConfigurationManagerSupplier \
+    offapi/com/sun/star/ui/XSidebar \
+    offapi/com/sun/star/ui/XSidebarPanel \
+    offapi/com/sun/star/ui/XStatusbarItem \
     offapi/com/sun/star/ui/XToolPanel \
     offapi/com/sun/star/ui/XUIConfiguration \
     offapi/com/sun/star/ui/XUIConfigurationListener \
