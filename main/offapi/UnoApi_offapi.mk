@@ -78,6 +78,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_nohdl,offapi,\
     offapi/com/sun/star/form/inspection/DefaultFormComponentInspectorModel \
     offapi/com/sun/star/form/runtime/FormOperations \
     offapi/com/sun/star/frame/PopupMenuControllerFactory \
+    offapi/com/sun/star/frame/StatusbarControllerFactory \
     offapi/com/sun/star/graphic/GraphicObject \
     offapi/com/sun/star/inspection/DefaultHelpProvider \
     offapi/com/sun/star/inspection/GenericPropertyHandler \
@@ -578,7 +579,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/frame/SessionManager \
     offapi/com/sun/star/frame/Settings \
     offapi/com/sun/star/frame/StatusbarController \
-    offapi/com/sun/star/frame/StatusbarControllerFactory \
     offapi/com/sun/star/frame/SynchronousFrameLoader \
     offapi/com/sun/star/frame/Task \
     offapi/com/sun/star/frame/TemplateAccess \
