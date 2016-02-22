@@ -43,7 +43,10 @@ $(eval $(call gb_GoogleTest_set_include,svl_urihelper,\
 	-I$(SRCDIR)/svl/inc \
 	-I$(SRCDIR)/svl/inc/svl \
 	-I$(SRCDIR)/svl/inc/pch \
-	-I$(OUTDIR)/inc/offuh \
+))
+
+$(eval $(call gb_GoogleTest_add_api,svl_urihelper,\
+	udkapi \
 ))
  
 $(eval $(call gb_GoogleTest_set_ldflags,svl_urihelper,\
