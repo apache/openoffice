@@ -27,7 +27,7 @@ $(eval $(call gb_GoogleTest_add_exception_objects,sfx2_metadatable, \
 	sfx2/qa/gtest/test_metadatable \
 ))
 
-$(eval $(call gb_CppunitTest_add_api,sfx2_metadatable, \
+$(eval $(call gb_GoogleTest_add_api,sfx2_metadatable, \
 	udkapi \
 	offapi \
 ))
