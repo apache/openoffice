@@ -46,6 +46,7 @@ $(eval $(call gb_GoogleTest_set_include,svl_urihelper,\
 ))
 
 $(eval $(call gb_GoogleTest_add_api,svl_urihelper,\
+	offapi \
 	udkapi \
 ))
  
