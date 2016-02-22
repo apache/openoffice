@@ -150,6 +150,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_nohdl,offapi,\
     offapi/com/sun/star/task/InteractionRequestStringResolver \
     offapi/com/sun/star/task/OfficeRestartManager \
     offapi/com/sun/star/task/PasswordContainerInteractionHandler \
+    offapi/com/sun/star/system/SystemMailProvider \
     offapi/com/sun/star/ucb/CommandEnvironment \
     offapi/com/sun/star/ui/ContextChangeEventMultiplexer \
     offapi/com/sun/star/ui/GlobalAcceleratorConfiguration \
@@ -907,7 +908,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/sync/SyncCollector \
     offapi/com/sun/star/sync/Synchronizer \
     offapi/com/sun/star/system/MailClientFlags \
-    offapi/com/sun/star/system/SystemMailProvider \
     offapi/com/sun/star/table/AccessibleCellView \
     offapi/com/sun/star/table/AccessibleTableView \
     offapi/com/sun/star/table/Cell \
