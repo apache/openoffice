@@ -40,8 +40,11 @@ $(eval $(call gb_GoogleTest_set_include,comphelper_string,\
 	$$(INCLUDE) \
 	-I$(SRCDIR)/formula/inc \
 	-I$(SRCDIR)/comphelper/inc/pch \
-	-I$(OUTDIR)/inc/offuh \
 	-I$(OUTDIR)/inc \
+))
+
+$(eval $(call gb_GoogleTest_add_api,comphelper_string,\
+	udkapi \
 ))
 
 $(eval $(call gb_GoogleTest_set_ldflags,comphelper_string,\
