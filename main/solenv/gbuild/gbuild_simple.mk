@@ -49,10 +49,12 @@ include $(GBUILDDIR)/platform/solaris.mk
 else
 ifeq ($(OS),MACOSX)
 include $(GBUILDDIR)/platform/macosx.mk
+ifeq ($(OS),FREEBSD)
+include $(GBUILDDIR)/platform/freebsd.mk
 else
 $(eval $(call gb_Output_error,Unsupported OS: $(OS)))
 endif
 endif
 endif
 endif
-
+endif
