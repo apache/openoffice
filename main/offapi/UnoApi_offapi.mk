@@ -907,7 +907,6 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_noheader,offapi,\
     offapi/com/sun/star/style/StyleFamily \
     offapi/com/sun/star/sync/SyncCollector \
     offapi/com/sun/star/sync/Synchronizer \
-    offapi/com/sun/star/system/MailClientFlags \
     offapi/com/sun/star/table/AccessibleCellView \
     offapi/com/sun/star/table/AccessibleTableView \
     offapi/com/sun/star/table/Cell \
@@ -3076,6 +3075,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,offapi,\
     offapi/com/sun/star/sync/XSyncCollector \
     offapi/com/sun/star/sync/XSynchronizer \
     offapi/com/sun/star/sync2/BadPartnershipException \
+    offapi/com/sun/star/system/MailClientFlags \
     offapi/com/sun/star/system/SystemShellExecuteException \
     offapi/com/sun/star/system/SystemShellExecuteFlags \
     offapi/com/sun/star/system/XMailClient \
