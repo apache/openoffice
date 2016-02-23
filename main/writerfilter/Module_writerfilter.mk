@@ -36,7 +36,7 @@ $(eval $(call gb_Module_add_targets,writerfilter,\
 
 # does not build
 $(eval $(call gb_Module_add_check_targets,writerfilter,\
-	CppunitTest_writerfilter_doctok \
+	GoogleTest_writerfilter_doctok \
 ))
 
 # does not run

@@ -25,13 +25,13 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_CppunitTest_CppunitTest,writerfilter_doctok))
+$(eval $(call gb_GoogleTest_GoogleTest,writerfilter_doctok))
 
-$(eval $(call gb_CppunitTest_add_exception_objects,writerfilter_doctok, \
+$(eval $(call gb_GoogleTest_add_exception_objects,writerfilter_doctok, \
 	writerfilter/qa/cppunittests/doctok/testdoctok \
 ))
 
-$(eval $(call gb_CppunitTest_add_linked_libs,writerfilter_doctok, \
+$(eval $(call gb_GoogleTest_add_linked_libs,writerfilter_doctok, \
 	writerfilter \
 	ucbhelper \
 	cppuhelper \
@@ -41,12 +41,12 @@ $(eval $(call gb_CppunitTest_add_linked_libs,writerfilter_doctok, \
 	$(gb_STDLIBS) \
 ))
 
-$(eval $(call gb_CppunitTest_add_api,writerfilter_doctok,\
+$(eval $(call gb_GoogleTest_add_api,writerfilter_doctok,\
 	udkapi \
 	offapi \
 ))
 
-$(eval $(call gb_CppunitTest_set_include,writerfilter_doctok,\
+$(eval $(call gb_GoogleTest_set_include,writerfilter_doctok,\
 	$$(INCLUDE) \
 	-I$(OUTDIR)/inc \
 	-I$(SRCDIR)/writerfilter/inc \
