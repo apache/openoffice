@@ -227,6 +227,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles,udkapi,\
 	udkapi/com/sun/star/container/XNameContainer \
 	udkapi/com/sun/star/container/XNameReplace \
 	udkapi/com/sun/star/container/XNamed \
+	udkapi/com/sun/star/container/XNamedEx \
 	udkapi/com/sun/star/container/XSet \
 	udkapi/com/sun/star/container/XStringKeyMap \
 	udkapi/com/sun/star/container/XUniqueIDAccess \

@@ -20,12 +20,15 @@
  *************************************************************/
 
 
-#ifndef __com_sun_star_container_XNamed_idl__ 
-#define __com_sun_star_container_XNamed_idl__ 
+#ifndef __com_sun_star_container_XNamedEx_idl__ 
+#define __com_sun_star_container_XNamedEx_idl__ 
  
 #ifndef __com_sun_star_uno_XInterface_idl__ 
 #include <com/sun/star/uno/XInterface.idl> 
 #endif 
+
+#ifndef __com_sun_star_container_XNamed_idl__
+#include <com/sun/star/container/XNamed.idl>
  
 //============================================================================= 
  
@@ -33,27 +36,27 @@ module com {  module sun {  module star {  module container {
  
 //============================================================================= 
  
-/** specifies the name of the object.
+/** specifies the display name of the object.
 	
 	<p>The name is generally unique in the container of the object.</p>
  */
-published interface XNamed: com::sun::star::uno::XInterface
+published interface XNamedEx: XNamed
 { 
 	//------------------------------------------------------------------------- 
 	 
 	/** @returns 
-		the programmatic name of the object.
+		the display name of the object.
 	 */
-	string getName(); 
+	string getDisplayName(); 
  
 	//------------------------------------------------------------------------- 
 	 
-	/** sets the programmatic name of the object.
+	/** sets the display name of the object.
 	 */
-	[oneway] void setName( [in] string aName ); 
+	[oneway] void setDisplayName( [in] string aName ); 
  
 }; 
- 
+
 //============================================================================= 
  
 }; }; }; };  
