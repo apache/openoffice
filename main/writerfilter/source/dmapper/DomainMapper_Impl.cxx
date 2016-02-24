@@ -218,8 +218,9 @@ void DomainMapper_Impl::SetDocumentSettingsProperty( const ::rtl::OUString& rPro
         {
             xSettings->setPropertyValue( rPropName, rValue );
         }
-        catch( const uno::Exception& )
+        catch( const uno::Exception& e)
         {
+            (void) e;
         }
     }
 }
@@ -251,9 +252,22 @@ void DomainMapper_Impl::SetIsLastParagraphInSection( bool bIsLast )
 void    DomainMapper_Impl::PushProperties(ContextType eId)
 {
     SectionPropertyMap* pSectionContext = 0;
-    PropertyMapPtr pInsert(eId == CONTEXT_SECTION ?
-        (pSectionContext = new SectionPropertyMap( m_bIsFirstSection )) :
-        eId == CONTEXT_PARAGRAPH ? new ParagraphPropertyMap :  new PropertyMap);
+    PropertyMapPtr pInsert;
+
+    switch (eId)
+    {
+    case CONTEXT_SECTION:
+        pSectionContext = new SectionPropertyMap( m_bIsFirstSection );
+        pInsert.reset(pSectionContext);
+        break;
+    case CONTEXT_PARAGRAPH:
+        pInsert.reset(new ParagraphPropertyMap);
+        break;
+    default:
+        pInsert.reset(new PropertyMap);
+        break;
+    }
+
     if(eId == CONTEXT_SECTION)
     {
         if( m_bIsFirstSection )
@@ -846,9 +860,10 @@ void DomainMapper_Impl::finishParagraph( PropertyMapPtr pPropertyMap )
 #endif
                         xObj->attach( xTextRange );
                     } 
-                    catch ( uno::RuntimeException& )
+                    catch ( uno::RuntimeException& e)
                     {
                         // this is normal: the shape is already attached
+                        (void) e;
                     }   
                     m_aAnchoredStack.pop( );
                 }
@@ -954,11 +969,13 @@ void DomainMapper_Impl::appendTextContent(
         {
             xTextAppendAndConvert->appendTextContent( xContent, xPropertyValues );
         }
-        catch(const lang::IllegalArgumentException& )
+        catch(const lang::IllegalArgumentException& e)
         {
+            (void) e;
         }
-        catch(const uno::Exception& )
+        catch(const uno::Exception& e)
         {
+            (void) e;
         }
     }
 }
@@ -1025,8 +1042,9 @@ uno::Reference< beans::XPropertySet > DomainMapper_Impl::appendTextSectionAfter(
             xSection->attach( uno::Reference< text::XTextRange >( xCursor, uno::UNO_QUERY_THROW) );
             xRet = uno::Reference< beans::XPropertySet > (xSection, uno::UNO_QUERY );
         }
-        catch(const uno::Exception& )
+        catch(const uno::Exception& e)
         {
+            (void) e;
         }
 
     }
@@ -1066,8 +1084,9 @@ void DomainMapper_Impl::PushPageHeader(SectionPropertyMap::PageType eType)
             xPageStyle->getPropertyValue(rPropNameSupplier.GetName( bLeft ? PROP_HEADER_TEXT_LEFT : PROP_HEADER_TEXT) ) >>= xHeaderText;
             m_aTextAppendStack.push( uno::Reference< text::XTextAppend >( xHeaderText, uno::UNO_QUERY_THROW));
         }
-        catch( uno::Exception& )
+        catch( uno::Exception& e)
         {
+            (void) e;
         }
     }
 }
@@ -1103,8 +1122,9 @@ void DomainMapper_Impl::PushPageFooter(SectionPropertyMap::PageType eType)
             xPageStyle->getPropertyValue(rPropNameSupplier.GetName( bLeft ? PROP_FOOTER_TEXT_LEFT : PROP_FOOTER_TEXT) ) >>= xFooterText;
             m_aTextAppendStack.push(uno::Reference< text::XTextAppend >( xFooterText, uno::UNO_QUERY_THROW ));
         }
-        catch( uno::Exception& )
+        catch( uno::Exception& e)
         {
+            (void) e;
         }
     }
 }
@@ -1334,6 +1354,7 @@ void DomainMapper_Impl::PushShapeContext( const uno::Reference< drawing::XShape 
     } 
     catch ( const uno::Exception& e )
     {
+        (void) e;
 #if DEBUG
         clog << "Exception when adding shape: ";
         clog << rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr( );
@@ -2256,8 +2277,9 @@ void DomainMapper_Impl::SetNumberFormat( const ::rtl::OUString& rCommand,
             PropertyNameSupplier::GetPropertyNameSupplier().GetName(PROP_NUMBER_FORMAT),
             uno::makeAny( nKey ));
     }
-    catch(const uno::Exception&)
+    catch(const uno::Exception& e)
     {
+        (void) e;
     }
 }
 
@@ -3430,15 +3452,16 @@ void DomainMapper_Impl::SetFieldResult( ::rtl::OUString& rResult )
                              uno::makeAny( rResult ));
                     }
                 }
-                catch( const beans::UnknownPropertyException& )
+                catch( const beans::UnknownPropertyException& e)
                 {
+                    (void) e;
                     //some fields don't have a CurrentPresentation (DateTime)
                 }
             }
         }
-        catch( uno::Exception& )
+        catch( uno::Exception& e)
         {
-
+            (void) e;
         }
     }
 }
@@ -3580,8 +3603,9 @@ void DomainMapper_Impl::AddBookmark(
             m_aBookmarkMap.insert(BookmarkMap_t::value_type( nId, BookmarkInsertPosition( bIsStart, rBookmarkName, xCurrent ) ));
         }
     }
-    catch( const uno::Exception& )
+    catch( const uno::Exception& e)
     {
+        (void) e;
         //TODO: What happens to bookmarks where start and end are at different XText objects?
     }
 }
@@ -3649,10 +3673,10 @@ void DomainMapper_Impl::SetLineNumbering( sal_Int32 nLnnMod, sal_Int32 nLnc, sal
             xProperties->setPropertyValue( rPropNameSupplier.GetName( PROP_NUMBERING_TYPE         ), uno::makeAny( style::NumberingType::ARABIC));
             xProperties->setPropertyValue( rPropNameSupplier.GetName( PROP_RESTART_AT_EACH_PAGE   ), uno::makeAny( nLnc == 0 ));
         }
-        catch( const uno::Exception& )
-        {}
-
-
+        catch( const uno::Exception& e)
+        {
+            (void) e;
+        }
 
 /*
         { SW_PROP_NAME(UNO_NAME_CHAR_STYLE_NAME
@@ -3873,8 +3897,9 @@ void DomainMapper_Impl::ApplySettingsTable()
             sal_Int32 nDefTab = m_pSettingsTable->GetDefaultTabStop();
             xTextDefaults->setPropertyValue( PropertyNameSupplier::GetPropertyNameSupplier().GetName( PROP_TAB_STOP_DISTANCE ), uno::makeAny(nDefTab) );
         }
-        catch(const uno::Exception& )
+        catch(const uno::Exception& e)
         {
+            (void) e;
         }    
     }    
 }
