@@ -26,9 +26,10 @@
 #*************************************************************************
 
 WFDIR := $(dir $(realpath $(firstword $(MAKEFILE_LIST))))
+GBUILDDIR := $(SOLARENV)/gbuild
 
 include $(WFDIR)generated.mk
-include $(GBUILDDIR)/gbuild_simple.mk
+include $(GBUILDDIR)/gbuild.mk
 
 # doctok
 
