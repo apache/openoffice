@@ -33,6 +33,7 @@ PACKAGE = complex$/ooxml
 #----- compile .java files -----------------------------------------
 
 JARFILES = mysql.jar ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar OOoRunner.jar
+EXTRAJARFILES   = $(OOO_JUNIT_JAR)
 JAVAFILES       = LoadDocuments.java
 JAVACLASSFILES  = $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
 
