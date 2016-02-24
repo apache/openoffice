@@ -319,6 +319,8 @@ class PropertySequence
     uno::Sequence<beans::PropertyValue>m_sequence;
     PropertyNameSupplier & m_rPropNameSupplier;
 
+    int getOrCreateIndex(PropertyIds aId);
+
 public:
     typedef boost::shared_ptr<PropertySequence> Pointer_t;
 
@@ -336,9 +338,7 @@ public:
 
     uno::Sequence<beans::PropertyValue> & getSequence();
 
-#ifdef DEBUG
     ::std::string toString() const;
-#endif
 };
 
 } //namespace dmapper
