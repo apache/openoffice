@@ -23,6 +23,7 @@
 #include <PropertyIds.hxx>
 #include <rtl/ustring.hxx>
 #include <map>
+#include <string>
 
 namespace writerfilter {
 namespace dmapper{
