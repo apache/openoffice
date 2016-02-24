@@ -255,7 +255,7 @@ void OOXMLFactory::attributes(OOXMLFastContextHandler * pHandler,
 
 uno::Reference< xml::sax::XFastContextHandler> 
 OOXMLFactory::createFastChildContext(OOXMLFastContextHandler * pHandler,
-                                     Token_t Element)
+                                     sal_Int32 Element)
 {
 #ifdef DEBUG_FACTORY
     debug_logger->startElement("factory.createFastChildContext");
@@ -300,7 +300,7 @@ void OOXMLFactory::characters(OOXMLFastContextHandler * pHandler,
 #endif
 }
 
-void OOXMLFactory::startAction(OOXMLFastContextHandler * pHandler, Token_t /*nToken*/)
+void OOXMLFactory::startAction(OOXMLFastContextHandler * pHandler, sal_Int32 /*nToken*/)
 {
     Id nDefine = pHandler->getDefine();
     OOXMLFactory_ns::Pointer_t pFactory = getFactoryForNamespace(nDefine);
@@ -317,7 +317,7 @@ void OOXMLFactory::startAction(OOXMLFastContextHandler * pHandler, Token_t /*nTo
     }
 }
     
-void OOXMLFactory::endAction(OOXMLFastContextHandler * pHandler, Token_t /*nToken*/)
+void OOXMLFactory::endAction(OOXMLFastContextHandler * pHandler, sal_Int32 /*nToken*/)
 {
     Id nDefine = pHandler->getDefine();
     OOXMLFactory_ns::Pointer_t pFactory = getFactoryForNamespace(nDefine);
@@ -346,7 +346,7 @@ void OOXMLFactory_ns::charactersAction(OOXMLFastContextHandler *, const ::rtl::O
 {
 }
 
-void OOXMLFactory_ns::attributeAction(OOXMLFastContextHandler *, Token_t, OOXMLValue::Pointer_t)
+void OOXMLFactory_ns::attributeAction(OOXMLFastContextHandler *, sal_Int32, OOXMLValue::Pointer_t)
 {
 }
 
