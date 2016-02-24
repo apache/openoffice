@@ -94,6 +94,7 @@ my_components = \
     component/toolkit/util/ootk \
     component/unoxml/source/rdf/unordf \
     component/unoxml/source/service/unoxml \
+    component/writerfilter/util/writerfilter \
     component/xmloff/source/transform/xof \
     component/xmloff/util/xo \
     configmgr \
@@ -186,7 +187,6 @@ my_components = \
     vbaevents \
     vbaobj \
     vclcanvas \
-    writerfilter \
     xcr \
     xmlfa \
     xmlfd \
