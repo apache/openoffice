@@ -78,7 +78,8 @@ namespace writerfilter
         void chars(const string & rChars);
         void chars(const ::rtl::OUString & rChars);
         const string & getTag() const;
-        string toString() const; 
+        string toString() const;
+        string toTree(const string & sIndent = "") const;
         
         ostream & output(ostream & o, const string & sIndent = "") const;
     };
