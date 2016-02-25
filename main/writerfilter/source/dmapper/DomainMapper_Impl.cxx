@@ -1525,9 +1525,7 @@ void DomainMapper_Impl::PushShapeContext( const uno::Reference< drawing::XShape 
     {
         (void) e;
 #if DEBUG
-        clog << "Exception when adding shape: ";
-        clog << rtl::OUStringToOString( e.Message, RTL_TEXTENCODING_UTF8 ).getStr( );
-        clog << endl;
+        dmapper_logger->element("exception");
 #endif
     }
 }
