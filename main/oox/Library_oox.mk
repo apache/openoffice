@@ -31,7 +31,7 @@ $(eval $(call gb_Library_add_package_headers,oox,oox_inc))
 $(eval $(call gb_Library_add_package_headers,oox,oox_source))
 $(eval $(call gb_Library_add_package_headers,oox,oox_generated))
 
-$(eval $(call gb_Library_set_componentfile,oox,oox/oox))
+$(eval $(call gb_Library_set_componentfile,oox,oox/util/oox))
 
 $(eval $(call gb_Library_add_api,oox,\
 	udkapi \

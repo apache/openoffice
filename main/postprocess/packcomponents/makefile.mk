@@ -75,6 +75,7 @@ my_components = \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
+    component/oox/util/oox \
     component/vbahelper/util/msforms \
     component/sfx2/util/sfx \
     component/sot/util/sot \
@@ -136,7 +137,6 @@ my_components = \
     odbc \
     offacc \
     oooimprovecore \
-    oox \
     package2 \
     pcr \
     pdffilter \
