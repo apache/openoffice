@@ -49,5 +49,5 @@ while( <> ) {
 if( $op == 1 ) {
     print( "const sal_Int32 PROP_COUNT = $i;\nconst sal_Int32 PROP_INVALID = -1;\n" );
 } elsif( $op == 2 ) {
-    print( "    \"\"" );
+    print( "    \"\"\n" );
 }

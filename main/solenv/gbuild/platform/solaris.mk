@@ -264,7 +264,9 @@ gb_Library_PLAINLIBS_NONE += \
 	dl \
     freetype \
 	jpeg \
+	nsl \
 	pthread \
+	socket \
 	X11 \
     Xext \
     SM \
