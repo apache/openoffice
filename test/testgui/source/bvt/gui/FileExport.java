@@ -223,7 +223,7 @@ public class FileExport {
 		thepoint = new ContinuePoint();
 		File spacepath = Testspace.getFile("output");// ..\\testspace\\output
 		String absspath = spacepath.getAbsolutePath();
-		int n = absspath.indexOf("testgui");
+		int n = absspath.indexOf("testspace");
 		String abspre = absspath.substring(0, n);
 
 		result = new DataSheet(getFile("outputlog/"
