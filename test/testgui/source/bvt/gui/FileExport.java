@@ -54,33 +54,31 @@ import org.openoffice.test.common.Logger;
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.vcl.widgets.VclDialog;
 
-/**
- * 
- */
-class TestType {
-
-	public TestType(boolean doc, boolean spread, boolean slide) {
-		documentT = doc;
-		spreadsheetT = spread;
-		slideT = slide;
-	}
-
-	public boolean documentT;
-	public boolean spreadsheetT;
-	public boolean slideT;
-};
-
-class ContinuePoint {
-	public String path;
-	public int i;
-
-	ContinuePoint() {
-		path = "";
-		i = 0;
-	}
-}
 
 public class FileExport {
+	private static class TestType {
+
+		public TestType(boolean doc, boolean spread, boolean slide) {
+			documentT = doc;
+			spreadsheetT = spread;
+			slideT = slide;
+		}
+
+		public boolean documentT;
+		public boolean spreadsheetT;
+		public boolean slideT;
+	};
+
+	private static class ContinuePoint {
+		public String path;
+		public int i;
+
+		ContinuePoint() {
+			path = "";
+			i = 0;
+		}
+	}
+
 	// for example
 	// the path is "D:\\aoo\\utaoo\\testspace\\ooxmlsamples"
 	String samplespath = "";// a dir
