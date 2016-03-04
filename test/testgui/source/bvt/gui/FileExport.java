@@ -114,7 +114,7 @@ public class FileExport {
 				if (!f.isHidden() && !f.getName().startsWith(".")) {
 					String apath = f.getPath();
 
-					int sepIndex = apath.indexOf("\\");
+					int sepIndex = apath.indexOf(File.separatorChar);
 					String userpath = apath.substring(sepIndex);
 					String newpath = outpath + userpath;
 
@@ -133,8 +133,8 @@ public class FileExport {
 	private String getrealoutpath(String p) {
 		String apath = p;
 
-		int sepIndex = apath.indexOf("\\");
-		int sepIndexLast = apath.lastIndexOf("\\");
+		int sepIndex = apath.indexOf(File.separatorChar);
+		int sepIndexLast = apath.lastIndexOf(File.separatorChar);
 		String userpath = apath.substring(sepIndex, sepIndexLast);
 		String newpath = outpath + userpath;
 		File tempFolderFile = new File(newpath);
@@ -221,17 +221,16 @@ public class FileExport {
 		samplelist = new ArrayList<String>();
 		sampledirs = new ArrayList<String>();
 		thepoint = new ContinuePoint();
-		File spacepath = Testspace.getFile("output");// ..\\testspace\\output
-		String absspath = spacepath.getAbsolutePath();
-		int n = absspath.indexOf("testspace");
-		String abspre = absspath.substring(0, n);
+		File spacepath = new File(Testspace.getPath());
+		File absspath = spacepath.getAbsoluteFile();
+		String abspre = absspath.getParent();
 
-		result = new DataSheet(getFile("outputlog/"
+		result = new DataSheet(getFile("outputlog" + File.separatorChar
 				+ FileExport.class.getName() + ".xml"));
 		result.addRow("data", "File Path", "File Size", "Scenario",
 				"Exported File Path", "Exported File Size", "Result", "Error");
 
-		testedlogfile = abspre + "testgui\\cases_tested.txt";
+		testedlogfile = abspre + "testgui" + File.separatorChar + "cases_tested.txt";
 		samplespath = "samples";
 		
 		if (outpath.length() == 0) {
@@ -411,9 +410,9 @@ public class FileExport {
 			String pre = file.substring(0, dotIndex + 1);
 			String newfile = pre + extName;
 
-			String saveTo = reportDir + "\\" + file;
+			String saveTo = reportDir + File.separator + file;
 			if (formatchanged)
-				saveTo = reportDir + "\\" + newfile;
+				saveTo = reportDir + File.separator + newfile;
 			// Save the text document
 			deleteFile(saveTo);
 			SaveAs(saveTo);
@@ -478,7 +477,7 @@ public class FileExport {
 			
 			int dotIndex = file.lastIndexOf(".");
 			String pre = file.substring(0, dotIndex + 1);
-			String saveTo = reportDir + "\\" + pre + targetExtName;
+			String saveTo = reportDir + File.separator + pre + targetExtName;
 			deleteFile(saveTo);
 			// long base = System.currentTimeMillis();
 			SaveAs(saveTo);
@@ -612,7 +611,7 @@ public class FileExport {
 
 			scenario = FileUtil.getFileExtName(file).toLowerCase() + " to pdf";
 			
-			String saveTo = reportDir + "\\" + newfile;
+			String saveTo = reportDir + File.separator + newfile;
 			// Save the text document
 			app.dispatch(".uno:ExportToPDF");
 			pdfGeneralPage.ok();
