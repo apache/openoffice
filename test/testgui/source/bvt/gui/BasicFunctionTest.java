@@ -675,7 +675,7 @@ public class BasicFunctionTest {
 		// SC_FunctionWizardDlg_FunctionList.doubleClick(5, 5);
 		scFunctionWizardDlgFunctionList.select("ABS");
 		scFunctionWizardDlgNext.click(); // Use "Next" button
-		scFunctionWizardDlgEdit1.inputKeys("A1");
+		scFunctionWizardDlgEdit1.typeKeys("A1");
 		scFunctionWizardDlg.ok();
 		// Verify if the calculated result is equal to the expected result
 		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
