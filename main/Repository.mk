@@ -31,6 +31,7 @@ $(eval $(call gb_Helper_register_executables,NONE, \
 	mkunroll \
 	rscdep \
 	so_checksum \
+	svidl \
 	sspretty \
 ))
 

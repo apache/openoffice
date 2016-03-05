@@ -28,6 +28,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	drawinglayer \
 	editeng \
 	framework \
+	idl \
 	offapi \
 	oovbaapi \
 	oox \
@@ -45,6 +46,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	unoxml \
 	vbahelper \
 	vcl \
+	wizards \
 	writerfilter \
 	xmloff \
 	formula \
