@@ -209,8 +209,6 @@ $(eval $(call gb_Deliver_init))
 
 include $(SOLARENV)/inc/minor.mk
 
-include $(SOLARENV)/inc/minor.mk
-
 # We are using a set of scopes that we might as well call classes.
 
 # It is important to include them in the right order as that is
