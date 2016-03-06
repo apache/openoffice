@@ -25,6 +25,7 @@ $(eval $(call gb_Module_Module,ooo))
 
 $(eval $(call gb_Module_add_moduledirs,ooo,\
 	comphelper \
+	cppcanvas \
 	drawinglayer \
 	editeng \
 	framework \
