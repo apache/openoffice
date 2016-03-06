@@ -75,11 +75,14 @@ my_components = \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
+    component/linguistic/source/lng \
     component/oox/util/oox \
     component/vbahelper/util/msforms \
     component/sfx2/util/sfx \
     component/sot/util/sot \
     component/svgio/svgio \
+    component/starmath/util/sm \
+    component/starmath/util/smd \
     component/svl/source/fsstor/fsstorage \
     component/svl/source/passwordcontainer/passwordcontainer \
     component/svl/util/svl \
@@ -92,6 +95,7 @@ my_components = \
     component/sw/util/sw \
     component/sw/util/swd \
     component/sw/util/vbaswobj \
+    component/unotools/util/utl \
     component/toolkit/util/ootk \
     component/unoxml/source/rdf/unordf \
     component/unoxml/source/service/unoxml \
@@ -125,7 +129,6 @@ my_components = \
     guesslang \
     i18npool \
     i18nsearch \
-    lng \
     lnth \
     localebe1 \
     log \
@@ -161,8 +164,6 @@ my_components = \
     sdd \
     simplecanvas \
     slideshow \
-    sm \
-    smd \
     spl \
     srtrs1 \
     stringresource \
@@ -182,7 +183,6 @@ my_components = \
     ucptdoc1 \
     updatefeed \
     updchk \
-    utl \
     uui \
     vbaevents \
     vbaobj \
