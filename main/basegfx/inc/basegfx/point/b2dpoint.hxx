@@ -26,6 +26,7 @@
 
 #include <basegfx/tuple/b2dtuple.hxx>
 #include <basegfx/point/b2ipoint.hxx>
+#include <basegfx/basegfxdllapi.h>
 
 //////////////////////////////////////////////////////////////////////////////
 
@@ -42,7 +43,7 @@ namespace basegfx
 
 		@see B2DTuple
 	*/
-	class B2DPoint : public ::basegfx::B2DTuple
+	class BASEGFX_DLLPUBLIC B2DPoint : public ::basegfx::B2DTuple
 	{
 	public:					
 		/**	Create a 2D Point
@@ -139,7 +140,7 @@ namespace basegfx
 		Since this is a Point, translational components of the
     	matrix are used.
 	*/
-	B2DPoint operator*( const B2DHomMatrix& rMat, const B2DPoint& rPoint );
+	BASEGFX_DLLPUBLIC B2DPoint operator*( const B2DHomMatrix& rMat, const B2DPoint& rPoint );
 } // end of namespace basegfx
 
 //////////////////////////////////////////////////////////////////////////////
