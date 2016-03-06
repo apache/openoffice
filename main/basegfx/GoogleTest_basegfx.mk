@@ -42,6 +42,7 @@ $(eval $(call gb_GoogleTest_add_exception_objects,basegfx_test, \
 $(eval $(call gb_GoogleTest_add_linked_libs,basegfx_test, \
 	basegfx \
 	sal \
+	stl \
 	cppuhelper \
 	cppu \
     $(gb_STDLIBS) \

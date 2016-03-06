@@ -50,6 +50,7 @@ $(eval $(call gb_Library_set_defs,basegfx,\
 
 $(eval $(call gb_Library_add_linked_libs,basegfx,\
 	sal \
+	stl \
 	cppu \
 	cppuhelper \
     $(gb_STDLIBS) \
