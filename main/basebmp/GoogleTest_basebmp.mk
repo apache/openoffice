@@ -25,16 +25,45 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_CppunitTest_CppunitTest,MODULE_NAME))
+$(eval $(call gb_GoogleTest_GoogleTest,basebmp_test))
 
-$(eval $(call gb_CppunitTest_add_exception_objects,MODULE_NAME, \
+$(eval $(call gb_GoogleTest_add_exception_objects,basebmp_test, \
+	basebmp/test/basictest \
+	basebmp/test/bmpmasktest \
+	basebmp/test/bmptest \
+	basebmp/test/cliptest \
+	basebmp/test/filltest \
+	basebmp/test/linetest \
+	basebmp/test/main \
+	basebmp/test/masktest \
+	basebmp/test/polytest \
+	basebmp/test/tools \
 ))
 
-$(eval $(call gb_CppunitTest_add_linked_libs,MODULE_NAME, \
+# TODO
+# SunStudio 12 (-m64 and -m32 modes): three test cases of the unit tests fail
+# if compiled with default -xalias_level (and optimization level -xO3)
+#.IF "$(OS)"=="SOLARIS"
+# For Sun Studio 8 this switch does not work: compilation fails on bitmapdevice.cxx
+#.IF "$(CCNUMVER)"!="00050005"
+#CDEFS+=-xalias_level=compatible
+#.ENDIF
+#.ENDIF
+
+$(eval $(call gb_GoogleTest_add_linked_libs,basebmp_test, \
+	basebmp \
+	sal \
+	stl \
+	basegfx \
     $(gb_STDLIBS) \
 ))
 
-$(eval $(call gb_CppunitTest_set_include,MODULE_NAME,\
+$(eval $(call gb_GoogleTest_add_api,basebmp_test,\
+	udkapi \
+	offapi \
+))
+
+$(eval $(call gb_GoogleTest_set_include,basebmp_test,\
 	$$(INCLUDE) \
 ))
 

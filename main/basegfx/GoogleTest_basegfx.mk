@@ -25,18 +25,36 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Module_Module,basebmp))
+$(eval $(call gb_GoogleTest_GoogleTest,basegfx_test))
 
-$(eval $(call gb_Module_add_targets,basebmp,\
-	Library_basebmp \
-	Package_inc \
+$(eval $(call gb_GoogleTest_add_exception_objects,basegfx_test, \
+	basegfx/test/basegfx1d \
+	basegfx/test/basegfx2d \
+	basegfx/test/basegfx3d \
+	basegfx/test/boxclipper \
+	basegfx/test/basegfxtools \
+	basegfx/test/clipstate \
+	basegfx/test/genericclipper \
+	basegfx/test/main \
+	basegfx/test/testtools \
 ))
 
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_check_targets,basebmp,\
-	GoogleTest_basebmp \
+$(eval $(call gb_GoogleTest_add_linked_libs,basegfx_test, \
+	basegfx \
+	sal \
+	cppuhelper \
+	cppu \
+    $(gb_STDLIBS) \
 ))
-endif
 
+$(eval $(call gb_GoogleTest_add_api,basegfx_test,\
+	udkapi \
+	offapi \
+))
+
+$(eval $(call gb_GoogleTest_set_include,basegfx_test,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/basegfx/inc/pch \
+))
 
 # vim: set noet sw=4 ts=4:

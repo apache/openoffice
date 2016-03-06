@@ -32,7 +32,10 @@ $(eval $(call gb_Module_add_targets,basegfx,\
 	Package_inc \
 ))
 
+ifeq ($(ENABLE_UNIT_TESTS),YES)
 $(eval $(call gb_Module_add_check_targets,basegfx,\
+	GoogleTest_basegfx \
 ))
+endif
 
 # vim: set noet sw=4 ts=4:
