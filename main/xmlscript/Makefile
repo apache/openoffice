@@ -25,18 +25,14 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Module_Module,basegfx))
-
-$(eval $(call gb_Module_add_targets,basegfx,\
-	Library_basegfx \
-	Package_inc \
-	StaticLibrary_basegfx_s \
-))
-
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_check_targets,basegfx,\
-	GoogleTest_basegfx \
-))
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
 endif
+
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
+
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
 # vim: set noet sw=4 ts=4:

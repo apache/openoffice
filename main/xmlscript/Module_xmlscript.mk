@@ -25,18 +25,12 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Module_Module,basegfx))
+$(eval $(call gb_Module_Module,xmlscript))
 
-$(eval $(call gb_Module_add_targets,basegfx,\
-	Library_basegfx \
+$(eval $(call gb_Module_add_targets,xmlscript,\
+	Library_xcr \
 	Package_inc \
-	StaticLibrary_basegfx_s \
+	Package_dtd \
 ))
-
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_check_targets,basegfx,\
-	GoogleTest_basegfx \
-))
-endif
 
 # vim: set noet sw=4 ts=4:

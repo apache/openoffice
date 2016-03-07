@@ -25,18 +25,10 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Module_Module,basegfx))
-
-$(eval $(call gb_Module_add_targets,basegfx,\
-	Library_basegfx \
-	Package_inc \
-	StaticLibrary_basegfx_s \
-))
-
-ifeq ($(ENABLE_UNIT_TESTS),YES)
-$(eval $(call gb_Module_add_check_targets,basegfx,\
-	GoogleTest_basegfx \
-))
-endif
+$(eval $(call gb_Package_Package,xmlscript_inc,$(SRCDIR)/xmlscript/dtd))
+$(eval $(call gb_Package_add_file,xmlscript_inc,bin/dialog.dtd,dialog.dtd))
+$(eval $(call gb_Package_add_file,xmlscript_inc,bin/libraries.dtd,libraries.dtd))
+$(eval $(call gb_Package_add_file,xmlscript_inc,bin/library.dtd,library.dtd))
+$(eval $(call gb_Package_add_file,xmlscript_inc,bin/module.dtd,module.dtd))
 
 # vim: set noet sw=4 ts=4:
