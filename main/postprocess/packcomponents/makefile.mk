@@ -352,7 +352,7 @@ my_components += \
 my_components += \
     avmediawin \
     directx9canvas \
-    gdipluscanvas
+    component/canvas/source/directx/gdipluscanvas
 .END
 
 .IF "$(OS)" == "WNT" && "$(ENABLE_DIRECTX)" != "" && "$(USE_DIRECTX5)" != ""
