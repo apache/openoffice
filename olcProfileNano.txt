@@ -1,0 +1,42 @@
+olcProfileNano.txt                    UTF-8
+
+                         NANO BRANCH FOR PROFILE ANALYSIS
+                         ================================
+                         
+This branch is for snalysis of the profile.c (and profile.cxx) code that may
+be vulnerable to race and threading issues.  The initial problem is the
+mutex unlock operation against a NULL pointer identified in bugzilla issue
+<https://bz.apache.org/ooo/show_bug.cgi?id=126669>.
+
+The approach is to make copies of only the essential files and their unique
+dependencies.  Those files will be used in a collaborative analysis and will
+be annotated to establish the essential repairs and also the identify the
+conditions that are satisfied in having the repair work.
+
+BASE MATERIALS
+
+The essential materials are in the olcProfileNano/ branch subtree:
+
+   sal/      The trunk/main/ folder extracted from
+      /inc   the headers related to the code under analysis
+         osl/   relevant headers included via #include "osl/..." 
+         rtl/   relevant headers included via #include "rtl/..."
+         sal/   relevant headers included via #include "sal/..."
+      /osl   the source code for sal/osl/ functions
+         unx/   the *nix-specific implementations of sal/osl/
+         w32/   the Windows32-specific implementations of sal/osl
+         
+The folders provide marked-up annotations and possibly additional text.
+
+
+
+
+
+0.00 2016-03-08T Add branch with a selection of unmodified base materials.
+
+
+                  *** end of olcProfileNano.txt ***
+         
+
+         
+        
