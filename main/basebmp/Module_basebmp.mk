@@ -38,5 +38,4 @@ $(eval $(call gb_Module_add_check_targets,basebmp,\
 ))
 endif
 
-
 # vim: set noet sw=4 ts=4:
