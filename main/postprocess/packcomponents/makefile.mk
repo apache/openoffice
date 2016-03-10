@@ -63,11 +63,13 @@ my_components = \
     bib \
     cached1 \
     calc \
-    canvasfactory \
     chartcontroller \
     chartmodel \
     charttools \
     chartview \
+    component/canvas/source/factory/canvasfactory \
+    component/canvas/source/simplecanvas/simplecanvas \
+    component/canvas/source/vcl/vclcanvas \
     component/comphelper/util/comphelp \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
@@ -163,7 +165,6 @@ my_components = \
     sdbc2 \
     sdbt \
     sdd \
-    simplecanvas \
     slideshow \
     spl \
     srtrs1 \
@@ -187,7 +188,6 @@ my_components = \
     uui \
     vbaevents \
     vbaobj \
-    vclcanvas \
     xmlfa \
     xmlfd \
     xmx \
@@ -244,7 +244,7 @@ my_components += emboleobj
 .END
 
 .IF "$(ENABLE_CAIRO_CANVAS)" == "TRUE"
-my_components += cairocanvas
+my_components += component/canvas/source/cairo/cairocanvas
 .END
 
 .IF "$(ENABLE_GCONF)" != ""
@@ -351,12 +351,12 @@ my_components += \
 .IF "$(OS)" == "WNT" && "$(ENABLE_DIRECTX)" != ""
 my_components += \
     avmediawin \
-    directx9canvas \
+    component/canvas/source/directx/directx9canvas \
     component/canvas/source/directx/gdipluscanvas
 .END
 
 .IF "$(OS)" == "WNT" && "$(ENABLE_DIRECTX)" != "" && "$(USE_DIRECTX5)" != ""
-my_components += directx5canvas
+my_components += component/canvas/source/directx/directx5canvas
 .END
 
 .IF "$(OS)" == "LINUX" || "$(OS)" == "NETBSD" || \
