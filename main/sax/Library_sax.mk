@@ -25,53 +25,41 @@
 #
 #*************************************************************************
 
-$(eval $(call gb_Library_Library,xcr))
+$(eval $(call gb_Library_Library,sax))
 
-$(eval $(call gb_Library_add_package_headers,xcr,xmlscript_inc))
-
-$(eval $(call gb_Library_set_componentfile,xcr,xmlscript/util/xcr))
-
-$(eval $(call gb_Library_add_api,xcr,\
+$(eval $(call gb_Library_add_api,sax,\
 	udkapi \
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_include,xcr,\
-	-I$(SRCDIR)/xmlscript/source/inc \
-	-I$(SRCDIR)/xmlscript/inc/xmlscript \
-	-I$(SRCDIR)/xmlscript/inc/pch \
+$(eval $(call gb_Library_add_package_headers,sax,\
+	sax_inc \
+))
+
+$(eval $(call gb_Library_set_include,sax,\
 	$$(INCLUDE) \
+	-I$(SRCDIR)/sax/inc \
 ))
 
-$(eval $(call gb_Library_set_defs,xcr,\
+$(eval $(call gb_Library_set_defs,sax,\
 	$$(DEFS) \
-	-DXCR_DLLIMPLEMENTATION \
+	-DSAX_DLLIMPLEMENTATION \
 ))
 
-$(eval $(call gb_Library_add_linked_libs,xcr,\
+$(eval $(call gb_Library_add_linked_libs,sax,\
 	sal \
 	cppu \
 	cppuhelper \
+	comphelper \
 	stl \
     $(gb_STDLIBS) \
 ))
 
-$(eval $(call gb_Library_add_exception_objects,xcr,\
-	xmlscript/source/xmldlg_imexp/xmldlg_impmodels \
-	xmlscript/source/xmldlg_imexp/xmldlg_import \
-	xmlscript/source/xmldlg_imexp/xmldlg_addfunc \
-	xmlscript/source/xmldlg_imexp/xmldlg_export \
-	xmlscript/source/xmldlg_imexp/xmldlg_expmodels \
-	xmlscript/source/misc/unoservices \
-	xmlscript/source/xml_helper/xml_byteseq \
-	xmlscript/source/xml_helper/xml_impctx \
-	xmlscript/source/xml_helper/xml_element \
-	xmlscript/source/xmlflat_imexp/xmlbas_import \
-	xmlscript/source/xmlflat_imexp/xmlbas_export \
-	xmlscript/source/xmllib_imexp/xmllib_import \
-	xmlscript/source/xmllib_imexp/xmllib_export \
-	xmlscript/source/xmlmod_imexp/xmlmod_import \
-	xmlscript/source/xmlmod_imexp/xmlmod_export \
+$(eval $(call gb_Library_add_exception_objects,sax,\
+	sax/source/tools/converter \
+	sax/source/tools/fastattribs \
+	sax/source/tools/fastserializer \
+	sax/source/tools/fshelper \
 ))
 
 # vim: set noet sw=4 ts=4:

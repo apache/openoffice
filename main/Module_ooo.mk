@@ -39,6 +39,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	oovbaapi \
 	oox \
 	padmin \
+	sax \
 	sfx2 \
 	sot \
 	starmath \
@@ -58,6 +59,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	wizards \
 	writerfilter \
 	xmloff \
+	xmlreader \
 	xmlscript \
 ))
 

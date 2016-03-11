@@ -80,6 +80,8 @@ my_components = \
     component/linguistic/source/lng \
     component/oox/util/oox \
     component/vbahelper/util/msforms \
+    component/sax/source/expatwrap/expwrap \
+    component/sax/source/fastparser/fastsax \
     component/sfx2/util/sfx \
     component/sot/util/sot \
     component/svgio/svgio \
@@ -121,7 +123,6 @@ my_components = \
     dlgprov \
     embobj \
     evtatt \
-    fastsax \
     fileacc \
     filterconfig1 \
     flash \
@@ -155,7 +156,6 @@ my_components = \
     rpt \
     rptui \
     rptxml \
-    sax \
     sb \
     sc \
     scd \

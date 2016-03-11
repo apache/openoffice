@@ -134,6 +134,8 @@ $(eval $(call gb_Helper_register_libraries,UNOLIBS_OOO, \
 	canvasfactory \
 	directx5canvas \
 	directx9canvas \
+	expwrap \
+	fastsax \
 	fsstorage \
 	gdipluscanvas \
 	hatchwindowfactory \
@@ -179,6 +181,17 @@ ifeq ($(SYSTEM_OPENSSL),YES)
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE, \
 	crypto \
 	ssl \
+))
+endif
+
+ifeq ($(SYSTEM_EXPAT),YES)
+$(eval $(call gb_Helper_register_libraries,PLAINLIBS_NONE, \
+	expat \
+))
+else
+$(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
+	expat_xmlparse \
+	expat_xmltok \
 ))
 endif
 
