@@ -57,7 +57,6 @@ gb_Executable_get_external_headers_target = $(WORKDIR)/ExternalHeaders/Executabl
 gb_Executable_get_headers_target = $(WORKDIR)/Headers/Executable/$(1)
 gb_GoogleTest_get_target = $(WORKDIR)/GoogleTest/$(1).test
 gb_Jar_get_target = $(WORKDIR)/Jar/$(1).jar
-gb_Jar_get_final_target = $(WORKDIR)/Jar/$(1).done
 gb_Jar_get_classsetname = Jar/$(1)
 gb_JavaClassSet_get_classdir = $(WORKDIR)/JavaClassSet/$(1)
 gb_JavaClassSet_get_repo_target = $(WORKDIR)/JavaClassSet/$(2)/$(1).done
