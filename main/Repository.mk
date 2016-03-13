@@ -103,7 +103,6 @@ $(eval $(call gb_Helper_register_libraries,PLAINLIBS_URE, \
 ))
 
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_OOO, \
-	icule \
 ))
 
 
@@ -155,7 +154,6 @@ $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
 	basegfx_s \
 	ooopathutils \
 	salcpprt \
-    graphite \
     vclmain \
 ))
 

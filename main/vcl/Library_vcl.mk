@@ -76,8 +76,6 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
 	basegfx \
 	comphelper \
     cppuhelper \
-    icuuc \
-    icule \
 	i18nisolang1 \
 	i18npaper \
     i18nutil \
@@ -88,6 +86,11 @@ $(eval $(call gb_Library_add_linked_libs,vcl,\
 	vos3 \
 	$(gb_STDLIBS) \
 ))
+
+$(call gb_Library_use_externals,vcl,\
+	icule \
+	icuuc \
+)
 
 ifeq ($(GUIBASE),unx)
 $(eval $(call gb_Library_add_linked_libs,vcl,\
@@ -470,22 +473,9 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
     vcl/source/glyphs/graphite_adaptors \
     vcl/source/glyphs/graphite_serverfont \
 ))
-ifeq ($(SYSTEM_GRAPHITE),YES)
-$(eval $(call gb_Library_add_libs,vcl,\
-    $(GRAPHITE_LIBS) \
-))
-else
-$(eval $(call gb_Library_add_linked_static_libs,vcl,\
-    graphite \
-))
 endif
-endif
-# on windows link static graphite library
-ifeq ($(OS),WNT)
-$(eval $(call gb_Library_add_linked_static_libs,vcl,\
-    graphite \
-))
-endif
+
+$(call gb_Library_use_external,vcl,graphite)
 endif
 
 ifeq ($(OS),LINUX)
