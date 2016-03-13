@@ -42,8 +42,7 @@ $(eval $(call gb_Library_add_api,drawinglayer,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,drawinglayer,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,drawinglayer,\
 	-DDRAWINGLAYER_DLLIMPLEMENTATION \
 ))
 

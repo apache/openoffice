@@ -38,8 +38,7 @@ $(eval $(call gb_Library_add_api,qstart_gtk,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,qstart_gtk,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,qstart_gtk,\
 	-DDLL_NAME=$(notdir $(call gb_Library_get_target,sfx2)) \
 	-DENABLE_QUICKSTART_APPLET \
 ))

@@ -40,8 +40,7 @@ $(eval $(call gb_Library_set_include,basebmp,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,basebmp,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,basebmp,\
 	-DBASEBMP_DLLIMPLEMENTATION \
 ))
 

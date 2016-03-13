@@ -43,8 +43,7 @@ $(eval $(call gb_Library_set_include,xcr,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,xcr,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,xcr,\
 	-DXCR_DLLIMPLEMENTATION \
 ))
 

@@ -41,14 +41,12 @@ $(eval $(call gb_Library_set_include,directx5canvas,\
 	-I$(SRCDIR)/canvas/source/directx \
 ))
 
-$(eval $(call gb_Library_set_defs,directx5canvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,directx5canvas,\
 	-DDIRECTX_VERSION=0x0500 \
 ))
 
 ifneq ($(strip $(VERBOSE)$(verbose)),)
-$(eval $(call gb_Library_set_defs,directx5canvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,directx5canvas,\
 	-DVERBOSE \
 ))
 endif

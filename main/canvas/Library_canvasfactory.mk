@@ -40,10 +40,6 @@ $(eval $(call gb_Library_set_include,canvasfactory,\
 	-I$(SRCDIR)/canvas/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,canvasfactory,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_linked_libs,canvasfactory,\
 	sal \
 	stl \

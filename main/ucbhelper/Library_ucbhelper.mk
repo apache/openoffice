@@ -42,8 +42,7 @@ $(eval $(call gb_Library_set_include,ucbhelper,\
 	-I$(SRCDIR)/ucbhelper/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,ucbhelper,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,ucbhelper,\
 	-DUCBHELPER_DLLIMPLEMENTATION \
 ))
 

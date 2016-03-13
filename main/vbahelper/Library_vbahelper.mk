@@ -37,8 +37,7 @@ $(eval $(call gb_Library_set_include,vbahelper,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,vbahelper,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vbahelper,\
 	-DVBAHELPER_DLLIMPLEMENTATION \
 ))
 

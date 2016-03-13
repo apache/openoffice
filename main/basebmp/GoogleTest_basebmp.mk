@@ -53,8 +53,4 @@ $(eval $(call gb_GoogleTest_add_api,basebmp_test,\
 	offapi \
 ))
 
-$(eval $(call gb_GoogleTest_set_include,basebmp_test,\
-	$$(INCLUDE) \
-))
-
 # vim: set noet sw=4 ts=4:

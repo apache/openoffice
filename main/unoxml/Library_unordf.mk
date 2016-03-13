@@ -29,10 +29,6 @@ $(eval $(call gb_Library_set_include,unordf,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,unordf,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_api,unordf,\
 	udkapi \
 	offapi \

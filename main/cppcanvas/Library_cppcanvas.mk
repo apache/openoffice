@@ -43,8 +43,7 @@ $(eval $(call gb_Library_set_include,cppcanvas,\
 	$$(INCLUDE) \
 ))
 
-$(eval $(call gb_Library_set_defs,cppcanvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,cppcanvas,\
 	-DCPPCANVAS_DLLIMPLEMENTATION \
 ))
 

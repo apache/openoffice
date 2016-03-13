@@ -36,10 +36,6 @@ $(eval $(call gb_Library_add_api,textconversiondlgs,\
 	offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,textconversiondlgs,\
-	$$(DEFS) \
-))
-
 $(eval $(call gb_Library_add_linked_libs,textconversiondlgs,\
 	comphelper \
 	cppuhelper \

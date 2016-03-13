@@ -40,14 +40,12 @@ $(eval $(call gb_Library_set_include,gdipluscanvas,\
 	-I$(SRCDIR)/canvas/inc/pch \
 ))
 
-$(eval $(call gb_Library_set_defs,gdipluscanvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,gdipluscanvas,\
 	-DDIRECTX_VERSION=0x0900 \
 ))
 
 ifneq ($(strip $(VERBOSE)$(verbose)),)
-$(eval $(call gb_Library_set_defs,gdipluscanvas,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,gdipluscanvas,\
 	-DVERBOSE \
 ))
 endif

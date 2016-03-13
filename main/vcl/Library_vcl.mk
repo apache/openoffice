@@ -61,8 +61,7 @@ $(eval $(call gb_Library_set_include,vcl,\
 ))
 endif
 
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
 	-DVCL_DLLIMPLEMENTATION \
     -DCUI_DLL_NAME=\"$(call gb_Library_get_runtime_filename,cui)\" \
     -DDLLPOSTFIX=$(subst $(or $(gb_Library_DLLEXT),$(gb_Library_PLAINEXT)),,$(gb_Library_OOOEXT)) \
@@ -111,8 +110,7 @@ $(eval $(call gb_Library_add_cxxflags,vcl,\
     $(gb_OBJCXXFLAGS) \
 ))
 ifeq ($(ENABLE_CAIRO),TRUE)
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
 	-DCAIRO \
 ))
 endif
@@ -186,22 +184,19 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
 endif
 
 ifeq ($(GUIBASE),unx)
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
     -DSAL_DLLPREFIX=\"$(gb_Library_SYSPRE)\" \
     -DSAL_DLLPOSTFIX=\"\" \
     -D_XSALSET_LIBNAME=\"$(call gb_Library_get_runtime_filename,spa)\" \
 ))
 ## handle fontconfig
 ifeq ($(ENABLE_FONTCONFIG),TRUE)
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
     -DENABLE_FONTCONFIG \
 ))
 ## handle CUPS
 ifeq ($(ENABLE_CUPS),TRUE)
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
     -DENABLE_CUPS \
 ))
 endif
@@ -456,8 +451,7 @@ $(eval $(call gb_Library_add_exception_objects,vcl,\
 ## handle Graphite
 ifeq ($(ENABLE_GRAPHITE),TRUE)
 # add defines, graphite sources for all platforms
-$(eval $(call gb_Library_set_defs,vcl,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,vcl,\
 	-DENABLE_GRAPHITE \
 ))
 $(eval $(call gb_Library_add_exception_objects,vcl,\

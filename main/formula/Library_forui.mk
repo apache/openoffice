@@ -40,8 +40,7 @@ $(eval $(call gb_Library_add_api,forui, \
         offapi \
 ))
 
-$(eval $(call gb_Library_set_defs,forui,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,forui,\
 	-DFORMULA_DLLIMPLEMENTATION \
 ))
 
