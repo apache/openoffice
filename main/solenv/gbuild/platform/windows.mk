@@ -436,6 +436,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(foreach lib,$(LINKED_LIBS),$(call gb_Library_get_filename,$(lib))) \
 		$(patsubst %,%.lib,$(EXTERNAL_LIBS)) \
 		$(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_filename,$(lib))) \
+		$(LIBS) \
 		$(if $(DLLTARGET),-out:$(DLLTARGET) -implib:$(1),-out:$(1)); RC=$$?; rm $${RESPONSEFILE} \
 	$(if $(DLLTARGET),; if [ ! -f $(DLLTARGET) ]; then rm -f $(1) && false; fi) ; exit $$RC)
 endef
@@ -452,7 +453,6 @@ gb_Library_PLAINEXT := .lib
 
 gb_Library_PLAINLIBS_NONE += \
 	advapi32 \
-	cairo \
 	d3d9 \
 	d3dx \
 	ddraw \
@@ -472,8 +472,7 @@ gb_Library_PLAINLIBS_NONE += \
 	uuid \
 	uwinapi \
 	winmm \
-	winspool \
-	z
+	winspool
 
 gb_Library_LAYER := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):OOO) \

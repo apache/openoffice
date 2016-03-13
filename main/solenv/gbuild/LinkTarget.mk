@@ -353,6 +353,7 @@ $(call gb_LinkTarget_get_target,$(1)) : LDFLAGS := $$(gb_LinkTarget_LDFLAGS)
 $(call gb_LinkTarget_get_target,$(1)) : LINKED_LIBS := 
 $(call gb_LinkTarget_get_target,$(1)) : LINKED_STATIC_LIBS := 
 $(call gb_LinkTarget_get_target,$(1)) : EXTERNAL_LIBS := 
+$(call gb_LinkTarget_get_target,$(1)) : LIBS :=
 $(call gb_LinkTarget_get_target,$(1)) : TARGETTYPE := 
 $(call gb_LinkTarget_get_headers_target,$(1)) \
 $(call gb_LinkTarget_get_target,$(1)) : PCH_NAME :=
@@ -457,6 +458,10 @@ ifeq ($(gb_FULLDEPS),$(true))
 $(call gb_LinkTarget_get_dep_target,$(1)) : INCLUDE += $$(foreach api,$(2),-I$(OUTDIR)/inc/$$(api))
 endif
 
+endef
+
+define gb_LinkTarget_add_libs
+$(call gb_LinkTarget_get_target,$(1)) : LIBS += $(2)
 endef
 
 define gb_LinkTarget_add_linked_libs
@@ -680,5 +685,18 @@ $(call gb_LinkTarget__add_precompiled_header_impl,$(1),$(2),$(notdir $(2)))
 endif
 
 endef
+
+# this forwards to functions that must be defined in RepositoryExternal.mk.
+# $(call gb_LinkTarget_use_external,library,external)
+define gb_LinkTarget_use_external
+$(eval $(if $(value gb_LinkTarget__use_$(2)),\
+  $(call gb_LinkTarget__use_$(2),$(1)),\
+  $(error gb_LinkTarget_use_external: unknown external: $(2))))
+endef
+
+# $(call gb_LinkTarget_use_externals,library,externals)
+gb_LinkTarget_use_externals = \
+ $(foreach external,$(2),$(call gb_LinkTarget_use_external,$(1),$(external)))
+
 
 # vim: set noet sw=4 ts=4:

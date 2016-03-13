@@ -326,6 +326,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(patsubst %.lib,-l%,$(foreach lib,$(LINKED_LIBS),$(call gb_Library_get_filename,$(lib)))) \
 		$(patsubst %,-l%,$(EXTERNAL_LIBS)) \
 		$(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_target,$(lib))) \
+		$(LIBS) \
 		$(if $(DLLTARGET),-o $(DLLTARGET), -o $(1) ); \
 		RC=$$?; rm $${RESPONSEFILE} \
 	$(if $(DLLTARGET),; emximp -p2048 -o $(1) $(DLLDEF) ) \
@@ -367,9 +368,7 @@ gb_Library_PLAINLIBS_NONE += \
 	ft2lib \
 	dl \
 	freetype \
-	jpeg \
 	m \
-	z \
 	pthread
 
 gb_Library_LAYER := \

@@ -78,6 +78,8 @@ $(eval $(foreach method,\
 	add_api \
 	add_linked_libs \
 	add_linked_static_libs \
+	use_external \
+	use_externals \
 	add_package_headers \
 	add_sdi_headers \
 	add_precompiled_header \

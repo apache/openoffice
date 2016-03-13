@@ -285,6 +285,7 @@ $(call gb_Helper_abbreviate_dirs,\
 		$(foreach object,$(OBJCXXOBJECTS),$(call gb_ObjCxxObject_get_target,$(object))) \
 		$(foreach object,$(GENCXXOBJECTS),$(call gb_GenCxxObject_get_target,$(object))) \
 		$(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_target,$(lib))) \
+		$(LIBS) \
 		-o $(1) \
 		`cat $${DYLIB_FILE}` && \
 	$(if $(filter Library,$(TARGETTYPE)),\
@@ -330,10 +331,8 @@ gb_Library__FRAMEWORKS := \
 gb_Library_PLAINLIBS_NONE += \
 	Cocoa \
 	objc \
-	jpeg \
 	m \
-	pthread \
-	z
+	pthread
 
 gb_Library_FILENAMES := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):$(gb_Library_SYSPRE)$(lib)$(gb_Library_OOOEXT)) \

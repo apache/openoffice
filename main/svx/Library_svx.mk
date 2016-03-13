@@ -54,7 +54,6 @@ $(eval $(call gb_Library_add_linked_libs,svx,\
 	fwe \
 	fwk \
 	i18nisolang1 \
-	icuuc \
 	sal \
 	sfx \
 	sot \
@@ -72,6 +71,8 @@ $(eval $(call gb_Library_add_linked_libs,svx,\
 	xcr \
     $(gb_STDLIBS) \
 ))
+
+$(call gb_Library_use_external,svx,icuuc)
 
 $(eval $(call gb_Library_add_exception_objects,svx,\
     svx/source/accessibility/AccessibleControlShape \

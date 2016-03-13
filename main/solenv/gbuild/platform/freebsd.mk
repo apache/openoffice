@@ -253,6 +253,7 @@ $(call gb_Helper_abbreviate_dirs,\
 		$(foreach object,$(CXXOBJECTS),$(call gb_CxxObject_get_target,$(object))) \
 		$(foreach object,$(GENCXXOBJECTS),$(call gb_GenCxxObject_get_target,$(object))) \
 		-Wl$(COMMA)--start-group $(foreach lib,$(LINKED_STATIC_LIBS),$(call gb_StaticLibrary_get_target,$(lib))) -Wl$(COMMA)--end-group \
+		$(LIBS) \
 		-o $(1))
 endef
 
@@ -296,20 +297,16 @@ gb_Library_UNOEXT := .uno$(gb_Library_PLAINEXT)
 endif
 
 gb_Library_PLAINLIBS_NONE += \
-	cairo \
 	fontconfig \
 	Xrender \
-	pixman-1 \
 	dl \
 	freetype \
-	jpeg \
 	m \
 	pthread \
 	X11 \
 	Xext \
 	SM \
-	ICE \
-	z
+	ICE
 
 gb_Library_FILENAMES := \
 	$(foreach lib,$(gb_Library_OOOLIBS),$(lib):$(gb_Library_SYSPRE)$(lib)$(gb_Library_OOOEXT)) \
