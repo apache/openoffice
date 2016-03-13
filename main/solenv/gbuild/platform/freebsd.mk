@@ -219,22 +219,18 @@ gb_LinkTarget__RPATHS := \
 	SDKBIN:\dORIGIN/../../ure-link/lib \
 	NONEBIN:\dORIGIN/../lib:\dORIGIN \
 
-gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR) $(gb_COMPILEROPTFLAGS)
+gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR)
 gb_LinkTarget_CXXFLAGS := $(gb_CXXFLAGS) $(gb_CXXFLAGS_WERROR)
 
 ifeq ($(gb_DEBUGLEVEL),0)
 gb_LinkTarget_LDFLAGS += -Wl,-O1
 endif
 
-gb_DEBUG_CFLAGS := -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
-
 ifeq ($(gb_DEBUGLEVEL),2)
 ifeq ($(COM),CLANG)
-gb_LinkTarget_CXXFLAGS += -ggdb3 -fno-inline
-gb_LinkTarget_CFLAGS += -ggdb3 -fno-inline
+gb_DEBUG_CFLAGS := -ggdb3 -fno-inline
 else
-gb_LinkTarget_CXXFLAGS += -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
-gb_LinkTarget_CFLAGS += -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
+gb_DEBUG_CFLAGS := -ggdb3 -finline-limit=0 -fno-inline -fno-default-inline
 endif
 endif
 

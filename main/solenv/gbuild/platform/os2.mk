@@ -281,14 +281,9 @@ endef
 
 # LinkTarget class
 
-gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR) $(gb_COMPILEROPTFLAGS)
+gb_LinkTarget_CFLAGS := $(gb_CFLAGS) $(gb_CFLAGS_WERROR)
 gb_LinkTarget_CXXFLAGS := $(gb_CXXFLAGS) $(gb_CXXFLAGS_WERROR)
-
-ifeq ($(gb_DEBUGLEVEL),2)
-gb_LinkTarget_CFLAGS += -g
-gb_LinkTarget_CXXFLAGS += -g
-gb_LinkTarget_OBJCXXFLAGS += -g
-endif
+gb_DEBUG_CFLAGS := -g
 
 gb_LinkTarget_INCLUDE :=\
 	$(filter-out %/stl, $(subst -I. , ,$(SOLARINC))) \
