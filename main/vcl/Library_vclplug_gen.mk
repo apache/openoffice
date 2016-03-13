@@ -126,11 +126,10 @@ $(eval $(call gb_Library_set_defs,vclplug_gen,\
 	-DUSE_RANDR \
 ))
 ifeq ($(XRANDR_DLOPEN),FALSE)
-$(eval $(call gb_Library_set_cxxflags,vclplug_gen,\
-    $$(CXXFLAGS) \
+$(eval $(call gb_Library_set_include,vclplug_gen,\
+	$$(INCLUDE) \
 ))
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
     $(XRANDR_LIBS) \
 ))
 else
@@ -151,13 +150,11 @@ $(eval $(call gb_Library_set_defs,vclplug_gen,\
 	-DUSE_XINERAMA_XORG \
 ))
 ifeq ($(XINERAMA_LINK),dynamic)
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
 ))
 
 else
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
     -Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
 ))
 endif
@@ -171,13 +168,11 @@ $(eval $(call gb_Library_set_defs,vclplug_gen,\
 ifeq ($(USE_XINERAMA_VERSION),Xorg)
 # Solaris, Xorg
 ifeq ($(XINERAMA_LINK),dynamic)
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
     -lXinerama \
 ))
 else
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
     -Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
 ))
 endif
@@ -191,8 +186,7 @@ $(eval $(call gb_Library_set_defs,vclplug_gen,\
 	$$(DEFS) \
 	-DXRENDER_LINK \
 ))
-$(eval $(call gb_Library_set_ldflags,vclplug_gen,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,vclplug_gen,\
     $(shell pkg-config --libs xrender) \
 ))
 endif
@@ -203,13 +197,13 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_gen,\
 	m \
 	pthread \
 ))
-$(eval $(call gb_Library_add_external_libs,vclplug_gen,	\
-	Xinerama Xrandr					\
+$(eval $(call gb_Library_add_libs,vclplug_gen, \
+	-lXinerama -lXrandr \
 ))
 endif
 ifeq ($(OS),FREEBSD)
-$(eval $(call gb_Library_add_external_libs,vclplug_gen,	\
-	Xinerama Xrandr					\
+$(eval $(call gb_Library_add_libs,vclplug_gen, \
+	-lXinerama -lXrandr \
 ))
 endif
 # vim: set noet sw=4 ts=4:

@@ -46,8 +46,4 @@ $(eval $(call gb_GoogleTest_add_api,comphelper_weakbag,\
 	udkapi \
 ))
 
-$(eval $(call gb_GoogleTest_set_ldflags,comphelper_weakbag,\
-    $$(LDFLAGS) \
-))
-
 # vim: set noet sw=4 ts=4:

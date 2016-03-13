@@ -171,7 +171,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	mkdir -p $(dir $(call gb_CObject_get_dep_target,$(2))) && \
 	$(gb_CC) \
-		$(DEFS) $(CFLAGS) \
+		$(DEFS) \
+		$(T_CFLAGS) \
 		-c $(3) \
 		-o $(1) \
 		-MMD -MT $(call gb_CObject_get_target,$(2)) \
@@ -195,7 +196,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	mkdir -p $(dir $(call gb_CxxObject_get_dep_target,$(2))) && \
 	$(gb_CXX) \
-		$(DEFS) $(CXXFLAGS) \
+		$(DEFS) \
+		$(T_CXXFLAGS) \
 		-c $(3) \
 		-o $(1) \
 		-MMD -MT $(call gb_CxxObject_get_target,$(2)) \
@@ -242,7 +244,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	$(gb_CXX) \
 		$(if $(filter Library,$(TARGETTYPE)),$(gb_Library_TARGETTYPEFLAGS)) \
-		$(subst \d,$$,$(RPATH)) $(LDFLAGS) \
+		$(subst \d,$$,$(RPATH)) \
+		$(T_LDFLAGS) \
 		$(patsubst lib%.so,-l%,$(foreach lib,$(LINKED_LIBS),$(call gb_Library_get_filename,$(lib)))) \
 		$(patsubst %,-l%,$(EXTERNAL_LIBS)) \
 		$(foreach object,$(COBJECTS),$(call gb_CObject_get_target,$(object))) \

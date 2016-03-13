@@ -156,8 +156,9 @@ $(eval $(call gb_Library_add_exception_objects,ootk,\
 ))
 
 ifeq ($(GUIBASE),aqua)
-$(eval $(call gb_Library_set_cxxflags,ootk,\
-	$$(CXXFLAGS) $(gb_OBJCXXFLAGS)))
+$(eval $(call gb_Library_add_cxxflags,ootk,\
+	$(gb_OBJCXXFLAGS) \
+))
 endif
 
 ifeq ($(OS),LINUX)

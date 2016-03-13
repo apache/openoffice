@@ -169,7 +169,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	mkdir -p $(dir $(call gb_CObject_get_dep_target,$(2))) && \
 	$(gb_CC) \
-		$(DEFS) $(CFLAGS) \
+		$(DEFS) \
+		$(T_CFLAGS) \
 		-c $(3) \
 		-o $(1) \
 		-MMD -MT $(call gb_CObject_get_target,$(2)) \
@@ -187,7 +188,8 @@ $(call gb_Helper_abbreviate_dirs,\
 	mkdir -p $(dir $(1)) && \
 	mkdir -p $(dir $(call gb_CxxObject_get_dep_target,$(2))) && \
 	$(gb_CXX) \
-		$(DEFS) $(CXXFLAGS) \
+		$(DEFS) \
+		$(T_CXXFLAGS) \
 		-c $(3) \
 		-o $(1) \
 		-MMD -MT $(call gb_CxxObject_get_target,$(2)) \
@@ -314,7 +316,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(if $(filter Library,$(TARGETTYPE)),$(gb_Library_TARGETTYPEFLAGS)) \
 		$(if $(filter StaticLibrary,$(TARGETTYPE)),$(gb_StaticLibrary_TARGETTYPEFLAGS)) \
 		$(if $(filter Executable,$(TARGETTYPE)),$(gb_Executable_TARGETTYPEFLAGS)) \
-		$(LDFLAGS) \
+		$(T_LDFLAGS) \
 		@$${RESPONSEFILE} \
 		$(if $(DLLTARGET), $(DLLDEF)) \
 		$(NATIVERES) \

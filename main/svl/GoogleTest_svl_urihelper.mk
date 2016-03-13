@@ -50,8 +50,4 @@ $(eval $(call gb_GoogleTest_add_api,svl_urihelper,\
 	udkapi \
 ))
  
-$(eval $(call gb_GoogleTest_set_ldflags,svl_urihelper,\
-    $$(LDFLAGS) \
-))
-
 # vim: set noet sw=4 ts=4:

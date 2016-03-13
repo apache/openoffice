@@ -274,13 +274,15 @@ $(call gb_Helper_abbreviate_dirs_native,\
 	mkdir -p $(dir $(1)) && \
 	unset INCLUDE && \
 	$(gb_CC) \
-		$(DEFS) $(CFLAGS)  -Fd$(PDBFILE) \
+		$(DEFS) \
+		$(T_CFLAGS) \
+		-Fd$(PDBFILE) \
         $(PCHFLAGS) \
 		-I$(dir $(3)) \
 		$(INCLUDE) \
 		-c $(3) \
 		-Fo$(1))
-$(call gb_CObject__command_deponcompile,$(1),$(2),$(3),$(DEFS),$(CFLAGS),$(INCLUDE))
+$(call gb_CObject__command_deponcompile,$(1),$(2),$(3),$(DEFS),$(T_CFLAGS),$(INCLUDE))
 endef
 
 
@@ -313,7 +315,9 @@ $(call gb_Helper_abbreviate_dirs_native,\
 	mkdir -p $(dir $(1)) && \
 	unset INCLUDE && \
 	$(gb_CXX) \
-		$(DEFS) $(CXXFLAGS) -Fd$(PDBFILE)\
+		$(DEFS) \
+		$(T_CXXFLAGS) \
+		-Fd$(PDBFILE) \
         $(PCHFLAGS) \
 		-I$(dir $(3)) \
 		$(INCLUDE_STL) $(INCLUDE) \
@@ -432,7 +436,7 @@ $(call gb_Helper_abbreviate_dirs_native,\
 		$(if $(filter Library,$(TARGETTYPE)),$(gb_Library_TARGETTYPEFLAGS)) \
 		$(if $(filter StaticLibrary,$(TARGETTYPE)),$(gb_StaticLibrary_TARGETTYPEFLAGS)) \
 		$(if $(filter GoogleTest Executable,$(TARGETTYPE)),$(gb_Executable_TARGETTYPEFLAGS)) \
-		$(LDFLAGS) \
+		$(T_LDFLAGS) \
 		@$${RESPONSEFILE} \
 		$(foreach lib,$(LINKED_LIBS),$(call gb_Library_get_filename,$(lib))) \
 		$(patsubst %,%.lib,$(EXTERNAL_LIBS)) \

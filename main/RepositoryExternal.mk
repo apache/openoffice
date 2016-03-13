@@ -66,12 +66,12 @@ ifeq ($(SYSTEM_JPEG),YES)
 define gb_LinkTarget__use_jpeg
 $(call gb_LinkTarget_add_libs,$(1),-ljpeg)
 $(call gb_LinkTarget_set_ldflags,$(1),\
-	$$(filter-out -L/usr/lib/jvm%,$$(LDFLAGS)) \
+	$$(filter-out -L/usr/lib/jvm%,$$(T_LDFLAGS)) \
 )
 ifeq ($(OS),FREEBSD)
 # JDK jpeg library on FreeBSD lives under ${JAVA_HOME}/jre/lib/${ARCH}/
 $(call gb_LinkTarget_set_ldflags,$(1),\
-	$$(filter-out -L$$(JAVA_HOME)/jre/lib/%,$$(LDFLAGS)) \
+	$$(filter-out -L$$(JAVA_HOME)/jre/lib/%,$$(T_LDFLAGS)) \
 )
 endif
 endef

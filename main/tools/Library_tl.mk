@@ -136,8 +136,7 @@ $(call gb_Library_use_external,tl,zlib)
 
 ifeq ($(OS),OS2)
 # YD FIXME above is not working... needs ldflags hack...
-$(eval $(call gb_Library_set_ldflags,tl,\
-    $$(LDFLAGS) \
+$(eval $(call gb_Library_add_libs,tl,\
     -lz \
 ))
 endif

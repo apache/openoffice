@@ -44,8 +44,7 @@ $(FIXED_DEF_FILE) : $(ORIGINAL_DEF_FILE)
 	cp $< $@
 	echo serf_bucket_request_set_CL >> $@
 
-$(eval $(call gb_Library_set_ldflags,serf,\
-	$$(LDFLAGS) \
+$(eval $(call gb_Library_add_ldflags,serf,\
 	-DEF:$(FIXED_DEF_FILE)	\
 ))
 
