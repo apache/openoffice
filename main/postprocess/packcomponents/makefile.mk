@@ -54,7 +54,6 @@ my_components = \
     textoutstream \
     uuresolver \
     abp \
-    adabasui \
     analysis \
     animcore \
     avmedia \
@@ -73,12 +72,21 @@ my_components = \
     component/comphelper/util/comphelp \
     component/cui/util/cui \
     component/drawinglayer/drawinglayer \
+	component/dbaccess/source/ext/adabas/adabasui \
+	component/dbaccess/source/ext/macromigration/dbmm \
+	component/dbaccess/source/filter/xml/dbaxml \
+	component/dbaccess/util/dba \
+	component/dbaccess/util/dbu \
+	component/dbaccess/util/sdbt \
     component/formula/util/for \
     component/framework/util/fwk \
     component/framework/util/fwl \
     component/framework/util/fwm \
     component/linguistic/source/lng \
     component/oox/util/oox \
+	component/reportdesign/source/filter/xml/rptxml \
+	component/reportdesign/util/rpt \
+	component/reportdesign/util/rptui \
     component/vbahelper/util/msforms \
     component/sax/source/expatwrap/expwrap \
     component/sax/source/fastparser/fastsax \
@@ -110,14 +118,10 @@ my_components = \
     configmgr \
     ctl \
     date \
-    dba \
     dbase \
-    dbaxml \
-    dbmm \
     dbp \
     dbpool2 \
     dbtools \
-    dbu \
     deployment \
     deploymentgui \
     dlgprov \
@@ -153,9 +157,6 @@ my_components = \
     pythonloader \
     pythonscript \
     res \
-    rpt \
-    rptui \
-    rptxml \
     sb \
     sc \
     scd \
@@ -163,7 +164,6 @@ my_components = \
     scriptframe \
     sd \
     sdbc2 \
-    sdbt \
     sdd \
     slideshow \
     spl \

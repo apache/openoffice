@@ -29,6 +29,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	canvas \
 	comphelper \
 	cppcanvas \
+	dbaccess \
 	drawinglayer \
 	editeng \
 	formula \
@@ -39,6 +40,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	oovbaapi \
 	oox \
 	padmin \
+	reportdesign \
 	sax \
 	sfx2 \
 	sot \
