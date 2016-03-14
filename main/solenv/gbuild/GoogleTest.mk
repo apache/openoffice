@@ -55,6 +55,9 @@ endef
 define gb_GoogleTest__GoogleTest_impl
 $(call gb_LinkTarget_LinkTarget,$(2))
 $(call gb_LinkTarget_set_targettype,$(2),GoogleTest)
+$(call gb_LinkTarget_add_defs,$(2),\
+	$(gb_GoogleTest_DEFS) \
+)
 $(call gb_LinkTarget_add_linked_libs,$(2),gtest)
 $(call gb_GoogleTest_get_target,$(1)) : $(call gb_LinkTarget_get_target,$(2))
 $(call gb_GoogleTest_get_clean_target,$(1)) : $(call gb_LinkTarget_get_clean_target,$(2))
