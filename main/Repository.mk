@@ -95,6 +95,10 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	sw \
 	swd \
 	swui \
+	sd \
+	sdd \
+	sdui \
+	sdfilt \
 	textconversiondlgs \
 	ootk \
 	tl \
