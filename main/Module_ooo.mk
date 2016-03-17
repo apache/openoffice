@@ -42,6 +42,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	padmin \
 	reportdesign \
 	sax \
+	sd \
 	sfx2 \
 	sot \
 	starmath \
