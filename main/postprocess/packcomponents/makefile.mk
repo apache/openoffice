@@ -84,7 +84,7 @@ my_components = \
     component/framework/util/fwm \
     component/linguistic/source/lng \
     component/oox/util/oox \
-	component/reportdesign/source/filter/xml/rptxml \
+	component/reportdesign/util/rptxml \
 	component/reportdesign/util/rpt \
 	component/reportdesign/util/rptui \
     component/vbahelper/util/msforms \

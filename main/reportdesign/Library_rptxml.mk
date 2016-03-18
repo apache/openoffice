@@ -24,7 +24,7 @@
 $(eval $(call gb_Library_Library,rptxml))
 $(eval $(call gb_Library_add_precompiled_header,rptxml,$(SRCDIR)/reportdesign/inc/pch/precompiled_rptxml))
 
-$(eval $(call gb_Library_set_componentfile,rptxml,reportdesign/source/filter/xml/rptxml))
+$(eval $(call gb_Library_set_componentfile,rptxml,reportdesign/util/rptxml))
 
 $(eval $(call gb_Library_add_api,rptxml,\
 	udkapi \
