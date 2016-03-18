@@ -24,6 +24,7 @@
 #include <rtl/ustring.hxx>
 #include <map>
 #include <string>
+#include <stdio.h>
 
 namespace writerfilter {
 namespace dmapper{
