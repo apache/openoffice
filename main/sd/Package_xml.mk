@@ -23,7 +23,6 @@
 
 $(eval $(call gb_Package_Package,sd_xml,$(SRCDIR)/sd/xml))
 
-$(eval $(call gb_Package_add_file,sd_xml,xml/sd.xml,sd.xml))
 $(eval $(call gb_Package_add_file,sd_xml,xml/effects.xml,effects.xml))
 $(eval $(call gb_Package_add_file,sd_xml,xml/transitions.xml,transitions.xml))
 $(eval $(call gb_Package_add_file,sd_xml,xml/transitions-ogl.xml,transitions-ogl.xml))
