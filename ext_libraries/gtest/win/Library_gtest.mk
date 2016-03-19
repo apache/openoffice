@@ -31,8 +31,7 @@ $(eval $(call gb_Library_set_include,gtest,\
 	-I./include \
 ))
 
-$(eval $(call gb_Library_set_defs,gtest,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,gtest,\
 	-DGTEST_CREATE_SHARED_LIBRARY=1 \
 ))
 
