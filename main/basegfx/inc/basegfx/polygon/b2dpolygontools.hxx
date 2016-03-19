@@ -224,11 +224,11 @@ namespace basegfx
 			The sumed-up length of the rDotDashArray. If zero, it will
 			be calculated internally.
 		*/
-		BASEGFX_DLLPUBLIC BASEGFX_DLLPUBLIC void applyLineDashing(
+		BASEGFX_DLLPUBLIC void applyLineDashing(
 			const B2DPolygon& rCandidate, 
 			const ::std::vector<double>& rDotDashArray, 
 			B2DPolyPolygon* pLineTarget,
-            BASEGFX_DLLPUBLIC B2DPolyPolygon* pGapTarget = 0,
+			B2DPolyPolygon* pGapTarget = 0,
 			double fFullDashDotLen = 0.0);
 
 		// test if point is inside epsilon-range around an edge defined
