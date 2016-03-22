@@ -57,6 +57,7 @@ gb_COMPILERDEFS := \
 	-D_CRT_NONSTDC_NO_DEPRECATE \
 	-D_CRT_SECURE_NO_DEPRECATE \
 	-D_MT \
+	-D_DLL \
 	-DBOOST_MEM_FN_ENABLE_CDECL \
 	-DCPPU_ENV=msci \
 	-DFULL_DESK \
@@ -429,7 +430,7 @@ endef
 
 # Library class
 
-gb_Library_DEFS := -D_DLL
+gb_Library_DEFS := -D_DLL_
 gb_Library_TARGETTYPEFLAGS := -DLL -OPT:NOREF -SAFESEH -NXCOMPAT -DYNAMICBASE
 gb_Library_get_rpath :=
 

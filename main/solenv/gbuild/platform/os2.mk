@@ -353,7 +353,7 @@ endef
 
 # Library class
 
-gb_Library_DEFS := -D_DLL
+gb_Library_DEFS := -D_DLL_
 gb_Library_TARGETTYPEFLAGS := -Zdll
 gb_Library_get_rpath :=
 
