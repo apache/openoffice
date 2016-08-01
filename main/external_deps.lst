@@ -26,7 +26,6 @@
 
 # The primary fallback site.
 # OOO_EXTRAS=http://ooo-extras.apache-extras.org.codespot.com/files/
-
 OOO_EXTRAS=http://sourceforge.net/projects/oooextras.mirror/files/
 
 # Must not fallback to svn
@@ -162,26 +161,26 @@ if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 97262fe54dddaf583eaaee3497a426e1
-    name = apr-1.4.5.tar.gz
+    MD5 = 98492e965963f852ab29f9e61b2ad700
+    name = apr-1.5.2.tar.gz
     URL1 = http://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 666a5d56098a9debf998510e304c8095
-    name = apr-util-1.4.1.tar.gz
+    MD5 = 866825c04da827c6e5f53daff5569f42
+    name = apr-util-1.5.4.tar.gz
     URL1 = http://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXML != YES)
-    MD5 = 8127a65e8c3b08856093099b52599c86
-    name = libxml2-2.7.8.tar.gz
+    MD5 = daece17e045f1c107610e137ab50c179
+    name = libxml2-2.9.3.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXSLT != YES)
-    MD5 = e61d0364a30146aaa3001296f853b2b9
-    name = libxslt-1.1.26.tar.gz
+    MD5 = 9667bf6f9310b957254fdcf6596600b7
+    name = libxslt-1.1.28.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -228,9 +227,9 @@ if (SYSTEM_EXPAT != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
-    MD5 = ecb2e37e45c9933e2a963cabe03670ab
-    name = curl-7.19.7.tar.gz
-    URL1 = http://curl.haxx.se/download/curl-7.19.7.tar.gz
+    MD5 = 2feb3767b958add6a177c6602ff21e8c
+    name = curl-7.49.1.tar.gz
+    URL1 = http://curl.haxx.se/download/curl-7.49.1.tar.gz
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (WITH_CATA_FONTS == YES)
@@ -265,9 +264,10 @@ if (RAT_JAR_HOME==BUILD)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
-    MD5 = ec1941a74d3ef513c4ce57a9092b74e1
-    name = bsh-2.0b5-src.zip
-    URL1 = http://svn.codespot.com/a/apache-extras.org/beanshell/src_releases/$(name)
+    MD5 = beeca87be45ec87d241ddd0e1bad80c1
+    name = bsh-2.0b6-src.zip
+    URL1 = https://bintray.com/artifact/download/beanshell/Beanshell/org/apache-extras/beanshell/bsh/2.0b6/$(name)
+    URL2 = http://central.maven.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/$(name)
 
 ###############################################################################
 # Libraries with category B license
@@ -311,9 +311,9 @@ if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && ENABLE_NSS_MODULE==YES)
-    MD5 = 067a04150b1d8b64f7da3019688a7547
-    name = nss-3.14.4-with-nspr-4.9.5.tar.gz
-    URL1 = https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_14_4_RTM/src/$(name)
+    MD5 = 4ec9a36c0f7c9360b149491c013b8d50
+    name = nss-3.25-with-nspr-4.12.tar.gz
+    URL1 = https://ftp.mozilla.org/pub/security/nss/releases/NSS_3_25_RTM/src/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SYSTEM_SAXON!=YES && DISABLE_SAXON!=YES && SOLAR_JAVA==TRUE)

@@ -42,16 +42,15 @@ all:
 APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(APRVERSION)
-TARFILE_MD5=97262fe54dddaf583eaaee3497a426e1
-
-PATCH_FILES= $(TARFILE_NAME).patch
+TARFILE_MD5=98492e965963f852ab29f9e61b2ad700
 
 .IF "$(OS)"=="WNT"
 
 PATCH_FILES+= $(TARFILE_NAME)-windows.patch
+PATCH_FILES+= $(TARFILE_NAME)-no-devenv.patch
 CONFIGURE_ACTION=cp include/apr.hw include/apr.h
 BUILD_DIR=
-BUILD_ACTION=INCLUDE="$(INCLUDE);./include"  nmake -f Makefile.win buildall
+BUILD_ACTION=INCLUDE="$(INCLUDE);./include" USEMAK=1  nmake -f Makefile.win buildall
 
 .ELIF "$(GUI)" == "OS2"
 

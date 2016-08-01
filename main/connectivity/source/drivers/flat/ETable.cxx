@@ -72,26 +72,26 @@ void OFlatTable::fillColumns(const ::com::sun::star::lang::Locale& _aLocale)
 
 	QuotedTokenizedString aHeaderLine;
 	OFlatConnection* pConnection = (OFlatConnection*)m_pConnection;
-    const rtl_TextEncoding nEncoding = m_pConnection->getTextEncoding();
     const sal_Bool bHasHeaderLine = pConnection->isHeaderLine();
+    sal_Int32 nCurPos;
 	if ( bHasHeaderLine )
 	{
 		while(bRead && !aHeaderLine.Len())
 		{
-			bRead = m_pFileStream->ReadByteStringLine(aHeaderLine,nEncoding);
+			bRead = readLine(aHeaderLine, nCurPos);
 		}
         m_nStartRowFilePos = m_pFileStream->Tell();
 	}
 
 	// read first row
 	QuotedTokenizedString aFirstLine;
-	bRead = m_pFileStream->ReadByteStringLine(aFirstLine,nEncoding);
+	bRead = readLine(aFirstLine, nCurPos);
 
 	if ( !bHasHeaderLine || !aHeaderLine.Len())
 	{
 		while(bRead && !aFirstLine.Len())
 		{
-			bRead = m_pFileStream->ReadByteStringLine(aFirstLine,nEncoding);
+			bRead = readLine(aFirstLine, nCurPos);
 		}
 		// use first row as headerline because we need the number of columns
 		aHeaderLine = aFirstLine;
@@ -155,7 +155,7 @@ void OFlatTable::fillColumns(const ::com::sun::star::lang::Locale& _aLocale)
 	    }
         ++nRowCount;
     }
-    while(nRowCount < nMaxRowsToScan && m_pFileStream->ReadByteStringLine(aFirstLine,nEncoding) && !m_pFileStream->IsEof());
+    while(nRowCount < nMaxRowsToScan && readLine(aFirstLine,nCurPos) && !m_pFileStream->IsEof());
 
     for (xub_StrLen i = 0; i < nFieldCount; i++)
     {
@@ -895,21 +895,76 @@ sal_Bool OFlatTable::seekRow(IResultSetHelper::Movement eCursorPosition, sal_Int
 // -----------------------------------------------------------------------------
 sal_Bool OFlatTable::readLine(sal_Int32& _rnCurrentPos)
 {
+    return readLine(m_aCurrentLine, _rnCurrentPos);
+}
+// -----------------------------------------------------------------------------
+sal_Bool OFlatTable::readLine(QuotedTokenizedString& line, sal_Int32& _rnCurrentPos)
+{
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "flat", "Ocke.Janssen@sun.com", "OFlatTable::readLine" );
     const rtl_TextEncoding nEncoding = m_pConnection->getTextEncoding();
-    m_pFileStream->ReadByteStringLine(m_aCurrentLine,nEncoding);
-	if (m_pFileStream->IsEof())
-		return sal_False;
+    m_pFileStream->ReadByteStringLine(line,nEncoding);
+    if (m_pFileStream->IsEof())
+        return sal_False;
 
-    QuotedTokenizedString sLine = m_aCurrentLine; // check if the string continues on next line
-    while( (sLine.GetString().GetTokenCount(m_cStringDelimiter) % 2) != 1 )
+    QuotedTokenizedString sLine = line; // check if the string continues on next line
+    xub_StrLen nLastOffset = 0;
+    bool isQuoted = false;
+    bool isFieldStarting = true;
+    while (sLine.Len() < STRING_MAXLEN)
     {
-        m_pFileStream->ReadByteStringLine(sLine,nEncoding);
-        if ( !m_pFileStream->IsEof() )
+        bool wasQuote = false;
+        const sal_Unicode *p;
+        p = sLine.GetString().GetBuffer();
+        p += nLastOffset;
+
+        while (*p)
         {
-            m_aCurrentLine.GetString().Append('\n');
-            m_aCurrentLine.GetString() += sLine.GetString();
-            sLine = m_aCurrentLine;
+            if (isQuoted)
+            {
+                if (*p == m_cStringDelimiter)
+                    wasQuote = !wasQuote;
+                else
+                {
+                    if (wasQuote)
+                    {
+                        wasQuote = false;
+                        isQuoted = false;
+                        if (*p == m_cFieldDelimiter)
+                            isFieldStarting = true;
+                    }
+                }
+            }
+            else
+            {
+                if (isFieldStarting)
+                {
+                    isFieldStarting = false;
+                    if (*p == m_cStringDelimiter)
+                        isQuoted = true;
+                    else if (*p == m_cFieldDelimiter)
+                        isFieldStarting = true;
+                }
+                else if (*p == m_cFieldDelimiter)
+                    isFieldStarting = true;
+            }
+            ++p;
+        }
+
+        if (wasQuote)
+            isQuoted = false;
+
+        if (isQuoted)
+        {
+            nLastOffset = sLine.Len();
+            m_pFileStream->ReadByteStringLine(sLine,nEncoding);
+            if ( !m_pFileStream->IsEof() )
+            {
+                line.GetString().Append('\n');
+                line.GetString() += sLine.GetString();
+                sLine = line;
+            }
+            else
+                break;
         }
         else
             break;
@@ -917,4 +972,3 @@ sal_Bool OFlatTable::readLine(sal_Int32& _rnCurrentPos)
     _rnCurrentPos = m_pFileStream->Tell();
     return sal_True;
 }
-

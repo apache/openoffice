@@ -1643,6 +1643,9 @@ SPECIAL_LIB_FILE( gid_File_Lib_AVMediaWin, avmediawin )
 #ifdef BUNDLE_NSS_LIBS
 
 STD_LIB_FILE( gid_File_Lib_Freebl3, freebl3)
+#ifdef LINUX
+STD_LIB_FILE( gid_File_Lib_Freeblpriv3, freeblpriv3)
+#endif
 STD_LIB_FILE( gid_File_Lib_Nspr4, nspr4)
 STD_LIB_FILE( gid_File_Lib_Nss3, nss3)
 STD_LIB_FILE( gid_File_Lib_Nsckbi, nssckbi)
@@ -2034,7 +2037,7 @@ File gid_File_Lib_Apr
 	#ifdef MACOSX
             Name = STRING(CONCAT6(libapr-1,.0.,APR_MINOR,.,APR_MICRO,UNXSUFFIX));
 	#elif FREEBSD
-            Name = STRING(CONCAT3(libapr-1,UNXSUFFIX,.4));
+            Name = STRING(CONCAT3(libapr-1,UNXSUFFIX,.5));
         #else
             Name = STRING(CONCAT6(libapr-1,UNXSUFFIX,.0.,APR_MINOR,.,APR_MICRO));
         #endif
@@ -2053,7 +2056,7 @@ File gid_File_Lib_AprUtil
 	#ifdef MACOSX
             Name = STRING(CONCAT6(libaprutil-1,.0.,APR_UTIL_MINOR,.,APR_UTIL_MICRO,UNXSUFFIX));
 	#elif FREEBSD
-            Name = STRING(CONCAT3(libaprutil-1,UNXSUFFIX,.4));
+            Name = STRING(CONCAT3(libaprutil-1,UNXSUFFIX,.5));
 	#else
             Name = STRING(CONCAT6(libaprutil-1,UNXSUFFIX,.0.,APR_UTIL_MINOR,.,APR_UTIL_MICRO));
 	#endif

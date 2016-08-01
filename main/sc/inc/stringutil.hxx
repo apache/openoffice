@@ -25,8 +25,9 @@
 #define SC_STRINGUTIL_HXX
 
 #include "rtl/ustring.hxx"
+#include "scdllapi.h"
 
-class ScStringUtil
+class SC_DLLPUBLIC ScStringUtil
 {
 public:
     /** 

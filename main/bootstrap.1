@@ -54,8 +54,18 @@ chmod +x "$SRC_ROOT/solenv/bin/build_client.pl"
 chmod +x "$SRC_ROOT/solenv/bin/zipdep.pl"
 chmod +x "$SRC_ROOT/solenv/bin/gccinstlib.pl"
 
+# build the AOOJavaDownloader
+mkdir -p "$SOLARENV/$INPATH/class"
+"$JAVACOMPILER" "$SOLARENV/javadownloader/AOOJavaDownloader.java" -d "$SOLARENV/$INPATH/class"
+if [ "$?" != "0" ]; then
+    echo "*** Failed to build AOOJavaDownloader, aborting! ***"
+    exit 1
+fi
+
 # fetch or update external tarballs
 if [ "$DO_FETCH_TARBALLS" = "yes" ]; then
+# check perl include locations
+    "$PERL" -e 'print "\nInclude locations: @INC\n\n"';
     "$PERL" "$SOLARENV/bin/download_external_dependencies.pl" $SRC_ROOT/external_deps.lst
     if [ "$?" != "0" ]; then
         echo "*** Error downloading external dependencies, please fix the previous problems and try again ***"
@@ -68,7 +78,7 @@ fi
 
 if test -n "$DMAKE_URL" -a  ! -x "$SOLARENV/$INPATH/bin/dmake$EXEEXT"; then
 
-    # Assume that the dmake archive has been downloaded by fetch_tarballs.sh
+    # Assume that the dmake archive has been downloaded
     # Determine the name of the downloaded file.
     dmake_package_name=`echo $DMAKE_URL | sed "s/^\(.*\/\)//"`
 

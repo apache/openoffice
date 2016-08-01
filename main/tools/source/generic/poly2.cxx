@@ -198,6 +198,7 @@ void PolyPolygon::Remove( sal_uInt16 nPos )
 {
 	DBG_CHKTHIS( PolyPolygon, NULL );
 	DBG_ASSERT( nPos < Count(), "PolyPolygon::Remove(): nPos >= nSize" );
+	if ( nPos >= Count() ) return; // not removable
 
 	if ( mpImplPolyPolygon->mnRefCount > 1 )
 	{
@@ -218,6 +219,7 @@ void PolyPolygon::Replace( const Polygon& rPoly, sal_uInt16 nPos )
 {
 	DBG_CHKTHIS( PolyPolygon, NULL );
 	DBG_ASSERT( nPos < Count(), "PolyPolygon::Replace(): nPos >= nSize" );
+	if ( nPos >= Count() ) return; // not replaceable	
 
 	if ( mpImplPolyPolygon->mnRefCount > 1 )
 	{
@@ -283,61 +285,61 @@ void PolyPolygon::Optimize( sal_uIntPtr nOptimizeFlags, const PolyOptimizeData* 
 
 	if(nOptimizeFlags && Count())
 	{
-        // #115630# ImplDrawHatch does not work with beziers included in the polypolygon, take care of that
-        bool bIsCurve(false);
+		// #115630# ImplDrawHatch does not work with beziers included in the polypolygon, take care of that
+		bool bIsCurve(false);
 
-        for(sal_uInt16 a(0); !bIsCurve && a < Count(); a++)
-        {
-            if((*this)[a].HasFlags())
-            {
-                bIsCurve = true;
-            }
-        }
+		for(sal_uInt16 a(0); !bIsCurve && a < Count(); a++)
+		{
+			if((*this)[a].HasFlags())
+			{
+				bIsCurve = true;
+			}
+		}
 
-        if(bIsCurve)
-        {
-            OSL_ENSURE(false, "Optimize does *not* support curves, falling back to AdaptiveSubdivide()...");
-            PolyPolygon aPolyPoly;
+		if(bIsCurve)
+		{
+			OSL_ENSURE(false, "Optimize does *not* support curves, falling back to AdaptiveSubdivide()...");
+			PolyPolygon aPolyPoly;
 
-            AdaptiveSubdivide(aPolyPoly);
-            aPolyPoly.Optimize(nOptimizeFlags, pData);
-            *this = aPolyPoly;
-        }
-        else
-        {
-		    double		fArea;
-		    const sal_Bool	bEdges = ( nOptimizeFlags & POLY_OPTIMIZE_EDGES ) == POLY_OPTIMIZE_EDGES;
-		    sal_uInt16		nPercent = 0;
+			AdaptiveSubdivide(aPolyPoly);
+			aPolyPoly.Optimize(nOptimizeFlags, pData);
+			*this = aPolyPoly;
+		}
+		else
+		{
+			double		fArea;
+			const sal_Bool	bEdges = ( nOptimizeFlags & POLY_OPTIMIZE_EDGES ) == POLY_OPTIMIZE_EDGES;
+			sal_uInt16		nPercent = 0;
 
-		    if( bEdges )
-		    {
-			    const Rectangle aBound( GetBoundRect() );
+			if( bEdges )
+			{
+				const Rectangle aBound( GetBoundRect() );
 
-			    fArea = ( aBound.GetWidth() + aBound.GetHeight() ) * 0.5;
-			    nPercent = pData ? pData->GetPercentValue() : 50;
-			    nOptimizeFlags &= ~POLY_OPTIMIZE_EDGES;
-		    }
+				fArea = ( aBound.GetWidth() + aBound.GetHeight() ) * 0.5;
+				nPercent = pData ? pData->GetPercentValue() : 50;
+				nOptimizeFlags &= ~POLY_OPTIMIZE_EDGES;
+			}
 
-		    // watch for ref counter
-		    if( mpImplPolyPolygon->mnRefCount > 1 )
-		    {
-			    mpImplPolyPolygon->mnRefCount--;
-			    mpImplPolyPolygon = new ImplPolyPolygon( *mpImplPolyPolygon );
-		    }
+			// watch for ref counter
+			if( mpImplPolyPolygon->mnRefCount > 1 )
+			{
+				mpImplPolyPolygon->mnRefCount--;
+				mpImplPolyPolygon = new ImplPolyPolygon( *mpImplPolyPolygon );
+			}
 
-		    // Optimize polygons
-		    for( sal_uInt16 i = 0, nPolyCount = mpImplPolyPolygon->mnCount; i < nPolyCount; i++ )
-		    {
-			    if( bEdges )
-			    {
-				    mpImplPolyPolygon->mpPolyAry[ i ]->Optimize( POLY_OPTIMIZE_NO_SAME );
-				    Polygon::ImplReduceEdges( *( mpImplPolyPolygon->mpPolyAry[ i ] ), fArea, nPercent );
-			    }
+			// Optimize polygons
+			for( sal_uInt16 i = 0, nPolyCount = mpImplPolyPolygon->mnCount; i < nPolyCount; i++ )
+			{
+				if( bEdges )
+				{
+					mpImplPolyPolygon->mpPolyAry[ i ]->Optimize( POLY_OPTIMIZE_NO_SAME );
+					Polygon::ImplReduceEdges( *( mpImplPolyPolygon->mpPolyAry[ i ] ), fArea, nPercent );
+				}
 
-			    if( nOptimizeFlags )
-				    mpImplPolyPolygon->mpPolyAry[ i ]->Optimize( nOptimizeFlags, pData );
-		    }
-        }
+				if( nOptimizeFlags )
+					mpImplPolyPolygon->mpPolyAry[ i ]->Optimize( nOptimizeFlags, pData );
+			}
+		}
 	}
 }
 
@@ -390,53 +392,53 @@ void PolyPolygon::GetXOR( const PolyPolygon& rPolyPoly, PolyPolygon& rResult ) c
 
 void PolyPolygon::ImplDoOperation( const PolyPolygon& rPolyPoly, PolyPolygon& rResult, sal_uIntPtr nOperation ) const
 { 
-    // Convert to B2DPolyPolygon, temporarily. It might be
-    // advantageous in the future, to have a PolyPolygon adaptor that
-    // just simulates a B2DPolyPolygon here...
-    basegfx::B2DPolyPolygon aMergePolyPolygonA( getB2DPolyPolygon() );
-    basegfx::B2DPolyPolygon aMergePolyPolygonB( rPolyPoly.getB2DPolyPolygon() );
+	// Convert to B2DPolyPolygon, temporarily. It might be
+	// advantageous in the future, to have a PolyPolygon adaptor that
+	// just simulates a B2DPolyPolygon here...
+	basegfx::B2DPolyPolygon aMergePolyPolygonA( getB2DPolyPolygon() );
+	basegfx::B2DPolyPolygon aMergePolyPolygonB( rPolyPoly.getB2DPolyPolygon() );
 
-    // normalize the two polypolygons before. Force properly oriented
-    // polygons. 
-    aMergePolyPolygonA = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonA );
-    aMergePolyPolygonB = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonB );
+	// normalize the two polypolygons before. Force properly oriented
+	// polygons. 
+	aMergePolyPolygonA = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonA );
+	aMergePolyPolygonB = basegfx::tools::prepareForPolygonOperation( aMergePolyPolygonB );
 
 	switch( nOperation )
-    {
-        // All code extracted from svx/source/svdraw/svedtv2.cxx
-        // -----------------------------------------------------
+	{
+		// All code extracted from svx/source/svdraw/svedtv2.cxx
+		// -----------------------------------------------------
 
-        case POLY_CLIP_UNION:
-        {
-            // merge A and B (OR)
-            aMergePolyPolygonA = basegfx::tools::solvePolygonOperationOr(aMergePolyPolygonA, aMergePolyPolygonB);
-            break;
-        }
+		case POLY_CLIP_UNION:
+		{
+			// merge A and B (OR)
+			aMergePolyPolygonA = basegfx::tools::solvePolygonOperationOr(aMergePolyPolygonA, aMergePolyPolygonB);
+			break;
+		}
 
-        case POLY_CLIP_DIFF:
-        {
-            // subtract B from A (DIFF)
-            aMergePolyPolygonA = basegfx::tools::solvePolygonOperationDiff(aMergePolyPolygonA, aMergePolyPolygonB);
-            break;
-        }
+		case POLY_CLIP_DIFF:
+		{
+			// subtract B from A (DIFF)
+			aMergePolyPolygonA = basegfx::tools::solvePolygonOperationDiff(aMergePolyPolygonA, aMergePolyPolygonB);
+			break;
+		}
 
-        case POLY_CLIP_XOR:
-        {
-            // compute XOR between poly A and B
-            aMergePolyPolygonA = basegfx::tools::solvePolygonOperationXor(aMergePolyPolygonA, aMergePolyPolygonB);
-            break;
-        }
+		case POLY_CLIP_XOR:
+		{
+			// compute XOR between poly A and B
+			aMergePolyPolygonA = basegfx::tools::solvePolygonOperationXor(aMergePolyPolygonA, aMergePolyPolygonB);
+			break;
+		}
 
-        default:
-        case POLY_CLIP_INT:
-        {
-            // cut poly 1 against polys 2..n (AND)
-            aMergePolyPolygonA = basegfx::tools::solvePolygonOperationAnd(aMergePolyPolygonA, aMergePolyPolygonB);
-            break;
-        }
-    }
+		default:
+		case POLY_CLIP_INT:
+		{
+			// cut poly 1 against polys 2..n (AND)
+			aMergePolyPolygonA = basegfx::tools::solvePolygonOperationAnd(aMergePolyPolygonA, aMergePolyPolygonB);
+			break;
+		}
+	}
 
-    rResult = PolyPolygon( aMergePolyPolygonA );
+	rResult = PolyPolygon( aMergePolyPolygonA );
 }
 
 // -----------------------------------------------------------------------
