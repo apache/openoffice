@@ -31,8 +31,7 @@ $(eval $(call gb_Library_set_include,serf,\
 	-I$(OUTDIR)/inc/external/zlib \
 ))
 
-$(eval $(call gb_Library_set_defs,serf,\
-	$$(DEFS) \
+$(eval $(call gb_Library_add_defs,serf,\
 	-DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DWIN32_EXPORTS \
 ))
 
@@ -44,8 +43,7 @@ $(FIXED_DEF_FILE) : $(ORIGINAL_DEF_FILE)
 	cp $< $@
 	echo serf_bucket_request_set_CL >> $@
 
-$(eval $(call gb_Library_set_ldflags,serf,\
-	$$(LDFLAGS) \
+$(eval $(call gb_Library_add_ldflags,serf,\
 	-DEF:$(FIXED_DEF_FILE)	\
 ))
 

@@ -24,25 +24,46 @@
 $(eval $(call gb_Module_Module,ooo))
 
 $(eval $(call gb_Module_add_moduledirs,ooo,\
+	basebmp \
+	basegfx \
+	canvas \
 	comphelper \
+	cppcanvas \
+	dbaccess \
 	drawinglayer \
-	svgio \
-    editeng \
+	editeng \
+	formula \
 	framework \
+	idl \
+	linguistic \
+	offapi \
+	oovbaapi \
+	oox \
 	padmin \
+	reportdesign \
+	sax \
+	sd \
 	sfx2 \
-    sot \
+	sot \
+	starmath \
+	svgio \
 	svl \
 	svtools \
 	svx \
 	sw \
 	toolkit \
 	tools \
-    vcl \
+	ucbhelper \
+	udkapi \
+	unotools \
 	unoxml \
+	vbahelper \
+	vcl \
+	wizards \
+	writerfilter \
 	xmloff \
-    vbahelper \
-	formula \
+	xmlreader \
+	xmlscript \
 ))
 
 # vim: set noet ts=4 sw=4:

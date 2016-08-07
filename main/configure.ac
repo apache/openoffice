@@ -2600,107 +2600,6 @@ AC_LANG_POP([C++])
 EXCEPTIONS="$exceptions_type"
 AC_SUBST(EXCEPTIONS)
 
-dnl **************************************************************
-dnl Testing for required  Solaris and SunStudio compiler patches...
-dnl **************************************************************
-dnl Check whether the OS is SunOS.
-if test "$_os" = "SunOS"; then
-   _temp=`showrev -p | $AWK -F" " '{ print $2 }'` 
-   if test "$_os_release" = "7"; then
-      dnl ***************
-      dnl patch 106327-06
-      dnl ***************
-      AC_MSG_CHECKING([for patch 106327-06 or greater])
-      _patch=`echo $_temp | $AWK '/106327-06/ { print "found" }'`
-      _patch="false"
-      for i in $_temp
-      do
-         _patch_major=`echo $i | $AWK -F"-" '{ print $1 }'`
-         if test "$_patch_major" = "106327"; then
-            _patch_rev=`echo $i | $AWK -F"-" '{ print $2 }'`
-            if test "$_patch_rev" -ge "6"; then
-               _patch="found"
-            fi
-        fi
-      done
-      if test "$_patch" = "found"; then
-         AC_MSG_RESULT([found])
-      else
-         AC_MSG_WARN([patch 106327-06 not found, please install compiler patch 106327-06 or greater])
-         echo "patch 106327-06 not found, please install compiler patch 106327-06 or greater" >> warn
-      fi
-      dnl ***************
-      dnl patch 106950-11
-      dnl ***************
-      AC_MSG_CHECKING([for patch 106950-11 or greater])
-      _patch=`echo $_temp | $AWK '/106950-11/ { print "found" }'`
-      _patch="false"
-      for i in $_temp
-      do
-         _patch_major=`echo $i | $AWK -F"-" '{ print $1 }'`
-         if test "$_patch_major" = "106950"; then
-            _patch_rev=`echo $i | $AWK -F"-" '{ print $2 }'`
-            if test "$_patch_rev" -ge "11"; then
-               _patch="found"
-            fi
-         fi
-      done
-      if test "$_patch" = "found"; then
-         AC_MSG_RESULT([found])
-      else
-         AC_MSG_WARN([patch 106950-11 not found, please install linker patch 106950-11 or greater])
-         echo "patch 106950-11 not found, please install linker patch 106950-11 or greater" >> warn
-      fi
-   else
-      if test "$_os_release" = "6"; then
-         dnl ***************
-         dnl patch 105591-09
-         dnl ***************
-         AC_MSG_CHECKING([for patch 105591-09 or greater])
-         _patch=`echo $_temp | $AWK '/105591-09/ { print "found" }'`
-         _patch="false"
-         for i in $_temp
-         do
-            _patch_major=`echo $i | $AWK -F"-" '{ print $1 }'`
-            if test "$_patch_major" = "105591"; then
-               _patch_rev=`echo $i | $AWK -F"-" '{ print $2 }'`
-               if test "$_patch_rev" -ge "9"; then
-                  _patch="found"
-               fi
-           fi
-         done
-         if test "$_patch" = "found"; then
-            AC_MSG_RESULT([found])
-         else
-            AC_MSG_WARN([patch 105591-09 not found, please install compiler patch 105591-09 or greater])
-            echo "patch 105591-09 not found, please install compiler patch 105591-09 or greater" >> warn
-         fi
-         dnl ***************
-         dnl patch 107733-08
-         dnl ***************
-         AC_MSG_CHECKING([for patch 107733-08 or greater])
-         _patch=`echo $_temp | $AWK '/107733-08/ { print "found" }'`
-         _patch="false"
-         for i in $_temp
-         do
-            _patch_major=`echo $i | $AWK -F"-" '{ print $1 }'`
-            if test "$_patch_major" = "107733"; then
-               _patch_rev=`echo $i | $AWK -F"-" '{ print $2 }'`
-               if test "$_patch_rev" -ge "8"; then
-                  _patch="found"
-               fi
-           fi
-         done
-         if test "$_patch" = "found"; then
-            AC_MSG_RESULT([found])
-         else
-            AC_MSG_WARN([patch 107733-06 not found, please install linker patch 107733-08 or greater])
-            echo "patch 107733-06 not found, please install linker patch 107733-08 or greater" >> warn
-         fi
-      fi
-   fi
-fi
-
 dnl ===================================================================
 dnl Checks for what the default STL should be
 dnl ===================================================================
@@ -3667,7 +3566,7 @@ if test "z$enable_odk" = "z" -o "$enable_odk" != "no"; then
          AC_MSG_RESULT(yes)
       fi
       if echo "$WITH_MINGWIN" | $EGREP -q "/"; then
-         if ! test -x "`echo $WITH_MINGWIN | $SED -e s/g++/strip/ | $SED -e s/c++/strip/`"; then MINGSTRIP=false; else MINGWSTRIP=$(basename $(echo $WITH_MINGWIN | $SED -e s/g++/strip/ | $SED -e s/c++/strip/)); fi
+         if ! test -x "`echo $WITH_MINGWIN | $SED -e s/g++/strip/ | $SED -e s/c++/strip/`"; then MINGWSTRIP=false; else MINGWSTRIP=$(basename $(echo $WITH_MINGWIN | $SED -e s/g++/strip/ | $SED -e s/c++/strip/)); fi
       else
          AC_CHECK_TOOL(MINGWSTRIP, `echo $WITH_MINGWIN | $SED -e s/g++/strip/ | $SED -e s/c++/strip/`, false)
       fi
@@ -5674,6 +5573,9 @@ dnl Zip must be available or else it is an error, all platforms
 dnl ===================================================================
 if test -z "$ZIP" -o -z "$UNZIP"; then
     AC_MSG_ERROR([Zip/Unzip are required to build, please install or use --with-zip-home],,)
+fi
+if "$ZIP" -FS < /dev/null 2>&1 | $EGREP "no such option: S" > /dev/null; then
+    AC_MSG_ERROR([Zip version 3.0 or newer is required to build, please install or use --with-zip-home],,)
 fi
 
 dnl ===================================================================

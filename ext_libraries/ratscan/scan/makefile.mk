@@ -48,7 +48,7 @@ $(MISC)/aoo-$(version)_rat-scan-output.html : $(MISC)/rat-scan-output.xml
 	@echo
 	@echo Find rat scan report in $@
 
-$(MISC)/rat-scan-output.xml : rat-scan.xml $(SRC_ROOT)/rat-excludes
+$(MISC)/rat-scan-output.xml .PHONY : rat-scan.xml $(SRC_ROOT)/rat-excludes
 	$(ANT) -f rat-scan.xml -DRAT_SCAN_OUTPUT=$@ -DRAT_JAR_HOME=$(rat_jar_home)
 
 $(MISC)/excluded-files.txt : $(MISC)/excluded-files-raw.txt
