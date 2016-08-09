@@ -680,10 +680,17 @@ AC_ARG_WITH(ant-home,
 AC_ARG_WITH(junit,
 [  --with-junit            Specifies the JUnit 4 jar file to use for JUnit-based
                           tests.  --without-junit disables those tests.  Not
-                          relevant in the --without-java case.
+                          relevant in the --without-java case. The --with-hamcrest-core
+                          option is also necessary.
 
                           Usage: --with-junit=<absolute path to JUnit 4 jar>
 ],,with_junit=yes)
+AC_ARG_WITH(hamcrest-core,
+[  --with-hamcrest-core    Specifies the hamcrest-core 1.3 jar file to use for
+                          JUnit-based tests.  --without-junit disables those
+                          tests.  Not relevant in the --without-java or
+                          --without-junit cases.
+],,with_hamcrest_core=yes)
 AC_ARG_WITH(perl-home,
 [  --with-perl-home        If you have installed the Perl 5 Distribution, on your
                           system, please supply the path here.
@@ -7001,8 +7008,9 @@ fi
 rm -f conftest* core core.* *.core
 
 OOO_JUNIT_JAR=
-if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no"; then
-    AC_MSG_CHECKING([for JUnit 4])
+HAMCREST_CORE_JAR=
+if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcrest_core" != "no"; then
+    AC_MSG_CHECKING([for JUnit >= 4.11])
     if test "$with_junit" = "yes"; then
         if test -e /usr/share/java/junit4.jar; then
             OOO_JUNIT_JAR=/usr/share/java/junit4.jar
@@ -7019,18 +7027,82 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no"; then
     if test "$_os" = "WINNT"; then
         OOO_JUNIT_JAR=`cygpath -m "$OOO_JUNIT_JAR"`
     fi
-    "$JAVA_HOME/bin/jar" tf "$OOO_JUNIT_JAR" 2>&5 | \
-        $GREP org/junit/Before.class > /dev/null 2>&5
-    if test $? -eq 0; then
+    export OOO_JUNIT_JAR
+    if $PERL -e 'use Archive::Zip;
+        my $file = "$ENV{'OOO_JUNIT_JAR'}";
+        if (! -f $file) {
+            exit 1;
+        }
+        my $zip = Archive::Zip->new( $file );
+        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+        push @l, split(/\n/, $mf);
+        foreach my $line (@l) {
+            if ($line =~ m/Implementation-Version:/) {
+                ($t, $version) = split (/:/,$line);
+                $version =~ s/^\s//;
+                ($a, $b, $c, $d) = split (/\./,$version);
+                if ($a == 4 && $b >= 11) {
+                    exit 0;
+                } else {
+                    exit 1;
+                }
+            }
+        }
+        exit 1;
+        '; then
         AC_MSG_RESULT([$OOO_JUNIT_JAR])
     else
         AC_MSG_RESULT([no])
-        AC_MSG_ERROR([cannot find JUnit 4 jar; please install one in the default
-location (/usr/share/java), specify its pathname via
---with-junit=..., or disable it via --without-junit])
+        AC_MSG_ERROR([cannot find JUnit >= 4.11 jar; please install one in the default location (/usr/share/java), specify its pathname via --with-junit=..., or disable it via --without-junit])
+    fi
+
+    AC_MSG_CHECKING([for hamcrest-core 1.3])
+    if test "$with_hamcrest_core" = "yes"; then
+        if test -e /usr/share/java/hamcrest-core-1.3.jar; then
+            HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core-1.3.jar
+        else
+           if test -e /usr/share/lib/java/hamcrest-core.jar; then
+              HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest-core.jar
+           else
+              HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core.jar
+           fi
+        fi
+    else
+        HAMCREST_CORE_JAR=$with_hamcrest_core
+    fi
+    if test "$_os" = "WINNT"; then
+        HAMCREST_CORE_JAR=`cygpath -m "$HAMCREST_CORE_JAR"`
+    fi
+    export HAMCREST_CORE_JAR
+    if $PERL -e 'use Archive::Zip;
+        my $file = "$ENV{'HAMCREST_CORE_JAR'}";
+        if (! -f $file) {
+            exit 1;
+        }
+        my $zip = Archive::Zip->new( $file );
+        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+        push @l, split(/\n/, $mf);
+        foreach my $line (@l) {
+            if ($line =~ m/Implementation-Version:/) {
+                ($t, $version) = split (/:/,$line);
+                $version =~ s/^\s//;
+                ($a, $b, $c, $d) = split (/\./,$version);
+                if ($a == 1 && $b == 3) {
+                    exit 0;
+                } else {
+                    exit 1;
+                }
+            }
+        }
+        exit 1;
+        '; then
+        AC_MSG_RESULT([$HAMCREST_CORE_JAR])
+    else
+        AC_MSG_ERROR([cannot find hamcrest-core 1.3 jar; please install one in the default location (/usr/share/java), specify its pathname via --with-hamcrest-core=..., or disable it via --without-junit or --without-hamcrest-core])
     fi
 fi
 AC_SUBST(OOO_JUNIT_JAR)
+AC_SUBST(HAMCREST_CORE_JAR)
 
 AC_MSG_CHECKING([which languages to be built])
 WITH_LANG="$with_lang"
