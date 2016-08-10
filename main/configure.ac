@@ -7010,7 +7010,7 @@ rm -f conftest* core core.* *.core
 OOO_JUNIT_JAR=
 HAMCREST_CORE_JAR=
 if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcrest_core" != "no"; then
-    AC_MSG_CHECKING([for JUnit >= 4.11])
+    AC_MSG_CHECKING([for JUnit])
     if test "$with_junit" = "yes"; then
         if test -e /usr/share/java/junit4.jar; then
             OOO_JUNIT_JAR=/usr/share/java/junit4.jar
@@ -7027,33 +7027,21 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcres
     if test "$_os" = "WINNT"; then
         OOO_JUNIT_JAR=`cygpath -m "$OOO_JUNIT_JAR"`
     fi
-    export OOO_JUNIT_JAR
-    if $PERL -e 'use Archive::Zip;
-        my $file = "$ENV{'OOO_JUNIT_JAR'}";
-        if (! -f $file) {
-            exit 1;
-        }
-        my $zip = Archive::Zip->new( $file );
-        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-        push @l, split(/\n/, $mf);
-        foreach my $line (@l) {
-            if ($line =~ m/Implementation-Version:/) {
-                ($t, $version) = split (/:/,$line);
-                $version =~ s/^\s//;
-                ($a, $b, $c, $d) = split (/\./,$version);
-                if ($a == 4 && $b >= 11) {
-                    exit 0;
-                } else {
-                    exit 1;
-                }
-            }
-        }
-        exit 1;
-        '; then
-        AC_MSG_RESULT([$OOO_JUNIT_JAR])
+    if test -f "$OOO_JUNIT_JAR"; then
+       AC_MSG_RESULT([$OOO_JUNIT_JAR])
+       AC_MSG_CHECKING([JUnit version])
+       _junit_output=`$JAVAINTERPRETER -cp "$OOO_JUNIT_JAR" junit.runner.Version`
+       _junit_major=`echo $_junit_output | $AWK -F. '{ print $1}'`
+       _junit_version=`echo $_junit_output | $AWK -F. '{ print $1*10000+$2*100+$3 }'`
+       if test $_junit_major = "4" && test $_junit_version -ge "41100"; then
+          AC_MSG_RESULT([$_junit_output, good])
+       else
+          AC_MSG_RESULT([$_junit_output, wrong])
+          AC_MSG_ERROR([Wrong JUnit version, need at least version 4.11 and less than 5])
+       fi
     else
-        AC_MSG_RESULT([no])
-        AC_MSG_ERROR([cannot find JUnit >= 4.11 jar; please install one in the default location (/usr/share/java), specify its pathname via --with-junit=..., or disable it via --without-junit])
+       AC_MSG_RESULT([no])
+       AC_MSG_ERROR([cannot find JUnit, please install one in the default location (/usr/share/java), specify its pathname via --with-junit=..., or disable it via --without-junit])
     fi
 
     AC_MSG_CHECKING([for hamcrest-core 1.3])
@@ -7083,7 +7071,8 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcres
         my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
         push @l, split(/\n/, $mf);
         foreach my $line (@l) {
-            if ($line =~ m/Implementation-Version:/) {
+            if ($line =~ m/Implementation-Version:/ ||
+                $line =~ m/Bundle-Version:/) {
                 ($t, $version) = split (/:/,$line);
                 $version =~ s/^\s//;
                 ($a, $b, $c, $d) = split (/\./,$version);
