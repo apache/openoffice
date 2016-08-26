@@ -680,17 +680,10 @@ AC_ARG_WITH(ant-home,
 AC_ARG_WITH(junit,
 [  --with-junit            Specifies the JUnit 4 jar file to use for JUnit-based
                           tests.  --without-junit disables those tests.  Not
-                          relevant in the --without-java case. The --with-hamcrest-core
-                          option is also necessary.
+                          relevant in the --without-java case.
 
                           Usage: --with-junit=<absolute path to JUnit 4 jar>
 ],,with_junit=yes)
-AC_ARG_WITH(hamcrest-core,
-[  --with-hamcrest-core    Specifies the hamcrest-core 1.3 jar file to use for
-                          JUnit-based tests.  --without-junit disables those
-                          tests.  Not relevant in the --without-java or
-                          --without-junit cases.
-],,with_hamcrest_core=yes)
 AC_ARG_WITH(perl-home,
 [  --with-perl-home        If you have installed the Perl 5 Distribution, on your
                           system, please supply the path here.
@@ -869,12 +862,6 @@ AC_ARG_WITH(asm-home,
                           ml.exe assembler.
 
                           Usage: --with-asm-home=<path to ml.exe directory>
-],,)
-AC_ARG_WITH(nasm-home,
-[  --with-nasm-home        For Windows users, please supply the path for the
-                          nasm.exe assembler.
-
-                          Usage: --with-nasm-home=<path to nasm.exe directory>
 ],,)
 AC_ARG_WITH(os-version,
 [  --with-os-version       For FreeBSD users, use this option option to override
@@ -5560,29 +5547,6 @@ fi
 ASM_HOME="$with_asm_home"
 AC_SUBST(ASM_HOME)
  
-dnl ***************************************
-dnl testing nasm.exe assembler path
-dnl ***************************************
-if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes" -a "$SYSTEM_OPENSSL" = "NO"; then
-  AC_MSG_CHECKING([nasm.exe assembler path])
-  if test -n "$with_nasm_home"; then
-    with_nasm_home=`cygpath -u "$with_nasm_home"`
-  fi
-  if test ! -x "$with_nasm_home/nasm.exe"; then
-    AC_PATH_PROG(NASM_EXE, nasm.exe)
-    if test -z "$NASM_EXE"; then
-      with_nasm_home="NO_NASM_HOME"
-    else
-      with_nasm_home="NASM_IN_PATH"
-    fi
-  fi
-  AC_MSG_RESULT([$NASM_HOME])
-else
-  with_nasm_home="NO_NASM_HOME"
-fi
-NASM_HOME="$with_nasm_home"
-AC_SUBST(NASM_HOME)
- 
 dnl ===================================================================
 dnl testing handle deprecated unzip switch
 dnl ===================================================================
@@ -7037,9 +7001,8 @@ fi
 rm -f conftest* core core.* *.core
 
 OOO_JUNIT_JAR=
-HAMCREST_CORE_JAR=
-if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcrest_core" != "no"; then
-    AC_MSG_CHECKING([for JUnit])
+if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no"; then
+    AC_MSG_CHECKING([for JUnit 4])
     if test "$with_junit" = "yes"; then
         if test -e /usr/share/java/junit4.jar; then
             OOO_JUNIT_JAR=/usr/share/java/junit4.jar
@@ -7056,71 +7019,18 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcres
     if test "$_os" = "WINNT"; then
         OOO_JUNIT_JAR=`cygpath -m "$OOO_JUNIT_JAR"`
     fi
-    if test -f "$OOO_JUNIT_JAR"; then
-       AC_MSG_RESULT([$OOO_JUNIT_JAR])
-       AC_MSG_CHECKING([JUnit version])
-       _junit_output=`$JAVAINTERPRETER -cp "$OOO_JUNIT_JAR" junit.runner.Version`
-       _junit_major=`echo $_junit_output | $AWK -F. '{ print $1}'`
-       _junit_version=`echo $_junit_output | $AWK -F. '{ print $1*10000+$2*100+$3 }'`
-       if test $_junit_major = "4" && test $_junit_version -ge "41100"; then
-          AC_MSG_RESULT([$_junit_output, good])
-       else
-          AC_MSG_RESULT([$_junit_output, wrong])
-          AC_MSG_ERROR([Wrong JUnit version, need at least version 4.11 and less than 5])
-       fi
+    "$JAVA_HOME/bin/jar" tf "$OOO_JUNIT_JAR" 2>&5 | \
+        $GREP org/junit/Before.class > /dev/null 2>&5
+    if test $? -eq 0; then
+        AC_MSG_RESULT([$OOO_JUNIT_JAR])
     else
-       AC_MSG_RESULT([no])
-       AC_MSG_ERROR([cannot find JUnit, please install one in the default location (/usr/share/java), specify its pathname via --with-junit=..., or disable it via --without-junit])
-    fi
-
-    AC_MSG_CHECKING([for hamcrest-core 1.3])
-    if test "$with_hamcrest_core" = "yes"; then
-        if test -e /usr/share/java/hamcrest-core-1.3.jar; then
-            HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core-1.3.jar
-        else
-           if test -e /usr/share/lib/java/hamcrest-core.jar; then
-              HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest-core.jar
-           else
-              HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core.jar
-           fi
-        fi
-    else
-        HAMCREST_CORE_JAR=$with_hamcrest_core
-    fi
-    if test "$_os" = "WINNT"; then
-        HAMCREST_CORE_JAR=`cygpath -m "$HAMCREST_CORE_JAR"`
-    fi
-    export HAMCREST_CORE_JAR
-    if $PERL -e 'use Archive::Zip;
-        my $file = "$ENV{'HAMCREST_CORE_JAR'}";
-        if (! -f $file) {
-            exit 1;
-        }
-        my $zip = Archive::Zip->new( $file );
-        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-        push @l, split(/\n/, $mf);
-        foreach my $line (@l) {
-            if ($line =~ m/Implementation-Version:/ ||
-                $line =~ m/Bundle-Version:/) {
-                ($t, $version) = split (/:/,$line);
-                $version =~ s/^\s//;
-                ($a, $b, $c, $d) = split (/\./,$version);
-                if ($a == 1 && $b == 3) {
-                    exit 0;
-                } else {
-                    exit 1;
-                }
-            }
-        }
-        exit 1;
-        '; then
-        AC_MSG_RESULT([$HAMCREST_CORE_JAR])
-    else
-        AC_MSG_ERROR([cannot find hamcrest-core 1.3 jar; please install one in the default location (/usr/share/java), specify its pathname via --with-hamcrest-core=..., or disable it via --without-junit or --without-hamcrest-core])
+        AC_MSG_RESULT([no])
+        AC_MSG_ERROR([cannot find JUnit 4 jar; please install one in the default
+location (/usr/share/java), specify its pathname via
+--with-junit=..., or disable it via --without-junit])
     fi
 fi
 AC_SUBST(OOO_JUNIT_JAR)
-AC_SUBST(HAMCREST_CORE_JAR)
 
 AC_MSG_CHECKING([which languages to be built])
 WITH_LANG="$with_lang"
@@ -7320,3 +7230,4 @@ else
    fi
    echo
 fi   
+
