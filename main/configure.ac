@@ -863,6 +863,12 @@ AC_ARG_WITH(asm-home,
 
                           Usage: --with-asm-home=<path to ml.exe directory>
 ],,)
+AC_ARG_WITH(nasm-home,
+[  --with-nasm-home        For Windows users, please supply the path for the
+                          nasm.exe assembler.
+
+                          Usage: --with-nasm-home=<path to nasm.exe directory>
+],,)
 AC_ARG_WITH(os-version,
 [  --with-os-version       For FreeBSD users, use this option option to override
                           the detected OSVERSION.
@@ -5546,6 +5552,29 @@ else
 fi
 ASM_HOME="$with_asm_home"
 AC_SUBST(ASM_HOME)
+ 
+dnl ***************************************
+dnl testing nasm.exe assembler path
+dnl ***************************************
+if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes" -a "$SYSTEM_OPENSSL" = "NO"; then
+  AC_MSG_CHECKING([nasm.exe assembler path])
+  if test -n "$with_nasm_home"; then
+    with_nasm_home=`cygpath -u "$with_nasm_home"`
+  fi
+  if test ! -x "$with_nasm_home/nasm.exe"; then
+    AC_PATH_PROG(NASM_EXE, nasm.exe)
+    if test -z "$NASM_EXE"; then
+      with_nasm_home="NO_NASM_HOME"
+    else
+      with_nasm_home="NASM_IN_PATH"
+    fi
+  fi
+  AC_MSG_RESULT([$NASM_HOME])
+else
+  with_nasm_home="NO_NASM_HOME"
+fi
+NASM_HOME="$with_nasm_home"
+AC_SUBST(NASM_HOME)
  
 dnl ===================================================================
 dnl testing handle deprecated unzip switch
