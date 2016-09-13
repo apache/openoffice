@@ -18,8 +18,8 @@
 #  under the License.
 #
 # *************************************************************
-RSCVERSION=412
-RSCREVISION=412m3(Build:9782)
-BUILD=9782
-LAST_MINOR=m3
-SOURCEVERSION=AOO412
+RSCVERSION=413
+RSCREVISION=413m1(Build:9783)
+BUILD=9783
+LAST_MINOR=m1
+SOURCEVERSION=AOO413

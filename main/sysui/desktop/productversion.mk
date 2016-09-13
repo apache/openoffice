@@ -47,7 +47,7 @@ PRODUCTLIST = openoffice
 # default values to minimize maintainance effort
 
 # CAUTION! $(OOOBASEVERSION) from openoffice.lst NOT available (!)
-PRODUCTVERSION = 4.1.2
+PRODUCTVERSION = 4.1.3
 
 # CAUTION! $(BRANDPACKAGEVERSION) from openoffice.lst NOT available (!)
 PRODUCTVERSIONSHORT = 4
