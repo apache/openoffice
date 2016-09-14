@@ -5545,6 +5545,23 @@ if test "$_os" = "WINNT" ; then
         NSIS_PATH=`cygpath -d "$NSIS_PATH"`
         NSIS_PATH=`cygpath -u "$NSIS_PATH"`
         AC_MSG_RESULT([found ($NSIS_PATH)])
+		AC_MSG_CHECKING([whether NSIS version is >= 3.*])
+		nsis_version_string=`"$NSIS_PATH/makensis.exe" /VERSION | $SED -e s/^v//i`
+        nsis_version_major=`echo $nsis_version_string | cut -d. -f1`
+		nsis_version_minor=`echo $nsis_version_string | cut -d. -f2`
+		if test "$nsis_version_major" -ge "3"; then
+			AC_MSG_RESULT([found NSIS $nsis_version_major.$nsis_version_minor >= 3.*])
+			AC_MSG_CHECKING([whether NSIS was compiled with Unicode support])
+			if echo `"$NSIS_PATH/makensis.exe" /HDRINFO` | $EGREP  "\bNSIS_UNICODE_MAKENSIS\b" 2>&1 >/dev/null; then
+				AC_MSG_RESULT([NSIS version compiled with Unicode support.])
+			else
+				NSIS_PATH=""
+				AC_MSG_WARN([NSIS version compiled without Unicode support, no self contained installer will be build.])
+			fi
+		else
+			NSIS_PATH=""
+			AC_MSG_WARN([NSIS version found is < 3.*, no self contained installer will be build.])
+		fi
     fi
 fi
 AC_SUBST(NSIS_PATH)
