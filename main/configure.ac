@@ -129,11 +129,11 @@ AC_ARG_WITH(epm,
 			  epm will be built.
 ],,)
 AC_ARG_WITH(epm-url,
-[  --with-epm-url=<URL>    Specify the location of downloadable epm 3.7 source code. For example:
+[  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
                             http://epm.sourcearchive.com/downloads/3.7-1/epm_3.7.orig.tar.gz
                           or
                             http://www.msweet.org/files/project2/epm-3.7-source.tar.gz
-                          Note that epm is under GPL license.
+                          Version 3.7 or later is required. Note that epm is under GPL license.
 ],[  EPM_URL="$withval"
 ])
 AC_ARG_WITH(package-format,
@@ -3313,15 +3313,21 @@ if test "$enable_epm" = "yes"; then
                AC_MSG_RESULT([OK, >= 3.7])
                BUILD_EPM=NO
 	       if test "$_os" = "Darwin"; then
+	          AC_MSG_CHECKING([checking if OS X pkgbuild is supported])
+	          if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "4" || \
+	       	     test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "4" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "3"; then
+                   AC_MSG_RESULT([OK, >= 4.3])
+              else
                   AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
-        	  _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
-        	  if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	     AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-        	  elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	     AC_MSG_RESULT([$_pm, ok])
-        	  else # we never should get here, but go safe
-		     AC_MSG_ERROR([$_pm; PackageMaker expected in unknown path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-		  fi
+        	      _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
+        	      if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
+          	         AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
+        	      elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
+          	         AC_MSG_RESULT([$_pm, ok])
+        	      else # we never should get here, but go safe
+		             AC_MSG_ERROR([$_pm; PackageMaker expected in unknown path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
+		          fi
+		      fi
 	       fi
 	    else
                AC_MSG_ERROR([too old. epm >= 3.7 is required.])
