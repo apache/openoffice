@@ -3313,10 +3313,12 @@ if test "$enable_epm" = "yes"; then
                AC_MSG_RESULT([OK, >= 3.7])
                BUILD_EPM=NO
 	       if test "$_os" = "Darwin"; then
+	          _osxpkgbuild='no'
 	          AC_MSG_CHECKING([checking if OS X pkgbuild is supported])
 	          if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "4" || \
 	       	     test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "4" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "3"; then
                    AC_MSG_RESULT([OK, >= 4.3])
+                   _osxpkgbuild='yes'
               else
                   AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
         	      _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
@@ -3437,11 +3439,13 @@ msi - Windows .msi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
       if test "$_os" = "Darwin"; then
-         AC_MSG_CHECKING([for PackageMaker availability])
-         if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
-            AC_MSG_ERROR([not installed. Please install Apples Dev Tools])
-         else
-            AC_MSG_RESULT([ok])
+         if test "$_osxpkgbuild" = "no"; then
+            AC_MSG_CHECKING([for PackageMaker availability])
+            if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
+               AC_MSG_ERROR([not installed. Please install Apples Dev Tools])
+            else
+               AC_MSG_RESULT([ok])
+            fi
          fi
       else
          AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
