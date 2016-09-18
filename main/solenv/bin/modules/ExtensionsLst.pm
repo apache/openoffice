@@ -418,7 +418,7 @@ sub Download (@)
         # We can not check the existence of file URLs because they point to extensions that
         # have yet to be built.
         
-        next if $protocol ne "http";
+        next if $protocol !~ /(http|https)/;
         my $candidate = File::Spec->catfile($download_path, $name);
         if ( ! -f $candidate)
         {
@@ -472,8 +472,6 @@ sub Download (@)
         my $filename = File::Spec->catfile($download_path, $name);
         my $temporary_filename = $filename . ".part";
         print "downloading to $temporary_filename\n";
-        open my $out, ">$temporary_filename";
-        binmode($out);
 
         # Prepare md5
         my $md5 = Digest::MD5->new();
@@ -481,35 +479,20 @@ sub Download (@)
         # Download the extension.
         my $agent = LWP::UserAgent->new();
         $agent->timeout(120);
-        $agent->show_progress(1);
+        $agent->env_proxy;
         my $last_was_redirect = 0;
-        $agent->add_handler('response_redirect'
-                            => sub{
-                                $last_was_redirect = 1;
-                                return;
-                            });
-        $agent->add_handler('response_data'
-                            => sub{
-                                if ($last_was_redirect)
-                                {
-                                    $last_was_redirect = 0;
-                                    # Throw away the data we got so far.
-                                    $md5->reset();
-                                    close $out;
-                                    open $out, ">$temporary_filename";
-                                    binmode($out);
-                                }
-                                my($response,$agent,$h,$data)=@_;
-                                print $out $data;
-                                $md5->add($data);
-                            });
         my $response = $agent->get($URL);
-        close $out;
 
         # When download was successfull then check the md5 checksum and rename the .part file
         # into the actual extension name.
         if ($response->is_success())
         {
+            my $content = $response->content;
+            open $out, ">$temporary_filename";
+            binmode($out);
+            print $out $content;
+            $md5->add($content);
+            close $out;
             if (defined $md5sum && length($md5sum)==32)
             {
                 my $file_md5 = $md5->hexdigest();
