@@ -2002,7 +2002,7 @@ dnl The list of required Perl modules is documented here:
 dnl     http://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO#General_Build_Requirements
 dnl ===================================================================
 AC_MSG_CHECKING([for required Perl modules])
-if `$PERL -e 'use Archive::Zip; use LWP::UserAgent; use XML::Parser;'>/dev/null 2>&1`; then
+if `$PERL -e 'use Archive::Zip; use XML::Parser; use LWP::UserAgent; use Digest::SHA; use Digest::MD5; use LWP::Protocol::https;'>/dev/null 2>&1`; then
 	AC_MSG_RESULT([all modules found])
 else
     # Find out which modules are missing.
@@ -2016,9 +2016,19 @@ else
     if ! `$PERL -e 'use XML::Parser;'>/dev/null 2>&1`; then
        missing_perl_modules="$missing_perl_modules XML::Parser"
     fi
+    if ! `$PERL -e 'use Digest::SHA;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules Digest::SHA"
+    fi
+    if ! `$PERL -e 'use Digest::MD5;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules Digest::MD5"
+    fi
+    if ! `$PERL -e 'use LWP::Protocol::https;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules LWP::Protocol::https"
+    fi
 	AC_MSG_ERROR([
     The missing Perl modules are: $missing_perl_modules
-    Install them as superuser/administrator with "cpan -i $missing_perl_modules"])
+    Install them with your package manager (the name of the package depends on your system);
+    or, as last resort, run the following command as superuser/administrator: "cpan -i $missing_perl_modules"])
 fi
 
 dnl ===================================================================
