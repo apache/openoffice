@@ -3937,34 +3937,30 @@ dnl ===================================================================
 dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
-   sdk_target=10.7
+   sdk_major=10
+   sdk_minor=7
+   sdk_target="${sdk_major}.${sdk_minor}"
    AC_MSG_CHECKING([checking SDK compatiblity with OSX $sdk_target])
-
-   sdk_minor=`echo $sdk_target | cut -d"." -f2`
-
-   if test "$sdk_minor" -lt "7"; then
-      AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
+   sdk_found=`xcodebuild -showsdks | egrep "sdk macosx10.[[0-9]]+$" | sed -e "s/.*sdk macosx//" | tail -n1`
+   if test -z "$sdk_found"; then
+      AC_MSG_ERROR([No macOS SDK with macosx${sdk_target} compatibility found])
    else
-      MACOSX_DEPLOYMENT_TARGET=$sdk_target
-
-      sdk_found=`xcodebuild -showsdks | egrep "sdk macosx10.(7|8|9|10|11)" | sed -e "s/.*sdk //" | tail -n1`
-      if test -z "$sdk_found"; then
-         AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
+      sdk_found_minor=`echo $sdk_found | cut -d"." -f2`
+      if test "$sdk_found_minor" -lt "$sdk_minor"; then
+          AC_MSG_ERROR([SDK version < $sdk_target is not longer supported])
       else
-         AC_MSG_RESULT([yes, by using SDK $sdk_found])
-      fi
-
-      sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
-      AC_MSG_CHECKING([for $sdk_path])
-      if test -d "$sdk_path"; then
-         AC_MSG_RESULT([yes])
-      else
-         AC_MSG_ERROR([not found!])
-      fi
-
-      MACOSX_SDK_PATH=$sdk_path
+          MACOSX_DEPLOYMENT_TARGET=$sdk_target
+          AC_MSG_RESULT([yes, by using SDK $sdk_found])
+          sdk_path=`xcodebuild -version -sdk macosx${sdk_found} Path`
+          AC_MSG_CHECKING([for $sdk_path])
+          if test -d "$sdk_path"; then
+            AC_MSG_RESULT([yes])
+          else
+            AC_MSG_ERROR([not found!])
+         fi
+         MACOSX_SDK_PATH=$sdk_path
+     fi
    fi
-
 fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
