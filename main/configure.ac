@@ -2029,12 +2029,17 @@ else
     if ! `$PERL -e 'use LWP::UserAgent;'>/dev/null 2>&1`; then
        missing_perl_modules="$missing_perl_modules LWP::UserAgent"
     fi
-    if ! `$PERL -e 'use LWP::Protocol;'>/dev/null 2>&1`; then
-       missing_perl_modules="$missing_perl_modules LWP::Protocol"
-    fi
-
     if ! `$PERL -e 'use XML::Parser;'>/dev/null 2>&1`; then
        missing_perl_modules="$missing_perl_modules XML::Parser"
+    fi
+    if ! `$PERL -e 'use Digest::SHA;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules Digest::SHA"
+    fi
+    if ! `$PERL -e 'use Digest::MD5;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules Digest::MD5"
+    fi
+    if ! `$PERL -e 'use LWP::Protocol::https;'>/dev/null 2>&1`; then
+       missing_perl_modules="$missing_perl_modules LWP::Protocol::https"
     fi
 	AC_MSG_ERROR([
     The missing Perl modules are: $missing_perl_modules
