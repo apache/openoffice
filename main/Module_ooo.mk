@@ -42,6 +42,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	oovbaapi \
 	oox \
 	padmin \
+	package \
 	reportdesign \
 	sax \
 	sd \

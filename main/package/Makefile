@@ -19,41 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..
-PRJNAME=package
-TARGET=zippackage
-AUTOSEG=true
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-
-.IF "$(L10N_framework)"==""
-
-# --- Files --------------------------------------------------------
-# the following flag un-inlines function calls and disables optimisations
-#CFLAGS+=/Ob0 /Od
-
-SLOFILES= \
-		$(SLO)$/ZipPackage.obj			\
-		$(SLO)$/ZipPackageBuffer.obj	\
-		$(SLO)$/ZipPackageEntry.obj		\
-		$(SLO)$/ZipPackageFolder.obj	\
-		$(SLO)$/ZipPackageFolderEnumeration.obj	\
-		$(SLO)$/ZipPackageSink.obj		\
-		$(SLO)$/ZipPackageStream.obj	\
-		$(SLO)$/wrapstreamforshare.obj	\
-		$(SLO)$/zipfileaccess.obj
-
-#		$(SLO)$/InteractionRequest.obj  \
-#		$(SLO)$/InteractionContinuation.obj
-
-.ENDIF # L10N_framework
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE : target.mk
+# vim: set noet sw=4 ts=4:

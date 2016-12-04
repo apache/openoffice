@@ -21,37 +21,5 @@
 
 
 
-PRJ=..$/..
-PRJNAME=package
-TARGET=zipapi
-
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE : settings.mk
-
-# --- Files --------------------------------------------------------
-.IF "$(L10N_framework)"==""
-#CFLAGS+=/Ob0 /Od
-.IF "$(SYSTEM_ZLIB)" == "YES"
-CFLAGS+=-DSYSTEM_ZLIB
-.ENDIF
-SLOFILES= \
-		$(SLO)$/CRC32.obj			\
-		$(SLO)$/ByteChucker.obj		\
-		$(SLO)$/ByteGrabber.obj		\
-		$(SLO)$/blowfishcontext.obj	\
-		$(SLO)$/Inflater.obj		\
-		$(SLO)$/Deflater.obj		\
-		$(SLO)$/sha1context.obj		\
-		$(SLO)$/ZipEnumeration.obj	\
-		$(SLO)$/ZipFile.obj			\
-		$(SLO)$/ZipOutputStream.obj	\
-		$(SLO)$/XUnbufferedStream.obj
-
-.ENDIF # L10N_framework
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE : target.mk
+$(eval $(call gb_Package_Package,package_dtd,$(SRCDIR)/package/dtd))
+$(eval $(call gb_Package_add_file,package_dtd,bin/Manifest.dtd,Manifest.dtd))

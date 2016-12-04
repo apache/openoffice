@@ -21,30 +21,24 @@
 
 
 
-PRJ=..$/..
-PRJNAME=package
-TARGET=manifest
-AUTOSEG=true
-
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
+PRJ=..
+TARGET=prj
 
 .INCLUDE : settings.mk
 
-# --- Files --------------------------------------------------------
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-.IF "$(L10N_framework)"==""
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-SLOFILES= \
-		$(SLO)$/ManifestReader.obj	\
-		$(SLO)$/ManifestWriter.obj \
-		$(SLO)$/ManifestImport.obj \
-		$(SLO)$/ManifestExport.obj \
-		$(SLO)$/UnoRegister.obj
-
-.ENDIF # L10N_framework
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE : target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

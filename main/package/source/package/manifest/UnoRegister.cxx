@@ -33,6 +33,7 @@
 #include <ZipPackage.hxx>
 
 #include <zipfileaccess.hxx>
+#include "package/dllapi.h"
 
 using namespace ::rtl;
 using namespace ::com::sun::star;
@@ -45,7 +46,7 @@ using namespace ::com::sun::star::packages::manifest;
 
 // C functions to implement this as a component
 
-extern "C" void SAL_CALL component_getImplementationEnvironment(
+extern "C" PACKAGE_DLLPUBLIC void SAL_CALL component_getImplementationEnvironment(
     const sal_Char ** ppEnvTypeName, uno_Environment ** /*ppEnv*/ )
 {
 	*ppEnvTypeName = CPPU_CURRENT_LANGUAGE_BINDING_NAME;
@@ -58,7 +59,7 @@ extern "C" void SAL_CALL component_getImplementationEnvironment(
  * @param pRegistryKey registry data key to read and write component persistent data
  * @return a component factory (generic uno interface)
  */
-extern "C" void * SAL_CALL component_getFactory(
+extern "C" PACKAGE_DLLPUBLIC void * SAL_CALL component_getFactory(
     const sal_Char * pImplName, void * pServiceManager, void * /*pRegistryKey*/ )
 {
     void * pRet = 0;
