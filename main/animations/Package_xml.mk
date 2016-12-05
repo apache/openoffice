@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,60 +17,10 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Package_Package,animations_xml,$(SRCDIR)/animations/source))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	basebmp \
-	basegfx \
-	canvas \
-	comphelper \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	editeng \
-	fileaccess \
-	formula \
-	framework \
-	idl \
-	io \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	vbahelper \
-	vcl \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
-))
-
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Package_add_file,animations_xml,xml/animcore.xml,animcore/animcore.xml))
