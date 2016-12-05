@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,57 +17,23 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
+$(eval $(call gb_GoogleTest_GoogleTest,o3tl_test))
 
-$(eval $(call gb_Module_Module,ooo))
-
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	basebmp \
-	basegfx \
-	canvas \
-	comphelper \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	editeng \
-	fileaccess \
-	formula \
-	framework \
-	idl \
-	io \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	vbahelper \
-	vcl \
-	wizards \
-	writerfilter \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_GoogleTest_add_exception_objects,o3tl_test, \
+	o3tl/qa/cow_wrapper_clients \
+	o3tl/qa/main \
+	o3tl/qa/test-cow_wrapper \
+	o3tl/qa/test-vector_pool \
+	o3tl/qa/test-heap_ptr \
+	o3tl/qa/test-range \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_GoogleTest_add_linked_libs,o3tl_test, \
+	sal \
+	$(gb_STDLIBS) \
+))
+
+# vim: set noet sw=4 ts=4:
