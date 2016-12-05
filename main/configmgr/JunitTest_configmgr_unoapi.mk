@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,62 +17,29 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_JunitTest_JunitTest,configmgr_unoapi,SRCDIR))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	editeng \
-	fileaccess \
-	formula \
-	framework \
-	idl \
-	io \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	vbahelper \
-	vcl \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_JunitTest_set_defs,configmgr_unoapi,\
+	$$(DEFS) \
+	-Dorg.openoffice.test.arg.sce=$(SRCDIR)/configmgr/qa/unoapi/module.sce \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_JunitTest_add_jars,configmgr_unoapi,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+))
+
+$(eval $(call gb_JunitTest_add_sourcefiles,configmgr_unoapi,\
+	configmgr/qa/unoapi/Test \
+))
+
+$(eval $(call gb_JunitTest_add_classes,configmgr_unoapi,\
+	org.openoffice.configmgr.qa.unoapi.Test \
+))
+
+# vim: set noet sd=4 ts=4:
