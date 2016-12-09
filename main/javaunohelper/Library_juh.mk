@@ -21,62 +21,23 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,juh))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	editeng \
-	eventattacher \
-	fileaccess \
-	formula \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_add_precompiled_header,juh,$(SRCDIR)/javaunohelper/inc/pch/precompiled_javaunohelper))
+
+$(eval $(call gb_Library_set_include,juh,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/javaunohelper/inc/pch \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_linked_libs,juh,\
+	sal \
+	$(gb_STDLIBS) \
+))
+
+
+$(eval $(call gb_Library_add_exception_objects,juh,\
+	javaunohelper/source/preload \
+))
+
+# vim: set noet sw=4 ts=4:
