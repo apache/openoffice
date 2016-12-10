@@ -21,32 +21,11 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,embeddedobj))
 
-PRJNAME=embeddedobj
-TARGET=commonembed
-ENABLE_EXCEPTIONS=true
+$(eval $(call gb_Module_add_targets,embeddedobj,\
+	Library_embobj \
+	Library_emboleobj \
+))
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-LIBTARGET=NO
-USE_DEFFILE=NO
-
-# --- Files --------------------------------------------------------
-
-SLOFILES =  \
-		$(SLO)$/register.obj\
-		$(SLO)$/xfactory.obj\
-		$(SLO)$/miscobj.obj\
-		$(SLO)$/embedobj.obj\
-                $(SLO)$/specialobject.obj\
-                $(SLO)$/persistence.obj\
-		$(SLO)$/inplaceobj.obj\
-		$(SLO)$/visobj.obj
-
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:

@@ -19,38 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-PRJNAME=embeddedobj
-TARGET=embedobj
-
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-LIBTARGET=NO
-USE_DEFFILE=NO
-
-# --- Files --------------------------------------------------------
-
-SLOFILES =  \
-		$(SLO)$/xcreator.obj\
-		$(SLO)$/docholder.obj\
-		$(SLO)$/dummyobject.obj\
-		$(SLO)$/intercept.obj
-
-
-EXCEPTIONSFILES= \
-		$(SLO)$/xcreator.obj\
-		$(SLO)$/docholder.obj\
-		$(SLO)$/dummyobject.obj\
-		$(SLO)$/intercept.obj
-
-
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:
