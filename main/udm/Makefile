@@ -19,38 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-
-# --- Settings -----------------------------------------------------
-# Has to be included AFTER settings.mk !
-
-
-# Precompiled header:
-
-
-.IF "$(GUI)"=="WNT"
-
-# RTTI
-CFLAGS+= -GR
-
-.IF "$(NP_LOCALBUILD)"!=""
-
-
-# Precompiled Headers
-PCH_NAME=  udm
-.IF "$(DBG_LEVEL)"<"2"
-CFLAGS+= -YX"precomp.h" /Fp$(PRJ)$/$(INPATH)$/misc$/$(PCH_NAME).pch
-.ELSE
-CFLAGS+= -YX"precomp.h" /Fp$(PRJ)$/$(INPATH)$/misc$/$(PCH_NAME).pcd -DNP_LOCALBUILD
-.ENDIF
-
-.ENDIF
-
-.ENDIF
-
-.IF "$(OS)"=="LINUX" || "$(OS)"=="FREEBSD" || "$(OS)"=="NETBSD"
-CFLAGSCXX+= -frtti
-.ENDIF
-
+# vim: set noet sw=4 ts=4:

@@ -21,32 +21,24 @@
 
 
 
-PRJ=..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=udm
-TARGET=csi_html
+.INCLUDE : settings.mk
 
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# --- Settings -----------------------------------------------------
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-ENABLE_EXCEPTIONS=true
-
-
-.INCLUDE :  settings.mk
-.INCLUDE : $(PRJ)$/source$/mkinc$/fullcpp.mk
-
-
-# --- Files --------------------------------------------------------
-
-OBJFILES= \
-	$(OBJ)$/htmlitem.obj	
-
-
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
