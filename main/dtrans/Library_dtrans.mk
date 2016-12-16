@@ -21,27 +21,34 @@
 
 
 
-PRJ=..$/..$/..
-PRJNAME=dtrans
-TARGET=ftransl
-ENABLE_EXCEPTIONS=TRUE
-COMP1TYPELIST=$(TARGET)
-USE_BOUNDCHK=
+$(eval $(call gb_Library_Library,dtrans))
 
-.IF "$(USE_BOUNDCHK)"=="TR"
-bndchk=tr
-stoponerror=tr
-.ENDIF
+$(eval $(call gb_Library_add_precompiled_header,dtrans,$(SRCDIR)/dtrans/inc/pch/precompiled_dtrans))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_set_componentfile,dtrans,dtrans/source/generic/dtrans))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_set_include,dtrans,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/dtrans/inc/pch \
+))
 
-# ------------------------------------------------------------------
+$(eval $(call gb_Library_add_api,dtrans,\
+	offapi \
+	udkapi \
+))
 
-SLOFILES=$(SLO)$/ftranslentry.obj \
-         $(SLO)$/ftransl.obj
+$(eval $(call gb_Library_add_linked_libs,dtrans,\
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	$(gb_STDLIBS) \
+))
 
-# --- Targets ------------------------------------------------------
+$(eval $(call gb_Library_add_exception_objects,dtrans,\
+	dtrans/source/generic/generic_clipboard \
+	dtrans/source/generic/clipboardmanager \
+	dtrans/source/generic/dtrans \
+))
 
-.INCLUDE :	target.mk
+# vim: set noet sw=4 ts=4:

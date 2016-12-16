@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,33 +17,21 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Package_Package,dtrans_xml,$(SRCDIR)/dtrans/source))
 
-PRJNAME= dtrans
-TARGET=	 test_dtrans
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/dtrans.xml,generic/dtrans.xml))
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/mcnttype.xml,cnttype/mcnttype.xml))
 
-LIBTARGET=NO
-TARGETTYPE=CUI
-ENABLE_EXCEPTIONS=TRUE
+ifeq ($(OS),OS2)
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/sysdtrans.xml,os2/clipb/sysdtrans.xml))
+endif
 
-# --- Settings -----------------------------------------------------
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-APP1TARGET=	$(TARGET)
-APP1OBJS= \
-	$(OBJ)$/test_dtrans.obj
-				
-APP1STDLIBS= \
-	$(SALLIB) \
-	$(CPPULIB) \
-	$(CPPUHELPERLIB)
-				
-# --- Targets ------------------------------------------------------
-.INCLUDE :		target.mk
-
+ifeq ($(OS),WNT)
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/dnd.xml,win32/dnd/dnd.xml))
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/ftransl.xml,win32/ftransl/ftransl.xml))
+$(eval $(call gb_Package_add_file,dtrans_xml,xml/sysdtrans.xml,win32/clipb/sysdtrans.xml))
+endif

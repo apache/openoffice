@@ -21,36 +21,36 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Library_Library,sysdtran))
 
-PRJNAME=dtrans
-TARGET=dtutils
-LIBTARGET=NO
-USE_BOUNDCHK=
-ENABLE_EXCEPTIONS=YES
+$(eval $(call gb_Library_add_precompiled_header,sysdtran,$(SRCDIR)/dtrans/inc/pch/precompiled_dtrans))
 
-.IF "$(USE_BOUNDCHK)"=="TR"
-bndchk=tr
-stoponerror=tr
-.ENDIF
+$(eval $(call gb_Library_set_componentfile,sysdtran,dtrans/util/sysdtrans))
 
-# --- Settings -----------------------------
+$(eval $(call gb_Library_set_include,sysdtran,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/dtrans/inc/pch \
+))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_add_api,sysdtran,\
+	offapi \
+	udkapi \
+))
 
-#-------------------------------------------
-# files to compile to obj's
+$(eval $(call gb_Library_add_linked_libs,sysdtran,\
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	UClip \
+	$(gb_STDLIBS) \
+))
 
-SLOFILES= $(SLO)$/ImplHelper.obj
+$(eval $(call gb_Library_add_exception_objects,sysdtran,\
+	dtrans/source/os2/clipb/Os2Clipboard \
+	dtrans/source/os2/clipb/Os2Bitmap \
+	dtrans/source/os2/clipb/Os2Service \
+	dtrans/source/os2/clipb/Os2Transferable \
+))
 
-#-------------------------------------------
-# build a static library
-
-LIB1TARGET= $(SLB)$/$(TARGET).lib
-LIB1OBJFILES=$(SLOFILES)
-
-
-# --- Targets ------------------------------
-
-.INCLUDE :	target.mk
-
+# vim: set noet sw=4 ts=4:

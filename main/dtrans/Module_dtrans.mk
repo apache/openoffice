@@ -21,30 +21,26 @@
 
 
 
-PRJ=..$/..$/..
-PRJNAME=dtrans
-TARGET=mtaolecb
-LIBTARGET=NO
-ENABLE_EXCEPTIONS=YES
+$(eval $(call gb_Module_Module,dtrans))
 
-# --- Settings ----------------------------------
+$(eval $(call gb_Module_add_targets,dtrans,\
+	Library_dtrans \
+	Library_mcnttype \
+	Package_xml \
+))
 
-.INCLUDE : settings.mk
+ifeq ($(OS),WNT)
+$(eval $(call gb_Module_add_targets,dtrans,\
+	Library_dnd \
+	Library_ftransl \
+	Library_sysdtrans_win \
+))
+endif
 
-# --- Targets ----------------------------------
+ifeq ($(OS),OS2)
+$(eval $(call gb_Module_add_targets,dtrans,\
+	Library_sysdtrans_os2 \
+))
+endif
 
-.IF "$(GUI)"=="WNT"
-
-# --- static lib --------------------------
-
-# don't do this in the source file. breaks pch
-CDEFS+=-DUNICODE
-
-SLOFILES=$(SLO)$/MtaOleClipb.obj
-
-LIB1TARGET=$(SLB)$/$(TARGET).lib
-LIB1OBJFILES=$(SLOFILES)
-				 
-.ENDIF
-
-.INCLUDE : target.mk
+# vim: set noet sw=4 ts=4:

@@ -21,29 +21,38 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Library_Library,ftransl))
 
-PRJNAME=dtrans
-TARGET=testcnttype
-LIBTARGET=NO
-TARGETTYPE=CUI
+$(eval $(call gb_Library_add_precompiled_header,ftransl,$(SRCDIR)/dtrans/inc/pch/precompiled_dtrans))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_set_componentfile,ftransl,dtrans/util/ftransl))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_set_include,ftransl,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/dtrans/inc/pch \
+))
 
-CFLAGS+=-GX
+$(eval $(call gb_Library_add_api,ftransl,\
+	offapi \
+	udkapi \
+))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_Library_add_linked_libs,ftransl,\
+	advapi32 \
+	cppuhelper \
+	cppu \
+	gdi32 \
+	ole32 \
+	sal \
+	stl \
+	uwinapi \
+	$(gb_STDLIBS) \
+))
 
-OBJFILES=   	$(OBJ)$/testcnttype.obj
-APP1TARGET=		$(TARGET)
-APP1OBJS=		$(OBJ)$/testcnttype.obj
-				
-APP1STDLIBS=	$(SALLIB) \
-				$(CPPULIB)			\
-				$(CPPUHELPERLIB)	\
-				
-# --- Targets ------------------------------------------------------
-.INCLUDE :		target.mk
+$(eval $(call gb_Library_add_exception_objects,ftransl,\
+	dtrans/source/win32/ftransl/ftransl \
+	dtrans/source/win32/ftransl/ftranslentry \
+	dtrans/source/win32/misc/ImplHelper \
+))
 
+# vim: set noet sw=4 ts=4:

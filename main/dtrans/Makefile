@@ -19,37 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..$/..
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-PRJNAME=dtrans
-TARGET=sysdtrans
-ENABLE_EXCEPTIONS=TRUE
-COMP1TYPELIST=$(TARGET)
-USE_BOUNDCHK=
-
-.IF "$(USE_BOUNDCHK)"=="TR"
-bndchk=tr
-stoponerror=tr
-.ENDIF
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# ------------------------------------------------------------------
-
-.IF "$(COM)" != "GCC"
-CFLAGS+=-GR
-.ENDIF
-CFLAGS+=-DUNICODE -D_UNICODE
-
-SLOFILES=$(SLO)$/WinClipboard.obj \
-		 $(SLO)$/WinClipbImpl.obj \
-		 $(SLO)$/wcbentry.obj
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :	target.mk
+# vim: set noet sw=4 ts=4:

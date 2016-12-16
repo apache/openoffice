@@ -20,24 +20,41 @@
 #**************************************************************
 
 
-PRJ=..
 
-PRJNAME=dtrans
-TARGET=inc
+$(eval $(call gb_Library_Library,mcnttype))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_add_precompiled_header,mcnttype,$(SRCDIR)/dtrans/inc/pch/precompiled_dtrans))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_set_componentfile,mcnttype,dtrans/util/mcnttype))
 
-# --- Files --------------------------------------------------------
-# --- Targets -------------------------------------------------------
+$(eval $(call gb_Library_set_include,mcnttype,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/dtrans/inc/pch \
+))
 
-.INCLUDE :  target.mk
+$(eval $(call gb_Library_add_api,mcnttype,\
+	offapi \
+	udkapi \
+))
 
-.IF "$(ENABLE_PCH)"!=""
-ALLTAR : \
-	$(SLO)$/precompiled.pch \
-	$(SLO)$/precompiled_ex.pch
-	
-.ENDIF			# "$(ENABLE_PCH)"!=""
+$(eval $(call gb_Library_add_linked_libs,mcnttype,\
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	$(gb_STDLIBS) \
+))
 
+ifeq ($(OS),WNT)
+$(eval $(call gb_Library_add_linked_libs,mcnttype,\
+	uwinapi \
+))
+endif
+
+$(eval $(call gb_Library_add_exception_objects,mcnttype,\
+	dtrans/source/cnttype/mctfentry \
+	dtrans/source/cnttype/mcnttfactory \
+	dtrans/source/cnttype/mcnttype \
+))
+
+# vim: set noet sw=4 ts=4:

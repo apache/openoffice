@@ -21,31 +21,24 @@
 
 
 
-PRJ=..$/..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=dtrans
-TARGET=sysdtrans
-ENABLE_EXCEPTIONS=TRUE
-COMP1TYPELIST=$(TARGET)
-COMPRDB=$(SOLARBINDIR)$/types.rdb
-USE_BOUNDCHK=
+.INCLUDE : settings.mk
 
-.IF "$(USE_BOUNDCHK)"=="TR"
-bndchk=tr
-stoponerror=tr
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
 .ENDIF
 
-# --- Settings -----------------------------------------------------
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-.INCLUDE :  settings.mk
-
-# ------------------------------------------------------------------
-
-SLOFILES=	$(SLO)$/Os2Clipboard.obj \
-		$(SLO)$/Os2Bitmap.obj \
-		$(SLO)$/Os2Service.obj \
-		$(SLO)$/Os2Transferable.obj
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :	target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
