@@ -21,7 +21,33 @@
 
 
 
-$(eval $(call gb_Package_Package,avmedia_jar,$(SRCDIR)/avmedia/source/java))
+PRJ=..$/..
+PRJNAME=avmedia
+TARGET=viewer
 
-$(eval $(call gb_Package_add_file,avmedia_jar,bin/avmedia.jar,avmedia.jar))
-$(eval $(call gb_Package_add_file,avmedia_jar,xml/component/avmedia/source/java/avmedia.jar.component,avmedia.jar.component))
+# --- Settings ----------------------------------
+
+.INCLUDE :  settings.mk
+
+# --- Resources ---------------------------------
+
+SRS1NAME=$(TARGET)
+SRC1FILES =\
+		mediawindow.src					
+
+# --- Files -------------------------------------
+
+SLOFILES= \
+		$(SLO)$/mediaevent_impl.obj     	\
+		$(SLO)$/mediawindowbase_impl.obj 	\
+		$(SLO)$/mediawindow_impl.obj 		\
+		$(SLO)$/mediawindow.obj         	
+
+EXCEPTIONSFILES= \
+		$(SLO)$/mediawindow.obj         	\
+		$(SLO)$/mediawindowbase_impl.obj 	\
+		$(SLO)$/mediawindow_impl.obj
+		
+# --- Targets ----------------------------------
+
+.INCLUDE : target.mk

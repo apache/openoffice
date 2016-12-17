@@ -21,21 +21,34 @@
 
 
 
-$(eval $(call gb_AllLangResTarget_AllLangResTarget,avmedia))
+PRJ=..$/..
+PRJNAME=avmedia
+TARGET=framework
 
-$(eval $(call gb_AllLangResTarget_add_srs,avmedia,avmedia/res))
+# --- Settings ----------------------------------
 
-$(eval $(call gb_SrsTarget_SrsTarget,avmedia/res))
+.INCLUDE :  settings.mk
 
-$(eval $(call gb_SrsTarget_set_include,avmedia/res,\
-	$$(INCLUDE) \
-	-I$(SRCDIR)/avmedia/inc \
-))
+# --- Resources ---------------------------------
 
-# add src files here (complete path relative to repository root)
-$(eval $(call gb_SrsTarget_add_files,avmedia/res,\
-	avmedia/source/framework/mediacontrol.src \
-	avmedia/source/viewer/mediawindow.src \
-))
+SRS1NAME=$(TARGET)
+SRC1FILES =\
+		mediacontrol.src
 
-# vim: set noet sw=4 ts=4:
+# --- Files -------------------------------------
+
+SLOFILES= \
+		$(SLO)$/mediaitem.obj	 \
+		$(SLO)$/mediamisc.obj 	 \
+		$(SLO)$/mediacontrol.obj \
+		$(SLO)$/mediatoolbox.obj \
+		$(SLO)$/mediaplayer.obj  \
+		$(SLO)$/soundhandler.obj  
+
+EXCEPTIONSFILES = \
+		$(SLO)$/mediatoolbox.obj \
+		$(SLO)$/soundhandler.obj
+
+# --- Targets ----------------------------------
+
+.INCLUDE : target.mk
