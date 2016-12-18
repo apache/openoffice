@@ -21,42 +21,19 @@
 
 
 
-#ifndef _AVMEDIA_MEDIATOOLBOX_HXX
-#define _AVMEDIA_MEDIATOOLBOX_HXX
+#ifndef INCLUDED_AVMEDIADLLAPI_H
+#define INCLUDED_AVMEDIADLLAPI_H
 
-#include <svl/lstner.hxx>
-#include <sfx2/tbxctrl.hxx>
-#include <avmedia/avmediadllapi.h>
+#ifndef _SAL_TYPES_H_
+#include "sal/types.h"
+#endif
 
-namespace avmedia
-{
+#if defined(AVMEDIA_DLLIMPLEMENTATION)
+#define AVMEDIA_DLLPUBLIC  SAL_DLLPUBLIC_EXPORT
+#else
+#define AVMEDIA_DLLPUBLIC  SAL_DLLPUBLIC_IMPORT
+#endif
+#define AVMEDIA_DLLPRIVATE SAL_DLLPRIVATE
+                                                                                                                             
+#endif /* INCLUDED_AVMEDIADLLAPI_H */
 
-// -------------------------------
-// - SvxGrafFilterToolBoxControl -
-// -------------------------------
-
-class MediaItem;
-
-class AVMEDIA_DLLPUBLIC MediaToolBoxControl : public SfxToolBoxControl 
-{
- 	friend class MediaToolBoxControl_Impl;
-
-public:
-
-								SFX_DECL_TOOLBOX_CONTROL();
-
-								MediaToolBoxControl( sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& rTbX );
-								~MediaToolBoxControl();
-
-	virtual void				StateChanged( sal_uInt16 nSID, SfxItemState eState, const SfxPoolItem* pState );
-	virtual Window*				CreateItemWindow( Window* pParent );
-
-private:
-
-	void						implUpdateMediaControl();
-	void 						implExecuteMediaControl( const MediaItem& rItem );
-};
-
-}
-
-#endif // _AVMEDIA_MEDIATOOLBOX_HXX

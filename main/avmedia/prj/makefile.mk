@@ -21,33 +21,24 @@
 
 
 
-PRJ=..$/..
-PRJNAME=avmedia
-TARGET=viewer
+PRJ=..
+TARGET=prj
 
-# --- Settings ----------------------------------
+.INCLUDE : settings.mk
 
-.INCLUDE :  settings.mk
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# --- Resources ---------------------------------
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-SRS1NAME=$(TARGET)
-SRC1FILES =\
-		mediawindow.src					
-
-# --- Files -------------------------------------
-
-SLOFILES= \
-		$(SLO)$/mediaevent_impl.obj     	\
-		$(SLO)$/mediawindowbase_impl.obj 	\
-		$(SLO)$/mediawindow_impl.obj 		\
-		$(SLO)$/mediawindow.obj         	
-
-EXCEPTIONSFILES= \
-		$(SLO)$/mediawindow.obj         	\
-		$(SLO)$/mediawindowbase_impl.obj 	\
-		$(SLO)$/mediawindow_impl.obj
-		
-# --- Targets ----------------------------------
-
-.INCLUDE : target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
