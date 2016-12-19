@@ -21,20 +21,40 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Library_Library,simplecm))
 
-PRJNAME=automation
-TARGET=communi
+$(eval $(call gb_Library_add_precompiled_header,simplecm,$(SRCDIR)/automation/inc/pch/precompiled_automation))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_add_package_headers,simplecm,automation_inc))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_set_include,simplecm,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/automation/inc \
+	-I$(SRCDIR)/automation/inc/pch \
+	-I$(SRCDIR)/automation/source/inc \
+))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_Library_add_defs,simplecm,\
+	-DAUTOMATION_DLLIMPLEMENTATION \
+))
 
-SLOFILES=   \
-	$(SLO)$/communi.obj
+$(eval $(call gb_Library_add_api,simplecm,\
+	offapi \
+	udkapi \
+))
 
-# --- Targets ------------------------------------------------------
+$(eval $(call gb_Library_add_linked_libs,simplecm,\
+	sal \
+	tl \
+	vos3 \
+	$(gb_STDLIBS) \
+))
 
-.INCLUDE :  target.mk                                                          
+$(eval $(call gb_Library_add_noexception_objects,simplecm,\
+	automation/source/simplecm/tcpio \
+	automation/source/simplecm/packethandler \
+	automation/source/simplecm/simplecm \
+))
+
+
+# vim: set noet sw=4 ts=4:

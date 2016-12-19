@@ -19,24 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-PRJNAME=automation
-TARGET=simplecm
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-SLOFILES=   \
-			$(SLO)$/tcpio.obj       \
-			$(SLO)$/packethandler.obj \
-			$(SLO)$/simplecm.obj	\
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk                                                          
+# vim: set noet sw=4 ts=4:
