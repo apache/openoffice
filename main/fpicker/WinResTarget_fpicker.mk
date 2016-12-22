@@ -21,68 +21,13 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_WinResTarget_WinResTarget,fpicker/src))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	automation \
-	avmedia \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_WinResTarget_set_include,fpicker/src,\
+        $$(INCLUDE) \
+        -I$(SRCDIR)/fpicker/inc \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_WinResTarget_add_file,fpicker/src,\
+	fpicker/source/win32/filepicker/Fps \
+))

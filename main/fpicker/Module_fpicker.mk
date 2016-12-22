@@ -21,68 +21,41 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Module_Module,fpicker))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	automation \
-	avmedia \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Module_add_targets,fpicker,\
+	AllLangResTarget_fps_office \
+	Library_fpicker \
+	Library_fps_office \
+	Package_xml \
 ))
 
-# vim: set noet ts=4 sw=4:
+ifeq ($(ENABLE_GTK),TRUE)
+GTK_TWO_FOUR:=$(shell pkg-config --exists 'gtk+-2.0 >= 2.4.0' && echo ok)
+ifeq ($(GTK_TWO_FOUR),ok)
+$(eval $(call gb_Module_add_targets,fpicker,\
+	Library_fps_gnome \
+))
+else
+	$(shell pkg-config --print-errors --exists 'gtk+-2.0 >= 2.4.0')
+endif
+endif
+
+ifeq ($(GUIBASE),unx)
+ifeq ($(ENABLE_KDE4),TRUE)
+$(eval $(call gb_Module_add_targets,fpicker,\
+	Library_fps_kde4 \
+))
+endif
+endif
+
+ifeq ($(GUI),WNT)
+$(eval $(call gb_Module_add_targets,fpicker,\
+	Library_fps \
+	Library_fop \
+	WinResTarget_vcl \
+))
+$(eval 
+endif
+
+# vim: set noet sw=4 ts=4:

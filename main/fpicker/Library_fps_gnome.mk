@@ -21,38 +21,45 @@
 
 
 
-PRJ=..$/..$/..$/..
+$(eval $(call gb_Library_Library,fps_gnome))
 
-PRJNAME=		sysui
-TARGET=			testfops
-LIBTARGET=		NO
-TARGETTYPE=		CUI
+$(eval $(call gb_Library_set_componentfile,fps_gnome,fpicker/source/unx/gnome/fps_gnome))
 
+$(eval $(call gb_Library_set_include,fps_gnome,\
+        $$(INCLUDE) \
+	$(filter -I%,$(GTK_CFLAGS)) \
+	-I$(SRCDIR)/fpicker/inc/pch \
+))
 
-# --- Settings -----------------------------------------------------
-#.INCLUDE :		$(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_Library_add_cflags,gps_gnome,\
+	$(filter-out -I%,$(GTK_CFLAGS)) \
+))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_add_api,fps_gnome,\
+	offapi \
+	udkapi \
+))
 
-CFLAGS+=-GR -EHa
+$(eval $(call gb_Library_add_linked_libs,fps_gnome,\
+	comphelper \
+	cppu \
+	cppuhelper \
+	sal \
+	tl \
+	vcl \
+	$(gb_STDLIBS) \
+))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_Library_add_libs,fps_gnome,\
+	$(GTK_LIBS) \
+))
 
-			
-OBJFILES=   	$(OBJ)$/test_fops.obj
+$(eval $(call gb_Library_add_exception_objects,fps_gnome,\
+	fpicker/source/unx/gnome/SalGtkPicker \
+	fpicker/source/unx/gnome/SalGtkFilePicker \
+	fpicker/source/unx/gnome/SalGtkFolderPicker \
+	fpicker/source/unx/gnome/resourceprovider \
+	fpicker/source/unx/gnome/FPentry \
+))
 
-APP1TARGET=		test_fops
-
-APP1OBJS=		$(OBJ)$/test_fops.obj 
-
-APP1STDLIBS+=	$(CPPULIB)			\
-				$(CPPUHELPERLIB)	\
-				$(SALLIB) 	 		\
-				$(USER32LIB)\
-				$(OLE32LIB)
-				
-APP1DEF=		$(MISC)$/$(APP1TARGET).def
-
-# --- Targets ------------------------------------------------------
-.INCLUDE :		target.mk
-
+# vim: set noet sw=4 ts=4:

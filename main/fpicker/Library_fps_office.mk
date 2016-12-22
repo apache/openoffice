@@ -21,68 +21,47 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,fps_office))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	automation \
-	avmedia \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_set_componentfile,fps_office,fpicker/source/office/fps_office))
+
+$(eval $(call gb_Library_set_include,fps_office,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/fpicker/inc/pch \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_api,fps_office,\
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,fps_office,\
+	comphelper \
+	cppu \
+	cppuhelper \
+	ootk \
+	sal \
+	svl \
+	svt \
+	tl \
+	ucbhelper \
+	utl \
+	vcl \
+	$(gb_STDLIBS) \
+))
+
+
+$(eval $(call gb_Library_add_exception_objects,fps_office,\
+	fpicker/source/office/asyncfilepicker \
+	fpicker/source/office/commonpicker \
+	fpicker/source/office/OfficeControlAccess \
+	fpicker/source/office/OfficeFilePicker \
+	fpicker/source/office/OfficeFolderPicker \
+	fpicker/source/office/fpinteraction \
+	fpicker/source/office/fpsmartcontent \
+	fpicker/source/office/fps_office \
+	fpicker/source/office/iodlg \
+	fpicker/source/office/iodlgimp \
+))
+
+# vim: set noet sw=4 ts=4:

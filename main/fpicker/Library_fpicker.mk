@@ -21,33 +21,35 @@
 
 
 
-PRJ=..$/..$/..
-PRJNAME=fpicker
-TARGET=utils
-LIBTARGET=NO
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_Library_Library,fpicker))
 
-# --- Settings ----------------------------------
+$(eval $(call gb_Library_add_precompiled_header,fpicker,$(SRCDIR)/fpicker/inc/pch/precompiled_fpicker))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Library_set_componentfile,fpicker,fpicker/source/generic/fpicker))
 
-.IF "$(COM)"=="GCC"
-CFLAGSAPPEND+=-fexceptions -fno-enforce-eh-specs -DUNICODE -D_UNICODE
-.ELSE
-CFLAGS+=-EHa -DUNICODE -D_UNICODE
-.ENDIF
+$(eval $(call gb_Library_set_include,fpicker,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/fpicker/inc/pch \
+))
 
-# --- Files -------------------------------------
+$(eval $(call gb_Library_add_api,fpicker,\
+	offapi \
+	udkapi \
+))
 
-SLOFILES=$(SLO)$/WinImplHelper.obj\
-		 $(SLO)$/AutoBuffer.obj\
-		 $(SLO)$/resourceprovider.obj
-
-LIB1TARGET=$(SLB)$/$(TARGET).lib
-LIB1OBJFILES=$(SLOFILES)
-
-# --- Targets ----------------------------------
-
-.INCLUDE : target.mk
+$(eval $(call gb_Library_add_linked_libs,fpicker,\
+	cppu \
+	cppuhelper \
+	sal \
+	svl \
+	vcl \
+	svt \
+	$(gb_STDLIBS) \
+))
 
 
+$(eval $(call gb_Library_add_exception_objects,fpicker,\
+	fpicker/source/generic/fpicker \
+))
+
+# vim: set noet sw=4 ts=4:

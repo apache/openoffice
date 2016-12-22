@@ -21,38 +21,24 @@
 
 
 
-PRJ=..$/..$/..$/..
+$(eval $(call gb_AllLangResTarget_AllLangResTarget,fps_office))
 
-PRJNAME=sysui
-TARGET=testfps
-LIBTARGET=NO
-TARGETTYPE=CUI
+$(eval $(call gb_AllLangResTarget_set_reslocation,fps_office,fpicker))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_AllLangResTarget_add_srs,fps_office,\
+	fps_office/res \
+))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_SrsTarget_SrsTarget,fps_office/res))
 
-CFLAGS+=-GR -GX
+$(eval $(call gb_SrsTarget_set_include,fps_office/res,\
+	$$(INCLUDE) \
+	-I$(WORKDIR)/inc \
+))
 
-# --- Files --------------------------------------------------------
-
-				
-OBJFILES=$(OBJ)$/test_fps.obj
-
-APP1TARGET=$(TARGET)
-APP1OBJS=$(OBJFILES) 
-				
-APP1STDLIBS+=\
-			$(CPPULIB)\
-			$(CPPUHELPERLIB)\
-			$(SALLIB)\
-			$(USER32LIB)\
-			$(OLE32LIB)
-
-APP1DEF=$(MISC)$/$(APP1TARGET).def
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :		target.mk
+$(eval $(call gb_SrsTarget_add_files,fps_office/res,\
+	fpicker/source/office/iodlg.src \
+	fpicker/source/office/OfficeFilePicker.src \
+))
 
 
