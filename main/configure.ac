@@ -18,7 +18,7 @@ dnl *  specific language governing permissions and limitations
 dnl *  under the License.
 dnl *  
 dnl * *************************************************************
-AC_REVISION( $Revision: 1.290 $ )
+AC_REVISION( $Revision$ )
 AC_PREREQ(2.50)
 AC_INIT()
 echo "$@" >config.parms
@@ -2823,7 +2823,7 @@ if test "z$with_build_version" != "z"; then
    BUILD_VER_STRING=$with_build_version
    AC_MSG_RESULT([yes, $BUILD_VER_STRING])
 else
-   BUILD_VER_STRING=`date +"%Y-%m-%d %H:%M:%S (%a, %d %b %Y)"`
+   BUILD_VER_STRING=`Apache Software Foundation`
    AC_MSG_RESULT([no])
 fi
 AC_SUBST(BUILD_VER_STRING)
