@@ -1,0 +1,11 @@
+--- misc/build/gtest-1.7.0/Makefile.in	2016-12-26 05:46:42.636975431 +0200
++++ misc/build/gtest-1.7.0/Makefile.in	2016-12-26 05:53:19.907981058 +0200
+@@ -97,7 +97,7 @@
+ 	"$(DESTDIR)$(pkgincludedir)" \
+ 	"$(DESTDIR)$(pkginclude_internaldir)"
+ LTLIBRARIES = $(lib_LTLIBRARIES) $(noinst_LTLIBRARIES)
+-lib_libgtest_la_LIBADD =
++lib_libgtest_la_LIBADD = -lpthread
+ am__dirstamp = $(am__leading_dot)dirstamp
+ am_lib_libgtest_la_OBJECTS = src/gtest-all.lo
+ lib_libgtest_la_OBJECTS = $(am_lib_libgtest_la_OBJECTS)

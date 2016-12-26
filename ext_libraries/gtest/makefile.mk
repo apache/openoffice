@@ -66,6 +66,10 @@ BUILD_FLAGS+= -f ../../../../win/Makefile -j$(EXTMAXPROCESS)
 
 .ELSE
 
+.IF "$(OS)"=="LINUX"
+PATCH_FILES+=linux-pthread.patch
+.ENDIF
+
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
 
