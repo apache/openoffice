@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,73 +17,37 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
+$(eval $(call gb_GoogleTest_GoogleTest,slideshow_demoshow))
 
-$(eval $(call gb_Module_Module,ooo))
-
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	automation \
-	avmedia \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_GoogleTest_set_include,slideshow_demoshow,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/slideshow/source/inc \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_GoogleTest_add_exception_objects,slideshow_demoshow, \
+	slideshow/test/demoshow \
+))
+
+$(eval $(call gb_GoogleTest_add_linked_libs,slideshow_demoshow, \
+	basegfx \
+	comphelper \
+	cppcanvas \
+	cppu \
+	cppuhelper \
+	sal \
+	stl \
+	tl \
+	ucbhelper \
+	vcl \
+    $(gb_STDLIBS) \
+))
+
+$(eval $(call gb_GoogleTest_add_api,slideshow_demoshow,\
+	udkapi \
+	offapi \
+))
+
+# vim: set noet sw=4 ts=4:

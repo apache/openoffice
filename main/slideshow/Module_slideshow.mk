@@ -21,36 +21,28 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Module_Module,slideshow))
 
-PRJNAME=slideshow
-TARGET=shapes
-ENABLE_EXCEPTIONS=TRUE
-PRJINC=..$/..
+$(eval $(call gb_Module_add_targets,slideshow,\
+	Library_slideshow \
+	StaticLibrary_sldshw_s \
+))
 
-# --- Settings -----------------------------------------------------------
+ifeq ($(ENABLE_OPENGL),TRUE)
+$(eval $(call gb_Module_add_targets,slideshow,\
+	Library_OGLTrans \
+))
+endif
 
-.INCLUDE :	settings.mk
-.INCLUDE : $(PRJ)$/util$/makefile.pmk
+ifeq ($(ENABLE_UNIT_TESTS),YES)
+$(eval $(call gb_Module_add_check_targets,slideshow,\
+        GoogleTest_slideshow_tests \
+))
+endif
 
-# --- Common ----------------------------------------------------------
-
-SLOFILES =	$(SLO)$/appletshape.obj \
-			$(SLO)$/backgroundshape.obj \
-			$(SLO)$/drawinglayeranimation.obj \
-			$(SLO)$/drawshape.obj \
-			$(SLO)$/drawshapesubsetting.obj \
-			$(SLO)$/externalshapebase.obj \
-			$(SLO)$/gdimtftools.obj \
-			$(SLO)$/intrinsicanimationactivity.obj \
-			$(SLO)$/mediashape.obj \
-			$(SLO)$/shapeimporter.obj \
-			$(SLO)$/viewappletshape.obj \
-			$(SLO)$/viewbackgroundshape.obj \
-			$(SLO)$/viewmediashape.obj \
-			$(SLO)$/viewshape.obj
+# crashes on startup, did so before port to gbuild:
+#        GoogleTest_slideshow_demoshow \
 
 
-# ==========================================================================
 
-.INCLUDE :	target.mk
+# vim: set noet sw=4 ts=4:

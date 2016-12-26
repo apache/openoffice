@@ -19,71 +19,52 @@
 #  
 #**************************************************************
 
+$(eval $(call gb_Library_Library,OGLTrans))
 
+$(eval $(call gb_Library_set_componentfile,OGLTrans,slideshow/source/engine/OGLTrans/ogltrans))
 
-$(eval $(call gb_Module_Module,ooo))
-
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	animations \
-	automation \
-	avmedia \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_set_include,OGLTrans,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/slideshow/source/inc \
+	-I$(SRCDIR)/slideshow/inc/pch \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_api,OGLTrans,\
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,OGLTrans,\
+	canvastools \
+	comphelper \
+	cppu \
+	cppuhelper \
+	sal \
+	vcl \
+	$(gb_STDLIBS) \
+))
+
+ifeq ($(GUI),UNX)
+ifneq ($(GUIBASE),aqua)
+$(eval $(call gb_Library_add_libs,OGLTrans,\
+	-lGL \
+	-lGLU \
+	-lX11 \
+))
+endif
+else
+$(eval $(call gb_Library_add_linked_libs,OGLTrans,\
+	gdi32 \
+	glu32 \
+	opengl32 \
+))
+endif
+
+$(eval $(call gb_Library_add_exception_objects,OGLTrans,\
+	slideshow/source/engine/OGLTrans/OGLTrans_TransitionImpl \
+	slideshow/source/engine/OGLTrans/OGLTrans_Shaders \
+	slideshow/source/engine/OGLTrans/OGLTrans_TransitionerImpl \
+))
+
+
+# vim: set noet sw=4 ts=4:

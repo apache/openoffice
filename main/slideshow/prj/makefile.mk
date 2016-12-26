@@ -21,27 +21,24 @@
 
 
 
-PRJ=..$/..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=slideshow
-TARGET=slide
-ENABLE_EXCEPTIONS=TRUE
-PRJINC=..$/..
+.INCLUDE : settings.mk
 
-# --- Settings -----------------------------------------------------------
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-.INCLUDE :	settings.mk
-.INCLUDE : $(PRJ)$/util$/makefile.pmk
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-# --- Common ----------------------------------------------------------
-
-SLOFILES =	$(SLO)$/layer.obj \
-			$(SLO)$/layermanager.obj \
-			$(SLO)$/shapemanagerimpl.obj \
-			$(SLO)$/slideanimations.obj \
-			$(SLO)$/slideimpl.obj  \
-			$(SLO)$/userpaintoverlay.obj
-
-# ==========================================================================
-
-.INCLUDE :	target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
