@@ -21,71 +21,42 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,ctl))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_set_componentfile,ctl,UnoControls/util/ctl))
+
+$(eval $(call gb_Library_set_include,ctl,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/UnoControls/inc \
+	-I$(SRCDIR)/UnoControls/source/inc \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_api,ctl,\
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,ctl,\
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	tl \
+	$(gb_STDLIBS) \
+))
+
+
+$(eval $(call gb_Library_add_exception_objects,ctl,\
+	UnoControls/source/base/multiplexer \
+	UnoControls/source/base/basecontrol \
+	UnoControls/source/base/basecontainercontrol \
+	UnoControls/source/base/registercontrols \
+	UnoControls/source/controls/progressbar \
+	UnoControls/source/controls/framecontrol \
+	UnoControls/source/controls/progressmonitor \
+	UnoControls/source/controls/OConnectionPointHelper \
+	UnoControls/source/controls/OConnectionPointContainerHelper \
+	UnoControls/source/controls/statusindicator \
+))
+
+# vim: set noet sw=4 ts=4:

@@ -19,13 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
-ALLSLO: $(SLOFILES)
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-SOSHL: $(SHL1TARGETN)
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-WHOLEPRJ:
-	cd $(PRJ)$/prj
-	make debug linkinc prjpch compinc
-	@echo "READY"
-
+# vim: set noet sw=4 ts=4:
