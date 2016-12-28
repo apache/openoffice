@@ -21,24 +21,13 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,basctl))
 
-PRJNAME=basctl
-TARGET=accessibility
-ENABLE_EXCEPTIONS=TRUE
-VISIBILITY_HIDDEN=TRUE
+$(eval $(call gb_Module_add_targets,basctl,\
+	AllLangResTarget_basctl \
+	Library_basctl \
+	Package_uiconfig \
+	Package_xml \
+))
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-SLOFILES=\
-	$(SLO)$/accessibledialogwindow.obj			\
-	$(SLO)$/accessibledialogcontrolshape.obj
-	
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:
