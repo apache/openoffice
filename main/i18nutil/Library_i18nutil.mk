@@ -21,73 +21,40 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,i18nutil))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_set_include,i18nutil,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/i18nutil/inc \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_defs,i18nutil,\
+	-DI18NUTIL_DLLIMPLEMENTATION \
+))
+
+$(eval $(call gb_Library_add_api,i18nutil,\
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,i18nutil,\
+	cppu \
+	sal \
+	stl \
+	$(gb_STDLIBS) \
+))
+
+
+$(eval $(call gb_Library_add_exception_objects,i18nutil,\
+	i18nutil/source/utility/casefolding \
+))
+
+$(eval $(call gb_Library_add_noexception_objects,i18nutil,\
+	i18nutil/source/utility/unicode \
+	i18nutil/source/utility/widthfolding \
+	i18nutil/source/utility/oneToOneMapping \
+))
+
+
+
+# vim: set noet sw=4 ts=4:
