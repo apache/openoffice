@@ -21,17 +21,22 @@
 
 
 
-PRJ=..$/..
-PRJNAME=ucb
-TARGET=regexp
-AUTOSEG=true
-ENABLE_EXCEPTIONS=true
+$(eval $(call gb_JunitTest_JunitTest,ucb_complex,SRCDIR))
 
-.INCLUDE : settings.mk
-.IF "$(L10N_framework)"==""
+$(eval $(call gb_JunitTest_add_jars,ucb_complex,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/unoil.jar \
+	$(OUTDIR)/bin/jurt.jar \
+))
 
-SLOFILES=\
-	$(SLO)$/regexp.obj
-.ENDIF	# L10N_framework
+$(eval $(call gb_JunitTest_add_sourcefiles,ucb_complex,\
+	ucb/qa/complex/ucb/UCB \
+))
 
-.INCLUDE : target.mk
+$(eval $(call gb_JunitTest_add_classes,ucb_complex,\
+	complex.ucb.UCB \
+))
+
+# vim: set noet sw=4 ts=4:

@@ -20,25 +20,35 @@
 #**************************************************************
 
 
-PRJ=..
 
-PRJNAME=ucb
-TARGET=inc
+$(eval $(call gb_Library_Library,ucpexpand1))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_add_precompiled_header,ucpexpand1,$(SRCDIR)/ucb/inc/pch/precompiled_ftp))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_Library_set_componentfile,ucpexpand1,ucb/source/ucp/expand/ucpexpand1))
 
-# --- Files --------------------------------------------------------
-# --- Targets -------------------------------------------------------
+$(eval $(call gb_Library_set_include,ucpexpand1,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/ucb/inc/pch \
+	-I$(SRCDIR)/ucb/source/inc \
+))
 
-.INCLUDE :  target.mk
-.IF "$(L10N_framework)"==""
+$(eval $(call gb_Library_add_api,ucpexpand1,\
+	offapi \
+	udkapi \
+))
 
-.IF "$(ENABLE_PCH)"!=""
-ALLTAR : \
-	$(SLO)$/precompiled.pch \
-	$(SLO)$/precompiled_ex.pch
-	
-.ENDIF			# "$(ENABLE_PCH)"!=""
-.ENDIF 		# L10N_framework
+$(eval $(call gb_Library_add_linked_libs,ucpexpand1,\
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	ucbhelper \
+	$(gb_STDLIBS) \
+))
+
+$(eval $(call gb_Library_add_exception_objects,ucpexpand1,\
+	ucb/source/ucp/expand/ucpexpand \
+))
+
+# vim: set noet sw=4 ts=4:
