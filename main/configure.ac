@@ -5885,7 +5885,7 @@ dnl ===================================================================
 dnl Check the ARM target
 dnl ===================================================================
 
-if test "$_os" = "Linux" && echo "$build_cpu" | $GREP -q arm; then
+if echo "$build_cpu" | $GREP -q arm; then
     # default value
     ARM_TARGET=ARMV4T
     AC_MSG_CHECKING([which ARM processor optimization to use])
