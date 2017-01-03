@@ -46,6 +46,9 @@ JAVAFLAGSDEBUG=-g
 .IF "$(CPUNAME)" == "POWERPC64"
 .INCLUDE : unxfbsdppc64.mk
 .ENDIF
+.IF "$(CPUNAME)" == "ARM"
+.INCLUDE : unxfbsdr.mk
+.ENDIF
 
 # filter for supressing verbose messages from linker
 #not needed at the moment
