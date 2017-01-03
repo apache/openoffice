@@ -944,10 +944,10 @@ ADDITIONAL_REPOSITORIES="../ext_libraries"
 SCPDEFS=""
 
 dnl ===================================================================
-dnl Check configure script vs. configure.in
+dnl Check configure script vs. configure.ac
 dnl ===================================================================
 AC_MSG_CHECKING([whether configure is up-to-date])
-if test "configure" -ot "configure.in"; then
+if test "configure" -ot "configure.ac"; then
    AC_MSG_RESULT([no])
    AC_MSG_ERROR([configure is not up-to-date, run autoconf first!])
 else
