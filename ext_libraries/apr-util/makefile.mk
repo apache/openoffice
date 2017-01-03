@@ -110,7 +110,7 @@ INSTALL_ACTION=if [ -f apu-1-config.orig ]; then mv -f apu-1-config.orig apu-1-c
 	chmod +x apu-1-config
 
 OUT2INC+=include$/apr*.h
-OUT2INC+=include$/apu.h
+OUT2INC+=include$/apu*.h
 OUT2INC_SUBDIR=apr-util
 
 .IF "$(OS)"=="MACOSX"

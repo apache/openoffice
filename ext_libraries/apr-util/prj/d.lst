@@ -1,6 +1,6 @@
 mkdir: %_DEST%\inc%_EXT%\apr-util
 ..\%__SRC%\inc\apr-util\apr*.h %_DEST%\inc%_EXT%\apr-util
-..\%__SRC%\inc\apr-util\apu.h %_DEST%\inc%_EXT%\apr-util
+..\%__SRC%\inc\apr-util\apu*.h %_DEST%\inc%_EXT%\apr-util
 ..\aprutil_version.mk %_DEST%\inc%_EXT%
 
 # Unixes
