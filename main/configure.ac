@@ -2823,11 +2823,7 @@ if test "z$with_build_version" != "z"; then
    BUILD_VER_STRING=$with_build_version
    AC_MSG_RESULT([yes, $BUILD_VER_STRING])
 else
-   if test "x$SOURCE_DATE_EPOCH" != "x" ; then
-       BUILD_VER_STRING=`date -u -d "${SOURCE_DATE_EPOCH}"`
-   else
-       BUILD_VER_STRING=`date +"%Y-%m-%d %H:%M:%S (%a, %d %b %Y)"`
-   fi
+   BUILD_VER_STRING=
    AC_MSG_RESULT([no])
 fi
 AC_SUBST(BUILD_VER_STRING)
