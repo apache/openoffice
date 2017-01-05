@@ -20,29 +20,12 @@
 #**************************************************************
 
 
-PRJ=..$/..
-PRJNAME=cui
-TARGET=factory
-ENABLE_EXCEPTIONS=TRUE
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Module_Module,cui))
 
-.INCLUDE :  settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_Module_add_targets,cui,\
+	AllLangResTarget_cui \
+	Library_cui \
+))
 
-.IF "$(ENABLE_LAYOUT)" == "TRUE"
-CFLAGS+= -DENABLE_LAYOUT=1 -I../$(PRJ)/layout/inc -I../$(PRJ)/layout/$(INPATH)/inc
-.ENDIF # ENABLE_LAYOUT == TRUE
-
-# --- Files --------------------------------------------------------
-
-SLOFILES+=\
-        $(SLO)$/dlgfact.obj \
-        $(SLO)$/cuiexp.obj \
-        $(SLO)$/cuiresmgr.obj \
-        $(SLO)$/init.obj \
-
-
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

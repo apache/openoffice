@@ -19,21 +19,26 @@
 #  
 #**************************************************************
 
-PRJ=..$/..$/..
-PRJNAME=cui
-TARGET=services
-ENABLE_EXCEPTIONS=TRUE
 
-# --- Settings -----------------------------------------------------
 
-.INCLUDE :  settings.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+PRJ=..
+TARGET=prj
 
-# --- Files --------------------------------------------------------
+.INCLUDE : settings.mk
 
-SLOFILES+=\
-        $(SLO)$/services.obj
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# --- Targets -------------------------------------------------------
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-.INCLUDE :  target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

@@ -1,4 +1,4 @@
-###############################################################
+#**************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,13 +17,16 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-###############################################################
-UDK_3_0_0 {
-	global:
-	CreateDialogFactory;
-    GetSpecialCharsForEdit;
-    component_getImplementationEnvironment;
-    component_getFactory;
-	local:
-		*;
-};
+#**************************************************************
+
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
+
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
+
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
+
+# vim: set noet sw=4 ts=4:
