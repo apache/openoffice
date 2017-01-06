@@ -21,75 +21,20 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_AllLangResTarget_AllLangResTarget,solver))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	cui \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sccomp \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_AllLangResTarget_add_srs,solver,\
+	solver/res \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_SrsTarget_SrsTarget,solver/res))
+
+$(eval $(call gb_SrsTarget_set_include,solver/res,\
+	$$(INCLUDE) \
+	-I$(OUTDIR)/inc \
+	-I$(SRCDIR)/sccomp/source/solver \
+))
+
+$(eval $(call gb_SrsTarget_add_files,solver/res,\
+	sccomp/source/solver/solver.src \
+))

@@ -21,75 +21,33 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,solver))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	cui \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	reportdesign \
-	remotebridges \
-	sax \
-	sccomp \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_set_componentfile,solver,sccomp/source/solver/solver))
+
+$(eval $(call gb_Library_set_include,solver,\
+        $$(INCLUDE) \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_api,solver,\
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,solver,\
+	comphelper \
+	cppuhelper \
+	cppu \
+	sal \
+	stl \
+	tl \
+	$(gb_STDLIBS) \
+))
+
+$(call gb_Library_use_external,solver,coinmp)
+
+$(eval $(call gb_Library_add_exception_objects,solver,\
+	sccomp/source/solver/solver \
+))
+
+# vim: set noet sw=4 ts=4:
