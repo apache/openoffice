@@ -162,7 +162,7 @@
 +# vim: set noet ts=4 sw=4:
 --- misc/apr-util-1.5.4/Package_inc.mk	2012-01-05 14:49:40.585222300 +0100
 +++ misc/build/apr-util-1.5.4/Package_inc.mk	2012-01-05 14:47:51.616989700 +0100
-@@ -1 +1,32 @@
+@@ -1 +1,33 @@
 -dummy
 +#/**************************************************************
 +# * 
@@ -188,6 +188,7 @@
 +$(eval $(call gb_Package_Package,apr-util_inc,$(EXT_LIBRARIES)/apr-util/$(INPATH)/misc/build/apr-util-1.5.4/include))
 +$(eval $(call gb_Package_add_files, apr-util_inc, inc/apr-util,        \
 +       apu.h                                                           \
++       apu_version.h                                                   \
 +       apr_uri.h                                                       \
 +       apr_date.h                                                      \
 +       apr_uuid.h                                                      \
