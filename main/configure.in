@@ -3407,17 +3407,6 @@ if test "$enable_epm" = "yes"; then
 	       	    test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "3" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "7"; then
                AC_MSG_RESULT([OK, >= 3.7])
                BUILD_EPM=NO
-	       if test "$_os" = "Darwin"; then
-                  AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
-        	  _pm=`strings $EPM | grep PackageMaker | cut -d" " -f1`
-        	  if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	     AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-        	  elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	     AC_MSG_RESULT([$_pm, ok])
-        	  else # we never should get here, but go safe
-		     AC_MSG_ERROR([$_pm; PackageMaker expected in unknown path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-		  fi
-	       fi
 	    else
                AC_MSG_ERROR([too old. epm >= 3.7 is required.])
 	    fi
@@ -3523,18 +3512,6 @@ msi - Windows .msi
       if test "$DPKG" = "no"; then
          AC_MSG_ERROR([dpkg needed for deb creation. Install dpkg.])
       fi
-   fi
-   if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
-      if test "$_os" = "Darwin"; then
-         AC_MSG_CHECKING([for PackageMaker availability])
-         if ! test -x /Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker; then
-            AC_MSG_ERROR([not installed. Please install Apples Dev Tools])
-         else
-            AC_MSG_RESULT([ok])
-         fi
-      else
-         AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
-       fi
    fi
    if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
       echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
@@ -3937,30 +3914,34 @@ dnl ===================================================================
 dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
-   sdk_major=10
-   sdk_minor=7
-   sdk_target="${sdk_major}.${sdk_minor}"
+   sdk_target=10.7
    AC_MSG_CHECKING([checking SDK compatiblity with OSX $sdk_target])
-   sdk_found=`xcodebuild -showsdks | egrep "sdk macosx10.[[0-9]]+$" | sed -e "s/.*sdk macosx//" | tail -n1`
-   if test -z "$sdk_found"; then
-      AC_MSG_ERROR([No macOS SDK with macosx${sdk_target} compatibility found])
+
+   sdk_minor=`echo $sdk_target | cut -d"." -f2`
+
+   if test "$sdk_minor" -lt "7"; then
+      AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
    else
-      sdk_found_minor=`echo $sdk_found | cut -d"." -f2`
-      if test "$sdk_found_minor" -lt "$sdk_minor"; then
-          AC_MSG_ERROR([SDK version < $sdk_target is not longer supported])
+      MACOSX_DEPLOYMENT_TARGET=$sdk_target
+
+      sdk_found=`xcodebuild -showsdks | egrep "sdk macosx10.(7|8|9|10|11)" | sed -e "s/.*sdk //" | tail -n1`
+      if test -z "$sdk_found"; then
+         AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
-          MACOSX_DEPLOYMENT_TARGET=$sdk_target
-          AC_MSG_RESULT([yes, by using SDK $sdk_found])
-          sdk_path=`xcodebuild -version -sdk macosx${sdk_found} Path`
-          AC_MSG_CHECKING([for $sdk_path])
-          if test -d "$sdk_path"; then
-            AC_MSG_RESULT([yes])
-          else
-            AC_MSG_ERROR([not found!])
-         fi
-         MACOSX_SDK_PATH=$sdk_path
-     fi
+         AC_MSG_RESULT([yes, by using SDK $sdk_found])
+      fi
+
+      sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+      AC_MSG_CHECKING([for $sdk_path])
+      if test -d "$sdk_path"; then
+         AC_MSG_RESULT([yes])
+      else
+         AC_MSG_ERROR([not found!])
+      fi
+
+      MACOSX_SDK_PATH=$sdk_path
    fi
+
 fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
