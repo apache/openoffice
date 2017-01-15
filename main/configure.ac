@@ -545,10 +545,6 @@ AC_ARG_WITH(libloader-jar,
 [  --with-libloader-jar=JARFILE   Specify path to jarfile manually (for Report Builder extension) ],
 [ LIBLOADER_JAR="$withval"
 ])
-AC_ARG_WITH(libloader-jar,
-[  --with-libloader-jar=JARFILE   Specify path to jarfile manually (for Report Builder extension) ],
-[ LIBLOADER_JAR="$withval"
-])
 AC_ARG_WITH(libformula-jar,
 [  --with-libformula-jar=JARFILE   Specify path to jarfile manually (for Report Builder extension) ],
 [ LIBFORMULA_JAR="$withval"
