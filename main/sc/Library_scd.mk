@@ -21,46 +21,48 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Library_Library,scd))
 
-PRJNAME=sc
-TARGET=lotus
+$(eval $(call gb_Library_add_precompiled_header,scd,$(SRCDIR)/sc/inc/pch/precompiled_scd))
 
-PROJECTPCH4DLL=TRUE
-PROJECTPCH=filt_pch
-PROJECTPCHSOURCE=..\pch\filt_pch
+$(eval $(call gb_Library_set_componentfile,scd,sc/util/scd))
 
-AUTOSEG=true
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_Library_set_include,scd,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/sc/inc \
+	-I$(SRCDIR)/sc/inc/pch \
+	-I$(SRCDIR)/sc/source/ui/inc \
+	-I$(SRCDIR)/sc/source/core/inc \
+	-I$(SRCDIR)/sc/source/filter/inc \
+))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Library_add_defs,scd,\
+	-DSC_DLLIMPLEMENTATION \
+))
 
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_Library_add_api,scd,\
+	offapi \
+	udkapi \
+))
 
-.INCLUDE :  scpre.mk
-.INCLUDE :  settings.mk
-.INCLUDE :  sc.mk
+$(eval $(call gb_Library_add_linked_libs,scd,\
+	cppu \
+	cppuhelper \
+	sal \
+	sfx \
+	sot \
+	stl \
+	svl \
+	svt \
+	tl \
+	ucbhelper \
+	vcl \
+	$(gb_STDLIBS) \
+))
 
-# --- Files --------------------------------------------------------
+$(eval $(call gb_Library_add_exception_objects,scd,\
+	sc/source/ui/unoobj/scdetect \
+	sc/source/ui/unoobj/detreg \
+))
 
-SLOFILES =						\
-		$(SLO)$/filter.obj		\
-		$(SLO)$/lotus.obj		\
-		$(SLO)$/lotimpop.obj	\
-		$(SLO)$/lotread.obj		\
-		$(SLO)$/lotform.obj		\
-		$(SLO)$/memory.obj		\
-		$(SLO)$/op.obj			\
-		$(SLO)$/optab.obj		\
-		$(SLO)$/tool.obj		\
-		$(SLO)$/expop.obj		\
-		$(SLO)$/export.obj		\
-		$(SLO)$/lotattr.obj
-
-EXCEPTIONSFILES =				\
-		$(SLO)$/op.obj
-
-# --- Tagets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:

@@ -21,33 +21,24 @@
 
 
 
-PRJ=..$/..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=sc
-TARGET=dif
+.INCLUDE : settings.mk
 
-AUTOSEG=true
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-PROJECTPCH4DLL=TRUE
-PROJECTPCH=filt_pch
-PROJECTPCHSOURCE=..\pch\filt_pch
-ENABLE_EXCEPTIONS=TRUE
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
-
-.INCLUDE :  scpre.mk
-.INCLUDE :  settings.mk
-.INCLUDE :  sc.mk
-
-# --- Files --------------------------------------------------------
-
-SLOFILES =					\
-		$(SLO)$/difimp.obj	\
-		$(SLO)$/difexp.obj
-
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

@@ -1,4 +1,4 @@
-###############################################################
+#**************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,10 +17,26 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-###############################################################
-UDK_3_0_0 {
-	global:
-	CreateDialogFactory;
-	local:
-		*;
-};
+#**************************************************************
+
+
+
+$(eval $(call gb_JunitTest_JunitTest,sc_complex,SRCDIR))
+
+$(eval $(call gb_JunitTest_add_jars,sc_complex,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/unoil.jar \
+	$(OUTDIR)/bin/jurt.jar \
+))
+
+$(eval $(call gb_JunitTest_add_sourcefiles,sc_complex,\
+	sc/qa/complex/sc/CalcCRTL \
+))
+
+$(eval $(call gb_JunitTest_add_classes,sc_complex,\
+	complex.sc.CalcRTL \
+))
+
+# vim: set noet sw=4 ts=4:

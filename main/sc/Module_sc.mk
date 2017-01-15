@@ -21,50 +21,31 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Module_Module,sc))
 
-PRJNAME=sc
-TARGET=pagedlg
-LIBTARGET=no
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_Module_add_targets,sc,\
+	AllLangResTarget_sc \
+	Library_sc \
+	Library_scd \
+	Library_scfilt \
+	Library_scui \
+	Library_vbaobj \
+	Package_uiconfig \
+	Package_xml \
+))
 
-# --- Settings -----------------------------------------------------
+ifeq ($(ENABLE_UNIT_TESTS),YES)
+$(eval $(call gb_Module_add_targets,sc,\
+	GoogleTest_sc \
+))
+endif
 
-.INCLUDE :  scpre.mk
-.INCLUDE :  settings.mk
-.INCLUDE :  sc.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
-
-# --- Files --------------------------------------------------------
-
-CXXFILES = \
-	areasdlg.cxx	\
-	hfedtdlg.cxx	\
-        tptable.cxx	\
-        tphf.cxx 	\
-        tphfedit.cxx
-
-
-SLOFILES = \
-        $(SLO)$/areasdlg.obj	\
-	$(SLO)$/hfedtdlg.obj	\
-        $(SLO)$/tptable.obj	\
-        $(SLO)$/tphf.obj		\
-        $(SLO)$/tphfedit.obj	\
-        $(SLO)$/scuitphfedit.obj
+ifneq ($(OOO_JUNIT_JAR),)
+$(eval $(call gb_Module_add_subsequentcheck_targets,sc,\
+	JunitTest_sc_complex \
+	JunitTest_sc_complex_cellRanges \
+))
+endif
 
 
-SRS1NAME=$(TARGET)
-SRC1FILES =  pagedlg.src     	\
-            hfedtdlg.src    	\
-            tphf.src
-
-LIB1TARGET = $(SLB)$/$(TARGET).lib
-
-LIB1OBJFILES = \
-        $(SLO)$/areasdlg.obj	\
-	$(SLO)$/tphfedit.obj
-# --- Tagets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:

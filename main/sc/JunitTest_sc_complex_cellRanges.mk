@@ -21,39 +21,21 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_JunitTest_JunitTest,sc_complex_cellRanges,SRCDIR))
 
-PRJNAME=sc
-TARGET=attrdlg
-LIBTARGET=no
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_JunitTest_add_jars,sc_complex_cellRanges,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+	$(OUTDIR)/bin/unoil.jar \
+))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_JunitTest_add_sourcefiles,sc_complex_cellRanges,\
+	sc/qa/complex/cellRanges/CheckXCellRangesQuery \
+))
 
-.INCLUDE :  scpre.mk
-.INCLUDE :  settings.mk
-.INCLUDE :  sc.mk
-.INCLUDE :  $(PRJ)$/util$/makefile.pmk
+$(eval $(call gb_JunitTest_add_classes,sc_complex_cellRanges,\
+	complex.cellRanges.CheckXCellRangesQuery \
+))
 
-# --- Files --------------------------------------------------------
-
-CXXFILES =  attrdlg.cxx		\
-            tabpages.cxx	\
-			condfrmt.cxx
-
-SLOFILES =  $(SLO)$/attrdlg.obj	\
-            $(SLO)$/tabpages.obj	\
-            $(SLO)$/condfrmt.obj	\
-            $(SLO)$/scabstdlg.obj	\
-		$(SLO)$/scuiexp.obj		\
-		$(SLO)$/scdlgfact.obj
-
-LIB1TARGET = $(SLB)$/$(TARGET).lib
-
-LIB1OBJFILES =  \
-	$(SLO)$/condfrmt.obj	\
-	$(SLO)$/scabstdlg.obj
-
-# --- Tagets -------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:
