@@ -914,7 +914,7 @@ AC_ARG_ENABLE(dependency-tracking,
 AC_ARG_ENABLE(category-b,
 [  --enable-category-b     Activate components under a category B license 
                           (see http://www.apache.org/legal/3party.html#category-b):
-                          MPL (seamonkey, hunspell, hyphen, nss, saxon, rhino),
+                          MPL (hunspell, hyphen, nss, saxon, rhino),
                           CPL (silgraphite), CPL/EPL (CoinMP), OFL (fonts).
                           Flags for individual libraries override this one.
 ],,)
