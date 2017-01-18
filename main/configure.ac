@@ -680,6 +680,13 @@ AC_ARG_WITH(junit,
 
                           Usage: --with-junit=<absolute path to JUnit 4 jar>
 ],,with_junit=yes)
+AC_ARG_WITH(hamcrest-core,
+[  --with-hamcrest-core    Specifies the hamcrest-core jar file to use for
+                          JUnit-based tests.  --without-junit disables those
+                          tests.  Not relevant in the --without-java or
+                          --without-junit cases, and only needed for recent
+                          versions of JUnit. (Default: disabled.)
+],,with_hamcrest_core=no)
 AC_ARG_WITH(perl-home,
 [  --with-perl-home        If you have installed the Perl 5 Distribution, on your
                           system, please supply the path here.
@@ -7092,6 +7099,38 @@ location (/usr/share/java), specify its pathname via
     fi
 fi
 AC_SUBST(OOO_JUNIT_JAR)
+
+HAMCREST_CORE_JAR=
+if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcrest_core" != "no"; then
+    AC_MSG_CHECKING([for hamcrest-core])
+    if test "$with_hamcrest_core" = "yes"; then
+        if test -e /usr/share/java/hamcrest-core-1.3.jar; then
+            HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core-1.3.jar
+        else
+            if test -e /usr/share/lib/java/hamcrest-core.jar; then
+                HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest-core.jar
+            else
+                HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core.jar
+            fi
+        fi
+    else
+        HAMCREST_CORE_JAR=$with_hamcrest_core
+    fi
+    if test "$_os" = "WINNT"; then
+        HAMCREST_CORE_JAR=`cygpath -m "$HAMCREST_CORE_JAR"`
+    fi
+    export HAMCREST_CORE_JAR
+    "$JAVA_HOME/bin/jar" tf "$HAMCREST_CORE_JAR" 2>&5 | \
+        $GREP org/hamcrest/core/AllOf.class > /dev/null 2>&5
+    if test $? -eq 0; then
+    else
+        AC_MSG_ERROR([cannot find hamcrest-core jar; please install one in the
+default location (/usr/share/java), specify its
+pathname via --with-hamcrest-core=..., or disable
+it via --without-hamcrest-core])
+    fi
+fi
+AC_SUBST(HAMCREST_CORE_JAR)
 
 AC_MSG_CHECKING([which languages to be built])
 WITH_LANG="$with_lang"
