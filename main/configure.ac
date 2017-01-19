@@ -7123,6 +7123,7 @@ if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcres
     "$JAVA_HOME/bin/jar" tf "$HAMCREST_CORE_JAR" 2>&5 | \
         $GREP org/hamcrest/core/AllOf.class > /dev/null 2>&5
     if test $? -eq 0; then
+        AC_MSG_RESULT([$HAMCREST_CORE_JAR])
     else
         AC_MSG_ERROR([cannot find hamcrest-core jar; please install one in the
 default location (/usr/share/java), specify its
