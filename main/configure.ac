@@ -2021,7 +2021,12 @@ dnl The list of required Perl modules is documented here:
 dnl     http://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO#General_Build_Requirements
 dnl ===================================================================
 AC_MSG_CHECKING([for required Perl modules])
-if `$PERL -e 'use Archive::Zip; use LWP::UserAgent; use XML::Parser; use LWP::Protocol'>/dev/null 2>&1`; then
+if `$PERL -e 'use Archive::Zip;
+              use LWP::UserAgent;
+              use XML::Parser;
+              use Digest::SHA;
+              use Digest::MD5;
+              use LWP::Protocol::https;'>/dev/null 2>&1`; then
 	AC_MSG_RESULT([all modules found])
 else
     # Find out which modules are missing.
