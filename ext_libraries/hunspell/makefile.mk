@@ -39,14 +39,14 @@ all:
 
 .ELSE
 
-TARFILE_NAME=hunspell-1.3.2
-TARFILE_MD5=3121aaf3e13e5d88dfff13fb4a5f1ab8
+TARFILE_NAME=hunspell-1.3.3
+TARFILE_MD5=4967da60b23413604c9e563beacc63b4
 
 PATCH_FILES=					    \
     hunspell-cxx11-literal.patch    \
     hunspell-solaris.patch		    \
     hunspell-bash.patch             \
-    hunspell-1.3.2-overflow.patch
+    hunspell-1.3.3-overflow.patch
 
 .IF "$(GUI)"=="UNX"
 
@@ -76,8 +76,6 @@ OUT2LIB=$(BUILD_DIR)$/src$/hunspell$/.libs$/libhunspell-1.3.a
 
 .IF "$(GUI)"=="WNT"
 .IF "$(COM)"=="GCC"
-PATCH_FILES=\
-    hunspell-mingw.patch
 
 CONFIGURE_ACTION=configure
 CONFIGURE_FLAGS= --disable-shared --with-pic
