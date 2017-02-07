@@ -1698,12 +1698,19 @@ if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
    AC_PROG_CC
 fi
 
-if test "$_os" = "FreeBSD"; then
-    FBSD_GCC_RPATH=
+dnl Clang detection on supported platforms
+if test "$_os" = "Linux" -o "$_os" = "FreeBSD"; then
     if $CC --version 2>&1 | $GREP clang > /dev/null ; then
         COM_IS=CLANG
     else
         COM_IS=GCC
+    fi
+    AC_SUBST(COM_IS)
+fi
+
+if test "$_os" = "FreeBSD"; then
+    FBSD_GCC_RPATH=
+    if "$COM_IS" = "GCC"; then
         rpath=`$CC --print-file-name libstdc++.so`
         rpath=`realpath $rpath`
         rpath=`dirname $rpath`
@@ -1711,7 +1718,6 @@ if test "$_os" = "FreeBSD"; then
             FBSD_GCC_RPATH="-Wl,-rpath=$rpath"
 	fi
     fi
-    AC_SUBST(COM_IS)
     AC_SUBST(FBSD_GCC_RPATH)
 fi
 

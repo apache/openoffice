@@ -1,0 +1,11 @@
+--- misc/build/CoinMP-1.7.6/Cbc/src/Cbc_C_Interface.cpp	2013-04-10 18:58:16.000000000 +0200
++++ misc/build/CoinMP-1.7.6/Cbc/src/Cbc_C_Interface.cpp	2017-02-06 20:39:00.267698261 +0200
+@@ -376,7 +376,7 @@
+ 
+     char * result = model->information_;
+ 
+-    if (VERBOSE > 0) printf("%s return %p\n", prefix, result);
++    if (VERBOSE > 0) printf("%s return %p\n", prefix, static_cast<void*>(result));
+     return result;
+ }
+ /* Copy in integer information */
