@@ -377,6 +377,7 @@ typedef unsigned short LanguageType;
 #define LANGUAGE_YIDDISH                    0x043D
 #define LANGUAGE_YORUBA                     0x046A
 #define LANGUAGE_ZULU                       0x0435
+#define LANGUAGESpanish_Puerto Rico         0x500A            
 
 /* Not real, but used for legacy. */
 #define LANGUAGE_USER1                      0x0201
