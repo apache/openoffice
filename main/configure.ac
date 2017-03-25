@@ -130,9 +130,9 @@ AC_ARG_WITH(epm,
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            http://epm.sourcearchive.com/downloads/3.7-1/epm_3.7.orig.tar.gz
+                            https://sourceforge.net/projects/oooextras.mirror/files/epm-3.7.tar.gz
                           or
-                            http://www.msweet.org/files/project2/epm-3.7-source.tar.gz
+                            http://epm.sourcearchive.com/downloads/3.7-1/epm_3.7.orig.tar.gz
                           Version 3.7 or later is required. Note that epm is under GPL license.
 ],[  EPM_URL="$withval"
 ])
