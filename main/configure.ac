@@ -762,7 +762,7 @@ AC_ARG_WITH(mozilla-build,
                           Usage: --with-mozilla-build=<absolute path to mozilla build tools>
 
 						  At the moment of this writing, an installer for the mozilla build tools
-						  can be obtained from http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32.
+						  can be obtained from http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/.
 ],[MOZILLABUILD=$withval],)
 AC_ARG_WITH(local-solenv,
 [  --with-local-solenv     If you have solenv in a location other than ./solenv,
@@ -3395,7 +3395,7 @@ if test "$enable_epm" = "yes"; then
     WINNT)
         PKGFORMAT=msi
         ;;
-	# we never should get here since we check the arciecture/os at the beginning,
+	# we never should get here since we check the architecture/os at the beginning,
 	# but go sure...
 	*)
 		AC_MSG_ERROR([unknown system])
@@ -4622,7 +4622,7 @@ Mozilla build tooling not found!
   It is required for NSS that is needed for AOO's security facilities.
   Either disable NSS using the option --disable-nss-module
   or use the --with-mozilla-build option after installing the tool obtained
-  from http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32])
+  from http://ftp.mozilla.org/pub/mozilla.org/mozilla/libraries/win32/])
       else
          if test \( "$WITH_MINGWIN" = "yes" \) ; then
             if test ! -d "$MOZILLABUILD" ; then
