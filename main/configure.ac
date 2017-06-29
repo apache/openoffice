@@ -273,8 +273,8 @@ AC_ARG_ENABLE(cl-standard,
 ],,)
 AC_ARG_ENABLE(win-x64-shellext,
 [  --enable-win-x64-shellext    Enable the build/usage of Windows 64bit shell extensions.
-                          These extension are used for the system integration on a 
-			  Windows 64bit systems. For example supporting the search 
+                          These extensions are used for the system integration on
+			  Windows 64bit systems. For example supporting the search
 			  in ODF files with the standard Windows search feature.
 ],,)
 AC_ARG_ENABLE(gtk,
