@@ -188,15 +188,14 @@ staruno::Any SAL_CALL OEnumerationByIndex::nextElement(  )
     ::osl::ResettableMutexGuard aLock(m_aLock);
 
 	staruno::Any aRes;
-	if (m_xAccess.is())
-	{
-		aRes = m_xAccess->getByIndex(m_nPos++);
-		if (m_nPos >= m_xAccess->getCount())
-        {
-            impl_stopDisposeListening();
-            m_xAccess.clear();
-        }
-	}
+    if (m_xAccess.is() && m_nPos < m_xAccess->getCount())
+        aRes = m_xAccess->getByIndex(m_nPos++);
+
+    if (m_xAccess.is() && m_nPos >= m_xAccess->getCount())
+    {
+        impl_stopDisposeListening();
+        m_xAccess.clear();
+    }
 
 	if (!aRes.hasValue())		// es gibt kein Element mehr
 		throw starcontainer::NoSuchElementException();
