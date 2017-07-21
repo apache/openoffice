@@ -332,9 +332,6 @@ AC_ARG_ENABLE(kde,
 [  --enable-kde            Determines whether to use Qt/KDE vclplug on platforms
                           where Qt and KDE are available.
 ],,)
-AC_ARG_ENABLE(kdeab,
-[  --disable-kdeab         Disable the KDE address book support
-],,if test "$enable_kde" = "yes"; then enable_kdeab=yes; fi)
 AC_ARG_ENABLE(kde4,
 [  --enable-kde4            Determines whether to use Qt4/KDE4 vclplug on platforms
                           where Qt4 and KDE4 are available. May be used with --enable-kde 
@@ -6586,33 +6583,6 @@ fi
 AC_SUBST(ENABLE_EVOAB2)
 AC_SUBST(GOBJECT_CFLAGS)
 AC_SUBST(GOBJECT_LIBS) 
-
-dnl ===================================================================
-dnl Test whether to include KDE AB support
-dnl ===================================================================
-AC_MSG_CHECKING([whether to enable KDE address book support])
-if test "$enable_kdeab" = "yes" && test "$enable_kde" = "yes"; then
-   AC_MSG_RESULT([yes])
-   AC_LANG_PUSH([C++])
-   save_CXXFLAGS=$CXXFLAGS
-   CXXFLAGS="$CXXFLAGS $KDE_CFLAGS"
-   AC_MSG_CHECKING([whether KDE is between 3.2 and 3.6])
-       AC_TRY_RUN([
-#include <kdeversion.h>
-
-int main(int argc, char **argv) {
-       if (KDE_VERSION_MAJOR == 3 && 2 <= KDE_VERSION_MINOR && KDE_VERSION_MINOR <= 6) return 0;
-       else return 1;
-}
-       ], [AC_MSG_RESULT([yes])], [AC_MSG_ERROR([KDE version too old or too recent, please use another version of KDE or disable KDE address book support])])
-   CXXFLAGS=$save_CXXFLAGS
-   AC_LANG_POP([C++])
-   ENABLE_KAB=TRUE
-else
-   AC_MSG_RESULT([no])
-   ENABLE_KAB=
-fi
-AC_SUBST(ENABLE_KAB)
 
 dnl ===================================================================
 dnl Test whether to include MathMLDTD
