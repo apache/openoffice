@@ -383,6 +383,8 @@
                 </prop>
                 <prop oor:name="ooSetupFactoryUIName">
                     <value>Base: Report Design</value>
+		    <value xml:lang="en-US">Base: Report Design</value>
+		    <value xml:lang="fr-FR">Base : Conception de rapport</value>
                 </prop>
                 <prop oor:name="ooSetupFactoryWindowStateConfigRef">
                     <value>WriterReportWindowState</value>
@@ -494,6 +496,8 @@
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
 					<value>Base: Relation Design</value>
+					<value xml:lang="en-US">Base: Relation Design</value>
+					<value xml:lang="fr-FR">Base : Editeur Relationnel</value>
                 </prop>
 			</node>
             <node oor:name="com.sun.star.sdb.QueryDesign" oor:op="replace" install:module="base">
@@ -519,6 +523,8 @@
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
                     <value>Base: Query Design</value>
+		    <value xml:lang="en-US">Base: Query Design</value>
+		    <value xml:lang="fr-FR">Base : Editeur de requête</value>
                 </prop>
 			</node>
 			<node oor:name="com.sun.star.sdb.ViewDesign" oor:op="replace" install:module="base">
@@ -544,6 +550,8 @@
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
                     <value>Base: View Design</value>
+		    <value xml:lang="en-US">Base: View Design</value>
+		    <value xml:lang="fr-FR">Base : Editeur de vue</value>
                 </prop>
 			</node>
       <node oor:name="com.sun.star.sdb.TableDesign" oor:op="replace" install:module="base">
@@ -569,6 +577,8 @@
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
                     <value>Base: Table Design</value>
+		    <value xml:lang="en-US">Base: Table Design</value>
+		    <value xml:lang="fr-FR">Base : Editeur de table</value>
                 </prop>
 			</node>
             <node oor:name="com.sun.star.sdb.DataSourceBrowser" oor:op="replace" install:module="base">
@@ -619,6 +629,8 @@
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
 					<value>Base: Table Data View</value>
+					<value xml:lang="en-US">Base: Table Data View</value>
+		    			<value xml:lang="fr-FR">Base : Contenu de table</value>
                 </prop>
 			</node>
 			<node oor:name="com.sun.star.frame.Bibliography" oor:op="replace">
