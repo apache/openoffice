@@ -6495,6 +6495,12 @@ WW8Fonts::WW8Fonts( SvStream& rSt, WW8Fib& rFib )
 
                 p->sFontname = String ( (((const sal_Char*)pVer2) + 1 + 2), eEnc);
                 pVer2 = (WW8_FFN_BASE*)( ((sal_uInt8*)pVer2) + pVer2->cbFfnM1 + 1 );
+
+				// Check that there is room for at least one more WW8_FFN_BASE before
+				// the end of the buffer.
+				if ((sal_uInt8*)pVer2 > pA + nFFn - sizeof(WW8_FFN_BASE)) {
+					throw std::out_of_range("WW8 beyond end of buffer");
+				}
             }
 	}
         else if( eVersion < ww::eWW8 )
@@ -6540,6 +6546,12 @@ WW8Fonts::WW8Fonts( SvStream& rSt, WW8Fib& rFib )
                     }
                 }
                 pVer6 = (WW8_FFN_Ver6*)( ((sal_uInt8*)pVer6) + pVer6->cbFfnM1 + 1 );
+
+				// Check that there is room for at least one more WW8_FFN_Ver6 before
+				// the end of the buffer.
+				if ((sal_uInt8*)pVer6 > pA + nFFn - sizeof(WW8_FFN_Ver6)) {
+					throw std::out_of_range("WW8 beyond end of buffer");
+				}
             }
         }
         else
@@ -6585,6 +6597,12 @@ WW8Fonts::WW8Fonts( SvStream& rSt, WW8Fib& rFib )
 
                 // Zeiger auf Ursprungsarray einen Font nach hinten setzen
                 pVer8 = (WW8_FFN_Ver8*)( ((sal_uInt8*)pVer8) + pVer8->cbFfnM1 + 1 );
+
+				// Check that there is room for at least one more WW8_FFN_Ver8 before
+				// the end of the buffer.
+				if ((sal_uInt8*)pVer8 > pA + nFFn - sizeof(WW8_FFN_Ver8)) {
+					throw std::out_of_range("WW8 beyond end of buffer");
+				}
             }
         }
     }
