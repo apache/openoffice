@@ -309,27 +309,27 @@ void LinkManager::UpdateAllLinks(
 		if( USHRT_MAX == nFndPos )
 			continue;					// war noch nicht vorhanden!
 
-		// Graphic-Links noch nicht updaten
+		// do not update graphic links yet
 		if( !pLink->IsVisible() ||
 			( !bUpdateGrfLinks && OBJECT_CLIENT_GRF == pLink->GetObjType() ))
 			continue;
 
 		if( bAskUpdate )
 		{
-            int nRet = QueryBox( pParentWin, WB_YES_NO | WB_DEF_YES, SfxResId( STR_QUERY_UPDATE_LINKS ) ).Execute();
-			if( RET_YES != nRet )
+            int nRet = QueryBox( pParentWin, WB_YES_NO | WB_DEF_NO, SfxResId( STR_QUERY_UPDATE_LINKS ) ).Execute();
+            SfxObjectShell* pShell = pLink->GetLinkManager()->GetPersist();
+
+            if(pShell)
             {
-                SfxObjectShell* pShell = pLink->GetLinkManager()->GetPersist();
-
-                if(pShell)
-                {
-                    comphelper::EmbeddedObjectContainer& rEmbeddedObjectContainer = pShell->getEmbeddedObjectContainer();
-                    rEmbeddedObjectContainer.setUserAllowsLinkUpdate(false);
-                }
-
-				return ;		// es soll nichts geupdatet werden
+                comphelper::EmbeddedObjectContainer& rEmbeddedObjectContainer = pShell->getEmbeddedObjectContainer();
+                rEmbeddedObjectContainer.setUserAllowsLinkUpdate(RET_YES == nRet);
             }
-			bAskUpdate = sal_False;		// einmal reicht
+
+		    if (RET_YES != nRet)
+			{
+				return;		// nothing should be updated
+            }
+			bAskUpdate = sal_False;		// one time is OK
 		}
 
 		pLink->Update();
