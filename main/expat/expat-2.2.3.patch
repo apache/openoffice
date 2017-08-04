@@ -87,7 +87,7 @@
 +.INCLUDE :  tg_wntx64.mk
 diff -ur misc/expat-2.2.3/lib/xmlparse.c misc/build/expat-2.2.3/lib/xmlparse.c
 --- misc/expat-2.2.3/lib/xmlparse.c	2017-08-02 09:40:48.000000000 -0400
-+++ misc/build/expat-2.2.3/lib/xmlparse.c	2017-08-04 14:56:58.000000000 -0400
++++ misc/build/expat-2.2.3/lib/xmlparse.c	2017-08-04 18:33:34.000000000 -0400
 @@ -1,3 +1,145 @@
 +/***************************************************************************
 + *                                  _   _ ____  _
@@ -234,6 +234,51 @@ diff -ur misc/expat-2.2.3/lib/xmlparse.c misc/build/expat-2.2.3/lib/xmlparse.c
  /* Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
     See the file COPYING for copying permission.
  
+@@ -314,7 +456,7 @@
+   int nDefaultAtts;
+   int allocDefaultAtts;
+   DEFAULT_ATTRIBUTE *defaultAtts;
+-} ELEMENT_TYPE;
++} XMLPARSE_ELEMENT_TYPE;
+ 
+ typedef struct {
+   HASH_TABLE generalEntities;
+@@ -414,7 +556,7 @@
+ addBinding(XML_Parser parser, PREFIX *prefix, const ATTRIBUTE_ID *attId,
+            const XML_Char *uri, BINDING **bindingsPtr);
+ static int
+-defineAttribute(ELEMENT_TYPE *type, ATTRIBUTE_ID *, XML_Bool isCdata,
++defineAttribute(XMLPARSE_ELEMENT_TYPE *type, ATTRIBUTE_ID *, XML_Bool isCdata,
+                 XML_Bool isId, const XML_Char *dfltValue, XML_Parser parser);
+ static enum XML_Error
+ storeAttributeValue(XML_Parser parser, const ENCODING *, XML_Bool isCdata,
+@@ -426,7 +568,7 @@
+ getAttributeId(XML_Parser parser, const ENCODING *enc, const char *start,
+                const char *end);
+ static int
+-setElementTypePrefix(XML_Parser parser, ELEMENT_TYPE *);
++setElementTypePrefix(XML_Parser parser, XMLPARSE_ELEMENT_TYPE *);
+ static enum XML_Error
+ storeEntityValue(XML_Parser parser, const ENCODING *enc, const char *start,
+                  const char *end);
+@@ -487,7 +629,7 @@
+ 
+ static int FASTCALL nextScaffoldPart(XML_Parser parser);
+ static XML_Content * build_model(XML_Parser parser);
+-static ELEMENT_TYPE *
++static XMLPARSE_ELEMENT_TYPE *
+ getElementType(XML_Parser parser, const ENCODING *enc,
+                const char *ptr, const char *end);
+ 
+@@ -585,7 +727,7 @@
+   const XML_Char *m_declAttributeType;
+   const XML_Char *m_declNotationName;
+   const XML_Char *m_declNotationPublicId;
+-  ELEMENT_TYPE *m_declElementType;
++  XMLPARSE_ELEMENT_TYPE *m_declElementType;
+   ATTRIBUTE_ID *m_declAttributeId;
+   XML_Bool m_declAttributeIsCdata;
+   XML_Bool m_declAttributeIsId;
 @@ -843,7 +985,6 @@
  #ifdef _WIN32
  
@@ -242,3 +287,127 @@ diff -ur misc/expat-2.2.3/lib/xmlparse.c misc/build/expat-2.2.3/lib/xmlparse.c
  
  /* Obtain entropy on Windows XP / Windows Server 2003 and later.
   * Hint on RtlGenRandom and the following article from libsodium.
+@@ -1285,7 +1426,7 @@
+   XML_AttlistDeclHandler oldAttlistDeclHandler;
+   XML_EntityDeclHandler oldEntityDeclHandler;
+   XML_XmlDeclHandler oldXmlDeclHandler;
+-  ELEMENT_TYPE * oldDeclElementType;
++  XMLPARSE_ELEMENT_TYPE * oldDeclElementType;
+ 
+   void *oldUserData;
+   void *oldHandlerArg;
+@@ -3181,7 +3322,7 @@
+           BINDING **bindingsPtr)
+ {
+   DTD * const dtd = _dtd;  /* save one level of indirection */
+-  ELEMENT_TYPE *elementType;
++  XMLPARSE_ELEMENT_TYPE *elementType;
+   int nDefaultAtts;
+   const XML_Char **appAtts;   /* the attribute list for the application */
+   int attIndex = 0;
+@@ -3194,13 +3335,13 @@
+   const XML_Char *localPart;
+ 
+   /* lookup the element type name */
+-  elementType = (ELEMENT_TYPE *)lookup(parser, &dtd->elementTypes, tagNamePtr->str,0);
++  elementType = (XMLPARSE_ELEMENT_TYPE *)lookup(parser, &dtd->elementTypes, tagNamePtr->str,0);
+   if (!elementType) {
+     const XML_Char *name = poolCopyString(&dtd->pool, tagNamePtr->str);
+     if (!name)
+       return XML_ERROR_NO_MEMORY;
+-    elementType = (ELEMENT_TYPE *)lookup(parser, &dtd->elementTypes, name,
+-                                         sizeof(ELEMENT_TYPE));
++    elementType = (XMLPARSE_ELEMENT_TYPE *)lookup(parser, &dtd->elementTypes, name,
++                                         sizeof(XMLPARSE_ELEMENT_TYPE));
+     if (!elementType)
+       return XML_ERROR_NO_MEMORY;
+     if (ns && !setElementTypePrefix(parser, elementType))
+@@ -5202,7 +5343,7 @@
+       quant = XML_CQUANT_PLUS;
+     elementContent:
+       if (dtd->in_eldecl) {
+-        ELEMENT_TYPE *el;
++        XMLPARSE_ELEMENT_TYPE *el;
+         const XML_Char *name;
+         int nameLen;
+         const char *nxt = (quant == XML_CQUANT_NONE
+@@ -6010,7 +6151,7 @@
+ 
+ 
+ static int
+-defineAttribute(ELEMENT_TYPE *type, ATTRIBUTE_ID *attId, XML_Bool isCdata,
++defineAttribute(XMLPARSE_ELEMENT_TYPE *type, ATTRIBUTE_ID *attId, XML_Bool isCdata,
+                 XML_Bool isId, const XML_Char *value, XML_Parser parser)
+ {
+   DEFAULT_ATTRIBUTE *att;
+@@ -6054,7 +6195,7 @@
+ }
+ 
+ static int
+-setElementTypePrefix(XML_Parser parser, ELEMENT_TYPE *elementType)
++setElementTypePrefix(XML_Parser parser, XMLPARSE_ELEMENT_TYPE *elementType)
+ {
+   DTD * const dtd = _dtd;  /* save one level of indirection */
+   const XML_Char *name;
+@@ -6367,7 +6508,7 @@
+   HASH_TABLE_ITER iter;
+   hashTableIterInit(&iter, &(p->elementTypes));
+   for (;;) {
+-    ELEMENT_TYPE *e = (ELEMENT_TYPE *)hashTableIterNext(&iter);
++    XMLPARSE_ELEMENT_TYPE *e = (XMLPARSE_ELEMENT_TYPE *)hashTableIterNext(&iter);
+     if (!e)
+       break;
+     if (e->allocDefaultAtts != 0)
+@@ -6409,7 +6550,7 @@
+   HASH_TABLE_ITER iter;
+   hashTableIterInit(&iter, &(p->elementTypes));
+   for (;;) {
+-    ELEMENT_TYPE *e = (ELEMENT_TYPE *)hashTableIterNext(&iter);
++    XMLPARSE_ELEMENT_TYPE *e = (XMLPARSE_ELEMENT_TYPE *)hashTableIterNext(&iter);
+     if (!e)
+       break;
+     if (e->allocDefaultAtts != 0)
+@@ -6493,16 +6634,16 @@
+ 
+   for (;;) {
+     int i;
+-    ELEMENT_TYPE *newE;
++    XMLPARSE_ELEMENT_TYPE *newE;
+     const XML_Char *name;
+-    const ELEMENT_TYPE *oldE = (ELEMENT_TYPE *)hashTableIterNext(&iter);
++    const XMLPARSE_ELEMENT_TYPE *oldE = (XMLPARSE_ELEMENT_TYPE *)hashTableIterNext(&iter);
+     if (!oldE)
+       break;
+     name = poolCopyString(&(newDtd->pool), oldE->name);
+     if (!name)
+       return 0;
+-    newE = (ELEMENT_TYPE *)lookup(oldParser, &(newDtd->elementTypes), name,
+-                                  sizeof(ELEMENT_TYPE));
++    newE = (XMLPARSE_ELEMENT_TYPE *)lookup(oldParser, &(newDtd->elementTypes), name,
++                                  sizeof(XMLPARSE_ELEMENT_TYPE));
+     if (!newE)
+       return 0;
+     if (oldE->nDefaultAtts) {
+@@ -7166,7 +7307,7 @@
+   return ret;
+ }
+ 
+-static ELEMENT_TYPE *
++static XMLPARSE_ELEMENT_TYPE *
+ getElementType(XML_Parser parser,
+                const ENCODING *enc,
+                const char *ptr,
+@@ -7174,11 +7315,11 @@
+ {
+   DTD * const dtd = _dtd;  /* save one level of indirection */
+   const XML_Char *name = poolStoreString(&dtd->pool, enc, ptr, end);
+-  ELEMENT_TYPE *ret;
++  XMLPARSE_ELEMENT_TYPE *ret;
+ 
+   if (!name)
+     return NULL;
+-  ret = (ELEMENT_TYPE *) lookup(parser, &dtd->elementTypes, name, sizeof(ELEMENT_TYPE));
++  ret = (XMLPARSE_ELEMENT_TYPE *) lookup(parser, &dtd->elementTypes, name, sizeof(XMLPARSE_ELEMENT_TYPE));
+   if (!ret)
+     return NULL;
+   if (ret->name != name)
