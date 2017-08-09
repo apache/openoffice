@@ -6282,6 +6282,21 @@ if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
         AC_CHECK_FILE($COMMONS_LANG_JAR, [],
              [AC_MSG_ERROR(commons-lang.jar not found.)], [])
       fi
+      AC_MSG_CHECKING([whether commons-lang is version 3.x])
+      export COMMONS_LANG_JAR
+      if $PERL -e 'use Archive::Zip;
+          my $file = "$ENV{'COMMONS_LANG_JAR'}";
+          my $zip = Archive::Zip->new( $file );
+          my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+          if ( $mf =~ m/Specification-Version: 3.*/ ) {
+              exit 0;
+          } else {
+              exit 1;
+          }'; then
+          AC_MSG_RESULT([yes])
+      else
+          AC_MSG_ERROR([no, you need Apache Commons Lang 3.x])
+      fi
 
       if test -z $COMMONS_HTTPCLIENT_JAR; then
         AC_CHECK_FILE(/usr/share/java/commons-httpclient-3.1.jar, 
