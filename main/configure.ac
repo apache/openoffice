@@ -1150,7 +1150,7 @@ case "$build_os" in
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -arch x86_64 -std=c++11"
+		   CXX="`xcrun -f clang++` -arch x86_64"
 		fi
 		;;
 	os2*)
@@ -3923,17 +3923,17 @@ dnl ===================================================================
 dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
-   sdk_target=10.7
-   AC_MSG_CHECKING([checking SDK compatiblity with OSX $sdk_target])
+   sdk_target=10.9
+   AC_MSG_CHECKING([checking SDK compatibility with OSX $sdk_target])
 
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
 
-   if test "$sdk_minor" -lt "7"; then
+   if test "$sdk_minor" -lt "9"; then
       AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|9|10|11|12)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(9|10|11|12)" | sed -e "s/.*sdk //" | tail -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
