@@ -6246,94 +6246,94 @@ AC_SUBST(LIBFONTS_JAR)
 AC_SUBST(LIBSERIALIZER_JAR)
 
 # this has to be here because both the wiki publisher and the SRB use
-# commons-logging
-if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
-  AC_MSG_CHECKING([which Apache commons-* libs to use])
-  if test "$with_system_apache_commons" = "yes"; then
-    SYSTEM_APACHE_COMMONS=YES
-    AC_MSG_RESULT([external])
-    if test "$ENABLE_MEDIAWIKI" = "YES"; then
-      if test -z $COMMONS_CODEC_JAR; then
-        AC_CHECK_FILE(/usr/share/java/commons-codec-1.9.jar, 
-          [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec-1.9.jar ],
-          [
-            AC_CHECK_FILE(/usr/share/java/commons-codec.jar, 
-              [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec.jar ],
-              [AC_MSG_ERROR(commons-codec.jar replacement not found.)]
-            )
-          ]
-        )
-      else
-        AC_CHECK_FILE($COMMONS_CODEC_JAR, [],
-             [AC_MSG_ERROR(commons-codec.jar not found.)], [])
-      fi
+# commons-logging, while the non-optional PostgreSQL connector uses
+# commons-lang.
+AC_MSG_CHECKING([which Apache commons-* libs to use])
+if test "$with_system_apache_commons" = "yes"; then
+  SYSTEM_APACHE_COMMONS=YES
+  AC_MSG_RESULT([external])
 
-      if test -z $COMMONS_LANG_JAR; then
-        AC_CHECK_FILE(/usr/share/java/commons-lang3-3.3.jar, 
-          [ COMMONS_LANG_JAR=/usr/share/java/commons-lang3-3.3.jar ],
-          [
-            AC_CHECK_FILE(/usr/share/java/commons-lang.jar, 
-              [ COMMONS_LANG_JAR=/usr/share/java/commons-lang.jar ],
-              [AC_MSG_ERROR(commons-lang.jar replacement not found.)]
-            )
-          ]
+  if test -z $COMMONS_LANG_JAR; then
+    AC_CHECK_FILE(/usr/share/java/commons-lang3-3.3.jar, 
+      [ COMMONS_LANG_JAR=/usr/share/java/commons-lang3-3.3.jar ],
+      [
+        AC_CHECK_FILE(/usr/share/java/commons-lang.jar, 
+          [ COMMONS_LANG_JAR=/usr/share/java/commons-lang.jar ],
+          [AC_MSG_ERROR(commons-lang.jar replacement not found.)]
         )
-      else
-        AC_CHECK_FILE($COMMONS_LANG_JAR, [],
-             [AC_MSG_ERROR(commons-lang.jar not found.)], [])
-      fi
-      AC_MSG_CHECKING([whether commons-lang is version 3.x])
-      export COMMONS_LANG_JAR
-      if $PERL -e 'use Archive::Zip;
-          my $file = "$ENV{'COMMONS_LANG_JAR'}";
-          my $zip = Archive::Zip->new( $file );
-          my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
-          if ( $mf =~ m/Specification-Version: 3.*/ ) {
-              exit 0;
-          } else {
-              exit 1;
-          }'; then
-          AC_MSG_RESULT([yes])
-      else
-          AC_MSG_ERROR([no, you need Apache Commons Lang 3.x])
-      fi
-
-      if test -z $COMMONS_HTTPCLIENT_JAR; then
-        AC_CHECK_FILE(/usr/share/java/commons-httpclient-3.1.jar, 
-          [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient-3.1.jar ],
-          [
-            AC_CHECK_FILE(/usr/share/java/commons-httpclient.jar, 
-              [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient.jar ],
-              [AC_MSG_ERROR(commons-httpclient.jar replacement not found.)]
-            )
-          ]
-        )
-      else
-        AC_CHECK_FILE($COMMONS_HTTPCLIENT_JAR, [],
-             [AC_MSG_ERROR(commons-httpclient.jar not found.)], [])
-      fi
-    fi
-    if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
-      if test -z $COMMONS_LOGGING_JAR; then
-        AC_CHECK_FILE(/usr/share/java/commons-logging-1.1.3.jar, 
-          [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging-1.1.3.jar ],
-          [
-            AC_CHECK_FILE(/usr/share/java/commons-logging.jar, 
-              [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging.jar ],
-              [AC_MSG_ERROR(commons-logging.jar replacement not found.)]
-            )
-          ]
-        )
-      else
-        AC_CHECK_FILE($COMMONS_LOGGING_JAR, [],
-             [AC_MSG_ERROR(commons-logging.jar not found.)], [])
-      fi
-    fi
+      ]
+    )
   else
-    AC_MSG_RESULT([internal])
-    SYSTEM_APACHE_COMMONS=NO
-    BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS TOMCAT"
+    AC_CHECK_FILE($COMMONS_LANG_JAR, [],
+         [AC_MSG_ERROR(commons-lang.jar not found.)], [])
   fi
+  AC_MSG_CHECKING([whether commons-lang is version 3.x])
+  export COMMONS_LANG_JAR
+  if $PERL -e 'use Archive::Zip;
+      my $file = "$ENV{'COMMONS_LANG_JAR'}";
+      my $zip = Archive::Zip->new( $file );
+      my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+      if ( $mf =~ m/Specification-Version: 3.*/ ) {
+          exit 0;
+      } else {
+          exit 1;
+      }'; then
+      AC_MSG_RESULT([yes])
+  else
+      AC_MSG_ERROR([no, you need Apache Commons Lang 3.x])
+  fi
+
+  if test "$ENABLE_MEDIAWIKI" = "YES"; then
+    if test -z $COMMONS_CODEC_JAR; then
+      AC_CHECK_FILE(/usr/share/java/commons-codec-1.9.jar, 
+        [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec-1.9.jar ],
+        [
+          AC_CHECK_FILE(/usr/share/java/commons-codec.jar, 
+            [ COMMONS_CODEC_JAR=/usr/share/java/commons-codec.jar ],
+            [AC_MSG_ERROR(commons-codec.jar replacement not found.)]
+          )
+        ]
+      )
+    else
+      AC_CHECK_FILE($COMMONS_CODEC_JAR, [],
+           [AC_MSG_ERROR(commons-codec.jar not found.)], [])
+    fi
+
+    if test -z $COMMONS_HTTPCLIENT_JAR; then
+      AC_CHECK_FILE(/usr/share/java/commons-httpclient-3.1.jar, 
+        [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient-3.1.jar ],
+        [
+          AC_CHECK_FILE(/usr/share/java/commons-httpclient.jar, 
+            [ COMMONS_HTTPCLIENT_JAR=/usr/share/java/commons-httpclient.jar ],
+            [AC_MSG_ERROR(commons-httpclient.jar replacement not found.)]
+          )
+        ]
+      )
+    else
+      AC_CHECK_FILE($COMMONS_HTTPCLIENT_JAR, [],
+           [AC_MSG_ERROR(commons-httpclient.jar not found.)], [])
+    fi
+  fi
+  if test "$ENABLE_MEDIAWIKI" = "YES" -o "$ENABLE_REPORTBUILDER" = "YES"; then
+    if test -z $COMMONS_LOGGING_JAR; then
+      AC_CHECK_FILE(/usr/share/java/commons-logging-1.1.3.jar, 
+        [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging-1.1.3.jar ],
+        [
+          AC_CHECK_FILE(/usr/share/java/commons-logging.jar, 
+            [ COMMONS_LOGGING_JAR=/usr/share/java/commons-logging.jar ],
+            [AC_MSG_ERROR(commons-logging.jar replacement not found.)]
+          )
+        ]
+      )
+    else
+      AC_CHECK_FILE($COMMONS_LOGGING_JAR, [],
+           [AC_MSG_ERROR(commons-logging.jar not found.)], [])
+    fi
+  fi
+else
+  AC_MSG_RESULT([internal])
+  SYSTEM_APACHE_COMMONS=NO
+  BUILD_TYPE="$BUILD_TYPE APACHE_COMMONS TOMCAT"
 fi
 AC_SUBST(SYSTEM_APACHE_COMMONS)
 AC_SUBST(COMMONS_CODEC_JAR)
