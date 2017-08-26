@@ -1,0 +1,14 @@
+  name: OpenOffice Mirror
+  version: 'AOO413'
+  summary: OpenOffice mirror unofficial snap
+  description: |
+    This is a free (unofficial) fork of OpenOffice, in the form of a snap.
+
+  grade: devel
+  confinement: devmode
+
+  parts:
+    my-part:
+      # See 'snapcraft plugins'
+      plugin: nil
+  
