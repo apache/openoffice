@@ -1,0 +1,14 @@
+
+  name: openoffice
+  version: 'AOO413'
+  summary: OpenOffice (unofficial) mirror snap
+  description: This is the (unofficial) OpenOffice mirror snap.
+
+  grade: devel 
+  confinement: devmode 
+
+  parts:
+    my-part:
+      # See 'snapcraft plugins'
+      plugin: nil
+  
