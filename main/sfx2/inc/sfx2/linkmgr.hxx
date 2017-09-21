@@ -55,6 +55,13 @@ class SFX2_DLLPUBLIC LinkManager
 	SvLinkSources aServerTbl;
 
     SfxObjectShell *pPersist; // LinkMgr muss vor SfxObjectShell freigegeben werden
+
+	sal_Bool mAutoAskUpdateAllLinks;
+	sal_Bool mUpdateAsked;
+	sal_Bool mAllowUpdate;
+
+	sal_Bool GetUserAllowsLinkUpdate(Window *pParent);
+	void SetUserAllowsLinkUpdate(SvBaseLink *pLink, sal_Bool allows);
 protected:
 	sal_Bool 		InsertLink( SvBaseLink* pLink, sal_uInt16 nObjType, sal_uInt16 nUpdateType,
 							const String* pName = 0 );
@@ -104,6 +111,10 @@ public:
 									String* pFilter = 0 ) const;
 
     SvLinkSourceRef CreateObj( SvBaseLink* );
+
+	
+	// Automatically ask user about update all links, on first insert
+	void SetAutoAskUpdateAllLinks();
 
 	void 		UpdateAllLinks( sal_Bool bAskUpdate = sal_True,
 								sal_Bool bCallErrHdl = sal_True,
