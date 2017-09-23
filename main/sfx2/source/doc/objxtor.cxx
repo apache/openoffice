@@ -205,6 +205,7 @@ void SAL_CALL SfxModelListener_Impl::disposing( const com::sun::star::lang::Even
 
     if ( !mpDoc->Get_Impl()->bClosing )
 		// GCC stuerzt ab, wenn schon im dtor, also vorher Flag abfragen
+    	// check flag before entering dtor in order to avoid crash of GCC
         mpDoc->DoClose();
 }
 
@@ -315,30 +316,27 @@ SfxObjectShell::SfxObjectShell( const sal_uInt64 i_nCreationFlags )
 
 SfxObjectShell::SfxObjectShell
 (
-	SfxObjectCreateMode	eMode	/*	Zweck, zu dem die SfxObjectShell
-									erzeugt wird:
+	SfxObjectCreateMode	eMode	/*	purpose to generate SfxObjectShel:
 
 									SFX_CREATE_MODE_EMBEDDED (default)
-										als SO-Server aus einem anderen
-										Dokument heraus
+										as SO-Server from a different document
 
 									SFX_CREATE_MODE_STANDARD,
-										als normales, selbst"aendig ge"offnetes
-										Dokument
+										as normal, self opening document
 
 									SFX_CREATE_MODE_PREVIEW
-										um ein Preview durchzuf"uhren,
-										ggf. werden weniger Daten ben"otigt
+										in order to create a preview, possible
+										less data is needed
 
 									SFX_CREATE_MODE_ORGANIZER
-										um im Organizer dargestellt zu
-										werden, hier werden keine Inhalte
-										ben"otigt */
+									    as a representation in an Organiser
+									    no data needed
+							   */
 )
 
 /*	[Description]
 
-	Konstruktor der Klasse SfxObjectShell.
+	class constructor SfxObjectShell.
 */
 
 :	pImp( new SfxObjectShell_Impl( *this ) ),
@@ -361,9 +359,8 @@ SfxObjectShell::~SfxObjectShell()
 	if ( IsEnableSetModified() )
 		EnableSetModified( sal_False );
 
-	// Niemals GetInPlaceObject() aufrufen, der Zugriff auf den
-	// Ableitungszweig SfxInternObject ist wegen eines Compiler Bugs nicht
-	// erlaubt
+	// do not call GetInPlaceObject(). Access to the inheritage path of SfxInternObject
+	// is not allowed because of a bug in the compiler
 	SfxObjectShell::Close();
     pImp->pBaseModel.set( NULL );
 
@@ -435,7 +432,7 @@ void SfxObjectShell::ViewAssigned()
 
 /*	[Description]
 
-	Diese Methode wird gerufen, wenn eine View zugewiesen wird.
+	This module is called, when a view is assigned
 */
 
 {
@@ -450,7 +447,7 @@ sal_Bool SfxObjectShell::Close()
     SfxObjectShellRef aRef(this);
 	if ( !pImp->bClosing )
 	{
-		// falls noch ein Progress l"auft, nicht schlie\sen
+		// if a process is still running -> dont close
 		if ( !pImp->bDisposing && GetProgress() )
 			return sal_False;
 
@@ -471,7 +468,7 @@ sal_Bool SfxObjectShell::Close()
 
 		if ( pImp->bClosing )
 		{
-			// aus Document-Liste austragen
+			// remove from Document-List
 			SfxApplication *pSfxApp = SFX_APP();
 			SfxObjectShellArr_Impl &rDocs = pSfxApp->GetObjectShells_Impl();
 			const SfxObjectShell *pThis = this;
@@ -610,20 +607,20 @@ sal_uInt16 SfxObjectShell::PrepareClose
 		return sal_True;
 	}
 
-	// ggf. nachfragen, ob gespeichert werden soll
-		// nur fuer in sichtbaren Fenstern dargestellte Dokumente fragen
+	// if applicable ask if save should be executed
+	// ask only for visible documents
 	SfxViewFrame *pFrame = SfxObjectShell::Current() == this
 		? SfxViewFrame::Current() : SfxViewFrame::GetFirst( this );
 
 	sal_Bool bClose = sal_False;
 	if ( bUI && IsModified() && pFrame )
 	{
-		// minimierte restoren
+		//restore minimized
         SfxFrame& rTop = pFrame->GetTopFrame();
         SfxViewFrame::SetViewFrame( rTop.GetCurrentViewFrame() );
         pFrame->GetFrame().Appear();
 
-		// fragen, ob gespeichert werden soll
+		// ask for save
 		short nRet = RET_YES;
         //TODO/CLEANUP
         //do we still need UI=2 ?
@@ -644,7 +641,7 @@ sal_uInt16 SfxObjectShell::PrepareClose
 
 		if ( RET_YES == nRet )
 		{
-			// per Dispatcher speichern
+			// save by Dispatcher
 			const SfxPoolItem *pPoolItem;
 			if ( IsSaveVersionOnClose() )
 			{
@@ -674,7 +671,7 @@ sal_uInt16 SfxObjectShell::PrepareClose
 		}
 		else
 		{
-			// Bei Nein nicht noch Informationlost
+			// At No selection don't loose information
 			bClose = sal_True;
 		}
 	}
@@ -825,13 +822,13 @@ void SfxObjectShell::InitBasicManager_Impl()
 
 	[Note]
 
-	Diese Methode mu"s aus den "Uberladungen von <SvPersist::Load()> (mit
-	dem pStor aus dem Parameter von Load()) sowie aus der "Uberladung
-	von <SvPersist::InitNew()> (mit pStor = 0) gerufen werden.
+    This method must be called with overloaded
+        <SvPersist::Load()>    (with pStor from Parameter from Load())
+    and <SvPersist::InitNew()> (with pStor = 0)
 */
 
 {
-    /*  #163556# (DR) - Handling of recursive calls while creating the Bacic
+    /*  #163556# (DR) - Handling of recursive calls while creating the Bacic (shouldn't that be Basic?)
         manager.
 
         It is possible that (while creating the Basic manager) the code that

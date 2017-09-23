@@ -41,7 +41,7 @@ class ScAttrArray;
 class ScAttrIterator;
 class ScRange;
 
-class ScDocumentIterator				// alle nichtleeren Zellen durchgehen
+class ScDocumentIterator				// run through all non empty cells
 {
 private:
 	ScDocument*				pDoc;
@@ -75,13 +75,13 @@ public:
 	void					GetPos( SCCOL& rCol, SCROW& rRow, SCTAB& rTab );
 };
 
-class ScValueIterator            // alle Zahlenwerte in einem Bereich durchgehen
+class ScValueIterator            // run through all numbers in one area
 {
 private:
 	double			fNextValue;
 	ScDocument*		pDoc;
 	const ScAttrArray*	pAttrArray;
-	sal_uLong			nNumFormat;		// fuer CalcAsShown
+	sal_uLong			nNumFormat;		// for CalcAsShown
 	sal_uLong			nNumFmtIndex;
 	SCCOL			nStartCol;
 	SCROW			nStartRow;
@@ -214,9 +214,9 @@ public:
 
 // ============================================================================
 
-class ScCellIterator            // alle Zellen in einem Bereich durchgehen
-{								// bei SubTotal aber keine ausgeblendeten und
-private:						// SubTotalZeilen
+class ScCellIterator            // run through all cell in one Area
+{								// at SubTotal, skip hidden and
+private:						// SubTotal line
 	ScDocument*		pDoc;
 	SCCOL			nStartCol;
 	SCROW			nStartRow;
@@ -246,8 +246,8 @@ public:
     ScAddress       GetPos() const { return ScAddress( nCol, nRow, nTab ); }
 };
 
-class ScQueryCellIterator           // alle nichtleeren Zellen in einem Bereich
-{									// durchgehen
+class ScQueryCellIterator           // run through all not empty cells in an area
+{
     enum StopOnMismatchBits
     {
         nStopOnMismatchDisabled = 0x00,
@@ -295,15 +295,15 @@ private:
 public:
 					ScQueryCellIterator(ScDocument* pDocument, SCTAB nTable,
 										const ScQueryParam& aParam, sal_Bool bMod = sal_True);
-										// fuer bMod = sal_False muss der QueryParam
-										// weiter aufgefuellt sein (bIsString)
+										// for bMod = sal_False has to be QueryParam be filled
+										// (bIsString)
 	ScBaseCell*		GetFirst();
 	ScBaseCell*		GetNext();
 	SCCOL           GetCol() { return nCol; }
 	SCROW           GetRow() { return nRow; }
 
-					// setzt alle Entry.nField einen weiter, wenn Spalte
-					// wechselt, fuer ScInterpreter ScHLookup()
+					// move Entry.nField by one, if row
+					// changes, for ScInterpreter ScHLookup()
 	void			SetAdvanceQueryParamEntryField( sal_Bool bVal )
 						{ bAdvanceQuery = bVal; }
 	void			AdvanceQueryParamEntryField();
@@ -372,7 +372,7 @@ public:
                         sal_Bool bIgnoreMismatchOnLeadingStrings = sal_True );
 };
 
-class ScDocAttrIterator				// alle Attribut-Bereiche
+class ScDocAttrIterator				// all Attribut-Areas
 {
 private:
 	ScDocument*		pDoc;
@@ -391,7 +391,7 @@ public:
 	const ScPatternAttr*	GetNext( SCCOL& rCol, SCROW& rRow1, SCROW& rRow2 );
 };
 
-class ScAttrRectIterator			// alle Attribut-Bereiche, auch Bereiche ueber mehrere Spalten
+class ScAttrRectIterator			// all Attribute-Areas, including Areas containing multiple rows
 {
 private:
 	ScDocument*		pDoc;
@@ -412,8 +412,8 @@ public:
 	const ScPatternAttr*	GetNext( SCCOL& rCol1, SCCOL& rCol2, SCROW& rRow1, SCROW& rRow2 );
 };
 
-class ScHorizontalCellIterator		// alle nichtleeren Zellen in einem Bereich
-{									// zeilenweise durchgehen
+class ScHorizontalCellIterator		// run through all not empty cells, line by line
+{
 private:
 	ScDocument*		pDoc;
 	SCTAB			nTab;
@@ -476,7 +476,7 @@ public:
 
 
 //
-//	gibt alle Bereiche mit nicht-Default-Formatierung zurueck (horizontal)
+//	returns all areas that do not have a Default-Formating (horizontal)
 //
 
 class ScHorizontalAttrIterator
@@ -505,7 +505,7 @@ public:
 };
 
 //
-//	gibt nichtleere Zellen und Bereiche mit Formatierung zurueck (horizontal)
+//	returns all non empty cells and areas with formating (horizontal)
 //
 
 class SC_DLLPUBLIC ScUsedAreaIterator
@@ -525,7 +525,7 @@ private:
 	SCROW					nAttrRow;
 	const ScPatternAttr*	pPattern;
 
-	SCCOL					nFoundStartCol;			// Ergebnisse nach GetNext
+	SCCOL					nFoundStartCol;			// results after GetNext
 	SCCOL					nFoundEndCol;
 	SCROW					nFoundRow;
 	const ScPatternAttr*	pFoundPattern;
