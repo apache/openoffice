@@ -2446,7 +2446,7 @@ dnl Set the gcc/gxx include directories
 dnl ===================================================================
 # Removed the special FreeBSD treatment. The problem was that with_gxx_include_path
 # often contains an i386 which is expanded as a macro.
-if test "$GXX" = "yes"; then
+if test "$GXX" = "yes" -a "$_os" != "Darwin"; then
    AC_MSG_CHECKING([for g++ include path])
    if test -z "$with_gxx_include_path"; then
       with_gxx_include_path=`echo "#include <cstring>" | $CXX -E -xc++ - | $SED -n '/.*1*"\(.*\)\/cstring".*/s//\1/p' | head -n 1`
@@ -3837,7 +3837,7 @@ if test  "$_os" = "Darwin"; then
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(9|10|11)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|9|10|11)" | sed -e "s/.*sdk //" | head -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
