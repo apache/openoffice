@@ -350,7 +350,7 @@ void LinkManager::UpdateAllLinks(
 			( !bUpdateGrfLinks && OBJECT_CLIENT_GRF == pLink->GetObjType() ))
 			continue;
 		
-		sal_Bool allows = sal_False;
+		sal_Bool allows = sal_True;
 			
 		if (bAskUpdate)
 		{
