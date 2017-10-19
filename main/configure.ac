@@ -308,10 +308,10 @@ AC_ARG_ENABLE(gconf,
 AC_ARG_ENABLE(gnome-vfs,
 [  --disable-gnome-vfs     Determines whether to use the Gnome Virtual Filing
                           System on platforms where that VFS is available
-],,enable_gnome_vfs=yes)
+],,enable_gnome_vfs=no)
 AC_ARG_ENABLE(gio,
 [  --enable-gio            Determines whether to use the GIO support
-],,enable_gio=no)
+],,enable_gio=yes)
 AC_ARG_ENABLE(static-gtk,
 [  --enable-static-gtk     Modules that are linked against gtk libraries use
                           the static libraries instead of the dynamic ones. 
