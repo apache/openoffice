@@ -158,9 +158,13 @@ sal_Bool LinkManager::Insert( SvBaseLink* pLink )
 	SvBaseLinkRef* pTmp = new SvBaseLinkRef( pLink );
     pLink->SetLinkManager( this );
 	aLinkTbl.Insert( pTmp, aLinkTbl.Count() );
-	Window *parent = GetPersist()->GetDialogParent();
 	if (mAutoAskUpdateAllLinks)
 	{
+		Window *parent = NULL;
+		SfxObjectShell* persist = GetPersist();
+		if (persist != NULL)
+			parent = GetPersist()->GetDialogParent();
+
 		SetUserAllowsLinkUpdate(pLink, GetUserAllowsLinkUpdate(parent));
 	}
 	
