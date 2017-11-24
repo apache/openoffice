@@ -984,6 +984,9 @@ dnl ===================================================================
 cat /dev/null > warn
 
 AC_PROG_EGREP
+if test -z "$GREP"; then
+GREP=$EGREP
+fi
 AC_PROG_AWK
 AC_PATH_PROG( AWK, $AWK)
 if test -z "$AWK"; then
@@ -1806,7 +1809,7 @@ dnl ===================================================================
 dnl Search all the common names for GNU make
 dnl ===================================================================
 AC_MSG_CHECKING([for GNU make])
-for a in "$MAKE" $GNUMAKE make gmake gnumake; do
+for a in "$MAKE" "$GNUMAKE" make gmake gnumake; do
       $a --version 2> /dev/null | $GREP GNU  2>&1 > /dev/null
       if test $? -eq 0;  then
            GNUMAKE=$a
