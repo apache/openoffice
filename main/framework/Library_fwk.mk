@@ -187,9 +187,7 @@ $(eval $(call gb_Library_add_exception_objects,fwk,\
 ))
 
 # i126622 - Base 4.1.2 does not open Tables and Queries in Mac OSX
-# Also affects FreeBSD 10.3 with clang 3.4.1.
-# Appears to be a clang optimization bug in versions less than 3.8.0
-ifeq ($(COM)$(CPUNAME),CLANGX86_64)
+ifeq ($(OS),MACOSX)
     $(call gb_CxxObject_get_target,framework/source/loadenv/loadenv):\
 	CXXFLAGS := $(gb_LinkTarget_CXXFLAGS) $(gb_LinkTarget_EXCEPTIONFLAGS) $(gb_COMPILERNOOPTFLAGS)
 endif
