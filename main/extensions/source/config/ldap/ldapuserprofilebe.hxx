@@ -51,7 +51,7 @@ struct LdapProfileMutexHolder { osl::Mutex mMutex; };
 /**
   Implements the PlatformBackend service, a specialization of the 
   XPropertySet service for retreiving LDAP user profile 
-  configuration settings from a LDAP repsoitory.
+  configuration settings from a LDAP repository.
   */
 class LdapUserProfileBe : private LdapProfileMutexHolder, public BackendBase 
 {
