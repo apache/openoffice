@@ -21,79 +21,10 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Module_Module,rdbmaker))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	cui \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	rdbmaker \
-	reportdesign \
-	remotebridges \
-	sane \
-	sax \
-	sc \
-	sccomp \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	unixODBC \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Module_add_targets,rdbmaker,\
+	Executable_rdbmaker \
 ))
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:
