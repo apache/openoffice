@@ -935,7 +935,7 @@ AC_ARG_WITH(arm-target,
 AC_ARG_WITH(macosx-target,
 [  --macosx-target            The minimal macOS/OSX deployment and build target
 
-                              Usage: --macosx-target=10.7
+                              Usage: --with-macosx-target=10.7
 ],with_macosx_target=$withval,with_macosx_target=10.7)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
