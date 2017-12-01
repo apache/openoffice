@@ -932,6 +932,11 @@ AC_ARG_WITH(arm-target,
 
                               Usage: --with-arm-target=7
 ],with_arm_target=$withval,with_arm_target=4)
+AC_ARG_WITH(macosx-target,
+[  --macosx-target            The minimal macOS/OSX deployment and build target
+
+                              Usage: --macosx-target=10.7
+],with_macosx_target=$withval,with_macosx_target=10.7)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -3830,7 +3835,7 @@ dnl ===================================================================
 dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
-   sdk_target=10.7
+   sdk_target=$with_macosx_target
    AC_MSG_CHECKING([checking SDK compatibility with OSX $sdk_target])
 
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
