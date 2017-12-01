@@ -143,8 +143,8 @@ AC_ARG_WITH(package-format,
                           Usage: --with-package-format="foo bar"
 ],,)                   
 AC_ARG_ENABLE(odk,
-[  --disable-odk           OO.o includes an ODK, office development kit
-                          which some packagers may with to build without
+[  --disable-odk           AOO includes an ODK, office development kit
+                          which some packagers may want to build without
 ],,enable_odk="yes")
 AC_ARG_ENABLE(mathmldtd,
 [  --disable-mathmldtd     disable mathmldtd
