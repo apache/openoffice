@@ -643,12 +643,6 @@ AC_ARG_WITH(jdk-home,
  
                           Usage: --with-jdk-home=<absolute path to JDK home>
 ],,)
-AC_ARG_WITH(gxx_include_path,
-[  --with-gxx-include-path if you want to override the autodetected g++ include
-                          path.
- 
-                          Usage: --with-gxx-include-path=<absolute path to g++ include dir>
-],,)
 AC_ARG_WITH(java,
 [  --with-java             Build with[[out]] Java support.  If you use
                           --without-java/--with-java=no then the build will have
@@ -2448,39 +2442,6 @@ main (void)
 ],[AC_MSG_ERROR([your version of the GNU C++ compile has a bug which prevents Apache OpenOffice from being compiled correctly - please check http://gcc.gnu.org/ml/gcc-patches/2004-07/msg00968.html for details.])], [AC_MSG_RESULT([no])])
    fi
 fi
-
-dnl ===================================================================
-dnl Set the gcc/gxx include directories
-dnl ===================================================================
-# Removed the special FreeBSD treatment. The problem was that with_gxx_include_path
-# often contains an i386 which is expanded as a macro.
-if test "$GXX" = "yes" -a "$_os" != "Darwin"; then
-   AC_MSG_CHECKING([for g++ include path])
-   if test -z "$with_gxx_include_path"; then
-      with_gxx_include_path=`echo "#include <cstring>" | $CXX -E -xc++ - | $SED -n '/.*1*"\(.*\)\/cstring".*/s//\1/p' | head -n 1`
-      if test "$with_gxx_include_path" = "/usr/libexec/(null)/include"; then
-          with_gxx_include_path="/usr/include"
-      fi
-      if test "$WITH_MINGWIN" = "yes"; then
-         with_gxx_include_path=`cygpath -d "$with_gxx_include_path"`
-         with_gxx_include_path=`cygpath -u "$with_gxx_include_path"`
-      fi
-      if echo $with_gxx_include_path | $GREP -q linux; then
-         # workaround for Mandriva - issue 100049
-         with_gxx_include_path=`cd $with_gxx_include_path && pwd`
-      fi
-   fi
-fi
-dnl This is the original code...
-dnl with_gxx_include_path=`$CXX -print-search-dirs | $GREP instal |$AWK '{ print \$2 }'`/include 
-if test -z "$with_gxx_include_path"; then
-   with_gxx_include_path="NO_GXX_INCLUDE"
-   AC_MSG_RESULT([no g++ includes])
-else
-   AC_MSG_RESULT([$with_gxx_include_path])
-fi
-GXX_INCLUDE_PATH="$with_gxx_include_path"
-AC_SUBST(GXX_INCLUDE_PATH)
 
 dnl ===================================================================
 dnl Set the mingw runtime library include directories
