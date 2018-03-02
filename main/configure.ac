@@ -1164,6 +1164,7 @@ case "$build_os" in
 		test_gtk=no
 		test_freetype=no
         	test_gstreamer=no
+		test_cairo=yes
 		_os=OS2
 		;;
 	freebsd*)
