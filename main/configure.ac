@@ -5847,7 +5847,7 @@ ENABLE_GSTREAMER=""
 if test "$test_gstreamer" = "yes"; then
     AC_MSG_CHECKING([whether to build the GStreamer media backend])
     if test "x$enable_gstreamer" != "xno" ; then
-        PKG_CHECK_MODULES( GSTREAMER, gtk+-2.0 >= 2.4 gthread-2.0 gstreamer-0.10 gstreamer-interfaces-0.10 ,,AC_MSG_ERROR([requirements to build the GStreamer media backend not met. Do not use --enable-gstreamer or install the missing packages]))
+        PKG_CHECK_MODULES( GSTREAMER, gtk+-2.0 >= 2.4 gthread-2.0 gstreamer-1.0 gstreamer-video-1.0,,AC_MSG_ERROR([requirements to build the GStreamer media backend not met. Do not use --enable-gstreamer or install the missing packages]))
         ENABLE_GSTREAMER="TRUE"
         AC_MSG_RESULT([yes])
     else
