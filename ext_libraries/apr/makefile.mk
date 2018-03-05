@@ -46,8 +46,8 @@ TARFILE_MD5=98492e965963f852ab29f9e61b2ad700
 
 .IF "$(OS)"=="WNT"
 
-PATCH_FILES+= $(TARFILE_NAME)-windows.patch
 PATCH_FILES+= $(TARFILE_NAME)-no-devenv.patch
+PATCH_FILES+= $(TARFILE_NAME)-windows.patch
 CONFIGURE_ACTION=cp include/apr.hw include/apr.h
 BUILD_DIR=
 BUILD_ACTION=INCLUDE="$(INCLUDE);./include" USEMAK=1  nmake -f Makefile.win buildall
@@ -80,6 +80,7 @@ OUT2INC+=include$/apr*.h
 OUT2INC_SUBDIR=apr
 
 .IF "$(OS)"=="WNT"
+.IF "$(CPUNAME)"=="INTEL"
 OUT2LIB+=LibR$/*.lib
 OUT2LIB+=LibR$/*.pdb
 OUT2LIB+=Release$/libaprapp-1.lib
@@ -88,6 +89,16 @@ OUT2LIB+=Release$/libapr-1.lib
 OUT2LIB+=Release$/libapr-1.exp
 OUT2BIN+=Release$/libapr-1.dll
 OUT2BIN+=Release$/libapr-1.pdb
+.ELIF "$(CPUNAME)"=="X86_64"
+OUT2LIB+=x64/LibR$/*.lib
+OUT2LIB+=x64/LibR$/*.pdb
+OUT2LIB+=x64/Release$/libaprapp-1.lib
+OUT2LIB+=x64/Release$/libaprapp-1.pdb
+OUT2LIB+=x64/Release$/libapr-1.lib
+OUT2LIB+=x64/Release$/libapr-1.exp
+OUT2BIN+=x64/Release$/libapr-1.dll
+OUT2BIN+=x64/Release$/libapr-1.pdb
+.ENDIF
 .ELSE
 .IF "$(OS)"=="MACOSX"
 OUT2LIB+=.libs/libapr-1.*dylib

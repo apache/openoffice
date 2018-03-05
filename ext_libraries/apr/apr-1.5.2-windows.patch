@@ -1,15 +1,11 @@
---- misc/apr-1.5.2/Makefile.win	2011-01-28 03:27:19.000000000 +0100
-+++ misc/build/apr-1.5.2/Makefile.win	2013-05-27 11:35:37.224622100 +0200
-@@ -45,12 +45,7 @@
- 
+--- misc/build/apr-1.5.2/Makefile.win	2018-03-05 05:48:04.021330400 +0200
++++ misc/build/apr-1.5.2/Makefile.win	2018-03-05 05:58:03.647346500 +0200
+@@ -41,7 +41,7 @@
  PREFIX=..\apr-dist
  
--!IF [$(COMSPEC) /c cl /nologo /? \
+ !IF [$(COMSPEC) /c cl /nologo /? \
 -	| $(SystemRoot)\System32\find.exe "x64" >NUL ] == 0
--ARCH=x64 Release
--!ELSE
++	| findstr.exe "x64" >NUL ] == 0
+ ARCH=x64 Release
+ !ELSE
  ARCH=Win32 Release
--!ENDIF
- 
- !MESSAGE ARCH        = $(ARCH)
- !MESSAGE PREFIX      = $(PREFIX)  (install path)
