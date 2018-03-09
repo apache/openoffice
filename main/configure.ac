@@ -1698,29 +1698,6 @@ if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
    AC_PROG_CC
 fi
 
-dnl Clang detection on supported platforms
-if test "$_os" = "Linux" -o "$_os" = "FreeBSD"; then
-    if $CC --version 2>&1 | $GREP clang > /dev/null ; then
-        COM_IS=CLANG
-    else
-        COM_IS=GCC
-    fi
-    AC_SUBST(COM_IS)
-fi
-
-if test "$_os" = "FreeBSD"; then
-    FBSD_GCC_RPATH=
-    if "$COM_IS" = "GCC"; then
-        rpath=`$CC --print-file-name libstdc++.so`
-        rpath=`realpath $rpath`
-        rpath=`dirname $rpath`
-	if test "$rpath" != "/usr/lib" ; then
-            FBSD_GCC_RPATH="-Wl,-rpath=$rpath"
-	fi
-    fi
-    AC_SUBST(FBSD_GCC_RPATH)
-fi
-
 COMPATH=`dirname "$CC"`
 if test "$COMPATH" = "." ; then
     AC_PATH_PROGS(COMPATH, $CC)
@@ -2169,6 +2146,101 @@ fi
 AC_SUBST(COMEX)
 AC_SUBST(MSPDB_PATH)
 AC_SUBST(USE_MINGW)
+
+dnl Compiler detection, logic from setsoenv.in
+case "$build_os" in
+	*cygwin*)
+		if test "$WITH_MINGWIN" = "yes"; then
+			COM="GCC";
+		else
+			COM="MSC";
+		fi;;
+	os2*)
+		COM="GCC";;
+	netbsd | kfreebsd* | freebsd* | linux* | darwin* )
+		if $CC --version 2>&1 | $GREP clang > /dev/null ; then
+			COM="CLANG";
+		else
+			COM="GCC";
+		fi;;
+	solaris*)
+		case "$CC" in
+			*gcc*)	COM="GCC";;
+			*)	COM="C52";;
+		esac;;
+	osf | aix*)
+		COM="CXX";;
+	*) AC_MSG_ERROR([Unable to decipher compiler for $build_os]);;
+esac
+AC_SUBST(COM)
+
+dnl  Decode the compiler version.  Logic from main/solenv/inc/tg_compv.mk.
+case $COM in
+	GCC)
+		CCVER=`${CC} -dumpversion 2>&1`;
+		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
+		if test "${CCNUMVER}" -ge 000300000001; then
+			COMID="gcc3";
+			COMNAME="gcc3";
+		elif test "${CCNUMVER}" -ge 000300000001; then
+			COMID="GCC";
+			COMNAME="gcc2";
+		else
+			AC_MSG_ERROR([gcc too old]);
+		fi
+		;;
+	CLANG)
+		CCVER=`${CC} --version 2>&1 | head -n1 | sed -e"s/.*version //" -e"s/ .*//"`;
+		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
+		# The version in tg_compv.mk for darwin does not look correct
+		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
+		if test "$build_os" == "darwin"; then
+			COMID="s5abi";
+			COMNAME="s5abi";
+		else
+			COMID="gcc3";
+			COMNAME="gcc3";
+		fi;;
+	MSC)
+		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
+		CCNUMVER=`${CC} 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
+		if test "${CCNUMVER}" -ge 001200000000; then
+			COMID="MSC";
+			COMNAME="msci";
+		else
+			AC_MSG_ERROR([MSC compiler too old]);
+		fi
+		;;
+	C55 | C54 | C52 | C40 | sunpro)
+		CCVER=`${CC} -V 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
+		CCNUMVER=`${CC} -V 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
+		if test "${CCNUMVER}" -ge 00050002; then
+			COMID="C52";
+			COMNAME="sunpro5";
+		else
+			AC_MSG_ERROR([Sun compiler too old]);
+		fi
+		;;
+	*)
+		AC_MSG_ERROR([Unable to detect compiler version]);;
+esac
+AC_SUBST(CCVER)
+AC_SUBST(CCNUMVER)
+AC_SUBST(COMID)
+AC_SUBST(COMNAME)
+
+if test "$_os" = "FreeBSD"; then
+    FBSD_GCC_RPATH=
+    if "$COM" = "GCC"; then
+        rpath=`$CC --print-file-name libstdc++.so`
+        rpath=`realpath $rpath`
+        rpath=`dirname $rpath`
+	if test "$rpath" != "/usr/lib" ; then
+            FBSD_GCC_RPATH="-Wl,-rpath=$rpath"
+	fi
+    fi
+    AC_SUBST(FBSD_GCC_RPATH)
+fi
 
 dnl ===================================================================
 dnl  .NET needs special treatment
