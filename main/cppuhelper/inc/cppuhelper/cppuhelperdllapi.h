@@ -21,45 +21,17 @@
 
 
 
-#ifndef ADC_CPP_PRS_CPP_HXX
-#define ADC_CPP_PRS_CPP_HXX
+#ifndef INCLUDED_CPPUHELPERDLLAPI_H
+#define INCLUDED_CPPUHELPERDLLAPI_H
+                                                                                                                             
+#include "sal/types.h"
 
-
-
-// USED SERVICES
-	// BASE CLASSES
-#include <autodoc/prs_code.hxx>
-	// COMPONENTS
-	// PARAMETERS
-
-namespace cpp
-{
-
-struct S_RunningData;
-
-class Cpluplus_Parser : public autodoc::CodeParser_Ifc
-{
-  public:
-						Cpluplus_Parser();
-	virtual				~Cpluplus_Parser();
-
-
-	virtual void		Setup(
-                            ary::Repository &   o_rRepository,
-                            const autodoc::DocumentationParser_Ifc &
-                                                i_rDocumentationInterpreter,
-                            const ::std::vector<String> &
-                                                ignoreDefines );
-
-	virtual void		Run(
-							const autodoc::FileCollector_Ifc &
-												i_rFiles );
-  private:
-    Dyn<S_RunningData>  pRunningData;
-};
-
-
-
-
-}   // namespace cpp
+#if defined(CPPUHELPER_DLLIMPLEMENTATION)
+#define CPPUHELPER_DLLPUBLIC  SAL_DLLPUBLIC_EXPORT
+#else
+#define CPPUHELPER_DLLPUBLIC  SAL_DLLPUBLIC_IMPORT
 #endif
+#define CPPUHELPER_DLLPRIVATE SAL_DLLPRIVATE
+                                                                                    
+#endif /* INCLUDED_CPPUHELPERDLLAPI_H */
+
