@@ -271,6 +271,12 @@ AC_ARG_ENABLE(cl-standard,
                           options and therefore removes a lot of warnings when
                           using the cheaper standard compiler. )
 ],,)
+AC_ARG_ENABLE(win64,
+[  --enable-win64          Enable building 64 bit OpenOffice on 64 bit Windows, (as
+                          opposed to 32 bit OpenOffice that is usually built there).
+                          This is a temporary option during the transition,
+                          as 64 bit OpenOffice doesn't fully build on Windows yet.
+],,enable_win64=no)
 AC_ARG_ENABLE(win-x64-shellext,
 [  --enable-win-x64-shellext    Enable the build/usage of Windows 64bit shell extensions.
                           These extensions are used for the system integration on
@@ -1284,6 +1290,30 @@ if test "$_os" = "WINNT"; then
       AC_MSG_RESULT([yes])
    fi
    AC_SUBST(BUILD_X64)
+
+   dnl ===================================================================
+   dnl Set the BUILD_WIN64 variable. 
+   dnl ===================================================================
+   AC_MSG_CHECKING([whether to build 64 bit OpenOffice on 64 bit Windows])
+   if test "$build_cpu" = "x86_64" ; then
+      if test "x$enable_win64" != "xno" ; then
+         BUILD_WIN64="TRUE"
+         AC_MSG_RESULT([yes])
+         OOWINTOOL="./oowintool"
+      else
+         BUILD_WIN64=""
+         AC_MSG_RESULT([no])
+         OOWINTOOL="./oowintool --aoo32-on-win64"
+      fi
+   else
+      if test "x$enable_win64" != "xno" ; then
+         AC_MSG_ERROR([the --enable-win64 option can only be used on an AMD64 CPU])
+      fi
+      BUILD_WIN64=""
+      AC_MSG_RESULT([no])
+      OOWINTOOL="./oowintool"
+   fi
+   AC_SUBST(BUILD_WIN64)
 fi
 
 dnl ===================================================================
@@ -2045,7 +2075,7 @@ if test "$_os" = "WINNT"; then
 		AC_MSG_CHECKING([for friendly registry keys])
 		# VS.Net 2003, VS.Net 2005
 		if test -z "$with_cl_home"; then
-			vctest=`./oowintool --msvc-productdir`;
+			vctest=`$OOWINTOOL --msvc-productdir`;
 			if test -x "$vctest/bin/cl.exe"; then
 				with_cl_home=$vctest;
 			fi
@@ -2093,18 +2123,31 @@ if test "$_os" = "WINNT"; then
 		PATH="$MSPDB_PATH:$PATH"
 
 		AC_MSG_CHECKING([the Microsoft C/C++ Compiler])
-   		if test -x "$with_cl_home/bin/cl.exe"; then
-   			CC="$with_cl_home/bin/cl.exe"
-   		else
-   			AC_PATH_PROG(CC, cl.exe)
-   		fi
-  		if test -e "$CC"; then
+		case "$build_cpu" in
+		  i?86)
+		    cl_subdirectory="bin"
+		    ;;
+		  x86_64)
+		    if test "$BUILD_WIN64" = "TRUE" ; then
+		      cl_subdirectory="bin/amd64"
+		    else
+		      cl_subdirectory="bin"
+		    fi
+		    ;;
+		  *)
+		    AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
+		    ;;
+		esac
+   		if test -x "$with_cl_home/$cl_subdirectory/cl.exe"; then
+   			CC="$with_cl_home/$cl_subdirectory/cl.exe"
+			COMPATH="$with_cl_home"
 			# This gives us a posix path with 8.3 filename restrictions
 			CC=`cygpath -d "$CC"`
 			CC=`cygpath -u "$CC"`
+			COMPATH=`cygpath -d "$COMPATH"`
+			COMPATH=`cygpath -u "$COMPATH"`
 			# Remove /cl.exe from CC case insensitive
 			AC_MSG_RESULT([found ($CC)])
-			COMPATH=`echo $CC | $SED 's@\/[[Bb]][[Ii]][[Nn]]\/[[cC]][[lL]]\.[[eE]][[xX]][[eE]]@@'`
 			export INCLUDE=`cygpath -d "$COMPATH/Include"`
 			dnl  Check which Microsoft C/C++ compiler is found
 			AC_MSG_CHECKING([the Version of Microsoft C/C++ Compiler])
@@ -2127,7 +2170,7 @@ dnl      The following find microsoft, matches nn.nn.nnnn then pulls numbers out
 				AC_MSG_ERROR([Compiler too old. Use Microsoft C/C++ .NET 2008.])
 			fi
 		else
-			AC_MSG_ERROR([Microsoft C/C++ Compiler not found. Use --with-cl-home or set path to cl.exe.])
+			AC_MSG_ERROR([Microsoft C/C++ Compiler not found. Use --with-cl-home.])
 		fi
 	else
 		AC_MSG_CHECKING([the Mingwin32 C++ Compiler])
@@ -2206,7 +2249,21 @@ case $COM in
 		CCNUMVER=`${CC} 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
 		if test "${CCNUMVER}" -ge 001200000000; then
 			COMID="MSC";
-			COMNAME="msci";
+			case "$build_cpu" in
+			  i?86)
+			    COMNAME="msci";
+			    ;;
+			  x86_64)
+			    if test "$BUILD_WIN64" = "TRUE" ; then
+			      COMNAME="mscx";
+			    else
+			      COMNAME="msci";
+			    fi
+			    ;;
+			  *)
+			    AC_MSG_ERROR([Unknown/unsupported Windows CPU $build_cpu.])
+			    ;;
+			esac
 		else
 			AC_MSG_ERROR([MSC compiler too old]);
 		fi
@@ -2262,13 +2319,13 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 		MIDL_PATH="$with_cl_home/../Common7/Tools/Bin"
 	fi
 	if test -z "$MIDL_PATH" ; then
-      vstest=`./oowintool --msvs-productdir`;
+      vstest=`$OOWINTOOL --msvs-productdir`;
       if test -x "$vstest/Common7/Tools/Bin/midl.exe" ; then
 		  MIDL_PATH="$vstest/Common7/Tools/Bin"
       fi
 	fi
 	if test -z "$MIDL_PATH" ; then
-		psdktest=`./oowintool --psdk-home`
+		psdktest=`$OOWINTOOL --psdk-home`
 		if test -x "$psdktest/Bin/midl.exe" ; then
 			MIDL_PATH="$psdktest/Bin"
 		fi
@@ -2291,7 +2348,7 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 	if test -x "$with_csc_path/csc.exe"; then
 		CSC_PATH="$with_csc_path"
 	else
-	   csctest=`./oowintool --csc-compilerdir`;
+	   csctest=`$OOWINTOOL --csc-compilerdir`;
 	   if test -x "$csctest/csc.exe"; then
 	      CSC_PATH="$csctest"
 	   fi
@@ -2316,11 +2373,11 @@ if test "$WITH_MINGWIN" = "yes" || test "$COMEX" -ge "10"; then
 		    FRAME_HOME="$with_cl_home/../SDK/v1.1"
 	    fi
 	    if test -z "$FRAME_HOME" ; then
-          frametest=`./oowintool --dotnetsdk-dir`
+          frametest=`$OOWINTOOL --dotnetsdk-dir`
           if test -f "$frametest/lib/mscoree.lib"; then
              FRAME_HOME="$frametest"
           else
-             frametest=`./oowintool --psdk-home`
+             frametest=`$OOWINTOOL --psdk-home`
              if test -f "$frametest/lib/mscoree.lib"; then
                 FRAME_HOME="$frametest"
              fi
@@ -2905,7 +2962,7 @@ fi
 
 if test "$_os" = "WINNT"; then
    if test -z "$with_jdk_home"; then
-      _jdk_home=`./oowintool --jdk-home`
+      _jdk_home=`$OOWINTOOL --jdk-home`
        if test -d "$_jdk_home"; then
           with_jdk_home="$_jdk_home"
        fi
@@ -5217,7 +5274,7 @@ if test \( "$_os" = "WINNT" \) ; then
 	AC_MSG_CHECKING([for PSDK files])
 	if test -z "$with_psdk_home"; then
 		# This first line will detect a February 2003 Microsoft Platform SDK
-		PSDK_HOME=`./oowintool --psdk-home`
+		PSDK_HOME=`$OOWINTOOL --psdk-home`
         # But there might be also an April 2005 PSDK, unfortunately MS changed
         # the registry entry. (we prefer the old version!?)
         if test -z "$PSDK_HOME"; then
@@ -5477,7 +5534,7 @@ if test "$_os" = "WINNT" ; then
     if test -e "$with_nsis_path/nsis.exe"; then
         NSIS_PATH="$with_nsis_path"
     fi
-    nsistest=`./oowintool --nsis-dir`;
+    nsistest=`$OOWINTOOL --nsis-dir`;
     if test -x "$nsistest/nsis.exe"; then
         NSIS_PATH="$nsistest"
     fi
@@ -5753,7 +5810,7 @@ dnl ===================================================================
 dnl Windows builds - use oowintool to copy CRT dlls and manifest
 dnl ===================================================================
 if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes"; then
-       if ./oowintool --msvc-copy-dlls ./external/msvcp ; then
+       if $OOWINTOOL --msvc-copy-dlls ./external/msvcp ; then
           :
        else
           AC_MSG_ERROR([oowintool failed to copy CRT])
