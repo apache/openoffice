@@ -2237,13 +2237,8 @@ case $COM in
 		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
 		# The version in tg_compv.mk for darwin does not look correct
 		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
-		if test "$build_os" == "darwin"; then
-			COMID="s5abi";
-			COMNAME="s5abi";
-		else
-			COMID="gcc3";
-			COMNAME="gcc3";
-		fi;;
+		COMID="gcc3";
+		COMNAME="gcc3";
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
 		CCNUMVER=`${CC} 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
