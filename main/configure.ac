@@ -2239,6 +2239,7 @@ case $COM in
 		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
 		COMID="gcc3";
 		COMNAME="gcc3";
+		;;
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
 		CCNUMVER=`${CC} 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
