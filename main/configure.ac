@@ -2247,6 +2247,7 @@ case $COM in
 				COMNAME="gcc3";
 				;;
 		esac
+		;;
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
 		CCNUMVER=`${CC} 2>&1 | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
