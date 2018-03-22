@@ -20,24 +20,19 @@
 #**************************************************************
 
 
-PRJ=..
 
-PRJNAME=registry
-TARGET=inc
+$(eval $(call gb_Module_Module,registry))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Module_add_targets,registry,\
+	Library_reg \
+	Executable_regmerge \
+	Executable_regview \
+	Executable_regcompare \
+	Executable_checksingleton \
+	Package_inc \
+))
 
-.INCLUDE :  settings.mk
+#	Executable_rdbedit \
 
-# --- Files --------------------------------------------------------
-# --- Targets -------------------------------------------------------
 
-.INCLUDE :  target.mk
-
-.IF "$(ENABLE_PCH)"!=""
-ALLTAR : \
-	$(SLO)$/precompiled.pch \
-	$(SLO)$/precompiled_ex.pch
-	
-.ENDIF			# "$(ENABLE_PCH)"!=""
-
+# vim: set noet sw=4 ts=4:

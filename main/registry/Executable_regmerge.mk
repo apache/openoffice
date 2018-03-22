@@ -21,29 +21,27 @@
 
 
 
-PRJ=..
+$(eval $(call gb_Executable_Executable,regmerge))
 
-PRJNAME=registry
-TARGET=regcpp
+$(eval $(call gb_Library_add_package_headers,regmerge,registry_inc))
 
-ENABLE_EXCEPTIONS := TRUE
+$(eval $(call gb_Executable_set_include,regmerge,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/registry/inc/ \
+	-I$(SRCDIR)/registry/inc/pch \
+))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Executable_add_linked_libs,regmerge,\
+	reg \
+	sal \
+	stl \
+    $(gb_STDLIBS) \
+))
 
-.INCLUDE :  settings.mk
-.INCLUDE : ..$/version.mk
+$(eval $(call gb_Executable_add_exception_objects,regmerge,\
+	registry/tools/regmerge \
+	registry/tools/fileurl \
+	registry/tools/options \
+))
 
-# ------------------------------------------------------------------
-
-SLOFILES= \
-			$(SLO)$/regimpl.obj		\
-			$(SLO)$/regkey.obj		\
-			$(SLO)$/registry.obj 	\
-			$(SLO)$/keyimpl.obj 	\
-			$(SLO)$/reflread.obj	\
-			$(SLO)$/reflwrit.obj
-
-# ------------------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:
