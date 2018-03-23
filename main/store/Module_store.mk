@@ -21,81 +21,12 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Module_Module,store))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cppcanvas \
-	cui \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	padmin \
-	package \
-	rdbmaker \
-	registry \
-	reportdesign \
-	remotebridges \
-	sane \
-	sax \
-	sc \
-	sccomp \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	store \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	ucbhelper \
-	udkapi \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	udm \
-	unixODBC \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Module_add_targets,store,\
+	Library_store \
+	Package_inc \
+	Package_xml \
 ))
 
-# vim: set noet ts=4 sw=4:
+# vim: set noet sw=4 ts=4:
