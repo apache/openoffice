@@ -21,33 +21,11 @@
 
 
 
-PRJ := ..$/..
-PRJNAME := unodevtools
+$(eval $(call gb_Module_Module,unodevtools))
 
-TARGET := uno-skeletonmaker
-TARGETTYPE := CUI
-LIBTARGET := NO
+$(eval $(call gb_Module_add_targets,unodevtools,\
+	Executable_uno-skeletonmaker \
+))
 
-ENABLE_EXCEPTIONS := TRUE
 
-.INCLUDE: settings.mk
-.INCLUDE : $(PRJ)$/unodevtools.pmk
-
-APP1TARGET = $(TARGET)
-APP1RPATH=SDK
-
-APP1OBJS = $(OBJ)$/skeletonmaker.obj \
-	$(OBJ)$/skeletoncommon.obj \
-	$(OBJ)$/javatypemaker.obj \
-	$(OBJ)$/cpptypemaker.obj \
-	$(OBJ)$/javacompskeleton.obj \
-	$(OBJ)$/cppcompskeleton.obj
-
-APP1DEPN= $(OUT)$/lib$/$(UNODEVTOOLSLIBDEPN) $(SOLARLIBDIR)$/$(CODEMAKERLIBDEPN) \
-	$(SOLARLIBDIR)$/$(COMMONCPPLIBDEPN) $(SOLARLIBDIR)$/$(COMMONJAVALIBDEPN)
-APP1STDLIBS = $(REGLIB) $(SALLIB) $(SALHELPERLIB) $(CPPULIB) $(CPPUHELPERLIB) \
-	$(UNODEVTOOLSLIBST) $(CODEMAKERLIBST) $(COMMONCPPLIBST) $(COMMONJAVALIBST)
-
-OBJFILES = $(APP1OBJS)
-
-.INCLUDE: target.mk
+# vim: set noet sw=4 ts=4:

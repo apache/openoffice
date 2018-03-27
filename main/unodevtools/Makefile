@@ -19,30 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
-PRJ=..$/..
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJNAME=unodevtools
-TARGET=unodevtools
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
-.INCLUDE :  settings.mk
-
-# ------------------------------------------------------------------
-
-SLOFILES= \
-	$(SLO)$/typemanager.obj	\
-	$(SLO)$/typeblob.obj \
-	$(SLO)$/options.obj
-
-LIB1TARGET=$(LB)$/$(TARGET).lib
-LIB1ARCHIV=$(LB)$/lib$(TARGET).a
-LIB1OBJFILES=$(SLOFILES)
-
-# ------------------------------------------------------------------
-
-.INCLUDE :  target.mk
-
+# vim: set noet sw=4 ts=4:
