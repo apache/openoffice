@@ -21,34 +21,12 @@
 
 
 
-PRJ=..
+$(eval $(call gb_Module_Module,vos))
 
-PRJNAME=cosv
-TARGET=cosv
-
-ENABLE_EXCEPTIONS=true
-
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
+$(eval $(call gb_Module_add_targets,vos,\
+	Library_vos3 \
+	Package_inc \
+))
 
 
-# --- Files --------------------------------------------------------
-
-LIB1FILES= 	\
-		$(LB)$/cosv_service.lib		\
-		$(LB)$/cosv_storage.lib     	\
-		$(LB)$/cosv_strings.lib		\
-		$(LB)$/cosv_badcast_wnt.lib
-
-
-# --- Targets ------------------------------------------------------
-
-LIB1TARGET= 	$(LB)$/$(TARGET).lib
-LIB1ARCHIV= 	$(LB)$/lib$(TARGET).a
-
-
-.INCLUDE :  target.mk
-
-
+# vim: set noet sw=4 ts=4:

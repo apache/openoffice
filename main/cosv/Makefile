@@ -19,33 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-PRJNAME=cosv
-TARGET=cosv_badcast_wnt
-TARGETTYPE=CUI
-
-# --- Settings -----------------------------------------------------
-
-ENABLE_EXCEPTIONS=true
-
-.INCLUDE :  settings.mk
-
-
-
-# --- Files --------------------------------------------------------
-
-OBJFILES= \
-	$(OBJ)$/badcast.obj
-
-
-
-# --- Targets ------------------------------------------------------
-
-
-.INCLUDE :  target.mk
-
-
-
+# vim: set noet sw=4 ts=4:

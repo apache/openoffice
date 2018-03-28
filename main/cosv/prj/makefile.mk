@@ -21,16 +21,24 @@
 
 
 
-# target
-VOS_TARGET=vos
+PRJ=..
+TARGET=prj
 
-# the major 
-VOS_MAJOR=3
-# the minor 
-VOS_MINOR=0
-# the micro 
-VOS_MICRO=0
+.INCLUDE : settings.mk
 
-# this is a c++ compatible library 
-VOS_CPP=1
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
+
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
