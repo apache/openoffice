@@ -21,31 +21,24 @@
 
 
 
-PRJ=..$/..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=autodoc
-TARGET=display_kernel
-TARGETTYPE=CUI
+.INCLUDE : settings.mk
 
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-# --- Settings -----------------------------------------------------
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-ENABLE_EXCEPTIONS=true
-PRJINC=$(PRJ)$/source
-
-.INCLUDE :  settings.mk
-.INCLUDE : $(PRJ)$/source$/mkinc$/fullcpp.mk
-
-
-# --- Files --------------------------------------------------------
-
-OBJFILES= \
-	$(OBJ)$/displfct.obj	
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

@@ -21,34 +21,11 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,autodoc))
 
-PRJNAME=autodoc
-TARGET=autodoc_tools
-TARGETTYPE=CUI
-
-
-# --- Settings -----------------------------------------------------
-
-ENABLE_EXCEPTIONS=true
-PRJINC=$(PRJ)$/source
+$(eval $(call gb_Module_add_targets,autodoc,\
+	Executable_autodoc \
+))
 
 
-.INCLUDE :  settings.mk
-.INCLUDE : $(PRJ)$/source$/mkinc$/fullcpp.mk
-
-
-
-# --- Files --------------------------------------------------------
-
-OBJFILES= \
-	$(OBJ)$/filecoll.obj	\
-	$(OBJ)$/tkpchars.obj 
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-
-
+# vim: set noet sw=4 ts=4:

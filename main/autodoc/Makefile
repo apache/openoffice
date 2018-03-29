@@ -19,38 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJ=..$/..$/..
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-PRJNAME=autodoc
-TARGET=ary_info
-
-
-
-# --- Settings -----------------------------------------------------
-
-ENABLE_EXCEPTIONS=true
-PRJINC=$(PRJ)$/source
-
-.INCLUDE :  settings.mk
-.INCLUDE : $(PRJ)$/source$/mkinc$/fullcpp.mk
-
-
-
-# --- Files --------------------------------------------------------
-
-
-OBJFILES= \
-	$(OBJ)$/all_dts.obj		\
-	$(OBJ)$/all_tags.obj	\
-	$(OBJ)$/ci_attag.obj	\
-	$(OBJ)$/ci_text.obj
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-
-
+# vim: set noet sw=4 ts=4:
