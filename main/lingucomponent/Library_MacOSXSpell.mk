@@ -21,89 +21,47 @@
 
 
 
-$(eval $(call gb_Module_Module,ooo))
+$(eval $(call gb_Library_Library,MacOSXSpell))
 
-$(eval $(call gb_Module_add_moduledirs,ooo,\
-	MathMLDTD \
-	UnoControls \
-	animations \
-	autodoc \
-	automation \
-	avmedia \
-	basctl \
-	basebmp \
-	basegfx \
-	binaryurp \
-	canvas \
-	comphelper \
-	configmgr \
-	cosv \
-	cppcanvas \
-	cui \
-	dbaccess \
-	drawinglayer \
-	dtrans \
-	editeng \
-	embeddedobj \
-	eventattacher \
-	fileaccess \
-	formula \
-	fpicker \
-	framework \
-	i18nutil \
-	idl \
-	io \
-	javaunohelper \
-	jvmaccess \
-	lingucomponent \
-	linguistic \
-	o3tl \
-	offapi \
-	oovbaapi \
-	oox \
-	package \
-	padmin \
-	rdbmaker \
-	registry \
-	remotebridges \
-	reportdesign \
-	sane \
-	sax \
-	sc \
-	sccomp \
-	sd \
-	sfx2 \
-	slideshow \
-	sot \
-	starmath \
-	store \
-	svgio \
-	svl \
-	svtools \
-	svx \
-	sw \
-	toolkit \
-	tools \
-	twain \
-	ucb \
-	ucbhelper \
-	udkapi \
-	udm \
-	unixODBC \
-	unodevtools \
-	unotools \
-	unoxml \
-	uui \
-	vbahelper \
-	vcl \
-	vos \
-	wizards \
-	writerfilter \
-	x11_extensions \
-	xml2cmp \
-	xmloff \
-	xmlreader \
-	xmlscript \
+$(eval $(call gb_Library_add_precompiled_header,MacOSXSpell,$(SRCDIR)/lingucomponent/inc/pch/precompiled_mac))
+
+$(eval $(call gb_Library_set_componentfile,MacOSXSpell,lingucomponent/source/spellcheck/macosxspell/MacOSXSpell))
+
+$(eval $(call gb_Library_set_include,MacOSXSpell,\
+	$$(INCLUDE) \
+	-I$(SRCDIR)/lingucomponent/inc \
+	-I$(SRCDIR)/lingucomponent/inc/pch \
+	-I$(SRCDIR)/lingucomponent/source/lingutil \
+	-I$(OUTDIR)/inc \
 ))
 
-# vim: set noet ts=4 sw=4:
+$(eval $(call gb_Library_add_api,MacOSXSpell, \
+	offapi \
+	udkapi \
+))
+
+$(eval $(call gb_Library_add_linked_libs,MacOSXSpell,\
+	cppu \
+	cppuhelper \
+	lng \
+	sal \
+	stl \
+	svl \
+	tl \
+	ucbhelper \
+	utl \
+	vos3 \
+	$(gb_STDLIBS) \
+))
+
+$(eval $(call gb_Library_add_libs,MacOSXSpell,\
+	-framework Cocoa \
+))
+
+$(eval $(call gb_Library_add_exception_objects,MacOSXSpell,\
+	lingucomponent/source/spellcheck/macosxspell/macreg \
+	lingucomponent/source/spellcheck/macosxspell/macspellimp \
+))
+
+# vim: set noet sw=4 ts=4:
+

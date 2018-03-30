@@ -21,34 +21,24 @@
 
 
 
-PRJ = ..$/..
-
-PRJNAME	= lingucomponent
-TARGET	= ulingu
-LIBTARGET=NO
-
-ENABLE_EXCEPTIONS=TRUE
-
-#----- Settings ---------------------------------------------------------
+PRJ=..
+TARGET=prj
 
 .INCLUDE : settings.mk
 
-
-.IF "$(SYSTEM_DICTS)" == "YES"
-CXXFLAGS += -DSYSTEM_DICTS -DDICT_SYSTEM_DIR=\"$(DICT_SYSTEM_DIR)\" -DHYPH_SYSTEM_DIR=\"$(HYPH_SYSTEM_DIR)\" -DTHES_SYSTEM_DIR=\"$(THES_SYSTEM_DIR)\"
-CFLAGSCXX += -DSYSTEM_DICTS -DDICT_SYSTEM_DIR=\"$(DICT_SYSTEM_DIR)\" -DHYPH_SYSTEM_DIR=\"$(HYPH_SYSTEM_DIR)\" -DTHES_SYSTEM_DIR=\"$(THES_SYSTEM_DIR)\"
-CFLAGSCC += -DSYSTEM_DICTS -DDICT_SYSTEM_DIR=\"$(DICT_SYSTEM_DIR)\" -DHYPH_SYSTEM_DIR=\"$(HYPH_SYSTEM_DIR)\" -DTHES_SYSTEM_DIR=\"$(THES_SYSTEM_DIR)\"
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
 .ENDIF
 
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-SLOFILES = $(SLO)$/lingutil.obj
-
-LIB1TARGET= $(SLB)$/lib$(TARGET).lib
-LIB1ARCHIV= $(LB)/lib$(TARGET).a
-LIB1OBJFILES= $(SLOFILES)
-
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE : target.mk
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
