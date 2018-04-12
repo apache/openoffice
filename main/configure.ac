@@ -663,7 +663,7 @@ AC_ARG_ENABLE(gcjaot,
                           created with gcj or ecj
 ],,)
 AC_ARG_WITH(ant-home,
-[  --with-ant-home         If you have installed Jakarta Ant on your system,
+[  --with-ant-home         If you have installed Apache Ant on your system,
                           please supply the path here.
                           Note that this is not the location of the Ant binary
                           but the location of the entire distribution.
@@ -6981,7 +6981,7 @@ if test -z "$with_ant_home"; then
    if test "$_os" = "OS2"; then
      AC_PATH_PROGS(ANT, ant.cmd)
    else
-     AC_PATH_PROGS(ANT, [jakarta-ant ant ant.sh ant.bat ant.cmd])
+     AC_PATH_PROGS(ANT, [apache-ant ant ant.sh ant.bat ant.cmd])
    fi
 else
    if test "$_os" = "WINNT"; then
@@ -6990,7 +6990,7 @@ else
    if test "$_os" = "OS2"; then
      AC_PATH_PROGS(ANT, ant.cmd,,$with_ant_home/bin:$PATH)
    else
-     AC_PATH_PROGS(ANT, [jakarta-ant ant ant.sh ant.bat ant.cmd],,$with_ant_home/bin:$PATH)
+     AC_PATH_PROGS(ANT, [apache-ant ant ant.sh ant.bat ant.cmd],,$with_ant_home/bin:$PATH)
    fi
    WITH_ANT_HOME=$with_ant_home
    ANT_HOME=$with_ant_home
@@ -7099,10 +7099,10 @@ fi
 AC_SUBST(ANT_LIB)
 fi
 
-ant_minver=1.6.0
+ant_minver=1.9.1
 # update for more extensions...
 if test "$ENABLE_MEDIAWIKI" = "YES"; then
-  ant_minver=1.7.0
+  ant_minver=1.9.1
 fi
 ant_minminor1=`echo $ant_minver | cut -d"." -f2`
 
