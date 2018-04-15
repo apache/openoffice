@@ -21,32 +21,6 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Package_Package,jvmfwk_javasettingsunopkginstall,$(SRCDIR)/jvmfwk/source))
 
-PRJNAME=javaldx
-TARGET=javaldx
-TARGETTYPE=CUI
-NO_DEFAULT_STL=TRUE
-LIBTARGET=NO
-ENABLE_EXCEPTIONS=true
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-.IF "$(OS)" != "MACOSX" && "$(SOLAR_JAVA)" != ""
-
-OBJFILES=$(OBJ)$/javaldx.obj
-
-APP1TARGET=javaldx
-APP1OBJS=$(OBJFILES)
-APP1STDLIBS=$(SALLIB) $(JVMFWKLIB)
-APP1RPATH=UREBIN
-
-.ENDIF
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
+$(eval $(call gb_Package_add_file,jvmfwk_javasettingsunopkginstall,bin/javasettingsunopkginstall.xml,javasettingsunopkginstall.xml))

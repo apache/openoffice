@@ -20,24 +20,24 @@
 #**************************************************************
 
 
-PRJ=..
 
-PRJNAME=jvmfwk
-TARGET=inc
+$(eval $(call gb_Module_Module,jvmfwk))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Module_add_targets,jvmfwk,\
+	Ant_jreproperties \
+	Library_jvmfwk \
+	Library_sunjavaplugin \
+	Package_inc \
+	Package_javasettingsunopkginstall \
+	Package_javavendors \
+	Package_jvmfwk3rc \
+	Package_sunjavapluginrc \
+))
 
-.INCLUDE :  settings.mk
+ifeq ($(GUI),UNX)
+$(eval $(call gb_Module_add_targets,jvmfwk,\
+	Executable_javaldx \
+))
+endif
 
-# --- Files --------------------------------------------------------
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-.IF "$(ENABLE_PCH)"!=""
-ALLTAR : \
-	$(SLO)$/precompiled.pch \
-	$(SLO)$/precompiled_ex.pch
-	
-.ENDIF			# "$(ENABLE_PCH)"!=""
-
+# vim: set noet sw=4 ts=4:

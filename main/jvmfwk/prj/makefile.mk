@@ -21,41 +21,24 @@
 
 
 
-PRJ = ..$/..
-PRJNAME = jvmfwk
-TARGET = vendors_ooo
+PRJ=..
+TARGET=prj
 
-.INCLUDE: settings.mk
+.INCLUDE : settings.mk
 
-.IF "$(SOLAR_JAVA)"==""
-nojava:
-	@echo "Not building jvmfwk  because Java is disabled"
-.ENDIF
-
-.IF "$(SOLAR_JAVA)"!=""
-$(BIN)$/javavendors.xml: javavendors_unx.xml javavendors_wnt.xml javavendors_macosx.xml javavendors_linux.xml
-.IF "$(GUI)"=="UNX"
-.IF "$(OS)"=="FREEBSD"
-	-$(COPY) javavendors_freebsd.xml $(BIN)$/javavendors.xml
-.ELIF "$(OS)"=="MACOSX"
-	-$(COPY) javavendors_macosx.xml $(BIN)$/javavendors.xml
-.ELIF "$(OS)"=="LINUX"
-	-$(COPY) javavendors_linux.xml $(BIN)$/javavendors.xml
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
 .ELSE
-	-$(COPY) javavendors_unx.xml $(BIN)$/javavendors.xml
+VERBOSEFLAG := -s
 .ENDIF
-.ELIF "$(GUI)"=="WNT"
-	-$(COPY) javavendors_wnt.xml $(BIN)$/javavendors.xml	
-.ELIF "$(GUI)"=="OS2"
-	-$(COPY) javavendors_os2.xml $(BIN)$/javavendors.xml	
+
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
 .ELSE
-	@echo Unsupported platform.
+DEBUG_ARGUMENT=
 .ENDIF
 
-.ENDIF          # "$(SOLAR_JAVA)"!=""
-
-
-
-
-.INCLUDE: target.mk
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
