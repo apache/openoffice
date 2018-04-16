@@ -42,7 +42,7 @@ BEGIN { # This is needed so that cygwin's perl evaluates ACLs
 }
 
 ##################################################################
-# Including the lowercase product name into the script template 
+# Including the lowercase product name into the script template
 ##################################################################
 
 sub put_productname_into_script
@@ -63,7 +63,7 @@ sub put_productname_into_script
 }
 
 #########################################################
-# Including the linenumber into the script template 
+# Including the linenumber into the script template
 #########################################################
 
 sub put_linenumber_into_script
@@ -81,7 +81,7 @@ sub put_linenumber_into_script
 }
 
 #########################################################
-# Determining the name of the new scriptfile 
+# Determining the name of the new scriptfile
 #########################################################
 
 sub determine_scriptfile_name
@@ -98,7 +98,7 @@ sub determine_scriptfile_name
 }
 
 #########################################################
-# Saving the script file in the installation directory 
+# Saving the script file in the installation directory
 #########################################################
 
 sub save_script_file
@@ -120,7 +120,7 @@ sub save_script_file
 }
 
 #########################################################
-# Including checksum and size into script file 
+# Including checksum and size into script file
 #########################################################
 
 sub put_checksum_and_size_into_script
@@ -152,7 +152,7 @@ sub put_checksum_and_size_into_script
 }
 
 #########################################################
-# Calling md5sum 
+# Calling md5sum
 #########################################################
 
 sub call_md5sum
@@ -188,7 +188,7 @@ sub call_md5sum
 }
 
 #########################################################
-# Calling md5sum 
+# Calling md5sum
 #########################################################
 
 sub get_md5sum
@@ -212,7 +212,7 @@ sub get_md5sum
 }
 
 #########################################################
-# Determining checksum and size of tar file 
+# Determining checksum and size of tar file
 #########################################################
 
 sub call_sum
@@ -245,7 +245,7 @@ sub call_sum
 }
 
 #########################################################
-# Searching for the getuid.so in the solver 
+# Searching for the getuid.so in the solver
 #########################################################
 
 sub get_path_for_library
@@ -271,7 +271,7 @@ sub get_path_for_library
 }
 
 #########################################################
-# Include the tar file into the script 
+# Include the tar file into the script
 #########################################################
 
 sub include_tar_into_script
@@ -295,7 +295,7 @@ sub include_tar_into_script
 }
 
 #########################################################
-# Create a tar file from the binary package 
+# Create a tar file from the binary package
 #########################################################
 
 sub tar_package
@@ -454,7 +454,7 @@ sub get_downloadname_productname
         {
             if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
             {
-                $start .= "-SDK"; 
+                $start .= "-SDK";
             }
         }
 
@@ -462,7 +462,7 @@ sub get_downloadname_productname
         {
             if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
             {
-                $start .= "-Dev-SDK"; 
+                $start .= "-Dev-SDK";
             }
             else
             {
@@ -764,7 +764,7 @@ sub set_download_filename
 	
 	# Setting the extension happens automatically
 
-	my $filename = $start . "_" . $versionstring . "_" . $date . "_" . $platform . "_" . $architecture . "_" . $type . "_" . $language; 
+	my $filename = $start . "_" . $versionstring . "_" . $date . "_" . $platform . "_" . $architecture . "_" . $type . "_" . $language;
 	
 	$filename =~ s/\_\_/\_/g;	# necessary, if $versionstring or $platform or $language are empty
 	$filename =~ s/\_\s*$//;	# necessary, if $language and $addon are empty
@@ -857,7 +857,7 @@ sub resolve_variables_in_downloadname
 }
 
 ##################################################################
-# Windows: Replacing one placeholder with the specified value 
+# Windows: Replacing one placeholder with the specified value
 ##################################################################
 
 sub replace_one_variable
@@ -895,7 +895,7 @@ sub convert_to_unicode
 }
 
 ##################################################################
-# Windows: Including the product name into nsi template 
+# Windows: Including the product name into nsi template
 ##################################################################
 
 sub put_windows_productname_into_template
@@ -909,7 +909,7 @@ sub put_windows_productname_into_template
 }
 
 ##################################################################
-# Windows: Including the path to the banner.bmp into nsi template 
+# Windows: Including the path to the banner.bmp into nsi template
 ##################################################################
 
 sub put_banner_bmp_into_template
@@ -939,7 +939,7 @@ sub put_banner_bmp_into_template
 }
 
 ##################################################################
-# Windows: Including the path to the welcome.bmp into nsi template 
+# Windows: Including the path to the welcome.bmp into nsi template
 ##################################################################
 
 sub put_welcome_bmp_into_template
@@ -969,7 +969,7 @@ sub put_welcome_bmp_into_template
 }
 
 ##################################################################
-# Windows: Including the path to the setup.ico into nsi template 
+# Windows: Including the path to the setup.ico into nsi template
 ##################################################################
 
 sub put_setup_ico_into_template
@@ -999,7 +999,7 @@ sub put_setup_ico_into_template
 }
 
 ##################################################################
-# Windows: Including the publisher into nsi template 
+# Windows: Including the publisher into nsi template
 ##################################################################
 
 sub put_publisher_into_template ($$)
@@ -1013,7 +1013,7 @@ sub put_publisher_into_template ($$)
 }
 
 ##################################################################
-# Windows: Including the web site into nsi template 
+# Windows: Including the web site into nsi template
 ##################################################################
 
 sub put_website_into_template ($$)
@@ -1027,7 +1027,7 @@ sub put_website_into_template ($$)
 }
 
 ##################################################################
-# Windows: Including the Java file name into nsi template 
+# Windows: Including the Java file name into nsi template
 ##################################################################
 
 sub put_javafilename_into_template
@@ -1042,7 +1042,7 @@ sub put_javafilename_into_template
 }
 
 ##################################################################
-# Windows: Including the product version into nsi template 
+# Windows: Including the product version into nsi template
 ##################################################################
 
 sub put_windows_productversion_into_template
@@ -1055,7 +1055,7 @@ sub put_windows_productversion_into_template
 }
 
 ##################################################################
-# Windows: Including the product version into nsi template 
+# Windows: Including the product version into nsi template
 ##################################################################
 
 sub put_windows_productpath_into_template
@@ -1074,7 +1074,7 @@ sub put_windows_productpath_into_template
 }
 
 ##################################################################
-# Windows: Including download file name into nsi template 
+# Windows: Including download file name into nsi template
 ##################################################################
 
 sub put_outputfilename_into_template
@@ -1089,7 +1089,7 @@ sub put_outputfilename_into_template
 }
 
 ##################################################################
-# Windows: Generating the file list in nsi file format 
+# Windows: Generating the file list in nsi file format
 ##################################################################
 
 sub get_file_list
@@ -1139,7 +1139,7 @@ sub get_file_list
 }
 
 ##################################################################
-# Windows: Including list of all files into nsi template 
+# Windows: Including list of all files into nsi template
 ##################################################################
 
 sub put_filelist_into_template
@@ -1161,7 +1161,7 @@ sub put_filelist_into_template
 }
 
 ##################################################################
-# Windows: NSIS uses specific language names 
+# Windows: NSIS uses specific language names
 ##################################################################
 
 sub nsis_language_converter
@@ -1177,7 +1177,7 @@ sub nsis_language_converter
 	if ( $language eq "en-US" ) { $nsislanguage = "English"; }
 	elsif ( $language eq "af" ) { $nsislanguage = "Afrikaans"; }
 	elsif ( $language eq "sq" ) { $nsislanguage = "Albanian"; }
-	elsif ( $language eq "ar" ) { $nsislanguage = "Arabic"; }
+	#elsif ( $language eq "ar" ) { $nsislanguage = "Arabic"; } # Temporarily disabled (Malformed LO surrogate)
 	elsif ( $language eq "hy" ) { $nsislanguage = "Armenian"; }
 	elsif ( $language eq "ast" ) { $nsislanguage = "Asturian"; }
 	elsif ( $language eq "eu" ) { $nsislanguage = "Basque"; }
@@ -1228,7 +1228,7 @@ sub nsis_language_converter
 	elsif ( $language eq "th" ) { $nsislanguage = "Thai"; }
 	elsif ( $language eq "zh-TW" ) { $nsislanguage = "TradChinese"; }
 	elsif ( $language eq "tr" ) { $nsislanguage = "Turkish"; }
-	#elsif ( $language eq "uk" ) { $nsislanguage = "Ukrainian"; } #temporarily disabled (problem in Ukrainian.nsh)
+	#elsif ( $language eq "uk" ) { $nsislanguage = "Ukrainian"; } # Temporarily disabled (Problem in Ukrainian.nsh)
 	elsif ( $language eq "vi" ) { $nsislanguage = "Vietnamese"; }
 	elsif ( $language eq "cy" ) { $nsislanguage = "Welsh"; }
 	else
@@ -1241,7 +1241,7 @@ sub nsis_language_converter
 }
 
 ##################################################################
-# Windows: Including list of all languages into nsi template 
+# Windows: Including list of all languages into nsi template
 ##################################################################
 
 sub put_language_list_into_template
@@ -1278,7 +1278,7 @@ sub put_language_list_into_template
 }
 
 ##################################################################
-# Windows: Collecting all identifier from mlf file 
+# Windows: Collecting all identifier from mlf file
 ##################################################################
 
 sub get_identifier
@@ -1372,9 +1372,9 @@ sub get_language_string_from_language_block
 }
 
 ##################################################################
-# Windows: Replacing strings in NSIS nsh file 
+# Windows: Replacing strings in NSIS nsh file
 # nsh file syntax:
-# !define MUI_TEXT_DIRECTORY_TITLE "Zielverzeichnis auswählen"
+# !define MUI_TEXT_DIRECTORY_TITLE "Choose Install Location"
 ##################################################################
 
 sub replace_identifier_in_nshfile
@@ -1397,10 +1397,10 @@ sub replace_identifier_in_nshfile
 }
 
 ##################################################################
-# Windows: Replacing strings in NSIS nlf file 
+# Windows: Replacing strings in NSIS nlf file
 # nlf file syntax (2 lines):
 # # ^DirSubText
-# Zielverzeichnis 
+# Destination Folder
 ##################################################################
 
 sub replace_identifier_in_nlffile
@@ -1425,7 +1425,7 @@ sub replace_identifier_in_nlffile
 }
 
 ##################################################################
-# Windows: Translating the NSIS nsh and nlf file 
+# Windows: Translating the NSIS nsh and nlf file
 ##################################################################
 
 sub translate_nsh_nlf_file
@@ -1451,7 +1451,7 @@ sub translate_nsh_nlf_file
 }
 
 ##################################################################
-# Converting utf 16 file to utf 8 
+# Converting utf 16 file to utf 8
 ##################################################################
 
 sub convert_utf16_to_utf8
@@ -1483,12 +1483,12 @@ sub convert_utf16_to_utf8
 }
 
 ##################################################################
-# Converting utf 8 file to utf 16 
+# Converting utf 8 file to utf 16
 ##################################################################
 
 sub convert_utf8_to_utf16
 {
-	my ( $filename ) = @_; 
+	my ( $filename ) = @_;
 
 	my @localfile = ();
 
@@ -1513,12 +1513,12 @@ sub convert_utf8_to_utf16
 }
 
 ##################################################################
-# Converting text string to utf 16 
+# Converting text string to utf 16
 ##################################################################
 
 sub convert_textstring_to_utf16
 {
-	my ( $textstring, $localnsisdir, $shortfilename ) = @_; 
+	my ( $textstring, $localnsisdir, $shortfilename ) = @_;
 
 	my $filename = $localnsisdir . $installer::globals::separator . $shortfilename;
 	my @filecontent = ();
@@ -1533,7 +1533,7 @@ sub convert_textstring_to_utf16
 }
 
 ##################################################################
-# Windows: Copying NSIS language files to local nsis directory 
+# Windows: Copying NSIS language files to local nsis directory
 ##################################################################
 
 sub copy_and_translate_nsis_language_files
@@ -1594,7 +1594,7 @@ sub copy_and_translate_nsis_language_files
 }
 
 ##################################################################
-# Windows: Including the nsis path into the nsi template 
+# Windows: Including the nsis path into the nsi template
 ##################################################################
 
 sub put_nsis_path_into_template
@@ -1605,7 +1605,7 @@ sub put_nsis_path_into_template
 }
 
 ##################################################################
-# Windows: Including the output path into the nsi template 
+# Windows: Including the output path into the nsi template
 ##################################################################
 
 sub put_output_path_into_template
@@ -1618,7 +1618,7 @@ sub put_output_path_into_template
 }
 
 ##################################################################
-# Windows: Finding the path to the nsis SDK 
+# Windows: Finding the path to the nsis SDK
 ##################################################################
 
 sub get_path_to_nsis_sdk
@@ -1642,7 +1642,7 @@ sub get_path_to_nsis_sdk
 }
 
 ##################################################################
-# Windows: Executing NSIS to create the installation set 
+# Windows: Executing NSIS to create the installation set
 ##################################################################
 
 sub call_nsis
@@ -1771,8 +1771,7 @@ sub create_link_tree
 }
 
 #######################################################
-# Setting supported platform for Sun OpenOffice.org
-# builds
+# Setting supported platform for OpenOffice builds
 #######################################################
 
 sub is_supported_platform
@@ -1839,13 +1838,13 @@ sub create_download_sets
 
 	# evaluating the name of the download file
 
-	if ( $allvariableshashref->{'AOODOWNLOADNAME'} ) 
+	if ( $allvariableshashref->{'AOODOWNLOADNAME'} )
     { 
-        $downloadname = set_download_filename($languagestringref, $allvariableshashref); 
+        $downloadname = set_download_filename($languagestringref, $allvariableshashref);
     }
 	else 
     { 
-        $downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref); 
+        $downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref);
     }
 
 	if ( ! $installer::globals::iswindowsbuild )	# Unix specific part
@@ -1888,7 +1887,7 @@ sub create_download_sets
 
 			# create tar file
 			my $temporary_tarfile_name = $downloaddir . $installer::globals::separator . 'installset.tar';
-			my $size = tar_package($installationdir, $temporary_tarfile_name, $getuidlibrary); 
+			my $size = tar_package($installationdir, $temporary_tarfile_name, $getuidlibrary);
 			installer::exiter::exit_program("ERROR: Could not create tar file $temporary_tarfile_name!", "create_download_sets") unless $size; 
 
 			# calling sum to determine checksum and size of the tar file
@@ -1903,7 +1902,7 @@ sub create_download_sets
 
             $installer::logger::Info->printf("... including installation set into %s ... \n", $newscriptfilename);
             # Append tar file to script
-			include_tar_into_script($newscriptfilename, $temporary_tarfile_name); 
+			include_tar_into_script($newscriptfilename, $temporary_tarfile_name);
 		}
 	}
 	else	# Windows specific part
@@ -1979,7 +1978,7 @@ sub create_download_link_tree
 	my ($downloaddir, $languagestringref, $allvariableshashref) = @_;
 
     $installer::logger::Info->print("\n");
-    $installer::logger::Info->print("******************************************\n"); # 
+    $installer::logger::Info->print("******************************************\n");
     $installer::logger::Info->print("... creating download hard link ...\n");
     $installer::logger::Info->print("******************************************\n");
 
