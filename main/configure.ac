@@ -171,7 +171,7 @@ AC_ARG_ENABLE(directx,
                           (DirectX SDK, GDI+ libs)
 ],,enable_directx=yes)
 AC_ARG_ENABLE(activex,
-[  --disable-activex       Disable the use of ActiveX for windows build.
+[  --disable-activex       Disable the use of ActiveX for Windows build.
                           This switch is mandatory when using VC++ 2005/2008 Express.
                           Alternatively you can use the Windows Driver Kit (WDK) and
                           configure with the following switches:
@@ -182,7 +182,7 @@ AC_ARG_ENABLE(activex,
 ],,)
 
 AC_ARG_ENABLE(atl,
-[  --disable-atl          Disable the use of ATL for windows build.
+[  --disable-atl          Disable the use of ATL for Windows build.
                           This switch is mandatory when using VC++ 2005/2008 Express.
                           Alternatively you can use the Windows Driver Kit (WDK) and
                           configure with the following switches:
@@ -193,7 +193,7 @@ AC_ARG_ENABLE(atl,
 ],,)
 
 AC_ARG_WITH(atl-include-dir,
-[  --with-atl-include-dir      Path to ATL include directory for windows build.
+[  --with-atl-include-dir      Path to ATL include directory for Windows build.
                           This switch is mandatory when using VC++ 2008 Express
                           and configuring with ATL/ActiveX enabled.
                           You can use the Windows Driver Kit (WDK) and
@@ -202,7 +202,7 @@ AC_ARG_WITH(atl-include-dir,
 ],,)
 
 AC_ARG_WITH(atl-lib-dir,
-[  --with-atl-lib-dir          Path to ATL libraries directory for windows build.
+[  --with-atl-lib-dir          Path to ATL libraries directory for Windows build.
                           This switch is mandatory when using VC++ 2008 Express
                           and configuring with ATL/ActiveX enabled.
                           You can use the Windows Driver Kit (WDK) and
@@ -211,7 +211,7 @@ AC_ARG_WITH(atl-lib-dir,
 ],,)
 
 AC_ARG_WITH(mfc-include-dir,
-[  --with-mfc-include-dir       Path to MFC include directory for windows build.
+[  --with-mfc-include-dir       Path to MFC include directory for Windows build.
                           This switch is mandatory when using VC++ 2008 Express
                           and configuring with ATL/ActiveX enabled.
                           You can use the Windows Driver Kit (WDK) and
@@ -220,7 +220,7 @@ AC_ARG_WITH(mfc-include-dir,
 ],,)
 
 AC_ARG_WITH(mfc-lib-dir,
-[  --with-mfc-lib-dir          Path to MFC libraries directory for windows build.
+[  --with-mfc-lib-dir          Path to MFC libraries directory for Windows build.
                           This switch is mandatory when using VC++ 2008 Express
                           and configuring with ATL/ActiveX enabled.
                           You can use the Windows Driver Kit (WDK) and
@@ -306,11 +306,11 @@ AC_ARG_ENABLE(cairo-canvas,
                           platforms where Cairo is available.
 ],,enable_cairo_canvas=yes)
 AC_ARG_ENABLE(opengl,
-[  --enable-opengl         Determines whether to build the OpenGL 3D slide 
+[  --enable-opengl         Determines whether to build the OpenGL 3D slide
                           transitions component
 ],,enable_opengl=no)
 AC_ARG_ENABLE(dbus,
-[  --enable-dbus           Determines whether to enable presentation mode 
+[  --enable-dbus           Determines whether to enable presentation mode
                           screensaver control under GNOME via DBUS 
 ],,enable_dbus=no)
 AC_ARG_ENABLE(gconf,
@@ -325,14 +325,14 @@ AC_ARG_ENABLE(gio,
 ],,enable_gio=yes)
 AC_ARG_ENABLE(static-gtk,
 [  --enable-static-gtk     Modules that are linked against gtk libraries use
-                          the static libraries instead of the dynamic ones. 
+                          the static libraries instead of the dynamic ones.
                           (enables -Bstatic linker flag for gtk libraries)
 ],,)
 AC_ARG_ENABLE(layout,
 [  --enable-layout         Enable the compilation and use of layout dialogs
 ],,)
 AC_ARG_ENABLE(nss-module,
-[  --disable-nss-module    Whether to use the NSS module that is used for xml-security    
+[  --disable-nss-module    Whether to use the NSS module that is used for xml-security
 ],,enable_nss_module=yes)
 AC_ARG_ENABLE(kde,
 [  --enable-kde            Determines whether to use Qt/KDE vclplug on platforms
@@ -340,7 +340,7 @@ AC_ARG_ENABLE(kde,
 ],,)
 AC_ARG_ENABLE(kde4,
 [  --enable-kde4            Determines whether to use Qt4/KDE4 vclplug on platforms
-                          where Qt4 and KDE4 are available. May be used with --enable-kde 
+                          where Qt4 and KDE4 are available. May be used with --enable-kde
                           if you want to support both KDE3 and KDE4.
 ],,)
 AC_ARG_ENABLE(rpath,
@@ -364,7 +364,7 @@ AC_ARG_ENABLE(randr,
 [  --disable-randr         disable RandR support in the vcl project
 ],,enable_randr=yes)
 AC_ARG_ENABLE(randr-link,
-[  --disable-randr-link    disable linking with libXrandr, instead dynamically 
+[  --disable-randr-link    disable linking with libXrandr, instead dynamically
                            open it at runtime
 ],,enable_randr_link=yes)
 AC_ARG_WITH(bundled-extension-blobs,
@@ -793,18 +793,18 @@ AC_ARG_ENABLE(coinmp,
 ],,)
 AC_ARG_ENABLE(check-only,
 [  --enable-check-only     Use this option option if you just want to check your
-                          environment.  This option stops the generation of an 
+                          environment.  This option stops the generation of an
                           ????env.set
  
                           Usage: --enable-check-only=yes
 ],,)
 AC_ARG_ENABLE(ccache-skip,
-[[  --enable-ccache-skip    [default=auto] allow the use of --ccache-skip to 
-                          escape compiler flags that would otherwise prevent 
+[[  --enable-ccache-skip    [default=auto] allow the use of --ccache-skip to
+                          escape compiler flags that would otherwise prevent
                           caching of the result (currently used on Mac only)
                           NOTE: requires patched version because of a bug in
                           ccache (see issue 104567 for details and patch) 
-                          explicitly enable if your version of ccache does not 
+                          explicitly enable if your version of ccache does not
                           identify as version 2.4_OOo
 ]],,enable_ccache_skip=auto)
 AC_ARG_WITH(lang,
@@ -878,7 +878,7 @@ AC_ARG_WITH(os-version,
 AC_ARG_WITH(unzip-home,
 [  --with-unzip-home       Deprecated: use --with-zip-home instead],,)
 AC_ARG_WITH(zip-home,
-[  --with-zip-home         If you use a non standard zip, for example windows
+[  --with-zip-home         If you use a non standard zip, for example Windows
                           please supply the path for zip
 
                           Usage: --with-zip-home=<path to zip executable>
@@ -1013,7 +1013,7 @@ else
 fi
 AC_SUBST(LOCAL_SOLENV)
 
-if test "$LOCAL_SOLENV" = "DEFAULT"; then 
+if test "$LOCAL_SOLENV" = "DEFAULT"; then
   _solenv="./solenv"
 else
   _solenv="$LOCAL_SOLENV"
@@ -1590,7 +1590,7 @@ fi
 AC_SUBST(BUNDLED_EXTENSION_BLOBS)
 
 #dnl ===================================================================
-#dnl Check extensions that are to be bundled as pre-registerd
+#dnl Check extensions that are to be bundled as pre-registered
 #dnl ===================================================================
 if test -n "$with_bundled_prereg_extensions"; then
 	BUNDLED_PREREG_EXTENSIONS="$with_bundled_prereg_extensions"
@@ -1639,13 +1639,13 @@ AC_SUBST(THES_SYSTEM_DIR)
 if test $_os = "WINNT"; then
    AC_MSG_CHECKING([Windows build environment sanity])
    dnl ===================================================================
-   dnl Sanity check! Native windows programs cannot use cygwin symlinks!
+   dnl Sanity check! Native Windows programs cannot use cygwin symlinks!
    dnl ===================================================================
    dnl As long as awk instead of $AWK is used somewhere in the sources,
    dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
       if test -L $AWK -o -L `which awk` -o -L `which tar` -o -L `which gunzip` ; then
          AC_MSG_ERROR([$AWK, awk, tar or gunzip is a cygwin symlink!
-Native windows programs cannot use cygwin symlinks. Remove the symbolic
+Native Windows programs cannot use cygwin symlinks. Remove the symbolic
 link, and copy the program to the name of the link.])
       fi
    dnl ===================================================================
@@ -2401,7 +2401,7 @@ AC_SUBST(FRAME_HOME)
 fi
 
 dnl ===================================================================
-dnl Check if stdc headers are available excluding windows.
+dnl Check if stdc headers are available excluding Windows.
 dnl ===================================================================
 if test "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes"; then
    AC_HEADER_STDC
@@ -3400,7 +3400,7 @@ AC_MSG_CHECKING([whether to enable EPM for packing])
 if test "$enable_epm" = "yes"; then
    AC_MSG_RESULT([yes])
    dnl ===================================================================
-   dnl Check for epm - not needed for windows
+   dnl Check for epm - not needed for Windows
    dnl ===================================================================
    if test "$_os" != "WINNT"; then
       if test -n "$with_epm"; then
@@ -5303,7 +5303,7 @@ Edition if the library ($PSDK_HOME/Lib/libcp.lib) is found.
 Remove/rename/backup that file and restart configure. Details about this
 problem can be found in issue 49856.])
     fi
-# WIndows SDK has different headers
+# Windows SDK has different headers
 	if test \( -f "$PSDK_HOME/Include/adoint.h" \) \
 		 -a \( -f "$PSDK_HOME/Include/SqlUcode.h" \) \
 		 -a \( -f "$PSDK_HOME/Include/usp10.h" \); then
