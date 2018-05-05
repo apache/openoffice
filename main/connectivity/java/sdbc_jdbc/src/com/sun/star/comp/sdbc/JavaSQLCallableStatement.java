@@ -62,7 +62,8 @@ public class JavaSQLCallableStatement extends JavaSQLPreparedStatement implement
     }
     
     // XRow
-
+    
+    @Override
     public synchronized XInputStream getBinaryStream(int columnIndex) throws SQLException {
         createStatement();
         XBlob blob = getBlob(columnIndex);
