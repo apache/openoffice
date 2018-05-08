@@ -28,7 +28,7 @@ AC_ARG_WITH(dmake-path,
 ])
 AC_ARG_WITH(dmake-url,
 [  --with-dmake-url=<URL>   Specify the location of downloadable dmake source code. For example:
-                          http://sourceforge.net/projects/oooextras.mirror/files/dmake-4.12.tar.bz2
+                          https://sourceforge.net/projects/oooextras.mirror/files/dmake-4.12.tar.bz2
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
@@ -75,31 +75,31 @@ AC_ARG_WITH(openldap,
 [  --with-openldap         Enables the use of the OpenLDAP
 ],,)
 AC_ARG_ENABLE(lockdown,
-[  --enable-lockdown       Enables the gconf integration work in OOo
+[  --enable-lockdown       Enables the gconf integration work in AOO
 ],,)
 AC_ARG_ENABLE(vba,
 [  --disable-vba           disables the vba compatibility feature
 ],,)
 AC_ARG_WITH(vba-package-format,
 [  --with-vba-package-format   specify package format for vba compatibility api.
-                          Specifying  "builtin" means the api component and 
-                          associated type library are  part of the installation set.
+                          Specifying "builtin" means the api component and
+                          associated type library are part of the installation set.
                           Specifying "extn" creates an uno extension that is
-                          part of the installation set ( located in the program 
+                          part of the installation set ( located in the program
                           directory ) that MUST be optionly registered using
                           either the unopkg executeable or the extension manager
                           gui.
-                         
+
                           Note: "builtin" is the default, "extn" can cause
                           problems.
                           Usage: --with-vba-package-format="builtin" or
                                  --with-vba-package-format="extn"
-],,)              
+],,)
 AC_ARG_ENABLE(pch,
 [  --enable-pch            EXPERIMENTAL: Enables precompiled header support for C++.
 ],,)
 AC_ARG_WITH(fonts,
-[  --without-fonts         OOo includes some third-party fonts to provide a reliable
+[  --without-fonts         AOO includes some third-party fonts to provide a reliable
                           basis for help content, templates, samples, etc.
                           When these fonts are already known to be available on the
                           system then you should use this option.
@@ -137,7 +137,7 @@ AC_ARG_WITH(epm-url,
 ],[  EPM_URL="$withval"
 ])
 AC_ARG_WITH(package-format,
-[  --with-package-format   specify package format(s) for OOo installsets.
+[  --with-package-format   specify package format(s) for AOO installsets.
                           Default is "normal" one of the OS/Distribution.
 
                           Usage: --with-package-format="foo bar"
@@ -254,7 +254,7 @@ AC_ARG_ENABLE(werror,
 ],,)
 AC_ARG_ENABLE(debug,
 [  --enable-debug          Include debugging symbols from --enable-symbols
-                          plus extra debugging code.  Extra large build!
+                          plus extra debugging code. Extra large build!
                           (enables -g compiler flag and dmake debug=true)
 ],,)
 AC_ARG_ENABLE(dbgutil,
@@ -646,11 +646,11 @@ AC_ARG_WITH(jdk-home,
                           please supply the path here.
                           Note that this is not the location of the Java binary
                           but the location of the entire distribution.
- 
+
                           Usage: --with-jdk-home=<absolute path to JDK home>
 ],,)
 AC_ARG_WITH(java,
-[  --with-java             Build with[[out]] Java support.  If you use
+[  --with-java             Build with[[out]] Java support. If you use
                           --without-java/--with-java=no then the build will have
                           no support for Java components, applets, accessibility
                           or XML filters. 
@@ -667,7 +667,7 @@ AC_ARG_WITH(ant-home,
                           please supply the path here.
                           Note that this is not the location of the Ant binary
                           but the location of the entire distribution.
- 
+
                           Usage: --with-ant-home=<absolute path to Ant home>
 ],,)
 AC_ARG_WITH(junit,
@@ -689,7 +689,7 @@ AC_ARG_WITH(perl-home,
                           system, please supply the path here.
                           Note that this is not the location of the Perl binary
                           but the location of the entire distribution.
- 
+
                           Usage: --with-perl-home=<absolute path to Perl 5 home>
 ],,)
 AC_ARG_WITH(cl-home,
@@ -697,25 +697,25 @@ AC_ARG_WITH(cl-home,
                           for the Microsoft C/C++ compiler. 
                           Note that this is not the location of the compiler
                           binary but the location of the entire distribution.
- 
+
                           Usage: --with-cl-home=<absolute path to Microsoft C/C++ compiler home>
 ],,)
 AC_ARG_WITH(mspdb-path,
 [  --with-mspdb-path       For Microsoft C/C++ compiler users, please supply the
                           path pointing to the mspdb71.dll (.NET 2003).
- 
+
                           Usage: --with-mspdb-path=<absolute path to mspdb71.dll>
 ],,)
 AC_ARG_WITH(midl-path,
 [  --with-midl-path        For Microsoft C/C++ .NET compiler users, please supply
                           the path pointing to the midl.exe.
- 
+
                           Usage: --with-midl-path=<absolute path to midl.exe>
 ],,)
 AC_ARG_WITH(csc-path,
 [  --with-csc-path         For Microsoft C/C++ .NET compiler users, please supply
                           the path pointing to the csc.exe.
- 
+
                           Usage: --with-csc-path=<absolute path to csc.exe>
 ],,)
 AC_ARG_WITH(nsis-path,
@@ -743,19 +743,19 @@ AC_ARG_WITH(frame-home,
 AC_ARG_WITH(psdk-home,
 [  --with-psdk-home        For Windows users, please supply the path to the
                           Microsoft Platform SDK.
- 
+
                           Usage: --with-psdk-home=<absolute path to Microsoft Platform SDK>
 ],,)
 AC_ARG_WITH(directx-home,
 [  --with-directx-home     For Windows users, please supply the path to the
                           Microsoft DirectX SDK.
- 
+
                           Usage: --with-directx-home=<absolute path to Microsoft DirectX SDK>
 ],,)
 AC_ARG_WITH(mozilla-build,
 [  --with-mozilla-build    For Windows users, please supply the path to the
                           mozilla build tools.
- 
+
                           Usage: --with-mozilla-build=<absolute path to mozilla build tools>
 
 						  At the moment of this writing, an installer for the mozilla build tools
@@ -764,13 +764,13 @@ AC_ARG_WITH(mozilla-build,
 AC_ARG_WITH(local-solenv,
 [  --with-local-solenv     If you have solenv in a location other than ./solenv,
                           please supply the path here.
- 
+
                           Usage: --with-local-solenv=<absolute path to solenv>
 ],,)
 AC_ARG_WITH(local-solver,
 [  --with-local-solver     if you have solver in a location other than ./solver,
                           please supply the path here.
- 
+
                           Usage: --with-local-solver=<absolute path to solver>
 ],,)
 AC_ARG_ENABLE(javascript,
@@ -795,7 +795,7 @@ AC_ARG_ENABLE(check-only,
 [  --enable-check-only     Use this option option if you just want to check your
                           environment.  This option stops the generation of an
                           ????env.set
- 
+
                           Usage: --enable-check-only=yes
 ],,)
 AC_ARG_ENABLE(ccache-skip,
@@ -916,7 +916,7 @@ AC_ARG_ENABLE(dependency-tracking,
 [  --disable-dependency-tracking  Disables generation of dependency information.
 ],,)
 AC_ARG_ENABLE(category-b,
-[  --enable-category-b     Activate components under a category B license 
+[  --enable-category-b     Activate components under a category B license
                           (see http://www.apache.org/legal/3party.html#category-b):
                           MPL (hunspell, hyphen, nss, saxon, rhino),
                           CPL (silgraphite), CPL/EPL (CoinMP), OFL (fonts).
@@ -1279,7 +1279,7 @@ fi
 
 if test "$_os" = "WINNT"; then
    dnl ===================================================================
-   dnl Set the BUILD_X64 variable. 
+   dnl Set the BUILD_X64 variable.
    dnl ===================================================================
    AC_MSG_CHECKING([whether to build/use the Windows 64bit shell extensions])
    if test "$enable_win_x64_shellext" = "" -o "$enable_win_x64_shellext" = "no"; then
@@ -1292,7 +1292,7 @@ if test "$_os" = "WINNT"; then
    AC_SUBST(BUILD_X64)
 
    dnl ===================================================================
-   dnl Set the BUILD_WIN64 variable. 
+   dnl Set the BUILD_WIN64 variable.
    dnl ===================================================================
    AC_MSG_CHECKING([whether to build 64 bit OpenOffice on 64 bit Windows])
    if test "$build_cpu" = "x86_64" ; then
@@ -1678,7 +1678,7 @@ AC_SUBST(WITH_MINGWIN)
 dnl ===================================================================
 dnl Extra check for Windows. cygwin builds need gcc to build dmake
 dnl and g++ to build guw.exe although MS cl (or MinGW) is used to
-dnl build OOo.
+dnl build AOO.
 dnl ===================================================================
 if test "$_os" = "WINNT" ; then
    AC_MSG_CHECKING([for cygwin gcc/g++])
@@ -1738,7 +1738,7 @@ CC_PATH="$COMPATH/"
 COMPATH=`echo $COMPATH | $SED "s@/[[Bb]][[Ii]][[Nn]]\\\$@@"`;
 
 dnl ===================================================================
-dnl  Test the gcc version,  3 is OK
+dnl Test the gcc version, 3 is OK
 dnl ===================================================================
 GCCVER=20995
 if test \( "$_os" != "WINNT" -o "$WITH_MINGWIN" = "yes" \) -a "$GCC" = "yes"; then
@@ -2444,7 +2444,7 @@ fi
 AC_SUBST(LFS_CFLAGS)
 
 dnl ===================================================================
-dnl Check if valgrind.h is available 
+dnl Check if valgrind.h is available
 dnl ===================================================================
 if test -n "$enable_dbgutil" && test "$enable_dbgutil" != "no"; then
    dnl Test $prefix (currently only testing for /usr and /usr/local)
@@ -2468,7 +2468,7 @@ fi
 AC_SUBST([VALGRIND_CFLAGS])
 
 dnl ===================================================================
-dnl Check if cups/cups.h is available 
+dnl Check if cups/cups.h is available
 dnl ===================================================================
 if test "$test_cups" = "yes" -a "$ENABLE_CUPS" = "TRUE" ; then
     AC_CHECK_HEADER(cups/cups.h, [],
@@ -3085,7 +3085,7 @@ you must use the "--with-jdk-home" configure option explicitly])
         dnl SUN JDK specific tests
         _jdk=`$JAVAINTERPRETER -version 2>&1 | $AWK -F'"' '{ print \$2 }' | $SED s/[[-A-Za-z]]*//`
         _jdk_ver=`echo "$_jdk" | $AWK -F. '{ print (($1 * 100) + $2) * 100 + $3;}'`
-   
+
         if test "$_jdk_ver" -lt 10500; then
              AC_MSG_ERROR([JDK is too old, you need at least 1.5])
         fi
@@ -3518,7 +3518,7 @@ rpm - RedHat software distribution
 setld - Tru64 (setld) software distribution
 native - "Native" software distribution for the platform
 portable - Portable software distribution
-OOo additionally supports:
+AOO additionally supports:
 archive - .tar.gz or .zip
 dmg - Mac OS X .dmg
 installed - installation tree
@@ -3578,7 +3578,7 @@ msi - Windows .msi
       echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       	if test "$EPM" != "no" && test "$EPM" != "internal"; then
            if test "`echo $EPM_VERSION | cut -d'.' -f1`" -lt "4"; then
-               AC_MSG_CHECKING([whether epm is patched for OOos needs])
+               AC_MSG_CHECKING([whether epm is patched for AOOs needs])
                if $GREP "Patched for Apache OpenOffice" $EPM >/dev/null 2>/dev/null; then
                   AC_MSG_RESULT([yes])
                else
@@ -4346,9 +4346,9 @@ if test -n "$with_system_saxon" -o -n "$with_system_libs" && \
         fi
 
 dnl Saxon comes in two practically available versions, the out-of-date saxonb which
-dnl supports the java extensions that OOo uses, and the up-to-date saxon he 
+dnl supports the java extensions that AOO uses, and the up-to-date saxon he
 dnl "home edition" version, which is crippled to not support those java extensions.
-dnl And as an aside the he one also needs to be tweaked to include 
+dnl And as an aside the he one also needs to be tweaked to include
 dnl a META-INF/services to broadcast that it supports the jaxp transform factory
 
         AC_MSG_CHECKING([if saxon works])
@@ -7360,7 +7360,7 @@ fi
 AC_SUBST(VERBOSE)
 
 dnl ===================================================================
-dnl Hook up OOos nodep environmental variable to automake's equivalent
+dnl Hook up AOOs nodep environmental variable to automake's equivalent
 dnl --enable-dependency-tracking configure option
 dnl ===================================================================
 AC_MSG_CHECKING([whether to enable dependency tracking])
