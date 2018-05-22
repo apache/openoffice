@@ -4724,8 +4724,7 @@ AC_MSG_ERROR([Mozilla build tooling incomplete!])
                AC_MSG_RESULT([ok])
             fi
          else
-            if test ! -d "$MOZILLABUILD/moztools" \
-               -o ! -d "$MOZILLABUILD/msys" ; then
+            if test ! -d "$MOZILLABUILD/msys" ; then
 AC_MSG_ERROR([Mozilla build tooling incomplete!])
             else
                AC_MSG_RESULT([ok])
