@@ -85,9 +85,9 @@ XMultiPropertySet
     private HashMap _handleToPropertyMap;
     private HashMap _propertyToIdMap;
     private Property[] arProperties;
-    
+
     private int lastHandle= 1;
-    
+
     protected XPropertySetInfo propertySetInfo;
     protected MultiTypeInterfaceContainer aBoundLC= new MultiTypeInterfaceContainer();
     protected MultiTypeInterfaceContainer aVetoableLC= new MultiTypeInterfaceContainer();
@@ -114,7 +114,7 @@ XMultiPropertySet
         putProperty(prop);
         assignPropertyId(prop, id);
     }
-    
+
     /** Registers a property with this helper class and associates the argument id with it.
      *  It does the same as {@link #registerProperty(Property, Object)}. The first four 
      *  arguments are used to construct a Property object.
@@ -132,13 +132,13 @@ XMultiPropertySet
         registerProperty(p, id);
     }
 
-    /** Registers a property with this  class and associates the argument id with it.
-     *  It does the same as {@link #registerProperty(Property, Object)}. The first three 
+    /** Registers a property with this class and associates the argument id with it.
+     *  It does the same as {@link #registerProperty(Property, Object)}. The first three
      *  arguments are used to construct a Property object. The value for the Property.Handle
      *  is generated and does not have to be specified here. Use this method for registering
      *  a property if you do not care about the Property's handles.
      *  Registration has to occur during
-     *  initialization of the inheriting class (i.e. within the contructor).
+     *  initialization of the inheriting class (i.e. within the constructor).
      *  @param name The property's name (Property.Name).
      *  @param type The property's type (Property.Type).
      *  @param attributes The property's attributes (Property.Attributes).
@@ -196,8 +196,6 @@ XMultiPropertySet
     {
         registerProperty(propertyName, propertyName, attributes);
     }
-        
-            
 
     /** Returns the Property object for a given property name or null if that property does 
      *  not exists (i.e. it has not been registered). Override this method 
@@ -211,7 +209,7 @@ XMultiPropertySet
     {
         return (Property) _nameToPropertyMap.get(propertyName);
     }
-    
+
     /** Returns the Property object with a handle (Property.Handle) as specified by the argument
      *  <em>nHandle</em>. The method returns null if there is no such property (i.e. it has not 
      *  been registered). Override this method if you want to implement your own mapping from handles 
@@ -223,7 +221,7 @@ XMultiPropertySet
     {
         return (Property) _handleToPropertyMap.get(nHandle);
     }
-    
+
     /** Returns an array of all Property objects or an array of length null if there
      *  are no properties. Override this method if you want to implement your own mapping from names 
      *  to Property objects. Then you also have to override {@link #initMappings}, {@link #getProperty(String)} and 
@@ -239,7 +237,7 @@ XMultiPropertySet
         }
         return arProperties;
     }
-    
+
     /** Stores a Property object so that it can be retrieved subsequently by 
      *  {@link #getProperty(String)},{@link #getProperties()},{@link #getPropertyByHandle(int)}.
      *  Override this method if you want to implement your own mapping from handles 
@@ -253,16 +251,16 @@ XMultiPropertySet
         if (prop.Handle != -1)
             _handleToPropertyMap.put(prop.Handle, prop);
     }
-    
-    /** Assigns an identifier object to a Property object so that the identifier 
+
+    /** Assigns an identifier object to a Property object so that the identifier
      *  can be obtained by {@link #getPropertyId getPropertyId} later on. The identifier
      *  is used to specify a certain storage for the property's value. If you do not
      *  override {@link #setPropertyValueNoBroadcast setPropertyValueNoBroadcast} or {@link #getPropertyValue(Property)}
-     *  then the argument <em>id</em> has to be a java.lang.String that equals the name of 
+     *  then the argument <em>id</em> has to be a java.lang.String that equals the name of
      *  the member variable that holds the Property's value.
-     *  Override this method if you want to implement your own mapping from Property objects  to ids or 
+     *  Override this method if you want to implement your own mapping from Property objects to ids or
      *  if you need ids of a type other then java.lang.String.
-     *  Then you also need to override {@link #initMappings initMappings} and {@link #getPropertyId getPropertyId}. 
+     *  Then you also need to override {@link #initMappings initMappings} and {@link #getPropertyId getPropertyId}.
      *  @param prop The Property object that is being assigned an id.
      *  @param id The object which identifies the storage used for the property's value.
      *  @see #registerProperty(Property, Object)
@@ -272,7 +270,7 @@ XMultiPropertySet
        if (id instanceof String && ((String) id).equals("") == false)
             _propertyToIdMap.put(prop, id);
     }
-    
+
     /** Returns the identifier object for a certain Property. The object must have been 
      *  previously assigned to the Property object by {@link #assignPropertyId assignPropertyId}.
      *  Override this method if you want to implement your own mapping from Property objects to ids.
@@ -376,7 +374,7 @@ XMultiPropertySet
     }
     //XPropertySet ----------------------------------------------------
     public Object getPropertyValue(String name) throws UnknownPropertyException, WrappedTargetException
-    {   
+    {
         Object ret= null;
         if (bInDispose || bDisposed)
             throw new com.sun.star.lang.DisposedException("The component has been disposed already");
@@ -384,7 +382,7 @@ XMultiPropertySet
         Property prop= getProperty(name);
         if (prop == null)
             throw new UnknownPropertyException("The property " + name + " is unknown");
-        
+
         synchronized (this) 
         {
             ret= getPropertyValue(prop);
@@ -400,7 +398,7 @@ XMultiPropertySet
         }
         return ret;
     }
-    
+
     //XPropertySet ----------------------------------------------------
     synchronized public void removePropertyChangeListener(String propName, XPropertyChangeListener listener) throws UnknownPropertyException, WrappedTargetException
     {	// all listeners are automatically released in a dispose call
@@ -434,7 +432,7 @@ XMultiPropertySet
                 listenerContainer.removeInterface(XVetoableChangeListener.class, listener);
         }
     }
-    
+
     //XPropertySet ----------------------------------------------------
     /** Sets the value of a property. 
      *  The idl description for this interfaces, stipulates that the argument value is an Any. Since a java.lang.Object
@@ -508,7 +506,7 @@ XMultiPropertySet
             throw new com.sun.star.lang.IllegalArgumentException("The property must have a value; the MAYBEVOID attribute is not set!");
         if (bInDispose || bDisposed)
             throw new DisposedException("Component is already disposed");
-        
+
         //Check if the argument is allowed
         boolean bValueOk= false;
         if (value instanceof Any)
@@ -518,7 +516,7 @@ XMultiPropertySet
         if (! bValueOk)
             throw new com.sun.star.lang.IllegalArgumentException("No valid UNO type");
             
-        
+
         boolean bConversionOk= false;
         Object[] outConvertedVal= new Object[1];
         Object[] outOldValue= new Object[1];
@@ -526,7 +524,7 @@ XMultiPropertySet
         {
             bConversionOk= convertPropertyValue(prop, outConvertedVal, outOldValue, value);
         }
-        
+
         //The next step following the conversion is to set the new value of the property. Prior to this
         // the XVetoableChangeListener s have to be notified.
         if (bConversionOk)
@@ -543,7 +541,7 @@ XMultiPropertySet
             fire( new Property[]{prop}, outConvertedVal, outOldValue, false);
         }
     }
-    
+
     /** Converts a value in a way so that it is appropriate for storing as a property value, that is 
      *  {@link #setPropertyValueNoBroadcast setPropertyValueNoBroadcast} can process the value without any further 
      *  conversion. This implementation presumes that
@@ -630,7 +628,7 @@ XMultiPropertySet
                 // also get inherited fields, but only those which are public.
                 Field propField= getClass().getDeclaredField(sMember);
                 if (propField != null)
-                {   
+                {
                     curVal[0]= propField.get(this);
                     Class memberClass= propField.getType();
                     
@@ -701,7 +699,7 @@ XMultiPropertySet
         }
         return ret;
     }
-    
+
     private boolean checkType(Object obj)
     {
         if (obj == null 
@@ -716,7 +714,7 @@ XMultiPropertySet
             return true;
         return false;
     }
-    
+
     // Param object can be an Any or other object. If obj is null then the return value is null
     private Object convert( Class cl, Object obj) throws com.sun.star.lang.IllegalArgumentException
     {
@@ -777,7 +775,7 @@ XMultiPropertySet
             throw new com.sun.star.lang.IllegalArgumentException("Could not convert the argument");
         return retVal;
     }
-    
+
     /**  Sets the value of a property. In this implementation property values are stored in member variables 
      *  (see {@link #convertPropertyValue convertPropertyValue} Notification of property listeners
      *  does not occur in this method. By overriding this method one can take full control about how property values
@@ -857,7 +855,7 @@ XMultiPropertySet
         }
         return ret;
     }
-    
+
     /**
      *  This method fires events to XPropertyChangeListener,XVetoableChangeListener and
      *  XPropertiesChangeListener event sinks.
@@ -963,7 +961,7 @@ XMultiPropertySet
             throw new UnknownPropertyException(" The property with handle : " + nHandle +" is unknown");
         setPropertyValue(prop, aValue);
     }
-    
+
     // XFastPropertySet --------------------------------------------------------------------------------
     public Object getFastPropertyValue(int nHandle ) throws UnknownPropertyException, 
     WrappedTargetException
@@ -979,7 +977,7 @@ XMultiPropertySet
     {
         listenerContainer.addInterface(XPropertiesChangeListener.class, listener);
     }    
-    
+
     // XMultiPropertySet -----------------------------------------------------------------------------------
     public void firePropertiesChangeEvent(String[] propNames, XPropertiesChangeListener listener)
     {
@@ -1009,7 +1007,7 @@ XMultiPropertySet
                 }
             }
         }
-        
+
         // fire events from unsynchronized section so as to prevent deadlocks
         if (eventCount > 0)
         {
@@ -1047,12 +1045,12 @@ XMultiPropertySet
         }
         return arValues;
     }
-    // XMultiPropertySet -----------------------------------------------------------------------------------    
+    // XMultiPropertySet -----------------------------------------------------------------------------------
     public void removePropertiesChangeListener(XPropertiesChangeListener xPropertiesChangeListener)
     {
         listenerContainer.removeInterface(XPropertiesChangeListener.class, xPropertiesChangeListener);
     }
-    // XMultiPropertySet -----------------------------------------------------------------------------------  
+    // XMultiPropertySet -----------------------------------------------------------------------------------
     /** If the array of property names contains an unknown property then it will be ignored.
      */
     public void setPropertyValues(String[] propNames, Object[] values) throws PropertyVetoException, com.sun.star.lang.IllegalArgumentException, com.sun.star.lang.WrappedTargetException
@@ -1070,7 +1068,7 @@ XMultiPropertySet
             
         }
     }
-    
+
     private class PropertySetInfo implements XPropertySetInfo
     {
         public com.sun.star.beans.Property[] getProperties()
@@ -1090,8 +1088,5 @@ XMultiPropertySet
         
     }
 }
-    
-    
-    
-    
+
 

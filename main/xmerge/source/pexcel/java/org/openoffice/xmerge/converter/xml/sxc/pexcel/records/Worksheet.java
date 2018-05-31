@@ -61,7 +61,7 @@ public class Worksheet {
 	}
 	
 	/**
- 	 * Default Contructor	
+ 	 * Default Constructor	
  	 */
 	public Worksheet() {
 	}	
@@ -97,8 +97,8 @@ public class Worksheet {
 	}
 
 	/**
- 	 *	Reads a worksheet from the <code>InputStream</code> and contructs a
-	 *	workbook object from it 
+ 	 *	Reads a worksheet from the <code>InputStream</code> and constructs a
+	 *	workbook object from it
 	 *
  	 * @param	is InputStream containing a Pocket Excel Data file.
  	 */

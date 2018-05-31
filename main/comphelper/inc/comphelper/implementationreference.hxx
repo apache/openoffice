@@ -152,7 +152,7 @@ namespace comphelper
             queried for the template-parameterized UNO type.
 
             @param dummy
-            Dummy parameter, to distinguish this contructor from the
+            Dummy parameter, to distinguish this constructor from the
             default unary one (which does not perform a
             QueryInterface)
          */
@@ -192,7 +192,7 @@ namespace comphelper
 			interface
          */
         ImplementationType* 		get() { return mpImpl; }
-        const ImplementationType* 	get() const { return mpImpl; }        
+        const ImplementationType* 	get() const { return mpImpl; }
 
         /** Release all references
 
@@ -206,7 +206,7 @@ namespace comphelper
         	This method releases the UNO interface reference, and
         	clears the C++ pointer to NULL.
          */
-        void						dispose() { mxRef = NULL; mpImpl=NULL; }        
+        void						dispose() { mxRef = NULL; mpImpl=NULL; }
 
         ImplementationType* 		operator->() { return mpImpl; }
         const ImplementationType* 	operator->() const { return mpImpl; }

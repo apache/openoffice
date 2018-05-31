@@ -540,9 +540,9 @@ sal_Bool PDFExport::Export( const OUString& rFile, const Sequence< PropertyValue
 				else if ( rFilterData[ nData ].Name == OUString( RTL_CONSTASCII_USTRINGPARAM( "PermissionPassword" ) ) )
 					rFilterData[ nData ].Value >>= aPermissionPassword;
 				else if ( rFilterData[ nData ].Name == OUString( RTL_CONSTASCII_USTRINGPARAM( "PreparedPasswords" ) ) )
-				    rFilterData[ nData ].Value >>= xEnc;
+					rFilterData[ nData ].Value >>= xEnc;
 				else if ( rFilterData[ nData ].Name == OUString( RTL_CONSTASCII_USTRINGPARAM( "PreparedPermissionPassword" ) ) )
-				    rFilterData[ nData ].Value >>= aPreparedPermissionPassword;
+					rFilterData[ nData ].Value >>= aPreparedPermissionPassword;
 				else if ( rFilterData[ nData ].Name == OUString( RTL_CONSTASCII_USTRINGPARAM( "Printing" ) ) )
 					rFilterData[ nData ].Value >>= mnPrintAllowed;
 				else if ( rFilterData[ nData ].Name == OUString( RTL_CONSTASCII_USTRINGPARAM( "Changes" ) ) )
@@ -591,7 +591,7 @@ sal_Bool PDFExport::Export( const OUString& rFile, const Sequence< PropertyValue
                 break;
             }
 
-//copy in context the values default in the contructor or set by the FilterData sequence of properties
+//copy in context the values default in the constructor or set by the FilterData sequence of properties
 			aContext.Tagged		= mbUseTaggedPDF;
 
 //values used in viewer
@@ -731,7 +731,7 @@ sal_Bool PDFExport::Export( const OUString& rFile, const Sequence< PropertyValue
             // which is sadly out out our control
             aPermissionPassword = rtl::OUString();
             aOpenPassword = rtl::OUString();
-            
+
             /*
             * FIXME: the entries are only implicitly defined by the resource file. Should there
             * ever be an additional form submit format this could get invalid.
