@@ -57,7 +57,7 @@ sub select_language_items
 			# Files with style "LANGUAGEPACK" and "FORCELANGUAGEPACK" also have to be included into the language pack.
 			# Files with style "LANGUAGEPACK" are only included into language packs.
 			# Files with style "FORCELANGUAGEPACK" are included into language packs and non language packs. They are
-			# forced, because otherwise they not not be included into languagepacks.
+			# forced, because otherwise they will not be included into languagepacks.
 			
 			my $styles = "";
 			if ( $oneitem->{'Styles'} ) { $styles = $oneitem->{'Styles'}; }
@@ -102,10 +102,10 @@ sub select_language_items
 #               # no more collecting of language pack feature				
 #				if (! installer::existence::exists_in_array($oneitem->{'modules'}, \@installer::globals::languagepackfeature))
 #				{
-#					push(@installer::globals::languagepackfeature, $oneitem->{'modules'});	# Collecting all language pack feature 
+#					push(@installer::globals::languagepackfeature, $oneitem->{'modules'});	# Collecting all language pack feature
 #				}
 
-				push(@itemsarray, $oneitem); 	
+				push(@itemsarray, $oneitem);
 			}
 		}
 	}
@@ -184,7 +184,7 @@ sub create_tar_gz_file
 }
 
 #########################################################
-# Determining the name of the package file 
+# Determining the name of the package file
 #########################################################
 
 sub get_packagename_from_packagelist
@@ -218,7 +218,7 @@ sub get_packagename_from_packagelist
 #########################################################
 # Determining the name of the package file or the rpm
 # in the installation directory. For language packs
-# there is only one file in this directory 
+# there is only one file in this directory
 #########################################################
 
 sub determine_packagename
@@ -234,7 +234,7 @@ sub determine_packagename
 			
 		my $fileextension = "rpm";
 		my $rpmfiles = installer::systemactions::find_file_with_file_extension($fileextension, $installdir);
-		if ( ! ( $#{$rpmfiles} > -1 )) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); } 
+		if ( ! ( $#{$rpmfiles} > -1 )) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); }
 		my $rpmsav = installer::converter::copy_array_from_references($rpmfiles);
 		for ( my $i = 0; $i <= $#{$rpmfiles}; $i++ ) { installer::pathanalyzer::make_absolute_filename_to_relative_filename(\${$rpmfiles}[$i]); }
 
@@ -256,7 +256,7 @@ sub determine_packagename
 		# determining the Solaris package file in directory $installdir
 		my $alldirs = installer::systemactions::get_all_directories($installdir);
 
-		if ( ! ( $#{$alldirs} > -1 )) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); } 
+		if ( ! ( $#{$alldirs} > -1 )) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); }
 		my $alldirssav = installer::converter::copy_array_from_references($alldirs);
 		for ( my $i = 0; $i <= $#{$alldirs}; $i++ ) { installer::pathanalyzer::make_absolute_filename_to_relative_filename(\${$alldirs}[$i]); }
 
@@ -275,7 +275,7 @@ sub determine_packagename
 
 #########################################################
 # Including the name of the package file or the rpm
-# into the script template 
+# into the script template
 #########################################################
 
 sub put_packagename_into_script
@@ -307,7 +307,7 @@ sub put_packagename_into_script
 }
 
 ##################################################################
-# Including the lowercase product name into the script template 
+# Including the lowercase product name into the script template
 ##################################################################
 
 sub put_productname_into_script
@@ -329,7 +329,7 @@ sub put_productname_into_script
 
 ##################################################################
 # Including the full product name into the script template
-# (name and version) 
+# (name and version)
 ##################################################################
 
 sub put_fullproductname_into_script
@@ -352,7 +352,7 @@ sub put_fullproductname_into_script
 
 ##################################################################
 # Including the name of the search package (-core01)
-# into the script template 
+# into the script template
 ##################################################################
 
 sub put_searchpackage_into_script
@@ -379,7 +379,7 @@ sub put_searchpackage_into_script
 }
 
 #########################################################
-# Including the linenumber into the script template 
+# Including the linenumber into the script template
 #########################################################
 
 sub put_linenumber_into_script
@@ -398,7 +398,7 @@ sub put_linenumber_into_script
 }
 
 #########################################################
-# Determining the name of the new scriptfile 
+# Determining the name of the new scriptfile
 #########################################################
 
 sub determine_scriptfile_name
@@ -419,7 +419,7 @@ sub determine_scriptfile_name
 }
 
 #########################################################
-# Saving the script file in the installation directory 
+# Saving the script file in the installation directory
 #########################################################
 
 sub save_script_file
@@ -436,7 +436,7 @@ sub save_script_file
 }
 
 #########################################################
-# Including the binary package into the script 
+# Including the binary package into the script
 #########################################################
 
 sub include_package_into_script
@@ -468,7 +468,7 @@ sub include_package_into_script
 }
 
 #########################################################
-# Removing the binary package 
+# Removing the binary package
 #########################################################
 
 sub remove_package
@@ -490,7 +490,7 @@ sub remove_package
 }
 
 ####################################################
-# Unix language packs, that are not part of 
+# Unix language packs, that are not part of
 # multilingual installation sets, need a
 # shell script installer
 ####################################################
@@ -510,7 +510,7 @@ sub build_installer_for_languagepack
 	if ($$scriptref eq "") { installer::exiter::exit_program("ERROR: Could not find script file $scriptfilename!", "build_installer_for_languagepack"); }
 	my $scriptfile = installer::files::read_file($$scriptref);
 
-	my $infoline = "Found  script file $scriptfilename: $$scriptref \n";
+	my $infoline = "Found script file $scriptfilename: $$scriptref \n";
 	$installer::logger::Lang->print($infoline);
 
 	# find and read english license file
