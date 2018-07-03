@@ -3957,13 +3957,11 @@ if test  "$_os" = "Darwin"; then
       fi
 
       MACOSX_SDK_PATH=$sdk_path
-      SDKROOT=$sdk_path
    fi
 
 fi
 AC_SUBST(MACOSX_DEPLOYMENT_TARGET)
 AC_SUBST(MACOSX_SDK_PATH)
-AC_SUBST(SDKROOT)
 
 
 dnl ===================================================================
