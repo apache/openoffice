@@ -19,13 +19,13 @@
  * under the License.
  * 
  ***********************************************************-->
-<project name="Check OpenOffice License Files" default="buildsources" 
+<project name="Check OpenOffice License Files" default="buildsources"
          xmlns:rat="antlib:org.apache.rat.anttasks"
          xmlns="antlib:org.apache.tools.ant">
   <description>
     Check over Apache OpenOffice source files for license headers.
   </description>
-  <property name="version" value="AOO 4.1.0"/>
+  <property name="version" value="AOO 4.2.0"/>
   <property environment="env"/>
   <property name="src-dir" location="${env.SRC_ROOT}/.."/>
 
@@ -89,7 +89,7 @@ Excluded files of local and global solvers
   <!-- Import the rat scan as ant command.
   -->
   <target name="taskdef">
-    <typedef resource="org/apache/rat/anttasks/antlib.xml" 
+    <typedef resource="org/apache/rat/anttasks/antlib.xml"
              uri="antlib:org.apache.rat.anttasks">
       <classpath>
         <fileset dir="${RAT_JAR_HOME}">
