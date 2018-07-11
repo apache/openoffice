@@ -95,7 +95,7 @@ void ImplUpdateJobSetupPaper( JobSetup& rJobSetup )
 		if ( pConstData->mePaperFormat != PAPER_USER )
 		{
 			ImplJobSetup* pData  = rJobSetup.ImplGetData();
-            PaperInfo aInfo(pConstData->mePaperFormat);
+			PaperInfo aInfo(pConstData->mePaperFormat);
 			pData->mnPaperWidth  = aInfo.getWidth();
 			pData->mnPaperHeight = aInfo.getHeight();
 		}
@@ -132,23 +132,23 @@ PrinterOptions::~PrinterOptions()
 {
 }
 
-#define	PROPERTYNAME_REDUCETRANSPARENCY	                rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceTransparency"))
-#define	PROPERTYNAME_REDUCEDTRANSPARENCYMODE	        rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedTransparencyMode"))
-#define	PROPERTYNAME_REDUCEGRADIENTS		            rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceGradients"))
-#define	PROPERTYNAME_REDUCEDGRADIENTMODE		        rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedGradientMode"))
-#define PROPERTYNAME_REDUCEDGRADIENTSTEPCOUNT           rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedGradientStepCount"))
-#define PROPERTYNAME_REDUCEBITMAPS                      rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceBitmaps"))
-#define PROPERTYNAME_REDUCEDBITMAPMODE                  rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapMode"))
-#define PROPERTYNAME_REDUCEDBITMAPRESOLUTION            rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapResolution"))
-#define PROPERTYNAME_REDUCEDBITMAPINCLUDESTRANSPARENCY  rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapIncludesTransparency"))
-#define PROPERTYNAME_CONVERTTOGREYSCALES                rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ConvertToGreyscales"))
+#define PROPERTYNAME_REDUCETRANSPARENCY			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceTransparency"))
+#define PROPERTYNAME_REDUCEDTRANSPARENCYMODE		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedTransparencyMode"))
+#define PROPERTYNAME_REDUCEGRADIENTS			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceGradients"))
+#define PROPERTYNAME_REDUCEDGRADIENTMODE		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedGradientMode"))
+#define PROPERTYNAME_REDUCEDGRADIENTSTEPCOUNT		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedGradientStepCount"))
+#define PROPERTYNAME_REDUCEBITMAPS			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReduceBitmaps"))
+#define PROPERTYNAME_REDUCEDBITMAPMODE			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapMode"))
+#define PROPERTYNAME_REDUCEDBITMAPRESOLUTION		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapResolution"))
+#define PROPERTYNAME_REDUCEDBITMAPINCLUDESTRANSPARENCY	rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ReducedBitmapIncludesTransparency"))
+#define PROPERTYNAME_CONVERTTOGREYSCALES		rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("ConvertToGreyscales"))
 
 bool PrinterOptions::ReadFromConfig( bool i_bFile )
 {
     bool bSuccess = false;
     // save old state in case something goes wrong
     PrinterOptions aOldValues( *this );
-    
+
     // get the configuration service
     Reference< XMultiServiceFactory > xConfigProvider;
     Reference< XNameAccess > xConfigAccess;
@@ -206,7 +206,7 @@ bool PrinterOptions::ReadFromConfig( bool i_bFile )
                                 SetReducedBitmapIncludesTransparency( bValue );
                             if( xSet->getPropertyValue(PROPERTYNAME_CONVERTTOGREYSCALES) >>= bValue )
                                 SetConvertToGreyscales( bValue );
-                            
+
                             bSuccess = true;
                         }
                     }
@@ -220,7 +220,7 @@ bool PrinterOptions::ReadFromConfig( bool i_bFile )
     catch( WrappedTargetException& )
     {
     }
-    
+
     if( ! bSuccess )
         *this = aOldValues;
     return bSuccess;
@@ -264,7 +264,7 @@ QueueInfo::~QueueInfo()
 bool QueueInfo::operator==( const QueueInfo& rInfo ) const
 {
 	return
-		maPrinterName	== rInfo.maPrinterName	&&
+		maPrinterName		== rInfo.maPrinterName		&&
 		maDriver		== rInfo.maDriver		&&
 		maLocation		== rInfo.maLocation		&&
 		maComment		== rInfo.maComment		&&
@@ -400,8 +400,8 @@ const std::vector<rtl::OUString>& Printer::GetPrinterQueues()
 {
 	ImplSVData* 		pSVData = ImplGetSVData();
 	if ( !pSVData->maGDIData.mpPrinterQueueList )
-		ImplInitPrnQueueList();    
-    return pSVData->maGDIData.mpPrinterQueueList->m_aPrinterList;
+		ImplInitPrnQueueList();
+	return pSVData->maGDIData.mpPrinterQueueList->m_aPrinterList;
 }
 
 // -----------------------------------------------------------------------
@@ -417,16 +417,16 @@ const QueueInfo* Printer::GetQueueInfo( const String& rPrinterName, bool bStatus
     {
         if( !pInfo->mpQueueInfo || bStatusUpdate )
             pSVData->mpDefInst->GetPrinterQueueState( pInfo->mpSalQueueInfo );
-        
+
         if ( !pInfo->mpQueueInfo )
             pInfo->mpQueueInfo = new QueueInfo;
-        
+
         pInfo->mpQueueInfo->maPrinterName	= pInfo->mpSalQueueInfo->maPrinterName;
         pInfo->mpQueueInfo->maDriver		= pInfo->mpSalQueueInfo->maDriver;
         pInfo->mpQueueInfo->maLocation		= pInfo->mpSalQueueInfo->maLocation;
         pInfo->mpQueueInfo->maComment		= pInfo->mpSalQueueInfo->maComment;
         pInfo->mpQueueInfo->mnStatus		= pInfo->mpSalQueueInfo->mnStatus;
-        pInfo->mpQueueInfo->mnJobs			= pInfo->mpSalQueueInfo->mnJobs;
+        pInfo->mpQueueInfo->mnJobs		= pInfo->mpSalQueueInfo->mnJobs;
         return pInfo->mpQueueInfo;
     }
     return NULL;
@@ -440,35 +440,35 @@ XubString Printer::GetDefaultPrinterName()
     if( !pEnv || !*pEnv )
     {
         ImplSVData* pSVData = ImplGetSVData();
-    
+
         return pSVData->mpDefInst->GetDefaultPrinter();
     }
-    return XubString();        
+    return XubString();
 }
 
 // =======================================================================
 
 void Printer::ImplInitData()
 {
-	mbDevOutput 		= sal_False;
+	mbDevOutput		= sal_False;
 	meOutDevType		= OUTDEV_PRINTER;
 	mbDefPrinter		= sal_False;
-	mnError 			= 0;
-	mnCurPage			= 0;
+	mnError			= 0;
+	mnCurPage		= 0;
 	mnCurPrintPage		= 0;
-	mnPageQueueSize 	= 0;
-	mnCopyCount 		= 1;
+	mnPageQueueSize		= 0;
+	mnCopyCount		= 1;
 	mbCollateCopy		= sal_False;
-	mbPrinting			= sal_False;
-	mbJobActive 		= sal_False;
-	mbPrintFile 		= sal_False;
+	mbPrinting		= sal_False;
+	mbJobActive		= sal_False;
+	mbPrintFile		= sal_False;
 	mbInPrintPage		= sal_False;
 	mbNewJobSetup		= sal_False;
 	mpInfoPrinter		= NULL;
-	mpPrinter			= NULL;
+	mpPrinter		= NULL;
 	mpDisplayDev		= NULL;
 	mbIsQueuePrinter	= sal_False;
-    mpPrinterOptions    = new PrinterOptions;
+	mpPrinterOptions	= new PrinterOptions;
 
 	// Printer in die Liste eintragen
 	ImplSVData* pSVData = ImplGetSVData();
@@ -486,10 +486,10 @@ void Printer::ImplInitData()
 void Printer::ImplInit( SalPrinterQueueInfo* pInfo )
 {
 	ImplSVData* pSVData = ImplGetSVData();
-    // #i74084# update info for this specific SalPrinterQueueInfo
-    pSVData->mpDefInst->GetPrinterQueueState( pInfo );
+	// #i74084# update info for this specific SalPrinterQueueInfo
+	pSVData->mpDefInst->GetPrinterQueueState( pInfo );
 
-	// Testen, ob Treiber ueberhaupt mit dem JobSetup uebereinstimmt
+	// Testen, ob Treiber überhaupt mit dem JobSetup übereinstimmt
 	ImplJobSetup* pJobSetup = maJobSetup.ImplGetData();
 
 	if ( pJobSetup->mpDriverData )
@@ -512,7 +512,7 @@ void Printer::ImplInit( SalPrinterQueueInfo* pInfo )
 	pJobSetup->maDriver = maDriver;
 
 	mpInfoPrinter	= pSVData->mpDefInst->CreateInfoPrinter( pInfo, pJobSetup );
-	mpPrinter		= NULL;
+	mpPrinter	= NULL;
 	mpJobGraphics	= NULL;
 	ImplUpdateJobSetupPaper( maJobSetup );
 
@@ -522,14 +522,14 @@ void Printer::ImplInit( SalPrinterQueueInfo* pInfo )
 		return;
 	}
 
-	// we need a graphics
+	// we need a graphic
 	if ( !ImplGetGraphics() )
 	{
 		ImplInitDisplay( NULL );
 		return;
 	}
 
-	// Daten initialisieren
+	// initialize data
 	ImplUpdatePageData();
 	mpFontList = new ImplDevFontList();
 	mpFontCache = new ImplFontCache( sal_True );
@@ -897,7 +897,7 @@ sal_Bool Printer::SetPrinterProps( const Printer* pPrinter )
 
 	if ( pPrinter->IsDisplayPrinter() )
 	{
-		// Alten Printer zerstoeren
+		// Alten Printer zerstören
 		if ( !IsDisplayPrinter() )
 		{
 			ImplReleaseGraphics();
@@ -933,7 +933,7 @@ sal_Bool Printer::SetPrinterProps( const Printer* pPrinter )
 		return sal_True;
 	}
 
-	// Alten Printer zerstoeren?
+	// Alten Printer zerstören?
 	if ( GetName() != pPrinter->GetName() )
 	{
 		ImplReleaseGraphics();
@@ -1106,7 +1106,7 @@ void Printer::ImplFindPaperFormatForUserSize( JobSetup& aJobSetup, bool bMatchNe
 
 	// If the printer supports landscape orientation, check paper sizes again
 	// with landscape orientation. This is necessary as a printer driver provides
-	// all paper sizes with portrait orientation only!!
+	// all paper sizes with portrait orientation only!
 	if ( pSetupData->mePaperFormat == PAPER_USER &&
 		 nLandscapeAngle != 0 &&
 		 HasSupport( SUPPORT_SET_ORIENTATION ))
@@ -1128,7 +1128,7 @@ void Printer::ImplFindPaperFormatForUserSize( JobSetup& aJobSetup, bool bMatchNe
 			}
 		}
 	}
-    
+
     if( ! bFound && bMatchNearest )
     {
          sal_Int64 nBestMatch = SAL_MAX_INT64;
@@ -1137,11 +1137,11 @@ void Printer::ImplFindPaperFormatForUserSize( JobSetup& aJobSetup, bool bMatchNe
          for( int i = 0; i < nPaperCount; i++ )
          {
              const PaperInfo& rPaperInfo = GetPaperInfo( i );
-             
-             // check protrait match
+
+             // check portrait match
              sal_Int64 nDX = pSetupData->mnPaperWidth - rPaperInfo.getWidth();
              sal_Int64 nDY = pSetupData->mnPaperHeight - rPaperInfo.getHeight();
-             sal_Int64 nMatch = nDX*nDX + nDY*nDY;             
+             sal_Int64 nMatch = nDX*nDX + nDY*nDY;
              if( nMatch < nBestMatch )
              {
                  nBestMatch = nMatch;
@@ -1314,7 +1314,7 @@ rtl::OUString Printer::GetPaperName( Paper ePaper )
                 (*pSVData->mpPaperNames)[PaperIndex[i]] = aPaperStrings.GetString(i);
         }
     }
-    
+
     std::hash_map<int,rtl::OUString>::const_iterator it = pSVData->mpPaperNames->find( (int)ePaper );
     return (it != pSVData->mpPaperNames->end()) ? it->second : rtl::OUString();
 }
@@ -1334,13 +1334,13 @@ rtl::OUString Printer::GetPaperName( bool i_bPaperUser ) const
 
 const PaperInfo& Printer::GetPaperInfo( int nPaper ) const
 {
-    if( ! mpInfoPrinter )
-        return ImplGetEmptyPaper();
-    if( ! mpInfoPrinter->m_bPapersInit )
-        mpInfoPrinter->InitPaperFormats( maJobSetup.ImplGetConstData() );
-    if( mpInfoPrinter->m_aPaperFormats.empty() || nPaper < 0 || nPaper >= int(mpInfoPrinter->m_aPaperFormats.size()) )
-        return ImplGetEmptyPaper();
-    return mpInfoPrinter->m_aPaperFormats[nPaper];
+	if( ! mpInfoPrinter )
+		return ImplGetEmptyPaper();
+	if( ! mpInfoPrinter->m_bPapersInit )
+		mpInfoPrinter->InitPaperFormats( maJobSetup.ImplGetConstData() );
+	if( mpInfoPrinter->m_aPaperFormats.empty() || nPaper < 0 || nPaper >= int(mpInfoPrinter->m_aPaperFormats.size()) )
+		return ImplGetEmptyPaper();
+	return mpInfoPrinter->m_aPaperFormats[nPaper];
 }
 
 // -----------------------------------------------------------------------
@@ -1391,7 +1391,7 @@ sal_Bool Printer::SetDuplexMode( DuplexMode eDuplex )
 
 int Printer::GetLandscapeAngle() const
 {
-    return mpInfoPrinter ? mpInfoPrinter->GetLandscapeAngle( maJobSetup.ImplGetConstData() ) : 900;
+	return mpInfoPrinter ? mpInfoPrinter->GetLandscapeAngle( maJobSetup.ImplGetConstData() ) : 900;
 }
 
 // -----------------------------------------------------------------------
@@ -1429,7 +1429,7 @@ XubString Printer::GetPaperBinName( sal_uInt16 nPaperBin ) const
 sal_Bool Printer::SetCopyCount( sal_uInt16 nCopy, sal_Bool bCollate )
 {
 	mnCopyCount = nCopy;
-    mbCollateCopy = bCollate;
+	mbCollateCopy = bCollate;
 	return sal_True;
 }
 
@@ -1507,9 +1507,9 @@ sal_Bool Printer::EndJob()
 
         mbDevOutput = sal_False;
         bRet = mpPrinter->EndJob();
-        // Hier den Drucker nicht asyncron zerstoeren, da es
+        // Hier den Drucker nicht asyncron zerstören, da es
         // W95 nicht verkraftet, wenn gleichzeitig gedruckt wird
-        // und ein Druckerobjekt zerstoert wird
+        // und ein Druckerobjekt zerstört wird
         ImplGetSVData()->mpDefInst->DestroyPrinter( mpPrinter );
         mpPrinter = NULL;
 	}
@@ -1526,7 +1526,7 @@ sal_Bool Printer::AbortJob()
 	if ( !IsJobActive() && !IsPrinting() )
 		return sal_False;
 
-	mbJobActive 	= sal_False;
+	mbJobActive	= sal_False;
 	mbInPrintPage	= sal_False;
 	mpJobGraphics	= NULL;
 
@@ -1534,7 +1534,7 @@ sal_Bool Printer::AbortJob()
 	{
 		mbPrinting		= sal_False;
 		mnCurPage		= 0;
-		mnCurPrintPage	= 0;
+		mnCurPrintPage		= 0;
 		maJobName.Erase();
 
         ImplReleaseGraphics();
@@ -1607,7 +1607,7 @@ void Printer::updatePrinters()
 	{
         ImplPrnQueueList* pNewList = new ImplPrnQueueList;
         pSVData->mpDefInst->GetPrinterQueueInfo( pNewList );
-        
+
         bool bChanged = pPrnList->m_aQueueInfos.size() != pNewList->m_aQueueInfos.size();
         for( unsigned int i = 0; ! bChanged && i < pPrnList->m_aQueueInfos.size(); i++ )
         {
