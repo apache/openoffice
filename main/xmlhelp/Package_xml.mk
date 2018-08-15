@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,30 +17,10 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Package_Package,xmlhelp_xml,$(SRCDIR)/xmlhelp))
 
-PRJNAME=	xmlhelp
-TARGET=	    jautil	
-AUTOSEG=	TRUE
-
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :	settings.mk
-
-.IF "$(GUI)"=="WNT"
-CFLAGS+=-GR
-.ENDIF
-
-SLOFILES=\
-		$(SLO)$/Decompressor.obj
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :	target.mk
-
+$(eval $(call gb_Package_add_file,xmlhelp_xml,xml/ucpchelp.xml,util/ucpchelp.xml))

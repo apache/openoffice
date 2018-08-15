@@ -21,25 +21,24 @@
 
 
 
-PRJ=..$/..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME=	xmlhelp
-TARGET=	    jaqe	
-AUTOSEG=	TRUE
+.INCLUDE : settings.mk
 
-ENABLE_EXCEPTIONS=TRUE
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :	settings.mk
-
-.IF "$(GUI)"=="WNT"
-CFLAGS+=-GR
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
 .ENDIF
 
-SLOFILES=$(SLO)$/DocGenerator.obj
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :	target.mk
-
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

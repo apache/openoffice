@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,11 +17,16 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-# define HELPLINKER_DLLIMPLEMENTATION (see @ inc/xmlhelp/helplinkerdllapi.h)
-CDEFS += -DHELPLINKER_DLLIMPLEMENTATION
+$(eval $(call gb_Zip_Zip,helpxsl,$(SRCDIR)/xmlhelp/util))
 
-VISIBILITY_HIDDEN=TRUE
+$(eval $(call gb_Zip_add_files,helpxsl,\
+	idxcaption.xsl \
+	idxcontent.xsl \
+	main_transform.xsl \
+))
+
+# vim: set noet sw=4 ts=4:
