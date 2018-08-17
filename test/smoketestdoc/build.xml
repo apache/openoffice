@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+
+<project name="smoketest" default="smoketest">
+    <dirname property="project.dir" file="${ant.file.smoketest}"/>
+    <property file="${project.dir}/../../main/ant.properties"/>
+
+    <property name="data.dir" value="${project.dir}/data"/>
+    <property name="build.base.dir" value="${project.dir}/target"/>
+    <property name="jar.dir" value="${build.base.dir}/TestExtension"/>
+    <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
+
+    <target name="init-project">
+        <property name="jar.name" value="TestExtension"/>
+        <property name="jar.manifest" value="${project.dir}/MANIFEST.MF"/>
+        <mkdir dir="${build.base.dir}/TestExtension"/>
+
+        <path id="main.classpath">
+            <pathelement location="${OUTDIR}/bin/juh.jar"/>
+            <pathelement location="${OUTDIR}/bin/jurt.jar"/>
+            <pathelement location="${OUTDIR}/bin/ridl.jar"/>
+            <pathelement location="${OUTDIR}/bin/unoil.jar"/>
+        </path>
+
+        <filelist id="idl.files">
+            <file name="${main.src.dir}/com/sun/star/comp/smoketest/TestExtension.idl"/>
+        </filelist>
+    </target>
+
+    <target name="pre-clean">
+        <delete dir="${project.dir}/target"/>
+    </target>
+
+    <target name="smoketestdoc">
+        <mkdir dir="${project.dir}/target/smoketestdoc"/>
+        <copy todir="${project.dir}/target/smoketestdoc">
+            <resources>
+                <file name="${data.dir}/content.xml"/>
+                <file name="${data.dir}/meta.xml"/>
+                <file name="${data.dir}/settings.xml"/>
+                <file name="${data.dir}/styles.xml"/>
+            </resources>
+        </copy>
+        <echo message="application/vnd.sun.xml.writer" file="${project.dir}/target/smoketestdoc/mimetype"/>
+        <mkdir dir="${project.dir}/target/smoketestdoc/META-INF"/>
+        <copy file="${data.dir}/manifest.xml" todir="${project.dir}/target/smoketestdoc/META-INF"/>
+        <mkdir dir="${project.dir}/target/smoketestdoc/Basic"/>
+        <copy file="${data.dir}/script-lc.xml" todir="${project.dir}/target/smoketestdoc/Basic"/>
+        <mkdir dir="${project.dir}/target/smoketestdoc/Basic/Standard"/>
+        <copy todir="${project.dir}/target/smoketestdoc/Basic/Standard">
+            <resources>
+                <file name="${data.dir}/script-lb.xml"/>
+                <file name="${data.dir}/Events.xml"/>
+                <file name="${data.dir}/Global.xml"/>
+                <file name="${data.dir}/Test_10er.xml"/>
+                <file name="${data.dir}/Test_DB.xml"/>
+                <file name="${data.dir}/Test_Ext.xml"/>
+            </resources>
+        </copy>
+        <mkdir dir="${project.dir}/target/smoketestdoc/Dialogs"/>
+        <copy file="${data.dir}/dialog-lc.xml" todir="${project.dir}/target/smoketestdoc/Dialogs"/>
+        <mkdir dir="${project.dir}/target/smoketestdoc/Dialogs/Standard"/>
+        <copy todir="${project.dir}/target/smoketestdoc/Dialogs/Standard">
+            <resources>
+                <file name="${data.dir}/dialog-lb.xml"/>
+                <file name="${data.dir}/OptionsDlg.xml"/>
+            </resources>
+        </copy>
+        <zip destfile="${project.dir}/target/smoketestdoc.odt" basedir="${project.dir}/target/smoketestdoc" filesonly="true"/>
+    </target>
+
+    <target name="TestExtension" depends="main,smoketestdoc">
+        <copy tofile="${build.base.dir}/TestExtension/TestExtension.rdb" file="${idl.rdb.build.dir}/registry.rdb"/>
+        <mkdir dir="${build.base.dir}/TestExtension/META-INF"/>
+        <copy todir="${build.base.dir}/TestExtension/META-INF" file="${project.dir}/manifest.xml"/>
+        <zip destfile="${build.base.dir}/TestExtension.oxt" basedir="${build.base.dir}/TestExtension"/>
+    </target>
+
+    <target name="smoketest" depends="smoketestdoc,TestExtension"/>
+</project>
+

@@ -126,9 +126,11 @@
 		<delete dir="testcommon/bin" />
 		<delete dir="testgui/bin" />
 		<delete dir="testuno/bin" />
+		<ant antfile="smoketestdoc/build.xml" target="clean" inheritAll="false" useNativeBasedir="true"/>
 	</target>
-	
+
 	<target name="compile" depends="testcommon.compile,testgui.compile,testuno.compile" description="Compile source code">
+		<ant antfile="smoketestdoc/build.xml" inheritAll="false" useNativeBasedir="true"/>
 	</target>
 	
 	<target name="dist" depends="clean,compile">

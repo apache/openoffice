@@ -72,9 +72,12 @@ public class BasicFunctionTest {
 	@Test
 	public void smokeTest() {
 		File smoketestOutput = new File(aoo.getUserInstallation(), "user/temp");
-		prepareData("TestExtension.oxt");
+		File testDir = getFile().getParentFile();
+		File smokeTestDir = new File(testDir, "smoketestdoc");
+		File smokeTestTargetDir = new File(smokeTestDir, "target");
+		prepareData(new File(smokeTestTargetDir, "TestExtension.oxt").getAbsolutePath());
 		// Open sample file smoketestdoc.sxw
-		open(prepareData("smoketestdoc.sxw"));
+		open(prepareData(new File(smokeTestTargetDir, "smoketestdoc.odt").getAbsolutePath()));
 		writer.waitForEnabled(10, 2);
 		// Run test cases
 		app.dispatch("vnd.sun.star.script:Standard.Global.StartTestWithDefaultOptions?language=Basic&location=document", 120);
