@@ -681,9 +681,9 @@ AC_ARG_WITH(hamcrest-core,
 [  --with-hamcrest-core    Specifies the hamcrest-core jar file to use for
                           JUnit-based tests.  --without-junit disables those
                           tests.  Not relevant in the --without-java or
-                          --without-junit cases, and only needed for recent
-                          versions of JUnit. (Default: disabled.)
-],,with_hamcrest_core=no)
+                          --without-junit cases, and only needed for JUnit
+                          >= 4.11.
+],,with_hamcrest_core=yes)
 AC_ARG_WITH(perl-home,
 [  --with-perl-home        If you have installed the Perl 5 Distribution, on your
                           system, please supply the path here.
@@ -7170,66 +7170,139 @@ fi
 rm -f conftest* core core.* *.core
 
 OOO_JUNIT_JAR=
+JUNIT_NEEDS_HAMCREST=
 if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no"; then
-    AC_MSG_CHECKING([for JUnit 4])
+    AC_MSG_CHECKING([for JUnit])
     if test "$with_junit" = "yes"; then
         if test -e /usr/share/java/junit4.jar; then
-            OOO_JUNIT_JAR=/usr/share/java/junit4.jar
+           OOO_JUNIT_JAR=/usr/share/java/junit4.jar
         else
-           if test -e /usr/share/lib/java/junit.jar; then
-              OOO_JUNIT_JAR=/usr/share/lib/java/junit.jar
+           if test -e /usr/local/share/java/classes/junit4.jar; then
+              OOO_JUNIT_JAR=/usr/local/share/java/classes/junit4.jar
            else
-              OOO_JUNIT_JAR=/usr/share/java/junit.jar
+              if test -e /usr/share/lib/java/junit.jar; then
+                 OOO_JUNIT_JAR=/usr/share/lib/java/junit.jar
+              else
+                 if test -e /usr/share/local/lib/java/junit.jar; then
+                    OOO_JUNIT_JAR=/usr/share/local/lib/java/junit.jar
+                 else
+                    if test -e /usr/share/java/junit.jar; then
+                       OOO_JUNIT_JAR=/usr/share/java/junit.jar
+                    else
+                       if test -e /usr/local/share/java/classes/junit.jar; then
+                          OOO_JUNIT_JAR=/usr/local/share/java/classes/junit.jar
+                       fi
+                    fi
+                 fi
+              fi
            fi
         fi
     else
         OOO_JUNIT_JAR=$with_junit
     fi
+    if test -e "$OOO_JUNIT_JAR"; then
+        AC_MSG_RESULT([yes])
+    else
+        AC_MSG_ERROR([cannot find JUnit 4 jar; please install one in the default
+locations (/usr/share/java or /usr/local/share/java/classes), specify its pathname via
+--with-junit=..., or disable it via --without-junit.])
+    fi
     if test "$_os" = "WINNT"; then
         OOO_JUNIT_JAR=`cygpath -m "$OOO_JUNIT_JAR"`
     fi
-    "$JAVA_HOME/bin/jar" tf "$OOO_JUNIT_JAR" 2>&5 | \
-        $GREP org/junit/Before.class > /dev/null 2>&5
-    if test $? -eq 0; then
-        AC_MSG_RESULT([$OOO_JUNIT_JAR])
+    AC_MSG_CHECKING([whether JUnit is version 4.x])
+    export OOO_JUNIT_JAR
+    if $PERL -e 'use Archive::Zip;
+        my $file = "$ENV{'OOO_JUNIT_JAR'}";
+        my $zip = Archive::Zip->new( $file );
+        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+        if ( $mf =~ m/Implementation-Version: 4.12*/ ) {
+            exit 0;
+        } elsif ( $mf =~ m/Implementation-Version: 4.11*/ ) {
+            exit 0;
+        } else {
+            exit 1;
+        }'; then
+        AC_MSG_RESULT([yes, but Hamcrest Core is mandatory with this JUnit version (>= 4.11)])
+        JUNIT_NEEDS_HAMCREST=yes
+    elif $PERL -e 'use Archive::Zip;
+        my $file = "$ENV{'OOO_JUNIT_JAR'}";
+        my $zip = Archive::Zip->new( $file );
+        my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
+        if ( $mf =~ m/Implementation-Version: 4.*/ ) {
+            exit 0;
+        } else {
+            exit 1;
+        }'; then
+        AC_MSG_RESULT([yes])
     else
-        AC_MSG_RESULT([no])
-        AC_MSG_ERROR([cannot find JUnit 4 jar; please install one in the default
-location (/usr/share/java), specify its pathname via
---with-junit=..., or disable it via --without-junit])
+        AC_MSG_ERROR([no, your JUnit version is too old, you need JUnit 4.x])
     fi
 fi
 AC_SUBST(OOO_JUNIT_JAR)
 
 HAMCREST_CORE_JAR=
-if test "$SOLAR_JAVA" != "" && test "$with_junit" != "no" && test "$with_hamcrest_core" != "no"; then
+if test "$SOLAR_JAVA" != "" && test "$with_hamcrest_core" != "no"; then
     AC_MSG_CHECKING([for hamcrest-core])
     if test "$with_hamcrest_core" = "yes"; then
-        if test -e /usr/share/java/hamcrest-core-1.3.jar; then
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/java/hamcrest-core-1.3.jar; then
             HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core-1.3.jar
-        else
-            if test -e /usr/share/lib/java/hamcrest-core.jar; then
-                HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest-core.jar
-            else
-                HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core.jar
-            fi
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/java/classes/hamcrest-core-1.3.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/java/classes/hamcrest-core-1.3.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/lib/java/hamcrest-core.jar; then
+            HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest-core.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/lib/java/hamcrest-core.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/lib/java/hamcrest-core.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/java/hamcrest-core.jar; then
+            HAMCREST_CORE_JAR=/usr/share/java/hamcrest-core.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/java/classes/hamcrest-core.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/java/classes/hamcrest-core.jar
+        fi
+        # Sometimes the "-core-" part is missing...
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/java/hamcrest1.3.jar; then
+            HAMCREST_CORE_JAR=/usr/share/java/hamcrest1.3.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/java/classes/hamcrest1.3.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/java/classes/hamcrest1.3.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/lib/java/hamcrest.jar; then
+            HAMCREST_CORE_JAR=/usr/share/lib/java/hamcrest.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/lib/java/hamcrest.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/lib/java/hamcrest.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/share/java/hamcrest.jar; then
+            HAMCREST_CORE_JAR=/usr/share/java/hamcrest.jar
+        fi
+        if test "$HAMCREST_CORE_JAR" = "" && test -e /usr/local/share/java/classes/hamcrest.jar; then
+            HAMCREST_CORE_JAR=/usr/local/share/java/classes/hamcrest.jar
         fi
     else
         HAMCREST_CORE_JAR=$with_hamcrest_core
     fi
-    if test "$_os" = "WINNT"; then
-        HAMCREST_CORE_JAR=`cygpath -m "$HAMCREST_CORE_JAR"`
-    fi
-    export HAMCREST_CORE_JAR
-    "$JAVA_HOME/bin/jar" tf "$HAMCREST_CORE_JAR" 2>&5 | \
-        $GREP org/hamcrest/core/AllOf.class > /dev/null 2>&5
-    if test $? -eq 0; then
-        AC_MSG_RESULT([$HAMCREST_CORE_JAR])
+    if test -e "$HAMCREST_CORE_JAR"; then
+        AC_MSG_RESULT([yes])
+        if test "$_os" = "WINNT"; then
+            HAMCREST_CORE_JAR=`cygpath -m "$HAMCREST_CORE_JAR"`
+        fi
     else
-        AC_MSG_ERROR([cannot find hamcrest-core jar; please install one in the
-default location (/usr/share/java), specify its
+        if test "$JUNIT_NEEDS_HAMCREST" = "yes"; then
+            AC_MSG_ERROR([cannot find hamcrest-core jar; please install one in the
+default locations (/usr/share/java or /usr/local/share/java/classes), specify its
 pathname via --with-hamcrest-core=..., or disable
-it via --without-hamcrest-core])
+it via --without-hamcrest-core or --without-junit])
+        else
+            AC_MSG_RESULT([no, skipping])
+        fi
+    fi
+else
+    if test "$JUNIT_NEEDS_HAMCREST" = "yes"; then
+        AC_MSG_ERROR([JUnit needs Hamcrest but Hamcrest disabled.])
     fi
 fi
 AC_SUBST(HAMCREST_CORE_JAR)
