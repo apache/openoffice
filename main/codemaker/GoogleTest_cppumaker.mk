@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,21 +17,30 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
+$(eval $(call gb_GoogleTest_GoogleTest,cppumaker_test))
 
-PRJ := ..$/..$/..
-PRJNAME := codemaker
-TARGET := test_codemaker_javamaker_java15
+$(eval $(call gb_GoogleTest_add_exception_objects,cppumaker_test, \
+	codemaker/test/cppumaker/test_codemaker_cppumaker \
+))
 
-PACKAGE := test$/codemaker$/javamaker$/java15
-JAVATESTFILES := Test.java
-IDLTESTFILES := types.idl
-JARFILES := ridl.jar
+$(eval $(call gb_GoogleTest_set_include,cppumaker_test,\
+        $$(INCLUDE) \
+	-I$(SRCDIR)/codemaker/inc \
+	-I$(SRCDIR)/codemaker/inc/pch \
+))
 
-JAVAMAKER = $(BIN)$/javamaker$(EXECPOST)
+$(eval $(call gb_GoogleTest_set_private_api,cppumaker_test,\
+	$(SRCDIR)/codemaker/test/cppumaker/types.idl \
+))
 
-.INCLUDE: javaunittest.mk
+$(eval $(call gb_GoogleTest_add_linked_libs,cppumaker_test, \
+	cppu \
+	sal \
+	stl \
+	$(gb_STDLIBS) \
+))
 
-$(MISC)$/$(TARGET).javamaker.flag: $(BIN)$/javamaker$(EXECPOST)
+# vim: set noet sw=4 ts=4:

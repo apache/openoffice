@@ -21,18 +21,24 @@
 
 
 
-PRJ := ..$/..
-PRJNAME := codemaker
-TARGET := commonjava
+PRJ=..
+TARGET=prj
 
-ENABLE_EXCEPTIONS := TRUE
+.INCLUDE : settings.mk
 
-.INCLUDE: settings.mk
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-SLOFILES = $(SLO)$/commonjava.obj
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-LIB1TARGET=$(LB)$/$(TARGET).lib
-LIB1ARCHIV=$(LB)$/lib$(TARGET).a
-LIB1OBJFILES=$(SLOFILES)
-
-.INCLUDE: target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
