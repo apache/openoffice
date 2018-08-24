@@ -1,4 +1,4 @@
-# *************************************************************
+#**************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,15 +17,28 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-# *************************************************************
+#**************************************************************
+
+
+
 PRJ=..
-PRJNAME=psprint_config
-TARGET=unxfontspsprintgeneral
+TARGET=prj
 
 .INCLUDE : settings.mk
 
-ZIP1TARGET      = fontunxpsprint
-ZIP1LIST        = psprint.conf
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-.INCLUDE : target.mk
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
