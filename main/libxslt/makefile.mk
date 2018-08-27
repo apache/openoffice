@@ -49,8 +49,7 @@ TARFILE_MD5=1fc72f98e98bf4443f1651165f3aa146
 
 # libxslt-internal-symbols: #i112480#: Solaris ld requires symbols to be defined
 PATCH_FILES=libxslt-configure.patch \
-            libxslt-win_manifest.patch \
-            libxslt-CVE-2015-7995.patch
+            libxslt-win_manifest.patch
 
 
 
