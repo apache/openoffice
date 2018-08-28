@@ -1,7 +1,7 @@
 <<<<<<< .working
-diff -ur misc/libxslt-1.1.28/ltmain.sh misc/build/libxslt-1.1.28/ltmain.sh
---- misc/libxslt-1.1.28/ltmain.sh	2012-11-20 23:21:48.000000000 -0800
-+++ misc/build/libxslt-1.1.28/ltmain.sh	2016-03-27 11:14:40.564087000 -0700
+diff -ur misc/libxslt-1.1.32/ltmain.sh misc/build/libxslt-1.1.32/ltmain.sh
+--- misc/libxslt-1.1.32/ltmain.sh	2012-11-20 23:21:48.000000000 -0800
++++ misc/build/libxslt-1.1.32/ltmain.sh	2016-03-27 11:14:40.564087000 -0700
 @@ -7331,13 +7331,13 @@
  	  #
  	  case $version_type in
@@ -65,9 +65,9 @@ diff -ur misc/libxslt-1.1.32/xslt-config.in misc/build/libxslt-1.1.32/xslt-confi
  if test "$includedir" != "/usr/include"; then
      the_flags="$the_flags -I$includedir `@XML_CONFIG@ --cflags`"
  else
-diff -ur misc/libxslt-1.1.28/configure misc/build/libxslt-1.1.28/configure
---- misc/libxslt-1.1.28/configure	2012-11-20 23:11:21.000000000 -0800
-+++ misc/build/libxslt-1.1.28/configure	2016-03-27 12:43:44.464670000 -0700
+diff -ur misc/libxslt-1.1.32/configure misc/build/libxslt-1.1.32/configure
+--- misc/libxslt-1.1.32/configure	2012-11-20 23:11:21.000000000 -0800
++++ misc/build/libxslt-1.1.32/configure	2016-03-27 12:43:44.464670000 -0700
 @@ -6462,7 +6462,7 @@
  
  cygwin*)

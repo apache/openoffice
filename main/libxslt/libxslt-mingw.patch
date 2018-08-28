@@ -1,5 +1,5 @@
---- misc/libxslt-1.1.26/ltmain.sh	2010-06-06 14:43:28.785750000 +0900
-+++ misc/build/libxslt-1.1.26/ltmain.sh	2010-06-06 15:14:26.176375000 +0900
+--- misc/libxslt-1.1.32/ltmain.sh	2010-06-06 14:43:28.785750000 +0900
++++ misc/build/libxslt-1.1.32/ltmain.sh	2010-06-06 15:14:26.176375000 +0900
 @@ -2983,15 +2983,7 @@
        *mingw* )
          lt_sed_naive_backslashify='s|\\\\*|\\|g;s|/|\\|g;s|\\|\\\\|g'
