@@ -41,10 +41,6 @@
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
             <pathelement location="${OUTDIR}/bin/unoil.jar"/>
         </path>
-
-        <filelist id="idl.files">
-            <file name="${main.src.dir}/com/sun/star/comp/smoketest/TestExtension.idl"/>
-        </filelist>
     </target>
 
     <target name="pre-clean">
@@ -90,7 +86,7 @@
     </target>
 
     <target name="TestExtension" depends="main,smoketestdoc">
-        <copy tofile="${build.base.dir}/TestExtension/TestExtension.rdb" file="${idl.rdb.build.dir}/registry.rdb"/>
+        <copy tofile="${build.base.dir}/TestExtension/TestExtension.rdb" file="${idl.build.dir}/registry.rdb"/>
         <mkdir dir="${build.base.dir}/TestExtension/META-INF"/>
         <copy todir="${build.base.dir}/TestExtension/META-INF" file="${project.dir}/manifest.xml"/>
         <zip destfile="${build.base.dir}/TestExtension.oxt" basedir="${build.base.dir}/TestExtension"/>
