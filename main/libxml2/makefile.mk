@@ -52,7 +52,7 @@ PATCH_FILES=libxml2-configure.patch
 PATCH_FILES+= libxml2-nan-inf-fix.patch
 .ENDIF
 
-.IF "$(OS)" == "LINUX"
+.IF "$(OS)"=="LINUX" && "$(COM)"=="GCC" && "$(CCNUMVER)"<"000400020000"
 PATCH_FILES+= libxml2-centos5.patch
 .ENDIF
 
