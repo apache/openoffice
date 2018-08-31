@@ -52,6 +52,10 @@ PATCH_FILES=libxml2-configure.patch
 PATCH_FILES+= libxml2-nan-inf-fix.patch
 .ENDIF
 
+.IF "$(OS)" == "LINUX"
+PATCH_FILES+= libxml2-centos5.patch
+.ENDIF
+
 # This is only for UNX environment now
 
 .IF "$(OS)"=="WNT"
