@@ -7220,6 +7220,10 @@ locations (/usr/share/java or /usr/local/share/java/classes), specify its pathna
             exit 0;
         } elsif ( $mf =~ m/Implementation-Version: 4.11*/ ) {
             exit 0;
+        } elsif ( $mf =~ m/Bundle-Version: 4.12*/ ) {
+            exit 0;
+        } elsif ( $mf =~ m/Bundle-Version: 4.11*/ ) {
+            exit 0;
         } else {
             exit 1;
         }'; then
@@ -7231,6 +7235,7 @@ locations (/usr/share/java or /usr/local/share/java/classes), specify its pathna
         my $mf = $zip->contents ( "META-INF/MANIFEST.MF" );
         if ( $mf =~ m/Implementation-Version: 4.*/ ) {
             exit 0;
+        } elsif ( $mf =~ m/Bundle-Version: 4.*/ ) {
         } else {
             exit 1;
         }'; then
