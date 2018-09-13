@@ -23,12 +23,12 @@
 
 #include <svids.hrc>
 
-#define THROBBER_16     SV_RESID_BITMAP_THROBBER_START
-#define THROBBER_16_HC  THROBBER_16     + 6
-#define THROBBER_32     THROBBER_16_HC  + 6
-#define THROBBER_32_HC  THROBBER_32     + 12
-#define THROBBER_64     THROBBER_32_HC  + 12
-#define THROBBER_64_HC  THROBBER_64     + 12
+#define THROBBER_16		SV_RESID_BITMAP_THROBBER_START
+#define THROBBER_16_HC	THROBBER_16		+ 6
+#define THROBBER_32		THROBBER_16_HC	+ 6
+#define THROBBER_32_HC	THROBBER_32		+ 12
+#define THROBBER_64		THROBBER_32_HC	+ 12
+#define THROBBER_64_HC	THROBBER_64		+ 12
 
 // TODO: we need a mechanism to add images to images.zip, *without*
 // referring them in resource files. The below resources are never loaded
@@ -38,32 +38,32 @@
 
 Bitmap (THROBBER_16 + 1)
 {
-    file = "spinner-16-01.png";
+	file = "spinner-16-01.png";
 };
 
 Bitmap (THROBBER_16 + 2)
 {
-    file = "spinner-16-02.png";
+	file = "spinner-16-02.png";
 };
 
 Bitmap (THROBBER_16 + 3)
 {
-    file = "spinner-16-03.png";
+	file = "spinner-16-03.png";
 };
 
 Bitmap (THROBBER_16 + 4)
 {
-    file = "spinner-16-04.png";
+	file = "spinner-16-04.png";
 };
 
 Bitmap (THROBBER_16 + 5)
 {
-    file = "spinner-16-05.png";
+	file = "spinner-16-05.png";
 };
 
 Bitmap (THROBBER_16 + 6)
 {
-    file = "spinner-16-06.png";
+	file = "spinner-16-06.png";
 };
 
 
@@ -71,32 +71,32 @@ Bitmap (THROBBER_16 + 6)
 
 Bitmap (THROBBER_16_HC + 1)
 {
-    file = "spinner-16-01_h.png";
+	file = "spinner-16-01_h.png";
 };
 
 Bitmap (THROBBER_16_HC + 2)
 {
-    file = "spinner-16-02_h.png";
+	file = "spinner-16-02_h.png";
 };
 
 Bitmap (THROBBER_16_HC + 3)
 {
-    file = "spinner-16-03_h.png";
+	file = "spinner-16-03_h.png";
 };
 
 Bitmap (THROBBER_16_HC + 4)
 {
-    file = "spinner-16-04_h.png";
+	file = "spinner-16-04_h.png";
 };
 
 Bitmap (THROBBER_16_HC + 5)
 {
-    file = "spinner-16-05_h.png";
+	file = "spinner-16-05_h.png";
 };
 
 Bitmap (THROBBER_16_HC + 6)
 {
-    file = "spinner-16-06_h.png";
+	file = "spinner-16-06_h.png";
 };
 
 
@@ -104,62 +104,62 @@ Bitmap (THROBBER_16_HC + 6)
 
 Bitmap (THROBBER_32 + 1)
 {
-    file = "spinner-32-01.png";
+	file = "spinner-32-01.png";
 };
 
 Bitmap (THROBBER_32 + 2)
 {
-    file = "spinner-32-02.png";
+	file = "spinner-32-02.png";
 };
 
 Bitmap (THROBBER_32 + 3)
 {
-    file = "spinner-32-03.png";
+	file = "spinner-32-03.png";
 };
 
 Bitmap (THROBBER_32 + 4)
 {
-    file = "spinner-32-04.png";
+	file = "spinner-32-04.png";
 };
 
 Bitmap (THROBBER_32 + 5)
 {
-    file = "spinner-32-05.png";
+	file = "spinner-32-05.png";
 };
 
 Bitmap (THROBBER_32 + 6)
 {
-    file = "spinner-32-06.png";
+	file = "spinner-32-06.png";
 };
 
 Bitmap (THROBBER_32 + 7)
 {
-    file = "spinner-32-07.png";
+	file = "spinner-32-07.png";
 };
 
 Bitmap (THROBBER_32 + 8)
 {
-    file = "spinner-32-08.png";
+	file = "spinner-32-08.png";
 };
 
 Bitmap (THROBBER_32 + 9)
 {
-    file = "spinner-32-09.png";
+	file = "spinner-32-09.png";
 };
 
 Bitmap (THROBBER_32 + 10)
 {
-    file = "spinner-32-10.png";
+	file = "spinner-32-10.png";
 };
 
 Bitmap (THROBBER_32 + 11)
 {
-    file = "spinner-32-11.png";
+	file = "spinner-32-11.png";
 };
 
 Bitmap (THROBBER_32 + 12)
 {
-    file = "spinner-32-12.png";
+	file = "spinner-32-12.png";
 };
 
 
@@ -167,124 +167,124 @@ Bitmap (THROBBER_32 + 12)
 
 Bitmap (THROBBER_32_HC + 1)
 {
-    file = "spinner-32-01_h.png";
+	file = "spinner-32-01_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 2)
 {
-    file = "spinner-32-02_h.png";
+	file = "spinner-32-02_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 3)
 {
-    file = "spinner-32-03_h.png";
+	file = "spinner-32-03_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 4)
 {
-    file = "spinner-32-04_h.png";
+	file = "spinner-32-04_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 5)
 {
-    file = "spinner-32-05_h.png";
+	file = "spinner-32-05_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 6)
 {
-    file = "spinner-32-06_h.png";
+	file = "spinner-32-06_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 7)
 {
-    file = "spinner-32-07_h.png";
+	file = "spinner-32-07_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 8)
 {
-    file = "spinner-32-08_h.png";
+	file = "spinner-32-08_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 9)
 {
-    file = "spinner-32-09_h.png";
+	file = "spinner-32-09_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 10)
 {
-    file = "spinner-32-10_h.png";
+	file = "spinner-32-10_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 11)
 {
-    file = "spinner-32-11_h.png";
+	file = "spinner-32-11_h.png";
 };
 
 Bitmap (THROBBER_32_HC + 12)
 {
-    file = "spinner-32-12_h.png";
+	file = "spinner-32-12_h.png";
 };
 
 
 
 Bitmap (THROBBER_64 + 1)
 {
-    file = "spinner-64-01.png";
+	file = "spinner-64-01.png";
 };
 
 Bitmap (THROBBER_64 + 2)
 {
-    file = "spinner-64-02.png";
+	file = "spinner-64-02.png";
 };
 
 Bitmap (THROBBER_64 + 3)
 {
-    file = "spinner-64-03.png";
+	file = "spinner-64-03.png";
 };
 
 Bitmap (THROBBER_64 + 4)
 {
-    file = "spinner-64-04.png";
+	file = "spinner-64-04.png";
 };
 
 Bitmap (THROBBER_64 + 5)
 {
-    file = "spinner-64-05.png";
+	file = "spinner-64-05.png";
 };
 
 Bitmap (THROBBER_64 + 6)
 {
-    file = "spinner-64-06.png";
+	file = "spinner-64-06.png";
 };
 
 Bitmap (THROBBER_64 + 7)
 {
-    file = "spinner-64-07.png";
+	file = "spinner-64-07.png";
 };
 
 Bitmap (THROBBER_64 + 8)
 {
-    file = "spinner-64-08.png";
+	file = "spinner-64-08.png";
 };
 
 Bitmap (THROBBER_64 + 9)
 {
-    file = "spinner-64-09.png";
+	file = "spinner-64-09.png";
 };
 
 Bitmap (THROBBER_64 + 10)
 {
-    file = "spinner-64-10.png";
+	file = "spinner-64-10.png";
 };
 
 Bitmap (THROBBER_64 + 11)
 {
-    file = "spinner-64-11.png";
+	file = "spinner-64-11.png";
 };
 
 Bitmap (THROBBER_64 + 12)
 {
-    file = "spinner-64-12.png";
+	file = "spinner-64-12.png";
 };
 
 
@@ -292,62 +292,60 @@ Bitmap (THROBBER_64 + 12)
 
 Bitmap (THROBBER_64_HC + 1)
 {
-    file = "spinner-64-01_h.png";
+	file = "spinner-64-01_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 2)
 {
-    file = "spinner-64-02_h.png";
+	file = "spinner-64-02_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 3)
 {
-    file = "spinner-64-03_h.png";
+	file = "spinner-64-03_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 4)
 {
-    file = "spinner-64-04_h.png";
+	file = "spinner-64-04_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 5)
 {
-    file = "spinner-64-05_h.png";
+	file = "spinner-64-05_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 6)
 {
-    file = "spinner-64-06_h.png";
+	file = "spinner-64-06_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 7)
 {
-    file = "spinner-64-07_h.png";
+	file = "spinner-64-07_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 8)
 {
-    file = "spinner-64-08_h.png";
+	file = "spinner-64-08_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 9)
 {
-    file = "spinner-64-09_h.png";
+	file = "spinner-64-09_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 10)
 {
-    file = "spinner-64-10_h.png";
+	file = "spinner-64-10_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 11)
 {
-    file = "spinner-64-11_h.png";
+	file = "spinner-64-11_h.png";
 };
 
 Bitmap (THROBBER_64_HC + 12)
 {
-    file = "spinner-64-12_h.png";
+	file = "spinner-64-12_h.png";
 };
-
-
