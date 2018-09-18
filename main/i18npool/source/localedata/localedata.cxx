@@ -227,6 +227,7 @@ static const struct {
     { "am_ET",  lcl_DATA_OTHERS },
     { "ti_ER",  lcl_DATA_OTHERS },
     { "tg_TJ",  lcl_DATA_OTHERS },
+    { "kab_DZ", lcl_DATA_OTHERS },
     { "ky_KG",  lcl_DATA_OTHERS },
     { "kk_KZ",  lcl_DATA_OTHERS },
     { "fa_IR",  lcl_DATA_OTHERS },
