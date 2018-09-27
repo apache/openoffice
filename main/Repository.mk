@@ -46,7 +46,7 @@ $(eval $(call gb_Helper_register_executables,NONE, \
 $(eval $(call gb_Helper_register_executables,OOO, \
 	regsingleton \
 	sp2bv \
-    spadmin.bin \
+	spadmin.bin \
 ))
 
 $(eval $(call gb_Helper_register_executables,SDK, \
@@ -66,7 +66,7 @@ $(eval $(call gb_Helper_register_executables,UREBIN, \
 ))
 
 $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
-    AppleRemote \
+	AppleRemote \
 	MacOSXSpell \
 	adabas \
 	adabasui \
@@ -94,7 +94,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	dbui \
 	dbpool \
 	dbtools \
-    desktop_detector \
+	desktop_detector \
 	dnd \
 	drawinglayer \
 	dtrans \
@@ -116,7 +116,7 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	fwl \
 	fwm \
 	guesslang \
-    i18npaper \
+	i18npaper \
 	juh \
 	juhx \
 	lng \
@@ -178,11 +178,11 @@ $(eval $(call gb_Helper_register_libraries,OOOLIBS, \
 	ucphier1 \
 	ucppkg1 \
 	vcl \
-    vclplug_gen \
-    vclplug_gtk \
-    vclplug_kde \
-    vclplug_kde4 \
-    vclplug_svp \
+	vclplug_gen \
+	vclplug_gtk \
+	vclplug_kde \
+	vclplug_kde4 \
+	vclplug_svp \
 	uui \
 	xcr \
 	xo \
@@ -250,7 +250,7 @@ $(eval $(call gb_Helper_register_libraries,UNOLIBS_OOO, \
 	textinstream \
 	textoutstream \
 	vbaswobj \
-    msforms \
+	msforms \
 	vclcanvas \
 	ucpext \
 	ucpexpand1 \
@@ -280,7 +280,7 @@ $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
 	ooopathutils \
 	salcpprt \
 	sldshw_s \
-    vclmain \
+	vclmain \
 	udm \
 	ulingu \
 ))
