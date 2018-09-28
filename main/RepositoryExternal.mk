@@ -274,11 +274,11 @@ endef
 else # !SYSTEM_GRAPHITE
 
 $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
-    graphite \
+	graphite \
 ))
 define gb_LinkTarget__use_graphite
 $(call gb_LinkTarget_add_linked_static_libs,$(1),\
-    graphite \
+	graphite \
 )
 endef
 
@@ -329,13 +329,13 @@ else # !SYSTEM_OPENSSL
 
 ifeq ($(OS),WNT)
 $(eval $(call gb_Helper_register_libraries,PLAINLIBS_OOO, \
-    crypto \
-    ssl \
+	crypto \
+	ssl \
 ))
 else
 $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
-    crypto \
-    ssl \
+	crypto \
+	ssl \
 ))
 endif
 
@@ -366,12 +366,12 @@ ifeq ($(SYSTEM_APR),YES)
 
 define gb_LinkTarget__use_apr
 $(call gb_LinkTarget_add_defs,$(1),\
-        -DSYSTEM_APR \
+		-DSYSTEM_APR \
 )
 $(call gb_LinkTarget_set_include,$(1),\
 	$$(INCLUDE) \
 	$(APR_CFLAGS) \
-)       
+)
 $(call gb_LinkTarget_add_libs,$(1),$(APR_LIBS))
 endef
 
@@ -556,7 +556,7 @@ ifeq ($(SYSTEM_HYPH),YES)
 
 define gb_LinkTarget__use_hyphen
 $(call gb_LinkTarget_add_defs,$(1),\
-        -DSYSTEM_HYPH \
+		-DSYSTEM_HYPH \
 )
 $(call gb_LinkTarget_add_libs,$(1),$(HYPHEN_LIB))
 endef
@@ -564,12 +564,12 @@ endef
 else # !SYSTEM_HYPH
 
 $(eval $(call gb_Helper_register_static_libraries,PLAINLIBS, \
-        hyphen \
+		hyphen \
 ))
 
 define gb_LinkTarget__use_hyphen
 $(call gb_LinkTarget_add_linked_static_libs,$(1),\
-        hyphen \
+		hyphen \
 )
 endef
 
@@ -633,8 +633,8 @@ ifeq ($(SYSTEM_HUNSPELL),YES)
 
 define gb_LinkTarget__use_hunspell
 $(call gb_LinkTarget_set_include,$(1),\
-        $$(INCLUDE) \
-        $(HUNSPELL_CFLAGS) \
+		$$(INCLUDE) \
+		$(HUNSPELL_CFLAGS) \
 )
 $(call gb_LinkTarget_add_libs,$(1),$(HUNSPELL_LIBS))
 endef
@@ -667,6 +667,5 @@ endif
 endef
 
 endif # SYSTEM_HUNSPELL
-
 
 # vim: set noet sw=4 ts=4:
