@@ -38,26 +38,26 @@ $(eval $(call gb_Library_set_include,vclplug_gen,\
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_gen,\
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
+	X11 \
+	Xext \
+	SM \
+	ICE \
 	$(gb_STDLIBS) \
 ))
 
@@ -67,61 +67,61 @@ $(call gb_Library_use_externals,vclplug_gen,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,vclplug_gen,\
-    vcl/unx/generic/app/i18n_cb \
-    vcl/unx/generic/app/i18n_ic \
-    vcl/unx/generic/app/i18n_im \
-    vcl/unx/generic/app/i18n_keysym \
-    vcl/unx/generic/app/i18n_status \
-    vcl/unx/generic/app/i18n_wrp \
-    vcl/unx/generic/app/i18n_xkb \
-    vcl/unx/generic/app/keysymnames \
-    vcl/unx/generic/app/randrwrapper \
-    vcl/unx/generic/app/saldata \
-    vcl/unx/generic/app/saldisp \
-    vcl/unx/generic/app/salinst \
-    vcl/unx/generic/app/salsys \
-    vcl/unx/generic/app/saltimer \
-    vcl/unx/generic/app/sm \
-    vcl/unx/generic/app/soicon \
-    vcl/unx/generic/app/wmadaptor \
-    vcl/unx/generic/dtrans/bmp \
-    vcl/unx/generic/dtrans/config \
-    vcl/unx/generic/dtrans/X11_clipboard \
-    vcl/unx/generic/dtrans/X11_dndcontext \
-    vcl/unx/generic/dtrans/X11_droptarget \
-    vcl/unx/generic/dtrans/X11_selection \
-    vcl/unx/generic/dtrans/X11_service \
-    vcl/unx/generic/dtrans/X11_transferable \
-    vcl/unx/generic/gdi/cdeint \
-    vcl/unx/generic/gdi/dtint \
-    vcl/unx/generic/gdi/gcach_xpeer \
-    vcl/unx/generic/gdi/pspgraphics \
-    vcl/unx/generic/gdi/salbmp \
-    vcl/unx/generic/gdi/salcvt \
-    vcl/unx/generic/gdi/salgdi2 \
-    vcl/unx/generic/gdi/salgdi3 \
-    vcl/unx/generic/gdi/salgdi \
-    vcl/unx/generic/gdi/salprnpsp \
-    vcl/unx/generic/gdi/salvd \
-    vcl/unx/generic/gdi/xrender_peer \
-    vcl/unx/generic/printergfx/bitmap_gfx \
-    vcl/unx/generic/printergfx/common_gfx \
-    vcl/unx/generic/printergfx/glyphset \
-    vcl/unx/generic/printergfx/printerjob \
-    vcl/unx/generic/printergfx/psputil \
-    vcl/unx/generic/printergfx/text_gfx \
-    vcl/unx/generic/window/FWS \
-    vcl/unx/generic/window/salframe \
-    vcl/unx/generic/window/salobj \
+	vcl/unx/generic/app/i18n_cb \
+	vcl/unx/generic/app/i18n_ic \
+	vcl/unx/generic/app/i18n_im \
+	vcl/unx/generic/app/i18n_keysym \
+	vcl/unx/generic/app/i18n_status \
+	vcl/unx/generic/app/i18n_wrp \
+	vcl/unx/generic/app/i18n_xkb \
+	vcl/unx/generic/app/keysymnames \
+	vcl/unx/generic/app/randrwrapper \
+	vcl/unx/generic/app/saldata \
+	vcl/unx/generic/app/saldisp \
+	vcl/unx/generic/app/salinst \
+	vcl/unx/generic/app/salsys \
+	vcl/unx/generic/app/saltimer \
+	vcl/unx/generic/app/sm \
+	vcl/unx/generic/app/soicon \
+	vcl/unx/generic/app/wmadaptor \
+	vcl/unx/generic/dtrans/bmp \
+	vcl/unx/generic/dtrans/config \
+	vcl/unx/generic/dtrans/X11_clipboard \
+	vcl/unx/generic/dtrans/X11_dndcontext \
+	vcl/unx/generic/dtrans/X11_droptarget \
+	vcl/unx/generic/dtrans/X11_selection \
+	vcl/unx/generic/dtrans/X11_service \
+	vcl/unx/generic/dtrans/X11_transferable \
+	vcl/unx/generic/gdi/cdeint \
+	vcl/unx/generic/gdi/dtint \
+	vcl/unx/generic/gdi/gcach_xpeer \
+	vcl/unx/generic/gdi/pspgraphics \
+	vcl/unx/generic/gdi/salbmp \
+	vcl/unx/generic/gdi/salcvt \
+	vcl/unx/generic/gdi/salgdi2 \
+	vcl/unx/generic/gdi/salgdi3 \
+	vcl/unx/generic/gdi/salgdi \
+	vcl/unx/generic/gdi/salprnpsp \
+	vcl/unx/generic/gdi/salvd \
+	vcl/unx/generic/gdi/xrender_peer \
+	vcl/unx/generic/printergfx/bitmap_gfx \
+	vcl/unx/generic/printergfx/common_gfx \
+	vcl/unx/generic/printergfx/glyphset \
+	vcl/unx/generic/printergfx/printerjob \
+	vcl/unx/generic/printergfx/psputil \
+	vcl/unx/generic/printergfx/text_gfx \
+	vcl/unx/generic/window/FWS \
+	vcl/unx/generic/window/salframe \
+	vcl/unx/generic/window/salobj \
 ))
 
 $(eval $(call gb_Library_add_defs,vclplug_gen,\
-    -D_XSALSET_LIBNAME=\"$(call gb_Library_get_runtime_filename,spa)\" \
-    -DVCLPLUG_GEN_IMPLEMENTATION \
+	-D_XSALSET_LIBNAME=\"$(call gb_Library_get_runtime_filename,spa)\" \
+	-DVCLPLUG_GEN_IMPLEMENTATION \
 ))
 
 
-## handle RandR 
+## handle RandR
 ifeq ($(ENABLE_RANDR),TRUE)
 $(eval $(call gb_Library_add_defs,vclplug_gen,\
 	-DUSE_RANDR \
@@ -131,7 +131,7 @@ $(eval $(call gb_Library_set_include,vclplug_gen,\
 	$$(INCLUDE) \
 ))
 $(eval $(call gb_Library_add_libs,vclplug_gen,\
-    $(XRANDR_LIBS) \
+	$(XRANDR_LIBS) \
 ))
 else
 $(eval $(call gb_Library_add_defs,vclplug_gen,\
@@ -154,7 +154,7 @@ $(eval $(call gb_Library_add_libs,vclplug_gen,\
 
 else
 $(eval $(call gb_Library_add_libs,vclplug_gen,\
-    -Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
+	-Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
 ))
 endif
 else
@@ -167,11 +167,11 @@ ifeq ($(USE_XINERAMA_VERSION),Xorg)
 # Solaris, Xorg
 ifeq ($(XINERAMA_LINK),dynamic)
 $(eval $(call gb_Library_add_libs,vclplug_gen,\
-    -lXinerama \
+	-lXinerama \
 ))
 else
 $(eval $(call gb_Library_add_libs,vclplug_gen,\
-    -Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
+	-Wl,-Bstatic -lXinerama -Wl,-Bdynamic \
 ))
 endif
 endif
@@ -184,7 +184,7 @@ $(eval $(call gb_Library_add_defs,vclplug_gen,\
 	-DXRENDER_LINK \
 ))
 $(eval $(call gb_Library_add_libs,vclplug_gen,\
-    $(shell pkg-config --libs xrender) \
+	$(shell pkg-config --libs xrender) \
 ))
 endif
 
@@ -203,4 +203,5 @@ $(eval $(call gb_Library_add_libs,vclplug_gen, \
 	-lXinerama -lXrandr \
 ))
 endif
+
 # vim: set noet sw=4 ts=4:

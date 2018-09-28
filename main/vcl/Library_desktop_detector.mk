@@ -42,31 +42,31 @@ $(eval $(call gb_Library_set_include,desktop_detector,\
 ))
 
 $(eval $(call gb_Library_add_defs,desktop_detector,\
-    -DDESKTOP_DETECTOR_IMPLEMENTATION \
+	-DDESKTOP_DETECTOR_IMPLEMENTATION \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,desktop_detector,\
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
-    $(gb_STDLIBS) \
+	X11 \
+	Xext \
+	SM \
+	ICE \
+	$(gb_STDLIBS) \
 ))
 
 $(call gb_Library_use_externals,desktop_detector,\
@@ -75,7 +75,7 @@ $(call gb_Library_use_externals,desktop_detector,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,desktop_detector,\
-    vcl/unx/generic/desktopdetect/desktopdetector \
+	vcl/unx/generic/desktopdetect/desktopdetector \
 ))
 
 ifeq ($(OS),LINUX)
@@ -85,4 +85,5 @@ $(eval $(call gb_Library_add_linked_libs,desktop_detector,\
 	pthread \
 ))
 endif
+
 # vim: set noet sw=4 ts=4:

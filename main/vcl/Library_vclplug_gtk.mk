@@ -39,12 +39,12 @@ $(eval $(call gb_Library_set_include,vclplug_gtk,\
 
 $(eval $(call gb_Library_set_include,vclplug_gtk,\
 	$$(INCLUDE) \
-    $$(GTK_CFLAGS) \
+	$$(GTK_CFLAGS) \
 ))
 
 $(eval $(call gb_Library_add_defs,vclplug_gtk,\
-    -DVCLPLUG_GTK_IMPLEMENTATION \
-    -DVERSION=\"$(UPD)$(LAST_MINOR)\" \
+	-DVCLPLUG_GTK_IMPLEMENTATION \
+	-DVERSION=\"$(UPD)$(LAST_MINOR)\" \
 ))
 
 ifeq ($(ENABLE_DBUS),TRUE)
@@ -53,7 +53,7 @@ $(eval $(call gb_Library_set_include,vclplug_gtk,\
 	$(shell pkg-config --cflags-only-I dbus-glib-1) \
 ))
 $(eval $(call gb_Library_add_defs,vclplug_gtk,\
-    -DENABLE_DBUS \
+	-DENABLE_DBUS \
 ))
 $(eval $(call gb_Library_add_libs,vclplug_gtk,\
 	$(shell pkg-config --libs dbus-glib-1) \
@@ -61,33 +61,33 @@ $(eval $(call gb_Library_add_libs,vclplug_gtk,\
 endif
 
 $(eval $(call gb_Library_add_libs,vclplug_gtk,\
-    $(GTK_LIBS) \
-    $(GTHREAD_LIBS) \
+	$(GTK_LIBS) \
+	$(GTHREAD_LIBS) \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_gtk,\
-    vclplug_gen \
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vclplug_gen \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
-    $(gb_STDLIBS) \
+	X11 \
+	Xext \
+	SM \
+	ICE \
+	$(gb_STDLIBS) \
 ))
 
 $(call gb_Library_use_externals,vclplug_gtk,\
@@ -96,29 +96,29 @@ $(call gb_Library_use_externals,vclplug_gtk,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,vclplug_gtk,\
-    vcl/unx/gtk/a11y/atkaction \
-    vcl/unx/gtk/a11y/atkbridge \
-    vcl/unx/gtk/a11y/atkcomponent \
-    vcl/unx/gtk/a11y/atkeditabletext \
-    vcl/unx/gtk/a11y/atkfactory \
-    vcl/unx/gtk/a11y/atkhypertext \
-    vcl/unx/gtk/a11y/atkimage \
-    vcl/unx/gtk/a11y/atklistener \
-    vcl/unx/gtk/a11y/atkregistry \
-    vcl/unx/gtk/a11y/atkselection \
-    vcl/unx/gtk/a11y/atktable \
-    vcl/unx/gtk/a11y/atktextattributes \
-    vcl/unx/gtk/a11y/atktext \
-    vcl/unx/gtk/a11y/atkutil \
-    vcl/unx/gtk/a11y/atkvalue \
-    vcl/unx/gtk/a11y/atkwindow \
-    vcl/unx/gtk/a11y/atkwrapper \
-    vcl/unx/gtk/app/gtkdata \
-    vcl/unx/gtk/app/gtkinst \
-    vcl/unx/gtk/app/gtksys \
-    vcl/unx/gtk/gdi/salnativewidgets-gtk \
-    vcl/unx/gtk/window/gtkframe \
-    vcl/unx/gtk/window/gtkobject \
+	vcl/unx/gtk/a11y/atkaction \
+	vcl/unx/gtk/a11y/atkbridge \
+	vcl/unx/gtk/a11y/atkcomponent \
+	vcl/unx/gtk/a11y/atkeditabletext \
+	vcl/unx/gtk/a11y/atkfactory \
+	vcl/unx/gtk/a11y/atkhypertext \
+	vcl/unx/gtk/a11y/atkimage \
+	vcl/unx/gtk/a11y/atklistener \
+	vcl/unx/gtk/a11y/atkregistry \
+	vcl/unx/gtk/a11y/atkselection \
+	vcl/unx/gtk/a11y/atktable \
+	vcl/unx/gtk/a11y/atktextattributes \
+	vcl/unx/gtk/a11y/atktext \
+	vcl/unx/gtk/a11y/atkutil \
+	vcl/unx/gtk/a11y/atkvalue \
+	vcl/unx/gtk/a11y/atkwindow \
+	vcl/unx/gtk/a11y/atkwrapper \
+	vcl/unx/gtk/app/gtkdata \
+	vcl/unx/gtk/app/gtkinst \
+	vcl/unx/gtk/app/gtksys \
+	vcl/unx/gtk/gdi/salnativewidgets-gtk \
+	vcl/unx/gtk/window/gtkframe \
+	vcl/unx/gtk/window/gtkobject \
 ))
 
 ifeq ($(OS),LINUX)

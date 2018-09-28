@@ -32,20 +32,19 @@ $(eval $(call gb_AllLangResTarget_add_srs,vcl,\
 $(eval $(call gb_SrsTarget_SrsTarget,vcl/source/src))
 
 $(eval $(call gb_SrsTarget_set_include,vcl/source/src,\
-        $$(INCLUDE) \
-        -I$(SRCDIR)/vcl/inc \
+		$$(INCLUDE) \
+		-I$(SRCDIR)/vcl/inc \
 ))
 
 $(eval $(call gb_SrsTarget_add_files,vcl/source/src,\
-    vcl/source/src/btntext.src \
-    vcl/source/src/helptext.src \
-    vcl/source/src/images.src \
-    vcl/source/src/menu.src \
-    vcl/source/src/print.src \
-    vcl/source/src/stdtext.src \
-    vcl/source/src/throbber.src \
-    vcl/source/src/units.src \
+	vcl/source/src/btntext.src \
+	vcl/source/src/helptext.src \
+	vcl/source/src/images.src \
+	vcl/source/src/menu.src \
+	vcl/source/src/print.src \
+	vcl/source/src/stdtext.src \
+	vcl/source/src/throbber.src \
+	vcl/source/src/units.src \
 ))
-
 
 # vim: set noet sw=4 ts=4:

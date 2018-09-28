@@ -38,31 +38,31 @@ $(eval $(call gb_Library_set_include,vclplug_svp,\
 ))
 
 $(eval $(call gb_Library_add_defs,vclplug_svp,\
-    -DVCLPLUG_SVP_IMPLEMENTATION \
+	-DVCLPLUG_SVP_IMPLEMENTATION \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_svp,\
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	basebmp \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
+	X11 \
+	Xext \
+	SM \
+	ICE \
 	$(gb_STDLIBS) \
 ))
 
@@ -72,22 +72,22 @@ $(call gb_Library_use_externals,vclplug_svp,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,vclplug_svp,\
-    vcl/unx/generic/printergfx/bitmap_gfx \
-    vcl/unx/generic/printergfx/common_gfx \
-    vcl/unx/generic/printergfx/glyphset \
-    vcl/unx/generic/printergfx/printerjob \
-    vcl/unx/generic/printergfx/psputil \
-    vcl/unx/generic/printergfx/text_gfx \
-    vcl/unx/headless/svpbmp \
-    vcl/unx/headless/svpdummies \
-    vcl/unx/headless/svpelement \
-    vcl/unx/headless/svpframe \
-    vcl/unx/headless/svpgdi \
-    vcl/unx/headless/svpinst \
-    vcl/unx/headless/svpprn \
-    vcl/unx/headless/svppspgraphics \
-    vcl/unx/headless/svptext \
-    vcl/unx/headless/svpvd \
+	vcl/unx/generic/printergfx/bitmap_gfx \
+	vcl/unx/generic/printergfx/common_gfx \
+	vcl/unx/generic/printergfx/glyphset \
+	vcl/unx/generic/printergfx/printerjob \
+	vcl/unx/generic/printergfx/psputil \
+	vcl/unx/generic/printergfx/text_gfx \
+	vcl/unx/headless/svpbmp \
+	vcl/unx/headless/svpdummies \
+	vcl/unx/headless/svpelement \
+	vcl/unx/headless/svpframe \
+	vcl/unx/headless/svpgdi \
+	vcl/unx/headless/svpinst \
+	vcl/unx/headless/svpprn \
+	vcl/unx/headless/svppspgraphics \
+	vcl/unx/headless/svptext \
+	vcl/unx/headless/svpvd \
 ))
 
 ifeq ($(OS),LINUX)
@@ -97,4 +97,5 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_svp,\
 	pthread \
 ))
 endif
+
 # vim: set noet sw=4 ts=4:

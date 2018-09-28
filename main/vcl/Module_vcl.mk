@@ -21,21 +21,20 @@
 
 
 
-
 $(eval $(call gb_Module_Module,vcl))
 
 $(eval $(call gb_Module_add_targets,vcl,\
 	Library_vcl \
-    StaticLibrary_vclmain \
+	StaticLibrary_vclmain \
 	Package_inc \
-    AllLangResTarget_vcl \
+	AllLangResTarget_vcl \
 ))
 
 ifeq ($(GUIBASE),unx)
 $(eval $(call gb_Module_add_targets,vcl,\
 	Library_vclplug_gen \
 	Library_vclplug_svp \
-    Library_desktop_detector \
+	Library_desktop_detector \
 ))
 
 
@@ -59,19 +58,19 @@ endif
 
 ifeq ($(GUIBASE),aqua)
 $(eval $(call gb_Module_add_targets,vcl,\
-    Package_osx \
+	Package_osx \
 ))
 endif
 
 ifeq ($(GUIBASE),WIN)
 $(eval $(call gb_Module_add_targets,vcl,\
-    WinResTarget_vcl \
+	WinResTarget_vcl \
 ))
 endif
 
 ifeq ($(GUIBASE),os2)
 $(eval $(call gb_Module_add_targets,vcl,\
-    WinResTarget_vcl \
+	WinResTarget_vcl \
 ))
 endif
 

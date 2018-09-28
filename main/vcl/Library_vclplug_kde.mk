@@ -39,39 +39,39 @@ $(eval $(call gb_Library_set_include,vclplug_kde,\
 
 $(eval $(call gb_Library_set_include,vclplug_kde,\
 	$$(INCLUDE) \
-    $$(KDE_CFLAGS) \
+	$$(KDE_CFLAGS) \
 ))
 
 $(eval $(call gb_Library_add_defs,vclplug_kde,\
-    -DVCLPLUG_KDE_IMPLEMENTATION \
+	-DVCLPLUG_KDE_IMPLEMENTATION \
 ))
 
 $(eval $(call gb_Library_add_libs,vclplug_kde,\
-    $$(KDE_LIBS) \
+	$$(KDE_LIBS) \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_kde,\
-    vclplug_gen \
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vclplug_gen \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
+	X11 \
+	Xext \
+	SM \
+	ICE \
 ))
 
 $(call gb_Library_use_externals,vclplug_kde,\
@@ -80,8 +80,8 @@ $(call gb_Library_use_externals,vclplug_kde,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,vclplug_kde,\
-    vcl/unx/kde/kdedata \
-    vcl/unx/kde/salnativewidgets-kde \
+	vcl/unx/kde/kdedata \
+	vcl/unx/kde/salnativewidgets-kde \
 ))
 
 ifeq ($(OS),LINUX)
@@ -91,4 +91,5 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_kde,\
 	pthread \
 ))
 endif
+
 # vim: set noet sw=4 ts=4:

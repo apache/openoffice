@@ -39,39 +39,39 @@ $(eval $(call gb_Library_set_include,vclplug_kde4,\
 
 $(eval $(call gb_Library_set_include,vclplug_kde4,\
 	$$(INCLUDE) \
-    $$(KDE4_CFLAGS) \
+	$$(KDE4_CFLAGS) \
 ))
 
 $(eval $(call gb_Library_add_defs,vclplug_kde4,\
-    -DVCLPLUG_KDE4_IMPLEMENTATION \
+	-DVCLPLUG_KDE4_IMPLEMENTATION \
 ))
 
 $(eval $(call gb_Library_add_libs,vclplug_kde4,\
-    $$(KDE4_LIBS) \
+	$$(KDE4_LIBS) \
 ))
 
 $(eval $(call gb_Library_add_linked_libs,vclplug_kde4,\
-    vclplug_gen \
-    vcl \
-    tl \
-    utl \
-    sot \
-    ucbhelper \
+	vclplug_gen \
+	vcl \
+	tl \
+	utl \
+	sot \
+	ucbhelper \
 	basegfx \
 	comphelper \
-    cppuhelper \
+	cppuhelper \
 	i18nisolang1 \
 	i18npaper \
-    i18nutil \
-    jvmaccess \
+	i18nutil \
+	jvmaccess \
 	stl \
 	cppu \
 	sal \
 	vos3 \
-    X11 \
-    Xext \
-    SM \
-    ICE \
+	X11 \
+	Xext \
+	SM \
+	ICE \
 ))
 
 $(call gb_Library_use_externals,vclplug_kde4,\
@@ -80,14 +80,14 @@ $(call gb_Library_use_externals,vclplug_kde4,\
 )
 
 $(eval $(call gb_Library_add_exception_objects,vclplug_kde4,\
-    vcl/unx/kde4/KDEData \
-    vcl/unx/kde4/KDESalDisplay \
-    vcl/unx/kde4/KDESalFrame \
-    vcl/unx/kde4/KDESalGraphics \
-    vcl/unx/kde4/KDESalInstance \
-    vcl/unx/kde4/KDEXLib \
-    vcl/unx/kde4/main \
-    vcl/unx/kde4/VCLKDEApplication \
+	vcl/unx/kde4/KDEData \
+	vcl/unx/kde4/KDESalDisplay \
+	vcl/unx/kde4/KDESalFrame \
+	vcl/unx/kde4/KDESalGraphics \
+	vcl/unx/kde4/KDESalInstance \
+	vcl/unx/kde4/KDEXLib \
+	vcl/unx/kde4/main \
+	vcl/unx/kde4/VCLKDEApplication \
 ))
 
 ifeq ($(OS),LINUX)
@@ -97,4 +97,5 @@ $(eval $(call gb_Library_add_linked_libs,vclplug_kde4,\
 	pthread \
 ))
 endif
+
 # vim: set noet sw=4 ts=4:
