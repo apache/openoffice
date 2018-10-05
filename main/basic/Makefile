@@ -19,25 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
-PRJ=..$/..
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJNAME=basic
-TARGET=basicmgr
-ENABLE_EXCEPTIONS=TRUE
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-# --- Settings -----------------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-
-# --- Allgemein -----------------------------------------------------------
-
-SLOFILES= \
-        $(SLO)$/basmgr.obj \
-        $(SLO)$/basicmanagerrepository.obj\
-        $(SLO)$/vbahelper.obj
-
-# --- Targets -------------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

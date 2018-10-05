@@ -21,37 +21,14 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,basic))
 
-PRJNAME=basic
-TARGET=comp
+$(eval $(call gb_Module_add_targets,basic,\
+	AllLangResTarget_sb \
+	Library_sb \
+	Package_inc \
+	StaticLibrary_sample \
+))
 
-# --- Settings ------------------------------------------------------------
 
-.INCLUDE :  settings.mk
-
-SLOFILES= \
-    $(SLO)$/buffer.obj      \
-    $(SLO)$/codegen.obj		\
-    $(SLO)$/dim.obj			\
-    $(SLO)$/exprgen.obj		\
-    $(SLO)$/exprnode.obj	\
-    $(SLO)$/exprtree.obj	\
-	$(SLO)$/io.obj			\
-    $(SLO)$/loops.obj		\
-    $(SLO)$/parser.obj		\
-	$(SLO)$/sbcomp.obj		\
-    $(SLO)$/scanner.obj		\
-    $(SLO)$/symtbl.obj		\
-    $(SLO)$/token.obj
-
-EXCEPTIONSFILES= \
-    $(SLO)$/codegen.obj     \
-    $(SLO)$/dim.obj         \
-    $(SLO)$/exprtree.obj    \
-    $(SLO)$/parser.obj      \
-	$(SLO)$/sbcomp.obj
-
-# --- Targets --------------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

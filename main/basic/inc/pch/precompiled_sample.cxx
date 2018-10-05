@@ -21,25 +21,5 @@
 
 
 
-#ifndef __SBX_SBX_FACTORY_HXX
-#define __SBX_SBX_FACTORY_HXX
+#include "precompiled_sample.hxx"
 
-#include "basic/basicdllapi.h"
-#include <basic/sbxdef.hxx>
-
-class SbxBase;
-class SbxObject;
-class String;
-class UniString;
-
-class BASIC_DLLPUBLIC SbxFactory
-{
-	sal_Bool bHandleLast;	// sal_True: Factory is asked at last because of its expensiveness
-public:
-	SbxFactory( sal_Bool bLast=sal_False )	{ bHandleLast = bLast; }
-	sal_Bool IsHandleLast( void )		{ return bHandleLast; }
-	virtual SbxBase* Create( sal_uInt16 nSbxId, sal_uInt32 = SBXCR_SBX );
-	virtual SbxObject* CreateObject( const String& );
-};
-
-#endif

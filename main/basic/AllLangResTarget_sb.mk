@@ -21,34 +21,26 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_AllLangResTarget_AllLangResTarget,sb))
 
-PRJNAME=basic
-TARGET=sample
+$(eval $(call gb_AllLangResTarget_set_reslocation,sb,basic))
 
-# --- Settings ------------------------------------------------------------
+$(eval $(call gb_AllLangResTarget_add_srs,sb,\
+	sb/res \
+))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_SrsTarget_SrsTarget,sb/res))
 
-# --- Allgemein ------------------------------------------------------------
+$(eval $(call gb_SrsTarget_set_include,sb/res,\
+	$$(INCLUDE) \
+	-I$(OUTDIR)/inc \
+	-I$(WORKDIR)/inc/basic \
+	-I$(SRCDIR)/basic/inc \
+	-I$(SRCDIR)/basic/inc/basic \
+	-I$(SRCDIR)/basic/source/inc \
+))
 
-CXXFILES = \
-	object.cxx 		\
-	collelem.cxx
-
-
-OBJFILES = \
-	$(OBJ)$/object.obj 	\
-	$(OBJ)$/collelem.obj
-
-
-LIBTARGET = NO
-
-LIB1TARGET=$(LB)$/sample.lib
-LIB1ARCHIV=$(LB)$/libsample.a
-
-LIB1OBJFILES = $(OBJFILES)
-
-# --- Targets ------------------------------------------------------------
-
-.INCLUDE :  target.mk
+$(eval $(call gb_SrsTarget_add_files,sb/res,\
+	basic/source/classes/sb.src \
+	basic/source/sbx/format.src \
+))
