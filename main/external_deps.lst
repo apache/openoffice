@@ -231,9 +231,9 @@ if (SYSTEM_EXPAT != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
-    MD5 = ecb2e37e45c9933e2a963cabe03670ab
-    name = curl-7.19.7.tar.gz
-    URL1 = https://curl.haxx.se/download/archeology/curl-7.19.7.tar.gz
+    MD5 = 4762f41ef0dba751d1c7a3060a1c6ec6
+    name = curl-7.61.1.tar.gz
+    URL1 = https://curl.haxx.se/download/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (WITH_CATA_FONTS == YES)

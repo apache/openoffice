@@ -37,20 +37,9 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=curl-7.19.7
-TARFILE_MD5=ecb2e37e45c9933e2a963cabe03670ab
-PATCH_FILES=curl-7.19.7.patch
-
-.IF "$(GUI)"=="WNT"
-	PATCH_FILES+=curl-7.19.7_win.patch
-	.IF "$(COM)"=="GCC"
-		PATCH_FILES+=curl-7.19.7_mingw.patch
-	.ENDIF
-.ENDIF
-
-
-#CONVERTFILES= \
-    lib$/Makefile.vc6
+TARFILE_NAME=curl-7.61.1
+TARFILE_MD5=4762f41ef0dba751d1c7a3060a1c6ec6
+PATCH_FILES=
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
 
@@ -107,15 +96,21 @@ EXCFLAGS="/EHa /Zc:wchar_t- /D "_CRT_SECURE_NO_DEPRECATE""
 EXCFLAGS="/EHsc /YX"
 .ENDIF
 
-BUILD_DIR=.$/lib
-.IF "$(debug)"==""
-BUILD_ACTION=nmake -f Makefile.vc9 cfg=release-dll EXCFLAGS=$(EXCFLAGS)
-.ELSE
-BUILD_ACTION=nmake -f Makefile.vc9 cfg=debug-dll EXCFLAGS=$(EXCFLAGS)
+.IF "$(CPUNAME)"=="INTEL"
+curl_MACHINE:="X86"
+.ELIF "$(CPUNAME)"=="X86_64"
+curl_MACHINE:="X64"
 .ENDIF
 
-OUT2BIN=$(BUILD_DIR)$/libcurl.dll
-OUT2LIB=$(BUILD_DIR)$/libcurl.lib
+BUILD_DIR=.$/winbuild
+.IF "$(debug)"==""
+BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE)
+.ELSE
+BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 DEBUG=yes EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE)
+.ENDIF
+
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.lib
 
 .ENDIF
 .ENDIF			# "$(GUI)"=="WNT"
@@ -141,11 +136,11 @@ OUT2INC= \
 	include$/curl$/multi.h  		\
 	include$/curl$/curl.h  			\
 	include$/curl$/curlver.h  		\
-	include$/curl$/types.h  		\
+	include$/curl$/typecheck-gcc.h  	\
 	include$/curl$/stdcheaders.h  	\
 	include$/curl$/mprintf.h	    \
-	include$/curl$/curlbuild.h		\
-	include$/curl$/curlrules.h
+	include$/curl$/system.h
+
 
 # --- Targets ------------------------------------------------------
 
