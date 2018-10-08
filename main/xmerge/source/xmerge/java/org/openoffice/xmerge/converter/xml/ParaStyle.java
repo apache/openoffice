@@ -123,26 +123,21 @@ class alignment extends conversionAlgorithm {
 /**
  *  <p>This class represents a paragraph <code>Style</code>.</p>
  *
- *  <p><table border="1" cellpadding="1"><tr><td>
- *  Attribute        </td><td>Value
- *  </td></tr><tr><td>
- *  MARGIN_LEFT      </td><td>mm * 100
- *  </td></tr><tr><td>
- *  MARGIN_RIGHT     </td><td>mm * 100
- *  </td></tr><tr><td>
- *  MARGIN_TOP       </td><td>mm * 100 (space on top of paragraph)
- *  </td></tr><tr><td>
- *  MARGIN_BOTTOM    </td><td>mm * 100
- *  </td></tr><tr><td>
- *  TEXT_INDENT      </td><td>mm * 100 (first line indent)
- *  </td></tr><tr><td>
- *  LINE_HEIGHT      </td><td>mm * 100, unless or'ed with LH_PCT, in which 
+ *  <p><table border="1" cellpadding="1">
+ *  <caption>Properties</caption>
+ *  <tr><th>Attribute</th><th>Value</th></tr>
+ *  <tr><td>MARGIN_LEFT      </td><td>mm * 100</td></tr>
+ *  <tr><td>MARGIN_RIGHT     </td><td>mm * 100</td></tr>
+ *  <tr><td>MARGIN_TOP       </td><td>mm * 100 (space on top of paragraph)</td></tr>
+ *  <tr><td>MARGIN_BOTTOM    </td><td>mm * 100</td></tr>
+ *  <tr><td>TEXT_INDENT      </td><td>mm * 100 (first line indent)</td></tr>
+ *  <tr><td>LINE_HEIGHT      </td><td>mm * 100, unless or'ed with LH_PCT, in which 
  *                   case it is a percentage (e.g. 200% for double spacing)
  *                   Can also be or'ed with LH_ATLEAST.  Value is stored
  *                   in bits indicated by LH_VALUEMASK.
- *  </td></tr><tr><td>
- *  TEXT_ALIGN       </td><td>ALIGN_RIGHT, ALIGN_CENTER, ALIGN_JUST, ALIGN_LEFT
- *  </td></tr></table></p>
+ *  </td></tr>
+ *  <tr><td>TEXT_ALIGN       </td><td>ALIGN_RIGHT, ALIGN_CENTER, ALIGN_JUST, ALIGN_LEFT</td></tr>
+ *  </table>
  *
  *   @author   David Proulx
  */
@@ -266,9 +261,9 @@ public class ParaStyle extends Style implements Cloneable {
      *  Constructor for use when going from client device format to DOM.
      *
      *  @param  name     Name of the <code>Style</code>.  Can be null.
-     *  @param  family   Family of the <code>Style</code> - usually
+     *  @param  familyName   Family of the <code>Style</code> - usually
      *                   <i>paragraph</i>, <i>text</i>, etc.  Can be null.
-     *  @param  parent   Name of the parent <code>Style</code>, or null
+     *  @param  parentName   Name of the parent <code>Style</code>, or null
      *                   if none.
      *  @param  attribs  Array of attributes to set.
      *  @param  values   Array of values to set.
@@ -289,13 +284,13 @@ public class ParaStyle extends Style implements Cloneable {
      *  format to DOM.
      *
      *  @param  name     Name of the <code>Style</code>.  Can be null.
-     *  @param  family   Family of the <code>Style</code> - usually
+     *  @param  familyName   Family of the <code>Style</code> - usually
      *                   <i>paragraph</i>, <i>text</i>, etc.  Can be null.
-     *  @param  parent   Name of the parent <code>Style</code>, or
+     *  @param  parentName   Name of the parent <code>Style</code>, or
      *                   null if none.
      *  @param  attribs  Array of attributes indices to set.
      *  @param  values   Array of values to set.
-     *  @param  sc       The <code>StyleCatalog</code>, which is used for
+     *  @param  lookup   The <code>StyleCatalog</code>, which is used for
      *                   looking up ancestor <code>Style</code> objects.
      */
     public ParaStyle(String name, String familyName, String parentName,
@@ -373,7 +368,7 @@ public class ParaStyle extends Style implements Cloneable {
      *  Set an attribute for this paragraph <code>Style</code>.
      *
      *  @param  attr   The attribute index to set.
-     *  @apram  value  The attribute value to set.
+     *  @param  value  The attribute value to set.
      */
     public void setAttribute(int attr, String value) {
         isSet[attr] = true;
@@ -496,7 +491,7 @@ public class ParaStyle extends Style implements Cloneable {
     /**
      *  Create the <code>Node</code> with the specified elements.
      *
-     *  @parentDoc  Parent  <code>Document</code> of the
+     *  @param  parentDoc  <code>Document</code> of the
      *                      <code>Node</code> to create.
      *  @param      name    Name of the <code>Node</code>.
      *

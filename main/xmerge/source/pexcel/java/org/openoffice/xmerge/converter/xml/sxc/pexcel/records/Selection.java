@@ -76,21 +76,11 @@ public class Selection implements BIFFRecord {
         return PocketExcelConstants.CURRENT_SELECTION;
     }
 	
-    /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
-	 *
-	 * @return the hex code for <code>Selection</code>
-	 */
     public Point getActiveCell() {
 		Point p = new Point(colActive, EndianConverter.readShort(rwActive));
         return p;
     } 
 	
-    /**
-	 * Get the hex code for this particular <code>BIFFRecord</code> 
-	 *
-	 * @return the hex code for <code>Selection</code>
-	 */
     public void setActiveCell(Point p) {
 
 		colActive = (byte) p.getX();
@@ -100,7 +90,7 @@ public class Selection implements BIFFRecord {
 	/**
 	 * Reads a Selection Record from the <code>InputStream</code> 
 	 *
-	 * @param	is InputStream containing a Pocket Excel Data file.
+	 * @param	input InputStream containing a Pocket Excel Data file.
 	 */
     public int read(InputStream input) throws IOException {
 		

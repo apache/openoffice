@@ -208,7 +208,7 @@ OfficeConstants {
 	}
 	
 	/**
- 	 *	Adds a font recrod to the workbook 
+ 	 *	Adds a font record to the workbook 
 	 *
  	 * @param	f the font record to add	
  	 */	
@@ -236,7 +236,7 @@ OfficeConstants {
 	/**
  	 *	Adds a ExtendedFormat record to the workbook 
 	 *
- 	 * @param	f the font recrod to add	
+ 	 * @param	fmt the font record to add	
  	 */	
 	public int addExtendedFormat(Format fmt) throws IOException {
 
@@ -358,7 +358,7 @@ OfficeConstants {
 	/**
      * Adds a <code>Worksheet</code> to the workbook.  
 	 *
-	 * @return name the name of the <code>Worksheet</code> to be added 
+	 * @param name the name of the <code>Worksheet</code> to be added 
 	 */	 
 	public void addWorksheet(String name) throws IOException {
 	
@@ -372,7 +372,6 @@ OfficeConstants {
 	/**
      * Adds a cell to the current worksheet.  
 	 *
-	 * @return the name of the <code>Worksheet</code> to be added 
 	 */
 	public void addCell(int row,int col, Format fmt, String cellContents)
 	throws IOException {
@@ -466,12 +465,6 @@ OfficeConstants {
 		}
 	}
 
-	/**
- 	 * Will create a number of ColInfo recrods based on the column widths
-	 * based in.	
-	 *
- 	 * @param	an integer list representing the column widths	
- 	 */
 	public void addNameDefinition(NameDefinition nameDefinition) throws IOException {
 
 		DefinedName dn = new DefinedName(nameDefinition, this);

@@ -50,11 +50,6 @@ public class DefinedName implements BIFFRecord {
 	private String definition = new String("");
 	private Workbook wb;
 
-	/**
- 	 * Constructs a Defined Name from the <code>InputStream</code> 
- 	 *
- 	 * @param	is InputStream containing the record data 
- 	 */
     public DefinedName(NameDefinition nd, Workbook wb) throws IOException {
 		
 		fh.setWorkbook(wb);
@@ -95,7 +90,7 @@ public class DefinedName implements BIFFRecord {
  	 * Reads a Defined Name from the <code>InputStream</code> The byte array
 	 * must be twice the size of the String as it uses unicode.
  	 *
- 	 * @param	is InputStream containing the record data 
+ 	 * @param	input InputStream containing the record data 
  	 */
     public int read(InputStream input) throws IOException {
 		
@@ -126,7 +121,7 @@ public class DefinedName implements BIFFRecord {
      /**
 	 * Write this particular <code>BIFFRecord</code> to the <code>OutputStream</code>
 	 *
-	 * @param ouput the <code>OutputStream</code>
+	 * @param output the <code>OutputStream</code>
 	 */        
     public void write(OutputStream output) throws IOException {
 
@@ -192,7 +187,7 @@ public class DefinedName implements BIFFRecord {
 	 * @return the <code>String</code> containing the definition 
 	 */
 	private String getDefinition() {
-		// pexcel sometimes creates Name definition with no defintion, bug??
+		// pexcel sometimes creates Name definition with no definition, bug??
 		if(EndianConverter.readShort(cce)!=0) {				
 			definition = fh.convertPXLToCalc(rgce);	
 			definition = definition.substring(1);	// remove the '='
@@ -202,7 +197,7 @@ public class DefinedName implements BIFFRecord {
     }
 	
 	/**
-	 * Returns the defintion 
+	 * Returns the definition 
 	 *
 	 * @return the <code>String</code> containing the definition 
 	 */
@@ -211,7 +206,7 @@ public class DefinedName implements BIFFRecord {
 		return fh.isRangeType();			
     }
 	/**
-	 * Returns the defintion 
+	 * Returns the definition 
 	 *
 	 * @return the <code>String</code> containing the definition 
 	 */

@@ -44,7 +44,7 @@ public class LabelCell extends CellValue {
  	 * Constructs a <code>LabelCell</code> using specified attributes
 	 * 
 	 * @param row row number
-	 * @param col column number 
+	 * @param column column number 
 	 * @param cellContents contents of the cell 
 	 * @param ixfe font index
  	 */
@@ -69,7 +69,7 @@ public class LabelCell extends CellValue {
     /**
 	 * Writes a <code>LabelCell</code> to the specified <code>Outputstream</code>
 	 *
-	 * @param os the <code>OutputStream</code> to write to  
+	 * @param output the <code>OutputStream</code> to write to  
 	 */
     public void write(OutputStream output) throws IOException {
 
@@ -126,7 +126,7 @@ public class LabelCell extends CellValue {
     /**
 	 * Sets the <code>String</code> representing the cells contents 
 	 *
-	 * @return the <code>String</code> representing the cells contents
+	 * @param cellContents the <code>String</code> representing the cells contents
 	 */
 	private void setLabel(String cellContents) throws IOException {
 		rgch = cellContents.getBytes("UTF-16LE");
