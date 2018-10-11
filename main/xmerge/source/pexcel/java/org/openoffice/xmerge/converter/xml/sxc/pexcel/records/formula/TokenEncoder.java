@@ -284,7 +284,7 @@ public class TokenEncoder {
     /** 
      * A Cell Reference Encoder (It supports absolute and relative addressing)
 	 * 
-	 * @param cellCoordinates
+	 * @param t <code>Token</code> to be encoded
 	 * @return A <code>Vector</code> of pexcel <code>Byte</code>
 	 */
 	private byte[] encodeCellCoordinates(String cellCoordinates) {
@@ -367,7 +367,7 @@ public class TokenEncoder {
     /** 
      * This function will find the sheetname index for a given String 
 	 * 
-	 * @param s
+	 * @param t <code>Token</code> to be encoded
 	 * @return A <code>Vector</code> of pexcel <code>Byte</code>
 	 */
 	private short findSheetIndex(String s) {

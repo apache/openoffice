@@ -34,8 +34,7 @@ import com.sun.star.uno.UnoRuntime;
 /** Factory helper class supporting com.sun.star.lang.XServiceInfo and
     com.sun.star.lang.XSingleComponentFactory.
     
-    Attention:
-    <br>
+    @attention
     This factory implementation does not support lang.XSingleServiceFactory.
 */
 public class Factory

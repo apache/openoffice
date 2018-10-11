@@ -49,7 +49,7 @@ import org.openoffice.xmerge.util.Debug;
  *  Generic small device implementation of <code>DocumentMerger</code> for
  *  the {@link
  *  org.openoffice.xmerge.converter.xml.sxc.SxcPluginFactory
- *  SxcPluginFactory}.  Used with SXC <code>Document</code> objects.
+ *  SxcPluginFactory}.  Used with SXC <code>Document</code> objects.</p>
  */
 public class DocumentMergerImpl implements DocumentMerger {
 

@@ -21,8 +21,8 @@
 
 
 
-RAPTOR_MAJOR=0
-RASQAL_MAJOR=3
+RAPTOR_MAJOR=1
+RASQAL_MAJOR=1
 # redland has no stable abi
 REDLAND_MAJOR=0
 

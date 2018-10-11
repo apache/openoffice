@@ -276,7 +276,7 @@ org.openoffice.xmerge.converter.xml.OfficeConstants {
     /**
 	 * Compare two ExtendedFormat to see if the font index is the same 
 	 *
-	 * @param rhs the ExtendedFormat to be used in the comaprison
+	 * @param the ExtendedFormat to be used in the comaprison
 	 * @return boolean if the two are the same otherwise false
 	 */	
 	public boolean compareTo(ExtendedFormat rhs) {
@@ -352,7 +352,7 @@ org.openoffice.xmerge.converter.xml.OfficeConstants {
     }
     
 	/**
- 	 * Writes the ExtendedFormat to the <code>Outputstream</code> 
+ 	 * Writes the ExtendedFormat to the <code>Outputstream<code> 
  	 *
  	 * @param	output the <code>Outputstream</code>to write to 
  	 */

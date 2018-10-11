@@ -108,7 +108,7 @@ public class ColourConverter {
 	 * cases where the 16 colour values are something other than there default
 	 * values (e.g. in the case of pocket Excel)
 	 * 
-	 * @param lookup a 16 bit array mapping the 16 colours to their values
+	 * @param short[] a 16 bit array mapping the 16 colours to there values
 	 */
 	public ColourConverter(short lookup[]) {
 
@@ -151,7 +151,7 @@ public class ColourConverter {
      * This method maps a Pocket Word colour index value to an RGB value as
      * used by OpenOffice.
      *
-     * @param   colour   The index into Pocket Word's colour table.
+     * @param   index   The index into Pocket Word's colour table.
      *
      * @return  A Color object representing the RGB value of the Pocket Word 
      *          colour.
@@ -257,7 +257,7 @@ public class ColourConverter {
 	  	int blue = colour.getBlue();
 
 		// We need to convert the pale colors to their base color rather than
-		// white so we modify the rgb values if the colour is sufficiently
+		// white so we modify the rgb values if the colour is sufficently
 		// white
 	   	if(red>0xC0 && green>0xC0 && blue>0xC0) {
 			
@@ -307,7 +307,7 @@ public class ColourConverter {
          * is closest to White.
          *
          * Shades of grey will be converted to either Silver or White, where
-         * Grey may be a more appropriate colour.  This is handled specially
+         * Grey may be a more appropraite colour.  This is handled specially
          * only for Silver and White matches.
          */
         switch (matchedRGB) {

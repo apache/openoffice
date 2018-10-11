@@ -51,9 +51,10 @@ public class Formula extends CellValue implements OfficeConstants {
  	 * Constructs a <code>Formula</code> using specified attributes
 	 * 
 	 * @param row row number
-	 * @param column column number 
+	 * @param col column number 
 	 * @param cellContents contents of the cell 
 	 * @param ixfe font index
+	 * @param value the value of the cell
  	 */
     public Formula(int row, int column, String cellContents, int ixfe, Format fmt, Workbook wb)
 	throws Exception {
@@ -111,7 +112,7 @@ public class Formula extends CellValue implements OfficeConstants {
  	 * Translates a <code>String</code> written in infix which represents a
 	 * formula into a byte[] what can be written to pocket excel file.
  	 *
- 	 * @param inFormula formula string
+ 	 * @param	formula string
  	 */
     public void setFormula(String inFormula) throws Exception {
 
@@ -170,7 +171,7 @@ public class Formula extends CellValue implements OfficeConstants {
      /**
 	 * Writes the Formula record to the <code>OutputStream</code> 
 	 *
-	 * @param output the <code>OutputStream</code> being written to 
+	 * @param the <code>OutputStream</code> being written to 
 	 */   
     public void write(OutputStream output) throws IOException {
 

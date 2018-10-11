@@ -46,7 +46,8 @@ public class ColumnRowInfo {
 	/**
 	 * Constructor for a <code>ColumnRowInfo</code>
 	 *
-	 * @param type whether Row or column record
+	 * @param dimension if it's a row the height, a column the width 
+	 * @param repeated 
 	 */
 	public ColumnRowInfo(int type) {
 
@@ -81,7 +82,7 @@ public class ColumnRowInfo {
 	/**
 	 * sets the definition 
 	 *
-	 * @param fmt sets the definition
+	 * @param newDefinition sets the definition
 	 */
 	public void setFormat(Format fmt) {
 
@@ -109,9 +110,9 @@ public class ColumnRowInfo {
 	}
 	
 	/**
-	 * Sets the definition 
+	 * sets the definition 
 	 *
-	 * @param dimension
+	 * @param newDefinition sets the definition
 	 */
 	public void setSize(int dimension) {
 
@@ -127,6 +128,11 @@ public class ColumnRowInfo {
 		return repeated;
 	}
 
+	/**
+	 * Returns the base Cell address 
+	 * 
+	 * @return the base cell address
+	 */
 	public void setRepeated(int repeated) {
 
 		this.repeated = repeated;

@@ -45,7 +45,7 @@ public class SheetUtil {
      *    Remove all of the supported attributes.
      *  </li><li>
      *    Remove the first <i>text:p</i> <code>Node</code> for most of the cells.
-     *  </li></ul>
+     *  </li></ul></p>
      *
      *  @param  cc    The <code>ConverterCapabilities</code>.
      *  @param  node  The <code>Node</code>.
