@@ -26,7 +26,7 @@ package com.sun.star.comp.beans;
 import com.sun.star.uno.*;
 import com.sun.star.awt.*;
 
-/** <p>Class to pass the system window handle to the OpenOffice.org toolkit.</p>
+/** <p>Class to pass the system window handle to the OpenOffice toolkit.</p>
  *
  * @since OOo 2.0.0
  */
@@ -34,22 +34,22 @@ import com.sun.star.awt.*;
 	implements XSystemDependentWindowPeer, XWindowPeer
 {
  	protected int localSystemType;
-    protected Any wrappedHandle;
-    
+	protected Any wrappedHandle;
+
 	/** Create the faked window peer.
 	 * @param _hWindow the system handle to the window.
 	 * @param _systemType specifies the system type.
 	 */
 	public JavaWindowPeerFake(Any _hWindow, int _systemType)
 	{
-        localSystemType = _systemType;        
-        wrappedHandle = _hWindow;
+		localSystemType = _systemType;
+		wrappedHandle = _hWindow;
 	}
 
 	/** <p>Implementation of XSystemDependentWindowPeer (that's all we really need)</p>
-	 *  This method is called back from the OpenOffice.org toolkit to retrieve the system data.
+	 *  This method is called back from the OpenOffice toolkit to retrieve the system data.
 	 */
-    public Object getWindowHandle(/*IN*/byte[] ProcessId, /*IN*/short SystemType) 
+	public Object getWindowHandle(/*IN*/byte[] ProcessId, /*IN*/short SystemType)
 		throws com.sun.star.uno.RuntimeException
 	{
 		if (SystemType == localSystemType) {
@@ -57,60 +57,60 @@ import com.sun.star.awt.*;
 		}
 		else return null;
 	}
-	
-	/** not really neaded.
+
+	/** not really needed.
 	 */
-    public XToolkit getToolkit()
+	public XToolkit getToolkit()
 		throws com.sun.star.uno.RuntimeException
 	{
 		return null;
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void setPointer(/*IN*/XPointer Pointer)
+	public void setPointer(/*IN*/XPointer Pointer)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void setBackground(/*IN*/int Color)
+	public void setBackground(/*IN*/int Color)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void invalidate(/*IN*/short Flags)
+	public void invalidate(/*IN*/short Flags)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void invalidateRect(/*IN*/com.sun.star.awt.Rectangle Rect, /*IN*/short Flags)
+	public void invalidateRect(/*IN*/com.sun.star.awt.Rectangle Rect, /*IN*/short Flags)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void dispose()
+	public void dispose()
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void addEventListener(/*IN*/com.sun.star.lang.XEventListener xListener)
+	public void addEventListener(/*IN*/com.sun.star.lang.XEventListener xListener)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
 
-	/** not really neaded.
+	/** not really needed.
 	 */
-    public void removeEventListener(/*IN*/com.sun.star.lang.XEventListener aListener)
+	public void removeEventListener(/*IN*/com.sun.star.lang.XEventListener aListener)
 		throws com.sun.star.uno.RuntimeException
 	{
 	}
