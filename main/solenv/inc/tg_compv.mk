@@ -31,10 +31,10 @@ COMPVERMK:=$(SOLARINCDIR)/comp_ver.mk
 COMNAME:=
 
 .IF "$(COM)"=="GCC"
-CFLAGSVERSION=-dumpversion
-CFLAGSVERSION_CMD=-dumpversion
-CFLAGSNUMVERSION_CMD=-dumpversion $(PIPEERROR) $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
-#CFLAGSNUMVERSION_CMD=-dumpversion | 2>&1  $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
+CFLAGSVERSION=-dumpfullversion -dumpversion
+CFLAGSVERSION_CMD=-dumpfullversion -dumpversion
+CFLAGSNUMVERSION_CMD=-dumpfullversion -dumpversion $(PIPEERROR) $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
+#CFLAGSNUMVERSION_CMD=-dumpfullversion -dumpversion | 2>&1  $(AWK) -v num=true -f $(SOLARENV)/bin/getcompver.awk
 .ELIF "$(COM)"=="CLANG"
 CFLAGSVERSION=--version
 CFLAGSVERSION_CMD=--version | head -n1 | sed -e"s/.*version //" -e"s/ .*//"
