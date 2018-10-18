@@ -22,7 +22,7 @@ umask 022
 
 if [ "${KDEMAINDIR}" ]
 then
-  echo Copying icons ..
+  echo Copying KDE icons...
   for i in `cd ${ICON_SOURCE_DIR}; find ${ICON_THEMES:-hicolor/??x?? hicolor/???x??? locolor} -name "*.png"`
   do
     targetdir=${DESTDIR}/${KDEMAINDIR}/share/icons/`dirname $i`
@@ -41,7 +41,7 @@ fi
 
 if [ "${GNOMEDIR}" ]
 then
-  echo Copying GNOME icons ..
+  echo Copying GNOME icons...
   for i in `cd ${ICON_SOURCE_DIR}/hicolor; find ??x?? ???x??? -name "*.png"`
   do
     targetdir=${DESTDIR}/${GNOMEDIR}/share/icons/gnome/`dirname $i`
@@ -62,7 +62,7 @@ then
 
   if [ "${GNOME_MIME_THEME}" ]
   then
-    echo "Creating legacy mimetype symlinks for GNOME .."
+    echo "Creating legacy mimetype symlinks for GNOME..."
     # add symlinks so that nautilus can identify the mime-icons
     # not strictly freedesktop-stuff but there is no common naming scheme yet.
     # One proposal is "mime-application:vnd.oasis.opendocument.spreadsheet.png"
@@ -80,7 +80,7 @@ then
       if [ ! -d "${link_dir}" ]
       then
         mkdir -p "${link_dir}"
-	link_target_dir="../../../gnome/$subdir/mimetypes/"
+    link_target_dir="../../../gnome/$subdir/mimetypes/"
       fi
       ln -sf $link_target_dir${ICON_PREFIX:-}${ICON_PREFIX:+-}drawing.png                     ${link_dir}/gnome-mime-application-vnd.sun.xml.draw.png
       ln -sf $link_target_dir${ICON_PREFIX:-}${ICON_PREFIX:+-}drawing-template.png            ${link_dir}/gnome-mime-application-vnd.sun.xml.draw.template.png
