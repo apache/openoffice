@@ -122,8 +122,8 @@ MIMEICONLIST = \
     extension
 
 ICONDEPN = \
-	../icons/hicolor/{16x16 32x32 48x48}/apps/{$(LAUNCHERLIST:s/qstart//:s/javafilter//)}.png \
-	../icons/hicolor/{16x16 32x32 48x48}/mimetypes/{$(MIMEICONLIST)}.png \
+	../icons/hicolor/{16x16 32x32 48x48 128x128}/apps/{$(LAUNCHERLIST:s/qstart//:s/javafilter//)}.png \
+	../icons/hicolor/{16x16 32x32 48x48 128x128}/mimetypes/{$(MIMEICONLIST)}.png \
 	../icons/locolor/{16x16 32x32}/apps/{$(LAUNCHERLIST:s/qstart//:s/javafilter//)}.png \
 	../icons/locolor/{16x16 32x32}/mimetypes/{$(MIMEICONLIST)}.png
 
