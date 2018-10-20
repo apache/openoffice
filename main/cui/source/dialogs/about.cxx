@@ -311,6 +311,9 @@ AboutDialog::AboutDialog( Window* pParent, const ResId  & rId ) :
     sbcopyright.appendAscii("Copyright ");
     sbcopyright.append((sal_Unicode)0x00a9);
     sbcopyright.appendAscii(" ");
+// TODO:
+//   This date needs to be updated each year... do this automagically
+//
     rtl::OUString sYear( RTL_CONSTASCII_USTRINGPARAM("2018") );
     if (vendor.EqualsAscii("Apache Software Foundation")) {
         sbcopyright.append(sYear);
