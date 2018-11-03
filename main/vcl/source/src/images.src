@@ -29,377 +29,377 @@
 
 Bitmap (SV_RESID_BITMAP_CHECK + SV_RESID_STDOFFSET)
 {
-	File = "check.bmp";
+	File = "check.png" ;
 };
 
 
 Bitmap (SV_RESID_BITMAP_CHECK + SV_RESID_MONOOFFSET)
 {
-	File = "checkmono.bmp";
+	File = "checkmono.png" ;
 };
 
 Bitmap (SV_RESID_BITMAP_SCROLLBMP)
 {
-	File = "scrbmp.bmp";
+	File = "scrbmp.png" ;
 };
 
 Bitmap (SV_RESID_BITMAP_SCROLLMSK)
 {
-	File = "scrmsk.bmp";
+	File = "scrmsk.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap (SV_RESID_BITMAP_RADIO + SV_RESID_STDOFFSET)
 {
-	File = "radio.bmp";
+	File = "radio.png" ;
 };
 
 Bitmap (SV_RESID_BITMAP_RADIO + SV_RESID_MONOOFFSET)
 {
-	File = "radiomono.bmp";
+	File = "radiomono.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap SV_RESID_BITMAP_MSGBOX
 {
-	File = "msgbox.png";
+	File = "msgbox.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap SV_RESID_BITMAP_MSGBOX_HC
 {
-	File = "msgbox_hc.png";
+	File = "msgbox_hc.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap SV_RESID_BITMAP_PIN
 {
-	File = "pin.bmp";
+	File = "pin.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap SV_RESID_BITMAP_CLOSEDOC
 {
-	File = "closedoc.bmp";
+	File = "closedoc.png" ;
 };
 
 Bitmap SV_RESID_BITMAP_CLOSEDOCHC
 {
-	File = "closedochc.bmp";
+	File = "closedochc.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap SV_RESID_BITMAP_SPLITHPIN
 {
-	File = "splhpin.bmp";
+	File = "splhpin.png" ;
 };
 
 Bitmap SV_RESID_BITMAP_SPLITVPIN
 {
-	File = "splvpin.bmp";
+	File = "splvpin.png" ;
 };
 
 Bitmap SV_RESID_BITMAP_SPLITHARW
 {
-	File = "splharw.bmp";
+	File = "splharw.png" ;
 };
 
 Bitmap SV_RESID_BITMAP_SPLITVARW
 {
-	File = "splvarw.bmp";
+	File = "splvarw.png" ;
 };
 
 // -----------------------------------------------------------------------
 
 Bitmap (SV_ICON_SIZE48_START)
 {
-    File = "mainapp_48_8.png" ;
+	File = "mainapp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START)
 {
-    File = "mainapp_32_8.png" ;
+	File = "mainapp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START)
 {
-    File = "mainapp_16_8.png" ;
+	File = "mainapp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_48_8.png" ;
+	File = "mainapp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_32_8.png" ;
+	File = "mainapp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_16_8.png" ;
+	File = "mainapp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_TEXT)
 {
-    File = "odt_48_8.png" ;
+	File = "odt_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_TEXT)
 {
-    File = "odt_32_8.png" ;
+	File = "odt_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_TEXT)
 {
-    File = "odt_16_8.png" ;
+	File = "odt_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "ott_48_8.png" ;
+	File = "ott_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "ott_32_8.png" ;
+	File = "ott_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "ott_16_8.png" ;
+	File = "ott_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "ods_48_8.png" ;
+	File = "ods_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "ods_32_8.png" ;
+	File = "ods_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "ods_16_8.png" ;
+	File = "ods_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "ots_48_8.png" ;
+	File = "ots_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "ots_32_8.png" ;
+	File = "ots_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "ots_16_8.png" ;
+	File = "ots_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_DRAWING)
 {
-    File = "odg_48_8.png" ;
+	File = "odg_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_DRAWING)
 {
-    File = "odg_32_8.png" ;
+	File = "odg_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_DRAWING)
 {
-    File = "odg_16_8.png" ;
+	File = "odg_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "otg_48_8.png" ;
+	File = "otg_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "otg_32_8.png" ;
+	File = "otg_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "otg_16_8.png" ;
+	File = "otg_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "odp_48_8.png" ;
+	File = "odp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "odp_32_8.png" ;
+	File = "odp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "odp_16_8.png" ;
+	File = "odp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "otp_48_8.png" ;
+	File = "otp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "otp_32_8.png" ;
+	File = "otp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "otp_16_8.png" ;
+	File = "otp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "odp_48_8.png" ;
+	File = "odp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "odp_32_8.png" ;
+	File = "odp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "odp_16_8.png" ;
+	File = "odp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "odm_48_8.png" ;
+	File = "odm_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "odm_32_8.png" ;
+	File = "odm_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "odm_16_8.png" ;
+	File = "odm_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "oth_48_8.png" ;
+	File = "oth_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "oth_32_8.png" ;
+	File = "oth_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "oth_16_8.png" ;
+	File = "oth_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_CHART)
 {
-    File = "mainapp_48_8.png" ;
+	File = "mainapp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_CHART)
 {
-    File = "mainapp_32_8.png" ;
+	File = "mainapp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_CHART)
 {
-    File = "mainapp_16_8.png" ;
+	File = "mainapp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_DATABASE)
 {
-    File = "odb_48_8.png" ;
+	File = "odb_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_DATABASE)
 {
-    File = "odb_32_8.png" ;
+	File = "odb_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_DATABASE)
 {
-    File = "odb_16_8.png" ;
+	File = "odb_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_FORMULA)
 {
-    File = "odf_48_8.png" ;
+	File = "odf_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_FORMULA)
 {
-    File = "odf_32_8.png" ;
+	File = "odf_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_FORMULA)
 {
-    File = "odf_16_8.png" ;
+	File = "odf_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "mainapp_48_8.png" ;
+	File = "mainapp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "mainapp_32_8.png" ;
+	File = "mainapp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "mainapp_16_8.png" ;
+	File = "mainapp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_MACRO)
 {
-    File = "mainapp_48_8.png" ;
+	File = "mainapp_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_MACRO)
 {
-    File = "mainapp_32_8.png" ;
+	File = "mainapp_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_MACRO)
 {
-    File = "mainapp_16_8.png" ;
+	File = "mainapp_16_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE48_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_48_8.png" ;
+	File = "printeradmin_48_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE32_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_32_8.png" ;
+	File = "printeradmin_32_8.png" ;
 };
 
 Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_16_8.png" ;
+	File = "printeradmin_16_8.png" ;
 };
 
 // -----------------------------------------------------------------------
@@ -407,401 +407,401 @@ Bitmap (SV_ICON_SIZE16_START + SV_ICON_ID_PRINTERADMIN)
 
 Bitmap (SV_ICON_LARGE_START)
 {
-    File = "mainapp_32.png" ;
+	File = "mainapp_32.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START)
 {
-    File = "mainapp_16.png" ;
+	File = "mainapp_16.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START)
 {
-    File = "mainapp_32_h.png" ;
+	File = "mainapp_32_h.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START)
 {
-    File = "mainapp_16_h.png" ;
+	File = "mainapp_16_h.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_32.png" ;
+	File = "mainapp_32.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_16.png" ;
+	File = "mainapp_16.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_32_h.png" ;
+	File = "mainapp_32_h.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_OFFICE)
 {
-    File = "mainapp_16_h" ;
+	File = "mainapp_16_h" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_TEXT)
 {
-    File = "lx03251.png" ;
+	File = "lx03251.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_TEXT)
 {
-    File = "sx03251.png" ;
+	File = "sx03251.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_TEXT)
 {
-    File = "lxh03251.png" ;
+	File = "lxh03251.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_TEXT)
 {
-    File = "sxh03251.png" ;
+	File = "sxh03251.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "lx03255.png" ;
+	File = "lx03255.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "sx03255.png" ;
+	File = "sx03255.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "lxh03255.png" ;
+	File = "lxh03255.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_TEXT_TEMPLATE)
 {
-    File = "sxh03255.png" ;
+	File = "sxh03255.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "lx03250.png" ;
+	File = "lx03250.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "sx03250.png" ;
+	File = "sx03250.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "lxh03250.png" ;
+	File = "lxh03250.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_SPREADSHEET)
 {
-    File = "sxh03250.png" ;
+	File = "sxh03250.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "lx03254.png" ;
+	File = "lx03254.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "sx03254.png" ;
+	File = "sx03254.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "lxh03254.png" ;
+	File = "lxh03254.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_SPREADSHEET_TEMPLATE)
 {
-    File = "sxh03254.png" ;
+	File = "sxh03254.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_DRAWING)
 {
-    File = "lx03246.png" ;
+	File = "lx03246.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_DRAWING)
 {
-    File = "sx03246.png" ;
+	File = "sx03246.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_DRAWING)
 {
-    File = "lxh03246.png" ;
+	File = "lxh03246.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_DRAWING)
 {
-    File = "sxh03246.png" ;
+	File = "sxh03246.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "lx03252.png" ;
+	File = "lx03252.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "sx03252.png" ;
+	File = "sx03252.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "lxh03252.png" ;
+	File = "lxh03252.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_DRAWING_TEMPLATE)
 {
-    File = "sxh03252.png" ;
+	File = "sxh03252.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "lx03249.png" ;
+	File = "lx03249.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "sx03249.png" ;
+	File = "sx03249.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "lxh03249.png" ;
+	File = "lxh03249.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_PRESENTATION)
 {
-    File = "sxh03249.png" ;
+	File = "sxh03249.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "lx03253.png" ;
+	File = "lx03253.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "sx03253.png" ;
+	File = "sx03253.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "lxh03253.png" ;
+	File = "lxh03253.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_PRESENTATION_TEMPLATE)
 {
-    File = "sxh03253.png" ;
+	File = "sxh03253.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "lx03241.png" ;
+	File = "lx03241.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "sx03241.png" ;
+	File = "sx03241.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "lxh03241.png" ;
+	File = "lxh03241.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_PRESENTATION_COMPRESSED)
 {
-    File = "sxh03241.png" ;
+	File = "sxh03241.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "lx03248.png" ;
+	File = "lx03248.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "sx03248.png" ;
+	File = "sx03248.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "lxh03248.png" ;
+	File = "lxh03248.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_MASTER_DOCUMENT)
 {
-    File = "sxh03248.png" ;
+	File = "sxh03248.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "lx03139.png" ;
+	File = "lx03139.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "sx03139.png" ;
+	File = "sx03139.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "lxh03139.png" ;
+	File = "lxh03139.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_HTML_DOCUMENT)
 {
-    File = "sxh03139.png" ;
+	File = "sxh03139.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_CHART)
 {
-    File = "lx03128.png" ;
+	File = "lx03128.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_CHART)
 {
-    File = "sx03128.png" ;
+	File = "sx03128.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_CHART)
 {
-    File = "lxh03128.png" ;
+	File = "lxh03128.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_CHART)
 {
-    File = "sxh03128.png" ;
+	File = "sxh03128.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_DATABASE)
 {
-    File = "lx03245.png" ;
+	File = "lx03245.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_DATABASE)
 {
-    File = "sx03245.png" ;
+	File = "sx03245.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_DATABASE)
 {
-    File = "lxh03245.png" ;
+	File = "lxh03245.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_DATABASE)
 {
-    File = "sxh03245.png" ;
+	File = "sxh03245.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_FORMULA)
 {
-    File = "lx03247.png" ;
+	File = "lx03247.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_FORMULA)
 {
-    File = "sx03247.png" ;
+	File = "sx03247.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_FORMULA)
 {
-    File = "lxh03247.png" ;
+	File = "lxh03247.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_FORMULA)
 {
-    File = "sxh03247.png" ;
+	File = "sxh03247.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "lx03242.png" ;
+	File = "lx03242.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "sx03242.png" ;
+	File = "sx03242.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "lxh03242.png" ;
+	File = "lxh03242.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_TEMPLATE)
 {
-    File = "sxh03242.png" ;
+	File = "sxh03242.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_MACRO)
 {
-    File = "lx03216.png" ;
+	File = "lx03216.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_MACRO)
 {
-    File = "sx03216.png" ;
+	File = "sx03216.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_MACRO)
 {
-    File = "lxh03216.png" ;
+	File = "lxh03216.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_MACRO)
 {
-    File = "sxh03216.png" ;
+	File = "sxh03216.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_32.png" ;
+	File = "printeradmin_32.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_16.png" ;
+	File = "printeradmin_16.png" ;
 };
 
 Bitmap (SV_ICON_LARGE_HC_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_32_h.png" ;
+	File = "printeradmin_32_h.png" ;
 };
 
 Bitmap (SV_ICON_SMALL_HC_START + SV_ICON_ID_PRINTERADMIN)
 {
-    File = "printeradmin_16_h.png" ;
+	File = "printeradmin_16_h.png" ;
 };
 
 Bitmap SV_DISCLOSURE_PLUS
 {
-    File = "plus.png";
+	File = "plus.png" ;
 };
 
 Bitmap SV_DISCLOSURE_PLUS_HC
 {
-    File = "plus_sch.png";
+	File = "plus_sch.png" ;
 };
 
 Bitmap SV_DISCLOSURE_MINUS
 {
-    File = "minus.png";
+	File = "minus.png" ;
 };
 
 Bitmap SV_DISCLOSURE_MINUS_HC
 {
-    File = "minus_sch.png";
+	File = "minus_sch.png" ;
 };
 
