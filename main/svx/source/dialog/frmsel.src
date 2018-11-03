@@ -30,37 +30,37 @@
 
 Resource RID_SVXSTR_BORDER_CONTROL
 {
-    StringArray ARR_TEXTS
+	StringArray ARR_TEXTS
 	{
-        ItemList [ en-US ] =
-        {
-            < "Border setting" ; 0; > ;
-            < "Left border line" ; 1; > ;
-            < "Right border line" ; 2; > ;
-            < "Top border line" ; 3; > ;
-            < "Bottom border line" ; 4; > ;
-            < "Horizontal border line" ; 5; > ;
-            < "Vertical border line" ; 6; > ;
-            < "Diagonal border line from top left to bottom right" ; 7; > ;
-            < "Diagonal border line from bottom left to top right" ; 8; > ;
-        };
+		ItemList [ en-US ] =
+		{
+			< "Border setting" ; 0; > ;
+			< "Left border line" ; 1; > ;
+			< "Right border line" ; 2; > ;
+			< "Top border line" ; 3; > ;
+			< "Bottom border line" ; 4; > ;
+			< "Horizontal border line" ; 5; > ;
+			< "Vertical border line" ; 6; > ;
+			< "Diagonal border line from top left to bottom right" ; 7; > ;
+			< "Diagonal border line from bottom left to top right" ; 8; > ;
+		};
 	};
-    StringArray ARR_DESCRIPTIONS
+	StringArray ARR_DESCRIPTIONS
 	{
-        ItemList [ en-US ] =
-        {
-            < "Border setting" ; 0; > ;
-            < "Left border line" ; 1; > ;
-            < "Right border line" ; 2; > ;
-            < "Top border line" ; 3; > ;
-            < "Bottom border line" ; 4; > ;
-            < "Horizontal border line" ; 5; > ;
-            < "Vertical border line" ; 6; > ;
-            < "Diagonal border line from top left to bottom right" ; 7; > ;
-            < "Diagonal border line from bottom left to top right" ; 8; > ;
-        };
+		ItemList [ en-US ] =
+		{
+			< "Border setting" ; 0; > ;
+			< "Left border line" ; 1; > ;
+			< "Right border line" ; 2; > ;
+			< "Top border line" ; 3; > ;
+			< "Bottom border line" ; 4; > ;
+			< "Horizontal border line" ; 5; > ;
+			< "Vertical border line" ; 6; > ;
+			< "Diagonal border line from top left to bottom right" ; 7; > ;
+			< "Diagonal border line from bottom left to top right" ; 8; > ;
+		};
 	};
 
-    Bitmap BMP_FRMSEL_ARROWS { File = "frmsel.bmp"; };
+	Bitmap BMP_FRMSEL_ARROWS { File = "frmsel.png" ; } ;
 };
 
