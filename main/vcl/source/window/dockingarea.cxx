@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ static void ImplInitBackground( DockingAreaWindow* pThis )
 DockingAreaWindow::DockingAreaWindow( Window* pParent ) :
     Window( WINDOW_DOCKINGAREA )
 {
-    ImplInit( pParent, WB_CLIPCHILDREN|WB_3DLOOK, NULL ); 
+    ImplInit( pParent, WB_CLIPCHILDREN|WB_3DLOOK, NULL );
 
     mpImplData = new ImplData;
     ImplInitBackground( this );
@@ -101,7 +101,7 @@ static void ImplInvalidateMenubar( DockingAreaWindow* pThis )
     // due to a possible common gradient covering menubar and top dockingarea
     // the menubar must be repainted if the top dockingarea changes size or visibility
     if( ImplGetSVData()->maNWFData.mbMenuBarDockingAreaCommonBG &&
-        (pThis->GetAlign() == WINDOWALIGN_TOP)  
+        (pThis->GetAlign() == WINDOWALIGN_TOP)
         && pThis->IsNativeControlSupported( CTRL_TOOLBAR, PART_ENTIRE_CONTROL )
         && pThis->IsNativeControlSupported( CTRL_MENUBAR, PART_ENTIRE_CONTROL ) )
     {
@@ -166,8 +166,8 @@ void DockingAreaWindow::Paint( const Rectangle& )
             // draw a single toolbar background covering the whole docking area
             Point tmp;
             Rectangle aCtrlRegion( tmp, GetOutputSizePixel() );
-            
-            DrawNativeControl( CTRL_TOOLBAR, IsHorizontal() ? PART_DRAW_BACKGROUND_HORZ : PART_DRAW_BACKGROUND_VERT, 
+
+            DrawNativeControl( CTRL_TOOLBAR, IsHorizontal() ? PART_DRAW_BACKGROUND_HORZ : PART_DRAW_BACKGROUND_VERT,
                                aCtrlRegion, nState, aControlValue, rtl::OUString() );
 
             // each toolbar gets a thin border to better recognize its borders on the homogeneous docking area
@@ -193,7 +193,7 @@ void DockingAreaWindow::Paint( const Rectangle& )
         }
         else
         {
-            // create map to find toolbar lines 
+            // create map to find toolbar lines
             Size aOutSz = GetOutputSizePixel();
             std::map< int, int > ranges;
             sal_uInt16 nChildren = GetChildCount();
@@ -227,7 +227,7 @@ void DockingAreaWindow::Paint( const Rectangle& )
                     aTBRect.Top()       = 0;
                     aTBRect.Bottom()    = aOutSz.Height() - 1;
                 }
-                DrawNativeControl( CTRL_TOOLBAR, IsHorizontal() ? PART_DRAW_BACKGROUND_HORZ : PART_DRAW_BACKGROUND_VERT, 
+                DrawNativeControl( CTRL_TOOLBAR, IsHorizontal() ? PART_DRAW_BACKGROUND_HORZ : PART_DRAW_BACKGROUND_VERT,
                                    aTBRect, nState, aControlValue, rtl::OUString() );
             }
         }
