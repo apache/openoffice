@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,7 +77,7 @@ DBG_NAME(OXMLTable)
 OXMLTable::OXMLTable( ODBFilter& _rImport
 				,sal_uInt16 nPrfx
 				,const ::rtl::OUString& _sLocalName
-				,const uno::Reference< XAttributeList > & _xAttrList 
+				,const uno::Reference< XAttributeList > & _xAttrList
 				,const uno::Reference< ::com::sun::star::container::XNameAccess >& _xParentContainer
 				,const ::rtl::OUString& _sServiceName
 				)
@@ -223,7 +223,7 @@ void OXMLTable::EndElement()
 			if ( m_xTable.is() )
 			{
 				setProperties(m_xTable);
-				
+
 				if ( m_sStyleName.getLength() )
 				{
 					const SvXMLStylesContext* pAutoStyles = GetOwnImport().GetAutoStyles();
@@ -236,7 +236,7 @@ void OXMLTable::EndElement()
 						}
 					}
 				}
-					
+
 				xNameContainer->insertByName(m_sName,makeAny(m_xTable));
 			}
 		}
@@ -245,7 +245,7 @@ void OXMLTable::EndElement()
 			OSL_ENSURE(0,"OXMLQuery::EndElement -> exception catched");
 		}
 	}
-	
+
 }
 // -----------------------------------------------------------------------------
 void OXMLTable::fillAttributes(sal_uInt16 /*nPrfx*/
