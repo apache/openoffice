@@ -2220,7 +2220,7 @@ AC_SUBST(COM)
 dnl  Decode the compiler version.  Logic from main/solenv/inc/tg_compv.mk.
 case $COM in
 	GCC)
-		CCVER=`${CC} -dumpversion 2>&1`;
+		CCVER=`${CC} -dumpfullversion -dumpversion 2>&1`;
 		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
 		if test "${CCNUMVER}" -ge 000300000001; then
 			COMID="gcc3";
