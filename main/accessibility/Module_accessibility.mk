@@ -21,29 +21,19 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,accessibility))
 
-PRJNAME=accessibility
-TARGET=helper
+$(eval $(call gb_Module_add_targets,accessibility,\
+	AllLangResTarget_acc \
+	Library_acc \
+))
 
-ENABLE_EXCEPTIONS=TRUE
+ifeq ($(OS),WNT)
+$(eval $(call gb_Module_add_targets,accessibility,\
+	Ant_java_uno_accessbridge \
+	Library_java_uno_accessbridge \
+))
+endif
 
-# --- Settings -----------------------------------------------------
 
-.INCLUDE :	settings.mk
-
-# --- Files --------------------------------------------------------
-
-SLOFILES=   \
-            $(SLO)$/acc_factory.obj                 \
-            $(SLO)$/accresmgr.obj                   \
-            $(SLO)$/characterattributeshelper.obj   \
-
-SRS1NAME=$(TARGET)
-SRC1FILES=\
-            accessiblestrings.src
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :	target.mk
-
+# vim: set noet sw=4 ts=4:

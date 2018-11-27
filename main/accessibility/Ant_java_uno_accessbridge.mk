@@ -20,24 +20,10 @@
 #**************************************************************
 
 
-PRJ=..
 
-PRJNAME=accessibility
-TARGET=inc
+$(eval $(call gb_Ant_Ant,java_uno_accessbridge,$(SRCDIR)/accessibility/java/java_uno_accessbridge/build.xml))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_Ant_set_componentfile,java_uno_accessbridge,accessibility/java/java_uno_accessbridge/java_uno_accessbridge,OOO))
 
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-# --- Targets -------------------------------------------------------
-
-.INCLUDE :  target.mk
-
-.IF "$(ENABLE_PCH)"!=""
-ALLTAR : \
-	$(SLO)$/precompiled.pch \
-	$(SLO)$/precompiled_ex.pch
-	
-.ENDIF			# "$(ENABLE_PCH)"!=""
+# vim: set noet sw=4 ts=4:
 
