@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -434,7 +434,7 @@ bool ImplDirectFontSubstitution::GetFontSubstitute( int nIndex,
     String& rFontName, String& rSubstFontName, sal_uInt16& rFlags ) const
 {
     FontSubstList::const_iterator it = maFontSubstList.begin();
-	for( int nCount = 0; (it != maFontSubstList.end()) && (nCount++ != nIndex); ++it ) ;    
+	for( int nCount = 0; (it != maFontSubstList.end()) && (nCount++ != nIndex); ++it ) ;
 	if( it == maFontSubstList.end() )
 	    return false;
 
@@ -3300,7 +3300,7 @@ ImplFontMetricData::ImplFontMetricData( const ImplFontSelectData& rFontSelData )
     mnSlant        = rFontSelData.GetSlant();
     mnOrientation  = sal::static_int_cast<short>(rFontSelData.mnOrientation);
 
-	// intialize the used font name 
+	// intialize the used font name
     if( rFontSelData.mpFontData )
     {
         maName     = rFontSelData.mpFontData->maName;
@@ -3317,7 +3317,7 @@ ImplFontMetricData::ImplFontMetricData( const ImplFontSelectData& rFontSelData )
         mbKernableFont = false;
     }
 
-	// reset metrics that are usually measured for the font instance 
+	// reset metrics that are usually measured for the font instance
     mnAscent       = 0;
     mnDescent      = 0;
     mnIntLeading   = 0;
@@ -3528,7 +3528,7 @@ void OutputDevice::ImplDrawWaveLine( long nBaseX, long nBaseY,
 
     long nStartX = nBaseX + nDistX;
     long nStartY = nBaseY + nDistY;
-	
+
     // Bei Hoehe von 1 Pixel reicht es, eine Linie auszugeben
     if ( (nLineWidth == 1) && (nHeight == 1) )
     {
@@ -3948,7 +3948,7 @@ void OutputDevice::ImplDrawStrikeoutLine( long nBaseX, long nBaseY,
     long            nLinePos2 = 0;
 
 	long nY = nDistY;
-	
+
     if ( eStrikeout > STRIKEOUT_LAST )
         eStrikeout = STRIKEOUT_SINGLE;
 
@@ -4028,7 +4028,7 @@ void OutputDevice::ImplDrawStrikeoutChar( long nBaseX, long nBaseY,
     SalLayout* pLayout = ImplLayout( aStrikeoutTest, 0, nTestStrLen );
     if( pLayout )
     {
-        nStrikeoutWidth = (pLayout->GetTextWidth() +nTestStrLen/2) / (nTestStrLen * pLayout->GetUnitsPerPixel());        
+        nStrikeoutWidth = (pLayout->GetTextWidth() +nTestStrLen/2) / (nTestStrLen * pLayout->GetUnitsPerPixel());
         pLayout->Release();
     }
     if( nStrikeoutWidth <= 0 ) // sanity check
@@ -4059,7 +4059,7 @@ void OutputDevice::ImplDrawStrikeoutChar( long nBaseX, long nBaseY,
         ImplRotatePos( 0, 0, nDistX, nDistY, mpFontEntry->mnOrientation );
     nBaseX += nDistX;
     nBaseY += nDistY;
-		
+
     // strikeout text has to be left aligned
     sal_uLong nOrigTLM = mnTextLayoutMode;
     mnTextLayoutMode = TEXT_LAYOUT_BIDI_STRONG | TEXT_LAYOUT_COMPLEX_DISABLED;
@@ -4109,7 +4109,7 @@ void OutputDevice::ImplDrawTextLine( long nX, long nY,
             nXAdd = FRound( nXAdd * cos( mpFontEntry->mnOrientation * F_PI1800 ) );
         nX += nXAdd - 1;
     }
-		
+
     if ( !IsTextLineColor() )
         aUnderlineColor = GetTextColor();
 
@@ -4803,7 +4803,7 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
         uno::Reference < i18n::XBreakIterator > xBI;
         // get service provider
         uno::Reference< lang::XMultiServiceFactory > xSMgr( unohelper::GetMultiServiceFactory() );
-        
+
         uno::Reference< linguistic2::XHyphenator > xHyph;
         if( xSMgr.is() )
         {
@@ -4813,7 +4813,7 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
                 xHyph = xLinguMgr->getHyphenator();
             }
         }
-        
+
         i18n::LineBreakHyphenationOptions aHyphOptions( xHyph, uno::Sequence <beans::PropertyValue>(), 1 );
         i18n::LineBreakUserOptions aUserOptions;
 
@@ -4956,7 +4956,7 @@ long OutputDevice::ImplGetTextLines( ImplMultiTextLineInfo& rLineInfo,
                             nW = _rLayout.GetTextWidth( rStr, nPos, nSpacePos-nPos );
                         }
                     } while( nW > nWidth );
-                    
+
                     if( nSpacePos != STRING_NOTFOUND )
                     {
                         nBreakPos = nSpacePos;
@@ -6133,7 +6133,7 @@ SalLayout* OutputDevice::ImplGlyphFallbackLayout( SalLayout* pSalLayout, ImplLay
     for( int nFallbackLevel = 1; nFallbackLevel < MAX_FALLBACK; ++nFallbackLevel )
     {
         // find a font family suited for glyph fallback
-#ifndef FONTFALLBACK_HOOKS_DISABLED 
+#ifndef FONTFALLBACK_HOOKS_DISABLED
         // GetGlyphFallbackFont() needs a valid aFontSelData.mpFontEntry
         // if the system-specific glyph fallback is active
         aFontSelData.mpFontEntry = mpFontEntry; // reset the fontentry to base-level
@@ -6360,11 +6360,11 @@ void OutputDevice::ImplDrawText( OutputDevice& rTargetDevice, const Rectangle& r
                 // but it may be totally wrong. the background color
                 // was typically already reset
                 aCol = rStyleSettings.GetFaceColor();
-    
+
             bHighContrastBlack = aCol.IsDark();
             bHighContrastWhite = aCol.IsBright();
         }
-    
+
         aOldTextColor = rTargetDevice.GetTextColor();
         if ( rTargetDevice.IsTextFillColor() )
         {
@@ -6792,10 +6792,10 @@ Rectangle OutputDevice::GetTextRect( const Rectangle& rRect,
     else if ( nStyle & TEXT_DRAW_CENTER )
     {
         aRect.Left() += (nWidth-nMaxWidth)/2;
-        aRect.Right() = aRect.Left()+nMaxWidth-1;
+        aRect.Right() = aRect.Left()+nMaxWidth;
     }
     else
-        aRect.Right() = aRect.Left()+nMaxWidth-1;
+        aRect.Right() = aRect.Left()+nMaxWidth;
 
     if ( nStyle & TEXT_DRAW_BOTTOM )
         aRect.Top() = aRect.Bottom()-(nTextHeight*nLines)+1;
@@ -6807,7 +6807,6 @@ Rectangle OutputDevice::GetTextRect( const Rectangle& rRect,
     else
         aRect.Bottom() = aRect.Top()+(nTextHeight*nLines)-1;
 
-    aRect.Right()++; // #99188# get rid of rounding problems when using this rect later
     return aRect;
 }
 
@@ -7059,7 +7058,7 @@ void OutputDevice::DrawCtrlText( const Point& rPos, const XubString& rStr,
                 bHighContrastWhite = aCol.IsBright();
             }
         }
-        
+
         aOldTextColor = GetTextColor();
         if ( IsTextFillColor() )
         {
@@ -7374,7 +7373,7 @@ SystemFontData OutputDevice::GetSysFontData(int nFallbacklevel) const
 
     if (!mpGraphics) ImplGetGraphics();
     if (mpGraphics) aSysFontData = mpGraphics->GetSysFontData(nFallbacklevel);
-    
+
     return aSysFontData;
 }
 
@@ -7391,7 +7390,7 @@ SystemFontData OutputDevice::GetSysFontData(int nFallbacklevel) const
  *
  * Export finalized glyph layout data as platform independent SystemTextLayoutData
  * (see vcl/inc/vcl/sysdata.hxx)
- * 
+ *
  * Only parameters rStartPt and rStr are mandatory, the rest is optional
  * (default values will be used)
  *
@@ -7406,18 +7405,18 @@ SystemTextLayoutData OutputDevice::GetSysTextLayoutData(const Point& rStartPt, c
     SystemTextLayoutData aSysLayoutData;
     aSysLayoutData.nSize = sizeof(aSysLayoutData);
     aSysLayoutData.rGlyphData.reserve( 256 );
-    
+
 	if ( mpMetaFile ) {
         if (pDXAry)
             mpMetaFile->AddAction( new MetaTextArrayAction( rStartPt, rStr, pDXAry, nIndex, nLen ) );
         else
             mpMetaFile->AddAction( new MetaTextAction( rStartPt, rStr, nIndex, nLen ) );
 	}
-	
+
 	if ( !IsDeviceOutputNecessary() ) return aSysLayoutData;
-    
+
 	SalLayout* rLayout = ImplLayout( rStr, nIndex, nLen, rStartPt, 0, pDXAry, true );
-    
+
     // setup glyphs
     Point aPos;
     sal_GlyphId aGlyphId;
@@ -7425,7 +7424,7 @@ SystemTextLayoutData OutputDevice::GetSysTextLayoutData(const Point& rStartPt, c
     {
         // NOTE: Windows backend is producing unicode chars (ucs4), so on windows,
         //       ETO_GLYPH_INDEX is unusable, unless extra glyph conversion is made.
-            
+
         SystemGlyphData aGlyph;
         aGlyph.index = static_cast<unsigned long> (aGlyphId & GF_IDXMASK);
         aGlyph.x = aPos.X();
@@ -7437,7 +7436,7 @@ SystemTextLayoutData OutputDevice::GetSysTextLayoutData(const Point& rStartPt, c
 
     // Get font data
     aSysLayoutData.orientation = rLayout->GetOrientation();
-    
+
     rLayout->Release();
 
     return aSysLayoutData;
@@ -7470,9 +7469,9 @@ long OutputDevice::GetMinKashida( const Font& rFont ) const
 }
 
 // -----------------------------------------------------------------------
-xub_StrLen OutputDevice::ValidateKashidas ( const String& rTxt, 
+xub_StrLen OutputDevice::ValidateKashidas ( const String& rTxt,
 											xub_StrLen nIdx, xub_StrLen nLen,
-											xub_StrLen nKashCount, 
+											xub_StrLen nKashCount,
 											const xub_StrLen* pKashidaPos,
 											xub_StrLen* pKashidaPosDropped ) const
 {
