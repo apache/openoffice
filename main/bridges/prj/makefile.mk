@@ -1,4 +1,4 @@
-###############################################################
+#**************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,30 +17,28 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-###############################################################
-UDK_3_0_0 {
-    global:
-		component_canUnload;
-		uno_initEnvironment;
-		uno_ext_getMapping;
+#**************************************************************
 
 
-		###############################################
-		# C++ RTTI for exception handling:
-		###############################################
 
-		# typeinfo for com::sun::star::uno::RuntimeException
-		_ZTIN3com3sun4star3uno16RuntimeExceptionE;
+PRJ=..
+TARGET=prj
 
-		# typeinfo for com::sun::star::uno::Exception
-		_ZTIN3com3sun4star3uno9ExceptionE;
+.INCLUDE : settings.mk
 
-		# typeinfo name for com::sun::star::uno::RuntimeException
-		_ZTSN3com3sun4star3uno16RuntimeExceptionE;
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-		# typeinfo name for com::sun::star::uno::Exception
-		_ZTSN3com3sun4star3uno9ExceptionE;
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-	local:
-	*;
-};
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

@@ -1,4 +1,4 @@
-###############################################################
+#**************************************************************
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,30 +17,17 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-###############################################################
-UDK_3_0_0 {
-    global:
-		component_canUnload;
-		uno_initEnvironment;
-		uno_ext_getMapping;
+#**************************************************************
 
 
-		###############################################
-		# C++ RTTI for exception handling:
-		###############################################
 
-		# typeinfo for com::sun::star::uno::RuntimeException
-		_ZTIN3com3sun4star3uno16RuntimeExceptionE;
+$(eval $(call gb_Module_Module,bridges))
 
-		# typeinfo for com::sun::star::uno::Exception
-		_ZTIN3com3sun4star3uno9ExceptionE;
+$(eval $(call gb_Module_add_targets,bridges,\
+	Ant_java_uno \
+	Library_cpp_uno \
+	Library_java_uno \
+))
 
-		# typeinfo name for com::sun::star::uno::RuntimeException
-		_ZTSN3com3sun4star3uno16RuntimeExceptionE;
 
-		# typeinfo name for com::sun::star::uno::Exception
-		_ZTSN3com3sun4star3uno9ExceptionE;
-
-	local:
-	*;
-};
+# vim: set noet sw=4 ts=4:
