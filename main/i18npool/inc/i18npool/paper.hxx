@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,7 +55,7 @@ enum Paper
 	PAPER_ENV_C65,
 	PAPER_ENV_DL,
 	PAPER_SLIDE_DIA,
-	PAPER_SCREEN,
+	PAPER_SCREEN_4_BY_3,
 	PAPER_C,
 	PAPER_D,
 	PAPER_E,
@@ -113,20 +113,20 @@ enum Paper
 	PAPER_ARCHB,
 	PAPER_ARCHC,
 	PAPER_ARCHD,
-	PAPER_ARCHE
+	PAPER_ARCHE,
+	PAPER_SCREEN_16_BY_9,
+	PAPER_SCREEN_16_BY_10
 };
 
 // defined for 'equal size' test with the implementation array
-#define NUM_PAPER_ENTRIES	(PAPER_ARCHE - PAPER_A0 + 1)
+#define NUM_PAPER_ENTRIES	(PAPER_SCREEN_16_BY_10 - PAPER_A0 + 1)
 
-// ---------
-// - Paper -
-// ---------
+// Paper
 
 class I18NPOOL_DLLPUBLIC PaperInfo
 {
 	Paper m_eType;
-	long m_nPaperWidth;  // width in 100thMM
+	long m_nPaperWidth; // width in 100thMM
 	long m_nPaperHeight; // height in 100thMM
 public:
 	PaperInfo(Paper eType);

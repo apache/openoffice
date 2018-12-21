@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -464,7 +464,7 @@ void SdDrawDocument::DeletePage(sal_uInt16 nPgNum)
 SdrPage* SdDrawDocument::RemovePage(sal_uInt16 nPgNum)
 {
 	SdrPage* pPage = FmFormModel::RemovePage(nPgNum);
-    
+
     bool bLast = ((nPgNum+1)/2 == (GetPageCount()+1)/2);
 
 	((SdPage*)pPage)->DisconnectLink();
@@ -642,18 +642,18 @@ void SdDrawDocument::CreateFirstPages( SdDrawDocument* pRefDocument /* = 0 */ )
 				}
 				else
 				{
-                    // The printer is not available.  Use a border of 10mm
-                    // on each side instead.
-                    // This has to be kept synchronized with the border
-                    // width set in the
-                    // SvxPageDescPage::PaperSizeSelect_Impl callback.
+					// The printer is not available. Use a border of 10mm
+					// on each side instead.
+					// This has to be kept synchronized with the border
+					// width set in the
+					// SvxPageDescPage::PaperSizeSelect_Impl callback.
 					pPage->SetBorder(1000, 1000, 1000, 1000);
 				}
 			}
 			else
 			{
 				// Impress: stets Bildschirmformat, quer
-				Size aSz( SvxPaperInfo::GetPaperSize(PAPER_SCREEN, MAP_100TH_MM) );
+				Size aSz( SvxPaperInfo::GetPaperSize(PAPER_SCREEN_4_BY_3, MAP_100TH_MM) );
 				pPage->SetSize( Size( aSz.Height(), aSz.Width() ) );
 				pPage->SetBorder(0, 0, 0, 0);
 			}
@@ -1545,7 +1545,7 @@ sal_uInt16 SdDrawDocument::InsertPageSet (
     String aNotesPageName = sNotesPageName;
 
     // Gather some information about the standard page and the notes page
-    // that are to be inserted.  This makes sure that there is always one
+    // that are to be inserted. This makes sure that there is always one
     // standard page followed by one notes page.
     if (ePageKind == PK_NOTES)
     {
