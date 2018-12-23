@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,7 +40,7 @@
 
 namespace desktop
 {
-	// to be able to display the help nicely in a dialog box with propotional font, 
+	// To be able to display the help nicely in a dialog box with proportional font,
 	// we need to split it in chunks...
 	//  ___HEAD___
 	//  LEFT RIGHT
@@ -80,12 +80,12 @@ namespace desktop
 		"keep startup bitmap minimized.\n"\
 		"no startup screen, no default document and no UI.\n"\
 		"suppress restart/restore after fatal errors.\n"\
-		"starts the quickstart service (only available on windows and OS/2 platform)\n"\
+		"starts the quickstart service (only available on Windows and OS/2)\n"\
 		"don't show startup screen.\n"\
 		"don't check for remote instances using the installation\n"\
 		"don't start with an empty document\n"\
-		"like invisible but no userinteraction at all.\n"\
-		"enable further optimization for document conversion, includes enabled headless mode.\n"\
+		"like invisible but no user interaction at all.\n"\
+		"enable further optimization for document conversion, includes headless mode.\n"\
 		"show this message and exit.\n"\
 		"create new text document.\n"\
 		"create new spreadsheet document.\n"\
@@ -109,7 +109,7 @@ namespace desktop
 		"-show <presentation>\n"\
 		"      open the specified presentation and start it immediately\n"\
 		"-accept=<accept-string>\n"\
-        "      Specify an UNO connect-string to create an UNO acceptor through which\n"\
+		"      Specify an UNO connect-string to create an UNO acceptor through which\n"\
 		"      other programs can connect to access the API\n"\
 		"-unaccept=<accept-string>\n"\
 		"      Close an acceptor that was created with -accept=<accept-string>\n"\
@@ -145,7 +145,7 @@ namespace desktop
 			fprintf(stderr, "%s\n", bsRight.GetToken(i, '\n').GetBuffer());
 		}
 		fprintf(stderr, "%s", ByteString(aHelpMessage_bottom,
-                    RTL_TEXTENCODING_ASCII_US).GetBuffer());
+					RTL_TEXTENCODING_ASCII_US).GetBuffer());
 #else
 		// rest gets a dialog box
 		CmdlineHelpDialog aDlg;
