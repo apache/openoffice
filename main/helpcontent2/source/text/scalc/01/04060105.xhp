@@ -179,12 +179,11 @@
 
 <emph>Value1; Value2 ...Value30</emph> are added modulo 2. TRUE is returned if the result of this addition is 1;
 FALSE is returned if the result of this addition is 0.<comment>UFI: first try to fix bugtraq 4905779</comment></paragraph>
-         <paragraph xml-lang="en-US" id="hd_id3153228K" role="heading" level="3" l10n="U">Examples:</paragraph>
-
-         <paragraph xml-lang="en-US" id="par_id3155371K" role="paragraph" l10n="U">
-            <item type="input">=XOR(12&lt;11;13&gt;22;10)</item> returns TRUE since this converts to (1+0+10) mod 2  = 0 </paragraph>
-         <paragraph xml-lang="en-US" id="par_id3158412K" role="paragraph" l10n="U">
-            <item type="input">=XOR(FALSE;TRUE)</item> returns TRUE.</paragraph>
+<paragraph xml-lang="en-US" id="hd_id3153228K" role="heading" level="3" l10n="U">Examples:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155371K" role="paragraph" l10n="U">
+<item type="input">=XOR(12&lt;11;13&gt;22;10)</item> returns TRUE since this converts to (1+0+10) mod 2 = 0</paragraph>
+<paragraph xml-lang="en-US" id="par_id3158412K" role="paragraph" l10n="U">
+<item type="input">=XOR(FALSE;TRUE)</item> returns TRUE.</paragraph>
 </section>
 </sort>
 <section id="relatedtopics">
