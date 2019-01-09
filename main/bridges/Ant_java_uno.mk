@@ -21,24 +21,7 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Ant_Ant,java_uno,$(SRCDIR)/bridges/java/java_uno/build.xml))
 
-.INCLUDE : settings.mk
+# vim: set noet sw=4 ts=4:
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

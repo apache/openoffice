@@ -21,24 +21,13 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Module_Module,bridges))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Module_add_targets,bridges,\
+	Ant_java_uno \
+	Library_cpp_uno \
+	Library_java_uno \
+))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+# vim: set noet sw=4 ts=4:

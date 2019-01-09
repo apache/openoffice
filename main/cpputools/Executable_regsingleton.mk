@@ -21,24 +21,34 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Executable_Executable,regsingleton))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Executable_add_linked_libs,regsingleton,\
+	cppu \
+	cppuhelper \
+	sal \
+	stl \
+    $(gb_STDLIBS) \
+))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+$(eval $(call gb_Executable_set_private_extract_of_public_api,regsingleton,$(OUTDIR)/bin/udkapi.rdb,\
+ 	com.sun.star.uno.TypeClass \
+ 	com.sun.star.uno.XAggregation \
+ 	com.sun.star.uno.XWeak \
+ 	com.sun.star.uno.XComponentContext \
+ 	com.sun.star.lang.XTypeProvider \
+ 	com.sun.star.lang.XComponent \
+ 	com.sun.star.lang.XSingleServiceFactory \
+ 	com.sun.star.lang.XSingleComponentFactory \
+ 	com.sun.star.lang.XMultiServiceFactory \
+ 	com.sun.star.lang.XMultiComponentFactory \
+ 	com.sun.star.container.XHierarchicalNameAccess \
+	com.sun.star.registry.XSimpleRegistry \
+	com.sun.star.registry.XRegistryKey \
+))
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
+$(eval $(call gb_Executable_add_exception_objects,regsingleton,\
+	cpputools/source/regsingleton/regsingleton \
+))
 
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+# vim: set noet sw=4 ts=4:

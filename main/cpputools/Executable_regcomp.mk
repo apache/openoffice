@@ -21,24 +21,31 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Executable_Executable,regcomp))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Executable_add_linked_libs,regcomp,\
+	cppu \
+	cppuhelper \
+	sal \
+	stl \
+    $(gb_STDLIBS) \
+))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+$(eval $(call gb_Executable_set_private_extract_of_public_api,regcomp,$(OUTDIR)/bin/udkapi.rdb,\
+	com.sun.star.uno.TypeClass \
+	com.sun.star.lang.XMultiServiceFactory \
+	com.sun.star.lang.XSingleServiceFactory \
+	com.sun.star.lang.XMultiComponentFactory \
+	com.sun.star.lang.XSingleComponentFactory \
+	com.sun.star.lang.XComponent \
+	com.sun.star.container.XContentEnumerationAccess \
+	com.sun.star.container.XSet \
+	com.sun.star.loader.CannotActivateFactoryException \
+	com.sun.star.registry.XImplementationRegistration2 \
+))
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
+$(eval $(call gb_Executable_add_exception_objects,regcomp,\
+	cpputools/source/registercomponent/registercomponent \
+))
 
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+# vim: set noet sw=4 ts=4:

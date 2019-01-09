@@ -21,24 +21,16 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Executable_Executable,sp2bv))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Executable_add_linked_libs,sp2bv,\
+	sal \
+	stl \
+    $(gb_STDLIBS) \
+))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+$(eval $(call gb_Executable_add_exception_objects,sp2bv,\
+	cpputools/source/sp2bv/sp2bv \
+))
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+# vim: set noet sw=4 ts=4:

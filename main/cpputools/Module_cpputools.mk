@@ -21,24 +21,22 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Module_Module,cpputools))
 
-.INCLUDE : settings.mk
+$(eval $(call gb_Module_add_targets,cpputools,\
+	Executable_regcomp \
+	Executable_regsingleton \
+	Executable_sp2bv \
+	Executable_uno \
+))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
+ifeq ($(GUIBASE),WIN)
+else ifeq ($(GUIBASE),OS2)
+else
+$(eval $(call gb_Module_add_targets,cpputools,\
+	Package_bin \
+))
+endif
 
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
 
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+# vim: set noet sw=4 ts=4:

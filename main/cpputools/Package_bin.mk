@@ -21,24 +21,7 @@
 
 
 
-PRJ=..
-TARGET=prj
+$(eval $(call gb_Package_Package,cpputools_bin,$(WORKDIR)/LinkTarget/Executable))
 
-.INCLUDE : settings.mk
-
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog
+$(eval $(call gb_Package_add_file,cpputools_bin,bin/regcomp.bin,regcomp))
+$(eval $(call gb_Package_add_file,cpputools_bin,bin/uno.bin,uno))
