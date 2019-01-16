@@ -3559,6 +3559,10 @@ msi - Windows .msi
       if test "$DPKG" = "no"; then
          AC_MSG_ERROR([dpkg needed for deb creation. Install dpkg.])
       fi
+      AC_PATH_PROG(FAKEROOT, fakeroot, no)
+      if test "$FAKEROOT" = "no"; then
+         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+      fi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
       if test "$_os" = "Darwin"; then
@@ -3608,6 +3612,7 @@ msi - Windows .msi
    fi
    AC_SUBST(RPM)
    AC_SUBST(DPKG)
+   AC_SUBST(FAKEROOT)
    AC_SUBST(PKGMK)
 else
    AC_MSG_RESULT([no])
