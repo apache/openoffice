@@ -3548,9 +3548,14 @@ msi - Windows .msi
       if test "$PKGMK" = "no"; then
          AC_MSG_ERROR([pkgmk needed for Solaris pkg creation. Install it.])
       fi
+      AC_PATH_PROG(FAKEROOT, fakeroot, no)
+      if test "$FAKEROOT" = "no"; then
+         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+      fi
    fi
    AC_SUBST(RPM)
    AC_SUBST(DPKG)
+   AC_SUBST(FAKEROOT)
    AC_SUBST(PKGMK)
 else
    AC_MSG_RESULT([no])
