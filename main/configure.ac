@@ -1442,6 +1442,7 @@ AC_MSG_CHECKING([whether to enable category B components])
 #   graphite (silgraphite)
 if test "$enable_category_b" = "yes"; then
    ENABLE_CATEGORY_B=YES
+   enable_nss_module="yes"
    enable_hunspell="yes"
    enable_hyphen="yes"
    enable_saxon="yes"
@@ -1449,6 +1450,7 @@ if test "$enable_category_b" = "yes"; then
    enable_graphite="yes"
    enable_coinmp="yes"
    enable_category_b_fonts="yes"
+   enable_beanshell="yes"
 
    AC_MSG_RESULT([yes: allow modules nss, hunspell, hyphen, saxon, rhino, beanshell, graphite, coinmp to be built])
 else
@@ -1461,6 +1463,7 @@ else
    enable_graphite="no"
    enable_coinmp="no"
    enable_category_b_fonts="no"
+   enable_beanshell="no"
 
    AC_MSG_RESULT([no: disabled modules nss, hunspell, hyphen, saxon, rhino, graphite, coinmp])
 fi
