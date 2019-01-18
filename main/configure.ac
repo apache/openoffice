@@ -489,7 +489,7 @@ AC_ARG_WITH(system-beanshell,
 [  --with-system-beanshell Use beanshell already on system (default)
 ],,)
 AC_ARG_ENABLE(beanshell,
-[  --disable-beanshell     Disable the use of beanshell.
+[  --enable-beanshell     Enable the use of beanshell.
 ],,)
 AC_ARG_WITH(beanshell-jar,
 [  --with-beanshell-jar=JARFILE   Specify path to jarfile manually ],
@@ -1450,9 +1450,8 @@ if test "$enable_category_b" = "yes"; then
    enable_graphite="yes"
    enable_coinmp="yes"
    enable_category_b_fonts="yes"
-   enable_beanshell="yes"
 
-   AC_MSG_RESULT([yes: allow modules nss, hunspell, hyphen, saxon, rhino, beanshell, graphite, coinmp to be built])
+   AC_MSG_RESULT([yes: allow modules nss, hunspell, hyphen, saxon, rhino, graphite, coinmp to be built])
 else
    # Disable libraries.
    enable_nss_module="no"
@@ -1463,7 +1462,6 @@ else
    enable_graphite="no"
    enable_coinmp="no"
    enable_category_b_fonts="no"
-   enable_beanshell="no"
 
    AC_MSG_RESULT([no: disabled modules nss, hunspell, hyphen, saxon, rhino, graphite, coinmp])
 fi
