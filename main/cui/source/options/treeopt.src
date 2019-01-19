@@ -302,6 +302,7 @@ String RID_RIDER_SLL_PERSONAL
 	Text [ en-US ] = "Personal certificates" ;
 };
 
+#define MASK_COL    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; } ;
 #define IMGLST_IDLST \
 	IdList = {					\
 		SID_GENERAL_OPTIONS;	\
@@ -323,14 +324,16 @@ String RID_RIDER_SLL_PERSONAL
 
 ImageList RID_IMGLIST_TREEOPT
 {
-	Prefix = "tr" ;
-	IMGLST_IDLST
+    Prefix = "tr" ;
+    MASK_COL
+    IMGLST_IDLST
 };
 
 ImageList RID_IMGLIST_TREEOPT_HC
 {
-	Prefix = "trh" ;
-	IMGLST_IDLST
+    Prefix = "trh" ;
+    MASK_COL
+    IMGLST_IDLST
 };
 
 // ********************************************************************** EOF
