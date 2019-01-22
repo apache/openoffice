@@ -3,7 +3,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,16 +11,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -58,7 +58,7 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:HelpSupport" id="bm_id3159176" localize="false"/><paragraph role="heading" id="hd_id3154898" xml-lang="en-US" level="2" l10n="U" oldref="15">Support</paragraph>
 <paragraph role="paragraph" id="par_id3157909" xml-lang="en-US" l10n="U" oldref="16"><ahelp hid=".uno:HelpSupport">Shows information on how to get support.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:OnlineUpdate" id="bm_id2785119" localize="false"/><paragraph role="heading" id="hd_id2926419" xml-lang="en-US" level="2" l10n="CHG"><link href="text/shared/01/online_update.xhp">Check for Updates</link></paragraph>
-<paragraph role="paragraph" id="par_id2783898" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Enable an Internet connection for %PRODUCTNAME. If you need a Proxy, check the %PRODUCTNAME Proxy settings in <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Internet. Then choose <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options - OpenOffice</defaultinline></switchinline> - Online Update - Check for Updates to check for the availability of a newer version of your office suite.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id2783898" xml-lang="en-US" l10n="CHG"><ahelp hid=".">Enable an Internet connection for %PRODUCTNAME. If you need a Proxy, check the %PRODUCTNAME Proxy settings in <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Internet. Then choose <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options - %PRODUCTNAME</defaultinline></switchinline> - Online Update - Check for Updates to check for the availability of a newer version of your office suite.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/service:com.sun.star.tab.tabreg?purchase" id="bm_id584124" localize="false"/><paragraph role="paragraph" id="par_idN106A6" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">This menu command is visible for the evaluation version of %PRODUCTNAME. Choose to open the Purchase %PRODUCTNAME Wizard.</ahelp><comment>UFI: see spec doc "Unlocking_Evalversion_as_Fullversion.sxw" by BH</comment><comment>removed switch, changed to invisible help text</comment></paragraph>
 <bookmark xml-lang="en-US" branch="hid/.uno:About" id="bm_id3151385" localize="false"/><paragraph role="heading" id="hd_id3153881" xml-lang="en-US" level="2" l10n="U" oldref="7">About $[officename]</paragraph>
 <paragraph role="paragraph" id="par_id3144510" xml-lang="en-US" l10n="U" oldref="8"><ahelp hid=".uno:About">Displays general program information such as version number and copyrights.</ahelp></paragraph>
