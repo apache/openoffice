@@ -3582,9 +3582,8 @@ msi - Windows .msi
    if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
       echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       	if test "$EPM" != "no" && test "$EPM" != "internal"; then
-           if test "`echo $EPM_VERSION | cut -d'.' -f1`" -lt "4"; then
                AC_MSG_CHECKING([whether epm is patched for AOOs needs])
-               if $GREP "Patched for Apache OpenOffice" $EPM >/dev/null 2>/dev/null; then
+               if $GREP "Patched for .*OpenOffice" $EPM >/dev/null 2>/dev/null; then
                   AC_MSG_RESULT([yes])
                else
                   AC_MSG_RESULT([no])
@@ -3602,7 +3601,6 @@ msi - Windows .msi
                   patch in epm/epm-3.7.patch or build with
                   --with-epm=internal which will build a suitable epm])
                fi
-           fi
         fi
    fi
    if echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
