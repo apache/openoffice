@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
-#    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
+#	http://www.apache.org/licenses/LICENSE-2.0
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -32,13 +32,13 @@ use installer::pathanalyzer;
 use installer::remover;
 
 ######################################################
-# Creating a new direcotory
+# Creating a new directory
 ######################################################
 
 sub create_directory
 {
 	my ($directory) = @_;
-		
+
 	my $returnvalue = 1;
 	my $infoline = "";
 
@@ -50,25 +50,25 @@ sub create_directory
 		{
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
-	
+
 			my $localcall = "chmod 0775 $directory \>\/dev\/null 2\>\&1";
 			system($localcall);
 
 			# chmod 0775 is not sufficient on mac to remove sticky tag
 			$localcall = "chmod a-s $directory \>\/dev\/null 2\>\&1";
-			system($localcall);			
+			system($localcall);
 		}
 		else
 		{
 			# New solution in parallel packing: It is possible, that the directory now exists, although it
 			# was not created in this process. There is only an important error, if the directory does not
-			# exist now. 
+			# exist now.
 
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf(
-                "Did not succeed in creating directory: \"%s\". Further attempts will follow.\n",
-                $directory);
-			
+				"Did not succeed in creating directory: \"%s\". Further attempts will follow.\n",
+				$directory);
+
 			if (!(-d $directory))
 			{
 				# Problem with parallel packaging? -> Try a little harder, before exiting.
@@ -83,9 +83,9 @@ sub create_directory
 					{
 						$installer::logger::Lang->print("\n");
 						$installer::logger::Lang->printf(
-                            "Attention: Successfully created parent directory (should already be created before): %s\n",
-                            $parentdir);
-	
+							"Attention: Successfully created parent directory (should already be created before): %s\n",
+							$parentdir);
+
 						my $localcall = "chmod 775 $parentdir \>\/dev\/null 2\>\&1";
 						system($localcall);
 					}
@@ -97,17 +97,17 @@ sub create_directory
 						{
 							$installer::logger::Lang->print("\n");
 							$installer::logger::Lang->printf(
-                                "Attention: Finally the parent directory \"%s\" exists, but I could not create it.\n",
-                                $parentdir);
+								"Attention: Finally the parent directory \"%s\" exists, but I could not create it.\n",
+								$parentdir);
 						}
 						else
 						{
 							# Now it is time to exit, even the parent could not be created.
 							installer::exiter::exit_program("ERROR: Could not create parent directory \"$parentdir\"", "create_directory");
 						}
-					}		
+					}
 				}
-			
+
 				# At this point we have to assume, that the parent directory exist.
 				# Trying once more to create the desired directory
 
@@ -117,9 +117,9 @@ sub create_directory
 				{
 					$installer::logger::Lang->print("\n");
 					$installer::logger::Lang->printf(
-                        "Attention: Created directory \"\" in the second try.\n",
-                        $directory);;
-	
+						"Attention: Created directory \"\" in the second try.\n",
+						$directory);;
+
 					my $localcall = "chmod 775 $directory \>\/dev\/null 2\>\&1";
 					system($localcall);
 				}
@@ -129,22 +129,22 @@ sub create_directory
 					{
 						$installer::logger::Lang->print("\n");
 						$installer::logger::Lang->printf(
-                            "Attention: Finally the directory \"%s\" exists, but I could not create it.\n",
-                            $directory);
+							"Attention: Finally the directory \"%s\" exists, but I could not create it.\n",
+							$directory);
 					}
 					else
 					{
 						# It is time to exit, even the second try failed.
 						installer::exiter::exit_program("ERROR: Failed to create the directory: $directory", "create_directory");
-					}	
-				}				
+					}
+				}
 			}
 			else
 			{
 				$installer::logger::Lang->print("\n");
 				$installer::logger::Lang->printf(
-                    "Another process created this directory in exactly this moment :-) : %s\n",
-                    $directory);;
+					"Another process created this directory in exactly this moment :-) : %s\n",
+					$directory);;
 			}
 		}
 	}
@@ -155,13 +155,13 @@ sub create_directory
 }
 
 ######################################################
-# Creating a new direcotory with defined privileges
+# Creating a new directory with defined privileges
 ######################################################
 
 sub create_directory_with_privileges
 {
 	my ($directory, $privileges) = @_;
-		
+
 	my $returnvalue = 1;
 	my $infoline = "";
 
@@ -174,7 +174,7 @@ sub create_directory_with_privileges
 		{
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
-	
+
 			my $localcall = "chmod $privileges $directory \>\/dev\/null 2\>\&1";
 			system($localcall);
 		}
@@ -182,13 +182,13 @@ sub create_directory_with_privileges
 		{
 			# New solution in parallel packing: It is possible, that the directory now exists, although it
 			# was not created in this process. There is only an important error, if the directory does not
-			# exist now. 
+			# exist now.
 
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf(
-                "Did not succeed in creating directory: \"%s\". Further attempts will follow.\n",
-                $directory);
-			
+				"Did not succeed in creating directory: \"%s\". Further attempts will follow.\n",
+				$directory);
+
 			if (!(-d $directory))
 			{
 				# Problem with parallel packaging? -> Try a little harder, before exiting.
@@ -203,9 +203,9 @@ sub create_directory_with_privileges
 					{
 						$installer::logger::Lang->print("\n");
 						$installer::logger::Lang->printf(
-                            "Attention: Successfully created parent directory (should already be created before): %s\n",
-                            $parentdir);
-	
+							"Attention: Successfully created parent directory (should already be created before): %s\n",
+							$parentdir);
+
 						my $localcall = "chmod $privileges $parentdir \>\/dev\/null 2\>\&1";
 						system($localcall);
 					}
@@ -217,17 +217,17 @@ sub create_directory_with_privileges
 						{
 							$installer::logger::Lang->print("\n");
 							$installer::logger::Lang->printf(
-                                "Attention: Finally the parent directory \"%s\" exists, but I could not create it.\n",
-                                $parentdir);
+								"Attention: Finally the parent directory \"%s\" exists, but I could not create it.\n",
+								$parentdir);
 						}
 						else
 						{
 							# Now it is time to exit, even the parent could not be created.
 							installer::exiter::exit_program("ERROR: Could not create parent directory \"$parentdir\"", "create_directory_with_privileges");
 						}
-					}		
+					}
 				}
-			
+
 				# At this point we have to assume, that the parent directory exist.
 				# Trying once more to create the desired directory
 
@@ -237,8 +237,8 @@ sub create_directory_with_privileges
 				{
 					$installer::logger::Lang->print("\n");
 					$installer::logger::Lang->printf("Attention: Created directory \"%s\" in the second try.\n",
-                        $directory);
-	
+						$directory);
+
 					my $localcall = "chmod $privileges $directory \>\/dev\/null 2\>\&1";
 					system($localcall);
 				}
@@ -247,23 +247,23 @@ sub create_directory_with_privileges
 					if ( -d $directory )
 					{
 						$installer::logger::Lang->print("\n");
-                        $installer::logger::Lang->printf(
-                            "Attention: Finally the directory \"\" exists, but I could not create it.\n",
-                            $directory);
+						$installer::logger::Lang->printf(
+							"Attention: Finally the directory \"\" exists, but I could not create it.\n",
+							$directory);
 					}
 					else
 					{
 						# It is time to exit, even the second try failed.
 						installer::exiter::exit_program("ERROR: Failed to create the directory: $directory", "create_directory_with_privileges");
-					}	
-				}				
+					}
+				}
 			}
 			else
 			{
 				$installer::logger::Lang->print("\n");
 				$installer::logger::Lang->printf(
-                    "Another process created this directory in exactly this moment :-) : %s\n",
-                    $directory);
+					"Another process created this directory in exactly this moment :-) : %s\n",
+					$directory);
 			}
 		}
 	}
@@ -281,35 +281,35 @@ sub create_directory_with_privileges
 
 
 =item is_directory_empty ($path)
-    Return
-        1 if there are no files in the directory pointed to by $path
-        0 if there are files
-       -1 if there is an error accessing the directory.
+	Return
+		 1 if there are no files in the directory pointed to by $path
+		 0 if there are files
+		-1 if there is an error accessing the directory.
 =cut
 sub is_directory_empty ($)
 {
-    my ($path) = @_;
+	my ($path) = @_;
 
-    opendir my $dir, $path or return -1;
+	opendir my $dir, $path or return -1;
 
-    my $result = 1;
-    while (my $entry = readdir($dir))
-    {
-        if ($entry !~ /^\.+$/)
-        {
-            $result = 0;
-            last;
-        }
-    }
+	my $result = 1;
+	while (my $entry = readdir($dir))
+	{
+		if ($entry !~ /^\.+$/)
+		{
+			$result = 0;
+			last;
+		}
+	}
 
-    return $result;
+	return $result;
 }
 
 
 
 
 ######################################################
-# Removing a new direcotory
+# Removing a new directory
 ######################################################
 
 sub remove_empty_directory
@@ -320,28 +320,28 @@ sub remove_empty_directory
 
 	if (-d $directory)
 	{
-        if ( ! is_directory_empty($directory))
-        {
+		if ( ! is_directory_empty($directory))
+		{
 			$installer::logger::Lang->printf("directory '%s' is not empty and can not be removed\n", $directory);
-            return;
-        }
-        else
-        {
-            my $systemcall = "rmdir $directory";
-            
-            $returnvalue = system($systemcall);
+			return;
+		}
+		else
+		{
+			my $systemcall = "rmdir $directory";
 
-            $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
-            
-            if ($returnvalue)
-            {
-                $installer::logger::Lang->printf("ERROR: Could not remove \"%s\"!\n", $directory);
-            }
-            else
-            {
-                $installer::logger::Lang->printf("Success: Removed \"%s\"!\n", $directory);
-            }
-        }
+			$returnvalue = system($systemcall);
+
+			$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+
+			if ($returnvalue)
+			{
+				$installer::logger::Lang->printf("ERROR: Could not remove \"%s\"!\n", $directory);
+			}
+			else
+			{
+				$installer::logger::Lang->printf("Success: Removed \"%s\"!\n", $directory);
+			}
+		}
 	}
 }
 
@@ -354,9 +354,9 @@ sub get_number_of_langs
 	my ($languagestring) = @_;
 
 	my $number = 1;
-	
+
 	my $workstring = $languagestring;
-	
+
 	while ( $workstring =~ /^\s*(.*)_(.*?)\s*$/ )
 	{
 		$workstring = $1;
@@ -373,8 +373,8 @@ sub get_number_of_langs
 sub create_directories
 {
 	my ($newdirectory, $languagesref) =@_;
-	
-	$installer::globals::unpackpath =~ s/\Q$installer::globals::separator\E\s*$//;	# removing ending slashes and backslashes
+
+	$installer::globals::unpackpath =~ s/\Q$installer::globals::separator\E\s*$//; # removing ending slashes and backslashes
 
 	my $path = "";
 
@@ -382,21 +382,21 @@ sub create_directories
 	{
 		if ( $installer::globals::temppathdefined ) { $path = $installer::globals::temppath; }
 		else { $path = $installer::globals::unpackpath; }
-		$path =~ s/\Q$installer::globals::separator\E\s*$//;	# removing ending slashes and backslashes
+		$path =~ s/\Q$installer::globals::separator\E\s*$//; # removing ending slashes and backslashes
 		$path = $path . $installer::globals::separator;
 	}
 	elsif ( ( $newdirectory eq "jds" ) )
 	{
 		if ( $installer::globals::jdstemppathdefined ) { $path = $installer::globals::jdstemppath; }
 		else { $path = $installer::globals::unpackpath; }
-		$path =~ s/\Q$installer::globals::separator\E\s*$//;	# removing ending slashes and backslashes
+		$path =~ s/\Q$installer::globals::separator\E\s*$//; # removing ending slashes and backslashes
 		$path = $path . $installer::globals::separator;
 		installer::systemactions::create_directory($path);
 	}
 	else
 	{
 		$path = $installer::globals::unpackpath . $installer::globals::separator;
-		
+
 		# special handling, if LOCALINSTALLDIR is set
 		if (( $installer::globals::localinstalldirset ) && ( $newdirectory eq "install" ))
 		{
@@ -408,9 +408,9 @@ sub create_directories
 	$infoline = "create_directories: Using $path for $newdirectory !\n";
 	$installer::logger::Lang->print($infoline);
 
-	if ($newdirectory eq "unzip" )	# special handling for common directory
+	if ($newdirectory eq "unzip" ) # special handling for common directory
 	{
-		$path = $path  . ".." . $installer::globals::separator . "common" . $installer::globals::productextension . $installer::globals::separator;
+		$path = $path . ".." . $installer::globals::separator . "common" . $installer::globals::productextension . $installer::globals::separator;
 		create_directory($path);
 
 		$path = $path . $newdirectory . $installer::globals::separator;
@@ -444,24 +444,24 @@ sub create_directories
 
 		$path = $path . $newdirectory . $installer::globals::separator;
 		create_directory($path);
-		
+
 		my $locallanguagesref = "";
-		
+
 		if ( $$languagesref ) { $locallanguagesref = $$languagesref; }
 
-		if (!($locallanguagesref eq "" ))	# this will be a path like "01_49", for Profiles and ConfigurationFiles, idt-Files
+		if (!($locallanguagesref eq "" )) # this will be a path like "01_49", for Profiles and ConfigurationFiles, idt-Files
 		{
 			my $languagestring = installer::languages::get_language_directory_name($$languagesref);
 
-			$path = $path . $languagestring  . $installer::globals::separator;
+			$path = $path . $languagestring . $installer::globals::separator;
 			create_directory($path);
 		}
 	}
-	
+
 	installer::remover::remove_ending_pathseparator(\$path);
 
 	$path = installer::converter::make_path_conform($path);
-	
+
 	return $path;
 }
 
@@ -474,7 +474,7 @@ sub copy_one_file
 	my ($source, $dest) = @_;
 
 	my ($returnvalue, $infoline);
-	
+
 
 	# copy returns 0 if files are identical :-(
 	if ( $installer::globals::isos2 ) {
@@ -482,7 +482,7 @@ sub copy_one_file
 	}
 
 	my $copyreturn = copy($source, $dest);
-		
+
 	if ($copyreturn)
 	{
 		$infoline = "Copy: $source to $dest\n";
@@ -496,29 +496,29 @@ sub copy_one_file
 
 	$installer::logger::Lang->print($infoline);
 
-    if ( !$returnvalue ) {
-        return $returnvalue;
-    }
-    
-    # taking care of file attributes
-    if ($installer::globals::iswin && -f $dest) {
-        my $mode = -x $source ? 0775 : 0664;
-        my $mode_str = sprintf("%o", $mode);
-        my $chmodreturn = chmod($mode, $dest);
-    	if ($chmodreturn)
-    	{
-    		$infoline = "chmod $mode_str, $dest\n";
-    		$returnvalue = 1;
-    	}
-    	else
-    	{
-    		$infoline = "WARNING: Could not chmod $dest: $!\n";
-    		$returnvalue = 0;
-    	}
-	
-	    $installer::logger::Lang->print($infoline);
-    }
-	
+	if ( !$returnvalue ) {
+		return $returnvalue;
+	}
+
+	# taking care of file attributes
+	if ($installer::globals::iswin && -f $dest) {
+		my $mode = -x $source ? 0775 : 0664;
+		my $mode_str = sprintf("%o", $mode);
+		my $chmodreturn = chmod($mode, $dest);
+		if ($chmodreturn)
+		{
+			$infoline = "chmod $mode_str, $dest\n";
+			$returnvalue = 1;
+		}
+		else
+		{
+			$infoline = "WARNING: Could not chmod $dest: $!\n";
+			$returnvalue = 0;
+		}
+
+		$installer::logger::Lang->print($infoline);
+	}
+
 	return $returnvalue;
 }
 
@@ -531,9 +531,9 @@ sub hardlink_one_file
 	my ($source, $dest) = @_;
 
 	my ($returnvalue, $infoline);
-	
+
 	my $copyreturn = link($source, $dest);
-		
+
 	if ($copyreturn)
 	{
 		$infoline = "Link: $source to $dest\n";
@@ -546,7 +546,7 @@ sub hardlink_one_file
 	}
 
 	$installer::logger::Lang->print($infoline);
-    
+
 	return $returnvalue;
 }
 
@@ -559,9 +559,9 @@ sub softlink_one_file
 	my ($source, $dest) = @_;
 
 	my ($returnvalue, $infoline);
-	
+
 	my $linkreturn = symlink($source, $dest);
-		
+
 	if ($linkreturn)
 	{
 		$infoline = "Symlink: $source to $dest\n";
@@ -574,7 +574,7 @@ sub softlink_one_file
 	}
 
 	$installer::logger::Lang->print($infoline);
-    
+
 	return $returnvalue;
 }
 
@@ -589,7 +589,7 @@ sub rename_one_file
 	my ($returnvalue, $infoline);
 
 	my $renamereturn = rename($source, $dest);
-		
+
 	if ($renamereturn)
 	{
 		$infoline = "Rename: $source to $dest\n";
@@ -600,9 +600,9 @@ sub rename_one_file
 		$infoline = "ERROR: Could not rename $source to $dest\n";
 		$returnvalue = 0;
 	}
-	
+
 	$installer::logger::Lang->print($infoline);
-	
+
 	return $returnvalue;
 }
 
@@ -614,9 +614,9 @@ sub rename_one_file
 sub copy_directory
 {
 	my ($sourcedir, $destdir) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -624,20 +624,20 @@ sub copy_directory
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Copying files from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
 			my $sourcefile = $sourcedir . $installer::globals::separator . $onefile;
 			my $destfile = $destdir . $installer::globals::separator . $onefile;
-			if ( -f $sourcefile ) 	# only files, no directories
+			if ( -f $sourcefile ) # only files, no directories
 			{
 				copy_one_file($sourcefile, $destfile);
 			}
@@ -653,17 +653,17 @@ sub copy_directory
 sub is_empty_dir
 {
 	my ($dir) = @_;
-	
+
 	my $directory_is_empty = 1;
 	my @sourcefiles = ();
-	
+
 	opendir(DIR, $dir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
 	my @realcontent = ();
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
@@ -671,9 +671,9 @@ sub is_empty_dir
 			push(@realcontent, $onefile);
 		}
 	}
-	
+
 	if ( $#realcontent > -1 ) { $directory_is_empty = 0; }
-	
+
 	return $directory_is_empty;
 }
 
@@ -684,9 +684,9 @@ sub is_empty_dir
 sub hardlink_complete_directory
 {
 	my ($sourcedir, $destdir) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -696,29 +696,29 @@ sub hardlink_complete_directory
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Creating hard links for all files from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
 			my $source = $sourcedir . $installer::globals::separator . $onefile;
 			my $dest = $destdir . $installer::globals::separator . $onefile;
-			if ( -f $source ) 	# only files, no directories
+			if ( -f $source ) # only files, no directories
 			{
 				hardlink_one_file($source, $dest);
 			}
-			if ( -d $source ) 	# recursive
+			if ( -d $source ) # recursive
 			{
 				hardlink_complete_directory($source, $dest);
 			}
 		}
-	}	
+	}
 }
 
 #####################################################################
@@ -728,9 +728,9 @@ sub hardlink_complete_directory
 sub softlink_complete_directory
 {
 	my ($sourcedir, $destdir, $depth) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -740,32 +740,32 @@ sub softlink_complete_directory
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Creating soft links for all files from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
 			my $source = $sourcedir . $installer::globals::separator . $onefile;
 			my $dest = $destdir . $installer::globals::separator . $onefile;
-			if ( -f $source ) 	# only files, no directories
+			if ( -f $source ) # only files, no directories
 			{
 				my $localsource = $source;
 				if ( $depth > 0 ) { for ( my $i = 1; $i <= $depth; $i++ ) { $localsource = "../" . $localsource; } }
 				softlink_one_file($localsource, $dest);
 			}
-			if ( -d $source ) 	# recursive
+			if ( -d $source ) # recursive
 			{
 				my $newdepth = $depth + 1;
 				softlink_complete_directory($source, $dest, $newdepth);
 			}
 		}
-	}	
+	}
 }
 
 #####################################################
@@ -775,9 +775,9 @@ sub softlink_complete_directory
 sub copy_complete_directory
 {
 	my ($sourcedir, $destdir) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -787,32 +787,32 @@ sub copy_complete_directory
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Copying files from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
 			my $source = $sourcedir . $installer::globals::separator . $onefile;
 			my $dest = $destdir . $installer::globals::separator . $onefile;
-			if ( -f $source ) 	# only files, no directories
+			if ( -f $source ) # only files, no directories
 			{
 				copy_one_file($source, $dest);
 			}
-			if ( -d $source ) 	# recursive
+			if ( -d $source ) # recursive
 			{
-				if ((!( $source =~ /packages\/SUNW/ )) && (!( $source =~ /packages\/OOO/ )))	# do not copy complete Solaris packages!
+				if ((!( $source =~ /packages\/SUNW/ )) && (!( $source =~ /packages\/OOO/ ))) # do not copy complete Solaris packages!
 				{
 					copy_complete_directory($source, $dest);
 				}
 			}
 		}
-	}	
+	}
 }
 
 #####################################################################################
@@ -822,9 +822,9 @@ sub copy_complete_directory
 sub copy_complete_directory_without_cvs
 {
 	my ($sourcedir, $destdir) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -834,29 +834,29 @@ sub copy_complete_directory_without_cvs
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Copying files from directory $sourcedir to directory $destdir (without CVS)\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")) && (!($onefile eq "CVS")))
 		{
 			my $source = $sourcedir . $installer::globals::separator . $onefile;
 			my $dest = $destdir . $installer::globals::separator . $onefile;
-			if ( -f $source ) 	# only files, no directories
+			if ( -f $source ) # only files, no directories
 			{
 				copy_one_file($source, $dest);
 			}
-			if ( -d $source ) 	# recursive
+			if ( -d $source ) # recursive
 			{
 				copy_complete_directory_without_cvs($source, $dest);
 			}
 		}
-	}	
+	}
 }
 
 #####################################################
@@ -867,9 +867,9 @@ sub copy_complete_directory_without_cvs
 sub copy_directory_with_fileextension
 {
 	my ($sourcedir, $destdir, $extension) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -877,28 +877,28 @@ sub copy_directory_with_fileextension
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Copying files with extension $extension from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
-			if ( $onefile =~ /\.$extension\s*$/ )	# only copying specified files
+			if ( $onefile =~ /\.$extension\s*$/ ) # only copying specified files
 			{
 				my $sourcefile = $sourcedir . $installer::globals::separator . $onefile;
 				my $destfile = $destdir . $installer::globals::separator . $onefile;
-				if ( -f $sourcefile ) 	# only files, no directories
+				if ( -f $sourcefile ) # only files, no directories
 				{
 					copy_one_file($sourcefile, $destfile);
 				}
 			}
 		}
-	}	
+	}
 }
 
 #########################################################
@@ -909,9 +909,9 @@ sub copy_directory_with_fileextension
 sub copy_directory_except_fileextension
 {
 	my ($sourcedir, $destdir, $extension) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$sourcedir =~ s/\Q$installer::globals::separator\E\s*$//;
 	$destdir =~ s/\Q$installer::globals::separator\E\s*$//;
 
@@ -919,28 +919,28 @@ sub copy_directory_except_fileextension
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Copying files without extension $extension from directory $sourcedir to directory $destdir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $sourcedir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
-			if ( ! ( $onefile =~ /\.$extension\s*$/ ))	# only copying not having the specified extension
+			if ( ! ( $onefile =~ /\.$extension\s*$/ )) # only copying not having the specified extension
 			{
 				my $sourcefile = $sourcedir . $installer::globals::separator . $onefile;
 				my $destfile = $destdir . $installer::globals::separator . $onefile;
-				if ( -f $sourcefile ) 	# only files, no directories
+				if ( -f $sourcefile ) # only files, no directories
 				{
 					copy_one_file($sourcefile, $destfile);
 				}
 			}
 		}
-	}	
+	}
 }
 
 ########################################################
@@ -952,38 +952,38 @@ sub copy_directory_except_fileextension
 sub rename_files_with_fileextension
 {
 	my ($dir, $extension) = @_;
-	
+
 	my @sourcefiles = ();
-	
+
 	$dir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	my $infoline = "\n";
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Renaming files with extension \"$extension\" in the directory $dir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $dir);
 	@sourcefiles = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
 		{
-			if ( $onefile =~ /^\s*(\S.*?)\.$extension\s*$/ )	# only renaming specified files
+			if ( $onefile =~ /^\s*(\S.*?)\.$extension\s*$/ ) # only renaming specified files
 			{
 				my $destfile = $1;
 				my $sourcefile = $dir . $installer::globals::separator . $onefile;
 				$destfile = $dir . $installer::globals::separator . $destfile;
-				if ( -f $sourcefile ) 	# only files, no directories
+				if ( -f $sourcefile ) # only files, no directories
 				{
 					rename_one_file($sourcefile, $destfile);
 				}
 			}
 		}
-	}	
+	}
 }
 
 ########################################################
@@ -994,7 +994,7 @@ sub rename_files_with_fileextension
 sub find_file_with_file_extension
 {
 	my ($extension, $dir) = @_;
-	
+
 	my @allfiles = ();
 
 	$dir =~ s/\Q$installer::globals::separator\E\s*$//;
@@ -1003,13 +1003,13 @@ sub find_file_with_file_extension
 	$installer::logger::Lang->print($infoline);
 	$infoline = "Searching files with extension \"$extension\" in the directory $dir\n";
 	$installer::logger::Lang->print($infoline);
-	
+
 	opendir(DIR, $dir);
 	@sourcefiles = sort readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@sourcefiles)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
@@ -1020,7 +1020,7 @@ sub find_file_with_file_extension
 			}
 		}
 	}
-	
+
 	return \@allfiles;
 }
 
@@ -1032,16 +1032,16 @@ sub find_file_with_file_extension
 sub make_numbered_dir
 {
 	my ($newstring, $olddir) = @_;
-	
+
 	my $basedir = $olddir;
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$basedir);
 
 	my $alldirs = get_all_directories($basedir);
-	
+
 	# searching for the highest number extension
 
 	my $maxnumber = 0;
-	
+
 	for ( my $i = 0; $i <= $#{$alldirs}; $i++ )
 	{
 		if ( ${$alldirs}[$i] =~ /\_(\d+)\s*$/ )
@@ -1052,9 +1052,9 @@ sub make_numbered_dir
 	}
 
 	my $newnumber = $maxnumber + 1;
-		
+
 	my $newdir = $olddir . "_" . $newstring . "_" . $newnumber;
-	
+
 	my $returndir = "";
 
 	if ( move($olddir, $newdir) )
@@ -1067,11 +1067,11 @@ sub make_numbered_dir
 	{
 		$installer::logger::Lang->print("\n");
 		$installer::logger::Lang->printf("ATTENTION: Could not move directory from %s to %s, \"make_numbered_dir\"\n",
-            $olddir,
-            $newdir);
+			$olddir,
+			$newdir);
 		$returndir = $olddir;
 	}
-	
+
 	return $returndir;
 }
 
@@ -1082,7 +1082,7 @@ sub make_numbered_dir
 sub determine_maximum_number
 {
 	my ($dir, $languagestringref) = @_;
-	
+
 	my $basedir = $dir;
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$basedir);
 
@@ -1093,18 +1093,18 @@ sub determine_maximum_number
 	# In control.pm the installation directory is determined as:
 	# $installer::globals::build . "_" . $installer::globals::lastminor . "_" .
 	# "native_inprogress-number_" . $$languagesref . "\." . $installer::globals::buildid;
-	
+
 	# searching for the highest number extension after the first "-", which belongs to
 	# $installer::globals::build, $installer::globals::lastminor and $installer::globals::buildid
 	# In this step not looking for the language!
 
 	my @correctbuildiddirs = ();
-	
+
 	for ( my $i = 0; $i <= $#{$alldirs}; $i++ )
 	{
 		my $onedir = ${$alldirs}[$i];
 		installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$onedir);
-		
+
 		if ( $onedir =~ /^\s*\Q$installer::globals::build\E\_\Q$installer::globals::lastminor\E\_(.*?)\-(\d+)\_(.*?)\.\Q$installer::globals::buildid\E\s*$/ )
 		{
 			my $number = $2;
@@ -1126,7 +1126,7 @@ sub determine_maximum_number
 		if ( $onedir =~ /^\s*(.*?)\-(\d+)\_(.*?)\.(.*?)\s*$/ )
 		{
 			my $number = $2;
-			
+
 			if ( $number == $maxnumber )
 			{
 				push(@maximumnumberdirs, $onedir);
@@ -1148,7 +1148,7 @@ sub determine_maximum_number
 		{
 			my $number = $2;
 			my $languagestring = $3;
-			
+
 			if ( $languagestring eq $$languagestringref )
 			{
 				$increase_counter = 1;
@@ -1160,7 +1160,7 @@ sub determine_maximum_number
 	{
 		$maxnumber = $maxnumber + 1;
 	}
-		
+
 	return $maxnumber;
 }
 
@@ -1172,14 +1172,14 @@ sub determine_maximum_number
 sub rename_string_in_directory
 {
 	my ($olddir, $oldstring, $newstring) = @_;
-	
+
 	my $newdir = $olddir;
 	my $infoline = "";
-		
+
 	$newdir =~ s/$oldstring/$newstring/g;
-	
+
 	if (( -d $newdir ) && ( $olddir ne $newdir )) { remove_complete_directory($newdir, 1); }
-	
+
 	if ( move($olddir, $newdir) )
 	{
 		$installer::logger::Lang->print("\n");
@@ -1189,10 +1189,10 @@ sub rename_string_in_directory
 	{
 		$installer::logger::Lang->print("\n");
 		$installer::logger::Lang->printf(
-            "ATTENTION: Could not move directory from %s to %s, \"rename_string_in_directory\"\n",
-            $olddir, $newdir);
+			"ATTENTION: Could not move directory from %s to %s, \"rename_string_in_directory\"\n",
+			$olddir, $newdir);
 	}
-	
+
 	return $newdir;
 }
 
@@ -1204,18 +1204,18 @@ sub rename_string_in_directory
 sub get_directoryname
 {
 	my ($searchdir, $startstring) = @_;
-	
+
 	my $dirname = "";
 	my $founddir = 0;
 	my $direntry;
-	
+
 	opendir(DIR, $searchdir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		if (( -d $direntry ) && ( $direntry =~ /^\s*\Q$startstring\E/ ))
 		{
 			$dirname = $direntry;
@@ -1227,7 +1227,7 @@ sub get_directoryname
 	closedir(DIR);
 
 	if ( ! $founddir ) { installer::exiter::exit_program("ERROR: Did not find directory beginning with $startstring in directory $searchdir", "get_directoryname"); }
-	
+
 	return $dirname;
 }
 
@@ -1239,12 +1239,12 @@ sub get_directoryname
 sub rename_directory
 {
 	my ($olddir, $newdir) = @_;
-	
+
 	my $infoline = "";
 
 	# noticed problems under Windows from time to time that directories can't be moved, seems a timing issue
-    # workaround with sleep, should be investigated with a new packaging mechanism
-    sleep(2); 
+	# workaround with sleep, should be investigated with a new packaging mechanism
+	sleep(2);
 	if ( move($olddir, $newdir) )
 	{
 		$installer::logger::Lang->print("\n");
@@ -1254,7 +1254,7 @@ sub rename_directory
 	{
 		installer::exiter::exit_program("ERROR: Could not move directory from $olddir to $newdir", "rename_directory");
 	}
-	
+
 	return $newdir;
 }
 
@@ -1270,11 +1270,11 @@ sub create_directory_next_to_directory
 	installer::pathanalyzer::get_path_from_fullqualifiedname(\$basedir);
 
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
-	
+
 	my $newdir = $basedir . $installer::globals::separator . $dirname;
-	
+
 	create_directory($newdir);
-	
+
 	return $newdir;
 }
 
@@ -1285,26 +1285,26 @@ sub create_directory_next_to_directory
 sub get_all_directories
 {
 	my ($basedir) = @_;
-	
+
 	my @alldirs = ();
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		my $completeentry = $basedir . $installer::globals::separator . $direntry;
 
 		if ( -d $completeentry ) { push(@alldirs, $completeentry); }
 	}
 
 	closedir(DIR);
-	
+
 	return \@alldirs;
 }
 
@@ -1316,26 +1316,26 @@ sub get_all_directories
 sub get_all_directories_without_path
 {
 	my ($basedir) = @_;
-	
+
 	my @alldirs = ();
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		my $completeentry = $basedir . $installer::globals::separator . $direntry;
 
 		if ( -d $completeentry ) { push(@alldirs, $direntry); }
 	}
 
 	closedir(DIR);
-	
+
 	return \@alldirs;
 }
 
@@ -1346,26 +1346,26 @@ sub get_all_directories_without_path
 sub get_all_files_from_one_directory
 {
 	my ($basedir) = @_;
-	
+
 	my @allfiles = ();
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		my $completeentry = $basedir . $installer::globals::separator . $direntry;
 
 		if ( -f $completeentry ) { push(@allfiles, $completeentry); }
 	}
 
 	closedir(DIR);
-	
+
 	return \@allfiles;
 }
 
@@ -1376,14 +1376,14 @@ sub get_all_files_from_one_directory
 sub get_all_files_from_one_directory_without_path
 {
 	my ($basedir) = @_;
-	
+
 	my @allfiles = ();
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
@@ -1395,7 +1395,7 @@ sub get_all_files_from_one_directory_without_path
 	}
 
 	closedir(DIR);
-	
+
 	return \@allfiles;
 }
 
@@ -1406,26 +1406,26 @@ sub get_all_files_from_one_directory_without_path
 sub read_directory
 {
 	my ($basedir) = @_;
-	
+
 	my @allcontent = ();
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		my $completeentry = $basedir . $installer::globals::separator . $direntry;
 
 		if (( -f $completeentry ) || ( -d $completeentry )) { push(@allcontent, $completeentry); }
 	}
 
 	closedir(DIR);
-	
+
 	return \@allcontent;
 }
 
@@ -1436,21 +1436,21 @@ sub read_directory
 sub find_new_content_in_directory
 {
 	my ( $basedir, $oldcontent ) = @_;
-	
+
 	my @newcontent = ();
 	my @allcontent = ();
-	
+
 	my $direntry;
-	
+
 	$basedir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	opendir(DIR, $basedir);
-	
+
 	foreach $direntry (readdir (DIR))
 	{
 		next if $direntry eq ".";
 		next if $direntry eq "..";
-		
+
 		my $completeentry = $basedir . $installer::globals::separator . $direntry;
 
 		if (( -f $completeentry ) || ( -d $completeentry ))
@@ -1459,12 +1459,12 @@ sub find_new_content_in_directory
 			if (! installer::existence::exists_in_array($completeentry, $oldcontent))
 			{
 				push(@newcontent, $completeentry);
-			} 
+			}
 		}
 	}
 
 	closedir(DIR);
-	
+
 	return (\@newcontent, \@allcontent);
 }
 
@@ -1475,7 +1475,7 @@ sub find_new_content_in_directory
 sub try_to_create_directory
 {
 	my ($directory) = @_;
-	
+
 	my $returnvalue = 1;
 	my $created_directory = 0;
 
@@ -1488,7 +1488,7 @@ sub try_to_create_directory
 			$created_directory = 1;
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf("Created directory: %s\n", $directory);
-	
+
 			my $localcall = "chmod 0775 $directory \>\/dev\/null 2\>\&1";
 			system($localcall);
 
@@ -1525,10 +1525,10 @@ sub create_directory_structure
 		$installer::logger::Lang->printf("INFO: Did not create directory %s\n", $directory);
 		$installer::logger::Lang->printf("Now trying to create parent directory %s\n", $parentdir);
 
-		create_directory_structure($parentdir);									# recursive
+		create_directory_structure($parentdir); # recursive
 	}
-	
-	create_directory($directory);	# now it has to succeed
+
+	create_directory($directory); # now it has to succeed
 }
 
 ######################################################
@@ -1541,7 +1541,7 @@ sub remove_complete_directory
 
 	my @content = ();
 	my $infoline = "";
-	
+
 	$directory =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	if ( -d $directory )
@@ -1551,44 +1551,44 @@ sub remove_complete_directory
 			$installer::logger::Lang->print("\n");
 			$installer::logger::Lang->printf("Removing directory %s\n", $directory);
 		}
-	
+
 		opendir(DIR, $directory);
 		@content = readdir(DIR);
 		closedir(DIR);
 
 		my $oneitem;
-	
+
 		foreach $oneitem (@content)
 		{
 			if ((!($oneitem eq ".")) && (!($oneitem eq "..")))
 			{
 				my $item = $directory . $installer::globals::separator . $oneitem;
 
-				if ( -f $item || -l $item ) 	# deleting files or links
+				if ( -f $item || -l $item ) # deleting files or links
 				{
 					unlink($item);
 				}
 
-				if ( -d $item ) 	# recursive
+				if ( -d $item ) # recursive
 				{
 					remove_complete_directory($item, 0);
 				}
 			}
 		}
-		
+
 		# try to remove empty directory
 
-        if ( ! -d $directory)
-        {
-            $installer::logger::Info->printf("trying to remove directory that doesn't exist: %s\n", $directory);
-        }
+		if ( ! -d $directory)
+		{
+			$installer::logger::Info->printf("trying to remove directory that doesn't exist: %s\n", $directory);
+		}
 		my $returnvalue = rmdir $directory;
 
 		if ( ! $returnvalue )
 		{
 			$installer::logger::Lang->printf("Warning: Problem with removing empty dir %s\n", $directory);
 		}
-		
+
 		# try a little bit harder (sometimes there is a performance problem)
 		if ( -d $directory )
 		{
@@ -1598,7 +1598,7 @@ sub remove_complete_directory
 				{
 					$installer::logger::Lang->print("\n");
 					$installer::logger::Lang->printf("Warning (Try %d): Problems with removing directory %s\n",
-                        $j, $directory);
+						$j, $directory);
 
 					$returnvalue = rmdir $directory;
 
@@ -1606,27 +1606,27 @@ sub remove_complete_directory
 					{
 						$installer::logger::Lang->printf("Successfully removed empty dir %s\n", $directory);
 					}
-                    else
-                    {
+					else
+					{
 						$installer::logger::Lang->printf("Warning: rmdir %s failed.\n", $directory);
 					}
 				}
 			}
 		}
-	}	
+	}
 }
 
 ######################################################
-# Creating a unique directory with number extension	
+# Creating a unique directory with number extension
 ######################################################
 
 sub create_unique_directory
 {
 	my ($directory) = @_;
-	
+
 	$directory =~ s/\Q$installer::globals::separator\E\s*$//;
 	$directory = $directory . "_INCREASINGNUMBER";
-	
+
 	my $counter = 1;
 	my $created = 0;
 	my $localdirectory = "";
@@ -1636,53 +1636,53 @@ sub create_unique_directory
 		$localdirectory = $directory;
 		$localdirectory =~ s/INCREASINGNUMBER/$counter/;
 		$counter++;
-		
+
 		if ( ! -d $localdirectory )
 		{
 			create_directory($localdirectory);
 			$created = 1;
-		}		
+		}
 	}
 	while ( ! $created );
-	
+
 	return $localdirectory;
 }
 
 ######################################################
-# Creating a unique directory with pid extension	
+# Creating a unique directory with pid extension
 ######################################################
 
 sub create_pid_directory
 {
 	my ($directory) = @_;
-	
+
 	$directory =~ s/\Q$installer::globals::separator\E\s*$//;
-	my $pid = $$;			# process id
-	my $time = time();		# time
-	
+	my $pid = $$; # process id
+	my $time = time(); # time
+
 	$directory = $directory . "_" . $pid . $time;
 
-	if ( ! -d $directory ) { create_directory($directory); }		
+	if ( ! -d $directory ) { create_directory($directory); }
 	else { installer::exiter::exit_program("ERROR: Directory $directory already exists!", "create_pid_directory"); }
-	
+
 	return $directory;
 }
 
 ##############################################################
-# Reading all files from a directory and its subdirectories	
+# Reading all files from a directory and its subdirectories
 ##############################################################
 
 sub read_complete_directory
 {
 	my ($directory, $pathstring, $filecollector) = @_;
-	
+
 	my @content = ();
 	opendir(DIR, $directory);
 	@content = readdir(DIR);
 	closedir(DIR);
 
 	my $onefile;
-	
+
 	foreach $onefile (@content)
 	{
 		if ((!($onefile eq ".")) && (!($onefile eq "..")))
@@ -1691,12 +1691,12 @@ sub read_complete_directory
 			my $sep = "";
 			if ( $pathstring ne "" ) { $sep = $installer::globals::separator; }
 
-			if ( ! -d $completefilename ) 	# only files, no directories
+			if ( ! -d $completefilename ) # only files, no directories
 			{
 				my $content = $pathstring . $sep . $onefile;
 				push(@{$filecollector}, $content);
 			}
-			else  # recursive for directories
+			else # recursive for directories
 			{
 				my $newpathstring = $pathstring . $sep . $onefile;
 				read_complete_directory($completefilename, $newpathstring, $filecollector);
@@ -1707,7 +1707,7 @@ sub read_complete_directory
 
 ##############################################################
 # Reading all files from a directory and its subdirectories
-# Version 2	
+# Version 2
 ##############################################################
 
 sub read_full_directory ($$$)
@@ -1717,41 +1717,41 @@ sub read_full_directory ($$$)
 	my $fullname;
 	local *DH;
 
-    $installer::logger::Lang->printf("seaching files under '%s'\n", $currentdir);
+	$installer::logger::Lang->printf("seaching files under '%s'\n", $currentdir);
 
-    my @directory_queue = [$currentdir, $pathstring];
+	my @directory_queue = [$currentdir, $pathstring];
 
-    while (scalar @directory_queue > 0)
-    {
-        my ($path, $relative_path) = @{shift @directory_queue};
-        my $start_count = scalar @$collector;
+	while (scalar @directory_queue > 0)
+	{
+		my ($path, $relative_path) = @{shift @directory_queue};
+		my $start_count = scalar @$collector;
 
-        next unless opendir(DH, $path);
+		next unless opendir(DH, $path);
 
-        while (defined ($item = readdir(DH)))
-        {
-            next if($item eq "." or $item eq "..");
-            $fullname = $path . $installer::globals::separator . $item;
-            my $sep = "";
-            if ($relative_path ne "")
-            {
-                $sep = $installer::globals::separator;
-            }
+		while (defined ($item = readdir(DH)))
+		{
+			next if($item eq "." or $item eq "..");
+			$fullname = $path . $installer::globals::separator . $item;
+			my $sep = "";
+			if ($relative_path ne "")
+			{
+				$sep = $installer::globals::separator;
+			}
 
-            if( -d $fullname)
-            {
-                push @directory_queue, [$fullname, $relative_path . $sep . $item];
-            }
-            else
-            {
-                my $content = $relative_path . $sep . $item;
-                push(@{$collector}, $content);
-            }
-        }
-        closedir(DH);
-        my $count = scalar @$collector - $start_count;
-        $installer::logger::Lang->printf("    found %d new files in '%s'\n", $count, $path);
-    }
+			if( -d $fullname)
+			{
+				push @directory_queue, [$fullname, $relative_path . $sep . $item];
+			}
+			else
+			{
+				my $content = $relative_path . $sep . $item;
+				push(@{$collector}, $content);
+			}
+		}
+		closedir(DH);
+		my $count = scalar @$collector - $start_count;
+		$installer::logger::Lang->printf("    found %d new files in '%s'\n", $count, $path);
+	}
 }
 
 ##############################################################
@@ -1764,7 +1764,7 @@ sub remove_empty_dirs_in_folder
 
 	my @content = ();
 	my $infoline = "";
-	
+
 	$dir =~ s/\Q$installer::globals::separator\E\s*$//;
 
 	if ( -d $dir )
@@ -1774,7 +1774,7 @@ sub remove_empty_dirs_in_folder
 		closedir(DIR);
 
 		my $oneitem;
-	
+
 		foreach $oneitem (@content)
 		{
 			if ((!($oneitem eq ".")) && (!($oneitem eq "..")))
@@ -1787,18 +1787,18 @@ sub remove_empty_dirs_in_folder
 				}
 			}
 		}
-		
+
 		# try to remove empty directory
-        $installer::logger::Info->printf("remove_empty_dirs_in_folder %s\n", $dir);
+		$installer::logger::Info->printf("remove_empty_dirs_in_folder %s\n", $dir);
 		my $returnvalue = rmdir $dir;
 
 		if ( $returnvalue )
 		{
 			$installer::logger::Lang->printf("Successfully removed empty dir %s\n", $dir);
 		}
-		
+
 	}
-	
+
 }
 
 1;
