@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -37,9 +37,9 @@ use installer::systemactions;
 sub need_to_strip
 {
 	my ( $filename ) = @_;
-	
+
 	my $strip = 0;
-	
+
 	# Check using the "file" command
 
 	open (FILE, "file $filename |");
@@ -48,7 +48,7 @@ sub need_to_strip
 
 	if (( $fileoutput =~ /not stripped/i ) && ( $fileoutput =~ /\bELF\b/ )) { $strip = 1; }
 
-	return $strip		
+	return $strip
 }
 
 #####################################################################
@@ -58,14 +58,14 @@ sub need_to_strip
 sub do_strip
 {
 	my ( $filename ) = @_;
-	
+
 	my $systemcall = "strip" . " " . $filename;
-	
+
 	my $returnvalue = system($systemcall);
 
 	my $infoline = "Systemcall: $systemcall\n";
 	$installer::logger::Lang->print($infoline);
-		
+
 	if ($returnvalue)
 	{
 		$infoline = "ERROR: Could not strip $filename!\n";
@@ -79,7 +79,7 @@ sub do_strip
 }
 
 #####################################################################
-# Resolving all variables in the packagename.
+# Resolving all variables in the packagename
 #####################################################################
 
 sub strip_libraries
@@ -92,7 +92,7 @@ sub strip_libraries
 
 	if (! installer::existence::exists_in_array($strippeddirbase, \@installer::globals::removedirs))
 	{
-		push(@installer::globals::removedirs, $strippeddirbase);		
+		push(@installer::globals::removedirs, $strippeddirbase);
 	}
 
 	for ( my $i = 0; $i <= $#{$filelist}; $i++ )
@@ -103,20 +103,20 @@ sub strip_libraries
 		{
 			my $shortfilename = $sourcefilename;
 			installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$shortfilename);
-			
+
 			$infoline = "Strip: $shortfilename\n";
 			$installer::logger::Lang->print($infoline);
 
 			# copy file into directory for stripped libraries
 
 			my $onelanguage = ${$filelist}[$i]->{'specificlanguage'};
-	
+
 			# files without language into directory "00"
-			
+
 			if ($onelanguage eq "") { $onelanguage = "00"; }
-			
+
 			my $strippeddir = $strippeddirbase . $installer::globals::separator . $onelanguage;
-			installer::systemactions::create_directory($strippeddir);	# creating language specific subdirectories
+			installer::systemactions::create_directory($strippeddir); # creating language specific subdirectories
 
 			my $destfilename = $strippeddir . $installer::globals::separator . $shortfilename;
 			installer::systemactions::copy_one_file($sourcefilename, $destfilename);
@@ -126,7 +126,7 @@ sub strip_libraries
 			${$filelist}[$i]->{'sourcepath'} = $destfilename;
 
 			# strip file
-			
+
 			do_strip($destfilename);
 		}
 	}
