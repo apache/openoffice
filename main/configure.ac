@@ -3945,7 +3945,7 @@ if test  "$_os" = "Darwin"; then
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
       dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11)" | sed -e "s/.*sdk //" | tail -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
