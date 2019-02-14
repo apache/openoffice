@@ -19,41 +19,11 @@
 #  
 #**************************************************************
 
+$(eval $(call gb_Package_Package,ure_uretest_zip,$(WORKDIR)/CustomTarget/ure/source))
 
+$(eval $(call gb_Package_add_file,ure_uretest_zip,bin/uretest.zip,uretest.zip))
 
-PRJ=..$/..
-
-PRJPCH=
-
-PRJNAME=scp2
-TARGET=python
-TARGETTYPE=CUI
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :	settings.mk
-
-.IF "$(SYSTEM_PYTHON)" == "YES"
-SCPDEFS+=-DSYSTEM_PYTHON
-.ELSE
-.INCLUDE :      pyversion_dmake.mk
-.ENDIF
-
-SCPDEFS+=\
-	-DPYVERSION=$(PYVERSION) -DPYMAJMIN=$(PYMAJOR).$(PYMINOR) \
-	-DPY_FULL_DLL_NAME=$(PY_FULL_DLL_NAME)
-
-SCP_PRODUCT_TYPE=osl
-
-PARFILES=\
-        module_python.par              \
-        module_python_mailmerge.par    \
-        profileitem_python.par         \
-        file_python.par
-
-ULFFILES= \
-        module_python.ulf              \
-        module_python_mailmerge.ulf
-
-# --- File ---------------------------------------------------------
-.INCLUDE :  target.mk
+$(WORKDIR)/CustomTarget/ure/source/uretest.zip : $(wildcard $(SRCDIR)/ure/source/uretest/*)
+	mkdir -p $(dir $@) && \
+	cd $(SRCDIR)/ure/source && \
+	zip -r $@ uretest

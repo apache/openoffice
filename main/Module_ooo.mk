@@ -72,8 +72,10 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	oovbaapi \
 	oox \
 	package \
+	packimages \
 	padmin \
 	psprint_config \
+	pyuno \
 	rdbmaker \
 	registry \
 	remotebridges \
@@ -108,6 +110,7 @@ $(eval $(call gb_Module_add_moduledirs,ooo,\
 	unodevtools \
 	unotools \
 	unoxml \
+	ure \
 	uui \
 	vbahelper \
 	vcl \

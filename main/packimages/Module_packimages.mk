@@ -21,39 +21,11 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Module_Module,packimages))
 
-PRJPCH=
+$(eval $(call gb_Module_add_targets,packimages,\
+	Package_packimages \
+))
 
-PRJNAME=scp2
-TARGET=python
-TARGETTYPE=CUI
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :	settings.mk
-
-.IF "$(SYSTEM_PYTHON)" == "YES"
-SCPDEFS+=-DSYSTEM_PYTHON
-.ELSE
-.INCLUDE :      pyversion_dmake.mk
-.ENDIF
-
-SCPDEFS+=\
-	-DPYVERSION=$(PYVERSION) -DPYMAJMIN=$(PYMAJOR).$(PYMINOR) \
-	-DPY_FULL_DLL_NAME=$(PY_FULL_DLL_NAME)
-
-SCP_PRODUCT_TYPE=osl
-
-PARFILES=\
-        module_python.par              \
-        module_python_mailmerge.par    \
-        profileitem_python.par         \
-        file_python.par
-
-ULFFILES= \
-        module_python.ulf              \
-        module_python_mailmerge.ulf
-
-# --- File ---------------------------------------------------------
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

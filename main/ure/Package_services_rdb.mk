@@ -19,41 +19,17 @@
 #  
 #**************************************************************
 
+$(eval $(call gb_Package_Package,ure_services_rdb,$(WORKDIR)/CustomTarget/ure/source))
 
+$(eval $(call gb_Package_add_file,ure_services_rdb,xml/ure/services.rdb,services.rdb))
 
-PRJ=..$/..
-
-PRJPCH=
-
-PRJNAME=scp2
-TARGET=python
-TARGETTYPE=CUI
-
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :	settings.mk
-
-.IF "$(SYSTEM_PYTHON)" == "YES"
-SCPDEFS+=-DSYSTEM_PYTHON
-.ELSE
-.INCLUDE :      pyversion_dmake.mk
-.ENDIF
-
-SCPDEFS+=\
-	-DPYVERSION=$(PYVERSION) -DPYMAJMIN=$(PYMAJOR).$(PYMINOR) \
-	-DPY_FULL_DLL_NAME=$(PY_FULL_DLL_NAME)
-
-SCP_PRODUCT_TYPE=osl
-
-PARFILES=\
-        module_python.par              \
-        module_python_mailmerge.par    \
-        profileitem_python.par         \
-        file_python.par
-
-ULFFILES= \
-        module_python.ulf              \
-        module_python_mailmerge.ulf
-
-# --- File ---------------------------------------------------------
-.INCLUDE :  target.mk
+$(WORKDIR)/CustomTarget/ure/source/services.rdb : \
+		$(SRCDIR)/ure/source/services.input \
+		$(SOLARENV)/bin/packcomponents.xslt
+	mkdir -p $(dir $@) && \
+	$(gb_XSLTPROC) \
+		--nonet \
+		--stringparam prefix $(call gb_Helper_convert_native,$(OUTDIR)/xml/) \
+		-o $(call gb_Helper_convert_native,$@) \
+		$(call gb_Helper_convert_native,$(SOLARENV)/bin/packcomponents.xslt) \
+		$(call gb_Helper_convert_native,$(SRCDIR)/ure/source/services.input)
