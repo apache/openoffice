@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -54,7 +54,7 @@ sub put_productname_into_script
 	$productname =~ s/\.//g;	# openoffice.org -> openofficeorg
 	$productname =~ s/\s*//g;
 
-    $installer::logger::Lang->printf("Adding productname %s into download shell script\n", $productname);
+	$installer::logger::Lang->printf("Adding productname %s into download shell script\n", $productname);
 
 	for ( my $i = 0; $i <= $#{$scriptfile}; $i++ )
 	{
@@ -70,9 +70,9 @@ sub put_linenumber_into_script
 {
 	my ( $scriptfile ) = @_;
 	
-	my $linenumber =  $#{$scriptfile} + 2;
+	my $linenumber = $#{$scriptfile} + 2;
 
-    $installer::logger::Lang->printf("Adding linenumber %d into download shell script\n", $linenumber);
+	$installer::logger::Lang->printf("Adding linenumber %d into download shell script\n", $linenumber);
 
 	for ( my $i = 0; $i <= $#{$scriptfile}; $i++ )
 	{
@@ -92,7 +92,7 @@ sub determine_scriptfile_name
 	$filename = $filename . $installer::globals::downloadfileextension;
 	$installer::globals::downloadfilename = $filename;
 
-    $installer::logger::Lang->printf("Setting download shell script file name to %s\n", $filename);
+	$installer::logger::Lang->printf("Setting download shell script file name to %s\n", $filename);
 
 	return $filename;
 }
@@ -108,7 +108,7 @@ sub save_script_file
 	$newscriptfilename = $directory . $installer::globals::separator . $newscriptfilename;
 	installer::files::save_file($newscriptfilename, $scriptfile);
 
-    $installer::logger::Lang->printf("Saving script file %s\n", $newscriptfilename);
+	$installer::logger::Lang->printf("Saving script file %s\n", $newscriptfilename);
 
 	if ( ! $installer::globals::iswindowsbuild )
 	{
@@ -140,8 +140,8 @@ sub put_checksum_and_size_into_script
 		installer::exiter::exit_program("ERROR: Incorrect return value from /usr/bin/sum: $sumout", "put_checksum_and_size_into_script");
 	}
 
-    $installer::logger::Lang->printf(
-        "Adding checksum %s and size %s into download shell script\n", $checksum, $size);
+	$installer::logger::Lang->printf(
+		"Adding checksum %s and size %s into download shell script\n", $checksum, $size);
 
 	for ( my $i = 0; $i <= $#{$scriptfile}; $i++ )
 	{
@@ -173,15 +173,15 @@ sub call_md5sum
 
 	my $returnvalue = $?;	# $? contains the return value of the systemcall
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->print("Success: Executed \"%s\" successfully!\n", $systemcall);
+		$installer::logger::Lang->print("Success: Executed \"%s\" successfully!\n", $systemcall);
 	}
 	
 	return $md5sumoutput;		
@@ -206,7 +206,7 @@ sub get_md5sum
 		installer::exiter::exit_program("ERROR: Incorrect return value from /usr/bin/md5sum: $md5sumoutput", "get_md5sum");
 	}
 
-    $installer::logger::Lang->printf("Setting md5sum: %s\n", $md5sum);
+	$installer::logger::Lang->printf("Setting md5sum: %s\n", $md5sum);
 
 	return $md5sum;
 }
@@ -229,15 +229,15 @@ sub call_sum
 
 	my $returnvalue = $?;	# $? contains the return value of the systemcall
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
+		$installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
 	}
 	
 	$sumoutput =~ s/\s+$filename\s$//;
@@ -281,15 +281,15 @@ sub include_tar_into_script
 	my $systemcall = "cat $temporary_tarfile >> $scriptfile && rm $temporary_tarfile";
 	my $returnvalue = system($systemcall);
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
+		$installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
 	}
 	return $returnvalue;
 }
@@ -314,15 +314,15 @@ sub tar_package
 	
 	my $returnvalue = system($systemcall);
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: Executed \"\" successfully!\n", $systemcall);
+		$installer::logger::Lang->printf("Success: Executed \"\" successfully!\n", $systemcall);
 	}
 	
 	my $localcall = "chmod 775 $tarfilename \>\/dev\/null 2\>\&1";
@@ -351,21 +351,21 @@ sub create_tar_gz_file_from_package
 		my $systemcall = "cd $installdir; rm $onefile";
 		my $returnvalue = system($systemcall);
 
-        $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+		$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 		if ($returnvalue)
 		{
-            $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+			$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 		}
 		else
 		{
-            $installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
+			$installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
 		}
 	}
 
 	$alldirs = installer::systemactions::get_all_directories($installdir);
 	my $packagename = ${$alldirs}[0]; # only taking the first Solaris package			
-	if ( $packagename eq "" ) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); } 
+	if ( $packagename eq "" ) { installer::exiter::exit_program("ERROR: Could not find package in directory $installdir!", "determine_packagename"); }
 
 	installer::pathanalyzer::make_absolute_filename_to_relative_filename(\$packagename);
 	
@@ -382,19 +382,19 @@ sub create_tar_gz_file_from_package
 	}
 
 	my $systemcall = "cd $installdir; $ldpreloadstring tar -cf - $packagename | gzip > $targzname";
-    $installer::logger::Info->printf("... %s ...\n", $systemcall);
+	$installer::logger::Info->printf("... %s ...\n", $systemcall);
 
 	my $returnvalue = system($systemcall);
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
+		$installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
 	}
 }
 
@@ -450,44 +450,44 @@ sub get_downloadname_language
 
 sub get_downloadname_productname
 {
-    my ($allvariables) = @_;
+	my ($allvariables) = @_;
 
-    my $start;
+	my $start;
 
-    if ( $allvariables->{'AOODOWNLOADNAMEPREFIX'} )
-    {
-        $start = $allvariables->{'AOODOWNLOADNAMEPREFIX'};
-    }
-    else
-    {
-        $start = "Apache_OpenOffice";
-        if ( $allvariables->{'PRODUCTNAME'} eq "OpenOffice" ) 
-        {
-            if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
-            {
-                $start .= "-SDK";
-            }
-        }
+	if ( $allvariables->{'AOODOWNLOADNAMEPREFIX'} )
+	{
+		$start = $allvariables->{'AOODOWNLOADNAMEPREFIX'};
+	}
+	else
+	{
+		$start = "Apache_OpenOffice";
+		if ( $allvariables->{'PRODUCTNAME'} eq "OpenOffice" )
+		{
+			if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
+			{
+				$start .= "-SDK";
+			}
+		}
 
-        if ( $allvariables->{'PRODUCTNAME'} eq "AOO-Developer-Build" ) 
-        {
-            if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
-            {
-                $start .= "-Dev-SDK";
-            }
-            else
-            {
-                $start .= "-Dev";
-            }
-        }
+		if ( $allvariables->{'PRODUCTNAME'} eq "OpenOffice Developer Build" )
+		{
+			if ( $allvariables->{'POSTVERSIONEXTENSION'} eq "SDK" )
+			{
+				$start .= "_Dev-SDK";
+			}
+			else
+			{
+				$start .= "_Dev";
+			}
+		}
 
-        if ( $allvariables->{'PRODUCTNAME'} eq "URE" )
-        {
-            $start .= "-URE";
-        }
-    }
+		if ( $allvariables->{'PRODUCTNAME'} eq "URE" )
+		{
+			$start .= "-URE";
+		}
+	}
 
-    return $start;
+	return $start;
 }
 
 #########################################################
@@ -507,15 +507,15 @@ sub get_download_version
 	# the environment variable CWS_WORK_STAMP is set only in CWS
 	if ( $ENV{'CWS_WORK_STAMP'} ) { $cwsproduct = 1; }
 
-	if (( $cwsproduct ) || ( $devproduct ))  # use "DEV300m75"
+	if (( $cwsproduct ) || ( $devproduct )) # use "DEV300m75"
 	{
 		my $source = uc($installer::globals::build); # DEV300
 		my $localminor = "";
 		if ( $installer::globals::minor ne "" ) { $localminor = $installer::globals::minor; }
 		else { $localminor = $installer::globals::lastminor; }
-		$version = $source . $localminor; 
+		$version = $source . $localminor;
 	}
-	else  # use 3.2.0rc1
+	else # use 3.2.0rc1
 	{
 		$version = $allvariables->{'PRODUCTVERSION'};
 		if (( $allvariables->{'ABOUTBOXPRODUCTVERSION'} ) && ( $allvariables->{'ABOUTBOXPRODUCTVERSION'} ne "" )) { $version = $allvariables->{'ABOUTBOXPRODUCTVERSION'}; }
@@ -553,8 +553,8 @@ sub set_date_string
 		my $month = $timearray[4] + 1;
 		my $year = $timearray[5] + 1900;
 	
-		if ( $month < 10 ) { $month = "0" . $month; } 
-		if ( $day < 10 ) { $day = "0" . $day; } 
+		if ( $month < 10 ) { $month = "0" . $month; }
+		if ( $day < 10 ) { $day = "0" . $day; }
 
 		$datestring = $year . $month . $day;
 	}
@@ -738,14 +738,14 @@ sub get_current_version
 	
 	if ( -f $filename )
 	{
-        $installer::logger::Lang->printf("File %s exists. Trying to find current version.\n", $filename);
+		$installer::logger::Lang->printf("File %s exists. Trying to find current version.\n", $filename);
 		my $versionfile = installer::files::read_file($filename);
 		$versionstring = get_versionstring($versionfile);
-        $installer::logger::Lang->printf("Setting version string: %s\n", $versionstring);
+		$installer::logger::Lang->printf("Setting version string: %s\n", $versionstring);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("File %s does not exist. No version setting in download file name.\n", $filename);
+		$installer::logger::Lang->printf("File %s does not exist. No version setting in download file name.\n", $filename);
 	}
 
 	$installer::globals::oooversionstring = $versionstring;
@@ -814,15 +814,15 @@ sub create_tar_gz_file_from_directory
 	
 	my $returnvalue = system($systemcall);
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 		
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: Could not execute \"%s\"!\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
+		$installer::logger::Lang->printf("Success: Executed \"%s\" successfully!\n", $systemcall);
 	}
 	
 	return $targzname;
@@ -880,7 +880,7 @@ sub replace_one_variable
 {
 	my ($templatefile, $placeholder, $value) = @_;
 
-    $installer::logger::Lang->printf("Replacing %s by %s in nsi file\n", $placeholder, $value);
+	$installer::logger::Lang->printf("Replacing %s by %s in nsi file\n", $placeholder, $value);
 
 	for ( my $i = 0; $i <= $#{$templatefile}; $i++ )
 	{
@@ -1020,12 +1020,12 @@ sub put_setup_ico_into_template
 
 sub put_publisher_into_template ($$)
 {
-    my ($templatefile, $variables) = @_;
+	my ($templatefile, $variables) = @_;
 	
-    my $publisher = $variables->{'OOOVENDOR'};
-    $publisher = "" unless defined $publisher;
+	my $publisher = $variables->{'OOOVENDOR'};
+	$publisher = "" unless defined $publisher;
 
-    replace_one_variable($templatefile, "PUBLISHERPLACEHOLDER", $publisher);
+	replace_one_variable($templatefile, "PUBLISHERPLACEHOLDER", $publisher);
 }
 
 ##################################################################
@@ -1034,12 +1034,12 @@ sub put_publisher_into_template ($$)
 
 sub put_website_into_template ($$)
 {
-    my ($templatefile, $variables) = @_;
+	my ($templatefile, $variables) = @_;
 
-    my $website = $variables->{'STARTCENTER_INFO_URL'};
-    $website = "" unless defined $website;
+	my $website = $variables->{'STARTCENTER_INFO_URL'};
+	$website = "" unless defined $website;
 
-    replace_one_variable($templatefile, "WEBSITEPLACEHOLDER", $website);
+	replace_one_variable($templatefile, "WEBSITEPLACEHOLDER", $website);
 }
 
 ##################################################################
@@ -1186,7 +1186,7 @@ sub nsis_language_converter
 	
 	my $nsislanguage = "";
 
-	# Assign language used by NSIS. 
+	# Assign language used by NSIS.
 	# The files "$nsislanguage.nsh" and "$nsislanguage.nlf"
 	# are needed in the NSIS environment.
 	# Directory: <NSIS-Dir>/Contrib/Language files
@@ -1248,8 +1248,8 @@ sub nsis_language_converter
 	elsif ( $language eq "vi" ) { $nsislanguage = "Vietnamese"; }
 	elsif ( $language eq "cy" ) { $nsislanguage = "Welsh"; }
 	else
-    {
-        $installer::logger::Lang->printf("NSIS language_converter : Could not find nsis language for %s!\n", $language);
+	{
+		$installer::logger::Lang->printf("NSIS language_converter : Could not find nsis language for %s!\n", $language);
 		$nsislanguage = "English";
 	}
 
@@ -1266,7 +1266,7 @@ sub put_language_list_into_template
 
 	my $alllangstring = "";
 	my %nsislangs;
- 
+
 	for ( my $i = 0; $i <= $#{$languagesarrayref}; $i++ )
 	{
 		my $onelanguage = ${$languagesarrayref}[$i];
@@ -1403,11 +1403,11 @@ sub replace_identifier_in_nshfile
 		{
 			my $oldstring = $1;
 			${$nshfile}[$i] =~ s/\Q$oldstring\E/$newstring/;
-            $installer::logger::Lang->printf("NSIS replacement in %s (%s):  \-\> %s\n",
-                $nshfilename,
-                $onelanguage,
-                $oldstring,
-                $newstring);
+			$installer::logger::Lang->printf("NSIS replacement in %s (%s): \-\> %s\n",
+				$nshfilename,
+				$onelanguage,
+				$oldstring,
+				$newstring);
 		}
 	}
 }
@@ -1431,11 +1431,11 @@ sub replace_identifier_in_nlffile
 			my $oldstring = ${$nlffile}[$next];
 			${$nlffile}[$next] = $newstring . "\n";
 			$oldstring =~ s/\s*$//;
-            $installer::logger::Lang->printf("NSIS replacement in %s (%s): %s \-\> %s\n",
-                $nlffilename,
-                $onelanguage,
-                $oldstring,
-                $newstring);
+			$installer::logger::Lang->printf("NSIS replacement in %s (%s): %s \-\> %s\n",
+				$nlffilename,
+				$onelanguage,
+				$oldstring,
+				$newstring);
 		}
 	}	
 }
@@ -1483,7 +1483,7 @@ sub convert_utf16_to_utf8
 #	open( IN, "<:para:crlf:uni", $filename ) || installer::exiter::exit_program("ERROR: Cannot open file $filename for reading", "convert_utf16_to_utf8");
 	open( IN, "<:encoding(UTF16-LE)", $filename ) || installer::exiter::exit_program("ERROR: Cannot open file $filename for reading", "convert_utf16_to_utf8");
 	while ( my $line = <IN> )
-    {
+	{
 		push @localfile, $line;
 	}
 	close( IN );
@@ -1512,8 +1512,8 @@ sub convert_utf8_to_utf16
 	installer::systemactions::copy_one_file($filename, $savfilename);
 
 	open( IN, "<:utf8", $filename ) || installer::exiter::exit_program("ERROR: Cannot open file $filename for reading", "convert_utf8_to_utf16");
-	while (my  $line = <IN>)
-    {
+	while (my $line = <IN>)
+	{
 		push @localfile, $line;
 	}
 	close( IN );
@@ -1588,9 +1588,9 @@ sub copy_and_translate_nsis_language_files
 		installer::systemactions::copy_one_file($sourcepath, $nshfilename);		
 
 		# Changing the macro name in nsh file: MUI_LANGUAGEFILE_BEGIN -> MUI_LANGUAGEFILE_PACK_BEGIN
-        convert_utf16_to_utf8($nshfilename);
-        convert_utf16_to_utf8($nlffilename);
-        my $nshfile = installer::files::read_file($nshfilename);
+		convert_utf16_to_utf8($nshfilename);
+		convert_utf16_to_utf8($nlffilename);
+		my $nshfile = installer::files::read_file($nshfilename);
 		replace_one_variable($nshfile, "MUI_LANGUAGEFILE_BEGIN", "MUI_LANGUAGEFILE_PACK_BEGIN");
 
 		# find the ulf file for translation
@@ -1603,8 +1603,8 @@ sub copy_and_translate_nsis_language_files
 		installer::files::save_file($nshfilename, $nshfile);
 		installer::files::save_file($nlffilename, $nlffile);
 
-        convert_utf8_to_utf16($nshfilename);
-        convert_utf8_to_utf16($nlffilename);
+		convert_utf8_to_utf16($nshfilename);
+		convert_utf8_to_utf16($nlffilename);
 	}
 
 }
@@ -1642,14 +1642,14 @@ sub get_path_to_nsis_sdk
 	my $nsispath = "";
 
 	if ( $ENV{'NSIS_PATH'} )
-    {
+	{
 		$nsispath = $ENV{'NSIS_PATH'};
 	}
 	if ( $nsispath eq "" )
 	{
-        $installer::logger::Info->print("... no Environment variable \"NSIS_PATH\"!\n");
+		$installer::logger::Info->print("... no Environment variable \"NSIS_PATH\"!\n");
 	}
-    elsif ( ! -d $nsispath )
+	elsif ( ! -d $nsispath )
 	{
 		installer::exiter::exit_program("ERROR: NSIS path $nsispath does not exist!", "get_path_to_nsis_sdk");
 	}
@@ -1667,13 +1667,13 @@ sub call_nsis
 	
 	my $makensisexe = $nsispath . $installer::globals::separator . "makensis.exe";
 
-    $installer::logger::Info->printf("... starting %s ... \n", $makensisexe);
+	$installer::logger::Info->printf("... starting %s ... \n", $makensisexe);
 
 	if( $^O =~ /cygwin/i ) { $nsifile =~ s/\\/\//g;	}
 
 	my $systemcall = "$makensisexe $nsifile |";
 
-    $installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
+	$installer::logger::Lang->printf("Systemcall: %s\n", $systemcall);
 
 	my @nsisoutput = ();
 
@@ -1685,17 +1685,17 @@ sub call_nsis
 
 	if ($returnvalue)
 	{
-        $installer::logger::Lang->printf("ERROR: %s !\n", $systemcall);
+		$installer::logger::Lang->printf("ERROR: %s !\n", $systemcall);
 	}
 	else
 	{
-        $installer::logger::Lang->printf("Success: %s\n", $systemcall);
+		$installer::logger::Lang->printf("Success: %s\n", $systemcall);
 	}		
 
 	foreach my $line (@nsisoutput)
-    {
-        $installer::logger::Lang->print($line);
-    }
+	{
+		$installer::logger::Lang->print($line);
+	}
 }
 
 #################################################################################
@@ -1743,7 +1743,7 @@ sub get_translation_file
 	my $translationfile = installer::files::read_file($translationfilename);
 	replace_variables($translationfile, $allvariableshashref);
 
-    $installer::logger::Lang->printf("Reading translation file: %s\n", $translationfilename);
+	$installer::logger::Lang->printf("Reading translation file: %s\n", $translationfilename);
 	
 	return $translationfile;
 }
@@ -1772,7 +1772,7 @@ sub create_link_tree
 	
 	if ( ! $installer::globals::ooouploaddir ) { installer::exiter::exit_program("ERROR: Directory for AOO upload not defined!", "create_link_tree"); }
 	my $versiondir = $installer::globals::ooouploaddir . $installer::globals::separator . $versionstring;
-    $installer::logger::Lang->printf("Directory for the link: %s\n", $versiondir);
+	$installer::logger::Lang->printf("Directory for the link: %s\n", $versiondir);
 	
 	if ( ! -d $versiondir ) { installer::systemactions::create_directory_structure($versiondir); }
 	
@@ -1782,7 +1782,7 @@ sub create_link_tree
 	# If there is an older version of this file (link), it has to be removed
 	if ( -f $linkdestination ) { unlink($linkdestination); }
 
-    $installer::logger::Lang->printf("Creating hard link from %s to %s\n", $sourcedownloadfile, $linkdestination);
+	$installer::logger::Lang->printf("Creating hard link from %s to %s\n", $sourcedownloadfile, $linkdestination);
 	installer::systemactions::hardlink_one_file($sourcedownloadfile, $linkdestination);	
 }
 
@@ -1813,10 +1813,10 @@ sub create_download_sets
 {
 	my ($installationdir, $includepatharrayref, $allvariableshashref, $downloadname, $languagestringref, $languagesarrayref) = @_;
 	
-    $installer::logger::Info->print("\n");
-    $installer::logger::Info->print("******************************************\n");
-    $installer::logger::Info->print("... creating download installation set ...\n", 1);
-    $installer::logger::Info->print("******************************************\n");
+	$installer::logger::Info->print("\n");
+	$installer::logger::Info->print("******************************************\n");
+	$installer::logger::Info->print("... creating download installation set ...\n", 1);
+	$installer::logger::Info->print("******************************************\n");
 
 	installer::logger::include_header_into_logfile("Creating download installation sets:");
 
@@ -1855,13 +1855,13 @@ sub create_download_sets
 	# evaluating the name of the download file
 
 	if ( $allvariableshashref->{'AOODOWNLOADNAME'} )
-    { 
-        $downloadname = set_download_filename($languagestringref, $allvariableshashref);
-    }
-	else 
-    { 
-        $downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref);
-    }
+	{
+		$downloadname = set_download_filename($languagestringref, $allvariableshashref);
+	}
+	else
+	{
+		$downloadname = resolve_variables_in_downloadname($allvariableshashref, $downloadname, $languagestringref);
+	}
 
 	if ( ! $installer::globals::iswindowsbuild )	# Unix specific part
 	{
@@ -1893,7 +1893,7 @@ sub create_download_sets
 			if ($$scriptref eq "") { installer::exiter::exit_program("ERROR: Could not find script file $scriptfilename!", "create_download_sets"); }
 			my $scriptfile = installer::files::read_file($$scriptref);
 
-            $installer::logger::Lang->printf("Found  script file %s: %s \n", $scriptfilename, $$scriptref);
+			$installer::logger::Lang->printf("Found script file %s: %s \n", $scriptfilename, $$scriptref);
 	
 			# add product name into script template
 			put_productname_into_script($scriptfile, $allvariableshashref);
@@ -1904,7 +1904,7 @@ sub create_download_sets
 			# create tar file
 			my $temporary_tarfile_name = $downloaddir . $installer::globals::separator . 'installset.tar';
 			my $size = tar_package($installationdir, $temporary_tarfile_name, $getuidlibrary);
-			installer::exiter::exit_program("ERROR: Could not create tar file $temporary_tarfile_name!", "create_download_sets") unless $size; 
+			installer::exiter::exit_program("ERROR: Could not create tar file $temporary_tarfile_name!", "create_download_sets") unless $size;
 
 			# calling sum to determine checksum and size of the tar file
 			my $sumout = call_sum($temporary_tarfile_name);
@@ -1916,8 +1916,8 @@ sub create_download_sets
 			my $newscriptfilename = determine_scriptfile_name($downloadname);
 			$newscriptfilename = save_script_file($downloaddir, $newscriptfilename, $scriptfile);
 
-            $installer::logger::Info->printf("... including installation set into %s ... \n", $newscriptfilename);
-            # Append tar file to script
+			$installer::logger::Info->printf("... including installation set into %s ... \n", $newscriptfilename);
+			# Append tar file to script
 			include_tar_into_script($newscriptfilename, $temporary_tarfile_name);
 		}
 	}
@@ -1932,9 +1932,9 @@ sub create_download_sets
 		if ( $nsispath eq "" ) {
 			# If nsis is not found just skip the rest of this function
 			# and do not create the NSIS file.
-            $installer::logger::Lang->print("\n");
-            $installer::logger::Lang->printf("No NSIS SDK found. Skipping the generation of NSIS file.\n");
-            $installer::logger::Info->print("... no NSIS SDK found. Skipping the generation of NSIS file ... \n");
+			$installer::logger::Lang->print("\n");
+			$installer::logger::Lang->printf("No NSIS SDK found. Skipping the generation of NSIS file.\n");
+			$installer::logger::Info->print("... no NSIS SDK found. Skipping the generation of NSIS file ... \n");
 			return $downloaddir;
 		}
 
@@ -1976,7 +1976,7 @@ sub create_download_sets
 	
 		my $nsifilename = save_script_file($localnsisdir, $templatefilename, $templatefile);
 
-        $installer::logger::Info->printf("... created NSIS file %s ... \n", $nsifilename);
+		$installer::logger::Info->printf("... created NSIS file %s ... \n", $nsifilename);
 		
 		# starting the NSIS SDK to create the download file
 		call_nsis($nsispath, $nsifilename);		
@@ -1993,10 +1993,10 @@ sub create_download_link_tree
 {
 	my ($downloaddir, $languagestringref, $allvariableshashref) = @_;
 
-    $installer::logger::Info->print("\n");
-    $installer::logger::Info->print("******************************************\n");
-    $installer::logger::Info->print("... creating download hard link ...\n");
-    $installer::logger::Info->print("******************************************\n");
+	$installer::logger::Info->print("\n");
+	$installer::logger::Info->print("******************************************\n");
+	$installer::logger::Info->print("... creating download hard link ...\n");
+	$installer::logger::Info->print("******************************************\n");
 
 	installer::logger::include_header_into_logfile("Creating download hard link:");
 	$installer::logger::Lang->print("\n");
@@ -2008,11 +2008,11 @@ sub create_download_link_tree
 		# Already defined $installer::globals::oooversionstring and $installer::globals::ooodownloadfilename ?
 		
 		if ( ! $installer::globals::oooversionstring ) { $versionstring = get_current_version(); }
-		else { $versionstring = $installer::globals::oooversionstring; } 
+		else { $versionstring = $installer::globals::oooversionstring; }
 		
-		# Is $versionstring empty? If yes, there is nothing to do now. 
+		# Is $versionstring empty? If yes, there is nothing to do now.
 
-        $installer::logger::Lang->printf("Version string is set to: %s\n", $versionstring);
+		$installer::logger::Lang->printf("Version string is set to: %s\n", $versionstring);
 		
 		if ( $versionstring )
 		{
@@ -2025,11 +2025,11 @@ sub create_download_link_tree
 			{
 				$destdownloadfilename = $destdownloadfilename . $installer::globals::downloadfileextension;
 
-                $installer::logger::Lang->printf("Setting destination download file name: %s\n", $destdownloadfilename);
+				$installer::logger::Lang->printf("Setting destination download file name: %s\n", $destdownloadfilename);
 
 				my $sourcedownloadfile = $downloaddir . $installer::globals::separator . $installer::globals::downloadfilename;
 
-                $installer::logger::Lang->printf("Setting source download file name: %s\n", $sourcedownloadfile);
+				$installer::logger::Lang->printf("Setting source download file name: %s\n", $sourcedownloadfile);
 
 				create_link_tree($sourcedownloadfile, $destdownloadfilename, $versionstring);
 				# my $md5sumoutput = call_md5sum($downloadfile);
@@ -2039,12 +2039,12 @@ sub create_download_link_tree
 		}
 		else
 		{
-            $installer::logger::Lang->printf("Version string is empty. Nothing to do!\n");
-        }
+			$installer::logger::Lang->printf("Version string is empty. Nothing to do!\n");
+		}
 	}	
 	else
 	{
-        $installer::logger::Lang->printf("Platform not used for hard linking. Nothing to do!\n");
+		$installer::logger::Lang->printf("Platform not used for hard linking. Nothing to do!\n");
 	}
 
 	$installer::logger::Lang->add_timestamp("Performance Info: Creating hard link, stop");
