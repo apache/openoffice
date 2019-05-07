@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ SmToolBoxWindow::SmToolBoxWindow(SfxBindings *pTmpBindings,
     SetStyle( GetStyle() | WB_DIALOGCONTROL );
 
     nActiveCategoryRID = USHRT_MAX;
-    
+
     aToolBoxCat.SetClickHdl(LINK(this, SmToolBoxWindow, CategoryClickHdl));
 
     sal_uInt16 i;
@@ -190,7 +190,7 @@ const ImageList * SmToolBoxWindow::GetImageList( sal_uInt16 nResId, sal_Bool bHi
     // list for later use in the respective array.
 
     const ImageList *pIL = 0;
-    
+
     // get index to use
     sal_uInt16 nCategoryRID = GetCategoryRID( nResId );
     sal_Int16 nIndex = GetToolBoxCategoriesIndex( nCategoryRID );
@@ -213,13 +213,13 @@ const ImageList * SmToolBoxWindow::GetImageList( sal_uInt16 nResId, sal_Bool bHi
 void SmToolBoxWindow::ApplyImageLists( sal_uInt16 nCategoryRID )
 {
     sal_Bool bHighContrast = GetSettings().GetStyleSettings().GetHighContrastMode();
-        
+
     // set image list for toolbox 'catalog'
 	const ImageList *pImageList = GetImageList( bHighContrast ? RID_ILH_CATALOG : RID_IL_CATALOG, bHighContrast );
     DBG_ASSERT( pImageList, "image list missing" );
     if (pImageList)
         aToolBoxCat.SetImageList( *pImageList );
-        
+
     // set image list for active (visible) category of 'catalog'
     sal_Int16 nIdx = GetToolBoxCategoriesIndex( nCategoryRID );
     sal_uInt16 nResId = GetImageListRID( nCategoryRID, bHighContrast );
@@ -248,7 +248,7 @@ void SmToolBoxWindow::StateChanged( StateChangedType nStateChange )
         AdjustPosSize( bSetPosition );
         bSetPosition = sal_False;
     }
-    //... otherwise the base class will remember the last position of the window
+    // ... otherwise the base class will remember the last position of the window
     SfxFloatingWindow::StateChanged( nStateChange );
 }
 
@@ -256,7 +256,7 @@ void SmToolBoxWindow::StateChanged( StateChangedType nStateChange )
 void SmToolBoxWindow::AdjustPosSize( sal_Bool bSetPos )
 {
     Size aCatSize( aToolBoxCat.CalcWindowSizePixel( 2 ) );
-    Size aCmdSize( pToolBoxCmd->CalcWindowSizePixel( 4 /* see nLines in SetCategory*/ ) );
+    Size aCmdSize( pToolBoxCmd->CalcWindowSizePixel( 5 /* see nLines in SetCategory */ ) );
     DBG_ASSERT( aCatSize.Width() == aCmdSize.Width(), "width mismatch" );
 
     // catalog settings
@@ -324,14 +324,14 @@ void SmToolBoxWindow::SetCategory(sal_uInt16 nCategoryRID)
 	// check for valid resource id
     switch (nCategoryRID)
 	{
-        case RID_UNBINOPS_CAT :     nLines = 4; break;
-        case RID_RELATIONS_CAT:     nLines = 4; break;
-        case RID_SETOPERATIONS_CAT: nLines = 4; break;
-        case RID_FUNCTIONS_CAT:     nLines = 4; break;
+        case RID_UNBINOPS_CAT :     nLines = 5; break;
+        case RID_RELATIONS_CAT:     nLines = 5; break;
+        case RID_SETOPERATIONS_CAT: nLines = 5; break;
+        case RID_FUNCTIONS_CAT:     nLines = 5; break;
         case RID_OPERATORS_CAT:     nLines = 3; break;
-        case RID_ATTRIBUTES_CAT:    nLines = 4; break;
+        case RID_ATTRIBUTES_CAT:    nLines = 5; break;
         case RID_MISC_CAT:          nLines = 4; break;
-        case RID_BRACKETS_CAT:      nLines = 4; break;
+        case RID_BRACKETS_CAT:      nLines = 5; break;
         case RID_FORMAT_CAT:        nLines = 3; break;
 		default:
 			// nothing to be done
@@ -396,5 +396,4 @@ SmToolBoxWrapper::SmToolBoxWrapper(Window *pParentWindow,
 	pWindow = new SmToolBoxWindow(pBindings, this, pParentWindow);
     ((SfxFloatingWindow *)pWindow)->Initialize(pInfo);
 }
-
 
