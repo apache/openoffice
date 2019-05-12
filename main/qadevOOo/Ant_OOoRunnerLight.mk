@@ -21,22 +21,7 @@
 
 
 
-PRJ=..$/..
+$(eval $(call gb_Ant_Ant,OOoRunnerLight,$(SRCDIR)/qadevOOo/java/OOoRunnerLight/build.xml))
 
-PRJNAME = OOoRunner
-PACKAGE = basicrunner
-TARGET = runner_basicrunner
+# vim: set noet sw=4 ts=4:
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-JARFILES       = ridl.jar jurt.jar unoil.jar
-JAVAFILES      = BasicException.java BasicIfcTest.java BasicHandler.java BasicTestCase.java BasicHandlerProvider.java
-JAVACLASSFILES = $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-#SUBDIRS        = basichelper
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk

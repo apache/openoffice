@@ -21,23 +21,7 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Ant_Ant,OOoRunner,$(SRCDIR)/qadevOOo/java/OOoRunner/build.xml))
 
-PRJNAME = OOoRunner
-PACKAGE = basicrunner$/basichelper
-TARGET = runner_basichelper
+# vim: set noet sw=4 ts=4:
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-JARFILES       = ridl.jar jurt.jar unoil.jar
-JAVAFILES      = AttributeList.java DocumentHandler.java Filter.java \
-				 Connector.java DispatchProviderInterceptor.java \
-				 ThreadRunner.java
-JAVACLASSFILES = $(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk

@@ -21,22 +21,18 @@
 
 
 
-PRJ=..$/..$/..
+$(eval $(call gb_Module_Module,qadevOOo))
 
-PRJNAME = OOoRunner
-PACKAGE = org$/openoffice
-TARGET  = runner_org_openoffice
+$(eval $(call gb_Module_add_targets,qadevOOo,\
+	Ant_OOoRunner \
+	Ant_OOoRunnerLight \
+))
 
-# --- Settings -----------------------------------------------------
+ifneq ($(OOO_JUNIT_JAR),)
+$(eval $(call gb_Module_add_subsequentcheck_targets,qadevOOo,\
+	JunitTest_qadevOOo_unoapi \
+))
+endif
 
-.INCLUDE :  settings.mk
 
-# --- Files --------------------------------------------------------
-
-JARFILES = ridl.jar jurt.jar unoil.jar
-JAVAFILES =	Runner.java RunnerService.java
-JAVACLASSFILES=	$(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

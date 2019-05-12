@@ -1,4 +1,4 @@
-#**************************************************************
+###############################################################
 #  
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
@@ -17,29 +17,30 @@
 #  specific language governing permissions and limitations
 #  under the License.
 #  
-#**************************************************************
+###############################################################
 
 
 
-PRJ=..$/..
+$(eval $(call gb_JunitTest_JunitTest,qadevOOo_unoapi,SRCDIR))
 
-PRJNAME = OOoRunner
-PACKAGE = complexlib
-TARGET = runner_complexlib
+#$(eval $(call gb_JunitTest_set_defs,sm_unoapi,\
+#	$$(DEFS) \
+#	-Dorg.openoffice.test.arg.sce=$(SRCDIR)/starmath/qa/unoapi/sm.sce \
+#	-Dorg.openoffice.test.arg.xcl=$(SRCDIR)/starmath/qa/unoapi/knownissues.xcl \
+#))
 
-# --- Settings -----------------------------------------------------
+$(eval $(call gb_JunitTest_add_jars,qadevOOo_unoapi,\
+	$(OUTDIR)/bin/OOoRunner.jar \
+	$(OUTDIR)/bin/ridl.jar \
+	$(OUTDIR)/bin/test.jar \
+))
 
-.INCLUDE :  settings.mk
+$(eval $(call gb_JunitTest_add_sourcefiles,qadevOOo_unoapi,\
+	qadevOOo/qa/unoapi/Test \
+))
 
+$(eval $(call gb_JunitTest_add_classes,qadevOOo_unoapi,\
+	org.openoffice.qadevOOo.qa.unoapi.Test \
+))
 
-# --- Files --------------------------------------------------------
-
-JARFILES = ridl.jar jurt.jar unoil.jar
-
-JAVAFILES = ComplexTestCase.java MethodThread.java ShowTargets.java
-
-JAVACLASSFILES=	$(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:

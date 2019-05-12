@@ -21,28 +21,24 @@
 
 
 
-PRJ=..$/..
+PRJ=..
+TARGET=prj
 
-PRJNAME = OOoRunner
-PACKAGE = share
-TARGET = runner_share
+.INCLUDE : settings.mk
 
-# --- Settings -----------------------------------------------------
+.IF "$(VERBOSE)"!=""
+VERBOSEFLAG :=
+.ELSE
+VERBOSEFLAG := -s
+.ENDIF
 
-.INCLUDE :  settings.mk
+.IF "$(DEBUG)"!=""
+DEBUG_ARGUMENT=DEBUG=$(DEBUG)
+.ELIF "$(debug)"!=""
+DEBUG_ARGUMENT=debug=$(debug)
+.ELSE
+DEBUG_ARGUMENT=
+.ENDIF
 
-# --- Files --------------------------------------------------------
-
-JARFILES = ridl.jar jurt.jar unoil.jar
-
-JAVAFILES =	DescEntry.java 		\
-			DescGetter.java 	\
-			LogWriter.java 		\
-			ComplexTest.java	\
-            Watcher.java
-
-JAVACLASSFILES=	$(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
+all:
+	cd $(PRJ) && $(GNUMAKE) $(VERBOSEFLAG) -r -j$(MAXPROCESS) $(gb_MAKETARGET) $(DEBUG_ARGUMENT) && $(GNUMAKE) $(VERBOSEFLAG) -r deliverlog

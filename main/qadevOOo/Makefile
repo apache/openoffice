@@ -19,32 +19,14 @@
 #  
 #**************************************************************
 
+ifeq ($(strip $(SOLARENV)),)
+$(error No environment set!)
+endif
 
-PRJ=..$/..$/..
+gb_PARTIALBUILD := T
+GBUILDDIR := $(SOLARENV)/gbuild
+include $(GBUILDDIR)/gbuild.mk
 
-PRJNAME = OOoRunner
-PACKAGE = util.compare
-TARGET = runner_util_compare
+$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 
-# --- Settings -----------------------------------------------------
-
-.INCLUDE :  settings.mk
-
-# --- Files --------------------------------------------------------
-
-JARFILES = ridl.jar unoil.jar jurt.jar juh.jar java_uno.jar
-JAVAFILES =	\
- DocComparatorFactory.java \
- DocComparator.java \
- GraphicalComparator.java \
- PDFComparator.java
-
-# doesn't implement yet.
-# PDFComparator.java \
-# XMLComparator.java
-
-JAVACLASSFILES=	$(foreach,i,$(JAVAFILES) $(CLASSDIR)$/$(PACKAGE)$/$(i:b).class)
-
-# --- Targets ------------------------------------------------------
-
-.INCLUDE :  target.mk
+# vim: set noet sw=4 ts=4:
