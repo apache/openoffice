@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -51,7 +50,7 @@
 
 //=============================================================================
 
- module com {  module sun {  module star {  module text {
+ module com { module sun { module star { module text {
 
 //=============================================================================
 
@@ -59,7 +58,7 @@
 /** specifies the basic service of different indexes within a document.@see com::sun::star::text::DocumentIndex
 		@see com::sun::star::text::ContentIndex
 		@see com::sun::star::text::UserDefinedIndex
-		@see com::sun::star::text::IllustrationIndex
+		@see com::sun::star::text::IllustrationsIndex
 		@see com::sun::star::text::TableIndex
 		@see com::sun::star::text::ObjectIndex
  */
@@ -73,7 +72,7 @@ published service BaseIndex
 
 	// DocMerge: empty anyway
 	[property] string Title;
-	/** determins if the index is protected.*/
+	/** determines if the index is protected.*/
 
 	// DocMerge: empty anyway
 	[property] boolean IsProtected;
@@ -146,9 +145,9 @@ published service BaseIndex
 
 	// DocMerge from xml: property com::sun::star::text::BaseIndex::BackTransparent
 	/** specifies the color of the background.
-	 */  
+	 */
 	[property] com::sun::star::util::Color BackColor;
-    
+
 	/** If <TRUE/>, the background color value in "BackColor" is not visible.
 	 */
 	[property] boolean BackTransparent;
@@ -161,18 +160,18 @@ published service BaseIndex
 	 */
 	// DocMerge: empty anyway
 	[optional, property] com::sun::star::container::XIndexReplace LevelFormat;
-	/** determins if the content of the document index is created from the
+	/** determines if the content of the document index is created from the
 	 	complete document content or from the current chapter only.
 	 <p> It is not available in the bibliography</p>*/
 	[optional, property] boolean CreateFromChapter;
-    //------------------------------------------------------------------------
+	//------------------------------------------------------------------------
 	/** the text section containing the content of the index */
 	[property] com::sun::star::text::XTextSection ContentSection;
-    //------------------------------------------------------------------------
-    //------------------------------------------------------------------------
+	//------------------------------------------------------------------------
+	//------------------------------------------------------------------------
 	/** the text section containing the header of the index */
 	[property] com::sun::star::text::XTextSection HeaderSection;
-    //------------------------------------------------------------------------
+	//------------------------------------------------------------------------
 };
 
 //=============================================================================
@@ -180,5 +179,3 @@ published service BaseIndex
 }; }; }; };
 
 #endif
-
-
