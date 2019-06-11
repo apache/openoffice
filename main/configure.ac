@@ -4519,7 +4519,7 @@ if test "x$enable_coinmp" = "xyes"; then
     AC_MSG_RESULT([yes])
     ENABLE_COINMP=YES
 
-    dnl Check wether to use system or internal CoinMP
+    dnl Check whether to use system or internal CoinMP
     AC_MSG_CHECKING([which coinmp to use])
     if test "x$with_system_coinmp" = "xyes" -o -n "$with_system_libs"; then
         AC_MSG_RESULT([system])
