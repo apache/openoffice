@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -28,77 +28,77 @@ package installer::globals;
 ############################################
 
 BEGIN
-{	
+{
 	$prog="make_installer.pl";
 
-    # WARNING: the following lines are matched verbatim in i18npool/source/isolang/langid.pl
-    
+	# WARNING: the following lines are matched verbatim in i18npool/source/isolang/langid.pl
+
 	@noMSLocaleLangs = (
-        "br",
-        "bs",
-        "dz",
-        "gu",
-        "km",
-        "nr",
-        "ns",
-        "nso",
-        "rw",
-        "ss",
-        "st",
-        "tg",
-        "ts",
-        "tn",
-        "ve",
-        "xh",
-        "zu",
-        "ne",
-        "bn",
-        "bn-BD",
-        "bn-IN",
-        "lo",
-        "cy",
-        "ku",
-        "as-IN",
-        "te-IN",
-        "ml-IN",
-        "mr-IN",
-        "ur-IN",
-        "ta-IN",
-        "or-IN",
-        "ti-ER",
-        "eo",
-        "ka",
-        "ga",
-        "gd",
-        "my",
-        "mai",
-        "brx",
-        "dgo",
-        "kok",
-        "mni",
-        "ca-XV",
-        "ca-XR",
-        "sat",
-        "ug",
-        "om",
-        "si",
-        "or",
-        "oc",
-        "ml",
-        "as",
-        "ast",
-        "ht",
-        "jbo",
-        "fur",
-        "ny",
-        "so",
-        "kab",
-        "tk"
-    );
+		"br",
+		"bs",
+		"dz",
+		"gu",
+		"km",
+		"nr",
+		"ns",
+		"nso",
+		"rw",
+		"ss",
+		"st",
+		"tg",
+		"ts",
+		"tn",
+		"ve",
+		"xh",
+		"zu",
+		"ne",
+		"bn",
+		"bn-BD",
+		"bn-IN",
+		"lo",
+		"cy",
+		"ku",
+		"as-IN",
+		"te-IN",
+		"ml-IN",
+		"mr-IN",
+		"ur-IN",
+		"ta-IN",
+		"or-IN",
+		"ti-ER",
+		"eo",
+		"ka",
+		"ga",
+		"gd",
+		"my",
+		"mai",
+		"brx",
+		"dgo",
+		"kok",
+		"mni",
+		"ca-XV",
+		"ca-XR",
+		"sat",
+		"ug",
+		"om",
+		"si",
+		"or",
+		"oc",
+		"ml",
+		"as",
+		"ast",
+		"ht",
+		"jbo",
+		"fur",
+		"ny",
+		"so",
+		"kab",
+		"tk"
+	);
 	@items_at_modules = ("Files", "Dirs", "Unixlinks");
 	@asianlanguages = ("ja", "ko", "zh-CN", "zh-TW");
 	@bidilanguages = ("ar", "he");
-	
+
 	$ziplistname = "";
 	$pathfilename = "";
 	$setupscriptname = "";
@@ -112,7 +112,7 @@ BEGIN
 
 	$destdir = "";
 	$rootpath = "";
-	
+
 	$required_dotnet_version = "2.0.0.0";
 	$productextension = "";
 	$languageproduct = undef;
@@ -124,7 +124,7 @@ BEGIN
 	$dounzip = 1;
 	$languages_defined_in_productlist = 0;
 	$setupscript_defined_in_productlist = 0;
-	$islinux = 0;	
+	$islinux = 0;
 	$issolaris = 0;
 	$ismacosx = 0;
 	$isos2 = 0;
@@ -171,8 +171,8 @@ BEGIN
 	$programmenufolder = "ProgramMenuFolder";
 	$systemfolder = "SystemFolder";
 	$encodinglistname = "msi-encodinglist.txt";
-	$msiencoding = "";	# hash reference for msi encodings
-	$msilanguage = "";	# hash reference for msi languages LCID
+	$msiencoding = ""; # hash reference for msi encodings
+	$msilanguage = ""; # hash reference for msi languages LCID
 	$sofficeiconadded = 0;
 	$temppath = "";
 	$globaltempdirname = "ooopackaging";
@@ -198,7 +198,7 @@ BEGIN
 	$englishsolarislicensename = "LICENSE";
 	$solarisdontcompress = 0;
 	$patharray = "";
-	
+
 	$is_special_epm = 0;
 	$epm_in_path = 0;
 	$epm_path = "";
@@ -236,7 +236,7 @@ BEGIN
 	$strip = 1;
 
 	$globallogging = 0;
-	$logfilename = "logfile.log";	# the default logfile name for global errors
+	$logfilename = "logfile.log"; # the default logfile name for global errors
 #	@logfileinfo = ();
 #	@errorlogfileinfo = ();
 #	@globallogfileinfo = ();
@@ -266,7 +266,7 @@ BEGIN
 	$manufacturer = "";
 	$longmanufacturer = "";
 	$codefilename = "codes.txt";
-	$componentfilename = "components.txt";	
+	$componentfilename = "components.txt";
 	$productcode = "";
 	$upgradecode = "";
 	$msiproductversion = "";
@@ -291,13 +291,13 @@ BEGIN
 	$mergedirectoriescollected = 0;
 	$lastsequence_before_merge = 0;
 	$lastcabfilename = "";
-	
+
 	$createdxpddefaultlang = 0;
 	$xpddir = "";
 	$productxpdfile = "setup.xpd";
 	$xpd_files_prepared = 0;
 	$defaultlanguage = "";
-	# @emptyxpdparents = ();
+#	@emptyxpdparents = ();
 	@createdxpdfiles = ();
 	@allxpdfiles = ();
 	$isxpdplatform = 0;
@@ -306,7 +306,7 @@ BEGIN
 	$addlicensefile = 1;
 	$addsystemintegration = 0;
 	$addjavainstaller = 0;
-	$added_directories = 0;	
+	$added_directories = 0;
 	$makedownload = 1;
 	$makejds = 1;
 	$jdsexcludefilename = "";
@@ -377,7 +377,7 @@ BEGIN
 	%allregistrycomponents_in_this_database_ = ();
 	%allshortregistrycomponents = ();
 	%allregistryidentifier = ();
-	
+
 	$installlocationdirectory = "";
 	$installlocationdirectoryset = 0;
 	$vendordirectory = "";
@@ -395,7 +395,7 @@ BEGIN
 	$uredirhostname = "";
 	$officedirgid = "";
 	$basisdirgid = "";
-	
+
 	%sign_extensions = ("dll" => "1", "exe" => "1", "cab" => "1");
 	%treestyles = ();
 	%installlocations = ("INSTALLLOCATION" => "1");
@@ -404,23 +404,23 @@ BEGIN
 	%treeconditions = ();
 	%usedtreeconditions = ();
 	%moduledestination = ();
-	
+
 	$fix_number_of_cab_files = 1;
 	$cabfilecompressionlevel = 2;
-	$number_of_cabfiles = 1;	# only for $fix_number_of_cab_files = 1 
+	$number_of_cabfiles = 1; # only for $fix_number_of_cab_files = 1
 	$include_cab_in_msi = 0;
 	$msidatabasename = "";
 	$prepare_winpatch = 0;
-	$previous_idt_dir = "";	
+	$previous_idt_dir = "";
 	$updatepack = 0;
 	$msitranpath = "";
 	$usesharepointpath = 0;
 	%newfilescollector = ();
 
 	$saveinstalldir = "";
-	$csp_installdir = "";       # global installdir of createsimplepackage() in simplepackage.pm
-	$csp_installlogdir = "";    # global installlogdir of createsimplepackage() in simplepackage.pm
-	$csp_languagestring = "";   # global languagestring of createsimplepackage() in simplepackage.pm
+	$csp_installdir = ""; # global installdir of createsimplepackage() in simplepackage.pm
+	$csp_installlogdir = ""; # global installlogdir of createsimplepackage() in simplepackage.pm
+	$csp_languagestring = ""; # global languagestring of createsimplepackage() in simplepackage.pm
 	$localunpackdir = "";
 	$localinstalldirset = 0;
 	$localinstalldir = "";
@@ -433,7 +433,7 @@ BEGIN
 
 	$postprocess_specialepm = 0;
 	$postprocess_standardepm = 0;
-	
+
 	$starttime = "";
 
 	@solarispatchscripts = ("checkinstall", "copyright", "patch_checkinstall", "patch_postinstall", "postinstall", "preinstall", "i.none");
@@ -466,19 +466,19 @@ BEGIN
 	%all_required_english_languagestrings = ();
 
 	@forced_properties = ("SERVICETAG_PRODUCTNAME", "SERVICETAG_PRODUCTVERSION", "SERVICETAG_PARENTNAME", "SERVICETAG_SOURCE", "SERVICETAG_URN");
-	
+
 	@removedirs = ();
 	@jdsremovedirs = ();
 	@emptypackages = ();
 	%fontpackageexists = ();
 
-    $exithandler = undef;
+	$exithandler = undef;
 
 	$plat = $^O;
 
 	if ( $plat =~ /cygwin/i )
 	{
-		$zippath = "zip";					# Has to be in the path: /usr/bin/zip
+		$zippath = "zip"; # Has to be in the path: /usr/bin/zip
 		$checksumfile = "so_checksum";
 		$unopkgfile = "unopkg.exe";
 		$separator = "/";
@@ -486,12 +486,12 @@ BEGIN
 		$libextension = "\.dll";
 		$isunix = 0;
 		$iswin = 1;
-        $archiveformat = ".zip";
+		$archiveformat = ".zip";
 	}
 	elsif ( $plat =~ /os2/i )
-	{ 
+	{
 		print "Setup OS/2 platform\n";
-		$zippath = "zip";					# Has to be in the path: /usr/bin/zip
+		$zippath = "zip"; # Has to be in the path: /usr/bin/zip
 		$checksumfile = "so_checksum";
 		$unopkgfile = "unopkg.bin";
 		$separator = "/";
@@ -500,11 +500,11 @@ BEGIN
 		$isunix = 0;
 		$iswin = 0;
 		$isos2 = 1;
-        $archiveformat = ".zip";
+		$archiveformat = ".zip";
 	}
 	else
-	{ 
-		$zippath = "zip";					# Has to be in the path: /usr/bin/zip
+	{
+		$zippath = "zip"; # Has to be in the path: /usr/bin/zip
 		$checksumfile = "so_checksum";
 		$unopkgfile = "unopkg";
 		$separator = "/";
@@ -515,7 +515,7 @@ BEGIN
 		}
 		else
 		{
-			$libextension = "\.so";  
+			$libextension = "\.so";
 		}
 		$archiveformat = ".tar.gz";
 		$isunix = 1;
@@ -525,21 +525,21 @@ BEGIN
 	# $installer::globals::wrapcmd entries
 	$wrapcmd = "";
 
-	if ( $plat =~ /linux/i ) { $islinux = 1; } 
-	if ( $plat =~ /kfreebsd/i ) { $islinux = 1; } 
-	if ( $plat =~ /solaris/i ) { $issolaris = 1; } 
-    if ( $plat =~ /darwin/i ) { $ismacosx = 1; }
-	if ( $plat =~ /os2/i ) { $isos2 = 1; } 
+	if ( $plat =~ /linux/i ) { $islinux = 1; }
+	if ( $plat =~ /kfreebsd/i ) { $islinux = 1; }
+	if ( $plat =~ /solaris/i ) { $issolaris = 1; }
+	if ( $plat =~ /darwin/i ) { $ismacosx = 1; }
+	if ( $plat =~ /os2/i ) { $isos2 = 1; }
 
 	# ToDo: Needs to be expanded for additional platforms
 
-    $is_release = 0;  # Is changed in parameter.pm when the -release option is given.
-    $source_version = undef;
-    $target_version = undef;
-    $source_msi = undef;
+	$is_release = 0; # Is changed in parameter.pm when the -release option is given.
+	$source_version = undef;
+	$target_version = undef;
+	$source_msi = undef;
 
-    # Is set to 1 when target_version is a major version, ie ?.0.0
-    $is_major_release = 0;
+	# Is set to 1 when target_version is a major version, ie ?.0.0
+	$is_major_release = 0;
 }
 
 1;
