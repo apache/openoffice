@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 #include "Sidebar.hrc"
 
 Resource RID_SIDEBAR_RESOURCE
@@ -27,47 +29,47 @@ Resource RID_SIDEBAR_RESOURCE
     {
         ImageBitmap = Bitmap { File = "plus.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_PLUS_HC
     {
         ImageBitmap = Bitmap { File = "plus_hc.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_MINUS
     {
         ImageBitmap = Bitmap { File = "minus.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_MINUS_HC
     {
         ImageBitmap = Bitmap { File = "minus_hc.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_GRIP
     {
         ImageBitmap = Bitmap { File = "grip.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_GRIP_HC
     {
         ImageBitmap = Bitmap { File = "grip_hc.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_MENU
     {
         ImageBitmap = Bitmap { File = "symphony/open_more.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_MENU_HC
     {
-        ImageBitmap = Bitmap { File = "menu_hc.png" ;};
+        ImageBitmap = Bitmap { File = "symphony/open_more_hc.png" ;};
     };
 
     Image IMAGE_SIDEBAR_DETAIL_DIALOG
     {
         ImageBitmap = Bitmap { File = "symphony/morebutton.png" ;};
     };
-    
+
     Image IMAGE_SIDEBAR_DETAIL_DIALOG_HC
     {
         ImageBitmap = Bitmap { File = "symphony/morebutton_h.png" ;};
@@ -284,11 +286,11 @@ Resource RID_SIDEBAR_RESOURCE
 
     String STRING_CUSTOMIZATION
     {
-	Text [en-US] = "Customization";
+        Text [en-US] = "Customization";
     };
     String STRING_RESTORE
     {
-	Text [en-US] = "Restore Default";
+        Text [en-US] = "Restore Default";
     };
 };
 
@@ -307,3 +309,4 @@ String SFX_STR_SIDEBAR_ACCESSIBILITY_PANEL_PREFIX
     Text [en-US] = "Panel: ";
 };
 
+// ********************************************************************** EOF

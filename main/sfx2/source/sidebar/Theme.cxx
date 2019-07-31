@@ -19,6 +19,8 @@
  * 
  *************************************************************/
 
+
+
 #include "precompiled_sfx2.hxx"
 
 #include "sfx2/sidebar/Theme.hxx"
@@ -225,7 +227,7 @@ void Theme::UpdateTheme (void)
         aBorderColor.DecreaseLuminance(15);
         Color aSecondColor (aBaseBackgroundColor);
         aSecondColor.DecreaseLuminance(15);
-        
+
         setPropertyValue(
             maPropertyIdToNameMap[Paint_DeckBackground],
             Any(sal_Int32(aBaseBackgroundColor.GetRGBColor())));
@@ -266,7 +268,7 @@ void Theme::UpdateTheme (void)
         setPropertyValue(
             maPropertyIdToNameMap[Paint_PanelBackground],
             Any(sal_Int32(aBaseBackgroundColor.GetRGBColor())));
-      
+
         setPropertyValue(
             maPropertyIdToNameMap[Paint_PanelTitleBarBackground],
             Any(Tools::VclToAwtGradient(Gradient(
@@ -308,7 +310,7 @@ void Theme::UpdateTheme (void)
         setPropertyValue(
             maPropertyIdToNameMap[Int_TabMenuSeparatorPadding],
             Any(sal_Int32(7)));
-    
+
         setPropertyValue(
             maPropertyIdToNameMap[Int_TabItemWidth],
             Any(sal_Int32(32)));
@@ -345,7 +347,7 @@ void Theme::UpdateTheme (void)
         setPropertyValue(
             maPropertyIdToNameMap[Paint_HorizontalBorder],
             Any(sal_Int32(aBorderColor.GetRGBColor())));
-        //                    mbIsHighContrastMode ? 0x00ff00 :  0xe4e4e4)));
+        //                    mbIsHighContrastMode ? 0x00ff00 : 0xe4e4e4)));
         setPropertyValue(
             maPropertyIdToNameMap[Paint_VerticalBorder],
             Any(sal_Int32(aBorderColor.GetRGBColor())));
@@ -373,7 +375,7 @@ void Theme::UpdateTheme (void)
             maPropertyIdToNameMap[Image_TabBarMenu],
             Any(
                 mbIsHighContrastMode
-                    ? A2S("private:graphicrepository/sfx2/res/menu_hc.png")
+                    ? A2S("private:graphicrepository/sfx2/res/symphony/open_more_hc.png")
                     : A2S("private:graphicrepository/sfx2/res/symphony/open_more.png")));
         setPropertyValue(
             maPropertyIdToNameMap[Image_PanelMenu],
@@ -479,7 +481,7 @@ void SAL_CALL Theme::disposing (void)
     maChangeListeners.swap(aListeners);
 
     const lang::EventObject aEvent (static_cast<XWeak*>(this));
-    
+
     for (ChangeListeners::const_iterator
              iContainer(maChangeListeners.begin()),
              iContainerEnd(maChangeListeners.end());
@@ -537,7 +539,7 @@ void SAL_CALL Theme::setPropertyValue (
         throw beans::UnknownPropertyException(rsPropertyName, NULL);
 
     const ThemeItem eItem (iId->second);
-        
+
     if (rValue == maRawValues[eItem])
     {
         // Value is not different from the one in the property
@@ -554,12 +556,12 @@ void SAL_CALL Theme::setPropertyValue (
         eItem,
         aOldValue,
         rValue);
-    
+
     if (DoVetoableListenersVeto(GetVetoableListeners(__AnyItem, false), aEvent))
         return;
     if (DoVetoableListenersVeto(GetVetoableListeners(eItem, false), aEvent))
         return;
-    
+
     maRawValues[eItem] = rValue;
     ProcessNewValue(rValue, eItem, eType);
 
@@ -742,7 +744,7 @@ cssu::Sequence<css::beans::Property> SAL_CALL Theme::getProperties (void)
             0);
         aProperties.push_back(aProperty);
     }
-        
+
     return cssu::Sequence<css::beans::Property>(
         &aProperties.front(),
         aProperties.size());
@@ -801,9 +803,9 @@ void Theme::SetupPropertyMaps (void)
     maIntegers.resize(__Int_Bool - __Paint_Int - 1);
     maBooleans.resize(__Bool_Rect - __Int_Bool - 1);
     maRectangles.resize(__Post_Rect - __Bool_Rect - 1);
-    
+
     #define AddEntry(e) maPropertyNameToIdMap[A2S(#e)]=e; maPropertyIdToNameMap[e]=A2S(#e)
-    
+
     AddEntry(Image_Grip);
     AddEntry(Image_Expand);
     AddEntry(Image_Collapse);
@@ -861,7 +863,7 @@ void Theme::SetupPropertyMaps (void)
 
     AddEntry(Rect_ToolBoxPadding);
     AddEntry(Rect_ToolBoxBorder);
-    
+
     #undef AddEntry
 
     maRawValues.resize(maPropertyIdToNameMap.size());
@@ -937,7 +939,7 @@ Theme::PropertyType Theme::GetPropertyType (const ThemeItem eItem)
         case Rect_ToolBoxBorder:
         case Rect_ToolBoxPadding:
             return PT_Rectangle;
-            
+
         default:
             return PT_Invalid;
     }
