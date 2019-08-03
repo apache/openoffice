@@ -95,8 +95,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >scalc</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Calc</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                     <value xml:lang="en-US">Calc</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >CalcWindowState</value>
@@ -139,8 +139,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >sdraw</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Draw</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Draw</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >DrawWindowState</value>
@@ -183,8 +183,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >simpress</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Impress</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Impress</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >ImpressWindowState</value>
@@ -225,8 +225,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >smath</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Math</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Math</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >MathWindowState</value>
@@ -267,8 +267,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >sglobal</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Writer</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Writer</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >WriterGlobalWindowState</value>
@@ -312,7 +312,7 @@
 					<value >swriter</value>
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
-                    <value >Writer</value>
+                    <value xml:lang="en-US">Writer</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >WriterWindowState</value>
@@ -347,7 +347,7 @@
                     <value >swform</value>
                 </prop>
                 <prop oor:name="ooSetupFactoryUIName">
-                    <value>Base: Database Form</value>
+                    <value xml:lang="en-US">Base: Database Form</value>
                 </prop>
                 <prop oor:name="ooSetupFactoryWindowStateConfigRef">
                     <value >WriterFormWindowState</value>
@@ -420,7 +420,7 @@
 					<value >swxform</value>
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
-                    <value>XML Form Document</value>
+                    <value xml:lang="en-US">XML Form Document</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >XFormsWindowState</value>
@@ -461,8 +461,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >sweb</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Writer/Web</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US"Writer/Web</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >WriterWebWindowState</value>
@@ -593,7 +593,7 @@
 					<value >GenericCategories</value>
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
-					<value>Base: Data View</value>
+                    <value xml:lang="en-US">Base: Data View</value>
                 </prop>
 			</node>
             <node oor:name="com.sun.star.sdb.TableDataView" oor:op="replace" install:module="base">
@@ -640,7 +640,7 @@
 					<value >GenericCategories</value>
 				</prop>
                 <prop oor:name="ooSetupFactoryUIName">
-					<value>Bibliography</value>
+                    <value xml:lang="en-US">Bibliography</value>
                 </prop>
 			</node>
 			<node oor:name="com.sun.star.script.BasicIDE" oor:op="replace">
@@ -661,8 +661,8 @@
 				<prop oor:name="ooSetupFactoryCmdCategoryConfigRef">
 					<value >GenericCategories</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Basic</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Basic</value>
 				</prop>
 			</node>
 			<node oor:name="com.sun.star.frame.StartModule" oor:op="replace" install:module="start">
@@ -716,8 +716,8 @@
 				<prop oor:name="ooSetupFactoryShortName">
 					<value >schart</value>
 				</prop>
-                           <prop oor:name="ooSetupFactoryUIName">
-                                  <value >Chart</value>
+                <prop oor:name="ooSetupFactoryUIName">
+                    <value xml:lang="en-US">Chart</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryWindowStateConfigRef">
 					<value >ChartWindowState</value>
@@ -765,7 +765,7 @@
 					<value >GenericCategories</value>
 				</prop>
 				<prop oor:name="ooSetupFactoryUIName">
-					<value>Base</value>
+                    <value xml:lang="en-US">Base</value>
 				</prop>
 			</node>
 		</node>
