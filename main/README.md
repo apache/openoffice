@@ -28,7 +28,7 @@ Getting the latest sources via Subversion
     You can always checkout the latest source via subversion using the following
     command:
 
-    svn co https://svn.apache.org/repos/asf/openoffice/trunk aoo
+    git clone https://gitbox.apache.org/repos/asf/openoffice.git aoo
 
     For further information visit https://openoffice.apache.org/source.html
 
