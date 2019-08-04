@@ -22,13 +22,13 @@ Apache OpenOffice (AOO)
     OpenOffice is used by millions of users worldwide and with more than 275 million
     downloads it is one of the most successful open source projects.
 
-Getting the latest sources via Subversion
-=========================================
+Getting the latest sources via Git
+==================================
 
-    You can always checkout the latest source via subversion using the following
+    You can always checkout the latest source via Git using the following
     command:
 
-    git clone https://gitbox.apache.org/repos/asf/openoffice.git aoo
+    git clone https://gitbox.apache.org/repos/asf/openoffice.git
 
     For further information visit https://openoffice.apache.org/source.html
 
@@ -57,5 +57,3 @@ Building Apache OpenOffice
     The default build will produce a setup version (e.g. setup program on Windows, dmg on macOS,
     rpm and deb packages on Linux) and an archived version. The output can be found in the
     <output> directory in instsetoo_native/<output_dir>/Apache_OpenOffice/...
-
-$HeadURL$
