@@ -28,12 +28,12 @@ Getting the latest sources via Git
     You can always checkout the latest source via Git using the following
     command:
 
-    git clone https://gitbox.apache.org/repos/asf/openoffice.git
+    git clone https://gitbox.apache.org/repos/asf/openoffice.git aoo
 
     For further information visit https://openoffice.apache.org/source.html
 
 Building Apache OpenOffice
-===========================
+==========================
 
     Apache OpenOffice is a big project and depends on several other external libraries.
     The list of prerequisites varies for the different platforms.
