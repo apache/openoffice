@@ -22,10 +22,10 @@ Apache OpenOffice (AOO)
     OpenOffice is used by millions of users worldwide and with more than 275 million
     downloads it is one of the most successful open source projects.
 
-Getting the latest sources via Subversion
-=========================================
+Getting the latest sources via Git
+==================================
 
-    You can always checkout the latest source via subversion using the following
+    You can always checkout the latest source via Git using the following
     command:
 
     git clone https://gitbox.apache.org/repos/asf/openoffice.git aoo
@@ -33,7 +33,7 @@ Getting the latest sources via Subversion
     For further information visit https://openoffice.apache.org/source.html
 
 Building Apache OpenOffice
-===========================
+==========================
 
     Apache OpenOffice is a big project and depends on several other external libraries.
     The list of prerequisites varies for the different platforms.
