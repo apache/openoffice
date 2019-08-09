@@ -196,9 +196,9 @@ void Theme::UpdateTheme (void)
 		// UX says this should be a little brighter, but that looks off when compared to the other windows.
 		//aBaseBackgroundColor.IncreaseLuminance(7);
 		Color aBorderColor (aBaseBackgroundColor);
-		aBorderColor.DecreaseLuminance(15);
+		aBorderColor.DecreaseLuminance(80);
 		Color aSecondColor (aBaseBackgroundColor);
-		aSecondColor.DecreaseLuminance(15);
+		aSecondColor.DecreaseLuminance(0);
 
 		setPropertyValue(
 			maPropertyIdToNameMap[Paint_DeckBackground],
@@ -404,7 +404,7 @@ void Theme::UpdateTheme (void)
 		Color aGradientStop2 (aBaseBackgroundColor);
 		aGradientStop2.IncreaseLuminance(17);
 		Color aToolBoxBorderColor (aBaseBackgroundColor);
-		aToolBoxBorderColor.DecreaseLuminance(12);
+		aToolBoxBorderColor.DecreaseLuminance(25);
 		setPropertyValue(
 			maPropertyIdToNameMap[Paint_ToolBoxBackground],
 			Any(Tools::VclToAwtGradient(Gradient(
