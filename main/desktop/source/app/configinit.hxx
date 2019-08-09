@@ -37,7 +37,7 @@ displayable message.
         if the configuration provider can't be created
 
     @throw com::sun::star::lang::ServiceNotRegisteredException
-        if the ConfigurationProvider service is unknwon
+        if the ConfigurationProvider service is unknown
         
     @throw com::sun::star::lang::WrappedTargetException
         if the configuration backend could be created,
