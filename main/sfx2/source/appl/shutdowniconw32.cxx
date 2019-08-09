@@ -844,7 +844,7 @@ static HRESULT WINAPI SHCoCreateInstance( LPVOID lpszReserved, REFCLSID clsid, L
 
 	if ( hModShell != NULL )
 	{
-		typedef	HRESULT (WINAPI *SHCoCreateInstance_PROC)( LPVOID lpszReserved, REFCLSID clsid, LPUNKNOWN pUnkUnknwon, REFIID iid, LPVOID *ppv );
+		typedef	HRESULT (WINAPI *SHCoCreateInstance_PROC)( LPVOID lpszReserved, REFCLSID clsid, LPUNKNOWN pUnkUnknown, REFIID iid, LPVOID *ppv );
 
 		SHCoCreateInstance_PROC	lpfnSHCoCreateInstance = (SHCoCreateInstance_PROC)GetProcAddress( hModShell, MAKEINTRESOURCE(102) );
 

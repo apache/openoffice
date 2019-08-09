@@ -976,7 +976,7 @@ throw ( NoSuchElementException, RuntimeException )
         }
         else
         {
-            // variable in text but unknwon!
+            // variable in text but unknown!
             if ( bSubstRequired )
             {
                 rtl::OUString aMsg( RTL_CONSTASCII_USTRINGPARAM( "Unknown variable found!" ));
