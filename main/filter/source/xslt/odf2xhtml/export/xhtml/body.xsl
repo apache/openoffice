@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,21 +8,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
+
 <!--
-	For further documentation and updates visit http://xml.openoffice.org/odf2xhtml
+	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xt="http://www.jclark.com/xt" xmlns:common="http://exslt.org/common" xmlns:xalan="http://xml.apache.org/xalan" exclude-result-prefixes="chart config dc dom dr3d draw fo form math meta number office ooo oooc ooow script style svg table text xforms xlink xsd xsi xt common xalan" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,7 +70,7 @@
 			<xsl:for-each select="key('masterPage','count')">
 				<!-- Check if this style is being used in the body -->
 				<xsl:if test="key('elementUsingStyle', ../@style:name)">
-					<!-- Check every master-page-name if it is not emtpy and return as ';' separated list  -->
+					<!-- Check every master-page-name if it is not empty and return as ';' separated list -->
 					<xsl:if test="string-length(../@style:master-page-name) &gt; 0">
 						<xsl:value-of select="../@style:master-page-name"/>;
 					</xsl:if>
@@ -77,7 +78,7 @@
 			</xsl:for-each>
 		</xsl:variable>
 
-		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name  -->
+		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name -->
 		<xsl:variable name="pageLayoutName" select="key('masterPageElements', substring-before($masterPageNames,';'))/@style:page-layout-name"/>
 		<xsl:variable name="pagePropertiesRTF">
 			<xsl:choose>
@@ -85,7 +86,7 @@
 					<xsl:copy-of select="$globalData/styles-file/*/office:automatic-styles/style:page-layout[1]/style:page-layout-properties"/>
 				</xsl:when>
 				<xsl:otherwise>
-					<!-- Find the according style:page-layout and store the properties in a variable  -->
+					<!-- Find the according style:page-layout and store the properties in a variable -->
 					<xsl:copy-of select="key('pageLayoutElements', $pageLayoutName)/style:page-layout-properties"/>
 				</xsl:otherwise>
 			</xsl:choose>
@@ -147,7 +148,7 @@
 
 			<!-- multiple backgroundimages for different page styles (never used in html) -->
 			<xsl:variable name="backgroundImage" select="$pageProperties/style:page-layout-properties/style:background-image"/>
-			<!-- page margins & background image  -->
+			<!-- page margins & background image -->
 			<xsl:if test="$pageWidth or $pageProperties/style:page-layout-properties/@fo:* or $backgroundImage/@xlink:href">
 				<xsl:attribute name="style">
 					<xsl:if test="$pageWidth">
@@ -195,7 +196,7 @@
 	<xsl:template match="office:body/*">
 		<xsl:param name="globalData"/>
 
-		<!-- not using of 'apply-styles-and-content' as the content table information migth have been added to 'globalData' variable -->
+		<!-- not using of 'apply-styles-and-content' as the content table information might have been added to 'globalData' variable -->
 		<xsl:apply-templates select="@text:style-name | @draw:style-name | @draw:text-style-name | @table:style-name"><!-- | @presentation:style-name -->
 			<xsl:with-param name="globalData" select="$globalData"/>
 		</xsl:apply-templates>
@@ -334,12 +335,12 @@
 		<xsl:param name="globalData"/>
 		<!-- The footnote symbol is the prefix for a footnote in the footer -->
 		<xsl:param name="footnotePrefix"/>
-		<!-- 1) In ODF sometimes the followig children are nested
+		<!-- 1) In ODF sometimes the following children are nested
 				<text:p>
 					<draw:frame>
 						<draw:text-box>
 							<text:p>
-				Which results in a paragraphs (the last text:p) having a paragraph as its anchestor.
+				Which results in a paragraphs (the last text:p) having a paragraph as its ancestor.
 				In HTML a 'p' can only have inline documents (no other 'p' as children'),
 				a 'div' will be given for the ancestors instead.
 			 2) ODF images are embedded in a paragraph, but CSS is not able to express a horizontal alignment for an HTML image (text:align is only valid for block elements).
@@ -350,7 +351,7 @@
 		<xsl:variable name="childText"><xsl:apply-templates mode="getAllTextChildren"/></xsl:variable>
 		<xsl:choose>
 			<xsl:when test="name() = 'text:p' and not(*) and (normalize-space($childText) = '')">
-				<!-- WorkAround: Test if the empty paragraph was added after an image, which OOO often does -->
+				<!-- WorkAround: Test if the empty paragraph was added after an image, which AOO often does -->
 				<xsl:variable name="isFollowingImage">
 					<xsl:call-template name="follows-empty-paragraphs-and-image">
 						<xsl:with-param name="precedingElement" select="preceding-sibling::node()[1]"/>
@@ -364,7 +365,7 @@
 				</xsl:if>
 
 			</xsl:when>
-			<xsl:when test="draw:frame and ((normalize-space($childText) != '')  or (((count(*) - count(text:soft-page-break)) &gt; 1)))">
+			<xsl:when test="draw:frame and ((normalize-space($childText) != '') or (((count(*) - count(text:soft-page-break)) &gt; 1)))">
 				<!-- If there is a 'draw:frame' child with text (not being whitespace alone) and more than the draw:frame alone and
 					not the draw:frame and a soft-page-break alone (which is quite often) -->
 
@@ -393,15 +394,15 @@
 						<!-- 2DO for me (Svante) - Not used, uncertain 4now..
 						<xsl:with-param name="pageMarginLeft">
 							<xsl:call-template name="getPageMarginLeft"/>
-						 </xsl:with-param>-->
+						</xsl:with-param>-->
 					</xsl:apply-templates>
 				</xsl:element>
 				<!-- after the last draw:frame sibling the CSS float is disabled
-					&#160; is an unbreakable whitespace to give conent to the element and force a browser not to ignore the element -->
+					&#160; is an unbreakable whitespace to give content to the element and force a browser not to ignore the element -->
 				<div style="clear:both; line-height:0; width:0; height:0; margin:0; padding:0;">&#160;</div>
 			</xsl:when>
 			<xsl:when test="text:tab and not(ancestor::text:index-body)">
-				<!-- If there is a tabulator (ie. text:tab) within a paragraph, a heuristic for ODF tabulators creates a
+				<!-- If there is a tabulator (i.e. text:tab) within a paragraph, a heuristic for ODF tabulators creates a
 					span for every text:tab embracing the following text nodes aligning them according to the tabulator.
 					A line break or another text:tab starts a new text:span, line break even the tab counter for the line.
 				-->
@@ -438,7 +439,7 @@
 			<xsl:otherwise>
 				<xsl:choose>
 					<!-- !!Check if paragraph is empty!!
-						OOo writes out empty paragraphs layouted behind an image (= draw:image within draw:frame)
+						AOO writes out empty paragraphs layouted behind an image (= draw:image within draw:frame)
 						those have to be neglected in HTML -->
 					<xsl:when test="name() = 'text:p' and not($childText) and not(*)">
 						<xsl:variable name="isFollowingImage">
@@ -464,7 +465,7 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- Return the text  -->
+	<!-- Return the text -->
 	<xsl:template match="text()" mode="getAllTextChildren">
 		<xsl:value-of select="."/>
 	</xsl:template>
@@ -479,12 +480,12 @@
 		<xsl:param name="parentMarginLeft" />
 		<xsl:param name="pageMarginLeft" />
 
-<!-- 2DO: EXCHANGE FOLLOING SIBLING BY VARIABLE -->
+<!-- 2DO: EXCHANGE FOLLOWING SIBLING BY VARIABLE -->
 		<xsl:variable name="followingSiblingNode" select="following-sibling::node()[1]"/>
 
 
 		<!--
-			Every tabulator indents its following content, encapuslated in a span
+			Every tabulator indents its following content, encapsulated in a span
 			element.
 
 			This template have two modes:
@@ -504,7 +505,7 @@
 
 		<xsl:choose>
 			<xsl:when test="name() = 'text:tab'">
-				<!-- every frame sibling have to be incapuslated within a div with left indent  -->
+				<!-- every frame sibling have to be encapsulated within a div with left indent -->
 				<xsl:element name="span">
 					<xsl:choose>
 						<xsl:when test="count($tabStops/style:tab-stop) &gt; 0 and count($tabStops/style:tab-stop) &lt; 3">
@@ -635,17 +636,17 @@
 		<xsl:apply-templates select="$tabStops/style:tab-stop[$tabCount]/@style:type"/>
 	</xsl:template>
 
-	<!-- OOo writes out empty paragraphs layouted behind an image,
+	<!-- AOO writes out empty paragraphs layouted behind an image,
 		those have to be neglected in HTML
 	This method checks if an empty paragraph is of that kind! -->
 	<xsl:template name="follows-empty-paragraphs-and-image">
 		<xsl:param name="precedingElement" />
 		<xsl:param name="elementToCheck" select="1"/>
 		<xsl:choose>
-			<!-- OOo writes out empty paragraphs layouted behind the image,
+			<!-- AOO writes out empty paragraphs layouted behind the image,
 				those have to be neglected in HTML
 			<xsl:when test="name() = 'text:p' and (normalize-space($childText) = '')">                         -->
-				<!-- WorkAround: Test if the empty paragraph was added after an image, which OOO often does -->
+				<!-- WorkAround: Test if the empty paragraph was added after an image, which AOO often does -->
 			<xsl:when test="(name($precedingElement) = 'text:p' and not($precedingElement/text()) and not($precedingElement/*))">
 				<xsl:call-template name="follows-empty-paragraphs-and-image">
 					<xsl:with-param name="precedingElement" select="preceding-sibling::*[$elementToCheck]"/>
@@ -673,7 +674,7 @@
 
 		<xsl:element name="{$elementName}">
 			<xsl:choose>
-				<!-- in ODF borders of paragraphs will be merged by default. Merging means the adjactend paragraphs are building a unit,
+				<!-- in ODF borders of paragraphs will be merged by default. Merging means the adjacent paragraphs are building a unit,
 					where only the first and the last will have have a border to the surrounding (top / bottom border)
 												<xsl:variable name="precedingParagraphStyle" select="preceding-sibling::*[1][name() = 'text:p']/@text:style-name"/>
 					<xsl:variable name="followingParagraphStyle" select="following-sibling::*[1][name() = 'text:p']/@text:style-name"/>
@@ -734,8 +735,8 @@
 		<!-- the footnote symbol is the prefix for a footnote in the footer -->
 		<xsl:param name="footnotePrefix" />
 
-			<!-- empty paragraph tags does not provoke an carridge return,
-				therefore an non breakable space (&nbsp) have been inserted.-->
+			<!-- empty paragraph tags does not provoke a carriage return,
+				therefore a non breakable space (&nbsp;) has been inserted.-->
 		<xsl:choose>
 			<xsl:when test="node()">
 				<xsl:call-template name="apply-styles-and-content">
@@ -764,14 +765,14 @@
 		<xsl:text>;</xsl:text>
 	</xsl:template>
 
-	<!-- As soon a frame is within a paragraph (text:p) or page:frame, every child element is  floating (CSS) and worked out in sequence.
+	<!-- As soon as a frame is within a paragraph (text:p) or page:frame, every child element is floating (CSS) and worked out in sequence.
 	Accumulating prior frame width and adding parent's left margin -->
 	<!-- Matching all elements and text beyond a paragraph/text:page which are sibling of a draw:frame -->
 	<xsl:template match="* | text()" mode="frameFloating">
 		<xsl:param name="globalData"/>
 		<xsl:param name="previousFrameWidths" select="0"/>
 		<xsl:param name="previousFrameHeights" select="0" />
-		<!-- it becomes true for siblings after a draw:frame  -->
+		<!-- it becomes true for siblings after a draw:frame -->
 		<xsl:param name="createDiv" select="false()"/>
 		<xsl:param name="noDivBefore" select="true()"/>
 		<xsl:param name="leftPosition" />
@@ -796,8 +797,8 @@
 				<xsl:choose>
 					<xsl:when test="$createDiv and normalize-space(.) != ''">
 						<!-- every following frame sibling till the next draw:frame
-							have to be incapuslated within a div with left indent.
-							To be moved altogether arcording the indent (usually right) -->
+							have to be encapsulated within a div with left indent.
+							To be moved altogether according the indent (usually right) -->
 						<xsl:comment>Next 'div' added for floating.</xsl:comment>
 						<xsl:element name="div">
 							<xsl:attribute name="style">
@@ -808,7 +809,7 @@
 							<xsl:apply-templates select=".">
 								<xsl:with-param name="globalData" select="$globalData"/>
 							</xsl:apply-templates>
-							<!-- if it is a frame sibling it will be NOT incapuslated within the div (as already within one) -->
+							<!-- if it is a frame sibling it will NOT be encapsulated within the div (as already within one) -->
 							<xsl:if test="not($nextSiblingIsFrame)">
 								<xsl:apply-templates select="following-sibling::node()[1]" mode="frameFloating">
 									<xsl:with-param name="globalData" select="$globalData"/>
@@ -824,7 +825,7 @@
 						</xsl:element>
 						<xsl:copy-of select="$frameAlignedToParagraphWithSvgY"/>
 
-						<!-- Other draw:frame will be created outside of the div element  -->
+						<!-- Other draw:frame will be created outside of the div element -->
 						<xsl:apply-templates select="following-sibling::draw:frame[1]" mode="frameFloating">
 							<xsl:with-param name="globalData" select="$globalData"/>
 							<xsl:with-param name="previousFrameWidths" select="$previousFrameWidths"/>
@@ -857,12 +858,12 @@
 		</xsl:choose>
 	</xsl:template>
 
-	<!-- A XML node other than text or element (e.g. commment) should not stop the recursion  -->
+	<!-- A XML node other than text or element (e.g. comment) should not stop the recursion -->
 	<xsl:template match="comment()" mode="frameFloating">
 		<xsl:param name="globalData"/>
 		<xsl:param name="previousFrameWidths" select="0"/>
 		<xsl:param name="previousFrameHeights" select="0" />
-		<!-- it becomes true for siblings after a draw:frame  -->
+		<!-- it becomes true for siblings after a draw:frame -->
 		<xsl:param name="createDiv" select="false()"/>
 		<xsl:param name="noDivBefore" select="true()"/>
 		<xsl:param name="leftPosition" />
@@ -905,16 +906,16 @@
 			<xsl:for-each select="key('masterPage','count')">
 					<!-- Check if this style is being used in the body -->
 				<xsl:if test="key('elementUsingStyle', ../@style:name)">
-						<!-- Check every master-page-name if it is not emtpy and return as ';' separated list  -->
+						<!-- Check every master-page-name if it is not empty and return as ';' separated list -->
 					<xsl:if test="string-length(../@style:master-page-name) &gt; 0">
 						<xsl:value-of select="../@style:master-page-name"/>;
 					</xsl:if>
 				</xsl:if>
 			</xsl:for-each>
 		</xsl:variable>
-		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name  -->
+		<!-- Take the first of the masterpage list and get the according style:master-page element and find the @style:page-layout-name -->
 		<xsl:variable name="pageLayoutName" select="key('masterPageElements', substring-before($masterPageNames,';'))/@style:page-layout-name"/>
-		 <!-- Find the according style:page-layout and store the properties in a variable  -->
+		 <!-- Find the according style:page-layout and store the properties in a variable -->
 		<xsl:variable name="pageMarginLeftAttr" select="key('pageLayoutElements', $pageLayoutName)/style:page-layout-properties/@fo:margin-left"/>
 		<xsl:choose>
 			<xsl:when test="$pageMarginLeftAttr">
@@ -989,8 +990,8 @@
 		<!-- if the frame is anchored on a paragraph -->
 		<xsl:if test="@text:anchor-type='paragraph'">
 			<xsl:comment>Next 'div' is emulating the top hight of a draw:frame.</xsl:comment>
-			<!-- When the svg:y is set relativ to the paragraph content, the best way to emulate a positive height,
-			 is to add an invisbile division between with a height.
+			<!-- When the svg:y is set relative to the paragraph content, the best way to emulate a positive height,
+			 is to add an invisible division between with a height.
 			 Often text will flow into this 'gap', which is handled separately!
 			 -->
 			<xsl:if test="$svgY &gt; 0">
@@ -1006,7 +1007,7 @@
 		</xsl:if>
 
 
-	  <!--
+		<!--
 		<xsl:variable name="followingSibling" select="following-sibling::node()[1]"/>
 		<xsl:choose>
 		   HEURISTIC: if the frame is anchored on a paragraph and the above gab is big enough to hold a text line,
@@ -1154,10 +1155,10 @@
 	<xsl:template match="text:h">
 		<xsl:param name="globalData"/>
 
-		<!-- no creation of empty headings (without text content)   -->
+		<!-- no creation of empty headings (without text content) -->
 		<xsl:if test="text() or descendant::text()">
 			<!-- The URL linking of an table-of-content is due to a bug (cp. bug id# 102311) not mapped as URL in the XML.
-				 Linking of the table-of-content can therefore only be archieved by a work-around in HTML -->
+				 Linking of the table-of-content can therefore only be achieved by a work-around in HTML -->
 			<xsl:call-template name="create-heading">
 				<xsl:with-param name="globalData" select="$globalData"/>
 			</xsl:call-template>
@@ -1204,8 +1205,8 @@
 		<xsl:choose>
 			<xsl:when test="$globalData/office:styles/text:outline-style/text:outline-level-style[@text:level = current()/@text:outline-level]/@style:num-format != ''">
 
-				<!-- Every heading element will get an unique anchor for its file, from its hiearchy level and name:
-					 For example:  The heading title 'My favorite heading' might get <a name="1_2_2_My_favorite_heading" /> -->
+				<!-- Every heading element will get an unique anchor for its file, from its hierarchy level and name:
+					 For example: The heading title 'My favorite heading' might get <a name="1_2_2_My_favorite_heading" /> -->
 				<!-- creating an anchor for referencing the heading (e.g. from content table) -->
 				<xsl:variable name="headingNumber">
 					<xsl:call-template name="get-heading-number">
@@ -1470,7 +1471,7 @@
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
-				<!-- images are embedded in a paragraph, but are in CSS not able to express a horizontal alignment for themself.
+				<!-- images are embedded in a paragraph, but are in CSS not able to express a horizontal alignment for themselves.
 					A 'div' element taking over the image style would solve that problem, but is invalid as child of a paragraph -->
 				<xsl:element name="p">
 					<xsl:apply-templates select="@draw:style-name">
@@ -1714,7 +1715,7 @@
 							<xsl:value-of select="$listRestart"/>
 						</xsl:when>
 						<xsl:otherwise>
-							<!-- descdendants restart their list numbering, when an ancestor is not empty -->
+							<!-- descendants restart their list numbering, when an ancestor is not empty -->
 							<xsl:value-of select="not($isEmptyList)"/>
 						</xsl:otherwise>
 					</xsl:choose>
@@ -1850,7 +1851,7 @@
 				<xsl:choose>
 					<xsl:when test="$isListHeader">0</xsl:when>
 					<xsl:when test="$isEmptyList">
-						<!--  An empty list item (no text:h/text:p as child), will not count as item and does not increment the count.  -->
+						<!-- An empty list item (no text:h/text:p as child), will not count as item and does not increment the count. -->
 						<xsl:variable name="tempItemNumber">
 							<xsl:choose>
 								<!-- siblings will be incremented by one -->
@@ -1918,11 +1919,11 @@
 				<!--
 					A numbered label (e.g. 2.C.III) is created for every text:list-item/header.
 					Above list levels are listed in the label, if the list-style requires this. Levels are separated by a '.'
-					Formatation is dependent for every list level depth.
-					The label is passed from anchestor text:list-item/header and if requrired truncated.
+					Formatting is dependent for every list level depth.
+					The label is passed from ancestor text:list-item/header and if required truncated.
 					The prefix/suffix (as well list level dependent) comes before and after the complete label (after truncation)
 				-->
-				<!-- Numbered label will be generated  -->
+				<!-- Numbered label will be generated -->
 				<xsl:call-template name="createItemLabel">
 					<xsl:with-param name="itemNumber" select="$itemNumberNew"/>
 					<xsl:with-param name="itemLabel" select="$itemLabel"/>
@@ -1976,7 +1977,7 @@
 									<!-- Numbering is being done by this transformation creating a HTML span representing the number label
 										 The html:span represents the list item/header label (e.g. 1.A.III)
 										 As the html:span is usually a inline element is formatted by CSS as block element to use width upon it,
-										 to disable the caridge return float:left is used and later neglected -->
+										 to disable the carriage return float:left is used and later neglected -->
 									<xsl:element name="span">
 										<xsl:if test="$listLevelStyle/@text:style-name">
 											<xsl:attribute name="class">
@@ -2154,7 +2155,7 @@
 	<xsl:key name="getListItemsByStyle" use="ancestor::text:list/@text:style-name" match="text:list-item | text:list-header"/>
 
 
-	<!-- The Numbering start value (or offset from regular counteing) is used at the first item of offset,
+	<!-- The Numbering start value (or offset from regular counting) is used at the first item of offset,
 	but have to be reused on following items with no text:start-value -->
 	<xsl:template name="getItemNumber">
 		<xsl:param name="listLevel"/>
@@ -2200,7 +2201,7 @@
 			<xsl:when test="($precedingListItemOfSameStyle and $precedingListItemOfSameLevelAndStyle) or ($precedingListItemOfSameStyle and $listStyle/text:list-style/@text:consecutive-numbering)">
 				<xsl:for-each select="$precedingListItemOfSameStyle">
 					<xsl:choose>
-						<!-- if it is a higher list level element  -->
+						<!-- if it is a higher list level element -->
 						<xsl:when test="$listStyle/text:list-style/@text:consecutive-numbering">
 
 							<xsl:call-template name="countListItem">
@@ -2735,9 +2736,9 @@
 	</xsl:template>
 
 
-	<!-- Hidden text dependend on Office variables:
+	<!-- Hidden text dependent on Office variables:
 		 The text is not shown, if condition is 'true'.
-		 Implemented solely for conditons as '<VARIABLE>==0' or '<VARIABLE>==1'
+		 Implemented solely for conditions as '<VARIABLE>==0' or '<VARIABLE>==1'
 	-->
 	<xsl:key match="text:variable-set" name="varSet" use="@text:name"/>
 	<xsl:template match="text:hidden-text">
@@ -2903,7 +2904,7 @@
 		</xsl:variable>
 
 		<xsl:element name="span">
-			 <xsl:attribute name="style">margin-left:<xsl:value-of select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@text:style-name]/*/style:tab-stops/style:tab-stop[$tabNo]/@style:position"/>;</xsl:attribute>
+			<xsl:attribute name="style">margin-left:<xsl:value-of select="$globalData/all-doc-styles/style[@style:name = current()/parent::*/@text:style-name]/*/style:tab-stops/style:tab-stop[$tabNo]/@style:position"/>;</xsl:attribute>
 		</xsl:element>
 	</xsl:template>
 
