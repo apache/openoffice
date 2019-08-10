@@ -188,7 +188,7 @@
 
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <target name="uno-debug" description="Debugss UNO extension package in Target Office" depends="uno-package">
+    <target name="uno-debug" description="Debugs UNO extension package in Target Office" depends="uno-package">
 		<!-- security fail for executing this without netbeans -->
         <fail unless="netbeans.home">This target can only run inside the NetBeans IDE.</fail>
 		<!-- start debugger and get connection address jpda.address -->
