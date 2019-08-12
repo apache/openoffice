@@ -57,8 +57,12 @@ TAGS
 /*/cscope.po.out
 
 # externals
-/main/external/unowinreg/unowinreg.dll
+/main/external/dbghelp/*
+/main/external/gdiplus/*
 /main/external/msvcp90/*
+/main/external/msvcp100/*
+/main/external/unowinreg/unowinreg.dll
+/main/external/vcredist/*
 
 # $INPATH output directories
 /*/*/unxlng??
