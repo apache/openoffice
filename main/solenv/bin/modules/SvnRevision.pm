@@ -21,36 +21,8 @@
 
 package SvnRevision;
 
-
-sub DetectRevisionIdFromGit ($)
-{
-    my $path = shift;
-    
-    my $id = undef;
-
-    open my $proc, "cd $path && git show HEAD 2>\&1|";
-    while (<$proc>)
-    {
-        if (/^fatal: Not a git repository/)
-        {
-            # Not in a GIT repository.
-            last;
-        }
-        elsif (/^\s*git-svn-id:.*?@([0-9]+)\s+/)
-        {
-            $id = $1;
-            last;
-        }
-    }
-    close $proc;
-
-    return $id;
-}
-
-
-
-
-sub DetectRevisionId ($)
+#old SVN code unchanged
+sub DetectRevisionIdFromSVN ($)
 {
     my $path = shift;
 
@@ -75,6 +47,27 @@ sub DetectRevisionId ($)
         }
     }
     close $proc;
+
+    return $id;
+}
+
+
+sub DetectRevisionId ($)
+{
+    my $path = shift;
+
+    my $id = undef;
+    #test if path points to a git repository. if true return is 0 else positive number.
+    my $isNotGit= `[ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1`;
+    if ($isNotGit)
+    {
+    	$id = DetectRevisionIdFromSVN ($path);
+    }
+    else
+    {
+    	#returns directly the hash of the current checkout.
+    	$id = `git log -1 --pretty=format:%h`;
+    }
 
     return $id;
 }
