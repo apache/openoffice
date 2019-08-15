@@ -1,12 +1,11 @@
 
-Apache OpenOffice (AOO)
-=======================
+# Apache OpenOffice (AOO)
 
     The Apache OpenOffice project provides a full featured office productivity suite
     based on open standards. It is the continuation of the OpenOffice.org project.
 
     For detailed information about Apache OpenOffice please visit
-    [https://openoffice.apache.org/](https://openoffice.apache.org/)
+    https://openoffice.apache.org/
 
     Apache OpenOffice is a very large project with many components and mainly
     implemented in C++ but also in Java, Perl, Python and other languages.
@@ -22,8 +21,7 @@ Apache OpenOffice (AOO)
     OpenOffice is used by millions of users worldwide and with more than 275 million
     downloads it is one of the most successful open source projects.
 
-Getting the latest sources via Git
-==================================
+# Getting the latest sources via Git
 
     You can always checkout the latest source via Git using the following
     command:
@@ -32,8 +30,7 @@ Getting the latest sources via Git
 
     For further information visit https://openoffice.apache.org/source.html
 
-Building Apache OpenOffice
-==========================
+# Building Apache OpenOffice
 
     Apache OpenOffice is a big project and depends on several other external libraries.
     The list of prerequisites varies for the different platforms.
