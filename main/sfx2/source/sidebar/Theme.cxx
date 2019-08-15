@@ -402,7 +402,7 @@ void Theme::UpdateTheme (void)
 
 		// Gradient style
 		Color aGradientStop2 (aBaseBackgroundColor);
-		aGradientStop2.IncreaseLuminance(17);
+		aGradientStop2.IncreaseLuminance(0);
 		Color aToolBoxBorderColor (aBaseBackgroundColor);
 		aToolBoxBorderColor.DecreaseLuminance(25);
 		setPropertyValue(

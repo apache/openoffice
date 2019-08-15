@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,18 +7,17 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
-
 
 
 
@@ -37,15 +36,15 @@
 
 gb_Library__get_linktargetname = Library/$(call gb_Library_get_filename,$(1))
 
-# EVIL: gb_StaticLibrary and gb_Library need the same deliver rule because they are indistinguishable on windows
+# EVIL: gb_StaticLibrary and gb_Library need the same deliver rule because they are indistinguishable on Windows
 .PHONY : $(WORKDIR)/Clean/OutDir/lib/%$(gb_Library_PLAINEXT)
 $(WORKDIR)/Clean/OutDir/lib/%$(gb_Library_PLAINEXT) :
 	$(call gb_Helper_abbreviate_dirs,\
 		rm -f $(OUTDIR)/lib/$*$(gb_Library_PLAINEXT) \
 			$(AUXTARGETS))
 
-# EVIL: gb_StaticLibrary and gb_Library need the same deliver rule because they are indistinguishable on windows
-$(gb_Library_OUTDIRLOCATION)/%$(gb_Library_PLAINEXT) : 
+# EVIL: gb_StaticLibrary and gb_Library need the same deliver rule because they are indistinguishable on Windows
+$(gb_Library_OUTDIRLOCATION)/%$(gb_Library_PLAINEXT) :
 	$(call gb_Helper_abbreviate_dirs,\
 		$(call gb_Deliver_deliver,$<,$@) \
 			$(foreach target,$(AUXTARGETS), && $(call gb_Deliver_deliver,$(dir $<)/$(notdir $(target)),$(target))))
@@ -83,13 +82,13 @@ $(call gb_Library_get_clean_target,$(1)) : $(call gb_ComponentTarget_get_clean_t
 endef
 
 gb_Library__get_componentprefix = \
-    $(call gb_Library__get_layer_componentprefix,$(call \
-        gb_Library_get_layer,$(1)))
+	$(call gb_Library__get_layer_componentprefix,$(call \
+		gb_Library_get_layer,$(1)))
 
 gb_Library__get_layer_componentprefix = \
-    $(patsubst $(1):%,%,$(or \
-        $(filter $(1):%,$(gb_Library_COMPONENTPREFIXES)), \
-        $(call gb_Output_error,no ComponentTarget native prefix for layer '$(1)')))
+	$(patsubst $(1):%,%,$(or \
+		$(filter $(1):%,$(gb_Library_COMPONENTPREFIXES)), \
+		$(call gb_Output_error,no ComponentTarget native prefix for layer '$(1)')))
 
 
 define gb_Library__forward_to_Linktarget
