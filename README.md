@@ -3,8 +3,7 @@
 The Apache OpenOffice project (AOO) provides a full featured office productivity suite based on open standards.\
 It is the continuation of the OpenOffice.org project.
 
-For detailed information about Apache OpenOffice please visit
-[https://openoffice.apache.org/](https://openoffice.apache.org/).
+For detailed information about Apache OpenOffice please visit the [Project Website](https://openoffice.apache.org/).
 
 Apache OpenOffice is a very large project with many components and mainly implemented in C++ but also in Java, Perl, Python and other languages.
 
@@ -31,7 +30,7 @@ For further information visit [https://openoffice.apache.org/source.html](https:
 Apache OpenOffice is a big project and depends on several other external libraries.\
 The list of prerequisites varies for the different platforms.
 
-A comprehensive and complete building guide can be found in the [project Wiki](https://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO).
+A comprehensive and complete building guide can be found in the [Project Wiki](https://wiki.openoffice.org/wiki/Documentation/Building_Guide_AOO).
 
 With having all prerequisites in place you can simply run
 ```
