@@ -35,11 +35,19 @@
   <vendor name="IBM Corporation">
     <minVersion>1.5.0</minVersion>
   </vendor>
+  <vendor name="AdoptOpenJDK">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
+  <vendor name="OpenJDK">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
  </vendorInfos>
 
  <plugins>
   <library vendor="Oracle Corporation">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavap.dll</library>
   <library vendor="Sun Microsystems Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavap.dll</library>
   <library vendor="IBM Corporation">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavap.dll</library>
+  <library vendor="AdoptOpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavap.dll</library>
+  <library vendor="OpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavap.dll</library>
  </plugins>
 </javaSelection>
