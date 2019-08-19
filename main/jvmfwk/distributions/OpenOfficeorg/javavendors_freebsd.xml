@@ -38,6 +38,12 @@
   <vendor name="Free Software Foundation, Inc.">
     <minVersion>1.5.0</minVersion>
   </vendor>
+  <vendor name="AdoptOpenJDK">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
+  <vendor name="OpenJDK">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
  </vendorInfos>
 
  <plugins>
@@ -45,5 +51,7 @@
   <library vendor="Sun Microsystems Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
   <library vendor="The FreeBSD Foundation">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
   <library vendor="Free Software Foundation, Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
+  <library vendor="AdoptOpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
+  <library vendor="OpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
  </plugins>
 </javaSelection>

@@ -47,6 +47,9 @@
   <vendor name="AdoptOpenJDK">
     <minVersion>1.8.0</minVersion>
   </vendor>
+  <vendor name="OpenJDK">
+    <minVersion>1.8.0</minVersion>
+  </vendor>
  </vendorInfos>
 
  <plugins>
@@ -57,5 +60,6 @@
   <library vendor="Free Software Foundation, Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
   <library vendor="BEA Systems, Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
   <library vendor="AdoptOpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
+  <library vendor="OpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.so</library>
  </plugins>
 </javaSelection>
