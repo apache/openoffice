@@ -1018,7 +1018,28 @@ rtl::Reference<VendorBase> getJREInfoByPath(
                 break;
             }
         }
-    }
+        if ( !ret.is() )
+        {
+            // As of Java 8u222 the vendor name can be anything, so try the most generic one
+            OUString genericVendorName(RTL_CONSTASCII_USTRINGPARAM("OpenJDK"));
+            for ( sal_Int32 c = 0;
+                  gVendorMap[c].sVendorName != NULL; ++c )
+            {
+                OUString sNameMap(gVendorMap[c].sVendorName, strlen(gVendorMap[c].sVendorName),
+                                  RTL_TEXTENCODING_ASCII_US);
+                if (sNameMap.equals(genericVendorName))
+                {
+                    for (vector<pair<OUString, OUString> >::iterator i = props.begin(); i != props.end(); i++)
+                    {
+                        if (sVendor.equals(i->first))
+                            i->second = genericVendorName;
+                    }
+                    ret = createInstance(gVendorMap[c].createFunc, props);
+                    break;
+                }
+            }
+        }
+    }    
     if (ret.is() == false)
         vecBadPaths.push_back(sFilePath);
     else

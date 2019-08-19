@@ -38,6 +38,9 @@
  <vendor name="AdoptOpenJDK">
     <minVersion>1.8.0</minVersion>
  </vendor>
+ <vendor name="OpenJDK">
+    <minVersion>1.8.0</minVersion>
+ </vendor>
  </vendorInfos>
 
  <plugins>
@@ -45,5 +48,6 @@
   <library vendor="Apple Computer, Inc.">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dylib</library>
   <library vendor="Oracle Corporation">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dylib</library>
   <library vendor="AdoptOpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dylib</library>
+  <library vendor="OpenJDK">vnd.sun.star.expand:$URE_INTERNAL_LIB_DIR/sunjavaplugin.dylib</library>
  </plugins>
 </javaSelection>
