@@ -41,6 +41,7 @@
 #include <com/sun/star/script/provider/XScriptProviderFactory.hpp>
 #include <com/sun/star/script/provider/ScriptFrameworkErrorType.hpp>
 
+#include <rtl/uri.hxx>
 #include <sfx2/objsh.hxx>
 #include <sfx2/frame.hxx>
 #include <sfx2/sfxdlg.hxx>
@@ -158,8 +159,11 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
     {
         try
         {
-            bool bIsDocumentScript = ( aURL.Complete.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
-                // TODO: isn't this somewhat strange? This should be a test for a location=document parameter, shouldn't it?
+printf("ScriptProtocolHandler::dispatchWithNotification()\n");
+            ::rtl::OUString xStringUri = ::rtl::Uri::decode( aURL.Complete,
+                rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
+            bool bIsDocumentScript = ( xStringUri.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
+printf("URI is %s\n", ::rtl::OUStringToOString (xStringUri, RTL_TEXTENCODING_UTF8).pData->buffer);
 
             if ( bIsDocumentScript )
             {
