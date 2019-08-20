@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include "precompiled_framework.hxx"
 
 //_________________________________________________________________________________________________________________
-//	my own includes
+// my own includes
 //_________________________________________________________________________________________________________________
 
 #ifndef __FRAMEWORK_FRAMECONTAINER_HXX_
@@ -39,7 +39,7 @@
 #endif
 
 //_________________________________________________________________________________________________________________
-//	interface includes
+// interface includes
 //_________________________________________________________________________________________________________________
 
 #ifndef _COM_SUN_STAR_FRAME_FRAMESEARCH_FLAG_HPP_
@@ -47,38 +47,38 @@
 #endif
 
 //_________________________________________________________________________________________________________________
-//	includes of other projects
+// includes of other projects
 //_________________________________________________________________________________________________________________
 #include <vcl/svapp.hxx>
 
 //_________________________________________________________________________________________________________________
-//	namespace
+// namespace
 //_________________________________________________________________________________________________________________
 
 namespace framework{
 
 //_________________________________________________________________________________________________________________
-//	non exported const
+// non exported const
 //_________________________________________________________________________________________________________________
 
 //_________________________________________________________________________________________________________________
-//	non exported definitions
+// non exported definitions
 //_________________________________________________________________________________________________________________
 
 //_________________________________________________________________________________________________________________
-//	declarations
+// declarations
 //_________________________________________________________________________________________________________________
 
 /**-***************************************************************************************************************
     @short      initialize an empty container
     @descr      The container will be empty then - special features (e.g. the async quit mechanism) are disabled.
 
-    @threadsafe not necessary - its not a singleton
+    @threadsafe not necessary - it's not a singleton
     @modified   01.07.2002 14:42,as96863
  *****************************************************************************************************************/
 FrameContainer::FrameContainer()
         // initialize base classes first.
-        // Order is necessary for right initilization of his and OUR member ... m_aLock
+        // Order is necessary for right initilization of his and OUR member... m_aLock
         : ThreadHelpBase ( &Application::GetSolarMutex()                  )
 /*DEPRECATEME
         , m_bAsyncQuit   ( sal_False                                      ) // default must be "disabled"!
@@ -89,9 +89,9 @@ FrameContainer::FrameContainer()
 
 /**-***************************************************************************************************************
     @short      deinitialize may a filled container
-    @descr      Special features (if the currently are running) will be dsiabled and we free all used other ressources.
+    @descr      Special features (if the currently are running) will be disabled and we free all used other resources.
 
-    @threadsafe not necessary - its not a singleton
+    @threadsafe not necessary - it's not a singleton
     @modified   01.07.2002 14:43,as96863
  *****************************************************************************************************************/
 FrameContainer::~FrameContainer()
@@ -103,7 +103,7 @@ FrameContainer::~FrameContainer()
 
 /**-***************************************************************************************************************
     @short      append a new frame to the container
-    @descr      We accept the incoming frame only, if it is a valid reference and dosnt exist already.
+    @descr      We accept the incoming frame only, if it's a valid reference and doesn't exist already.
 
     @param      xFrame
                     frame, which should be added to this container
@@ -151,7 +151,7 @@ void FrameContainer::remove( const css::uno::Reference< css::frame::XFrame >& xF
         if (m_xActiveFrame==xFrame)
             m_xActiveFrame = css::uno::Reference< css::frame::XFrame >();
 
-        // We don't need the write lock any longer ...
+        // We don't need the write lock any longer...
         // downgrade to read access.
         aWriteLock.downgrade();
 /*DEPRECATEME
@@ -173,8 +173,8 @@ void FrameContainer::remove( const css::uno::Reference< css::frame::XFrame >& xF
     @param      xFrame
                     reference to the queried frame
 
-    @return     <TRUE/> if frame is oart of this container
-                <FALSE/> otherwhise
+    @return     <TRUE/> if frame is part of this container
+                <FALSE/> otherwise
 
     @threadsafe yes
     @modified   01.07.2002 14:55,as96863
@@ -199,10 +199,10 @@ void FrameContainer::clear()
     // SAFE {
     WriteGuard aWriteLock( m_aLock );
 
-	// Clear the container ...
+	// Clear the container...
     m_aContainer.clear();
-	// ... and don't forget to reset the active frame.
-	// Its an reference to a valid container-item.
+	// ...and don't forget to reset the active frame.
+	// It's a reference to a valid container-item.
 	// But no container item => no active frame!
     m_xActiveFrame = css::uno::Reference< css::frame::XFrame >();
 /*DEPRECATEME
@@ -244,9 +244,9 @@ sal_uInt32 FrameContainer::getCount() const
                 So it will be marked as deprecated and should be replaced by "getAllElements()".
 
     @param      nIndex
-                    a valud between 0 and (getCount()-1) to address one container item
+                    a value between 0 and (getCount()-1) to address one container item
 
-    @return     a reference to a frame inside the container, which match with given index
+    @return     a reference to a frame inside the container, which matches with given index
 
     @threadsafe yes
     @modified   01.07.2002 15:03,as96863
@@ -268,8 +268,8 @@ css::uno::Reference< css::frame::XFrame > FrameContainer::operator[]( sal_uInt32
     catch( std::out_of_range& )
     {
         // The index is not valid for current container-content - we must handle this case!
-        // We can return the default value ...
-        LOG_EXCEPTION( "FrameContainer::operator[]", "Exception catched ...", DECLARE_ASCII("::std::out_of_range") )
+        // We can return the default value...
+        LOG_EXCEPTION( "FrameContainer::operator[]", "Exception caught...", DECLARE_ASCII("::std::out_of_range") )
     }
 	return xFrame;
 }
@@ -300,7 +300,7 @@ css::uno::Sequence< css::uno::Reference< css::frame::XFrame > > FrameContainer::
 }
 
 /**-***************************************************************************************************************
-    @short      set the given frame as  the new active one inside this container
+    @short      set the given frame as the new active one inside this container
     @descr      We accept this frame only, if it's already a part of this container.
 
     @param      xFrame
@@ -323,9 +323,9 @@ void FrameContainer::setActive( const css::uno::Reference< css::frame::XFrame >&
 }
 
 /**-***************************************************************************************************************
-    @short      return sthe current active frame of this container
+    @short      returns the current active frame of this container
     @descr      Value can be null in case the frame was removed from the container and nobody
-                from outside decide which of all others should be the new one ...
+                from outside decide which of all others should be the new one...
 
     @return     a reference to the current active frame
                 Value can be NULL!
@@ -411,4 +411,6 @@ css::uno::Reference< css::frame::XFrame > FrameContainer::searchOnDirectChildren
 	return xSearchedFrame;
 }
 
-} //  namespace framework
+}
+
+// namespace framework
