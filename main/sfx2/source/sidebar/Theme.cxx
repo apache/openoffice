@@ -404,7 +404,7 @@ void Theme::UpdateTheme (void)
 		Color aGradientStop2 (aBaseBackgroundColor);
 		aGradientStop2.IncreaseLuminance(0);
 		Color aToolBoxBorderColor (aBaseBackgroundColor);
-		aToolBoxBorderColor.DecreaseLuminance(25);
+		aToolBoxBorderColor.DecreaseLuminance(40);
 		setPropertyValue(
 			maPropertyIdToNameMap[Paint_ToolBoxBackground],
 			Any(Tools::VclToAwtGradient(Gradient(
