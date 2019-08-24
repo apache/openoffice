@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,16 +50,16 @@ published interface XFilePreview: com::sun::star::uno::XInterface
 	//-------------------------------------------------------------------------
 	/** The method returns all image formats that the preview supports.
 
-		@returns 
+		@returns
 		A sequence of all supported preview formats
-		
+
 		@see com::sun::star::ui::dialogs::FilePreviewImageFormats
-	*/		
+	*/
 	sequence< short > getSupportedImageFormats( );
 
 	//-------------------------------------------------------------------------
 	/** The method returns the supported color depth of the target device.
-		
+
 		@returns
 		The color depth in bit, e.g. 8 bit, 16 bit, 32 bit.
 	*/
@@ -83,17 +83,17 @@ published interface XFilePreview: com::sun::star::uno::XInterface
 		0 will be returned.
 
 		@returns
-		The heigth of the preview window in pixel.	 
+		The height of the preview window in pixel.
 	*/
 	long getAvailableHeight( );
 
 	//-------------------------------------------------------------------------
-	/** Sets a new image. If the preview is currently hidden the 
+	/** Sets a new image. If the preview is currently hidden the
 		image will be ignored. An empty any will clear the preview window.
 
 		@param aImageFormat
 		Specifies the format of the data that will be delivered
-		
+
 		@param aImage
 		The image data, the image format defines how
 		the image data have to be delivered
@@ -102,7 +102,7 @@ published interface XFilePreview: com::sun::star::uno::XInterface
 		If the specified image format is invalid or not
 		supported by the preview implementation
 
-		@see com::sun::star::ui::dialogs::FilePreviewImageFormats 			
+		@see com::sun::star::ui::dialogs::FilePreviewImageFormats
 	*/
 	void setImage( [in] short aImageFormat, [in] any aImage )
 		raises( ::com::sun::star::lang::IllegalArgumentException );
@@ -117,7 +117,7 @@ published interface XFilePreview: com::sun::star::uno::XInterface
 
 		@returns
 		A value of <TRUE/> on success.
-		<p>A vaue of <FALSE/> if the operation fails for any reason or the preview
+		<p>A value of <FALSE/> if the operation fails for any reason or the preview
 		implementation doesn't support hiding the preview.</p>
 	*/
 	boolean setShowState( [in] boolean bShowState );
@@ -135,6 +135,5 @@ published interface XFilePreview: com::sun::star::uno::XInterface
 //=============================================================================
 
 }; }; }; }; };
-
 
 #endif
