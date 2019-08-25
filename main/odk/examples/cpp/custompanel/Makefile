@@ -42,7 +42,6 @@ COMP_COMPONENTS = $(OUT_COMP_GEN)/$(COMP_NAME).components
 COMP_TYPEFLAG = $(OUT_MISC)/cpp_$(COMP_NAME)_types.flag
 
 # Allow deploying the extension when running it
-
 OUT_COMP_DEPLOY=$(OUT_DEPLOY)/$(COMP_NAME)
 OUT_DEPLOY_DIR=$(subst /,$(PS),$(OUT_COMP_DEPLOY))
 OUT_DEPLOY_URL=$(URLPREFIX)$(OUT_COMP_DEPLOY)
@@ -72,7 +71,7 @@ $(OUT_COMP_SLO)/%.$(OBJ_EXT) : %.cxx $(SDKTYPEFLAG)
 
 #$(COMP_MAPFILE) : $(SLOFILES)
 #	-$(MKDIR) $(subst /,$(PS),$(@D))
-#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE) 
+#	cat $(PRJ)/settings/component.uno.map > $(COMP_MAPFILE)
 #ifeq "$(OS)" "MACOSX"
 #	nm -gx $(SLOFILES) | $(ADDSYMBOLS) >> $(COMP_MAPFILE)
 #endif
@@ -92,7 +91,7 @@ $(SHAREDLIB_OUT)/%.$(SHAREDLIB_EXT) : $(SLOFILES)
 	$(LINK) $(COMP_LINK_FLAGS) $(LINK_LIBS) -o $@ $(SLOFILES) \
 	$(CPPUHELPERLIB) $(CPPULIB) $(SALLIB) $(STLPORTLIB) $(STC++LIB) $(CPPUHELPERDYLIB) $(CPPUDYLIB) $(SALDYLIB)
 ifeq "$(OS)" "MACOSX"
-	$(INSTALL_NAME_URELIBS)  $@
+	$(INSTALL_NAME_URELIBS) $@
 endif
 endif
 
@@ -102,7 +101,7 @@ $(OUT_COMP_GEN)/%/manifest.xml :
 	@echo $(OSEP)?xml version="$(QM)1.0$(QM)" encoding="$(QM)UTF-8$(QM)"?$(CSEP) > $@
 	@echo $(OSEP)!DOCTYPE manifest:manifest PUBLIC "$(QM)-//OpenOffice.org//DTD Manifest 1.0//EN$(QM)" "$(QM)Manifest.dtd$(QM)"$(CSEP) >> $@
 	@echo $(OSEP)manifest:manifest xmlns:manifest="$(QM)http://openoffice.org/2001/manifest$(QM)"$(CSEP) >> $@
-	@echo $(SQM)  $(SQM)$(OSEP)manifest:file-entry manifest:meda-type="$(QM)application/vnd.sun.star.configuration-data$(QM)" >> $@
+	@echo $(SQM)  $(SQM)$(OSEP)manifest:file-entry manifest:media-type="$(QM)application/vnd.sun.star.configuration-data$(QM)" >> $@
 	@echo $(SQM)                       $(SQM)manifest:full-path="$(QM)CalcWindowState.xcu$(QM)"/$(CSEP) >> $@
 	@echo $(SQM)  $(SQM)$(OSEP)manifest:file-entry manifest:media-type="$(QM)application/vnd.sun.star.configuration-data$(QM)" >> $@
 	@echo $(SQM)                       $(SQM)manifest:full-path="$(QM)DrawWindowState.xcu$(QM)"/$(CSEP) >> $@
@@ -134,7 +133,7 @@ $(COMP_PACKAGE) : $(SHAREDLIB_OUT)/$(COMP_IMPL_NAME) WriterWindowState.xcu CalcW
 	$(COPY) $(subst /,$(PS),$<) $(subst /,$(PS),$(OUT_COMP_GEN)/$(UNOPKG_PLATFORM))
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)) && $(SDK_ZIP) -u ../../bin/$(@F) $(COMP_NAME).components
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)) && $(SDK_ZIP) -u ../../bin/$(@F) $(UNOPKG_PLATFORM)/$(<F)
-	$(SDK_ZIP) -u $@  WriterWindowState.xcu CalcWindowState.xcu DrawWindowState.xcu ImpressWindowState.xcu Factories.xcu panel.png
+	$(SDK_ZIP) -u $@ WriterWindowState.xcu CalcWindowState.xcu DrawWindowState.xcu ImpressWindowState.xcu Factories.xcu panel.png
 	cd $(subst /,$(PS),$(OUT_COMP_GEN)/$(subst .$(UNOOXT_EXT),,$(@F))) && $(SDK_ZIP) -u ../../../bin/$(@F) META-INF/manifest.xml
 
 CustomToolPanelExample : $(COMP_PACKAGE)
@@ -146,7 +145,7 @@ CustomToolPanelExample : $(COMP_PACKAGE)
 	@echo --------------------------------------------------------------------------------
 
 CustomToolPanelExample.run: $(OXT_DEPLOYEDFLAG)
-	"$(OFFICE_PROGRAM_PATH)$(PS)soffice" $(OFFICE_START_OPTIONS)  $(ENV_USER_INSTALL)
+	"$(OFFICE_PROGRAM_PATH)$(PS)soffice" $(OFFICE_START_OPTIONS) $(ENV_USER_INSTALL)
 
 $(OXT_DEPLOYEDFLAG) : $(COMP_PACKAGE)
 	-$(DEL) $(subst \\,\,$(subst /,$(PS),$@))
