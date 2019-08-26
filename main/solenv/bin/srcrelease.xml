@@ -45,7 +45,7 @@
   <target name="declarenames" depends="getrevision">
     <property name="release.dir.name" value="${aoo.short.name}-${aoo.ver}"/>
     <property name="release.name" value="${aoo.name}-${aoo.ver}"/>
-    <property name="release.file.name" value="${release.name}-r${scm.revision}-src"/>
+    <property name="release.file.name" value="${release.name}-${scm.revision}-src"/>
     <property name="release.zip" value="${out.dir}/${release.file.name}.zip"/>
     <property name="release.tar" value="${out.dir}/${release.file.name}.tar"/>
     <property name="release.tar.gz" value="${out.dir}/${release.file.name}.tar.gz"/>
