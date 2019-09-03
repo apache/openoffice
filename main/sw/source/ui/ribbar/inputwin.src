@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-/* HelpID ressource file */
-/* HelpID ressource file */
 
 #include "cmdid.h"
 #include "helpid.h"
@@ -32,8 +30,8 @@
 
 ToolBox RID_TBX_FORMULA
 {
-	Pos = MAP_APPFONT ( 0 , 0 ) ;
-	Size = MAP_APPFONT ( 600 , 14 ) ;
+	Pos = MAP_APPFONT ( 0, 0 ) ;
+	Size = MAP_APPFONT ( 600, 14 ) ;
 	HelpID = HID_CALC_TOOLBOX ;
 	SVLook = TRUE ;
 	Border = TRUE ;
@@ -45,28 +43,24 @@ ToolBox RID_TBX_FORMULA
 			HelpId = HID_TBX_FORMULA_CALC ;
 			DropDown = TRUE ;
 			Text [ en-US ] = "Formula" ;
-			/* ### ACHTUNG: Neuer Text in Resource? Formel auswählen : Formel auswõhlen */
 		};
 		ToolBoxItem
 		{
 			Identifier = FN_FORMULA_CANCEL ;
 			HelpId = HID_TBX_FORMULA_CANCEL ;
 			Text [ en-US ] = "Cancel" ;
-			/* ### ACHTUNG: Neuer Text in Resource? Formel nicht übenehmen : Formel nicht ³benehmen */
 		};
 		ToolBoxItem
 		{
 			Identifier = FN_FORMULA_APPLY ;
 			HelpId = HID_TBX_FORMULA_APPLY ;
-			/* ### ACHTUNG: Neuer Text in Resource? Übernehmen : šbernehmen */
 			Text [ en-US ] = "Apply" ;
-			/* ### ACHTUNG: Neuer Text in Resource? Formel einfügen : Formel einf³gen */
 		};
 	};
 	Edit ED_POS
 	{
 		Border = TRUE ;
-		Size = MAP_APPFONT ( 45 , 11 ) ;
+		Size = MAP_APPFONT ( 45, 11 ) ;
 		ReadOnly = TRUE ;
 		SVLook = TRUE ;
 		Center = TRUE ;
@@ -75,7 +69,7 @@ ToolBox RID_TBX_FORMULA
 	{
 		Border = TRUE ;
 		TabStop = TRUE ;
-		Size = MAP_APPFONT ( 500 , 11 ) ;
+		Size = MAP_APPFONT ( 500, 11 ) ;
 		SVLook = TRUE ;
 	};
 };
@@ -150,7 +144,6 @@ Menu MN_CALC_POPUP
 					{
 						Identifier = MN_CALC_GEQ ;
 						HelpID = HID_MN_CALC_GEQ ;
-						/* ### ACHTUNG: Neuer Text in Resource? Gr~ößer Gleich : Gr~÷˜er Gleich */
 						Text [ en-US ] = "Greater Than or Equal" ;
 					};
 					MenuItem
@@ -163,7 +156,6 @@ Menu MN_CALC_POPUP
 					{
 						Identifier = MN_CALC_GRE ;
 						HelpID = HID_MN_CALC_GRE ;
-						/* ### ACHTUNG: Neuer Text in Resource? G~rößer : G~r÷˜er */
 						Text [ en-US ] = "Greater" ;
 					};
 					MenuItem
@@ -293,63 +285,24 @@ String STR_ACCESS_FORMULA_TEXT
 {
 	Text [ en-US ] = "Formula Text" ;
 };
-#define TB_INPUT  \
-    ToolBoxItem\
-    {\
-        Identifier = FN_FORMULA_CALC ; \
-        HelpID = HID_TBX_FORMULA_CALC ; \
-        Text [ en-US ] = "Formula" ; \
-        /* ### ACHTUNG: Neuer Text in Resource? Formel auswählen : Formel auswõhlen */\
+#define TB_INPUT \
+	ToolBoxItem\
+	{\
+		Identifier = FN_FORMULA_CALC ; \
+		HelpID = HID_TBX_FORMULA_CALC ; \
+		Text [ en-US ] = "Formula" ; \
 	};\
-    ToolBoxItem\
-    {\
-        Identifier = FN_FORMULA_CANCEL ; \
-        HelpId = HID_TBX_FORMULA_CANCEL ; \
-        Text [ en-US ] = "Cancel" ; \
-        /* ### ACHTUNG: Neuer Text in Resource? Formel nicht übenehmen : Formel nicht ³benehmen */\
+	ToolBoxItem\
+	{\
+		Identifier = FN_FORMULA_CANCEL ; \
+		HelpId = HID_TBX_FORMULA_CANCEL ; \
+		Text [ en-US ] = "Cancel" ; \
 	};\
-    ToolBoxItem\
-    {\
-        Identifier = FN_FORMULA_APPLY ; \
-        HelpID = HID_TBX_FORMULA_APPLY ; \
-        /* ### ACHTUNG: Neuer Text in Resource? Übernehmen : šbernehmen */\
-        Text [ en-US ] = "Apply" ; \
-        /* ### ACHTUNG: Neuer Text in Resource? Formel einfügen : Formel einf³gen */\
+	ToolBoxItem\
+	{\
+		Identifier = FN_FORMULA_APPLY ; \
+		HelpID = HID_TBX_FORMULA_APPLY ; \
+		Text [ en-US ] = "Apply" ; \
 	};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF
