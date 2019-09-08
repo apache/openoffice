@@ -999,7 +999,7 @@ oldref="436">SUMIFS</paragraph>
 <!--<paragraph xml-lang="en-US" id="par_id8347422K" role="note" l10n="NEW">SUMIFS supports the reference concatenation operator (~) only in the Criteria parameter, and only if the optional SumRange parameter is not given.</paragraph>-->
 <paragraph xml-lang="en-US" id="hd_id3152110K" role="heading" level="3" l10n="U"
 oldref="443">Example</paragraph>
-<paragraph xml-lang="en-US" id="par_id3152148K" role="paragraph" l10n="CHG">Sum up cells in range A1:10 if the entires in B1:B10 are positive, and the entries in D1:D10 are the letter "A": <item type="input">=SUMIFS(A1:A10;B1:B10;"&gt;0";D1:D10;"A")</item>
+<paragraph xml-lang="en-US" id="par_id3152148K" role="paragraph" l10n="CHG">Sum up cells in range A1:10 if the entries in B1:B10 are positive, and the entries in D1:D10 are the letter "A": <item type="input">=SUMIFS(A1:A10;B1:B10;"&gt;0";D1:D10;"A")</item>
 </paragraph>
 <paragraph xml-lang="en-US" id="par_id6062196K" role="paragraph" l10n="NEW">See COUNTIFS() for some more syntax examples that can be used with SUMIFS().</paragraph>
 </section>
