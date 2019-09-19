@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,31 +7,32 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
-﻿
+
+
 #include <sfx2/sfx.hrc>
 #include "doc.hrc"
 #define __RSC
 #include <svl/inetdef.hxx>
 //#include <so3/so2defs.hxx>
 
- // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 QueryBox MSG_CONFIRM_FILTER
 {
 	Buttons = WB_YES_NO ;
 	DefButton = WB_DEF_YES ;
-	Message [ en-US ] = "Saving in external formats may have caused\n information loss. Do you still want to close?" ;
+	Message [ en-US ] = "Saving in external formats may have caused\ninformation loss. Do you still want to close?" ;
 };
 QueryBox MSG_CONFIRM_OVERWRITE_TEMPLATE
 {
@@ -57,11 +58,11 @@ String STR_QUERY_SAVE_DOCUMENT
 {
 	Text [ en-US ] = "The document \"$(DOC)\" has been modified.\nDo you want to save your changes?" ;
 };
-Bitmap BMP_STYLES_CLOSED { File = "newex.bmp" ; };
-Bitmap BMP_STYLES_OPENED { File = "newex.bmp" ; };
+Bitmap BMP_STYLES_CLOSED {File = "newex.png" ;} ;
+Bitmap BMP_STYLES_OPENED {File = "newex.png" ;} ;
 
-Bitmap BMP_STYLES_CLOSED_HC { File = "newex_h.bmp" ; };
-Bitmap BMP_STYLES_OPENED_HC { File = "newex_h.bmp" ; };
+Bitmap BMP_STYLES_CLOSED_HC {File = "newex_h.png" ;} ;
+Bitmap BMP_STYLES_OPENED_HC {File = "newex_h.png" ;} ;
 
 String STR_STYLES
 {
@@ -83,15 +84,15 @@ String STR_PRINT_STYLES
 {
 	Text [ en-US ] = "Printing Styles" ;
 };
-Bitmap BMP_STYLES_FAMILY1 { File = "styfam1.bmp" ; };
-Bitmap BMP_STYLES_FAMILY2 { File = "styfam2.bmp" ; };
-Bitmap BMP_STYLES_FAMILY3 { File = "styfam3.bmp" ; };
-Bitmap BMP_STYLES_FAMILY4 { File = "styfam4.bmp" ; };
+Bitmap BMP_STYLES_FAMILY1 {File = "styfam1.png" ;} ;
+Bitmap BMP_STYLES_FAMILY2 {File = "styfam2.png" ;} ;
+Bitmap BMP_STYLES_FAMILY3 {File = "styfam3.png" ;} ;
+Bitmap BMP_STYLES_FAMILY4 {File = "styfam4.png" ;} ;
 
-Bitmap BMP_STYLES_FAMILY1_HC { File = "styfam1_h.bmp" ; };
-Bitmap BMP_STYLES_FAMILY2_HC { File = "styfam2_h.bmp" ; };
-Bitmap BMP_STYLES_FAMILY3_HC { File = "styfam3_h.bmp" ; };
-Bitmap BMP_STYLES_FAMILY4_HC { File = "styfam4_h.bmp" ; };
+Bitmap BMP_STYLES_FAMILY1_HC {File = "styfam1_h.png" ;} ;
+Bitmap BMP_STYLES_FAMILY2_HC {File = "styfam2_h.png" ;} ;
+Bitmap BMP_STYLES_FAMILY3_HC {File = "styfam3_h.png" ;} ;
+Bitmap BMP_STYLES_FAMILY4_HC {File = "styfam4_h.png" ;} ;
 
 ErrorBox MSG_PRINT_ERROR
 {
@@ -187,8 +188,6 @@ InfoBox MSG_DOCINFO_CANTREAD
 };
 String STR_ERROR_NOSTORAGE
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Die ausgew�hlte Datei besitzt ein falsches Format. : Die ausgew�hlte Datei besitzt ein falsches Format. */
-	/* ### ACHTUNG: Neuer Text in Resource? Die ausgew�hlte Datei besitzt ein falsches Format. : Die ausgew�hlte Datei besitzt ein falsches Format. */
 	Text [ en-US ] = "The selected file has an incorrect format." ;
 };
 String STR_QUERY_MUSTOWNFORMAT
@@ -217,8 +216,6 @@ String STR_CLOSEDOC
 };
 String STR_CLOSEDOC_ANDRETURN
 {
-	/* ### ACHTUNG: Neuer Text in Resource? S~chlie�en & zur�ck zu  : S~chlie�en & zur�ck zu  */
-	/* ### ACHTUNG: Neuer Text in Resource? S~chlie�en & zur�ck zu  : S~chlie�en & zur�ck zu  */
 	Text [ en-US ] = "~Close & Return to " ;
 };
 String STR_WIZARD
@@ -296,7 +293,7 @@ String STR_FSET_FILTERNAME0
 };
 String STR_FSET_FILTERNAME1
 {
-	// nur 'Dokument' "ubersetzen - only translate 'Document'
+	// only translate 'Document'
 	Text [ en-US ] = "%PRODUCTNAME Frame Document" ;
 };
 String STR_TEMPL_MOVED
@@ -314,37 +311,37 @@ String STR_AUTOMATICVERSION
 
 String STR_DOCTYPENAME_SW
 {
-	Text [ en-US ] = "Text Document";
+	Text [ en-US ] = "Text Document" ;
 };
 
 String STR_DOCTYPENAME_SWWEB
 {
-	Text [ en-US ] = "HTML Document";
+	Text [ en-US ] = "HTML Document" ;
 };
 
 String STR_DOCTYPENAME_SWGLOB
 {
-	Text [ en-US ] = "Master Document";
+	Text [ en-US ] = "Master Document" ;
 };
 
 String STR_DOCTYPENAME_SC
 {
-	Text [ en-US ] = "Spreadsheet";
+	Text [ en-US ] = "Spreadsheet" ;
 };
 
 String STR_DOCTYPENAME_SI
 {
-	Text [ en-US ] = "Presentation";
+	Text [ en-US ] = "Presentation" ;
 };
 
 String STR_DOCTYPENAME_SD
 {
-	Text [ en-US ] = "Drawing";
+	Text [ en-US ] = "Drawing" ;
 };
 
 String STR_DOCTYPENAME_MESSAGE
 {
-	Text [ en-US ] = "Message";
+	Text [ en-US ] = "Message" ;
 };
 
 String STR_NOSAVEANDCLOSE
@@ -369,37 +366,36 @@ String STR_OBJECT
 
 QueryBox DLG_MACROQUERY
 {
-    Buttons = WB_OK_CANCEL;
-    Title [ en-US ] = "Run Macro" ;
-
-    Message [ en-US ] = "This document contains macros. $(TEXT)";
+	Buttons = WB_OK_CANCEL ;
+	Title [ en-US ] = "Run Macro" ;
+	Message [ en-US ] = "This document contains macros. $(TEXT)" ;
 };
 
 String BTN_OK
 {
-    Text [ en-US ] = "Run" ;
+	Text [ en-US ] = "Run" ;
 };
 String BTN_CANCEL
 {
-    Text [ en-US ] = "Do Not Run" ;
+	Text [ en-US ] = "Do Not Run" ;
 };
 String FT_CANCEL
 {
-    Text [ en-US ] = "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?";
+	Text [ en-US ] = "According to the security settings, the macros in this document should not be run. Do you want to run them anyway?" ;
 };
 String FT_OK
 {
-    Text [ en-US ] = "Do you want to allow these macros to be run?";
+	Text [ en-US ] = "Do you want to allow these macros to be run?" ;
 };
 
 String STR_EXPORTASPDF_TITLE
 {
-    Text [ en-US ] = "Export as PDF";
+	Text [ en-US ] = "Export as PDF" ;
 };
 
 String STR_EXPORTWITHCFGBUTTON
 {
-	Text [ en-US ] = "Export...";
+	Text [ en-US ] = "Export..." ;
 };
 
 String STR_EXPORTBUTTON
@@ -409,7 +405,7 @@ String STR_EXPORTBUTTON
 
 String RID_SVXSTR_SECURITY_ADDPATH
 {
-    Text [ en-US ] = "Add this directory to the list of secure paths: " ;
+	Text [ en-US ] = "Add this directory to the list of secure paths: " ;
 };
 
 String STR_LABEL_FILEFORMAT
@@ -465,45 +461,44 @@ String STR_NEW_FILENAME_SAVE
 
 String STR_ERROR_DELETE_TEMPLATE_DIR
 {
-	Text [ en-US ] = "Some template files are protected and can not be deleted.";
+	Text [ en-US ] = "Some template files are protected and can not be deleted." ;
 };
 
 String STR_DOCINFO_INFOFIELD
 {
-	Text [ en-US ] = "Info %1";
+	Text [ en-US ] = "Info %1" ;
 };
 
 String STR_SHARED
 {
-	Text [ en-US ] = " (shared)";
+	Text [ en-US ] = " (shared)" ;
 };
 
 String STR_XMLSEC_ODF12_EXPECTED
 {
-    Text [ en-US ] = "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x).";
+	Text [ en-US ] = "The document format version is set to ODF 1.1 (OpenOffice.org 2.x) in Tools-Options-Load/Save-General. Signing documents requires ODF 1.2 (OpenOffice.org 3.x)." ;
 };
 
 QueryBox MSG_XMLSEC_QUERY_SAVESIGNEDBEFORESIGN
 {
-    Buttons = WB_YES_NO ;
-    DefButton = WB_DEF_YES ;
-    Message [ en-US ] = "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?";
+	Buttons = WB_YES_NO ;
+	DefButton = WB_DEF_YES ;
+	Message [ en-US ] = "The document has to be saved before it can be signed. Saving the document removes all present signatures.\nDo you want to save the document?" ;
 };
 
 String STR_QRYTEMPL_MESSAGE
 {
-    Text [ en-US ] = "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?";
+	Text [ en-US ] = "The template '$(ARG1)' on which this document is based, has been modified. Do you want to update style based formattings according to the modified template?" ;
 };
 
 String STR_QRYTEMPL_UPDATE_BTN
 {
-    Text [ en-US ] = "~Update Styles";
+	Text [ en-US ] = "~Update Styles" ;
 };
 
 String STR_QRYTEMPL_KEEP_BTN
 {
-    Text [ en-US ] = "~Keep Old Styles";
+	Text [ en-US ] = "~Keep Old Styles" ;
 };
 
 // ******************************************************************* EOF
-
