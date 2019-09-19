@@ -344,6 +344,7 @@ $(BIN)$/dev$/intro.zip : $(SOLARCOMMONPCKDIR)$/openoffice_dev$/intro.zip
 
 # Replace framework/res/*.png with *-dev.png
 $(BIN)$/dev$/images.zip : $(SOLARBINDIR)$/images.zip
+	@-$(MKDIR) $(@:d)
 	$(COPY) $< $@
 	$(PERL) $(SOLARENV)$/bin/replace_in_zip.pl	\
 		$@				\
