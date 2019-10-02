@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ------------------------------------------------------------------
+
+// include ------------------------------------------------------------------
 #include <cuires.hrc>
 #include "helpid.hrc"
 #include "tabline.hrc"
@@ -28,65 +29,62 @@
 
 // Selecting LineStyle / Color / Width --------------------
 
-#define MASKCOLOR	MaskColor = Color{ Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; };
-
-
 TabPage RID_SVXPAGE_LINE
 {
-	Size = MAP_APPFONT ( 260 , 185 );
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	HelpId = HID_LINE_LINE ;
 	Hide = TRUE ;
 	Text [ en-US ] = "Lines" ;
 	FixedLine FL_LINE
 	{
-		Pos = MAP_APPFONT ( 6 , 3  ) ;
-		Size = MAP_APPFONT ( 112 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 112, 8 ) ;
 		Text [ en-US ] = "Line properties" ;
 	};
 	FixedText FT_LINE_STYLE
 	{
-		Pos = MAP_APPFONT ( 12 , 14  ) ;
-		Size = MAP_APPFONT ( 100 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 14 ) ;
+		Size = MAP_APPFONT ( 100, 8 ) ;
 		Text [ en-US ] = "~Style" ;
 	};
 	ListBox LB_LINE_STYLE
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_LINE_STYLE";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_LINE_STYLE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 25  ) ;
-		Size = MAP_APPFONT ( 100 , 100 ) ;
+		Pos = MAP_APPFONT ( 12, 25 ) ;
+		Size = MAP_APPFONT ( 100, 100 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	FixedText FT_COLOR
 	{
-		Pos = MAP_APPFONT ( 12 , 41  ) ;
-		Size = MAP_APPFONT ( 100 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 41 ) ;
+		Size = MAP_APPFONT ( 100, 8 ) ;
 		Text [ en-US ] = "Colo~r" ;
 	};
 	ListBox LB_COLOR
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_COLOR";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_COLOR" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 52  ) ;
-		Size = MAP_APPFONT ( 100 , 100 ) ;
+		Pos = MAP_APPFONT ( 12, 52 ) ;
+		Size = MAP_APPFONT ( 100, 100 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	FixedText FT_LINE_WIDTH
 	{
-		Pos = MAP_APPFONT ( 12 , 68  ) ;
-		Size = MAP_APPFONT ( 100 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 68 ) ;
+		Size = MAP_APPFONT ( 100, 8 ) ;
 		Text [ en-US ] = "~Width" ;
 	};
 	MetricField MTR_FLD_LINE_WIDTH
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_LINE_WIDTH";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_LINE_WIDTH" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 79  ) ;
-		Size = MAP_APPFONT ( 50 , 12 ) ;
+		Pos = MAP_APPFONT ( 12, 79 ) ;
+		Size = MAP_APPFONT ( 50, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -101,16 +99,16 @@ TabPage RID_SVXPAGE_LINE
 	};
 	FixedText FT_TRANSPARENT
 	{
-		Pos = MAP_APPFONT ( 12 , 95  ) ;
-		Size = MAP_APPFONT ( 100 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 95 ) ;
+		Size = MAP_APPFONT ( 100, 8 ) ;
 		Text [ en-US ] = "~Transparency" ;
 	};
 	MetricField MTR_LINE_TRANSPARENT
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_LINE_TRANSPARENT";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_LINE_TRANSPARENT" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 106  ) ;
-		Size = MAP_APPFONT ( 50 , 12 ) ;
+		Pos = MAP_APPFONT ( 12, 106 ) ;
+		Size = MAP_APPFONT ( 50, 12 ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -120,56 +118,56 @@ TabPage RID_SVXPAGE_LINE
 		Last = 100 ;
 		SpinSize = 5 ;
 	};
-    FixedLine FL_SEPARATOR
-    {
-		Pos = MAP_APPFONT ( 118 , 14  ) ;
-		Size = MAP_APPFONT ( 6 , 111 ) ;
-        Vert = TRUE;
-    };
+	FixedLine FL_SEPARATOR
+	{
+		Pos = MAP_APPFONT ( 118, 14 ) ;
+		Size = MAP_APPFONT ( 6, 111 ) ;
+		Vert = TRUE;
+	};
 	FixedLine FL_LINE_ENDS
 	{
-		Pos = MAP_APPFONT ( 124 , 3  ) ;
-		Size = MAP_APPFONT ( 130 , 8 ) ;
+		Pos = MAP_APPFONT ( 124, 3 ) ;
+		Size = MAP_APPFONT ( 130, 8 ) ;
 		Text [ en-US ] = "Arrow styles" ;
 	};
 	FixedText FT_LINE_ENDS_STYLE
 	{
-		Pos = MAP_APPFONT ( 130 , 14  ) ;
-		Size = MAP_APPFONT ( 118 , 8 ) ;
+		Pos = MAP_APPFONT ( 130, 14 ) ;
+		Size = MAP_APPFONT ( 118, 8 ) ;
 		Text [ en-US ] = "St~yle" ;
 	};
 	ListBox LB_START_STYLE
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_START_STYLE";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_START_STYLE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 25  ) ;
-		Size = MAP_APPFONT ( 57 , 99 ) ;
+		Pos = MAP_APPFONT ( 130, 25 ) ;
+		Size = MAP_APPFONT ( 57, 99 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	ListBox LB_END_STYLE
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_END_STYLE";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_END_STYLE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 191 , 25  ) ;
-		Size = MAP_APPFONT ( 57 , 100 ) ;
+		Pos = MAP_APPFONT ( 191, 25 ) ;
+		Size = MAP_APPFONT ( 57, 100 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	FixedText FT_LINE_ENDS_WIDTH
 	{
-		Pos = MAP_APPFONT ( 130 , 41  ) ;
-		Size = MAP_APPFONT ( 118 , 8 ) ;
+		Pos = MAP_APPFONT ( 130, 41 ) ;
+		Size = MAP_APPFONT ( 118, 8 ) ;
 		Text [ en-US ] = "Wi~dth" ;
 	};
 	MetricField MTR_FLD_START_WIDTH
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_START_WIDTH";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_START_WIDTH" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 52  ) ;
-		Size = MAP_APPFONT ( 45 , 12 ) ;
+		Pos = MAP_APPFONT ( 130, 52 ) ;
+		Size = MAP_APPFONT ( 45, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -184,10 +182,10 @@ TabPage RID_SVXPAGE_LINE
 	};
 	MetricField MTR_FLD_END_WIDTH
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_END_WIDTH";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MTR_FLD_END_WIDTH" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 191 , 52  ) ;
-		Size = MAP_APPFONT ( 45 , 12 ) ;
+		Pos = MAP_APPFONT ( 191, 52 ) ;
+		Size = MAP_APPFONT ( 45, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -202,27 +200,27 @@ TabPage RID_SVXPAGE_LINE
 	};
 	TriStateBox TSB_CENTER_START
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_LINE:TSB_CENTER_START";
-		Pos = MAP_APPFONT ( 130 , 68  ) ;
-		Size = MAP_APPFONT ( 57 , 10 ) ;
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_LINE:TSB_CENTER_START" ;
+		Pos = MAP_APPFONT ( 130, 68 ) ;
+		Size = MAP_APPFONT ( 57, 10 ) ;
 		Text [ en-US ] = "Ce~nter" ;
 		TabStop = TRUE ;
 	};
 	TriStateBox TSB_CENTER_END
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_LINE:TSB_CENTER_END";
-		Pos = MAP_APPFONT ( 191 , 68  ) ;
-		Size = MAP_APPFONT ( 57 , 10 ) ;
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_LINE:TSB_CENTER_END" ;
+		Pos = MAP_APPFONT ( 191, 68 ) ;
+		Size = MAP_APPFONT ( 57, 10 ) ;
 		Text [ en-US ] = "C~enter" ;
 		TabStop = TRUE ;
 	};
 	CheckBox CBX_SYNCHRONIZE
 	{
-	    HelpID = "cui:CheckBox:RID_SVXPAGE_LINE:CBX_SYNCHRONIZE";
+		HelpID = "cui:CheckBox:RID_SVXPAGE_LINE:CBX_SYNCHRONIZE" ;
 		// #116827#
-		// Pos = MAP_APPFONT ( 130 , 107  ) ;
-		Pos = MAP_APPFONT ( 130 , 68 + (16 - 4) ) ;
-		Size = MAP_APPFONT ( 118 , 10 ) ;
+		// Pos = MAP_APPFONT ( 130, 107 ) ;
+		Pos = MAP_APPFONT ( 130, 68 + ( 16 - 4 ) ) ;
+		Size = MAP_APPFONT ( 118, 10 ) ;
 		Text [ en-US ] = "Synchroni~ze ends" ;
 		TabStop = TRUE ;
 	};
@@ -232,79 +230,79 @@ TabPage RID_SVXPAGE_LINE
 
 	FixedLine FL_EDGE_STYLE
 	{
-		Pos = MAP_APPFONT ( 124 , 3 + (16 * 6) - 4 ) ;
-		Size = MAP_APPFONT ( 130 , 8 ) ;
+		Pos = MAP_APPFONT ( 124, 3 + ( 16 * 6 ) - 4 ) ;
+		Size = MAP_APPFONT ( 130, 8 ) ;
 		Text [ en-US ] = "Corner and cap styles" ;
 	};
 	FixedText FT_EDGE_STYLE
 	{
-		Pos = MAP_APPFONT ( 130 , 14 + (16 * 6) - 4 ) ;
-		Size = MAP_APPFONT ( 118 , 8 ) ;
+		Pos = MAP_APPFONT ( 130, 14 + ( 16 * 6) - 4 ) ;
+		Size = MAP_APPFONT ( 118, 8 ) ;
 		Text [ en-US ] = "~Corner style" ;
 	};
 	ListBox LB_EDGE_STYLE
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_EDGE_STYLE";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_EDGE_STYLE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 25 + (16 * 6) - 4 ) ;
-		Size = MAP_APPFONT ( 57 , 99 ) ;
+		Pos = MAP_APPFONT ( 130, 25 + ( 16 * 6 ) - 4 ) ;
+		Size = MAP_APPFONT ( 57, 99 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Rounded" ; Default ; > ;
-			< "- none -" ; > ;
-			< "Mitered" ; > ;
-			< "Beveled" ; > ;
+			< "Rounded" ; Default ;	> ;
+			< "- none -" ;			> ;
+			< "Mitered" ;			> ;
+			< "Beveled" ;			> ;
 		};
 	};
-    FixedText FT_CAP_STYLE
-    {
-        Pos = MAP_APPFONT ( 191 , 14 + (16 * 6) - 4 ) ;
-        Size = MAP_APPFONT ( 118 , 8 ) ;
-        Text [ en-US ] = "Ca~p style" ;
-    };
-    ListBox LB_CAP_STYLE
-    {
-        HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_CAP_STYLE";
-        Border = TRUE ;
-        Pos = MAP_APPFONT ( 191 , 25 + (16 * 6) - 4 ) ;
-        Size = MAP_APPFONT ( 57 , 99 ) ;
-        TabStop = TRUE ;
-        DropDown = TRUE ;
-        StringList [ en-US ] =
-        {
-            < "Flat" ; Default ; > ; // Same string as in Excel
-            < "Round" ; > ;
-            < "Square" ; > ;
-        };
-    };
+	FixedText FT_CAP_STYLE
+	{
+		Pos = MAP_APPFONT ( 191, 14 + ( 16 * 6 ) - 4 ) ;
+		Size = MAP_APPFONT ( 118, 8 ) ;
+		Text [ en-US ] = "Ca~p style" ;
+	};
+	ListBox LB_CAP_STYLE
+	{
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE:LB_CAP_STYLE" ;
+		Border = TRUE ;
+		Pos = MAP_APPFONT ( 191, 25 + ( 16 * 6 ) - 4 ) ;
+		Size = MAP_APPFONT ( 57, 99 ) ;
+		TabStop = TRUE ;
+		DropDown = TRUE ;
+		StringList [ en-US ] =
+		{
+			< "Flat" ; Default ;	> ; // Same string as in Excel
+			< "Round" ;				> ;
+			< "Square" ;			> ;
+		};
+	};
 
 	//////////////////////////////////////////////////////////////////////////////
 
 	Control CTL_PREVIEW
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 135  ) ;
-		Size = MAP_APPFONT ( 248 , 40 ) ;
+		Pos = MAP_APPFONT ( 6, 135 ) ;
+		Size = MAP_APPFONT ( 248, 40 ) ;
 	};
 
-	//#58425# Symbole auf einer Linie (z.B. StarChart) ->
+	// #58425# Symbols on straight line (e.g. Chart)
 	FixedLine FL_SYMBOL_FORMAT
 	{
 		Hide = TRUE ;
 
-		Pos = MAP_APPFONT ( 124 , 3  ) ;
-		Size = MAP_APPFONT ( 130 , 8 ) ;
-		Text [ en-US ] = "Icon";
+		Pos = MAP_APPFONT ( 124, 3 ) ;
+		Size = MAP_APPFONT ( 130, 8 ) ;
+		Text [ en-US ] = "Icon" ;
 	};
 
 	MenuButton MB_SYMBOL_BITMAP
 	{
-	    HelpID = "cui:MenuButton:RID_SVXPAGE_LINE:MB_SYMBOL_BITMAP";
+		HelpID = "cui:MenuButton:RID_SVXPAGE_LINE:MB_SYMBOL_BITMAP" ;
 		Hide = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 14  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 130, 14 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		ButtonMenu = Menu
 		{
@@ -312,13 +310,13 @@ TabPage RID_SVXPAGE_LINE
 			{
 				MenuItem
 				{
-					Identifier = MN_SYMBOLS_NONE;
-					Text [ en-US ] = "No Symbol";
+					Identifier = MN_SYMBOLS_NONE ;
+					Text [ en-US ] = "No Symbol" ;
 				};
 				MenuItem
 				{
-					Identifier = MN_SYMBOLS_AUTO;
-					Text [ en-US ] = "Automatic";
+					Identifier = MN_SYMBOLS_AUTO ;
+					Text [ en-US ] = "Automatic" ;
 				};
 				MenuItem
 				{
@@ -328,12 +326,12 @@ TabPage RID_SVXPAGE_LINE
 				MenuItem
 				{
 					Identifier = MN_GALLERY ;
-					Text [ en-US ] = "Gallery";
+					Text [ en-US ] = "Gallery" ;
 				};
 				MenuItem
 				{
-					Identifier = MN_SYMBOLS;
-					Text [ en-US ] = "Symbols";
+					Identifier = MN_SYMBOLS ;
+					Text [ en-US ] = "Symbols" ;
 				};
 			};
 		};
@@ -342,15 +340,15 @@ TabPage RID_SVXPAGE_LINE
 	FixedText FT_SYMBOL_WIDTH
 	{
 		Hide = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 32  ) ;
-		Size = MAP_APPFONT ( 57 , 8 ) ;
+		Pos = MAP_APPFONT ( 130, 32 ) ;
+		Size = MAP_APPFONT ( 57, 8 ) ;
 		Text [ en-US ] = "Width" ;
 	};
 	MetricField MF_SYMBOL_WIDTH
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MF_SYMBOL_WIDTH";
-		Pos = MAP_APPFONT ( 191 , 30  );
-		Size = MAP_APPFONT ( 57 , 12 ) ;
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MF_SYMBOL_WIDTH" ;
+		Pos = MAP_APPFONT ( 191, 30 ) ;
+		Size = MAP_APPFONT ( 57, 12 ) ;
 		Border = TRUE ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -369,15 +367,15 @@ TabPage RID_SVXPAGE_LINE
 	FixedText FT_SYMBOL_HEIGHT
 	{
 		Hide = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 48  ) ;
-		Size = MAP_APPFONT ( 57 , 8 ) ;
+		Pos = MAP_APPFONT ( 130, 48 ) ;
+		Size = MAP_APPFONT ( 57, 8 ) ;
 		Text [ en-US ] = "Height" ;
 	};
 	MetricField MF_SYMBOL_HEIGHT
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MF_SYMBOL_HEIGHT";
-		Pos = MAP_APPFONT ( 191 , 46  );
-		Size = MAP_APPFONT ( 57 , 12 ) ;
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE:MF_SYMBOL_HEIGHT" ;
+		Pos = MAP_APPFONT ( 191, 46 ) ;
+		Size = MAP_APPFONT ( 57, 12 ) ;
 		Border = TRUE ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -395,103 +393,103 @@ TabPage RID_SVXPAGE_LINE
 	};
 	CheckBox CB_SYMBOL_RATIO
 	{
-	    HelpID = "cui:CheckBox:RID_SVXPAGE_LINE:CB_SYMBOL_RATIO";
+		HelpID = "cui:CheckBox:RID_SVXPAGE_LINE:CB_SYMBOL_RATIO" ;
 		Hide = TRUE ;
-		Pos = MAP_APPFONT ( 130 , 62  );
-		Size = MAP_APPFONT ( 118 , 10 ) ;
+		Pos = MAP_APPFONT ( 130, 62 ) ;
+		Size = MAP_APPFONT ( 118, 10 ) ;
 		Text [ en-US ] = "Keep ratio" ;
 	};
 	String STR_STYLE
-	{ 
+	{
 		Text [ en-US ] = "Style" ;
-	}; 
-    String STR_LB_START_STYLE
-    {
+	};
+	String STR_LB_START_STYLE
+	{
 		Text [ en-US ] = "Start style" ;
-    };
-    String STR_LB_END_STYLE
-    {
+	};
+	String STR_LB_END_STYLE
+	{
 		Text [ en-US ] = "End style" ;
-    };
-    String STR_MTR_FLD_START_WIDTH
-    {
+	};
+	String STR_MTR_FLD_START_WIDTH
+	{
 		Text [ en-US ] = "Start width" ;
-    };
-    String STR_MTR_FLD_END_WIDTH
-    {
+	};
+	String STR_MTR_FLD_END_WIDTH
+	{
 		Text [ en-US ] = "End width" ;
-    };
-     String STR_CENTER_START
-    {
+	};
+	String STR_CENTER_START
+	{
 		Text [ en-US ] = "Start with center" ;
-    };
-    String STR_CENTER_END
-    {
+	};
+	String STR_CENTER_END
+	{
 		Text [ en-US ] = "End with center" ;
-    };     
+	};
 };
 
 // Defining LineStyles --------------------
 
 TabPage RID_SVXPAGE_LINE_DEF
 {
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	HelpId = HID_LINE_DEF ;
 	Hide = TRUE ;
 	Text [ en-US ] = "Define line styles" ;
 
 	FixedLine FL_DEFINITION
 	{
-		Pos = MAP_APPFONT ( 6 , 3  ) ;
-		Size = MAP_APPFONT ( 248 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
 		Text [ en-US ] = "Properties" ;
 	};
 	FixedText FT_TYPE
 	{
-		Pos = MAP_APPFONT ( 12 , 34  ) ;
-        Size = MAP_APPFONT ( 52 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 34 ) ;
+		Size = MAP_APPFONT ( 52, 8 ) ;
 		Text [ en-US ] = "~Type" ;
 	};
 	ListBox LB_TYPE_1
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_TYPE_1";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_TYPE_1" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 66 , 32  ) ;
-		Size = MAP_APPFONT ( 43 , 49 ) ;
+		Pos = MAP_APPFONT ( 66, 32 ) ;
+		Size = MAP_APPFONT ( 43, 49 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Dot" ; Default ; > ;
-			< "Dash" ; Default ; > ;
+			< "Dot" ; Default ;		> ;
+			< "Dash" ; Default ;	> ;
 		};
 	};
 	ListBox LB_TYPE_2
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_TYPE_2";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_TYPE_2" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 113 , 32  ) ;
-		Size = MAP_APPFONT ( 43 , 49 ) ;
+		Pos = MAP_APPFONT ( 113, 32 ) ;
+		Size = MAP_APPFONT ( 43, 49 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Dot" ; Default ; > ;
-			< "Dash" ; Default ; > ;
+			< "Dot" ; Default ;		> ;
+			< "Dash" ; Default ;	> ;
 		};
 	};
 	FixedText FT_NUMBER
 	{
-		Pos = MAP_APPFONT ( 12 , 50  ) ;
-        Size = MAP_APPFONT ( 52 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 50 ) ;
+		Size = MAP_APPFONT ( 52, 8 ) ;
 		Text [ en-US ] = "~Number" ;
 	};
 	NumericField NUM_FLD_1
 	{
-	    HelpID = "cui:NumericField:RID_SVXPAGE_LINE_DEF:NUM_FLD_1";
+		HelpID = "cui:NumericField:RID_SVXPAGE_LINE_DEF:NUM_FLD_1" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 66 , 48  ) ;
-		Size = MAP_APPFONT ( 43 , 12 ) ;
+		Pos = MAP_APPFONT ( 66, 48 ) ;
+		Size = MAP_APPFONT ( 43, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -503,10 +501,10 @@ TabPage RID_SVXPAGE_LINE_DEF
 	};
 	NumericField NUM_FLD_2
 	{
-	    HelpID = "cui:NumericField:RID_SVXPAGE_LINE_DEF:NUM_FLD_2";
+		HelpID = "cui:NumericField:RID_SVXPAGE_LINE_DEF:NUM_FLD_2" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 113 , 48  ) ;
-		Size = MAP_APPFONT ( 43 , 12 ) ;
+		Pos = MAP_APPFONT ( 113, 48 ) ;
+		Size = MAP_APPFONT ( 43, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -518,16 +516,16 @@ TabPage RID_SVXPAGE_LINE_DEF
 	};
 	FixedText FT_LENGTH
 	{
-		Pos = MAP_APPFONT ( 12 , 66  ) ;
-        Size = MAP_APPFONT ( 52 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 66 ) ;
+		Size = MAP_APPFONT ( 52, 8 ) ;
 		Text [ en-US ] = "~Length" ;
 	};
 	MetricField MTR_FLD_LENGTH_1
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_LENGTH_1";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_LENGTH_1" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 66 , 64  ) ;
-		Size = MAP_APPFONT ( 43 , 12 ) ;
+		Pos = MAP_APPFONT ( 66, 64 ) ;
+		Size = MAP_APPFONT ( 43, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -544,10 +542,10 @@ TabPage RID_SVXPAGE_LINE_DEF
 	};
 	MetricField MTR_FLD_LENGTH_2
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_LENGTH_2";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_LENGTH_2" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 113 , 64  ) ;
-		Size = MAP_APPFONT ( 43 , 12 ) ;
+		Pos = MAP_APPFONT ( 113, 64 ) ;
+		Size = MAP_APPFONT ( 43, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -564,16 +562,16 @@ TabPage RID_SVXPAGE_LINE_DEF
 	};
 	FixedText FT_DISTANCE
 	{
-		Pos = MAP_APPFONT ( 12 , 81  ) ;
-        Size = MAP_APPFONT ( 52 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 81 ) ;
+		Size = MAP_APPFONT ( 52, 8 ) ;
 		Text [ en-US ] = "~Spacing" ;
 	};
 	MetricField MTR_FLD_DISTANCE
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_DISTANCE";
+		HelpID = "cui:MetricField:RID_SVXPAGE_LINE_DEF:MTR_FLD_DISTANCE" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 66 , 79  ) ;
-		Size = MAP_APPFONT ( 43 , 12 ) ;
+		Pos = MAP_APPFONT ( 66, 79 ) ;
+		Size = MAP_APPFONT ( 43, 12 ) ;
 		TabStop = TRUE ;
 		Right = TRUE ;
 		Repeat = TRUE ;
@@ -588,9 +586,9 @@ TabPage RID_SVXPAGE_LINE_DEF
 	};
 	CheckBox CBX_SYNCHRONIZE
 	{
-	    HelpID = "cui:CheckBox:RID_SVXPAGE_LINE_DEF:CBX_SYNCHRONIZE";
-        Pos = MAP_APPFONT ( 12 , 95  ) ;
-        Size = MAP_APPFONT ( 174 , 10 ) ;
+		HelpID = "cui:CheckBox:RID_SVXPAGE_LINE_DEF:CBX_SYNCHRONIZE" ;
+		Pos = MAP_APPFONT ( 12, 95 ) ;
+		Size = MAP_APPFONT ( 174, 10 ) ;
 		Text [ en-US ] = "~Fit to line width" ;
 		TabStop = TRUE ;
 	};
@@ -599,240 +597,236 @@ TabPage RID_SVXPAGE_LINE_DEF
 
 	FixedText FT_LINESTYLE
 	{
-		Pos = MAP_APPFONT ( 12 , 16  ) ;
-        Size = MAP_APPFONT ( 52 , 8 ) ;
-        Text [ en-US ] = "Line style" ;
+		Pos = MAP_APPFONT ( 12, 16 ) ;
+		Size = MAP_APPFONT ( 52, 8 ) ;
+		Text [ en-US ] = "Line style" ;
 	};
 	ListBox LB_LINESTYLES
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_LINESTYLES";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINE_DEF:LB_LINESTYLES" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 66 , 14  ) ;
-        Size = MAP_APPFONT ( 120 , 80 ) ;
+		Pos = MAP_APPFONT ( 66, 14 ) ;
+		Size = MAP_APPFONT ( 120, 80 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	PushButton BTN_ADD
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_ADD";
-		Pos = MAP_APPFONT ( 198 , 14  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_ADD" ;
+		Pos = MAP_APPFONT ( 198, 14 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Add..." ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_MODIFY
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_MODIFY";
-		Pos = MAP_APPFONT ( 198 , 34  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_MODIFY" ;
+		Pos = MAP_APPFONT ( 198, 34 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Modify..." ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_DELETE
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_DELETE";
-		Pos = MAP_APPFONT ( 198 , 54  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINE_DEF:BTN_DELETE" ;
+		Pos = MAP_APPFONT ( 198, 54 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Delete..." ;
 		TabStop = TRUE ;
 	};
 	ImageButton BTN_LOAD
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_LINE_DEF:BTN_LOAD";
-		Pos = MAP_APPFONT ( 198 , 74  ) ;
-		Size = MAP_APPFONT ( 16 , 16 ) ;
+		HelpID = "cui:ImageButton:RID_SVXPAGE_LINE_DEF:BTN_LOAD" ;
+		Pos = MAP_APPFONT ( 198, 74 ) ;
+		Size = MAP_APPFONT ( 16, 16 ) ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Load Line Styles" ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-				File = "sc05501.bmp" ;
+				File = "sc05501.png" ;
 			};
-			MASKCOLOR
 		};
 	};
 	ImageButton BTN_SAVE
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_LINE_DEF:BTN_SAVE";
-		Pos = MAP_APPFONT ( 198 , 96  ) ;
-		Size = MAP_APPFONT ( 16 , 16 ) ;
+		HelpID = "cui:ImageButton:RID_SVXPAGE_LINE_DEF:BTN_SAVE" ;
+		Pos = MAP_APPFONT ( 198, 96 ) ;
+		Size = MAP_APPFONT ( 16, 16 ) ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Save Line Styles" ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-				File = "sc05502.bmp" ;
+				File = "sc05502.png" ;
 			};
-			MASKCOLOR
 		};
 	};
 	Control CTL_PREVIEW
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 135  ) ;
-		Size = MAP_APPFONT ( 248 , 40 ) ;
+		Pos = MAP_APPFONT ( 6, 135 ) ;
+		Size = MAP_APPFONT ( 248, 40 ) ;
 	};
 
-    String STR_START_TYPE
-    {
+	String STR_START_TYPE
+	{
 		Text [ en-US ] = "Start type" ;
-    };
-    String STR_END_TYPE
-    {
+	};
+	String STR_END_TYPE
+	{
 		Text [ en-US ] = "End type" ;
-     };
-    String STR_START_NUM
-    {
+	};
+	String STR_START_NUM
+	{
 		Text [ en-US ] = "Start number" ;
-    };
-    String STR_END_NUM
-    {
+	};
+	String STR_END_NUM
+	{
 		Text [ en-US ] = "End number" ;
-    };
-    String STR_START_LENGTH
-    {
+	};
+	String STR_START_LENGTH
+	{
 		Text [ en-US ] = "Start length" ;
-    };
-    String STR_END_LENGTH
-    {
+	};
+	String STR_END_LENGTH
+	{
 		Text [ en-US ] = "End length" ;
-    };
+	};
 };
 
 // Defining LineEnds --------------------
 
 TabPage RID_SVXPAGE_LINEEND_DEF
 {
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	HelpId = HID_LINE_ENDDEF ;
 	Hide = TRUE ;
 	Text [ en-US ] = "Arrowheads" ;
 
 	FixedLine FL_TIP
 	{
-		Pos = MAP_APPFONT ( 6 , 3  ) ;
-		Size = MAP_APPFONT ( 248 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 248, 8 ) ;
 		Text [ en-US ] = "Organize arrow styles" ;
 	};
 	FixedText FI_TIP
 	{
-		Pos = MAP_APPFONT ( 6 , 123  ) ;
-        Size = MAP_APPFONT ( 252 , 8 ) ;
-        Text [ en-US ] = "Add a selected object to create new arrow styles." ;
+		Pos = MAP_APPFONT ( 6, 123 ) ;
+		Size = MAP_APPFONT ( 252, 8 ) ;
+		Text [ en-US ] = "Add a selected object to create new arrow styles." ;
 		WordBreak = TRUE ;
 	};
 
 	FixedText FT_LINE_END_STYLE
 	{
-        Pos = MAP_APPFONT ( 12 , 32  ) ;
-        Size = MAP_APPFONT ( 84 , 8 ) ;
-        Text [ en-US ] = "Arrow style" ;
+		Pos = MAP_APPFONT ( 12, 32 ) ;
+		Size = MAP_APPFONT ( 84, 8 ) ;
+		Text [ en-US ] = "Arrow style" ;
 	};
 	Edit EDT_NAME
 	{
-	    HelpID = "cui:Edit:RID_SVXPAGE_LINEEND_DEF:EDT_NAME";
+		HelpID = "cui:Edit:RID_SVXPAGE_LINEEND_DEF:EDT_NAME" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 98 , 14  ) ;
-        Size = MAP_APPFONT ( 87 , 12 ) ;
+		Pos = MAP_APPFONT ( 98, 14 ) ;
+		Size = MAP_APPFONT ( 87, 12 ) ;
 		TabStop = TRUE ;
 	};
 	FixedText FT_TITLE
 	{
-        Pos = MAP_APPFONT ( 12 , 16  ) ;
-        Size = MAP_APPFONT ( 84 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 16 ) ;
+		Size = MAP_APPFONT ( 84, 8 ) ;
 		Text [ en-US ] = "~Title" ;
 	};
 	ListBox LB_LINEENDS
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_LINEEND_DEF:LB_LINEENDS";
+		HelpID = "cui:ListBox:RID_SVXPAGE_LINEEND_DEF:LB_LINEENDS" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 98 , 30  ) ;
-        Size = MAP_APPFONT ( 87 , 80 ) ;
+		Pos = MAP_APPFONT ( 98, 30 ) ;
+		Size = MAP_APPFONT ( 87, 80 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		DDExtraWidth = TRUE ;
 	};
 	PushButton BTN_ADD
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_ADD";
-		Pos = MAP_APPFONT ( 198 , 14  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_ADD" ;
+		Pos = MAP_APPFONT ( 198, 14 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Add..." ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_MODIFY
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_MODIFY";
-		Pos = MAP_APPFONT ( 198 , 34  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_MODIFY" ;
+		Pos = MAP_APPFONT ( 198, 34 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Modify..." ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_DELETE
 	{
-	    HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_DELETE";
-		Pos = MAP_APPFONT ( 198 , 54  ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		HelpID = "cui:PushButton:RID_SVXPAGE_LINEEND_DEF:BTN_DELETE" ;
+		Pos = MAP_APPFONT ( 198, 54 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "~Delete..." ;
 		TabStop = TRUE ;
 	};
 	ImageButton BTN_LOAD
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_LINEEND_DEF:BTN_LOAD";
-		Pos = MAP_APPFONT ( 198 , 74  ) ;
-		Size = MAP_APPFONT ( 16 , 16 ) ;
+		HelpID = "cui:ImageButton:RID_SVXPAGE_LINEEND_DEF:BTN_LOAD" ;
+		Pos = MAP_APPFONT ( 198, 74 ) ;
+		Size = MAP_APPFONT ( 16, 16 ) ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Load Arrow Styles" ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-				File = "sc05501.bmp" ;
+				File = "sc05501.png" ;
 			};
-			MASKCOLOR
 		};
 	};
 	ImageButton BTN_SAVE
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_LINEEND_DEF:BTN_SAVE";
-		Pos = MAP_APPFONT ( 198 , 96  ) ;
-		Size = MAP_APPFONT ( 16 , 16 ) ;
+		HelpID = "cui:ImageButton:RID_SVXPAGE_LINEEND_DEF:BTN_SAVE" ;
+		Pos = MAP_APPFONT ( 198, 96 ) ;
+		Size = MAP_APPFONT ( 16, 16 ) ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Save Arrow Styles" ;
 		ButtonImage = Image
 		{
 			ImageBitmap = Bitmap
 			{
-				File = "sc05502.bmp" ;
+				File = "sc05502.png" ;
 			};
-			MASKCOLOR
 		};
 	};
 
 	Control CTL_PREVIEW
 	{
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 135  ) ;
-		Size = MAP_APPFONT ( 248 , 40 ) ;
+		Pos = MAP_APPFONT ( 6, 135 ) ;
+		Size = MAP_APPFONT ( 248, 40 ) ;
 	};
 
 };
- // RID_SVXDLG_LINE ----------------------------------------------------------
+// RID_SVXDLG_LINE ----------------------------------------------------------
 TabDialog RID_SVXDLG_LINE
 {
 	OutputSize = TRUE ;
 	SvLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 176 ) ;
+	Size = MAP_APPFONT ( 289, 176 ) ;
 	Text [ en-US ] = "Line" ;
 	Moveable = TRUE ;
 	TabControl TAB_CONTROL
 	{
 		OutputSize = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 3 ) ;
-		Size = MAP_APPFONT ( 260 , 135 ) ;
+		Pos = MAP_APPFONT ( 3, 3 ) ;
+		Size = MAP_APPFONT ( 260, 135 ) ;
 		PageList =
 		{
 			PageItem
@@ -846,7 +840,7 @@ TabDialog RID_SVXDLG_LINE
 				Identifier = RID_SVXPAGE_SHADOW ;
 				PageResID = RID_SVXPAGE_SHADOW ;
 				Text [ en-US ] = "Shadow" ;
-			};		
+			};
 			PageItem
 			{
 				Identifier = RID_SVXPAGE_LINE_DEF ;
@@ -871,33 +865,4 @@ TabDialog RID_SVXDLG_LINE
 	};
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ******************************************************************* EOF
