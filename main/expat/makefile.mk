@@ -38,17 +38,16 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=expat-2.2.3
-TARFILE_MD5=f053af63ef5f39bd9b78d01fbc203334
+TARFILE_NAME=expat-2.2.9
+TARFILE_MD5=875a2c2ff3e8eb9e5a5cd62db2033ab5
 ADDITIONAL_FILES=lib$/makefile.mk
-PATCH_FILES=$(TARFILE_NAME).patch \
-            expat-winapi.patch
+PATCH_FILES=$(TARFILE_NAME).patch
 
 CONFIGURE_DIR=
 .IF "$(OS)"=="WNT"
 CONFIGURE_ACTION=
 .ELSE
-CONFIGURE_ACTION=.$/configure
+CONFIGURE_ACTION=.$/configure --without-docbook
 .ENDIF
 
 BUILD_DIR=lib

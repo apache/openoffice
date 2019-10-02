@@ -216,6 +216,11 @@ ifeq ($(strip $(ENABLE_GRAPHITE)),TRUE)
 gb_GLOBALDEFS += -DENABLE_GRAPHITE
 endif
 
+# Required for correct Windows function call ABI for expat static library
+ifeq ($(SYSTEM_EXPAT),NO)
+gb_GLOBALDEFS += -DXML_STATIC
+endif
+
 gb_GLOBALDEFS := $(sort $(gb_GLOBALDEFS))
 
 include $(GBUILDDIR)/Deliver.mk
