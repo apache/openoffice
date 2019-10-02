@@ -895,6 +895,11 @@ CDEFS+=$(CDEFS_PRESET)
 CDEFS+=-DTIMELOG
 .ENDIF
 
+# Required for correct Windows function call ABI for expat static library
+.IF "$(SYSTEM_EXPAT)"=="NO"
+CDEFS+=-DXML_STATIC
+.ENDIF
+
 CDEFSCXX=
 CDEFSOBJ=
 CDEFSSLO=-DSHAREDLIB -D_DLL_
