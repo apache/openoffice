@@ -159,11 +159,9 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
     {
         try
         {
-printf("ScriptProtocolHandler::dispatchWithNotification()\n");
             ::rtl::OUString xStringUri = ::rtl::Uri::decode( aURL.Complete,
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
             bool bIsDocumentScript = ( xStringUri.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
-printf("URI is %s\n", ::rtl::OUStringToOString (xStringUri, RTL_TEXTENCODING_UTF8).pData->buffer);
 
             if ( bIsDocumentScript )
             {
