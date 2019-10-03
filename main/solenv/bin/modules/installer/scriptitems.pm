@@ -34,7 +34,7 @@ use installer::remover;
 use installer::systemactions;
 
 use File::Spec;
-use SvnRevision;
+use RepoRevision;
 use ExtensionsLst;
 
 use strict;
@@ -992,7 +992,7 @@ sub replace_setup_variables
 	my $productkey = $productname . " " . $productversion;
 
     my $scsrevision;
-    $scsrevision = "" unless ( $scsrevision = SvnRevision::DetectRevisionId(File::Spec->catfile($ENV{'SRC_ROOT'}, File::Spec->updir())) );
+    $scsrevision = "" unless ( $scsrevision = RepoRevision::DetectRevisionId(File::Spec->catfile($ENV{'SRC_ROOT'}, File::Spec->updir())) );
 
 	# string $buildid, which is used to replace the setup variable <buildid>
 	

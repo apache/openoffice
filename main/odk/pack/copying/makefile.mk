@@ -31,7 +31,7 @@ TARGET=copying
 #----------------------------------------------------------------
 
 SCM_ROOT_PATH=$(shell dirname $(SRC_ROOT))
-SCMREVISION=$(shell $(PERL) -I$(SOLARENV)/bin/modules -e "use SvnRevision; print SvnRevision::DetectRevisionId(\"$(SCM_ROOT_PATH)\")")
+SCMREVISION=$(shell $(PERL) -I$(SOLARENV)/bin/modules -e "use RepoRevision; print RepoRevision::DetectRevisionId(\"$(SCM_ROOT_PATH)\")")
 
 IDLLIST:={$(subst,/,/ $(shell @$(FIND) $(IDLOUT)/com -type f))}
 DESTIDLLIST={$(subst,$(IDLOUT),$(DESTDIRIDL) $(IDLLIST))}

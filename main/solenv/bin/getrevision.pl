@@ -31,8 +31,8 @@ BEGIN {
 }
 use lib (@lib_dirs);
 
-use SvnRevision;
+use RepoRevision;
 
 my $scm_root_dir=dirname($ENV{SRC_ROOT});
 
-print SvnRevision::DetectRevisionId("$scm_root_dir");
+print RepoRevision::DetectRevisionId("$scm_root_dir");
