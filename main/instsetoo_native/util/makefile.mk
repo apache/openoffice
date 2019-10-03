@@ -162,6 +162,7 @@ VERBOSESWITCH+=-log
 SRC_RELEASE_OUT_DIR=$(shell cd $(OUT) && pwd)$/AOO_SRC_Release
 
 aoo_srcrelease: $(SOLARENV)$/bin$/srcrelease.xml
+	$(PERL) -I$(SOLARENV)/bin/modules -e "use RepoRevision; print RepoRevision::DetectRevisionId(\"$(SRC_ROOT)\")" > $(SOLARENV)$/inc$/reporevision.lst
 	@-$(MKDIR) $(OUT)$/AOO_SRC_Release
 	$(ANT) -f $(SOLARENV)$/bin$/srcrelease.xml -q -Dbasedir=$(SOURCE_ROOT_DIR) -Dout.dir=$(SRC_RELEASE_OUT_DIR)
 
