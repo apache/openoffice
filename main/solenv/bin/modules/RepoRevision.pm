@@ -23,11 +23,29 @@
 
 package RepoRevision;
 
-#old SVN code unchanged
+sub DetectRevisionIdFromFile ($)
+{
+	my $path = shift;
+	my $id = undef;
+
+	open( my $fh, '<', $path ) || return undef;
+	$id = <$fh>;
+	close $fh;
+	return $id;
+}
+
+sub DetectRevisionIdFromGit ($)
+{
+	my $path = shift;
+	my $id = undef;
+
+	$id = `git log -1 --pretty=format:%h --abbrev=10`;
+	return $id;
+}
+
 sub DetectRevisionIdFromSVN ($)
 {
 	my $path = shift;
-
 	my $id = undef;
 
 	open my $proc, "cd $path && svn info 2>\&1 |";
@@ -36,8 +54,7 @@ sub DetectRevisionIdFromSVN ($)
 		if (/svn: E155007:/ || /svn: '.' is not a working copy/)
 		{
 			# Not in an SVN repository.
-			$id = DetectRevisionIdFromGit($path);
-			last;
+			return undef;
 		}
 		else
 		{
@@ -49,7 +66,6 @@ sub DetectRevisionIdFromSVN ($)
 		}
 	}
 	close $proc;
-
 	return $id;
 }
 
@@ -57,20 +73,24 @@ sub DetectRevisionIdFromSVN ($)
 sub DetectRevisionId ($)
 {
 	my $path = shift;
-
 	my $id = undef;
-	#test if path points to a git repository. if true return is 0 else positive number.
-	my $isNotGit= `[ -d .git ] || git rev-parse --git-dir > /dev/null 2>&1`;
-	if ($isNotGit)
+
+	my $NotGit = `cd $path && git rev-parse --git-dir > /dev/null 2>&1`;
+	if (!$NotGit || -d ".git" || -d "$path/.git")
 	{
-		$id = DetectRevisionIdFromSVN ($path);
+		$id = DetectRevisionIdFromGit ($path);
 	}
 	else
 	{
-		#returns directly the hash of the current checkout.
-		$id = `git log -1 --pretty=format:%h --abbrev=10`;
+		$id = DetectRevisionIdFromSVN ($path);
 	}
 
+	if (!$id)
+	{
+		#NOTE: Magic cookie file 'reporevision.lst' created by aoo_srcrelease
+		$id = DetectRevisionIdFromFile ("$ENV{'SOLARENV'}/inc/reporevision.lst");
+		if (!$id) { $id = "unknown-rev" };
+	}
 	return $id;
 }
 
