@@ -21,7 +21,7 @@
 
 
 
-package SvnRevision;
+package RepoRevision;
 
 #old SVN code unchanged
 sub DetectRevisionIdFromSVN ($)
