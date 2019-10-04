@@ -24,13 +24,18 @@
 $(eval $(call gb_Module_Module,cppuhelper))
 
 $(eval $(call gb_Module_add_targets,cppuhelper,\
-	GoogleTest_cppuhelper_ifcontainer \
-	GoogleTest_cppuhelper_unourl \
 	Library_cppuhelper \
 	Package_inc \
 	Package_findsofficepath \
 	Package_unorc \
 ))
+
+ifeq ($(ENABLE_UNIT_TESTS),YES)
+$(eval $(call gb_Module_add_check_targets,cppuhelper,\
+	GoogleTest_cppuhelper_ifcontainer \
+	GoogleTest_cppuhelper_unourl \
+))
+endif
 
 
 
