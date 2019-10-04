@@ -25,7 +25,7 @@ $(eval $(call gb_StaticLibrary_StaticLibrary,commoncpp))
 
 $(eval $(call gb_StaticLibrary_add_package_headers,commoncpp,codemaker_inc))
 
-$(eval $(call gb_Library_add_precompiled_header,commoncpp,$(SRCDIR)/commoncpp/inc/pch/precompiled_commoncpp))
+$(eval $(call gb_StaticLibrary_add_precompiled_header,commoncpp,$(SRCDIR)/commoncpp/inc/pch/precompiled_commoncpp))
 
 #$(eval $(call gb_StaticLibrary_add_api,commoncpp,\
 #	udkapi \
