@@ -349,6 +349,7 @@ define gb_LinkTarget__get_external_headers_check
 ifneq ($$(SELF),$$*)
 $$(eval $$(call gb_Output_info,LinkTarget $$* not defined: Assuming headers to be there!,ALL))
 endif
+$$(if $$(findstring /,$$*), , $$(error gb_LinkTarget__get_external_headers_check trying to create $$@ as a plain file))
 $$@ : COMMAND := $$(call gb_Helper_abbreviate_dirs, mkdir -p $$(dir $$@) && touch $$@ && mkdir -p $(call gb_LinkTarget_get_target,)pdb/$$(dir $$*))
 
 endef
@@ -1009,6 +1010,7 @@ endef
 
 define gb_LinkTarget__add_internal_headers
 $(call gb_LinkTarget_get_headers_target,$(1)) : $(2)
+$(if $(word 2, $(strip $(subst /, $() $(),$(1)))), , $(error gb_LinkTarget__add_internal_headers passing top level directory $(1) to gb_LinkTarget_get_external_headers_target ))
 $(2) :|	$(call gb_LinkTarget_get_external_headers_target,$(1))
 
 endef

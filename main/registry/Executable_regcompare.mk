@@ -23,7 +23,7 @@
 
 $(eval $(call gb_Executable_Executable,regcompare))
 
-$(eval $(call gb_Library_add_package_headers,regcompare,registry_inc))
+$(eval $(call gb_Executable_add_package_headers,regcompare,registry_inc))
 
 $(eval $(call gb_Executable_set_include,regcompare,\
 	$$(INCLUDE) \

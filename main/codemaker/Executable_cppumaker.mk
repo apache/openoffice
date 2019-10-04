@@ -25,9 +25,9 @@ $(eval $(call gb_Executable_Executable,cppumaker))
 
 $(eval $(call gb_Executable_set_targettype_gui,cppumaker,NO))
 
-$(eval $(call gb_StaticLibrary_add_package_headers,cppumaker,codemaker_inc))
+$(eval $(call gb_Executable_add_package_headers,cppumaker,codemaker_inc))
 
-$(eval $(call gb_Library_add_precompiled_header,cppumaker,$(SRCDIR)/commoncpp/inc/pch/precompiled_cppumaker))
+$(eval $(call gb_Executable_add_precompiled_header,cppumaker,$(SRCDIR)/commoncpp/inc/pch/precompiled_cppumaker))
 
 $(eval $(call gb_Executable_set_include,cppumaker,\
 	$$(INCLUDE) \

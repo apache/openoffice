@@ -25,9 +25,9 @@ $(eval $(call gb_Executable_Executable,javamaker))
 
 $(eval $(call gb_Executable_set_targettype_gui,javamaker,NO))
 
-$(eval $(call gb_StaticLibrary_add_package_headers,javamaker,codemaker_inc))
+$(eval $(call gb_Executable_add_package_headers,javamaker,codemaker_inc))
 
-$(eval $(call gb_Library_add_precompiled_header,javamaker,$(SRCDIR)/commoncpp/inc/pch/precompiled_javamaker))
+$(eval $(call gb_Executable,javamaker,$(SRCDIR)/commoncpp/inc/pch/precompiled_javamaker))
 
 $(eval $(call gb_Executable_set_include,javamaker,\
 	$$(INCLUDE) \
