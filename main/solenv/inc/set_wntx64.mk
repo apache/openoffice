@@ -47,6 +47,10 @@ USE_CDEFS_X64+= -DWIN32 -D_AMD64_=1 -D_CRT_SECURE_NO_DEPRECATE -D_CRT_NONSTDC_NO
 USE_CFLAGS_X64+=-Zi -Fd$(MISC_X64)/$(@:b).pdb
 USE_CDEFS_X64+=-DDEBUG
 .ENDIF # "$(debug)"!=""
+# Required for correct Windows function call ABI for expat static library
+.IF "$(SYSTEM_EXPAT)"=="NO"
+USE_CDEFS_X64+=-DXML_STATIC
+.ENDIF
 USE_CFLAGS_X64+=$(CFLAGS_X64)
 USE_CDEFS_X64+=$(CDEFS_X64)
 INCLUDE_X64=$(subst,/stl$(SPACECHAR),dont_use_stl$(SPACECHAR) $(INCLUDE))
