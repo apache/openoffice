@@ -42,10 +42,10 @@ TARGET=openssl
 	@echo "openssl disabled...."
 .ENDIF
 
-OPENSSL_NAME=openssl-1.0.2p
+OPENSSL_NAME=openssl-1.0.2t
 
 TARFILE_NAME=$(OPENSSL_NAME)
-TARFILE_MD5=ac5eb30bf5798aa14b1ae6d0e7da58df
+TARFILE_MD5=ef66581b80f06eae42f5268bc0b50c6d
 
 CONFIGURE_DIR=.
 CONFIGURE_ACTION=config

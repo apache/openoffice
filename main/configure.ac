@@ -5719,6 +5719,7 @@ if test "$_os" = "WINNT" -a "$WITH_MINGWIN" != "yes" -a "$SYSTEM_OPENSSL" = "NO"
     AC_PATH_PROG(NASM_EXE, nasm.exe)
     if test -z "$NASM_EXE"; then
       with_nasm_home="NO_NASM_HOME"
+      AC_MSG_ERROR([NASM is required to build on Windows, please install or use --with-nasm-home],,)
     else
       with_nasm_home="NASM_IN_PATH"
     fi
