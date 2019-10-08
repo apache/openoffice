@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ---------------------------------------------------------------
+
+// include ---------------------------------------------------------------
 #include <sfx2/sfx.hrc>
 #include "doc.hrc"
 #include "docvor.hrc"
@@ -29,83 +30,79 @@
 
 // DLG_ORGANIZE ----------------------------------------------------------
 
-#define MASKCOLOR	MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; }
-
 ModalDialog DLG_ORGANIZE
 {
 	HelpId = CMD_SID_ORGANIZER ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 271 , 162 ) ;
+	Size = MAP_APPFONT ( 271, 162 ) ;
 	Text [ en-US ] = "Template Management" ;
 	Moveable = TRUE ;
 	HelpButton BTN_HELP
 	{
-		Pos = MAP_APPFONT ( 205 , 43 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		Pos = MAP_APPFONT ( 205, 43 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		TabStop = TRUE ;
 	};
 	OKButton BTN_OK
 	{
-		Pos = MAP_APPFONT ( 205 , 6 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
-		/* ### ACHTUNG: Neuer Text in Resource? Schließen : Schlie˜en */
-		/* ### ACHTUNG: Neuer Text in Resource? Schließen : Schlie˜en */
+		Pos = MAP_APPFONT ( 205, 6 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "Close" ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
 	};
 	PushButton BTN_FILES
 	{
-	    HelpID = "sfx2:PushButton:DLG_ORGANIZE:BTN_FILES";
-		Pos = MAP_APPFONT ( 205 , 143 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		HelpID = "sfx2:PushButton:DLG_ORGANIZE:BTN_FILES" ;
+		Pos = MAP_APPFONT ( 205, 143 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "~File..." ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_ADDRESSTEMPLATE
 	{
-	    HelpID = "sfx2:PushButton:DLG_ORGANIZE:BTN_ADDRESSTEMPLATE";
-		Pos = MAP_APPFONT ( 205 , 124 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		HelpID = "sfx2:PushButton:DLG_ORGANIZE:BTN_ADDRESSTEMPLATE" ;
+		Pos = MAP_APPFONT ( 205, 124 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "~Address Book..." ;
 	};
 	ListBox LB_LEFT_TYP
 	{
-	    HelpID = "sfx2:ListBox:DLG_ORGANIZE:LB_LEFT_TYP";
+		HelpID = "sfx2:ListBox:DLG_ORGANIZE:LB_LEFT_TYP" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 144 ) ;
-		Size = MAP_APPFONT ( 94 , 55 ) ;
+		Pos = MAP_APPFONT ( 3, 144 ) ;
+		Size = MAP_APPFONT ( 94, 55 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		CurPos = 0 ;
 		StringList [ en-US ] =
 		{
-			< "Templates" ; Default ; > ;
-			< "Documents" ; Default ; > ;
+			< "Templates" ; Default ;	> ;
+			< "Documents" ; Default ;	> ;
 		};
 	};
 	ListBox LB_RIGHT_TYP
 	{
-	    HelpID = "sfx2:ListBox:DLG_ORGANIZE:LB_RIGHT_TYP";
+		HelpID = "sfx2:ListBox:DLG_ORGANIZE:LB_RIGHT_TYP" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 103 , 144 ) ;
-		Size = MAP_APPFONT ( 94 , 55 ) ;
+		Pos = MAP_APPFONT ( 103, 144 ) ;
+		Size = MAP_APPFONT ( 94, 55 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		CurPos = 1 ;
 		StringList [ en-US ] =
 		{
-			< "Templates" ; Default ; > ;
-			< "Documents" ; Default ; > ;
+			< "Templates" ; Default ;	> ;
+			< "Documents" ; Default ;	> ;
 		};
 	};
 	Control LB_LEFT
 	{
 		HelpId = HID_CTL_ORGANIZER_LEFT ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 6 ) ;
-		Size = MAP_APPFONT ( 94 , 132 ) ;
+		Pos = MAP_APPFONT ( 3, 6 ) ;
+		Size = MAP_APPFONT ( 94, 132 ) ;
 		TabStop = TRUE ;
 		ClipChildren = TRUE ;
 	};
@@ -113,8 +110,8 @@ ModalDialog DLG_ORGANIZE
 	{
 		HelpId = HID_CTL_ORGANIZER_RIGHT ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 103 , 6 ) ;
-		Size = MAP_APPFONT ( 94 , 132 ) ;
+		Pos = MAP_APPFONT ( 103, 6 ) ;
+		Size = MAP_APPFONT ( 94, 132 ) ;
 		TabStop = TRUE ;
 		ClipChildren = TRUE ;
 	};
@@ -142,9 +139,9 @@ ModalDialog DLG_ORGANIZE
 	};
 	MenuButton BTN_EDIT
 	{
-	    HelpID = "sfx2:MenuButton:DLG_ORGANIZE:BTN_EDIT";
-		Pos = MAP_APPFONT ( 205 , 23 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		HelpID = "sfx2:MenuButton:DLG_ORGANIZE:BTN_EDIT" ;
+		Pos = MAP_APPFONT ( 205, 23 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "Commands" ;
 		TabStop = TRUE ;
 		ButtonMenu = Menu
@@ -165,8 +162,6 @@ ModalDialog DLG_ORGANIZE
 				{
 					Identifier = ID_DELETE ;
 					HelpId = HID_ORGANIZE_DELETE ;
-					/* ### ACHTUNG: Neuer Text in Resource? ~Löschen : ~L÷schen */
-					/* ### ACHTUNG: Neuer Text in Resource? ~Löschen : ~L÷schen */
 					Text [ en-US ] = "~Delete" ;
 					AccelKey = KeyCode
 					{
@@ -242,75 +237,47 @@ ModalDialog DLG_ORGANIZE
 	};
 	Image IMG_OPENED_FOLDER
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "folderop.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "folderop.png" ;} ;
 	};
 	Image IMG_CLOSED_FOLDER
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "foldercl.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "foldercl.png" ;} ;
 	};
 	Image IMG_OPENED_DOC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "doccl.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "doccl.png" ;} ;
 	};
 	Image IMG_CLOSED_DOC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "doccl.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "doccl.png" ;} ;
 	};
 	Image IMG_OPENED_FOLDER_HC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "folderop_h.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "folderop_h.png" ;} ;
 	};
 	Image IMG_CLOSED_FOLDER_HC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "foldercl_h.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "foldercl_h.png" ;} ;
 	};
 	Image IMG_OPENED_DOC_HC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "doccl_h.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "doccl_h.png" ;} ;
 	};
 	Image IMG_CLOSED_DOC_HC
 	{
-		MASKCOLOR ;
-		ImageBitmap = Bitmap { File = "doccl_h.bmp" ; } ;
+		ImageBitmap = Bitmap {File = "doccl_h.png" ;} ;
 	};
-	/*    FixedText FT_DEFAULT_TEMPLATE_LABEL
+	/*FixedText FT_DEFAULT_TEMPLATE_LABEL
 	{
-		Pos = MAP_APPFONT ( 3 , 161 ) ;
-		Size = MAP_APPFONT ( 61 , 10 ) ;
+		Pos = MAP_APPFONT ( 3, 161 ) ;
+		Size = MAP_APPFONT ( 61, 10 ) ;
 		Text [ en-US ] = "Default template:" ;
 	};
 	FixedText FT_DEFAULT_TEMPLATE
 	{
-		Pos = MAP_APPFONT ( 66 , 161 ) ;
-		Size = MAP_APPFONT ( 131 , 10 ) ;
+		Pos = MAP_APPFONT ( 66, 161 ) ;
+		Size = MAP_APPFONT ( 131, 10 ) ;
 	};*/
 };
- // ********************************************************************** EOF
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF
