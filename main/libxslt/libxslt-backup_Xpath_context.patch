@@ -1,0 +1,93 @@
+From 5b0965010abf274f7a3a1291d16dde34c167e8a7 Mon Sep 17 00:00:00 2001
+From: Nick Wellnhofer <wellnhofer@aevum.de>
+Date: Wed, 12 Jun 2019 11:58:44 +0200
+Subject: [PATCH] Backup XPath context node in xsltInitCtxtKey
+
+Regression caused by commit 029d0e96.
+
+Closes #66.
+---
+ libxslt/keys.c            |  3 +++
+ tests/docs/bug-221.xml    |  9 +++++++++
+ tests/general/bug-221.out |  2 ++
+ tests/general/bug-221.xsl | 15 +++++++++++++++
+ 4 files changed, 29 insertions(+)
+ create mode 100644 tests/docs/bug-221.xml
+ create mode 100644 tests/general/bug-221.out
+ create mode 100644 tests/general/bug-221.xsl
+
+diff misc/libxslt-1.1.33/libxslt/keys.c misc/build/libxslt-1.1.33/libxslt/keys.c
+index 2881056e..a1f150aa 100644
+--- misc/libxslt-1.1.33/libxslt/keys.c
++++ misc/build/libxslt-1.1.33/libxslt/keys.c
+@@ -629,6 +629,7 @@ xsltInitCtxtKey(xsltTransformContextPtr ctxt, xsltDocumentPtr idoc,
+     xmlNodePtr oldContextNode;
+     xsltDocumentPtr oldDocInfo;
+     int	oldXPPos, oldXPSize;
++    xmlNodePtr oldXPNode;
+     xmlDocPtr oldXPDoc;
+     int oldXPNsNr;
+     xmlNsPtr *oldXPNamespaces;
+@@ -667,6 +668,7 @@ fprintf(stderr, "xsltInitCtxtKey %s : %d\n", keyDef->name, ctxt->keyInitLevel);
+     oldDocInfo = ctxt->document;
+     oldContextNode = ctxt->node;
+ 
++    oldXPNode = xpctxt->node;
+     oldXPDoc = xpctxt->doc;
+     oldXPPos = xpctxt->proximityPosition;
+     oldXPSize = xpctxt->contextSize;
+@@ -865,6 +867,7 @@ error:
+     /*
+     * Restore context state.
+     */
++    xpctxt->node = oldXPNode;
+     xpctxt->doc = oldXPDoc;
+     xpctxt->nsNr = oldXPNsNr;
+     xpctxt->namespaces = oldXPNamespaces;
+diff misc/libxslt-1.1.33/tests/docs/bug-221.xml misc/build/libxslt-1.1.33/tests/docs/bug-221.xml
+new file mode 100644
+index 00000000..d9d4bacf
+--- /dev/null
++++ misc/build/libxslt-1.1.33/tests/docs/bug-221.xml
+@@ -0,0 +1,9 @@
++<model>
++    <resource>
++        <action name="one"/>
++    </resource>
++    <resource>
++        <action name="one"/>
++        <action name="two"/>
++    </resource>
++</model>
+diff misc/libxslt-1.1.33/tests/general/bug-221.out misc/build/libxslt-1.1.33/tests/general/bug-221.out
+new file mode 100644
+index 00000000..96c105e2
+--- /dev/null
++++ misc/build/libxslt-1.1.33/tests/general/bug-221.out
+@@ -0,0 +1,2 @@
++<?xml version="1.0"?>
++<r>one</r><r>two</r>
+diff misc/libxslt-1.1.33/tests/general/bug-221.xsl misc/build/libxslt-1.1.33/tests/general/bug-221.xsl
+new file mode 100644
+index 00000000..9b4af652
+--- /dev/null
++++ misc/build/libxslt-1.1.33/tests/general/bug-221.xsl
+@@ -0,0 +1,15 @@
++<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
++
++<xsl:key name="actions" match="/model/resource/action" use="@name"/>
++
++<xsl:template match="action">
++    <xsl:if test="generate-id(key('actions', @name)[1]) = generate-id(.)">
++        <r><xsl:value-of select="@name"/></r>
++    </xsl:if>
++</xsl:template>
++
++<xsl:template match="/">
++    <xsl:apply-templates select="model/resource/action"/>
++</xsl:template>
++
++</xsl:stylesheet>
+-- 
+2.11.0
+
