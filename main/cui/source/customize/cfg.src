@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 ﻿
+
 // include ---------------------------------------------------------------
 #include <cuires.hrc>
 #include "cfg.hrc"
@@ -65,37 +66,37 @@ TabDialog RID_SVXDLG_CUSTOMIZE
 };
 
 #define TEXT_MENU \
-	Text [ en-US ] = "Menu" ;\
+	Text [ en-US ] = "Menu" ; \
 
 #define TEXT_BEGIN_GROUP \
-	Text [ en-US ] = "Begin a Group" ;\
+	Text [ en-US ] = "Begin a Group" ; \
 
 #define TEXT_RENAME \
-	Text [ en-US ] = "Rename..." ;\
+	Text [ en-US ] = "Rename..." ; \
 
 #define TEXT_DELETE \
-	Text [ en-US ] = "Delete..." ;\
+	Text [ en-US ] = "Delete..." ; \
 
 #define TEXT_DELETE_NODOTS \
-	Text [ en-US ] = "Delete" ;\
+	Text [ en-US ] = "Delete" ; \
 
 #define TEXT_MOVE \
-	Text [ en-US ] = "Move..." ;\
+	Text [ en-US ] = "Move..." ; \
 
 #define TEXT_DEFAULT_STYLE \
-	Text [ en-US ] = "Restore Default Settings" ;\
+	Text [ en-US ] = "Restore Default Settings" ; \
 
 #define TEXT_DEFAULT_COMMAND \
-	Text [ en-US ] = "Restore Default Command" ;\
+	Text [ en-US ] = "Restore Default Command" ; \
 
 #define TEXT_TEXT_ONLY \
-	Text [ en-US ] = "Text only" ;\
+	Text [ en-US ] = "Text only" ; \
 
 #define TEXT_TOOLBAR_NAME \
-	Text [ en-US ] = "Toolbar Name" ;\
+	Text [ en-US ] = "Toolbar Name" ; \
 
 #define TEXT_SAVE_IN \
-	Text [ en-US ] = "Save In" ;\
+	Text [ en-US ] = "Save In" ; \
 
 TabPage RID_SVXPAGE_MENUS
 {
@@ -219,10 +220,10 @@ TabPage RID_SVXPAGE_MENUS
 		HelpID = "cui:MultiLineEdit:RID_SVXPAGE_MENUS:ED_DESCRIPTION" ;
 		Pos = MAP_APPFONT ( 6, 216 ) ;
 		Size = MAP_APPFONT ( 261, 36 ) ;
-		Border = TRUE;
-		VScroll = TRUE;
-		IgnoreTab = TRUE;
-		ReadOnly = TRUE;
+		Border = TRUE ;
+		VScroll = TRUE ;
+		IgnoreTab = TRUE ;
+		ReadOnly = TRUE ;
 	};
 };
 
@@ -449,7 +450,7 @@ ModalDialog MD_MENU_ORGANISER
 	Text [ en-US ] = "New Menu" ;
 	SvLook = TRUE ;
 	Moveable = TRUE ;
-	HelpId = HID_SVX_CONFIG_MENU_ORGANIZER;
+	HelpId = HID_SVX_CONFIG_MENU_ORGANIZER ;
 	FixedText TXT_MENU_NAME
 	{
 		Pos = MAP_APPFONT ( 6, 8 ) ;
@@ -587,7 +588,7 @@ ModalDialog MD_ICONSELECTOR
 	Size = MAP_APPFONT ( 240, 152 ) ;
 	Text [ en-US ] = "Change Icon" ;
 	Moveable = TRUE ;
-	HelpId = HID_SVX_CONFIG_ICON_SELECTOR;
+	HelpId = HID_SVX_CONFIG_ICON_SELECTOR ;
 	FixedText FT_SYMBOLS
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
@@ -601,10 +602,10 @@ ModalDialog MD_ICONSELECTOR
 		Scroll = TRUE ;
 		LineSpacing = TRUE ;
 		Customize = FALSE ;
-	};	   
+	};
 	OKButton BTN_OK
 	{
-		Pos = MAP_APPFONT ( 60, 130 ) ; 
+		Pos = MAP_APPFONT ( 60, 130 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
@@ -627,7 +628,7 @@ ModalDialog MD_ICONSELECTOR
 		Pos = MAP_APPFONT ( 184, 7 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
- 	   	Text[ en-US ] = "Import..." ;
+		Text [ en-US ] = "Import..." ;
 	};
 	PushButton BTN_DELETE
 	{
@@ -635,20 +636,20 @@ ModalDialog MD_ICONSELECTOR
 		Pos = MAP_APPFONT ( 184, 24 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
- 	   	Text[ en-US ] = "Delete..." ;
+		Text [ en-US ] = "Delete..." ;
 	};
 	FixedText FT_NOTE
 	{
-		Pos = MAP_APPFONT ( 12, 95 ) ; 
+		Pos = MAP_APPFONT ( 12, 95 ) ;
 		Size = MAP_APPFONT ( 200, 24 ) ;
 		Text [ en-US ] = "Note:\nThe size of an icon should be 16x16 pixel to achieve best quality. Different sized icons will be scaled automatically." ;
 		Left = TRUE ;
 		WordBreak = TRUE;
 	};
-	FixedLine FL_SEPARATOR 
+	FixedLine FL_SEPARATOR
 	{
-		Pos = MAP_APPFONT ( 0, 120 );
-		Size = MAP_APPFONT ( 240, 8 );
+		Pos = MAP_APPFONT ( 0, 120 ) ;
+		Size = MAP_APPFONT ( 240, 8 ) ;
 	};
 	Color IMAGE_BTN_COLOR
 	{
@@ -657,7 +658,7 @@ ModalDialog MD_ICONSELECTOR
 		Blue = 0xC000 ;
 	};
 };
-//added for issue83555
+// added for issue83555
 ModalDialog MD_ICONCHANGE
 {
 	HelpID = "cui:ModalDialog:MD_ICONCHANGE" ;
@@ -672,7 +673,7 @@ ModalDialog MD_ICONCHANGE
 		Size = MAP_APPFONT ( 24, 24 ) ;
 		Fixed = Image
 		{
-		
+
 		};
 	};
 	FixedText FTCHGE_DESCRIPTION
@@ -681,20 +682,20 @@ ModalDialog MD_ICONCHANGE
 		Size = MAP_APPFONT ( 200, 50 ) ;
 		Text [ en-US ] = "The files listed below could not be imported.\nThe file format could not be interpreted." ;
 	};
-	
+
 	MultiLineEdit EDT_ADDR
 	{
 		HelpID = "cui:MultiLineEdit:MD_ICONCHANGE:EDT_ADDR" ;
 		Pos = MAP_APPFONT ( 30, 38) ;
 		Size = MAP_APPFONT ( 140, 83 ) ;
-		Border = TRUE;
-	  //  VScroll = TRUE;
-		IgnoreTab = TRUE;
-		ReadOnly = TRUE;
+		Border = TRUE ;
+		//VScroll = TRUE ;
+		IgnoreTab = TRUE ;
+		ReadOnly = TRUE ;
 	};
 	OKButton MD_BTN_OK
 	{
-		Pos = MAP_APPFONT ( 68, 131 ) ; 
+		Pos = MAP_APPFONT ( 68, 131 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
@@ -708,22 +709,22 @@ String RID_SVXSTR_IMPORT_ICON_ERROR
 	Text [ en-US ] = "The files listed below could not be imported. The file format could not be interpreted." ;
 };
 
-String RID_SVXSTR_DELETE_ICON_CONFIRM  //added for issue73355
+String RID_SVXSTR_DELETE_ICON_CONFIRM // added for issue73355
 {
 	Text [ en-US ] = "Are you sure to delete the image?" ;
 };
 
-String RID_SVXSTR_REPLACE_ICON_WARNING  //added for issue73355
+String RID_SVXSTR_REPLACE_ICON_WARNING // added for issue73355
 {
 	Text [ en-US ] = "The icon %ICONNAME is already contained in the image list.\nWould you like to replace the existing icon?" ;
 };
 
-String RID_SVXSTR_REPLACE_ICON_CONFIRM //added for issue73355
+String RID_SVXSTR_REPLACE_ICON_CONFIRM // added for issue73355
 {
 	Text [ en-US ] = "Confirm Icon Replacement" ;
 };
 
-String RID_SVXSTR_YESTOALL //added for issue73355
+String RID_SVXSTR_YESTOALL // added for issue73355
 {
 	Text [ en-US ] = "Yes to All" ;
 };
