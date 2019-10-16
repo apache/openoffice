@@ -37,9 +37,9 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=curl-7.61.1
-TARFILE_MD5=4762f41ef0dba751d1c7a3060a1c6ec6
-PATCH_FILES=
+TARFILE_NAME=curl-7.66.0
+TARFILE_MD5=8cb2898a9adc106075ac3cdc2b965bf6
+PATCH_FILES=buildssh.patch
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
 
@@ -139,7 +139,8 @@ OUT2INC= \
 	include$/curl$/typecheck-gcc.h  	\
 	include$/curl$/stdcheaders.h  	\
 	include$/curl$/mprintf.h	    \
-	include$/curl$/system.h
+	include$/curl$/system.h			\
+	include$/curl$/urlapi.h
 
 
 # --- Targets ------------------------------------------------------
