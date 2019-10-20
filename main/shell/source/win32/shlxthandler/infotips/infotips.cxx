@@ -269,7 +269,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
             msg += meta_info_accessor.getTagData( META_INFO_DESCRIPTION );
         }
 
-        //display midified time formatted into locale representation.
+        //display modified time formatted into locale representation.
         if ( iso8601_date_to_local_date(meta_info_accessor.getTagData(META_INFO_MODIFIED )).length() > 0)
         {
 			if ( msg != EMPTY_STRING )
@@ -278,6 +278,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
 			msg += iso8601_date_to_local_date(meta_info_accessor.getTagData(META_INFO_MODIFIED ));
 		}
     }
+
     catch (const std::exception&)
     {
         //return E_FAIL;
@@ -293,7 +294,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
     }
 
 
-    //finalize and assignthe string.
+    //finalize and assign the string.
     LPMALLOC lpMalloc;
     HRESULT hr = SHGetMalloc(&lpMalloc);
 
@@ -354,7 +355,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::Load(LPCOLESTR pszFileName, DWORD /*dwMode*/
     std::string fnameA = WStringToString(fname);
 
     // #115531#
-    // ZeroMemory because strncpy doesn't '\0'-terminates the destination
+    // ZeroMemory because strncpy doesn't '\0'-terminate the destination
     // string; reserve the last place in the buffer for the final '\0' 
     // that's why '(sizeof(m_szFileName) - 1)'
     ZeroMemory(m_szFileName, sizeof(m_szFileName));
