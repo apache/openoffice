@@ -609,13 +609,6 @@ File gid_File_Lib_MacOSXSpell
 	Dir = SCP2_OOO_BIN_DIR;
 End
 
-File gid_File_Lib_avmediaQuickTime
-	TXT_FILE_BODY;
-	Styles = (PACKED);
-	Name = LIBNAME(avmediaQuickTime);
-	Dir = SCP2_OOO_BIN_DIR;
-End
-
 File gid_File_Lib_avmediaMacAVF
 	TXT_FILE_BODY;
 	Styles = (PACKED);
