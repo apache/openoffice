@@ -510,11 +510,6 @@ $(eval $(call gb_Library_add_libs,vcl,\
 	-framework Carbon \
 	-framework CoreFoundation \
 ))
-# ??? what about this
-#ifneq ($(MACOSX_DEPLOYMENT_TARGET),10.7)
-ifneq ($(MACOSX_DEPLOYMENT_TARGET),$(filter $(MACOSX_DEPLOYMENT_TARGET), 10.7 10.8))
-$(eval $(call gb_Library_add_ldflags,vcl, $$(LDFLAGS) -framework QuickTime ))
-endif
 endif
 
 ifeq ($(OS),WNT)

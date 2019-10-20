@@ -195,11 +195,6 @@ SHL1STDLIBS+= \
 	$(BASEBMPLIB) \
 	-lAppleRemote$(DLLPOSTFIX)
 
-# the QuickTime API has been removed in OSX SDK 10.7
-.IF "${MACOSX_DEPLOYMENT_TARGET:s/.//}"<"107"
-SHL1STDLIBS+= -framework QuickTime
-.ENDIF
-
 LIB1FILES+= \
             $(SLB)$/sala11y.lib
 .ENDIF
