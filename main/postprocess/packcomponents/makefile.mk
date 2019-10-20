@@ -313,7 +313,6 @@ my_components += \
 .IF "$(OS)" == "MACOSX"
 my_components += \
     component/avmedia/source/macavf/avmediaMacAVF \
-    component/avmedia/source/quicktime/avmediaQuickTime \
     component/fpicker/source/aqua/fps_aqua \
     component/lingucomponent/source/spellcheck/macosxspell/MacOSXSpell \
     macab1 \
