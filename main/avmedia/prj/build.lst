@@ -8,4 +8,4 @@ av  avmedia\source\win	    	nmake	-	all	av_win	            									NULL
 av	avmedia\source\java			nmake	-	all	av_java	            									NULL
 av	avmedia\source\macavf       nmake	-	all	av_macavf				    							NULL
 av	avmedia\source\gstreamer	nmake	-	all	av_gstreamer	            							NULL
-av	avmedia\util				nmake	-	all	av_util av_viewer av_framework av_win av_java av_gstreamer	NULL
+av	avmedia\util				nmake	-	all	av_util av_viewer av_framework av_win av_java av_macavf av_gstreamer	NULL
