@@ -26,10 +26,14 @@
 	// TODO: use computed include file name
 	#include_next <list>
 #elif defined(_MSC_VER)
-	#include <../../VC/include/list>
-	// MSVC's list would cause a lot of expression-result-unused warnings
-	// unless it is compiled in iterator-debugging mode. Silence this noise
-	#pragma warning(disable:4555)
+    // MSVC's list would cause a lot of expression-result-unused warnings
+    // unless it is compiled in iterator-debugging mode. Silence this noise temporarily.
+    #pragma warning(push)
+    #pragma warning(disable:4555)
+    #include <../../VC/include/list>
+    #pragma warning(pop)
+#elif defined(__cplusplus) && (__cplusplus >= 201103L)
+    #include_next <list>
 #else // fall back to boost/tr1
 	#include <boost/tr1/tr1/list>
 #endif
