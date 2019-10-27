@@ -32,6 +32,8 @@
     #pragma warning(disable:4555)
     #include <../../VC/include/list>
     #pragma warning(pop)
+#elif defined(__cplusplus) && (__cplusplus >= 201103L)
+    #include_next <list>
 #else // fall back to boost/tr1
     #include <boost/tr1/tr1/list>
 #endif

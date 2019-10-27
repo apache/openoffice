@@ -27,6 +27,8 @@
 	// TODO: use computed include file name
 	#include "utility"
 	#include_next <set>
+#elif defined(__cplusplus) && (__cplusplus >= 201103L)
+    #include_next <set>
 #elif defined(_MSC_VER)
 	#include <../../VC/include/set>
 #else // fall back to boost/tr1
