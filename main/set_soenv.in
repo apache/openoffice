@@ -2167,11 +2167,6 @@ if( defined($outfile_bat))
 # XI. Moving the output file to the build home directory.
 #--------------------------------------------------------
 #
-$tmp = $SRC_ROOT.$ds.$outfile;
-if (rename( $outfile, $tmp ) ne 1)
-{  `mv -f $outfile $tmp`;
-}
-
 $tmp = $SRC_ROOT.$ds.$outfile_sh;
 if (rename( $outfile_sh, $tmp ) ne 1)
 {  `mv -f $outfile_sh $tmp`;
