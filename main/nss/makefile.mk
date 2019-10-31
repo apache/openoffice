@@ -42,7 +42,10 @@ all:
 TARFILE_NAME=nss-3.25-with-nspr-4.12
 TARFILE_MD5=4ec9a36c0f7c9360b149491c013b8d50
 TARFILE_ROOTDIR=nss-3.25
-PATCH_FILES=nss.patch
+PATCH_FILES=nss.patch \
+	nss_bug_1438426.patch \
+	nss_bug_1348767.patch \
+	nss_bug_1437734.patch
 
 .IF "$(OS)"=="MACOSX"
 MACOS_SDK_DIR=$(SDK_PATH)
