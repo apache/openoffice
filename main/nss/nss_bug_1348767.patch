@@ -1,0 +1,14 @@
+diff -uNrp misc/nss-3.25/nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocsprequest.c misc/build/nss-3.25/nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocsprequest.c
+--- misc/nss-3.25/nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocsprequest.c	2016-06-20 14:11:28.000000000 -0300
++++ misc/build/nss-3.25/nss/lib/libpkix/pkix_pl_nss/pki/pkix_pl_ocsprequest.c	2019-10-27 12:38:20.163600289 -0300
+@@ -89,8 +89,8 @@ pkix_pl_OcspRequest_Hashcode(
+         PKIX_HASHCODE(ocspRq->signerCert, &signerHash, plContext,
+                 PKIX_CERTHASHCODEFAILED);
+ 
+-        *pHashcode = (((((extensionHash << 8) || certHash) << 8) ||
+-                dateHash) << 8) || signerHash;
++        *pHashcode = (((((extensionHash << 8) | certHash) << 8) |
++                dateHash) << 8) | signerHash;
+ 
+ cleanup:
+ 
