@@ -1,6 +1,17 @@
 --- misc/nss-3.25/nss/cmd/signtool/sign.c	2016-06-20 14:11:28.000000000 -0300
-+++ misc/build/nss-3.25/nss/cmd/signtool/sign.c	2019-10-28 21:16:32.798336910 -0300
-@@ -43,6 +43,7 @@ SignArchive(char *tree, char *keyName, c
++++ misc/build/nss-3.25/nss/cmd/signtool/sign.c	2019-11-01 13:32:56.496828470 -0300
+@@ -8,6 +8,10 @@
+ #include "blapi.h"
+ #include "sechash.h" /* for HASH_GetHashObject() */
+
++#if defined(_MSC_VER) && _MSC_VER < 1900
++#define snprintf _snprintf
++#endif
++
+ static int create_pk7(char *dir, char *keyName, int *keyType);
+ static int jar_find_key_type(CERTCertificate *cert);
+ static int manifesto(char *dirname, char *install_script, PRBool recurse);
+@@ -43,6 +47,7 @@ SignArchive(char *tree, char *keyName, c
      int status;
      char tempfn[FNSIZE], fullfn[FNSIZE];
      int keyType = rsaKey;
@@ -8,7 +19,7 @@
  
      metafile = meta_file;
      optimize = _optimize;
-@@ -81,11 +82,18 @@ SignArchive(char *tree, char *keyName, c
+@@ -81,11 +86,18 @@ SignArchive(char *tree, char *keyName, c
          }
  
          /* rsa/dsa to zip */
@@ -32,7 +43,7 @@
          JzipAdd(fullfn, tempfn, zipfile, compression_level);
  
          /* Loop through all files & subdirectories, add to archive */
-@@ -95,22 +103,44 @@ SignArchive(char *tree, char *keyName, c
+@@ -95,22 +107,44 @@ SignArchive(char *tree, char *keyName, c
      }
      /* mf to zip */
      strcpy(tempfn, "META-INF/manifest.mf");
@@ -85,7 +96,7 @@
          JzipAdd(fullfn, tempfn, zipfile, compression_level);
      }
  
-@@ -413,6 +443,7 @@ static int
+@@ -413,6 +447,7 @@ static int
  manifesto_xpi_fn(char *relpath, char *basedir, char *reldir, char *filename, void *arg)
  {
      char fullname[FNSIZE];
@@ -93,7 +104,7 @@
  
      if (verbosity >= 0) {
          PR_fprintf(outputFD, "--> %s\n", relpath);
-@@ -426,7 +457,10 @@ manifesto_xpi_fn(char *relpath, char *ba
+@@ -426,7 +461,10 @@ manifesto_xpi_fn(char *relpath, char *ba
          if (!PL_HashTableLookup(extensions, ext))
              return 0;
      }
