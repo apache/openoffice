@@ -21,6 +21,7 @@
 
 #include <unicode/regex.h>
 #include <unicode/unistr.h>
+#include <cstdlib>
 #include <string>
 #include <fstream>
 #include <iostream>
