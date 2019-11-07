@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
- // include ---------------------------------------------------------------
+// include ---------------------------------------------------------------
 
 #include <cuires.hrc>
 #include "optmemory.hrc"
@@ -61,7 +61,7 @@ TabPage OFA_TP_MEMORY
 		Value = 100 ;
 		Last = 100 ;
 		SpinSize = 1 ;
-		MaxTextLength = 4;
+		MaxTextLength = 4 ;
 	};
 	FixedLine GB_GRAPHICCACHE
 	{
@@ -81,9 +81,9 @@ TabPage OFA_TP_MEMORY
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( COL3, ROW3 ) ;
 		Size = MAP_APPFONT ( WIDTH2, RSC_CD_TEXTBOX_HEIGHT ) ;
-		Minimum = 1;
-		Maximum = 256;
-		SpinSize = 1;
+		Minimum = 1 ;
+		Maximum = 256 ;
+		SpinSize = 1 ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
 	};
@@ -105,12 +105,12 @@ TabPage OFA_TP_MEMORY
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( COL3, ROW4 ) ;
 		Size = MAP_APPFONT ( WIDTH2, RSC_CD_TEXTBOX_HEIGHT ) ;
-		Minimum = 10;
-		Maximum = 2560;
-		SpinSize = 1;
+		Minimum = 10 ;
+		Maximum = 2560 ;
+		SpinSize = 1 ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
-		DecimalDigits = 1;
+		DecimalDigits = 1 ;
 	};
 	FixedText FT_GRAPHICOBJECTCACHE_UNIT
 	{
@@ -183,8 +183,8 @@ TabPage OFA_TP_MEMORY
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( COL3, ROW7 ) ;
 		Size = MAP_APPFONT ( WIDTH2, RSC_CD_TEXTBOX_HEIGHT ) ;
-		Minimum = 1;
-		Maximum = 1024;
+		Minimum = 1 ;
+		Maximum = 1024 ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
 	};
@@ -206,3 +206,5 @@ TabPage OFA_TP_MEMORY
 		Text [ en-US ] = "Enable systray Quickstarter" ;
 	};
 };
+
+// ********************************************************************** EOF
