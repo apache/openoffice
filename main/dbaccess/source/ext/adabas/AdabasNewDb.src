@@ -343,17 +343,17 @@ StrictFormat    = TRUE;
 
 Image CHECK_GREEN
 {
-	ImageBitmap = Bitmap { File = "nu07.bmp"; };
+	ImageBitmap = Bitmap { File = "nu07.png"; };
 	MaskColor	= Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 Image UNCHECK_RED
 {
-	ImageBitmap = Bitmap { File = "nu08.bmp"; };
+	ImageBitmap = Bitmap { File = "nu08.png"; };
 	MaskColor	= Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 Image DEFAULT_BLUE
 {
-	ImageBitmap = Bitmap { File = "nu09.bmp"; };
+	ImageBitmap = Bitmap { File = "nu09.png"; };
 	MaskColor	= Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 /* Fehlermeldungen beim Erstellen einer Adabas DB */

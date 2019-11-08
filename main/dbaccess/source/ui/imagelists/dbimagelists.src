@@ -122,13 +122,13 @@ Image IMG_TABLEFOLDER_TREE_LHC
 
 Image DATABASE_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "db.bmp"; };
+	ImageBitmap = Bitmap { File = "db.png"; };
 	MaskColor = Color { Red = 0xff00 ; Green = 0x0000 ; Blue = 0xff00 ; };
 };
 
 Image DATABASE_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "db_sch.bmp"; };
+	ImageBitmap = Bitmap { File = "db_sch.png"; };
 	MaskColor = Color { Red = 0xff00 ; Green = 0x0000 ; Blue = 0xff00 ; };
 };
 
@@ -179,25 +179,25 @@ Image VIEW_TREE_ICON_SCH
 
 Image QUERY_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "sx03202.bmp"; };
+	ImageBitmap = Bitmap { File = "sx03202.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERY_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "sxh03202.bmp"; };
+	ImageBitmap = Bitmap { File = "sxh03202.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERYFOLDER_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "sx03201.bmp"; };
+	ImageBitmap = Bitmap { File = "sx03201.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERYFOLDER_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "sxh03201.bmp"; };
+	ImageBitmap = Bitmap { File = "sxh03201.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
