@@ -151,7 +151,7 @@ TabPage TAB_WIZ_COLUMN_SELECT
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "one_right.bmp" ;
+                File = "one_right.png" ;
 			};
 			MaskColor = Color
 			{
@@ -172,7 +172,7 @@ TabPage TAB_WIZ_COLUMN_SELECT
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_right.bmp" ;
+                File = "all_right.png" ;
 			};
 			MaskColor = Color
 			{
@@ -192,7 +192,7 @@ TabPage TAB_WIZ_COLUMN_SELECT
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "one_left.bmp" ;
+                File = "one_left.png" ;
 			};
 			MaskColor = Color
 			{
@@ -212,7 +212,7 @@ TabPage TAB_WIZ_COLUMN_SELECT
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_left.bmp" ;
+                File = "all_left.png" ;
 			};
 			MaskColor = Color
 			{
@@ -380,7 +380,7 @@ TabPage TAB_WIZ_NAME_MATCHING
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "sortup.bmp" ;
+                File = "sortup.png" ;
 			};
 			MaskColor = Color
 			{
@@ -400,7 +400,7 @@ TabPage TAB_WIZ_NAME_MATCHING
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "sortdown.bmp" ;
+                File = "sortdown.png" ;
 			};
 			MaskColor = Color
 			{
@@ -421,7 +421,7 @@ TabPage TAB_WIZ_NAME_MATCHING
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "sortup.bmp" ;
+                File = "sortup.png" ;
 			};
 			MaskColor = Color
 			{
@@ -441,7 +441,7 @@ TabPage TAB_WIZ_NAME_MATCHING
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "sortdown.bmp" ;
+                File = "sortdown.png" ;
 			};
 			MaskColor = Color
 			{
@@ -591,7 +591,7 @@ Image IMG_SORTUP_H
 {
 	ImageBitmap = Bitmap
 	{
-        File = "sortup_h.bmp" ;
+        File = "sortup_h.png" ;
 	};
 	MaskColor = Color
 	{
@@ -605,7 +605,7 @@ Image IMG_SORTDOWN_H
 {
 	ImageBitmap = Bitmap
 	{
-        File = "sortdown_h.bmp" ;
+        File = "sortdown_h.png" ;
 	};
 	MaskColor = Color
 	{

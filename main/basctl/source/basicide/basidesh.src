@@ -336,21 +336,21 @@ ImageButton RID_IMGBTN_REMOVEWATCH
 	SmallStyle = TRUE ;
 	ButtonImage = Image
 	{
-		ImageBitmap = Bitmap { File = "baswatr.bmp" ; };
+		ImageBitmap = Bitmap { File = "baswatr.png" ; };
 		MASKCOLOR
 	};
 	QuickHelpText [ en-US ] = "Remove Watch" ;
 };
 Image RID_IMG_REMOVEWATCH_HC
 {
-    ImageBitmap = Bitmap { File = "baswatr_h.bmp" ; };
+    ImageBitmap = Bitmap { File = "baswatr_h.png" ; };
     MASKCOLOR
 };
 ImageButton RID_IMGBTN_GOTOCALL
 {
 	HelpId = HID_BASICIDE_GOTOALL ;
 	SmallStyle = TRUE ;
-	ButtonImage = Image { ImageBitmap = Bitmap { File = "basgocl.bmp" ; }; } ;
+	ButtonImage = Image { ImageBitmap = Bitmap { File = "basgocl.png" ; }; } ;
 };
 String RID_STR_REMOVEWATCH
 {
@@ -524,12 +524,12 @@ ImageList RID_IMGLST_LAYOUT_HC
 };
 Image RID_IMG_LOCKED
 {
-	ImageBitmap = Bitmap { File = "locked.bmp" ; };
+	ImageBitmap = Bitmap { File = "locked.png" ; };
 	MASKCOLOR
 };
 Image RID_IMG_LOCKED_HC
 {
-    ImageBitmap = Bitmap { File = "locked_h.bmp" ; };
+    ImageBitmap = Bitmap { File = "locked_h.png" ; };
     MASKCOLOR
 };
 Image RID_IMG_INSTALLATION

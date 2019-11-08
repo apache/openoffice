@@ -195,12 +195,12 @@ String STR_LOGICAL_INDEX_NAME
 
 Image IMG_PKEYICON
 {
-	ImageBitmap = Bitmap { File = "pkey.bmp"; };
+	ImageBitmap = Bitmap { File = "pkey.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 Image IMG_PKEYICON_SCH
 {
-	ImageBitmap = Bitmap { File = "pkey_sch.bmp"; };
+	ImageBitmap = Bitmap { File = "pkey_sch.png"; };
 	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
