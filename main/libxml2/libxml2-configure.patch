@@ -1,7 +1,7 @@
-diff -ur misc/libxml2-2.9.9/include/libxml/xmlversion.h misc/build/libxml2-2.9.9/include/libxml/xmlversion.h
---- misc/libxml2-2.9.9/include/libxml/xmlversion.h	2018-03-05 07:54:29.000000000 -0800
-+++ misc/build/libxml2-2.9.9/include/libxml/xmlversion.h	2018-08-22 22:53:15.488158000 -0700
-@@ -273,7 +273,7 @@
+diff -ur misc/libxml2-2.9.10/include/libxml/xmlversion.h misc/build/libxml2-2.9.10/include/libxml/xmlversion.h
+--- misc/libxml2-2.9.10/include/libxml/xmlversion.h	2018-03-05 07:54:29.000000000 -0800
++++ misc/build/libxml2-2.9.10/include/libxml/xmlversion.h	2018-08-22 22:53:15.488158000 -0700
+@@ -270,7 +270,7 @@
   *
   * Whether iconv support is available
   */
@@ -10,7 +10,7 @@ diff -ur misc/libxml2-2.9.9/include/libxml/xmlversion.h misc/build/libxml2-2.9.9
  #define LIBXML_ICONV_ENABLED
  #endif
  
-@@ -300,7 +300,7 @@
+@@ -297,7 +297,7 @@
   *
   * Whether Debugging module is configured in
   */
@@ -19,9 +19,9 @@ diff -ur misc/libxml2-2.9.9/include/libxml/xmlversion.h misc/build/libxml2-2.9.9
  #define LIBXML_DEBUG_ENABLED
  #endif
  
-diff -ur misc/libxml2-2.9.9/xml2-config.in misc/build/libxml2-2.9.9/xml2-config.in
---- misc/libxml2-2.9.9/xml2-config.in	2016-06-07 03:04:14.000000000 -0700
-+++ misc/build/libxml2-2.9.9/xml2-config.in	2018-08-22 22:53:15.489086000 -0700
+diff -ur misc/libxml2-2.9.10/xml2-config.in misc/build/libxml2-2.9.10/xml2-config.in
+--- misc/libxml2-2.9.10/xml2-config.in	2016-06-07 03:04:14.000000000 -0700
++++ misc/build/libxml2-2.9.10/xml2-config.in	2019-11-07 22:50:00.185459398 -0800
 @@ -1,9 +1,14 @@
  #! /bin/sh
  
@@ -41,51 +41,45 @@ diff -ur misc/libxml2-2.9.9/xml2-config.in misc/build/libxml2-2.9.9/xml2-config.
  
  usage()
  {
-@@ -67,7 +72,8 @@
+@@ -65,7 +70,8 @@
  	;;
  
      --cflags)
--       	echo @XML_INCLUDEDIR@ @XML_CFLAGS@
-+	echo -I${includedir}
-+#       	echo @XML_INCLUDEDIR@ @XML_CFLAGS@
+-        cflags="@XML_INCLUDEDIR@ @XML_CFLAGS@"
++        cflags="-I${includedir}"
++#        cflags="@XML_INCLUDEDIR@ @XML_CFLAGS@"
         	;;
  
      --libtool-libs)
-@@ -82,19 +88,26 @@
+@@ -80,18 +86,19 @@
         	;;
  
      --libs)
--        if [ "`uname`" = "Linux" ]
--	then
--	    if [ "@XML_LIBDIR@" = "-L/usr/lib" -o "@XML_LIBDIR@" = "-L/usr/lib64" ]
--	    then
--		echo @XML_LIBS@ @MODULE_PLATFORM_LIBS@
--	    else
--		echo @XML_LIBDIR@ @XML_LIBS@ @MODULE_PLATFORM_LIBS@
--	    fi
--	else
--	    echo @XML_LIBDIR@ @XML_LIBS@ @MODULE_PLATFORM_LIBS@ @WIN32_EXTRA_LIBADD@
--	fi
-+	echo -L${libdir} ${LIBXML2LIB} -lm
-+#        if [ "`uname`" = "Linux" ]
-+#	then
-+#	    if [ "@XML_LIBDIR@" = "-L/usr/lib" -o "@XML_LIBDIR@" = "-L/usr/lib64" ]
-+#	    then
-+#		echo @XML_LIBS@ @MODULE_PLATFORM_LIBS@
-+#	    else
-+#		echo @XML_LIBDIR@ @XML_LIBS@ @MODULE_PLATFORM_LIBS@
-+#	    fi
-+#	else
-+#	    echo @XML_LIBDIR@ @XML_LIBS@ @MODULE_PLATFORM_LIBS@ @WIN32_EXTRA_LIBADD@
-+#	fi
-+
-        	;;
+-        if [ "$2" = "--dynamic" ]; then
+-            shift
+-            libs="@XML_LIBS@"
+-        else
+-            libs="@XML_LIBS@ @XML_PRIVATE_LIBS@ @MODULE_PLATFORM_LIBS@"
+-        fi
+-
+-        if [ "@XML_LIBDIR@" != "-L/usr/lib" -a "@XML_LIBDIR@" != "-L/usr/lib64" ]; then
+-            libs="@XML_LIBDIR@ $libs"
+-        fi
+-
+-        libs="$libs @WIN32_EXTRA_LIBADD@"
++        libs="-L${libdir} ${LIBXML2LIB} -lm"
++        if [ "$2" = "--dynamic" ]; then
++            shift
++#            libs="@XML_LIBS@"
++#        else
++#            libs="@XML_LIBS@ @XML_PRIVATE_LIBS@ @MODULE_PLATFORM_LIBS@"
++        fi
++#
++#        if [ "@XML_LIBDIR@" != "-L/usr/lib" -a "@XML_LIBDIR@" != "-L/usr/lib64" ]; then
++#            libs="@XML_LIBDIR@ $libs"
++#        fi
++#
++#        libs="$libs @WIN32_EXTRA_LIBADD@"
+         ;;
  
-+    print) # ugly configure hack
-+	exit 0
-+	;;
-+
-+
      *)
- 	usage
- 	exit 1
