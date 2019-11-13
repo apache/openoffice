@@ -45,17 +45,11 @@ all:
 LIBXSLTVERSION=$(LIBXSLT_MAJOR).$(LIBXSLT_MINOR).$(LIBXSLT_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(LIBXSLTVERSION)
-TARFILE_MD5=b3bd254a03e46d58f8ad1e4559cd2c2f
+TARFILE_MD5=db8765c8d076f1b6caafd9f2542a304a
 
 # libxslt-internal-symbols: #i112480#: Solaris ld requires symbols to be defined
 PATCH_FILES=libxslt-configure.patch \
-            libxslt-win_manifest.patch \
-            libxslt-backup_Xpath_context.patch \
-            libxslt-CVE-2019-11068.patch \
-            libxslt-CVE-2019-13117.patch \
-            libxslt-CVE-2019-13118.patch
-
-
+            libxslt-win_manifest.patch
 
 # This is only for UNX environment now
 .IF "$(OS)"=="WNT"

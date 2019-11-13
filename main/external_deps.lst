@@ -167,14 +167,14 @@ if ( true )
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXML != YES)
-    MD5 = c04a5a0a042eaa157e8e8c9eabe76bd6
-    name = libxml2-2.9.9.tar.gz
+    MD5 = 10942a1dc23137a8aa07f0639cbfece5
+    name = libxml2-2.9.10.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXSLT != YES)
-    MD5 = b3bd254a03e46d58f8ad1e4559cd2c2f
-    name = libxslt-1.1.33.tar.gz
+    MD5 = db8765c8d076f1b6caafd9f2542a304a
+    name = libxslt-1.1.34.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
