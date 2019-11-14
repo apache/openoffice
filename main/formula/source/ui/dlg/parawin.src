@@ -41,7 +41,7 @@
     {\
         ImageBitmap = Bitmap\
         {\
-            File = "fx.bmp" ; \
+            File = "fx.png" ; \
         };\
         MaskColor = STD_MASKCOLOR;\
     };
@@ -169,7 +169,7 @@ TabPage RID_FORMULATAB_PARAMETER
 
     Image IMG_FX_H
     {
-        ImageBitmap = Bitmap { File = "fx_h.bmp" ; };
+        ImageBitmap = Bitmap { File = "fx_h.png" ; };
         MaskColor = STD_MASKCOLOR;
     };
     
