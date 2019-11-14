@@ -104,42 +104,42 @@ TabPage RID_FORMULATAB_STRUCT
 	};
     Image BMP_STR_CLOSE
 	{
-        ImageBitmap = Bitmap { File = "fapclose.bmp"; };
+        ImageBitmap = Bitmap { File = "fapclose.png"; };
         MaskColor = STD_MASKCOLOR;
 	};
     Image BMP_STR_CLOSE_H
     {
-        ImageBitmap = Bitmap { File = "fapclose_h.bmp"; };
+        ImageBitmap = Bitmap { File = "fapclose_h.png"; };
         MaskColor = STD_MASKCOLOR;
     };
     Image BMP_STR_OPEN
 	{
-        ImageBitmap = Bitmap { File = "fapopen.bmp"; };
+        ImageBitmap = Bitmap { File = "fapopen.png"; };
         MaskColor = STD_MASKCOLOR;
 	};
     Image BMP_STR_OPEN_H
     {
-        ImageBitmap = Bitmap { File = "fapopen_h.bmp"; };
+        ImageBitmap = Bitmap { File = "fapopen_h.png"; };
         MaskColor = STD_MASKCOLOR;
     };
     Image BMP_STR_END
 	{
-        ImageBitmap = Bitmap { File = "fapok.bmp"; };
+        ImageBitmap = Bitmap { File = "fapok.png"; };
         MaskColor = STD_MASKCOLOR;
 	};
     Image BMP_STR_END_H
     {
-        ImageBitmap = Bitmap { File = "fapok_h.bmp"; };
+        ImageBitmap = Bitmap { File = "fapok_h.png"; };
         MaskColor = STD_MASKCOLOR;
     };
     Image BMP_STR_ERROR
 	{
-        ImageBitmap = Bitmap { File = "faperror.bmp"; };
+        ImageBitmap = Bitmap { File = "faperror.png"; };
         MaskColor = STD_MASKCOLOR;
 	};
     Image BMP_STR_ERROR_H
     {
-        ImageBitmap = Bitmap { File = "faperror_h.bmp"; };
+        ImageBitmap = Bitmap { File = "faperror_h.png"; };
         MaskColor = STD_MASKCOLOR;
     };
 	String STR_STRUCT_ERR1
@@ -489,7 +489,7 @@ Image RID_BMP_REFBTN1
 {
 	ImageBitmap = Bitmap
 	{
-		File = "refinp1.bmp";
+		File = "refinp1.png";
 	};
     MaskColor = STD_MASKCOLOR;
 };
@@ -498,7 +498,7 @@ Image RID_BMP_REFBTN1_H
 {
 	ImageBitmap = Bitmap
 	{
-        File = "refinp1_h.bmp";
+        File = "refinp1_h.png";
 	};
     MaskColor = STD_MASKCOLOR;
 };
@@ -507,7 +507,7 @@ Image RID_BMP_REFBTN2
 {
 	ImageBitmap = Bitmap
 	{
-		File = "refinp2.bmp";
+		File = "refinp2.png";
 	};
     MaskColor = STD_MASKCOLOR;
 };
@@ -516,7 +516,7 @@ Image RID_BMP_REFBTN2_H
 {
 	ImageBitmap = Bitmap
 	{
-        File = "refinp2_h.bmp";
+        File = "refinp2_h.png";
 	};
     MaskColor = STD_MASKCOLOR;
 };
