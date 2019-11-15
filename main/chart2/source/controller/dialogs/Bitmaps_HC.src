@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,70 +7,61 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "Bitmaps_HC.hrc"
 
 Image IMG_TYPE_COLUMN_HC
 {
-    ImageBitmap = Bitmap { File = "typecolumn_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typecolumn_16.png" ;} ;
 };
 Image IMG_TYPE_BAR_HC
 {
-	ImageBitmap = Bitmap { File = "typebar_16.png " ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typebar_16.png " ;} ;
 };
 Image IMG_TYPE_PIE_HC
 {
-	ImageBitmap = Bitmap { File = "typepie_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typepie_16.png" ;} ;
 };
 Image IMG_TYPE_LINE_HC
 {
-	ImageBitmap = Bitmap { File = "typepointline_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typepointline_16.png" ;} ;
 };
 Image IMG_TYPE_XY_HC
 {
-	ImageBitmap = Bitmap { File = "typexy_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typexy_16.png" ;} ;
 };
 Image IMG_TYPE_AREA_HC
 {
-	ImageBitmap = Bitmap { File = "typearea_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typearea_16.png" ;} ;
 };
 Image IMG_TYPE_NET_HC
 {
-	ImageBitmap = Bitmap { File = "typenet_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typenet_16.png" ;} ;
 };
 Image IMG_TYPE_STOCK_HC
 {
-    ImageBitmap = Bitmap { File = "typestock_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typestock_16.png" ;} ;
 };
 Image IMG_TYPE_COLUMN_LINE_HC
 {
-    ImageBitmap = Bitmap { File = "typecolumnline_16.png" ; };
-	MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typecolumnline_16.png" ;} ;
 };
 Image IMG_TYPE_BUBBLE_HC
 {
-    ImageBitmap = Bitmap { File = "typebubble_16.png" ; };
-    MaskColor = SC_HC_MASKCOLOR;
+	ImageBitmap = Bitmap {File = "typebubble_16.png" ;} ;
 };
 Bitmap BMP_BUBBLE_1_HC
 {
@@ -149,7 +140,7 @@ Bitmap BMP_CIRCLES_3D_EXPLODED_HC
 //---------------------
 Bitmap BMP_DONUT_2D_HC
 {
-    File = "donut_52x60_h.png" ;
+	File = "donut_52x60_h.png" ;
 };
 Bitmap BMP_DONUT_2D_EXPLODED_HC
 {
@@ -157,11 +148,11 @@ Bitmap BMP_DONUT_2D_EXPLODED_HC
 };
 Bitmap BMP_DONUT_3D_HC
 {
-    File = "donut3d_52x60_h.png" ;
+	File = "donut3d_52x60_h.png" ;
 };
 Bitmap BMP_DONUT_3D_EXPLODED_HC
 {
-    File = "donut3dexploded_52x60_h.png" ;
+	File = "donut3dexploded_52x60_h.png" ;
 };
 //---------------------
 Bitmap BMP_COLUMNS_2D_1_HC
@@ -445,95 +436,94 @@ Bitmap BMP_STOCK_4_HC
 	File = "stockcolumnsattach_52x60_h.png" ;
 };
 //---------------------
-//---------------------
-//---------------------
 //error indicator
 Image BMP_INDICATE_BOTH_VERTI_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errorbothverti_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errorbothverti_30_h.png" ;
+	};
 };
 Image BMP_INDICATE_DOWN_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errordown_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errordown_30_h.png" ;
+	};
 };
 Image BMP_INDICATE_UP_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errorup_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errorup_30_h.png" ;
+	};
 };
 Image BMP_INDICATE_BOTH_HORI_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errorbothhori_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errorbothhori_30_h.png" ;
+	};
 };
 Image BMP_INDICATE_RIGHT_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errorright_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errorright_30_h.png" ;
+	};
 };
 Image BMP_INDICATE_LEFT_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "errorleft_30_h.png" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "errorleft_30_h.png" ;
+	};
 };
 
 //---------------------
 //regression curves
 Image BMP_REGRESSION_NONE_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "regno_h.bmp" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "regno_h.png" ;
+	};
 };
 Image BMP_REGRESSION_LINEAR_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "reglin_h.bmp" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "reglin_h.png" ;
+	};
 };
 Image BMP_REGRESSION_LOG_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "reglog_h.bmp" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "reglog_h.png" ;
+	};
 };
 Image BMP_REGRESSION_EXP_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "regexp_h.bmp" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "regexp_h.png" ;
+	};
 };
 Image BMP_REGRESSION_POWER_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "regpow_h.bmp" ;
-    };
+	ImageBitmap = Bitmap
+	{
+		File = "regpow_h.png" ;
+	};
 };
 //---------------------
 Image IMG_SELECTRANGE_HC
 {
 	ImageBitmap = Bitmap
 	{
-		File = "selectrange.png";
+		File = "selectrange.png" ;
 	};
-    MaskColor = SC_HC_MASKCOLOR;
 };
+
+// ********************************************************************** EOF
