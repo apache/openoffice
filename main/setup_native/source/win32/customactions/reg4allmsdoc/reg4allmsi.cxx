@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #ifdef _MSC_VER
 #pragma warning(push, 1) /* disable warnings within system headers */
 #endif
-#define WIN32_LEAN_AND_MEAN		
+#define WIN32_LEAN_AND_MEAN
 #include <windows.h>
 #include <msiquery.h>
 #ifdef _MSC_VER
@@ -40,7 +40,7 @@ static const CHAR* g_Extensions[] =
 {
     ".doc",     // Microsoft Word Text [0]
     ".dot",     // Microsoft Word Template
-    ".rtf",     // rtf text
+    ".rtf",     // RTF text
     ".docx",    // Office Word 2007 XML document
     ".docm",    // Office Word 2007 XML macro-enabled document
     ".dotx",    // Office Word 2007 XML template
@@ -53,9 +53,9 @@ static const CHAR* g_Extensions[] =
     ".xltx",    // Office Excel 2007 XML template
     ".xltm",    // Office Excel 2007 XML macro-enabled template
     ".xlsb",    // Office Excel 2007 binary workbook (BIFF12)
-    ".ppt",     // Microsoft Powerpoint
-    ".pps",     // Microsoft Powerpoint
-    ".pot",     // Microsoft Powerpoint Template
+    ".ppt",     // Microsoft PowerPoint
+    ".pps",     // Microsoft PowerPoint
+    ".pot",     // Microsoft PowerPoint Template
     ".pptx",    // Office PowerPoint 2007 XML presentation
     ".pptm",    // Office PowerPoint 2007 macro-enabled XML presentation
     ".potx",    // Office PowerPoint 2007 XML template
@@ -109,7 +109,7 @@ static BOOL CheckExtensionInRegistry( LPCSTR lpSubKey )
             OutputDebugStringFormat( "Found value [%s] for key [%s].\n", szBuffer, lpSubKey );
 
             if ( strncmp( szBuffer, "WordPad.Document.1", 18 ) == 0 )
-            {   // We will replace registration for word pad
+            {   // We will replace registration for WordPad
                 bRet = true;
             }
             else if ( strncmp( szBuffer, "OpenOffice.org.", 15 ) == 0 )
@@ -140,7 +140,7 @@ static BOOL CheckExtensionInRegistry( LPCSTR lpSubKey )
                         {
                             OutputDebugStringFormat( "    Found value [%s] in OpenWithList of [%s].\n", szBuffer, lpSubKey );
                             if ( strncmp( szBuffer, "WordPad.exe", 11 ) == 0 )
-                            {   // We will replace registration for word pad
+                            {   // We will replace registration for WordPad
                                 bRet = true;
                             }
                             else if ( nSize > 0 )
@@ -172,7 +172,7 @@ static LONG DeleteSubKeyTree( HKEY RootKey, LPCSTR lpKey )
 	LONG rc = RegOpenKeyExA( RootKey, lpKey, 0, KEY_READ | DELETE, &hKey );
 
 	if (ERROR_SUCCESS == rc)
-	{	
+	{
 		LPCSTR    lpSubKey;
 		DWORD     nMaxSubKeyLen;
 
@@ -183,7 +183,7 @@ static LONG DeleteSubKeyTree( HKEY RootKey, LPCSTR lpKey )
 		while (ERROR_SUCCESS == rc)
         {
 			DWORD nLen = nMaxSubKeyLen;
-			rc = RegEnumKeyExA( hKey, 0, (LPSTR)lpSubKey, &nLen, 0, 0, 0, 0);    // always index zero
+			rc = RegEnumKeyExA( hKey, 0, (LPSTR)lpSubKey, &nLen, 0, 0, 0, 0); // always index zero
 
             if ( ERROR_NO_MORE_ITEMS == rc )
             {
@@ -230,14 +230,14 @@ static BOOL RemoveExtensionInRegistry( LPCSTR lpSubKey )
             DWORD nSubKeys = 1;
             szBuffer[0] = '\0';
 
-            // we get the value of the default key fist and while we are on querying,
+            // we get the value of the default key first and while we are on querying,
             // we ask for the subkey count, too
             lResult = RegQueryValueExA( hSubKey, "", NULL, NULL, (LPBYTE)szBuffer, &nSize );
             if ( ERROR_SUCCESS == lResult )
                 RegQueryInfoKeyA( hSubKey, 0, 0, 0, &nSubKeys, 0, 0, 0, 0, 0, 0, 0 );
             RegCloseKey( hSubKey );
 
-            // we will remove all key with an default value starting with ooostub but
+            // we will remove all key with a default value starting with ooostub but
             // we have to be careful about MSO keys
             if ( strncmp( szBuffer, "opendocument.", 13 ) == 0 )
             {
@@ -276,7 +276,7 @@ bool GetMsiProp( MSIHANDLE handle, LPCSTR name, /*out*/std::string& value )
         MsiGetPropertyA(handle, name, buff, &sz);
         value = buff;
         return true;
-    }            
+    }
     return false;
 }
 
@@ -412,17 +412,17 @@ extern "C" UINT __stdcall LookForRegisteredExtensions( MSIHANDLE handle )
             if ( bWriterEnabled && ! checkSomeExtensionInRegistry( WORD_START, EXCEL_START ) )
             {
                 MsiSetPropertyA( handle, "SELECT_WORD", "1" );
-                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for MicroSoft Word" );
+                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for Microsoft Word" );
             }
             if ( bCalcEnabled && ! checkSomeExtensionInRegistry( EXCEL_START, POWERPOINT_START ) )
             {
                 MsiSetPropertyA( handle, "SELECT_EXCEL", "1" );
-                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for MicroSoft Excel" );
+                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for Microsoft Excel" );
             }
             if ( bImpressEnabled && ! checkSomeExtensionInRegistry( POWERPOINT_START, POWERPOINT_END ) )
             {
                 MsiSetPropertyA( handle, "SELECT_POWERPOINT", "1" );
-                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for MicroSoft PowerPoint" );
+                OutputDebugStringFormat( "LookForRegisteredExtensions: Register for Microsoft PowerPoint" );
             }
         }
     }
@@ -441,7 +441,7 @@ extern "C" UINT __stdcall RegisterSomeExtensions( MSIHANDLE handle )
     {
         registerSomeExtensions( handle, WORD_START, EXCEL_START, true );
         MsiSetFeatureState( handle, L"gm_p_Wrt_MSO_Reg", INSTALLSTATE_LOCAL );
-        OutputDebugStringFormat( "RegisterSomeExtensions: Register for MicroSoft Word" );
+        OutputDebugStringFormat( "RegisterSomeExtensions: Register for Microsoft Word" );
     }
     else
     {
@@ -453,7 +453,7 @@ extern "C" UINT __stdcall RegisterSomeExtensions( MSIHANDLE handle )
     {
         registerSomeExtensions( handle, EXCEL_START, POWERPOINT_START, true );
         MsiSetFeatureState( handle, L"gm_p_Calc_MSO_Reg", INSTALLSTATE_LOCAL );
-        OutputDebugStringFormat( "RegisterSomeExtensions: Register for MicroSoft Excel" );
+        OutputDebugStringFormat( "RegisterSomeExtensions: Register for Microsoft Excel" );
     }
     else
     {
@@ -465,7 +465,7 @@ extern "C" UINT __stdcall RegisterSomeExtensions( MSIHANDLE handle )
     {
         registerSomeExtensions( handle, POWERPOINT_START, POWERPOINT_END, true );
         MsiSetFeatureState( handle, L"gm_p_Impress_MSO_Reg", INSTALLSTATE_LOCAL );
-        OutputDebugStringFormat( "RegisterSomeExtensions: Register for MicroSoft PowerPoint" );
+        OutputDebugStringFormat( "RegisterSomeExtensions: Register for Microsoft PowerPoint" );
     }
     else
     {
@@ -486,7 +486,7 @@ extern "C" UINT __stdcall FindRegisteredExtensions( MSIHANDLE handle )
     }
 
     OutputDebugStringFormat( "FindRegisteredExtensions:" );
-    
+
     bool bRegisterAll = IsSetMsiProp( handle, "REGISTER_ALL_MSO_TYPES" );
 
     if ( IsSetMsiProp( handle, "REGISTER_NO_MSO_TYPES" ) )
@@ -499,7 +499,7 @@ extern "C" UINT __stdcall FindRegisteredExtensions( MSIHANDLE handle )
     else
         OutputDebugStringFormat( "FindRegisteredExtensions: " );
 
-    // setting the msi properties SELECT_* will force registering for all corresponding 
+    // setting the msi properties SELECT_* will force registering for all corresponding
     // file types
     if ( IsSetMsiProp( handle, "SELECT_WORD" ) )
         registerSomeExtensions( handle, WORD_START, EXCEL_START, true );
@@ -515,7 +515,7 @@ extern "C" UINT __stdcall FindRegisteredExtensions( MSIHANDLE handle )
 
 //----------------------------------------------------------
 extern "C" UINT __stdcall DeleteRegisteredExtensions( MSIHANDLE /*handle*/ )
-{         
+{
     OutputDebugStringFormat( "DeleteRegisteredExtensions\n" );
 
     // remove all file extensions
