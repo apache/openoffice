@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@
 
 using namespace std;
 
-namespace 
+namespace
 {
     string GetMsiProperty(MSIHANDLE handle, const string& sProperty)
     {
@@ -80,7 +80,7 @@ namespace
     {
         MsiSetProperty(handle, sProperty.c_str(), TEXT("1"));
     }
-} // namespace 
+} // namespace
 
 extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
 {
@@ -98,16 +98,16 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
     // 1. Searching for "ProductCode" in setup.ini
 
     string sSetupiniPath = sOfficeInstallPath + TEXT("program\\setup.ini");
-    
+
     TCHAR szValue[32767];
 
-    GetPrivateProfileString( 
-        TEXT("Bootstrap"), 
+    GetPrivateProfileString(
+        TEXT("Bootstrap"),
         TEXT("ProductCode"),
         TEXT("INVALIDDIRECTORY"),
         szValue,
         elementsof(szValue),
-        sSetupiniPath.c_str() 
+        sSetupiniPath.c_str()
         );
 
     if ( !_tcsicmp( szValue, TEXT("INVALIDDIRECTORY") ) )
@@ -123,13 +123,13 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
 
     szValue[0] = '\0';
 
-    GetPrivateProfileString( 
-        TEXT("Bootstrap"), 
+    GetPrivateProfileString(
+        TEXT("Bootstrap"),
         TEXT("buildid"),
         TEXT("ISWRONGPRODUCT"),
         szValue,
         elementsof(szValue),
-        sSetupiniPath.c_str() 
+        sSetupiniPath.c_str()
         );
 
     if ( !_tcsicmp( szValue, TEXT("ISWRONGPRODUCT") ) )
@@ -150,7 +150,7 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
         SetMsiProperty( handle, TEXT("ISWRONGPRODUCT"), TEXT("YES") );
         // MessageBox(NULL, "ISWRONGPRODUCT 2 set after searching PRODUCTMAJOR", "DEBUG", MB_OK);
         SetMsiErrorCode( MSI_ERROR_ISWRONGPRODUCT );
-        return ERROR_SUCCESS;		
+        return ERROR_SUCCESS;
     }
 
     // 3. Only for patch: Comparing "PRODUCTMINOR from property table and "ProductMinor" from InfoFile
@@ -164,15 +164,15 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
 
         szValue[0] = '\0';
 
-        GetPrivateProfileString( 
-            TEXT("Bootstrap"), 
+        GetPrivateProfileString(
+            TEXT("Bootstrap"),
             TEXT("ProductBuildid"),
             TEXT("8918"),
             szValue,
             elementsof(szValue),
-            sSetupiniPath.c_str() 
+            sSetupiniPath.c_str()
             );
-            
+
         int InstalledProductMinor = atoi(szValue);
 
         if ( InstalledProductMinor >= PatchProductMinor )
@@ -180,7 +180,7 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
             SetMsiProperty( handle, TEXT("PATCHISOLDER"), TEXT("YES") );
             // MessageBox(NULL, "PATCHISOLDER set", "DEBUG", MB_OK);
             SetMsiErrorCode( MSI_ERROR_PATCHISOLDER );
-            return ERROR_SUCCESS;    
+            return ERROR_SUCCESS;
         }
     }
 
@@ -188,13 +188,13 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
 
     szValue[0] = '\0';
 
-    GetPrivateProfileString( 
-        TEXT("Bootstrap"), 
+    GetPrivateProfileString(
+        TEXT("Bootstrap"),
         TEXT("ALLUSERS"),
         TEXT(""),
         szValue,
         elementsof(szValue),
-        sSetupiniPath.c_str() 
+        sSetupiniPath.c_str()
         );
 
     if ( szValue[0] )
@@ -202,6 +202,7 @@ extern "C" UINT __stdcall GetUserInstallMode(MSIHANDLE handle)
         SetMsiProperty( handle, TEXT("ALLUSERS"), szValue );
         // MessageBox(NULL, "ALLUSERS set", "DEBUG", MB_OK);
     }
-    
+
     return ERROR_SUCCESS;
 }
+
