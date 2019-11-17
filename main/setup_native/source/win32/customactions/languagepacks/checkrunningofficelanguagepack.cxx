@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -81,14 +81,14 @@ static std::_tstring GetMsiProperty( MSIHANDLE handle, const std::_tstring& sPro
 		LPTSTR buffer = reinterpret_cast<LPTSTR>(_alloca(nBytes));
 		ZeroMemory( buffer, nBytes );
 		MsiGetProperty(handle, sProperty.c_str(), buffer, &nChars);
-		result = buffer;			
+		result = buffer;
 	}
 
 	return	result;
 }
-	
+
 static inline bool IsSetMsiProperty(MSIHANDLE handle, const std::_tstring& sProperty)
-{   
+{
 	std::_tstring value = GetMsiProperty(handle, sProperty);
 	return (value.length() > 0);
 }
@@ -116,7 +116,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 
 		// Path names in WININIT.INI must be in short path name form
 
-		if ( 
+		if (
 			GetShortPathNameA( lpExistingFileNameA, szExistingFileNameA, MAX_PATH ) &&
 			(!lpNewFileNameA || GetShortPathNameA( lpNewFileNameA, szNewFileNameA, MAX_PATH ))
 			)
@@ -124,7 +124,7 @@ static BOOL MoveFileEx9x( LPCSTR lpExistingFileNameA, LPCSTR lpNewFileNameA, DWO
 			CHAR	szBuffer[32767];	// The buffer size must not exceed 32K
 			DWORD	dwBufLen = GetPrivateProfileSectionA( RENAME_SECTION, szBuffer, elementsof(szBuffer), WININIT_FILENAME );
 
-			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 chracters
+			CHAR	szRename[MAX_PATH];	// This is enough for at most to times 67 characters
 			strcpy( szRename, szNewFileNameA );
 			strcat( szRename, "=" );
 			strcat( szRename, szExistingFileNameA );
@@ -200,16 +200,14 @@ extern "C" UINT __stdcall IsOfficeRunning( MSIHANDLE handle )
 		} while ( fSuccess && fRenameSucceeded );
 
 		if ( !fRenameSucceeded )
-        {
+		{
 			MsiSetProperty(handle, TEXT("OFFICERUNS"), TEXT("1"));
-            SetMsiErrorCode( MSI_ERROR_OFFICE_IS_RUNNING );
-        }
+			SetMsiErrorCode( MSI_ERROR_OFFICE_IS_RUNNING );
+		}
 
 		FindClose( hFind );
 	}
 
 	return ERROR_SUCCESS;
 }
-
-
 
