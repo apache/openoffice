@@ -2291,7 +2291,7 @@ AC_SUBST(COMNAME)
 
 if test "$_os" = "FreeBSD"; then
     FBSD_GCC_RPATH=
-    if "$COM" = "GCC"; then
+    if test "$COM" = "GCC"; then
         rpath=`$CC --print-file-name libstdc++.so`
         rpath=`realpath $rpath`
         rpath=`dirname $rpath`
