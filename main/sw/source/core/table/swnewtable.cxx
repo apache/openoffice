@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -216,7 +216,7 @@ SwTableBox* lcl_LeftBorder2Box( long nLeft, const SwTableLine* pLine )
         }
         nCurrLeft += pBox->GetFrmFmt()->GetFrmSize().GetWidth();
     }
-    ASSERT( false, "Didn't found wished box" );
+    ASSERT( false, "Didn't find wished box" );
     return 0;
 }
 
@@ -266,7 +266,7 @@ void lcl_ChangeRowSpan( const SwTable& rTable, const long nDiff,
     do
     {
         bGoOn = false; // will be set to true if we found a non-master cell
-        // which has to be manipulated => we have to chekc the previous row, too.
+        // which has to be manipulated => we have to check the previous row, too.
         const SwTableLine* pLine = rTable.GetTabLines()[ nRowIdx ];
         sal_uInt16 nBoxCount = pLine->GetTabBoxes().Count();
         for( sal_uInt16 nCurrBox = 0; nCurrBox < nBoxCount; ++nCurrBox )
@@ -291,10 +291,10 @@ void lcl_ChangeRowSpan( const SwTable& rTable, const long nDiff,
                 {
                     if( nRowSpan > 0 )
                     {   // A master cell
-                         // end of row span behind the deleted area ..
+                         // end of row span behind the deleted area...
                         if( nRowSpan - nDistance > -nDiff )
                             nRowSpan += nDiff;
-                        else // .. or inside the deleted area
+                        else // ...or inside the deleted area
                             nRowSpan = nDistance + 1;
                     }
                     else
@@ -313,11 +313,11 @@ void lcl_ChangeRowSpan( const SwTable& rTable, const long nDiff,
         if( nRowIdx )
             --nRowIdx;
         else
-            bGoOn = false; //robust
+            bGoOn = false; // robust
     } while( bGoOn );
 }
 
-/** CollectBoxSelection(..) create a rectangulare selection based on the given SwPaM
+/** CollectBoxSelection(..) create a rectangular selection based on the given SwPaM
     and prepares the selected cells for merging
 */
 
@@ -619,7 +619,7 @@ long lcl_InsertPosition( SwTable &rTable, std::vector<sal_uInt16>& rInsPos,
         nAddWidth += nWidth;
         sal_uInt16 nCurrBox = pLine->GetTabBoxes().C40_GETPOS(SwTableBox, pBox );
         sal_uInt16 nCurrLine = rTable.GetTabLines().C40_GETPOS(SwTableLine, pLine );
-        ASSERT( nCurrLine != USHRT_MAX, "Time to say Good-Bye.." );
+        ASSERT( nCurrLine != USHRT_MAX, "Time to say goodbye..." );
         if( rInsPos[ nCurrLine ] == USHRT_MAX )
         {
             rInsPos[ nCurrLine ] = nCurrBox;
@@ -701,7 +701,7 @@ sal_Bool SwTable::NewInsertCol( SwDoc* pDoc, const SwSelBoxes& rBoxes,
     {
         SwTableLine* pLine = aLines[ i ];
         sal_uInt16 nInsPos = aInsPos[i];
-        ASSERT( nInsPos != USHRT_MAX, "Didn't found insert position" );
+        ASSERT( nInsPos != USHRT_MAX, "Didn't find insert position" );
         SwTableBox* pBox = pLine->GetTabBoxes()[ nInsPos ];
         if( bBehind )
             ++nInsPos;
@@ -790,7 +790,7 @@ sal_Bool SwTable::NewInsertCol( SwDoc* pDoc, const SwSelBoxes& rBoxes,
 
 For the old table model, ::GetMergeSel(..) is called only,
 for the new table model, PrepareMerge does the main work.
-It modifices all cells to merge (width, border, rowspan etc.) and collects
+It modifies all cells to merge (width, border, rowspan etc.) and collects
 the cells which have to be deleted by Merge(..) afterwards.
 If there are superfluous rows, these cells are put into the deletion list as well.
 
@@ -1009,7 +1009,7 @@ void SwTable::_FindSuperfluousRows( SwSelBoxes& rBoxes,
     }
 }
 
-/** SwTableBox::FindStartOfRowSpan(..) retruns the "master" cell, the cell which
+/** SwTableBox::FindStartOfRowSpan(..) returns the "master" cell, the cell which
     overlaps the given cell, it maybe the cell itself.
 */
 
@@ -1151,7 +1151,7 @@ void lcl_FillSelBoxes( SwSelBoxes &rBoxes, SwTableLine &rLine )
         rBoxes.Insert( rLine.GetTabBoxes()[nCurrBox] );
 }
 
-/** SwTable::InsertSpannedRow(..) inserts "superfluous" rows, i.e. rows containig
+/** SwTable::InsertSpannedRow(..) inserts "superfluous" rows, i.e. rows containing
     overlapped cells only. This is a preparation for an upcoming split.
 */
 
@@ -1407,7 +1407,7 @@ sal_Bool SwTable::NewSplitRow( SwDoc* pDoc, const SwSelBoxes& rBoxes, sal_uInt16
 	_FndBox aFndBox( 0, 0 );
 	aFndBox.SetTableLines( rBoxes, *this );
 
-    if( bSameHeight && pDoc->GetCurrentViewShell() )	//swmod 071108//swmod 071225
+    if( bSameHeight && pDoc->GetCurrentViewShell() ) // swmod 071108 // swmod 071225
     {
         SwSplitLines aRowLines;
         SwSplitLines aSplitLines;
@@ -1475,7 +1475,7 @@ sal_Bool SwTable::NewSplitRow( SwDoc* pDoc, const SwSelBoxes& rBoxes, sal_uInt16
         lcl_UnMerge( *this, *rBoxes[*pCurrBox++], nCnt, bSameHeight );
 
     CHECK_TABLE( *this )
-	//Layout updaten
+	// update layout
 	aFndBox.MakeFrms( *this );
 
     return sal_True;
@@ -1534,7 +1534,7 @@ sal_Bool SwTable::InsertRow( SwDoc* pDoc, const SwSelBoxes& rBoxes,
                 ++nRowIdx;
             if( nRowIdx )
                 lcl_ChangeRowSpan( *this, nCnt, --nRowIdx, true );
-            //Layout update
+            // update layout
             aFndBox.MakeFrms( *this );
 //             aFndBox.RestoreChartData( *this );
         }
@@ -1651,10 +1651,10 @@ void lcl_SearchSelBox( const SwTable &rTable, SwSelBoxes& rBoxes, long nMin, lon
 }
 
 /** void SwTable::CreateSelection(..) fills the selection structure with table cells
-    for a given SwPaM, ie. start and end position inside a table
+    for a given SwPaM, i.e. start and end position inside a table
 */
 
-void SwTable::CreateSelection(  const SwPaM& rPam, SwSelBoxes& rBoxes,
+void SwTable::CreateSelection( const SwPaM& rPam, SwSelBoxes& rBoxes,
     const SearchType eSearch, bool bChkProtected ) const
 {
     ASSERT( bNewModel, "Don't call me for old tables" );
@@ -1718,7 +1718,7 @@ void SwTable::CreateSelection( const SwNode* pStartNd, const SwNode* pEndNd,
                     nTop = nRow;
                     lcl_CheckMinMax( nUpperMin, nUpperMax, *pLine, nCol, true );
                     ++nFound;
-                     // If start and end node are identical, we're nearly done..
+                     // If start and end node are identical, we're nearly done...
                     if( pEndNd == pStartNd )
                     {
                         nBottom = nTop;
