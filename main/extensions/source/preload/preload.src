@@ -162,8 +162,8 @@ TabPage RID_TP_LICENSE
 		{
 			ImageBitmap = Bitmap
 			{
-				File = "arrow.bmp" ;
-				File[ ar ] = "m_arrow.bmp" ;
+				File = "arrow.png" ;
+				File[ ar ] = "m_arrow.png" ;
 			};
 			MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; };
 		};
