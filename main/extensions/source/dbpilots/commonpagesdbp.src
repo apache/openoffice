@@ -92,25 +92,25 @@ TabPage RID_PAGE_TABLESELECTION
 
     Image IMG_TABLE
     {
-	    ImageBitmap = Bitmap { File = "sx03188.bmp"; };
+	    ImageBitmap = Bitmap { File = "sx03188.png"; };
 	    MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
     };
 
     Image IMG_TABLE_HC
     {
-	    ImageBitmap = Bitmap { File = "sxh03188.bmp"; };
+	    ImageBitmap = Bitmap { File = "sxh03188.png"; };
 	    MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
     };
 
     Image IMG_QUERY
     {
-	    ImageBitmap = Bitmap { File = "sx03202.bmp"; };
+	    ImageBitmap = Bitmap { File = "sx03202.png"; };
 	    MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
     };
 
     Image IMG_QUERY_HC
     {
-	    ImageBitmap = Bitmap { File = "sxh03202.bmp"; };
+	    ImageBitmap = Bitmap { File = "sxh03202.png"; };
 	    MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
     };
 
