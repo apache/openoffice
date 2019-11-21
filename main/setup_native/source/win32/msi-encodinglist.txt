@@ -26,7 +26,7 @@ ar    1256  1025
 ar-SA 1256  1025
 as       0  1101   # Assamese
 as-IN    0  1101   # Assamese
-ast   1252  1610
+ast   1252  1610   # Asturian
 be-BY 1251  1059   # Belarusian
 bg    1251  1026   # Bulgarian
 bn       0  2117   # Bengali
@@ -42,15 +42,15 @@ ca-XV 1252  32771  # Catalan Valencian AVL
 cs    1250  1029   # Czech
 cy    1252  1106   # Welsh
 da    1252  1030   # Danish
-de    1252  1031   # German
+de       0  1031   # German
 dgo      0  1604   # Dogri (India)
 dz       0  2129   # Dzongkha (same ID as tibetan bhutan (see i40713))
-el    1253  1032
-en-GB 1252  2057
-en-US 1252  1033
+el    1253  1032   # Greek
+en-GB 1252  2057   # English (GB)
+en-US 1252  1033   # English (US)
 en-ZA 1252  7177
 eo       0  1553   # Esperanto
-es    1252  1034
+es    1252  1034   # Spanish
 et    1257  1061   # Estonian
 eu    1252  1069   # Basque
 fa       0  1065   # Farsi
@@ -68,15 +68,15 @@ he    1255  1037
 hi       0  1081
 hr    1250  1050   # Croatian
 ht    1252  1626   # Haitian
-hu    1250  1038
+hu    1250  1038   # Hungarian
 hy       0  1067   # Armenian
 id    1252  1057   # Indonesian
 is    1252  1039   # Icelandic
 it    1252  1040   # Italian
-ja     932  1041
+ja     932  1041   # Japanese
 jbo      0  1624
 ka       0  1079   # Georgian
-kab      0  1625
+kab      0  1625   # Kabyle
 kid   1252  1033   # key id pseudo language
 kk       0  1087
 km       0  1107   # Khmer
@@ -116,7 +116,7 @@ or       0  1096   # Oriya
 or-IN    0  1096
 pa-IN    0  1094   # Punjabi
 pap      0  2171
-pl    1250  1045
+pl    1250  1045   # Polish
 ps       0  2171
 pt    1252  2070
 pt-BR 1252  1046
