@@ -258,139 +258,139 @@ Bitmap BMP_PLACEHOLDER_TABLE_LARGE_HOVER
 
 Bitmap BMP_FOILN_01
 {
-	File = "foiln01.bmp" ;
+	File = "foiln01.png" ;
 };
 Bitmap BMP_FOILN_01_H
 {
-	File = "foiln01_h.bmp" ;
+	File = "foiln01_h.png" ;
 };
 Bitmap BMP_PAGE
 {
-	File = "page.bmp" ;
+	File = "page.png" ;
 };
 Bitmap BMP_PAGE_H
 {
-	File = "page_h.bmp" ;
+	File = "page_h.png" ;
 };
 Bitmap BMP_PAGE_EXCLUDED
 {
-	File = "pageexcl.bmp" ;
+	File = "pageexcl.png" ;
 };
 Bitmap BMP_PAGE_EXCLUDED_H
 {
-	File = "pageexcl_h.bmp" ;
+	File = "pageexcl_h.png" ;
 };
 Bitmap BMP_PAGEOBJS_EXCLUDED
 {
-	File = "pagobjex.bmp" ;
+	File = "pagobjex.png" ;
 };
 Bitmap BMP_PAGEOBJS_EXCLUDED_H
 {
-	File = "pagobjex_h.bmp" ;
+	File = "pagobjex_h.png" ;
 };
 Bitmap BMP_PAGEOBJS
 {
-	File = "pageobjs.bmp" ;
+	File = "pageobjs.png" ;
 };
 Bitmap BMP_PAGEOBJS_H
 {
-	File = "pageobjs_h.bmp" ;
+	File = "pageobjs_h.png" ;
 };
 Bitmap BMP_OBJECTS
 {
-	File = "objects.bmp" ;
+	File = "objects.png" ;
 };
 Bitmap BMP_OBJECTS_H
 {
-	File = "objects_h.bmp" ;
+	File = "objects_h.png" ;
 };
 Bitmap BMP_OLE
 {
-	File = "ole.bmp" ;
+	File = "ole.png" ;
 };
 Bitmap BMP_OLE_H
 {
-	File = "ole_h.bmp" ;
+	File = "ole_h.png" ;
 };
 Bitmap BMP_GROUP
 {
-	File = "group.bmp" ;
+	File = "group.png" ;
 };
 Bitmap BMP_GROUP_H
 {
-	File = "group_h.bmp" ;
+	File = "group_h.png" ;
 };
 Bitmap BMP_DOC_OPEN
 {
-	File = "docopen.bmp" ;
+	File = "docopen.png" ;
 };
 Bitmap BMP_DOC_OPEN_H
 {
-	File = "docopen_h.bmp" ;
+	File = "docopen_h.png" ;
 };
 Bitmap BMP_DOC_CLOSED
 {
-	File = "docclose.bmp" ;
+	File = "docclose.png" ;
 };
 Bitmap BMP_DOC_CLOSED_H
 {
-	File = "docclose_h.bmp" ;
+	File = "docclose_h.png" ;
 };
 Bitmap BMP_DOC_TEXT
 {
-	File = "doctext.bmp" ;
+	File = "doctext.png" ;
 };
 Bitmap BMP_DOC_TEXT_H
 {
-	File = "doctext_h.bmp" ;
+	File = "doctext_h.png" ;
 };
 Bitmap BMP_EXPAND
 {
-	File = "plus.bmp" ;
+	File = "plus.png" ;
 };
 Bitmap BMP_EXPAND_H
 {
-	File = "plus_h.bmp" ;
+	File = "plus_h.png" ;
 };
 Bitmap BMP_COLLAPSE
 {
-	File = "minus.bmp" ;
+	File = "minus.png" ;
 };
 Bitmap BMP_COLLAPSE_H
 {
-	File = "minus_h.bmp" ;
+	File = "minus_h.png" ;
 };
 Bitmap BMP_GRAPHIC
 {
-	File = "graphic.bmp" ;
+	File = "graphic.png" ;
 };
 Bitmap BMP_GRAPHIC_H
 {
-	File = "graphic_h.bmp" ;
+	File = "graphic_h.png" ;
 };
 Image IMG_PIPETTE_H
 {
-	ImageBitmap = Bitmap { File = "pipette_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "pipette_h.png" ; };
 	MaskColor = IMAGE_MASK_STDCOLOR_HC ;
 };
 Image IMG_GET1OBJECT_H
 {
-	ImageBitmap = Bitmap { File = "get1obj_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "get1obj_h.png" ; };
 	MaskColor = IMAGE_MASK_STDCOLOR_HC ;
 };
 Image IMG_GETALLOBJECT_H
 {
-	ImageBitmap = Bitmap { File = "getallob_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "getallob_h.png" ; };
 	MaskColor = IMAGE_MASK_STDCOLOR_HC ;
 };
 Image IMG_REMOVEBMP_H
 {
-	ImageBitmap = Bitmap { File = "del1bmp_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "del1bmp_h.png" ; };
 	MaskColor = IMAGE_MASK_STDCOLOR_HC ;
 };
 Image IMG_REMOVEALLBMP_H
 {
-	ImageBitmap = Bitmap { File = "delall_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "delall_h.png" ; };
 	MaskColor = IMAGE_MASK_STDCOLOR_HC ;
 };
 #define SfxStyleFamiliesRes1\
@@ -460,44 +460,44 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 
 Bitmap BMP_PRESOBJ_GRAPHIC
 {
-	File = "image.bmp" ;
+	File = "image.png" ;
 };
 Bitmap BMP_PRESOBJ_OBJECT
 {
-	File = "object.bmp" ;
+	File = "object.png" ;
 };
 Bitmap BMP_PRESOBJ_CHART
 {
-	File = "chart.bmp" ;
+	File = "chart.png" ;
 };
 Bitmap BMP_PRESOBJ_ORGCHART
 {
-	File = "orgchart.bmp" ;
+	File = "orgchart.png" ;
 };
 Bitmap BMP_PRESOBJ_TABLE
 {
-	File = "table.bmp" ;
+	File = "table.png" ;
 };
 Bitmap BMP_WAIT_ICON
 {
-	File = "waiticon.bmp";
+	File = "waiticon.png";
 };
 
 // ----------------------------------------
 
 Bitmap BMP_FADE_EFFECT_INDICATOR
 {
-    File = "fade_effect_indicator.bmp";
+    File = "fade_effect_indicator.png";
 };
 Bitmap BMP_FADE_EFFECT_INDICATOR_H
 {
-    File = "fade_effect_indicator_hc.bmp";
+    File = "fade_effect_indicator_hc.png";
 };
 Bitmap BMP_COMMENTS_INDICATOR
 {
-    File = "comments_indicator.bmp";
+    File = "comments_indicator.png";
 };
 Bitmap BMP_COMMENTS_INDICATOR_H
 {
-    File = "comments_indicator_hc.bmp";
+    File = "comments_indicator_hc.png";
 };
