@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
- // include ------------------------------------------------------------------
+// include ------------------------------------------------------------------
 
 #include <sfx2/sfx.hrc>
 #include "app.hrc"
@@ -41,7 +41,7 @@ String STR_STYLE_FILTER_AUTO
 };
 String STR_STANDARD_SHORTCUT
 {
-    Text [ en-US ] = "Standard" ;
+	Text [ en-US ] = "Standard" ;
 };
 String STR_BYTES
 {
@@ -225,7 +225,7 @@ String STR_ISMODIFIED
 
 String RID_FULLSCREENTOOLBOX
 {
-	Text  = "" ;
+	Text = "" ;
 };
 
 ToolBox RID_FULLSCREENTOOLBOX
@@ -282,7 +282,7 @@ ToolBox RID_HELPBAR
 {
 	HelpId = HID_HELPBAR ;
 	Hide = TRUE ;
-	ItemList  =
+	ItemList =
 	{
 		ToolBoxItem
 		{
@@ -298,11 +298,11 @@ ToolBox RID_HELPBAR
 		};
 		ToolBoxItem
 		{
-			Identifier = SID_HELP_ZOOMOUT;
+			Identifier = SID_HELP_ZOOMOUT ;
 		};
 		ToolBoxItem
 		{
-			Identifier = SID_HELP_ZOOMIN;
+			Identifier = SID_HELP_ZOOMIN ;
 		};
 		ToolBoxItem
 		{
@@ -372,7 +372,7 @@ String STR_QUICKSTART_PRELAUNCH
 };
 String STR_QUICKSTART_PRELAUNCH_UNX
 {
-	Text[ en-US ] = "Disable Quickstarter";
+	Text [ en-US ] = "Disable Quickstarter" ;
 };
 String STR_QUICKSTART_LNKNAME
 {
@@ -380,17 +380,17 @@ String STR_QUICKSTART_LNKNAME
 };
 String STR_QUICKSTART_FILE
 {
-	Text [ en-US ] = "File";
+	Text [ en-US ] = "File" ;
 };
 
 String STR_QUICKSTART_STARTCENTER
 {
-	Text [ en-US ] = "Startcenter";
+	Text [ en-US ] = "Startcenter" ;
 };
 
 String STR_QUICKSTART_RECENTDOC
 {
-	Text [ en-US ] = "Recent Documents";
+	Text [ en-US ] = "Recent Documents" ;
 };
 
 String STR_QUERY_UPDATE_LINKS
@@ -405,7 +405,7 @@ String STR_DDE_ERROR
 
 WarningBox RID_SECURITY_WARNING_HYPERLINK
 {
-	HelpId = HID_WARNING_SECURITY_HYPERLINK;
+	HelpId = HID_WARNING_SECURITY_HYPERLINK ;
 	Buttons = WB_YES_NO ;
 	DefButton = WB_DEF_NO ;
 	Message [ en-US ] = "This hyperlink is going to open \"%s\". Do you want to proceed?" ;
@@ -413,10 +413,10 @@ WarningBox RID_SECURITY_WARNING_HYPERLINK
 
 WarningBox RID_SECURITY_WARNING_NO_HYPERLINKS
 {
-    //HelpId = HID_WARNING_SECURITY_NO_HYPERLINKS;
-    Buttons = WB_OK ;
-    DefButton = WB_DEF_OK ;
-    Message [ en-US ] = "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened.";
+//	HelpId = HID_WARNING_SECURITY_NO_HYPERLINKS ;
+	Buttons = WB_OK ;
+	DefButton = WB_DEF_OK ;
+	Message [ en-US ] = "For security reasons, the hyperlink cannot be executed.\nThe stated address will not be opened." ;
 };
 
 String RID_SECURITY_WARNING_TITLE
@@ -431,24 +431,24 @@ String RID_DESKTOP
 
 QueryBox RID_XMLSEC_QUERY_LOSINGSIGNATURE
 {
-//    HelpId = HID_XMLSEC_QUERY_LOSINGSIGNATURE;
+//	HelpId = HID_XMLSEC_QUERY_LOSINGSIGNATURE ;
 	Buttons = WB_YES_NO ;
-    DefButton = WB_DEF_NO ;
+	DefButton = WB_DEF_NO ;
 	Message [ en-US ] = "Saving will remove all existing signatures.\nDo you want to continue saving the document?" ;
 };
 
 QueryBox RID_XMLSEC_QUERY_SAVEBEFORESIGN
 {
-//    HelpId = HID_XMLSEC_QUERY_SAVEBEFORESIGN;
-    Buttons = WB_YES_NO ;
-    DefButton = WB_DEF_YES ;
-    Message [ en-US ] = "The document has to be saved before it can be signed.\nDo you want to save the document?" ;
+//	HelpId = HID_XMLSEC_QUERY_SAVEBEFORESIGN ;
+	Buttons = WB_YES_NO ;
+	DefButton = WB_DEF_YES ;
+	Message [ en-US ] = "The document has to be saved before it can be signed.\nDo you want to save the document?" ;
 };
 
 InfoBox RID_XMLSEC_INFO_WRONGDOCFORMAT
 {
-//    HelpId = HID_XMLSEC_INFO_WRONGDOCFORMAT;
-    Message [ en-US ] = "This document must be saved in OpenDocument file format before it can be digitally signed." ;
+//	HelpId = HID_XMLSEC_INFO_WRONGDOCFORMAT ;
+	Message [ en-US ] = "This document must be saved in OpenDocument file format before it can be digitally signed." ;
 };
 
 String RID_XMLSEC_DOCUMENTSIGNED
@@ -485,7 +485,7 @@ String RID_SVXSTR_EDITGRFLINK
 // i66948 used in project scripting
 String STR_ERRUNOEVENTBINDUNG
 {
-	Text [ en-US ] = "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name.";
+	Text [ en-US ] = "An appropriate component method %1\ncould not be found.\n\nCheck spelling of method name." ;
 };
 String RID_SVXSTR_GRFILTER_OPENERROR
 {
@@ -512,3 +512,4 @@ String RID_SVXSTR_GRFILTER_TOOBIG
 	Text [ en-US ] = "Not enough memory to insert graphic" ;
 };
 
+// ********************************************************************** EOF
