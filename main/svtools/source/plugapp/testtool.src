@@ -45,7 +45,7 @@ class FlagToolBoxState
 };*/
 			Identifier = TT_SHOW;
 			ItemBitmap = Bitmap  {
-				File = "ttshow.bmp";
+				File = "ttshow.png";
 			};
 			Text[ en-US ] = "Display IDs";
 		};
@@ -63,7 +63,7 @@ class FlagToolBoxState
 	ToolBoxItem  {
 			Identifier = TT_SEND_DATA;
 			ItemBitmap = Bitmap  {
-				File = "ttremote.bmp";
+				File = "ttremote.png";
 			};
 			Text[ en-US ] = "Transfer to TestTool";
 		};
@@ -73,21 +73,21 @@ class FlagToolBoxState
 	ToolBoxItem  {
 			Identifier = TT_ALLWIN;
 			ItemBitmap = Bitmap  {
-				File = "ttall.bmp";
+				File = "ttall.png";
 			};
 			Text[ en-US ] = "Show all windows";
 		};
 	ToolBoxItem  {
 			Identifier = TT_KURZNAME;
 			ItemBitmap = Bitmap  {
-				File = "ttdef.bmp";
+				File = "ttdef.png";
 			};
 			Text[ en-US ] = "Show short names (if available)";
 		};
 	ToolBoxItem  {
 			Identifier = TT_LANGNAME;
 			ItemBitmap = Bitmap  {
-				File = "tthid.bmp";
+				File = "tthid.png";
 			};
 			Text[ en-US ] = "Always show long-name";
 		};
@@ -96,7 +96,7 @@ class FlagToolBoxState
 };
 
 Bitmap TT_SHOW2 {
-	File = "ttshow2.bmp";
+	File = "ttshow2.png";
 };
 
 WorkWindow TT_INLINE_TRANSLATION {

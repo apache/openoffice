@@ -702,12 +702,12 @@ ImageButton SFX_PB_PROPERTY_REMOVE
 };
 Image SFX_IMG_PROPERTY_REMOVE
 {
-    ImageBitmap = Bitmap { File = "deleterow.bmp" ; };
+    ImageBitmap = Bitmap { File = "deleterow.png" ; };
     MaskColor = Color { Red=0xffff; Green=0x0000; Blue=0xffff; };
 };
 Image SFX_IMG_PROPERTY_REMOVE_HC
 {
-    ImageBitmap = Bitmap { File = "deleterow_h.bmp" ; };
+    ImageBitmap = Bitmap { File = "deleterow_h.png" ; };
     MaskColor = Color { Red=0xffff; Green=0x0000; Blue=0xffff; };
 };
 

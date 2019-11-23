@@ -29,37 +29,37 @@
 
 IMAGE RID_IMG_SCALABLEFONT
 {
-	ImageBitmap = Bitmap { File = "scalfont.bmp" ; };
+	ImageBitmap = Bitmap { File = "scalfont.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
 IMAGE RID_IMG_SCALABLEFONT_HC
 {
-	ImageBitmap = Bitmap { File = "scalfont_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "scalfont_h.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
 IMAGE RID_IMG_PRINTERFONT
 {
-	ImageBitmap = Bitmap { File = "prnfont.bmp" ; };
+	ImageBitmap = Bitmap { File = "prnfont.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
 IMAGE RID_IMG_PRINTERFONT_HC
 {
-	ImageBitmap = Bitmap { File = "prnfont_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "prnfont_h.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
 IMAGE RID_IMG_BITMAPFONT
 {
-	ImageBitmap = Bitmap { File = "bmpfont.bmp" ; };
+	ImageBitmap = Bitmap { File = "bmpfont.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
 IMAGE RID_IMG_BITMAPFONT_HC
 {
-	ImageBitmap = Bitmap { File = "bmpfont_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "bmpfont_h.png" ; };
 	MaskColor = IMAGE_STDBTN_COLOR ;
 };
 
