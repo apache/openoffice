@@ -107,7 +107,7 @@ TabPage SID_REDLIN_FILTER_PAGE
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "time.bmp" ; };
+			ImageBitmap = Bitmap { File = "time.png" ; };
 			MASKCOLOR
 		};
 		//QuickHelpText [ en-US ] = "Set Date/Time" ;
@@ -164,7 +164,7 @@ TabPage SID_REDLIN_FILTER_PAGE
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "time.bmp" ; };
+			ImageBitmap = Bitmap { File = "time.png" ; };
 			MASKCOLOR
 		};
 		//QuickHelpText [ en-US ] = "Set Date/Time" ;
@@ -249,7 +249,7 @@ TabPage SID_REDLIN_FILTER_PAGE
 	};
     Image IMG_TIME_H
     {
-        ImageBitmap = Bitmap { File = "time_h.bmp" ; };
+        ImageBitmap = Bitmap { File = "time_h.png" ; };
         MASKCOLOR
     };
 	String STR_DATE_COMBOX

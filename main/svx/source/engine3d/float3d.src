@@ -85,7 +85,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "3dgeo.bmp" ; };
+			ImageBitmap = Bitmap { File = "3dgeo.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Geometry" ;
@@ -98,7 +98,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "3drepres.bmp" ; };
+			ImageBitmap = Bitmap { File = "3drepres.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Shading" ;
@@ -111,7 +111,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "3dlight.bmp" ; };
+			ImageBitmap = Bitmap { File = "3dlight.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Illumination" ;
@@ -123,7 +123,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = MAP_APPFONT ( VT_BUTTON_WIDTH , IMG_BUTTON_HEIGHT ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "3dtextur.bmp" ; };
+			ImageBitmap = Bitmap { File = "3dtextur.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -137,7 +137,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "material.bmp" ; };
+			ImageBitmap = Bitmap { File = "material.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Material" ;
@@ -151,7 +151,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "sc10350.bmp" ; };
+			ImageBitmap = Bitmap { File = "sc10350.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Update" ;
@@ -164,7 +164,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "apply.bmp" ; };
+			ImageBitmap = Bitmap { File = "apply.png" ; };
 			MASKCOLOR
 		};
 		QuickHelpText [ en-US ] = "Assign" ;
@@ -178,7 +178,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "convrt3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "convrt3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -192,7 +192,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "rotate3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "rotate3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -206,7 +206,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "persp3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "persp3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -382,7 +382,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "normobjs.bmp" ; };
+			ImageBitmap = Bitmap { File = "normobjs.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -395,7 +395,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "normflat.bmp" ; };
+			ImageBitmap = Bitmap { File = "normflat.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -408,7 +408,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "normsphe.bmp" ; };
+			ImageBitmap = Bitmap { File = "normsphe.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -421,7 +421,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "invert3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "invert3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -435,7 +435,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "lght2sid.bmp" ; };
+			ImageBitmap = Bitmap { File = "lght2sid.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -448,7 +448,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "doublesi.bmp" ; };
+			ImageBitmap = Bitmap { File = "doublesi.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -491,7 +491,7 @@ DockingWindow RID_SVXFLOAT_3D
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "shadow3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "shadow3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -596,7 +596,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -609,7 +609,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -622,7 +622,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -635,7 +635,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -648,7 +648,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -661,7 +661,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -674,7 +674,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -687,7 +687,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "light.bmp" ; };
+			ImageBitmap = Bitmap { File = "light.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -772,7 +772,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+			ImageBitmap = Bitmap { File = "colordlg.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -800,7 +800,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12 , 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+			ImageBitmap = Bitmap { File = "colordlg.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -828,7 +828,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "luminanc.bmp" ; };
+			ImageBitmap = Bitmap { File = "luminanc.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -842,7 +842,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "color.bmp" ; };
+			ImageBitmap = Bitmap { File = "color.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -862,7 +862,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "replac3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "replac3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -876,7 +876,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "modula3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "modula3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -890,7 +890,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "blend3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "blend3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -910,7 +910,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "objspc3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "objspc3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -924,7 +924,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "parallel.bmp" ; };
+			ImageBitmap = Bitmap { File = "parallel.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -938,7 +938,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "sphere3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "sphere3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -958,7 +958,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "objspc3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "objspc3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -972,7 +972,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "parallel.bmp" ; };
+			ImageBitmap = Bitmap { File = "parallel.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -986,7 +986,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "sphere3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "sphere3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -1006,7 +1006,7 @@ DockingWindow RID_SVXFLOAT_3D
 		Size = IMG_BUTTON_SIZE;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "filter3d.bmp" ; };
+			ImageBitmap = Bitmap { File = "filter3d.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -1079,7 +1079,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12, 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+			ImageBitmap = Bitmap { File = "colordlg.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -1109,7 +1109,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12, 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+			ImageBitmap = Bitmap { File = "colordlg.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -1144,7 +1144,7 @@ DockingWindow RID_SVXFLOAT_3D
         Size = MAP_APPFONT ( 12, 14 ) ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+			ImageBitmap = Bitmap { File = "colordlg.png" ; };
 			MASKCOLOR
 		};
 		TabStop = TRUE ;
@@ -1181,7 +1181,7 @@ DockingWindow RID_SVXFLOAT_3D
 	  QuickHelpText = "Material Favoriten" ;
 	  ButtonImage = Image
 	  {
-		  ImageBitmap = Bitmap { File = "matfavor.bmp" ; };
+		  ImageBitmap = Bitmap { File = "matfavor.png" ; };
 		  MASKCOLOR
 	  };
 			TabStop = TRUE;
@@ -1193,7 +1193,7 @@ DockingWindow RID_SVXFLOAT_3D
 	  QuickHelpText = "Material Editor" ;
 	  ButtonImage = Image
 	  {
-		  ImageBitmap = Bitmap { File = "matedit.bmp" ; };
+		  ImageBitmap = Bitmap { File = "matedit.png" ; };
 		  MASKCOLOR
 	  };
 			TabStop = TRUE;
@@ -1208,197 +1208,197 @@ DockingWindow RID_SVXFLOAT_3D
 
 	Bitmap BMP_GEO_H
 	{
-		File = "3dgeo_h.bmp";
+		File = "3dgeo_h.png";
 	};
 
 	Bitmap BMP_REPRESENTATION_H
 	{
-		File = "3drepres_h.bmp";
+		File = "3drepres_h.png";
 	};
 
 	Bitmap BMP_3DLIGHT_H
 	{
-		File = "3dlight_h.bmp";
+		File = "3dlight_h.png";
 	};
 
 	Bitmap BMP_TEXTURE_H
 	{
-		File = "3dtextur_h.bmp";
+		File = "3dtextur_h.png";
 	};
 
 	Bitmap BMP_MATERIAL_H
 	{
-		File = "material_h.bmp";
+		File = "material_h.png";
 	};
 
 	Bitmap BMP_UPDATE_H
 	{
-		File = "sc10350_h.bmp";
+		File = "sc10350_h.png";
 	};
 
 	Bitmap BMP_ASSIGN_H
 	{
-		File = "apply_h.bmp";
+		File = "apply_h.png";
 	};
 
 	Bitmap BMP_CHANGE_TO_3D_H
 	{
-		File = "convrt3d_h.bmp";
+		File = "convrt3d_h.png";
 	};
 
 	Bitmap BMP_LATHE_OBJ_H
 	{
-		File = "rotate3d_h.bmp";
+		File = "rotate3d_h.png";
 	};
 
 	Bitmap BMP_PERSPECTIVE_H
 	{
-		File = "persp3d_h.bmp";
+		File = "persp3d_h.png";
 	};
 
 	Bitmap BMP_NORMALS_OBJ_H
 	{
-		File = "normobjs_h.bmp";
+		File = "normobjs_h.png";
 	};
 
 	Bitmap BMP_NORMALS_FLAT_H
 	{
-		File = "normflat_h.bmp";
+		File = "normflat_h.png";
 	};
 
 	Bitmap BMP_NORMALS_SPHERE_H
 	{
-		File = "normsphe_h.bmp";
+		File = "normsphe_h.png";
 	};
 
 	Bitmap BMP_NORMALS_INVERT_H
 	{
-		File = "invert3d_h.bmp";
+		File = "invert3d_h.png";
 	};
 
 	Bitmap BMP_TWO_SIDED_LIGHTING_H
 	{
-		File = "lght2sid_h.bmp";
+		File = "lght2sid_h.png";
 	};
 
 	Bitmap BMP_DOUBLE_SIDED_H
 	{
-		File = "doublesi_h.bmp";
+		File = "doublesi_h.png";
 	};
 
 	Bitmap BMP_SHADOW_3D_H
 	{
-		File = "shadow3d_h.bmp";
+		File = "shadow3d_h.png";
 	};
 
 	Bitmap BMP_LIGHT_H
 	{
-		File = "light_h.bmp";
+		File = "light_h.png";
 	};
 
 	Bitmap BMP_LIGHT_COLOR_H
 	{
-		File = "colordlg_h.bmp";
+		File = "colordlg_h.png";
 	};
 
 	Bitmap BMP_AMBIENT_COLOR_H
 	{
-		File = "colordlg_h.bmp";
+		File = "colordlg_h.png";
 	};
 
 	Bitmap BMP_TEX_LUMINANCE_H
 	{
-		File = "luminanc_h.bmp";
+		File = "luminanc_h.png";
 	};
 
 	Bitmap BMP_TEX_COLOR_H
 	{
-		File = "color_h.bmp";
+		File = "color_h.png";
 	};
 
 	Bitmap BMP_TEX_REPLACE_H
 	{
-		File = "replac3d_h.bmp";
+		File = "replac3d_h.png";
 	};
 
 	Bitmap BMP_TEX_MODULATE_H
 	{
-		File = "modula3d_h.bmp";
+		File = "modula3d_h.png";
 	};
 
 	Bitmap BMP_TEX_BLEND_H
 	{
-		File = "blend3d_h.bmp";
+		File = "blend3d_h.png";
 	};
 
 	Bitmap BMP_TEX_OBJECT_H
 	{
-		File = "objspc3d_h.bmp";
+		File = "objspc3d_h.png";
 	};
 
 	Bitmap BMP_TEX_PARALLEL_H
 	{
-		File = "parallel_h.bmp";
+		File = "parallel_h.png";
 	};
 
 	Bitmap BMP_TEX_CIRCLE_H
 	{
-		File = "sphere3d_h.bmp";
+		File = "sphere3d_h.png";
 	};
 
 	Bitmap BMP_TEX_FILTER_H
 	{
-		File = "filter3d_h.bmp";
+		File = "filter3d_h.png";
 	};
 
 	Bitmap BMP_COLORDLG_H
 	{
-		File = "colordlg_h.bmp";
+		File = "colordlg_h.png";
 	};
 };
 
 Image RID_SVXIMAGE_LIGHT_ON
 {
-	ImageBitmap = Bitmap { File = "lighton.bmp" ; };
+	ImageBitmap = Bitmap { File = "lighton.png" ; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMAGE_LIGHT_OFF
 {
-	ImageBitmap = Bitmap { File = "light.bmp" ; };
+	ImageBitmap = Bitmap { File = "light.png" ; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMAGE_LIGHT_ON_H
 {
-	ImageBitmap = Bitmap { File = "lighton_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "lighton_h.png" ; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMAGE_LIGHT_OFF_H
 {
-	ImageBitmap = Bitmap { File = "light_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "light_h.png" ; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMAGE_COLORDLG
 {
-	ImageBitmap = Bitmap { File = "colordlg.bmp" ; };
+	ImageBitmap = Bitmap { File = "colordlg.png" ; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMAGE_COLORDLG_H
 {
-	ImageBitmap = Bitmap { File = "colordlg_h.bmp" ; };
+	ImageBitmap = Bitmap { File = "colordlg_h.png" ; };
 	MASKCOLOR
 };
 
 /*Image RID_SVXIMAGE_LIGHT_ON_SELECTED {
-	  ImageBitmap = Bitmap { File = "lightons.bmp" ; };
+	  ImageBitmap = Bitmap { File = "lightons.png" ; };
 	  MASKCOLOR
 };
 Image RID_SVXIMAGE_LIGHT_OFF_SELECTED {
-	  ImageBitmap = Bitmap { File = "lightsel.bmp" ; };
+	  ImageBitmap = Bitmap { File = "lightsel.png" ; };
 	  MASKCOLOR
 };*/
 

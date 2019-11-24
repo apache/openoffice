@@ -278,7 +278,7 @@ DockingWindow RID_SVXDLG_BMPMASK
 				HelpId = HID_BMPMASK_TBI_PIPETTE ;
 				ItemImage = Image
 				{
-					ImageBitmap = Bitmap { File = "sc10350.bmp" ; };
+					ImageBitmap = Bitmap { File = "sc10350.png" ; };
 					MASKCOLOR
 				};
 				Text [ en-US ] = "Pipette" ;
@@ -296,13 +296,13 @@ DockingWindow RID_SVXDLG_BMPMASK
 
 	Image IMG_PIPETTE
 	{
-		ImageBitmap = Bitmap { File = "sc10350.bmp" ; };
+		ImageBitmap = Bitmap { File = "sc10350.png" ; };
 		MASKCOLOR
 	};
 
 	Image IMG_PIPETTE_H
 	{
-		ImageBitmap = Bitmap { File = "sc10350_h.bmp" ; };
+		ImageBitmap = Bitmap { File = "sc10350_h.png" ; };
 		MASKCOLOR
 	};
 };
