@@ -178,90 +178,90 @@ String RID_SVXSTR_GALLERY_LISTVIEW
 
 Bitmap RID_SVXBMP_GALLERY
 {
-	File = "lx03135.bmp" ;
+	File = "lx03135.png" ;
 };
 
 Bitmap RID_SVXBMP_THEME_NORMAL
 {
-	File = "galnors.bmp" ;
+	File = "galnors.png" ;
 };
 
 Bitmap RID_SVXBMP_THEME_IMPORTED
 {
-	File = "galimps.bmp" ;
+	File = "galimps.png" ;
 };
 
 Bitmap RID_SVXBMP_THEME_READONLY
 {
-	File = "galrdos.bmp" ;
+	File = "galrdos.png" ;
 };
 
 Bitmap RID_SVXBMP_THEME_DEFAULT
 {
-	File = "galdefs.bmp" ;
+	File = "galdefs.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_MEDIA
 {
-	File = "galmedia.bmp";
+	File = "galmedia.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_1
 {
-	File = "galsnd1.bmp";
+	File = "galsnd1.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_2
 {
-	File = "galsnd2.bmp";
+	File = "galsnd2.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_3
 {
-	File = "galsnd3.bmp";
+	File = "galsnd3.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_4
 {
-	File = "galsnd4.bmp";
+	File = "galsnd4.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_5
 {
-	File = "galsnd5.bmp";
+	File = "galsnd5.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_6
 {
-	File = "galsnd6.bmp";
+	File = "galsnd6.png";
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_7
 {
-	File = "galsnd7.bmp";
+	File = "galsnd7.png";
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_ICON
 {
-	ImageBitmap = Bitmap { File = "galicon.bmp"; };
+	ImageBitmap = Bitmap { File = "galicon.png"; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_LIST
 {
-	ImageBitmap = Bitmap { File = "gallist.bmp"; };
+	ImageBitmap = Bitmap { File = "gallist.png"; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_ICON_HC
 {
-	ImageBitmap = Bitmap { File = "galicon_h.bmp"; };
+	ImageBitmap = Bitmap { File = "galicon_h.png"; };
 	MASKCOLOR
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_LIST_HC
 {
-	ImageBitmap = Bitmap { File = "gallist_h.bmp"; };
+	ImageBitmap = Bitmap { File = "gallist_h.png"; };
 	MASKCOLOR
 };
 

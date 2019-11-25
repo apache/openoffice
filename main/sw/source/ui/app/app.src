@@ -185,10 +185,10 @@ SfxStyleFamilies DLG_STYLE_DESIGNER
 
 
  // Default Bitmap fuer Toolbox
-BITMAP BMP_FEHLT { FILE = "x.bmp" ; };
+BITMAP BMP_FEHLT { FILE = "x.png" ; };
  // Bitmap fuer die NumerierungsVorlagen im Organizer
-Bitmap BMP_STYLES_FAMILY_NUM { File = "styfamnu.bmp" ; };
-Bitmap BMP_STYLES_FAMILY_NUM_HC { File = "styfamnu_h.bmp" ; };
+Bitmap BMP_STYLES_FAMILY_NUM { File = "styfamnu.png" ; };
+Bitmap BMP_STYLES_FAMILY_NUM_HC { File = "styfamnu_h.png" ; };
 
 String STR_ENV_TITLE
 {
@@ -385,22 +385,22 @@ QueryBox MSG_COMCORE_ASKSEARCH
 
 Bitmap RID_GRAPHIC_REPLACEBMP
 {
-	File = "grafikei.bmp" ;
+	File = "grafikei.png" ;
 };
 
 Bitmap RID_GRAPHIC_ERRORBMP
 {
-	File = "grafikde.bmp" ;
+	File = "grafikde.png" ;
 };
 
 Bitmap RID_GRAPHIC_REPLACEBMP_HC
 {
-	File = "grafikei_h.bmp" ;
+	File = "grafikei_h.png" ;
 };
 
 Bitmap RID_GRAPHIC_ERRORBMP_HC
 {
-	File = "grafikde_h.bmp" ;
+	File = "grafikde_h.png" ;
 };
 
 String STR_TABLE_DEFNAME
