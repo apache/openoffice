@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,15 +55,15 @@ Resource RID_SHELLRES_AUTOFMTSTRS
 	};
 	String STR_AUTOFMTREDL_BULLET+1
 	{
-		Text [ en-US ] = "Bullets replaced";
+		Text [ en-US ] = "Bullets replaced" ;
 	};
 	String STR_AUTOFMTREDL_UNDER+1
 	{
-		Text [ en-US ] = "Automatic _underline_";
+		Text [ en-US ] = "Automatic _underline_" ;
 	};
 	String STR_AUTOFMTREDL_BOLD+1
 	{
-		Text [ en-US ] = "Automatic *bold*";
+		Text [ en-US ] = "Automatic *bold*" ;
 	};
 	String STR_AUTOFMTREDL_FRACTION+1
 	{
@@ -83,47 +83,47 @@ Resource RID_SHELLRES_AUTOFMTSTRS
 	};
 	String STR_AUTOFMTREDL_RIGHT_MARGIN+1
 	{
-		Text [ en-US ] = "Combine single line paragraphs";
+		Text [ en-US ] = "Combine single line paragraphs" ;
 	};
 
 	String STR_AUTOFMTREDL_SET_TMPL_TEXT +1
 	{
-		Text [ en-US ] = "Set \"Text body\" Style";
+		Text [ en-US ] = "Set \"Text body\" Style" ;
 	};
 	String STR_AUTOFMTREDL_SET_TMPL_INDENT	+1
 	{
-		Text [ en-US ] = "Set \"Text body indent\" Style";
+		Text [ en-US ] = "Set \"Text body indent\" Style" ;
 	};
 	String STR_AUTOFMTREDL_SET_TMPL_NEG_INDENT	+1
 	{
-		Text [ en-US ] = "Set \"Hanging indent\" Style";
+		Text [ en-US ] = "Set \"Hanging indent\" Style" ;
 	};
 	String STR_AUTOFMTREDL_SET_TMPL_TEXT_INDENT +1
 	{
-		Text [ en-US ] = "Set \"Text body indent\" Style";
+		Text [ en-US ] = "Set \"Text body indent\" Style" ;
 	};
 	String STR_AUTOFMTREDL_SET_TMPL_HEADLINE +1
 	{
-		Text [ en-US ] = "Set \"Heading $(ARG1)\" Style";
+		Text [ en-US ] = "Set \"Heading $(ARG1)\" Style" ;
 	};
 	String STR_AUTOFMTREDL_SET_NUMBULET +1
 	{
-		Text [ en-US ] = "Set \"Bullet\" or \"Numbering\" Style";
+		Text [ en-US ] = "Set \"Bullet\" or \"Numbering\" Style" ;
 	};
 
 	String STR_AUTOFMTREDL_DEL_MORELINES +1
 	{
-		Text [ en-US ] = "Combine paragraphs";
+		Text [ en-US ] = "Combine paragraphs" ;
 	};
-    String STR_AUTOFMTREDL_NON_BREAK_SPACE +1
-    {
-        Text [ en-US ] = "Add non breaking space";
-    };
+	String STR_AUTOFMTREDL_NON_BREAK_SPACE +1
+	{
+		Text [ en-US ] = "Add non breaking space" ;
+	};
 
 };
 
 /*---------------------------------------------------------------------
-	Diverses
+	Miscellaneous
  ---------------------------------------------------------------------*/
 String STR_EVENT_OBJECT_SELECT
 {
@@ -131,11 +131,11 @@ String STR_EVENT_OBJECT_SELECT
 };
 String STR_EVENT_START_INS_GLOSSARY
 {
-	Text [ en-US ] = "Before inserting AutoText";
+	Text [ en-US ] = "Before inserting AutoText" ;
 };
 String STR_EVENT_END_INS_GLOSSARY
 {
-	Text [ en-US ] = "After inserting AutoText";
+	Text [ en-US ] = "After inserting AutoText" ;
 };
 String STR_EVENT_MOUSEOVER_OBJECT
 {
@@ -187,7 +187,7 @@ String STR_CONTENT_TYPE_TABLE
 };
 String STR_CONTENT_TYPE_FRAME
 {
-    Text [ en-US ] = "Text frames" ;
+	Text [ en-US ] = "Text frames" ;
 };
 String STR_CONTENT_TYPE_GRAPHIC
 {
@@ -219,7 +219,7 @@ String STR_CONTENT_TYPE_INDEX
 };
 String STR_CONTENT_TYPE_DRAWOBJECT
 {
-    Text [ en-US ] = "Draw objects" ;
+	Text [ en-US ] = "Draw objects" ;
 };
 String STR_CONTENT_TYPE_POSTIT
 {
@@ -279,128 +279,119 @@ String STR_DEFINE_NUMBERFORMAT
 };
 String RID_STR_SYSTEM
 {
-	Text [ en-US ] = "[System]";
+	Text [ en-US ] = "[System]" ;
 };
 String STR_MULT_INTERACT_SPELL_WARN
 {
-    Text [ en-US ] = "The interactive spellcheck is already active\nin a different document";
+	Text [ en-US ] = "The interactive spellcheck is already active\nin a different document" ;
 };
 String STR_MULT_INTERACT_HYPH_WARN
 {
-    Text [ en-US ] = "The interactive hyphenation is already active\nin a different document";
+	Text [ en-US ] = "The interactive hyphenation is already active\nin a different document" ;
 };
 String STR_SPELL_TITLE
 {
-	Text [ en-US ] = "Spellcheck";
+	Text [ en-US ] = "Spellcheck" ;
 };
 String STR_HYPH_TITLE
 {
-	Text [ en-US ] = "Hyphenation";
+	Text [ en-US ] = "Hyphenation" ;
 };
 
 #define IMGLIST_IDS\
-    IdList = \
+	IdList = \
 	{ \
-        IMG_COLLAPSE;\
-        IMG_EXPAND  ;\
-        IMG_DB      ;\
-        IMG_DBTABLE ;\
-        IMG_DBQUERY ;\
-    }; \
-    IdCount = 5
+		IMG_COLLAPSE ;	\
+		IMG_EXPAND ;	\
+		IMG_DB ;		\
+		IMG_DBTABLE ;	\
+		IMG_DBQUERY ;	\
+	}; \
+	IdCount = 5
 
 ImageList ILIST_DB_DLG
 {
-    Prefix = "sx";
-    MaskColor = IMAGE_MASK_COLOR;
-    IMGLIST_IDS;
+	Prefix = "sx" ;
+	MaskColor = IMAGE_MASK_COLOR ;
+	IMGLIST_IDS ;
 };
 
 ImageList ILIST_DB_DLG_HC
 {
-    Prefix = "sxh";
-    MaskColor = IMAGE_MASK_COLOR ;
-    IMGLIST_IDS;
+	Prefix = "sxh" ;
+	MaskColor = IMAGE_MASK_COLOR ;
+	IMGLIST_IDS ;
 };
 
 Image IMG_ONE_LEFT_HC
 {
 	ImageBitmap = Bitmap
 	{
-        File = "one_left_h.bmp" ;
+		File = "one_left_h.png" ;
 	};
-    MaskColor = IMAGE_MASK_COLOR ;
 };
 
 Image IMG_ONE_RIGHT_HC
 {
 	ImageBitmap = Bitmap
 	{
-        File = "one_right_h.bmp" ;
+		File = "one_right_h.png" ;
 	};
-    MaskColor = IMAGE_MASK_COLOR ;
 };
 
 Image IMG_ALL_LEFT_HC
 {
 	ImageBitmap = Bitmap
 	{
-        File = "all_left_h.bmp" ;
+		File = "all_left_h.png" ;
 	};
-    MaskColor = IMAGE_MASK_COLOR ;
 };
 
 Image IMG_ALL_RIGHT_HC
 {
 	ImageBitmap = Bitmap
 	{
-        File = "all_right_h.bmp" ;
+		File = "all_right_h.png" ;
 	};
-    MaskColor = IMAGE_MASK_COLOR ;
 };
 
 
 Image IMG_VIEWLAYOUT_AUTOMATIC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "twopages_11x25.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "twopages_11x25.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_AUTOMATIC_ACTIVE
 {
-    ImageBitmap = Bitmap
-    {
-        File = "twopages_a_11x25.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "twopages_a_11x25.png" ;
+	};
 };
 
 Image IMG_VIEWLAYOUT_BOOKMODE
 {
-    ImageBitmap = Bitmap
-    {
-        File = "doublepage_11x23.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "doublepage_11x23.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_BOOKMODE_ACTIVE
 {
-    ImageBitmap = Bitmap
-    {
-        File = "doublepage_a_11x23.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "doublepage_a_11x23.png" ;
+	};
 };
 
 Image IMG_VIEWLAYOUT_SINGLECOLUMN
 {
-    ImageBitmap = Bitmap
-    {
-        File = "emptypage_11x15.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "emptypage_11x15.png" ;
+	};
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE
 {
@@ -408,7 +399,6 @@ Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE
     {
         File = "emptypage_a_11x15.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 
 Image IMG_VIEWLAYOUT_AUTOMATIC_HC
@@ -417,7 +407,6 @@ Image IMG_VIEWLAYOUT_AUTOMATIC_HC
     {
         File = "twopages_11x25_h.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 Image IMG_VIEWLAYOUT_AUTOMATIC_ACTIVE_HC
 {
@@ -425,7 +414,6 @@ Image IMG_VIEWLAYOUT_AUTOMATIC_ACTIVE_HC
     {
         File = "twopages_a_11x25_h.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 
 Image IMG_VIEWLAYOUT_BOOKMODE_HC
@@ -434,7 +422,6 @@ Image IMG_VIEWLAYOUT_BOOKMODE_HC
     {
         File = "doublepage_11x23_h.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 Image IMG_VIEWLAYOUT_BOOKMODE_ACTIVE_HC
 {
@@ -442,7 +429,6 @@ Image IMG_VIEWLAYOUT_BOOKMODE_ACTIVE_HC
     {
         File = "doublepage_a_11x23_h.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_HC
 {
@@ -450,25 +436,24 @@ Image IMG_VIEWLAYOUT_SINGLECOLUMN_HC
     {
         File = "emptypage_11x15_h.png" ;
     };
-    MaskColor = IMAGE_MASK_COLOR;
 };
 Image IMG_VIEWLAYOUT_SINGLECOLUMN_ACTIVE_HC
 {
-    ImageBitmap = Bitmap
-    {
-        File = "emptypage_a_11x15_h.png" ;
-    };
-    MaskColor = IMAGE_MASK_COLOR;
+	ImageBitmap = Bitmap
+	{
+		File = "emptypage_a_11x15_h.png" ;
+	};
 };
 
 
 
 String STR_HYPERCTRL_SEL
 {
-    Text [ en-US ] = "SEL";
+	Text [ en-US ] = "SEL";
 };
 String STR_HYPERCTRL_HYP
 {
-    Text [ en-US ] = "HYP";
+	Text [ en-US ] = "HYP";
 };
 
+// ********************************************************************** EOF
