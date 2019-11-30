@@ -117,7 +117,7 @@ Window DLG_NAVIGATION_PI
             ToolBoxItem
 			{
 				Identifier = FN_UP ;
-				 //					ItemBitmap = Bitmap { File = "navup.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navup.png"; };
 				HelpID = HID_NAVI_TBX2 ;
 				/* ### ACHTUNG: Neuer Text in Resource? R¸ckw‰rts : R≥ckwırts */
 				Text [ en-US ] = "Back" ;
@@ -125,7 +125,7 @@ Window DLG_NAVIGATION_PI
 			ToolBoxItem
 			{
 				Identifier = FN_DOWN ;
-				 //					ItemBitmap = Bitmap { File = "navdn.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navdn.png"; };
 				HelpID = HID_NAVI_TBX3 ;
 				/* ### ACHTUNG: Neuer Text in Resource? Vorw‰rts : Vorwırts */
 				Text [ en-US ] = "Forward" ;
@@ -145,7 +145,7 @@ Window DLG_NAVIGATION_PI
 			ToolBoxItem
 			{
 				Identifier = FN_ITEM_UP ;
-				 //					ItemBitmap = Bitmap { File = "navchup.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navchup.png"; };
 				HelpID = HID_NAVI_TBX5 ;
 				Text [ en-US ] = "Promote Chapter" ;
 				 //HelpText[english_us-wrong] = "Move chapter down";//"Move chapter up"
@@ -153,7 +153,7 @@ Window DLG_NAVIGATION_PI
 			ToolBoxItem
 			{
 				Identifier = FN_ITEM_DOWN ;
-				 //					ItemBitmap = Bitmap { File = "navchdn.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navchdn.png"; };
 				HelpID = HID_NAVI_TBX6 ;
 				Text [ en-US ] = "Demote Chapter" ;
 			};
@@ -181,7 +181,7 @@ Window DLG_NAVIGATION_PI
 			{
 				Identifier = FN_SELECT_SET_AUTO_BOOKMARK ;
 				HelpID = HID_NAVI_TBX9 ;
-				 //					ItemBitmap = Bitmap { File = "navstmp.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navstmp.png"; };
 				Text [ en-US ] = "Set Reminder" ;
 			};
 			ToolBoxItem
@@ -191,14 +191,14 @@ Window DLG_NAVIGATION_PI
 			ToolBoxItem
 			{
 				Identifier = FN_SELECT_HEADER ;
-				 //					ItemBitmap = Bitmap { File = "navhead.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navhead.png"; };
 				HelpID = HID_NAVI_TBX10 ;
 				Text [ en-US ] = "Header" ;
 			};
 			ToolBoxItem
 			{
 				Identifier = FN_SELECT_FOOTER ;
-				 //					ItemBitmap = Bitmap { File = "navfoot.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navfoot.png"; };
 				HelpID = HID_NAVI_TBX11 ;
 				/* ### ACHTUNG: Neuer Text in Resource? Fuﬂzeile : Fuòzeile */
 				Text [ en-US ] = "Footer" ;
@@ -207,7 +207,7 @@ Window DLG_NAVIGATION_PI
 			ToolBoxItem
 			{
 				Identifier = FN_SELECT_FOOTNOTE ;
-				 //					ItemBitmap = Bitmap { File = "navnote.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navnote.png"; };
 				HelpID = HID_NAVI_TBX12 ;
 				Text [ en-US ] = "Anchor<->Text" ;
 				/* ### ACHTUNG: Neuer Text in Resource? Springen zwischen Fuﬂnotenankern und dem Fuﬂnotentext : Springen zwischen Fuònotenankern und dem Fuònotentext */
@@ -232,13 +232,13 @@ Window DLG_NAVIGATION_PI
 			{
 				Identifier = FN_ITEM_LEFT ;
 				HelpID = HID_NAVI_TBX14 ;
-				 //					ItemBitmap = Bitmap { File = "navchlf.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navchlf.png"; };
 				Text [ en-US ] = "Promote Level" ;
 			};
 			ToolBoxItem
 			{
 				Identifier = FN_ITEM_RIGHT ;
-				 //					ItemBitmap = Bitmap { File = "navchrg.bmp"; };
+				 //					ItemBitmap = Bitmap { File = "navchrg.png"; };
 				HelpID = HID_NAVI_TBX15 ;
 				Text [ en-US ] = "Demote Level" ;
 			};

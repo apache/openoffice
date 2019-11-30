@@ -588,11 +588,11 @@ TabPage TP_GRF_EXT
 	Size = MAP_APPFONT ( 260 , 185 ) ;
 	Bitmap BMP_EXAMPLE
 	{
-		File = "dog.bmp" ;
+		File = "dog.png" ;
 	};
 	Bitmap BMP_EXAMPLE_HC
 	{
-		File = "dog_h.bmp" ;
+		File = "dog_h.png" ;
 	};
     FixedLine FL_CONNECT
 	{
