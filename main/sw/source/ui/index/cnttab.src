@@ -978,12 +978,12 @@ TabPage TP_TOX_ENTRY
 	};
 	Image IMG_SORTUP_HC
 	{
-		ImageBitmap = Bitmap{File = "sch10712.bmp"; };
+		ImageBitmap = Bitmap{File = "sch10712.png"; };
         MaskColor = IMAGE_MASK_COLOR ;
     };
 	Image IMG_SORTDOWN_HC
 	{
-		ImageBitmap = Bitmap{File = "sch10713.bmp"; };
+		ImageBitmap = Bitmap{File = "sch10713.png"; };
         MaskColor = IMAGE_MASK_COLOR ;
 	};
 	ImageRadioButton RB_SORTUP1
@@ -994,7 +994,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10712.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		Check = TRUE;
@@ -1008,7 +1008,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10713.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		QuickHelpText [ en-US ] = "Descending";
@@ -1021,7 +1021,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10712.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		Check = TRUE;
@@ -1035,7 +1035,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10713.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		QuickHelpText [ en-US ] = "Descending";
@@ -1048,7 +1048,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10712.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10712.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		Check = TRUE;
@@ -1062,7 +1062,7 @@ TabPage TP_TOX_ENTRY
 		RadioButtonImage =
 			Image
 			{
-				ImageBitmap = Bitmap{File = "sc10713.bmp"; };
+				ImageBitmap = Bitmap{File = "sc10713.png"; };
                 MaskColor = IMAGE_MASK_COLOR ;
             };
 		QuickHelpText [ en-US ] = "Descending";
@@ -1171,7 +1171,7 @@ TabPage TP_TOX_STYLES
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "one_left.bmp" ;
+                File = "one_left.png" ;
 			};
             MaskColor = IMAGE_MASK_COLOR ;
         };
@@ -1226,7 +1226,7 @@ ModalDialog DLG_ADD_IDX_STYLES
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_left.bmp" ;
+                File = "all_left.png" ;
 			};
             MaskColor = IMAGE_MASK_COLOR ;
         };
@@ -1242,7 +1242,7 @@ ModalDialog DLG_ADD_IDX_STYLES
 		{
 			ImageBitmap = Bitmap
 			{
-                File = "all_right.bmp" ;
+                File = "all_right.png" ;
 			};
             MaskColor = IMAGE_MASK_COLOR ;
 		};

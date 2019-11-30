@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "poolfmt.hrc"
 
- // -----------------
- // Format-Namen
- // -----------------
+// Character styles
 String STR_POOLCHR_FOOTNOTE
 {
 	Text [ en-US ] = "Footnote Characters" ;
@@ -71,7 +70,7 @@ String STR_POOLCHR_ENDNOTE
 };
 String STR_POOLPAGE_LANDSCAPE
 {
-   Text [ en-US ] = "Landscape" ;
+	Text [ en-US ] = "Landscape" ;
 };
 String STR_POOLCHR_LINENUM
 {
@@ -79,18 +78,18 @@ String STR_POOLCHR_LINENUM
 };
 String STR_POOLCHR_IDX_MAIN_ENTRY
 {
-	Text [ en-US ] = "Main index entry";
+	Text [ en-US ] = "Main index entry" ;
 };
 String STR_POOLCHR_FOOTNOTE_ANCHOR
 {
-	Text [ en-US ] = "Footnote anchor";
+	Text [ en-US ] = "Footnote anchor" ;
 };
 String STR_POOLCHR_ENDNOTE_ANCHOR
 {
-	Text [ en-US ] = "Endnote anchor";
+	Text [ en-US ] = "Endnote anchor" ;
 };
 
- // Zeichenvorlagen fuer HTML
+// HTML styles 
 String STR_POOLCHR_HTML_EMPHASIS
 {
 	Text [ en-US ] = "Emphasis" ;
@@ -128,7 +127,7 @@ String STR_POOLCHR_HTML_TELETYPE
 	Text [ en-US ] = "Teletype" ;
 };
 
-// Rahmenvorlagen
+// Frame styles
 String STR_POOLFRM_FRAME
 {
 	Text [ en-US ] = "Frame" ;
@@ -157,9 +156,8 @@ String STR_POOLFRM_LABEL
 {
 	Text [ en-US ] = "Labels" ;
 };
- // -----------------
- // Vorlagen-Namen
- // -----------------
+
+// Style names
 String STR_POOLCOLL_STANDARD
 {
 	Text [ en-US ] = "Default" ;
@@ -470,7 +468,7 @@ String STR_POOLCOLL_LABEL_FRAME
 };
 String STR_POOLCOLL_LABEL_DRAWING
 {
-	Text [ en-US ] = "Drawing";
+	Text [ en-US ] = "Drawing" ;
 };
 String STR_POOLCOLL_JAKETADRESS
 {
@@ -590,35 +588,35 @@ String STR_POOLCOLL_TOX_USER10
 };
 String STR_POOLCOLL_TOX_ILLUSH
 {
-	Text [ en-US ] = "Illustration Index Heading";
+	Text [ en-US ] = "Illustration Index Heading" ;
 };
 String STR_POOLCOLL_TOX_ILLUS1
 {
-	Text [ en-US ] = "Illustration Index 1";
+	Text [ en-US ] = "Illustration Index 1" ;
 };
 String STR_POOLCOLL_TOX_OBJECTH
 {
-	Text [ en-US ] = "Object index heading";
+	Text [ en-US ] = "Object index heading" ;
 };
 String STR_POOLCOLL_TOX_OBJECT1
 {
-	Text [ en-US ] = "Object index 1";
+	Text [ en-US ] = "Object index 1" ;
 };
 String STR_POOLCOLL_TOX_TABLESH
 {
-	Text [ en-US ] = "Table index heading";
+	Text [ en-US ] = "Table index heading" ;
 };
 String STR_POOLCOLL_TOX_TABLES1
 {
-	Text [ en-US ] = "Table index 1";
+	Text [ en-US ] = "Table index 1" ;
 };
 String STR_POOLCOLL_TOX_AUTHORITIESH
 {
-	Text [ en-US ] = "Bibliography Heading";
+	Text [ en-US ] = "Bibliography Heading" ;
 };
 String STR_POOLCOLL_TOX_AUTHORITIES1
 {
-	Text [ en-US ] = "Bibliography 1";
+	Text [ en-US ] = "Bibliography 1" ;
 };
 
 String STR_POOLCOLL_DOC_TITEL
@@ -649,7 +647,8 @@ String STR_POOLCOLL_HTML_DT
 {
 	Text [ en-US ] = "List Heading" ;
 };
-//page style names
+
+// Page styles
 String STR_POOLPAGE_STANDARD
 {
 	Text [ en-US ] = "Default" ;
@@ -686,9 +685,8 @@ String STR_POOLPAGE_ENDNOTE
 {
 	Text [ en-US ] = "Endnote" ;
 };
-/*
- Numerierungs Regeln
-*/
+
+// Numbering Rules
 String STR_POOLNUMRULE_NUM1
 {
 	Text [ en-US ] = "Numbering 1" ;
@@ -732,29 +730,31 @@ String STR_POOLNUMRULE_BUL5
 
 String STR_POOLCHR_RUBYTEXT
 {
-	Text [ en-US ] = "Rubies";
+	Text [ en-US ] = "Rubies" ;
 };
 String STR_COLUMN_VALUESET_ITEM0
-{	
-	Text [ en-US ] = "1 column";
+{
+	Text [ en-US ] = "1 column" ;
 };
 String STR_COLUMN_VALUESET_ITEM1
-{	
-	Text [ en-US ] = "2 columns with equal size";
+{
+	Text [ en-US ] = "2 columns with equal size" ;
 };
 String STR_COLUMN_VALUESET_ITEM2
-{	
-	Text [ en-US ] = "3 columns with equal size";
+{
+	Text [ en-US ] = "3 columns with equal size" ;
 };
 String STR_COLUMN_VALUESET_ITEM3
-{	
-	Text [ en-US ] = "2 columns with different size (left > right)";
+{
+	Text [ en-US ] = "2 columns with different size (left > right)" ;
 };
 String STR_COLUMN_VALUESET_ITEM4
-{	
-	Text [ en-US ] = "2 columns with different size (left < right)";
+{
+	Text [ en-US ] = "2 columns with different size (left < right)" ;
 };
 String STR_POOLCHR_VERT_NUM
 {
-	Text [ en-US ] = "Vertical Numbering Symbols";
+	Text [ en-US ] = "Vertical Numbering Symbols" ;
 };
+
+// ********************************************************************** EOF
