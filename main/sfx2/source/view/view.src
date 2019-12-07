@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,26 +7,27 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ---------------------------------------------------------------
+
+// include ---------------------------------------------------------------
 #include "view.hrc"
 #include <sfx2/sfx.hrc>
 #include "helpid.hrc"
 #include "sfxlocal.hrc"
 
- // Strings ---------------------------------------------------------------
+// Strings ---------------------------------------------------------------
 String STR_NODEFPRINTER
 {
 	Text [ en-US ] = "No default printer found.\nPlease choose a printer and try again." ;
@@ -37,7 +38,7 @@ String STR_NOSTARTPRINTER
 };
 String STR_PRINTER_NOTAVAIL
 {
-	Text [ en-US ] = "This document has been formatted for the printer $1. The specified printer is not available. \nDo you want to use the standard printer $2 ?" ;
+	Text [ en-US ] = "This document has been formatted for the printer $1. The specified printer is not available.\nDo you want to use the standard printer $2 ?" ;
 };
 String STR_PRINT_OPTIONS
 {
@@ -91,15 +92,15 @@ String STR_PREVIEW_NODOCINFO
 {
 	Text [ en-US ] = "<HTML><BODY BGCOLOR=\"#c0c0c0\"><BR><BR><P><FONT FACE=\"Arial\"><B>No document properties found.</B></FONT></P></BODY></HTML>" ;
 };
- // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 InfoBox MSG_CANT_CLOSE
 {
-	Message [ en-US ] = "The document cannot be closed because a\n print job is being carried out." ;
+	Message [ en-US ] = "The document cannot be closed because a\nprint job is being carried out." ;
 };
- // DLG_PRINTMONITOR ------------------------------------------------------
+// DLG_PRINTMONITOR ------------------------------------------------------
 
 #define	DLG_PRINTMONITOR_TEXT \
-    Text [ en-US ] = "Print Monitor" ; \
+	Text [ en-US ] = "Print Monitor" ; \
 
 ModelessDialog DLG_PRINTMONITOR
 {
@@ -107,46 +108,46 @@ ModelessDialog DLG_PRINTMONITOR
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 	Hide = TRUE ;
-	Moveable = TRUE;
-	Size = MAP_APPFONT ( 112 , 81 ) ;
+	Moveable = TRUE ;
+	Size = MAP_APPFONT ( 112, 81 ) ;
 	DLG_PRINTMONITOR_TEXT
 	FixedText FT_DOCNAME
 	{
-		Pos = MAP_APPFONT ( 6 , 6 ) ;
-		Size = MAP_APPFONT ( 100 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 6 ) ;
+		Size = MAP_APPFONT ( 100, 10 ) ;
 		Center = TRUE ;
 	};
 	FixedText FT_PRINTING
 	{
-		Pos = MAP_APPFONT ( 6 , 19 ) ;
-		Size = MAP_APPFONT ( 100 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 19 ) ;
+		Size = MAP_APPFONT ( 100, 10 ) ;
 		Center = TRUE ;
 		Text [ en-US ] = "is being printed on" ;
 	};
 	FixedText FT_PRINTER
 	{
-		Pos = MAP_APPFONT ( 6 , 32 ) ;
-		Size = MAP_APPFONT ( 100 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 32 ) ;
+		Size = MAP_APPFONT ( 100, 10 ) ;
 		Center = TRUE ;
 	};
 	FixedText FT_PRINTINFO
 	{
-		Pos = MAP_APPFONT ( 6 , 45 ) ;
-		Size = MAP_APPFONT ( 100 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 45 ) ;
+		Size = MAP_APPFONT ( 100, 10 ) ;
 		Center = TRUE ;
 	};
 	CancelButton PB_CANCELPRNMON
 	{
-		Pos = MAP_APPFONT ( 31 , 61 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 31, 61 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 	};
-    String STR_FT_PREPARATION
-    {
-        Text [ en-US ] = "is being prepared for printing";
-    };
+	String STR_FT_PREPARATION
+	{
+		Text [ en-US ] = "is being prepared for printing" ;
+	};
 };
 
- // MSG_ERROR_SEND_MAIL ---------------------------------------------------
+// MSG_ERROR_SEND_MAIL ---------------------------------------------------
 
 InfoBox MSG_ERROR_SEND_MAIL
 {
@@ -155,7 +156,7 @@ InfoBox MSG_ERROR_SEND_MAIL
 	Message [ en-US ] = "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\nPlease check the %PRODUCTNAME settings or your e-mail program settings." ;
 };
 
- // QueryBoxen ------------------------------------------------------------
+// QueryBox --------------------------------------------------------------
 QueryBox MSG_QUERY_OPENASTEMPLATE
 {
 	Buttons = WB_YES_NO ;
@@ -171,16 +172,7 @@ ErrorBox MSG_ERROR_NO_WEBBROWSER_FOUND
 {
 	BUTTONS = WB_OK ;
 	DEFBUTTON = WB_DEF_OK ;
-	Message[ en-US ] = "%PRODUCTNAME could not find a web browser on your system. Please check your desktop preferences or install a web browser (for example, Mozilla) in the default location requested during the browser installation." ;
+	Message [ en-US ] = "%PRODUCTNAME could not find a web browser on your system. Please check your desktop preferences or install a web browser (for example, Mozilla) in the default location requested during the browser installation." ;
 };
 
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF
