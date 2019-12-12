@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -527,11 +527,11 @@
 					<desc>Sender PostCode.</desc>
 				</info>
 			</prop>
-                        <prop oor:type="xs:string" oor:name="SenderState">
-                                <info>
-                                        <desc>Sender State.</desc>
-                                </info>
-                        </prop>
+			<prop oor:type="xs:string" oor:name="SenderState">
+				<info>
+					<desc>Sender State.</desc>
+				</info>
+			</prop>
 			<prop oor:type="xs:string" oor:name="SenderCity">
 				<info>
 					<desc>Sender City.</desc>
@@ -549,7 +549,7 @@
 			</prop>
 			<prop oor:type="xs:boolean" oor:name="FooterOnlySecondPage">
 				<info>
-					<desc>Enables that the Footer is only displayed of the Second and following pages.</desc>
+					<desc>Enables that the Footer is only displayed on the Second and following pages.</desc>
 				</info>
 			</prop>
 			<prop oor:type="xs:boolean" oor:name="FooterPageNumbers">
@@ -966,7 +966,7 @@
                 <info>
                     <author>OS</author>
                     <desc>SMTP server requires authentication at the POP or IMAP server</desc>
-                    <label>SMPT after POP</label>
+                    <label>SMTP after POP</label>
                 </info>
             </prop>
             <prop oor:name="InServerName" oor:type="xs:string">
@@ -1096,7 +1096,7 @@
 					<value>true</value>
 				</prop>
 				<prop oor:name="ShowContentTips" oor:type="xs:boolean">
-                    <!-- OldPath: Writer/Content/Display/PreventTips -->
+					<!-- OldPath: Writer/Content/Display/PreventTips -->
 					<!-- UIHints: Not accessible via user interface -->
 					<info>
 						<author>OS</author>
@@ -1191,8 +1191,8 @@
 					<!-- UIHints: Tools - Options - Text document  Contents - [Section] Nonprinting Characters -->
 					<info>
 						<author>OS</author>
-                        <desc>Specifies if hidden text fields are displayed on the screen.</desc>
-                        <label>Fields: Hidden text</label>
+						<desc>Specifies if hidden text fields are displayed on the screen.</desc>
+						<label>Fields: Hidden text</label>
 					</info>
 					<value>false</value>
 				</prop>
@@ -1598,7 +1598,7 @@
 				</prop>
 				<prop oor:name="IsSquaredPageMode" oor:type="xs:boolean">
 					<info>
-						<desc>Specified which kind of paper mode is used in the whole document </desc>
+						<desc>Specifies which kind of paper mode is used in the whole document </desc>
 						<label>Use squared paper mode</label>
 					</info>
 					<value>true</value>
@@ -1648,7 +1648,7 @@
 				<info>
 					<desc>Contains view layout settings.</desc>
 				</info>
-                                <prop oor:name="Columns" oor:type="xs:int">
+				<prop oor:name="Columns" oor:type="xs:int">
 					<!-- UIHints: (Status Bar) -->
 					<info>
 						<author>FME</author>
@@ -1657,7 +1657,7 @@
 					</info>
 					<value>0</value>
 				</prop>
-                                <prop oor:name="BookMode" oor:type="xs:boolean">
+				<prop oor:name="BookMode" oor:type="xs:boolean">
 					<!-- UIHints: (Status Bar) -->
 					<info>
 						<author>FME</author>
@@ -2311,7 +2311,7 @@
 					<!-- OldPath: Writer/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Shift -->
-					<!-- Notice: The default value is valid for the english Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for moving a table row [UNIT=1/100 mm].</desc>
@@ -2323,7 +2323,7 @@
 					<!-- OldPath: Writer/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Shift -->
-					<!-- Notice: The default value is valid for the english Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for shifting a table column [UNIT=1/100 mm].</desc>
@@ -2340,7 +2340,7 @@
 					<!-- OldPath: Writer/Table/Insert -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Insert -->
-					<!-- Notice: The default value is valid for the english Version (depends, if a metric system is used on the platform); NonMetric:  635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric:  635 1/100 mm-->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for inserting rows [UNIT=1/100 mm].</desc>
@@ -2352,7 +2352,7 @@
 					<!-- OldPath: Writer/Table/Insert -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Insert -->
-					<!-- Notice: The default value is valid for the english Version (depends, if a metric system is used on the platform);NonMetric:  2540 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform);NonMetric:  2540 1/100 mm-->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for inserting columns [UNIT=1/100 mm].</desc>
@@ -2406,7 +2406,7 @@
 						<desc>Specifies if numbers in a table are recognized or if they are saved in a text format.</desc>
 						<label>Number recognition</label>
 					</info>
-                    <value>true</value>
+					<value>true</value>
 				</prop>
 				<prop oor:name="NumberFormatRecognition" oor:type="xs:boolean">
 					<!-- OldPath: Writer/Insert/IntoTables -->
@@ -2805,12 +2805,12 @@
 					<author>OS</author>
 					<desc>Specifies the settings for inserting captions for various object types.</desc>
 				</info>
-                                <prop oor:name="CaptionOrderNumberingFirst" oor:type="xs:boolean">
-                                        <info>
-                                                <desc>Specifies the order of the captions. If true the Numeber appears in front of the category.</desc>
-                                                <label>Caption order: Numbering first</label>
-                                        </info>
-                                </prop>
+				<prop oor:name="CaptionOrderNumberingFirst" oor:type="xs:boolean">
+					<info>
+						<desc>Specifies the order of the captions. If true the number appears in front of the category.</desc>
+						<label>Caption order: Numbering first</label>
+					</info>
+				</prop>
 				<prop oor:name="Automatic" oor:type="xs:boolean">
 					<info>
 						<desc>Specifies how tables, graphics, frames and Office documents, which have been inserted as OLE objects, are labeled</desc>
@@ -2947,13 +2947,13 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Frame">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarWriter_Frame -->
@@ -3033,7 +3033,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3308,7 +3308,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3446,7 +3446,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3492,19 +3492,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Chart">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_Chart -->
@@ -3584,7 +3584,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3722,7 +3722,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3860,7 +3860,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -3998,7 +3998,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -4136,7 +4136,7 @@
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
-                            </prop>
+							</prop>
 							<prop oor:name="Position" oor:type="xs:int">
 								<info>
 									<desc>Specifies the position of the caption field.</desc>
@@ -4211,14 +4211,14 @@
 						<desc>Specifies if the table has a header.</desc>
 						<label>Header</label>
 					</info>
-                                        <value>false</value>
+					<value>false</value>
 				</prop>
 				<prop oor:name="RepeatHeader" oor:type="xs:boolean">
 					<info>
 						<desc>Specifies if the header in the new page is adopted when inserting a page break. This option is only available if Header = True.</desc>
 						<label>Repeat header</label>
 					</info>
-                                        <value>false</value>
+					<value>false</value>
 				</prop>
 				<prop oor:name="Split" oor:type="xs:boolean">
 					<info>
@@ -4385,7 +4385,7 @@
 					<prop oor:name="SetInetAttribute" oor:type="xs:boolean">
 						<!-- OldPath: Writer/AutoFormat/Options -->
 						<!-- OldLocation: Soffice.cfg -->
-						<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options - URL regocnition -->
+						<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options - URL recognition -->
 						<info>
 							<author>OS</author>
 							<desc>Specifies if character strings which could represent a URL are converted to a hyperlink.</desc>
@@ -4421,7 +4421,7 @@
 						<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options - Add non-breaking space -->
 						<info>
 							<author>cedricbosdo</author>
-							<desc>Adds a non-breaking space before the characters :!;? in french.</desc>
+							<desc>Adds a non-breaking space before the characters :!;? in French.</desc>
 							<label>Add non-breaking space</label>
 						</info>
 						<value>true</value>
@@ -4500,7 +4500,7 @@
 							<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
 							<info>
 								<author>OS</author>
-								<desc>Specifies if paragraphs starting with a dash, a plus sign or an asterix followed by space or tab are replaced by a bullet character.</desc>
+								<desc>Specifies if paragraphs starting with a dash, a plus sign or an asterisk followed by space or tab are replaced by a bullet character.</desc>
 								<label>Replace bullets with</label>
 							</info>
 							<value>true</value>
@@ -4533,7 +4533,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Defautl value 0 = Symbol-->
+								<!--Default value 0 = Symbol-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font family if ChangeToBullets=true.</desc>
@@ -4544,7 +4544,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Defautl value 10 = Symbol-->
+								<!--Default value 10 = Symbol-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font character set if ChangeToBullets=true.</desc>
@@ -4555,7 +4555,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Defautl value 2 = Variable-->
+								<!--Default value 2 = Variable-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font pitch if ChangeToBullets=true.</desc>
@@ -4687,7 +4687,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Defautl value 0 = Symbol-->
+								<!--Default value 0 = Symbol-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font family if ApplyNumbering=true.</desc>
@@ -4698,7 +4698,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Defautl value 10 = Symbol-->
+								<!--Default value 10 = Symbol-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font character set if ApplyNumbering=true.</desc>
@@ -4709,7 +4709,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Defautl value 2 = Variable-->
+								<!--Default value 2 = Variable-->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font pitch if ApplyNumbering=true.</desc>
@@ -4744,7 +4744,7 @@
 						<desc>Sets the value for the minimum word length.</desc>
 						<label>Min. word length</label>
 					</info>
-                    <value>10</value>
+					<value>10</value>
 				</prop>
 				<prop oor:name="MaxListLen" oor:type="xs:int">
 					<!-- OldPath: Writer/AutoComplete/Words -->
@@ -4826,11 +4826,11 @@
 								<desc>KeyRight</desc>
 							</info>
 						</enumeration>
-                        <enumeration oor:value="1282"> <!-- 0x502 -->
-                            <info>
-                                <desc>KeyTab</desc>
-                            </info>
-                        </enumeration>
+						<enumeration oor:value="1282"> <!-- 0x502 -->
+							<info>
+								<desc>KeyTab</desc>
+							</info>
+						</enumeration>
 						<enumeration oor:value="1284"> <!-- 0x504 -->
 							<info>
 								<desc>KeySpace</desc>
@@ -5676,18 +5676,18 @@
 			</group>
 		</group>
 		<group oor:name="Notes">
-                	<info>
-                        	<desc>Contains settings for comments</desc>
-                	</info>
-                	<prop oor:name="ShowAnkor" oor:type="xs:boolean">
-               		<info>
-                        	<author>mod</author>
-                        	<desc>configures if comment anchor should be shown or hidden when display is off</desc>
-                        	<label>Comments Ankor on/off</label>
-                	</info>
-                	<value>false</value>
-                	</prop>
-                </group>
+			<info>
+				<desc>Contains settings for comments</desc>
+			</info>
+			<prop oor:name="ShowAnkor" oor:type="xs:boolean">
+			<info>
+				<author>mod</author>
+				<desc>configures if comment anchor should be shown or hidden when display is off</desc>
+				<label>Comments Anchor on/off</label>
+			</info>
+			<value>false</value>
+			</prop>
+		</group>
 		<group oor:name="Navigator">
 			<info>
 				<desc>Contains settings for the Navigator.</desc>
@@ -6306,13 +6306,13 @@
 					</info>
 					<value>false</value>
 				</prop>
-                <prop oor:name="AskForMerge" oor:type="xs:boolean">
-                    <info>
-                        <author>OS</author>
-                        <desc>Determines whether printing a document that contains database fields triggers a 'do you want to call mailmerge' query</desc>
-                    </info>
-                    <value>true</value>
-                </prop>
+				<prop oor:name="AskForMerge" oor:type="xs:boolean">
+					<info>
+						<author>OS</author>
+						<desc>Determines whether printing a document that contains database fields triggers a 'do you want to call mailmerge' query</desc>
+					</info>
+					<value>true</value>
+				</prop>
 			</group>
 			<group oor:name="MailingOutput">
 				<info>
