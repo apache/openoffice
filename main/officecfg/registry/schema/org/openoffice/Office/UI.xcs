@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -44,7 +44,7 @@
 			</prop>
 		</group>
 		<group oor:name="ColorScheme">
-			<!-- UIHints: Tools / Options / Star|OpenOffice / Appearance -->
+			<!-- UIHints: Tools / Options / OpenOffice / Appearance -->
 			<info>
 				<author>OS</author>
 				<desc>Defines the templates for color settings used to customize the appearance of the applications.</desc>
@@ -535,66 +535,66 @@
 					</info>
 				</prop>
 			</group>
-      <group oor:name="SQLNumber">
-        <info>
-          <desc>Specifies the settings for SQL numbers, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL numbers.</desc>
-          </info>
-        </prop>
-      </group>
-      <group oor:name="SQLString">
-        <info>
-          <desc>Specifies the settings for SQL strings, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL strings.</desc>
-          </info>
-        </prop>
-      </group>
-      <group oor:name="SQLOperator">
-        <info>
-          <desc>Specifies the settings for SQL operators, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL operators.</desc>
-          </info>
-        </prop>
-      </group>
-      <group oor:name="SQLKeyword">
-        <info>
-          <desc>Specifies the settings for SQL keywords, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL keywords.</desc>
-          </info>
-        </prop>
-      </group>
-      <group oor:name="SQLParameter">
-        <info>
-          <desc>Specifies the settings for SQL parameters, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL parameters.</desc>
-          </info>
-        </prop>
-      </group>
-      <group oor:name="SQLComment">
-        <info>
-          <desc>Specifies the settings for SQL comments, as used the Query Designer.</desc>
-        </info>
-        <prop oor:name="Color" oor:type="xs:int">
-          <info>
-            <desc>Specifies the color used for SQL parameters.</desc>
-          </info>
-        </prop>
-      </group>
+			<group oor:name="SQLNumber">
+				<info>
+					<desc>Specifies the settings for SQL numbers, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL numbers.</desc>
+					</info>
+				</prop>
+			</group>
+			<group oor:name="SQLString">
+				<info>
+					<desc>Specifies the settings for SQL strings, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL strings.</desc>
+					</info>
+				</prop>
+			</group>
+			<group oor:name="SQLOperator">
+				<info>
+					<desc>Specifies the settings for SQL operators, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL operators.</desc>
+					</info>
+				</prop>
+			</group>
+			<group oor:name="SQLKeyword">
+				<info>
+					<desc>Specifies the settings for SQL keywords, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL keywords.</desc>
+					</info>
+				</prop>
+			</group>
+			<group oor:name="SQLParameter">
+				<info>
+					<desc>Specifies the settings for SQL parameters, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL parameters.</desc>
+					</info>
+				</prop>
+			</group>
+			<group oor:name="SQLComment">
+				<info>
+					<desc>Specifies the settings for SQL comments, as used the Query Designer.</desc>
+				</info>
+				<prop oor:name="Color" oor:type="xs:int">
+					<info>
+						<desc>Specifies the color used for SQL parameters.</desc>
+					</info>
+				</prop>
+			</group>
 		</group>
 	</templates>
 	<component>
@@ -641,7 +641,7 @@
 				</info>
 			</prop>
 			<set oor:name="ColorSchemes" oor:node-type="ColorScheme">
-				<!-- UIHints: Tools / Options / Star|OpenOffice / Appearance -->
+				<!-- UIHints: Tools / Options / OpenOffice / Appearance -->
 				<info>
 					<author>OS</author>
 					<desc>Lists entries with color settings.</desc>
@@ -655,14 +655,13 @@
 			</info>
 			<prop oor:name="FillAsynchronously" oor:type="xs:boolean">
 				<info>
-					<desc>Specifies whether the dialog should fill its view asynchronously. Asnychronous filling allows the user to cancel blocking operations, which may be useful for instance for mounted, but dead NFS devices.</desc>
+					<desc>Specifies whether the dialog should fill its view asynchronously. Asynchronous filling allows the user to cancel blocking operations, which may be useful for instance for mounted, but dead NFS devices.</desc>
 				</info>
 				<value>false</value>
 			</prop>
 			<group oor:name="Timeout">
 				<info>
-					<desc>Specifies the timeouts to be used when the file view is to be filled asynchronously.
-These settings are not evaluated if the FillAsynchronously property is false.</desc>
+					<desc>Specifies the timeouts to be used when the file view is to be filled asynchronously. These settings are not evaluated if the FillAsynchronously property is false.</desc>
 				</info>
 				<prop oor:name="Min" oor:type="xs:int">
 					<info>
@@ -679,12 +678,12 @@ These settings are not evaluated if the FillAsynchronously property is false.</d
 				</prop>
 				<prop oor:name="Max" oor:type="xs:int">
 					<info>
-						<desc>Specifies the maximum timeout in milliseconds. When the file view is being filled, and its content could not be completely obtained within the time frame given here, the operation is cancelled automatically.</desc>
+						<desc>Specifies the maximum timeout in milliseconds. When the file view is being filled, and its content could not be completely obtained within the time frame given here, the operation is canceled automatically.</desc>
 					</info>
 					<constraints>
 						<minInclusive oor:value="5000">
 							<info>
-								<desc>The maximum timeout value should be at least 5 mseconds.</desc>
+								<desc>The maximum timeout value should be at least 5 milliseconds.</desc>
 							</info>
 						</minInclusive>
 					</constraints>
