@@ -22,9 +22,10 @@
 
 
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
-<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Writer" oor:package="org.openoffice.Office" xml:lang="en-US"> <info>
+<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Writer" oor:package="org.openoffice.Office" xml:lang="en-US">
+	<info>
 		<author>OS</author>
-		<desc >Contains settings for the Writer application.</desc>
+		<desc>Contains settings for the Writer application.</desc>
 	</info>
 	<import oor:component="org.openoffice.Office.Common"/>
 	<templates>
@@ -345,52 +346,52 @@
 				</info>
 			</prop>
 		</group>
-        <group oor:name="_DataSource">
-            <info>
-                <desc>Contains the description of a data source.</desc>
-            </info>
-            <prop oor:name="DataSourceName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the name of the data source.</desc>
-                    <label>Data source name</label>
-                </info>
-            </prop>
-            <prop oor:name="DataTableName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Name of the database table or query.</desc>
-                    <label>Data table or query name</label>
-                </info>
-            </prop>
-            <prop oor:name="DataCommandType" oor:type="xs:short">
-                <info>
-                    <author>OS</author>
-                    <desc>CommandType of the data source.</desc>
-                    <label>Data CommandType</label>
-                </info>
-                <value>0</value>
-            </prop>
-        </group>
-        <group oor:name="AddressDataAssignment">
-            <info>
-                <desc>Contains the assignments of programmatic address column names like FirstName, LastName to actual column names of the actual data base table.</desc>
-            </info>
-            <prop oor:name="DBColumnAssignments" oor:type="oor:string-list">
-                <info>
-                    <author>OS</author>
-                    <desc>List of all currently available assignments of programmatic to actual column names of data sources used in mail merge. The position in the list has to match the following order of columns: TITLE,FIRSTNAME,LASTNAME,COMPANY,ADDRESS_1,ADDRESS_2,CITY,REGION,ZIP,COUNTRY,PHONE_PRIVATE,PHONE_BUSINESS,E_MAIL,GENDER</desc>
-                    <label>Column assignment list</label>
-                </info>
-            </prop>
-            <node-ref oor:name="DataSource" oor:node-type="_DataSource">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the information of the data source that's been used the last time the wizard has been executed.</desc>
-                    <label>Data Set</label>
-                </info>
-            </node-ref>
-        </group>
+		<group oor:name="_DataSource">
+			<info>
+				<desc>Contains the description of a data source.</desc>
+			</info>
+			<prop oor:name="DataSourceName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Contains the name of the data source.</desc>
+					<label>Data source name</label>
+				</info>
+			</prop>
+			<prop oor:name="DataTableName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Name of the database table or query.</desc>
+					<label>Data table or query name</label>
+				</info>
+			</prop>
+			<prop oor:name="DataCommandType" oor:type="xs:short">
+				<info>
+					<author>OS</author>
+					<desc>CommandType of the data source.</desc>
+					<label>Data CommandType</label>
+				</info>
+				<value>0</value>
+			</prop>
+		</group>
+		<group oor:name="AddressDataAssignment">
+			<info>
+				<desc>Contains the assignments of programmatic address column names like FirstName, LastName to actual column names of the actual data base table.</desc>
+			</info>
+			<prop oor:name="DBColumnAssignments" oor:type="oor:string-list">
+				<info>
+					<author>OS</author>
+					<desc>List of all currently available assignments of programmatic to actual column names of data sources used in mail merge. The position in the list has to match the following order of columns: TITLE,FIRSTNAME,LASTNAME,COMPANY,ADDRESS_1,ADDRESS_2,CITY,REGION,ZIP,COUNTRY,PHONE_PRIVATE,PHONE_BUSINESS,E_MAIL,GENDER</desc>
+					<label>Column assignment list</label>
+				</info>
+			</prop>
+			<node-ref oor:name="DataSource" oor:node-type="_DataSource">
+				<info>
+					<author>OS</author>
+					<desc>Contains the information of the data source that's been used the last time the wizard has been executed.</desc>
+					<label>Data Set</label>
+				</info>
+			</node-ref>
+		</group>
 		<group oor:name="BusinessLetterElementLocation" >
 			<info>
 				<author>TV</author>
@@ -432,27 +433,27 @@
 					<desc>Style of the Letter.</desc>
 				</info>
 			</prop>
-			<prop oor:type="xs:boolean"  oor:name="BusinessPaper">
+			<prop oor:type="xs:boolean" oor:name="BusinessPaper">
 				<info>
 					<desc>Enables Business Paper.</desc>
 				</info>
 			</prop>
-			<prop oor:type="xs:boolean"  oor:name="PaperCompanyAddressReceiverField">
+			<prop oor:type="xs:boolean" oor:name="PaperCompanyAddressReceiverField">
 				<info>
-					<desc>Enables the the Sender Address Line in the Receiver Field for Business Paper.</desc>
+					<desc>Enables the Sender Address Line in the Receiver Field for Business Paper.</desc>
 				</info>
 			</prop>
-			<prop oor:type="xs:boolean"  oor:name="PaperFooter">
+			<prop oor:type="xs:boolean" oor:name="PaperFooter">
 				<info>
 					<desc>Enables a Footer.</desc>
 				</info>
 			</prop>
-			<prop oor:type="xs:double"  oor:name="PaperFooterHeight">
+			<prop oor:type="xs:double" oor:name="PaperFooterHeight">
 				<info>
 					<desc>Height of the Footer.</desc>
 				</info>
 			</prop>
-			<prop oor:type="xs:int"  oor:name="Norm">
+			<prop oor:type="xs:int" oor:name="Norm">
 				<info>
 					<desc>Norm of the Letter.</desc>
 				</info>
@@ -742,297 +743,295 @@
 		</group>
 	</templates>
 	<component>
-        <group oor:name="MailMergeWizard">
-            <info>
-                <desc>Settings of the mail merge wizard.</desc>
-            </info>
-            <prop oor:name="OutputToLetter" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the document output is a letter, not an e-mail.</desc>
-                    <label>Output as letter</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="IncludeCountry" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the country/region is included into the address block. If yes the ExcludeCountry property may never be included.</desc>
-                    <label>Include country/region</label>
-                </info>
-                <value>false</value>
-            </prop>
-            <prop oor:name="ExcludeCountry" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>If the property IncludeCountry is true it all countries/regions are included into the address block except for this country or region.</desc>
-                    <label>ExcludeCountry</label>
-                </info>
-                <value></value>
-            </prop>
-
-            <prop oor:name="SavedDocuments" oor:type="oor:string-list">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a list of all documents previously used and saved as mailmerge source documents</desc>
-                    <label>Saved documents</label>
-                </info>
-            </prop>
-            <prop oor:name="AddressBlockSettings" oor:type="oor:string-list">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a list of settings for address blocks. It is a sequence of address column positions separated with breaks (\n) and spaces. The column positions start at 0 and after 9 follows a, b, c and they are equivalent to the following parts of an address: TITLE,FIRSTNAME,LASTNAME,COMPANY,ADDRESS_1,ADDRESS_2,CITY,REGION,ZIP,COUNTRY,PHONE_PRIVATE,PHONE_BUSINESS,E_MAIL</desc>
-                    <label>Address block settings</label>
-                </info>
-                <value oor:separator=";">&lt;0&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;;&lt;0&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;\n&lt;9&gt;;&lt;3&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;;&lt;3&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;\n&lt;9&gt;</value>
-
-            </prop>
-            <prop oor:name="IsAddressBlock" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the document should have an address block.</desc>
-                    <label>Address Block</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="CurrentAddressBlock" oor:type="xs:int">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines the currently used address block.</desc>
-                    <label>Current address block</label>
-                </info>
-                <value>0</value>
-            </prop>
-            <prop oor:name="IsHideEmptyParagraphs" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether address block lines should be hidden if there's no content.</desc>
-                    <label>Hide empty paragraphs</label>
-                </info>
-                <value>false</value>
-            </prop>
-            <prop oor:name="IsGreetingLine" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the document should have a greeting line.</desc>
-                    <label>Greeting line</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="IsEMailGreetingLine" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether an e-mail should have a greeting line.</desc>
-                    <label>E-mail greeting line</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="IsIndividualGreetingLine" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether an individual greeting line is used instead of a neutral one.</desc>
-                    <label>Use individual greeting line</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="IsEMailIndividualGreetingLine" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether in an e-mail an individual greeting line is used instead of a neutral one.</desc>
-                    <label>Use individual greeting line in e-Mail</label>
-                </info>
-                <value>true</value>
-            </prop>
-            <prop oor:name="FemaleGreetingLines" oor:type="oor:string-list" oor:localized="true">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a list of greeting lines, female.</desc>
-                    <label>Greeting lines, female</label>
-                </info>
-            </prop>
-            <prop oor:name="MaleGreetingLines" oor:type="oor:string-list" oor:localized="true">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a list of greeting lines, male.</desc>
-                    <label>Greeting lines, male</label>
-                </info>
-            </prop>
-            <prop oor:name="NeutralGreetingLines" oor:type="oor:string-list" oor:localized="true">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a list of greeting lines, neutral.</desc>
-                    <label>Greeting lines, neutral</label>
-                </info>
-            </prop>
-            <prop oor:name="CurrentFemaleGreeting" oor:type="xs:int">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the index of the current entry in list of female greeting lines.</desc>
-                    <label>Current female Greeting line</label>
-                </info>
-            </prop>
-            <prop oor:name="CurrentMaleGreeting" oor:type="xs:int">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the index of the current entry in list of male greeting lines.</desc>
-                    <label>Current male Greeting line</label>
-                </info>
-            </prop>
-            <prop oor:name="CurrentNeutralGreeting" oor:type="xs:int">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the index of the current entry in list of neutral greeting lines.</desc>
-                    <label>Current neutral Greeting line</label>
-                </info>
-            </prop>
-            <prop oor:name="FemaleGenderValue" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines the value of the Gender column that marks a recipient as female.</desc>
-                    <label>Female Gender Value</label>
-                </info>
-            </prop>
-            <prop oor:name="MailDisplayName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the display name of the mail address.</desc>
-                    <label>e-Mail Name</label>
-                </info>
-            </prop>
-            <prop oor:name="MailAddress" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>e-Mail address.</desc>
-                    <label>e-Mail address</label>
-                </info>
-            </prop>
-            <prop oor:name="IsMailReplyTo" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines if reply to is switched on.</desc>
-                    <label>Is reply to</label>
-                </info>
-            </prop>
-            <prop oor:name="MailReplyTo" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Reply to address.</desc>
-                    <label>Reply to</label>
-                </info>
-            </prop>
-            <prop oor:name="MailServer" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Name of the SMTP server.</desc>
-                    <label>SMTP server</label>
-                </info>
-            </prop>
-            <prop oor:name="MailPort" oor:type="xs:short">
-                <info>
-                    <author>OS</author>
-                    <desc>Port of the SMTP server.</desc>
-                    <label>Port</label>
-                </info>
-            </prop>
-            <prop oor:name="IsSecureConnection" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the connection to the SMTP server is done using SSL protocol.</desc>
-                    <label>Is secure connection</label>
-                </info>
-            </prop>
-            <prop oor:name="IsAuthentication" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether authentication at the SMTP server is necessary.</desc>
-                    <label>Is authentication</label>
-                </info>
-            </prop>
-            <prop oor:name="MailUserName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>User name to authenticate at the SMTP server.</desc>
-                    <label>User name</label>
-                </info>
-            </prop>
-            <prop oor:name="MailPassword" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Password to authenticate at the SMTP server.</desc>
-                    <label>Password</label>
-                </info>
-            </prop>
-            <prop oor:name="IsSMPTAfterPOP" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>SMTP server requires authentication at the POP or IMAP server</desc>
-                    <label>SMTP after POP</label>
-                </info>
-            </prop>
-            <prop oor:name="InServerName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Name of the incoming mail server</desc>
-                    <label>Incoming mail server</label>
-                </info>
-            </prop>
-            <prop oor:name="InServerPort" oor:type="xs:short">
-                <info>
-                    <author>OS</author>
-                    <desc>Port of the incoming mail server</desc>
-                    <label>Incoming server port</label>
-                </info>
-            </prop>
-            <prop oor:name="InServerIsPOP" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether the in server uses the POP3 or the IMAP protocol</desc>
-                    <label>POP</label>
-                </info>
-            </prop>
-            <prop oor:name="InServerUserName" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>User name of the incoming mail server</desc>
-                    <label>Incoming server user name</label>
-                </info>
-            </prop>
-            <prop oor:name="InServerPassword" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Password of the incoming mail server</desc>
-                    <label>Incoming server password</label>
-                </info>
-            </prop>
-            <prop oor:name="Filter" oor:type="xs:string">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains a filter statement for the current data source.</desc>
-                    <label>Filter</label>
-                </info>
-            </prop>
-            <prop oor:name="EMailSupported" oor:type="xs:boolean">
-                <info>
-                    <author>OS</author>
-                    <desc>Determines whether e-Mail is supported.</desc>
-                    <label>E-Mail supported</label>
-                </info>
-            </prop>
-            <set oor:name="AddressDataAssignments" oor:node-type="AddressDataAssignment">
-                <info>
-                    <author>OS</author>
-                    <desc>XXXXXX.</desc>
-                </info>
-            </set>
-            <node-ref oor:name="DataSource" oor:node-type="_DataSource">
-                <info>
-                    <author>OS</author>
-                    <desc>Contains the information of the data source that's been used the last time the wizard has been executed.</desc>
-                    <label>Data Set</label>
-                </info>
-            </node-ref>
-        </group>
-        <group oor:name="Content">
+		<group oor:name="MailMergeWizard">
+			<info>
+				<desc>Settings of the mail merge wizard.</desc>
+			</info>
+			<prop oor:name="OutputToLetter" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the document output is a letter, not an e-mail.</desc>
+					<label>Output as letter</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="IncludeCountry" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the country/region is included into the address block. If yes the ExcludeCountry property may never be included.</desc>
+					<label>Include country/region</label>
+				</info>
+				<value>false</value>
+			</prop>
+			<prop oor:name="ExcludeCountry" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>If the property IncludeCountry is true it all countries/regions are included into the address block except for this country or region.</desc>
+					<label>ExcludeCountry</label>
+				</info>
+				<value></value>
+			</prop>
+			<prop oor:name="SavedDocuments" oor:type="oor:string-list">
+				<info>
+					<author>OS</author>
+					<desc>Contains a list of all documents previously used and saved as mailmerge source documents</desc>
+					<label>Saved documents</label>
+				</info>
+			</prop>
+			<prop oor:name="AddressBlockSettings" oor:type="oor:string-list">
+				<info>
+					<author>OS</author>
+					<desc>Contains a list of settings for address blocks. It is a sequence of address column positions separated with breaks (\n) and spaces. The column positions start at 0 and after 9 follows a, b, c and they are equivalent to the following parts of an address: TITLE,FIRSTNAME,LASTNAME,COMPANY,ADDRESS_1,ADDRESS_2,CITY,REGION,ZIP,COUNTRY,PHONE_PRIVATE,PHONE_BUSINESS,E_MAIL</desc>
+					<label>Address block settings</label>
+				</info>
+				<value oor:separator=";">&lt;0&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;;&lt;0&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;\n&lt;9&gt;;&lt;3&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;;&lt;3&gt;\n&lt;1&gt; &lt;2&gt;\n&lt;4&gt;\n&lt;8&gt; &lt;6&gt;\n&lt;9&gt;</value>
+			</prop>
+			<prop oor:name="IsAddressBlock" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the document should have an address block.</desc>
+					<label>Address Block</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="CurrentAddressBlock" oor:type="xs:int">
+				<info>
+					<author>OS</author>
+					<desc>Determines the currently used address block.</desc>
+					<label>Current address block</label>
+				</info>
+				<value>0</value>
+			</prop>
+			<prop oor:name="IsHideEmptyParagraphs" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether address block lines should be hidden if there's no content.</desc>
+					<label>Hide empty paragraphs</label>
+				</info>
+				<value>false</value>
+			</prop>
+			<prop oor:name="IsGreetingLine" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the document should have a greeting line.</desc>
+					<label>Greeting line</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="IsEMailGreetingLine" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether an e-mail should have a greeting line.</desc>
+					<label>E-mail greeting line</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="IsIndividualGreetingLine" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether an individual greeting line is used instead of a neutral one.</desc>
+					<label>Use individual greeting line</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="IsEMailIndividualGreetingLine" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether in an e-mail an individual greeting line is used instead of a neutral one.</desc>
+					<label>Use individual greeting line in e-Mail</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="FemaleGreetingLines" oor:type="oor:string-list" oor:localized="true">
+				<info>
+					<author>OS</author>
+					<desc>Contains a list of greeting lines, female.</desc>
+					<label>Greeting lines, female</label>
+				</info>
+			</prop>
+			<prop oor:name="MaleGreetingLines" oor:type="oor:string-list" oor:localized="true">
+				<info>
+					<author>OS</author>
+					<desc>Contains a list of greeting lines, male.</desc>
+					<label>Greeting lines, male</label>
+				</info>
+			</prop>
+			<prop oor:name="NeutralGreetingLines" oor:type="oor:string-list" oor:localized="true">
+				<info>
+					<author>OS</author>
+					<desc>Contains a list of greeting lines, neutral.</desc>
+					<label>Greeting lines, neutral</label>
+				</info>
+			</prop>
+			<prop oor:name="CurrentFemaleGreeting" oor:type="xs:int">
+				<info>
+					<author>OS</author>
+					<desc>Contains the index of the current entry in list of female greeting lines.</desc>
+					<label>Current female Greeting line</label>
+				</info>
+			</prop>
+			<prop oor:name="CurrentMaleGreeting" oor:type="xs:int">
+				<info>
+					<author>OS</author>
+					<desc>Contains the index of the current entry in list of male greeting lines.</desc>
+					<label>Current male Greeting line</label>
+				</info>
+			</prop>
+			<prop oor:name="CurrentNeutralGreeting" oor:type="xs:int">
+				<info>
+					<author>OS</author>
+					<desc>Contains the index of the current entry in list of neutral greeting lines.</desc>
+					<label>Current neutral Greeting line</label>
+				</info>
+			</prop>
+			<prop oor:name="FemaleGenderValue" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Determines the value of the Gender column that marks a recipient as female.</desc>
+					<label>Female Gender Value</label>
+				</info>
+			</prop>
+			<prop oor:name="MailDisplayName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Contains the display name of the mail address.</desc>
+					<label>e-Mail Name</label>
+				</info>
+			</prop>
+			<prop oor:name="MailAddress" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>e-Mail address.</desc>
+					<label>e-Mail address</label>
+				</info>
+			</prop>
+			<prop oor:name="IsMailReplyTo" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines if reply to is switched on.</desc>
+					<label>Is reply to</label>
+				</info>
+			</prop>
+			<prop oor:name="MailReplyTo" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Reply to address.</desc>
+					<label>Reply to</label>
+				</info>
+			</prop>
+			<prop oor:name="MailServer" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Name of the SMTP server.</desc>
+					<label>SMTP server</label>
+				</info>
+			</prop>
+			<prop oor:name="MailPort" oor:type="xs:short">
+				<info>
+					<author>OS</author>
+					<desc>Port of the SMTP server.</desc>
+					<label>Port</label>
+				</info>
+			</prop>
+			<prop oor:name="IsSecureConnection" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the connection to the SMTP server is done using SSL protocol.</desc>
+					<label>Is secure connection</label>
+				</info>
+			</prop>
+			<prop oor:name="IsAuthentication" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether authentication at the SMTP server is necessary.</desc>
+					<label>Is authentication</label>
+				</info>
+			</prop>
+			<prop oor:name="MailUserName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>User name to authenticate at the SMTP server.</desc>
+					<label>User name</label>
+				</info>
+			</prop>
+			<prop oor:name="MailPassword" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Password to authenticate at the SMTP server.</desc>
+					<label>Password</label>
+				</info>
+			</prop>
+			<prop oor:name="IsSMPTAfterPOP" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>SMTP server requires authentication at the POP or IMAP server</desc>
+					<label>SMTP after POP</label>
+				</info>
+			</prop>
+			<prop oor:name="InServerName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Name of the incoming mail server</desc>
+					<label>Incoming mail server</label>
+				</info>
+			</prop>
+			<prop oor:name="InServerPort" oor:type="xs:short">
+				<info>
+					<author>OS</author>
+					<desc>Port of the incoming mail server</desc>
+					<label>Incoming server port</label>
+				</info>
+			</prop>
+			<prop oor:name="InServerIsPOP" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether the in server uses the POP3 or the IMAP protocol</desc>
+					<label>POP</label>
+				</info>
+			</prop>
+			<prop oor:name="InServerUserName" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>User name of the incoming mail server</desc>
+					<label>Incoming server user name</label>
+				</info>
+			</prop>
+			<prop oor:name="InServerPassword" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Password of the incoming mail server</desc>
+					<label>Incoming server password</label>
+				</info>
+			</prop>
+			<prop oor:name="Filter" oor:type="xs:string">
+				<info>
+					<author>OS</author>
+					<desc>Contains a filter statement for the current data source.</desc>
+					<label>Filter</label>
+				</info>
+			</prop>
+			<prop oor:name="EMailSupported" oor:type="xs:boolean">
+				<info>
+					<author>OS</author>
+					<desc>Determines whether e-Mail is supported.</desc>
+					<label>E-Mail supported</label>
+				</info>
+			</prop>
+			<set oor:name="AddressDataAssignments" oor:node-type="AddressDataAssignment">
+				<info>
+					<author>OS</author>
+					<desc>XXXXXX.</desc>
+				</info>
+			</set>
+			<node-ref oor:name="DataSource" oor:node-type="_DataSource">
+				<info>
+					<author>OS</author>
+					<desc>Contains the information of the data source that's been used the last time the wizard has been executed.</desc>
+					<label>Data Set</label>
+				</info>
+			</node-ref>
+		</group>
+		<group oor:name="Content">
 			<info>
 				<desc>Contains settings for various content elements.</desc>
 			</info>
@@ -1207,16 +1206,16 @@
 					</info>
 					<value>true</value>
 				</prop>
-                <prop oor:name="HiddenCharacter" oor:type="xs:boolean">
-                    <!-- UIHints: Tools - Options - Text document  Formatting aids - [Section] Display of -->
-                    <info>
-                        <author>OS</author>
-                        <desc>Specifies if hidden paragraphs are displayed on the screen.</desc>
-                        <label>Hidden text</label>
-                    </info>
-                    <value>false</value>
-                </prop>
-            </group>
+				<prop oor:name="HiddenCharacter" oor:type="xs:boolean">
+					<!-- UIHints: Tools - Options - Text document  Formatting aids - [Section] Display of -->
+					<info>
+						<author>OS</author>
+						<desc>Specifies if hidden paragraphs are displayed on the screen.</desc>
+						<label>Hidden text</label>
+					</info>
+					<value>false</value>
+				</prop>
+			</group>
 			<group oor:name="Update">
 				<info>
 					<desc>Contains settings for the automatic update of some elements.</desc>
@@ -1319,15 +1318,15 @@
 				<info>
 					<desc>Contains various window settings such as scrollbars, rules, etc.</desc>
 				</info>
-                <prop oor:name="ShowScrollBarTips" oor:type="xs:boolean">
-                    <!-- UIHints: Not accessible via user interface -->
-                    <info>
-                        <author>arielch</author>
-                        <desc>Enables the user to prevent the display of help tips on the scrollbars programmatically.</desc>
-                        <label>Prevent scrollbars help tips</label>
-                    </info>
-                    <value>true</value>
-                </prop>
+				<prop oor:name="ShowScrollBarTips" oor:type="xs:boolean">
+					<!-- UIHints: Not accessible via user interface -->
+					<info>
+						<author>arielch</author>
+						<desc>Enables the user to prevent the display of help tips on the scrollbars programmatically.</desc>
+						<label>Prevent scrollbars help tips</label>
+					</info>
+					<value>true</value>
+				</prop>
 				<prop oor:name="HorizontalScroll" oor:type="xs:boolean">
 					<!-- OldPath: Writer/Layout/Window -->
 					<!-- OldLocation: Soffice.cfg -->
@@ -1588,7 +1587,7 @@
 					<!-- OldPath: Writer/Layout -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Layout - [Section] Tab stops -->
-					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 1270 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 1270 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the distance between tab stops [UNIT=1/100 mm].</desc>
@@ -1779,87 +1778,87 @@
 					<label>Standard</label>
 				</info>
 			</prop>
-            <prop oor:name="StandardHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Standard paragraph style.</desc>
-                    <label>StandardHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Heading" oor:type="xs:string">
+			<prop oor:name="StandardHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Standard paragraph style.</desc>
+					<label>StandardHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Heading" oor:type="xs:string">
 				<!-- OldPath: Writer/Default_Fonts -->
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western)-->
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font type to be used for the paragraph&apos;s headings.</desc>
 					<label>Heading</label>
 				</info>
 			</prop>
-            <prop oor:name="HeadingHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Heading paragraph style.</desc>
-                    <label>HeadingHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="List" oor:type="xs:string">
+			<prop oor:name="HeadingHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Heading paragraph style.</desc>
+					<label>HeadingHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="List" oor:type="xs:string">
 				<!-- OldPath: Writer/Default_Fonts -->
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western)-->
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used in the paragraph styles for lists and numbering.</desc>
 					<label>List</label>
 				</info>
 			</prop>
-            <prop oor:name="ListHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
-                    <label>ListHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Caption" oor:type="xs:string">
+			<prop oor:name="ListHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
+					<label>ListHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Caption" oor:type="xs:string">
 				<!-- OldPath: Writer/Default_Fonts -->
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western)-->
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used for the labels of images and tables.</desc>
 					<label>Caption</label>
 				</info>
 			</prop>
-            <prop oor:name="CaptionHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the labels of images and tables.</desc>
-                    <label>CaptionHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Index" oor:type="xs:string">
+			<prop oor:name="CaptionHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the labels of images and tables.</desc>
+					<label>CaptionHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Index" oor:type="xs:string">
 				<!-- OldPath: Writer/Default_Fonts -->
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western)-->
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the fonts to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
 					<label>Index</label>
 				</info>
 			</prop>
-            <prop oor:name="IndexHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
-                    <label>IndexHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Document" oor:type="xs:boolean">
+			<prop oor:name="IndexHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Western) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
+					<label>IndexHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Document" oor:type="xs:boolean">
 				<!-- OldPath: Writer/Default_Fonts -->
 				<!-- OldLocation: Soffice.cfg -->
 				<!-- UIHints: Tools - Options - Text document  Default Fonts -->
@@ -1883,80 +1882,80 @@
 					<label>Standard</label>
 				</info>
 			</prop>
-            <prop oor:name="StandardHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Standard paragraph style.</desc>
-                    <label>StandardHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Heading" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian)-->
+			<prop oor:name="StandardHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Standard paragraph style.</desc>
+					<label>StandardHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Heading" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font type to be used for the paragraph&apos;s headings.</desc>
 					<label>Heading</label>
 				</info>
 			</prop>
-            <prop oor:name="HeadingHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Heading paragraph style.</desc>
-                    <label>HeadingHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="List" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian)-->
+			<prop oor:name="HeadingHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Heading paragraph style.</desc>
+					<label>HeadingHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="List" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used in the paragraph styles for lists and numbering.</desc>
 					<label>List</label>
 				</info>
 			</prop>
-            <prop oor:name="ListHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
-                    <label>ListHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Caption" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian)-->
+			<prop oor:name="ListHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
+					<label>ListHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Caption" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used for the labels of images and tables.</desc>
 					<label>Caption</label>
 				</info>
 			</prop>
-            <prop oor:name="CaptionHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the labels of images and tables.</desc>
-                    <label>CaptionHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Index" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian)-->
+			<prop oor:name="CaptionHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the labels of images and tables.</desc>
+					<label>CaptionHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Index" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the fonts to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
 					<label>Index</label>
 				</info>
 			</prop>
-            <prop oor:name="IndexHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
-                    <label>IndexHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Document" oor:type="xs:boolean">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian)-->
+			<prop oor:name="IndexHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CJK) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
+					<label>IndexHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Document" oor:type="xs:boolean">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (Asian) -->
 				<info>
 					<author>OS</author>
 					<desc>Applies the settings to the current document only (true). Otherwise, the settings will apply to all future documents (false).</desc>
@@ -1977,80 +1976,80 @@
 					<label>Standard</label>
 				</info>
 			</prop>
-            <prop oor:name="StandardHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Standard paragraph style.</desc>
-                    <label>StandardHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Heading" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL)-->
+			<prop oor:name="StandardHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Standard paragraph style.</desc>
+					<label>StandardHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Heading" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font type to be used for the paragraph&apos;s headings.</desc>
 					<label>Heading</label>
 				</info>
 			</prop>
-            <prop oor:name="HeadingHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the Heading paragraph style.</desc>
-                    <label>HeadingHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="List" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL)-->
+			<prop oor:name="HeadingHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the Heading paragraph style.</desc>
+					<label>HeadingHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="List" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used in the paragraph styles for lists and numbering.</desc>
 					<label>List</label>
 				</info>
 			</prop>
-            <prop oor:name="ListHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
-                    <label>ListHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Caption" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL)-->
+			<prop oor:name="ListHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used in the paragraph styles for lists and numberings.</desc>
+					<label>ListHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Caption" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the font to be used for the labels of images and tables.</desc>
 					<label>Caption</label>
 				</info>
 			</prop>
-            <prop oor:name="CaptionHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be used for the labels of images and tables.</desc>
-                    <label>CaptionHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Index" oor:type="xs:string">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL)-->
+			<prop oor:name="CaptionHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be used for the labels of images and tables.</desc>
+					<label>CaptionHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Index" oor:type="xs:string">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies the fonts to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
 					<label>Index</label>
 				</info>
 			</prop>
-            <prop oor:name="IndexHeight" oor:type="xs:int">
-                <!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
-                    <label>IndexHeight</label>
-                </info>
-            </prop>
-            <prop oor:name="Document" oor:type="xs:boolean">
-				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL)-->
+			<prop oor:name="IndexHeight" oor:type="xs:int">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the font size to be applied to the paragraph styles for user-defined indexes, alphabetical indexes, tables of contents and to all of the paragraph styles derived from this.</desc>
+					<label>IndexHeight</label>
+				</info>
+			</prop>
+			<prop oor:name="Document" oor:type="xs:boolean">
+				<!-- UIHints: Tools - Options - Text document  Default Fonts (CTL) -->
 				<info>
 					<author>OS</author>
 					<desc>Applies the settings to the current document only (true). Otherwise, the settings will apply to all future documents (false).</desc>
@@ -2133,24 +2132,24 @@
 					</info>
 					<value>false</value>
 				</prop>
-                                <prop oor:name="PrintHiddenText" oor:type="xs:boolean">
-                                        <!-- UIHints: Tools - Option - Text-Document - Print - [Section] Contents -->
-                                        <info>
-                                                <author>OS</author>
-                                                <desc>Specifies if hidden text, fields, paragraphs are printed.</desc>
-                                                <label>Print hidden text</label>
-                                        </info>
-                                        <value>false</value>
-                                </prop>
-                                <prop oor:name="PrintPlaceholders" oor:type="xs:boolean">
-                                        <!-- UIHints: Tools - Option - Text-Document - Print - [Section] Contents -->
-                                        <info>
-                                                <author>OS</author>
-                                                <desc>Specifies if the text of placeholder fields is printed.</desc>
-                                                <label>Print placeholders</label>
-                                        </info>
-                                        <value>false</value>
-                                </prop>
+				<prop oor:name="PrintHiddenText" oor:type="xs:boolean">
+					<!-- UIHints: Tools - Option - Text-Document - Print - [Section] Contents -->
+					<info>
+						<author>OS</author>
+						<desc>Specifies if hidden text, fields, paragraphs are printed.</desc>
+						<label>Print hidden text</label>
+					</info>
+					<value>false</value>
+				</prop>
+				<prop oor:name="PrintPlaceholders" oor:type="xs:boolean">
+					<!-- UIHints: Tools - Option - Text-Document - Print - [Section] Contents -->
+					<info>
+						<author>OS</author>
+						<desc>Specifies if the text of placeholder fields is printed.</desc>
+						<label>Print placeholders</label>
+					</info>
+					<value>false</value>
+				</prop>
 				<prop oor:name="Note" oor:type="xs:int">
 					<!-- OldPath: Writer/Print -->
 					<!-- OldLocation: Soffice.cfg -->
@@ -2288,17 +2287,17 @@
 					<value>false</value>
 				</prop>
 			</group>
-                        <prop oor:name="EmptyPages" oor:type="xs:boolean">
-                                <!-- UIHints: Tools - Options - Text document - Print - Other - Print automatically inserted blank pages -->
-                                <info>
-                                        <author>FME</author>
-                                        <desc>Contains settings for printing of empty pages.</desc>
-                                        <desc>Specifies that automatically inserted empty pages are printed.</desc>
-                                        <label>Print automatically inserted blank pages</label>
-                                </info>
-                                <value>true</value>
-                        </prop>
-                </group>
+				<prop oor:name="EmptyPages" oor:type="xs:boolean">
+					<!-- UIHints: Tools - Options - Text document - Print - Other - Print automatically inserted blank pages -->
+					<info>
+						<author>FME</author>
+						<desc>Contains settings for printing of empty pages.</desc>
+						<desc>Specifies that automatically inserted empty pages are printed.</desc>
+						<label>Print automatically inserted blank pages</label>
+					</info>
+					<value>true</value>
+				</prop>
+			</group>
 		<group oor:name="Table">
 			<info>
 				<desc>Contains settings for tables.</desc>
@@ -2311,7 +2310,7 @@
 					<!-- OldPath: Writer/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Shift -->
-					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for moving a table row [UNIT=1/100 mm].</desc>
@@ -2323,7 +2322,7 @@
 					<!-- OldPath: Writer/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Shift -->
-					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric: 635 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for shifting a table column [UNIT=1/100 mm].</desc>
@@ -2340,7 +2339,7 @@
 					<!-- OldPath: Writer/Table/Insert -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Insert -->
-					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric:  635 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform); NonMetric:  635 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for inserting rows [UNIT=1/100 mm].</desc>
@@ -2352,7 +2351,7 @@
 					<!-- OldPath: Writer/Table/Insert -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Text document - Table - [Section] Insert -->
-					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform);NonMetric:  2540 1/100 mm-->
+					<!-- Notice: The default value is valid for the English Version (depends, if a metric system is used on the platform);NonMetric:  2540 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for inserting columns [UNIT=1/100 mm].</desc>
@@ -2823,7 +2822,7 @@
 						<desc>Specifies the settings for inserting captions for Writer objects.</desc>
 					</info>
 					<group oor:name="Table">
-						<!--OldPath: Writer/Insert/Caption/Object/StarWriter_Table-->
+						<!--OldPath: Writer/Insert/Caption/Object/StarWriter_Table -->
 						<info>
 							<desc>Specifies the settings for inserting captions for tables.</desc>
 						</info>
@@ -2888,14 +2887,14 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
 								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
@@ -3021,14 +3020,14 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
 								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
@@ -3079,13 +3078,13 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Graphic">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarWriter_Graphic -->
@@ -3153,15 +3152,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3192,38 +3191,38 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="Position" oor:type="xs:int">
-                                <info>
-                                    <desc>Specifies the position of the caption field.</desc>
-                                    <label>Position</label>
-                                </info>
-                                <constraints>
-                                    <enumeration oor:value="0">
-                                        <info>
-                                            <desc>above</desc>
-                                        </info>
-                                    </enumeration>
-                                    <enumeration oor:value="1">
-                                        <info>
-                                            <desc>below</desc>
-                                        </info>
-                                    </enumeration>
-                                </constraints>
-                                <value>1</value>
-                            </prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="Position" oor:type="xs:int">
+								<info>
+									<desc>Specifies the position of the caption field.</desc>
+									<label>Position</label>
+								</info>
+								<constraints>
+									<enumeration oor:value="0">
+										<info>
+											<desc>above</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="1">
+										<info>
+											<desc>below</desc>
+										</info>
+									</enumeration>
+								</constraints>
+								<value>1</value>
+							</prop>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 				</group>
 				<group oor:name="OfficeObject">
@@ -3296,15 +3295,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3354,19 +3353,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Draw">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_Draw -->
@@ -3434,15 +3433,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3572,15 +3571,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3630,19 +3629,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Image">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_Image -->
@@ -3710,15 +3709,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3768,19 +3767,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Formula">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_Formula -->
@@ -3848,15 +3847,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -3906,19 +3905,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="Impress">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_Impress -->
@@ -3986,15 +3985,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -4044,19 +4043,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 					<group oor:name="OLEMisc">
 						<!-- OldPath: Writer/Insert/Caption/Object/StarOffice5.2_OLEMisc -->
@@ -4124,15 +4123,15 @@
 								</constraints>
 								<value>4</value>
 							</prop>
-                                                        <prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
-                                                                <info>
-                                                                        <desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
-                                                                        <label>Numbering separator</label>
-                                                                </info>
-                                                                <value>. </value>
-                                                        </prop>
-                            <prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
-                                <info>
+							<prop oor:name="NumberingSeparator" oor:type="xs:string" oor:localized="true">
+								<info>
+									<desc>In case the order of the caption is set to 'Numbering first' then this property contains the separator between the number and the category.</desc>
+									<label>Numbering separator</label>
+								</info>
+								<value>. </value>
+							</prop>
+							<prop oor:name="CaptionText" oor:type="xs:string" oor:localized="true">
+								<info>
 									<desc>Specifies the text of the caption field.</desc>
 									<label>CaptionText</label>
 								</info>
@@ -4182,19 +4181,19 @@
 								</info>
 								<value>.</value>
 							</prop>
-                            <prop oor:name="CharacterStyle" oor:type="xs:string">
-                                <info>
-                                    <desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
-                                    <label>Character style</label>
-                                </info>
-                            </prop>
-                            <prop oor:name="ApplyAttributes" oor:type="xs:boolean">
-                                <info>
-                                    <desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
-                                    <label>Apply attributes</label>
-                                </info>
-                            </prop>
-                        </group>
+							<prop oor:name="CharacterStyle" oor:type="xs:string">
+								<info>
+									<desc>Specifies the character style that is applied to the label and number part of the caption.</desc>
+									<label>Character style</label>
+								</info>
+							</prop>
+							<prop oor:name="ApplyAttributes" oor:type="xs:boolean">
+								<info>
+									<desc>Determines whether the border and shadow attributes of the graphic frame should be applied to the newly inserted caption frame surrounding the graphic.</desc>
+									<label>Apply attributes</label>
+								</info>
+							</prop>
+						</group>
 					</group>
 				</group>
 			</group>
@@ -4320,15 +4319,15 @@
 					</info>
 					<value>false</value>
 				</prop>
-                                <prop oor:name="SearchInAllCategories" oor:type="xs:boolean">
-                                        <!-- #b6633427# -->
-                                        <info>
-                                                <author>OS</author>
-                                                <desc>Specifies if the search for an AutoText shortcut will always be done in all AutoText categories.</desc>
-                                                <label>Search for short cut in all categories</label>
-                                        </info>
-                                        <value>false</value>
-                                </prop>
+				<prop oor:name="SearchInAllCategories" oor:type="xs:boolean">
+					<!-- #b6633427# -->
+					<info>
+						<author>OS</author>
+						<desc>Specifies if the search for an AutoText shortcut will always be done in all AutoText categories.</desc>
+						<label>Search for short cut in all categories</label>
+					</info>
+					<value>false</value>
+				</prop>
 			</group>
 			<group oor:name="Format">
 				<info>
@@ -4462,7 +4461,7 @@
 					<prop oor:name="CombineValue" oor:type="xs:int">
 						<!-- OldPath: Writer/AutoFormat/Options -->
 						<!-- OldLocation: Soffice.cfg -->
-						<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Combine single line paragraphs if length greater... / Edit/Combine/Minimum size-->
+						<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Combine single line paragraphs if length greater... / Edit/Combine/Minimum size -->
 						<info>
 							<author>OS</author>
 							<desc>Specifies the minimum length value for combining single line paragraphs. [UNIT=%]</desc>
@@ -4533,7 +4532,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Default value 0 = Symbol-->
+								<!-- Default value 0 = Symbol -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font family if ChangeToBullets=true.</desc>
@@ -4544,7 +4543,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Default value 10 = Symbol-->
+								<!-- Default value 10 = Symbol -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font character set if ChangeToBullets=true.</desc>
@@ -4555,7 +4554,7 @@
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
 								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Replace bullets with -->
-								<!--Default value 2 = Variable-->
+								<!-- Default value 2 = Variable -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font pitch if ChangeToBullets=true.</desc>
@@ -4651,7 +4650,7 @@
 						<prop oor:name="Enable" oor:type="xs:boolean">
 							<!-- OldPath: Writer/AutoFormat/ByInput -->
 							<!-- OldLocation: Soffice.cfg -->
-							<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Apply numbering-->
+							<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Apply numbering -->
 							<info>
 								<author>OS</author>
 								<desc>Specifies if a numbered or bulleted text is created automatically while typing.</desc>
@@ -4666,7 +4665,7 @@
 							<prop oor:name="Char" oor:type="xs:int">
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
-								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Apply numbering-->
+								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options  Apply numbering -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the character code if ApplyNumbering=true.</desc>
@@ -4676,7 +4675,7 @@
 							<prop oor:name="Font" oor:type="xs:string">
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
-								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
+								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font name if ApplyNumbering=true.</desc>
@@ -4686,8 +4685,8 @@
 							<prop oor:name="FontFamily" oor:type="xs:int">
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
-								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Default value 0 = Symbol-->
+								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering -->
+								<!-- Default value 0 = Symbol -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font family if ApplyNumbering=true.</desc>
@@ -4697,8 +4696,8 @@
 							<prop oor:name="FontCharset" oor:type="xs:int">
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
-								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Default value 10 = Symbol-->
+								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering -->
+								<!-- Default value 10 = Symbol -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font character set if ApplyNumbering=true.</desc>
@@ -4708,8 +4707,8 @@
 							<prop oor:name="FontPitch" oor:type="xs:int">
 								<!-- OldPath: Writer/AutoFormat/Options -->
 								<!-- OldLocation: Soffice.cfg -->
-								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering-->
-								<!--Default value 2 = Variable-->
+								<!-- UIHints: Tools  AutoCorrect/AutoFormat  Options Apply Numbering -->
+								<!-- Default value 2 = Variable -->
 								<info>
 									<author>OS</author>
 									<desc>Specifies the font pitch if ApplyNumbering=true.</desc>
@@ -5638,7 +5637,7 @@
 			<group oor:name="Selection">
 				<!-- OldPath: Writer/Toolbars/ObjectBar -->
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Right mouse click to the toolbar with object selection-->
+				<!-- UIHints: Right mouse click to the toolbar with object selection -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies which type of object bars are visible.</desc>
@@ -5682,7 +5681,7 @@
 			<prop oor:name="ShowAnkor" oor:type="xs:boolean">
 			<info>
 				<author>mod</author>
-				<desc>configures if comment anchor should be shown or hidden when display is off</desc>
+				<desc>Configures if comment anchor should be shown or hidden when display is off</desc>
 				<label>Comments Anchor on/off</label>
 			</info>
 			<value>false</value>
@@ -5858,7 +5857,7 @@
 				<prop oor:name="AddresseeFromLeft" oor:type="xs:int">
 					<!-- OldPath: Writer/Dialog/Envelope/Format -->
 					<!-- OldLocation: Soffice.cfg -->
-					<!-- UIHints: Insert  Envolpe  Format //  old twips: 6463 / 2-->
+					<!-- UIHints: Insert  Envolpe  Format //  old twips: 6463 / 2 -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the position of the addressee field measured from the left margin [UNIT=1/100 mm].</desc>
@@ -5869,7 +5868,7 @@
 				<prop oor:name="AddresseeFromTop" oor:type="xs:int">
 					<!-- OldPath: Writer/Dialog/Envelope/Format -->
 					<!-- OldLocation: Soffice.cfg -->
-					<!-- UIHints: Insert  Envolpe  Format  // old twips: 6463 / 2-->
+					<!-- UIHints: Insert  Envolpe  Format  // old twips: 6463 / 2 -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the position of the addressee field measured from the upper margin [UNIT=1/100 mm].</desc>
@@ -6065,7 +6064,7 @@
 				</info>
 				<prop oor:name="KeepRatio" oor:type="xs:boolean">
 					<!--OldLocation: Soffice.cfg -->
-					<!--UIHints: Numbering/Bullets dialog - Customize - Graphics - Keep Ratio-->
+					<!--UIHints: Numbering/Bullets dialog - Customize - Graphics - Keep Ratio -->
 					<info>
 						<author>OS</author>
 						<desc>Maintains the proportions of pictures when the size is modified.</desc>
@@ -6073,187 +6072,187 @@
 					<value>false</value>
 				</prop>
 			</group>
-                        <group oor:name="DefaultBulletList">
-                                <info>
-                                        <author>OD</author>
-                                        <desc>Contains the font and the character used for each level for the default bullet list.</desc>
-                                </info>
-                                <group oor:name="BulletFont">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Contains the font and its relevant attributes used for the default bullet list.</desc>
-                                        </info>
-                                        <prop oor:name="FontFamilyname" oor:type="xs:string">
-                                                <info>
-                                                        <author>OD</author>
-                                                        <desc>Font family name of default bullet character for all list levels.</desc>
-                                                </info>
-                                        </prop>
-                                        <prop oor:name="FontWeight" oor:type="xs:short">
-                                                <info>
-                                                        <author>OD</author>
-                                                        <desc>Font weight of default bullet character for all list levels.</desc>
-                                                </info>
-                                                <constraints>
-                                                        <enumeration oor:value="0">
-                                                                <info>
-                                                                        <desc>Don't know</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="1">
-                                                                <info>
-                                                                        <desc>Thin</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="2">
-                                                                <info>
-                                                                        <desc>UltraLight</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="3">
-                                                                <info>
-                                                                        <desc>Light</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="4">
-                                                                <info>
-                                                                        <desc>SemiLight</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="5">
-                                                                <info>
-                                                                        <desc>Normal</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="6">
-                                                                <info>
-                                                                        <desc>Medium</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="7">
-                                                                <info>
-                                                                        <desc>SemiBold</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="8">
-                                                                <info>
-                                                                        <desc>Bold</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="9">
-                                                                <info>
-                                                                        <desc>UltraBold</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="10">
-                                                                <info>
-                                                                        <desc>Black</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                </constraints>
-                                        </prop>
-                                        <prop oor:name="FontItalic" oor:type="xs:short">
-                                                <info>
-                                                        <author>OD</author>
-                                                        <desc>Italic attribute of font of default bullet character for all list levels.</desc>
-                                                </info>
-                                                <constraints>
-                                                        <enumeration oor:value="0">
-                                                                <info>
-                                                                        <desc>None</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="1">
-                                                                <info>
-                                                                        <desc>Don't know</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="2">
-                                                                <info>
-                                                                        <desc>Oblique</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                        <enumeration oor:value="3">
-                                                                <info>
-                                                                        <desc>Normal</desc>
-                                                                </info>
-                                                        </enumeration>
-                                                </constraints>
-                                        </prop>
-                                </group>
-                                <prop oor:name="BulletCharLvl1" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 1.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl2" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 2.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl3" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 3.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl4" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 4.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl5" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 5.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl6" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 6.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl7" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 7.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl8" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 8.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl9" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 9.</desc>
-                                        </info>
-                                </prop>
-                                <prop oor:name="BulletCharLvl10" oor:type="xs:short">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Unicode value of default bullet character for list level 10.</desc>
-                                        </info>
-                                </prop>
-                        </group>
-                        <group oor:name="UserInterfaceBehavior">
-                                <info>
-                                        <author>OD</author>
-                                        <desc>Contains switches for the behavior of the user interface regarding lists and list items.</desc>
-                                </info>
-                                <prop oor:name="ChangeIndentOnTabAtFirstPosOfFirstListItem" oor:type="xs:boolean">
-                                        <info>
-                                                <author>OD</author>
-                                                <desc>Behavior of &gt;TAB&lt;-key and &gt;SHIFT-TAB&lt;-key at the first position of the first list item of a list. &gt;TRUE&lt;: complete list indent is increased/decreased. &gt;FALSE&lt;: default behavior of &gt;TAB&lt; resp. &gt;SHIFT-TAB&lt;-key at first position of a list item.</desc>
-                                        </info>
-                                </prop>
-                        </group>
+		<group oor:name="DefaultBulletList">
+			<info>
+				<author>OD</author>
+				<desc>Contains the font and the character used for each level for the default bullet list.</desc>
+			</info>
+			<group oor:name="BulletFont">
+				<info>
+					<author>OD</author>
+						<desc>Contains the font and its relevant attributes used for the default bullet list.</desc>
+					</info>
+					<prop oor:name="FontFamilyname" oor:type="xs:string">
+						<info>
+							<author>OD</author>
+							<desc>Font family name of default bullet character for all list levels.</desc>
+						</info>
+					</prop>
+					<prop oor:name="FontWeight" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Font weight of default bullet character for all list levels.</desc>
+						</info>
+						<constraints>
+							<enumeration oor:value="0">
+								<info>
+									<desc>Don't know</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="1">
+								<info>
+									<desc>Thin</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="2">
+								<info>
+									<desc>UltraLight</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="3">
+								<info>
+									<desc>Light</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="4">
+								<info>
+									<desc>SemiLight</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="5">
+								<info>
+									<desc>Normal</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="6">
+								<info>
+									<desc>Medium</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="7">
+								<info>
+									<desc>SemiBold</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="8">
+								<info>
+									<desc>Bold</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="9">
+								<info>
+									<desc>UltraBold</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="10">
+								<info>
+									<desc>Black</desc>
+								</info>
+							</enumeration>
+						</constraints>
+					</prop>
+					<prop oor:name="FontItalic" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Italic attribute of font of default bullet character for all list levels.</desc>
+						</info>
+						<constraints>
+							<enumeration oor:value="0">
+								<info>
+									<desc>None</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="1">
+								<info>
+									<desc>Don't know</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="2">
+								<info>
+									<desc>Oblique</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="3">
+								<info>
+									<desc>Normal</desc>
+								</info>
+							</enumeration>
+						</constraints>
+					</prop>
+				</group>
+					<prop oor:name="BulletCharLvl1" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 1.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl2" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 2.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl3" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 3.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl4" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 4.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl5" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 5.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl6" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 6.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl7" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 7.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl8" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 8.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl9" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 9.</desc>
+						</info>
+					</prop>
+					<prop oor:name="BulletCharLvl10" oor:type="xs:short">
+						<info>
+							<author>OD</author>
+							<desc>Unicode value of default bullet character for list level 10.</desc>
+						</info>
+					</prop>
+				</group>
+				<group oor:name="UserInterfaceBehavior">
+					<info>
+						<author>OD</author>
+						<desc>Contains switches for the behavior of the user interface regarding lists and list items.</desc>
+					</info>
+					<prop oor:name="ChangeIndentOnTabAtFirstPosOfFirstListItem" oor:type="xs:boolean">
+						<info>
+							<author>OD</author>
+							<desc>Behavior of &gt;TAB&lt;-key and &gt;SHIFT-TAB&lt;-key at the first position of the first list item of a list. &gt;TRUE&lt;: complete list indent is increased/decreased. &gt;FALSE&lt;: default behavior of &gt;TAB&lt; resp. &gt;SHIFT-TAB&lt;-key at first position of a list item.</desc>
+						</info>
+					</prop>
+				</group>
 		</group>
 		<group oor:name="Statistics">
 			<info>
@@ -6265,7 +6264,7 @@
 				</info>
 				<prop oor:name="Delimiter" oor:type="xs:string">
 					<!--OldLocation: Soffice.cfg -->
-					<!--UIHints: File - Properties - Statistics - Word number - Separator-->
+					<!--UIHints: File - Properties - Statistics - Word number - Separator -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the character to be used as a separator.</desc>
@@ -6299,7 +6298,7 @@
 				</info>
 				<prop oor:name="SinglePrintJobs" oor:type="xs:boolean">
 					<!-- OldLocation: Soffice.cfg -->
-					<!-- UIHints: Form letter - Printer output - Single print jobs-->
+					<!-- UIHints: Form letter - Printer output - Single print jobs -->
 					<info>
 						<author>OS</author>
 						<desc>Prints each form letter individually with the selected printer (true).</desc>
@@ -6320,7 +6319,7 @@
 				</info>
 				<prop oor:name="Format" oor:type="xs:int">
 					<!-- OldLocation: Soffice.cfg -->
-					<!--UIHints: Form letter - Mailing output - Mail format-->
+					<!--UIHints: Form letter - Mailing output - Mail format -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the mail format.</desc>
@@ -6355,7 +6354,7 @@
 				</info>
 				<prop oor:name="Path" oor:type="xs:string">
 					<!-- OldLocation: Soffice.cfg -->
-					<!--UIHints: Form letter - File output - Path-->
+					<!--UIHints: Form letter - File output - Path -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the path for the form letter file.</desc>
@@ -6372,7 +6371,7 @@
 						<desc>Specifies how the file name is built.</desc>
 					</info>
 					<prop oor:name="Generation" oor:type="xs:boolean">
-						<!--UI hints: Form letter - File output - Generate file name from - Database field / Manual setting-->
+						<!--UI hints: Form letter - File output - Generate file name from - Database field / Manual setting -->
 						<info>
 							<desc>Determines if the file name is generated from a database field or from user input.</desc>
 						</info>
@@ -6396,7 +6395,7 @@
 			</info>
 			<prop oor:name="GraphicToGalleryAsLink" oor:type="xs:boolean">
 				<!-- OldLocation: Soffice.cfg -->
-				<!--UIHints: context menu of readonly loaded documents-->
+				<!--UIHints: context menu of readonly loaded documents -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies if a preview of the index is displayed in the dialog Insert Index.</desc>
@@ -6861,12 +6860,12 @@
 					</constraints>
 					<value>0</value>
 				</prop>
-                                <prop oor:name="RegardHindiDigits" oor:type="xs:long">
-                                        <info>
-                                                <desc>If true yields to digits marked as CTL script to be imported as Hindi digits.</desc>
-                                        </info>
-                                        <value>0</value>
-                                </prop>
+				<prop oor:name="RegardHindiDigits" oor:type="xs:long">
+					<info>
+						<desc>If true yields to digits marked as CTL script to be imported as Hindi digits.</desc>
+					</info>
+					<value>0</value>
+				</prop>
 			</group>
 			<group oor:name="Writer">
 				<info>
@@ -6962,7 +6961,6 @@
 						<desc>The type of the Fax</desc>
 					</info>
 				</prop>
-
 				<prop oor:type="xs:string" oor:name="Title">
 					<info>
 						<desc>The title of the agenda</desc>
@@ -6983,7 +6981,6 @@
 						<desc>The Location of the meeting</desc>
 					</info>
 				</prop>
-
 				<prop oor:type="xs:boolean" oor:name="ShowMeetingType">
 					<info>
 						<desc>Show the "Type of meeting" heading ? </desc>
@@ -7004,7 +7001,6 @@
 						<desc>Show the "comments" heading ? </desc>
 					</info>
 				</prop>
-
 				<prop oor:type="xs:boolean" oor:name="ShowCalledBy">
 					<info>
 						<desc>Show the "Meeting called by" name ? </desc>
@@ -7040,7 +7036,6 @@
 						<desc>Show the "resource persons" names ? </desc>
 					</info>
 				</prop>
-
 				<prop oor:type="xs:string" oor:name="TemplateName">
 					<info>
 						<desc>The template's document property "title" </desc>
@@ -7053,7 +7048,7 @@
 				</prop>
 				<prop oor:type="xs:int" oor:name="ProceedMethod">
 					<info>
-						<desc> how to proceed? 0 = create document, 1 = edit template  </desc>
+						<desc> how to proceed? 0 = create document, 1 = edit template </desc>
 					</info>
 				</prop>
 				<set oor:name="Topics" oor:node-type="AgendaWizardTopic">

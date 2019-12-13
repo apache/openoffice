@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,23 +8,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
-<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="WriterWeb" oor:package="org.openoffice.Office" xml:lang="en-US"> <info>
+<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="WriterWeb" oor:package="org.openoffice.Office" xml:lang="en-US">
+	<info>
 		<author>OS</author>
-		<desc >Contains settings for the HTML editor.</desc>
+		<desc>Contains settings for the HTML editor.</desc>
 	</info>
 	<import oor:component="org.openoffice.Office.Common"/>
 	<component>
@@ -414,15 +415,15 @@
 				<info>
 					<desc>Contains miscellaneous settings.</desc>
 				</info>
-                <prop oor:name="IsAlignMathObjectsToBaseline" oor:type="xs:boolean">
-                    <!-- UIHints: none yet -->
-                    <info>
-                        <author>TL</author>
-                        <desc>Automatically align the baseline of Math objects with the baseline of the surrounding text.</desc>
-                        <label>Align Math objects</label>
-                    </info>
-                    <value>true</value>
-                </prop>
+				<prop oor:name="IsAlignMathObjectsToBaseline" oor:type="xs:boolean">
+					<!-- UIHints: none yet -->
+					<info>
+						<author>TL</author>
+						<desc>Automatically align the baseline of Math objects with the baseline of the surrounding text.</desc>
+						<label>Align Math objects</label>
+					</info>
+					<value>true</value>
+				</prop>
 				<prop oor:name="MeasureUnit" oor:type="xs:int">
 					<!-- OldPath: HTML_Editor/Layout/Window -->
 					<!-- OldLocation: Soffice.cfg -->
@@ -741,17 +742,17 @@
 					</info>
 					<value>false</value>
 				</prop>
-                                <prop oor:name="BrochureRightToLeft" oor:type="xs:boolean">
-                                        <!-- OldPath: Writer/Print/Pages -->
-                                        <!-- OldLocation: Soffice.cfg -->
-                                        <!-- UIHints: Tools - Options - Text document - Print - [Section] Pages -->
-                                        <info>
-                                                <author>OS</author>
-                                                <desc>Prints in brochure format, with right-to-left direction.</desc>
-                                                <label>Right-to-left</label>
-                                        </info>
-                                        <value>false</value>
-                                </prop>
+				<prop oor:name="BrochureRightToLeft" oor:type="xs:boolean">
+					<!-- OldPath: Writer/Print/Pages -->
+					<!-- OldLocation: Soffice.cfg -->
+					<!-- UIHints: Tools - Options - Text document - Print - [Section] Pages -->
+					<info>
+						<author>OS</author>
+						<desc>Prints in brochure format, with right-to-left direction.</desc>
+						<label>Right-to-left</label>
+					</info>
+					<value>false</value>
+				</prop>
 			</group>
 			<group oor:name="Output">
 				<info>
@@ -810,7 +811,7 @@
 					<!-- OldPath: HTML_Editor/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Option - HTML-Document  Table - [Section] Shift -->
-					<!--Notice: NonMetric default: 635 1/100 mm-->
+					<!--Notice: NonMetric default: 635 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for moving a table row [UNIT=1/100 mm].</desc>
@@ -822,7 +823,7 @@
 					<!-- OldPath: HTML_Editor/Table/Shift -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Option - HTML-Document  Table - [Section] Shift -->
-					<!-- Notice: NonMetric default: 635 1/100 mm-->
+					<!-- Notice: NonMetric default: 635 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for shifting a table column [UNIT=1/100 mm].</desc>
@@ -851,7 +852,7 @@
 					<!-- OldPath: HTML_Editor/Table/Insert -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Option - HTML-Document  Table - [Section] Insert -->
-					<!-- Notice: The NonMetric Default 2540 1/100 mm-->
+					<!-- Notice: The NonMetric Default 2540 1/100 mm -->
 					<info>
 						<author>OS</author>
 						<desc>Specifies the default value for inserting columns [UNIT=1/100 mm].</desc>
@@ -905,7 +906,7 @@
 						<desc>Specifies if numbers in a table are recognized or if they are saved in a text format.</desc>
 						<label>Number recognition</label>
 					</info>
-                    <value>true</value>
+					<value>true</value>
 				</prop>
 				<prop oor:name="NumberFormatRecognition" oor:type="xs:boolean">
 					<!-- OldPath: HTML_Editor/Insert/IntoTables -->
@@ -948,7 +949,7 @@
 						<desc>Specifies if the table has a header</desc>
 						<label>Header</label>
 					</info>
-                                        <value>false</value>
+				<value>false</value>
 				</prop>
 				<prop oor:name="RepeatHeader" oor:type="xs:boolean">
 					<!-- OldPath: HTML_Editor/Insert/Tables -->
@@ -959,7 +960,7 @@
 						<desc>Specifies if the header in the new page is adopted when inserting a page break. This option is only available if Header=True.</desc>
 						<label>Repeat header</label>
 					</info>
-                                        <value>false</value>
+				<value>false</value>
 				</prop>
 				<prop oor:name="Border" oor:type="xs:boolean">
 					<!-- OldPath: HTML_Editor/Insert/Tables -->
@@ -981,7 +982,7 @@
 			</info>
 			<group oor:name="Selection">
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Right mouse click to the toolbar with object selection-->
+				<!-- UIHints: Right mouse click to the toolbar with object selection -->
 				<info>
 					<author>OS/OS</author>
 					<desc>Specifies the type of object bar that is visible.</desc>
@@ -1039,7 +1040,7 @@
 			</info>
 			<prop oor:name="AddGraphic" oor:type="xs:boolean">
 				<!--OldLocation: Soffice.cfg -->
-				<!--UIHints: HTML document in readonly mode - context menu of a graphic - Add Graphics - As Link / Copy-->
+				<!--UIHints: HTML document in readonly mode - context menu of a graphic - Add Graphics - As Link / Copy -->
 				<info>
 					<author>OS</author>
 					<desc>Specifies if a graphic is embedded or added as link when it is inserted into the Gallery.</desc>
@@ -1049,18 +1050,3 @@
 		</group>
 	</component>
 </oor:component-schema>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

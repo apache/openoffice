@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,21 +8,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
-<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="TypeDetection" oor:package="org.openoffice.Office" xml:lang="en-US"> <info>
+<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="TypeDetection" oor:package="org.openoffice.Office" xml:lang="en-US">
+	<info>
 		<author>AS</author>
 		<desc >Contains common content types, filters, deep detection services, as well as the frame loader and the content handler for Office.</desc>
 	</info>
@@ -33,7 +34,7 @@
 			</info>
 			<prop oor:name="UIName" oor:type="xs:string" oor:localized="true">
 				<info>
-					<desc>Displays a localized type on the user interface. Supports CJK by allowing you to assign it a value or language. Any UniCode characters is permitted.</desc>
+					<desc>Displays a localized type on the user interface. Supports CJK by allowing you to assign it a value or language. Any Unicode character is permitted.</desc>
 				</info>
 			</prop>
 			<prop oor:name="Data" oor:type="xs:string">
@@ -55,7 +56,7 @@
 			</prop>
 			<prop oor:name="UIName" oor:type="xs:string" oor:localized="true">
 				<info>
-					<desc>Displays the localized filter on the user interface. Supports CJK by allowing you to assign it a value or language. Any UniCode characters is permitted.</desc>
+					<desc>Displays the localized filter on the user interface. Supports CJK by allowing you to assign it a value or language. Any Unicode characters is permitted.</desc>
 				</info>
 			</prop>
 			<prop oor:name="Data" oor:type="xs:string">
@@ -90,7 +91,7 @@
 			</info>
 			<prop oor:name="UIName" oor:type="xs:string" oor:localized="true">
 				<info>
-					<desc>Displays the localized loader on the user interface. Supports CJK by allowing you to assign it a value or language. Any UniCode characters is permitted.</desc>
+					<desc>Displays the localized loader on the user interface. Supports CJK by allowing you to assign it a value or language. Any Unicode character is permitted.</desc>
 				</info>
 			</prop>
 			<prop oor:name="Types" oor:type="oor:string-list">
@@ -146,11 +147,3 @@
 		</group>
 	</component>
 </oor:component-schema>
-
-
-
-
-
-
-
-
