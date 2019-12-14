@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,23 +8,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
-<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Draw" oor:package="org.openoffice.Office" xml:lang="en-US"> <info>
+<oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Draw" oor:package="org.openoffice.Office" xml:lang="en-US">
+	<info>
 		<author>AF</author>
-		<desc >Defines the properties of the Draw application.</desc>
+		<desc>Defines the properties of the Draw application.</desc>
 	</info>
 	<import oor:component="org.openoffice.Office.Common"/>
 	<component>
@@ -100,7 +101,7 @@
 					<!-- OldPath: Draw/Layout -->
 					<!-- OldLocation: Soffice.cfg -->
 					<!-- UIHints: Tools - Options - Drawing - Layout - [Section] Tab stops -->
-					<!-- Notice: Default-Nonmetric Value: 1270 1/100 mm-->
+					<!-- Notice: Default-Nonmetric Value: 1270 1/100 mm -->
 					<info>
 						<author>AF</author>
 						<desc>Specifies the distance between adjacent tab stops.</desc>
@@ -360,18 +361,18 @@
 				</info>
 				<value>true</value>
 			</prop>
-      <prop oor:name="SimpleHandles" oor:type="xs:boolean">
-        <!-- OldPath: Draw/Other -->
-        <!-- OldLocation: soffice.cfg -->
-        <!-- UIHints: Optionbar -->
-        <info>
-          <author>AF</author>
-          <desc>Indicates whether to show simple (true) or enhanced handles (false).</desc>
-          <label>Simple Handles</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="BigHandles" oor:type="xs:boolean">
+			<prop oor:name="SimpleHandles" oor:type="xs:boolean">
+				<!-- OldPath: Draw/Other -->
+				<!-- OldLocation: soffice.cfg -->
+				<!-- UIHints: Optionbar -->
+				<info>
+					<author>AF</author>
+					<desc>Indicates whether to show simple (true) or enhanced handles (false).</desc>
+					<label>Simple Handles</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="BigHandles" oor:type="xs:boolean">
 				<!-- OldPath: Draw/Other -->
 				<!-- OldLocation: soffice.cfg -->
 				<!-- UIHints: Optionbar -->
@@ -473,7 +474,7 @@
 			<group oor:name="DefaultObjectSize">
 				<!-- OldPath: -->
 				<!-- OldLocation: -->
-				<!-- UIHints: Default size for newly created objects when using CTRL-Return or CTRL-Klick -->
+				<!-- UIHints: Default size for newly created objects when using CTRL-Return or CTRL-Click -->
 				<info>
 					<author>AW</author>
 					<desc>Defines the default size of newly created objects using CTRL-Return or CTRL-Click at a object creating Button</desc>
@@ -494,7 +495,7 @@
 					<value>5000</value>
 				</prop>
 			</group>
-            <group oor:name="Compatibility">
+			<group oor:name="Compatibility">
 				<info>
 					<desc>Contains the group of options that control the compatibility to other applications.</desc>
 					<label>Compatibility options.</label>
@@ -1072,51 +1073,3 @@
 		</group>
 	</component>
 </oor:component-schema>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
