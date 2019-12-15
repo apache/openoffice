@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,22 +8,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!DOCTYPE oor:component-schema SYSTEM "../../../../component-schema.dtd">
 <oor:component-schema xmlns:oor="http://openoffice.org/2001/registry" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oor:name="Common" oor:package="org.openoffice.Office" xml:lang="en-US">
-    <info>
+	<info>
 		<desc>Contains common settings which are potentially shared by other components.</desc>
 	</info>
 	<templates>
@@ -837,28 +837,29 @@
 			</prop>
 			<prop oor:name="DynamicBorderColors" oor:type="xs:boolean">
 				<info>
-          <desc>
-            specifies whether the controls should use dynamic border coloring, if possible.
-            Dymamic border coloring means that when the mouse is hovered over a control, and when a control receives the focus, this is indicated with special border colors.
-          </desc>
+					<desc>
+					specifies whether the controls should use dynamic border coloring, if possible.
+					Dynamic border coloring means that when the mouse is hovered over a control, and
+					when a control receives the focus, this is indicated with special border colors.
+					</desc>
 				</info>
 				<value>false</value>
 			</prop>
-      <prop oor:name="UseDocumentTextMetrics" oor:type="xs:boolean">
-        <info>
-          <desc>
-            controls whether form controls, when they render their text, use the same metrics as the document
-            does. If this is set to &lt;true&gt;, then the control text's appearance better matches the text
-            in the surrounding document.&lt;/p&gt;
-            &lt;p&gt;Technically, documents use a reference device for formatting, which usually has a higher
-            resolution than the actual output device. The option decides whether form controls should use
-            the same reference device as the surrounding document. However, some of OOo's document implementations
-            do not properly use their reference device in all situations, in which case the option might better
-            be disabled.&lt;p&gt;
-          </desc>
-        </info>
-        <value>true</value>
-      </prop>
+			<prop oor:name="UseDocumentTextMetrics" oor:type="xs:boolean">
+				<info>
+					<desc>
+					controls whether form controls, when they render their text, use the same metrics as the document
+					does. If this is set to &lt;true&gt;, then the control text's appearance better matches the text
+					in the surrounding document.&lt;/p&gt;
+					&lt;p&gt;Technically, documents use a reference device for formatting, which usually has a higher
+					resolution than the actual output device. The option decides whether form controls should use
+					the same reference device as the surrounding document. However, some of AOO's document implementations
+					do not properly use their reference device in all situations, in which case the option might better
+					be disabled.&lt;p&gt;
+					</desc>
+				</info>
+				<value>true</value>
+			</prop>
 		</group>
 		<group oor:name="ProductVersionID">
 			<info>
@@ -970,19 +971,19 @@
 				<value>false</value>
 			</prop>
 		</group>
-    <group oor:name="Dictionaries">
-      <info>
-        <author>CD</author>
-        <desc>Contains settings related to dictionaries.</desc>
-      </info>
-      <prop oor:name="RepositoryURL" oor:type="xs:string">
-        <info>
-          <author>CD</author>
-          <desc>Specifies a repository URL where users can download additional dictionaries.</desc>
-        </info>
-        <value/>
-      </prop>
-    </group>
+		<group oor:name="Dictionaries">
+			<info>
+				<author>CD</author>
+				<desc>Contains settings related to dictionaries.</desc>
+			</info>
+			<prop oor:name="RepositoryURL" oor:type="xs:string">
+				<info>
+					<author>CD</author>
+					<desc>Specifies a repository URL where users can download additional dictionaries.</desc>
+				</info>
+				<value/>
+			</prop>
+		</group>
 		<group oor:name="Drawinglayer">
 			<info>
 				<author>AW</author>
@@ -1079,7 +1080,7 @@
 			<prop oor:name="MaximumPaperWidth" oor:type="xs:int">
 				<info>
 					<author>AW</author>
-					<desc>Specifies the maximum allowed Paper Width for page definitions in cm. Default is 3m, i.e. 300 cm. When this is changed to higher values, it is done on own risk.</desc>
+					<desc>Specifies the maximum allowed Paper Width for page definitions in cm. Default is 3 m, i.e. 300 cm. When this is changed to higher values, it is done on own risk.</desc>
 					<label>Maximum allowed Paper Width for page definitions</label>
 				</info>
 				<value>300</value>
@@ -1087,7 +1088,7 @@
 			<prop oor:name="MaximumPaperHeight" oor:type="xs:int">
 				<info>
 					<author>AW</author>
-					<desc>Specifies the maximum allowed Paper Height for page definitions in cm. Default is 3m, i.e. 300 cm. When this is changed to higher values, it is done on own risk.</desc>
+					<desc>Specifies the maximum allowed Paper Height for page definitions in cm. Default is 3 m, i.e. 300 cm. When this is changed to higher values, it is done on own risk.</desc>
 					<label>Maximum allowed Paper Height for page definitions</label>
 				</info>
 				<value>300</value>
@@ -1116,141 +1117,141 @@
 				</info>
 				<value>9999</value>
 			</prop>
-      <prop oor:name="MaximumPaperBottomMargin" oor:type="xs:int">
-        <info>
-          <author>AW</author>
-          <desc>Specifies the maximum allowed Bottom Margin for the page definitions in 1/100th cm.</desc>
-          <label>Maximum allowed Bottom margin for page definitions</label>
-        </info>
-        <value>9999</value>
-      </prop>
-      <prop oor:name="AntiAliasing" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch allows to switch DrawingLayer based views to be rendered using AntiAliasing or not.
-            Of course this takes only effect when AntiAliasing is supported for the System OOo is running on.
-          </desc>
-          <label>This switch determines if DrawingLayer based views use AntiAliasing.</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="SnapHorVerLinesToDiscrete" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch allows to enhance visualisation of graphics which use Horizontal or Vertical Hairlines
-            combined with AntiAliased mode (e.g. in 2D charts). When not used, those lines will be AntiAliased
-            as everything else. Since this is not pleasing for the eye, this option allows to force those lines
-            to snap to discrete points (pixels) when activated and thus avoids AntiAliasing of pure Horizontal or
-            Vertical Hairlines.
-          </desc>
-          <label>Determines if Horizontal and Vertical HairLines in AntiAliased mode are snapped to discrete pixles to enhance visualisation</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="RenderDecoratedTextDirect" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch determines if the decorations of decorated text portions (e.g. underline, strike through)
-            are rendered using VCL direct rendering or if the primitive is decomposed into simple text and the
-            corresponding geometrical representations of the decorations. Default is true since VCL's usage
-            of the diverse System's hinting possibilities for decorations is useful.
-          </desc>
-          <label>Determines if decorated texts are decomposed at render time or directly rendered using VCL</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="RenderSimpleTextDirect" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch determines if simple text is directly rendered using VCL or not. If not, the simple text
-            is decomposed into PolyPolygons which will be painted then. Default is true, since VCL will use the
-            hinting for font rendering on the diverse supported systems, which gives better quality than rendering
-            the text as Polygons.
-          </desc>
-          <label>Determines if simple texts are decomposed at render time or directly rendered using VCL</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="SolidDragCreate" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch decides if Interactions in the DrawingLayer are visualized using Wireframe or Full-Object
-            previews. If false, only Wireframe will be used. If true, Full-Object preview which gives a much better
-            feedback about the object interaction will be used. This mode is used for modification and creation of
-            objects. During interaction, a geometric copy of the object(s) is shown with 50% transparence in the
-            foreground. That copy shows exactly what You will get when You end the interaction.
-          </desc>
-          <label>This switch determines if DrawingLayer Interactions show Wireframe or Full-Object preview.</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="Quadratic3DRenderLimit" oor:type="xs:int">
-        <info>
-          <author>AW</author>
-          <desc>
-            This defines a Limitation for the default raster conversion from 3D Scenes to Bitmaps.
-            The number is the maximum number of pixels to use, e.g. 1000x1000 Pixels is allowed as default.
-            When Scenes would need more Pixels than this, the Bitmap will be limited and scaled to the needed pixel size at paint time.
-          </desc>
-          <label>A Pixel limitation for the creation of 3D Scenes with the default renderer.</label>
-        </info>
-        <value>1000000</value>
-      </prop>
-      <prop oor:name="QuadraticFormControlRenderLimit" oor:type="xs:int">
-        <info>
-          <author>AW</author>
-          <desc>
-            This defines a Limitation for the default raster conversion of FormControls in edit mode.
-                These have the ability to be displayed using this fallback to Bitmaps.
-                The number is the maximum number of pixels to use, e.g. 300x150 Pixels is allowed as default.
-                When FormControls would need more Pixels than this, the Bitmap will be limited and scaled to the needed pixel size at paint time.
-          </desc>
-          <label>A Pixel limitation for the creation of FormControl fallback display.</label>
-        </info>
-        <value>45000</value>
-      </prop>
-      <prop oor:name="TransparentSelection" oor:type="xs:boolean">
-        <info>
-          <author>AW</author>
-          <desc>
-            This switch defines if the selections in the applications (text or cells) are visualized using
-            inverse (XOR) when set to false (the old selection method, also used when in HighContrast mode)
-            or a transparent overlay selection using the system's selection color.
-          </desc>
-          <label>This switch defines if for text/cell selections the old inverse or the new transparent selection is to be used.</label>
-        </info>
-        <value>true</value>
-      </prop>
-      <prop oor:name="TransparentSelectionPercent" oor:type="xs:short">
-        <info>
-          <author>AW</author>
-          <desc>
-            Specifies the degree of transparence to be used when transparent selection is used. The value is a percent
-            value. Since neither no transparence nor complete transparence makes sense, the value is limited to a range
-            of 10% - 90%. If the given value is outside this range, it is cropped to it.
-          </desc>
-          <label>Specifies the percent of transparence to use if transparent selection is used.</label>
-        </info>
-        <value>75</value>
-      </prop>
-      <prop oor:name="SelectionMaximumLuminancePercent" oor:type="xs:short">
-        <info>
-          <author>AW</author>
-          <desc>
-            Specifies the maximum allowed luminance the system's selection color may have. When the color
-            fetched from the system is brighter (luminacne is bigger), it will be scaled to a luminance
-            of exactly this given value.
-          </desc>
-          <label>Specifies the maximum allowed luminance for the system's selection color.</label>
-        </info>
-        <value>70</value>
-      </prop>
-    </group>
+			<prop oor:name="MaximumPaperBottomMargin" oor:type="xs:int">
+				<info>
+					<author>AW</author>
+					<desc>Specifies the maximum allowed Bottom Margin for the page definitions in 1/100th cm.</desc>
+					<label>Maximum allowed Bottom margin for page definitions</label>
+				</info>
+				<value>9999</value>
+			</prop>
+			<prop oor:name="AntiAliasing" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch allows to switch DrawingLayer based views to be rendered using AntiAliasing or not.
+					Of course this takes only effect when AntiAliasing is supported for the System AOO is running on.
+					</desc>
+					<label>This switch determines if DrawingLayer based views use AntiAliasing.</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="SnapHorVerLinesToDiscrete" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch allows to enhance visualisation of graphics which use Horizontal or Vertical Hairlines
+					combined with AntiAliased mode (e.g. in 2D charts). When not used, those lines will be AntiAliased
+					as everything else. Since this is not pleasing for the eye, this option allows to force those lines
+					to snap to discrete points (pixels) when activated and thus avoids AntiAliasing of pure Horizontal or
+					Vertical Hairlines.
+					</desc>
+					<label>Determines if Horizontal and Vertical HairLines in AntiAliased mode are snapped to discrete pixels to enhance visualisation</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="RenderDecoratedTextDirect" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch determines if the decorations of decorated text portions (e.g. underline, strike through)
+					are rendered using VCL direct rendering or if the primitive is decomposed into simple text and the
+					corresponding geometrical representations of the decorations. Default is true since VCL's usage
+					of the diverse System's hinting possibilities for decorations is useful.
+					</desc>
+					<label>Determines if decorated texts are decomposed at render time or directly rendered using VCL</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="RenderSimpleTextDirect" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch determines if simple text is directly rendered using VCL or not. If not, the simple text
+					is decomposed into PolyPolygons which will be painted then. Default is true, since VCL will use the
+					hinting for font rendering on the diverse supported systems, which gives better quality than rendering
+					the text as Polygons.
+					</desc>
+					<label>Determines if simple texts are decomposed at render time or directly rendered using VCL</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="SolidDragCreate" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch decides if Interactions in the DrawingLayer are visualized using Wireframe or Full-Object
+					previews. If false, only Wireframe will be used. If true, Full-Object preview which gives a much better
+					feedback about the object interaction will be used. This mode is used for modification and creation of
+					objects. During interaction, a geometric copy of the object(s) is shown with 50% transparency in the
+					foreground. That copy shows exactly what You will get when You end the interaction.
+					</desc>
+					<label>This switch determines if DrawingLayer Interactions show Wireframe or Full-Object preview.</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="Quadratic3DRenderLimit" oor:type="xs:int">
+				<info>
+					<author>AW</author>
+					<desc>
+					This defines a Limitation for the default raster conversion from 3D Scenes to Bitmaps.
+					The number is the maximum number of pixels to use, e.g. 1000x1000 Pixels is allowed as default.
+					When Scenes would need more Pixels than this, the Bitmap will be limited and scaled to the needed pixel size at paint time.
+					</desc>
+					<label>A Pixel limitation for the creation of 3D Scenes with the default renderer.</label>
+				</info>
+				<value>1000000</value>
+			</prop>
+			<prop oor:name="QuadraticFormControlRenderLimit" oor:type="xs:int">
+				<info>
+					<author>AW</author>
+					<desc>
+					This defines a Limitation for the default raster conversion of FormControls in edit mode.
+					These have the ability to be displayed using this fallback to Bitmaps.
+					The number is the maximum number of pixels to use, e.g. 300x150 Pixels is allowed as default.
+					When FormControls would need more Pixels than this, the Bitmap will be limited and scaled to the needed pixel size at paint time.
+					</desc>
+					<label>A Pixel limitation for the creation of FormControl fallback display.</label>
+				</info>
+				<value>45000</value>
+			</prop>
+			<prop oor:name="TransparentSelection" oor:type="xs:boolean">
+				<info>
+					<author>AW</author>
+					<desc>
+					This switch defines if the selections in the applications (text or cells) are visualized using
+					inverse (XOR) when set to false (the old selection method, also used when in HighContrast mode)
+					or a transparent overlay selection using the system's selection color.
+					</desc>
+					<label>This switch defines if for text/cell selections the old inverse or the new transparent selection is to be used.</label>
+				</info>
+				<value>true</value>
+			</prop>
+			<prop oor:name="TransparentSelectionPercent" oor:type="xs:short">
+				<info>
+					<author>AW</author>
+					<desc>
+					Specifies the degree of transparency to be used when transparent selection is used. The value is a percent
+					value. Since neither no transparency nor complete transparency makes sense, the value is limited to a range
+					of 10% - 90%. If the given value is outside this range, it is cropped to it.
+					</desc>
+					<label>Specifies the percent of transparency to use if transparent selection is used.</label>
+				</info>
+				<value>75</value>
+			</prop>
+			<prop oor:name="SelectionMaximumLuminancePercent" oor:type="xs:short">
+				<info>
+					<author>AW</author>
+					<desc>
+					Specifies the maximum allowed luminance the system's selection color may have. When the color
+					fetched from the system is brighter (luminance is bigger), it will be scaled to a luminance
+					of exactly this given value.
+					</desc>
+					<label>Specifies the maximum allowed luminance for the system's selection color.</label>
+				</info>
+				<value>70</value>
+		</prop>
+		</group>
 		<group oor:name="AutoCorrect">
 			<info>
 				<author>OS</author>
@@ -1521,25 +1522,25 @@
 				<author>MBA</author>
 				<desc>Contains the current and default path settings used by the Office.</desc>
 			</info>
-      <group oor:name="Info">
-        <info>
-          <author>CD</author>
-          <desc>Contains various properties information purpose only.</desc>
-        </info>
-        <prop oor:name="WorkPathChanged" oor:type="xs:boolean">
-          <info>
-            <desc>A flag which is set by the tools options dialog whenever a user changed the work path.</desc>
-          </info>
-          <value>true</value>
-        </prop>
-      </group>
+			<group oor:name="Info">
+				<info>
+					<author>CD</author>
+					<desc>Contains various properties information purpose only.</desc>
+				</info>
+				<prop oor:name="WorkPathChanged" oor:type="xs:boolean">
+					<info>
+						<desc>A flag which is set by the tools options dialog whenever a user changed the work path.</desc>
+					</info>
+					<value>true</value>
+				</prop>
+			</group>
 			<group oor:name="Current">
 				<info>
 					<author>MBA</author>
 					<desc>Contains the global path settings, mainly those of the Options dialog.</desc>
 				</info>
 				<prop oor:name="OfficeInstall" oor:type="xs:string">
-					<!-- OldLocation:NEW-->
+					<!-- OldLocation:NEW -->
 					<info>
 						<deprecated/>
 						<author>MBA</author>
@@ -1549,7 +1550,7 @@
 					<!-- JB: Empty default inserted into empty property node. Remove if NIL was intended -->
 				</prop>
 				<prop oor:name="OfficeInstallURL" oor:type="xs:string">
-					<!-- OldLocation:NEW-->
+					<!-- OldLocation:NEW -->
 					<info>
 						<deprecated/>
 						<author>MBA</author>
@@ -1640,7 +1641,7 @@
 						<author>DL</author>
 						<desc>Specifies the directory that is displayed when the dialog for opening a graphic or for saving a new graphic is called.</desc>
 					</info>
-                    <value>$(userurl)/gallery</value>
+					<value>$(userurl)/gallery</value>
 				</prop>
 				<prop oor:name="Help" oor:type="xs:string">
 					<info>
@@ -1896,8 +1897,8 @@
 					<value>false</value>
 				</prop>
 				<set oor:name="FontPairs" oor:node-type="FontReplacement">
-					<!-- OldPath: FontSubstitution-->
-					<!-- OldLocation: fntsubst.ini-->
+					<!-- OldPath: FontSubstitution -->
+					<!-- OldLocation: fntsubst.ini -->
 					<!-- UIHints: Tools - Options - General - Font replacement -->
 					<info>
 						<author>OS</author>
@@ -2039,7 +2040,7 @@
 				<value>100</value>
 			</prop>
 			<prop oor:name="PickListSize" oor:type="xs:int">
-				<!--UI hints: File menu-->
+				<!--UI hints: File menu -->
 				<info>
 					<desc>Describes the range and current size of the picklist shown inside the menu.</desc>
 				</info>
@@ -2068,7 +2069,7 @@
 				</info>
 			</set>
 			<set oor:name="PickList" oor:node-type="HistoryType">
-				<!--UI hints: File menu-->
+				<!--UI hints: File menu -->
 				<info>
 					<desc>Contains the most recently used documents displayed in the file menu.</desc>
 				</info>
@@ -2129,7 +2130,7 @@
 				</info>
 			</set>
 		</group>
-    <group oor:name="Save">
+		<group oor:name="Save">
 			<info>
 				<author>MBA</author>
 				<desc>Contains general settings about the saving process.</desc>
@@ -2137,7 +2138,7 @@
 			<prop oor:name="WorkingSet" oor:type="xs:boolean">
 				<!-- OldPath: General/Restore -->
 				<!-- OldLocation: soffice.cfg -->
-				<!-- UIHints: Tools  Options - General  Save - [Section] Restore editing view - Open documents-->
+				<!-- UIHints: Tools  Options - General  Save - [Section] Restore editing view - Open documents -->
 				<info>
 					<author>MBA</author>
 					<desc>Specifies if the all open windows and documents should be saved. If set to true, the URLs of all open documents and all view properties of all open views are saved when terminating the application.</desc>
@@ -2239,7 +2240,7 @@
 				<prop oor:name="ViewInfo" oor:type="xs:boolean">
 					<!-- OldPath: General/Restore -->
 					<!-- OldLocation: soffice.cfg -->
-					<!-- UIHints: Tools  Options - General  Save - [Section] Restore editing view - Document view-->
+					<!-- UIHints: Tools  Options - General  Save - [Section] Restore editing view - Document view -->
 					<info>
 						<author>MBA</author>
 						<desc>Saves view properties of last active document view when saving a document.</desc>
@@ -2248,8 +2249,8 @@
 					<value>true</value>
 				</prop>
 				<prop oor:name="PrettyPrinting" oor:type="xs:boolean">
-					<!-- UIHints: Tools  Options - General  Save - optimize XML file size-->
-					<!--the UI setting is inverse to this setting-->
+					<!-- UIHints: Tools  Options - General  Save - optimize XML file size -->
+					<!--the UI setting is inverse to this setting -->
 					<info>
 						<author>MBA</author>
 						<desc>Specifies if files saved in the OOo 6.0 XML file formats should be in pretty printing format. Saving and loading the document takes more time in pretty printing format.</desc>
@@ -2257,14 +2258,14 @@
 					</info>
 					<value>false</value>
 				</prop>
-                                <prop oor:name="WarnAlienFormat" oor:type="xs:boolean">
-                                        <!-- UIHints: Tools  Options - General  Save - -->
+				<prop oor:name="WarnAlienFormat" oor:type="xs:boolean">
+					<!-- UIHints: Tools  Options - General  Save - -->
 					<info>
 						<author>MBA</author>
-                                                <desc>Specifies if a warning message is shown if a file is going to be saved to an alien format.</desc>
+							<desc>Specifies if a warning message is shown if a file is going to be saved to an alien format.</desc>
 						<label>Open windows</label>
 					</info>
-                                        <value>true</value>
+					<value>true</value>
 				</prop>
 				<prop oor:name="AlwaysSaveAs" oor:type="xs:boolean">
 					<info>
@@ -2276,7 +2277,7 @@
 				<prop oor:name="SaveBackwardCompatibleODF" oor:type="xs:boolean">
 					<info>
 						<author>PB</author>
-						<desc>If the  value is "true", then the ODF that is saved by OpenOffice.org will be backward compatible to previous minor versions.</desc>
+						<desc>If the value is "true", then the ODF that is saved by OpenOffice will be backward compatible to previous minor versions.</desc>
 					</info>
 					<value>true</value>
 				</prop>
@@ -2351,61 +2352,61 @@
 					<value>true</value>
 				</prop>
 			</group>
-            <group oor:name="ODF">
-                <info>
-                    <author>PB</author>
-                    <desc>Specifies ODF settings.</desc>
-                </info>
-                <prop oor:name="DefaultVersion" oor:type="xs:short">
-                    <!-- UIHints: Tools - Options - Load/Save - General - ODF version -->
-                    <info>
-                        <author>PB</author>
-                        <desc>Specifies the default ODF version for saving documents.</desc>
-                    </info>
-                    <constraints>
-                        <enumeration oor:value="0">
-                            <info>
-                                <desc>ODFVER_UNKNOWN</desc>
-                            </info>
-                        </enumeration>
-                        <enumeration oor:value="1">
-                            <info>
-                                <desc>ODFVER_010</desc>
-                            </info>
-                        </enumeration>
-                        <enumeration oor:value="2">
-                            <info>
-                                <desc>ODFVER_011</desc>
-                            </info>
-                        </enumeration>
-                        <enumeration oor:value="4">
-                            <info>
-                                <desc>ODFVER_012</desc>
-                            </info>
-                        </enumeration>
-                        <enumeration oor:value="3">
-                          <info>
-                            <desc>ODFVER_LATEST</desc>
-                          </info>
-                        </enumeration>
-                    </constraints>
-                    <value>3</value>
-                </prop>
-                <prop oor:name="UseSHA1InODF12" oor:type="xs:boolean">
-                    <info>
-                        <author>MAV</author>
-                        <desc>Specifies whether SHA1 algorithm instead of SHA256 should be used in ODF12 for StartKey and Checksum generation during encryption.</desc>
-                    </info>
-                    <value>true</value>
-                </prop>
-                <prop oor:name="UseBlowfishInODF12" oor:type="xs:boolean">
-                    <info>
-                        <author>MAV</author>
-                        <desc>Specifies whether Blowfish algorithm instead of AES should be used in ODF12 for encryption.</desc>
-                    </info>
-                    <value>true</value>
-                </prop>
-            </group>
+			<group oor:name="ODF">
+				<info>
+					<author>PB</author>
+					<desc>Specifies ODF settings.</desc>
+				</info>
+				<prop oor:name="DefaultVersion" oor:type="xs:short">
+					<!-- UIHints: Tools - Options - Load/Save - General - ODF version -->
+					<info>
+						<author>PB</author>
+						<desc>Specifies the default ODF version for saving documents.</desc>
+					</info>
+					<constraints>
+						<enumeration oor:value="0">
+							<info>
+								<desc>ODFVER_UNKNOWN</desc>
+							</info>
+						</enumeration>
+						<enumeration oor:value="1">
+							<info>
+								<desc>ODFVER_010</desc>
+							</info>
+						</enumeration>
+						<enumeration oor:value="2">
+							<info>
+								<desc>ODFVER_011</desc>
+							</info>
+						</enumeration>
+						<enumeration oor:value="4">
+							<info>
+								<desc>ODFVER_012</desc>
+							</info>
+						</enumeration>
+						<enumeration oor:value="3">
+							<info>
+								<desc>ODFVER_LATEST</desc>
+							</info>
+						</enumeration>
+					</constraints>
+					<value>3</value>
+				</prop>
+				<prop oor:name="UseSHA1InODF12" oor:type="xs:boolean">
+					<info>
+						<author>MAV</author>
+						<desc>Specifies whether SHA1 algorithm instead of SHA256 should be used in ODF12 for StartKey and Checksum generation during encryption.</desc>
+					</info>
+					<value>true</value>
+				</prop>
+				<prop oor:name="UseBlowfishInODF12" oor:type="xs:boolean">
+					<info>
+						<author>MAV</author>
+						<desc>Specifies whether Blowfish algorithm instead of AES should be used in ODF12 for encryption.</desc>
+					</info>
+					<value>true</value>
+				</prop>
+			</group>
 		</group>
 		<group oor:name="Load">
 			<info>
@@ -2413,7 +2414,7 @@
 				<desc>Contains settings regarding the loading of documents.</desc>
 			</info>
 			<prop oor:name="UserDefinedSettings" oor:type="xs:boolean">
-				<!-- UIHints: Tools  Options - General  Load/Save - General [Section] Load - Load user-defined with the document-->
+				<!-- UIHints: Tools  Options - General  Load/Save - General [Section] Load - Load user-defined with the document -->
 				<info>
 					<author>MBA</author>
 					<desc>Specifies whether the user defined configuration settings are loaded together with the document.</desc>
@@ -2539,13 +2540,13 @@
 					</info>
 					<value>false</value>
 				</prop>
-                                <prop oor:name="HyperlinksWithCtrlClick" oor:type="xs:boolean">
-                                        <info>
-                                                <author>PB</author>
-                                                <desc>Specifies whether ctrl-click is required to follow hyperlinks.</desc>
-                                        </info>
-                                        <value>true</value>
-                                </prop>
+				<prop oor:name="HyperlinksWithCtrlClick" oor:type="xs:boolean">
+					<info>
+						<author>PB</author>
+						<desc>Specifies whether Ctrl-Click is required to follow hyperlinks.</desc>
+					</info>
+					<value>true</value>
+				</prop>
 				<prop oor:name="MacroSecurityLevel" oor:type="xs:int">
 					<info>
 						<author>GT</author>
@@ -2568,7 +2569,7 @@
 				<prop oor:name="DisableMacrosExecution" oor:type="xs:boolean">
 					<info>
 						<author>MAV</author>
-						<desc>Specifies whether the macro execution is disabled in general. If it is set to true, the "MacroSecurityLevel" is ignored. If it is set to false, the mentioned entry specified the level of macro security.</desc>
+						<desc>Specifies whether the macro execution is disabled in general. If it is set to true, the "MacroSecurityLevel" is ignored. If it is set to false, the mentioned entry specifies the level of macro security.</desc>
 					</info>
 					<value>false</value>
 				</prop>
@@ -2587,8 +2588,8 @@
 			</info>
 			<prop oor:name="FontScaling" oor:type="xs:short">
 				<!--OldPath: General/View -->
-				<!--OldLocation: soffice.cfg-->
-				<!--UIHints: Tools  Options - General  View  [Section] Display-->
+				<!--OldLocation: soffice.cfg -->
+				<!--UIHints: Tools  Options - General  View  [Section] Display -->
 				<info>
 					<author>PB</author>
 					<desc>Specifies the scaling only of the screen representation [UNIT=%].</desc>
@@ -3082,7 +3083,7 @@
 				<prop oor:name="Locales" oor:type="oor:string-list">
 					<!--OldPath: OfficeLanguage/[Code]=Installed -->
 					<!--OldLocation: soffice.ini -->
-					<!--The string list has to be filled by the setup-->
+					<!--The string list has to be filled by the setup -->
 					<info>
 						<desc>Contains the installed Office languages for the menus and dialogs.</desc>
 					</info>
@@ -3095,7 +3096,7 @@
 				<desc>Specifies options related to printing.</desc>
 			</info>
 			<prop oor:name="PrintingModifiesDocument" oor:type="xs:boolean">
-				<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+				<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 				<info>
 					<author>MBA</author>
 					<desc>Specifies if printing a document can modify a document due to reformatting</desc>
@@ -3161,7 +3162,7 @@
 						<desc>Specifies the options related to printing.</desc>
 					</info>
 					<prop oor:name="ReduceTransparency" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to ignore transparency for the output of objects.</desc>
@@ -3170,7 +3171,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedTransparencyMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies type of transparency reduction: 0 - Automatically determine reduction, 1 - Always disabled.</desc>
@@ -3179,7 +3180,7 @@
 						<value>0</value>
 					</prop>
 					<prop oor:name="ReduceGradients" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce memory usage for output of gradients by limiting the number of gradient steps.</desc>
@@ -3188,7 +3189,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedGradientMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies type of gradient reduction: 0 - reduce the number of stripes, 1 - reduce to color.</desc>
@@ -3197,7 +3198,7 @@
 						<value>0</value>
 					</prop>
 					<prop oor:name="ReducedGradientStepCount" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies the maximum number stripes used for output of gradients.</desc>
@@ -3206,7 +3207,7 @@
 						<value>64</value>
 					</prop>
 					<prop oor:name="ReduceBitmaps" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce the memory usage of bitmaps for print process by limiting the resolution.</desc>
@@ -3215,7 +3216,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedBitmapMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies type of bitmap reduction: 0 - Automatically determine optimal resolution, 1 - Use original resolution, 2 - User defined resolution.</desc>
@@ -3224,7 +3225,7 @@
 						<value>1</value>
 					</prop>
 					<prop oor:name="ReducedBitmapResolution" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies resolution of reduced bitmaps: 0 - 72DPI, 1 - 96DPI, 2 - 150DPI, 3 - 200DPI, 4 - 300DPI, 5 - 600DPI.</desc>
@@ -3233,7 +3234,7 @@
 						<value>3</value>
 					</prop>
 					<prop oor:name="ReducedBitmapIncludesTransparency" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce the resolution of automatically created substitution bitmaps of transparent objects.</desc>
@@ -3242,7 +3243,7 @@
 						<value>true</value>
 					</prop>
 					<prop oor:name="ConvertToGreyscales" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrinterOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to create only grayscale output of all objects.</desc>
@@ -3257,7 +3258,7 @@
 						<label>Print File</label>
 					</info>
 					<prop oor:name="ReduceTransparency" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to ignore transparency for the output of objects.</desc>
@@ -3266,7 +3267,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedTransparencyMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates the type of transparency reduction: 0 - Automatically determine reduction, 1 - Always disabled.</desc>
@@ -3275,7 +3276,7 @@
 						<value>0</value>
 					</prop>
 					<prop oor:name="ReduceGradients" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce memory usage for output of gradients by limiting the number of gradient steps.</desc>
@@ -3284,7 +3285,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedGradientMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates the type of gradient reduction: 0 - Reduce the number of stripes, 1 - Reduce to color.</desc>
@@ -3293,7 +3294,7 @@
 						<value>0</value>
 					</prop>
 					<prop oor:name="ReducedGradientStepCount" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies the maximum number stripes used for output of gradients.</desc>
@@ -3302,7 +3303,7 @@
 						<value>64</value>
 					</prop>
 					<prop oor:name="ReduceBitmaps" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce the memory usage of bitmaps for the print process by limiting the resolution.</desc>
@@ -3311,7 +3312,7 @@
 						<value>false</value>
 					</prop>
 					<prop oor:name="ReducedBitmapMode" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies the type of bitmap reduction: 0 - Automatically determine optimal resolution, 1 - Use original resolution, 2 - User defined resolution.</desc>
@@ -3320,7 +3321,7 @@
 						<value>1</value>
 					</prop>
 					<prop oor:name="ReducedBitmapResolution" oor:type="xs:short">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Specifies the resolution of reduced bitmaps: 0 - 72DPI, 1 - 96DPI, 2 - 150DPI, 3 - 200DPI, 4 - 300DPI, 5 - 600DPI.</desc>
@@ -3329,7 +3330,7 @@
 						<value>3</value>
 					</prop>
 					<prop oor:name="ReducedBitmapIncludesTransparency" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to reduce the resolution of automatically created substitution bitmaps of transparent objects.</desc>
@@ -3338,7 +3339,7 @@
 						<value>true</value>
 					</prop>
 					<prop oor:name="ConvertToGreyscales" oor:type="xs:boolean">
-						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions-->
+						<!-- UIHints: Tools  Options - General  Print  [Section] PrintFileOptions -->
 						<info>
 							<author>AF</author>
 							<desc>Indicates whether to create only grayscale output of all objects.</desc>
@@ -3438,7 +3439,7 @@
 			</prop>
 			<prop oor:name="Tip" oor:type="xs:boolean">
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Help menu-->
+				<!-- UIHints: Help menu -->
 				<info>
 					<author>MBA</author>
 					<desc>Activates the Tip help.</desc>
@@ -3448,7 +3449,7 @@
 			</prop>
 			<prop oor:name="ExtendedTip" oor:type="xs:boolean">
 				<!-- OldLocation: Soffice.cfg -->
-				<!-- UIHints: Help menu-->
+				<!-- UIHints: Help menu -->
 				<info>
 					<author>MBA</author>
 					<desc>Activates the Extended help.</desc>
@@ -3496,11 +3497,11 @@
 					</info>
 				</set>
 			</group>
-            <group oor:name="StartCenter">
-                <info>
-                    <author>PL</author>
-                    <desc>Contains settings for the start center.</desc>
-                </info>
+			<group oor:name="StartCenter">
+				<info>
+					<author>PL</author>
+					<desc>Contains settings for the start center.</desc>
+				</info>
 				<prop oor:name="AddFeatureURL" oor:type="xs:string">
 					<info>
 						<desc>Contains a string specifying the URL to be browsed for additional features (e.g. extensions)</desc>
@@ -3525,7 +3526,7 @@
 					</info>
 					<value>0</value>
 				</prop>
-            </group>
+			</group>
 		</group>
 		<group oor:name="Java">
 			<info>
@@ -4202,28 +4203,28 @@
 						</info>
 						<value>false</value>
 					</prop>
-                    <prop oor:name="EnablePowerPointPreview" oor:type="xs:boolean">
-                        <info>
-                            <author>SJ</author>
-                            <desc>Specifies if previews are created when saving PowerPoint documents.</desc>
-                        </info>
-                        <value>true</value>
-                    </prop>
-                    <prop oor:name="EnableExcelPreview" oor:type="xs:boolean">
-                        <info>
-                          <author>SJ</author>
-                          <desc>Specifies if previews are created when saving Excel documents.</desc>
-                        </info>
-                        <value>false</value>
-                    </prop>
-                    <prop oor:name="EnableWordPreview" oor:type="xs:boolean">
-                        <info>
-                            <author>SJ</author>
-                            <desc>Specifies if previews are created when saving Word documents.</desc>
-                        </info>
-                        <value>false</value>
-                    </prop>
-                </group>
+					<prop oor:name="EnablePowerPointPreview" oor:type="xs:boolean">
+						<info>
+							<author>SJ</author>
+							<desc>Specifies if previews are created when saving PowerPoint documents.</desc>
+						</info>
+						<value>true</value>
+					</prop>
+					<prop oor:name="EnableExcelPreview" oor:type="xs:boolean">
+						<info>
+							<author>SJ</author>
+							<desc>Specifies if previews are created when saving Excel documents.</desc>
+						</info>
+						<value>false</value>
+					</prop>
+					<prop oor:name="EnableWordPreview" oor:type="xs:boolean">
+						<info>
+							<author>SJ</author>
+							<desc>Specifies if previews are created when saving Word documents.</desc>
+						</info>
+						<value>false</value>
+					</prop>
+				</group>
 			</group>
 			<group oor:name="Graphic">
 				<info>
@@ -4270,130 +4271,130 @@
 					<info>
 						<desc>Specifies default settings of graphic export dialogs.</desc>
 					</info>
-          <prop oor:name="PixelExportUnit" oor:type="xs:int">
-            <info>
-                <desc>Specifies the unit default that is used in the the graphic export dialog if exporting pixel graphics.</desc>
-            </info>
-            <constraints>
-              <enumeration oor:value="0">
-                <info>
-                  <desc>inches</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="1">
-                <info>
-                  <desc>cm</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="2">
-                <info>
-                  <desc>mm</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="3">
-                <info>
-                  <desc>points</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="4">
-                <info>
-                  <desc>pica</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="5">
-                <info>
-                  <desc>pixels</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="-1">
-                <info>
-                  <desc>default (depends to the metric settings in tools/options)</desc>
-                </info>
-              </enumeration>
-            </constraints>
-            <value>-1</value>
-          </prop>
-          <prop oor:name="PixelExportResolutionUnit" oor:type="xs:int">
-            <info>
-              <desc>Specifies the unit default for the resolution that is used in the the graphic export dialog if exporting pixel graphics.</desc>
-            </info>
-            <constraints>
-              <enumeration oor:value="0">
-                <info>
-                  <desc>pixels/inch</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="1">
-                <info>
-                  <desc>pixels/cm</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="2">
-                <info>
-                  <desc>pixels/meter</desc>
-                </info>
-              </enumeration>
-            </constraints>
-            <value>0</value>
-          </prop>
-          <prop oor:name="PixelExportResolution" oor:type="xs:int">
-            <info>
-              <desc>Specifies the logical width of a graphic. [UNIT=1/100 mm].</desc>
-            </info>
-            <constraints>
-              <minInclusive oor:value="1">
-                <info>
-                  <desc>Represents the lowest value that can be entered in the dialog.</desc>
-                </info>
-              </minInclusive>
-            </constraints>
-            <value>96</value>
-          </prop>
-          <prop oor:name="MaxFilesizeForRealtimePreview" oor:type="xs:int">
-            <info>
-              <desc>Specifies the maximum raw graphic size in bytes up to which the realtime preview is enabled, for fast computers this value may be enlarged</desc>
-            </info>
-            <value>4000000</value>
-          </prop>
-          <prop oor:name="VectorExportUnit" oor:type="xs:int">
-            <info>
-              <desc>Specifies the unit default that is used in the the graphic export dialog if exporting vector graphics.</desc>
-            </info>
-            <constraints>
-              <enumeration oor:value="0">
-                <info>
-                  <desc>inches</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="1">
-                <info>
-                  <desc>cm</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="2">
-                <info>
-                  <desc>mm</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="3">
-                <info>
-                  <desc>points</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="4">
-                <info>
-                  <desc>pica</desc>
-                </info>
-              </enumeration>
-              <enumeration oor:value="-1">
-                <info>
-                  <desc>default (depends to the metric settings in tools/options)</desc>
-                </info>
-              </enumeration>
-            </constraints>
-            <value>-1</value>
-          </prop>
-          <group oor:name="BMP">
+					<prop oor:name="PixelExportUnit" oor:type="xs:int">
+						<info>
+						<desc>Specifies the unit default that is used in the the graphic export dialog if exporting pixel graphics.</desc>
+						</info>
+						<constraints>
+							<enumeration oor:value="0">
+								<info>
+									<desc>inches</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="1">
+								<info>
+									<desc>cm</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="2">
+								<info>
+									<desc>mm</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="3">
+								<info>
+									<desc>points</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="4">
+								<info>
+									<desc>pica</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="5">
+								<info>
+									<desc>pixels</desc>
+								</info>
+							</enumeration>
+							<enumeration oor:value="-1">
+								<info>
+									<desc>default (depends to the metric settings in tools/options)</desc>
+								</info>
+							</enumeration>
+						</constraints>
+						<value>-1</value>
+					</prop>
+					<prop oor:name="PixelExportResolutionUnit" oor:type="xs:int">
+						<info>
+							<desc>Specifies the unit default for the resolution that is used in the the graphic export dialog if exporting pixel graphics.</desc>
+						</info>
+							<constraints>
+								<enumeration oor:value="0">
+									<info>
+										<desc>pixels/inch</desc>
+									</info>
+								</enumeration>
+								<enumeration oor:value="1">
+									<info>
+										<desc>pixels/cm</desc>
+									</info>
+								</enumeration>
+								<enumeration oor:value="2">
+									<info>
+										<desc>pixels/meter</desc>
+									</info>
+								</enumeration>
+							</constraints>
+							<value>0</value>
+						</prop>
+						<prop oor:name="PixelExportResolution" oor:type="xs:int">
+							<info>
+								<desc>Specifies the logical width of a graphic. [UNIT=1/100 mm].</desc>
+							</info>
+							<constraints>
+								<minInclusive oor:value="1">
+									<info>
+										<desc>Represents the lowest value that can be entered in the dialog.</desc>
+									</info>
+								</minInclusive>
+							</constraints>
+							<value>96</value>
+						</prop>
+						<prop oor:name="MaxFilesizeForRealtimePreview" oor:type="xs:int">
+							<info>
+								<desc>Specifies the maximum raw graphic size in bytes up to which the realtime preview is enabled, for fast computers this value may be enlarged</desc>
+							</info>
+							<value>4000000</value>
+						</prop>
+						<prop oor:name="VectorExportUnit" oor:type="xs:int">
+							<info>
+								<desc>Specifies the unit default that is used in the the graphic export dialog if exporting vector graphics.</desc>
+							</info>
+								<constraints>
+									<enumeration oor:value="0">
+										<info>
+											<desc>inches</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="1">
+										<info>
+											<desc>cm</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="2">
+										<info>
+											<desc>mm</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="3">
+										<info>
+											<desc>points</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="4">
+										<info>
+											<desc>pica</desc>
+										</info>
+									</enumeration>
+									<enumeration oor:value="-1">
+										<info>
+											<desc>default (depends to the metric settings in tools/options)</desc>
+										</info>
+									</enumeration>
+								</constraints>
+							<value>-1</value>
+						</prop>
+					<group oor:name="BMP">
 						<info>
 							<desc>Specifies default settings of the Windows Bitmap export dialog.</desc>
 						</info>
@@ -4790,33 +4791,33 @@
 							<value>1</value>
 						</prop>
 					</group>
-                    <group oor:name="SVG">
-                        <info>
-                            <author>KA</author>
-                            <desc>Specifies default settings of SVG export dialog.</desc>
-                        </info>
-                        <prop oor:name="TinyMode" oor:type="xs:boolean">
-                            <info>
-                                <author>KA</author>
-                                <desc>Specifies if SVG Tiny profile should be used for export.</desc>
-                            </info>
-                            <value>false</value>
-                        </prop>
-                        <prop oor:name="EmbedFonts" oor:type="xs:boolean">
-                            <info>
-                                <author>KA</author>
-                                <desc>Specifies if fonts should be embedded into SVG file.</desc>
-                            </info>
-                            <value>true</value>
-                        </prop>
-                        <prop oor:name="UseNativeTextDecoration" oor:type="xs:boolean">
-                            <info>
-                                <author>KA</author>
-                                <desc>Specifies if text decoration like underlining and strike-through be drawm by using SVG attributes (true) or by drawing SVG primitives (false).</desc>
-                            </info>
-                            <value>true</value>
-                        </prop>
-                    </group>            
+					<group oor:name="SVG">
+						<info>
+							<author>KA</author>
+							<desc>Specifies default settings of SVG export dialog.</desc>
+						</info>
+						<prop oor:name="TinyMode" oor:type="xs:boolean">
+							<info>
+								<author>KA</author>
+								<desc>Specifies if SVG Tiny profile should be used for export.</desc>
+							</info>
+							<value>false</value>
+						</prop>
+						<prop oor:name="EmbedFonts" oor:type="xs:boolean">
+							<info>
+								<author>KA</author>
+								<desc>Specifies if fonts should be embedded into SVG file.</desc>
+							</info>
+							<value>true</value>
+						</prop>
+						<prop oor:name="UseNativeTextDecoration" oor:type="xs:boolean">
+							<info>
+								<author>KA</author>
+								<desc>Specifies if text decoration like underlining and strike-through be drawn by using SVG attributes (true) or by drawing SVG primitives (false).</desc>
+							</info>
+							<value>true</value>
+						</prop>
+					</group>
 				</group>
 			</group>
 			<group oor:name="HTML">
@@ -4829,7 +4830,7 @@
 						<desc>Contains settings for HTML import.</desc>
 					</info>
 					<prop oor:name="NumbersEnglishUS" oor:type="xs:boolean">
-                        <!-- UIHints: Tools  Options  Load/Save - HTML Compatibility [Section] Import -->
+						<!-- UIHints: Tools  Options  Load/Save - HTML Compatibility [Section] Import -->
 						<info>
 							<author>ER</author>
 							<desc>Specifies if numbers should be parsed according to the en-US locale instead of the user's locale.</desc>
@@ -5038,8 +5039,7 @@
 					</prop>
 				</group>
 			</group>
-
-            <group oor:name="PDF">
+			<group oor:name="PDF">
 				<info>
 					<author>KA</author>
 					<desc>Specifies default settings of PDF export dialog.</desc>
@@ -5060,7 +5060,7 @@
 					<prop oor:name="UseLosslessCompression" oor:type="xs:boolean">
 						<info>
 							<author>SJ</author>
-							<desc>Specifies if graphics are exported to PDF using a lossless compression eg. PNG or if they are compressed using the JPEG format.</desc>
+							<desc>Specifies if graphics are exported to PDF using a lossless compression e.g. PNG or if they are compressed using the JPEG format.</desc>
 						</info>
 						<value>false</value>
 					</prop>
@@ -5165,20 +5165,20 @@
 						</info>
 						<value>true</value>
 					</prop>
-                    <prop oor:name="ExportFormFields" oor:type="xs:boolean">
+					<prop oor:name="ExportFormFields" oor:type="xs:boolean">
 						<info>
 							<author>pl</author>
 							<desc>Specifies whether form fields are exported as widgets or only their fixed print representation is exported.</desc>
 						</info>
 						<value>true</value>
-                    </prop>
-                    <prop oor:name="EmbedStandardFonts" oor:type="xs:boolean">
+					</prop>
+					<prop oor:name="EmbedStandardFonts" oor:type="xs:boolean">
 						<info>
 							<author>pl</author>
 							<desc>Specifies whether to embed the 14 standard PDF fonts or not.</desc>
 						</info>
 						<value>false</value>
-                    </prop>
+					</prop>
 					<prop oor:name="FormsType" oor:type="xs:int">
 						<info>
 							<desc>Specifies the submitted format of a PDF form.</desc>
@@ -5207,27 +5207,27 @@
 						</constraints>
 						<value>0</value>
 					</prop>
-                    <prop oor:name="AllowDuplicateFieldNames" oor:type="xs:boolean">
+					<prop oor:name="AllowDuplicateFieldNames" oor:type="xs:boolean">
 						<info>
 							<author>pl</author>
 							<desc>Specifies whether multiple form fields exported are allowed to have the same field name.</desc>
 						</info>
 						<value>false</value>
-                    </prop>
-                    <prop oor:name="IsSkipEmptyPages" oor:type="xs:boolean">
-                            <info>
-                                    <author>FME</author>
-                                    <desc>Specifies that automatically inserted empty pages are suppressed. This option is active only if storing Writer documents.</desc>
-                            </info>
-                            <value>true</value>
-                    </prop>
-                    <prop oor:name="IsAddStream" oor:type="xs:boolean">
-                            <info>
-                                    <author>PL</author>
-                                    <desc>Specifies that a stream is inserted to the PDF file which contains the original document for archiving purposes.</desc>
-                            </info>
-                            <value>false</value>
-                    </prop>
+					</prop>
+					<prop oor:name="IsSkipEmptyPages" oor:type="xs:boolean">
+						<info>
+							<author>FME</author>
+							<desc>Specifies that automatically inserted empty pages are suppressed. This option is active only if storing Writer documents.</desc>
+						</info>
+						<value>true</value>
+					</prop>
+					<prop oor:name="IsAddStream" oor:type="xs:boolean">
+						<info>
+							<author>PL</author>
+							<desc>Specifies that a stream is inserted to the PDF file which contains the original document for archiving purposes.</desc>
+							</info>
+							<value>false</value>
+					</prop>
 					<prop oor:name="HideViewerMenubar" oor:type="xs:boolean">
 						<info>
 							<author>beppec56</author>
@@ -5324,7 +5324,7 @@
 							</enumeration>
 							<enumeration oor:value="3">
 								<info>
-									<desc>Opens magnified to fit the entire width of its boundig box within the window (cuts out margins).</desc>
+									<desc>Opens magnified to fit the entire width of its bounding box within the window (cuts out margins).</desc>
 								</info>
 							</enumeration>
 							<enumeration oor:value="4">
@@ -5335,20 +5335,20 @@
 						</constraints>
 						<value>0</value>
 					</prop>
-                    <prop oor:name="Zoom" oor:type="xs:int">
+					<prop oor:name="Zoom" oor:type="xs:int">
 						<info>
 							<author>pl</author>
 							<desc>specifies the zoom level a PDF document is opened with. Only valid if "Magnification" is set to "4".</desc>
 						</info>
-                        <value>100</value>
-                    </prop>
-                    <prop oor:name="InitialPage" oor:type="xs:int">
+						<value>100</value>
+					</prop>
+					<prop oor:name="InitialPage" oor:type="xs:int">
 						<info>
 							<author>pl</author>
 							<desc>Specifies the page on which a PDF document should be opened in the viewer application.</desc>
 						</info>
-                        <value>1</value>
-                    </prop>
+						<value>1</value>
+					</prop>
 					<prop oor:name="PageLayout" oor:type="xs:int">
 						<info>
 							<author>beppec56</author>
@@ -5385,7 +5385,7 @@
 						</info>
 						<value>false</value>
 					</prop>
-                                        <!-- PDF Encryption -->
+					<!-- PDF Encryption -->
 					<prop oor:name="Printing" oor:type="xs:int">
 						<info>
 							<author>beppec56</author>
@@ -5459,7 +5459,7 @@
 						<value>true</value>
 					</prop>
 					<!-- END PDF Encryption -->
-                                         <!-- PDF Version selection -->
+					<!-- PDF Version selection -->
 					<prop oor:name="SelectPdfVersion" oor:type="xs:int">
 						<info>
 							<author>beppec56</author>
@@ -5480,7 +5480,7 @@
 						<value>0</value>
 					</prop>
 					<!-- END PDF Version selection -->
-                                        <!-- PDF Relative Link -->
+					<!-- PDF Relative Link -->
 					<prop oor:name="ExportLinksRelativeFsys" oor:type="xs:boolean">
 						<info>
 							<author>beppec56</author>
@@ -5506,7 +5506,7 @@
 							</enumeration>
 							<enumeration oor:value="2">
 								<info>
-									<desc>Specifies that the PDF will be exported in order to be viewed through an Internet browser, using the PDF plug-in provided with it. The bookmark of the URI will be rendered compatible with the target bookmark generated with OOo PDF Export feature (see ExportBookmarksToPDFDestination, below).</desc>
+									<desc>Specifies that the PDF will be exported in order to be viewed through an Internet browser, using the PDF plug-in provided with it. The bookmark of the URI will be rendered compatible with the target bookmark generated with AOO PDF Export feature (see ExportBookmarksToPDFDestination, below).</desc>
 								</info>
 							</enumeration>
 						</constraints>
@@ -5522,11 +5522,11 @@
 					<prop oor:name="ExportBookmarksToPDFDestination" oor:type="xs:boolean">
 						<info>
 							<author>beppec56</author>
-							<desc>Specifies that the bookmarks contained in the source OpenOffice.org file should be exported to the PDF file as Named Destination (see PDF 1.4 section 8.2.1).</desc>
+							<desc>Specifies that the bookmarks contained in the source OpenOffice file should be exported to the PDF file as Named Destination (see PDF 1.4 section 8.2.1).</desc>
 						</info>
 						<value>false</value>
 					</prop>
-                                        <!-- END PDF Relative Link -->
+					<!-- END PDF Relative Link -->
 				</group>
 			</group>
 		</group>
@@ -5562,14 +5562,14 @@
 			<prop oor:name="UseDocumentSystemFileLocking" oor:type="xs:boolean">
 				<info>
 					<author>MAV</author>
-					<desc>Allows to specify whether the OOo document file locking mechanics should use the system file locking.</desc>
+					<desc>Allows to specify whether the AOO document file locking mechanics should use the system file locking.</desc>
 				</info>
 				<value>true</value>
 			</prop>
 			<prop oor:name="UseDocumentOOoLockFile" oor:type="xs:boolean">
 				<info>
 					<author>MAV</author>
-					<desc>Allows to specify whether the OOo document file locking mechanics should use the lock file for locking.</desc>
+					<desc>Allows to specify whether the AOO document file locking mechanics should use the lock file for locking.</desc>
 				</info>
 				<value>true</value>
 			</prop>
@@ -5614,7 +5614,7 @@
 					</enumeration>
 					<enumeration oor:value="default">
 						<info>
-							<desc>Default - the OpenOffice.org default theme</desc>
+							<desc>Default - the OpenOffice default theme</desc>
 						</info>
 					</enumeration>
 					<enumeration oor:value="hicontrast">
@@ -5680,66 +5680,66 @@
 				<info>
 					<desc>specifies certain default layout settings for form controls. All those settings can be overruled in concrete documents, they specify creation-time defaults only.</desc>
 				</info>
-                <node-ref oor:name="com.sun.star.text.TextDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.text.TextDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in text documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.text.WebDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.text.WebDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in web pages</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.sheet.SpreadsheetDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.sheet.SpreadsheetDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in spreadsheet documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.drawing.DrawingDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.drawing.DrawingDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in drawing documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.presentation.PresentationDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.presentation.PresentationDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in presentation documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.xforms.XMLFormDocument" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.xforms.XMLFormDocument" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in XML form documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.sdb.FormDesign" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.sdb.FormDesign" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in database form documents</desc>
 					</info>
 				</node-ref>
-                <node-ref oor:name="com.sun.star.sdb.TextReportDesign" oor:node-type="ApplicationControlLayout">
+				<node-ref oor:name="com.sun.star.sdb.TextReportDesign" oor:node-type="ApplicationControlLayout">
 					<info>
 						<desc>specifies certain default layout settings for form controls in database text report documents.</desc>
 					</info>
 				</node-ref>
 			</group>
-            <group oor:name="PropertyBrowser">
-                <info>
-                    <desc>specifies settings for the property browser used for forms and form controls.</desc>
-                </info>
-                <prop oor:name="ExperimentalProperties" oor:type="xs:boolean">
-                    <info>
-                        <author>FS</author>
-                        <desc>Enables or disables the property browser's access to form/control properties which are not officially supported.</desc>
-                    </info>
-                    <value>false</value>
-                </prop>
-                <prop oor:name="DirectHelp" oor:type="xs:boolean">
-                    <info>
-                        <author>FS</author>
-                        <desc>Enables or disables a help section at the bottom of the property browser, which shows the help of the currently active property.</desc>
-                    </info>
-                    <value>false</value>
-                </prop>
-            </group>
+			<group oor:name="PropertyBrowser">
+				<info>
+					<desc>specifies settings for the property browser used for forms and form controls.</desc>
+				</info>
+				<prop oor:name="ExperimentalProperties" oor:type="xs:boolean">
+					<info>
+						<author>FS</author>
+						<desc>Enables or disables the property browser's access to form/control properties which are not officially supported.</desc>
+					</info>
+					<value>false</value>
+				</prop>
+				<prop oor:name="DirectHelp" oor:type="xs:boolean">
+					<info>
+						<author>FS</author>
+						<desc>Enables or disables a help section at the bottom of the property browser, which shows the help of the currently active property.</desc>
+					</info>
+					<value>false</value>
+				</prop>
+			</group>
 		</group>
 		<group oor:name="AsianLayout">
 			<info>
@@ -5749,7 +5749,7 @@
 			<prop oor:name="IsKerningWesternTextOnly" oor:type="xs:boolean">
 				<!-- OldPath: -->
 				<!-- OldLocation: -->
-				<!-- UIHints: Tools  Options  Asian typography  Asian layout Kerning Western characters only-->
+				<!-- UIHints: Tools  Options  Asian typography  Asian layout Kerning Western characters only -->
 				<info>
 					<author>OS</author>
 					<desc>Determines the kerning of western text and/or punctuation inside of Asian text.</desc>
@@ -5851,36 +5851,36 @@
 				</info>
 				<value>false</value>
 			</prop>
-            <prop oor:name="ComponentSearchGroupLabel" oor:type="xs:string" oor:localized="true">
-                <!-- UIHints: Edit/Find & Replace -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the divider label in case of a component-based search extension.</desc>
-                </info>
-            </prop>
-            <prop oor:name="ComponentSearchCommandLabel1" oor:type="xs:string" oor:localized="true">
-                <!-- UIHints: Edit/Find & Replace -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the label of the first component-based search command.</desc>
-                </info>
-            </prop>
-            <prop oor:name="ComponentSearchCommandLabel2" oor:type="xs:string" oor:localized="true">
-                <!-- UIHints: Edit/Find & Replace -->
-                <info>
-                    <author>OS</author>
-                    <desc>Specifies the label of the second component-based search command.</desc>
-                </info>
-            </prop>
-            <prop oor:name="IsNotes" oor:type="xs:boolean">
-   	        <!-- UIHints: Edit Search/Replace  -->
-		<info>
-               		<author>mod</author>
-                	<desc>Specifies if search includes comments(SwPostItFields)</desc>
-                </info>
+			<prop oor:name="ComponentSearchGroupLabel" oor:type="xs:string" oor:localized="true">
+				<!-- UIHints: Edit/Find & Replace -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the divider label in case of a component-based search extension.</desc>
+				</info>
+			</prop>
+			<prop oor:name="ComponentSearchCommandLabel1" oor:type="xs:string" oor:localized="true">
+				<!-- UIHints: Edit/Find & Replace -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the label of the first component-based search command.</desc>
+				</info>
+			</prop>
+			<prop oor:name="ComponentSearchCommandLabel2" oor:type="xs:string" oor:localized="true">
+				<!-- UIHints: Edit/Find & Replace -->
+				<info>
+					<author>OS</author>
+					<desc>Specifies the label of the second component-based search command.</desc>
+				</info>
+			</prop>
+			<prop oor:name="IsNotes" oor:type="xs:boolean">
+				<!-- UIHints: Edit Search/Replace  -->
+				<info>
+					<author>mod</author>
+					<desc>Specifies if search includes comments(SwPostItFields)</desc>
+				</info>
 		<value>false</value>
-            </prop>
-            <group oor:name="Japanese">
+			</prop>
+			<group oor:name="Japanese">
 				<info>
 					<author>OS</author>
 					<desc>Contains search options for the Japanese language.</desc>
@@ -6127,7 +6127,7 @@
 			<prop oor:name="IsAllowAnimatedText" oor:type="xs:boolean">
 				<info>
 					<author>AF</author>
-					<desc>Indicates whether to allow all textual animation like blinking and scrolling in all SO/OO applications.</desc>
+					<desc>Indicates whether to allow all textual animation like blinking and scrolling in all AOO applications.</desc>
 					<label>Allow animated text</label>
 				</info>
 				<value>true</value>
@@ -6135,7 +6135,7 @@
 			<prop oor:name="IsAutomaticFontColor" oor:type="xs:boolean">
 				<info>
 					<author>OS</author>
-					<desc>Overrides all text color attributes set in a SO/OO document for display only.</desc>
+					<desc>Overrides all text color attributes set in a AOO document for display only.</desc>
 					<label>Always use automatic font color for screen display</label>
 				</info>
 				<value>false</value>
@@ -6156,62 +6156,62 @@
 				</info>
 				<value>false</value>
 			</prop>
-          <prop oor:name="EdgeBlending" oor:type="xs:short">
-            <info>
-              <author>ALG</author>
-              <desc>
-                Option to use EdgeBlending for previews in the UI (for ColorValueSet, ColorDropDown, FillStyle/LineStyle
-                previews, etc...). EdgeBlending will visualize a one pixel border on the preview object with interpolated
-                colors (default: TopLeft White, BottomRight Black) so that a nice 3D effect is shown. It is a percent
-                value describing how strong the effect shall be. The value 0% switches it off, while the value 100% will
-                cover the preview object's border completely with one pixel. Values in-between will be alpha-blended with
-                the original preview image.
-              </desc>
-              <label>Defines the EdgeBlending for Previews in Percent.</label>
-            </info>
-            <value>35</value>
-          </prop>
-          <prop oor:name="ListBoxMaximumLineCount" oor:type="xs:short">
-            <info>
-              <author>ALG</author>
-              <desc>
-                This option controls how many lines of a ListBox will be shown as a maximum. If the ListBox has less lines,
-                all lines will be shown when opening the drop down content. If it has more lines, the visible number of
-                lines will be limited to this number. The value 0 disables this feature, negative values are not allowed.
-                This feature may not be used automatically by all ListBox implementations,
-                but it gives a central hint value to use if an implementation wants to adapt to something useful.
-              </desc>
-              <label>Defines the maximum number of lines visible in a ListBox.</label>
-            </info>
-            <value>25</value>
-          </prop>
-          <prop oor:name="ColorValueSetColumnCount" oor:type="xs:short">
-            <info>
-              <author>ALG</author>
-              <desc>
-                This option controls how many columns the ColorValueSets (the matrix-organized dialogs for color select)
-                will have. The default is 12 and this is aligned with the layout of the standard color palette. thus, when you
-                change this value, you should know what you do. This setting also influences some width-oriented layouts in
-                dialogs where this ColorValueSets are used, e.g. FillStyle dialog.
-              </desc>
-              <label>Defines the number of columns that will be shown in a ColorValueSet.</label>
-            </info>
-            <value>12</value>
-          </prop>
-          <prop oor:name="PreviewUsesCheckeredBackground" oor:type="xs:boolean">
-            <info>
-              <author>ALG</author>
-              <desc>
-                This option allows to make previews (e.g. UI previews for object attirbutes) show the content with a checkeded 
-                background to allow simple identification and better preview of transparent content, e.g. when a draw object
-                is filled with a transparent graphic (SVG or bitmap) the preview will show the checkered background shine
-                through, so the user can identify that the fill has transparency with a single look.
-              </desc>
-              <label>Shows previews with shining through checkered background to visualize transparency.</label>
-            </info>
-            <value>false</value>
-          </prop>
-        </group>
+			<prop oor:name="EdgeBlending" oor:type="xs:short">
+				<info>
+					<author>ALG</author>
+					<desc>
+					Option to use EdgeBlending for previews in the UI (for ColorValueSet, ColorDropDown, FillStyle/LineStyle
+					previews, etc...). EdgeBlending will visualize a one pixel border on the preview object with interpolated
+					colors (default: TopLeft White, BottomRight Black) so that a nice 3D effect is shown. It is a percent
+					value describing how strong the effect shall be. The value 0% switches it off, while the value 100% will
+					cover the preview object's border completely with one pixel. Values in-between will be alpha-blended with
+					the original preview image.
+					</desc>
+					<label>Defines the EdgeBlending for Previews in Percent.</label>
+				</info>
+				<value>35</value>
+			</prop>
+			<prop oor:name="ListBoxMaximumLineCount" oor:type="xs:short">
+				<info>
+					<author>ALG</author>
+					<desc>
+					This option controls how many lines of a ListBox will be shown as a maximum. If the ListBox has less lines,
+					all lines will be shown when opening the drop down content. If it has more lines, the visible number of
+					lines will be limited to this number. The value 0 disables this feature, negative values are not allowed.
+					This feature may not be used automatically by all ListBox implementations,
+					but it gives a central hint value to use if an implementation wants to adapt to something useful.
+					</desc>
+					<label>Defines the maximum number of lines visible in a ListBox.</label>
+				</info>
+				<value>25</value>
+			</prop>
+			<prop oor:name="ColorValueSetColumnCount" oor:type="xs:short">
+				<info>
+					<author>ALG</author>
+					<desc>
+					This option controls how many columns the ColorValueSets (the matrix-organized dialogs for color select)
+					will have. The default is 12 and this is aligned with the layout of the standard color palette. thus, when you
+					change this value, you should know what you do. This setting also influences some width-oriented layouts in
+					dialogs where this ColorValueSets are used, e.g. FillStyle dialog.
+					</desc>
+					<label>Defines the number of columns that will be shown in a ColorValueSet.</label>
+				</info>
+				<value>12</value>
+			</prop>
+			<prop oor:name="PreviewUsesCheckeredBackground" oor:type="xs:boolean">
+				<info>
+					<author>ALG</author>
+					<desc>
+					This option allows to make previews (e.g. UI previews for object attributes) show the content with a checkered
+					background to allow simple identification and better preview of transparent content, e.g. when a draw object
+					is filled with a transparent graphic (SVG or bitmap) the preview will show the checkered background shine
+					through, so the user can identify that the fill has transparency with a single look.
+					</desc>
+					<label>Shows previews with shining through checkered background to visualize transparency.</label>
+				</info>
+				<value>false</value>
+			</prop>
+		</group>
  		<set oor:name="OfficeObjects" oor:node-type="ObjectNames">
  			<info>
 				<deprecated>Replaced by org.openoffice.Office.Embedding/ObjectNames.</deprecated>
@@ -6366,24 +6366,24 @@
 					</info>
 					<value>false</value>
 				</prop>
-                <prop oor:name="CTLSequenceCheckingTypeAndReplace" oor:type="xs:boolean">
-                    <!-- UIHints: setup -->
-                    <info>
-                        <desc>Specifies whether CTL input sequences are corrected while typing. Is only effective when CTLSequenceChecking is true.</desc>
-                    </info>
-                    <value>false</value>
-                </prop>
-                <prop oor:name="CTLCursorMovement" oor:type="xs:int">
-					<!-- UIHints: options-->
+				<prop oor:name="CTLSequenceCheckingTypeAndReplace" oor:type="xs:boolean">
+					<!-- UIHints: setup -->
+					<info>
+						<desc>Specifies whether CTL input sequences are corrected while typing. Is only effective when CTLSequenceChecking is true.</desc>
+					</info>
+					<value>false</value>
+				</prop>
+				<prop oor:name="CTLCursorMovement" oor:type="xs:int">
+					<!-- UIHints: options -->
 					<info>
 						<desc>Specifies the type of text cursor movement (logical (0) or visual (1)) within mixed text (RTL and LTR).</desc>
 					</info>
 					<value>0</value>
 				</prop>
 				<prop oor:name="CTLTextNumerals" oor:type="xs:int">
-					<!-- UIHints: options-->
+					<!-- UIHints: options -->
 					<info>
-                                                <desc>Specifies the type of numerals (Arabic (0), Hindi (1), system settings (2) or Context(3)) is used per default in all applications.</desc>
+						<desc>Specifies the type of numerals (Arabic (0), Hindi (1), system settings (2) or Context(3)) is used per default in all applications.</desc>
 					</info>
 					<value>0</value>
 				</prop>
@@ -6419,27 +6419,25 @@
 				<author>FME</author>
 				<desc>Contains settings for smart tags.</desc>
 			</info>
-            <group oor:name="Writer">
-        <info>
-    				<author>FME</author>
+			<group oor:name="Writer">
+				<info>
+					<author>FME</author>
 					<desc>Contains Writer specific settings for smart tags.</desc>
 				</info>
-                <prop oor:name="RecognizeSmartTags" oor:type="xs:boolean">
-                    <info>
-                        <author>FME</author>
-                        <desc>Specifies whether smart tag recognization is enabled.</desc>
-                    </info>
-                    <value>true</value>
-                </prop>
-                <prop oor:name="ExcludedSmartTagTypes" oor:type="oor:string-list">
-                    <info>
-                        <author>FME</author>
-                        <desc>A list of excluded smart tag types.</desc>
-                    </info>
-                </prop>
-            </group>
-        </group>
+				<prop oor:name="RecognizeSmartTags" oor:type="xs:boolean">
+					<info>
+						<author>FME</author>
+						<desc>Specifies whether smart tag recognition is enabled.</desc>
+					</info>
+					<value>true</value>
+				</prop>
+				<prop oor:name="ExcludedSmartTagTypes" oor:type="oor:string-list">
+					<info>
+						<author>FME</author>
+						<desc>A list of excluded smart tag types.</desc>
+					</info>
+				</prop>
+			</group>
+		</group>
 	</component>
 </oor:component-schema>
-
-
