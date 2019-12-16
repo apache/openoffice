@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 # Caolan McNamara caolanm@redhat.com
@@ -77,23 +77,23 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         self.connectioncontext = None
         self.notify = EventObject(self)
         if dbg:
-            out.write("PyMailSMPTService init\n")
+            out.write("PyMailSMTPService init\n")
     def addConnectionListener(self, xListener):
         if dbg:
-            out.write("PyMailSMPTService addConnectionListener\n")
+            out.write("PyMailSMTPService addConnectionListener\n")
         self.listeners.append(xListener)
     def removeConnectionListener(self, xListener):
         if dbg:
-            out.write("PyMailSMPTService removeConnectionListener\n")
+            out.write("PyMailSMTPService removeConnectionListener\n")
         self.listeners.remove(xListener)
     def getSupportedConnectionTypes(self):
         if dbg:
-            out.write("PyMailSMPTService getSupportedConnectionTypes\n")
+            out.write("PyMailSMTPService getSupportedConnectionTypes\n")
         return self.supportedtypes
     def connect(self, xConnectionContext, xAuthenticator):
         self.connectioncontext = xConnectionContext
         if dbg:
-            out.write("PyMailSMPTService connect\n")
+            out.write("PyMailSMTPService connect\n")
 
         server = xConnectionContext.getValueByName("ServerName")
         if dbg:
@@ -135,7 +135,7 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
             listener.connected(self.notify)
     def disconnect(self):
         if dbg:
-            out.write("PyMailSMPTService disconnect\n")
+            out.write("PyMailSMTPService disconnect\n")
         if self.server:
             self.server.quit()
             self.server = None
@@ -143,17 +143,17 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
             listener.disconnected(self.notify)
     def isConnected(self):
         if dbg:
-            out.write("PyMailSMPTService isConnected\n")
+            out.write("PyMailSMTPService isConnected\n")
         return self.server != None
     def getCurrentConnectionContext(self):
         if dbg:
-            out.write("PyMailSMPTService getCurrentConnectionContext\n")
+            out.write("PyMailSMTPService getCurrentConnectionContext\n")
         return self.connectioncontext
     def sendMailMessage(self, xMailMessage):
         COMMASPACE = ', '
 
         if dbg:
-            out.write("PyMailSMPTService sendMailMessage\n")
+            out.write("PyMailSMTPService sendMailMessage\n")
         recipients = xMailMessage.getRecipients()
         sendermail = xMailMessage.SenderAddress
         sendername = xMailMessage.SenderName
@@ -161,10 +161,10 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         ccrecipients = xMailMessage.getCcRecipients()
         bccrecipients = xMailMessage.getBccRecipients()
         if dbg:
-            out.write("PyMailSMPTService subject %s\n" % subject)
-            out.write("PyMailSMPTService from %s\n" % sendername.encode('utf-8'))
+            out.write("PyMailSMTPService subject %s\n" % subject)
+            out.write("PyMailSMTPService from %s\n" % sendername.encode('utf-8'))
             out.write("PyMailSMTPService from %s\n" % sendermail)
-            out.write("PyMailSMPTService send to %s\n" % str(recipients))
+            out.write("PyMailSMTPService send to %s\n" % str(recipients))
 
         attachments = xMailMessage.getAttachments()
 
@@ -173,13 +173,13 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         content = xMailMessage.Body
         flavors = content.getTransferDataFlavors()
         if dbg:
-            out.write("PyMailSMPTService flavors len %d\n" % len(flavors))
+            out.write("PyMailSMTPService flavors len %d\n" % len(flavors))
 
         #Use first flavor that's sane for an email body
         for flavor in flavors:
             if flavor.MimeType.find('text/html') != -1 or flavor.MimeType.find('text/plain') != -1:
                 if dbg:
-                    out.write("PyMailSMPTService mimetype is %s\n" % flavor.MimeType)
+                    out.write("PyMailSMTPService mimetype is %s\n" % flavor.MimeType)
                 textbody = content.getTransferData(flavor)
                 try:
                     textbody = textbody.value
@@ -214,7 +214,7 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         if xMailMessage.ReplyToAddress != '':
             msg['Reply-To'] = xMailMessage.ReplyToAddress
 
-        mailerstring = "OpenOffice.org 2.0 via Caolan's mailmerge component"
+        mailerstring = "OpenOffice via Caolan's mailmerge component"
         try:
             ctx = uno.getComponentContext()
             aConfigProvider = ctx.ServiceManager.createInstance("com.sun.star.configuration.ConfigurationProvider")
@@ -262,7 +262,7 @@ class PyMailSMTPService(unohelper.Base, XSmtpService):
         truerecipients = list(uniquer.keys())
 
         if dbg:
-            out.write("PyMailSMPTService recipients are %s\n" % str(truerecipients))
+            out.write("PyMailSMTPService recipients are %s\n" % str(truerecipients))
 
         self.server.sendmail(sendermail, truerecipients, msg.as_string())
 
