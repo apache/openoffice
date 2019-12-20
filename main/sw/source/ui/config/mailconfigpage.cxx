@@ -495,7 +495,7 @@ SwAuthenticationSettingsDialog::SwAuthenticationSettingsDialog(
 #endif
         m_aAuthenticationCB( this,          SW_RES( CB_AUTHENTICATION        )),
         m_aSeparateAuthenticationRB( this,  SW_RES( RB_SEP_AUTHENTICATION   )),
-        m_aSMTPAfterPOPRB( this,            SW_RES( RB_SMPTAFTERPOP         )),
+        m_aSMTPAfterPOPRB( this,            SW_RES( RB_SMTPAFTERPOP         )),
         m_aOutgoingServerFT( this,          SW_RES( FT_OUTGOINGSERVER        )),
         m_aUserNameFT( this,                SW_RES( FT_USERNAME             )),
         m_aUserNameED( this,                SW_RES( ED_USERNAME             )),
