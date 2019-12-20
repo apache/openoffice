@@ -320,9 +320,9 @@ ModalDialog DLG_MM_SERVERAUTHENTICATION
 		Border = TRUE;
 		PassWord = TRUE;
 	};
-	RadioButton RB_SMPTAFTERPOP
+	RadioButton RB_SMTPAFTERPOP
 	{
-		HelpID = "sw:RadioButton:DLG_MM_SERVERAUTHENTICATION:RB_SMPTAFTERPOP" ;
+		HelpID = "sw:RadioButton:DLG_MM_SERVERAUTHENTICATION:RB_SMTPAFTERPOP" ;
 		Pos = MAP_APPFONT ( 12, 73 ) ;
 		Size = MAP_APPFONT ( 232, 20 ) ;
 		WordBreak = TRUE;
