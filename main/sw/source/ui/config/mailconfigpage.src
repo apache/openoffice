@@ -223,12 +223,14 @@ ModalDialog DLG_MM_TESTACCOUNTSETTINGS
 	ImageList ILIST
 	{
 		Prefix = "sc" ;
+		MaskColor = IMAGE_MASK_COLOR ;
 		IMGLIST_IDS;
 	};
 
 	ImageList ILIST_HC
 	{
 		Prefix = "sch" ;
+		MaskColor = IMAGE_MASK_COLOR ;
 		IMGLIST_IDS;
 	};
 	String ST_TASK
