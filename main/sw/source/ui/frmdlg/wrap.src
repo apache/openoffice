@@ -254,11 +254,13 @@ TabPage TP_FRM_WRAP
 	ImageList IL_WRAP
 	{
 		Prefix = "wr" ;
+		MaskColor = IMAGE_MASK_COLOR ;
 		WRAP_IDLIST
 	};
 	ImageList ILH_WRAP
 	{
 		Prefix = "wrh" ;
+		MaskColor = IMAGE_MASK_COLOR ;
 		WRAP_IDLIST
 	};
 };
