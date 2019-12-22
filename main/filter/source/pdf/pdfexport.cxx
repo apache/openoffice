@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -210,7 +210,7 @@ sal_Bool PDFExport::ExportSelection( vcl::PDFWriter& rPDFWriter, Reference< com:
 
                     // #119348# The PageNumber at PDFExtOutDevDatahas to be the target page number,
                     // e.g. when exporting only page#2 from two pages, the old mechanism would
-                    // have set it to '1', but a üpage '1' does not yet exist in the export. This
+                    // have set it to '1', but a page '1' does not yet exist in the export. This
                     // will make PDFWriterImpl::createLink and PDFWriterImpl::setLinkURL fail (see there).
                     pPDFExtOutDevData->SetCurrentPageNumber(nIncreasingPageNumber++ /* nSel - 1 */);
 
@@ -299,7 +299,7 @@ void PDFExportStreamDoc::write( const Reference< XOutputStream >& xStream )
             aArgs.getArray()[2].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "EncryptionData" ) );
             aArgs.getArray()[2].Value <<= m_aPreparedPassword;
         }
-        
+
         try
         {
             xStore->storeToURL( OUString( RTL_CONSTASCII_USTRINGPARAM( "private:stream" ) ),
@@ -728,7 +728,7 @@ sal_Bool PDFExport::Export( const OUString& rFile, const Sequence< PropertyValue
             }
             // after this point we don't need the legacy clear passwords anymore
             // however they are still inside the passed filter data sequence
-            // which is sadly out out our control
+            // which is sadly out of our control
             aPermissionPassword = rtl::OUString();
             aOpenPassword = rtl::OUString();
 
@@ -763,7 +763,7 @@ sal_Bool PDFExport::Export( const OUString& rFile, const Sequence< PropertyValue
 				aContext.BaseURL = xModel->getURL();
 //relative link option is private to PDF Export filter and limited to local filesystem only
 				aContext.RelFsys = mbExportRelativeFsysLinks;
-//determine the default acton for PDF links
+//determine the default action for PDF links
                 switch( mnDefaultLinkAction )
                 {
                 default:
@@ -1041,7 +1041,7 @@ sal_Bool PDFExport::ImplExportPage( PDFWriter& rWriter, PDFExtOutDevData& rPDFEx
 
     basegfx::B2DRectangle aB2DRect( aPageRect.Left(), aPageRect.Top(), aPageRect.Right(), aPageRect.Bottom() );
     rWriter.SetClipRegion( basegfx::B2DPolyPolygon( basegfx::tools::createPolygonFromRect( aB2DRect ) ) );
-    
+
     rWriter.PlayMetafile( aMtf, aCtx, &rPDFExtOutDevData );
 
 	rPDFExtOutDevData.ResetSyncData();
@@ -1124,5 +1124,4 @@ void PDFExport::ImplWriteWatermark( PDFWriter& rWriter, const Size& rPageSize )
     rWriter.EndTransparencyGroup( aTextRect, 50 );
     rWriter.Pop();
 }
-
 
