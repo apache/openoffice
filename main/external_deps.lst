@@ -151,9 +151,9 @@ if (SOLAR_JAVA==TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
-    MD5 = ac5eb30bf5798aa14b1ae6d0e7da58df
-    name = openssl-1.0.2p.tar.gz
-    URL1 = https://www.openssl.org/source/openssl-1.0.2p.tar.gz
+    MD5 = ef66581b80f06eae42f5268bc0b50c6d
+    name = openssl-1.0.2t.tar.gz
+    URL1 = https://www.openssl.org/source/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
@@ -169,14 +169,14 @@ if ( true )
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXML != YES)
-    MD5 = b786e353e2aa1b872d70d5d1ca0c740d
-    name = libxml2-2.9.8.tar.gz
+    MD5 = 10942a1dc23137a8aa07f0639cbfece5
+    name = libxml2-2.9.10.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXSLT != YES)
-    MD5 = 1fc72f98e98bf4443f1651165f3aa146
-    name = libxslt-1.1.32.tar.gz
+    MD5 = db8765c8d076f1b6caafd9f2542a304a
+    name = libxslt-1.1.34.tar.gz
     URL1 = http://xmlsoft.org/sources/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -218,13 +218,13 @@ if (SYSTEM_VIGRA != YES)
 
 if (SYSTEM_EXPAT != YES)
     MD5 = f053af63ef5f39bd9b78d01fbc203334
-    name = expat-2.2.3.tar.bz2
-    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.3/expat-2.2.3.tar.bz2
+    name = expat-2.2.9.tar.bz2
+    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.9/expat-2.2.9.tar.bz2
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
-    MD5 = 4762f41ef0dba751d1c7a3060a1c6ec6
-    name = curl-7.61.1.tar.gz
+    MD5 = 8cb2898a9adc106075ac3cdc2b965bf6
+    name = curl-7.66.0.tar.gz
     URL1 = https://curl.haxx.se/download/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
