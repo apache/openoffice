@@ -121,7 +121,7 @@ if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
 if ( true )
     MD5 = 2f6ecca935948f7db92d925d88d0d078
     name = icu4c-4_0_1-src.tgz
-    URL1 = http://download.icu-project.org/files/icu4c/4.0.1/icu4c-4_0_1-src.tgz
+    URL1 = https://sourceforge.net/projects/icu/files/ICU4C/4.0.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
@@ -194,13 +194,13 @@ if (SOLAR_JAVA == TRUE)
 if (ENABLE_MEDIAWIKI == YES)
     MD5 = a7983f859eafb2677d7ff386a023bc40
     name = xsltml_2.1.2.zip
-    URL1 = https://sourceforge.net/projects/xsltml/files/xsltml/v.2.1.2/xsltml_2.1.2.zip/download
+    URL1 = https://sourceforge.net/projects/xsltml/files/xsltml/v.2.1.2/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_PYTHON != YES)
     MD5 = 27a7919fa8d1364bae766949aaa91a5b
     name = Python-2.7.17.tgz
-    URL1 = http://www.python.org/ftp/python/2.7.17/Python-2.7.17.tgz
+    URL1 = https://www.python.org/ftp/python/2.7.17/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_BOOST != YES)
@@ -221,7 +221,7 @@ if (SYSTEM_VIGRA != YES)
 if (SYSTEM_EXPAT != YES)
     MD5 = 875a2c2ff3e8eb9e5a5cd62db2033ab5
     name = expat-2.2.9.tar.bz2
-    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.9/expat-2.2.9.tar.bz2
+    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.9/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
@@ -292,13 +292,13 @@ if (WITH_CATB_FONTS == YES)
 if (ENABLE_CATEGORY_B==YES && SYSTEM_HYPH!=YES)
     MD5 = 48a9f787f43a09c0a9b7b00cd1fddbbf
     name = hyphen-2.7.1.tar.gz
-    URL1 = https://sourceforge.net/projects/hunspell/files/Hyphen/2.7/hyphen-2.7.1.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/Hyphen/2.7/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SYSTEM_HUNSPELL!=YES)
-    name = hunspell-1.3.3.tar.gz
     MD5 = 4967da60b23413604c9e563beacc63b4
-    URL1 = https://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/hunspell-1.3.3.tar.gz
+    name = hunspell-1.3.3.tar.gz
+    URL1 = https://sourceforge.net/projects/hunspell/files/Hunspell/1.3.3/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (ENABLE_CATEGORY_B==YES && SOLAR_JAVA==TRUE && ENABLE_JAVASCRIPT==YES)
@@ -336,5 +336,5 @@ if (ENABLE_CATEGORY_B==YES && SYSTEM_GRAPHITE!=YES && ENABLE_GRAPHITE==TRUE)
 if (ENABLE_CATEGORY_B==YES && SYSTEM_GRAPHITE!=YES && ENABLE_GRAPHITE==TRUE)
     MD5 = d35724900f6a4105550293686688bbb3
     name = silgraphite-2.3.1.tar.gz
-    URL1 = https://sourceforge.net/projects/silgraphite/files/silgraphite/2.3.1/silgraphite-2.3.1.tar.gz
+    URL1 = https://sourceforge.net/projects/silgraphite/files/silgraphite/2.3.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
