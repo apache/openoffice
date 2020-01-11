@@ -1,7 +1,7 @@
-diff -ur misc/Python-2.7.15/setup.py misc/build/Python-2.7.15/setup.py
---- misc/Python-2.7.15/setup.py	2016-06-25 16:49:32.000000000 -0500
-+++ misc/build/Python-2.7.15/setup.py	2016-09-02 17:09:20.687419000 -0500
-@@ -80,39 +80,41 @@
+diff -ur misc/Python-2.7.17/setup.py misc/build/Python-2.7.17/setup.py
+--- misc/Python-2.7.17/setup.py	2016-06-25 16:49:32.000000000 -0500
++++ misc/build/Python-2.7.17/setup.py	2016-09-02 17:09:20.687419000 -0500
+@@ -126,39 +126,41 @@
          # system, but with only header files and libraries.
          sysroot = macosx_sdk_root()
  
@@ -52,7 +52,7 @@ diff -ur misc/Python-2.7.15/setup.py misc/build/Python-2.7.15/setup.py
          # Ensure path doesn't end with path separator
          p = p.rstrip(os.sep)
  
-@@ -134,23 +136,22 @@
+@@ -180,23 +180,22 @@
              # vs
              #   /usr/lib/libedit.dylib
              if os.path.join(sysroot, p[1:]) == dirname:
@@ -82,7 +82,7 @@ diff -ur misc/Python-2.7.15/setup.py misc/build/Python-2.7.15/setup.py
      else:
          assert False, "Internal error: Path not found in std_dirs or paths"
  
-@@ -830,6 +831,7 @@
+@@ -891,6 +892,7 @@
              exts.append( Extension('_ssl', ['_ssl.c'],
                                     include_dirs = ssl_incs,
                                     library_dirs = ssl_libs,
@@ -90,7 +90,7 @@ diff -ur misc/Python-2.7.15/setup.py misc/build/Python-2.7.15/setup.py
                                     libraries = ['ssl', 'crypto'],
                                     depends = ['socketmodule.h']), )
          else:
-@@ -869,6 +871,7 @@
+@@ -930,6 +931,7 @@
                  exts.append( Extension('_hashlib', ['_hashopenssl.c'],
                                         include_dirs = ssl_incs,
                                         library_dirs = ssl_libs,
