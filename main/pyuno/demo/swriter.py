@@ -1,5 +1,5 @@
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,20 +7,20 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 
 
-# bootstrap uno component context 	
+# bootstrap uno component context
 import uno
 import unohelper
 
@@ -38,7 +38,7 @@ def insertTextIntoCell( table, cellName, text, color ):
     tableText.setString( text )
 
 localContext = uno.getComponentContext()
-				   
+
 resolver = localContext.ServiceManager.createInstanceWithContext(
 				"com.sun.star.bridge.UnoUrlResolver", localContext )
 
@@ -56,7 +56,7 @@ doc = desktop.loadComponentFromURL( "private:factory/swriter","_blank", 0, () )
 text = doc.Text
 cursor = text.createTextCursor()
 text.insertString( cursor, "The first line in the newly created text document.\n", 0 )
-text.insertString( cursor, "Now we are in the second line\n" , 0 )
+text.insertString( cursor, "Now we are in the second line.\n" , 0 )
 
 # create a text table
 table = doc.createInstance( "com.sun.star.text.TextTable" )
@@ -103,7 +103,7 @@ cursor.setPropertyValue( "CharColor", 255 )
 cursor.setPropertyValue( "CharShadowed", uno.Bool(1) )
 
 text.insertControlCharacter( cursor, PARAGRAPH_BREAK, 0 )
-text.insertString( cursor, " This is a colored Text - blue with shadow\n" , 0 )
+text.insertString( cursor, " This is a colored text - blue with shadow\n" , 0 )
 text.insertControlCharacter( cursor, PARAGRAPH_BREAK, 0 )
 
 textFrame = doc.createInstance( "com.sun.star.text.TextFrame" )
@@ -116,11 +116,11 @@ text.insertTextContent( cursor, textFrame, 0 )
 textInTextFrame = textFrame.getText()
 cursorInTextFrame = textInTextFrame.createTextCursor()
 textInTextFrame.insertString( cursorInTextFrame, "The first line in the newly created text frame.", 0 )
-textInTextFrame.insertString( cursorInTextFrame, "\nWith this second line the height of the rame raises.",0)
+textInTextFrame.insertString( cursorInTextFrame, "\nWith this second line the height of the frame raises.",0)
 text.insertControlCharacter( cursor, PARAGRAPH_BREAK, 0 )
 
 cursor.setPropertyValue( "CharColor", 65536 )
 cursor.setPropertyValue( "CharShadowed", uno.Bool(0) )
 
-text.insertString( cursor, " That's all for now !!" , 0 )
+text.insertString( cursor, " That's all for now!" , 0 )
 
