@@ -42,7 +42,7 @@ all:
 
 
 TARFILE_NAME=Python-$(PYVERSION)
-TARFILE_MD5=045fb3440219a1f6923fefdabde63342
+TARFILE_MD5=27a7919fa8d1364bae766949aaa91a5b
 PATCH_FILES=\
 	python-solaris.patch \
 	python-freebsd.patch \
@@ -172,4 +172,3 @@ $(PYVERSIONFILE_DMAKE) : pyversion_dmake.mk $(PACKAGE_DIR)$/$(PREDELIVER_FLAG_FI
 $(PYVERSIONFILE) : pyversion.mk $(PACKAGE_DIR)$/$(PREDELIVER_FLAG_FILE)
 	-rm -f $@
 	cat $? > $@
-
