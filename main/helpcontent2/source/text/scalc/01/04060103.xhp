@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textscalc0104060103xml" indexer="include">
          <title xml-lang="en-US" id="tit">Financial Functions Part One</title>
@@ -38,7 +37,7 @@
       <bookmark_value>amortizations, see also depreciations</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <paragraph xml-lang="en-US" id="hd_id3143284" role="heading" level="1" l10n="U" oldref="1">Financial Functions Part One</paragraph>
-      <paragraph xml-lang="en-US" id="par_id3149095" role="paragraph" l10n="CHG" oldref="2"><variable id="finanztext">This category contains the mathematical finance functions of <item type="productname">%PRODUCTNAME</item> Calc. 
+      <paragraph xml-lang="en-US" id="par_id3149095" role="paragraph" l10n="CHG" oldref="2"><variable id="finanztext">This category contains the mathematical finance functions of <item type="productname">%PRODUCTNAME</item> Calc.
 </variable></paragraph>
 <sort order="asc">
 <section id="amordegrc">
@@ -184,7 +183,7 @@
 <paragraph xml-lang="en-US" id="hd_id3147556" role="heading" level="2" l10n="U" oldref="3">PV</paragraph>
          <paragraph xml-lang="en-US" id="par_id3153301" role="paragraph" l10n="U" oldref="4"><ahelp hid="HID_FUNC_BW">Returns the present value of an investment resulting from a series of regular payments.</ahelp></paragraph>
          <paragraph xml-lang="en-US" id="par_id3146099" role="paragraph" l10n="U" oldref="5">Use this function to calculate the amount of money needed to be invested at a fixed rate today, to receive a specific amount, an annuity, over a specified number of periods. You can also determine how much money is to remain after the elapse of the period. Specify as well if the amount is to be paid out at the beginning or at the end of each period.</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3153334" role="paragraph" l10n="U" oldref="6">Enter these values either as numbers, expressions or references. If, for example, interest is paid annually at 8%, but you want to use month as your period, enter 8%/12 under <emph>Rate</emph> and <item type="productname">%PRODUCTNAME</item> Calc with automatically calculate the correct factor.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3153334" role="paragraph" l10n="U" oldref="6">Enter these values either as numbers, expressions or references. If, for example, interest is paid annually at 8%, but you want to use month as your period, enter 8%/12 under <emph>Rate</emph> and <item type="productname">%PRODUCTNAME</item> Calc will automatically calculate the correct factor.</paragraph>
          <paragraph xml-lang="en-US" id="hd_id3147407" role="heading" level="3" l10n="U" oldref="7">Syntax</paragraph>
          <paragraph xml-lang="en-US" id="par_id3150395" role="code" l10n="U" oldref="8">PV(Rate; NPer; Pmt; FV; Type)</paragraph>
          <paragraph xml-lang="en-US" id="par_id3151341" role="paragraph" l10n="U" oldref="9">
