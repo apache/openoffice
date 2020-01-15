@@ -119,8 +119,8 @@ static void setPythonHome ( const OUString & pythonHome )
 #else
     static wchar_t *wpath = Py_DecodeLocale(o.pData->buffer, NULL);
     if (wpath == NULL) {
-    	PyErr_SetString(PyExc_SystemError, "Cannot decode python home path");
-	return;
+        PyErr_SetString(PyExc_SystemError, "Cannot decode python home path");
+        return;
     }
     Py_SetPythonHome(wpath);
 #endif
