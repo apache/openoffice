@@ -117,7 +117,7 @@ static void setPythonHome ( const OUString & pythonHome )
     rtl_string_acquire(o.pData); // leak this string (thats the api!)
     Py_SetPythonHome( o.pData->buffer);
 #else
-    wchar_t *wpath = Py_DecodeLocale(o.pData->buffer, NULL);
+    static wchar_t *wpath = Py_DecodeLocale(o.pData->buffer, NULL);
     if (wpath == NULL) {
     	PyErr_SetString(PyExc_SystemError, "Cannot decode python home path");
 	return;
