@@ -746,7 +746,7 @@ static struct PyModuleDef PyUNOModule =
 }
 
 #if PY_MAJOR_VERSION >= 3
-extern "C" PyMODINIT_FUNC PyInit_pyuno(void)
+PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno()
 {
     PyObject *m;
     
