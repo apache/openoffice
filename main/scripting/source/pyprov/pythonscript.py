@@ -56,7 +56,10 @@ ENABLE_EDIT_DIALOG=False                    # offers a minimal editor for editin
 #-------------------------------------------------------------------
 
 def encfile(uni):
-    return uni.encode( sys.getfilesystemencoding())
+    if sys.version_info[0] > 2:
+        return uni
+    else:
+        return uni.encode( sys.getfilesystemencoding())
 
 def lastException2String():
     (excType,excInstance,excTraceback) = sys.exc_info()
@@ -81,7 +84,7 @@ def getLogTarget():
             userInstallation =  pathSubst.getSubstituteVariableValue( "user" )
             if len( userInstallation ) > 0:
                 systemPath = uno.fileUrlToSystemPath( userInstallation + "/Scripts/python/log.txt" )
-                ret = file( systemPath , "a" )
+                ret = open( systemPath , "a" )
         except Exception as e:
             print("Exception during creation of pythonscript logfile: "+ lastException2String() + "\n, delagating log to stdout\n")
     return ret
@@ -153,13 +156,16 @@ g_implName = "org.openoffice.pyuno.LanguageScriptProviderFor"+LANGUAGENAME
 BLOCK_SIZE = 65536
 def readTextFromStream( inputStream ):
     # read the file
-    code = uno.ByteSequence( "" )
+    code = uno.ByteSequence( b"" )
     while True:
         read,out = inputStream.readBytes( None , BLOCK_SIZE )
         code = code + out
         if read < BLOCK_SIZE:
             break
-    return code.value
+    if sys.version_info[0] > 2:
+        return str( code.value, 'utf-8' )
+    else:
+        return code.value
 
 def toIniName( str ):
     # TODO: what is the official way to get to know whether i am on the windows platform ?
