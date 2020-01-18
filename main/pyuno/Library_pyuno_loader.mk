@@ -38,6 +38,8 @@ else ifeq ($(OS),MACOSX)
 $(eval $(call gb_Library_add_libs,pyuno_loader,-ldl))
 endif
 
+$(call gb_Library_use_external,pyuno_loader,python)
+
 $(eval $(call gb_Library_add_cobjects,pyuno_loader,\
 	pyuno/source/module/pyuno_dlopenwrapper \
 ))
