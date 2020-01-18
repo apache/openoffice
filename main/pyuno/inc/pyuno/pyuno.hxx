@@ -76,7 +76,11 @@
     preconditions: python has been initialized before and
                    the global interpreter lock is held 
 */
+#if PY_MAJOR_VERSION >= 3
+PY_DLLEXPORT PyMODINIT_FUNC PyInit_pyuno();
+#else
 extern "C" PY_DLLEXPORT void SAL_CALL initpyuno();
+#endif
 
 
 namespace pyuno
