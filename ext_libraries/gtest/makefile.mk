@@ -46,7 +46,7 @@ TARFILE_NAME=$(PRJNAME)-$(LIBGTESTVERSION)
 # thankfully, does not care.
 TARFILE_MD5=2d6ec8ccdf5c46b05ba54a9fd1d130d7
 
-PATCH_FILES= use-own-tuple.patch
+PATCH_FILES= use-own-tuple.patch gtest-python3.patch
 
 .IF "$(OS)"=="WNT"
 
