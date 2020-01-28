@@ -150,8 +150,7 @@ if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
     MD5 = 625ff5f2f968dd908bca43c9469d6e6b
     name = commons-lang-2.4-src.tar.gz
     URL1 = http://archive.apache.org/dist/commons/lang/source/commons-lang-2.4-src.tar.gz
-    # TODO missing in OOO_EXTRAS
-    # URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
     MD5 = c813c065dd53d7bd0a560a870ddd0af5
