@@ -25,7 +25,7 @@
 <helpdocument version="1.0">
 <meta>
 <topic id="textsbasicshared03090203xml" indexer="include" status="PUBLISH">
-<title xml-lang="en-US" id="tit">While...Wend Statement[Runtime]</title>
+<title xml-lang="en-US" id="tit">While...Wend Statement [Runtime]</title>
 <filename>/text/sbasic/shared/03090203.xhp</filename>
 </topic>
 <history>
@@ -37,7 +37,7 @@
   
   
   <section id="whilewend">
-  <bookmark xml-lang="en-US" branch="index" id="bm_id3150400"><bookmark_value>While;While...Wend loop</bookmark_value></bookmark><paragraph id="hd_id3150400" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/sbasic/shared/03090203.xhp" name="While...Wend Statement[Runtime]">While...Wend Statement[Runtime]</link></paragraph>
+  <bookmark xml-lang="en-US" branch="index" id="bm_id3150400"><bookmark_value>While;While...Wend loop</bookmark_value></bookmark><paragraph id="hd_id3150400" role="heading" level="1" oldref="1" l10n="U" xml-lang="en-US"><link href="text/sbasic/shared/03090203.xhp" name="While...Wend Statement [Runtime]">While...Wend Statement [Runtime]</link></paragraph>
   <paragraph xml-lang="en-US" role="paragraph" id="par_id3151211" l10n="U" oldref="2">When a program encounters a While statement, it tests the condition. If the condition is False, the program continues directly following the Wend statement. If the condition is True, the loop is executed until the program finds Wend and then jumps back to the<emph> While </emph>statement. If the condition is still True, the loop is executed again.</paragraph>
   </section>
   <paragraph xml-lang="en-US" oldref="3" id="par_id3151041" l10n="U" role="paragraph">Unlike the <link href="text/sbasic/shared/03090201.xhp" name="Do...Loop">Do...Loop</link> statement, you cannot cancel a <emph>While...Wend</emph> loop with <link href="text/sbasic/shared/03090412.xhp" name="Exit">Exit</link>. Never exit a While...Wend loop with <link href="text/sbasic/shared/03090302.xhp" name="GoTo">GoTo</link>, since this can cause a run-time error.</paragraph>
