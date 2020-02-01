@@ -19,26 +19,37 @@
 #  
 #**************************************************************
 
+objs = AOOSharedObjects()
+objs.AddAPI([
+    'offapi',
+    'udkapi'
+])
+objs.AddInclude([
+    'inc'
+])
+objs.AddDefs([
+    'FILEACCESS_DLLIMPLEMENTATION'
+])
+objs.AddCxxExceptionSources([
+    'source/FileAccess.cxx'
+])
+fileacc = AOOSharedLibrary(
+    'fileacc',
+    'OOOLIBS',
+    objs.objects
+)
+fileacc.AddLinkedLibs(
+    [
+        CPPULIB,
+        CPPUHELPERLIB,
+        SALLIB,
+        TOOLSLIB,
+        UCBHELPERLIB,
+        UNOTOOLSLIB
+    ] + STDLIBS
+)
+fileacc.SetComponentFile('util/fileacc')
+fileacc.InstallTo('${OUTDIR}/lib')
 
+Install('${OUTDIR}/xml', 'source/fileacc.xml')
 
-PRJ=..
-TARGET=prj
-
-.INCLUDE : settings.mk
-
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && scons -u $(VERBOSEFLAG) -j$(MAXPROCESS) install

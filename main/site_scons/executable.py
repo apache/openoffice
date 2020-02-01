@@ -19,26 +19,28 @@
 #  
 #**************************************************************
 
+from SCons.Script import *
+from config import soenv
+from globals import *
 
+class AOOExecutable:
+    def __init__(self, target, group, objects):
+        self.env = DefaultEnvironment().Clone()
+        self.exe = self.env.Program(
+            target,
+            source = objects
+        )
+        self.env['AOO_THIS'] = self.exe[0]
+        self.env.Append(LINKFLAGS=platform.getExecutableLDFlags(soenv, group, OUTDIRLOCATION, DEBUGGING, DEBUGLEVEL))
+        self.env.Append(LIBPATH=platform.getLDPATH(soenv))
+        self.env['AOO_GROUP'] = group
+        self.env['AOO_LAYER'] = platform.getLibraryGroupLayer(group)
 
-PRJ=..
-TARGET=prj
+    def AddLinkedLibs(self, libs):
+        self.env.Append(LIBS=libs)
 
-.INCLUDE : settings.mk
+    def SetTargetTypeGUI(self, isGUI):
+        self.env.Append(LINKFLAGS=platform.getTargetTypeGUIFlags(isGUI))
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && scons -u $(VERBOSEFLAG) -j$(MAXPROCESS) install
+    def InstallTo(self, path):
+        self.env.Install(path, self.exe)

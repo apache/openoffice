@@ -19,26 +19,24 @@
 #  
 #**************************************************************
 
+import os
 
+_siteDir, _myFilename = os.path.split(os.path.abspath(__file__))
+_mainDir, _siteDir2 = os.path.split(_siteDir)
 
-PRJ=..
-TARGET=prj
+# Or should we patch set_soenv to generate us a .py file?
+def _loadJavaProperties(filepath):
+    props = {}
+    with open(filepath, "rt") as f:
+        for line in f:
+            l = line.strip()
+            if l and not l.startswith('#'):
+                eq = l.find('=')
+                if eq >= 0:
+                    key = l[:eq].strip()
+                    value = l[(eq+1):].strip()
+                    props[key] = value
+    return props
 
-.INCLUDE : settings.mk
+soenv = _loadJavaProperties(_mainDir + '/ant.properties')
 
-.IF "$(VERBOSE)"!=""
-VERBOSEFLAG :=
-.ELSE
-VERBOSEFLAG := -s
-.ENDIF
-
-.IF "$(DEBUG)"!=""
-DEBUG_ARGUMENT=DEBUG=$(DEBUG)
-.ELIF "$(debug)"!=""
-DEBUG_ARGUMENT=debug=$(debug)
-.ELSE
-DEBUG_ARGUMENT=
-.ENDIF
-
-all:
-	cd $(PRJ) && scons -u $(VERBOSEFLAG) -j$(MAXPROCESS) install
