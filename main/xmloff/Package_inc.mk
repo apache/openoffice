@@ -60,7 +60,6 @@ $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextMasterPageContext
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextMasterPageExport.hxx,xmloff/XMLTextMasterPageExport.hxx))
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextMasterStylesContext.hxx,xmloff/XMLTextMasterStylesContext.hxx))
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextShapeImportHelper.hxx,xmloff/XMLTextShapeImportHelper.hxx))
-$(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextShapeImportHelper.hxx,xmloff/XMLTextShapeImportHelper.hxx))
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextShapeStyleContext.hxx,xmloff/XMLTextShapeStyleContext.hxx))
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/XMLTextTableContext.hxx,xmloff/XMLTextTableContext.hxx))
 $(eval $(call gb_Package_add_file,xmloff_inc,inc/xmloff/animexp.hxx,xmloff/animexp.hxx))
