@@ -38,6 +38,7 @@ import org.apache.openoffice.gotoSCons.raw.ValueNode;
 public class Module extends BaseTarget {
     private File filename;
     private String name;
+    private Map<String, AllLangResTarget> allLangResTargets = new TreeMap<>();
     private Map<String, Library> libraries = new TreeMap<>();
     private Map<String, Executable> executables = new TreeMap<>();
     private Map<String, StaticLibrary> staticLibraries = new TreeMap<>();
@@ -91,23 +92,29 @@ public class Module extends BaseTarget {
             throw new Exception("Module isn't " + name);
         }
         for (String arg : Utils.spaceSeparatedTokens(args[1])) {
-            if (arg.startsWith("Executable_")) {
-                Executable exe = new Executable(new File(filename.getParentFile(), arg + ".mk"));
+            File makefile = new File(filename.getParentFile(), arg + ".mk");
+            if (arg.startsWith("AllLangResTarget_")) {
+                AllLangResTarget allLangResTarget = new AllLangResTarget(makefile);
+                if (allLangResTargets.put(arg, allLangResTarget) != null) {
+                    throw new Exception("Duplicate add of target " + arg);
+                }
+            } else if (arg.startsWith("Executable_")) {
+                Executable exe = new Executable(makefile);
                 if (executables.put(arg, exe) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
             } else if (arg.startsWith("Library_")) {
-                Library library = new Library(new File(filename.getParentFile(), arg + ".mk"));
+                Library library = new Library(makefile);
                 if (libraries.put(arg, library) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
             } else if (arg.startsWith("StaticLibrary_")) {
-                StaticLibrary staticLibrary = new StaticLibrary(new File(filename.getParentFile(), arg + ".mk"));
+                StaticLibrary staticLibrary = new StaticLibrary(makefile);
                 if (staticLibraries.put(arg, staticLibrary) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
             } else if (arg.startsWith("Package_")) {
-                Pkg pkg = new Pkg(new File(filename.getParentFile(), arg + ".mk"));
+                Pkg pkg = new Pkg(makefile);
                 if (packages.put(arg, pkg) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
