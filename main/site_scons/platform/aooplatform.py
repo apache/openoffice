@@ -83,6 +83,10 @@ class Platform(ABC):
         pass
 
     @abstractmethod
+    def getStaticLibraryLDFlags(self, debugging, debugLevel):
+        pass
+
+    @abstractmethod
     def getStandardLibs(self):
         pass
 

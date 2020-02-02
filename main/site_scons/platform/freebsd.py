@@ -232,6 +232,9 @@ class FreeBSD(aooplatform.Platform):
         ]
         return flags
 
+    def getStaticLibraryLDFlags(self, debugging, debugLevel):
+        return self.getLDFlags(soenv, debugging, debugLevel)
+
     def getStandardLibs(self):
         return []
 

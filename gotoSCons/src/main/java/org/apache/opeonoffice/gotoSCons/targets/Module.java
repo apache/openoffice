@@ -40,6 +40,7 @@ public class Module extends BaseTarget {
     private String name;
     private Map<String, Library> libraries = new TreeMap<>();
     private Map<String, Executable> executables = new TreeMap<>();
+    private Map<String, StaticLibrary> staticLibraries = new TreeMap<>();
     private TreeSet<String> targets = new TreeSet<>();
     private Map<String, Pkg> packages = new TreeMap<>();
     
@@ -100,6 +101,11 @@ public class Module extends BaseTarget {
                 if (libraries.put(arg, library) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
+            } else if (arg.startsWith("StaticLibrary_")) {
+                StaticLibrary staticLibrary = new StaticLibrary(new File(filename.getParentFile(), arg + ".mk"));
+                if (staticLibraries.put(arg, staticLibrary) != null) {
+                    throw new Exception("Duplicate add of target " + arg);
+                }
             } else if (arg.startsWith("Package_")) {
                 Pkg pkg = new Pkg(new File(filename.getParentFile(), arg + ".mk"));
                 if (packages.put(arg, pkg) != null) {
@@ -123,6 +129,10 @@ public class Module extends BaseTarget {
         return libraries;
     }
 
+    public Map<String, StaticLibrary> getStaticLibraries() {
+        return staticLibraries;
+    }
+    
     public Map<String, Executable> getExecutables() {
         return executables;
     }

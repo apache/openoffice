@@ -30,6 +30,7 @@ import org.apache.opeonoffice.gotoSCons.targets.Library;
 import org.apache.opeonoffice.gotoSCons.targets.Module;
 import org.apache.opeonoffice.gotoSCons.targets.Pkg;
 import org.apache.opeonoffice.gotoSCons.targets.Repository;
+import org.apache.opeonoffice.gotoSCons.targets.StaticLibrary;
 
 public class SConsConverter {
     private Repository repo;
@@ -43,6 +44,10 @@ public class SConsConverter {
     public void convertToSCons(Module module) throws Exception {
         for (Library library : module.getLibraries().values()) {
             convertLibrary(library);
+        }
+
+        for (StaticLibrary library : module.getStaticLibraries().values()) {
+            convertStaticLibrary(library);
         }
         
         for (Executable exe : module.getExecutables().values()) {
@@ -103,6 +108,20 @@ public class SConsConverter {
             out.println(String.format("%s.SetComponentFile('%s')",
                     library.getName(), componentFile.substring(firstSlash + 1)));
         }
+
+        out.println(String.format("%s.InstallTo('${OUTDIR}/lib')", library.getName()));
+        out.println();
+    }
+    
+    private void convertStaticLibrary(StaticLibrary library) throws Exception {
+        String objectsVariable = convertObjects(library);
+
+        String layer = repo.getLibraryLayer(library.getName());
+        out.println(String.format("%s = AOOStaticLibrary(", library.getName()));
+        out.println(String.format("    '%s',", library.getName()));
+        out.println(String.format("    '%s',", layer));
+        out.println(String.format("    %s.objects", objectsVariable));
+        out.println(String.format(")"));
 
         out.println(String.format("%s.InstallTo('${OUTDIR}/lib')", library.getName()));
         out.println();
