@@ -85,8 +85,8 @@ public class Module extends BaseTarget {
     }
     
     private void parseModuleAddTargets(String[] args) throws Exception {
-        if (args.length != 2) {
-            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        if (args.length < 1 || args.length > 2) {
+            throw new Exception("Expected 1-2 args, got " + Arrays.toString(args));
         }
         if (!args[0].equals(name)) {
             throw new Exception("Module isn't " + name);

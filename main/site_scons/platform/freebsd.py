@@ -252,3 +252,5 @@ class FreeBSD(aooplatform.Platform):
     def getTargetTypeGUIFlags(self, isGUI):
         return []
 
+    def getVersionScriptFlags(self, versionScript):
+        return ['-Wl,--version-script,' + versionScript.srcnode().path ]

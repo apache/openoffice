@@ -106,3 +106,7 @@ class Platform(ABC):
     def getTargetTypeGUIFlags(self, isGUI):
         pass
 
+    @abstractmethod
+    def getVersionScriptFlags(self, versionScript):
+        pass
+

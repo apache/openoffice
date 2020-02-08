@@ -29,6 +29,7 @@ import org.apache.openoffice.gotoSCons.raw.ValueNode;
 public class Library extends BaseBinary {
     private File filename;
     private String componentFile;
+    private String versionScript;
     
     public Library(File filename) throws Exception {
         super(filename);
@@ -63,6 +64,8 @@ public class Library extends BaseBinary {
                 parseSetComponentFile(args);
             } else if (function.equals("gb_Library_set_include")) {
                 parseSetInclude(args);
+            } else if (function.equals("gb_Library_set_versionmap")) {
+                parseSetVersionScript(args);
             } else {
                 throw new Exception("UNHANDLED FUNCTION " + function);
             }
@@ -93,7 +96,26 @@ public class Library extends BaseBinary {
         }
     }
     
+    private void parseSetVersionScript(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Library isn't " + name);
+        }
+
+        if (versionScript != null) {
+            throw new Exception("Version script file already set");
+        } else {
+            versionScript = args[1];
+        }
+    }
+    
     public String getComponentFile() {
         return componentFile;
+    }
+
+    public String getVersionScript() {
+        return versionScript;
     }
 }

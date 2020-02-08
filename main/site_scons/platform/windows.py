@@ -296,3 +296,6 @@ class Windows(aooplatform.Platform):
             return '-SUBSYSTEM:WINDOWS'
         else:
             return '-SUBSYSTEM:CONSOLE'
+
+    def getVersionScriptFlags(self, versionScript):
+        return []

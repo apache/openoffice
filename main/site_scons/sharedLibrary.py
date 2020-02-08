@@ -66,5 +66,9 @@ class AOOSharedLibrary:
         self.env.Install(outdirComponentDir, finalComponent)
         self.env.Install(outdirComponentDir, inbuildComponent)
 
+    def SetVersionScript(self, path):
+        versionScript = File(path)
+        self.env.Append(LINKFLAGS=platform.getVersionScriptFlags(versionScript))
+
     def InstallTo(self, path):
         self.env.Install(path, self.sharedLib)
