@@ -174,7 +174,7 @@ public class SConsConverter {
     
     private String convertObjects(BaseBinary binary) throws Exception {
         String objectsVariable = binary.getName() + "Objects";
-        if (binary.getExceptionObjects().isEmpty()) {
+        if (binary.getExceptionObjects().isEmpty() && binary.getNoexceptionObjects().isEmpty()) {
             throw new Exception("How can a binary have no source files?");
         }
         out.println(objectsVariable + " = AOOSharedObjects()");
@@ -250,6 +250,26 @@ public class SConsConverter {
                     throw new Exception("Invalid filename " + exceptionObject);
                 }
                 out.print("    '" + exceptionObject.substring(firstSlash + 1) + ".cxx'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+
+        if (!binary.getNoexceptionObjects().isEmpty()) {
+            out.println(objectsVariable + ".AddCxxNoExceptionSources([");
+            boolean first = true;
+            for (String noExceptionObject : binary.getNoexceptionObjects()) {
+                if (!first) {
+                    out.println(",");
+                }
+                // in: fileaccess/source/FileAccess
+                // out: source/FileAccess.cxx
+                int firstSlash = noExceptionObject.indexOf('/');
+                if (firstSlash < 0) {
+                    throw new Exception("Invalid filename " + noExceptionObject);
+                }
+                out.print("    '" + noExceptionObject.substring(firstSlash + 1) + ".cxx'");
                 first = false;
             }
             out.println();

@@ -23,7 +23,6 @@ from SCons.Script import *
 import sys
 import os
 from config import soenv
-import component
 from globals import *
 
 
