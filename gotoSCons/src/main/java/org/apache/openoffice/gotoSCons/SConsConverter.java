@@ -111,13 +111,14 @@ public class SConsConverter {
         
         String versionScript = library.getVersionScript();
         if (versionScript != null) {
-            int firstSlash = versionScript.indexOf('/');
-            if (firstSlash < 0) {
-                throw new Exception("Invalid filename " + versionScript);
+            if (versionScript.startsWith("$(SRCDIR)/")) {
+                int firstSlash = versionScript.indexOf('/');
+                int secondSlash = versionScript.indexOf('/', firstSlash + 1);
+                versionScript = versionScript.substring(secondSlash + 1);
             }
 
             out.println(String.format("%s.SetVersionScript('%s')",
-                    library.getName(), versionScript.substring(firstSlash + 1)));
+                    library.getName(), versionScript));
         }
 
         out.println(String.format("%s.InstallTo('${OUTDIR}/lib')", library.getName()));
