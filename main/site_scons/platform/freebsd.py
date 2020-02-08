@@ -42,12 +42,12 @@ class FreeBSD(aooplatform.Platform):
         self.libraryGroupLayers['UNOLIBS_OOO'] = 'OOO'
         self.libraryGroupLayers['UNOVERLIBS'] = 'URELIB'
         self.layerRPaths = {}
-        self.layerRPaths['URELIB'] = '$ORIGIN'
-        self.layerRPaths['UREBIN'] = '$ORIGIN/../lib:$ORIGIN'
-        self.layerRPaths['OOO'] = '$ORIGIN:$ORIGIN/../ure-link/lib'
-        self.layerRPaths['BRAND'] = '$ORIGIN:$ORIGIN/../basis-link/program:$ORIGIN/../basis-link/ure-link/lib'
+        self.layerRPaths['URELIB'] = '\$$ORIGIN'
+        self.layerRPaths['UREBIN'] = '\$$ORIGIN/../lib:\$$ORIGIN'
+        self.layerRPaths['OOO'] = '\$$ORIGIN:\$$ORIGIN/../ure-link/lib'
+        self.layerRPaths['BRAND'] = '\$$ORIGIN:\$$ORIGIN/../basis-link/program:\$$ORIGIN/../basis-link/ure-link/lib'
         self.layerRPaths['SDKBIN'] = '$ORIGIN/../../ure-link/lib'
-        self.layerRPaths['NONEBIN'] = '$ORIGIN/../lib:$ORIGIN'
+        self.layerRPaths['NONEBIN'] = '\$$ORIGIN/../lib:\$$ORIGIN'
         self.layerComponentPrefixes = {}
         self.layerComponentPrefixes['OOO'] = 'vnd.sun.star.expand:\\$$OOO_BASE_DIR/program/'
         self.layerComponentPrefixes['URELIB'] = 'vnd.sun.star.expand:\\$$URE_INTERNAL_LIB_DIR/'
