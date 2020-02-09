@@ -36,7 +36,7 @@ objs.AddCxxExceptionSources([
 fileacc = AOOSharedLibrary(
     'fileacc',
     'OOOLIBS',
-    objs.objects
+    objs
 )
 fileacc.AddLinkedLibs(
     [

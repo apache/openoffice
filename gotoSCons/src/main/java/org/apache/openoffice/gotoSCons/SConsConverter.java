@@ -81,7 +81,7 @@ public class SConsConverter {
         out.println(String.format("%s = AOOSharedLibrary(", library.getName()));
         out.println(String.format("    '%s',", library.getName()));
         out.println(String.format("    '%s',", layer));
-        out.println(String.format("    %s.objects", objectsVariable));
+        out.println(String.format("    %s", objectsVariable));
         out.println(String.format(")"));
 
         if (!library.getLinkedLibs().isEmpty()) {

@@ -26,9 +26,10 @@ from globals import *
 class AOOSharedLibrary:
     def __init__(self, target, group, sharedObjects):
         self.env = DefaultEnvironment().Clone()
+        sharedObjects.env.Append(CPPDEFINES=platform.getLibraryDefs(soenv))
         self.sharedLib = self.env.SharedLibrary(
             target,
-            source = sharedObjects
+            source = sharedObjects.objects
         )
         self.env['AOO_THIS'] = self.sharedLib[0]
         self.env.Append(LINKFLAGS=platform.getLibraryLDFlags(soenv, group, OUTDIRLOCATION, DEBUGGING, DEBUGLEVEL))
