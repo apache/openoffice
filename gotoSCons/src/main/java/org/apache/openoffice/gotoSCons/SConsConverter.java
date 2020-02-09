@@ -150,7 +150,7 @@ public class SConsConverter {
         out.println(String.format(")"));
         
         if (exe.isTargetTypeSet()) {
-            out.println(String.format("%s.SetTargetTypeGUI()",
+            out.println(String.format("%s.SetTargetTypeGUI(%s)",
                     exe.getName(),
                     exe.isIsTargetTypeGUI() ? "True" : "False"));
         }
