@@ -54,54 +54,54 @@
     <TimePM>p.m.</TimePM>
     <MeasurementSystem>metric</MeasurementSystem>
   </LC_CTYPE>
-  <LC_FORMAT replaceFrom="[CURRENCY]" replaceTo="[$€-627]">
+  <LC_FORMAT>
     <FormatElement msgid="FixedFormatskey1" default="true" type="medium" usage="FIXED_NUMBER" formatindex="0">
-      <FormatCode>General</FormatCode>
+      <FormatCode>Standard</FormatCode>
     </FormatElement>
     <FormatElement msgid="FixedFormatskey2" default="true" type="short" usage="FIXED_NUMBER" formatindex="1">
       <FormatCode>0</FormatCode>
     </FormatElement>
     <FormatElement msgid="FixedFormatskey3" default="false" type="medium" usage="FIXED_NUMBER" formatindex="2">
-      <FormatCode>0.00</FormatCode>
+      <FormatCode>0,00</FormatCode>
     </FormatElement>
     <FormatElement msgid="FixedFormatskey4" default="false" type="short" usage="FIXED_NUMBER" formatindex="3">
-      <FormatCode>#,##0</FormatCode>
+      <FormatCode>#.##0</FormatCode>
     </FormatElement>
     <FormatElement msgid="FixedFormatskey5" default="false" type="medium" usage="FIXED_NUMBER" formatindex="4">
-      <FormatCode>#,##0.00</FormatCode>
+      <FormatCode>#.##0,00</FormatCode>
     </FormatElement>
     <FormatElement msgid="FixedFormatskey6" default="false" type="medium" usage="FIXED_NUMBER" formatindex="5">
-      <FormatCode>#,###.00</FormatCode>
+      <FormatCode>#.###,00</FormatCode>
     </FormatElement>
     <FormatElement msgid="ScientificFormatskey1" default="true" type="medium" usage="SCIENTIFIC_NUMBER" formatindex="6">
-      <FormatCode>0.00E+00</FormatCode>
+      <FormatCode>0,00E+000</FormatCode>
     </FormatElement>
     <FormatElement msgid="ScientificFormatskey2" default="false" type="medium" usage="SCIENTIFIC_NUMBER" formatindex="7">
-      <FormatCode>0.00E+000</FormatCode>
+      <FormatCode>0,00E+00</FormatCode>
     </FormatElement>
     <FormatElement msgid="PercentFormatskey1" default="true" type="short" usage="PERCENT_NUMBER" formatindex="8">
       <FormatCode>0%</FormatCode>
     </FormatElement>
     <FormatElement msgid="PercentFormatskey2" default="true" type="long" usage="PERCENT_NUMBER" formatindex="9">
-      <FormatCode>0.00%</FormatCode>
+      <FormatCode>0,00%</FormatCode>
     </FormatElement>
     <FormatElement msgid="CurrencyFormatskey1" default="true" type="short" usage="CURRENCY" formatindex="12">
-      <FormatCode>[CURRENCY] #,##0;-[CURRENCY] #,##0</FormatCode>
+      <FormatCode>[$₤-410] #.##0;-[$₤-410] #.##0</FormatCode>
     </FormatElement>
     <FormatElement msgid="CurrencyFormatskey2" default="false" type="medium" usage="CURRENCY" formatindex="13">
-      <FormatCode>[CURRENCY] #,##0.00;-[CURRENCY] #,##0.00</FormatCode>
+      <FormatCode>[$₤-410] #.##0;-[$₤-410] #.##0</FormatCode>
     </FormatElement>
-    <FormatElement msgid="CurrencyFormatskey3" default="false" type="medium" usage="CURRENCY" formatindex="14">
-      <FormatCode>[CURRENCY] #,##0;[RED]-[CURRENCY] #,##0</FormatCode>
+    <FormatElement msgid="CurrencyFormatskey3" default="true" type="medium" usage="CURRENCY" formatindex="14">
+      <FormatCode>[$₤-410] #.##0;[RED]-[$₤-410] #.##0</FormatCode>
     </FormatElement>
-    <FormatElement msgid="CurrencyFormatskey4" default="true" type="medium" usage="CURRENCY" formatindex="15">
-      <FormatCode>[CURRENCY] #,##0.00;[RED]-[CURRENCY] #,##0.00</FormatCode>
+    <FormatElement msgid="CurrencyFormatskey4" default="false" type="medium" usage="CURRENCY" formatindex="15">
+      <FormatCode>[$₤-410] #.##0;[RED]-[$₤-410] #.##0</FormatCode>
     </FormatElement>
     <FormatElement msgid="CurrencyFormatskey5" default="false" type="medium" usage="CURRENCY" formatindex="16">
-      <FormatCode>CCC #,##0.00</FormatCode>
+      <FormatCode>#.##0 CCC</FormatCode>
     </FormatElement>
     <FormatElement msgid="CurrencyFormatskey6" default="false" type="medium" usage="CURRENCY" formatindex="17">
-      <FormatCode>[CURRENCY] #,##0.--;[RED]-[CURRENCY] #,##0.--</FormatCode>
+      <FormatCode>[$₤-410] #.##0;[RED]-[$₤-410] #.##0</FormatCode>
     </FormatElement>
     <FormatElement msgid="DateFormatskey1" default="true" type="short" usage="DATE" formatindex="18">
       <FormatCode>D/MM/AA</FormatCode>
