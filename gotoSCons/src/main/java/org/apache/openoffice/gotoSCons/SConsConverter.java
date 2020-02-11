@@ -24,6 +24,8 @@ package org.apache.openoffice.gotoSCons;
 import java.io.File;
 import java.io.PrintStream;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.TreeSet;
 import org.apache.opeonoffice.gotoSCons.targets.BaseBinary;
 import org.apache.opeonoffice.gotoSCons.targets.Executable;
 import org.apache.opeonoffice.gotoSCons.targets.Library;
@@ -55,22 +57,7 @@ public class SConsConverter {
         }
         
         for (Pkg pkg : module.getPackages().values()) {
-            for (Map.Entry<String, String> entry : pkg.getFilesToFrom().entrySet()) {
-                String toPath = entry.getKey();
-                String fromPath = pkg.getBaseDir() + '/' + entry.getValue();
-                
-                File moduleDir = module.getFilename().getParentFile().getCanonicalFile();
-                String expandedFromPath = fromPath.replace("$(SRCDIR)", moduleDir.getParentFile().getCanonicalPath());
-                String moduleRelativeFromPath;
-                if (expandedFromPath.startsWith(moduleDir.getCanonicalPath())) {
-                    moduleRelativeFromPath = expandedFromPath.substring(moduleDir.getCanonicalPath().length() + 1);
-                } else {
-                    throw new Exception("Cannot find module relative path to " + fromPath);
-                }
-                
-                out.println(String.format("Install('${OUTDIR}/%s', '%s')", toPath, moduleRelativeFromPath));
-            }
-            out.println();
+            convertPackage(module, pkg);
         }
     }
     
@@ -278,5 +265,68 @@ public class SConsConverter {
         }
         
         return objectsVariable;
+    }
+    
+    private void convertPackage(Module module, Pkg pkg) throws Exception {
+        Map<String, TreeSet<String>> filesByInstallDir = new TreeMap<>();
+        
+        for (Map.Entry<String, String> entry : pkg.getFilesToFrom().entrySet()) {
+            String toPath = entry.getKey();
+            String fromPath = pkg.getBaseDir() + '/' + entry.getValue();
+            
+            if (!filenameFromPath(toPath).equals(filenameFromPath(fromPath))) {
+                throw new Exception("Src/dst file changes name: " + toPath + " vs " + fromPath);
+            }
+
+            File moduleDir = module.getFilename().getParentFile().getCanonicalFile();
+            String expandedFromPath = fromPath.replace("$(SRCDIR)", moduleDir.getParentFile().getCanonicalPath());
+            String moduleRelativeFromPath;
+            if (expandedFromPath.startsWith(moduleDir.getCanonicalPath())) {
+                moduleRelativeFromPath = expandedFromPath.substring(moduleDir.getCanonicalPath().length() + 1);
+            } else {
+                throw new Exception("Cannot find module relative path to " + fromPath);
+            }
+            
+            String installDir = parentDir(toPath);
+            TreeSet<String> installFiles = filesByInstallDir.get(installDir);
+            if (installFiles == null) {
+                installFiles = new TreeSet<>();
+                filesByInstallDir.put(installDir, installFiles);
+            }
+            installFiles.add(moduleRelativeFromPath);
+        }
+        
+        for (Map.Entry<String,TreeSet<String>> entry : filesByInstallDir.entrySet()) {
+            out.println(String.format("Install('${OUTDIR}/%s', [", entry.getKey()));
+            boolean first = true;
+            for (String fromPath : entry.getValue()) {
+                if (!first) {
+                    out.println(",");
+                }
+                out.print("    '" + fromPath + "'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+        out.println();
+    }
+    
+    private static String parentDir(String path) throws Exception {
+        int lastSlash = path.lastIndexOf('/');
+        if (lastSlash >= 0) {
+            return path.substring(0, lastSlash);
+        } else {
+            throw new Exception("Doesn't contain directory path: " + path);
+        }
+    }
+    
+    private static String filenameFromPath(String path) {
+        int lastSlash = path.lastIndexOf('/');
+        if (lastSlash >= 0) {
+            return path.substring(lastSlash + 1);
+        } else {
+            return path;
+        }
     }
 }
