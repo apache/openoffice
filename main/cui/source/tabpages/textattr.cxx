@@ -244,7 +244,7 @@ void __EXPORT SvxTextAttrPage::Reset( const SfxItemSet& rAttrs )
 	// autogrowsize 
 	if ( rAttrs.GetItemState( SDRATTR_TEXT_AUTOGROWSIZE ) != SFX_ITEM_DONTCARE )
 	{
-		aTsbAutoGrowSize.SetState( ( ( const SdrTextAutoGrowHeightItem& )rAttrs.Get( SDRATTR_TEXT_AUTOGROWHEIGHT ) ).
+		aTsbAutoGrowSize.SetState( ( ( const SdrTextAutoGrowHeightItem& )rAttrs.Get( SDRATTR_TEXT_AUTOGROWSIZE ) ).
 						GetValue() ? STATE_CHECK : STATE_NOCHECK );
 		aTsbAutoGrowSize.EnableTriState( sal_False );
 	}
