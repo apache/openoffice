@@ -937,7 +937,7 @@ void SAL_CALL SfxBaseModel::disposing( const lang::EventObject& aObject )
     else if ( xListener.is() )
         m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference< XEVENTLISTENER >*)0), xListener );
     else if ( xDocListener.is() )
-        m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference< XDOCEVENTLISTENER >*)0), xListener );
+        m_pData->m_aInterfaceContainer.removeInterface( ::getCppuType((const uno::Reference< XDOCEVENTLISTENER >*)0), xDocListener );
 }
 
 //________________________________________________________________________________________________________
