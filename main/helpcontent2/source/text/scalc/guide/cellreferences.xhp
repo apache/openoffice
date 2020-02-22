@@ -32,10 +32,7 @@
       </topic>
    </meta>
    <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147436"><bookmark_value>sheet references</bookmark_value>
-      <bookmark_value>references; to cells in other sheets/documents</bookmark_value>
-      <bookmark_value>cells; operating in another document</bookmark_value>
-      <bookmark_value>documents;references</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147436"><bookmark_value>sheet references</bookmark_value><bookmark_value>references; to cells in other sheets/documents</bookmark_value><bookmark_value>cells; operating in another document</bookmark_value><bookmark_value>documents;references</bookmark_value>
 </bookmark><comment>mw made "sheet references;" a one level entry</comment><comment>MW changed "references;" and added "documents;"</comment>
 <paragraph xml-lang="en-US" id="hd_id3147436" role="heading" level="1" l10n="CHG"
                  oldref="9"><variable id="cellreferences"><link href="text/scalc/guide/cellreferences.xhp" name="Referencing Other Sheets">Referencing Other Sheets</link>
@@ -49,9 +46,7 @@
          </listitem>
          <listitem>
             <paragraph xml-lang="en-US" id="par_id4943693" role="listitem" l10n="NEW">By way of example, enter the following formula in cell A1 of Sheet1:</paragraph>
-            <paragraph xml-lang="en-US" id="par_id9064302" role="listitem" l10n="NEW">
-               <item type="literal">=Sheet2.A1</item>
-            </paragraph>
+            <paragraph xml-lang="en-US" id="par_id9064302" role="listitem" l10n="NEW"><item type="literal">=Sheet2.A1</item></paragraph>
          </listitem>
          <listitem>
             <paragraph xml-lang="en-US" id="par_id7609790" role="listitem" l10n="NEW">Click the <emph>Sheet 2</emph> tab at the bottom of the spreadsheet. Set the cursor in cell A1 there and enter text or a number.</paragraph>
