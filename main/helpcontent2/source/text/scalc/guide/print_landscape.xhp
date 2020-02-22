@@ -32,11 +32,8 @@
       </topic>
    </meta>
    <body>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153418"><bookmark_value>printing; sheet selections</bookmark_value>
-      <bookmark_value>sheets; printing in landscape</bookmark_value>
-      <bookmark_value>printing; landscape</bookmark_value>
-      <bookmark_value>landscape printing</bookmark_value>
-</bookmark><comment>mw corrected a typo in "printing; sheet..."</comment>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153418"><bookmark_value>printing; sheet selections</bookmark_value><bookmark_value>sheets; printing in landscape</bookmark_value><bookmark_value>printing; landscape</bookmark_value><bookmark_value>landscape printing</bookmark_value>
+</bookmark>
 <paragraph xml-lang="en-US" id="hd_id3153418" role="heading" level="1" l10n="U" oldref="1"><variable id="print_landscape"><link href="text/scalc/guide/print_landscape.xhp" name="Printing Sheets in Landscape Format">Printing Sheets in Landscape Format</link>
 </variable></paragraph>
       <paragraph xml-lang="en-US" id="par_id3149257" role="paragraph" l10n="U" oldref="2">In order to print a sheet you have a number of interactive options available under <emph>View - Page Break Preview</emph>. Drag the delimiter lines to define the range of printed cells on each page.</paragraph>
@@ -58,20 +55,15 @@
          </listitem>
          <listitem>
             <paragraph xml-lang="en-US" id="par_id3149404" role="listitem" l10n="CHG" oldref="9">In the <emph>Print </emph>dialog in the <emph>General</emph> tab page, select the contents to be printed:</paragraph>
-            <paragraph xml-lang="en-US" id="par_id3153305" role="listitem" l10n="CHG" oldref="10">
-               <emph>All sheets</emph> - All sheets will be printed.</paragraph>
-            <paragraph xml-lang="en-US" id="par_id3148871" role="listitem" l10n="CHG" oldref="12">
-               <emph>Selected sheets</emph> - Only the selected sheets will be printed. All sheets whose names (at the bottom on the sheet tabs) are selected will be printed. By pressing <switchinline select="sys"><caseinline select="MAC">Command
+            <paragraph xml-lang="en-US" id="par_id3153305" role="listitem" l10n="CHG" oldref="10"><emph>All sheets</emph> - All sheets will be printed.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3148871" role="listitem" l10n="CHG" oldref="12"><emph>Selected sheets</emph> - Only the selected sheets will be printed. All sheets whose names (at the bottom on the sheet tabs) are selected will be printed. By pressing <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline> while clicking a sheet name you can change this selection.</paragraph>
-            <paragraph xml-lang="en-US" id="par_id3764763" role="listitem" l10n="NEW">
-               <emph>Selected cells</emph> - All selected cells are printed.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3764763" role="listitem" l10n="NEW"><emph>Selected cells</emph> - All selected cells are printed.</paragraph>
          </listitem>
          <listitem>
             <paragraph xml-lang="en-US" id="par_id5538804" role="listitem" l10n="NEW">From all the paper pages that result from the above selection, you can select the range of paper pages to be printed:</paragraph>
-            <paragraph xml-lang="en-US" id="par_id14343" role="listitem" l10n="NEW">
-               <emph>All pages</emph> - Print all resulting pages.</paragraph>
-            <paragraph xml-lang="en-US" id="par_id3148699" role="listitem" l10n="U" oldref="11">
-               <emph>Pages</emph> - Enter the pages to be printed. The pages will also be numbered from the first sheet onwards. If you see in the Page Break Preview that Sheet1 will be printed on 4 pages and you want to print the first two pages of Sheet2, enter 5-6 here.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id14343" role="listitem" l10n="NEW"><emph>All pages</emph> - Print all resulting pages.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3148699" role="listitem" l10n="U" oldref="11"><emph>Pages</emph> - Enter the pages to be printed. The pages will also be numbered from the first sheet onwards. If you see in the Page Break Preview that Sheet1 will be printed on 4 pages and you want to print the first two pages of Sheet2, enter 5-6 here.</paragraph>
          </listitem>
       </list>
       <paragraph xml-lang="en-US" id="par_id3145076" role="paragraph" l10n="U" oldref="13">If under <emph>Format - Print ranges</emph> you have defined one or more print ranges, only the contents of these print ranges will be printed.</paragraph>
