@@ -158,8 +158,7 @@
                <paragraph xml-lang="en-US" id="par_id3150393" role="tablecontent" l10n="U" oldref="40">Formula overflow</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3159259" role="tablecontent" l10n="U" oldref="41">
-                  <emph>Compiler:</emph> the total number of internal tokens, (that is, operators, variables, brackets) in the formula exceeds 512.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3159259" role="tablecontent" l10n="U" oldref="41"><emph>Compiler:</emph> the total number of internal tokens, (that is, operators, variables, brackets) in the formula exceeds 512.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
@@ -170,8 +169,7 @@
                <paragraph xml-lang="en-US" id="par_id3147412" role="tablecontent" l10n="U" oldref="43">String overflow</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3145635" role="tablecontent" l10n="U" oldref="44">
-                  <emph>Compiler:</emph> an identifier in the formula exceeds 64 KB in size. <emph>Interpreter:</emph> a result of a string operation exceeds 64 KB in size.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3145635" role="tablecontent" l10n="U" oldref="44"><emph>Compiler:</emph> an identifier in the formula exceeds 64 KB in size. <emph>Interpreter:</emph> a result of a string operation exceeds 64 KB in size.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
@@ -281,15 +279,12 @@
                <paragraph xml-lang="en-US" id="par_id2129886" role="tablecontent" l10n="NEW">#REF</paragraph>
             </tablecell>
             <tablecell>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154634"><bookmark_value>invalid references; error messages</bookmark_value>
-               <bookmark_value>error messages;invalid references</bookmark_value>
-               <bookmark_value>#REF error message</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154634"><bookmark_value>invalid references; error messages</bookmark_value><bookmark_value>error messages;invalid references</bookmark_value><bookmark_value>#REF error message</bookmark_value>
 </bookmark><comment>mw inserted "error..." entry</comment>
 <paragraph xml-lang="en-US" id="par_id3154634" role="tablecontent" l10n="U" oldref="76">invalid references (instead of Err:524 cell contains #REF)</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3147539" role="tablecontent" l10n="U" oldref="77">
-                  <emph>Compiler:</emph> a column or row description name could not be resolved. <emph>Interpreter:</emph> in a formula, the column, row, or sheet that contains a referenced cell is missing.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147539" role="tablecontent" l10n="U" oldref="77"><emph>Compiler:</emph> a column or row description name could not be resolved. <emph>Interpreter:</emph> in a formula, the column, row, or sheet that contains a referenced cell is missing.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
@@ -298,8 +293,7 @@
                <paragraph xml-lang="en-US" id="par_id4737083" role="tablecontent" l10n="NEW">#NAME?</paragraph>
             </tablecell>
             <tablecell>
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148428"><bookmark_value>invalid names; error messages</bookmark_value>
-               <bookmark_value>#NAME error message</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148428"><bookmark_value>invalid names; error messages</bookmark_value><bookmark_value>#NAME error message</bookmark_value>
 </bookmark>
 <paragraph xml-lang="en-US" id="par_id3148428" role="tablecontent" l10n="U" oldref="79">invalid names (instead of Err:525 cell contains #NAME?)</paragraph>
             </tablecell>
@@ -326,8 +320,7 @@
                <paragraph xml-lang="en-US" id="par_id3152966" role="tablecontent" l10n="U" oldref="85">Internal overflow</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3149709" role="tablecontent" l10n="U" oldref="86">
-                  <emph>Interpreter: </emph>References, such as when a cell references a cell, are too encapsulated.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149709" role="tablecontent" l10n="U" oldref="86"><emph>Interpreter: </emph>References, such as when a cell references a cell, are too encapsulated.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
