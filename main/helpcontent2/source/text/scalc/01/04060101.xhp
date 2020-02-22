@@ -498,8 +498,7 @@
       <paragraph xml-lang="en-US" id="par_id3882869" role="paragraph" l10n="NEW">See also the Wiki page about <link href="https://wiki.openoffice.org/wiki/Documentation/How_Tos/Conditional_Counting_and_Summation">Conditional Counting and Summation</link>.</paragraph>
 <sort order="asc">
 <section id="Section1">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150882"><bookmark_value>DCOUNT function</bookmark_value>
-         <bookmark_value>counting rows;with numeric values</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150882"><bookmark_value>DCOUNT function</bookmark_value><bookmark_value>counting rows;with numeric values</bookmark_value>
 </bookmark><comment>mw added "counting rows;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBANZAHL" id="bm_id3152926" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150882" role="heading" level="2" l10n="U"
@@ -519,9 +518,7 @@
          <paragraph xml-lang="en-US" id="par_id3145652" role="paragraph" l10n="U" oldref="95">To learn how many children in second grade are over 7 years of age, delete the entry &gt;600 in cell D14 and enter <item type="input">2</item> in cell B14 under Grade, and enter <item type="input">&gt;7</item> in cell C14 to the right. The result is 2. Two children are in second grade and over 7 years of age. As both criteria are in the same row, they are connected by AND.</paragraph>
       </section>
       <section id="Section2">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3156123"><bookmark_value>DCOUNTA function</bookmark_value>
-         <bookmark_value>records;counting in Calc databases</bookmark_value>
-         <bookmark_value>counting rows;with numeric or alphanumeric values</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3156123"><bookmark_value>DCOUNTA function</bookmark_value><bookmark_value>records;counting in Calc databases</bookmark_value><bookmark_value>counting rows;with numeric or alphanumeric values</bookmark_value>
 </bookmark><comment>mw added "records;" and "counting rows;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBANZAHL2" id="bm_id3154055" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3156123" role="heading" level="2" l10n="U"
@@ -537,9 +534,7 @@
          <paragraph xml-lang="en-US" id="par_id3153982" role="paragraph" l10n="CHG" oldref="102">In the example above (scroll up, please), you can search for the number of children whose name starts with an E or a subsequent letter. Edit the formula in B16 to read <item type="input">=DCOUNTA(A1:E10;"Name";A13:E14)</item>. Delete the old search criteria and enter <item type="input">&gt;=E</item> under Name in field A14. The result is 5. If you now delete all number values for Greta in row 8, the result changes to 4. Row 8 is no longer included in the count because it does not contain any values. The name Greta is text, not a value. Note that the DatabaseField parameter must point to a column that can contain values.<comment>see i25407</comment></paragraph>
       </section>
       <section id="Section3">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3147256"><bookmark_value>DGET function</bookmark_value>
-         <bookmark_value>cell contents;searching in Calc databases</bookmark_value>
-         <bookmark_value>searching;cell contents in Calc databases</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3147256"><bookmark_value>DGET function</bookmark_value><bookmark_value>cell contents;searching in Calc databases</bookmark_value><bookmark_value>searching;cell contents in Calc databases</bookmark_value>
 </bookmark><comment>mw added "cell contents;" and "searching;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBAUSZUG" id="bm_id3149198" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3147256" role="heading" level="2" l10n="U"
@@ -564,9 +559,7 @@
          <paragraph xml-lang="en-US" id="par_id3148813" role="paragraph" l10n="U" oldref="114">Instead of the grade, the name is queried. The answer appears at once: Daniel is the only child aged 11.</paragraph>
       </section>
       <section id="Section4">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3149766"><bookmark_value>DMAX function</bookmark_value>
-         <bookmark_value>maximum values in Calc databases</bookmark_value>
-         <bookmark_value>searching;maximum values in columns</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3149766"><bookmark_value>DMAX function</bookmark_value><bookmark_value>maximum values in Calc databases</bookmark_value><bookmark_value>searching;maximum values in columns</bookmark_value>
 </bookmark><comment>mw added "maximum..." and "searching;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBMAX" id="bm_id3158401" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149766" role="heading" level="2" l10n="U"
@@ -586,9 +579,7 @@
          <paragraph xml-lang="en-US" id="par_id3150510" role="paragraph" l10n="U" oldref="122">Under Grade, enter <item type="input">1, 2, 3,</item> and so on, one after the other. After entering a grade number, the weight of the heaviest child in that grade appears.</paragraph>
       </section>
       <section id="Section5">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159141"><bookmark_value>DMIN function</bookmark_value>
-         <bookmark_value>minimum values in Calc databases</bookmark_value>
-         <bookmark_value>searching;minimum values in columns</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159141"><bookmark_value>DMIN function</bookmark_value><bookmark_value>minimum values in Calc databases</bookmark_value><bookmark_value>searching;minimum values in columns</bookmark_value>
 </bookmark><comment>mw added "minimum..." and "searching;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBMIN" id="bm_id3159152" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3159141" role="heading" level="2" l10n="U"
@@ -608,9 +599,7 @@
          <paragraph xml-lang="en-US" id="par_id3148917" role="paragraph" l10n="U" oldref="130">In row 14, under Grade, enter <item type="input">1, 2, 3,</item> and so on, one after the other. The shortest distance to school for each grade appears.</paragraph>
       </section>
       <section id="Section6">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154274"><bookmark_value>DAVERAGE function</bookmark_value>
-         <bookmark_value>averages; in Calc databases</bookmark_value>
-         <bookmark_value>calculating;averages in Calc databases</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154274"><bookmark_value>DAVERAGE function</bookmark_value><bookmark_value>averages; in Calc databases</bookmark_value><bookmark_value>calculating;averages in Calc databases</bookmark_value>
 </bookmark><comment>mw added "averages;..." and "calculating;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBMITTELWERT" id="bm_id3166435" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154274" role="heading" level="2" l10n="U"
@@ -630,8 +619,7 @@
          <paragraph xml-lang="en-US" id="par_id3155587" role="paragraph" l10n="U" oldref="138">In row 14, under Age, enter <item type="input">7, 8, 9,</item> and so on, one after the other. The average weight of all children of the same age appears.</paragraph>
       </section>
       <section id="Section7">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3159269"><bookmark_value>DPRODUCT function</bookmark_value>
-         <bookmark_value>multiplying;cell contents in Calc databases</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3159269"><bookmark_value>DPRODUCT function</bookmark_value><bookmark_value>multiplying;cell contents in Calc databases</bookmark_value>
 </bookmark><comment>mw added "multiplying..."</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBPRODUKT" id="bm_id3159281" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3159269" role="heading" level="2" l10n="U"
@@ -647,8 +635,7 @@
          <paragraph xml-lang="en-US" id="par_id3148986" role="paragraph" l10n="U" oldref="144">With the birthday party example above (scroll up, please), there is no meaningful application of this function.</paragraph>
       </section>
       <section id="Section8">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3148462"><bookmark_value>DSTDEV function</bookmark_value>
-         <bookmark_value>standard deviations in databases;based on a sample</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3148462"><bookmark_value>DSTDEV function</bookmark_value><bookmark_value>standard deviations in databases;based on a sample</bookmark_value>
 </bookmark><comment>mw added "standard deviations...;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBSTDABW" id="bm_id3145370" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148462" role="heading" level="2" l10n="U"
@@ -668,8 +655,7 @@
          <paragraph xml-lang="en-US" id="par_id3153536" role="paragraph" l10n="U" oldref="152">In row 14, under Age, enter <item type="input">7, 8, 9,</item> and so on, one after the other. The result shown is the standard deviation of the weight of all children of this age.</paragraph>
       </section>
       <section id="Section9">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3150429"><bookmark_value>DSTDEVP function</bookmark_value>
-         <bookmark_value>standard deviations in databases;based on populations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3150429"><bookmark_value>DSTDEVP function</bookmark_value><bookmark_value>standard deviations in databases;based on populations</bookmark_value>
 </bookmark><comment>mw added "standard deviations...;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBSTDABWN" id="bm_id3149523" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150429" role="heading" level="2" l10n="U"
@@ -689,9 +675,7 @@
          <paragraph xml-lang="en-US" id="par_id3143271" role="paragraph" l10n="U" oldref="160">In row 14, under Age, enter <item type="input">7, 8, 9,</item> and so on, one after the other. The result is the standard deviation of the weight for all same-aged children whose weight was checked.</paragraph>
       </section>
       <section id="Section10">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3154794"><bookmark_value>DSUM function</bookmark_value>
-         <bookmark_value>calculating;sums in Calc databases</bookmark_value>
-         <bookmark_value>sums;cells in Calc databases</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3154794"><bookmark_value>DSUM function</bookmark_value><bookmark_value>calculating;sums in Calc databases</bookmark_value><bookmark_value>sums;cells in Calc databases</bookmark_value>
 </bookmark><comment>mw added "calculating;" and "sums;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBSUMME" id="bm_id3148687" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154794" role="heading" level="2" l10n="U"
@@ -711,8 +695,7 @@
          <paragraph xml-lang="en-US" id="par_id3150596" role="paragraph" l10n="U" oldref="168">Enter <item type="input">2</item> in row 14 under Grade. The sum (1950) of the distances to school of all the children who are in second grade is displayed.</paragraph>
       </section>
       <section id="Section11">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3155614"><bookmark_value>DVAR function</bookmark_value>
-         <bookmark_value>variances;based on samples</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3155614"><bookmark_value>DVAR function</bookmark_value><bookmark_value>variances;based on samples</bookmark_value>
 </bookmark><comment>mw added "variances;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBVARIANZ" id="bm_id3159391" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155614" role="heading" level="2" l10n="U"
@@ -732,8 +715,7 @@
          <paragraph xml-lang="en-US" id="par_id3153798" role="paragraph" l10n="U" oldref="177">In row 14, under Age, enter <item type="input">7, 8, 9,</item> and so on, one after the other. You will see as a result the variance of the weight values for all children of this age.</paragraph>
       </section>
       <section id="Section12">
-<bookmark xml-lang="en-US" branch="index" id="bm_id3153880"><bookmark_value>DVARP function</bookmark_value>
-         <bookmark_value>variances;based on populations</bookmark_value>
+<bookmark xml-lang="en-US" branch="index" id="bm_id3153880"><bookmark_value>DVARP function</bookmark_value><bookmark_value>variances;based on populations</bookmark_value>
 </bookmark><comment>mw added "variances;"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_DBVARIANZEN" id="bm_id3153891" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3153880" role="heading" level="2" l10n="U"
