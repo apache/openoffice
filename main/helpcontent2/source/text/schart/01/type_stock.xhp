@@ -33,8 +33,8 @@
    </meta>
    <body>
 <bookmark xml-lang="en-US" branch="index" id="bm_id2959990"><bookmark_value>stock charts</bookmark_value>
-      <bookmark_value>chart types;stock</bookmark_value>
-      <bookmark_value>data sources;setting for stock charts</bookmark_value>
+<bookmark_value>chart types;stock</bookmark_value>
+<bookmark_value>data sources;setting for stock charts</bookmark_value>
 </bookmark><comment>mw added one entry</comment>
 <paragraph xml-lang="en-US" id="hd_id966216" role="heading" level="1" l10n="NEW"><variable id="type_stock"><link href="text/schart/01/type_stock.xhp">Chart Type Stock</link>
 </variable></paragraph>
@@ -212,8 +212,7 @@
       <paragraph xml-lang="en-US" id="hd_id18616" role="heading" level="2" l10n="NEW">Stock Chart Variants</paragraph>
       <paragraph xml-lang="en-US" id="par_id6138492" role="paragraph" l10n="NEW">Choose the <emph>Stock</emph> chart type on the first page of the <link href="text/schart/01/wiz_chart_type.xhp">Chart wizard</link>. Then select one of the four variants.</paragraph>
       <paragraph xml-lang="en-US" id="hd_id4569231" role="heading" level="2" l10n="NEW">Type 1</paragraph>
-      <paragraph xml-lang="en-US" id="par_id291451" role="paragraph" l10n="NEW">Based on<emph> low</emph>
-         <emph>and high </emph>column the Type 1 shows the distance between bottom price (low) and top price (high) by a vertical line.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id291451" role="paragraph" l10n="NEW">Based on<emph> low</emph> and <emph>high </emph>column the Type 1 shows the distance between bottom price (low) and top price (high) by a vertical line.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3341776" role="paragraph" l10n="NEW">Based on<emph> low, high,</emph> and <emph>close</emph> column Type 1 shows an additional horizontal mark <emph>for</emph> the closing price.</paragraph>
       <paragraph xml-lang="en-US" id="hd_id5947141" role="heading" level="2" l10n="NEW">Type 2</paragraph>
       <paragraph xml-lang="en-US" id="par_id1911679" role="paragraph" l10n="CHG">Based on <emph>open, low, high</emph>, and <emph>close</emph> column Type 2 generates the traditional "candle stick" chart. Type 2 draws the vertical line between the bottom and top price and adds a rectangle in front, which visualizes the range between the opening and closing price. If you click on the rectangle you see more information in the status bar. %PRODUCTNAME uses different fill colors for rising values (the opening price is lower than the closing price) and falling values.</paragraph>
@@ -242,8 +241,7 @@
       </list>
       <list type="ordered">
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id1589098" role="paragraph" l10n="NEW">In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag to select the data range. When you release the mouse, the data are entered. Click <emph>Select </emph>
-               <emph>data range</emph> again to add a data range. In the input field of the minimized dialog, click after the entry and type a semicolon. Then drag to select the next range.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id1589098" role="paragraph" l10n="NEW">In Calc, click <emph>Select data range</emph> to minimize the dialog, then drag to select the data range. When you release the mouse, the data are entered. Click <emph>Select data range</emph> again to add a data range. In the input field of the minimized dialog, click after the entry and type a semicolon. Then drag to select the next range.</paragraph>
          </listitem>
       </list>
       <paragraph xml-lang="en-US" id="par_id8746910" role="paragraph" l10n="NEW">Click one of the options for data series in rows or in columns. </paragraph>
