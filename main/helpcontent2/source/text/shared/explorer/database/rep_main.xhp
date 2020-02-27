@@ -90,7 +90,7 @@
             <paragraph xml-lang="en-US" id="par_id7730033" role="paragraph" l10n="NEW">Ensure that <emph>Use a Java runtime environment</emph> is enabled.</paragraph>
          </listitem>
       </list>
-      <paragraph xml-lang="en-US" id="par_id6317636" role="paragraph" l10n="NEW">If no JRE version is found on your system, open your web browser and download the JRE software from <link href="http://www.java.com">http://www.java.com</link>. Install the JRE software. Then restart %PRODUCTNAME and open <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - Java again.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id6317636" role="paragraph" l10n="NEW">If no JRE version is found on your system, open your web browser and download the JRE software from <link href="https://www.java.com">https://www.java.com</link>. Install the JRE software. Then restart %PRODUCTNAME and open <switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME - Java again.</paragraph>
       <paragraph xml-lang="en-US" id="hd_id9759514" role="heading" level="2" l10n="NEW">To open the Report Builder</paragraph>
       <list type="ordered">
          <listitem>
@@ -106,16 +106,13 @@
       <paragraph xml-lang="en-US" id="par_id2100589" role="paragraph" l10n="NEW">The left part of the Report Builder window shows the Report Builder view. The Report Builder view is initially divided into three sections, from top to bottom:</paragraph>
       <list type="ordered">
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id5022125" role="paragraph" l10n="NEW">
-               <emph>Page Header</emph> - drag control fields with fixed text into the Page Header area</paragraph>
+            <paragraph xml-lang="en-US" id="par_id5022125" role="paragraph" l10n="NEW"><emph>Page Header</emph> - drag control fields with fixed text into the Page Header area</paragraph>
          </listitem>
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id6844386" role="paragraph" l10n="NEW">
-               <emph>Detail</emph> - drag and drop database fields into the Detail area</paragraph>
+            <paragraph xml-lang="en-US" id="par_id6844386" role="paragraph" l10n="NEW"><emph>Detail</emph> - drag and drop database fields into the Detail area</paragraph>
          </listitem>
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id7018646" role="paragraph" l10n="NEW">
-               <emph>Page Footer</emph> - drag control fields with fixed text into the Page Footer area</paragraph>
+            <paragraph xml-lang="en-US" id="par_id7018646" role="paragraph" l10n="NEW"><emph>Page Footer</emph> - drag control fields with fixed text into the Page Footer area</paragraph>
          </listitem>
       </list>
       <paragraph xml-lang="en-US" id="par_id5857112" role="paragraph" l10n="NEW">To insert an additional <emph>Report Header</emph> and <emph>Report Footer</emph> area choose <item type="menuitem">Edit - Insert Report Header/Footer</item>. These areas contain text that appears at the start and end of the whole report.</paragraph><comment>id="par_id2685323" l10n="NEW"If you want a multi-column report, choose Format - Page, click the Columns tab, and set the number of columns. Now you can also specify a Column Header and Column Footer in the Report Builder view.</comment><comment>column header/footer</comment>
