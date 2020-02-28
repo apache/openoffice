@@ -106,7 +106,7 @@ namespace unocontrols{
 	#define	PROGRESSMONITOR_IMPLEMENTATIONNAME				"stardiv.UnoControls.ProgressMonitor"
 	#define PROGRESSMONITOR_FREEBORDER						10														// border around and between the controls
 	#define PROGRESSMONITOR_WIDTH_RELATION					4														// reserve 1/4 for button width and rest for progressbar width
-	#define PROGRESSMONITOR_HEIGHT_RELATION					5														// reserve 1/5 for button and progressbar heigth and rest for text height
+	#define PROGRESSMONITOR_HEIGHT_RELATION					5														// reserve 1/5 for button and progressbar height and rest for text height
 	#define PROGRESSMONITOR_FIXEDTEXT_SERVICENAME			"com.sun.star.awt.UnoControlFixedText"
 	#define PROGRESSMONITOR_BUTTON_SERVICENAME				"com.sun.star.awt.UnoControlButton"
 	#define	PROGRESSMONITOR_FIXEDTEXT_MODELNAME				"com.sun.star.awt.UnoControlFixedTextModel"

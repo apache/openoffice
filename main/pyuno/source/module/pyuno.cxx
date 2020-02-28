@@ -450,7 +450,7 @@ PyObject* PyUNO_getattr (PyObject* self, char* name)
 {
     PyUNO* me;
 
-#if PY_VERSION_HEX >= 0x03030000
+#if PY_VERSION_HEX >= 0x03030000 && PY_VERSION_HEX < 0x03060000
     char *name = PyUnicode_AsUTF8(attr_name);
 #elif PY_MAJOR_VERSION >= 3
     PyRef pUtf8(PyUnicode_AsUTF8String(attr_name), SAL_NO_ACQUIRE);
@@ -568,7 +568,7 @@ int PyUNO_setattr (PyObject* self, char* name, PyObject* value)
 {
     PyUNO* me;
 
-#if PY_VERSION_HEX >= 0x03030000
+#if PY_VERSION_HEX >= 0x03030000 && PY_VERSION_HEX < 0x03060000
     char *name = PyUnicode_AsUTF8(attr_name);
 #elif PY_MAJOR_VERSION >= 3
     PyRef pUtf8(PyUnicode_AsUTF8String(attr_name), SAL_NO_ACQUIRE);
@@ -818,7 +818,7 @@ static PyTypeObject PyUNOType =
     NULL,
     NULL,
     (destructor)0
-#if PY_VERSION_HEX >= 0x02060000
+#if PY_VERSION_HEX >= 0x02060000 && PY_VERSION_HEX < 0x03060000
     , 0
 #endif
 };
