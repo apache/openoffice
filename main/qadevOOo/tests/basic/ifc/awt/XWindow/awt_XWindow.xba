@@ -2,7 +2,6 @@
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="awt_XWindow" script:language="StarBasic">
 
-
 '*************************************************************************
 '
 '  Licensed to the Apache Software Foundation (ASF) under one
@@ -12,9 +11,9 @@
 '  to you under the Apache License, Version 2.0 (the
 '  "License"); you may not use this file except in compliance
 '  with the License.  You may obtain a copy of the License at
-'  
+'
 '    http://www.apache.org/licenses/LICENSE-2.0
-'  
+'
 '  Unless required by applicable law or agreed to in writing,
 '  software distributed under the License is distributed on an
 '  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -23,8 +22,6 @@
 '  under the License.
 '
 '*************************************************************************
-
-
 
 
 
@@ -60,7 +57,7 @@ Dim bCB4_focusLost As Boolean
 Sub RunTest()
 
 '*************************************************************************
-' INTERFACE: 
+' INTERFACE:
 ' com.sun.star.awt.XWindow
 '*************************************************************************
 On Error Goto ErrHndl
@@ -76,7 +73,7 @@ On Error Goto ErrHndl
     Dim oListener9 As Object, oListener10 As Object
     Dim oListener11 As Object, oListener12 As Object
     Dim size As Variant, pos As Variant
-    
+
     bCB1_windowResized = false
     bCB2_windowResized = false
     bCB1_windowMoved = false
@@ -95,7 +92,7 @@ On Error Goto ErrHndl
     Out.Log("create two com.sun.star.awt.XWindowListener")
     oListener1 = createUNOListener("CB1_", "com.sun.star.awt.XWindowListener")
     oListener2 = createUNOListener("CB2_", "com.sun.star.awt.XWindowListener")
-    Out.Log("create two  com.sun.star.awt.XFocusListener")
+    Out.Log("create two com.sun.star.awt.XFocusListener")
     oListener3 = createUNOListener("CB3_", "com.sun.star.awt.XFocusListener")
     oListener4 = createUNOListener("CB4_", "com.sun.star.awt.XFocusListener")
     Out.Log("create two com.sun.star.awt.XKeyListener")
@@ -119,7 +116,7 @@ On Error Goto ErrHndl
     Dim vRectangle As Variant
     vRectangle = oObj.getPosSize()
     Out.Log("Returned Values: X=" + vRectangle.X + " Y=" + vRectangle.Y _
-           + " WIDTH=" + vRectangle.WIDTH + " HEIGTH=" + vRectangle.HEIGHT
+           + " WIDTH=" + vRectangle.WIDTH + " HEIGHT=" + vRectangle.HEIGHT
     bOK = bOK AND vRectangle.X = 250
     bOK = bOK AND vRectangle.Y = 250
     bOK = bOK AND vRectangle.Width = 250
@@ -157,7 +154,7 @@ On Error Goto ErrHndl
         size.Width = size.Width + 100
         size.Height = size.Height + 100
         oCtrlShape.Size = size
-        
+
         pos = oCtrlShape.Position
         pos.X = pos.X + 100
         pos.Y = pos.Y + 100
@@ -195,7 +192,7 @@ On Error Goto ErrHndl
         size.Width = size.Width + 100
         size.Height = size.Height + 100
         oCtrlShape.Size = size
-        
+
         pos = oCtrlShape.Position
         pos.X = pos.X + 100
         pos.Y = pos.Y + 100
@@ -243,14 +240,14 @@ On Error Goto ErrHndl
     Test.MethodTested("removeFocusListener()", bOK)
 
 '***************************************************************************************
-'* LISTENERS which needs interactions                                                  *
+'* LISTENERS which need interactions
 '***************************************************************************************
 '*
 '* The following listener tests need interactions. That means i.e. a
 '* com.sun.star.awt.XKeyListener needs action from the keyboard. This is not possible in
 '* the automatic API-Testing. To test the listener you can set a breakpoint at the
 '* specific function call. Then do interaction which should call the listener. It must be
-'* pop up a message box.
+'* a pop up message box.
 '*
 '***************************************************************************************
 
@@ -390,7 +387,7 @@ Sub CB4_disposing
 End Sub
 
 ' Listener call backs for com.sun.star.awt.XKeyListener
-' They will never be called beause of no interaction in API-Testing
+' They will never be called because of no interaction in API-Testing
 Sub CB5_keyPressed
   MsgBox("CallBack for Listener5 'keyPressed' was called")
 End Sub
@@ -410,7 +407,7 @@ End Sub
 
 
 ' Listener call backs for com.sun.star.awt.XMouseListener
-' They will never be called beause of no interaction in API-Testing
+' They will never be called because of no interaction in API-Testing
 Sub CB7_mousePressed
   MsgBox("CallBack for Listener7 'mousePressed' was called")
 End Sub
@@ -442,7 +439,7 @@ End Sub
 
 
 ' Listener call backs for com.sun.star.awt.XMouseMotionListener
-' They will never be called beause of no interaction in API-Testing
+' They will never be called because of no interaction in API-Testing
 Sub CB9_mouseDragged
   MsgBox("CallBack for Listener9 'mouseDragged' was called")
 End Sub
@@ -462,7 +459,7 @@ End Sub
 
 
 ' Listener call backs for com.sun.star.awt.XMouseMotionListener
-' They will never be called beause of no interaction in API-Testing
+' They will never be called because of no interaction in API-Testing
 Sub CB11_windowPaint
   MsgBox("CallBack for Listener11 'windowPaint' was called")
 End Sub

@@ -187,7 +187,7 @@
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright 2012, 2013 Apache Software Foundation
+   Copyright 2011-2020 Apache Software Foundation
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
@@ -201,12 +201,12 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 
-APACHE OpenOffice SUBCOMPONENTS: 
+APACHE OpenOffice SUBCOMPONENTS:
 
 Apache OpenOffice includes a number of subcomponents with
 separate copyright notices and license terms. Your use of the source
 code for the these subcomponents is subject to the terms and
-conditions of the following licenses. 
+conditions of the following licenses.
 
 ____
 
@@ -229,13 +229,13 @@ ____
 
 For main/apple-remote/inc/*.h - Remote Control Wrapper:
 
-Created by Martin Kahr under a MIT-style license. 
+Created by Martin Kahr under a MIT-style license.
 Copyright (c) 2006/2007 martinkahr.com. All rights reserved.
 
 Code modified and adapted to OpenOffice.org
 by Eric Bachard on 11.08.2008 under the same license
 
-Permission is hereby granted, free of charge, to any person obtaining a 
+Permission is hereby granted, free of charge, to any person obtaining a
 copy of this software and associated documentation files (the "Software"),
 to deal in the Software without restriction, including without limitation
 the rights to use, copy, modify, merge, publish, distribute, sublicense,
@@ -247,7 +247,7 @@ in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
 THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
@@ -280,8 +280,8 @@ modifications, that you make:
     Any pre-existing intellectual property disclaimers, notices, or terms and
     conditions. If none exist, a short notice of the following form (hypertext
     is preferred, text is permitted) should be used within the body of any
-    redistributed or derivative code: "Copyright © [$date-of-software] World 
-    Wide Web Consortium, (Massachusetts Institute of Technology, Institut 
+    redistributed or derivative code: "Copyright © [$date-of-software] World
+    Wide Web Consortium, (Massachusetts Institute of Technology, Institut
     National de Recherche en Informatique et en Automatique, Keio University).
     All Rights Reserved. http://www.w3.org/Consortium/Legal/"
     Notice of any changes or modifications to the W3C files, including the date
@@ -314,7 +314,7 @@ http://java.sun.com/j2se/1.3/docs/api/java/util/Properties.html
 
 Missing:
 - Currently, u\XXXX sequences are escaped when saving, but not unescaped
-  when read..
+  when read...
 
 License: Python License
 http://www.opensource.org/licenses/PythonSoftFoundation.php
@@ -333,7 +333,7 @@ prepare derivative works, distribute, and otherwise use Python
 alone or in any derivative version, provided, however, that PSF's
 License Agreement and PSF's notice of copyright, i.e., "Copyright (c)
 2001, 2002, 2003, 2004, 2005, 2006 Python Software Foundation; All Rights
-Reserved" are retained in Python alone or in any derivative version 
+Reserved" are retained in Python alone or in any derivative version
 prepared by Licensee.
 
 3. In the event Licensee prepares a derivative work that is based on
@@ -554,7 +554,7 @@ or other dealings in this Software without prior written authorization
 of the copyright holder.
 
 --------------------------------------------------------------------------------
-All trademarks and registered trademarks mentioned herein are the property of 
+All trademarks and registered trademarks mentioned herein are the property of
 their respective owners.
 
 Further details:
@@ -640,29 +640,29 @@ ____
 
 For main/twain/inc/twain.h:
 
-Copyright (C) 2007 TWAIN Working Group: Adobe Systems Incorporated, 
-AnyDoc Software Inc., Eastman Kodak Company, Fujitsu Computer Products 
-of America, JFL Peripheral Solutions Inc., Ricoh Corporation, and 
+Copyright (C) 2007 TWAIN Working Group: Adobe Systems Incorporated,
+AnyDoc Software Inc., Eastman Kodak Company, Fujitsu Computer Products
+of America, JFL Peripheral Solutions Inc., Ricoh Corporation, and
 Xerox Corporation.  All rights reserved.
 
 Copyright (C) 1991, 1992 TWAIN Working Group: Aldus, Caere, Eastman-Kodak,
 Hewlett-Packard and Logitech Corporations.  All rights reserved.
 
-Copyright (C) 1997 TWAIN Working Group: Bell+Howell, Canon, DocuMagix, 
+Copyright (C) 1997 TWAIN Working Group: Bell+Howell, Canon, DocuMagix,
 Fujitsu, Genoa Technology, Hewlett-Packard, Kofax Imaging Products, and
 Ricoh Corporation.  All rights reserved.
 
-Copyright © 1998 TWAIN Working Group: Adobe Systems Incorporated, 
-Canon Information Systems, Eastman Kodak Company, 
-Fujitsu Computer Products of America, Genoa Technology, 
-Hewlett-Packard Company, Intel Corporation, Kofax Image Products, 
-JFL Peripheral Solutions Inc., Ricoh Corporation, and Xerox Corporation.  
+Copyright © 1998 TWAIN Working Group: Adobe Systems Incorporated,
+Canon Information Systems, Eastman Kodak Company,
+Fujitsu Computer Products of America, Genoa Technology,
+Hewlett-Packard Company, Intel Corporation, Kofax Image Products,
+JFL Peripheral Solutions Inc., Ricoh Corporation, and Xerox Corporation.
 All rights reserved.
 
-Copyright © 2000 TWAIN Working Group: Adobe Systems Incorporated, 
-Canon Information Systems, Digimarc Corporation, Eastman Kodak Company, 
-Fujitsu Computer Products of America, Hewlett-Packard Company, 
-JFL Peripheral Solutions Inc., Ricoh Corporation, and Xerox Corporation.  
+Copyright © 2000 TWAIN Working Group: Adobe Systems Incorporated,
+Canon Information Systems, Digimarc Corporation, Eastman Kodak Company,
+Fujitsu Computer Products of America, Hewlett-Packard Company,
+JFL Peripheral Solutions Inc., Ricoh Corporation, and Xerox Corporation.
 All rights reserved.
 
 The TWAIN licence:
@@ -744,9 +744,9 @@ software without specific prior written permission.
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG, 
-OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+ARE DISCLAIMED. IN NO EVENT SHALL HSQL DEVELOPMENT GROUP, HSQLDB.ORG,
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
 PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
 ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
@@ -784,7 +784,7 @@ in this Software without prior written authorization from the X Consortium.
 ____
 
 For main/ucb/source/ucp/odma/odma.h:
-- Open Document Management API license 1.0 
+- Open Document Management API license 1.0
   equal to BSD license
 
           OPEN DOCUMENT MANAGEMENT API LICENSE 1.0
@@ -797,18 +797,18 @@ For main/ucb/source/ucp/odma/odma.h:
 LICENSE:
 
 Redistribution and use in source and binary forms, with or
-without modifications, are permitted provided that the 
+without modifications, are permitted provided that the
 following conditions are met:
 
 * Redistributions of source code must retain the above
   copyright notice, this list of conditions and the
   following disclaimer.
-  
+
 * Redistributions in binary form must reproduce the
   above copyright notice, this list of conditions and
   the following disclaimer in the documentation and/or
   other materials provided with the distribution.
-  
+
 * Neither the name of AIIM International nor the names
   of its contributors may be used to endorse or promote
   products derived from this software without specific
@@ -820,7 +820,7 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
 CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
 INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR 
+DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
 CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
 SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING
 BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
@@ -837,7 +837,7 @@ All Right Reserved
 
 ____
 
-For main/x11_extensions/inc/Xrender.h, 
+For main/x11_extensions/inc/Xrender.h,
     main/x11_extensions/inc/render.h and
     main/x11_extensions/inc/renderproto.h:
 - license equal to MIT license
@@ -887,7 +887,7 @@ HP DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL
 IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL COMPAQ
 BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
 WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
-OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN 
+OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
 CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 Author:  Jim Gettys, HP Labs, HP.
@@ -931,13 +931,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ____
 
-For main/vcl/unx/generic/fontmanager/parseAFM.cxx and 
+For main/vcl/unx/generic/fontmanager/parseAFM.cxx and
     main/vcl/unx/generic/fontmanager/parseAFM.hxx
 
 (C) 1988, 1989, 1990 by Adobe Systems Incorporated. All rights reserved.
 
 This file may be freely copied and redistributed as long as:
-  1) This entire notice continues to be included in the file, 
+  1) This entire notice continues to be included in the file,
   2) If the file has been modified in any way, a notice of such
      modification is conspicuously indicated.
 
@@ -947,10 +947,10 @@ Adobe Systems Incorporated.
 ************************************************************************
 THE INFORMATION BELOW IS FURNISHED AS IS, IS SUBJECT TO CHANGE WITHOUT
 NOTICE, AND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ADOBE SYSTEMS
-INCORPORATED. ADOBE SYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR 
-LIABILITY FOR ANY ERRORS OR INACCURACIES, MAKES NO WARRANTY OF ANY 
-KIND (EXPRESS, IMPLIED OR STATUTORY) WITH RESPECT TO THIS INFORMATION, 
-AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF MERCHANTABILITY, 
+INCORPORATED. ADOBE SYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR
+LIABILITY FOR ANY ERRORS OR INACCURACIES, MAKES NO WARRANTY OF ANY
+KIND (EXPRESS, IMPLIED OR STATUTORY) WITH RESPECT TO THIS INFORMATION,
+AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.
 ************************************************************************
 
@@ -1004,7 +1004,7 @@ ____
 For integration of the library curl - built in main/curl/
 - license like MIT license
 
-Copyright (c) 1996 - 2016, Daniel Stenberg, <daniel@haxx.se>, and many
+Copyright (c) 1996 - 2019, Daniel Stenberg, <daniel@haxx.se>, and many
 contributors, see the THANKS file.
 
 All rights reserved.
@@ -1031,7 +1031,7 @@ For integration of XML Expat - built in main/expat/
 - MIT license
 
 Copyright (c) 1998-2000 Thai Open Source Software Center Ltd and Clark Cooper
-Copyright (c) 2001-2016 Expat maintainers
+Copyright (c) 2001-2017 Expat maintainers
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
@@ -1213,7 +1213,7 @@ ____
 For OpenSSL - built in main/openssl/:
 - BSD-style license with advertising clause
 
-The OpenSSL toolkit stays under a dual license, i.e. both the conditions of
+The OpenSSL toolkit stays under a double license, i.e. both the conditions of
 the OpenSSL License and the original SSLeay license apply to the toolkit.
 See below for the actual license texts. Actually both licenses are BSD-style
 Open Source licenses. In case of any license issues related to OpenSSL
@@ -1223,7 +1223,7 @@ OpenSSL License
 ---------------
 
 ===================================================================
-Copyright (c) 1998-2016 The OpenSSL Project.  All rights reserved.
+Copyright (c) 1998-2018 The OpenSSL Project.  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
@@ -1340,7 +1340,7 @@ For ICC - built in main/icc/:
 
 The ICC Software License, Version 0.1
 
-Copyright (c) 2003-2006 The International Color Consortium. All rights 
+Copyright (c) 2003-2006 The International Color Consortium. All rights
 reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -1348,7 +1348,7 @@ modification, are permitted provided that the following conditions
 are met:
 
 1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer. 
+   notice, this list of conditions and the following disclaimer.
 
 2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in
@@ -1356,7 +1356,7 @@ are met:
    distribution.
 
 3. The end-user documentation included with the redistribution,
-   if any, must include the following acknowledgment:  
+   if any, must include the following acknowledgment:
       "This product includes software developed by the
        The International Color Consortium (www.color.org)"
    Alternately, this acknowledgment may appear in the software itself,
@@ -1382,10 +1382,10 @@ SUCH DAMAGE.
 ====================================================================
 
 This software consists of voluntary contributions made by many
-individuals on behalf of the The International Color Consortium. 
+individuals on behalf of the The International Color Consortium.
 
 Membership in the ICC is encouraged when this software is used for
-commercial purposes. 
+commercial purposes.
 
 For more information on The International Color Consortium, please
 see <http://www.color.org/>.
@@ -1529,7 +1529,7 @@ Foundation, and Bitstream Inc., shall not be used in advertising or
 otherwise to promote the sale, use or other dealings in this Font Software
 without prior written authorization from the Gnome Foundation or Bitstream
 Inc., respectively. For further information, contact: fonts at gnome dot
-org. 
+org.
 
 Arev Fonts Copyright
 ------------------------------
@@ -1556,7 +1556,7 @@ Fonts, only if the fonts are renamed to names not containing either
 the words "Tavmjong Bah" or the word "Arev".
 
 This License becomes null and void to the extent applicable to Fonts
-or Font Software that has been modified and is distributed under the 
+or Font Software that has been modified and is distributed under the
 "Tavmjong Bah Arev" names.
 
 The Font Software may be sold as part of a larger software package but
@@ -1602,13 +1602,13 @@ are met:
    must be clearly marked as modified versions in the documentation
    and/or other materials provided with the distribution.
 
-THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS 
-``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
-LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
-FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL 
-KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
-INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
-BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS
+``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL
+KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
 HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
 LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
@@ -1628,15 +1628,15 @@ PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 otherwise using this software ("Python") in source or binary form and
 its associated documentation.
 
-2. Subject to the terms and conditions of this License Agreement, PSF
-hereby grants Licensee a nonexclusive, royalty-free, world-wide
-license to reproduce, analyze, test, perform and/or display publicly,
-prepare derivative works, distribute, and otherwise use Python
-alone or in any derivative version, provided, however, that PSF's
-License Agreement and PSF's notice of copyright, i.e., "Copyright (c)
-2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Python Software Foundation; 
-All Rights Reserved" are retained in Python alone or in any derivative 
-version prepared by Licensee.
+2. Subject to the terms and conditions of this License Agreement, PSF hereby
+grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,
+analyze, test, perform and/or display publicly, prepare derivative works,
+distribute, and otherwise use Python alone or in any derivative version,
+provided, however, that PSF's License Agreement and PSF's notice of copyright,
+i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,
+2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018 Python Software Foundation; All
+Rights Reserved" are retained in Python alone or in any derivative version
+prepared by Licensee.
 
 3. In the event Licensee prepares a derivative work that is based on
 or incorporates Python or any part thereof, and wants to make
@@ -1832,15 +1832,15 @@ are met:
    products derived from this software without specific prior written
    permission.
 
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR 
+THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
 IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
 ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE
 LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
 CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
-OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR 
+OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
 BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
@@ -1853,27 +1853,27 @@ The VIGRA License
 =================
 (identical to the MIT X11 License)
 
-Permission is hereby granted, free of charge, to any person    
-obtaining a copy of this software and associated documentation 
-files (the "Software"), to deal in the Software without        
-restriction, including without limitation the rights to use,   
-copy, modify, merge, publish, distribute, sublicense, and/or   
-sell copies of the Software, and to permit persons to whom the 
-Software is furnished to do so, subject to the following       
-conditions:                                                    
-                                                               
-The above copyright notice and this permission notice shall be 
-included in all copies or substantial portions of the          
-Software.                                                      
-                                                               
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND 
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the
+Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND
 EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
-OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND       
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT    
-HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,   
-WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING   
-FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR  
-OTHER DEALINGS IN THE SOFTWARE.                               
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
 
 ____
 
@@ -1961,5 +1961,3 @@ If you redistribute modified sources, we would appreciate that you include in
 the file ChangeLog history information documenting your changes.  Please read
 the FAQ for more information on the distribution of modified source versions.
 ____
-
-$HeadURL$

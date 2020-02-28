@@ -4010,8 +4010,11 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 
    python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
-   PYTHON_CFLAGS="-I$python_include"
-   PYTHON_LIBS="-lpython$python_version"
+   PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
+   if test "$PYTHON_PC" != "TRUE"; then
+       PYTHON_CFLAGS="-I$python_include"
+       PYTHON_LIBS="-lpython$python_version"
+   fi
 fi
 if test "$with_system_python" = "yes" ; then
    SYSTEM_PYTHON=YES
