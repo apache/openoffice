@@ -34,17 +34,17 @@
    <body>
       <section id="ansicht">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3155341"><bookmark_value>views; defaults</bookmark_value>
-         <bookmark_value>defaults; views</bookmark_value>
-         <bookmark_value>settings; views</bookmark_value>
-         <bookmark_value>scaling; font sizes in user interface</bookmark_value>
-         <bookmark_value>font sizes; scaling on screen</bookmark_value>
-         <bookmark_value>WYSIWYG in fonts lists</bookmark_value>
-         <bookmark_value>previews; fonts lists</bookmark_value>
-         <bookmark_value>font lists</bookmark_value>
-         <bookmark_value>font name box</bookmark_value>
-         <bookmark_value>mouse; positioning</bookmark_value>
-         <bookmark_value>clipboard; selection clipboard</bookmark_value>
-         <bookmark_value>selection clipboard</bookmark_value>
+<bookmark_value>defaults; views</bookmark_value>
+<bookmark_value>settings; views</bookmark_value>
+<bookmark_value>scaling; font sizes in user interface</bookmark_value>
+<bookmark_value>font sizes; scaling on screen</bookmark_value>
+<bookmark_value>WYSIWYG in fonts lists</bookmark_value>
+<bookmark_value>previews; fonts lists</bookmark_value>
+<bookmark_value>font lists</bookmark_value>
+<bookmark_value>font name box</bookmark_value>
+<bookmark_value>mouse; positioning</bookmark_value>
+<bookmark_value>clipboard; selection clipboard</bookmark_value>
+<bookmark_value>selection clipboard</bookmark_value>
 </bookmark><comment>mw corrected a typo in font lists</comment><comment>ufi: removed index entries for 3d view &amp; dithering &amp; optimized output, in cws aw059</comment>
 <bookmark xml-lang="en-US" branch="hid/CUI_HID_OFA_TP_VIEW" id="bm_id3156330" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3155341" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01010800.xhp" name="View">View</link></paragraph>
@@ -130,12 +130,10 @@
       <paragraph xml-lang="en-US" id="par_id3150521" role="paragraph" l10n="U" oldref="94"><ahelp hid="OFFMGR_LISTBOX_OFA_TP_VIEW_LB_MOUSEMIDDLE">Defines the function of the middle mouse button.</ahelp></paragraph>
       <list type="ordered">
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id3152889" role="listitem" l10n="U" oldref="97">
-               <emph>Automatic scrolling</emph> - dragging while pressing the middle mouse button shifts the view.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id3152889" role="listitem" l10n="U" oldref="97"><emph>Automatic scrolling</emph> - dragging while pressing the middle mouse button shifts the view.</paragraph>
          </listitem>
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id3155810" role="listitem" l10n="U" oldref="98">
-               <emph>Paste clipboard</emph> - pressing the middle mouse button inserts the contents of the "Selection clipboard" at the cursor position. </paragraph>
+            <paragraph xml-lang="en-US" id="par_id3155810" role="listitem" l10n="U" oldref="98"><emph>Paste clipboard</emph> - pressing the middle mouse button inserts the contents of the "Selection clipboard" at the cursor position.</paragraph>
          </listitem>
       </list>
       <paragraph xml-lang="en-US" id="par_id3148703" role="paragraph" l10n="U" oldref="99">The "Selection clipboard" is independent of the normal clipboard that you use by <emph>Edit - Copy/Cut /Insert</emph> or the respective keyboard shortcuts. Clipboard and "Selection clipboard" can contain different contents at the same time.</paragraph>
@@ -144,21 +142,15 @@
             <tablecell>
 </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3148870" role="tablehead" l10n="U" oldref="100">
-                  <emph>Clipboard</emph>
-               </paragraph>
+               <paragraph xml-lang="en-US" id="par_id3148870" role="tablehead" l10n="U" oldref="100"><emph>Clipboard</emph></paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3145076" role="tablehead" l10n="U" oldref="101">
-                  <emph>Selection clipboard</emph>
-               </paragraph>
+               <paragraph xml-lang="en-US" id="par_id3145076" role="tablehead" l10n="U" oldref="101"><emph>Selection clipboard</emph></paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3156030" role="tablecontent" l10n="U" oldref="102">
-                  <emph>Copy content</emph>
-               </paragraph>
+               <paragraph xml-lang="en-US" id="par_id3156030" role="tablecontent" l10n="U" oldref="102"><emph>Copy content</emph></paragraph>
             </tablecell>
             <tablecell>
                <paragraph xml-lang="en-US" id="par_id3150110" role="tablecontent" l10n="U" oldref="103">Edit - Copy Ctrl+C.</paragraph>
@@ -169,9 +161,7 @@
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3149331" role="tablecontent" l10n="U" oldref="105">
-                  <emph>Paste content</emph>
-               </paragraph>
+               <paragraph xml-lang="en-US" id="par_id3149331" role="tablecontent" l10n="U" oldref="105"><emph>Paste content</emph></paragraph>
             </tablecell>
             <tablecell>
                <paragraph xml-lang="en-US" id="par_id3156337" role="tablecontent" l10n="U" oldref="106">Edit - Paste Ctrl+V pastes at the cursor position.</paragraph>
@@ -182,9 +172,7 @@
          </tablerow>
          <tablerow>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3159206" role="tablecontent" l10n="U" oldref="108">
-                  <emph>Pasting into another document</emph>
-               </paragraph>
+               <paragraph xml-lang="en-US" id="par_id3159206" role="tablecontent" l10n="U" oldref="108"><emph>Pasting into another document</emph></paragraph>
             </tablecell>
             <tablecell>
                <paragraph xml-lang="en-US" id="par_id3148974" role="tablecontent" l10n="U" oldref="109">No effect on the clipboard contents.</paragraph>
