@@ -945,11 +945,11 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 		if( HasColTags() )
 		{
 			// Zum Anpassen der relativen Breiten werden im 1. Schritt die
-			// Minmalbreiten aller anzupassenden Zellen jeweils mit der
+			// Minimalbreiten aller anzupassenden Zellen jeweils mit der
 			// relativen Breite einer Spalte multipliziert. Dadurch stimmen
 			// dann die Breitenverhaeltnisse der Spalten untereinander.
 			// Ausserdem wird der Faktor berechnet, um den die Zelle dadurch
-			// breiter gworden ist als die Minmalbreite.
+			// breiter gworden ist als die Minimalbreite.
 			// Im 2. Schritt werden dann die berechneten Breiten durch diesen
 			// Faktor geteilt. Dadurch bleibt die Breite (nimd.) einer Zelle
 			// erhalten und dient als Ausgangsbasis fuer die andern Breiten.
