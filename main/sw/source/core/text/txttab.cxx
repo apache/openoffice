@@ -417,7 +417,7 @@ sal_Bool SwTabPortion::PreFormat( SwTxtFormatInfo &rInf )
     PrtWidth( nMinimumTabWidth );
 
     // Break tab stop to next line if:
-    // 1. Minmal width does not fit to line anymore.
+    // 1. Minimal width does not fit to line anymore.
     // 2. An underflow event was called for the tab portion.
 	sal_Bool bFull = ( bTabCompat && rInf.IsUnderFlow() ) ||
                        rInf.Width() <= rInf.X() + PrtWidth();
