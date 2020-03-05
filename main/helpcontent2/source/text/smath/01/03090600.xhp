@@ -32,41 +32,40 @@
    <body>
       <section id="attribute">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154011"><bookmark_value>attributes; in %PRODUCTNAME Math</bookmark_value>
-         <bookmark_value>formulas; attributes in</bookmark_value>
-         <bookmark_value>accents; in %PRODUCTNAME Math</bookmark_value>
-         <bookmark_value>attributes; accents</bookmark_value>
-         <bookmark_value>vector arrows as attributes</bookmark_value>
-         <bookmark_value>tilde as attribute</bookmark_value>
-         <bookmark_value>circumflex attribute</bookmark_value>
-         <bookmark_value>bold attribute</bookmark_value>
-         <bookmark_value>italic attribute in %PRODUCTNAME Math</bookmark_value>
-         <bookmark_value>resizing;fonts</bookmark_value>
-         <bookmark_value>scaling;fonts</bookmark_value>
-         <bookmark_value>attributes; changing fonts</bookmark_value>
-         <bookmark_value>changing; fonts</bookmark_value>
-         <bookmark_value>attributes; colored characters</bookmark_value>
-         <bookmark_value>colored characters</bookmark_value>
-         <bookmark_value>attributes; changing defaults</bookmark_value>
-         <bookmark_value>circle attribute</bookmark_value>
-         <bookmark_value>double dot attribute</bookmark_value>
-         <bookmark_value>dot attribute</bookmark_value>
-         <bookmark_value>line through attribute</bookmark_value>
-         <bookmark_value>line above attribute</bookmark_value>
-         <bookmark_value>reversed circumflex attribute</bookmark_value>
-         <bookmark_value>overline attribute</bookmark_value>
-         <bookmark_value>wide vector arrow attribute</bookmark_value>
-         <bookmark_value>wide tilde attribute</bookmark_value>
-         <bookmark_value>wide circumflex attribute</bookmark_value>
-         <bookmark_value>underline attribute</bookmark_value>
-         <bookmark_value>triple dot attribute</bookmark_value>
-         <bookmark_value>transparent character as attribute</bookmark_value>
+<bookmark_value>formulas; attributes in</bookmark_value>
+<bookmark_value>accents; in %PRODUCTNAME Math</bookmark_value>
+<bookmark_value>attributes; accents</bookmark_value>
+<bookmark_value>vector arrows as attributes</bookmark_value>
+<bookmark_value>tilde as attribute</bookmark_value>
+<bookmark_value>circumflex attribute</bookmark_value>
+<bookmark_value>bold attribute</bookmark_value>
+<bookmark_value>italic attribute in %PRODUCTNAME Math</bookmark_value>
+<bookmark_value>resizing;fonts</bookmark_value>
+<bookmark_value>scaling;fonts</bookmark_value>
+<bookmark_value>attributes; changing fonts</bookmark_value>
+<bookmark_value>changing; fonts</bookmark_value>
+<bookmark_value>attributes; colored characters</bookmark_value>
+<bookmark_value>colored characters</bookmark_value>
+<bookmark_value>attributes; changing defaults</bookmark_value>
+<bookmark_value>circle attribute</bookmark_value>
+<bookmark_value>double dot attribute</bookmark_value>
+<bookmark_value>dot attribute</bookmark_value>
+<bookmark_value>line through attribute</bookmark_value>
+<bookmark_value>line above attribute</bookmark_value>
+<bookmark_value>reversed circumflex attribute</bookmark_value>
+<bookmark_value>overline attribute</bookmark_value>
+<bookmark_value>wide vector arrow attribute</bookmark_value>
+<bookmark_value>wide tilde attribute</bookmark_value>
+<bookmark_value>wide circumflex attribute</bookmark_value>
+<bookmark_value>underline attribute</bookmark_value>
+<bookmark_value>triple dot attribute</bookmark_value>
+<bookmark_value>transparent character as attribute</bookmark_value>
 </bookmark><comment>mw added "scaling;fonts"</comment>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ATTRIBUTES_TBX" id="bm_id3153142" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/STARMATH_HID_SMA_ATTRIBUTES_CAT" id="bm_id3147434" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154011" role="heading" level="1" l10n="U" oldref="1"><variable id="attributes"><link href="text/smath/01/03090600.xhp" name="Attributes">Attributes</link>
 </variable></paragraph>
-         <paragraph xml-lang="en-US" id="par_id3145802" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_SMA_ATTRIBUTES_CAT">You can choose from various attributes for <emph>%PRODUCTNAME</emph>
-            <emph>Math</emph> formulas. Some attributes are displayed in the lower part of the Elements window.</ahelp> These attributes are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All attributes not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3145802" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_SMA_ATTRIBUTES_CAT">You can choose from various attributes for <emph>%PRODUCTNAME</emph> <emph>Math</emph> formulas. Some attributes are displayed in the lower part of the Elements window.</ahelp> These attributes are also listed in the <link href="text/shared/00/00000001.xhp#kontextmenue" name="context menu">context menu</link> of the <emph>Commands</emph> window. All attributes not contained in the Elements window or in the context menu must be typed manually in the <emph>Commands</emph> window.</paragraph>
       </section>
       <section id="howtoget">
          <embed href="text/smath/00/00000004.xhp#astatb"/>
@@ -294,8 +293,7 @@
 </tablecell>
             <tablecell>
                <paragraph xml-lang="en-US" id="par_id3147621" role="tablehead" l10n="U" oldref="32">Line over</paragraph>
-               <paragraph xml-lang="en-US" id="par_id3147492" role="paragraph" l10n="U" oldref="33"><ahelp hid="HID_SMA_OVERLINEX">Inserts a line over a placeholder.</ahelp> You can also type <emph>overline &lt;?</emph>
-                  <emph>&gt;</emph> in the <emph>Commands</emph> window. The line adjusts itself to correct length.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3147492" role="paragraph" l10n="U" oldref="33"><ahelp hid="HID_SMA_OVERLINEX">Inserts a line over a placeholder.</ahelp> You can also type <emph>overline &lt;?&gt;</emph> in the <emph>Commands</emph> window. The line adjusts itself to correct length.</paragraph>
             </tablecell>
          </tablerow>
       </table>
@@ -426,8 +424,7 @@
       <paragraph xml-lang="en-US" id="par_id3150612" role="note" l10n="U" oldref="46">The <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link> "acute", "bar", "breve", "check", "circle", "dot", "ddot", "dddot", "grave", "hat", "tilde" and "vec" have fixed sizes. Their width or length cannot be adjusted when positioned over a long symbol.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3155621" role="paragraph" l10n="U" oldref="52">For size changes you can use <emph>size n</emph>,<emph> +n</emph>,<emph> -n</emph>,<emph> *n</emph> and<emph> /n </emph>, where <emph>n</emph> is a placeholder. This method is useful when the base size of the formula is subject to change. The commands <emph>size +n</emph> and <emph>size -n</emph> change point size, and <emph>size *n</emph> and <emph>size /n</emph> change the size by a percentage. For example, the command <emph>size *1.17</emph> increases the size of a character by exactly 17%.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3148695" role="warning" l10n="U" oldref="49">Note that some entries require spaces for the correct structure. This is especially true when you specify attributes with fixed values instead of placeholders.</paragraph>
-      <paragraph xml-lang="en-US" id="par_id3145230" role="paragraph" l10n="U" oldref="50">For more information about formatting in <emph>%PRODUCTNAME</emph>
-         <emph>Math</emph>, see <link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link>.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3145230" role="paragraph" l10n="U" oldref="50">For more information about formatting in <emph>%PRODUCTNAME</emph> <emph>Math</emph>, see <link href="text/smath/01/03091100.xhp" name="Brackets and Grouping">Brackets and Grouping</link>.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3154221" role="paragraph" l10n="U" oldref="31">Information on <link href="text/smath/01/03091300.xhp" name="attributes">attributes</link>, <link href="text/smath/01/03091200.xhp" name="indexes and exponents">indexes and exponents</link>, and <link href="text/smath/01/03091400.xhp" name="scaling">scaling</link> can help you structure your documents more efficiently.</paragraph>
    </body>
 </helpdocument>
