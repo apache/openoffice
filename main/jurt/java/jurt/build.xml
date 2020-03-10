@@ -41,6 +41,10 @@
         </filelist>
 
     </target>
+    
+    <target name="copy-lib"></target>
+    <target name="build-javadoc"></target>
+    <target name="jar-javadoc"></target>
 
 </project>
 
