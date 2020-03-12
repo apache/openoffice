@@ -58,6 +58,8 @@
     <property name="main.deprecation" value="false"/>
     <property name="test.debug" value="true"/>
     <property name="test.deprecation" value="false"/>
+    
+    <property name="javadoc.build.dir" location="${build.base.dir}/javadoc"/>
 
     <import file="${aoo-ant.basedir}/externals.xml"/>
     <import file="${aoo-ant.basedir}/idl.xml"/>
