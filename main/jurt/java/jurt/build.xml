@@ -46,7 +46,7 @@
     
     <target name="build-javadoc">
         <mkdir dir="${javadoc.build.dir}"/>
-        <javadoc sourcepath="com"
+        <javadoc sourcepath="src/main/java/com"
                  defaultexcludes="yes"
                  destdir="${javadoc.build.dir}"
                  author="true"
