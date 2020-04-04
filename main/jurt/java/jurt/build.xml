@@ -25,12 +25,17 @@
 
     <property file="../../../ant.properties"/>
     <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
-
+    
     <target name="init-project">
 
         <property name="jar.classpath" value="ridl.jar unoloader.jar ../../lib/ ../bin/"/>
         <property name="jar.manifest" value="${SRC_ROOT}/jurt/util/manifest"/>
-
+        
+        <property name="artifact.jar.enabled" value="true"/>
+        <property name="javadoc.jar.enabled" value="true"/>
+        <property name="javadoc.title" value="&lt;h1&gt;Java UNO Runtime API&lt;/h1&gt;"/>
+        <property name="source.jar.enabled" value="true"/>
+        
         <path id="main.classpath">
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
             <pathelement location="${OUTDIR}/bin/unoloader.jar"/>
@@ -42,25 +47,5 @@
 
     </target>
     
-    <target name="copy-lib"></target>
-    
-    <target name="build-javadoc">
-        <mkdir dir="${javadoc.build.dir}"/>
-        <javadoc sourcepath="src/main/java/com"
-                 defaultexcludes="yes"
-                 destdir="${javadoc.build.dir}"
-                 author="true"
-                 version="true"
-                 use="true"
-                 windowtitle="Java UNO Runtime API">
-            <doctitle><![CDATA[<h1>Java UNO Runtime API</h1>]]></doctitle>
-            <bottom><![CDATA[<i>Copyright &#169; 2020 Apache Software Foundation. All Rights Reserved.</i>]]></bottom>
-        </javadoc>
-    </target>
-    
-    <target name="jar-javadoc">
-        
-    </target>
-
 </project>
 
