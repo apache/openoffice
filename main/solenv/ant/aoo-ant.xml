@@ -82,7 +82,8 @@
         <property name="javadoc.jar.enabled" value="false"/>
         <property name="javadoc.jar.name" value="${ant.project.name}-${aoo.ver}-javadoc"/>
         <property name="javadoc.copyright" value="&lt;i&gt;Copyright &#169; ${this.year} Apache Software Foundation. All Rights Reserved.&lt;/i&gt;"/>
-        <property name="javadoc.title" value="&lt;h1&gt;Java UNO Runtime API&lt;/h1&gt;"/>
+        <property name="javadoc.title" value="&lt;h1&gt;REPLACE ME IN MODULE BUILD FILE&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="REPLACE ME IN MODULE BUILD FILE"/>
         <property name="source.jar.enabled" value="false"/>
         <property name="source.jar.name" value="${ant.project.name}-${aoo.ver}-source"/>
 
@@ -271,7 +272,7 @@
                  author="true"
                  version="true"
                  use="true"
-                 windowtitle="Java UNO Runtime API">
+                 windowtitle="${javadoc.window.title}">
             <doctitle>${javadoc.title}</doctitle>
             <bottom>${javadoc.copyright}</bottom>
         </javadoc>

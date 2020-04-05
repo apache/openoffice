@@ -30,10 +30,12 @@
 
         <property name="jar.classpath" value="ridl.jar unoloader.jar ../../lib/ ../bin/"/>
         <property name="jar.manifest" value="${SRC_ROOT}/jurt/util/manifest"/>
-        
+
+        <!-- for creating maven bundles for distribution -->
         <property name="artifact.jar.enabled" value="true"/>
         <property name="javadoc.jar.enabled" value="true"/>
         <property name="javadoc.title" value="&lt;h1&gt;Java UNO Runtime API&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="Java UNO Runtime API"/>
         <property name="source.jar.enabled" value="true"/>
         
         <path id="main.classpath">
