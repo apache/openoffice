@@ -32,6 +32,7 @@
         <!-- for creating maven bundles for distribution -->
         <property name="artifact.jar.enabled" value="true"/>
         <property name="javadoc.jar.enabled" value="true"/>
+        <!-- ignored due to only one package so overview is not included-->
         <property name="javadoc.title" value="&lt;h1&gt;UNO Loader&lt;/h1&gt;"/>
         <property name="javadoc.window.title" value="UNO Loader"/>
         <property name="source.jar.enabled" value="true"/>
