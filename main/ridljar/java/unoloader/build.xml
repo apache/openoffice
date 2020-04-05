@@ -28,6 +28,14 @@
 
     <target name="init-project">
         <property name="jar.manifest" location="${main.src.dir}/com/sun/star/lib/unoloader/manifest"/>
+
+        <!-- for creating maven bundles for distribution -->
+        <property name="artifact.jar.enabled" value="true"/>
+        <property name="javadoc.jar.enabled" value="true"/>
+        <property name="javadoc.title" value="&lt;h1&gt;UNO Loader&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="UNO Loader"/>
+        <property name="source.jar.enabled" value="true"/>
+
     </target>
 
 </project>
