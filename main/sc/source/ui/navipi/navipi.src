@@ -186,7 +186,7 @@ Window RID_SCDLG_NAVIGATOR
 			{
 				Identifier = IID_CHANGEROOT ;
 				HelpId = HID_SC_NAVIPI_ROOT ;
-				Text [ en-US ] = "Toggle" ;
+				Text [ en-US ] = "Content View" ;
 			};
 			ToolBoxItem
 			{
@@ -301,7 +301,7 @@ String SCSTR_CONTENT_RANGENAME
 };
 String SCSTR_CONTENT_DBAREA
 {
-	Text [ en-US ] = "Database Ranges" ;
+	Text [ en-US ] = "Database ranges" ;
 };
 String SCSTR_CONTENT_GRAPHIC
 {
@@ -321,7 +321,7 @@ String SCSTR_CONTENT_AREALINK
 };
 String SCSTR_CONTENT_DRAWING
 {
-	Text [ en-US ] = "Drawing objects";
+	Text [ en-US ] = "Drawing objects" ;
 };
  // PopupMenu -------------------------------------------------------------
 Menu RID_POPUP_DROPMODE

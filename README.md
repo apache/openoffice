@@ -38,7 +38,7 @@ cd aoo/main
 autoconf
 ./configure <configure_switches>
 ./bootstrap
-source *.set.sh
+source *.Set.sh
 cd instsetoo_native
 build --all
 ```
