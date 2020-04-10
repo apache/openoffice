@@ -263,7 +263,6 @@
     </target>
     
     <target name="build-javadoc" depends="init-project" if="${javadoc.jar.enabled}">
-        <echo if:true="${javadoc.jar.enabled}">running build-javadoc</echo>
         <mkdir dir="${javadoc.build.dir}"/>
         <javadoc packagenames="com.*"
                  sourcepath="${main.src.dir}"
