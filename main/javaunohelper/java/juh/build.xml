@@ -49,6 +49,8 @@
 
 
     </target>
+
+    <target name="main" depends="jar-javadoc,copy-artifact-jar,jar-source"/>
     
 </project>
 
