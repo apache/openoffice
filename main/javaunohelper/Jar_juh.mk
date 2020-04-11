@@ -41,30 +41,30 @@ $(eval $(call gb_Jar_set_jarclasspath,juh,\
 ))
 
 $(eval $(call gb_Jar_add_sourcefiles,juh,\
-	javaunohelper/com/sun/star/lib/uno/helper/UnoUrl \
-	javaunohelper/com/sun/star/lib/uno/helper/Factory \
-	javaunohelper/com/sun/star/lib/uno/helper/ComponentBase \
-	javaunohelper/com/sun/star/lib/uno/helper/WeakAdapter \
-	javaunohelper/com/sun/star/lib/uno/helper/MultiTypeInterfaceContainer \
-	javaunohelper/com/sun/star/lib/uno/helper/WeakBase \
-	javaunohelper/com/sun/star/lib/uno/helper/PropertySetMixin \
-	javaunohelper/com/sun/star/lib/uno/helper/PropertySet \
-	javaunohelper/com/sun/star/lib/uno/helper/InterfaceContainer \
-	javaunohelper/com/sun/star/lib/uno/adapter/ByteArrayToXInputStreamAdapter \
-	javaunohelper/com/sun/star/lib/uno/adapter/XOutputStreamToByteArrayAdapter \
-	javaunohelper/com/sun/star/lib/uno/adapter/XOutputStreamToOutputStreamAdapter \
-	javaunohelper/com/sun/star/lib/uno/adapter/InputStreamToXInputStreamAdapter \
-	javaunohelper/com/sun/star/lib/uno/adapter/XInputStreamToInputStreamAdapter \
-	javaunohelper/com/sun/star/lib/uno/adapter/OutputStreamToXOutputStreamAdapter \
-	javaunohelper/com/sun/star/comp/JavaUNOHelperServices \
-	javaunohelper/com/sun/star/comp/juhtest/SmoketestCommandEnvironment \
-	javaunohelper/com/sun/star/comp/helper/RegistryServiceFactory \
-	javaunohelper/com/sun/star/comp/helper/UnoInfo \
-	javaunohelper/com/sun/star/comp/helper/ComponentContext \
-	javaunohelper/com/sun/star/comp/helper/BootstrapException \
-	javaunohelper/com/sun/star/comp/helper/SharedLibraryLoader \
-	javaunohelper/com/sun/star/comp/helper/Bootstrap \
-	javaunohelper/com/sun/star/comp/helper/ComponentContextEntry \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/UnoUrl \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/Factory \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/ComponentBase \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/WeakAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/MultiTypeInterfaceContainer \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/WeakBase \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/PropertySetMixin \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/PropertySet \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/helper/InterfaceContainer \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/ByteArrayToXInputStreamAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/XOutputStreamToByteArrayAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/XOutputStreamToOutputStreamAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/InputStreamToXInputStreamAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/XInputStreamToInputStreamAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/lib/uno/adapter/OutputStreamToXOutputStreamAdapter \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/JavaUNOHelperServices \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/juhtest/SmoketestCommandEnvironment \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/RegistryServiceFactory \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/UnoInfo \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/ComponentContext \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/BootstrapException \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/SharedLibraryLoader \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/Bootstrap \
+	javaunohelper/java/juh/src/main/java/com/sun/star/comp/helper/ComponentContextEntry \
 ))
 
 $(eval $(call gb_Jar_set_componentfile,juh,javaunohelper/util/juh,URE))
