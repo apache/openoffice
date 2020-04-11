@@ -21,7 +21,7 @@
 
 
 
-$(eval $(call gb_Ant_Ant,jurt,$(SRCDIR)/jurt/java/jurt/build.xml))
+$(eval $(call gb_Ant_Ant,juh,$(SRCDIR)/juh/java/juh/build.xml))
 
 # vim: set noet sw=4 ts=4:
 
