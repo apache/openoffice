@@ -21,31 +21,32 @@
 ***********************************************************-->
 
 
-<project name="jurt" default="main">
+<project name="juh" default="main">
 
     <property file="../../../ant.properties"/>
     <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
     
     <target name="init-project">
 
-        <property name="jar.classpath" value="ridl.jar unoloader.jar ../../lib/ ../bin/"/>
-        <property name="jar.manifest" value="${SRC_ROOT}/jurt/util/manifest"/>
+        <!-- TEMP - REMOVE COMPLETELY AFTER THIS MAKES AN EQUIVALENT JAR AS GBUILD -->
+        <property name="jar.enabled" value="false"/>
+
+        <property name="jar.classpath" value="ridl.jar jurt.jar ../../lib/ ../bin/"/>
+        <property name="jar.manifest" value="${SRC_ROOT}/juh/util/manifest"/>
 
         <!-- for creating maven bundles for distribution -->
         <property name="artifact.jar.enabled" value="true"/>
         <property name="javadoc.jar.enabled" value="true"/>
-        <property name="javadoc.title" value="&lt;h1&gt;Java UNO Runtime API&lt;/h1&gt;"/>
-        <property name="javadoc.window.title" value="Java UNO Runtime API"/>
+        <property name="javadoc.title" value="&lt;h1&gt;Java UNO Helper&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="Java UNO Helper"/>
         <property name="source.jar.enabled" value="true"/>
         
         <path id="main.classpath">
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
-            <pathelement location="${OUTDIR}/bin/unoloader.jar"/>
+            <pathelement location="${OUTDIR}/bin/jurt.jar"/>
+            <pathelement location="${OUTDIR}/bin/unoil.jar"/>
         </path>
 
-        <filelist id="idl.files">
-            <file name="${test.src.dir}/com/sun/star/lib/uno/protocols/urp/interfaces.idl"/>
-        </filelist>
 
     </target>
     

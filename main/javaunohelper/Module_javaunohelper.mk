@@ -28,6 +28,7 @@ $(eval $(call gb_Module_add_targets,javaunohelper,\
 	Library_juh \
 	Library_juhx \
 	Zip_juh_src \
+	Ant_juh \
 ))
 
 # vim: set noet sw=4 ts=4:
