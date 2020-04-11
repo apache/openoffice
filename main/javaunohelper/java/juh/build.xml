@@ -49,6 +49,11 @@
 
 
     </target>
+    
+    <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
+    <target name="copy-artifact-jar" depends="jar" if="${artifact.jar.enabled}">
+        <copy verbose="true" file="${WORKDIR}/Jar/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
+    </target>
 
     <target name="main" depends="jar-javadoc,copy-artifact-jar,jar-source"/>
     
