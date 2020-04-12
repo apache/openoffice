@@ -51,10 +51,13 @@
     </target>
     
     <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
-    <target name="copy-artifact-jar" depends="jar" if="${artifact.jar.enabled}">
+    <!-- custom target has an altered file path to use gbuild jar -->
+    <target name="copy-artifact-jar" depends="prepare" if="${artifact.jar.enabled}">
         <copy verbose="true" file="${WORKDIR}/Jar/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
     </target>
 
+    <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
+    <!-- custom main has test ant jar removed from depends -->
     <target name="main" depends="jar-javadoc,copy-artifact-jar,jar-source"/>
     
 </project>
