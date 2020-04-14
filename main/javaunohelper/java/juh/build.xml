@@ -53,6 +53,9 @@
     <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
     <!-- custom target has an altered file path to use gbuild jar -->
     <target name="copy-artifact-jar" depends="prepare" if="${artifact.jar.enabled}">
+        <waitfor maxwait="30" maxwaitunit="minute" checkevery="30" checkeveryunit="second">
+            <available file="${WORKDIR}/Jar/${jar.name}.jar"/>
+        </waitfor>
         <copy verbose="true" file="${WORKDIR}/Jar/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
     </target>
 
