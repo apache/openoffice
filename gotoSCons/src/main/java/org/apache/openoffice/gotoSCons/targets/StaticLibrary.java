@@ -18,22 +18,20 @@
  * under the License.
  * 
  *************************************************************/
-
-package org.apache.opeonoffice.gotoSCons.targets;
+package org.apache.openoffice.gotoSCons.targets;
 
 import java.io.File;
 import java.util.Arrays;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
-public class Executable extends BaseBinary {
-    private boolean isTargetTypeSet;
-    private boolean isTargetTypeGUI;
+public class StaticLibrary extends BaseBinary {
+    private File filename;
 
-    public Executable(File filename) throws Exception {
+    public StaticLibrary(File filename) throws Exception {
         super(filename);
     }
-
+    
     @Override
     protected void parseCall(Node argsNode) throws Exception {
         if (argsNode instanceof ValueNode) {
@@ -43,65 +41,34 @@ public class Executable extends BaseBinary {
             String function = tokens[0].trim();
             String[] args = Arrays.copyOfRange(tokens, 1, tokens.length);
             
-            if (function.equals("gb_Executable_Executable")) {
-                parseExecutableExecutable(args);
-            } else if (function.equals("gb_Executable_add_api")) {
+            if (function.equals("gb_StaticLibrary_StaticLibrary")) {
+                parseStaticLibraryStaticLibrary(args);
+            } else if (function.equals("gb_StaticLibrary_add_api")) {
                 parseAddApi(args);
-            } else if (function.equals("gb_Executable_add_defs")) {
+            } else if (function.equals("gb_StaticLibrary_add_defs")) {
                 parseAddDefs(args);
-            } else if (function.equals("gb_Executable_add_exception_objects")) {
+            } else if (function.equals("gb_StaticLibrary_add_exception_objects")) {
                 parseAddExceptionObjects(args);
-            } else if (function.equals("gb_Executable_add_noexception_objects")) {
+            } else if (function.equals("gb_StaticLibrary_add_noexception_objects")) {
                 parseAddNoExceptionObjects(args);
-            } else if (function.equals("gb_Executable_add_linked_libs")) {
-                parseAddLinkedLibs(args);
-            } else if (function.equals("gb_Executable_add_package_headers")) {
+            } else if (function.equals("gb_StaticLibrary_add_package_headers")) {
                 parseAddPackageHeaders(args);
-            } else if (function.equals("gb_Executable_add_precompiled_header")) {
+            } else if (function.equals("gb_StaticLibrary_add_precompiled_header")) {
                 parseAddPrecompiledHeader(args);
-            } else if (function.equals("gb_Executable_set_include")) {
+            } else if (function.equals("gb_StaticLibrary_set_include")) {
                 parseSetInclude(args);
-            } else if (function.equals("gb_Executable_set_targettype_gui")) {
-                parseSetTargetTypeGUI(args);
             } else {
                 throw new Exception("UNHANDLED FUNCTION " + function);
             }
         } else {
             throw new Exception("Call args not a value");
         }
-
     }
-    
-    private void parseExecutableExecutable(String[] args) throws Exception {
+
+    private void parseStaticLibraryStaticLibrary(String[] args) throws Exception {
         if (args.length != 1) {
             throw new Exception("Expected 1 arg, got " + Arrays.toString(args));
         }
         this.name = args[0];
-    }
-
-    private void parseSetTargetTypeGUI(String[] args) throws Exception {
-        if (args.length != 2) {
-            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
-        }
-        if (!args[0].equals(name)) {
-            throw new Exception("Target name isn't " + name);
-        }
-        isTargetTypeSet = true;
-        String yesNo = args[1].trim();
-        if (yesNo.equals("YES")) {
-            isTargetTypeGUI = true;
-        } else if (yesNo.equals("NO")) {
-            isTargetTypeGUI = false;
-        } else {
-            throw new Exception("Target type GUI isn't YES or NO but " + yesNo);
-        }
-    }
-    
-    public boolean isTargetTypeSet() {
-        return isTargetTypeSet;
-    }
-
-    public boolean isIsTargetTypeGUI() {
-        return isTargetTypeGUI;
     }
 }

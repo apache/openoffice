@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-package org.apache.opeonoffice.gotoSCons.targets;
+package org.apache.openoffice.gotoSCons.targets;
 
 import org.apache.openoffice.gotoSCons.raw.FunctionNode;
 import org.apache.openoffice.gotoSCons.raw.ListNode;

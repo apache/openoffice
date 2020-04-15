@@ -24,9 +24,9 @@ package org.apache.openoffice.gotoSCons;
 import java.io.File;
 import java.util.Set;
 import java.util.TreeSet;
-import org.apache.opeonoffice.gotoSCons.targets.Library;
-import org.apache.opeonoffice.gotoSCons.targets.Module;
-import org.apache.opeonoffice.gotoSCons.targets.Repository;
+import org.apache.openoffice.gotoSCons.targets.Library;
+import org.apache.openoffice.gotoSCons.targets.Module;
+import org.apache.openoffice.gotoSCons.targets.Repository;
 
 public class GBuildConverter {
     public static void main(String[] args) throws Exception {

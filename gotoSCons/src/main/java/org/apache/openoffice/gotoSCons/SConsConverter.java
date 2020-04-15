@@ -26,13 +26,13 @@ import java.io.PrintStream;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
-import org.apache.opeonoffice.gotoSCons.targets.BaseBinary;
-import org.apache.opeonoffice.gotoSCons.targets.Executable;
-import org.apache.opeonoffice.gotoSCons.targets.Library;
-import org.apache.opeonoffice.gotoSCons.targets.Module;
-import org.apache.opeonoffice.gotoSCons.targets.Pkg;
-import org.apache.opeonoffice.gotoSCons.targets.Repository;
-import org.apache.opeonoffice.gotoSCons.targets.StaticLibrary;
+import org.apache.openoffice.gotoSCons.targets.BaseBinary;
+import org.apache.openoffice.gotoSCons.targets.Executable;
+import org.apache.openoffice.gotoSCons.targets.Library;
+import org.apache.openoffice.gotoSCons.targets.Module;
+import org.apache.openoffice.gotoSCons.targets.Pkg;
+import org.apache.openoffice.gotoSCons.targets.Repository;
+import org.apache.openoffice.gotoSCons.targets.StaticLibrary;
 
 public class SConsConverter {
     private Repository repo;

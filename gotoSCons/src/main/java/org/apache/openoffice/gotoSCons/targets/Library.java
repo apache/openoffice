@@ -19,7 +19,7 @@
  * 
  *************************************************************/
 
-package org.apache.opeonoffice.gotoSCons.targets;
+package org.apache.openoffice.gotoSCons.targets;
 
 import java.io.File;
 import java.util.Arrays;
