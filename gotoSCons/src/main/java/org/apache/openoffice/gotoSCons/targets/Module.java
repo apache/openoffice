@@ -91,6 +91,9 @@ public class Module extends BaseTarget {
         if (!args[0].equals(name)) {
             throw new Exception("Module isn't " + name);
         }
+        if (args.length == 1) {
+            return; // file list empty
+        }
         for (String arg : Utils.spaceSeparatedTokens(args[1])) {
             File makefile = new File(filename.getParentFile(), arg + ".mk");
             if (arg.startsWith("AllLangResTarget_")) {
