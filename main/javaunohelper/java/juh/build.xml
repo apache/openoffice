@@ -28,9 +28,6 @@
     
     <target name="init-project">
 
-        <!-- TEMP - REMOVE COMPLETELY AFTER THIS MAKES AN EQUIVALENT JAR AS GBUILD -->
-        <property name="jar.enabled" value="false"/>
-
         <property name="jar.classpath" value="ridl.jar jurt.jar ../../lib/ ../bin/"/>
         <property name="jar.manifest" value="${SRC_ROOT}/juh/util/manifest"/>
 
@@ -51,17 +48,8 @@
     </target>
     
     <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
-    <!-- custom target has an altered file path to use gbuild jar -->
-    <target name="copy-artifact-jar" depends="prepare" if="${artifact.jar.enabled}">
-        <waitfor maxwait="30" maxwaitunit="minute" checkevery="30" checkeveryunit="second">
-            <available file="${WORKDIR}/Jar/${jar.name}.jar"/>
-        </waitfor>
-        <copy verbose="true" file="${WORKDIR}/Jar/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
-    </target>
-
-    <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
-    <!-- custom main has test ant jar removed from depends -->
-    <target name="main" depends="jar-javadoc,copy-artifact-jar,jar-source"/>
+    <!-- custom main has test removed from depends -->
+    <target name="main" depends="jar,jar-javadoc,copy-artifact-jar,jar-source"/>
     
 </project>
 
