@@ -19,7 +19,7 @@
 #  
 #**************************************************************
 
-
+$(call gb_Ant_add_dependency,$(call gb_Ant_get_target,juh),$(call gb_Jar_get_target,%))
 
 $(eval $(call gb_Ant_Ant,juh,$(SRCDIR)/javaunohelper/java/juh/build.xml))
 
