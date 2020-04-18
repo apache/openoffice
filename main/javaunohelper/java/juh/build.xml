@@ -29,7 +29,7 @@
     <target name="init-project">
 
         <property name="jar.classpath" value="ridl.jar jurt.jar ../../lib/ ../bin/"/>
-        <property name="jar.manifest" value="${SRC_ROOT}/javaunohelp/util/manifest"/>
+        <property name="jar.manifest" value="${SRC_ROOT}/javaunohelper/util/manifest"/>
 
         <!-- for creating maven bundles for distribution -->
         <property name="artifact.jar.enabled" value="true"/>
