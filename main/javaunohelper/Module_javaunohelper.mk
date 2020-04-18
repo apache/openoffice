@@ -24,7 +24,6 @@
 $(eval $(call gb_Module_Module,javaunohelper))
 
 $(eval $(call gb_Module_add_targets,javaunohelper,\
-	Jar_juh \
 	Library_juh \
 	Library_juhx \
 	Zip_juh_src \
