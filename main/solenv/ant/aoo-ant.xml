@@ -51,7 +51,7 @@
     <property name="test-idl.classes.build.dir" location="${build.base.dir}/test-idl/classes"/>
     <property name="test.reports.dir" location="${build.base.dir}/test-reports"/>
 
-    <property name="java.baseline.version" value="1.7"/>
+    <property name="java.baseline.version" value="1.8"/>
     <property name="jar.dir" location="${WORKDIR}/Ant"/>
 
     <property name="main.debug" value="true"/>
