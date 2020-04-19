@@ -44,12 +44,40 @@
             <pathelement location="${OUTDIR}/bin/unoil.jar"/>
         </path>
 
+    </target>
 
+    <!-- custom jar target to create with version number instead of copying gbuild juh.jar -->
+    <target name="jar" depends="compile" if="${artifact.jar.enabled}">
+        <jar destfile="${jar.dir}/${jar.name}-${aoo.ver}.jar"
+             manifest="${jar.manifest}"
+             duplicate="fail">
+            <manifest>
+                <attribute name="Class-Path" value="${jar.classpath}" unless:blank="${jar.classpath}"/>
+                <attribute name="Solar-Version" value="${RSCREVISION}"/>
+            </manifest>
+            <fileset dir="${main.build.dir}"/>
+            <!-- Breaks trunk/test/smoketestdoc by packaging different classes with the same name: -->
+            <!--            <fileset dir="${idl.build.classes.dir}" erroronmissingdir="false"/> -->
+            <include name="**/*.class"/>
+            <include name="**/*.properties"/>
+            <include name="**/*.css"/>
+            <include name="**/*.dtd"/>
+            <include name="**/*.form"/>
+            <include name="**/*.gif "/>
+            <include name="**/*.htm"/>
+            <include name="**/*.html"/>
+            <include name="**/*.js"/>
+            <include name="**/*.mod"/>
+            <include name="**/*.sql"/>
+            <include name="**/*.xml"/>
+            <include name="**/*.xsl"/>
+            <include name="**/*.map"/>
+        </jar>
     </target>
     
     <!-- TEMP UNTIL WE USE THE ANT BUILT JAR THEN REMOVE TARGET-->
-    <!-- custom main has test removed from depends -->
-    <target name="main" depends="jar,jar-javadoc,copy-artifact-jar,jar-source"/>
+    <!-- custom main has test and copy-artifact-jar removed from depends -->
+    <target name="main" depends="jar,jar-javadoc,jar-source"/>
     
 </project>
 
