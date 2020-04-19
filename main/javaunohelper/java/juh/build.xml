@@ -21,7 +21,7 @@
 ***********************************************************-->
 
 
-<project name="juh" default="main">
+<project name="juh" default="main" xmlns:if="ant:if" xmlns:unless="ant:unless">
 
     <property file="../../../ant.properties"/>
     <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
