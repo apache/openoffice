@@ -19,6 +19,7 @@
 #  
 #**************************************************************
 
+$(eval $(call gb_Jar_set_componentfile,juh,javaunohelper/util/juh,URE))
 
 $(eval $(call gb_Ant_Ant,juh,$(SRCDIR)/javaunohelper/java/juh/build.xml))
 
