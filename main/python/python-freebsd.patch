@@ -1,6 +1,6 @@
-diff -ruN misc/Python-2.7.17/Modules/fcntlmodule.c misc/build/Python-2.7.17/Modules/fcntlmodule.c
---- misc/Python-2.7.17/Modules/fcntlmodule.c	2019-10-19 13:38:44.000000000 -0500
-+++ misc/build/Python-2.7.17/Modules/fcntlmodule.c	2020-01-09 22:59:15.052886000 -0500
+diff -ruN misc/Python-2.7.18/Modules/fcntlmodule.c misc/build/Python-2.7.18/Modules/fcntlmodule.c
+--- misc/Python-2.7.18/Modules/fcntlmodule.c	2019-10-19 13:38:44.000000000 -0500
++++ misc/build/Python-2.7.18/Modules/fcntlmodule.c	2020-01-09 22:59:15.052886000 -0500
 @@ -98,20 +98,15 @@
  {
  #define IOCTL_BUFSZ 1024
@@ -52,9 +52,9 @@ diff -ruN misc/Python-2.7.17/Modules/fcntlmodule.c misc/build/Python-2.7.17/Modu
           " an integer and optionally an integer or buffer argument",
                            conv_descriptor, &fd, &code, &arg)) {
        return NULL;
-diff -ruN misc/Python-2.7.17/Python/thread_pthread.h misc/build/Python-2.7.17/Python/thread_pthread.h
---- misc/Python-2.7.17/Python/thread_pthread.h	2019-10-19 13:38:44.000000000 -0500
-+++ misc/build/Python-2.7.17/Python/thread_pthread.h	2020-01-09 22:59:15.053731000 -0500
+diff -ruN misc/Python-2.7.18/Python/thread_pthread.h misc/build/Python-2.7.18/Python/thread_pthread.h
+--- misc/Python-2.7.18/Python/thread_pthread.h	2019-10-19 13:38:44.000000000 -0500
++++ misc/build/Python-2.7.18/Python/thread_pthread.h	2020-01-09 22:59:15.053731000 -0500
 @@ -38,13 +38,18 @@
  #endif
  #endif
@@ -108,9 +108,9 @@ diff -ruN misc/Python-2.7.17/Python/thread_pthread.h misc/build/Python-2.7.17/Py
  #if defined(THREAD_STACK_SIZE) || defined(PTHREAD_SYSTEM_SCHED_SUPPORTED)
      pthread_attr_destroy(&attrs);
  #endif
-diff -ruN misc/Python-2.7.17/configure misc/build/Python-2.7.17/configure
---- misc/Python-2.7.17/configure	2019-10-19 13:38:44.000000000 -0500
-+++ misc/build/Python-2.7.17/configure	2020-01-09 22:59:15.072666000 -0500
+diff -ruN misc/Python-2.7.18/configure misc/build/Python-2.7.18/configure
+--- misc/Python-2.7.18/configure	2019-10-19 13:38:44.000000000 -0500
++++ misc/build/Python-2.7.18/configure	2020-01-09 22:59:15.072666000 -0500
 @@ -5477,7 +5477,7 @@
            ;;
      SunOS*)
