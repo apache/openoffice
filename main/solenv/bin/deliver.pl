@@ -973,6 +973,9 @@ sub get_latest_patchlevel
 
         for ($i = 0; $i < 3; $i++)
           {
+              # if unitialized assign 0 as default value.
+              $field_a[$i] //= 0;
+              $field_b[$i] //= 0;
               if ( ($field_a[$i] < $field_b[$i]) ) {
                   return -1;
               }
