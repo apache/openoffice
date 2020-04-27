@@ -167,7 +167,7 @@ ModalDialog RID_DLG_NEWLIB
 	FixedText FT_NEWLIB
 	{
 		Pos = MAP_APPFONT ( 6, 6 ) ;
-		Size = MAP_APPFONT ( 100, 50 ) ;
+		Size = MAP_APPFONT ( 92, 50 ) ;
 		WordBreak = TRUE ;
 		Text [ en-US ] = "Enter the name for the new library." ;
 	};
