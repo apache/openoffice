@@ -148,8 +148,8 @@ void SAL_CALL SfxOpenDocStatusListener_Impl::disposing( const EventObject& ) thr
 
 SfxObjectShellRef SfxApplication::DocAlreadyLoaded
 (
-    const String&   rName,      // Name of the Dockuments including path
-    sal_Bool            bSilent,    // sal_True: do not ask vor new view
+    const String&   rName,      // Name of the Document including path
+    sal_Bool            bSilent,    // sal_True: do not ask for new view
     sal_Bool            bActivate,   // should current view be activated 
     sal_Bool            bForbidVisible,
 	const String*   pPostStr
@@ -168,7 +168,7 @@ SfxObjectShellRef SfxApplication::DocAlreadyLoaded
 	if (  pPostStr )
 		aPostString = *pPostStr;
 
-    // is open?
+    // still open?
     SfxObjectShellRef xDoc;
 
     if ( !aUrlToFind.HasError() )
@@ -575,7 +575,7 @@ void SfxApplication::NewDocExec_Impl( SfxRequest& rReq )
     SfxObjectShellLock xDoc;
 
     String  aTemplateRegion, aTemplateName, aTemplateFileName;
-    sal_Bool    bDirect = sal_False; // use filename instaed of region/template
+    sal_Bool    bDirect = sal_False; // use filename instead of region/template
     SfxErrorContext aEc(ERRCTX_SFX_NEWDOC);
     if ( !pTemplNameItem && !pTemplFileNameItem )
     {
