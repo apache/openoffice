@@ -161,7 +161,7 @@ void __EXPORT ScClient::ObjectAreaChanged()
 		return;
 	}
 
-	//	adopt Position and size into document
+	//	adopt position and size into document
 	SdrOle2Obj* pDrawObj = GetDrawObj();
 	if (pDrawObj)
 	{
@@ -220,7 +220,7 @@ void __EXPORT ScClient::ViewChanged()
     MapUnit aMapUnit = VCLUnoHelper::UnoEmbed2VCLMapUnit( xObj->getMapUnit( GetAspect() ) );
     Size aVisSize = OutputDevice::LogicToLogic( Size( aSz.Width, aSz.Height ), aMapUnit, MAP_100TH_MM );
 
-	//	adopt sinze into the document
+	//	adopt size into the document
 	SdrOle2Obj* pDrawObj = GetDrawObj();
 	if (pDrawObj)
 	{
