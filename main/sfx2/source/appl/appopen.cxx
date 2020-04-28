@@ -788,7 +788,7 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
                 rReq.RemoveItem( SID_FILE_NAME );
                 rReq.AppendItem( SfxStringItem( SID_FILE_NAME, aURL ) );
 
-                // execute synchron, to avoid next document load at reshedule
+                // execute synchronous, to avoid next document load at reschedule
                 // TODO/LATER: use URLList argument and always remove one document after another, each step in asychronous execution, until finished
                 // but only if reschedule is a problem
                 GetDispatcher_Impl()->Execute( SID_OPENDOC, SFX_CALLMODE_SYNCHRON, *rReq.GetArgs() );
@@ -822,7 +822,7 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 
     if ( !rReq.IsSynchronCall() )
     {
-        // now check wether a stream is already there
+        // now check whether a stream is already there
         // if not: download it in a thread and restart the call
         // return;
     }
@@ -840,7 +840,7 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
         rReq.AppendItem( SfxBoolItem( SID_TEMPLATE, sal_False ) );
     }
     // pass URL to OS by using ShellExecuter or open it internal
-    // if it seams to be an own format.
+    // if it seems to be an own format.
     /* Attention!
             There exist two possibilities to open hyperlinks:
             a) using SID_OPENHYPERLINK (new)
