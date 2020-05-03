@@ -234,7 +234,7 @@ void __EXPORT ScClient::ViewChanged()
         //  pClientData->SetObjArea before pDrawObj->SetLogicRect, avoid wrong
         //  scale calculations:
         //Rectangle aObjArea = aLogicRect;
-        //aObjArea.SetSize( aVisSize );          // Document-size of the Server
+        //aObjArea.SetSize( aVisSize );          // Size of document from Server
         //SetObjArea( aObjArea );
 
 		SfxViewShell* pSfxViewSh = GetViewShell();
