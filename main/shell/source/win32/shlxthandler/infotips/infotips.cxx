@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ const std::wstring WSPACE = std::wstring(SPACE);
 //
 //-----------------------------
 
-CInfoTip::CInfoTip(long RefCnt) : 
+CInfoTip::CInfoTip(long RefCnt) :
     m_RefCnt(RefCnt)
 {
     ZeroMemory(m_szFileName, sizeof(m_szFileName));
@@ -93,7 +93,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::QueryInterface(REFIID riid, void __RPC_FAR *
 }
 
 //----------------------------
-// 
+//
 //----------------------------
 
 ULONG STDMETHODCALLTYPE CInfoTip::AddRef(void)
@@ -102,9 +102,9 @@ ULONG STDMETHODCALLTYPE CInfoTip::AddRef(void)
 }
 
 //----------------------------
-// 
+//
 //----------------------------
-        
+
 ULONG STDMETHODCALLTYPE CInfoTip::Release( void)
 {
     long refcnt = InterlockedDecrement(&m_RefCnt);
@@ -127,7 +127,7 @@ std::wstring getFileTypeInfo(const std::string& file_extension)
     if (QueryRegistryKey(HKEY_CLASSES_ROOT, (sDot.append(file_extension)).c_str(), "", extKeyValue, MAX_STRING))
 		if (QueryRegistryKey( HKEY_CLASSES_ROOT, extKeyValue, "",typeKeyValue, MAX_STRING))
             return StringToWString(typeKeyValue);
-    
+
     return EMPTY_STRING;
 }
 
@@ -136,12 +136,12 @@ std::wstring getFileTypeInfo(const std::string& file_extension)
 DWORD getSizeOfFile( char* FileName )
 {
     HANDLE hFile = CreateFile(StringToWString(FileName).c_str(),            // open file
-                        GENERIC_READ,                                       // open for reading 
-                        FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE, // share for all operations 
-                        NULL,                                               // no security 
-                        OPEN_EXISTING,                                      // existing file only 
-                        FILE_ATTRIBUTE_NORMAL,                              // normal file 
-                        NULL);                                              // no attr. template 
+                        GENERIC_READ,                                       // open for reading
+                        FILE_SHARE_READ|FILE_SHARE_WRITE|FILE_SHARE_DELETE, // share for all operations
+                        NULL,                                               // no security
+                        OPEN_EXISTING,                                      // existing file only
+                        FILE_ATTRIBUTE_NORMAL,                              // normal file
+                        NULL);                                              // no attr. template
 
     if (hFile != INVALID_HANDLE_VALUE)
     {
@@ -157,13 +157,13 @@ DWORD getSizeOfFile( char* FileName )
 */
 std::wstring formatSizeOfFile( DWORD dwSize )
 {
-	if ( dwSize < 1000 ) 
+	if ( dwSize < 1000 )
 	{
 		char buffer[3];
 		int dFileSize = dwSize;
-		
+
 		_itoa( dFileSize, buffer, 10 );
-		return StringToWString( buffer ).append(StringToWString("B"));
+		return StringToWString( buffer ).append(StringToWString(" B"));
 	}
 
     char *buffer=NULL;
@@ -188,7 +188,7 @@ std::wstring formatSizeOfFile( DWORD dwSize )
 
     wsBuffer.append(StringToWString("."));
     wsBuffer.append(wsTemp.substr( decimal, wsTemp.size()-decimal ));
-    wsBuffer.append(StringToWString("KB"));
+    wsBuffer.append(StringToWString(" KB"));
 
     return wsBuffer;
 }
@@ -199,7 +199,7 @@ std::wstring formatSizeOfFile( DWORD dwSize )
 std::wstring getFileSizeInfo(char* FileName)
 {
     DWORD dwSize=getSizeOfFile(FileName);
-    if (dwSize != INVALID_FILE_SIZE) 
+    if (dwSize != INVALID_FILE_SIZE)
         return formatSizeOfFile( dwSize );
 
     return EMPTY_STRING;
@@ -241,14 +241,14 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
             msg += GetResString(IDS_TITLE_COLON) + CONST_SPACE;
             msg += m_FileNameOnly;
         }
-            
+
         //display document author;
         if ( meta_info_accessor.getTagData( META_INFO_AUTHOR ).length() > 0)
         {
 			if ( msg != EMPTY_STRING )
 				msg += L"\n";
             msg += GetResString( IDS_AUTHOR_COLON ) + CONST_SPACE;
-            msg += meta_info_accessor.getTagData( META_INFO_AUTHOR );   
+            msg += meta_info_accessor.getTagData( META_INFO_AUTHOR );
         }
 
         //display document subject;
@@ -259,7 +259,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
             msg += GetResString(IDS_SUBJECT_COLON) + CONST_SPACE;
             msg += meta_info_accessor.getTagData( META_INFO_SUBJECT );
         }
-        
+
         //display document description;
         if ( meta_info_accessor.getTagData( META_INFO_DESCRIPTION ).length() > 0)
         {
@@ -302,22 +302,22 @@ HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoTip(DWORD /*dwFlags*/, wchar_t** ppws
     {
         size_t len = sizeof(wchar_t) * msg.length() + sizeof(wchar_t);
         wchar_t* pMem = reinterpret_cast<wchar_t*>(lpMalloc->Alloc(len));
-        
+
         ZeroMemory(pMem, len);
 
         msg.copy(pMem,msg.length());
 
         *ppwszTip = pMem;
         lpMalloc->Release();
-                                                    
+
         return S_OK;
-    }       
+    }
 
     return E_FAIL;
 }
 
 //----------------------------
-// 
+//
 //----------------------------
 
 HRESULT STDMETHODCALLTYPE CInfoTip::GetInfoFlags(DWORD * /*pdwFlags*/ )
@@ -356,7 +356,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::Load(LPCOLESTR pszFileName, DWORD /*dwMode*/
 
     // #115531#
     // ZeroMemory because strncpy doesn't '\0'-terminate the destination
-    // string; reserve the last place in the buffer for the final '\0' 
+    // string; reserve the last place in the buffer for the final '\0'
     // that's why '(sizeof(m_szFileName) - 1)'
     ZeroMemory(m_szFileName, sizeof(m_szFileName));
     strncpy(m_szFileName, fnameA.c_str(), (sizeof(m_szFileName) - 1));
@@ -365,7 +365,7 @@ HRESULT STDMETHODCALLTYPE CInfoTip::Load(LPCOLESTR pszFileName, DWORD /*dwMode*/
 }
 
 //----------------------------
-// 
+//
 //----------------------------
 
 HRESULT STDMETHODCALLTYPE CInfoTip::IsDirty(void)
@@ -374,27 +374,27 @@ HRESULT STDMETHODCALLTYPE CInfoTip::IsDirty(void)
 }
 
 //----------------------------
-// 
+//
 //----------------------------
-                
+
 HRESULT STDMETHODCALLTYPE CInfoTip::Save(LPCOLESTR /*pszFileName*/, BOOL /*fRemember*/)
 {
     return E_NOTIMPL;
 }
 
 //----------------------------
-// 
+//
 //----------------------------
-        
+
 HRESULT STDMETHODCALLTYPE CInfoTip::SaveCompleted(LPCOLESTR /*pszFileName*/)
 {
     return E_NOTIMPL;
 }
 
 //----------------------------
-// 
+//
 //----------------------------
-        
+
 HRESULT STDMETHODCALLTYPE CInfoTip::GetCurFile(LPOLESTR __RPC_FAR * /*ppszFileName*/)
 {
     return E_NOTIMPL;
