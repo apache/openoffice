@@ -294,16 +294,16 @@ private:
 
 sal_uInt32 CheckPasswd_Impl
 (
-    //Window *pWin,             // Parent of Dialogs
+    //Window *pWin,             // Parent of dialog
     SfxObjectShell*  pDoc,
-    SfxItemPool&     /*rPool*/, // Pool, if we need a set
-    SfxMedium*       pFile      // Medium that needs a passwort
+    SfxItemPool&     /*rPool*/, // Pool, if we need to create a set
+    SfxMedium*       pFile      // Medium that needs a password
 )
 
 /*  [description]
-    To query a passwort on a mediom works only if the medium is a storage.
+    To query a passwort on a medium works only if the medium is a storage.
     if in documentinfo the password-flag is set, a dialog will querry user 
-    for the poassword. The password will be saved in a set. If the set does not 
+    for the password. The password will be saved in a set. If the set does not 
     exist, a set will be created.
 */
 {
