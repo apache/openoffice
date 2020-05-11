@@ -1830,10 +1830,10 @@ fi
 AC_MSG_CHECKING([the GNU make version])
 _make_version=`$GNUMAKE --version | $GREP GNU | $SED -e 's@^[[^0-9]]*@@' -e 's@ .*@@' -e 's@,.*@@'`;
 _make_longver=`echo $_make_version | $AWK -F. '{ print \$1*10000+\$2*100+\$3 }'`
-if test "$_make_longver" -ge "038100" ; then
+if test "$_make_longver" -ge "038100" && test "$_make_longver" -lt "040300" ; then
    AC_MSG_RESULT([$GNUMAKE $_make_version])
 else
-   AC_MSG_ERROR([failed ($GNUMAKE version >= 3.81 needed])
+   AC_MSG_ERROR([failed ($GNUMAKE version >= 3.81 but < 4.3 needed])
 fi
 AC_SUBST(GNUMAKE)
 
