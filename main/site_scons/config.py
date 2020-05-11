@@ -25,18 +25,31 @@ _siteDir, _myFilename = os.path.split(os.path.abspath(__file__))
 _mainDir, _siteDir2 = os.path.split(_siteDir)
 
 # Or should we patch set_soenv to generate us a .py file?
-def _loadJavaProperties(filepath):
+def loadJavaProperties(filepath):
     props = {}
+    fullLine = ''
+    appending = False
     with open(filepath, "rt") as f:
         for line in f:
             l = line.strip()
-            if l and not l.startswith('#'):
-                eq = l.find('=')
-                if eq >= 0:
-                    key = l[:eq].strip()
-                    value = l[(eq+1):].strip()
-                    props[key] = value
+            if l:
+                if appending:
+                    fullLine += l
+                else:
+                    fullLine = l
+
+                if fullLine.endswith('\\'):
+                    appending = True
+                    fullLine = fullLine[: len(fullLine) - 1]
+                else:
+                    appending = False
+                    if not l.startswith('#'):
+                        eq = l.find('=')
+                        if eq >= 0:
+                            key = l[:eq].strip()
+                            value = l[(eq+1):].strip()
+                            props[key] = value
     return props
 
-soenv = _loadJavaProperties(_mainDir + '/ant.properties')
+soenv = loadJavaProperties(_mainDir + '/ant.properties')
 

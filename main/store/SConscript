@@ -1,0 +1,39 @@
+storeObjects = AOOSharedObjects()
+storeObjects.AddInclude([
+    'inc',
+    'inc/pch'
+])
+storeObjects.AddDefs([
+    'STORE_DLLIMPLEMENTATION'
+])
+storeObjects.AddCxxNoExceptionSources([
+    'source/lockbyte.cxx',
+    'source/object.cxx',
+    'source/storbase.cxx',
+    'source/storbios.cxx',
+    'source/storcach.cxx',
+    'source/stordata.cxx',
+    'source/stordir.cxx',
+    'source/store.cxx',
+    'source/storlckb.cxx',
+    'source/storpage.cxx',
+    'source/stortree.cxx'
+])
+store = AOOSharedLibrary(
+    'store',
+    'UNOVERLIBS',
+    storeObjects
+)
+store.AddLinkedLibs([
+    SALLIB
+] + STDLIBS)
+store.SetVersionScript('util/store.map')
+store.InstallTo('${OUTDIR}/lib')
+
+Install('${OUTDIR}/inc/store', 'inc/store/dllapi.h')
+Install('${OUTDIR}/inc/store', 'inc/store/store.h')
+Install('${OUTDIR}/inc/store', 'inc/store/store.hxx')
+Install('${OUTDIR}/inc/store', 'inc/store/types.h')
+
+Install('${OUTDIR}/xml', 'util/store.xml')
+

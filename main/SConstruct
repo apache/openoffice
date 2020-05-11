@@ -1,1 +1,2 @@
 SConscript('fileaccess/SConscript', variant_dir=WORKDIR+'/scons/fileaccess', duplicate=0)
+SConscript('store/SConscript', variant_dir=WORKDIR+'/scons/store', duplicate=0)

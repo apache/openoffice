@@ -39,11 +39,18 @@ env.Append(CPPDEFINES = GLOBALDEFS)
 env.Append(CFLAGS = platform.getCFlags(soenv))
 env.Append(CXXFLAGS = platform.getCFlags(soenv))
 
-## Add some common paths to the SCons environment
+## Add some common paths to the SCons environment, without AOO_ prefix
 
 env['OUTDIR'] = soenv['OUTDIR']
 env['WORKDIR'] = soenv['WORKDIR']
 env['SOLARENV'] = soenv['SOLARENV']
+
+## Useful constants
+
+if soenv.get('WITH_LANG') == 'ALL':
+    env['AOO_WITH_LANG'] = loadJavaProperties(SOLENV + '/inc/langlist.mk')['completelangiso']
+else:
+    env['AOO_WITH_LANG'] = soenv.get('WITH_LANG')
 
 ###########################
 # API
