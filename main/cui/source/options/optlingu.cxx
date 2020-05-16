@@ -1163,7 +1163,7 @@ SvxLinguTabPage::SvxLinguTabPage( Window* pParent,
             != SvtExtendedSecurityOptions::OPEN_NEVER )
     {
         aMoreDictsLink.SetURL( String(
-            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A94" ) ) );
+            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A157" ) ) );
         aMoreDictsLink.SetClickHdl( LINK( this, SvxLinguTabPage, OpenURLHdl_Impl ) );
     }
     else
@@ -2068,7 +2068,7 @@ SvxEditModulesDlg::SvxEditModulesDlg(Window* pParent, SvxLinguData_Impl& rData) 
             != SvtExtendedSecurityOptions::OPEN_NEVER )
     {
         aMoreDictsLink.SetURL( String(
-            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A94" ) ) );
+            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/en/search?f%5B0%5D=field_project_tags%3A157" ) ) );
         aMoreDictsLink.SetClickHdl( LINK( this, SvxEditModulesDlg, OpenURLHdl_Impl ) );
     }
     else
