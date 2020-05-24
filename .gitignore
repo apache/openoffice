@@ -8,6 +8,7 @@
 *.bak
 *.cxx-*
 *.git
+*.gnuplot
 *.hxx-*
 *.log
 *.orig
@@ -77,5 +78,8 @@ TAGS
 /*/*/unxmac??
 /*/*/unxmac??.pro
 
-#RepoRevision hash file
+# Windows Accessibility Bridge
+main/winaccessibility/source/UAccCOMIDL/dlldata.c
+
+# RepoRevision hash file
 /main/solenv/inc/reporevision.lst
