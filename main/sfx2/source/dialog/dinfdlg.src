@@ -702,11 +702,11 @@ ImageButton SFX_PB_PROPERTY_REMOVE
 };
 Image SFX_IMG_PROPERTY_REMOVE
 {
-	ImageBitmap = Bitmap { File = "deleterow.png" ; } ;
+	ImageBitmap = Bitmap {File = "deleterow.png" ;} ;
 };
 Image SFX_IMG_PROPERTY_REMOVE_HC
 {
-	ImageBitmap = Bitmap { File = "deleterow_h.png" ; } ;
+	ImageBitmap = Bitmap {File = "deleterow_h.png" ;} ;
 };
 
 QueryBox SFX_QB_WRONG_TYPE
