@@ -836,13 +836,13 @@ AC_ARG_WITH(intro-bitmaps,
                           commas), the order means priority of fallback if the
                           first does not exist (in the installed tree).
 
-                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.bmp
+                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.png
 ],,)
 AC_ARG_WITH(about-bitmaps,
 [  --with-about-bitmaps    Similarly to --with-intro-bitmaps, this allows
                           specification of bitmaps for the About box.
 
-                          Usage: --with-about-bitmaps=/path/my_ooo_about.bmp
+                          Usage: --with-about-bitmaps=/path/my_ooo_about.png
 ],,)
 AC_ARG_WITH(vendor,
 [  --with-vendor           Set vendor of the build.
@@ -7356,8 +7356,8 @@ if test -z "$with_intro_bitmaps" -o "$with_intro_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_intro_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          INTRO_BITMAPS="$INTRO_BITMAPS $bitmap"
@@ -7375,8 +7375,8 @@ if test -z "$with_about_bitmaps" -o "$with_about_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_about_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          ABOUT_BITMAPS="$ABOUT_BITMAPS $bitmap"
