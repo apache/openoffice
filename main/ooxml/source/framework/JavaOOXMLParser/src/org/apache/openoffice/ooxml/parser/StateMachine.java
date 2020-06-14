@@ -176,7 +176,7 @@ public class StateMachine
                     aAttributeValues,
                     aPreviousElementContext);
 
-                // e) and run all actions that are bound to the the current start tag.
+                // e) and run all actions that are bound to the current start tag.
                 ExecuteActions(
                     mnCurrentStateId,
                     maCurrentElementContext,

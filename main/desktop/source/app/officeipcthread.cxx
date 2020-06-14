@@ -448,7 +448,7 @@ OfficeIPCThread::Status OfficeIPCThread::EnableOfficeIPCThread()
 	// Try to  determine if we are the first office or not! This should prevent multiple
 	// access to the user directory !
 	// First we try to create our pipe if this fails we try to connect. We have to do this
-	// in a loop because the the other office can crash or shutdown between createPipe
+	// in a loop because the other office can crash or shutdown between createPipe
 	// and connectPipe!!
 
     OUString            aIniName;
@@ -790,7 +790,7 @@ void SAL_CALL OfficeIPCThread::run()
 
                 // #i18338# (lo)
                 // we only do this if no document was specified on the command line,
-                // since this would be inconsistent with the the behaviour of
+                // since this would be inconsistent with the behaviour of
                 // the first process, see OpenClients() (call to OpenDefault()) in app.cxx
                 if ( aCmdLineArgs->HasModuleParam() && Desktop::CheckOEM() && (!bDocRequestSent))
 				{

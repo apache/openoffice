@@ -509,8 +509,8 @@ char *cpp_argv[ARGUMENTS] = {
 #else /* else MAKEDEPEND */
 /*
  * Step 6:  predefs
- *     If your compiler and/or preprocessor define any specific symbols, add
- *     them to the the following table.  The definition of struct symtab is
+ *     If your compiler and/or preprocessor defines any specific symbols, add
+ *     them to the following table.  The definition of struct symtab is
  *     in util/makedepend/def.h.
  */
 struct pair	predefs[] = {
