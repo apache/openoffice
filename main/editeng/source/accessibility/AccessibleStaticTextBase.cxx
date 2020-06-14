@@ -919,7 +919,7 @@ sal_Unicode cNewLine(0x0a);
 			}
             //return aRes;
         }
-		//According the the flag we marked before, we have to add "\n" at the beginning 
+		//According to the flag we marked before, we have to add "\n" at the beginning 
 		//or at the end of the result string.
 		if ( bStart )
 		{

@@ -66,7 +66,7 @@ public:
         (XInteractionSupplyAuthentication) is filled with the credentials found
         in the password container.
 
-        Please note the the continuation gets not "selected" by this
+        Please note that the continuation gets not "selected" by this
         implementation. "Selecting" the continuation is up to the caller (e.g.
         an implementation of XInteractionHandler::handle) of this function.
 

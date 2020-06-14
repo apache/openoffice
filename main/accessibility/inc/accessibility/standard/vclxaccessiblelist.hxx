@@ -84,7 +84,7 @@ public:
         the XAccessibleSelection interface is not supported and the items
         are transient.
         @param sTextOfSelectedItem
-            This string contains the text of the the currently selected
+            This string contains the text of the currently selected
             item.  It is used to retrieve the index of that item.
     */
     void UpdateSelection (::rtl::OUString sTextOfSelectedItem);

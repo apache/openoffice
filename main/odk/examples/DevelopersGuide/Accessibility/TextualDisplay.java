@@ -110,7 +110,7 @@ class TextualDisplay
 
 
         
-    /** Show a list of all of the the given object's states.  Use the
+    /** Show a list of all of the given object's states.  Use the
         NameConverter class to transform the numerical state ids into human
         readable names.
         @param xContext
