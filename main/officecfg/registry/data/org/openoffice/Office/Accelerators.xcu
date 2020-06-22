@@ -4480,6 +4480,11 @@
       <value xml:lang="en-US">.uno:RepeatSearch</value>
      </prop>
     </node>
+    <node oor:name="GREATER_SHIFT_MOD1" oor:op="replace">
+     <prop oor:name="Command"><value xml:lang="x-no-translate">I10N SHORTCUTS - NO TRANSLATE</value>
+      <value xml:lang="en-US">.uno:Grow</value>
+     </prop>
+    </node> 
     <node oor:name="G_MOD1" oor:op="replace">
      <prop oor:name="Command"><value xml:lang="x-no-translate">I10N SHORTCUTS - NO TRANSLATE</value>
       <value xml:lang="de">.uno:RepeatSearch</value>
@@ -4566,6 +4571,11 @@
       <value xml:lang="en-US">.uno:WordLeftSel</value>
      </prop>
     </node>
+    <node oor:name="LESS_MOD1" oor:op="replace">
+     <prop oor:name="Command"><value xml:lang="x-no-translate">I10N SHORTCUTS - NO TRANSLATE</value>
+      <value xml:lang="en-US">.uno:Shrink</value>
+     </prop> 
+    </node> 
     <node oor:name="L_MOD1" oor:op="replace">
      <prop oor:name="Command"><value xml:lang="x-no-translate">I10N SHORTCUTS - NO TRANSLATE</value>
       <value xml:lang="en-US">.uno:LeftPara</value>
