@@ -1,0 +1,10 @@
+#from SCons.Tool import CScanner
+from SCons.Scanner import ClassicCPP
+
+env = Environment()
+
+#SourceFileScanner.add_scanner('.idl', CScanner)
+# Taken from src/engine/SCons/Scanner/C.py in the scons tree and modified:
+env.Append(SCANNERS=ClassicCPP("AOOIDLScanner", '.idl', "CPPPATH", '^[ \t]*#[ \t]*(?:include|import)[ \t]*(<|")([^>"]+)(>|")'))
+
+env.Command('target.idl', 'source.idl', Copy("$TARGET", "$SOURCE"))

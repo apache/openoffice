@@ -26,6 +26,7 @@ import java.io.PrintStream;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.TreeSet;
+import org.apache.openoffice.gotoSCons.targets.AllLangResTarget;
 import org.apache.openoffice.gotoSCons.targets.BaseBinary;
 import org.apache.openoffice.gotoSCons.targets.Executable;
 import org.apache.openoffice.gotoSCons.targets.Library;
@@ -54,6 +55,10 @@ public class SConsConverter {
         
         for (Executable exe : module.getExecutables().values()) {
             convertExecutable(exe);
+        }
+        
+        for (AllLangResTarget allLangResTarget : module.getAllLangResTargets().values()) {
+            convertAllLangResTarget(allLangResTarget);
         }
         
         for (Pkg pkg : module.getPackages().values()) {
@@ -157,6 +162,10 @@ public class SConsConverter {
         }
 
         out.println(String.format("%s.InstallTo('${OUTDIR}/bin')", exe.getName()));
+        out.println();
+    }
+    
+    private void convertAllLangResTarget(AllLangResTarget allLangResTarget) throws Exception {
         out.println();
     }
     

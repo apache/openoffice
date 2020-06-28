@@ -25,8 +25,14 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Map;
+import java.util.Set;
+import java.util.TreeMap;
+import java.util.TreeSet;
 import org.apache.openoffice.gotoSCons.GBuildParser;
+import org.apache.openoffice.gotoSCons.Utils;
 import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
@@ -196,6 +202,10 @@ import org.apache.openoffice.gotoSCons.raw.ValueNode;
 public class AllLangResTarget extends BaseTarget {
     private File filename;
     private String name;
+    private String resLocation;
+    private ArrayList<String> srs = new ArrayList<>();
+    private Map<String,SrsTarget> srsTargets = new TreeMap<>();
+
 
     public AllLangResTarget(File filename) throws Exception {
         this.filename = filename;
@@ -219,6 +229,16 @@ public class AllLangResTarget extends BaseTarget {
             
             if (function.equals("gb_AllLangResTarget_AllLangResTarget")) {
                 parseAllLangResTargetAllLangResTarget(args);
+            } else if (function.equals("gb_AllLangResTarget_set_reslocation")) {
+                parseSetResLocation(args);
+            } else if (function.equals("gb_AllLangResTarget_add_srs")) {
+                parseAddSrs(args);
+            } else if (function.equals("gb_SrsTarget_SrsTarget")) {
+                parseSrsTargetSrsTarget(args);
+            } else if (function.equals("gb_SrsTarget_set_include")) {
+                parseSrsTargetSetInclude(args);
+            } else if (function.equals("gb_SrsTarget_add_files")) {
+                parseSrsTargetAddFiles(args);
             } else {
                 throw new Exception("UNHANDLED FUNCTION " + function);
             }
@@ -229,8 +249,75 @@ public class AllLangResTarget extends BaseTarget {
     
     private void parseAllLangResTargetAllLangResTarget(String[] args) throws Exception {
         if (args.length != 1) {
-            throw new Exception("Expected 2 arg, got " + Arrays.toString(args));
+            throw new Exception("Expected 1 arg, got " + Arrays.toString(args));
         }
         this.name = args[0];
+    }
+    
+    private void parseSetResLocation(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Target name isn't " + name);
+        }
+        
+        resLocation = args[1];
+    }
+    
+    private void parseAddSrs(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Target name isn't " + name);
+        }
+        
+        srs.add(args[1]);
+    }
+    
+    private void parseSrsTargetSrsTarget(String[] args) throws Exception {
+        if (args.length != 1) {
+            throw new Exception("Expected 1 arg, got " + Arrays.toString(args));
+        }
+        String name = args[0];
+        SrsTarget srsTarget = new SrsTarget(name);
+        srsTargets.put(name, srsTarget);
+    }
+    
+    private void parseSrsTargetSetInclude(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        SrsTarget srsTarget = srsTargets.get(args[0]);
+        if (srsTarget == null) {
+            throw new Exception("No SrsTarget " + name);
+        }
+
+        Set<String> includes = new TreeSet<>();
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            if (!includes.add(arg)) {
+                throw new Exception("Duplicate include " + arg);
+            }
+        }
+        srsTarget.setIncludes(includes);
+    }
+    
+    private void parseSrsTargetAddFiles(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        SrsTarget srsTarget = srsTargets.get(args[0]);
+        if (srsTarget == null) {
+            throw new Exception("No SrsTarget " + name);
+        }
+
+        Set<String> files = new TreeSet<>();
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            if (!files.add(arg)) {
+                throw new Exception("Duplicate file object " + arg);
+            }
+        }
+        srsTarget.addFiles(files);
     }
 }

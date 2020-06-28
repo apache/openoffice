@@ -1,0 +1,11 @@
+def generate_actions(source, target, env, for_signature):
+    return 'echo %s %s > %s' % (sources[0], sources[1], target[0])
+
+bld = Builder(generator = generate_actions)
+env = Environment(BUILDERS = {'Foo' : bld})
+sources = ['file.input']
+env.Foo('target', sources)
+sources.append('file2.input')
+
+
+print('Starting build')

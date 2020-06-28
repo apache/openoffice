@@ -134,6 +134,10 @@ public class Module extends BaseTarget {
     public File getFilename() {
         return filename;
     }
+
+    public Map<String, AllLangResTarget> getAllLangResTargets() {
+        return allLangResTargets;
+    }
     
     public Map<String, Library> getLibraries() {
         return libraries;

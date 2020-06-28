@@ -289,7 +289,9 @@ class Windows(aooplatform.Platform):
         return self.layerComponentPrefixes[layer]
 
     def getExecutableEnvironment(self, soenv):
-        return {}
+        return {
+            'SOLARBINDIR' : soenv['OUTDIR'] + '/bin'
+        }
 
     def getTargetTypeGUIFlags(self, isGUI):
         if isGUI:

@@ -1,0 +1,29 @@
+#print("Dir(.)=" + Dir('.').path)
+#print("Dir(#.)=" + Dir('#.').path)
+
+srsTarget = SrsTarget('uui/res')
+srsTarget.SetInclude(env['CPPPATH'] + ['uui/source/'])
+srsTarget.AddFiles([
+        'source/cookiedg.src',
+        'source/ids.src',
+        'source/logindlg.src',
+        'source/masterpassworddlg.src',
+        'source/masterpasscrtdlg.src',
+        'source/openlocked.src',
+        'source/passworddlg.src',
+        'source/passworderrs.src',
+        'source/fltdlg.src',
+        'source/unknownauthdlg.src',
+        'source/sslwarndlg.src',
+        'source/secmacrowarnings.src',
+        'source/filechanged.src',
+        'source/alreadyopen.src',
+        'source/lockfailed.src',
+        'source/trylater.src',
+        'source/nameclashdlg.src',
+        'source/newerverwarn.src'
+
+])
+
+#ResTarget('uui', 'en-US', [srsTarget.objects])
+AllLangResTarget('uui', [srsTarget.objects])

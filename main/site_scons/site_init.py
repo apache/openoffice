@@ -41,6 +41,7 @@ env.Append(CXXFLAGS = platform.getCFlags(soenv))
 
 ## Add some common paths to the SCons environment, without AOO_ prefix
 
+env['SOLARSRC'] = soenv['SOLARSRC']
 env['OUTDIR'] = soenv['OUTDIR']
 env['WORKDIR'] = soenv['WORKDIR']
 env['SOLARENV'] = soenv['SOLARENV']
@@ -58,6 +59,7 @@ else:
 
 from sharedLibrary import AOOSharedLibrary
 from sharedObjects import AOOSharedObjects
+from AllLangRes import *
 
 def CreateSharedLibraryEnvironment(name, group):
     env = Environment()

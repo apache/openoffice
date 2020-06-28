@@ -246,7 +246,8 @@ class FreeBSD(aooplatform.Platform):
 
     def getExecutableEnvironment(self, soenv):
         return {
-            'LD_LIBRARY_PATH' : soenv['OUTDIR'] + '/lib'
+            'LD_LIBRARY_PATH' : soenv['OUTDIR'] + '/lib',
+            'SOLARBINDIR' : soenv['OUTDIR'] + '/bin'
         }
     
     def getTargetTypeGUIFlags(self, isGUI):
