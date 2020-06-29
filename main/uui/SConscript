@@ -1,9 +1,7 @@
 #print("Dir(.)=" + Dir('.').path)
 #print("Dir(#.)=" + Dir('#.').path)
 
-srsTarget = SrsTarget('uui/res')
-srsTarget.SetInclude(env['CPPPATH'] + ['uui/source/'])
-srsTarget.AddFiles([
+srsTarget = SrsTarget('uui/res', [
         'source/cookiedg.src',
         'source/ids.src',
         'source/logindlg.src',
@@ -22,8 +20,8 @@ srsTarget.AddFiles([
         'source/trylater.src',
         'source/nameclashdlg.src',
         'source/newerverwarn.src'
-
 ])
+srsTarget.SetIncludes(env['CPPPATH'] + ['uui/source'])
 
 #ResTarget('uui', 'en-US', [srsTarget.objects])
 AllLangResTarget('uui', [srsTarget.objects])

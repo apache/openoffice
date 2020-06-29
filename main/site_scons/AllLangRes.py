@@ -111,60 +111,61 @@ class ResTarget:
             imageList.append('-lip=' + abspath)
 
 
-def build_srs(target, source, env):
-    # Concatenates the sources into the target.
-    # shutil.copyfileobj() was benchmarked as being the fastest:
-    # https://stackoverflow.com/questions/13613336/python-concatenate-text-files
-    with open(target[0].abspath, 'wb') as outfd:
-        for f in source:
-            with open(f.abspath, 'rb') as infd:
-                shutil.copyfileobj(infd, outfd)
-    return 0
-
 class SrsTarget:
-    def __init__(self, srsPath):
+    def __init__(self, srsPath, srcFiles):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(ENV=platform.getExecutableEnvironment(soenv))
+
         # This will come apart at the seams if it finds a .src file
         # with UTF-8 BOM but non-UTF-8 contents, like we produce with transex3.
         # So use a different filename extension for those.
         self.env.Append(SCANNERS=ClassicCPP("AOOSRCScanner", '.src', "CPPPATH", '^[ \t]*#[ \t]*(?:include|import)[ \t]*(<|")([^>"]+)(>|")'))
         self.srsPath = srsPath
 
-    def SetInclude(self, includes):
-        self.env.Replace(CPPPATH=includes)
+        self.parts = []
+        partTargets = []
+        for srcFile in srcFiles:
+            srsPartTarget = SrsPartTarget(self.env, srcFile)
+            self.parts.append(srsPartTarget)
+            partTargets.append(srsPartTarget.target)
 
-    def AddFiles(self, files):
-        parts = []
-        for file in files:
-            srsPartTarget = SrsPartTarget(self.env, file)
-            parts.append(srsPartTarget.target)
-        self.objects = self.env.Command('Res/SrsTarget/' + self.srsPath + '.srs', parts,
-            Action(build_srs))
+        self.objects = self.env.Command('Res/SrsTarget/' + self.srsPath + '.srs', partTargets,
+            Action(self.build_srs))
+
+    def SetIncludes(self, includes):
+        for srsPart in self.parts:
+            srsPart.SetIncludes(includes)
+
+    @staticmethod
+    def build_srs(target, source, env):
+        # Concatenates the sources into the target.
+        # shutil.copyfileobj() was benchmarked as being the fastest:
+        # https://stackoverflow.com/questions/13613336/python-concatenate-text-files
+        with open(target[0].abspath, 'wb') as outfd:
+            for f in source:
+                with open(f.abspath, 'rb') as infd:
+                    shutil.copyfileobj(infd, outfd)
+        return 0
 
 class SrsPartTarget:
     def __init__(self, env, file):
         srcFile = File(file)
         dstFile = File('Res/SrsPartTarget/' + file + '.part')
-#        print('srcFile.path = ' + srcFile.path)
-#        print('srcFile.abspath = ' + srcFile.abspath)
-#        print('srcFile.srcnode().path = ' + srcFile.srcnode().path)
-#        print('srcFile.srcnode().abspath = ' + srcFile.srcnode().abspath)
 
         # We need private env changes
-        env = env.Clone()
+        self.env = env.Clone()
 
         # If we're translating, there is an extra step
-        withLang = env.get('AOO_WITH_LANG')
+        withLang = self.env.get('AOO_WITH_LANG')
         if withLang == None or withLang == '':
             translatedFile = srcFile
         else:
             sdf = '${LOCDIR}/l10n/${INPATH}/misc/sdf/' + srcFile.Dir('.').srcnode().path + '/localize.sdf'
-            env.Depends(dstFile, sdf)
-            env['AOO_SDF'] = sdf
-            env['AOO_PRJ'] = srcFile.srcnode().path.split('/')[0]
+            self.env.Depends(dstFile, sdf)
+            self.env['AOO_SDF'] = sdf
+            self.env['AOO_PRJ'] = srcFile.srcnode().path.split('/')[0]
             translatedFile = File('Res/SrsPartMergeTarget/' + file + '.partmerge')
-            env.Command(translatedFile, srcFile.srcnode(), ' '.join([
+            self.env.Command(translatedFile, srcFile.srcnode(), ' '.join([
                 '${OUTDIR}/bin/transex3',
                 '-p ${AOO_PRJ}',
                 '-i ${SOURCE}',
@@ -173,9 +174,9 @@ class SrsPartTarget:
                 '-l all']))
 
         # Because we're using a custom builder, we have to build includes and defs manually
-        env['RSC_CPPPATH'] = '-I' + ' -I'.join(env['CPPPATH'])
-        env['RSC_CPPDEFINES'] = '-D' + ' -D'.join(env['CPPDEFINES'])
-        self.target = env.Command(dstFile, translatedFile, ' '.join([
+        self.env['RSC_CPPPATH'] = '-I' + ' -I'.join(self.env['CPPPATH'])
+        self.env['RSC_CPPDEFINES'] = '-D' + ' -D'.join(self.env['CPPDEFINES'])
+        self.target = self.env.Command(dstFile, translatedFile, ' '.join([
             '${OUTDIR}/bin/rsc',
             '-s',
             '${RSC_CPPPATH}',
@@ -183,7 +184,6 @@ class SrsPartTarget:
             '-fp=$TARGET',
             '$SOURCE']))
 
-
-class SrsPartMergeTarget:
-    def __init__(self):
-        pass
+    def SetIncludes(self, includes):
+        self.env.Replace(CPPPATH=includes)
+        self.env['RSC_CPPPATH'] = '-I' + ' -I'.join(self.env['CPPPATH'])
