@@ -33,6 +33,7 @@ import org.apache.openoffice.gotoSCons.targets.Library;
 import org.apache.openoffice.gotoSCons.targets.Module;
 import org.apache.openoffice.gotoSCons.targets.Pkg;
 import org.apache.openoffice.gotoSCons.targets.Repository;
+import org.apache.openoffice.gotoSCons.targets.SrsTarget;
 import org.apache.openoffice.gotoSCons.targets.StaticLibrary;
 
 public class SConsConverter {
@@ -166,6 +167,54 @@ public class SConsConverter {
     }
     
     private void convertAllLangResTarget(AllLangResTarget allLangResTarget) throws Exception {
+        String srsVariableName = allLangResTarget.getName() + "Srs";
+        if (allLangResTarget.getSrs().size() != 1) {
+            throw new Exception("AllLangResTarget needs exactly 1 SrsTarget");
+        }
+        String srsName = allLangResTarget.getSrs().get(0);
+        SrsTarget srsTarget = allLangResTarget.getSrsTargets().get(srsName);
+        if (srsTarget == null) {
+            throw new Exception("No SrsTarget found for " + srsName);
+        }
+        out.println(String.format("%s = AOOSrsTarget('%s', [", srsVariableName, srsName));
+        boolean first = true;
+        for (String file : srsTarget.getFiles()) {
+            if (!first) {
+                out.println(",");
+            }
+            out.print("    '" + file + "'");
+            first = false;
+        }
+        out.println();
+        out.println("])");
+        
+        if (!srsTarget.getIncludes().isEmpty()) {
+            out.println(srsVariableName + ".AddInclude([");
+            boolean firstInclude = true;
+            for (String include : srsTarget.getIncludes()) {
+                if (include.equals("$$(INCLUDE)")) {
+                    continue;
+                }
+                if (include.startsWith("-I")) {
+                    include = include.substring(2);
+                }
+                if (include.startsWith("$(SRCDIR)/")) {
+                    int firstSlash = include.indexOf('/');
+                    include = include.substring(firstSlash + 1);
+                }
+
+                if (!firstInclude) {
+                    out.println(",");
+                }
+                out.print("    '" + include + "'");
+                firstInclude = false;
+            }
+            out.println();
+            out.println("])");
+        }
+        
+        out.println(String.format("AOOAllLangResTarget('%s', %s)", allLangResTarget.getName(), srsVariableName));
+        
         out.println();
     }
     

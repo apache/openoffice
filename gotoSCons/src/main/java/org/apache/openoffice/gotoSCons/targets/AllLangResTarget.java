@@ -203,6 +203,7 @@ public class AllLangResTarget extends BaseTarget {
     private File filename;
     private String name;
     private String resLocation;
+    private Set<String> imageLocations = new TreeSet<>();
     private ArrayList<String> srs = new ArrayList<>();
     private Map<String,SrsTarget> srsTargets = new TreeMap<>();
 
@@ -231,6 +232,8 @@ public class AllLangResTarget extends BaseTarget {
                 parseAllLangResTargetAllLangResTarget(args);
             } else if (function.equals("gb_AllLangResTarget_set_reslocation")) {
                 parseSetResLocation(args);
+            } else if (function.equals("gb_AllLangResTarget_set_imagelocations")) {
+                parseSetImageLocations(args);
             } else if (function.equals("gb_AllLangResTarget_add_srs")) {
                 parseAddSrs(args);
             } else if (function.equals("gb_SrsTarget_SrsTarget")) {
@@ -265,6 +268,21 @@ public class AllLangResTarget extends BaseTarget {
         resLocation = args[1];
     }
     
+    private void parseSetImageLocations(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Target name isn't " + name);
+        }
+        
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            if (!imageLocations.add(arg)) {
+                throw new Exception("Duplicate image location " + arg);
+            }
+        }
+    }
+    
     private void parseAddSrs(String[] args) throws Exception {
         if (args.length != 2) {
             throw new Exception("Expected 2 args, got " + Arrays.toString(args));
@@ -273,7 +291,7 @@ public class AllLangResTarget extends BaseTarget {
             throw new Exception("Target name isn't " + name);
         }
         
-        srs.add(args[1]);
+        srs.add(args[1].trim());
     }
     
     private void parseSrsTargetSrsTarget(String[] args) throws Exception {
@@ -319,5 +337,25 @@ public class AllLangResTarget extends BaseTarget {
             }
         }
         srsTarget.addFiles(files);
+    }
+
+    public String getName() {
+        return name;
+    }
+    
+    public Set<String> getImageLocations() {
+        return imageLocations;
+    }
+
+    public String getResLocation() {
+        return resLocation;
+    }
+
+    public ArrayList<String> getSrs() {
+        return srs;
+    }
+
+    public Map<String, SrsTarget> getSrsTargets() {
+        return srsTargets;
     }
 }

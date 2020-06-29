@@ -1,7 +1,7 @@
 #print("Dir(.)=" + Dir('.').path)
 #print("Dir(#.)=" + Dir('#.').path)
 
-srsTarget = SrsTarget('uui/res', [
+srsTarget = AOOSrsTarget('uui/res', [
         'source/cookiedg.src',
         'source/ids.src',
         'source/logindlg.src',
@@ -21,7 +21,9 @@ srsTarget = SrsTarget('uui/res', [
         'source/nameclashdlg.src',
         'source/newerverwarn.src'
 ])
-srsTarget.SetIncludes(env['CPPPATH'] + ['uui/source'])
+srsTarget.AddInclude([
+    'uui/source'
+])
 
 #ResTarget('uui', 'en-US', [srsTarget.objects])
-AllLangResTarget('uui', [srsTarget.objects])
+AOOAllLangResTarget('uui', srsTarget)

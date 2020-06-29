@@ -28,8 +28,8 @@ import os.path
 
 ResTarget_DEFIMAGESLOCATION='${SOLARSRC}/default_images/'
 
-class AllLangResTarget:
-    def __init__(self, name, srsTargets):
+class AOOAllLangResTarget:
+    def __init__(self, name, srsTarget):
         self.env = DefaultEnvironment().Clone()
 
         withLang = self.env.get('AOO_WITH_LANG')
@@ -42,7 +42,7 @@ class AllLangResTarget:
 
         self.resTargets = []
         for lang in langs:
-            self.resTargets.append(ResTarget(name, lang, srsTargets))
+            self.resTargets.append(AOOResTarget(name, lang, srsTarget.target))
 
     def SetResLocation(self, resLocation):
         for resTarget in self.resTargets:
@@ -53,7 +53,7 @@ class AllLangResTarget:
             resTarget.SetImageLocations(imageLocations)
 
 
-class ResTarget:
+class AOOResTarget:
     def __init__(self, library, lang, srsTargets):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(ENV=platform.getExecutableEnvironment(soenv))
@@ -111,7 +111,7 @@ class ResTarget:
             imageList.append('-lip=' + abspath)
 
 
-class SrsTarget:
+class AOOSrsTarget:
     def __init__(self, srsPath, srcFiles):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(ENV=platform.getExecutableEnvironment(soenv))
@@ -125,16 +125,18 @@ class SrsTarget:
         self.parts = []
         partTargets = []
         for srcFile in srcFiles:
-            srsPartTarget = SrsPartTarget(self.env, srcFile)
+            srsPartTarget = AOOSrsPartTarget(self.env, srcFile)
             self.parts.append(srsPartTarget)
             partTargets.append(srsPartTarget.target)
 
-        self.objects = self.env.Command('Res/SrsTarget/' + self.srsPath + '.srs', partTargets,
+        self.target = self.env.Command(
+            'Res/SrsTarget/' + self.srsPath + '.srs',
+            partTargets,
             Action(self.build_srs))
 
-    def SetIncludes(self, includes):
+    def AddInclude(self, includes):
         for srsPart in self.parts:
-            srsPart.SetIncludes(includes)
+            srsPart.AddInclude(includes)
 
     @staticmethod
     def build_srs(target, source, env):
@@ -147,7 +149,7 @@ class SrsTarget:
                     shutil.copyfileobj(infd, outfd)
         return 0
 
-class SrsPartTarget:
+class AOOSrsPartTarget:
     def __init__(self, env, file):
         srcFile = File(file)
         dstFile = File('Res/SrsPartTarget/' + file + '.part')
@@ -184,6 +186,6 @@ class SrsPartTarget:
             '-fp=$TARGET',
             '$SOURCE']))
 
-    def SetIncludes(self, includes):
-        self.env.Replace(CPPPATH=includes)
+    def AddInclude(self, includes):
+        self.env.Append(CPPPATH=includes)
         self.env['RSC_CPPPATH'] = '-I' + ' -I'.join(self.env['CPPPATH'])

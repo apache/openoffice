@@ -32,4 +32,12 @@ public class SrsTarget {
             }
         }
     }
+
+    public Set<String> getFiles() {
+        return files;
+    }
+
+    public Set<String> getIncludes() {
+        return includes;
+    }
 }
