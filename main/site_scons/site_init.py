@@ -45,6 +45,8 @@ env['SOLARSRC'] = soenv['SOLARSRC']
 env['OUTDIR'] = soenv['OUTDIR']
 env['WORKDIR'] = soenv['WORKDIR']
 env['SOLARENV'] = soenv['SOLARENV']
+env['LOCDIR'] = Dir(soenv['SOLARSRC']).Dir('..').abspath + '/extras'
+env['INPATH'] = soenv['INPATH']
 
 ## Useful constants
 

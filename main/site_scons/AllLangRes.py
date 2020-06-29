@@ -125,6 +125,9 @@ class SrsTarget:
     def __init__(self, srsPath):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(ENV=platform.getExecutableEnvironment(soenv))
+        # This will come apart at the seams if it finds a .src file
+        # with UTF-8 BOM but non-UTF-8 contents, like we produce with transex3.
+        # So use a different filename extension for those.
         self.env.Append(SCANNERS=ClassicCPP("AOOSRCScanner", '.src', "CPPPATH", '^[ \t]*#[ \t]*(?:include|import)[ \t]*(<|")([^>"]+)(>|")'))
         self.srsPath = srsPath
 
@@ -142,20 +145,44 @@ class SrsTarget:
 class SrsPartTarget:
     def __init__(self, env, file):
         srcFile = File(file)
-        dstFile = File('Res/SrsPartTarget/' + file)
+        dstFile = File('Res/SrsPartTarget/' + file + '.part')
 #        print('srcFile.path = ' + srcFile.path)
 #        print('srcFile.abspath = ' + srcFile.abspath)
 #        print('srcFile.srcnode().path = ' + srcFile.srcnode().path)
 #        print('srcFile.srcnode().abspath = ' + srcFile.srcnode().abspath)
 
-        env2 = env.Clone()
-        for var in env['CPPPATH']:
-            env2.Append(RSC_CPPPATH = ' -I' + var)
-        for var in env['CPPDEFINES']:
-            env2.Append(RSC_CPPDEFINES = ' -D' + var)
+        # We need private env changes
+        env = env.Clone()
 
-        self.target = env2.Command(dstFile, srcFile.srcnode(),
-            '${OUTDIR}/bin/rsc -s ${RSC_CPPPATH} ${RSC_CPPDEFINES} -fp=$TARGET $SOURCE')
+        # If we're translating, there is an extra step
+        withLang = env.get('AOO_WITH_LANG')
+        if withLang == None or withLang == '':
+            translatedFile = srcFile
+        else:
+            sdf = '${LOCDIR}/l10n/${INPATH}/misc/sdf/' + srcFile.Dir('.').srcnode().path + '/localize.sdf'
+            env.Depends(dstFile, sdf)
+            env['AOO_SDF'] = sdf
+            env['AOO_PRJ'] = srcFile.srcnode().path.split('/')[0]
+            translatedFile = File('Res/SrsPartMergeTarget/' + file + '.partmerge')
+            env.Command(translatedFile, srcFile.srcnode(), ' '.join([
+                '${OUTDIR}/bin/transex3',
+                '-p ${AOO_PRJ}',
+                '-i ${SOURCE}',
+                '-o ${TARGET}',
+                '-m ${AOO_SDF}',
+                '-l all']))
+
+        # Because we're using a custom builder, we have to build includes and defs manually
+        env['RSC_CPPPATH'] = '-I' + ' -I'.join(env['CPPPATH'])
+        env['RSC_CPPDEFINES'] = '-D' + ' -D'.join(env['CPPDEFINES'])
+        self.target = env.Command(dstFile, translatedFile, ' '.join([
+            '${OUTDIR}/bin/rsc',
+            '-s',
+            '${RSC_CPPPATH}',
+            '${RSC_CPPDEFINES}',
+            '-fp=$TARGET',
+            '$SOURCE']))
+
 
 class SrsPartMergeTarget:
     def __init__(self):
