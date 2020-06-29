@@ -71,8 +71,10 @@ class AOOResTarget:
         if os.path.exists(Dir(self.env.subst('${AOO_DEFIMAGESLOCATION}') + self.resLocation).abspath):
             submodulePath = Dir(self.env.subst('${AOO_DEFIMAGESLOCATION}') + self.resLocation)
         self.env['AOO_SUBMODULE'] = submodulePath
-        self.env['AOO_IMAGELISTDIR'] = File('Res/ResTarget/' + library + lang + '.ilst').Dir('.').abspath
+        imageListFile = File('Res/ResTarget/' + library + lang + '.ilst')
+        self.env['AOO_IMAGELISTDIR'] = imageListFile.Dir('.').abspath
         targetFile = File('Res/ResTarget/' + library + lang + '.res')
+        self.env.SideEffect(imageListFile, targetFile)
         self.env.Command(targetFile, srsTargets, ' '.join([
             '${OUTDIR}/bin/rsc',
             '-r',
@@ -86,6 +88,8 @@ class AOOResTarget:
             '-subGLOBALRES=${AOO_DEFIMAGESLOCATION}res',
             '-oil=${AOO_IMAGELISTDIR}',
             '${SOURCE}']))
+        self.env.Install('${OUTDIR}/bin', targetFile)
+        self.env.Install('${OUTDIR}/res/img', imageListFile)
 
     def SetReslocation(self, resLocation):
         self.resLocation = resLocation
@@ -163,10 +167,10 @@ class AOOSrsPartTarget:
             translatedFile = srcFile
         else:
             sdf = '${LOCDIR}/l10n/${INPATH}/misc/sdf/' + srcFile.Dir('.').srcnode().path + '/localize.sdf'
-            self.env.Depends(dstFile, sdf)
             self.env['AOO_SDF'] = sdf
             self.env['AOO_PRJ'] = srcFile.srcnode().path.split('/')[0]
             translatedFile = File('Res/SrsPartMergeTarget/' + file + '.partmerge')
+            self.env.Depends(translatedFile, sdf)
             self.env.Command(translatedFile, srcFile.srcnode(), ' '.join([
                 '${OUTDIR}/bin/transex3',
                 '-p ${AOO_PRJ}',
