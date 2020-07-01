@@ -158,7 +158,14 @@ static const char* pStdEncNames[] = {
 
 // --------------------------------------------------------------------
 
-// TOP DICT keywords (also covers PRIV DICT keywords)
+/** TOP DICT keywords (also covers PRIV DICT keywords)
+ *
+ * Refer to the CFF Specification, tables 9 and 23.
+ *
+ * This array is indexed by operand.
+ *
+ * The first character tells the type of operand ('s': SID, 'b': boolean etc.).
+ */
 static const char* pDictOps[] = {
 	"sVersion",			"sNotice",				"sFullName",		"sFamilyName",
 	"sWeight",			"aFontBBox",			"dBlueValues",		"dOtherBlues",
@@ -172,7 +179,16 @@ static const char* pDictOps[] = {
 
 // --------------------------------------------------------------------
 
-// TOP DICT escapes (also covers PRIV DICT escapes)
+/** TOP DICT escapes (also covers PRIV DICT escapes)
+ *
+ * Refer to the CFF Specification, tables 9 and 23.
+ *
+ * These operators come after the escape operator (no. 12).
+ *
+ * This array is indexed by operand.
+ *
+ * The first character tells the type of operand ('s': SID, 'b': boolean etc.).
+ */
 static const char* pDictEscs[] = {
 	"sCopyright",			"bIsFixedPitch",	"nItalicAngle",		"nUnderlinePosition",
 	"nUnderlineThickness",	"nPaintType",		"tCharstringType",	"aFontMatrix",
@@ -290,11 +306,17 @@ struct TYPE2OP
 
 // ====================================================================
 
+/** Data layout of a CFF FontSet
+ *
+ * Refer to the CFF specification, chapter 2
+ */
 struct CffGlobal
 {
 	explicit CffGlobal();
 
+	// Offset of the Name INDEX inside the CFF data
 	int		mnNameIdxBase;
+	// Number of objects stored in the Name INDEX
 	int		mnNameIdxCount;
 	int		mnStringIdxBase;
 	int		mnStringIdxCount;
@@ -353,34 +375,19 @@ struct CffLocal
 
 // ====================================================================
 
-class SubsetterContext
-{
-public:
-	virtual ~SubsetterContext( void);
-	virtual bool emitAsType1( class Type1Emitter&,
-				const sal_GlyphId* pGlyphIds, const U8* pEncoding,
-				GlyphWidth* pGlyphWidths, int nGlyphCount, FontSubsetInfo& ) = 0;
-};
-
-// --------------------------------------------------------------------
-
-SubsetterContext::~SubsetterContext( void)
-{}
-
-// ====================================================================
-
 class CffSubsetterContext
-:	public SubsetterContext
-,	private CffGlobal
+:	private CffGlobal
 {
 public:
-	static const int NMAXSTACK = 48;	// see CFF.appendixB
-	static const int NMAXHINTS = 2*96;	// see CFF.appendixB
-	static const int NMAXTRANS = 32;	// see CFF.appendixB
+	// Refer to Type 2 charstring format appendix B, "Type 2 Charstring Implementation Limits"
+	static const int NMAXSTACK = 48;	// argument stack
+	static const int NMAXHINTS = 2*96;	// number of stem hints (H/V total)
+	static const int NMAXTRANS = 32;	// TransientArray elements
 public:
 	explicit CffSubsetterContext( const U8* pBasePtr, int nBaseLen);
 	virtual	~CffSubsetterContext( void);
 
+	// Begin parsing the CFF data
 	void	initialCffRead( void);
 	bool	emitAsType1( class Type1Emitter&,
 				const sal_GlyphId* pGlyphIds, const U8* pEncoding,
@@ -397,9 +404,12 @@ private:
 	void	callType2Subr( bool bGlobal, int nSubrNumber);
 	long	getReadOfs( void) const { return (long)(mpReadPtr - mpBasePtr);}
 
+	// First byte of CFF font data
 	const U8* mpBasePtr;
+	// Last byte of CFF font data
 	const U8* mpBaseEnd;
 
+	// Moving cursors inside CFF font data
 	const U8* mpReadPtr;
 	const U8* mpReadEnd;
 
@@ -410,14 +420,29 @@ private:
 	long	mnCntrMask;
 
 private:
+	/** Prepare to access an element inside a CFF/CID index table
+	 *
+	 * nIndexBase: offset of the INDEX structure inside the CFF font data.
+	 * nDataIndex: offset of the element inside the INDEX structure.
+	 *
+	 * Sets mpReadPtr to the beginning of the element and mpReadEnd to the end of the element.
+	 *
+	 * Returns the size of the element, or -1 if the data is not valid (e.g. indices are too big).
+	 */
 	int		seekIndexData( int nIndexBase, int nDataIndex);
+	/** Seek to the end of an INDEX structure
+	 *
+	 * nIndexBase: offset of the INDEX structure inside the CFF font data.
+	 *
+	 * Sets mpReadPtr to the first byte after the indicated structure.
+	 */
 	void	seekIndexEnd( int nIndexBase);
 
 private:
 	const char**	mpCharStringOps;
 	const char**	mpCharStringEscs;
 
-	CffLocal	maCffLocal[256];
+	std::vector<CffLocal>	maCffLocal;
 	CffLocal*	mpCffLocal;
 
 	void		readDictOp( void);
@@ -427,6 +452,12 @@ private:
 	int			getGlyphSID( int nGlyphIndex) const;
 	const char* getGlyphName( int nGlyphIndex);
 
+	/** Decode an integer DICT Data Operand and push it.
+	 *
+	 * Refer to the CFF Specification, table 3.
+	 *
+	 * Advances mpReadPtr.
+	 */
 	void	read2push( void);
 	void	pop2write( void);
 	void	writeType1Val( ValType);
@@ -465,8 +496,12 @@ public: // TODO: is public really needed?
 
 private:
 	// typeop exceution context
+
+	// Count of mnValStack elements 
 	int	mnStackIdx;
+	// Stack for holding CFF DICT operands
 	ValType	mnValStack[ NMAXSTACK+4];
+	// Transient array for Type 2 storage operators (PUT, GET)
 	ValType	mnTransVals[ NMAXTRANS];
 
 	int	mnHintSize;
@@ -487,7 +522,7 @@ CffSubsetterContext::CffSubsetterContext( const U8* pBasePtr, int nBaseLen)
 ,	maCharWidth(-1)
 {
 //	setCharStringType( 1);
-	// TODO: new CffLocal[ mnFDAryCount];
+	maCffLocal.resize(1);
 	mpCffLocal = &maCffLocal[0];
 }
 
@@ -495,7 +530,6 @@ CffSubsetterContext::CffSubsetterContext( const U8* pBasePtr, int nBaseLen)
 
 CffSubsetterContext::~CffSubsetterContext( void)
 {
-	// TODO: delete[] maCffLocal;
 }
 
 // --------------------------------------------------------------------
@@ -606,23 +640,28 @@ void CffSubsetterContext::setCharStringType( int nVal)
 
 // --------------------------------------------------------------------
 
+/** Read DICT operator at mpReadPtr.
+ *
+ * Sets the attributes of CffSubsetterContext::mpCffLocal
+ */
 void CffSubsetterContext::readDictOp( void)
 {
 	ValType nVal = 0;
-    int nInt = 0;
+	int nInt = 0;
 	const U8 c = *mpReadPtr;
-	if( c <= 21 ) {
+	if( c <= 21 ) { // we are looking at an operator
 		int nOpId = *(mpReadPtr++);
 		const char* pCmdName;
 		if( nOpId != 12)
 			pCmdName = pDictOps[ nOpId];
-		else {
+		else { // escape: the operator is indicated in the following byte
 			const U8 nExtId = *(mpReadPtr++);
 			pCmdName = pDictEscs[ nExtId];
 			nOpId = 900 + nExtId;
 		}
 
 		//TODO: if( nStackIdx > 0)
+		// The first byte of pCmdName indicates the type of operand
 		switch( *pCmdName) {
 		default: fprintf( stderr, "unsupported DictOp.type=\'%c\'\n", *pCmdName); break;
 		case 'b':	// bool
@@ -714,12 +753,10 @@ void CffSubsetterContext::readDictOp( void)
 		}
 
 		return; 
-	}
-
-	if( (c >= 32) || (c == 28) ) {
+	} else if( (c >= 32) || (c == 28) ) {
 //		--mpReadPtr;
 		read2push();
-	} else if( c == 29 ) {		// longint
+	} else if( c == 29 ) { // we are looking at a 32-bit operand
 		++mpReadPtr;			// skip 29
 		int nS32 = mpReadPtr[0] << 24;
 		nS32 += mpReadPtr[1] << 16;
@@ -730,7 +767,7 @@ void CffSubsetterContext::readDictOp( void)
 		mpReadPtr += 4;
 		nVal = static_cast<ValType>(nS32);
 		push( nVal );
-	} else if( c == 30) {		// real number
+	} else if( c == 30) { // we are looking at a real number operand
 		++mpReadPtr; // skip 30
 		const RealType fReal = readRealVal();
 		// push value onto stack
@@ -747,7 +784,7 @@ void CffSubsetterContext::read2push()
 
 	const U8*& p = mpReadPtr;
 	const U8 c = *p;
-	if( c == 28 ) {
+	if( c == 28 ) {			// -32767..+32767
 		short nS16 = (p[1] << 8) + p[2];
 		if( (sizeof(nS16) != 2) && (nS16 & (1<<15)))
 			nS16 |= (~0U) << 15;	// assuming 2s complement
@@ -1313,13 +1350,12 @@ void CffSubsetterContext::callType2Subr( bool bGlobal, int nSubrNumber)
 	const U8* const pOldReadPtr = mpReadPtr;
 	const U8* const pOldReadEnd = mpReadEnd;
 
-	int nLen = 0;
 	if( bGlobal ) {
 		nSubrNumber += mnGlobalSubrBias;
-		nLen = seekIndexData( mnGlobalSubrBase, nSubrNumber);
+		seekIndexData( mnGlobalSubrBase, nSubrNumber);
 	} else {
 		nSubrNumber += mpCffLocal->mnLocalSubrBias;
-		nLen = seekIndexData( mpCffLocal->mnLocalSubrBase, nSubrNumber);
+		seekIndexData( mpCffLocal->mnLocalSubrBase, nSubrNumber);
 	}
 
 	while( mpReadPtr < mpReadEnd)
@@ -1486,7 +1522,6 @@ RealType CffSubsetterContext::readRealVal()
 
 // --------------------------------------------------------------------
 
-// prepare to access an element inside a CFF/CID index table
 int CffSubsetterContext::seekIndexData( int nIndexBase, int nDataIndex)
 {
 	assert( (nIndexBase > 0) && (mpBasePtr + nIndexBase + 3 <= mpBaseEnd));
@@ -1527,7 +1562,6 @@ int CffSubsetterContext::seekIndexData( int nIndexBase, int nDataIndex)
 
 // --------------------------------------------------------------------
 
-// skip over a CFF/CID index table
 void CffSubsetterContext::seekIndexEnd( int nIndexBase)
 {
 	assert( (nIndexBase > 0) && (mpBasePtr + nIndexBase + 3 <= mpBaseEnd));
@@ -1666,7 +1700,8 @@ void CffSubsetterContext::initialCffRead( void)
 //		assert( mnFontDictBase == tellRel());
 		mpReadPtr = mpBasePtr + mnFontDictBase;
 		mnFDAryCount = (mpReadPtr[0]<<8) + mpReadPtr[1];
-		assert( mnFDAryCount < (int)(sizeof(maCffLocal)/sizeof(*maCffLocal)));
+		if (maCffLocal.size() < static_cast<size_t>(mnFDAryCount))
+			maCffLocal.resize(mnFDAryCount);
 
 		// read FDArray details to get access to the PRIVDICTs
 		for( int i = 0; i < mnFDAryCount; ++i) {
