@@ -1,7 +1,7 @@
 #!/usr/bin/env perl
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,21 +9,21 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 =head1 NAME
 
-    download_external_libraries.pl - Load missing tarballs specified in main/external_libs.lst.
+    download_external_libraries.pl - Load missing tarballs specified in main/external_deps.lst.
 
 =head1 SYNOPSIS
 
@@ -33,12 +33,12 @@
 
 =head1 DESCRIPTION
 
-    The contents of the main/external_libs.lst file are used to determine the
+    The contents of the main/external_deps.lst file are used to determine the
     external library tarballs that are missing from ext_sources/.
 
     Individual libraries can be ignored depending on the values of environment variables.
 
-    Format of the main/external_libs.lst file:
+    Format of the main/external_deps.lst file:
 
     The file is line based.
     Comments start with a # and go to the end of the line and are ignored.
@@ -54,7 +54,7 @@
     Some variables have special names:
     - MD5 is the expected MD5 checksum of the library tarball.
     - SHA1 is the expected SHA1 checksum of the library tarball.
-    - URL1 to URL9 specify from where to download the tarball.  The urls are tried in order.
+    - URL1 to URL9 specify from where to download the tarball. The URLs are tried in order.
       The first successful download (download completed and checksum match) stops the iteration.
 
     Expressions are explained below in the comment of EvaluateExpression().
@@ -71,7 +71,7 @@
         URL2 = $(DefaultSite)$(MD5)-$(name)
 
     This tries to load a library first from some-other-internet-site.org and if
-    that fails from some-internet-site.org.  The library is stored as $(MD5)-$(name)
+    that fails from some-internet-site.org. The library is stored as $(MD5)-$(name)
     even when it is loaded as another-name.tgz.
 
 =cut
@@ -98,7 +98,7 @@ my @Missing = ();
 
 =head3 ProcessDataFile
 
-    Read the data file, typically named main/external_libs.lst, find the external
+    Read the data file, typically named main/external_deps.lst, find the external
     library tarballs that are not yet present in ext_sources/ and download them.
 
 =cut
@@ -225,7 +225,7 @@ sub AddDownloadRequest ($$)
         'type' is either 'MD5' or 'SHA1', the type or algorithm of the checksum,
         'value' is the actual checksum
     Otherwise undef is returned.
-    
+
 =cut
 sub GetChecksum()
 {
@@ -294,17 +294,17 @@ sub SubstituteVariables ($)
 
 =head3 EvaluateExpression($expression)
 
-    Evaluate the $expression of an "if" statement to either 0 or 1.  It can
+    Evaluate the $expression of an "if" statement to either 0 or 1. It can
     be a single term (see EvaluateTerm for a description), or several terms
-    separated by either all ||s or &&s.  A term can also be an expression
-    enclosed in parantheses.
+    separated by either all ||s or &&s. A term can also be an expression
+    enclosed in parentheses.
 
 =cut
 sub EvaluateExpression ($)
 {
     my $expression = shift;
 
-    # Evaluate sub expressions enclosed in parantheses.
+    # Evaluate sub expressions enclosed in parentheses.
     while ($expression =~ /^(.*)\(([^\(\)]+)\)(.*)$/)
     {
         $expression = $1 . (EvaluateExpression($2) ? " true " : " false ") . $3;
@@ -343,8 +343,8 @@ sub EvaluateExpression ($)
 
     Evaluate the $term to either 0 or 1.
     A term is either the literal "true", which evaluates to 1, or an expression
-    of the form NAME=VALUE or NAME!=VALUE.  NAME is the name of an environment
-    variable and VALUE any string.  VALUE may be empty.
+    of the form NAME=VALUE or NAME!=VALUE. NAME is the name of an environment
+    variable and VALUE any string. VALUE may be empty.
 
 =cut
 sub EvaluateTerm ($)
@@ -390,7 +390,7 @@ sub EvaluateTerm ($)
 =head IsPresent($name, $given_checksum)
 
     Check if an external library tar ball with the basename $name already
-    exists in the target directory TARFILE_LOCATION.  The basename is
+    exists in the target directory TARFILE_LOCATION. The basename is
     prefixed with the MD5 or SHA1 checksum.
     If the file exists then its checksum is compared to the given one.
 
@@ -402,7 +402,7 @@ sub IsPresent ($$)
     my $filename = File::Spec->catfile($ENV{'TARFILE_LOCATION'}, $given_checksum->{'value'}."-".$name);
     return 0 unless -f $filename;
 
-    # File exists.  Check if its checksum is correct.
+    # File exists. Check if its checksum is correct.
     my $checksum;
     if ( ! defined $given_checksum)
     {
@@ -430,7 +430,7 @@ sub IsPresent ($$)
 
     if ($given_checksum->{'value'} ne $checksum)
     {
-        # Checksum does not match.  Delete the file.
+        # Checksum does not match. Delete the file.
         print "$name exists, but checksum does not match => deleting\n";
         unlink($filename);
         return 0;
@@ -449,7 +449,7 @@ sub IsPresent ($$)
 
     Download a set of files specified by @Missing.
 
-    For http URLs there may be an optional checksum.  If it is present then downloaded
+    For http URLs there may be an optional checksum. If it is present then downloaded
     files that do not match that checksum lead to abortion of the current process.
     Files that have already been downloaded are not downloaded again.
 
@@ -497,7 +497,7 @@ sub Download ()
 
 =head3 DownloadFile($name,$URL,$checksum)
 
-    Download a single external library tarball.  It origin is given by $URL.
+    Download a single external library tarball. Its origin is given by $URL.
     Its destination is $(TARFILE_LOCATION)/$checksum-$name.
 
 =cut
@@ -601,7 +601,7 @@ sub DownloadFile ($$$)
 
 =head3 CheckDownloadDestination ()
 
-    Make sure that the download destination $TARFILE_LOCATION does exist.  If
+    Make sure that the download destination $TARFILE_LOCATION does exist. If
     not, then the directory is created.
 
 =cut
@@ -613,7 +613,7 @@ sub CheckDownloadDestination ()
     if ( ! -d $destination)
     {
         File::Path::make_path($destination);
-        die "ERROR: can't create \$TARFILE_LOCATION" if  ! -d $destination;
+        die "ERROR: can't create \$TARFILE_LOCATION" if ! -d $destination;
     }
 }
 
@@ -622,7 +622,7 @@ sub CheckDownloadDestination ()
 
 =head3 ProvideSpecialTarball ($url,$name,$name_converter)
 
-    A few tarballs need special handling.  That is done here.
+    A few tarballs need special handling. That is done here.
 
 =cut
 sub ProvideSpecialTarball ($$$)
@@ -634,7 +634,7 @@ sub ProvideSpecialTarball ($$$)
     return unless defined $url && $url ne "";
 
     # See if we can find the executable.
-    my ($SOLARENV,$OUTPATH,$EXEEXT) =  ($ENV{'SOLARENV'},$ENV{'OUTPATH'},$ENV{'EXEEXT'});
+    my ($SOLARENV,$OUTPATH,$EXEEXT) = ($ENV{'SOLARENV'},$ENV{'OUTPATH'},$ENV{'EXEEXT'});
     $SOLARENV = "" unless defined $SOLARENV;
     $OUTPATH = "" unless defined $OUTPATH;
     $EXEEXT = "" unless defined $EXEEXT;
