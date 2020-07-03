@@ -44,6 +44,7 @@ public class Module extends BaseTarget {
     private Map<String, StaticLibrary> staticLibraries = new TreeMap<>();
     private TreeSet<String> targets = new TreeSet<>();
     private Map<String, Pkg> packages = new TreeMap<>();
+    private Map<String, JunitTest> junitTests = new TreeMap<>();
     
     public Module(File filename) throws Exception {
         this.filename = filename;
@@ -69,6 +70,8 @@ public class Module extends BaseTarget {
                 parseModuleModule(args);
             } else if (function.equals("gb_Module_add_targets")) {
                 parseModuleAddTargets(args);
+            } else if (function.equals("gb_Module_add_subsequentcheck_targets")) {
+                parseModuleAddSubsequentCheckTargets(args);
             } else {
                 throw new Exception("Unhandled function " + function);
             }
@@ -127,6 +130,29 @@ public class Module extends BaseTarget {
         }
     }
 
+    private void parseModuleAddSubsequentCheckTargets(String[] args) throws Exception {
+        if (args.length < 1 || args.length > 2) {
+            throw new Exception("Expected 1-2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Module isn't " + name);
+        }
+        if (args.length == 1) {
+            return; // file list empty
+        }
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            File makefile = new File(filename.getParentFile(), arg + ".mk");
+            if (arg.startsWith("JunitTest_")) {
+                JunitTest junitTest = new JunitTest(makefile);
+                if (junitTests.put(arg, junitTest) != null) {
+                    throw new Exception("Duplicate add of target " + arg);
+                }
+            } else {
+                throw new Exception("Unsupported target " + arg);
+            }
+        }
+    }
+    
     public String getName() {
         return name;
     }
@@ -155,6 +181,10 @@ public class Module extends BaseTarget {
         return packages;
     }
 
+    public Map<String, JunitTest> getJunitTests() {
+        return junitTests;
+    }
+    
     @Override
     public String toString() {
         return "Module{" + "filename=" + filename + ", name=" + name + ", targets=" + targets + '}';

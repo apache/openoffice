@@ -24,11 +24,13 @@ package org.apache.openoffice.gotoSCons;
 import java.io.File;
 import java.io.PrintStream;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import org.apache.openoffice.gotoSCons.targets.AllLangResTarget;
 import org.apache.openoffice.gotoSCons.targets.BaseBinary;
 import org.apache.openoffice.gotoSCons.targets.Executable;
+import org.apache.openoffice.gotoSCons.targets.JunitTest;
 import org.apache.openoffice.gotoSCons.targets.Library;
 import org.apache.openoffice.gotoSCons.targets.Module;
 import org.apache.openoffice.gotoSCons.targets.Pkg;
@@ -64,6 +66,10 @@ public class SConsConverter {
         
         for (Pkg pkg : module.getPackages().values()) {
             convertPackage(module, pkg);
+        }
+        
+        for (JunitTest junitTest: module.getJunitTests().values()) {
+            convertJunitTest(module, junitTest);
         }
     }
     
@@ -367,6 +373,61 @@ public class SConsConverter {
             out.println();
             out.println("])");
         }
+        out.println();
+    }
+    
+    private void convertJunitTest(Module module, JunitTest junitTest) throws Exception {
+        String junitTestVariableName = junitTest.getName() + "JunitTest";
+        
+        Set<String> sourceFiles = junitTest.getSourceFiles();
+        String sourceFile = sourceFiles.iterator().next();
+        // sot/qa/complex/olesimplestorage/OLESimpleStorageTest
+        int firstSlash = sourceFile.indexOf('/');
+        int secondSlash = sourceFile.indexOf('/', firstSlash + 1);
+        int thirdSlash = sourceFile.indexOf('/', secondSlash + 1);
+        String pathToJavaFiles = sourceFile.substring(firstSlash + 1, thirdSlash - firstSlash + 3);
+        out.println(String.format("%s = AOOJunitTest('%s', '%s')",
+                junitTestVariableName, junitTest.getName(), pathToJavaFiles));
+
+        boolean first = true;
+        if (!junitTest.getDefs().isEmpty()) {
+            out.println(String.format("%s.SetDefs([", junitTestVariableName));
+            first = true;
+            for (String def : junitTest.getDefs()) {
+                if (!first) {
+                    out.println(",");
+                }
+                out.print("    '" + def + "'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+        
+        out.println(String.format("%s.AddJars([", junitTestVariableName));
+        first = true;
+        for (String jar : junitTest.getJars()) {
+            if (!first) {
+                out.println(",");
+            }
+            jar = jar.replace("$(OUTDIR)", "${OUTDIR}");
+            out.print("    '" + jar + "'");
+            first = false;
+        }
+        out.println();
+        out.println("])");
+
+        out.println(String.format("%s.AddTestClasses([", junitTestVariableName));
+        first = true;
+        for (String testClass : junitTest.getClasses()) {
+            if (!first) {
+                out.println(",");
+            }
+            out.print("    '" + testClass + "'");
+            first = false;
+        }
+        out.println();
+        out.println("])");
         out.println();
     }
     

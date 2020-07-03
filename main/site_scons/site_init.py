@@ -38,10 +38,12 @@ env = DefaultEnvironment(
 env.Append(CPPDEFINES = GLOBALDEFS)
 env.Append(CFLAGS = platform.getCFlags(soenv))
 env.Append(CXXFLAGS = platform.getCFlags(soenv))
+env.Replace(CXXFILESUFFIX = '.cxx')
 
 ## Add some common paths to the SCons environment, without AOO_ prefix
 
 env['SOLARSRC'] = soenv['SOLARSRC']
+env['SRCDIR'] = soenv['SOLARSRC']
 env['OUTDIR'] = soenv['OUTDIR']
 env['WORKDIR'] = soenv['WORKDIR']
 env['SOLARENV'] = soenv['SOLARENV']
@@ -62,6 +64,8 @@ else:
 from sharedLibrary import AOOSharedLibrary
 from sharedObjects import AOOSharedObjects
 from AllLangRes import *
+from JunitTest import *
+
 
 def CreateSharedLibraryEnvironment(name, group):
     env = Environment()

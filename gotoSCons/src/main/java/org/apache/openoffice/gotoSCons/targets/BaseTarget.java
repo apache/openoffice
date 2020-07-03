@@ -24,6 +24,7 @@ package org.apache.openoffice.gotoSCons.targets;
 import org.apache.openoffice.gotoSCons.raw.FunctionNode;
 import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
+import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
 public abstract class BaseTarget {
     
@@ -36,6 +37,8 @@ public abstract class BaseTarget {
                 } else {
                     throw new Exception("Top-level function isn't \"eval\" but \"" + functionNode.function + "\"");
                 }
+            } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("ifneq ($(OOO_JUNIT_JAR),)")) {
+            } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("endif")) {
             } else {
                 throw new Exception("Top-level declaration isn't a function but " + child.toString());
             }
