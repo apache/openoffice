@@ -38,6 +38,7 @@ public abstract class BaseTarget {
                     throw new Exception("Top-level function isn't \"eval\" but \"" + functionNode.function + "\"");
                 }
             } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("ifneq ($(OOO_JUNIT_JAR),)")) {
+            } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("ifeq ($(ENABLE_UNIT_TESTS),YES)")) {
             } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("endif")) {
             } else {
                 throw new Exception("Top-level declaration isn't a function but " + child.toString());

@@ -30,6 +30,7 @@ import java.util.TreeSet;
 import org.apache.openoffice.gotoSCons.targets.AllLangResTarget;
 import org.apache.openoffice.gotoSCons.targets.BaseBinary;
 import org.apache.openoffice.gotoSCons.targets.Executable;
+import org.apache.openoffice.gotoSCons.targets.GoogleTest;
 import org.apache.openoffice.gotoSCons.targets.JunitTest;
 import org.apache.openoffice.gotoSCons.targets.Library;
 import org.apache.openoffice.gotoSCons.targets.Module;
@@ -70,6 +71,10 @@ public class SConsConverter {
         
         for (JunitTest junitTest: module.getJunitTests().values()) {
             convertJunitTest(module, junitTest);
+        }
+        
+        for (GoogleTest googleTest: module.getGoogleTests().values()) {
+            convertGoogleTest(googleTest);
         }
     }
     
@@ -172,6 +177,32 @@ public class SConsConverter {
         out.println();
     }
     
+    private void convertGoogleTest(GoogleTest gtest) throws Exception {
+        String objectsVariable = convertObjects(gtest);
+
+        String layer = repo.getExecutableLayer(gtest.getName());
+        out.println(String.format("%s = AOOGoogleTest(", gtest.getName()));
+        out.println(String.format("    '%s',", gtest.getName()));
+        out.println(String.format("    %s", objectsVariable));
+        out.println(String.format(")"));
+        
+        if (!gtest.getLinkedLibs().isEmpty()) {
+            out.println(String.format("%s.AddLinkedLibs([", gtest.getName()));
+            boolean first = true;
+            for (String linkedLib : gtest.getLinkedLibs()) {
+                if (!first) {
+                    out.println(",");
+                }
+                out.print("    '" + linkedLib + "'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+
+        out.println();
+    }
+        
     private void convertAllLangResTarget(AllLangResTarget allLangResTarget) throws Exception {
         String srsVariableName = allLangResTarget.getName() + "Srs";
         if (allLangResTarget.getSrs().size() != 1) {

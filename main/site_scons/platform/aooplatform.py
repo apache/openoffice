@@ -77,6 +77,10 @@ class Platform(ABC):
     @abstractmethod
     def getExecutableLDFlags(self, soenv, group, outDirLocation, debugging, debugLevel):
         pass
+
+    @abstractmethod
+    def getGoogleTestLDFlags(self, soenv, outDirLocation, debugging, debugLevel):
+        pass
     
     @abstractmethod
     def getLibraryLDFlags(self, soenv, group, outDirLocation, debugging, debugLevel):

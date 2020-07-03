@@ -222,6 +222,13 @@ class FreeBSD(aooplatform.Platform):
         ]
         return flags
 
+    def getGoogleTestLDFlags(self, soenv, outDirLocation, debugging, debugLevel):
+        flags = self.getLDFlags(soenv, debugging, debugLevel)
+        flags += [
+            '-Wl,-rpath-link,' + outDirLocation
+        ]
+        return flags
+
     def getLibraryLDFlags(self, soenv, group, outDirLocation, debugging, debugLevel):
         flags = self.getLDFlags(soenv, debugging, debugLevel)
         flags += [ '-Wl,-z,noexecstack' ]

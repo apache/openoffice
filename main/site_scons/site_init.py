@@ -33,7 +33,7 @@ from globals import *
 env = DefaultEnvironment(
     CC = soenv['CC'],
     CXX = soenv['CXX'],
-    CPPPATH = platform.getInclude(soenv)
+    CPPPATH = platform.getIncludeStl(soenv) + platform.getInclude(soenv)
 )
 env.Append(CPPDEFINES = GLOBALDEFS)
 env.Append(CFLAGS = platform.getCFlags(soenv))
@@ -65,7 +65,7 @@ from sharedLibrary import AOOSharedLibrary
 from sharedObjects import AOOSharedObjects
 from AllLangRes import *
 from JunitTest import *
-
+from GoogleTest import *
 
 def CreateSharedLibraryEnvironment(name, group):
     env = Environment()

@@ -257,6 +257,9 @@ class Windows(aooplatform.Platform):
             flags += ['-SAFESEH']
         return flags
 
+    def getGoogleTestLDFlags(self, soenv, outDirLocation, debugging, debugLevel):
+        return self.getExecutableLDFlags(soenv, None, outDirLocation, debugging, debugLevel)
+
     def getLibraryLDFlags(self, soenv, group, outDirLocation, debugging, debugLevel):
         flags = self.getLDFlags(soenv, debugging, debugLevel)
         flags += [

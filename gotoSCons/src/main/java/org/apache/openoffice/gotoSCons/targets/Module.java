@@ -45,6 +45,7 @@ public class Module extends BaseTarget {
     private TreeSet<String> targets = new TreeSet<>();
     private Map<String, Pkg> packages = new TreeMap<>();
     private Map<String, JunitTest> junitTests = new TreeMap<>();
+    private Map<String, GoogleTest> googleTests = new TreeMap<>();
     
     public Module(File filename) throws Exception {
         this.filename = filename;
@@ -70,6 +71,8 @@ public class Module extends BaseTarget {
                 parseModuleModule(args);
             } else if (function.equals("gb_Module_add_targets")) {
                 parseModuleAddTargets(args);
+            } else if (function.equals("gb_Module_add_check_targets")) {
+                parseModuleAddCheckTargets(args);
             } else if (function.equals("gb_Module_add_subsequentcheck_targets")) {
                 parseModuleAddSubsequentCheckTargets(args);
             } else {
@@ -130,6 +133,29 @@ public class Module extends BaseTarget {
         }
     }
 
+    private void parseModuleAddCheckTargets(String[] args) throws Exception {
+        if (args.length < 1 || args.length > 2) {
+            throw new Exception("Expected 1-2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Module isn't " + name);
+        }
+        if (args.length == 1) {
+            return; // file list empty
+        }
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            File makefile = new File(filename.getParentFile(), arg + ".mk");
+            if (arg.startsWith("GoogleTest_")) {
+                GoogleTest googleTest = new GoogleTest(makefile);
+                if (googleTests.put(arg, googleTest) != null) {
+                    throw new Exception("Duplicate add of target " + arg);
+                }
+            } else {
+                throw new Exception("Unsupported target " + arg);
+            }
+        }
+    }
+    
     private void parseModuleAddSubsequentCheckTargets(String[] args) throws Exception {
         if (args.length < 1 || args.length > 2) {
             throw new Exception("Expected 1-2 args, got " + Arrays.toString(args));
@@ -184,7 +210,11 @@ public class Module extends BaseTarget {
     public Map<String, JunitTest> getJunitTests() {
         return junitTests;
     }
-    
+
+    public Map<String, GoogleTest> getGoogleTests() {
+        return googleTests;
+    }
+
     @Override
     public String toString() {
         return "Module{" + "filename=" + filename + ", name=" + name + ", targets=" + targets + '}';
