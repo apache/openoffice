@@ -19,6 +19,58 @@
 #  
 #**************************************************************
 
+
+# gbuild's main/solenv/gbuild/AllLangResTarget.mk contains these 5 classes:
+# 1. SrsPartMergeTarget (used in 2 modules)
+# 2. SrsPartTarget (used in 2 modules)
+# 3. SrsTarget (used in many modules)
+# 4. ResTarget (unused in modules)
+# 5. AllLangResTarget (used in many modules)
+#
+#
+#                          AllLangResTarget(name)
+#                      (meta-target; delivers an empty timestamp file)
+#                            ^                         ^
+#                           /                           \                                           For each lang, makes a ResTarget.
+#                          /                             \                                          The ResTarget and its image list
+#                         /                               \                                         are the ONLY deliverables.
+#      ResTarget(nameen-US,name,en-US)                      ResTarget(nameen-GB,name,en-GB)
+#      $(WORKDIR)/ResTarget/$(resName).res                  $(WORKDIR)/ResTarget/$(resName).res
+#      $(WORKDIR)/ResTarget/nameen-US.res                   $(WORKDIR)/ResTarget/nameen-GB.res
+#        ^                                                      ^                                   For each file added though
+#        | rsc                                                  |                                   gb_AllLangResTarget_add_srs(), makes a
+#        |                                                      |                                   SrsTarget per ResTarget (realistically,
+#        |                                                      |                                   exactly 1 SrsTarget per ResTarget):
+#      SrsTarget                                             SrsTarget
+#      $(WORKDIR)/SrsTarget/$(srsName).srs
+#      $(WORKDIR)/SrsTarget/uui/res.srs
+#        ^
+#        |                                                                                          For each file added through
+#        | concatenate                                                                              gb_SrsTarget_add_files(), makes an
+#        +----------+                                                                               SrsPartTarget:
+#        |           \
+#        |            \
+#      SrcPartTarget   SrcPartTarget
+#                      $(WORKDIR)/SrsPartTarget/$(srsPartName)
+#                      $(WORKDIR)/SrsPartTarget/uui/source/ids.src
+#                        ^                   ^
+#                        | rsc               | rsc
+#                        |                   |
+# (when not translating) |                   | (when translating)                                   We only make a SrsPartMergeTarget
+#                        |                   |                                                      when translating, and it's exactly
+#                        |                SrcPartMergeTarget                                        one per SrcPartTarget.
+#                        |                $(WORKDIR)/SrsPartMergeTarget/$(1)
+#                        |                $(WORKDIR)/SrsPartMergeTarget/uui/source/ids.src
+#                        |                 ^
+#                        |                /
+#                        |               / transex3
+#                        |              / (when translating)
+#                      $(srsPartName)  /
+#                      uuid/source/ids.src
+#
+#
+#
+
 from SCons.Scanner import ClassicCPP
 from SCons.Script import *
 from config import soenv
