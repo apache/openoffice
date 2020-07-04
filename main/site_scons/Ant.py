@@ -25,43 +25,38 @@ from globals import *
 import os
 import subprocess
 
+javaComponentPrefixes = {}
+javaComponentPrefixes['OOO'] = 'vnd.sun.star.expand:\\$$OOO_BASE_DIR/program/classes/'
+javaComponentPrefixes['URE'] = 'vnd.sun.star.expand:\\$$URE_INTERNAL_JAVA_DIR/'
+javaComponentPrefixes['INTERN'] = 'vnd.sun.star.expand:\\$$OOO_INBUILD_JAVA_DIR/'
+
 class AOOAnt:
     def __init__(self, name, pathToBuildXml):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(ENV=os.environ)
         self.env['AOO_ANT'] = soenv['ANT']
 
-        self.buildXml = File(pathToBuildXml)
-        
-        outputDir = Dir('Ant/' + name)
-        depFile = File('deps', outputDir)
-        targetName = Dir(name + '.jar', outputDir)
+        outputDir = self.env.Dir('${WORKDIR}/Ant/' + name)
+        self.jarName = name + '.jar'
+        targetName = self.env.File('${WORKDIR}/Ant/' + name + '.jar')
+        outdirTargetName = self.env.File('${OUTDIR}/bin/' + name + '.jar')
 
+        self.buildXml = File(pathToBuildXml)
+        self.env['AOO_BUILDXML'] = self.buildXml.srcnode().abspath
+
+        depFile = File('deps', outputDir)
+        self.env['AOO_DEPFILE'] = depFile.abspath
+        
         if self.env.GetOption('clean'):
             # We cannot register a custom clean target with scons,
             # so do Ant's cleaning in the preparation phase of the build.
-            cleanProcess = subprocess.run(
-                args = ' '.join([
-                    soenv['ANT'],
-                    '-f',
-                    self.buildXml.srcnode().abspath,
-                    'clean']),
-                shell = True,
-                env = self.env['ENV']
-            )
-            if cleanProcess.returncode != 0:
-                raise Exception('ant clean failed with exit code ' + cleanProcess.returncode)
+            self.env.Execute('${AOO_ANT} -f ${AOO_BUILDXML} clean')
+            Execute(Delete(outdirTargetName.abspath))
         else:
             # Ant might require dependencies from other modules,
             # which we need to know to establish build order.
             depsProcess = subprocess.run(
-                args = ' '.join([
-                    soenv['ANT'],
-                    '-Ddependencies.outfile=' + depFile.abspath,
-                    '-f',
-                    self.buildXml.srcnode().abspath,
-                    'dependencies'
-                ]),
+                args = self.env.subst('${AOO_ANT} -Ddependencies.outfile=${AOO_DEPFILE} -f ${AOO_BUILDXML} dependencies'),
                 shell = True,
                 env = self.env['ENV']
             )
@@ -74,6 +69,33 @@ class AOOAnt:
 
             self.target = self.env.Command(targetName, self.buildXml.srcnode(),
                 '${AOO_ANT} -f ${SOURCE}')
-            # Ant will depend on its internally known .java etc.
-            # so we must always run it
+            # The JAR will in turn depend on its internally known .java etc.
+            # so we must always run Ant
             AlwaysBuild(self.target)
+            self.env.Command(outdirTargetName, self.target,
+                Copy('${TARGET}', '${SOURCE}'))
+
+    def SetComponentFile(self, path, layer):
+        componentFile = File(path + '.component')
+
+        outdirComponentDir = Dir(OUTDIR + '/xml/component/' + componentFile.srcnode().dir.path)
+
+        xsltenv = self.env.Clone()
+        xsltenv.Append(ENV = platform.getExecutableEnvironment(soenv))
+        if soenv['SYSTEM_LIBXSLT'] == 'YES':
+            xsltenv['AOO_XSLTPROC'] = 'xsltproc'
+        else:
+            xsltenv['AOO_XSLTPROC'] = '${OUTDIR}/bin/xsltproc'
+
+        componentPrefix = javaComponentPrefixes.get(layer)
+        if componentPrefix == None:
+            raise Exception('Invalid layer ' + layer + ' for component ' + path)
+        xsltenv['AOO_COMPONENTPREFIX'] = componentPrefix
+        xsltenv['AOO_JARNAME'] = self.jarName
+        finalComponent = xsltenv.Command(componentFile, componentFile.srcnode(),
+            '${AOO_XSLTPROC} --nonet --stringparam uri "${AOO_COMPONENTPREFIX}${AOO_JARNAME}"' \
+            ' -o $TARGET ${SOLARENV}/bin/createcomponent.xslt $SOURCE'
+        )
+
+        self.env.Install(outdirComponentDir, finalComponent)
+

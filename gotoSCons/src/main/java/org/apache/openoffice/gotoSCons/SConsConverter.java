@@ -183,7 +183,14 @@ public class SConsConverter {
     }
     
     private void convertAntTarget(AntTarget antTarget) throws Exception {
-        
+        String antVariableName = antTarget.getName() + "Ant";
+        out.println(String.format("%s = AOOAnt('%s', '%s')",
+                antVariableName, antTarget.getName(), antTarget.getPathToBuildXml()));
+        if (antTarget.getComponentPath() != null) {
+            out.println(String.format("%s.SetComponentFile('%s', '%s')",
+                    antVariableName, antTarget.getComponentPath(), antTarget.getLayer()));
+        }
+        out.println();
     }
     
     private void convertGoogleTest(GoogleTest gtest) throws Exception {
