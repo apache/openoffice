@@ -212,11 +212,8 @@ if (SYSTEM_BOOST != YES)
 if (SYSTEM_VIGRA != YES)
     MD5 = d62650a6f908e85643e557a236ea989c
     name = vigra1.6.0.tar.gz
-    # Old URL1 is broken
-    # URL1 = http://hci.iwr.uni-heidelberg.de/vigra-old-versions/vigra1.6.0.tar.gz
-    # The MD5 hash from the github sources does not match
-    # https://github.com/ukoethe/vigra/releases/tag/Version-1-6-0
-    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
+    URL1 = https://src.fedoraproject.org/lookaside/extras/vigra/vigra1.6.0.tar.gz/d62650a6f908e85643e557a236ea989c/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_EXPAT != YES)
     MD5 = 875a2c2ff3e8eb9e5a5cd62db2033ab5
