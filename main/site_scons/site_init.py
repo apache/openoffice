@@ -63,6 +63,7 @@ else:
 
 from sharedLibrary import AOOSharedLibrary
 from sharedObjects import AOOSharedObjects
+from Ant import *
 from AllLangRes import *
 from JunitTest import *
 from GoogleTest import *

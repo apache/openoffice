@@ -28,6 +28,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 import org.apache.openoffice.gotoSCons.targets.AllLangResTarget;
+import org.apache.openoffice.gotoSCons.targets.AntTarget;
 import org.apache.openoffice.gotoSCons.targets.BaseBinary;
 import org.apache.openoffice.gotoSCons.targets.Executable;
 import org.apache.openoffice.gotoSCons.targets.GoogleTest;
@@ -59,6 +60,10 @@ public class SConsConverter {
         
         for (Executable exe : module.getExecutables().values()) {
             convertExecutable(exe);
+        }
+        
+        for (AntTarget antTarget : module.getAntTargets().values()) {
+            convertAntTarget(antTarget);
         }
         
         for (AllLangResTarget allLangResTarget : module.getAllLangResTargets().values()) {
@@ -175,6 +180,10 @@ public class SConsConverter {
 
         out.println(String.format("%s.InstallTo('${OUTDIR}/bin')", exe.getName()));
         out.println();
+    }
+    
+    private void convertAntTarget(AntTarget antTarget) throws Exception {
+        
     }
     
     private void convertGoogleTest(GoogleTest gtest) throws Exception {
