@@ -28,13 +28,12 @@ class AOOExecutable:
         self.env = DefaultEnvironment().Clone()
         self.exe = self.env.Program(
             target,
-            source = objects
+            source = objects.objects
         )
         self.env['AOO_THIS'] = self.exe[0]
         self.env.Append(LINKFLAGS=platform.getExecutableLDFlags(soenv, group, OUTDIRLOCATION, DEBUGGING, DEBUGLEVEL))
         self.env.Append(LIBPATH=platform.getLDPATH(soenv))
         self.env['AOO_GROUP'] = group
-        self.env['AOO_LAYER'] = platform.getLibraryGroupLayer(group)
 
     def AddLinkedLibs(self, libs):
         self.env.Append(LIBS=libs)

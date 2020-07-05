@@ -20,8 +20,13 @@
  *************************************************************/
 package org.apache.openoffice.gotoSCons.targets;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import org.apache.openoffice.gotoSCons.GBuildParser;
+import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
@@ -30,6 +35,13 @@ public class StaticLibrary extends BaseBinary {
 
     public StaticLibrary(File filename) throws Exception {
         super(filename);
+        try (
+                BufferedReader reader = new BufferedReader(new InputStreamReader(
+                        new FileInputStream(filename)))
+                ) {
+            ListNode rootNode = new GBuildParser().parse(reader);
+            parse(rootNode);
+        }
     }
     
     @Override

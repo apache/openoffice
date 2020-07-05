@@ -43,16 +43,11 @@ public abstract class BaseBinary extends BaseTarget {
     private Set<String> exceptionObjects = new TreeSet<>();
     private Set<String> noexceptionObjects = new TreeSet<>();
     private Set<String> linkedLibs = new TreeSet<>();
+    private Set<String> bisonFiles = new TreeSet<>();
+    private Set<String> flexFiles = new TreeSet<>();
 
     public BaseBinary(File filename) throws Exception {
         this.filename = filename;
-        try (
-                BufferedReader reader = new BufferedReader(new InputStreamReader(
-                        new FileInputStream(filename)))
-                ) {
-            ListNode rootNode = new GBuildParser().parse(reader);
-            parse(rootNode);
-        }
     }
 
     protected void parseAddApi(String[] args) throws Exception {
@@ -171,7 +166,37 @@ public abstract class BaseBinary extends BaseTarget {
             }
         }
     }
+    
+    protected void parseAddBisonFiles(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Target name isn't " + name);
+        }
+        
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            if (!bisonFiles.add(arg)) {
+                throw new Exception("Duplicate bison file " + arg);
+            }
+        }
+    }
 
+    protected void parseAddFlexFiles(String[] args) throws Exception {
+        if (args.length != 2) {
+            throw new Exception("Expected 2 args, got " + Arrays.toString(args));
+        }
+        if (!args[0].equals(name)) {
+            throw new Exception("Target name isn't " + name);
+        }
+        
+        for (String arg : Utils.spaceSeparatedTokens(args[1])) {
+            if (!flexFiles.add(arg)) {
+                throw new Exception("Duplicate flex file " + arg);
+            }
+        }
+    }
+    
     public String getName() {
         return name;
     }
@@ -208,4 +233,11 @@ public abstract class BaseBinary extends BaseTarget {
         return precompiledHeader;
     }
 
+    public Set<String> getBisonFiles() {
+        return bisonFiles;
+    }
+
+    public Set<String> getFlexFiles() {
+        return flexFiles;
+    }
 }

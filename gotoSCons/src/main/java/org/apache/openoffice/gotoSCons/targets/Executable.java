@@ -21,8 +21,16 @@
 
 package org.apache.openoffice.gotoSCons.targets;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.Set;
+import java.util.TreeSet;
+import org.apache.openoffice.gotoSCons.GBuildParser;
+import org.apache.openoffice.gotoSCons.Utils;
+import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
@@ -32,6 +40,13 @@ public class Executable extends BaseBinary {
 
     public Executable(File filename) throws Exception {
         super(filename);
+        try (
+                BufferedReader reader = new BufferedReader(new InputStreamReader(
+                        new FileInputStream(filename)))
+                ) {
+            ListNode rootNode = new GBuildParser().parse(reader);
+            parse(rootNode);
+        }
     }
 
     @Override
@@ -47,10 +62,14 @@ public class Executable extends BaseBinary {
                 parseExecutableExecutable(args);
             } else if (function.equals("gb_Executable_add_api")) {
                 parseAddApi(args);
+            } else if (function.equals("gb_Executable_add_bison_files")) {
+                parseAddBisonFiles(args);
             } else if (function.equals("gb_Executable_add_defs")) {
                 parseAddDefs(args);
             } else if (function.equals("gb_Executable_add_exception_objects")) {
                 parseAddExceptionObjects(args);
+            } else if (function.equals("gb_Executable_add_flex_files")) {
+                parseAddFlexFiles(args);
             } else if (function.equals("gb_Executable_add_noexception_objects")) {
                 parseAddNoExceptionObjects(args);
             } else if (function.equals("gb_Executable_add_linked_libs")) {

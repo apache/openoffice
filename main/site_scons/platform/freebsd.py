@@ -217,7 +217,7 @@ class FreeBSD(aooplatform.Platform):
     def getExecutableLDFlags(self, soenv, group, outDirLocation, debugging, debugLevel):
         flags = self.getLDFlags(soenv, debugging, debugLevel)
         flags += [
-            '-Wl,-rpath,' + self.getRPATH(self.executableGroupLayers(group)),
+            '-Wl,-rpath,' + self.getRPATH(self.executableGroupLayers[group]),
             '-Wl,-rpath-link,' + outDirLocation
         ]
         return flags

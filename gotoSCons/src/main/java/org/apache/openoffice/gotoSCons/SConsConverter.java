@@ -146,7 +146,7 @@ public class SConsConverter {
         out.println(String.format("%s = AOOStaticLibrary(", library.getName()));
         out.println(String.format("    '%s',", library.getName()));
         out.println(String.format("    '%s',", layer));
-        out.println(String.format("    %s.objects", objectsVariable));
+        out.println(String.format("    %s", objectsVariable));
         out.println(String.format(")"));
 
         out.println(String.format("%s.InstallTo('${OUTDIR}/lib')", library.getName()));
@@ -160,7 +160,7 @@ public class SConsConverter {
         out.println(String.format("%s = AOOExecutable(", exe.getName()));
         out.println(String.format("    '%s',", exe.getName()));
         out.println(String.format("    '%s',", layer));
-        out.println(String.format("    %s.objects", objectsVariable));
+        out.println(String.format("    %s", objectsVariable));
         out.println(String.format(")"));
         
         if (exe.isTargetTypeSet()) {
@@ -353,6 +353,42 @@ public class SConsConverter {
                     def = def.substring(2);
                 }
                 out.print("    '" + def + "'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+        
+        if (!binary.getFlexFiles().isEmpty()) {
+            out.println(String.format("%s.AddFlexFiles([", objectsVariable));
+            boolean first = true;
+            for (String flexFile : binary.getFlexFiles()) {
+                if (!first) {
+                    out.println(",");
+                }
+                int firstSlash = flexFile.indexOf('/');
+                if (firstSlash < 0) {
+                    throw new Exception("Invalid filename " + flexFile);
+                }
+                out.print("    '" + flexFile.substring(firstSlash + 1) + ".ll'");
+                first = false;
+            }
+            out.println();
+            out.println("])");
+        }
+        
+        if (!binary.getBisonFiles().isEmpty()) {
+            out.println(String.format("%s.AddBisonFiles([", objectsVariable));
+            boolean first = true;
+            for (String bisonFile : binary.getBisonFiles()) {
+                if (!first) {
+                    out.println(",");
+                }
+                int firstSlash = bisonFile.indexOf('/');
+                if (firstSlash < 0) {
+                    throw new Exception("Invalid filename " + bisonFile);
+                }
+                out.print("    '" + bisonFile.substring(firstSlash + 1) + ".yy'");
                 first = false;
             }
             out.println();

@@ -27,6 +27,9 @@ class AOOSharedObjects:
     def __init__(self):
         self.env = DefaultEnvironment().Clone()
         self.env.Append(CPPDEFINES=platform.getLibraryDefs(soenv))
+        self.env.Replace(CXXFILESUFFIX='.cxx')
+        self.env.Replace(YACCHXXFILESUFFIX='.hxx')
+        self.env.Append(YACCFLAGS='-d')
         if DEBUGGING:
             self.env.Append(CFLAGS=platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS')))
             self.env.Append(CXXFLAGS=platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS')))
@@ -61,3 +64,12 @@ class AOOSharedObjects:
                )
            )
 
+    def AddBisonFiles(self, bisonFiles):
+        # We #include this file in other files instead of compiling it
+        for bisonFile in bisonFiles:
+            self.env.CXXFile(File(bisonFile))
+
+    def AddFlexFiles(self, flexFiles):
+        # We #include this file in other files instead of compiling it
+        for flexFile in flexFiles:
+            self.env.CXXFile(File(flexFile))

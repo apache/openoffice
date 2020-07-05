@@ -28,7 +28,7 @@ class AOOStaticLibrary:
         self.env = DefaultEnvironment().Clone()
         self.staticLib = self.env.StaticLibrary(
             target,
-            source = sharedObjects
+            source = sharedObjects.objects
         )
         self.env['AOO_THIS'] = self.sharedLib[0]
         self.env.Append(LINKFLAGS=platform.getStaticLibraryLDFlags(soenv, DEBUGGING, DEBUGLEVEL))
