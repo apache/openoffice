@@ -39,6 +39,7 @@ import org.apache.openoffice.gotoSCons.targets.Pkg;
 import org.apache.openoffice.gotoSCons.targets.Repository;
 import org.apache.openoffice.gotoSCons.targets.SrsTarget;
 import org.apache.openoffice.gotoSCons.targets.StaticLibrary;
+import org.apache.openoffice.gotoSCons.targets.ZipTarget;
 
 public class SConsConverter {
     private Repository repo;
@@ -68,6 +69,10 @@ public class SConsConverter {
         
         for (AllLangResTarget allLangResTarget : module.getAllLangResTargets().values()) {
             convertAllLangResTarget(allLangResTarget);
+        }
+        
+        for (ZipTarget zipTarget : module.getZipTargets().values()) {
+            convertZipTarget(zipTarget);
         }
         
         for (Pkg pkg : module.getPackages().values()) {
@@ -190,6 +195,25 @@ public class SConsConverter {
             out.println(String.format("%s.SetComponentFile('%s', '%s')",
                     antVariableName, antTarget.getComponentPath(), antTarget.getLayer()));
         }
+        out.println();
+    }
+
+    private void convertZipTarget(ZipTarget zipTarget) throws Exception {
+        String zipVariableName = zipTarget.getName() + "Zip";
+        out.println(String.format("%s = AOOZip('%s', '%s')",
+                zipVariableName, zipTarget.getName(), zipTarget.getBaseDirectory()));
+        out.println(String.format("%s.AddSourceFiles([", zipVariableName));
+        boolean first = true;
+        for (String sourceFile : zipTarget.getSourceFiles()) {
+            if (!first) {
+                out.println(",");
+            }
+            out.print("    '" + sourceFile + "'");
+            first = false;
+        }
+        out.println();
+        out.println("])");
+        
         out.println();
     }
     

@@ -67,6 +67,7 @@ from Ant import *
 from AllLangRes import *
 from JunitTest import *
 from GoogleTest import *
+from Zip import *
 
 def CreateSharedLibraryEnvironment(name, group):
     env = Environment()

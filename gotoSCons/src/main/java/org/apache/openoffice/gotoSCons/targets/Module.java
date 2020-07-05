@@ -43,6 +43,7 @@ public class Module extends BaseTarget {
     private Map<String, Executable> executables = new TreeMap<>();
     private Map<String, StaticLibrary> staticLibraries = new TreeMap<>();
     private Map<String, AntTarget> antTargets = new TreeMap<>();
+    private Map<String, ZipTarget> zipTargets = new TreeMap<>();
     private TreeSet<String> targets = new TreeSet<>();
     private Map<String, Pkg> packages = new TreeMap<>();
     private Map<String, JunitTest> junitTests = new TreeMap<>();
@@ -126,6 +127,11 @@ public class Module extends BaseTarget {
             } else if (arg.startsWith("Ant_")) {
                 AntTarget antTarget = new AntTarget(makefile);
                 if (antTargets.put(arg, antTarget) != null) {
+                    throw new Exception("Duplicate add of target " + arg);
+                }
+            } else if (arg.startsWith("Zip_")) {
+                ZipTarget zipTarget = new ZipTarget(makefile);
+                if (zipTargets.put(arg, zipTarget) != null) {
                     throw new Exception("Duplicate add of target " + arg);
                 }
             } else if (arg.startsWith("Package_")) {
@@ -217,6 +223,10 @@ public class Module extends BaseTarget {
         return packages;
     }
 
+    public Map<String, ZipTarget> getZipTargets() {
+        return zipTargets;
+    }
+    
     public Map<String, JunitTest> getJunitTests() {
         return junitTests;
     }
