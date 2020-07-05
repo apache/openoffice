@@ -268,7 +268,7 @@ class Windows(aooplatform.Platform):
             '-NXCOMPAT',
             '-DYNAMICBASE',
         ]
-        if env['CPUNAME'] == 'INTEL':
+        if soenv['CPUNAME'] == 'INTEL':
             flags += ['-SAFESEH']
         return flags
 
