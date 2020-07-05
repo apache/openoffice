@@ -215,7 +215,7 @@ class Windows(aooplatform.Platform):
         else:
             return ['-Od']
 
-    def getDebugCFlags(self, compiler, debugging, enableSymbols):
+    def getDebugCFlags(self, compiler, enableSymbols):
         return ['-Zi']
 
     def getLibraryDefs(self, soenv):
