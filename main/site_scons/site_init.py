@@ -83,8 +83,8 @@ def CreateSharedLibraryEnvironment(name, group):
     cflags = platform.getCFlags(soenv)
     cxxflags = platform.getCXXFlags(soenv)
     if DEBUGGING:
-        cflags += platform.getDebugCFlags(soenv['COM'], soenv['ENABLE_SYMBOLS'])
-        cxxflags += platform.getDebugCFlags(soenv['COM'], soenv['ENABLE_SYMBOLS'])
+        cflags += platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS'))
+        cxxflags += platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS'))
     env.Append(CFLAGS=cflags)
     print("APPENDING " + str(cxxflags))
     env.Replace(CXXFLAGS=cxxflags)

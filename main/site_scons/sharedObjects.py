@@ -28,8 +28,8 @@ class AOOSharedObjects:
         self.env = DefaultEnvironment().Clone()
         self.env.Append(CPPDEFINES=platform.getLibraryDefs(soenv))
         if DEBUGGING:
-            self.env.Append(CFLAGS=platform.getDebugCFlags(soenv['COM'], soenv['ENABLE_SYMBOLS']))
-            self.env.Append(CXXFLAGS=platform.getDebugCFlags(soenv['COM'], soenv['ENABLE_SYMBOLS']))
+            self.env.Append(CFLAGS=platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS')))
+            self.env.Append(CXXFLAGS=platform.getDebugCFlags(soenv['COM'], soenv.get('ENABLE_SYMBOLS')))
         self.objects = []
 
     def AddDefs(self, defs):
