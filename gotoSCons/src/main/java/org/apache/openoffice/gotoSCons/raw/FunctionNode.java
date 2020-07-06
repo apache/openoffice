@@ -38,6 +38,6 @@ public class FunctionNode extends Node {
 
     @Override
     public String toString() {
-        return function + "(...)";
+        return function + "(" + child.toString() + ")";
     }
 }

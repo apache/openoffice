@@ -35,7 +35,7 @@ public abstract class BaseTarget {
                 if (functionNode.function.equals("eval")) {
                     parseEval(functionNode);
                 } else {
-                    throw new Exception("Top-level function isn't \"eval\" but \"" + functionNode.function + "\"");
+                    throw new Exception("Top-level function isn't \"eval\" but \"" + functionNode.function + "\", full node: " + child.toString());
                 }
             } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("ifneq ($(OOO_JUNIT_JAR),)")) {
             } else if (child instanceof ValueNode && ((ValueNode)child).toString().equals("ifeq ($(ENABLE_UNIT_TESTS),YES)")) {

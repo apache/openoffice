@@ -21,6 +21,8 @@
 
 package org.apache.openoffice.gotoSCons.raw;
 
+import java.util.Arrays;
+
 public class ListNode extends Node {
     public Node[] children;
     
@@ -38,6 +40,6 @@ public class ListNode extends Node {
 
     @Override
     public String toString() {
-        return children.toString();
+        return Arrays.toString(children);
     }
 }
