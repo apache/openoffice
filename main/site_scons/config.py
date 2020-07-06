@@ -43,11 +43,11 @@ def loadJavaProperties(filepath):
                     fullLine = fullLine[: len(fullLine) - 1]
                 else:
                     appending = False
-                    if not l.startswith('#'):
-                        eq = l.find('=')
+                    if not fullLine.startswith('#'):
+                        eq = fullLine.find('=')
                         if eq >= 0:
-                            key = l[:eq].strip()
-                            value = l[(eq+1):].strip()
+                            key = fullLine[:eq].strip()
+                            value = fullLine[(eq+1):].strip()
                             props[key] = value
     return props
 
