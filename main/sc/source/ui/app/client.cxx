@@ -231,7 +231,7 @@ void __EXPORT ScClient::ViewChanged()
         aFractY *= aVisSize.Height();
         aVisSize = Size( (long) aFractX, (long) aFractY );      // scale for Draw-Model
 
-        //  pClientData->SetObjArea before pDrawObj->SetLogicRect, avoid wrong
+        //  pClientData->SetObjArea before pDrawObj->SetLogicRect, to avoid wrong
         //  scale calculations:
         //Rectangle aObjArea = aLogicRect;
         //aObjArea.SetSize( aVisSize );          // Size of document from Server
