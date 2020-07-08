@@ -637,7 +637,7 @@
 <tablecell>
 <paragraph role="tablecontent" id="par_id3151328" xml-lang="en-US" l10n="U" oldref="179">Returns the file name and the sheet number of the referenced cell.</paragraph>
 <paragraph role="tablecontent" id="par_id3148896" xml-lang="en-US" l10n="U" oldref="180">
-<item type="input">=CELL("FILENAME";D2)</item> returns 'file:///X:/dr/own.ods'#$Sheet1, if the formula in the current document X:\dr\own.sxc is located in Sheet1.</paragraph>
+<item type="input">=CELL("FILENAME";D2)</item> returns 'file:///X:/dr/own.ods'#$Sheet1, if the formula in the current document X:\dr\own.ods is located in Sheet1.</paragraph>
 <paragraph role="tablecontent" id="par_id3155144" xml-lang="en-US" l10n="U" oldref="181">
 <item type="input">=CELL("FILENAME";'X:\dr\test.ods'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.ods'#$Sheet1.</paragraph>
 </tablecell>
