@@ -1881,7 +1881,7 @@ Assembly * TypeEmitter::type_resolve(
 												  __typeof(System::String)};
 			ilGen->Emit(Emit::OpCodes::Call,
 						__typeof(System::String)->GetMethod(S"Concat", arConcatParams));
-			//load contex argument
+			//load context argument
 			ilGen->Emit(Emit::OpCodes::Ldarg_0);
 			ilGen->Emit(Emit::OpCodes::Newobj, ctorDeploymentException);
 			ilGen->Emit(Emit::OpCodes::Throw);//Exception(typeDeploymentExc);
