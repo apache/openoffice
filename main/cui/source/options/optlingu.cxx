@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -588,7 +588,7 @@ public:
     // the proper order for the SvxEditModulesDlg (the ones from the
     // configuration (keeping that order!) first and then the other ones.
     // I.e. the ones available but not configured in arbitrary order).
-    // They available ones may contain names that do not(!) support that
+    // The available ones may contain names that do not(!) support that
     // language.
     Sequence< OUString > GetSortedImplNames( sal_Int16 nLang, sal_uInt8 nType );
 
@@ -1163,7 +1163,7 @@ SvxLinguTabPage::SvxLinguTabPage( Window* pParent,
             != SvtExtendedSecurityOptions::OPEN_NEVER )
     {
         aMoreDictsLink.SetURL( String(
-            RTL_CONSTASCII_STRINGPARAM( "http://extensions.services.openoffice.org/dictionary?cid=926386" ) ) );
+            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/dictionaries" ) ) );
         aMoreDictsLink.SetClickHdl( LINK( this, SvxLinguTabPage, OpenURLHdl_Impl ) );
     }
     else
@@ -1179,7 +1179,7 @@ SvxLinguTabPage::SvxLinguTabPage( Window* pParent,
 
     // force recalculation of hash value used for checking the need of updating
     // because new dictionaries might be installed / downloaded.
-    //! Thus it needs to be called now since it may infuence the supported languages
+    //! Thus it needs to be called now since it may influence the supported languages
     //! to be reported AND the found user-dictionaries(!) as well.
     SvxLinguConfigUpdate::UpdateAll( sal_True );
 
@@ -1233,7 +1233,7 @@ SvxLinguTabPage::~SvxLinguTabPage()
 
 //------------------------------------------------------------------------
 
-//nicht �berladen wegschmeissen
+//nicht überladen wegschmeissen
 sal_uInt16* SvxLinguTabPage::GetRanges()
 {
 	//TL???
@@ -2068,7 +2068,7 @@ SvxEditModulesDlg::SvxEditModulesDlg(Window* pParent, SvxLinguData_Impl& rData) 
             != SvtExtendedSecurityOptions::OPEN_NEVER )
     {
         aMoreDictsLink.SetURL( String(
-            RTL_CONSTASCII_STRINGPARAM( "http://extensions.services.openoffice.org/dictionary?cid=926386" ) ) );
+            RTL_CONSTASCII_STRINGPARAM( "https://extensions.openoffice.org/dictionaries" ) ) );
         aMoreDictsLink.SetClickHdl( LINK( this, SvxEditModulesDlg, OpenURLHdl_Impl ) );
     }
     else

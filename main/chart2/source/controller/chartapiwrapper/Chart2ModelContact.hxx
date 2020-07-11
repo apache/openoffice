@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef CHART_CHART2MODELCONTACT_HXX
@@ -68,13 +69,13 @@ public:
 
     ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XDrawPage > getDrawPage();
 
-    /** get the current values calculated for an axis in the current view in
+    /** Get the current values calculated for an axis in the current view in
         case properties are 'auto'.
      */
     sal_Bool getExplicitValuesForAxis(
         const ::com::sun::star::uno::Reference<
             ::com::sun::star::chart2::XAxis > & xAxis,
-        ExplicitScaleData &  rOutExplicitScale,
+        ExplicitScaleData & rOutExplicitScale,
         ExplicitIncrementData & rOutExplicitIncrement );
 
     sal_Int32 getExplicitNumberFormatKeyForAxis(
@@ -83,12 +84,12 @@ public:
     sal_Int32 getExplicitNumberFormatKeyForSeries(
             const ::com::sun::star::uno::Reference< ::com::sun::star::chart2::XDataSeries >& xSeries );
 
-    /** Returns the size of the page in logic coordinates.  This value is used
+    /** Returns the size of the page in logic coordinates. This value is used
         for setting an appropriate "ReferencePageSize" for FontHeights.
      */
     ::com::sun::star::awt::Size GetPageSize() const;
 
-    /** calculates the current axes title sizes and subtract that space them from the given recangle
+    /** Calculates the current axes title sizes and subtract that space them from the given rectangle.
      */
     ::com::sun::star::awt::Rectangle SubstractAxisTitleSizes( const ::com::sun::star::awt::Rectangle& rPositionRect );
 
@@ -136,29 +137,29 @@ public:
     ::com::sun::star::awt::Point GetAxisPosition( const ::com::sun::star::uno::Reference<
                       ::com::sun::star::chart2::XAxis > & xAxis ) const;
 
-private: //methods
+private: // methods
     ExplicitValueProvider* getExplicitValueProvider() const;
     ::com::sun::star::uno::Reference<
         ::com::sun::star::lang::XUnoTunnel > getChartView() const;
 
-public: //member
+public: // member
     ::com::sun::star::uno::Reference<
         ::com::sun::star::uno::XComponentContext >
                         m_xContext;
 
-private: //member
+private: // member
 	::com::sun::star::uno::WeakReference<
-        ::com::sun::star::frame::XModel >   m_xChartModel;
+        ::com::sun::star::frame::XModel > m_xChartModel;
 
     mutable ::com::sun::star::uno::Reference<
-        ::com::sun::star::lang::XUnoTunnel >        m_xChartView;
+        ::com::sun::star::lang::XUnoTunnel > m_xChartView;
 
-    typedef std::map< ::rtl::OUString, ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer > > tTableMap;//GradientTable, HatchTable etc.
-    tTableMap   m_aTableMap;
+    typedef std::map< ::rtl::OUString, ::com::sun::star::uno::Reference< ::com::sun::star::container::XNameContainer > > tTableMap;// GradientTable, HatchTable, etc.
+    tTableMap m_aTableMap;
 };
 
-} //  namespace wrapper
-} //  namespace chart
+} // namespace wrapper
+} // namespace chart
 
 // CHART_CHART2MODELCONTACT_HXX
 #endif

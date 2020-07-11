@@ -110,7 +110,7 @@ public class SCalc  {
         
         //oooooooooooooooooooooooooooStep 3oooooooooooooooooooooooooooooooooooooooooo
         // create cell styles.
-        // For this purpose get the StyleFamiliesSupplier and the the familiy
+        // For this purpose get the StyleFamiliesSupplier and the family
         // CellStyle. Create an instance of com.sun.star.style.CellStyle and
         // add it to the family. Now change some properties
         //***************************************************************************
@@ -332,7 +332,7 @@ public class SCalc  {
             // get the servie manager rom the office
             xMCF = xContext.getServiceManager();
 
-            // create a new instance of the the desktop
+            // create a new instance of the desktop
             Object oDesktop = xMCF.createInstanceWithContext(
                 "com.sun.star.frame.Desktop", xContext );
 

@@ -30,7 +30,7 @@ class Window;
 
 namespace sfx2 { namespace sidebar {
 
-/** A single button in the The tab bar.
+/** A single button in the tab bar.
 */
 class TabItem
     : public ImageRadioButton

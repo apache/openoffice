@@ -63,7 +63,7 @@ namespace connectivity
 			sdbcx::OCollection*		getPrivateViews()	const { return m_pViews; }
 
 			static const ::rtl::OUString& getDot();
-			// correct the the column properties of float/real/double values
+			// correct the column properties of float/real/double values
 			// all & parameters are IN and OUT
 			static void correctColumnProperties(sal_Int32 _nPrec, sal_Int32& _rnType,::rtl::OUString& _rsTypeName);
 		};
