@@ -3,7 +3,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +11,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 
-
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedexplorerdatabase02010100xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Query Design</title>
@@ -149,9 +148,9 @@
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_ORDER" id="bm_id3154202" localize="false"/><paragraph role="heading" id="hd_id3154207" xml-lang="en-US" level="4" l10n="U" oldref="29">Sort</paragraph>
 <paragraph role="paragraph" id="par_id3150979" xml-lang="en-US" l10n="CHG" oldref="30"><ahelp hid="HID_QRYDGN_ROW_ORDER">If you click the cell, you can select among the sorting options: ascending, descending and not sorted.</ahelp> Text fields will be sorted alphabetically and numerical fields numerically. For most databases, administrators can set the sorting options.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_VISIBLE" id="bm_id3149334" localize="false"/><paragraph role="heading" id="hd_id3150384" xml-lang="en-US" level="4" l10n="U" oldref="31">Visible</paragraph>
-<paragraph role="paragraph" id="par_id3146133" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_QRYDGN_ROW_VISIBLE">If you mark the <emph>Visible</emph> property for a data field, that field will be visible in the query</ahelp>. If you only use a data field to formulate a condition, you do not necessarily need to show it.</paragraph>
+<paragraph role="paragraph" id="par_id3146133" xml-lang="en-US" l10n="U" oldref="32"><ahelp hid="HID_QRYDGN_ROW_VISIBLE">If you mark the <emph>Visible</emph> property for a data field, that field will be visible in the query.</ahelp> If you only use a data field to formulate a condition, you do not necessarily need to show it.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/DBACCESS_HID_QRYDGN_ROW_CRIT" id="bm_id3147130" localize="false"/><paragraph role="heading" id="hd_id3154714" xml-lang="en-US" level="4" l10n="U" oldref="33">Criteria</paragraph>
-<paragraph role="paragraph" id="par_id3145134" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_QRYDGN_ROW_CRIT">Specifies the <link href="text/shared/explorer/database/02010100.xhp" name="criteria ">criteria </link>by which the content of the data field should be filtered.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3145134" xml-lang="en-US" l10n="U" oldref="34"><ahelp hid="HID_QRYDGN_ROW_CRIT">Specifies the <link href="text/shared/explorer/database/02010100.xhp" name="criteria ">criteria</link> by which the content of the data field should be filtered.</ahelp></paragraph>
 <paragraph role="heading" id="hd_id3152477" xml-lang="en-US" level="4" l10n="U" oldref="35">or</paragraph>
 <paragraph role="paragraph" id="par_id3154585" xml-lang="en-US" l10n="U" oldref="36">Here you can enter one additional criterion for filtering in each line. Multiple criteria in one column will be connected by an OR link.</paragraph>
 <paragraph role="paragraph" id="par_id3148800" xml-lang="en-US" l10n="U" oldref="150">You can also use the context menu of the line headers in the lower area of the query design to insert another line for functions:</paragraph>
@@ -521,7 +520,7 @@
 <paragraph role="tablecontent" id="par_id3154809" xml-lang="en-US" l10n="U" oldref="95">contains a, b, c...</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablecontent" id="par_id3148399" xml-lang="en-US" l10n="U" oldref="96">... the field name contains one of the specified expressions a, b, c,... Any number of expressions can be specified, and the result of the query is determined by an Or link. The expressions a, b, c... can be either numbers or characters</paragraph>
+<paragraph role="tablecontent" id="par_id3148399" xml-lang="en-US" l10n="U" oldref="96">... the field name contains one of the specified expressions a, b, c,... Any number of expressions can be specified, and the result of the query is determined by an Or link. The expressions a, b, c... can be either numbers or characters.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -578,7 +577,7 @@
 </tablecell>
 </tablerow>
 
-<tablerow>	
+<tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315379A" xml-lang="en-US" l10n="U" oldref="118">&lt;'2001-01-10'</paragraph>
 </tablecell>
@@ -648,7 +647,7 @@
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablehead" id="par_id31537341" xml-lang="en-US" l10n="U" oldref="253">Date Type Element</paragraph>
-</tablecell>	
+</tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="tablehead" id="par_id31537342" xml-lang="en-US" l10n="U" oldref="253">SQL Escape syntax #1 - may be obsolete</paragraph>
 </tablecell>
@@ -656,14 +655,14 @@
 <paragraph role="tablehead" id="par_id31537343" xml-lang="en-US" l10n="U" oldref="253">SQL Escape syntax #2</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="tablehead" id="par_id31537344" xml-lang="en-US" l10n="U" oldref="253">SQL2  syntax</paragraph>
+<paragraph role="tablehead" id="par_id31537344" xml-lang="en-US" l10n="U" oldref="253">SQL2 syntax</paragraph>
 </tablecell>
 </tablerow>
 
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315913111" xml-lang="en-US" l10n="U" oldref="254">Date</paragraph>
-</tablecell>	
+</tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id315913112" xml-lang="en-US" l10n="U" oldref="254">{D'YYYY-MM-DD'}</paragraph>
 </tablecell>
@@ -686,8 +685,8 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id31559474" xml-lang="en-US" l10n="U" oldref="264">'HH:MI:SS[.SS]' </paragraph>
-</tablecell>	
-</tablerow>	
+</tablecell>
+</tablerow>
 <tablerow>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id31509641" xml-lang="en-US" l10n="U" oldref="257">DateTime</paragraph>
@@ -700,14 +699,13 @@
 </tablecell>
 <tablecell colspan="" rowspan="">
 <paragraph role="paragraph" id="par_id31509644" xml-lang="en-US" l10n="U" oldref="264">'YYYY-MM-DD HH:MI:SS[.SS]' </paragraph>
-</tablecell>	
-</tablerow>	
+</tablecell>
+</tablerow>
 </table>
-	
 
    <paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
 	<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
-<paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connnector you are using for more details.)</paragraph>
+<paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)</paragraph>
 
    <!--//kls end moved -->
 <paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>

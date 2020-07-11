@@ -1654,7 +1654,7 @@ namespace xmloff
 	//---------------------------------------------------------------------
 	void OListAndComboImport::EndElement()
 	{
-		// append the list source property the the properties sequence of our importer
+		// append the list source property to the properties sequence of our importer
 		// the string item list
 		PropertyValue aItemList;
 		aItemList.Name = PROPERTY_STRING_ITEM_LIST;

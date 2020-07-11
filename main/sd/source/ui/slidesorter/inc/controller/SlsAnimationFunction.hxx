@@ -68,7 +68,7 @@ public:
 
     /** Acceleration function that maps [0,1] to [0,0].  Speed starts slow,
         rises and drops several times and ends slow following multiple
-        cycles of the the sine function.
+        cycles of the sine function.
     */
     static double Vibrate_Sine (const double nTime);
 
