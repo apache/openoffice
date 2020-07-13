@@ -20,15 +20,7 @@
 #**************************************************************
 
 
-
-$(eval $(call gb_Module_Module,javaunohelper))
-
-$(eval $(call gb_Module_add_targets,javaunohelper,\
-    Jar_juh \
-	Library_juh \
-	Library_juhx \
-	Zip_juh_src \
-	Ant_juh \
-))
+$(eval $(call gb_Ant_Ant,juh,$(SRCDIR)/javaunohelper/java/juh/build.xml))
 
 # vim: set noet sw=4 ts=4:
+
