@@ -260,9 +260,6 @@
     
     <target name="copy-artifact-jar" depends="jar" if="${artifact.jar.enabled}">
         <copy verbose="true" file="${jar.dir}/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
-        
-        <!-- test also placing a copy in bin solver/450/unxlngx6.pro/bin to get packaged-->
-        <copy verbose="true" file="${jar.dir}/${jar.name}-${aoo.ver}.jar" tofile="${OUTDIR}/bin/${jar.name}-${aoo.ver}.jar"/>
     </target>
     
     <target name="build-javadoc" depends="init-project" if="${javadoc.jar.enabled}">
