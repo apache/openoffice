@@ -1189,14 +1189,18 @@ PopupMenu* SwContentTree::CreateContextMenu( void )
     const SwView* pActiveView = ::GetActiveView();
     SwView *pView = SwModule::GetFirstView();
     while (pView)
-    {
-        String sInsert = pView->GetDocShell()->GetTitle();
-        if(pView == pActiveView)
-        {
-            sInsert += C2S(" (");
-            sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
-            sInsert += ')';
-        }
+	{
+		String sInsert = pView->GetDocShell()->GetTitle();
+		sInsert += C2S(" (");
+		if(pView == pActiveView)
+		{
+			sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
+		}
+		else
+		{
+			sInsert += aContextStrings[ ST_INACTIVE - ST_CONTEXT_FIRST];
+		}
+		sInsert += ')';
         pSubPop3->InsertItem(nId, sInsert);
         if(bIsConstant && pActiveShell == &pView->GetWrtShell())
             pSubPop3->CheckItem(nId);
