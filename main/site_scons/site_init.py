@@ -62,6 +62,7 @@ else:
 ###########################
 
 from sharedLibrary import AOOSharedLibrary
+from staticLibrary import AOOStaticLibrary
 from sharedObjects import AOOSharedObjects
 from Ant import *
 from AllLangRes import *

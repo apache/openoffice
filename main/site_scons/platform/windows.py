@@ -272,7 +272,7 @@ class Windows(aooplatform.Platform):
             flags += ['-SAFESEH']
         return flags
 
-    def getStaticLibraryLDFlags(self, debugging, debugLevel):
+    def getStaticLibraryLDFlags(self, soenv, debugging, debugLevel):
         flags = self.getLDFlags(soenv, debugging, debugLevel)
         flags += ['-LIB']
         return flags

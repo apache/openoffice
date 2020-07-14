@@ -30,7 +30,7 @@ class AOOStaticLibrary:
             target,
             source = sharedObjects.objects
         )
-        self.env['AOO_THIS'] = self.sharedLib[0]
+        self.env['AOO_THIS'] = self.staticLib[0]
         self.env.Append(LINKFLAGS=platform.getStaticLibraryLDFlags(soenv, DEBUGGING, DEBUGLEVEL))
         self.env.Append(LIBPATH=platform.getLDPATH(soenv))
         self.env['AOO_GROUP'] = group

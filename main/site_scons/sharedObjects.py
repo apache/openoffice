@@ -45,6 +45,15 @@ class AOOSharedObjects:
         for name in names:
             self.env.Append(CPPPATH='${OUTDIR}/inc/' + name)
 
+    def AddCSources(self, names):
+        for name in names:
+            self.objects.append(
+                self.env.SharedObject(
+                    name,
+                    CFLAGS = self.env['CFLAGS']
+                )
+            )
+
     def AddCxxExceptionSources(self, names):
         self.AddCxxSources(names,
             platform.getExceptionFlags(soenv, True)
