@@ -1,4 +1,4 @@
-# Apache OpenOffice™
+# Apache OpenOffice<sup>®</sup>
 
 The Apache OpenOffice project (AOO) provides a full featured office productivity suite based on open standards.\
 It is the continuation of the OpenOffice.org project.
