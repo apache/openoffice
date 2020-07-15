@@ -21,7 +21,7 @@
 
 
 
-$(eval $(call gb_Zip_Zip,juh_src,$(SRCDIR)/javaunohelper))
+$(eval $(call gb_Zip_Zip,juh_src,$(SRCDIR)/javaunohelper/java/juh/src/main/java))
 
 $(eval $(call gb_Zip_add_files,juh_src,\
 	com/sun/star/lib/uno/helper/UnoUrl.java \

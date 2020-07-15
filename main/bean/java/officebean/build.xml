@@ -29,6 +29,13 @@
 
     <target name="init-project">
 
+        <!-- for creating maven bundles for distribution -->
+        <property name="artifact.jar.enabled" value="true"/>
+        <property name="javadoc.jar.enabled" value="true"/>
+        <property name="javadoc.title" value="&lt;h1&gt;JavaBean for Office Components&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="JavaBean for Office Components"/>
+        <property name="source.jar.enabled" value="true"/>
+
         <path id="main.classpath">
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
             <pathelement location="${OUTDIR}/bin/unoil.jar"/>

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- * 
- *   http://www.apache.org/licenses/LICENSE-2.0
- * 
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- * 
- ***********************************************************-->
+* 
+* Licensed to the Apache Software Foundation (ASF) under one
+* or more contributor license agreements.  See the NOTICE file
+* distributed with this work for additional information
+* regarding copyright ownership.  The ASF licenses this file
+* to you under the Apache License, Version 2.0 (the
+* "License"); you may not use this file except in compliance
+* with the License.  You may obtain a copy of the License at
+* 
+*   http://www.apache.org/licenses/LICENSE-2.0
+* 
+* Unless required by applicable law or agreed to in writing,
+* software distributed under the License is distributed on an
+* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+* KIND, either express or implied.  See the License for the
+* specific language governing permissions and limitations
+* under the License.
+* 
+***********************************************************-->
 
 
 <project name="aoo-ant" default="main" xmlns:if="ant:if" xmlns:unless="ant:unless">
@@ -58,6 +58,12 @@
     <property name="main.deprecation" value="false"/>
     <property name="test.debug" value="true"/>
     <property name="test.deprecation" value="false"/>
+    
+    <property name="aoo.ver" value="4.5.0"/>
+    <property name="javadoc.build.dir" location="${build.base.dir}/javadoc"/>
+    <tstamp>
+        <format property="this.year" pattern="yyyy"/>
+    </tstamp>
 
     <import file="${aoo-ant.basedir}/externals.xml"/>
     <import file="${aoo-ant.basedir}/idl.xml"/>
@@ -69,6 +75,17 @@
         <property name="jar.name" value="${ant.project.name}"/>
         <property name="jar.classpath" value=""/>
         <property name="jar.manifest" value ="${aoo-ant.basedir}/manifest.empty"/>
+        
+        <!-- for creating maven bundles for distribution -->
+        <property name="artifact.jar.enabled" value="false"/>
+        <property name="artifact.jar.name" value="${ant.project.name}-${aoo.ver}"/>
+        <property name="javadoc.jar.enabled" value="false"/>
+        <property name="javadoc.jar.name" value="${ant.project.name}-${aoo.ver}-javadoc"/>
+        <property name="javadoc.copyright" value="&lt;i&gt;Copyright &#169; ${this.year} Apache Software Foundation. All Rights Reserved.&lt;/i&gt;"/>
+        <property name="javadoc.title" value="&lt;h1&gt;REPLACE ME IN MODULE BUILD FILE&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="REPLACE ME IN MODULE BUILD FILE"/>
+        <property name="source.jar.enabled" value="false"/>
+        <property name="source.jar.name" value="${ant.project.name}-${aoo.ver}-source"/>
 
         <local name="has.main.classpath"/>
         <condition property="has.main.classpath">
@@ -109,9 +126,9 @@
     <target name="res" depends="prepare">
         <mkdir dir="${main.build.dir}"/>
         <copy todir="${main.build.dir}" failonerror="false" quiet="true">
-             <fileset dir="${res.src.dir}">
-                 <include name="**/*"/>
-             </fileset>
+            <fileset dir="${res.src.dir}">
+                <include name="**/*"/>
+            </fileset>
         </copy>
     </target>
 
@@ -147,15 +164,21 @@
             <condition property="only.junit.absent">
                 <and>
                     <isset property="tests.present"/>
-                    <not><isset property="OOO_JUNIT_JAR"/></not>
+                    <not>
+                        <isset property="OOO_JUNIT_JAR"/>
+                    </not>
                 </and>
             </condition>
             <echo message="No junit, skipping tests" if:set="only.junit.absent"/>
 
             <condition property="test.skip">
                 <or>
-                    <not><isset property="tests.present"/></not>
-                    <not><isset property="OOO_JUNIT_JAR"/></not>
+                    <not>
+                        <isset property="tests.present"/>
+                    </not>
+                    <not>
+                        <isset property="OOO_JUNIT_JAR"/>
+                    </not>
                 </or>
             </condition>
         </sequential>
@@ -164,9 +187,9 @@
     <target name="test-res" depends="pre-compile">
         <mkdir dir="${test.build.dir}" unless:set="test.skip"/>
         <copy todir="${test.build.dir}" failonerror="false" quiet="true" unless:set="test.skip">
-             <fileset dir="${test-res.src.dir}">
-                 <include name="**/*"/>
-             </fileset>
+            <fileset dir="${test-res.src.dir}">
+                <include name="**/*"/>
+            </fileset>
         </copy>
     </target>
 
@@ -193,7 +216,7 @@
     </target>
 
     <!-- fork="true" is sadly necessary on Ubuntu due to multiple versions of junit confusing Ant,
-         see https://github.com/real-logic/simple-binary-encoding/issues/96 -->
+    see https://github.com/real-logic/simple-binary-encoding/issues/96 -->
     <target name="test" depends="test-compile" unless="${test.skip}">
         <mkdir dir="${test.reports.dir}"/>
         <junit printsummary="yes" haltonfailure="yes" showoutput="true" filtertrace="false" fork="true">
@@ -216,8 +239,8 @@
                 <attribute name="Solar-Version" value="${RSCREVISION}"/>
             </manifest>
             <fileset dir="${main.build.dir}"/>
-<!-- Breaks trunk/test/smoketestdoc by packaging different classes with the same name: -->
-<!--            <fileset dir="${idl.build.classes.dir}" erroronmissingdir="false"/> -->
+            <!-- Breaks trunk/test/smoketestdoc by packaging different classes with the same name: -->
+            <!--            <fileset dir="${idl.build.classes.dir}" erroronmissingdir="false"/> -->
             <include name="**/*.class"/>
             <include name="**/*.properties"/>
             <include name="**/*.css"/>
@@ -234,15 +257,61 @@
             <include name="**/*.map"/>
         </jar>
     </target>
+    
+    <target name="copy-artifact-jar" depends="jar" if="${artifact.jar.enabled}">
+        <copy verbose="true" file="${jar.dir}/${jar.name}.jar" tofile="${jar.dir}/${jar.name}-${aoo.ver}.jar"/>
+    </target>
+    
+    <target name="build-javadoc" depends="init-project" if="${javadoc.jar.enabled}">
+        <mkdir dir="${javadoc.build.dir}"/>
+        <javadoc packagenames="com.*"
+                 sourcepath="${main.src.dir}"
+                 defaultexcludes="yes"
+                 destdir="${javadoc.build.dir}"
+                 author="true"
+                 version="true"
+                 use="true"
+                 windowtitle="${javadoc.window.title}">
+            <doctitle>${javadoc.title}</doctitle>
+            <bottom>${javadoc.copyright}</bottom>
+        </javadoc>
+    </target>
+    
+    <target name="jar-javadoc" depends="prepare, build-javadoc" if="${javadoc.jar.enabled}">
+        <jar destfile="${jar.dir}/${jar.name}-${aoo.ver}-javadoc.jar"
+             duplicate="fail">
+            <fileset dir="${javadoc.build.dir}">
+                <include name="**"/>
+            </fileset>
+            <fileset dir="${basedir}">
+                <include name="META-INF/*"/>
+            </fileset>
+        </jar>
+    </target>
+    
+    <target name="jar-source" depends="prepare" if="${source.jar.enabled}">
+        <jar destfile="${jar.dir}/${source.jar.name}.jar"
+             duplicate="fail">
+            <fileset dir="${main.src.dir}">
+                <include name="**"/>
+            </fileset>
+            <fileset dir="${basedir}">
+                <include name="META-INF/*"/>
+            </fileset>
+        </jar>
+    </target>
 
     <extension-point name="pre-clean" depends="prepare"/>
 
     <target name="clean" depends="pre-clean">
         <delete dir="${build.base.dir}"/>
         <delete file="${jar.dir}/${jar.name}.jar"/>
+        <delete file="${jar.dir}/${artifact.jar.name}.jar"/>
+        <delete file="${jar.dir}/${javadoc.jar.name}.jar"/>
+        <delete file="${jar.dir}/${source.jar.name}.jar"/>
     </target>
 
-    <target name="main" depends="test,jar"/>
+    <target name="main" depends="test,jar,jar-javadoc,copy-artifact-jar,jar-source"/>
 
 </project>
 

@@ -28,6 +28,13 @@
 
     <target name="init-project">
 
+        <!-- for creating maven bundles for distribution -->
+        <property name="artifact.jar.enabled" value="true"/>
+        <property name="javadoc.jar.enabled" value="true"/>
+        <property name="javadoc.title" value="&lt;h1&gt;Java Runtime Interface Definition Library&lt;/h1&gt;"/>
+        <property name="javadoc.window.title" value="Java Runtime Interface Definition Library"/>
+        <property name="source.jar.enabled" value="true"/>
+
         <path id="main.classpath">
             <pathelement location="${OUTDIR}/bin/ridl.jar"/>
             <pathelement location="${OUTDIR}/bin/unoloader.jar"/>
