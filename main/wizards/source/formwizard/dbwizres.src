@@ -693,7 +693,7 @@ String RID_DB_QUERY_WIZARD_START + 7
 
 String RID_DB_QUERY_WIZARD_START + 8
 {
-	Text [ en-US] = "~How do you want to proceed after creating the query?" ;
+	Text [ en-US] = "How do you want to proceed after creating the query?" ;
 };
 
 
@@ -1660,13 +1660,13 @@ String RID_DB_TABLE_WIZARD_START + 40
 
 String RID_DB_TABLE_WIZARD_START + 41
 {
-  Text [ en-US] = "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database." ;
+	Text [ en-US] = "The table name '%TABLENAME' contains a character ('%SPECIALCHAR') that might not be supported by the database." ;
 };
 
 
 String RID_DB_TABLE_WIZARD_START + 42
 {
-  Text [ en-US] = "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database." ;
+	Text [ en-US] = "The field name '%FIELDNAME' contains a special character ('%SPECIALCHAR') that might not be supported by the database." ;
 };
 
 
