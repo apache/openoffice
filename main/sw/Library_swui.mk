@@ -53,7 +53,6 @@ $(eval $(call gb_Library_add_linked_libs,swui,\
 	svl \
 	svt \
 	svx \
-	svx \
 	svxcore \
 	sw \
 	ootk \
