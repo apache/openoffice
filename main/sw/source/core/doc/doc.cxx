@@ -315,7 +315,7 @@ void SwDoc::set(/*[in]*/ DocumentSettingId id, /*[in]*/ bool value)
 
         // COMPATIBILITY FLAGS END
 
-        case BROWSE_MODE: //can be used temporary (load/save) when no ViewShell is avaiable
+        case BROWSE_MODE: //can be used temporary (load/save) when no ViewShell is available
             mbLastBrowseMode = value;
             break;
         case HTML_MODE:
