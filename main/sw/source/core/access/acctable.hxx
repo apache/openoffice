@@ -87,7 +87,7 @@ protected:
 	// get table data, update if necessary
 	inline SwAccessibleTableData_Impl& GetTableData();
 
-	// Is table data evailable?
+	// Is table data available?
     sal_Bool HasTableData() const { return (mpTableData != 0); }
 
 	void SetTableData(SwAccessibleTableData_Impl* mpNewTableData)  ;
