@@ -50,11 +50,13 @@
 
 #include <cppuhelper/factory.hxx>
 #include <cppuhelper/exc_hlp.hxx>
+#include <cppuhelper/implementationentry.hxx>
 #include <util/util.hxx>
 #include <framework/documentundoguard.hxx>
 
 #include "com/sun/star/uno/XComponentContext.hpp"
 #include "com/sun/star/uri/XUriReference.hpp"
+#include "com/sun/star/uri/UriReferenceFactory.hpp"
 #include "com/sun/star/uri/XUriReferenceFactory.hpp"
 #include "com/sun/star/uri/XVndSunStarScriptUrl.hpp"
 #include "com/sun/star/beans/XPropertySet.hpp"
@@ -77,6 +79,8 @@ const sal_Char * const MYIMPLNAME = "com.sun.star.comp.ScriptProtocolHandler";
 const sal_Char * MYSCHEME = "vnd.sun.star.script";
 const sal_Int32 MYSCHEME_LEN = 20;
 
+rtl_StandardModuleCount g_moduleCount = MODULE_COUNT_INIT;
+
 void SAL_CALL ScriptProtocolHandler::initialize( 
     const css::uno::Sequence < css::uno::Any >& aArguments )
     throw ( css::uno::Exception )
@@ -95,7 +99,7 @@ void SAL_CALL ScriptProtocolHandler::initialize(
         throw RuntimeException( temp, Reference< XInterface >() );
     }
 
-    ENSURE_OR_THROW( m_xFactory.is(), "ScriptProtocolHandler::initialize: No Service Manager available" );
+    ENSURE_OR_THROW( m_xCtx.is(), "ScriptProtocolHandler::initialize: No Component Context available" );
     m_bInitialised = true;
 }
 
@@ -109,9 +113,7 @@ Reference< XDispatch > SAL_CALL ScriptProtocolHandler::queryDispatch(
     Reference< XDispatch > xDispatcher;
     // get scheme of url
 
-    Reference< uri::XUriReferenceFactory > xFac ( 
-         m_xFactory->createInstance( rtl::OUString::createFromAscii( 
-            "com.sun.star.uri.UriReferenceFactory") ) , UNO_QUERY );
+    Reference< uri::XUriReferenceFactory > xFac ( uri::UriReferenceFactory::create( m_xCtx ) );
     if ( xFac.is() )
     {
         Reference<  uri::XUriReference > uriRef(
@@ -431,19 +433,11 @@ void ScriptProtocolHandler::createScriptProvider()
         // if nothing of this is successful, use the master script provider
         if ( !m_xScriptProvider.is() )
         {
-            Reference< XPropertySet > xProps( m_xFactory, UNO_QUERY_THROW );
-
-            ::rtl::OUString dc(
-                RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ) );
-
-            Reference< XComponentContext > xCtx(
-                xProps->getPropertyValue( dc ), UNO_QUERY_THROW );
-
             ::rtl::OUString tmspf = ::rtl::OUString::createFromAscii(
                 "/singletons/com.sun.star.script.provider.theMasterScriptProviderFactory");
 
             Reference< provider::XScriptProviderFactory > xFac(
-                xCtx->getValueByName( tmspf ), UNO_QUERY_THROW );
+                m_xCtx->getValueByName( tmspf ), UNO_QUERY_THROW );
                                                                                 
             Any aContext;
             if ( getScriptInvocation() )
@@ -465,8 +459,8 @@ void ScriptProtocolHandler::createScriptProvider()
 }
 
 ScriptProtocolHandler::ScriptProtocolHandler(
-Reference< css::lang::XMultiServiceFactory > const& rFact ) :
-m_bInitialised( false ), m_xFactory( rFact )
+Reference< css::uno::XComponentContext > const& xCtx ) :
+m_bInitialised( false ), m_xCtx( xCtx )
 {
 }
 
@@ -524,24 +518,24 @@ Sequence< ::rtl::OUString > ScriptProtocolHandler::impl_getStaticSupportedServic
 
 /* Helper for registry */
 Reference< XInterface > SAL_CALL ScriptProtocolHandler::impl_createInstance(
-const Reference< css::lang::XMultiServiceFactory >& xServiceManager )
+const Reference< css::uno::XComponentContext > & xCtx)
 throw( RuntimeException )
 {
-    return Reference< XInterface > ( *new ScriptProtocolHandler( xServiceManager ) );
+    return Reference < XInterface >( *new ScriptProtocolHandler( xCtx ) );
 }
 
-/* Factory for registration */
-Reference< XSingleServiceFactory > ScriptProtocolHandler::impl_createFactory(
-const Reference< XMultiServiceFactory >& xServiceManager )
+static struct ::cppu::ImplementationEntry g_entries[] =
 {
-    Reference< XSingleServiceFactory > xReturn (
-        cppu::createSingleFactory( xServiceManager,
-            ScriptProtocolHandler::impl_getStaticImplementationName(),
-            ScriptProtocolHandler::impl_createInstance,
-            ScriptProtocolHandler::impl_getStaticSupportedServiceNames() )
-    );
-    return xReturn;
-}
+    {
+        ScriptProtocolHandler::impl_createInstance,
+        ScriptProtocolHandler::impl_getStaticImplementationName,
+        ScriptProtocolHandler::impl_getStaticSupportedServiceNames,
+        ::cppu::createSingleComponentFactory,
+        &g_moduleCount.modCnt,
+        0
+    },
+    { 0, 0, 0, 0, 0, 0 }
+};
 
 } // namespace scripting_protocolhandler
 
@@ -564,39 +558,7 @@ extern "C"
                                          void * pServiceManager ,
                                          void * pRegistryKey )
     {
-		(void)pRegistryKey;
-
-        // Set default return value for this operation - if it failed.
-        void * pReturn = NULL ;
-
-        if (
-            ( pImplementationName != NULL ) &&
-            ( pServiceManager != NULL )
-        )
-        {
-            // Define variables which are used in following macros.
-            ::com::sun::star::uno::Reference<
-            ::com::sun::star::lang::XSingleServiceFactory > xFactory ;
-            ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > 
-            xServiceManager( reinterpret_cast<
-            ::com::sun::star::lang::XMultiServiceFactory* >( pServiceManager ) ) ;
-
-            if ( ::scripting_protocolhandler::ScriptProtocolHandler::impl_getStaticImplementationName().equals(
-                ::rtl::OUString::createFromAscii( pImplementationName ) ) )
-            {
-                xFactory = ::scripting_protocolhandler::ScriptProtocolHandler::impl_createFactory( xServiceManager );
-            }
-
-            // Factory is valid - service was found.
-            if ( xFactory.is() )
-            {
-                xFactory->acquire();
-                pReturn = xFactory.get();
-            }
-        }
-
-        // Return with result of this operation.
-        return pReturn ;
+        return component_getFactoryHelper( pImplementationName, pServiceManager, pRegistryKey, scripting_protocolhandler::g_entries );
     }
 } // extern "C"
 
