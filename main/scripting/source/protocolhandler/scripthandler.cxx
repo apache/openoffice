@@ -41,7 +41,6 @@
 #include <com/sun/star/script/provider/XScriptProviderFactory.hpp>
 #include <com/sun/star/script/provider/ScriptFrameworkErrorType.hpp>
 
-#include <rtl/uri.hxx>
 #include <sfx2/objsh.hxx>
 #include <sfx2/frame.hxx>
 #include <sfx2/sfxdlg.hxx>
@@ -59,6 +58,7 @@
 #include "com/sun/star/uri/UriReferenceFactory.hpp"
 #include "com/sun/star/uri/XUriReferenceFactory.hpp"
 #include "com/sun/star/uri/XVndSunStarScriptUrl.hpp"
+#include <com/sun/star/uri/XVndSunStarScriptUrlReference.hpp>
 #include "com/sun/star/beans/XPropertySet.hpp"
 
 using namespace ::com::sun::star;
@@ -161,9 +161,10 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
     {
         try
         {
-            ::rtl::OUString xStringUri = ::rtl::Uri::decode( aURL.Complete,
-                rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
-            bool bIsDocumentScript = ( xStringUri.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
+            Reference< uri::XUriReferenceFactory > xFac( uri::UriReferenceFactory::create( m_xCtx ) );
+            Reference< uri::XVndSunStarScriptUrlReference > xScriptUri( xFac->parse( aURL.Complete ), UNO_QUERY_THROW );
+            ::rtl::OUString sLocation = xScriptUri->getParameter( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "location" ) ) );
+            bool bIsDocumentScript = ( sLocation == ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "document" ) ) );
 
             if ( bIsDocumentScript )
             {
