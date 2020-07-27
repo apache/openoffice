@@ -89,6 +89,7 @@ public class FormulaInDifferentWays {
 		// commands window
 		mathElementsRelations.click();
 		mathElementsRelationsNotEqual.click();
+		sleep(1);
 		typeKeys("a");
 		app.dispatch(".uno:NextMark");
 		typeKeys("b");
