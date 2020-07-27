@@ -123,6 +123,9 @@ public class NamedRequest extends Request {
 		String[] methods = arg.split(",");
 		for (String m : methods) {
 			int i = m.lastIndexOf(".");
+			if (i < 0) {
+				throw new RuntimeException("-tm parameter needs to have the form className.methodName");
+			}
 			String className = m.substring(0, i);
 			String methodName = m.substring(++i);
 			try {
