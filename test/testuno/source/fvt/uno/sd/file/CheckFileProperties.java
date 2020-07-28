@@ -183,7 +183,8 @@ public class CheckFileProperties {
 		Calendar ca = Calendar.getInstance();		
 		DateTime currentDateTime = new DateTime();
 		currentDateTime.Year = (short)ca.get(Calendar.YEAR);
-		currentDateTime.Month = (short)ca.get(Calendar.MONTH);
+		// java.util.Calendar's months start at 0=January.
+		currentDateTime.Month = (short)(ca.get(Calendar.MONTH) + 1);
 		currentDateTime.Day = (short)ca.get(Calendar.DATE);
 		currentDateTime.Minutes = (short)ca.get(Calendar.MINUTE);
 		currentDateTime.Hours = (short)ca.get(Calendar.HOUR);
@@ -196,7 +197,8 @@ public class CheckFileProperties {
 		Calendar ca = Calendar.getInstance();		
 		Date currentDate = new Date();
 		currentDate.Year = (short)ca.get(Calendar.YEAR);
-		currentDate.Month = (short)ca.get(Calendar.MONTH);
+		// java.util.Calendar's months start at 0=January.
+		currentDate.Month = (short)(ca.get(Calendar.MONTH) + 1);
 		currentDate.Day = (short)ca.get(Calendar.DATE);
 		
 		return currentDate;
