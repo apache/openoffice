@@ -187,7 +187,7 @@ public class CheckFileProperties {
 		currentDateTime.Month = (short)(ca.get(Calendar.MONTH) + 1);
 		currentDateTime.Day = (short)ca.get(Calendar.DATE);
 		currentDateTime.Minutes = (short)ca.get(Calendar.MINUTE);
-		currentDateTime.Hours = (short)ca.get(Calendar.HOUR);
+		currentDateTime.Hours = (short)ca.get(Calendar.HOUR_OF_DAY);
 		currentDateTime.Seconds = (short)ca.get(Calendar.SECOND);
 		
 		return currentDateTime;
