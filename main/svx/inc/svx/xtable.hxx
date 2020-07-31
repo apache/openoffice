@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 #ifndef _XTABLE_HXX
@@ -31,11 +31,11 @@
 #include <svx/XPropertyEntry.hxx>
 #include <vcl/bitmap.hxx>
 
-// Standard-Vergleichsstring
+// Standard compare string
 extern sal_Unicode __FAR_DATA pszStandard[]; // "standard"
 
-// Funktion zum Konvertieren in echte RGB-Farben, da mit
-// enum COL_NAME nicht verglichen werden kann.
+// Function to convert into real RGB colors because you can't
+// compare with enum COL_NAME
 SVX_DLLPUBLIC Color RGB_Color( ColorData nColorName );
 
 //////////////////////////////////////////////////////////////////////////////
@@ -50,9 +50,9 @@ public:
     XColorEntry(const Color& rColor, const String& rName);
     XColorEntry(const XColorEntry& rOther);
 
-    const Color& GetColor() const 
-    { 
-        return aColor; 
+    const Color& GetColor() const
+    {
+        return aColor;
     }
 };
 
@@ -69,8 +69,8 @@ public:
     XLineEndEntry(const XLineEndEntry& rOther);
 
     const basegfx::B2DPolyPolygon& GetLineEnd() const
-    { 
-        return aB2DPolyPolygon; 
+    {
+        return aB2DPolyPolygon;
     }
 };
 
@@ -86,9 +86,9 @@ public:
     XDashEntry(const XDash& rDash, const String& rName);
     XDashEntry(const XDashEntry& rOther);
 
-    const XDash& GetDash() const 
-    { 
-        return aDash; 
+    const XDash& GetDash() const
+    {
+        return aDash;
     }
 };
 
@@ -104,9 +104,9 @@ public:
     XHatchEntry(const XHatch& rHatch, const String& rName);
     XHatchEntry(const XHatchEntry& rOther);
 
-    const XHatch& GetHatch() const 
-    { 
-        return aHatch; 
+    const XHatch& GetHatch() const
+    {
+        return aHatch;
     }
 };
 
@@ -122,9 +122,9 @@ public:
     XGradientEntry(const XGradient& rGradient, const String& rName);
     XGradientEntry(const XGradientEntry& rOther);
 
-    const XGradient& GetGradient() const 
-    { 
-        return aGradient; 
+    const XGradient& GetGradient() const
+    {
+        return aGradient;
     }
 };
 
@@ -192,7 +192,7 @@ public:
 };
 
 //////////////////////////////////////////////////////////////////////////////
-// predefines for XList classes and the SharedPtr typedefs for these to have 
+// predefines for XList classes and the SharedPtr typedefs for these to have
 // them in a central place for better overview
 
 class XColorList;
