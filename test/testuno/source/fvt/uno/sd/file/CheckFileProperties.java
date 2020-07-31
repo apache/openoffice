@@ -29,6 +29,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openoffice.test.OpenOffice;
 import org.openoffice.test.uno.UnoApp;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
@@ -61,7 +62,7 @@ import com.sun.star.uno.UnoRuntime;
  */
 public class CheckFileProperties {
 
-	private static final UnoApp app = new UnoApp();
+	private static UnoApp app;
 
 	private XComponent m_xSDComponent = null;
 	private static String m_filePath = null;
@@ -117,6 +118,15 @@ public class CheckFileProperties {
 
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
+		OpenOffice openOffice = UnoApp.getDefaultOpenOffice();
+                // #128398#
+                openOffice.addRegistryModifications(
+                    " <item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\">\n" +
+                    "  <prop oor:name=\"RemovePersonalInfoOnSaving\" oor:op=\"fuse\">\n" +
+                    "   <value>false</value>\n" +
+                    "  </prop>\n" +
+                    " </item>");
+                app = new UnoApp(openOffice);
 		app.start();
 		m_filePath = Testspace.getPath("temp/CheckFileProperties.odp");	
 		FileUtil.deleteFile(m_filePath);
@@ -319,7 +329,7 @@ public class CheckFileProperties {
 		app.closeDocument(m_xSDComponent);
 		m_xSDComponent = app.loadDocument(m_filePath);
 		XDocumentProperties xDocPro2 = getDocumentProperties();
-		assertEquals("Revision number should be "+ revisionNumber+1, revisionNumber+1, xDocPro2.getEditingCycles());		
+		assertEquals("Revision number increments by 1", revisionNumber+1, xDocPro2.getEditingCycles());
 	}
 	
 	/*
