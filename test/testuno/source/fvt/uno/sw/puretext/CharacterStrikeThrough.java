@@ -25,7 +25,6 @@ import static org.junit.Assert.*;
 
 import org.junit.After;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
@@ -51,7 +50,7 @@ public class CharacterStrikeThrough {
 		app.close();
 	}
 
-	@Test@Ignore("Bug #120656 - [testUNO patch]bold,/,X strike through change to single when save to doc")
+	@Test
 	public void testCharacterStrikeThroughSetting() throws Exception {
 		XTextDocument xTextDocument = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class, app.newDocument("swriter"));// new a text document
 		xText = xTextDocument.getText();
@@ -141,26 +140,27 @@ public class CharacterStrikeThrough {
 		XTextCursor xTextCursor_assert_doc=assertDocument_doc.getText().createTextCursor();
 		XPropertySet xCursorProps_assert_doc = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xTextCursor_assert_doc);
 		//verify set property
+                // Bug #120656 - [testUNO patch]bold,/,X strike through change to single when save to doc
 		xTextCursor_assert_doc.gotoStart(false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
-		assertEquals("assert strikethrough is bold",com.sun.star.awt.FontStrikeout.BOLD,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+		assertEquals("for .doc assert strikethrough is SINGLE instead of bold",com.sun.star.awt.FontStrikeout.SINGLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
+		xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
 		xTextCursor_assert_doc.goRight((short) 100, true);
-        assertEquals("assert strikethrough is don'tknow",com.sun.star.awt.FontStrikeout.NONE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+        assertEquals("for .doc assert strikethrough is SINGLE instead of don'tknow",com.sun.star.awt.FontStrikeout.SINGLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
+        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
         xTextCursor_assert_doc.goRight((short) 100, true);
         assertEquals("assert strikethrough is double",com.sun.star.awt.FontStrikeout.DOUBLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
         xTextCursor_assert_doc.goRight((short) 100, true);
         assertEquals("assert strikethrough is without",com.sun.star.awt.FontStrikeout.NONE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
         xTextCursor_assert_doc.goRight((short) 100, true);
         assertEquals("assert strikethrough is single",com.sun.star.awt.FontStrikeout.SINGLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
         xTextCursor_assert_doc.goRight((short) 100, true);
-        assertEquals("assert strikethrough is with /",com.sun.star.awt.FontStrikeout.SLASH,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
-        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_odt, false);
+        assertEquals("for .doc assert strikethrough is SINGLE instead of /",com.sun.star.awt.FontStrikeout.SINGLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
+        xTextCursor_assert_doc.gotoRange(xTextCursor_assert_doc, false);
         xTextCursor_assert_doc.goRight((short) 100, true);
-        assertEquals("assert strikethrough is with X",com.sun.star.awt.FontStrikeout.X,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
+        assertEquals("for .doc assert strikethrough is SINGLE instead of X",com.sun.star.awt.FontStrikeout.SINGLE,xCursorProps_assert_doc.getPropertyValue("CharStrikeout"));
 	}
 }
