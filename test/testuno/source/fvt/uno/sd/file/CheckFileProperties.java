@@ -302,7 +302,8 @@ public class CheckFileProperties {
 	 * UI entry: File->Properties->General->Total editing time*/
 	@Test
 	public void testGeneralEditingDuration() throws Exception {
-		int editingDuration = 60;
+		final int editingDuration = 60;
+                final int maxEditingDuration = 70;
 		
 		XDocumentProperties xDocPro = getDocumentProperties();
 		
@@ -312,7 +313,9 @@ public class CheckFileProperties {
 		app.closeDocument(m_xSDComponent);
 		m_xSDComponent = app.loadDocument(m_filePath);
 		XDocumentProperties xDocPro2 = getDocumentProperties();
-		assertEquals("Totally editing time should be "+ editingDuration, editingDuration, xDocPro2.getEditingDuration());		
+                // It can take a few seconds longer to save the file, increasing it above editingDuration
+		assertTrue("Total editing time >= "+ editingDuration, Integer.compare(editingDuration, xDocPro2.getEditingDuration()) <= 0);
+                assertTrue("Total editing time <= "+ maxEditingDuration, Integer.compare(xDocPro2.getEditingDuration(), maxEditingDuration) <= 0);
 	}
 	
 	/*
