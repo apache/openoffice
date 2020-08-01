@@ -236,6 +236,7 @@ DockingWindow FLT_WIN_ANIMATION
 	{
 		Pos = MAP_APPFONT ( 133, 135 ) ;
 		Size = MAP_APPFONT ( 15, 10 ) ;
+		DeltaLang [ de ] = < Default ; Default ; Default ; Default ; > ;
 		DeltaLang [ en-US ] = < 2 ; Default ; Default ; Default ; > ;
 		Text = "67" ;
 	};
@@ -263,6 +264,7 @@ DockingWindow FLT_WIN_ANIMATION
 	{
 		Pos = MAP_APPFONT ( 12, 198 ) ;
 		Size = MAP_APPFONT ( 62, 10 ) ;
+		DeltaLang [ de ] = < Default ; Default ; Default ; Default ; > ;
 		DeltaLang [ en-US ] = < -1 ; Default ; -2 ; Default ; > ;
 		Text [ en-US ] = "Alignment" ;
 	};
@@ -272,6 +274,7 @@ DockingWindow FLT_WIN_ANIMATION
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 75, 196 ) ;
 		Size = MAP_APPFONT ( 72, 100 ) ;
+		DeltaLang [ de ] = < Default ; Default ; Default ; Default ; > ;
 		DeltaLang [ en-US ] = < -1 ; Default ; Default ; Default ; > ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
