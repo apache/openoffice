@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -475,7 +475,7 @@ public:
     void                        Free();
     sal_Bool                        Init();
     sal_Bool                        Clear();
-    sal_Int16                   Commit();       // if modified and commited: transfer an XInputStream to the content
+    sal_Int16                   Commit();       // if modified and committed: transfer an XInputStream to the content
     sal_Bool                        Revert();       // discard all changes
     BaseStorage*                CreateStorage();// create an OLE Storage on the UCBStorageStream
     sal_uLong                       GetSize();
@@ -528,7 +528,7 @@ public:
     sal_Bool                        m_bDirect;      // the storage and its streams are opened in direct mode; for UCBStorages
                                                 // this means that the root storage does an autocommit when its external
                                                 // reference is destroyed
-    sal_Bool                        m_bIsRoot;      // marks this storage as root storages that manages all oommits and reverts
+    sal_Bool                        m_bIsRoot;      // marks this storage as root storages that manages all commits and reverts
     sal_Bool                        m_bDirty;           // ???
     sal_Bool                        m_bIsLinked;
     sal_Bool                        m_bListCreated;
@@ -881,7 +881,7 @@ sal_Bool UCBStorageStream_Impl::Init()
         }
         else
         {
-            // if the new file is edited than no source exist
+            // if the new file is edited then no source exist
             m_bSourceRead = sal_False;
                 //SetError( SVSTREAM_CANNOT_MAKE );
         }
@@ -1083,14 +1083,14 @@ sal_uLong UCBStorageStream_Impl::SeekPos( sal_uLong nPos )
     }
     else
     {
-        // the problem is that even if nPos is larger the the length
+        // the problem is that even if nPos is larger than the length
         // of the stream the stream pointer will be moved to this position
         // so we have to check if temporary stream does not contain required position
 
         if( m_pStream->Tell() > nPos
             || m_pStream->Seek( STREAM_SEEK_TO_END ) > nPos )
         {
-            // no copiing is required
+            // no copying is required
             aResult = m_pStream->Seek( nPos );
         }
         else
@@ -1151,7 +1151,7 @@ void  UCBStorageStream_Impl::SetSize( sal_uLong nSize )
     m_bSourceRead = sal_False;
 }
 
-void  UCBStorageStream_Impl::FlushData()
+void UCBStorageStream_Impl::FlushData()
 {
     if( m_pStream )
     {
@@ -1197,7 +1197,7 @@ sal_uLong UCBStorageStream_Impl::GetSize()
 BaseStorage* UCBStorageStream_Impl::CreateStorage()
 {
     // create an OLEStorage on a SvStream ( = this )
-    // it gets the root attribute because otherwise it would probably not write before my root is commited
+    // it gets the root attribute because otherwise it would probably not write before my root is committed
     UCBStorageStream* pNewStorageStream = new UCBStorageStream( this );
     Storage *pStorage = new Storage( *pNewStorageStream, m_bDirect );
 
@@ -1212,11 +1212,11 @@ BaseStorage* UCBStorageStream_Impl::CreateStorage()
 sal_Int16 UCBStorageStream_Impl::Commit()
 {
     // send stream to the original content
-    // the  parent storage is responsible for the correct handling of deleted contents
+    // the parent storage is responsible for the correct handling of deleted contents
     if ( m_bCommited || m_bIsOLEStorage || m_bDirect )
     {
         // modified streams with OLEStorages on it have autocommit; it is assumed that the OLEStorage
-        // was commited as well ( if not opened in direct mode )
+        // was committed as well ( if not opened in direct mode )
 
         if ( m_bModified )
         {
@@ -1284,7 +1284,7 @@ sal_Bool UCBStorageStream_Impl::Revert()
     if ( m_bCommited )
     {
         DBG_ERROR("Revert while commit is in progress!" );
-        return sal_False;                   //  ???
+        return sal_False;                   // ???
     }
 
     Free();
@@ -1513,7 +1513,7 @@ const SvStream* UCBStorageStream::GetSvStream() const
         return NULL;
 
     pImp->CopySourceToTemporary();
-    return pImp->m_pStream; // should not live longer then pImp!!!
+    return pImp->m_pStream; // should not live longer than pImp!!!
 }
 
 SvStream* UCBStorageStream::GetModifySvStream()
@@ -1526,7 +1526,7 @@ Reference< XInputStream > UCBStorageStream::GetXInputStream() const
     return pImp->GetXInputStream();
 }
 
-sal_Bool  UCBStorageStream::Equals( const BaseStorageStream& rStream ) const
+sal_Bool UCBStorageStream::Equals( const BaseStorageStream& rStream ) const
 {
     // ???
     return ((BaseStorageStream*) this ) == &rStream;
@@ -2063,7 +2063,7 @@ void UCBStorage_Impl::ReadContent()
     {
         // any command wasn't executed successfully - not specified
         if ( !( m_nMode & STREAM_WRITE ) )
-            // if the folder was just inserted and not already commited, this is not an error!
+            // if the folder was just inserted and not already committed, this is not an error!
             SetError( ERRCODE_IO_GENERAL );
     }
     catch ( RuntimeException& )
@@ -2394,7 +2394,7 @@ sal_Int16 UCBStorage_Impl::Commit()
                         nLocalRet = pElement->m_xStream->Commit();
                         if ( pElement->m_xStream->m_bIsOLEStorage )
                         {
-                            // OLE storage should be stored encrytped, if the storage uses encryption
+                            // OLE storage should be stored encrypted, if the storage uses encryption
                             pElement->m_xStream->m_aContentType = String::CreateFromAscii("application/vnd.sun.star.oleobject");
                             Any aValue;
                             aValue <<= (sal_Bool) sal_True;
@@ -3021,7 +3021,7 @@ BaseStorage* UCBStorage::OpenStorage_Impl( const String& rEleName, StreamMode nM
             SetError( ( nMode & STREAM_WRITE ) ? SVSTREAM_CANNOT_MAKE : SVSTREAM_FILE_NOT_FOUND );
             String aName( pImp->m_aURL );
             aName += '/';
-            aName += rEleName;  //  ???
+            aName += rEleName;  // ???
             UCBStorage *pStorage = new UCBStorage( aName, nMode, bDirect, sal_False, pImp->m_bRepairPackage, pImp->m_xProgressHandler );
             pStorage->pImp->m_bIsRoot = sal_False;
             pStorage->pImp->m_bListCreated = sal_True; // the storage is pretty new, nothing to read
@@ -3042,7 +3042,7 @@ BaseStorage* UCBStorage::OpenStorage_Impl( const String& rEleName, StreamMode nM
         // create OLE storages on a stream ( see ctor of SotStorage )
         // Such a storage will be created on a UCBStorageStream; it will write into the stream
         // if it is opened in direct mode or when it is committed. In this case the stream will be
-        // modified and then it MUST be treated as commited.
+        // modified and then it MUST be treated as committed.
         if ( !pElement->m_xStream.Is() )
         {
             BaseStorageStream* pStr = OpenStream( rEleName, nMode, bDirect );
@@ -3129,7 +3129,7 @@ UCBStorage_Impl* UCBStorage_Impl::OpenStorage( UCBStorageElement_Impl* pElement,
     UCBStorage_Impl* pRet = NULL;
     String aName( m_aURL );
     aName += '/';
-    aName += pElement->m_aOriginalName;  //  ???
+    aName += pElement->m_aOriginalName;  // ???
 
     pElement->m_bIsStorage = pElement->m_bIsFolder = sal_True;
 
@@ -3245,7 +3245,7 @@ sal_Bool UCBStorage::MoveTo( const String& rEleName, BaseStorage* pNewSt, const 
             // clear original name/type of the new element
             // if moved element is open: copy content, but change absolute URL ( and those of all children of the element! ),
             // clear original name/type of new content, keep the old original stream/storage, but forget its working streams,
-                // close original UCBContent and original stream, only the TempFile and its stream may remain unchanged, but now
+            // close original UCBContent and original stream, only the TempFile and its stream may remain unchanged, but now
             // belong to the new content
             // if original and editable stream are identical ( readonly element ), it has to be copied to the editable
             // stream of the destination object

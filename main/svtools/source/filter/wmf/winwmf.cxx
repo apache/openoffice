@@ -1038,7 +1038,7 @@ sal_Bool WMFReader::ReadHeader()
 	else
 	{
 		nUnitsPerInch = 96;       
-        pWMF->Seek( nStrmPos + 18 );    // set the streampos to the start of the the metaactions
+        pWMF->Seek( nStrmPos + 18 );    // set the streampos to the start of the metaactions
         GetPlaceableBound( aPlaceableBound, pWMF );
         pWMF->Seek( nStrmPos );
 	}

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Locale SYSTEM 'locale.dtd'>
 <!--***********************************************************
  * 
@@ -80,10 +80,10 @@
       <FormatCode>0,00E+00</FormatCode>
     </FormatElement>
     <FormatElement msgid="PercentFormatskey1" default="true" type="short" usage="PERCENT_NUMBER" formatindex="8">
-      <FormatCode>0%</FormatCode>
+      <FormatCode>%0</FormatCode>
     </FormatElement>
     <FormatElement msgid="PercentFormatskey2" default="true" type="long" usage="PERCENT_NUMBER" formatindex="9">
-      <FormatCode>0,00%</FormatCode>
+      <FormatCode>%0,00</FormatCode>
     </FormatElement>
     <FormatElement msgid="CurrencyFormatskey1" default="true" type="short" usage="CURRENCY" formatindex="12">
       <FormatCode>#.##0[$TL-41F];-#.##0[$TL-41F]</FormatCode>
@@ -196,7 +196,7 @@
       <FormatCode>DD/MM/YYYY HH:MM:SS</FormatCode>
     </FormatElement>
   </LC_FORMAT>
-  <LC_COLLATION ref="en_US" />
+  <LC_COLLATION ref="en_US"/>
   <LC_SEARCH ref="en_US"/>
   <LC_INDEX>
     <IndexKey phonetic="false" default="true" unoid="alphanumeric">A-Z Ç Ğ î Ö Ş Ü</IndexKey>
