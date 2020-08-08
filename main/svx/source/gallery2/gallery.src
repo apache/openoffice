@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,18 +27,16 @@
 
 /******************************************************************************/
 
-#define MASKCOLOR MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; };
-
 DockingWindow RID_SVXDLG_GALLERYBROWSER
 {
 	HelpId = "SVX_HID_GALLERY_BROWSER" ;
 	OutputSize = TRUE ;
 	Hide = TRUE ;
 	SVLook = TRUE ;
-	Pos = MAP_APPFONT ( 0 , 0 ) ;
+	Pos = MAP_APPFONT ( 0, 0 ) ;
 	Size = MAP_APPFONT ( 211, 100 ) ;
-	Text [ en-US ] = "Gallery";
-	Sizeable = TRUE;
+	Text [ en-US ] = "Gallery" ;
+	Sizeable = TRUE ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	Zoomable = TRUE ;
@@ -47,23 +45,23 @@ DockingWindow RID_SVXDLG_GALLERYBROWSER
 
 	Control GALLERY_BROWSER1
 	{
-		Pos = MAP_APPFONT ( 0 , 0 ) ;
+		Pos = MAP_APPFONT ( 0, 0 ) ;
 		Size = MAP_APPFONT ( 69, 150 ) ;
-		Border = FALSE;
+		Border = FALSE ;
 	};
 
 	Splitter GALLERY_SPLITTER
 	{
-		Pos = MAP_APPFONT ( 70 , 0 ) ;
+		Pos = MAP_APPFONT ( 70, 0 ) ;
 		Size = MAP_APPFONT ( 3, 150 ) ;
-		HScroll = TRUE;
+		HScroll = TRUE ;
 	};
 
 	Control GALLERY_BROWSER2
 	{
 		Pos = MAP_APPFONT ( 73, 0 ) ;
 		Size = MAP_APPFONT ( 138, 150 ) ;
-		Border = FALSE;
+		Border = FALSE ;
 	};
 };
 
@@ -71,7 +69,7 @@ DockingWindow RID_SVXDLG_GALLERYBROWSER
 
 String RID_SVXSTR_GALLERY_ACTUALIZE_PROGRESS
 {
-	Text [ en-US ] = "Update";
+	Text [ en-US ] = "Update" ;
 };
 String RID_SVXSTR_GALLERY_FOPENERROR
 {
@@ -131,7 +129,7 @@ String RID_SVXSTR_GALLERY_DELETEDD
 };
 String RID_SVXSTR_GALLERY_SGIERROR
 {
-	Text [ en-US ] = "This file cannot be opened.\nDo you want to enter a different search path? " ;
+	Text [ en-US ] = "This file cannot be opened.\nDo you want to enter a different search path?" ;
 };
 String RID_SVXSTR_GALLERY_NEWTHEME
 {
@@ -167,11 +165,11 @@ String RID_SVXSTR_GALLERY_PATH
 };
 String RID_SVXSTR_GALLERY_ICONVIEW
 {
-	Text [ en-US ] = "Icon View";
+	Text [ en-US ] = "Icon View" ;
 };
 String RID_SVXSTR_GALLERY_LISTVIEW
 {
-	Text [ en-US ] = "Detailed View";
+	Text [ en-US ] = "Detailed View" ;
 };
 
 /******************************************************************************/
@@ -203,66 +201,62 @@ Bitmap RID_SVXBMP_THEME_DEFAULT
 
 Bitmap RID_SVXBMP_GALLERY_MEDIA
 {
-	File = "galmedia.png";
+	File = "galmedia.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_1
 {
-	File = "galsnd1.png";
+	File = "galsnd1.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_2
 {
-	File = "galsnd2.png";
+	File = "galsnd2.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_3
 {
-	File = "galsnd3.png";
+	File = "galsnd3.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_4
 {
-	File = "galsnd4.png";
+	File = "galsnd4.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_5
 {
-	File = "galsnd5.png";
+	File = "galsnd5.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_6
 {
-	File = "galsnd6.png";
+	File = "galsnd6.png" ;
 };
 
 Bitmap RID_SVXBMP_GALLERY_SOUND_7
 {
-	File = "galsnd7.png";
+	File = "galsnd7.png" ;
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_ICON
 {
-	ImageBitmap = Bitmap { File = "galicon.png"; };
-	MASKCOLOR
+	ImageBitmap = Bitmap {File = "galicon.png" ;} ;
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_LIST
 {
-	ImageBitmap = Bitmap { File = "gallist.png"; };
-	MASKCOLOR
+	ImageBitmap = Bitmap {File = "gallist.png" ;} ;
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_ICON_HC
 {
-	ImageBitmap = Bitmap { File = "galicon_h.png"; };
-	MASKCOLOR
+	ImageBitmap = Bitmap {File = "galicon_h.png" ;} ;
 };
 
 Image RID_SVXIMG_GALLERY_VIEW_LIST_HC
 {
-	ImageBitmap = Bitmap { File = "gallist_h.png"; };
-	MASKCOLOR
+	ImageBitmap = Bitmap {File = "gallist_h.png" ;} ;
 };
 
 
@@ -274,9 +268,9 @@ Menu RID_SVXMN_GALLERY1
 	{
 		MenuItem
 		{
-			Identifier = MN_ACTUALIZE;
-			HelpId = HID_GALLERY_ACTUALIZE;
-			Text [ en-US ] = "Update";
+			Identifier = MN_ACTUALIZE ;
+			HelpId = HID_GALLERY_ACTUALIZE ;
+			Text [ en-US ] = "Update" ;
 		};
 		MenuItem
 		{
@@ -290,8 +284,8 @@ Menu RID_SVXMN_GALLERY1
 		};
 		MenuItem
 		{
-			Identifier = MN_RENAME;
-			HelpId = HID_GALLERY_RENAME;
+			Identifier = MN_RENAME ;
+			HelpId = HID_GALLERY_RENAME ;
 			Text [ en-US ] = "~Rename" ;
 		};
 		MenuItem
@@ -300,7 +294,7 @@ Menu RID_SVXMN_GALLERY1
 		};
 		MenuItem
 		{
-			Identifier = MN_ASSIGN_ID;
+			Identifier = MN_ASSIGN_ID ;
 			Text [ en-US ] = "Assign ~ID" ;
 		};
 		MenuItem
@@ -309,8 +303,8 @@ Menu RID_SVXMN_GALLERY1
 		};
 		MenuItem
 		{
-			Identifier = MN_PROPERTIES;
-			HelpId = HID_GALLERY_PROPERTIES;
+			Identifier = MN_PROPERTIES ;
+			HelpId = HID_GALLERY_PROPERTIES ;
 			Text [ en-US ] = "Propert~ies..." ;
 		};
 	};
@@ -373,7 +367,7 @@ Menu RID_SVXMN_GALLERY2
 		MenuItem
 		{
 			Identifier = MN_TITLE ;
-			HelpId = HID_GALLERY_TITLE;
+			HelpId = HID_GALLERY_TITLE ;
 			Text [ en-US ] = "~Title" ;
 		};
 		MenuItem
@@ -392,16 +386,17 @@ Menu RID_SVXMN_GALLERY2
 		};
 		MenuItem
 		{
-			Identifier = MN_COPYCLIPBOARD;
-			HelpId = HID_GALLERY_MN_COPYCLIPBOARD;
+			Identifier = MN_COPYCLIPBOARD ;
+			HelpId = HID_GALLERY_MN_COPYCLIPBOARD ;
 			Text [ en-US ] = "~Copy" ;
 		};
 		MenuItem
 		{
-			Identifier = MN_PASTECLIPBOARD;
-			HelpId = HID_GALLERY_MN_PASTECLIPBOARD;
+			Identifier = MN_PASTECLIPBOARD ;
+			HelpId = HID_GALLERY_MN_PASTECLIPBOARD ;
 			Text [ en-US ] = "~Insert" ;
 		};
 	};
 };
 
+// ******************************************************************* EOF
