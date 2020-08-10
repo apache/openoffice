@@ -108,7 +108,7 @@ XHPFILES = \
    01160100.xhp \
    01160200.xhp \
    01160201.xhp \
-   improvement.xhp \
+#  improvement.xhp \
    java.xhp \
    javaclasspath.xhp \
    javaparameters.xhp \
