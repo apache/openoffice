@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-
 <!--***********************************************************
  *
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -582,7 +581,7 @@
 <paragraph role="paragraph" id="par_id315379A" xml-lang="en-US" l10n="U" oldref="118">&lt;'2001-01-10'</paragraph>
 </tablecell>
 <tablecell colspan="" rowspan="">
-<paragraph role="paragraph" id="par_id315094A" xml-lang="en-US" l10n="U" oldref="119">returns dates that occurred before January 10, 2001"</paragraph>
+<paragraph role="paragraph" id="par_id315094A" xml-lang="en-US" l10n="U" oldref="119">returns dates that occurred before "January 10, 2001"</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -702,12 +701,10 @@
 </tablecell>
 </tablerow>
 </table>
-
-   <paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
-	<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
+<paragraph role="paragraph" id="par_id3149539" xml-lang="en-US" l10n="U" oldref="267">Example: select {d '1999-12-31'} from world.years</paragraph>
+<paragraph role="paragraph" xml-lang="en-US" l10n="U">Example: select * from mytable where years='1999-12-31' </paragraph>
 <paragraph role="paragraph" id="par_id3150510" xml-lang="en-US" l10n="U" oldref="112">All date expressions (literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)</paragraph>
-
-   <!--//kls end moved -->
+<!--//kls end moved -->
 <paragraph role="heading" id="hd_id3150427" xml-lang="en-US" level="3" l10n="U" oldref="228">Querying Yes/No fields</paragraph>
 <paragraph role="paragraph" id="par_id3149523" xml-lang="en-US" l10n="CHG" oldref="229">To query Yes/No fields, use the following syntax for dBASE tables:</paragraph>
 <table id="tbl_id3150146">
