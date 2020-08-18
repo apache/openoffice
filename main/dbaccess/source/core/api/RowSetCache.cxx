@@ -910,7 +910,7 @@ sal_Bool ORowSetCache::moveWindow()
 				}
 			}
 			else
-			{ // normaly this should never happen
+			{ // normally this should never happen
 				OSL_ENSURE(0,"What the hell is happen here!");
 				return sal_False;
 			}

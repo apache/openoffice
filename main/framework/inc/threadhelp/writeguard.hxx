@@ -160,7 +160,7 @@ class WriteGuard : private INonCopyable
         /*-****************************************************************************************************//**
             @short      unset write lock
             @descr      Call this method to unlock the rw-lock temp.!
-                        Normaly we do it at dtor automatically for you ...
+                        Normally we do it at dtor automatically for you ...
 
             @seealso    method lock()
 

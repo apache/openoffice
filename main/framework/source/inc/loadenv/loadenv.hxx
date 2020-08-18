@@ -197,7 +197,7 @@ class LoadEnv : private ThreadHelpBase
 
         /** @short  it indicates, that the old document (which was located inside m_xBaseFrame
                     in combination with the m_sTarget value "_self") was suspended.
-                    Normaly it will be replaced by the new loaded document. But in case
+                    Normally it will be replaced by the new loaded document. But in case
                     loading (not handling!) failed, it must be reactivated.
                     The default value is sal_False!
          */

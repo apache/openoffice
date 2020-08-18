@@ -95,7 +95,7 @@ struct DispatchParams
         /** @short  can be set from outside and is provided to
                     our internal started operations.
 
-            @descr  Normaly we use the normal status indicator
+            @descr  Normally we use the normal status indicator
                     of the document windows to show a progress.
                     But in case we are used by any special UI,
                     it can provide its own status indicator object
