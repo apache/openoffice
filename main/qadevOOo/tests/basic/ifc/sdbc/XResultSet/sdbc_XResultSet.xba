@@ -54,7 +54,7 @@ On Error Goto ErrHndl
     Dim bOK As Boolean
 
 
-    Out.Log("ReCreating Object, to be shure that it is in initial state.")
+    Out.Log("ReCreating Object, to be sure that it is in initial state.")
 
     Test.StartMethod("beforeFirst()")
     Test.StartMethod("isBeforeFirst()")

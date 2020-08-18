@@ -314,7 +314,7 @@ class PropHelper
     {
         sal_Bool bChanged = sal_False;
 
-        // clear return parameter to be shure, to put out only valid values ...
+        // clear return parameter to be sure, to put out only valid values ...
         aOldValue.clear();
         aChangedValue.clear();
 

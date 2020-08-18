@@ -677,7 +677,7 @@ LoadEnv::EContentType LoadEnv::classifyContent(const ::rtl::OUString&           
     //     Note: These URL schemata are fix and well known ...
     //     But there can be some additional ones, which was not
     //     defined at implementation time of this class :-(
-    //     So we have to make shure, that the following code
+    //     So we have to make sure, that the following code
     //     can detect such protocol schemata too :-)
 
     if(
@@ -1451,7 +1451,7 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
 
     if (xResult.is())
     {
-        // Now we are shure, that this task includes the searched document.
+        // Now we are sure, that this task includes the searched document.
         // It's time to activate it. As special feature we try to jump internaly
         // if an optional jumpmark is given too.
         if (m_aURL.Mark.getLength())
@@ -1673,7 +1673,7 @@ void LoadEnv::impl_reactForLoadingState()
 		// Try to reactivate the old document (if any exists!)
 		css::uno::Reference< css::frame::XController > xOldDoc = m_xTargetFrame->getController();
 		// clear does not depend from reactivation state of a might existing old document!
-		// We must make shure, that a might following getTargetComponent() call does not return
+		// We must make sure, that a might following getTargetComponent() call does not return
 		// the old document!
 		m_xTargetFrame.clear();
 		if (xOldDoc.is())
