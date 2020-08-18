@@ -278,7 +278,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
             // SAFE ->
             ::osl::ResettableMutexGuard aLock(m_aLock);
 
-            // Attention: For executing next lines of code, We must be shure that
+            // Attention: For executing next lines of code, We must be sure that
             // all filters already loaded :-(
             // That can disturb our "load on demand feature". But we have no other chance!
             m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -359,7 +359,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
         // SAFE ->
         ::osl::ResettableMutexGuard aLock(m_aLock);
 
-        // Attention: For executing next lines of code, We must be shure that
+        // Attention: For executing next lines of code, We must be sure that
         // all filters already loaded :-(
         // That can disturb our "load on demand feature". But we have no other chance!
         m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -616,7 +616,7 @@ sal_Bool TypeDetection::impl_getPreselectionForDocumentService(const ::rtl::OUSt
         // SAFE -> --------------------------
         ::osl::ResettableMutexGuard aLock(m_aLock);
 
-        // Attention: For executing next lines of code, We must be shure that
+        // Attention: For executing next lines of code, We must be sure that
         // all filters already loaded :-(
         // That can disturb our "load on demand feature". But we have no other chance!
         m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -687,7 +687,7 @@ void TypeDetection::impl_getPreselection(const css::util::URL&                aP
                                                ::comphelper::MediaDescriptor& rDescriptor,
                                                FlatDetection&                 rFlatTypes )
 {
-    // done to be shure, that only valid results leave this function!
+    // done to be sure, that only valid results leave this function!
     rFlatTypes.clear();
 
     /* #i55122#
@@ -1086,7 +1086,7 @@ void TypeDetection::impl_seekStreamToZero(comphelper::MediaDescriptor& rDescript
 
     // Dont distrub the user for "non existing files - means empty URLs" or
     // if we was forced to detect a stream.
-    // Reason behind: We must be shure to ask user for "unknown contents" only ...
+    // Reason behind: We must be sure to ask user for "unknown contents" only ...
     // and not for "missing files". Especially if detection is done by a stream only
     // we can't check if the stream points to an "existing content"!
     if (
@@ -1109,7 +1109,7 @@ void TypeDetection::impl_seekStreamToZero(comphelper::MediaDescriptor& rDescript
         // "OK" pressed => verify the selected filter, get it's coressponding
         // type and return it. (BTW: We must update the media descriptor here ...)
         // The user selected explicitly a filter ... but normally we are interested on
-        // a type here only. But we must be shure, that the selected filter is used
+        // a type here only. But we must be sure, that the selected filter is used
         // too and no ambigous filter registration disturb us .-)
         
         ::rtl::OUString sFilter = aRequest.getFilter();

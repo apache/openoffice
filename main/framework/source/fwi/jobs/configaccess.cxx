@@ -127,7 +127,7 @@ ConfigAccess::EOpenMode ConfigAccess::getMode() const
 void ConfigAccess::open( /*IN*/ EOpenMode eMode )
 {
     /* SAFE { */
-    // We must lock the whole method to be shure, that nobody
+    // We must lock the whole method to be sure, that nobody
     // outside uses our internal member m_xAccess!
     WriteGuard aWriteLock(m_aLock);
 
@@ -190,7 +190,7 @@ void ConfigAccess::open( /*IN*/ EOpenMode eMode )
 void ConfigAccess::close()
 {
     /* SAFE { */
-    // Lock the whole method, to be shure that nobody else uses our internal members
+    // Lock the whole method, to be sure that nobody else uses our internal members
     // during this time.
     WriteGuard aWriteLock(m_aLock);
 
