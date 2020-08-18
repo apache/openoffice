@@ -409,7 +409,7 @@ class DetectorFactory : // interfaces
                     Note: Before all these operations are started really, all changes will be
                     verified and if necessary some corrections will be done.
                     In case the cache will be invalid and could not be repaired an exception is thrown!
-                    Normaly this container will not work correctly afterwards ...
+                    Normally this container will not work correctly afterwards ...
 
             @exception  com::sun::star::uno::RuntimeException
                         if the changes on this container was invald and could not be repaired.

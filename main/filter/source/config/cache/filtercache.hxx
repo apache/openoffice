@@ -340,7 +340,7 @@ class FilterCache : public BaseLock
                         Otherwhise this method does nothing!
 
                         This method must be called from every user of this cache
-                        everytimes it need a filled cache. Normaly we load
+                        everytimes it need a filled cache. Normally we load
                         only standard informations into this cache on startup.
                         After a few seconds we start a special thread, which
                         may fill this cache completely. But if somehwere outside

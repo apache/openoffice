@@ -1366,8 +1366,8 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
     sal_Int16 nNewVersion = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_VERSION(), (sal_Int16)(-1));
 
     // will be used to save the first hidden frame referring the searched model
-    // Normaly we are interested on visible frames ... but if there is no such visible
-    // frame we referr to any hidden frame also (but as fallback only).
+    // Normally we are interested in visible frames ... but if there is no such visible
+    // frame we refer to any hidden frame also (but as fallback only).
     css::uno::Reference< css::frame::XFrame > xHiddenTask;
     css::uno::Reference< css::frame::XFrame > xTask;
 

@@ -524,7 +524,7 @@ void PresetHandler::connectToResource(      PresetHandler::EConfigType          
         xShare = impl_openLocalizedPathIgnoringErrors(sLocalizedSharePath, eShareMode, sal_True , aShareLocale, bAllowFallbacks);
 
         // The try to locate the right sub dir inside user layer ... without using fallbacks!
-        // Normaly the corresponding sub dir should be created matching the specified locale.
+        // Normally the corresponding sub dir should be created matching the specified locale.
         // Because we allow creation of storages inside user layer by default.
         ::comphelper::Locale aUserLocale        = aLocale    ;
         ::rtl::OUString      sLocalizedUserPath(sRelPathUser);

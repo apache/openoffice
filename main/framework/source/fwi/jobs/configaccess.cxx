@@ -85,7 +85,7 @@ ConfigAccess::ConfigAccess( /*IN*/ const css::uno::Reference< css::lang::XMultiS
 /**
     @short  last chance to close an open configuration access point
     @descr  In case our user forgot to close this configuration point
-            in the right way, normaly he will run into some trouble -
+            in the right way, normally he will run into some trouble -
             e.g. losing data.
  */
 ConfigAccess::~ConfigAccess()

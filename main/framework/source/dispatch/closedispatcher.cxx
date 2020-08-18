@@ -519,8 +519,8 @@ sal_Bool CloseDispatcher::implts_closeFrame()
     if ( ! xFrame.is() )
         return sal_True;
 
-    // dont deliver owner ship; our "UI user" will try it again if it failed.
-    // OK - he will get an empty frame then. But normaly an empty frame
+    // don't deliver ownership; our "UI user" will try it again if it failed.
+    // OK - he will get an empty frame then. But normally an empty frame
     // should be closeable always :-)
     if (!fpf::closeIt(xFrame, sal_False))
         return sal_False;

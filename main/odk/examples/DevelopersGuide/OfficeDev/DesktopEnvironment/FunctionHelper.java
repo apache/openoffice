@@ -243,10 +243,10 @@ public class FunctionHelper
             // try new version of creation first: directly using of the window
             // handle. The old implementation of the corresponding toolkit method
             // requires a process ID. If this id isn't the right one a null object
-            // is returned. But normaly nobody outside the office knows this id.
+            // is returned. But normally nobody outside the office knows this id.
             // New version of this method ignore the id parameter and creation will
             // work.
-            // Note: You must be shure if your window handle can be really used by
+            // Note: You must be sure if your window handle can be really used by
             // the remote office. Means if this java client and the remote office
             // use the same display!
             com.sun.star.awt.XSystemChildFactory xChildFactory =
@@ -632,8 +632,8 @@ public class FunctionHelper
         try
         {
             // Check for supported model functionality.
-            // Normaly the application documents (text, spreadsheet ...) do so
-            // but some other ones (e.g. db components) doesn't do that.
+            // Normally the application documents (text, spreadsheet ...) do so
+            // but some other ones (e.g. db components) don't do that.
             // They can't be save then.
             com.sun.star.frame.XModel xModel = (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
                 com.sun.star.frame.XModel.class,
@@ -689,7 +689,7 @@ public class FunctionHelper
             // First detect factory of this document.
             // Ask for the supported service name of this document.
             // If information is available it can be used to find out which
-            // filter exist for HTML export. Normaly this filter should be searched
+            // filter exist for HTML export. Normally this filter should be searched
             // inside the filter configuration but this little demo doesn't do so.
             // (see service com.sun.star.document.FilterFactory for further
             // informations too)
