@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,19 +41,19 @@
 #endif
 
 //=============================================================================
-module com {  module sun {  module star {  module embed {
+module com { module sun { module star { module embed {
 
 //-----------------------------------------------------------------------------
 /** The main task of this service is to close an office document frame embedded
 	in an application running in another process correctly.
-	
+
 	<p>
 	The usual usage of this service is to create it, initialize with document
 	frame, and to dispose the service. While disposing the service will do all
 	the required actions to let the frame be closed using
 	<type scope="com::sun::star::util">XCloseable</type>::close( true ). Thus
 	in case there is a code that prevents closing of the frame the code
-	avtomatically becomes the owner of the frame. 
+	automatically becomes the owner of the frame.
 	</p>
 
 	<p>
@@ -63,7 +63,7 @@ module com {  module sun {  module star {  module embed {
 */
 published service DocumentCloser : com::sun::star::lang::XComponent
 {
-    /** is used to initialize the object on it's creation.
+	/** is used to initialize the object on its creation.
 
 		@param xFrame
 				the frame of the document that should be closed.
