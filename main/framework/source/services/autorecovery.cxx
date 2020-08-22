@@ -627,7 +627,7 @@ void SAL_CALL AutoRecovery::dispatch(const css::util::URL&                      
     // This can be done immediately ... must not been done asynchronous.
     if ((eNewJob & AutoRecovery::E_DISABLE_AUTORECOVERY) == AutoRecovery::E_DISABLE_AUTORECOVERY)
     {
-        // it's important to set a flag internaly, so AutoRecovery will be suppressed - even if it's requested.
+        // it's important to set a flag internally, so AutoRecovery will be suppressed - even if it's requested.
         m_eJob |= eNewJob;
         implts_stopTimer();
         implts_stopListening();
@@ -977,8 +977,8 @@ void SAL_CALL AutoRecovery::changesOccurred(const css::util::ChangesEvent& aEven
     // <- SAFE ----------------------------------
 
     // Note: This call stops the timer and starts it again.
-    // But it checks the different timer states internaly and
-    // may be suppress the restart!
+    // But it checks the different timer states internally and
+    // may suppress the restart!
     implts_updateTimer();
 }
 

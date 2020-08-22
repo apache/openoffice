@@ -159,7 +159,7 @@ typedef ::std::vector< IndicatorInfo > IndicatorStack;
 //===============================================
 /** @short          implement a factory service to create new status indicator objects
 
-    @descr			Internaly it uses:
+    @descr			Internally it uses:
                     - a vcl based
                     - or an uno based and by the frame layouted
                     progress implementation.

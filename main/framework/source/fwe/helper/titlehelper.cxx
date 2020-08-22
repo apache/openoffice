@@ -354,7 +354,7 @@ void TitleHelper::impl_updateTitleForModel (const css::uno::Reference< css::fram
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
     
-        // external title wont be updated internaly !
+        // external title won't be updated internally !
         // It has to be set from outside new.
         if (m_bExternalTitle)
             return;
@@ -425,7 +425,7 @@ void TitleHelper::impl_updateTitleForController (const css::uno::Reference< css:
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
     
-        // external title wont be updated internaly !
+        // external title won't be updated internally !
         // It has to be set from outside new.
         if (m_bExternalTitle)
             return;
@@ -494,7 +494,7 @@ void TitleHelper::impl_updateTitleForFrame (const css::uno::Reference< css::fram
     // SYNCHRONIZED ->
     ::osl::ResettableMutexGuard aLock(m_aMutex);
     
-        // external title wont be updated internaly !
+        // external title won't be updated internally !
         // It has to be set from outside new.
         if (m_bExternalTitle)
             return;

@@ -327,8 +327,8 @@ class DetectorFactory : // interfaces
             @param  sName
                     the uno implementation name the requested detector.
 
-            @return A property set, which describe this detect service.
-                    It uses a sequence< com::sun::star::beans::PropertyValue > internaly.
+            @return A property set, which describes this detect service.
+                    It uses a sequence< com::sun::star::beans::PropertyValue > internally.
 
             @exception  com::sun::star::container::NoSuchElementException
                         if the requested entry does not exist inside this container.

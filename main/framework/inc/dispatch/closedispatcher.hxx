@@ -109,7 +109,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
 
         //---------------------------------------
         /** @short  used for asynchronous callbacks within the main thread.
-            @descr  Internaly we work asynchronous. Because our callis
+            @descr  Internally we work asynchronous. Because our calls
                     are not aware, that her request can kill its own environment ... */
         ::vcl::EventPoster m_aAsyncCallback;
 
@@ -127,7 +127,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
         ListenerHash m_lStatusListener;
 
         //---------------------------------------
-        /** @short  holded alive for internaly asynchronous operations! */
+        /** @short  held alive for internally asynchronous operations! */
         css::uno::Reference< css::frame::XDispatchResultListener > m_xResultListener;
 
     //-------------------------------------------
@@ -137,13 +137,13 @@ class CloseDispatcher : public css::lang::XTypeProvider
 
         //---------------------------------------
         /** @short  connect a new CloseDispatcher instance to its frame.
-            @descr  One CloseDispatcher instance is bound to onw frame only.
+            @descr  One CloseDispatcher instance is bound to own frame only.
                     That makes an implementation (e.g. of listener support)
                     much more easier .-)
 
             @param  xSMGR
-                    an un oservice manager, which is needed to create uno resource
-                    internaly.
+                    an uno service manager, which is needed to create uno resource
+                    internally.
 
             @param  xFrame
                     the frame where the corresponding dispatch was started.
@@ -196,8 +196,8 @@ class CloseDispatcher : public css::lang::XTypeProvider
         //---------------------------------------
         /** @short  a callback for asynchronous started operations.
 
-            @descr  As already mentione, we make internaly all operations
-                    asynchronous. Otherwhise our callis kill its own environment
+            @descr  As already mentioned, we make internally all operations
+                    asynchronous. Otherwise our calls kill its own environment
                     during they call us ...
         */
         DECL_LINK( impl_asyncCallback, void* );

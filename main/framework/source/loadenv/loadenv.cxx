@@ -282,7 +282,7 @@ void LoadEnv::initializeLoading(const ::rtl::OUString&                          
 
     // try to find out, if its really a content, which can be loaded or must be "handled"
     // We use a default value for this in-parameter. Then we have to start a complex check method
-    // internaly. But if this check was already done outside it can be suppressed to perform
+    // internally. But if this check was already done outside it can be suppressed to perform
     // the load request. We take over the result then!
     if (m_eContentType == E_UNSUPPORTED_CONTENT)
     {
@@ -1452,7 +1452,7 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
     if (xResult.is())
     {
         // Now we are sure, that this task includes the searched document.
-        // It's time to activate it. As special feature we try to jump internaly
+        // It's time to activate it. As special feature we try to jump internally
         // if an optional jumpmark is given too.
         if (m_aURL.Mark.getLength())
             impl_jumpToMark(xResult, m_aURL);

@@ -182,8 +182,8 @@ css::uno::Sequence< css::uno::Reference< css::frame::XDispatch > > SAL_CALL Mail
 /**
     @short      dispatch URL with arguments
     @descr      We use threadsafe internal method to do so. It returns a state value - but we ignore it.
-                Because we doesn't support status listener notifications here. Status events are not guaranteed -
-                and we call another service internaly which doesn't return any notifications too.
+                Because we don't support status listener notifications here. Status events are not guaranteed -
+                and we call another service internally which doesn't return any notifications too.
 
     @param      aURL
                     mail URL which should be executed

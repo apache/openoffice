@@ -99,7 +99,7 @@ class FWI_DLLPUBLIC PropertySetHelper : public css::beans::XPropertySet
         /** initialize new instance of this helper.
          *
          *  @param  xSMGR
-         *          points to an uno service manager, which is used internaly to create own
+         *          points to an uno service manager, which is used internally to create own
          *          needed uno services.
          *
          *  @param  pExternalLock

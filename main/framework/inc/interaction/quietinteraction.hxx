@@ -127,10 +127,10 @@ class QuietInteraction : public  css::lang::XTypeProvider
 
         //_________________________________
         /**
-            @short      return the handled interaction request
-            @descr      We saved any getted interaction request internaly.
-                        May the outside user of this class is interessted
-                        on that. Especially we gotted an unknown interaction
+            @short      returns the handled interaction request
+            @descr      We saved any getted interaction request internally.
+                        Maybe the outside user of this class is interested
+                        in that. Especially if we got an unknown interaction
                         and aborted it hard.
 
             @return     [com.sun.star.uno.Any]
@@ -144,7 +144,7 @@ class QuietInteraction : public  css::lang::XTypeProvider
         //_________________________________
         /**
             @short      returns information if interaction was used
-            @descr      It can be usefully to know the reason for a failed operation.
+            @descr      It can be useful to know the reason for a failed operation.
 
             @return     [boolean]
                             <TRUE/> for used interaction
