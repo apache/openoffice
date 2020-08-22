@@ -814,7 +814,7 @@ LoadEnv::EContentType LoadEnv::classifyContent(const ::rtl::OUString&           
     //-------------------------------------------
     // (TODO) At this point, we have no idea .-)
     //        But it seems to be better, to break all
-    //        further requests for this URL. Otherwhise
+    //        further requests for this URL. Otherwise
     //        we can run into some trouble.
     return E_UNSUPPORTED_CONTENT;
 }
@@ -935,7 +935,7 @@ sal_Bool LoadEnv::impl_handleContent()
     // SAFE -> -----------------------------------
     ReadGuard aReadLock(m_aLock);
 
-    // the type must exist inside the descriptor ... otherwhise this class is implemented wrong :-)
+    // the type must exist inside the descriptor ... otherwise this class is implemented wrong :-)
     ::rtl::OUString sType = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_TYPENAME(), ::rtl::OUString());
     if (!sType.getLength())
         throw LoadEnvException(LoadEnvException::ID_INVALID_MEDIADESCRIPTOR);
@@ -1241,7 +1241,7 @@ css::uno::Reference< css::uno::XInterface > LoadEnv::impl_searchLoader()
         throw LoadEnvException(LoadEnvException::ID_INVALID_ENVIRONMENT);
     }
 
-    // Otherwhise ...
+    // Otherwise ...
     // We need this type information to locate an registered frame loader
     // Without such information we can't work!
     ::rtl::OUString sType = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_TYPENAME(), ::rtl::OUString());
@@ -1352,8 +1352,8 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
         return css::uno::Reference< css::frame::XFrame >();
     }
 
-    // otherwhise - iterate through the tasks of the desktop container
-    // to find out, which of them might contains the requested document
+    // otherwise - iterate through the tasks of the desktop container
+    // to find out, which of them might contain the requested document
     css::uno::Reference< css::frame::XFramesSupplier >  xSupplier(m_xSMGR->createInstance(SERVICENAME_DESKTOP), css::uno::UNO_QUERY);
     css::uno::Reference< css::container::XIndexAccess > xTaskList(xSupplier->getFrames()                      , css::uno::UNO_QUERY);
 
@@ -1480,7 +1480,7 @@ sal_Bool LoadEnv::impl_isFrameAlreadyUsedForLoading(const css::uno::Reference< c
     if (!xLock.is())
         return sal_False;
 
-    // Otherwhise we have to look for any other existing lock.
+    // Otherwise we have to look for any other existing lock.
     return xLock->isActionLocked();
 }
 
@@ -1580,11 +1580,11 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchRecycleTarget()
     if (eOldApp != eNewApp)
         return css::uno::Reference< css::frame::XFrame >();
 
-    // OK this task seams to be useable for recycling
+    // OK this task seems to be useable for recycling
     // But we should mark it as such - means set an action lock.
-    // Otherwhise it would be used more then ones or will be destroyed
+    // Otherwise it would be used more than once or will be destroyed
     // by a close() or terminate() request.
-    // But if such lock already exist ... it means this task is used for
+    // But if such lock already exists ... it means this task is used for
     // any other operation already. Don't use it then.
     if (impl_isFrameAlreadyUsedForLoading(xTask))
         return css::uno::Reference< css::frame::XFrame >();
@@ -1655,7 +1655,7 @@ void LoadEnv::impl_reactForLoadingState()
         }
 
         // Note: Only if an existing property "FrameName" is given by this media descriptor,
-        // it should be used. Otherwhise we should do nothing. May be the outside code has already
+        // it should be used. Otherwise we should do nothing. Maybe the outside code has already
         // set a frame name on the target!
         ::comphelper::MediaDescriptor::const_iterator pFrameName = m_lMediaDescriptor.find(::comphelper::MediaDescriptor::PROP_FRAMENAME());
         if (pFrameName != m_lMediaDescriptor.end())
@@ -1708,14 +1708,14 @@ void LoadEnv::impl_reactForLoadingState()
     // This max force an implicit closing of our target frame ...
     // e.g. in case close(sal_True) was called before and the frame
     // kill itself if our external use-lock is released here!
-    // Thats why we releas this lock AFTER ALL OPERATIONS on this frame
-    // are finished. The frame itslef must handle then
+    // That's why we release this lock AFTER ALL OPERATIONS on this frame
+    // are finished. The frame itself must handle then
     // this situation gracefully.
     m_aTargetLock.freeResource();
 
     // Last but not least :-)
     // We have to clear the current media descriptor.
-    // Otherwhise it hold a might existing stream open!
+    // Otherwise it hold a might existing stream open!
     m_lMediaDescriptor.clear();
 
 	css::uno::Any aRequest;

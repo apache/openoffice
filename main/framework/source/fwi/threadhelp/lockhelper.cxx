@@ -457,7 +457,7 @@ LockHelper& LockHelper::getGlobalLock( ::vos::IMutex* pSolarMutex )
     @descr      Sometimes we need a osl-mutex for sharing with our uno helper ...
                 What can we do?
                 a) If we have an initialized "own mutex" ... we can use it!
-                b) Otherwhise we must use a different mutex member :-(
+                b) Otherwise we must use a different mutex member :-(
                 I HOPE IT WORKS!
 
     @seealso    -

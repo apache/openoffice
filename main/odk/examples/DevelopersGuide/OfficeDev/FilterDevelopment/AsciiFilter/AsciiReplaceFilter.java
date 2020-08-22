@@ -216,8 +216,8 @@ public class AsciiReplaceFilter
         /**
         * For external user of us we must provide our internal filter name
         * (which is registered inside configuration package TypeDetection).
-        * User will be able then to ask there for furthe information about us.
-        * Otherwhise we must implement a full featured XPropertySet ...
+        * User will be able then to ask there for further information about us.
+        * Otherwise we must implement a full featured XPropertySet ...
         *
         * @return our internal filter name of configuration
         */
@@ -651,7 +651,7 @@ public class AsciiReplaceFilter
          *  the requested service name
          *
          * @return True, if the given service name will be supported;
-         *         False otherwhise.
+         *         False otherwise.
          */
         public boolean supportsService( String sService )
         {

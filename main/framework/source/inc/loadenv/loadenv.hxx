@@ -151,7 +151,7 @@ class LoadEnv : private ThreadHelpBase
                     or a non visible content was loaded!
                     It can be the same frame as m_xBaseFrame it describe, in case
                     the target "_self", "" or the search flag "SELF" was used.
-                    Otherwhise its the new created or recycled frame, which was
+                    Otherwise it's the new created or recycled frame, which was
                     used for loading and contains further the new component.
 
                     Please use method getTarget() or getTargetComponent()
@@ -601,8 +601,8 @@ class LoadEnv : private ThreadHelpBase
                     for this load request.
 
             @descr  Because this special feature is bound to the target specifier "_default"
-                    its checked inside first. If its not set => this method return an empty
-                    reference. Otherwhise any currently existing frame will be analyzed, if
+                    it's checked inside first. If it's not set => this method return an empty
+                    reference. Otherwise any currently existing frame will be analyzed, if
                     it can be used here. The following rules exists:
 
                     <ul>

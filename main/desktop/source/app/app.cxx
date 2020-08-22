@@ -3095,9 +3095,9 @@ void Desktop::OpenClients()
                     bExistsRecoveryData);
                 /* TODO we can't be sure, that at least one document could be recovered here successfully
                     So we set bLoaded=sal_True to suppress opening of the default document.
-                    But we should make it more safe. Otherwhise we have an office without an UI ...
+                    But we should make it more safe. Otherwise we have an office without an UI ...
                     ...
-                    May be we can check the desktop if some documents are existing there.
+                    Maybe we can check the desktop if some documents are existing there.
                  */
                 Reference< XFramesSupplier > xTasksSupplier(
                         ::comphelper::getProcessServiceFactory()->createInstance( OUSTRING(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.Desktop")) ),
@@ -3316,7 +3316,7 @@ String GetURL_Impl(
 
     // Add path seperator to these directory and make given URL (rName) absolute by using of current working directory
     // Attention: "setFianlSlash()" is necessary for calling "smartRel2Abs()"!!!
-    // Otherwhise last part will be ignored and wrong result will be returned!!!
+    // Otherwise last part will be ignored and wrong result will be returned!!!
     // "smartRel2Abs()" interpret given URL as file not as path. So he truncate last element to get the base path ...
     // But if we add a seperator - he doesn't do it anymore.
     INetURLObject aObj;

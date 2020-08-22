@@ -218,7 +218,7 @@ void HelpAgentDispatcher::implts_acceptCurrentURL()
 	// <- SAFE
 	
 	// We must make sure that this URL isn't marked as ignored by the user.
-	// Otherwhise the user wont see the corresponding help content in the future.
+	// Otherwise the user won't see the corresponding help content in the future.
 	SvtHelpOptions().resetAgentIgnoreURLCounter(sAcceptedURL);
 
 	// show the right help content

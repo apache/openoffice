@@ -251,7 +251,7 @@ class COMPHELPER_DLLPUBLIC SequenceAsHashMap : public SequenceAsHashMapBase
         //---------------------------------------
         /** @short  check if the specified item exists
                     and return its (unpacked!) value or it returns the
-                    specified default value otherwhise.
+                    specified default value otherwise.
 
             @descr  If a value should be extracted only in case
                     the requsted property exists really (without creating
@@ -267,7 +267,7 @@ class COMPHELPER_DLLPUBLIC SequenceAsHashMap : public SequenceAsHashMapBase
                     be found.
 
             @return The (unpacked!) value of the specified property or
-                    the given default value otherwhise.
+                    the given default value otherwise.
 
             @attention  "unpacked" means the Any content of every iterator->second!
          */
