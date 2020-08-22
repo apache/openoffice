@@ -159,7 +159,7 @@ class UNOTOOLS_DLLPUBLIC SvtSecurityOptions: public utl::detail::Options
             @seealso    -
 
             @param      "eOption", specify, which item is queried
-            @return     <TRUE/> if item is readonly; <FALSE/> otherwhise
+            @return     <TRUE/> if item is readonly; <FALSE/> otherwise
 
             @onerror    No error should occurre!
         *//*-*****************************************************************************************************/

@@ -851,7 +851,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::findFrame( const ::rtl
     //-----------------------------------------------------------------------------------------------------
     // I.III) "_top"
     //  If we are not the top frame in this hierarchy, we must forward request to our parent.
-    //  Otherwhise we must return ourself.
+    //  Otherwise we must return ourself.
     //-----------------------------------------------------------------------------------------------------
     else
     if ( sTargetFrameName==SPECIALTARGET_TOP )
@@ -907,9 +907,9 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::findFrame( const ::rtl
     else
     {
         //-------------------------------------------------------------------------------------------------
-        // II) otherwhise use optional given search flags
+        // II) otherwise use optional given search flags
         //  force using of combinations of such flags. means no "else" part of use if() statements.
-        //  But we ust break further searches if target was already found.
+        //  But we must break further searches if target was already found.
         //  Order of using flags is fix: SELF - CHILDREN - SIBLINGS - PARENT
         //  TASK and CREATE are handled special.
         //-------------------------------------------------------------------------------------------------
@@ -923,7 +923,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Frame::findFrame( const ::rtl
 
         //-------------------------------------------------------------------------------------------------
         // II.I) SELF
-        //  Check for right name. If it's the searched one return ourself - otherwhise
+        //  Check for right name. If it's the searched one return ourself - otherwise
         //  ignore this flag.
         //-------------------------------------------------------------------------------------------------
         if (
@@ -1389,10 +1389,10 @@ sal_Bool SAL_CALL Frame::setComponent(  const   css::uno::Reference< css::awt::X
 		implts_sendFrameActionEvent( css::frame::FrameAction_COMPONENT_DETACHING );
 
     //_____________________________________________________________________________________________________
-    // otherwhise release old component first
+    // otherwise release old component first
     // Always release controller before releasing window,
     // because controller may want to access its window!
-    // But check for real changes - may the new controller is the old one.
+    // But check for real changes - maybe the new controller is the old one.
     if (
         (xOldController.is()          )   &&
         (xOldController != xController)
@@ -1616,8 +1616,8 @@ void SAL_CALL Frame::removeFrameActionListener( const css::uno::Reference< css::
 
     @param      bDeliverOwnerShip
                     If parameter is set to <FALSE/> the original caller will be the owner after thrown
-                    veto exception and must try to close this frame at later time again. Otherwhise the
-                    source of throwed exception is the right one. May it will be the frame himself.
+                    veto exception and must try to close this frame at later time again. Otherwise the
+                    source of throwed exception is the right one. Maybe it will be the frame himself.
 
     @thrown     CloseVetoException
                     if any internal things willn't be closed
@@ -1701,8 +1701,8 @@ void SAL_CALL Frame::close( sal_Bool bDeliverOwnerShip ) throw( css::util::Close
     /* } SAFE */
     impl_checkMenuCloser();
 
-    // Attention: We must release our own registered transaction here. Otherwhise following dispose() call
-    // wait for us too ....
+    // Attention: We must release our own registered transaction here. Otherwise following dispose() call
+    // waits for us too ....
     aTransaction.stop();
     dispose();
 }
@@ -1878,7 +1878,7 @@ void SAL_CALL Frame::dispose() throw( css::uno::RuntimeException )
     impl_disablePropertySet();
 
     // interception/dispatch chain must be destructed explicitly
-    // Otherwhise some dispatches and/or interception objects wont die.
+    // Otherwise some dispatches and/or interception objects wont die.
     css::uno::Reference< css::lang::XEventListener > xDispatchHelper(m_xDispatchHelper, css::uno::UNO_QUERY_THROW);
     xDispatchHelper->disposing(aEvent);
     xDispatchHelper.clear();
@@ -1976,7 +1976,7 @@ void SAL_CALL Frame::dispose() throw( css::uno::RuntimeException )
     m_aTransactionManager.setWorkingMode( E_CLOSE );
 
     // Don't forget it restore old value -
-    // otherwhise no dialogs can be shown anymore in other frames.
+    // otherwise no dialogs can be shown anymore in other frames.
     Application::EnableDialogCancel( bCancelDialogs );
 }
 
@@ -2363,7 +2363,7 @@ void SAL_CALL Frame::windowClosing( const css::lang::EventObject& ) throw( css::
 
     /*ATTENTION!
         Don't try to suspend the controller here! Because it's done inside used dispatch().
-        Otherwhise the dialog "would you save your changes?" will be shown more then once ...
+        Otherwise the dialog "would you save your changes?" will be shown more than once ...
      */
 
     /* SAFE */
@@ -2528,7 +2528,7 @@ void SAL_CALL Frame::addActionLock() throw( css::uno::RuntimeException )
 //*****************************************************************************************************************
 void SAL_CALL Frame::removeActionLock() throw( css::uno::RuntimeException )
 {
-	// Register no transaction here! Otherwhise we wait for ever inside possible
+	// Register no transaction here! Otherwise we wait for ever inside possible
 	// implts_checkSuicide()/dispose() request ...
 
     /* SAFE AREA */{
@@ -2555,7 +2555,7 @@ void SAL_CALL Frame::setActionLocks( sal_Int16 nLock ) throw( css::uno::RuntimeE
 //*****************************************************************************************************************
 sal_Int16 SAL_CALL Frame::resetActionLocks() throw( css::uno::RuntimeException )
 {
-	// Register no transaction here! Otherwhise we wait for ever inside possible
+	// Register no transaction here! Otherwise we wait for ever inside possible
 	// implts_checkSuicide()/dispose() request ...
 
     sal_Int16 nCurrentLocks = 0;

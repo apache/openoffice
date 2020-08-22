@@ -539,9 +539,9 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
         {
 			// Attention: Found target is our own owner frame!
 			// Don't ask him for his dispatcher. We know it already - it's our self dispatch helper.
-			// Otherwhise we can start a never ending recursiv call. Why?
-			// Somewere called our owner frame - he called some interceptor objects - and may by this dispatch provider
-			// is called. If wa use queryDispatch() on our owner frame again - we start this call stack again ... and again.
+			// Otherwise we can start a never ending recursiv call. Why?
+			// Somewhere called our owner frame - he called some interceptor objects - and maybe this dispatch provider
+			// is called. If we use queryDispatch() on our owner frame again - we start this call stack again ... and again.
 			if (xFoundFrame==xFrame)
 		        xDispatcher = implts_getOrCreateDispatchHelper( E_SELFDISPATCHER, xFrame );
 			else
@@ -580,7 +580,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
     @param      aURL
                     the dispatch URL for which may a handler is registered
 
-    @return     A dispatch object if a handler was found and agree with the given URL or <NULL/> otherwhise.
+    @return     A dispatch object if a handler was found and agree with the given URL or <NULL/> otherwise.
 
     @threadsafe yes
     @modified   05.09.2002 13:43, as96863
@@ -679,8 +679,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_getOrCreat
     {
         case E_MENUDISPATCHER :
                 {
-                    // Attention: Such menue dispatcher must be a singleton for this frame - means our owner frame.
-                    // Otherwhise he can make some trouble.
+                    // Attention: Such menu dispatcher must be a singleton for this frame - means our owner frame.
+                    // Otherwise he can make some trouble.
                     /* SAFE { */
                     WriteGuard aWriteLock( m_aLock );
                     if ( ! m_xMenuDispatcher.is() )

@@ -170,7 +170,7 @@ void JobData::setAlias( const ::rtl::OUString& sAlias )
 {
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
-    // delete all old informations! Otherwhise we mix it with the new one ...
+    // delete all old informations! Otherwise we mix it with the new one ...
     impl_reset();
 
     // take over the new informations
@@ -242,7 +242,7 @@ void JobData::setService( const ::rtl::OUString& sService )
     /* SAFE { */
     WriteGuard aWriteLock(m_aLock);
 
-    // delete all old informations! Otherwhise we mix it with the new one ...
+    // delete all old informations! Otherwise we mix it with the new one ...
     impl_reset();
     // take over the new informations
     m_sService = sService;
@@ -378,8 +378,8 @@ void JobData::setResult( const JobResult& aResult )
 /**
     @short  set a new environment descriptor for this job
     @descr  It must(!) be done every time this container is initialized
-            with new job datas e.g.: setAlias()/setEvent()/setService() ...
-            Otherwhise the environment will be unknown!
+            with new job data e.g.: setAlias()/setEvent()/setService() ...
+            Otherwise the environment will be unknown!
  */
 void JobData::setEnvironment( EEnvironment eEnvironment )
 {
@@ -579,7 +579,7 @@ sal_Bool isEnabled( const ::rtl::OUString& sAdminTime ,
 {
     /*Attention!
         To prevent interpreting of TriGraphs inside next const string value,
-        we have to encode all '?' signs. Otherwhise e.g. "??-" will be translated
+        we have to encode all '?' signs. Otherwise e.g. "??-" will be translated
         to "~" ...
      */
     static ::rtl::OUString PATTERN_ISO8601 = ::rtl::OUString::createFromAscii("\?\?\?\?-\?\?-\?\?*\0");
@@ -721,7 +721,7 @@ css::uno::Sequence< ::rtl::OUString > JobData::getEnabledJobsForEvent( const css
     @short      reset all internal structures
     @descr      If somehwere recycle this instance, he can switch from one
                 using mode to another one. But then we have to reset all currently
-                used informations. Otherwhise we mix it and they can make trouble.
+                used informations. Otherwise we mix it and they can make trouble.
 
                 But note: that does not set defaults for internal used members, which
                 does not relate to any job property! e.g. the reference to the global

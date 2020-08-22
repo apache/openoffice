@@ -898,7 +898,7 @@ void SAL_CALL AutoRecovery::notifyEvent(const css::document::EventObject& aEvent
     }
     /* document saved as copy => mark it as "non used by concurrent save operation".
        so we can try to create a backup copy if next time AutoSave is started too.
-       Dont remove temp. files or change the modified state of the document!
+       Don't remove temp. files or change the modified state of the document!
        It was not really saved to the original file ...
     */
     else
@@ -908,7 +908,7 @@ void SAL_CALL AutoRecovery::notifyEvent(const css::document::EventObject& aEvent
     }
     // If saving of a document failed by an error ... we have to save this document
     // by ourself next time AutoSave or EmergencySave is triggered.
-    // But we can reset the state "used for other save requests". Otherwhise
+    // But we can reset the state "used for other save requests". Otherwise
     // these documents will never be saved!
     else
     if (
@@ -1765,7 +1765,7 @@ void AutoRecovery::implts_registerDocument(const css::uno::Reference< css::frame
     if (bNoAutoSave)
         return;
 
-    // Check if doc is well known on the desktop. Otherwhise ignore it!
+    // Check if doc is well known on the desktop. Otherwise ignore it!
     // Other frames mostly are used from external programs - e.g. the bean ...
     css::uno::Reference< css::frame::XController > xController = xDocument->getCurrentController();
     if (!xController.is())
@@ -1882,7 +1882,7 @@ void AutoRecovery::implts_deregisterDocument(const css::uno::Reference< css::fra
 
     // Sometimes we close documents by ourself.
     // And these documents can't be deregistered.
-    // Otherwhise we loos our configuration data ... but need it !
+    // Otherwise we lose our configuration data ... but need it !
     // see SessionSave !
     if (aInfo.IgnoreClosing)
         return;
@@ -1891,14 +1891,14 @@ void AutoRecovery::implts_deregisterDocument(const css::uno::Reference< css::fra
     pIt = AutoRecovery::impl_searchDocument(m_lDocCache, xDocument);
     if (pIt != m_lDocCache.end())
         m_lDocCache.erase(pIt);
-    pIt = m_lDocCache.end(); // otherwhise its not specified what pIt means!
+    pIt = m_lDocCache.end(); // otherwise it's not specified what pIt means!
     aCacheLock2.unlock();
 
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
 
     /* This method is called within disposing() of the document too. But there it's not a good idea to
-       deregister us as listener. Furter it make no sense - because the broadcaster dies.
+       deregister us as listener. Further it makes no sense - because the broadcaster dies.
        So we suppress deregistration in such case ...
     */
     if (bStopListening)
@@ -2142,7 +2142,7 @@ void AutoRecovery::implts_prepareSessionShutdown()
         // Prevent us from deregistration of these documents.
         // Because we close these documents by ourself (see XClosable below) ...
         // it's fact, that we reach our deregistration method. There we
-        // must not(!) update our configuration ... Otherwhise all
+        // must not(!) update our configuration ... Otherwise all
         // session data are lost !!!
         rInfo.IgnoreClosing = sal_True;
 
@@ -2417,7 +2417,7 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
         lNewArgs[::comphelper::MediaDescriptor::PROP_PASSWORD()] <<= sPassword;
 
     // Further it must be saved using the default file format of that application.
-    // Otherwhise we will some data lost.
+    // Otherwise we will lose some data.
     if (rInfo.DefaultFilter.getLength())
         lNewArgs[::comphelper::MediaDescriptor::PROP_FILTERNAME()] <<= rInfo.DefaultFilter;
 
@@ -3540,7 +3540,7 @@ sal_Bool AutoRecovery::impl_enoughDiscSpace(sal_Int32 nRequiredSpace)
 
     // In case an error occurs and we are not able to retrieve the needed information
     // it's better to "disable" the feature ShowErrorOnFullDisc !
-    // Otherwhise we start a confusing process of error handling ...
+    // Otherwise we start a confusing process of error handling ...
 
     sal_uInt64 nFreeSpace = SAL_MAX_UINT64;
 

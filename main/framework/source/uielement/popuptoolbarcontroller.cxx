@@ -337,10 +337,10 @@ void NewToolbarController::functionExecuted( const OUString &rCommand )
     it return the existing state of the given URL in the popupmenu of this toolbox control.
 
     If the given URL can be located as an action command of one menu item of the
-    popup menu of this control, we return sal_True. Otherwhise we return sal_False.
+    popup menu of this control, we return sal_True. Otherwise we return sal_False.
     Further we return a fallback URL, in case we have to return sal_False. Because
     the outside code must select a valid item of the popup menu every time ...
-    and we define it here. By the way this m ethod was written to handle
+    and we define it here. By the way this method was written to handle
     error situations gracefully. E.g. it can be called during creation time
     but then we have no valid menu. For this case we know another fallback URL.
     Then we return the private:factory/ URL of the default factory.
@@ -360,7 +360,7 @@ void NewToolbarController::functionExecuted( const OUString &rCommand )
                 contains the image of the menu for the URL.
 
     @return sal_True - if URL could be located as an item of the popup menu.
-            sal_False - otherwhise.
+            sal_False - otherwise.
 */
 static sal_Bool Impl_ExistURLInMenu(
     const css::uno::Reference< css::awt::XPopupMenu > &rPopupMenu,

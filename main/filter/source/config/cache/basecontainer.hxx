@@ -213,7 +213,7 @@ class BaseContainer : public BaseLock
 
             @note   The lifetime of this pointer is restricted to the time, where
                     the mutex of this BaseContainer instance is locked.
-                    Otherwhise may be the interface method flush() will destroy
+                    Otherwise maybe the interface method flush() will destroy
                     m_pFlushCache and the here returned pointer will be invalid!
 
                     Use:

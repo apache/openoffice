@@ -756,11 +756,11 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                     - patch the configuration.
 
                     Note further: It paches the info struct
-                    more then ones. E.g. the new temp URL is set
+                    more than once. E.g. the new temp URL is set
                     before the file is saved. And the old URL is removed
-                    only if removing oft he old file was successfully.
+                    only if removing of the old file was successfully.
                     If this method returns without an exception - everything
-                    was OK. Otherwhise the info struct can be analyzed to
+                    was OK. Otherwise the info struct can be analyzed to
                     get more information, e.g. when the problem occurs.
 
             @param  sBackupPath

@@ -389,7 +389,7 @@ class DetectorFactory : // interfaces
 
         /** @short  return fill state of this cache.
 
-            @return sal_True if any item exist inside this conatiner; sal_False otherwhise.
+            @return sal_True if any item exist inside this conatiner; sal_False otherwise.
          */
 
         virtual sal_Bool SAL_CALL hasElements()

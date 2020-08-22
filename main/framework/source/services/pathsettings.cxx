@@ -26,7 +26,7 @@
 // ______________________________________________
 // my own includes
 
-/** Attention: stl headers must(!) be included at first. Otherwhise it can make trouble
+/** Attention: stl headers must(!) be included at first. Otherwise it can make trouble
                with solaris headers ...
 */
 #include <vector>
@@ -505,7 +505,7 @@ css::uno::Sequence< sal_Int32 > PathSettings::impl_mapPathName2IDList(const ::rt
     ::rtl::OUString sWriteProp    = sPath+POSTFIX_WRITE_PATH;
 
     // Attention: The default set of IDs is fix and must follow these schema.
-    // Otherwhise the outside code ant work for new added properties.
+    // Otherwise the outside code ant work for new added properties.
     // Why ?
     // The outside code must fire N events for every changed property.
     // And the knowing about packaging of variables of the structure PathInfo

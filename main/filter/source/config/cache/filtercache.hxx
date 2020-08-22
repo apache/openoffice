@@ -335,9 +335,9 @@ class FilterCache : public BaseLock
 
         /** @short      force special fill state of this cache.
 
-            @descr      This method check if all requested items/properties already
-                        exists. Only missing informations will be readed.
-                        Otherwhise this method does nothing!
+            @descr      This method checks if all requested items/properties already
+                        exist. Only missing informations will be read.
+                        Otherwise this method does nothing!
 
                         This method must be called from every user of this cache
                         everytimes it need a filled cache. Normally we load
@@ -349,8 +349,8 @@ class FilterCache : public BaseLock
                         This method "load(xxx)" synchronize such load-on-demand requests.
 
                         Of course it would be possible to suppress this special load thread
-                        in general and start it manualy inside this load() request.
-                        The outside code decide then, if and when this cache will be filled
+                        in general and start it manually inside this load() request.
+                        The outside code decides then, if and when this cache will be filled
                         with all available informations ...
 
             @param      bByThread
@@ -441,7 +441,7 @@ class FilterCache : public BaseLock
 
             @return     [sal_Bool]
                         True, if the requested sub container contains some items;
-                        False otherwhise.
+                        False otherwise.
 
             @throw      [css::uno::Exception]
                         if some input parameter are wrong or the cache itself is not valid
@@ -713,7 +713,7 @@ class FilterCache : public BaseLock
 
             @return     A valid reference, if the configuration access could be opened
                         and initialized within the requested modes successfully;
-                        a NULL reference otherwhise.
+                        a NULL reference otherwise.
          */
         css::uno::Reference< css::uno::XInterface > impl_createConfigAccess(const ::rtl::OUString& sRoot       ,
                                                                                   sal_Bool         bReadOnly   ,

@@ -811,7 +811,7 @@ SfxHelpWindow_Impl* impl_createHelp(Reference< XFrame >& rHelpTask   ,
     Reference < XFrame > xDesktop( ::comphelper::getProcessServiceFactory()->createInstance(
 		DEFINE_CONST_UNICODE("com.sun.star.frame.Desktop") ), UNO_QUERY );
 
-    // otherwhise - create new help task
+    // otherwise - create new help task
     Reference< XFrame > xHelpTask = xDesktop->findFrame(
         ::rtl::OUString(DEFINE_CONST_UNICODE("OFFICE_HELP_TASK")),
         FrameSearchFlag::TASKS | FrameSearchFlag::CREATE);

@@ -235,8 +235,8 @@ class CloseDispatcher : public css::lang::XTypeProvider
                     inside this frame. Such views must be cleared
                     before (e.g. by calling implts_closeView()!
 
-                    Otherwhise e.g. the XController->suspend()
-                    call isn't made and no UI warn the user about
+                    Otherwise e.g. the XController->suspend()
+                    call isn't made and no UI warns the user about
                     losing document changes. Because the
                     frame is closed ....
 
