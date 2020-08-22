@@ -248,7 +248,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     can't have any special parameters!
                     
             @param  xSMGR
-                    points to an uno service manager, which is used internaly
+                    points to an uno service manager, which is used internally
                     to create own needed uno resources.                    
          */
         PresetHandler(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR);      
@@ -266,7 +266,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
         void forgetCachedStorages();
         
         //---------------------------------------
-        /** @short  return access to the internaly used and cached root storage.
+        /** @short  return access to the internally used and cached root storage.
         
             @descr  These root storages are the base of all further opened
                     presets and targets. They are provided here only, to support
@@ -274,7 +274,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
                     getOrCreate...() - What does it mean?
                     Such root storage will be created one times only and
-                    cached then internaly till the last instance of such PresetHandler
+                    cached then internally till the last instance of such PresetHandler
                     dies.
                     
             @return com::sun::star::embed::XStorage
@@ -334,7 +334,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
                     Localzation will be represented as directory structure
                     of provided presets. Means: you call us with a preset name "default";
-                    and we use e.g. "/en-US/default.xml" internaly.
+                    and we use e.g. "/en-US/default.xml" internally.
                     
                     If no localization exists for this preset set, this class
                     will work in default mode - means "no locale" - automatically.

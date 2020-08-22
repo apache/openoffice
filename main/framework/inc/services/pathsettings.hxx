@@ -104,7 +104,7 @@ class PathSettings : public  css::lang::XTypeProvider             ,
             /// an internal name describing this path
             ::rtl::OUString sPathName;
 
-            /// contains all paths, which are used internaly - but are not visible for the user.
+            /// contains all paths, which are used internally - but are not visible for the user.
             OUStringList lInternalPaths;
 
             /// contains all paths configured by the user

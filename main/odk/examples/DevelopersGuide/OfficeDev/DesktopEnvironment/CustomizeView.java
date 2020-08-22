@@ -246,13 +246,13 @@ public class CustomizeView extends    JPanel
 
         /**
          * callback for disposing events
-         * Internaly we save a reference to an office frame.
+         * Internally we save a reference to an office frame.
          * Of course he can die and inform us then. We should react
          * and forget his reference.
          *
          * @param aEvent
          *          describes the source which fire this event
-         *          Must be our internal saved frame. Otherwhise
+         *          Must be our internal saved frame. Otherwise
          *          somewhere know us without a registration ...
          */
         public void disposing(com.sun.star.lang.EventObject aEvent)

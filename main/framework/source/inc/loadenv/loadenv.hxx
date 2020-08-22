@@ -235,8 +235,8 @@ class LoadEnv : private ThreadHelpBase
         /** @short  initialize a new instance of this load environment.
 
             @param  xSMGR
-                    reference to an uno service manager, which can be used internaly
-                    to create on needed services on demand.
+                    reference to an uno service manager, which can be used internally
+                    to create own needed services on demand.
 
             @throw  Currently there is no reason to throw such exception!
 
@@ -518,7 +518,7 @@ class LoadEnv : private ThreadHelpBase
             @return [string]
                     the type selected by the user.
 
-            @attention  Internaly we update the member m_lMediaDescriptor!
+            @attention  Internally we update the member m_lMediaDescriptor!
          */
         ::rtl::OUString impl_askUserForTypeAndFilterIfAllowed()
             throw(LoadEnvException, css::uno::RuntimeException);
