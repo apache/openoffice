@@ -1,6 +1,6 @@
-diff -ur misc/openssl-1.0.2t/Configure misc/build/openssl-1.0.2t/Configure
---- misc/openssl-1.0.2t/Configure	2018-08-14 05:49:04.000000000 -0700
-+++ misc/build/openssl-1.0.2t/Configure	2018-08-26 14:51:25.397910000 -0700
+diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
+--- misc/openssl-1.0.2u/Configure	2018-08-14 05:49:04.000000000 -0700
++++ misc/build/openssl-1.0.2u/Configure	2018-08-26 14:51:25.397910000 -0700
 @@ -477,19 +477,20 @@
  "android-mips","gcc:-mandroid -I\$(ANDROID_DEV)/include -B\$(ANDROID_DEV)/lib -O3 -Wall::-D_REENTRANT::-ldl:BN_LLONG RC4_CHAR RC4_CHUNK DES_INT DES_UNROLL BF_PTR:${mips32_asm}:o32:dlfcn:linux-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
  
@@ -56,9 +56,9 @@ diff -ur misc/openssl-1.0.2t/Configure misc/build/openssl-1.0.2t/Configure
  	}
  	if ($depflags ne $default_depflags && !$make_depend) {
  	    $warn_make_depend++;
-diff -ur misc/openssl-1.0.2t/config misc/build/openssl-1.0.2t/config
---- misc/openssl-1.0.2t/config	2018-08-14 05:48:56.000000000 -0700
-+++ misc/build/openssl-1.0.2t/config	2018-08-26 14:49:34.431584000 -0700
+diff -ur misc/openssl-1.0.2u/config misc/build/openssl-1.0.2u/config
+--- misc/openssl-1.0.2u/config	2018-08-14 05:48:56.000000000 -0700
++++ misc/build/openssl-1.0.2u/config	2018-08-26 14:49:34.431584000 -0700
 @@ -762,14 +762,8 @@
    sparc64-*-*bsd*)	OUT="BSD-sparc64" ;;
    ia64-*-*bsd*)		OUT="BSD-ia64" ;;
@@ -76,9 +76,9 @@ diff -ur misc/openssl-1.0.2t/config misc/build/openssl-1.0.2t/config
  			*ELF*)	OUT="BSD-x86-elf" ;;
  			*)	OUT="BSD-x86"; options="$options no-sse2" ;;
  			esac ;;
-diff -ur misc/openssl-1.0.2t/ms/do_ms.bat misc/build/openssl-1.0.2t/ms/do_ms.bat
---- misc/openssl-1.0.2t/ms/do_ms.bat	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2t/ms/do_ms.bat	2018-08-26 14:49:34.432106000 -0700
+diff -ur misc/openssl-1.0.2u/ms/do_ms.bat misc/build/openssl-1.0.2u/ms/do_ms.bat
+--- misc/openssl-1.0.2u/ms/do_ms.bat	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.0.2u/ms/do_ms.bat	2018-08-26 14:49:34.432106000 -0700
 @@ -1,11 +1,11 @@
  
 -perl util\mkfiles.pl >MINFO
@@ -98,9 +98,9 @@ diff -ur misc/openssl-1.0.2t/ms/do_ms.bat misc/build/openssl-1.0.2t/ms/do_ms.bat
 -perl util\mkdef.pl 32 ssleay > ms\ssleay32.def
 +%1 util\mkdef.pl 32 libeay > ms\libeay32.def
 +%1 util\mkdef.pl 32 ssleay > ms\ssleay32.def
-diff -ur misc/openssl-1.0.2t/ms/do_win64a.bat misc/build/openssl-1.0.2t/ms/do_win64a.bat
---- misc/openssl-1.0.2t/ms/do_win64a.bat	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2t/ms/do_win64a.bat	2018-08-26 14:49:34.432647000 -0700
+diff -ur misc/openssl-1.0.2u/ms/do_win64a.bat misc/build/openssl-1.0.2u/ms/do_win64a.bat
+--- misc/openssl-1.0.2u/ms/do_win64a.bat	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.0.2u/ms/do_win64a.bat	2018-08-26 14:49:34.432647000 -0700
 @@ -1,19 +1,19 @@
 -perl util\mkfiles.pl >MINFO
 +%1 util\mkfiles.pl >MINFO
@@ -128,9 +128,9 @@ diff -ur misc/openssl-1.0.2t/ms/do_win64a.bat misc/build/openssl-1.0.2t/ms/do_wi
 -perl util\mkdef.pl 32 ssleay > ms\ssleay32.def
 +%1 util\mkdef.pl 32 libeay > ms\libeay32.def
 +%1 util\mkdef.pl 32 ssleay > ms\ssleay32.def
-diff -ur misc/openssl-1.0.2t/util/mk1mf.pl misc/build/openssl-1.0.2t/util/mk1mf.pl
---- misc/openssl-1.0.2t/util/mk1mf.pl	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2t/util/mk1mf.pl	2018-08-26 14:49:34.433421000 -0700
+diff -ur misc/openssl-1.0.2u/util/mk1mf.pl misc/build/openssl-1.0.2u/util/mk1mf.pl
+--- misc/openssl-1.0.2u/util/mk1mf.pl	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.0.2u/util/mk1mf.pl	2018-08-26 14:49:34.433421000 -0700
 @@ -163,7 +163,7 @@
  $inc_def="outinc";
  $tmp_def="tmp";
@@ -152,9 +152,9 @@ diff -ur misc/openssl-1.0.2t/util/mk1mf.pl misc/build/openssl-1.0.2t/util/mk1mf.
  	if ($key eq "RELATIVE_DIRECTORY")
  		{
  		if ($lib ne "")
-diff -ur misc/openssl-1.0.2t/util/pl/VC-32.pl misc/build/openssl-1.0.2t/util/pl/VC-32.pl
---- misc/openssl-1.0.2t/util/pl/VC-32.pl	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2t/util/pl/VC-32.pl	2018-08-26 14:49:57.553776000 -0700
+diff -ur misc/openssl-1.0.2u/util/pl/VC-32.pl misc/build/openssl-1.0.2u/util/pl/VC-32.pl
+--- misc/openssl-1.0.2u/util/pl/VC-32.pl	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.0.2u/util/pl/VC-32.pl	2018-08-26 14:49:57.553776000 -0700
 @@ -30,7 +30,7 @@
  my $ff = "";
  
