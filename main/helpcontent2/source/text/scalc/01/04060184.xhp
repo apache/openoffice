@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +11,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 
-	
 <meta>
 <topic id="textscalc0104060184xml" indexer="include">
 <title xml-lang="en-US" id="tit">Statistical Functions Part Four</title>
@@ -134,8 +134,8 @@ oldref="153">Example</paragraph>
 <paragraph role="paragraph" id="par_id3157871" xml-lang="en-US" l10n="U" oldref="31"><emph>Number1, Number2,...Number30</emph> are values or ranges that represent a sample. Each number can also be replaced by a reference.</paragraph>
 <paragraph role="heading" id="hd_id3149725" xml-lang="en-US" level="3" l10n="U" oldref="32">Example</paragraph>
 <paragraph role="paragraph" id="par_id3153122" xml-lang="en-US" l10n="U" oldref="33">
-            <item type="input">=AVEDEV(A1:A50)</item>
-         </paragraph>
+<item type="input">=AVEDEV(A1:A50)</item>
+</paragraph>
 </section>
 <section id="average">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3145824"><bookmark_value>AVERAGE function</bookmark_value>
@@ -176,18 +176,17 @@ oldref="162">Example</paragraph>
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTB" id="bm_id3149690K1" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148754K1" role="heading" level="2" l10n="U"
-	oldref="157">AVERAGEIF</paragraph><comment>kschenk added this entry </comment>
+oldref="157">AVERAGEIF</paragraph><comment>kschenk added this entry </comment>
 <paragraph xml-lang="en-US" id="par_id3145138K1" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTB">Average the values of cells in a range that meet a criteria.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153326K1" role="heading" level="3" l10n="U"
 oldref="159">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="par_id3149734K1" role="code" l10n="U" >AVERAGEIF( Reference R ; Criterion C [ ; Reference A ] )</paragraph>
-<paragraph xml-lang="en-US" id="par_id3155260K1" role="paragraph" l10n="CHG" > If reference A is omitted, averages the values of cells in the reference range R that meet the Criterion C. If reference A is given, averages the values of cells of a range that is constructed using the top left cell of reference A and applying the dimensions, shape and size, of reference R.  Does not accept constant values as reference parameters.</paragraph>
+<paragraph xml-lang="en-US" id="par_id3155260K1" role="paragraph" l10n="CHG" > If reference A is omitted, averages the values of cells in the reference range R that meet the Criterion C. If reference A is given, averages the values of cells of a range that is constructed using the top left cell of reference A and applying the dimensions, shape and size, of reference R. Does not accept constant values as reference parameters.</paragraph>
 <paragraph xml-lang="en-US" id="par_id3145139K1" role="paragraph" l10n="U" >If no cell in range R matches the Criterion C, an Error is returned. If no Numbers are in the range to be averaged, an Error is returned.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149504K1" role="heading" level="3" l10n="U"
 oldref="162">Examples</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150864K1" role="paragraph" l10n="U">
-<item type="input">=AVERAGEIF(A1:A50;"&gt;"0)</item>
-will return the average of A1:A50 of all positive values in the range.
+<item type="input">=AVERAGEIF(A1:A50;"&gt;"0)</item> will return the average of A1:A50 of all positive values in the range.
 </paragraph>
 </section>
 <section id="averageifs">
@@ -195,7 +194,7 @@ will return the average of A1:A50 of all positive values in the range.
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_MITTELWERTC" id="bm_id3149690K2" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3148754K2" role="heading" level="2" l10n="U"
-	oldref="157">AVERAGEIFS</paragraph><comment>kschenk added this entry </comment>
+oldref="157">AVERAGEIFS</paragraph><comment>kschenk added this entry </comment>
 <paragraph xml-lang="en-US" id="par_id3145138K2" role="paragraph" l10n="U"><ahelp hid="HID_FUNC_MITTELWERTC">Average the values of cells that meet multiple criteria in multiple ranges.</ahelp></paragraph>
 <paragraph xml-lang="en-US" id="hd_id3153326K2" role="heading" level="3" l10n="U"
 oldref="159">Syntax</paragraph>
@@ -205,7 +204,7 @@ oldref="159">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3149504K2" role="heading" level="3" l10n="U"
 oldref="162">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3150864K2" role="paragraph" l10n="U">
-<item type="input">=AVERAGEIFS(A1:A50;B1:B25;"&gt;"0)</item>+will return the average of A1:A50 if all cells in the range B1 to B25 are greater than 0.
+<item type="input">=AVERAGEIFS(A1:A50;B1:B25;"&gt;"0)</item> will return the average of A1:A50 if all cells in the range B1 to B25 are greater than 0.
 </paragraph>
 </section>
 <section id="mode">
@@ -262,7 +261,7 @@ oldref="63">Syntax</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3155822" role="heading" level="3" l10n="U"
 oldref="68">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3153921" role="paragraph" l10n="CHG" oldref="69">
-<item type="input">=NORMINV(0.9;63;5)</item> returns 69.41. If the average egg weighs 63 grams with a standard deviation of 5, then there will be 90% probability that the egg will not be heavier than 69.41g grams.</paragraph>
+<item type="input">=NORMINV(0.9;63;5)</item> returns 69.41. If the average egg weighs 63 grams with a standard deviation of 5, then there will be 90% probability that the egg will not be heavier than 69.41 grams.</paragraph>
 </section>
 <section id="normdist">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153722"><bookmark_value>NORMDIST function</bookmark_value>
