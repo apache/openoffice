@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -192,7 +192,7 @@ public class DocumentView extends    JFrame
 
     /**
      * Create the view frame for showing the office documents on demand.
-     * Dependend from given command line parameter we create
+     * Dependent from given command line parameter we create
      * an office XFrame and initialize it with a window. This
      * window can be a pure toolkit window (means toolkit of office!)
      * or a plugged java canvas - office window combination.
@@ -200,8 +200,8 @@ public class DocumentView extends    JFrame
     public void createFrame()
     {
         // create view frame (as a XFrame!) here
-        // Look for right view mode setted by user command line parameter.
-        // First try to get a new unambigous frame name from our global ViewContainer.
+        // Look for right view mode set by user command line parameter.
+        // First try to get a new unambiguous frame name from our global ViewContainer.
         if(ViewContainer.mbInplace==true)
         {
             // inplace document view can't be initialized without a visible parent window hierarchy!
@@ -333,7 +333,7 @@ public class DocumentView extends    JFrame
         maInterceptor = null;
 
         // close the frame and his document
-        // Relaesing of our listener connections for disposing()
+        // Releasing of our listener connections for disposing()
         // will be forced automatically then. Because the frame
         // will call us back ...
         if (mxFrame!=null)
