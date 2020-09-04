@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "globstr.hrc"
 #include "sc.hrc"
-
-
 
 Resource RID_GLOBSTR
 {
@@ -229,15 +228,15 @@ Resource RID_GLOBSTR
 	};
 	String STR_UNDO_EDITCELLSTYLE
 	{
-		Text [ en-US ] = "Edit Cell Style";
+		Text [ en-US ] = "Edit Cell Style" ;
 	};
 	String STR_UNDO_APPLYPAGESTYLE
 	{
-		Text [ en-US ] = "Apply Page Style";
+		Text [ en-US ] = "Apply Page Style" ;
 	};
 	String STR_UNDO_EDITPAGESTYLE
 	{
-		Text [ en-US ] = "Edit Page Style";
+		Text [ en-US ] = "Edit Page Style" ;
 	};
 	String STR_UNDO_DETADDPRED
 	{
@@ -361,7 +360,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_UNDO_TRANSLITERATE
 	{
-		Text [ en-US ] = "Case/Characters";
+		Text [ en-US ] = "Case/Characters" ;
 	};
 	String STR_DB_NONAME
 	{
@@ -541,7 +540,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_DATAPILOT_SUBTOTAL
 	{
-		Text [ en-US ] = "The source range contains subtotals which may distort the results. Use it anyway?";
+		Text [ en-US ] = "The source range contains subtotals which may distort the results. Use it anyway?" ;
 	};
 	String STR_PIVOT_PROGRESS
 	{
@@ -691,7 +690,7 @@ Resource RID_GLOBSTR
 	{
 		Text [ en-US ] = "Pivot Table" ;
 	};
-     // Text strings for captions of subtotal functions.
+	// Text strings for captions of subtotal functions.
 	String STR_FUN_TEXT_SUM
 	{
 		Text [ en-US ] = "Sum" ;
@@ -794,7 +793,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_READONLYERR
 	{
-		Text [ en-US ] = "Document opened in read-only mode.";
+		Text [ en-US ] = "Document opened in read-only mode." ;
 	};
 	String STR_MATRIXFRAGMENTERR
 	{
@@ -809,64 +808,64 @@ Resource RID_GLOBSTR
 		Text [ en-US ] = "Footer" ;
 	};
 
-    /* BEGIN error constants and error strings. */
+	/* BEGIN error constants and error strings. */
 
 	String STR_ERROR_STR
 	{
 		Text [ en-US ] = "Err:" ;
 	};
-    /* BEGIN defined ERROR.TYPE() values. */
-    /* ERROR.TYPE( #NULL! ) == 1 */
+	/* BEGIN defined ERROR.TYPE() values. */
+	/* ERROR.TYPE( #NULL! ) == 1 */
 	String STR_LONG_ERR_NULL
 	{
 		Text [ en-US ] = "Error: Ranges do not intersect" ;
 	};
-    /* ERROR.TYPE( #DIV/0! ) == 2 */
+	/* ERROR.TYPE( #DIV/0! ) == 2 */
 	String STR_LONG_ERR_DIV_ZERO
 	{
 		Text [ en-US ] = "Error: Division by zero" ;
 	};
-    /* ERROR.TYPE( #VALUE! ) == 3 */
+	/* ERROR.TYPE( #VALUE! ) == 3 */
 	String STR_LONG_ERR_NO_VALUE
 	{
 		Text [ en-US ] = "Error: Wrong data type" ;
 	};
-    /* ERROR.TYPE( #REF! ) == 4 */
+	/* ERROR.TYPE( #REF! ) == 4 */
 	String STR_LONG_ERR_NO_REF
 	{
 		Text [ en-US ] = "Error: Not a valid reference" ;
 	};
-    /* ERROR.TYPE( #NAME! ) == 5 */
+	/* ERROR.TYPE( #NAME! ) == 5 */
 	String STR_LONG_ERR_NO_NAME
 	{
 		Text [ en-US ] = "Error: Invalid name" ;
 	};
-    /* ERROR.TYPE( #NUM! ) == 6 */
+	/* ERROR.TYPE( #NUM! ) == 6 */
 	String STR_LONG_ERR_ILL_FPO
 	{
 		Text [ en-US ] = "Error: Invalid numeric value" ;
 	};
-    /* ERROR.TYPE( #N/A ) == 7 */
+	/* ERROR.TYPE( #N/A ) == 7 */
 	String STR_LONG_ERR_NV
 	{
 		Text [ en-US ] = "Error: Value not available" ;
 	};
-    /* END defined ERROR.TYPE() values. */
-    String STR_NO_ADDIN
+	/* END defined ERROR.TYPE() values. */
+	String STR_NO_ADDIN
 	{
-        Text [ en-US ] = "#ADDIN?" ;
+		Text [ en-US ] = "#ADDIN?" ;
 	};
-    String STR_LONG_ERR_NO_ADDIN
+	String STR_LONG_ERR_NO_ADDIN
 	{
-        Text [ en-US ] = "Error: Add-in not found" ;
+		Text [ en-US ] = "Error: Add-in not found" ;
 	};
-    String STR_NO_MACRO
+	String STR_NO_MACRO
 	{
-        Text [ en-US ] = "#MACRO?" ;
+		Text [ en-US ] = "#MACRO?" ;
 	};
-    String STR_LONG_ERR_NO_MACRO
+	String STR_LONG_ERR_NO_MACRO
 	{
-        Text [ en-US ] = "Error: Macro not found" ;
+		Text [ en-US ] = "Error: Macro not found" ;
 	};
 	String STR_LONG_ERR_SYNTAX
 	{
@@ -921,7 +920,7 @@ Resource RID_GLOBSTR
 		Text [ en-US ] = "Error: Calculation does not converge" ;
 	};
 
-    /* END error constants and error strings. */
+	/* END error constants and error strings. */
 
 	String STR_GRIDCOLOR
 	{
@@ -1033,7 +1032,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_EXPORT_ASCII
 	{
-        Text [ en-US ] = "Export Text File" ;
+		Text [ en-US ] = "Export Text File" ;
 	};
 	String STR_IMPORT_LOTUS
 	{
@@ -1041,11 +1040,11 @@ Resource RID_GLOBSTR
 	};
 	String STR_IMPORT_DBF
 	{
-		Text [ en-US ] = "Import DBase files" ;
+		Text [ en-US ] = "Import dBASE files" ;
 	};
-    String STR_EXPORT_DBF
-    {
-		Text [ en-US ] = "DBase export";
+	String STR_EXPORT_DBF
+	{
+		Text [ en-US ] = "dBASE export" ;
 	};
 	String STR_EXPORT_DIF
 	{
@@ -1119,14 +1118,14 @@ Resource RID_GLOBSTR
 	{
 		Text [ en-US ] = "Rename Sheet" ;
 	};
-    String STR_UNDO_SET_TAB_BG_COLOR
-    {
-        Text [ en-US ] = "Color Tab" ;
-    };
-    String STR_UNDO_SET_MULTI_TAB_BG_COLOR
-    {
-        Text [ en-US ] = "Color Tabs" ;
-    };
+	String STR_UNDO_SET_TAB_BG_COLOR
+	{
+		Text [ en-US ] = "Color Tab" ;
+	};
+	String STR_UNDO_SET_MULTI_TAB_BG_COLOR
+	{
+		Text [ en-US ] = "Color Tabs" ;
+	};
 	String STR_UNDO_MOVE_TAB
 	{
 		Text [ en-US ] = "Move Sheets" ;
@@ -1285,32 +1284,32 @@ Resource RID_GLOBSTR
 	};
 	String STR_SCATTR_PAGE_SCALE
 	{
-        Text [ en-US ] = "Reduce/enlarge printout" ;
+		Text [ en-US ] = "Reduce/enlarge printout" ;
 	};
 	String STR_SCATTR_PAGE_SCALETOPAGES
 	{
-        Text [ en-US ] = "Fit print range(s) on number of pages" ;
+		Text [ en-US ] = "Fit print range(s) on number of pages" ;
 	};
-    String STR_SCATTR_PAGE_SCALETO
-    {
-        Text [ en-US ] = "Fit print range(s) to width/height" ;
-    };
-    String STR_SCATTR_PAGE_SCALE_WIDTH
-    {
-        Text [ en-US ] = "Width" ;
-    };
-    String STR_SCATTR_PAGE_SCALE_HEIGHT
-    {
-        Text [ en-US ] = "Height" ;
-    };
-    String STR_SCATTR_PAGE_SCALE_PAGES
-    {
-        Text [ en-US ] = "%1 page(s)" ;
-    };
-    String STR_SCATTR_PAGE_SCALE_AUTO
-    {
-        Text [ en-US ] = "automatic" ;
-    };
+	String STR_SCATTR_PAGE_SCALETO
+	{
+		Text [ en-US ] = "Fit print range(s) to width/height" ;
+	};
+	String STR_SCATTR_PAGE_SCALE_WIDTH
+	{
+		Text [ en-US ] = "Width" ;
+	};
+	String STR_SCATTR_PAGE_SCALE_HEIGHT
+	{
+		Text [ en-US ] = "Height" ;
+	};
+	String STR_SCATTR_PAGE_SCALE_PAGES
+	{
+		Text [ en-US ] = "%1 page(s)" ;
+	};
+	String STR_SCATTR_PAGE_SCALE_AUTO
+	{
+		Text [ en-US ] = "automatic" ;
+	};
 	String STR_DOC_STAT
 	{
 		Text [ en-US ] = "Statistics" ;
@@ -1401,7 +1400,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_PASTE_BIGGER
 	{
-		Text [ en-US ] = "The content of the clipboard is bigger than the range selected.\nDo you want to insert it anyway?";
+		Text [ en-US ] = "The content of the clipboard is bigger than the range selected.\nDo you want to insert it anyway?" ;
 	};
 	String STR_ERR_NOREF
 	{
@@ -1453,7 +1452,7 @@ Resource RID_GLOBSTR
 	};
 	String STR_QUICKHELP_REF
 	{
-		Text [ en-US ] = "%1 R  x %2 C" ;
+		Text [ en-US ] = "%1 R x %2 C" ;
 	};
 	String STR_FUNCTIONLIST_MORE
 	{
@@ -1558,175 +1557,175 @@ Resource RID_GLOBSTR
 	};
 	String STR_UNDO_RESIZEMATRIX
 	{
-		Text [ en-US ] = "Adapt array area";
+		Text [ en-US ] = "Adapt array area" ;
 	};
 	String STR_TIP_RESIZEMATRIX
 	{
-		Text [ en-US ] = "Array formula  %1 R x %2 C";
+		Text [ en-US ] = "Array formula %1 R x %2 C" ;
 	};
 	String STR_MACRO_WARNING
 	{
-		Text [ en-US ] = "This document contains macro function calls.\nDo you want to run them?";
+		Text [ en-US ] = "This document contains macro function calls.\nDo you want to run them?" ;
 	};
 
-    String STR_UNDO_HANGULHANJA
-    {
-        Text [ en-US ] = "Hangul/Hanja Conversion";
-    };
+	String STR_UNDO_HANGULHANJA
+	{
+		Text [ en-US ] = "Hangul/Hanja Conversion" ;
+	};
 
-    String STR_NAME_INPUT_CELL
-    {
-        Text [ en-US ] = "Select Cell";
-    };
-    String STR_NAME_INPUT_RANGE
-    {
-        Text [ en-US ] = "Select Range";
-    };
-    String STR_NAME_INPUT_DBRANGE
-    {
-        Text [ en-US ] = "Select Database Range";
-    };
-    String STR_NAME_INPUT_ROW
-    {
-        Text [ en-US ] = "Go To Row";
-    };
-    String STR_NAME_INPUT_SHEET
-    {
-        Text [ en-US ] = "Go To Sheet";
-    };
-    String STR_NAME_INPUT_DEFINE
-    {
-        Text [ en-US ] = "Define Name for Range";
-    };
-    String STR_NAME_ERROR_SELECTION
-    {
-        Text [ en-US ] = "The selection needs to be rectangular in order to name it.";
-    };
-    String STR_NAME_ERROR_NAME
-    {
-        Text [ en-US ] = "You must enter a valid reference or type a valid name for the selected range.";
-    };
+	String STR_NAME_INPUT_CELL
+	{
+		Text [ en-US ] = "Select Cell" ;
+	};
+	String STR_NAME_INPUT_RANGE
+	{
+		Text [ en-US ] = "Select Range" ;
+	};
+	String STR_NAME_INPUT_DBRANGE
+	{
+		Text [ en-US ] = "Select Database Range" ;
+	};
+	String STR_NAME_INPUT_ROW
+	{
+		Text [ en-US ] = "Go To Row" ;
+	};
+	String STR_NAME_INPUT_SHEET
+	{
+		Text [ en-US ] = "Go To Sheet" ;
+	};
+	String STR_NAME_INPUT_DEFINE
+	{
+		Text [ en-US ] = "Define Name for Range" ;
+	};
+	String STR_NAME_ERROR_SELECTION
+	{
+		Text [ en-US ] = "The selection needs to be rectangular in order to name it." ;
+	};
+	String STR_NAME_ERROR_NAME
+	{
+		Text [ en-US ] = "You must enter a valid reference or type a valid name for the selected range." ;
+	};
 
-    String STR_CHANGED_MOVE_REJECTION_WARNING
-    {
-        Text[ en-US ] = "WARNING: This action may have resulted in unintended changes to cell references in formulas.";
-    };
+	String STR_CHANGED_MOVE_REJECTION_WARNING
+	{
+		Text[ en-US ] = "WARNING: This action may have resulted in unintended changes to cell references in formulas." ;
+	};
 
-    String STR_CHANGED_DELETE_REJECTION_WARNING
-    {
-        Text[ en-US ] = "WARNING: This action may have resulted in references to the deleted area not being restored.";
-    };
+	String STR_CHANGED_DELETE_REJECTION_WARNING
+	{
+		Text[ en-US ] = "WARNING: This action may have resulted in references to the deleted area not being restored." ;
+	};
 
-    String STR_HF_NONE_IN_BRACKETS
-    {
-        Text [ en-US ] = "(none)";
-    };
+	String STR_HF_NONE_IN_BRACKETS
+	{
+		Text [ en-US ] = "(none)" ;
+	};
 
-    String STR_HF_OF
-    {
-        Text [ en-US ] = "of";
-    };
+	String STR_HF_OF
+	{
+		Text [ en-US ] = "of" ;
+	};
 
-    String STR_HF_OF_QUESTION
-    {
-        Text [ en-US ] = "of ?";
-    };
+	String STR_HF_OF_QUESTION
+	{
+		Text [ en-US ] = "of ?" ;
+	};
 
-    String STR_HF_CREATED_BY
-    {
-        Text [ en-US ] = "Created by";
-    };
+	String STR_HF_CREATED_BY
+	{
+		Text [ en-US ] = "Created by" ;
+	};
 
-    String STR_HF_CONFIDENTIAL
-    {
-        Text [ en-US ] = "Confidential";
-    };
+	String STR_HF_CONFIDENTIAL
+	{
+		Text [ en-US ] = "Confidential" ;
+	};
 
-    String STR_HF_CUSTOMIZED
-    {
-        Text [ en-US ] = "Customized";
-    };
+	String STR_HF_CUSTOMIZED
+	{
+		Text [ en-US ] = "Customized" ;
+	};
 
-    String STR_HF_CUSTOM_FOOTER
-    {
-        Text [ en-US ] = "Custom footer";
-    };
+	String STR_HF_CUSTOM_FOOTER
+	{
+		Text [ en-US ] = "Custom footer" ;
+	};
 
-    String STR_UNDO_CHINESE_TRANSLATION
-    {
-        Text [ en-US ] = "Chinese conversion";
-    };
+	String STR_UNDO_CHINESE_TRANSLATION
+	{
+		Text [ en-US ] = "Chinese conversion" ;
+	};
 
-    String STR_ERR_DATAPILOT_INPUT
-    {
-        Text[ en-US ] = "You cannot change this part of the pivot table.";
-    };
+	String STR_ERR_DATAPILOT_INPUT
+	{
+		Text[ en-US ] = "You cannot change this part of the pivot table." ;
+	};
 
-    String STR_RECALC_MANUAL
-    {
-        Text [ en-US ] = "Manual";
-    };
-    String STR_RECALC_AUTO
-    {
-        Text [ en-US ] = "Automatic";
-    };
-    String STR_ERR_LONG_NESTED_ARRAY
-    {
+	String STR_RECALC_MANUAL
+	{
+		Text [ en-US ] = "Manual" ;
+	};
+	String STR_RECALC_AUTO
+	{
+		Text [ en-US ] = "Automatic" ;
+	};
+	String STR_ERR_LONG_NESTED_ARRAY
+	{
 	Text [ en-US ] = "Nested arrays are not supported." ;
-    };
-    String STR_UNDO_TEXTTOCOLUMNS
-    {
-        Text [ en-US ] = "Text to Columns";
-    };
-    String STR_DOC_UPDATED
-    {
-        Text [ en-US ] = "Your spreadsheet has been updated with changes saved by other users.";
-    };
-    String STR_DOC_WILLBESAVED
-    {
-        Text [ en-US ] = "The spreadsheet must be saved now to activate sharing mode.\n\nDo you want to continue?";
-    };
-    String STR_DOC_WILLNOTBESAVED
-    {
-        Text [ en-US ] = "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\n\nDo you want to continue?";
-    };
-    String STR_DOC_DISABLESHARED
-    {
-        Text [ en-US ] = "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\n\nDo you want to continue?";
-    };
-    String STR_DOC_NOLONGERSHARED
-    {
-        Text [ en-US ] = "This spreadsheet is no longer in shared mode.\n\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually.";
-    };
-    String STR_SHARED_DOC_WARNING
-    {
-        Text [ en-US ] = "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\n\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities.";
-    };
-    String STR_FILE_LOCKED_TRY_LATER
-    {
-        Text [ en-US ] = "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nSharing mode of a locked file cannot be disabled. Try again later.";
-    };
-    String STR_FILE_LOCKED_SAVE_LATER
-    {
-        Text [ en-US ] = "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nTry again later to save your changes.";
-    };
-    String STR_UNKNOWN_USER
-    {
-        Text [ en-US ] = "Unknown User";
-    };
-    String STR_STYLE_FAMILY_CELL
-    {
-        Text [ en-US ] = "Cell Styles";
-    };
-    String STR_STYLE_FAMILY_PAGE
-    {
-        Text [ en-US ] = "Page Styles";
-    };
-    String STR_ERR_DATAPILOTSOURCE
-    {
-		Text [ en-US ] = "Pivot table source data is invalid.";
-    };
-    String STR_PIVOT_FIRSTROWEMPTYERR
+	};
+	String STR_UNDO_TEXTTOCOLUMNS
+	{
+		Text [ en-US ] = "Text to Columns" ;
+	};
+	String STR_DOC_UPDATED
+	{
+		Text [ en-US ] = "Your spreadsheet has been updated with changes saved by other users." ;
+	};
+	String STR_DOC_WILLBESAVED
+	{
+		Text [ en-US ] = "The spreadsheet must be saved now to activate sharing mode.\n\nDo you want to continue?" ;
+	};
+	String STR_DOC_WILLNOTBESAVED
+	{
+		Text [ en-US ] = "Already resolved merge conflicts will be lost and your changes to the shared spreadsheet will not be saved.\n\nDo you want to continue?" ;
+	};
+	String STR_DOC_DISABLESHARED
+	{
+		Text [ en-US ] = "Disabling shared mode of a spreadsheet hinders all other users of the shared spreadsheet to merge back their work.\n\nDo you want to continue?" ;
+	};
+	String STR_DOC_NOLONGERSHARED
+	{
+		Text [ en-US ] = "This spreadsheet is no longer in shared mode.\n\nSave your spreadsheet to a separate file and merge your changes to the shared spreadsheet manually." ;
+	};
+	String STR_SHARED_DOC_WARNING
+	{
+		Text [ en-US ] = "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time.\n\nChanges to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities." ;
+	};
+	String STR_FILE_LOCKED_TRY_LATER
+	{
+		Text [ en-US ] = "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nSharing mode of a locked file cannot be disabled. Try again later." ;
+	};
+	String STR_FILE_LOCKED_SAVE_LATER
+	{
+		Text [ en-US ] = "The shared spreadsheet file is locked due to a merge in progress by user: '%1'\n\nTry again later to save your changes." ;
+	};
+	String STR_UNKNOWN_USER
+	{
+		Text [ en-US ] = "Unknown User" ;
+	};
+	String STR_STYLE_FAMILY_CELL
+	{
+		Text [ en-US ] = "Cell Styles" ;
+	};
+	String STR_STYLE_FAMILY_PAGE
+	{
+		Text [ en-US ] = "Page Styles" ;
+	};
+	String STR_ERR_DATAPILOTSOURCE
+	{
+		Text [ en-US ] = "Pivot table source data is invalid." ;
+	};
+	String STR_PIVOT_FIRSTROWEMPTYERR
 	{
 		Text [ en-US ] = "The field name cannot be empty. Check the first row of data source to make sure there are no empty cells." ;
 	};
@@ -1734,33 +1733,34 @@ Resource RID_GLOBSTR
 	{
 		Text [ en-US ] = "Pivot table needs at least two rows of data to create or refresh." ;
 	};
-    String  STR_DPFIELD_GROUP_BY_SECONDS
-    {
-        Text [ en-US ] = "Seconds" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_MINUTES
-    {
-        Text [ en-US ] = "Minutes" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_HOURS
-    {
-        Text [ en-US ] = "Hours" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_DAYS
-    {
-        Text [ en-US ] = "Days" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_MONTHS
-    {
-        Text [ en-US ] = "Months" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_QUARTERS
-    {
-        Text [ en-US ] = "Quarters" ;
-    };
-    String  STR_DPFIELD_GROUP_BY_YEARS
-    {
-        Text [ en-US ] = "Years" ;
-    };
+	String STR_DPFIELD_GROUP_BY_SECONDS
+	{
+		Text [ en-US ] = "Seconds" ;
+	};
+	String STR_DPFIELD_GROUP_BY_MINUTES
+	{
+		Text [ en-US ] = "Minutes" ;
+	};
+	String STR_DPFIELD_GROUP_BY_HOURS
+	{
+		Text [ en-US ] = "Hours" ;
+	};
+	String STR_DPFIELD_GROUP_BY_DAYS
+	{
+		Text [ en-US ] = "Days" ;
+	};
+	String STR_DPFIELD_GROUP_BY_MONTHS
+	{
+		Text [ en-US ] = "Months" ;
+	};
+	String STR_DPFIELD_GROUP_BY_QUARTERS
+	{
+		Text [ en-US ] = "Quarters" ;
+	};
+	String STR_DPFIELD_GROUP_BY_YEARS
+	{
+		Text [ en-US ] = "Years" ;
+	};
 };
 
+// ********************************************************************** EOF
