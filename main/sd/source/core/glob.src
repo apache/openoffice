@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-/* StarView ressource file */
 
 #define __RSC
 
@@ -170,7 +169,7 @@ String STR_PRESVIEWSHELL
 };
 String STR_PREVIEWVIEWSHELL
 {
-	Text [ en-US ] = "Preview Window";
+	Text [ en-US ] = "Preview Window" ;
 };
 String STR_TEXTOBJECTBARSHELL
 {
@@ -192,27 +191,27 @@ String STR_GLUEPOINTSOBJECTBARSHELL
 {
 	Text [ en-US ] = "Glue Points Mode" ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_TITLE
 {
 	Text = "Titel" ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_OUTLINE
 {
 	Text = "Gliederung" ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_BACKGROUND
 {
 	Text = "Hintergrund" ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_BACKGROUNDOBJECTS
 {
 	Text = "Hintergrundobjekte" ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_NOTES
 {
 	Text = "Notizen" ;
@@ -241,7 +240,7 @@ String STR_NOT_ENOUGH_MEMORY
 {
 	Text [ en-US ] = "Not enough memory!\nThe action will be aborted." ;
 };
-/* nicht uebersetzen */
+/* do not translate */
 String STR_LAYOUT_SUBTITLE
 {
 	Text = "Untertitel" ;
@@ -317,7 +316,7 @@ String STR_PSEUDOSHEET_TITLE
 };
 String STR_PSEUDOSHEET_SUBTITLE
 {
-	Text [ en-US ] = "Subtitle";
+	Text [ en-US ] = "Subtitle" ;
 };
 String STR_PSEUDOSHEET_OUTLINE
 {
@@ -352,7 +351,7 @@ String STR_TABLEOBJECTBARSHELL
 
 String STR_POWERPOINT_IMPORT
 {
-	Text [ en-US ] = "PowerPoint Import";
+	Text [ en-US ] = "PowerPoint Import" ;
 };
 
 String STR_POOLSHEET_ARROW
@@ -381,11 +380,11 @@ Resource RID_SD_ERRHDL
 	};
 	String ERR_CODE ( ERRCODE_CLASS_READ , ERR_FORMAT_FILE_ROWCOL )
 	{
-		Text [ en-US ] = "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col).";
+		Text [ en-US ] = "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)." ;
 	};
 	String ERR_CODE ( ERRCODE_CLASS_READ , WARN_FORMAT_FILE_ROWCOL )
 	{
-		Text [ en-US ] = "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col).";
+		Text [ en-US ] = "Format error discovered in the file in sub-document $(ARG1) at position $(ARG2)(row,col)." ;
 	};
 };
 
@@ -422,3 +421,5 @@ String STR_POOLSHEET_LAST_COLUMN
 {
 	Text [ en-US ] = "Last column" ;
 };
+
+// ********************************************************************** EOF
