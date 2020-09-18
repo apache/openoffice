@@ -42,7 +42,7 @@ all:
 
 
 TARFILE_NAME=Python-$(PYVERSION)
-TARFILE_MD5=27a7919fa8d1364bae766949aaa91a5b
+TARFILE_MD5=38c84292658ed4456157195f1c9bcbe1
 PATCH_FILES=\
 	python-solaris.patch \
 	python-freebsd.patch \
