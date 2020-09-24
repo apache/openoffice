@@ -1,0 +1,12 @@
+diff -uNrp misc/nss-3.25/nss/coreconf/nsinstall/pathsub.c misc/build/nss-3.25/nss/coreconf/nsinstall/pathsub.c
+--- misc/nss-3.25/nss/coreconf/nsinstall/pathsub.c	2016-06-20 14:11:28.000000000 -0300
++++ misc/build/nss-3.25/nss/coreconf/nsinstall/pathsub.c	2019-10-27 12:26:03.251950354 -0300
+@@ -214,7 +214,7 @@ reversepath(char *inpath, char *name, in
+ 	    xchdir("..");
+ 	} else {
+ 	    cp -= 3;
+-	    strncpy(cp, "../", 3);
++	    memcpy(cp, "../", 3);
+ 	    xchdir(buf);
+ 	}
+     }

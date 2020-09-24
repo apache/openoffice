@@ -1,0 +1,122 @@
+--- misc/redland-1.0.17/src/makefile.mk	2016-08-23 14:55:21.874698000 -0700
++++ misc/build/redland-1.0.17/src/makefile.mk	2016-08-25 15:05:47.091064000 -0700
+@@ -1 +1,118 @@
+-dummy
++#**************************************************************
++#  
++#  Licensed to the Apache Software Foundation (ASF) under one
++#  or more contributor license agreements.  See the NOTICE file
++#  distributed with this work for additional information
++#  regarding copyright ownership.  The ASF licenses this file
++#  to you under the Apache License, Version 2.0 (the
++#  "License"); you may not use this file except in compliance
++#  with the License.  You may obtain a copy of the License at
++#  
++#    http://www.apache.org/licenses/LICENSE-2.0
++#  
++#  Unless required by applicable law or agreed to in writing,
++#  software distributed under the License is distributed on an
++#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++#  KIND, either express or implied.  See the License for the
++#  specific language governing permissions and limitations
++#  under the License.
++#  
++#**************************************************************
++
++PRJ=..$/..$/..$/..$/..
++
++PRJNAME=redland
++TARGET=librdf
++LIBTARGET=NO
++UWINAPILIB=
++
++EXTERNAL_WARNINGS_NOT_ERRORS=TRUE
++
++
++# --- Settings -----------------------------------------------------
++
++.INCLUDE :  settings.mk
++
++CDEFS+=-DRAPTOR_INTERNAL -DWIN32 -DNDEBUG -D_WINDOWS -D_USRDLL -DWIN32_EXPORTS -DHAVE_CONFIG_H -DLIBRDF_INTERNAL -I$(PRJ)$/$(INPATH)$/inc
++
++# --- Files --------------------------------------------------------
++
++SLOFILES =	\
++   $(SLO)$/rdf_concepts.obj \
++   $(SLO)$/rdf_digest.obj \
++   $(SLO)$/rdf_digest_md5.obj \
++   $(SLO)$/rdf_digest_sha1.obj \
++   $(SLO)$/rdf_files.obj \
++   $(SLO)$/rdf_hash.obj \
++   $(SLO)$/rdf_hash_cursor.obj \
++   $(SLO)$/rdf_hash_memory.obj \
++   $(SLO)$/rdf_heuristics.obj \
++   $(SLO)$/rdf_init.obj \
++   $(SLO)$/rdf_iterator.obj \
++   $(SLO)$/rdf_list.obj \
++   $(SLO)$/rdf_log.obj \
++   $(SLO)$/rdf_model.obj \
++   $(SLO)$/rdf_model_storage.obj \
++   $(SLO)$/rdf_node.obj \
++   $(SLO)$/rdf_node_common.obj \
++   $(SLO)$/rdf_parser.obj \
++   $(SLO)$/rdf_parser_raptor.obj \
++   $(SLO)$/rdf_query.obj \
++   $(SLO)$/rdf_query_rasqal.obj \
++   $(SLO)$/rdf_query_results.obj \
++   $(SLO)$/rdf_raptor.obj \
++   $(SLO)$/rdf_serializer.obj \
++   $(SLO)$/rdf_serializer_raptor.obj \
++   $(SLO)$/rdf_statement.obj \
++   $(SLO)$/rdf_statement_common.obj \
++   $(SLO)$/rdf_storage.obj \
++   $(SLO)$/rdf_storage_file.obj \
++   $(SLO)$/rdf_storage_hashes.obj \
++   $(SLO)$/rdf_storage_list.obj \
++   $(SLO)$/rdf_storage_trees.obj \
++   $(SLO)$/rdf_stream.obj \
++   $(SLO)$/rdf_uri.obj \
++   $(SLO)$/rdf_utf8.obj \
++
++#   $(SLO)$/rdf_hash_bdb.obj \
++#   $(SLO)$/rdf_query_virtuoso.obj \
++#   $(SLO)$/rdf_storage_mysql.obj \
++#   $(SLO)$/rdf_storage_postgresql.obj \
++#   $(SLO)$/rdf_storage_sql.obj \
++#   $(SLO)$/rdf_storage_sql_test.obj \
++#   $(SLO)$/rdf_storage_sqlite.obj \
++#   $(SLO)$/rdf_storage_tstore.obj \
++#   $(SLO)$/rdf_storage_virtuoso.obj \
++
++SHL1DEPN=   makefile.mk
++SHL1OBJS=   $(SLOFILES)
++
++#SHL1TARGET=	$(TARGET)$(DLLPOSTFIX)
++SHL1TARGET=	$(TARGET)
++SHL1IMPLIB= $(TARGET)
++SHL1USE_EXPORTS=name
++
++#SHL1VERSIONMAP=../service/exports.map
++.IF "$(GUI)"=="OS2"
++SHL1VERSIONMAP=$(PRJ)/raptor/raptor2.map
++.ENDIF
++SHL1DEF=$(MISC)$/$(SHL1TARGET).def
++DEF1NAME=$(SHL1TARGET)
++
++.IF "$(GUI)"=="OS2"
++SHL1STDLIBS= \
++    $(OPENSSLLIB) \
++    $(PRJ)$/$(INPATH)$/lib$/raptor.lib \
++    $(PRJ)$/$(INPATH)$/lib$/rasqal.lib
++.ELSE
++SHL1STDLIBS= \
++    $(LIBXML2LIB) \
++    $(XSLTLIB) \
++    $(PRJ)$/$(INPATH)$/lib$/libraptor.lib \
++    $(PRJ)$/$(INPATH)$/lib$/librasqal.lib
++.ENDIF
++
++# --- Targets ------------------------------------------------------
++
++.INCLUDE :  target.mk
++
