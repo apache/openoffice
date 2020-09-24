@@ -42,7 +42,7 @@ all:
 
 
 TARFILE_NAME=Python-$(PYVERSION)
-TARFILE_MD5=1d8728eb0dfcac72a0fd99c17ec7f386
+TARFILE_MD5=27a7919fa8d1364bae766949aaa91a5b
 PATCH_FILES=\
 	python-solaris.patch \
 	python-freebsd.patch \
@@ -50,8 +50,21 @@ PATCH_FILES=\
 	python-ssl.patch \
 	python-solver-before-std.patch \
 	python-$(PYVERSION)-sysbase.patch \
-	python-$(PYVERSION)-nohardlink.patch \
-	python-$(PYVERSION)-pcbuild.patch
+	python-$(PYVERSION)-nohardlink.patch
+
+.IF "$(GUI)"=="WNT"
+.IF "$(CPUNAME)"=="INTEL"
+PATCH_FILES += python-$(PYVERSION)-msvs9.patch
+.ELIF "$(CPUNAME)"=="X86_64"
+PATCH_FILES += \
+	python-$(PYVERSION)-msvs9-win64.patch \
+	python-$(PYVERSION)-msvs9-win64-target.patch \
+	python-$(PYVERSION)-msvs9-subsystem.patch \
+	python-$(PYVERSION)-msvs9-dir.patch \
+	python-$(PYVERSION)-msvs9-no-host-python.patch \
+	python-$(PYVERSION)-msvs9-python-path.patch
+.ENDIF
+.ENDIF
 
 CONFIGURE_DIR=
 
@@ -83,7 +96,7 @@ BUILD_ACTION=$(ENV_BUILD) $(GNUMAKE) -j$(EXTMAXPROCESS) && $(GNUMAKE) install &&
 # WINDOWS
 # ----------------------------------
 .IF "$(COM)"=="GCC"
-PATCH_FILES=python-$(PYVERSION)-mingw.patch
+#PATCH_FILES=python-$(PYVERSION)-mingw.patch
 BUILD_DIR=
 MYCWD=$(shell cygpath -m $(shell @pwd))/$(INPATH)/misc/build
 python_CFLAGS=-mno-cygwin -mthreads
@@ -109,12 +122,18 @@ BUILD_ACTION=$(ENV_BUILD) make && make install
 #.ENDIF #"$(WINDOWS_VISTA_PSDK)"!=""
 #.ENDIF
 
-BUILD_DIR=PCbuild
+# Requires adapting for according to the MSVC compiler version.
+# Normally PCBuild will carry the latest supported build files.
+BUILD_DIR=PC/VS9.0
 
 # Build python executable and then runs a minimal script. Running the minimal script
 # ensures that certain *.pyc files are generated which would otherwise be created on
 # solver during registration in insetoo_native
+.IF "$(CPUNAME)"=="INTEL"
 BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|Win32"
+.ELIF "$(CPUNAME)"=="X86_64"
+BUILD_ACTION=$(COMPATH)$/vcpackages$/vcbuild.exe -useenv pcbuild.sln "Release|x64"
+.ENDIF
 .ENDIF
 .ENDIF
 
@@ -148,4 +167,3 @@ ALLTAR : $(PYVERSIONFILE)
 $(PYVERSIONFILE) : pyversion.mk $(PACKAGE_DIR)$/$(PREDELIVER_FLAG_FILE)
 	-rm -f $@
 	cat $? > $@
-
