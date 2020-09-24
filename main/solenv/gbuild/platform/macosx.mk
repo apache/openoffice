@@ -59,8 +59,8 @@ gb_OSDEFS := \
 gb_COMPILERDEFS := \
 	-D$(COM) \
 	-DHAVE_GCC_VISIBILITY_FEATURE \
-	-DCPPU_ENV=$(COMID) \
-	-DGXX_INCLUDE_PATH=$(GXX_INCLUDE_PATH) \
+	-DCPPU_ENV=$(COMID)
+#	-DGXX_INCLUDE_PATH=$(GXX_INCLUDE_PATH) \
 
 ifeq ($(CPUNAME),POWERPC)
 gb_CPUDEFS := -DPOWERPC -DPPC
@@ -107,9 +107,15 @@ ifneq ($(COM),GCC)
 	gb_CXXFLAGS += -DHAVE_STL_INCLUDE_PATH -I../v1/
 endif
 
+ifeq ($(MACOSX_DEPLOYMENT_TARGET),$(filter $(MACOSX_DEPLOYMENT_TARGET), 10.7 10.8))
+       gb_CXXFLAGS += -std=c++11 -stdlib=libc++
+       gb_macos_LDFLAGS := -std=c++11 -stdlib=libc++
+endif
+
 # these are to get g++ to switch to Objective-C++ mode
 # (see toolkit module for a case where it is necessary to do it this way)
 gb_OBJCXXFLAGS := -x objective-c++ -fobjc-exceptions
+gb_OBJCFLAGS := -x objective-c -fobjc-exceptions
 
 ifneq ($(MACOSX_DEPLOYMENT_TARGET),)
 	gb_CXXFLAGS += -DMAC_OS_X_VERSION_MAX_ALLOWED=MAC_OS_X_VERSION_$(subst .,_,$(MACOSX_DEPLOYMENT_TARGET))
