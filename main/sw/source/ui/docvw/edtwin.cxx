@@ -3577,7 +3577,7 @@ void SwEditWin::MouseMove(const MouseEvent& _rMEvt)
             }
 
             if ( USHRT_MAX != nPointer &&
-                // Enhanced table selection is explicitely allowed in table mode
+                // Enhanced table selection is explicitly allowed in table mode
                 ( !bChkTblSel || !rSh.IsTableMode() ) )
             {
                 SetPointer( nPointer );
