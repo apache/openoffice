@@ -1322,7 +1322,7 @@ if test -n "$enable_werror" && test "$enable_werror" != "no"; then
    ENABLE_WERROR="TRUE"
    AC_MSG_RESULT([yes])
    AC_MSG_WARN([Turning warnings to errors has no effect in modules or])
-   AC_MSG_WARN([on platforms where it has been disabled explicitely])
+   AC_MSG_WARN([on platforms where it has been disabled explicitly])
    echo "Turning warnings to errors has no effect in modules or on platforms where it has been disabled explicitly" >> warn
 else
    ENABLE_WERROR="FALSE"
