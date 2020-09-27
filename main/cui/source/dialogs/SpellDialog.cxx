@@ -1270,7 +1270,7 @@ bool SpellDialog::GetNextSentence_Impl(bool bUseSavedSentence, bool bRecheck)
     return bRet;
 }
 /*-- 12.11.2003 15:21:25---------------------------------------------------
-    replace errrors that have a replacement in the ChangeAllList
+    replace errors that have a replacement in the ChangeAllList
     returns false if the result doesn't contain errors after the replacement
   -----------------------------------------------------------------------*/
 bool SpellDialog::ApplyChangeAllList_Impl(SpellPortions& rSentence, bool &bHasReplaced)
@@ -1772,7 +1772,7 @@ void SentenceEditWindow_Impl::ChangeMarkedWord(const String& rNewWord, LanguageT
     //calculate length changes
     long nDiffLen = rNewWord.Len() - m_nErrorEnd + m_nErrorStart;
     TextSelection aSel(TextPaM(0, m_nErrorStart), TextPaM(0, m_nErrorEnd));
-    //Remove spell errror attribute
+    //Remove spell error attribute
     ExtTextEngine* pTextEngine = GetTextEngine();
     pTextEngine->UndoActionStart();
     const TextCharAttrib*  pErrorAttrib = pTextEngine->FindCharAttrib( TextPaM(0, m_nErrorStart), TEXTATTR_SPELL_ERROR );
