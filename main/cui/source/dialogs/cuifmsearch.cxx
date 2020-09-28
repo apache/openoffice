@@ -374,7 +374,7 @@ IMPL_LINK(FmSearchDialog, OnClickedSearchAgain, Button*, EMPTYARG)
 		}
 	}
 	else
-	{	// der Button hat die Fukntion 'Abbrechen'
+	{	// der Button hat die Funktion 'Abbrechen'
 		DBG_ASSERT(m_pSearchEngine->GetSearchMode() != SM_BRUTE, "FmSearchDialog, OnClickedSearchAgain : falscher Modus !");
 			// der CancelButton wird normalerweise nur disabled, wenn ich in einem Thread oder mit Reschedule arbeite
 		m_pSearchEngine->CancelSearch();
@@ -775,7 +775,7 @@ IMPL_LINK(FmSearchDialog, OnSearchProgress, FmSearchProgress*, pProgress)
 {
 	::vos::OGuard aGuard( Application::GetSolarMutex() );
 		// diese eine Methode Thread-sicher machen (das ist ein Overkill, die ganze restliche Applikation dafuer zu blockieren,
-		// aber im Augenblick haben wir kein anderes Sicherheitskonpzept)
+		// aber im Augenblick haben wir kein anderes Sicherheitskonzept)
 
 	switch (pProgress->aSearchState)
 	{
