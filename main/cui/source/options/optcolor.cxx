@@ -1312,7 +1312,7 @@ IMPL_LINK(ColorConfigCtrl_Impl, ScrollHdl, ScrollBar*, pScrollBar)
                 nLastVisible = i;
         }
     }
-    //show the one prior to the first visible and the first after the last visble control
+    //show the one prior to the first visible and the first after the last visible control
     //to enable KEY_TAB travelling
 
     if(nFirstVisible)

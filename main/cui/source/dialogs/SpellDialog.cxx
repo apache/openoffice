@@ -431,7 +431,7 @@ void SpellDialog::SpellContinue_Impl(bool bUseSavedSentence, bool bIgnoreCurrent
     }
 }
 /* -----------------10.09.2003 14:04-----------------
-    Initialize, asynchronous to prevent virtial calls
+    Initialize, asynchronous to prevent virtual calls
     from a constructor
  --------------------------------------------------*/
 IMPL_STATIC_LINK( SpellDialog, InitHdl, SpellDialog *, EMPTYARG )
