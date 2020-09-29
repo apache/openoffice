@@ -1,6 +1,6 @@
-diff -ur misc/nss-3.25/nss/coreconf/FreeBSD.mk misc/build/nss-3.25/nss/coreconf/FreeBSD.mk
---- misc/nss-3.25/nss/coreconf/FreeBSD.mk	2016-06-20 10:11:28.000000000 -0700
-+++ misc/build/nss-3.25/nss/coreconf/FreeBSD.mk	2016-07-14 23:50:31.177316000 -0700
+diff -ur misc/nss-3.39/nss/coreconf/FreeBSD.mk misc/build/nss-3.39/nss/coreconf/FreeBSD.mk
+--- misc/nss-3.39/nss/coreconf/FreeBSD.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/coreconf/FreeBSD.mk	2018-09-10 10:27:48.913472000 -0700
 @@ -5,9 +5,8 @@
  
  include $(CORE_DEPTH)/coreconf/UNIX.mk
