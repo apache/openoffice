@@ -117,7 +117,7 @@ OUT2LIB= \
 .ELSE			# "$(COM)"=="GCC"
 MOZ_MSVCVERSION= 9
 .EXPORT : MOZ_MSVCVERSION
-PATCH_FILES+=nss_win.patch nss_bug_1437734.patch
+PATCH_FILES+=nss_win.patch
 moz_build:=$(shell cygpath -p $(MOZILLABUILD))
 
 #Using WINNT will cause at least that nspr4.dll, plc4.dll, plds4.dll 
