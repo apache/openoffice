@@ -89,6 +89,7 @@ gb_CXXFLAGS := \
 	-fuse-cxa-atexit \
 	-fvisibility-inlines-hidden \
 	-fvisibility=hidden \
+	-std=gnu++98 \
 	-pipe \
 
 ifneq ($(EXTERNAL_WARNINGS_NOT_ERRORS),TRUE)

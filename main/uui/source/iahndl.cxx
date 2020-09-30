@@ -1287,7 +1287,7 @@ UUIInteractionHelper::handleGenericErrorRequest(
         getContinuations(rContinuations, &xApprove, &xAbort);
 
         // Note: It's important to convert the transported long to the
-        // required  unsigned long value. Otherwhise using as flag field
+        // required unsigned long value. Otherwise using as flag field
         // can fail ...
         ErrCode  nError   = static_cast< ErrCode >(nErrorCode);
         sal_Bool bWarning = !ERRCODE_TOERROR(nError);

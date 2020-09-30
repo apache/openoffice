@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,48 +25,45 @@
 
 Image RID_IMG_TREENODE_COLLAPSED
 {
-	ImageBitmap = Bitmap { File = "plus.png"; } ;
-    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; };
+	ImageBitmap = Bitmap {File = "plus.png" ;} ;
 };
 
 Image RID_IMG_TREENODE_EXPANDED
 {
-	ImageBitmap = Bitmap { File = "minus.png"; } ;
-    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; };
+	ImageBitmap = Bitmap {File = "minus.png" ;} ;
 };
 
 Image RID_IMG_TREENODE_COLLAPSED_HC
 {
-	ImageBitmap = Bitmap { File = "plus_sch.png"; } ;
-    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; };
+	ImageBitmap = Bitmap {File = "plus_sch.png" ;} ;
 };
 
 Image RID_IMG_TREENODE_EXPANDED_HC
 {
-	ImageBitmap = Bitmap { File = "minus_sch.png"; } ;
-    MaskColor = Color { Red = 0xFF00; Green = 0x0000; Blue = 0xFF00; };
+	ImageBitmap = Bitmap {File = "minus_sch.png" ;} ;
 };
 
 // descriptions of accessible objects
 
 String STR_SVT_ACC_DESC_TABLISTBOX
 {
-	Text [ en-US ] = "Row: %1, Column: %2";
+	Text [ en-US ] = "Row: %1, Column: %2" ;
 };
 String STR_SVT_ACC_DESC_FILEVIEW
 {
-	Text [ en-US ] = ", Type: %1, URL: %2";
+	Text [ en-US ] = ", Type: %1, URL: %2" ;
 };
 String STR_SVT_ACC_DESC_FOLDER
 {
-	Text [ en-US ] = "Folder";
+	Text [ en-US ] = "Folder" ;
 };
 String STR_SVT_ACC_DESC_FILE
 {
-	Text [ en-US ] = "File";
+	Text [ en-US ] = "File" ;
 };
 String STR_SVT_ACC_EMPTY_FIELD
 {
-	Text [ en-US ] = "Empty Field";
+	Text [ en-US ] = "Empty Field" ;
 };
 
+// ********************************************************************** EOF

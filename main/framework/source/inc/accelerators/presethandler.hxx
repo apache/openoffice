@@ -248,7 +248,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     can't have any special parameters!
                     
             @param  xSMGR
-                    points to an uno service manager, which is used internaly
+                    points to an uno service manager, which is used internally
                     to create own needed uno resources.                    
          */
         PresetHandler(const css::uno::Reference< css::lang::XMultiServiceFactory >& xSMGR);      
@@ -266,7 +266,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
         void forgetCachedStorages();
         
         //---------------------------------------
-        /** @short  return access to the internaly used and cached root storage.
+        /** @short  return access to the internally used and cached root storage.
         
             @descr  These root storages are the base of all further opened
                     presets and targets. They are provided here only, to support
@@ -274,7 +274,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
                     getOrCreate...() - What does it mean?
                     Such root storage will be created one times only and
-                    cached then internaly till the last instance of such PresetHandler
+                    cached then internally till the last instance of such PresetHandler
                     dies.
                     
             @return com::sun::star::embed::XStorage
@@ -334,7 +334,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     
                     Localzation will be represented as directory structure
                     of provided presets. Means: you call us with a preset name "default";
-                    and we use e.g. "/en-US/default.xml" internaly.
+                    and we use e.g. "/en-US/default.xml" internally.
                     
                     If no localization exists for this preset set, this class
                     will work in default mode - means "no locale" - automatically.
@@ -396,9 +396,9 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     and return it.
         
             @descr  Note: Targets resist inside the user
-                    layer. Normaly they are opened in read/write mode.
+                    layer. Normally they are opened in read/write mode.
                     But it will be opened readonly automatically if that isn't possible
-                    (may be the file is write protected on the system ...).
+                    (maybe the file is write protected on the system ...).
 
             @param  sTarget
                     the ALIAS name of the target.
@@ -456,8 +456,8 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
         //---------------------------------------
         /** @short  try to find the specified locale inside list of possible ones.
         
-            @descr  The lits of possible locale values was e.g. retrieved from the system
-                    (configuration, directory listing etcpp). The locale normaly represent
+            @descr  The list of possible locale values was e.g. retrieved from the system
+                    (configuration, directory listing etcpp). The locale normally represent
                     the current office locale. This method search for a suitable item by using
                     different algorithm.
                     a) exact search

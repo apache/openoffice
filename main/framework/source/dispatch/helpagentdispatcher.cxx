@@ -218,7 +218,7 @@ void HelpAgentDispatcher::implts_acceptCurrentURL()
 	// <- SAFE
 	
 	// We must make sure that this URL isn't marked as ignored by the user.
-	// Otherwhise the user wont see the corresponding help content in the future.
+	// Otherwise the user won't see the corresponding help content in the future.
 	SvtHelpOptions().resetAgentIgnoreURLCounter(sAcceptedURL);
 
 	// show the right help content
@@ -284,7 +284,7 @@ void HelpAgentDispatcher::implts_startTimer()
 	
 	// SAFE ->
 	// Timer uses pointer to this help agent dispatcher ...
-	// But normaly we are ref counted. So we must make sure that this
+	// But normally we are ref counted. So we must make sure that this
 	// dispatcher isn't killed during the timer runs .-)
 	WriteGuard aWriteLock(m_aLock);
 	m_xSelfHold = css::uno::Reference< css::uno::XInterface >(static_cast< css::frame::XDispatch* >(this), css::uno::UNO_QUERY_THROW);

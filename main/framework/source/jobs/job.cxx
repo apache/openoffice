@@ -138,7 +138,7 @@ Job::Job( /*IN*/ const css::uno::Reference< css::lang::XMultiServiceFactory >& x
 /**
     @short  superflous!
     @descr  Releasing of memory and reference must be done inside die() call.
-            Otherwhise it's a bug.
+            Otherwise it's a bug.
 */
 Job::~Job()
 {
@@ -227,7 +227,7 @@ void Job::execute( /*IN*/ const css::uno::Sequence< css::beans::NamedValue >& lD
     css::uno::Sequence< css::beans::NamedValue > lJobArgs = impl_generateJobArgs(lDynamicArgs);
 
     // It's necessary to hold us self alive!
-    // Otherwhise we might die by ref count ...
+    // Otherwise we might die by ref count ...
     css::uno::Reference< css::task::XJobListener > xThis(static_cast< ::cppu::OWeakObject* >(this), css::uno::UNO_QUERY);
 
     try
@@ -552,7 +552,7 @@ void Job::impl_reactForJobResult( /*IN*/ const css::uno::Any& aResult )
             connection.
 
             Further we are listener for closing of the (possible valid)
-            given frame. We must be shure, that this ressource won't be gone
+            given frame. We must be sure, that this ressource won't be gone
             if our internal job is still running.
 */
 void Job::impl_startListening()
@@ -755,7 +755,7 @@ void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) thro
     // if (m_eRunState != E_RUNNING)
     //    return;
 
-    // Otherwhise try to close() it
+    // Otherwise try to close() it
     css::uno::Reference< css::util::XCloseable > xClose(m_xJob, css::uno::UNO_QUERY);
     if (xClose.is())
     {
@@ -875,7 +875,7 @@ void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
 
     // No veto ...
     // But don't call die() here or free our internal member.
-    // This must be done inside notifyClosing() only. Otherwhise the
+    // This must be done inside notifyClosing() only. Otherwise the
     // might stopped job has no chance to return it's results or
     // call us back. We must give him the chance to finish it's work successfully.
 
@@ -900,7 +900,7 @@ void SAL_CALL Job::notifyClosing( const css::lang::EventObject& ) throw(css::uno
 
 //________________________________
 /**
-    @short      shouldn't be called normaly
+    @short      shouldn't be called normally
     @descr      But it doesn't matter, who called it. We have to kill our internal
                 running processes hardly.
 

@@ -52,8 +52,8 @@ namespace css = ::com::sun::star;
 /** @short  implements a guard, which can use the interface
             <type scope="com::sun::star::document">XActionLockable</type>.
 
-    @descr  This guard should be used to be shure, that any lock will be
-            released. Otherwhise the locaked document can hinder the office on shutdown!
+    @descr  This guard should be used to be sure, that any lock will be
+            released. Otherwise the locked document can hinder the office on shutdown!
 */
 class ActionLockGuard : private ThreadHelpBase
 {
@@ -101,7 +101,7 @@ class ActionLockGuard : private ThreadHelpBase
         }
 
         //---------------------------------------
-        /** @short  release this guard instance and make shure, that no lock
+        /** @short  release this guard instance and make sure, that no lock
                     will exist afterwards on the internal wrapped resource.
          */
         virtual ~ActionLockGuard()
@@ -119,7 +119,7 @@ class ActionLockGuard : private ThreadHelpBase
                     points to the outside resource, which should be locked.
 
             @return sal_True, if new resource could be set and locked.
-                    sal_False otherwhise.
+                    sal_False otherwise.
          */
         virtual sal_Bool setResource(const css::uno::Reference< css::document::XActionLockable >& xLock)
         {
@@ -147,7 +147,7 @@ class ActionLockGuard : private ThreadHelpBase
                     points to the outside resource, which should be locked.
 
             @return sal_True, if new resource could be set and locked.
-                    sal_False otherwhise.
+                    sal_False otherwise.
          */
         virtual void freeResource()
         {

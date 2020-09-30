@@ -765,7 +765,7 @@ void SwpHints::BuildPortions( SwTxtNode& rNode, SwTxtAttr& rNewHint,
                 }
                 else
                 {
-                    // remove all attributes from auto styles, which are explicitely set in
+                    // remove all attributes from auto styles, which are explicitly set in
                     // the new character format:
                     ASSERT( RES_TXTATR_AUTOFMT == (*aIter)->Which(), "AUTOSTYLES - Misc trouble" )
                     SwTxtAttr* pOther = *aIter;

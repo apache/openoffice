@@ -109,7 +109,7 @@ namespace
 
             // force alpha part of color to
             // opaque. transparent painting is done
-            // explicitely via META_TRANSPARENT_ACTION
+            // explicitly via META_TRANSPARENT_ACTION
             aColor.SetTransparency(0);
             //aColor.SetTransparency(128);
 
@@ -317,7 +317,7 @@ namespace
 
             // TODO(F1): Interpret OutDev::GetRefPoint() for the start of the dashing.
 
-            // interpret dash info only if explicitely enabled as
+            // interpret dash info only if explicitly enabled as
             // style
             const ::basegfx::B2DSize aDistance( rLineInfo.GetDistance(), 0 );
             const double nDistance( (rState.mapModeTransform * aDistance).getX() );
@@ -1401,7 +1401,7 @@ namespace cppcanvas
                                 VERBOSE_TRACE( "ImplRenderer::createActions(): non-polygonal clip "
                                                "region encountered, falling back to bounding box!" );
 
-                                // #121806# explicitely kept integer
+                                // #121806# explicitly kept integer
                                 Rectangle aClipRect(
                                     rVDev.LogicToPixel(
                                         pClipAction->GetRegion().GetBoundRect() ) );
@@ -1417,7 +1417,7 @@ namespace cppcanvas
                                 // set new clip polygon (don't intersect
                                 // with old one, just set it)
 
-                                // #121806# explicitely kept integer
+                                // #121806# explicitly kept integer
                                 basegfx::B2DPolyPolygon aPolyPolygon(pClipAction->GetRegion().GetAsB2DPolyPolygon());
 
                                 aPolyPolygon.transform(rVDev.GetViewTransformation());
@@ -1435,7 +1435,7 @@ namespace cppcanvas
                     {
                         MetaISectRectClipRegionAction* pClipAction = static_cast<MetaISectRectClipRegionAction*>(pCurrAct);
 
-                        // #121806# explicitely kept integer
+                        // #121806# explicitly kept integer
                         Rectangle aClipRect(
                             rVDev.LogicToPixel( pClipAction->GetRect() ) );
 
@@ -1457,7 +1457,7 @@ namespace cppcanvas
                             VERBOSE_TRACE( "ImplRenderer::createActions(): non-polygonal clip "
                                            "region encountered, falling back to bounding box!" );
 
-                            // #121806# explicitely kept integer
+                            // #121806# explicitly kept integer
                             Rectangle aClipRect(
                                 rVDev.LogicToPixel( pClipAction->GetRegion().GetBoundRect() ) );
 
@@ -1471,7 +1471,7 @@ namespace cppcanvas
                         {
                             // intersect current clip with given clip polygon
 
-                            // #121806# explicitely kept integer
+                            // #121806# explicitly kept integer
                             basegfx::B2DPolyPolygon aPolyPolygon(pClipAction->GetRegion().GetAsB2DPolyPolygon());
 
                             aPolyPolygon.transform(rVDev.GetViewTransformation());
@@ -1532,7 +1532,7 @@ namespace cppcanvas
 
                             // force alpha part of color to
                             // opaque. transparent painting is done
-                            // explicitely via META_TRANSPARENT_ACTION
+                            // explicitly via META_TRANSPARENT_ACTION
                             aColor.SetTransparency(0);
 
                             getState( rStates ).textColor =
@@ -1684,7 +1684,7 @@ namespace cppcanvas
                         MetaEPSAction* 		pAct = static_cast<MetaEPSAction*>(pCurrAct);
                         const GDIMetaFile&  rSubstitute = pAct->GetSubstitute();
 
-                        // #121806# explicitely kept integer
+                        // #121806# explicitly kept integer
                         const Size aMtfSize( rSubstitute.GetPrefSize() );
                         const Size aMtfSizePixPre( rVDev.LogicToPixel( aMtfSize,
                                                                        rSubstitute.GetPrefMapMode() ) );

@@ -66,7 +66,7 @@ published service SynchronousFrameLoader
         <p>
         Concrete implementations should use it to get her own configuration data
         directly after creation by the <type>FrameLoaderFactory</type>.
-        Otherwhise they must use normal configuration api to do so.
+        Otherwise they must use normal configuration api to do so.
 		</p>
 	 */
 	[optional] interface com::sun::star::lang::XInitialization;

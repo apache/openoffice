@@ -97,7 +97,7 @@ class BaseContainer : public BaseLock
         /** @short  local filter cache, which is used to collect changes on the
                     filter configuration first and flush it later.
 
-            @descr  Normaly this member isn't used nor initialized. Thats true,
+            @descr  Normally this member isn't used nor initialized. That's true,
                     if this container is used for reading only. The first write access
                     (e.g. by calling insertByName()) creates a copy of the current
                     global cache m_rCache to initialize the m_pFlushCache member.
@@ -213,7 +213,7 @@ class BaseContainer : public BaseLock
 
             @note   The lifetime of this pointer is restricted to the time, where
                     the mutex of this BaseContainer instance is locked.
-                    Otherwhise may be the interface method flush() will destroy
+                    Otherwise maybe the interface method flush() will destroy
                     m_pFlushCache and the here returned pointer will be invalid!
 
                     Use:

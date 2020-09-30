@@ -476,8 +476,8 @@ class Desktop   :   // interfaces
 
         //---------------------------------------------------------------------
         /** special terminate listener which loads images asynchronous for current open documents.
-          * Because internaly it uses blocking system APIs ... it can't be guaranteed that
-          * running jobs can be cancelled successfully if the corressponding document will be closed ...
+          * Because internally it uses blocking system APIs ... it can't be guaranteed that
+          * running jobs can be cancelled successfully if the corresponding document will be closed ...
           * it will not hinder those documents on closing. Instead it let all jobs running ...
           * but at least on terminate we have to wait for all those blocked requests.
           * So these implementation must be a special terminate listener too .-(

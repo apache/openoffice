@@ -148,7 +148,7 @@ void HistoryOptTest::impl_testHistory(EHistoryType eHistory ,
 	    
 		// e) Check if decreasing list size will remove oldest items.
 		//    Note: impl_setSize() will make sure that 3 items exists only.
-		//    Otherwhise it throws an exception. If we further check
+		//    Otherwise it throws an exception. If we further check
 		//    positions of three items no further items must be checked.
 		//    They can't exists :-)
 		::sal_Int32 nNewSize = 3;

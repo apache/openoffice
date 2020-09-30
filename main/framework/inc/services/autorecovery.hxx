@@ -95,7 +95,7 @@ struct DispatchParams
         /** @short  can be set from outside and is provided to
                     our internal started operations.
 
-            @descr  Normaly we use the normal status indicator
+            @descr  Normally we use the normal status indicator
                     of the document windows to show a progress.
                     But in case we are used by any special UI,
                     it can provide its own status indicator object
@@ -399,17 +399,17 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
         /** @descr  This member is used to prevent us against re-entrance problems.
                     A mutex can't help to prevent us from concurrent using of members
-                    inside the same thread. But e.g. our internaly used stl structures
+                    inside the same thread. But e.g. our internally used stl structures
                     are not threadsafe ... and furthermore they can't be used at the same time
                     for iteration and add/remove requests!
                     So we have to detect such states and ... show a warning.
                     May be there will be a better solution next time ... (copying the cache temp.
-                    bevor using).
+                    before using).
 
                     And further it's not possible to use a simple boolean value here.
-                    Because if more then one operation iterates over the same stl container ...
-                    (only to modify it's elements but dont add new or removing existing ones!)
-                    it should be possible doing so. But we must guarantee that the last operation reset
+                    Because if more than one operation iterates over the same stl container ...
+                    (only to modify its elements but don't add new or removing existing ones!)
+                    it should be possible doing so. But we must guarantee that the last operation resets
                     this lock ... not the first one ! So we use a "ref count" mechanism for that."
          */
         sal_Int32 m_nDocCacheLock;
@@ -466,8 +466,8 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         // css.document.XEventListener
         /** @short  informs about created/opened documents.
 
-            @descr  Every new opened/created document will be saved internaly
-                    so it can be checked if its modified. This modified state
+            @descr  Every new opened/created document will be saved internally
+                    so it can be checked if it's modified. This modified state
                     is used later to decide, if it must be saved or not.
 
             @param  aEvent
@@ -756,11 +756,11 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                     - patch the configuration.
 
                     Note further: It paches the info struct
-                    more then ones. E.g. the new temp URL is set
+                    more than once. E.g. the new temp URL is set
                     before the file is saved. And the old URL is removed
-                    only if removing oft he old file was successfully.
+                    only if removing of the old file was successfully.
                     If this method returns without an exception - everything
-                    was OK. Otherwhise the info struct can be analyzed to
+                    was OK. Otherwise the info struct can be analyzed to
                     get more information, e.g. when the problem occurs.
 
             @param  sBackupPath

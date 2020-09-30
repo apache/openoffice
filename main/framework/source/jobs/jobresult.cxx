@@ -178,7 +178,7 @@ JobResult::JobResult( const JobResult& rCopy )
 //________________________________
 /**
     @short      standard dtor
-    @descr      Free all internaly used ressources at the end of living.
+    @descr      Free all internally used resources at the end of living.
 */
 JobResult::~JobResult()
 {
@@ -210,12 +210,12 @@ void JobResult::operator=( const JobResult& rCopy )
 /**
     @short      checks for existing parts of the analyzed result
     @descr      The internal flag mask was set after analyzing of the pure result.
-                An user of us can check here, if the required part was really part
-                of this result. Otherwhise it would use invalid informations ...
+                A user of us can check here, if the required part was really part
+                of this result. Otherwise it would use invalid informations ...
                 by using our other members!
 
     @param      eParts
-                    a flag mask too, which will be compared with our internaly set one.
+                    a flag mask too, which will be compared with our internally set one.
 
     @return     We return true only, if any set flag of the given mask match.
 */

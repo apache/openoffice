@@ -208,7 +208,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         
             @descr      This is an optional action to be more robust
                         in case any detect service doesn't make this seek ...
-                        Normaly it's part of any called detect service or filter ...
+                        Normally it's part of any called detect service or filter ...
                         but sometimes it's not done there.
 
             @param      rDescriptor
@@ -358,7 +358,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         /** @short      search the best suitable filter for the given type
                         and add it into the media descriptor.
 
-            @descr      Normaly this is a type detection only ...
+            @descr      Normally this is a type detection only ...
                         but for some special features we must overwrite our detection
                         because a file must be loaded into a special (means preselected)
                         application.
@@ -440,9 +440,9 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
                     a new instance of this service if needed.
 
             @param  xSMGR
-                    reference to the uno service manager, which require
+                    reference to the uno service manager, which requires
                     this new instance. It should be passed to the new object
-                    so it can be used internaly to create own needed uno resources.
+                    so it can be used internally to create own needed uno resources.
 
             @return The new instance of this service as an uno reference.
          */

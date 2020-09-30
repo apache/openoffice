@@ -151,7 +151,7 @@ class LoadEnv : private ThreadHelpBase
                     or a non visible content was loaded!
                     It can be the same frame as m_xBaseFrame it describe, in case
                     the target "_self", "" or the search flag "SELF" was used.
-                    Otherwhise its the new created or recycled frame, which was
+                    Otherwise it's the new created or recycled frame, which was
                     used for loading and contains further the new component.
 
                     Please use method getTarget() or getTargetComponent()
@@ -197,7 +197,7 @@ class LoadEnv : private ThreadHelpBase
 
         /** @short  it indicates, that the old document (which was located inside m_xBaseFrame
                     in combination with the m_sTarget value "_self") was suspended.
-                    Normaly it will be replaced by the new loaded document. But in case
+                    Normally it will be replaced by the new loaded document. But in case
                     loading (not handling!) failed, it must be reactivated.
                     The default value is sal_False!
          */
@@ -235,8 +235,8 @@ class LoadEnv : private ThreadHelpBase
         /** @short  initialize a new instance of this load environment.
 
             @param  xSMGR
-                    reference to an uno service manager, which can be used internaly
-                    to create on needed services on demand.
+                    reference to an uno service manager, which can be used internally
+                    to create own needed services on demand.
 
             @throw  Currently there is no reason to throw such exception!
 
@@ -518,7 +518,7 @@ class LoadEnv : private ThreadHelpBase
             @return [string]
                     the type selected by the user.
 
-            @attention  Internaly we update the member m_lMediaDescriptor!
+            @attention  Internally we update the member m_lMediaDescriptor!
          */
         ::rtl::OUString impl_askUserForTypeAndFilterIfAllowed()
             throw(LoadEnvException, css::uno::RuntimeException);
@@ -601,8 +601,8 @@ class LoadEnv : private ThreadHelpBase
                     for this load request.
 
             @descr  Because this special feature is bound to the target specifier "_default"
-                    its checked inside first. If its not set => this method return an empty
-                    reference. Otherwhise any currently existing frame will be analyzed, if
+                    it's checked inside first. If it's not set => this method return an empty
+                    reference. Otherwise any currently existing frame will be analyzed, if
                     it can be used here. The following rules exists:
 
                     <ul>

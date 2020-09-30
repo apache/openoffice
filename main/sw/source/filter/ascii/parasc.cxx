@@ -298,7 +298,7 @@ sal_uLong SwASCIIParser::ReadChars()
 		if( currentCharSet == RTL_TEXTENCODING_DONTKNOW )
 	            currentCharSet = RTL_TEXTENCODING_ASCII_US;
 		hConverter = rtl_createTextToUnicodeConverter( currentCharSet );
-		ASSERT( hConverter, "no string convert avaiable" );
+		ASSERT( hConverter, "no string convert available" );
 		if (!hConverter)
             return ERROR_SW_READ_BASE;
 		bSwapUnicode = false;
