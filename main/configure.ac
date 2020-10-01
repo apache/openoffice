@@ -3066,6 +3066,7 @@ you must use the "--with-jdk-home" configure option explicitly])
              AC_MSG_ERROR([JDK is too old, you need at least 1.5])
         fi
         AC_MSG_RESULT([checked (JDK $_jdk)])
+        JAVAFLAGS="-source 1.5 -target 1.5"
         JAVA_HOME=`echo $JAVAINTERPRETER | $SED -n "s,//*bin//*java,,p"`
         if test "$_os" = "WINNT"; then
           JAVA_HOME=`echo $JAVA_HOME | $SED "s,\.[[eE]][[xX]][[eE]]$,,"`
@@ -3114,6 +3115,7 @@ if test "$SOLAR_JAVA" != ""; then
        fi
        JAVACOMPILER=`cygpath -d "$JAVACOMPILER"`
        JAVACOMPILER=`cygpath -u "$JAVACOMPILER"`
+       JAVAFLAGS="-source 1.5 -target 1.5"
     fi
     if test "$_os" = "OS2"; then
        if test x`echo "$JAVACOMPILER" | grep -i '\.exe$'` = x; then
