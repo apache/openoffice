@@ -186,7 +186,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@descr		This method destruct an instance of this class and clear some member.
 						Don't use an instance of this class as normal member. Use it dynamicly with a pointer.
 						We hold a weakreference to ouer owner and not to ouer superclass!
-						Thats the reason for a protected dtor.
+						That's the reason for a protected dtor.
 
 			@seealso	class Desktop
 

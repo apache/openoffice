@@ -404,7 +404,7 @@ OWeakRefListener::~OWeakRefListener() SAL_THROW( () )
     {
 	if (m_XWeakConnectionPoint.is())
     {
-        acquire(); // dont die again
+        acquire(); // don't die again
 		m_XWeakConnectionPoint->removeReference((XReference*)this);
     }
     }

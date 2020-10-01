@@ -1314,7 +1314,7 @@ namespace osl_FileBase
     TEST_F(SystemPath_FileURL, getSystemPathFromFileURL_003)
 		{
 // LLA: ???
-//!! seams to be, that the directories do not pass together
+//!! seems to be, that the directories do not pass together
             ::rtl::OUString aUStr;
 			::rtl::OUString aRelativeURL = ::rtl::OUString::createFromAscii("../../relartive/file3");
 			::rtl::OUString aResultURL ( aSysPath4 );

@@ -115,7 +115,7 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     in combination with a SingletonRef<> template ...
                     
                     Attention: Because these struct is shared it must be
-                    used within a synchronized section. Thats why this struct
+                    used within a synchronized section. That's why this struct
                     uses a base class ThreadHelpBase and can be locked
                     from outside doing so!
          */
@@ -325,8 +325,8 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
             @param  xDocumentRoot
                     if sResourceType is set to E_DOCUMENT, this value points to the
                     root storage inside the document, where we can save our
-                    configuration files. Note: Thats not the real root of the document ...
-                    its only a sub storage. But we interpret it as our root storage.                    
+                    configuration files. Note: That's not the real root of the document ...
+                    it's only a sub storage. But we interpret it as our root storage.                    
 
             @param  aLocale
                     in case this configuration supports localized entries,

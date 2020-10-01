@@ -271,7 +271,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
                 //-------------------------------
                 /** For every user action, which modifies a document (e.g. key input) we get
-                    a notification as XModifyListener. That seams to be a "performance issue" .-)
+                    a notification as XModifyListener. That seems to be a "performance issue" .-)
                     So we decided to listen for such modify events only for the time in which the document
                     was stored as temp. file and was not modified again by the user.
                 */

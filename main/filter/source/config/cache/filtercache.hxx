@@ -102,7 +102,7 @@ class FilterCache : public BaseLock
                         the first document. After this first document was loaded successfully,
                         a special "load-on-demand-thread" will be started to fill this cache
                         with ALL other informations, which was not readed before.
-                        Thats the second step. All operations on top of this cache will be
+                        That's the second step. All operations on top of this cache will be
                         blocked then.
          */
         enum EFillState
@@ -429,8 +429,8 @@ class FilterCache : public BaseLock
         /** @short      indicates if the requested sub container
                         contains some items.
 
-            @descr      We dont provide any information about the count
-                        of such items. Because we dont implement any index
+            @descr      We don't provide any information about the count
+                        of such items. Because we don't implement any index
                         based interface! The information "we have items or not"
                         must be enough for the outside code ... till somewhere
                         give us a good reason. :-)
@@ -785,7 +785,7 @@ class FilterCache : public BaseLock
             @descr      Because detect services, frame loader or content handler
                         are not listed inside the xml configuration as separated
                         items (they are properties of any type entry!), this method update
-                        the internal lists of such items. Thats necessary to have
+                        the internal lists of such items. That's necessary to have
                         it accessible for our container interfaces of detect, frame loader
                         and content handler services.
 

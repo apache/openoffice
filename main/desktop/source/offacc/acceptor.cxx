@@ -124,7 +124,7 @@ void SAL_CALL Acceptor::run()
 
 			// accept connection
 			Reference< XConnection > rConnection = m_rAcceptor->accept( m_aConnectString );
-			// if we return without a valid connection we mus assume that the acceptor
+			// if we return without a valid connection we must assume that the acceptor
 			// is destructed so we break out of the run method terminating the thread
 			if (! rConnection.is()) break;
 			OUString aDescription = rConnection->getDescription();

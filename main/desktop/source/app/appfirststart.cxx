@@ -200,7 +200,7 @@ static sal_Bool impl_isLicenseAccepted()
     // If no license will be shown ... it must not be accepted.
     // So it was accepted "hardly" by the outside installer.
     // But if the configuration entry "HideEula" will be removed afterwards ..
-    // we have to show the licese page again and user has to accept it here .-)
+    // we have to show the license page again and user has to accept it here .-)
     if ( ! Desktop::LicenseNeedsAcceptance() )
         return sal_True;
 

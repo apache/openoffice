@@ -117,7 +117,7 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
 
         //---------------------------------------
 
-        /** @short  check, if the given properties dont exists
+        /** @short  check, if the given properties don't exist
                     at this item.
 
             @descr  All properties are compared in its minimum.
@@ -134,7 +134,7 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
 
         //---------------------------------------
 
-        /** @short  check, if the given properties dont exists
+        /** @short  check, if the given properties don't exist
                     at this item.
 
             @descr  All properties are compared in its minimum.

@@ -416,7 +416,7 @@ void LockHelper::downgradeWriteAccess()
     @short      return a reference to a static lock helper
     @descr      Sometimes we need the global mutex or rw-lock! (e.g. in our own static methods)
                 But it's not a good idea to use these global one very often ...
-                Thats why we use this little helper method.
+                That's why we use this little helper method.
                 We create our own "class global static" lock.
                 It will be created at first call only!
                 All other requests use these created one then directly.

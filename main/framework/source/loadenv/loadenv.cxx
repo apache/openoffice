@@ -505,13 +505,13 @@ void LoadEnv::cancelLoading()
             /* Attention:
                 After returning from any cancel/dispose call, neither the frame nor weself
                 may be called back. Because only we can cancel this job, we already know
-                the result! => Thats why its not useful nor necessary to wait for any
+                the result! => That's why it's not useful nor necessary to wait for any
                 asynchronous listener notification.
             */
             m_bLoaded = sal_False;
             m_xAsynchronousJob.clear();
         }
-        // or may be its a content handler? Such handler can't be cancelled in its running
+        // or may be it's a content handler? Such handler can't be cancelled in its running
         // operation :-( And we can't deregister us there again :-(
         // => The only chance is an exception :-)
         else
@@ -1143,7 +1143,7 @@ sal_Bool LoadEnv::impl_loadContent()
     // Attention: Don't forget to reset this lock again after finishing operation.
     // Otherwise task AND office couldn't die!!!
     // This includes gracefully handling of Exceptions (Runtime!) too ...
-    // Thats why we use a specialized guard, which will reset the lock
+    // That's why we use a specialized guard, which will reset the lock
     // if it will be run out of scope.
 
     // Note further: ignore if this internal guard already contains a resource.
@@ -1207,7 +1207,7 @@ sal_Bool LoadEnv::impl_loadContent()
         // code can ask for it later.
         impl_setResult(bResult);
         // But the return value indicates a valid started(!) operation.
-        // And thats true everxtimes, we reach this line :-)
+        // And that's true every time we reach this line :-)
         return sal_True;
     }
 

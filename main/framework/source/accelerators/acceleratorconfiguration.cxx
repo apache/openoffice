@@ -202,7 +202,7 @@ void SAL_CALL XMLBasedAcceleratorConfiguration::setKeyEvent(const css::awt::KeyE
 		(aKeyEvent.Modifiers == 0)
 		)
 		throw css::lang::IllegalArgumentException(
-		::rtl::OUString::createFromAscii("Such key event seams not to be supported by any operating system."),
+		::rtl::OUString::createFromAscii("Such key event seems not to be supported by any operating system."),
 		static_cast< ::cppu::OWeakObject* >(this),
 		0);
 
@@ -775,7 +775,7 @@ void SAL_CALL XCUBasedAcceleratorConfiguration::setKeyEvent(const css::awt::KeyE
 		(aKeyEvent.Modifiers == 0)
 		)
 		throw css::lang::IllegalArgumentException(
-				::rtl::OUString::createFromAscii("Such key event seams not to be supported by any operating system."),
+				::rtl::OUString::createFromAscii("Such key event seems not to be supported by any operating system."),
 				static_cast< ::cppu::OWeakObject* >(this),
 				0);
 

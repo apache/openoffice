@@ -123,11 +123,11 @@ void TitleHelper::setOwner(const css::uno::Reference< css::uno::XInterface >& xO
         if (m_bExternalTitle)
             return m_sTitle;
         
-        // Title seams to be up-to-date. Return it directly.
+        // Title seems to be up-to-date. Return it directly.
         if (m_sTitle.getLength() > 0)
             return m_sTitle;
             
-        // Title seams to be unused till now ... do bootstraping
+        // Title seems to be unused till now ... do bootstraping
         impl_updateTitle ();
         
         return m_sTitle;

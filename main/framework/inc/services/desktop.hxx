@@ -469,7 +469,7 @@ class Desktop   :   // interfaces
         //---------------------------------------------------------------------
         /** special terminate listener shown inside system tray (quick starter)
           * Will hinder the office on shutdown ... but wish to allow closing
-          * of open documents. And because thats different to a normal terminate listener
+          * of open documents. And because that's different to a normal terminate listener
           * it has to be handled special .-)
           */
         css::uno::Reference< css::frame::XTerminateListener > m_xQuickLauncher;

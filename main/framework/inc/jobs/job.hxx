@@ -164,7 +164,7 @@ class Job : public  css::lang::XTypeProvider
         /**
             Holds the state, if we are listen for desktop/frame or model closing events or not.
             The used references are not really enough to detect a valid listener connection.
-            Thats why we use this additional information here too.
+            That's why we use this additional information here too.
          */
         sal_Bool m_bListenOnDesktop;
         sal_Bool m_bListenOnFrame;

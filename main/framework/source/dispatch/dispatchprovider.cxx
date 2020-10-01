@@ -451,7 +451,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
         {
             css::uno::Reference< css::frame::XDispatchProvider > xParent( xFrame->getCreator(), css::uno::UNO_QUERY );
             // Normally if isTop() returned sal_False ... the parent frame MUST(!) exist ...
-            // But it seams to be better to check that here to prevent us against an access violation.
+            // But it seems to be better to check that here to prevent us against an access violation.
             if (xParent.is())
                 xDispatcher = xParent->queryDispatch(aURL, SPECIALTARGET_TOP, 0);
         }
@@ -643,7 +643,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_searchProt
     @descr      Sometimes we need some helper implementations to support dispatching of special URLs or commands.
                 But it's not a good idea to hold these services for the whole life time of this provider instance.
                 We should create it on demand ...
-                Thats why we implement this method. It return an already existing helper or create a new one otherwise.
+                That's why we implement this method. It returns an already existing helper or creates a new one otherwise.
 
     @attention  The parameter sTarget and nSearchFlags are defaulted to "" and 0!
                 Please use it only, if you can be sure, that the really given by the outside calli!
