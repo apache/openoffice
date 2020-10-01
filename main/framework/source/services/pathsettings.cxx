@@ -1103,7 +1103,7 @@ css::uno::Reference< css::util::XStringSubstitution > PathSettings::fa_getSubsti
         // create the needed substitution service.
         // We must replace all used variables inside readed path values.
         // In case we can't do so ... the whole office can't work really.
-        // That's why it seams to be OK to throw a RuntimeException then.
+        // That's why it seems to be OK to throw a RuntimeException then.
         xSubst = css::uno::Reference< css::util::XStringSubstitution >(
                                 xSMGR->createInstance(SERVICENAME_SUBSTITUTEPATHVARIABLES),
                                 css::uno::UNO_QUERY_THROW);

@@ -1426,7 +1426,7 @@ void AutoRecovery::implts_flushConfigItem(const AutoRecovery::TDocumentInfo& rIn
         }
         catch(const css::uno::Exception& ex)
             {
-                // a) FULL DISC seams to be the problem behind                              => show error and retry it forever (e.g. retry=300)
+                // a) FULL DISC seems to be the problem behind                              => show error and retry it forever (e.g. retry=300)
                 // b) unknown problem (may be locking problem)                              => reset RETRY value to more useful value(!) (e.g. retry=3)
                 // c) unknown problem (may be locking problem) + 1..2 repeating operations  => throw the original exception to force generation of a stacktrace !
 
@@ -2176,7 +2176,7 @@ void AutoRecovery::implts_prepareSessionShutdown()
                 catch(const css::uno::Exception&)
                     {
                         // At least it's only a try to close these documents before anybody else it does.
-                        // So it seams to be possible to ignore any error here .-)
+                        // So it seems to be possible to ignore any error here .-)
                     }
 
                 rInfo.Document.clear();
@@ -2459,7 +2459,7 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
             {
                 bError = sal_True;
 
-                // a) FULL DISC seams to be the problem behind                              => show error and retry it forever (e.g. retry=300)
+                // a) FULL DISC seems to be the problem behind                              => show error and retry it forever (e.g. retry=300)
                 // b) unknown problem (may be locking problem)                              => reset RETRY value to more useful value(!) (e.g. retry=3)
                 // c) unknown problem (may be locking problem) + 1..2 repeating operations  => throw the original exception to force generation of a stacktrace !
 

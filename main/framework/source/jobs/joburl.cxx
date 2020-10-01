@@ -145,7 +145,7 @@ sal_Bool JobURL::isValid() const
     @short      get the event item of this job URL
     @descr      Because the three possible parts of such URL (event, alias, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 event value.
 
     @param      sEvent
@@ -178,7 +178,7 @@ sal_Bool JobURL::getEvent( /*OUT*/ ::rtl::OUString& sEvent ) const
     @short      get the alias item of this job URL
     @descr      Because the three possible parts of such URL (event, alias, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 alias value.
 
     @param      sAlias
@@ -211,7 +211,7 @@ sal_Bool JobURL::getAlias( /*OUT*/ ::rtl::OUString& sAlias ) const
     @short      get the service item of this job URL
     @descr      Because the three possible parts of such URL (event, service, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 service value.
 
     @param      sAlias

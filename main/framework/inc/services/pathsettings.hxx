@@ -253,7 +253,7 @@ class PathSettings : public  css::lang::XTypeProvider             ,
               PathSettings::PathInfo* impl_getPathAccess     (sal_Int32 nHandle);
         const PathSettings::PathInfo* impl_getPathAccessConst(sal_Int32 nHandle) const;
 
-        /** it checks, if the given path value seams to be a valid URL or system path. */
+        /** it checks, if the given path value seems to be a valid URL or system path. */
         sal_Bool impl_isValidPath(const ::rtl::OUString& sPath) const;
         sal_Bool impl_isValidPath(const OUStringList&    lPath) const;
 

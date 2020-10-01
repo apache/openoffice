@@ -512,7 +512,7 @@ Sequence< sal_Bool > ConfigItem::GetReadOnlyStates(const com::sun::star::uno::Se
         {
             if(pImpl->pManager->IsLocalConfigProvider() && lcl_IsLocalProperty(sSubTree, rNames[i]))
             {
-                OSL_ENSURE(sal_False, "ConfigItem::IsReadonly()\nlocal mode seams to be used!?\n");
+                OSL_ENSURE(sal_False, "ConfigItem::IsReadonly()\nlocal mode seems to be used!?\n");
                 continue;
             }
 

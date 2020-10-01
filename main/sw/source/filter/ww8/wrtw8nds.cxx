@@ -2216,7 +2216,7 @@ void MSWordExportBase::OutputTextNode( const SwTxtNode& rNode )
 
         /*
         If a given para is using the FRMDIR_ENVIRONMENT direction we
-        cannot export that, its its ltr then that's ok as thats word's
+        cannot export that, if it's ltr then that's ok as that's Word's
         default. Otherwise we must add a RTL attribute to our export list
         */
         pItem = (const SvxFrameDirectionItem*)

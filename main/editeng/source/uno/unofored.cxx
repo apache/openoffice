@@ -272,7 +272,7 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 			}
 			else if( bGaps )
 			{
-				// gaps and item not set in paragraph, thats a don't care
+				// gaps and item not set in paragraph, that's a don't care
 				return SFX_ITEM_DONTCARE;
 			}
 		}

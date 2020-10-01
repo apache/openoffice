@@ -219,7 +219,7 @@ class DetectorFactory : // interfaces
                     Note: Missing values will be created with defaults!
 
             @exception  com::sun::star::lang::IllegalArgumentException
-                        if one of the incoming parameters seams to be invalid.
+                        if one of the incoming parameters seems to be invalid.
                         That doesn't include the check, if this item already exist!
 
             @exception  com::sun::star::container::ElementExistException
@@ -280,7 +280,7 @@ class DetectorFactory : // interfaces
                     Note: Missing properties will be untouched.
 
             @exception  com::sun::star::lang::IllegalArgumentException
-                        if one of the incoming parameters seams to be invalid.
+                        if one of the incoming parameters seems to be invalid.
                         That doesn't include the check, if this item exist!
 
             @exception  com::sun::star::container::NoSuchElementException

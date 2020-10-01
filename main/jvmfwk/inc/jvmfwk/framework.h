@@ -182,7 +182,7 @@ extern "C" {
 
     <p>A note about bootstrap parameters. The implementation of the bootstrap
     parameter mechanism interprets the characters '\', '$', '{', '}' as
-    escape characters. Thats why the Windows path contain double back-slashes.
+    escape characters. That's why the Windows path contains double back-slashes.
     One should also take into account that a console may have also special
     escape characters.</p>
     

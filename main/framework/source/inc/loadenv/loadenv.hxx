@@ -336,14 +336,14 @@ class LoadEnv : private ThreadHelpBase
                     of a "non visible component" only an information about a successfully start
                     can be provided.
                     Further it can't be guaranteed, that the internal process runs synchronous.
-                    Thats why we preferr using of specialized methods afterwards e.g. to:
+                    That's why we prefer using of specialized methods afterwards e.g. to:
                         - wait till the internal job will be finished
                           and get the results
                         - or to let it run without any further control from outside.
 
             @throw  A LoadEnvException if start of the load process failed (because
                     another is still in progress!).
-                    The reason, a suitable message and ID will be given here immidiatly.
+                    The reason, a suitable message and ID will be given here immediately.
 
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
@@ -613,7 +613,7 @@ class LoadEnv : private ThreadHelpBase
                         <li>and(!) this target must not be already used by any other load request.</li>
                     </ul>
 
-                    If a suitable target is located it will be locked. Thats why the last rule
+                    If a suitable target is located it will be locked. That's why the last rule
                     exists! If this method returns a valid frame reference, it was locked to be useable
                     for this load request only. (Dont forget to reset this state later!)
                     Concurrent LoadEnv instances can synchronize her work be using such locks :-) HOPEFULLY
