@@ -124,6 +124,7 @@ static connectivity::OSQLInternalNode* newNode(const ::rtl::OUString& _NewValue,
 
 connectivity::OSQLParser* xxx_pGLOBAL_SQLPARSER;
 
+#define YYDEBUG 1
 #define YYERROR_VERBOSE
 
 #define SQLyyerror(s)						\
