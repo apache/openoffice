@@ -836,13 +836,13 @@ AC_ARG_WITH(intro-bitmaps,
                           commas), the order means priority of fallback if the
                           first does not exist (in the installed tree).
 
-                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.bmp
+                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.png
 ],,)
 AC_ARG_WITH(about-bitmaps,
 [  --with-about-bitmaps    Similarly to --with-intro-bitmaps, this allows
                           specification of bitmaps for the About box.
 
-                          Usage: --with-about-bitmaps=/path/my_ooo_about.bmp
+                          Usage: --with-about-bitmaps=/path/my_ooo_about.png
 ],,)
 AC_ARG_WITH(vendor,
 [  --with-vendor           Set vendor of the build.
@@ -1154,7 +1154,7 @@ case "$build_os" in
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -arch x86_64"
+		   CXX="`xcrun -f clang++` -stdlib=libc++ -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
@@ -1322,7 +1322,7 @@ if test -n "$enable_werror" && test "$enable_werror" != "no"; then
    ENABLE_WERROR="TRUE"
    AC_MSG_RESULT([yes])
    AC_MSG_WARN([Turning warnings to errors has no effect in modules or])
-   AC_MSG_WARN([on platforms where it has been disabled explicitely])
+   AC_MSG_WARN([on platforms where it has been disabled explicitly])
    echo "Turning warnings to errors has no effect in modules or on platforms where it has been disabled explicitly" >> warn
 else
    ENABLE_WERROR="FALSE"
@@ -3943,7 +3943,7 @@ if test  "$_os" = "Darwin"; then
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
       dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else
@@ -7356,8 +7356,8 @@ if test -z "$with_intro_bitmaps" -o "$with_intro_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_intro_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          INTRO_BITMAPS="$INTRO_BITMAPS $bitmap"
@@ -7375,8 +7375,8 @@ if test -z "$with_about_bitmaps" -o "$with_about_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_about_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          ABOUT_BITMAPS="$ABOUT_BITMAPS $bitmap"
@@ -7516,4 +7516,5 @@ else
    fi
    echo
 fi
+
 

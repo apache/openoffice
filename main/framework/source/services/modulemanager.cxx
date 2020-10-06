@@ -392,8 +392,8 @@ css::uno::Reference< css::container::XNameAccess > ModuleManager::implts_getConf
 ::rtl::OUString ModuleManager::implts_identify(const css::uno::Reference< css::uno::XInterface >& xComponent)
 {
     // Search for an optional (!) interface XModule first.
-    // Its used to overrule an existing service name. Used e.g. by our database form designer
-    // which uses a writer module internaly.
+    // It's used to overrule an existing service name. Used e.g. by our database form designer
+    // which uses a writer module internally.
     css::uno::Reference< css::frame::XModule > xModule(xComponent, css::uno::UNO_QUERY);
     if (xModule.is())
         return xModule->getIdentifier();

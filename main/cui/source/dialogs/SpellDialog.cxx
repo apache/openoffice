@@ -431,7 +431,7 @@ void SpellDialog::SpellContinue_Impl(bool bUseSavedSentence, bool bIgnoreCurrent
     }
 }
 /* -----------------10.09.2003 14:04-----------------
-    Initialize, asynchronous to prevent virtial calls
+    Initialize, asynchronous to prevent virtual calls
     from a constructor
  --------------------------------------------------*/
 IMPL_STATIC_LINK( SpellDialog, InitHdl, SpellDialog *, EMPTYARG )
@@ -1270,7 +1270,7 @@ bool SpellDialog::GetNextSentence_Impl(bool bUseSavedSentence, bool bRecheck)
     return bRet;
 }
 /*-- 12.11.2003 15:21:25---------------------------------------------------
-    replace errrors that have a replacement in the ChangeAllList
+    replace errors that have a replacement in the ChangeAllList
     returns false if the result doesn't contain errors after the replacement
   -----------------------------------------------------------------------*/
 bool SpellDialog::ApplyChangeAllList_Impl(SpellPortions& rSentence, bool &bHasReplaced)
@@ -1482,7 +1482,7 @@ long SentenceEditWindow_Impl::PreNotify( NotifyEvent& rNEvt )
 				}
 
                 //check previous position if this exists
-				//that is a redundant in the case the the attribute found above already is on the left cursor side
+				//that is a redundant in the case the attribute found above already is on the left cursor side
 				//but it's o.k. for two errors/fields side by side
                 if(aCursor.GetIndex())
                 {
@@ -1772,7 +1772,7 @@ void SentenceEditWindow_Impl::ChangeMarkedWord(const String& rNewWord, LanguageT
     //calculate length changes
     long nDiffLen = rNewWord.Len() - m_nErrorEnd + m_nErrorStart;
     TextSelection aSel(TextPaM(0, m_nErrorStart), TextPaM(0, m_nErrorEnd));
-    //Remove spell errror attribute
+    //Remove spell error attribute
     ExtTextEngine* pTextEngine = GetTextEngine();
     pTextEngine->UndoActionStart();
     const TextCharAttrib*  pErrorAttrib = pTextEngine->FindCharAttrib( TextPaM(0, m_nErrorStart), TEXTATTR_SPELL_ERROR );

@@ -2,7 +2,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,16 +10,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -42,7 +42,7 @@
 <bookmark_value>PostScript; PDF converter, UNIX</bookmark_value>
 <bookmark_value>converters; PostScript, UNIX</bookmark_value>
 <bookmark_value>PDF; PostScript to PDF converter, UNIX</bookmark_value>
-</bookmark><comment>mw deleted "printer programs under UNIX",  "fax programs under UNIX" and "font programs under UNIX" and changed "faxes;..."</comment>
+</bookmark><comment>mw deleted "printer programs under UNIX", "fax programs under UNIX" and "font programs under UNIX" and changed "faxes;..."</comment>
 <paragraph role="paragraph" id="par_id3154422" xml-lang="en-US" l10n="E" oldref="341" localize="false"/>
 <paragraph role="heading" id="hd_id3147834" xml-lang="en-US" level="1" l10n="CHG" oldref="1"><variable id="spadmin"><link href="text/shared/guide/spadmin.xhp" name="Setting up Printer and Fax Under UNIX Based Platforms">Setting up Printer and Fax Under UNIX Based Platforms</link>
 </variable></paragraph>
@@ -209,7 +209,7 @@
 <paragraph role="paragraph" id="par_id3156445" xml-lang="en-US" l10n="U" oldref="310">Choose whether to use the default driver, the Acrobat Distiller driver or another driver. The driver "Generic Printer (T42 enabled)" prefers the type 42 fonts over type 3 fonts; this driver is a good choice for output to a software PostScript interpreter. Click <emph>Next</emph>.</paragraph>
 <list type="ordered" startwith="3">
 <listitem>
-<paragraph role="listitem" id="par_id3155128" xml-lang="en-US" l10n="U" oldref="311">In the next dialog, enter a command line for the PostScript-&gt;PDF Converter. Enter the directory where the PDF files should be saved. If you do not provide a directory, the user's home directory will be used. In the command line "(TMP)" is replaced by a temporary file and "(OUTFILE)" by the target file, the name of which is created from the document name. If "(TMP)" occurs in the command line, the Postscript code is forwarded in a file, otherwise as standard input through a pipe. If Ghostscript or Adobe Acrobat Distiller is in the search path, you can use one of the predefined command lines. Click <emph>Next</emph>.</paragraph>
+<paragraph role="listitem" id="par_id3155128" xml-lang="en-US" l10n="U" oldref="311">In the next dialog, enter a command line for the PostScript-&gt;PDF Converter. Enter the directory where the PDF files should be saved. If you do not provide a directory, the user's home directory will be used. In the command line "(TMP)" is replaced by a temporary file and "(OUTFILE)" by the target file, the name of which is created from the document name. If "(TMP)" occurs in the command line, the PostScript code is forwarded in a file, otherwise as standard input through a pipe. If Ghostscript or Adobe Acrobat Distiller is in the search path, you can use one of the predefined command lines. Click <emph>Next</emph>.</paragraph>
 </listitem>
 <listitem>
 <paragraph role="listitem" id="par_id3152889" xml-lang="en-US" l10n="U" oldref="312">Assign a name to your new PDF converter. Click <emph>Finish</emph>.</paragraph>

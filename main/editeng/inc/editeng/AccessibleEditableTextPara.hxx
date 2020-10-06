@@ -77,7 +77,7 @@ namespace accessibility
         /// Create accessible object for given parent
         // --> OD 2006-01-11 #i27138#
         // - add parameter <_pParaManager> (default value NULL)
-        //   This has to be the the instance of <AccessibleParaManager>, which
+        //   This has to be the instance of <AccessibleParaManager>, which
         //   created and manages this accessible paragraph.
         AccessibleEditableTextPara ( const ::com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >& rParent,
                                      const AccessibleParaManager* _pParaManager = NULL );
@@ -125,7 +125,7 @@ namespace accessibility
         virtual sal_Int32 SAL_CALL getForeground(  ) throw (::com::sun::star::uno::RuntimeException);
         virtual sal_Int32 SAL_CALL getBackground(  ) throw (::com::sun::star::uno::RuntimeException);
 
-        // XAccessibleText (this comes implicitely inherited by XAccessibleEditableText AND by XAccessibleMultiLineText)
+        // XAccessibleText (this comes implicitly inherited by XAccessibleEditableText AND by XAccessibleMultiLineText)
         virtual sal_Int32 SAL_CALL getCaretPosition() throw (::com::sun::star::uno::RuntimeException);
         virtual sal_Bool SAL_CALL setCaretPosition( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);
         virtual sal_Unicode SAL_CALL getCharacter( sal_Int32 nIndex ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::uno::RuntimeException);

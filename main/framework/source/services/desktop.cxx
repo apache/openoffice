@@ -666,7 +666,7 @@ But; Don't forget - you will be the owner of returned object and must release it
                 It can be, that the desktop is dead - but not your tasksaccess-object! Then they will do nothing!
                 You can't create enumerations then.
 
-    @attention  Normaly we don't need any lock here. We don't work on internal member!
+    @attention  Normally we don't need any lock here. We don't work on internal member!
 
     @seealso    class TasksAccess
 
@@ -1097,9 +1097,9 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::findFrame( const ::r
     else
     {
         //-------------------------------------------------------------------------------------------------
-        // II) otherwhise use optional given search flags
+        // II) otherwise use optional given search flags
         //  force using of combinations of such flags. means no "else" part of use if() statements.
-        //  But we ust break further searches if target was already found.
+        //  But we must break further searches if target was already found.
         //  Order of using flags is fix: SELF - CHILDREN - SIBLINGS - PARENT
         //  TASK and CREATE are handled special.
         //  But note: Such flags are not valid for the desktop - especially SIBLINGS or PARENT.
@@ -1114,7 +1114,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::findFrame( const ::r
 
         //-------------------------------------------------------------------------------------------------
         // II.I) SELF
-        //  Check for right name. If it's the searched one return ourself - otherwhise
+        //  Check for right name. If it's the searched one return ourself - otherwise
         //  ignore this flag.
         //-------------------------------------------------------------------------------------------------
         if (
@@ -1127,7 +1127,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::findFrame( const ::r
 
         //-------------------------------------------------------------------------------------------------
         // II.II) TASKS
-        //  This is a special flag. Normaly it regulate search inside tasks and forbid access to parent trees.
+        //  This is a special flag. Normally it regulates search inside tasks and forbid access to parent trees.
         //  But the desktop exists outside such task trees. They are our sub trees. So the desktop implement
         //  a special feature: We use it to start search on our direct childrens only. That means we suppress
         //  search on ALL child frames. May that can be useful to get access on opened document tasks
@@ -1220,7 +1220,7 @@ void SAL_CALL Desktop::dispose()
     m_aListenerContainer.disposeAndClear( aEvent );
 
     // Clear our child task container and forget all task references hardly.
-    // Normaly all open document was already closed by our terminate() function before ...
+    // Normally all open document were already closed by our terminate() function before ...
     // New opened frames will have a problem now .-)
     m_aChildTaskContainer.clear();
 
@@ -1341,7 +1341,7 @@ void SAL_CALL Desktop::dispatchFinished( const css::frame::DispatchResultEvent& 
 *//*-*************************************************************************************************************/
 void SAL_CALL Desktop::disposing( const css::lang::EventObject& ) throw( css::uno::RuntimeException )
 {
-    LOG_ERROR( "Desktop::disposing()", "Algorithm error! Normaly desktop is temp. listener ... not all the time. So this method shouldn't be called." )
+    LOG_ERROR( "Desktop::disposing()", "Algorithm error! Normally desktop is temp. listener ... not all the time. So this method shouldn't be called." )
 }
 
 /*-************************************************************************************************************//**

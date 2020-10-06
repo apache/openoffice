@@ -195,7 +195,7 @@ throw ( Exception, RuntimeException )
         ::rtl::OUString pkgSpec = OUSTR("uno_packages");
         sal_Int32 indexOfPkgSpec = m_sCtxString.lastIndexOf( pkgSpec );
 
-        // if contex string ends with "uno_packages"
+        // if context string ends with "uno_packages"
         if ( indexOfPkgSpec > -1 && ( m_sCtxString.match( pkgSpec, indexOfPkgSpec ) == sal_True ) )
         {
             m_bIsPkgMSP = sal_True;

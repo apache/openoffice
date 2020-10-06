@@ -277,7 +277,7 @@ class PackageRegistryBackend
 {
     //The map held originally WeakReferences. The map entries are removed in the disposing
     //function, which is called when the XPackages are destructed or they are
-    //explicitely disposed. The latter happens, for example, when a extension is
+    //explicitly disposed. The latter happens, for example, when a extension is
     //removed (see dp_manager.cxx). However, because of how the help systems work, now
     // XPackageManager::getDeployedPackages is called often. This results in a lot
     //of bindPackage calls which are costly. Therefore we keep hard references in
@@ -321,7 +321,7 @@ protected:
         css::uno::Reference<css::uno::XComponentContext> const & xContext );
 
     /* creates a folder with a unique name.
-       If url is empty then it is created in the the backend folder, otherwise
+       If url is empty then it is created in the backend folder, otherwise
        at a location relative to that folder specified by url.
     */
     ::rtl::OUString createFolder(

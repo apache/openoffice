@@ -328,7 +328,7 @@ sal_Bool __EXPORT BasicCheckBox::EditingEntry( SvLBoxEntry* pEntry, Selection& )
 
     // TODO: check if library is reference/link
 
-    // Prueffen, ob Referenz...
+    // Check if reference...
     /*
 	sal_uInt16 nLib = pBasMgr->GetLibId( GetEntryText( pEntry, 0 ) );
 	DBG_ASSERT( nLib != LIB_NOTFOUND, "LibId ?!" );
@@ -1201,7 +1201,7 @@ void LibPage::Export( void )
 			else
 				ExportAsBasic( aLibName );
 		}
-		catch( util::VetoException& ) // user cancled operation
+		catch( util::VetoException& ) // user canceled operation
 		{
 		}
 	}

@@ -131,7 +131,7 @@ public class FunctionHelper
      *          we nee the remote service manager to create this task/frame service
      *
      * @return [com.sun.star.frame.XFrame]
-     *          the new created frame reference in case of success or null otherwhise
+     *          the new created frame reference in case of success or null otherwise
      */
     private static com.sun.star.frame.XFrame impl_createEmptyFrame(
         com.sun.star.uno.XComponentContext xCtx )
@@ -166,7 +166,7 @@ public class FunctionHelper
      *   - the office window will be a child of one of our java windows
      *   - the office will be a normal system window outside this java application
      * This behaviour will be regulated by the second parameter of this operation.
-     * If a parentview is given the first mode will be activated - otherwhise
+     * If a parentview is given the first mode will be activated - otherwise
      * the second one.
      *
      * Note: First mode (creation of a child window) can be reached by two different
@@ -243,10 +243,10 @@ public class FunctionHelper
             // try new version of creation first: directly using of the window
             // handle. The old implementation of the corresponding toolkit method
             // requires a process ID. If this id isn't the right one a null object
-            // is returned. But normaly nobody outside the office knows this id.
+            // is returned. But normally nobody outside the office knows this id.
             // New version of this method ignore the id parameter and creation will
             // work.
-            // Note: You must be shure if your window handle can be really used by
+            // Note: You must be sure if your window handle can be really used by
             // the remote office. Means if this java client and the remote office
             // use the same display!
             com.sun.star.awt.XSystemChildFactory xChildFactory =
@@ -323,7 +323,7 @@ public class FunctionHelper
      * It use a special JNI functionality to pass the office XWindow over a java window.
      * This java window can be inserted into another java window container for complex layouting.
      * If this parent java window isn't used, a top level system window will be created.
-     * The the resulting office frame isn't plugged into this java application.
+     * The resulting office frame isn't plugged into this java application.
      *
      * @param sName
      *          name to set it on the new created frame
@@ -358,7 +358,7 @@ public class FunctionHelper
 
             // pass the window the frame as his new container window.
             // It's necessary to do it first  - before you call anything else there.
-            // Otherwhise the frame throws some exceptions for "uninitialized state".
+            // Otherwise the frame throws some exceptions for "uninitialized state".
             xFrame.initialize( xWindow );
 
             // Insert the new frame in desktop hierarchy.
@@ -434,7 +434,7 @@ public class FunctionHelper
      *                      (Note: Deregistration is part of this listener himself!)
      *
      * @return  [XDispatch] It's the used dispatch object and can be used for deregistration of an optional listener.
-     *                      Otherwhise caller can ignore it.
+     *                      Otherwise caller can ignore it.
      */
     public static com.sun.star.frame.XDispatch execute(com.sun.star.frame.XFrame          xFrame     ,
                                                        com.sun.star.util.URL              aURL       ,
@@ -632,8 +632,8 @@ public class FunctionHelper
         try
         {
             // Check for supported model functionality.
-            // Normaly the application documents (text, spreadsheet ...) do so
-            // but some other ones (e.g. db components) doesn't do that.
+            // Normally the application documents (text, spreadsheet ...) do so
+            // but some other ones (e.g. db components) don't do that.
             // They can't be save then.
             com.sun.star.frame.XModel xModel = (com.sun.star.frame.XModel)UnoRuntime.queryInterface(
                 com.sun.star.frame.XModel.class,
@@ -689,7 +689,7 @@ public class FunctionHelper
             // First detect factory of this document.
             // Ask for the supported service name of this document.
             // If information is available it can be used to find out which
-            // filter exist for HTML export. Normaly this filter should be searched
+            // filter exist for HTML export. Normally this filter should be searched
             // inside the filter configuration but this little demo doesn't do so.
             // (see service com.sun.star.document.FilterFactory for further
             // informations too)

@@ -630,10 +630,10 @@ void SAL_CALL SfxPrintHelper::print(const uno::Sequence< beans::PropertyValue >&
             INetURLObject aCheck(sURL );
             if (aCheck.GetProtocol()==INET_PROT_NOT_VALID)
             {
-                // OK - it's not a valid URL. But may it's a simple
+                // OK - it's not a valid URL. But maybe it's a simple
                 // system path directly. It will be supported for historical
-                // reasons. Otherwhise we break to much external code ...
-                // We try to convert it to a file URL. If its possible
+                // reasons. Otherwise we break to much external code ...
+                // We try to convert it to a file URL. If it's possible
                 // we put the system path to the item set and let vcl work with it.
                 // No ucb or thread will be necessary then. In case it couldn't be
                 // converted its not an URL nor a system path. Then we can't accept

@@ -8,6 +8,7 @@
 *.bak
 *.cxx-*
 *.git
+*.gnuplot
 *.hxx-*
 *.log
 *.orig
@@ -24,6 +25,7 @@
 /main/FreeBSD*Env.Set*
 /main/Linux*Env.Set*
 /main/MacOS*Env.Set*
+/main/OS2*Env.Set*
 /main/ant.properties
 /main/autom4te.cache
 /main/config.guess
@@ -77,5 +79,8 @@ TAGS
 /*/*/unxmac??
 /*/*/unxmac??.pro
 
-#RepoRevision hash file
+# Windows Accessibility Bridge
+main/winaccessibility/source/UAccCOMIDL/dlldata.c
+
+# RepoRevision hash file
 /main/solenv/inc/reporevision.lst

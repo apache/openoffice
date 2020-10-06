@@ -70,7 +70,7 @@ public __gc class  UnoInterfaceProxy: public srrp::RealProxy,
      */
     sc::ArrayList* m_listIfaces;
     /** The number of UNO interfaces this proxy represents. It corresponds
-        to the the number of elements in m_listIfaces.
+        to the number of elements in m_listIfaces.
     */    
     int m_numUnoIfaces;
     /** The list is filled with additional UnoInterfaceProxy object due

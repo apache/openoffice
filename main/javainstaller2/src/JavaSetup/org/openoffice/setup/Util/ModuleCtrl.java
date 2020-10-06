@@ -290,7 +290,7 @@ public class ModuleCtrl {
         // Analyzing the system database and setting the module states.
         // Called during installation in ChooseInstallationTypeCtrl.java, because
         // the database has to be known. In user installation it is important, 
-        // the the installation directory is known, to find the database.
+        // that the installation directory is known, to find the database.
         // Called during uninstallation in UninstallationPrologueCtrl.java
 
         boolean isUninstall = installData.isUninstallationMode();

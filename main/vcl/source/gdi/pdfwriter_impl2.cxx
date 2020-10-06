@@ -1176,7 +1176,7 @@ void PDFWriterImpl::checkAndEnableStreamEncryption( sal_Int32 nObject )
         // the i+2 to take into account the generation number, always zero
         rtl_digest_MD5( &m_aContext.Encryption.EncryptionKey[0], i+2, nMD5Sum, sizeof(nMD5Sum) );
         // initialize the RC4 with the key
-        // key legth: see algorithm 3.1, step 4: (N+5) max 16
+        // key length: see algorithm 3.1, step 4: (N+5) max 16
         rtl_cipher_initARCFOUR( m_aCipher, rtl_Cipher_DirectionEncode, nMD5Sum, m_nRC4KeyLength, NULL, 0 );
     }
 }
@@ -1195,7 +1195,7 @@ void PDFWriterImpl::enableStringEncryption( sal_Int32 nObject )
         // the i+2 to take into account the generation number, always zero
         rtl_digest_MD5( &m_aContext.Encryption.EncryptionKey[0], i+2, nMD5Sum, sizeof(nMD5Sum) );
         // initialize the RC4 with the key
-        // key legth: see algorithm 3.1, step 4: (N+5) max 16
+        // key length: see algorithm 3.1, step 4: (N+5) max 16
         rtl_cipher_initARCFOUR( m_aCipher, rtl_Cipher_DirectionEncode, nMD5Sum, m_nRC4KeyLength, NULL, 0 );
     }
 }

@@ -77,7 +77,7 @@ On Error Goto ErrHndl
         ' get the  first cell
         xRoot = utils.at_getAccessibleObjectForRole(xRoot, _
              com.sun.star.accessibility.AccessibleRole.TABLE_CELL,"Cell A1")
-        ' the the Paragraph
+        ' the Paragraph
         oObj = utils.at_getAccessibleObjectForRole(xRoot, _
              com.sun.star.accessibility.AccessibleRole.PARAGRAPH,"Paragraph 0")
         utils.at_printAccessibleTree(xRoot)

@@ -354,7 +354,7 @@ throw( RuntimeException )
 
 ::osl::Mutex&	OfficeIPCThread::GetMutex()
 {
-	// Get or create our mutex for thread-saftey
+	// Get or create our mutex for thread-safety
 	if ( !pOfficeIPCThreadMutex )
 	{
 		::osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() );
@@ -448,7 +448,7 @@ OfficeIPCThread::Status OfficeIPCThread::EnableOfficeIPCThread()
 	// Try to  determine if we are the first office or not! This should prevent multiple
 	// access to the user directory !
 	// First we try to create our pipe if this fails we try to connect. We have to do this
-	// in a loop because the the other office can crash or shutdown between createPipe
+	// in a loop because the other office can crash or shutdown between createPipe
 	// and connectPipe!!
 
     OUString            aIniName;
@@ -676,13 +676,13 @@ void SAL_CALL OfficeIPCThread::run()
             // if we receive a request while the office is displaying some dialog or error during
             // bootstrap, that dialogs event loop might get events that are dispatched by this thread
             // we have to wait for cReady to be set by the real main loop.
-            // only reqests that don't dispatch events may be processed before cReady is set.
+            // only requests that don't dispatch events may be processed before cReady is set.
             cReady.wait();
 
             // we might have decided to shutdown while we were sleeping
             if (!pGlobalOfficeIPCThread) return;
 
-            // only lock the mutex when processing starts, othewise we deadlock when the office goes
+            // only lock the mutex when processing starts, otherwise we deadlock when the office goes
             // down during wait
             osl::ClearableMutexGuard aGuard( GetMutex() );
 
@@ -790,7 +790,7 @@ void SAL_CALL OfficeIPCThread::run()
 
                 // #i18338# (lo)
                 // we only do this if no document was specified on the command line,
-                // since this would be inconsistent with the the behaviour of
+                // since this would be inconsistent with the behaviour of
                 // the first process, see OpenClients() (call to OpenDefault()) in app.cxx
                 if ( aCmdLineArgs->HasModuleParam() && Desktop::CheckOEM() && (!bDocRequestSent))
 				{

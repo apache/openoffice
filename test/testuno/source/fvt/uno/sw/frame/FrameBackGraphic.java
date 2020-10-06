@@ -109,7 +109,7 @@ public class FrameBackGraphic {
 		XPropertySet xFrameProps1_assert = (XPropertySet) UnoRuntime.queryInterface(XPropertySet.class, xFrame_Assert1);
 		GraphicLocation graphiclocation=(GraphicLocation)xFrameProps1_assert.getPropertyValue("BackGraphicLocation");
 		assertEquals("verify Frame backgraphic location",backGraphicLocation,graphiclocation.getValue());
-		assertEquals("verify Frame backgraphic fileter",graphicName,xFrameProps1_assert.getPropertyValue("BackGraphicFilter"));
+		assertEquals("verify Frame backgraphic filter",graphicName,xFrameProps1_assert.getPropertyValue("BackGraphicFilter"));
 		assertEquals("verify Frame backgraphic URL",graphicURL,xFrameProps1_assert.getPropertyValue("BackGraphicURL"));
 	}
 }

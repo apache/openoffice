@@ -44,6 +44,7 @@ namespace com { namespace sun { namespace star {
     }
     namespace uno {
         class Any;
+        class XComponentContext;
     }
     namespace lang {
         class XMultiServiceFactory;
@@ -76,7 +77,7 @@ public ::cppu::WeakImplHelper4< css::frame::XDispatchProvider,
 {
 private:
     bool m_bInitialised;
-    css::uno::Reference < css::lang::XMultiServiceFactory >         m_xFactory;
+    css::uno::Reference < css::uno::XComponentContext >             m_xCtx;
     css::uno::Reference < css::frame::XFrame >                      m_xFrame;
     css::uno::Reference < css::script::provider::XScriptProvider >  m_xScriptProvider;
     css::uno::Reference< css::document::XScriptInvocationContext >  m_xScriptInvocation;
@@ -86,7 +87,7 @@ private:
 
 public:
     ScriptProtocolHandler( const css::uno::Reference < 
-        css::lang::XMultiServiceFactory >& xFactory );
+        css::uno::XComponentContext >& xCtx );
     virtual ~ScriptProtocolHandler();
 
     /* XServiceInfo */
@@ -104,10 +105,8 @@ public:
     /* Helper for registry */
     static css::uno::Reference < css::uno::XInterface > SAL_CALL
     impl_createInstance( 
-        const css::uno::Reference< css::lang::XMultiServiceFactory >& xServiceManager )
+        const css::uno::Reference< css::uno::XComponentContext >& xCtx )
     throw( css::uno::RuntimeException );
-    static css::uno::Reference < css::lang::XSingleServiceFactory > impl_createFactory(
-        const css::uno::Reference< css::lang::XMultiServiceFactory >& xServiceManager );
 
     /* Implementation for XDispatchProvider */
     virtual css::uno::Reference < css::frame::XDispatch > SAL_CALL

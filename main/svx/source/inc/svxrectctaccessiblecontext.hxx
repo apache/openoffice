@@ -248,7 +248,7 @@ protected:
     /** Selects a new child by index.
 
         <p>If the child was not selected before, the state of the child will
-        be updated. If the index is invalid, the index will internaly set to NOCHILDSELECTED</p>
+        be updated. If the index is invalid, the index will internally set to NOCHILDSELECTED</p>
 
         @param nIndexOfChild
             Index of the new child which should be selected.
@@ -260,7 +260,7 @@ public:
     /** Selects a new child by point.
 
         <p>If the child was not selected before, the state of the child will
-        be updated. If the point is not invalid, the index will internaly set to NOCHILDSELECTED</p>
+        be updated. If the point is not invalid, the index will internally set to NOCHILDSELECTED</p>
 
         @param eButton
             Button which belongs to the child which should be selected.
@@ -536,7 +536,7 @@ private:
     */
     ::rtl::OUString						msDescription;
 
-    /**	Name of this object.  It changes according the the draw page's
+    /**	Name of this object.  It changes according the draw page's
         display mode.
     */
     ::rtl::OUString						msName;

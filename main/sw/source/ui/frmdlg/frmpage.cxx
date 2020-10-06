@@ -911,14 +911,14 @@ void SwFrmPage::Reset( const SfxItemSet &rSet )
 
     if (rFrmSize.GetWidthPercent() != 0xff && rFrmSize.GetWidthPercent() != 0)
     {
-        //calculate the rerference value from the with and relative width values
+        //calculate the reference value from the width and relative width values
         sal_Int32 nSpace = rFrmSize.GetWidth() * 100 / rFrmSize.GetWidthPercent();
         aWidthED. SetRefValue( nSpace );
     }
 
     if (rFrmSize.GetHeightPercent() != 0xff && rFrmSize.GetHeightPercent() != 0)
     {
-        //calculate the rerference value from the with and relative width values
+        //calculate the reference value from the width and relative width values
         sal_Int32 nSpace = rFrmSize.GetHeight() * 100 / rFrmSize.GetHeightPercent();
         aHeightED.SetRefValue( nSpace );
     }

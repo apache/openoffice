@@ -712,8 +712,8 @@ public class XMLHelper
 
     /** returns a list of childs, which supports the right node type.
      *
-     *  It analyze the list of all possible child nodes. If a node represent the right node type
-     *  it is added to the return list. Otherwhise it will be ignored.
+     *  It analyzes the list of all possible child nodes. If a node represents the right node type
+     *  it is added to the return list. Otherwise it will be ignored.
      *
      *  @param  aNode
      *          provides access to the list of possible children nodes.

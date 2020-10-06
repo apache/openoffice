@@ -110,14 +110,14 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
             @param  lProps
                     contains all properties, which must exist at this item.
 
-            @return sal_True if all given properties exists
-                    at this item; sal_False otherwhise.
+            @return sal_True if all given properties exist
+                    at this item; sal_False otherwise.
          */
         sal_Bool haveProps(const CacheItem& lProps) const;
 
         //---------------------------------------
 
-        /** @short  check, if the given properties dont exists
+        /** @short  check, if the given properties don't exist
                     at this item.
 
             @descr  All properties are compared in its minimum.
@@ -127,14 +127,14 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
             @param  lProps
                     contains all properties, which should not exists at this item.
 
-            @return sal_False if at least on property exists at this item(!);
-                    sal_True otherwhise.
+            @return sal_False if at least one property exists at this item(!);
+                    sal_True otherwise.
          */
         sal_Bool dontHaveProps(const CacheItem& lProps) const;
 
         //---------------------------------------
 
-        /** @short  check, if the given properties dont exists
+        /** @short  check, if the given properties don't exist
                     at this item.
 
             @descr  All properties are compared in its minimum.
@@ -144,8 +144,8 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
             @param  lProps
                     contains all properties, which should be checked.
 
-            @return sal_True if all given properties dont exists
-                    at this item; sal_False otherwhise.
+            @return sal_True if all given properties don't exist
+                    at this item; sal_False otherwise.
          */
         sal_Bool excludeProps(const CacheItem& lProps) const;
 
@@ -153,7 +153,7 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
 
         /** @short  because we know two UIName properties
                     (a list with all locales and the value
-                    for the current locale only), we must be shure
+                    for the current locale only), we must be sure
                     that the correspond together.
 
             @param  sActLocale
@@ -168,8 +168,8 @@ class CacheItem : public ::comphelper::SequenceAsHashMap
         /** @short  convert this structure to a seq< PropertyValue >
                     and ignore all empty properties!
                     
-            @descr  Normaly the converter routines of the base class
-                    SequenceAsHashMap do this job already.
+            @descr  Normally the converter routines of the base class
+                    SequenceAsHashMap done this job already.
                     But it doesn't provide a "pack" mechanism to
                     ignore properties with empty (means "void") values.
 

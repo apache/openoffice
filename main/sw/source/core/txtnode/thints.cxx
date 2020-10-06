@@ -765,14 +765,14 @@ void SwpHints::BuildPortions( SwTxtNode& rNode, SwTxtAttr& rNewHint,
                 }
                 else
                 {
-                    // remove all attributes from auto styles, which are explicitely set in
+                    // remove all attributes from auto styles, which are explicitly set in
                     // the new character format:
                     ASSERT( RES_TXTATR_AUTOFMT == (*aIter)->Which(), "AUTOSTYLES - Misc trouble" )
                     SwTxtAttr* pOther = *aIter;
                     boost::shared_ptr<SfxItemSet> pOldStyle = static_cast<const SwFmtAutoFmt&>(pOther->GetAttr()).GetStyleHandle();
 
                     // For each attribute in the automatic style check if it
-                    // is also set the the new character style:
+                    // is also set to the new character style:
                     SfxItemSet aNewSet( *pOldStyle->GetPool(),
                         aCharAutoFmtSetRange);
                     SfxItemIter aItemIter( *pOldStyle );
