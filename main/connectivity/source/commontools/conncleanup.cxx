@@ -195,7 +195,7 @@ namespace dbtools
 	//---------------------------------------------------------------------
 	void SAL_CALL OAutoConnectionDisposer::disposing( const EventObject& _rSource ) throw (RuntimeException)
 	{
-		// the rowset is beeing disposed, and nobody has set a new ActiveConnection in the meantime
+		// the rowset is being disposed, and nobody has set a new ActiveConnection in the meantime
 		if ( isRowSetListening() )
 			stopRowSetListening();
 
