@@ -55,7 +55,7 @@ static Window* GetTopMostParentSystemWindow( Window* pWindow )
     if ( pWindow )
     {
         // ->manually search topmost system window
-        // required because their might be another system window between this and the top window
+        // required because there might be another system window between this and the top window
         pWindow = pWindow->GetParent();
         SystemWindow* pTopMostSysWin = NULL;
         while ( pWindow )
