@@ -386,7 +386,7 @@ public class FileHelper
      *          used to return the file content.
      *
      *  @throw  [IOException]
-     *          - if the file couldnt be opened
+     *          - if the file couldn't be opened
      *          - if the file does not use the right encoding
      */
     public static void readEncodedBufferFromFile(java.io.File           aFile    ,

@@ -145,7 +145,7 @@ public class ImageElementLayoutController
             final Section tableRow = (Section) rowController.getNode();
             // we are now making the assumption, that the row is a section, that contains the table-cell.
             // This breaks the ability to return nodes or to construct reports on the fly, but the OO-report format
-            // is weird anyway and wont support such advanced techniques for the next few centuries ..
+            // is weird anyway and won't support such advanced techniques for the next few centuries...
             final int columnPos = findNodeInSection(tableRow, tableCell, OfficeToken.COVERED_TABLE_CELL);
             if (columnPos == -1)
             {

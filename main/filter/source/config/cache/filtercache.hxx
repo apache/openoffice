@@ -310,14 +310,14 @@ class FilterCache : public BaseLock
                     removed.
 
                     The original container will get these new data automatically
-                    because it listen for changes on the internal used configuration layer.
+                    because it listens for changes on the internal used configuration layer.
                     If the new data are needed immediately inside the original container,
                     the method takeOver() can be used to copy all changes back.
                     The may be following notifications of the configuration will be superflous then.
                     But they can't be stopped ...
 
                     All internal structures will be copied here. But the internal used
-                    configuration (update) access wont be copied. The cloned instance contains
+                    configuration (update) access won't be copied. The cloned instance contains
                     a different one.
 
             @note   The cloned instance is created on the heap. The user of this instance

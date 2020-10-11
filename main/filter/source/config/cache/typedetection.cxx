@@ -422,7 +422,7 @@ sal_Bool TypeDetection::impl_getPreselectionForType(const ::rtl::OUString& sPreS
     sal_Bool bBreakDetection = sal_False;
 
     // Further we must know if it matches by pattern
-    // Every flat detected type by pattern wont be detected deep!
+    // Every flat detected type by pattern won't be detected deep!
     sal_Bool bMatchByPattern = sal_False;
 
     // And we must know if a preselection must be preferred, because
