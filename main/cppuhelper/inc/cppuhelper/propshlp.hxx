@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,7 +61,7 @@ public:
 		{}
 
 	/**
-	   Following the rule, the first virtual method impies the virtual destructor.
+	   Following the rule, the first virtual method implies the virtual destructor.
 	 */
 	virtual ~IPropertyArrayHelper();
 
@@ -69,7 +69,7 @@ public:
 	   Return the property members Name and Attribute from the handle nHandle.
 	   @param nHandle	the handle of a property. If the values of the handles
 	  					are sorted in the same way as the names and the highest handle value
-	  					is getCount() -1, than it must be an indexed acces to the property array.
+	  					is getCount() -1, than it must be an indexed access to the property array.
 	   @param pPropName is an out parameter filled with property name of the property with the
 	  						handle nHandle. May be NULL.
 	   @param rAttributes is an out parameter filled with attributes of the property with the
@@ -119,7 +119,7 @@ class CPPUHELPER_DLLPUBLIC OPropertyArrayHelper : public IPropertyArrayHelper
 public:
      /**
 	   Create an object which supports the common property interfaces.
-	   
+
 	   @param pProps	array of properties
 	  					The array pProps should be sorted.
 	   @param nElements	is the number of properties in the pProps structure.
@@ -147,10 +147,10 @@ public:
 	 */
 	sal_Int32 SAL_CALL getCount() const SAL_THROW( () );
 	/**
-	   Return the property members Name and Attribute from the handle nHandle. 
+	   Return the property members Name and Attribute from the handle nHandle.
 	   @param nHandle	the handle of a property. If the values of the handles
 	  					are sorted in the same way as the names and the highest handle value
-	  					is getCount() -1, than it is only an indexed acces to the property array.
+	  					is getCount() -1, than it is only an indexed access to the property array.
 	  					Otherwise it is a linear search through the array.
 	   @param pPropName is an out parameter filled with property name of the property with the
 	  						handle nHandle. May be NULL.
@@ -199,7 +199,7 @@ protected:
 private:
 	void init( sal_Bool bSorted ) SAL_THROW( () );
 
-	/** The sequence generstet from the pProperties array. */
+	/** The sequence generated from the pProperties array. */
 	::com::sun::star::uno::Sequence< ::com::sun::star::beans::Property > aInfos;
 
 	/**
@@ -242,7 +242,7 @@ public:
 
 	/**
 	  Create a container of interface containers.
-	 
+
 	  @param rMutex	the mutex to protect multi thread access.
 	 					The lifetime must be longer than the lifetime
 	 					of this object.
@@ -272,7 +272,7 @@ public:
 	 					the same pointer more than once.
 	  @return the new count of elements in the container.
 	 */
-	sal_Int32 SAL_CALL addInterface( 
+	sal_Int32 SAL_CALL addInterface(
 		const sal_Int32 & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & r )
 		SAL_THROW( () );
@@ -284,7 +284,7 @@ public:
 	  @param rxIFace	the removed interface.
 	  @return the new count of elements in the container.
 	 */
-	sal_Int32 SAL_CALL removeInterface(	
+	sal_Int32 SAL_CALL removeInterface(
 		const sal_Int32 & rKey,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface > & rxIFace )
 		SAL_THROW( () );
@@ -342,7 +342,7 @@ public:
    The XPropertyChangeListener and XVetoableChangeListener with no names are inserted
    in the rBHelper.aLC structure. So it is possible to advise property listeners with
    the connection point interfaces. But only listeners that listen to all property changes.
-  
+
  */
 class CPPUHELPER_DLLPUBLIC OPropertySetHelper : public ::com::sun::star::beans::XMultiPropertySet,
 						   public ::com::sun::star::beans::XFastPropertySet,
@@ -358,13 +358,13 @@ public:
 	OPropertySetHelper( OBroadcastHelper & rBHelper ) SAL_THROW( () );
 
 	/** Constructor.
-	   
+
         @param rBHelper
                         this structure contains the basic members of
                         a broadcaster.
 	  					The lifetime must be longer than the lifetime
 	  					of this object. Stored in the variable rBHelper.
-	  					
+
         @param bIgnoreRuntimeExceptionsWhileFiring
                         indicates whether occurring RuntimeExceptions will be
                         ignored when firing notifications (vetoableChange((),
@@ -378,13 +378,13 @@ public:
         OBroadcastHelper & rBHelper, bool bIgnoreRuntimeExceptionsWhileFiring );
 
 	/** Constructor.
-	   
+
         @param rBHelper
                         this structure contains the basic members of
                         a broadcaster.
                         The lifetime must be longer than the lifetime
                         of this object. Stored in the variable rBHelper.
-	  					
+
         @param i_pFireEvents
                         additional event notifier
 
@@ -417,7 +417,7 @@ public:
 	/**
 	   Send a disposing notification to the listeners in the conatiners aBoundLC
 	   and aVetoableLC.
-	  
+
 	   @see OComponentHelper
 	 */
 	void SAL_CALL disposing() SAL_THROW( () );
@@ -435,7 +435,7 @@ public:
 	 */
 	virtual ::com::sun::star::uno::Any SAL_CALL getPropertyValue(const ::rtl::OUString& aPropertyName)
 		throw(::com::sun::star::beans::UnknownPropertyException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
-	/** Ignored if the property is not bound. */ 
+	/** Ignored if the property is not bound. */
 	virtual void SAL_CALL addPropertyChangeListener(
 		const ::rtl::OUString& aPropertyName,
 		const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertyChangeListener >& aListener)
@@ -548,10 +548,10 @@ protected:
 	   old value in rOldValue. A IllegalArgumentException is thrown.
 	   The method is not implemented in this class. After this call the vetoable
 	   listeners are notified.
-	  
+
 	   @param rConvertedValue the converted value. Only set if return is true.
 	   @param rOldValue the old value. Only set if return is true.
-	   @param nHandle the handle of the proberty.
+	   @param nHandle the handle of the property.
 	   @return true if the value converted.
 	 */
 	virtual sal_Bool SAL_CALL convertFastPropertyValue(
@@ -573,7 +573,7 @@ protected:
         -- ::com::sun::star::lang::IllegalArgumentException
         -- ::com::sun::star::lang::WrappedTargetException
         -- ::com::sun::star::uno::RuntimeException
-        
+
         @param nHandle
                handle
         @param rValue
@@ -620,7 +620,7 @@ protected:
 	/**
 	   Container for the XProperyChangedListener. The listeners are inserted by handle.
 	 */
-	OMultiTypeInterfaceContainerHelperInt32  aBoundLC;
+	OMultiTypeInterfaceContainerHelperInt32 aBoundLC;
 	/**
 	   Container for the XPropertyVetoableListener. The listeners are inserted by handle.
 	 */
@@ -665,6 +665,4 @@ public:
 
 } // end namespace cppuhelper
 #endif	//
-
-
 

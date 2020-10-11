@@ -195,7 +195,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		not supported
-			@descr		Please use XNameAcces instead of these!
+			@descr		Please use XNameAccess instead of these!
 
 			@seealso	-
 

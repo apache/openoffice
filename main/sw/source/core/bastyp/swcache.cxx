@@ -619,7 +619,7 @@ SwCacheAccess::~SwCacheAccess()
 
 void SwCacheAccess::_Get()
 {
-	ASSERT( !pObj, "SwCacheAcces Obj already available." );
+	ASSERT( !pObj, "SwCacheAccess Obj already available." );
 
 	pObj = NewObj();
 	if ( !rCache.Insert( pObj ) )

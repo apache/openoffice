@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -335,11 +335,11 @@ sal_uInt16 SwDocShell::PrepareClose( sal_Bool bUI, sal_Bool bForBrowsing )
             using namespace com::sun::star::script::vba::VBAEventId;
             uno::Sequence< uno::Any > aArgs;
             xVbaEvents->processVbaEvent( DOCUMENT_CLOSE, aArgs );
-        }    
-    }    
+        }
+    }
 #endif
 	return nRet;
-} 
+}
 
 /*--------------------------------------------------------------------
 	Beschreibung:	Organizer
@@ -367,7 +367,7 @@ sal_Bool SwDocShell::Insert( SfxObjectShell &rSource,
 
 	if (CONTENT_STYLE == nSourceIdx1 && CONTENT_STYLE == rIdx1)
 	{
-		SfxStyleSheetBasePool* pHisPool  = rSource.GetStyleSheetPool();
+		SfxStyleSheetBasePool* pHisPool = rSource.GetStyleSheetPool();
 		SwDocStyleSheetPool* pMyPool =
 			(SwDocStyleSheetPool*)GetStyleSheetPool();
 
@@ -688,7 +688,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
 			SwEditShell::SetAutoFmtFlags( pAFlags );
 			rACW.SetMinWordLen( pAFlags->nAutoCmpltWordLen );
 			rACW.SetMaxCount( pAFlags->nAutoCmpltListLen );
-			if( pAFlags->pAutoCmpltList )  // any changes?
+			if( pAFlags->pAutoCmpltList ) // any changes?
 			{
 				rACW.CheckChangedList( aTmpLst );
 				// clear the temp WordList pointer
@@ -877,7 +877,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
                     aOpt.SetTxtFmts(    bText = (0 != (nFlags&SFX_LOAD_TEXT_STYLES) ));
                     aOpt.SetFrmFmts(    bFrame = (0 != (nFlags&SFX_LOAD_FRAME_STYLES)));
                     aOpt.SetPageDescs(  bPage = (0 != (nFlags&SFX_LOAD_PAGE_STYLES )));
-                    aOpt.SetNumRules(   bNum = (0 != (nFlags&SFX_LOAD_NUM_STYLES  )));
+                    aOpt.SetNumRules(   bNum = (0 != (nFlags&SFX_LOAD_NUM_STYLES )));
                     //different meaning between SFX_MERGE_STYLES and aOpt.SetMerge!
                     bMerge = 0 != (nFlags&SFX_MERGE_STYLES);
                     aOpt.SetMerge( !bMerge );
@@ -893,7 +893,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
 				SfxViewShell* pViewShell = GetView()
 											? (SfxViewShell*)GetView()
 											: SfxViewShell::Current();
-				SfxViewFrame*  pViewFrm = pViewShell->GetViewFrame();
+				SfxViewFrame* pViewFrm = pViewShell->GetViewFrame();
                 SwSrcView* pSrcView = dynamic_cast< SwSrcView *>( pViewShell );
 				if(!pSrcView)
 				{
@@ -1202,7 +1202,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
                 sal_Bool bCreateHtml = FN_NEW_HTML_DOC == nWhich;
 
 				sal_Bool bCreateByOutlineLevel = false;		//#outline level,add by zhaojianwei
-				sal_Int32  nTemplateOutlineLevel = 0 ;		//#outline level,add by zhaojianwei
+				sal_Int32 nTemplateOutlineLevel = 0 ;		//#outline level,add by zhaojianwei
 
                 String aFileName, aTemplateName;
                 if( pArgs && SFX_ITEM_SET == pArgs->GetItemState( nWhich, sal_False, &pItem ) )
@@ -1228,8 +1228,8 @@ void SwDocShell::Execute(SfxRequest& rReq)
                         0
                     };
 
-                    const char* aHTMLHelpIds[] = 
-                    {                       
+                    const char* aHTMLHelpIds[] =
+                    {
                          HID_SEND_HTML_CTRL_PUSHBUTTON_OK,
                          HID_SEND_HTML_CTRL_PUSHBUTTON_CANCEL,
                          HID_SEND_HTML_CTRL_LISTBOX_FILTER,
@@ -1240,8 +1240,8 @@ void SwDocShell::Execute(SfxRequest& rReq)
                          ""
                     };
 
-                    const char* aMasterHelpIds[] = 
-                    {                       
+                    const char* aMasterHelpIds[] =
+                    {
                          HID_SEND_MASTER_CTRL_PUSHBUTTON_OK,
                          HID_SEND_MASTER_CTRL_PUSHBUTTON_CANCEL,
                          HID_SEND_MASTER_CTRL_LISTBOX_FILTER,
@@ -1272,7 +1272,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
                         // Fuer Global-Dokumente bieten wir jetzt auch nur
                         // noch den aktuellen an.
                         pFlt = SwGlobalDocShell::Factory().GetFilterContainer()->
-                                    GetFilter4Extension( String::CreateFromAscii("odm")  );
+                                    GetFilter4Extension( String::CreateFromAscii("odm") );
                         nStrId = STR_LOAD_GLOBAL_DOC;
                     }
 
@@ -1310,7 +1310,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
         //                    if( !rTxtColl.IsDefault() && rTxtColl.IsAtDocNodeSet() )
         //                    {
         //                        //if( MAXLEVEL >= rTxtColl.GetOutlineLevel() && ( !pFnd ||			//#outline level,zhaojianwei
-								//if(  rTxtColl.IsAssignedToListLevelOfOutlineStyle()  && ( !pFnd ||	//<-end,zhaojianwei
+								//if(  rTxtColl.IsAssignedToListLevelOfOutlineStyle() && ( !pFnd ||	//<-end,zhaojianwei
         //                            pFnd->GetAssignedOutlineStyleLevel() > rTxtColl.GetAssignedOutlineStyleLevel() ))
         //                        {
         //                                nSelect = (sal_Int16)nIdx;
@@ -1387,7 +1387,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
                         }
                         catch(Exception& )
                         {
-                            DBG_ERROR("control acces failed");
+                            DBG_ERROR("control access failed");
                         }
 
                         xFP->setTitle( SW_RESSTR( nStrId ));
@@ -1412,7 +1412,7 @@ void SwDocShell::Execute(SfxRequest& rReq)
 							}
 							else if( sPrefix.equalsAscii("Outline"))
 							{
-								nTemplateOutlineLevel =	( sTmpl.copy( 15L )).toInt32();	//get string behind "Outline: Leve  ";
+								nTemplateOutlineLevel =	( sTmpl.copy( 15L )).toInt32();	//get string behind "Outline: Level ";
 								bCreateByOutlineLevel = true;
 							}
 							//<-end,zhaojianwei
@@ -1662,7 +1662,7 @@ void SwDocShell::ReloadFromHtml( const String& rStreamName, SwSrcView* pSrcView 
 	// sonst gibt es welche aus Meta-Tags hinter doppelt und dreifach.
 	ClearHeaderAttributesForSourceViewHack();
 
-	// MIB 24.07.97: Das Dokument-Basic muss auch noch d'ran glauben ...
+	// MIB 24.07.97: Das Dokument-Basic muss auch noch dran glauben ...
 	SvxHtmlOptions* pHtmlOptions = SvxHtmlOptions::Get();
 	//#59620# HasBasic() zeigt an, dass es schon einen BasicManager an der DocShell
 	//			gibt. Der wurde im HTML-Import immer angelegt, wenn Macros im Quelltext
@@ -1721,7 +1721,7 @@ void SwDocShell::ReloadFromHtml( const String& rStreamName, SwSrcView* pSrcView 
 
 	SfxViewShell* pViewShell = GetView() ? (SfxViewShell*)GetView()
 										 : SfxViewShell::Current();
-	SfxViewFrame*  pViewFrm = pViewShell->GetViewFrame();
+	SfxViewFrame* pViewFrm = pViewShell->GetViewFrame();
 	pViewFrm->GetDispatcher()->Execute( SID_VIEWSHELL0, SFX_CALLMODE_SYNCHRON );
 
 	SubInitNew();
@@ -1771,7 +1771,7 @@ sal_uLong SwDocShell::LoadStylesFromFile( const String& rURL,
     String sFactory(String::CreateFromAscii(SwDocShell::Factory().GetShortName()));
     SfxFilterMatcher aMatcher( sFactory );
 
-	//#b6445961#  search for filter in WebDocShell, too
+	//#b6445961# search for filter in WebDocShell, too
     SfxMedium aMed( rURL, STREAM_STD_READ, sal_False );
     const SfxFilter* pFlt = 0;
     aMatcher.DetectFilter( aMed, &pFlt, sal_False, sal_False );
@@ -1787,16 +1787,16 @@ sal_uLong SwDocShell::LoadStylesFromFile( const String& rURL,
     {
         if ( aMed.IsStorage() )
         {
-            // As <SfxMedium.GetFilter().IsOwnFormat() resp. IsOwnTemplateFormat() 
-            // does not work correct (e.g., MS Word 2007 XML Template), 
+            // As <SfxMedium.GetFilter().IsOwnFormat() resp. IsOwnTemplateFormat()
+            // does not work correct (e.g., MS Word 2007 XML Template),
             // use workaround provided by MAV.
             uno::Reference< embed::XStorage > xStorage = aMed.GetStorage();
             if ( xStorage.is() )
             {
-                // use <try-catch> on retrieving <MediaType> in order to check, 
+                // use <try-catch> on retrieving <MediaType> in order to check,
                 // if the storage is one of our own ones.
                 try
-                {        
+                {
                     uno::Reference< beans::XPropertySet > xProps( xStorage, uno::UNO_QUERY_THROW );
                     const ::rtl::OUString aMediaTypePropName( RTL_CONSTASCII_USTRINGPARAM( "MediaType" ) );
                     xProps->getPropertyValue( aMediaTypePropName );
@@ -1806,14 +1806,14 @@ sal_uLong SwDocShell::LoadStylesFromFile( const String& rURL,
                 {
                     bImport = false;
                 }
-            }    
+            }
         }
     }
     if ( bImport )
-    // <--    
+    // <--
 	{
         DBG_ASSERT((pFlt ? pFlt->GetVersion() : 0) >= SOFFICE_FILEFORMAT_60, "which file version?");
-        SwRead pRead =  ReadXML;
+        SwRead pRead = ReadXML;
         SwReader* pReader = 0;
         SwPaM* pPam = 0;
 		// the SW3IO - Reader need the pam/wrtshell, because only then he
@@ -1825,7 +1825,7 @@ sal_uLong SwDocShell::LoadStylesFromFile( const String& rURL,
 			pReader = new SwReader( aMed, rURL, *pPam );
 		}
 		else
-        {        
+        {
 			pReader = new SwReader( aMed, rURL, *mpWrtShell->GetCrsr() );
         }
 
@@ -1849,7 +1849,7 @@ sal_uLong SwDocShell::LoadStylesFromFile( const String& rURL,
         delete pPam;
         delete pReader;
 	}
-    
+
     return nErr;
 }
 

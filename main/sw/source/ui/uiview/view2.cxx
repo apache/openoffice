@@ -337,7 +337,7 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
     }
     catch(Exception& )
     {
-        DBG_ERROR("control acces failed");
+        DBG_ERROR("control access failed");
     }
 
     SFX_REQUEST_ARG( rReq, pName, SfxStringItem, SID_INSERT_GRAPHIC , sal_False );
@@ -379,7 +379,7 @@ sal_Bool SwView::InsertGraphicDlg( SfxRequest& rReq )
                 }
                 catch(Exception& )
                 {
-                    DBG_ERROR("control acces failed");
+                    DBG_ERROR("control access failed");
                 }
             }
             rReq.AppendItem( SfxBoolItem( FN_PARAM_1, bAsLink ) );
