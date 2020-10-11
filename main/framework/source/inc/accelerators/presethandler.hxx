@@ -404,11 +404,11 @@ class PresetHandler : private ThreadHelpBase // attention! Must be the first bas
                     the ALIAS name of the target.
                     
             @param  bCreateIfMissing
-                    create target file, if it does not still exists.
+                    create target file, if it does not still exist.
                     Note: That does not means reseting of an existing file!
                     
             @return The opened target stream ... or NULL if the target does not exists
-                    or couldnt be created as new one.
+                    or couldn't be created as new one.
          */
         css::uno::Reference< css::io::XStream > openTarget(const ::rtl::OUString& sTarget         ,
                                                                  sal_Bool         bCreateIfMissing);

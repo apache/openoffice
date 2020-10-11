@@ -2399,8 +2399,8 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
                                      const css::uno::Reference< css::task::XStatusIndicator >& xExternalProgress)
 {
     // no document? => can occur if we loaded our configuration with files,
-    // which couldnt be recovered successfully. In such case we have all needed informations
-    // excepting the real document instance!
+    // which couldn't be recovered successfully. In such case we have all needed informations
+    // except the real document instance!
 
     // TODO: search right place, where such "dead files" can be removed from the configuration!
     if (!rInfo.Document.is())
@@ -3103,7 +3103,7 @@ void AutoRecovery::implts_doEmergencySave(const DispatchParams& aParams)
     // flush config cached back to disc.
     impl_flushALLConfigChanges();
 
-    // try to make sure next time office will be started user wont be
+    // try to make sure next time office will be started user won't be
     // notified about any other might be running office instance
     // remove ".lock" file from disc !
     AutoRecovery::st_impl_removeLockFile();
@@ -3180,7 +3180,7 @@ void AutoRecovery::implts_doSessionQuietQuit(const DispatchParams& /*aParams*/)
 {
     LOG_RECOVERY("AutoRecovery::implts_doSessionQuietQuit()")
 
-    // try to make sure next time office will be started user wont be
+    // try to make sure next time office will be started user won't be
     // notified about any other might be running office instance
     // remove ".lock" file from disc !
     // it is done as a first action for session save since Gnome sessions

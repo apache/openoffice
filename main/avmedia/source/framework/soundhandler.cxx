@@ -390,12 +390,12 @@ void SAL_CALL SoundHandler::dispatch( const css::util::URL&                     
                 So call can search for another detect service and ask him too.
 
     @attention  a) We don't need any mutex here ... because we don't use any member!
-                b) Dont' use internal player instance "m_pPlayer" to detect given sound file!
+                b) Don't use internal player instance "m_pPlayer" to detect given sound file!
                    It's not necessary to do that ... and we can use temp. variable to do the same.
                    This way is easy - we don't must synchronize it with currently played sounds!
                    Another reason to do so ... We are a listener on our internal ma_Player object.
                    If you would call "IsSoundFile()" on this instance, he would call us back and
-                   we make some uneccssary things ...
+                   we make some unneccssary things ...
 
     @seealso    -
 
@@ -435,7 +435,7 @@ void SAL_CALL SoundHandler::dispatch( const css::util::URL&                     
 /*-************************************************************************************************************//**
     @short      call back of sound player
     @descr      Our player call us back to give us some informations.
-                We use this informations to callback our might existing listener.
+                We use these informations to callback our might existing listener.
 
     @seealso    method dispatchWithNotification()
 
