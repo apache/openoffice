@@ -46,7 +46,7 @@ module chart2
 
 service DataPointProperties
 {
-    /** to give acces to the properties required by this service.
+    /** to give access to the properties required by this service.
     */
     service ::com::sun::star::beans::PropertySet;
 

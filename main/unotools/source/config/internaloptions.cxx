@@ -199,8 +199,8 @@ class SvtInternalOptions_Impl : public ConfigItem
 
 		/*-****************************************************************************************************//**
 			@short		access method to get internal values
-			@descr		These method give us a chance to regulate acces to ouer internal values.
-						It's not used in the moment - but it's possible for the feature!
+			@descr		This method gives us a chance to regulate access to our internal values.
+						It's not used in the moment - but it's possible for the future!
 
 			@seealso	-
 

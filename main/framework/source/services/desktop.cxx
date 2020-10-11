@@ -205,7 +205,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
 
                                                 // Safe impossible cases
                                                 // We can't work without this helper!
-                                                LOG_ASSERT2( m_xFramesHelper.is  ()==sal_False, "Desktop::Desktop()", "Frames helper is not valid. XFrames, XIndexAccess and XElementAcces are not supported!\n")
+                                                LOG_ASSERT2( m_xFramesHelper.is  ()==sal_False, "Desktop::Desktop()", "Frames helper is not valid. XFrames, XIndexAccess and XElementAccess are not supported!\n")
                                                 LOG_ASSERT2( m_xDispatchHelper.is()==sal_False, "Desktop::Desktop()", "Dispatch helper is not valid. XDispatch will not work correctly!\n"                      )
 
                                                 // Enable object for real working!
