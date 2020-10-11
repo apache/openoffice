@@ -428,8 +428,8 @@ sal_uInt32  SfxFilterMatcher::GuessFilterControlDefaultUI( SfxMedium& rMedium, c
     ::rtl::OUString sTypeName;
     try
     {
-        // open the stream one times only ...
-        // Otherwhise it will be tried more then once and show the same interaction more then once ...
+        // open the stream one time only ...
+        // Otherwise it will be tried more than once and show the same interaction more than once ...
 
         ::rtl::OUString sURL( rMedium.GetURLObject().GetMainURL( INetURLObject::NO_DECODE ) );
         ::com::sun::star::uno::Reference< ::com::sun::star::io::XInputStream > xInStream = rMedium.GetInputStream();
@@ -1123,7 +1123,7 @@ void SfxFilterContainer::ReadFilters_Impl( sal_Bool bUpdate )
             {
                 // If list of filters already exist ...
                 // ReadExternalFilters must work in update mode.
-                // Best way seams to mark all filters NOT_INSTALLED
+                // Best way seems to mark all filters NOT_INSTALLED
                 // and change it back for all valid filters afterwards.
                 if( rList.Count() > 0 )
                 {
@@ -1150,7 +1150,7 @@ void SfxFilterContainer::ReadFilters_Impl( sal_Bool bUpdate )
                     // This debug code can be used to break on inserting/updating
                     // special debug filters at runtime.
                     // Otherwise you have to check more then 300 filter names manually .-)
-                    // And conditional breakpoints on unicode values seams not to be supported .-(
+                    // And conditional breakpoints on unicode values seems not to be supported .-(
                     #ifdef DEBUG
                     bool bDBGStop = sal_False;
                     if (sFilterName.indexOf(::rtl::OUString::createFromAscii("DBG_"))>-1)

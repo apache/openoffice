@@ -58,7 +58,7 @@ namespace framework{
 	@descr			If you use a lock or mutex as a member of your class and wish to use it earlier than other ones
 					you should have a look on this implementation. You must use it as the first base class
 					of your implementation - because base classes are initialized by his order and before your
-					member! Thats why it is a good place to declare your thread help member so.
+					member! That's why it is a good place to declare your thread help member so.
 *//*-*************************************************************************************************************/
 enum ELockType
 {

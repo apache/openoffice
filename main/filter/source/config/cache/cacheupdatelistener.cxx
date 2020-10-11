@@ -209,7 +209,7 @@ void SAL_CALL  CacheUpdateListener::changesOccurred(const css::util::ChangesEven
                 // sItem was removed from the condfiguration and we forced an update of the cache.
                 // But we know, that the cache is up-to-date know and has thrown this exception afterwards .-)
             }
-        // NO FLUSH! Otherwhise we start a never ending story here .-)
+        // NO FLUSH! Otherwise we start a never ending story here .-)
         bNotifyRefresh = sal_True;
     }
 

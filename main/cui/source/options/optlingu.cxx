@@ -1193,7 +1193,7 @@ SvxLinguTabPage::SvxLinguTabPage( Window* pParent,
         // was started with.
         // Also we have to take care to not loose the last reference when
         // someone else removes a dictionary from the list.
-        // removed dics will be replaced by NULL new entries be added to the end
+        // Removed dics will be replaced by NULL new entries be added to the end.
         // Thus we may use indizes as consistent references.
         aDics = xDicList->getDictionaries();
 

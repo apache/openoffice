@@ -43,7 +43,7 @@ published interface XContextMenuInterceptor : ::com::sun::star::uno::XInterface
 {
     /** notifies the interceptor about the request to execute a ContextMenu.
      The interceptor has to decide whether the menu should be executed with or without
-     beeing modified or may ignore the call.
+     being modified or may ignore the call.
     */
     ContextMenuInterceptorAction notifyContextMenuExecute([in]ContextMenuExecuteEvent aEvent);
 };

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@ import com.sun.star.lang.IllegalArgumentException;
 
   @attention    This class mustn't be threadsafe - because instances of it
                 are used temp. only - not as members. So no concurrent access
-                should occure.
-                Another reason: It wuold be very difficult to safe every
+                should occur.
+                Another reason: It would be very difficult to safe every
                 access on our internal member. To do so - we must implement
                 special methods instead of allowing pure member access.
  ************************************************************************-*/
@@ -151,7 +151,7 @@ public class FilterOptions
                         if (lFilterProps[p].Name.equals("LowerCase"))
                         {
                             m_bLower      = AnyConverter.toBoolean(lFilterProps[p].Value);
-                            m_bCaseChange = true; // Set it after m_bLower - because an exception can occure and we must use default values then!
+                            m_bCaseChange = true; // Set it after m_bLower - because an exception can occur and we must use default values then!
                         }
                     }
                 }
@@ -159,9 +159,9 @@ public class FilterOptions
             catch(com.sun.star.lang.IllegalArgumentException exConvert)
             {
                 // ONE argument has the wrong type
-                // But I think we mustn't react here - because we setted
+                // But I think we mustn't react here - because we set
                 // default values for every necessary item we need.
-                // In case this exception occures - this default exist
+                // In case this exception occurs - this default exist
                 // and we can live with it.
             }
         }
@@ -195,7 +195,7 @@ public class FilterOptions
      * Note: This method doesn't check for a valid URL. It must be done before.
      *
      * @param bImport
-     *          inidcates which stream member must be valid as result of this call
+     *          indicates which stream member must be valid as result of this call
      */
     private void impl_openStreams( boolean bImport )
     {

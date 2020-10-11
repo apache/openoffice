@@ -251,7 +251,7 @@ public class RecoveryTools {
             multi ++;
         }
 
-        // be shure that office is closed
+        // be sure that office is closed
         if (ph != null) ph.kill();
     }
     

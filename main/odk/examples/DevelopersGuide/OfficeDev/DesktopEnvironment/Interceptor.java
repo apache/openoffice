@@ -196,7 +196,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
      * call back for frame action events
      * We use it to update our interception. Because if a new component was loaded into
      * the frame or another interceptor was registered, we should refresh our connection
-     * to the frame. Otherwhise we can't guarantee full functionality here.
+     * to the frame. Otherwise we can't guarantee full functionality here.
      *
      * Note: Don't react synchronous in an asynchronous listener callback. So use a thread
      * here to update anything.
@@ -605,7 +605,7 @@ public class Interceptor implements com.sun.star.frame.XFrameActionListener,
 
     /**
      * If this java application shutdown - we must cancel all current existing
-     * listener connections. Otherwhise the office will run into some
+     * listener connections. Otherwise the office will run into some
      * DisposedExceptions if it tries to use these forgotten listener references.
      * And of course it can die doing that.
      * We are registered at a central object to be informed if the VM will exit.

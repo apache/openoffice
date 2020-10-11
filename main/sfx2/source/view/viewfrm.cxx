@@ -2624,7 +2624,7 @@ sal_Bool impl_maxOpenDocCountReached()
 
     // Any internal error is no reason to stop opening documents !
     // Limitation of opening documents is a special "nice to  have" feature.
-    // Otherwhise it can happen, that NO document will be opened ...
+    // Otherwise it can happen, that NO document will be opened ...
     return sal_False;
 }
 

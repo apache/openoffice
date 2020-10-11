@@ -229,7 +229,7 @@ class LoaderThreads : private ::std::vector< LoadBinding >
 /*-************************************************************************************************************//**
     @short          base class for dispatcher implementations
     @descr          Most of our dispatch implementations do every time the same. They try to handle or load
-                    somethinmg into a target ... normaly a frame/task/pluginframe!
+                    something into a target ... normally a frame/task/pluginframe!
                     They must do it synchron or sometimes asynchron. They must wait for callbacks and
                     notify registered listener with right status events.
                     All these things are implemented by this baseclass. You should override some methods
@@ -369,7 +369,7 @@ class BaseDispatcher    :   // interfaces
 
 	//-------------------------------------------------------------------------------------------------------------
 	//	variables
-    //  - should be private normaly ...
+    //  - should be private normally ...
     //  - but some super classes need access to some of them => protected!
 	//-------------------------------------------------------------------------------------------------------------
     protected:

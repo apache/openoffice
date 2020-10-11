@@ -462,7 +462,7 @@ namespace sdr { namespace contact {
     //====================================================================
     //= InvisibleControlViewAccess
     //====================================================================
-    /** is a ->IPageViewAccess implementation which can be used to create an invisble control for
+    /** is a ->IPageViewAccess implementation which can be used to create an invisible control for
         an arbitrary window
      */
     class InvisibleControlViewAccess : public IPageViewAccess

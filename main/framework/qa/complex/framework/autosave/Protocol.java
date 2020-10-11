@@ -524,8 +524,8 @@ public class Protocol extends JComponent
     /**
      * log an unspecified message.
      *
-     * Sometimes it's not necessary to set a special type for an message.
-     * The pure message seams to be enough. The type of such "pure messages"
+     * Sometimes it's not necessary to set a special type for a message.
+     * The pure message seems to be enough. The type of such "pure messages"
      * will be set to INFO.
      *
      * @param   sMessage

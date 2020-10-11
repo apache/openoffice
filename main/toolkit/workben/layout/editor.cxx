@@ -680,7 +680,7 @@ bool moveWidget( Widget *pWidget, bool up /*or down*/ )
         }
         else
         {
-// TODO: this is a nice feature, but we probably want to do it explicitely...
+// TODO: this is a nice feature, but we probably want to do it explicitly...
 #if 0
             if ( pWidget->down() && pWidget->swapWithChild( pWidget->down() ) )
                 return true;

@@ -502,8 +502,8 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 
         /*-****************************************************************************************************//**
 			@short		write changed values to configuration
-			@descr		Normaly the dialog returns with an OK or ERROR value. If OK occur - we flush data
-						auomaticly. But otherwise we do nothing. If user of this service wish to use property set
+			@descr		Normally the dialog returns with an OK or ERROR value. If OK occur - we flush data
+						automaticly. But otherwise we do nothing. If user of this service wish to use property set
 						only without any UI(!) - he must call "flush()" explicitly to write data!
 
 			@seealso	-
@@ -804,7 +804,7 @@ class LoginDialog	:	public XTYPEPROVIDER				,
 		/*-****************************************************************************************************//**
 			@short		helper methods to read/write  properties from/to ini file
 			@descr		Using of Config-Class isn't easy every time :-(
-						Thats the reason for these helper. State of operation isn't really important ..
+						That's the reason for these helper. State of operation isn't really important...
 						but we assert impossible cases or occurred errors!
 
 			@seealso	-
