@@ -798,7 +798,7 @@ sal_Bool SdrView::DoMouseEvent(const SdrViewEvent& rVEvt)
 		if (bMouseLeft) aDragStat.SetMouseDown(sal_True);
 	} else if (bMouseUp) {
 		if (bMouseLeft) aDragStat.SetMouseDown(sal_False);
-	} else { // ansonsten MoueMove
+	} else { // else MouseMove
 		aDragStat.SetMouseDown(bMouseLeft);
 	}
 

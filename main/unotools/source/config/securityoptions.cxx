@@ -209,7 +209,7 @@ class SvtSecurityOptions_Impl : public ConfigItem
 private:
 
 		/*-****************************************************************************************************//**
-			@short		return list of key names of ouer configuration management which represent our module tree
+			@short		return list of key names of our configuration management which represents our module tree
 			@descr		These methods return a static const list of key names. We need it to get needed values from our
 						configuration management.
 
@@ -1061,9 +1061,9 @@ SvtSecurityOptions::SvtSecurityOptions()
 {
     // Global access, must be guarded (multithreading!).
     MutexGuard aGuard( GetInitMutex() );
-	// Increase ouer refcount ...
+	// Increase our refcount ...
 	++m_nRefCount;
-	// ... and initialize ouer data container only if it not already exist!
+	// ... and initialize our data container only if it not already exist!
     if( m_pDataContainer == NULL )
 	{
         RTL_LOGFILE_CONTEXT(aLog, "unotools ( ??? ) ::SvtSecurityOptions_Impl::ctor()");
@@ -1077,10 +1077,10 @@ SvtSecurityOptions::~SvtSecurityOptions()
 {
     // Global access, must be guarded (multithreading!)
     MutexGuard aGuard( GetInitMutex() );
-	// Decrease ouer refcount.
+	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
-	// we must destroy ouer static data container!
+	// we must destroy our static data container!
     if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
@@ -1177,7 +1177,7 @@ Mutex& SvtSecurityOptions::GetInitMutex()
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         MutexGuard aGuard( Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be faster then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

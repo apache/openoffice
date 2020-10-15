@@ -195,7 +195,7 @@ void FrameWork::impl_analyzeCommandArguments()
 void FrameWork::Main()
 {
 	//-------------------------------------------------------------------------------------------------------------
-	// a) Initialize ouer application
+	// a) Initialize our application
 
 	// Analyze command arguments.
 	impl_analyzeCommandArguments();
@@ -210,7 +210,7 @@ void FrameWork::Main()
 		setProcessServiceFactory( xGlobalServiceManager );
 
 		//---------------------------------------------------------------------------------------------------------
-		// b) Create root of ouer frame tree
+		// b) Create root of our frame tree
 
 		// Create top of frame hierarchy - the desktop.
 		Reference< XDesktop > xDesktop( xGlobalServiceManager->createInstance( SERVICENAME_DESKTOP ), UNO_QUERY );

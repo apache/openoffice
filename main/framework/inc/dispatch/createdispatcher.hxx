@@ -63,7 +63,7 @@ namespace framework{
                     Then we wait for our own dispose and do nothing.
 
     @attention      Use this class as member only! Never use it as baseclass.
-					XInterface will be ambigous and we hold a weakreference to ouer OWNER - not to ouer SUPERCLASS!
+					XInterface will be ambiguous and we hold a weakreference to our OWNER - not to our SUPERCLASS!
 
 	@implements		XInterface
 					XDispatch
