@@ -114,7 +114,7 @@ css::uno::Sequence< sal_Int8 > SAL_CALL SoundHandler::getImplementationId() thro
     {
         /* Ready for multithreading; get global mutex for first call of this method only! see before */
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-        /* Control these pointer again ... it can be, that another instance will be faster then these! */
+        /* Control these pointer again ... it can be, that another instance will be faster than these! */
         if ( pID == NULL )
         {
             /* Create a new static ID ... */
@@ -138,7 +138,7 @@ css::uno::Sequence< css::uno::Type > SAL_CALL SoundHandler::getTypes() throw( cs
     {
         /* Ready for multithreading; get global mutex for first call of this method only! see before */
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-        /* Control these pointer again ... it can be, that another instance will be faster then these! */
+        /* Control these pointer again ... it can be, that another instance will be faster than these! */
         if ( pTypeCollection == NULL )
         {
             /* Create a static typecollection ... */

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "precompiled_sfx2.hxx"
 
@@ -62,7 +64,7 @@ void DeckLayouter::LayoutDeck (
     if (aContentArea.GetWidth()<=0 || aContentArea.GetHeight()<=0)
         return;
     Rectangle aBox (PlaceDeckTitle(rDeckTitleBar, aContentArea));
-    
+
     if ( ! rPanels.empty())
     {
         // Prepare the layout item container.
@@ -101,7 +103,7 @@ Rectangle DeckLayouter::LayoutPanels (
     // const sal_Int32 nPanelTitleBarHeight (Theme::GetInteger(Theme::Int_PanelTitleBarHeight));
 
     // Prepare the separators, horizontal lines above and below the
-    // panel titels.
+    // panel titles.
     // const sal_Int32 nDeckSeparatorHeight (Theme::GetInteger(Theme::Int_DeckSeparatorHeight));
 
     // Get the requested heights of the panels and the available
@@ -121,7 +123,7 @@ Rectangle DeckLayouter::LayoutPanels (
         nTotalMinimumHeight += iItem->maLayoutSize.Minimum;
         nTotalPreferredHeight += iItem->maLayoutSize.Preferred;
     }
-    
+
     if (nTotalMinimumHeight > nAvailableHeight
         && ! bShowVerticalScrollBar)
     {
@@ -136,13 +138,13 @@ Rectangle DeckLayouter::LayoutPanels (
             rVerticalScrollBar,
             true);
     }
-    
+
     // We are now in one of three modes.
     // - The preferred height fits into the available size:
-    //   Use the preferred size, distribute the remaining height bei
+    //   Use the preferred size, distribute the remaining height by
     //   enlarging panels.
     // - The total minimum height fits into the available size:
-    //   Use the minimum size, distribute the remaining height bei
+    //   Use the minimum size, distribute the remaining height by
     //   enlarging panels.
     // - The total minimum height does not fit into the available
     //   size:
@@ -159,7 +161,7 @@ Rectangle DeckLayouter::LayoutPanels (
     if (eMode != Preferred)
     {
         const sal_Int32 nTotalHeight (eMode==MinimumOrLarger ? nTotalMinimumHeight : nTotalPreferredHeight);
-            
+
         DistributeHeights(
             rLayoutItems,
             nAvailableHeight-nTotalHeight,
@@ -168,7 +170,7 @@ Rectangle DeckLayouter::LayoutPanels (
     }
 
     // Set position and size of the mpScrollClipWindow to the available
-    // size.  Its child, the mpScrollContainer, may have a bigger
+    // size. Its child, the mpScrollContainer, may have a bigger
     // height.
     rScrollClipWindow.SetPosSizePixel(aBox.Left(), aBox.Top(), aBox.GetWidth(), aBox.GetHeight());
 
@@ -220,7 +222,7 @@ sal_Int32 DeckLayouter::PlacePanels (
         // Separator above the panel title bar.
         aSeparators.push_back(nY);
         nY += nDeckSeparatorHeight;
-        
+
         // Place the title bar.
         PanelTitleBar* pTitleBar = rPanel.GetTitleBar();
         if (pTitleBar != NULL)
@@ -240,7 +242,7 @@ sal_Int32 DeckLayouter::PlacePanels (
         if (rPanel.IsExpanded())
         {
             rPanel.Show();
-            
+
             // Determine the height of the panel depending on layout
             // mode and distributed heights.
             sal_Int32 nPanelHeight (0);
@@ -263,7 +265,7 @@ sal_Int32 DeckLayouter::PlacePanels (
             // Place the panel.
             rPanel.SetPosSizePixel(0, nY, nWidth, nPanelHeight);
             rPanel.Invalidate();
-            
+
             nY += nPanelHeight;
         }
         else
@@ -322,7 +324,7 @@ void DeckLayouter::GetRequestedSizes (
                 rAvailableHeight -= nPanelTitleBarHeight;
                 rAvailableHeight -= nDeckSeparatorHeight;
             }
-            
+
             if (iItem->mpPanel->IsExpanded())
             {
                 Reference<ui::XSidebarPanel> xPanel (iItem->mpPanel->GetPanelComponent());
@@ -360,7 +362,7 @@ void DeckLayouter::DistributeHeights (
             continue;
         if (iItem->maLayoutSize.Maximum < 0)
             ++nNoMaximumCount;
-        
+
         const sal_Int32 nBaseHeight (
             bMinimumHeightIsBase
                 ? iItem->maLayoutSize.Minimum
@@ -371,7 +373,7 @@ void DeckLayouter::DistributeHeights (
             nTotalWeight += iItem->mnWeight;
         }
     }
-	
+
 	if (nTotalWeight == 0)
 		return;
 
