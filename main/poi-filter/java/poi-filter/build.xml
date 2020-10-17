@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
@@ -19,13 +20,24 @@
  * 
  ***********************************************************-->
 
-<node oor:name="MS Excel 2007 XML" oor:op="replace" >
-	<prop oor:name="DetectService"><value>com.sun.star.comp.oox.FormatDetector</value></prop>
-	<prop oor:name="URLPattern"/>
-	<prop oor:name="Extensions"><value>xlsx xlsm</value></prop>
-	<prop oor:name="MediaType"/>
-	<prop oor:name="Preferred"><value>false</value></prop>
-	<prop oor:name="PreferredFilter"><value>Calc MS Excel 2007 XML</value></prop>
-	<prop oor:name="UIName"><value xml:lang="x-default">Microsoft Excel 2007 XML</value></prop>
-	<prop oor:name="ClipboardFormat"/>
-</node>
+
+  
+<project name="poi-filter" default="main" basedir=".">
+
+    <property file="../../../ant.properties"/>
+    <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
+
+    <target name="init-project">
+        <property name="jar.manifest" value="MANIFEST.MF"/>
+
+        <path id="main.classpath">
+            <pathelement location="${OUTDIR}/bin/unoil.jar"/>
+            <pathelement location="${OUTDIR}/bin/jurt.jar"/>
+            <pathelement location="${OUTDIR}/bin/ridl.jar"/>
+            <pathelement location="${OUTDIR}/bin/juh.jar"/>
+            <pathelement location="${OUTDIR}/bin/java_uno.jar"/>
+        </path>
+    </target>
+
+</project>
+

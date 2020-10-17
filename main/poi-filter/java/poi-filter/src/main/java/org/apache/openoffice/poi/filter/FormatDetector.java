@@ -1,4 +1,4 @@
-<!--***********************************************************
+/**************************************************************
  * 
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -17,15 +17,23 @@
  * specific language governing permissions and limitations
  * under the License.
  * 
- ***********************************************************-->
+ *************************************************************/
 
-<node oor:name="MS Excel 2007 XML" oor:op="replace" >
-	<prop oor:name="DetectService"><value>com.sun.star.comp.oox.FormatDetector</value></prop>
-	<prop oor:name="URLPattern"/>
-	<prop oor:name="Extensions"><value>xlsx xlsm</value></prop>
-	<prop oor:name="MediaType"/>
-	<prop oor:name="Preferred"><value>false</value></prop>
-	<prop oor:name="PreferredFilter"><value>Calc MS Excel 2007 XML</value></prop>
-	<prop oor:name="UIName"><value xml:lang="x-default">Microsoft Excel 2007 XML</value></prop>
-	<prop oor:name="ClipboardFormat"/>
-</node>
+package org.apache.openoffice.poi.filter;
+
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.document.XExtendedFilterDetection;
+import com.sun.star.lib.uno.helper.ComponentBase;
+
+public class FormatDetector extends ComponentBase implements XExtendedFilterDetection {
+    public static final String __serviceName = "com.sun.star.frame.ExtendedTypeDetection";
+    
+    @Override
+    public String detect(final PropertyValue[][] descriptor) {
+        final MediaDescriptor mediaDescriptor = new MediaDescriptor(descriptor[0]);
+        if (mediaDescriptor.getUnpackedValueOrDefault(MediaDescriptor.Aborted, false)) {
+            return "";
+        }
+        return "";
+    }
+}

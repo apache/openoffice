@@ -286,6 +286,7 @@ my_components += \
     hsqldb \
     jdbc \
     postgresql \
+    component/poi-filter/java/poi-filter/poi-filter \
     component/wizards/com/sun/star/wizards/letter/letter \
     component/wizards/com/sun/star/wizards/query/query \
     component/wizards/com/sun/star/wizards/report/report \

@@ -381,6 +381,10 @@ End
 STD_JAR_FILE( gid_File_Jar_Bsh, bsh )
 #endif
 
+#if defined SOLAR_JAVA
+STD_JAR_FILE( gid_File_Jar_poi_filter, poi-filter )
+#endif
+
 #if defined SOLAR_JAVA && ! defined SYSTEM_LUCENE
 STD_JAR_FILE( gid_File_Jar_Lucene_Core, lucene-core-2.9.4-dev )
 STD_JAR_FILE( gid_File_Jar_Lucene_Analyzers, lucene-analyzers-2.9.4-dev )

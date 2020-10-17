@@ -19,13 +19,8 @@
  * 
  ***********************************************************-->
 
-<node oor:name="MS Excel 2007 XML" oor:op="replace" >
-	<prop oor:name="DetectService"><value>com.sun.star.comp.oox.FormatDetector</value></prop>
-	<prop oor:name="URLPattern"/>
-	<prop oor:name="Extensions"><value>xlsx xlsm</value></prop>
-	<prop oor:name="MediaType"/>
-	<prop oor:name="Preferred"><value>false</value></prop>
-	<prop oor:name="PreferredFilter"><value>Calc MS Excel 2007 XML</value></prop>
-	<prop oor:name="UIName"><value xml:lang="x-default">Microsoft Excel 2007 XML</value></prop>
-	<prop oor:name="ClipboardFormat"/>
+<node oor:name="Calc export MS Excel 2007 poi XML">
+	<prop oor:name="UIName">
+		<value xml:lang="en-US">Microsoft Excel 2007 XML</value>
+	</prop>
 </node>
