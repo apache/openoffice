@@ -114,7 +114,7 @@ MenuDispatcher::MenuDispatcher(   const   uno::Reference< XMultiServiceFactory >
         ,   m_pMenuManager          ( NULL                           )
 {
 	// Safe impossible cases
-	// We need valid informations about ouer ownerfor work.
+	// We need valid informations about our owner for work.
     LOG_ASSERT( impldbg_checkParameter_MenuDispatcher( xFactory, xOwner ), "MenuDispatcher::MenuDispatcher()\nInvalid parameter detected!\n" )
 
 	m_bActivateListener = sal_True;

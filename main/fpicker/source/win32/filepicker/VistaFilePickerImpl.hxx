@@ -110,8 +110,8 @@ static const ::rtl::OUString PROP_CONTROL_ENABLE      = ::rtl::OUString::createF
 static const ::rtl::OUString STRING_SEPARATOR         = ::rtl::OUString::createFromAscii("------------------------------------------" );
 
 //-----------------------------------------------------------------------------
-/** native implementation of the file picker on Vista and upcoming windows versions.
- *  This dialog uses COM internaly. Further it marshall every request so it will
+/** native implementation of the file picker on Vista and upcoming Windows versions.
+ *  This dialog uses COM internally. Further it marshall every request so it will
  *  be executed within it's own STA thread !
  */
 //-----------------------------------------------------------------------------
@@ -280,11 +280,11 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
 		void impl_sta_enableFeatures(::sal_Int32 nFeatures, ::sal_Int32 nTemplate);
     
         //---------------------------------------------------------------------
-        /** returns an interface, which can be used to customize the internaly used
+        /** returns an interface, which can be used to customize the internally used
          *  COM dialog.
          *
-         *  Because we use two member (open/save dialog) internaly, this method
-         *  ask the current active one for it's customization interface.
+         *  Because we use two members (open/save dialog) internally, this method
+         *  asks the current active one for its customization interface.
          *
          *  @return the customization interface for the current used dialog.
          *          Must not be null.
@@ -318,8 +318,8 @@ class VistaFilePickerImpl : private ::cppu::BaseMutex
    
         //---------------------------------------------------------------------
         /** cache last selected list of files
-         *  Because those list must be retrieved directly after closing the dialog
-         *  (and only in case it was finished successfully) we cache it internaly.
+         *  Because those lists must be retrieved directly after closing the dialog
+         *  (and only in case it was finished successfully) we cache it internally.
          *  Because the outside provided UNO API decouple showing the dialog
          *  and asking for results .-)
          */

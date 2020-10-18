@@ -576,7 +576,7 @@ public:
 //UNUSED2008-05  /** Sets the parent XF ID. Only allowed for cell XFs. */
 //UNUSED2008-05  void                SetParent( sal_uInt32 nParentXFId );
 //UNUSED2008-05
-//UNUSED2008-05  /** Sets all "attribute used" flags explicitely.
+//UNUSED2008-05  /** Sets all "attribute used" flags explicitly.
 //UNUSED2008-05      @descr  The following Set***() functions set the appropriate flag too. */
 //UNUSED2008-05  void                SetUsedFlags(
 //UNUSED2008-05                          bool bProtUsed, bool bFontUsed, bool bFmtUsed,

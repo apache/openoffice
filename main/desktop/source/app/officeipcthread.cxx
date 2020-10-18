@@ -354,7 +354,7 @@ throw( RuntimeException )
 
 ::osl::Mutex&	OfficeIPCThread::GetMutex()
 {
-	// Get or create our mutex for thread-saftey
+	// Get or create our mutex for thread-safety
 	if ( !pOfficeIPCThreadMutex )
 	{
 		::osl::MutexGuard aGuard( osl::Mutex::getGlobalMutex() );
@@ -676,13 +676,13 @@ void SAL_CALL OfficeIPCThread::run()
             // if we receive a request while the office is displaying some dialog or error during
             // bootstrap, that dialogs event loop might get events that are dispatched by this thread
             // we have to wait for cReady to be set by the real main loop.
-            // only reqests that don't dispatch events may be processed before cReady is set.
+            // only requests that don't dispatch events may be processed before cReady is set.
             cReady.wait();
 
             // we might have decided to shutdown while we were sleeping
             if (!pGlobalOfficeIPCThread) return;
 
-            // only lock the mutex when processing starts, othewise we deadlock when the office goes
+            // only lock the mutex when processing starts, otherwise we deadlock when the office goes
             // down during wait
             osl::ClearableMutexGuard aGuard( GetMutex() );
 

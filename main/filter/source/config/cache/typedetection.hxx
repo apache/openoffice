@@ -129,21 +129,21 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 
             @descr      It steps over all flat detected types (given by the parameter lFlatTypes),
                         try it and search for most suitable one.
-                        The specified MediaDescriptor will be patched, so it contain
+                        The specified MediaDescriptor will be patched, so it contains
                         the right values every time. Using of any deep detection service
                         can be enabled/disabled. And last but not least: If the results
-                        wont be really clear (because a flat detected type has no deep
-                        detection service), a "sugested" type name will be returned as "rLastChance".
+                        won't be really clear (because a flat detected type has no deep
+                        detection service), a "suggested" type name will be returned as "rLastChance".
                         It can be used after e.g. all well known deep detection services
                         was used without getting any result. Then this "last-chance-type"
-                        should be returned. Of course using of it can fail too ... but its a try :-)
+                        should be returned. Of course using of it can fail too ... but it's a try :-)
 
                         As an optimization - this method collects the names of all used deep
                         detection services. This information can be useful inside the may be
                         afterwards called method "impl_detectTypeDeepOnly()"!
 
             @param      rDescriptor
-                        provides any easy-to-use stl interface to the MediaDescriptor.
+                        provides an easy-to-use stl interface to the MediaDescriptor.
                         Note : Its content will be adapted to returned result of this method.
                         Means: The type/filter entries of it will be actualized or removed from it.
 
@@ -153,7 +153,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
 
             @param      rLastChance
                         the internal name of a "suggested type" ... (see before)
-                        Note: it will be reseted to an empty string everytimes. So
+                        Note: it will be reseted to an empty string every time. So
                         a set value of "rLastChance" can be detected outside very easy.
 
             @param      rUsedDetectors
@@ -208,7 +208,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         
             @descr      This is an optional action to be more robust
                         in case any detect service doesn't make this seek ...
-                        Normaly it's part of any called detect service or filter ...
+                        Normally it's part of any called detect service or filter ...
                         but sometimes it's not done there.
 
             @param      rDescriptor
@@ -358,7 +358,7 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
         /** @short      search the best suitable filter for the given type
                         and add it into the media descriptor.
 
-            @descr      Normaly this is a type detection only ...
+            @descr      Normally this is a type detection only ...
                         but for some special features we must overwrite our detection
                         because a file must be loaded into a special (means preselected)
                         application.
@@ -440,9 +440,9 @@ class TypeDetection : public ::cppu::ImplInheritanceHelper1< BaseContainer      
                     a new instance of this service if needed.
 
             @param  xSMGR
-                    reference to the uno service manager, which require
+                    reference to the uno service manager, which requires
                     this new instance. It should be passed to the new object
-                    so it can be used internaly to create own needed uno resources.
+                    so it can be used internally to create own needed uno resources.
 
             @return The new instance of this service as an uno reference.
          */

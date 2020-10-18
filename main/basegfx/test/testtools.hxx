@@ -52,7 +52,7 @@ namespace basegfx
 
             /** Delete the plotter
 
-				This implicitely flushes all potential pending writes
+				This implicitly flushes all potential pending writes
 				to the output stream
              */
             ~Plotter();

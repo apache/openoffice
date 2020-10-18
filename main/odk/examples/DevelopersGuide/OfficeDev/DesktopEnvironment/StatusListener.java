@@ -37,7 +37,7 @@ import java.util.Vector;
  * reacts for status events we listen for
  * We listen for status events to update our UI.
  * To know which event must be used for which UI control
- * we use a special class to do that. Otherwhise we have
+ * we use a special class to do that. Otherwise we have
  * to guess it ...
  *
  * Further we are frame action listener too.
@@ -45,9 +45,9 @@ import java.util.Vector;
  * internal holded dispatch object automatically.
  *
  * Another reason for such extra class for listening:
- * Most listener callbacks are asynchronoues [oneay] requests.
+ * Most listener callbacks are asynchronous [oneway] requests.
  * And it's not allowed to call back synchronously there.
- * So we must start threads for updating something internaly.
+ * So we must start threads for updating something internally.
  *
  * @author     Andreas Schl&uuml;ns
  * @created    15.07.2002 12:36
@@ -259,7 +259,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
                 {
                     JCheckBox aBox = (JCheckBox)m_rControl;
 
-                    // State must be a boolean value too. Otherwhise must
+                    // State must be a boolean value too. Otherwise must
                     // ignore this event.
                     if ( ! (aEvent.State instanceof Boolean ) )
                         return;
@@ -390,7 +390,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
      *
      * @param aEvent
      *          describes the source which fire this event
-     *          Must be our internal saved dispatch or frame. Otherwhise
+     *          Must be our internal saved dispatch or frame. Otherwise
      *          somewhere know us without a registration ...
      */
     public /*ONEWAY*/ void disposing(/*IN*/ com.sun.star.lang.EventObject aEvent)
@@ -419,7 +419,7 @@ class StatusListener implements com.sun.star.frame.XStatusListener,
 
     /**
      * If this java application shutdown - we must cancel all current existing
-     * listener connections. Otherwhise the office will run into some
+     * listener connections. Otherwise the office will run into some
      * DisposedExceptions if it tries to use these forgotten listener references.
      * And of course it can die doing that.
      * We are registered at a central object to be informed if the VM will exit.

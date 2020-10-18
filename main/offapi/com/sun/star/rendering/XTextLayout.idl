@@ -166,7 +166,7 @@ published interface XTextLayout : ::com::sun::star::uno::XInterface
         logical character in the input string (<em>not</em> for every
         glyph. There might be multiple glyphs per input character, or
         multiple input characters per glyph). This is useful to
-        explicitely manipulate the exact output positions of
+        explicitly manipulate the exact output positions of
         characters, e.g. relative to a reference output device.<p>
 
         @param aAdvancements

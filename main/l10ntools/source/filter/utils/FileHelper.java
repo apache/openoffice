@@ -346,7 +346,7 @@ public class FileHelper
      *          e.g.: "dat"
      *
      *  @return A valid file object, if an unique file could be created -
-     *          Null otherwhise.
+     *          Null otherwise.
      *          e.g.: "c:\temp\myfile_1.dat"
      */
     public static java.io.File createUniqueFile(java.io.File     aBaseDir  ,
@@ -386,7 +386,7 @@ public class FileHelper
      *          used to return the file content.
      *
      *  @throw  [IOException]
-     *          - if the file couldnt be opened
+     *          - if the file couldn't be opened
      *          - if the file does not use the right encoding
      */
     public static void readEncodedBufferFromFile(java.io.File           aFile    ,

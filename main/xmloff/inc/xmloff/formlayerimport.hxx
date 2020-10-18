@@ -91,7 +91,7 @@ namespace xmloff
 
 		/** lookup a control given by id.
 
-			<p>The control must be part of the page which is currently beeing imported, or you must have used
+			<p>The control must be part of the page which is currently being imported, or you must have used
 			seekPage for the page which the control belongs to.</p>
 
 			<p>(And, of course, the control must have been imported already at the moment you call this.)</p>
@@ -123,7 +123,7 @@ namespace xmloff
 			<method>startPage</method> for a new page.</p>
 
 			<p>You should not call seekPage while importing a page (i.e. between startPage and endPage). This will
-			smash this other page beeing imported (seeking back to it will not help you :).</p>
+			smash this other page being imported (seeking back to it will not help you :).</p>
 
 			@see lookupControl
 		*/

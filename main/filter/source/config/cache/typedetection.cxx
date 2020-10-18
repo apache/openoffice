@@ -251,7 +251,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
             #ifdef WORKAROUND_CSV_TXT_BUG_i60158
             // Workaround for #i60158#
             // We do not have right filter for Text_Ascii in calc nor a suitable filter for CSV in writer.
-            // So we must overrule our detection and make the right things. Normaly we should have
+            // So we must overrule our detection and make the right things. Normally we should have
             // one type TextAscii and two filters registered for these one type.
             // But then we loose automatic opening of CSV files in calc instead of opening these files
             // inside writer.
@@ -278,7 +278,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
             // SAFE ->
             ::osl::ResettableMutexGuard aLock(m_aLock);
 
-            // Attention: For executing next lines of code, We must be shure that
+            // Attention: For executing next lines of code, We must be sure that
             // all filters already loaded :-(
             // That can disturb our "load on demand feature". But we have no other chance!
             m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -359,7 +359,7 @@ void TypeDetection::impl_checkResultsAndAddBestFilter(::comphelper::MediaDescrip
         // SAFE ->
         ::osl::ResettableMutexGuard aLock(m_aLock);
 
-        // Attention: For executing next lines of code, We must be shure that
+        // Attention: For executing next lines of code, We must be sure that
         // all filters already loaded :-(
         // That can disturb our "load on demand feature". But we have no other chance!
         m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -422,7 +422,7 @@ sal_Bool TypeDetection::impl_getPreselectionForType(const ::rtl::OUString& sPreS
     sal_Bool bBreakDetection = sal_False;
 
     // Further we must know if it matches by pattern
-    // Every flat detected type by pattern wont be detected deep!
+    // Every flat detected type by pattern won't be detected deep!
     sal_Bool bMatchByPattern = sal_False;
 
     // And we must know if a preselection must be preferred, because
@@ -616,7 +616,7 @@ sal_Bool TypeDetection::impl_getPreselectionForDocumentService(const ::rtl::OUSt
         // SAFE -> --------------------------
         ::osl::ResettableMutexGuard aLock(m_aLock);
 
-        // Attention: For executing next lines of code, We must be shure that
+        // Attention: For executing next lines of code, We must be sure that
         // all filters already loaded :-(
         // That can disturb our "load on demand feature". But we have no other chance!
         m_rCache->load(FilterCache::E_CONTAINS_FILTERS);
@@ -687,7 +687,7 @@ void TypeDetection::impl_getPreselection(const css::util::URL&                aP
                                                ::comphelper::MediaDescriptor& rDescriptor,
                                                FlatDetection&                 rFlatTypes )
 {
-    // done to be shure, that only valid results leave this function!
+    // done to be sure, that only valid results leave this function!
     rFlatTypes.clear();
 
     /* #i55122#
@@ -698,7 +698,7 @@ void TypeDetection::impl_getPreselection(const css::util::URL&                aP
         So we have a combination of preselected values ...
 
         The we should preferr the most important one - set by the user.
-        And the user normaly preselects a filter or type. The preslected
+        And the user normally preselects a filter or type. The preselected
         document service cames from the dialog.
 
         Further it doesn't matter if the user preselected a filter or a document service.
@@ -1086,7 +1086,7 @@ void TypeDetection::impl_seekStreamToZero(comphelper::MediaDescriptor& rDescript
 
     // Dont distrub the user for "non existing files - means empty URLs" or
     // if we was forced to detect a stream.
-    // Reason behind: We must be shure to ask user for "unknown contents" only ...
+    // Reason behind: We must be sure to ask user for "unknown contents" only ...
     // and not for "missing files". Especially if detection is done by a stream only
     // we can't check if the stream points to an "existing content"!
     if (
@@ -1108,8 +1108,8 @@ void TypeDetection::impl_seekStreamToZero(comphelper::MediaDescriptor& rDescript
         
         // "OK" pressed => verify the selected filter, get it's coressponding
         // type and return it. (BTW: We must update the media descriptor here ...)
-        // The user selected explicitly a filter ... but normaly we are interested on
-        // a type here only. But we must be shure, that the selected filter is used
+        // The user selected explicitly a filter ... but normally we are interested on
+        // a type here only. But we must be sure, that the selected filter is used
         // too and no ambigous filter registration disturb us .-)
         
         ::rtl::OUString sFilter = aRequest.getFilter();

@@ -382,7 +382,7 @@ SvtOptionsDrawinglayer_Impl::SvtOptionsDrawinglayer_Impl() :
 
 	DBG_ASSERT( !(seqNames.getLength()!=seqValues.getLength()), "SvtOptionsDrawinglayer_Impl::SvtOptionsDrawinglayer_Impl()\nI miss some values of configuration keys!\n" );
 
-	// Copy values from list in right order to ouer internal member.
+	// Copy values from list in right order to our internal member.
 	sal_Int32 nPropertyCount = seqValues.getLength();
 	sal_Int32 nProperty	= 0;
 
@@ -1245,9 +1245,9 @@ SvtOptionsDrawinglayer::SvtOptionsDrawinglayer()
 {
     // Global access, must be guarded (multithreading!).
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Increase ouer refcount ...
+	// Increase our refcount ...
 	++m_nRefCount;
-	// ... and initialize ouer data container only if it not already!
+	// ... and initialize our data container only if it not already!
     if( m_pDataContainer == NULL )
 	{
         m_pDataContainer = new SvtOptionsDrawinglayer_Impl();
@@ -1261,10 +1261,10 @@ SvtOptionsDrawinglayer::~SvtOptionsDrawinglayer()
 {
     // Global access, must be guarded (multithreading!)
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Decrease ouer refcount.
+	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
-	// we must destroy ouer static data container!
+	// we must destroy our static data container!
     if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
@@ -1714,7 +1714,7 @@ Mutex& SvtOptionsDrawinglayer::GetOwnStaticMutex()
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         MutexGuard aGuard( Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

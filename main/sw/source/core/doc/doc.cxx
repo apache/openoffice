@@ -315,7 +315,7 @@ void SwDoc::set(/*[in]*/ DocumentSettingId id, /*[in]*/ bool value)
 
         // COMPATIBILITY FLAGS END
 
-        case BROWSE_MODE: //can be used temporary (load/save) when no ViewShell is avaiable
+        case BROWSE_MODE: //can be used temporary (load/save) when no ViewShell is available
             mbLastBrowseMode = value;
             break;
         case HTML_MODE:
@@ -1596,7 +1596,7 @@ void SwDoc::CalculatePagePairsForProspectPrinting(
     sal_Int32 i = 0;
     for ( i = 1; pStPage && i < nDocPageCount; ++i )
         pStPage = (SwPageFrm*)pStPage->GetNext();
-    if ( !pStPage )          // thats it then
+    if ( !pStPage )          // that's it then
         return;
 
     // currently for prospect printing all pages are valid to be printed 

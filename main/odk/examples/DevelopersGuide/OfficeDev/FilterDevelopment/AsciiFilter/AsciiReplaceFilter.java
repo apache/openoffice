@@ -216,8 +216,8 @@ public class AsciiReplaceFilter
         /**
         * For external user of us we must provide our internal filter name
         * (which is registered inside configuration package TypeDetection).
-        * User will be able then to ask there for furthe information about us.
-        * Otherwhise we must implement a full featured XPropertySet ...
+        * User will be able then to ask there for further information about us.
+        * Otherwise we must implement a full featured XPropertySet ...
         *
         * @return our internal filter name of configuration
         */
@@ -249,7 +249,7 @@ public class AsciiReplaceFilter
         *          the document model for importing
         *
         * @throw IllegalArgumentException
-        *          if given document isn't the right one or seams to be corrupt
+        *          if given document isn't the right one or seems to be corrupt
         */
         public void setTargetDocument( com.sun.star.lang.XComponent xDocument ) throws com.sun.star.lang.IllegalArgumentException
         {
@@ -285,7 +285,7 @@ public class AsciiReplaceFilter
         *          the document model for exporting
         *
         * @throw IllegalArgumentException
-        *          if given document isn't the right one or seams to be corrupt
+        *          if given document isn't the right one or seems to be corrupt
         */
         public void setSourceDocument( com.sun.star.lang.XComponent xDocument ) throws com.sun.star.lang.IllegalArgumentException
         {
@@ -561,8 +561,8 @@ public class AsciiReplaceFilter
     
                 measure("get text from model");
     
-                // Normaly this function isn't really cancelable
-                // But we following operation can be very expensive. So
+                // Normally this function isn't really cancelable
+                // But the following operation can be very expensive. So
                 // this place is the last one to stop it.
                 synchronized(this)
                 {
@@ -651,7 +651,7 @@ public class AsciiReplaceFilter
          *  the requested service name
          *
          * @return True, if the given service name will be supported;
-         *         False otherwhise.
+         *         False otherwise.
          */
         public boolean supportsService( String sService )
         {

@@ -1867,7 +1867,7 @@ CustomAnimationEffectPtr EffectSequenceHelper::append( const CustomAnimationPres
 				aTarget >>= xShape;
 				if( xShape.is() )
 				{
-					// thats bad, we target a shape here but the effect is only for text
+					// that's bad, we target a shape here but the effect is only for text
 					// so change subitem
 					nSubItem = ShapeAnimationSubType::ONLY_TEXT; 
 				}
@@ -2110,7 +2110,7 @@ void EffectSequenceHelper::implRebuild()
 		}
         else
         {
-            // empty sequence, set duration to 0.0 explicitely
+            // empty sequence, set duration to 0.0 explicitly
             // (otherwise, this sequence will never end)
             mxSequenceRoot->setDuration( makeAny((double)0.0) );
         }
@@ -3378,7 +3378,7 @@ void MainSequence::createMainSequence()
 				mxSequenceRoot->setUserData( aUserData );
 
                 // empty sequence until now, set duration to 0.0
-                // explicitely (otherwise, this sequence will never
+                // explicitly (otherwise, this sequence will never
                 // end)
                 mxSequenceRoot->setDuration( makeAny((double)0.0) );
 

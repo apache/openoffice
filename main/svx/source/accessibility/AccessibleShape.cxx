@@ -1322,7 +1322,7 @@ void AccessibleShape::ViewForwarderChanged (ChangeType aChangeType,
 
     //}
 
-    //// Put a space between name and index because of Gnopernicus othewise
+    //// Put a space between name and index because of Gnopernicus otherwise
     //// spells the name.
     //sName += OUString (RTL_CONSTASCII_USTRINGPARAM(" ")) + OUString::valueOf (nIndex);
 

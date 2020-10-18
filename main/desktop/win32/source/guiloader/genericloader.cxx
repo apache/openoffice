@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,10 +51,10 @@
 static int GenericMain()
 {
 	TCHAR				szTargetFileName[MAX_PATH];
-    TCHAR               szIniDirectory[MAX_PATH];
+	TCHAR				szIniDirectory[MAX_PATH];
 	STARTUPINFO			aStartupInfo;
 
-    desktop_win32::extendLoaderEnvironment(szTargetFileName, szIniDirectory);
+	desktop_win32::extendLoaderEnvironment(szTargetFileName, szIniDirectory);
 
 	ZeroMemory( &aStartupInfo, sizeof(aStartupInfo) );
 	aStartupInfo.cb = sizeof(aStartupInfo);
@@ -65,46 +65,46 @@ static int GenericMain()
 
 	PROCESS_INFORMATION	aProcessInfo;
 
-    size_t iniDirLen = wcslen(szIniDirectory);
-    WCHAR cwd[MAX_PATH];
-    DWORD cwdLen = GetCurrentDirectoryW(MAX_PATH, cwd);
-    if (cwdLen >= MAX_PATH) {
-        cwdLen = 0;
-    }
-    WCHAR redirect[MAX_PATH];
-    DWORD dummy;
-    bool hasRedirect =
-        tools::buildPath(
-            redirect, szIniDirectory, szIniDirectory + iniDirLen,
-            MY_STRING(L"redirect.ini")) != NULL &&
-        (GetBinaryType(redirect, &dummy) || // cheaper check for file existence?
-         GetLastError() != ERROR_FILE_NOT_FOUND);
-    LPTSTR cl1 = GetCommandLine();
-    WCHAR * cl2 = new WCHAR[
-        wcslen(cl1) +
-        (hasRedirect
-         ? (MY_LENGTH(L" \"-env:INIFILENAME=vnd.sun.star.pathname:") +
-            iniDirLen + MY_LENGTH(L"redirect.ini\""))
-         : 0) +
-        MY_LENGTH(L" \"-env:OOO_CWD=2") + 4 * cwdLen + MY_LENGTH(L"\"") + 1];
-        // 4 * cwdLen: each char preceded by backslash, each trailing backslash
-        // doubled
-    WCHAR * p = desktop_win32::commandLineAppend(cl2, cl1);
-    if (hasRedirect) {
-        p = desktop_win32::commandLineAppend(
-            p, MY_STRING(L" \"-env:INIFILENAME=vnd.sun.star.pathname:"));
-        p = desktop_win32::commandLineAppend(p, szIniDirectory);
-        p = desktop_win32::commandLineAppend(p, MY_STRING(L"redirect.ini\""));
-    }
-    p = desktop_win32::commandLineAppend(p, MY_STRING(L" \"-env:OOO_CWD="));
-    if (cwdLen == 0) {
-        p = desktop_win32::commandLineAppend(p, MY_STRING(L"0"));
-    } else {
-        p = desktop_win32::commandLineAppend(p, MY_STRING(L"2"));
-        p = desktop_win32::commandLineAppendEncoded(p, cwd);
-    }
-    desktop_win32::commandLineAppend(p, MY_STRING(L"\""));
-	
+	size_t iniDirLen = wcslen(szIniDirectory);
+	WCHAR cwd[MAX_PATH];
+	DWORD cwdLen = GetCurrentDirectoryW(MAX_PATH, cwd);
+	if (cwdLen >= MAX_PATH) {
+		cwdLen = 0;
+	}
+	WCHAR redirect[MAX_PATH];
+	DWORD dummy;
+	bool hasRedirect =
+		tools::buildPath(
+			redirect, szIniDirectory, szIniDirectory + iniDirLen,
+			MY_STRING(L"redirect.ini")) != NULL &&
+		(GetBinaryType(redirect, &dummy) || // cheaper check for file existence?
+		 GetLastError() != ERROR_FILE_NOT_FOUND);
+	LPTSTR cl1 = GetCommandLine();
+	WCHAR * cl2 = new WCHAR[
+		wcslen(cl1) +
+		(hasRedirect
+		 ? (MY_LENGTH(L" \"-env:INIFILENAME=vnd.sun.star.pathname:") +
+			iniDirLen + MY_LENGTH(L"redirect.ini\""))
+		 : 0) +
+		MY_LENGTH(L" \"-env:OOO_CWD=2") + 4 * cwdLen + MY_LENGTH(L"\"") + 1];
+		// 4 * cwdLen: each char preceded by backslash, each trailing backslash
+		// doubled
+	WCHAR * p = desktop_win32::commandLineAppend(cl2, cl1);
+	if (hasRedirect) {
+		p = desktop_win32::commandLineAppend(
+			p, MY_STRING(L" \"-env:INIFILENAME=vnd.sun.star.pathname:"));
+		p = desktop_win32::commandLineAppend(p, szIniDirectory);
+		p = desktop_win32::commandLineAppend(p, MY_STRING(L"redirect.ini\""));
+	}
+	p = desktop_win32::commandLineAppend(p, MY_STRING(L" \"-env:OOO_CWD="));
+	if (cwdLen == 0) {
+		p = desktop_win32::commandLineAppend(p, MY_STRING(L"0"));
+	} else {
+		p = desktop_win32::commandLineAppend(p, MY_STRING(L"2"));
+		p = desktop_win32::commandLineAppendEncoded(p, cwd);
+	}
+	desktop_win32::commandLineAppend(p, MY_STRING(L"\""));
+
 	BOOL fSuccess = CreateProcess(
 		szTargetFileName,
 		cl2,
@@ -117,7 +117,7 @@ static int GenericMain()
 		&aStartupInfo,
 		&aProcessInfo );
 
-    delete[] cl2;
+	delete[] cl2;
 
 	if ( fSuccess )
 	{
@@ -126,11 +126,11 @@ static int GenericMain()
 		do
 		{
 			// On Windows XP it seems as the desktop calls WaitForInputIdle after "OpenWidth" so we have to do so
-			// as if we where processing any messages
+			// as if we were processing any messages
 
 			dwWaitResult = MsgWaitForMultipleObjects( 1, &aProcessInfo.hProcess, FALSE, INFINITE, QS_ALLEVENTS );
 
-			if (  WAIT_OBJECT_0 + 1 == dwWaitResult )
+			if ( WAIT_OBJECT_0 + 1 == dwWaitResult )
 			{
 				MSG	msg;
 

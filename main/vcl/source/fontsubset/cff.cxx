@@ -40,7 +40,7 @@ typedef long long S64;
 
 typedef sal_Int32 GlyphWidth;
 
-typedef float RealType;
+typedef double RealType;
 typedef RealType ValType;
 #include <vector>
 typedef std::vector<ValType> ValVector;

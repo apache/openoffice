@@ -237,7 +237,7 @@ class SvtCommandOptions_Impl : public ConfigItem
 	private:
 
 		/*-****************************************************************************************************//**
-            @short      return list of key names of our configuration management which represent oue module tree
+            @short      return list of key names of our configuration management which represent our module tree
 			@descr		These methods return the current list of key names! We need it to get needed values from our
                         configuration management and support dynamical menu item lists!
 
@@ -282,7 +282,7 @@ SvtCommandOptions_Impl::SvtCommandOptions_Impl()
 	// Follow assignment use order of values in relation to our list of key names!
     DBG_ASSERT( !(lNames.getLength()!=lValues.getLength()), "SvtCommandOptions_Impl::SvtCommandOptions_Impl()\nI miss some values of configuration keys!\n" );
 
-	// Copy values from list in right order to ouer internal member.
+	// Copy values from list in right order to our internal member.
 	// Attention: List for names and values have an internal construction pattern!
     sal_Int32	nItem     = 0 ;
     OUString    sCmd		  ;
@@ -299,8 +299,8 @@ SvtCommandOptions_Impl::SvtCommandOptions_Impl()
 	}
 
 /*TODO: Not used in the moment! see Notify() ...
-	// Enable notification mechanism of ouer baseclass.
-	// We need it to get information about changes outside these class on ouer used configuration keys! */
+	// Enable notification mechanism of our baseclass.
+	// We need it to get information about changes outside these class on our used configuration keys! */
     Sequence< OUString > aNotifySeq( 1 );
     aNotifySeq[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "Disabled" ));
     EnableNotification( aNotifySeq, sal_True );
@@ -333,7 +333,7 @@ void SvtCommandOptions_Impl::Notify( const Sequence< OUString >& )
 	// Follow assignment use order of values in relation to our list of key names!
     DBG_ASSERT( !(lNames.getLength()!=lValues.getLength()), "SvtCommandOptions_Impl::SvtCommandOptions_Impl()\nI miss some values of configuration keys!\n" );
 
-	// Copy values from list in right order to ouer internal member.
+	// Copy values from list in right order to our internal member.
 	// Attention: List for names and values have an internal construction pattern!
     sal_Int32	nItem     = 0 ;
     OUString    sCmd		  ;
@@ -516,9 +516,9 @@ SvtCommandOptions::SvtCommandOptions()
 {
     // Global access, must be guarded (multithreading!).
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Increase ouer refcount ...
+	// Increase our refcount ...
 	++m_nRefCount;
-	// ... and initialize ouer data container only if it not already exist!
+	// ... and initialize our data container only if it not already exist!
     if( m_pDataContainer == NULL )
 	{
         m_pDataContainer = new SvtCommandOptions_Impl;
@@ -533,10 +533,10 @@ SvtCommandOptions::~SvtCommandOptions()
 {
     // Global access, must be guarded (multithreading!)
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Decrease ouer refcount.
+	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
-	// we must destroy ouer static data container!
+	// we must destroy our static data container!
     if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
@@ -611,7 +611,7 @@ Mutex& SvtCommandOptions::GetOwnStaticMutex()
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         MutexGuard aGuard( Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

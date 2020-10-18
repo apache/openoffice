@@ -29,6 +29,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openoffice.test.OpenOffice;
 import org.openoffice.test.uno.UnoApp;
 import org.openoffice.test.common.FileUtil;
 import org.openoffice.test.common.Testspace;
@@ -61,7 +62,7 @@ import com.sun.star.uno.UnoRuntime;
  */
 public class CheckFileProperties {
 
-	private static final UnoApp app = new UnoApp();
+	private static UnoApp app;
 
 	private XComponent m_xSDComponent = null;
 	private static String m_filePath = null;
@@ -117,6 +118,15 @@ public class CheckFileProperties {
 
 	@BeforeClass
 	public static void setUpConnection() throws Exception {
+		OpenOffice openOffice = UnoApp.getDefaultOpenOffice();
+                // #128398#
+                openOffice.addRegistryModifications(
+                    " <item oor:path=\"/org.openoffice.Office.Common/Security/Scripting\">\n" +
+                    "  <prop oor:name=\"RemovePersonalInfoOnSaving\" oor:op=\"fuse\">\n" +
+                    "   <value>false</value>\n" +
+                    "  </prop>\n" +
+                    " </item>");
+                app = new UnoApp(openOffice);
 		app.start();
 		m_filePath = Testspace.getPath("temp/CheckFileProperties.odp");	
 		FileUtil.deleteFile(m_filePath);
@@ -183,10 +193,11 @@ public class CheckFileProperties {
 		Calendar ca = Calendar.getInstance();		
 		DateTime currentDateTime = new DateTime();
 		currentDateTime.Year = (short)ca.get(Calendar.YEAR);
-		currentDateTime.Month = (short)ca.get(Calendar.MONTH);
+		// java.util.Calendar's months start at 0=January.
+		currentDateTime.Month = (short)(ca.get(Calendar.MONTH) + 1);
 		currentDateTime.Day = (short)ca.get(Calendar.DATE);
 		currentDateTime.Minutes = (short)ca.get(Calendar.MINUTE);
-		currentDateTime.Hours = (short)ca.get(Calendar.HOUR);
+		currentDateTime.Hours = (short)ca.get(Calendar.HOUR_OF_DAY);
 		currentDateTime.Seconds = (short)ca.get(Calendar.SECOND);
 		
 		return currentDateTime;
@@ -196,7 +207,8 @@ public class CheckFileProperties {
 		Calendar ca = Calendar.getInstance();		
 		Date currentDate = new Date();
 		currentDate.Year = (short)ca.get(Calendar.YEAR);
-		currentDate.Month = (short)ca.get(Calendar.MONTH);
+		// java.util.Calendar's months start at 0=January.
+		currentDate.Month = (short)(ca.get(Calendar.MONTH) + 1);
 		currentDate.Day = (short)ca.get(Calendar.DATE);
 		
 		return currentDate;
@@ -290,7 +302,8 @@ public class CheckFileProperties {
 	 * UI entry: File->Properties->General->Total editing time*/
 	@Test
 	public void testGeneralEditingDuration() throws Exception {
-		int editingDuration = 60;
+		final int editingDuration = 60;
+                final int maxEditingDuration = 70;
 		
 		XDocumentProperties xDocPro = getDocumentProperties();
 		
@@ -300,7 +313,9 @@ public class CheckFileProperties {
 		app.closeDocument(m_xSDComponent);
 		m_xSDComponent = app.loadDocument(m_filePath);
 		XDocumentProperties xDocPro2 = getDocumentProperties();
-		assertEquals("Totally editing time should be "+ editingDuration, editingDuration, xDocPro2.getEditingDuration());		
+                // It can take a few seconds longer to save the file, increasing it above editingDuration
+		assertTrue("Total editing time >= "+ editingDuration, Integer.compare(editingDuration, xDocPro2.getEditingDuration()) <= 0);
+                assertTrue("Total editing time <= "+ maxEditingDuration, Integer.compare(xDocPro2.getEditingDuration(), maxEditingDuration) <= 0);
 	}
 	
 	/*
@@ -317,7 +332,7 @@ public class CheckFileProperties {
 		app.closeDocument(m_xSDComponent);
 		m_xSDComponent = app.loadDocument(m_filePath);
 		XDocumentProperties xDocPro2 = getDocumentProperties();
-		assertEquals("Revision number should be "+ revisionNumber+1, revisionNumber+1, xDocPro2.getEditingCycles());		
+		assertEquals("Revision number increments by 1", revisionNumber+1, xDocPro2.getEditingCycles());
 	}
 	
 	/*

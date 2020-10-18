@@ -109,7 +109,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
 
         //---------------------------------------
         /** @short  used for asynchronous callbacks within the main thread.
-            @descr  Internaly we work asynchronous. Because our callis
+            @descr  Internally we work asynchronous. Because our calls
                     are not aware, that her request can kill its own environment ... */
         ::vcl::EventPoster m_aAsyncCallback;
 
@@ -127,7 +127,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
         ListenerHash m_lStatusListener;
 
         //---------------------------------------
-        /** @short  holded alive for internaly asynchronous operations! */
+        /** @short  held alive for internally asynchronous operations! */
         css::uno::Reference< css::frame::XDispatchResultListener > m_xResultListener;
 
     //-------------------------------------------
@@ -137,13 +137,13 @@ class CloseDispatcher : public css::lang::XTypeProvider
 
         //---------------------------------------
         /** @short  connect a new CloseDispatcher instance to its frame.
-            @descr  One CloseDispatcher instance is bound to onw frame only.
+            @descr  One CloseDispatcher instance is bound to own frame only.
                     That makes an implementation (e.g. of listener support)
                     much more easier .-)
 
             @param  xSMGR
-                    an un oservice manager, which is needed to create uno resource
-                    internaly.
+                    an uno service manager, which is needed to create uno resource
+                    internally.
 
             @param  xFrame
                     the frame where the corresponding dispatch was started.
@@ -196,8 +196,8 @@ class CloseDispatcher : public css::lang::XTypeProvider
         //---------------------------------------
         /** @short  a callback for asynchronous started operations.
 
-            @descr  As already mentione, we make internaly all operations
-                    asynchronous. Otherwhise our callis kill its own environment
+            @descr  As already mentioned, we make internally all operations
+                    asynchronous. Otherwise our calls kill its own environment
                     during they call us ...
         */
         DECL_LINK( impl_asyncCallback, void* );
@@ -205,7 +205,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
         //---------------------------------------
         /** @short  prepare m_xCloseFrame so it should be closeable without problems.
 
-            @descr  Thats needed to be sure, that the document can't disagree
+            @descr  That's needed to be sure, that the document can't disagree
                     later with e.g. an office termination.
                     The problem: Closing of documents can show UI. If the user
                     ignores it and open/close other documents, we can't know
@@ -235,8 +235,8 @@ class CloseDispatcher : public css::lang::XTypeProvider
                     inside this frame. Such views must be cleared
                     before (e.g. by calling implts_closeView()!
 
-                    Otherwhise e.g. the XController->suspend()
-                    call isn't made and no UI warn the user about
+                    Otherwise e.g. the XController->suspend()
+                    call isn't made and no UI warns the user about
                     losing document changes. Because the
                     frame is closed ....
 
@@ -297,7 +297,7 @@ class CloseDispatcher : public css::lang::XTypeProvider
                     has to be closed itself (target=_self) ... sometimes it's parent frame
                     has to be closed - BUT(!) it means a parent frame containing a top level
                     window. _top can't be used then for dispatch - because it address TopFrames
-                    not frames containg top level windows. So normaly _magic (which btw does not
+                    not frames containing top level windows. So normally _magic (which btw does not
                     exists at the moment .-) ) should be used. So we interpret target=<empty>
                     as _magic !
                     

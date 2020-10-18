@@ -132,7 +132,7 @@ namespace slideshow
                     // reinsert an activity that threw
                     // once.
                     
-                    // NOTE: we explicitely don't catch(...) here,
+                    // NOTE: we explicitly don't catch(...) here,
                     // since this will also capture segmentation
                     // violations and the like. In such a case, we
                     // still better let our clients now...
@@ -149,7 +149,7 @@ namespace slideshow
                     // reinsert an activity that threw
                     // once.
                     
-                    // NOTE: we explicitely don't catch(...) here,
+                    // NOTE: we explicitly don't catch(...) here,
                     // since this will also capture segmentation
                     // violations and the like. In such a case, we
                     // still better let our clients now...

@@ -306,7 +306,7 @@ public class SystemUtil {
 //				}
 				exec(new String[] { "cscript", "//Nologo", file.getAbsolutePath()}, null, null, output, output);
 			} else if (isBSD()) {
-				exec(new String[] {"ps", "-wweo", "pid,command"}, null, null, output, output);
+				exec(new String[] {"ps", "-wwo", "pid,command"}, null, null, output, output);
 			} else {
 				exec(new String[] {"ps", "-eo", "pid,command"}, null, null, output, output);
 			}

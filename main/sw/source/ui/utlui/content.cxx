@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -153,12 +155,12 @@ namespace
 }
 
 /***************************************************************************
-	Beschreibung: Inhalt, enthaelt Namen und Verweis auf den Inhalstyp
+	Beschreibung: Inhalt, enthaelt Namen und Verweis auf den Inhaltstyp
 ***************************************************************************/
 
 
 SwContent::SwContent(const SwContentType* pCnt, const String& rName, long nYPos) :
-    SwTypeNumber(CTYPE_CNT),
+	SwTypeNumber(CTYPE_CNT),
 	pParent(pCnt),
 	sContentName(rName),
 	nYPosition(nYPos),
@@ -209,16 +211,16 @@ SwTOXBaseContent::~SwTOXBaseContent()
 SwContentType::SwContentType(SwWrtShell* pShell, sal_uInt16 nType, sal_uInt8 nLevel) :
 	SwTypeNumber(CTYPE_CTT),
 	pWrtShell(pShell),
-    pMember(0),
-    sContentTypeName(SW_RES(STR_CONTENT_TYPE_FIRST + nType)),
-    sSingleContentTypeName(SW_RES(STR_CONTENT_TYPE_SINGLE_FIRST + nType)),
-    nMemberCount(0),
+	pMember(0),
+	sContentTypeName(SW_RES(STR_CONTENT_TYPE_FIRST + nType)),
+	sSingleContentTypeName(SW_RES(STR_CONTENT_TYPE_SINGLE_FIRST + nType)),
+	nMemberCount(0),
 	nContentType(nType),
 	nOutlineLevel(nLevel),
-    bMemberFilled(sal_False),
+	bMemberFilled(sal_False),
 	bDataValid(sal_False),
 	bEdit(sal_False),
-    bDelete(sal_True)
+	bDelete(sal_True)
 {
 	Init();
 }
@@ -384,7 +386,7 @@ void SwContentType::Init(sal_Bool* pbInvalidateWindow)
 									INetURLObject::decode(
 										p->rINetAttr.GetINetFmt().GetValue(),
 										INET_HEX_ESCAPE,
-						   				INetURLObject::DECODE_UNAMBIGUOUS,
+										INetURLObject::DECODE_UNAMBIGUOUS,
 										RTL_TEXTENCODING_UTF8 ),
 									&p->rINetAttr,
 									n );
@@ -473,7 +475,7 @@ SwContentType::~SwContentType()
 }
 
 /***************************************************************************
-	Beschreibung:	 Inhalt liefern, dazu gfs. die Liste fuellen
+	Beschreibung:	 Inhalt liefern, dazu ggf. die Liste fuellen
 ***************************************************************************/
 
 
@@ -608,7 +610,7 @@ void	SwContentType::FillMemberList(sal_Bool* pbLevelOrVisibiblityChanged)
 					pWrtShell->GetGrfNms( &sLink, 0, (SwFlyFrmFmt*) pFrmFmt);
 					pCnt = new SwGraphicContent(this, sFrmName,
 								INetURLObject::decode( sLink, INET_HEX_ESCAPE,
-						   				INetURLObject::DECODE_UNAMBIGUOUS,
+										INetURLObject::DECODE_UNAMBIGUOUS,
 										RTL_TEXTENCODING_UTF8 ),
 								pFrmFmt->FindLayoutRect(sal_False, &aNullPt).Top());
 				}
@@ -711,7 +713,7 @@ void	SwContentType::FillMemberList(sal_Bool* pbLevelOrVisibiblityChanged)
 									INetURLObject::decode(
 										p->rINetAttr.GetINetFmt().GetValue(),
 										INET_HEX_ESCAPE,
-						   				INetURLObject::DECODE_UNAMBIGUOUS,
+										INetURLObject::DECODE_UNAMBIGUOUS,
 										RTL_TEXTENCODING_UTF8 ),
 									&p->rINetAttr,
 									n );
@@ -898,12 +900,12 @@ SwContentTree::SwContentTree(Window* pParent, const ResId& rResId) :
 	SetNodeDefaultImages();
 	SetDoubleClickHdl(LINK(this, SwContentTree, ContentDoubleClickHdl));
 	SetDragDropMode(SV_DRAGDROP_APP_COPY);
-	for( i = 0; i < CONTENT_TYPE_MAX; i++)
+	for( i = 0; i < CONTENT_TYPE_MAX; i++ )
 	{
 		aActiveContentArr[i] 	= 0;
 		aHiddenContentArr[i] 	= 0;
 	}
-	for( i = 0; i < CONTEXT_COUNT; i++  )
+	for( i = 0; i < CONTEXT_COUNT; i++ )
 	{
 		aContextStrings[i] = SW_RESSTR(i+ST_CONTEXT_FIRST);
 	}
@@ -911,8 +913,8 @@ SwContentTree::SwContentTree(Window* pParent, const ResId& rResId) :
 	aUpdTimer.SetTimeoutHdl(LINK(this, SwContentTree, TimerUpdate));
 	aUpdTimer.SetTimeout(1000);
 	Clear();
-    EnableContextMenuHandling();
-    SetStyle( GetStyle() | WB_QUICK_SEARCH );
+	EnableContextMenuHandling();
+	SetStyle( GetStyle() | WB_QUICK_SEARCH );
 }
 
 /***************************************************************************
@@ -922,7 +924,7 @@ SwContentTree::SwContentTree(Window* pParent, const ResId& rResId) :
 
 SwContentTree::~SwContentTree()
 {
-	Clear(); // vorher gfs. Inhaltstypen loeschen
+	Clear(); // vorher ggf. Inhaltstypen loeschen
 	bIsInDrag = sal_False;
 }
 
@@ -934,10 +936,10 @@ String SwContentTree::GetEntryAltText( SvLBoxEntry* pEntry ) const
 	SwContent* pCnt = (SwContent*)pEntry->GetUserData();
 	if( pCnt == NULL || pCnt->GetParent() == NULL)
 		return String();
-	
+
 	sal_uInt16 nJumpType = pCnt->GetParent()->GetType();
 	SdrObject* pTemp;
-	
+
 	switch(nJumpType)
 	{
 		case CONTENT_TYPE_DRAWOBJECT:
@@ -950,8 +952,8 @@ String SwContentTree::GetEntryAltText( SvLBoxEntry* pEntry ) const
                     const sal_uInt32 nCount = pPage->GetObjCount();
 					for( sal_uInt32 i=0; i< nCount; i++ )
 					{
-						pTemp = pPage->GetObj(i);						
-						sal_uInt16 nCmpId;		
+						pTemp = pPage->GetObj(i);
+						sal_uInt16 nCmpId;
 						switch( pTemp->GetObjIdentifier() )
 						{
 						case OBJ_GRUP:
@@ -989,7 +991,7 @@ String SwContentTree::GetEntryAltText( SvLBoxEntry* pEntry ) const
 					}
 				}
 			}
-			break;		
+			break;
 		case CONTENT_TYPE_GRAPHIC   :
 			{
 				if( pActiveShell && pActiveShell->GetDoc() )
@@ -1000,7 +1002,7 @@ String SwContentTree::GetEntryAltText( SvLBoxEntry* pEntry ) const
 //                        SwNodeIndex aIdx( *(pFrmFmt->GetCntnt().GetCntntIdx()), 1 );
 //                        const SwGrfNode* pGrfNd = aIdx.GetNode().GetGrfNode();
 //                        if( pGrfNd )
-//                            return pGrfNd->GetAlternateText(); 
+//                            return pGrfNd->GetAlternateText();
                         return pFrmFmt->GetObjTitle();
 					}
 				}
@@ -1030,7 +1032,7 @@ String SwContentTree::GetEntryLongDescription( SvLBoxEntry* pEntry ) const
 
 	sal_uInt16 nJumpType = pCnt->GetParent()->GetType();
 	SdrObject* pTemp;
-	
+
 	switch(nJumpType)
 	{
 		case CONTENT_TYPE_DRAWOBJECT:
@@ -1043,8 +1045,8 @@ String SwContentTree::GetEntryLongDescription( SvLBoxEntry* pEntry ) const
 					sal_uInt32 nCount = pPage->GetObjCount();
 					for( sal_uInt32 i=0; i< nCount; i++ )
 					{
-						pTemp = pPage->GetObj(i);						
-						sal_uInt16 nCmpId;		
+						pTemp = pPage->GetObj(i);
+						sal_uInt16 nCmpId;
 						switch( pTemp->GetObjIdentifier() )
 						{
 						case OBJ_GRUP:
@@ -1082,7 +1084,7 @@ String SwContentTree::GetEntryLongDescription( SvLBoxEntry* pEntry ) const
 					}
 				}
 			}
-			break;		
+			break;
 		case CONTENT_TYPE_GRAPHIC   :
 		case CONTENT_TYPE_OLE       :
 		case CONTENT_TYPE_FRAME     :
@@ -1090,7 +1092,7 @@ String SwContentTree::GetEntryLongDescription( SvLBoxEntry* pEntry ) const
 				//Can't find the function "GetLongDescription". Need to verify again.
 				const SwFlyFrmFmt* pFlyFmt = pActiveShell->GetDoc()->FindFlyByName( pCnt->GetName(), 0);
 				if( pFlyFmt )
-					return pFlyFmt->GetDescription();				
+					return pFlyFmt->GetDescription();
 			}
 			break;
 	}
@@ -1182,32 +1184,39 @@ PopupMenu* SwContentTree::CreateContextMenu( void )
     }
     pSubPop2->CheckItem( 201 +
                     GetParentWindow()->GetRegionDropMode());
-    //Liste der offenen Dateien einfuegen
-    sal_uInt16 nId = 301;
-    const SwView* pActiveView = ::GetActiveView();
-    SwView *pView = SwModule::GetFirstView();
-    while (pView)
-    {
-        String sInsert = pView->GetDocShell()->GetTitle();
-        if(pView == pActiveView)
-        {
-            sInsert += '(';
-            sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
-            sInsert += ')';
-        }
-        pSubPop3->InsertItem(nId, sInsert);
-        if(bIsConstant && pActiveShell == &pView->GetWrtShell())
-            pSubPop3->CheckItem(nId);
-        pView = SwModule::GetNextView(pView);
-        nId++;
-    }
+	// Insert list of open files (filter out help pages)
+	sal_uInt16 nId = 301;
+	const SwView* pActiveView = ::GetActiveView();
+	SwView *pView = SwModule::GetFirstView();
+	while (pView)
+	{
+		if (!pView->GetDocShell()->IsHelpDocument())
+		{
+			String sInsert = pView->GetDocShell()->GetTitle();
+			sInsert += C2S(" (");
+			if(pView == pActiveView)
+			{
+				sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
+			}
+			else
+			{
+				sInsert += aContextStrings[ ST_INACTIVE - ST_CONTEXT_FIRST];
+			}
+			sInsert += ')';
+			pSubPop3->InsertItem(nId, sInsert);
+			if(bIsConstant && pActiveShell == &pView->GetWrtShell())
+				pSubPop3->CheckItem(nId);
+		}
+	pView = SwModule::GetNextView(pView);
+	nId++;
+	}
     pSubPop3->InsertItem(nId++, aContextStrings[ST_ACTIVE_VIEW - ST_CONTEXT_FIRST]);
     if(pHiddenShell)
     {
         String sHiddenEntry = pHiddenShell->GetView().GetDocShell()->GetTitle();
-        sHiddenEntry += C2S(" ( ");
+        sHiddenEntry += C2S(" (");
         sHiddenEntry += aContextStrings[ ST_HIDDEN - ST_CONTEXT_FIRST];
-        sHiddenEntry += C2S(" )");
+        sHiddenEntry += ')';
         pSubPop3->InsertItem(nId, sHiddenEntry);
     }
 
@@ -1307,7 +1316,7 @@ PopupMenu* SwContentTree::CreateContextMenu( void )
     else if( pEntry )
 	{
 		SwContentType* pType = (SwContentType*)pEntry->GetUserData();
-		if ( (pType->GetType() == CONTENT_TYPE_POSTIT) &&  (!pActiveShell->GetView().GetDocShell()->IsReadOnly()) && ( pType->GetMemberCount() > 0) )
+		if ( (pType->GetType() == CONTENT_TYPE_POSTIT) && (!pActiveShell->GetView().GetDocShell()->IsReadOnly()) && ( pType->GetMemberCount() > 0) )
 		{
 				pSubPop4->InsertItem(600, sPostItShow );
 				pSubPop4->InsertItem(601, sPostItHide );
@@ -1361,7 +1370,7 @@ long	SwContentTree::GetTabPos( SvLBoxEntry* pEntry, SvLBoxTab* pTab)
 ***************************************************************************/
 
 
-void  SwContentTree::RequestingChilds( SvLBoxEntry* pParent )
+void SwContentTree::RequestingChilds( SvLBoxEntry* pParent )
 {
 	// ist es ein Inhaltstyp?
 	if(lcl_IsContentType(pParent))
@@ -1427,7 +1436,7 @@ SdrObject* SwContentTree::GetDrawingObjectsByContent(const SwContent *pCnt)
                 SwDrawModel* pDrawModel = pActiveShell->GetDoc()->GetDrawModel();
                 SdrPage* pPage = pDrawModel->GetPage(0);
 				sal_uInt32 nCount = pPage->GetObjCount();
-				
+
 				for( sal_uInt32 i=0; i< nCount; i++ )
 				{
 					SdrObject* pTemp = pPage->GetObj(i);
@@ -1446,7 +1455,7 @@ SdrObject* SwContentTree::GetDrawingObjectsByContent(const SwContent *pCnt)
 	return pRetObj;
 }
 
-sal_Bool  SwContentTree::Expand( SvLBoxEntry* pParent )
+sal_Bool SwContentTree::Expand( SvLBoxEntry* pParent )
 {
 	if(!bIsRoot)
 	{
@@ -1470,7 +1479,7 @@ sal_Bool  SwContentTree::Expand( SvLBoxEntry* pParent )
 ***************************************************************************/
 
 
-sal_Bool  SwContentTree::Collapse( SvLBoxEntry* pParent )
+sal_Bool SwContentTree::Collapse( SvLBoxEntry* pParent )
 {
 	sal_Bool bRet;
 	if(!bIsRoot)
@@ -1569,7 +1578,7 @@ void SwContentTree::Display( sal_Bool bActive )
 	if(bReadOnly != bIsLastReadOnly)
 	{
 		bIsLastReadOnly = bReadOnly;
-		sal_Bool bDisable =  pShell == 0 || bReadOnly;
+		sal_Bool bDisable = pShell == 0 || bReadOnly;
 		SwNavigationPI* pNavi = GetParentWindow();
 		pNavi->aContentToolBox.EnableItem(FN_ITEM_UP , !bDisable);
 		pNavi->aContentToolBox.EnableItem(FN_ITEM_DOWN, !bDisable);
@@ -2573,7 +2582,7 @@ sal_Bool  SwContentTree::NotifyCopying( SvLBoxEntry*  pTarget,
 	Beschreibung:	Kein Drop vor den ersten Eintrag - es ist ein SwContentType
 ***************************************************************************/
 
-sal_Bool  SwContentTree::NotifyAcceptDrop( SvLBoxEntry* pEntry)
+sal_Bool SwContentTree::NotifyAcceptDrop( SvLBoxEntry* pEntry)
 {
 	return pEntry != 0;
 }
@@ -2583,7 +2592,7 @@ sal_Bool  SwContentTree::NotifyAcceptDrop( SvLBoxEntry* pEntry)
 	Beschreibung: 	Wird ein Ctrl+DoubleClick in einen freien Bereich ausgefuehrt,
  * 					dann soll die Basisfunktion des Controls gerufen werden
 ***************************************************************************/
-void  SwContentTree::MouseButtonDown( const MouseEvent& rMEvt )
+void SwContentTree::MouseButtonDown( const MouseEvent& rMEvt )
 {
 	Point aPos( rMEvt.GetPosPixel());
 	SvLBoxEntry* pEntry = GetEntry( aPos, sal_True );
@@ -2598,9 +2607,9 @@ void  SwContentTree::MouseButtonDown( const MouseEvent& rMEvt )
 ***************************************************************************/
 
 
-void  SwContentTree::GetFocus()
+void SwContentTree::GetFocus()
 {
-    SwView* pActView = GetParentWindow()->GetCreateView();
+	SwView* pActView = GetParentWindow()->GetCreateView();
 	if(pActView)
 	{
 		SwWrtShell* pActShell = pActView->GetWrtShellPtr();
@@ -2627,7 +2636,7 @@ void  SwContentTree::GetFocus()
 ***************************************************************************/
 
 
-void  SwContentTree::KeyInput(const KeyEvent& rEvent)
+void SwContentTree::KeyInput(const KeyEvent& rEvent)
 {
 	const KeyCode aCode = rEvent.GetKeyCode();
 	if(aCode.GetCode() == KEY_RETURN)
@@ -2677,13 +2686,13 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 	//and realize multi-selection .
 	else if(aCode.GetCode() == KEY_SPACE && 0 == aCode.GetModifier())
 	{
-		
+
 		SvLBoxEntry* pEntry = GetCurEntry();
 		if( GetChildCount( pEntry ) == 0 )
 			bIsKeySpace = sal_True;
 		Point tempPoint = GetEntryPosition( pEntry );//Change from "GetEntryPos" to "GetEntryPosition" for acc migration
 		oldRectangle = GetFocusRect( pEntry,tempPoint.Y() );
-		
+
 		if(pEntry)
 		{
 			if(bIsActive || bIsConstant)
@@ -2704,7 +2713,7 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 						if (pDrawView)
 						{
 							pDrawView->SdrEndTextEdit();//Change from "EndTextEdit" to "SdrEndTextEdit" for acc migration
-							
+
                             SwDrawModel* pDrawModel = pActiveShell->GetDoc()->GetDrawModel();
                             SdrPage* pPage = pDrawModel->GetPage(0);
 							sal_uInt32 nCount = pPage->GetObjCount();
@@ -2719,7 +2728,7 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 								{
 									sal_Bool bUnMark = pDrawView->IsObjMarked(pObject);
 									pDrawView->MarkObj( pObject, pPV, bUnMark);
-									
+
 								}
 							}
 							for( sal_uInt32 i=0; i< nCount; i++ )
@@ -2764,18 +2773,18 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 											}
 										}
 								}
-								//mod end							
+								//mod end
 							}
 							if ( pActiveShell && !hasObjectMarked )
 							{
-								SwEditWin& pEditWindow = 
+								SwEditWin& pEditWindow =
 									pActiveShell->GetView().GetEditWin();
 								if( &pEditWindow )
 								{
 									KeyCode tempKeycode( KEY_ESCAPE );
 									KeyEvent rKEvt( 0 , tempKeycode );
 									((Window*)&pEditWindow)->KeyInput( rKEvt );
-									
+
 								}
 								//rView.GetEditWin().GrabFocus();
 							}
@@ -2783,13 +2792,13 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 					}
 					break;
 				}
-				
-								
+
+
 				bViewHasChanged = sal_True;
 			}
-		}		
+		}
 
-	}	
+	}
 	else
 		SvTreeListBox::KeyInput(rEvent);
 
@@ -2800,7 +2809,7 @@ void  SwContentTree::KeyInput(const KeyEvent& rEvent)
 ***************************************************************************/
 
 
-void  SwContentTree::RequestHelp( const HelpEvent& rHEvt )
+void SwContentTree::RequestHelp( const HelpEvent& rHEvt )
 {
 	sal_Bool bCallBase = sal_True;
 	if( rHEvt.GetMode() & HELPMODE_QUICK )
@@ -2920,10 +2929,10 @@ void  SwContentTree::RequestHelp( const HelpEvent& rHEvt )
 ***************************************************************************/
 
 
-void    SwContentTree::ExcecuteContextMenuAction( sal_uInt16 nSelectedPopupEntry )
+void SwContentTree::ExcecuteContextMenuAction( sal_uInt16 nSelectedPopupEntry )
 {
 	SvLBoxEntry* pFirst = FirstSelected();
-    switch( nSelectedPopupEntry )
+	switch( nSelectedPopupEntry )
 	{
 		//Outlinelevel
 		case 101:
@@ -3453,7 +3462,7 @@ void SwContentTree::GotoContent(SwContent* pCnt)
 	rView.GetEditWin().GrabFocus();
 }
 /*-----------------06.02.97 19.14-------------------
-    Jetzt nochtdie passende text::Bookmark
+    Jetzt noch die passende text::Bookmark
 --------------------------------------------------*/
 
 NaviContentBookmark::NaviContentBookmark()
@@ -3570,13 +3579,13 @@ void SwContentLBoxString::Paint( const Point& rPos, SvLBox& rDev, sal_uInt16 nFl
 			rDev.SetFont( aOldFont );
 	}
 	*/
-	else 
+	else
 		SvLBoxString::Paint( rPos, rDev, nFlags, pEntry);
 }
 /* -----------------------------06.05.2002 10:20------------------------------
 
  ---------------------------------------------------------------------------*/
-void    SwContentTree::DataChanged( const DataChangedEvent& rDCEvt )
+void SwContentTree::DataChanged( const DataChangedEvent& rDCEvt )
 {
   if ( (rDCEvt.GetType() == DATACHANGED_SETTINGS) &&
          (rDCEvt.GetFlags() & SETTINGS_STYLE) )

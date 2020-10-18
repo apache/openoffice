@@ -1208,7 +1208,7 @@ IMPL_LINK( SfxAcceleratorConfigPage, LoadHdl, sfx2::FileDialogHelper*, EMPTYARG 
         else
         {
             // URL doesn't point to a loaded document, try to access it as a single storage
-            // dont forget to release the storage afterwards!
+            // don't forget to release the storage afterwards!
             css::uno::Reference< css::lang::XSingleServiceFactory > xStorageFactory(m_xSMGR->createInstance(SERVICE_STORAGEFACTORY), css::uno::UNO_QUERY_THROW);
             css::uno::Sequence< css::uno::Any >                     lArgs(2);
             lArgs[0] <<= sCfgName;
@@ -1238,7 +1238,7 @@ IMPL_LINK( SfxAcceleratorConfigPage, LoadHdl, sfx2::FileDialogHelper*, EMPTYARG 
 
         }
 
-        // dont forget to close the new opened storage!
+        // don't forget to close the new opened storage!
         // We are the owner of it.
         if (xRootStorage.is())
         {

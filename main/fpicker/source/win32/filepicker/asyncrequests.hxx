@@ -167,7 +167,7 @@ class AsyncRequests : private ::cppu::BaseMutex
         }
     
         //---------------------------------------------------------------------
-        /** does nothing special / excepting to make sure our class wont be inline .-)
+        /** does nothing special / except to make sure our class won't be inline .-)
          */
         virtual ~AsyncRequests();
         
@@ -201,7 +201,7 @@ class AsyncRequests : private ::cppu::BaseMutex
         
         //---------------------------------------------------------------------
         /** our STA .-)
-         *  Will run between start() & finish(). Internaly it runs a loop ... 
+         *  Will run between start() & finish(). Internally it runs a loop ... 
          *  waiting for requests. Every request will be executed synchronously
          *  in blocked mode.
          */

@@ -469,9 +469,9 @@ void start_language_section(
     char buff[10];
     int primLangID = PRIMARYLANGID(ltype);
     int subLangID = SUBLANGID(ltype);
-    // Our resources are normaly not sub language dependent.
+    // Our resources are normally not sub language dependent.
     // Esp. for spanish we don't want to distinguish between trad.
-    // and internatinal sorting ( which leads to two different sub languages )
+    // and international sorting ( which leads to two different sub languages )
     // Setting the sub language to neutral allows us to use one
     // stringlist for all spanish variants ( see #123126# )
     if ( ( primLangID == LANG_SPANISH ) &&

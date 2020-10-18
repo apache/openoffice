@@ -1189,7 +1189,7 @@ void PolyArgs::ClosePolygon()
 // =======================================================================
 
 // glyph fallback is supported directly by Aqua
-// so methods used only by MultiSalLayout can be dummy implementated
+// so methods used only by MultiSalLayout can be dummy implemented
 bool ATSLayout::GetGlyphOutlines( SalGraphics&, PolyPolyVector& ) const { return false; }
 void ATSLayout::InitFont() {}
 void ATSLayout::MoveGlyph( int /*nStart*/, long /*nNewXPos*/ ) {}

@@ -138,7 +138,7 @@ void FilterDialog::ChangeFilters( const FilterNameList* pFilterNames )
     @descr      We show the dialog and if user finish it with "OK" - we try to find selected item in internal saved
                 name list (which you must set in "ChangeFilters()"!). If we return sal_True as result, you can use out
                 parameter "pSelectedItem" as pointer into your FilterNameList to get selected item really ...
-                but if we return sal_False ... user hsa cancel the dialog ... you shouldn't do that. pSelectedItem isn't
+                but if we return sal_False ... user has canceled the dialog ... you shouldn't do that. pSelectedItem isn't
                 set to any valid value then. We don't change them ...
 
     @seealso    method ChangeFilters()
@@ -146,7 +146,7 @@ void FilterDialog::ChangeFilters( const FilterNameList* pFilterNames )
     @param      "pSelectedItem", returns result of selection as pointer into set list of filter names
                                  (valid for function return sal_True only!)
     @return     true  => pSelectedItem parameter points into name list and represent use decision
-                false => use has cancelled dialog (pSelectedItem isn't valid then!)
+                false => use has canceled dialog (pSelectedItem isn't valid then!)
 
     @onerror    We return false ... but don't change pSelectedItem!
     @threadsafe no
@@ -208,9 +208,9 @@ class StringCalculator : public ::cppu::WeakImplHelper1< ::com::sun::star::util:
 };
 
 /*-************************************************************************************************************//**
-    @short      try to build short name of given URL to show it n GUI
+    @short      try to build short name of given URL to show it in GUI
     @descr      We detect type of given URL automatically and build this short name depend on this type ...
-                If we couldnt make it right we return full given string without any changes ...
+                If we couldn't make it right we return full given string without any changes ...
 
     @seealso    class LocalFileHelper
     @seealso    method InetURLObject::getAbbreviated()
@@ -227,7 +227,7 @@ String FilterDialog::impl_buildUIFileName( const String& sName )
 
     if( ::utl::LocalFileHelper::ConvertURLToSystemPath( sName, sShortName ) == sal_True )
     {
-        // its a system file ... build short name by using osl functionality
+        // it's a system file ... build short name by using osl functionality
     }
     else
     {
