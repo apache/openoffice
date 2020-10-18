@@ -339,7 +339,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         to the reference Locale.
                         (means: same Language, Country, Variant)
                         
-                        If the reference Locale couldnt be located, it will
+                        If the reference Locale couldn't be located, it will be
                         tried again - but we are checking for "similar" Locales then.
                         (means: same Language)
                         
@@ -351,7 +351,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         
                         If no "same" nor any "similar" locale could be found,
                         we try "x-default" and "x-notranslate" explicitly.
-                        Sometimes localized variables are optimized and doesn't use
+                        Sometimes localized variables are optimized and don't use
                         localzation really. E.g. in case the localized value is a fix
                         product name.
                         
@@ -367,7 +367,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         
             @param      sReferenceISO
                         the reference Locale, which should be searched
-                        if its equals or similar to any Locale inside
+                        if it's equal or similar to any Locale inside
                         the provided Locale list.
                         
             @return     An iterator, which points to the found element
@@ -376,7 +376,7 @@ class COMPHELPER_DLLPUBLIC Locale
                         to the end of the list.                        
                         
             @throw      [MalFormedLocaleException]
-                        if at least one ISO formatted string couldnt
+                        if at least one ISO formatted string couldn't
                         be converted to a valid Locale Object.
          */
         static ::std::vector< ::rtl::OUString >::const_iterator getFallback(const ::std::vector< ::rtl::OUString >& lISOList     ,

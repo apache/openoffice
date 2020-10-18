@@ -511,7 +511,7 @@ SdrObject* SelectionHelper::getMarkHandlesObject( SdrObject* pObj )
     rtl::OUString aName( lcl_getObjectName( pObj ) );
     if( aName.match(C2U("MarkHandles")) || aName.match(C2U("HandlesOnly")) )
         return pObj;
-    if( !aName.isEmpty() )//dont't get the markhandles of a different object
+    if( !aName.isEmpty() )//don't get the markhandles of a different object
         return 0;
 
     //search for a child with name "MarkHandles" or "HandlesOnly"

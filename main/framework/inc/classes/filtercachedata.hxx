@@ -24,7 +24,7 @@
 #ifndef __FRAMEWORK_CLASSES_FILTERCACHEDATA_HXX_
 #define __FRAMEWORK_CLASSES_FILTERCACHEDATA_HXX_
 
-/** Attention: stl headers must(!) be included at first. Otherwhise it can make trouble
+/** Attention: stl headers must(!) be included at first. Otherwise it can make trouble
                with solaris headers ...
 */
 #include <hash_map>
@@ -411,7 +411,7 @@ struct Loader
 
 //*****************************************************************************************************************
 // Programmer can register his own services to handle a FileType and intercept dispatches.
-// Don't forget: It's not a FrameLoader - it's a ContentHandler! (normaly without any UI)
+// Don't forget: It's not a FrameLoader - it's a ContentHandler! (normally without any UI)
 //*****************************************************************************************************************
 struct ContentHandler
 {
@@ -515,7 +515,7 @@ class PerformanceHash   :   public  ::std::hash_map<    ::rtl::OUString         
         }
 
         //---------------------------------------------------------------------------------------------------------
-        //  normaly a complete string must match our hash key values ...
+        //  Normally a complete string must match our hash key values ...
         //  But sometimes we need a search by using these key values as pattern!
         //  The in/out parameter "pStepper" is used to return a pointer to found element in hash ...
         //  and could be used for further searches again, which should be started at next element!

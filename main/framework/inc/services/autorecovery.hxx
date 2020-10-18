@@ -73,7 +73,7 @@ namespace framework
 
     @descr  Because some operations are forced to be executed asynchronously
             (e.g. requested by our CreashSave/Recovery dialog) ... we must make sure
-            that these informations wont be set as "normal" members of our AtoRecovery
+            that these informations won't be set as "normal" members of our AutoRecovery
             instance. Otherwise they can disturb our normal AutoSave-timer handling.
             e.g. it can be unclear then, which progress has to be used for storing documents ...
  */
@@ -95,7 +95,7 @@ struct DispatchParams
         /** @short  can be set from outside and is provided to
                     our internal started operations.
 
-            @descr  Normaly we use the normal status indicator
+            @descr  Normally we use the normal status indicator
                     of the document windows to show a progress.
                     But in case we are used by any special UI,
                     it can provide its own status indicator object
@@ -185,7 +185,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         /** @short  indicates the results of a FAILURE_SAFE operation
 
             @descr  We must know, which reason was the real one in case
-                    we couldnt copy a "failure document" to a user specified path.
+                    we couldn't copy a "failure document" to a user specified path.
                     We must know, if we can forget our cache entry or not.
          */
         enum EFailureSafeResult
@@ -251,10 +251,10 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
                 //-------------------------------
                 /** @short  knows, if the document is really modified since the last autosave,
-                            or  was postponed, because it was an active one etcpp...
+                            or was postponed, because it was an active one etcpp...
 
                     @descr  Because we have no CHANGE TRACKING mechanism, based on office document,
-                            we implements it by ourself. We listen for MODIFIED events
+                            we implement it by ourself. We listen for MODIFIED events
                             of each document and update this state flag here.
 
                             Further we postpone saving of active documents, e.g. if the user
@@ -271,7 +271,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
                 //-------------------------------
                 /** For every user action, which modifies a document (e.g. key input) we get
-                    a notification as XModifyListener. That seams to be a "performance issue" .-)
+                    a notification as XModifyListener. That seems to be a "performance issue" .-)
                     So we decided to listen for such modify events only for the time in which the document
                     was stored as temp. file and was not modified again by the user.
                 */
@@ -399,17 +399,17 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
         /** @descr  This member is used to prevent us against re-entrance problems.
                     A mutex can't help to prevent us from concurrent using of members
-                    inside the same thread. But e.g. our internaly used stl structures
+                    inside the same thread. But e.g. our internally used stl structures
                     are not threadsafe ... and furthermore they can't be used at the same time
                     for iteration and add/remove requests!
                     So we have to detect such states and ... show a warning.
                     May be there will be a better solution next time ... (copying the cache temp.
-                    bevor using).
+                    before using).
 
                     And further it's not possible to use a simple boolean value here.
-                    Because if more then one operation iterates over the same stl container ...
-                    (only to modify it's elements but dont add new or removing existing ones!)
-                    it should be possible doing so. But we must guarantee that the last operation reset
+                    Because if more than one operation iterates over the same stl container ...
+                    (only to modify its elements but don't add new or remove existing ones!)
+                    it should be possible doing so. But we must guarantee that the last operation resets
                     this lock ... not the first one ! So we use a "ref count" mechanism for that."
          */
         sal_Int32 m_nDocCacheLock;
@@ -423,8 +423,8 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         //---------------------------------------
         /** @short  special debug option to make testing faster.
 
-            @descr  We dont interpret the timer unit as [min] ...
-                    we use [ms] instead of that. Further we dont
+            @descr  We don't interpret the timer unit as [min] ...
+                    we use [ms] instead of that. Further we don't
                     wait 10 s for user idle ...
          */
         #if OSL_DEBUG_LEVEL > 1
@@ -466,8 +466,8 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         // css.document.XEventListener
         /** @short  informs about created/opened documents.
 
-            @descr  Every new opened/created document will be saved internaly
-                    so it can be checked if its modified. This modified state
+            @descr  Every new opened/created document will be saved internally
+                    so it can be checked if it's modified. This modified state
                     is used later to decide, if it must be saved or not.
 
             @param  aEvent
@@ -525,7 +525,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         //---------------------------------------
         /** @short  open the underlying configuration.
 
-            @descr  This method must be called everytimes
+            @descr  This method must be called every time
                     a configuartion call is needed. Because
                     method works together with the member
                     m_xCFG, open it on demand and cache it
@@ -547,10 +547,10 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             @descr  After that we know the initial state - means:
                     - if AutoSave was enabled by the user
                     - which time intervall has to be used
-                    - which recovery entries may already exists
+                    - which recovery entries may already exist
 
             @throw  [com.sun.star.uno.RuntimeException]
-                    if config could not be opened or readed successfully!
+                    if config could not be opened or read successfully!
 
             @threadsafe
           */
@@ -718,7 +718,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                                  If a document is the most active one, saving it
                                  will be postponed if there exists other unsaved
                                  documents. This feature was implemented, because
-                                 we dont wish to disturb the user on it's work.
+                                 we don't wish to disturb the user on its work.
                                  ... bAllowUserIdleLoop should be set to sal_True
                     EMERGENCY_SAVE / SESSION_SAVE =>
                                  Here we must finish our work ASAP! It's not allowed
@@ -727,13 +727,13 @@ class AutoRecovery  : public  css::lang::XTypeProvider
 
             @param  pParams
                     sometimes this method is required inside an external dispatch request.
-                    The it contains some special environment variables, which overwrites
+                    It contains some special environment variables, which overwrites
                     our normal environment.
                     AutoSave              => pParams == 0
                     SessionSave/CrashSave => pParams != 0
 
-            @return A suggestion, how the timer (if its not already disabled!)
-                    should be restarted to full fill the requirements.
+            @return A suggestion, how the timer (if it's not already disabled!)
+                    should be restarted to fulfill the requirements.
 
             @threadsafe
          */
@@ -756,11 +756,11 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                     - patch the configuration.
 
                     Note further: It paches the info struct
-                    more then ones. E.g. the new temp URL is set
+                    more than once. E.g. the new temp URL is set
                     before the file is saved. And the old URL is removed
-                    only if removing oft he old file was successfully.
+                    only if removing of the old file was successfully.
                     If this method returns without an exception - everything
-                    was OK. Otherwhise the info struct can be analyzed to
+                    was OK. Otherwise the info struct can be analyzed to
                     get more information, e.g. when the problem occurs.
 
             @param  sBackupPath
@@ -770,7 +770,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
                     points to an informations structure, where
                     e.g. the document, its modified state, the count
                     of autosave-retries etcpp. exists.
-                    Its used also to return the new temp file name
+                    It's used also to return the new temp file name
                     and some other state values!
 
             @threadsafe
@@ -805,7 +805,7 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         /** @short  notifies all interested listener about the current state
                     of the currently running operation.
 
-            @descr  We support different set's of functions. AUTO_SAVE, EMERGENCY_SAVE,
+            @descr  We support different sets of functions. AUTO_SAVE, EMERGENCY_SAVE,
                     AUTO_RECOVERY, FAILURE_SAVE ... etcpp.
                     Listener can register itself for any type of supported
                     functionality ... but not for document URL's in special.
@@ -957,12 +957,12 @@ class AutoRecovery  : public  css::lang::XTypeProvider
         /** @short  try to create/use a progress and set it inside the
                     environment.
 
-            @descr  The problem behind: There exists different use case of this method.
+            @descr  The problem behind: There exist different use cases of this method.
                     a) An external progress is provided by our CrashSave or Recovery dialog.
                     b) We must create our own progress e.g. for an AutoSave
-                    c) Sometimes our application filters dont use the progress
-                       provided by the MediaDescriptor. They uses the Frame every time to create
-                       it's own progress. So we implemented a HACK for these and now we set
+                    c) Sometimes our application filters don't use the progress
+                       provided by the MediaDescriptor. They use the Frame every time to create
+                       its own progress. So we implemented a HACK for these and now we set
                        an InterceptedProgress there for the time WE use this frame for loading/storing documents .-)
 
             @param  xNewFrame
@@ -994,8 +994,8 @@ class AutoRecovery  : public  css::lang::XTypeProvider
             result at the end ... a non existing file .-)
 
             On the other side removing of files from disc is an optional
-            feature. If we are not able doing so ... its not a real problem.
-            Ok - users disc place will be samller then ... but we should produce
+            feature. If we are not able doing so ... it's not a real problem.
+            Ok - users disc place will be smaller then ... but we should produce
             a crash during crash save because we can't delete a temporary file only !
             
             @param  sURL

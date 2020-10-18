@@ -97,7 +97,7 @@ class LoadEnvException
             ID_NO_TARGET_FOUND,
 
             /** @short  An already existing document was found inside a target frame.
-                        But its controller could not be suspended successfully. Thats
+                        But its controller could not be suspended successfully. That's
                         why the new load request was cancelled. The document could not
                         be replaced. */
             ID_COULD_NOT_SUSPEND_CONTROLLER,

@@ -112,40 +112,40 @@ ModalDialog DLG_DEFINE_CUSTOMSHOW
 	HelpID = HID_DLG_DEFINE_CUSTOMSHOW ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 248, 117 ) ;
+	Size = MAP_APPFONT ( 248, 147 ) ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	OKButton BTN_OK
 	{
-		Pos = MAP_APPFONT ( 187, 6 ) ;
+		Pos = MAP_APPFONT ( 192, 6 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
 	};
 	CancelButton BTN_CANCEL
 	{
-		Pos = MAP_APPFONT ( 187, 23 ) ;
+		Pos = MAP_APPFONT ( 192, 23 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton BTN_HELP
 	{
-		Pos = MAP_APPFONT ( 187, 43 ) ;
+		Pos = MAP_APPFONT ( 192, 43 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	FixedText FT_NAME
 	{
 		Pos = MAP_APPFONT ( 6, 8 ) ;
-		Size = MAP_APPFONT ( 30, 10 ) ;
+		Size = MAP_APPFONT ( 34, 10 ) ;
 		Text [ en-US ] = "Name" ;
 	};
 	Edit EDT_NAME
 	{
 		HelpID = "sd:Edit:DLG_DEFINE_CUSTOMSHOW:EDT_NAME" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 38, 6 ) ;
-		Size = MAP_APPFONT ( 141, 12 ) ;
+		Pos = MAP_APPFONT ( 42, 6 ) ;
+		Size = MAP_APPFONT ( 144, 12 ) ;
 		TabStop = TRUE ;
 	};
 	MultiListBox LB_PAGES
@@ -153,44 +153,44 @@ ModalDialog DLG_DEFINE_CUSTOMSHOW
 		HelpID = "sd:MultiListBox:DLG_DEFINE_CUSTOMSHOW:LB_PAGES" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 6, 35 ) ;
-		Size = MAP_APPFONT ( 75, 75 ) ;
+		Size = MAP_APPFONT ( 79, 105 ) ;
 		TabStop = TRUE ;
 		SimpleMode = TRUE ;
 	};
 	PushButton BTN_ADD
 	{
 		HelpID = "sd:PushButton:DLG_DEFINE_CUSTOMSHOW:BTN_ADD" ;
-		Pos = MAP_APPFONT ( 84, 67 ) ;
+		Pos = MAP_APPFONT ( 89, 71 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
-		Text = "~>>" ;
+		Text = "~>" ;
 		TabStop = TRUE ;
 	};
 	Control LB_CUSTOM_PAGES
 	{
 		HelpID = HID_DLG_DEFINE_CUSTOMSHOW_CTL ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 103, 35 ) ;
-		Size = MAP_APPFONT ( 75, 75 ) ;
+		Pos = MAP_APPFONT ( 107, 35 ) ;
+		Size = MAP_APPFONT ( 79, 105 ) ;
 		TabStop = TRUE ;
 	};
 	PushButton BTN_REMOVE
 	{
 		HelpID = "sd:PushButton:DLG_DEFINE_CUSTOMSHOW:BTN_REMOVE" ;
-		Pos = MAP_APPFONT ( 84, 95 ) ;
+		Pos = MAP_APPFONT ( 89, 89 ) ;
 		Size = MAP_APPFONT ( 14, 14 ) ;
-		Text = "~<<" ;
+		Text = "~<" ;
 		TabStop = TRUE ;
 	};
 	FixedText FT_PAGES
 	{
 		Pos = MAP_APPFONT ( 6, 24 ) ;
-		Size = MAP_APPFONT ( 83, 10 ) ;
+		Size = MAP_APPFONT ( 82, 10 ) ;
 		Text [ en-US ] = "Existing slides" ;
 	};
 	FixedText FT_CUSTOM_PAGES
 	{
-		Pos = MAP_APPFONT ( 103, 24 ) ;
-		Size = MAP_APPFONT ( 80, 10 ) ;
+		Pos = MAP_APPFONT ( 107, 24 ) ;
+		Size = MAP_APPFONT ( 82, 10 ) ;
 		Text [ en-US ] = "Selected slides" ;
 	};
 	Text [ en-US ] = "Define Custom Slide Show" ;

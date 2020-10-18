@@ -151,7 +151,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
                     In case of local file the system file locking is used.
 
             @return TRUE, if the stream was already part of the descriptor or could
-                    be created as new item. FALSE otherwhise.
+                    be created as new item. FALSE otherwise.
          */
         sal_Bool addInputStream();
 
@@ -170,7 +170,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
                     configuration settings.
 
             @return TRUE, if the stream was already part of the descriptor or could
-                    be created as new item. FALSE otherwhise.
+                    be created as new item. FALSE otherwise.
          */
         sal_Bool addInputStreamOwnLock();
 
@@ -182,7 +182,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
                     of a real readonly file.
 
             @Attention
-                    We dont check the property "ReadOnly" here. Because
+                    We don't check the property "ReadOnly" here. Because
                     this property can be set from outside and overwrites
                     the readonly state of  the stream.
                     If e.g. the stream could be opened read/write ...
@@ -190,7 +190,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
                     show a readonly UI on top of this read/write stream.
 
             @return TRUE, if the stream must be interpreted as readonly ...
-                    FALSE otherwhise.
+                    FALSE otherwise.
          */
         sal_Bool isStreamReadOnly() const;
 
@@ -326,7 +326,7 @@ class COMPHELPER_DLLPUBLIC MediaDescriptor : public SequenceAsHashMap
                     specifies whether the file should be locked
 
             @return TRUE, if the stream was already part of the descriptor or could
-                    be created as new item. FALSE otherwhise.
+                    be created as new item. FALSE otherwise.
          */
         COMPHELPER_DLLPRIVATE sal_Bool impl_addInputStream( sal_Bool bLockFile );
 };

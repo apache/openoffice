@@ -1154,7 +1154,7 @@ case "$build_os" in
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -arch x86_64"
+		   CXX="`xcrun -f clang++` -stdlib=libc++ -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
@@ -1322,7 +1322,7 @@ if test -n "$enable_werror" && test "$enable_werror" != "no"; then
    ENABLE_WERROR="TRUE"
    AC_MSG_RESULT([yes])
    AC_MSG_WARN([Turning warnings to errors has no effect in modules or])
-   AC_MSG_WARN([on platforms where it has been disabled explicitely])
+   AC_MSG_WARN([on platforms where it has been disabled explicitly])
    echo "Turning warnings to errors has no effect in modules or on platforms where it has been disabled explicitly" >> warn
 else
    ENABLE_WERROR="FALSE"
@@ -3943,7 +3943,7 @@ if test  "$_os" = "Darwin"; then
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
 
       dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
       if test -z "$sdk_found"; then
          AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
       else

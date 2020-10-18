@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,9 +97,9 @@ namespace framework{
 // This enum can be used to set different active states of frames
 enum EActiveState
 {
-	E_INACTIVE		,	// I'am not a member of active path in tree and i don't have the focus.
-	E_ACTIVE		,	// I'am in the middle of an active path in tree and i don't have the focus.
-	E_FOCUS				// I have the focus now. I must a member of an active path!
+	E_INACTIVE		,	// I am not a member of active path in tree and I don't have the focus.
+	E_ACTIVE		,	// I am in the middle of an active path in tree and I don't have the focus.
+	E_FOCUS				// I have the focus now. I must be a member of an active path!
 };
 
 //_________________________________________________________________________________________________________________
@@ -108,8 +108,8 @@ enum EActiveState
 
 /*-************************************************************************************************************//**
 	@short		implements a normal frame of hierarchy
-    @descr      An instance of these class can be a normal node in frame tree. A frame support influencing of his
-                subtree, find of subframes, activate- and deactivate-mechanism as well as
+	@descr		An instance of this class can be a normal node in frame tree. A frame support influencing of his
+				subtree, find of subframes, activate- and deactivate-mechanism as well as
 				set/get of a frame window, component or controller.
 
 	@attention	This implementation supports three states: a)uninitialized, b)working, c)disposed
@@ -117,23 +117,23 @@ enum EActiveState
 				How you should work with this service:
 					i) 		create it by using "xServiceManager->createInstance(...)"
 					ii)		call XInitialization::initialize() with a valid window reference or use createInstanceWithArguments() at i)
-					iii)	works with object
+					iii)	work with object
 					iv)		dispose object by calling XComponent::dispose()
 				After iv) all further requests are rejected by exceptions! (DisposedException)
 
-    @base       ThreadHelpBase
-                    help to guarantee correct initialized lock member at startup
-    @base       TransactionBase
-                    help to implement unbreakable interface calls
-    @base       OBroadcastHelper
+	@base		ThreadHelpBase
+					help to guarantee correct initialized lock member at startup
+	@base		TransactionBase
+					help to implement unbreakable interface calls
+	@base		OBroadcastHelper
 				OPropertySetHelper
-                    implements the property set
-    @base       OWeakObject
-                    provides the refcount and XInterface, XWeak
+					implements the property set
+	@base		OWeakObject
+					provides the refcount and XInterface, XWeak
 
 	@devstatus	ready to use
 	@threadsafe	yes
-    @modified   04.10.2004 10:47, as96863
+	@modified   04.10.2004 10:47, as96863
 *//*-*************************************************************************************************************/
 class Frame	:	// interfaces
 				public	css::lang::XTypeProvider					,
@@ -146,16 +146,16 @@ class Frame	:	// interfaces
 				public	css::awt::XWindowListener					,	// => XEventListener
 				public	css::awt::XTopWindowListener				,
 				public	css::awt::XFocusListener					,
-                public  css::document::XActionLockable              ,
-                public  css::util::XCloseable                       ,   // => XCloseBroadcaster
-                public  css::frame::XComponentLoader                ,
-                public  css::frame::XTitle                          ,
-                public  css::frame::XTitleChangeBroadcaster         ,
+				public  css::document::XActionLockable				,
+				public  css::util::XCloseable						,   // => XCloseBroadcaster
+				public  css::frame::XComponentLoader				,
+				public  css::frame::XTitle							,
+				public  css::frame::XTitleChangeBroadcaster			,
 				// base classes
 				// Order is necessary for right initialization of this class!
-                public  ThreadHelpBase                              ,
-                public  TransactionBase                             ,
-                public  PropertySetHelper                           ,   // helper implements ThreadHelpbase, TransactionBase, XPropertySet, XPropertySetInfo
+				public  ThreadHelpBase								,
+				public  TransactionBase								,
+				public  PropertySetHelper							,   // helper implements ThreadHelpbase, TransactionBase, XPropertySet, XPropertySetInfo
 				public	::cppu::OWeakObject								// helper implements XInterface, XWeak
 {
 	//-------------------------------------------------------------------------------------------------------------
@@ -191,9 +191,9 @@ class Frame	:	// interfaces
 		//---------------------------------------------------------------------------------------------------------
 		//	XFramesSupplier
 		//---------------------------------------------------------------------------------------------------------
-    	virtual css::uno::Reference< css::frame::XFrames >			SAL_CALL getFrames	  						(																									) throw( css::uno::RuntimeException );
+    	virtual css::uno::Reference< css::frame::XFrames >			SAL_CALL getFrames							(																									) throw( css::uno::RuntimeException );
     	virtual css::uno::Reference< css::frame::XFrame > 			SAL_CALL getActiveFrame						(																									) throw( css::uno::RuntimeException );
-    	virtual void									  			SAL_CALL setActiveFrame						(	const	css::uno::Reference< css::frame::XFrame >&							xFrame				) throw( css::uno::RuntimeException );
+    	virtual void												SAL_CALL setActiveFrame						(	const	css::uno::Reference< css::frame::XFrame >&							xFrame				) throw( css::uno::RuntimeException );
 
 		//---------------------------------------------------------------------------------------------------------
 		//	XFrame
@@ -339,7 +339,7 @@ class Frame	:	// interfaces
 
 		/*-****************************************************************************************************//**
 			@short		helper methods
-			@descr		Follow methods are needed at different points of our code (more then ones!).
+			@descr		Follow methods are needed at different points of our code (more than once!).
 
             @attention  Threadsafe methods are signed by "implts_..."!
 		*//*-*****************************************************************************************************/
@@ -369,12 +369,12 @@ class Frame	:	// interfaces
 	//-------------------------------------------------------------------------------------------------------------
 
 		/*-****************************************************************************************************//**
-			@short		debug-method to check incoming parameter of some other mehods of this class
+			@short		debug-method to check incoming parameter of some other methods of this class
 			@descr		The following methods are used to check parameters for other methods
 						of this class. The return value is used directly for an ASSERT(...).
 
-			@attention	This methods are static and can't use our member directly! It's better for threadsafe code...
-						because we call it with references or pointer to check variables ... and must make it safe
+			@attention	These methods are static and can't use our member directly! It's better for threadsafe code...
+						because we call it with references or pointer to check variables... and must make it safe
 						by himself!
 
 			@seealso	ASSERTs in implementation!
@@ -421,14 +421,14 @@ class Frame	:	// interfaces
         css::uno::Reference< css::awt::XWindow >                                m_xComponentWindow                  ;   /// window of the actual component
         css::uno::Reference< css::frame::XController >                          m_xController                       ;   /// controller of the actual frame
         css::uno::Reference< css::datatransfer::dnd::XDropTargetListener >      m_xDropTargetListener               ;   /// listen to drag & drop
-        EActiveState                                                            m_eActiveState                      ;   /// state, if i'am a member of active path in tree or i have the focus or ...
+        EActiveState                                                            m_eActiveState                      ;   /// state, if I am a member of active path in tree or I have the focus or ...
         ::rtl::OUString                                                         m_sName                             ;   /// name of this frame
-        sal_Bool                                                                m_bIsFrameTop                       ;   /// frame has no parent or the parent is a taskor the desktop
+        sal_Bool                                                                m_bIsFrameTop                       ;   /// frame has no parent or the parent is a task on the desktop
         sal_Bool                                                                m_bConnected                        ;   /// due to FrameActionEvent
         sal_Int16                                                               m_nExternalLockCount                ;
         css::uno::Reference< css::frame::XDispatchRecorderSupplier >            m_xDispatchRecorderSupplier         ;   /// is used for dispatch recording and will be set/get from outside. Frame provide it only!
         SvtCommandOptions                                                       m_aCommandOptions                   ;   /// ref counted class to support disabling commands defined by configuration file
-        sal_Bool                                                                m_bSelfClose                        ;   /// in case of CloseVetoException on method close() wqs thrown by ourself - we must close ourself later if no internal processes are running
+        sal_Bool                                                                m_bSelfClose                        ;   /// in case of CloseVetoException on method close() was thrown by ourself - we must close ourself later if no internal processes are running
         sal_Bool                                                                m_bIsHidden                         ;   /// indicates, if this frame is used in hidden mode or not
         static css::uno::WeakReference< css::frame::XFrame >                    m_xCloserFrame                      ;   /// holds the only frame, which must show the special closer menu item (can be NULL!)
         css::uno::Reference< ::com::sun::star::frame::XLayoutManager >    m_xLayoutManager                    ;   /// is used to layout the child windows of the frame.

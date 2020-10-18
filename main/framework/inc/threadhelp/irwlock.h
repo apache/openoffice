@@ -52,7 +52,7 @@ enum ELockMode
 /*-************************************************************************************************************//**
 	@descr			We implement two guards for using an rw-lock. But if you wish to implement
 					different rw-locks to you will have problems by using with same guard implementation!
-					Thats why we define this "pure virtual base class" ...
+					That's why we define this "pure virtual base class" ...
 					All rw-locks must support this base interface for working and all guard must use this one too!
 *//*-*************************************************************************************************************/
 class IRWLock

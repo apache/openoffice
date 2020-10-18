@@ -176,7 +176,7 @@ css::uno::Reference< css::embed::XStorage > StorageHolder::openPath(const ::rtl:
         aReadLock.lock();
 
         // If we found an already open storage ... we must increase
-        // its use count. Otherwhise it will may be closed to early :-)
+        // its use count. Otherwise it will maybe closed to early :-)
         TPath2StorageInfo::iterator pCheck = m_lStorages.find(sCheckPath);
         TStorageInfo*               pInfo  = 0;
         if (pCheck != m_lStorages.end())
@@ -225,8 +225,8 @@ css::uno::Reference< css::embed::XStorage > StorageHolder::openPath(const ::rtl:
         sRelPath += PATH_SEPERATOR;
     }         
     
-    // TODO think about return last storage as working storage ... but dont caching it inside this holder!
-    // => otherwhise the same storage is may be commit more then once.
+    // TODO think about return last storage as working storage ... but don't cache it inside this holder!
+    // => otherwise the same storage is maybe committed more than once.
     
     return xChild;
 }
@@ -282,7 +282,7 @@ void StorageHolder::commitPath(const ::rtl::OUString& sPath)
     
     css::uno::Reference< css::embed::XTransactedObject > xCommit;
     StorageHolder::TStorageList::reverse_iterator pIt;
-    for (  pIt  = lStorages.rbegin(); // order of commit is important ... otherwhise changes are not recognized!
+    for (  pIt  = lStorages.rbegin(); // order of commit is important ... otherwise changes are not recognized!
            pIt != lStorages.rend()  ;
          ++pIt                      ) 
     {
@@ -540,8 +540,8 @@ css::uno::Reference< css::embed::XStorage > StorageHolder::openSubStorageWithFal
         throw exResult;
 
     // c) try it readonly
-    //    dont catch exception here! Outside code whish to know, if operation failed or not.
-    //    Otherwhise they work on NULL references ...
+    //    don't catch exception here! Outside code whish to know, if operation failed or not.
+    //    Otherwise they work on NULL references ...
     sal_Int32 eNewMode = (eOpenMode & ~css::embed::ElementModes::WRITE);
     css::uno::Reference< css::embed::XStorage > xSubStorage = xBaseStorage->openStorageElement(sSubStorage, eNewMode);
     if (xSubStorage.is())
@@ -580,8 +580,8 @@ css::uno::Reference< css::io::XStream > StorageHolder::openSubStreamWithFallback
         throw exResult;
 
     // c) try it readonly
-    //    dont catch exception here! Outside code whish to know, if operation failed or not.
-    //    Otherwhise they work on NULL references ...
+    //    don't catch exception here! Outside code whish to know, if operation failed or not.
+    //    Otherwise they work on NULL references ...
     sal_Int32 eNewMode = (eOpenMode & ~css::embed::ElementModes::WRITE);
     css::uno::Reference< css::io::XStream > xSubStream = xBaseStorage->openStreamElement(sSubStream, eNewMode);
     if (xSubStream.is())

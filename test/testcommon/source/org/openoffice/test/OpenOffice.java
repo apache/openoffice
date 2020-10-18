@@ -332,7 +332,7 @@ public class OpenOffice {
 					newContent += item;
 				}
 			}
-			content.replace("</oor:items>", "");
+			content = content.replace("</oor:items>", "");
 			if (content.length() == 0)
 				content += "<?xml version=\"1.0\" encoding=\"UTF-8\"?><oor:items xmlns:oor=\"http://openoffice.org/2001/registry\" xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">";
 			content += newContent + "</oor:items>";

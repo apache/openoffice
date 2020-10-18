@@ -128,7 +128,7 @@ static Window* GetTopMostParentSystemWindow( Window* pWindow )
     if ( pWindow )
     {
         // ->manually search topmost system window
-        // required because their might be another system window between this and the top window
+        // required because there might be another system window between this and the top window
         pWindow = pWindow->GetParent();
         SystemWindow* pTopMostSysWin = NULL;
         while ( pWindow )
@@ -874,7 +874,7 @@ void SfxToolBoxControl::createAndPositionSubToolBar( const ::rtl::OUString& rSub
                     static_cast< OWeakObject * >( this ), UNO_QUERY ));
                 xDockWindow->enableDocking( sal_True );
 
-                // keep refererence to UIElement to avoid its destruction
+                // keep reference to UIElement to avoid its destruction
                 if ( pImpl->mxUIElement.is() )
                 {
                     Reference< XComponent > xComponent( pImpl->mxUIElement, UNO_QUERY );

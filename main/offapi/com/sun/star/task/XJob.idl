@@ -45,7 +45,7 @@ module com {  module sun {  module star {  module task {
 
     <p>
     Instead of <type>XAsyncJob</type> the implementation of this interface
-    will be executed synchronously everytimes. That means: they can be shure that the
+    will be executed synchronously everytimes. That means: they can be sure that the
     current stack context will be blocked till this job finish it's work.
     </p>
 

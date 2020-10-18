@@ -77,7 +77,7 @@ class HelpAgentDispatcher : public  css::lang::XTypeProvider
         //---------------------------------------
         /** @short  hold this dispatcher alive till the timer was killed or expired!
 			@descr	Because the vcl timer knows us by using a pointer ... and our instance is used
-					ref counted normaly it can happen that our reference goes down to 0 ... and the timer
+					ref counted normally it can happen that our reference goes down to 0 ... and the timer
 					runs into some trouble. So we hold us self alive till the timer could be stopped or expired.
 		*/
 		css::uno::Reference< css::uno::XInterface > m_xSelfHold;
@@ -173,13 +173,13 @@ class HelpAgentDispatcher : public  css::lang::XTypeProvider
 		
         //---------------------------------------
         /** @short  starts the timer for showing the agent window.
-			@descr	The timer wont be started twice ... this method checks the current running state .-)
+			@descr	The timer won't be started twice ... this method checks the current running state .-)
          */
         void implts_startTimer();
 		
         //---------------------------------------
         /** @short  stop the timer.
-			@descr	The timer wont be stopped twice ... this method checks the current running state .-)
+			@descr	The timer won't be stopped twice ... this method checks the current running state .-)
 					Further this method marks the current help URL (m_xCurrentURL) as "ignorable".
 					Cause the user ignored it !
          */

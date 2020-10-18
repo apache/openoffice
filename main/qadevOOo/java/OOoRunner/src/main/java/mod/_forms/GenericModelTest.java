@@ -173,7 +173,7 @@ public class GenericModelTest extends TestCase {
      * interface <CODE>com::sun::star::form::XUpdateBroadcaster</CODE> is tested.
      * The interface test needs the <CODE>ObjectRelation</CODE>
      * "XUpdateBroadcaster.Checker" which is a <CODE>ifc.form._XUpdateBroadcaster.UpdateChecker</CODE>.
-     * Normaly the <CODE>Checker</CODE> uses <CODE>util.ValueChanger</CODE> to change
+     * Normally the <CODE>Checker</CODE> uses <CODE>util.ValueChanger</CODE> to change
      * the value of the property. If the current of this property is NULL the
      * <CODE>ValueChanger</CODE> is unable to change the value. In this case the value
      * of this variable was used.

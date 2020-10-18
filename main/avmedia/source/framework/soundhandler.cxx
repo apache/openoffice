@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -84,9 +84,9 @@ void SAL_CALL SoundHandler::release() throw()
 
 css::uno::Any SAL_CALL SoundHandler::queryInterface( const css::uno::Type& aType ) throw( css::uno::RuntimeException )
 {
-       /* Attention: Don't use mutex or guard in this method!!! Is a method of XInterface.     */
+       /* Attention: Don't use mutex or guard in this method!!! It's a method of XInterface. */
         /* Ask for my own supported interfaces ...*/
-       css::uno::Any aReturn( ::cppu::queryInterface( aType, 
+       css::uno::Any aReturn( ::cppu::queryInterface( aType,
                static_cast< css::lang::XTypeProvider* >(this),
                static_cast< css::lang::XServiceInfo* >(this),
                static_cast< css::frame::XNotifyingDispatch* >(this),
@@ -112,9 +112,9 @@ css::uno::Sequence< sal_Int8 > SAL_CALL SoundHandler::getImplementationId() thro
     static ::cppu::OImplementationId* pID = NULL ;
     if ( pID == NULL )
     {
-        /* Ready for multithreading; get global mutex for first call of this method only! see before   */
+        /* Ready for multithreading; get global mutex for first call of this method only! see before */
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-        /* Control these pointer again ... it can be, that another instance will be faster then these! */
+        /* Control these pointer again ... it can be, that another instance will be faster than these! */
         if ( pID == NULL )
         {
             /* Create a new static ID ... */
@@ -127,7 +127,7 @@ css::uno::Sequence< sal_Int8 > SAL_CALL SoundHandler::getImplementationId() thro
 }
 
 css::uno::Sequence< css::uno::Type > SAL_CALL SoundHandler::getTypes() throw( css::uno::RuntimeException )
-{                                                                     
+{
     /* Optimize this method !                                       */
     /* We initialize a static variable only one time.               */
     /* And we don't must use a mutex at every call!                 */
@@ -136,12 +136,12 @@ css::uno::Sequence< css::uno::Type > SAL_CALL SoundHandler::getTypes() throw( cs
     static ::cppu::OTypeCollection* pTypeCollection = NULL ;
     if ( pTypeCollection == NULL )
     {
-        /* Ready for multithreading; get global mutex for first call of this method only! see before   */
+        /* Ready for multithreading; get global mutex for first call of this method only! see before */
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-        /* Control these pointer again ... it can be, that another instance will be faster then these! */
+        /* Control these pointer again ... it can be, that another instance will be faster than these! */
         if ( pTypeCollection == NULL )
         {
-            /* Create a static typecollection ...           */
+            /* Create a static typecollection ... */
             static ::cppu::OTypeCollection aTypeCollection
                 (
                     ::getCppuType(( const ::com::sun::star::uno::Reference< css::lang::XTypeProvider >*)NULL ),
@@ -181,15 +181,15 @@ sal_Bool SAL_CALL SoundHandler::supportsService( const ::rtl::OUString& sService
     /* Get names of all supported servicenames. */
     css::uno::Sequence< ::rtl::OUString >  seqServiceNames =   getSupportedServiceNames();
     const ::rtl::OUString*                 pArray          =   seqServiceNames.getConstArray();
-    sal_Int32                              nCounter        =   0;                                           
-    sal_Int32                              nLength         =   seqServiceNames.getLength();      
+    sal_Int32                              nCounter        =   0;
+    sal_Int32                              nLength         =   seqServiceNames.getLength();
     /* Search for right name in list. */
     while   (
               ( nCounter      <       nLength         )       &&
               ( bReturn       ==      sal_False       )
             )
     {
-        /* Is name was found, say "YES, SERVICE IS SUPPORTED." and break loop. */
+        /* If name was found, say "YES, SERVICE IS SUPPORTED." and break loop. */
         if ( pArray[nCounter] == sServiceName )
         {
             bReturn = sal_True ;
@@ -310,7 +310,7 @@ SoundHandler::~SoundHandler()
                 Playing of sound is asynchron every time.
 
     @attention  We must hold us alive by ourself ... because we use async. vcl sound player ... but playing is started
-                in async interface call "dispatch()" too. And caller forget us imediatly. But then our uno ref count
+                in async interface call "dispatch()" too. And caller forget us immediately. But then our uno ref count
                 will decreased to 0 and will die. The only solution is to use own reference to our implementation.
                 But we do it for really started jobs only and release it during call back of vcl.
 
@@ -331,7 +331,7 @@ void SAL_CALL SoundHandler::dispatchWithNotification(const css::util::URL&      
     // SAFE {
     const ::vos::OGuard aLock( m_aLock );
 
-    { 
+    {
 	//close streams otherwise on windows we can't reopen the file in the
 	//media player when we pass the url to directx as it'll already be open
         ::comphelper::MediaDescriptor aDescriptor(lDescriptor);
@@ -390,12 +390,12 @@ void SAL_CALL SoundHandler::dispatch( const css::util::URL&                     
                 So call can search for another detect service and ask him too.
 
     @attention  a) We don't need any mutex here ... because we don't use any member!
-                b) Dont' use internal player instance "m_pPlayer" to detect given sound file!
+                b) Don't use internal player instance "m_pPlayer" to detect given sound file!
                    It's not necessary to do that ... and we can use temp. variable to do the same.
                    This way is easy - we don't must synchronize it with currently played sounds!
                    Another reason to do so ... We are a listener on our internal ma_Player object.
                    If you would call "IsSoundFile()" on this instance, he would call us back and
-                   we make some uneccssary things ...
+                   we make some unnecessary things ...
 
     @seealso    -
 
@@ -407,7 +407,7 @@ void SAL_CALL SoundHandler::dispatch( const css::util::URL&                     
 *//*-*************************************************************************************************************/
 ::rtl::OUString SAL_CALL SoundHandler::detect( css::uno::Sequence< css::beans::PropertyValue >& lDescriptor ) throw( css::uno::RuntimeException )
 {
-    // Our default is "nothing". So we can return it, if detection failed or fily type is really unknown.
+    // Our default is "nothing". So we can return it, if detection failed or file type is really unknown.
     ::rtl::OUString sTypeName;
 
     // Analyze given descriptor to find filename or input stream or ...
@@ -435,7 +435,7 @@ void SAL_CALL SoundHandler::dispatch( const css::util::URL&                     
 /*-************************************************************************************************************//**
     @short      call back of sound player
     @descr      Our player call us back to give us some informations.
-                We use this informations to callback our might existing listener.
+                We use these informations to callback our might existing listener.
 
     @seealso    method dispatchWithNotification()
 
@@ -500,12 +500,12 @@ extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnviron
 extern "C" SAL_DLLPUBLIC_EXPORT void* SAL_CALL component_getFactory(const sal_Char* pImplementationName, void* pServiceManager, void* /*pRegistryKey*/ )
 {
     void* pReturn = NULL;
-    if  (pServiceManager !=  NULL )
+    if  (pServiceManager != NULL )
     {
         /* Define variables which are used in following macros. */
         css::uno::Reference< ::com::sun::star::lang::XSingleServiceFactory > xFactory;
         css::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory > xServiceManager;
-            xServiceManager = reinterpret_cast< ::com::sun::star::lang::XMultiServiceFactory* >( pServiceManager )  ;
+            xServiceManager = reinterpret_cast< ::com::sun::star::lang::XMultiServiceFactory* >( pServiceManager ) ;
 
         if ( avmedia::SoundHandler::impl_getStaticImplementationName().equals( ::rtl::OUString::createFromAscii( pImplementationName ) ) )
             xFactory = avmedia::SoundHandler::impl_createFactory( xServiceManager );

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,12 +53,12 @@ DWORD passOutputToConsole(HANDLE readPipe, HANDLE console)
 	//Indicates that we read an odd number of bytes. That is, we only read half of the last
 	//wchar_t
 	bool bIncompleteWchar = false;
-	//fprintf, fwprintf will both send char data without the terminating zero. 
+	//fprintf, fwprintf will both send char data without the terminating zero.
 	//fwprintf converts the unicode string first.
-	//We expect here to receive unicode without the terminating zero. 
-	//unopkg and the extension manager code MUST 
+	//We expect here to receive unicode without the terminating zero.
+	//unopkg and the extension manager code MUST
 	//use dp_misc::writeConsole instead of using fprintf, etc.
-	
+
 	DWORD dwToRead = sizeof(aBuffer);
 	BYTE * pBuffer = aBuffer;
 	while ( ReadFile( hReadPipe, pBuffer, dwToRead, &dwRead, NULL ) )
@@ -68,32 +68,32 @@ DWORD passOutputToConsole(HANDLE readPipe, HANDLE console)
 		//that one byte.
 		if (bIncompleteWchar)
 			dwRead++;
-		//We must make sure that only complete wchar_t|s are written. WriteConsolse takes
+		//We must make sure that only complete wchar_t|s are written. WriteConsole takes
 		//the number of wchar_t|s as argument. ReadFile, however, reads bytes.
 		bIncompleteWchar = dwRead % 2 ? true : false;
 		if (bIncompleteWchar)
 		{
 			//To test this case, give aBuffer a small odd size, e.g. aBuffer[3]
 			//The last byte, which is the incomplete wchar_t (half of it), will not be written.
-			fSuccess = WriteConsoleW( console, aBuffer, 
+			fSuccess = WriteConsoleW( console, aBuffer,
 				(dwRead - 1) / 2, &dwWritten, NULL );
-			
-			//Move the last byte to the front of the buffer, so that it is the start of the 
+
+			//Move the last byte to the front of the buffer, so that it is the start of the
 			//next string
 			aBuffer[0] = aBuffer[dwRead - 1];
-			
+
 			//Make sure that ReadFile does not overwrite the first byte the next time
 			dwToRead = sizeof(aBuffer) - 1;
 			pBuffer = aBuffer + 1;
-			
+
 		}
 		else
 		{	//We have read an even number of bytes. Therefore, we do not put the last incomplete
-			//wchar_t at the front of the buffer. We will use the complete buffer the next time 
+			//wchar_t at the front of the buffer. We will use the complete buffer the next time
 			//when ReadFile is called.
 			dwToRead = sizeof(aBuffer);
 			pBuffer = aBuffer;
-			fSuccess = WriteConsoleW( console, 
+			fSuccess = WriteConsoleW( console,
 				aBuffer, dwRead / 2, &dwWritten, NULL );
 		}
 	}
@@ -177,12 +177,12 @@ DWORD WINAPI InputThread( LPVOID pParam )
     char * mbBuff = new char[cNewLine];
     WideCharToMultiByte(
         GetConsoleCP(), 0, L"\r\n", 2, mbBuff, cNewLine, NULL, NULL);
-    
+
     const size_t dwBufferSize = 256;
     char* readBuf = (char*) malloc(dwBufferSize);
     int readAll = 0;
     size_t curBufSize = dwBufferSize;
-    
+
     while ( ReadFile( GetStdHandle( STD_INPUT_HANDLE ),
                       readBuf + readAll,
                       curBufSize - readAll, &dwRead, NULL ) )
@@ -195,11 +195,11 @@ DWORD WINAPI InputThread( LPVOID pParam )
             curBufSize *= 2;
             readBuf = (char *) realloc(readBuf, curBufSize);
         }
-        
-        //If the buffer was filled completely then 
+
+        //If the buffer was filled completely then
         //there could be more input coming. But if we read from the console
         //and the console input fits exactly in the buffer, then the next
-        //ReadFile would block until the users presses return, etc.
+        //ReadFile would block until the user presses return, etc.
         //Therefor we check if last character is a new line.
         //To test this, set dwBufferSize to 4 and enter "no". This should produce
         //4 bytes with most code pages.
@@ -219,7 +219,7 @@ DWORD WINAPI InputThread( LPVOID pParam )
         //Do the conversion.
         MultiByteToWideChar(
             GetConsoleCP(), MB_PRECOMPOSED, readBuf, readAll, wideBuf, sizeWBuf);
-        
+
         BOOL	fSuccess;
 		DWORD	dwWritten;
         fSuccess = WriteFile( hWritePipe, wideBuf, sizeWBuf * 2, &dwWritten, NULL );
@@ -273,7 +273,7 @@ DWORD WINAPI WaitForUIThread( LPVOID pParam )
 HANDLE	hTargetProcess = INVALID_HANDLE_VALUE;
 
 BOOL WINAPI CtrlBreakHandler(
-  DWORD   //  control signal type
+  DWORD   // control signal type
 )
 {
 	TerminateProcess( hTargetProcess, 255 );
@@ -302,7 +302,7 @@ int _tmain( int, _TCHAR ** )
 	// Create an output pipe where the write end is inheritable
 
 	HANDLE	hOutputRead, hOutputWrite;
-	
+
 	if ( CreatePipe( &hOutputRead, &hOutputWrite, NULL, 0 ) )
 	{
 		HANDLE	hTemp;
@@ -317,7 +317,7 @@ int _tmain( int, _TCHAR ** )
 	// Create an error pipe where the write end is inheritable
 
 	HANDLE	hErrorRead, hErrorWrite;
-	
+
 	if ( CreatePipe( &hErrorRead, &hErrorWrite, NULL, 0 ) )
 	{
 		HANDLE	hTemp;
@@ -397,7 +397,7 @@ int _tmain( int, _TCHAR ** )
 		HANDLE	hWaitForUIThread = CreateThread( NULL, 0, WaitForUIThread, (LPVOID)aProcessInfo.hProcess, 0, &dwWaitForUIThreadId );
 
 		DWORD	dwWaitResult;
-		HANDLE	hObjects[] = 
+		HANDLE	hObjects[] =
 			{
 				hTargetProcess,
 				hWaitForUIThread,
@@ -405,9 +405,9 @@ int _tmain( int, _TCHAR ** )
 				hErrorThread
 			};
 
- #ifdef UNOPKG       
-        dwWaitResult = WaitForMultipleObjects( elementsof(hObjects), hObjects, TRUE, INFINITE );
- #else        
+ #ifdef UNOPKG
+		dwWaitResult = WaitForMultipleObjects( elementsof(hObjects), hObjects, TRUE, INFINITE );
+ #else
 		bool	bDetach = false;
 		int		nOpenPipes = 2;
 		do
@@ -429,7 +429,7 @@ int _tmain( int, _TCHAR ** )
 				break;
 			}
 		} while( !bDetach );
-            
+
 #endif
 
 		CloseHandle( hOutputThread );

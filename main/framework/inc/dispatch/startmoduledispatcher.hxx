@@ -103,7 +103,7 @@ class StartModuleDispatcher : public css::lang::XTypeProvider
 
             @param  xSMGR
                     an uno service manager, which is needed to create uno resource
-                    internaly.
+                    internally.
 
             @param  xFrame
                     the frame where the corresponding dispatch was started.

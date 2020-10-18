@@ -627,7 +627,7 @@ void SAL_CALL AutoRecovery::dispatch(const css::util::URL&                      
     // This can be done immediately ... must not been done asynchronous.
     if ((eNewJob & AutoRecovery::E_DISABLE_AUTORECOVERY) == AutoRecovery::E_DISABLE_AUTORECOVERY)
     {
-        // it's important to set a flag internaly, so AutoRecovery will be suppressed - even if it's requested.
+        // it's important to set a flag internally, so AutoRecovery will be suppressed - even if it's requested.
         m_eJob |= eNewJob;
         implts_stopTimer();
         implts_stopListening();
@@ -898,7 +898,7 @@ void SAL_CALL AutoRecovery::notifyEvent(const css::document::EventObject& aEvent
     }
     /* document saved as copy => mark it as "non used by concurrent save operation".
        so we can try to create a backup copy if next time AutoSave is started too.
-       Dont remove temp. files or change the modified state of the document!
+       Don't remove temp. files or change the modified state of the document!
        It was not really saved to the original file ...
     */
     else
@@ -908,7 +908,7 @@ void SAL_CALL AutoRecovery::notifyEvent(const css::document::EventObject& aEvent
     }
     // If saving of a document failed by an error ... we have to save this document
     // by ourself next time AutoSave or EmergencySave is triggered.
-    // But we can reset the state "used for other save requests". Otherwhise
+    // But we can reset the state "used for other save requests". Otherwise
     // these documents will never be saved!
     else
     if (
@@ -977,8 +977,8 @@ void SAL_CALL AutoRecovery::changesOccurred(const css::util::ChangesEvent& aEven
     // <- SAFE ----------------------------------
 
     // Note: This call stops the timer and starts it again.
-    // But it checks the different timer states internaly and
-    // may be suppress the restart!
+    // But it checks the different timer states internally and
+    // may suppress the restart!
     implts_updateTimer();
 }
 
@@ -1013,7 +1013,7 @@ void SAL_CALL AutoRecovery::disposing(const css::lang::EventObject& aEvent)
     }
 
     // dispose from one of our cached documents ?
-    // Normaly they should send a OnUnload message ...
+    // Normally they should send a OnUnload message ...
     // But some stacktraces shows another possible use case .-)
     css::uno::Reference< css::frame::XModel > xDocument(aEvent.Source, css::uno::UNO_QUERY);
     if (xDocument.is())
@@ -1426,7 +1426,7 @@ void AutoRecovery::implts_flushConfigItem(const AutoRecovery::TDocumentInfo& rIn
         }
         catch(const css::uno::Exception& ex)
             {
-                // a) FULL DISC seams to be the problem behind                              => show error and retry it forever (e.g. retry=300)
+                // a) FULL DISC seems to be the problem behind                              => show error and retry it forever (e.g. retry=300)
                 // b) unknown problem (may be locking problem)                              => reset RETRY value to more useful value(!) (e.g. retry=3)
                 // c) unknown problem (may be locking problem) + 1..2 repeating operations  => throw the original exception to force generation of a stacktrace !
 
@@ -1630,7 +1630,7 @@ IMPL_LINK(AutoRecovery, implts_timerExpired, void*, EMPTYARG)
 
         // The timer must be ignored if AutoSave/Recovery was disabled for this
         // office session. That can happen if e.g. the command line arguments "-norestore" or "-headless"
-        // was set. But normaly the timer was disabled if recovery was disabled ...
+        // was set. But normally the timer was disabled if recovery was disabled ...
         // But so we are more "safe" .-)
         // SAFE -> ----------------------------------
         ReadGuard aReadLock(m_aLock);
@@ -1748,8 +1748,8 @@ void AutoRecovery::implts_registerDocument(const css::uno::Reference< css::frame
     AutoRecovery::TDocumentList::iterator pIt = AutoRecovery::impl_searchDocument(m_lDocCache, xDocument);
     if (pIt != m_lDocCache.end())
     {
-        // Normaly nothing must be done for this "late" notification.
-        // But may be the modified state was changed inbetween.
+        // Normally nothing must be done for this "late" notification.
+        // But maybe the modified state was changed inbetween.
         // Check it ...
         implts_updateModifiedState(xDocument);
         return;
@@ -1765,7 +1765,7 @@ void AutoRecovery::implts_registerDocument(const css::uno::Reference< css::frame
     if (bNoAutoSave)
         return;
 
-    // Check if doc is well known on the desktop. Otherwhise ignore it!
+    // Check if doc is well known on the desktop. Otherwise ignore it!
     // Other frames mostly are used from external programs - e.g. the bean ...
     css::uno::Reference< css::frame::XController > xController = xDocument->getCurrentController();
     if (!xController.is())
@@ -1882,7 +1882,7 @@ void AutoRecovery::implts_deregisterDocument(const css::uno::Reference< css::fra
 
     // Sometimes we close documents by ourself.
     // And these documents can't be deregistered.
-    // Otherwhise we loos our configuration data ... but need it !
+    // Otherwise we lose our configuration data ... but need it !
     // see SessionSave !
     if (aInfo.IgnoreClosing)
         return;
@@ -1891,14 +1891,14 @@ void AutoRecovery::implts_deregisterDocument(const css::uno::Reference< css::fra
     pIt = AutoRecovery::impl_searchDocument(m_lDocCache, xDocument);
     if (pIt != m_lDocCache.end())
         m_lDocCache.erase(pIt);
-    pIt = m_lDocCache.end(); // otherwhise its not specified what pIt means!
+    pIt = m_lDocCache.end(); // otherwise it's not specified what pIt means!
     aCacheLock2.unlock();
 
     aWriteLock.unlock();
     // <- SAFE ----------------------------------
 
     /* This method is called within disposing() of the document too. But there it's not a good idea to
-       deregister us as listener. Furter it make no sense - because the broadcaster dies.
+       deregister us as listener. Further it makes no sense - because the broadcaster dies.
        So we suppress deregistration in such case ...
     */
     if (bStopListening)
@@ -2142,7 +2142,7 @@ void AutoRecovery::implts_prepareSessionShutdown()
         // Prevent us from deregistration of these documents.
         // Because we close these documents by ourself (see XClosable below) ...
         // it's fact, that we reach our deregistration method. There we
-        // must not(!) update our configuration ... Otherwhise all
+        // must not(!) update our configuration ... Otherwise all
         // session data are lost !!!
         rInfo.IgnoreClosing = sal_True;
 
@@ -2176,7 +2176,7 @@ void AutoRecovery::implts_prepareSessionShutdown()
                 catch(const css::uno::Exception&)
                     {
                         // At least it's only a try to close these documents before anybody else it does.
-                        // So it seams to be possible to ignore any error here .-)
+                        // So it seems to be possible to ignore any error here .-)
                     }
 
                 rInfo.Document.clear();
@@ -2193,7 +2193,7 @@ void AutoRecovery::implts_prepareSessionShutdown()
 
         #i64599#
 
-        Normaly the MediaDescriptor argument NoAutoSave indicates,
+        Normally the MediaDescriptor argument NoAutoSave indicates,
         that a document must be ignored for AutoSave and Recovery.
         But sometimes XModel->getArgs() does not contained this information
         if implts_registerDocument() was called.
@@ -2305,7 +2305,7 @@ AutoRecovery::ETimerType AutoRecovery::implts_saveDocs(      sal_Bool        bAl
         //      save it after all other documents was saved successfully. That decrease
         //      the chance for a crash inside a crash.
         //      On the other side it's not necessary for documents, which are not modified.
-        //      They can be handled normaly - means we patch the corresponding configuration entry only.
+        //      They can be handled normally - means we patch the corresponding configuration entry only.
         // iii) For a SessionSave ... ignore it! There is no time to wait for this save operation.
         //      Because the WindowManager will kill the process if it doesn't react immediately.
         //      On the other side we can't risk a concurrent save request ... because we know
@@ -2399,8 +2399,8 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
                                      const css::uno::Reference< css::task::XStatusIndicator >& xExternalProgress)
 {
     // no document? => can occur if we loaded our configuration with files,
-    // which couldnt be recovered successfully. In such case we have all needed informations
-    // excepting the real document instance!
+    // which couldn't be recovered successfully. In such case we have all needed informations
+    // except the real document instance!
 
     // TODO: search right place, where such "dead files" can be removed from the configuration!
     if (!rInfo.Document.is())
@@ -2417,7 +2417,7 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
         lNewArgs[::comphelper::MediaDescriptor::PROP_PASSWORD()] <<= sPassword;
 
     // Further it must be saved using the default file format of that application.
-    // Otherwhise we will some data lost.
+    // Otherwise we will lose some data.
     if (rInfo.DefaultFilter.getLength())
         lNewArgs[::comphelper::MediaDescriptor::PROP_FILTERNAME()] <<= rInfo.DefaultFilter;
 
@@ -2459,7 +2459,7 @@ void AutoRecovery::implts_saveOneDoc(const ::rtl::OUString&                     
             {
                 bError = sal_True;
 
-                // a) FULL DISC seams to be the problem behind                              => show error and retry it forever (e.g. retry=300)
+                // a) FULL DISC seems to be the problem behind                              => show error and retry it forever (e.g. retry=300)
                 // b) unknown problem (may be locking problem)                              => reset RETRY value to more useful value(!) (e.g. retry=3)
                 // c) unknown problem (may be locking problem) + 1..2 repeating operations  => throw the original exception to force generation of a stacktrace !
 
@@ -2697,11 +2697,11 @@ AutoRecovery::ETimerType AutoRecovery::implts_openDocs(const DispatchParams& aPa
 		implts_informListener(eJob,
             AutoRecovery::implst_createFeatureStateEvent(eJob, OPERATION_UPDATE, &rInfo));
 
-        /* Normaly we listen as XModifyListener on a document to know if a document was changed
+        /* Normally we listen as XModifyListener on a document to know if a document was changed
            since our last AutoSave. And we deregister us in case we know this state.
            But directly after one document as recovered ... we must start listening.
            Otherwise the first "modify" doesn't reach us. Because we ourselves called setModified()
-           on the document via API. And currently we dont listen for any events (not at the GlobalEventBroadcaster
+           on the document via API. And currently we don't listen for any events (not at the GlobalEventBroadcaster
            nor at any document!).
         */
         implts_startModifyListeningOnDoc(rInfo);
@@ -3080,7 +3080,7 @@ void AutoRecovery::implts_doEmergencySave(const DispatchParams& aParams)
     // The called method for saving documents runs
     // during normal AutoSave more then once. Because
     // it postpone active documents and save it later.
-    // That is normaly done by recalling it from a timer.
+    // That is normally done by recalling it from a timer.
     // Here we must do it immediately!
     // Of course this method returns the right state -
     // because it knows, that we are running in ERMERGENCY SAVE mode .-)
@@ -3103,7 +3103,7 @@ void AutoRecovery::implts_doEmergencySave(const DispatchParams& aParams)
     // flush config cached back to disc.
     impl_flushALLConfigChanges();
 
-    // try to make sure next time office will be started user wont be
+    // try to make sure next time office will be started user won't be
     // notified about any other might be running office instance
     // remove ".lock" file from disc !
     AutoRecovery::st_impl_removeLockFile();
@@ -3150,7 +3150,7 @@ void AutoRecovery::implts_doSessionSave(const DispatchParams& aParams)
     // The called method for saving documents runs
     // during normal AutoSave more then once. Because
     // it postpone active documents and save it later.
-    // That is normaly done by recalling it from a timer.
+    // That is normally done by recalling it from a timer.
     // Here we must do it immediately!
     // Of course this method returns the right state -
     // because it knows, that we are running in SESSION SAVE mode .-)
@@ -3180,7 +3180,7 @@ void AutoRecovery::implts_doSessionQuietQuit(const DispatchParams& /*aParams*/)
 {
     LOG_RECOVERY("AutoRecovery::implts_doSessionQuietQuit()")
 
-    // try to make sure next time office will be started user wont be
+    // try to make sure next time office will be started user won't be
     // notified about any other might be running office instance
     // remove ".lock" file from disc !
     // it is done as a first action for session save since Gnome sessions
@@ -3540,7 +3540,7 @@ sal_Bool AutoRecovery::impl_enoughDiscSpace(sal_Int32 nRequiredSpace)
 
     // In case an error occurs and we are not able to retrieve the needed information
     // it's better to "disable" the feature ShowErrorOnFullDisc !
-    // Otherwhise we start a confusing process of error handling ...
+    // Otherwise we start a confusing process of error handling ...
 
     sal_uInt64 nFreeSpace = SAL_MAX_UINT64;
 
@@ -3609,7 +3609,7 @@ void AutoRecovery::impl_establishProgress(const AutoRecovery::TDocumentInfo&    
                                                                                 ::comphelper::MediaDescriptor::PROP_STATUSINDICATOR(),
                                                                                 css::uno::Reference< css::task::XStatusIndicator >() );
 
-    // Normaly a progress is set from outside (e.g. by the CrashSave/Recovery dialog, which uses our dispatch API).
+    // Normally a progress is set from outside (e.g. by the CrashSave/Recovery dialog, which uses our dispatch API).
     // But for a normal auto save we dont have such "external progress"... because this function is triggered by our own timer then.
     // In such case we must create our own progress !
     if (

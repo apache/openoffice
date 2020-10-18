@@ -85,7 +85,7 @@ class FWI_DLLPUBLIC PropertySetHelper : public css::beans::XPropertySet
 
         sal_Bool m_bReleaseLockOnCall;
 
-        // hold it weak ... otherwhise this helper has to be "killed" explicitly .-)
+        // hold it weak ... otherwise this helper has to be "killed" explicitly .-)
         css::uno::WeakReference< css::uno::XInterface > m_xBroadcaster;
 
         LockHelper& m_rLock;
@@ -99,7 +99,7 @@ class FWI_DLLPUBLIC PropertySetHelper : public css::beans::XPropertySet
         /** initialize new instance of this helper.
          *
          *  @param  xSMGR
-         *          points to an uno service manager, which is used internaly to create own
+         *          points to an uno service manager, which is used internally to create own
          *          needed uno services.
          *
          *  @param  pExternalLock

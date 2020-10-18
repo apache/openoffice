@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ class SfxBindings;
 #endif /* !ENABLE_LAYOUT_SFX_TABDIALOG*/
 
 typedef SfxTabPage* (*CreateTabPage)(Window *pParent, const SfxItemSet &rAttrSet);
-typedef sal_uInt16*		(*GetTabPageRanges)(); // liefert internationale Which-Wert
+typedef sal_uInt16*		(*GetTabPageRanges)(); // provide international Which-Value
 struct TabPageImpl;
 class SfxUs_Impl;
 
@@ -119,9 +119,9 @@ friend class SfxTabDialogController;
 
 protected:
 	virtual short				Ok();
-	// wird im Sfx gel"oscht!
+	// be deleted in Sfx !
 	virtual SfxItemSet*			CreateInputItemSet( sal_uInt16 nId );
-	// wird *nicht* im Sfx gel"oscht!
+	// don't be deleted in Sfx!
 	virtual const SfxItemSet*	GetRefreshedSet();
 	virtual void				PageCreated( sal_uInt16 nId, SfxTabPage &rPage );
     virtual long                Notify( NotifyEvent& rNEvt );
@@ -149,18 +149,18 @@ public:
 
 	void				AddTabPage( sal_uInt16 nId,
 									CreateTabPage pCreateFunc,		// != 0
-									GetTabPageRanges pRangesFunc,	// darf 0 sein
+									GetTabPageRanges pRangesFunc,	// can be 0
 									sal_Bool bItemsOnDemand = sal_False);
 	void				AddTabPage( sal_uInt16 nId,
 									const String &rRiderText,
 									CreateTabPage pCreateFunc,		// != 0
-									GetTabPageRanges pRangesFunc,	// darf 0 sein
+									GetTabPageRanges pRangesFunc,	// can be 0
 									sal_Bool bItemsOnDemand = sal_False,
 									sal_uInt16 nPos = TAB_APPEND);
 	void				AddTabPage( sal_uInt16 nId,
 									const Bitmap &rRiderBitmap,
 									CreateTabPage pCreateFunc,		// != 0
-									GetTabPageRanges pRangesFunc,	// darf 0 sein
+									GetTabPageRanges pRangesFunc,	// can be 0
 									sal_Bool bItemsOnDemand = sal_False,
 									sal_uInt16 nPos = TAB_APPEND);
 
@@ -283,12 +283,12 @@ public:
 							{ bHasExchangeSupport = bNew; }
 
 	enum sfxpg {
-		KEEP_PAGE = 0x0000,		// Fehlerbehandlung; Seite nicht wechseln
-			// 2. F"ullen eines ItemSets f"ur die Aktualilsierung
-			// "ubergeordneter Beispiele; dieser Pointer kann immer
-			// NULL sein!!
+		KEEP_PAGE = 0x0000,		// Error handling; do not change page
+			// 2. Filling an ItemSet for updating higher-level examples;
+			// this pointer can always
+			// be NULL!!
 		LEAVE_PAGE = 0x0001,
-			// Set aktualisieren und andere Page aktualisieren
+			// Update set and other page
 		REFRESH_SET = 0x0002
 	};
 

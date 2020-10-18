@@ -113,7 +113,7 @@ JNIEXPORT jlong JNICALL Java_embeddedobj_test_NativeView_getNativeWindow
 
 #if 0
     /* Register own window procedure
-       Do it one times only! Otherwhise
+       Do it one time only! Otherwise
        multiple instances will be registered
        and calls on such construct produce
        a stack overflow.

@@ -85,7 +85,7 @@ ConfigAccess::ConfigAccess( /*IN*/ const css::uno::Reference< css::lang::XMultiS
 /**
     @short  last chance to close an open configuration access point
     @descr  In case our user forgot to close this configuration point
-            in the right way, normaly he will run into some trouble -
+            in the right way, normally he will run into some trouble -
             e.g. losing data.
  */
 ConfigAccess::~ConfigAccess()
@@ -127,7 +127,7 @@ ConfigAccess::EOpenMode ConfigAccess::getMode() const
 void ConfigAccess::open( /*IN*/ EOpenMode eMode )
 {
     /* SAFE { */
-    // We must lock the whole method to be shure, that nobody
+    // We must lock the whole method to be sure, that nobody
     // outside uses our internal member m_xAccess!
     WriteGuard aWriteLock(m_aLock);
 
@@ -190,7 +190,7 @@ void ConfigAccess::open( /*IN*/ EOpenMode eMode )
 void ConfigAccess::close()
 {
     /* SAFE { */
-    // Lock the whole method, to be shure that nobody else uses our internal members
+    // Lock the whole method, to be sure that nobody else uses our internal members
     // during this time.
     WriteGuard aWriteLock(m_aLock);
 
@@ -223,7 +223,7 @@ void ConfigAccess::close()
                     aReadLock.unlock();
 
     @attention  During this time it's not allowed to call the methods open() or close()!
-                Otherwhise you will change your own referenced config access. Anything will
+                Otherwise you will change your own referenced config access. Anything will
                 be possible then.
 
     @return A c++(!) reference to the uno instance of the configuration access point.

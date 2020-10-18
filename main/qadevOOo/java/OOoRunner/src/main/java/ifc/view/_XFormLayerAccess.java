@@ -107,7 +107,7 @@ public class _XFormLayerAccess extends MultiMethodTest {
     public void _isFormDesignMode(){
         requiredMethod("setFormDesignMode()") ;
         
-        log.println("test for isFormDesignMode() is ok since test for 'setFormDesingMode()' use it");
+        log.println("test for isFormDesignMode() is ok since test for 'setFormDesignMode()' use it");
         tRes.tested("isFormDesignMode()", true);
     }
     

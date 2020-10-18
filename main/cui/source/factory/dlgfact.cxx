@@ -1045,7 +1045,7 @@ VclAbstractDialog* AbstractDialogFactory_Impl::CreateFrameDialog(
     Dialog* pDlg = NULL;
     if ( SID_OPTIONS_TREEDIALOG == nResId || SID_OPTIONS_DATABASES == nResId )
     {
-        // only activate last page if we dont want to activate a special page
+        // only activate last page if we don't want to activate a special page
 		bool bActivateLastSelection = ( nResId != SID_OPTIONS_DATABASES && rParameter.Len() == 0 );
         OfaTreeOptionsDialog* pOptDlg = new OfaTreeOptionsDialog( pParent, rxFrame, bActivateLastSelection );
         if ( nResId == SID_OPTIONS_DATABASES )

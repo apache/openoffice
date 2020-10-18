@@ -64,7 +64,7 @@ interface XUntitledNumbers : com::sun::star::uno::XInterface
         If the reqistered component does not use such leased number any longer
         it has to be released so it can be used for new components.
         
-        Note: calling this method with an unknown (but normaly valid number)
+        Note: calling this method with an unknown (but normally valid number)
               has to be ignored. No exceptions - no errors.
         
         @param  nNumber

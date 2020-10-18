@@ -39,7 +39,7 @@ namespace comphelper
 		osl::Mutex maMutex;
 	};
 
-	/** this is the base helper class for NameContainer thats also declared in this header. */
+	/** this is the base helper class for NameContainer that's also declared in this header. */
 	class NameContainer : public ::cppu::WeakImplHelper1< ::com::sun::star::container::XNameContainer >, private NameContainerImpl
 	{
 	public:

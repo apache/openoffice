@@ -113,7 +113,7 @@ namespace desktop
 		"      other programs can connect to access the API.\n"\
 		"-unaccept=<accept-string>\n"\
 		"      Close an acceptor that was created with -accept=<accept-string>\n"\
-		"      Use -unnaccept=all to close all open acceptors.\n"\
+		"      Use -unaccept=all to close all open acceptors.\n"\
 		"Remaining arguments will be treated as filenames or URLs of documents to open.\n";
 
 	void ReplaceStringHookProc( UniString& rStr );

@@ -282,7 +282,7 @@ void LoadEnv::initializeLoading(const ::rtl::OUString&                          
 
     // try to find out, if its really a content, which can be loaded or must be "handled"
     // We use a default value for this in-parameter. Then we have to start a complex check method
-    // internaly. But if this check was already done outside it can be suppressed to perform
+    // internally. But if this check was already done outside it can be suppressed to perform
     // the load request. We take over the result then!
     if (m_eContentType == E_UNSUPPORTED_CONTENT)
     {
@@ -505,13 +505,13 @@ void LoadEnv::cancelLoading()
             /* Attention:
                 After returning from any cancel/dispose call, neither the frame nor weself
                 may be called back. Because only we can cancel this job, we already know
-                the result! => Thats why its not useful nor necessary to wait for any
+                the result! => That's why it's not useful nor necessary to wait for any
                 asynchronous listener notification.
             */
             m_bLoaded = sal_False;
             m_xAsynchronousJob.clear();
         }
-        // or may be its a content handler? Such handler can't be cancelled in its running
+        // or may be it's a content handler? Such handler can't be cancelled in its running
         // operation :-( And we can't deregister us there again :-(
         // => The only chance is an exception :-)
         else
@@ -677,7 +677,7 @@ LoadEnv::EContentType LoadEnv::classifyContent(const ::rtl::OUString&           
     //     Note: These URL schemata are fix and well known ...
     //     But there can be some additional ones, which was not
     //     defined at implementation time of this class :-(
-    //     So we have to make shure, that the following code
+    //     So we have to make sure, that the following code
     //     can detect such protocol schemata too :-)
 
     if(
@@ -814,7 +814,7 @@ LoadEnv::EContentType LoadEnv::classifyContent(const ::rtl::OUString&           
     //-------------------------------------------
     // (TODO) At this point, we have no idea .-)
     //        But it seems to be better, to break all
-    //        further requests for this URL. Otherwhise
+    //        further requests for this URL. Otherwise
     //        we can run into some trouble.
     return E_UNSUPPORTED_CONTENT;
 }
@@ -935,7 +935,7 @@ sal_Bool LoadEnv::impl_handleContent()
     // SAFE -> -----------------------------------
     ReadGuard aReadLock(m_aLock);
 
-    // the type must exist inside the descriptor ... otherwhise this class is implemented wrong :-)
+    // the type must exist inside the descriptor ... otherwise this class is implemented wrong :-)
     ::rtl::OUString sType = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_TYPENAME(), ::rtl::OUString());
     if (!sType.getLength())
         throw LoadEnvException(LoadEnvException::ID_INVALID_MEDIADESCRIPTOR);
@@ -1143,7 +1143,7 @@ sal_Bool LoadEnv::impl_loadContent()
     // Attention: Don't forget to reset this lock again after finishing operation.
     // Otherwise task AND office couldn't die!!!
     // This includes gracefully handling of Exceptions (Runtime!) too ...
-    // Thats why we use a specialized guard, which will reset the lock
+    // That's why we use a specialized guard, which will reset the lock
     // if it will be run out of scope.
 
     // Note further: ignore if this internal guard already contains a resource.
@@ -1207,7 +1207,7 @@ sal_Bool LoadEnv::impl_loadContent()
         // code can ask for it later.
         impl_setResult(bResult);
         // But the return value indicates a valid started(!) operation.
-        // And thats true everxtimes, we reach this line :-)
+        // And that's true every time we reach this line :-)
         return sal_True;
     }
 
@@ -1241,7 +1241,7 @@ css::uno::Reference< css::uno::XInterface > LoadEnv::impl_searchLoader()
         throw LoadEnvException(LoadEnvException::ID_INVALID_ENVIRONMENT);
     }
 
-    // Otherwhise ...
+    // Otherwise ...
     // We need this type information to locate an registered frame loader
     // Without such information we can't work!
     ::rtl::OUString sType = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_TYPENAME(), ::rtl::OUString());
@@ -1352,8 +1352,8 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
         return css::uno::Reference< css::frame::XFrame >();
     }
 
-    // otherwhise - iterate through the tasks of the desktop container
-    // to find out, which of them might contains the requested document
+    // otherwise - iterate through the tasks of the desktop container
+    // to find out, which of them might contain the requested document
     css::uno::Reference< css::frame::XFramesSupplier >  xSupplier(m_xSMGR->createInstance(SERVICENAME_DESKTOP), css::uno::UNO_QUERY);
     css::uno::Reference< css::container::XIndexAccess > xTaskList(xSupplier->getFrames()                      , css::uno::UNO_QUERY);
 
@@ -1366,8 +1366,8 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
     sal_Int16 nNewVersion = m_lMediaDescriptor.getUnpackedValueOrDefault(::comphelper::MediaDescriptor::PROP_VERSION(), (sal_Int16)(-1));
 
     // will be used to save the first hidden frame referring the searched model
-    // Normaly we are interested on visible frames ... but if there is no such visible
-    // frame we referr to any hidden frame also (but as fallback only).
+    // Normally we are interested in visible frames ... but if there is no such visible
+    // frame we refer to any hidden frame also (but as fallback only).
     css::uno::Reference< css::frame::XFrame > xHiddenTask;
     css::uno::Reference< css::frame::XFrame > xTask;
 
@@ -1451,8 +1451,8 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchAlreadyLoaded()
 
     if (xResult.is())
     {
-        // Now we are shure, that this task includes the searched document.
-        // It's time to activate it. As special feature we try to jump internaly
+        // Now we are sure, that this task includes the searched document.
+        // It's time to activate it. As special feature we try to jump internally
         // if an optional jumpmark is given too.
         if (m_aURL.Mark.getLength())
             impl_jumpToMark(xResult, m_aURL);
@@ -1480,7 +1480,7 @@ sal_Bool LoadEnv::impl_isFrameAlreadyUsedForLoading(const css::uno::Reference< c
     if (!xLock.is())
         return sal_False;
 
-    // Otherwhise we have to look for any other existing lock.
+    // Otherwise we have to look for any other existing lock.
     return xLock->isActionLocked();
 }
 
@@ -1580,11 +1580,11 @@ css::uno::Reference< css::frame::XFrame > LoadEnv::impl_searchRecycleTarget()
     if (eOldApp != eNewApp)
         return css::uno::Reference< css::frame::XFrame >();
 
-    // OK this task seams to be useable for recycling
+    // OK this task seems to be useable for recycling
     // But we should mark it as such - means set an action lock.
-    // Otherwhise it would be used more then ones or will be destroyed
+    // Otherwise it would be used more than once or will be destroyed
     // by a close() or terminate() request.
-    // But if such lock already exist ... it means this task is used for
+    // But if such lock already exists ... it means this task is used for
     // any other operation already. Don't use it then.
     if (impl_isFrameAlreadyUsedForLoading(xTask))
         return css::uno::Reference< css::frame::XFrame >();
@@ -1655,7 +1655,7 @@ void LoadEnv::impl_reactForLoadingState()
         }
 
         // Note: Only if an existing property "FrameName" is given by this media descriptor,
-        // it should be used. Otherwhise we should do nothing. May be the outside code has already
+        // it should be used. Otherwise we should do nothing. Maybe the outside code has already
         // set a frame name on the target!
         ::comphelper::MediaDescriptor::const_iterator pFrameName = m_lMediaDescriptor.find(::comphelper::MediaDescriptor::PROP_FRAMENAME());
         if (pFrameName != m_lMediaDescriptor.end())
@@ -1673,7 +1673,7 @@ void LoadEnv::impl_reactForLoadingState()
 		// Try to reactivate the old document (if any exists!)
 		css::uno::Reference< css::frame::XController > xOldDoc = m_xTargetFrame->getController();
 		// clear does not depend from reactivation state of a might existing old document!
-		// We must make shure, that a might following getTargetComponent() call does not return
+		// We must make sure, that a might following getTargetComponent() call does not return
 		// the old document!
 		m_xTargetFrame.clear();
 		if (xOldDoc.is())
@@ -1708,14 +1708,14 @@ void LoadEnv::impl_reactForLoadingState()
     // This max force an implicit closing of our target frame ...
     // e.g. in case close(sal_True) was called before and the frame
     // kill itself if our external use-lock is released here!
-    // Thats why we releas this lock AFTER ALL OPERATIONS on this frame
-    // are finished. The frame itslef must handle then
+    // That's why we release this lock AFTER ALL OPERATIONS on this frame
+    // are finished. The frame itself must handle then
     // this situation gracefully.
     m_aTargetLock.freeResource();
 
     // Last but not least :-)
     // We have to clear the current media descriptor.
-    // Otherwhise it hold a might existing stream open!
+    // Otherwise it hold a might existing stream open!
     m_lMediaDescriptor.clear();
 
 	css::uno::Any aRequest;

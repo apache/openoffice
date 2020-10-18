@@ -159,7 +159,7 @@ class UNOTOOLS_DLLPUBLIC SvtSecurityOptions: public utl::detail::Options
             @seealso    -
 
             @param      "eOption", specify, which item is queried
-            @return     <TRUE/> if item is readonly; <FALSE/> otherwhise
+            @return     <TRUE/> if item is readonly; <FALSE/> otherwise
 
             @onerror    No error should occurre!
         *//*-*****************************************************************************************************/
@@ -214,7 +214,7 @@ class UNOTOOLS_DLLPUBLIC SvtSecurityOptions: public utl::detail::Options
 		sal_Bool			IsMacroDisabled				(					) const	;
 
 		/*-****************************************************************************************************//**
-			@short		special method to check an URL and his referer corresponding to ouer internal security cessation
+			@short		special method to check an URL and his referer corresponding to our internal security cessation
 			@descr		Give us an URL and his referer and we will say you if these url can be scripted or not!
 
 			@seealso	-

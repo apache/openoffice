@@ -67,7 +67,7 @@ namespace framework{
 
 /**
     @descr          We know some special dispatch objects with different functionality.
-                    The can be created internaly by the following DispatchProvider.
+                    They can be created internally by the following DispatchProvider.
                     Here we define some identifier to force creation of the right one.
 */
 enum EDispatchHelper
@@ -93,7 +93,7 @@ enum EDispatchHelper
                             - a normal frame never can create a new one by himself
 
     @attention      Use this class as member only! Never use it as baseclass.
-					XInterface will be ambigous and we hold a weakreference to ouer OWNER - not to ouer SUPERCLASS!
+					XInterface will be ambiguous and we hold a weakreference to our OWNER - not to our SUPERCLASS!
 
 	@base			ThreadHelpBase
                         supports threadsafe mechanism

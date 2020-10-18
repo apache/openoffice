@@ -490,7 +490,7 @@ sal_Bool SVGFilter::implExportDocument( const Reference< XDrawPages >& rxMasterP
 	mpSVGExport->AddAttribute( XML_NAMESPACE_NONE, "height", aAttr );
 #endif
 
-    // #124608# set viewBox explicitely to the exported content
+    // #124608# set viewBox explicitly to the exported content
     if(mbExportSelection)
     {
         aAttr = OUString::valueOf( nDocX );
