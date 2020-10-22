@@ -22,8 +22,8 @@ diff -ur misc/nss-3.25/nss/lib/freebl/Makefile misc/build/nss-3.25/nss/lib/freeb
 -    INTEL_GCM = 1
 +    #DEFINES += -DUSE_HW_AES -DINTEL_GCM
 +    #ASFILES += intel-aes.s intel-gcm.s
-+    #EXTRA_SRCS += intel-gcm-wrap.c
-+    #INTEL_GCM = 1
++    EXTRA_SRCS += intel-gcm-wrap.c
++    INTEL_GCM = 1
      MPI_SRCS += mpi_amd64.c mp_comba.c
  endif
  ifeq ($(CPU_ARCH),x86)
