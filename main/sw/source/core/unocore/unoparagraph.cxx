@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -179,9 +181,9 @@ public:
                 uno::RuntimeException);
 
     //UUUU
-    void GetSinglePropertyValue_Impl( 
+    void GetSinglePropertyValue_Impl(
         const SfxItemPropertySimpleEntry& rEntry,
-        const SfxItemSet& rSet, 
+        const SfxItemSet& rSet,
         uno::Any& rAny ) const
     throw(uno::RuntimeException);
 
@@ -494,9 +496,9 @@ throw (beans::PropertyVetoException, lang::IllegalArgumentException,
  ---------------------------------------------------------------------------*/
 
 //UUUU Support for DrawingLayer FillStyles for GetPropertyValue() usages
-void SwXParagraph::Impl::GetSinglePropertyValue_Impl( 
+void SwXParagraph::Impl::GetSinglePropertyValue_Impl(
     const SfxItemPropertySimpleEntry& rEntry,
-    const SfxItemSet& rSet, 
+    const SfxItemSet& rSet,
     uno::Any& rAny ) const
 throw(uno::RuntimeException)
 {
@@ -764,7 +766,7 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
         catch (beans::UnknownPropertyException &)
         {
             // should not occur because property was searched for before
-            DBG_ERROR( "unexpected exception catched" );
+            DBG_ERROR( "unexpected exception caught" );
             pFailed[ nFailed++ ].Result =
                 beans::TolerantPropertySetResultType::UNKNOWN_PROPERTY;
         }
@@ -892,7 +894,7 @@ throw (uno::RuntimeException)
                         SwPosition aPos( rTxtNode );
                         SwPaM aPam( aPos );
                         // handle properties that are not part of the attribute
-                        // and thus only pretendend to be paragraph attributes
+                        // and thus only pretend to be paragraph attributes
                         beans::PropertyState eTemp;
                         const bool bDone =
                             SwUnoCursorHelper::getCrsrPropertyValue(
@@ -1100,7 +1102,7 @@ beans::PropertyState lcl_SwXParagraph_getPropertyState(
         {
             if(*ppSet)
             {
-                if(SFX_ITEM_SET == (*ppSet)->GetItemState(XATTR_FILLBMP_STRETCH, false) 
+                if(SFX_ITEM_SET == (*ppSet)->GetItemState(XATTR_FILLBMP_STRETCH, false)
                     || SFX_ITEM_SET == (*ppSet)->GetItemState(XATTR_FILLBMP_TILE, false))
                 {
                     eRet = beans::PropertyState_DIRECT_VALUE;

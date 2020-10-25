@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -97,9 +97,9 @@ static OUString encodeZipUri( const OUString& rURI )
 
 static Reference< XInterface > addFolder( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, const OUString& rName ) throw( Exception )
 {
-    if ( rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( ".." ) ) )
-      || rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( "." ) ) ) )
-        throw lang::IllegalArgumentException();
+	if ( rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( ".." ) ) )
+	  || rName.equals( OUString( RTL_CONSTASCII_USTRINGPARAM( "." ) ) ) )
+		throw lang::IllegalArgumentException();
 
 	Sequence< Any > aArgs(1);
 	aArgs[0] <<= (sal_Bool)sal_True;
@@ -121,12 +121,12 @@ static Reference< XInterface > addFolder( Reference< XInterface >& xRootFolder, 
 static void _addFile( Reference< XInterface >& xRootFolder, Reference< XSingleServiceFactory >& xFactory, Reference< XInputStream >& xInput, OUString aName ) throw( Exception )
 {
 
-    Reference< XActiveDataSink > xSink( xFactory->createInstance(), UNO_QUERY );
-    Reference< XUnoTunnel > xTunnel( xSink, UNO_QUERY );
+	Reference< XActiveDataSink > xSink( xFactory->createInstance(), UNO_QUERY );
+	Reference< XUnoTunnel > xTunnel( xSink, UNO_QUERY );
 	if( xSink.is() && xTunnel.is())
-	{    
-        Reference< XNameContainer > xNameContainer(xRootFolder, UNO_QUERY );
-        xNameContainer->insertByName(aName = encodeZipUri( aName ), makeAny(xTunnel));
+	{
+		Reference< XNameContainer > xNameContainer(xRootFolder, UNO_QUERY );
+		xNameContainer->insertByName(aName = encodeZipUri( aName ), makeAny(xTunnel));
 		xSink->setInputStream( xInput );
 	}
 }
@@ -134,14 +134,14 @@ static void _addFile( Reference< XInterface >& xRootFolder, Reference< XSingleSe
 /*
 static void addFile( Reference< XInterface > xRootFolder, Reference< XSingleServiceFactory > xFactory, const OUString& rSourceFile, const OUString& rName ) throw( Exception )
 {
-	Reference< XInputStream > xInput(  new utl::OSeekableInputStreamWrapper( new SvFileStream(rSourceFile, STREAM_READ ), true ) );
+	Reference< XInputStream > xInput( new utl::OSeekableInputStreamWrapper( new SvFileStream(rSourceFile, STREAM_READ ), true ) );
 	_addFile( xRootFolder, xFactory, xInput, rName );
 }
 */
 
 void XMLFilterJarHelper::addFile( Reference< XInterface > xRootFolder, Reference< XSingleServiceFactory > xFactory, const OUString& rSourceFile ) throw( Exception )
 {
-	if( rSourceFile.getLength() && 
+	if( rSourceFile.getLength() &&
 		(rSourceFile.compareToAscii( RTL_CONSTASCII_STRINGPARAM("http:") ) != 0) &&
 		(rSourceFile.compareToAscii( RTL_CONSTASCII_STRINGPARAM("shttp:") ) != 0) &&
 		(rSourceFile.compareToAscii( RTL_CONSTASCII_STRINGPARAM("jar:") ) != 0) &&
@@ -158,7 +158,7 @@ void XMLFilterJarHelper::addFile( Reference< XInterface > xRootFolder, Reference
 		OUString aName( aURL.getName() );
 
 		SvFileStream* pStream = new SvFileStream(aFileURL, STREAM_READ );
-		Reference< XInputStream > xInput(  new utl::OSeekableInputStreamWrapper( pStream, true ) );
+		Reference< XInputStream > xInput( new utl::OSeekableInputStreamWrapper( pStream, true ) );
 		_addFile( xRootFolder, xFactory, xInput, aName );
 	}
 }
@@ -174,11 +174,11 @@ bool XMLFilterJarHelper::savePackage( const OUString& rPackageURL, const XMLFilt
 		Sequence< Any > aArguments( 2 );
 		aArguments[ 0 ] <<= rPackageURL;
 
-        // let ZipPackage be used ( no manifest.xml is required )
-        beans::NamedValue aArg;
-        aArg.Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StorageFormat" ) );
-        aArg.Value <<= ZIP_STORAGE_FORMAT_STRING;
-        aArguments[ 1 ] <<= aArg;
+		// let ZipPackage be used ( no manifest.xml is required )
+		beans::NamedValue aArg;
+		aArg.Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StorageFormat" ) );
+		aArg.Value <<= ZIP_STORAGE_FORMAT_STRING;
+		aArguments[ 1 ] <<= aArg;
 
 		Reference< XHierarchicalNameAccess > xIfc(
 			mxMSF->createInstanceWithArguments(
@@ -201,7 +201,7 @@ bool XMLFilterJarHelper::savePackage( const OUString& rPackageURL, const XMLFilt
 			{
 				const filter_info_impl* pFilter = (*aIter);
 
-				Reference< XInterface > xFilterRoot( addFolder( xRootFolder, xFactory, pFilter->maFilterName ) );	
+				Reference< XInterface > xFilterRoot( addFolder( xRootFolder, xFactory, pFilter->maFilterName ) );
 
 				if( xFilterRoot.is() )
 				{
@@ -217,7 +217,7 @@ bool XMLFilterJarHelper::savePackage( const OUString& rPackageURL, const XMLFilt
 					}
 					catch( com::sun::star::container::ElementExistException&)
 					{
-					// in case of same named import / export XSLT the latter 
+					// in case of same named import / export XSLT the latter
 					// is ignored
 						DBG_ERROR( "XMLFilterJarHelper::same named xslt filter exception!" );
 					}
@@ -243,9 +243,9 @@ bool XMLFilterJarHelper::savePackage( const OUString& rPackageURL, const XMLFilt
 				aExporter.doExport(xOS,rFilters);
 			}
 
-			Reference< XInputStream > XIS(  new utl::OSeekableInputStreamWrapper( new SvFileStream(aTempFileURL, STREAM_READ ), true ) );
+			Reference< XInputStream > XIS( new utl::OSeekableInputStreamWrapper( new SvFileStream(aTempFileURL, STREAM_READ ), true ) );
 			OUString szTypeDetection( RTL_CONSTASCII_USTRINGPARAM( "TypeDetection.xcu" ) );
-			_addFile( xRootFolder, xFactory,  XIS, szTypeDetection );
+			_addFile( xRootFolder, xFactory, XIS, szTypeDetection );
 
 			Reference< XChangesBatch > xBatch( xIfc, UNO_QUERY );
 			if( xBatch.is() )
@@ -256,7 +256,7 @@ bool XMLFilterJarHelper::savePackage( const OUString& rPackageURL, const XMLFilt
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "XMLFilterJarHelper::savePackage exception catched!" );
+		DBG_ERROR( "XMLFilterJarHelper::savePackage exception caught!" );
 	}
 
 	osl::File::remove( rPackageURL );
@@ -277,11 +277,11 @@ void XMLFilterJarHelper::openPackage( const OUString& rPackageURL, XMLFilterVect
 		Sequence< Any > aArguments( 2 );
 		aArguments[ 0 ] <<= rPackageURL;
 
-        // let ZipPackage be used ( no manifest.xml is required )
-        beans::NamedValue aArg;
-        aArg.Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StorageFormat" ) );
-        aArg.Value <<= ZIP_STORAGE_FORMAT_STRING;
-        aArguments[ 1 ] <<= aArg;
+		// let ZipPackage be used ( no manifest.xml is required )
+		beans::NamedValue aArg;
+		aArg.Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "StorageFormat" ) );
+		aArg.Value <<= ZIP_STORAGE_FORMAT_STRING;
+		aArguments[ 1 ] <<= aArg;
 
 		Reference< XHierarchicalNameAccess > xIfc(
 			mxMSF->createInstanceWithArguments(
@@ -333,7 +333,7 @@ void XMLFilterJarHelper::openPackage( const OUString& rPackageURL, XMLFilterVect
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "XMLFilterJarHelper::savePackage exception catched!" );
+		DBG_ERROR( "XMLFilterJarHelper::savePackage exception caught!" );
 	}
 }
 
@@ -362,9 +362,9 @@ bool XMLFilterJarHelper::copyFile( Reference< XHierarchicalNameAccess > xIfc, OU
 	{
 		OUString szPackagePath( encodeZipUri( rURL.copy( sVndSunStarPackage.getLength() ) ) );
 
-        if ( ::comphelper::OStorageHelper::PathHasSegment( szPackagePath, OUString( RTL_CONSTASCII_USTRINGPARAM( ".." ) ) )
-          || ::comphelper::OStorageHelper::PathHasSegment( szPackagePath, OUString( RTL_CONSTASCII_USTRINGPARAM( "." ) ) ) )
-            throw lang::IllegalArgumentException();
+		if ( ::comphelper::OStorageHelper::PathHasSegment( szPackagePath, OUString( RTL_CONSTASCII_USTRINGPARAM( ".." ) ) )
+		  || ::comphelper::OStorageHelper::PathHasSegment( szPackagePath, OUString( RTL_CONSTASCII_USTRINGPARAM( "." ) ) ) )
+			throw lang::IllegalArgumentException();
 
 		if( xIfc->hasByHierarchicalName( szPackagePath ) )
 		{
@@ -374,7 +374,7 @@ bool XMLFilterJarHelper::copyFile( Reference< XHierarchicalNameAccess > xIfc, OU
 			if( xFileEntry.is() )
 			{
 				Reference< XInputStream > xIS( xFileEntry->getInputStream() );
-	
+
 				INetURLObject aBaseURL( rTargetURL );
 
 				rURL = URIHelper::SmartRel2Abs( aBaseURL, szPackagePath, Link(), false );
@@ -385,20 +385,20 @@ bool XMLFilterJarHelper::copyFile( Reference< XHierarchicalNameAccess > xIfc, OU
 					if( !createDirectory( rURL ) )
 						return false;
 
-                    ::osl::File file(rURL);
-                    ::osl::FileBase::RC rc =
-                        file.open(OpenFlag_Write|OpenFlag_Create);
-                    if (::osl::FileBase::E_EXIST == rc) {
-                        rc = file.open(OpenFlag_Write);
-                        if (::osl::FileBase::E_None == rc) {
-                            file.setSize(0); // #i97170# truncate
-                        }
-                    }
-                    if (::osl::FileBase::E_None != rc) {
-                        throw RuntimeException();
-                    }
-                    Reference< XOutputStream > const xOS(
-                            new comphelper::OSLOutputStreamWrapper(file));
+					::osl::File file(rURL);
+					::osl::FileBase::RC rc =
+						file.open(OpenFlag_Write|OpenFlag_Create);
+					if (::osl::FileBase::E_EXIST == rc) {
+						rc = file.open(OpenFlag_Write);
+						if (::osl::FileBase::E_None == rc) {
+							file.setSize(0); // #i97170# truncate
+						}
+					}
+					if (::osl::FileBase::E_None != rc) {
+						throw RuntimeException();
+					}
+					Reference< XOutputStream > const xOS(
+							new comphelper::OSLOutputStreamWrapper(file));
 
 					return copyStreams( xIS, xOS );
 				}
@@ -407,7 +407,7 @@ bool XMLFilterJarHelper::copyFile( Reference< XHierarchicalNameAccess > xIfc, OU
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "XMLFilterJarHelper::copyFile exception catched" );
+		DBG_ERROR( "XMLFilterJarHelper::copyFile exception caught" );
 	}
 	return false;
 }
