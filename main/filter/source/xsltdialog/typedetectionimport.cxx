@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ TypeDetectionImporter::~TypeDetectionImporter (void )
 }
 
 void TypeDetectionImporter::doImport( Reference< XMultiServiceFactory >& xMSF, Reference< XInputStream > xIS, XMLFilterVector& rFilters )
-{	
+{
 	try
 	{
 		Reference< XParser > xParser( xMSF->createInstance(OUString::createFromAscii( "com.sun.star.xml.sax.Parser" ) ), UNO_QUERY );
@@ -77,7 +77,7 @@ void TypeDetectionImporter::doImport( Reference< XMultiServiceFactory >& xMSF, R
 			InputSource source;
 			source.aInputStream = xIS;
 
-			// start parsing 
+			// start parsing
 			xParser->parseStream( source );
 
 			pImporter->fillFilterVector( rFilters );
@@ -85,11 +85,11 @@ void TypeDetectionImporter::doImport( Reference< XMultiServiceFactory >& xMSF, R
 	}
 	catch( Exception& /* e */ )
 	{
-		DBG_ERROR( "TypeDetectionImporter::doImport exception catched!" );
+		DBG_ERROR( "TypeDetectionImporter::doImport exception caught!" );
 	}
 }
 
-void TypeDetectionImporter::fillFilterVector(  XMLFilterVector& rFilters )
+void TypeDetectionImporter::fillFilterVector( XMLFilterVector& rFilters )
 {
 	// create filter infos from imported filter nodes
 	NodeVector::iterator aIter = maFilterNodes.begin();
@@ -150,7 +150,7 @@ Node* TypeDetectionImporter::findTypeNode( const OUString& rType )
 
 		aIter++;
 	}
-	
+
 	return NULL;
 }
 
@@ -165,8 +165,8 @@ filter_info_impl* TypeDetectionImporter::createFilterForNode( Node * pNode )
 
 	sal_Unicode aComma(',');
 
-	pFilter->maType = getSubdata( 1, aComma, aData  );
-	pFilter->maDocumentService = getSubdata( 2, aComma, aData );    
+	pFilter->maType = getSubdata( 1, aComma, aData );
+	pFilter->maDocumentService = getSubdata( 2, aComma, aData );
 
 	OUString aFilterService( getSubdata( 3, aComma, aData ) );
 	pFilter->maFlags = getSubdata( 4, aComma, aData ).toInt32();
@@ -176,10 +176,10 @@ filter_info_impl* TypeDetectionImporter::createFilterForNode( Node * pNode )
 	OUString aFilterUserData( getSubdata( 5, aComma, aData ) );
 
 	OUString aAdapterService( getSubdata( 0, aDelim, aFilterUserData ) );
-    //Import/ExportService
-    pFilter->maImportService = getSubdata( 2, aDelim, aFilterUserData );
-    pFilter->maExportService = getSubdata( 3, aDelim, aFilterUserData );
-    pFilter->maImportXSLT = getSubdata( 4, aDelim, aFilterUserData );
+	// Import/ExportService
+	pFilter->maImportService = getSubdata( 2, aDelim, aFilterUserData );
+	pFilter->maExportService = getSubdata( 3, aDelim, aFilterUserData );
+	pFilter->maImportXSLT = getSubdata( 4, aDelim, aFilterUserData );
 	pFilter->maExportXSLT = getSubdata( 5, aDelim, aFilterUserData );
 	pFilter->maDTD = getSubdata( 6, aDelim, aFilterUserData );
 	pFilter->maComment = getSubdata( 7, aDelim, aFilterUserData );
@@ -232,24 +232,24 @@ filter_info_impl* TypeDetectionImporter::createFilterForNode( Node * pNode )
 	return pFilter;
 }
 
-void SAL_CALL TypeDetectionImporter::startDocument(  ) 	
+void SAL_CALL TypeDetectionImporter::startDocument(  )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
-void SAL_CALL TypeDetectionImporter::endDocument(  ) 	
+void SAL_CALL TypeDetectionImporter::endDocument(  )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
 
-void SAL_CALL TypeDetectionImporter::startElement( const OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs ) 	
+void SAL_CALL TypeDetectionImporter::startElement( const OUString& aName, const uno::Reference< xml::sax::XAttributeList >& xAttribs )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	ImportState eNewState = e_Unknown;
 
 	if( maStack.empty() )
 	{
-        // #109668# support legacy name as well on import
+		// #109668# support legacy name as well on import
 		if( aName == sRootNode || aName.equalsAscii("oor:node") )
 		{
 			eNewState = e_Root;
@@ -299,11 +299,11 @@ void SAL_CALL TypeDetectionImporter::startElement( const OUString& aName, const 
 
 	maStack.push( eNewState );
 }
-void SAL_CALL TypeDetectionImporter::endElement( const OUString& /* aName */ ) 	
+void SAL_CALL TypeDetectionImporter::endElement( const OUString& /* aName */ )
 	throw(xml::sax::SAXException, uno::RuntimeException)
 {
-	if( !maStack.empty()  )
-	{ 
+	if( !maStack.empty() )
+	{
 		ImportState eCurrentState = maStack.top();
 		switch( eCurrentState )
 		{
@@ -335,7 +335,7 @@ void SAL_CALL TypeDetectionImporter::endElement( const OUString& /* aName */ )
 		maStack.pop();
 	}
 }
-void SAL_CALL TypeDetectionImporter::characters( const OUString& aChars ) 	
+void SAL_CALL TypeDetectionImporter::characters( const OUString& aChars )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 	if( !maStack.empty() && maStack.top() == e_Value )
@@ -343,15 +343,15 @@ void SAL_CALL TypeDetectionImporter::characters( const OUString& aChars )
 		maValue += aChars;
 	}
 }
-void SAL_CALL TypeDetectionImporter::ignorableWhitespace( const OUString& /* aWhitespaces */ ) 	
+void SAL_CALL TypeDetectionImporter::ignorableWhitespace( const OUString& /* aWhitespaces */ )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
-void SAL_CALL TypeDetectionImporter::processingInstruction( const OUString& /* aTarget */, const OUString& /* aData */ ) 	
+void SAL_CALL TypeDetectionImporter::processingInstruction( const OUString& /* aTarget */, const OUString& /* aData */ )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
-void SAL_CALL TypeDetectionImporter::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /* xLocator */ ) 	
+void SAL_CALL TypeDetectionImporter::setDocumentLocator( const uno::Reference< xml::sax::XLocator >& /* xLocator */ )
 		throw(xml::sax::SAXException, uno::RuntimeException)
 {
 }
