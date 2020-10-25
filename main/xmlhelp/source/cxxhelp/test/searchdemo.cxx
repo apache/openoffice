@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,10 +52,10 @@ void print_rtl_OUString( const rtl::OUString bla )
 	rtl::OString bluber = rtl::OString( bla.getStr(),bla.getLength(),RTL_TEXTENCODING_UTF8 );
 	char* bluberChr = new char[ 1+bluber.getLength() ];
 	const sal_Char* jux = bluber.getStr();
-  
+
 	for( int i = 0; i < bluber.getLength(); ++i )
 		bluberChr[i] = jux[i];
-	
+
 	bluberChr[ bluber.getLength() ] = 0;
 	printf( "%s\n",bluberChr );
 	delete[] bluberChr;
@@ -70,27 +70,27 @@ int main( int argc,char* argv[] )
 {
 
 	QueryResults* queryResults = 0;
-  
+
 	try
-    {
+	{
 		rtl::OUString installDir = rtl::OUString::createFromAscii( "//./e|/index/" );
 		QueryProcessor queryProcessor( installDir );
-      
+
 		std::vector<rtl::OUString> Query(2);
 		Query[0] = rtl::OUString::createFromAscii( "text*" );
 		Query[1] = rtl::OUString::createFromAscii( "abbildung" );
 		rtl::OUString Scope = rtl::OUString::createFromAscii( "headingheading" );
 		int HitCount = 40;
-      
+
  		QueryStatement queryStatement( HitCount,Query,Scope );
 		queryResults = queryProcessor.processQuery( queryStatement );
-      
+
 		rtl::OUString translations[2];
 		translations[0] = rtl::OUString::createFromAscii( "#HLP#" );
 		translations[1] = rtl::OUString::createFromAscii( "vnd.sun.star.help://" );
-      
-		PrefixTranslator* translator =  PrefixTranslator::makePrefixTranslator( translations,2 );
-		
+
+		PrefixTranslator* translator = PrefixTranslator::makePrefixTranslator( translations,2 );
+
 		QueryHitIterator* it = queryResults->makeQueryHitIterator();
 		sal_Int32 j = 0;
 		while( j < 10 && it->next() )
@@ -101,13 +101,14 @@ int main( int argc,char* argv[] )
 			print_rtl_OUString( qhd->getDocument() );
 			++j;
 		}
-      
+
 		delete it;
-    }
+	}
 	catch( ... )
-    {
-		printf( "catched exception" );
+	{
+		printf( "caught exception" );
 		throw;
-    }
+	}
 	return 0;
 }
+

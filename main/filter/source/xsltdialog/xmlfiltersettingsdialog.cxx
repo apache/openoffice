@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ XMLFilterSettingsDialog::XMLFilterSettingsDialog( Window* pParent, ResMgr& rResM
 	}
 	catch(Exception&)
 	{
-		DBG_ERROR( "XMLFilterSettingsDialog::XMLFilterSettingsDialog exception catched!" );
+		DBG_ERROR( "XMLFilterSettingsDialog::XMLFilterSettingsDialog exception caught!" );
 	}
 }
 
@@ -207,28 +207,28 @@ void XMLFilterSettingsDialog::updateStates()
 	bool bHasSelection = pSelectedEntry != NULL;
 
 	bool bMultiSelection = bHasSelection && (mpFilterListBox->NextSelected( pSelectedEntry ) != NULL );
-    bool bIsReadonly = false;
-    bool bIsDefault = false;
-    if(pSelectedEntry)
-    {
-        filter_info_impl* pInfo = (filter_info_impl*)pSelectedEntry->GetUserData();
-        bIsReadonly = 0 != pInfo->mbReadonly;
-    
-        sal_Int32 nFact = SvtModuleOptions::E_WRITER;
-        while(nFact <= SvtModuleOptions::E_BASIC)
-        {        
-            ::rtl::OUString sDefault = maModuleOpt.GetFactoryDefaultFilter((SvtModuleOptions::EFactory)nFact);
-            if( sDefault == pInfo->maFilterName )
-            {
-                bIsDefault = true;
-                break;
-            }
-            ++nFact;
-        }
-    }
-    maPBEdit.Enable( bHasSelection && !bMultiSelection && !bIsReadonly);
+	bool bIsReadonly = false;
+	bool bIsDefault = false;
+	if(pSelectedEntry)
+	{
+		filter_info_impl* pInfo = (filter_info_impl*)pSelectedEntry->GetUserData();
+		bIsReadonly = 0 != pInfo->mbReadonly;
+
+		sal_Int32 nFact = SvtModuleOptions::E_WRITER;
+		while(nFact <= SvtModuleOptions::E_BASIC)
+		{
+			::rtl::OUString sDefault = maModuleOpt.GetFactoryDefaultFilter((SvtModuleOptions::EFactory)nFact);
+			if( sDefault == pInfo->maFilterName )
+			{
+				bIsDefault = true;
+				break;
+			}
+			++nFact;
+		}
+	}
+	maPBEdit.Enable( bHasSelection && !bMultiSelection && !bIsReadonly);
 	maPBTest.Enable( bHasSelection && !bMultiSelection );
-    maPBDelete.Enable( bHasSelection && !bMultiSelection && !bIsReadonly && !bIsDefault);
+	maPBDelete.Enable( bHasSelection && !bMultiSelection && !bIsReadonly && !bIsDefault);
 	maPBSave.Enable( bHasSelection );
 }
 
@@ -349,7 +349,7 @@ OUString XMLFilterSettingsDialog::createUniqueFilterName( const OUString& rFilte
 {
 	OUString aFilterName( rFilterName );
 	OUString aSpace( sal_Unicode( ' ' ) );
-	
+
 	sal_Int32 nId = 2;
 
 	while( mxFilterContainer->hasByName( aFilterName ) )
@@ -431,7 +431,7 @@ OUString XMLFilterSettingsDialog::createUniqueInterfaceName( const OUString& rIn
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "XMLFilterSettingsDialog::createUniqueInterfaceName exception catched!" );
+		DBG_ERROR( "XMLFilterSettingsDialog::createUniqueInterfaceName exception caught!" );
 	}
 
 	OUString aInterfaceName( rInterfaceName );
@@ -476,7 +476,7 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 		}
 		catch( Exception& )
 		{
-			DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+			DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 			bOk = false;
 		}
 	}
@@ -517,7 +517,7 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 					SvFileStream aInputStream(pFilterEntry->maImportTemplate, STREAM_READ );
 					Reference< XInputStream > xIS( new utl::OInputStreamWrapper( aInputStream ) );
 					SvFileStream aOutputStream(aDestURL, STREAM_WRITE );
-					Reference< XOutputStream > xOS(  new utl::OOutputStreamWrapper( aOutputStream ) );
+					Reference< XOutputStream > xOS( new utl::OOutputStreamWrapper( aOutputStream ) );
 
 					if( copyStreams( xIS, xOS ) )
 						pFilterEntry->maImportTemplate = aDestURL;
@@ -598,7 +598,7 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 		}
 		catch( Exception& )
 		{
-			DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+			DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 			bOk = false;
 		}
 	}
@@ -616,7 +616,7 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 */
 		aValues[1].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "ClipboardFormat" ) );
 		OUString aDocType;
-    	if( !pFilterEntry->maDocType.match( sDocTypePrefix ) )
+		if( !pFilterEntry->maDocType.match( sDocTypePrefix ) )
 		{
 			aDocType = sDocTypePrefix;
 			aDocType += pFilterEntry->maDocType;
@@ -625,10 +625,10 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 		{
 			aDocType = pFilterEntry->maDocType;
 		}
-        if (aDocType == sDocTypePrefix)
-            aValues[1].Value <<= OUString();
-        else
-		    aValues[1].Value <<= aDocType;
+		if (aDocType == sDocTypePrefix)
+			aValues[1].Value <<= OUString();
+		else
+			aValues[1].Value <<= aDocType;
 
 		aValues[2].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "DocumentIconID" ) );
 		aValues[2].Value <<= pFilterEntry->mnDocumentIconID;
@@ -636,13 +636,13 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 		aValues[3].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "Extensions" ) );
 		aValues[3].Value <<= createExtensionsSequence( pFilterEntry->maExtension );
 
-        // the detect service will only be registered, if a doctype/search token was specified
-        if (aDocType.getLength() > sDocTypePrefix.getLength())
-        {
-            aValues.realloc(5);
-		    aValues[4].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "DetectService" ) );
-		    aValues[4].Value <<= OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.filters.XMLFilterDetect" ) );
-        }
+		// the detect service will only be registered, if a doctype/search token was specified
+		if (aDocType.getLength() > sDocTypePrefix.getLength())
+		{
+			aValues.realloc(5);
+			aValues[4].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "DetectService" ) );
+			aValues[4].Value <<= OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.filters.XMLFilterDetect" ) );
+		}
 
 		// 6. insert new or replace existing type information
 		if( mxTypeDetection.is() )
@@ -661,7 +661,7 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 				bOk = false;
 			}
 		}
@@ -676,21 +676,21 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 				bOk = false;
 			}
 		}
 
 		if( !bOk )
 		{
-			// we failed to add the type, so lets remove the filter
+			// we failed to add the type, so let's remove the filter
 			try
 			{
 				mxFilterContainer->removeByName( pFilterEntry->maFilterName );
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+				DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 				bOk = false;
 			}
 		}
@@ -706,20 +706,20 @@ bool XMLFilterSettingsDialog::insertOrEdit( filter_info_impl* pNewInfo, const fi
 				}
 				catch( Exception& )
 				{
-					DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+					DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 					bOk = false;
 				}
 
 				if( !bOk )
 				{
-					// we failed to add the filter, so lets remove the type
+					// we failed to add the filter, so let's remove the type
 					try
 					{
 						mxTypeDetection->removeByName( pFilterEntry->maType );
 					}
 					catch( Exception& )
 					{
-						DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception catched!" );
+						DBG_ERROR( "XMLFilterSettingsDialog::insertOrEdit exception caught!" );
 					}
 				}
 
@@ -896,7 +896,7 @@ void XMLFilterSettingsDialog::onDelete()
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "XMLFilterSettingsDialog::onDelete exception catched!" );
+				DBG_ERROR( "XMLFilterSettingsDialog::onDelete exception caught!" );
 			}
 		}
 	}
@@ -922,9 +922,9 @@ void XMLFilterSettingsDialog::onSave()
 	}
 
 	// Open Fileopen-Dialog
-   	::sfx2::FileDialogHelper aDlg(
-        com::sun::star::ui::dialogs::TemplateDescription::FILESAVE_AUTOEXTENSION,
-        0 );
+	::sfx2::FileDialogHelper aDlg(
+		com::sun::star::ui::dialogs::TemplateDescription::FILESAVE_AUTOEXTENSION,
+		0 );
 
 	String aExtensions( RTL_CONSTASCII_USTRINGPARAM("*.jar") );
 	String aFilterName( RESID( STR_FILTER_PACKAGE ) );
@@ -969,8 +969,8 @@ void XMLFilterSettingsDialog::onOpen()
 	XMLFilterVector aFilters;
 
 	// Open Fileopen-Dialog
-   	::sfx2::FileDialogHelper aDlg(
-        com::sun::star::ui::dialogs::TemplateDescription::FILEOPEN_SIMPLE, 0 );
+	::sfx2::FileDialogHelper aDlg(
+		com::sun::star::ui::dialogs::TemplateDescription::FILEOPEN_SIMPLE, 0 );
 
 	String aExtensions( RTL_CONSTASCII_USTRINGPARAM("*.jar") );
 	String aFilterName( RESID( STR_FILTER_PACKAGE ) );
@@ -994,7 +994,7 @@ void XMLFilterSettingsDialog::onOpen()
 			filter_info_impl* pInfo = (*aIter++);
 
 			if( insertOrEdit( pInfo ) )
-			{				
+			{
 				aFilterName = pInfo->maFilterName;
 				nFilters++;
 			}
@@ -1017,7 +1017,7 @@ void XMLFilterSettingsDialog::onOpen()
 		{
 			aMsg = String( RESID( STR_FILTER_INSTALLED ) );
 			aMsg.SearchAndReplace( sPlaceholder, aFilterName );
-		
+
 		}
 		else
 		{
@@ -1039,22 +1039,22 @@ void XMLFilterSettingsDialog::onClose()
 
 long XMLFilterSettingsDialog::Notify( NotifyEvent& rNEvt )
 {
-    // Zuerst Basisklasse rufen wegen TabSteuerung
-    long nRet = WorkWindow::Notify( rNEvt );
-    if ( !nRet )
-    {
-        if ( rNEvt.GetType() == EVENT_KEYINPUT )
-        {
-            const KeyEvent* pKEvt = rNEvt.GetKeyEvent();
-            KeyCode         aKeyCode = pKEvt->GetKeyCode();
-            sal_uInt16          nKeyCode = aKeyCode.GetCode();
+	// Zuerst Basisklasse rufen wegen TabSteuerung
+	long nRet = WorkWindow::Notify( rNEvt );
+	if ( !nRet )
+	{
+		if ( rNEvt.GetType() == EVENT_KEYINPUT )
+		{
+			const KeyEvent* pKEvt = rNEvt.GetKeyEvent();
+			KeyCode			aKeyCode = pKEvt->GetKeyCode();
+			sal_uInt16		nKeyCode = aKeyCode.GetCode();
 
-            if( nKeyCode == KEY_ESCAPE )
-            {
-                Close();
-                return sal_True;
-            }
-        }
+			if( nKeyCode == KEY_ESCAPE )
+			{
+				Close();
+				return sal_True;
+			}
+		}
 	}
 
 	return nRet;
@@ -1142,11 +1142,11 @@ void XMLFilterSettingsDialog::initFilterList()
 					{
 						pValues->Value >>= pTempFilter->maImportTemplate;
 					}
-                    else if(pValues->Name.equalsAscii( "Finalized" ))
-                    {        
-                        pValues->Value >>= pTempFilter->mbReadonly;
-                    }            
-                }
+					else if(pValues->Name.equalsAscii( "Finalized" ))
+					{
+						pValues->Value >>= pTempFilter->mbReadonly;
+					}
+				}
 
 				// if this is not a XmlFilterAdaptor entry, skip it
 				if( !aFilterService.equalsAscii( "com.sun.star.comp.Writer.XmlFilterAdaptor" ) )
@@ -1225,13 +1225,13 @@ void XMLFilterSettingsDialog::initFilterList()
 								{
 									pValues2->Value >>= pTempFilter->mnDocumentIconID;
 								}
-                                else if(pValues2->Name.equalsAscii( "Finalized" ))
-                                {        
-                                    // both the filter and the type may be finalized
-                                    sal_Bool bTemp = sal_False;
-                                    pValues2->Value >>= bTemp;
-                                    pTempFilter->mbReadonly |= bTemp;
-                                }            
+								else if(pValues2->Name.equalsAscii( "Finalized" ))
+								{
+									// both the filter and the type may be finalized
+									sal_Bool bTemp = sal_False;
+									pValues2->Value >>= bTemp;
+									pTempFilter->mbReadonly |= bTemp;
+								}
 							}
 						}
 					}
@@ -1250,7 +1250,7 @@ void XMLFilterSettingsDialog::initFilterList()
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "XMLFilterSettingsDialog::initFilterList exception catched!" );
+				DBG_ERROR( "XMLFilterSettingsDialog::initFilterList exception caught!" );
 			}
 
 		}
@@ -1283,7 +1283,7 @@ std::vector< application_info_impl* >& getApplicationInfos()
 
 	if( aInfos.empty() )
 	{
-        ResId aResId1( STR_APPL_NAME_WRITER, *getXSLTDialogResMgr() );
+		ResId aResId1( STR_APPL_NAME_WRITER, *getXSLTDialogResMgr() );
 		aInfos.push_back( new application_info_impl(
 			"com.sun.star.text.TextDocument",
 			aResId1,
@@ -1311,8 +1311,8 @@ std::vector< application_info_impl* >& getApplicationInfos()
 			"com.sun.star.comp.Draw.XMLImporter",
 			"com.sun.star.comp.Draw.XMLExporter" ) );
 
-        // --- oasis file formats...
-	    ResId aResId5( STR_APPL_NAME_OASIS_WRITER, *getXSLTDialogResMgr() );
+		// --- oasis file formats...
+		ResId aResId5( STR_APPL_NAME_OASIS_WRITER, *getXSLTDialogResMgr() );
 		aInfos.push_back( new application_info_impl(
 			"com.sun.star.text.TextDocument",
 			aResId5,
@@ -1353,8 +1353,8 @@ const application_info_impl* getApplicationInfo( const OUString& rServiceName )
 	while( aIter != rInfos.end() )
 	{
 		// if( rServiceName == (*aIter)->maDocumentService )
-        if( rServiceName == (*aIter)->maXMLExporter ||
-            rServiceName == (*aIter)->maXMLImporter)
+		if( rServiceName == (*aIter)->maXMLExporter ||
+			rServiceName == (*aIter)->maXMLImporter)
 		{
 			return (*aIter);
 		}
@@ -1527,15 +1527,15 @@ IMPL_LINK( XMLFilterListBox, HeaderEndDrag_Impl, HeaderBar*, pBar )
 		long nWidth = mpHeaderBar->GetItemSize(ITEMID_NAME);
 		long nBarWidth = mpHeaderBar->GetSizePixel().Width();
 
-        if(nWidth < 30)
-            mpHeaderBar->SetItemSize( ITEMID_TYPE, 30);
-        else if ( ( nBarWidth - nWidth ) < 30 )
-            mpHeaderBar->SetItemSize( ITEMID_TYPE, nBarWidth - 30 );
+		if(nWidth < 30)
+			mpHeaderBar->SetItemSize( ITEMID_TYPE, 30);
+		else if ( ( nBarWidth - nWidth ) < 30 )
+			mpHeaderBar->SetItemSize( ITEMID_TYPE, nBarWidth - 30 );
 
 		for ( sal_uInt16 i = 1; i <= nTabs; ++i )
 		{
 			long nW = mpHeaderBar->GetItemSize(i);
-			aSz.Width() =  nW + nTmpSz;
+			aSz.Width() = nW + nTmpSz;
 			nTmpSz += nW;
 			SetTab( i, PixelToLogic( aSz, MapMode(MAP_APPFONT) ).Width(), MAP_APPFONT );
 		}
@@ -1577,10 +1577,10 @@ String XMLFilterListBox::getEntryString( const filter_info_impl* pInfo ) const
 	String aEntryStr( pInfo->maFilterName );
 	aEntryStr += '\t';
 	// aEntryStr += String( getApplicationUIName( pInfo->maDocumentService ) );
-    if ( pInfo->maExportService.getLength() > 0 )
-        aEntryStr += String( getApplicationUIName( pInfo->maExportService ) );
-    else
-        aEntryStr += String( getApplicationUIName( pInfo->maImportService ) );
+	if ( pInfo->maExportService.getLength() > 0 )
+		aEntryStr += String( getApplicationUIName( pInfo->maExportService ) );
+	else
+		aEntryStr += String( getApplicationUIName( pInfo->maImportService ) );
 	aEntryStr += ' ';
 	aEntryStr += '-';
 	aEntryStr += ' ';
@@ -1600,7 +1600,7 @@ String XMLFilterListBox::getEntryString( const filter_info_impl* pInfo ) const
 	{
 		aEntryStr += String( RESID( STR_EXPORT_ONLY ) );
 	}
-	else 
+	else
 	{
 		aEntryStr += String( RESID( STR_UNDEFINED_FILTER ) );
 	}
@@ -1615,8 +1615,8 @@ String XMLFilterListBox::getEntryString( const filter_info_impl* pInfo ) const
 filter_info_impl::filter_info_impl()
 :	maFlags(0x00080040),
 	maFileFormatVersion(0),
-    mnDocumentIconID(0),
-    mbReadonly(sal_False)
+	mnDocumentIconID(0),
+	mbReadonly(sal_False)
 {
 }
 
@@ -1639,8 +1639,8 @@ filter_info_impl::filter_info_impl( const filter_info_impl& rInfo ) :
 	maExportService( rInfo.maExportService ),
 	maFlags( rInfo.maFlags ),
 	maFileFormatVersion( rInfo.maFileFormatVersion ),
-    mnDocumentIconID( rInfo.mnDocumentIconID ),
-    mbReadonly( rInfo.mbReadonly )
+	mnDocumentIconID( rInfo.mnDocumentIconID ),
+	mbReadonly( rInfo.mbReadonly )
 {
 }
 
@@ -1659,7 +1659,7 @@ int filter_info_impl::operator==( const filter_info_impl& r ) const
 		maDTD != r.maDTD ||
 		maExportXSLT != r.maExportXSLT ||
 		maImportXSLT != r.maImportXSLT ||
-        maExportService != r.maExportService ||
+		maExportService != r.maExportService ||
 		maImportService != r.maImportService ||
 		maImportTemplate != r.maImportTemplate ||
 		maFlags != r.maFlags ||
@@ -1676,17 +1676,17 @@ Sequence< OUString > filter_info_impl::getFilterUserData() const
 	Sequence< OUString > aUserData(8);
 
 	aUserData[0] = OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.documentconversion.XSLTFilter" ) );
-    /*
+	/*
 	const application_info_impl* pInfo = getApplicationInfo( maDocumentService );
 	if( pInfo )
 	{
 		aUserData[2] = pInfo->maXMLImporter;
 		aUserData[3] = pInfo->maXMLExporter;
 	}
-    */
+	*/
 	aUserData[2] = maImportService;
 	aUserData[3] = maExportService;
-    aUserData[4] = maImportXSLT;
+	aUserData[4] = maImportXSLT;
 	aUserData[5] = maExportXSLT;
 	aUserData[6] = maDTD;
 	aUserData[7] = maComment;
@@ -1696,20 +1696,20 @@ Sequence< OUString > filter_info_impl::getFilterUserData() const
 
 
 // -----------------------------------------------------------------------
-    
+
 OUString string_encode( const OUString & rText )
 {
 
 	static sal_Bool const aCharClass[]
-    =  { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* UricNoSlash */
-         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-         0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, /* !"#$%&'()*+,-./*/
-         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, /*0123456789:;<=>?*/
-         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, /*@ABCDEFGHIJKLMNO*/
-         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, /*PQRSTUVWXYZ[\]^_*/
-         0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, /*`abcdefghijklmno*/
-         1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0  /*pqrstuvwxyz{|}~ */
-       };
+	= { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, /* UricNoSlash */
+		0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+		0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 0, /* !"#$%&'()*+,-./*/
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 1, /*0123456789:;<=>?*/
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, /*@ABCDEFGHIJKLMNO*/
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, /*PQRSTUVWXYZ[\]^_*/
+		0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, /*`abcdefghijklmno*/
+		1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 1, 0  /*pqrstuvwxyz{|}~ */
+	  };
 
 
 	return Uri::encode( rText, aCharClass, rtl_UriEncodeCheckEscapes, RTL_TEXTENCODING_UTF8 );
@@ -1762,7 +1762,7 @@ bool copyStreams( Reference< XInputStream > xIS, Reference< XOutputStream > xOS 
 	}
 	catch(Exception&)
 	{
-		DBG_ERROR( "copyStreams() exception catched!" );
+		DBG_ERROR( "copyStreams() exception caught!" );
 	}
 
 	return false;

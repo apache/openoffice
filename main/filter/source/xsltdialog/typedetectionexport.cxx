@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ TypeDetectionExporter::TypeDetectionExporter( Reference< XMultiServiceFactory >&
 
 static OUString createRelativeURL( const OUString& rFilterName, const OUString& rURL )
 {
-	if( rURL.getLength() && 
+	if( rURL.getLength() &&
 		(rURL.compareToAscii( RTL_CONSTASCII_STRINGPARAM("http:") ) != 0) &&
 		(rURL.compareToAscii( RTL_CONSTASCII_STRINGPARAM("shttp:") ) != 0) &&
 		(rURL.compareToAscii( RTL_CONSTASCII_STRINGPARAM("jar:") ) != 0) &&
@@ -85,7 +85,7 @@ static OUString createRelativeURL( const OUString& rFilterName, const OUString& 
 	}
 }
 
-void TypeDetectionExporter::doExport( Reference< XOutputStream > xOS,  const XMLFilterVector& rFilters )
+void TypeDetectionExporter::doExport( Reference< XOutputStream > xOS, const XMLFilterVector& rFilters )
 {
 	try
 	{
@@ -149,7 +149,7 @@ void TypeDetectionExporter::doExport( Reference< XOutputStream > xOS,  const XML
 				sValue += sComma;
 				sValue += OUString::valueOf( pFilter->mnDocumentIconID );
 				sValue += sComma;
- 
+
 				addProperty( xHandler, sData, sValue );
 				addLocaleProperty( xHandler, sUIName, pFilter->maInterfaceName );
 				xHandler->ignorableWhitespace ( sWhiteSpace );
@@ -193,7 +193,7 @@ void TypeDetectionExporter::doExport( Reference< XOutputStream > xOS,  const XML
 				sValue += sXSLTFilterService;
 				sValue += sDelim;
 				sValue += sDelim;
-				
+
 				const application_info_impl* pAppInfo = getApplicationInfo( pFilter->maExportService );
 				sValue += pAppInfo->maXMLImporter;
 				sValue += sDelim;
@@ -227,7 +227,7 @@ void TypeDetectionExporter::doExport( Reference< XOutputStream > xOS,  const XML
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "TypeDetectionExporter::doExport exception catched!" );
+		DBG_ERROR( "TypeDetectionExporter::doExport exception caught!" );
 	}
 }
 
@@ -257,7 +257,7 @@ void TypeDetectionExporter::addProperty( Reference< XDocumentHandler > xHandler,
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "TypeDetectionExporter::addProperty exception catched!" );
+		DBG_ERROR( "TypeDetectionExporter::addProperty exception caught!" );
 	}
 }
 
@@ -288,7 +288,7 @@ void TypeDetectionExporter::addLocaleProperty( Reference< XDocumentHandler > xHa
 	}
 	catch( Exception& )
 	{
-		DBG_ERROR( "TypeDetectionExporter::addLocaleProperty exception catched!" );
+		DBG_ERROR( "TypeDetectionExporter::addLocaleProperty exception caught!" );
 	}
 }
 
