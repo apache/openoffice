@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ import org.apache.commons.httpclient.URI;
 import org.apache.commons.httpclient.methods.GetMethod;
 import org.apache.commons.httpclient.methods.PostMethod;
 
-public class Helper 
+public class Helper
 {
     public final static int GENERALSEND_ERROR = 0;
     public final static int NOWIKIFILTER_ERROR = 1;
@@ -153,7 +153,7 @@ public class Helper
 
     private static final String sHTMLHeader = "<HTML><HEAD><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /><TITLE></TITLE></HEAD><BODY>";
     private static final String sHTMLFooter = "</BODY></HTML>";
-    
+
     private static Random m_aRandom;
     private static MultiThreadedHttpConnectionManager m_aConnectionManager;
     private static HttpClient m_aClient;
@@ -223,7 +223,7 @@ public class Helper
     {
         return m_bAllowConnection;
     }
-    
+
     synchronized protected static boolean GetShowInBrowserByDefault( XComponentContext xContext )
     {
         if ( m_bShowInBrowser == null )
@@ -301,7 +301,7 @@ public class Helper
         return new Protocol( "https", new WikiProtocolSocketFactory(), ( ( nPort < 0 ) ? 443 : nPort ) );
     }
 
-    protected static String GetMainURL( String sWebPage, String sVURL ) 
+    protected static String GetMainURL( String sWebPage, String sVURL )
     {
         String sResultURL = "";
         try
@@ -309,13 +309,13 @@ public class Helper
             StringReader aReader = new StringReader( sWebPage );
             HTMLEditorKit.Parser aParser = GetHTMLParser();
             EditPageParser aCallback = new EditPageParser();
-            
+
             aParser.parse( aReader, aCallback, true );
             sResultURL = aCallback.m_sMainURL;
 
-            if ( !sResultURL.startsWith( "http" ) ) 
+            if ( !sResultURL.startsWith( "http" ) )
             {
-                //if the url is only relative then complete it
+                // if the url is only relative then complete it
                 URL aURL = new URL( sVURL );
                 sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + sResultURL;
             }
@@ -333,18 +333,18 @@ public class Helper
             if ( nIndex >= 0 )
                 sResultURL = sVURL.substring( 0, nIndex );
         }
-        
+
         return sResultURL;
     }
-   
+
     protected static String GetRedirectURL( String sWebPage, String sURL )
     {
-        //scrape the HTML source and find the EditURL
+        // scrape the HTML source and find the EditURL
         // TODO/LATER: Use parser in future
 
         String sResultURL = "";
         int nInd = sWebPage.indexOf( "http-equiv=\"refresh\"" );
-        if ( nInd != -1 ) 
+        if ( nInd != -1 )
         {
             int nContent = sWebPage.indexOf( "content=", nInd );
             if ( nContent > 0 )
@@ -358,28 +358,28 @@ public class Helper
                 }
             }
 
-            try 
+            try
             {
                 URL aURL = new URL( sURL );
-                if ( !sResultURL.startsWith( aURL.getProtocol() )) 
+                if ( !sResultURL.startsWith( aURL.getProtocol() ))
                 {
-                    //if the url is only relative then complete it
+                    // if the url is only relative then complete it
                     if ( sResultURL.startsWith( "/" ) )
                         sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + sResultURL;
                     else
                         sResultURL = aURL.getProtocol() + "://" + aURL.getHost() + aURL.getPath() + sResultURL;
                 }
             }
-            catch ( MalformedURLException ex ) 
+            catch ( MalformedURLException ex )
             {
                 ex.printStackTrace();
-            }            
+            }
         }
 
         return sResultURL;
-       
+
     }
-    
+
     protected static XInputStream SaveHTMLTemp( XComponentContext xContext, String sArticle )
     {
         XInputStream xResult = null;
@@ -387,7 +387,7 @@ public class Helper
         if ( xContext != null )
         {
             try
-            {            
+            {
                 Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
                 XStream xStream = ( XStream ) UnoRuntime.queryInterface( XStream.class, oTempFile );
                 XSeekable xSeekable = ( XSeekable ) UnoRuntime.queryInterface( XSeekable.class, oTempFile );
@@ -399,10 +399,10 @@ public class Helper
                     {
                         String sHTML = sHTMLHeader.concat( sArticle );
                         sHTML = sHTML.concat( sHTMLFooter );
-                        xOutputStream.writeBytes( sHTML.getBytes( "UTF-8" ) );            
+                        xOutputStream.writeBytes( sHTML.getBytes( "UTF-8" ) );
                         // xOutputStream.closeOutput();
-                        xSeekable.seek( 0 );  
-                        
+                        xSeekable.seek( 0 );
+
                         xResult = xInputStream;
                     }
                 }
@@ -415,12 +415,12 @@ public class Helper
 
         return xResult;
     }
-    
-    
-    protected static String CreateTempFile( XComponentContext xContext ) 
+
+
+    protected static String CreateTempFile( XComponentContext xContext )
     {
         String sURL = "";
-        try 
+        try
         {
             Object oTempFile = xContext.getServiceManager().createInstanceWithContext( "com.sun.star.io.TempFile", xContext );
             XPropertySet xPropertySet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, oTempFile );
@@ -431,27 +431,27 @@ public class Helper
             xInputStream.closeInput();
             XOutputStream xOutputStream = ( XOutputStream ) UnoRuntime.queryInterface( XOutputStream.class, oTempFile );
             xOutputStream.closeOutput();
-        } catch ( com.sun.star.uno.Exception ex ) 
+        } catch ( com.sun.star.uno.Exception ex )
         {
             ex.printStackTrace();
         }
-        return sURL;        
+        return sURL;
     }
-    
-    protected static String EachLine( String sURL ) 
+
+    protected static String EachLine( String sURL )
     {
         String sText = "";
-        try 
+        try
         {
             URL aURL = new URL( sURL );
-            File aFile = new File( aURL.getFile() );        
+            File aFile = new File( aURL.getFile() );
             InputStreamReader aInputReader = new InputStreamReader( new FileInputStream( aFile ), "UTF-8" );
             BufferedReader aBufReader = new BufferedReader( aInputReader );
 
             StringBuffer aBuf = new StringBuffer();
             String sEachLine = aBufReader.readLine();
 
-            while( sEachLine != null ) 
+            while( sEachLine != null )
             {
                 aBuf.append( sEachLine );
                 aBuf.append( "\n" );
@@ -459,28 +459,28 @@ public class Helper
                 sEachLine = aBufReader.readLine();
             }
             sText = aBuf.toString();
-        } catch ( Exception e ) 
+        } catch ( Exception e )
         {
             e.printStackTrace();
         }
         return sText;
     }
-    
-    protected static String GetDocTitle( XModel xDoc ) 
+
+    protected static String GetDocTitle( XModel xDoc )
     {
         String sTitle = "";
         XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
         XPropertySet xPropSet = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xDocInfoSup.getDocumentInfo() );
-        try 
+        try
         {
             sTitle = ( String ) xPropSet.getPropertyValue( "Title" );
-        } catch ( Exception ex ) 
+        } catch ( Exception ex )
         {
             ex.printStackTrace();
-        } 
+        }
         return sTitle;
     }
-    
+
     protected static void SetDocTitle( XModel xDoc, String sTitle )
     {
         XDocumentInfoSupplier xDocInfoSup = ( XDocumentInfoSupplier ) UnoRuntime.queryInterface( XDocumentInfoSupplier.class, xDoc );
@@ -496,10 +496,10 @@ public class Helper
                 catch ( Exception ex )
                 {
                     ex.printStackTrace();
-                } 
+                }
             }
         }
-    }    
+    }
 
     protected static String GetDocServiceName( XComponentContext xContext, XModel xModel )
     {
@@ -511,7 +511,7 @@ public class Helper
                 XMultiComponentFactory xFactory = xContext.getServiceManager();
                 if ( xFactory == null )
                     throw new com.sun.star.uno.RuntimeException();
-                
+
                 Object oModuleManager = xFactory.createInstanceWithContext( "com.sun.star.frame.ModuleManager", xContext );
                 XModuleManager xModuleManager = ( XModuleManager ) UnoRuntime.queryInterface( XModuleManager.class, oModuleManager );
                 if ( xModuleManager != null )
@@ -525,7 +525,7 @@ public class Helper
 
         return aDocServiceName;
     }
-    
+
     protected static String GetFilterName( XComponentContext xContext, String aTypeName, String aDocServiceName )
     {
         String aFilterName = "";
@@ -541,7 +541,7 @@ public class Helper
                     NamedValue[] aRequest = new NamedValue[2];
                     aRequest[0] = new NamedValue( "Type", aTypeName );
                     aRequest[1] = new NamedValue( "DocumentService", aDocServiceName );
-                    
+
                     XEnumeration xSet = xQuery.createSubSetEnumerationByProperties( aRequest );
                     if ( xSet != null )
                     {
@@ -591,7 +591,7 @@ public class Helper
 
         if ( xConfigurationProvider == null )
             throw new com.sun.star.uno.RuntimeException();
-        
+
         return xConfigurationProvider;
     }
 
@@ -606,11 +606,11 @@ public class Helper
         aVal.Value = sNodepath;
         Object[] aArgs = new Object[1];
         aArgs[0] = aVal;
-        
+
         return GetConfigurationProvider( xContext ).createInstanceWithArguments(
                                     ( bWriteAccess ? "com.sun.star.configuration.ConfigurationUpdateAccess"
                                                    : "com.sun.star.configuration.ConfigurationAccess" ),
-                                    aArgs );        
+                                    aArgs );
     }
 
     protected static XPropertySet GetConfigProps( XComponentContext xContext, String sNodepath )
@@ -619,7 +619,7 @@ public class Helper
         XPropertySet xProps = ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, GetConfig( xContext, sNodepath, true ) );
         if ( xProps == null )
             throw new com.sun.star.uno.RuntimeException();
-        
+
         return xProps;
     }
 
@@ -630,7 +630,7 @@ public class Helper
         XNameContainer xContainer = ( XNameContainer ) UnoRuntime.queryInterface( XNameContainer.class, GetConfig( xContext, sNodepath, true ) );
         if ( xContainer == null )
             throw new com.sun.star.uno.RuntimeException();
-        
+
         return xContainer;
     }
 
@@ -640,7 +640,7 @@ public class Helper
         XNameAccess xNameAccess = ( XNameAccess ) UnoRuntime.queryInterface( XNameAccess.class, GetConfig( xContext, sNodepath, false ) );
         if ( xNameAccess == null )
             throw new com.sun.star.uno.RuntimeException();
-        
+
         return xNameAccess;
     }
 
@@ -648,7 +648,7 @@ public class Helper
     {
         if ( aHostConfig == null || xContext == null )
             return;
-    
+
         try
         {
             XNameAccess xNameAccess = GetConfigNameAccess( xContext, "org.openoffice.Inet/Settings" );
@@ -675,13 +675,13 @@ public class Helper
 
                     String aNoProxyList = AnyConverter.toString( xNameAccess.getByName( "ooInetNoProxy" ) );
                     String aProxyName = AnyConverter.toString( xNameAccess.getByName( aProxyNameProp ) );
-                                
+
                     int nProxyPort = 80;
 
                     Object aPortNo = xNameAccess.getByName( aProxyPortProp );
                     if ( !AnyConverter.isVoid( aPortNo ) )
                         nProxyPort = AnyConverter.toInt( aPortNo );
-                   
+
                     if ( nProxyPort == -1 )
                         nProxyPort = 80;
 
@@ -712,7 +712,7 @@ public class Helper
             }
         }
     }
-    
+
     protected static void ExecuteMethod( HttpMethodBase aMethod, HostConfiguration aHostConfig, URI aURI, XComponentContext xContext, boolean bSetHost )
         throws WikiCancelException, IOException, SSLException
     {
@@ -746,7 +746,7 @@ public class Helper
     static private class HTMLParse extends HTMLEditorKit
     {
 
-        public HTMLEditorKit.Parser getParser() 
+        public HTMLEditorKit.Parser getParser()
         {
             return super.getParser();
         }
@@ -756,7 +756,7 @@ public class Helper
     {
         return new HTMLParse().getParser();
     }
-    
+
     static protected boolean LoginReportsError( String sRespond )
     {
         boolean bResult = true;
@@ -767,7 +767,7 @@ public class Helper
                 StringReader aReader = new StringReader( sRespond );
                 HTMLEditorKit.Parser aParser = GetHTMLParser();
                 EditPageParser aCallback = new EditPageParser();
-                
+
                 aParser.parse( aReader, aCallback, true );
                 bResult = ( aCallback.m_nErrorInd >= 0 );
             }
@@ -776,7 +776,7 @@ public class Helper
                 e.printStackTrace();
             }
         }
-        
+
         return bResult;
     }
 
@@ -790,7 +790,7 @@ public class Helper
                 StringReader aReader = new StringReader( sLoginPage );
                 HTMLEditorKit.Parser aParser = Helper.GetHTMLParser();
                 EditPageParser aCallbacks = new EditPageParser();
-                
+
                 aParser.parse( aReader, aCallbacks, true );
                 sResult = aCallbacks.m_sLoginToken;
             }
@@ -803,7 +803,7 @@ public class Helper
         return sResult;
     }
 
-    static protected HostConfiguration Login( URI aMainURL, String sWikiUser, String sWikiPass, XComponentContext xContext ) 
+    static protected HostConfiguration Login( URI aMainURL, String sWikiUser, String sWikiPass, XComponentContext xContext )
         throws com.sun.star.uno.Exception, java.io.IOException, WikiCancelException
     {
         HostConfiguration aHostConfig = null;
@@ -837,7 +837,7 @@ public class Helper
                 aPost.addParameter( "wpPassword", sWikiPass );
                 if ( sLoginToken.length() > 0 )
                     aPost.addParameter( "wpLoginToken", sLoginToken );
-                
+
                 String[][] pArgs = GetSpecialArgs( xContext, aMainURL.getHost() );
                 if ( pArgs != null )
                     for ( int nArgInd = 0; nArgInd < pArgs.length; nArgInd++ )
@@ -845,7 +845,7 @@ public class Helper
                             aPost.addParameter( pArgs[nArgInd][0], pArgs[nArgInd][1] );
 
                 ExecuteMethod( aPost, aNewHostConfig, aPostURI, xContext, false );
-                
+
                 nResultCode = aPost.getStatusCode();
 
                 while( nResultCode >= 301 && nResultCode <= 303 || nResultCode == 307 )
@@ -860,14 +860,14 @@ public class Helper
 
                     nResultCode = aPost.getStatusCode();
                 }
-                
+
                 if ( nResultCode == 200 )
                 {
                     String sResult = aPost.getResponseBodyAsString();
                     if ( !LoginReportsError( sResult ) )
                         aHostConfig = aNewHostConfig;
                 }
-                
+
                 aPost.releaseConnection();
             }
         }
@@ -879,7 +879,7 @@ public class Helper
     {
         XControl xResult = null;
         XControlContainer xControlCont = (XControlContainer) UnoRuntime.queryInterface( XControlContainer.class, xDialog );
-                
+
         if ( xControlCont != null )
         {
             Object oControl = xControlCont.getControl( aControlName );
@@ -894,7 +894,7 @@ public class Helper
         XControl xControl = GetControlFromDialog( xDialog, aControlName );
         if ( xControl != null )
             return ( XPropertySet ) UnoRuntime.queryInterface( XPropertySet.class, xControl.getModel() );
-        
+
         return null;
     }
 
@@ -912,7 +912,7 @@ public class Helper
             {
                 e.printStackTrace();
             }
-        } 
+        }
     }
 
     protected static String[] GetPasswordsForURLAndUser( XComponentContext xContext, String sURL, String sUserName )
@@ -962,7 +962,7 @@ public class Helper
             xPeer = xControl.getPeer();
         ShowError( xContext, xPeer, nTitleID, nErrorID, sArg, bQuery );
     }
-    
+
     protected static boolean ShowError( XComponentContext xContext, XWindowPeer xParentPeer, int nTitleID, int nErrorID, String sArg, boolean bQuery )
     {
         boolean bResult = false;
@@ -973,7 +973,7 @@ public class Helper
 
             String sError = null;
             String sTitle = "";
-            
+
             try
             {
                 sError = GetLocalizedString( xContext, nErrorID );
@@ -1001,7 +1001,7 @@ public class Helper
                         xMBFactory = (XMessageBoxFactory)UnoRuntime.queryInterface(
                                      XMessageBoxFactory.class,
                                      xFactory.createInstanceWithContext( "com.sun.star.awt.Toolkit", xContext ) );
-                    
+
                     if ( xMBFactory != null )
                     {
                         if ( bQuery )
@@ -1086,7 +1086,7 @@ public class Helper
                                 XNameAccess xArgument = (XNameAccess)UnoRuntime.queryInterface( XNameAccess.class, xArgs.getByName( pNames[nInd] ) );
                                 if ( xArgument == null )
                                     throw new com.sun.star.uno.RuntimeException();
-                                
+
                                 pResult[nInd][0] = pNames[nInd];
                                 pResult[nInd][1] = AnyConverter.toString( xArgument.getByName( "Value" ) );
                             }
@@ -1123,7 +1123,7 @@ public class Helper
                 e.printStackTrace();
             }
         }
-        
+
         return false;
     }
 
