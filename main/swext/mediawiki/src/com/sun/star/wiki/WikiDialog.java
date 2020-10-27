@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,14 +42,14 @@ import com.sun.star.lang.EventObject;
 import com.sun.star.lang.XMultiServiceFactory;
 
 public class WikiDialog implements XDialogEventHandler, XTopWindowListener
-{    
+{
     XComponentContext m_xContext;
     XControlContainer m_xControlContainer;
     XDialog m_xDialog;
     String[] m_aMethods;
     boolean m_bAction = false;
     Settings m_aSettings;
-    
+
     protected Thread m_aThread;
     protected boolean m_bThreadFinished = false;
 
@@ -65,7 +65,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             Object obj;
             obj = xMCF.createInstanceWithContext("com.sun.star.awt.DialogProvider2", m_xContext );
             XDialogProvider2 xDialogProvider = (XDialogProvider2) UnoRuntime.queryInterface( XDialogProvider2.class, obj );
-            
+
             m_xDialog = xDialogProvider.createDialogWithHandler( DialogURL, this );
             m_xControlContainer = (XControlContainer)UnoRuntime.queryInterface( XControlContainer.class, m_xDialog );
             XTopWindow xTopWindow = (XTopWindow)UnoRuntime.queryInterface( XTopWindow.class, m_xDialog );
@@ -77,7 +77,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             ex.printStackTrace();
         }
     }
-    
+
     public synchronized void ThreadStop( boolean bSelf )
     {
         if ( bSelf || m_aThread != null && !m_bThreadFinished )
@@ -96,38 +96,38 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         m_bThreadFinished = true;
     }
 
-    protected void setMethods (String [] Methods) 
+    protected void setMethods (String [] Methods)
     {
         this.m_aMethods = Methods;
     }
-    
-    
-    public boolean show( ) 
+
+
+    public boolean show( )
     {
         m_bThreadFinished = false;
 
         if( m_xDialog != null ) m_xDialog.execute();
         return m_bAction;
     }
-    
-    
-    public String[] getSupportedMethodNames() 
+
+
+    public String[] getSupportedMethodNames()
     {
         return m_aMethods;
     }
-    
-    
+
+
     public boolean callHandlerMethod( XDialog xDialog, Object EventObject, String MethodName )
     {
         return true;
     }
- 
+
     public void SetTitle( String sTitle )
         throws Exception
     {
         SetTitle( m_xDialog, sTitle );
     }
-    
+
     public static void SetTitle( XDialog xDialog, String sTitle )
         throws Exception
     {
@@ -142,7 +142,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             }
         }
     }
-    
+
     protected XPropertySet GetPropSet(String sControl)
     {
         return GetPropSet( m_xControlContainer, sControl );
@@ -160,7 +160,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
 
         if ( xPS == null )
             throw new com.sun.star.uno.RuntimeException();
-        
+
         return xPS;
     }
 
@@ -174,7 +174,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             {
                 Object oDialogProvider = xContext.getServiceManager().createInstanceWithContext("com.sun.star.awt.DialogProvider2", xContext );
                 XDialogProvider2 xDialogProvider = (XDialogProvider2) UnoRuntime.queryInterface( XDialogProvider2.class, oDialogProvider );
-                
+
                 if ( xDialogProvider != null )
                     xResult = xDialogProvider.createDialog( sURL );
 
@@ -193,11 +193,11 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             {
                 ex.printStackTrace();
             }
-        } 
+        }
 
         return xResult;
     }
- 
+
     protected void InsertThrobber( int X, int Y, int Width, int Height )
     {
         try
@@ -214,11 +214,11 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
                 XPropertySet xThrobberProps = (XPropertySet)UnoRuntime.queryInterface( XPropertySet.class, xThrobberModel );
                 if ( xThrobberProps != null )
                 {
-                    xThrobberProps.setPropertyValue( "Name", "WikiThrobber" ); 
+                    xThrobberProps.setPropertyValue( "Name", "WikiThrobber" );
                     xThrobberProps.setPropertyValue( "PositionX", new Integer( X ) );
                     xThrobberProps.setPropertyValue( "PositionY", new Integer( Y ) );
-                    xThrobberProps.setPropertyValue( "Height", new Integer( Width ) );
-                    xThrobberProps.setPropertyValue( "Width", new Integer( Height ) );
+                    xThrobberProps.setPropertyValue( "Width", new Integer( Width ) );
+                    xThrobberProps.setPropertyValue( "Height", new Integer( Height ) );
 
                     XNameContainer xDialogContainer = (XNameContainer)UnoRuntime.queryInterface( XNameContainer.class, xDialogModel );
                     xDialogContainer.insertByName( "WikiThrobber", xThrobberModel );
@@ -277,7 +277,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
         if ( m_xControlContainer != null )
         {
             try
-            {        
+            {
                 XWindow xWindow = (XWindow)UnoRuntime.queryInterface( XWindow.class, m_xControlContainer.getControl( aControl ) );
                 if ( xWindow != null )
                     xWindow.setFocus();
@@ -286,14 +286,14 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
             {
                 e.printStackTrace();
             }
-        }       
+        }
     }
 
     public void DisposeDialog()
     {
         Helper.Dispose( m_xDialog );
     }
-    
+
     public void windowOpened( EventObject e )
     {}
 
@@ -314,7 +314,7 @@ public class WikiDialog implements XDialogEventHandler, XTopWindowListener
 
     public void windowDeactivated( EventObject e )
     {}
-    
+
     public void disposing( EventObject e )
     {}
 }
