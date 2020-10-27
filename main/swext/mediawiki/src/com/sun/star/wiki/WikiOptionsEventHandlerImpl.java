@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
     private XControlContainer m_xControlContainer;
 
     Settings m_aSettings;
-    
+
     public WikiOptionsEventHandlerImpl( XComponentContext xContext )
     {
         m_xContext = xContext;
@@ -92,7 +92,7 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
                 catch ( Exception ex )
                 {
                     ex.printStackTrace();
-                } 
+                }
             }
         }
     }
@@ -162,7 +162,7 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
         XPropertySet xListProps = GetPropSet("WikiList");
         if ( xListProps != null )
         {
-            try 
+            try
             {
                 short[] pSel = (short []) xListProps.getPropertyValue("SelectedItems");
                 String[] pItems = (String []) GetPropSet("WikiList").getPropertyValue("StringItemList");
@@ -196,16 +196,16 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
     }
 
     // com.sun.star.lang.XServiceInfo:
-    public String getImplementationName() 
+    public String getImplementationName()
     {
          return m_sImplementationName;
     }
 
-    public boolean supportsService( String sService ) 
+    public boolean supportsService( String sService )
     {
         int len = m_pServiceNames.length;
 
-        for( int i=0; i < len; i++ ) 
+        for( int i=0; i < len; i++ )
         {
             if ( sService.equals( m_pServiceNames[i] ))
                 return true;
@@ -213,7 +213,7 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
         return false;
     }
 
-    public String[] getSupportedServiceNames() 
+    public String[] getSupportedServiceNames()
     {
         return m_pServiceNames;
     }
@@ -242,12 +242,12 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
                             m_xControlContainer = (XControlContainer)UnoRuntime.queryInterface(
                                                             XControlContainer.class, m_xDialog );
                             m_aSettings = Settings.getSettings( m_xContext );
-                            m_aSettings.loadConfiguration(); // throw away all the noncommited changes 
+                            m_aSettings.loadConfiguration(); // throw away all the noncommited changes
                             InitStrings();
                         }
                         else if ( m_aSettings != null )
                             m_aSettings.loadConfiguration(); // throw away all the noncommited changes
-                            
+
                         RefreshView();
                         CheckButtonState();
                     }
@@ -279,7 +279,7 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
         {
             CheckButtonState();
         }
-        
+
         return true;
     }
 
@@ -295,5 +295,5 @@ public final class WikiOptionsEventHandlerImpl extends WeakBase
     {
         return new String[] { sExternalEvent, sAdd, sEdit, sRemove };
     }
-};
+}
 
