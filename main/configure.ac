@@ -3522,7 +3522,8 @@ msi - Windows .msi
       if test "$FAKEROOT" = "no"; then
          AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
       fi
-   fi   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
+   fi
+   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
       echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       	if test "$EPM" != "no" && test "$EPM" != "internal"; then
            if test "`echo $EPM_VERSION | cut -d'.' -f1`" -lt "4"; then
