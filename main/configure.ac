@@ -3518,8 +3518,11 @@ msi - Windows .msi
       if test "$DPKG" = "no"; then
          AC_MSG_ERROR([dpkg needed for deb creation. Install dpkg.])
       fi
-   fi
-   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
+      AC_PATH_PROG(FAKEROOT, fakeroot, no)
+      if test "$FAKEROOT" = "no"; then
+         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+      fi
+   fi   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
       echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       	if test "$EPM" != "no" && test "$EPM" != "internal"; then
            if test "`echo $EPM_VERSION | cut -d'.' -f1`" -lt "4"; then
@@ -3549,10 +3552,6 @@ msi - Windows .msi
       AC_PATH_PROG(PKGMK, pkgmk, no)
       if test "$PKGMK" = "no"; then
          AC_MSG_ERROR([pkgmk needed for Solaris pkg creation. Install it.])
-      fi
-      AC_PATH_PROG(FAKEROOT, fakeroot, no)
-      if test "$FAKEROOT" = "no"; then
-         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
       fi
    fi
    AC_SUBST(RPM)
