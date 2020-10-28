@@ -891,7 +891,7 @@ sub get_ld_preload_string
 
 	my $getuidlibraryref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$getuidlibraryname, $includepatharrayref, 0);
 
-	if ($ENV{'FAKEROOT'} ne "") {
+	if (($ENV{'FAKEROOT'} ne "no") && ($ENV{'FAKEROOT'} ne "")) {
 
 		$ldpreloadstring = $ENV{'FAKEROOT'};
 
