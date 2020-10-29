@@ -128,7 +128,7 @@ XSLTLIB!:=$(XSLTLIB) # expand dmake variables for xslt-config
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
 # do not enable grddl parser (#i93768#)
-CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --with-www=xml --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
+CONFIGURE_FLAGS=--with-threads --with-curl-config=no --with-icu-config=no --disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore --with-regex-library=posix --with-decimal=none --with-www=xml --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
 .IF "$(SYSTEM_LIBXML)" == "NO"
 CONFIGURE_FLAGS+=--with-xml2-config=${SOLARVERSION}/${INPATH}/bin/xml2-config \
 	--with-xslt-config=${SOLARVERSION}/${INPATH}/bin/xslt-config
