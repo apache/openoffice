@@ -125,7 +125,7 @@ XSLTLIB!:=$(XSLTLIB) # expand dmake variables for xslt-config
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure PATH="..$/..$/..$/bin:$$PATH" RASQAL_CFLAGS=-I${PWD}$/..$/${INPATH}/inc RASQAL_LIBS="-L${PWD}/..$/${INPATH}/lib -lrasqual" RAPTOR2_CFLAGS=-I${PWD}$/..$/${INPATH}/inc RAPTOR2_LIBS="-L${PWD}/..$/${INPATH}/lib -lraptor2" PKG_CONFIG_PATH="../raptor2-2.0.15:../rasqal-0.9.33"
-CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-regex-library=posix --with-decimal=none
+CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --with-regex-library=posix --with-decimal=none --with-libgcrypt-config=no
 .IF "$(SYSTEM_LIBXML)" == "NO"
 CONFIGURE_FLAGS+=--with-xml2-config=${SOLARVERSION}/${INPATH}/bin/xml2-config
 .ENDIF
