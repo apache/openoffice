@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,8 +41,8 @@ namespace drawinglayer
 {
 	namespace geometry
 	{
-        /** Implementation class for ViewInformation3D
-        */
+		/** Implementation class for ViewInformation3D
+		*/
 		class ImpViewInformation3D
 		{
 		private:
@@ -56,21 +56,21 @@ namespace drawinglayer
 			// the 3D transformations
 			// Object to World. This may change and being adapted when entering 3D transformation
 			// groups
-			basegfx::B3DHomMatrix						maObjectTransformation;	
+			basegfx::B3DHomMatrix						maObjectTransformation;
 
 			// World to Camera. This includes VRP, VPN and VUV camera coordinate system
-			basegfx::B3DHomMatrix						maOrientation;		
+			basegfx::B3DHomMatrix						maOrientation;
 
 			// Camera to Device with X,Y and Z [-1.0 .. 1.0]. This is the
 			// 3D to 2D projection which may be parallel or perspective. When it is perspective,
 			// the last line of the homogen matrix will NOT be unused
-			basegfx::B3DHomMatrix						maProjection;		
-			
+			basegfx::B3DHomMatrix						maProjection;
+
 			// Device to View with X,Y and Z [0.0 .. 1.0]. This converts from -1 to 1 coordinates
 			// in camera coordinate system to 0 to 1 in unit 2D coordinates. This way it stays
 			// view-independent. To get discrete coordinates, the 2D transformation of a scene
 			// as 2D object needs to be involved
-			basegfx::B3DHomMatrix						maDeviceToView;		
+			basegfx::B3DHomMatrix						maDeviceToView;
 
 			// Object to View is the linear combination of all four transformations. It's
 			// buffered to avoid too much matrix multiplying and created on demand
@@ -91,57 +91,57 @@ namespace drawinglayer
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("ObjectTransformation"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyOrientation()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Orientation"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyProjection()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Projection"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyProjection_30()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Projection30"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyProjection_31()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Projection31"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyProjection_32()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Projection32"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyProjection_33()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("Projection33"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyDeviceToView()
 			{
 				static ::rtl::OUString s_sNameProperty(RTL_CONSTASCII_USTRINGPARAM("DeviceToView"));
 				return s_sNameProperty;
 			}
-			
+
 			const ::rtl::OUString& getNamePropertyTime()
 			{
 				static ::rtl::OUString s_sNamePropertyTime(RTL_CONSTASCII_USTRINGPARAM("Time"));
 				return s_sNamePropertyTime;
 			}
 
-            // a central PropertyValue parsing method to allow transportatin of
-            // all ViewParameters using UNO API
+			// a central PropertyValue parsing method to allow transportation of
+			// all ViewParameters using UNO API
 			void impInterpretPropertyValues(const uno::Sequence< beans::PropertyValue >& rViewParameters)
 			{
 				if(rViewParameters.hasElements())
@@ -155,7 +155,7 @@ namespace drawinglayer
 					for(sal_Int32 a(0); a < nCount; a++)
 					{
 						const beans::PropertyValue& rProp = rViewParameters[a];
-						
+
 						if(rProp.Name == getNamePropertyObjectTransformation())
 						{
 							com::sun::star::geometry::AffineMatrix3D aAffineMatrix3D;
@@ -177,7 +177,7 @@ namespace drawinglayer
 							const double f_31(maProjection.get(3, 1));
 							const double f_32(maProjection.get(3, 2));
 							const double f_33(maProjection.get(3, 3));
-							
+
 							com::sun::star::geometry::AffineMatrix3D aAffineMatrix3D;
 							rProp.Value >>= aAffineMatrix3D;
 							maProjection = basegfx::unotools::homMatrixFromAffineMatrix3D(aAffineMatrix3D);
@@ -233,8 +233,8 @@ namespace drawinglayer
 				}
 			}
 
-            // central method to create a Sequence of PropertyValues containing he complete
-            // data set
+			// central method to create a Sequence of PropertyValues containing the complete
+			// data set
 			void impFillViewInformationFromContent()
 			{
 				uno::Sequence< beans::PropertyValue > xRetval;
@@ -244,7 +244,7 @@ namespace drawinglayer
 				const bool bDeviceToViewUsed(!maDeviceToView.isIdentity());
 				const bool bTimeUsed(0.0 < mfViewTime);
 				const bool bExtraInformation(mxExtendedInformation.hasElements());
-				
+
 				// projection may be defined using a frustum in which case the last line of
 				// the 4x4 matrix is not (0,0,0,1). Since AffineMatrix3D does not support that,
 				// these four values need to be treated extra
@@ -252,7 +252,7 @@ namespace drawinglayer
 				const bool bProjectionUsed_31(bProjectionUsed && !basegfx::fTools::equalZero(maProjection.get(3, 1)));
 				const bool bProjectionUsed_32(bProjectionUsed && !basegfx::fTools::equalZero(maProjection.get(3, 2)));
 				const bool bProjectionUsed_33(bProjectionUsed && !basegfx::fTools::equal(maProjection.get(3, 3), 1.0));
-				
+
 				sal_uInt32 nIndex(0);
 				const sal_uInt32 nCount(
 					(bObjectTransformationUsed ? 1 : 0) +
@@ -263,7 +263,7 @@ namespace drawinglayer
 					(bProjectionUsed_32 ? 1 : 0) +
 					(bProjectionUsed_33 ? 1 : 0) +
 					(bDeviceToViewUsed ? 1 : 0) +
-					(bTimeUsed ? 1 : 0) + 
+					(bTimeUsed ? 1 : 0) +
 					(bExtraInformation ? mxExtendedInformation.getLength() : 0));
 
 				mxViewInformation.realloc(nCount);
@@ -352,10 +352,10 @@ namespace drawinglayer
 
 		public:
 			ImpViewInformation3D(
-				const basegfx::B3DHomMatrix& rObjectTransformation, 
-				const basegfx::B3DHomMatrix& rOrientation, 
-				const basegfx::B3DHomMatrix& rProjection, 
-				const basegfx::B3DHomMatrix& rDeviceToView, 
+				const basegfx::B3DHomMatrix& rObjectTransformation,
+				const basegfx::B3DHomMatrix& rOrientation,
+				const basegfx::B3DHomMatrix& rProjection,
+				const basegfx::B3DHomMatrix& rDeviceToView,
 				double fViewTime,
 				const uno::Sequence< beans::PropertyValue >& rExtendedParameters)
 			:	mnRefCount(0),
@@ -404,21 +404,21 @@ namespace drawinglayer
 			const basegfx::B3DHomMatrix& getObjectToView() const
 			{
 				// on demand WorldToView creation
-			    ::osl::Mutex m_mutex;
+				::osl::Mutex m_mutex;
 
 				if(maObjectToView.isIdentity())
 				{
 					const_cast< ImpViewInformation3D* >(this)->maObjectToView = maDeviceToView * maProjection * maOrientation * maObjectTransformation;
 				}
 
-				return maObjectToView; 
+				return maObjectToView;
 			}
 
 			const uno::Sequence< beans::PropertyValue >& getViewInformationSequence() const
 			{
-			    ::osl::Mutex m_mutex;
+				::osl::Mutex m_mutex;
 
-                if(!mxViewInformation.hasElements())
+				if(!mxViewInformation.hasElements())
 				{
 					const_cast< ImpViewInformation3D* >(this)->impFillViewInformationFromContent();
 				}
@@ -442,19 +442,19 @@ namespace drawinglayer
 			}
 
 			static ImpViewInformation3D* get_global_default()
-            {
-                static ImpViewInformation3D* pDefault = 0;
+			{
+				static ImpViewInformation3D* pDefault = 0;
 
-                if(!pDefault)
-                {
-                    pDefault = new ImpViewInformation3D();
+				if(!pDefault)
+				{
+					pDefault = new ImpViewInformation3D();
 
-                    // never delete; start with RefCount 1, not 0
-    			    pDefault->mnRefCount++;
-                }
+					// never delete; start with RefCount 1, not 0
+					pDefault->mnRefCount++;
+				}
 
-                return pDefault;
-            }
+				return pDefault;
+			}
 		};
 	} // end of anonymous namespace
 } // end of namespace drawinglayer
@@ -466,14 +466,14 @@ namespace drawinglayer
 	namespace geometry
 	{
 		ViewInformation3D::ViewInformation3D(
-			const basegfx::B3DHomMatrix& rObjectObjectTransformation, 
-			const basegfx::B3DHomMatrix& rOrientation, 
-			const basegfx::B3DHomMatrix& rProjection, 
-			const basegfx::B3DHomMatrix& rDeviceToView, 
+			const basegfx::B3DHomMatrix& rObjectObjectTransformation,
+			const basegfx::B3DHomMatrix& rOrientation,
+			const basegfx::B3DHomMatrix& rProjection,
+			const basegfx::B3DHomMatrix& rDeviceToView,
 			double fViewTime,
 			const uno::Sequence< beans::PropertyValue >& rExtendedParameters)
 		:	mpViewInformation3D(new ImpViewInformation3D(
-				rObjectObjectTransformation, rOrientation, rProjection, 
+				rObjectObjectTransformation, rOrientation, rProjection,
 				rDeviceToView, fViewTime, rExtendedParameters))
 		{
 		}
@@ -484,7 +484,7 @@ namespace drawinglayer
 		}
 
 		ViewInformation3D::ViewInformation3D()
-        :	mpViewInformation3D(ImpViewInformation3D::get_global_default())
+		:	mpViewInformation3D(ImpViewInformation3D::get_global_default())
 		{
 			mpViewInformation3D->mnRefCount++;
 		}
@@ -492,13 +492,13 @@ namespace drawinglayer
 		ViewInformation3D::ViewInformation3D(const ViewInformation3D& rCandidate)
 		:	mpViewInformation3D(rCandidate.mpViewInformation3D)
 		{
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 			mpViewInformation3D->mnRefCount++;
 		}
 
 		ViewInformation3D::~ViewInformation3D()
 		{
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(mpViewInformation3D->mnRefCount)
 			{
@@ -510,14 +510,14 @@ namespace drawinglayer
 			}
 		}
 
-        bool ViewInformation3D::isDefault() const
-        {
-            return mpViewInformation3D == ImpViewInformation3D::get_global_default();
-        }
+		bool ViewInformation3D::isDefault() const
+		{
+			return mpViewInformation3D == ImpViewInformation3D::get_global_default();
+		}
 
 		ViewInformation3D& ViewInformation3D::operator=(const ViewInformation3D& rCandidate)
 		{
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(mpViewInformation3D->mnRefCount)
 			{
@@ -527,7 +527,7 @@ namespace drawinglayer
 			{
 				delete mpViewInformation3D;
 			}
-			
+
 			mpViewInformation3D = rCandidate.mpViewInformation3D;
 			mpViewInformation3D->mnRefCount++;
 
