@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -184,7 +184,7 @@ namespace dbp
 			// nothing to do
 			return;
 
-        ModuleRes aModuleRes(RID_PAGE_FORM_DATASOURCE_STATUS);
+		ModuleRes aModuleRes(RID_PAGE_FORM_DATASOURCE_STATUS);
 		OLocalResourceAccess aLocalControls(aModuleRes, RSC_TABPAGE);
 
 		m_pFormSettingsSeparator	= new FixedLine(this,  ModuleRes(FL_FORMSETINGS));
@@ -402,7 +402,7 @@ namespace dbp
 					Reference< XController > xController = xModel->getCurrentController();
 					DBG_ASSERT(xController.is(), "OControlWizard::implDeterminePage: no current controller!");
 
-					// maybe it's a spredsheet
+					// maybe it's a spreadsheet
 					Reference< XSpreadsheetView > xView(xController, UNO_QUERY);
 					if (xView.is())
 					{	// okay, it is one
@@ -413,7 +413,7 @@ namespace dbp
 							xPage = xPageSupp->getDrawPage();
 					}
 					else
-					{	// can be a draw/impress doc only
+					{	// can be a Draw/Impress doc only
 						Reference< XDrawView > xDrawView(xController, UNO_QUERY);
 						DBG_ASSERT(xDrawView.is(), "OControlWizard::implDeterminePage: no alternatives left ... can't determine the page!");
 						if (xDrawView.is())
@@ -422,7 +422,7 @@ namespace dbp
 				}
 			}
 			else
-			{	
+			{
 				DBG_ASSERT(xPage.is(), "OControlWizard::implDeterminePage: can't determine the page (no model)!");
 			}
 			m_aContext.xDrawPage = xPage;
@@ -457,17 +457,17 @@ namespace dbp
 
 	//---------------------------------------------------------------------
 	Reference< XConnection > OControlWizard::getFormConnection(const OAccessRegulator&) const
-	{		
+	{
 		return getFormConnection();
 	}
-    //---------------------------------------------------------------------
+	//---------------------------------------------------------------------
 	Reference< XConnection > OControlWizard::getFormConnection() const
 	{
 		Reference< XConnection > xConn;
 		try
 		{
 			if ( !::dbtools::isEmbeddedInDatabase(m_aContext.xForm,xConn) )
-				m_aContext.xForm->getPropertyValue(::rtl::OUString::createFromAscii("ActiveConnection")) >>= xConn;			
+				m_aContext.xForm->getPropertyValue(::rtl::OUString::createFromAscii("ActiveConnection")) >>= xConn;
 		}
 		catch(const Exception&)
 		{
@@ -490,7 +490,7 @@ namespace dbp
 			// set the new connection
 			if ( _bAutoDispose )
 			{
-				// for this, use a AutoDisposer (so the conn is cleaned up when the form dies or get's another connection)
+				// for this, use a AutoDisposer (so the conn is cleaned up when the form dies or gets another connection)
 				Reference< XRowSet > xFormRowSet( m_aContext.xForm, UNO_QUERY );
 				OAutoConnectionDisposer* pAutoDispose = new OAutoConnectionDisposer( xFormRowSet, _rxConn );
 				Reference< XPropertyChangeListener > xEnsureDelete( pAutoDispose );
@@ -511,10 +511,10 @@ namespace dbp
 	{
 		return initContext();
 	}
-    //---------------------------------------------------------------------
-    Reference< XInteractionHandler > OControlWizard::getInteractionHandler(Window* _pWindow) const
-    {
-        const ::rtl::OUString sInteractionHandlerServiceName = ::rtl::OUString::createFromAscii("com.sun.star.task.InteractionHandler");
+	//---------------------------------------------------------------------
+	Reference< XInteractionHandler > OControlWizard::getInteractionHandler(Window* _pWindow) const
+	{
+		const ::rtl::OUString sInteractionHandlerServiceName = ::rtl::OUString::createFromAscii("com.sun.star.task.InteractionHandler");
 		Reference< XInteractionHandler > xHandler;
 		try
 		{
@@ -524,8 +524,8 @@ namespace dbp
 		catch(Exception&) { }
 		if (!xHandler.is())
 			ShowServiceNotAvailableError(_pWindow, sInteractionHandlerServiceName, sal_True);
-        return xHandler;
-    }
+		return xHandler;
+	}
 	//---------------------------------------------------------------------
 	sal_Bool OControlWizard::initContext()
 	{
@@ -546,7 +546,7 @@ namespace dbp
 		m_aContext.bEmbedded = sal_False;
 
 		Any aSQLException;
-		Reference< XPreparedStatement >  xStatement;
+		Reference< XPreparedStatement > xStatement;
 		try
 		{
 			// get the datasource context
@@ -561,8 +561,8 @@ namespace dbp
 			// the shape of the control
 			implDetermineShape();
 
-			// get the columns of the object the settins refer to
-			Reference< XNameAccess >  xColumns;
+			// get the columns of the object the settings refer to
+			Reference< XNameAccess > xColumns;
 
 			if (m_aContext.xForm.is())
 			{
@@ -572,9 +572,9 @@ namespace dbp
 
 				// calculate the connection the rowset is working with
 				Reference< XConnection > xConnection;
-                m_aContext.bEmbedded = ::dbtools::isEmbeddedInDatabase( m_aContext.xForm, xConnection );
+				m_aContext.bEmbedded = ::dbtools::isEmbeddedInDatabase( m_aContext.xForm, xConnection );
 				if ( !m_aContext.bEmbedded )
-                    xConnection = ::dbtools::connectRowset( m_aContext.xRowSet, getServiceFactory(), sal_True );
+					xConnection = ::dbtools::connectRowset( m_aContext.xRowSet, getServiceFactory(), sal_True );
 
 				// get the fields
 				if (xConnection.is())
@@ -583,10 +583,10 @@ namespace dbp
 					{
 						case 0:
 						{
-							Reference< XTablesSupplier >  xSupplyTables(xConnection, UNO_QUERY);
+							Reference< XTablesSupplier > xSupplyTables(xConnection, UNO_QUERY);
 							if (xSupplyTables.is() && xSupplyTables->getTables().is() && xSupplyTables->getTables()->hasByName(sObjectName))
 							{
-								Reference< XColumnsSupplier >  xSupplyColumns;
+								Reference< XColumnsSupplier > xSupplyColumns;
 								m_aContext.xObjectContainer = xSupplyTables->getTables();
 								m_aContext.xObjectContainer->getByName(sObjectName) >>= xSupplyColumns;
 								DBG_ASSERT(xSupplyColumns.is(), "OControlWizard::initContext: invalid table columns!");
@@ -596,14 +596,14 @@ namespace dbp
 						break;
 						case 1:
 						{
-							Reference< XQueriesSupplier >  xSupplyQueries(xConnection, UNO_QUERY);
+							Reference< XQueriesSupplier > xSupplyQueries(xConnection, UNO_QUERY);
 							if (xSupplyQueries.is() && xSupplyQueries->getQueries().is() && xSupplyQueries->getQueries()->hasByName(sObjectName))
 							{
-								Reference< XColumnsSupplier >  xSupplyColumns;
+								Reference< XColumnsSupplier > xSupplyColumns;
 								m_aContext.xObjectContainer = xSupplyQueries->getQueries();
 								m_aContext.xObjectContainer->getByName(sObjectName) >>= xSupplyColumns;
 								DBG_ASSERT(xSupplyColumns.is(), "OControlWizard::initContext: invalid query columns!");
-								xColumns  = xSupplyColumns->getColumns();
+								xColumns = xSupplyColumns->getColumns();
 							}
 						}
 						break;
@@ -616,7 +616,7 @@ namespace dbp
 							xStatementProps->setPropertyValue(::rtl::OUString::createFromAscii("MaxRows"), makeAny(sal_Int32(0)));
 
 							// TODO: think about handling local SQLExceptions here ...
-							Reference< XColumnsSupplier >  xSupplyCols(xStatement->executeQuery(), UNO_QUERY);
+							Reference< XColumnsSupplier > xSupplyCols(xStatement->executeQuery(), UNO_QUERY);
 							if (xSupplyCols.is())
 								xColumns = xSupplyCols->getColumns();
 						}
@@ -658,7 +658,7 @@ namespace dbp
 		::comphelper::disposeComponent(xStatement);
 
 		if (aSQLException.hasValue())
-		{	// an SQLException (or derivee) was thrown ...
+		{	// an SQLException (or derive) was thrown ...
 
 			// prepend an extra SQLContext explaining what we were doing
 			SQLContext aContext;
@@ -716,7 +716,7 @@ namespace dbp
 		if (!m_aContext.xObjectModel.is())
 			return;
 
-		// initialize some settings from the control model give
+		// initialize some settings from the control model given
 		try
 		{
 			::rtl::OUString sLabelPropertyName = ::rtl::OUString::createFromAscii("Label");
@@ -737,7 +737,7 @@ namespace dbp
 	//---------------------------------------------------------------------
 	sal_Bool OControlWizard::needDatasourceSelection()
 	{
-		// lemme see ...
+		// let me see...
 		return (0 == getContext().aFieldNames.getLength());
 			// if we got fields, the data source is valid ...
 //		try
