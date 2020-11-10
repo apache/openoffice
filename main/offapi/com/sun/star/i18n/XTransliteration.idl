@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef __com_sun_star_i18n_XTransliteration_idl__
@@ -71,7 +72,7 @@ module com { module sun { module star { module i18n {
  * All the IGNORE-type functionalities (Range, equals) are based on mapping.
  * except equals() method in IGNORE_CASE, which is based on Locale-independent
  * casefolding
- * ( This second assumption is very complicated and may cause confusion of use)
+ * (This second assumption is very complicated and may cause confusion of use)
  *
  * 1.
  * We are assuming Upper to Lower mapping as one of transliteration.
@@ -90,7 +91,7 @@ module com { module sun { module star { module i18n {
  *
  * 4.
  * Implementation name in the methods below is not the same as
- * the true implemenation name registered.
+ * the true implementation name registered.
  * In particular, for generic modules:"UPPERCASE_LOWERCASE",
  * "LOWERCASE_UPPERCASE", "IGNORE_CASE", there is no registered name.
  */
@@ -166,7 +167,7 @@ published interface XTransliteration: com::sun::star::uno::XInterface
 
     //------------------------------------------------------------------------
     /** List the available transliteration modules for a given locale.
-        It can be filtered based on its type. 
+        It can be filtered based on its type.
 
         @param nType
             A bitmask field of values defined in
@@ -187,7 +188,7 @@ published interface XTransliteration: com::sun::star::uno::XInterface
 
         @param nStartPos
             Start position within aStr from where transliteration starts.
-            
+
         @param nCount
             Number of codepoints to be transliterated.
 
@@ -212,7 +213,7 @@ published interface XTransliteration: com::sun::star::uno::XInterface
     //------------------------------------------------------------------------
     /** Match two substrings and find if they are equivalent as per this
         transliteration.
-        
+
         <p> This method can be called if the object has
         <type>TransliterationType</type> IGNORE attribute. </p>
 
@@ -253,25 +254,25 @@ published interface XTransliteration: com::sun::star::uno::XInterface
             <FALSE/> else.
      */
 
-    boolean equals( [in] string aStr1, [in] long nPos1, [in] long nCount1, 
+    boolean equals( [in] string aStr1, [in] long nPos1, [in] long nCount1,
                     [out] long rMatch1,
                     [in] string aStr2, [in] long nPos2, [in] long nCount2,
                     [out] long rMatch2 );
 
     //------------------------------------------------------------------------
     /** Transliterate one set of characters to another.
-    
+
         <p> This method is intended for getting corresponding ranges and
         can be called if the object has <type>TransliterationType</type>
         IGNORE attribute. </p>
-     
+
         <p> For example: generic CASE_IGNORE transliterateRange( "a", "i" )
         returns {"A","I","a","i"}, transliterateRange( "a", "a" )
         returns {"A","A","a","a"}. </p>
-     
-        <p> Use this transliteration to create regular expresssions like
+
+        <p> Use this transliteration to create regular expressions like
         [a-i] --> [A-Ia-i]. </p>
-     
+
         @returns
             String sequence containing corresponding transliterated
             pairs of characters to represent a range.
@@ -279,7 +280,7 @@ published interface XTransliteration: com::sun::star::uno::XInterface
     sequence <string>   transliterateRange( [in] string aStr1, [in] string aStr2 );
 
     //------------------------------------------------------------------------
-    /** Compare 2 substrings as per this transliteration. It translates both 
+    /** Compare 2 substrings as per this transliteration. It translates both
         substrings before comparing them.
 
         @param aStr1
@@ -322,6 +323,7 @@ published interface XTransliteration: com::sun::star::uno::XInterface
 };
 
 //=============================================================================
+
 }; }; }; };
 
 #endif
