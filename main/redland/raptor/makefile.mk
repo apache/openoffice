@@ -48,6 +48,7 @@ TARFILE_MD5=a39f6c07ddb20d7dd2ff1f95fa21e2cd
 ADDITIONAL_FILES=src/makefile.mk src/raptor_config.h
 
 OOO_PATCH_FILES= \
+    $(TARFILE_NAME).patch.nspace \
     $(TARFILE_NAME).patch.dmake \
 
 PATCH_FILES=$(OOO_PATCH_FILES)
