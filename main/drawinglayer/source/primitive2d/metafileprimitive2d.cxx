@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,70 +75,70 @@ namespace
 		VCL OutputDevice stati. This data is needed for correct
 		interpretation of the MetaFile action flow.
 	*/
-    class PropertyHolder
-    {
-    private:
+	class PropertyHolder
+	{
+	private:
 		/// current transformation (aka MapMode)
 		basegfx::B2DHomMatrix	maTransformation;
 		MapUnit					maMapUnit;
 
 		/// current colors
-        basegfx::BColor			maLineColor;
-        basegfx::BColor			maFillColor;
-        basegfx::BColor			maTextColor;
-        basegfx::BColor			maTextFillColor;
-        basegfx::BColor			maTextLineColor;
-        basegfx::BColor			maOverlineColor;
+		basegfx::BColor			maLineColor;
+		basegfx::BColor			maFillColor;
+		basegfx::BColor			maTextColor;
+		basegfx::BColor			maTextFillColor;
+		basegfx::BColor			maTextLineColor;
+		basegfx::BColor			maOverlineColor;
 
 		/// clipping
-        basegfx::B2DPolyPolygon maClipPolyPoygon;
+		basegfx::B2DPolyPolygon maClipPolyPoygon;
 
-        /// font, etc.
-    	Font                    maFont;
-    	RasterOp                maRasterOp;
-        sal_uInt32              mnLayoutMode;
-        LanguageType            maLanguageType;
-        sal_uInt16              mnPushFlags;
+		/// font, etc.
+		Font					maFont;
+		RasterOp				maRasterOp;
+		sal_uInt32				mnLayoutMode;
+		LanguageType			maLanguageType;
+		sal_uInt16				mnPushFlags;
 
-        /// bitfield
+		/// bitfield
 		/// contains all active markers
-        bool					mbLineColor : 1;
-        bool					mbFillColor : 1;
-        bool					mbTextColor : 1;
-        bool					mbTextFillColor : 1;
-        bool					mbTextLineColor : 1;
-        bool					mbOverlineColor : 1;
-        bool					mbClipPolyPolygonActive : 1;
+		bool					mbLineColor : 1;
+		bool					mbFillColor : 1;
+		bool					mbTextColor : 1;
+		bool					mbTextFillColor : 1;
+		bool					mbTextLineColor : 1;
+		bool					mbOverlineColor : 1;
+		bool					mbClipPolyPolygonActive : 1;
 
-    public:
-        PropertyHolder()
-        :   maTransformation(),
+	public:
+		PropertyHolder()
+		:	maTransformation(),
 			maMapUnit(MAP_100TH_MM),
 			maLineColor(),
-            maFillColor(),
-            maTextColor(COL_BLACK),
-            maTextFillColor(),
-            maTextLineColor(),
-            maOverlineColor(),
-            maClipPolyPoygon(),
-            maFont(),
-            maRasterOp(ROP_OVERPAINT),
-            mnLayoutMode(0),
-            maLanguageType(0),
-            mnPushFlags(0),
-            mbLineColor(false),
-            mbFillColor(false),
-            mbTextColor(true),
-            mbTextFillColor(false),
-            mbTextLineColor(false),
-            mbOverlineColor(false),
-            mbClipPolyPolygonActive(false)
-        {
-        }
+			maFillColor(),
+			maTextColor(COL_BLACK),
+			maTextFillColor(),
+			maTextLineColor(),
+			maOverlineColor(),
+			maClipPolyPoygon(),
+			maFont(),
+			maRasterOp(ROP_OVERPAINT),
+			mnLayoutMode(0),
+			maLanguageType(0),
+			mnPushFlags(0),
+			mbLineColor(false),
+			mbFillColor(false),
+			mbTextColor(true),
+			mbTextFillColor(false),
+			mbTextLineColor(false),
+			mbOverlineColor(false),
+			mbClipPolyPolygonActive(false)
+		{
+		}
 
-        ~PropertyHolder()
-        {
-        }
+		~PropertyHolder()
+		{
+		}
 
 		/// read/write accesses
 		const basegfx::B2DHomMatrix& getTransformation() const { return maTransformation; }
@@ -148,67 +148,67 @@ namespace
 		void setMapUnit(MapUnit eNew) { if(eNew != maMapUnit) maMapUnit = eNew; }
 
 		const basegfx::BColor& getLineColor() const { return maLineColor; }
-        void setLineColor(const basegfx::BColor& rNew) { if(rNew != maLineColor) maLineColor = rNew; }
-        bool getLineColorActive() const { return mbLineColor; }
-        void setLineColorActive(bool bNew) { if(bNew != mbLineColor) mbLineColor = bNew; }
+		void setLineColor(const basegfx::BColor& rNew) { if(rNew != maLineColor) maLineColor = rNew; }
+		bool getLineColorActive() const { return mbLineColor; }
+		void setLineColorActive(bool bNew) { if(bNew != mbLineColor) mbLineColor = bNew; }
 
-        const basegfx::BColor& getFillColor() const { return maFillColor; }
-        void setFillColor(const basegfx::BColor& rNew) { if(rNew != maFillColor) maFillColor = rNew; }
-        bool getFillColorActive() const { return mbFillColor; }
-        void setFillColorActive(bool bNew) { if(bNew != mbFillColor) mbFillColor = bNew; }
+		const basegfx::BColor& getFillColor() const { return maFillColor; }
+		void setFillColor(const basegfx::BColor& rNew) { if(rNew != maFillColor) maFillColor = rNew; }
+		bool getFillColorActive() const { return mbFillColor; }
+		void setFillColorActive(bool bNew) { if(bNew != mbFillColor) mbFillColor = bNew; }
 
-        const basegfx::BColor& getTextColor() const { return maTextColor; }
-        void setTextColor(const basegfx::BColor& rNew) { if(rNew != maTextColor) maTextColor = rNew; }
-        bool getTextColorActive() const { return mbTextColor; }
-        void setTextColorActive(bool bNew) { if(bNew != mbTextColor) mbTextColor = bNew; }
+		const basegfx::BColor& getTextColor() const { return maTextColor; }
+		void setTextColor(const basegfx::BColor& rNew) { if(rNew != maTextColor) maTextColor = rNew; }
+		bool getTextColorActive() const { return mbTextColor; }
+		void setTextColorActive(bool bNew) { if(bNew != mbTextColor) mbTextColor = bNew; }
 
-        const basegfx::BColor& getTextFillColor() const { return maTextFillColor; }
-        void setTextFillColor(const basegfx::BColor& rNew) { if(rNew != maTextFillColor) maTextFillColor = rNew; }
-        bool getTextFillColorActive() const { return mbTextFillColor; }
-        void setTextFillColorActive(bool bNew) { if(bNew != mbTextFillColor) mbTextFillColor = bNew; }
+		const basegfx::BColor& getTextFillColor() const { return maTextFillColor; }
+		void setTextFillColor(const basegfx::BColor& rNew) { if(rNew != maTextFillColor) maTextFillColor = rNew; }
+		bool getTextFillColorActive() const { return mbTextFillColor; }
+		void setTextFillColorActive(bool bNew) { if(bNew != mbTextFillColor) mbTextFillColor = bNew; }
 
-        const basegfx::BColor& getTextLineColor() const { return maTextLineColor; }
-        void setTextLineColor(const basegfx::BColor& rNew) { if(rNew != maTextLineColor) maTextLineColor = rNew; }
-        bool getTextLineColorActive() const { return mbTextLineColor; }
-        void setTextLineColorActive(bool bNew) { if(bNew != mbTextLineColor) mbTextLineColor = bNew; }
+		const basegfx::BColor& getTextLineColor() const { return maTextLineColor; }
+		void setTextLineColor(const basegfx::BColor& rNew) { if(rNew != maTextLineColor) maTextLineColor = rNew; }
+		bool getTextLineColorActive() const { return mbTextLineColor; }
+		void setTextLineColorActive(bool bNew) { if(bNew != mbTextLineColor) mbTextLineColor = bNew; }
 
-        const basegfx::BColor& getOverlineColor() const { return maOverlineColor; }
-        void setOverlineColor(const basegfx::BColor& rNew) { if(rNew != maOverlineColor) maOverlineColor = rNew; }
-        bool getOverlineColorActive() const { return mbOverlineColor; }
-        void setOverlineColorActive(bool bNew) { if(bNew != mbOverlineColor) mbOverlineColor = bNew; }
+		const basegfx::BColor& getOverlineColor() const { return maOverlineColor; }
+		void setOverlineColor(const basegfx::BColor& rNew) { if(rNew != maOverlineColor) maOverlineColor = rNew; }
+		bool getOverlineColorActive() const { return mbOverlineColor; }
+		void setOverlineColorActive(bool bNew) { if(bNew != mbOverlineColor) mbOverlineColor = bNew; }
 
-        const basegfx::B2DPolyPolygon& getClipPolyPolygon() const { return maClipPolyPoygon; }
-        void setClipPolyPolygon(const basegfx::B2DPolyPolygon& rNew) { if(rNew != maClipPolyPoygon) maClipPolyPoygon = rNew; }
-        bool getClipPolyPolygonActive() const { return mbClipPolyPolygonActive; }
-        void setClipPolyPolygonActive(bool bNew) { if(bNew != mbClipPolyPolygonActive) mbClipPolyPolygonActive = bNew; }
+		const basegfx::B2DPolyPolygon& getClipPolyPolygon() const { return maClipPolyPoygon; }
+		void setClipPolyPolygon(const basegfx::B2DPolyPolygon& rNew) { if(rNew != maClipPolyPoygon) maClipPolyPoygon = rNew; }
+		bool getClipPolyPolygonActive() const { return mbClipPolyPolygonActive; }
+		void setClipPolyPolygonActive(bool bNew) { if(bNew != mbClipPolyPolygonActive) mbClipPolyPolygonActive = bNew; }
 
-        const Font& getFont() const { return maFont; }
-        void setFont(const Font& rFont) { if(rFont != maFont) maFont = rFont; }
+		const Font& getFont() const { return maFont; }
+		void setFont(const Font& rFont) { if(rFont != maFont) maFont = rFont; }
 
-        const RasterOp& getRasterOp() const { return maRasterOp; }
-        void setRasterOp(const RasterOp& rRasterOp) { if(rRasterOp != maRasterOp) maRasterOp = rRasterOp; }
-        bool isRasterOpInvert() const { return (ROP_XOR == maRasterOp || ROP_INVERT == maRasterOp); }
-        bool isRasterOpForceBlack() const { return ROP_0 == maRasterOp; }
-        bool isRasterOpActive() const { return isRasterOpInvert() || isRasterOpForceBlack(); }
+		const RasterOp& getRasterOp() const { return maRasterOp; }
+		void setRasterOp(const RasterOp& rRasterOp) { if(rRasterOp != maRasterOp) maRasterOp = rRasterOp; }
+		bool isRasterOpInvert() const { return (ROP_XOR == maRasterOp || ROP_INVERT == maRasterOp); }
+		bool isRasterOpForceBlack() const { return ROP_0 == maRasterOp; }
+		bool isRasterOpActive() const { return isRasterOpInvert() || isRasterOpForceBlack(); }
 
-        sal_uInt32 getLayoutMode() const { return mnLayoutMode; }
-        void setLayoutMode(sal_uInt32 nNew) { if(nNew != mnLayoutMode) mnLayoutMode = nNew; }
+		sal_uInt32 getLayoutMode() const { return mnLayoutMode; }
+		void setLayoutMode(sal_uInt32 nNew) { if(nNew != mnLayoutMode) mnLayoutMode = nNew; }
 
-        LanguageType getLanguageType() const { return maLanguageType; }
-        void setLanguageType(LanguageType aNew) { if(aNew != maLanguageType) maLanguageType = aNew; }
+		LanguageType getLanguageType() const { return maLanguageType; }
+		void setLanguageType(LanguageType aNew) { if(aNew != maLanguageType) maLanguageType = aNew; }
 
-        sal_uInt16 getPushFlags() const { return mnPushFlags; }
-        void setPushFlags(sal_uInt16 nNew) { if(nNew != mnPushFlags) mnPushFlags = nNew; }
+		sal_uInt16 getPushFlags() const { return mnPushFlags; }
+		void setPushFlags(sal_uInt16 nNew) { if(nNew != mnPushFlags) mnPushFlags = nNew; }
 
-        bool getLineOrFillActive() const { return (mbLineColor || mbFillColor); }
-    };
+		bool getLineOrFillActive() const { return (mbLineColor || mbFillColor); }
+	};
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
 
 namespace
 {
-	/** stack for properites
+	/** stack for properties
 
 		This class builds a stack based on the PropertyHolder
 		class. It encapsulates the pointer/new/delete usage to
@@ -217,51 +217,51 @@ namespace
 		flag values VCL OutputDevice uses here; not all stuff is
 		pushed and thus needs to be copied at pop.
 	*/
-    class PropertyHolders
-    {
-    private:
-        std::vector< PropertyHolder* >          maPropertyHolders;
+	class PropertyHolders
+	{
+	private:
+		std::vector< PropertyHolder* > maPropertyHolders;
 
-    public:
-        PropertyHolders()
-        {
-            maPropertyHolders.push_back(new PropertyHolder());
-        }
+	public:
+		PropertyHolders()
+		{
+			maPropertyHolders.push_back(new PropertyHolder());
+		}
 
-        sal_uInt32 size()
-        {
-            return maPropertyHolders.size();
-        }
+		sal_uInt32 size()
+		{
+			return maPropertyHolders.size();
+		}
 
 		void PushDefault()
 		{
-            PropertyHolder* pNew = new PropertyHolder();
-            maPropertyHolders.push_back(pNew);
+			PropertyHolder* pNew = new PropertyHolder();
+			maPropertyHolders.push_back(pNew);
 		}
 
-        void Push(sal_uInt16 nPushFlags)
-        {
-            if(nPushFlags)
-            {
-                OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: PUSH with no property holders (!)");
+		void Push(sal_uInt16 nPushFlags)
+		{
+			if(nPushFlags)
+			{
+				OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: PUSH with no property holders (!)");
 				if ( !maPropertyHolders.empty() )
 				{
 					PropertyHolder* pNew = new PropertyHolder(*maPropertyHolders.back());
 					pNew->setPushFlags(nPushFlags);
 					maPropertyHolders.push_back(pNew);
 				}
-            }
-        }
+			}
+		}
 
-        void Pop()
-        {
-            OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: POP with no property holders (!)");
-            const sal_uInt32 nSize(maPropertyHolders.size());
+		void Pop()
+		{
+			OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: POP with no property holders (!)");
+			const sal_uInt32 nSize(maPropertyHolders.size());
 
-            if(nSize)
-            {
-                const PropertyHolder* pTip = maPropertyHolders.back();
-                const sal_uInt16 nPushFlags(pTip->getPushFlags());
+			if(nSize)
+			{
+				const PropertyHolder* pTip = maPropertyHolders.back();
+				const sal_uInt16 nPushFlags(pTip->getPushFlags());
 
                 if(nPushFlags)
                 {
@@ -272,45 +272,45 @@ namespace
 
                         if(PUSH_ALL != nPushFlags)
                         {
-                            if(!(nPushFlags & PUSH_LINECOLOR      ))
+                            if(!(nPushFlags & PUSH_LINECOLOR ))
                             {
                                 pLast->setLineColor(pTip->getLineColor());
                                 pLast->setLineColorActive(pTip->getLineColorActive());
                             }
-                            if(!(nPushFlags & PUSH_FILLCOLOR      ))
+                            if(!(nPushFlags & PUSH_FILLCOLOR ))
                             {
                                 pLast->setFillColor(pTip->getFillColor());
                                 pLast->setFillColorActive(pTip->getFillColorActive());
                             }
-                            if(!(nPushFlags & PUSH_FONT           ))
+                            if(!(nPushFlags & PUSH_FONT ))
                             {
                                 pLast->setFont(pTip->getFont());
                             }
-                            if(!(nPushFlags & PUSH_TEXTCOLOR      ))
+                            if(!(nPushFlags & PUSH_TEXTCOLOR ))
                             {
                                 pLast->setTextColor(pTip->getTextColor());
                                 pLast->setTextColorActive(pTip->getTextColorActive());
                             }
-                            if(!(nPushFlags & PUSH_MAPMODE        ))
+                            if(!(nPushFlags & PUSH_MAPMODE ))
                             {
                                 pLast->setTransformation(pTip->getTransformation());
                                 pLast->setMapUnit(pTip->getMapUnit());
                             }
-                            if(!(nPushFlags & PUSH_CLIPREGION     ))
+                            if(!(nPushFlags & PUSH_CLIPREGION ))
                             {
                                 pLast->setClipPolyPolygon(pTip->getClipPolyPolygon());
                                 pLast->setClipPolyPolygonActive(pTip->getClipPolyPolygonActive());
                             }
-                            if(!(nPushFlags & PUSH_RASTEROP       ))
+                            if(!(nPushFlags & PUSH_RASTEROP ))
                             {
                                 pLast->setRasterOp(pTip->getRasterOp());
                             }
-                            if(!(nPushFlags & PUSH_TEXTFILLCOLOR  ))
+                            if(!(nPushFlags & PUSH_TEXTFILLCOLOR ))
                             {
                                 pLast->setTextFillColor(pTip->getTextFillColor());
                                 pLast->setTextFillColorActive(pTip->getTextFillColorActive());
                             }
-                            if(!(nPushFlags & PUSH_TEXTALIGN      ))
+                            if(!(nPushFlags & PUSH_TEXTALIGN ))
                             {
                                 if(pLast->getFont().GetAlign() != pTip->getFont().GetAlign())
                                 {
@@ -319,11 +319,11 @@ namespace
                                     pLast->setFont(aFont);
                                 }
                             }
-                            if(!(nPushFlags & PUSH_REFPOINT       ))
+                            if(!(nPushFlags & PUSH_REFPOINT ))
                             {
                                 // not supported
                             }
-                            if(!(nPushFlags & PUSH_TEXTLINECOLOR  ))
+                            if(!(nPushFlags & PUSH_TEXTLINECOLOR ))
                             {
                                 pLast->setTextLineColor(pTip->getTextLineColor());
                                 pLast->setTextLineColorActive(pTip->getTextLineColorActive());
@@ -332,11 +332,11 @@ namespace
                             {
                                 pLast->setLayoutMode(pTip->getLayoutMode());
                             }
-                            if(!(nPushFlags & PUSH_TEXTLANGUAGE   ))
+                            if(!(nPushFlags & PUSH_TEXTLANGUAGE ))
                             {
                                 pLast->setLanguageType(pTip->getLanguageType());
                             }
-                            if(!(nPushFlags & PUSH_OVERLINECOLOR  ))
+                            if(!(nPushFlags & PUSH_OVERLINECOLOR ))
                             {
                                 pLast->setOverlineColor(pTip->getOverlineColor());
                                 pLast->setOverlineColorActive(pTip->getOverlineColorActive());
@@ -345,28 +345,28 @@ namespace
                     }
                 }
 
-                // execute the pop
-                delete maPropertyHolders.back();
-                maPropertyHolders.pop_back();
-            }
-        }
+				// execute the pop
+				delete maPropertyHolders.back();
+				maPropertyHolders.pop_back();
+			}
+		}
 
-        PropertyHolder& Current()
-        {
+		PropertyHolder& Current()
+		{
 			static PropertyHolder aDummy;
-            OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: CURRENT with no property holders (!)");
+			OSL_ENSURE(maPropertyHolders.size(), "PropertyHolders: CURRENT with no property holders (!)");
 			return maPropertyHolders.empty() ? aDummy : *maPropertyHolders.back();
-        }
+		}
 
-        ~PropertyHolders()
-        {
-            while(maPropertyHolders.size())
-            {
-                delete maPropertyHolders.back();
-                maPropertyHolders.pop_back();
-            }
-        }
-    };
+		~PropertyHolders()
+		{
+			while(maPropertyHolders.size())
+			{
+				delete maPropertyHolders.back();
+				maPropertyHolders.pop_back();
+			}
+		}
+	};
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
@@ -380,37 +380,37 @@ namespace
 		the spans of regions to a single, already merged
 		PolyPolygon.
 	 */
-    basegfx::B2DPolyPolygon getB2DPolyPolygonFromRegion(const Region& rRegion)
-    {
-        basegfx::B2DPolyPolygon aRetval;
+	basegfx::B2DPolyPolygon getB2DPolyPolygonFromRegion(const Region& rRegion)
+	{
+		basegfx::B2DPolyPolygon aRetval;
 
-        if(!rRegion.IsEmpty())
-        {
-            Region aRegion(rRegion);
+		if(!rRegion.IsEmpty())
+		{
+			Region aRegion(rRegion);
 
-            aRetval = aRegion.GetAsB2DPolyPolygon();
-        }
+			aRetval = aRegion.GetAsB2DPolyPolygon();
+		}
 
-        return aRetval;
-    }
+		return aRetval;
+	}
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
 
 namespace
 {
-	/**	Helper class to buffer and hold a Primive target vector. It
-		encapsulates the new/delete functionality and aloows to work
+	/**	Helper class to buffer and hold a Primitive target vector. It
+		encapsulates the new/delete functionality and allows to work
 		on pointers of the implementation classes. All data will
 		be converted to uno sequences of uno references when accessing the
 		data.
 	*/
-    class TargetHolder
-    {
-    private:
-        std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aTargets;
+	class TargetHolder
+	{
+	private:
+		std::vector< drawinglayer::primitive2d::BasePrimitive2D* > aTargets;
 
-    public:
+	public:
         TargetHolder()
         :   aTargets()
         {
@@ -581,7 +581,7 @@ namespace drawinglayer
 namespace
 {
 	/** helper to convert a MapMode to a transformation */
-    basegfx::B2DHomMatrix getTransformFromMapMode(const MapMode& rMapMode)
+	basegfx::B2DHomMatrix getTransformFromMapMode(const MapMode& rMapMode)
 	{
 		basegfx::B2DHomMatrix aMapping;
 		const Fraction aNoScale(1, 1);
@@ -603,12 +603,12 @@ namespace
 	}
 
 	/** helper to create a PointArrayPrimitive2D based on current context */
-    void createPointArrayPrimitive(
-        const std::vector< basegfx::B2DPoint >& rPositions,
-        TargetHolder& rTarget,
+	void createPointArrayPrimitive(
+		const std::vector< basegfx::B2DPoint >& rPositions,
+		TargetHolder& rTarget,
 		PropertyHolder& rProperties,
-        basegfx::BColor aBColor)
-    {
+		basegfx::BColor aBColor)
+	{
 		if(rPositions.size())
 		{
 			if(rProperties.getTransformation().isIdentity())
@@ -633,7 +633,7 @@ namespace
 						aBColor));
 			}
 		}
-    }
+	}
 
 	/** helper to create a PolygonHairlinePrimitive2D based on current context */
 	void createHairlinePrimitive(
@@ -734,13 +734,13 @@ namespace
 				createHairlinePrimitive(rLinePolygon, rTarget, rProperties);
 			}
 		}
-    }
+	}
 
 	/** helper to create needed line and fill primitives based on current context */
 	void createHairlineAndFillPrimitive(
-        const basegfx::B2DPolygon& rPolygon,
-        TargetHolder& rTarget,
-        PropertyHolder& rProperties)
+		const basegfx::B2DPolygon& rPolygon,
+		TargetHolder& rTarget,
+		PropertyHolder& rProperties)
 	{
 		if(rProperties.getFillColorActive())
 		{
@@ -824,7 +824,7 @@ namespace
 	}
 
 	/** helper to create a regular BotmapEx from a MaskAction (definitions
-		which use a bitmap without transparence but define one of the colors as
+		which use a bitmap without transparency but define one of the colors as
 		transparent)
 	 */
     BitmapEx createMaskBmpEx(const Bitmap& rBitmap, const Color& rMaskColor)
@@ -953,22 +953,22 @@ namespace
 	/** helper to take needed action on ClipRegion change. This method needs to be called
 		on any Region change, e.g. at the obvious actions doing this, but also at pop-calls
 		which change the Region of the current context. It takes care of creating the
-		current embeddec context, set the new Region at the context and eventually prepare
+		current embedded context, set the new Region at the context and eventually prepare
 		a new target for embracing new geometry to the current region
 	 */
-    void HandleNewClipRegion(
-        const basegfx::B2DPolyPolygon& rClipPolyPolygon,
-        TargetHolders& rTargetHolders,
-        PropertyHolders& rPropertyHolders)
-    {
-        const bool bNewActive(rClipPolyPolygon.count());
+	void HandleNewClipRegion(
+		const basegfx::B2DPolyPolygon& rClipPolyPolygon,
+		TargetHolders& rTargetHolders,
+		PropertyHolders& rPropertyHolders)
+	{
+		const bool bNewActive(rClipPolyPolygon.count());
 
 		// #i108636# The handlig of new ClipPolyPolygons was not done as good as possible
 		// in the first version of this interpreter; e.g. when a ClipPolyPolygon was set
 		// initially and then using a lot of push/pop actions, the pop always leads
 		// to setting a 'new' ClipPolyPolygon which indeed is the return to the ClipPolyPolygon
 		// of the properties next on the stack.
-        //
+		//
 		// This ClipPolyPolygon is identical to the current one, so there is no need to
 		// create a MaskPrimitive2D containing the up-to-now created primitives, but
 		// this was done before. While this does not lead to wrong primitive
@@ -998,9 +998,9 @@ namespace
 		// Handle deletion of old ClipPolyPolygon. The process evtl. created primitives which
 		// belong to this active ClipPolyPolygon. These need to be embedded to a
 		// MaskPrimitive2D accordingly.
-        if(rPropertyHolders.Current().getClipPolyPolygonActive() && rTargetHolders.size() > 1)
-        {
-            drawinglayer::primitive2d::Primitive2DSequence aSubContent;
+		if(rPropertyHolders.Current().getClipPolyPolygonActive() && rTargetHolders.size() > 1)
+		{
+			drawinglayer::primitive2d::Primitive2DSequence aSubContent;
 
             if(rPropertyHolders.Current().getClipPolyPolygon().count()
                 && rTargetHolders.Current().size())
@@ -1035,7 +1035,7 @@ namespace
 	/** helper to handle the change of RasterOp. It takes care of encapsulating all current
 		geometry to the current RasterOp (if changed) and needs to be called on any RasterOp
 		change. It will also start a new geometry target to embrace to the new RasterOp if
-		a changuing RasterOp is used. Currently, ROP_XOR and ROP_INVERT are supported using
+		a changing RasterOp is used. Currently, ROP_XOR and ROP_INVERT are supported using
 		InvertPrimitive2D, and ROP_0 by using a ModifiedColorPrimitive2D to force to black paint
 	 */
     void HandleNewRasterOp(
@@ -1285,7 +1285,7 @@ namespace
 	{
 		drawinglayer::primitive2d::BasePrimitive2D* pResult = 0;
 		const Font& rFont = rProperty.getFont();
-        basegfx::B2DVector aAlignmentOffset(0.0, 0.0);
+		basegfx::B2DVector aAlignmentOffset(0.0, 0.0);
 
 		if(nTextLength)
 		{
@@ -1318,12 +1318,12 @@ namespace
 
 			if(bDecoratedIsNeeded)
 			{
-                // prepare overline, underline and srikeout data
+                // prepare overline, underline and strikeout data
                 const drawinglayer::primitive2d::TextLine eFontOverline(drawinglayer::primitive2d::mapFontUnderlineToTextLine(rFont.GetOverline()));
                 const drawinglayer::primitive2d::TextLine eFontUnderline(drawinglayer::primitive2d::mapFontUnderlineToTextLine(rFont.GetUnderline()));
 				const drawinglayer::primitive2d::TextStrikeout eTextStrikeout(drawinglayer::primitive2d::mapFontStrikeoutToTextStrikeout(rFont.GetStrikeout()));
 
-                // check UndelineAbove
+                // check UnderlineAbove
 				const bool bUnderlineAbove(drawinglayer::primitive2d::TEXT_LINE_NONE != eFontUnderline && isUnderlineAbove(rFont));
 
 				// prepare emphasis mark data
@@ -1624,7 +1624,7 @@ namespace
 		I have marked the single MetaActions with:
 
 		SIMPLE, DONE:
-		Simple, e.g nothing to do or value setting in the context
+		Simple, e.g. nothing to do or value setting in the context
 
 		CHECKED, WORKS WELL:
 		Thoroughly tested with extra written test code which created a replacement
@@ -1635,19 +1635,19 @@ namespace
 		creations, nor in EMF/WMF imports (checked with a whole bunch of critical EMF/WMF
 		bugdocs)
 
-		For more commens, see the single action implementations.
+		For more comments, see the single action implementations.
 	*/
-    void interpretMetafile(
-        const GDIMetaFile& rMetaFile,
-        TargetHolders& rTargetHolders,
-        PropertyHolders& rPropertyHolders,
+	void interpretMetafile(
+		const GDIMetaFile& rMetaFile,
+		TargetHolders& rTargetHolders,
+		PropertyHolders& rPropertyHolders,
 		const drawinglayer::geometry::ViewInformation2D& rViewInformation)
-    {
-        const sal_uInt32 nCount(rMetaFile.GetActionCount());
+	{
+		const sal_uInt32 nCount(rMetaFile.GetActionCount());
 
-        for(sal_uInt32 nAction(0); nAction < nCount; nAction++)
-        {
-            MetaAction* pAction = rMetaFile.GetAction(nAction);
+		for(sal_uInt32 nAction(0); nAction < nCount; nAction++)
+		{
+			MetaAction* pAction = rMetaFile.GetAction(nAction);
 
             switch(pAction->GetType())
             {
@@ -2004,7 +2004,7 @@ namespace
 
 					if(nTextLength && rPropertyHolders.Current().getTextColorActive())
 					{
-						// preapare DXArray (if used)
+						// prepare DXArray (if used)
 						std::vector< double > aDXArray;
 						sal_Int32* pDXArray = pA->GetDXArray();
 
@@ -2071,7 +2071,7 @@ namespace
 
                                 if(fabs(fRelative - 1.0) >= 0.035)
                                 {
-                                    // when derivation is more than 3,5% from default text size,
+                                    // when derivation is more than 3.5% from default text size,
                                     // scale the DXArray
                                     for(sal_uInt32 a(0); a < aTextArray.size(); a++)
                                     {
@@ -2113,7 +2113,7 @@ namespace
 						// VCL AFAP.
 						// Since AddTextRectActions is the only way as long as we do not have
 						// a simple text layouter available, i will try to add it to the
-						// TextLayouterDevice isloation.
+						// TextLayouterDevice isolation.
 						drawinglayer::primitive2d::TextLayouterDevice aTextLayouterDevice;
 						aTextLayouterDevice.setFont(rPropertyHolders.Current().getFont());
 						GDIMetaFile aGDIMetaFile;
@@ -2128,7 +2128,7 @@ namespace
 							{
                                 rTargetHolders.Push();
 
-                                // for sub-Mteafile contents, do start with new, default render state
+                                // for sub-Metafile contents, do start with new, default render state
                                 // #124686# ...but copy font, this is already set accordingly
                                 const Font& rTargetFont = rPropertyHolders.Current().getFont();
                                 rPropertyHolders.PushDefault();
@@ -2311,7 +2311,7 @@ namespace
                                 if(rPropertyHolders.Current().isRasterOpInvert())
                                 {
                                     // use a special version of FillGradientPrimitive2D which creates
-                                    // non-overlapping geometry on decomposition to makethe old XOR
+                                    // non-overlapping geometry on decomposition to make the old XOR
                                     // paint 'trick' work.
                                     xGradient[0] = drawinglayer::primitive2d::Primitive2DReference(
 									    new drawinglayer::primitive2d::NonOverlappingFillGradientPrimitive2D(
@@ -2741,7 +2741,7 @@ namespace
 
                     if(0 == aFontSize.Height())
                     {
-                        // this should not happen but i got Metafiles where this was the
+                        // this should not happen but I got Metafiles where this was the
                         // case. A height needs to be guessed (similar to OutputDevice::ImplNewFont())
                         Font aCorrectedFont(pA->GetFont());
 
@@ -2766,7 +2766,7 @@ namespace
                         rPropertyHolders.Current().setTextColor(rFontColor.getBColor());
                     }
 
-                    // caution: do NOT decativate here on transparet, see
+                    // caution: do NOT deactivate here on transparent, see
                     // OutputDevice::SetFont(..) for more info
                     // rPropertyHolders.Current().setTextColorActive(bActivate);
 
@@ -2961,9 +2961,9 @@ namespace
 					/** CHECKED, WORKS WELL */
                     const MetaFloatTransparentAction* pA = (const MetaFloatTransparentAction*)pAction;
 					const basegfx::B2DRange aTargetRange(
-                        pA->GetPoint().X(), 
-                        pA->GetPoint().Y(), 
-                        pA->GetPoint().X() + pA->GetSize().Width(), 
+                        pA->GetPoint().X(),
+                        pA->GetPoint().Y(),
+                        pA->GetPoint().X() + pA->GetSize().Width(),
                         pA->GetPoint().Y() + pA->GetSize().Height());
 
 					if(!aTargetRange.isEmpty())
@@ -2977,7 +2977,7 @@ namespace
 							drawinglayer::primitive2d::Primitive2DSequence xSubContent;
 							{
                                 rTargetHolders.Push();
-								// #i# for sub-Mteafile contents, do start with new, default render state
+								// #i# for sub-Metafile contents, do start with new, default render state
 								rPropertyHolders.PushDefault();
 								interpretMetafile(rContent, rTargetHolders, rPropertyHolders, rViewInformation);
 								xSubContent = rTargetHolders.Current().getPrimitive2DSequence(rPropertyHolders.Current());
@@ -3010,7 +3010,7 @@ namespace
                                 // apply general current transformation
                                 aSubTransform = rPropertyHolders.Current().getTransformation() * aSubTransform;
 
-                                // evtl. embed sub-content to it's transformation
+                                // evtl. embed sub-content to its transformation
                                 if(!aSubTransform.isIdentity())
                                 {
                                     const drawinglayer::primitive2d::Primitive2DReference aEmbeddedTransform(
@@ -3045,7 +3045,7 @@ namespace
 										    aRange,
 										    aAttribute));
 
-									// create transparence primitive
+									// create transparent primitive
 									rTargetHolders.Current().append(
 										new drawinglayer::primitive2d::TransparencePrimitive2D(
 											xSubContent,
@@ -3105,7 +3105,7 @@ namespace
 					{
                         // XGRAD_SEQ_BEGIN, XGRAD_SEQ_END should be supported since the
                         // pure recorded paint of the gradients uses the XOR paint functionality
-                        // ('trick'). This is (and will be) broblematic with AntAliasing, so it's
+                        // ('trick'). This is (and will be) problematic with AntAliasing, so it's
                         // better to use this info
 						const MetaGradientExAction*	pMetaGradientExAction = 0;
 						bool bDone(false);
@@ -3166,15 +3166,15 @@ namespace
 					}
 
 					break;
-                }
-                default:
-                {
-                    OSL_ENSURE(false, "Unknown MetaFile Action (!)");
-                    break;
-                }
-            }
-        }
-    }
+				}
+				default:
+				{
+					OSL_ENSURE(false, "Unknown MetaFile Action (!)");
+					break;
+				}
+			}
+		}
+	}
 } // end of anonymous namespace
 
 //////////////////////////////////////////////////////////////////////////////
@@ -3184,37 +3184,37 @@ namespace drawinglayer
 	namespace primitive2d
 	{
 		Primitive2DSequence MetafilePrimitive2D::create2DDecomposition(const geometry::ViewInformation2D& rViewInformation) const
-        {
-			// prepare target and porperties; each will have one default entry
-            TargetHolders aTargetHolders;
-            PropertyHolders aPropertyHolders;
+		{
+			// prepare target and properties; each will have one default entry
+			TargetHolders aTargetHolders;
+			PropertyHolders aPropertyHolders;
 
 			// set target MapUnit at Properties
 			aPropertyHolders.Current().setMapUnit(getMetaFile().GetPrefMapMode().GetMapUnit());
 
 			// interpret the Metafile
-            interpretMetafile(getMetaFile(), aTargetHolders, aPropertyHolders, rViewInformation);
+			interpretMetafile(getMetaFile(), aTargetHolders, aPropertyHolders, rViewInformation);
 
-			// get the content. There should be ony one target, as in the start condition,
-            // but iterating will be the right thing to do when some push/pop is not closed
+			// get the content. There should be only one target, as in the start condition,
+			// but iterating will be the right thing to do when some push/pop is not closed
 			Primitive2DSequence xRetval;
 
-            while(aTargetHolders.size() > 1)
-            {
-                appendPrimitive2DSequenceToPrimitive2DSequence(xRetval,
-                    aTargetHolders.Current().getPrimitive2DSequence(aPropertyHolders.Current()));
-                aTargetHolders.Pop();
-            }
+			while(aTargetHolders.size() > 1)
+			{
+				appendPrimitive2DSequenceToPrimitive2DSequence(xRetval,
+					aTargetHolders.Current().getPrimitive2DSequence(aPropertyHolders.Current()));
+				aTargetHolders.Pop();
+			}
 
-            appendPrimitive2DSequenceToPrimitive2DSequence(xRetval,
-                aTargetHolders.Current().getPrimitive2DSequence(aPropertyHolders.Current()));
+			appendPrimitive2DSequenceToPrimitive2DSequence(xRetval,
+				aTargetHolders.Current().getPrimitive2DSequence(aPropertyHolders.Current()));
 
 			if(xRetval.hasElements())
 			{
 				// get target size
 				const Rectangle aMtfTarget(getMetaFile().GetPrefMapMode().GetOrigin(), getMetaFile().GetPrefSize());
 
-                // create transformation
+				// create transformation
 				basegfx::B2DHomMatrix aAdaptedTransform;
 
 				aAdaptedTransform.translate(-aMtfTarget.Left(), -aMtfTarget.Top());
@@ -3232,8 +3232,8 @@ namespace drawinglayer
 				xRetval = Primitive2DSequence(&aEmbeddedTransform, 1);
 			}
 
-            return xRetval;
-        }
+			return xRetval;
+		}
 
 		MetafilePrimitive2D::MetafilePrimitive2D(
 			const basegfx::B2DHomMatrix& rMetaFileTransform,
@@ -3260,13 +3260,13 @@ namespace drawinglayer
 		basegfx::B2DRange MetafilePrimitive2D::getB2DRange(const geometry::ViewInformation2D& /*rViewInformation*/) const
 		{
 			// use own implementation to quickly answer the getB2DRange question. The
-            // MetafilePrimitive2D assumes that all geometry is inside of the shape. If
-            // this is not the case (i have already seen some wrong Metafiles) it should
-            // be embedded to a MaskPrimitive2D
+			// MetafilePrimitive2D assumes that all geometry is inside of the shape. If
+			// this is not the case (i have already seen some wrong Metafiles) it should
+			// be embedded to a MaskPrimitive2D
 			basegfx::B2DRange aRetval(0.0, 0.0, 1.0, 1.0);
 			aRetval.transform(getTransform());
 
-            return aRetval;
+			return aRetval;
 		}
 
 		// provide unique ID

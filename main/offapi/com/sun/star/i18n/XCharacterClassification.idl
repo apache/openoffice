@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -41,7 +41,7 @@ module com { module sun { module star { module i18n {
 
 /*
 
-Possible tokens to be parsed with  parse...Token():
+Possible tokens to be parsed with parse...Token():
 
 UPASCALPHA=[A-Z]
 LOASCALPHA=[a-z]
@@ -71,8 +71,8 @@ ALPHA_NAME=ALPHA *(ALNUM|DEFCHARS)
 ANY_NAME=1*(ALNUM|DEFCHARS)
 SINGLE_QUOTE_NAME=ASC_QUOTE(1*CHAR)ASC_QUOTE
 DOUBLE_QUOTE_NAME=ASC_DBL_QUOTE(*CHAR)ASC_DBL_QUOTE
-ASC_NUMBER=[SIGN]*(1*ASC_DIGIT  *(GRPSEP 1*ASC_DIGIT))[DECSEP]1*ASC_DIGIT[EXPONENT]
-NUMBER=[SIGN]*(1*DIGIT  *(GRPSEP 1*DIGIT))[DECSEP]1*DIGIT[EXPONENT]
+ASC_NUMBER=[SIGN]*(1*ASC_DIGIT *(GRPSEP 1*ASC_DIGIT))[DECSEP]1*ASC_DIGIT[EXPONENT]
+NUMBER=[SIGN]*(1*DIGIT *(GRPSEP 1*DIGIT))[DECSEP]1*DIGIT[EXPONENT]
 
 */
 
@@ -122,7 +122,7 @@ published interface XCharacterClassification : com::sun::star::uno::XInterface
 
     //------------------------------------------------------------------------
     /// Get <type>KCharacterType</type> of character at position <em>nPos</em>.
-    long getCharacterType( [in] string aText, [in] long nPos, 
+    long getCharacterType( [in] string aText, [in] long nPos,
                            [in] com::sun::star::lang::Locale aLocale );
 
     //------------------------------------------------------------------------
@@ -152,7 +152,7 @@ published interface XCharacterClassification : com::sun::star::uno::XInterface
 
         @returns
             A filled <type>ParseResult</type> structure. If no
-            unambigous token could be parsed,
+            unambiguous token could be parsed,
             <member>ParseResult::TokenType</member> will be set to
             <b>0</b> (zero), other fields will contain the values parsed
             so far.
@@ -277,6 +277,7 @@ published interface XCharacterClassification : com::sun::star::uno::XInterface
 };
 
 //=============================================================================
+
 }; }; }; };
 
 #endif

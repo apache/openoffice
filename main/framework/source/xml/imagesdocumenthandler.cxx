@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -117,9 +117,9 @@ ImageXMLEntryProperty ImagesEntries[OReadImagesDocumentHandler::IMG_XML_ENTRY_CO
 	{ OReadImagesDocumentHandler::IMG_NS_XLINK,	ATTRIBUTE_HREF					},
 	{ OReadImagesDocumentHandler::IMG_NS_IMAGE,	ATTRIBUTE_MASKCOLOR				},
 	{ OReadImagesDocumentHandler::IMG_NS_IMAGE,	ATTRIBUTE_COMMAND				},
-    { OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_BITMAPINDEX			},
-    { OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_MASKURL				},
-    { OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_MASKMODE				},
+	{ OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_BITMAPINDEX			},
+	{ OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_MASKURL				},
+	{ OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_MASKMODE				},
 	{ OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_HIGHCONTRASTURL		},
 	{ OReadImagesDocumentHandler::IMG_NS_IMAGE, ATTRIBUTE_HIGHCONTRASTMASKURL	}
 };
@@ -255,7 +255,7 @@ throw(	SAXException, RuntimeException )
 								{
 									if ( aColor.getStr()[0] == '#' )
 									{
-										// the color value is given as #rrggbb and used the hexadecimal system!!
+										// the color value is given as #rrggbb and uses the hexadecimal system!
 										sal_uInt32 nColor = aColor.copy( 1 ).toInt32( 16 );
 
 										m_pImages->aMaskColor = Color( COLORDATA_RGB( nColor ) );
@@ -628,7 +628,7 @@ throw(	SAXException, RuntimeException )
 OWriteImagesDocumentHandler::OWriteImagesDocumentHandler(
 	const ImageListsDescriptor& aItems,
 	Reference< XDocumentHandler > rWriteDocumentHandler ) :
-    ThreadHelpBase( &Application::GetSolarMutex() ),
+	ThreadHelpBase( &Application::GetSolarMutex() ),
 	m_aImageListsItems( aItems ),
 	m_xWriteDocumentHandler( rWriteDocumentHandler )
 {
@@ -706,7 +706,7 @@ void OWriteImagesDocumentHandler::WriteImageList( const ImageListItemDescriptor*
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
 
-    // save required attributes
+	// save required attributes
 	pList->AddAttribute( m_aAttributeXlinkType,
 						 m_aAttributeType,
 						 m_aAttributeValueSimple );
@@ -756,8 +756,8 @@ void OWriteImagesDocumentHandler::WriteImageList( const ImageListItemDescriptor*
 							 pImageList->aHighContrastURL );
 	}
 
-    m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_IMAGES )), xList );
-    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_IMAGES )), xList );
+	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 
 	ImageItemListDescriptor* pImageItemList = pImageList->pImageItemList;
 	if ( pImageItemList )
@@ -814,7 +814,7 @@ void OWriteImagesDocumentHandler::WriteExternalImage( const ExternalImageItemDes
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
 
-    // save required attributes
+	// save required attributes
 	pList->AddAttribute( m_aAttributeXlinkType,
 						 m_aAttributeType,
 						 m_aAttributeValueSimple );
@@ -841,7 +841,4 @@ void OWriteImagesDocumentHandler::WriteExternalImage( const ExternalImageItemDes
 }
 
 } // namespace framework
-
-
-
 
