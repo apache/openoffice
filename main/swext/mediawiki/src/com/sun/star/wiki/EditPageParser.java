@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,7 +28,7 @@ import javax.swing.text.MutableAttributeSet;
 
 public class EditPageParser extends HTMLEditorKit.ParserCallback
 {
-    
+
     protected String m_sEditTime = "";
     protected String m_sEditToken = "";
     protected String m_sLoginToken = "";
@@ -44,12 +44,12 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
     protected int m_nHTMLArticleEnd = -1;
     protected int m_nNoArticleInd = -1;
     protected int m_nErrorInd = -1;
-    
+
     /** Creates a new instance of WikiHTMLParser */
     public EditPageParser()
     {
     }
-    
+
     public void handleComment( char[] data,int pos )
     {
         // insert code to handle comments
@@ -67,8 +67,8 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
             {
                 m_nHTMLArticleStart = pos+6;
                 m_bHTMLStartFound = false;
-            }                
-        }    
+            }
+        }
         else if ( t == HTML.Tag.HEAD )
         {
             m_bInHead = false;
@@ -145,7 +145,7 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
                 {
                     m_nWikiArticleHash = t.hashCode();
                     m_nWikiArticleStart = pos;
-                }                
+                }
             }
         }
         else if ( t == HTML.Tag.DIV )
@@ -157,7 +157,7 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
                 if ( sId.equalsIgnoreCase( "contentSub" ) )
                 {
                     m_bHTMLStartFound = true;
-                }                
+                }
             }
             if ( sClass != null )
             {
@@ -167,7 +167,7 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
                 }
                 else if ( sClass.equalsIgnoreCase( "noarticletext" ) )
                 {
-                    m_nNoArticleInd = pos;                    
+                    m_nNoArticleInd = pos;
                 }
                 else if ( sClass.equalsIgnoreCase( "errorbox" ) )
                 {
@@ -182,8 +182,7 @@ public class EditPageParser extends HTMLEditorKit.ParserCallback
             {
                 m_nErrorInd = pos;
             }
-        }   
+        }
     }
-
-    
 }
+

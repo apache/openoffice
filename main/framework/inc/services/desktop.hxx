@@ -181,7 +181,7 @@ class Desktop   :   // interfaces
 
                         Registered termination listener will be taken into account
                         also. As special feature some of our registered listener
-                        are well known by it's UNO implementation name. They are handled
+                        are well known by its UNO implementation name. They are handled
                         different to all other listener.
 
                         Btw: Desktop.terminate() was designed in the past to be used
@@ -210,7 +210,7 @@ class Desktop   :   // interfaces
 
             @descr      Additional to adding normal listener these method was implemented special.
                         Every listener will be asked for it's uno implementation name.
-                        Some of them are well known ... and the corresponding listener wont be added
+                        Some of them are well known ... and the corresponding listener won't be added
                         to the container of "normal listener". Those listener will be set as special
                         member.
                         see e.g. member m_xSfxTerminator
@@ -232,7 +232,7 @@ class Desktop   :   // interfaces
             @short      remove a listener from this container.
 
             @descr      Additional to removing normal listener these method was implemented special.
-                        Every listener will be asked for it's uno implementation name.
+                        Every listener will be asked for its uno implementation name.
                         Some of them are well known ... and the corresponding listener was set as special member.
                         Now those special member will be reseted also.
                         see e.g. member m_xSfxTerminator
@@ -364,8 +364,8 @@ class Desktop   :   // interfaces
         /** calls queryTermination() on every registered termination listener.
          *
          *  Note: Only normal termination listener (registered in list m_aListenerContainer
-         *        will be recognized here. Special listener like quick starter, pipe or others
-         *        has to be handled explicitly !
+         *        will be recognized here. Special listeners like quick starter, pipe or others
+         *        have to be handled explicitly !
          *
          *  @param  [out] lCalledListener
          *          every called listener will be returned here.

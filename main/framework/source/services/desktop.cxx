@@ -205,7 +205,7 @@ DEFINE_INIT_SERVICE                     (   Desktop,
 
                                                 // Safe impossible cases
                                                 // We can't work without this helper!
-                                                LOG_ASSERT2( m_xFramesHelper.is  ()==sal_False, "Desktop::Desktop()", "Frames helper is not valid. XFrames, XIndexAccess and XElementAcces are not supported!\n")
+                                                LOG_ASSERT2( m_xFramesHelper.is  ()==sal_False, "Desktop::Desktop()", "Frames helper is not valid. XFrames, XIndexAccess and XElementAccess are not supported!\n")
                                                 LOG_ASSERT2( m_xDispatchHelper.is()==sal_False, "Desktop::Desktop()", "Dispatch helper is not valid. XDispatch will not work correctly!\n"                      )
 
                                                 // Enable object for real working!
@@ -599,7 +599,7 @@ css::uno::Reference< css::frame::XFrame > SAL_CALL Desktop::getCurrentFrame() th
     // Register transaction and reject wrong calls.
     TransactionGuard aTransaction( m_aTransactionManager, E_HARDEXCEPTIONS );
 
-	// Start search with ouer direct active frame (if it exist!).
+	// Start search with our direct active frame (if it exists!).
     // Search on his children for other active frames too.
     // Stop if no one could be found and return last of found ones.
     css::uno::Reference< css::frame::XFramesSupplier > xLast = css::uno::Reference< css::frame::XFramesSupplier >( getActiveFrame(), css::uno::UNO_QUERY );
@@ -657,7 +657,7 @@ css::uno::Reference< css::lang::XComponent > SAL_CALL Desktop::loadComponentFrom
 
 /*-************************************************************************************************************//**
     @interface  XTasksSupplier
-    @short      get access to create enumerations of ouer taskchilds
+    @short      get access to create enumerations of our taskchilds
     @descr      Direct childs of desktop are tasks every time.
                 Call these method to could create enumerations of it.
 
@@ -671,7 +671,7 @@ But; Don't forget - you will be the owner of returned object and must release it
     @seealso    class TasksAccess
 
     @param      -
-    @return     A reference to an accessobject, which can create enumerations of ouer childtasks.
+    @return     A reference to an accessobject, which can create enumerations of our childtasks.
 
     @onerror    A null reference is returned.
     @threadsafe yes
@@ -691,18 +691,18 @@ css::uno::Reference< css::container::XEnumerationAccess > SAL_CALL Desktop::getT
 
 /*-************************************************************************************************************//**
     @interface  XTasksSupplier
-    @short      return current active task of ouer direct childs
+    @short      return current active task of our direct childs
     @descr      Desktop childs are tasks only ! If we have an active path from desktop
                 as top to any frame on bottom, we must have an active direct child. His reference is returned here.
 
-    @attention  a)  Do not confuse it with getCurrentFrame()! The current frame don't must one of ouer direct childs.
+    @attention  a)  Do not confuse it with getCurrentFrame()! The current frame don't must one of our direct childs.
                     It can be every frame in subtree and must have the focus (Is the last one of an active path!).
                 b)  We don't need any lock here. Our container is threadsafe himself and live, if we live!
 
     @seealso    method getCurrentFrame()
 
     @param      -
-    @return     A reference to ouer current active taskchild.
+    @return     A reference to our current active taskchild.
 
     @onerror    A null reference is returned.
     @threadsafe yes
@@ -834,7 +834,7 @@ css::uno::Reference< css::frame::XFrames > SAL_CALL Desktop::getFrames() throw( 
     @interface  XFramesSupplier
     @short      set/get the current active child frame
     @descr      It must be a task. Direct childs of desktop are tasks only! No frames are accepted.
-                We don't save this information directly in this class. We use ouer container-helper
+                We don't save this information directly in this class. We use our container-helper
                 to do that.
 
     @attention  Helper is threadsafe himself. So we don't need any lock here.
@@ -842,7 +842,7 @@ css::uno::Reference< css::frame::XFrames > SAL_CALL Desktop::getFrames() throw( 
     @seealso    class OFrameContainer
 
     @param      "xFrame", new active frame (must be valid!)
-    @return     A reference to ouer current active childtask, if anyone exist.
+    @return     A reference to our current active childtask, if anyone exist.
 
     @onerror    A null reference is returned.
     @threadsafe yes

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -107,39 +107,39 @@ UpdateHandler::UpdateHandler( const uno::Reference< uno::XComponentContext > & r
 //--------------------------------------------------------------------
 UpdateHandler::~UpdateHandler()
 {
-    mxContext = NULL;
-    mxUpdDlg = NULL;
-    mxInteractionHdl = NULL;
-    mxActionListener = NULL;
+	mxContext = NULL;
+	mxUpdDlg = NULL;
+	mxInteractionHdl = NULL;
+	mxActionListener = NULL;
 }
 
 //--------------------------------------------------------------------
 void UpdateHandler::enableControls( short nCtrlState )
 {
-    osl::MutexGuard aGuard( maMutex );
+	osl::MutexGuard aGuard( maMutex );
 
-    if ( nCtrlState == mnLastCtrlState )
-        return;
+	if ( nCtrlState == mnLastCtrlState )
+		return;
 
-    bool bEnableControl;
+	bool bEnableControl;
 
-    short nCurStateVal = nCtrlState;
-    short nOldStateVal = mnLastCtrlState;
+	short nCurStateVal = nCtrlState;
+	short nOldStateVal = mnLastCtrlState;
 
-    // the help button should always be the last button in the
-    // enum list und must never be disabled
-    for ( int i=0; i<HELP_BUTTON; i++ )
-    {
-        nCurStateVal = (short)(nCtrlState >> i);
-        nOldStateVal = (short)(mnLastCtrlState >> i);
-        if ( ( nCurStateVal & 0x01 ) != ( nOldStateVal & 0x01 ) )
-        {
-            bEnableControl = ( ( nCurStateVal & 0x01 ) == 0x01 );
-            setControlProperty( msButtonIDs[i], UNISTRING("Enabled"), uno::Any( bEnableControl ) );
-        }
-    }
+	// the help button should always be the last button in the
+	// enum list and must never be disabled
+	for ( int i=0; i<HELP_BUTTON; i++ )
+	{
+		nCurStateVal = (short)(nCtrlState >> i);
+		nOldStateVal = (short)(mnLastCtrlState >> i);
+		if ( ( nCurStateVal & 0x01 ) != ( nOldStateVal & 0x01 ) )
+		{
+			bEnableControl = ( ( nCurStateVal & 0x01 ) == 0x01 );
+			setControlProperty( msButtonIDs[i], UNISTRING("Enabled"), uno::Any( bEnableControl ) );
+		}
+	}
 
-    mnLastCtrlState = nCtrlState;
+	mnLastCtrlState = nCtrlState;
 }
 
 //--------------------------------------------------------------------
@@ -258,7 +258,7 @@ void UpdateHandler::setDownloadFile( const rtl::OUString& rFilePath )
     sal_Int32 nLast = rFilePath.lastIndexOf( '/' );
     if ( nLast != -1 )
     {
-        msDownloadFile = rFilePath.copy( nLast+1 ); 
+        msDownloadFile = rFilePath.copy( nLast+1 );
         const rtl::OUString aDownloadURL = rFilePath.copy( 0, nLast );
         osl::FileBase::getSystemPathFromFileURL( aDownloadURL, msDownloadPath );
     }
@@ -393,7 +393,7 @@ void SAL_CALL UpdateHandler::windowClosing( const lang::EventObject& e )
     awt::ActionEvent aActionEvt;
     aActionEvt.ActionCommand = COMMAND_CLOSE;
     aActionEvt.Source = e.Source;
-    
+
     actionPerformed( aActionEvt );
 }
 
@@ -445,8 +445,8 @@ void SAL_CALL UpdateHandler::handle( uno::Reference< task::XInteractionRequest >
             throw uno::RuntimeException( UNISTRING( "UpdateHandler: unable to obtain service manager from component context" ), *this );
 
         mxInteractionHdl = uno::Reference<task::XInteractionHandler> (
-                                xServiceManager->createInstanceWithContext( 
-                                    UNISTRING( "com.sun.star.task.InteractionHandler" ), 
+                                xServiceManager->createInstanceWithContext(
+                                    UNISTRING( "com.sun.star.task.InteractionHandler" ),
                                     mxContext),
                                 uno::UNO_QUERY_THROW);
         if( !mxInteractionHdl.is() )
@@ -510,7 +510,7 @@ void SAL_CALL UpdateHandler::notifyTermination( const lang::EventObject& )
 
         uno::Reference< lang::XComponent > xComponent( mxUpdDlg, uno::UNO_QUERY );
         if ( xComponent.is() )
-            xComponent->dispose(); 
+            xComponent->dispose();
 
         mxUpdDlg.clear();
     }
@@ -546,7 +546,7 @@ void UpdateHandler::updateState( UpdateState eState )
             break;
         case UPDATESTATE_UPDATE_AVAIL:
             showControls( 0 );
-            enableControls( ( 1 << CLOSE_BUTTON )  + ( 1 << DOWNLOAD_BUTTON ) );
+            enableControls( ( 1 << CLOSE_BUTTON ) + ( 1 << DOWNLOAD_BUTTON ) );
             setControlProperty( TEXT_STATUS, UNISTRING("Text"), uno::Any( substVariables(msUpdFound) ) );
 
             sText = substVariables(msDownloadWarning);
@@ -559,7 +559,7 @@ void UpdateHandler::updateState( UpdateState eState )
             break;
         case UPDATESTATE_UPDATE_NO_DOWNLOAD:
             showControls( 0 );
-            enableControls( ( 1 << CLOSE_BUTTON )  + ( 1 << DOWNLOAD_BUTTON ) );
+            enableControls( ( 1 << CLOSE_BUTTON ) + ( 1 << DOWNLOAD_BUTTON ) );
             setControlProperty( TEXT_STATUS, UNISTRING("Text"), uno::Any( substVariables(msUpdFound) ) );
 
             sText = substVariables(msDownloadNotAvail);
@@ -571,7 +571,7 @@ void UpdateHandler::updateState( UpdateState eState )
             focusControl( DOWNLOAD_BUTTON );
             break;
         case UPDATESTATE_NO_UPDATE_AVAIL:
-        case UPDATESTATE_EXT_UPD_AVAIL:     // will only be set, when there are no office updates avail
+        case UPDATESTATE_EXT_UPD_AVAIL: // will only be set, when there are no office updates avail
             showControls( 0 );
             enableControls( 1 << CLOSE_BUTTON );
             setControlProperty( TEXT_STATUS, UNISTRING("Text"), uno::Any( substVariables(msNoUpdFound) ) );
@@ -735,7 +735,7 @@ void UpdateHandler::loadStrings()
     msPauseBtn      = loadString( xBundle, RID_UPDATE_BTN_PAUSE );
     msResumeBtn     = loadString( xBundle, RID_UPDATE_BTN_RESUME );
     msCancelBtn     = loadString( xBundle, RID_UPDATE_BTN_CANCEL );
-    
+
     // all update states before UPDATESTATE_UPDATE_AVAIL don't have a bubble
     // so we can ignore them
     for ( int i=0; i < (int)(UPDATESTATES_COUNT - UPDATESTATE_UPDATE_AVAIL); i++ )
@@ -860,13 +860,13 @@ void UpdateHandler::setFullVersion( rtl::OUString& rString )
         throw uno::RuntimeException( UNISTRING( "getProductName: empty component context" ), *this );
 
     uno::Reference< lang::XMultiComponentFactory > xServiceManager( mxContext->getServiceManager() );
-    
+
     if( !xServiceManager.is() )
         throw uno::RuntimeException( UNISTRING( "getProductName: unable to obtain service manager from component context" ), *this );
-    
-    uno::Reference< lang::XMultiServiceFactory > xConfigurationProvider( 
-        xServiceManager->createInstanceWithContext( UNISTRING( "com.sun.star.configuration.ConfigurationProvider" ), mxContext ), 
-        uno::UNO_QUERY_THROW); 
+
+    uno::Reference< lang::XMultiServiceFactory > xConfigurationProvider(
+        xServiceManager->createInstanceWithContext( UNISTRING( "com.sun.star.configuration.ConfigurationProvider" ), mxContext ),
+        uno::UNO_QUERY_THROW);
 
     beans::PropertyValue aProperty;
     aProperty.Name  = UNISTRING( "nodepath" );
@@ -877,7 +877,7 @@ void UpdateHandler::setFullVersion( rtl::OUString& rString )
 
     uno::Reference< uno::XInterface > xConfigAccess;
     xConfigAccess = xConfigurationProvider->createInstanceWithArguments( UNISTRING("com.sun.star.configuration.ConfigurationAccess"),
-                                                                         aArgumentList );                                    
+                                                                         aArgumentList );
 
     uno::Reference< container::XNameAccess > xNameAccess( xConfigAccess, uno::UNO_QUERY_THROW );
 
@@ -938,7 +938,7 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText ) const
 
     uno::Reference< awt::XControl > xControl( mxUpdDlg, uno::UNO_QUERY );
     if ( !xControl.is() ) return bRet;
- 
+
     uno::Reference< awt::XWindowPeer > xPeer = xControl->getPeer();
     if ( !xPeer.is() ) return bRet;
 
@@ -973,7 +973,7 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText ) const
 
     uno::Reference< lang::XComponent > xComponent( xMsgBox, uno::UNO_QUERY );
     if ( xComponent.is() )
-        xComponent->dispose(); 
+        xComponent->dispose();
 
     return bRet;
 }
@@ -987,7 +987,7 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText,
 
     uno::Reference< awt::XControl > xControl( mxUpdDlg, uno::UNO_QUERY );
     if ( !xControl.is() ) return bRet;
- 
+
     uno::Reference< awt::XWindowPeer > xPeer = xControl->getPeer();
     if ( !xPeer.is() ) return bRet;
 
@@ -1044,7 +1044,7 @@ bool UpdateHandler::showWarning( const rtl::OUString &rWarningText,
 
     uno::Reference< lang::XComponent > xComponent( xMsgBox, uno::UNO_QUERY );
     if ( xComponent.is() )
-        xComponent->dispose(); 
+        xComponent->dispose();
 
     return bRet;
 }
@@ -1110,7 +1110,7 @@ void UpdateHandler::showControls( short nControls )
         nShiftMe = (short)(nControls >> i);
         showControl( msButtonIDs[i], (bool)(nShiftMe & 0x01) );
     }
-        
+
     nShiftMe = (short)(nControls >> THROBBER_CTRL);
     startThrobber( (bool)(nShiftMe & 0x01) );
 
@@ -1119,7 +1119,7 @@ void UpdateHandler::showControls( short nControls )
     showControl( TEXT_PERCENT, (bool)(nShiftMe & 0x01) );
 
     // Status text needs to be smaller, when there are buttons at the right side of the dialog
-    if ( ( nControls & ( (1<<CANCEL_BUTTON) + (1<<PAUSE_BUTTON) + (1<<RESUME_BUTTON) ) )  != 0 )
+    if ( ( nControls & ( (1<<CANCEL_BUTTON) + (1<<PAUSE_BUTTON) + (1<<RESUME_BUTTON) ) ) != 0 )
         setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - BUTTON_WIDTH - 2*INNER_BORDER - TEXT_OFFSET ) ) );
     else
         setControlProperty( TEXT_STATUS, UNISTRING("Width"), uno::Any( sal_Int32(EDIT_WIDTH - 2*TEXT_OFFSET ) ) );
@@ -1141,10 +1141,10 @@ void UpdateHandler::createDialog()
     }
 
     uno::Reference< lang::XMultiComponentFactory > xServiceManager( mxContext->getServiceManager() );
-    
+
     if( xServiceManager.is() )
     {
-        uno::Reference< frame::XDesktop > xDesktop( 
+        uno::Reference< frame::XDesktop > xDesktop(
                 xServiceManager->createInstanceWithContext( UNISTRING( "com.sun.star.frame.Desktop"), mxContext ),
                 uno::UNO_QUERY );
         if ( xDesktop.is() )
@@ -1411,6 +1411,7 @@ void UpdateHandler::createDialog()
         }
     }
 
-    mxUpdDlg.set( xControl, uno::UNO_QUERY_THROW );
-    mnLastCtrlState = -1;
+	mxUpdDlg.set( xControl, uno::UNO_QUERY_THROW );
+	mnLastCtrlState = -1;
 }
+

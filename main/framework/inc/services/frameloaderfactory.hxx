@@ -131,7 +131,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		standard destructor to delete instance
-			@descr		We use it to clear ouer cache.
+			@descr		We use it to clear our cache.
 
 			@seealso	class RegistryCache
 
@@ -195,7 +195,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		not supported
-			@descr		Please use XNameAcces instead of these!
+			@descr		Please use XNameAccess instead of these!
 
 			@seealso	-
 

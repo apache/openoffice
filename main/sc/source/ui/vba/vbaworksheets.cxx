@@ -56,7 +56,7 @@ using namespace ::com::sun::star;
 
 typedef ::cppu::WeakImplHelper1< container::XEnumeration > SheetEnumeration_BASE;
 typedef ::cppu::WeakImplHelper3< container::XNameAccess, container::XIndexAccess, container::XEnumerationAccess > SheetCollectionHelper_BASE;
-// a map ( or hashmap ) wont do as we need also to preserve the order 
+// a map ( or hashmap ) won't do as we need also to preserve the order 
 // (as added ) of the items
 typedef std::vector< uno::Reference< sheet::XSpreadsheet > >  SheetMap;
 
@@ -156,8 +156,8 @@ public:
 		uno::Any aRet;
 		if ( !xIf.is() )
         {
-			// if the Sheet is in a document created by the api unfortunately ( at the 
-			// moment, it actually wont have the special Document modules
+			// if the Sheet is in a document created by the api unfortunately (at the 
+			// moment), it actually won't have the special Document modules
 			uno::Reference< excel::XWorksheet > xNewSheet( new ScVbaWorksheet( m_xParent, m_xContext, xSheet, m_xModel ) );
 			aRet <<= xNewSheet; 
         }
@@ -203,8 +203,8 @@ ScVbaWorksheets::createCollectionObject( const uno::Any& aSource )
 	uno::Any aRet;
 	if ( !xIf.is() )
 	{
-		// if the Sheet is in a document created by the api unfortunately ( at the 
-		// moment, it actually wont have the special Document modules
+		// if the Sheet is in a document created by the api unfortunately (at the 
+		// moment), it actually won't have the special Document modules
 		uno::Reference< excel::XWorksheet > xNewSheet( new ScVbaWorksheet( getParent(), mxContext, xSheet, mxModel ) );
 		aRet <<= xNewSheet;
 	}

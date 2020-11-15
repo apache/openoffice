@@ -126,7 +126,7 @@ class OTasksEnumeration	:	public css::lang::XTypeProvider		,
 		/*-****************************************************************************************************//**
 			@short		last chance to release all references and free memory
 			@descr		This method is called, if the enumeration is used completly and has no more elements.
-						Then we must destroy ouer list and release all references to other objects.
+						Then we must destroy our list and release all references to other objects.
 
 			@seealso	interface XEventListener
 

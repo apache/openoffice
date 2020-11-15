@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
-
 
 //_________________________________________________________________________________________________________________
 //	my own includes
@@ -100,10 +99,10 @@
 // Be careful removing this "bad" construct. There are serious problems
 // with #define STRICT and including windows.h. Changing this needs some
 // redesign on other projects, too. Especially sal/main.h which defines
-// HINSTANCE depending on STRCIT!!!!!!!!!!!!!!!
+// HINSTANCE depending on STRICT!!!!!!!!!!!!!!!
 struct SystemMenuData
 {
-    unsigned long nSize;
+	unsigned long nSize;
 	long          hMenu;
 };
 
@@ -292,7 +291,7 @@ Any SAL_CALL MenuBarManager::queryInterface( const Type & rType ) throw ( Runtim
 
 void SAL_CALL MenuBarManager::acquire() throw()
 {
-    OWeakObject::acquire();
+	OWeakObject::acquire();
 }
 
 
@@ -304,13 +303,13 @@ void SAL_CALL MenuBarManager::release() throw()
 
 Any SAL_CALL MenuBarManager::getMenuHandle( const Sequence< sal_Int8 >& /*ProcessId*/, sal_Int16 SystemType ) throw (RuntimeException)
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::getMenuHandle" );
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::getMenuHandle" );
 	ResetableGuard aGuard( m_aLock );
 
 	if ( m_bDisposed )
-	    throw com::sun::star::lang::DisposedException();
+		throw com::sun::star::lang::DisposedException();
 
-    Any a;
+	Any a;
 
     if ( m_pVCLMenu )
     {
@@ -356,7 +355,7 @@ void MenuBarManager::Destroy()
     if ( !m_bDisposed )
     {
         // stop asynchronous settings timer and
-        // release defered item container reference
+        // release deferred item container reference
         m_aAsyncSettingsTimer.Stop();
         m_xDeferedItemContainer.clear();
         RemoveListener();
@@ -499,7 +498,7 @@ throw ( RuntimeException )
         std::vector< MenuItemHandler* >::iterator p;
 	    for ( p = m_aMenuItemHandlerVector.begin(); p != m_aMenuItemHandlerVector.end(); p++ )
 	    {
-            // Clear dispatch reference as we will requery it later o
+            // Clear dispatch reference as we will requery it later on
             MenuItemHandler* pItemHandler = *p;
 		    pItemHandler->xMenuItemDispatch.clear();
         }
@@ -651,7 +650,7 @@ void MenuBarManager::RemoveListener()
 
     // Check service manager reference. Remove listener can be called due
     // to a disposing call from the frame and therefore we already removed
-    // our listeners and release the service manager reference!
+    // our listeners and released the service manager reference!
     Reference< XMultiServiceFactory > xServiceManager = getServiceFactory();
     if ( xServiceManager.is() )
     {
@@ -988,7 +987,7 @@ IMPL_LINK( MenuBarManager, Activate, Menu *, pMenu )
                                 // Force update of popup menu
                                 pMenuItemHandler->xPopupMenuController->updatePopupMenu();
                                 bPopupMenu = sal_True;
-								if (PopupMenu*  pThisPopup = pMenu->GetPopupMenu( pMenuItemHandler->nItemId ))
+								if (PopupMenu* pThisPopup = pMenu->GetPopupMenu( pMenuItemHandler->nItemId ))
                                     pMenu->EnableItem( pMenuItemHandler->nItemId, pThisPopup->GetItemCount() ? true : false );
                             }
 
@@ -1220,7 +1219,7 @@ sal_Bool MenuBarManager::CreatePopupMenuController( MenuItemHandler* pMenuItemHa
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "framework", "Ocke.Janssen@sun.com", "MenuBarManager::CreatePopupMenuController" );
     rtl::OUString aItemCommand( pMenuItemHandler->aMenuItemURL );
 
-    // Try instanciate a popup menu controller. It is stored in the menu item handler.
+    // Try instantiate a popup menu controller. It is stored in the menu item handler.
     if ( !m_xPopupMenuControllerFactory.is() )
         return sal_False;
 
@@ -1328,7 +1327,7 @@ void MenuBarManager::FillMenuManager( Menu* pMenu, const Reference< XFrame >& rF
 		Reference< XStatusListener > xStatusListener;
 		PopupMenu* pPopup = pMenu->GetPopupMenu( nItemId );
         bool bItemShowMenuImages = m_bShowMenuImages;
-        MenuItemBits nBits =  pMenu->GetItemBits( nItemId );
+        MenuItemBits nBits = pMenu->GetItemBits( nItemId );
         // overwrite the show icons on menu option?
         if ( nBits )
             bItemShowMenuImages = ( ( nBits & MIB_ICON ) == MIB_ICON );
@@ -1805,13 +1804,13 @@ void MenuBarManager::FillMenu(
                            nBits |= MIB_RADIOCHECK;
                         pMenu->SetItemBits( nId, nBits );
                     }
-		    
+
                     if ( !bShow )
 		                pMenu->HideItem( nId );
-                    
+
                     if ( !bEnabled)
                         pMenu->EnableItem( nId, sal_False );
-                    
+
                     if ( xIndexContainer.is() )
                     {
                         PopupMenu* pNewPopupMenu = new PopupMenu;
@@ -1994,7 +1993,7 @@ void MenuBarManager::GetPopupController( PopupControllerCache& rPopupController 
             if (( nSchemePart > 0 ) &&
                 ( aMenuURL.getLength() > ( nSchemePart+1 )))
             {
-                nQueryPart  = aMenuURL.indexOf( '?', nSchemePart );
+                nQueryPart = aMenuURL.indexOf( '?', nSchemePart );
                 if ( nQueryPart > 0 )
                     aMainURL += aMenuURL.copy( nSchemePart, nQueryPart-nSchemePart );
                 else if ( nQueryPart == -1 )
@@ -2088,7 +2087,7 @@ void MenuBarManager::Init(const Reference< XFrame >& rFrame,AddonMenu* pAddonMen
 
 		    Reference< XStatusListener > xSubMenuManager( static_cast< OWeakObject *>( pSubMenuManager ), UNO_QUERY );
 
-		    // store menu item command as we later have to know which menu is active (see Acivate handler)
+		    // store menu item command as we later have to know which menu is active (see Activate handler)
 		    pSubMenuManager->m_aMenuItemCommand = aItemCommand;
 
 		    MenuItemHandler* pMenuItemHandler = new MenuItemHandler(

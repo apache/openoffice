@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -217,7 +217,7 @@ sal_Int32 ReadThroughComponent(
 	DBG_ASSERT(rFactory.is(), "factory missing");
 	DBG_ASSERT(NULL != pFilterName,"I need a service name for the component!");
 
-    RTL_LOGFILE_CONTEXT( aLog, "ReadThroughComponent" );
+	RTL_LOGFILE_CONTEXT( aLog, "ReadThroughComponent" );
 
 	// prepare ParserInputSrouce
 	xml::sax::InputSource aParserInput;
@@ -232,7 +232,7 @@ sal_Int32 ReadThroughComponent(
 	DBG_ASSERT( xParser.is(), "Can't create parser" );
 	if( !xParser.is() )
 		return SD_XML_READERROR;
-    RTL_LOGFILE_CONTEXT_TRACE( aLog, "parser created" );
+	RTL_LOGFILE_CONTEXT_TRACE( aLog, "parser created" );
 
 	// get filter
 	Reference< xml::sax::XDocumentHandler > xFilter(
@@ -242,7 +242,7 @@ sal_Int32 ReadThroughComponent(
 	DBG_ASSERT( xFilter.is(), "Can't instantiate filter component." );
 	if( !xFilter.is() )
 		return SD_XML_READERROR;
-    RTL_LOGFILE_CONTEXT_TRACE1( aLog, "%s created", pFilterName );
+	RTL_LOGFILE_CONTEXT_TRACE1( aLog, "%s created", pFilterName );
 
 	// connect parser and filter
 	xParser->setDocumentHandler( xFilter );
@@ -251,7 +251,7 @@ sal_Int32 ReadThroughComponent(
 	Reference < XImporter > xImporter( xFilter, UNO_QUERY );
 	xImporter->setTargetDocument( xModelComponent );
 	// finally, parser the stream
-    RTL_LOGFILE_CONTEXT_TRACE( aLog, "parsing stream" );
+	RTL_LOGFILE_CONTEXT_TRACE( aLog, "parsing stream" );
 	try
 	{
 		xParser->parseStream( aParserInput );
@@ -280,7 +280,7 @@ sal_Int32 ReadThroughComponent(
 			return ERRCODE_SFX_WRONGPASSWORD;
 
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "SAX parse exception catched while importing:\n" );
+		ByteString aError( "SAX parse exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -314,7 +314,7 @@ sal_Int32 ReadThroughComponent(
 			return ERRCODE_SFX_WRONGPASSWORD;
 
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "SAX exception catched while importing:\n" );
+		ByteString aError( "SAX exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -322,9 +322,9 @@ sal_Int32 ReadThroughComponent(
 	}
 	catch( packages::zip::ZipIOException& r )
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "Zip exception catched while importing:\n" );
+		ByteString aError( "Zip exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -332,9 +332,9 @@ sal_Int32 ReadThroughComponent(
 	}
 	catch( io::IOException& r )
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "IO exception catched while importing:\n" );
+		ByteString aError( "IO exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -342,9 +342,9 @@ sal_Int32 ReadThroughComponent(
 	}
 	catch( uno::Exception& r )
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "uno exception catched while importing:\n" );
+		ByteString aError( "uno exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -356,7 +356,7 @@ sal_Int32 ReadThroughComponent(
 }
 
 sal_Int32 ReadThroughComponent(
-    const uno::Reference < embed::XStorage >& xStorage,
+	const uno::Reference < embed::XStorage >& xStorage,
 	Reference<XComponent> xModelComponent,
 	const sal_Char* pStreamName,
 	const sal_Char* pCompatibilityStreamName,
@@ -366,21 +366,21 @@ sal_Int32 ReadThroughComponent(
 	const OUString& rName,
 	sal_Bool bMustBeSuccessfull )
 {
-    DBG_ASSERT(xStorage.is(), "Need storage!");
+	DBG_ASSERT(xStorage.is(), "Need storage!");
 	DBG_ASSERT(NULL != pStreamName, "Please, please, give me a name!");
 
 	// open stream (and set parser input)
 	OUString sStreamName = OUString::createFromAscii(pStreamName);
-    sal_Bool bContainsStream = sal_False;
-    try
-    {
-        bContainsStream = xStorage->isStreamElement(sStreamName);
-    }
-    catch( container::NoSuchElementException& )
-    {
-    }
+	sal_Bool bContainsStream = sal_False;
+	try
+	{
+		bContainsStream = xStorage->isStreamElement(sStreamName);
+	}
+	catch( container::NoSuchElementException& )
+	{
+	}
 
-    if (!bContainsStream )
+	if (!bContainsStream )
 	{
 		// stream name not found! Then try the compatibility name.
 		// if no stream can be opened, return immediately with OK signal
@@ -414,8 +414,8 @@ sal_Int32 ReadThroughComponent(
 		xInfoSet->setPropertyValue( sPropName, makeAny( sStreamName ) );
 	}
 
-    try
-    {
+	try
+	{
 		// get input stream
     	Reference <io::XStream> xStream =
             	xStorage->openStreamElement( sStreamName, embed::ElementModes::READ );
@@ -445,17 +445,17 @@ sal_Int32 ReadThroughComponent(
 	{
 		return ERRCODE_IO_BROKENPACKAGE;
 	}
-    catch ( uno::Exception& )
-    {}
+	catch ( uno::Exception& )
+	{}
 
-    return SD_XML_READERROR;
+	return SD_XML_READERROR;
 }
 
 // -----------------------------------------------------------------------------
 
 sal_Bool SdXMLFilter::Import( ErrCode& nError )
 {
-    RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "sd", "cl93746", "SdXMLFilter::Import" );
+	RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "sd", "cl93746", "SdXMLFilter::Import" );
 #ifdef TIMELOG
 	ByteString aFile( mrMedium.GetName(), RTL_TEXTENCODING_ASCII_US );
 	RTL_LOGFILE_CONTEXT_TRACE1( aLog, "importing %s", aFile.GetBuffer() );
@@ -700,7 +700,7 @@ sal_Bool SdXMLFilter::Import( ErrCode& nError )
 		SvXMLGraphicHelper::Destroy( pGraphicHelper );
 	xGraphicResolver = 0;
 	if( pObjectHelper )
-	    SvXMLEmbeddedObjectHelper::Destroy( pObjectHelper );
+		SvXMLEmbeddedObjectHelper::Destroy( pObjectHelper );
 	xObjectResolver = 0;
 
 	if( mxStatusIndicator.is() )
@@ -718,15 +718,15 @@ sal_Bool SdXMLFilter::Import( ErrCode& nError )
 	// case ERRCODE_SFX_WRONGPASSWORD: break;
 	case SD_XML_READERROR: break;
 	case ERRCODE_IO_BROKENPACKAGE:
-        if( xStorage.is() )
+		if( xStorage.is() )
 		{
-            nError = ERRCODE_IO_BROKENPACKAGE;
+			nError = ERRCODE_IO_BROKENPACKAGE;
 			break;
 		}
 		// fall through intended
 	default:
 		{
-            // TODO/LATER: this is completely wrong! Filter code should never call ErrorHandler directly!
+			// TODO/LATER: this is completely wrong! Filter code should never call ErrorHandler directly!
 			ErrorHandler::HandleError( nRet );
 			if( IsWarning( nRet ) )
 				nRet = 0;
@@ -842,7 +842,7 @@ sal_Bool SdXMLFilter::Import( ErrCode& nError )
 sal_Bool SdXMLFilter::Export()
 {
 #ifdef TIMELOG
-    RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "sd", "cl93746", "SdXMLFilter::Export" );
+	RTL_LOGFILE_CONTEXT_AUTHOR ( aLog, "sd", "cl93746", "SdXMLFilter::Export" );
 	ByteString aFile( mrMedium.GetName(), RTL_TEXTENCODING_ASCII_US );
 	RTL_LOGFILE_CONTEXT_TRACE1( aLog, "exporting %s", aFile.GetBuffer() );
 #endif
@@ -865,7 +865,7 @@ sal_Bool SdXMLFilter::Export()
 
 		uno::Reference< lang::XServiceInfo > xServiceInfo( mxModel, uno::UNO_QUERY );
 
-        if( !xServiceInfo.is() || !xServiceInfo->supportsService( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.drawing.GenericDrawingDocument" ) ) ) )
+		if( !xServiceInfo.is() || !xServiceInfo->supportsService( OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.drawing.GenericDrawingDocument" ) ) ) )
 		{
 			DBG_ERROR( "Model is no DrawingDocument in XMLExport" );
 			return sal_False;

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -450,9 +450,9 @@ uno::Sequence< uno::Any > SAL_CALL SwXTextPortion::GetPropertyValues_Impl(
 
     {
         SfxItemSet *pSet = 0;
-        // get startting pount fo the look-up, either the provided one or else
+        // get starting point for the look-up, either the provided one or else
         // from the beginning of the map
-        const SfxItemPropertyMap*   pMap = m_pPropSet->getPropertyMap();
+        const SfxItemPropertyMap* pMap = m_pPropSet->getPropertyMap();
         for(sal_Int32 nProp = 0; nProp < nLength; nProp++)
         {
             const SfxItemPropertySimpleEntry* pEntry = pMap->getByName(pPropertyNames[nProp]);
@@ -598,13 +598,13 @@ uno::Sequence< beans::SetPropertyTolerantFailed > SAL_CALL SwXTextPortion::setPr
 
             const SfxItemPropertySimpleEntry* pEntry = pPropMap->getByName( pProp[i] );
             if (!pEntry)
-                pFailed[ nFailed++ ].Result  = beans::TolerantPropertySetResultType::UNKNOWN_PROPERTY;
+                pFailed[ nFailed++ ].Result = beans::TolerantPropertySetResultType::UNKNOWN_PROPERTY;
             else
             {
                 // set property value
                 // (compare to SwXTextPortion::setPropertyValues)
                 if (pEntry->nFlags & beans::PropertyAttribute::READONLY)
-                    pFailed[ nFailed++ ].Result  = beans::TolerantPropertySetResultType::PROPERTY_VETO;
+                    pFailed[ nFailed++ ].Result = beans::TolerantPropertySetResultType::PROPERTY_VETO;
                 else
                 {
                     SwUnoCursorHelper::SetPropertyValue(
@@ -615,7 +615,7 @@ uno::Sequence< beans::SetPropertyTolerantFailed > SAL_CALL SwXTextPortion::setPr
         catch (beans::UnknownPropertyException &)
         {
             // should not occur because property was searched for before
-            DBG_ERROR( "unexpected exception catched" );
+            DBG_ERROR( "unexpected exception caught" );
             pFailed[ nFailed++ ].Result = beans::TolerantPropertySetResultType::UNKNOWN_PROPERTY;
         }
         catch (lang::IllegalArgumentException &)
@@ -690,7 +690,7 @@ uno::Sequence< beans::GetDirectPropertyTolerantResult > SAL_CALL SwXTextPortion:
 			rPropertyNames,
 			SW_PROPERTY_STATE_CALLER_SWX_TEXT_PORTION_TOLERANT );
 	const beans::PropertyState* pPropertyStates = aPropertyStates.getConstArray();
-	
+
     std::vector< beans::GetDirectPropertyTolerantResult > aResultVector;
     for (sal_Int32 i = 0;  i < nProps;  ++i)
     {
@@ -699,7 +699,7 @@ uno::Sequence< beans::GetDirectPropertyTolerantResult > SAL_CALL SwXTextPortion:
         {
             aResult.Name = pProp[i];
             if(pPropertyStates[i] == beans::PropertyState_MAKE_FIXED_SIZE)     // property unknown?
-            {    
+            {
                 if( bDirectValuesOnly )
                     continue;
                 else
@@ -708,16 +708,16 @@ uno::Sequence< beans::GetDirectPropertyTolerantResult > SAL_CALL SwXTextPortion:
             else
             {
       			const SfxItemPropertySimpleEntry* pEntry = pPropMap->getByName( pProp[i] );
-                aResult.State  = pPropertyStates[i];
+                aResult.State = pPropertyStates[i];
 
                 aResult.Result = beans::TolerantPropertySetResultType::UNKNOWN_FAILURE;
-                //#i104499# ruby portion attributes need special handling: 
+                //#i104499# ruby portion attributes need special handling:
                 if( pEntry->nWID == RES_TXTATR_CJK_RUBY &&
                     m_ePortionType == PORTION_RUBY_START )
                 {
                         aResult.State = beans::PropertyState_DIRECT_VALUE;
                 }
-                if (!bDirectValuesOnly  ||  beans::PropertyState_DIRECT_VALUE == aResult.State)
+                if (!bDirectValuesOnly || beans::PropertyState_DIRECT_VALUE == aResult.State)
                 {
 					// get property value
 					// (compare to SwXTextPortion::getPropertyValue(s))
@@ -730,7 +730,7 @@ uno::Sequence< beans::GetDirectPropertyTolerantResult > SAL_CALL SwXTextPortion:
         catch (beans::UnknownPropertyException &)
         {
             // should not occur because property was searched for before
-            DBG_ERROR( "unexpected exception catched" );
+            DBG_ERROR( "unexpected exception caught" );
             aResult.Result = beans::TolerantPropertySetResultType::UNKNOWN_PROPERTY;
         }
         catch (lang::IllegalArgumentException &)

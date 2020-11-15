@@ -45,7 +45,7 @@ import java.util.Vector;
  * internal holded dispatch object automatically.
  *
  * Another reason for such extra class for listening:
- * Most listener callbacks are asynchronoues [oneay] requests.
+ * Most listener callbacks are asynchronous [oneway] requests.
  * And it's not allowed to call back synchronously there.
  * So we must start threads for updating something internally.
  *

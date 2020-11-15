@@ -2356,7 +2356,7 @@ void FilterCache::impl_readOldFormat()
         css::uno::Reference< css::uno::XInterface > xInt = impl_openConfig(E_PROVIDER_OLD);
         xCfg = css::uno::Reference< css::container::XNameAccess >(xInt, css::uno::UNO_QUERY_THROW);
     }
-    /* corrupt filter addon ? because it's external (optional) code .. we can ignore it. Addon wont work then ...
+    /* corrupt filter addon ? because it's external (optional) code .. we can ignore it. Addon won't work then ...
        but that seems to be acceptable.
        see #139088# for further informations
     */

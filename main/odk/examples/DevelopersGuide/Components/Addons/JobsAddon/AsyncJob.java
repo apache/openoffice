@@ -297,7 +297,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
     private void showInfoNonModal( java.lang.String sTitle   ,
                                    java.lang.String sMessage )
     {
-        // Couldnt be implemented really using the toolkit ...
+        // Couldn't be implemented really using the toolkit ...
         // Because we need a parent anytime.
         // And showing e.g. a java dialog can make some trouble
         // inside office ... but we have no chance here.

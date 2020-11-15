@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,8 +77,8 @@ static Reference< XNameAccess > getNodeAccess( const Reference< XMultiServiceFac
 	try
 	{
 		Sequence< Any > aArgs( 1 );
-		PropertyValue   aPropValue;
-		aPropValue.Name  = OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ));
+		PropertyValue aPropValue;
+		aPropValue.Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "nodepath" ));
 		aPropValue.Value <<= rNodePath;
 		aArgs[0] <<= aPropValue;
 
@@ -90,7 +90,7 @@ static Reference< XNameAccess > getNodeAccess( const Reference< XMultiServiceFac
 	catch( Exception& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::getNodeAccess(), Exception catched!" );
+		DBG_ERROR( "sd::getNodeAccess(), Exception caught!" );
 	}
 
 	return xConfigAccess;
@@ -128,12 +128,12 @@ void implImportLabels( const Reference< XMultiServiceFactory >& xConfigProvider,
 	catch( lang::WrappedTargetException& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::implImportLabels(), WrappedTargetException catched!" );
+		DBG_ERROR( "sd::implImportLabels(), WrappedTargetException caught!" );
 	}
 	catch( Exception& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::implImportLabels(), Exception catched!" );
+		DBG_ERROR( "sd::implImportLabels(), Exception caught!" );
 	}
 }
 
@@ -205,7 +205,7 @@ Reference< XAnimationNode > CustomAnimationPreset::create( const rtl::OUString& 
 	catch( Exception& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::CustomAnimationPresets::create(), exception catched!" );
+		DBG_ERROR( "sd::CustomAnimationPresets::create(), exception caught!" );
 	}
 
 	Reference< XAnimationNode > xNode;
@@ -290,7 +290,7 @@ Reference< XAnimationNode > implImportEffects( const Reference< XMultiServiceFac
 		// connect parser and filter
 		xParser->setDocumentHandler( xFilter );
 
-		// finally, parser the stream
+		// finally, parse the stream
 		xParser->parseStream( aParserInput );
 
 		Reference< XAnimationNodeSupplier > xAnimationNodeSupplier( xFilter, UNO_QUERY );
@@ -299,23 +299,23 @@ Reference< XAnimationNode > implImportEffects( const Reference< XMultiServiceFac
 	}
 	catch( xml::sax::SAXParseException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::implImportEffects(), SAXParseException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::implImportEffects(), SAXParseException caught!" );
 	}
 	catch( xml::sax::SAXException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::implImportEffects(), SAXException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::implImportEffects(), SAXException caught!" );
 	}
 	catch( io::IOException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::implImportEffects(), IOException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::implImportEffects(), IOException caught!" );
 	}
 	catch( Exception& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::importEffects(), Exception catched!" );
+		(void)r;
+		DBG_ERROR( "sd::importEffects(), Exception caught!" );
 	}
 
 	return xRootNode;
@@ -333,15 +333,15 @@ void CustomAnimationPresets::importEffects()
 		if( !xServiceFactory.is() )
 			return;
 
-        uno::Reference< beans::XPropertySet > xProps( xServiceFactory, UNO_QUERY );
-        uno::Reference< uno::XComponentContext > xContext;
-        xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>= xContext;
+		uno::Reference< beans::XPropertySet > xProps( xServiceFactory, UNO_QUERY );
+		uno::Reference< uno::XComponentContext > xContext;
+		xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>= xContext;
 
-        uno::Reference< util::XMacroExpander > xMacroExpander;
-        if( xContext.is() )
-            xMacroExpander.set( xContext->getValueByName(
-                                    rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "/singletons/com.sun.star.util.theMacroExpander"))),
-                                UNO_QUERY );
+		uno::Reference< util::XMacroExpander > xMacroExpander;
+		if( xContext.is() )
+			xMacroExpander.set( xContext->getValueByName(
+									rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "/singletons/com.sun.star.util.theMacroExpander"))),
+								UNO_QUERY );
 
 		Reference< XMultiServiceFactory > xConfigProvider(
 			xServiceFactory->createInstance(
@@ -370,7 +370,7 @@ void CustomAnimationPresets::importEffects()
             {
                 // cut protocol
                 rtl::OUString aMacro( aURL.copy( sizeof ( EXPAND_PROTOCOL ) -1 ) );
-                // decode uric class chars
+                // decode uri class chars
                 aMacro = rtl::Uri::decode( aMacro, rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
                 // expand macro string
                 aURL = xMacroExpander->expandMacros( aMacro );
@@ -401,30 +401,30 @@ void CustomAnimationPresets::importEffects()
                         maEffectDiscriptorMap[aPresetId] = pDescriptor;
                     }
 
-                    aIter++;
-                }
-            }
-        }
-    }
+					aIter++;
+				}
+			}
+		}
+	}
 	catch( xml::sax::SAXParseException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), SAXParseException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), SAXParseException caught!" );
 	}
 	catch( xml::sax::SAXException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), SAXException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), SAXException caught!" );
 	}
 	catch( io::IOException& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), IOException catched!" );
+		(void)r;
+		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), IOException caught!" );
 	}
 	catch( Exception& r )
 	{
-        (void)r;
-		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), Exception catched!" );
+		(void)r;
+		DBG_ERROR( "sd::CustomAnimationPresets::importEffects(), Exception caught!" );
 	}
 }
 
@@ -469,12 +469,12 @@ void CustomAnimationPresets::importResources()
 	catch( lang::WrappedTargetException& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::CustomAnimationPresets::importResources(), WrappedTargetException catched!" );
+		DBG_ERROR( "sd::CustomAnimationPresets::importResources(), WrappedTargetException caught!" );
 	}
 	catch( Exception& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::CustomAnimationPresets::importResources(), Exception catched!" );
+		DBG_ERROR( "sd::CustomAnimationPresets::importResources(), Exception caught!" );
 	}
 }
 
@@ -538,7 +538,7 @@ void CustomAnimationPresets::importPresets( const Reference< XMultiServiceFactor
 	catch( Exception& e )
 	{
 		(void)e;
-		DBG_ERROR( "sd::CustomAnimationPresets::importPresets(), Exception catched!" );
+		DBG_ERROR( "sd::CustomAnimationPresets::importPresets(), Exception caught!" );
 	}
 
 #ifdef DEBUG
@@ -662,7 +662,6 @@ Reference< XAnimationNode > CustomAnimationPresets::getRandomPreset( sal_Int16 n
 
 	return xNode;
 }
-
 
 }
 
