@@ -6361,9 +6361,9 @@ AC_SUBST(LIBREPOSITORY_JAR)
 AC_SUBST(LIBFONTS_JAR)
 AC_SUBST(LIBSERIALIZER_JAR)
 
-# this has to be here because both the wiki publisher and the SRB use
-# commons-logging, while the non-optional PostgreSQL connector uses
-# commons-lang.
+# this has to be here because both the Wiki Publisher and the Report
+# Builder use commons-logging, while the non-optional PostgreSQL
+# connector uses commons-lang.
 AC_MSG_CHECKING([which Apache commons-* libs to use])
 if test "$with_system_apache_commons" = "yes"; then
   SYSTEM_APACHE_COMMONS=YES
