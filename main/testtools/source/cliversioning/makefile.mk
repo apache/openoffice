@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,22 +7,21 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
-
-# Builds the SpreadSheet examples of the Developers Guide.
+# Builds the Spreadsheet examples of the Developers Guide.
 
 PRJ = ..$/..
 PRJNAME = cli_ure
@@ -41,7 +40,7 @@ CSCFLAGS += -optimize+
 .ENDIF
 
 
-EXETARGET2=$(BIN)$/runtests.exe 
+EXETARGET2=$(BIN)$/runtests.exe
 
 .IF "$(name)" != ""
 TESTLIB=$(BIN)$/$(name)
@@ -68,23 +67,23 @@ ALLTAR: \
 	$(TESTLIB) \
 	$(MISC)$/copyassemblies.done \
 	COPYVERSIONLIBS \
-    RUNINSTRUCTIONS
-    
+	RUNINSTRUCTIONS
+
 .ENDIF
 
 
-COPYVERSIONLIBS: 
+COPYVERSIONLIBS:
 		-$(GNUCOPY) $(VERSIONLIBS)$/* $(BIN)
 
 
-$(MISC)$/copyassemblies.done .ERRREMOVE: 
-    $(GNUCOPY) $(CLI_CPPUHELPER) $(BIN)$/$(CLI_CPPUHELPER:f)
-    $(GNUCOPY) $(CLI_BASETYPES) $(BIN)$/$(CLI_BASETYPES:f)
-    $(GNUCOPY) $(CLI_URETYPES) $(BIN)$/$(CLI_URETYPES:f)
-    $(GNUCOPY) $(CLI_URE) $(BIN)$/$(CLI_URE:f)
-    $(GNUCOPY) $(CLI_OOOTYPES) $(BIN)$/$(CLI_OOOTYPES:f)
-    $(TOUCH) $@
- 
+$(MISC)$/copyassemblies.done .ERRREMOVE:
+	$(GNUCOPY) $(CLI_CPPUHELPER) $(BIN)$/$(CLI_CPPUHELPER:f)
+	$(GNUCOPY) $(CLI_BASETYPES) $(BIN)$/$(CLI_BASETYPES:f)
+	$(GNUCOPY) $(CLI_URETYPES) $(BIN)$/$(CLI_URETYPES:f)
+	$(GNUCOPY) $(CLI_URE) $(BIN)$/$(CLI_URE:f)
+	$(GNUCOPY) $(CLI_OOOTYPES) $(BIN)$/$(CLI_OOOTYPES:f)
+	$(TOUCH) $@
+
 CSFILES2 = runtests.cs
 
 .IF "$(CCNUMVER)" >= "001399999999"
@@ -109,29 +108,29 @@ $(TESTLIB): $(CSFILESLIB) $(SOLARBINDIR)$/cliureversion.mk
 
 
 
-RUNINSTRUCTIONS : 
-    @echo .
-    @echo ###########################   N O T E  ######################################
-    @echo . 
-    @echo To run the test go to qa\cliversioning, run dmake and follow instructions.
-    @echo .
-	@echo Or install an office with full system integration and run $(BIN)$/runtests.exe 
-	@echo in a console withouth build environment.
+RUNINSTRUCTIONS :
+	@echo .
+	@echo ###########################   N O T E  ######################################
+	@echo .
+	@echo To run the test go to qa\cliversioning, run dmake and follow instructions.
+	@echo .
+	@echo Or install an office with full system integration and run $(BIN)$/runtests.exe
+	@echo in a console without build environment.
 	@echo .
 	@echo Or install an office with setup /a. Expand PATH with the bin folder of the URE.
 	@echo Set UNO_PATH=system_path_to_program_folder
 	@echo This must be the program folder of the brand layer.
 	@echo For example, c:\staroffice\Sun\staroffice 9\program
 	@echo Run runtests.exe.
-    @echo .
-    @echo To build a test library with run.
-    @echo
-    @echo dmake name=version_10_10_10.dll
-    @echo
-    @echo  The name must always start with 'version_'. 	
-    @echo ###########################   N O T E  ######################################
-    @echo .
-    @echo .	
+	@echo .
+	@echo To build a test library with run.
+	@echo
+	@echo dmake name=version_10_10_10.dll
+	@echo
+	@echo  The name must always start with 'version_'.
+	@echo ###########################   N O T E  ######################################
+	@echo .
+	@echo .
 
 
 
