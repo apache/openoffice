@@ -34,10 +34,10 @@ ModalDialog RID_DLG_NEWER_VERSION_WARNING
 	SvLook = TRUE ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
-	Text [ en-US ] = "%PRODUCTNAME Update Available" ;
+	Text [ en-US ] = "ODF Version Conflict" ;
 	FixedImage FI_IMAGE
 	{
-		Pos = MAP_APPFONT ( COL_1, ROW_1  ) ;
+		Pos = MAP_APPFONT ( COL_1, ROW_1 ) ;
 		Size = MAP_APPFONT ( IMAGE_WIDTH, IMAGE_HEIGHT ) ;
 		Hide = FALSE ;
 		Fixed = Image
@@ -50,7 +50,7 @@ ModalDialog RID_DLG_NEWER_VERSION_WARNING
 		Pos = MAP_APPFONT ( COL_2, ROW_1 ) ;
 		Size = MAP_APPFONT ( INFO_WIDTH, INFO_LINES * RSC_CD_FIXEDTEXT_HEIGHT ) ;
 		Wordbreak = TRUE ;
-		Text [ en-US ] = "This document was created by a newer version of %PRODUCTNAME. It may contain features not supported by your current version.\n\nClick 'Update Now...' to run online update and get the latest version of %PRODUCTNAME." ;
+		Text [ en-US ] = "This document uses an unsupported version of the Open Document Format. Some features may not be displayed correctly.\n\nClick 'Update Now' to run online update and see if there is a new version of %PRODUCTNAME available." ;
 	};
 	FixedLine FL_BUTTON
 	{
