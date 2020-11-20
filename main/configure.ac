@@ -118,20 +118,18 @@ AC_ARG_WITH(afms,
                           are known to be available.
 ],,)
 AC_ARG_ENABLE(epm,
-[  --disable-epm           AOO includes self-packaging code, that requires
-                          epm, however epm is useless for large scale
-                          package building.
+[  --disable-epm           AOO includes self-packaging code, that requires EPM.
 ],,enable_epm="yes")
 AC_ARG_WITH(epm,
-[  --with-epm		  Decides which epm to use. Default is to use
-			  the one from the system if one is built. When
+[  --with-epm		  Decides which EPM to use. Default is to use
+			  the one installed on the system if one is there. When
 			  either this is not there or you say =internal
-			  epm will be built.
+			  EPM will be built.
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            https://sourceforge.net/projects/oooextras.mirror/files/epm-3.7.tar.gz
-                          Version 3.7 or later is required. Note that epm is under GPL license.
+                            https://github.com/jimjag/epm/archive/v5.0.0.tar.gz
+                          Version 5.0.0 or later is required.
 ],[  EPM_URL="$withval"
 ])
 AC_ARG_WITH(package-format,
@@ -3419,44 +3417,24 @@ if test "$enable_epm" = "yes"; then
          BUILD_TYPE="$BUILD_TYPE EPM"
       else
          if test "$EPM" = "no" ; then
-	    AC_MSG_ERROR([no. Install ESP Package Manager (https://www.msweet.org/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
-	 else
-	    # Gentoo has some epm which is something different...
-            AC_MSG_CHECKING([whether the found epm is the right epm])
-            if $EPM | $GREP "ESP Package Manager" >/dev/null 2>/dev/null; then
+	         AC_MSG_ERROR([no. Install ESP Package Manager (EPM) (https://jimjag.github.io/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-5.0.0 (or later) source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
+	      else
+	         # Gentoo has some epm which is something different...
+            AC_MSG_CHECKING([whether the found EPM is the right EPM])
+            if $EPM --version | $GREP "ESP Package Manager" >/dev/null 2>/dev/null; then
                AC_MSG_RESULT([yes])
             else
-	       AC_MSG_ERROR([no. Install ESP Package Manager (https://www.msweet.org/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
+	            AC_MSG_ERROR([no. Install ESP Package Manager (https://jimjag.github.io/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-5.0.0 (or later) source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
             fi
-            AC_MSG_CHECKING([epm version])
-            EPM_VERSION=`$EPM | $GREP 'ESP Package Manager' | cut -d' ' -f4 | $SED -e s/v//`
-	    if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "3" || \
-	       	    test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "3" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "7"; then
-               AC_MSG_RESULT([OK, >= 3.7])
+            AC_MSG_CHECKING([EPM version])
+            EPM_VERSION=`$EPM --version | $GREP 'ESP Package Manager' | cut -d' ' -f5 | $SED -e s/v//`
+	         if test "`echo $EPM_VERSION | cut -d'.' -f1`" -ge "5"; then
+               AC_MSG_RESULT([OK, >= 5.0])
                BUILD_EPM=NO
-	       if test "$_os" = "Darwin"; then
-	          _osxpkgbuild='no'
-	          AC_MSG_CHECKING([checking if OS X pkgbuild is supported])
-	          if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "4" || \
-	       	     test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "4" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "3"; then
-                   AC_MSG_RESULT([OK, >= 4.3])
-                   _osxpkgbuild='yes'
-              else
-                  AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
-        	      _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
-        	      if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	         AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-        	      elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	         AC_MSG_RESULT([$_pm, ok])
-        	      else # we never should get here, but go safe
-		             AC_MSG_ERROR([$_pm; PackageMaker expected in unknown path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-		          fi
-		      fi
-	       fi
-	    else
-               AC_MSG_ERROR([too old. epm >= 3.7 is required.])
-	    fi
-      	 fi
+	         else
+               AC_MSG_ERROR([too old. EPM >= 5.0.0 is required.])
+	         fi
+      	fi
       fi
    fi
 
@@ -3576,30 +3554,6 @@ msi - Windows .msi
       else
          AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
        fi
-   fi
-   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
-      echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
-      	if test "$EPM" != "no" && test "$EPM" != "internal"; then
-               AC_MSG_CHECKING([whether epm is patched for AOOs needs])
-               if $GREP "Patched for .*OpenOffice" $EPM >/dev/null 2>/dev/null; then
-                  AC_MSG_RESULT([yes])
-               else
-                  AC_MSG_RESULT([no])
-                  if echo "$PKGFORMAT" | $GREP -q rpm; then
-                      _pt="rpm"
-                      AC_MSG_WARN([the rpms will need to be installed with --nodeps])
-                      echo "the rpms will need to be installed with --nodeps" >> warn
-                  else
-                      _pt="pkg"
-                  fi
-                  AC_MSG_WARN([the ${_pt}s will not be relocateable])
-                  echo "the ${_pt}s will not be relocatable" >> warn
-                  AC_MSG_WARN([if you want to make sure installation without --nodeps and
-                  relocation will work, you need to patch your epm with the
-                  patch in epm/epm-3.7.patch or build with
-                  --with-epm=internal which will build a suitable epm])
-               fi
-        fi
    fi
    if echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       AC_PATH_PROG(PKGMK, pkgmk, no)
