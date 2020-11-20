@@ -154,7 +154,7 @@ else
 $FLIPCMD        = "";               # Flip '/' to '\' wrapper (only for winnt)
 $GLIBC          = "";               # Whether the platform uses glibc
 $PROEXT         = "@PROEXT@";
-$EPM_FLAGS	= "";
+$EPM_FLAGS	= "--aoo-mode";
 
 # Required for OS/2 macro expansion
 my @unixroot='@unixroot';
