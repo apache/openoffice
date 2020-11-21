@@ -359,3 +359,17 @@ diff -ur misc/boost_1_55_0/boost/config/compiler/gcc.hpp misc/build/boost_1_55_0
  #    define BOOST_HAS_VARIADIC_TMPL
  #  else
  #    define BOOST_NO_CXX11_VARIADIC_TEMPLATES
+--- misc/boost_1_55_0/boost/tr1/detail/config_all.hpp	2020-11-21 14:07:48.895886290 +0100
++++ misc/build/boost_1_55_0/boost/tr1/detail/config_all.hpp	2020-11-21 14:10:16.895419939 +0100
+@@ -95,6 +95,11 @@
+          // compiler version:
+ #        define BOOST_TR1_STD_HEADER(name) <../4.0.0/name>
+          /*
++          *  After version 6 the include path consists of the major number only
++          */
++#      elif (__GNUC__ > 6)
++#        define BOOST_TR1_STD_HEADER(name) <../__GNUC__/name>
++         /*
+           *  Before version 3.4.0 the 0 patch level was not part of the include path:
+           */
+ #      elif defined (__GNUC_PATCHLEVEL__) && ((__GNUC_PATCHLEVEL__ > 0) || \
