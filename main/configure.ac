@@ -128,7 +128,7 @@ AC_ARG_WITH(epm,
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            https://github.com/jimjag/epm/archive/v5.0.0.tar.gz
+                            https://github.com/jimjag/epm/archive/v5.0.0/epm-5.0.0.tar.gz
                           Version 5.0.0 or later is required.
 ],[  EPM_URL="$withval"
 ])
