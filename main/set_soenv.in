@@ -2219,8 +2219,8 @@ print OUT "#!/bin/sh\n";
 if ( $MINGW eq "yes" )
 {  print OUT 'PATH="/usr/bin:$PATH" : export PATH'."\n"; }
 close( OUT ) || print "Can't close $bootfile: $!";
-system(`cat bootstrap.1 >> bootstrap`);
-system(`chmod +x bootstrap`);
+system("cat bootstrap.1 >> bootstrap");
+system("chmod +x bootstrap");
 #
 #--------------------------------------------------------
 # Moving the bootstrap file to the build home directory.
