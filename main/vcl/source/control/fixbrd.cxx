@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,7 +36,7 @@
 
 void FixedBorder::ImplInit( Window* pParent, WinBits nStyle )
 {
-	mnType			= FIXEDBORDER_TYPE_DOUBLEOUT;
+	mnType			= FIXEDBORDER_TYPE_GROUP;
 	mbTransparent	= sal_True;
 
 	nStyle = ImplInitStyle( nStyle );
@@ -59,8 +59,8 @@ void FixedBorder::ImplInitSettings()
 {
 	Window* pParent = GetParent();
 	if ( (pParent->IsChildTransparentModeEnabled() ||
-		  !(pParent->GetStyle() & WB_CLIPCHILDREN) ) &&
-		 !IsControlBackground() && mbTransparent )
+		!(pParent->GetStyle() & WB_CLIPCHILDREN) ) &&
+		!IsControlBackground() && mbTransparent )
 	{
 		SetMouseTransparent( sal_True );
 		EnableChildTransparentMode( sal_True );
@@ -123,26 +123,26 @@ void FixedBorder::ImplDraw( OutputDevice* pDev, sal_uLong nDrawFlags,
 		 (rStyleSettings.GetOptions() & STYLE_OPTION_MONO) )
 		nBorderStyle |= FRAME_DRAW_MONO;
 
-    /*
-    // seems only to be used in tools->options around a tabpage (ie, no tabcontrol!)
-    // as tabpages that are not embedded in a tabcontrol should not be drawn natively
-    // the fixedborder must also not be drawn (reason was, that it looks too ugly, dialogs must be redesigned)
-    Window *pWin = pDev->GetOutDevType() == OUTDEV_WINDOW ? (Window*) pDev : NULL;
-    if( !(nBorderStyle & FRAME_DRAW_MONO) && pWin && pWin->IsNativeControlSupported( CTRL_FIXEDBORDER, PART_ENTIRE_CONTROL ) )
-    {
-        ImplControlValue aControlValue;
-        Point aPt;
-        Region aCtrlRegion( Rectangle( aPt, GetOutputSizePixel() ) );
-        ControlState nState = IsEnabled() ? CTRL_STATE_ENABLED : 0;
-        pWin->DrawNativeControl( CTRL_FIXEDBORDER, PART_ENTIRE_CONTROL, aCtrlRegion, nState,
-	     						aControlValue, rtl::OUString() );
-    }
-    else
-    */
-    {
-	    DecorationView	aDecoView( pDev );
-	    aDecoView.DrawFrame( aRect, nBorderStyle );
-    }
+	/*
+	// seems only to be used in tools->options around a tabpage (i.e., no tabcontrol!)
+	// as tabpages that are not embedded in a tabcontrol should not be drawn natively
+	// the fixedborder must also not be drawn (reason was, that it looks too ugly, dialogs must be redesigned)
+	Window *pWin = pDev->GetOutDevType() == OUTDEV_WINDOW ? (Window*) pDev : NULL;
+	if( !(nBorderStyle & FRAME_DRAW_MONO) && pWin && pWin->IsNativeControlSupported( CTRL_FIXEDBORDER, PART_ENTIRE_CONTROL ) )
+	{
+		ImplControlValue aControlValue;
+		Point aPt;
+		Region aCtrlRegion( Rectangle( aPt, GetOutputSizePixel() ) );
+		ControlState nState = IsEnabled() ? CTRL_STATE_ENABLED : 0;
+		pWin->DrawNativeControl( CTRL_FIXEDBORDER, PART_ENTIRE_CONTROL, aCtrlRegion, nState,
+								aControlValue, rtl::OUString() );
+	}
+	else
+	*/
+	{
+		DecorationView	aDecoView( pDev );
+		aDecoView.DrawFrame( aRect, nBorderStyle );
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -230,3 +230,4 @@ void FixedBorder::SetBorderType( sal_uInt16 nType )
 		Invalidate();
 	}
 }
+
