@@ -19,11 +19,11 @@
 #  
 ###############################################################
 
-Oracle Report Builder
+Report Builder
 =====================
 This file contains important information about the installation.
 
-This software offered by Oracle will enhance Oracle Open Office and OpenOffice.org software. The following features will be added:
+This software offered by ASF will enhance Apache Open Office software. The following features will be added:
 * In a Base database document, in the Reports window, you now have an additional choice to "Create Report in Design View".
 * An interactive window allows you to create a database report	by drag-and-drop, with visual feedback.
 * All reports created by Report Builder can also be edited in the Report Builder window. 
@@ -35,7 +35,7 @@ Notes on Installation
 		
 System Requirements
 
-* A recent version of Oracle Open Office or OpenOffice.org
+* A recent version of Apache Open Office
 * A recent version of the Java(TM) Runtime Environment
 		
 Installing
@@ -45,9 +45,8 @@ You need administrator rights to install a shared extension for all users on you
 
 Uninstalling
 	
-* Choose Tools > Extension Manager, click the Oracle Report Builder entry, then click Remove.
+* Choose Tools > Extension Manager, click the Report Builder entry, then click Remove.
 
 Using the Extension
 
-You find complete instructions on using the Oracle Report Builder in the application help that is installed with Oracle Open Office or OpenOffice.org. Press F1 to open the Help Viewer, then enter the words "Report Builder" in the	Index text box.
-
+You find complete instructions on using the Report Builder in the application help that is installed with Apache Open Office. Press F1 to open the Help Viewer, then enter the words "Report Builder" in the	Index text box.

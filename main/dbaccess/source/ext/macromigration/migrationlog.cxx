@@ -368,7 +368,7 @@ namespace dbmm
                 break;
 
             case ERR_NEW_STYLE_REPORT:
-                pAsciiErrorDescription = "#doc# could not be processed, since you don't have the Report Builder (TM) extension installed.";
+                pAsciiErrorDescription = "#doc# could not be processed, since you don't have the Report Builder extension installed.";
                 aAsciiParameterNames.push_back( "#doc#" );
                 break;
 
