@@ -847,8 +847,8 @@ sub set_patch_state
 	while (<EPMPATCH>)
 	{
 		chop;
-		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; break; }
-		if ( $_ =~ /Apache OpenOffice compatible/ ) { $installer::globals::is_special_epm = 1; break; }
+		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; last; }
+		if ( $_ =~ /Apache OpenOffice compatible/ ) { $installer::globals::is_special_epm = 1; last; }
 	}
 			
 	close (EPMPATCH);
