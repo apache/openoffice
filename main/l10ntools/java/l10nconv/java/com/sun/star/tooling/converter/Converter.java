@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 /*
@@ -48,21 +49,21 @@ import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
- *  
+ *
  * This class handles the creating of the source to read from,
  * the target to write to and the appropriate DataHandler
- * 
- * @author Christian Schmidt 2005 
+ *
+ * @author Christian Schmidt 2005
  */
 public final class Converter {
 
     /**
-     * the used charset f.e. UTF-8
+     * the used charset i.e. UTF-8
      */
     private final static String         CHARSET        = new String("UTF-8");
 
     private static final String EMPTY          = new String("");
-    
+
     /**
      * The DataHandler use to connect reader and writer
      */
@@ -72,13 +73,13 @@ public final class Converter {
      * Counting the lines written by a writer
      */
     private static int          lineCounter;
-    
+
     /**
      * The target to write to
      */
     private static DataWriter   theTargetWriter;
-    
-    
+
+
     /**
      * Overwrite existing files
      */
@@ -92,17 +93,17 @@ public final class Converter {
      */
     private String              sourceString;
     /**
-     * the Type of the Source file(SDF,GSI,XLIFF)
+     * the Type of the Source file (SDF,GSI,XLIFF)
      */
     private String              sourceType;
     /**
-     * The name of the target fille
+     * The name of the target file
      */
     private String              targetString;
     /**
-     * the Type of the Target file(SDF,GSI,XLIFF)
+     * the Type of the Target file (SDF,GSI,XLIFF)
      */
-    private String              targetType;   
+    private String              targetType;
     /**
      * The writer that handles the output
      */
@@ -112,7 +113,7 @@ public final class Converter {
      * The sourceLanguage
      */
     String                      sourceLanguage = "en-US";
-    
+
     /**
      * The targetLanguage
      */
@@ -141,7 +142,7 @@ public final class Converter {
 
     /**
      * Creates a new instance of Converter
-     *  
+     *
      * @param sourceType        the type of the sourceFile
      * @param sourceString      the name of the sourceFile
      * @param SourceLanguage    the ISO Id of the sourceLanguage
@@ -193,7 +194,7 @@ public final class Converter {
 
     /**
      * Do the converting from the source file format to the target file format
-     * 
+     *
      * @throws IOException
      */
     public final void convert() throws IOException {
@@ -210,12 +211,12 @@ public final class Converter {
         }
 
     }
-    
+
 
     /**
-     * 
+     *
      * Encapsulate the reading from an GSI file
-     * 
+     *
      * @author Christian Schmidt 2005
      *
      */
@@ -223,7 +224,7 @@ public final class Converter {
         DataReader theSourceReader;
         /**
          * Create a new Instance of GSISource
-         * 
+         *
          * @throws IOException
          * @throws Exception
          */
@@ -234,7 +235,7 @@ public final class Converter {
         }
 
         public void convertTo(Target t) {
-            
+
             try {
                 theTargetWriter = t.getWriter();
                 while (handler.fillDataFrom(theSourceReader)) {
@@ -253,19 +254,19 @@ public final class Converter {
 
     }
     /**
-     * 
+     *
      * Encapsulate to write to a GSI file
-     * 
+     *
      * @author Christian Schmidt 2005
      *
      */
     private class GSITarget implements Target {
 
         File target;
-        
+
         /**
          * Create a new Instance of GSITarget
-         * 
+         *
          * @throws FileNotFoundException
          * @throws IOException
          */
@@ -277,17 +278,17 @@ public final class Converter {
         }
 
         public DataWriter getWriter() {
-            
+
             return theTargetWriter;
         }
 
     }
     /**
-     * 
+     *
      * Encapsulate the reading from an SDF file
-     * 
+     *
      * @author Christian Schmidt 2005
-     * 
+     *
      */
     private final class SDFSource implements Source {
 
@@ -333,7 +334,7 @@ public final class Converter {
 
         /**
          * Create a new Instance of SDFTarget
-         * 
+         *
          * @throws IOException
          */
         public SDFTarget() throws IOException {
@@ -353,17 +354,17 @@ public final class Converter {
     }
 
     /**
-     * The interface for all convertable sources
-     * 
+     * The interface for all convertible sources
+     *
      * @author Christian Schmidt 2005
      *
      */
     private interface Source {
-        
+
         DataReader Source=null;
         /**
          * Convert this. to the designated target
-         * @param target the target of the converting  
+         * @param target the target of the converting
          * @throws IOException
          */
         abstract void convertTo(Target target) throws IOException;
@@ -371,7 +372,7 @@ public final class Converter {
 
     /**
      * The interface for all creatable targets
-     * 
+     *
      * @author Christian Schmidt 2005
      *
      */
@@ -384,8 +385,8 @@ public final class Converter {
         /**
          * Get the writer
          * this target uses to write the
-         * data in the correct format. 
-         * 
+         * data in the correct format.
+         *
          * @return the used DataWriter
          */
         abstract DataWriter getWriter();
@@ -402,8 +403,8 @@ public final class Converter {
 
         /**
          * Create a new Instance of XLIFFSource
-         * 
-         * 
+         *
+         *
          */
         public XLIFFSource() {
 
@@ -430,8 +431,8 @@ public final class Converter {
                     SAXParser parser=factory.newSAXParser();
                     XMLReader xliffreader=parser.getXMLReader();
 
-                    
-                    
+
+
 //                    XMLReader xliffreader = XMLReaderFactory
 //                            .createXMLReader("org.apache.crimson.parser.XMLReaderImpl");
                     xliffreader.setErrorHandler(contentHandler);
@@ -441,23 +442,23 @@ public final class Converter {
                     xliffreader.setEntityResolver(res);
                     /*
                      * a second possibility to resolve an extern entity (DTD)
-                     * 
+                     *
                      * xliffreader.setFeature("xml.org/sax/features/validation",true);
                      * xliffreader.setEntityResolver(new EntityResolver() {
                      * public InputSource resolveEntity(java.lang.String
                      * publicId, java.lang.String systemId) throws SAXException,
                      * java.io.IOException { if (publicId.equals("-//XLIFF//DTD
-                     * XLIFF//EN")) // this deactivates the open office DTD
+                     * XLIFF//EN")) // this deactivates the OpenOffice DTD
                      * return new InputSource(new ByteArrayInputStream( " <?xml
                      * version='1.0' encoding='UTF-8'?>" .getBytes())); else
                      * return null; } });
-                     *  
+                     *
                      */
 
                     xliffreader.parse(sourceString);
 
                 } else {
-                    System.out.println("Datei existiert nicht");
+                    System.out.println("File does not exist");
                 }
 
             } catch (SAXParseException e) {
@@ -477,16 +478,16 @@ public final class Converter {
 
                     e1.printStackTrace();
                 }
-                OutputHandler.out("PARSE EXCEPTION " +  e.getMessage());
+                OutputHandler.out("PARSE EXCEPTION " + e.getMessage());
             } catch (ParserConfigurationException e) {
-                OutputHandler.out("PARSER Configuration failed\n " +  e.getMessage());
+                OutputHandler.out("PARSER Configuration failed\n " + e.getMessage());
             }
         }
 
     }
     /**
      * Encapsulate writing to a XLIFF file
-     * 
+     *
      * @author Christian Schmidt 2005
      *
      */
@@ -495,7 +496,7 @@ public final class Converter {
 
         /**
          * Create a new Instance of XLIFFTarget
-         * 
+         *
          * @throws FileNotFoundException
          * @throws IOException
          */
@@ -512,5 +513,5 @@ public final class Converter {
         }
     }
 
-
 }
+
