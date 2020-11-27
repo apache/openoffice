@@ -28,7 +28,7 @@ AC_ARG_WITH(dmake-path,
 ])
 AC_ARG_WITH(dmake-url,
 [  --with-dmake-url=<URL>   Specify the location of downloadable dmake source code. For example:
-                          https://github.com/jimjag/dmake/archive/v4.13.0/dmake-4.13.0.tar.gz
+                          https://github.com/jimjag/dmake/archive/v4.13.1/dmake-4.13.1.tar.gz
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
