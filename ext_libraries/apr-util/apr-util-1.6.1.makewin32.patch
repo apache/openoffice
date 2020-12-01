@@ -1,5 +1,5 @@
---- misc/apr-util-1.5.4/Library_apr-util.mk	2012-01-05 14:49:40.529219100 +0100
-+++ misc/build/apr-util-1.5.4/Library_apr-util.mk	2012-01-05 14:47:18.621102400 +0100
+--- misc/apr-util-1.6.1/Library_apr-util.mk	2012-01-05 14:49:40.529219100 +0100
++++ misc/build/apr-util-1.6.1/Library_apr-util.mk	2012-01-05 14:47:18.621102400 +0100
 @@ -1 +1,89 @@
 -dummy
 +#/**************************************************************
@@ -46,53 +46,53 @@
 +))
 +
 +$(eval $(call gb_Library_add_cobjects,apr-util,\
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_brigade \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_alloc \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_eos \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_file \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_flush \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_heap \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_mmap \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_pipe \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_pool \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_refcount \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_simple \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/buckets/apr_buckets_socket \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/apr_crypto \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/apr_md4 \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/apr_md5 \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/apr_sha1 \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/getuuid \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/crypto/uuid \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbd/apr_dbd \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/apr_dbm \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/apr_dbm_sdbm \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/sdbm/sdbm \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/sdbm/sdbm_hash \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/sdbm/sdbm_lock \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/dbm/sdbm/sdbm_pair \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/encoding/apr_base64 \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/hooks/apr_hooks \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/ldap/apr_ldap_stub \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/ldap/apr_ldap_url \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/memcache/apr_memcache \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apr_date \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apr_queue \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apr_reslist \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apr_rmm \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apr_thread_pool \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apu_dso \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/misc/apu_version \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/strmatch/apr_strmatch \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/uri/apr_uri \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/xlate/xlate \
-+	apr-util/$(INPATH)/misc/build/apr-util-1.5.4/xml/apr_xml \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_brigade \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_alloc \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_eos \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_file \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_flush \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_heap \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_mmap \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_pipe \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_pool \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_refcount \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_simple \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/buckets/apr_buckets_socket \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/apr_crypto \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/apr_md4 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/apr_md5 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/apr_sha1 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/getuuid \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/crypto/uuid \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbd/apr_dbd \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/apr_dbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/apr_dbm_sdbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/sdbm/sdbm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/sdbm/sdbm_hash \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/sdbm/sdbm_lock \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/dbm/sdbm/sdbm_pair \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/encoding/apr_base64 \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/hooks/apr_hooks \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/ldap/apr_ldap_stub \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/ldap/apr_ldap_url \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/memcache/apr_memcache \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apr_date \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apr_queue \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apr_reslist \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apr_rmm \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apr_thread_pool \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apu_dso \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/misc/apu_version \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/strmatch/apr_strmatch \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/uri/apr_uri \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/xlate/xlate \
++	apr-util/$(INPATH)/misc/build/apr-util-1.6.1/xml/apr_xml \
 +))
 +
 +# vim: set noet sw=4 ts=4:
---- misc/apr-util-1.5.4/Makefile	2012-01-05 14:49:40.420212900 +0100
-+++ misc/build/apr-util-1.5.4/Makefile	2012-01-05 14:47:07.827485100 +0100
+--- misc/apr-util-1.6.1/Makefile	2012-01-05 14:49:40.420212900 +0100
++++ misc/build/apr-util-1.6.1/Makefile	2012-01-05 14:47:07.827485100 +0100
 @@ -1 +1,32 @@
 -dummy
 +#/**************************************************************
@@ -127,8 +127,8 @@
 +$(eval $(call gb_Module_make_global_targets,$(shell ls $(dir $(realpath $(firstword $(MAKEFILE_LIST))))/Module*.mk)))
 +
 +# vim: set noet sw=4 ts=4:
---- misc/apr-util-1.5.4/Module_apr-util.mk	2012-01-05 14:49:40.476216100 +0100
-+++ misc/build/apr-util-1.5.4/Module_apr-util.mk	2012-01-05 14:47:42.567472100 +0100
+--- misc/apr-util-1.6.1/Module_apr-util.mk	2012-01-05 14:49:40.476216100 +0100
++++ misc/build/apr-util-1.6.1/Module_apr-util.mk	2012-01-05 14:47:42.567472100 +0100
 @@ -1 +1,29 @@
 -dummy
 +#/**************************************************************
@@ -160,8 +160,8 @@
 +))
 +
 +# vim: set noet ts=4 sw=4:
---- misc/apr-util-1.5.4/Package_inc.mk	2012-01-05 14:49:40.585222300 +0100
-+++ misc/build/apr-util-1.5.4/Package_inc.mk	2012-01-05 14:47:51.616989700 +0100
+--- misc/apr-util-1.6.1/Package_inc.mk	2012-01-05 14:49:40.585222300 +0100
++++ misc/build/apr-util-1.6.1/Package_inc.mk	2012-01-05 14:47:51.616989700 +0100
 @@ -1 +1,33 @@
 -dummy
 +#/**************************************************************
@@ -185,7 +185,7 @@
 +# * 
 +# *************************************************************/
 +
-+$(eval $(call gb_Package_Package,apr-util_inc,$(EXT_LIBRARIES)/apr-util/$(INPATH)/misc/build/apr-util-1.5.4/include))
++$(eval $(call gb_Package_Package,apr-util_inc,$(EXT_LIBRARIES)/apr-util/$(INPATH)/misc/build/apr-util-1.6.1/include))
 +$(eval $(call gb_Package_add_files, apr-util_inc, inc/apr-util,        \
 +       apu.h                                                           \
 +       apu_version.h                                                   \
