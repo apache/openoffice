@@ -36,11 +36,11 @@ void dummy_can_throw_anything( char const * );
 
 struct _Unwind_Exception
 {
-    unsigned long exception_class;
+    unsigned exception_class __attribute__((__mode__(__DI__)));
     void * exception_cleanup;
-    uintptr_t private_1;
-    uintptr_t private_2;
-};
+    unsigned private_1 __attribute__((__mode__(__word__)));
+    unsigned private_2 __attribute__((__mode__(__word__)));
+} __attribute__((__aligned__));
 
 struct __cxa_exception
 { 

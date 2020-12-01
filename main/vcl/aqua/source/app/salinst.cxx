@@ -781,18 +781,18 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         }
         osl_setCondition( maWaitingYieldCond );
     }
-    else if( bWait )
+    else if( bWait && maWaitingYieldCond )
     {
         // #i103162#
         // wait until any thread (most likely the main thread)
-        // has dispatched an event, cop out at 200 ms
+        // has dispatched an event, cop out at 500 ms
+        sal_uLong nCount;
+        TimeValue aVal = { 0, 500000000 };
         osl_resetCondition( maWaitingYieldCond );
-        TimeValue aVal = { 0, 200000000 };
-        sal_uLong nCount = ReleaseYieldMutex();
+        nCount = ReleaseYieldMutex();
         osl_waitCondition( maWaitingYieldCond, &aVal );
         AcquireYieldMutex( nCount );
     }
-    
 	// we get some apple events way too early
 	// before the application is ready to handle them,
 	// so their corresponding application events need to be delayed

@@ -53,42 +53,22 @@ rtl_StandardModuleCount g_moduleCount = MODULE_COUNT_INIT;
 
 namespace {
 
-#if (defined(__SUNPRO_CC) && (__SUNPRO_CC == 0x500)) \
-    || (defined(__GNUC__) && defined(__APPLE__))
-static ::rtl::OUString * s_pStaticOidPart = 0;
-#endif
-
 const ::rtl::OUString & SAL_CALL cppu_cppenv_getStaticOIdPart() SAL_THROW( () )
 {
-#if ! ((defined(__SUNPRO_CC) && (__SUNPRO_CC == 0x500)) \
-    || (defined(__GNUC__) && defined(__APPLE__)))
-    static ::rtl::OUString * s_pStaticOidPart = 0;
-#endif
-    if (! s_pStaticOidPart)
-    {
-        ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-        if (! s_pStaticOidPart)
+    static ::rtl::OUString s_aStaticOidPart = []() {
+        ::rtl::OUStringBuffer aRet( 64 );
+        aRet.appendAscii( RTL_CONSTASCII_STRINGPARAM("];") );
+        // good guid
+        sal_uInt8 ar[16];
+        ::rtl_getGlobalProcessId(ar);
+        for ( sal_Int32 i = 0; i < 16; ++i )
         {
-            ::rtl::OUStringBuffer aRet( 64 );
-            aRet.appendAscii( RTL_CONSTASCII_STRINGPARAM("];") );
-            // good guid
-            sal_uInt8 ar[16];
-            ::rtl_getGlobalProcessId( ar );
-            for ( sal_Int32 i = 0; i < 16; ++i )
-            {
-                aRet.append( (sal_Int32)ar[i], 16 );
-            }
-#if (defined(__SUNPRO_CC) && (__SUNPRO_CC == 0x500)) \
-    || (defined(__GNUC__) && defined(__APPLE__))
-            s_pStaticOidPart = new ::rtl::OUString( aRet.makeStringAndClear() );
-#else
-            static ::rtl::OUString s_aStaticOidPart(
-                aRet.makeStringAndClear() );
-            s_pStaticOidPart = &s_aStaticOidPart;
-#endif
+            aRet.append( (sal_Int32)ar[i], 16 );
         }
-    }
-    return *s_pStaticOidPart;
+        return aRet.makeStringAndClear();
+    }();
+    return s_aStaticOidPart;
+
 }
 
 }

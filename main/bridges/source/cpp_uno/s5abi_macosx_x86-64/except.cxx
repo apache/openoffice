@@ -141,7 +141,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
     {
-        // build the mangled name for unoName's RTTI typeinfo symbol
+        // RTTI symbol
         OStringBuffer buf( 64 );
         buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
         sal_Int32 index = 0;
@@ -174,7 +174,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 // symbol and rtti-name is nearly identical,
                 // the symbol is prefixed with _ZTI
                 char const * rttiName = symName.getStr() +4;
-#if OSL_DEBUG_LEVEL >= 1
+#if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
                 const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
                 OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
@@ -200,8 +200,9 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 rtti = NULL;
 #endif
 
-                bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
-                OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
+                pair< t_rtti_map::iterator, bool > insertion(
+                    m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
+                OSL_ENSURE( insertion.second, "### inserting new generated rtti failed?!" );
             }
             else // taking already generated rtti
             {
