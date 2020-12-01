@@ -48,7 +48,8 @@ SLOFILES= \
 	$(SLO)$/abi.obj			\
 	$(SLO)$/except.obj		\
 	$(SLO)$/cpp2uno.obj		\
-	$(SLO)$/uno2cpp.obj
+	$(SLO)$/uno2cpp.obj		\
+	$(SLO)$/call.obj
 
 SHL1TARGET= $(TARGET)
 
@@ -70,3 +71,6 @@ SHL1STDLIBS= \
 
 .INCLUDE :  target.mk
 
+$(SLO)$/%.obj: %.s
+    $(CC) -c -o $(SLO)$/$(@:b).o $<
+    touch $@
