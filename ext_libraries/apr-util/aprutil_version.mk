@@ -20,5 +20,5 @@
 #**************************************************************
 
 APR_UTIL_MAJOR=1
-APR_UTIL_MINOR=5
-APR_UTIL_MICRO=4
+APR_UTIL_MINOR=6
+APR_UTIL_MICRO=1

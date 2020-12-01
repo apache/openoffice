@@ -43,7 +43,7 @@ APR_UTIL_VERSION=$(APR_UTIL_MAJOR).$(APR_UTIL_MINOR).$(APR_UTIL_MICRO)
 
 
 TARFILE_NAME=$(PRJNAME)-$(APR_UTIL_VERSION)
-TARFILE_MD5=866825c04da827c6e5f53daff5569f42
+TARFILE_MD5=bd502b9a8670a8012c4d90c31a84955f
 
 .IF "$(OS)"=="WNT"
 
@@ -86,10 +86,18 @@ CONFIGURE_FLAGS=								\
 # Use our own expat on the Mac.  Maybe we should do this on Linux, too? Yes!
 .IF "$(OS)" == "MACOSX" || ("$(OS)" == "LINUX" && "$(SYSTEM_EXPAT)"!="YES")
 
+# Recent versions of clang on macOS break some tests in APR 1.6 (and older)
+# configure (mostly around testing sizeof) due to errors now being fatal.
+# Work around this by ignoring all errors
+.IF "$(OS)"=="MACOSX"
+XCPPFLAGS=-Wno-error=all
+.ENDIF
+
 expat_CPPFLAGS=-I$(SOLARINCDIR)$/external
 expat_LDFLAGS+=-L$(SOLARLIBDIR)
+XCPPFLAGS+=$(expat_CPPFLAGS)
 CONFIGURE_FLAGS+= SOLARINCDIR=$(SOLARINCDIR) SOLARLIBDIR=$(SOLARLIBDIR) \
-	CPPFLAGS=$(expat_CPPFLAGS) LDFLAGS=$(expat_LDFLAGS)
+	CPPFLAGS="$(XCPPFLAGS)" LDFLAGS=$(expat_LDFLAGS)
 
 # The non-standard names of our expat libraries (yes, plural) make 
 # a special handling in apr-utils configure necessary.
