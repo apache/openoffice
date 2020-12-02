@@ -781,7 +781,7 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
         }
         osl_setCondition( maWaitingYieldCond );
     }
-    else if( bWait && maWaitingYieldCond )
+    else if( bWait )
     {
         // #i103162#
         // wait until any thread (most likely the main thread)
