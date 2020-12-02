@@ -33,7 +33,7 @@
 #include <hash_map>
 
 /*See: http://people.redhat.com/drepper/selinux-mem.html*/
-#if defined (LINUX) || defined (FREEBSD) || defined(MACOSX)
+#if defined (LINUX) || defined (FREEBSD)
 #define USE_DOUBLE_MMAP
 #endif
 
