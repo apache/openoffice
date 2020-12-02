@@ -91,6 +91,7 @@ extern "C" __cxa_eh_globals *__cxa_get_globals () throw();
 // in http://refspecs.linuxbase.org/cxxabi-1.86.html#rtti but
 // these details are not generally available in a public header
 // of most development environments. So we define them here.
+// NOTE: https://www.hexblog.com/wp-content/uploads/2012/06/Recon-2012-Skochinsky-Compiler-Internals.pdf
 class __class_type_info : public std::type_info
 {
 public:
@@ -101,8 +102,8 @@ public:
 
 class __si_class_type_info : public __class_type_info
 {
-        const __class_type_info* mpBaseType;
 public:
+        const __class_type_info* mpBaseType;
         explicit __si_class_type_info( const char* pRttiName, __class_type_info* pBaseType)
         : __class_type_info( pRttiName), mpBaseType( pBaseType)
         {}
