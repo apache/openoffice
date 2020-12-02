@@ -2234,16 +2234,8 @@ case $COM in
 		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
 		# The version in tg_compv.mk for darwin does not look correct
 		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
-		case "$build_os" in
-			darwin*) # Mac OS X
-				COMID="s5abi";
-				COMNAME="s5abi";
-				;;
-			*)
-				COMID="gcc3";
-				COMNAME="gcc3";
-				;;
-		esac
+		COMID="gcc3";
+		COMNAME="gcc3";	
 		;;
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
