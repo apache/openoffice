@@ -115,7 +115,6 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
 
     asm volatile (
         // Fill the xmm registers
-        "\t"
         "movq %2, %%rax\n\t"
 
         "movsd   (%%rax), %%xmm0\n\t"

@@ -392,55 +392,52 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 }
 
 //==================================================================================================
-extern "C" void privateSnippetExecutor( void )
+void privateSnippetExecutor( void )
 {
-    asm volatile (
-    "\t"
-	"subq	$160, %%rsp\n\t"
-	"movq	%%r10, -152(%%rbp)\n\t"		// Save (nVtableOffset << 32) + nFunctionIndex
+	asm volatile (
+		"	subq	$160, %rsp\n"
+		"	movq	%r10, -152(%rbp)\n"		// Save (nVtableOffset << 32) + nFunctionIndex
 
-	"movq	%%rdi, -112(%%rbp)\n\t"		// Save GP registers
-	"movq	%%rsi, -104(%%rbp)\n\t"
-	"movq	%%rdx, -96(%%rbp)\n\t"
-	"movq	%%rcx, -88(%%rbp)\n\t"
-	"movq	%%r8 , -80(%%rbp)\n\t"
-	"movq	%%r9 , -72(%%rbp)\n\t"
+		"	movq	%rdi, -112(%rbp)\n"		// Save GP registers
+		"	movq	%rsi, -104(%rbp)\n"
+		"	movq	%rdx, -96(%rbp)\n"
+		"	movq	%rcx, -88(%rbp)\n"
+		"	movq	%r8 , -80(%rbp)\n"
+		"	movq	%r9 , -72(%rbp)\n"
 
-	"movsd	%%xmm0, -64(%%rbp)\n\t"		// Save FP registers
-	"movsd	%%xmm1, -56(%%rbp)\n\t"
-	"movsd	%%xmm2, -48(%%rbp)\n\t"
-	"movsd	%%xmm3, -40(%%rbp)\n\t"
-	"movsd	%%xmm4, -32(%%rbp)\n\t"
-	"movsd	%%xmm5, -24(%%rbp)\n\t"
-	"movsd	%%xmm6, -16(%%rbp)\n\t"
-	"movsd	%%xmm7, -8(%%rbp)\n\t"
+		"	movsd	%xmm0, -64(%rbp)\n"		// Save FP registers
+		"	movsd	%xmm1, -56(%rbp)\n"
+		"	movsd	%xmm2, -48(%rbp)\n"
+		"	movsd	%xmm3, -40(%rbp)\n"
+		"	movsd	%xmm4, -32(%rbp)\n"
+		"	movsd	%xmm5, -24(%rbp)\n"
+		"	movsd	%xmm6, -16(%rbp)\n"
+		"	movsd	%xmm7, -8(%rbp)\n"
 
-	"leaq	-144(%%rbp), %%r9\n\t"		// 6th param: sal_uInt64* pRegisterReturn
-	"leaq	16(%%rbp), %%r8\n\t"		// 5rd param: void** ovrflw
-	"leaq	-64(%%rbp), %%rcx\n\t"		// 4th param: void** fpreg
-	"leaq	-112(%%rbp), %%rdx\n\t"		// 3rd param: void** gpreg
-	"movl	-148(%%rbp), %%esi\n\t"		// 2nd param: sal_int32 nVtableOffset
-	"movl	-152(%%rbp), %%edi\n\t"		// 1st param: sal_int32 nFunctionIndex
+		"	leaq	-144(%rbp), %r9\n"		// 6th param: sal_uInt64* pRegisterReturn
+		"	leaq	16(%rbp),   %r8\n"		// 5rd param: void** ovrflw
+		"	leaq	-64(%rbp),  %rcx\n"		// 4th param: void** fpreg
+		"	leaq	-112(%rbp), %rdx\n"		// 3rd param: void** gpreg
+		"	movl	-148(%rbp), %esi\n"		// 2nd param: sal_int32 nVtableOffset
+		"	movl	-152(%rbp), %edi\n"		// 1st param: sal_int32 nFunctionIndex
 
-	"call	_cpp_vtable_call\n\t"
+		"	call	_cpp_vtable_call\n"
 
-	"cmp	$10, %%rax\n\t"				// typelib_TypeClass_FLOAT
-	"je	.Lfloat\n\t"
-	"cmp	$11, %%rax\n\t"				// typelib_TypeClass_DOUBLE
-	"je	.Lfloat\n\t"
+		"	cmp	$10, %rax\n"				// typelib_TypeClass_FLOAT
+		"	je	.Lfloat\n"
+		"	cmp	$11, %rax\n"				// typelib_TypeClass_DOUBLE
+		"	je	.Lfloat\n"
 
-	"movq	-144(%%rbp), %%rax\n\t"		// Return value (int case)
-	"movq	-136(%%rbp), %%rdx\n\t"		// Return value (int case)
-	"movq	-144(%%rbp), %%xmm0\n\t"	// Return value (int case)
-	"movq	-136(%%rbp), %%xmm1\n\t"	// Return value (int case)
-	"jmp	.Lfinish\n"
-".Lfloat:\n\t"
-	"movlpd	-144(%%rbp), %%xmm0\n"		// Return value (float/double case)
-".Lfinish:\n\t"
-	"addq	$160, %%rsp\n"
-	:
-	:
-	: "rax", "r10", "xmm0" );
+		"	movq	-144(%rbp), %rax\n"		// Return value (int case)
+		"	movq	-136(%rbp), %rdx\n"		// Return value (int case)
+		"	movq	-144(%rbp), %xmm0\n"	// Return value (int case)
+		"	movq	-136(%rbp), %xmm1\n"	// Return value (int case)
+		"	jmp	.Lfinish\n"
+		".Lfloat:\n"
+		"	movlpd	-144(%rbp), %xmm0\n"		// Return value (float/double case)
+		".Lfinish:\n"
+		"	addq	$160, %rsp\n"
+	);
 }
 const int codeSnippetSize = 24;
 
