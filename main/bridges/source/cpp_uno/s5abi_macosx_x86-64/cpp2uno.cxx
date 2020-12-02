@@ -397,55 +397,54 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 //==================================================================================================
 extern "C" void privateSnippetExecutor( void )
 {
-    asm volatile
-        (
-         "    subq  $160, %rsp\n"
-         "    movq  %r10, -152(%rbp)        # Save (nVtableOffset << 32) + nFunctionIndex\n"
+    asm volatile (
+    "\t"
+	"subq	$160, %%rsp\n\t"
+	"movq	%%r10, -152(%%rbp)\n\t"		// Save (nVtableOffset << 32) + nFunctionIndex
 
-         "    movq  %rdi, -112(%rbp)        # Save GP registers\n"
-         "    movq  %rsi, -104(%rbp)\n"
-         "    movq  %rdx, -96(%rbp)\n"
-         "    movq  %rcx, -88(%rbp)\n"
-         "    movq  %r8 , -80(%rbp)\n"
-         "    movq  %r9 , -72(%rbp)\n"
+	"movq	%%rdi, -112(%%rbp)\n\t"		// Save GP registers
+	"movq	%%rsi, -104(%%rbp)\n\t"
+	"movq	%%rdx, -96(%%rbp)\n\t"
+	"movq	%%rcx, -88(%%rbp)\n\t"
+	"movq	%%r8 , -80(%%rbp)\n\t"
+	"movq	%%r9 , -72(%%rbp)\n\t"
 
-         "    movsd %xmm0, -64(%rbp)        # Save FP registers\n"
-         "    movsd %xmm1, -56(%rbp)\n"
-         "    movsd %xmm2, -48(%rbp)\n"
-         "    movsd %xmm3, -40(%rbp)\n"
-         "    movsd %xmm4, -32(%rbp)\n"
-         "    movsd %xmm5, -24(%rbp)\n"
-         "    movsd %xmm6, -16(%rbp)\n"
-         "    movsd %xmm7, -8(%rbp)\n"
+	"movsd	%%xmm0, -64(%%rbp)\n\t"		// Save FP registers
+	"movsd	%%xmm1, -56(%%rbp)\n\t"
+	"movsd	%%xmm2, -48(%%rbp)\n\t"
+	"movsd	%%xmm3, -40(%%rbp)\n\t"
+	"movsd	%%xmm4, -32(%%rbp)\n\t"
+	"movsd	%%xmm5, -24(%%rbp)\n\t"
+	"movsd	%%xmm6, -16(%%rbp)\n\t"
+	"movsd	%%xmm7, -8(%%rbp)\n\t"
 
-         "    leaq  -144(%rbp), %r9         # 6th param: sal_uInt64 * pRegisterReturn\n"
-         "    leaq  16(%rbp), %r8           # 5rd param: void ** ovrflw\n"
-         "    leaq  -64(%rbp), %rcx         # 4th param: void ** fpreg\n"
-         "    leaq  -112(%rbp), %rdx        # 3rd param: void ** gpreg\n"
-         "    movl  -148(%rbp), %esi        # 2nd param: sal_int32 nVtableOffset\n"
-         "    movl  -152(%rbp), %edi        # 1st param: sal_int32 nFunctionIndex\n"
+	"leaq	-144(%%rbp), %%r9\n\t"		// 6th param: sal_uInt64* pRegisterReturn
+	"leaq	16(%%rbp), %%r8\n\t"		// 5rd param: void** ovrflw
+	"leaq	-64(%%rbp), %%rcx\n\t"		// 4th param: void** fpreg
+	"leaq	-112(%%rbp), %%rdx\n\t"		// 3rd param: void** gpreg
+	"movl	-148(%%rbp), %%esi\n\t"		// 2nd param: sal_int32 nVtableOffset
+	"movl	-152(%%rbp), %%edi\n\t"		// 1st param: sal_int32 nFunctionIndex
 
-         "    call  _cpp_vtable_call\n"
+	"call	_cpp_vtable_call\n\t"
 
-         "    cmp   $10, %rax               # typelib_TypeClass_FLOAT\n"
-         "    je    .Lfloat\n"
-         "    cmp   $11, %rax               # typelib_TypeClass_DOUBLE\n"
-         "    je    .Lfloat\n"
+	"cmp	$10, %%rax\n\t"				// typelib_TypeClass_FLOAT
+	"je	.Lfloat\n\t"
+	"cmp	$11, %%rax\n\t"				// typelib_TypeClass_DOUBLE
+	"je	.Lfloat\n\t"
 
-         "    movq  -144(%rbp), %rax        # Return value (int case)\n"
-         "    movq  -136(%rbp), %rdx        # Return value (int case)\n"
-         "    movq  -144(%rbp), %xmm0       # Return value (int case)\n"
-         "    movq  -136(%rbp), %xmm1       # Return value (int case)\n"
-         "    jmp   .Lfinish\n"
-
-         ".Lfloat:\n"
-         "    movlpd    -144(%rbp), %xmm0   # Return value (float/double case)\n"
-
-         ".Lfinish:\n"
-         "    addq  $160, %rsp\n"
-         );
+	"movq	-144(%%rbp), %%rax\n\t"		// Return value (int case)
+	"movq	-136(%%rbp), %%rdx\n\t"		// Return value (int case)
+	"movq	-144(%%rbp), %%xmm0\n\t"	// Return value (int case)
+	"movq	-136(%%rbp), %%xmm1\n\t"	// Return value (int case)
+	"jmp	.Lfinish\n"
+".Lfloat:\n\t"
+	"movlpd	-144(%%rbp), %%xmm0\n"		// Return value (float/double case)
+".Lfinish:\n\t"
+	"addq	$160, %%rsp\n"
+	:
+	:
+	: "rax", "r10", "xmm0" );
 }
-
 const int codeSnippetSize = 24;
 
 // Generate a trampoline that redirects method calls to
@@ -468,12 +467,15 @@ unsigned char * codeSnippet( unsigned char * code,
 		nOffsetAndIndex |= 0x80000000;
 
 	// movq $<nOffsetAndIndex>, %r10
-	*reinterpret_cast<sal_uInt16 *>( code ) = 0xba49;
-	*reinterpret_cast<sal_uInt64 *>( code + 2 ) = nOffsetAndIndex;
+    *reinterpret_cast<sal_uInt16 *>( code ) = 0xba49;
+    *reinterpret_cast<sal_uInt16 *>( code + 2 ) = nOffsetAndIndex & 0xFFFF;
+    *reinterpret_cast<sal_uInt32 *>( code + 4 ) = nOffsetAndIndex >> 16;
+    *reinterpret_cast<sal_uInt16 *>( code + 8 ) = nOffsetAndIndex >> 48;
 
 	// movq $<address of the privateSnippetExecutor>, %r11
-	*reinterpret_cast<sal_uInt16 *>( code + 10 ) = 0xbb49;
-	*reinterpret_cast<sal_uInt64 *>( code + 12 ) = reinterpret_cast<sal_uInt64>( privateSnippetExecutor );
+    *reinterpret_cast<sal_uInt16 *>( code + 10 ) = 0xbb49;
+    *reinterpret_cast<sal_uInt32 *>( code + 12 ) = reinterpret_cast<sal_uInt64>(privateSnippetExecutor);
+    *reinterpret_cast<sal_uInt32 *>( code + 16 ) = reinterpret_cast<sal_uInt64>(privateSnippetExecutor) >> 32;
 
 	// jmpq *%r11
 	*reinterpret_cast<sal_uInt32 *>( code + 20 ) = 0x00e3ff49;
