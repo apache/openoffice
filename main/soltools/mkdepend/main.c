@@ -140,7 +140,6 @@ catch (sig)
     int sig;
 {
 	fflush (stdout);
-	abort();
 	fatalerr ("got signal %d\n", sig);
 }
 
