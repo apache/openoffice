@@ -62,10 +62,10 @@ BUILD_ACTION=INCLUDE="$(INCLUDE);./include" USEMAK=1  nmake -f Makefile.win buil
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure --prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/apr
 
-# Recent versions of clang on macOS break some tests in APR 1.6 (and older)
+# Recent versions of clang (clang-12xxx) on macOS break some tests in APR 1.6 (and older)
 # configure (mostly around testing sizeof) due to errors now being fatal.
-# Work around this by ignoring all errors
-.IF "$(OS)"=="MACOSX"
+# Work around this by ignoring all errors but only with the later versions of Xcode
+.IF "$(OS)"=="MACOSX" && "$(COM)"=="CLANG" && "$(CCNUMVER)" > "001100000003"
 CONFIGURE_FLAGS=CPPFLAGS="-Wno-error=all"
 .ELSE
 CONFIGURE_FLAGS=
