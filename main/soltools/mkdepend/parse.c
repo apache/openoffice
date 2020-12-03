@@ -347,9 +347,10 @@ int deftype (line, filep, file_red, file, parse_it, symbols)
 		 * copy the definition back to the beginning of the line.
 		 */
 		{
-			int len = strlen(line);
-			memmove (line, p, len);
-			line[len] = '\0';
+			int lenl = strlen(line);
+			int lenp = strlen(p);
+			memmove ( line, p, (lenl < lenp) ? lenl : lenp );
+			line[ (lenl < lenp) ? lenl : lenp ] = '\0';	/* belts and braces */
 		}
 		break;
 	case ELSE:
