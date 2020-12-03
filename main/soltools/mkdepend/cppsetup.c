@@ -150,7 +150,7 @@ _my_if_errors (ip, cp, expecting)
 }
 
 
-#define MAXNAMELEN 256
+#define MAXNAMELEN 1024
 
 char *
 _lookup_variable (var, len)

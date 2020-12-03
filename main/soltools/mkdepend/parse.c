@@ -346,7 +346,11 @@ int deftype (line, filep, file_red, file, parse_it, symbols)
 		/*
 		 * copy the definition back to the beginning of the line.
 		 */
-		strcpy (line, p);
+		{
+			int len = strlen(line);
+			memmove (line, p, len);
+			line[len] = '\0';
+		}
 		break;
 	case ELSE:
 	case ENDIF:
