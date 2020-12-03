@@ -818,7 +818,7 @@ elsif ( $platform =~ m/darwin/ )
       $INPATH         = $OUTPATH.$PROEXT;
       $OS             = "MACOSX";
       $PATH_SEPERATOR = $ps;
-      # GUIBASE is set below; may be "aqua" or "unx".
+      $GUIBASE        = "aqua"
 }
 elsif ( $platform =~ m/aix/ )
 {
