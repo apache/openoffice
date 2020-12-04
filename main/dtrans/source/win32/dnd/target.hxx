@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _TARGET_HXX_
@@ -70,8 +71,8 @@ class DropTarget: public MutexDummy,
 private:
 	friend DWORD WINAPI DndTargetOleSTAFunc(LPVOID pParams);
 	// The native window which acts as drop target.
-    // It is set in initialize. In case RegisterDragDrop fails it is set
-    // to NULL
+	// It is set in initialize. In case RegisterDragDrop fails it is set
+	// to NULL
 	HWND m_hWnd; // set by initialize
 	// Holds the thread id of the thread which created the window that is the
 	// drop target. Only used when DropTarget::initialize is called from an MTA
@@ -83,23 +84,23 @@ private:
 	// The handle of the thread that is created in DropTarget::initialize
 	// when the calling thread is an MTA
 	HANDLE m_hOleThread;
-    // The thread id of the thread which called initialize. When the service dies
-    // than m_oleThreadId is used to determine if the service successfully called
-    // OleInitialize. If so then OleUninitialize has to be called.
-    DWORD m_oleThreadId;
-    // An Instance of IDropTargetImpl which receives calls from the system's drag
-    // and drop implementation. It delegate the calls to name alike functions in
-    // this class.
-    IDropTarget* m_pDropTarget;
+	// The thread id of the thread which called initialize. When the service dies
+	// than m_oleThreadId is used to determine if the service successfully called
+	// OleInitialize. If so then OleUninitialize has to be called.
+	DWORD m_oleThreadId;
+	// An Instance of IDropTargetImpl which receives calls from the system's drag
+	// and drop implementation. It delegate the calls to name alike functions in
+	// this class.
+	IDropTarget* m_pDropTarget;
 
 	Reference<XMultiServiceFactory> m_serviceFactory;
 	// If m_bActive == sal_True then events are fired to XDropTargetListener s,
-    // none otherwise. The default value is sal_True.
-    sal_Bool m_bActive;
+	// none otherwise. The default value is sal_True.
+	sal_Bool m_bActive;
 	sal_Int8	m_nDefaultActions;
 
 	// This value is set when a XDropTargetListener calls accept or reject on
-	// the XDropTargetDropContext or  XDropTargetDragContext.
+	// the XDropTargetDropContext or XDropTargetDragContext.
 	// The values are from the DNDConstants group.
 	sal_Int8 m_nCurrentDropAction;
 	// This value is manipulated by the XDropTargetListener
@@ -112,7 +113,7 @@ private:
 	// Set by listeners when they call XDropTargetDropContext::dropComplete
 	sal_Bool m_bDropComplete;
 	// converts IDataObject objects to XTransferable objects.
-    CDTransObjFactory m_aDataConverter;
+	CDTransObjFactory m_aDataConverter;
 	Reference<XDropTargetDragContext> m_currentDragContext;
 	Reference<XDropTargetDropContext> m_currentDropContext;
 
@@ -126,50 +127,50 @@ public:
 	DropTarget(const Reference<XMultiServiceFactory>& sf);
 	virtual ~DropTarget();
 
-    // Overrides WeakComponentImplHelper::disposing which is called by
-    // WeakComponentImplHelper::dispose
-    // Must be called.
-    virtual void SAL_CALL disposing();
-   // XInitialization
-    virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
+	// Overrides WeakComponentImplHelper::disposing which is called by
+	// WeakComponentImplHelper::dispose
+	// Must be called.
+	virtual void SAL_CALL disposing();
+	// XInitialization
+	virtual void SAL_CALL initialize( const Sequence< Any >& aArguments )
 		throw(Exception, RuntimeException);
 
 	// XDropTarget
-    virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl )
+	virtual void SAL_CALL addDropTargetListener( const Reference< XDropTargetListener >& dtl )
 		throw(RuntimeException);
-    virtual void SAL_CALL removeDropTargetListener( const Reference< XDropTargetListener >& dtl )
+	virtual void SAL_CALL removeDropTargetListener( const Reference< XDropTargetListener >& dtl )
 		throw(RuntimeException);
 	// Default is not active
-    virtual sal_Bool SAL_CALL isActive(  ) throw(RuntimeException);
-    virtual void SAL_CALL setActive( sal_Bool isActive ) throw(RuntimeException);
-    virtual sal_Int8 SAL_CALL getDefaultActions(  ) throw(RuntimeException);
-    virtual void SAL_CALL setDefaultActions( sal_Int8 actions ) throw(RuntimeException);
+	virtual sal_Bool SAL_CALL isActive(  ) throw(RuntimeException);
+	virtual void SAL_CALL setActive( sal_Bool isActive ) throw(RuntimeException);
+	virtual sal_Int8 SAL_CALL getDefaultActions(  ) throw(RuntimeException);
+	virtual void SAL_CALL setDefaultActions( sal_Int8 actions ) throw(RuntimeException);
 
-    // XServiceInfo
-    virtual OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
-    virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw (RuntimeException);
-    virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
+	// XServiceInfo
+	virtual OUString SAL_CALL getImplementationName(  ) throw (RuntimeException);
+	virtual sal_Bool SAL_CALL supportsService( const OUString& ServiceName ) throw (RuntimeException);
+	virtual Sequence< OUString > SAL_CALL getSupportedServiceNames(  ) throw (RuntimeException);
 
 
     // Functions called from the IDropTarget implementation ( m_pDropTarget)
 	virtual HRESULT DragEnter(
-            /* [unique][in] */ IDataObject *pDataObj,
-            /* [in] */ DWORD grfKeyState,
-            /* [in] */ POINTL pt,
-            /* [out][in] */ DWORD *pdwEffect);
+			/* [unique][in] */ IDataObject *pDataObj,
+			/* [in] */ DWORD grfKeyState,
+			/* [in] */ POINTL pt,
+			/* [out][in] */ DWORD *pdwEffect);
 
 	virtual HRESULT STDMETHODCALLTYPE DragOver(
-            /* [in] */ DWORD grfKeyState,
-            /* [in] */ POINTL pt,
-            /* [out][in] */ DWORD *pdwEffect);
+			/* [in] */ DWORD grfKeyState,
+			/* [in] */ POINTL pt,
+			/* [out][in] */ DWORD *pdwEffect);
 
 	virtual HRESULT STDMETHODCALLTYPE DragLeave( ) ;
 
-    virtual HRESULT STDMETHODCALLTYPE Drop(
-            /* [unique][in] */ IDataObject *pDataObj,
-            /* [in] */ DWORD grfKeyState,
-            /* [in] */ POINTL pt,
-            /* [out][in] */ DWORD *pdwEffect);
+	virtual HRESULT STDMETHODCALLTYPE Drop(
+			/* [unique][in] */ IDataObject *pDataObj,
+			/* [in] */ DWORD grfKeyState,
+			/* [in] */ POINTL pt,
+			/* [out][in] */ DWORD *pdwEffect);
 
 
 // Non - interface functions --------------------------------------------------
@@ -185,7 +186,7 @@ public:
 
 
 protected:
-	// Gets the current action dependend on the pressed modifiers, the effects
+	// Gets the current action dependent on the pressed modifiers, the effects
 	// supported by the drop source (IDropSource) and the default actions of the
 	// drop target (XDropTarget, this class))
 	inline sal_Int8 getFilteredActions( DWORD grfKeyState, DWORD sourceActions);
