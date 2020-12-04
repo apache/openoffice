@@ -933,6 +933,12 @@ AC_ARG_WITH(macosx-target,
 
                               Usage: --with-macosx-target=10.7
 ],with_macosx_target=$withval,with_macosx_target=10.7)
+AC_ARG_WITH(macosx-sdk,
+[  --macosx-sdk            The macOS SDK to build against
+
+                              Usage: --with-macosx-sdk=10.11
+                              (or full path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk)
+],with_macosx_sdk=$withval,)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -1152,7 +1158,7 @@ case "$build_os" in
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -stdlib=libc++ -arch x86_64"
+		   CXX="`xcrun -f clang++` -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
@@ -3875,7 +3881,7 @@ AC_SUBST(LIBXML_LIBS)
 
 
 dnl ===================================================================
-dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
+dnl Checks for a MacOS platform SDK compatible with deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
    sdk_target=$with_macosx_target
@@ -3887,21 +3893,31 @@ if test  "$_os" = "Darwin"; then
       AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
-
-      dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-      dnl First look for macOS10.x SDKs (Up thru Xcode 12.1)
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
-      dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
-      if test -z "$sdk_found"; then
-         sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0)" | sed -e "s/.*sdk //" | tail -n1`
+      sdk_path=$with_macosx_sdk
+      if test -z "$sdk_path"; then
+          dnl --macosx-sdk not used (or blank): We look for the SDK
+          dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
+          dnl First look for macOS10.x SDKs (Up thru Xcode 12.1)
+          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
+          dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
+          if test -z "$sdk_found"; then
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0)" | sed -e "s/.*sdk //" | tail -n1`
+          fi
+          if test -z "$sdk_found"; then
+             AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
+          else
+             AC_MSG_RESULT([yes, by using SDK $sdk_found])
+          fi
+          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+      elif test ! -d "$sdk_path"; then
+          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
+          if test -z "$sdk_found"; then
+             AC_MSG_ERROR([SDK macosx${sdk_path} not found by xcodebuild])
+          else
+             AC_MSG_RESULT([SDK $sdk_found])
+          fi
+          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
       fi
-      if test -z "$sdk_found"; then
-         AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
-      else
-         AC_MSG_RESULT([yes, by using SDK $sdk_found])
-      fi
-
-      sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
       AC_MSG_CHECKING([for $sdk_path])
       if test -d "$sdk_path"; then
          AC_MSG_RESULT([yes])
