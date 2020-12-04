@@ -115,7 +115,7 @@ comm_BOOL PacketHandler::ReceiveData( void* &pData, comm_UINT32 &nLen )
 			bWasError |= nLenCheck != CalcCheckByte( nBytes );
 
 
-			comm_UINT16 nHeaderBytes;
+			comm_UINT16 nHeaderBytes = 0;
 			READ_SOCKET_LEN( &nHeaderBytes, 2, nReadSoFar );
 			nHeaderBytes = NETWORD( nHeaderBytes );
 			// reicht der Header über das Ende hinaus?
