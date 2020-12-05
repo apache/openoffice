@@ -96,15 +96,9 @@ extern "C" void * SAL_CALL allocExec(rtl_arena_type *, sal_Size * size) {
     sal_Size n = (*size + (pagesize - 1)) & ~(pagesize - 1);
     void * p;
 #if defined SAL_UNX
-#if defined MACOSX
-    p = mmap(
-        0, n, PROT_READ | PROT_WRITE | PROT_EXEC, MAP_PRIVATE | MAP_ANON, -1,
-        0);
-#else
     p = mmap(
         0, n, PROT_READ | PROT_WRITE, MAP_PRIVATE | MAP_ANON, -1,
         0);
-#endif
     if (p == MAP_FAILED) {
         p = 0;
     }
