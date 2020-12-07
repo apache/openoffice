@@ -179,10 +179,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
                 OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
 #endif
-#if 0 // TODO: enable it again when the generated class_type_infos always work.
-      // Forcing the toolchain to create authentic typeinfos is much better though
-      // than the sick concept of reverse-engineering the platform's toolchain
-      // and generating the missing type_infos.
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -196,9 +192,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     // this class has no base class
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
-#else
-                rtti = NULL;
-#endif
 
                 pair< t_rtti_map::iterator, bool > insertion(
                     m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );

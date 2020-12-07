@@ -931,8 +931,8 @@ AC_ARG_WITH(arm-target,
 AC_ARG_WITH(macosx-target,
 [  --macosx-target            The minimal macOS/OSX deployment and build target
 
-                              Usage: --with-macosx-target=10.7
-],with_macosx_target=$withval,with_macosx_target=10.7)
+                              Usage: --with-macosx-target=10.9
+],with_macosx_target=$withval,with_macosx_target=10.9)
 AC_ARG_WITH(macosx-sdk,
 [  --macosx-sdk            The macOS SDK to build against
 
@@ -3889,8 +3889,8 @@ if test  "$_os" = "Darwin"; then
 
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
 
-   if test "$sdk_minor" -lt "7"; then
-      AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
+   if test "$sdk_minor" -lt "9"; then
+      AC_MSG_ERROR([SDK version < 10.9 is not longer supported])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
       sdk_path=$with_macosx_sdk
@@ -3898,7 +3898,7 @@ if test  "$_os" = "Darwin"; then
           dnl --macosx-sdk not used (or blank): We look for the SDK
           dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
           dnl First look for macOS10.x SDKs (Up thru Xcode 12.1)
-          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
+          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
           dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
           if test -z "$sdk_found"; then
              sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0)" | sed -e "s/.*sdk //" | tail -n1`
