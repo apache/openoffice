@@ -82,8 +82,10 @@ mkdir: %_DEST%\lib%_EXT%\python\python2.7\config
 ..\%__SRC%\misc\build\python-inst\bin\python %_DEST%\bin%_EXT%\python
 ..\%__SRC%\misc\build\Python-2.7.18\pyconfig.h %_DEST%\inc%_EXT%\python\pyconfig.h
 ..\%__SRC%\misc\build\python-inst\lib\python2.7\lib-dynload\* %_DEST%\lib%_EXT%\python\lib-dynload\*
+..\%__SRC%\misc\build\python-inst\lib64\python2.7\lib-dynload\* %_DEST%\lib%_EXT%\python\lib-dynload\*
 ..\%__SRC%\misc\build\python-inst\bin\python2.7 %_DEST%\bin%_EXT%\python
 ..\%__SRC%\misc\build\python-inst\lib\libpython2.7.so.1.0 %_DEST%\lib%_EXT%\libpython2.7.so.1.0
+..\%__SRC%\misc\build\python-inst\lib64\libpython2.7.so.1.0 %_DEST%\lib%_EXT%\libpython2.7.so.1.0
 symlink: %_DEST%\lib%_EXT%\libpython2.7.so.1.0 %_DEST%\lib%_EXT%\libpython2.7.so
 
 # MacOS X
