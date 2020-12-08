@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,9 +70,9 @@ XINTERFACE_IMPL_3( UcbContentProviderProxyFactory,
 //=========================================================================
 
 XTYPEPROVIDER_IMPL_3( UcbContentProviderProxyFactory,
-	 		   		  XTypeProvider,
+					  XTypeProvider,
 					  XServiceInfo,
-	 		   		  XContentProviderFactory );
+					  XContentProviderFactory );
 
 //=========================================================================
 //
@@ -160,9 +160,9 @@ UcbContentProviderProxy::queryInterface( const Type & rType )
 
 	if ( !aRet.hasValue() )
 	{
-		// Get original provider an forward the call...
+		// Get original provider and forward the call...
 		osl::Guard< osl::Mutex > aGuard( m_aMutex );
-        Reference< XContentProvider > xProvider = getContentProvider();
+		Reference< XContentProvider > xProvider = getContentProvider();
 		if ( xProvider.is() )
 			aRet = xProvider->queryInterface( rType );
 	}
@@ -181,25 +181,25 @@ XTYPEPROVIDER_COMMON_IMPL( UcbContentProviderProxy );
 //=========================================================================
 
 Sequence< Type > SAL_CALL UcbContentProviderProxy::getTypes()                                                           \
-    throw( RuntimeException )
+	throw( RuntimeException )
 {
-    // Get original provider an forward the call...
-    osl::Guard< osl::Mutex > aGuard( m_aMutex );
-    Reference< XTypeProvider > xProvider( getContentProvider(), UNO_QUERY );
-    if ( xProvider.is() )
-    {
-        return xProvider->getTypes();
-    }
-    else
-    {
-        static cppu::OTypeCollection collection(
-            CPPU_TYPE_REF( XTypeProvider ),
-            CPPU_TYPE_REF( XServiceInfo ),
-            CPPU_TYPE_REF( XContentProvider ),
-            CPPU_TYPE_REF( XParameterizedContentProvider ),
-            CPPU_TYPE_REF( XContentProviderSupplier ) );
-        return collection.getTypes();
-    }
+	// Get original provider and forward the call...
+	osl::Guard< osl::Mutex > aGuard( m_aMutex );
+	Reference< XTypeProvider > xProvider( getContentProvider(), UNO_QUERY );
+	if ( xProvider.is() )
+	{
+		return xProvider->getTypes();
+	}
+	else
+	{
+		static cppu::OTypeCollection collection(
+			CPPU_TYPE_REF( XTypeProvider ),
+			CPPU_TYPE_REF( XServiceInfo ),
+			CPPU_TYPE_REF( XContentProvider ),
+			CPPU_TYPE_REF( XParameterizedContentProvider ),
+			CPPU_TYPE_REF( XContentProviderSupplier ) );
+		return collection.getTypes();
+	}
 }
 
 //=========================================================================
@@ -226,7 +226,7 @@ Reference< XContent > SAL_CALL UcbContentProviderProxy::queryContent(
 	throw( IllegalIdentifierException,
 		   RuntimeException )
 {
-	// Get original provider an forward the call...
+	// Get original provider and forward the call...
 
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
@@ -244,15 +244,15 @@ sal_Int32 SAL_CALL UcbContentProviderProxy::compareContentIds(
 					   const Reference< XContentIdentifier >& Id2 )
 	throw( RuntimeException )
 {
-	// Get original provider an forward the call...
+	// Get original provider and forward the call...
 
 	osl::Guard< osl::Mutex > aGuard( m_aMutex );
 	Reference< XContentProvider > xProvider = getContentProvider();
 	if ( xProvider.is() )
 		return xProvider->compareContentIds( Id1, Id2 );
-    
-    // OSL_ENSURE( sal_False,
-    // "UcbContentProviderProxy::compareContentIds - No provider!" );
+
+	// OSL_ENSURE( sal_False,
+	// "UcbContentProviderProxy::compareContentIds - No provider!" );
 
 	// @@@ What else?
 	return 0;
@@ -310,7 +310,7 @@ UcbContentProviderProxy::deregisterInstance( const OUString& Template,
 		{
 			try
 			{
-                xParamProvider->deregisterInstance( Template, Arguments );
+				xParamProvider->deregisterInstance( Template, Arguments );
 			}
 			catch ( IllegalIdentifierException const & )
 			{
@@ -343,15 +343,15 @@ UcbContentProviderProxy::getContentProvider()
 			m_xProvider
 				= Reference< XContentProvider >(
 				  	m_xSMgr->createInstance( m_aService ), UNO_QUERY );
-            if(m_aArguments.compareToAscii("NoConfig") == 0)
-            {
-                Reference<XInitialization> xInit(m_xProvider,UNO_QUERY);
-                if(xInit.is()) {
-                    Sequence<Any> aArgs(1);
-                    aArgs[0] <<= m_aArguments;
-                    xInit->initialize(aArgs);
-                }
-            }
+			if(m_aArguments.compareToAscii("NoConfig") == 0)
+			{
+				Reference<XInitialization> xInit(m_xProvider,UNO_QUERY);
+				if(xInit.is()) {
+					Sequence<Any> aArgs(1);
+					aArgs[0] <<= m_aArguments;
+					xInit->initialize(aArgs);
+				}
+			}
 		}
 		catch ( RuntimeException const & )
 		{

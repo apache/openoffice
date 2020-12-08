@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -118,16 +118,16 @@ FileProvider::acquire(
 	void )
 	throw()
 {
-  OWeakObject::acquire();
+	OWeakObject::acquire();
 }
 
 
 void SAL_CALL
 FileProvider::release(
 	void )
-  throw()
+	throw()
 {
-  OWeakObject::release();
+	OWeakObject::release();
 }
 
 
@@ -136,15 +136,15 @@ FileProvider::queryInterface(
 	const Type& rType )
 	throw( RuntimeException )
 {
-	Any aRet = cppu::queryInterface( 
-        rType,
-        SAL_STATIC_CAST( XContentProvider*, this ),
-        SAL_STATIC_CAST( XInitialization*, this ),
-        SAL_STATIC_CAST( XContentIdentifierFactory*, this ),
-        SAL_STATIC_CAST( XServiceInfo*,     this ),
-        SAL_STATIC_CAST( XTypeProvider*,    this ),
-        SAL_STATIC_CAST( XFileIdentifierConverter*,this ),
-        SAL_STATIC_CAST( XPropertySet*, this ) );
+	Any aRet = cppu::queryInterface(
+		rType,
+		SAL_STATIC_CAST( XContentProvider*, this ),
+		SAL_STATIC_CAST( XInitialization*, this ),
+		SAL_STATIC_CAST( XContentIdentifierFactory*, this ),
+		SAL_STATIC_CAST( XServiceInfo*, this ),
+		SAL_STATIC_CAST( XTypeProvider*, this ),
+		SAL_STATIC_CAST( XFileIdentifierConverter*,this ),
+		SAL_STATIC_CAST( XPropertySet*, this ) );
 	return aRet.hasValue() ? aRet : OWeakObject::queryInterface( rType );
 }
 
@@ -153,25 +153,25 @@ FileProvider::queryInterface(
 
 void SAL_CALL FileProvider::init()
 {
-    if( ! m_pMyShell )
-        m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_True );
+	if( ! m_pMyShell )
+		m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_True );
 }
 
 
 void SAL_CALL
-FileProvider::initialize( 
-    const Sequence< Any >& aArguments ) 
-    throw (Exception, RuntimeException) 
+FileProvider::initialize(
+	const Sequence< Any >& aArguments )
+	throw (Exception, RuntimeException)
 {
-    if( ! m_pMyShell ) {
-        rtl::OUString config;
-        if( aArguments.getLength() > 0 && 
-            (aArguments[0] >>= config) &&
-            config.compareToAscii("NoConfig") == 0 )
-            m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_False );
-        else
-            m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_True );
-    }
+	if( ! m_pMyShell ) {
+		rtl::OUString config;
+		if( aArguments.getLength() > 0 &&
+			(aArguments[0] >>= config) &&
+			config.compareToAscii("NoConfig") == 0 )
+			m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_False );
+		else
+			m_pMyShell = new shell( m_xMultiServiceFactory, this, sal_True );
+	}
 }
 
 
@@ -181,13 +181,13 @@ FileProvider::initialize(
 
 
 XTYPEPROVIDER_IMPL_7( FileProvider,
-				   	  XTypeProvider,
-				   	  XServiceInfo,
-                      XInitialization,
-                      XContentIdentifierFactory,
+					  XTypeProvider,
+					  XServiceInfo,
+					  XInitialization,
+					  XContentIdentifierFactory,
 					  XPropertySet,
-  					  XFileIdentifierConverter,
-  				   	  XContentProvider )
+					  XFileIdentifierConverter,
+					  XContentProvider )
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -204,16 +204,16 @@ FileProvider::getImplementationName()
 sal_Bool SAL_CALL
 FileProvider::supportsService(
 			      const rtl::OUString& ServiceName )
-  throw( RuntimeException )
+	throw( RuntimeException )
 {
-  return ServiceName == rtl::OUString::createFromAscii( "com.sun.star.ucb.FileContentProvider" );
+	return ServiceName == rtl::OUString::createFromAscii( "com.sun.star.ucb.FileContentProvider" );
 }
 
 
 Sequence< rtl::OUString > SAL_CALL
 FileProvider::getSupportedServiceNames(
 				       void )
-  throw( RuntimeException )
+	throw( RuntimeException )
 {
 	return fileaccess::shell::getSupportedServiceNames_static();
 }
@@ -276,15 +276,15 @@ FileProvider::queryContent(
 	throw( IllegalIdentifierException,
 		   RuntimeException)
 {
-    init();
+	init();
 	rtl::OUString aUnc;
 	sal_Bool err = m_pMyShell->getUnqFromUrl( xIdentifier->getContentIdentifier(),
 											  aUnc );
 
-	if(  err )
+	if( err )
 		throw IllegalIdentifierException( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( OSL_LOG_PREFIX ) ), uno::Reference< uno::XInterface >() );
 
-    return Reference< XContent >( new BaseContent( m_pMyShell,xIdentifier,aUnc ) );
+	return Reference< XContent >( new BaseContent( m_pMyShell,xIdentifier,aUnc ) );
 }
 
 
@@ -293,9 +293,9 @@ sal_Int32 SAL_CALL
 FileProvider::compareContentIds(
 				const Reference< XContentIdentifier >& Id1,
 				const Reference< XContentIdentifier >& Id2 )
-  throw( RuntimeException )
+	throw( RuntimeException )
 {
-    init();
+	init();
 	rtl::OUString aUrl1 = Id1->getContentIdentifier();
 	rtl::OUString aUrl2 = Id2->getContentIdentifier();
 
@@ -303,10 +303,10 @@ FileProvider::compareContentIds(
 
 	if ( 0 != iComp )
 	{
-        rtl::OUString aPath1, aPath2;
+		rtl::OUString aPath1, aPath2;
 
-        m_pMyShell->getUnqFromUrl( aUrl1, aPath1 );
-        m_pMyShell->getUnqFromUrl( aUrl2, aPath2 );
+		m_pMyShell->getUnqFromUrl( aUrl1, aPath1 );
+		m_pMyShell->getUnqFromUrl( aUrl2, aPath2 );
 
 		osl::FileBase::RC	error;
 		osl::DirectoryItem	aItem1, aItem2;
@@ -328,7 +328,7 @@ FileProvider::compareContentIds(
 		{
 			iComp = aStatus1.getFileURL().compareTo( aStatus2.getFileURL() );
 
-// Quick hack for Windows to threat all file systems as case insensitive
+// Quick hack for Windows to treat all file systems as case insensitive
 #ifdef	WNT
 			if ( 0 != iComp )
 			{
@@ -351,9 +351,9 @@ FileProvider::compareContentIds(
 Reference< XContentIdentifier > SAL_CALL
 FileProvider::createContentIdentifier(
 				      const rtl::OUString& ContentId )
-  throw( RuntimeException )
+	throw( RuntimeException )
 {
-    init();
+	init();
 	FileContentIdentifier* p = new FileContentIdentifier( m_pMyShell,ContentId,false );
 	return Reference< XContentIdentifier >( p );
 }
@@ -516,8 +516,8 @@ void SAL_CALL FileProvider::initProperties( void )
 #else
 		m_FileSystemNotation = FileSystemNotation::UNKNOWN_NOTATION;
 #endif
-        osl::Security aSecurity;
-        aSecurity.getHomeDir( m_HomeDirectory );
+		osl::Security aSecurity;
+		aSecurity.getHomeDir( m_HomeDirectory );
 
 		// static const sal_Int32 UNKNOWN_NOTATION = (sal_Int32)0;
 		// static const sal_Int32 UNIX_NOTATION = (sal_Int32)1;
@@ -646,7 +646,7 @@ FileProvider::getFileProviderLocality( const rtl::OUString& BaseURL )
 	throw( RuntimeException )
 {
 	// If the base URL is a 'file' URL, return 10 (very 'local'), otherwise
-	// return -1 (missmatch).  What is missing is a fast comparison to ASCII,
+	// return -1 (mismatch). What is missing is a fast comparison to ASCII,
 	// ignoring case:
 	return BaseURL.getLength() >= 5
 		   && (BaseURL[0] == 'F' || BaseURL[0] == 'f')
@@ -664,15 +664,15 @@ rtl::OUString SAL_CALL FileProvider::getFileURLFromSystemPath( const rtl::OUStri
 	rtl::OUString aNormalizedPath;
 	if ( osl::FileBase::getFileURLFromSystemPath( SystemPath,aNormalizedPath ) != osl::FileBase::E_None )
 		return rtl::OUString();
-    
-    return aNormalizedPath;
+
+	return aNormalizedPath;
 }
 
 rtl::OUString SAL_CALL FileProvider::getSystemPathFromFileURL( const rtl::OUString& URL )
 	throw( RuntimeException )
 {
 	rtl::OUString aSystemPath;
-    if (osl::FileBase::getSystemPathFromFileURL( URL,aSystemPath ) != osl::FileBase::E_None )
+	if (osl::FileBase::getSystemPathFromFileURL( URL,aSystemPath ) != osl::FileBase::E_None )
 		return rtl::OUString();
 
 	return aSystemPath;
