@@ -102,12 +102,12 @@ static typelib_TypeClass cpp2uno_call(
 
 	// stack space
 	// parameters
-	void ** pUnoArgs = (void **)alloca( 4 * sizeof(void *) * nParams );
+	void ** pUnoArgs = static_cast<void **>(alloca( 4 * sizeof(void *) * nParams ));
 	void ** pCppArgs = pUnoArgs + nParams;
 	// indizes of values this have to be converted (interface conversion cpp<=>uno)
-	sal_Int32 * pTempIndizes = (sal_Int32 *)(pUnoArgs + (2 * nParams));
+	sal_Int32 * pTempIndizes = reinterpret_cast<sal_Int32 *>(pUnoArgs + (2 * nParams));
 	// type descriptions for reconversions
-	typelib_TypeDescription ** ppTempParamTypeDescr = (typelib_TypeDescription **)(pUnoArgs + (3 * nParams));
+	typelib_TypeDescription ** ppTempParamTypeDescr = reinterpret_cast<typelib_TypeDescription **>(pUnoArgs + (3 * nParams));
 	
 	sal_Int32 nTempIndizes = 0;
 
@@ -241,7 +241,7 @@ static typelib_TypeClass cpp2uno_call(
 				uno_destructData( pUnoReturn, pReturnTypeDescr, 0 );
 			}
 			// complex return ptr is set to return reg
-			*(void **)pRegisterReturn = pCppReturn;
+			*reinterpret_cast<void **>(pRegisterReturn) = pCppReturn;
 		}
 		if ( pReturnTypeDescr )
 		{
@@ -340,19 +340,19 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 				case 0: // queryInterface() opt
 				{
 					typelib_TypeDescription * pTD = 0;
-					TYPELIB_DANGER_GET( &pTD, reinterpret_cast<Type *>( gpreg[2] )->getTypeLibType() );
+					TYPELIB_DANGER_GET( &pTD, static_cast<Type *>( gpreg[2] )->getTypeLibType() );
 					if ( pTD )
 					{
 						XInterface * pInterface = 0;
 						(*pCppI->getBridge()->getCppEnv()->getRegisteredInterface)
 							( pCppI->getBridge()->getCppEnv(),
-							  (void **)&pInterface,
+							  reinterpret_cast<void **>(&pInterface),
 							  pCppI->getOid().pData,
 							  reinterpret_cast<typelib_InterfaceTypeDescription *>( pTD ) );
 
 						if ( pInterface )
 						{
-							::uno_any_construct( reinterpret_cast<uno_Any *>( gpreg[0] ),
+							::uno_any_construct( static_cast<uno_Any *>( gpreg[0] ),
 												 &pInterface, pTD, cpp_acquire );
 
 							pInterface->release();
@@ -455,7 +455,7 @@ unsigned char * codeSnippet( unsigned char * code,
         sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
         bool bHasHiddenParam ) SAL_THROW( () )
 {
-	sal_uInt64 nOffsetAndIndex = ( ( (sal_uInt64) nVtableOffset ) << 32 ) | ( (sal_uInt64) nFunctionIndex );
+	sal_uInt64 nOffsetAndIndex = ( static_cast<sal_uInt64>( nVtableOffset ) << 32 ) | static_cast<sal_uInt64>( nFunctionIndex );
 
 	if ( bHasHiddenParam )
 		nOffsetAndIndex |= 0x80000000;

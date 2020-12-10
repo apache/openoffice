@@ -32,19 +32,28 @@ namespace CPPU_CURRENT_NAMESPACE
 
 void dummy_can_throw_anything( char const * );
 
+typedef unsigned _Unwind_Ptr __attribute__((__mode__(__pointer__)));
+
 // ----- the following structure is compatible with the one declared in libunwind's unwind.h
+// (use forced types)
 
 struct _Unwind_Exception
 {
-    unsigned exception_class __attribute__((__mode__(__DI__)));
+    uint64_t exception_class;
     void * exception_cleanup;
-    unsigned private_1 __attribute__((__mode__(__word__)));
-    unsigned private_2 __attribute__((__mode__(__word__)));
-} __attribute__((__aligned__));
+    uintptr_t private_1;
+    uintptr_t private_2;
+};
 
 struct __cxa_exception
-{ 
-#if __LP64__ // ----- from libcxxabi/src/cxa_exception.hpp
+{
+#if __LP64__
+#if ( COM = CLANG ) && ( CCNUMVER >= 1000000000 )
+    // From LLVM 10 - Added reserved member at top of struct. Who the hell does that?
+    // https://reviews.llvm.org/rG674ec1eb16678b8addc02a4b0534ab383d22fa77
+    void *dummy;
+#endif
+    // ----- from libcxxabi/src/cxa_exception.hpp
     // This is a new field to support C++ 0x exception_ptr.
     // For binary compatibility it is at the start of this
     // struct which is prepended to the object thrown in
