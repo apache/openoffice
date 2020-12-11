@@ -304,6 +304,26 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
         return;
     }
 
+    /*
+     * Handle the case where we are built on llvm 10 (or later) but are running
+     * on an earlier version (eg, community builds). In this situation the
+     * reserved ptr doesn't exist in the struct returned and so the offsets
+     * that header uses are wrong. This assumes that reserved isn't used
+     * and that referenceCount is always >0 in the cases we handle
+     */
+    {
+        void ** oheader = reinterpret_cast<void **>(header);
+        // Does this look like the struct __cxa_exception we were compiled w/?
+        // Agreed, this looks excessive, but this is wonky stuff
+        if (!*oheader && *(oheader+1) && *(oheader+2)) {
+            ; // It is... cool
+        } else {
+            // Nope. it is pre llvm 10. So we back up a slot to offset
+            oheader--;  //
+            header = reinterpret_cast<__cxa_exception *>(oheader);  // type warnings
+        }
+    }
+
 	typelib_TypeDescription * pExcTypeDescr = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
 #if OSL_DEBUG_LEVEL > 1

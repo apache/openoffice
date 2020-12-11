@@ -48,11 +48,11 @@ struct _Unwind_Exception
 struct __cxa_exception
 {
 #if __LP64__
-#if ( COM = CLANG ) && ( CCNUMVER >= 1000000000 )
     // From LLVM 10 - Added reserved member at top of struct. Who the hell does that?
     // https://reviews.llvm.org/rG674ec1eb16678b8addc02a4b0534ab383d22fa77
-    void *dummy;
-#endif
+    // Sure would be nice to be able to test for CCNUMVER >= 1000000000
+    // and COM == CLANG here.
+    void *reserved;
     // ----- from libcxxabi/src/cxa_exception.hpp
     // This is a new field to support C++ 0x exception_ptr.
     // For binary compatibility it is at the start of this
