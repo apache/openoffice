@@ -59,6 +59,7 @@ distclean .PHONY: clean
 
 
 clean .PHONY:
+	@test -n "$(INPATH)" || (echo Build environment not set; exit 1)
 	-rm -rf */$(INPATH)
 	-rm -rf solver/*/$(INPATH)
 .IF "$(ADDITIONAL_REPOSITORIES)"!=""
