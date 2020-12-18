@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -109,7 +109,7 @@ void SAL_CALL AccessibleBrowseBox::disposing()
 	m_pImpl->m_pRowHeaderBar	= NULL;
     m_pImpl->m_aCreator         = Reference< XAccessible >();
 
-    Reference< XAccessible >  xTable = m_pImpl->mxTable;
+    Reference< XAccessible > xTable = m_pImpl->mxTable;
 
 	Reference< XComponent > xComp( m_pImpl->mxTable, UNO_QUERY );
 	if ( xComp.is() )
@@ -272,7 +272,7 @@ AccessibleBrowseBox::implGetHeaderBar( AccessibleBrowseBoxObjType eObjType )
 
     if( eObjType == BBTYPE_ROWHEADERBAR )
         pxMember = &m_pImpl->mxRowHeaderBar;
-    else if( eObjType ==  BBTYPE_COLUMNHEADERBAR )
+    else if( eObjType == BBTYPE_COLUMNHEADERBAR )
         pxMember = &m_pImpl->mxColumnHeaderBar;
 
     if( pxMember )
@@ -375,7 +375,7 @@ Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxAccess::getAccessibl
     DBG_ASSERT( ( m_pContext && m_xContext.is() ) || ( !m_pContext && !m_xContext.is() ),
         "accessibility/extended/AccessibleBrowseBoxAccess::getAccessibleContext: inconsistency!" );
 
-    // if the context died meanwhile (we're no listener, so it won't tell us explicitily when this happens),
+    // if the context died meanwhile (we're no listener, so it won't tell us explicitly when this happens),
     // then reset an re-create.
     if ( m_pContext && !m_pContext->isAlive() )
         m_xContext = m_pContext = NULL;
@@ -389,9 +389,10 @@ Reference< XAccessibleContext > SAL_CALL AccessibleBrowseBoxAccess::getAccessibl
 // -----------------------------------------------------------------------------
 bool AccessibleBrowseBoxAccess::isContextAlive() const
 {
-    return  ( NULL != m_pContext ) && m_pContext->isAlive();
+    return ( NULL != m_pContext ) && m_pContext->isAlive();
 }
 
 // ============================================================================
 
 }   // namespace accessibility
+

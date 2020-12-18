@@ -107,7 +107,7 @@ void pr(ip, file, base)
 	static char	*lastfile;
 	static int	current_len;
 	register int	len, i;
-	char	buf[ BUFSIZ ];
+	char	buf[ OURBUFSIZ ];
 
 	printed = TRUE;
 	len = strlen(ip->i_file)+1;

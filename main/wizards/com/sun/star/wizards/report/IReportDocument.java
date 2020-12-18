@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package com.sun.star.wizards.report;
@@ -32,8 +33,8 @@ import java.util.Vector;
 
 /**
  * New Interface which gives us the possibility to switch on the fly between the old
- * Wizard and the new Sun Report Builder Wizard, which use the same UI.
- * 
+ * Wizard and the new Report Builder Wizard, which use the same UI.
+ *
  * @author ll93751
  */
 public interface IReportDocument
@@ -48,7 +49,7 @@ public interface IReportDocument
 
     // -------------------------------------------------------------------------
     // Access Helper
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /**
      * Gives access to the DB Values
      * @return
@@ -64,7 +65,7 @@ public interface IReportDocument
     public com.sun.star.awt.XWindowPeer getWizardParent();
 
     /**
-     * 
+     *
      * @return the Frame of the document Window or Report Builder Window
      */
     public com.sun.star.frame.XFrame getFrame();
@@ -73,10 +74,10 @@ public interface IReportDocument
 
     // -------------------------------------------------------------------------
     // First step: After entering the table name, select fields
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /**
      * Is called after first step, set Tablename and the fields, which should occur in the Report.
-     * @param _aType 
+     * @param _aType
      * @param TableName
      * @param FieldNames
      */
@@ -94,7 +95,7 @@ public interface IReportDocument
 
     // -------------------------------------------------------------------------
     // Second step: Label field titles
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /**
      * Set new names for the titles
      * @param sFieldTitles
@@ -112,7 +113,7 @@ public interface IReportDocument
     public void liveupdate_changeUserFieldContent(final String FieldName, final String TitleName);
     // -------------------------------------------------------------------------
     // Third step: Grouping
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /* Grouping Page */
     // Document should not hold the grouping information!
     /**
@@ -143,7 +144,7 @@ public interface IReportDocument
     public void setGrouping(String[] aGroupList);
     // -------------------------------------------------------------------------
     // Fourth step: Sorting
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /**
      * Set the list how to sort
      * @param aSort
@@ -151,7 +152,7 @@ public interface IReportDocument
     public void setSorting(String[][] aSort);
     // -------------------------------------------------------------------------
     // Fivth step: Templates / Layout
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /* Template Page */
     public void setPageOrientation(int nOrientation) throws com.sun.star.lang.IllegalArgumentException;
 
@@ -182,7 +183,7 @@ public interface IReportDocument
     public void layout_setupRecordSection(String TemplateName);
     // -------------------------------------------------------------------------
     // finishing
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     // preview (update titlenames)
     // addTextListener
     /**
@@ -224,7 +225,7 @@ public interface IReportDocument
     public void dispose();
     // -------------------------------------------------------------------------
     // Garbage dump
-    // -------------------------------------------------------------------------    
+    // -------------------------------------------------------------------------
     /* DataImport */
     // ???
     // public void addTextSectionCopies();
@@ -257,7 +258,7 @@ public interface IReportDocument
 
     /**
      * check internal invariants
-     * @throws a 
+     * @throws a
      */
     public void checkInvariants() throws java.lang.Exception;
 }

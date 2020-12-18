@@ -141,7 +141,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
     {
-        // build the mangled name for unoName's RTTI typeinfo symbol
+        // RTTI symbol
         OStringBuffer buf( 64 );
         buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
         sal_Int32 index = 0;
@@ -156,7 +156,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
         
         OString symName( buf.makeStringAndClear() );
-        rtti = (type_info *)dlsym( m_hApp, symName.getStr() );
+        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -174,15 +174,11 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 // symbol and rtti-name is nearly identical,
                 // the symbol is prefixed with _ZTI
                 char const * rttiName = symName.getStr() +4;
-#if OSL_DEBUG_LEVEL >= 1
+#if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
                 const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
                 OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
 #endif
-#if 0 // TODO: enable it again when the generated class_type_infos always work.
-      // Forcing the toolchain to create authentic typeinfos is much better though
-      // than the sick concept of reverse-engineering the platform's toolchain
-      // and generating the missing type_infos.
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -196,12 +192,10 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     // this class has no base class
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
-#else
-                rtti = NULL;
-#endif
 
-                bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
-                OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
+                pair< t_rtti_map::iterator, bool > insertion(
+                    m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
+                OSL_ENSURE( insertion.second, "### inserting new generated rtti failed?!" );
             }
             else // taking already generated rtti
             {
@@ -220,9 +214,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 //--------------------------------------------------------------------------------------------------
 static void deleteException( void * pExc )
 {
-    __cxa_exception const * header = ((__cxa_exception const *)pExc - 1);
-    if( !header->exceptionType) // TODO: remove this when getRTTI() always returns non-NULL
-        return; // NOTE: leak for now
+    __cxa_exception const * header = static_cast<__cxa_exception const *>(pExc) - 1;
     typelib_TypeDescription * pTD = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
     ::typelib_typedescription_getByName( &pTD, unoName.pData );
@@ -310,6 +302,26 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
         OSL_ENSURE( 0, cstr.getStr() );
 #endif
         return;
+    }
+
+    /*
+     * Handle the case where we are built on llvm 10 (or later) but are running
+     * on an earlier version (eg, community builds). In this situation the
+     * reserved ptr doesn't exist in the struct returned and so the offsets
+     * that header uses are wrong. This assumes that reserved isn't used
+     * and that referenceCount is always >0 in the cases we handle
+     */
+    {
+        void ** oheader = reinterpret_cast<void **>(header);
+        // Does this look like the struct __cxa_exception we were compiled w/?
+        // Agreed, this looks excessive, but this is wonky stuff
+        if (!*oheader && *(oheader+1) && *(oheader+2)) {
+            ; // It is... cool
+        } else {
+            // Nope. it is pre llvm 10. So we back up a slot to offset
+            oheader--;  //
+            header = reinterpret_cast<__cxa_exception *>(oheader);  // type warnings
+        }
     }
 
 	typelib_TypeDescription * pExcTypeDescr = 0;

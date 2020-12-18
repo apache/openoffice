@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package com.sun.star.wizards.reportbuilder;
@@ -66,7 +67,7 @@ import java.util.logging.Logger;
 
 /**
  * This class use the IReportDocument Interface to communicate between the UI
- * and the ReportBuilderLayouter which communicates to the new Sun Report Builder.
+ * and the ReportBuilderLayouter which communicates to the new Report Builder.
  *
  * @author ll93751
  */
@@ -81,7 +82,7 @@ public class ReportBuilderImplementation extends ReportImplementationHelper
 
     private ReportBuilderImplementation(XMultiServiceFactory _serviceFactory)
     {
-        // creates an access to the ReportBuilder Extension
+        // creates an access to the Report Builder Extension
         super(_serviceFactory, ReportLayouter.SOOPTLANDSCAPE);
     }
 
@@ -233,8 +234,8 @@ public class ReportBuilderImplementation extends ReportImplementationHelper
     }
 
     /**
-     * Returns the Frame of the underlieing Document
-     * @return Returns the Frame of the parent (underlieing) Document
+     * Returns the Frame of the underlying Document
+     * @return Returns the Frame of the parent (underlying) Document
      */
     public XFrame getFrame()
     {
@@ -324,7 +325,7 @@ public class ReportBuilderImplementation extends ReportImplementationHelper
 
     /**
      * Change the current Layouter by a new one with the given Name _sName.
-     * If there exist no other layouter with the given name, nothing happens, the layouter will not change to 
+     * If there exist no other layouter with the given name, nothing happens, the layouter will not change to
      * an illegal one.
      * @param _sName Name of the other layouter.
      */
@@ -559,7 +560,7 @@ public class ReportBuilderImplementation extends ReportImplementationHelper
     }
 
     /**
-     * Helper function to get a com.sun.star.wizards.report.layout.ReportBuilderLayouter by it's name
+     * Helper function to get a com.sun.star.wizards.report.layout.ReportBuilderLayouter by its name
      *
      * @param _sClassName
      * @return the object or null
@@ -646,7 +647,7 @@ public class ReportBuilderImplementation extends ReportImplementationHelper
         String[] a = new String[getLayoutMap().size()];
         String[] b = new String[getLayoutMap().size()];
 
-        // run through the whole layoutmap and 
+        // run through the whole layoutmap and
         final Set aKeys = getLayoutMap().keySet();
         final Iterator aKeyIterator = aKeys.iterator();
         int i = 0;

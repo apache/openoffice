@@ -659,8 +659,8 @@ void redirect(line, makefile)
 {
 	struct stat	st;
 	FILE	*fdin, *fdout;
-	char	backup[ BUFSIZ ],
-		buf[ BUFSIZ ];
+	char	backup[ OURBUFSIZ ],
+		buf[ OURBUFSIZ ];
 	boolean	found = FALSE;
 	int	len;
 
@@ -699,7 +699,7 @@ void redirect(line, makefile)
 	if ((fdout = freopen(makefile, "w", stdout)) == NULL)
 		fatalerr("cannot open \"%s\"\n", backup);
 	len = strlen(line);
-	while (!found && fgets(buf, BUFSIZ, fdin)) {
+	while (!found && fgets(buf, OURBUFSIZ, fdin)) {
 		if (*buf == '#' && strncmp(line, buf, len) == 0)
 			found = TRUE;
 		fputs(buf, fdout);
@@ -710,7 +710,7 @@ void redirect(line, makefile)
 			line);
 		puts(line); /* same as fputs(fdout); but with newline */
 	} else if (append) {
-	    while (fgets(buf, BUFSIZ, fdin)) {
+	    while (fgets(buf, OURBUFSIZ, fdin)) {
 		fputs(buf, fdout);
 	    }
 	}

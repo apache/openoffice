@@ -832,6 +832,7 @@ sub find_epm_on_system
 #################################################
 # Determining the epm patch state
 # saved in $installer::globals::is_special_epm
+# NOTE: W/ EPM 5.0.0 and later, it is ALWAYS special
 #################################################
 
 sub set_patch_state
@@ -846,7 +847,8 @@ sub set_patch_state
 	while (<EPMPATCH>)
 	{
 		chop;
-		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; }
+		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; last; }
+		if ( $_ =~ /Apache OpenOffice compatible/ ) { $installer::globals::is_special_epm = 1; last; }
 	}
 			
 	close (EPMPATCH);
@@ -925,6 +927,7 @@ sub call_epm
 	if ( $installer::globals::epmoutpath ne "" ) { $outdirstring = " --output-dir $installer::globals::epmoutpath"; }
 	
 	# Debian package build needs fakeroot or our LD_PRELOAD hack for correct rights
+	# NOTE: EPM 5.0.0 or later also uses fakeroot w/ dpkg if available
 	
 	my $ldpreloadstring = "";
 	
