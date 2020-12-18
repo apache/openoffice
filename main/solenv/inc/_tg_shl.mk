@@ -175,7 +175,7 @@ $(USE_SHL1VERSIONMAP) .ERRREMOVE: $(SHL1VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL1VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL1VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -715,7 +715,7 @@ $(USE_SHL2VERSIONMAP) .ERRREMOVE: $(SHL2VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL2VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL2VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -1255,7 +1255,7 @@ $(USE_SHL3VERSIONMAP) .ERRREMOVE: $(SHL3VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL3VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL3VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -1795,7 +1795,7 @@ $(USE_SHL4VERSIONMAP) .ERRREMOVE: $(SHL4VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL4VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL4VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -2335,7 +2335,7 @@ $(USE_SHL5VERSIONMAP) .ERRREMOVE: $(SHL5VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL5VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL5VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -2875,7 +2875,7 @@ $(USE_SHL6VERSIONMAP) .ERRREMOVE: $(SHL6VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL6VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL6VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -3415,7 +3415,7 @@ $(USE_SHL7VERSIONMAP) .ERRREMOVE: $(SHL7VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL7VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL7VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -3955,7 +3955,7 @@ $(USE_SHL8VERSIONMAP) .ERRREMOVE: $(SHL8VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL8VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL8VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -4495,7 +4495,7 @@ $(USE_SHL9VERSIONMAP) .ERRREMOVE: $(SHL9VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL9VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL9VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
@@ -5035,7 +5035,7 @@ $(USE_SHL10VERSIONMAP) .ERRREMOVE: $(SHL10VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3"
+.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL10VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL10VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@
