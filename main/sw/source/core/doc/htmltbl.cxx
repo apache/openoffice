@@ -953,7 +953,11 @@ void SwHTMLTableLayout::AutoLayoutPass1()
 			// relativen Breite einer Spalte multipliziert. Dadurch stimmen
 			// dann die Breitenverhaeltnisse der Spalten untereinander.
 			// Ausserdem wird der Faktor berechnet, um den die Zelle dadurch
+<<<<<<< HEAD
 			// breiter geworden ist als die Minimalbreite.
+=======
+			// breiter gworden ist als die Minimalbreite.
+>>>>>>> Fixed typo (minmal -> minimal)
 			// Im 2. Schritt werden dann die berechneten Breiten durch diesen
 			// Faktor geteilt. Dadurch bleibt die Breite (mind.) einer Zelle
 			// erhalten und dient als Ausgangsbasis fuer die andern Breiten.
