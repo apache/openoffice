@@ -35,7 +35,7 @@ target_empty=warn_target_empty
 CDEFS+=-DSTL_OS2_BUILDING
 .ENDIF
 .IF "$(VISIBILITY_HIDDEN)" != ""
-.IF "$(COMNAME)" == "gcc3" && "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
+.IF "$(COMNAME)" == "gcc3" && "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE" && "$(OS)"!="MACOSX"
 .IF "$(GUI)" != "OS2"
 CFLAGS += -fvisibility=hidden
 .ENDIF

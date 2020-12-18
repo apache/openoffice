@@ -25,7 +25,7 @@
 CDEFS += -DFORMULA_DLLIMPLEMENTATION
 
 # set default symbol visibility / scope to hidden
-.IF "$(COMNAME)" == "gcc3"
+.IF "$(COMNAME)" == "gcc3" && "$(OS)"!="MACOSX"
 .IF "$(HAVE_GCC_VISIBILITY_FEATURE)" == "TRUE"
 CFLAGS += -fvisibility=hidden
 .ENDIF # HAVE_GCC_VISIBILITY_FEATURE
