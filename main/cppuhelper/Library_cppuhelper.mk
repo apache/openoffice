@@ -33,8 +33,10 @@ else ifeq ($(COMNAME),sunpro5)
 $(eval $(call gb_Library_set_versionmap,cppuhelper,$(SRCDIR)/cppuhelper/source/cc5_solaris_sparc.map))
 else ifeq ($(GUI)$(COMNAME),OS2gcc3)
 $(eval $(call gb_Library_set_versionmap,cppuhelper,$(SRCDIR)/cppuhelper/source/gcc3os2.map))
-else ifneq ($(OS),MACOSX)
+else
+ifneq ($(OS),MACOSX)
 $(eval $(call gb_Library_set_versionmap,cppuhelper,$(SRCDIR)/cppuhelper/source/gcc3.map))
+endif
 endif
 
 
