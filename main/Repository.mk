@@ -217,6 +217,7 @@ $(eval $(call gb_Helper_register_libraries,PLAINLIBS_URE, \
 	jpipx \
 	msci_uno \
 	mscx_uno \
+	s5abi_uno \
 	sunjavaplugin \
 	sunpro5_uno \
 	xmlreader \
