@@ -166,8 +166,11 @@ $(DESTDIRSETTINGS)/component.uno.def : $(PRJ)/settings/component.uno.def
 
 $(DESTDIRSETTINGS)/component.uno.map : $(SOLARENV)/bin/addsym.awk $(SOLARENV)/src/component.map
 	@@-$(RM) -f $@
-.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
+.IF "$(COMID)"=="gcc3"
 	tr -d "\015" < $(SOLARENV)/src/component.map | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
+.IF "$(OS)"=="MACOSX"
+	tr -d "\015" < $(SOLARENV)/src/component.map | tail -n +3 | head -3 | sed -e 's/.*component/_component/g' -e 's/;[ ]*//' > $@
+.ENDIF
 .ELSE           # "$(COMID)"=="gcc3"
 	tr -d "\015" < $(SOLARENV)/src/component.map > $@
 .ENDIF          # "$(COMID)"=="gcc3"

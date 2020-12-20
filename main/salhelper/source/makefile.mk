@@ -70,7 +70,7 @@ SHL1VERSIONMAP=mscx.map
 SHL1VERSIONMAP=gcc3os2.map
 .ELIF "$(COMNAME)"=="sunpro5"
 SHL1VERSIONMAP=sols.map
-.ELIF "$(COMNAME)"=="gcc3" && "$(OS)"!="MACOSX"
+.ELIF "$(COMNAME)"=="gcc3"
 SHL1VERSIONMAP=gcc3.map
 .ENDIF
 

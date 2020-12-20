@@ -180,7 +180,7 @@ $(USE_SHL$(TNR)VERSIONMAP) .ERRREMOVE: $(SHL$(TNR)VERSIONMAP)
 .ENDIF
 # Its questionable if the following condition '.IF "$(COMID)"=="gcc3"' makes sense and what
 # happens if somebody will change it in the future
-.IF "$(COMID)"=="gcc3" && "$(OS)"!="MACOSX"
+.IF "$(COMID)"=="gcc3"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL$(TNR)VERSIONMAP) | $(AWK) -f $(SOLARENV)/bin/addsym.awk > $@
 .ELIF "$(COMNAME)"=="sunpro5"
 	$(COMMAND_ECHO) tr -d "\015" < $(SHL$(TNR)VERSIONMAP) | $(GREP) -v $(IGNORE_SYMBOLS) > $@

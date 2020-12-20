@@ -182,9 +182,7 @@ SHL1VERSIONMAP=cc5_solaris_sparc.map
 .ELIF "$(GUI)$(COMNAME)"=="OS2gcc3"
 SHL1VERSIONMAP=gcc3os2.map
 .ELSE
-.IF "$(OS)" != "MACOSX"
 SHL1VERSIONMAP=gcc3.map
-.ENDIF
 .ENDIF
 
 # --- Targets ------------------------------------------------------

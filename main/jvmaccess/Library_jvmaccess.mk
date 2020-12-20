@@ -30,9 +30,7 @@ $(eval $(call gb_Library_set_versionmap,jvmaccess,$(SRCDIR)/jvmaccess/util/cc5_s
 else ifeq ($(GUI)$(COM),WNTGCC)
 $(eval $(call gb_Library_set_versionmap,jvmaccess,$(SRCDIR)/jvmaccess/util/mingw.map))
 else ifeq ($(COMNAME),gcc3)
-ifneq ($(OS),MACOSX)
 $(eval $(call gb_Library_set_versionmap,jvmaccess,$(SRCDIR)/jvmaccess/util/gcc3.map))
-endif
 endif
 
 $(eval $(call gb_Library_set_include,jvmaccess,\

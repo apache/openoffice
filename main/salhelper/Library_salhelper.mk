@@ -48,9 +48,7 @@ $(eval $(call gb_Library_set_versionmap,salhelper,$(SRCDIR)/salhelper/source/gcc
 else ifeq ($(COMNAME),sunpro5)
 $(eval $(call gb_Library_set_versionmap,salhelper,$(SRCDIR)/salhelper/source/sols.map))
 else ifeq ($(COMNAME),gcc3)
-ifneq ($(OS),MACOSX)
 $(eval $(call gb_Library_set_versionmap,salhelper,$(SRCDIR)/salhelper/source/gcc3.map))
-endif
 endif
 
 $(eval $(call gb_Library_add_linked_libs,salhelper,\
