@@ -416,48 +416,15 @@ $(eval $(call gb_Library_add_libs,$(COMNAME)_uno,\
 	-ldl \
 ))
 
-#########################################################
-else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),MACOSX-INTEL-gcc3)
-#########################################################
-
-$(eval $(call gb_Library_add_exception_objects,$(COMNAME)_uno,\
-	bridges/source/cpp_uno/gcc3_macosx_intel/except \
-	bridges/source/cpp_uno/gcc3_macosx_intel/cpp2uno \
-	bridges/source/cpp_uno/gcc3_macosx_intel/uno2cpp \
-))
-
-$(eval $(call gb_Library_add_asmobjects,$(COMNAME)_uno,\
-	bridges/source/cpp_uno/gcc3_macosx_intel/call \
-))
-
 ###########################################################
-else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),MACOSX-POWERPC-gcc3)
+else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),MACOSX-X86_64-s5abi)
 ###########################################################
 
 $(eval $(call gb_Library_add_exception_objects,$(COMNAME)_uno,\
-	bridges/source/cpp_uno/gcc3_macosx_powerpc/except \
-	bridges/source/cpp_uno/gcc3_macosx_powerpc/cpp2uno \
-	bridges/source/cpp_uno/gcc3_macosx_powerpc/uno2cpp \
-))
-
-$(eval $(call gb_LinkTarget_set_cxx_optimization, \
-	bridges/source/cpp_uno/gcc3_macosx_powerpc/uno2cpp \
-, $(gb_COMPILERNOOPTFLAGS) \
-))
-
-$(eval $(call gb_Library_add_linked_libs,$(COMNAME)_uno,\
-        dl \
-))
-
-###########################################################
-else ifeq ($(OS)-$(CPUNAME)-$(COMNAME),MACOSX-X86_64-gcc3)
-###########################################################
-
-$(eval $(call gb_Library_add_exception_objects,$(COMNAME)_uno,\
-	bridges/source/cpp_uno/gcc3_macosx_x86-64/abi \
-	bridges/source/cpp_uno/gcc3_macosx_x86-64/except \
-	bridges/source/cpp_uno/gcc3_macosx_x86-64/cpp2uno \
-	bridges/source/cpp_uno/gcc3_macosx_x86-64/uno2cpp \
+	bridges/source/cpp_uno/s5abi_macosx_x86-64/abi \
+	bridges/source/cpp_uno/s5abi_macosx_x86-64/except \
+	bridges/source/cpp_uno/s5abi_macosx_x86-64/cpp2uno \
+	bridges/source/cpp_uno/s5abi_macosx_x86-64/uno2cpp \
 ))
 
 #########################################################
