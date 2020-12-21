@@ -5019,16 +5019,11 @@ AC_SUBST(NSS_LIBS)
 dnl ===================================================================
 dnl Check for system openssl
 dnl ===================================================================
-if test "$_os" = "Darwin" && test "$with_system_openssl" != "no"; then
-   with_system_openssl=yes
-fi
 AC_MSG_CHECKING([which libssl to use])
 if test -n "$with_system_openssl" -o -n "$with_system_libs" && \
         test "$with_system_openssl" != "no"; then
     AC_MSG_RESULT([external])
-    # Mac OS builds should get out without extra stuff is the Mac porters'
-    # wish. And pkg-config is although Xcode ships a .pc for openssl
-    if test "$_os" = "Darwin" -o "$_os" = "FreeBSD"; then
+    if test "$_os" = "FreeBSD"; then
         OPENSSL_CFLAGS=
         OPENSSL_LIBS="-lssl -lcrypto"
     else
