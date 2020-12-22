@@ -785,9 +785,9 @@ void AquaSalInstance::Yield( bool bWait, bool bHandleAllCurrentEvents )
     {
         // #i103162#
         // wait until any thread (most likely the main thread)
-        // has dispatched an event, cop out at 500 ms
+        // has dispatched an event, cop out at 100 ms
         sal_uLong nCount;
-        TimeValue aVal = { 0, 500000000 };
+        TimeValue aVal = { 0, 100000000 };
         osl_resetCondition( maWaitingYieldCond );
         nCount = ReleaseYieldMutex();
         osl_waitCondition( maWaitingYieldCond, &aVal );
