@@ -102,7 +102,7 @@ static typelib_TypeClass cpp2uno_call(
 
 	// stack space
 	// parameters
-	void ** pUnoArgs = static_cast<void **>(alloca( 4 * sizeof(void *) * nParams ));
+	void ** pUnoArgs = reinterpret_cast<void **>(alloca( 4 * sizeof(void *) * nParams ));
 	void ** pCppArgs = pUnoArgs + nParams;
 	// indizes of values this have to be converted (interface conversion cpp<=>uno)
 	sal_Int32 * pTempIndizes = reinterpret_cast<sal_Int32 *>(pUnoArgs + (2 * nParams));
@@ -340,7 +340,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 				case 0: // queryInterface() opt
 				{
 					typelib_TypeDescription * pTD = 0;
-					TYPELIB_DANGER_GET( &pTD, static_cast<Type *>( gpreg[2] )->getTypeLibType() );
+					TYPELIB_DANGER_GET( &pTD, reinterpret_cast<Type *>( gpreg[2] )->getTypeLibType() );
 					if ( pTD )
 					{
 						XInterface * pInterface = 0;
@@ -352,7 +352,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 
 						if ( pInterface )
 						{
-							::uno_any_construct( static_cast<uno_Any *>( gpreg[0] ),
+							::uno_any_construct( reinterpret_cast<uno_Any *>( gpreg[0] ),
 												 &pInterface, pTD, cpp_acquire );
 
 							pInterface->release();
@@ -392,7 +392,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 }
 
 //==================================================================================================
-void privateSnippetExecutor( void )
+extern "C" void privateSnippetExecutor( void )
 {
 	asm volatile (
 		"	subq	$160, %rsp\n"
@@ -462,14 +462,11 @@ unsigned char * codeSnippet( unsigned char * code,
 
 	// movq $<nOffsetAndIndex>, %r10
     *reinterpret_cast<sal_uInt16 *>( code ) = 0xba49;
-    *reinterpret_cast<sal_uInt16 *>( code + 2 ) = nOffsetAndIndex & 0xFFFF;
-    *reinterpret_cast<sal_uInt32 *>( code + 4 ) = nOffsetAndIndex >> 16;
-    *reinterpret_cast<sal_uInt16 *>( code + 8 ) = nOffsetAndIndex >> 48;
+    *reinterpret_cast<sal_uInt64 *>( code + 2 ) = nOffsetAndIndex;
 
 	// movq $<address of the privateSnippetExecutor>, %r11
     *reinterpret_cast<sal_uInt16 *>( code + 10 ) = 0xbb49;
-    *reinterpret_cast<sal_uInt32 *>( code + 12 ) = reinterpret_cast<sal_uInt64>(privateSnippetExecutor);
-    *reinterpret_cast<sal_uInt32 *>( code + 16 ) = reinterpret_cast<sal_uInt64>(privateSnippetExecutor) >> 32;
+    *reinterpret_cast<sal_uInt64 *>( code + 12 ) = reinterpret_cast<sal_uInt64>( privateSnippetExecutor );
 
 	// jmpq *%r11
 	*reinterpret_cast<sal_uInt32 *>( code + 20 ) = 0x00e3ff49;

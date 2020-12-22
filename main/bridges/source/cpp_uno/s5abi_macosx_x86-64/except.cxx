@@ -156,7 +156,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
         
         OString symName( buf.makeStringAndClear() );
-        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
+        rtti = reinterpret_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -193,9 +193,8 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
 
-                pair< t_rtti_map::iterator, bool > insertion(
-                    m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
-                OSL_ENSURE( insertion.second, "### inserting new generated rtti failed?!" );
+                bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
+                OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
             }
             else // taking already generated rtti
             {
@@ -312,15 +311,11 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
      * and that referenceCount is always >0 in the cases we handle
      */
     {
-        void ** oheader = reinterpret_cast<void **>(header);
         // Does this look like the struct __cxa_exception we were compiled w/?
-        // Agreed, this looks excessive, but this is wonky stuff
-        if (!*oheader && *(oheader+1) && *(oheader+2)) {
-            ; // It is... cool
-        } else {
+        // That is, is the 1st element NULL (*reserved)?
+        if (*reinterpret_cast<void **>(header)) {
             // Nope. it is pre llvm 10. So we back up a slot to offset
-            oheader--;  //
-            header = reinterpret_cast<__cxa_exception *>(oheader);  // type warnings
+            header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) - 1);
         }
     }
 
