@@ -109,8 +109,8 @@ public:
 
 class __si_class_type_info : public __class_type_info
 {
-public:
         const __class_type_info* mpBaseType;
+public:
         explicit __si_class_type_info( const char* pRttiName, __class_type_info* pBaseType)
         : __class_type_info( pRttiName), mpBaseType( pBaseType)
         {}

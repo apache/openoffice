@@ -37,7 +37,7 @@ import com.sun.star.frame.XModel;
     variable can be used to access the document for which this script
     was invoked.
 
-    Methods available are: 
+    Methods available are:
 
         XSCRIPTCONTEXT.getDocument() returns XModel
         XSCRIPTCONTEXT.getInvocationContext() returns XScriptInvocationContext or NULL
@@ -49,11 +49,12 @@ import com.sun.star.frame.XModel;
 
         http://api.openoffice.org/docs/DevelopersGuide/ScriptingFramework/ScriptingFramework.xhtml
 */
-        
+
 // Hello World in BeanShell
 import com.sun.star.text.XTextDocument;
 import com.sun.star.text.XText;
 import com.sun.star.text.XTextRange;
+import bsh.Interpreter;
 
 oDoc = UnoRuntime.queryInterface(XModel.class,XSCRIPTCONTEXT.getInvocationContext());
 if ( oDoc == null )
@@ -62,7 +63,27 @@ if ( oDoc == null )
 xTextDoc = (XTextDocument) UnoRuntime.queryInterface(XTextDocument.class,oDoc);
 xText = xTextDoc.getText();
 xTextRange = xText.getEnd();
-xTextRange.setString( "Hello World (in BeanShell)" );
+
+sb = new StringBuilder();
+sb.append("Hello World (in BeanShell v" + Interpreter.VERSION + ") \n\n");
+
+//
+import java.util.Map;
+import java.util.TreeMap;
+
+env=new TreeMap(System.getenv());
+
+ks=env.keySet();  // get keys
+ksit=ks.iterator(); // get iterator
+
+sb.append( "ENV Dump:\n" );
+while ( ksit.hasNext() )
+{
+      envName=ksit.next();
+      sb .append("\n[") .append(envName) .append("]=[") .append(env.get(envName)) .append("] ");
+}
+
+xText.getEnd().setString( sb.toString() );
 
 // BeanShell OpenOffice.org scripts should always return 0
 return 0;
