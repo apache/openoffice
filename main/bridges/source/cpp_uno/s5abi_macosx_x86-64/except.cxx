@@ -156,7 +156,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
         
         OString symName( buf.makeStringAndClear() );
-        rtti = reinterpret_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
+        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -311,11 +311,11 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
      * and that referenceCount is always >0 in the cases we handle
      */
     {
-        // Does this look like the struct __cxa_exception we were compiled w/?
+        // Does this look like the newer struct __cxa_exception?
         // That is, is the 1st element NULL (*reserved)?
-        if (*reinterpret_cast<void **>(header)) {
-            // Nope. it is pre llvm 10. So we back up a slot to offset
-            header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) - 1);
+        if (*reinterpret_cast<void **>(header) == NULL) {
+            // Yes. So we move up a slot to offset
+            header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) + 1);
         }
     }
 
