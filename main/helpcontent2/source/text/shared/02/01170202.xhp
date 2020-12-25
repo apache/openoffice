@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textshared0201170202xml" indexer="include" status="PUBLISH">
          <title xml-lang="en-US" id="tit">Events</title>
@@ -37,12 +36,12 @@
          <bookmark_value>events;in forms</bookmark_value>
 </bookmark>
 <paragraph xml-lang="en-US" id="hd_id3150499" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/02/01170202.xhp" name="Events">Events</link></paragraph>
-         <paragraph xml-lang="en-US" id="par_id3147043" role="paragraph" l10n="U" oldref="2">The<emph> Events </emph>tab page, allows you to assign a macro to certain events which occur in a form.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147043" role="paragraph" l10n="U" oldref="2">The <emph>Events</emph> tab page, allows you to assign a macro to certain events which occur in a form.</paragraph>
       </section>
       <section id="howtoget">
          <embed href="text/shared/00/00040501.xhp#formulareigenschaftenereignisse"/>
       </section>
-      <paragraph xml-lang="en-US" id="par_id3159233" role="paragraph" l10n="U" oldref="3">To link an event with a macro, first write a macro that contains all the commands to be executed when the event happens. Then assign this macro to the respective event by clicking the <emph>... </emph>button beside the corresponding event. The<emph> Assign Macro </emph>dialog opens, where you can select the macro.</paragraph>
+      <paragraph xml-lang="en-US" id="par_id3159233" role="paragraph" l10n="U" oldref="3">To link an event with a macro, first write a macro that contains all the commands to be executed when the event happens. Then assign this macro to the respective event by clicking the <emph>...</emph> button beside the corresponding event. The <emph>Assign Macro</emph> dialog opens, where you can select the macro.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3149182" role="paragraph" l10n="U" oldref="29">The following actions can be configured individually, meaning that you can use your own dialogs to depict an action:</paragraph>
       <list type="ordered">
          <listitem>
@@ -151,19 +150,19 @@
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_POSITIONING" id="bm_id3155413" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3154012" role="heading" level="2" l10n="U"
                     oldref="48">Before record change</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3149664" role="paragraph" l10n="U" oldref="60"><ahelp hid="HID_EVT_POSITIONING">The<emph> Before record change </emph>event occurs before the current record pointer is changed.</ahelp>. For example, the linked macro can prevent this action by returning "FALSE".</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3149664" role="paragraph" l10n="U" oldref="60"><ahelp hid="HID_EVT_POSITIONING">The<emph> Before record change </emph>event occurs before the current record pointer is changed.</ahelp> For example, the linked macro can prevent this action by returning "FALSE".</paragraph>
       </section>
       <section id="Section3">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_POSITIONED" id="bm_id3150420" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3157975" role="heading" level="2" l10n="U"
                     oldref="49">After record change</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3154098" role="paragraph" l10n="U" oldref="61"><ahelp hid="HID_EVT_POSITIONED">The<emph> After record change </emph>event occurs directly after the current record pointer has been changed.</ahelp>.</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3154098" role="paragraph" l10n="U" oldref="61"><ahelp hid="HID_EVT_POSITIONED">The<emph> After record change </emph>event occurs directly after the current record pointer has been changed.</ahelp></paragraph>
       </section>
       <section id="Section2">
 <bookmark xml-lang="en-US" branch="hid/EXTENSIONS_HID_EVT_APPROVEPARAMETER" id="bm_id3149298" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3151076" role="heading" level="2" l10n="U"
                     oldref="50">Fill parameters</paragraph>
-         <paragraph xml-lang="en-US" id="par_id3147396" role="paragraph" l10n="U" oldref="62"><ahelp hid="HID_EVT_APPROVEPARAMETER">The<emph> Fill parameters </emph>event occurs when the form to be loaded has parameters that must be filled out.</ahelp> For example, the data source of the form can be the following SQL command:</paragraph>
+         <paragraph xml-lang="en-US" id="par_id3147396" role="paragraph" l10n="U" oldref="62"><ahelp hid="HID_EVT_APPROVEPARAMETER">The <emph>Fill parameters</emph> event occurs when the form to be loaded has parameters that must be filled out.</ahelp> For example, the data source of the form can be the following SQL command:</paragraph>
          <paragraph xml-lang="en-US" id="par_id3148773" role="paragraph" l10n="U" oldref="63">SELECT * FROM address WHERE name=:name</paragraph>
          <paragraph xml-lang="en-US" id="par_id3149581" role="paragraph" l10n="U" oldref="64">Here :name is a parameter that must be filled out when loading. The parameter is automatically filled out from the parent form if possible. If the parameter cannot be filled out, this event is called and a linked macro can fill out the parameter.</paragraph>
       </section>
