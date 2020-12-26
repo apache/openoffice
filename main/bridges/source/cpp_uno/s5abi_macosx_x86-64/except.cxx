@@ -141,7 +141,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
     {
-        // build the mangled name for unoName's RTTI typeinfo symbol
+        // RTTI symbol
         OStringBuffer buf( 64 );
         buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
         sal_Int32 index = 0;
@@ -156,7 +156,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
         
         OString symName( buf.makeStringAndClear() );
-        rtti = (type_info *)dlsym( m_hApp, symName.getStr() );
+        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -174,15 +174,12 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 // symbol and rtti-name is nearly identical,
                 // the symbol is prefixed with _ZTI
                 char const * rttiName = symName.getStr() +4;
-#if OSL_DEBUG_LEVEL >= 1
+#if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
                 const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
                 OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
 #endif
-#if 0 // TODO: enable it again when the generated class_type_infos always work.
-      // Forcing the toolchain to create authentic typeinfos is much better though
-      // than the sick concept of reverse-engineering the platform's toolchain
-      // and generating the missing type_infos.
+#if 0
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -197,9 +194,8 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
 #else
-                rtti = NULL;
+				rtti = NULL;
 #endif
-
                 bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
                 OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
             }
@@ -220,7 +216,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 //--------------------------------------------------------------------------------------------------
 static void deleteException( void * pExc )
 {
-    __cxa_exception const * header = ((__cxa_exception const *)pExc - 1);
+    __cxa_exception const * header = static_cast<__cxa_exception const *>(pExc) - 1;
     if( !header->exceptionType) // TODO: remove this when getRTTI() always returns non-NULL
         return; // NOTE: leak for now
     typelib_TypeDescription * pTD = 0;
@@ -242,7 +238,7 @@ void raiseException( uno_Any * pUnoExc, uno_Mapping * pUno2Cpp )
         OUStringToOString(
             *reinterpret_cast< OUString const * >( &pUnoExc->pType->pTypeName ),
             RTL_TEXTENCODING_ASCII_US ) );
-    fprintf( stderr, "> uno exception occured: %s\n", cstr.getStr() );
+    fprintf( stderr, "> uno exception occurred: %s\n", cstr.getStr() );
 #endif
     void * pCppExc;
     type_info * rtti;
@@ -312,11 +308,27 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
         return;
     }
 
+    /*
+     * Handle the case where we are built on llvm 10 (or later) but are running
+     * on an earlier version (eg, community builds). In this situation the
+     * reserved ptr doesn't exist in the struct returned and so the offsets
+     * that header uses are wrong. This assumes that reserved isn't used
+     * and that referenceCount is always >0 in the cases we handle
+     */
+    {
+        // Does this look like the newer struct __cxa_exception?
+        // That is, is the 1st element NULL (*reserved)?
+        if (*reinterpret_cast<void **>(header) == NULL) {
+            // Yes. So we move up a slot to offset
+            header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) + 1);
+        }
+    }
+
 	typelib_TypeDescription * pExcTypeDescr = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
 #if OSL_DEBUG_LEVEL > 1
     OString cstr_unoName( OUStringToOString( unoName, RTL_TEXTENCODING_ASCII_US ) );
-    fprintf( stderr, "> c++ exception occured: %s\n", cstr_unoName.getStr() );
+    fprintf( stderr, "> c++ exception occurred: %s\n", cstr_unoName.getStr() );
 #endif
 	typelib_typedescription_getByName( &pExcTypeDescr, unoName.pData );
     if (0 == pExcTypeDescr)

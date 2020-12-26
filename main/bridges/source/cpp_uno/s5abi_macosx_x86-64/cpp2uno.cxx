@@ -102,12 +102,12 @@ static typelib_TypeClass cpp2uno_call(
 
 	// stack space
 	// parameters
-	void ** pUnoArgs = (void **)alloca( 4 * sizeof(void *) * nParams );
+	void ** pUnoArgs = reinterpret_cast<void **>(alloca( 4 * sizeof(void *) * nParams ));
 	void ** pCppArgs = pUnoArgs + nParams;
 	// indizes of values this have to be converted (interface conversion cpp<=>uno)
-	sal_Int32 * pTempIndizes = (sal_Int32 *)(pUnoArgs + (2 * nParams));
+	sal_Int32 * pTempIndizes = reinterpret_cast<sal_Int32 *>(pUnoArgs + (2 * nParams));
 	// type descriptions for reconversions
-	typelib_TypeDescription ** ppTempParamTypeDescr = (typelib_TypeDescription **)(pUnoArgs + (3 * nParams));
+	typelib_TypeDescription ** ppTempParamTypeDescr = reinterpret_cast<typelib_TypeDescription **>(pUnoArgs + (3 * nParams));
 	
 	sal_Int32 nTempIndizes = 0;
 
@@ -117,10 +117,7 @@ static typelib_TypeClass cpp2uno_call(
 
 		int nUsedGPR = 0;
 		int nUsedSSE = 0;
-#if OSL_DEBUG_LEVEL > 0
-		bool bFitsRegisters =
-#endif
-			x86_64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedSSE );
+		bool bFitsRegisters = x86_64::examine_argument( rParam.pTypeRef, false, nUsedGPR, nUsedSSE );
 		if ( !rParam.bOut && bridges::cpp_uno::shared::isSimpleType( rParam.pTypeRef ) ) // value
 		{
 			// Simple types must fit exactly one register on x86_64
@@ -194,7 +191,7 @@ static typelib_TypeClass cpp2uno_call(
 	// invoke uno dispatch call
 	(*pThis->getUnoI()->pDispatcher)( pThis->getUnoI(), pMemberTypeDescr, pUnoReturn, pUnoArgs, &pUnoExc );
 	
-	// in case an exception occured...
+	// in case an exception occurred...
 	if ( pUnoExc )
 	{
 		// destruct temporary in/inout params
@@ -213,7 +210,7 @@ static typelib_TypeClass cpp2uno_call(
 		// is here for dummy
 		return typelib_TypeClass_VOID;
 	}
-	else // else no exception occured...
+	else // else no exception occurred...
 	{
 		// temporary params
 		for ( ; nTempIndizes--; )
@@ -244,7 +241,7 @@ static typelib_TypeClass cpp2uno_call(
 				uno_destructData( pUnoReturn, pReturnTypeDescr, 0 );
 			}
 			// complex return ptr is set to return reg
-			*(void **)pRegisterReturn = pCppReturn;
+			*reinterpret_cast<void **>(pRegisterReturn) = pCppReturn;
 		}
 		if ( pReturnTypeDescr )
 		{
@@ -349,7 +346,7 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 						XInterface * pInterface = 0;
 						(*pCppI->getBridge()->getCppEnv()->getRegisteredInterface)
 							( pCppI->getBridge()->getCppEnv(),
-							  (void **)&pInterface,
+							  reinterpret_cast<void **>(&pInterface),
 							  pCppI->getOid().pData,
 							  reinterpret_cast<typelib_InterfaceTypeDescription *>( pTD ) );
 
@@ -395,69 +392,61 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 }
 
 //==================================================================================================
-
-// privateSnippetExecutor() is only called by the trampolines created by codeSnippet()
-//
-// it saves all the registers used for parameter passing in the x86_64 ABI.
-// Then it uses them to provide the parameters to its cpp_vtable_call() and
-// to handle the return value.
-//
-// This method makes assumptions about the stack layout of the stack frame above!
-
 extern "C" void privateSnippetExecutor( void )
 {
-    asm volatile (
-	"subq	$160, %%rsp\n\t"
-	"movq	%%r10, -152(%%rbp)\n\t"		// Save (nVtableOffset << 32) + nFunctionIndex
+	asm volatile (
+		"	subq	$160, %rsp\n"
+		"	movq	%r10, -152(%rbp)\n"		// Save (nVtableOffset << 32) + nFunctionIndex
 
-	"movq	%%rdi, -112(%%rbp)\n\t"		// Save GP registers
-	"movq	%%rsi, -104(%%rbp)\n\t"
-	"movq	%%rdx, -96(%%rbp)\n\t"
-	"movq	%%rcx, -88(%%rbp)\n\t"
-	"movq	%%r8 , -80(%%rbp)\n\t"
-	"movq	%%r9 , -72(%%rbp)\n\t"
-	
-	"movsd	%%xmm0, -64(%%rbp)\n\t"		// Save FP registers
-	"movsd	%%xmm1, -56(%%rbp)\n\t"
-	"movsd	%%xmm2, -48(%%rbp)\n\t"
-	"movsd	%%xmm3, -40(%%rbp)\n\t"
-	"movsd	%%xmm4, -32(%%rbp)\n\t"
-	"movsd	%%xmm5, -24(%%rbp)\n\t"
-	"movsd	%%xmm6, -16(%%rbp)\n\t"
-	"movsd	%%xmm7, -8(%%rbp)\n\t"
+		"	movq	%rdi, -112(%rbp)\n"		// Save GP registers
+		"	movq	%rsi, -104(%rbp)\n"
+		"	movq	%rdx, -96(%rbp)\n"
+		"	movq	%rcx, -88(%rbp)\n"
+		"	movq	%r8 , -80(%rbp)\n"
+		"	movq	%r9 , -72(%rbp)\n"
 
-	"leaq	-144(%%rbp), %%r9\n\t"		// 6th param: sal_uInt64* pRegisterReturn
-	"leaq	16(%%rbp), %%r8\n\t"		// 5rd param: void** ovrflw
-	"leaq	-64(%%rbp), %%rcx\n\t"		// 4th param: void** fpreg
-	"leaq	-112(%%rbp), %%rdx\n\t"		// 3rd param: void** gpreg
-	"movl	-148(%%rbp), %%esi\n\t"		// 2nd param: sal_int32 nVtableOffset
-	"movl	-152(%%rbp), %%edi\n\t"		// 1st param: sal_int32 nFunctionIndex
-	
-	"call	_cpp_vtable_call\n\t"
+		"	movsd	%xmm0, -64(%rbp)\n"		// Save FP registers
+		"	movsd	%xmm1, -56(%rbp)\n"
+		"	movsd	%xmm2, -48(%rbp)\n"
+		"	movsd	%xmm3, -40(%rbp)\n"
+		"	movsd	%xmm4, -32(%rbp)\n"
+		"	movsd	%xmm5, -24(%rbp)\n"
+		"	movsd	%xmm6, -16(%rbp)\n"
+		"	movsd	%xmm7, -8(%rbp)\n"
 
-	"cmp	$10, %%rax\n\t"				// typelib_TypeClass_FLOAT
-	"je	.Lfloat\n\t"
-	"cmp	$11, %%rax\n\t"				// typelib_TypeClass_DOUBLE
-	"je	.Lfloat\n\t"
+		"	leaq	-144(%rbp), %r9\n"		// 6th param: sal_uInt64* pRegisterReturn
+		"	leaq	16(%rbp),   %r8\n"		// 5rd param: void** ovrflw
+		"	leaq	-64(%rbp),  %rcx\n"		// 4th param: void** fpreg
+		"	leaq	-112(%rbp), %rdx\n"		// 3rd param: void** gpreg
+		"	movl	-148(%rbp), %esi\n"		// 2nd param: sal_int32 nVtableOffset
+		"	movl	-152(%rbp), %edi\n"		// 1st param: sal_int32 nFunctionIndex
 
-	"movq	-144(%%rbp), %%rax\n\t"		// Return value (int case)
-	"movq	-136(%%rbp), %%rdx\n\t"		// Return value (int case)
-	"movq	-144(%%rbp), %%xmm0\n\t"	// Return value (int case)
-	"movq	-136(%%rbp), %%xmm1\n\t"	// Return value (int case)
-	"jmp	.Lfinish\n"
-".Lfloat:\n\t"
-	"movlpd	-144(%%rbp), %%xmm0\n"		// Return value (float/double case)
-".Lfinish:\n\t"
-	"addq	$160, %%rsp\n"
-	:
-	: 
-	: "rax", "r10", "xmm0" );
+		"	call	_cpp_vtable_call\n"
+
+		"	cmp	$10, %rax\n"				// typelib_TypeClass_FLOAT
+		"	je	.Lfloat\n"
+		"	cmp	$11, %rax\n"				// typelib_TypeClass_DOUBLE
+		"	je	.Lfloat\n"
+
+		"	movq	-144(%rbp), %rax\n"		// Return value (int case)
+		"	movq	-136(%rbp), %rdx\n"		// Return value (int case)
+		"	movq	-144(%rbp), %xmm0\n"	// Return value (int case)
+		"	movq	-136(%rbp), %xmm1\n"	// Return value (int case)
+		"	jmp	.Lfinish\n"
+		".Lfloat:\n"
+		"	movlpd	-144(%rbp), %xmm0\n"		// Return value (float/double case)
+		".Lfinish:\n"
+		"	addq	$160, %rsp\n"
+	);
 }
-
-static const int codeSnippetSize = 24;
+const int codeSnippetSize = 24;
 
 // Generate a trampoline that redirects method calls to
 // privateSnippetExecutor().
+//
+// privateSnippetExecutor() saves all the registers that are used for
+// parameter passing on x86_64, and calls the cpp_vtable_call().
+// When it returns, privateSnippetExecutor() sets the return value.
 //
 // Note: The code snippet we build here must not create a stack frame,
 // otherwise the UNO exceptions stop working thanks to non-existing
@@ -466,18 +455,18 @@ unsigned char * codeSnippet( unsigned char * code,
         sal_Int32 nFunctionIndex, sal_Int32 nVtableOffset,
         bool bHasHiddenParam ) SAL_THROW( () )
 {
-	sal_uInt64 nOffsetAndIndex = ( ( (sal_uInt64) nVtableOffset ) << 32 ) | ( (sal_uInt64) nFunctionIndex );
+	sal_uInt64 nOffsetAndIndex = ( static_cast<sal_uInt64>( nVtableOffset ) << 32 ) | static_cast<sal_uInt64>( nFunctionIndex );
 
 	if ( bHasHiddenParam )
 		nOffsetAndIndex |= 0x80000000;
 
 	// movq $<nOffsetAndIndex>, %r10
-	*reinterpret_cast<sal_uInt16 *>( code ) = 0xba49;
-	*reinterpret_cast<sal_uInt64 *>( code + 2 ) = nOffsetAndIndex;
+    *reinterpret_cast<sal_uInt16 *>( code ) = 0xba49;
+    *reinterpret_cast<sal_uInt64 *>( code + 2 ) = nOffsetAndIndex;
 
 	// movq $<address of the privateSnippetExecutor>, %r11
-	*reinterpret_cast<sal_uInt16 *>( code + 10 ) = 0xbb49;
-	*reinterpret_cast<sal_uInt64 *>( code + 12 ) = reinterpret_cast<sal_uInt64>( privateSnippetExecutor );
+    *reinterpret_cast<sal_uInt16 *>( code + 10 ) = 0xbb49;
+    *reinterpret_cast<sal_uInt64 *>( code + 12 ) = reinterpret_cast<sal_uInt64>( privateSnippetExecutor );
 
 	// jmpq *%r11
 	*reinterpret_cast<sal_uInt32 *>( code + 20 ) = 0x00e3ff49;
@@ -519,7 +508,7 @@ unsigned char * bridges::cpp_uno::shared::VtableFactory::addLocalFunctions(
 	typelib_InterfaceTypeDescription const * type, sal_Int32 nFunctionOffset,
 	sal_Int32 functionCount, sal_Int32 nVtableOffset )
 {
-	static const sal_PtrDiff writetoexecdiff = 0;
+	const sal_PtrDiff writetoexecdiff = 0;
 	(*slots) -= functionCount;
 	Slot * s = *slots;
 	for ( sal_Int32 nPos = 0; nPos < type->nMembers; ++nPos )

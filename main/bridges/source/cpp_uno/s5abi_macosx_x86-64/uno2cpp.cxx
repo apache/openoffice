@@ -149,7 +149,7 @@ static void callVirtualMethod(void * pThis, sal_uInt32 nVtableIndex,
         :
         : "m" ( pMethod ), "m" ( pGPR ), "m" ( pFPR ), "m" ( nFPR ),
           "m" ( rax ), "m" ( rdx ), "m" ( xmm0 ), "m" ( xmm1 ),
-          "m" (pCallStack) // dummy input to prevent the compiler from optimizing it out
+          "m" (pCallStack) // dummy input to prevent the compiler from optimizing the alloca out
         : "rax", "rbx", "rcx", "rdx", "rdi", "rsi", "r8", "r9",
           "r10", "r11", "r10", "r12", "r13", "r14", "r15", "rbx",
           "xmm0", "xmm1", "xmm2", "xmm3", "xmm4", "xmm5", "xmm6", "xmm7"
@@ -409,7 +409,7 @@ static void cpp_call(
                 Reference< XInterface >());
         }
 
-		// NO exception occured...
+		// NO exception occurred...
 		*ppUnoExc = 0;
 		
 		// reconvert temporary params

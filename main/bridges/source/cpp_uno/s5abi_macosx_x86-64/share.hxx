@@ -32,19 +32,28 @@ namespace CPPU_CURRENT_NAMESPACE
 
 void dummy_can_throw_anything( char const * );
 
+typedef unsigned _Unwind_Ptr __attribute__((__mode__(__pointer__)));
+
 // ----- the following structure is compatible with the one declared in libunwind's unwind.h
+// (use forced types)
 
 struct _Unwind_Exception
 {
-    unsigned long exception_class;
+    uint64_t exception_class;
     void * exception_cleanup;
     uintptr_t private_1;
     uintptr_t private_2;
 };
 
 struct __cxa_exception
-{ 
-#if __LP64__ // ----- from libcxxabi/src/cxa_exception.hpp
+{
+#if __LP64__
+    // From LLVM 10 - Added reserved member at top of struct. Who the hell does that?
+    // https://reviews.llvm.org/rG674ec1eb16678b8addc02a4b0534ab383d22fa77
+    // Sure would be nice to be able to test for CCNUMVER >= 1000000000
+    // and COM == CLANG here.
+    // void *reserved;
+    // ----- from libcxxabi/src/cxa_exception.hpp
     // This is a new field to support C++ 0x exception_ptr.
     // For binary compatibility it is at the start of this
     // struct which is prepended to the object thrown in
@@ -85,12 +94,12 @@ extern "C" __cxa_eh_globals *__cxa_get_globals () throw();
 
 // -----
 
-#if 0 // #i124421# disabled because its use in except.cxx is disabled
-
+#if 0
 // on OSX 64bit the class_type_info classes are specified
 // in http://refspecs.linuxbase.org/cxxabi-1.86.html#rtti but
 // these details are not generally available in a public header
 // of most development environments. So we define them here.
+// NOTE: https://www.hexblog.com/wp-content/uploads/2012/06/Recon-2012-Skochinsky-Compiler-Internals.pdf
 class __class_type_info : public std::type_info
 {
 public:
@@ -107,9 +116,7 @@ public:
         : __class_type_info( pRttiName), mpBaseType( pBaseType)
         {}
 };
-
 #endif
-
 //==================================================================================================
 void raiseException(
     uno_Any * pUnoExc, uno_Mapping * pUno2Cpp );
