@@ -3544,7 +3544,7 @@ msi - Windows .msi
       fi
       AC_PATH_PROG(FAKEROOT, fakeroot, no)
       if test "$FAKEROOT" = "no"; then
-         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+         AC_MSG_ERROR([fakeroot needed for deb creation. Install fakeroot.])
       fi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
