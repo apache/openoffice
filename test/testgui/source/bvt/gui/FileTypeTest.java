@@ -108,6 +108,7 @@ public class FileTypeTest {
 		String text = "@AOO";
 		newTextDocument();
 		writer.typeKeys(text);
+		sleep(1);
 		// Verify the text via system clip board
 		Assert.assertEquals("The typed text into writer", text, copyAll());
 
