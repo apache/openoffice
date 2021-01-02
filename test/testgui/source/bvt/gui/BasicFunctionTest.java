@@ -682,7 +682,9 @@ public class BasicFunctionTest {
 		typeKeys("<enter>");
         sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("D1"));
+        String result = SCTool.getCellText("D1");
+		// assertEquals("The calculated result", expectedResult, SCTool.getCellText("D1"));
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 
@@ -713,7 +715,9 @@ public class BasicFunctionTest {
 		scFunctionWizardDlg.ok();
 		sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
+        String result = SCTool.getCellText("B1");
+		// assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 }

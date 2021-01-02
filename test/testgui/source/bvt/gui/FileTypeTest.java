@@ -110,7 +110,10 @@ public class FileTypeTest {
 		writer.typeKeys(text);
 		sleep(1);
 		// Verify the text via system clip board
-		Assert.assertEquals("The typed text into writer", text, copyAll());
+		String result = copyAll();
+		// Assert.assertEquals("The typed text into writer", text, copyAll());
+		Assert.assertEquals("The typed text into writer", text, result);
+		result = null;
 
 		// menuItem("Text Properties...").select();
 		app.dispatch(".uno:FontDialog");
@@ -128,7 +131,9 @@ public class FileTypeTest {
 		writer.waitForExistence(10, 2);
 		sleep(1);
 		// Verify if the text still exists in the file
-		Assert.assertEquals("The typed text into writer is saved!", text, copyAll());
+		result = copyAll();
+		// Assert.assertEquals("The typed text into writer is saved!", text, copyAll());
+		Assert.assertEquals("The typed text into writer is saved!", text, result);
 	}
 
 	@Test
@@ -220,7 +225,9 @@ public class FileTypeTest {
 		sleep(1);
 		impress.typeKeys("<tab><enter>");
 		sleep(1);
-		Assert.assertEquals("The typed text is saved!", text, copyAll().trim());
+		String result = copyAll();
+		// Assert.assertEquals("The typed text is saved!", text, copyAll().trim());
+		Assert.assertEquals("The typed text is saved!", text, result.trim());
 	}
 
 	// drawing
@@ -331,8 +338,12 @@ public class FileTypeTest {
 		newFormula();
 		// Insert a formula
 		mathEditWindow.typeKeys(text);
+		sleep(1);
 		// Verify the text via system clip board
-		assertEquals("The typed formula into math", text, copyAll());
+		String result = copyAll();
+		// assertEquals("The typed formula into math", text, copyAll());
+		assertEquals("The typed formula into math", text, result);
+		result = null;
 
 		// Save the formula
 		deleteFile(saveTo);
@@ -342,6 +353,8 @@ public class FileTypeTest {
 		mathEditWindow.waitForExistence(10, 2);
 		sleep(1);
 		mathEditWindow.focus();
-		assertEquals("The typed formula into math is saved", text, copyAll());
+		result = copyAll();
+		// assertEquals("The typed formula into math is saved", text, copyAll());
+		assertEquals("The typed formula into math is saved", text, result);
 	}
 }
