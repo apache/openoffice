@@ -111,6 +111,7 @@ public class FileTypeTest {
 		sleep(1);
 		// Verify the text via system clip board
 		String result = copyAll();
+		sleep(1);
 		// Assert.assertEquals("The typed text into writer", text, copyAll());
 		Assert.assertEquals("The typed text into writer", text, result);
 		result = null;
@@ -132,6 +133,7 @@ public class FileTypeTest {
 		sleep(1);
 		// Verify if the text still exists in the file
 		result = copyAll();
+		sleep(1);
 		// Assert.assertEquals("The typed text into writer is saved!", text, copyAll());
 		Assert.assertEquals("The typed text into writer is saved!", text, result);
 	}
@@ -226,6 +228,7 @@ public class FileTypeTest {
 		impress.typeKeys("<tab><enter>");
 		sleep(1);
 		String result = copyAll();
+		sleep(1);
 		// Assert.assertEquals("The typed text is saved!", text, copyAll().trim());
 		Assert.assertEquals("The typed text is saved!", text, result.trim());
 	}
@@ -341,6 +344,7 @@ public class FileTypeTest {
 		sleep(1);
 		// Verify the text via system clip board
 		String result = copyAll();
+		sleep(1);
 		// assertEquals("The typed formula into math", text, copyAll());
 		assertEquals("The typed formula into math", text, result);
 		result = null;
@@ -354,6 +358,7 @@ public class FileTypeTest {
 		sleep(1);
 		mathEditWindow.focus();
 		result = copyAll();
+		sleep(1);
 		// assertEquals("The typed formula into math is saved", text, copyAll());
 		assertEquals("The typed formula into math is saved", text, result);
 	}
