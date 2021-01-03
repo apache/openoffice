@@ -684,7 +684,6 @@ public class BasicFunctionTest {
 		// Verify if the calculated result is equal to the expected result
         String result = SCTool.getCellText("D1");
 		sleep(1);
-		// assertEquals("The calculated result", expectedResult, SCTool.getCellText("D1"));
         assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
@@ -718,7 +717,6 @@ public class BasicFunctionTest {
 		// Verify if the calculated result is equal to the expected result
         String result = SCTool.getCellText("B1");
 		sleep(1);
-		// assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
         assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
