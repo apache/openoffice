@@ -712,6 +712,7 @@ public class BasicFunctionTest {
 		scFunctionWizardDlgFunctionList.select("ABS");
 		scFunctionWizardDlgNext.click(); // Use "Next" button
 		scFunctionWizardDlgEdit1.typeKeys("A1");
+		sleep(1);
 		scFunctionWizardDlg.ok();
 		sleep(1);
 		// Verify if the calculated result is equal to the expected result
