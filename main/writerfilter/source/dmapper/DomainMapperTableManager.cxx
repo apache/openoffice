@@ -334,13 +334,25 @@ void DomainMapperTableManager::pushStackOfMembers()
 
 void DomainMapperTableManager::popStackOfMembers()
 {
-    m_nCellCounterForCurrentRow.pop();
-    m_nCurrentCellBorderIndex.pop();
-    m_nCurrentHeaderRepeatCount.pop();
-    m_nTableWidthOfCurrentTable.pop();
+    if (!m_nCellCounterForCurrentRow.empty()) {
+        m_nCellCounterForCurrentRow.pop();
+    }
+    if (!m_nCurrentCellBorderIndex.empty()) {
+        m_nCurrentCellBorderIndex.pop();
+    }
+    if (!m_nCurrentHeaderRepeatCount.empty()) {
+        m_nCurrentHeaderRepeatCount.pop();
+    }
+    if (!m_nTableWidthOfCurrentTable.empty()) {
+        m_nTableWidthOfCurrentTable.pop();
+    }
 
-    m_aTableGrid.pop();
-    m_aGridSpans.pop();
+    if (!m_aTableGrid.empty()) {
+        m_aTableGrid.pop();
+    }
+    if (!m_aGridSpans.empty()) {
+        m_aGridSpans.pop();
+    }
 }
 
 
