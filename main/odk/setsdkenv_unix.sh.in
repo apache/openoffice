@@ -160,7 +160,7 @@ case ${sdk_platform} in
 
   darwin*)
     directoryname=macosx
-    comid=gcc3
+    comid=s5abi
     soext=dylib
     exampleout=MACOSXexample.out
     platform=MacOSX

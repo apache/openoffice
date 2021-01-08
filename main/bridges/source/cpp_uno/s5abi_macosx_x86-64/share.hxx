@@ -30,21 +30,37 @@
 namespace CPPU_CURRENT_NAMESPACE
 {
 
-  void dummy_can_throw_anything( char const * );
+void dummy_can_throw_anything( char const * );
 
+typedef unsigned _Unwind_Ptr __attribute__((__mode__(__pointer__)));
 
-// ----- following decl from libstdc++-v3/libsupc++/unwind-cxx.h and unwind.h
+// ----- the following structure is compatible with the one declared in libunwind's unwind.h
+// (use forced types)
 
 struct _Unwind_Exception
 {
-    unsigned exception_class __attribute__((__mode__(__DI__)));
+    uint64_t exception_class;
     void * exception_cleanup;
-    unsigned private_1 __attribute__((__mode__(__word__)));
-    unsigned private_2 __attribute__((__mode__(__word__)));
-} __attribute__((__aligned__));
+    uintptr_t private_1;
+    uintptr_t private_2;
+};
 
 struct __cxa_exception
-{ 
+{
+#if __LP64__
+    // From LLVM 10 - Added reserved member at top of struct. Who the hell does that?
+    // https://reviews.llvm.org/rG674ec1eb16678b8addc02a4b0534ab383d22fa77
+    // Sure would be nice to be able to test for CCNUMVER >= 1000000000
+    // and COM == CLANG here.
+    // void *reserved;
+    // ----- from libcxxabi/src/cxa_exception.hpp
+    // This is a new field to support C++ 0x exception_ptr.
+    // For binary compatibility it is at the start of this
+    // struct which is prepended to the object thrown in
+    // __cxa_allocate_exception.
+    size_t referenceCount;
+#endif
+
     ::std::type_info *exceptionType;
     void (*exceptionDestructor)(void *); 
     
@@ -78,6 +94,27 @@ extern "C" __cxa_eh_globals *__cxa_get_globals () throw();
 
 // -----
 
+// on OSX 64bit the class_type_info classes are specified
+// in http://refspecs.linuxbase.org/cxxabi-1.86.html#rtti but
+// these details are not generally available in a public header
+// of most development environments. So we define them here.
+class __class_type_info : public std::type_info
+{
+public:
+        explicit __class_type_info( const char* pRttiName)
+        : std::type_info( pRttiName)
+        {}
+};
+
+class __si_class_type_info : public __class_type_info
+{
+        const __class_type_info* mpBaseType;
+public:
+        explicit __si_class_type_info( const char* pRttiName, __class_type_info* pBaseType)
+        : __class_type_info( pRttiName), mpBaseType( pBaseType)
+        {}
+};
+
 //==================================================================================================
 void raiseException(
     uno_Any * pUnoExc, uno_Mapping * pUno2Cpp );
@@ -85,3 +122,4 @@ void raiseException(
 void fillUnoException(
     __cxa_exception * header, uno_Any *, uno_Mapping * pCpp2Uno );
 }
+

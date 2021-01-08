@@ -2240,8 +2240,16 @@ case $COM in
 		CCNUMVER=`echo ${CCVER} | $AWK -v num=true -f ${_solenv}/bin/getcompver.awk`;
 		# The version in tg_compv.mk for darwin does not look correct
 		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
-		COMID="gcc3";
-		COMNAME="gcc3";	
+		case "$build_os" in
+ 			darwin*) # Mac OS X
+ 				COMID="s5abi";
+ 				COMNAME="s5abi";
+ 				;;
+ 			*)
+ 				COMID="gcc3";
+ 				COMNAME="gcc3";
+ 				;;
+ 		esac
 		;;
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
@@ -3536,7 +3544,7 @@ msi - Windows .msi
       fi
       AC_PATH_PROG(FAKEROOT, fakeroot, no)
       if test "$FAKEROOT" = "no"; then
-         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+         AC_MSG_ERROR([fakeroot needed for deb creation. Install fakeroot.])
       fi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
@@ -5011,16 +5019,11 @@ AC_SUBST(NSS_LIBS)
 dnl ===================================================================
 dnl Check for system openssl
 dnl ===================================================================
-if test "$_os" = "Darwin" && test "$with_system_openssl" != "no"; then
-   with_system_openssl=yes
-fi
 AC_MSG_CHECKING([which libssl to use])
 if test -n "$with_system_openssl" -o -n "$with_system_libs" && \
         test "$with_system_openssl" != "no"; then
     AC_MSG_RESULT([external])
-    # Mac OS builds should get out without extra stuff is the Mac porters'
-    # wish. And pkg-config is although Xcode ships a .pc for openssl
-    if test "$_os" = "Darwin" -o "$_os" = "FreeBSD"; then
+    if test "$_os" = "FreeBSD"; then
         OPENSSL_CFLAGS=
         OPENSSL_LIBS="-lssl -lcrypto"
     else

@@ -24,10 +24,16 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_bridges.hxx"
 
+#if ((__GNUC__ == 4) && (__GNUC_MINOR__ >= 6))
+#include <exception>
+#endif
+
 #include <stdio.h>
+#include <string.h>
 #include <dlfcn.h>
 #include <cxxabi.h>
 #include <hash_map>
+#include <sys/param.h>
 
 #include <rtl/strbuf.hxx>
 #include <rtl/ustrbuf.hxx>
@@ -51,7 +57,7 @@ using namespace ::__cxxabiv1;
 
 namespace CPPU_CURRENT_NAMESPACE
 {
-
+    
 void dummy_can_throw_anything( char const * )
 {
 }
@@ -62,13 +68,13 @@ static OUString toUNOname( char const * p ) SAL_THROW( () )
 #if OSL_DEBUG_LEVEL > 1
     char const * start = p;
 #endif
-
+    
     // example: N3com3sun4star4lang24IllegalArgumentExceptionE
-
+    
 	OUStringBuffer buf( 64 );
     OSL_ASSERT( 'N' == *p );
     ++p; // skip N
-
+    
     while ('E' != *p)
     {
         // read chars count
@@ -83,7 +89,7 @@ static OUString toUNOname( char const * p ) SAL_THROW( () )
         if ('E' != *p)
             buf.append( (sal_Unicode)'.' );
     }
-
+    
 #if OSL_DEBUG_LEVEL > 1
     OUString ret( buf.makeStringAndClear() );
     OString c_ret( OUStringToOString( ret, RTL_TEXTENCODING_ASCII_US ) );
@@ -98,24 +104,26 @@ static OUString toUNOname( char const * p ) SAL_THROW( () )
 class RTTI
 {
     typedef hash_map< OUString, type_info *, OUStringHash > t_rtti_map;
-
+    
     Mutex m_mutex;
 	t_rtti_map m_rttis;
     t_rtti_map m_generatedRttis;
 
     void * m_hApp;
-
+    
 public:
     RTTI() SAL_THROW( () );
     ~RTTI() SAL_THROW( () );
-
+    
     type_info * getRTTI( typelib_CompoundTypeDescription * ) SAL_THROW( () );
 };
+
 //__________________________________________________________________________________________________
 RTTI::RTTI() SAL_THROW( () )
     : m_hApp( dlopen( 0, RTLD_LAZY ) )
 {
 }
+
 //__________________________________________________________________________________________________
 RTTI::~RTTI() SAL_THROW( () )
 {
@@ -126,9 +134,9 @@ RTTI::~RTTI() SAL_THROW( () )
 type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THROW( () )
 {
     type_info * rtti;
-
+    
     OUString const & unoName = *(OUString const *)&pTypeDescr->aBase.pTypeName;
-
+    
     MutexGuard guard( m_mutex );
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
@@ -146,9 +154,9 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         }
         while (index >= 0);
         buf.append( 'E' );
-
+        
         OString symName( buf.makeStringAndClear() );
-        rtti = (type_info *)dlsym( m_hApp, symName.getStr() );
+        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -168,6 +176,8 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 char const * rttiName = symName.getStr() +4;
 #if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
+                const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
+                OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
 #endif
                 if (pTypeDescr->pBaseTypeDescription)
                 {
@@ -183,9 +193,8 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                     rtti = new __class_type_info( strdup( rttiName ) );
                 }
 
-                pair< t_rtti_map::iterator, bool > insertion(
-                    m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti ) ) );
-                OSL_ENSURE( insertion.second, "### inserting new generated rtti failed?!" );
+                bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
+                OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
             }
             else // taking already generated rtti
             {
@@ -197,14 +206,14 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     {
         rtti = iFind->second;
     }
-
+    
     return rtti;
 }
 
 //--------------------------------------------------------------------------------------------------
 static void deleteException( void * pExc )
 {
-    __cxa_exception const * header = ((__cxa_exception const *)pExc - 1);
+    __cxa_exception const * header = static_cast<__cxa_exception const *>(pExc) - 1;
     typelib_TypeDescription * pTD = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
     ::typelib_typedescription_getByName( &pTD, unoName.pData );
@@ -292,6 +301,22 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
         OSL_ENSURE( 0, cstr.getStr() );
 #endif
         return;
+    }
+
+    /*
+     * Handle the case where we are built on llvm 10 (or later) but are running
+     * on an earlier version (eg, community builds). In this situation the
+     * reserved ptr doesn't exist in the struct returned and so the offsets
+     * that header uses are wrong. This assumes that reserved isn't used
+     * and that referenceCount is always >0 in the cases we handle
+     */
+    {
+        // Does this look like the newer struct __cxa_exception?
+        // That is, is the 1st element NULL (*reserved)?
+        if (*reinterpret_cast<void **>(header) == NULL) {
+            // Yes. So we move up a slot to offset
+            header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) + 1);
+        }
     }
 
 	typelib_TypeDescription * pExcTypeDescr = 0;
