@@ -325,8 +325,10 @@ void    DomainMapper_Impl::PopProperties(ContextType eId)
         m_pLastSectionContext = m_aPropertyStacks[eId].top( );
     }
 
-    m_aPropertyStacks[eId].pop();
-    m_aContextStack.pop();
+    if (!m_aPropertyStacks[eId].empty()) {
+        m_aPropertyStacks[eId].pop();
+        m_aContextStack.pop();
+    }
     if(!m_aContextStack.empty() && !m_aPropertyStacks[m_aContextStack.top()].empty())
 
             m_pTopContext = m_aPropertyStacks[m_aContextStack.top()].top();
