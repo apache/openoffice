@@ -175,6 +175,7 @@ public class BasicFunctionTest {
 		runMacroDlgCategories.select("Module1");
 		runMacroDlgCommands.select(0);
 		runMacroDlg.ok();
+		sleep(1);
 		assertEquals("A3 should be =1+3", "4", SCTool.getCellText("A3"));
 		discard();
 	}
@@ -679,9 +680,11 @@ public class BasicFunctionTest {
 		SCTool.selectRange("D1");
 		scInputBarInput.inputKeys("=COS(A1)");
 		typeKeys("<enter>");
-
+        sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("D1"));
+        String result = SCTool.getCellText("D1");
+		sleep(1);
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 
@@ -709,9 +712,13 @@ public class BasicFunctionTest {
 		scFunctionWizardDlgFunctionList.select("ABS");
 		scFunctionWizardDlgNext.click(); // Use "Next" button
 		scFunctionWizardDlgEdit1.typeKeys("A1");
+		sleep(1);
 		scFunctionWizardDlg.ok();
+		sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
+        String result = SCTool.getCellText("B1");
+		sleep(1);
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 }
