@@ -62,6 +62,7 @@ clean .PHONY:
 	@test -n "$(INPATH)" || (echo Build environment not set; exit 1)
 	-rm -rf */$(INPATH)
 	-rm -rf solver/*/$(INPATH)
+	-rm -rf solenv/inc/reporevision.lst
 .IF "$(ADDITIONAL_REPOSITORIES)"!=""
 	-rm -rf $(foreach,f,$(ADDITIONAL_REPOSITORIES) $f/*/$(INPATH))
 .ENDIF
