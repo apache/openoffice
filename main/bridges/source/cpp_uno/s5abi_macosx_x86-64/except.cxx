@@ -313,7 +313,7 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
     {
         // Does this look like the newer struct __cxa_exception?
         // That is, is the 1st element NULL (*reserved)?
-        if (*reinterpret_cast<void **>(header) == NULL) {
+        if (*reinterpret_cast<void **>(header) == 0) {
             // Yes. So we move up a slot to offset
             header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<void **>(header) + 1);
         }
