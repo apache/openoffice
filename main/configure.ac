@@ -1154,6 +1154,7 @@ case "$build_os" in
          	   echo "Disabling gtk-quickstarter - not supported on Mac. Use --disable-systray" >>warn
          	   enable_systray=no
       		fi
+		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
 		if test ! -n "$CC"; then
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
