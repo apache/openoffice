@@ -123,7 +123,8 @@ using ::rtl::OUString;
 #include <table.hrc>
 #include <frmui.hrc>
 #include <unomid.h>
-
+#include <svx/drawitem.hxx>
+#include <drawdoc.hxx>
 
 
 /*--------------------------------------------------------------------
@@ -597,11 +598,20 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
             static sal_uInt16 __READONLY_DATA aFrmAttrRange[] =
             {
                 RES_FRMATR_BEGIN,       RES_FRMATR_END-1,
+                XATTR_FILL_FIRST,       XATTR_FILL_LAST,
+                SID_DOCFRAME,           SID_DOCFRAME,
+                SID_ATTR_BRUSH,         SID_ATTR_BRUSH,
                 SID_ATTR_BORDER_INNER,  SID_ATTR_BORDER_INNER,
-                FN_GET_PRINT_AREA,      FN_GET_PRINT_AREA,
+                SID_ATTR_LRSPACE,       SID_ATTR_ULSPACE,
                 SID_ATTR_PAGE_SIZE,     SID_ATTR_PAGE_SIZE,
-                FN_SET_FRM_NAME,        FN_SET_FRM_NAME,
+                SID_COLOR_TABLE,        SID_BITMAP_LIST,
                 SID_HTML_MODE,          SID_HTML_MODE,
+                FN_GET_PRINT_AREA,      FN_GET_PRINT_AREA,
+                FN_SURROUND,            FN_HORI_ORIENT,
+                FN_SET_FRM_NAME,        FN_KEEP_ASPECT_RATIO,
+                FN_SET_FRM_ALT_NAME,    FN_SET_FRM_ALT_NAME,
+                FN_OLE_IS_MATH,         FN_MATH_BASELINE_ALIGNMENT,
+                FN_PARAM_CHAIN_PREVIOUS, FN_PARAM_CHAIN_NEXT,
                 0
             };
 
@@ -616,6 +626,12 @@ void SwTextShell::ExecInsert(SfxRequest &rReq)
             SwFmtFrmSize aPrtSize(ATT_VAR_SIZE, rPr.Width(), rPr.Height());
             aPrtSize.SetWhich(GetPool().GetWhich(FN_GET_PRINT_AREA));
             aSet.Put(aPrtSize);
+
+            const SwDrawModel* pDrawModel = GetShell().GetView().GetDocShell()->GetDoc()->GetDrawModel();
+            aSet.Put(SvxColorTableItem(pDrawModel->GetColorTableFromSdrModel(), SID_COLOR_TABLE));
+            aSet.Put(SvxGradientListItem(pDrawModel->GetGradientListFromSdrModel(), SID_GRADIENT_LIST));
+            aSet.Put(SvxHatchListItem(pDrawModel->GetHatchListFromSdrModel(), SID_HATCH_LIST));
+            aSet.Put(SvxBitmapListItem(pDrawModel->GetBitmapListFromSdrModel(), SID_BITMAP_LIST));
 
             aSet.Put(aMgr.GetAttrSet());
             aSet.SetParent( aMgr.GetAttrSet().GetParent() );
