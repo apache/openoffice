@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@
 #include <errhdl.hxx>
 #include <iodetect.hxx>
 
-// einige Forward - Deklarationen
+// some forward declerations
 class SfxFilterContainer;
 class SfxFilter;
 class SfxItemPool;
@@ -65,8 +65,7 @@ class SwTextBlocks;
 struct SwPosition;
 struct Writer_Impl;
 
-// ab so vielen chars wird ein mit einem ASCII/W4W-Reader eingelesener
-// Absatz zwangsweise umgebrochen. Muss immer groesser als 200 sein !!!
+//beyond following number  ASCII/W4W-reader is used. Must be greater then 200
 #define MAX_ASCII_PARA 10000
 
 
@@ -106,11 +105,11 @@ public:
 };
 
 /**************** SwReader/Reader ************************/
-// Basisklasse der moeglichen Optionen fuer einen speziellen Reader
+// base class for different specialized readers
 class Reader;
-// Ruft den Reader mit seinen Optionen, Dokument, Cursor etc.
+//  calls a document with its options, document, cursor etc.
 class SwReader;
-// SwRead ist der Pointer auf die Read-Optionen-Basisklasse
+// SwRead is a pointer on the read options of the base class
 typedef Reader *SwRead;
 
 class SwgReaderOption
@@ -161,7 +160,7 @@ class SwReader: public SwDocFac
 	SvStream* pStrm;
     SotStorageRef pStg;
     com::sun::star::uno::Reference < com::sun::star::embed::XStorage > xStg;
-	SfxMedium* pMedium;		// wer ein Medium haben will (W4W)
+	SfxMedium* pMedium;		// describes file or storage (W4W)
 
 	SwPaM* pCrsr;
 	String aFileName;
@@ -169,16 +168,16 @@ class SwReader: public SwDocFac
 
 public:
 	/*
-	 * Initiales Einlesen. Dokument wird erst beim Read(..) angelegt.
-	 * JP 25.04.95: oder falls es mitgegeben wird, in dieses.
-	 *				Sonderfall fuer Load mit Sw3Reader
+	 * Initial read. document is created when function Read(...) os called
+	 * JP 25.04.95: or if it has been passed in that one.
+	 *				special case if loaded with Sw3Reader
 	 */
     //SwReader( SotStorage&, const String& rFilename, SwDoc *pDoc = 0 );
     //SwReader( const com::sun::star::uno::Reference < com::sun::star::embed::XStorage >&, const String& rFilename, SwDoc *pDoc = 0 );
     SwReader( SfxMedium&, const String& rFilename, SwDoc *pDoc = 0 );
 	/*
-	 * In ein existierendes Dokument einlesen, Dokument und
-	 * Position im Dokument werden aus dem SwPaM uebernommen.
+	 * read into an nexisting document. Document and
+	 * position within the document are taken from SwPaM.
 	 */
     SwReader( SvStream&, const String& rFilename, const String& rBaseURL, SwPaM& );
     //SwReader( SotStorage&, const String& rFilename, SwPaM& );
@@ -186,7 +185,7 @@ public:
     SwReader( const com::sun::star::uno::Reference < com::sun::star::embed::XStorage >&, const String& rFilename, SwPaM& );
 
 	/*
- 	* Nur SwReader::Read(...) ist die Export-Schnittstelle!!!
+ 	* only SwReader::Read(...) is the Export-Interface!!!
  	*/
 	sal_Bool NeedsPasswd( const Reader& );
 	sal_Bool CheckPasswd( const String&, const Reader& );
@@ -204,10 +203,10 @@ protected:
 
 
 
-/*  */
-/****************  SPEZIELLE Reader ************************/
+/* */
+/****************  SPECIALE Readers ************************/
 
-// spezielle - Reader koennen beides sein !! (Excel, W4W, .. )
+// special - Reader can be both!! (Excel, W4W, .. )
 #define SW_STREAM_READER	1
 #define SW_STORAGE_READER	2
 
@@ -226,12 +225,12 @@ protected:
 	SvStream* pStrm;
     SotStorageRef pStg;
     com::sun::star::uno::Reference < com::sun::star::embed::XStorage > xStg;
-	SfxMedium* pMedium;		// wer ein Medium haben will (W4W)
+	SfxMedium* pMedium;		// describes file or storage  (W4W)
 
 	SwgReaderOption aOpt;
 	sal_Bool bInsertMode : 1;
 	sal_Bool bTmplBrowseMode : 1;
-	sal_Bool bReadUTF8: 1;		// Stream als UTF-8 interpretieren
+	sal_Bool bReadUTF8: 1;		// interpred stream as UTF-8
 	sal_Bool bBlockMode: 1;
 	sal_Bool bOrganizerMode : 1;
 	sal_Bool bHasAskTemplateName : 1;
@@ -249,14 +248,13 @@ public:
 	virtual void SetFltName( const String& rFltNm );
 	static void SetNoOutlineNum( SwDoc& rDoc );
 
-	// den Item-Set eines Frm-Formats an das alte Format anpassen
+	// fit the item-set of a Frm-Formats to the old Format
 	static void ResetFrmFmtAttrs( SfxItemSet &rFrmSet );
 
-	// die Rahmen-/Grafik-/OLE-Vorlagen an das alte Format (ohne
-	// Umrandung etc.) anpassen
+	// convert frame /grafic-/OLE-Templates to old Format (without frame etc.)
 	static void ResetFrmFmts( SwDoc& rDoc );
 
-	// Die Filter-Vorlage laden, setzen und wieder freigeben
+	// load filter template, position and free again
 	SwDoc* GetTemplateDoc();
 	sal_Bool SetTemplate( SwDoc& rDoc );
 	void ClearTemplate();
@@ -288,8 +286,8 @@ public:
 private:
     virtual sal_uLong Read(SwDoc &, const String& rBaseURL, SwPaM &,const String &)=0;
 
-	// alle die die Streams / Storages nicht geoeffnet brauchen,
-	// muessen die Methode ueberladen (W4W!!)
+	// every object which does not need streams / object must overload following
+	// (W4W!!)
 	virtual int SetStrmStgPtr();
 };
 
@@ -335,12 +333,10 @@ public:
 								SvStrings& rStrings ) const;
 };*/
 
-/*  */
+/* */
 ////////////////////////////////////////////////////////////////////////////
-
-// Der uebergebene Stream muss dynamisch angelegt werden und
-// vor dem Loeschen der Instanz per Stream() angefordert
-// und geloescht werden!
+// The passed stream has to be dynamic created and before deletion of the
+// instance per Stream() requested and deleted
 
 class SwImpBlocks;
 
@@ -358,7 +354,7 @@ public:
     void Flush(){}
 
 	SwDoc* GetDoc();
-	void   ClearDoc();					// Doc-Inhalt loeschen
+	void   ClearDoc();					// delete doc content
 	const  String& GetName();
 	void   SetName( const String& );
 	sal_uLong GetError() const { return nErr; }
@@ -367,32 +363,32 @@ public:
     void   SetBaseURL( const String& rURL );
 
 	sal_Bool   IsOld() const;
-	sal_uLong  ConvertToNew();				// Textbausteine konvertieren
+	sal_uLong  ConvertToNew();				// convert AutoText entries (ger: Textbausteine)
 
-	sal_uInt16 GetCount() const;						// Anzahl Textbausteine ermitteln
-	sal_uInt16 GetIndex( const String& ) const;			// Index fuer Kurznamen ermitteln
+	sal_uInt16 GetCount() const;						// return amount of AutoText entries
+	sal_uInt16 GetIndex( const String& ) const;			// return Index of shortnames
 	sal_uInt16 GetLongIndex( const String& ) const;		//Index fuer Langnamen ermitteln
-	const  String& GetShortName( sal_uInt16 ) const; 	// Kurzname fuer Index zurueck
-	const  String& GetLongName( sal_uInt16 ) const;  	// Langname fuer Index zurueck
+	const  String& GetShortName( sal_uInt16 ) const; 	// return a shortname of an index
+	const  String& GetLongName( sal_uInt16 ) const;  	// return longname of an index
 
-	sal_Bool   Delete( sal_uInt16 );			// Loeschen
-	sal_uInt16 Rename( sal_uInt16, const String*, const String* ); // Umbenennen
+	sal_Bool   Delete( sal_uInt16 );			// delete
+	sal_uInt16 Rename( sal_uInt16, const String*, const String* ); // rename
 	sal_uLong  CopyBlock( SwTextBlocks& rSource, String& rSrcShort,
-									const String& rLong ); // Block kopieren
+									const String& rLong ); // copy block
 
-	sal_Bool   BeginGetDoc( sal_uInt16 );			// Textbaustein einlesen
-	void   EndGetDoc();						// Textbaustein wieder loslassen
+	sal_Bool   BeginGetDoc( sal_uInt16 );			// read AutoText entry
+	void   EndGetDoc();						// release AutoText entry
 
-	sal_Bool   BeginPutDoc( const String&, const String& ); // Speichern Beginn
-	sal_uInt16 PutDoc(); 								// Speichern Ende
+	sal_Bool   BeginPutDoc( const String&, const String& ); // start save
+	sal_uInt16 PutDoc(); 								// End save
 
-	sal_uInt16 PutText( const String&, const String&, const String& ); // Speichern( Kurzn., Text)
+	sal_uInt16 PutText( const String&, const String&, const String& ); // save (short., Text)
 
 	sal_Bool IsOnlyTextBlock( sal_uInt16 ) const;
 	sal_Bool IsOnlyTextBlock( const String& rShort ) const;
 
-	const String& GetFileName() const;		// Dateiname von pImp
-	sal_Bool IsReadOnly() const;  				// ReadOnly-Flag von pImp
+	const String& GetFileName() const;		// filename of pImp
+	sal_Bool IsReadOnly() const;  				// ReadOnly-Flag of pImp
 
 	sal_Bool GetMacroTable( sal_uInt16 nIdx, SvxMacroTableDtor& rMacroTbl );
 	sal_Bool SetMacroTable( sal_uInt16 nIdx, const SvxMacroTableDtor& rMacroTbl );
@@ -414,18 +410,18 @@ SW_DLLPUBLIC SwRead SwGetReaderXML();
 // END source/filter/basflt/fltini.cxx
 
 
-extern sal_Bool SetHTMLTemplate( SwDoc &rDoc ); //Fuer Vorlagen aus HTML.vor laden shellio.cxx
+extern sal_Bool SetHTMLTemplate( SwDoc &rDoc ); // HTML templates (pre?)load shellio.cxx
 
 
-/*  */
+/* */
 /////////////////////////////////////////////////////////////////////////////
 
 /*
- * Schreiben, Writer
+ * write, Writer
  */
 
 
-/* Basis-Klasse aller Writer */
+/* base class of all Writer */
 
 class IDocumentSettingAccess;
 class IDocumentStylePoolAccess;
@@ -444,7 +440,7 @@ class SW_DLLPUBLIC Writer
 
 protected:
 
-	SwPaM* pOrigPam;			// der letze zu bearbeitende Pam
+	SwPaM* pOrigPam;			// last Pam to work on
 	const String* pOrigFileName;
 
 	void ResetWriter();
@@ -501,32 +497,32 @@ public:
 
     const String&       GetBaseURL() const { return sBaseURL;}
 
-    // suche die naechste Bookmark-Position aus der Bookmark-Tabelle
+    // search next bookmark position from the bookmark table
 	sal_Int32 FindPos_Bkmk( const SwPosition& rPos ) const;
 	// build a bookmark table, which is sort by the node position. The
 	// OtherPos of the bookmarks also inserted.
 	void CreateBookmarkTbl();
-	// search alle Bookmarks in the range and return it in the Array
+	// search all bookmarks in the range and return it in the Array
 	sal_uInt16 GetBookmarks( const SwCntntNode& rNd,
 						xub_StrLen nStt, xub_StrLen nEnd,
 						SvPtrarr& rArr );
 
-	// lege einen neuen PaM an der Position an
+	// create a new PaM at the position
     static SwPaM * NewSwPaM(SwDoc & rDoc,
                             sal_uLong const nStartIdx, sal_uLong const nEndIdx);
 
-	// kopiere ggfs. eine lokale Datei ins Internet
+	// upload a local file to the internet / cloud
 	sal_Bool CopyLocalFileToINet( String& rFileNm );
 
-	// Stream-spezifische Routinen, im Storage-Writer NICHT VERWENDEN!
+	// Stream-specific routines, DO NOT USE IN Storage-Writer!
 
-	// Optimierung der Ausgabe auf den Stream.
+	// Optimize of the output stream
 	SvStream& OutLong( SvStream& rStrm, long nVal );
 	SvStream& OutULong( SvStream& rStrm, sal_uLong nVal );
 
-	// Hex-Zahl ausgeben, default ist 2.stellige Zahl
+	// print Hex-Zahl, default is 2. digit number
 	SvStream& OutHex( SvStream& rStrm, sal_uLong nHex, sal_uInt8 nLen = 2 );
-	// 4-st. Hex-Zahl ausgeben
+	// print 4-digit Hex number
 	inline SvStream& OutHex4( SvStream& rStrm, sal_uInt16 nHex )
 		{   return OutHex( rStrm, nHex, 4 ); }
 
@@ -547,7 +543,7 @@ SV_DECL_REF(Writer)
 #endif
 SV_IMPL_REF(Writer)
 
-// Basisklasse fuer alle Storage-Writer
+// baseclass of all Storage-Writer
 class SW_DLLPUBLIC StgWriter : public Writer
 {
 protected:
@@ -555,7 +551,7 @@ protected:
     SotStorageRef pStg;
     com::sun::star::uno::Reference < com::sun::star::embed::XStorage > xStg;
 
-	// Fehler beim Aufruf erzeugen
+	// create error at call
 	virtual sal_uLong WriteStream();
 	virtual sal_uLong WriteStorage() = 0;
 	virtual sal_uLong WriteMedium( SfxMedium& ) = 0;
@@ -626,7 +622,7 @@ public:
 };
 
 
-/*  */
+/* */
 /////////////////////////////////////////////////////////////////////////////
 
 typedef Reader* (*FnGetReader)();
