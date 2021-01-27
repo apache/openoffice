@@ -45,7 +45,7 @@
 #include <errhdl.hxx>
 #include <iodetect.hxx>
 
-// some forward declerations
+// some forward declarations
 class SfxFilterContainer;
 class SfxFilter;
 class SfxItemPool;
@@ -107,7 +107,7 @@ public:
 /**************** SwReader/Reader ************************/
 // base class for different specialized readers
 class Reader;
-//  calls a document with its options, document, cursor etc.
+//  calls the reader with its options, document, cursor etc.
 class SwReader;
 // SwRead is a pointer on the read options of the base class
 typedef Reader *SwRead;
@@ -168,7 +168,7 @@ class SwReader: public SwDocFac
 
 public:
 	/*
-	 * Initial read. document is created when function Read(...) os called
+	 * Initial read. document is created when function Read(...) is called
 	 * JP 25.04.95: or if it has been passed in that one.
 	 *				special case if loaded with Sw3Reader
 	 */
@@ -230,7 +230,7 @@ protected:
 	SwgReaderOption aOpt;
 	sal_Bool bInsertMode : 1;
 	sal_Bool bTmplBrowseMode : 1;
-	sal_Bool bReadUTF8: 1;		// interpred stream as UTF-8
+	sal_Bool bReadUTF8: 1;		// interpreted stream as UTF-8
 	sal_Bool bBlockMode: 1;
 	sal_Bool bOrganizerMode : 1;
 	sal_Bool bHasAskTemplateName : 1;
@@ -382,7 +382,7 @@ public:
 	sal_Bool   BeginPutDoc( const String&, const String& ); // start save
 	sal_uInt16 PutDoc(); 								// End save
 
-	sal_uInt16 PutText( const String&, const String&, const String& ); // save (short., Text)
+	sal_uInt16 PutText( const String&, const String&, const String& ); // save (shortname, Text)
 
 	sal_Bool IsOnlyTextBlock( sal_uInt16 ) const;
 	sal_Bool IsOnlyTextBlock( const String& rShort ) const;
@@ -516,13 +516,13 @@ public:
 
 	// Stream-specific routines, DO NOT USE IN Storage-Writer!
 
-	// Optimize of the output stream
+	// optimization of the output stream
 	SvStream& OutLong( SvStream& rStrm, long nVal );
 	SvStream& OutULong( SvStream& rStrm, sal_uLong nVal );
 
-	// print Hex-Zahl, default is 2. digit number
+	// print hexadecimal number, default is 2. digit number
 	SvStream& OutHex( SvStream& rStrm, sal_uLong nHex, sal_uInt8 nLen = 2 );
-	// print 4-digit Hex number
+	// print 4-digit hexadecimal number
 	inline SvStream& OutHex4( SvStream& rStrm, sal_uInt16 nHex )
 		{   return OutHex( rStrm, nHex, 4 ); }
 
@@ -585,8 +585,7 @@ public:
 
 */
 
-// Schnittstellenklasse fuer den allgemeinen Zugriff auf die
-// speziellen Writer
+// Interface class for a generic access on special writer
 
 class SwWriter
 {
