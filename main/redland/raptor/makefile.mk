@@ -101,6 +101,13 @@ LDFLAGS:=-Wl,-rpath,'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib' -Wl,-noinhibit-exec
 LDFLAGS:=-Wl,-R'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib'
 .ENDIF                  # "$(OS)$(COM)"=="SOLARISC52"
 
+# Apple added availability annotiations to __darwin_check_fd_set_overflow to avoid the use of weak
+# and building with older deployment target fundamentally requires weak imports
+# Grrrrrr
+.IF "$(OS)"=="MACOSX"
+LDFLAGS+:=-Wl,-U,___darwin_check_fd_set_overflow
+.ENDIF                  #
+
 .IF "$(COM)"=="C52" && "$(CPU)"=="U"
 CFLAGS=-m64
 .EXPORT: CFLAGS
