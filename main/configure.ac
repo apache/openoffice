@@ -1159,7 +1159,7 @@ case "$build_os" in
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -stdlib=libc++ -arch x86_64"
+		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
