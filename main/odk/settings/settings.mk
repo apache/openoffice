@@ -402,9 +402,9 @@ OS=MACOSX
 PS=/
 ICL=\$$
 CC=`xcrun -f clang` -arch x86_64
-CXX=`xcrun -f clang++` -arch x86_64 -std=c++11
-LINK=`xcrun -f clang++` -arch x86_64 -std=c++11
-LIB=`xcrun -f clang++` -arch x86_64 -std=c++11
+CXX=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
+LINK=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
+LIB=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
 INSTALLTOOL=`xcrun -f install_name_tool`
 
 ECHO=@echo
