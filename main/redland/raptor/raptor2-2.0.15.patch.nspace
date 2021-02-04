@@ -29,6 +29,16 @@ index 693b9468..0d3a36a5 100644
      if(element->declared_nspaces)
        nspace_max_count += raptor_sequence_size(element->declared_nspaces);
      if(element->xml_language)
+@@ -216,6 +216,9 @@ raptor_xml_writer_start_element_common(raptor_xml_writer* xml_writer,
+ 
+   if(nstack && element->attributes) {
+     for(i = 0; i < element->attribute_count; i++) {
++      if (nspace_declarations_count > element->attribute_count)
++        goto error;
++
+       /* qname */
+       if(element->attributes[i]->nspace) {
+         /* Check if we need a namespace declaration attribute */
 @@ -237,7 +238,7 @@ raptor_xml_writer_start_element_common(raptor_xml_writer* xml_writer,
          }
        }
