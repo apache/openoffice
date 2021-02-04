@@ -67,7 +67,7 @@ struct __cxa_exception
     void *catchTemp;
     void *adjustedPtr;
     _Unwind_Exception unwindHeader;
-};    
+};
 
 extern "C" void *__cxa_allocate_exception(
     std::size_t thrown_size ) throw();
