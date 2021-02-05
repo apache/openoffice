@@ -2253,7 +2253,7 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
             }
             else if ( sType.equals( sAnnotationEnd ) )
             {
-                if (!!bAutoStyles) {
+                if (!bAutoStyles) {
                     Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
                     const OUString& rName = xBookmark->getName();
                     if ( rName.getLength() > 0 )
