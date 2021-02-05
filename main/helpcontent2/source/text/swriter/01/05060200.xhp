@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
 <topic id="textswriter0105060200xml" indexer="include">
 <title id="tit" xml-lang="en-US">Wrap</title>
@@ -38,7 +37,7 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:TextWrap" id="bm_id3154564" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapMenu" id="bm_id0801200803335347" localize="false"/>
 <paragraph role="heading" id="hd_id3153527" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/swriter/01/05060200.xhp" name="Wrap">Wrap</link></paragraph>
-<paragraph role="paragraph" id="par_id3154478" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="umlauftext"><ahelp hid=".uno:TextWrap">Specify the way you want text to wrap around an object.</ahelp> You can also specify the spacing between the text and the object. 
+<paragraph role="paragraph" id="par_id3154478" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="umlauftext"><ahelp hid=".uno:TextWrap">Specify the way you want text to wrap around an object.</ahelp> You can also specify the spacing between the text and the object.
 </variable></paragraph>
 </section>
 <section id="howtoget">
@@ -56,7 +55,7 @@
 <tablerow>
 <tablecell>
 <paragraph role="paragraph" id="par_id3149038" xml-lang="en-US" l10n="E">
-<image id="img_id3149044" src="sw/imglst/wr07.png" width="0.82cm" height="0.82cm"><alt id="alt_id3149044" xml-lang="en-US">Icon</alt>
+<image id="img_id3149044" src="sw/imglst/wr01.png" width="0.82cm" height="0.82cm"><alt id="alt_id3149044" xml-lang="en-US">Icon</alt>
 	</image></paragraph>
 </tablecell>
 <tablecell>
@@ -160,19 +159,19 @@
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapAnchorOnly" id="bm_id7795797" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapAnchorOnly" id="bm_id3154324" localize="false"/>
 <paragraph role="heading" id="hd_id3153229" xml-lang="en-US" level="3" l10n="U" oldref="28">First Paragraph</paragraph>
-<paragraph role="paragraph" id="par_id3154333" xml-lang="en-US" l10n="U" oldref="29"><variable id="ersterabsatztext"><ahelp hid=".uno:WrapAnchorOnly">Starts a new paragraph below the object after you press Enter.</ahelp> The space between the paragraphs is determined by the size of the object. 
+<paragraph role="paragraph" id="par_id3154333" xml-lang="en-US" l10n="U" oldref="29"><variable id="ersterabsatztext"><ahelp hid=".uno:WrapAnchorOnly">Starts a new paragraph below the object after you press Enter.</ahelp> The space between the paragraphs is determined by the size of the object.
 </variable></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_WRAP:CB_TRANSPARENT" id="bm_id3150086" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapThroughTransparent" id="bm_id7503356" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapThroughTransparent" id="bm_id3150090" localize="false"/>
 <paragraph role="heading" id="hd_id3148790" xml-lang="en-US" level="3" l10n="U" oldref="30">In Background</paragraph>
-<paragraph role="paragraph" id="par_id3150100" xml-lang="en-US" l10n="U" oldref="31"><variable id="hintergrundtext"><ahelp hid=".uno:WrapThroughTransparent">Moves the selected object to the background. This option is only available if you selected the<emph> Through</emph> wrap type.</ahelp>
+<paragraph role="paragraph" id="par_id3150100" xml-lang="en-US" l10n="U" oldref="31"><variable id="hintergrundtext"><ahelp hid=".uno:WrapThroughTransparent">Moves the selected object to the background. This option is only available if you selected the <emph>Through</emph> wrap type.</ahelp>
 </variable></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_WRAP:CB_OUTLINE" id="bm_id3149369" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapContour" id="bm_id2682094" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:WrapContour" id="bm_id3149372" localize="false"/>
 <paragraph role="heading" id="hd_id3149358" xml-lang="en-US" level="3" l10n="U" oldref="47">Contour</paragraph>
-<paragraph role="paragraph" id="par_id3155793" xml-lang="en-US" l10n="U" oldref="48"><variable id="konturtext"><ahelp hid=".uno:WrapContour">Wraps text around the shape of the object. This option is not available for the <emph>Through</emph> wrap type, or for frames.</ahelp> To change the contour of an object, select the object, and then choose <emph>Format - Wrap - </emph><link href="text/swriter/01/05060201.xhp" name="Edit Contour"><emph>Edit Contour</emph></link>. 
+<paragraph role="paragraph" id="par_id3155793" xml-lang="en-US" l10n="U" oldref="48"><variable id="konturtext"><ahelp hid=".uno:WrapContour">Wraps text around the shape of the object. This option is not available for the <emph>Through</emph> wrap type, or for frames.</ahelp> To change the contour of an object, select the object, and then choose <emph>Format - Wrap - </emph><link href="text/swriter/01/05060201.xhp" name="Edit Contour"><emph>Edit Contour</emph></link>.
 </variable></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:CheckBox:TP_FRM_WRAP:CB_ONLYOUTSIDE" id="bm_id3154632" localize="false"/>
 <paragraph role="heading" id="hd_id3154620" xml-lang="en-US" level="3" l10n="U" oldref="51">Only outside</paragraph>
