@@ -162,8 +162,11 @@ SvXMLAttributeList::~SvXMLAttributeList()
 void SvXMLAttributeList::AddAttribute( 	const OUString &sName ,
 										const OUString &sValue )
 {
-    OSL_ASSERT(GetIndexByName(sName) == -1); // TODO raise an exception
-	m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl( sName , sValue ) );
+    if (GetIndexByName(sName) == -1) {
+		m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl( sName , sValue ) );
+    } else {
+        throw com::sun::star::uno::RuntimeException(OUString(RTL_CONSTASCII_USTRINGPARAM("attempt to insert duplicate XML tag attribute: ")) + sName, NULL);
+    }
 }
 
 void SvXMLAttributeList::Clear()
@@ -204,10 +207,13 @@ void SvXMLAttributeList::AppendAttributeList( const uno::Reference< ::com::sun::
     OUString sName;
 	for( sal_Int16 i = 0 ; i < nMax ; ++i ) {
         sName = r->getNameByIndex(i);
-        OSL_ASSERT(GetIndexByName(sName) == -1); // TODO raise an exception
-		m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl(
-			sName ,
-			r->getValueByIndex( i )));
+        if (GetIndexByName(sName) == -1) {
+            m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl(
+                sName ,
+			    r->getValueByIndex( i )));
+        } else {
+            throw com::sun::star::uno::RuntimeException(OUString(RTL_CONSTASCII_USTRINGPARAM("attempt to insert duplicate XML tag attribute: ")) + sName, NULL);
+        }
 	}
 
 	OSL_ASSERT( nTotalSize == (SvXMLAttributeList_Impl::size_type)getLength());
