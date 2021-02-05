@@ -162,6 +162,7 @@ SvXMLAttributeList::~SvXMLAttributeList()
 void SvXMLAttributeList::AddAttribute( 	const OUString &sName ,
 										const OUString &sValue )
 {
+    OSL_ASSERT(GetIndexByName(sName) == -1); // TODO raise an exception
 	m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl( sName , sValue ) );
 }
 
@@ -200,9 +201,12 @@ void SvXMLAttributeList::AppendAttributeList( const uno::Reference< ::com::sun::
 		m_pImpl->vecAttribute.size() + nMax;
 	m_pImpl->vecAttribute.reserve( nTotalSize );
 
+    OUString sName;
 	for( sal_Int16 i = 0 ; i < nMax ; ++i ) {
+        sName = r->getNameByIndex(i);
+        OSL_ASSERT(GetIndexByName(sName) == -1); // TODO raise an exception
 		m_pImpl->vecAttribute.push_back( SvXMLTagAttribute_Impl(
-			r->getNameByIndex( i ) ,
+			sName ,
 			r->getValueByIndex( i )));
 	}
 
