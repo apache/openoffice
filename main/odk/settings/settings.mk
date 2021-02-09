@@ -397,14 +397,15 @@ endif
 JAVABIN=Commands
 
 GCC_ARCH_OPTION=-arch x86_64
+CLANG_CXX_VERSIONING=-std=c++11 -stdlib=libc++
 
 OS=MACOSX
 PS=/
 ICL=\$$
-CC=`xcrun -f clang` -arch x86_64
-CXX=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
-LINK=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
-LIB=`xcrun -f clang++` -arch x86_64 -std=c++11 -stdlib=libc++
+CC=`xcrun -f clang` $(GCC_ARCH_OPTION)
+CXX=`xcrun -f clang++` $(GCC_ARCH_OPTION) $(CLANG_CXX_VERSIONING)
+LINK=`xcrun -f clang++` $(GCC_ARCH_OPTION) $(CLANG_CXX_VERSIONING)
+LIB=`xcrun -f clang++` $(GCC_ARCH_OPTION) $(CLANG_CXX_VERSIONING)
 INSTALLTOOL=`xcrun -f install_name_tool`
 
 ECHO=@echo
