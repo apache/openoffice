@@ -1163,6 +1163,7 @@ case "$build_os" in
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
+		# FIXME: Assumes 10.x, breaks w/ Big Sur
 		_osx_version="10.`expr $_darwin_version - 4`"
 		AC_MSG_NOTICE([Detected Darwin version: $_darwin_version ($_osx_version)])
 		;;

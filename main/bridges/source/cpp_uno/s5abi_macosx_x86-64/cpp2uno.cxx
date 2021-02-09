@@ -395,6 +395,9 @@ extern "C" typelib_TypeClass cpp_vtable_call(
 extern "C" void privateSnippetExecutor( void )
 {
 	asm volatile (
+		"	.text\n"
+		"	.align 2\n"
+		".globl privateSnippetExecutor\n"
 		"	subq	$160, %rsp\n"
 		"	movq	%r10, -152(%rbp)\n"		// Save (nVtableOffset << 32) + nFunctionIndex
 
