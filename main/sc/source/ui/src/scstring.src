@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,30 +7,31 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "sc.hrc" // -> #include <sfx.hrc>
 
- // Strings fuer Interface-Namen ------------------------------------------
+// Strings for interface names
 
 String SCSTR_APPLICATION
 {
-	Text [ en-US ] = "%PRODUCTNAME Calc 6.0";
+	Text [ en-US ] = "%PRODUCTNAME Calc 6.0" ;
 };
 String SCSTR_50_APPLICATION
 {
-	Text [ en-US ] = "StarCalc  5.0" ;
+	Text [ en-US ] = "StarCalc 5.0" ;
 };
 String SCSTR_40_APPLICATION
 {
@@ -42,7 +43,7 @@ String SCSTR_30_APPLICATION
 };
 String SCSTR_LONG_SCDOC_NAME
 {
-    Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION Spreadsheet";
+	Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION Spreadsheet" ;
 };
 String SCSTR_50_LONG_DOCNAME
 {
@@ -77,12 +78,12 @@ String SCSTR_TABVIEWSHELL
 
 String SCSTR_CELLSHELL
 {
-	Text [ en-US ] = "Functions for Cells";
+	Text [ en-US ] = "Functions for Cells" ;
 };
 
 String SCSTR_FORMATSHELL
 {
-	Text [ en-US ] = "Formats for Cells";
+	Text [ en-US ] = "Formats for Cells" ;
 };
 
 
@@ -98,26 +99,26 @@ String SCSTR_DRAWTEXTSHELL
 
 String SCSTR_DRAWFORMSHELL
 {
-	Text [ en-US ] = "Form objects";
+	Text [ en-US ] = "Form objects" ;
 };
 
 String SCSTR_CHARTSHELL
 {
-	Text [ en-US ] = "Chart objects";
+	Text [ en-US ] = "Chart objects" ;
 };
 
 String SCSTR_OLEOBJECTSHELL
 {
-	Text [ en-US ] = "OLE objects";
+	Text [ en-US ] = "OLE objects" ;
 };
 
 String SCSTR_GRAPHICSHELL
 {
-	Text [ en-US ] = "Graphics";
+	Text [ en-US ] = "Graphics" ;
 };
 String SCSTR_PAGEBREAKSHELL
 {
-	Text [ en-US ] = "Pagebreak";
+	Text [ en-US ] = "Pagebreak" ;
 };
 
 String SCSTR_EDITSHELL
@@ -140,7 +141,7 @@ String SCSTR_AUDITSHELL
 	Text [ en-US ] = "Detective Fill Mode" ;
 };
 
- // -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 
 String STR_ROWHEIGHT
 {
@@ -278,22 +279,22 @@ String SCSTR_RENAMETAB
 };
 String SCSTR_SET_TAB_BG_COLOR
 {
-    Text [ en-US ] = "Tab Color" ;
+	Text [ en-US ] = "Tab Color" ;
 };
 String SCSTR_NO_TAB_BG_COLOR
 {
-    Text [ en-US ] = "Default" ;
+	Text [ en-US ] = "Default" ;
 };
 String SCSTR_RENAMEOBJECT
 {
-	Text [ en-US ] = "Name Object";
+	Text [ en-US ] = "Name Object" ;
 };
 String STR_INSERTGRAPHIC
 {
-    Text [ en-US ] = "Insert Picture" ;
+	Text [ en-US ] = "Insert Picture" ;
 };
 
- //      Attribute
+// Attributes
 
 String SCSTR_HOR_JUSTIFY_LEFT
 {
@@ -366,11 +367,11 @@ String SCSTR_UNPROTECTTAB
 };
 String SCSTR_CHG_PROTECT
 {
-    Text [ en-US ] = "Protect Records" ;
+	Text [ en-US ] = "Protect Records" ;
 };
 String SCSTR_CHG_UNPROTECT
 {
-    Text [ en-US ] = "Unprotect Records" ;
+	Text [ en-US ] = "Unprotect Records" ;
 };
 String SCSTR_PASSWORD
 {
@@ -461,14 +462,14 @@ String SCSTR_VALID_VALUE
 };
 String SCSTR_VALID_RANGE
 {
-    Text [ en-US ] = "~Source" ;
+	Text [ en-US ] = "~Source" ;
 };
 String SCSTR_VALID_LIST
 {
-    Text [ en-US ] = "~Entries" ;
+	Text [ en-US ] = "~Entries" ;
 };
 
- //	fuer Dialoge:
+// for dialogs:
 
 String SCSTR_CHARSET_USER
 {
@@ -487,12 +488,12 @@ String SCSTR_FIELDSEP
 
 String SCSTR_FIELDSEP_TAB
 {
-    Text [ en-US ] = "Tab" ;
+	Text [ en-US ] = "Tab" ;
 };
 
 String SCSTR_FIELDSEP_SPACE
 {
-    Text [ en-US ] = "space" ;
+	Text [ en-US ] = "space" ;
 };
 
 String SCSTR_TEXTSEP
@@ -545,236 +546,236 @@ String STR_CAPTION_DEFAULT_TEXT
 // Select tables dialog title
 String STR_DLG_SELECTTABLES_TITLE
 {
-    Text [ en-US ] = "Select Sheets";
+	Text [ en-US ] = "Select Sheets" ;
 };
 
 // Select tables dialog listbox
 String STR_DLG_SELECTTABLES_LBNAME
 {
-    Text [ en-US ] = "~Selected sheets";
+	Text [ en-US ] = "~Selected sheets" ;
 };
 
 String STR_REPLCELLSWARN
 {
-    Text [ en-US ] = "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?";
+	Text [ en-US ] = "You are pasting data into cells that already contain data.\nDo you really want to overwrite the existing data?" ;
 };
 
 String SCSTR_ALLFILTER
 {
-    Text [ en-US ] = "All";
+	Text [ en-US ] = "All" ;
 };
 
 String STR_ACC_CSVRULER_NAME
 {
-    Text [ en-US ] = "Ruler";
+	Text [ en-US ] = "Ruler" ;
 };
 
 String STR_ACC_CSVRULER_DESCR
 {
-	Text [ en-US ] = "This ruler manages objects at fixed positions.";
+	Text [ en-US ] = "This ruler manages objects at fixed positions." ;
 };
 
 String STR_ACC_CSVGRID_NAME
 {
-    Text [ en-US ] = "Preview";
+	Text [ en-US ] = "Preview" ;
 };
 
 String STR_ACC_CSVGRID_DESCR
 {
-	Text [ en-US ] = "This sheet shows how the data will be arranged in the document.";
+	Text [ en-US ] = "This sheet shows how the data will be arranged in the document." ;
 };
 
 String STR_ACC_DOC_NAME
 {
-    Text [ en-US ] = "Document view";
+	Text [ en-US ] = "Document view" ;
 };
 
 String STR_ACC_DOC_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_TABLE_NAME
 {
-    Text [ en-US ] = "Sheet %1";
+	Text [ en-US ] = "Sheet %1" ;
 };
 
 String STR_ACC_TABLE_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_CELL_NAME
 {
-    Text [ en-US ] = "Cell %1";
+	Text [ en-US ] = "Cell %1" ;
 };
 
 String STR_ACC_CELL_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_PREVIEWDOC_NAME
 {
-    Text [ en-US ] = "Page preview";
+	Text [ en-US ] = "Page preview" ;
 };
 
 String STR_ACC_PREVIEWDOC_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_HEADERCELL_NAME
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_HEADERCELL_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_LEFTAREA_NAME
 {
-    Text [ en-US ] = "Left area";
+	Text [ en-US ] = "Left area" ;
 };
 
 String STR_ACC_LEFTAREA_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_CENTERAREA_NAME
 {
-    Text [ en-US ] = "Center area";
+	Text [ en-US ] = "Center area" ;
 };
 
 String STR_ACC_CENTERAREA_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_RIGHTAREA_NAME
 {
-    Text [ en-US ] = "Right area";
+	Text [ en-US ] = "Right area" ;
 };
 
 String STR_ACC_RIGHTAREA_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_HEADER_NAME
 {
-    Text [ en-US ] = "Header of page %1";
+	Text [ en-US ] = "Header of page %1" ;
 };
 
 String STR_ACC_HEADER_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_FOOTER_NAME
 {
-    Text [ en-US ] = "Footer of page %1";
+	Text [ en-US ] = "Footer of page %1" ;
 };
 
 String STR_ACC_FOOTER_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_EDITLINE_NAME
 {
-    Text [ en-US ] = "Input line";
+	Text [ en-US ] = "Input line" ;
 };
 
 String STR_ACC_EDITLINE_DESCR
 {
-	Text [ en-US ] = "This is where you enter or edit text, numbers and formulas.";
+	Text [ en-US ] = "This is where you enter or edit text, numbers and formulas." ;
 };
 
 String STR_ACC_EDITCELL_NAME
 {
-    Text [ en-US ] = "Cell %1";
+	Text [ en-US ] = "Cell %1" ;
 };
 
 String STR_ACC_EDITCELL_DESCR
 {
-    Text = "";
+	Text = "" ;
 };
 
 String STR_ACC_DATAPILOT_ROW_DESCR
 {
-	Text [ en-US ] = "Fields that you drop here will be displayed as rows in the final pivot table.";
+	Text [ en-US ] = "Fields that you drop here will be displayed as rows in the final pivot table." ;
 };
 
 String STR_ACC_DATAPILOT_COL_DESCR
 {
-	Text [ en-US ] = "Fields that you drop here will be displayed as columns in the final pivot table.";
+	Text [ en-US ] = "Fields that you drop here will be displayed as columns in the final pivot table." ;
 };
 
 String STR_ACC_DATAPILOT_DATA_DESCR
 {
-	Text [ en-US ] = "Fields that you drop here will be used for calculations in the final pivot table.";
+	Text [ en-US ] = "Fields that you drop here will be used for calculations in the final pivot table." ;
 };
 
 String STR_ACC_DATAPILOT_SEL_DESCR
 {
-	Text [ en-US ] = "Lists the fields that you can drag to one of the other three areas.";
+	Text [ en-US ] = "Lists the fields that you can drag to one of the other three areas." ;
 };
 
 String SCSTR_MEDIASHELL
 {
-	Text [ en-US ] = "Media Playback";
+	Text [ en-US ] = "Media Playback" ;
 };
 
 String RID_SCSTR_ONCLICK
 {
-	Text [ en-US ] = "Mouse button pressed";
+	Text [ en-US ] = "Mouse button pressed" ;
 };
 
 String STR_ACC_TOOLBAR_FORMULA
 {
-	Text [ en-US ] = "Formula Tool Bar";	
+	Text [ en-US ] = "Formula Tool Bar" ;
 };
 String STR_ACC_DOC_SPREADSHEET
 {
-	Text [ en-US ] = "%PRODUCTNAME Spreadsheets";
+	Text [ en-US ] = "%PRODUCTNAME Spreadsheets" ;
 };
 String STR_ACC_DOC_SPREADSHEET_READONLY
 {
-	Text [ en-US ] = "(read-only)";
+	Text [ en-US ] = "(read-only)" ;
 };
 String STR_ACC_DOC_PREVIEW_SUFFIX
 {
-	Text [ en-US ] = "(Preview mode)";
+	Text [ en-US ] = "(Preview mode)" ;
 };
 
 String SCSTR_MOREBTN_MOREOPTIONS
 {
-    Text [ en-US ] = "More ~Options";
+	Text [ en-US ] = "More ~Options" ;
 };
 
 String SCSTR_MOREBTN_FEWEROPTIONS
 {
-    Text [ en-US ] = "Fewer ~Options";
+	Text [ en-US ] = "Fewer ~Options" ;
 };
 
 StringArray SCSTR_PRINT_OPTIONS
 {
-    ItemList [en-US] =
-    {
-        < "Pages"; >;
-        < "~Include output of empty pages"; >;
-        < "Print content"; >;
-        < "~All sheets"; >;
-        < "~Selected sheets"; >;
-        < "Selected cells"; >;
-        < "Thereof print"; >;
-        < "All ~pages"; >;
-        < "Pa~ges"; >;
-        < "%PRODUCTNAME %s"; >;
-    };
+	ItemList [ en-US ] =
+	{
+		< "Pages" ;								>;
+		< "~Include output of empty pages" ;	>;
+		< "Print content" ;						>;
+		< "~All sheets" ;						>;
+		< "~Selected sheets" ;					>;
+		< "Selected cells" ;					>;
+		< "Thereof print" ;						>;
+		< "All ~pages" ;						>;
+		< "Pa~ges" ;							>;
+		< "%PRODUCTNAME %s" ;					>;
+	};
 };
 
