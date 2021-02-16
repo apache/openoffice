@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include <svx/globlmn.hrc>
 
 
- // Popup-Menues ----------------------------------------------------------------
+// Popup menus ----------------------------------------------------------------
 
 String RID_POPUP_CELLS
 {
@@ -42,29 +42,29 @@ Menu RID_POPUP_CELLS
 			HelpId = CMD_SID_CELL_FORMAT_RESET ;
 			Text [ en-US ] = "~Default Formatting" ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = FID_CELL_FORMAT ;
 			HelpId = CMD_FID_CELL_FORMAT ;
 			Text [ en-US ] = "~Format Cells..." ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = FID_INS_CELL ;
 			HelpId = CMD_FID_INS_CELL ;
-            Text [ en-US ] = "~Insert..." ;
+			Text [ en-US ] = "~Insert..." ;
 		};
 		MenuItem
 		{
 			Identifier = FID_DELETE_CELL ;
 			HelpId = CMD_FID_DELETE_CELL ;
-            Text [ en-US ] = "De~lete..." ;
+			Text [ en-US ] = "De~lete..." ;
 		};
 		MenuItem
 		{
@@ -72,30 +72,30 @@ Menu RID_POPUP_CELLS
 			HelpId = CMD_SID_DELETE ;
 			Text [ en-US ] = "Delete C~ontents..." ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
-        MenuItem
-        {
-            Identifier = SID_INSERT_POSTIT ;
-            HelpId = CMD_SID_INSERT_POSTIT ;
-            Text [ en-US ] = "Insert Co~mment" ;
-        };
-        MenuItem
-        {
-            Identifier = SID_DELETE_NOTE ;
-            HelpId = CMD_SID_DELETE_NOTE ;
-            Text [ en-US ] = "D~elete Comment" ;
-        };
-        MenuItem
-        {
-            Identifier = FID_NOTE_VISIBLE ;
-            HelpId = CMD_FID_NOTE_VISIBLE ;
-            Text [ en-US ] = "Sho~w Comment" ;
-        };
-		 //------------------------------
+		//------------------------------
+		MenuItem
+		{
+			Identifier = SID_INSERT_POSTIT ;
+			HelpId = CMD_SID_INSERT_POSTIT ;
+			Text [ en-US ] = "Insert Co~mment" ;
+		};
+		MenuItem
+		{
+			Identifier = SID_DELETE_NOTE ;
+			HelpId = CMD_SID_DELETE_NOTE ;
+			Text [ en-US ] = "D~elete Comment" ;
+		};
+		MenuItem
+		{
+			Identifier = FID_NOTE_VISIBLE ;
+			HelpId = CMD_FID_NOTE_VISIBLE ;
+			Text [ en-US ] = "Sho~w Comment" ;
+		};
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 
 		MenuItem
 		{
@@ -119,13 +119,13 @@ Menu RID_POPUP_CELLS
 
 		MenuItem
 		{
-            Identifier = SID_PASTE_SPECIAL ;
-            HelpId = CMD_SID_PASTE_SPECIAL ;
+			Identifier = SID_PASTE_SPECIAL ;
+			HelpId = CMD_SID_PASTE_SPECIAL ;
 			Text [ en-US ] = "P~aste Special..." ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = SID_DATA_SELECT ;
@@ -174,33 +174,33 @@ Menu RID_POPUP_TAB
 			HelpId = CMD_FID_TAB_SELECTALL ;
 			Text [ en-US ] = "Select All S~heets" ;
 		};
-        MenuItem
-        {
-            Identifier = FID_TAB_DESELECTALL ;
-            HelpId = CMD_FID_TAB_DESELECTALL ;
-            Text [ en-US ] = "D~eselect All Sheets" ;
-        };
+		MenuItem
+		{
+			Identifier = FID_TAB_DESELECTALL ;
+			HelpId = CMD_FID_TAB_DESELECTALL ;
+			Text [ en-US ] = "D~eselect All Sheets" ;
+		};
 		MenuItem
 		{
 			Identifier = FID_TAB_RTL ;
 			HelpId = CMD_FID_TAB_RTL ;
 			Text [ en-US ] = "S~heet Right-To-Left" ;
 		};
-        MenuItem
-        {
-            Identifier = FID_TAB_EVENTS ;
-            HelpId = CMD_FID_TAB_EVENTS ;
-            Text [ en-US ] = "Sheet E~vents..." ;
-        };
-        //------------------------------
-        MenuItem { Separator = TRUE ; };
-        //------------------------------
-        MenuItem
-        {
-            Identifier = FID_TAB_MENU_SET_TAB_BG_COLOR ;
-            HelpId = CMD_FID_TAB_MENU_SET_TAB_BG_COLOR ;
-            Text [ en-US ] = "~Tab Color..." ;
-        };
+		MenuItem
+		{
+			Identifier = FID_TAB_EVENTS ;
+			HelpId = CMD_FID_TAB_EVENTS ;
+			Text [ en-US ] = "Sheet E~vents..." ;
+		};
+		//------------------------------
+		MenuItem { Separator = TRUE ; };
+		//------------------------------
+		MenuItem
+		{
+			Identifier = FID_TAB_MENU_SET_TAB_BG_COLOR ;
+			HelpId = CMD_FID_TAB_MENU_SET_TAB_BG_COLOR ;
+			Text [ en-US ] = "~Tab Color..." ;
+		};
 	};
 };
 
@@ -227,9 +227,9 @@ Menu RID_POPUP_PIVOT
 		};
 		MenuItem
 		{
-            Identifier = SID_DP_FILTER ;
-            HelpId = CMD_SID_DP_FILTER ;
-            Text [ en-US ] = "~Filter..." ;
+			Identifier = SID_DP_FILTER ;
+			HelpId = CMD_SID_DP_FILTER ;
+			Text [ en-US ] = "~Filter..." ;
 		};
 		MenuItem
 		{
@@ -273,12 +273,12 @@ Menu RID_POPUP_PREVIEW
 			HelpId = CMD_SID_CLOSEWIN ;
 			Text [ en-US ] = "~Close" ;
 		};
-        MenuItem { Separator = TRUE; };
-        MenuItem
-        {
-            Identifier = SID_PREVIEW_CLOSE ;
-            HelpId = CMD_SID_PRINTPREVIEW ;
-            Text [ en-US ] = "Close Pre~view" ;
+		MenuItem { Separator = TRUE; };
+		MenuItem
+		{
+			Identifier = SID_PREVIEW_CLOSE ;
+			HelpId = CMD_SID_PRINTPREVIEW ;
+			Text [ en-US ] = "Close Pre~view" ;
 		};
 	};
 };
@@ -299,20 +299,20 @@ Menu RID_POPUP_EDIT
 			HelpId = CMD_SID_CELL_FORMAT_RESET ;
 			Text [ en-US ] = "~Default" ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem // Menu-Controller
-		 // Menu-Controller
-		 // Menu-Controller
-		 // Menu-Controller
+		// Menu-Controller
+		// Menu-Controller
+		// Menu-Controller
 		{
 			ITEM_FORMAT_ATTR_CHAR_FONT
 		};
 		MenuItem // Menu-Controller
-		 // Menu-Controller
-		 // Menu-Controller
-		 // Menu-Controller
+		// Menu-Controller
+		// Menu-Controller
+		// Menu-Controller
 		{
 			ITEM_FORMAT_ATTR_CHAR_FONTHEIGHT
 		};
@@ -320,8 +320,7 @@ Menu RID_POPUP_EDIT
 		{
 			Identifier = RID_MN_FORMAT_STYLE ;
 			HelpID = HID_MN_FORMAT_STYLE ;
-//DUPLICATE			Text [ en-US ] = "Style" ;
-			Text [ en-US ] = "St~yle";
+			Text [ en-US ] = "St~yle" ;
 			SubMenu = Menu
 			{
 				ItemList =
@@ -379,20 +378,20 @@ Menu RID_POPUP_EDIT
 				};
 			};
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			ITEM_FORMAT_CHAR_DLG
 		};
-         //------------------------------
-        MenuItem { Separator = TRUE ; };
-         //------------------------------
-        MenuItem
-        {
-            ITEM_OPEN_HYPERLINK
-        };
+		//------------------------------
+		MenuItem { Separator = TRUE ; };
+		//------------------------------
+		MenuItem
+		{
+			ITEM_OPEN_HYPERLINK
+		};
 	};
 };
 
@@ -459,18 +458,18 @@ Menu RID_POPUP_PAGEBREAK
 			HelpId = CMD_SID_CELL_FORMAT_RESET ;
 			Text [ en-US ] = "~Default" ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = FID_CELL_FORMAT ;
 			HelpId = CMD_FID_CELL_FORMAT ;
 			Text [ en-US ] = "~Format Cells..." ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = FID_INS_ROWBRK ;
@@ -495,9 +494,9 @@ Menu RID_POPUP_PAGEBREAK
 			HelpId = CMD_FID_RESET_PRINTZOOM ;
 			Text [ en-US ] = "Reset Scale" ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = SID_DEFINE_PRINTAREA ;
@@ -516,18 +515,18 @@ Menu RID_POPUP_PAGEBREAK
 			HelpId = CMD_SID_DELETE_PRINTAREA ;
 			Text [ en-US ] = "Undo Print Range" ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = SID_FORMATPAGE ;
 			HelpId = CMD_SID_FORMATPAGE ;
 			Text [ en-US ] = "Page Format..." ;
 		};
-		 //------------------------------
+		//------------------------------
 		MenuItem { Separator = TRUE ; };
-		 //------------------------------
+		//------------------------------
 		MenuItem
 		{
 			Identifier = FID_NOTE_VISIBLE ;
@@ -537,4 +536,4 @@ Menu RID_POPUP_PAGEBREAK
 	};
 };
 
-
+// ********************************************************************** EOF
