@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,7 +24,7 @@
 #include "docvw.hrc"
 #include "cmdid.h"
 #include "helpid.h"
-#define SEPARATOR MenuItem { Separator = TRUE; };
+#define SEPARATOR MenuItem { Separator = TRUE; } ;
 Menu MN_READONLY_POPUP
 {
 	ItemList =
@@ -47,23 +47,23 @@ Menu MN_READONLY_POPUP
 			HelpId = CMD_SID_EDITDOC ;
 			Text [ en-US ] = "~Edit" ;
 		};
-        MenuItem
+		MenuItem
 		{
-            Identifier = MN_READONLY_SELECTION_MODE ;
-            HelpId = CMD_FN_READONLY_SELECTION_MODE ;
-        	Text [ en-US ] = "Select Text";
+			Identifier = MN_READONLY_SELECTION_MODE ;
+			HelpId = CMD_FN_READONLY_SELECTION_MODE ;
+			Text [ en-US ] = "Select Text" ;
 		};
 		MenuItem
 		{
-			Identifier = MN_READONLY_RELOAD;
-			HelpId = CMD_SID_RELOAD;
-			Text [ en-US ] = "Re~load";
+			Identifier = MN_READONLY_RELOAD ;
+			HelpId = CMD_SID_RELOAD ;
+			Text [ en-US ] = "Re~load" ;
 		};
 		MenuItem
 		{
-			Identifier = MN_READONLY_RELOAD_FRAME;
-			HelpId = CMD_SID_RELOAD;
-			Text [ en-US ] = "Reload Frame";
+			Identifier = MN_READONLY_RELOAD_FRAME ;
+			HelpId = CMD_SID_RELOAD ;
+			Text [ en-US ] = "Reload Frame" ;
 		};
 		MenuItem
 		{
@@ -158,9 +158,6 @@ Menu MN_READONLY_POPUP
 		{
 			Identifier = MN_READONLY_COPYGRAPHIC ;
 			HelpID = HID_MN_READONLY_COPYGRAPHIC ;
-			/* ### ACHTUNG: Neuer Text in Resource? Grafik ~kopieren : ~Grafik kopieren */
-			/* ### ACHTUNG: Neuer Text in Resource? Grafik ~kopieren : ~Grafik kopieren */
-			/* ### ACHTUNG: Neuer Text in Resource? Grafik ~kopieren : ~Grafik kopieren */
 			Text [ en-US ] = "Copy ~Graphics" ;
 		};
 		SEPARATOR
@@ -182,21 +179,21 @@ Menu MN_READONLY_POPUP
 			HelpID = HID_MN_READONLY_PLUGINOFF ;
 			Text [ en-US ] = "Plug-ins Off" ;
 		};
-        SEPARATOR
-        MenuItem
-        {
-            Identifier = SID_WIN_FULLSCREEN;
-            HelpId = CMD_SID_WIN_FULLSCREEN;
-            Text [ en-US ] = "Leave Full-Screen Mode" ;
+		SEPARATOR
+		MenuItem
+		{
+			Identifier = SID_WIN_FULLSCREEN ;
+			HelpId = CMD_SID_WIN_FULLSCREEN ;
+			Text [ en-US ] = "Leave Full-Screen Mode" ;
 		};
-        SEPARATOR
-        MenuItem
-        {
-            Identifier = MN_READONLY_COPY ;
-            HelpId = CMD_SID_COPY;
-            Text [ en-US ] = "~Copy" ;
-        };
-    };
+		SEPARATOR
+		MenuItem
+		{
+			Identifier = MN_READONLY_COPY ;
+			HelpId = CMD_SID_COPY ;
+			Text [ en-US ] = "~Copy" ;
+		};
+	};
 };
 String STR_EXPORT_GRAFIK_TITLE
 {
@@ -248,7 +245,7 @@ String STR_REDLINE_TABLE
 };
 String STR_REDLINE_FMTCOLL
 {
-	Text [ en-US ] = "Applied Paragraph Styles";
+	Text [ en-US ] = "Applied Paragraph Styles" ;
 };
 String STR_ENDNOTE
 {
@@ -261,32 +258,33 @@ String STR_FTNNOTE
 
 InfoBox MSG_READONLY_CONTENT
 {
-	Message [ en-US ] = "Readonly content cannot be changed.\nNo modifications will be accepted";
+	Message [ en-US ] = "Readonly content cannot be changed.\nNo modifications will be accepted." ;
 };
 
 String STR_TABLE_COL_ADJUST
 {
-    Text [ en-US ] = "Adjust table column" ;
+	Text [ en-US ] = "Adjust table column" ;
 };
 String STR_TABLE_ROW_ADJUST
 {
-    Text [ en-US ] = "Adjust table row" ;
+	Text [ en-US ] = "Adjust table row" ;
 };
 String STR_TABLE_SELECT_ALL
 {
-    Text [ en-US ] = "Select whole table" ;
+	Text [ en-US ] = "Select whole table" ;
 };
 String STR_TABLE_SELECT_ROW
 {
-    Text [ en-US ] = "Select table row" ;
+	Text [ en-US ] = "Select table row" ;
 };
 String STR_TABLE_SELECT_COL
 {
-    Text [ en-US ] = "Select table column" ;
+	Text [ en-US ] = "Select table column" ;
 };
 
 String STR_SMARTTAG_CLICK
 {
-    Text [ en-US ] = "%s-click to open Smart Tag menu" ;
+	Text [ en-US ] = "%s-click to open Smart Tag menu" ;
 };
 
+// ******************************************************************* EOF
