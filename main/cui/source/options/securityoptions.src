@@ -48,7 +48,7 @@ ModalDialog RID_SVXDLG_SECURITY_OPTIONS
 		Pos = MAP_APPFONT ( COL_1, ROW_1 ) ;
 		Size = MAP_APPFONT ( COL_3-COL_1, 2*RSC_CD_FIXEDLINE_HEIGHT ) ;
 		Wordbreak = TRUE ;
-		Text [ en-US ] = "Warn if document contains recorded changes, versions, hidden information or notes:" ;
+		Text [ en-US ] = "Warn if document contains recorded changes, versions, hidden information or comments:" ;
 	};
 	FixedImage FI_SAVESENDDOCS
 	{
