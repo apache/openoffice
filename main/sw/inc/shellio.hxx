@@ -65,7 +65,8 @@ class SwTextBlocks;
 struct SwPosition;
 struct Writer_Impl;
 
-//beyond following number  ASCII/W4W-reader is used. Must be greater then 200
+//defines the amount of maximal characters in a paragraph.
+//The force wrap is done by ASCII/W4W-reader. Must be greater than 200
 #define MAX_ASCII_PARA 10000
 
 
@@ -168,7 +169,7 @@ class SwReader: public SwDocFac
 
 public:
 	/*
-	 * Initial read. document is created when function Read(...) is called
+	 * Initial read. Document is created when function Read(...) is called
 	 * JP 25.04.95: or if it has been passed in that one.
 	 *				special case if loaded with Sw3Reader
 	 */
@@ -176,7 +177,7 @@ public:
     //SwReader( const com::sun::star::uno::Reference < com::sun::star::embed::XStorage >&, const String& rFilename, SwDoc *pDoc = 0 );
     SwReader( SfxMedium&, const String& rFilename, SwDoc *pDoc = 0 );
 	/*
-	 * read into an nexisting document. Document and
+	 * read into an existing document. Document and
 	 * position within the document are taken from SwPaM.
 	 */
     SwReader( SvStream&, const String& rFilename, const String& rBaseURL, SwPaM& );
@@ -204,7 +205,7 @@ protected:
 
 
 /* */
-/****************  SPECIALE Readers ************************/
+/****************  SPECIAL Readers ************************/
 
 // special - Reader can be both!! (Excel, W4W, .. )
 #define SW_STREAM_READER	1
@@ -251,10 +252,10 @@ public:
 	// fit the item-set of a Frm-Formats to the old Format
 	static void ResetFrmFmtAttrs( SfxItemSet &rFrmSet );
 
-	// convert frame /grafic-/OLE-Templates to old Format (without frame etc.)
+	// convert frame /graphic-/OLE-Templates to old Format (without border etc.)
 	static void ResetFrmFmts( SwDoc& rDoc );
 
-	// load filter template, position and free again
+	// load filter-template, position it and then set it free again
 	SwDoc* GetTemplateDoc();
 	sal_Bool SetTemplate( SwDoc& rDoc );
 	void ClearTemplate();
@@ -286,7 +287,7 @@ public:
 private:
     virtual sal_uLong Read(SwDoc &, const String& rBaseURL, SwPaM &,const String &)=0;
 
-	// every object which does not need streams / object must overload following
+	// all streams / storages that do need to open it must overload the method
 	// (W4W!!)
 	virtual int SetStrmStgPtr();
 };
@@ -336,7 +337,7 @@ public:
 /* */
 ////////////////////////////////////////////////////////////////////////////
 // The passed stream has to be dynamic created and before deletion of the
-// instance per Stream() requested and deleted
+// instance per Stream() requested and deleted!
 
 class SwImpBlocks;
 
@@ -499,7 +500,7 @@ public:
 
     // search next bookmark position from the bookmark table
 	sal_Int32 FindPos_Bkmk( const SwPosition& rPos ) const;
-	// build a bookmark table, which is sort by the node position. The
+	// build a bookmark table, which is sorted by the node position. The
 	// OtherPos of the bookmarks also inserted.
 	void CreateBookmarkTbl();
 	// search all bookmarks in the range and return it in the Array
@@ -511,16 +512,16 @@ public:
     static SwPaM * NewSwPaM(SwDoc & rDoc,
                             sal_uLong const nStartIdx, sal_uLong const nEndIdx);
 
-	// upload a local file to the internet / cloud
+	// if applicable, copy a local file into internet / cloud
 	sal_Bool CopyLocalFileToINet( String& rFileNm );
 
-	// Stream-specific routines, DO NOT USE IN Storage-Writer!
+	// Stream-specific routines, DO NOT USE in Storage-Writer!
 
-	// optimization of the output stream
+	// Optimizing output on stream
 	SvStream& OutLong( SvStream& rStrm, long nVal );
 	SvStream& OutULong( SvStream& rStrm, sal_uLong nVal );
 
-	// print hexadecimal number, default is 2. digit number
+	// print hexadecimal number, default is 2-digit number
 	SvStream& OutHex( SvStream& rStrm, sal_uLong nHex, sal_uInt8 nLen = 2 );
 	// print 4-digit hexadecimal number
 	inline SvStream& OutHex4( SvStream& rStrm, sal_uInt16 nHex )
