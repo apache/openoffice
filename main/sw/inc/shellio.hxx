@@ -366,8 +366,8 @@ public:
 	sal_uLong  ConvertToNew();				// convert AutoText entries (ger: Textbausteine)
 
 	sal_uInt16 GetCount() const;						// return amount of AutoText entries
-	sal_uInt16 GetIndex( const String& ) const;			// return Index of shortnames
-	sal_uInt16 GetLongIndex( const String& ) const;		//Index fuer Langnamen ermitteln
+	sal_uInt16 GetIndex( const String& ) const;			// return Index-Number of shortnames
+	sal_uInt16 GetLongIndex( const String& ) const;		//return Index-Number of langnamen
 	const  String& GetShortName( sal_uInt16 ) const; 	// return a shortname of an index
 	const  String& GetLongName( sal_uInt16 ) const;  	// return longname of an index
 
@@ -410,7 +410,7 @@ SW_DLLPUBLIC SwRead SwGetReaderXML();
 // END source/filter/basflt/fltini.cxx
 
 
-extern sal_Bool SetHTMLTemplate( SwDoc &rDoc ); // HTML templates (pre?)load shellio.cxx
+extern sal_Bool SetHTMLTemplate( SwDoc &rDoc ); // load templates from HTML.vor (see shellio.cxx)
 
 
 /* */
