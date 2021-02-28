@@ -367,10 +367,10 @@ public:
 	sal_uLong  ConvertToNew();				// convert AutoText entries (ger: Textbausteine)
 
 	sal_uInt16 GetCount() const;						// return amount of AutoText entries
-	sal_uInt16 GetIndex( const String& ) const;			// return Index-Number of shortnames
-	sal_uInt16 GetLongIndex( const String& ) const;		//return Index-Number of langnamen
-	const  String& GetShortName( sal_uInt16 ) const; 	// return a shortname of an index
-	const  String& GetLongName( sal_uInt16 ) const;  	// return longname of an index
+	sal_uInt16 GetIndex( const String& ) const;			// return Index-Number of short names
+	sal_uInt16 GetLongIndex( const String& ) const;		//return Index-Number of long names
+	const  String& GetShortName( sal_uInt16 ) const; 	// return a short name of an index
+	const  String& GetLongName( sal_uInt16 ) const;  	// return long name of an index
 
 	sal_Bool   Delete( sal_uInt16 );			// delete
 	sal_uInt16 Rename( sal_uInt16, const String*, const String* ); // rename
