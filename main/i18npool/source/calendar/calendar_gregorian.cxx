@@ -218,6 +218,7 @@ static Era gengou_eraArray[] = {
     {1912,  7, 30},
     {1926, 12, 25},
     {1989,  1,  8},
+    {2019,  5,  1},
     {0, 0,  0}
 };
 Calendar_gengou::Calendar_gengou() : Calendar_gregorian(gengou_eraArray)
