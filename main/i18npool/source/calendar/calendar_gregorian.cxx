@@ -133,9 +133,9 @@ Calendar_gregorian::Calendar_gregorian()
 {
     init(NULL);
 }
-Calendar_gregorian::Calendar_gregorian(Era *_earArray)
+Calendar_gregorian::Calendar_gregorian(Era *_eraArray)
 {
-    init(_earArray);
+    init(_eraArray);
 }
 void SAL_CALL
 Calendar_gregorian::init(Era *_eraArray)
