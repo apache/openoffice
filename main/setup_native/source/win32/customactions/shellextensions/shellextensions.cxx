@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@
     use of shell extensions by applying the aforementioned policy probably only people with
     sufficient privileges are allowed to install applications anyway. On systems where the
     use of shell extensions is not restricted registration failures because of insufficient 
-    prviliges have no negative effect because the shell extensions will work anyhow. 
+    privileges have no negative effect because the shell extensions will work anyhow. 
 */
  
 #ifdef _MSC_VER
@@ -160,7 +160,7 @@ extern "C" UINT __stdcall InstallExecSequenceEntry(MSIHANDLE hMSI)
 			RegCloseKey(hKey);
 		}         
 
-		// Open Windows 32 Bit Registry on Win64 maschine
+		// Open Windows 32 Bit Registry on Win64 machine
 
 		if (RegOpenKeyEx(HKEY_LOCAL_MACHINE, TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Shell Extensions\\Approved"),0, KEY_WRITE, &hKey ) == ERROR_SUCCESS)
 		{            
