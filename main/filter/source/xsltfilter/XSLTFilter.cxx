@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,19 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  **************************************************************/
- 
- // MARKER(update_precomp.py): autogen include statement, do not remove
+
+
+
+// MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_filter.hxx"
 
 #include <stdio.h>
@@ -254,7 +256,7 @@ sal_Bool XSLTFilter::importer(
     const OUString udStyleSheet = rel2abs( msUserData[4] );
 
     // get information from media descriptor
-    // the imput stream that represents the imported file
+    // the input stream that represents the imported file
     // is most important here since we need to supply it to
     // the sax parser that drives the supplied document handler
     const sal_Int32 nLength = aSourceData.getLength();
@@ -310,7 +312,7 @@ sal_Bool XSLTFilter::importer(
 
             // connect input to transformer
             Reference< XActiveDataSink > tsink(m_tcontrol, UNO_QUERY);
-            //UOF v2 import
+            // UOF v2 import
             UOF2Storage aUOF2Storage( m_rServiceFactory, xInputStream );
             if ( aUOF2Storage.isValidUOF2Doc() )
             {
@@ -396,7 +398,7 @@ sal_Bool XSLTFilter::exporter(
     // read source data
     // we are especially interested in the output stream
     // since that is where our xml-writer will push the data
-    // from it's data-source interface
+    // from its data-source interface
     OUString sURL;
     sal_Bool bIndent = sal_False;
     OUString aDoctypePublic;
@@ -416,7 +418,7 @@ sal_Bool XSLTFilter::exporter(
                 aSourceData[i].Value >>= m_rOutputStream;
             else if ( aName.equalsAscii( "URL" ) )
                 aSourceData[i].Value >>= sURL;
-            //UOF v2.0 export, get Stream for constructing UOF2Storage
+            // UOF v2.0 export, get Stream for constructing UOF2Storage
             if ( aName.equalsAscii( "StreamForOutput" ) )
                 aSourceData[i].Value >>= m_rStream;
         }
@@ -484,7 +486,7 @@ sal_Bool XSLTFilter::exporter(
                 return sal_False;
             }
 
-            //creating pipe2
+            // creating pipe2
             Reference< XOutputStream > x_Pipeout(
                 m_rServiceFactory->createInstance(
                     OUString::createFromAscii( "com.sun.star.io.Pipe" ) ), UNO_QUERY );
@@ -536,7 +538,7 @@ void XSLTFilter::endDocument() throw (SAXException, RuntimeException){
     // m_splitControl only set for UOF 2
     if ( m_splitControl.is() )
     {
-        //when the inputStream(outputStream of filter) was closed, start to parse it.
+        // when the inputStream(outputStream of filter) was closed, start to parse it.
         m_splitControl->start();
     }
 
@@ -545,7 +547,7 @@ void XSLTFilter::endDocument() throw (SAXException, RuntimeException){
     if (!m_bError && !m_bTerminated)
     {
         return;
-    } else {        
+    } else {
         throw RuntimeException();
     }
 
