@@ -56,3 +56,4 @@ import com.sun.star.connection.XConnection;
 	private long	NativeHandle;
 	private String	Description;			
 }
+

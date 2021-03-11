@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,16 +33,16 @@ import com.sun.star.uno.UnoRuntime;
 	Because it's not worth the effort to create a runtime generated wrapper
 	for this purpose, as it might be for OOo 2.0, you still have to use
 	UnoRuntime.queryInterface() for interfaces which are optional or come
-	from a subclass.  But for non optional interfaces you can already 
+	from a subclass. But for non optional interfaces you can already
 	directly call their methods.
 
 	This wrapper will only work for UNO objects via a bridge, not for
-	direct Java objects. 
+	direct Java objects.
 
-    @since OOo 2.0.0
+	@since OOo 2.0.0
  */
 class Wrapper
-	implements 
+	implements
         com.sun.star.lib.uno.Proxy,
             // see the comment in com.sun.star.lib.uno.bridges.java_remote
             // .java_remote_bridge.mapInterfaceTo for the consequences of this
@@ -57,25 +57,25 @@ class Wrapper
 	{
 		xQueryInterface = (com.sun.star.uno.IQueryInterface) xProxy;
 		xComponent = (com.sun.star.lang.XComponent)
-			UnoRuntime.queryInterface( 
+			UnoRuntime.queryInterface(
 				com.sun.star.lang.XComponent.class, xProxy );
 	}
 
 	//==============================================================
 	// com.sun.star.uno.IQueryInterface
 	//--------------------------------------------------------------
-	
-	public String getOid() 
+
+	public String getOid()
 	{
 		return xQueryInterface.getOid();
 	}
 
-	public boolean isSame( Object aObject ) 
+	public boolean isSame( Object aObject )
 	{
 		return xQueryInterface.isSame( aObject );
 	}
 
-	public Object queryInterface( com.sun.star.uno.Type aType ) 
+	public Object queryInterface( com.sun.star.uno.Type aType )
 	{
 //System.err.println( "Wrapper::queryInterface(" + aType + ")" );
 		return xQueryInterface.queryInterface( aType );
@@ -84,7 +84,7 @@ class Wrapper
 	//==============================================================
 	// com.sun.star.lang.XComponent
 	//--------------------------------------------------------------
-	
+
 	public void dispose(  )
 	{
 		xComponent.dispose();
@@ -100,5 +100,4 @@ class Wrapper
 		xComponent.removeEventListener( xListener );
 	}
 };
-
 

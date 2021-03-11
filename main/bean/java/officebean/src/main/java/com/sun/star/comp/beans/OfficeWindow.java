@@ -50,3 +50,4 @@ public interface OfficeWindow
 	 */
 	XWindowPeer getUNOWindowPeer();
 }
+

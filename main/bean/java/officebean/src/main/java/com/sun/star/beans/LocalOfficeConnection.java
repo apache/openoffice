@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ import com.sun.star.lib.uno.helper.UnoUrl;
 import com.sun.star.lib.util.NativeLibraryLoader;
 
 /**
- * This class reprecents a connection to the local office application.
+ * This class represents a connection to the local office application.
  * @deprecated
  */
 public class LocalOfficeConnection
@@ -47,7 +47,7 @@ public class LocalOfficeConnection
 	public static final String		OFFICE_APP_NAME		= "soffice";
 	public static final String		OFFICE_LIB_NAME		= "officebean";
 	public static final String		OFFICE_ID_SUFFIX	= "_Office";
-	
+
 	private Process				mProcess;
 	private ContainerFactory		mContainerFactory;
 	private XComponentContext		mContext;
@@ -61,19 +61,19 @@ public class LocalOfficeConnection
 	private String				mInitialObject;
 
 	private List				mComponents		= new Vector();
-		
+
 	/**
 	 * Constructor.
-	 * Sets up paths to the office application and native libraries if 
-	 * values are available in <code>OFFICE_PROP_FILE</code> in the user 
+	 * Sets up paths to the office application and native libraries if
+	 * values are available in <code>OFFICE_PROP_FILE</code> in the user
 	 * home directory.<br />
-	 * "com.sun.star.beans.path" - the office application directory;<br/> 
+	 * "com.sun.star.beans.path" - the office application directory;<br/>
 	 * "com.sun.star.beans.libpath" - native libraries directory.
 	 */
 	public LocalOfficeConnection()
-	{	
+	{
 		// init member vars
-		try 
+		try
 		{
 			setUnoUrl( "uno:pipe,name=" + getPipeName() + ";urp;StarOffice.ServiceManager" );
 		}
@@ -88,7 +88,7 @@ public class LocalOfficeConnection
 
 	/**
 	 * Sets a connection URL.
-	 * This implementation accepts a UNO URL with following format:<br /> 
+	 * This implementation accepts a UNO URL with following format:<br />
 	 * <pre>
 	 * url    := uno:localoffice[,&lt;params&gt;];urp;StarOffice.ServiceManager
 	 * params := &lt;path&gt;[,&lt;pipe&gt;]
@@ -130,9 +130,9 @@ public class LocalOfficeConnection
 	}
 
 	/**
-	 * Sets an AWT container catory.
+	 * Sets an AWT container factory.
 	 *
-	 * @param containerFactory This is a application provided AWT container 
+	 * @param containerFactory This is a application provided AWT container
 	 *	factory.
 	 */
 	public void setContainerFactory(ContainerFactory containerFactory)
@@ -141,10 +141,10 @@ public class LocalOfficeConnection
 	}
 
 	/**
-	 * Retrives the UNO component context.
-	 * Establishes a connection if necessary and initialises the  
+	 * Retrieves the UNO component context.
+	 * Establishes a connection if necessary and initialises the
 	 * UNO service manager if it has not already been initialised.
-	 * This method can return <code>null</code> if it fails to connect 
+	 * This method can return <code>null</code> if it fails to connect
 	 * to the office application.
 	 *
 	 * @return The office UNO component context.
@@ -158,8 +158,8 @@ public class LocalOfficeConnection
 
 	/**
 	 * Creates an office window.
-	 * The window is either a sub-class of java.awt.Canvas (local) or 
-	 * java.awt.Container (RVP). 
+	 * The window is either a sub-class of java.awt.Canvas (local) or
+	 * java.awt.Container (RVP).
 	 *
 	 * @param container This is an AWT container.
 	 * @return The office window instance.
@@ -197,7 +197,7 @@ public class LocalOfficeConnection
 	}
 
 	/**
-	 * Removes an event listener from the listener list. 
+	 * Removes an event listener from the listener list.
 	 *
 	 * @param listener is a listener object.
 	 */
@@ -211,26 +211,26 @@ public class LocalOfficeConnection
 	 */
 	private XComponentContext connect()
 	{
-		try 
+		try
 		{
 			// create default local component context
 			XComponentContext xLocalContext =
-			    com.sun.star.comp.helper.Bootstrap.createInitialComponentContext(null);
-			
+				com.sun.star.comp.helper.Bootstrap.createInitialComponentContext(null);
+
 			// initial serviceManager
 			XMultiComponentFactory xLocalServiceManager = xLocalContext.getServiceManager();
-				
+
 			// create a urlresolver
-			Object urlResolver  = xLocalServiceManager.createInstanceWithContext(
-			    "com.sun.star.bridge.UnoUrlResolver", xLocalContext );
+			Object urlResolver = xLocalServiceManager.createInstanceWithContext(
+				"com.sun.star.bridge.UnoUrlResolver", xLocalContext );
 
 			// query for the XUnoUrlResolver interface
 			XUnoUrlResolver xUrlResolver =
-			    (XUnoUrlResolver) UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
+				(XUnoUrlResolver) UnoRuntime.queryInterface( XUnoUrlResolver.class, urlResolver );
 
 			// try to connect to soffice
 			Object aInitialObject = null;
-			try 
+			try
 			{
 				aInitialObject = xUrlResolver.resolve( mURL );
 			}
@@ -239,12 +239,12 @@ public class LocalOfficeConnection
 				// launch soffice
 				OfficeService aSOffice = new OfficeService();
 				aSOffice.startupService();
-		
+
 				// wait until soffice is started
 				long nMaxMillis = System.currentTimeMillis() + 1000*aSOffice.getStartupTime();
 				while ( aInitialObject == null )
 				{
-					try 
+					try
 					{
 						// try to connect to soffice
 						Thread.currentThread().sleep( 500 );
@@ -259,17 +259,17 @@ public class LocalOfficeConnection
 					}
 				}
 			}
-			finally 
-			{ 
+			finally
+			{
 			}
-			
+
 			// XComponentContext
 			if( null != aInitialObject )
 			{
 				XPropertySet xPropertySet = (XPropertySet)
 					UnoRuntime.queryInterface( XPropertySet.class, aInitialObject);
-            			Object xContext = xPropertySet.getPropertyValue("DefaultContext");            
-            			XComponentContext xComponentContext = (XComponentContext) UnoRuntime.queryInterface(
+						Object xContext = xPropertySet.getPropertyValue("DefaultContext");
+						XComponentContext xComponentContext = (XComponentContext) UnoRuntime.queryInterface(
 					XComponentContext.class, xContext);
 				return xComponentContext;
 			}
@@ -310,20 +310,20 @@ public class LocalOfficeConnection
 	}
 
 	/**
-	 * Retrives a path to the office program folder.
+	 * Retrieves a path to the office program folder.
 	 *
 	 * @return The path to the office program folder.
 	 */
 	private String getProgramPath()
 	{
-		if (mProgramPath == null) 
+		if (mProgramPath == null)
 		{
 			// determine name of executable soffice
 			String aExec = OFFICE_APP_NAME; // default for UNIX
 			String aOS = System.getProperty("os.name");
 
 			// running on Windows?
-			if (aOS.startsWith("Windows")) 
+			if (aOS.startsWith("Windows"))
 				aExec = OFFICE_APP_NAME + ".exe";
 
 			// add other non-UNIX operating systems here
@@ -345,7 +345,7 @@ public class LocalOfficeConnection
 
 	/**
 	 * Parses a connection URL.
-	 * This method accepts a UNO URL with following format:<br /> 
+	 * This method accepts a UNO URL with following format:<br />
 	 * <pre>
 	 * url    := uno:localoffice[,&lt;params&gt;];urp;StarOffice.NamingService
 	 * params := &lt;path&gt;[,&lt;pipe&gt;]
@@ -362,13 +362,13 @@ public class LocalOfficeConnection
 	 * </ul>
 	 *
 	 * @param url This is UNO URL which describes the type of a connection.
-	 * @exception java.net.MalformedURLException when inappropreate URL was 
+	 * @exception java.net.MalformedURLException when inappropriate URL was
 	 *	provided.
 	 */
 	private void parseUnoUrlWithOfficePath(String url, String prefix)
 		throws java.net.MalformedURLException
 	{
-		// Extruct parameters.
+		// Extract parameters.
 		int	idx	= url.indexOf(";urp;StarOffice.NamingService");
 		if (idx < 0)
 			throw new java.net.MalformedURLException(
@@ -479,7 +479,7 @@ public class LocalOfficeConnection
 				}
 				break;
 
-			case 5:	// a delimeter after the value
+			case 5:	// a delimiter after the value
 				switch(ch) {
 				case ' ':
 					break;
@@ -528,21 +528,21 @@ public class LocalOfficeConnection
 	}
 
 	/* replaces each substring aSearch in aString by aReplace.
-	
-		StringBuffer.replaceAll() is not avaialable in Java 1.3.x.
+
+		StringBuffer.replaceAll() is not available in Java 1.3.x.
 	 */
-    private static String replaceAll(String aString, String aSearch, String aReplace )
-    {
-        StringBuffer aBuffer = new StringBuffer(aString);
+	private static String replaceAll(String aString, String aSearch, String aReplace )
+	{
+		StringBuffer aBuffer = new StringBuffer(aString);
 
-        int nPos = aString.length();
-        int nOfs = aSearch.length();
-        
-        while ( ( nPos = aString.lastIndexOf( aSearch, nPos - 1 ) ) > -1 )
-            aBuffer.replace( nPos, nPos+nOfs, aReplace );
+		int nPos = aString.length();
+		int nOfs = aSearch.length();
 
-        return aBuffer.toString();
-    }
+		while ( ( nPos = aString.lastIndexOf( aSearch, nPos - 1 ) ) > -1 )
+			aBuffer.replace( nPos, nPos+nOfs, aReplace );
+
+		return aBuffer.toString();
+	}
 
 
 	/** creates a unique pipe name.
@@ -554,22 +554,22 @@ public class LocalOfficeConnection
 		aPipeName = replaceAll( aPipeName, "_", "%B7" );
 		return replaceAll( replaceAll( java.net.URLEncoder.encode(aPipeName), "\\+", "%20" ), "%", "_" );
 	}
-	
-	/** 
+
+	/**
 	 * @para This is an implementation of the native office service.
-     * @deprecated
+	 * @deprecated
 	 */
 	private class OfficeService
 		implements NativeService
 	{
 		/**
-		 * Retrive the office service identifier.
+		 * Retrieve the office service identifier.
 		 *
 		 * @return The identifier of the office service.
 		 */
 		public String getIdentifier()
-		{ 
-			if ( mPipe == null) 
+		{
+			if ( mPipe == null)
 				return getPipeName();
 			else
 				return mPipe;
@@ -581,7 +581,7 @@ public class LocalOfficeConnection
 		public void startupService()
 			throws java.io.IOException
 		{
-           // create call with arguments
+			// create call with arguments
 			String[] cmdArray = new String[4];
 			cmdArray[0] = (new File(getProgramPath(), OFFICE_APP_NAME)).getPath();
 			cmdArray[1] = "-nologo";
@@ -601,7 +601,7 @@ public class LocalOfficeConnection
 		}
 
 		/**
-		 * Retrives the amount of time to wait for the startup.
+		 * Retrieves the amount of time to wait for the startup.
 		 *
 		 * @return The amount of time to wait in seconds(?).
 		 */
@@ -611,3 +611,4 @@ public class LocalOfficeConnection
 		}
 	}
 }
+

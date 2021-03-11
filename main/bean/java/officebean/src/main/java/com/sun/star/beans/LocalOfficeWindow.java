@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ import com.sun.star.uno.UnoRuntime;
 import com.sun.star.uno.XComponentContext;
 
 /**
- * This class represents a local office window. 
+ * This class represents a local office window.
  * @deprecated
  */
 public class LocalOfficeWindow
@@ -55,9 +55,9 @@ public class LocalOfficeWindow
 	private boolean 			bPeer = false;
 
 	/**
-	 * Construnctor.
+	 * Constructor.
 	 *
-	 * @param connection The office connection object the window 
+	 * @param connection The office connection object the window
 	 *	belongs to.
 	 */
 	/* package */ LocalOfficeWindow(OfficeConnection connection)
@@ -67,7 +67,7 @@ public class LocalOfficeWindow
 	}
 
 	/**
-	 * Retrives an AWT component object associated with the OfficeWindow.
+	 * Retrieves an AWT component object associated with the OfficeWindow.
 	 *
 	 * @return The AWT component object associated with the OfficeWindow.
 	 */
@@ -77,7 +77,7 @@ public class LocalOfficeWindow
 	}
 
 	/**
-	 * Retrives an UNO XWindowPeer object associated with the OfficeWindow.
+	 * Retrieves an UNO XWindowPeer object associated with the OfficeWindow.
 	 *
 	 * @return The UNO XWindowPeer object associated with the OfficeWindow.
 	 */
@@ -105,10 +105,10 @@ public class LocalOfficeWindow
 	* Returns an AWT toolkit.
         */
        private XToolkit queryAWTToolkit()
-               throws com.sun.star.uno.Exception 
+               throws com.sun.star.uno.Exception
        {
 			// Create a UNO toolkit.
-			XMultiComponentFactory  compfactory;
+			XMultiComponentFactory compfactory;
 			XComponentContext xContext = mConnection.getComponentContext();
 			if ( xContext != null )
 			{
@@ -116,13 +116,13 @@ public class LocalOfficeWindow
 				XMultiServiceFactory    factory;
 				factory = (XMultiServiceFactory)UnoRuntime.queryInterface(
 						XMultiServiceFactory.class, compfactory);
-				Object          object  = factory.createInstance( "com.sun.star.awt.Toolkit");
+				Object          object = factory.createInstance( "com.sun.star.awt.Toolkit");
 				return (XToolkit)UnoRuntime.queryInterface(XToolkit.class, object);
 			}
 			else
 				return null;
        }
- 
+
        	/// called when system parent is available, reparents the bean window
 	private void aquireSystemWindow()
 	{
@@ -159,7 +159,7 @@ public class LocalOfficeWindow
 
        /// callback handler to get to know when we become visible
         //@deprecated
-       class ComponentEventHandler 
+       class ComponentEventHandler
                extends java.awt.event.ComponentAdapter
        {
 		public void componentHidden( java.awt.event.ComponentEvent e)
@@ -190,14 +190,14 @@ public class LocalOfficeWindow
 			aquireSystemWindow();
 		else
 			releaseSystemWindow();
-	}	
-	 
+	}
+
        /** Factory method for a UNO AWT toolkit window as a child of this Java window.
 	*
 	*/
        private XWindowPeer createUNOWindowPeer()
        {
-		try 
+		try
 		{
 			// get this windows native window type
                         int type = getNativeWindowSystemType();
@@ -225,7 +225,7 @@ public class LocalOfficeWindow
 			desc.Parent = parentPeer;
 			desc.Bounds = aRect;
 			desc.WindowServiceName = "workwindow";
-			desc.WindowAttributes = (type == SystemDependent.SYSTEM_WIN32)	
+			desc.WindowAttributes = (type == SystemDependent.SYSTEM_WIN32)
 				? WindowAttribute.SHOW : 0;
 			mWindow	= queryAWTToolkit().createWindow(desc);
 
@@ -233,9 +233,9 @@ public class LocalOfficeWindow
 			addComponentListener( new ComponentEventHandler() );
 
 			// set initial visibility
-                        XWindow aWindow = (XWindow)UnoRuntime.queryInterface(XWindow.class, mWindow);
+						XWindow aWindow = (XWindow)UnoRuntime.queryInterface(XWindow.class, mWindow);
 			aWindow.setVisible( bPeer );
-		} 
+		}
 		catch (com.sun.star.uno.Exception exp) {
 		}
 
@@ -243,21 +243,21 @@ public class LocalOfficeWindow
 	}
 
 	/**
-	 * Retrives a platform dependent system window identifier.
+	 * Retrieves a platform dependent system window identifier.
 	 *
 	 * @return The system window identifier.
 	 */
-    private native long getNativeWindow();
+	private native long getNativeWindow();
 
 	/**
-	 * Retrives a platform dependent system window type.
+	 * Retrieves a platform dependent system window type.
 	 *
 	 * @return The system window type.
 	 */
 	private native int getNativeWindowSystemType();
 
         //---------------------------------------------------------------------------
-        /** Helper class to watch calls into OOo with a timeout.
+        /** Helper class to watch calls into AOO with a timeout.
          * @deprecated
          */
         class CallWatchThread extends Thread
@@ -291,7 +291,7 @@ public class LocalOfficeWindow
                                 catch ( java.lang.InterruptedException aExc )
                                 {}
 
-                                //synchronized
+                                // synchronized
                                 {
                                         if ( aWatchedThread != null )
                                         {
@@ -303,3 +303,4 @@ public class LocalOfficeWindow
         };
 
 }
+
