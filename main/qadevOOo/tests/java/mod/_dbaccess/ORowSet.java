@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ import util.db.DataSourceDescriptor;
 public class ORowSet extends TestCase {
 
     private static int uniqueSuffix = 0 ;
-    private DBTools dbTools     = null ;
+    private DBTools dbTools = null ;
     private static String origDB = null ;
     String tableName = null;
     DataSourceDescriptor srcInf = null;
@@ -251,8 +251,8 @@ public class ORowSet extends TestCase {
         XMultiServiceFactory orb = (XMultiServiceFactory)Param.getMSF();
         uniqueSuffix++;
         boolean envCreatedOK = false ;
-        
-        //initialize test table
+
+        // initialize test table
         if (isMySQLDB)
         {
             try
@@ -292,7 +292,7 @@ public class ORowSet extends TestCase {
             while ( !utils.tryOverwriteFile( orb, oldF, newF ) );
             m_tableFile = newF;
         }
-        
+
         try
         {
             m_rowSet = orb.createInstance("com.sun.star.sdb.RowSet");
@@ -306,7 +306,7 @@ public class ORowSet extends TestCase {
             rowSetProps.setPropertyValue("CommandType",
                 new Integer(CommandType.TABLE));
 
-            final XRowSet rowSet = UnoRuntime.queryInterface( XRowSet.class, m_rowSet);                   
+            final XRowSet rowSet = UnoRuntime.queryInterface( XRowSet.class, m_rowSet);
             rowSet.execute();
             m_connection = UnoRuntime.queryInterface( XConnection.class, rowSetProps.getPropertyValue("ActiveConnection") );
 
@@ -406,7 +406,7 @@ public class ORowSet extends TestCase {
             try
             {
                 String sqlCommand = isMySQLDB
-                    ?   "SELECT Column0  FROM soffice_test_table  WHERE ( (  Column0 = :param1 ) )"
+                    ?   "SELECT Column0 FROM soffice_test_table WHERE ( ( Column0 = :param1 ) )"
                     :   "SELECT \"_TEXT\" FROM \"" + tableName + "\" WHERE ( ( \"_TEXT\" = :param1 ) )";
                 rowSetProps.setPropertyValue( "DataSourceName", dbSourceName );
                 rowSetProps.setPropertyValue( "Command", sqlCommand );
@@ -471,7 +471,7 @@ public class ORowSet extends TestCase {
         }
         catch(com.sun.star.uno.Exception e)
         {
-            log.println( "couldn't set up tes tenvironment:" );
+            log.println( "couldn't set up testenvironment:" );
             e.printStackTrace(log);
             try
             {
@@ -481,7 +481,7 @@ public class ORowSet extends TestCase {
             catch(Exception ex)
             {
             }
-            throw new StatusException( "couldn't set up tes tenvironment", e );
+            throw new StatusException( "couldn't set up testenvironment", e );
         }
         finally
         {
@@ -540,13 +540,13 @@ public class ORowSet extends TestCase {
                 log.println( "already closed - okay." );
             }
 
-            doing = "deleting database file ("  + documentFile + ")";
+            doing = "deleting database file (" + documentFile + ")";
             log.println( doing );
             impl_deleteFile( documentFile );
 
             if ( m_tableFile != null )
             {
-                doing = "deleting dBase table file (" + m_tableFile + ")";
+                doing = "deleting dBASE table file (" + m_tableFile + ")";
                 log.println( doing );
                 impl_deleteFile( m_tableFile );
             }
@@ -574,16 +574,16 @@ public class ORowSet extends TestCase {
     public class InteractionHandlerImpl implements _XCompletedExecution.CheckInteractionHandler {
         private boolean handlerWasUsed = false;
         private PrintWriter log = new PrintWriter(System.out);
-        
+
         public boolean checkInteractionHandler() {
             return handlerWasUsed;
         }
-        
+
         public void handle(XInteractionRequest xInteractionRequest) {
             log.println("### _XCompletedExecution.InteractionHandlerImpl: handle called.");
             ParametersRequest req = null;
             boolean abort = false;
-            
+
             Object o = xInteractionRequest.getRequest();
             if (o instanceof ParametersRequest) {
                 req = (ParametersRequest)o;
@@ -598,7 +598,7 @@ public class ORowSet extends TestCase {
                 log.println("### This is not implemented in ORowSet.InteractionHandlerImpl test -> abort.");
                 abort = true;
             }
-                
+
             XInteractionContinuation[]xCont = xInteractionRequest.getContinuations();
             XInteractionSupplyParameters xParamCallback = null;
             for(int i=0; i<xCont.length; i++) {
@@ -627,14 +627,15 @@ public class ORowSet extends TestCase {
                 xParamCallback.select();
             }
             else { // we should never reach this: abort has to be true first.
-                log.println("### _XCompletedExecution.InteractionHandlerImpl: Got no " + 
+                log.println("### _XCompletedExecution.InteractionHandlerImpl: Got no " +
                             "'XInteractionSupplyParameters' and no 'XInteractionAbort'.");
             }
         }
-        
+
         public void setLog(PrintWriter log) {
             this.log = log;
         }
-        
+
     }
 }
+
