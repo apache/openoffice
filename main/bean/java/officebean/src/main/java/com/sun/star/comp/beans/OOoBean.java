@@ -800,7 +800,7 @@ public class OOoBean
 		startup options for AOO. But it is possible to set a Java property when starting
 		Java, which is examined by OOoBean:
 		<pre>
-			java -Dcom.sun.star.officebean.Options=-norestore  ...
+			java -Dcom.sun.star.officebean.Options=-norestore ...
 		</pre>
 		It is planned to offer a way of specifying startup options in a future version.
 		The property can be used until then. When using this property only one option
@@ -1507,3 +1507,4 @@ xLayoutManager.showElement("private:resource/menubar/menubar");
 		}
 	}
 }
+
