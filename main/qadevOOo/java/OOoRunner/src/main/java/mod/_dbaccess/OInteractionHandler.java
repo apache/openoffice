@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import com.sun.star.uno.XInterface;
 *  <li> <code>com::sun::star::task::XInteractionHandler</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.task.XInteractionHandler
 * @see com.sun.star.sdb.InteractionHandler
 * @see ifc.task._XInteractionHandler
@@ -71,7 +71,7 @@ public class OInteractionHandler extends TestCase {
     *     Object relations created :
     * <ul>
     *  <li> <code>'XInteractionHandler.Request'</code> for
-    *      {@link ifc.task._XInteractionHandler} : this realtion
+    *      {@link ifc.task._XInteractionHandler} : this relation
     *    is <code>com.sun.star.task.XInteractionRequest</code>
     *    interface implementation which depends on the component
     *    tested. In this case it emulates SQL error by returning
