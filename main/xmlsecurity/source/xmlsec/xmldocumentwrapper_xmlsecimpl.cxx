@@ -415,7 +415,7 @@ rtl::OString XMLDocumentWrapper_XmlSecImpl::getNodeQName(const xmlNodePtr pNode)
 /****** XMLDocumentWrapper_XmlSecImpl/getNodeQName ****************************
  *
  *   NAME
- *	getNodeQName -- Retrives the qualified name of a node
+ *	getNodeQName -- Retrieves the qualified name of a node
  *
  *   SYNOPSIS
  *	name = getNodeQName(pNode);
@@ -424,7 +424,7 @@ rtl::OString XMLDocumentWrapper_XmlSecImpl::getNodeQName(const xmlNodePtr pNode)
  *	see NAME
  *
  *   INPUTS
- *	pNode -	the node whose name will be retrived
+ *	pNode -	the node whose name will be retrieved
  *
  *   RESULT
  *	name - the node's qualified name
@@ -456,7 +456,7 @@ xmlNodePtr XMLDocumentWrapper_XmlSecImpl::checkElement( const cssu::Reference< c
 /****** XMLDocumentWrapper_XmlSecImpl/checkElement ****************************
  *
  *   NAME
- *	checkElement -- Retrives the node wrapped by an XXMLElementWrapper
+ *	checkElement -- Retrieves the node wrapped by an XXMLElementWrapper
  *	interface
  *
  *   SYNOPSIS
