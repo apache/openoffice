@@ -156,7 +156,7 @@ public class OpenOfficeDocFileSystem
     }
     
     /**
-     * Retrives the 'document' property.
+     * Retrieves the 'document' property.
      */
     public File getDocument()
     {
@@ -207,7 +207,7 @@ System.out.println("    exception: " + ioe.getMessage());
     }
     
     /**
-     * Retrives 'readonly' property.
+     * Retrieves 'readonly' property.
      * NOTE: The portion of the mounted document available to the user is 
      *       always editable.
      */
@@ -443,7 +443,7 @@ System.out.println("    exception: " + ioe.getMessage());
     }
 
     /*
-     * Retrives or creates a file.
+     * Retrieves or creates a file.
      */
     private Entry getFileEntry(String name)
         throws IOException
@@ -469,7 +469,7 @@ System.out.println("    exception: " + ioe.getMessage());
     }
 
     /*
-     * Retrives or creates a folder.
+     * Retrieves or creates a folder.
      */
     private Entry getFolderEntry(String name)
         throws IOException

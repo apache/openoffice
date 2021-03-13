@@ -5377,7 +5377,7 @@ namespace osl_Directory
         nError1 = testDirectory.close( );
         ASSERT_TRUE( ::osl::FileBase::E_None == nError1 );
 
-        ASSERT_TRUE(( sal_True == bOk1 ) && ( sal_True == bOk2 ) && ( sal_True == bOk3 )) << "test for getNextItem function: retrive three items and check their names.";
+        ASSERT_TRUE(( sal_True == bOk1 ) && ( sal_True == bOk2 ) && ( sal_True == bOk3 )) << "test for getNextItem function: retrieve three items and check their names.";
     }
 
     TEST_F(getNextItem, getNextItem_002 )
@@ -5385,7 +5385,7 @@ namespace osl_Directory
             ::osl::Directory testDirectory( aTmpName3 ); //constructor
         nError1 = testDirectory.getNextItem( rItem );
 
-        ASSERT_TRUE(( ::osl::FileBase::E_INVAL == nError1 )) << "test for getNextItem function: retrive an item in a directory which is not opened, also test for nHint's default value.";
+        ASSERT_TRUE(( ::osl::FileBase::E_INVAL == nError1 )) << "test for getNextItem function: retrieve an item in a directory which is not opened, also test for nHint's default value.";
     }
 
     TEST_F(getNextItem, getNextItem_003 )
@@ -5405,7 +5405,7 @@ namespace osl_Directory
         nError1 = testDirectory.close( );
         ASSERT_TRUE( ::osl::FileBase::E_None == nError1 );
 
-        ASSERT_TRUE(( ::osl::FileBase::E_NOENT == nError2 )) << "test for getNextItem function: retrive 4 times in a directory which contain only 3 files.";
+        ASSERT_TRUE(( ::osl::FileBase::E_NOENT == nError2 )) << "test for getNextItem function: retrieve 4 times in a directory which contain only 3 files.";
     }
 
     TEST_F(getNextItem, getNextItem_004 )
