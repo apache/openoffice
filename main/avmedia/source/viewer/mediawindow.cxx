@@ -370,7 +370,7 @@ void MediaWindow::getMediaFilters( FilterNameVector& rFilterNameVector )
                                         "Flash Video", "flv",
                                         "Matroska Media", "mkv",
                                         "MIDI Audio", "mid;midi",
-                                        "MPEG Audio", "mp2;mp3;mpa",
+                                        "MPEG Audio", "mp2;mp3;mpa;m4a",
                                         "MPEG Video", "mpg;mpeg;mpv;mp4",
                                         "Ogg bitstream", "ogg;oga;ogv",
                                         "Quicktime Video", "mov",
@@ -569,5 +569,5 @@ uno::Reference< graphic::XGraphic > MediaWindow::grabFrame( const ::rtl::OUStrin
     return xRet;
 }
 
-} // namespace avmdia
+} // namespace avmedia
 
