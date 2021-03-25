@@ -112,7 +112,7 @@ sal_Int32 SAL_CALL rtl_compareUuid( const sal_uInt8 *pUUID1 , const sal_uInt8 *p
 	@param pTargetUUID pointer to at least 16 bytes of memory. After the call
 	                   it contains the newly generated uuid in network byte order.
 	@param pNameSpaceUUID The namespace uuid. Below are some predefined ones,
-	                      but any arbitray uuid can be used as namespace.
+	                      but any arbitrary uuid can be used as namespace.
 
 	@param pName the name
  */

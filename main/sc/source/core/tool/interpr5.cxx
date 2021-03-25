@@ -311,7 +311,7 @@ ScMatrixRef ScInterpreter::GetNewMat(SCSIZE nC, SCSIZE nR)
     SCSIZE nCols, nRows;
     pMat->GetDimensions( nCols, nRows);
     if ( nCols != nC || nRows != nR )
-    {   // arbitray limit of elements exceeded
+    {   // arbitrary limit of elements exceeded
         SetError( errStackOverflow);
         pMat->Delete();
         pMat = NULL;

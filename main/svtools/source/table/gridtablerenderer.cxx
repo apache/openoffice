@@ -418,7 +418,7 @@ namespace svt { namespace table
             sal_uLong nDrawTextFlags = lcl_getAlignmentTextDrawFlags( *m_pImpl, 0 ) | TEXT_DRAW_CLIP;
             if ( !m_pImpl->rModel.isEnabled() )
                 nDrawTextFlags |= TEXT_DRAW_DISABLE;
-                // TODO: is using the horizontal alignment of the 0'th column a good idea here? This is pretty ... arbitray ..
+                // TODO: is using the horizontal alignment of the 0'th column a good idea here? This is pretty ... arbitrary ..
             _rDevice.DrawText( aTextRect, rowTitle, nDrawTextFlags );
         }
 
