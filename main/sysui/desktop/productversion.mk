@@ -22,9 +22,9 @@
 
 
 .IF "$(OS)"=="LINUX"
-PKGREV          = $(BUILD)
+PKGREV = $(BUILD)
 .ELSE
-PKGREV          = $(LAST_MINOR:s/m//:s/s/./)
+PKGREV = $(LAST_MINOR:s/m//:s/s/./)
 .ENDIF
 
 ABSLOCALOUT:=$(shell @cd $(PRJ) && pwd)$/$(ROUT)
