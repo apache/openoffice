@@ -1384,8 +1384,7 @@ oldref="553">Example</paragraph>
 <paragraph xml-lang="en-US" id="par_id3165000K" role="paragraph" l10n="CHG">All <emph>Reference </emph> ranges shall have the same dimension and size, else an Error is returned. <emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted. You may also enter a search text in the form of a regular expression, e.g. b.* for all words that begin with b. You may also indicate a cell range that contains the search criterion. If you search for literal text, enclose the text in double quotes.</paragraph>
 <paragraph xml-lang="en-US" id="hd_id3165037K" role="heading" level="3" l10n="U"
 oldref="553">Examples:</paragraph>
-<paragraph xml-lang="en-US" id="par_id3166505K" role="paragraph" l10n="CHG">A1:A10 is a cell range containing the numbers <item type="input">2000</item> to <item type="input">2009</item>. B1:B10 is a cell range containing the numbers
-<item type="input">2007</item> to <item type="input">2016</item>:</paragraph>
+<paragraph xml-lang="en-US" id="par_id3166505K" role="paragraph" l10n="CHG">A1:A10 is a cell range containing the numbers <item type="input">2000</item> to <item type="input">2009</item>. B1:B10 is a cell range containing the numbers <item type="input">2007</item> to <item type="input">2016</item>:</paragraph>
 <paragraph xml-lang="en-US" id="par_id3581652K" role="paragraph" l10n="NEW">
 <item type="input">=COUNTIFS(A1:A10;2006;B1:B10;2014)</item> - this returns 2</paragraph>
 <paragraph xml-lang="en-US" id="par_id5169225K" role="paragraph" l10n="NEW">
