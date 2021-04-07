@@ -723,4 +723,5 @@ public class AsciiReplaceFilter
 //             _AsciiReplaceFilter.m_serviceNames,
 //             xRegistryKey );
 //     }
-}    
+}
+
