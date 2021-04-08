@@ -926,42 +926,58 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 			Reference < XURLTransformer > xTrans( ::comphelper::getProcessServiceFactory()->createInstance(
 													::rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer" )), UNO_QUERY );
 			xTrans->parseStrict( aURL );
-
-			INetProtocol aINetProtocol = INetURLObject( aURL.Complete ).GetProtocol();
+            INetURLObject aINetURLObject(aURL.Complete);
+			INetProtocol aINetProtocol = aINetURLObject.GetProtocol();
 			SvtExtendedSecurityOptions aExtendedSecurityOptions;
 			SvtExtendedSecurityOptions::OpenHyperlinkMode eMode = aExtendedSecurityOptions.GetOpenHyperlinkMode();
 			if ( eMode == SvtExtendedSecurityOptions::OPEN_WITHSECURITYCHECK )
 			{
-				if ( aINetProtocol == INET_PROT_FILE )
-				{
-/*!!! pb: #i49802# no security warning any longer
-					// Check if file URL is a directory. This is not insecure!
-					osl::Directory aDir( aURL.Main );
-					sal_Bool bIsDir = ( aDir.open() == osl::Directory::E_None );
+                /*!!! pb: #i49802# no security warning any longer
+                ardovm: Restored security checks in March 2021 */
+                // Check if file URL is a directory. This is not insecure!
+                sal_Bool bIsDir = aINetURLObject.hasFinalSlash() ||
+                    ( osl::Directory(aURL.Main).open() ==
+                      osl::Directory::E_None );
+                // Use SvtExtendedSecurityOptions::IsSecureHyperlink()
+                // to check the extension of the link destination.
+                sal_Bool bSafeExtension = aExtendedSecurityOptions.IsSecureHyperlink(aURL.Complete);
+                // We consider some protocols unsafe
+                sal_Bool bUnsafeProtocol;
+                switch (aINetProtocol) {
+                // case INET_PROT_FTP:
+                case INET_PROT_VND_SUN_STAR_HELP:
+                case INET_PROT_HTTP:
+                case INET_PROT_HTTPS:
+                case INET_PROT_MAILTO:
+                    bUnsafeProtocol = false;
+                    break;
+                default: // Anything else, including INET_PROT_FILE
+                    bUnsafeProtocol = true;
+                    break;
+                }
+                if ( (!bIsDir && !bSafeExtension) || bUnsafeProtocol )
+                {
+                    // Security check for local files depending on the extension
+                    vos::OGuard aGuard( Application::GetSolarMutex() );
+                    Window *pWindow = SFX_APP()->GetTopWindow();
 
-                    if ( !bIsDir && !aExtendedSecurityOptions.IsSecureHyperlink( aURL.Complete ) )
-					{
-						// Security check for local files depending on the extension
-						vos::OGuard aGuard( Application::GetSolarMutex() );
-						Window *pWindow = SFX_APP()->GetTopWindow();
+                    String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
+                    WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
+                    aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
 
-						String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
-						WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
-						aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
+                    // Replace %s with the real file name
+                    String aMsgText = aSecurityWarningBox.GetMessText();
+                    String aMainURL( aURL.Main );
+                    String aFileNameInMsg;
 
-						// Replace %s with the real file name
-						String aMsgText = aSecurityWarningBox.GetMessText();
-						String aMainURL( aURL.Main );
-						String aFileName;
+                    if (!utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileNameInMsg )) {
+                        aFileNameInMsg = aMainURL;
+                    }
+                    aMsgText.SearchAndReplaceAscii( "%s", aFileNameInMsg );
+                    aSecurityWarningBox.SetMessText( aMsgText );
 
-						utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileName );
-						aMsgText.SearchAndReplaceAscii( "%s", aFileName );
-						aSecurityWarningBox.SetMessText( aMsgText );
-
-						if( aSecurityWarningBox.Execute() == RET_NO )
-							return;
-					}
-*/
+                    if( aSecurityWarningBox.Execute() == RET_NO )
+                        return;
 				}
 			}
             else if ( eMode == SvtExtendedSecurityOptions::OPEN_NEVER && aINetProtocol != INET_PROT_VND_SUN_STAR_HELP )
