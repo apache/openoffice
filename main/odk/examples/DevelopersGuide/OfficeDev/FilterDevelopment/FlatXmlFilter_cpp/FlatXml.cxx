@@ -315,7 +315,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 
 // This method not longer necessary since OOo 3.4 where the component registration was
 // was changed to passive component registration. For more details see
-// http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+// https://wiki.openoffice.org/wiki/Passive_Component_Registration
 //
 // SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_writeInfo(void * pServiceManager, void * pRegistryKey )
 // {
@@ -364,3 +364,4 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 }
 
 } // extern "C"
+
