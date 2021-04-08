@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -201,7 +201,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
             JOptionPane.showMessageDialog( null, "One of the lines is still null", "Assertion", JOptionPane.WARNING_MESSAGE );
             return;
         }
-    
+
         // position lines
         // --------------
 
@@ -251,7 +251,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
             XPropertySet aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, maTopLine );
             aShapeProp.setPropertyValue( "PolyPolygon", aMaxPtSeq );
-            
+
             aShapeProp = (XPropertySet) UnoRuntime.queryInterface(
                 XPropertySet.class, maBottomLine );
             aShapeProp.setPropertyValue( "PolyPolygon", aMinPtSeq );
@@ -298,7 +298,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
     {
         return( JavaSampleChartAddIn.class.getName() );
     }
-        
+
     public String[] getSupportedServiceNames()
     {
         return getSupportedServiceNames_Static();
@@ -402,7 +402,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
 
     // __________ static things __________
 
-    private static final String smServiceName  = "com.sun.star.comp.Chart.JavaSampleChartAddIn";
+    private static final String smServiceName = "com.sun.star.comp.Chart.JavaSampleChartAddIn";
 
     public static String[] getSupportedServiceNames_Static()
     {
@@ -434,7 +434,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
         {
             xSingleServiceFactory = com.sun.star.comp.loader.FactoryHelper.getServiceFactory(
                 JavaSampleChartAddIn.class, smServiceName,
-                multiFactory,  regKey );
+                multiFactory, regKey );
         }
 
         return xSingleServiceFactory;
@@ -450,7 +450,7 @@ public class JavaSampleChartAddIn extends WeakBase implements
      */
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
 //    public static boolean __writeRegistryServiceInfo( com.sun.star.registry.XRegistryKey regKey )
 //     {
@@ -467,3 +467,4 @@ public class JavaSampleChartAddIn extends WeakBase implements
 //         return bResult;
 //     }
 }
+

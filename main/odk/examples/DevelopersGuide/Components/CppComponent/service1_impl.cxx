@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ OUString SAL_CALL getImplementationName_MyService1Impl()
                          "my_module.my_sc_implementation.MyService1") );
 }
 
-    
+
 class MyService1Impl
     : public ::my_module::XSomething
     , public lang::XServiceInfo
@@ -59,7 +59,7 @@ class MyService1Impl
 {
     oslInterlockedCount m_refcount;
     OUString m_sData;
-    // it's good practise to store the context for further use when you use
+    // it's good practice to store the context for further use when you use
     // other UNO API's in your implementation
     Reference< XComponentContext > m_xContext;
 public:
@@ -69,7 +69,7 @@ public:
         {}
 
     virtual ~MyService1Impl() {}
-    
+
     // XInterface
     virtual Any SAL_CALL queryInterface( Type const & type )
         throw (RuntimeException);
@@ -241,7 +241,7 @@ extern "C" SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnviron
 
 // This method not longer necessary since OOo 3.4 where the component registration was
 // was changed to passive component registration. For more details see
-// http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+// https://wiki.openoffice.org/wiki/Passive_Component_Registration
 //
 // extern "C" SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_writeInfo(
 //     lang::XMultiServiceFactory * xMgr, registry::XRegistryKey * xRegistry )
