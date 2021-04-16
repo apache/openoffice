@@ -502,13 +502,14 @@ const rtl::OUString AboutDialog::GetBuildId() const
     // For better readability, strip the duplicate ProductMajor ("340").
     if ( sProductSource.getLength() )
     {
+        sal_Int32 nMajorLength = sProductSource.getLength() - 3;
         bool bMatchingUPD =
                 ( sProductSource.getLength() >= 3 )
-            &&  ( sBuildId.getLength() >= 3 )
-            &&  ( sProductSource.copy( sProductSource.getLength() - 3 ) == sBuildId.copy( 0, 3 ) );
+            &&  ( sBuildId.getLength() >= nMajorLength )
+            &&  ( sProductSource.copy( 3 ) == sBuildId.copy( 0, nMajorLength ) );
         OSL_ENSURE( bMatchingUPD, "BUILDID and ProductSource do not match in their UPD" );
         if ( bMatchingUPD )
-            sProductSource = sProductSource.copy( 0, sProductSource.getLength() - 3 );
+            sProductSource = sProductSource.copy( 0, sProductSource.getLength() - nMajorLength );
 
         // prepend the product source
         sBuildIdBuff.insert( 0, sProductSource );
