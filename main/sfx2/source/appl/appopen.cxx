@@ -944,10 +944,11 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
                 // We consider some protocols unsafe
                 sal_Bool bUnsafeProtocol;
                 switch (aINetProtocol) {
-                // case INET_PROT_FTP:
-                case INET_PROT_VND_SUN_STAR_HELP:
                 case INET_PROT_HTTP:
                 case INET_PROT_HTTPS:
+		    bSafeExtension = true; // trust the browser to prevent unsafe extensions
+                // case INET_PROT_FTP:
+                case INET_PROT_VND_SUN_STAR_HELP:
                 case INET_PROT_MAILTO:
                     bUnsafeProtocol = false;
                     break;
