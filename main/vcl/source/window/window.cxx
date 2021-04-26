@@ -7202,7 +7202,7 @@ void Window::SetZOrder( Window* pRefWindow, sal_uInt16 nFlags )
             sal_Bool bInitWinClipRegion = mpWindowImpl->mbInitWinClipRegion;
             ImplSetClipFlag();
 
-            // Wenn ClipRegion noch nicht initalisiert wurde, dann
+            // Wenn ClipRegion noch nicht initialisiert wurde, dann
             // gehen wir davon aus, das das Fenster noch nicht
             // ausgegeben wurde und loesen somit auch keine
             // Invalidates aus. Dies ist eine Optimierung fuer

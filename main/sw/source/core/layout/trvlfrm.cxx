@@ -1020,7 +1020,7 @@ SwLayoutFrm *GetPrevFrm( const SwLayoutFrm *pFrm )
     return pPrev;
 }
 
-//Jetzt koennen auch die Funktionspointer initalisiert werden;
+//Jetzt koennen auch die Funktionspointer initialisiert werden;
 //sie sind in cshtyp.hxx declariert.
 SwPosPage fnPageStart = GetFirstSub;
 SwPosPage fnPageEnd = GetLastSub;

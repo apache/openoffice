@@ -140,7 +140,7 @@ namespace rtl
 
 enum __ByteSequence_NoDefault
 {
-	/** This enum value can be used to create a bytesequence with uninitalized data
+	/** This enum value can be used to create a bytesequence with uninitialized data
 	*/
 	BYTESEQ_NODEFAULT = 0xcafe
 };
