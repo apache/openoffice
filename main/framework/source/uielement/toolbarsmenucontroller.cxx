@@ -840,8 +840,8 @@ void SAL_CALL ToolbarsMenuController::setPopupMenu( const Reference< css::awt::X
 void SAL_CALL ToolbarsMenuController::initialize( const Sequence< Any >& aArguments ) throw ( Exception, RuntimeException )
 {
     osl::MutexGuard aLock( m_aMutex );
-    sal_Bool bInitalized( m_bInitialized );
-    if ( !bInitalized )
+    sal_Bool bInitialized( m_bInitialized );
+    if ( !bInitialized )
     {
 		svt::PopupMenuControllerBase::initialize(aArguments);
 

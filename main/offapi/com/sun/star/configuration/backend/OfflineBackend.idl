@@ -48,7 +48,7 @@ published service OfflineBackend
 
     /** provides access to configuration data from a <type>SingleBackend</type>.
 
-      <p>If no backend is provided during initalization or if the context 
+      <p>If no backend is provided during initialization or if the context 
         contains an <code>Offline</code> flag that is <TRUE/>, then offline mode 
         is activated. This may fail, if the offline cache has not been filled 
         during a previous execution. 

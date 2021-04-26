@@ -226,7 +226,7 @@ CFilePreview* CFilePreview::createInstance(
         catch( CAutoOleInit::COleInitException& )
         {
             OSL_ASSERT( !s_FilePreviewInst );
-            OSL_ENSURE( sal_False, "OleInitalize failed" );
+            OSL_ENSURE( sal_False, "OleInitialize failed" );
         }
 	}
 

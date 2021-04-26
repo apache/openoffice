@@ -219,7 +219,7 @@ FuInsertOLE::FuInsertOLE(ScTabViewShell* pViewSh, Window* pWin, ScDrawView* pVie
 	if( ! rReq.IsAPI() )
 		rReq.Done();
 
-	//!	hier DLL's initalisieren, damit die Factories existieren?
+	//!	hier DLL's initialisieren, damit die Factories existieren?
 
     uno::Reference < embed::XEmbeddedObject > xObj;
     uno::Reference < embed::XStorage > xStorage = comphelper::OStorageHelper::GetTemporaryStorage();

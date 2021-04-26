@@ -299,12 +299,12 @@ throw (css::uno::Exception, css::uno::RuntimeException)
 
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
-    sal_Bool                                               bInitalized( m_bInitialized );
+    sal_Bool                                               bInitialized( m_bInitialized );
 	css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR( m_xServiceManager );
 	aLock.unlock();
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 
-    if ( !bInitalized )
+    if ( !bInitialized )
     {
 		css::beans::PropertyValue				    aPropValue;
 		css::uno::Reference< css::awt::XTopWindow > xTopWindow;

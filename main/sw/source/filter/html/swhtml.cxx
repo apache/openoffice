@@ -304,7 +304,7 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 	nContinue( 0 ),
 #endif
 	eParaAdjust( SVX_ADJUST_END ),
-	bDocInitalized( sal_False ),
+	bDocInitialized( sal_False ),
 	bSetModEnabled( sal_False ),
 	bInFloatingFrame( sal_False ),
 	bInField( sal_False ),
@@ -939,8 +939,8 @@ void SwHTMLParser::Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew )
 
 void SwHTMLParser::DocumentDetected()
 {
-	ASSERT( !bDocInitalized, "DocumentDetected mehrfach aufgerufen" );
-	bDocInitalized = sal_True;
+	ASSERT( !bDocInitialized, "DocumentDetected mehrfach aufgerufen" );
+	bDocInitialized = sal_True;
 	if( IsNewDoc() )
 	{
 		if( IsInHeader() )
@@ -1059,7 +1059,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	// versuchen wir das erstmal rauszufinden. Das muss fuer Controls in
 	// Fall vor dem Einfuegen des Controls passieren, weil beim Einfuegen
 	// bereits eine View benoetigt wird.
-	if( !bDocInitalized )
+	if( !bDocInitialized )
 		DocumentDetected();
 
 	sal_Bool bGetIDOption = sal_False, bInsertUnknown = sal_False;
@@ -1475,7 +1475,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 
 		if( aToken.Len() )
 		{
-			if( !bDocInitalized )
+			if( !bDocInitialized )
 				DocumentDetected();
             pDoc->InsertString( *pPam, aToken );
 
