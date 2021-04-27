@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@
 
 //CP : added by CP
 #include <rtl/locale.h>
-#include <osl/nlsupport.h> 
+#include <osl/nlsupport.h>
 #include <osl/process.h>
 
 //CP : end
@@ -148,7 +148,7 @@ SecurityEnvironment_MSCryptImpl :: ~SecurityEnvironment_MSCryptImpl() {
 		m_hKeyStore = NULL ;
 	}
 
-	//i120675, close the store handles 
+	//i120675, close the store handles
 	if( m_hMySystemStore != NULL ) {
 		CertCloseStore( m_hMySystemStore, CERT_CLOSE_STORE_CHECK_FLAG ) ;
 		m_hMySystemStore = NULL ;
@@ -189,7 +189,7 @@ SecurityEnvironment_MSCryptImpl :: ~SecurityEnvironment_MSCryptImpl() {
 		for( priKeyIt = m_tPriKeyList.begin() ; priKeyIt != m_tPriKeyList.end() ; priKeyIt ++ )
 			CryptDestroyKey( *priKeyIt ) ;
 	}
-	
+
 }
 
 /* XInitialization */
@@ -240,10 +240,10 @@ Reference< XSingleServiceFactory > SecurityEnvironment_MSCryptImpl :: impl_creat
 }
 
 /* XUnoTunnel */
-sal_Int64 SAL_CALL SecurityEnvironment_MSCryptImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier ) 
+sal_Int64 SAL_CALL SecurityEnvironment_MSCryptImpl :: getSomething( const Sequence< sal_Int8 >& aIdentifier )
 	throw( RuntimeException )
 {
-	if( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), aIdentifier.getConstArray(), 16 ) ) { 
+	if( aIdentifier.getLength() == 16 && 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), aIdentifier.getConstArray(), 16 ) ) {
 		return ( sal_Int64 )this ;
 	}
 	return 0 ;
@@ -503,7 +503,7 @@ HCRYPTKEY SecurityEnvironment_MSCryptImpl :: getPriKey( unsigned int position ) 
 }
 
 //Methods from XSecurityEnvironment
-Sequence< Reference < XCertificate > > SecurityEnvironment_MSCryptImpl :: getPersonalCertificates() throw( SecurityException , RuntimeException ) 
+Sequence< Reference < XCertificate > > SecurityEnvironment_MSCryptImpl :: getPersonalCertificates() throw( SecurityException , RuntimeException )
 {
 	sal_Int32 length ;
 	X509Certificate_MSCryptImpl* xcert ;
@@ -639,8 +639,8 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 
 	//Get the SerialNumber
 	cryptSerialNumber.cbData = serialNumber.getLength() ;
-    cryptSerialNumber.pbData = ( BYTE* )malloc( cryptSerialNumber.cbData); 
-	if (!cryptSerialNumber.pbData) 
+    cryptSerialNumber.pbData = ( BYTE* )malloc( cryptSerialNumber.cbData);
+	if (!cryptSerialNumber.pbData)
 	{
 		free( certInfo.Issuer.pbData ) ;
 		throw RuntimeException() ;
@@ -650,7 +650,7 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 
 	certInfo.SerialNumber.cbData = cryptSerialNumber.cbData ;
 	certInfo.SerialNumber.pbData = cryptSerialNumber.pbData ;
-		
+
 	// Get the Cert from all store.
 	for( i = 0 ; i < 6 ; i ++ )
 	{
@@ -685,11 +685,11 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 			continue;
 		}
 
-/******************************************************************************* 
- * This code reserved for remind us there are another way to find one cert by 
- * IssuerName&serialnumber. You can use the code to replaced the function 
+/*******************************************************************************
+ * This code reserved for remind us there are another way to find one cert by
+ * IssuerName&serialnumber. You can use the code to replaced the function
  * CertFindCertificateInStore IF and ONLY IF you must find one special cert in
- * certStore but can not be found by CertFindCertificateInStore , then , you 
+ * certStore but can not be found by CertFindCertificateInStore , then , you
  * should also change the same part in libxmlsec/.../src/mscrypto/x509vfy.c#875.
  * By Chandler Peng(chandler.peng@sun.com)
  *****/
@@ -711,7 +711,7 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 					CERT_X500_NAME_STR | CERT_NAME_STR_REVERSE_FLAG ,
 					NULL, 0
 				) ;
-				
+
 				if( cbIssuer == 0 ) continue ; // discard this cert;
 
 				issuer = (char *)malloc( cbIssuer ) ;
@@ -737,7 +737,7 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 					continue ;// discard this cert;
 				}
 
-				if(strncmp(pszName , issuer , cbIssuer) != 0) 
+				if(strncmp(pszName , issuer , cbIssuer) != 0)
 				{
 					free( issuer ) ;
 					continue ;// discard this cert;
@@ -756,7 +756,7 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 			}
 
 		}while(pCertContext);
-		
+
 		if(i != 0 && i != 1) CertCloseStore( hCertStore, CERT_CLOSE_STORE_CHECK_FLAG ) ;
 		if( found != 0 ) break; // Found the certificate.
 ********************************************************************************/
@@ -769,7 +769,7 @@ Reference< XCertificate > SecurityEnvironment_MSCryptImpl :: getCertificate( con
 			&certInfo,
 			NULL
 		) ;
-	
+
 		if(i != 0 && i != 1) CertCloseStore( hCertStore, CERT_CLOSE_STORE_CHECK_FLAG ) ;
 		if( pCertContext != NULL ) break ; // Found the certificate.
 
@@ -875,7 +875,7 @@ Sequence< Reference < XCertificate > > SecurityEnvironment_MSCryptImpl :: buildC
 		    &pChainContext);
         if (!bChain)
 			pChainContext = NULL;
-		
+
         //Close the additional store
        CertCloseStore(hCollectionStore, CERT_CLOSE_STORE_CHECK_FLAG);
     }
@@ -981,17 +981,17 @@ HCERTSTORE getCertStoreForIntermediatCerts(
 //We return only valid or invalid, as long as the API documentation expresses
 //explicitly that all validation steps are carried out even if one or several
 //errors occur. See also
-//http://wiki.services.openoffice.org/wiki/Certificate_Path_Validation#Validation_status
-sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate( 
+//https://wiki.openoffice.org/wiki/Certificate_Path_Validation#Validation_status
+sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
     const Reference< ::com::sun::star::security::XCertificate >& aCert,
-    const Sequence< Reference< ::com::sun::star::security::XCertificate > >& seqCerts) 
-    throw( ::com::sun::star::uno::SecurityException, ::com::sun::star::uno::RuntimeException ) 
+    const Sequence< Reference< ::com::sun::star::security::XCertificate > >& seqCerts)
+    throw( ::com::sun::star::uno::SecurityException, ::com::sun::star::uno::RuntimeException )
 {
 	sal_Int32 validity = 0;
 	PCCERT_CHAIN_CONTEXT pChainContext = NULL;
 	PCCERT_CONTEXT pCertContext = NULL;
 	const X509Certificate_MSCryptImpl* xcert = NULL;
-    
+
 	Reference< XUnoTunnel > xCertTunnel( aCert, UNO_QUERY ) ;
 	if( !xCertTunnel.is() ) {
 		throw RuntimeException() ;
@@ -1005,14 +1005,14 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
 	if( xcert == NULL ) {
 		throw RuntimeException() ;
 	}
-    
+
 	pCertContext = xcert->getMswcryCert() ;
 
 	CERT_ENHKEY_USAGE	enhKeyUsage ;
 	CERT_USAGE_MATCH	certUsage ;
 	CERT_CHAIN_PARA		chainPara ;
     rtl_zeroMemory(&chainPara, sizeof(CERT_CHAIN_PARA));
-    
+
     //Prepare parameter for CertGetCertificateChain
 	enhKeyUsage.cUsageIdentifier = 0 ;
 	enhKeyUsage.rgpszUsageIdentifier = NULL ;
@@ -1030,7 +1030,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
         hIntermediateCertsStore =
             getCertStoreForIntermediatCerts(seqCerts);
 
-        //Merge m_hCertStore and m_hKeyStore and the store of the intermediate 
+        //Merge m_hCertStore and m_hKeyStore and the store of the intermediate
         //certificates into one store.
         hCollectionStore = CertOpenStore(
 			CERT_STORE_PROV_COLLECTION ,
@@ -1056,9 +1056,9 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
                 hIntermediateCertsStore,
                 CERT_PHYSICAL_STORE_ADD_ENABLE_FLAG,
                 0);
-                
+
         }
-        
+
         //CertGetCertificateChain searches by default in MY, CA, ROOT and TRUST
         //We do not check revocation of the root. In most cases there are none.
         //Then we would get CERT_TRUST_REVOCATION_STATUS_UNKNOWN
@@ -1069,7 +1069,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
             NULL , //use current system time
             hCollectionStore,
             &chainPara ,
-            CERT_CHAIN_REVOCATION_CHECK_CHAIN | CERT_CHAIN_REVOCATION_CHECK_CHAIN_EXCLUDE_ROOT, 
+            CERT_CHAIN_REVOCATION_CHECK_CHAIN | CERT_CHAIN_REVOCATION_CHECK_CHAIN_EXCLUDE_ROOT,
             NULL ,
         	&pChainContext);
 
@@ -1095,7 +1095,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
                 if ( pSimpleChain->TrustStatus.dwErrorStatus & revocationFlags)
                 {
                     //No revocation information. Because MSDN documentation is not
-                    //clear about if all other tests are performed if an error occurrs,
+                    //clear about if all other tests are performed if an error occurs,
                     //we test again, without requiring revocation checking.
                     CertFreeCertificateChain(pChainContext);
                     pChainContext = NULL;

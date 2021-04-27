@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -27,26 +27,26 @@
 #include "uno/Enterable.h"
 #include "rtl/ustring.hxx"
 
-namespace cppu 
+namespace cppu
 {
 /** C++ wrapper for binary C Enterable
-    (http://wiki.services.openoffice.org/wiki/Uno/Cpp/Spec/Environment_Stack)
+	(https://wiki.openoffice.org/wiki/Uno/Cpp/Spec/Environment_Stack)
 
-    @see uno_Enterable
-    @since UDK 3.2.7
+	@see uno_Enterable
+	@since UDK 3.2.7
 */
 class Enterable : public uno_Enterable
 {
 public:
-    /* These methods need to be implemented in a derived class.
-     */
+	/* These methods need to be implemented in a derived class.
+	 */
 	virtual void v_enter     (void)                                      = 0;
 	virtual void v_leave     (void)                                      = 0;
 	virtual void v_callInto_v(uno_EnvCallee * pCallee, va_list * pParam) = 0;
 	virtual void v_callOut_v (uno_EnvCallee * pCallee, va_list * pParam) = 0;
 	virtual int  v_isValid   (rtl::OUString * pReason)                   = 0;
 
-    virtual ~Enterable() {}
+	virtual ~Enterable() {}
 
 public:
 	inline explicit Enterable(void);
@@ -69,15 +69,15 @@ private:
 
 extern "C" inline void Enterable_call_enter (void * context) { ((Enterable *)context)->v_enter(); }
 extern "C" inline void Enterable_call_leave (void * context) { ((Enterable *)context)->v_leave(); }
-extern "C" inline void Enterable_call_callInto_v(void * context, uno_EnvCallee * pCallee, va_list * pParam) 
+extern "C" inline void Enterable_call_callInto_v(void * context, uno_EnvCallee * pCallee, va_list * pParam)
     { ((Enterable *)context)->v_callInto_v(pCallee, pParam); }
-extern "C" inline void Enterable_call_callOut_v (void * context, uno_EnvCallee * pCallee, va_list * pParam) 
+extern "C" inline void Enterable_call_callOut_v (void * context, uno_EnvCallee * pCallee, va_list * pParam)
     { ((Enterable *)context)->v_callOut_v(pCallee, pParam); }
 extern "C" inline int  Enterable_call_isValid   (void * context, rtl_uString ** pReason)
     {return ((Enterable *)context)->v_isValid((rtl::OUString *)pReason);}
 
 
-Enterable::Enterable(void) 
+Enterable::Enterable(void)
 {
     m_enter      = Enterable_call_enter;
     m_leave      = Enterable_call_leave;
@@ -105,6 +105,5 @@ void Enterable::callOut(uno_EnvCallee * pCallee, ...)
 }
 
 }
-
 
 #endif

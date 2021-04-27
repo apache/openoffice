@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ namespace cssu = com::sun::star::uno;
 namespace cppu
 {
     /** Helpers for mapping objects relative to the current environment.
-        (http://wiki.services.openoffice.org/wiki/Uno/Cpp/Spec/Map_Helpers)
+        (https://wiki.openoffice.org/wiki/Uno/Cpp/Spec/Map_Helpers)
     */
 
     /** Maps an object from the current to an outer Environment, returns mapped object.
@@ -45,7 +45,7 @@ namespace cppu
 	template<class T> inline T * mapOut(T * pT, cssu::Environment const & outerEnv)
 	{
 		cssu::Mapping curr2outer(cssu::Environment::getCurrent(), outerEnv);
-		
+
 		return reinterpret_cast<T *>(curr2outer.mapInterface(pT, getCppuType((cssu::Reference<T> *)NULL)));
 	}
 
@@ -60,7 +60,7 @@ namespace cppu
 	template<class T> inline T * mapIn(T * pT, cssu::Environment const & outerEnv)
 	{
 		cssu::Mapping outer2curr(outerEnv, cssu::Environment::getCurrent());
-		
+
 		return reinterpret_cast<T *>(outer2curr.mapInterface(pT, getCppuType((cssu::Reference<T> *)NULL)));
 	}
 
@@ -76,7 +76,7 @@ namespace cppu
 	inline void mapOutAny(cssu::Any const & any, cssu::Any * res, cssu::Environment const & outerEnv)
 	{
 		cssu::Mapping curr2outer(cssu::Environment::getCurrent(), outerEnv);
-		
+
 		uno_any_destruct(res, (uno_ReleaseFunc)cssu::cpp_release);
 		uno_type_any_constructAndConvert(
 			res,
@@ -96,7 +96,7 @@ namespace cppu
 	inline void mapInAny(cssu::Any const & any, cssu::Any * res, cssu::Environment const & outerEnv)
 	{
 		cssu::Mapping outer2curr(outerEnv, cssu::Environment::getCurrent());
-		
+
 		uno_any_destruct(res, (uno_ReleaseFunc)cssu::cpp_release);
 		uno_type_any_constructAndConvert(
 			res,
