@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,7 +161,7 @@ IMPL_LINK( DataEditor, ToolboxHdl, void *, EMPTYARG )
     return 0;
 }
 
-// refresh toolbar icons according to currently selected cell in brwose box
+// refresh toolbar icons according to currently selected cell in browse box
 IMPL_LINK( DataEditor, BrowserCursorMovedHdl, void *, EMPTYARG )
 {
     if( m_bReadOnly )
@@ -335,7 +335,7 @@ void DataEditor::ApplyImageList()
 }
 
 // add/remove a window (the toolbar) to/from the global list, so that F6
-// travels/no longer travels over this window.  _rMemFunc may be
+// travels/no longer travels over this window. _rMemFunc may be
 // TaskPaneList::AddWindow or TaskPaneList::RemoveWindow
 void DataEditor::notifySystemWindow(
     Window* pWindow, Window* pToRegister,
