@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,10 +47,10 @@ class SdrPage;
 #define SC_CONTENT_DRAWING		8
 #define SC_CONTENT_COUNT		9
 
-const sal_uLong SC_CONTENT_NOCHILD  = ~0UL;
+const sal_uLong SC_CONTENT_NOCHILD = ~0UL;
 
 //
-//	TreeListBox fuer Inhalte
+//	TreeListBox for contents
 //
 
 class ScContentTree : public SvTreeListBox
@@ -59,13 +59,13 @@ class ScContentTree : public SvTreeListBox
 	ImageList			aEntryImages;
 	ImageList			aHCEntryImages;
 	SvLBoxEntry*		pRootNodes[SC_CONTENT_COUNT];
-	sal_uInt16				nRootType;			// als Root eingestellt
+	sal_uInt16			nRootType;			// als Root eingestellt
 	String				aManualDoc;			// im Navigator umgeschaltet (Title)
-	sal_Bool				bHiddenDoc;			// verstecktes aktiv?
+	sal_Bool			bHiddenDoc;			// verstecktes aktiv?
 	String				aHiddenName;		// URL zum Laden
 	String				aHiddenTitle;		// fuer Anzeige
-	ScDocument*			pHiddenDocument;	// temporaer
-    sal_Bool                           bisInNavigatoeDlg;
+	ScDocument*			pHiddenDocument;	// temporary
+	sal_Bool			bisInNavigatorDlg;
 	String 				sKeyString;
 
 	sal_uInt16				pPosList[SC_CONTENT_COUNT];		// fuer die Reihenfolge
@@ -78,7 +78,7 @@ class ScContentTree : public SvTreeListBox
 	void	ClearType(sal_uInt16 nType);
 	void	ClearAll();
 	void	InsertContent( sal_uInt16 nType, const String& rValue );
-    void    GetDrawNames( sal_uInt16 nType );
+	void	GetDrawNames( sal_uInt16 nType );
 
 	void	GetTableNames();
 	void	GetAreaNames();
@@ -89,7 +89,7 @@ class ScContentTree : public SvTreeListBox
 	void	GetDrawingNames();
 	void	GetNoteStrings();
 
-    static bool IsPartOfType( sal_uInt16 nContentType, sal_uInt16 nObjIdentifier );
+	static bool IsPartOfType( sal_uInt16 nContentType, sal_uInt16 nObjIdentifier );
 
 	sal_Bool	DrawNamesChanged( sal_uInt16 nType );
 	sal_Bool	NoteStringsChanged();
@@ -113,7 +113,7 @@ class ScContentTree : public SvTreeListBox
 
 	ScDocument* GetSourceDocument();
 
-    DECL_LINK( ContentDoubleClickHdl, ScContentTree* );
+	DECL_LINK( ContentDoubleClickHdl, ScContentTree* );
 	DECL_STATIC_LINK( ScContentTree, ExecDragHdl, void* );
 public:
 	SvLBoxEntry* pTmpEntry;
@@ -123,10 +123,10 @@ protected:
 //	virtual sal_Bool	Drop( const DropEvent& rEvt );
 //	virtual sal_Bool	QueryDrop( DropEvent& rEvt );
 
-    using SvTreeListBox::ExecuteDrop;
+	using SvTreeListBox::ExecuteDrop;
 
 	virtual sal_Int8	AcceptDrop( const AcceptDropEvent& rEvt );
-	virtual sal_Int8    ExecuteDrop( const ExecuteDropEvent& rEvt );
+	virtual sal_Int8	ExecuteDrop( const ExecuteDropEvent& rEvt );
 	virtual void		StartDrag( sal_Int8 nAction, const Point& rPosPixel );
 	virtual void		DragFinished( sal_Int8 nAction );
 
@@ -137,18 +137,18 @@ public:
 			ScContentTree( Window* pParent, const ResId& rResId );
 			~ScContentTree();
 
-    String			getAltLongDescText( SvLBoxEntry* pEntry , sal_Bool isAltText) const;
-    String  		GetEntryAltText( SvLBoxEntry* pEntry ) const;
-    String  		GetEntryLongDescription( SvLBoxEntry* pEntry ) const;
+	String			getAltLongDescText( SvLBoxEntry* pEntry , sal_Bool isAltText) const;
+	String			GetEntryAltText( SvLBoxEntry* pEntry ) const;
+	String			GetEntryLongDescription( SvLBoxEntry* pEntry ) const;
 
-	void     ObjectFresh( sal_uInt16 nType,SvLBoxEntry* pEntry = NULL);
-	sal_Bool     SetNavigatorDlgFlag(sal_Bool isInNavigatoeDlg){ return bisInNavigatoeDlg=isInNavigatoeDlg;};
-    virtual void    MouseButtonDown( const MouseEvent& rMEvt );
-    virtual void    KeyInput( const KeyEvent& rKEvt );
+	void			ObjectFresh( sal_uInt16 nType,SvLBoxEntry* pEntry = NULL);
+	sal_Bool		SetNavigatorDlgFlag(sal_Bool isInNavigatorDlg){ return bisInNavigatorDlg=isInNavigatorDlg;};
+	virtual void	MouseButtonDown( const MouseEvent& rMEvt );
+	virtual void	KeyInput( const KeyEvent& rKEvt );
 
 	void	InitWindowBits( sal_Bool bButtons );
 
-    void    Refresh( sal_uInt16 nType = 0 );
+	void	Refresh( sal_uInt16 nType = 0 );
 
 	void	ToggleRoot();
 	void	SetRootType( sal_uInt16 nNew );
@@ -169,9 +169,6 @@ public:
 
 	static sal_Bool	IsInDrag()	{ return bIsInDrag; }
 };
-
-
-
 
 #endif // SC_NAVIPI_HXX
 
