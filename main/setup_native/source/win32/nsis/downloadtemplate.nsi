@@ -3,6 +3,14 @@
 !define PRODUCT_PUBLISHER "PUBLISHERPLACEHOLDER"
 !define PRODUCT_WEB_SITE "WEBSITEPLACEHOLDER"
 
+; Product Information
+VIAddVersionKey ProductName "Apache PRODUCTNAMEPLACEHOLDER"
+VIAddVersionKey CompanyName "PUBLISHERPLACEHOLDER"
+VIAddVersionKey LegalCopyright "Copyright (c) 2000-2021 The PUBLISHERPLACEHOLDER"
+VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
+VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
+;VIProductVersion "4.2.9822.500"
+
 ; Enable Unicode
 Unicode true
 
