@@ -6,10 +6,10 @@
 ; Product Information
 VIAddVersionKey ProductName "Apache PRODUCTNAMEPLACEHOLDER"
 VIAddVersionKey CompanyName "PUBLISHERPLACEHOLDER"
-VIAddVersionKey LegalCopyright "Copyright (c) 2000-2021 The PUBLISHERPLACEHOLDER"
+VIAddVersionKey LegalCopyright "(c) 2012-2021 The PUBLISHERPLACEHOLDER"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
-;VIProductVersion "4.2.9822.500"
+VIProductVersion "4.2.9822.500"
 
 ; Enable Unicode
 Unicode true
