@@ -61,14 +61,10 @@ public class WarningDialog {
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
                 // links with extensions
-                {"http://nonexistant.url.com/evil.jar", "http with .jar"},
-                {"https://nonexistant.url.com/evil.jar", "https with .jar"},
                 {"nfs://nonexistant.url.com/evil.jar", "nfs with .jar"},
                 {"dav://nonexistant.url.com/evil.jar", "dav with .jar"},
                 {"smb://nonexistant.url.com/evil.jar", "smb with .jar"},
                 // with path and no extension
-                {"http://nonexistant.url.com/evil", "http with path"},
-                {"https://nonexistant.url.com/evil", "https with path"},
                 {"nfs://nonexistant.url.com/evil", "nfs with path"},
                 {"dav://nonexistant.url.com/evil", "dav with path"},
                 {"smb://nonexistant.url.com/evil", "smb with path"},
