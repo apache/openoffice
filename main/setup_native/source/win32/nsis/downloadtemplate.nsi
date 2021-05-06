@@ -5,7 +5,7 @@
 
 ; Product Information
 VIAddVersionKey ProductName "Apache PRODUCTNAMEPLACEHOLDER"
-VIAddVersionKey CompanyName "PUBLISHERPLACEHOLDER"
+VIAddVersionKey CompanyName "Apache Software Foundation"
 VIAddVersionKey LegalCopyright "(c) 2012-2021 The Apache Software Foundation"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
@@ -14,7 +14,7 @@ VIProductVersion "4.2.9822.500"
 ; Enable Unicode
 Unicode true
 
-; SetCompressor lzma (lzma/zlib/bzip2)
+; Compression options
 CRCCheck on
 SetCompressor zlib
 
