@@ -724,8 +724,8 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test open a non-http(s) type hyperlink (with host only) in a text document.
-	 * (duplicate of fvt.gui.sw.hyperlink.WarningDialog.testDavHyperlinkWithHostOnly()
-	 * added here for build verification)
+	 * (coverage included in fvt.gui.sw.hyperlink.WarningDialog
+	 * testHyperlinkDisplaysWarning() and included here for build verification)
 	 * 1. New a text document
 	 * 2. Insert a dav type hyperlink
 	 * 3. Open hyperlink
