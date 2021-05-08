@@ -27,7 +27,7 @@
 	<property name="junit.home" value="${env.JUNIT_HOME}" />
 	<property name="dist.dir" value="." />
 	<property name="dist.name" value="aoo_test" />
-	<property name="junit.jar.repos" value="https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.13.2.jar" />
+	<property name="junit.jar.repos" value="https://repo1.maven.org/maven2/junit/junit/4.13.2/junit-4.13.2.jar" />
 	
 	<path id="uno.classpath">
 		<fileset dir="${env.OUTDIR}/bin" erroronmissingdir="false">
