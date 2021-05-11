@@ -218,6 +218,7 @@ public class FileTypeTest {
 		impress.waitForExistence(10, 2);
 		sleep(1);
 		impress.typeKeys("<tab><enter>");
+		sleep(1);
 		Assert.assertEquals("The typed text is saved!", text, copyAll().trim());
 	}
 

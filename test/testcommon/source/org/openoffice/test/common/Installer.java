@@ -47,6 +47,28 @@ public class Installer implements Runnable {
 				throw new RuntimeException("Only allow one running test instance!");
 			}
 		}
+
+		prop = findOpenofficeHome();
+		System.setProperty("openoffice.home", prop);
+		log.log(Level.INFO, MessageFormat.format("OpenOffice in {0} will be tested.", prop));
+
+		String[] jars = { "juh.jar", "unoil.jar", "ridl.jar", "jurt.jar" };
+		for (String jar : jars) {
+			File file = FileUtil.findFile(prop, jar);
+
+			if (file != null)
+				addToClassPath(file);
+		}
+
+	}
+
+	private String findOpenofficeHome() {
+		String prop = System.getProperty("openoffice.home");
+		if (prop != null) {
+			validateOpenOfficeInstallation(new File(prop));
+			return prop;
+		}
+
 		if ((prop = System.getProperty("openoffice.pack")) != null) {
 			String onlyNewProp = System.getProperty("only.new");
 			File packFile = null;
@@ -92,33 +114,46 @@ public class Installer implements Runnable {
 				if (files != null && files.length == 1 && files[0].isDirectory()) {
 					files[0].renameTo(installDir);
 				}
-				System.setProperty("openoffice.home", installDir.getAbsolutePath());
+				validateOpenOfficeInstallation(installDir);
+				return installDir.getAbsolutePath();
 			} finally {
 				FileUtil.deleteFile(installTempDir);
 			}
 		}
 
-		prop = System.getProperty("openoffice.home", installDir.getAbsolutePath());
-		File sofficeBin = FileUtil.findFile(new File(prop), "soffice.bin", false);
-		if (sofficeBin == null)
+		// Try look for the output of ./configure --with-package-format="installed"
+		final String srcRoot = System.getenv("SRC_ROOT");
+		final String inPath = System.getenv("INPATH");
+		if (srcRoot == null || inPath == null) {
+			throw new RuntimeException("Neither openoffice.home nor openoffice.pack were specified, and could not autodetect OpenOffice " +
+				"from ${SRC_ROOT} and ${INPATH}. Please make sure OpenOffice was built with the --with-package-format=\"installed\" option, " +
+				"and you ran \"source <platform>.set.sh\"");
+		}
+		final File instsetoo_native = new File(srcRoot, "instsetoo_native");
+		final File buildDir = new File(instsetoo_native, inPath);
+		final File apacheOpenOffice = new File(buildDir, "Apache_OpenOffice");
+		final File installed = new File(apacheOpenOffice, "installed");
+		final File install = new File(installed, "install");
+		final File enUs = new File(install, "en-US");
+		// *nix:
+		File openoffice4 = new File(enUs, "openoffice4");
+		if (!openoffice4.exists()) {
+			// Windows:
+			openoffice4 = new File(enUs, "OpenOffice 4");
+		}
+		if (!openoffice4.exists()) {
+			throw new RuntimeException("Neither openoffice.home nor openoffice.pack were specified, and could not find OpenOffice in " + openoffice4.getAbsolutePath());
+		}
+		validateOpenOfficeInstallation(openoffice4);
+		return openoffice4.getAbsolutePath();
+	}
+
+	private static void validateOpenOfficeInstallation(File directory) {
+		final File sofficeBin = FileUtil.findFile(directory, "soffice.bin", false);
+		if (sofficeBin == null) {
 			throw new RuntimeException(MessageFormat.format(
-					"No valid OpenOffice is found in {0}! Use system property openoffice.home to specify a valid OpenOffice installation directory.", prop));
-		try {
-			prop = sofficeBin.getParentFile().getParentFile().getCanonicalPath();
-			System.setProperty("openoffice.home", prop);
-			log.log(Level.INFO, MessageFormat.format("OpenOffice in {0} will be tested.", prop));
-		} catch (IOException e) {
-			// ignore, never occurs
+				"No valid OpenOffice found in {0}!", directory.getAbsolutePath()));
 		}
-
-		String[] jars = { "juh.jar", "unoil.jar", "ridl.jar", "jurt.jar" };
-		for (String jar : jars) {
-			File file = FileUtil.findFile(prop, jar);
-
-			if (file != null)
-				addToClassPath(file);
-		}
-
 	}
 
 	public static boolean addToClassPath(File file) {

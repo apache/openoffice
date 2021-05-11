@@ -325,6 +325,7 @@ public class BasicFunctionTest {
 		assertEquals(
 				"Apache Awesome OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. Awesome OpenOffice is released on Windows, Solaris, Linux and Macintosh operation systems, with more communities joining, including a mature FreeBSD port. Awesome OpenOffice is localized, supporting over 110 languages worldwide. ",
 				copyAll());
+		discard();
 	}
 
 	@Test
@@ -674,7 +675,7 @@ public class BasicFunctionTest {
 		// SC_FunctionWizardDlg_FunctionList.doubleClick(5, 5);
 		scFunctionWizardDlgFunctionList.select("ABS");
 		scFunctionWizardDlgNext.click(); // Use "Next" button
-		scFunctionWizardDlgEdit1.inputKeys("A1");
+		scFunctionWizardDlgEdit1.typeKeys("A1");
 		scFunctionWizardDlg.ok();
 		// Verify if the calculated result is equal to the expected result
 		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
