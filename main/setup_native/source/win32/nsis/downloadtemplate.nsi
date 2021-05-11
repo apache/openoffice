@@ -9,13 +9,12 @@ VIAddVersionKey CompanyName "Apache Software Foundation"
 VIAddVersionKey LegalCopyright "(c) 2012-2021 The Apache Software Foundation"
 VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
 VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
-VIProductVersion "4.5.9900.500"
+VIProductVersion "4.1.9807.500"
 
 ; Enable Unicode
 Unicode true
 
 ; Compression options
-CRCCheck on
 SetCompressor zlib
 
 ; MUI 1.67 compatible ------
