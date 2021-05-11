@@ -1190,25 +1190,32 @@ PopupMenu* SwContentTree::CreateContextMenu( void )
     }
     pSubPop2->CheckItem( 201 +
                     GetParentWindow()->GetRegionDropMode());
-    //Liste der offenen Dateien einfuegen
-    sal_uInt16 nId = 301;
-    const SwView* pActiveView = ::GetActiveView();
-    SwView *pView = SwModule::GetFirstView();
-    while (pView)
-    {
-        String sInsert = pView->GetDocShell()->GetTitle();
-        if(pView == pActiveView)
-        {
-            sInsert += '(';
-            sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
-            sInsert += ')';
-        }
-        pSubPop3->InsertItem(nId, sInsert);
-        if(bIsConstant && pActiveShell == &pView->GetWrtShell())
-            pSubPop3->CheckItem(nId);
-        pView = SwModule::GetNextView(pView);
-        nId++;
-    }
+	// Insert list of open files (filter out help pages)
+	sal_uInt16 nId = 301;
+	const SwView* pActiveView = ::GetActiveView();
+	SwView *pView = SwModule::GetFirstView();
+	while (pView)
+	{
+		if (!pView->GetDocShell()->IsHelpDocument())
+		{
+			String sInsert = pView->GetDocShell()->GetTitle();
+			sInsert += C2S(" (");
+			if(pView == pActiveView)
+			{
+				sInsert += aContextStrings[ ST_ACTIVE - ST_CONTEXT_FIRST];
+			}
+			else
+			{
+				sInsert += aContextStrings[ ST_INACTIVE - ST_CONTEXT_FIRST];
+			}
+			sInsert += ')';
+			pSubPop3->InsertItem(nId, sInsert);
+			if(bIsConstant && pActiveShell == &pView->GetWrtShell())
+				pSubPop3->CheckItem(nId);
+		}
+	pView = SwModule::GetNextView(pView);
+	nId++;
+	}
     pSubPop3->InsertItem(nId++, aContextStrings[ST_ACTIVE_VIEW - ST_CONTEXT_FIRST]);
     if(pHiddenShell)
     {
