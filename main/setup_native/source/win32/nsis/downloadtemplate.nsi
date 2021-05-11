@@ -15,6 +15,7 @@ VIProductVersion "4.1.9808.500"
 Unicode true
 
 ; Compression options
+CRCCheck on
 SetCompressor zlib
 
 ; MUI 1.67 compatible ------
