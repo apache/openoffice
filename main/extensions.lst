@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,25 +7,25 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 # This file defines the list of extensions that are preregistered or bundled with the pack sets.
 # At first office start the installation of extensions is completed.
 
-# file:// URLs are interpreted relative to the solver/340/<platform>/bin/ directory to which 
+# file:// URLs are interpreted relative to the solver/340/<platform>/bin/ directory to which
 # built extensions are delivered by default.
 
-# https:// URLs can be prefixed by an MD5 checksum.  If that is present then it is an error if
+# https:// URLs can be prefixed by an MD5 checksum. If that is present then it is an error if
 # the file pointed to by the URL has a different MD5 checksum.
 # When the downloaded file name is not the last part of the URL (everything after the final /) then
 # the name has to be specified after the URL enclosed in double quotes.
@@ -47,11 +47,11 @@
 
 # German dictionary.
 [ language=de || language=de_DE || language=nl || language=ru ]
-    ea35a6a6761655107da3e99ee56c171f https://sourceforge.net/projects/aoo-extensions/files/1075/15/dict-de_de-frami_2017-01-12.oxt/download "dict-de_de-frami_2017-01-12.oxt"
+    ea35a6a6761655107da3e99ee56c171f https://sourceforge.net/projects/aoo-extensions/files/1075/15/dict-de_de-frami_2017-01-12.oxt/download "dict-de_de.oxt"
 
 # Dutch dictionary.
 [ language=nl ]
-    5c0de383ef649cffefc128cfb36b4d43 https://sourceforge.net/projects/aoo-extensions/files/1456/6/nl-dict-v2.00g.oxt/download "nl-dict-v2.00g.oxt"
+    5c0de383ef649cffefc128cfb36b4d43 https://sourceforge.net/projects/aoo-extensions/files/1456/6/nl-dict-v2.00g.oxt/download "dict-nl.oxt"
 
 # French dictionary.
 [ language=fr || language=nl || language=de || language=de_DE || language=ca || language=ca_XV ]
@@ -63,7 +63,7 @@
 
 # Spanish dictionary.
 [ language=es || language=ca || language=ca_XV ]
-    1b999fcef948148e269161a08e7acf20 https://sourceforge.net/projects/aoo-extensions/files/1657/4/es_es.oxt/download "es_es.oxt"
+    1b999fcef948148e269161a08e7acf20 https://sourceforge.net/projects/aoo-extensions/files/1657/4/es_es.oxt/download "dict-es_es.oxt"
 
 # Danish dictionary.
 [ language=da ]
@@ -75,11 +75,11 @@
 
 # Romanian dictionary.
 [ language=ro ]
-    c7e22272fd8de1d50fe3b077153be274 https://sourceforge.net/projects/aoo-extensions/files/1392/10/dict-ro.1.7.oxt/download "dict-ro.1.7.oxt"
+    c7e22272fd8de1d50fe3b077153be274 https://sourceforge.net/projects/aoo-extensions/files/1392/10/dict-ro.1.7.oxt/download "dict-ro.oxt"
 
 # Russian dictionary.
 [ language=ru ]
-    93921f14809a22770f1bd89af65015bc https://sourceforge.net/projects/aoo-extensions/files/3233/3/dict_ru_ru-0.3.7.oxt/download "dict_ru_ru-0.3.7.oxt"
+    93921f14809a22770f1bd89af65015bc https://sourceforge.net/projects/aoo-extensions/files/3233/3/dict_ru_ru-0.3.7.oxt/download "dict-ru.oxt"
 
 # Slovak dictionary.
 [ language=sk ]
@@ -91,11 +91,11 @@
 
 # German (Austria) dictionary.
 [ language=de || language=de_AT || language=de_DE ]
-    0cf6783cb0f1355ef3869aa9699700b3 https://sourceforge.net/projects/aoo-extensions/files/1697/12/dict-de_at-frami_2017-01-12.oxt/download "dict-de_at-frami_2017-01-12.oxt"
+    0cf6783cb0f1355ef3869aa9699700b3 https://sourceforge.net/projects/aoo-extensions/files/1697/12/dict-de_at-frami_2017-01-12.oxt/download "dict-de_at.oxt"
 
 # German (Switzerland) dictionary.
 [ language=de || language=de_CH || language=de_DE ]
-    48f7f27f22bf1006a6d9f91d55a7cffc https://sourceforge.net/projects/aoo-extensions/files/1699/12/dict-de_ch-frami_2017-01-12.oxt/download "dict-de_ch-frami_2017-01-12.oxt"
+    48f7f27f22bf1006a6d9f91d55a7cffc https://sourceforge.net/projects/aoo-extensions/files/1699/12/dict-de_ch-frami_2017-01-12.oxt/download "dict-de_ch.oxt"
 
 # Khmer dictionary.
 [ language=km ]
@@ -120,7 +120,7 @@
 
 # Norwegian.
 [ language=nb ]
-    c06841f7f193e4f083482440999d801b https://sourceforge.net/projects/aoo-extensions/files/1216/2/dictionary-no-no-2.2.oxt/download "dictionary-no-no-2.2.oxt"
+    c06841f7f193e4f083482440999d801b https://sourceforge.net/projects/aoo-extensions/files/1216/2/dictionary-no-no-2.2.oxt/download "dict-no_no.oxt"
 
 # Swedish.
 [ language=sv ]
@@ -132,7 +132,7 @@
 
 # Polish.
 [ language=pl ]
-    a69f9221864b1360e38ff3f0b0cc9222 https://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download "pl-dict.oxt"
+    a69f9221864b1360e38ff3f0b0cc9222 https://sourceforge.net/projects/aoo-extensions/files/806/4/pl-dict.oxt/download "dict-pl.oxt"
 
 # Portuguese (European).
 [ language=pt || language=pt_PT ]
