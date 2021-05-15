@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_webdav.hxx"
@@ -171,9 +173,9 @@ void SerfSession::Init()
         {
             apr_sockaddr_t *proxy_address = NULL;
             status = apr_sockaddr_info_get( &proxy_address,
-                                                               rtl::OUStringToOString( m_aProxyName, RTL_TEXTENCODING_UTF8 ).getStr(), 
+                                                               rtl::OUStringToOString( m_aProxyName, RTL_TEXTENCODING_UTF8 ).getStr(),
                                                                APR_UNSPEC,
-                                                               static_cast<apr_port_t>(m_nProxyPort), 
+                                                               static_cast<apr_port_t>(m_nProxyPort),
                                                                0, getAprPool() );
 
             if ( status != APR_SUCCESS )
@@ -322,7 +324,7 @@ apr_status_t SerfSession::setupSerfConnection( apr_socket_t * inAprSocket,
                                                       0,
                                                       getSerfBktAlloc() );
         /** Set the callback that is called to authenticate the
-            certifcate (chain).
+            certificate (chain).
         */
         serf_ssl_server_cert_chain_callback_set(
             serf_bucket_ssl_decrypt_context_get(tmpInputBkt),
@@ -332,7 +334,7 @@ apr_status_t SerfSession::setupSerfConnection( apr_socket_t * inAprSocket,
         serf_ssl_set_hostname( serf_bucket_ssl_decrypt_context_get( tmpInputBkt ),
                                getHostinfo() );
 
-        *outSerfOutputBucket = serf_bucket_ssl_encrypt_create( *outSerfOutputBucket, 
+        *outSerfOutputBucket = serf_bucket_ssl_encrypt_create( *outSerfOutputBucket,
                                                                serf_bucket_ssl_decrypt_context_get( tmpInputBkt ),
                                                                getSerfBktAlloc() );
     }
@@ -513,7 +515,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
                : SERF_SSL_CERT_UNKNOWN_FAILURE;
     }
 
-    // The shortcut failed, so try to verify the whole chain.  This is
+    // The shortcut failed, so try to verify the whole chain. This is
     // done outside the isDomainMatch() block because the result is
     // used by the interaction handler.
     std::vector< uno::Reference< security::XCertificate > > aChain;
@@ -548,7 +550,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
             if ( aId.equals( OID_SUBJECT_ALTERNATIVE_NAME ) )
             {
                 uno::Reference< security::XSanExtension > sanExtension ( element, uno::UNO_QUERY );
-                altNames =  sanExtension->getAlternativeNames();
+                altNames = sanExtension->getAlternativeNames();
                 break;
             }
         }
@@ -557,7 +559,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
         certHostNames[0] = sServerCertificateSubject;
         for( int n = 0; n < altNames.getLength(); ++n )
         {
-            if (altNames[n].Type ==  security::ExtAltNameType_DNS_NAME)
+            if (altNames[n].Type == security::ExtAltNameType_DNS_NAME)
             {
                 altNames[n].Value >>= certHostNames[n+1];
             }
@@ -575,7 +577,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
         if (nVerificationResult == 0)
         {
             // Certificate (chain) is valid.
-            xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject,  sal_True);
+            xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject, sal_True);
             return APR_SUCCESS;
         }
         else if ((nVerificationResult & security::CertificateValidity::CHAIN_INCOMPLETE) != 0)
@@ -599,7 +601,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
     }
 
     // We have not been able to automatically verify (or falsify) the
-    // certificate chain.  To resolve this we have to ask the user.
+    // certificate chain. To resolve this we have to ask the user.
     const uno::Reference< ucb::XCommandEnvironment > xEnv( getRequestEnvironment().m_xEnv );
     if ( xEnv.is() )
     {
@@ -619,7 +621,7 @@ apr_status_t SerfSession::verifySerfCertificateChain (
                 uno::Reference< task::XInteractionApprove > xApprove( xSelection.get(), uno::UNO_QUERY );
                 if ( xApprove.is() )
                 {
-                    xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject,  sal_True );
+                    xCertificateContainer->addCertificate( getHostName(), sServerCertificateSubject, sal_True );
                     return APR_SUCCESS;
                 }
                 else
@@ -649,7 +651,7 @@ serf_bucket_t* SerfSession::acceptSerfResponse( serf_request_t * inSerfRequest,
     serf_bucket_alloc_t* SerfBktAlloc = serf_request_get_alloc( inSerfRequest );
 
     // create a barrier bucket so the response doesn't eat us!
-    serf_bucket_t *responseBkt = serf_bucket_barrier_create( inSerfStreamBucket, 
+    serf_bucket_t *responseBkt = serf_bucket_barrier_create( inSerfStreamBucket,
                                                              SerfBktAlloc );
 
     // create response bucket
@@ -746,7 +748,7 @@ void SerfSession::PROPPATCH( const rtl::OUString & inPath,
 
     apr_status_t status = APR_SUCCESS;
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
-    //check whether a lock on this resource is already owned
+    // check whether a lock on this resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -906,7 +908,7 @@ void SerfSession::PUT( const rtl::OUString & inPath,
         throw DAVException( DAVException::DAV_INVALID_ARG );
     apr_status_t status = APR_SUCCESS;
 
-    //check whether a lock on this resource is already owned
+    // check whether a lock on this resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -946,7 +948,7 @@ SerfSession::POST( const rtl::OUString & inPath,
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     uno::Reference< SerfInputStream > xInputStream( new SerfInputStream );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on this resource is already owned
+    // check whether a lock on this resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -989,7 +991,7 @@ void SerfSession::POST( const rtl::OUString & inPath,
 
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on this resource is already owned
+    // check whether a lock on this resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -1021,7 +1023,7 @@ void SerfSession::MKCOL( const rtl::OUString & inPath,
 
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on the destination resource is already owned
+    // check whether a lock on the destination resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -1050,7 +1052,7 @@ void SerfSession::COPY( const rtl::OUString & inSourceURL,
     SerfUri theSourceUri( inSourceURL );
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( theSourceUri.GetPath() ) );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on the destination resource is already owned
+    // check whether a lock on the destination resource is already owned
     rtl::OUString aUri( composeCurrentUri( inDestinationURL ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -1082,7 +1084,7 @@ void SerfSession::MOVE( const rtl::OUString & inSourceURL,
     SerfUri theSourceUri( inSourceURL );
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( theSourceUri.GetPath() ) );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on the destination resource is already owned
+    // check whether a lock on the destination resource is already owned
     rtl::OUString aUri( composeCurrentUri( inDestinationURL ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -1111,7 +1113,7 @@ void SerfSession::DESTROY( const rtl::OUString & inPath,
 
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     apr_status_t status = APR_SUCCESS;
-    //check whether a lock on this resource is already owned
+    // check whether a lock on this resource is already owned
     rtl::OUString aUri( composeCurrentUri( inPath ) );
     ucb::Lock inLock;
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
@@ -1165,14 +1167,14 @@ void SerfSession::LOCK( const ::rtl::OUString & inPath,
 {
     osl::Guard< osl::Mutex > theGuard( m_aMutex );
 
-    //before locking, search in the lock store if we already own a lock for this resource
-    //if present, return with exception DAV_LOCKED_SELF
+    // before locking, search in the lock store if we already own a lock for this resource
+    // if present, return with exception DAV_LOCKED_SELF
     rtl::OUString   aUri( composeCurrentUri( inPath ) );
     SerfLock * pLock = m_aSerfLockStore.findByUri( aUri );
     if ( pLock )
     {
-//already present, meaning already locked by the same AOO session and already in the lockstore
-//just return, nothing to do
+// already present, meaning already locked by the same AOO session and already in the lockstore
+// just return, nothing to do
         return;
     }
 
@@ -1181,20 +1183,20 @@ void SerfSession::LOCK( const ::rtl::OUString & inPath,
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     apr_status_t status = APR_SUCCESS;
 
-    //the returned property, a sequence of locks
-    //only the first is used
+    // the returned property, a sequence of locks
+    // only the first is used
     DAVPropertyValue outLock;
 
     TimeValue startCall;
     osl_getSystemTime( &startCall );
     aReqProc->processLock(inPath, rLock, outLock, status);
 
-    //HandleError will handle the error and throw an exception, if needed
+    // HandleError will handle the error and throw an exception, if needed
     HandleError( aReqProc );
 
     if(outLock.Name.compareToAscii(RTL_CONSTASCII_STRINGPARAM( "DAV:lockdiscovery" )) == 0 )
     {
-        //got a lock, use only the first returned
+        // got a lock, use only the first returned
         uno::Sequence< ucb::Lock >      aLocks;
         outLock.Value >>= aLocks;
         ucb::Lock aLock = aLocks[0];
@@ -1261,8 +1263,8 @@ bool SerfSession::LOCK( SerfLock * pLock,
     boost::shared_ptr<SerfRequestProcessor> aReqProc( createReqProc( inPath ) );
     apr_status_t status = APR_SUCCESS;
 
-    //the returned property, a sequence of locks
-    //only the first is used
+    // the returned property, a sequence of locks
+    // only the first is used
     DAVPropertyValue outLock;
 
     TimeValue startCall;
@@ -1285,7 +1287,7 @@ bool SerfSession::LOCK( SerfLock * pLock,
     outLock.Value >>= aLocks;
     ucb::Lock aLock = aLocks[0];
 
-    //if ok, udate the lastchance refresh time in lock
+    // if ok, update the lastchance refresh time in lock
     rlastChanceToSendRefreshRequest
         = lastChanceToSendRefreshRequest( startCall, static_cast< sal_Int32 >(aLock.Timeout) );
 
@@ -1314,7 +1316,7 @@ void SerfSession::UNLOCK( const ::rtl::OUString & inPath,
     apr_status_t status = APR_SUCCESS;
 
     ucb::Lock inLock = pLock->getLock();
-    //remove lock from lockstore
+    // remove lock from lockstore
     // so, if something goes wrong, we don't refresh it anymore
     m_aSerfLockStore.removeLock(pLock);
     delete pLock;
@@ -1322,7 +1324,7 @@ void SerfSession::UNLOCK( const ::rtl::OUString & inPath,
     // remove existing lock
     aReqProc->processUnlock( inPath, inLock, status);
 
-    //HandleError will handle the error and throw an exception, if needed
+    // HandleError will handle the error and throw an exception, if needed
     HandleError( aReqProc );
 }
 
@@ -1342,7 +1344,7 @@ bool SerfSession::UNLOCK( SerfLock * pLock )
 
     aReqProc->processUnlock( inPath, pLock->getLock(), status);
 
-    //HandleError will handle the error and throw an exception, if needed
+    // HandleError will handle the error and throw an exception, if needed
     HandleError( aReqProc );
 
     return true;
@@ -1694,12 +1696,12 @@ SerfSession::isDomainMatch( rtl::OUString certHostName )
         return sal_True;
 
     if ( 0 == certHostName.indexOf( rtl::OUString::createFromAscii( "*" ) ) &&
-         hostName.getLength() >= certHostName.getLength()  )
+         hostName.getLength() >= certHostName.getLength() )
     {
         rtl::OUString cmpStr = certHostName.copy( 1 );
 
         if ( hostName.matchIgnoreAsciiCase(
-                cmpStr, hostName.getLength() -  cmpStr.getLength() ) )
+                cmpStr, hostName.getLength() - cmpStr.getLength() ) )
             return sal_True;
     }
     return sal_False;
