@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef __FRAMEWORK_LOADENV_LOADENV_HXX_
@@ -64,7 +65,7 @@ class QuietInteraction;
 //_______________________________________________
 // definitions
 
-/** @short  implements general mechainsm for loading documents.
+/** @short  implements general mechanism for loading documents.
 
     @descr  An instance of this class can be used inside the API calls
             XComponentLoader::loadComponentFromURL() and XDispatch::dispatch()
@@ -84,7 +85,7 @@ class LoadEnv : private ThreadHelpBase
 
             @desrc  Such features must outcome without
                     any special parameters.
-                    To make enableing/disabling of
+                    To make enabling/disabling of
                     features very easy (e.g. at the ctor of
                     this class) these values must be combinable
                     as flags. That means: its values must be in
@@ -211,7 +212,7 @@ class LoadEnv : private ThreadHelpBase
         /** @short  holds the information about the finished load process.
 
             @descr  The content of m_xTargetFrame can't be used as valid indicator,
-                    (in case the micht existing old document was reactivated)
+                    (in case the might existing old document was reactivated)
                     we must hold the result of the load process explicitly.
          */
         sal_Bool m_bLoaded;
@@ -276,7 +277,7 @@ class LoadEnv : private ThreadHelpBase
                     by calling startLoading(). Of course a still running load request
                     will be detected here and a suitable exception will be thrown.
                     Such constellation can be detected outside by using provided
-                    synchronisation methods or callbacks.
+                    synchronization methods or callbacks.
 
             @param  sURL
                     points to the resource, which should be loaded.
@@ -307,12 +308,12 @@ class LoadEnv : private ThreadHelpBase
                     might expensive check.
                     That can be useful in case this information is needed outside too,
                     to decide if its necessary to create some resources for this load
-                    request ... or to reject the request imidiatly if it seems to be not
+                    request ... or to reject the request immediately if it seems to be not
                     loadable in general.
 
             @throw  A LoadEnvException e.g. if another load operation is till in progress
                     or initialization of a new one fail by other reasons.
-                    The real reason, a suitable message and ID will be given here immidiatly.
+                    The real reason, a suitable message and ID will be given here immediately.
 
             @throw  A RuntimeException in case any internal process indicates, that
                     the whole runtime can't be used any longer.
@@ -353,7 +354,7 @@ class LoadEnv : private ThreadHelpBase
 
         //_______________________________________
 
-        /** @short  wait for an alreay running load request (started by calling
+        /** @short  wait for an already running load request (started by calling
                     startLoading() before).
 
             @descr  The timeout parameter can be used to wait some times only
@@ -473,7 +474,7 @@ class LoadEnv : private ThreadHelpBase
                     close the frame if it was created before in case loading failed.
 
             @throw  A LoadEnvException only in cases, where an internal error indicates,
-                    that the complete load environment seems to be not useable in general.
+                    that the complete load environment seems to be not usable in general.
                     In such cases a RuntimeException would be to hard for the outside code :-)
 
             @throw  A RuntimeException in case any internal process indicates, that
@@ -498,7 +499,7 @@ class LoadEnv : private ThreadHelpBase
             @attention  Not all types we know, are supported by filters. So it does not
                         indicates an error, if no suitable filter(loader etcpp will be found
                         for a type. But a type must be detected for the specified content.
-                        Otherwise its an error and loading can't be finished successfully.
+                        Otherwise it's an error and loading can't be finished successfully.
 
             @throw  A LoadEnvException if detection failed.
 
@@ -551,7 +552,7 @@ class LoadEnv : private ThreadHelpBase
         /** @short  tries to use FrameLoader objects for loading.
 
             @descr  First the target frame will be located. If it could be found
-                    or new created a filter/frame loader will be instanciated and
+                    or new created a filter/frame loader will be instantiated and
                     used to load the content into this frame.
                     In case loading failed all new created resources will be
                     removed before a suitable exception is thrown.
@@ -574,7 +575,7 @@ class LoadEnv : private ThreadHelpBase
             @descr  It depends from the set target information, if such
                     search is allowed or not! So this method checks first,
                     if the target is the special one "_default".
-                    If not it returns with an empty result immidatly!
+                    If not it returns with an empty result immediately!
                     In case search is allowed, an existing document with the
                     same URL is searched. If it could be found, the corresponding
                     view will get the focus and this method return the corresponding frame.
@@ -583,10 +584,10 @@ class LoadEnv : private ThreadHelpBase
                     inside the document, which is related to the jumpmark.
 
             @return A valid reference to the target frame, which contains the already loaded content
-                    and could be activated successfully. An empty reference oterwhise.
+                    and could be activated successfully. An empty reference otherwise.
 
             @throw  A LoadEnvException only in cases, where an internal error indicates,
-                    that the complete load environment seems to be not useable in general.
+                    that the complete load environment seems to be not usable in general.
                     In such cases a RuntimeException would be to hard for the outside code :-)
 
             @throw  A RuntimeException in case any internal process indicates, that
@@ -597,7 +598,7 @@ class LoadEnv : private ThreadHelpBase
 
         //_______________________________________
 
-        /** @short  search for any target frame, which seems to be useable
+        /** @short  search for any target frame, which seems to be usable
                     for this load request.
 
             @descr  Because this special feature is bound to the target specifier "_default"
@@ -614,12 +615,12 @@ class LoadEnv : private ThreadHelpBase
                     </ul>
 
                     If a suitable target is located it will be locked. That's why the last rule
-                    exists! If this method returns a valid frame reference, it was locked to be useable
-                    for this load request only. (Dont forget to reset this state later!)
+                    exists! If this method returns a valid frame reference, it was locked to be usable
+                    for this load request only. (Don't forget to reset this state later!)
                     Concurrent LoadEnv instances can synchronize her work be using such locks :-) HOPEFULLY
 
             @throw  A LoadEnvException only in cases, where an internal error indicates,
-                    that the complete load environment seems to be not useable in general.
+                    that the complete load environment seems to be not usable in general.
                     In such cases a RuntimeException would be to hard for the outside code :-)
 
             @throw  A RuntimeException in case any internal process indicates, that
@@ -640,7 +641,7 @@ class LoadEnv : private ThreadHelpBase
                     b) If the document was already shown (e.g. by our progress implementation)
                        we do nothing here. The reason  behind: The document was already shown ..
                        and it was already make a top window ...
-                       If the user activated another frame inbetween (because loading needed some time)
+                       If the user activated another frame in between (because loading needed some time)
                        it's not allowed to disturb the user again. Then the frame must resists in the background.
                     c) If the frame was not shown before ... but loading of a visible document into this frame
                        was finished ... we need both actions: setVisible() and toFront().
@@ -660,7 +661,7 @@ class LoadEnv : private ThreadHelpBase
 
         //_______________________________________
 
-        /** @short  checks weather a frame is already used for another load request or not.
+        /** @short  checks whether a frame is already used for another load request or not.
 
             @descr  Such frames can't be used for our "recycle feature"!
 
@@ -676,7 +677,7 @@ class LoadEnv : private ThreadHelpBase
         //_______________________________________
 
         /** @short  try to determine the used application module
-                    of this load request and applay right position and size
+                    of this load request and apply right position and size
                     for this document window ... hopefully before we show it .-)
          */
         void impl_applyPersistentWindowState(const css::uno::Reference< css::awt::XWindow >& xWindow);
