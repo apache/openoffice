@@ -561,4 +561,11 @@ public class UIMap {
 	public static final VclEditBox scPrintArea = editbox("sc:Edit:RID_SCDLG_AREAS:ED_PRINTAREA");
 
 	public static final VclEditBox scFormatCode = editbox("cui:Edit:RID_SVXPAGE_NUMBERFORMAT:ED_FORMAT");
+
+	// hyperlink dialog
+	public static final VclComboBox hyperlinkInetPathComboBox = combobox("CUI_HID_HYPERDLG_INET_PATH"); // target
+	public static final VclEditBox hyperlinkInetName = editbox("cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_TEXT"); // text
+	public static final VclEditBox hyperlinkInetText = editbox("cui:Edit:RID_SVXPAGE_HYPERLINK_INTERNET:ED_INDICATION"); // name
+	public static final VclControl hyperlinkDialogOkBtn = control("CUI_HID_ICCDIALOG_OK_BTN"); // apply
+	public static final VclControl hyperlinkDialogCancelBtn = control("CUI_HID_ICCDIALOG_CANCEL_BTN"); // close
 }

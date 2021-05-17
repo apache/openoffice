@@ -681,4 +681,40 @@ public class BasicFunctionTest {
 		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
 		discard();
 	}
+
+	/**
+	 * Test open a non-http(s) type hyperlink (with host only) in a text document.
+	 * (coverage included in fvt.gui.sw.hyperlink.WarningDialog
+	 * testHyperlinkDisplaysWarning() and included here for build verification)
+	 * 1. New a text document
+	 * 2. Insert a dav type hyperlink
+	 * 3. Open hyperlink
+	 * 4. Verify security warning dialog is displayed
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testNonHttpHyperlinkWithHostOnly() throws Exception {
+		// Create a new text document
+		newTextDocument();
+		writer.waitForExistence(10, 2);
+		// open the hyperlink dialog
+		writer.typeKeys("<alt i>"); // insert menu
+		writer.typeKeys("h"); // hyperlink
+		hyperlinkInetPathComboBox.setText("dav://nonexistant.url.com"); //target
+		hyperlinkInetText.setText("dav://nonexistant.url.com"); // displayed text
+		hyperlinkDialogOkBtn.click(); // apply
+		hyperlinkDialogCancelBtn.click(); // close
+		sleep(1); // give the dialog time to close
+		typeKeys("<shift F10>"); // context menu
+		typeKeys("o"); // open hyperlink
+		// we can't be sure of the language so just check for the dialog
+		boolean msgExists = activeMsgBox.exists(1); // wait 1 second for the dialog
+		if (msgExists) {
+			activeMsgBox.no(); // close dialog
+		}
+		assertTrue("security warning not displayed", msgExists);
+		discard();
+	}
+
 }
