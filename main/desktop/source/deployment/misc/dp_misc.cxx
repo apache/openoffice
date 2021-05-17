@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,7 +47,7 @@
 #include "boost/scoped_array.hpp"
 #include "boost/shared_ptr.hpp"
 #include <comphelper/processfactory.hxx>
- 
+
 #ifdef WNT
 //#include "tools/prewin.h"
 #define UNICODE
@@ -96,29 +96,29 @@ const OUString OfficePipeId::operator () ()
     OUString userPath;
 	::utl::Bootstrap::PathStatus aLocateResult =
 	::utl::Bootstrap::locateUserInstallation( userPath );
-	if (!(aLocateResult == ::utl::Bootstrap::PATH_EXISTS || 
+	if (!(aLocateResult == ::utl::Bootstrap::PATH_EXISTS ||
 		aLocateResult == ::utl::Bootstrap::PATH_VALID))
 	{
 		throw Exception(OUSTR("Extension Manager: Could not obtain path for UserInstallation."), 0);
 	}
-    
+
     rtlDigest digest = rtl_digest_create( rtl_Digest_AlgorithmMD5 );
     if (digest == NULL) {
         throw RuntimeException(
             OUSTR("cannot get digest rtl_Digest_AlgorithmMD5!"), 0 );
     }
-    
+
     sal_uInt8 const * data =
         reinterpret_cast<sal_uInt8 const *>(userPath.getStr());
     sal_Size size = (userPath.getLength() * sizeof (sal_Unicode));
     sal_uInt32 md5_key_len = rtl_digest_queryLength( digest );
     ::boost::scoped_array<sal_uInt8> md5_buf( new sal_uInt8 [ md5_key_len ] );
-    
+
     rtl_digest_init( digest, data, static_cast<sal_uInt32>(size) );
     rtl_digest_update( digest, data, static_cast<sal_uInt32>(size) );
     rtl_digest_get( digest, md5_buf.get(), md5_key_len );
     rtl_digest_destroy( digest );
-    
+
     // create hex-value string from the MD5 value to keep
     // the string size minimal
     ::rtl::OUStringBuffer buf;
@@ -161,20 +161,20 @@ bool compareExtensionFolderWithLastSynchronizedFile(
         return true; //sync just in case
     }
 
-    //If last synchronized does not exist, then OOo is started for the first time
+    //If last synchronized does not exist, then AOO is started for the first time
     ::osl::DirectoryItem itemFile;
     ::osl::File::RC err2 = ::osl::DirectoryItem::get(fileURL, itemFile);
     if (err2 == ::osl::File::E_NOENT)
     {
         return true;
-        
+
     }
     else if (err2 != ::osl::File::E_None)
     {
         OSL_ENSURE(0, "Cannot access file lastsynchronized");
         return true; //sync just in case
     }
-    
+
     //compare the modification time of the extension folder and the last
     //modified file
     ::osl::FileStatus statFolder(FileStatusMask_ModifyTime);
@@ -192,7 +192,7 @@ bool compareExtensionFolderWithLastSynchronizedFile(
         else
         {
             OSL_ASSERT(0);
-            bNeedsSync = true; 
+            bNeedsSync = true;
         }
     }
     else
@@ -200,7 +200,7 @@ bool compareExtensionFolderWithLastSynchronizedFile(
         OSL_ASSERT(0);
         bNeedsSync = true;
     }
-    return bNeedsSync;    
+    return bNeedsSync;
 }
 
 bool needToSyncRepostitory(OUString const & name)
@@ -228,7 +228,7 @@ bool needToSyncRepostitory(OUString const & name)
     {
         OSL_ASSERT(0);
         return true;
-    }    
+    }
     ::rtl::Bootstrap::expandMacros(folder);
     ::rtl::Bootstrap::expandMacros(file);
     return compareExtensionFolderWithLastSynchronizedFile(
@@ -282,7 +282,7 @@ OUString makeURL( OUString const & baseURL, OUString const & relPath_ )
             // encode for macro expansion: relPath is supposed to have no
             // macros, so encode $, {} \ (bootstrap mimic)
             relPath = encodeForRcFile(relPath);
-            
+
             // encode once more for vnd.sun.star.expand schema:
             // vnd.sun.star.expand:$UNO_...
             // will expand to file-url
@@ -299,7 +299,7 @@ OUString makeURLAppendSysPathSegment( OUString const & baseURL, OUString const &
 {
     OUString segment = relPath_;
     OSL_ASSERT(segment.indexOf(static_cast<sal_Unicode>('/')) == -1);
-    
+
     ::rtl::Uri::encode(
         segment, rtl_UriCharClassPchar, rtl_UriEncodeIgnoreEscapes,
         RTL_TEXTENCODING_UTF8);
@@ -362,10 +362,10 @@ bool office_is_running()
     {
         sFile = sFile.copy(sFile.lastIndexOf('/') + 1);
         if (
-#if defined UNIX            
+#if defined UNIX
             sFile.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(SOFFICE2)))
 #elif defined WNT || defined OS2
-            //osl_getExecutableFile should deliver "soffice.bin" on windows
+            //osl_getExecutableFile should deliver "soffice.bin" on Windows
             //even if swriter.exe, scalc.exe etc. was started. This is a bug
             //in osl_getExecutableFile
             sFile.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(SOFFICE1)))
@@ -377,8 +377,8 @@ bool office_is_running()
             || sFile.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(SWRITER)))
 #else
 #error "Unsupported platform"
-#endif            
-            
+#endif
+
             )
             ret = true;
         else
@@ -388,7 +388,7 @@ bool office_is_running()
     {
         OSL_ENSURE(0, "NOT osl_Process_E_None ");
         //if osl_getExecutable file than we take the risk of creating a pipe
-        ret =  existsOfficePipe();  
+        ret = existsOfficePipe();
     }
     return ret;
 }
@@ -409,14 +409,14 @@ oslProcess raiseProcess(
         0, // => current working dir
         0, 0, // => no env vars
         &hProcess );
-    
+
     switch (rc) {
     case osl_Process_E_None:
         break;
     case osl_Process_E_NotFound:
         throw RuntimeException( OUSTR("image not found!"), 0 );
     case osl_Process_E_TimedOut:
-        throw RuntimeException( OUSTR("timout occurred!"), 0 );
+        throw RuntimeException( OUSTR("timeout occurred!"), 0 );
     case osl_Process_E_NoPermission:
         throw RuntimeException( OUSTR("permission denied!"), 0 );
     case osl_Process_E_Unknown:
@@ -425,7 +425,7 @@ oslProcess raiseProcess(
     default:
         throw RuntimeException( OUSTR("unmapped error!"), 0 );
     }
-    
+
     return hProcess;
 }
 
@@ -456,7 +456,7 @@ Reference<XInterface> resolveUnoURL(
 {
     Reference<bridge::XUnoUrlResolver> xUnoUrlResolver(
         bridge::UnoUrlResolver::create( xLocalContext ) );
-    
+
     for (;;)
     {
         if (abortChannel != 0 && abortChannel->isAborted()) {
@@ -477,7 +477,7 @@ Reference<XInterface> resolveUnoURL(
 void writeConsoleWithStream(::rtl::OUString const & sText, HANDLE stream)
 {
     DWORD nWrittenChars = 0;
-    WriteFile(stream, sText.getStr(), 
+    WriteFile(stream, sText.getStr(),
         sText.getLength() * 2, &nWrittenChars, NULL);
 }
 #else
@@ -591,13 +591,13 @@ void syncRepositories(Reference<ucb::XCommandEnvironment> const & xCmdEnv)
         return;
 
     Reference<deployment::XExtensionManager> xExtensionManager;
-    //synchronize shared before bundled otherewise there are
+    //synchronize shared before bundled otherwise there are
     //more revoke and registration calls.
     sal_Bool bModified = false;
     if (needToSyncRepostitory(OUString(RTL_CONSTASCII_USTRINGPARAM("shared")))
         || needToSyncRepostitory(OUString(RTL_CONSTASCII_USTRINGPARAM("bundled"))))
     {
-        xExtensionManager =          
+        xExtensionManager =
             deployment::ExtensionManager::get(
                 comphelper_getProcessComponentContext());
 
