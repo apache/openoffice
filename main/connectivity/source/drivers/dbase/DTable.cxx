@@ -897,11 +897,10 @@ sal_Bool ODbaseTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols, s
         {
             sal_Int32 nDate = 0,nTime = 0;
             OSL_ENSURE(nLen == 8, "Invalid length for date field");
-            if (nLen != 8) {
-                return false;
+            if (nLen >= 8) {
+                memcpy(&nDate, pData, 4);
+                memcpy(&nTime, pData+ 4, 4);
             }
-			memcpy(&nDate, pData, 4);
-            memcpy(&nTime, pData+ 4, 4);
             if ( !nDate && !nTime )
             {
                 (_rRow->get())[i]->setNull();
@@ -916,54 +915,56 @@ sal_Bool ODbaseTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols, s
         else if ( DataType::INTEGER == nType )
         {
             OSL_ENSURE(nLen == 4, "Invalid length for integer field");
-            if (nLen != 4) {
-                return false;
+            if (nLen >= 4) {
+                sal_Int32 nValue = 0;
+                memcpy(&nValue, pData, 4);
+                *(_rRow->get())[i] = nValue;
+            } else {
+                (_rRow->get())[i]->setNull();
             }
-            sal_Int32 nValue = 0;
-			memcpy(&nValue, pData, nLen);
-            *(_rRow->get())[i] = nValue;
         }
         else if ( DataType::DOUBLE == nType )
         {
             double d = 0.0;
             OSL_ENSURE(nLen == 8, "Invalid length for double field");
-            if (nLen != 8) {
-                return false;
-            }
-            if (getBOOL((*aIter)->getPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISCURRENCY)))) // Currency wird gesondert behandelt
-            {
-                sal_Int64 nValue = 0;
-			    memcpy(&nValue, pData, nLen);
+            if (nLen >= 8) {
+                if (getBOOL((*aIter)->getPropertyValue(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_ISCURRENCY)))) // Currency needs special treatment
+                    {
+                        sal_Int64 nValue = 0;
+                        memcpy(&nValue, pData, nLen);
             
-                if ( m_aScales[i-1] )
-                    d = (double)(nValue / pow(10.0,(int)m_aScales[i-1]));
+                        if ( m_aScales[i-1] )
+                            d = (double)(nValue / pow(10.0,(int)m_aScales[i-1]));
+                        else
+                            d = (double)(nValue);
+                    }
                 else
-                    d = (double)(nValue);
-            }
-            else
-            {
-                memcpy(&d, pData, nLen);
-            }
+                    {
+                        memcpy(&d, pData, nLen);
+                    }
             
-            *(_rRow->get())[i] = d;
+                *(_rRow->get())[i] = d;
+            } else {
+                (_rRow->get())[i]->setNull();
+            }
         }
 		else
 		{
-			// Falls Nul-Zeichen im String enthalten sind, in Blanks umwandeln!
+			// Change any nulls into spaces
 			for (sal_Int32 k = 0; k < nLen; k++)
 			{
 				if (pData[k] == '\0')
 					pData[k] = ' ';
 			}
 
-			String aStr(pData, (xub_StrLen)nLen,m_eEncoding);		// Spaces am Anfang und am Ende entfernen:
+			String aStr(pData, (xub_StrLen)nLen,m_eEncoding);		// Strip spaces from beginning and end
 			aStr.EraseLeadingChars();
 			aStr.EraseTrailingChars();
 
 			if (!aStr.Len())
 			{
 				nByteOffset += nLen;
-				(_rRow->get())[i]->setNull();	// keine Werte -> fertig
+				(_rRow->get())[i]->setNull();	// no value -> we are done
 				continue;
 			}
 
@@ -972,11 +973,7 @@ sal_Bool ODbaseTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols, s
 				case DataType::DATE:
 				{
                     OSL_ENSURE(nLen == 8, "Invalid length for date field");
-                    if (nLen != 8) {
-                        return false;
-                    }
-					if (aStr.Len() != nLen)
-					{
+					if ((nLen < 8) || (aStr.Len() != nLen)) {
 						(_rRow->get())[i]->setNull();
 						break;
 					}
@@ -995,8 +992,9 @@ sal_Bool ODbaseTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols, s
 				case DataType::BIT:
 				{
                     OSL_ENSURE(nLen == 1, "Invalid length for bit field");
-                    if (nLen != 1) {
-                        return false;
+                    if (nLen < 1) {
+						(_rRow->get())[i]->setNull();
+						break;
                     }
 					sal_Bool b;
 					switch (* ((const char *)pData))
@@ -1024,7 +1022,7 @@ sal_Bool ODbaseTable::fetchRow(OValueRefRow& _rRow,const OSQLColumns & _rCols, s
 						(_rRow->get())[i]->setNull();
 				}	break;
 				default:
-					OSL_ASSERT("Falscher Type");
+					OSL_ASSERT("Wrong type");
 			}
 			(_rRow->get())[i]->setTypeKind(nType);
 		}
