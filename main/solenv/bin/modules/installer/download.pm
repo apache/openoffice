@@ -1404,11 +1404,10 @@ sub replace_identifier_in_nshfile
 {
 	my ( $nshfile, $identifier, $newstring, $nshfilename, $onelanguage ) = @_;
 
-	for ( my $i = 0; $i <= $#{$nshfile}; $i++ )
-
 	$newstring =~ s/\\r/\$\\r/g; # \r -> $\r in modern nsis versions
 	$newstring =~ s/\\n/\$\\n/g; # \n -> $\n in modern nsis versions
 
+	for ( my $i = 0; $i <= $#{$nshfile}; $i++ )
 	{
 		if ( ${$nshfile}[$i] =~ /\s+\Q$identifier\E\s+\"(.+)\"\s*$/ )
 		{
