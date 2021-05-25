@@ -29,7 +29,7 @@
 ***********************************************************************//-->
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -37,16 +37,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -76,6 +76,7 @@
 <xsl:variable name="brand2" select="'$[officeversion]'"/>
 <xsl:variable name="brand3" select="'%PRODUCTNAME'"/>
 <xsl:variable name="brand4" select="'%PRODUCTVERSION'"/>
+<xsl:variable name="brand5" select="'%WRITERCOMPATIBILITYVERSIONOOO11'"/>
 
 <!-- meta data variables from the help file -->
 <xsl:variable name="filename" select="/helpdocument/meta/topic/filename"/>
@@ -99,7 +100,7 @@
 	</xsl:choose>
 </xsl:variable>
 
-  <!-- the other parameters given by the help caller -->
+<!-- the other parameters given by the help caller -->
 <xsl:param name="System" select="'WIN'"/>
 <xsl:param name="productname" select="'Office'"/>
 <xsl:param name="productversion" select="''"/>
@@ -127,11 +128,11 @@
 <xsl:param name="ExtensionPath" select="''"/>
 
 
-  <!-- parts of help and image urls -->
+<!-- parts of help and image urls -->
 <xsl:variable name="help_url_prefix" select="'vnd.sun.star.help://'"/>
 <xsl:variable name="img_url_prefix" select="concat('vnd.sun.star.zip://',$imgrepos,'/')"/>
 <xsl:variable name="urlpost" select="concat('?Language=',$lang,$am,'System=',$System,$am,'UseDB=no')"/>
-<xsl:variable name="urlpre" select="$help_url_prefix" /> 
+<xsl:variable name="urlpre" select="$help_url_prefix" />
 <xsl:variable name="linkprefix" select="$urlpre"/>
 <xsl:variable name="linkpostfix" select="$urlpost"/>
 
@@ -155,7 +156,7 @@
 		<head>
 			<title><xsl:value-of select="$title"/></title>
 			<link href="{$csslink}" rel="Stylesheet" type="text/css" /> <!-- stylesheet link -->
-  		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 		</head>
 		<body lang="{$lang}">
 			<xsl:apply-templates select="/helpdocument/body"/>
@@ -274,7 +275,7 @@
 			</xsl:call-template>
 		</xsl:when>
 		<xsl:otherwise>
-			<xsl:call-template name="createlink" /> 
+			<xsl:call-template name="createlink" />
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
@@ -333,38 +334,38 @@
 <!-- PARAGRAPH -->
 <xsl:template match="paragraph">
 	<xsl:choose>
-		
+
 		<xsl:when test="@role='heading'">
 			<xsl:call-template name="insertheading">
 				<xsl:with-param name="level" select="@level"/>
 			</xsl:call-template>
 		</xsl:when>
-		
+
 		<xsl:when test="contains(' note warning tip ',@role)">
 			<xsl:call-template name="insertnote">
 				<xsl:with-param name="type" select="@role" />
 			</xsl:call-template>
 		</xsl:when>
-		
+
 		<xsl:when test="contains(descendant::embedvar/@href,'/00/00000004.xhp#wie')"> <!-- special treatment of howtoget links -->
 			<xsl:apply-templates />
-		</xsl:when>		
-		
+		</xsl:when>
+
 		<xsl:otherwise>
 			<xsl:call-template name="insertpara" />
 		</xsl:otherwise>
-	
+
 	</xsl:choose>
 </xsl:template>
 
 <xsl:template match="paragraph" mode="embedded">
 		<xsl:choose>
-		
+
 		<xsl:when test="@role='heading'">	<!-- increase the level of headings that are embedded -->
-		<!-- 
-		   The internal sablotron processor does not seem to support the number function.
-			 Therefore, we need a workaround for
-			 <xsl:variable name="level"><xsl:value-of select="number(@level)+1"/></xsl:variable>
+		<!--
+			The internal sablotron processor does not seem to support the number function.
+			Therefore, we need a workaround for
+			<xsl:variable name="level"><xsl:value-of select="number(@level)+1"/></xsl:variable>
 		-->
 			<xsl:variable name="newlevel">
 				<xsl:choose>
@@ -375,27 +376,27 @@
 					<xsl:when test="@level='5'"><xsl:value-of select="'5'"/></xsl:when>
 				</xsl:choose>
 			</xsl:variable>
-			
+
 			<xsl:call-template name="insertheading">
 				<xsl:with-param name="level" select="$newlevel"/>
 				<xsl:with-param name="embedded" select="'yes'"/>
 			</xsl:call-template>
 		</xsl:when>
-		
+
 		<xsl:when test="contains(' note warning tip ',@role)">
 			<xsl:call-template name="insertnote">
 				<xsl:with-param name="type" select="@role" />
 			</xsl:call-template>
 		</xsl:when>
-		
+
 		<xsl:when test="contains(descendant::embedvar/@href,'/00/00000004.xhp#wie')"> <!-- special treatment of howtoget links -->
 			<xsl:apply-templates />
-		</xsl:when>		
-		
+		</xsl:when>
+
 		<xsl:otherwise>
 			<xsl:call-template name="insertpara" />
 		</xsl:otherwise>
-		
+
 	</xsl:choose>
 </xsl:template>
 
@@ -405,7 +406,7 @@
 	<a name="{@id}"></a>
 
 		<xsl:choose>
-			
+
 			<xsl:when test="@id='relatedtopics'">
 				<div class="relatedtopics">
 					<xsl:variable name="href"><xsl:value-of select="concat($urlpre,'shared/text/shared/00/00000004.xhp',$urlpost)"/></xsl:variable>
@@ -419,15 +420,15 @@
 					</div>
 				</div>
 			</xsl:when>
-			
+
 			<xsl:when test="@id='howtoget'">
 				<xsl:call-template name="insert_howtoget" />
 			</xsl:when>
-			
+
 			<xsl:otherwise>
 						<xsl:apply-templates/>
 			</xsl:otherwise>
-		
+
 		</xsl:choose>
 
 </xsl:template>
@@ -494,7 +495,7 @@
 <!-- In case of missing help files -->
 <xsl:template match="help-id-missing"><xsl:value-of select="$Id"/></xsl:template>
 
-<!-- 
+<!--
 ###################
 # NAMED TEMPLATES #
 ###################
@@ -503,58 +504,69 @@
 <!-- Branding -->
 <xsl:template name="brand" >
 	<xsl:param name="string"/>
-	
-    <xsl:choose>
-		
-        <xsl:when test="contains($string,$brand1)">
-           <xsl:variable name="newstr">
-                <xsl:value-of select="substring-before($string,$brand1)"/>
-                <xsl:value-of select="$productname"/>
-                <xsl:value-of select="substring-after($string,$brand1)"/>
-           </xsl:variable>
+
+	<xsl:choose>
+
+		<xsl:when test="contains($string,$brand1)">
+			<xsl:variable name="newstr">
+				<xsl:value-of select="substring-before($string,$brand1)"/>
+				<xsl:value-of select="$productname"/>
+				<xsl:value-of select="substring-after($string,$brand1)"/>
+			</xsl:variable>
 			<xsl:call-template name="brand">
 				<xsl:with-param name="string" select="$newstr"/>
 			</xsl:call-template>
 		</xsl:when>
-        
+
 		<xsl:when test="contains($string,$brand2)">
-		    <xsl:variable name="newstr">
-                <xsl:value-of select="substring-before($string,$brand2)"/>
-                <xsl:value-of select="$pversion"/>
-                <xsl:value-of select="substring-after($string,$brand2)"/>
-           </xsl:variable>
+			<xsl:variable name="newstr">
+				<xsl:value-of select="substring-before($string,$brand2)"/>
+				<xsl:value-of select="$pversion"/>
+				<xsl:value-of select="substring-after($string,$brand2)"/>
+			</xsl:variable>
 			<xsl:call-template name="brand">
 				<xsl:with-param name="string" select="$newstr"/>
 			</xsl:call-template>
 		</xsl:when>
-        
+
 		<xsl:when test="contains($string,$brand3)">
 			<xsl:variable name="newstr">
-                <xsl:value-of select="substring-before($string,$brand3)"/>
-                <xsl:value-of select="$productname"/>
-                <xsl:value-of select="substring-after($string,$brand3)"/>
-           </xsl:variable>
+				<xsl:value-of select="substring-before($string,$brand3)"/>
+				<xsl:value-of select="$productname"/>
+				<xsl:value-of select="substring-after($string,$brand3)"/>
+			</xsl:variable>
 			<xsl:call-template name="brand">
 				<xsl:with-param name="string" select="$newstr"/>
 			</xsl:call-template>
 		</xsl:when>
-		
-        <xsl:when test="contains($string,$brand4)">
-			    <xsl:variable name="newstr">
-                <xsl:value-of select="substring-before($string,$brand4)"/>
-                <xsl:value-of select="$pversion"/>
-                <xsl:value-of select="substring-after($string,$brand4)"/>
-           </xsl:variable>
+
+		<xsl:when test="contains($string,$brand4)">
+				<xsl:variable name="newstr">
+				<xsl:value-of select="substring-before($string,$brand4)"/>
+				<xsl:value-of select="$pversion"/>
+				<xsl:value-of select="substring-after($string,$brand4)"/>
+			</xsl:variable>
 			<xsl:call-template name="brand">
 				<xsl:with-param name="string" select="$newstr"/>
 			</xsl:call-template>
 		</xsl:when>
-		
-        <xsl:otherwise>
+
+		<xsl:when test="contains($string,$brand5)">
+				<xsl:variable name="newstr">
+				<xsl:value-of select="substring-before($string,$brand5)"/>
+				<xsl:value-of select="'OpenOffice.org 1.1'"/>
+				<xsl:value-of select="substring-after($string,$brand5)"/>
+				</xsl:variable>
+			<xsl:call-template name="brand">
+				<xsl:with-param name="string" select="$newstr"/>
+			</xsl:call-template>
+		</xsl:when>
+
+		<xsl:otherwise>
 			<xsl:value-of select="$string"/>
 		</xsl:otherwise>
-	</xsl:choose> 
-    
+	</xsl:choose>
+
 </xsl:template>
 
 
@@ -577,7 +589,7 @@
 <xsl:template name="insert_howtoget">
 	<xsl:param name="linkhref" />
 	<xsl:variable name="archive" select="'shared'"/>
-	<xsl:variable name="tmp_href"><xsl:value-of select="concat($urlpre,'shared/text/shared/00/00000004.xhp',$urlpost)"/></xsl:variable>	
+	<xsl:variable name="tmp_href"><xsl:value-of select="concat($urlpre,'shared/text/shared/00/00000004.xhp',$urlpost)"/></xsl:variable>
 	<xsl:variable name="tmp_doc" select="document($tmp_href)"/>
 	<table class="howtoget" width="100%" border="1" cellpadding="3" cellspacing="0">
 		<tr>
@@ -593,14 +605,14 @@
 						<xsl:variable name="href"><xsl:value-of select="concat($urlpre,$archive1,substring-before($linkhref,'#'),$urlpost)"/></xsl:variable>
 						<xsl:variable name="anc"><xsl:value-of select="substring-after($linkhref,'#')"/></xsl:variable>
 						<xsl:variable name="docum" select="document($href)"/>
-						
+
 						<xsl:call-template name="insertembed">
 							<xsl:with-param name="doc" select="$docum" />
 							<xsl:with-param name="anchor" select="$anc" />
 						</xsl:call-template>
 
 					</xsl:otherwise>
-				</xsl:choose>				
+				</xsl:choose>
 				</div>
 			</td>
 		</tr>
@@ -613,7 +625,7 @@
 <xsl:variable name="archive"><xsl:value-of select="concat(substring-before(substring-after(@href,'text/'),'/'),'/')"/></xsl:variable>
 <xsl:variable name="dbpostfix"><xsl:call-template name="createDBpostfix"><xsl:with-param name="archive" select="$archive"/></xsl:call-template></xsl:variable>
 	<xsl:choose>
-		<xsl:when test="starts-with(@href,'http://') or starts-with(@href,'https://')">  <!-- web links -->
+		<xsl:when test="starts-with(@href,'http://') or starts-with(@href,'https://')"> <!-- web links -->
 			<a href="{@href}"><xsl:apply-templates /></a>
 		</xsl:when>
 		<xsl:when test="contains(@href,'#')">
@@ -718,7 +730,7 @@
 <!-- Evaluate a default or defaultinline switch -->
 <xsl:template name="insertdefault">
 	<xsl:param name="embedded" />
-	
+
 	<xsl:choose>
 		<xsl:when test="parent::switch[@select='sys'] or parent::switchinline[@select='sys']">
 			<xsl:if test="not(../child::case[@select=$System]) and not(../child::caseinline[@select=$System])">
@@ -779,44 +791,44 @@
 			</p>
 		</xsl:when>
 		<xsl:otherwise> <!-- then give up -->
-			<p class="bug">D'oh! You found a bug (<xsl:value-of select="@href"/> not found).</p> 
+			<p class="bug">D'oh! You found a bug (<xsl:value-of select="@href"/> not found).</p>
 		</xsl:otherwise>
 	</xsl:choose>
 </xsl:template>
 
 <!-- Insert an image -->
 <xsl:template name="insertimage">
-	
+
 	<xsl:variable name="fpath">
 		<xsl:call-template name="getfpath">
 			<xsl:with-param name="s"><xsl:value-of select="@src"/></xsl:with-param>
 		</xsl:call-template>
 	</xsl:variable>
-	
+
 	<xsl:variable name="fname">
 		<xsl:call-template name="getfname">
 			<xsl:with-param name="s"><xsl:value-of select="@src"/></xsl:with-param>
 		</xsl:call-template>
 	</xsl:variable>
 
-  <xsl:variable name="src">
-    <xsl:choose>
-      <xsl:when test="not($ExtensionId='') and starts-with(@src,$ExtensionId)">
-        <xsl:value-of select="concat($ExtensionPath,'/',@src)"/>
-      </xsl:when>
-      <xsl:otherwise>
-        <xsl:choose>
-          <xsl:when test="(@localize='true') and not($lang='en-US')">
-            <xsl:value-of select="concat($img_url_prefix,$fpath,$lang,'/',$fname)"/>
-          </xsl:when>
-          <xsl:otherwise>
-            <xsl:value-of select="concat($img_url_prefix,$fpath,$fname)"/>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:variable>
-  
+	<xsl:variable name="src">
+		<xsl:choose>
+			<xsl:when test="not($ExtensionId='') and starts-with(@src,$ExtensionId)">
+				<xsl:value-of select="concat($ExtensionPath,'/',@src)"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:choose>
+					<xsl:when test="(@localize='true') and not($lang='en-US')">
+						<xsl:value-of select="concat($img_url_prefix,$fpath,$lang,'/',$fname)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="concat($img_url_prefix,$fpath,$fname)"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:variable>
+
 	<!--<xsl:variable name="src"><xsl:value-of select="concat($img_url_prefix,@src)"/></xsl:variable>-->
 	<xsl:variable name="alt"><xsl:value-of select="./alt"/></xsl:variable>
 	<xsl:variable name="width" select="''"/> <!-- Images don't all have the correct size -->
@@ -824,7 +836,7 @@
 	<img src="{$src}" alt="{$alt}" title="{$alt}">
 		<xsl:if test="not($width='')"><xsl:attribute name="width"><xsl:value-of select="$width"/></xsl:attribute></xsl:if>
 		<xsl:if test="not($height='')"><xsl:attribute name="height"><xsl:value-of select="$height"/></xsl:attribute></xsl:if>
-	</img>  
+	</img>
 </xsl:template>
 
 <!-- Insert a Table -->
@@ -832,40 +844,40 @@
 	<xsl:variable name="imgsrc">	<!-- see if we are in an image table -->
 		<xsl:value-of select="tablerow/tablecell[1]/paragraph[1]/image/@src"/>
 	</xsl:variable>
-	
+
 	<xsl:choose>
-		
+
 		<xsl:when test="count(descendant::tablecell)=1">
 			<table border="0" class="onecell" cellpadding="0" cellspacing="0">
 				<xsl:apply-templates />
 		 </table>
 		</xsl:when>
-		
+
 		<xsl:when test="descendant::tablecell[1]/descendant::image">
 			<table border="0" class="icontable" cellpadding="5" cellspacing="0">
 				<xsl:apply-templates mode="icontable"/>
 		 </table>
 		</xsl:when>
-		
+
 		<xsl:when test="@class='wide'">
 			<table border="1" class="{@class}" cellpadding="0" cellspacing="0" width="100%" >
 				<xsl:apply-templates />
 		 </table>
 		</xsl:when>
-		
+
 		<xsl:when test="not(@class='')">
 			<table border="1" class="{@class}" cellpadding="0" cellspacing="0" >
 				<xsl:apply-templates />
 		 </table>
 		</xsl:when>
-		
+
 		<xsl:otherwise>
 			<table border="1" class="border" cellpadding="0" cellspacing="0" >
 				<xsl:apply-templates />
 		 </table>
 		</xsl:otherwise>
 	</xsl:choose>
-	
+
 	<br/>
 </xsl:template>
 
@@ -876,7 +888,7 @@
 		<xsl:variable name="href"><xsl:value-of select="concat($urlpre,$archive,substring-before(@href,'#'),$urlpost,$dbpostfix)"/></xsl:variable>
 		<xsl:variable name="anc"><xsl:value-of select="substring-after(@href,'#')"/></xsl:variable>
 		<xsl:variable name="docum" select="document($href)"/>
-		
+
 		<xsl:call-template name="insertembed">
 			<xsl:with-param name="doc" select="$docum" />
 			<xsl:with-param name="anchor" select="$anc" />
@@ -897,7 +909,7 @@
 				<xsl:apply-templates select="$doc//variable[@id=$anchor]" mode="embedded"/>
 			</xsl:when>
 			<xsl:otherwise> <!-- or give up -->
-				<span class="bug">[<xsl:value-of select="@href"/> not found].</span> 
+				<span class="bug">[<xsl:value-of select="@href"/> not found].</span>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:if>
