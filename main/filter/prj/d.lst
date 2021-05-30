@@ -49,7 +49,7 @@ mkdir: %_DEST%\bin%_EXT%\pdfimport
 ..\source\xslt\import\uof\*.xsl %_DEST%\bin%_EXT%\xslt\import\uof\*.xsl
 ..\source\xslt\import\uof2\*.xsl %_DEST%\bin%_EXT%\xslt\import\uof2\*.xsl
 ..\%__SRC%\bin\*.xsl %_DEST%\bin%_EXT%\*.xsl
-..\%__SRC%\bin\*.stw %_DEST%\bin%_EXT%\*.stw
+..\%__SRC%\bin\*.ott %_DEST%\bin%_EXT%\*.ott
 ..\%__SRC%\bin\pdf2xml.* %_DEST%\bin%_EXT%\pdf2xml.*
 ..\%__SRC%\bin\pdfunzip.* %_DEST%\bin%_EXT%\pdfunzip.*
 ..\%__SRC%\misc\filters\modulepacks\fcfg_*.xcu %_DEST%\xml%_EXT%\registry\spool\fcfg_*.xcu
