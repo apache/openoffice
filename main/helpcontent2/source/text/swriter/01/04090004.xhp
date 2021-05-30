@@ -55,22 +55,6 @@
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="6">Modified</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="7">Inserts the name of the author, and the date, or the time of the last save.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="8">Editing time</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="9">Inserts the amount of time spent on editing a document.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
 <paragraph role="tablecontent" id="par_id3150700" xml-lang="en-US" l10n="U" oldref="10">Comments</paragraph>
 </tablecell>
 <tablecell>
@@ -79,18 +63,42 @@
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3145262" xml-lang="en-US" l10n="U" oldref="12">Document number</paragraph>
+<paragraph role="tablecontent" id="par_id3146326" xml-lang="en-US" l10n="U" oldref="14">Created</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="13">Inserts the version number of the current document.</paragraph>
+<paragraph role="tablecontent" id="par_id3149833" xml-lang="en-US" l10n="U" oldref="15">Inserts the name of the author, or the date, or the time when the document was created.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3146326" xml-lang="en-US" l10n="U" oldref="14">Created</paragraph>
+<paragraph role="tablecontent" id="par_id3156122" xml-lang="en-US" l10n="U" oldref="20">Keywords</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3149833" xml-lang="en-US" l10n="U" oldref="15">Inserts the name of the author, and the date, or the time when the document was created.</paragraph>
+<paragraph role="tablecontent" id="par_id3150912" xml-lang="en-US" l10n="U" oldref="21">Inserts the keywords as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150177" xml-lang="en-US" l10n="U" oldref="18">Last printed</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="19">Inserts the name of the author, or the date, or the time that the document was last printed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="6">Modified</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="7">Inserts the name of the author, or the date, or the time of the last save.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145262" xml-lang="en-US" l10n="U" oldref="12">Revision number</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="13">Inserts the version number of the current document.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -103,26 +111,10 @@
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3150177" xml-lang="en-US" l10n="U" oldref="18">Last printed</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="19">Inserts the name of the author, and the date or time that the document was last printed.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3156122" xml-lang="en-US" l10n="U" oldref="20">Keywords</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3150912" xml-lang="en-US" l10n="U" oldref="21">Inserts the keywords as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
 <paragraph role="tablecontent" id="par_id3154328" xml-lang="en-US" l10n="U" oldref="22">Subject</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3146942" xml-lang="en-US" l10n="U" oldref="23">Inserts the subject as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3146942" xml-lang="en-US" l10n="U" oldref="23">Inserts the subject as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -130,7 +122,15 @@
 <paragraph role="tablecontent" id="par_id3150092" xml-lang="en-US" l10n="U" oldref="24">Title</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="25">Inserts the title as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="25">Inserts the title as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+ <tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="8">Total editing time</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="9">Inserts the amount of time spent on editing a document.</paragraph>
 </tablecell>
 </tablerow>
 </table>
