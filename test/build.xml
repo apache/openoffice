@@ -27,7 +27,8 @@
 	<property name="junit.home" value="${env.JUNIT_HOME}" />
 	<property name="dist.dir" value="." />
 	<property name="dist.name" value="aoo_test" />
-	<property name="junit.jar.repos" value="https://repo1.maven.org/maven2/junit/junit/4.10/junit-4.10.jar" />
+	<property name="junit.jar.repos" value="https://repo1.maven.org/maven2/junit/junit/4.12/junit-4.12.jar" />
+	<property name="hamcrest.jar.repos" value="https://repo1.maven.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar" />
 	
 	<path id="uno.classpath">
 		<fileset dir="${env.OUTDIR}/bin" erroronmissingdir="false">
@@ -51,12 +52,20 @@
 			</fileset>
 			<globmapper from="*" to="junit.jar" />
         </copy>
+		<copy todir="lib" >
+			<fileset dir="${junit.home}" erroronmissingdir="false">
+				<include name="hamcrest*.jar" />
+			</fileset>
+			<globmapper from="*" to="hamcrest.jar" />
+		</copy>
 		<available file="lib/junit.jar" property="junit.jar.exists"/>
+		<available file="lib/hamcrest.jar" property="hamcrest.jar.exists"/>
 	</target>
 
 	<target name="prepare.junit" depends="check.junit" unless="junit.jar.exists">
 		<mkdir dir="lib" />
 		<get src="${junit.jar.repos}" dest="lib/junit.jar" skipexisting="true" />
+		<get src="${hamcrest.jar.repos}" dest="lib/hamcrest.jar" skipexisting="true" />
 	</target>
 	
 	<target name="testcommon.init">
