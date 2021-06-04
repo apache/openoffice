@@ -55,7 +55,7 @@ public class NamedRequest extends Request {
 				name = name.substring(0, 128) + "...";
 			}
 		}
-		suite = new Suite(name);
+		suite = new Suite(null, name);
 		return arg;
 	}
 	
@@ -156,9 +156,9 @@ public class NamedRequest extends Request {
 		protected final List<Runner> fRunners = new ArrayList<Runner>();
 
 		protected String name;
-		
-		protected Suite(String name) throws InitializationError {
-			super(null);
+
+		protected Suite(Class<?> testClass, String name) throws InitializationError {
+			super(testClass);
 			this.name = name;
 		}
 
