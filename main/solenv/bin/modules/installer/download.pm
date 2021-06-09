@@ -1200,7 +1200,7 @@ sub nsis_language_converter
 	if ( $language eq "en-US" ) { $nsislanguage = "English"; }
 	elsif ( $language eq "af" ) { $nsislanguage = "Afrikaans"; }
 	elsif ( $language eq "sq" ) { $nsislanguage = "Albanian"; }
-	#elsif ( $language eq "ar" ) { $nsislanguage = "Arabic"; } # Temporarily disabled (Malformed LO surrogate)
+	elsif ( $language eq "ar" ) { $nsislanguage = "Arabic"; }
 	elsif ( $language eq "hy" ) { $nsislanguage = "Armenian"; }
 	elsif ( $language eq "ast" ) { $nsislanguage = "Asturian"; }
 	elsif ( $language eq "eu" ) { $nsislanguage = "Basque"; }
@@ -1251,7 +1251,7 @@ sub nsis_language_converter
 	elsif ( $language eq "th" ) { $nsislanguage = "Thai"; }
 	elsif ( $language eq "zh-TW" ) { $nsislanguage = "TradChinese"; }
 	elsif ( $language eq "tr" ) { $nsislanguage = "Turkish"; }
-	#elsif ( $language eq "uk" ) { $nsislanguage = "Ukrainian"; } # Temporarily disabled (Problem in Ukrainian.nsh)
+	elsif ( $language eq "uk" ) { $nsislanguage = "Ukrainian"; }
 	elsif ( $language eq "vi" ) { $nsislanguage = "Vietnamese"; }
 	elsif ( $language eq "cy" ) { $nsislanguage = "Welsh"; }
 	else
