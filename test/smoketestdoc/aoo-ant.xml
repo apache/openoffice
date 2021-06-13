@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--***********************************************************
+ * 
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ * 
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ * 
+ ***********************************************************-->
+
+<!-- copied from main/solenv/ant and modified for standalone tests -->
+
+<project name="aoo-ant" default="main" xmlns:if="ant:if" xmlns:unless="ant:unless">
+
+    <!-- ================================================================= -->
+    <!-- settings                                                          -->
+    <!-- ================================================================= -->
+
+    <dirname property="aoo-ant.basedir" file="${ant.file.aoo-ant}"/>
+
+    <!-- RSCREVISION: -->
+    <property file="${aoo-ant.basedir}/../../main/solenv/inc/minor.mk"/>
+
+    <property name="main.src.dir" location="src/main/java"/>
+    <property name="res.src.dir" location="src/main/resources"/>
+    <property name="idl.src.dir" location="src/main/idl"/>
+    <property name="test.src.dir" location="src/test/java"/>
+    <property name="test-res.src.dir" location="src/test/resources"/>
+    <property name="test-idl.src.dir" location="src/test/idl"/>
+
+    <property name="main.build.dir" location="${build.base.dir}/main"/>
+    <property name="idl.build.dir" location="${build.base.dir}/idl"/>
+    <property name="idl.build.classes.dir" location="${build.base.dir}/idl/classes"/>
+    <property name="test.build.dir" location="${build.base.dir}/test"/>
+    <property name="test-idl.build.dir" location="${build.base.dir}/test-idl"/>
+    <property name="test-idl.classes.build.dir" location="${build.base.dir}/test-idl/classes"/>
+    <property name="test.reports.dir" location="${build.base.dir}/test-reports"/>
+
+    <property name="java.baseline.version" value="1.7"/>
+
+    <property name="main.debug" value="true"/>
+    <property name="main.deprecation" value="false"/>
+    <property name="test.debug" value="true"/>
+    <property name="test.deprecation" value="false"/>
+
+    <import file="${aoo-ant.basedir}/idl.xml"/>
+
+    <target name="init-project"/>
+
+    <target name="prepare" depends="init-project">
+        <property name="jar.enabled" value="true"/>
+        <property name="jar.name" value="${ant.project.name}"/>
+        <property name="jar.classpath" value=""/>
+        <property name="jar.manifest" value ="${aoo-ant.basedir}/manifest.empty"/>
+
+        <local name="has.main.classpath"/>
+        <condition property="has.main.classpath">
+            <isreference refid="main.classpath"/>
+        </condition>
+        <path id="internal.main.classpath">
+            <path refid="main.classpath" if:set="has.main.classpath"/>
+            <pathelement location="${idl.classes.build.dir}"/>
+        </path>
+
+        <local name="has.test.classpath"/>
+        <condition property="has.test.classpath">
+            <isreference refid="test.classpath"/>
+        </condition>
+        <path id="internal.test.classpath">
+            <pathelement location="${main.build.dir}"/>
+            <pathelement location="${idl.classes.build.dir}"/>
+            <pathelement location="${test.build.dir}"/>
+            <pathelement location="${test-idl.classes.build.dir}"/>
+            <path refid="main.classpath"/>
+            <path refid="test.classpath" if:set="has.test.classpath"/>
+            <pathelement location="${OOO_JUNIT_JAR}"/>
+            <pathelement location="${HAMCREST_CORE_JAR}" if:set="HAMCREST_CORE_JAR"/>
+        </path>
+    </target>
+
+    <target name="dependencies" depends="prepare">
+        <local name="has.main.classpath"/>
+        <condition property="has.main.classpath">
+            <isreference refid="main.classpath"/>
+        </condition>
+
+        <pathconvert refid="main.classpath" setonempty="true" pathsep=" " property="deps" if:set="has.main.classpath"/>
+        <property name="deps" value=""/>
+        <echo message="${deps}" file="${dependencies.outfile}"/>
+    </target>
+
+    <target name="res" depends="prepare">
+        <mkdir dir="${main.build.dir}"/>
+        <copy todir="${main.build.dir}" failonerror="false" quiet="true">
+             <fileset dir="${res.src.dir}">
+                 <include name="**/*"/>
+             </fileset>
+        </copy>
+    </target>
+
+    <extension-point name="pre-compile" depends="prepare,res"/>
+
+    <target name="idl" depends="pre-compile">
+        <fileset id="idl.files" dir="${idl.src.dir}" includes="**/*.idl" erroronmissingdir="false"/>
+        <idl-javamaker
+            idlFiles="idl.files"
+            idlBuildDir="${idl.build.dir}"/>
+    </target>
+
+    <target name="compile" depends="idl">
+        <mkdir dir="${main.build.dir}"/>
+        <javac srcdir="${main.src.dir}"
+               destdir="${main.build.dir}"
+               source="${java.baseline.version}"
+               target="${java.baseline.version}"
+               debug="${main.debug}"
+               debuglevel="lines,vars,source"
+               deprecation="${main.deprecation}"
+               classpathref="internal.main.classpath"
+               includeantruntime="false"/>
+    </target>
+
+    <macrodef name="check-test">
+        <sequential>
+            <local name="tests.present"/>
+            <available type="dir" file="${test.src.dir}" property="tests.present"/>
+            <echo message="No tests" unless:set="tests.present"/>
+
+            <local name="only.junit.absent"/>
+            <condition property="only.junit.absent">
+                <and>
+                    <isset property="tests.present"/>
+                    <not><isset property="OOO_JUNIT_JAR"/></not>
+                </and>
+            </condition>
+            <echo message="No junit, skipping tests" if:set="only.junit.absent"/>
+
+            <condition property="test.skip">
+                <or>
+                    <not><isset property="tests.present"/></not>
+                    <not><isset property="OOO_JUNIT_JAR"/></not>
+                </or>
+            </condition>
+        </sequential>
+    </macrodef>
+
+    <target name="test-res" depends="pre-compile">
+        <mkdir dir="${test.build.dir}" unless:set="test.skip"/>
+        <copy todir="${test.build.dir}" failonerror="false" quiet="true" unless:set="test.skip">
+             <fileset dir="${test-res.src.dir}">
+                 <include name="**/*"/>
+             </fileset>
+        </copy>
+    </target>
+
+    <target name="test-idl" depends="test-res">
+        <fileset id="test-idl.files" dir="${test-idl.src.dir}" includes="**/*.idl" erroronmissingdir="false"/>
+        <idl-javamaker
+            idlFiles="test-idl.files"
+            idlBuildDir="${test-idl.build.dir}"/>
+    </target>
+
+    <target name="test-compile" depends="compile,test-idl">
+        <check-test/>
+        <mkdir dir="${test.build.dir}" unless:set="test.skip"/>
+        <javac srcdir="${test.src.dir}"
+               destdir="${test.build.dir}"
+               source="${java.baseline.version}"
+               target="${java.baseline.version}"
+               debug="${test.debug}"
+               debuglevel="lines,vars,source"
+               deprecation="${test.deprecation}"
+               classpathref="internal.test.classpath"
+               includeantruntime="false"
+               unless:set="test.skip"/>
+    </target>
+
+    <!-- fork="true" is sadly necessary on Ubuntu due to multiple versions of junit confusing Ant,
+         see https://github.com/real-logic/simple-binary-encoding/issues/96 -->
+    <target name="test" depends="test-compile" unless="${test.skip}">
+        <mkdir dir="${test.reports.dir}"/>
+        <junit printsummary="yes" haltonfailure="yes" showoutput="true" filtertrace="false" fork="true">
+            <classpath refid="internal.test.classpath"/>
+            <formatter type="plain"/>
+            <batchtest todir="${test.reports.dir}">
+                <fileset dir="${test.src.dir}">
+                    <include name="**/*_Test.java"/>
+                </fileset>
+            </batchtest>
+        </junit>
+    </target>
+
+    <target name="jar" depends="compile" if="${jar.enabled}">
+        <jar destfile="${jar.dir}/${jar.name}.jar"
+             manifest="${jar.manifest}"
+             duplicate="fail">
+            <manifest>
+                <attribute name="Class-Path" value="${jar.classpath}" unless:blank="${jar.classpath}"/>
+                <attribute name="Solar-Version" value="${RSCREVISION}"/>
+            </manifest>
+            <fileset dir="${main.build.dir}"/>
+<!-- Breaks trunk/test/smoketestdoc by packaging different classes with the same name: -->
+<!--            <fileset dir="${idl.build.classes.dir}" erroronmissingdir="false"/> -->
+            <include name="**/*.class"/>
+            <include name="**/*.properties"/>
+            <include name="**/*.css"/>
+            <include name="**/*.dtd"/>
+            <include name="**/*.form"/>
+            <include name="**/*.gif "/>
+            <include name="**/*.htm"/>
+            <include name="**/*.html"/>
+            <include name="**/*.js"/>
+            <include name="**/*.mod"/>
+            <include name="**/*.sql"/>
+            <include name="**/*.xml"/>
+            <include name="**/*.xsl"/>
+            <include name="**/*.map"/>
+        </jar>
+    </target>
+
+    <extension-point name="pre-clean" depends="prepare"/>
+
+    <target name="clean" depends="pre-clean">
+        <delete dir="${build.base.dir}"/>
+        <delete file="${jar.dir}/${jar.name}.jar"/>
+    </target>
+
+    <target name="main" depends="test,jar"/>
+
+</project>
+

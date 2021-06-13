@@ -21,14 +21,15 @@
  ***********************************************************-->
 
 
-<project name="smoketest" default="smoketest">
+<project name="smoketest" default="smoketest" xmlns:if="ant:if" xmlns:unless="ant:unless">
     <dirname property="project.dir" file="${ant.file.smoketest}"/>
-    <property file="${project.dir}/../../main/ant.properties"/>
 
+    <property name="SRC_ROOT" value="${project.dir}/../../main" />
     <property name="data.dir" value="${project.dir}/data"/>
     <property name="build.base.dir" value="${project.dir}/target"/>
     <property name="jar.dir" value="${build.base.dir}/TestExtension"/>
-    <import file="${SRC_ROOT}/solenv/ant/aoo-ant.xml"/>
+
+    <import file="${project.dir}/aoo-ant.xml"/>
 
     <target name="init-project">
         <property name="jar.name" value="TestExtension"/>
@@ -36,10 +37,10 @@
         <mkdir dir="${build.base.dir}/TestExtension"/>
 
         <path id="main.classpath">
-            <pathelement location="${OUTDIR}/bin/juh.jar"/>
-            <pathelement location="${OUTDIR}/bin/jurt.jar"/>
-            <pathelement location="${OUTDIR}/bin/ridl.jar"/>
-            <pathelement location="${OUTDIR}/bin/unoil.jar"/>
+            <pathelement location="${openoffice.home}/program/classes/juh.jar"/>
+            <pathelement location="${openoffice.home}/program/classes/jurt.jar"/>
+            <pathelement location="${openoffice.home}/program/classes/ridl.jar"/>
+            <pathelement location="${openoffice.home}/program/classes/unoil.jar"/>
         </path>
     </target>
 
@@ -93,5 +94,6 @@
     </target>
 
     <target name="smoketest" depends="smoketestdoc,TestExtension"/>
+
 </project>
 
