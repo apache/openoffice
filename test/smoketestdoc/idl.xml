@@ -76,6 +76,7 @@
         <sequential>
             <mkdir dir="@{urdDir}"/>
             <apply executable="${openoffice.home}/sdk/bin/idlc" failonerror="true">
+                <env key="PATH" value="${openoffice.home}/program"/>
                 <env key="LD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <env key="DYLD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <arg value="-I${openoffice.home}/sdk/idl"/>
@@ -95,6 +96,7 @@
         <sequential>
             <delete file="@{rdbFile}"/>
             <apply executable="${openoffice.home}/program/regmerge" failonerror="true">
+                <env key="PATH" value="${openoffice.home}/program"/>
                 <env key="LD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <env key="DYLD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <arg value="@{rdbFile}"/>
@@ -112,6 +114,7 @@
         <sequential>
             <mkdir dir="@{outputDir}"/>
             <exec executable="${openoffice.home}/sdk/bin/javamaker" failonerror="true">
+                <env key="PATH" value="${openoffice.home}/program"/>
                 <env key="LD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <env key="DYLD_LIBRARY_PATH" value="${openoffice.home}/program"/>
                 <arg value="-O@{outputDir}"/>
