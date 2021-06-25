@@ -1428,6 +1428,62 @@ dnl ===================================================================
 dnl Build options
 dnl ===================================================================
 
+# !!!
+AC_MSG_CHECKING([whether to enable CoinMP explicitly])
+enable_coinmp_explicit=
+if test -n "$enable_coinmp" && test "$enable_coinmp" != "no"; then
+   enable_coinmp_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_coinmp_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+AC_MSG_CHECKING([whether to enable Graphite explicitly])
+enable_graphite_explicit=
+if test -n "$enable_graphite" && test "$enable_graphite" != "no"; then
+   enable_graphite_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_graphite_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+AC_MSG_CHECKING([whether to enable Saxon explicitly])
+enable_saxon_explicit=
+if test -n "$enable_saxon" && test "$enable_saxon" != "no"; then
+   enable_saxon_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_saxon_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+AC_MSG_CHECKING([whether to enable Rhino explicitly])
+enable_javascript_explicit=
+if test -n "$enable_javascript" && test "$enable_javascript" != "no"; then
+   enable_javascript_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_javascript_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+AC_MSG_CHECKING([whether to enable Hyphenator explicitly])
+enable_hyphen_explicit=
+if test -n "$enable_hyphen" && test "$enable_hyphen" != "no"; then
+   enable_hyphen_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_hyphen_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+AC_MSG_CHECKING([whether to enable Hunspell explicitly])
+enable_hunspell_explicit=
+if test -n "$enable_hunspell" && test "$enable_hunspell" != "no"; then
+   enable_hunspell_explicit="yes"
+   AC_MSG_RESULT([yes])
+else
+   enable_hunspell_explicit="no"
+   AC_MSG_RESULT([no])
+fi
+
 # Disable or enable category-B libraries: nss, hunspell, hyphen, saxon,
 # rhino, silgraphite.
 
@@ -4299,6 +4355,7 @@ dnl   The exact place can be specified with the --with-saxon-jar=<path> option.
 dnl - From the saxon tar ball in ext_sources/. This is used when --enable-saxon
 dnl   is given to configure but not any of --with-system-saxon or --with-saxon-jar.
 dnl ===================================================================
+# !!! does even touching system_saxon generate a dependency on it?
 DISABLE_SAXON=
 AC_MSG_CHECKING([which saxon to use])
 if test -n "$with_system_saxon" -o -n "$with_system_libs" && \
@@ -4392,7 +4449,7 @@ _ACEOF
           cat saxontest.java >&5
           AC_MSG_ERROR([saxontest could not be compiled, non-functional saxon jar])
         fi
-elif test "x$enable_saxon" = "xyes"; then
+elif test "x$enable_saxon" = "xyes" -a test "x$enable_saxon_explicit" != "xno"; then
     AC_MSG_RESULT([internal])
     SYSTEM_SAXON=NO
     BUILD_TYPE="$BUILD_TYPE SAXON"
@@ -4411,7 +4468,7 @@ dnl Check for rhino
 dnl ===================================================================
 ENABLE_JAVASCRIPT=
 AC_MSG_CHECKING([whether to enable support for JavaScript])
-if test "x$enable_javascript" = "xyes"; then
+if test "x$enable_javascript" = "xyes" -a test "x$enable_javascript_explicit" != "xno"; then
    BUILD_TYPE="$BUILD_TYPE RHINO"
    AC_MSG_RESULT([yes])
    ENABLE_JAVASCRIPT=YES
@@ -4494,7 +4551,8 @@ SYSTEM_COINMP=NO
 COINMP_CFLAGS=
 COINMP_LIBS=
 AC_MSG_CHECKING([whether to enable support for CoinMP])
-if test "x$enable_coinmp" = "xyes"; then
+# !!!
+if test "x$enable_coinmp" = "xyes" -a test "x$enable_coinmp_explicit" != "xno"; then
     BUILD_TYPE="$BUILD_TYPE COINMP"
     AC_MSG_RESULT([yes])
     ENABLE_COINMP=YES
@@ -4811,7 +4869,8 @@ dnl ===================================================================
 
 ENABLE_GRAPHITE="FALSE"
 AC_MSG_CHECKING([whether to enable graphite support])
-if test "x$enable_graphite" = "xyes" -a \( "$_os" = "WINNT" -o "$_os" = "Linux" -o "$_os" = "FreeBSD" \) ; then
+# !!!
+if test "x$enable_graphite" = "xyes" -a test "x$enable_graphite_explicit" != "xno" -a\( "$_os" = "WINNT" -o "$_os" = "Linux" -o "$_os" = "FreeBSD" \) ; then
     AC_MSG_RESULT([yes])
     ENABLE_GRAPHITE="TRUE"
     AC_MSG_CHECKING([which graphite to use])
@@ -5066,7 +5125,7 @@ dnl ===================================================================
 AC_MSG_CHECKING([whether to build the Spell Checking component])
 ENABLE_HUNSPELL=
 
-if test "x$enable_hunspell" != "xno" ; then
+if test "x$enable_hunspell" != "xno" -o "x$enable_hunspell_explicit" = "xyes"; then
     AC_MSG_CHECKING([which libhunspell to use])
     if test -n "$with_system_hunspell" -o -n "$with_system_libs" && \
         test "$with_system_hunspell" != "no"; then
@@ -5104,7 +5163,8 @@ dnl ===================================================================
 AC_MSG_CHECKING([whether to build the Hyphenator component])
 ENABLE_HYPHEN=
 
-if test "x$enable_hyphen" != "xno" ; then
+# !!!
+if test "x$enable_hyphen" != "xno" -o "x$enable_hyphen_explicit" = "xyes" ; then
     AC_MSG_CHECKING([which libhyphen to use])
     if test -n "$with_system_hyphen" -o -n "$with_system_libs" && \
         test "$with_system_hyphen" != "no"; then
