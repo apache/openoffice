@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "Strings.hrc"
@@ -44,17 +45,17 @@ String STR_PAGE_CHARTTYPE
 
 String STR_PAGE_DATA_RANGE
 {
-    Text [ en-US ] = "Data Range";
+	Text [ en-US ] = "Data Range" ;
 };
 
 String STR_PAGE_CHART_ELEMENTS
 {
-    Text [ en-US ] = "Chart Elements";
+	Text [ en-US ] = "Chart Elements" ;
 };
 
 String STR_PAGE_CHART_LOCATION
 {
-    Text [ en-US ] = "Chart Location";
+	Text [ en-US ] = "Chart Location" ;
 };
 
 String STR_PAGE_LINE
@@ -74,7 +75,7 @@ String STR_PAGE_AREA
 
 String STR_PAGE_TRANSPARENCY
 {
-	Text [ en-US ] = "Transparency";
+	Text [ en-US ] = "Transparency" ;
 };
 
 String STR_PAGE_FONT
@@ -99,21 +100,21 @@ String STR_PAGE_POSITION
 
 String STR_BUTTON_UP
 {
-	Text [ en-US ] = "Up";
+	Text [ en-US ] = "Up" ;
 };
 String STR_BUTTON_DOWN
 {
-	Text [ en-US ] = "Down";
+	Text [ en-US ] = "Down" ;
 };
 
 String STR_PAGE_LAYOUT
 {
-	Text [ en-US ] = "Layout";
+	Text [ en-US ] = "Layout" ;
 };
 
 String STR_PAGE_OPTIONS
 {
-	Text [ en-US ] = "Options";
+	Text [ en-US ] = "Options" ;
 };
 
 String STR_PAGE_SCALE
@@ -133,12 +134,12 @@ String STR_PAGE_POSITIONING
 
 String STR_PAGE_TRENDLINE_TYPE
 {
-    Text[ en-US ] = "Type";
+	Text [ en-US ] = "Type" ;
 };
 
 String STR_PAGE_YERROR_BARS
 {
-    Text[ en-US ] = "Y Error Bars";
+	Text [ en-US ] = "Y Error Bars" ;
 };
 
 String STR_PAGE_ALIGNMENT
@@ -166,7 +167,7 @@ String STR_PAGE_ASIAN
 
 String STR_OBJECT_AVERAGE_LINE_WITH_PARAMETERS
 {
-    Text [ en-US ] = "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION";
+	Text [ en-US ] = "Mean value line with value %AVERAGE_VALUE and standard deviation %STD_DEVIATION" ;
 };
 
 String STR_OBJECT_AXIS
@@ -187,11 +188,11 @@ String STR_OBJECT_AXIS_Z
 };
 String STR_OBJECT_SECONDARY_X_AXIS
 {
-    Text [ en-US ] = "Secondary X Axis" ;
+	Text [ en-US ] = "Secondary X Axis" ;
 };
 String STR_OBJECT_SECONDARY_Y_AXIS
 {
-    Text [ en-US ] = "Secondary Y Axis" ;
+	Text [ en-US ] = "Secondary Y Axis" ;
 };
 
 String STR_OBJECT_AXES
@@ -266,11 +267,11 @@ String STR_OBJECT_TITLE_Z_AXIS
 };
 String STR_OBJECT_TITLE_SECONDARY_X_AXIS
 {
-    Text [ en-US ] = "Secondary X Axis Title" ;
+	Text [ en-US ] = "Secondary X Axis Title" ;
 };
 String STR_OBJECT_TITLE_SECONDARY_Y_AXIS
 {
-    Text [ en-US ] = "Secondary Y Axis Title" ;
+	Text [ en-US ] = "Secondary Y Axis Title" ;
 };
 String STR_OBJECT_LABEL
 {
@@ -303,37 +304,37 @@ String STR_OBJECT_DATASERIES_PLURAL
 };
 String STR_OBJECT_CURVE
 {
-	Text [ en-US ] = "Trend Line";
+	Text [ en-US ] = "Trend Line" ;
 };
 String STR_OBJECT_CURVES
 {
-	Text [ en-US ] = "Trend Lines";
+	Text [ en-US ] = "Trend Lines" ;
 };
 String STR_OBJECT_CURVE_WITH_PARAMETERS
 {
-    Text [ en-US ] = "Trend line %FORMULA with accuracy R² = %RSQUARED";
+	Text [ en-US ] = "Trend line %FORMULA with accuracy R² = %RSQUARED" ;
 };
 String STR_OBJECT_AVERAGE_LINE
 {
-	Text [ en-US ] = "Mean Value Line";
+	Text [ en-US ] = "Mean Value Line" ;
 };
 String STR_OBJECT_CURVE_EQUATION
 {
-    Text[ en-US ] = "Equation";
+	Text [ en-US ] = "Equation" ;
 };
 
 String STR_OBJECT_ERROR_BARS
 {
-	Text [ en-US ] = "Error Bars";
+	Text [ en-US ] = "Error Bars" ;
 };
 String STR_OBJECT_STOCK_LOSS
 {
-	Text [ en-US ] = "Stock Loss";
+	Text [ en-US ] = "Stock Loss" ;
 };
 
 String STR_OBJECT_STOCK_GAIN
 {
-	Text [ en-US ] = "Stock Gain";
+	Text [ en-US ] = "Stock Gain" ;
 };
 
 String STR_OBJECT_PAGE
@@ -375,7 +376,7 @@ String STR_TIP_CHOOSECOLOR
 
 String STR_TIP_LIGHTSOURCE_X
 {
-    Text [ en-US ] = "Light Source %LIGHTNUMBER" ;
+	Text [ en-US ] = "Light Source %LIGHTNUMBER" ;
 };
 
 String STR_TIP_DATASERIES
@@ -385,22 +386,22 @@ String STR_TIP_DATASERIES
 
 String STR_TIP_DATAPOINT_INDEX
 {
-    Text [ en-US ] = "Data Point %POINTNUMBER";
+	Text [ en-US ] = "Data Point %POINTNUMBER" ;
 };
 
 String STR_TIP_DATAPOINT_VALUES
 {
-    Text [ en-US ] = "Values: %POINTVALUES";
+	Text [ en-US ] = "Values: %POINTVALUES" ;
 };
 
 String STR_TIP_DATAPOINT
 {
-    Text [ en-US ] = "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES";
+	Text [ en-US ] = "Data Point %POINTNUMBER, data series %SERIESNUMBER, values: %POINTVALUES" ;
 };
 
 String STR_STATUS_DATAPOINT_MARKED
 {
-    Text [ en-US ] = "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES";
+	Text [ en-US ] = "Data point %POINTNUMBER in data series %SERIESNUMBER selected, values: %POINTVALUES" ;
 };
 
 String STR_STATUS_OBJECT_MARKED
@@ -410,7 +411,7 @@ String STR_STATUS_OBJECT_MARKED
 
 String STR_STATUS_PIE_SEGMENT_EXPLODED
 {
-    Text [ en-US ] = "Pie exploded by %PERCENTVALUE percent";
+	Text [ en-US ] = "Pie exploded by %PERCENTVALUE percent" ;
 };
 
 //-----------------------------------------------------------------------------
@@ -429,11 +430,11 @@ String STR_OBJECT_FOR_ALL_SERIES
 //-----------------------------------------------------------------------------
 String STR_ACTION_EDIT_CHARTTYPE
 {
-    Text [ en-US ] = "Edit chart type" ;
+	Text [ en-US ] = "Edit chart type" ;
 };
 String STR_ACTION_EDIT_DATA_RANGES
 {
-    Text [ en-US ] = "Edit data ranges" ;
+	Text [ en-US ] = "Edit data ranges" ;
 };
 String STR_ACTION_EDIT_3D_VIEW
 {
@@ -441,7 +442,7 @@ String STR_ACTION_EDIT_3D_VIEW
 };
 String STR_ACTION_EDIT_CHART_DATA
 {
-	Text [ en-US ] = "Edit chart data";
+	Text [ en-US ] = "Edit chart data" ;
 };
 String STR_ACTION_TOGGLE_LEGEND
 {
@@ -457,7 +458,7 @@ String STR_ACTION_SCALE_TEXT
 };
 String STR_ACTION_REARRANGE_CHART
 {
-    Text [ en-US ] = "Automatic Layout" ;
+	Text [ en-US ] = "Automatic Layout" ;
 };
 String STR_ACTION_NOTPOSSIBLE
 {
@@ -465,16 +466,16 @@ String STR_ACTION_NOTPOSSIBLE
 };
 String STR_ACTION_EDIT_TEXT
 {
-    Text [ en-US ] = "Edit text";
+	Text [ en-US ] = "Edit text" ;
 };
 
 String STR_COLUMN_LABEL
 {
-    Text [ en-US ] = "Column %COLUMNNUMBER" ;
+	Text [ en-US ] = "Column %COLUMNNUMBER" ;
 };
 String STR_ROW_LABEL
 {
-    Text [ en-US ] = "Row %ROWNUMBER" ;
+	Text [ en-US ] = "Row %ROWNUMBER" ;
 };
 
 //-----------------------------------------------------------------------------
@@ -550,12 +551,12 @@ String STR_DATA_ROLE_MAX
 
 String STR_DATA_ROLE_CATEGORIES
 {
-    Text [ en-US ] = "Categories";
+	Text [ en-US ] = "Categories" ;
 };
 
 String STR_DATA_UNNAMED_SERIES
 {
-    Text [ en-US ] = "Unnamed Series";
+	Text [ en-US ] = "Unnamed Series" ;
 };
 
 String STR_DATA_UNNAMED_SERIES_WITH_INDEX
@@ -579,11 +580,11 @@ String STR_DATA_SELECT_RANGE_FOR_DATALABELS
 };
 String STR_DATA_SELECT_RANGE_FOR_POSITIVE_ERRORBARS
 {
-    Text [ en-US ] = "Select Range for Positive Error Bars" ;
+	Text [ en-US ] = "Select Range for Positive Error Bars" ;
 };
 String STR_DATA_SELECT_RANGE_FOR_NEGATIVE_ERRORBARS
 {
-    Text [ en-US ] = "Select Range for Negative Error Bars" ;
+	Text [ en-US ] = "Select Range for Negative Error Bars" ;
 };
 
 String STR_DATA_EDITOR_INCORRECT_INPUT
@@ -595,18 +596,17 @@ String STR_DATA_EDITOR_INCORRECT_INPUT
 
 String STR_TEXT_DIRECTION_LTR
 {
-    Text [ en-US ] = "Left-to-right";
+	Text [ en-US ] = "Left-to-right" ;
 };
 
 String STR_TEXT_DIRECTION_RTL
 {
-    Text [ en-US ] = "Right-to-left";
+	Text [ en-US ] = "Right-to-left" ;
 };
 
 String STR_TEXT_DIRECTION_SUPER
 {
-    Text [ en-US ] = "Use superordinate object settings";
+	Text [ en-US ] = "Use superordinate object settings" ;
 };
 
-//-----------------------------------------------------------------------------
-//-----------------------------------------------------------------------------
+// ********************************************************************** EOF
