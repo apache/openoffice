@@ -30,7 +30,7 @@ TARGET=fl_javafilter_binaries
 all: \
 	$(BIN)$/docbooktosoffheadings.xsl \
 	$(BIN)$/sofftodocbookheadings.xsl \
-	$(BIN)$/DocBookTemplate.ott
+	$(BIN)$/DocBookTemplate.stw
 
 
 $(OUT)$/bin$/docbooktosoffheadings.xsl: docbooktosoffheadings.xsl
@@ -39,8 +39,8 @@ $(OUT)$/bin$/docbooktosoffheadings.xsl: docbooktosoffheadings.xsl
 $(OUT)$/bin$/sofftodocbookheadings.xsl: sofftodocbookheadings.xsl
 	$(COPY) sofftodocbookheadings.xsl $(OUT)$/bin$/sofftodocbookheadings.xsl
 
-$(OUT)$/bin$/DocBookTemplate.ott: DocBookTemplate.ott
-	$(COPY) DocBookTemplate.ott $(OUT)$/bin$/DocBookTemplate.ott
+$(OUT)$/bin$/DocBookTemplate.stw: DocBookTemplate.stw
+         $(COPY) DocBookTemplate.stw $(OUT)$/bin$/DocBookTemplate.stw
 
 .INCLUDE: target.mk
 
