@@ -184,7 +184,7 @@ css::uno::Any ShellJob::impl_generateAnswer4Deactivation()
     
     oslProcessError eError = osl_executeProcess(sCommand.pData, pArgs, nArgs, nOptions, NULL, NULL, NULL, 0, &hProcess);
 
-    // executable not found or couldnt be started
+    // executable not found or couldn't be started
     if (eError != osl_Process_E_None)
         return sal_False;
 

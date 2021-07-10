@@ -161,9 +161,9 @@
          <paragraph xml-lang="en-US" id="hd_id3149546" role="heading" level="3" l10n="U"
                     oldref="35">Example</paragraph>
          <paragraph xml-lang="en-US" id="par_id3148734" role="paragraph" l10n="U" oldref="36">
-            <item type="input">=DDE("soffice";"c:\office\document\data1.sxc";"sheet1.A1")</item> reads the contents of cell A1 in sheet1 of the <item type="productname">%PRODUCTNAME</item> Calc spreadsheet data1.sxc.</paragraph>
+            <item type="input">=DDE("soffice";"c:\office\document\data1.ods";"sheet1.A1")</item> reads the contents of cell A1 in sheet1 of the <item type="productname">%PRODUCTNAME</item> Calc spreadsheet data1.ods.</paragraph>
          <paragraph xml-lang="en-US" id="par_id3153081" role="paragraph" l10n="U" oldref="37">
-            <item type="input">=DDE("soffice";"c:\office\document\motto.sxw";"Today's motto")</item> returns a motto in the cell containing this formula. First, you must enter a line in the motto.sxw document containing the motto text and define it as the first line of a section named <item type="literal">Today's Motto</item> (in <item type="productname">%PRODUCTNAME</item> Writer under <emph>Insert - Section</emph>). If the motto is modified (and saved) in the <item type="productname">%PRODUCTNAME</item> Writer document, the motto is updated in all <item type="productname">%PRODUCTNAME</item> Calc cells in which this DDE link is defined.</paragraph>
+            <item type="input">=DDE("soffice";"c:\office\document\motto.odt";"Today's motto")</item> returns a motto in the cell containing this formula. First, you must enter a line in the motto.odt document containing the motto text and define it as the first line of a section named <item type="literal">Today's Motto</item> (in <item type="productname">%PRODUCTNAME</item> Writer under <emph>Insert - Section</emph>). If the motto is modified (and saved) in the <item type="productname">%PRODUCTNAME</item> Writer document, the motto is updated in all <item type="productname">%PRODUCTNAME</item> Calc cells in which this DDE link is defined.</paragraph>
       </section>
       <section id="Section4">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3153114"><bookmark_value>ERRORTYPE function</bookmark_value>

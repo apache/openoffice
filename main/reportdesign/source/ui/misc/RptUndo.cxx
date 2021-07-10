@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "precompiled_rptui.hxx"
@@ -53,72 +54,72 @@ namespace rptui
 //----------------------------------------------------------------------------
 namespace
 {
-    void lcl_collectElements(const uno::Reference< report::XSection >& _xSection,::std::vector< uno::Reference< drawing::XShape> >& _rControls)
-    {
-        if ( _xSection.is() )
+	void lcl_collectElements(const uno::Reference< report::XSection >& _xSection,::std::vector< uno::Reference< drawing::XShape> >& _rControls)
+	{
+		if ( _xSection.is() )
 		{
 			sal_Int32 nCount = _xSection->getCount();
 			_rControls.reserve(nCount);
 			while ( nCount )
 			{
-                uno::Reference< drawing::XShape> xShape(_xSection->getByIndex(nCount-1),uno::UNO_QUERY);
+				uno::Reference< drawing::XShape> xShape(_xSection->getByIndex(nCount-1),uno::UNO_QUERY);
 				_rControls.push_back(xShape);
 				_xSection->remove(xShape);
 				--nCount;
 			}
 		} // if ( _xSection.is() )
-    }
-    //----------------------------------------------------------------------------
-    void lcl_insertElements(const uno::Reference< report::XSection >& _xSection,const ::std::vector< uno::Reference< drawing::XShape> >& _aControls)
-    {
-        if ( _xSection.is() )
-	    {
-		    ::std::vector< uno::Reference< drawing::XShape> >::const_reverse_iterator aIter = _aControls.rbegin();
-		    ::std::vector< uno::Reference< drawing::XShape> >::const_reverse_iterator aEnd = _aControls.rend();
-		    for (; aIter != aEnd; ++aIter)
-            {
-                try
-                {
-                    const awt::Point aPos = (*aIter)->getPosition();
-                    const awt::Size aSize = (*aIter)->getSize();
-			        _xSection->add(*aIter);
-                    (*aIter)->setPosition( aPos );
-        		    (*aIter)->setSize( aSize );
-                }
-                catch(const uno::Exception&)
-                {
-                    OSL_ENSURE(0,"lcl_insertElements:Exception caught!");
-                }
-            }
-	    }
-    }
-    //----------------------------------------------------------------------------
-    void lcl_setValues(const uno::Reference< report::XSection >& _xSection,const ::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >& _aValues)
-    {
-        if ( _xSection.is() )
-	    {
-		    ::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >::const_iterator aIter = _aValues.begin();
-		    ::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >::const_iterator aEnd = _aValues.end();
-		    for (; aIter != aEnd; ++aIter)
-            {
-                try
-                {
-			        _xSection->setPropertyValue(aIter->first,aIter->second);
-                }
-                catch(const uno::Exception&)
-                {
-                    OSL_ENSURE(0,"lcl_setValues:Exception caught!");
-                }
-            }
-	    }
-    }
+	}
+	//----------------------------------------------------------------------------
+	void lcl_insertElements(const uno::Reference< report::XSection >& _xSection,const ::std::vector< uno::Reference< drawing::XShape> >& _aControls)
+	{
+		if ( _xSection.is() )
+		{
+			::std::vector< uno::Reference< drawing::XShape> >::const_reverse_iterator aIter = _aControls.rbegin();
+			::std::vector< uno::Reference< drawing::XShape> >::const_reverse_iterator aEnd = _aControls.rend();
+			for (; aIter != aEnd; ++aIter)
+			{
+				try
+				{
+					const awt::Point aPos = (*aIter)->getPosition();
+					const awt::Size aSize = (*aIter)->getSize();
+					_xSection->add(*aIter);
+					(*aIter)->setPosition( aPos );
+					(*aIter)->setSize( aSize );
+				}
+				catch(const uno::Exception&)
+				{
+					OSL_ENSURE(0,"lcl_insertElements:Exception caught!");
+				}
+			}
+		}
+	}
+	//----------------------------------------------------------------------------
+	void lcl_setValues(const uno::Reference< report::XSection >& _xSection,const ::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >& _aValues)
+	{
+		if ( _xSection.is() )
+		{
+			::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >::const_iterator aIter = _aValues.begin();
+			::std::vector< ::std::pair< ::rtl::OUString ,uno::Any> >::const_iterator aEnd = _aValues.end();
+			for (; aIter != aEnd; ++aIter)
+			{
+				try
+				{
+					_xSection->setPropertyValue(aIter->first,aIter->second);
+				}
+				catch(const uno::Exception&)
+				{
+					OSL_ENSURE(0,"lcl_setValues:Exception caught!");
+				}
+			}
+		}
+	}
 }
 //----------------------------------------------------------------------------
-TYPEINIT1( OSectionUndo,         OCommentUndoAction );
+TYPEINIT1( OSectionUndo, OCommentUndoAction );
 DBG_NAME(rpt_OSectionUndo)
 //----------------------------------------------------------------------------
 OSectionUndo::OSectionUndo(OReportModel& _rMod
-                           ,sal_uInt16 _nSlot
+						   ,sal_uInt16 _nSlot
 						   ,Action _eAction
 						   ,sal_uInt16 nCommentID)
 : OCommentUndoAction(_rMod,nCommentID)
@@ -126,55 +127,55 @@ OSectionUndo::OSectionUndo(OReportModel& _rMod
 ,m_nSlot(_nSlot)
 ,m_bInserted(false)
 {
-    DBG_CTOR(rpt_OSectionUndo,NULL);    
+	DBG_CTOR(rpt_OSectionUndo,NULL);
 }
 // -----------------------------------------------------------------------------
 OSectionUndo::~OSectionUndo()
 {
-    if ( !m_bInserted )
-    {
-        OXUndoEnvironment& rEnv = static_cast< OReportModel& >( rMod ).GetUndoEnv();
-        ::std::vector< uno::Reference< drawing::XShape> >::iterator aEnd = m_aControls.end();
-        for (::std::vector< uno::Reference< drawing::XShape> >::iterator aIter = m_aControls.begin(); aIter != aEnd; ++aIter)
-        {
-            uno::Reference< drawing::XShape> xShape = *aIter;
-            rEnv.RemoveElement(xShape);
+	if ( !m_bInserted )
+	{
+		OXUndoEnvironment& rEnv = static_cast< OReportModel& >( rMod ).GetUndoEnv();
+		::std::vector< uno::Reference< drawing::XShape> >::iterator aEnd = m_aControls.end();
+		for (::std::vector< uno::Reference< drawing::XShape> >::iterator aIter = m_aControls.begin(); aIter != aEnd; ++aIter)
+		{
+			uno::Reference< drawing::XShape> xShape = *aIter;
+			rEnv.RemoveElement(xShape);
 
 #if OSL_DEBUG_LEVEL > 0
-            SvxShape* pShape = SvxShape::getImplementation( xShape );
-            SdrObject* pObject = pShape ? pShape->GetSdrObject() : NULL;
-            OSL_ENSURE( pShape && pShape->HasSdrObjectOwnership() && pObject && !pObject->IsInserted(),
-                "OSectionUndo::~OSectionUndo: inconsistency in the shape/object ownership!" );
+			SvxShape* pShape = SvxShape::getImplementation( xShape );
+			SdrObject* pObject = pShape ? pShape->GetSdrObject() : NULL;
+			OSL_ENSURE( pShape && pShape->HasSdrObjectOwnership() && pObject && !pObject->IsInserted(),
+				"OSectionUndo::~OSectionUndo: inconsistency in the shape/object ownership!" );
 #endif
-            try
-            {
-                comphelper::disposeComponent(xShape);
-            }
-            catch(uno::Exception)
-            {
-                OSL_ENSURE(0,"Exception caught!");
-            }
-        }
-    }
-    DBG_DTOR(rpt_OSectionUndo,NULL);    
+			try
+			{
+				comphelper::disposeComponent(xShape);
+			}
+			catch(uno::Exception)
+			{
+				OSL_ENSURE(0,"Exception caught!");
+			}
+		}
+	}
+	DBG_DTOR(rpt_OSectionUndo,NULL);
 }
 // -----------------------------------------------------------------------------
 void OSectionUndo::collectControls(const uno::Reference< report::XSection >& _xSection)
 {
-    m_aControls.clear();
+	m_aControls.clear();
 	try
-	{ 
-        // copy all properties for restoring
-        uno::Reference< beans::XPropertySetInfo> xInfo = _xSection->getPropertySetInfo();
-        uno::Sequence< beans::Property> aSeq = xInfo->getProperties();
-        const beans::Property* pIter = aSeq.getConstArray();
-        const beans::Property* pEnd	 = pIter + aSeq.getLength();
-        for(;pIter != pEnd;++pIter)
-        {
-            if ( 0 == (pIter->Attributes & beans::PropertyAttribute::READONLY) )
-                m_aValues.push_back(::std::pair< ::rtl::OUString ,uno::Any>(pIter->Name,_xSection->getPropertyValue(pIter->Name)));
-        }
-        lcl_collectElements(_xSection,m_aControls);
+	{
+		// copy all properties for restoring
+		uno::Reference< beans::XPropertySetInfo> xInfo = _xSection->getPropertySetInfo();
+		uno::Sequence< beans::Property> aSeq = xInfo->getProperties();
+		const beans::Property* pIter = aSeq.getConstArray();
+		const beans::Property* pEnd	 = pIter + aSeq.getLength();
+		for(;pIter != pEnd;++pIter)
+		{
+			if ( 0 == (pIter->Attributes & beans::PropertyAttribute::READONLY) )
+				m_aValues.push_back(::std::pair< ::rtl::OUString ,uno::Any>(pIter->Name,_xSection->getPropertyValue(pIter->Name)));
+		}
+		lcl_collectElements(_xSection,m_aControls);
 	}
 	catch(uno::Exception&)
 	{
@@ -183,47 +184,47 @@ void OSectionUndo::collectControls(const uno::Reference< report::XSection >& _xS
 //----------------------------------------------------------------------------
 void OSectionUndo::Undo()
 {
-    try
-    {
+	try
+	{
 		switch ( m_eAction )
 		{
 		case Inserted:
-            implReRemove();
-            break;
+			implReRemove();
+			break;
 
 		case Removed:
-            implReInsert();
-            break;
-    	}
-    }
-    catch( const Exception& )
-    {
-        OSL_ENSURE( sal_False, "OSectionUndo::Undo: caught an exception!" );
-    }
+			implReInsert();
+			break;
+		}
+	}
+	catch( const Exception& )
+	{
+		OSL_ENSURE( sal_False, "OSectionUndo::Undo: caught an exception!" );
+	}
 }
 //----------------------------------------------------------------------------
 void OSectionUndo::Redo()
 {
-    try
-    {
-	    switch ( m_eAction )
+	try
+	{
+		switch ( m_eAction )
 		{
 		case Inserted:
-            implReInsert();
-            break;
+			implReInsert();
+			break;
 
 		case Removed:
-            implReRemove();
+			implReRemove();
 			break;
-    	}
-    }
-    catch( const Exception& )
-    {
-        OSL_ENSURE( sal_False, "OSectionUndo::Redo: caught an exception!" );
-    }
+		}
+	}
+	catch( const Exception& )
+	{
+		OSL_ENSURE( sal_False, "OSectionUndo::Redo: caught an exception!" );
+	}
 }
 //----------------------------------------------------------------------------
-TYPEINIT1( OReportSectionUndo,         OSectionUndo );
+TYPEINIT1( OReportSectionUndo, OSectionUndo );
 //----------------------------------------------------------------------------
 OReportSectionUndo::OReportSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
 									   ,::std::mem_fun_t< uno::Reference< report::XSection >
@@ -236,7 +237,7 @@ OReportSectionUndo::OReportSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
 ,m_pMemberFunction(_pMemberFunction)
 {
 	if( m_eAction == Removed )
-        collectControls(m_pMemberFunction(&m_aReportHelper));
+		collectControls(m_pMemberFunction(&m_aReportHelper));
 }
 // -----------------------------------------------------------------------------
 OReportSectionUndo::~OReportSectionUndo()
@@ -248,21 +249,21 @@ void OReportSectionUndo::implReInsert( )
 	const uno::Sequence< beans::PropertyValue > aArgs;
 	m_pController->executeChecked(m_nSlot,aArgs);
 	uno::Reference< report::XSection > xSection = m_pMemberFunction(&m_aReportHelper);
-    lcl_insertElements(xSection,m_aControls);
-    lcl_setValues(xSection,m_aValues);
-    m_bInserted = true;
+	lcl_insertElements(xSection,m_aControls);
+	lcl_setValues(xSection,m_aValues);
+	m_bInserted = true;
 }
 //----------------------------------------------------------------------------
 void OReportSectionUndo::implReRemove( )
 {
-    if( m_eAction == Removed )
-        collectControls(m_pMemberFunction(&m_aReportHelper));
+	if( m_eAction == Removed )
+		collectControls(m_pMemberFunction(&m_aReportHelper));
 	const uno::Sequence< beans::PropertyValue > aArgs;
-	m_pController->executeChecked(m_nSlot,aArgs);    
-    m_bInserted = false;
+	m_pController->executeChecked(m_nSlot,aArgs);
+	m_bInserted = false;
 }
 //----------------------------------------------------------------------------
-TYPEINIT1( OGroupSectionUndo,         OSectionUndo );
+TYPEINIT1( OGroupSectionUndo, OSectionUndo );
 //----------------------------------------------------------------------------
 OGroupSectionUndo::OGroupSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
 									   ,::std::mem_fun_t< uno::Reference< report::XSection >
@@ -274,30 +275,30 @@ OGroupSectionUndo::OGroupSectionUndo(OReportModel& _rMod,sal_uInt16 _nSlot
 ,m_aGroupHelper(_xGroup)
 ,m_pMemberFunction(_pMemberFunction)
 {
-    if( m_eAction == Removed )
-    {
-        uno::Reference< report::XSection > xSection = m_pMemberFunction(&m_aGroupHelper);
+	if( m_eAction == Removed )
+	{
+		uno::Reference< report::XSection > xSection = m_pMemberFunction(&m_aGroupHelper);
 		if ( xSection.is() )
-            m_sName = xSection->getName();
-        collectControls(xSection);
-    }
+			m_sName = xSection->getName();
+		collectControls(xSection);
+	}
 }
 //----------------------------------------------------------------------------
 String OGroupSectionUndo::GetComment() const
 {
-    if ( !m_sName.getLength() )
-    {
-        try
-        {
-            uno::Reference< report::XSection > xSection = const_cast<OGroupSectionUndo*>(this)->m_pMemberFunction(&const_cast<OGroupSectionUndo*>(this)->m_aGroupHelper);
-    					
-		    if ( xSection.is() )
-                m_sName = xSection->getName();
-        }
-        catch(uno::Exception&)
-        {}
-    }
-    return m_strComment + m_sName;
+	if ( !m_sName.getLength() )
+	{
+		try
+		{
+			uno::Reference< report::XSection > xSection = const_cast<OGroupSectionUndo*>(this)->m_pMemberFunction(&const_cast<OGroupSectionUndo*>(this)->m_aGroupHelper);
+
+			if ( xSection.is() )
+				m_sName = xSection->getName();
+		}
+		catch(uno::Exception&)
+		{}
+	}
+	return m_strComment + m_sName;
 }
 //----------------------------------------------------------------------------
 void OGroupSectionUndo::implReInsert( )
@@ -311,15 +312,15 @@ void OGroupSectionUndo::implReInsert( )
 	m_pController->executeChecked(m_nSlot,aArgs);
 
 	uno::Reference< report::XSection > xSection = m_pMemberFunction(&m_aGroupHelper);
-    lcl_insertElements(xSection,m_aControls);
-    lcl_setValues(xSection,m_aValues);
-    m_bInserted = true;
+	lcl_insertElements(xSection,m_aControls);
+	lcl_setValues(xSection,m_aValues);
+	m_bInserted = true;
 }
 //----------------------------------------------------------------------------
 void OGroupSectionUndo::implReRemove( )
 {
-    if( m_eAction == Removed )
-        collectControls(m_pMemberFunction(&m_aGroupHelper));
+	if( m_eAction == Removed )
+		collectControls(m_pMemberFunction(&m_aGroupHelper));
 
 	uno::Sequence< beans::PropertyValue > aArgs(2);
 
@@ -327,12 +328,12 @@ void OGroupSectionUndo::implReRemove( )
 	aArgs[0].Value <<= sal_False;
 	aArgs[1].Name = PROPERTY_GROUP;
 	aArgs[1].Value <<= m_aGroupHelper.getGroup();
-	
+
 	m_pController->executeChecked(m_nSlot,aArgs);
-    m_bInserted = false;
+	m_bInserted = false;
 }
 //----------------------------------------------------------------------------
-TYPEINIT1( OGroupUndo,         OCommentUndoAction );
+TYPEINIT1( OGroupUndo, OCommentUndoAction );
 //----------------------------------------------------------------------------
 OGroupUndo::OGroupUndo(OReportModel& _rMod
 					   ,sal_uInt16 nCommentID
@@ -355,7 +356,7 @@ void OGroupUndo::implReInsert( )
 	}
 	catch(uno::Exception&)
 	{
-		OSL_ENSURE(0,"Exception catched while undoing remove group");
+		OSL_ENSURE(0,"Exception caught while undoing remove group");
 	}
 }
 //----------------------------------------------------------------------------
@@ -367,7 +368,7 @@ void OGroupUndo::implReRemove( )
 	}
 	catch(uno::Exception&)
 	{
-		OSL_ENSURE(0,"Exception catched while redoing remove group");
+		OSL_ENSURE(0,"Exception caught while redoing remove group");
 	}
 }
 //----------------------------------------------------------------------------
@@ -376,14 +377,14 @@ void OGroupUndo::Undo()
 	switch ( m_eAction )
 	{
 	case Inserted:
-        implReRemove();
-        break;
+		implReRemove();
+		break;
 
 	case Removed:
-        implReInsert();
-        break;
-    }
-	
+		implReInsert();
+		break;
+	}
+
 }
 //----------------------------------------------------------------------------
 void OGroupUndo::Redo()
@@ -391,17 +392,16 @@ void OGroupUndo::Redo()
 	switch ( m_eAction )
 	{
 	case Inserted:
-        implReInsert();
-        break;
+		implReInsert();
+		break;
 
 	case Removed:
-        implReRemove();
+		implReRemove();
 		break;
-    }
+	}
 }
 //----------------------------------------------------------------------------
 //============================================================================
 } // rptui
 //============================================================================
-
 

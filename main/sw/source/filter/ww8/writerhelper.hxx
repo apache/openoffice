@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 /* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil -*- */
@@ -88,18 +89,18 @@ namespace sw
     /** Make exporting a Writer Frame easy
 
         In word all frames are effectively anchored to character or as
-        character. This is nice and simple, writer is massively complex in this
+        character. This is nice and simple, Writer is massively complex in this
         area, so this sw::Frame simplies matters by providing a single unified
-        view of the multitute of elements in writer and their differing quirks.
+        view of the multitude of elements in Writer and their differing quirks.
 
-        A sw::Frame wraps a writer frame and is guaranted to have a suitable
+        A sw::Frame wraps a Writer frame and is guaranted to have a suitable
         anchor position available from it. It hides much of the needless
-        complexity of the multitude of floating/inline elements in writer, it...
+        complexity of the multitude of floating/inline elements in Writer, it...
 
         Guarantees an anchor position for a frame.
         Provides a readable way to see if we are anchored inline. (as character)
         Provides a simple way to flag what type of entity this frame describes.
-        Provides the size of the element as drawn by writer.
+        Provides the size of the element as drawn by Writer.
 
         @author
         <a href="mailto:cmc@openoffice.org">Caol&aacute;n McNamara</a>
@@ -127,7 +128,7 @@ namespace sw
         Frame(const SwFrmFmt &rFlyFrm, const SwPosition &rPos);
 	Frame(const Graphic&, const SwPosition &);
 	//End
-        /** Get the writer SwFrmFmt that this object describes
+        /** Get the Writer SwFrmFmt that this object describes
 
             @return
             The wrapped SwFrmFmt
@@ -167,7 +168,7 @@ namespace sw
         /** Even if the frame isn't an inline frame, force it to behave as one
 
             There are a variety of circumstances where word cannot have
-            anything except inline elements, e.g. inside frames. So its easier
+            anything except inline elements, e.g. inside frames. So it's easier
             to force this sw::Frame into behaving as one, instead of special
             casing export code all over the place.
 
@@ -184,10 +185,10 @@ namespace sw
 	bool HasGraphic() const { return mbForBullet; }
 
 
-        /** Does this sw::Frame refer to the same writer content as another
+        /** Does this sw::Frame refer to the same Writer content as another
 
          @return
-         if the two sw::Frames are handling the same writer frame
+         if the two sw::Frames are handling the same Writer frame
         */
         bool RefersToSameFrameAs(const Frame &rOther) const
         {
@@ -232,7 +233,7 @@ namespace sw
         /** Provide a dynamic_cast style cast for SfxPoolItems
 
             A SfxPoolItem generally need to be cast back to its original type
-            to be useful, which is both tedious and errorprone. So item_cast is
+            to be useful, which is both tedious and error prone. So item_cast is
             a helper template to aid the process and test if the cast is
             correct.
 
@@ -288,8 +289,8 @@ namespace sw
             and receiving a SfxPoolItem reference which must then typically be
             cast back to its original type which is both tedious and verbose.
 
-            ItemGet uses item_cast () on the retrived reference to test that the
-            retrived property is of the type that the developer thinks it is.
+            ItemGet uses item_cast () on the retrieved reference to test that the
+            retrieved property is of the type that the developer thinks it is.
 
             @param rNode
             The SwCntntNode to retrieve the property from
@@ -319,8 +320,8 @@ namespace sw
             and receiving a SfxPoolItem reference which must then typically be
             cast back to its original type which is both tedious and verbose.
 
-            ItemGet uses item_cast () on the retrived reference to test that the
-            retrived property is of the type that the developer thinks it is.
+            ItemGet uses item_cast () on the retrieved reference to test that the
+            retrieved property is of the type that the developer thinks it is.
 
             @param rFmt
             The SwFmt to retrieve the property from
@@ -348,8 +349,8 @@ namespace sw
             and receiving a SfxPoolItem reference which must then typically be
             cast back to its original type which is both tedious and verbose.
 
-            ItemGet uses item_cast () on the retrived reference to test that the
-            retrived property is of the type that the developer thinks it is.
+            ItemGet uses item_cast () on the retrieved reference to test that the
+            retrieved property is of the type that the developer thinks it is.
 
             @param rSet
             The SfxItemSet to retrieve the property from
@@ -382,8 +383,8 @@ namespace sw
             DefaultItemGet returns a reference to the default property of a
             given SfxItemPool for a given property id, e.g. default fontsize
 
-            DefaultItemGet uses item_cast () on the retrived reference to test
-            that the retrived property is of the type that the developer thinks
+            DefaultItemGet uses item_cast () on the retrieved reference to test
+            that the retrieved property is of the type that the developer thinks
             it is.
 
             @param rPool
@@ -418,8 +419,8 @@ namespace sw
             given SwDoc (Writer Document) for a given property id, e.g default
             fontsize
 
-            DefaultItemGet uses item_cast () on the retrived reference to test
-            that the retrived property is of the type that the developer thinks
+            DefaultItemGet uses item_cast () on the retrieved reference to test
+            that the retrieved property is of the type that the developer thinks
             it is.
 
             @param rPool
@@ -455,8 +456,8 @@ namespace sw
             property id if it exists in the SfxItemSet or its chain of parents,
             e.g. fontsize
 
-            HasItem uses item_cast () on the retrived pointer to test that the
-            retrived property is of the type that the developer thinks it is.
+            HasItem uses item_cast () on the retrieved pointer to test that the
+            retrieved property is of the type that the developer thinks it is.
 
             @param rSet
             The SfxItemSet whose property we want
@@ -488,8 +489,8 @@ namespace sw
             HasItem returns a pointer to the requested SfxPoolItem for a given
             property id if it exists in the SwFmt e.g. fontsize
 
-            HasItem uses item_cast () on the retrived pointer to test that the
-            retrived property is of the type that the developer thinks it is.
+            HasItem uses item_cast () on the retrieved pointer to test that the
+            retrieved property is of the type that the developer thinks it is.
 
             @param rSet
             The SwFmt whose property we want
@@ -548,7 +549,7 @@ namespace sw
 
         /** Get a Character Style which fits a given name
 
-            Its surprisingly tricky to get a style when all you have is a name,
+            It's surprisingly tricky to get a style when all you have is a name,
             but that's what this does
 
             @param rDoc
@@ -669,7 +670,7 @@ namespace sw
         */
         Frames GetFramesInNode(const Frames &rFrames, const SwNode &rNode);
 
-#if 0        
+#if 0
         /** Get the Frames anchored for all nodes between two points
 
             Given a container of frames, find the ones anchored to the nodes
@@ -739,7 +740,7 @@ namespace sw
 
         /** Does a node have a "page break before" applied
 
-            Both text nodes and tables in writer can have "page break before"
+            Both text nodes and tables in Writer can have "page break before"
             This function gives a unified view to both entities
 
             @param rNode
@@ -755,7 +756,7 @@ namespace sw
 
         /** Make a best fit Polygon from a PolyPolygon
 
-            For custom contours in writer we use a PolyPolygon, while word uses
+            For custom contours in Writer we use a PolyPolygon, while word uses
             a simple polygon, so we need to try and make the best polygon from
             a PolyPolygon
 
@@ -840,8 +841,8 @@ namespace sw
             another SfxItemPool
 
             This arises because the drawing layer uses the same properties as
-            writer e.g. SvxWeight, but for some reason uses different ids
-            for the same properties as writer.
+            Writer e.g. SvxWeight, but for some reason uses different ids
+            for the same properties as Writer.
 
             @param rDestPool
             The SfxItemPool in whose terms the Id is returned
@@ -867,8 +868,8 @@ namespace sw
             for a given SfxItemSet.
 
             This arises because the drawing layer uses the same properties as
-            writer e.g. SvxWeight, but for some reason uses different ids
-            for the same properties as writer.
+            Writer e.g. SvxWeight, but for some reason uses different ids
+            for the same properties as Writer.
 
             This is effectively the same as TransformWhichBetweenPools except
             at a slightly different layer.
@@ -880,7 +881,7 @@ namespace sw
             The SwDoc in whose terms the Id is passed in
 
             @param nWhich
-            The Id to transform from writer to the SfxItemSet's domain
+            The Id to transform from Writer to the SfxItemSet's domain
 
             @return 0 on failure, the correct SfxItemSet Id on success
 
@@ -956,11 +957,11 @@ namespace sw
 #ifdef DEBUGDUMP
         /** Create a SvStream to dump data to during debugging
 
-            This creates a file in the program dir of OOo, delete the SvStream
+            This creates a file in the program dir of AOO, delete the SvStream
             after you are done with it
 
             @param rSuffix
-            The suffix that will be appened to this debugging file
+            The suffix that will be appended to this debugging file
 
             @return a SvStream to dump data to
 

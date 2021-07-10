@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
 <topic id="textscalc0104060107xml" indexer="include">
 <title id="tit" xml-lang="en-US">Array Functions</title>
@@ -48,10 +47,10 @@
 <bookmark_value>forced array handling</bookmark_value>
 </bookmark><comment>mw deleted "creating;"</comment>
 <paragraph role="heading" id="hd_id3147273" xml-lang="en-US" level="1" l10n="U" oldref="1">Array Functions</paragraph>
-<paragraph role="paragraph" id="par_id3154744" xml-lang="en-US" l10n="U" oldref="2"><variable id="matrixtext">This category contains the array functions. 
+<paragraph role="paragraph" id="par_id3154744" xml-lang="en-US" l10n="U" oldref="2"><variable id="matrixtext">This category contains the array functions.
 </variable></paragraph>
 <paragraph role="heading" id="hd_id3146084" xml-lang="en-US" level="2" l10n="U" oldref="257">What is an Array?</paragraph>
-<paragraph role="paragraph" id="par_id3154298" xml-lang="en-US" l10n="U" oldref="258"><variable id="wasmatrix">An array is a linked range of cells on a spreadsheet containing values. 
+<paragraph role="paragraph" id="par_id3154298" xml-lang="en-US" l10n="U" oldref="258"><variable id="wasmatrix">An array is a linked range of cells on a spreadsheet containing values.
 </variable> A square range of 3 rows and 3 columns is a 3 x 3 array:</paragraph>
 <table id="tbl_id3151168">
 <tablerow>
@@ -651,7 +650,7 @@
 </bookmark>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_FUNC_RGP" id="bm_id3144716" localize="false"/>
 <paragraph role="heading" id="hd_id3109846" xml-lang="en-US" level="2" l10n="U" oldref="64">LINEST</paragraph>
-<paragraph role="paragraph" id="par_id3144733" xml-lang="en-US" l10n="CHG" oldref="65"><ahelp hid="HID_FUNC_RGP">Returns a table of statistics for a straight line that best fits a data set.</ahelp><comment>changed based on http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_LINEST_function (issue 76142)</comment></paragraph>
+<paragraph role="paragraph" id="par_id3144733" xml-lang="en-US" l10n="CHG" oldref="65"><ahelp hid="HID_FUNC_RGP">Returns a table of statistics for a straight line that best fits a data set.</ahelp><comment>changed based on https://wiki.openoffice.org/wiki/Documentation/How_Tos/Calc:_LINEST_function (issue 76142)</comment></paragraph>
 <paragraph role="heading" id="hd_id3152825" xml-lang="en-US" level="3" l10n="U" oldref="66">Syntax</paragraph>
 <paragraph role="code" id="par_id3152839" xml-lang="en-US" l10n="U" oldref="67">LINEST(data_Y; data_X; linearType; stats)</paragraph>
 <paragraph role="paragraph" id="par_id3152853" xml-lang="en-US" l10n="U" oldref="68">

@@ -19,6 +19,8 @@
  *
  *************************************************************/
 
+
+
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_framework.hxx"
 
@@ -308,7 +310,7 @@ NewToolbarController::execute( sal_Int16 /*KeyModifier*/ )
     {
         // TODO investigate how to wrap Get/SetUserValue in css::awt::XMenu
         MenuConfiguration::Attributes* pMenuAttributes( 0 );
-        VCLXPopupMenu*  pTkPopupMenu =
+        VCLXPopupMenu* pTkPopupMenu =
             ( VCLXPopupMenu * ) VCLXMenu::GetImplementation( m_xPopupMenu );
 
         vos::OGuard aSolarMutexGuard( Application::GetSolarMutex() );
@@ -322,7 +324,7 @@ NewToolbarController::execute( sal_Int16 /*KeyModifier*/ )
     }
 
     css::uno::Sequence< css::beans::PropertyValue > aArgs( 1 );
-    aArgs[0].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "Referer"  ));
+    aArgs[0].Name = OUString( RTL_CONSTASCII_USTRINGPARAM( "Referer" ) );
     aArgs[0].Value <<= OUString( RTL_CONSTASCII_USTRINGPARAM( SFX_REFERER_USER ) );
 
     dispatchCommand( m_aLastURL, aArgs, aTarget );
@@ -334,19 +336,19 @@ void NewToolbarController::functionExecuted( const OUString &rCommand )
 }
 
 /**
-    it return the existing state of the given URL in the popupmenu of this toolbox control.
+    it returns the existing state of the given URL in the popupmenu of this toolbox control.
 
     If the given URL can be located as an action command of one menu item of the
     popup menu of this control, we return sal_True. Otherwise we return sal_False.
     Further we return a fallback URL, in case we have to return sal_False. Because
-    the outside code must select a valid item of the popup menu every time ...
+    the outside code must select a valid item of the popup menu every time...
     and we define it here. By the way this method was written to handle
     error situations gracefully. E.g. it can be called during creation time
     but then we have no valid menu. For this case we know another fallback URL.
     Then we return the private:factory/ URL of the default factory.
 
     @param  rPopupMenu
-                pounts to the popup menu, on which item we try to locate the given URL
+                points to the popup menu, on which item we try to locate the given URL
                 Can be NULL! Search will be suppressed then.
 
     @param  sURL

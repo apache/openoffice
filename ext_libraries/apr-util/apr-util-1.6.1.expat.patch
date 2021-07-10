@@ -1,5 +1,5 @@
---- misc/apr-util-1.5.4/build/apu-conf.m4	2011-08-08 06:32:27.000000000 -0300
-+++ misc/build/apr-util-1.5.4/build/apu-conf.m4	2013-06-12 20:09:05.877947541 -0300
+--- misc/apr-util-1.6.1/build/apu-conf.m4	2011-08-08 06:32:27.000000000 -0300
++++ misc/build/apr-util-1.6.1/build/apu-conf.m4	2013-06-12 20:09:05.877947541 -0300
 @@ -87,8 +87,14 @@ dnl be dropped later.
  dnl
  AC_DEFUN([APU_SYSTEM_EXPAT], [

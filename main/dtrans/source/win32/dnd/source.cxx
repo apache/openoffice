@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ DragSource::DragSource( const Reference<XMultiServiceFactory>& sf):
 //	m_pcurrentContext_impl(0),
 	m_hAppWindow(0),
 	m_MouseButton(0),
-    m_RunningDndOperationCount(0)
+	m_RunningDndOperationCount(0)
 {
 	g_moduleCount.modCnt.acquire( &g_moduleCount.modCnt );
 }
@@ -90,23 +90,23 @@ DragSource::~DragSource()
 
 //----------------------------------------------------
 /** First start a new drag and drop thread if
-     the last one has finished
+	the last one has finished
 
-     ????
-          Do we really need a separate thread for
-          every Dnd opeartion or only if the source
-          thread is an MTA thread
-     ????
+	????
+		Do we really need a separate thread for
+		every Dnd operation or only if the source
+		thread is an MTA thread
+	????
 */
 void DragSource::StartDragImpl(
-    const DragGestureEvent& trigger,
-    sal_Int8 sourceActions,
-    sal_Int32 /*cursor*/,
-    sal_Int32 /*image*/,
-    const Reference<XTransferable >& trans,
-    const Reference<XDragSourceListener >& listener )
+	const DragGestureEvent& trigger,
+	sal_Int8 sourceActions,
+	sal_Int32 /*cursor*/,
+	sal_Int32 /*image*/,
+	const Reference<XTransferable >& trans,
+	const Reference<XDragSourceListener >& listener )
 {
-    // The actions supported by the drag source
+	// The actions supported by the drag source
 	m_sourceActions= sourceActions;
 	// We need to know which mouse button triggered the operation.
 	// If it was the left one, then the drop occurs when that button
@@ -132,26 +132,26 @@ void DragSource::StartDragImpl(
 	g_XTransferable = trans;
 	//<-- TRA
 
-    m_spDataObject= m_aDataConverter.createDataObjFromTransferable(
+	m_spDataObject= m_aDataConverter.createDataObjFromTransferable(
                     m_serviceFactory, trans);
 
 	// Obtain the id of the thread that created the window
 	DWORD processId;
 	m_threadIdWindow= GetWindowThreadProcessId( m_hAppWindow, &processId);
 
-    // hold the instance for the DnD thread, it's to late
-    // to acquire at the start of the thread procedure
-    // the thread procedure is responsible for the release
-    acquire();
+	// hold the instance for the DnD thread, it's to late
+	// to acquire at the start of the thread procedure
+	// the thread procedure is responsible for the release
+	acquire();
 
-	// The thread acccesses members of this instance but does not call acquire.
+	// The thread accesses members of this instance but does not call acquire.
 	// Hopefully this instance is not destroyed before the thread has terminated.
 	unsigned threadId;
 	HANDLE hThread= reinterpret_cast<HANDLE>(_beginthreadex(
-        0, 0, DndOleSTAFunc, reinterpret_cast<void*>(this), 0, &threadId));
+		0, 0, DndOleSTAFunc, reinterpret_cast<void*>(this), 0, &threadId));
 
-    // detach from thread
-    CloseHandle(hThread);
+	// detach from thread
+	CloseHandle(hThread);
 }
 
 // XInitialization
@@ -187,57 +187,57 @@ sal_Int32 SAL_CALL DragSource::getDefaultCursor( sal_Int8 /*dragAction*/ )
 
 //----------------------------------------------------
 /** Notifies the XDragSourceListener by
-     calling dragDropEnd
+	calling dragDropEnd
 */
 void SAL_CALL DragSource::startDrag(
-    const DragGestureEvent& trigger,
+	const DragGestureEvent& trigger,
 	sal_Int8 sourceActions,
 	sal_Int32 cursor,
 	sal_Int32 image,
 	const Reference<XTransferable >& trans,
 	const Reference<XDragSourceListener >& listener ) throw( RuntimeException)
 {
-    // Allow only one running dnd operation at a time,
-    // see XDragSource documentation
+	// Allow only one running dnd operation at a time,
+	// see XDragSource documentation
 
-    long cnt = InterlockedIncrement(&m_RunningDndOperationCount);
+	long cnt = InterlockedIncrement(&m_RunningDndOperationCount);
 
-    if (1 == cnt)
-    {
-        StartDragImpl(trigger, sourceActions, cursor, image, trans, listener);
-    }
-    else
-    {
-        //OSL_ENSURE(false, "Overlapping Drag&Drop operation rejected!");
+	if (1 == cnt)
+	{
+		StartDragImpl(trigger, sourceActions, cursor, image, trans, listener);
+	}
+	else
+	{
+		//OSL_ENSURE(false, "Overlapping Drag&Drop operation rejected!");
 
-        cnt = InterlockedDecrement(&m_RunningDndOperationCount);
+		cnt = InterlockedDecrement(&m_RunningDndOperationCount);
 
-        DragSourceDropEvent dsde;
+		DragSourceDropEvent dsde;
 
-        dsde.DropAction	 = ACTION_NONE;
-        dsde.DropSuccess = false;
+		dsde.DropAction	 = ACTION_NONE;
+		dsde.DropSuccess = false;
 
-        try
-        {
-            listener->dragDropEnd(dsde);
-        }
-        catch(RuntimeException&)
-        {
-            OSL_ENSURE(false, "Runtime exception during event dispatching");
-        }
-    }
+		try
+		{
+			listener->dragDropEnd(dsde);
+		}
+		catch(RuntimeException&)
+		{
+			OSL_ENSURE(false, "Runtime exception during event dispatching");
+		}
+	}
 }
 
 //----------------------------------------------------
 /**IDropTarget
 */
-HRESULT STDMETHODCALLTYPE DragSource::QueryInterface( REFIID riid, void  **ppvObject)
+HRESULT STDMETHODCALLTYPE DragSource::QueryInterface( REFIID riid, void **ppvObject)
 {
 	if( !ppvObject)
 		return E_POINTER;
 	*ppvObject= NULL;
 
-	if(  riid == __uuidof( IUnknown) )
+	if( riid == __uuidof( IUnknown) )
 		*ppvObject= static_cast<IUnknown*>( this);
 	else if ( riid == __uuidof( IDropSource) )
 		*ppvObject= static_cast<IDropSource*>( this);
@@ -266,7 +266,7 @@ ULONG STDMETHODCALLTYPE DragSource::AddRef( void)
 */
 ULONG STDMETHODCALLTYPE DragSource::Release( void)
 {
-    ULONG ref= m_refCount;
+	ULONG ref= m_refCount;
 	release();
 	return --ref;
 }
@@ -334,36 +334,36 @@ dwEffect
 // XServiceInfo
 OUString SAL_CALL DragSource::getImplementationName(  ) throw (RuntimeException)
 {
-    return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_IMPL_NAME));;
+	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_IMPL_NAME));;
 }
 // XServiceInfo
 sal_Bool SAL_CALL DragSource::supportsService( const OUString& ServiceName ) throw (RuntimeException)
 {
-    if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME ))))
-        return sal_True;
-    return sal_False;
+	if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME ))))
+		return sal_True;
+	return sal_False;
 }
 
 Sequence< OUString > SAL_CALL DragSource::getSupportedServiceNames(  ) throw (RuntimeException)
 {
-    OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME))};
+	OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDSOURCE_SERVICE_NAME))};
 
-    return Sequence<OUString>(names, 1);
+	return Sequence<OUString>(names, 1);
 }
 
 //----------------------------------------------------
 /**This function is called as extra thread from
-    DragSource::executeDrag. The function
-    carries out a drag and drop operation by calling
-    DoDragDrop. The thread also notifies all
-    XSourceListener.
+	DragSource::executeDrag. The function
+	carries out a drag and drop operation by calling
+	DoDragDrop. The thread also notifies all
+	XSourceListener.
 */
 unsigned __stdcall DndOleSTAFunc(LPVOID pParams)
 {
 	// The structure contains all arguments for DoDragDrop and other
 	DragSource *pSource= (DragSource*)pParams;
 
-    // Drag and drop only works in a thread in which OleInitialize is called.
+	// Drag and drop only works in a thread in which OleInitialize is called.
 	HRESULT hr= OleInitialize( NULL);
 
 	if(SUCCEEDED(hr))
@@ -387,10 +387,10 @@ unsigned __stdcall DndOleSTAFunc(LPVOID pParams)
 			dndActionsToDropEffects( pSource->m_sourceActions),
 			&dwEffect);
 
-        // #105428 detach my message queue from the other threads
-        // message queue before calling fire_dragDropEnd else
-        // the office may appear to hang sometimes
-        AttachThreadInput( threadId, pSource->m_threadIdWindow, FALSE);
+		// #105428 detach my message queue from the other threads
+		// message queue before calling fire_dragDropEnd else
+		// the office may appear to hang sometimes
+		AttachThreadInput( threadId, pSource->m_threadIdWindow, FALSE);
 
 		//--> TRA
 		// clear the global transferable again
@@ -415,13 +415,10 @@ unsigned __stdcall DndOleSTAFunc(LPVOID pParams)
 
 	InterlockedDecrement(&pSource->m_RunningDndOperationCount);
 
-    // the DragSource was manually acquired by
-    // thread starting method DelayedStartDrag
+	// the DragSource was manually acquired by
+	// thread starting method DelayedStartDrag
 	pSource->release();
 
 	return 0;
 }
-
-
-
 

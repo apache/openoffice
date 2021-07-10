@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,10 +32,10 @@ import com.sun.star.lang.XSingleServiceFactory;
 // supported Interfaces
 import com.sun.star.linguistic2.XSpellChecker;
 import com.sun.star.linguistic2.XLinguServiceEventBroadcaster;
-import com.sun.star.lang.XInitialization;		
+import com.sun.star.lang.XInitialization;
 import com.sun.star.lang.XComponent;
-import com.sun.star.lang.XServiceInfo;		
-import com.sun.star.lang.XServiceDisplayName;		
+import com.sun.star.lang.XServiceInfo;
+import com.sun.star.lang.XServiceDisplayName;
 
 // Exceptions
 import com.sun.star.uno.Exception;
@@ -81,19 +81,19 @@ public class SampleSpellChecker extends ComponentBase implements
                 "IsSpellWithDigits",
                 "IsSpellCapitalization"
             };
-        aPropChgHelper  = new PropChgHelper_Spell( (XSpellChecker) this, aProps );
-        aEvtListeners   = new ArrayList();
-        bDisposing      = false;
+        aPropChgHelper = new PropChgHelper_Spell( (XSpellChecker) this, aProps );
+        aEvtListeners  = new ArrayList();
+        bDisposing     = false;
     }
 
     private boolean IsEqual( Locale aLoc1, Locale aLoc2 )
     {
         return aLoc1.Language.equals( aLoc2.Language ) &&
-               aLoc1.Country .equals( aLoc2.Country )  &&
-               aLoc1.Variant .equals( aLoc2.Variant );  
+               aLoc1.Country .equals( aLoc2.Country ) &&
+               aLoc1.Variant .equals( aLoc2.Variant );
     }
 
-    private boolean GetValueToUse( 
+    private boolean GetValueToUse(
             String          aPropName,
             boolean         bDefaultVal,
             PropertyValue[] aProps )
@@ -103,7 +103,7 @@ public class SampleSpellChecker extends ComponentBase implements
         try
         {
             // use temporary value if supplied
-            for (int i = 0;  i < aProps.length;  ++i)
+            for (int i = 0; i < aProps.length; ++i)
             {
                 if (aPropName.equals( aProps[i].Name ))
                 {
@@ -118,7 +118,7 @@ public class SampleSpellChecker extends ComponentBase implements
 
             // otherwise use value from property set (if available)
             XPropertySet xPropSet = aPropChgHelper.GetPropSet();
-            if (xPropSet != null)   // should always be the case
+            if (xPropSet != null) // should always be the case
             {
                 Object aObj = xPropSet.getPropertyValue( aPropName );
                 if (AnyConverter.isBoolean( aObj ))
@@ -128,13 +128,13 @@ public class SampleSpellChecker extends ComponentBase implements
         catch (Exception e) {
             bRes = bDefaultVal;
         }
-        
+
         return bRes;
     }
 
     private boolean IsUpper( String aWord, Locale aLocale )
     {
-        java.util.Locale aLang = new java.util.Locale( 
+        java.util.Locale aLang = new java.util.Locale(
                 aLocale.Language, aLocale.Country, aLocale.Variant );
         return aWord.equals( aWord.toUpperCase( aLang ) );
     }
@@ -142,7 +142,7 @@ public class SampleSpellChecker extends ComponentBase implements
     private boolean HasDigits( String aWord )
     {
         int nLen = aWord.length();
-        for (int i = 0;  i < nLen;  ++i)
+        for (int i = 0; i < nLen; ++i)
         {
             if (Character.isDigit( aWord.charAt(i) ))
                 return true;
@@ -150,16 +150,16 @@ public class SampleSpellChecker extends ComponentBase implements
         return false;
     }
 
-    private short GetSpellFailure( 
-            String aWord, 
+    private short GetSpellFailure(
+            String aWord,
             Locale aLocale,
-            PropertyValue[] aProperties ) 
+            PropertyValue[] aProperties )
     {
         short nRes = -1;
 
-        //!! This code needs to be replaced by code calling the actual 
+        //!! This code needs to be replaced by code calling the actual
         //!! implementation of your spellchecker
-        boolean bIsGermanPreReform      = GetValueToUse( "IsGermanPreReform", false, aProperties );
+        boolean bIsGermanPreReform = GetValueToUse( "IsGermanPreReform", false, aProperties );
         if (IsEqual( aLocale, new Locale( "de", "DE", "" ) ))
         {
             if (bIsGermanPreReform && aWord.equals( "Schifffahrt" ))
@@ -177,25 +177,25 @@ public class SampleSpellChecker extends ComponentBase implements
             {
                 // default value (no other SpellFailure type is applicable)
                 nRes = SpellFailure.SPELLING_ERROR;
-                
+
                 if (aWord.equals( "arizona" ))
                     nRes = SpellFailure.CAPTION_ERROR;
                 else if (aWord.equals( "house" ))
                     nRes = SpellFailure.SPELLING_ERROR;
                 else if (aWord.equals( "course" ))
                     nRes = SpellFailure.IS_NEGATIVE_WORD;
-            }                                
+            }
         }
-        
+
         return nRes;
     }
 
-    private XSpellAlternatives GetProposals( 
-            String aWord, 
-            Locale aLocale, 
-            PropertyValue[] aProperties ) 
+    private XSpellAlternatives GetProposals(
+            String aWord,
+            Locale aLocale,
+            PropertyValue[] aProperties )
     {
-        short    nType = SpellFailure.SPELLING_ERROR;
+        short nType = SpellFailure.SPELLING_ERROR;
         String[] aProposals = null;
 
         // get values of relevant properties that may be used.
@@ -207,7 +207,7 @@ public class SampleSpellChecker extends ComponentBase implements
         boolean bIsSpellUpperCase       = GetValueToUse( "IsSpellUpperCase", false, aProperties );
         boolean bIsSpellCapitalization  = GetValueToUse( "IsSpellCapitalization", true, aProperties );
 
-        //!! This code needs to be replaced by code calling the actual 
+        //!! This code needs to be replaced by code calling the actual
         //!! implementation of your spellchecker
         if (IsEqual( aLocale, new Locale( "de", "DE", "" ) ))
         {
@@ -246,17 +246,17 @@ public class SampleSpellChecker extends ComponentBase implements
         return new XSpellAlternatives_impl( aWord, aLocale,
                                             nType, aProposals );
     }
-                        
+
     // __________ interface methods __________
-    
-    
+
+
     //*****************
     //XSupportedLocales
     //*****************
     public Locale[] getLocales()
         throws com.sun.star.uno.RuntimeException
     {
-        Locale aLocales[] = 
+        Locale aLocales[] =
         {
             new Locale( "de", "DE", "" ),
             new Locale( "en", "US", "" )
@@ -264,30 +264,30 @@ public class SampleSpellChecker extends ComponentBase implements
 
         return aLocales;
     }
-    
-    public boolean hasLocale( Locale aLocale ) 
+
+    public boolean hasLocale( Locale aLocale )
         throws com.sun.star.uno.RuntimeException
     {
         boolean bRes = false;
-        if ( IsEqual( aLocale, new Locale( "de", "DE", "" ) )  ||
+        if ( IsEqual( aLocale, new Locale( "de", "DE", "" ) ) ||
              IsEqual( aLocale, new Locale( "en", "US", "" ) ))
             bRes = true;
-        return bRes;        
+        return bRes;
     }
 
-    
+
     //*************
     //XSpellChecker
     //*************
     public boolean isValid(
             String aWord, Locale aLocale,
-            PropertyValue[] aProperties ) 
+            PropertyValue[] aProperties )
         throws com.sun.star.uno.RuntimeException,
                IllegalArgumentException
     {
         if (IsEqual( aLocale, new Locale() ) || aWord.length() == 0)
             return true;
-        
+
         // linguistic is currently not allowed to throw exceptions
         // thus we return null which means 'word cannot be spelled'
         if (!hasLocale( aLocale ))
@@ -301,7 +301,7 @@ public class SampleSpellChecker extends ComponentBase implements
         boolean bIsSpellWithDigits      = GetValueToUse( "IsSpellWithDigits", false, aProperties );
         boolean bIsSpellUpperCase       = GetValueToUse( "IsSpellUpperCase", false, aProperties );
         boolean bIsSpellCapitalization  = GetValueToUse( "IsSpellCapitalization", true, aProperties );
-        
+
         short nFailure = GetSpellFailure( aWord, aLocale, aProperties );
         if (nFailure != -1)
         {
@@ -316,22 +316,22 @@ public class SampleSpellChecker extends ComponentBase implements
 
         return nFailure == -1;
     }
-    
-    
+
+
     public XSpellAlternatives spell(
             String aWord, Locale aLocale,
-            PropertyValue[] aProperties ) 
+            PropertyValue[] aProperties )
         throws com.sun.star.uno.RuntimeException,
                IllegalArgumentException
     {
         if (IsEqual( aLocale, new Locale() ) || aWord.length() == 0)
             return null;
-        
+
         // linguistic is currently not allowed to throw exceptions
-        // thus we return null fwhich means 'word cannot be spelled'
+        // thus we return null which means 'word cannot be spelled'
         if (!hasLocale( aLocale ))
             return null;
-        
+
         XSpellAlternatives xRes = null;
         if (!isValid( aWord, aLocale, aProperties ))
         {
@@ -339,8 +339,8 @@ public class SampleSpellChecker extends ComponentBase implements
         }
         return xRes;
     }
-    
-    
+
+
     //*****************************
     //XLinguServiceEventBroadcaster
     //*****************************
@@ -348,35 +348,35 @@ public class SampleSpellChecker extends ComponentBase implements
             XLinguServiceEventListener xLstnr )
         throws com.sun.star.uno.RuntimeException
     {
-        boolean bRes = false;   
+        boolean bRes = false;
         if (!bDisposing && xLstnr != null)
             bRes = aPropChgHelper.addLinguServiceEventListener( xLstnr );
         return bRes;
     }
-    
+
     public boolean removeLinguServiceEventListener(
-            XLinguServiceEventListener xLstnr ) 
+            XLinguServiceEventListener xLstnr )
         throws com.sun.star.uno.RuntimeException
     {
-        boolean bRes = false;   
+        boolean bRes = false;
         if (!bDisposing && xLstnr != null)
             bRes = aPropChgHelper.removeLinguServiceEventListener( xLstnr );
         return bRes;
-    }            
+    }
 
     //********************
     // XServiceDisplayName
     //********************
-    public String getServiceDisplayName( Locale aLocale ) 
+    public String getServiceDisplayName( Locale aLocale )
         throws com.sun.star.uno.RuntimeException
     {
-        return "Java Samples";                                                    
+        return "Java Samples";
     }
 
     //****************
     // XInitialization
     //****************
-    public void initialize( Object[] aArguments ) 
+    public void initialize( Object[] aArguments )
         throws com.sun.star.uno.Exception,
                com.sun.star.uno.RuntimeException
     {
@@ -411,17 +411,17 @@ public class SampleSpellChecker extends ComponentBase implements
     {
         return _aSvcImplName;
     }
-        
+
     public String[] getSupportedServiceNames()
         throws com.sun.star.uno.RuntimeException
     {
         return getSupportedServiceNames_Static();
     }
-    
+
     // __________ static things __________
 
     public static String _aSvcImplName = SampleSpellChecker.class.getName();
-    
+
     public static String[] getSupportedServiceNames_Static()
     {
         String[] aResult = { "com.sun.star.linguistic2.SpellChecker" };
@@ -465,9 +465,9 @@ public class SampleSpellChecker extends ComponentBase implements
      */
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
-//     public static boolean __writeRegistryServiceInfo( 
+//     public static boolean __writeRegistryServiceInfo(
 //             com.sun.star.registry.XRegistryKey xRegKey )
 //     {
 //         boolean bResult = true;

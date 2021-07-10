@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ class ImplWinFontData : public ImplFontData
 public:
     explicit                ImplWinFontData( const ImplDevFontAttributes&,
                                 int nFontHeight, BYTE eWinCharSet,
-                                BYTE nPitchAndFamily  );
+                                BYTE nPitchAndFamily );
     virtual                 ~ImplWinFontData();
 
     virtual ImplFontData*   Clone() const;
@@ -77,7 +77,7 @@ public:
 	bool                    SupportsGraphite() const    { return mbHasGraphiteSupport; }
 #endif
 
-    const ImplFontCharMap*  GetImplFontCharMap() const;
+    const ImplFontCharMap* GetImplFontCharMap() const;
     const Ucs2SIntMap* GetEncodingVector() const { return mpEncodingVector; }
     void SetEncodingVector( const Ucs2SIntMap* pNewVec ) const
     {
@@ -88,7 +88,7 @@ public:
 private:
     sal_IntPtr              mnId;
 
-    // some members that are initalized lazily when the font gets selected into a HDC
+    // some members that are initialized lazily when the font gets selected into a HDC
     mutable bool                    mbDisableGlyphApi;
     mutable bool                    mbHasKoreanRange;
     mutable bool                    mbHasCJKSupport;
@@ -132,15 +132,15 @@ private:
 	HDC 					mhLocalDC;				// HDC
 
 public:
-    HDC getHDC() { return mhLocalDC; }
-    void setHDC(HDC aNew) { mhLocalDC = aNew; }
+	HDC getHDC() { return mhLocalDC; }
+	void setHDC(HDC aNew) { mhLocalDC = aNew; }
 
 public:
 	HWND					mhWnd;				// Window-Handle, when Window-Graphics
 	HFONT					mhFonts[ MAX_FALLBACK ];        // Font + Fallbacks
-    const ImplWinFontData*  mpWinFontData[ MAX_FALLBACK ];  // pointer to the most recent font face
-    ImplWinFontEntry*       mpWinFontEntry[ MAX_FALLBACK ]; // pointer to the most recent font instance
-    float                   mfFontScale;        // allows metrics emulation of huge font sizes
+	const ImplWinFontData*	mpWinFontData[ MAX_FALLBACK ];  // pointer to the most recent font face
+	ImplWinFontEntry*		mpWinFontEntry[ MAX_FALLBACK ]; // pointer to the most recent font instance
+	float					mfFontScale;		// allows metrics emulation of huge font sizes
 	HPEN					mhPen;				// Pen
 	HBRUSH					mhBrush;			// Brush
 	HRGN					mhRegion;			// Region Handle
@@ -160,11 +160,11 @@ public:
 	sal_Bool					mbFontKernInit; 	// FALSE: FontKerns must be queried
 	KERNINGPAIR*			mpFontKernPairs;	// Kerning Pairs of the current Font
 	sal_uIntPtr					mnFontKernPairCount;// Number of Kerning Pairs of the current Font
-	int 					mnPenWidth; 		// Linienbreite
+	int 					mnPenWidth; 		// LineWidth
 
-    /// bitfield
-    bool                    mbStockPen : 1; 		// is Pen a stockpen
-	bool                    mbStockBrush : 1;		// is Brush a stcokbrush
+	/// bitfield
+	bool                    mbStockPen : 1; 		// is Pen a stockpen
+	bool                    mbStockBrush : 1;		// is Brush a stockbrush
 	bool                    mbPen : 1;				// is Pen (FALSE == NULL_PEN)
 	bool                    mbBrush : 1;			// is Brush (FALSE == NULL_BRUSH)
 	bool                    mbPrinter : 1;			// is Printer
@@ -184,7 +184,7 @@ public:
     virtual ~WinSalGraphics();
 
 protected:
-    virtual bool        setClipRegion( const Region& );
+    virtual bool		setClipRegion( const Region& );
     // draw --> LineColor and FillColor and RasterOp and ClipRegion
     virtual void		drawPixel( long nX, long nY );
     virtual void		drawPixel( long nX, long nY, SalColor nSalColor );
@@ -193,11 +193,11 @@ protected:
     virtual void		drawPolyLine( sal_uInt32 nPoints, const SalPoint* pPtAry );
     virtual void		drawPolygon( sal_uInt32 nPoints, const SalPoint* pPtAry );
     virtual void		drawPolyPolygon( sal_uInt32 nPoly, const sal_uInt32* pPoints, PCONSTSALPOINT* pPtAry );
-    virtual bool        drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency );
-    virtual bool        drawPolyLine( 
-        const ::basegfx::B2DPolygon&, 
-        double fTransparency, 
-        const ::basegfx::B2DVector& rLineWidth, 
+    virtual bool		drawPolyPolygon( const ::basegfx::B2DPolyPolygon&, double fTransparency );
+    virtual bool		drawPolyLine(
+        const ::basegfx::B2DPolygon&,
+        double fTransparency,
+        const ::basegfx::B2DVector& rLineWidth,
         basegfx::B2DLineJoin,
         com::sun::star::drawing::LineCap);
     virtual sal_Bool	drawPolyLineBezier( sal_uInt32 nPoints, const SalPoint* pPtAry, const sal_uInt8* pFlgAry );
@@ -291,9 +291,9 @@ public:
     virtual void			SetTextColor( SalColor nSalColor );
     // set the font
     virtual sal_uInt16         SetFont( ImplFontSelectData*, int nFallbackLevel );
-    // get the current font's etrics
+    // get the current font's metrics
     virtual void			GetFontMetric( ImplFontMetricData*, int nFallbackLevel );
-    // get kernign pairs of the current font
+    // get kerning pairs of the current font
     // return only PairCount if (pKernPairs == NULL)
     virtual sal_uLong			GetKernPairs( sal_uLong nPairs, ImplKernPairData* pKernPairs );
     // get the repertoire of the current font
@@ -311,7 +311,7 @@ public:
     //             pFont: describes from which font to create a subset
     //             pGlyphIDs: the glyph ids to be extracted
     //             pEncoding: the character code corresponding to each glyph
-    //             pWidths: the advance widths of the correspoding glyphs (in PS font units)
+    //             pWidths: the advance widths of the corresponding glyphs (in PS font units)
     //             nGlyphs: the number of glyphs
     //             rInfo: additional outgoing information
     // implementation note: encoding 0 with glyph id 0 should be added implicitly

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textscalcguidecellreferencesxml" indexer="include" status="PUBLISH">
          <title xml-lang="en-US" id="tit">Referencing a Cell in Another Document</title>
@@ -54,7 +53,7 @@
             </paragraph>
          </listitem>
          <listitem>
-            <paragraph xml-lang="en-US" id="par_id7609790" role="listitem" l10n="NEW">Click the <emph>Sheet 2</emph> tab at the bottom of the spreadsheet. Set the cursor in cell A1 there and enter text or a number.</paragraph>
+            <paragraph xml-lang="en-US" id="par_id7609790" role="listitem" l10n="NEW">Click the <emph>Sheet2</emph> tab at the bottom of the spreadsheet. Set the cursor in cell A1 there and enter text or a number.</paragraph>
          </listitem>
          <listitem>
             <paragraph xml-lang="en-US" id="par_id809961" role="listitem" l10n="NEW">If you switch back to Sheet1, you will see the same content in cell A1 there. If the contents of Sheet2.A1 change, then the contents of Sheet1.A1 also change.</paragraph>

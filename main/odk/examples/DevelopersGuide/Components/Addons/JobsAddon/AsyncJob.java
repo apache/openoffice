@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import javax.swing.*;
  *      <li>the global com.sun.star.task.JobExecutor service and registered for special events.</li>
  *  </ul>
  */
-public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
+public class AsyncJob extends WeakBase implements XServiceInfo, XAsyncJob
 {
     //___________________________________________
     // const
@@ -89,7 +89,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
      *          if given argument list seems to be wrong
      */
     public synchronized void executeAsync(com.sun.star.beans.NamedValue[] lArgs    ,
-                                          com.sun.star.task.XJobListener  xListener)
+                                          com.sun.star.task.XJobListener xListener)
         throws com.sun.star.lang.IllegalArgumentException
     {
         // For asynchronous jobs a valid listener reference is guaranteed normally ...
@@ -179,7 +179,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
         com.sun.star.beans.NamedValue aDispatchResult = null;
         com.sun.star.beans.NamedValue aSaveRequest    = null;
 
-        // SaveArguments will be made everytimes!
+        // SaveArguments will be made every time!
         c = 1;
 
         if (lJobConfig==null)
@@ -297,7 +297,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
     private void showInfoNonModal( java.lang.String sTitle   ,
                                    java.lang.String sMessage )
     {
-        // Couldnt be implemented really using the toolkit ...
+        // Couldn't be implemented really using the toolkit ...
         // Because we need a parent anytime.
         // And showing e.g. a java dialog can make some trouble
         // inside office ... but we have no chance here.
@@ -327,7 +327,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
      *          contains all shared configuration items for a job
      *
      *  @param  lJobConfig
-     *          contains all job sepcific configuration items
+     *          contains all job specific configuration items
      *
      *  @param  lEnvironment
      *          contains some environment informations
@@ -421,7 +421,7 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
     //___________________________________________
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
 //     public synchronized static boolean __writeRegistryServiceInfo(com.sun.star.registry.XRegistryKey xRegKey)
 //     {
@@ -431,3 +431,4 @@ public class AsyncJob extends    WeakBase implements XServiceInfo, XAsyncJob
 //             xRegKey);
 //     }
 }
+

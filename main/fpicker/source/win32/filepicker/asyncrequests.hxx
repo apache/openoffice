@@ -167,7 +167,7 @@ class AsyncRequests : private ::cppu::BaseMutex
         }
     
         //---------------------------------------------------------------------
-        /** does nothing special / excepting to make sure our class wont be inline .-)
+        /** does nothing special / except to make sure our class won't be inline .-)
          */
         virtual ~AsyncRequests();
         

@@ -1,7 +1,7 @@
 #!@PERL@ -w
 #
 ###############################################################
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 ###############################################################
 
 #---------------------------------------------------------------------------
@@ -133,7 +133,7 @@ $ds             = "/";              # directory separator
 $ps             = ":";              # path separator
 $wps            = ":";              # path separator, will be set to ';' for windows later.
 $cur_dir        = ".";              # current directory
-$par_dir        = "..";             # parrent directory
+$par_dir        = "..";             # parent directory
 $I              = " -I";            # include search path
 $L              = " -L";            # library search path
 $D              = " -D";            # define search path
@@ -154,7 +154,7 @@ else
 $FLIPCMD        = "";               # Flip '/' to '\' wrapper (only for winnt)
 $GLIBC          = "";               # Whether the platform uses glibc
 $PROEXT         = "@PROEXT@";
-$EPM_FLAGS	= "";
+$EPM_FLAGS	= "--aoo-mode";
 
 # Required for OS/2 macro expansion
 my @unixroot='@unixroot';
@@ -818,7 +818,7 @@ elsif ( $platform =~ m/darwin/ )
       $INPATH         = $OUTPATH.$PROEXT;
       $OS             = "MACOSX";
       $PATH_SEPERATOR = $ps;
-      # GUIBASE is set below; may be "aqua" or "unx".
+      $GUIBASE        = "aqua"
 }
 elsif ( $platform =~ m/aix/ )
 {
@@ -1243,7 +1243,7 @@ elsif ($platform =~ m/cygwin/)
        $PATH          .= $ps.$tmppath;
    }
 
-   # Possible cygwin paths must follow behind the OOo and MS paths
+   # Possible cygwin paths must follow behind the AOO and MS paths
 
    # Check if $PERL_PATH is already set in PATH
    $tmppath = CygFormat($PERL_PATH);
@@ -1759,7 +1759,7 @@ ToFile( "FLIPCMD",           $FLIPCMD,           "e" );
 ToFile( "ARM_TARGET",        "@ARM_TARGET@",     "e" );
 if ( $platform =~ m/darwin/ )
 {
-# MAXOSX_DEPLOYMENT_TARGET : The minimum version required to run the build,
+# MACOSX_DEPLOYMENT_TARGET : The minimum version required to run the build,
 # build can assume functions/libraries of that version to be available
 # (safer/easier than dealing with the MAC_OS_X_VERSION_MAX_ALLOWED macro)
 # http://developer.apple.com/technotes/tn2002/tn2064.html
@@ -2219,8 +2219,8 @@ print OUT "#!/bin/sh\n";
 if ( $MINGW eq "yes" )
 {  print OUT 'PATH="/usr/bin:$PATH" : export PATH'."\n"; }
 close( OUT ) || print "Can't close $bootfile: $!";
-system(`cat bootstrap.1 >> bootstrap`);
-system(`chmod +x bootstrap`);
+system("cat bootstrap.1 >> bootstrap");
+system("chmod +x bootstrap");
 #
 #--------------------------------------------------------
 # Moving the bootstrap file to the build home directory.
@@ -2547,7 +2547,7 @@ sub WinFormat
 # Function name: WinPath
 # Description:   Reformat a $sep separated path using DOS paths.
 # Arguments:     1. Variable (string)
-#                2. Separaror (string)
+#                2. Separator (string)
 # Return value:  Reformatted String
 #----------------------------------------------------------
 sub WinPath

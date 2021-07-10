@@ -817,7 +817,7 @@ void UIConfigurationManagerImpl::initialize( const Sequence< Any >& aArguments )
             {
                 m_pStorageHandler[i] = new PresetHandler( m_xServiceManager );
                 m_pStorageHandler[i]->connectToResource( PresetHandler::E_MODULES,
-                                                         aResourceType, // this path wont be used later ... seee next lines!
+                                                         aResourceType, // this path won't be used later ... see next lines!
                                                          m_aModuleShortName,
                                                          css::uno::Reference< css::embed::XStorage >()); // no document root used here!
             }
@@ -1459,7 +1459,7 @@ void UIConfigurationManagerImpl::setStorage( const Reference< XStorage >& Storag
             {
                 m_pStorageHandler[i] = new PresetHandler( m_xServiceManager );
                 m_pStorageHandler[i]->connectToResource( PresetHandler::E_DOCUMENT,
-                                                         rtl::OUString::createFromAscii( UIELEMENTTYPENAMES[i] ), // this path wont be used later ... seee next lines!
+                                                         rtl::OUString::createFromAscii( UIELEMENTTYPENAMES[i] ), // this path won't be used later ... see next lines!
                                                          sEmpty,
                                                          m_xUserConfigStorage); 
             }

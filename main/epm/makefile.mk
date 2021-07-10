@@ -41,9 +41,8 @@ TARGET=epm
 
 .IF "$(GUI)"=="UNX"
 
-TARFILE_NAME=epm-3.7
-TARFILE_MD5=3ade8cfe7e59ca8e65052644fed9fca4
-PATCH_FILES=epm-3.7.patch
+TARFILE_NAME=epm-5.0.0
+TARFILE_MD5=8ce02a315807bd406b5de85ccf63e7fb
 
 CONFIGURE_ACTION=.$/configure
 CONFIGURE_FLAGS=--disable-fltk

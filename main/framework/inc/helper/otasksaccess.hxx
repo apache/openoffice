@@ -65,8 +65,8 @@ namespace framework{
 
 /*-************************************************************************************************************//**
 	@short			implement XEnumerationAccess interface as helper to create many oneway enumeration of tasks
-	@descr			We share mutex and framecontainer with ouer owner and have full access to his child tasks.
-					(Ouer owner can be the Desktop only!) We create oneway enumerations on demand. These "lists"
+	@descr			We share mutex and framecontainer with our owner and have full access to his child tasks.
+					(Our owner can be the Desktop only!) We create oneway enumerations on demand. These "lists"
 					can be used for one time only. Step during the list from first to last element.
 					(The type of created enumerations is OTasksEnumeration.)
 
@@ -103,7 +103,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@seealso	class Desktop
 			@seealso	class OTasksEnumeration
 
-			@param		"xOwner" is a reference to ouer owner and must be the desktop!
+			@param		"xOwner" is a reference to our owner and must be the desktop!
 			@param		"pTasks" is a pointer to the taskcontainer of the desktop. We need it to create a new enumeration.
 			@return		-
 
@@ -185,7 +185,7 @@ class OTasksAccess	:	public css::lang::XTypeProvider				,
 			@short		standard destructor
 			@descr		This method destruct an instance of this class and clear some member.
 						Don't use an instance of this class as normal member. Use it dynamicly with a pointer.
-						We hold a weakreference to ouer owner and not to ouer superclass!
+						We hold a weakreference to our owner and not to our superclass!
 						That's the reason for a protected dtor.
 
 			@seealso	class Desktop

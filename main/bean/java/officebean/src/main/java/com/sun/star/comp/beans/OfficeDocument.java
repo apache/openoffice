@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,10 +33,10 @@ import com.sun.star.uno.UnoRuntime;
 	See further information on the wrapping and compatibility limitations
 	in the base class Wrapper.
 
-    @since OOo 2.0.0
+	@since OOo 2.0.0
  */
 public class OfficeDocument extends Wrapper
-	implements 
+	implements
 		com.sun.star.frame.XModel,
 		com.sun.star.util.XModifiable,
 		com.sun.star.frame.XStorable,
@@ -53,13 +53,13 @@ public class OfficeDocument extends Wrapper
 
 		this.xModel = xModel;
 		this.xModifiable = (com.sun.star.util.XModifiable)
-			UnoRuntime.queryInterface( 
+			UnoRuntime.queryInterface(
 				com.sun.star.util.XModifiable.class, xModel );
 		this.xPrintable = (com.sun.star.view.XPrintable)
-			UnoRuntime.queryInterface( 
+			UnoRuntime.queryInterface(
 				com.sun.star.view.XPrintable.class, xModel );
 		this.xStorable = (com.sun.star.frame.XStorable)
-			UnoRuntime.queryInterface( 
+			UnoRuntime.queryInterface(
 				com.sun.star.frame.XStorable.class, xModel );
 	}
 
@@ -67,7 +67,7 @@ public class OfficeDocument extends Wrapper
 	// com.sun.star.frame.XModel
 	//----------------------------------------------------------
 
-	public boolean attachResource( /*IN*/String aURL, 
+	public boolean attachResource( /*IN*/String aURL,
 			/*IN*/com.sun.star.beans.PropertyValue[] aArguments )
 	{
 		return xModel.attachResource( aURL, aArguments );
@@ -83,13 +83,13 @@ public class OfficeDocument extends Wrapper
 		return xModel.getArgs();
 	}
 
-	public void connectController( 
+	public void connectController(
 		/*IN*/ com.sun.star.frame.XController xController )
 	{
 		xModel.connectController( xController );
 	}
 
-	public void disconnectController( 
+	public void disconnectController(
 		/*IN*/ com.sun.star.frame.XController xController )
 	{
 		xModel.disconnectController( xController );
@@ -115,8 +115,8 @@ public class OfficeDocument extends Wrapper
 		return xModel.getCurrentController();
 	}
 
-	public void setCurrentController( 
-		/*IN*/ com.sun.star.frame.XController xController ) 
+	public void setCurrentController(
+		/*IN*/ com.sun.star.frame.XController xController )
 		throws com.sun.star.container.NoSuchElementException
 	{
 		xModel.setCurrentController( xController );
@@ -152,7 +152,7 @@ public class OfficeDocument extends Wrapper
 		return xModifiable.isModified();
 	}
 
-	public void setModified( /*IN*/boolean bModified ) 
+	public void setModified( /*IN*/boolean bModified )
 		throws com.sun.star.beans.PropertyVetoException
 	{
 		xModifiable.setModified( bModified );
@@ -167,13 +167,13 @@ public class OfficeDocument extends Wrapper
 		return xPrintable.getPrinter();
 	}
 
-	public void setPrinter( /*IN*/ com.sun.star.beans.PropertyValue[] aPrinter ) 
+	public void setPrinter( /*IN*/ com.sun.star.beans.PropertyValue[] aPrinter )
 		throws com.sun.star.lang.IllegalArgumentException
 	{
 		xPrintable.setPrinter( aPrinter );
 	}
 
-	public void print( /*IN*/ com.sun.star.beans.PropertyValue[] xOptions ) 
+	public void print( /*IN*/ com.sun.star.beans.PropertyValue[] xOptions )
 		throws com.sun.star.lang.IllegalArgumentException
 	{
 		xPrintable.print( xOptions );
@@ -198,25 +198,23 @@ public class OfficeDocument extends Wrapper
 		return xStorable.isReadonly();
 	}
 
-	public void store(  ) 
+	public void store(  )
 		throws com.sun.star.io.IOException
 	{
 		xStorable.store();
 	}
 
-	public void storeAsURL( /*IN*/ String aURL, /*IN*/ com.sun.star.beans.PropertyValue[] aArguments ) 
+	public void storeAsURL( /*IN*/ String aURL, /*IN*/ com.sun.star.beans.PropertyValue[] aArguments )
 		throws com.sun.star.io.IOException
 	{
 		xStorable.storeAsURL( aURL, aArguments );
 	}
 
-	public void storeToURL( /*IN*/ String aURL, /*IN*/ com.sun.star.beans.PropertyValue[] aArguments ) 
+	public void storeToURL( /*IN*/ String aURL, /*IN*/ com.sun.star.beans.PropertyValue[] aArguments )
 		throws com.sun.star.io.IOException
 	{
 		xStorable.storeToURL( aURL, aArguments );
 	}
 
 };
-
-
 

@@ -50,7 +50,7 @@
 #define	HISTORY_PROPERTYNAME_PASSWORD		::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Password"	))
 
 /*-************************************************************************************************************//**
-	@descr			You can use these enum values to specify right history if you call ouer interface methods.
+	@descr			You can use these enum values to specify right history if you call our interface methods.
 *//*-*************************************************************************************************************/
 
 enum EHistoryType

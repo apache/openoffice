@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,61 +76,61 @@ private:
 public:
 
     // ctor...
-    XFlatXml( const Reference< XMultiServiceFactory > &r ) 
+    XFlatXml( const Reference< XMultiServiceFactory > &r )
         : m_rServiceFactory(r)
         , m_bPrettyPrint(sal_True)
 	{}
 
     // XImportFilter
     virtual sal_Bool SAL_CALL importer(
-            const Sequence<PropertyValue>& aSourceData, 
-            const Reference<XDocumentHandler>& xHandler, 
-            const Sequence<OUString>& msUserData) 
+            const Sequence<PropertyValue>& aSourceData,
+            const Reference<XDocumentHandler>& xHandler,
+            const Sequence<OUString>& msUserData)
         throw(RuntimeException);
 
     // XExportFilter
     virtual sal_Bool SAL_CALL exporter(
-            const Sequence<PropertyValue>& aSourceData, 
-            const Sequence<OUString>& msUserData) 
+            const Sequence<PropertyValue>& aSourceData,
+            const Sequence<OUString>& msUserData)
         throw(RuntimeException);
 
     // XDocumentHandler
-    virtual void SAL_CALL startDocument() 
+    virtual void SAL_CALL startDocument()
         throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endDocument() 
+    virtual void SAL_CALL endDocument()
         throw (SAXException, RuntimeException);
-    virtual void SAL_CALL startElement(const OUString& str, const Reference<XAttributeList>& attriblist) 
+    virtual void SAL_CALL startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
         throw (SAXException,RuntimeException);
-    virtual void SAL_CALL endElement(const OUString& str)  
+    virtual void SAL_CALL endElement(const OUString& str)
         throw (SAXException, RuntimeException);
-    virtual void SAL_CALL characters(const OUString& str)  
+    virtual void SAL_CALL characters(const OUString& str)
         throw (SAXException, RuntimeException);
-    virtual void SAL_CALL ignorableWhitespace(const OUString& str) 
+    virtual void SAL_CALL ignorableWhitespace(const OUString& str)
         throw (SAXException, RuntimeException);
-    virtual void SAL_CALL processingInstruction(const OUString& str, const OUString& str2) 
+    virtual void SAL_CALL processingInstruction(const OUString& str, const OUString& str2)
         throw (com::sun::star::xml::sax::SAXException,RuntimeException);
-    virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator) 
-        throw (SAXException,RuntimeException);    
+    virtual void SAL_CALL setDocumentLocator(const Reference<XLocator>& doclocator)
+        throw (SAXException,RuntimeException);
 };
 
 sal_Bool XFlatXml::importer(
-        const Sequence<PropertyValue>& aSourceData, 
-        const Reference<XDocumentHandler>& xHandler, 
-        const Sequence<OUString>& msUserData) 
+        const Sequence<PropertyValue>& aSourceData,
+        const Reference<XDocumentHandler>& xHandler,
+        const Sequence<OUString>& msUserData)
     throw (RuntimeException)
 {
     // get information from media descriptor
-    // the imput stream that represents the imported file
+    // the input stream that represents the imported file
     // is most important here since we need to supply it to
     // the sax parser that drives the supplied document handler
     sal_Int32 nLength = aSourceData.getLength();
     OUString aName, aFileName, aURL;
-    Reference< XInputStream > xInputStream;	
+    Reference< XInputStream > xInputStream;
     for ( sal_Int32 i = 0 ; i < nLength; i++)
 	{
         aName = aSourceData[i].Name;
 	    if (aName.equalsAscii("InputStream"))
-            aSourceData[i].Value >>= xInputStream;        		
+            aSourceData[i].Value >>= xInputStream;
 	    else if ( aName.equalsAscii("FileName"))
 			aSourceData[i].Value >>= aFileName;
 	    else if ( aName.equalsAscii("URL"))
@@ -146,17 +146,17 @@ sal_Bool XFlatXml::importer(
     if (xSeek.is())
         xSeek->seek(0);
 
-	
+
     // create SAX parser that will read the document file
     // and provide events to xHandler passed to this call
-	Reference < XParser > xSaxParser( m_rServiceFactory->createInstance( 
+	Reference < XParser > xSaxParser( m_rServiceFactory->createInstance(
         OUString::createFromAscii("com.sun.star.xml.sax.Parser")), UNO_QUERY );
     OSL_ASSERT(xSaxParser.is());
 	if(!xSaxParser.is())return sal_False;
 
     // let the parser try to send the sax event to the document handler
     try
-	{	     
+	{
 	    InputSource aInput;
 	    aInput.sSystemId = aURL;
         aInput.sPublicId = aURL;
@@ -176,20 +176,20 @@ sal_Bool XFlatXml::importer(
 }
 
 sal_Bool XFlatXml::exporter(
-        const Sequence<PropertyValue>& aSourceData, 
-        const Sequence<OUString>& msUserData) 
+        const Sequence<PropertyValue>& aSourceData,
+        const Sequence<OUString>& msUserData)
     throw (RuntimeException)
 {
 
     // read source data
     // we are especially interested in the output stream
     // since that is where our xml-writer will push the data
-    // from it's data-source interface
+    // from its data-source interface
     OUString aName, sURL;
     Reference<XOutputStream> rOutputStream;
-    sal_Int32 nLength = aSourceData.getLength();    
+    sal_Int32 nLength = aSourceData.getLength();
     for ( sal_Int32 i = 0 ; i < nLength; i++)
-    {      
+    {
         aName = aSourceData[i].Name;
         if ( aName.equalsAscii("OutputStream"))
 	        aSourceData[i].Value >>= rOutputStream;
@@ -231,44 +231,44 @@ void XFlatXml::endDocument() throw (SAXException,RuntimeException){
     m_rDocumentHandler->endDocument();
 }
 
-void XFlatXml::startElement(const OUString& str, const Reference<XAttributeList>& attriblist) 
+void XFlatXml::startElement(const OUString& str, const Reference<XAttributeList>& attriblist)
     throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->startElement(str, attriblist);
 }
 
-void XFlatXml::endElement(const OUString& str) 
-    throw (SAXException, RuntimeException) 
+void XFlatXml::endElement(const OUString& str)
+    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->endElement(str);
 }
 
-void XFlatXml::characters(const OUString& str) 
-    throw (SAXException, RuntimeException) 
+void XFlatXml::characters(const OUString& str)
+    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->characters(str);
 }
 
-void XFlatXml::ignorableWhitespace(const OUString& str) 
+void XFlatXml::ignorableWhitespace(const OUString& str)
     throw (SAXException, RuntimeException)
-{   
+{
     OSL_ASSERT(m_rDocumentHandler.is());
     if (!m_bPrettyPrint) return;
     m_rDocumentHandler->ignorableWhitespace(str);
 }
-  
-void  XFlatXml::processingInstruction(const OUString& str, const OUString& str2) 
-    throw (SAXException, RuntimeException) 
+
+void  XFlatXml::processingInstruction(const OUString& str, const OUString& str2)
+    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->processingInstruction(str, str2);
 }
 
-void XFlatXml::setDocumentLocator(const Reference<XLocator>& doclocator) 
-    throw (SAXException, RuntimeException) 
+void XFlatXml::setDocumentLocator(const Reference<XLocator>& doclocator)
+    throw (SAXException, RuntimeException)
 {
     OSL_ASSERT(m_rDocumentHandler.is());
     m_rDocumentHandler->setDocumentLocator(doclocator);
@@ -315,7 +315,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 
 // This method not longer necessary since OOo 3.4 where the component registration was
 // was changed to passive component registration. For more details see
-// http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+// https://wiki.openoffice.org/wiki/Passive_Component_Registration
 //
 // SAL_DLLPUBLIC_EXPORT sal_Bool SAL_CALL component_writeInfo(void * pServiceManager, void * pRegistryKey )
 // {
@@ -364,3 +364,4 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 }
 
 } // extern "C"
+

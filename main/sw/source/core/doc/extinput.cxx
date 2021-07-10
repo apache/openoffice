@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,8 @@
 using namespace ::com::sun::star;
 
 SwExtTextInput::SwExtTextInput( const SwPaM& rPam, Ring* pRing )
-    : SwPaM( *rPam.GetPoint(), (SwPaM*)pRing ),
-    eInputLanguage(LANGUAGE_DONTKNOW)
+	: SwPaM( *rPam.GetPoint(), (SwPaM*)pRing ),
+	eInputLanguage(LANGUAGE_DONTKNOW)
 {
 	bIsOverwriteCursor = sal_False;
 	bInsText = sal_True;
@@ -54,8 +54,8 @@ SwExtTextInput::SwExtTextInput( const SwPaM& rPam, Ring* pRing )
 
 SwExtTextInput::~SwExtTextInput()
 {
-    SwDoc *const pDoc = GetDoc();
-    if (pDoc->IsInDtor()) { return; /* #i58606# */ }
+	SwDoc *const pDoc = GetDoc();
+	if (pDoc->IsInDtor()) { return; /* #i58606# */ }
 
 	SwTxtNode* pTNd = GetPoint()->nNode.GetNode().GetTxtNode();
 	if( pTNd )
@@ -72,8 +72,8 @@ SwExtTextInput::~SwExtTextInput()
 
 			// damit Undo / Redlining usw. richtig funktioniert,
 			// muss ueber die Doc-Schnittstellen gegangen werden !!!
-            if(eInputLanguage != LANGUAGE_DONTKNOW)
-            {
+			if(eInputLanguage != LANGUAGE_DONTKNOW)
+			{
                 // --> FME 2005-02-11 #i41974# Only set language attribute
                 // for CJK/CTL scripts.
                 bool bLang = true;
@@ -95,13 +95,13 @@ SwExtTextInput::~SwExtTextInput()
 			String sTxt( pTNd->GetTxt().Copy( nSttCnt, nEndCnt - nSttCnt ));
 			if( bIsOverwriteCursor && sOverwriteText.Len() )
 			{
-                xub_StrLen nLen = sTxt.Len();
+				xub_StrLen nLen = sTxt.Len();
 				if( nLen > sOverwriteText.Len() )
 				{
 					rIdx += sOverwriteText.Len();
-                    pTNd->EraseText( rIdx, nLen - sOverwriteText.Len() );
+					pTNd->EraseText( rIdx, nLen - sOverwriteText.Len() );
 					rIdx = nSttCnt;
-                    pTNd->ReplaceText( rIdx, sOverwriteText.Len(),
+					pTNd->ReplaceText( rIdx, sOverwriteText.Len(),
 											sOverwriteText );
 					if( bInsText )
 					{
@@ -128,7 +128,7 @@ SwExtTextInput::~SwExtTextInput()
 				}
 			}
 			else
-            {
+			{
                 pTNd->EraseText( rIdx, nEndCnt - nSttCnt );
 
 				if( bInsText )
@@ -164,7 +164,7 @@ void SwExtTextInput::SetInputData( const CommandExtTextInputData& rData )
 				// some characters
 				nReplace = nReplace - rNewStr.Len();
 				aIdx += rNewStr.Len();
-                pTNd->ReplaceText( aIdx, nReplace,
+				pTNd->ReplaceText( aIdx, nReplace,
 							sOverwriteText.Copy( rNewStr.Len(), nReplace ));
 				aIdx = nSttCnt;
 				nReplace = rNewStr.Len();
@@ -173,14 +173,14 @@ void SwExtTextInput::SetInputData( const CommandExtTextInputData& rData )
 			{
 				nReplace = nReplace - sOverwriteText.Len();
 				aIdx += sOverwriteText.Len();
-                pTNd->EraseText( aIdx, nReplace );
+				pTNd->EraseText( aIdx, nReplace );
 				aIdx = nSttCnt;
 				nReplace = sOverwriteText.Len();
 			}
 			else if( (nReplace = sOverwriteText.Len()) > rNewStr.Len() )
 				nReplace = rNewStr.Len();
 
-            pTNd->ReplaceText( aIdx, nReplace, rNewStr );
+			pTNd->ReplaceText( aIdx, nReplace, rNewStr );
 			if( !HasMark() )
 				SetMark();
 			GetMark()->nContent = aIdx;
@@ -188,12 +188,12 @@ void SwExtTextInput::SetInputData( const CommandExtTextInputData& rData )
 		else
 		{
 			if( nSttCnt < nEndCnt )
-            {
-                pTNd->EraseText( aIdx, nEndCnt - nSttCnt );
-            }
+			{
+				pTNd->EraseText( aIdx, nEndCnt - nSttCnt );
+			}
 
-            pTNd->InsertText( rNewStr, aIdx,
-                    IDocumentContentOperations::INS_EMPTYEXPAND );
+			pTNd->InsertText( rNewStr, aIdx,
+					IDocumentContentOperations::INS_EMPTYEXPAND );
 			if( !HasMark() )
 				SetMark();
 		}
@@ -289,8 +289,7 @@ SwExtTextInput* SwDoc::GetExtTextInput( const SwNode& rNd,
 SwExtTextInput* SwDoc::GetExtTextInput() const
 {
 	ASSERT( !pExtInputRing || pExtInputRing == pExtInputRing->GetNext(),
-			"more then one InputEngine available" );
+			"more than one InputEngine available" );
 	return (SwExtTextInput*)pExtInputRing;
 }
-
 

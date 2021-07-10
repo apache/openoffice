@@ -1,6 +1,6 @@
 # Apache OpenOffice<sup>®</sup>
 
-The Apache OpenOffice project (AOO) provides a full featured office productivity suite based on open standards.\
+The Apache OpenOffice project (AOO) provides a full featured office productivity suite based on open standards.
 It is the continuation of the OpenOffice.org project.
 
 For detailed information about Apache OpenOffice please visit the [Project Website](https://openoffice.apache.org/).
@@ -15,7 +15,7 @@ Currently supported platforms include:
 - FreeBSD
 - OS/2
 
-OpenOffice is used by millions of users worldwide and with more than 298 million downloads it is one of the most successful open source projects.
+OpenOffice is used by millions of users worldwide and with more than 310 million downloads it is one of the most successful open source projects.
 
 # Getting the latest sources via Git
 

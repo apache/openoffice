@@ -11,3 +11,14 @@
  														// in the case of a non-contiguous list
  	return m_pseg->m_prgginf[(*m_vit) - m_pseg->m_isloutGinf0];
  }
+--- misc/silgraphite-2.3.1/engine/configure	2021-06-19 15:17:20.741894267 +0200
++++ misc/build/silgraphite-2.3.1/engine/configure	2021-06-19 15:18:16.359429854 +0200
+@@ -16877,7 +16877,7 @@
+ # (note: the flags here are gcc-specific and may fail with other compilers)
+ build_flags=""
+ if test "$enable_debug" = yes; then
+-  build_flags="$build_flags -O0 -g -Wall -Wno-unknown-pragmas -Wparentheses -Werror"
++  build_flags="$build_flags -O0 -g -Wall -Wno-unknown-pragmas -Wparentheses"
+ elif test "$enable_strict" = yes; then
+   build_flags="$build_flags -DNDEBUG -Wall -Wno-unknown-pragmas -Wparentheses -Werror"
+ else

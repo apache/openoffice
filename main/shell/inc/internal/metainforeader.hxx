@@ -44,7 +44,7 @@ public:
 	/** check if the Tag is in the target meta.xml file.
 
 		@param TagName
-		the name of the tag that will be retrive.
+		the name of the tag that will be retrieve.
 	*/
 	bool hasTag(std::wstring TagName) const;
 
@@ -52,7 +52,7 @@ public:
 	/** Get a specific tag content, compound tags will be returned as comma separated list.
 
 		@param TagName
-		the name of the tag that will be retrive.
+		the name of the tag that will be retrieve.
 	*/
 	std::wstring getTagData( const std::wstring& TagName);
 

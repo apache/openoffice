@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -717,7 +717,7 @@ struct W1_FLD //////////////////////////////////////// FieldDescriptor
 
 struct W1_PIC /////////////////////////////////////// PictureStructure
 {
-	SVBT32 lcb;// 0x0 number of bytes in the PIC structure plus size of following picture data which may be a Window's metafile, a bitmap, or the filename of a TIFF file.
+	SVBT32 lcb;// 0x0 number of bytes in the PIC structure plus size of following picture data which may be a Windows metafile, a bitmap, or the filename of a TIFF file.
 	sal_uLong lcbGet() {
 		return SVBT32ToUInt32(lcb); }
 	SVBT16 cbHeader;// 0x4 number of bytes in the PIC (to allow for future expansion).
@@ -738,7 +738,7 @@ struct W1_PIC /////////////////////////////////////// PictureStructure
 			return SVBT16ToShort(hMF); }
 	} mfp;
 	union W1_MFP_BMP {
-		SVBT8 bm[14];// 0xe	BITMAP(14 bytes)	Window's bitmap structure when PIC describes a BITMAP.
+		SVBT8 bm[14];// 0xe	BITMAP(14 bytes)	Windows bitmap structure when PIC describes a BITMAP.
 		SVBT8 rcWinMF[14];// 0xe	rc (rectangle - 8 bytes) rect for window origin and extents when metafile is stored -- ignored if 0
 	} MFP_BMP;
 	SVBT16 dxaGoal;// 0x1c	horizontal measurement in twips of the rectangle the picture should be imaged within.
@@ -800,7 +800,7 @@ struct W1_PIC /////////////////////////////////////// PictureStructure
 //	SVBT16 dyaOrigin;// 0x38	vertical offset of hand annotation origin
 //	sal_uInt16 dyaOriginGet() {
 //		return SVBT16ToShort(dyaOrigin); }
-	SVBT8 rgb;// 0x3a	variable array of bytes containing Window's metafile, bitmap or TIFF file filename.
+	SVBT8 rgb;// 0x3a	variable array of bytes containing Windows metafile, bitmap or TIFF file filename.
 	sal_uInt8* rgbGet() {
 		return rgb; }
 };
@@ -900,10 +900,10 @@ struct W1_ANLV ////////////////////////////////////////////////////////
 struct W1_ANLD ////////////////////////////////////////////////////////
 {
 	W1_ANLV eAnlv;// 0
-	SVBT8 fNumber1;// 0x10		number only 1 item per table cell
+	SVBT8 fNumber1;// 0x10			number only 1 item per table cell
 	SVBT8 fNumberAcross;// 0x11		number across cells in table rows(instead of down)
 	SVBT8 fRestartHdn;// 0x12		restart heading number on section boundary
-	SVBT8 fSpareX;// 0x13		unused( should be 0)
+	SVBT8 fSpareX;// 0x13			unused( should be 0)
 	sal_Char rgchAnld[32];// 0x14	characters displayed before/after autonumber
 };
 

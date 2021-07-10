@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -77,8 +77,8 @@ DEFINE_XTYPEPROVIDER_4( Job                           ,
 //________________________________
 /**
     @short      standard ctor
-    @descr      It initialize this new instance. But it set some generic parameters here only.
-                Specialized informations (e.g. the alias or service name ofthis job) will be set
+    @descr      It initializes this new instance. But it sets some generic parameters here only.
+                Specialized informations (e.g. the alias or service name of this job) will be set
                 later using the method setJobData().
 
     @param      xSMGR
@@ -107,8 +107,8 @@ Job::Job( /*IN*/ const css::uno::Reference< css::lang::XMultiServiceFactory >& x
 //________________________________
 /**
     @short      standard ctor
-    @descr      It initialize this new instance. But it set some generic parameters here only.
-                Specialized informations (e.g. the alias or service name ofthis job) will be set
+    @descr      It initializes this new instance. But it sets some generic parameters here only.
+                Specialized informations (e.g. the alias or service name of this job) will be set
                 later using the method setJobData().
 
     @param      xSMGR
@@ -136,7 +136,7 @@ Job::Job( /*IN*/ const css::uno::Reference< css::lang::XMultiServiceFactory >& x
 
 //________________________________
 /**
-    @short  superflous!
+    @short  superfluous!
     @descr  Releasing of memory and reference must be done inside die() call.
             Otherwise it's a bug.
 */
@@ -199,7 +199,7 @@ void Job::setJobData( const JobData& aData )
     @short  runs the job
     @descr  It doesn't matter, if the job is an asynchronous or
             synchronous one. This method returns only if it was finished
-            or cancelled.
+            or canceled.
 
     @param  lDynamicArgs
                 optional arguments for job execution
@@ -234,13 +234,13 @@ void Job::execute( /*IN*/ const css::uno::Sequence< css::beans::NamedValue >& lD
     {
         // create the job
         // We must check for the supported interface on demand!
-        // But we preferr the synchronous one ...
+        // But we prefer the synchronous one ...
         m_xJob = m_xSMGR->createInstance(m_aJobCfg.getService());
         xSJob  = css::uno::Reference< css::task::XJob >(m_xJob, css::uno::UNO_QUERY);
         if (!xSJob.is())
             xAJob = css::uno::Reference< css::task::XAsyncJob >(m_xJob, css::uno::UNO_QUERY);
 
-        // execute it asynchron
+        // execute it asynchronous
         if (xAJob.is())
         {
             m_aAsyncWait.reset();
@@ -254,7 +254,7 @@ void Job::execute( /*IN*/ const css::uno::Sequence< css::beans::NamedValue >& lD
             /* SAFE { */
             // Note: Result handling was already done inside the callback!
         }
-        // execute it synchron
+        // execute it synchronous
         else if (xSJob.is())
         {
             aWriteLock.unlock();
@@ -330,9 +330,9 @@ void Job::execute( /*IN*/ const css::uno::Sequence< css::beans::NamedValue >& lD
     @short  kill this job
     @descr  It doesn't matter if this request is called from inside or
             from outside. We release our internal structures and stop
-            avary activity. After doing so - this instance will not be
-            useable any longer! Of course we try to handle further requests
-            carefully. May somehwere else hold a reference to us ...
+            every activity. After doing so - this instance will not be
+            usable any longer! Of course we try to handle further requests
+            carefully. Maybe somewhere else hold a reference to us ...
 */
 void Job::die()
 {
@@ -375,8 +375,8 @@ void Job::die()
 /**
     @short  generates list of arguments for job execute
     @descr  There exist a set of informations, which can be needed by a job.
-                a) it's static configuration data   (Equals for all jobs.    )
-                b) it's specific configuration data (Different for every job.)
+                a) its static configuration data    (Equals for all jobs.    )
+                b) its specific configuration data  (Different for every job.)
                 c) some environment values          (e.g. the frame, for which this job was started)
                 d) any other dynamic data           (e.g. parameters of a dispatch() request)
             We collect all these informations and generate one list which include all others.
@@ -398,7 +398,7 @@ css::uno::Sequence< css::beans::NamedValue > Job::impl_generateJobArgs( /*IN*/ c
     JobData::EMode eMode = m_aJobCfg.getMode();
 
     // Create list of environment variables. This list must be part of the
-    // returned structure everytimes ... but some of its members are opetional!
+    // returned structure every time ... but some of its members are optional!
     css::uno::Sequence< css::beans::NamedValue > lEnvArgs(1);
     lEnvArgs[0].Name    = ::rtl::OUString::createFromAscii(JobData::PROP_ENVTYPE);
     lEnvArgs[0].Value <<= m_aJobCfg.getEnvironmentDescriptor();
@@ -542,17 +542,17 @@ void Job::impl_reactForJobResult( /*IN*/ const css::uno::Any& aResult )
 /**
     @short  starts listening for office shutdown and closing of our
             given target frame (if its a valid reference)
-    @descr  We will reghister ourself as terminate listener
+    @descr  We will register ourself as terminate listener
             at the global desktop instance. That will hold us
             alive and additional we get the information, if the
-            office whish to shutdown. If then an internal job
+            office wishes to shutdown. If then an internal job
             is running we will have the chance to suppress that
             by throwing a veto exception. If our internal wrapped
             job finished his work, we can release this listener
             connection.
 
             Further we are listener for closing of the (possible valid)
-            given frame. We must be sure, that this ressource won't be gone
+            given frame. We must be sure, that this resource won't be gone
             if our internal job is still running.
 */
 void Job::impl_startListening()
@@ -699,7 +699,7 @@ void Job::impl_stopListening()
                 the job, which was running and inform us now
 
     @param  aResult
-                it's results
+                its results
 */
 void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAsyncJob >& xJob    ,
                                 /*IN*/ const css::uno::Any&                               aResult ) throw(css::uno::RuntimeException)
@@ -708,7 +708,7 @@ void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAs
     WriteGuard aWriteLock(m_aLock);
 
     // It's necessary to check this.
-    // May this job was cancelled by any other reason
+    // May this job was canceled by any other reason
     // some milliseconds before. :-)
     if (m_xJob.is() && m_xJob==xJob)
     {
@@ -721,7 +721,7 @@ void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAs
         m_xJob = css::uno::Reference< css::uno::XInterface >();
     }
 
-    // And let the start method "execute()" finishing it's job.
+    // And let the start method "execute()" finishing its job.
     // But do it every time. So any outside blocking code can finish
     // his work too.
     m_aAsyncWait.set();
@@ -737,7 +737,7 @@ void SAL_CALL Job::jobFinished( /*IN*/ const css::uno::Reference< css::task::XAs
             If the internal wrapped job is still in progress, we disagree with that by throwing the
             right veto exception. If not - we agree. But then we must be aware, that another event
             notifyTermination() can follow. Then we have no chance to do the same. Then we have to
-            accept that and stop our work instandly.
+            accept that and stop our work instantly.
 
     @param  aEvent
                 describes the broadcaster and must be the desktop instance
@@ -751,7 +751,7 @@ void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) thro
     /* SAFE { */
     ReadGuard aReadLock(m_aLock);
 
-    // don't disagree with this request if job was already stopped or finished it's work
+    // don't disagree with this request if job was already stopped or finished its work
     // if (m_eRunState != E_RUNNING)
     //    return;
 
@@ -784,10 +784,10 @@ void SAL_CALL Job::queryTermination( /*IN*/ const css::lang::EventObject& ) thro
     @descr  Instead of the method queryTermination(), here is no chance to disagree with that.
             We have to accept it and cancel all current processes inside.
             It can occur only if job was not already started if queryTermination() was called here ..
-            Then we had not throwed a veto exception. But now we must agree with this situation and break
+            Then we had not thrown a veto exception. But now we must agree with this situation and break
             all our internal processes. Its not a good idea to mark this instance as non startable any longer
-            inside queryTermination() if no job was unning too. Because that would disable this job and may
-            the office does not really shutdownm, because another listener has thrown the suitable exception.
+            inside queryTermination() if no job was running too. Because that would disable this job and may
+            the office does not really shutdown, because another listener has thrown the suitable exception.
 
     @param  aEvent
                 describes the broadcaster and must be the desktop instance
@@ -805,13 +805,13 @@ void SAL_CALL Job::notifyTermination( /*IN*/ const css::lang::EventObject& ) thr
             If the internal wrapped job is still in progress, we disagree with that by throwing the
             right veto exception. If not - we agree. But then we must be aware, that another event
             notifyClosing() can follow. Then we have no chance to do the same. Then we have to
-            accept that and stop our work instandly.
+            accept that and stop our work instantly.
 
     @param  aEvent
                 describes the broadcaster and must be the frame instance
 
     @param  bGetsOwnerShip
-                If it's set to <sal_True> and we throw the right veto excepion, we have to close this frame later
+                If it's set to <sal_True> and we throw the right veto exception, we have to close this frame later
                 if our internal processes will be finished. If it's set to <FALSE/> we can ignore it.
 
     @throw  CloseVetoException
@@ -864,7 +864,7 @@ void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
     {
         // analyze event source - to find out, which resource called queryClosing() at this
         // job wrapper. We must bind a "pending close" request to this resource.
-        // Closing of the corresponding resource will be done if our internal job finish it's work.
+        // Closing of the corresponding resource will be done if our internal job finish its work.
         m_bPendingCloseFrame = (m_xFrame.is() && aEvent.Source == m_xFrame);
         m_bPendingCloseModel = (m_xModel.is() && aEvent.Source == m_xModel);
 
@@ -876,8 +876,8 @@ void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
     // No veto ...
     // But don't call die() here or free our internal member.
     // This must be done inside notifyClosing() only. Otherwise the
-    // might stopped job has no chance to return it's results or
-    // call us back. We must give him the chance to finish it's work successfully.
+    // might stopped job has no chance to return its results or
+    // call us back. We must give him the chance to finish its work successfully.
 
     aWriteLock.unlock();
     /* } SAFE */
@@ -895,7 +895,7 @@ void SAL_CALL Job::queryClosing( const css::lang::EventObject& aEvent         ,
 void SAL_CALL Job::notifyClosing( const css::lang::EventObject& ) throw(css::uno::RuntimeException)
 {
     die();
-    // Do nothing else here. Our internal ressources was released ...
+    // Do nothing else here. Our internal resource was released ...
 }
 
 //________________________________
@@ -934,7 +934,7 @@ void SAL_CALL Job::disposing( const css::lang::EventObject& aEvent ) throw(css::
     /* } SAFE */
 
     die();
-    // Do nothing else here. Our internal ressources was released ...
+    // Do nothing else here. Our internal resource was released ...
 }
 
 } // namespace framework

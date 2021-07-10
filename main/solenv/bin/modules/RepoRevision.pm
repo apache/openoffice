@@ -75,6 +75,10 @@ sub DetectRevisionId ($)
 	my $path = shift;
 	my $id = undef;
 
+	#NOTE: Magic cookie file 'reporevision.lst' created by aoo_srcrelease
+	$id = DetectRevisionIdFromFile ("$ENV{'SOLARENV'}/inc/reporevision.lst");
+	if ($id) { return $id };
+
 	my $NotGit = `cd $path && git rev-parse --git-dir > /dev/null 2>&1`;
 	if (!$NotGit || -d ".git" || -d "$path/.git")
 	{
@@ -85,12 +89,7 @@ sub DetectRevisionId ($)
 		$id = DetectRevisionIdFromSVN ($path);
 	}
 
-	if (!$id)
-	{
-		#NOTE: Magic cookie file 'reporevision.lst' created by aoo_srcrelease
-		$id = DetectRevisionIdFromFile ("$ENV{'SOLARENV'}/inc/reporevision.lst");
-		if (!$id) { $id = "unknown-rev" };
-	}
+	if (!$id) { $id = "unknown-rev" };
 	return $id;
 }
 

@@ -141,7 +141,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
     t_rtti_map::const_iterator iFind( m_rttis.find( unoName ) );
     if (iFind == m_rttis.end())
     {
-        // build the mangled name for unoName's RTTI typeinfo symbol
+        // RTTI symbol
         OStringBuffer buf( 64 );
         buf.append( RTL_CONSTASCII_STRINGPARAM("_ZTIN") );
         sal_Int32 index = 0;
@@ -156,7 +156,7 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
         buf.append( 'E' );
         
         OString symName( buf.makeStringAndClear() );
-        rtti = (type_info *)dlsym( m_hApp, symName.getStr() );
+        rtti = static_cast<std::type_info *>(dlsym( m_hApp, symName.getStr() ));
 
         if (rtti)
         {
@@ -174,15 +174,12 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
                 // symbol and rtti-name is nearly identical,
                 // the symbol is prefixed with _ZTI
                 char const * rttiName = symName.getStr() +4;
-#if OSL_DEBUG_LEVEL >= 1
+#if OSL_DEBUG_LEVEL > 1
                 fprintf( stderr,"generated rtti for %s\n", rttiName );
                 const OString aCUnoName = OUStringToOString( unoName, RTL_TEXTENCODING_UTF8);
                 OSL_TRACE( "TypeInfo for \"%s\" not found and cannot be generated.\n", aCUnoName.getStr());
 #endif
-#if 0 // TODO: enable it again when the generated class_type_infos always work.
-      // Forcing the toolchain to create authentic typeinfos is much better though
-      // than the sick concept of reverse-engineering the platform's toolchain
-      // and generating the missing type_infos.
+#ifndef AOO_BYPASS_RTTI
                 if (pTypeDescr->pBaseTypeDescription)
                 {
                     // ensure availability of base
@@ -199,7 +196,6 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 #else
                 rtti = NULL;
 #endif
-
                 bool bOK = m_generatedRttis.insert( t_rtti_map::value_type( unoName, rtti )).second;
                 OSL_ENSURE( bOK, "### inserting new generated rtti failed?!" );
             }
@@ -220,9 +216,16 @@ type_info * RTTI::getRTTI( typelib_CompoundTypeDescription *pTypeDescr ) SAL_THR
 //--------------------------------------------------------------------------------------------------
 static void deleteException( void * pExc )
 {
-    __cxa_exception const * header = ((__cxa_exception const *)pExc - 1);
-    if( !header->exceptionType) // TODO: remove this when getRTTI() always returns non-NULL
+    __cxa_exception const * header = static_cast<__cxa_exception const *>(pExc) - 1;
+    /* More __cxa_exception mumbo-jumbo. See share.hxx and fillUnoException() below */
+    if (header->exceptionDestructor != &deleteException)
+    {
+        header = reinterpret_cast<__cxa_exception const *>(reinterpret_cast<char const *>(header) - 8);
+    }
+    if( !header->exceptionType)
+    {
         return; // NOTE: leak for now
+    }
     typelib_TypeDescription * pTD = 0;
     OUString unoName( toUNOname( header->exceptionType->name() ) );
     ::typelib_typedescription_getByName( &pTD, unoName.pData );
@@ -310,6 +313,19 @@ void fillUnoException( __cxa_exception * header, uno_Any * pUnoExc, uno_Mapping 
         OSL_ENSURE( 0, cstr.getStr() );
 #endif
         return;
+    }
+
+    /*
+     * Handle the case where we are built on llvm 10 (or later) but are running
+     * on an earlier version (eg, community builds). In this situation the
+     * reserved ptr doesn't exist in the struct returned and so the offsets
+     * that header uses are wrong. This assumes that reserved isn't used
+     * and that referenceCount is always >0 in the cases we handle.
+     * See share.hxx for the definition of __cxa_exception
+     */
+    if (*reinterpret_cast<void **>(header) == 0)
+    {
+        header = reinterpret_cast<__cxa_exception *>(reinterpret_cast<char *>(header) + 8);
     }
 
 	typelib_TypeDescription * pExcTypeDescr = 0;

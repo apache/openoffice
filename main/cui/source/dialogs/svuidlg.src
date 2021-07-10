@@ -139,7 +139,7 @@ ModalDialog MD_UPDATE_BASELINKS
 	{
 		Pos = MAP_APPFONT ( 83, 6 ) ;
 		Size = MAP_APPFONT ( 63, 10 ) ;
-		Text [ en-US ] = "Element:" ;
+		Text [ en-US ] = "Element" ;
 	};
 	FixedText FT_TYPE
 	{
@@ -196,7 +196,7 @@ ModalDialog MD_UPDATE_BASELINKS
 	{
 		Pos = MAP_APPFONT ( 6, 111 ) ;
 		Size = MAP_APPFONT ( 61, 10 ) ;
-		Text [ en-US ] = "Source file" ;
+		Text [ en-US ] = "Source file:" ;
 	};
 	FixedText FT_SOURCE2
 	{

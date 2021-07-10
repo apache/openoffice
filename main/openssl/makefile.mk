@@ -110,6 +110,10 @@ UNAME=$(shell uname)
 	.ENDIF
 .ENDIF
 
+.IF "$(OS)" == "MACOSX"
+	CONFIGURE_ACTION=Configure darwin64-x86_64-cc no-dso no-shared $(NO_ASM)
+.ENDIF
+
 .IF "$(OS)" == "WNT"
 
 .IF "$(COM)"=="GCC"

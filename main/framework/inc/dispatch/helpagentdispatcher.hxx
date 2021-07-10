@@ -173,13 +173,13 @@ class HelpAgentDispatcher : public  css::lang::XTypeProvider
 		
         //---------------------------------------
         /** @short  starts the timer for showing the agent window.
-			@descr	The timer wont be started twice ... this method checks the current running state .-)
+			@descr	The timer won't be started twice ... this method checks the current running state .-)
          */
         void implts_startTimer();
 		
         //---------------------------------------
         /** @short  stop the timer.
-			@descr	The timer wont be stopped twice ... this method checks the current running state .-)
+			@descr	The timer won't be stopped twice ... this method checks the current running state .-)
 					Further this method marks the current help URL (m_xCurrentURL) as "ignorable".
 					Cause the user ignored it !
          */

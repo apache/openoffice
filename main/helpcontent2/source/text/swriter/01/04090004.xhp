@@ -2,7 +2,7 @@
 <helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,18 +10,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
 
 
 
@@ -55,34 +54,10 @@
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="6">Modified</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="7">Inserts the name of the author, and the date, or the time of the last save.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="8">Editing time</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="9">Inserts the amount of time spent on editing a document.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
 <paragraph role="tablecontent" id="par_id3150700" xml-lang="en-US" l10n="U" oldref="10">Comments</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3147490" xml-lang="en-US" l10n="U" oldref="11">Inserts the comments as entered in the <emph>Description</emph> tab page of the <emph>Properties</emph> dialog.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3145262" xml-lang="en-US" l10n="U" oldref="12">Document number</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="13">Inserts the version number of the current document.</paragraph>
+<paragraph role="tablecontent" id="par_id3147490" xml-lang="en-US" l10n="U" oldref="11">Inserts the comments as entered in the <emph>Description</emph> tab page of the <emph>File Properties</emph> dialog.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -90,23 +65,15 @@
 <paragraph role="tablecontent" id="par_id3146326" xml-lang="en-US" l10n="U" oldref="14">Created</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3149833" xml-lang="en-US" l10n="U" oldref="15">Inserts the name of the author, and the date, or the time when the document was created.</paragraph>
+<paragraph role="tablecontent" id="par_id3149833" xml-lang="en-US" l10n="U" oldref="15">Inserts the name of the author, or the date, or the time when the document was created.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3148856" xml-lang="en-US" l10n="U" oldref="16">Info 0 - 3</paragraph>
+<paragraph role="tablecontent" id="par_id3148856" xml-lang="en-US" l10n="U" oldref="16">Custom</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3154784" xml-lang="en-US" l10n="U" oldref="17">Inserts the contents of the info fields found on the <emph>User Defined </emph>tab of the <link href="text/shared/01/01100300.xhp" name="File - Properties"><emph>File - Properties</emph></link> dialog.</paragraph>
-</tablecell>
-</tablerow>
-<tablerow>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3150177" xml-lang="en-US" l10n="U" oldref="18">Last printed</paragraph>
-</tablecell>
-<tablecell>
-<paragraph role="tablecontent" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="19">Inserts the name of the author, and the date or time that the document was last printed.</paragraph>
+<paragraph role="tablecontent" id="par_id3154784" xml-lang="en-US" l10n="U" oldref="17">Shows the names and inserts the contents of the value fields found on the <link href="text/shared/01/01100300.xhp" name="Custom Properties"><emph>Custom Properties</emph></link> tab of the <emph>File - Properties</emph> dialog. Item is only visible if fields have been added.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -114,7 +81,31 @@
 <paragraph role="tablecontent" id="par_id3156122" xml-lang="en-US" l10n="U" oldref="20">Keywords</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3150912" xml-lang="en-US" l10n="U" oldref="21">Inserts the keywords as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3150912" xml-lang="en-US" l10n="U" oldref="21">Inserts the keywords as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150177" xml-lang="en-US" l10n="U" oldref="18">Last printed</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3156094" xml-lang="en-US" l10n="U" oldref="19">Inserts the name of the author, or the date, or the time that the document was last printed.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145774" xml-lang="en-US" l10n="U" oldref="6">Modified</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155915" xml-lang="en-US" l10n="U" oldref="7">Inserts the name of the author, or the date, or the time of the last save.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3145262" xml-lang="en-US" l10n="U" oldref="12">Revision number</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150556" xml-lang="en-US" l10n="U" oldref="13">Inserts the version number of the current document.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -122,7 +113,7 @@
 <paragraph role="tablecontent" id="par_id3154328" xml-lang="en-US" l10n="U" oldref="22">Subject</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3146942" xml-lang="en-US" l10n="U" oldref="23">Inserts the subject as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3146942" xml-lang="en-US" l10n="U" oldref="23">Inserts the subject as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -130,13 +121,21 @@
 <paragraph role="tablecontent" id="par_id3150092" xml-lang="en-US" l10n="U" oldref="24">Title</paragraph>
 </tablecell>
 <tablecell>
-<paragraph role="tablecontent" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="25">Inserts the title as entered in the <emph>Description </emph>tab of the <emph>File Properties </emph>dialog.</paragraph>
+<paragraph role="tablecontent" id="par_id3150033" xml-lang="en-US" l10n="U" oldref="25">Inserts the title as entered in the <emph>Description</emph> tab of the <emph>File Properties</emph> dialog.</paragraph>
+</tablecell>
+</tablerow>
+<tablerow>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3150108" xml-lang="en-US" l10n="U" oldref="8">Total editing time</paragraph>
+</tablecell>
+<tablecell>
+<paragraph role="tablecontent" id="par_id3155860" xml-lang="en-US" l10n="U" oldref="9">Inserts the amount of time spent on editing a document.</paragraph>
 </tablecell>
 </tablerow>
 </table>
 <embed href="text/swriter/01/04090001.xhp#hinweis"/>
 <bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOKINF:LB_DOKINFSELECTION" id="bm_id3154623" localize="false"/>
-<paragraph role="paragraph" id="par_id0902200804290272" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the available fields for the field type selected in the <emph>Type </emph>list. To insert a field, click the field, and then click <emph>Insert</emph>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id0902200804290272" xml-lang="en-US" l10n="NEW"><ahelp hid="." visibility="hidden">Lists the available fields for the field type selected in the <emph>Type</emph> list. To insert a field, click the field, and then click <emph>Insert</emph>.</ahelp></paragraph>
 <embed href="text/swriter/01/04090001.xhp#auswahl"/>
 <paragraph role="note" id="par_id3149956" xml-lang="en-US" l10n="U" oldref="26">For the "Created", "Modified", and "Last printed" field types, you can include the author, date, and time of the corresponding operation.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/sw:ListBox:TP_FLD_DOKINF:LB_DOKINFFORMAT" id="bm_id3166051" localize="false"/>

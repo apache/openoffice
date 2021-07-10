@@ -57,7 +57,7 @@ namespace framework{
     @descr          You should use it as dispatcher for "_self", flag::SELF ... cases, to load a document into an
                     owner frame without creation of a new one.
                     Use this class as member only! Never use it as baseclass.
-					XInterface will be ambigous and we hold a weakreference to ouer OWNER - not to ouer SUPERCLASS!
+					XInterface will be ambiguous and we hold a weakreference to our OWNER - not to our SUPERCLASS!
 
 	@implements		XInterface
 					XDispatch

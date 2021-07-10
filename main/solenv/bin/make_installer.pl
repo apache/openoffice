@@ -1086,7 +1086,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                     {
                         # ... now epm can be started, to create the installation sets
 
-                        $installer::logger::Info->print( "... starting patched epm ... \n" );
+                        $installer::logger::Info->print( "... starting AOO compatible EPM ... \n" );
 
                         installer::epmfile::call_epm($epmexecutable, $completeepmfilename, $packagename, $includepatharrayref);
 
@@ -1119,11 +1119,11 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
                         # ... now epm can be started, to create the installation sets
                         if ( $installer::globals::is_special_epm )
                         {
-                            $installer::logger::Info->print( "... starting patched epm ... \n" );
+                            $installer::logger::Info->print( "... starting AOO compatible EPM ... \n" );
                         }
                         else
                         {
-                            $installer::logger::Info->print( "... starting unpatched epm ... \n" );
+                            $installer::logger::Info->print( "... starting unpatched EPM ... \n" );
                         }
 
                         if ( $installer::globals::call_epm ) { installer::epmfile::call_epm($epmexecutable, $completeepmfilename, $packagename, $includepatharrayref); }
@@ -1174,7 +1174,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
 
     if ( $installer::globals::postprocess_specialepm )
     {
-        installer::logger::include_header_into_logfile("Post EPM processes (Patched EPM):");
+        installer::logger::include_header_into_logfile("Post EPM processes (AOO Compatible EPM):");
 
         chdir($installdir);
 
@@ -1212,7 +1212,7 @@ sub MakeNonWindowsBuild ($$$$$$$$$$$$$$$)
 
     if ( $installer::globals::postprocess_standardepm )
     {
-        installer::logger::include_header_into_logfile("Post EPM processes (Standard EPM):");
+        installer::logger::include_header_into_logfile("Post EPM processes (Unpatched EPM):");
 
         chdir($installdir);
         

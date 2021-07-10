@@ -3,10 +3,19 @@
 !define PRODUCT_PUBLISHER "PUBLISHERPLACEHOLDER"
 !define PRODUCT_WEB_SITE "WEBSITEPLACEHOLDER"
 
+; Product Information
+VIAddVersionKey ProductName "Apache PRODUCTNAMEPLACEHOLDER"
+VIAddVersionKey CompanyName "Apache Software Foundation"
+VIAddVersionKey LegalCopyright "(c) 2012-2021 The Apache Software Foundation"
+VIAddVersionKey FileDescription "Apache PRODUCTNAMEPLACEHOLDER Installer"
+VIAddVersionKey ProductVersion "PRODUCTVERSIONPLACEHOLDER"
+VIProductVersion "4.5.9900.500"
+
 ; Enable Unicode
 Unicode true
 
-; SetCompressor lzma
+; Compression options
+CRCCheck on
 SetCompressor zlib
 
 ; MUI 1.67 compatible ------
@@ -41,7 +50,7 @@ Function .onInit
     /HELP=ON : Shows this help $\n"
     Quit
     GoTo onInitDone
-    
+
   nohelp:
 
   StrCmp $INSTDIR "" pathnotset pathset
@@ -59,7 +68,7 @@ Function .onInit
 
   onInitDone:
   pathset:
- 
+
 FunctionEnd
 
 Function GetParameters
@@ -102,7 +111,7 @@ Function GetParameters
 FunctionEnd
 
 Function GetOptions
- 
+
     Exch $1
     Exch
     Exch $0
@@ -113,16 +122,16 @@ Function GetOptions
     Push $5
     Push $6
     Push $7
- 
+
     StrCpy $2 $1 '' 1
     StrCpy $1 $1 1
     StrLen $3 $2
     StrCpy $7 0
-  
+
     begin:
     StrCpy $4 -1
     StrCpy $6 ''
- 
+
     quote:
     IntOp $4 $4 + 1
     StrCpy $5 $0 1 $4
@@ -154,7 +163,7 @@ Function GetOptions
     StrCmp $6 '`' quote
     StrCmp $5 $1 0 quote
     StrCmp $7 0 trimleft trimright
- 
+
     trimleft:
     IntOp $4 $4 + 1
     StrCpy $5 $0 $3 $4
@@ -168,7 +177,7 @@ Function GetOptions
     goto -3
     StrCpy $7 1
     goto begin
- 
+
     trimright:
     StrCpy $0 $0 $4
     StrCpy $4 $0 1 -1
@@ -183,10 +192,10 @@ Function GetOptions
     StrCmp $3 '`' 0 end
     StrCpy $0 $0 -1 1
     goto end
- 
+
     notfound:
     StrCpy $0 ''
- 
+
     end:
     Pop $7
     Pop $6
@@ -196,7 +205,7 @@ Function GetOptions
     Pop $2
     Pop $1
     Exch $0
-    
+
 FunctionEnd
 
 ; MUI Settings
@@ -233,7 +242,7 @@ FunctionEnd
   !ifdef MUI_LANGFILE_DEFAULT_TEMP
     !define LANGFILE_DEFAULT "${MUI_LANGFILE_DEFAULT}"
   !endif
-  ;Add language to list of languages for selection dialog  
+  ;Add language to list of languages for selection dialog
   !ifndef MUI_LANGDLL_LANGUAGES
    !define MUI_LANGDLL_LANGUAGES "'${LANGFILE_${LANGUAGE}_NAME}' '${LANG_${LANGUAGE}}' "
     !define MUI_LANGDLL_LANGUAGES_CP "'${LANGFILE_${LANGUAGE}_NAME}' '${LANG_${LANGUAGE}}' '${LANG_${LANGUAGE}_CP}' "
@@ -274,7 +283,7 @@ SectionEnd
 Section -Post
 
   StrCpy $R9 "false"
-  
+
   Call GetParameters
   Pop $1
 
@@ -286,7 +295,7 @@ Section -Post
 
   StrCmp $2 "ON" onPostDone callsetup
   callsetup:
-  
+
   Push $1
   Push "/INSTALLLOCATION="
   Call GetOptions
@@ -304,7 +313,7 @@ Section -Post
   Pop $2
   ;MessageBox MB_OK "INSTALLJAVA: $2"
 
-  StrCmp $2 "ON" setinstalljava setdontinstalljava 
+  StrCmp $2 "ON" setinstalljava setdontinstalljava
   setinstalljava:
     StrCpy $R9 "true"
   setdontinstalljava:
@@ -314,7 +323,7 @@ Section -Post
   Call GetOptions
   Pop $2
 
-  StrCmp $2 "" dontsetguilevel setguilevel 
+  StrCmp $2 "" dontsetguilevel setguilevel
   setguilevel:
     StrCpy $7 "/"
     StrCpy $7 $7$2
@@ -371,7 +380,7 @@ Section -Post
 
     StrCmp $2 "ON" postremovesilent nopostremovesilent
     nopostremovesilent:
-      StrCmp $R9 "true" installjava1 dontinstalljava1 
+      StrCmp $R9 "true" installjava1 dontinstalljava1
       installjava1:
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qn REBOOT=Suppress"'
       dontinstalljava1:
@@ -380,7 +389,7 @@ Section -Post
       Quit
       GoTo onPostDone
     postremovesilent:
-      StrCmp $R9 "true" installjava2 dontinstalljava2 
+      StrCmp $R9 "true" installjava2 dontinstalljava2
       installjava2:
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qn REBOOT=Suppress"'
       dontinstalljava2:
@@ -404,7 +413,7 @@ Section -Post
       Quit
       GoTo onPostDone
     postremove:
-      StrCmp $R9 "true" installjava3 dontinstalljava3 
+      StrCmp $R9 "true" installjava3 dontinstalljava3
       installjava3:
         ExecWait '$INSTDIR\java\WINDOWSJAVAFILENAMEPLACEHOLDER /s /v"/qr REBOOT=Suppress"'
       dontinstalljava3:

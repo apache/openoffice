@@ -1,5 +1,5 @@
---- misc/build/apr-1.5.2/Makefile.win	2013-10-03 12:58:21.000000000 +0200
-+++ misc/build/apr-1.5.2/Makefile.win	2016-07-26 12:59:58.183576182 +0200
+--- misc/build/apr-1.6.5/Makefile.win	2013-10-03 12:58:21.000000000 +0200
++++ misc/build/apr-1.6.5/Makefile.win	2016-07-26 12:59:58.183576182 +0200
 @@ -28,12 +28,7 @@
  #   nmake -f Makefile.win PREFIX=C:\APR buildall checkall install clean
  #

@@ -59,11 +59,12 @@ in this Software without prior written authorization from the X Consortium.
 #define        S_IFREG  0100000 
 #endif
 
-#define MAXDEFINES	512
+#define MAXDEFINES	2048
 #define MAXFILES	( 1<<16 ) /* Increased from 512. -mcafee */
 						      /* Increased from 1024. -mh */
 						      /* Increased from 2048. -b_michaelsen */
-#define MAXDIRS		64
+#define MAXDIRS		128
+#define OURBUFSIZ ( 1<<16 )
 #define SYMHASHSEED     131  /* 131 1313 13131 ... */
 #define SYMHASHMEMBERS	64	/* must be 2^x to work right */
 #define	TRUE		1

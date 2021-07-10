@@ -107,7 +107,7 @@ published interface XModel: com::sun::star::lang::XComponent
 	string getURL();
 
 	//-------------------------------------------------------------------------
-    /** provides read acces on currently representation of the
+    /** provides read access on currently representation of the
         <type scope="com::sun::star::document">MediaDescriptor</type>
         of this model which describes the model and his state
 

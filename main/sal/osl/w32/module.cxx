@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,7 +35,7 @@
 #include <vector>
 
 /*
-	under WIN32, we use the void* oslModule 
+	under WIN32, we use the void* oslModule
 	as a WIN32 HANDLE (which is also a 32-bit value)
 */
 
@@ -44,18 +44,18 @@
 /*****************************************************************************/
 oslModule SAL_CALL osl_loadModule(rtl_uString *strModuleName, sal_Int32 nRtldMode )
 {
-    HINSTANCE hInstance;
+	HINSTANCE hInstance;
 	UINT errorMode = SetErrorMode(SEM_NOOPENFILEERRORBOX | SEM_FAILCRITICALERRORS);
 	rtl_uString* Module = NULL;
 	oslModule ret = 0;
 	oslFileError	nError;
-	
-    RTL_LOGFILE_TRACE1( "{ osl_loadModule start: %S", (LPTSTR)&strModuleName->buffer );
+
+	RTL_LOGFILE_TRACE1( "{ osl_loadModule start: %S", (LPTSTR)&strModuleName->buffer );
 
 	OSL_ASSERT(strModuleName);
 
-    nRtldMode = nRtldMode; /* avoid warnings */
-    
+	nRtldMode = nRtldMode; /* avoid warnings */
+
 	nError = osl_getSystemPathFromFileURL(strModuleName, &Module);
 
 	if ( osl_File_E_None != nError )
@@ -63,19 +63,19 @@ oslModule SAL_CALL osl_loadModule(rtl_uString *strModuleName, sal_Int32 nRtldMod
 
 	hInstance = LoadLibraryW(reinterpret_cast<LPCWSTR>(Module->buffer));
 
-    if (hInstance == NULL)
-        hInstance = LoadLibraryExW(reinterpret_cast<LPCWSTR>(Module->buffer), NULL,
+	if (hInstance == NULL)
+		hInstance = LoadLibraryExW(reinterpret_cast<LPCWSTR>(Module->buffer), NULL,
                                   LOAD_WITH_ALTERED_SEARCH_PATH);
 
 	//In case of long path names (\\?\c:\...) try to shorten the filename.
 	//LoadLibrary cannot handle file names which exceed 260 letters.
-    //In case the path is to long, the function will fail. However, the error
-    //code can be different. For example, it returned  ERROR_FILENAME_EXCED_RANGE
-    //on Windows XP and ERROR_INSUFFICIENT_BUFFER on Windows 7 (64bit)
+	//In case the path is to long, the function will fail. However, the error
+	//code can be different. For example, it returned ERROR_FILENAME_EXCED_RANGE
+	//on Windows XP and ERROR_INSUFFICIENT_BUFFER on Windows 7 (64bit)
 	if (hInstance == NULL && Module->length > 260)
 	{
 		std::vector<WCHAR> vec(Module->length + 1);
-		DWORD len = GetShortPathNameW(reinterpret_cast<LPCWSTR>(Module->buffer), 
+		DWORD len = GetShortPathNameW(reinterpret_cast<LPCWSTR>(Module->buffer),
                                       &vec[0], Module->length + 1);
 		if (len )
 		{
@@ -95,7 +95,7 @@ oslModule SAL_CALL osl_loadModule(rtl_uString *strModuleName, sal_Int32 nRtldMod
 	rtl_uString_release(Module);
 	SetErrorMode(errorMode);
 
-    RTL_LOGFILE_TRACE1( "} osl_loadModule end: %S", (LPTSTR)&strModuleName->buffer );
+	RTL_LOGFILE_TRACE1( "} osl_loadModule end: %S", (LPTSTR)&strModuleName->buffer );
 
 	return ret;
 }
@@ -116,24 +116,24 @@ oslModule SAL_CALL osl_loadAsciiModule( const sal_Char* pModuleName, sal_Int32 n
 /* osl_getModuleHandle */
 /*****************************************************************************/
 
-sal_Bool SAL_CALL 
+sal_Bool SAL_CALL
 osl_getModuleHandle(rtl_uString *pModuleName, oslModule *pResult)
 {
-    HINSTANCE hInstance = GetModuleHandleW(reinterpret_cast<LPCWSTR>(pModuleName->buffer));
-    if( hInstance )
-    {
-        *pResult = (oslModule) hInstance;
-        return sal_True;
-    }
-    
-    return sal_False;
+	HINSTANCE hInstance = GetModuleHandleW(reinterpret_cast<LPCWSTR>(pModuleName->buffer));
+	if( hInstance )
+	{
+		*pResult = (oslModule) hInstance;
+		return sal_True;
+	}
+
+	return sal_False;
 }
 
 /*****************************************************************************/
 /* osl_unloadModule */
 /*****************************************************************************/
 void SAL_CALL osl_unloadModule(oslModule Module)
-{	
+{
 	FreeLibrary((HINSTANCE)Module);
 }
 
@@ -143,8 +143,8 @@ void SAL_CALL osl_unloadModule(oslModule Module)
 void* SAL_CALL osl_getSymbol(oslModule Module, rtl_uString *strSymbolName)
 {
     /* casting from a function pointer to a data pointer is invalid
-       be in this case unavoidable because the API has to stay 
-       compitable we need to keep this function which returns a
+       be in this case unavoidable because the API has to stay
+       compatible we need to keep this function which returns a
        void* by definition */
 #ifdef _MSC_VER
 #pragma warning(push)
@@ -160,17 +160,17 @@ void* SAL_CALL osl_getSymbol(oslModule Module, rtl_uString *strSymbolName)
 /* osl_getFunctionSymbol */
 /*****************************************************************************/
 oslGenericFunction SAL_CALL osl_getFunctionSymbol( oslModule Module, rtl_uString *strSymbolName )
-{    
-    rtl_String *symbolName = NULL;
+{
+	rtl_String *symbolName = NULL;
 	oslGenericFunction address;
 
 	OSL_ASSERT(Module);
 	OSL_ASSERT(strSymbolName);
 
-	rtl_uString2String( 
-		&symbolName, 
-		strSymbolName->buffer, 
-		strSymbolName->length, 
+	rtl_uString2String(
+		&symbolName,
+		strSymbolName->buffer,
+		strSymbolName->length,
 		RTL_TEXTENCODING_UTF8,
 		OUSTRING_TO_OSTRING_CVTFLAGS
 	);
@@ -178,21 +178,21 @@ oslGenericFunction SAL_CALL osl_getFunctionSymbol( oslModule Module, rtl_uString
 	address=osl_getAsciiFunctionSymbol(Module, rtl_string_getStr(symbolName));
 	rtl_string_release(symbolName);
 
-    return address;
+	return address;
 }
 
 /*****************************************************************************/
 /* osl_getAsciiFunctionSymbol */
 /*****************************************************************************/
-oslGenericFunction SAL_CALL 
+oslGenericFunction SAL_CALL
 osl_getAsciiFunctionSymbol( oslModule Module, const sal_Char *pSymbol )
 {
 	oslGenericFunction fncAddr = NULL;
-    
-    if( pSymbol )
-        fncAddr=(oslGenericFunction)GetProcAddress((HINSTANCE) Module, pSymbol);
-    
-    return fncAddr;
+
+	if( pSymbol )
+		fncAddr=(oslGenericFunction)GetProcAddress((HINSTANCE) Module, pSymbol);
+
+	return fncAddr;
 }
 
 
@@ -232,24 +232,24 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_Windows( void *pv, rtl_uString
 
 		if ( lpfnCreateToolhelp32Snapshot && lpfnModule32First && lpfnModule32Next )
 		{
-			HANDLE	hModuleSnap	= NULL;			
+			HANDLE	hModuleSnap	= NULL;
 			DWORD	dwProcessId = GetCurrentProcessId();
- 
-			// Take a snapshot of all modules in the specified process. 
 
-			hModuleSnap = lpfnCreateToolhelp32Snapshot(TH32CS_SNAPMODULE, dwProcessId ); 
+			// Take a snapshot of all modules in the specified process.
+
+			hModuleSnap = lpfnCreateToolhelp32Snapshot(TH32CS_SNAPMODULE, dwProcessId );
 
 			if ( INVALID_HANDLE_VALUE != hModuleSnap )
 			{
-				MODULEENTRY32	me32	= {0}; 
+				MODULEENTRY32	me32	= {0};
 
-				// Fill the size of the structure before using it. 
+				// Fill the size of the structure before using it.
 
-				me32.dwSize = sizeof(MODULEENTRY32); 
- 
-				// Walk the module list of the process, and find the module of 
-				// interest. Then copy the information to the buffer pointed 
-				// to by lpMe32 so that it can be returned to the caller. 
+				me32.dwSize = sizeof(MODULEENTRY32);
+
+				// Walk the module list of the process, and find the module of
+				// interest. Then copy the information to the buffer pointed
+				// to by lpMe32 so that it can be returned to the caller.
 
 				if ( lpfnModule32First(hModuleSnap, &me32) )
 				{
@@ -260,7 +260,7 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_Windows( void *pv, rtl_uString
 							rtl_uString	*ustrSysPath = NULL;
 
 							rtl_string2UString( &ustrSysPath, me32.szExePath, strlen(me32.szExePath), osl_getThreadTextEncoding(), OSTRING_TO_OUSTRING_CVTFLAGS );
-                            OSL_ASSERT(ustrSysPath != NULL);
+							OSL_ASSERT(ustrSysPath != NULL);
 							osl_getFileURLFromSystemPath( ustrSysPath, pustrURL );
 							rtl_uString_release( ustrSysPath );
 
@@ -271,11 +271,11 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_Windows( void *pv, rtl_uString
 				}
 
 
-				// Do not forget to clean up the snapshot object. 
+				// Do not forget to clean up the snapshot object.
 
-				CloseHandle (hModuleSnap); 
+				CloseHandle (hModuleSnap);
 			}
-			
+
 		}
 	}
 
@@ -311,17 +311,17 @@ typedef BOOL (WINAPI *SymGetModuleInfo_PROC)(
     );
 
 /* Seems that IMAGEHLP.DLL is always available on NT 4. But MSDN from Platform SDK says Win 2K is required. MSDN from VS 6.0a says
-	it's O.K on NT 4 ???!!! 
-	BTW: We are using ANSI function because not all version of IMAGEHLP.DLL contain Unicode support 
+	it's OK on NT 4 ???!!!
+	BTW: We are using ANSI function because not all version of IMAGEHLP.DLL contain Unicode support
 */
 
 static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT4( void *pv, rtl_uString **pustrURL )
 {
 	sal_Bool	bSuccess	= sal_False;	/* Assume failure */
 
-	/*	IMAGEHELP.DLL has a bug that it recursivly scans subdirectories of 
-		the root when calling SymInitialize(), so we preferr DBGHELP.DLL 
-		which exports the same symbols and is shipped with OOo */
+	/*	IMAGEHELP.DLL has a bug that it recursively scans subdirectories of
+		the root when calling SymInitialize(), so we prefer DBGHELP.DLL
+		which exports the same symbols and is shipped with AOO */
 
 	HMODULE		hModImageHelp = LoadLibrary( "DBGHELP.DLL" );
 
@@ -350,10 +350,10 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT4( void *pv, rtl_uString **p
 			{
 				char *pLastBkSlash = strrchr( aModuleFileName, '\\' );
 
-				if ( 
-					pLastBkSlash && 
+				if (
+					pLastBkSlash &&
 					pLastBkSlash > (sal_Char*)aModuleFileName
-					&& *(pLastBkSlash - 1) != ':' 
+					&& *(pLastBkSlash - 1) != ':'
 					&& *(pLastBkSlash - 1) != '\\'
 					)
 				{
@@ -381,7 +381,7 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT4( void *pv, rtl_uString **p
 					rtl_uString	*ustrSysPath = NULL;
 
 					rtl_string2UString( &ustrSysPath, ModuleInfo.LoadedImageName, strlen(ModuleInfo.LoadedImageName), osl_getThreadTextEncoding(), OSTRING_TO_OUSTRING_CVTFLAGS );
-                    OSL_ASSERT(ustrSysPath != NULL);
+					OSL_ASSERT(ustrSysPath != NULL);
 					osl_getFileURLFromSystemPath( ustrSysPath, pustrURL );
 					rtl_uString_release( ustrSysPath );
 				}
@@ -405,7 +405,7 @@ typedef struct _MODULEINFO {
     LPVOID EntryPoint;
 } MODULEINFO, *LPMODULEINFO;
 
-typedef BOOL (WINAPI *EnumProcessModules_PROC)( 
+typedef BOOL (WINAPI *EnumProcessModules_PROC)(
   HANDLE hProcess,      // handle to the process
   HMODULE * lphModule,  // array to receive the module handles
   DWORD cb,             // size of the array
@@ -427,7 +427,7 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT( void *pv, rtl_uString **pu
 {
 	sal_Bool	bSuccess	= sal_False;	/* Assume failure */
 	static HMODULE		hModPsapi = NULL;
-	
+
 	if ( !hModPsapi )
 		hModPsapi = LoadLibrary( "PSAPI.DLL" );
 
@@ -457,7 +457,7 @@ static sal_Bool SAL_CALL _osl_addressGetModuleURL_NT( void *pv, rtl_uString **pu
 
 				if ( (BYTE *)pv >= (BYTE *)modinfo.lpBaseOfDll && (BYTE *)pv < (BYTE *)modinfo.lpBaseOfDll + modinfo.SizeOfImage )
 				{
-                    ::osl::LongPathBuffer< sal_Unicode > aBuffer( MAX_LONG_PATH );
+					::osl::LongPathBuffer< sal_Unicode > aBuffer( MAX_LONG_PATH );
 					rtl_uString	*ustrSysPath = NULL;
 
 					GetModuleFileNameW( lpModules[iModule], ::osl::mingw_reinterpret_cast<LPWSTR>(aBuffer), aBuffer.getBufSizeInSymbols() );
@@ -496,16 +496,15 @@ sal_Bool SAL_CALL osl_getModuleURLFromFunctionAddress( oslGenericFunction addr, 
 {
     /* casting a function pointer to a data pointer (void*) is
        not allowed according to the C/C++ standards. In this case
-       it is unavoidable because we have to stay compatible we 
+       it is unavoidable because we have to stay compatible we
        cannot remove any function. */
 #ifdef _MSC_VER
 #pragma warning(push)
 #pragma warning(disable:4054)
 #endif
-    return osl_getModuleURLFromAddress((void*)addr, ppLibraryUrl); 
+    return osl_getModuleURLFromAddress((void*)addr, ppLibraryUrl);
 #ifdef _MSC_VER
 #pragma warning(pop)
 #endif
 }
-
 

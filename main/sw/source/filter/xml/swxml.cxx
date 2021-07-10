@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -142,7 +144,7 @@ sal_Int32 ReadThroughComponent(
 	DBG_ASSERT(rFactory.is(), "factory missing");
 	DBG_ASSERT(NULL != pFilterName,"I need a service name for the component!");
 
-    RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "sw", LOGFILE_AUTHOR, "ReadThroughComponent" );
+	RTL_LOGFILE_CONTEXT_AUTHOR( aLog, "sw", LOGFILE_AUTHOR, "ReadThroughComponent" );
 
 	// prepare ParserInputSrouce
 	xml::sax::InputSource aParserInput;
@@ -213,7 +215,7 @@ sal_Int32 ReadThroughComponent(
 			return ERRCODE_SFX_WRONGPASSWORD;
 
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "SAX parse exception catched while importing:\n" );
+		ByteString aError( "SAX parse exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -237,48 +239,48 @@ sal_Int32 ReadThroughComponent(
 							 ERRCODE_BUTTON_OK | ERRCODE_MSG_ERROR );
 		}
 	}
-    catch( xml::sax::SAXException& r)
+	catch( xml::sax::SAXException& r)
 	{
         packages::zip::ZipIOException aBrokenPackage;
         if ( r.WrappedException >>= aBrokenPackage )
             return ERRCODE_IO_BROKENPACKAGE;
 
-        if( bEncrypted )
+		if( bEncrypted )
 			return ERRCODE_SFX_WRONGPASSWORD;
 
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "SAX exception catched while importing:\n" );
+		ByteString aError( "SAX exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
-        
+
 		return ERR_SWG_READ_ERROR;
 	}
-    catch( packages::zip::ZipIOException& r)
+	catch( packages::zip::ZipIOException& r)
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "Zip exception catched while importing:\n" );
+		ByteString aError( "Zip exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
 		return ERRCODE_IO_BROKENPACKAGE;
 	}
-    catch( io::IOException& r)
+	catch( io::IOException& r)
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "IO exception catched while importing:\n" );
+		ByteString aError( "IO exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
 		return ERR_SWG_READ_ERROR;
 	}
-    catch( uno::Exception& r)
+	catch( uno::Exception& r)
 	{
-        (void)r;
+		(void)r;
 #if OSL_DEBUG_LEVEL > 1
-		ByteString aError( "uno exception catched while importing:\n" );
+		ByteString aError( "uno exception caught while importing:\n" );
 		aError += ByteString( String( r.Message), RTL_TEXTENCODING_ASCII_US );
 		DBG_ERROR( aError.GetBuffer() );
 #endif
@@ -291,7 +293,7 @@ sal_Int32 ReadThroughComponent(
 
 /// read a component (storage version)
 sal_Int32 ReadThroughComponent(
-    uno::Reference<embed::XStorage> xStorage,
+	uno::Reference<embed::XStorage> xStorage,
 	uno::Reference<XComponent> xModelComponent,
 	const sal_Char* pStreamName,
 	const sal_Char* pCompatibilityStreamName,
@@ -301,21 +303,21 @@ sal_Int32 ReadThroughComponent(
 	const OUString& rName,
 	sal_Bool bMustBeSuccessfull)
 {
-    DBG_ASSERT(xStorage.is(), "Need storage!");
+	DBG_ASSERT(xStorage.is(), "Need storage!");
 	DBG_ASSERT(NULL != pStreamName, "Please, please, give me a name!");
 
 	// open stream (and set parser input)
 	OUString sStreamName = OUString::createFromAscii(pStreamName);
-    sal_Bool bContainsStream = sal_False;
-    try
-    {
-        bContainsStream = xStorage->isStreamElement(sStreamName);
-    }
-    catch( container::NoSuchElementException& )
-    {
-    }
+	sal_Bool bContainsStream = sal_False;
+	try
+	{
+		bContainsStream = xStorage->isStreamElement(sStreamName);
+	}
+	catch( container::NoSuchElementException& )
+	{
+	}
 
-    if (!bContainsStream )
+	if (!bContainsStream )
 	{
 		// stream name not found! Then try the compatibility name.
 		// if no stream can be opened, return immediately with OK signal
@@ -368,7 +370,7 @@ sal_Int32 ReadThroughComponent(
             xInputStream, xModelComponent, sStreamName, rFactory,
             pFilterName, rFilterArguments,
             rName, bMustBeSuccessfull, bEncrypted );
-    }
+	}
 	catch ( packages::WrongPasswordException& )
 	{
 		return ERRCODE_SFX_WRONGPASSWORD;
@@ -377,13 +379,13 @@ sal_Int32 ReadThroughComponent(
 	{
 		return ERRCODE_IO_BROKENPACKAGE;
 	}
-    catch ( uno::Exception& )
-    {
+	catch ( uno::Exception& )
+	{
 		OSL_ENSURE( sal_False, "Error on import!\n" );
 		// TODO/LATER: error handling
-    }
+	}
 
-    return ERR_SWG_READ_ERROR;
+	return ERR_SWG_READ_ERROR;
 }
 
 
@@ -422,11 +424,11 @@ void lcl_AdjustOutlineStylesForOOo( SwDoc& _rDoc )
     for ( sal_uInt16 n = 1; n < rColls.Count(); ++n )
     {
         SwTxtFmtColl* pColl = rColls[ n ];
-		//if ( pColl->GetOutlineLevel() != NO_NUMBERING )		//#outline level zhaojianwei
+		//if ( pColl->GetOutlineLevel() != NO_NUMBERING ) //#outline level zhaojianwei
         if ( pColl->IsAssignedToListLevelOfOutlineStyle() )
         {
 		//	aOutlineLevelAssigned[ pColl->GetOutlineLevel() ] = true;
-            aOutlineLevelAssigned[ pColl->GetAssignedOutlineStyleLevel() ] = true;//<-end,zhaojianwei
+            aOutlineLevelAssigned[ pColl->GetAssignedOutlineStyleLevel() ] = true; //<-end,zhaojianwei
         }
 
         for ( sal_uInt8 i = 0; i < MAXLEVEL; ++i )
@@ -453,7 +455,7 @@ void lcl_AdjustOutlineStylesForOOo( SwDoc& _rDoc )
              ! aCreatedDefaultOutlineStyles[ i ]->IsAssignedToListLevelOfOutlineStyle() )
         {
             // apply outline level at created default outline style
-            aCreatedDefaultOutlineStyles[i]->AssignToListLevelOfOutlineStyle( i );        //#outline level added by zhaojianwei
+            aCreatedDefaultOutlineStyles[i]->AssignToListLevelOfOutlineStyle( i ); //#outline level added by zhaojianwei
 
             // apply outline numbering rule, if none is set.
             const SfxPoolItem& rItem =
@@ -527,24 +529,24 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 
 	// get the input stream (storage or stream)
 	uno::Reference<io::XInputStream> xInputStream;
-    uno::Reference<embed::XStorage> xStorage;
+	uno::Reference<embed::XStorage> xStorage;
 	if( pMedium )
-        xStorage = pMedium->GetStorage();
-    else
-        xStorage = xStg;
+		xStorage = pMedium->GetStorage();
+	else
+		xStorage = xStg;
 
-    if( !xStorage.is() )
+	if( !xStorage.is() )
 		return ERR_SWG_READ_ERROR;
 
-    pGraphicHelper = SvXMLGraphicHelper::Create( xStorage,
+	pGraphicHelper = SvXMLGraphicHelper::Create( xStorage,
 												 GRAPHICHELPER_MODE_READ,
 												 sal_False );
 	xGraphicResolver = pGraphicHelper;
-    SfxObjectShell *pPersist = rDoc.GetPersist();
+	SfxObjectShell *pPersist = rDoc.GetPersist();
 	if( pPersist )
 	{
 		pObjectHelper = SvXMLEmbeddedObjectHelper::Create(
-                                        xStorage, *pPersist,
+										xStorage, *pPersist,
 										EMBEDDEDOBJECTHELPER_MODE_READ,
 										sal_False );
 		xObjectResolver = pObjectHelper;
@@ -622,10 +624,10 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 		{ "OrganizerMode", sizeof("OrganizerMode")-1, 0,
 			  &::getBooleanCppuType(),
 			  beans::PropertyAttribute::MAYBEVOID, 0 },
-        // --> OD 2004-08-10 #i28749# - Add property, which indicates, if the
-        // shape position attributes are given in horizontal left-to-right layout.
-        // This is the case for the OpenOffice.org file format.
-        { "ShapePositionInHoriL2R", sizeof("ShapePositionInHoriL2R")-1, 0,
+		// --> OD 2004-08-10 #i28749# - Add property, which indicates, if the
+		// shape position attributes are given in horizontal left-to-right layout.
+		// This is the case for the OpenOffice.org file format.
+		{ "ShapePositionInHoriL2R", sizeof("ShapePositionInHoriL2R")-1, 0,
               &::getBooleanCppuType(),
               beans::PropertyAttribute::MAYBEVOID, 0 },
         // <--
@@ -642,8 +644,8 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
         { "TextDocInOOoFileFormat", sizeof("TextDocInOOoFileFormat")-1, 0,
               &::getBooleanCppuType(),
               beans::PropertyAttribute::MAYBEVOID, 0 },
-        // <--
-        { NULL, 0, 0, NULL, 0, 0 }
+		// <--
+		{ NULL, 0, 0, NULL, 0, 0 }
 	};
 	uno::Reference< beans::XPropertySet > xInfoSet(
 				comphelper::GenericPropertySet_CreateInstance(
@@ -669,19 +671,19 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	// try to get an XStatusIndicator from the Medium
 	uno::Reference<task::XStatusIndicator> xStatusIndicator;
 
-    if (pDocSh->GetMedium())
-    {
-        SfxItemSet* pSet = pDocSh->GetMedium()->GetItemSet();
-        if (pSet)
-        {
+	if (pDocSh->GetMedium())
+	{
+		SfxItemSet* pSet = pDocSh->GetMedium()->GetItemSet();
+		if (pSet)
+		{
             const SfxUnoAnyItem* pItem = static_cast<const SfxUnoAnyItem*>(
                 pSet->GetItem(SID_PROGRESS_STATUSBAR_CONTROL) );
             if (pItem)
             {
                 pItem->GetValue() >>= xStatusIndicator;
             }
-        }
-    }
+		}
+	}
 
 
 	// set progress range and start status indicator
@@ -695,13 +697,13 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	OUString sProgressRange(RTL_CONSTASCII_USTRINGPARAM("ProgressRange"));
 	xInfoSet->setPropertyValue(sProgressRange, aProgRange);
 
-    ::comphelper::ComponentContext aContext( xServiceFactory );
-    Reference< container::XNameAccess > xLateInitSettings(
-        aContext.createComponent( "com.sun.star.document.NamedPropertyValues" ), UNO_QUERY_THROW );
-    beans::NamedValue aLateInitSettings(
-        ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LateInitSettings" ) ),
-        makeAny( xLateInitSettings )
-    );
+	::comphelper::ComponentContext aContext( xServiceFactory );
+	Reference< container::XNameAccess > xLateInitSettings(
+		aContext.createComponent( "com.sun.star.document.NamedPropertyValues" ), UNO_QUERY_THROW );
+	beans::NamedValue aLateInitSettings(
+		::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LateInitSettings" ) ),
+		makeAny( xLateInitSettings )
+	);
 
 	// prepare filter arguments, WARNING: the order is important!
 	Sequence<Any> aFilterArgs( 5 );
@@ -710,7 +712,7 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	*pArgs++ <<= xStatusIndicator;
 	*pArgs++ <<= xGraphicResolver;
 	*pArgs++ <<= xObjectResolver;
-    *pArgs++ <<= aLateInitSettings;
+	*pArgs++ <<= aLateInitSettings;
 
 	Sequence<Any> aEmptyArgs( 3 );
 	pArgs = aEmptyArgs.getArray();
@@ -758,18 +760,18 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	}
 	else if( bInsertMode )
 	{
-        const uno::Reference<text::XTextRange> xInsertTextRange =
-            SwXTextRange::CreateXTextRange(rDoc, *rPaM.GetPoint(), 0);
+		const uno::Reference<text::XTextRange> xInsertTextRange =
+			SwXTextRange::CreateXTextRange(rDoc, *rPaM.GetPoint(), 0);
 		OUString sTextInsertModeRange(
 				RTL_CONSTASCII_USTRINGPARAM("TextInsertModeRange"));
 		xInfoSet->setPropertyValue( sTextInsertModeRange,
 									makeAny(xInsertTextRange) );
 	}
-    else
-    {
-        rPaM.GetBound(true).nContent.Assign(0, 0);
-        rPaM.GetBound(false).nContent.Assign(0, 0);
-    }
+	else
+	{
+		rPaM.GetBound(true).nContent.Assign(0, 0);
+		rPaM.GetBound(false).nContent.Assign(0, 0);
+	}
 
 	if( IsBlockMode() )
 	{
@@ -796,12 +798,12 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	SfxMedium* pMedDescrMedium = pMedium ? pMedium : pDocSh->GetMedium();
 	OSL_ENSURE( pMedDescrMedium, "There is no medium to get MediaDescriptor from!\n" );
 
-    ::rtl::OUString aBaseURL( rBaseURL );
+	::rtl::OUString aBaseURL( rBaseURL );
 	OUString sPropName( RTL_CONSTASCII_USTRINGPARAM("BaseURI") );
 	xInfoSet->setPropertyValue( sPropName, makeAny( aBaseURL ) );
 
 	// TODO/LATER: separate links from usual embedded objects
-    ::rtl::OUString StreamPath;
+	::rtl::OUString StreamPath;
 	if( SFX_CREATE_MODE_EMBEDDED == rDoc.GetDocShell()->GetCreateMode() )
 	{
 		if ( pMedDescrMedium && pMedDescrMedium->GetItemSet() )
@@ -843,11 +845,11 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 
 
 	// force redline mode to "none"
-    rDoc.SetRedlineMode_intern( nsRedlineMode_t::REDLINE_NONE );
+	rDoc.SetRedlineMode_intern( nsRedlineMode_t::REDLINE_NONE );
 
-    const sal_Bool bOASIS = ( SotStorage::GetVersion( xStorage ) > SOFFICE_FILEFORMAT_60 );
-    // --> OD 2004-08-10 #i28749# - set property <ShapePositionInHoriL2R>
-    {
+	const sal_Bool bOASIS = ( SotStorage::GetVersion( xStorage ) > SOFFICE_FILEFORMAT_60 );
+	// --> OD 2004-08-10 #i28749# - set property <ShapePositionInHoriL2R>
+	{
         const sal_Bool bShapePositionInHoriL2R = !bOASIS;
         xInfoSet->setPropertyValue(
                 OUString(RTL_CONSTASCII_USTRINGPARAM("ShapePositionInHoriL2R")),
@@ -863,10 +865,10 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
     }
     // <--
 
-    sal_uInt32 nWarnRDF = 0;
-    if ( !(IsOrganizerMode() || IsBlockMode() || aOpt.IsFmtsOnly() ||
+	sal_uInt32 nWarnRDF = 0;
+	if ( !(IsOrganizerMode() || IsBlockMode() || aOpt.IsFmtsOnly() ||
            bInsertMode) )
-    {
+	{
         // RDF metadata - must be read before styles/content
         // N.B.: embedded documents have their own manifest.rdf!
         try
@@ -896,12 +898,12 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
         {
             nWarnRDF = WARN_SWG_FEATURES_LOST; // uhh... something went wrong?
         }
-    }
+	}
 
 	// read storage streams
 
-    // #i103539#: always read meta.xml for generator
-    sal_uInt32 const nWarn = ReadThroughComponent(
+	// #i103539#: always read meta.xml for generator
+	sal_uInt32 const nWarn = ReadThroughComponent(
         xStorage, xModelComp, "meta.xml", "Meta.xml", xServiceFactory,
         (bOASIS ? "com.sun.star.comp.Writer.XMLOasisMetaImporter"
                 : "com.sun.star.comp.Writer.XMLMetaImporter"),
@@ -935,26 +937,26 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 		  aOpt.IsFmtsOnly() ) )
 	{
 		OUString sStreamName( RTL_CONSTASCII_USTRINGPARAM("layout-cache") );
-        try
-        {
+		try
+		{
             uno::Reference < io::XStream > xStm = xStorage->openStreamElement( sStreamName, embed::ElementModes::READ );
             SvStream* pStrm2 = utl::UcbStreamHelper::CreateStream( xStm );
             if( !pStrm2->GetError() )
                 rDoc.ReadLayoutCache( *pStrm2 );
             delete pStrm2;
-        }
-        catch ( uno::Exception& )
-        {
-        }
+		}
+		catch ( uno::Exception& )
+		{
+		}
 	}
 
-    // Notify math objects
-    if( bInsertMode )
-        rDoc.PrtOLENotify( sal_False );
-    else if ( rDoc.IsOLEPrtNotifyPending() )
-        rDoc.PrtOLENotify( sal_True );
+	// Notify Math objects
+	if( bInsertMode )
+		rDoc.PrtOLENotify( sal_False );
+	else if ( rDoc.IsOLEPrtNotifyPending() )
+		rDoc.PrtOLENotify( sal_True );
 
-    nRet = nRet ? nRet : (nWarn ? nWarn : (nWarn2 ? nWarn2 : nWarnRDF ) );
+	nRet = nRet ? nRet : (nWarn ? nWarn : (nWarn2 ? nWarn2 : nWarnRDF ) );
 
 	aOpt.ResetAllFmtsOnly();
 
@@ -965,69 +967,69 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 	rDoc.SetRedlinePassword( aKey );
 
 	// restore redline mode from import info property set
-    sal_Int16 nRedlineMode = nsRedlineMode_t::REDLINE_SHOW_INSERT;
+	sal_Int16 nRedlineMode = nsRedlineMode_t::REDLINE_SHOW_INSERT;
 	aAny = xInfoSet->getPropertyValue( sShowChanges );
 	if ( *(sal_Bool*)aAny.getValue() )
-        nRedlineMode |= nsRedlineMode_t::REDLINE_SHOW_DELETE;
+		nRedlineMode |= nsRedlineMode_t::REDLINE_SHOW_DELETE;
 	aAny = xInfoSet->getPropertyValue( sRecordChanges );
 	if ( *(sal_Bool*)aAny.getValue() || (aKey.getLength() > 0) )
-        nRedlineMode |= nsRedlineMode_t::REDLINE_ON;
+		nRedlineMode |= nsRedlineMode_t::REDLINE_ON;
 	else
-        nRedlineMode |= nsRedlineMode_t::REDLINE_NONE;
+		nRedlineMode |= nsRedlineMode_t::REDLINE_NONE;
 
 	// ... restore redline mode
 	// (First set bogus mode to make sure the mode in SetRedlineMode()
-	//  is different from it's previous mode.)
+	//  is different from its previous mode.)
 	rDoc.SetRedlineMode_intern((RedlineMode_t)( ~nRedlineMode ));
 	rDoc.SetRedlineMode( (RedlineMode_t)( nRedlineMode ));
 
-    // #103728# move Pam into valid content
-    lcl_EnsureValidPam( rPaM );
+	// #103728# move Pam into valid content
+	lcl_EnsureValidPam( rPaM );
 
 	if( pGraphicHelper )
 		SvXMLGraphicHelper::Destroy( pGraphicHelper );
 	xGraphicResolver = 0;
 	if( pObjectHelper )
-	    SvXMLEmbeddedObjectHelper::Destroy( pObjectHelper );
+		SvXMLEmbeddedObjectHelper::Destroy( pObjectHelper );
 	xObjectResolver = 0;
 	rDoc.release();
 
-    if ( !bOASIS )
-    {
-        // --> OD 2005-09-06 #i44177# - assure that for documents in OpenOffice.org
-        // file format the relation between outline numbering rule and styles is
-        // filled-up accordingly.
-        // Note: The OpenOffice.org file format, which has no content that applys
-        //       a certain style, which is related to the outline numbering rule,
-        //       has lost the information, that this certain style is related to
-        //       the outline numbering rule.
-        // --> OD 2008-12-17 #i70748# - only for templates
-        if ( pMedium && pMedium->GetFilter() &&
-             pMedium->GetFilter()->IsOwnTemplateFormat() )
-        {
-            lcl_AdjustOutlineStylesForOOo( rDoc );
-        }
-        // <--
-        // Fix #i58251#: Unfortunately is the static default different to SO7 behaviour,
-        // so we have to set a dynamic default after importing SO7
-        rDoc.SetDefault( SfxBoolItem( RES_ROW_SPLIT, sal_False ) );
-    }
-    // <--
+	if ( !bOASIS )
+	{
+		// --> OD 2005-09-06 #i44177# - assure that for documents in OpenOffice.org
+		// file format the relation between outline numbering rule and styles is
+		// filled-up accordingly.
+		// Note: The OpenOffice.org file format, which has no content that applies
+		//       a certain style, which is related to the outline numbering rule,
+		//       has lost the information, that this certain style is related to
+		//       the outline numbering rule.
+		// --> OD 2008-12-17 #i70748# - only for templates
+		if ( pMedium && pMedium->GetFilter() &&
+			pMedium->GetFilter()->IsOwnTemplateFormat() )
+		{
+			lcl_AdjustOutlineStylesForOOo( rDoc );
+		}
+		// <--
+		// Fix #i58251#: Unfortunately is the static default different to SO7 behavior,
+		// so we have to set a dynamic default after importing SO7
+		rDoc.SetDefault( SfxBoolItem( RES_ROW_SPLIT, sal_False ) );
+	}
+	// <--
 
-    rDoc.PropagateOutlineRule();
+	rDoc.PropagateOutlineRule();
 
-    // --> OD 2006-03-14 #i62875#
-    if ( rDoc.get(IDocumentSettingAccess::DO_NOT_CAPTURE_DRAW_OBJS_ON_PAGE) && !docfunc::ExistsDrawObjs( rDoc ) )
-    {
-        rDoc.set(IDocumentSettingAccess::DO_NOT_CAPTURE_DRAW_OBJS_ON_PAGE, false);
-    }
-    // <--
+	// --> OD 2006-03-14 #i62875#
+	if ( rDoc.get(IDocumentSettingAccess::DO_NOT_CAPTURE_DRAW_OBJS_ON_PAGE) && !docfunc::ExistsDrawObjs( rDoc ) )
+	{
+		rDoc.set(IDocumentSettingAccess::DO_NOT_CAPTURE_DRAW_OBJS_ON_PAGE, false);
+	}
+	// <--
 
-    // --> OD 2006-02-22 #b6382898#
-    // Convert all instances of <SdrOle2Obj> into <SdrGrafObj>, because the
-    // Writer doesn't support such objects.
-    lcl_ConvertSdrOle2ObjsToSdrGrafObjs( rDoc );
-    // <--
+	// --> OD 2006-02-22 #b6382898#
+	// Convert all instances of <SdrOle2Obj> into <SdrGrafObj>, because the
+	// Writer doesn't support such objects.
+	lcl_ConvertSdrOle2ObjsToSdrGrafObjs( rDoc );
+	// <--
 
 	// set BuildId on XModel for later OLE object loading
 	if( xInfoSet.is() )
@@ -1049,7 +1051,7 @@ sal_uLong XMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPaM, con
 		xStatusIndicator->end();
 	}
 
-    rDoc.GetIStyleAccess().clearCaches(); // Clear Automatic-Style-Caches(shared_pointer!)
+	rDoc.GetIStyleAccess().clearCaches(); // Clear Automatic-Style-Caches(shared_pointer!)
 	return nRet;
 }
 
@@ -1062,8 +1064,8 @@ sal_uInt16 XMLReader::GetSectionList( SfxMedium& rMedium,
 			comphelper::getProcessServiceFactory();
 	ASSERT( xServiceFactory.is(),
 			"XMLReader::Read: got no service manager" );
-    uno::Reference < embed::XStorage > xStg2;
-    if( xServiceFactory.is() && ( xStg2 = rMedium.GetStorage() ).is() )
+	uno::Reference < embed::XStorage > xStg2;
+	if( xServiceFactory.is() && ( xStg2 = rMedium.GetStorage() ).is() )
 	{
 		try
 		{
@@ -1072,7 +1074,7 @@ sal_uInt16 XMLReader::GetSectionList( SfxMedium& rMedium,
 			OUString sDocName( RTL_CONSTASCII_USTRINGPARAM( "content.xml" ) );
 			aParserInput.sSystemId = sDocName;
 
-            uno::Reference < io::XStream > xStm = xStg2->openStreamElement( sDocName, embed::ElementModes::READ );
+			uno::Reference < io::XStream > xStm = xStg2->openStreamElement( sDocName, embed::ElementModes::READ );
 			aParserInput.aInputStream = xStm->getInputStream();
 
 			// get parser
@@ -1094,11 +1096,11 @@ sal_uInt16 XMLReader::GetSectionList( SfxMedium& rMedium,
 				xParser->parseStream( aParserInput );
 			}
 		}
-		catch( xml::sax::SAXParseException&  )
+		catch( xml::sax::SAXParseException& )
 		{
 			// re throw ?
 		}
-		catch( xml::sax::SAXException&  )
+		catch( xml::sax::SAXException& )
 		{
 			// re throw ?
 		}

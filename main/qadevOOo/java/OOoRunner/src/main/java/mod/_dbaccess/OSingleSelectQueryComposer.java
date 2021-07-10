@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -138,7 +138,7 @@ import com.sun.star.uno.XInterface;
 public class OSingleSelectQueryComposer extends TestCase {
 
     private static int uniqueSuffix = 0 ;
-    private DBTools dbTools     = null ;
+    private DBTools dbTools = null ;
     private static String origDB = null ;
     private PrintWriter log = null ;
     private static String tmpDir = null ;
@@ -184,15 +184,15 @@ public class OSingleSelectQueryComposer extends TestCase {
             xMSF = (XMultiServiceFactory)Param.getMSF();
 
       		XNameAccess xNameAccess = (XNameAccess)UnoRuntime.queryInterface(
-                        XNameAccess.class, 
+                        XNameAccess.class,
                         xMSF.createInstance("com.sun.star.sdb.DatabaseContext"));
             // we use the first datasource
     		XDataSource xDS = (XDataSource)UnoRuntime.queryInterface(
-                    XDataSource.class, xNameAccess.getByName( "Bibliography" )); 
-      
+                    XDataSource.class, xNameAccess.getByName( "Bibliography" ));
+
             log.println("check XMultiServiceFactory");
             XMultiServiceFactory xConn = (XMultiServiceFactory)
-                        UnoRuntime.queryInterface(XMultiServiceFactory.class, 
+                        UnoRuntime.queryInterface(XMultiServiceFactory.class,
                         xDS.getConnection(new String(),new String()));
 
             log.println("check getAvailableServiceNames");
@@ -201,7 +201,7 @@ public class OSingleSelectQueryComposer extends TestCase {
             {
                 log.println("Service 'SingleSelectQueryComposer' not supported");
             }
-            
+
             oInterface = (XInterface) xConn.createInstance( sServiceNames[0]);
 
             if (oInterface == null) {
@@ -225,26 +225,26 @@ public class OSingleSelectQueryComposer extends TestCase {
                 oRowSet) ;
 
             xORowSet.execute() ;
-            
+
             XColumnsSupplier xColSup = (XColumnsSupplier)
                     UnoRuntime.queryInterface(XColumnsSupplier.class, oRowSet);
-            
+
             XNameAccess xCols = xColSup.getColumns();
-            
+
             XPropertySet xCol = (XPropertySet) AnyConverter.toObject(
                                 new Type(XPropertySet.class),
                                 xCols.getByName(xCols.getElementNames()[0]));
-            
+
             XSingleSelectQueryAnalyzer xQueryAna = (XSingleSelectQueryAnalyzer)
                      UnoRuntime.queryInterface(XSingleSelectQueryAnalyzer.class,
                      oInterface);
-                
+
             // XSingleSelectQueryComposer
             XSingleSelectQueryComposer xComposer = (XSingleSelectQueryComposer)
                       UnoRuntime.queryInterface(XSingleSelectQueryComposer.class,
                       xQueryAna);
             xQueryAna.setQuery("SELECT * FROM \"biblio\"");
-            
+
             oObj = (XInterface) oInterface;
             log.println("ImplementationName: " + utils.getImplName(oObj));
 
@@ -253,13 +253,13 @@ public class OSingleSelectQueryComposer extends TestCase {
 
             // for XSingleSelectQueryAnalyzer
             tEnv.addObjRelation("xComposer", xComposer);
-            
+
             // for XSingleSelectQueryComposer
             tEnv.addObjRelation("xQueryAna", xQueryAna);
-            
+
             tEnv.addObjRelation("xProp", xCol);
             tEnv.addObjRelation("colName", xCols.getElementNames()[0]);
-            
+
           envCreatedOK = true ;
             return tEnv;
 
@@ -277,3 +277,4 @@ public class OSingleSelectQueryComposer extends TestCase {
     protected void cleanup( TestParameters Param, PrintWriter log) {
     }
 }
+

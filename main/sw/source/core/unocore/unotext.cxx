@@ -1791,6 +1791,10 @@ throw (lang::IllegalArgumentException, uno::RuntimeException)
         sMessage = rRuntime.Message;
         bRuntimeException = true;
     }
+    catch (...)
+    {
+        return pNewFrame;
+    }
     xRet = pNewFrame;
     if (bParaBeforeInserted || bParaAfterInserted)
     {

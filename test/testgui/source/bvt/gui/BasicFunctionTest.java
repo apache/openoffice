@@ -175,6 +175,7 @@ public class BasicFunctionTest {
 		runMacroDlgCategories.select("Module1");
 		runMacroDlgCommands.select(0);
 		runMacroDlg.ok();
+		sleep(1);
 		assertEquals("A3 should be =1+3", "4", SCTool.getCellText("A3"));
 		discard();
 	}
@@ -679,9 +680,11 @@ public class BasicFunctionTest {
 		SCTool.selectRange("D1");
 		scInputBarInput.inputKeys("=COS(A1)");
 		typeKeys("<enter>");
-
+        sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("D1"));
+        String result = SCTool.getCellText("D1");
+		sleep(1);
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 
@@ -709,9 +712,49 @@ public class BasicFunctionTest {
 		scFunctionWizardDlgFunctionList.select("ABS");
 		scFunctionWizardDlgNext.click(); // Use "Next" button
 		scFunctionWizardDlgEdit1.typeKeys("A1");
+		sleep(1);
 		scFunctionWizardDlg.ok();
+		sleep(1);
 		// Verify if the calculated result is equal to the expected result
-		assertEquals("The calculated result", expectedResult, SCTool.getCellText("B1"));
+        String result = SCTool.getCellText("B1");
+		sleep(1);
+        assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
+
+	/**
+	 * Test open a non-http(s) type hyperlink (with host only) in a text document.
+	 * (coverage included in fvt.gui.sw.hyperlink.WarningDialog
+	 * testHyperlinkDisplaysWarning() and included here for build verification)
+	 * 1. New a text document
+	 * 2. Insert a dav type hyperlink
+	 * 3. Open hyperlink
+	 * 4. Verify security warning dialog is displayed
+	 *
+	 * @throws Exception
+	 */
+	@Test
+	public void testNonHttpHyperlinkWithHostOnly() throws Exception {
+		// Create a new text document
+		newTextDocument();
+		writer.waitForExistence(10, 2);
+		// open the hyperlink dialog
+		writer.typeKeys("<alt i>"); // insert menu
+		writer.typeKeys("h"); // hyperlink
+		hyperlinkInetPathComboBox.setText("dav://nonexistant.url.com"); //target
+		hyperlinkInetText.setText("dav://nonexistant.url.com"); // displayed text
+		hyperlinkDialogOkBtn.click(); // apply
+		hyperlinkDialogCancelBtn.click(); // close
+		sleep(1); // give the dialog time to close
+		typeKeys("<shift F10>"); // context menu
+		typeKeys("o"); // open hyperlink
+		// we can't be sure of the language so just check for the dialog
+		boolean msgExists = activeMsgBox.exists(1); // wait 1 second for the dialog
+		if (msgExists) {
+			activeMsgBox.no(); // close dialog
+		}
+		assertTrue("security warning not displayed", msgExists);
+		discard();
+	}
+
 }

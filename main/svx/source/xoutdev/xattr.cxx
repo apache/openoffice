@@ -482,7 +482,7 @@ const Color& XColorItem::GetColorValue() const
         return aColor;
     }
 
-    OSL_ENSURE(false, "Acces to Indexed XColorItem needs to use the call which hands over a XColorListSharedPtr (!)");
+    OSL_ENSURE(false, "Access to Indexed XColorItem needs to use the call which hands over a XColorListSharedPtr (!)");
 
     return aColor;
 }

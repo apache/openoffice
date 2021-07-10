@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ struct COMPHELPER_DLLPUBLIC PropertyDescription
     The property values are usually held in derived classes, but can also be given to the
     responsibility of this class here.
 
-    For more information, see http://wiki.services.openoffice.org/wiki/Development/Cpp/Helper/PropertyContainerHelper.
+    For more information, see https://wiki.openoffice.org/wiki/Development/Cpp/Helper/PropertyContainerHelper.
 */
 class COMPHELPER_DLLPUBLIC OPropertyContainerHelper
 {
@@ -98,7 +98,7 @@ protected:
 	~OPropertyContainerHelper();
 
 	/** register a property. The property is represented through a member of the derived class which calls
-		this methdod.
+		this method.
 		@param		_rName				the name of the property
 		@param		_nHandle			the handle of the property
 		@param		_nAttributes		the attributes of the property
@@ -112,7 +112,7 @@ protected:
 
 
 	/** register a property. The property is represented through a ::com::sun::star::uno::Any member of the
-		derived class which calls this methdod.
+		derived class which calls this method.
 		@param		_rName				the name of the property
 		@param		_nHandle			the handle of the property
 		@param		_nAttributes		the attributes of the property
@@ -144,10 +144,10 @@ protected:
     void    revokeProperty( sal_Int32 _nHandle );
 
 
-    /// checkes whether a property with the given handle has been registered
+    /// checks whether a property with the given handle has been registered
     sal_Bool    isRegisteredProperty( sal_Int32 _nHandle ) const;
 
-    /// checkes whether a property with the given name has been registered
+    /// checks whether a property with the given name has been registered
     sal_Bool    isRegisteredProperty( const ::rtl::OUString& _rName ) const;
 
 

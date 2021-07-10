@@ -78,7 +78,7 @@ namespace framework{
  *****************************************************************************************************************/
 FrameContainer::FrameContainer()
         // initialize base classes first.
-        // Order is necessary for right initilization of his and OUR member... m_aLock
+        // Order is necessary for right initialization of his and OUR member... m_aLock
         : ThreadHelpBase ( &Application::GetSolarMutex()                  )
 /*DEPRECATEME
         , m_bAsyncQuit   ( sal_False                                      ) // default must be "disabled"!
@@ -139,7 +139,7 @@ void FrameContainer::append( const css::uno::Reference< css::frame::XFrame >& xF
 void FrameContainer::remove( const css::uno::Reference< css::frame::XFrame >& xFrame )
 {
     /* SAFE { */
-    // write lock necessary for follwing erase()!
+    // write lock necessary for following erase()!
     WriteGuard aWriteLock( m_aLock );
 
     TFrameIterator aSearchedItem = ::std::find( m_aContainer.begin(), m_aContainer.end(), xFrame );
@@ -167,7 +167,7 @@ void FrameContainer::remove( const css::uno::Reference< css::frame::XFrame >& xF
 }
 
 /**-***************************************************************************************************************
-    @short      check if the given frame currently exist inside the container
+    @short      check if the given frame currently exists inside the container
     @descr      -
 
     @param      xFrame
@@ -202,7 +202,7 @@ void FrameContainer::clear()
 	// Clear the container...
     m_aContainer.clear();
 	// ...and don't forget to reset the active frame.
-	// It's a reference to a valid container-item.
+	// It's a reference to a valid container item.
 	// But no container item => no active frame!
     m_xActiveFrame = css::uno::Reference< css::frame::XFrame >();
 /*DEPRECATEME
@@ -325,7 +325,7 @@ void FrameContainer::setActive( const css::uno::Reference< css::frame::XFrame >&
 /**-***************************************************************************************************************
     @short      returns the current active frame of this container
     @descr      Value can be null in case the frame was removed from the container and nobody
-                from outside decide which of all others should be the new one...
+                from outside decides which of all others should be the new one...
 
     @return     a reference to the current active frame
                 Value can be NULL!
@@ -411,6 +411,4 @@ css::uno::Reference< css::frame::XFrame > FrameContainer::searchOnDirectChildren
 	return xSearchedFrame;
 }
 
-}
-
-// namespace framework
+} // namespace framework

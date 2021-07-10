@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ import java.sql.*;
 
 /**
  * Implements a log mechanism to create a protocol of all steps of e.g. an api test
- * It provides the possibility to write the logged meesages to a file and/or
+ * It provides the possibility to write the logged messages to a file and/or
  * to stdout/stderr (if necessary at the same time!).
  *
  *  TODO
@@ -379,7 +379,7 @@ public class Protocol extends JComponent
                 bTypeCellFilled = true;
             }
 
-            // if no tyope information was added to the current coloum, we must
+            // if no type information was added to the current column, we must
             // write any content into this cell. Otherwise some browser
             // shows a strange layout!
             if (! bTypeCellFilled)
@@ -475,7 +475,7 @@ public class Protocol extends JComponent
     // ____________________
     /**
      * ctor
-     * It creates a new instance of this class and innitialize it in the right mode.
+     * It creates a new instance of this class and initialize it in the right mode.
      *
      * @param nMode
      *          specify how the log should be generated.
@@ -507,7 +507,7 @@ public class Protocol extends JComponent
      */
     public synchronized void finish()
     {
-        // Preferr HTML ... because we can't write ASCII and HTML contents to the same log file!
+        // Prefer HTML ... because we can't write ASCII and HTML contents to the same log file!
         String sContent;
         if ((m_nMode & MODE_HTML) == MODE_HTML)
             sContent = impl_generateHTMLFooter();
@@ -635,7 +635,7 @@ public class Protocol extends JComponent
 
         ++m_nLine;
 
-        // it's necessary to open scopes before creatig the protocol line
+        // it's necessary to open scopes before creating the protocol line
         // to guarantee right tab handling for new scope value!
         if ((nType & TYPE_SCOPE_OPEN) == TYPE_SCOPE_OPEN)
             ++m_nScope;
@@ -645,7 +645,7 @@ public class Protocol extends JComponent
         String       sAsciiLog = aLine.toString();
         String       sHTMLLog  = aLine.toHTML();
 
-        // it's necessary to close scope after creatig the protocol line
+        // it's necessary to close scope after creating the protocol line
         // to guarantee right tab handling for old scope value!
         if (
             ( m_nScope                  >  0               ) &&
@@ -672,7 +672,7 @@ public class Protocol extends JComponent
         // no else - it's a bit field of possible reactions!
         // But these both conditions must be handled together.
         // Because we can't generate different types of log contents to the same log file.
-        // We preferr HTML if both types are set.
+        // We prefer HTML if both types are set.
         if (
             ((m_nMode & MODE_HTML ) == MODE_HTML ) ||
             ((m_nMode & MODE_ASCII) == MODE_ASCII)
@@ -757,7 +757,7 @@ public class Protocol extends JComponent
      * returns a generic html header for generating html log files
      *
      * It's used from the method finish() to generate a valid html formatted file.
-     * For that its necessary to open some special html targets like e.g. <html>.
+     * For that it's necessary to open some special html targets like e.g. <html>.
      *
      * @return  A string, which includes the whole header.
      *
@@ -830,7 +830,7 @@ public class Protocol extends JComponent
 
     // ____________________
     /**
-     * it trys to convert the given any into a suitable string notation .-)
+     * it tries to convert the given any into a suitable string notation .-)
     */
     private synchronized void impl_logAny( /*OUT*/ StringBuffer sOut ,
                                            /*IN */ Object       aAny )
@@ -993,3 +993,4 @@ public class Protocol extends JComponent
         }
     }
 }
+

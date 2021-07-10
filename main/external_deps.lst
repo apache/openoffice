@@ -157,14 +157,14 @@ if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 98492e965963f852ab29f9e61b2ad700
-    name = apr-1.5.2.tar.gz
+    MD5 = 0759294408daace192c935b7c9e76e04
+    name = apr-1.6.5.tar.gz
     URL1 = https://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 866825c04da827c6e5f53daff5569f42
-    name = apr-util-1.5.4.tar.gz
+    MD5 = bd502b9a8670a8012c4d90c31a84955f
+    name = apr-util-1.6.1.tar.gz
     URL1 = https://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -254,10 +254,10 @@ if (RAT_JAR_HOME==BUILD)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
-    MD5 = beeca87be45ec87d241ddd0e1bad80c1
-    name = bsh-2.0b6-src.zip
-    URL1 = https://bintray.com/artifact/download/beanshell/Beanshell/org/apache-extras/beanshell/bsh/2.0b6/$(name)
-    URL2 = http://central.maven.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/$(name)
+    MD5 = 34c726044fc4e2c7c3cf489fc239cdd5
+    name = bsh-2.1.0-src.zip
+    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 ###############################################################################
 # Libraries with category B license

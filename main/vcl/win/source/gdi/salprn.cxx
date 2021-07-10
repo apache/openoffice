@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -62,7 +62,7 @@
     if (__builtin_setjmp(jmpbuf) == 0)                                      \
     {                                                                       \
         han.Set(jmpbuf, NULL, (__SEHandler::PF)EXCEPTION_EXECUTE_HANDLER)
-        
+
 #define CATCH_DRIVER_EX_END(mes, p)                                         \
     }                                                                       \
     han.Reset()
@@ -395,7 +395,7 @@ void WinSalInstance::GetPrinterQueueState( SalPrinterQueueInfo* pInfo )
         getPrinterQueueStateOldStyle( pInfo );
         return;
     }
-    
+
     HANDLE hPrinter = 0;
     LPWSTR pPrnName = reinterpret_cast<LPWSTR>(const_cast<sal_Unicode*>(pInfo->maPrinterName.GetBuffer()));
     if( OpenPrinterW( pPrnName, &hPrinter, NULL ) )
@@ -505,7 +505,7 @@ static DWORD ImplDeviceCaps( WinSalInfoPrinter* pPrinter, WORD nCaps,
             pDevMode = NULL;
         else
             pDevMode = SAL_DEVMODE_W( pSetupData );
-    
+
         return DeviceCapabilitiesW( reinterpret_cast<LPCWSTR>(pPrinter->maDeviceName.GetBuffer()),
                                     reinterpret_cast<LPCWSTR>(pPrinter->maPortName.GetBuffer()),
                                     nCaps, (LPWSTR)pOutput, pDevMode );
@@ -517,7 +517,7 @@ static DWORD ImplDeviceCaps( WinSalInfoPrinter* pPrinter, WORD nCaps,
             pDevMode = NULL;
         else
             pDevMode = SAL_DEVMODE_A( pSetupData );
-    
+
         return DeviceCapabilitiesA( ImplSalGetWinAnsiString( pPrinter->maDeviceName, TRUE ).GetBuffer(),
                                 ImplSalGetWinAnsiString( pPrinter->maPortName, TRUE ).GetBuffer(),
                                 nCaps, (LPSTR)pOutput, pDevMode );
@@ -588,7 +588,7 @@ static sal_Bool ImplTestSalJobSetup( WinSalInfoPrinter* pPrinter,
                                                    (LPSTR)aPrinterNameA.GetBuffer(),
                                                    NULL, NULL, 0 );
             }
-            
+
             if( nSysJobSize < 0 )
             {
                 ClosePrinter( hPrn );
@@ -614,7 +614,7 @@ static sal_Bool ImplTestSalJobSetup( WinSalInfoPrinter* pPrinter,
                 return FALSE;
             }
 
-            // the spec version differs between the windows platforms, ie 98,NT,2000/XP
+            // the spec version differs between the Windows platforms, i.e. 98,NT,2000/XP
             // this allows us to throw away printer settings from other platforms that might crash a buggy driver
             // we check the driver version as well
             dmSpecVersion = aSalShlData.mbWPrinter ? ((DEVMODEW*)pBuffer)->dmSpecVersion : ((DEVMODEA*)pBuffer)->dmSpecVersion;
@@ -723,7 +723,7 @@ static sal_Bool ImplUpdateSalJobSetup( WinSalInfoPrinter* pPrinter, ImplJobSetup
     sal_uLong nMutexCount=0;
     if ( pVisibleDlgParent )
         nMutexCount = ImplSalReleaseYieldMutex();
-    
+
     BYTE* pOutDevMode = (((BYTE*)pOutBuffer) + pOutBuffer->mnDriverOffset);
     if( aSalShlData.mbWPrinter )
     {
@@ -911,7 +911,7 @@ static void ImplDevModeToJobSetup( WinSalInfoPrinter* pPrinter, ImplJobSetup* pS
 			case( DMPAPER_A5 ):
 				pSetupData->mePaperFormat = PAPER_A5;
 				break;
-			//See http://wiki.services.openoffice.org/wiki/DefaultPaperSize
+			//See https://wiki.openoffice.org/wiki/DefaultPaperSize
 			//i.e.
 			//http://msdn.microsoft.com/en-us/library/dd319099(VS.85).aspx
 			//DMPAPER_B4	12	B4 (JIS) 257 x 364 mm
@@ -1049,7 +1049,7 @@ static void ImplDevModeToJobSetup( WinSalInfoPrinter* pPrinter, ImplJobSetup* pS
 				break;
 		}
 	}
-    
+
     if( nFlags & SAL_JOBSET_DUPLEXMODE )
     {
         DuplexMode eDuplex = DUPLEX_UNKNOWN;
@@ -1485,7 +1485,7 @@ SalInfoPrinter* WinSalInstance::CreateInfoPrinter( SalPrinterQueueInfo* pQueueIn
         GetPrinterQueueState( pQueueInfo );
 	pPrinter->maDriverName	= pQueueInfo->maDriver;
 	pPrinter->maDeviceName	= pQueueInfo->maPrinterName;
-	pPrinter->maPortName	= pQueueInfo->mpSysData ? 
+	pPrinter->maPortName	= pQueueInfo->mpSysData ?
                                 *(String*)(pQueueInfo->mpSysData)
                               : String();
 
@@ -1983,8 +1983,8 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
         }
         else
             pDevModeW = NULL;
-    
-        // #95347 some buggy drivers (eg, OKI) write to those buffers in CreateDC, although declared const - so provide some space
+
+        // #95347 some buggy drivers (e.g. OKI) write to those buffers in CreateDC, although declared const - so provide some space
         sal_Unicode aDrvBuf[4096];
         sal_Unicode aDevBuf[4096];
         rtl_copyMemory( aDrvBuf, mpInfoPrinter->maDriverName.GetBuffer(), (mpInfoPrinter->maDriverName.Len()+1)*sizeof(sal_Unicode));
@@ -1993,7 +1993,7 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
                          reinterpret_cast<LPCWSTR>(aDevBuf),
                          NULL,
                          pDevModeW );
-    
+
         if ( pDevModeW != pOrgDevModeW )
             rtl_freeMemory( pDevModeW );
     }
@@ -2006,8 +2006,8 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
         }
         else
             pDevModeA = NULL;
-    
-        // #95347 some buggy drivers (eg, OKI) write to those buffers in CreateDC, although declared const - so provide some space
+
+        // #95347 some buggy drivers (e.g. OKI) write to those buffers in CreateDC, although declared const - so provide some space
         ByteString aDriver ( ImplSalGetWinAnsiString( mpInfoPrinter->maDriverName, TRUE ) );
         ByteString aDevice ( ImplSalGetWinAnsiString( mpInfoPrinter->maDeviceName, TRUE ) );
         int n = aDriver.Len() > aDevice.Len() ? aDriver.Len() : aDevice.Len();
@@ -2020,10 +2020,10 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
                          lpszDeviceName,
                          NULL,
                          pDevModeA );
-    
+
         delete [] lpszDriverName;
         delete [] lpszDeviceName;
-    
+
         if ( pDevModeA != pOrgDevModeA )
             rtl_freeMemory( pDevModeA );
     }
@@ -2072,7 +2072,7 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
 	while ( bWhile );
 	ImplPostMessage( GetSalData()->mpFirstInstance->mhComWnd, SAL_MSG_DUMMY, 0, 0 );
 
-    // bring up a file choser if printing to file port but no file name given
+    // bring up a file chooser if printing to file port but no file name given
     OUString aOutFileName;
     if( mpInfoPrinter->maPortName.EqualsIgnoreCaseAscii( "FILE:" ) && !(pFileName && pFileName->Len()) )
     {
@@ -2125,10 +2125,10 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
         }
         else
             aInfo.lpszOutput = NULL;
-    
+
         // start Job
         int nRet = lcl_StartDocW( hDC, &aInfo, this );
-        
+
         if ( nRet <= 0 )
         {
             long nError = GetLastError();
@@ -2136,7 +2136,7 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
                 mnError = SAL_PRINTER_ERROR_ABORT;
             else
                 mnError = SAL_PRINTER_ERROR_GENERALERROR;
-            return FALSE;            
+            return FALSE;
         }
     }
     else
@@ -2144,7 +2144,7 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
         // Both strings must exist, if StartJob() is called
         ByteString aJobName( ImplSalGetWinAnsiString( rJobName, TRUE ) );
         ByteString aFileName;
-    
+
         DOCINFOA aInfo;
         memset( &aInfo, 0, sizeof( DOCINFOA ) );
         aInfo.cbSize = sizeof( aInfo );
@@ -2161,7 +2161,7 @@ sal_Bool WinSalPrinter::StartJob( const XubString* pFileName,
         }
         else
             aInfo.lpszOutput = NULL;
-    
+
         // start Job
         int nRet = lcl_StartDocA( hDC, &aInfo, this );
         if ( nRet <= 0 )
@@ -2205,7 +2205,7 @@ sal_Bool WinSalPrinter::EndJob()
         if( ::EndDoc( hDC ) <= 0 )
             err = GetLastError();
         CATCH_DRIVER_EX_END( "exception in EndDoc", this );
-        
+
 		pSalData->mpFirstInstance->AcquireYieldMutex( nAcquire );
 		DeleteDC( hDC );
         mhDC = 0;
@@ -2277,7 +2277,7 @@ SalGraphics* WinSalPrinter::StartPage( ImplJobSetup* pSetupData, sal_Bool bNewJo
 {
     if( ! isValid() || mhDC == 0 )
         return NULL;
-    
+
 	HDC hDC = mhDC;
 	if ( pSetupData && pSetupData->mpDriverData && bNewJobData )
 	{
@@ -2306,7 +2306,7 @@ SalGraphics* WinSalPrinter::StartPage( ImplJobSetup* pSetupData, sal_Bool bNewJo
     CATCH_DRIVER_EX_BEGIN;
     nRet = ::StartPage( hDC );
     CATCH_DRIVER_EX_END( "exception in StartPage", this );
-    
+
 	if ( nRet <= 0 )
 	{
 		GetLastError();
@@ -2340,7 +2340,7 @@ sal_Bool WinSalPrinter::EndPage()
 
     if( ! isValid() )
         return FALSE;
-    
+
 	int nRet = 0;
     CATCH_DRIVER_EX_BEGIN;
     nRet = ::EndPage( hDC );

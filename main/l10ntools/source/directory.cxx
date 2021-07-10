@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -30,7 +29,7 @@
 #include <vector>
 #include <algorithm>
 
-namespace transex 
+namespace transex
 {
 
 Directory::Directory( const rtl::OUString sFullpath ) : bSkipLinks( false )
@@ -52,16 +51,16 @@ Directory::Directory( const ByteString sFullPath ) : bSkipLinks( false )
 
 bool Directory::lessDir ( const Directory& rKey1, const Directory& rKey2 )
 {
-    rtl::OUString sName1( ( static_cast< Directory >( rKey1 ) ).getDirectoryName() ); 
-    rtl::OUString sName2( ( static_cast< Directory >( rKey2 ) ).getDirectoryName() ); 
-            
+    rtl::OUString sName1( ( static_cast< Directory >( rKey1 ) ).getDirectoryName() );
+    rtl::OUString sName2( ( static_cast< Directory >( rKey2 ) ).getDirectoryName() );
+
     return sName1.compareTo( sName2 ) < 0 ;
 }
 
 
 void Directory::dump()
 {
-   
+
     for( std::vector< transex::File >::iterator iter = aFileVec.begin() ; iter != aFileVec.end() ; ++iter )
     {
         std::cout << "FILE " << rtl::OUStringToOString( (*iter).getFullName().getStr() , RTL_TEXTENCODING_UTF8 , (*iter).getFullName().getLength() ).getStr() << "\n";
@@ -71,7 +70,7 @@ void Directory::dump()
     {
         std::cout << "DIR " << rtl::OUStringToOString( (*iter).getFullName().getStr() , RTL_TEXTENCODING_UTF8 , (*iter).getFullName().getLength() ).getStr() << "\n";
     }
-    
+
 }
 
 void Directory::scanSubDir( int nLevels )
@@ -111,14 +110,14 @@ void Directory::readDirectory ( const rtl::OUString& sFullpath )
 
     rtl::OString sFullpathext = rtl::OUStringToOString( sFullpath , RTL_TEXTENCODING_UTF8 , sFullpath.getLength() );
     const char *dirname = sFullpathext.getStr();
-    
+
     // Get the proper directory path
 	sprintf(szDir, "%s\\*", dirname);
-        
+
     // Get the first file
     hList = FindFirstFile(szDir, &FileData);
     if (hList == INVALID_HANDLE_VALUE)
-    { 
+    {
         //FindClose(hList);
         //printf("No files found %s\n", szDir ); return;
     }
@@ -127,7 +126,7 @@ void Directory::readDirectory ( const rtl::OUString& sFullpath )
         fFinished = sal_False;
         while (!fFinished)
         {
-            
+
 			sprintf(szSubDir, "%s\\%s", dirname, FileData.cFileName);
 			rtl::OString myfile( FileData.cFileName );
 			rtl::OString mydir( szSubDir );
@@ -160,7 +159,7 @@ void Directory::readDirectory ( const rtl::OUString& sFullpath )
     }
 
     FindClose(hList);
-    
+
     ::std::sort( aFileVec.begin() , aFileVec.end() , File::lessFile );
     ::std::sort( aDirVec.begin()  , aDirVec.end()  , Directory::lessDir  );
 }
@@ -187,34 +186,34 @@ void Directory::readDirectory( const rtl::OUString& sFullpath )
     if( sFullpath.getLength() < 1 ) return;
 
     rtl::OString   sFullpathext = rtl::OUStringToOString( sFullpath , RTL_TEXTENCODING_UTF8 , sFullpath.getLength() ).getStr();
-    
+
     // stat
-	if( stat( sFullpathext.getStr()  , &statbuf ) < 0 ){   printf("warning: Can not stat %s" , sFullpathext.getStr() ); return; }// error }
-   
+	if( stat( sFullpathext.getStr()  , &statbuf ) < 0 ){   printf("warning: Can not stat %s" , sFullpathext.getStr() ); return; } // error }
+
     if( S_ISDIR(statbuf.st_mode ) == 0 ) {  return; }// error }   return; // not dir
 
     if( (dir = opendir( sFullpathext.getStr() ) ) == NULL  ) {printf("readerror 2 in %s \n",sFullpathext.getStr()); return; } // error } return; // error
 
     dirholder aHolder(dir);
-   
+
     sFullpathext += rtl::OString( "/" );
 
     const rtl::OString sDot ( "." ) ;
     const rtl::OString sDDot( ".." );
-  
+
     if ( chdir( sFullpathext.getStr() ) == -1 ) { printf("chdir error in %s \n",sFullpathext.getStr()); return; } // error
-    
+
     while(  ( dirp = readdir( dir ) ) != NULL )
     {
         rtl::OString sEntryName(  dirp->d_name );
 
         if( sEntryName.equals( sDot )  || sEntryName.equals( sDDot ) )
             continue;
-            
+
         // add dir entry
         rtl::OString sEntity = sFullpathext;
         sEntity += sEntryName;
-        
+
         // stat new entry
         if( lstat( sEntity.getStr() , &statbuf2 ) < 0 )
         {
@@ -226,31 +225,31 @@ void Directory::readDirectory( const rtl::OUString& sFullpath )
         switch( statbuf2.st_mode & S_IFMT )
         {
             case S_IFREG:
-						{   
+						{
                             rtl::OString sFile = sFullpathext;
                             sFile += sEntryName ;
-                            transex::File aFile( rtl::OStringToOUString( sEntity , RTL_TEXTENCODING_UTF8 , sEntity.getLength() ) , 
-                                                 rtl::OStringToOUString( sEntryName , RTL_TEXTENCODING_UTF8 , sEntryName.getLength() )               
+                            transex::File aFile( rtl::OStringToOUString( sEntity , RTL_TEXTENCODING_UTF8 , sEntity.getLength() ) ,
+                                                 rtl::OStringToOUString( sEntryName , RTL_TEXTENCODING_UTF8 , sEntryName.getLength() )
                                                );
 
-							aFileVec.push_back( aFile ) ;   
-                            break; 
-                         }  
+							aFileVec.push_back( aFile ) ;
+                            break;
+                         }
             case S_IFLNK:
-                        {   
+                        {
                             if( bSkipLinks )    break;
                         }
             case S_IFDIR:
-						{   
+						{
                             rtl::OString sDir = sFullpathext;
                             sDir += sEntryName ;
 
-                            transex::Directory aDir( 
+                            transex::Directory aDir(
                                                      rtl::OStringToOUString( sEntity , RTL_TEXTENCODING_UTF8 , sEntity.getLength() ) ,
-                                                     rtl::OStringToOUString( sEntryName , RTL_TEXTENCODING_UTF8 , sEntryName.getLength() )               
-                                                   ) ; 
-                            aDirVec.push_back( aDir ) ;     
-                            break; 
+                                                     rtl::OStringToOUString( sEntryName , RTL_TEXTENCODING_UTF8 , sEntryName.getLength() )
+                                                   ) ;
+                            aDirVec.push_back( aDir ) ;
+                            break;
                          }
         }
     }
@@ -264,3 +263,4 @@ void Directory::readDirectory( const rtl::OUString& sFullpath )
 
 #endif
 }
+

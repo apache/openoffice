@@ -460,7 +460,7 @@ SvtModuleOptions_Impl::SvtModuleOptions_Impl(SvtModuleOptions* pOutsideClass)
     ,   m_bReadOnlyStatesWellKnown( sal_False )
     ,   m_pOutsideClass( pOutsideClass )
 {
-    // First initialize list of factory infos! Otherwise we couldnt guarantee right working of these class.
+    // First initialize list of factory infos! Otherwise we couldn't guarantee right working of these class.
     for( sal_Int32 nFactory=0; nFactory<FACTORYCOUNT; ++nFactory )
         m_lFactories[nFactory].free();
 
@@ -860,7 +860,7 @@ void SvtModuleOptions_Impl::SetFactoryDefaultFilter(       SvtModuleOptions::EFa
 }
 
 /*-************************************************************************************************************//**
-    @short      return list of key names of ouer configuration management which represent our module tree
+    @short      return list of key names of our configuration management which represent our module tree
     @descr      You give use a list of current existing set node names .. and we expand it for all
                 well known properties which are necessary for this implementation.
                 These full expanded list should be used to get values of this properties.
@@ -1342,7 +1342,7 @@ sal_uInt32 SvtModuleOptions::GetFeatures() const
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         ::osl::MutexGuard aGuard( ::osl::Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

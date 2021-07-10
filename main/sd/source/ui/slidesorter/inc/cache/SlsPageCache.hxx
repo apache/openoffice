@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,17 +44,17 @@ class RequestData;
     bitmaps of pages that are shown by the slide sorter.
 
     <p>Bitmaps for previews and a cache are used to speed up the display
-    (painting) of the slide sorter.  But, of course, we have to limit this
+    (painting) of the slide sorter. But, of course, we have to limit this
     time-space-tradeoff by limiting the amount of space that can be use to
     store bitmaps.</p>
 
     <p>There are several strategies employed by this class to shorten the
     perceived time that is used to paint the slide sorter:
     <ul>
-    <li>Rendering pages ahead of time.  Additionally to rendering the
+    <li>Rendering pages ahead of time. Additionally to rendering the
     visible slides we try to render part or all of the slides that are not
-    (yet) visible.  This, of course, makes sense only when the computer is
-    ohterwise idle while doing that.</li>
+    (yet) visible. This, of course, makes sense only when the computer is
+    otherwise idle while doing that.</li>
     <li>When the size of the slides on the screen changes we mark the
     bitmaps as needing an update but use them while the new bitmap in the
     correct size is not available.</li>
@@ -74,7 +74,7 @@ class RequestData;
 class PageCache
 {
 public:
-    /** The page chache is created with a reference to the slide sorter so
+    /** The page cache is created with a reference to the slide sorter so
         that it has access to both the view and the model and so can fill
         itself with requests for all or just the visible pages.
 
@@ -93,19 +93,19 @@ public:
         const bool bDoSuperSampling);
 
     /** Request a preview bitmap for the specified page object in the
-        specified size.  The returned bitmap may be a preview of the
+        specified size. The returned bitmap may be a preview of the
         preview, i.e. either a scaled (up or down) version of a previous
-        preview (of the wrong size) or an empty bitmap.  In this case a
+        preview (of the wrong size) or an empty bitmap. In this case a
         request for the generation of a new preview is created and inserted
-        into the request queue.  When the preview is available in the right
-        size the page shape will be told to paint itself again.  When it
+        into the request queue. When the preview is available in the right
+        size the page shape will be told to paint itself again. When it
         then calls this method again if receives the correctly sized preview
         bitmap.
         @param rRequestData
             This data is used to determine the preview.
         @param bResize
             When <TRUE/> then when the available bitmap has not the
-            requested size, it is scaled before it is returned.  When
+            requested size, it is scaled before it is returned. When
             <FALSE/> then the bitmap is returned in the wrong size and it is
             the task of the caller to scale it.
         @return
@@ -124,13 +124,13 @@ public:
         const Bitmap& rBitmap);
 
     /** When the requested preview bitmap does not yet exist or is not
-        up-to-date then the rendering of one is scheduled.  Otherwise this
+        up-to-date then the rendering of one is scheduled. Otherwise this
         method does nothing.
     */
     void RequestPreviewBitmap (const CacheKey aKey);
 
     /** Tell the cache that the bitmap associated with the given request
-        data is not up-to-date anymore.  This will invalidate all previews
+        data is not up-to-date anymore. This will invalidate all previews
         in other caches that represent the same page as well.
         @param bRequestPreview
             When <TRUE/> then a new preview is requested and will lead
@@ -151,14 +151,14 @@ public:
         changed or when the model has changed.
         @param bUpdateCache
             When this flags is <TRUE/> then requests for updated previews
-            are created.  When it is <FALSE/> the existing previews are only
+            are created. When it is <FALSE/> the existing previews are only
             marked as not being up-to-date anymore.
     */
     void InvalidateCache (const bool bUpdateCache = true);
 
     /** With the precious flag you can control whether a bitmap can be
         removed or reduced in size to make room for other bitmaps or is so
-        precious that it will not touched.  A typical use is to set the
+        precious that it will not touched. A typical use is to set the
         precious flag for exactly the visible pages.
     */
     void SetPreciousFlag (const CacheKey aKey, const bool bIsPrecious);
