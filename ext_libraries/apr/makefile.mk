@@ -59,6 +59,10 @@ BUILD_ACTION=INCLUDE="$(INCLUDE);./include" USEMAK=1  nmake -f Makefile.win buil
 
 .ELSE
 
+.IF "$(OS)"=="MACOSX"
+PATCH_FILES+= $(TARFILE_NAME)-darwin19.6.patch
+.ENDIF
+
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure --prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/apr
 CONFIGURE_FLAGS=

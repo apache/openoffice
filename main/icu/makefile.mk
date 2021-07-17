@@ -44,6 +44,10 @@ TARFILE_ROOTDIR=icu
 
 PATCH_FILES=${TARFILE_NAME}.patch icu-mp.patch icu-win-layoutex.patch
 
+.IF "$(OS)"=="MACOSX"
+PATCH_FILES+=icu-darwin.patch
+.ENDIF
+
 # ADDITIONAL_FILES=
 
 .IF "$(GUI)"=="UNX"
