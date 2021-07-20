@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _SVTOOLS_WIZARDMACHINE_HXX_
@@ -38,7 +39,7 @@ namespace svt
 //.........................................................................
 
 // wizard buttons
-#define WZB_NONE                0x0000
+#define WZB_NONE				0x0000
 #define WZB_NEXT				0x0001
 #define WZB_PREVIOUS			0x0002
 #define WZB_FINISH				0x0004
@@ -51,34 +52,34 @@ namespace svt
 	//=====================================================================
 	//= WizardTypes
 	//=====================================================================
-    struct WizardTypes
-    {
-        typedef sal_Int16  WizardState;
-        enum CommitPageReason
-        {
-            eTravelForward,         // traveling forward (maybe with skipping pages)
-            eTravelBackward,        // traveling backward (maybe with skipping pages)
-            eFinish,                // the wizard is about to be finished
-            eValidate               // the data should be validated only, no traveling wll happen
-        };
-    };
+	struct WizardTypes
+	{
+		typedef sal_Int16 WizardState;
+		enum CommitPageReason
+		{
+			eTravelForward,         // traveling forward (maybe with skipping pages)
+			eTravelBackward,        // traveling backward (maybe with skipping pages)
+			eFinish,                // the wizard is about to be finished
+			eValidate               // the data should be validated only, no traveling will happen
+		};
+	};
 
 	class SAL_NO_VTABLE IWizardPageController
 	{
 	public:
 		//-----------------------------------------------------------------
-		// This methods  behave somewhat different than ActivatePage/DeactivatePage
+		// This method behaves somewhat different than ActivatePage/DeactivatePage
 		// The latter are handled by the base class itself whenever changing the pages is in the offing,
 		// i.e., when it's already decided which page is the next.
 		// We may have situations where the next page depends on the state of the current, which needs
 		// to be committed for this.
-		// So initializePage and commitPage are designated to initialitzing/committing data on the page.
+		// So initializePage and commitPage are designated to initializing/committing data on the page.
 		virtual void		initializePage() = 0;
-        virtual sal_Bool	commitPage( WizardTypes::CommitPageReason _eReason ) = 0;
+		virtual sal_Bool	commitPage( WizardTypes::CommitPageReason _eReason ) = 0;
 
-        /** determines whether or not it is allowed to advance to a next page
+		/** determines whether or not it is allowed to advance to a next page
 
-            You should make this dependent on the current state of the page only, not on 
+            You should make this dependent on the current state of the page only, not on
             states on other pages of the whole dialog.
 
             The default implementation always returns <TRUE/>.
@@ -143,7 +144,7 @@ namespace svt
         they can implement non-linear traveling this way.
 	*/
 
-    class SVT_DLLPUBLIC OWizardMachine : public WizardDialog, public WizardTypes
+	class SVT_DLLPUBLIC OWizardMachine : public WizardDialog, public WizardTypes
 	{
 	private:
 		// restrict access to some aspects of our base class
@@ -170,13 +171,13 @@ namespace svt
 						m_pImpl;
 			// hold members in this structure to allow keeping compatible when members are added
 
-        SVT_DLLPRIVATE void addButtons(Window* _pParent, sal_uInt32 _nButtonFlags);
-        SVT_DLLPRIVATE long calcRightHelpOffset(sal_uInt32 _nButtonFlags);
+		SVT_DLLPRIVATE void addButtons(Window* _pParent, sal_uInt32 _nButtonFlags);
+		SVT_DLLPRIVATE long calcRightHelpOffset(sal_uInt32 _nButtonFlags);
 
 	public:
 		/** ctor
 
-            The ctor does not call FreeResource, this is the resposibility of the derived class.
+            The ctor does not call FreeResource, this is the responsibility of the derived class.
 
             For the button flags, use any combination of the WZB_* flags.
 		*/
@@ -184,18 +185,18 @@ namespace svt
 		OWizardMachine(Window* _pParent, const WinBits i_nStyle, sal_uInt32 _nButtonFlags );
 		~OWizardMachine();
 
-		/// enable (or disable) buttons
+		// enable (or disable) buttons
 		void	enableButtons(sal_uInt32 _nWizardButtonFlags, sal_Bool _bEnable);
-		/// set the default style for a button
+		// set the default style for a button
 		void	defaultButton(sal_uInt32 _nWizardButtonFlags);
-		/// set the default style for a button
+		// set the default style for a button
 		void	defaultButton(PushButton* _pNewDefButton);
 
-		/// set the base of the title to use - the title of the current page is appended
+		// set the base of the title to use - the title of the current page is appended
 		void			setTitleBase(const String& _rTitleBase);
 		const String&	getTitleBase() const;
 
-        /// determines whether there is a next state to which we can advance
+        // determines whether there is a next state to which we can advance
         virtual bool    canAdvance() const;
 
         /** updates the user interface which deals with traveling in the wizard
@@ -213,10 +214,10 @@ namespace svt
 
 		// our own overridables
 
-		/// to override to create new pages
+		// to override to create new pages
 		virtual TabPage*	createPage(WizardState _nState) = 0;
 
-        /// will be called when a new page is about to be displayed
+        // will be called when a new page is about to be displayed
 		virtual	void		enterState(WizardState _nState);
 
         /** will be called when the current state is about to be left for the given reason
@@ -247,7 +248,7 @@ namespace svt
 
         /** determine the next state to travel from the given one
 
-            The default behaviour is linear traveling, overwrite this to change it
+            The default behavior is linear traveling, overwrite this to change it
 
             Return WZS_INVALID_STATE to prevent traveling.
 		*/
@@ -258,10 +259,10 @@ namespace svt
 		*/
 		virtual sal_Bool    onFinish();
 
-		/// travel to the next state
+		// travel to the next state
 		sal_Bool	        travelNext();
 
-        /// travel to the previous state
+        // travel to the previous state
 		sal_Bool	        travelPrevious();
 
         /** enables the automatic enabled/disabled state of the "Next" button
@@ -279,7 +280,7 @@ namespace svt
         /** skip a state
 
             The method behaves as if from the current state, <arg>_nSteps</arg> <method>travelNext</method>s were
-			called, but without actually creating or displaying the íntermediate pages. Only the
+			called, but without actually creating or displaying the intermediate pages. Only the
 			(<arg>_nSteps</arg> + 1)th page is created.
 
 			The skipped states appear in the state history, so <method>travelPrevious</method> will make use of them.
@@ -299,7 +300,7 @@ namespace svt
 
             The method behaves as if from the current state, <method>travelNext</method>s were called
             successively, until <arg>_nTargetState</arg> is reached, but without actually creating or
-            displaying the íntermediate pages.
+            displaying the intermediate pages.
 
 			The skipped states appear in the state history, so <method>travelPrevious</method> will make use of them.
 
@@ -342,45 +343,45 @@ namespace svt
         */
         void    getStateHistory( ::std::vector< WizardState >& _out_rHistory );
 
-    public:
-        class AccessGuard { friend class WizardTravelSuspension; private: AccessGuard() { } };
+	public:
+		class AccessGuard { friend class WizardTravelSuspension; private: AccessGuard() { } };
 
-        void suspendTraveling( AccessGuard );
-        void resumeTraveling( AccessGuard );
-        bool isTravelingSuspended() const;
+		void suspendTraveling( AccessGuard );
+		void resumeTraveling( AccessGuard );
+		bool isTravelingSuspended() const;
 
-    protected:
-        TabPage* GetOrCreatePage( const WizardState i_nState );
+	protected:
+		TabPage* GetOrCreatePage( const WizardState i_nState );
 
 	private:
-       // long OnNextPage( PushButton* );
+		// long OnNextPage( PushButton* );
 		DECL_DLLPRIVATE_LINK(OnNextPage, PushButton*);
 		DECL_DLLPRIVATE_LINK(OnPrevPage, PushButton*);
 		DECL_DLLPRIVATE_LINK(OnFinish, PushButton*);
 
 		SVT_DLLPRIVATE void		implResetDefault(Window* _pWindow);
 		SVT_DLLPRIVATE void		implUpdateTitle();
-        SVT_DLLPRIVATE void     implConstruct( const sal_uInt32 _nButtonFlags );
+		SVT_DLLPRIVATE void		implConstruct( const sal_uInt32 _nButtonFlags );
 	};
 
-    /// helper class to temporarily suspend any traveling in the wizard
-    class WizardTravelSuspension
-    {
-    public:
-        WizardTravelSuspension( OWizardMachine& _rWizard )
-            :m_rWizard( _rWizard )
-        {
-            m_rWizard.suspendTraveling( OWizardMachine::AccessGuard() );
-        }
+	// helper class to temporarily suspend any traveling in the wizard
+	class WizardTravelSuspension
+	{
+	public:
+		WizardTravelSuspension( OWizardMachine& _rWizard )
+			:m_rWizard( _rWizard )
+		{
+			m_rWizard.suspendTraveling( OWizardMachine::AccessGuard() );
+		}
 
-        ~WizardTravelSuspension()
-        {
-            m_rWizard.resumeTraveling( OWizardMachine::AccessGuard() );
-        }
+		~WizardTravelSuspension()
+		{
+			m_rWizard.resumeTraveling( OWizardMachine::AccessGuard() );
+		}
 
-    private:
-        OWizardMachine& m_rWizard;
-    };
+	private:
+		OWizardMachine& m_rWizard;
+	};
 
 //.........................................................................
 }	// namespace svt
