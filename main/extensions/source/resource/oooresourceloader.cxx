@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ namespace res
             @return
                 the required resource
             @precond
-                the caler checked via <code>_resourceManager.IsAvailable( getResourceType(), _resourceId )</code>
+                the caller checked via <code>_resourceManager.IsAvailable( getResourceType(), _resourceId )</code>
                 that the required resource really exists
         */
         virtual Any getResource( SimpleResMgr& _resourceManager, sal_Int32 _resourceId ) const = 0;
@@ -225,7 +225,7 @@ namespace res
         virtual ::sal_Bool SAL_CALL hasElements(  ) throw (::com::sun::star::uno::RuntimeException);
 
     private:
-        /** retrievs the element with the given key, without asking our parent bundle
+        /** retrieves the element with the given key, without asking our parent bundle
             @param  _key
                 the key of the element to retrieve
             @param  _out_Element
@@ -292,7 +292,7 @@ namespace res
     {
         return loadBundle( _baseName, Application::GetSettings().GetUILocale() );
     }
-    
+
     //--------------------------------------------------------------------
     Reference< XResourceBundle > SAL_CALL OpenOfficeResourceLoader::loadBundle( const ::rtl::OUString& _baseName, const Locale& _locale ) throw (MissingResourceException, RuntimeException)
     {
@@ -313,7 +313,7 @@ namespace res
 
         return xBundle;
     }
-    
+
     //--------------------------------------------------------------------
     ComponentInfo getComponentInfo_OpenOfficeResourceLoader()
     {
@@ -359,21 +359,21 @@ namespace res
         ::osl::MutexGuard aGuard( m_aMutex );
         return m_xParent;
     }
-    
+
     //--------------------------------------------------------------------
     void SAL_CALL OpenOfficeResourceBundle::setParent( const Reference< XResourceBundle >& _parent ) throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         m_xParent = _parent;
     }
-    
+
     //--------------------------------------------------------------------
     Locale SAL_CALL OpenOfficeResourceBundle::getLocale(  ) throw (RuntimeException)
     {
         ::osl::MutexGuard aGuard( m_aMutex );
         return m_aLocale;
     }
-    
+
     //--------------------------------------------------------------------
     bool OpenOfficeResourceBundle::impl_getResourceTypeAndId_nothrow( const ::rtl::OUString& _key, ResourceTypePtr& _out_resourceType, sal_Int32& _out_resourceId ) const
     {
@@ -419,7 +419,7 @@ namespace res
         impl_getDirectElement_nothrow( _key, aElement );
         return aElement;
     }
-    
+
     //--------------------------------------------------------------------
     Any SAL_CALL OpenOfficeResourceBundle::getByName( const ::rtl::OUString& _key ) throw (NoSuchElementException, WrappedTargetException, RuntimeException)
     {
@@ -437,7 +437,7 @@ namespace res
 
         return aElement;
     }
-    
+
     //--------------------------------------------------------------------
     Sequence< ::rtl::OUString > SAL_CALL OpenOfficeResourceBundle::getElementNames(  ) throw (RuntimeException)
     {
@@ -446,7 +446,7 @@ namespace res
             // the (Simple)ResManager does not provide an API to enumerate the resources
         return Sequence< ::rtl::OUString >( );
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasByName( const ::rtl::OUString& _key ) throw (RuntimeException)
     {
@@ -462,13 +462,13 @@ namespace res
 
         return sal_True;
     }
-    
+
     //--------------------------------------------------------------------
     Type SAL_CALL OpenOfficeResourceBundle::getElementType(  ) throw (RuntimeException)
     {
         return ::cppu::UnoType< Any >::get();
     }
-    
+
     //--------------------------------------------------------------------
     ::sal_Bool SAL_CALL OpenOfficeResourceBundle::hasElements(  ) throw (RuntimeException)
     {
