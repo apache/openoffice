@@ -1194,6 +1194,7 @@ sub nsis_language_converter
 	elsif ( $language eq "de" ) { $nsislanguage = "German"; }
 	elsif ( $language eq "el" ) { $nsislanguage = "Greek"; }
 	elsif ( $language eq "he" ) { $nsislanguage = "Hebrew"; }
+	elsif ( $language eq "hi" ) { $nsislanguage = "Hindi"; }
 	elsif ( $language eq "hu" ) { $nsislanguage = "Hungarian"; }
 	elsif ( $language eq "is" ) { $nsislanguage = "Icelandic"; }
 	elsif ( $language eq "id" ) { $nsislanguage = "Indonesian"; }
