@@ -1186,6 +1186,7 @@ sub nsis_language_converter
 	elsif ( $language eq "da" ) { $nsislanguage = "Danish"; }
 	elsif ( $language eq "nl" ) { $nsislanguage = "Dutch"; }
 	elsif ( $language eq "en-GB" ) { $nsislanguage = "English"; }
+	elsif ( $language eq "eo" ) { $nsislanguage = "Esperanto"; }
 	elsif ( $language eq "et" ) { $nsislanguage = "Estonian"; }
 	elsif ( $language eq "fa" ) { $nsislanguage = "Farsi"; }
 	elsif ( $language eq "fi" ) { $nsislanguage = "Finnish"; }
@@ -1220,8 +1221,8 @@ sub nsis_language_converter
 	elsif ( $language eq "sr-SP" ) { $nsislanguage = "Serbian"; }
 	elsif ( $language eq "sh" ) { $nsislanguage = "SerbianLatin"; }
 	elsif ( $language eq "zh-CN" ) { $nsislanguage = "SimpChinese"; }
-	elsif ( $language eq "sl" ) { $nsislanguage = "Slovenian"; }
 	elsif ( $language eq "sk" ) { $nsislanguage = "Slovak"; }
+	elsif ( $language eq "sl" ) { $nsislanguage = "Slovenian"; }
 	elsif ( $language eq "es" ) { $nsislanguage = "Spanish"; }
 	elsif ( $language eq "sv" ) { $nsislanguage = "Swedish"; }
 	elsif ( $language eq "th" ) { $nsislanguage = "Thai"; }
