@@ -250,10 +250,10 @@ inline sal_Bool SAL_CALL operator >>= ( Any const & rAny, bool & value )
 	if (rAny.pType->eTypeClass == typelib_TypeClass_BOOLEAN)
 	{
 		value = *reinterpret_cast< sal_Bool const * >(
-            &rAny.pReserved ) != sal_False;
-		return true;
+			rAny.pData ) != sal_False;
+		return sal_True;
 	}
-	return false;
+	return sal_False;
 }
 
 //______________________________________________________________________________
