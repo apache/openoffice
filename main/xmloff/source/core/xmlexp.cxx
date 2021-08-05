@@ -700,10 +700,18 @@ void SAL_CALL SvXMLExport::setSourceDocument( const uno::Reference< lang::XCompo
 			if (xPropertySetInfo->hasPropertyByName(sUsePrettyPrinting))
 			{
 				uno::Any aAny = mxExportInfo->getPropertyValue(sUsePrettyPrinting);
-				if (::cppu::any2bool(aAny))
-					mnExportFlags |= EXPORT_PRETTY;
-				else
-					mnExportFlags &= ~EXPORT_PRETTY;
+				try
+				{
+					if (::cppu::any2bool(aAny))
+						mnExportFlags |= EXPORT_PRETTY;
+					else
+						mnExportFlags &= ~EXPORT_PRETTY;
+					}
+				}
+				catch ( lang::IllegalArgumentException& )
+				{
+					DBG_ERRORFILE("why is bUsePrettyPrint not boolean?");
+				}
 			}
 
             if (mpNumExport && (mnExportFlags & (EXPORT_AUTOSTYLES | EXPORT_STYLES)))
