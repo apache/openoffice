@@ -169,9 +169,7 @@ sal_Bool SmXMLExportWrapper::Export(SfxMedium &rMedium)
     SvtSaveOptions aSaveOpt;
     OUString sUsePrettyPrinting(RTL_CONSTASCII_USTRINGPARAM("UsePrettyPrinting"));
     sal_Bool bUsePrettyPrinting( bFlat || aSaveOpt.IsPrettyPrinting() );
-    Any aAny;
-    aAny.setValue( &bUsePrettyPrinting, ::getBooleanCppuType() );
-    xInfoSet->setPropertyValue( sUsePrettyPrinting, aAny );
+    xInfoSet->setPropertyValue( sUsePrettyPrinting, uno::makeAny(bUsePrettyPrinting));
 
     // Set base URI
     OUString sPropName( RTL_CONSTASCII_USTRINGPARAM("BaseURI") );

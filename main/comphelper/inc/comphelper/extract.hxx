@@ -131,9 +131,10 @@ inline sal_Bool SAL_CALL extractInterface(
 inline sal_Bool SAL_CALL any2bool( const ::com::sun::star::uno::Any & rAny )
 	throw( ::com::sun::star::lang::IllegalArgumentException )
 {
-	if (rAny.getValueTypeClass() == ::com::sun::star::uno::TypeClass_BOOLEAN)
+	sal_Bool sValue;
+	if ( rAny >>= sValue)
 	{
-		return *(sal_Bool *)rAny.getValue();
+		return sValue;
 	}
 	else
 	{
