@@ -706,7 +706,6 @@ void SAL_CALL SvXMLExport::setSourceDocument( const uno::Reference< lang::XCompo
 						mnExportFlags |= EXPORT_PRETTY;
 					else
 						mnExportFlags &= ~EXPORT_PRETTY;
-					}
 				}
 				catch ( lang::IllegalArgumentException& )
 				{
