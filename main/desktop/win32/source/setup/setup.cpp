@@ -69,7 +69,7 @@
 #define PARAM_PATCH         TEXT( " /update " )
 #define PARAM_REG_ALL_MSO_TYPES TEXT( "REGISTER_ALL_MSO_TYPES=1 " )
 #define PARAM_REG_NO_MSO_TYPES  TEXT( "REGISTER_NO_MSO_TYPES=1 " )
-#define PARAM_SILENTINSTALL     TEXT( " /QB" )
+#define PARAM_SILENTINSTALL     TEXT( " /Q" )
 
 #define PARAM_RUNNING           TEXT( "ignore_running" )
 #define CMDLN_REG_ALL_MSO_TYPES TEXT( "msoreg=1" )
