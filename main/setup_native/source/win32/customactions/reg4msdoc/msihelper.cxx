@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "msihelper.hxx"
 
@@ -37,7 +39,7 @@ bool GetMsiProp(MSIHANDLE handle, LPCTSTR name, /*out*/std::wstring& value)
         MsiGetProperty(handle, name, buff, &sz);
         value = buff;
         return true;
-    }            
+    }
     return false;
 }
 
@@ -67,7 +69,7 @@ bool IsMsiPropNotEmpty(MSIHANDLE handle, LPCTSTR name)
 
 bool IsAllUserInstallation(MSIHANDLE handle)
 {
-    return IsSetMsiProp(handle, TEXT("ALLUSERS"));    
+    return IsSetMsiProp(handle, TEXT("ALLUSERS"));
 }
 
 std::wstring GetOfficeInstallationPath(MSIHANDLE handle)
@@ -78,7 +80,7 @@ std::wstring GetOfficeInstallationPath(MSIHANDLE handle)
 }
 
 std::wstring GetOfficeExecutablePath(MSIHANDLE handle)
-{    
+{
     std::wstring exepath = GetOfficeInstallationPath(handle);
     exepath += TEXT("program\\soffice.exe");
     return exepath;
@@ -88,7 +90,7 @@ std::wstring GetProductName(MSIHANDLE handle)
 {
     std::wstring prodname;
     GetMsiProp(handle, TEXT("ProductName"), prodname);
-    return prodname; 
+    return prodname;
 }
 
 bool IsModuleInstalled(MSIHANDLE handle, LPCTSTR name)
@@ -112,7 +114,7 @@ bool IsModuleSelectedForDeinstallation(MSIHANDLE handle, LPCTSTR name)
     INSTALLSTATE current_state;
     INSTALLSTATE future_state;
     MsiGetFeatureState(handle, name, &current_state, &future_state);
-    return ((current_state == INSTALLSTATE_LOCAL) && (future_state == INSTALLSTATE_ABSENT));    
+    return ((current_state == INSTALLSTATE_LOCAL) && (future_state == INSTALLSTATE_ABSENT));
 }
 
 bool IsCompleteDeinstallation(MSIHANDLE handle)
