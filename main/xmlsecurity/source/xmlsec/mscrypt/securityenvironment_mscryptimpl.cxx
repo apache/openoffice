@@ -987,7 +987,7 @@ sal_Int32 SecurityEnvironment_MSCryptImpl :: verifyCertificate(
     const Sequence< Reference< ::com::sun::star::security::XCertificate > >& seqCerts) 
     throw( ::com::sun::star::uno::SecurityException, ::com::sun::star::uno::RuntimeException ) 
 {
-	sal_Int32 validity = 0;
+	sal_Int32 validity = ::com::sun::star::security::CertificateValidity::INVALID;
 	PCCERT_CHAIN_CONTEXT pChainContext = NULL;
 	PCCERT_CONTEXT pCertContext = NULL;
 	const X509Certificate_MSCryptImpl* xcert = NULL;
