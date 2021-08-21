@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,14 +28,14 @@ TabDialog RID_PAGEDIALOG_PAGE
 {
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 176 ) ;
+	Size = MAP_APPFONT ( 289, 176 ) ;
 	Text [ en-US ] = "Page Setup" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	TabControl 1
 	{
 		OutputSize = TRUE ;
-        PageList =
+		PageList =
 		{
 			PageItem
 			{
@@ -49,35 +49,34 @@ TabDialog RID_PAGEDIALOG_PAGE
 				Text [ en-US ] = "Background" ;
 				PageResID = RID_SVXPAGE_BACKGROUND ;
 			};
-        };
+		};
 	};
 	OKButton 1
 	{
-		Pos = MAP_APPFONT ( 6 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 6, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	CancelButton 1
 	{
-		Pos = MAP_APPFONT ( 60 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 60, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton 1
 	{
-		Pos = MAP_APPFONT ( 114 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 114, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	PushButton 1
 	{
-		Pos = MAP_APPFONT ( 169 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
-		/* ### ACHTUNG: Neuer Text in Resource? Zurück : Zur³ck */
+		Pos = MAP_APPFONT ( 169, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "Return" ;
 		TabStop = TRUE ;
 	};
-	
+
 	String 1
 	{
 		Text [ en-US ] = "Page" ;
@@ -92,7 +91,7 @@ TabDialog RID_PAGEDIALOG_BACKGROUND
 {
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 176 ) ;
+	Size = MAP_APPFONT ( 289, 176 ) ;
 	Text [ en-US ] = "Section Setup" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
@@ -102,31 +101,30 @@ TabDialog RID_PAGEDIALOG_BACKGROUND
 	};
 	OKButton 1
 	{
-		Pos = MAP_APPFONT ( 6 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 6, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	CancelButton 1
 	{
-		Pos = MAP_APPFONT ( 60 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 60, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton 1
 	{
-		Pos = MAP_APPFONT ( 114 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 114, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	PushButton 1
 	{
-		Pos = MAP_APPFONT ( 169 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
-		/* ### ACHTUNG: Neuer Text in Resource? Zurück : Zur³ck */
+		Pos = MAP_APPFONT ( 169, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "Return" ;
 		TabStop = TRUE ;
 	};
-	
+
 	String 1
 	{
 		Text [ en-US ] = "Background" ;
@@ -136,7 +134,7 @@ TabDialog RID_PAGEDIALOG_CHAR
 {
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 176 ) ;
+	Size = MAP_APPFONT ( 289, 176 ) ;
 	Text [ en-US ] = "Character Settings" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
@@ -161,13 +159,13 @@ TabDialog RID_PAGEDIALOG_CHAR
 			{
 				Identifier = RID_PAGE_POSITION ;
 				PageResID = RID_PAGE_POSITION ;
-				Text [ en-US ] = "Position";
+				Text [ en-US ] = "Position" ;
 			};
 			PageItem
 			{
 				Identifier = RID_PAGE_TWOLN ;
 				PageResID = RID_PAGE_TWOLN;
-				Text [ en-US ] = "Asian Layout";
+				Text [ en-US ] = "Asian Layout" ;
 			};
 			PageItem
 			{
@@ -175,7 +173,7 @@ TabDialog RID_PAGEDIALOG_CHAR
 				Text [ en-US ] = "Background" ;
 				PageResID = RID_PAGE_BACKGROUND ;
 			};
-            PageItem
+			PageItem
 			{
 				Identifier = RID_PAGE_ALIGNMENT ;
 				Text [ en-US ] = "Alignment" ;
@@ -185,31 +183,30 @@ TabDialog RID_PAGEDIALOG_CHAR
 	};
 	OKButton 1
 	{
-		Pos = MAP_APPFONT ( 6 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 6, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	CancelButton 1
 	{
-		Pos = MAP_APPFONT ( 60 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 60, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton 1
 	{
-		Pos = MAP_APPFONT ( 114 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 114, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	PushButton 1
 	{
-		Pos = MAP_APPFONT ( 169 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
-		/* ### ACHTUNG: Neuer Text in Resource? Zurück : Zur³ck */
+		Pos = MAP_APPFONT ( 169, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "Return" ;
 		TabStop = TRUE ;
 	};
-	
+
 	String 1
 	{
 		Text [ en-US ] = "Character" ;
@@ -219,15 +216,15 @@ TabDialog RID_PAGEDIALOG_LINE
 {
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 176 ) ;
+	Size = MAP_APPFONT ( 289, 176 ) ;
 	Text [ en-US ] = "Line" ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	TabControl 1
 	{
 		OutputSize = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 3 ) ;
-		Size = MAP_APPFONT ( 260 , 135 ) ;
+		Pos = MAP_APPFONT ( 3, 3 ) ;
+		Size = MAP_APPFONT ( 260, 135 ) ;
 		PageList =
 		{
 			PageItem
@@ -252,33 +249,34 @@ TabDialog RID_PAGEDIALOG_LINE
 	};
 	OKButton 1
 	{
-		Pos = MAP_APPFONT ( 6 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 6, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	CancelButton 1
 	{
-		Pos = MAP_APPFONT ( 60 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 60, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton 1
 	{
-		Pos = MAP_APPFONT ( 114 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 114, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	PushButton 1
 	{
-		Pos = MAP_APPFONT ( 169 , 151 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
-		/* ### ACHTUNG: Neuer Text in Resource? Zurück : Zur³ck */
+		Pos = MAP_APPFONT ( 169, 151 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		Text [ en-US ] = "Return" ;
 		TabStop = TRUE ;
 	};
-	
+
 	String 1
 	{
 		Text [ en-US ] = "Line" ;
 	};
 };
+
+// ********************************************************************** EOF
