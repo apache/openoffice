@@ -50,7 +50,7 @@
 #pragma warning(push, 1)
 #endif
 
-/* external functions (C++ code, declared as extren "C" */
+/* external functions (C++ code, declared as extern "C" */
 extern int WorkOnTokenSet( int, char* );
 extern int Argument( char * );
 extern int InitXrmExport( char * , char * );
@@ -169,7 +169,7 @@ void YYWarning( char *s )
 {
 	/* write warning to stderr */
 	fprintf( stderr,
-		"Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+		"Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 }
 
 /*****************************************************************************/
@@ -182,7 +182,7 @@ void yyerror ( char *s )
 {
 	/* write error to stderr */
 	fprintf( stderr,
-		"Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+		"Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 	SetError();
 }
 
