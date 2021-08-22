@@ -1,7 +1,7 @@
 
 %{
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -9,16 +9,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 /*
  * lexer for parsing ressource source files (*.src)
@@ -98,8 +98,8 @@ void YYWarning();
 	pChar[1] = 0x00;
 	pChar[0] = c2;
 
-	WorkOnTokenSet( COMMEND, yytext );
-	WorkOnTokenSet( COMMEND, pChar );
+	WorkOnTokenSet( COMMENT, yytext );
+	WorkOnTokenSet( COMMENT, pChar );
 	for(;;) {
 		if ( c2 == EOF )
 			break;
@@ -108,7 +108,7 @@ void YYWarning();
 		c1 = c2;
 		c2 = input();
 		pChar[0] = c2;
-		WorkOnTokenSet( COMMEND, pChar );
+		WorkOnTokenSet( COMMENT, pChar );
 	}
 }
 
@@ -172,8 +172,8 @@ void YYWarning();
 	WorkOnTokenSet( TEXTREFID, yytext );
 }
 
-[a-zA-Z0-9_]+[ \t]*"="[\t ]*([ \t]*"//".*\n)*.*	| 
-[a-zA-Z0-9_]+[ \t]*"=".*	{ 
+[a-zA-Z0-9_]+[ \t]*"="[\t ]*([ \t]*"//".*\n)*.*	|
+[a-zA-Z0-9_]+[ \t]*"=".*	{
 /* ASSIGNMENT  Typ = ...  */
  WorkOnTokenSet( ASSIGNMENT, yytext );
 }
@@ -244,7 +244,7 @@ int	yywrap(void)
 		return 0;
 	}
 
-   /* end of input reached */
+	/* end of input reached */
 	return 1;
 }
 
@@ -277,10 +277,10 @@ main( int argc, char* argv[])
 	int nRetValue = 0;
 	char *pOutput;
 	FILE *pFile;
-    
+
 	pOutput = GetOutputFile( argc, argv );
 
-    if ( !pOutput ) {
+	if ( !pOutput ) {
 		fprintf( stdout, "Syntax:TRANSEX[-p Prj][-r PrjRoot]-i FileIn...[-o FileOut][-m DataBase][-e][-b][-u][-L l1,l2,...]\n" );
 		fprintf( stdout, " Prj:      Project\n" );
 		fprintf( stdout, " PrjRoot:  Path to project root (..\\.. etc.)\n" );
@@ -288,7 +288,7 @@ main( int argc, char* argv[])
 		fprintf( stdout, " FileOut:  Destination file (*.*)\n" );
 		fprintf( stdout, " DataBase: Mergedata (*.sdf)\n" );
 		fprintf( stdout, " -QQ: quiet output\n" );
-        fprintf( stdout, " -e: Disable writing errorlog\n" );
+		fprintf( stdout, " -e: Disable writing errorlog\n" );
 		fprintf( stdout, " -b: Break when Token \"HelpText\" found in source\n" );
 		fprintf( stdout, " -u: [english] and [german] are allowed, Id is Taken from DataBase \n" );
 		fprintf( stdout, " -NOUTF8: disable UTF8 as language independent encoding\n" );
@@ -299,19 +299,19 @@ main( int argc, char* argv[])
 		fprintf( stdout, "              Restriction to de and es, en-US will be fallback for es\n" );
 		return 1;
 	}
-    
+
 	InitExport( pOutput , getFilename() );
 	pFile = GetNextFile();
 	if ( !pFile )
 		return 1;
-    
-   	yyin = pFile;
+
+	yyin = pFile;
 
 	/* create global instance of class Export */
 
 	/* start parser */
-   	yylex();
-   	Close();
+	yylex();
+	Close();
 
 	/* get error info. and end export */
 	nRetValue = GetError();
@@ -320,3 +320,4 @@ main( int argc, char* argv[])
 	/* return error level */
 	return nRetValue;
 }
+
