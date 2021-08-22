@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,22 +10,22 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
 #here the definition for d would be written into dependencies. The reason is that when the event handler
-#for the element is called, we can only find out the namespace but not the prefix. So we cannot 
+#for the element is called, we can only find out the namespace but not the prefix. So we cannot
 #distinguish if the namespace is used because the element was prefixed or because it uses the default
 #namespace.
 use warnings;
@@ -48,7 +48,7 @@ my $inDependencies = 0;
 my $inIdentifier = 0;
 my $inVersion = 0;
 my $descNS = "http://openoffice.org/extensions/description/2006";
-                   my $indent;
+my $indent;
 my $identifier;
 my $version;
 
@@ -56,8 +56,8 @@ my $version;
 #element and all children of the description.xml
 my @usedNsInDependencies;
 
-#Maps  prefix to namespaces which are valid in <dependencies>. That is, they are 
-#either defined in <dependencies> or in the hirarchy above <dependencies>
+#Maps prefix to namespaces which are valid in <dependencies>. That is, they are
+#either defined in <dependencies> or in the hierarchy above <dependencies>
 my %validPrefsInDep;
 #Contains the prefixes which are defined in <dependencies>
 my @newPrefsInDep;
@@ -73,21 +73,21 @@ my $defNsInDep;
 #The prefix which we use for the default namespace used in <dependencies>
 my $generatedPrefix;
 
-my $helptext = 
+my $helptext =
 "make_ext_update_info.pl produces an update information file for an extension. ".
-"It will use a dummy URL as URL for the extension update unless a URL has been ". 
+"It will use a dummy URL as URL for the extension update unless a URL has been ".
 "provided with the --update_url option. The name of the update ".
 "information file, which must be provided with the --out switch, should be formed ".
-"according to this scheme: \n\n".
+"according to this scheme:\n\n".
 "extension_identifier.update.xml\n\n".
 "extension_identifier should correspond to the extension identifier. In some cases ".
 "this may not be possible because the identifier may contain characters which are not ".
 "allowd in file names.\n\n".
 "usage:\n".
-"perl make_ext_update_info.pl [--help][--update_url url] --out update_information_file description.xml \n\n".
-"Options: \n".
-"--help - prints the help message and exits \n".
-"--out file - the update information file to be written including the path \n".
+"perl make_ext_update_info.pl [--help][--update_url url] --out update_information_file description.xml\n\n".
+"Options:\n".
+"--help - prints the help message and exits\n".
+"--out file - the update information file to be written including the path\n".
 "--update-url url - inserts the url under the <update-download> element. It may be necessary to enclose the urls in quotes in case they contain characters such as \"?\". ".
 "It can be used multiple times\n\n";
 
@@ -106,7 +106,7 @@ my $cArgs = scalar @ARGV;
 die "You need to provide a description.xml\n\n$helptext" if $cArgs ==0;
 die "You need to provide the name of the update information file ".
     "with the --out switch.\n" unless ($out);
-die "Too many arguments. \n\n$helptext" if $cArgs > 1;
+die "Too many arguments.\n\n$helptext" if $cArgs > 1;
 print $helptext if $help;
 
 
@@ -123,10 +123,10 @@ print $FH '    xmlns:xlink="http://www.w3.org/1999/xlink">', "\n";
 writeUpdateInformationData($ARGV[0]);
 #We will die if there is no <version> or <identifier> in the description.xml
 die "Error: The description.xml does not contain a <identifier> element.\n" unless $identifier;
-die "Error: The description.xml does not contain a <version> element. \n" unless $version;
+die "Error: The description.xml does not contain a <version> element.\n" unless $version;
 
 #write the update-download element and the children.
-#the indention of <update-download> corresponds to that of <version>
+#the indentation of <update-download> corresponds to that of <version>
 print $FH ' 'x$indent, '<update-download>', "\n";
 #check if update-urls have been provided through --update-url option
 if (scalar @update_urls)
@@ -164,7 +164,7 @@ sub start_handler
     }
     elsif ($inDescription
            && $name eq "version"
-           && $descNS eq  $parser->namespace($name))
+           && $descNS eq $parser->namespace($name))
     {
         $inVersion = 1;
         $version = 1;
@@ -173,7 +173,7 @@ sub start_handler
     }
     elsif ($inDescription
            && $name eq "identifier"
-           && $descNS eq  $parser->namespace($name))
+           && $descNS eq $parser->namespace($name))
     {
         $inIdentifier = 1;
         $identifier = 1;
@@ -181,7 +181,7 @@ sub start_handler
     }
     elsif ($inDescription
            && $name eq "dependencies"
-           && $descNS eq  $parser->namespace($name))
+           && $descNS eq $parser->namespace($name))
     {
         $inDependencies = 1;
         my $dep = $parser->original_string();
@@ -207,18 +207,18 @@ sub start_handler
         #in $2 is the element name, look for the prefix
         if ($2 !~/(.*?):/ && $parser->namespace($name)) {
             #no prefix, that is element uses default namespace.
-            #Now check if the default namespace in <dependencies> is the same as the one in this 
-            #element. If not, then the default ns was defined "after" <dependencies>. Because all 
+            #Now check if the default namespace in <dependencies> is the same as the one in this
+            #element. If not, then the default ns was defined "after" <dependencies>. Because all
             #children of <dependencies> are copied into the update information, so will this default
-            #namespace definition. Hence this element will have the same default namespace in the 
+            #namespace definition. Hence this element will have the same default namespace in the
             #update information.
             my $defNsDep = $validPrefsInDep{"#default"};
             #we must have #default, see the if statement above
             my $defNsCur = $parser->expand_ns_prefix("#default");
-            
+
             if ($defNsDep eq $defNsCur) {
-                #Determine if there is in <dependency> a prefix defined (only valid there and need not 
-                #directly defined in this element). If there is no prefix defined then we will 
+                #Determine if there is in <dependency> a prefix defined (only valid there and need not
+                #directly defined in this element). If there is no prefix defined then we will
                 #add a new definition to <dependencies>.
                 for (keys %validPrefsInDep) {
                     if (($validPrefsInDep{$_} eq $defNsDep) && $_ ne "#default") {
@@ -226,7 +226,7 @@ sub start_handler
                     }
                 }
                 if (! $prefix) {
-                    #If there was no prefix, we will add new prefix definition to <dependency> 
+                    #If there was no prefix, we will add new prefix definition to <dependency>
                     #Which prefix this is has been determined during the first parsing.
                     for (keys %notDefInDep) {
                         if (($notDefInDep{$_} eq $defNsCur) && $_ ne "#default") {
@@ -240,13 +240,13 @@ sub start_handler
                 $orig=~/(\s*<)(.*)/x;
                 $fullString= $1.$prefix.":".$2;
             }
-          
-        } 
+
+        }
         $fullString = $orig unless $fullString;
-        
+
         # We record anything within <dependencies> </dependencies>.
         print $FH $fullString;
-    }     
+    }
 }
 
 sub end_handler
@@ -255,20 +255,20 @@ sub end_handler
     my $name = shift;
 
     if ($name eq "description"
-        && $descNS eq  $parser->namespace($name))
+        && $descNS eq $parser->namespace($name))
     {
         $inDescription = 0;
     }
     elsif ($inDescription
            && $name eq "version"
-           && $descNS eq  $parser->namespace($name))
+           && $descNS eq $parser->namespace($name))
     {
         $inVersion = 0;
-        print $FH  $parser->original_string(), "\n";
+        print $FH $parser->original_string(), "\n";
     }
     elsif ($inDescription
            && $name eq "identifier"
-           && $descNS eq  $parser->namespace($name))
+           && $descNS eq $parser->namespace($name))
     {
         $inIdentifier = 0;
         print $FH $parser->original_string(), "\n";
@@ -292,7 +292,7 @@ sub end_handler
     }
 }
 
-#We write the complete content between start and end tags of 
+#We write the complete content between start and end tags of
 # <identifier>, <version>, <dependencies>
 sub default_handler
 {
@@ -301,10 +301,10 @@ sub default_handler
     if ($inIdentifier || $inVersion) {
         print $FH $parser->original_string();
     } elsif ($inDependencies) {
-        print $FH  $parser->original_string();
+        print $FH $parser->original_string();
     }
 
-}  # End of default_handler
+} # End of default_handler
 
 #sax handler used for the first parsing to recognize the used prefixes in <dependencies > and its
 #children and to find out if we need to define a new prefix for the current default namespace.
@@ -318,7 +318,7 @@ sub start_handler_infos
     }
     elsif ($inDescription
            && $name eq "dependencies"
-           && $descNS eq  $parser->namespace($name)) {
+           && $descNS eq $parser->namespace($name)) {
         $inDependencies = 1;
         #build the map of prefix/namespace which are valid in <dependencies>
         my @cur = $parser->current_ns_prefixes();
@@ -329,7 +329,7 @@ sub start_handler_infos
         @newPrefsInDep = $parser->new_ns_prefixes();
 
         collectPrefixes($parser, $name, \@_, \@usedNsInDependencies);
-        return if  $generatedPrefix;
+        return if $generatedPrefix;
 
         #determine if need to create a new prefix for the current element if it uses a default ns.
         #Split up the string so we can see if there is a prefix used
@@ -340,30 +340,30 @@ sub start_handler_infos
         #in $2 is the element name, look for the prefix
         if ($2 !~/(.*?):/ && $parser->namespace($name)) {
             #no prefix, that is element uses default namespace.
-            #Now check if the default namespace in <dependencies> is the same as the one in this 
-            #element. If not, then the default ns was defined "after" <dependencies>. Because all 
+            #Now check if the default namespace in <dependencies> is the same as the one in this
+            #element. If not, then the default ns was defined "after" <dependencies>. Because all
             #children of <dependencies> are copied into the update information, so will this default
-            #namespace definition. Hence this element will have the same default namespace in the 
+            #namespace definition. Hence this element will have the same default namespace in the
             #update information.
             my $defNsDep = $validPrefsInDep{"#default"};
             #we must have #default, see the if statement above
             my $defNsCur = $parser->expand_ns_prefix("#default");
-            
+
             if ($defNsDep eq $defNsCur) {
-                #Determine if there is in <dependency> a prefix defined (only valid there and need not 
-                #directly defined in this element). If there is no prefix defined then we will 
+                #Determine if there is in <dependency> a prefix defined (only valid there and need not
+                #directly defined in this element). If there is no prefix defined then we will
                 #add a new definition to <dependencies>.
                 for (keys %validPrefsInDep) {
                     if (($validPrefsInDep{$_} eq $defNsDep) && $_ ne "#default") {
                         $prefix = $_; last;
                     }
                 }
-                
+
                 if (! $prefix) {
 
                     #define a new prefix
-                    #actually there can be only onle prefix, which is the case when the element 
-                    #uses the same default namespace as <dependencies> otherwise, the default 
+                    #actually there can be only one prefix, which is the case when the element
+                    #uses the same default namespace as <dependencies> otherwise, the default
                     #namespace was redefined by the children of <dependencies>. These are completely
                     #copied and still valid in the update information file
                     $generatedPrefix = "a";
@@ -374,7 +374,7 @@ sub start_handler_infos
 
     }
     elsif ($inDependencies) {
-        determineNsDefinitions($parser, $name, \@_); 
+        determineNsDefinitions($parser, $name, \@_);
         collectPrefixes($parser, $name, \@_, \@usedNsInDependencies);
     }
 }
@@ -386,7 +386,7 @@ sub end_handler_infos
     my $name = shift;
 
     if ($name eq "description"
-        && $descNS eq  $parser->namespace($name)) {
+        && $descNS eq $parser->namespace($name)) {
         $inDescription = 0;
     }
     elsif($inDescription
@@ -402,7 +402,7 @@ sub writeUpdateInformationData($)
     {
         #parse description xml to collect information about all used
         #prefixes and names within <dependencies>
-    
+
         my $parser = new XML::Parser(ErrorContext => 2,
                                      Namespaces => 1);
         $parser->setHandlers(Start => \&start_handler_infos,
@@ -410,13 +410,13 @@ sub writeUpdateInformationData($)
 
         $parser->parsefile($desc);
 
-        
+
     }
     #remove duplicates in the array containing the prefixes
     if ($generatedPrefix) {
         my %hashtmp;
         @usedNsInDependencies = grep(!$hashtmp{$_}++, @usedNsInDependencies);
-        
+
         #check that the prefix for the default namespace in <dependencies> does not clash
         #with any other prefixes
         my $clash;
@@ -432,11 +432,11 @@ sub writeUpdateInformationData($)
         $notDefInDep{$generatedPrefix} = $defNsInDep;
     }
     #if $notDefInDep contains the prefix #default then we need to add the generated prefix as well
-    
-    #add the special prefix for the default namespace into the map of prefixes that will be 
+
+    #add the special prefix for the default namespace into the map of prefixes that will be
     #added to the <dependencies> element in the update information file
-    
-    
+
+
     ($inDependencies, $inDescription) = (0,0);
     {
         my $parser = new XML::Parser(ErrorContext => 2,
@@ -473,7 +473,7 @@ sub findAttribute($$)
 #collect the prefixes used in an xml element
 #param 1: parser,
 #param 2: element name,
-#param 3: array of name and values of attributes       
+#param 3: array of name and values of attributes
 #param 4: out parameter, the array containing the prefixes
 sub collectPrefixes($$$$)
 {
@@ -490,9 +490,9 @@ sub collectPrefixes($$$$)
             next;
         }
         my $ns = $parser->expand_ns_prefix($_);
-        $map_ns{$ns} = $_; 
+        $map_ns{$ns} = $_;
     }
-    #investigat ns of element
+    #investigate ns of element
     my $pref = $map_ns{$parser->namespace($name)};
     push(@{$out_r}, $pref) if $pref;
     #now go over the attributes
@@ -523,7 +523,7 @@ sub collectPrefixes($$$$)
 #Therefore these definitions are collected so that they then can be written in the <dependencies>
 #element of the update information file.
 #param 1: parser
-#param 2: namsepace
+#param 2: namespace
 #param 3: the @_ received in the start handler
 sub determineNsDefinitions($$$)
 {
@@ -531,7 +531,7 @@ sub determineNsDefinitions($$$)
     my @attr = @{$attr_r};
 
     determineNsDefinitionForItem($parser, $name, 1);
-    
+
     while (my $attr = shift(@attr)) {
         determineNsDefinitionForItem($parser, $attr, 0);
         shift @attr;
@@ -541,7 +541,7 @@ sub determineNsDefinitions($$$)
 #do not call this function for the element that does not use a prefix
 #param 1: parser
 #param 2: name of the element or attribute
-#param 3: 1 if called for an elment name and 0 when called for attribue
+#param 3: 1 if called for an element name and 0 when called for attribute
 sub determineNsDefinitionForItem($$$)
 {
     my ($parser, $name) = @_;
@@ -549,8 +549,8 @@ sub determineNsDefinitionForItem($$$)
     if (! $ns) {
         return;
     }
-    #If the namespace was not kwown in <dependencies> then it was defined in one of its children
-    #or in this element. Then we are done since this namespace definition is copied into the 
+    #If the namespace was not known in <dependencies> then it was defined in one of its children
+    #or in this element. Then we are done since this namespace definition is copied into the
     #update information.
     my $bNsKnownInDep;
     for ( keys %validPrefsInDep) {
@@ -559,7 +559,7 @@ sub determineNsDefinitionForItem($$$)
             last;
         }
     }
-    #If the namespace of the current element is known in <dependencies> then check if the same 
+    #If the namespace of the current element is known in <dependencies> then check if the same
     #prefix is used. If not, then the prefix was defined in one of the children of <dependencies>
     #and was assigned the same namespace. Because we copy of children into the update information,
     #this definition is also copied.
@@ -586,13 +586,13 @@ sub determineNsDefinitionForItem($$$)
             if ($curPrefToNs{$_} eq $ns) {
                 #ignore #default
                 next if $_ eq "#default";
-                $curPref = $_; 
+                $curPref = $_;
                 last;
             }
         }
         if ($curPref && $validDepPref && ($curPref eq $validDepPref)) {
             #If the prefixes and ns are the same, then the prefix definition of <dependencies> or its
-            #parent can be used. However, we need to find out which prefixed are NOT defined in 
+            #parent can be used. However, we need to find out which prefixed are NOT defined in
             #<dependencies> so we can add them to it when we write the update information.
             my $bDefined = 0;
             for (@newPrefsInDep) {
@@ -605,5 +605,5 @@ sub determineNsDefinitionForItem($$$)
                 $notDefInDep{$curPref} = $ns;
             }
         }
-    } 
+    }
 }
