@@ -51,7 +51,7 @@
 #pragma warning(push, 1)
 #endif
 
-/* external functions (C++ code, declared as extren "C" */
+/* external functions (C++ code, declared as extern "C" */
 extern int WorkOnTokenSet( int, char* );
 extern int InitExport( char * , char * );
 extern int Parse( int nTyp, char *pTokenText );
@@ -138,12 +138,12 @@ void YYWarning();
 }
 
 [\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?=[ \t]*L?\".*\".*\n?	{
-/* TEXTLINE // TextTyp = "A Text" */
+/* TEXTLINE // TextType = "A Text" */
 	WorkOnTokenSet( TEXTLINE, yytext );
 }
 
 [\t ]*[a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?(\n[ \t]*)?=([ \t]*\n)?(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*\".*\"(([a-zA-Z0-9_]+)|(\".*\")|([ \t\n]*))*;	{
-/* LONGTEXTLINE // TextTyp = "A Text" HHH_XXX "A Text" ZZZ_TTT ... */
+/* LONGTEXTLINE // TextType = "A Text" HHH_XXX "A Text" ZZZ_TTT ... */
 	WorkOnTokenSet( LONGTEXTLINE, yytext );
 }
 
@@ -163,30 +163,30 @@ void YYWarning();
 }
 
 [a-zA-Z0-9_]+[ \t]*"="[ \t]*"MAP_APPFONT"[ \t]*"(".+")".*	{
-/* APPFONTMAPPING  Typ = MAP_APPFONT( ... ) */
+/* APPFONTMAPPING Type = MAP_APPFONT( ... ) */
 	WorkOnTokenSet( APPFONTMAPPING, yytext );
 }
 
 [ \t]*[a-zA-Z0-9_]+[ \t]*=[ \t]*[0123456789]{1,5}[ \t]*";"?\\? {
-/* TEXTREFID // TextTyp = 12345 */
+/* TEXTREFID // TextType = 12345 */
 	WorkOnTokenSet( TEXTREFID, yytext );
 }
 
 [a-zA-Z0-9_]+[ \t]*"="[\t ]*([ \t]*"//".*\n)*.*	|
 [a-zA-Z0-9_]+[ \t]*"=".*	{
-/* ASSIGNMENT  Typ = ...  */
+/* ASSIGNMENT Type = ... */
  WorkOnTokenSet( ASSIGNMENT, yytext );
 }
 
 
 
 [a-zA-Z0-9_]+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*"<"	{
-/* LISTASSIGNMENT  Typ [ ... ] = ... */
+/* LISTASSIGNMENT Type [ ... ] = ... */
 	WorkOnTokenSet( LISTASSIGNMENT, yytext );
 }
 
 "StringList"+[ \t]*("["[ \t]*[a-zA-Z0-9_\-]+[ \t]*"]"[ \t]*)?"="[ \t]*(\\[ \t]*)?\n?[ \t]*"{"[ \t]*(\\[ \t]*)?\n?[ \t]*	{
-/* LISTASSIGNMENT  Typ [ ... ] = ... */
+/* LISTASSIGNMENT Type [ ... ] = ... */
 	WorkOnTokenSet( LISTASSIGNMENT, yytext );
 }
 
@@ -201,7 +201,7 @@ void YYWarning();
 }
 
 [ \t]*"#define"[ \t]+[a-zA-Z0-9_]+.*"\\"	{
-/* RSCDEFINE  #define ... */
+/* RSCDEFINE #define ... */
 	WorkOnTokenSet( RSCDEFINE, yytext );
 }
 
@@ -253,7 +253,7 @@ void YYWarning( char *s )
 /*****************************************************************************/
 {
 	/* write warning to stderr */
-	fprintf( stderr, "Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+	fprintf( stderr, "Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 }
 
 /*****************************************************************************/
@@ -261,7 +261,7 @@ void yyerror( char *s )
 /*****************************************************************************/
 {
 	/* write error to stderr */
-	fprintf( stderr, "Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+	fprintf( stderr, "Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 	SetError();
 }
 
