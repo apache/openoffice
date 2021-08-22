@@ -1,6 +1,6 @@
 %{
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 /*
  * lexer for parsing xml-property source files (*.xml)
@@ -38,7 +38,7 @@
 #endif
 
 /* table of possible token ids */
-#include "tokens.h"                          
+#include "tokens.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -130,8 +130,8 @@ int bText=0;
 	pChar[1] = 0x00;
 	pChar[0] = c3;
 
-	WorkOnTokenSet( COMMEND, yytext );
-	WorkOnTokenSet( COMMEND, pChar );
+	WorkOnTokenSet( COMMENT, yytext );
+	WorkOnTokenSet( COMMENT, pChar );
 
 	for(;;) {
 		if ( c3 == EOF )
@@ -142,7 +142,7 @@ int bText=0;
 		c2 = c3;
 		c3 = input();
 		pChar[0] = c3;
-		WorkOnTokenSet( COMMEND, pChar );                          
+		WorkOnTokenSet( COMMENT, pChar );
 	}
 }
 
@@ -223,22 +223,23 @@ main( int argc, char* argv[])
 	pFile = GetXrmFile();
 	InitXrmExport( pOutput , getFilename() );
 
-    if ( !pFile )
+	if ( !pFile )
 		return 1;
 
-   	yyin = pFile;
+	yyin = pFile;
 
 	/* create global instance of class XmlExport */
 	//InitXrmExport( pOutput );
 
 	/* start parser */
-   	yylex();
+	yylex();
 
 	/* get error info. and end export */
 	nRetValue = GetError();
 	EndXrmExport();
 
-    removeTempFile();
+	removeTempFile();
 	/* return error level */
 	return nRetValue;
 }
+
