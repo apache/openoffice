@@ -67,11 +67,11 @@ public:
 	sal_Bool SAL_CALL create()
 	{
 		OSL_ASSERT(m_hThread == 0); // only one running thread per instance
-		if (m_hThread)
+		if( m_hThread )
 			return sal_False;
 
 		m_hThread = osl_createSuspendedThread( threadFunc, (void*)this);
-		if ( m_hThread )
+		if( m_hThread )
 			osl_resumeThread(m_hThread);
 
 		return m_hThread != 0;
@@ -80,10 +80,11 @@ public:
 	sal_Bool SAL_CALL createSuspended()
 	{
 		OSL_ASSERT(m_hThread == 0); // only one running thread per instance
-		if( m_hThread)
+		if( m_hThread )
 			return sal_False;
-		m_hThread= osl_createSuspendedThread( threadFunc,
-											(void*)this);
+
+		m_hThread= osl_createSuspendedThread( threadFunc, (void*)this);
+
 		return m_hThread != 0;
 	}
 
