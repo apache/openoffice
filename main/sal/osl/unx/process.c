@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -30,8 +29,8 @@
  */
 
 #if defined(SOLARIS)
-  // The procfs may only be used without LFS in 32bits.
-# ifdef _FILE_OFFSET_BITS     
+// The procfs may only be used without LFS in 32bits.
+# ifdef _FILE_OFFSET_BITS
 #   undef   _FILE_OFFSET_BITS
 # endif
 #endif
@@ -76,7 +75,7 @@ extern oslFileHandle osl_createFileHandleFromFD( int fd );
 
 /******************************************************************************
  *
- *                  Data Type Definition
+ * Data Type Definition
  *
  ******************************************************************************/
 
@@ -102,34 +101,34 @@ typedef struct {
 } ProcessData;
 
 typedef struct _oslPipeImpl {
-    int      m_Socket;
-    sal_Char m_Name[PATH_MAX + 1];
+	int      m_Socket;
+	sal_Char m_Name[PATH_MAX + 1];
 } oslPipeImpl;
 
 
 /******************************************************************************
  *
- *                  Function Declarations
+ * Function Declarations
  *
  *****************************************************************************/
 
 oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
-                                                sal_Char *pszArguments[],
-                                                oslProcessOption Options,
-                                                oslSecurity Security,
-                                                sal_Char *pszDirectory,
-                                                sal_Char *pszEnvironments[],
-                                                oslProcess *pProcess,
+												sal_Char *pszArguments[],
+												oslProcessOption Options,
+												oslSecurity Security,
+												sal_Char *pszDirectory,
+												sal_Char *pszEnvironments[],
+												oslProcess *pProcess,
 												oslFileHandle *pInputWrite,
 												oslFileHandle *pOutputRead,
 												oslFileHandle *pErrorRead );
 
-												
+
 oslProcessError SAL_CALL osl_searchPath_impl(
-	const sal_Char* pszName, 
-	const sal_Char* pszPath, 
-	sal_Char Separator, 
-	sal_Char *pszBuffer, 
+	const sal_Char* pszName,
+	const sal_Char* pszPath,
+	sal_Char Separator,
+	sal_Char *pszBuffer,
 	sal_uInt32 Max);
 
 
@@ -151,8 +150,8 @@ oslProcessError SAL_CALL osl_searchPath_impl(const sal_Char* pszName, const sal_
 	sal_Char path[PATH_MAX + 1];
 	sal_Char *pchr;
 
-    path[0] = '\0';
-    
+	path[0] = '\0';
+
 	OSL_ASSERT(pszName != NULL);
 
 	if ( pszName == NULL )
@@ -187,8 +186,8 @@ oslProcessError SAL_CALL osl_searchPath_impl(const sal_Char* pszName, const sal_
 
 			if (access(path, 0) == 0)
 			{
-                char szRealPathBuf[PATH_MAX] = "";
-                
+				char szRealPathBuf[PATH_MAX] = "";
+
 				if( NULL == realpath(path, szRealPathBuf) || (strlen(szRealPathBuf) >= (sal_uInt32)Max))
 					return osl_Process_E_Unknown;
 
@@ -207,7 +206,7 @@ oslProcessError SAL_CALL osl_searchPath_impl(const sal_Char* pszName, const sal_
 
 /******************************************************************************
  *
- *                  New io resource transfer functions
+ * New io resource transfer functions
  *
  *****************************************************************************/
 
@@ -215,210 +214,210 @@ oslProcessError SAL_CALL osl_searchPath_impl(const sal_Char* pszName, const sal_
 /**********************************************
  sendFdPipe
  *********************************************/
- 
+
 static sal_Bool sendFdPipe(int PipeFD, int SocketFD)
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
-    struct iovec	iov[1];
-    struct msghdr	msg;
-    char			buf[2];	/* send_fd()/recv_fd() 2-byte protocol */
-    int nSend;
-    int RetCode=0;
-    
+	struct iovec	iov[1];
+	struct msghdr	msg;
+	char			buf[2];	/* send_fd()/recv_fd() 2-byte protocol */
+	int nSend;
+	int RetCode=0;
+
 #if defined(IOCHANNEL_TRANSFER_BSD)
 
-    OSL_TRACE("IOCHANNEL_TRANSFER_BSD send");
-/*      OSL_TRACE("sending fd %i\n",SocketFD); */
-    
-    iov[0].iov_base = buf;
-    iov[0].iov_len  = sizeof(buf);
-    msg.msg_iov     = iov;
-    msg.msg_iovlen  = 1;
-    msg.msg_name    = NULL;
-    msg.msg_namelen = 0;
+	OSL_TRACE("IOCHANNEL_TRANSFER_BSD send");
+/*	OSL_TRACE("sending fd %i\n",SocketFD); */
 
-    msg.msg_accrights    = (caddr_t) &SocketFD;	/* addr of descriptor */
-    msg.msg_accrightslen = sizeof(int);		/* pass 1 descriptor */
-    buf[1] = 0;								/* zero status means OK */
-    buf[0] = 0;								/* null byte flag to recv_fd() */
-        
+	iov[0].iov_base = buf;
+	iov[0].iov_len  = sizeof(buf);
+	msg.msg_iov     = iov;
+	msg.msg_iovlen  = 1;
+	msg.msg_name    = NULL;
+	msg.msg_namelen = 0;
+
+	msg.msg_accrights    = (caddr_t) &SocketFD;	/* addr of descriptor */
+	msg.msg_accrightslen = sizeof(int);		/* pass 1 descriptor */
+	buf[1] = 0;								/* zero status means OK */
+	buf[0] = 0;								/* null byte flag to recv_fd() */
+
 #else
-    
-    struct cmsghdr* cmptr = (struct cmsghdr*)malloc(CONTROLLEN);
 
-    OSL_TRACE("!!!!!! IOCHANNEL_TRANSFER_BSD_RENO send");
-/*      OSL_TRACE("sending fd %i\n",SocketFD); */
+	struct cmsghdr* cmptr = (struct cmsghdr*)malloc(CONTROLLEN);
 
-    iov[0].iov_base = buf;
-    iov[0].iov_len = sizeof(buf);
-    msg.msg_iov = iov;
-    msg.msg_iovlen = 1;
-    msg.msg_name = NULL;
-    msg.msg_namelen = 0;
-    msg.msg_control = (caddr_t) cmptr;
-    msg.msg_controllen = CONTROLLEN;
+	OSL_TRACE("!!!!!! IOCHANNEL_TRANSFER_BSD_RENO send");
+/*	OSL_TRACE("sending fd %i\n",SocketFD); */
 
-    cmptr->cmsg_level = SOL_SOCKET;
-    cmptr->cmsg_type = SCM_RIGHTS;
-    cmptr->cmsg_len = CONTROLLEN;
-    memcpy(CMSG_DATA(cmptr), &SocketFD, sizeof(int));
+	iov[0].iov_base = buf;
+	iov[0].iov_len = sizeof(buf);
+	msg.msg_iov = iov;
+	msg.msg_iovlen = 1;
+	msg.msg_name = NULL;
+	msg.msg_namelen = 0;
+	msg.msg_control = (caddr_t) cmptr;
+	msg.msg_controllen = CONTROLLEN;
+
+	cmptr->cmsg_level = SOL_SOCKET;
+	cmptr->cmsg_type = SCM_RIGHTS;
+	cmptr->cmsg_len = CONTROLLEN;
+	memcpy(CMSG_DATA(cmptr), &SocketFD, sizeof(int));
 
 #endif
-    
-    if ( ( nSend = sendmsg(PipeFD, &msg, 0) ) > 0 )
-    {
-        bRet = sal_True;
-        OSL_TRACE("sendFdPipe : send '%i' bytes\n",nSend);
 
-    }
-    else
-    {
-        OSL_TRACE("sendFdPipe : sending failed (%s)",strerror(errno));
-    }
+	if ( ( nSend = sendmsg(PipeFD, &msg, 0) ) > 0 )
+	{
+		bRet = sal_True;
+		OSL_TRACE("sendFdPipe : send '%i' bytes\n",nSend);
 
-    nSend=read(PipeFD,&RetCode,sizeof(RetCode));
+	}
+	else
+	{
+		OSL_TRACE("sendFdPipe : sending failed (%s)",strerror(errno));
+	}
 
-    if ( nSend > 0 && RetCode == 1 )
-    {
-        OSL_TRACE("sendFdPipe : resource was received\n");
-    }
-    else
-    {
-        OSL_TRACE("sendFdPipe : resource wasn't received\n");        
-    }    
-    
+	nSend=read(PipeFD,&RetCode,sizeof(RetCode));
+
+	if ( nSend > 0 && RetCode == 1 )
+	{
+		OSL_TRACE("sendFdPipe : resource was received\n");
+	}
+	else
+	{
+		OSL_TRACE("sendFdPipe : resource wasn't received\n");
+	}
+
 #if defined(IOCHANNEL_TRANSFER_BSD_RENO)
-    free(cmptr);
+	free(cmptr);
 #endif
 
-    return bRet;
+	return bRet;
 }
 
 /**********************************************
  receiveFdPipe
  *********************************************/
- 
+
 static oslSocket receiveFdPipe(int PipeFD)
 {
-    oslSocket pSocket = 0;
-    struct msghdr msghdr;
-    struct iovec iov[1];
-    char buffer[2];
-    sal_Int32 nRead;
-    int newfd=-1;
-    int nRetCode=0;
-/*      char *ptr; */
+	oslSocket pSocket = 0;
+	struct msghdr msghdr;
+	struct iovec iov[1];
+	char buffer[2];
+	sal_Int32 nRead;
+	int newfd=-1;
+	int nRetCode=0;
+/*	char *ptr; */
 
 #if defined(IOCHANNEL_TRANSFER_BSD)
-    
-    OSL_TRACE("IOCHANNEL_TRANSFER_BSD receive\n");
-    
-    iov[0].iov_base = buffer;
-    iov[0].iov_len = sizeof(buffer);
-    msghdr.msg_name = NULL;
-    msghdr.msg_namelen = 0;
-    msghdr.msg_iov = iov;
-    msghdr.msg_iovlen = 1;
-    msghdr.msg_accrights = (caddr_t) &newfd; /* addr of descriptor   */
-    msghdr.msg_accrightslen = sizeof(int);	 /* receive 1 descriptor */
-    
+
+	OSL_TRACE("IOCHANNEL_TRANSFER_BSD receive\n");
+
+	iov[0].iov_base = buffer;
+	iov[0].iov_len = sizeof(buffer);
+	msghdr.msg_name = NULL;
+	msghdr.msg_namelen = 0;
+	msghdr.msg_iov = iov;
+	msghdr.msg_iovlen = 1;
+	msghdr.msg_accrights = (caddr_t) &newfd; /* addr of descriptor */
+	msghdr.msg_accrightslen = sizeof(int);	 /* receive 1 descriptor */
+
 #else
-    struct cmsghdr* cmptr = (struct cmsghdr*)malloc(CONTROLLEN);
+	struct cmsghdr* cmptr = (struct cmsghdr*)malloc(CONTROLLEN);
 
-    OSL_TRACE(" !!!! IOCHANNEL_TRANSFER_BSD_RENO receive");
-    
-    iov[0].iov_base = buffer;
-    iov[0].iov_len = sizeof(buffer);
-    msghdr.msg_name = NULL;
-    msghdr.msg_namelen = 0;
-    msghdr.msg_iov = iov;
-    msghdr.msg_iovlen = 1;
+	OSL_TRACE(" !!!! IOCHANNEL_TRANSFER_BSD_RENO receive");
 
-    msghdr.msg_control = (caddr_t) cmptr;
-    msghdr.msg_controllen = CONTROLLEN;
+	iov[0].iov_base = buffer;
+	iov[0].iov_len = sizeof(buffer);
+	msghdr.msg_name = NULL;
+	msghdr.msg_namelen = 0;
+	msghdr.msg_iov = iov;
+	msghdr.msg_iovlen = 1;
+
+	msghdr.msg_control = (caddr_t) cmptr;
+	msghdr.msg_controllen = CONTROLLEN;
 
 #endif
-    
+
 
 #if defined(IOCHANNEL_TRANSFER_BSD)
-    
-    if ( ( nRead = recvmsg(PipeFD, &msghdr, 0) ) > 0 )
-    {
-        OSL_TRACE("receiveFdPipe : received '%i' bytes\n",nRead);
-    }
+
+	if ( ( nRead = recvmsg(PipeFD, &msghdr, 0) ) > 0 )
+	{
+		OSL_TRACE("receiveFdPipe : received '%i' bytes\n",nRead);
+	}
 #else
 
-    if ( ( ( nRead = recvmsg(PipeFD, &msghdr, 0) ) > 0 ) &&
-         ( msghdr.msg_controllen == CONTROLLEN ) )
-    {
-        OSL_TRACE("receiveFdPipe : received '%i' bytes\n",nRead);
-        memcpy(&newfd, CMSG_DATA(cmptr), sizeof(int));
-    }
+	if ( ( ( nRead = recvmsg(PipeFD, &msghdr, 0) ) > 0 ) &&
+		( msghdr.msg_controllen == CONTROLLEN ) )
+	{
+		OSL_TRACE("receiveFdPipe : received '%i' bytes\n",nRead);
+		memcpy(&newfd, CMSG_DATA(cmptr), sizeof(int));
+	}
 #endif
-    else
-    {
-        OSL_TRACE("receiveFdPipe : receiving failed (%s)",strerror(errno));
-    }
-    
-    if ( newfd >= 0 )
-    {
-        pSocket = __osl_createSocketImpl(newfd);
-        nRetCode=1;        
-        OSL_TRACE("received fd %i\n",newfd);
-    }
+	else
+	{
+		OSL_TRACE("receiveFdPipe : receiving failed (%s)",strerror(errno));
+	}
 
-    OSL_TRACE("receiveFdPipe : writing back %i",nRetCode);
-    nRead=write(PipeFD,&nRetCode,sizeof(nRetCode));
+	if ( newfd >= 0 )
+	{
+		pSocket = __osl_createSocketImpl(newfd);
+		nRetCode=1;
+		OSL_TRACE("received fd %i\n",newfd);
+	}
+
+	OSL_TRACE("receiveFdPipe : writing back %i",nRetCode);
+	nRead=write(PipeFD,&nRetCode,sizeof(nRetCode));
 
 #if defined(IOCHANNEL_TRANSFER_BSD_RENO)
-    free(cmptr);
+	free(cmptr);
 #endif
 
-    return pSocket;
+	return pSocket;
 }
 
 /**********************************************
  osl_sendResourcePipe
  *********************************************/
- 
+
 sal_Bool osl_sendResourcePipe(oslPipe pPipe, oslSocket pSocket)
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
-    if ( pSocket == 0 || pPipe == 0 )
-    {
-        return sal_False;
-    }
+	if ( pSocket == 0 || pPipe == 0 )
+	{
+		return sal_False;
+	}
 
-    bRet = sendFdPipe(pPipe->m_Socket,pSocket->m_Socket);
+	bRet = sendFdPipe(pPipe->m_Socket,pSocket->m_Socket);
 
-    return bRet;
+	return bRet;
 }
 
 /**********************************************
  osl_receiveResourcePipe
  *********************************************/
- 
+
 oslSocket osl_receiveResourcePipe(oslPipe pPipe)
 {
-    oslSocket pSocket=0;
+	oslSocket pSocket=0;
 
-    if ( pPipe ==  0 )
-    {
-        return 0;
-    }
+	if ( pPipe == 0 )
+	{
+		return 0;
+	}
 
-    pSocket = receiveFdPipe(pPipe->m_Socket);
+	pSocket = receiveFdPipe(pPipe->m_Socket);
 
-    return (oslSocket) pSocket;
+	return (oslSocket) pSocket;
 }
 
 
 
 /******************************************************************************
  *
- *                  Functions for starting a process
+ * Functions for starting a process
  *
  *****************************************************************************/
 
@@ -438,32 +437,32 @@ static void ChildStatusProc(void *pData)
 	   in our child process */
 	memcpy(&data, pData, sizeof(data));
 
-    if (socketpair(AF_UNIX, SOCK_STREAM, 0, channel) == -1)
-        status = errno;
+	if (socketpair(AF_UNIX, SOCK_STREAM, 0, channel) == -1)
+		status = errno;
 
-    fcntl(channel[0], F_SETFD, FD_CLOEXEC);
-    fcntl(channel[1], F_SETFD, FD_CLOEXEC);
+	fcntl(channel[0], F_SETFD, FD_CLOEXEC);
+	fcntl(channel[1], F_SETFD, FD_CLOEXEC);
 
 	/* Create redirected IO pipes */
 	if ( status == 0 && data.m_pInputWrite )
 		if (pipe( stdInput ) == -1)
-		    status = errno;
+			status = errno;
 
 	if ( status == 0 && data.m_pOutputRead )
 		if (pipe( stdOutput ) == -1)
-		    status = errno;
+			status = errno;
 
 	if ( status == 0 && data.m_pErrorRead )
 		if (pipe( stdError ) == -1)
-		    status = errno;
+			status = errno;
 
-    if ( (status == 0) && ((pid = fork()) == 0) )
-    {
+	if ( (status == 0) && ((pid = fork()) == 0) )
+	{
 		/* Child */
-        int chstatus = 0;
-        sal_Int32 nWrote;
+		int chstatus = 0;
+		sal_Int32 nWrote;
 
-	    if (channel[0] != -1) close(channel[0]);
+		if (channel[0] != -1) close(channel[0]);
 
 		if ((data.m_uid != (uid_t)-1) && ((data.m_uid != getuid()) || (data.m_gid != getgid())))
 		{
@@ -478,26 +477,26 @@ static void ChildStatusProc(void *pData)
 #endif
 		}
 
-  		if (data.m_pszDir)
-  			chstatus = chdir(data.m_pszDir);
+		if (data.m_pszDir)
+			chstatus = chdir(data.m_pszDir);
 
-   	    if (chstatus == 0 && ((data.m_uid == (uid_t)-1) || ((data.m_uid == getuid()) && (data.m_gid == getgid()))))
+		if (chstatus == 0 && ((data.m_uid == (uid_t)-1) || ((data.m_uid == getuid()) && (data.m_gid == getgid()))))
 		{
-            int i;
+			int i;
 			for (i = 0; data.m_pszEnv[i] != NULL; i++)
-            {
-                if (strchr(data.m_pszEnv[i], '=') == NULL)
-                {
-                    unsetenv(data.m_pszEnv[i]); /*TODO: check error return*/
-                }
-                else
-                {
-                    putenv(data.m_pszEnv[i]); /*TODO: check error return*/
-                }
-            }
+			{
+				if (strchr(data.m_pszEnv[i], '=') == NULL)
+				{
+					unsetenv(data.m_pszEnv[i]); /*TODO: check error return*/
+				}
+				else
+				{
+					putenv(data.m_pszEnv[i]); /*TODO: check error return*/
+				}
+			}
 
-            OSL_TRACE("ChildStatusProc : starting '%s'",data.m_pszArgs[0]);
-     
+			OSL_TRACE("ChildStatusProc : starting '%s'",data.m_pszArgs[0]);
+
 			/* Connect std IO to pipe ends */
 
 			/* Write end of stdInput not used in child process */
@@ -529,26 +528,26 @@ static void ChildStatusProc(void *pData)
 				if (stdError[1] != -1) close( stdError[1] );
 			}
 
-	    	pid=execv(data.m_pszArgs[0], (sal_Char **)data.m_pszArgs);
+			pid=execv(data.m_pszArgs[0], (sal_Char **)data.m_pszArgs);
 
 		}
 
-        OSL_TRACE("Failed to exec, errno=%d (%s)\n", errno, strerror(errno));
+		OSL_TRACE("Failed to exec, errno=%d (%s)\n", errno, strerror(errno));
 
-        OSL_TRACE("ChildStatusProc : starting '%s' failed",data.m_pszArgs[0]);
-        
+		OSL_TRACE("ChildStatusProc : starting '%s' failed",data.m_pszArgs[0]);
+
 		/* if we reach here, something went wrong */
-        nWrote = write(channel[1], &errno, sizeof(errno));
+		nWrote = write(channel[1], &errno, sizeof(errno));
 		if (nWrote != sizeof(errno))
-            OSL_TRACE("sendFdPipe : sending failed (%s)",strerror(errno));
+			OSL_TRACE("sendFdPipe : sending failed (%s)",strerror(errno));
 
-	    if (channel[1] != -1) close(channel[1]);
+		if (channel[1] != -1) close(channel[1]);
 
 		_exit(255);
-    }
-    else
-    {   /* Parent  */
-        int i = -1;
+	}
+	else
+	{ /* Parent */
+		int i = -1;
 		if (channel[1] != -1) close(channel[1]);
 
 		/* Close unused pipe ends */
@@ -580,17 +579,17 @@ static void ChildStatusProc(void *pData)
 
 			if ( pdata->m_pInputWrite )
 				*(pdata->m_pInputWrite) = osl_createFileHandleFromFD( stdInput[1] );
-				
+
 			if ( pdata->m_pOutputRead )
 				*(pdata->m_pOutputRead) = osl_createFileHandleFromFD( stdOutput[0] );
-				
+
 			if ( pdata->m_pErrorRead )
 				*(pdata->m_pErrorRead) = osl_createFileHandleFromFD( stdError[0] );
 
 			osl_releaseMutex(ChildListMutex);
 
 			osl_setCondition(pdata->m_started);
-            
+
 			do
 			{
 				child_pid = waitpid(pid, &status, 0);
@@ -600,14 +599,14 @@ static void ChildStatusProc(void *pData)
 			{
 				OSL_TRACE("Failed to wait for child process, errno=%d (%s)\n", errno, strerror(errno));
 
-				/* 
+				/*
 				We got an other error than EINTR. Anyway we have to wake up the
 				waiting thread under any circumstances */
 
 				child_pid = pid;
 			}
 
-			
+
 			if ( child_pid > 0 )
 			{
 				oslProcessImpl* pChild;
@@ -637,7 +636,7 @@ static void ChildStatusProc(void *pData)
 		}
 		else
 		{
-            OSL_TRACE("ChildStatusProc : starting '%s' failed",data.m_pszArgs[0]);            
+			OSL_TRACE("ChildStatusProc : starting '%s' failed",data.m_pszArgs[0]);
 			OSL_TRACE("Failed to launch child process, child reports errno=%d (%s)\n", status, strerror(status));
 
 			/* Close pipe ends */
@@ -654,17 +653,17 @@ static void ChildStatusProc(void *pData)
 			if (stdOutput[0] != -1) close( stdOutput[0] );
 			if (stdError[0] != -1) close( stdError[0] );
 
-            //if pid > 0 then a process was created, even if it later failed
-            //e.g. bash searching for a command to execute, and we still
-            //need to clean it up to avoid "defunct" processes
-            if (pid > 0)
-            {
-                pid_t child_pid;
-                do
-                {
-                    child_pid = waitpid(pid, &status, 0);
-                } while ( 0 > child_pid && EINTR == errno );
-            }
+			//if pid > 0 then a process was created, even if it later failed
+			//e.g. bash searching for a command to execute, and we still
+			//need to clean it up to avoid "defunct" processes
+			if (pid > 0)
+			{
+				pid_t child_pid;
+				do
+				{
+					child_pid = waitpid(pid, &status, 0);
+				} while ( 0 > child_pid && EINTR == errno );
+			}
 
 			/* notify (and unblock) parent thread */
 			osl_setCondition(pdata->m_started);
@@ -675,16 +674,16 @@ static void ChildStatusProc(void *pData)
 /**********************************************
  osl_executeProcess_WithRedirectedIO
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_executeProcess_WithRedirectedIO(
 											rtl_uString *ustrImageName,
 											rtl_uString *ustrArguments[],
-                                            sal_uInt32   nArguments,
+											sal_uInt32   nArguments,
 											oslProcessOption Options,
 											oslSecurity Security,
 											rtl_uString *ustrWorkDir,
 											rtl_uString *ustrEnvironment[],
-                                            sal_uInt32   nEnvironmentVars,
+											sal_uInt32   nEnvironmentVars,
 											oslProcess *pProcess,
 											oslFileHandle	*pInputWrite,
 											oslFileHandle	*pOutputRead,
@@ -692,121 +691,121 @@ oslProcessError SAL_CALL osl_executeProcess_WithRedirectedIO(
 											)
 {
 
-    oslProcessError Error;
-    sal_Char* pszWorkDir=NULL;
-    sal_Char** pArguments=NULL;
-    sal_Char** pEnvironment=NULL;
-    unsigned int idx;
-    
-    char szImagePath[PATH_MAX] = "";
-    char szWorkDir[PATH_MAX] = "";
+	oslProcessError Error;
+	sal_Char* pszWorkDir=NULL;
+	sal_Char** pArguments=NULL;
+	sal_Char** pEnvironment=NULL;
+	unsigned int idx;
 
-    if ( ustrImageName && ustrImageName->length )
-    {
-        FileURLToPath( szImagePath, PATH_MAX, ustrImageName );
-    }
+	char szImagePath[PATH_MAX] = "";
+	char szWorkDir[PATH_MAX] = "";
 
-    if ( ustrWorkDir != NULL && ustrWorkDir->length )
-    {
-        FileURLToPath( szWorkDir, PATH_MAX, ustrWorkDir );
-        pszWorkDir = szWorkDir;
-    }
+	if ( ustrImageName && ustrImageName->length )
+	{
+		FileURLToPath( szImagePath, PATH_MAX, ustrImageName );
+	}
 
-    if ( pArguments == NULL && nArguments > 0 )
-    {
-        pArguments = (sal_Char**) malloc( ( nArguments + 2 ) * sizeof(sal_Char*) );
-    }
+	if ( ustrWorkDir != NULL && ustrWorkDir->length )
+	{
+		FileURLToPath( szWorkDir, PATH_MAX, ustrWorkDir );
+		pszWorkDir = szWorkDir;
+	}
 
-
-    for ( idx = 0 ; idx < nArguments ; ++idx )
-    {
-        rtl_String* strArg =NULL;
+	if ( pArguments == NULL && nArguments > 0 )
+	{
+		pArguments = (sal_Char**) malloc( ( nArguments + 2 ) * sizeof(sal_Char*) );
+	}
 
 
-        rtl_uString2String( &strArg,
-                            rtl_uString_getStr(ustrArguments[idx]),
-                            rtl_uString_getLength(ustrArguments[idx]),
-                            osl_getThreadTextEncoding(),
-                            OUSTRING_TO_OSTRING_CVTFLAGS );
+	for ( idx = 0 ; idx < nArguments ; ++idx )
+	{
+		rtl_String* strArg =NULL;
 
-        pArguments[idx]=strdup(rtl_string_getStr(strArg));
-        rtl_string_release(strArg);
+
+		rtl_uString2String( &strArg,
+							rtl_uString_getStr(ustrArguments[idx]),
+							rtl_uString_getLength(ustrArguments[idx]),
+							osl_getThreadTextEncoding(),
+							OUSTRING_TO_OSTRING_CVTFLAGS );
+
+		pArguments[idx]=strdup(rtl_string_getStr(strArg));
+		rtl_string_release(strArg);
 		pArguments[idx+1]=NULL;
-    }
+	}
 
-    for ( idx = 0 ; idx < nEnvironmentVars ; ++idx )
-    {
-        rtl_String* strEnv=NULL;
+	for ( idx = 0 ; idx < nEnvironmentVars ; ++idx )
+	{
+		rtl_String* strEnv=NULL;
 
-        if ( pEnvironment == NULL )
-        {
-            pEnvironment = (sal_Char**) malloc( ( nEnvironmentVars + 2 ) * sizeof(sal_Char*) );
-        }
+		if ( pEnvironment == NULL )
+		{
+			pEnvironment = (sal_Char**) malloc( ( nEnvironmentVars + 2 ) * sizeof(sal_Char*) );
+		}
 
-        rtl_uString2String( &strEnv,
-                            rtl_uString_getStr(ustrEnvironment[idx]),
-                            rtl_uString_getLength(ustrEnvironment[idx]),
-                            osl_getThreadTextEncoding(),
-                            OUSTRING_TO_OSTRING_CVTFLAGS );
+		rtl_uString2String( &strEnv,
+							rtl_uString_getStr(ustrEnvironment[idx]),
+							rtl_uString_getLength(ustrEnvironment[idx]),
+							osl_getThreadTextEncoding(),
+							OUSTRING_TO_OSTRING_CVTFLAGS );
 
-        pEnvironment[idx]=strdup(rtl_string_getStr(strEnv));
-        rtl_string_release(strEnv);
-        pEnvironment[idx+1]=NULL;
-    }
+		pEnvironment[idx]=strdup(rtl_string_getStr(strEnv));
+		rtl_string_release(strEnv);
+		pEnvironment[idx+1]=NULL;
+	}
 
 
-    Error = osl_psz_executeProcess(szImagePath,
-                                   pArguments,
-                                   Options,
-                                   Security,
-                                   pszWorkDir,
-                                   pEnvironment,
-                                   pProcess,
+	Error = osl_psz_executeProcess(szImagePath,
+								   pArguments,
+								   Options,
+								   Security,
+								   pszWorkDir,
+								   pEnvironment,
+								   pProcess,
 								   pInputWrite,
 								   pOutputRead,
 								   pErrorRead
 								   );
 
-    if ( pArguments != NULL )
-    {
-        for ( idx = 0 ; idx < nArguments ; ++idx )
-        {
-            if ( pArguments[idx] != NULL )
-            {
-                free(pArguments[idx]);
-            }
-        }
-        free(pArguments);
-    }
+	if ( pArguments != NULL )
+	{
+		for ( idx = 0 ; idx < nArguments ; ++idx )
+		{
+			if ( pArguments[idx] != NULL )
+			{
+				free(pArguments[idx]);
+			}
+		}
+		free(pArguments);
+	}
 
-    if ( pEnvironment != NULL )
-    {
-        for ( idx = 0 ; idx < nEnvironmentVars ; ++idx )
-        {
-            if ( pEnvironment[idx] != NULL )
-            {
-                free(pEnvironment[idx]);
-            }
-        }
-        free(pEnvironment);
-    }
+	if ( pEnvironment != NULL )
+	{
+		for ( idx = 0 ; idx < nEnvironmentVars ; ++idx )
+		{
+			if ( pEnvironment[idx] != NULL )
+			{
+				free(pEnvironment[idx]);
+			}
+		}
+		free(pEnvironment);
+	}
 
-    return Error;
+	return Error;
 }
 
 /**********************************************
  osl_executeProcess
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_executeProcess(
 											rtl_uString *ustrImageName,
 											rtl_uString *ustrArguments[],
-                                            sal_uInt32   nArguments,
+											sal_uInt32   nArguments,
 											oslProcessOption Options,
 											oslSecurity Security,
 											rtl_uString *ustrWorkDir,
 											rtl_uString *ustrEnvironment[],
-                                            sal_uInt32   nEnvironmentVars,
+											sal_uInt32   nEnvironmentVars,
 											oslProcess *pProcess
 											)
 {
@@ -829,27 +828,27 @@ oslProcessError SAL_CALL osl_executeProcess(
 /**********************************************
  osl_psz_executeProcess
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
-                                                sal_Char *pszArguments[],
-                                                oslProcessOption Options,
-                                                oslSecurity Security,
-                                                sal_Char *pszDirectory,
-                                                sal_Char *pszEnvironments[],
-                                                oslProcess *pProcess,
+												sal_Char *pszArguments[],
+												oslProcessOption Options,
+												oslSecurity Security,
+												sal_Char *pszDirectory,
+												sal_Char *pszEnvironments[],
+												oslProcess *pProcess,
 												oslFileHandle	*pInputWrite,
 												oslFileHandle	*pOutputRead,
 												oslFileHandle	*pErrorRead
 												)
 {
-    int     i;
+	int     i;
 	sal_Char    path[PATH_MAX + 1];
 	ProcessData Data;
 	oslThread hThread;
 
-    path[0] = '\0';
-    
-    memset(&Data,0,sizeof(ProcessData));
+	path[0] = '\0';
+
+	memset(&Data,0,sizeof(ProcessData));
 	Data.m_pInputWrite = pInputWrite;
 	Data.m_pOutputRead = pOutputRead;
 	Data.m_pErrorRead = pErrorRead;
@@ -871,19 +870,19 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 	Data.m_pszArgs[0] = strdup(pszImageName);
 	Data.m_pszArgs[1] = NULL;
 
-    if ( pszArguments != 0 )
-    {
-        for (i = 0; ((i + 2) < MAX_ARGS) && (pszArguments[i] != NULL); i++)
-            Data.m_pszArgs[i+1] = strdup(pszArguments[i]);
-        Data.m_pszArgs[i+2] = NULL;
-    }
+	if ( pszArguments != 0 )
+	{
+		for (i = 0; ((i + 2) < MAX_ARGS) && (pszArguments[i] != NULL); i++)
+			Data.m_pszArgs[i+1] = strdup(pszArguments[i]);
+		Data.m_pszArgs[i+2] = NULL;
+	}
 
 	Data.m_options = Options;
 	Data.m_pszDir  = (pszDirectory != NULL) ? strdup(pszDirectory) : NULL;
 
 	if (pszEnvironments != NULL)
 	{
-		for (i = 0; ((i + 1) < MAX_ENVS) &&  (pszEnvironments[i] != NULL); i++)
+		for (i = 0; ((i + 1) < MAX_ENVS) && (pszEnvironments[i] != NULL); i++)
 			Data.m_pszEnv[i] = strdup(pszEnvironments[i]);
 	 	Data.m_pszEnv[i+1] = NULL;
 	}
@@ -892,8 +891,8 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 
 	if (Security != NULL)
 	{
-	    Data.m_uid  = ((oslSecurityImpl*)Security)->m_pPasswd.pw_uid;
-	    Data.m_gid  = ((oslSecurityImpl*)Security)->m_pPasswd.pw_gid;
+		Data.m_uid  = ((oslSecurityImpl*)Security)->m_pPasswd.pw_uid;
+		Data.m_gid  = ((oslSecurityImpl*)Security)->m_pPasswd.pw_gid;
 		Data.m_name = ((oslSecurityImpl*)Security)->m_pPasswd.pw_name;
 	}
 	else
@@ -912,18 +911,18 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 	hThread = osl_createThread(ChildStatusProc, &Data);
 
 	osl_waitCondition(Data.m_started, NULL);
-    osl_destroyCondition(Data.m_started);
+	osl_destroyCondition(Data.m_started);
 
-    for (i = 0; Data.m_pszArgs[i] != NULL; i++)
+	for (i = 0; Data.m_pszArgs[i] != NULL; i++)
 		  free((void *)Data.m_pszArgs[i]);
 
-    for (i = 0; Data.m_pszEnv[i] != NULL; i++)
+	for (i = 0; Data.m_pszEnv[i] != NULL; i++)
 		  free((void *)Data.m_pszEnv[i]);
 
-    if ( Data.m_pszDir != NULL )
-    {
+	if ( Data.m_pszDir != NULL )
+	{
 		free((void *)Data.m_pszDir);
-    }
+	}
 
 	osl_destroyThread(hThread);
 
@@ -935,7 +934,7 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 			osl_joinProcess(*pProcess);
 
 		return osl_Process_E_None;
-    }
+	}
 
 	osl_destroyCondition(Data.m_pProcImpl->m_terminated);
 	free(Data.m_pProcImpl);
@@ -946,7 +945,7 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 
 /******************************************************************************
  *
- *                  Functions for processes
+ * Functions for processes
  *
  *****************************************************************************/
 
@@ -954,11 +953,11 @@ oslProcessError SAL_CALL osl_psz_executeProcess(sal_Char *pszImageName,
 /**********************************************
  osl_terminateProcess
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_terminateProcess(oslProcess Process)
 {
-    if (Process == NULL)
-	    return osl_Process_E_Unknown;
+	if (Process == NULL)
+		return osl_Process_E_Unknown;
 
 	if (kill(((oslProcessImpl*)Process)->m_pid, SIGKILL) != 0)
 	{
@@ -968,10 +967,10 @@ oslProcessError SAL_CALL osl_terminateProcess(oslProcess Process)
 				return osl_Process_E_NoPermission;
 
 			case ESRCH:
-			    return osl_Process_E_NotFound;
+				return osl_Process_E_NotFound;
 
 			default:
-			    return osl_Process_E_Unknown;
+				return osl_Process_E_Unknown;
 		}
 	}
 
@@ -981,7 +980,7 @@ oslProcessError SAL_CALL osl_terminateProcess(oslProcess Process)
 /**********************************************
  osl_getProcess
  *********************************************/
- 
+
 oslProcess SAL_CALL osl_getProcess(oslProcessIdentifier Ident)
 {
 	oslProcessImpl *pProcImpl;
@@ -1035,10 +1034,10 @@ oslProcess SAL_CALL osl_getProcess(oslProcessIdentifier Ident)
 /**********************************************
  osl_freeProcessHandle
  *********************************************/
- 
+
 void SAL_CALL osl_freeProcessHandle(oslProcess Process)
 {
-    if (Process != NULL)
+	if (Process != NULL)
 	{
 		oslProcessImpl *pChild, *pPrev = NULL;
 
@@ -1081,7 +1080,7 @@ void SAL_CALL osl_freeProcessHandle(oslProcess Process)
 #if defined(LINUX)
 struct osl_procStat
 {
-   /* from 'stat' */
+	/* from 'stat' */
 	pid_t pid;                /* pid */
 	char command[16];         /* 'argv[0]' */ /* mfe: it all right char comm[16] in kernel! */
 	char state;               /* state (running, stopped, ...) */
@@ -1107,7 +1106,7 @@ struct osl_procStat
 	unsigned long vsize;      /* virtual memory size (in bytes) */
 	long rss;                 /* resident set size (in pages) */
 	unsigned long rss_rlim;   /* rss limit (in bytes) */
-	unsigned long startcode;   /* address above program text can run */
+	unsigned long startcode;  /* address above program text can run */
 	unsigned long endcode;    /* address below program text can run */
 	unsigned long startstack; /* address of start of stack */
 	unsigned long kstkesp;    /* current value of 'esp' (stack pointer) */
@@ -1149,7 +1148,7 @@ struct osl_procStat
 /**********************************************
  osl_getProcStat
  *********************************************/
- 
+
 sal_Bool osl_getProcStat(pid_t pid, struct osl_procStat* procstat)
 {
 	int fd = 0;
@@ -1168,7 +1167,7 @@ sal_Bool osl_getProcStat(pid_t pid, struct osl_procStat* procstat)
 		/*printf("%s\n\n",prstatbuf);*/
 
 		if (!bRet)
-		    return sal_False;
+			return sal_False;
 
 		tmp = strrchr(prstatbuf, ')');
 		*tmp = '\0';
@@ -1196,20 +1195,20 @@ sal_Bool osl_getProcStat(pid_t pid, struct osl_procStat* procstat)
 			   &procstat->wchan,     &procstat->nswap,   &procstat->cnswap
 			);
 	}
-    return bRet;
+	return bRet;
 }
 
 /**********************************************
  osl_getProcStatus
  *********************************************/
- 
+
 sal_Bool osl_getProcStatus(pid_t pid, struct osl_procStat* procstat)
 {
 	int fd = 0;
 	char name[PATH_MAX + 1];
 	snprintf(name, sizeof(name), "/proc/%u/status", pid);
 
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
 	if ((fd = open(name,O_RDONLY)) >=0 )
 	{
@@ -1223,7 +1222,7 @@ sal_Bool osl_getProcStatus(pid_t pid, struct osl_procStat* procstat)
 		/*		printf("\n\n%s\n\n",prstatusbuf);*/
 
 		if (!bRet)
-		    return sal_False;
+			return sal_False;
 
 		tmp = strstr(prstatusbuf,"Uid:");
 		if(tmp)
@@ -1274,12 +1273,12 @@ sal_Bool osl_getProcStatus(pid_t pid, struct osl_procStat* procstat)
 /**********************************************
  osl_getProcessInfo
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_getProcessInfo(oslProcess Process, oslProcessData Fields, oslProcessInfo* pInfo)
 {
 	pid_t   pid;
 
-    if (Process == NULL)
+	if (Process == NULL)
 		pid = getpid();
 	else
 		pid = ((oslProcessImpl*)Process)->m_pid;
@@ -1376,53 +1375,53 @@ oslProcessError SAL_CALL osl_getProcessInfo(oslProcess Process, oslProcessData F
 
 		if ( (Fields & osl_Process_CPUTIMES) || (Fields & osl_Process_HEAPUSAGE) )
 		{
-    		struct osl_procStat procstat;
-    		memset(&procstat,0,sizeof(procstat));
+			struct osl_procStat procstat;
+			memset(&procstat,0,sizeof(procstat));
 
-    		if ( (Fields & osl_Process_CPUTIMES) && osl_getProcStat(pid, &procstat) )
-    		{
-    			/*
-    			 *  mfe:
-    			 *  We calculate only time of the process proper.
-    			 *  Threads are processes, we do not consider their time here!
-    			 *  (For this, cutime and cstime should be used, it seems not
-    			 *   to work in 2.0.36)
-    			 */
+			if ( (Fields & osl_Process_CPUTIMES) && osl_getProcStat(pid, &procstat) )
+			{
+				/*
+				 *  mfe:
+				 *  We calculate only time of the process proper.
+				 *  Threads are processes, we do not consider their time here!
+				 *  (For this, cutime and cstime should be used, it seems not
+				 *   to work in 2.0.36)
+				 */
 
-                long clktck;
-                unsigned long hz;
-                unsigned long userseconds;
-                unsigned long systemseconds;
+				long clktck;
+				unsigned long hz;
+				unsigned long userseconds;
+				unsigned long systemseconds;
 
-                clktck = sysconf(_SC_CLK_TCK);
-                if (clktck < 0) {
-                    return osl_Process_E_Unknown;
-                }
-                hz = (unsigned long) clktck;
+				clktck = sysconf(_SC_CLK_TCK);
+				if (clktck < 0) {
+					return osl_Process_E_Unknown;
+				}
+				hz = (unsigned long) clktck;
 
-                userseconds = procstat.utime/hz;
-                systemseconds = procstat.stime/hz;
+				userseconds = procstat.utime/hz;
+				systemseconds = procstat.stime/hz;
 
-     			pInfo->UserTime.Seconds   = userseconds;
-    			pInfo->UserTime.Nanosec   = procstat.utime - (userseconds * hz);
-    			pInfo->SystemTime.Seconds = systemseconds;
-    			pInfo->SystemTime.Nanosec = procstat.stime - (systemseconds * hz);
-    
-    			pInfo->Fields |= osl_Process_CPUTIMES;
-    		}
+				pInfo->UserTime.Seconds   = userseconds;
+				pInfo->UserTime.Nanosec   = procstat.utime - (userseconds * hz);
+				pInfo->SystemTime.Seconds = systemseconds;
+				pInfo->SystemTime.Nanosec = procstat.stime - (systemseconds * hz);
 
-    		if ( (Fields & osl_Process_HEAPUSAGE) && osl_getProcStatus(pid, &procstat) )
-    		{
-    			/*
-    			 *  mfe:
-    			 *  vm_data (found in status) shows the size of the data segment
-    			 *  it a rough approximation of the core heap size
-    			 */
-    			pInfo->HeapUsage = procstat.vm_data*1024;
+				pInfo->Fields |= osl_Process_CPUTIMES;
+			}
 
-    			pInfo->Fields |= osl_Process_HEAPUSAGE;
-    		}
-    	}
+			if ( (Fields & osl_Process_HEAPUSAGE) && osl_getProcStatus(pid, &procstat) )
+			{
+				/*
+				 *  mfe:
+				 *  vm_data (found in status) shows the size of the data segment
+				 *  it a rough approximation of the core heap size
+				 */
+				pInfo->HeapUsage = procstat.vm_data*1024;
+
+				pInfo->Fields |= osl_Process_HEAPUSAGE;
+			}
+		}
 
 		return (pInfo->Fields == Fields) ? osl_Process_E_None : osl_Process_E_Unknown;
 #endif
@@ -1440,39 +1439,39 @@ oslProcessError SAL_CALL osl_getProcessInfo(oslProcess Process, oslProcessData F
 static int is_timeout(const struct timeval* tend)
 {
 	struct timeval tcurrent;
-	gettimeofday(&tcurrent, NULL);				
+	gettimeofday(&tcurrent, NULL);
 	return (tcurrent.tv_sec >= tend->tv_sec);
 }
 
 /**********************************************
- kill(pid, 0) is useful for checking if a 
- process is still alive, but remember that 
+ kill(pid, 0) is useful for checking if a
+ process is still alive, but remember that
  kill even returns 0 if the process is already
  a zombie.
  *********************************************/
- 
+
 static int is_process_dead(pid_t pid)
-{		
+{
 	return ((-1 == kill(pid, 0)) && (ESRCH == errno));
 }
 
 /**********************************************
  osl_joinProcessWithTimeout
  *********************************************/
- 
+
 oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const TimeValue* pTimeout)
 {
 	oslProcessImpl* pChild    = ChildList;
 	oslProcessError osl_error = osl_Process_E_None;
-		
-    OSL_PRECOND(Process, "osl_joinProcess: Invalid parameter");
-    OSL_ASSERT(ChildListMutex);
-    
-    if (NULL == Process || 0 == ChildListMutex)
-        return osl_Process_E_Unknown;
-            	 	
+
+	OSL_PRECOND(Process, "osl_joinProcess: Invalid parameter");
+	OSL_ASSERT(ChildListMutex);
+
+	if (NULL == Process || 0 == ChildListMutex)
+		return osl_Process_E_Unknown;
+
 	osl_acquireMutex(ChildListMutex);
-	
+
 	/* check if process is a child of ours */
 	while (pChild != NULL)
 	{
@@ -1483,33 +1482,33 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
 	}
 
 	osl_releaseMutex(ChildListMutex);
-        
+
 	if (pChild != NULL)
 	{
 		oslConditionResult cond_res = osl_waitCondition(pChild->m_terminated, pTimeout);
-		
+
 		if (osl_cond_result_timeout == cond_res)
 		    osl_error = osl_Process_E_TimedOut;
 		else if (osl_cond_result_ok != cond_res)
-		    osl_error = osl_Process_E_Unknown;		    
+		    osl_error = osl_Process_E_Unknown;
 	}
 	else /* alien process; StatusThread will not be able
-	   		to set the condition terminated */
+			to set the condition terminated */
 	{
 		pid_t pid = ((oslProcessImpl*)Process)->m_pid;
-		
+
 		if (pTimeout)
 		{
 			int timeout = 0;
-			struct timeval tend;		
-				
-			gettimeofday(&tend, NULL);									
-			
-			tend.tv_sec += pTimeout->Seconds;			
-												
+			struct timeval tend;
+
+			gettimeofday(&tend, NULL);
+
+			tend.tv_sec += pTimeout->Seconds;
+
 			while (!is_process_dead(pid) && ((timeout = is_timeout(&tend)) == 0))
 				sleep(1);
-				
+
 			if (timeout)
 				osl_error = osl_Process_E_TimedOut;
 		}
@@ -1517,9 +1516,9 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
 		{
 			while (!is_process_dead(pid))
 				sleep(1);
-		}				
+		}
 	}
-	return osl_error;	
+	return osl_error;
 }
 
 /**********************************************
@@ -1528,5 +1527,5 @@ oslProcessError SAL_CALL osl_joinProcessWithTimeout(oslProcess Process, const Ti
 
 oslProcessError SAL_CALL osl_joinProcess(oslProcess Process)
 {
-    return osl_joinProcessWithTimeout(Process, NULL);        
+	return osl_joinProcessWithTimeout(Process, NULL);
 }

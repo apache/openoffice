@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -70,8 +70,8 @@ typedef struct osl_thread_impl_st
 {
 	pthread_t			m_hThread;
 	sal_uInt16			m_Ident; /* @@@ see TODO @@@ */
-	short               m_Flags;
-    oslWorkerFunction	m_WorkerFunction;
+	short				m_Flags;
+	oslWorkerFunction	m_WorkerFunction;
 	void*				m_pData;
 	pthread_mutex_t		m_Lock;
 	pthread_cond_t		m_Cond;
@@ -195,30 +195,30 @@ static void osl_thread_destruct_Impl (Thread_Impl ** ppImpl)
 /*****************************************************************************/
 static void osl_thread_cleanup_Impl (void* pData)
 {
-    pthread_t thread;
-    int attached;
-    int destroyed;
+	pthread_t thread;
+	int attached;
+	int destroyed;
 	Thread_Impl* pImpl= (Thread_Impl*)pData;
 
 	pthread_mutex_lock (&(pImpl->m_Lock));
 
-    thread = pImpl->m_hThread;
-    attached = (pImpl->m_Flags & THREADIMPL_FLAGS_ATTACHED) != 0;
-    destroyed = (pImpl->m_Flags & THREADIMPL_FLAGS_DESTROYED) != 0;
-    pImpl->m_Flags &= ~(THREADIMPL_FLAGS_ACTIVE | THREADIMPL_FLAGS_ATTACHED);
+	thread = pImpl->m_hThread;
+	attached = (pImpl->m_Flags & THREADIMPL_FLAGS_ATTACHED) != 0;
+	destroyed = (pImpl->m_Flags & THREADIMPL_FLAGS_DESTROYED) != 0;
+	pImpl->m_Flags &= ~(THREADIMPL_FLAGS_ACTIVE | THREADIMPL_FLAGS_ATTACHED);
 
 	pthread_mutex_unlock (&(pImpl->m_Lock));
 
-    /* release oslThreadIdentifier @@@ see TODO @@@ */
-    removeThreadId (thread);
+	/* release oslThreadIdentifier @@@ see TODO @@@ */
+	removeThreadId (thread);
 
-    if (attached)
-    {
-        pthread_detach (thread);
-    }
+	if (attached)
+	{
+		pthread_detach (thread);
+	}
 
-    if (destroyed)
-    {
+	if (destroyed)
+	{
 		osl_thread_destruct_Impl (&pImpl);
 	}
 }
@@ -233,10 +233,10 @@ static void* osl_thread_start_Impl (void* pData)
 
 	OSL_ASSERT(pImpl);
 
-    pthread_mutex_lock (&(pImpl->m_Lock));
+	pthread_mutex_lock (&(pImpl->m_Lock));
 
 	/* install cleanup handler */
-    pthread_cleanup_push (osl_thread_cleanup_Impl, pData);
+	pthread_cleanup_push (osl_thread_cleanup_Impl, pData);
 
 	/* request oslThreadIdentifier @@@ see TODO @@@ */
 	pImpl->m_Ident = insertThreadId (pImpl->m_hThread);
@@ -244,21 +244,21 @@ static void* osl_thread_start_Impl (void* pData)
 	/* signal change from STARTUP to ACTIVE state */
 	pImpl->m_Flags &= ~THREADIMPL_FLAGS_STARTUP;
 	pImpl->m_Flags |=  THREADIMPL_FLAGS_ACTIVE;
-    pthread_cond_signal (&(pImpl->m_Cond));
+	pthread_cond_signal (&(pImpl->m_Cond));
 
 	/* Check if thread is started in SUSPENDED state */
-    while (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
-    {
-        /* wait until SUSPENDED flag is cleared */
+	while (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
+	{
+		/* wait until SUSPENDED flag is cleared */
 		pthread_cleanup_push (osl_thread_wait_cleanup_Impl, &(pImpl->m_Lock));
 		pthread_cond_wait (&(pImpl->m_Cond), &(pImpl->m_Lock));
 		pthread_cleanup_pop (0);
-    }
+	}
 
 	/* check for SUSPENDED to TERMINATE state change */
 	terminate = ((pImpl->m_Flags & THREADIMPL_FLAGS_TERMINATE) > 0);
 
-    pthread_mutex_unlock (&(pImpl->m_Lock));
+	pthread_mutex_unlock (&(pImpl->m_Lock));
 
 	if (!terminate)
 	{
@@ -280,17 +280,17 @@ static oslThread osl_thread_create_Impl (
 	short             nFlags)
 {
 	Thread_Impl* pImpl;
-    int nRet=0;
+	int nRet=0;
 
 	pImpl = osl_thread_construct_Impl();
-    if (!pImpl)
-        return (0); /* ENOMEM */
+	if (!pImpl)
+		return (0); /* ENOMEM */
 
 	pImpl->m_WorkerFunction = pWorker;
 	pImpl->m_pData = pThreadData;
 	pImpl->m_Flags = nFlags | THREADIMPL_FLAGS_STARTUP;
 
-    pthread_mutex_lock (&(pImpl->m_Lock));
+	pthread_mutex_lock (&(pImpl->m_Lock));
 
 	if ((nRet = pthread_create (
 		&(pImpl->m_hThread),
@@ -298,8 +298,7 @@ static oslThread osl_thread_create_Impl (
 		osl_thread_start_Impl,
 		(void*)(pImpl))) != 0)
 	{
-	    OSL_TRACE("osl_thread_create_Impl(): errno: %d, %s\n",
-			      nRet, strerror(nRet));
+		OSL_TRACE("osl_thread_create_Impl(): errno: %d, %s\n", nRet, strerror(nRet));
 
 		pthread_mutex_unlock (&(pImpl->m_Lock));
 		osl_thread_destruct_Impl (&pImpl);
@@ -312,11 +311,11 @@ static oslThread osl_thread_create_Impl (
 	{
 		/* wait until STARTUP flag is cleared */
 		pthread_cleanup_push (osl_thread_wait_cleanup_Impl, &(pImpl->m_Lock));
-        pthread_cond_wait (&(pImpl->m_Cond), &(pImpl->m_Lock));
+		pthread_cond_wait (&(pImpl->m_Cond), &(pImpl->m_Lock));
 		pthread_cleanup_pop (0);
-    }
+	}
 
-    pthread_mutex_unlock (&(pImpl->m_Lock));
+	pthread_mutex_unlock (&(pImpl->m_Lock));
 
 	return ((oslThread)(pImpl));
 }
@@ -328,7 +327,7 @@ oslThread osl_createThread (
 	oslWorkerFunction pWorker,
 	void *            pThreadData)
 {
-    return osl_thread_create_Impl (
+	return osl_thread_create_Impl (
 		pWorker,
 		pThreadData,
 		THREADIMPL_FLAGS_ATTACHED);
@@ -341,7 +340,7 @@ oslThread osl_createSuspendedThread (
 	oslWorkerFunction pWorker,
 	void *            pThreadData)
 {
-    return osl_thread_create_Impl (
+	return osl_thread_create_Impl (
 		pWorker,
 		pThreadData,
 		THREADIMPL_FLAGS_ATTACHED |
@@ -353,17 +352,17 @@ oslThread osl_createSuspendedThread (
 /*****************************************************************************/
 void SAL_CALL osl_destroyThread(oslThread Thread)
 {
-    if (Thread != NULL) {
-        Thread_Impl * impl = (Thread_Impl *) Thread;
-        int active;
-        pthread_mutex_lock(&impl->m_Lock);
-        active = (impl->m_Flags & THREADIMPL_FLAGS_ACTIVE) != 0;
-        impl->m_Flags |= THREADIMPL_FLAGS_DESTROYED;
-        pthread_mutex_unlock(&impl->m_Lock);
-        if (!active) {
-            osl_thread_destruct_Impl(&impl);
-        }
-    }
+	if (Thread != NULL) {
+		Thread_Impl * impl = (Thread_Impl *) Thread;
+		int active;
+		pthread_mutex_lock(&impl->m_Lock);
+		active = (impl->m_Flags & THREADIMPL_FLAGS_ACTIVE) != 0;
+		impl->m_Flags |= THREADIMPL_FLAGS_DESTROYED;
+		pthread_mutex_unlock(&impl->m_Lock);
+		if (!active) {
+			osl_thread_destruct_Impl(&impl);
+		}
+	}
 }
 
 /*****************************************************************************/
@@ -380,11 +379,11 @@ void SAL_CALL osl_resumeThread(oslThread Thread)
 	pthread_mutex_lock (&(pImpl->m_Lock));
 
 	if (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
-    {
+	{
 		/* clear SUSPENDED flag */
 		pImpl->m_Flags &= ~THREADIMPL_FLAGS_SUSPENDED;
 		pthread_cond_signal (&(pImpl->m_Cond));
-    }
+	}
 
 	pthread_mutex_unlock (&(pImpl->m_Lock));
 }
@@ -394,7 +393,7 @@ void SAL_CALL osl_resumeThread(oslThread Thread)
 /*****************************************************************************/
 void SAL_CALL osl_suspendThread(oslThread Thread)
 {
-    Thread_Impl* pImpl= (Thread_Impl*)Thread;
+	Thread_Impl* pImpl= (Thread_Impl*)Thread;
 
 	OSL_ASSERT(pImpl);
 	if (!pImpl)
@@ -405,16 +404,16 @@ void SAL_CALL osl_suspendThread(oslThread Thread)
 	pImpl->m_Flags |= THREADIMPL_FLAGS_SUSPENDED;
 
 	if (pthread_equal (pthread_self(), pImpl->m_hThread))
-    {
+	{
 		/* self suspend */
-        while (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
-        {
-            /* wait until SUSPENDED flag is cleared */
+		while (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
+		{
+			/* wait until SUSPENDED flag is cleared */
 			pthread_cleanup_push (osl_thread_wait_cleanup_Impl, &(pImpl->m_Lock));
 			pthread_cond_wait (&(pImpl->m_Cond), &(pImpl->m_Lock));
 			pthread_cleanup_pop (0);
-        }
-    }
+		}
+	}
 
 	pthread_mutex_unlock (&(pImpl->m_Lock));
 }
@@ -442,7 +441,7 @@ sal_Bool SAL_CALL osl_isThreadRunning(const oslThread Thread)
 /*****************************************************************************/
 void SAL_CALL osl_joinWithThread(oslThread Thread)
 {
-    pthread_t thread;
+	pthread_t thread;
 	int attached;
 	Thread_Impl* pImpl= (Thread_Impl*)Thread;
 
@@ -458,7 +457,7 @@ void SAL_CALL osl_joinWithThread(oslThread Thread)
 		return; /* EDEADLK */
 	}
 
-    thread = pImpl->m_hThread;
+	thread = pImpl->m_hThread;
 	attached = ((pImpl->m_Flags & THREADIMPL_FLAGS_ATTACHED) > 0);
 	pImpl->m_Flags &= ~THREADIMPL_FLAGS_ATTACHED;
 
@@ -492,11 +491,11 @@ void SAL_CALL osl_terminateThread(oslThread Thread)
 	pthread_mutex_lock (&(pImpl->m_Lock));
 
 	if (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
-    {
+	{
 		/* clear SUSPENDED flag */
 		pImpl->m_Flags &= ~THREADIMPL_FLAGS_SUSPENDED;
 		pthread_cond_signal (&(pImpl->m_Cond));
-    }
+	}
 
 	pImpl->m_Flags |= THREADIMPL_FLAGS_TERMINATE;
 
@@ -523,12 +522,12 @@ sal_Bool SAL_CALL osl_scheduleThread(oslThread Thread)
 	pthread_mutex_lock (&(pImpl->m_Lock));
 
 	while (pImpl->m_Flags & THREADIMPL_FLAGS_SUSPENDED)
-    {
+	{
 		/* wait until SUSPENDED flag is cleared */
 		pthread_cleanup_push (osl_thread_wait_cleanup_Impl, &(pImpl->m_Lock));
 		pthread_cond_wait (&(pImpl->m_Cond), &(pImpl->m_Lock));
 		pthread_cleanup_pop (0);
-    }
+	}
 
 	terminate = ((pImpl->m_Flags & THREADIMPL_FLAGS_TERMINATE) > 0);
 
@@ -558,23 +557,23 @@ void SAL_CALL osl_waitThread(const TimeValue* pDelay)
 /*
 	Note that POSIX scheduling _really_ requires threads to call this
 	functions, since a thread only reschedules to other thread, when
-    it blocks (sleep, blocking I/O) OR calls sched_yield().
+	it blocks (sleep, blocking I/O) OR calls sched_yield().
 */
 /*****************************************************************************/
 void SAL_CALL osl_yieldThread()
 {
-    sched_yield();
+	sched_yield();
 }
 
 void SAL_CALL osl_setThreadName(char const * name) {
 #if defined LINUX
-    if (prctl(PR_SET_NAME, (unsigned long) name, 0, 0, 0) != 0) {
-        OSL_TRACE(
-            "%s prctl(PR_SET_NAME) failed with errno %d", OSL_LOG_PREFIX,
-            errno);
-    }
+	if (prctl(PR_SET_NAME, (unsigned long) name, 0, 0, 0) != 0) {
+		OSL_TRACE(
+			"%s prctl(PR_SET_NAME) failed with errno %d", OSL_LOG_PREFIX,
+			errno);
+	}
 #else
-    (void) name;
+	(void) name;
 #endif
 }
 
@@ -645,10 +644,10 @@ static sal_uInt16 insertThreadId (pthread_t hThread)
 
 		++ LastIdent;
 
-        if ( LastIdent == 0 )
-            LastIdent = 1;
+		if ( LastIdent == 0 )
+			LastIdent = 1;
 
-        pEntry->Ident  = LastIdent;
+		pEntry->Ident = LastIdent;
 
 		if (pInsert)
 			pInsert->Next = pEntry;
@@ -712,82 +711,82 @@ oslThreadIdentifier SAL_CALL osl_getThreadIdentifier(oslThread Thread)
 }
 
 /*****************************************************************************
-    @@@ see TODO @@@
+	@@@ see TODO @@@
 	osl_thread_priority_init_Impl
 
 	set the base-priority of the main-thread to
 	oslThreadPriorityNormal (64) since 0 (lowest) is
 	the system default. This behaviour collides with
 	our enum-priority definition (highest..normal..lowest).
-	A  normaluser will expect the main-thread of an app.
+	A normal user will expect the main-thread of an app.
 	to have the "normal" priority.
 
 *****************************************************************************/
 static void osl_thread_priority_init_Impl (void)
 {
 #ifndef NO_PTHREAD_PRIORITY
-    struct sched_param param;
-    int policy=0;
-    int nRet=0;
+	struct sched_param param;
+	int policy=0;
+	int nRet=0;
 
 /* @@@ see TODO: calling thread may not be main thread @@@ */
 
-    if ((nRet = pthread_getschedparam(pthread_self(), &policy, &param)) != 0)
-    {
-        OSL_TRACE("failed to get priority of thread [%s]\n",strerror(nRet));
-        return;
-    }
+	if ((nRet = pthread_getschedparam(pthread_self(), &policy, &param)) != 0)
+	{
+		OSL_TRACE("failed to get priority of thread [%s]\n",strerror(nRet));
+		return;
+	}
 
 #if defined (SOLARIS)
-    if ( policy >= _SCHED_NEXT)
-    {
-        /* mfe: pthread_getschedparam on Solaris has a possible Bug */
-        /*      one gets 959917873 as the policy                    */
-        /*      so set the policy to a default one                  */
-        policy=SCHED_OTHER;
-    }
+	if ( policy >= _SCHED_NEXT)
+	{
+		/* mfe: pthread_getschedparam on Solaris has a possible Bug */
+		/*      one gets 959917873 as the policy                    */
+		/*      so set the policy to a default one                  */
+		policy=SCHED_OTHER;
+	}
 #endif /* SOLARIS */
 
-    if ((nRet = sched_get_priority_min(policy) ) != -1)
-    {
-        OSL_TRACE("Min Prioriy for policy '%i' == '%i'\n",policy,nRet);
-        g_thread.m_priority.m_Lowest=nRet;
-    }
+	if ((nRet = sched_get_priority_min(policy) ) != -1)
+	{
+		OSL_TRACE("Min Prioriy for policy '%i' == '%i'\n",policy,nRet);
+		g_thread.m_priority.m_Lowest=nRet;
+	}
 #if OSL_DEBUG_LEVEL > 1
-    else
-    {
-        fprintf(stderr,"failed to get min sched param [%s]\n",strerror(errno));
-    }
+	else
+	{
+		fprintf(stderr,"failed to get min sched param [%s]\n",strerror(errno));
+	}
 #endif /* OSL_DEBUG_LEVEL */
 
-    if ((nRet = sched_get_priority_max(policy) ) != -1)
-    {
-        OSL_TRACE("Max Prioriy for policy '%i' == '%i'\n",policy,nRet);
-        g_thread.m_priority.m_Highest=nRet;
-    }
+	if ((nRet = sched_get_priority_max(policy) ) != -1)
+	{
+		OSL_TRACE("Max Prioriy for policy '%i' == '%i'\n",policy,nRet);
+		g_thread.m_priority.m_Highest=nRet;
+	}
 #if OSL_DEBUG_LEVEL > 1
-    else
-    {
-        fprintf(stderr,"failed to get max sched param [%s]\n",strerror(errno));
-    }
+	else
+	{
+		fprintf(stderr,"failed to get max sched param [%s]\n",strerror(errno));
+	}
 #endif /* OSL_DEBUG_LEVEL */
 
-    g_thread.m_priority.m_Normal =
+	g_thread.m_priority.m_Normal =
 		(g_thread.m_priority.m_Lowest + g_thread.m_priority.m_Highest) / 2;
-    g_thread.m_priority.m_Below_Normal =
-		(g_thread.m_priority.m_Lowest + g_thread.m_priority.m_Normal)  / 2;
-    g_thread.m_priority.m_Above_Normal =
+	g_thread.m_priority.m_Below_Normal =
+		(g_thread.m_priority.m_Lowest + g_thread.m_priority.m_Normal) / 2;
+	g_thread.m_priority.m_Above_Normal =
 		(g_thread.m_priority.m_Normal + g_thread.m_priority.m_Highest) / 2;
 
 /* @@@ set prio of calling (not main) thread (?) @@@ */
 
-    param.sched_priority= g_thread.m_priority.m_Normal;
+	param.sched_priority= g_thread.m_priority.m_Normal;
 
-    if ((nRet = pthread_setschedparam(pthread_self(), policy, &param)) != 0)
-    {
-        OSL_TRACE("failed to change base priority of thread [%s]\n",strerror(nRet));
-        OSL_TRACE("Thread ID '%i', Policy '%i', Priority '%i'\n",pthread_self(),policy,param.sched_priority);
-    }
+	if ((nRet = pthread_setschedparam(pthread_self(), policy, &param)) != 0)
+	{
+		OSL_TRACE("failed to change base priority of thread [%s]\n",strerror(nRet));
+		OSL_TRACE("Thread ID '%i', Policy '%i', Priority '%i'\n",pthread_self(),policy,param.sched_priority);
+	}
 
 #endif /* NO_PTHREAD_PRIORITY */
 }
@@ -808,7 +807,7 @@ void SAL_CALL osl_setThreadPriority (
 
 	struct sched_param Param;
 	int policy;
-    int nRet;
+	int nRet;
 
 #endif /* NO_PTHREAD_PRIORITY */
 
@@ -819,64 +818,64 @@ void SAL_CALL osl_setThreadPriority (
 		return; /* EINVAL */
 
 #ifdef NO_PTHREAD_PRIORITY
-    (void) Priority; /* unused */
+	(void) Priority; /* unused */
 #else /* NO_PTHREAD_PRIORITY */
 
-    if (pthread_getschedparam(pImpl->m_hThread, &policy, &Param) != 0)
+	if (pthread_getschedparam(pImpl->m_hThread, &policy, &Param) != 0)
 		return; /* ESRCH */
 
 #if defined (SOLARIS)
-    if ( policy >= _SCHED_NEXT)
-    {
-        /* mfe: pthread_getschedparam on Solaris has a possible Bug */
-        /*      one gets 959917873 as the policy                   */
-        /*      so set the policy to a default one                 */
-        policy=SCHED_OTHER;
-    }
+	if ( policy >= _SCHED_NEXT)
+	{
+		/* mfe: pthread_getschedparam on Solaris has a possible Bug */
+		/*      one gets 959917873 as the policy                   */
+		/*      so set the policy to a default one                 */
+		policy=SCHED_OTHER;
+	}
 #endif /* SOLARIS */
 
 	pthread_once (&(g_thread.m_once), osl_thread_init_Impl);
 
-    switch(Priority)
-    {
-        case osl_Thread_PriorityHighest:
-            Param.sched_priority= g_thread.m_priority.m_Highest;
-            break;
+	switch(Priority)
+	{
+		case osl_Thread_PriorityHighest:
+			Param.sched_priority= g_thread.m_priority.m_Highest;
+			break;
 
-        case osl_Thread_PriorityAboveNormal:
-            Param.sched_priority= g_thread.m_priority.m_Above_Normal;
-            break;
+		case osl_Thread_PriorityAboveNormal:
+			Param.sched_priority= g_thread.m_priority.m_Above_Normal;
+			break;
 
-        case osl_Thread_PriorityNormal:
-            Param.sched_priority= g_thread.m_priority.m_Normal;
-            break;
+		case osl_Thread_PriorityNormal:
+			Param.sched_priority= g_thread.m_priority.m_Normal;
+			break;
 
-        case osl_Thread_PriorityBelowNormal:
-            Param.sched_priority= g_thread.m_priority.m_Below_Normal;
-            break;
+		case osl_Thread_PriorityBelowNormal:
+			Param.sched_priority= g_thread.m_priority.m_Below_Normal;
+			break;
 
-        case osl_Thread_PriorityLowest:
-            Param.sched_priority= g_thread.m_priority.m_Lowest;
-            break;
+		case osl_Thread_PriorityLowest:
+			Param.sched_priority= g_thread.m_priority.m_Lowest;
+			break;
 
-        case osl_Thread_PriorityUnknown:
-            OSL_ASSERT(sal_False);		/* only fools try this...*/
+		case osl_Thread_PriorityUnknown:
+			OSL_ASSERT(sal_False);		/* only fools try this...*/
 
-            /* let release-version behave friendly */
-            return;
+			/* let release-version behave friendly */
+			return;
 
-        default:
-            /* enum expanded, but forgotten here...*/
-            OSL_ENSURE(sal_False,"osl_setThreadPriority : unknown priority\n");
+		default:
+			/* enum expanded, but forgotten here...*/
+			OSL_ENSURE(sal_False,"osl_setThreadPriority : unknown priority\n");
 
-            /* let release-version behave friendly */
-            return;
-    }
+			/* let release-version behave friendly */
+			return;
+	}
 
-    if ((nRet = pthread_setschedparam(pImpl->m_hThread, policy, &Param)) != 0)
-    {
-        OSL_TRACE("failed to change thread priority [%s]\n",strerror(nRet));
-    }
+	if ((nRet = pthread_setschedparam(pImpl->m_hThread, policy, &Param)) != 0)
+	{
+		OSL_TRACE("failed to change thread priority [%s]\n",strerror(nRet));
+	}
 
 #endif /* NO_PTHREAD_PRIORITY */
 }
@@ -1017,18 +1016,18 @@ static void osl_thread_textencoding_init_Impl (void)
 /*****************************************************************************/
 rtl_TextEncoding SAL_CALL osl_getThreadTextEncoding()
 {
-    rtl_TextEncoding threadEncoding;
+	rtl_TextEncoding threadEncoding;
 
 	pthread_once (&(g_thread.m_once), osl_thread_init_Impl);
 
-    /* check for thread specific encoding, use default if not set */
+	/* check for thread specific encoding, use default if not set */
 	threadEncoding = SAL_INT_CAST(
-        rtl_TextEncoding,
-        (sal_uIntPtr) pthread_getspecific(g_thread.m_textencoding.m_key));
+		rtl_TextEncoding,
+		(sal_uIntPtr) pthread_getspecific(g_thread.m_textencoding.m_key));
 	if (0 == threadEncoding)
 		threadEncoding = g_thread.m_textencoding.m_default;
 
-    return threadEncoding;
+	return threadEncoding;
 }
 
 /*****************************************************************************/
@@ -1036,12 +1035,12 @@ rtl_TextEncoding SAL_CALL osl_getThreadTextEncoding()
 /*****************************************************************************/
 rtl_TextEncoding osl_setThreadTextEncoding(rtl_TextEncoding Encoding)
 {
-    rtl_TextEncoding oldThreadEncoding = osl_getThreadTextEncoding();
+	rtl_TextEncoding oldThreadEncoding = osl_getThreadTextEncoding();
 
-    /* save encoding in thread local storage */
-    pthread_setspecific (
-        g_thread.m_textencoding.m_key,
-        (void*) SAL_INT_CAST(sal_uIntPtr, Encoding));
+	/* save encoding in thread local storage */
+	pthread_setspecific (
+		g_thread.m_textencoding.m_key,
+		(void*) SAL_INT_CAST(sal_uIntPtr, Encoding));
 
-    return oldThreadEncoding;
+	return oldThreadEncoding;
 }
