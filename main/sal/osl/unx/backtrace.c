@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "sal/types.h"
 
@@ -55,7 +57,7 @@
 
 #else
 
-#error Unknown Solaris target platform. 
+#error Unknown Solaris target platform.
 
 #endif /* defined SPARC or INTEL */
 
@@ -296,22 +298,22 @@ void backtrace_symbols_fd( void **buffer, int size, int fd )
 
 typedef unsigned	 ptrdiff_t;
 
-/* glib backtrace is only available on MacOsX 10.5 or higher 
+/* glib backtrace is only available on MacOsX 10.5 or higher
    so we do it on our own */
 
 int backtrace( void **buffer, int max_frames )
 {
-    void **frame = (void **)__builtin_frame_address(0);
-    void **bp = ( void **)(*frame);
-    void *ip = frame[1];
-    int	i;
+	void **frame = (void **)__builtin_frame_address(0);
+	void **bp = ( void **)(*frame);
+	void *ip = frame[1];
+	int	i;
 
 	for ( i = 0; bp && ip && i < max_frames; i++ )
 	{
 		*(buffer++) = ip;
 
-        ip = bp[1];
-        bp = (void**)(bp[0]);
+		ip = bp[1];
+		bp = (void**)(bp[0]);
 	}
 
 	return i;
