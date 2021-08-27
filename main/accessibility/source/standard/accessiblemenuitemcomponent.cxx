@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -93,12 +93,12 @@ sal_Bool OAccessibleMenuItemComponent::IsEnabled()
 
 sal_Bool OAccessibleMenuItemComponent::IsVisible()
 {
-    sal_Bool bVisible = sal_False;
+	sal_Bool bVisible = sal_False;
 
 	if ( m_pParent )
-        bVisible = m_pParent->IsItemPosVisible( m_nItemPos );
+		bVisible = m_pParent->IsItemPosVisible( m_nItemPos );
 
-    return bVisible;
+	return bVisible;
 }
 
 // -----------------------------------------------------------------------------
@@ -106,9 +106,9 @@ sal_Bool OAccessibleMenuItemComponent::IsVisible()
 void OAccessibleMenuItemComponent::Select()
 {
 	// open the parent menu
-	Reference< XAccessible > xParent( getAccessibleParent() );	
+	Reference< XAccessible > xParent( getAccessibleParent() );
 	if ( xParent.is() )
-	{		
+	{
 		OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xParent.get() );
 		if ( pComp && pComp->getAccessibleRole() == AccessibleRole::MENU && !pComp->IsPopupMenuOpen() )
 			pComp->Click();
@@ -116,7 +116,7 @@ void OAccessibleMenuItemComponent::Select()
 
 	// highlight the menu item
 	if ( m_pParent )
-        m_pParent->HighlightItem( m_nItemPos );
+		m_pParent->HighlightItem( m_nItemPos );
 }
 
 // -----------------------------------------------------------------------------
@@ -131,69 +131,69 @@ void OAccessibleMenuItemComponent::DeSelect()
 
 void OAccessibleMenuItemComponent::Click()
 {
-    // open the parent menu
-    Reference< XAccessible > xParent( getAccessibleParent() );	
-    if ( xParent.is() )
-    {		
-        OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xParent.get() );
-        if ( pComp && pComp->getAccessibleRole() == AccessibleRole::MENU && !pComp->IsPopupMenuOpen() )
-            pComp->Click();
-    }
+	// open the parent menu
+	Reference< XAccessible > xParent( getAccessibleParent() );
+	if ( xParent.is() )
+	{
+		OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xParent.get() );
+		if ( pComp && pComp->getAccessibleRole() == AccessibleRole::MENU && !pComp->IsPopupMenuOpen() )
+			pComp->Click();
+	}
 
-    // click the menu item
-    if ( m_pParent )
-    {		
-        Window* pWindow = m_pParent->GetWindow();
-        if ( pWindow )
-        {
-            // #102438# Menu items are not selectable
-            // Popup menus are executed asynchronously, triggered by a timer.
-            // As Menu::SelectItem only works, if the corresponding menu window is
-            // already created, we have to set the menu delay to 0, so
-            // that the popup menus are executed synchronously.
-            AllSettings aSettings = pWindow->GetSettings();
-            MouseSettings aMouseSettings = aSettings.GetMouseSettings();
-            sal_uLong nDelay = aMouseSettings.GetMenuDelay();
-            aMouseSettings.SetMenuDelay( 0 );
-            aSettings.SetMouseSettings( aMouseSettings );
-            pWindow->SetSettings( aSettings );
+	// click the menu item
+	if ( m_pParent )
+	{
+		Window* pWindow = m_pParent->GetWindow();
+		if ( pWindow )
+		{
+			// #102438# Menu items are not selectable
+			// Popup menus are executed asynchronously, triggered by a timer.
+			// As Menu::SelectItem only works, if the corresponding menu window is
+			// already created, we have to set the menu delay to 0, so
+			// that the popup menus are executed synchronously.
+			AllSettings aSettings = pWindow->GetSettings();
+			MouseSettings aMouseSettings = aSettings.GetMouseSettings();
+			sal_uLong nDelay = aMouseSettings.GetMenuDelay();
+			aMouseSettings.SetMenuDelay( 0 );
+			aSettings.SetMouseSettings( aMouseSettings );
+			pWindow->SetSettings( aSettings );
 
-            m_pParent->SelectItem( m_pParent->GetItemId( m_nItemPos ) );
+			m_pParent->SelectItem( m_pParent->GetItemId( m_nItemPos ) );
 
-            // meanwhile the window pointer may be invalid
-            pWindow = m_pParent->GetWindow();
-            if ( pWindow )
-            {
-                // set the menu delay back to the old value
-                aSettings = pWindow->GetSettings();
-                aMouseSettings = aSettings.GetMouseSettings();
-                aMouseSettings.SetMenuDelay( nDelay );
-                aSettings.SetMouseSettings( aMouseSettings );
-                pWindow->SetSettings( aSettings );
-            }
-        }
-    }
+			// meanwhile the window pointer may be invalid
+			pWindow = m_pParent->GetWindow();
+			if ( pWindow )
+			{
+				// set the menu delay back to the old value
+				aSettings = pWindow->GetSettings();
+				aMouseSettings = aSettings.GetMouseSettings();
+				aMouseSettings.SetMenuDelay( nDelay );
+				aSettings.SetMouseSettings( aMouseSettings );
+				pWindow->SetSettings( aSettings );
+			}
+		}
+	}
 }
 
 // -----------------------------------------------------------------------------
 
 void OAccessibleMenuItemComponent::SetItemPos( sal_uInt16 nItemPos )
-{ 
-	m_nItemPos = nItemPos; 
+{
+	m_nItemPos = nItemPos;
 }
 
 // -----------------------------------------------------------------------------
 
 void OAccessibleMenuItemComponent::SetAccessibleName( const ::rtl::OUString& sAccessibleName )
 {
-    if ( !m_sAccessibleName.equals( sAccessibleName ) )
-    {
-        Any aOldValue, aNewValue;
-        aOldValue <<= m_sAccessibleName;
-        aNewValue <<= sAccessibleName;
-        m_sAccessibleName = sAccessibleName;
-        NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldValue, aNewValue );
-    }
+	if ( !m_sAccessibleName.equals( sAccessibleName ) )
+	{
+		Any aOldValue, aNewValue;
+		aOldValue <<= m_sAccessibleName;
+		aNewValue <<= sAccessibleName;
+		m_sAccessibleName = sAccessibleName;
+		NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldValue, aNewValue );
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -208,7 +208,7 @@ void OAccessibleMenuItemComponent::SetAccessibleName( const ::rtl::OUString& sAc
 		if ( sName.isEmpty() )
 			sName = m_pParent->GetItemText( nItemId );
 		sName = OutputDevice::GetNonMnemonicString( sName );
-		
+
 		// IA2 CWS, MT: Is adding 5 blanks really before the accelname reasonable? And which Platform / Accessibility API does need it this way? ATK has API for this...
 		// Also, IAccessible2 has IAccessibleAction::keyBinding, so I doubt that this is needed.
 		// But if so, it needs to move to the IA2 bridge.
@@ -217,7 +217,7 @@ void OAccessibleMenuItemComponent::SetAccessibleName( const ::rtl::OUString& sAc
 		if ( sAccName.getLength() )
 		{
 			sName += ::rtl::OUString::createFromAscii("     ");
-	    	sName += aAccelName;
+			sName += aAccelName;
 		}
 		*/
 	}
@@ -229,12 +229,12 @@ void OAccessibleMenuItemComponent::SetAccessibleName( const ::rtl::OUString& sAc
 
 void OAccessibleMenuItemComponent::SetItemText( const ::rtl::OUString& sItemText )
 {
-    Any aOldValue, aNewValue;
-    if ( OCommonAccessibleText::implInitTextChangedEvent( m_sItemText, sItemText, aOldValue, aNewValue ) )
-    {
-        m_sItemText = sItemText;
-        NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
-    }
+	Any aOldValue, aNewValue;
+	if ( OCommonAccessibleText::implInitTextChangedEvent( m_sItemText, sItemText, aOldValue, aNewValue ) )
+	{
+		m_sItemText = sItemText;
+		NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -254,22 +254,22 @@ void OAccessibleMenuItemComponent::FillAccessibleStateSet( utl::AccessibleStateS
 {
 	sal_Bool bEnabled = IsEnabled();
 	if ( bEnabled )
-    {
-        rStateSet.AddState( AccessibleStateType::ENABLED );
-        rStateSet.AddState( AccessibleStateType::SENSITIVE );
-    }
+	{
+		rStateSet.AddState( AccessibleStateType::ENABLED );
+		rStateSet.AddState( AccessibleStateType::SENSITIVE );
+	}
 
-    if ( IsVisible() )
-	{		
+	if ( IsVisible() )
+	{
 		rStateSet.AddState( AccessibleStateType::SHOWING );
 		if( !IsMenuHideDisabledEntries() || bEnabled )
 			rStateSet.AddState( AccessibleStateType::VISIBLE );
 	}
-    rStateSet.AddState( AccessibleStateType::OPAQUE );
+	rStateSet.AddState( AccessibleStateType::OPAQUE );
 }
 
 // -----------------------------------------------------------------------------
-// OCommonAccessibleComponent 
+// OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
 awt::Rectangle OAccessibleMenuItemComponent::implGetBounds() throw (RuntimeException)
@@ -292,7 +292,7 @@ awt::Rectangle OAccessibleMenuItemComponent::implGetBounds() throw (RuntimeExcep
 			Reference< XAccessible > xParent = getAccessibleParent();
 			if ( xParent.is() )
 			{
-				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );				
+				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );
 				if ( xParentComponent.is() )
 				{
 					awt::Point aParentScreenLoc = xParentComponent->getLocationOnScreen();
@@ -379,7 +379,7 @@ sal_Int16 OAccessibleMenuItemComponent::getAccessibleRole(  ) throw (RuntimeExce
 
 	::rtl::OUString sDescription;
 	if ( m_pParent )
-		sDescription = m_pParent->GetHelpText( m_pParent->GetItemId( m_nItemPos ) ); 
+		sDescription = m_pParent->GetHelpText( m_pParent->GetItemId( m_nItemPos ) );
 
 	return sDescription;
 }
@@ -399,9 +399,9 @@ Reference< XAccessibleRelationSet > OAccessibleMenuItemComponent::getAccessibleR
 {
 	OExternalLockGuard aGuard( this );
 
-    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 
 // -----------------------------------------------------------------------------
@@ -443,7 +443,7 @@ sal_Int32 OAccessibleMenuItemComponent::getForeground(	) throw (RuntimeException
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getForeground();	
+			nColor = xParentComp->getForeground();
 	}
 
 	return nColor;
@@ -461,7 +461,7 @@ sal_Int32 OAccessibleMenuItemComponent::getBackground(  ) throw (RuntimeExceptio
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getBackground();	
+			nColor = xParentComp->getBackground();
 	}
 
 	return nColor;
@@ -481,7 +481,7 @@ Reference< awt::XFont > OAccessibleMenuItemComponent::getFont(  ) throw (Runtime
 	{
 		Reference< XAccessibleExtendedComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			xFont = xParentComp->getFont();	
+			xFont = xParentComp->getFont();
 	}
 
 	return xFont;
@@ -504,24 +504,24 @@ Reference< awt::XFont > OAccessibleMenuItemComponent::getFont(  ) throw (Runtime
 
 	::rtl::OUString sRet;
 	if ( m_pParent )
-		sRet = m_pParent->GetTipHelpText( m_pParent->GetItemId( m_nItemPos ) ); 
+		sRet = m_pParent->GetTipHelpText( m_pParent->GetItemId( m_nItemPos ) );
 
 	return sRet;
 }
 
 // -----------------------------------------------------------------------------
 
-sal_Bool OAccessibleMenuItemComponent::IsMenuHideDisabledEntries() 
+sal_Bool OAccessibleMenuItemComponent::IsMenuHideDisabledEntries()
 {
 	if (m_pParent )
 	{
-		if( m_pParent->GetMenuFlags() & MENU_FLAG_HIDEDISABLEDENTRIES) 
+		if( m_pParent->GetMenuFlags() & MENU_FLAG_HIDEDISABLEDENTRIES)
 		{
 			return sal_True;
 		}
 		// IA2 CWS, but the menus shouldn't have different flags, and even if so, the GetStartedFromMenu shouldn't matter
 		/*
-		else if (m_pParent->GetStartedFromMenu() && 
+		else if (m_pParent->GetStartedFromMenu() &&
 				m_pParent->GetStartedFromMenu()->GetMenuFlags() & MENU_FLAG_HIDEDISABLEDENTRIES)
 		{
 			return sal_True;
