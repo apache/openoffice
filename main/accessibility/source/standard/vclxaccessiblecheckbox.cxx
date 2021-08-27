@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,8 +56,8 @@ using namespace ::comphelper;
 VCLXAccessibleCheckBox::VCLXAccessibleCheckBox( VCLXWindow* pVCLWindow )
 	:VCLXAccessibleTextComponent( pVCLWindow )
 {
-    m_bChecked = IsChecked();
-    m_bIndeterminate = IsIndeterminate();
+	m_bChecked = IsChecked();
+	m_bIndeterminate = IsIndeterminate();
 }
 
 // -----------------------------------------------------------------------------
@@ -70,26 +70,26 @@ VCLXAccessibleCheckBox::~VCLXAccessibleCheckBox()
 
 bool VCLXAccessibleCheckBox::IsChecked()
 {
-    bool bChecked = false;
+	bool bChecked = false;
 
-    VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
-    if ( pVCLXCheckBox && pVCLXCheckBox->getState() == (sal_Int16) 1 )
-        bChecked = true;
+	VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
+	if ( pVCLXCheckBox && pVCLXCheckBox->getState() == (sal_Int16) 1 )
+		bChecked = true;
 
-    return bChecked;
+	return bChecked;
 }
 
 // -----------------------------------------------------------------------------
 
 bool VCLXAccessibleCheckBox::IsIndeterminate()
 {
-    bool bIndeterminate = false;
+	bool bIndeterminate = false;
 
-    VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
-    if ( pVCLXCheckBox && pVCLXCheckBox->getState() == (sal_Int16) 2 )
-        bIndeterminate = true;
+	VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
+	if ( pVCLXCheckBox && pVCLXCheckBox->getState() == (sal_Int16) 2 )
+		bIndeterminate = true;
 
-    return bIndeterminate;
+	return bIndeterminate;
 }
 
 // -----------------------------------------------------------------------------
@@ -128,17 +128,17 @@ void VCLXAccessibleCheckBox::SetIndeterminate( bool bIndeterminate )
 
 void VCLXAccessibleCheckBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 {
-    switch ( rVclWindowEvent.GetId() )
-    {
+	switch ( rVclWindowEvent.GetId() )
+	{
 		case VCLEVENT_CHECKBOX_TOGGLE:
-        {
-            SetChecked( IsChecked() );
-            SetIndeterminate( IsIndeterminate() );
-        }
-        break;
+		{
+			SetChecked( IsChecked() );
+			SetIndeterminate( IsIndeterminate() );
+		}
+		break;
 		default:
 			VCLXAccessibleTextComponent::ProcessWindowEvent( rVclWindowEvent );
-   }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -147,13 +147,13 @@ void VCLXAccessibleCheckBox::FillAccessibleStateSet( utl::AccessibleStateSetHelp
 {
 	VCLXAccessibleTextComponent::FillAccessibleStateSet( rStateSet );
 
-    rStateSet.AddState( AccessibleStateType::FOCUSABLE );
+	rStateSet.AddState( AccessibleStateType::FOCUSABLE );
 
-    if ( IsChecked() )
-        rStateSet.AddState( AccessibleStateType::CHECKED );
+	if ( IsChecked() )
+		rStateSet.AddState( AccessibleStateType::CHECKED );
 
-    if ( IsIndeterminate() )
-        rStateSet.AddState( AccessibleStateType::INDETERMINATE );
+	if ( IsIndeterminate() )
+		rStateSet.AddState( AccessibleStateType::INDETERMINATE );
 }
 
 // -----------------------------------------------------------------------------
@@ -194,7 +194,7 @@ sal_Int32 VCLXAccessibleCheckBox::getAccessibleActionCount( ) throw (RuntimeExce
 {
 	OExternalLockGuard aGuard( this );
 
-	return 1;	
+	return 1;
 }
 
 // -----------------------------------------------------------------------------
@@ -204,7 +204,7 @@ sal_Bool VCLXAccessibleCheckBox::doAccessibleAction ( sal_Int32 nIndex ) throw (
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	CheckBox* pCheckBox = (CheckBox*) GetWindow();
 	VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
@@ -236,7 +236,7 @@ sal_Bool VCLXAccessibleCheckBox::doAccessibleAction ( sal_Int32 nIndex ) throw (
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	if(IsChecked())
 		return ::rtl::OUString( TK_RES_STRING( RID_STR_ACC_ACTION_UNCHECK ) );
@@ -248,39 +248,39 @@ sal_Bool VCLXAccessibleCheckBox::doAccessibleAction ( sal_Int32 nIndex ) throw (
 
 Reference< XAccessibleKeyBinding > VCLXAccessibleCheckBox::getAccessibleActionKeyBinding( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 {
-    OExternalLockGuard aGuard( this );
+	OExternalLockGuard aGuard( this );
 
-    if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
-	
-    OAccessibleKeyBindingHelper* pKeyBindingHelper = new OAccessibleKeyBindingHelper();
-    Reference< XAccessibleKeyBinding > xKeyBinding = pKeyBindingHelper;
+	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
+		throw IndexOutOfBoundsException();
 
-    Window* pWindow = GetWindow();
-    if ( pWindow )
-    {
-        KeyEvent aKeyEvent = pWindow->GetActivationKey();
-        KeyCode aKeyCode = aKeyEvent.GetKeyCode();
-        if ( aKeyCode.GetCode() != 0 )
-        {
-            awt::KeyStroke aKeyStroke;
-            aKeyStroke.Modifiers = 0;
-            if ( aKeyCode.IsShift() )
-                aKeyStroke.Modifiers |= awt::KeyModifier::SHIFT;
-            if ( aKeyCode.IsMod1() )
-                aKeyStroke.Modifiers |= awt::KeyModifier::MOD1;
-            if ( aKeyCode.IsMod2() )
-                aKeyStroke.Modifiers |= awt::KeyModifier::MOD2;
-            if ( aKeyCode.IsMod3() )
-                aKeyStroke.Modifiers |= awt::KeyModifier::MOD3;
-            aKeyStroke.KeyCode = aKeyCode.GetCode();
-            aKeyStroke.KeyChar = aKeyEvent.GetCharCode();
-            aKeyStroke.KeyFunc = static_cast< sal_Int16 >( aKeyCode.GetFunction() );
-            pKeyBindingHelper->AddKeyBinding( aKeyStroke );
-        }
-    }
+	OAccessibleKeyBindingHelper* pKeyBindingHelper = new OAccessibleKeyBindingHelper();
+	Reference< XAccessibleKeyBinding > xKeyBinding = pKeyBindingHelper;
 
-    return xKeyBinding;
+	Window* pWindow = GetWindow();
+	if ( pWindow )
+	{
+		KeyEvent aKeyEvent = pWindow->GetActivationKey();
+		KeyCode aKeyCode = aKeyEvent.GetKeyCode();
+		if ( aKeyCode.GetCode() != 0 )
+		{
+			awt::KeyStroke aKeyStroke;
+			aKeyStroke.Modifiers = 0;
+			if ( aKeyCode.IsShift() )
+				aKeyStroke.Modifiers |= awt::KeyModifier::SHIFT;
+			if ( aKeyCode.IsMod1() )
+				aKeyStroke.Modifiers |= awt::KeyModifier::MOD1;
+			if ( aKeyCode.IsMod2() )
+				aKeyStroke.Modifiers |= awt::KeyModifier::MOD2;
+			if ( aKeyCode.IsMod3() )
+				aKeyStroke.Modifiers |= awt::KeyModifier::MOD3;
+			aKeyStroke.KeyCode = aKeyCode.GetCode();
+			aKeyStroke.KeyChar = aKeyEvent.GetCharCode();
+			aKeyStroke.KeyFunc = static_cast< sal_Int16 >( aKeyCode.GetFunction() );
+			pKeyBindingHelper->AddKeyBinding( aKeyStroke );
+		}
+	}
+
+	return xKeyBinding;
 }
 
 // -----------------------------------------------------------------------------
@@ -296,7 +296,7 @@ Any VCLXAccessibleCheckBox::getCurrentValue(  ) throw (RuntimeException)
 	VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
 	if ( pVCLXCheckBox )
 		aValue <<= (sal_Int32) pVCLXCheckBox->getState();
-	
+
 	return aValue;
 }
 
@@ -310,7 +310,7 @@ sal_Bool VCLXAccessibleCheckBox::setCurrentValue( const Any& aNumber ) throw (Ru
 
 	VCLXCheckBox* pVCLXCheckBox = static_cast< VCLXCheckBox* >( GetVCLXWindow() );
 	if ( pVCLXCheckBox )
-	{	
+	{
 		sal_Int32 nValue = 0, nValueMin = 0, nValueMax = 0;
 		OSL_VERIFY( aNumber >>= nValue );
 		OSL_VERIFY( getMinimumValue() >>= nValueMin );
@@ -324,7 +324,7 @@ sal_Bool VCLXAccessibleCheckBox::setCurrentValue( const Any& aNumber ) throw (Ru
 		pVCLXCheckBox->setState( (sal_Int16) nValue );
 		bReturn = sal_True;
 	}
-	
+
 	return bReturn;
 }
 
@@ -341,7 +341,7 @@ Any VCLXAccessibleCheckBox::getMaximumValue(  ) throw (RuntimeException)
 		aValue <<= (sal_Int32) 2;
 	else
 		aValue <<= (sal_Int32) 1;
-				
+
 	return aValue;
 }
 
@@ -353,7 +353,7 @@ Any VCLXAccessibleCheckBox::getMinimumValue(  ) throw (RuntimeException)
 
 	Any aValue;
 	aValue <<= (sal_Int32) 0;
-	
+
 	return aValue;
 }
 
