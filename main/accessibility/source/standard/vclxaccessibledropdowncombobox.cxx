@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,8 +52,8 @@ using namespace ::com::sun::star::uno;
 using namespace ::com::sun::star::accessibility;
 
 
-VCLXAccessibleDropDownComboBox::VCLXAccessibleDropDownComboBox (VCLXWindow* pVCLWindow) 
-    : VCLXAccessibleBox (pVCLWindow, VCLXAccessibleBox::COMBOBOX, true)
+VCLXAccessibleDropDownComboBox::VCLXAccessibleDropDownComboBox (VCLXWindow* pVCLWindow)
+	: VCLXAccessibleBox (pVCLWindow, VCLXAccessibleBox::COMBOBOX, true)
 {
 }
 
@@ -68,8 +68,8 @@ VCLXAccessibleDropDownComboBox::~VCLXAccessibleDropDownComboBox (void)
 
 bool VCLXAccessibleDropDownComboBox::IsValid (void) const
 {
-    return static_cast<ComboBox*>(GetWindow()) != NULL;
- 
+	return static_cast<ComboBox*>(GetWindow()) != NULL;
+
 }
 
 
@@ -82,7 +82,7 @@ void VCLXAccessibleDropDownComboBox::ProcessWindowEvent (const VclWindowEvent& r
 		case VCLEVENT_DROPDOWN_OPEN:
 		case VCLEVENT_DROPDOWN_CLOSE:
 		{
-            /*			// child count changed
+			/*			// child count changed
 			Any aOldValue, aNewValue;
 			// get the listbox child
 			Reference< XAccessible > xChild;
@@ -103,7 +103,7 @@ void VCLXAccessibleDropDownComboBox::ProcessWindowEvent (const VclWindowEvent& r
 			NotifyAccessibleEvent(
 			AccessibleEventId::CHILD, aOldValue, aNewValue
 			);
-            */
+			*/
 			break;
 		}
 
@@ -117,8 +117,8 @@ void VCLXAccessibleDropDownComboBox::ProcessWindowEvent (const VclWindowEvent& r
 
 //=====  XServiceInfo  ========================================================
 
-::rtl::OUString VCLXAccessibleDropDownComboBox::getImplementationName() 
-    throw (RuntimeException)
+::rtl::OUString VCLXAccessibleDropDownComboBox::getImplementationName()
+	throw (RuntimeException)
 {
 	return ::rtl::OUString::createFromAscii("com.sun.star.comp.toolkit.AccessibleDropDownComboBox");
 }
@@ -126,13 +126,13 @@ void VCLXAccessibleDropDownComboBox::ProcessWindowEvent (const VclWindowEvent& r
 
 
 
-Sequence< ::rtl::OUString > VCLXAccessibleDropDownComboBox::getSupportedServiceNames (void) 
-    throw (RuntimeException)
+Sequence< ::rtl::OUString > VCLXAccessibleDropDownComboBox::getSupportedServiceNames (void)
+	throw (RuntimeException)
 {
 	Sequence< ::rtl::OUString > aNames = VCLXAccessibleBox::getSupportedServiceNames();
 	sal_Int32 nLength = aNames.getLength();
 	aNames.realloc( nLength + 1 );
 	aNames[nLength] = ::rtl::OUString::createFromAscii(
-        "com.sun.star.accessibility.AccessibleDropDownComboBox" );
+		"com.sun.star.accessibility.AccessibleDropDownComboBox" );
 	return aNames;
 }

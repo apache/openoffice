@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -160,23 +160,23 @@ void VCLXAccessibleStatusBar::RemoveChild( sal_Int32 i )
 
 void VCLXAccessibleStatusBar::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 {
-    switch ( rVclWindowEvent.GetId() )
-    {
+	switch ( rVclWindowEvent.GetId() )
+	{
 		case VCLEVENT_STATUSBAR_ITEMADDED:
-        {	
+		{
 			if ( m_pStatusBar )
 			{
-                sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
+				sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
 				sal_uInt16 nItemPos = m_pStatusBar->GetItemPos( nItemId );
 				InsertChild( nItemPos );
 			}
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_ITEMREMOVED:
-        {
+		{
 			if ( m_pStatusBar )
 			{
-                sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
+				sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
 				for ( sal_Int32 i = 0, nCount = getAccessibleChildCount(); i < nCount; ++i )
 				{
 					Reference< XAccessible > xChild( getAccessibleChild( i ) );
@@ -191,54 +191,54 @@ void VCLXAccessibleStatusBar::ProcessWindowEvent( const VclWindowEvent& rVclWind
 					}
 				}
 			}
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_ALLITEMSREMOVED:
-        {
+		{
 			for ( sal_Int32 i = m_aAccessibleChildren.size() - 1; i >= 0; --i )
 				RemoveChild( i );
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_SHOWITEM:
 		case VCLEVENT_STATUSBAR_HIDEITEM:
-		{	
+		{
 			if ( m_pStatusBar )
 			{
-                sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
+				sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
 				sal_uInt16 nItemPos = m_pStatusBar->GetItemPos( nItemId );
 				UpdateShowing( nItemPos, rVclWindowEvent.GetId() == VCLEVENT_STATUSBAR_SHOWITEM );
 			}
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_SHOWALLITEMS:
 		case VCLEVENT_STATUSBAR_HIDEALLITEMS:
-		{	
+		{
 			for ( sal_uInt32 i = 0; i < m_aAccessibleChildren.size(); ++i )
 				UpdateShowing( i, rVclWindowEvent.GetId() == VCLEVENT_STATUSBAR_SHOWALLITEMS );
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_NAMECHANGED:
-		{	
+		{
 			if ( m_pStatusBar )
 			{
-                sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
+				sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
 				sal_uInt16 nItemPos = m_pStatusBar->GetItemPos( nItemId );
-				UpdateItemName( nItemPos );			
+				UpdateItemName( nItemPos );
 			}
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_STATUSBAR_DRAWITEM:
-		{	
+		{
 			if ( m_pStatusBar )
 			{
-                sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
+				sal_uInt16 nItemId = (sal_uInt16)(sal_IntPtr) rVclWindowEvent.GetData();
 				sal_uInt16 nItemPos = m_pStatusBar->GetItemPos( nItemId );
-				UpdateItemText( nItemPos );			
+				UpdateItemText( nItemPos );
 			}
-        }
-        break;
+		}
+		break;
 		case VCLEVENT_OBJECT_DYING:
-        {
+		{
 			if ( m_pStatusBar )
 			{
 				m_pStatusBar = NULL;
@@ -250,15 +250,15 @@ void VCLXAccessibleStatusBar::ProcessWindowEvent( const VclWindowEvent& rVclWind
 					if ( xComponent.is() )
 						xComponent->dispose();
 				}
-				m_aAccessibleChildren.clear();		
+				m_aAccessibleChildren.clear();
 			}
 
 			VCLXAccessibleComponent::ProcessWindowEvent( rVclWindowEvent );
-        }
-        break;
+		}
+		break;
 		default:
 			VCLXAccessibleComponent::ProcessWindowEvent( rVclWindowEvent );
-   }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -280,7 +280,7 @@ void VCLXAccessibleStatusBar::disposing()
 			if ( xComponent.is() )
 				xComponent->dispose();
 		}
-		m_aAccessibleChildren.clear();		
+		m_aAccessibleChildren.clear();
 	}
 }
 
@@ -310,7 +310,7 @@ sal_Int32 VCLXAccessibleStatusBar::getAccessibleChildCount() throw (RuntimeExcep
 {
 	OExternalLockGuard aGuard( this );
 
-	return m_aAccessibleChildren.size(); 
+	return m_aAccessibleChildren.size();
 }
 
 // -----------------------------------------------------------------------------
@@ -336,7 +336,7 @@ Reference< XAccessible > VCLXAccessibleStatusBar::getAccessibleChild( sal_Int32 
 		}
 	}
 
-    return xChild;
+	return xChild;
 }
 
 // -----------------------------------------------------------------------------
