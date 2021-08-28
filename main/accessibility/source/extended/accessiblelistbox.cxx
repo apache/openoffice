@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,8 +69,8 @@ namespace accessibility
 		if ( isAlive() )
 		{
 			// increment ref count to prevent double call of Dtor
-        	osl_incrementInterlockedCount( &m_refCount );
-        	dispose();
+			osl_incrementInterlockedCount( &m_refCount );
+			dispose();
 		}
 	}
 	IMPLEMENT_FORWARD_XINTERFACE2(AccessibleListBox, VCLXAccessibleComponent, AccessibleListBox_BASE)
@@ -83,11 +83,11 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	void AccessibleListBox::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 	{
-    	if ( isAlive() )
+		if ( isAlive() )
 		{
 			switch ( rVclWindowEvent.GetId() )
 			{
-				case  VCLEVENT_CHECKBOX_TOGGLE :
+				case VCLEVENT_CHECKBOX_TOGGLE :
 				{
 					if ( !getListBox() || !getListBox()->HasFocus() )
 					{
@@ -100,7 +100,7 @@ namespace accessibility
 					}
 					uno::Any aValue;
 					aValue <<= AccessibleStateType::CHECKED;
-					
+
 					if ( getListBox()->GetCheckButtonState( pCurOpEntry->GetSvLBoxEntry() ) == SV_BUTTON_CHECKED )
 					{
 						pCurOpEntry->NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, uno::Any(), aValue );
@@ -114,11 +114,11 @@ namespace accessibility
 
 				case VCLEVENT_LISTBOX_SELECT :
 				{
-                    // First send an event that tells the listeners of a
-                    // modified selection.  The active descendant event is
-                    // send after that so that the receiving AT has time to
-                    // read the text or name of the active child.
-//                    NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
+					// First send an event that tells the listeners of a
+					// modified selection. The active descendant event is
+					// send after that so that the receiving AT has time to
+					// read the text or name of the active child.
+//					NotifyAccessibleEvent( AccessibleEventId::SELECTION_CHANGED, Any(), Any() );
 					OSL_ASSERT(0 && "Debug: Treelist shouldn't use VCLEVENT_LISTBOX_SELECT");
 				}
 				case VCLEVENT_LISTBOX_TREESELECT:
@@ -150,7 +150,7 @@ namespace accessibility
 								if (pSVData && pSVData->maWinData.mpFirstFloat == (FloatingWindow*)pParent)
 									bNeedFocus = sal_True;
 								*/
-							}	
+							}
 						}
 						if( pBox && (pBox->HasFocus() || bNeedFocus) )
 						{
@@ -181,7 +181,7 @@ namespace accessibility
 									m_xFocusedChild = pEntNew;
 									m_mapEntry.insert(MAP_ENTRY::value_type(pEntry,pEntNew));
 								}
-								
+
 								aNewValue <<= m_xFocusedChild;
 								NotifyAccessibleEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, aOldValue, aNewValue );
 							}
@@ -191,7 +191,7 @@ namespace accessibility
 								aNewValue <<= AccessibleStateType::FOCUSED;
 								NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 							}
-						}			
+						}
 					}
 					break;
 				case VCLEVENT_LISTBOX_ITEMREMOVED:
@@ -209,41 +209,41 @@ namespace accessibility
 							{
 								uno::Any aNewValue;
 								uno::Any aOldValue;
-								aOldValue <<= mi->second;							
+								aOldValue <<= mi->second;
 								NotifyAccessibleEvent( AccessibleEventId::CHILD, aOldValue, aNewValue );
 							}
 							m_mapEntry.clear();
 						}
-			
-						
+
+
 					}
 					break;
 
-                // --> OD 2009-04-01 #i92103#
-                case VCLEVENT_ITEM_EXPANDED :
-                case VCLEVENT_ITEM_COLLAPSED :
-                {
-                    SvLBoxEntry* pEntry = static_cast< SvLBoxEntry* >( rVclWindowEvent.GetData() );
-                    if ( pEntry )
-                    {
-                        AccessibleListBoxEntry* pAccListBoxEntry =
-                            new AccessibleListBoxEntry( *getListBox(), pEntry, this );
-                        Reference< XAccessible > xChild = pAccListBoxEntry;
-                        const short nAccEvent =
-                                ( rVclWindowEvent.GetId() == VCLEVENT_ITEM_EXPANDED )
-                                ? AccessibleEventId::LISTBOX_ENTRY_EXPANDED
-                                : AccessibleEventId::LISTBOX_ENTRY_COLLAPSED;
-                        uno::Any aListBoxEntry;
-                        aListBoxEntry <<= xChild;
-                        NotifyAccessibleEvent( nAccEvent, Any(), aListBoxEntry );
-                        if ( getListBox() && getListBox()->HasFocus() )
-                        {
-                            NotifyAccessibleEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, Any(), aListBoxEntry );
-                        }
-                    }
-                }
-                break;
-                // <--
+				// --> OD 2009-04-01 #i92103#
+				case VCLEVENT_ITEM_EXPANDED :
+				case VCLEVENT_ITEM_COLLAPSED :
+				{
+					SvLBoxEntry* pEntry = static_cast< SvLBoxEntry* >( rVclWindowEvent.GetData() );
+					if ( pEntry )
+					{
+						AccessibleListBoxEntry* pAccListBoxEntry =
+							new AccessibleListBoxEntry( *getListBox(), pEntry, this );
+						Reference< XAccessible > xChild = pAccListBoxEntry;
+						const short nAccEvent =
+							( rVclWindowEvent.GetId() == VCLEVENT_ITEM_EXPANDED )
+							? AccessibleEventId::LISTBOX_ENTRY_EXPANDED
+							: AccessibleEventId::LISTBOX_ENTRY_COLLAPSED;
+						uno::Any aListBoxEntry;
+						aListBoxEntry <<= xChild;
+						NotifyAccessibleEvent( nAccEvent, Any(), aListBoxEntry );
+						if ( getListBox() && getListBox()->HasFocus() )
+						{
+							NotifyAccessibleEvent( AccessibleEventId::ACTIVE_DESCENDANT_CHANGED, Any(), aListBoxEntry );
+						}
+					}
+				}
+				break;
+				// <--
 				default:
 					VCLXAccessibleComponent::ProcessWindowEvent (rVclWindowEvent);
 			}
@@ -255,7 +255,7 @@ namespace accessibility
 		SvLBoxEntry* pEntry = static_cast< SvLBoxEntry* >( rVclWindowEvent.GetData() );
 		if ( !pEntry )
 			pEntry = getListBox()->GetCurEntry();
-		
+
 		AccessibleListBoxEntry* pEntryFocus =static_cast< AccessibleListBoxEntry* >(m_xFocusedChild.get());
 		if (pEntryFocus && pEntry && pEntry != pEntryFocus->GetSvLBoxEntry())
 		{
@@ -267,15 +267,15 @@ namespace accessibility
 			}
 			else
 			{
-				pAccCurOptionEntry =new AccessibleListBoxEntry( *getListBox(), pEntry, NULL ); 
-				std::pair<MAP_ENTRY::iterator, bool> pairMi =  m_mapEntry.insert(MAP_ENTRY::value_type(pAccCurOptionEntry->GetSvLBoxEntry(),pAccCurOptionEntry));
+				pAccCurOptionEntry =new AccessibleListBoxEntry( *getListBox(), pEntry, NULL );
+				std::pair<MAP_ENTRY::iterator, bool> pairMi = m_mapEntry.insert(MAP_ENTRY::value_type(pAccCurOptionEntry->GetSvLBoxEntry(),pAccCurOptionEntry));
 				mi = pairMi.first;
-			}		
+			}
 
-			uno::Any aNewValue;				
+			uno::Any aNewValue;
 			aNewValue <<= mi->second;//xAcc
-			NotifyAccessibleEvent( AccessibleEventId::CHILD, uno::Any(), aNewValue );//Add 
-	
+			NotifyAccessibleEvent( AccessibleEventId::CHILD, uno::Any(), aNewValue );//Add
+
 			return pAccCurOptionEntry;
 		}
 		else
@@ -292,7 +292,7 @@ namespace accessibility
 		{
 			uno::Any aNewValue;
 			uno::Any aOldValue;
-			aOldValue <<= mi->second;							
+			aOldValue <<= mi->second;
 			NotifyAccessibleEvent( AccessibleEventId::CHILD, aOldValue, aNewValue );
 
 			m_mapEntry.erase(mi);
@@ -304,26 +304,26 @@ namespace accessibility
 		{
 			RemoveChildEntries(pEntryChild);
 			pEntryChild = pBox->NextSibling(pEntryChild);
-		}		
+		}
 	}
 
 	// -----------------------------------------------------------------------------
-    void AccessibleListBox::ProcessWindowChildEvent( const VclWindowEvent& rVclWindowEvent )
-    {
-        switch ( rVclWindowEvent.GetId() )
-        {
-            case VCLEVENT_WINDOW_SHOW:
-            case VCLEVENT_WINDOW_HIDE:
-            {
-            }
-            break;
-            default:
-            {
-                VCLXAccessibleComponent::ProcessWindowChildEvent( rVclWindowEvent );
-            }
-            break;
-        }
-    }
+	void AccessibleListBox::ProcessWindowChildEvent( const VclWindowEvent& rVclWindowEvent )
+	{
+		switch ( rVclWindowEvent.GetId() )
+		{
+			case VCLEVENT_WINDOW_SHOW:
+			case VCLEVENT_WINDOW_HIDE:
+			{
+			}
+			break;
+			default:
+			{
+				VCLXAccessibleComponent::ProcessWindowChildEvent( rVclWindowEvent );
+			}
+			break;
+		}
+	}
 
 	// -----------------------------------------------------------------------------
 	// XComponent
@@ -334,7 +334,7 @@ namespace accessibility
 
 		m_mapEntry.clear();
 		VCLXAccessibleComponent::disposing();
-	    m_xParent = NULL;
+		m_xParent = NULL;
 	}
 	// -----------------------------------------------------------------------------
 	// XServiceInfo
@@ -392,12 +392,12 @@ namespace accessibility
 
 		ensureAlive();
 
-        sal_Int32 nCount = 0;
-        SvTreeListBox* pSvTreeListBox = getListBox();
-        if ( pSvTreeListBox )
-            nCount = pSvTreeListBox->GetLevelChildCount( NULL );
+		sal_Int32 nCount = 0;
+		SvTreeListBox* pSvTreeListBox = getListBox();
+		if ( pSvTreeListBox )
+			nCount = pSvTreeListBox->GetLevelChildCount( NULL );
 
-        return nCount;
+		return nCount;
 	}
 	// -----------------------------------------------------------------------------
 	Reference< XAccessible > SAL_CALL AccessibleListBox::getAccessibleChild( sal_Int32 i ) throw (IndexOutOfBoundsException,RuntimeException)
@@ -435,7 +435,7 @@ namespace accessibility
 			}
 		}
 
-		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0; 
+		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0;
 		if( !(getListBox()->GetTreeFlags() & TREEFLAG_CHKBTN) )
 		{
 			if( bHasButtons )
@@ -454,7 +454,7 @@ namespace accessibility
 	{
 		if(getListBox())
 		{
-			short nType = getListBox()->GetAllEntriesAccessibleRoleType();			
+			short nType = getListBox()->GetAllEntriesAccessibleRoleType();
 			if( nType == TREEBOX_ALLITEM_ACCROLE_TYPE_TREE)
 					return AccessibleRole::TREE;
 			else if( nType == TREEBOX_ALLITEM_ACCROLE_TYPE_LIST)
@@ -462,7 +462,7 @@ namespace accessibility
 		}
 
 		//o is: return AccessibleRole::TREE;
-		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0; 
+		sal_Bool bHasButtons = (getListBox()->GetStyle() & WB_HASBUTTONS)!=0;
 		if(!bHasButtons && (getListBox()->GetTreeFlags() & TREEFLAG_CHKBTN))
 			return AccessibleRole::LIST;
 		else
@@ -492,7 +492,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	void SAL_CALL AccessibleListBox::selectAccessibleChild( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
@@ -505,7 +505,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	sal_Bool SAL_CALL AccessibleListBox::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
@@ -518,11 +518,11 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	void SAL_CALL AccessibleListBox::clearAccessibleSelection(  ) throw (RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
-    	sal_Int32 i, nCount = 0;
+		sal_Int32 i, nCount = 0;
 		nCount = getListBox()->GetLevelChildCount( NULL );
 		for ( i = 0; i < nCount; ++i )
 		{
@@ -534,11 +534,11 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	void SAL_CALL AccessibleListBox::selectAllAccessibleChildren(  ) throw (RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
-    	sal_Int32 i, nCount = 0;
+		sal_Int32 i, nCount = 0;
 		nCount = getListBox()->GetLevelChildCount( NULL );
 		for ( i = 0; i < nCount; ++i )
 		{
@@ -550,12 +550,12 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	sal_Int32 SAL_CALL AccessibleListBox::getSelectedAccessibleChildCount(  ) throw (RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
-		
 
-//     	sal_Int32 i, nSelCount = 0, nCount = 0;
+
+//		sal_Int32 i, nSelCount = 0, nCount = 0;
 // 		nCount = getListBox()->GetLevelChildCount( NULL );
 // 		for ( i = 0; i < nCount; ++i )
 // 		{
@@ -563,15 +563,15 @@ namespace accessibility
 // 			if ( getListBox()->IsSelected( pEntry ) )
 // 				++nSelCount;
 // 		}
-//    	return nSelCount;
+//		return nSelCount;
 
-		int nTestCount =  getListBox()->GetSelectionCount();
+		int nTestCount = getListBox()->GetSelectionCount();
 		return nTestCount;
 	}
 	// -----------------------------------------------------------------------------
 	Reference< XAccessible > SAL_CALL AccessibleListBox::getSelectedAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
@@ -579,7 +579,7 @@ namespace accessibility
 			throw IndexOutOfBoundsException();
 
 		Reference< XAccessible > xChild;
-    	sal_Int32 i, nSelCount = 0, nCount = 0;
+		sal_Int32 i, nSelCount = 0, nCount = 0;
 		nCount = getListBox()->GetLevelChildCount( NULL );
 		for ( i = 0; i < nCount; ++i )
 		{
@@ -601,7 +601,7 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	void SAL_CALL AccessibleListBox::deselectAccessibleChild( sal_Int32 nSelectedChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 	{
-    	::comphelper::OExternalLockGuard aGuard( this );
+		::comphelper::OExternalLockGuard aGuard( this );
 
 		ensureAlive();
 
@@ -628,4 +628,3 @@ namespace accessibility
 //........................................................................
 }// namespace accessibility
 //........................................................................
-

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -114,7 +114,7 @@ void VCLXAccessibleStatusBarItem::SetItemName( const ::rtl::OUString& sItemName 
 		aOldValue <<= m_sItemName;
 		aNewValue <<= sItemName;
 		m_sItemName = sItemName;
-        NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldValue, aNewValue );
 	}
 }
 
@@ -134,11 +134,11 @@ void VCLXAccessibleStatusBarItem::SetItemName( const ::rtl::OUString& sItemName 
 void VCLXAccessibleStatusBarItem::SetItemText( const ::rtl::OUString& sItemText )
 {
 	Any aOldValue, aNewValue;
-    if ( implInitTextChangedEvent( m_sItemText, sItemText, aOldValue, aNewValue ) )
-    {
-        m_sItemText = sItemText;
+	if ( implInitTextChangedEvent( m_sItemText, sItemText, aOldValue, aNewValue ) )
+	{
+		m_sItemText = sItemText;
 		NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
-    }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -162,7 +162,7 @@ void VCLXAccessibleStatusBarItem::SetItemText( const ::rtl::OUString& sItemText 
 void VCLXAccessibleStatusBarItem::FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet )
 {
 	rStateSet.AddState( AccessibleStateType::ENABLED );
-    rStateSet.AddState( AccessibleStateType::SENSITIVE );
+	rStateSet.AddState( AccessibleStateType::SENSITIVE );
 
 	rStateSet.AddState( AccessibleStateType::VISIBLE );
 
@@ -171,12 +171,12 @@ void VCLXAccessibleStatusBarItem::FillAccessibleStateSet( utl::AccessibleStateSe
 }
 
 // -----------------------------------------------------------------------------
-// OCommonAccessibleComponent 
+// OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
 awt::Rectangle VCLXAccessibleStatusBarItem::implGetBounds() throw (RuntimeException)
 {
-	awt::Rectangle aBounds( 0, 0, 0, 0 );	
+	awt::Rectangle aBounds( 0, 0, 0, 0 );
 
 	if ( m_pStatusBar )
 		aBounds = AWTRectangle( m_pStatusBar->GetItemRect( m_nItemId ) );
@@ -341,7 +341,7 @@ sal_Int16 VCLXAccessibleStatusBarItem::getAccessibleRole(  ) throw (RuntimeExcep
 
 	::rtl::OUString sDescription;
 	if ( m_pStatusBar )
-		sDescription = m_pStatusBar->GetHelpText( m_nItemId ); 
+		sDescription = m_pStatusBar->GetHelpText( m_nItemId );
 
 	return sDescription;
 }
@@ -361,9 +361,9 @@ Reference< XAccessibleRelationSet > VCLXAccessibleStatusBarItem::getAccessibleRe
 {
 	OExternalLockGuard aGuard( this );
 
-    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 
 // -----------------------------------------------------------------------------
@@ -381,7 +381,7 @@ Reference< XAccessibleStateSet > VCLXAccessibleStatusBarItem::getAccessibleState
 	}
 	else
 	{
-        pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
+		pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
 	}
 
 	return xSet;
@@ -426,7 +426,7 @@ sal_Int32 VCLXAccessibleStatusBarItem::getForeground(	) throw (RuntimeException)
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getForeground();	
+			nColor = xParentComp->getForeground();
 	}
 
 	return nColor;
@@ -444,7 +444,7 @@ sal_Int32 VCLXAccessibleStatusBarItem::getBackground(  ) throw (RuntimeException
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getBackground();	
+			nColor = xParentComp->getBackground();
 	}
 
 	return nColor;
@@ -464,7 +464,7 @@ Reference< awt::XFont > VCLXAccessibleStatusBarItem::getFont(  ) throw (RuntimeE
 	{
 		Reference< XAccessibleExtendedComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			xFont = xParentComp->getFont();	
+			xFont = xParentComp->getFont();
 	}
 
 	return xFont;
@@ -505,8 +505,8 @@ sal_Bool VCLXAccessibleStatusBarItem::setCaretPosition( sal_Int32 nIndex ) throw
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -520,19 +520,19 @@ Sequence< PropertyValue > VCLXAccessibleStatusBarItem::getCharacterAttributes( s
 	Sequence< PropertyValue > aValues;
 	::rtl::OUString sText( implGetText() );
 
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	if ( m_pStatusBar )
 	{
 		Font aFont = m_pStatusBar->GetFont();
 		sal_Int32 nBackColor = getBackground();
 		sal_Int32 nColor = getForeground();
-        ::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
+		::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
 		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
 	}
 
-    return aValues;
+	return aValues;
 }
 
 // -----------------------------------------------------------------------------
@@ -541,8 +541,8 @@ awt::Rectangle VCLXAccessibleStatusBarItem::getCharacterBounds( sal_Int32 nIndex
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	awt::Rectangle aBounds( 0, 0, 0, 0 );
 	if ( m_pStatusBar )
@@ -575,7 +575,7 @@ sal_Int32 VCLXAccessibleStatusBarItem::getIndexAtPoint( const awt::Point& aPoint
 		nIndex = aLayoutData.GetIndexForPoint( aPnt );
 	}
 
-    return nIndex;
+	return nIndex;
 }
 
 // -----------------------------------------------------------------------------
@@ -584,8 +584,8 @@ sal_Bool VCLXAccessibleStatusBarItem::setSelection( sal_Int32 nStartIndex, sal_I
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -612,14 +612,14 @@ sal_Bool VCLXAccessibleStatusBarItem::copyText( sal_Int32 nStartIndex, sal_Int32
 			Reference< datatransfer::clipboard::XFlushableClipboard > xFlushableClipboard( xClipboard, uno::UNO_QUERY );
 			if( xFlushableClipboard.is() )
 				xFlushableClipboard->flushClipboard();
-			
+
 			Application::AcquireSolarMutex( nRef );
 
 			bReturn = sal_True;
 		}
 	}
 
-    return bReturn;
+	return bReturn;
 }
 
 // -----------------------------------------------------------------------------
