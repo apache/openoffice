@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,160 +53,160 @@ namespace accessibility {
 DBG_NAME( AccessibleBrowseBoxTableBase )
 
 AccessibleBrowseBoxTableBase::AccessibleBrowseBoxTableBase(
-        const Reference< XAccessible >& rxParent,
-        IAccessibleTableProvider&                      rBrowseBox,
-        AccessibleBrowseBoxObjType      eObjType ) :
-    BrowseBoxAccessibleElement( rxParent, rBrowseBox,NULL, eObjType )
+		const Reference< XAccessible >& rxParent,
+		IAccessibleTableProvider& rBrowseBox,
+		AccessibleBrowseBoxObjType eObjType ) :
+	BrowseBoxAccessibleElement( rxParent, rBrowseBox,NULL, eObjType )
 {
-    DBG_CTOR( AccessibleBrowseBoxTableBase, NULL );
+	DBG_CTOR( AccessibleBrowseBoxTableBase, NULL );
 }
 
 AccessibleBrowseBoxTableBase::~AccessibleBrowseBoxTableBase()
 {
-    DBG_DTOR( AccessibleBrowseBoxTableBase, NULL );
+	DBG_DTOR( AccessibleBrowseBoxTableBase, NULL );
 }
 
 // XAccessibleContext ---------------------------------------------------------
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleChildCount()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    return implGetChildCount();
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	return implGetChildCount();
 }
 
 sal_Int16 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleRole()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    ensureIsAlive();
-    return AccessibleRole::TABLE;
+	ensureIsAlive();
+	return AccessibleRole::TABLE;
 }
 
 // XAccessibleTable -----------------------------------------------------------
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleRowCount()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    return implGetRowCount();
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	return implGetRowCount();
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleColumnCount()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    return implGetColumnCount();
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	return implGetColumnCount();
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleRowExtentAt(
-        sal_Int32 nRow, sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
+		sal_Int32 nRow, sal_Int32 nColumn )
+	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    ensureIsValidAddress( nRow, nColumn );
-    return 1;   // merged cells not supported
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	ensureIsValidAddress( nRow, nColumn );
+	return 1; // merged cells not supported
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleColumnExtentAt(
-        sal_Int32 nRow, sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
+		sal_Int32 nRow, sal_Int32 nColumn )
+	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    ensureIsValidAddress( nRow, nColumn );
-    return 1;   // merged cells not supported
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	ensureIsValidAddress( nRow, nColumn );
+	return 1; // merged cells not supported
 }
 
 Reference< XAccessible > SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleCaption()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    ensureIsAlive();
-    return NULL;    // not supported
+	ensureIsAlive();
+	return NULL; // not supported
 }
 
 Reference< XAccessible > SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleSummary()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    ensureIsAlive();
-    return NULL;    // not supported
+	ensureIsAlive();
+	return NULL; // not supported
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleIndex(
-        sal_Int32 nRow, sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
+		sal_Int32 nRow, sal_Int32 nColumn )
+	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    ensureIsValidAddress( nRow, nColumn );
-    return implGetChildIndex( nRow, nColumn );
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	ensureIsValidAddress( nRow, nColumn );
+	return implGetChildIndex( nRow, nColumn );
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleRow( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
+	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    ensureIsValidIndex( nChildIndex );
-    return implGetRow( nChildIndex );
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	ensureIsValidIndex( nChildIndex );
+	return implGetRow( nChildIndex );
 }
 
 sal_Int32 SAL_CALL AccessibleBrowseBoxTableBase::getAccessibleColumn( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
+	throw ( lang::IndexOutOfBoundsException, uno::RuntimeException )
 {
-    BBSolarGuard aSolarGuard;
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
-    ensureIsValidIndex( nChildIndex );
-    return implGetColumn( nChildIndex );
+	BBSolarGuard aSolarGuard;
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
+	ensureIsValidIndex( nChildIndex );
+	return implGetColumn( nChildIndex );
 }
 
 // XInterface -----------------------------------------------------------------
 
 Any SAL_CALL AccessibleBrowseBoxTableBase::queryInterface( const uno::Type& rType )
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    Any aAny( BrowseBoxAccessibleElement::queryInterface( rType ) );
-    return aAny.hasValue() ?
-        aAny : AccessibleBrowseBoxTableImplHelper::queryInterface( rType );
+	Any aAny( BrowseBoxAccessibleElement::queryInterface( rType ) );
+	return aAny.hasValue() ?
+		aAny : AccessibleBrowseBoxTableImplHelper::queryInterface( rType );
 }
 
 void SAL_CALL AccessibleBrowseBoxTableBase::acquire() throw ()
 {
-    BrowseBoxAccessibleElement::acquire();
+	BrowseBoxAccessibleElement::acquire();
 }
 
 void SAL_CALL AccessibleBrowseBoxTableBase::release() throw ()
 {
-    BrowseBoxAccessibleElement::release();
+	BrowseBoxAccessibleElement::release();
 }
 
 // XTypeProvider --------------------------------------------------------------
 
 Sequence< uno::Type > SAL_CALL AccessibleBrowseBoxTableBase::getTypes()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    return ::comphelper::concatSequences(
-        BrowseBoxAccessibleElement::getTypes(),
-        AccessibleBrowseBoxTableImplHelper::getTypes() );
+	return ::comphelper::concatSequences(
+		BrowseBoxAccessibleElement::getTypes(),
+		AccessibleBrowseBoxTableImplHelper::getTypes() );
 }
 
 Sequence< sal_Int8 > SAL_CALL AccessibleBrowseBoxTableBase::getImplementationId()
-    throw ( uno::RuntimeException )
+	throw ( uno::RuntimeException )
 {
-    ::osl::MutexGuard aGuard( getOslGlobalMutex() );
-    static Sequence< sal_Int8 > aId;
-    implCreateUuid( aId );
+	::osl::MutexGuard aGuard( getOslGlobalMutex() );
+	static Sequence< sal_Int8 > aId;
+	implCreateUuid( aId );
 	return aId;
 }
 
@@ -214,96 +214,96 @@ Sequence< sal_Int8 > SAL_CALL AccessibleBrowseBoxTableBase::getImplementationId(
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetRowCount() const
 {
-    return mpBrowseBox->GetRowCount();
+	return mpBrowseBox->GetRowCount();
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetColumnCount() const
 {
-    sal_uInt16 nColumns = mpBrowseBox->GetColumnCount();
-    // do not count the "handle column"
-    if( nColumns && implHasHandleColumn() )
-        --nColumns;
-    return nColumns;
+	sal_uInt16 nColumns = mpBrowseBox->GetColumnCount();
+	// do not count the "handle column"
+	if( nColumns && implHasHandleColumn() )
+		--nColumns;
+	return nColumns;
 }
 
 // internal helper methods ----------------------------------------------------
 
 sal_Bool AccessibleBrowseBoxTableBase::implHasHandleColumn() const
 {
-    return mpBrowseBox->HasRowHeader();
+	return mpBrowseBox->HasRowHeader();
 }
 
 sal_uInt16 AccessibleBrowseBoxTableBase::implToVCLColumnPos( sal_Int32 nColumn ) const
 {
-    sal_uInt16 nVCLPos = 0;
-    if( (0 <= nColumn) && (nColumn < implGetColumnCount()) )
-    {
-        // regard "handle column"
-        if( implHasHandleColumn() )
-            ++nColumn;
-        nVCLPos = static_cast< sal_uInt16 >( nColumn );
-    }
-    return nVCLPos;
+	sal_uInt16 nVCLPos = 0;
+	if( (0 <= nColumn) && (nColumn < implGetColumnCount()) )
+	{
+		// regard "handle column"
+		if( implHasHandleColumn() )
+			++nColumn;
+		nVCLPos = static_cast< sal_uInt16 >( nColumn );
+	}
+	return nVCLPos;
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetChildCount() const
 {
-    return implGetRowCount() * implGetColumnCount();
+	return implGetRowCount() * implGetColumnCount();
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetRow( sal_Int32 nChildIndex ) const
 {
-    sal_Int32 nColumns = implGetColumnCount();
-    return nColumns ? (nChildIndex / nColumns) : 0;
+	sal_Int32 nColumns = implGetColumnCount();
+	return nColumns ? (nChildIndex / nColumns) : 0;
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetColumn( sal_Int32 nChildIndex ) const
 {
-    sal_Int32 nColumns = implGetColumnCount();
-    return nColumns ? (nChildIndex % nColumns) : 0;
+	sal_Int32 nColumns = implGetColumnCount();
+	return nColumns ? (nChildIndex % nColumns) : 0;
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetChildIndex(
-        sal_Int32 nRow, sal_Int32 nColumn ) const
+		sal_Int32 nRow, sal_Int32 nColumn ) const
 {
-    return nRow * implGetColumnCount() + nColumn;
+	return nRow * implGetColumnCount() + nColumn;
 }
 
 sal_Bool AccessibleBrowseBoxTableBase::implIsRowSelected( sal_Int32 nRow ) const
 {
-    return mpBrowseBox->IsRowSelected( nRow );
+	return mpBrowseBox->IsRowSelected( nRow );
 }
 
 sal_Bool AccessibleBrowseBoxTableBase::implIsColumnSelected( sal_Int32 nColumn ) const
 {
-    if( implHasHandleColumn() )
-        --nColumn;
-    return mpBrowseBox->IsColumnSelected( nColumn );
+	if( implHasHandleColumn() )
+		--nColumn;
+	return mpBrowseBox->IsColumnSelected( nColumn );
 }
 
 void AccessibleBrowseBoxTableBase::implSelectRow( sal_Int32 nRow, sal_Bool bSelect )
 {
-    mpBrowseBox->SelectRow( nRow, bSelect, sal_True );
+	mpBrowseBox->SelectRow( nRow, bSelect, sal_True );
 }
 
 void AccessibleBrowseBoxTableBase::implSelectColumn( sal_Int32 nColumnPos, sal_Bool bSelect )
 {
-    mpBrowseBox->SelectColumn( (sal_uInt16)nColumnPos, bSelect );
+	mpBrowseBox->SelectColumn( (sal_uInt16)nColumnPos, bSelect );
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetSelectedRowCount() const
 {
-    return mpBrowseBox->GetSelectedRowCount();
+	return mpBrowseBox->GetSelectedRowCount();
 }
 
 sal_Int32 AccessibleBrowseBoxTableBase::implGetSelectedColumnCount() const
 {
-    return mpBrowseBox->GetSelectedColumnCount();
+	return mpBrowseBox->GetSelectedColumnCount();
 }
 
 void AccessibleBrowseBoxTableBase::implGetSelectedRows( Sequence< sal_Int32 >& rSeq )
 {
-    mpBrowseBox->GetAllSelectedRows( rSeq );
+	mpBrowseBox->GetAllSelectedRows( rSeq );
 }
 
 void AccessibleBrowseBoxTableBase::implGetSelectedColumns( Sequence< sal_Int32 >& rSeq )
@@ -312,40 +312,37 @@ void AccessibleBrowseBoxTableBase::implGetSelectedColumns( Sequence< sal_Int32 >
 }
 
 void AccessibleBrowseBoxTableBase::ensureIsValidRow( sal_Int32 nRow )
-    throw ( lang::IndexOutOfBoundsException )
+	throw ( lang::IndexOutOfBoundsException )
 {
-    if( nRow >= implGetRowCount() )
-        throw lang::IndexOutOfBoundsException(
-            OUString( RTL_CONSTASCII_USTRINGPARAM( "row index is invalid" ) ), *this );
+	if( nRow >= implGetRowCount() )
+		throw lang::IndexOutOfBoundsException(
+			OUString( RTL_CONSTASCII_USTRINGPARAM( "row index is invalid" ) ), *this );
 }
 
 void AccessibleBrowseBoxTableBase::ensureIsValidColumn( sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException )
+	throw ( lang::IndexOutOfBoundsException )
 {
-    if( nColumn >= implGetColumnCount() )
-        throw lang::IndexOutOfBoundsException(
-            OUString( RTL_CONSTASCII_USTRINGPARAM("column index is invalid") ), *this );
+	if( nColumn >= implGetColumnCount() )
+		throw lang::IndexOutOfBoundsException(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("column index is invalid") ), *this );
 }
 
 void AccessibleBrowseBoxTableBase::ensureIsValidAddress(
-        sal_Int32 nRow, sal_Int32 nColumn )
-    throw ( lang::IndexOutOfBoundsException )
+		sal_Int32 nRow, sal_Int32 nColumn )
+	throw ( lang::IndexOutOfBoundsException )
 {
-    ensureIsValidRow( nRow );
-    ensureIsValidColumn( nColumn );
+	ensureIsValidRow( nRow );
+	ensureIsValidColumn( nColumn );
 }
 
 void AccessibleBrowseBoxTableBase::ensureIsValidIndex( sal_Int32 nChildIndex )
-    throw ( lang::IndexOutOfBoundsException )
+	throw ( lang::IndexOutOfBoundsException )
 {
-    if( nChildIndex >= implGetChildCount() )
-        throw lang::IndexOutOfBoundsException(
-            OUString( RTL_CONSTASCII_USTRINGPARAM("child index is invalid") ), *this );
+	if( nChildIndex >= implGetChildCount() )
+		throw lang::IndexOutOfBoundsException(
+			OUString( RTL_CONSTASCII_USTRINGPARAM("child index is invalid") ), *this );
 }
 
 // ============================================================================
-
-} // namespace accessibility
-
+}	// namespace accessibility
 // ============================================================================
-

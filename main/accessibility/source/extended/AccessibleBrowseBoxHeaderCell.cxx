@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,13 +33,13 @@ namespace accessibility
 	using namespace ::com::sun::star::accessibility;
 	using namespace ::com::sun::star::lang;
 	using namespace ::com::sun::star::uno;
-    using namespace ::svt;
+	using namespace ::svt;
 
 AccessibleBrowseBoxHeaderCell::AccessibleBrowseBoxHeaderCell(sal_Int32 _nColumnRowId,
 								  const Reference< XAccessible >& rxParent,
-								  IAccessibleTableProvider&                  rBrowseBox,
+								  IAccessibleTableProvider& rBrowseBox,
 								  const ::com::sun::star::uno::Reference< ::com::sun::star::awt::XWindow >& _xFocusWindow,
-								  AccessibleBrowseBoxObjType  eObjType)
+								  AccessibleBrowseBoxObjType eObjType)
 : BrowseBoxAccessibleElement(rxParent,
 						  rBrowseBox,
 						  _xFocusWindow,
@@ -129,7 +129,7 @@ namespace
 	Rectangle getRectangle(IAccessibleTableProvider* _pBrowseBox,sal_Int32 _nRowColIndex, sal_Bool _bOnScreen,sal_Bool _bRowBar)
 	{
 		sal_Int32 nRow  = 0;
-		sal_uInt16 nCol =  (sal_uInt16)_nRowColIndex;
+		sal_uInt16 nCol = (sal_uInt16)_nRowColIndex;
 		if ( _bRowBar )
 		{
 			nRow = _nRowColIndex + 1;
@@ -153,10 +153,10 @@ Rectangle AccessibleBrowseBoxHeaderCell::implGetBoundingBoxOnScreen()
 }
 // -----------------------------------------------------------------------------
 sal_Int32 SAL_CALL AccessibleBrowseBoxHeaderCell::getAccessibleIndexInParent()
-    throw ( RuntimeException )
+	throw ( RuntimeException )
 {
-    ::osl::MutexGuard aGuard( getOslMutex() );
-    ensureIsAlive();
+	::osl::MutexGuard aGuard( getOslMutex() );
+	ensureIsAlive();
 	sal_Int32 nIndex = m_nColumnRowId;
 	if ( mpBrowseBox->HasRowHeader() )
 		--nIndex;
@@ -165,5 +165,3 @@ sal_Int32 SAL_CALL AccessibleBrowseBoxHeaderCell::getAccessibleIndexInParent()
 // -----------------------------------------------------------------------------
 } // namespace accessibility
 // -----------------------------------------------------------------------------
-
-

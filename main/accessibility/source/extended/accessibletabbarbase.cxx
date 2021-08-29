@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -36,75 +36,75 @@ namespace accessibility
 //.........................................................................
 
 AccessibleTabBarBase::AccessibleTabBarBase( TabBar* pTabBar ) :
-    AccessibleExtendedComponentHelper_BASE( new VCLExternalSolarLock() ),
-    m_pTabBar( 0 )
+	AccessibleExtendedComponentHelper_BASE( new VCLExternalSolarLock() ),
+	m_pTabBar( 0 )
 {
-    m_pExternalLock = static_cast< VCLExternalSolarLock* >( getExternalLock() );
-    SetTabBarPointer( pTabBar );
+	m_pExternalLock = static_cast< VCLExternalSolarLock* >( getExternalLock() );
+	SetTabBarPointer( pTabBar );
 }
 
 AccessibleTabBarBase::~AccessibleTabBarBase()
 {
-    ClearTabBarPointer();
-    DELETEZ( m_pExternalLock );
+	ClearTabBarPointer();
+	DELETEZ( m_pExternalLock );
 }
 
 IMPL_LINK( AccessibleTabBarBase, WindowEventListener, VclSimpleEvent*, pEvent )
 {
-    VclWindowEvent* pWinEvent = dynamic_cast< VclWindowEvent* >( pEvent );
-    DBG_ASSERT( pWinEvent, "AccessibleTabBarBase::WindowEventListener - unknown window event" );
-    if( pWinEvent )
-    {
-        Window* pEventWindow = pWinEvent->GetWindow();
-        DBG_ASSERT( pEventWindow, "AccessibleTabBarBase::WindowEventListener: no window!" );
+	VclWindowEvent* pWinEvent = dynamic_cast< VclWindowEvent* >( pEvent );
+	DBG_ASSERT( pWinEvent, "AccessibleTabBarBase::WindowEventListener - unknown window event" );
+	if( pWinEvent )
+	{
+		Window* pEventWindow = pWinEvent->GetWindow();
+		DBG_ASSERT( pEventWindow, "AccessibleTabBarBase::WindowEventListener: no window!" );
 
-        if( ( pWinEvent->GetId() == VCLEVENT_TABBAR_PAGEREMOVED ) &&
-            ( (sal_uInt16)(sal_IntPtr) pWinEvent->GetData() == TabBar::PAGE_NOT_FOUND ) &&
-            ( dynamic_cast< AccessibleTabBarPageList *> (this) != NULL ) )
-        {
-            return 0;
-        }
+		if( ( pWinEvent->GetId() == VCLEVENT_TABBAR_PAGEREMOVED ) &&
+			( (sal_uInt16)(sal_IntPtr) pWinEvent->GetData() == TabBar::PAGE_NOT_FOUND ) &&
+			( dynamic_cast< AccessibleTabBarPageList *> (this) != NULL ) )
+		{
+			return 0;
+		}
 
-        if ( !pEventWindow->IsAccessibilityEventsSuppressed() || (pWinEvent->GetId() == VCLEVENT_OBJECT_DYING) )
-            ProcessWindowEvent( *pWinEvent );
-    }
-    return 0;
+		if ( !pEventWindow->IsAccessibilityEventsSuppressed() || (pWinEvent->GetId() == VCLEVENT_OBJECT_DYING) )
+			ProcessWindowEvent( *pWinEvent );
+	}
+	return 0;
 }
 
 void AccessibleTabBarBase::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 {
-    if( rVclWindowEvent.GetId() == VCLEVENT_OBJECT_DYING )
-        ClearTabBarPointer();
+	if( rVclWindowEvent.GetId() == VCLEVENT_OBJECT_DYING )
+		ClearTabBarPointer();
 }
 
 // XComponent
 
 void AccessibleTabBarBase::disposing()
 {
-    AccessibleExtendedComponentHelper_BASE::disposing();
-    ClearTabBarPointer();
+	AccessibleExtendedComponentHelper_BASE::disposing();
+	ClearTabBarPointer();
 }
 
 // private
 
 void AccessibleTabBarBase::SetTabBarPointer( TabBar* pTabBar )
 {
-    DBG_ASSERT( !m_pTabBar, "AccessibleTabBarBase::SetTabBarPointer - multiple call" );
-    m_pTabBar = pTabBar;
-    if( m_pTabBar )
-        m_pTabBar->AddEventListener( LINK( this, AccessibleTabBarBase, WindowEventListener ) );
+	DBG_ASSERT( !m_pTabBar, "AccessibleTabBarBase::SetTabBarPointer - multiple call" );
+	m_pTabBar = pTabBar;
+	if( m_pTabBar )
+		m_pTabBar->AddEventListener( LINK( this, AccessibleTabBarBase, WindowEventListener ) );
 }
 
 void AccessibleTabBarBase::ClearTabBarPointer()
 {
-    if( m_pTabBar )
-    {
-        m_pTabBar->RemoveEventListener( LINK( this, AccessibleTabBarBase, WindowEventListener ) );
-        m_pTabBar = 0;
-    }
+	if( m_pTabBar )
+	{
+		m_pTabBar->RemoveEventListener( LINK( this, AccessibleTabBarBase, WindowEventListener ) );
+		m_pTabBar = 0;
+	}
 }
 
 //.........................................................................
-}   // namespace accessibility
+}	// namespace accessibility
 //.........................................................................
 

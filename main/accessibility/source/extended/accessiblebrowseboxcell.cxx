@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@ namespace accessibility
 	using namespace ::com::sun::star::uno;
 	using namespace ::com::sun::star::awt;
 	using namespace ::com::sun::star::accessibility;
-    using namespace ::svt;
+	using namespace ::svt;
 
 	// =============================================================================
 	// = AccessibleBrowseBoxCell
@@ -44,8 +44,8 @@ namespace accessibility
 	AccessibleBrowseBoxCell::AccessibleBrowseBoxCell(
 			const Reference< XAccessible >& _rxParent, IAccessibleTableProvider& _rBrowseBox,
 			const Reference< XWindow >& _xFocusWindow,
-            sal_Int32 _nRowPos, sal_uInt16 _nColPos, AccessibleBrowseBoxObjType _eType )
-        :AccessibleBrowseBoxBase( _rxParent, _rBrowseBox, _xFocusWindow, _eType )
+			sal_Int32 _nRowPos, sal_uInt16 _nColPos, AccessibleBrowseBoxObjType _eType )
+		:AccessibleBrowseBoxBase( _rxParent, _rBrowseBox, _xFocusWindow, _eType )
 		,m_nRowPos( _nRowPos )
 		,m_nColPos( _nColPos )
 	{
@@ -84,5 +84,3 @@ namespace accessibility
 // .................................................................................
 }	// namespace accessibility
 // .................................................................................
-
-
