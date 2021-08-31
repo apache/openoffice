@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,12 +56,12 @@ public:
 		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
 			::com::sun::star::uno::RuntimeException);
 
-    // XNameReplace
+	// XNameReplace
 	virtual void SAL_CALL replaceByName( const ::rtl::OUString& aName, const ::com::sun::star::uno::Any& aElement )
 		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::container::NoSuchElementException,
 			::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 
-    // XNameAccess
+	// XNameAccess
 	virtual ::com::sun::star::uno::Any SAL_CALL getByName( const ::rtl::OUString& aName )
 		throw(::com::sun::star::container::NoSuchElementException, ::com::sun::star::lang::WrappedTargetException,
 			::com::sun::star::uno::RuntimeException);
@@ -81,10 +81,10 @@ public:
 	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
 
-    // XServiceInfo - static versions (used for component registration)
-    static ::rtl::OUString SAL_CALL getImplementationName_static();
-    static uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
-    static uno::Reference< uno::XInterface > SAL_CALL Create( const uno::Reference< uno::XComponentContext >& );
+	// XServiceInfo - static versions (used for component registration)
+	static ::rtl::OUString SAL_CALL getImplementationName_static();
+	static uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
+	static uno::Reference< uno::XInterface > SAL_CALL Create( const uno::Reference< uno::XComponentContext >& );
 
 private:
 	NamedPropertyValues maProperties;
@@ -110,7 +110,7 @@ void SAL_CALL NamedPropertyValuesContainer::insertByName( const rtl::OUString& a
 	if( !(aElement >>= aProps ) )
 		throw lang::IllegalArgumentException();
 
-	maProperties.insert(  NamedPropertyValues::value_type(aName ,aProps) );
+	maProperties.insert( NamedPropertyValues::value_type(aName ,aProps) );
 }
 
 void SAL_CALL NamedPropertyValuesContainer::removeByName( const ::rtl::OUString& Name )
@@ -224,12 +224,12 @@ sal_Bool SAL_CALL NamedPropertyValuesContainer::supportsService( const ::rtl::OU
 }
 
 uno::Reference< uno::XInterface > SAL_CALL NamedPropertyValuesContainer::Create(
-                const uno::Reference< uno::XComponentContext >&)
+				const uno::Reference< uno::XComponentContext >&)
 {
 	return (cppu::OWeakObject*)new NamedPropertyValuesContainer();
 }
 
 void createRegistryInfo_NamedPropertyValuesContainer()
 {
-    static ::comphelper::module::OAutoRegistration< NamedPropertyValuesContainer > aAutoRegistration;
+	static ::comphelper::module::OAutoRegistration< NamedPropertyValuesContainer > aAutoRegistration;
 }
