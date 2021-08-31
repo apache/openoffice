@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,7 +98,7 @@ namespace comphelper
 	//=====================================================================
 	//---------------------------------------------------------------------
 	OContainerListenerAdapter::OContainerListenerAdapter(OContainerListener* _pListener,
-			const  Reference< XContainer >& _rxContainer)
+			const Reference< XContainer >& _rxContainer)
 		:m_xContainer(_rxContainer)
 		,m_pListener(_pListener)
 		,m_nLockCount(0)
@@ -156,7 +156,7 @@ namespace comphelper
 	}
 
 	//------------------------------------------------------------------
-	void SAL_CALL OContainerListenerAdapter::disposing( const  EventObject& _rSource) throw(RuntimeException)
+	void SAL_CALL OContainerListenerAdapter::disposing( const EventObject& _rSource) throw(RuntimeException)
 	{
 		if (m_pListener)
 		{
@@ -164,8 +164,8 @@ namespace comphelper
 			if (!locked())
 				m_pListener->_disposing(_rSource);
 			// disconnect the listener
-            if ( m_pListener )
-			    m_pListener->setAdapter(NULL);
+			if ( m_pListener )
+				m_pListener->setAdapter(NULL);
 		}
 
 		m_xContainer = NULL;
@@ -196,4 +196,3 @@ namespace comphelper
 //.........................................................................
 }	// namespace comphelper
 //.........................................................................
-
