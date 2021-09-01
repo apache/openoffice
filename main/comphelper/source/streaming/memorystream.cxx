@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,33 +53,33 @@ public:
 	virtual ~UNOMemoryStream();
 
 	// XStream
-    virtual Reference< XInputStream > SAL_CALL getInputStream(  ) throw (RuntimeException);
-    virtual Reference< XOutputStream > SAL_CALL getOutputStream(  ) throw (RuntimeException);
+	virtual Reference< XInputStream > SAL_CALL getInputStream(  ) throw (RuntimeException);
+	virtual Reference< XOutputStream > SAL_CALL getOutputStream(  ) throw (RuntimeException);
 
-    // XInputStream
-    virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual sal_Int32 SAL_CALL readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual sal_Int32 SAL_CALL available() throw (NotConnectedException, IOException, RuntimeException);
-    virtual void SAL_CALL closeInput() throw (NotConnectedException, IOException, RuntimeException);
+	// XInputStream
+	virtual sal_Int32 SAL_CALL readBytes( Sequence< sal_Int8 >& aData, sal_Int32 nBytesToRead ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	virtual sal_Int32 SAL_CALL readSomeBytes( Sequence< sal_Int8 >& aData, sal_Int32 nMaxBytesToRead ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	virtual void SAL_CALL skipBytes( sal_Int32 nBytesToSkip ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	virtual sal_Int32 SAL_CALL available() throw (NotConnectedException, IOException, RuntimeException);
+	virtual void SAL_CALL closeInput() throw (NotConnectedException, IOException, RuntimeException);
 
-    // XSeekable
-    virtual void SAL_CALL seek( sal_Int64 location ) throw (IllegalArgumentException, IOException, RuntimeException);
-    virtual sal_Int64 SAL_CALL getPosition() throw (IOException, RuntimeException);
-    virtual sal_Int64 SAL_CALL getLength() throw (IOException, RuntimeException);
+	// XSeekable
+	virtual void SAL_CALL seek( sal_Int64 location ) throw (IllegalArgumentException, IOException, RuntimeException);
+	virtual sal_Int64 SAL_CALL getPosition() throw (IOException, RuntimeException);
+	virtual sal_Int64 SAL_CALL getLength() throw (IOException, RuntimeException);
 
-    // XOutputStream
-    virtual void SAL_CALL writeBytes( const Sequence< sal_Int8 >& aData ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL flush() throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
-    virtual void SAL_CALL closeOutput() throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	// XOutputStream
+	virtual void SAL_CALL writeBytes( const Sequence< sal_Int8 >& aData ) throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	virtual void SAL_CALL flush() throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
+	virtual void SAL_CALL closeOutput() throw (NotConnectedException, BufferSizeExceededException, IOException, RuntimeException);
 
-    // XTruncate
-    virtual void SAL_CALL truncate() throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
+	// XTruncate
+	virtual void SAL_CALL truncate() throw (::com::sun::star::io::IOException, ::com::sun::star::uno::RuntimeException);
 
-    // XServiceInfo - static versions (used for component registration)
-    static ::rtl::OUString SAL_CALL getImplementationName_static();
-    static Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
-    static Reference< XInterface > SAL_CALL Create( const Reference< ::com::sun::star::uno::XComponentContext >& );
+	// XServiceInfo - static versions (used for component registration)
+	static ::rtl::OUString SAL_CALL getImplementationName_static();
+	static Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
+	static Reference< XInterface > SAL_CALL Create( const Reference< ::com::sun::star::uno::XComponentContext >& );
 
 private:
 	std::vector< sal_Int8 > maData;
@@ -113,7 +113,7 @@ sal_Int32 SAL_CALL UNOMemoryStream::readBytes( Sequence< sal_Int8 >& aData, sal_
 		throw IOException();
 
 	nBytesToRead = std::min( nBytesToRead, available() );
-    aData.realloc( nBytesToRead );
+	aData.realloc( nBytesToRead );
 
 	if( nBytesToRead )
 	{
@@ -155,13 +155,13 @@ void SAL_CALL UNOMemoryStream::seek( sal_Int64 location ) throw (IllegalArgument
 {
 	if( (location < 0) || (location > SAL_MAX_INT32) )
 		throw IllegalArgumentException( OUString(RTL_CONSTASCII_USTRINGPARAM("this implementation does not support more than 2GB!")), Reference< XInterface >(static_cast<OWeakObject*>(this)), 0 );
- 
-    // seek operation should be able to resize the stream
-    if ( location > static_cast< sal_Int64 >( maData.size() ) )
-        maData.resize( static_cast< sal_Int32 >( location ) );
 
-    if ( location > static_cast< sal_Int64 >( maData.size() ) )
-        maData.resize( static_cast< sal_Int32 >( location ) );
+	// seek operation should be able to resize the stream
+	if ( location > static_cast< sal_Int64 >( maData.size() ) )
+		maData.resize( static_cast< sal_Int32 >( location ) );
+
+	if ( location > static_cast< sal_Int64 >( maData.size() ) )
+		maData.resize( static_cast< sal_Int32 >( location ) );
 
 	mnCursor = static_cast< sal_Int32 >( location );
 }
@@ -212,8 +212,8 @@ void SAL_CALL UNOMemoryStream::closeOutput() throw (NotConnectedException, Buffe
 //XTruncate
 void SAL_CALL UNOMemoryStream::truncate() throw (IOException, RuntimeException)
 {
-    maData.resize( 0 );
-    mnCursor = 0;
+	maData.resize( 0 );
+	mnCursor = 0;
 }
 
 ::rtl::OUString SAL_CALL UNOMemoryStream::getImplementationName_static()
@@ -230,7 +230,7 @@ Sequence< ::rtl::OUString > SAL_CALL UNOMemoryStream::getSupportedServiceNames_s
 }
 
 Reference< XInterface > SAL_CALL UNOMemoryStream::Create(
-    const Reference< XComponentContext >& )
+	const Reference< XComponentContext >& )
 {
 	return static_cast<OWeakObject*>(new UNOMemoryStream());
 }
@@ -239,5 +239,5 @@ Reference< XInterface > SAL_CALL UNOMemoryStream::Create(
 
 void createRegistryInfo_UNOMemoryStream()
 {
-    static ::comphelper::module::OAutoRegistration< ::comphelper::UNOMemoryStream > aAutoRegistration;
+	static ::comphelper::module::OAutoRegistration< ::comphelper::UNOMemoryStream > aAutoRegistration;
 }
