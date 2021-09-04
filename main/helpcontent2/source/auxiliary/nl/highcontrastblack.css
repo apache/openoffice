@@ -21,163 +21,92 @@
 
 /*
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-+                          STAROFFICE 6.0 HELP                      +
-+                    HIGH CONTRAST BLACK STYLESHEET                 +
-+                           WESTERN LANGUAGES                       +
-+-------------------------------------------------------------------+
-+ This stylesheet defines the appearance of the online help files.  +
-+ It is language dependent and located in {installdir}/help/{lang}  +
-+-------------------------------------------------------------------+
-+ (c) 2001 Sun Microsystems, Inc. All Rights Reserved               +
-+-------------------------------------------------------------------+
-+ Last changes: 11-JUL-02 FPE                                       +
++                          OPENOFFICE HELP                          +
++                          HIGH CONTRAST BLACK STYLESHEET           +
++                          WESTERN LANGUAGES                        +
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++ LAST CHANGES: 25-JUL-2018                                         +
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
 
-/* Main Styles */
-body                       { background: #000000; }
-p                          { 
-                             font-family: Albany,Helvetica,Verdana,Tahoma,Andale Sans,Arial,lucidux sans;
-                             font-size: 9pt; 
-                             color: #FFFFFF;
-                           }
-td                         { 
-                             color: #FFFFFF;
-                             margin-left: 0pt; 
-                           }
-th                         { color:#FFFFFF; 
-                             align: left; 
-                             margin-left: 0pt; 
-                             font-weight:bold;
-                           }
+body, p, h1, h2, h3, h4, h5, h6, .listitem, .listitemintable, .tablecontent, .tablecontentintable
+	{ font-family: "Bitstream Vera Sans",Arial,Helvetica,Lucida,Geneva,Helmet,sans-serif,"Andale Sans UI","Arial Unicode MS","Lucida Sans Unicode",Tahoma; }
 
-/* Link styles */
+.code, .codeintable, .example, .exampleintable, .literal, .literalintable, .path, .pathintable
+	{ font-family: "Bitstream Vera Sans Mono",Cumberland,"Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",Monaco,Monospaced; margin-top: 1pt; margin-bottom: 1pt; }
 
-.ContentLink               { 
-                             color:#FFFFFF; 
-                             font-weight: bold; 
-                             font-decoration: none; 
-                           }
-.ContentLink:hover         { font-decoration: underline; }
+.acronym
+	{ font-weight: bold; }
 
-/* Style classes simple paragraphs */
+.related
+	{ font-weight: bold; margin-top: 20pt; }
 
-.Paragraph                 { 
-                             margin-left: 0pt;  
-                             margin-top: 7pt; 
-                             margin-bottom: 7pt;
-                           }
-.ParaList                  { 
-                             margin-left: 20pt; 
-                             margin-top: 2pt; 
-                             margin-bottom: 2pt; 
-                           }
-.PropText                  { 
-                             font-family: Cumberland,Courier New,Courier; 
-                             margin-top: 2pt; 
-                             margin-bottom: 2pt; 
-                           }
+.emph, .menuitem, .keycode
+	{ font-weight: bold; }
 
-/* Style classes headings */
+.tablehead, .tableheadintable
+	{ font-weight: bold; margin-top: 0px; }
+
+.howtogetheader
+	{ font-weight: bold; padding: 3px; }
+
+h1, h2, h3, h4, h5, h6
+	{ margin-bottom: 5pt; }
+
+p, td
+	{ font-size: 11pt; }
+
+h1
+	{ font-size: 18pt; padding-bottom: 6px; margin-bottom: 6px; }
+
+h2
+	{ font-size: 14pt; }
+
+h3
+	{ font-size: 12pt; }
+
+h4, h5, h6
+	{ font-size: 11pt; }
+
+.relatedtopics
+	{ font-weight: normal; }
+
+.relatedbody
+	{ margin-top: 2px; margin-bottom: 2px; margin-left: 5px; }
+
+.wide
+	{ width: 100%; }
+
+.topalign
+	{ vertical-align: top; border: 1px; }
+
+.bug
+	{ color: red; border: 1px solid red; }
 
 
-h1, .Head1                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:18pt; 
-                             font-weight: bold; 
-                             margin-top: 5pt; 
-                           }
-h2, .Head2                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:14pt; 
-                             font-weight: bold; 
-                             margin-top: 20pt; 
-                             margin-bottom: 2pt;
-                           }
-h3, .Head3                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:12pt; 
-                             font-weight:bold; 
-                             margin-top: 25pt; 
-                             margin-bottom: 2pt;
-                           } 
-h4, .Head4                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:10pt; 
-                             font-weight:bold; 
-                             margin-top: 20pt; 
-                             margin-bottom: 2pt;
-                           }
-h5, .Head5                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:10pt; 
-                             margin-top: 15pt; 
-                             margin-bottom: 2pt;
-                           }
-h6, .Head6                 { 
-                             font-family: Arial,Helvetica,Albany,lucidux sans; 
-                             color:#FFFFFF; 
-                             font-size:10pt; 
-                             margin-top: 15pt; 
-                             margin-bottom: 2pt;
-                           }
+/* HIGH CONTRAST SPECIFIC SETTINGS */
 
-/* Style classes tables */
+body, p, h1, h2, h3, h4, h5, h6, .listitem, .listitemintable, .tablecontent, .tablecontentintable
+	{ background: #000000; color: #FFFFFF; }
 
-.TextInTable               { 
-                             color:#FFFFFF; 
-                             align: left; 
-                             margin-left: 0pt; 
-                           }
-.TableHead                 { 
-                             color:#FFFFFF; 
-                             align: left; 
-                             font-weight:bold; 
-                           }
+.related
+	{ border-top: 1px solid #FFFFFF; }
 
-/* Style classes spans */
-.emph                      { font-weight: bold; }
+.howtogetheader
+	{ border: 1px solid #FFFFFF; background: #000000; }
 
-/* Style classes special context */
+h1
+	{ border-bottom: 1px solid #FFFFFF; }
 
-.tablebg                   { background: #000000; }
-.tableheadbg               { background: #000000; }
-.tabledatabg               { background: #000000; }
+.howtoget
+	{ background:#000000; }
 
-.doctitlebg                { background: #000000; }
-.doctablebg                { background: #000000; }
+.howtogetbody
+	{ background:#000000; }
 
-.howtogetheader            { 
-                             font-weight: bold; 
-                             color: #FFFFFF; 
-                             background: #000000; 
-                           }
-.howtogetbody              { 
-                             font-size: 9pt; 
-                             color: #FFFFFF; 
-                             background: #000000; 
-                           }
-.howtogetpara              { 
-                             font-size: 9pt; 
-                             color: #FFFFFF; 
-                             margin-top: 2pt; 
-                             margin-bottom: 2pt;
-                           }
-.reltop                    { 
-                             background: #000000; 
-                             color:#FFFFFF; 
-                             font-size:10pt; 
-                             font-weight:bold; 
-                             margin-top: 20pt; 
-                             margin-bottom: 2pt;
-                           }
+.debug
+	{ border: 1px solid red; padding: 3px; display: none; }
 
-/* Style classes Webtop context */
-
-.ContentCell               { background: #000000; }
+a
+	{ color: #FFFFFF; }

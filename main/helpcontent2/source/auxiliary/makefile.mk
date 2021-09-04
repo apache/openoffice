@@ -47,7 +47,7 @@ TREEFILES  = \
 ALLTAR : aux_dirs $(COMMONMISC)$/treefiles.done $(COMMONBIN)$/helpimg.ilst
 
 .IF "$(WITH_LANG)"!=""
-t_aux_langdirs:=$(shell @find ./ -name "*.cfg" | sed "s/\.\/\///" | sed "s/\.\///" )
+t_aux_langdirs:=$(shell @find $(WITH_LANG) en-US -name "*.cfg" | sed "s/\.\/\///" | sed "s/\.\///" )
 
 aux_langdirs:=$(uniq $(t_aux_langdirs:d:d))
 

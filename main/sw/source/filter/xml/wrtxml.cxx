@@ -207,8 +207,7 @@ pGraphicHelper = SvXMLGraphicHelper::Create( xStg,
 	SvtSaveOptions aSaveOpt;
 	OUString sUsePrettyPrinting(RTL_CONSTASCII_USTRINGPARAM("UsePrettyPrinting"));
 	sal_Bool bUsePrettyPrinting( aSaveOpt.IsPrettyPrinting() );
-	aAny.setValue( &bUsePrettyPrinting, ::getBooleanCppuType() );
-	xInfoSet->setPropertyValue( sUsePrettyPrinting, aAny );
+	xInfoSet->setPropertyValue( sUsePrettyPrinting, uno::makeAny(bUsePrettyPrinting));
 
     // save show redline mode ...
 	OUString sShowChanges(RTL_CONSTASCII_USTRINGPARAM("ShowChanges"));
