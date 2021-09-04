@@ -405,12 +405,57 @@ private:
 		bool isBinary );
 	void setReferenceCount() const;
 	
+    /** Set a variable unless already set with a different value.
+     *
+     * @param variable variable to set.
+     * @param value value to set.
+     *
+     * @throw com::sun::star::uno::RuntimeException if the variable is not
+     * empty and its contents are different from value.
+     */
+    void setIfEmpty(rtl::OUString &variable, const rtl::OUString &value);
+    /** Set the X509 issuer name
+     *
+     * @param ouX509IssuerName value to set.
+     *
+     * This method should be called not more than once.
+     *
+     * @throw com::sun:star::uno::RuntimeException if a tampering is
+     * detected.
+     */
 	void setX509IssuerName( rtl::OUString& ouX509IssuerName );
+    /** Set the X509 serial number.
+     *
+     * @param ouX509SerialNumber value to set.
+     *
+     * This method should be called not more than once.
+     *
+     * @throw com::sun:star::uno::RuntimeException if a tampering is
+     * detected.
+     */
 	void setX509SerialNumber( rtl::OUString& ouX509SerialNumber );
+    /** Set the X509 certificate.
+     *
+     * @param ouX509Certificate value to set.
+     *
+     * This method should be called not more than once.
+     *
+     * @throw com::sun:star::uno::RuntimeException if a tampering is
+     * detected.
+     */
 	void setX509Certificate( rtl::OUString& ouX509Certificate );
 	void setSignatureValue( rtl::OUString& ouSignatureValue );
 	void setDigestValue( rtl::OUString& ouDigestValue );
 	
+    /** Set the signature date.
+     *
+     * @param ouDate value to set.
+     *
+     * This method should be called not more than once.
+     *
+     * @throw com::sun:star::uno::RuntimeException if a tampering is
+     * detected.
+     */
 	void setDate( rtl::OUString& ouDate );
 
 	void setId( rtl::OUString& ouId );

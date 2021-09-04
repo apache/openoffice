@@ -177,22 +177,30 @@ void XSecController::setReferenceCount() const
 	}
 }
 
+void XSecController::setIfEmpty(rtl::OUString &variable, const rtl::OUString &value) {
+    if (variable.getLength() == 0) {
+        variable = value;
+    } else if (variable != value) {
+        throw cssu::RuntimeException(rtl::OUString::createFromAscii("Value already set. Tampering?"), *this);
+    }
+}
+
 void XSecController::setX509IssuerName( rtl::OUString& ouX509IssuerName )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
-	isi.signatureInfor.ouX509IssuerName = ouX509IssuerName;
+	setIfEmpty(isi.signatureInfor.ouX509IssuerName, ouX509IssuerName);
 }
 
 void XSecController::setX509SerialNumber( rtl::OUString& ouX509SerialNumber )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
-	isi.signatureInfor.ouX509SerialNumber = ouX509SerialNumber;
+	setIfEmpty(isi.signatureInfor.ouX509SerialNumber, ouX509SerialNumber);
 }
 
 void XSecController::setX509Certificate( rtl::OUString& ouX509Certificate )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
-	isi.signatureInfor.ouX509Certificate = ouX509Certificate;
+	setIfEmpty(isi.signatureInfor.ouX509Certificate, ouX509Certificate);
 }
 
 void XSecController::setSignatureValue( rtl::OUString& ouSignatureValue )
@@ -212,7 +220,7 @@ void XSecController::setDate( rtl::OUString& ouDate )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
 	convertDateTime( isi.signatureInfor.stDateTime, ouDate );
-	isi.signatureInfor.ouDateTime = ouDate;
+	setIfEmpty(isi.signatureInfor.ouDateTime, ouDate);
 }
 
 /*
