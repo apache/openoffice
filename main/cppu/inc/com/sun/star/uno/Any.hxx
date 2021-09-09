@@ -251,9 +251,9 @@ inline sal_Bool SAL_CALL operator >>= ( Any const & rAny, bool & value )
 	{
 		value = *reinterpret_cast< sal_Bool const * >(
             rAny.pData ) != sal_False;
-		return true;
+		return sal_True;
 	}
-	return false;
+	return sal_False;
 }
 
 //______________________________________________________________________________

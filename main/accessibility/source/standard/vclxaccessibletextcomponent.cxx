@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,7 +56,7 @@ using namespace ::comphelper;
 VCLXAccessibleTextComponent::VCLXAccessibleTextComponent( VCLXWindow* pVCLXWindow )
 	:VCLXAccessibleComponent( pVCLXWindow )
 {
-    if ( GetWindow() )
+	if ( GetWindow() )
 		m_sText = OutputDevice::GetNonMnemonicString( GetWindow()->GetText() );
 }
 
@@ -71,28 +71,28 @@ VCLXAccessibleTextComponent::~VCLXAccessibleTextComponent()
 void VCLXAccessibleTextComponent::SetText( const ::rtl::OUString& sText )
 {
 	Any aOldValue, aNewValue;
-    if ( implInitTextChangedEvent( m_sText, sText, aOldValue, aNewValue ) )
-    {
-        m_sText = sText;
+	if ( implInitTextChangedEvent( m_sText, sText, aOldValue, aNewValue ) )
+	{
+		m_sText = sText;
 		NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
-    }
+	}
 }
 
 // -----------------------------------------------------------------------------
 
 void VCLXAccessibleTextComponent::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 {
-    switch ( rVclWindowEvent.GetId() )
-    {
-        case VCLEVENT_WINDOW_FRAMETITLECHANGED:
-        {
+	switch ( rVclWindowEvent.GetId() )
+	{
+		case VCLEVENT_WINDOW_FRAMETITLECHANGED:
+		{
 			VCLXAccessibleComponent::ProcessWindowEvent( rVclWindowEvent );
-            SetText( implGetText() );
-        }
-        break;
+			SetText( implGetText() );
+		}
+		break;
 		default:
 			VCLXAccessibleComponent::ProcessWindowEvent( rVclWindowEvent );
-   }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -101,11 +101,11 @@ void VCLXAccessibleTextComponent::ProcessWindowEvent( const VclWindowEvent& rVcl
 
 ::rtl::OUString VCLXAccessibleTextComponent::implGetText()
 {
-    ::rtl::OUString aText;
-    if ( GetWindow() )
+	::rtl::OUString aText;
+	if ( GetWindow() )
 		aText = OutputDevice::GetNonMnemonicString( GetWindow()->GetText() );
 
-    return aText;
+	return aText;
 }
 
 // -----------------------------------------------------------------------------
@@ -171,8 +171,8 @@ sal_Bool VCLXAccessibleTextComponent::setCaretPosition( sal_Int32 nIndex ) throw
 sal_Unicode VCLXAccessibleTextComponent::getCharacter( sal_Int32 nIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-    
-	return OCommonAccessibleText::getCharacter( nIndex );	
+
+	return OCommonAccessibleText::getCharacter( nIndex );
 }
 
 // -----------------------------------------------------------------------------
@@ -184,11 +184,11 @@ Sequence< PropertyValue > VCLXAccessibleTextComponent::getCharacterAttributes( s
 	Sequence< PropertyValue > aValues;
 	::rtl::OUString sText( implGetText() );
 
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
-    if ( GetWindow() )
-    {
+	if ( GetWindow() )
+	{
 		Font aFont = GetWindow()->GetControlFont();
 
 		sal_Int32 nBackColor = GetWindow()->GetControlBackground().GetColor();
@@ -200,7 +200,7 @@ Sequence< PropertyValue > VCLXAccessibleTextComponent::getCharacterAttributes( s
 		Font aDefaultVCLFont;
 		OutputDevice* pDev = Application::GetDefaultDevice();
 		if ( pDev )
-		{	
+		{
 			aDefaultVCLFont = pDev->GetSettings().GetStyleSettings().GetAppFont();
 			if ( !aFont.GetName().Len() )
 			{
@@ -244,11 +244,11 @@ Sequence< PropertyValue > VCLXAccessibleTextComponent::getCharacterAttributes( s
 		*/
 
 		::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
-		
-		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
-    }
 
-    return aValues;
+		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
+	}
+
+	return aValues;
 }
 
 // -----------------------------------------------------------------------------
@@ -257,15 +257,15 @@ awt::Rectangle VCLXAccessibleTextComponent::getCharacterBounds( sal_Int32 nIndex
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	awt::Rectangle aRect;
 	Control* pControl = static_cast< Control* >( GetWindow() );
 	if ( pControl )
 		aRect = AWTRectangle( pControl->GetCharacterBounds( nIndex ) );
 
-    return aRect;
+	return aRect;
 }
 
 // -----------------------------------------------------------------------------
@@ -273,8 +273,8 @@ awt::Rectangle VCLXAccessibleTextComponent::getCharacterBounds( sal_Int32 nIndex
 sal_Int32 VCLXAccessibleTextComponent::getCharacterCount() throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
-	return OCommonAccessibleText::getCharacterCount();		
+
+	return OCommonAccessibleText::getCharacterCount();
 }
 
 // -----------------------------------------------------------------------------
@@ -288,7 +288,7 @@ sal_Int32 VCLXAccessibleTextComponent::getIndexAtPoint( const awt::Point& aPoint
 	if ( pControl )
 		nIndex = pControl->GetIndexForPoint( VCLPoint( aPoint ) );
 
-    return nIndex;
+	return nIndex;
 }
 
 // -----------------------------------------------------------------------------
@@ -296,8 +296,8 @@ sal_Int32 VCLXAccessibleTextComponent::getIndexAtPoint( const awt::Point& aPoint
 ::rtl::OUString VCLXAccessibleTextComponent::getSelectedText() throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
-	return OCommonAccessibleText::getSelectedText();				
+
+	return OCommonAccessibleText::getSelectedText();
 }
 
 // -----------------------------------------------------------------------------
@@ -305,7 +305,7 @@ sal_Int32 VCLXAccessibleTextComponent::getIndexAtPoint( const awt::Point& aPoint
 sal_Int32 VCLXAccessibleTextComponent::getSelectionStart() throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
+
 	return OCommonAccessibleText::getSelectionStart();
 }
 
@@ -314,8 +314,8 @@ sal_Int32 VCLXAccessibleTextComponent::getSelectionStart() throw (RuntimeExcepti
 sal_Int32 VCLXAccessibleTextComponent::getSelectionEnd() throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
-	return OCommonAccessibleText::getSelectionEnd();	
+
+	return OCommonAccessibleText::getSelectionEnd();
 }
 
 // -----------------------------------------------------------------------------
@@ -324,8 +324,8 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -335,7 +335,7 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 ::rtl::OUString VCLXAccessibleTextComponent::getText() throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
+
 	return OCommonAccessibleText::getText();
 }
 
@@ -344,8 +344,8 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 ::rtl::OUString VCLXAccessibleTextComponent::getTextRange( sal_Int32 nStartIndex, sal_Int32 nEndIndex ) throw (IndexOutOfBoundsException, RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
-	return OCommonAccessibleText::getTextRange( nStartIndex, nEndIndex );		
+
+	return OCommonAccessibleText::getTextRange( nStartIndex, nEndIndex );
 }
 
 // -----------------------------------------------------------------------------
@@ -353,7 +353,7 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 ::com::sun::star::accessibility::TextSegment VCLXAccessibleTextComponent::getTextAtIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
+
 	return OCommonAccessibleText::getTextAtIndex( nIndex, aTextType );
 }
 
@@ -362,7 +362,7 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 ::com::sun::star::accessibility::TextSegment VCLXAccessibleTextComponent::getTextBeforeIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
+
 	return OCommonAccessibleText::getTextBeforeIndex( nIndex, aTextType );
 }
 
@@ -371,7 +371,7 @@ sal_Bool VCLXAccessibleTextComponent::setSelection( sal_Int32 nStartIndex, sal_I
 ::com::sun::star::accessibility::TextSegment VCLXAccessibleTextComponent::getTextBehindIndex( sal_Int32 nIndex, sal_Int16 aTextType ) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::uno::RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
-	
+
 	return OCommonAccessibleText::getTextBehindIndex( nIndex, aTextType );
 }
 
@@ -397,14 +397,14 @@ sal_Bool VCLXAccessibleTextComponent::copyText( sal_Int32 nStartIndex, sal_Int32
 			Reference< datatransfer::clipboard::XFlushableClipboard > xFlushableClipboard( xClipboard, uno::UNO_QUERY );
 			if( xFlushableClipboard.is() )
 				xFlushableClipboard->flushClipboard();
-			
+
 			Application::AcquireSolarMutex( nRef );
 
 			bReturn = sal_True;
 		}
 	}
 
-    return bReturn;
+	return bReturn;
 }
 
 // -----------------------------------------------------------------------------

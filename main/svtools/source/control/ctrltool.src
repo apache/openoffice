@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include <svtools/svtools.hrc>
@@ -63,7 +64,7 @@ String STR_SVT_STYLE_BLACK_ITALIC
 };
 
 /*
-Finnische Texte:
+Finnish text:
 	"Light",
 	"Light Kursivoitu",
 	"Normaali",
@@ -91,50 +92,17 @@ String STR_SVT_FONTMAP_SCREENONLY
 
 String STR_SVT_FONTMAP_SIZENOTAVAILABLE
 {
-	Text [ en-US ] = "This font size has not been installed. The closest available size will be used.";
+	Text [ en-US ] = "This font size has not been installed. The closest available size will be used." ;
 };
 
 String STR_SVT_FONTMAP_STYLENOTAVAILABLE
 {
-	Text [ en-US ] = "This font style will be simulated or the closest matching style will be used.";
+	Text [ en-US ] = "This font style will be simulated or the closest matching style will be used." ;
 };
 
 String STR_SVT_FONTMAP_NOTAVAILABLE
 {
-	Text [ en-US ] = "This font has not been installed. The closest available font will be used.";
+	Text [ en-US ] = "This font has not been installed. The closest available font will be used." ;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

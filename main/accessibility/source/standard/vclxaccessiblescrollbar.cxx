@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,16 +67,16 @@ VCLXAccessibleScrollBar::~VCLXAccessibleScrollBar()
 
 void VCLXAccessibleScrollBar::ProcessWindowEvent( const VclWindowEvent& rVclWindowEvent )
 {
-    switch ( rVclWindowEvent.GetId() )
-    {
+	switch ( rVclWindowEvent.GetId() )
+	{
 		case VCLEVENT_SCROLLBAR_SCROLL:
-        {
-            NotifyAccessibleEvent( AccessibleEventId::VALUE_CHANGED, Any(), Any() );
-        }
-        break;
+		{
+			NotifyAccessibleEvent( AccessibleEventId::VALUE_CHANGED, Any(), Any() );
+		}
+		break;
 		default:
 			VCLXAccessibleComponent::ProcessWindowEvent( rVclWindowEvent );
-   }
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -89,11 +89,11 @@ void VCLXAccessibleScrollBar::FillAccessibleStateSet( utl::AccessibleStateSetHel
 	if ( pVCLXScrollBar )
 	{
 		// IA2 CWS: scroll bar should not have FOCUSABLE state.
-        // rStateSet.AddState( AccessibleStateType::FOCUSABLE );
+		// rStateSet.AddState( AccessibleStateType::FOCUSABLE );
 		if ( pVCLXScrollBar->getOrientation() == ScrollBarOrientation::HORIZONTAL )
-            rStateSet.AddState( AccessibleStateType::HORIZONTAL );
+			rStateSet.AddState( AccessibleStateType::HORIZONTAL );
 		else if ( pVCLXScrollBar->getOrientation() == ScrollBarOrientation::VERTICAL )
-            rStateSet.AddState( AccessibleStateType::VERTICAL );
+			rStateSet.AddState( AccessibleStateType::VERTICAL );
 	}
 }
 
@@ -115,7 +115,7 @@ IMPLEMENT_FORWARD_XTYPEPROVIDER2( VCLXAccessibleScrollBar, VCLXAccessibleCompone
 
 ::rtl::OUString VCLXAccessibleScrollBar::getImplementationName() throw (RuntimeException)
 {
-	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleScrollBar" );	
+	return ::rtl::OUString::createFromAscii( "com.sun.star.comp.toolkit.AccessibleScrollBar" );
 }
 
 // -----------------------------------------------------------------------------
@@ -145,7 +145,7 @@ sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex ) throw 
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	sal_Bool bReturn = sal_False;
 	ScrollBar* pScrollBar = static_cast< ScrollBar* >( GetWindow() );
@@ -174,7 +174,7 @@ sal_Bool VCLXAccessibleScrollBar::doAccessibleAction ( sal_Int32 nIndex ) throw 
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	::rtl::OUString sDescription;
 
@@ -197,9 +197,9 @@ Reference< XAccessibleKeyBinding > VCLXAccessibleScrollBar::getAccessibleActionK
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
-	return Reference< XAccessibleKeyBinding >();	
+	return Reference< XAccessibleKeyBinding >();
 }
 
 // -----------------------------------------------------------------------------
@@ -258,7 +258,7 @@ Any VCLXAccessibleScrollBar::getMaximumValue(  ) throw (RuntimeException)
 	VCLXScrollBar* pVCLXScrollBar = static_cast< VCLXScrollBar* >( GetVCLXWindow() );
 	if ( pVCLXScrollBar )
 		aValue <<= (sal_Int32) pVCLXScrollBar->getMaximum();
-				
+
 	return aValue;
 }
 
@@ -270,7 +270,7 @@ Any VCLXAccessibleScrollBar::getMinimumValue(  ) throw (RuntimeException)
 
 	Any aValue;
 	aValue <<= (sal_Int32) 0;
-	
+
 	return aValue;
 }
 
@@ -285,10 +285,9 @@ Any VCLXAccessibleScrollBar::getMinimumValue(  ) throw (RuntimeException)
 	if ( pVCLXScrollBar )
 	{
 		if ( pVCLXScrollBar->getOrientation() == ScrollBarOrientation::HORIZONTAL )
-            aName = TK_RES_STRING( RID_STR_ACC_SCROLLBAR_NAME_HORIZONTAL );
+			aName = TK_RES_STRING( RID_STR_ACC_SCROLLBAR_NAME_HORIZONTAL );
 		else if ( pVCLXScrollBar->getOrientation() == ScrollBarOrientation::VERTICAL )
-            aName = TK_RES_STRING( RID_STR_ACC_SCROLLBAR_NAME_VERTICAL );
+			aName = TK_RES_STRING( RID_STR_ACC_SCROLLBAR_NAME_VERTICAL );
 	}
 	return aName;
 }
-

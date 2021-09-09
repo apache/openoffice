@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -24,11 +24,10 @@
 #include "globals.hrc"
 #include "attrdesc.hrc"
 /*---------------------------------------------------------------------
-	Strings fuer textuelle Attribute
+	Strings for textual Attributes
  ---------------------------------------------------------------------*/
 String STR_DROP_OVER
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Initialen über : Initialen ³ber */
 	Text [ en-US ] = "Drop Caps over" ;
 };
 String STR_DROP_LINES
@@ -73,12 +72,10 @@ String STR_NO_CHARFMT
 };
 String STR_FOOTER
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Fußzeile : Fu˜zeile */
 	Text [ en-US ] = "Footer" ;
 };
 String STR_NO_FOOTER
 {
-	/* ### ACHTUNG: Neuer Text in Resource? keine Fußzeile : keine Fu˜zeile */
 	Text [ en-US ] = "No footer" ;
 };
 String STR_HEADER
@@ -123,7 +120,6 @@ String STR_SURROUND_INSIDE
 };
 String STR_SURROUND_OUTSIDE
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Umlauf außen : Umlauf au˜en */
 	Text [ en-US ] = "Outer wrap" ;
 };
 String STR_SURROUND_ANCHORONLY
@@ -136,12 +132,10 @@ String STR_FRM_WIDTH
 };
 String STR_FRM_FIXEDHEIGHT
 {
-	/* ### ACHTUNG: Neuer Text in Resource? feste Höhe: : feste H÷he: */
 	Text [ en-US ] = "Fixed height:" ;
 };
 String STR_FRM_MINHEIGHT
 {
-	/* ### ACHTUNG: Neuer Text in Resource? min. Höhe: : min. H÷he: */
 	Text [ en-US ] = "Min. height:" ;
 };
 String STR_FLY_AT_PARA
@@ -214,7 +208,6 @@ String STR_HORI_INSIDE
 };
 String STR_HORI_OUTSIDE
 {
-	/* ### ACHTUNG: Neuer Text in Resource? außen : au˜en */
 	Text [ en-US ] = "outside" ;
 };
 String STR_HORI_FULL
@@ -231,17 +224,10 @@ String STR_LINE_WIDTH
 };
 String STR_MAX_FTN_HEIGHT
 {
-	/* ### ACHTUNG: Neuer Text in Resource? max. Fußnotenbereich: : max. Fu˜notenbereich: */
 	Text [ en-US ] = "Max. footnote area:" ;
 };
 String STR_EDIT_IN_READONLY
 {
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im Schreibeschütztem Dokument */
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im Schreibeschütztem Dokument */
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im Schreibeschütztem Dokument */
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im Schreibeschütztem Dokument */
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im Schreibeschütztem Dokument */
-	/* ### ACHTUNG: Neuer Text in Resource? editierbar im schreibgeschütztem Dokument : editierbar im schreibgesch³tztem Dokument */
 	Text [ en-US ] = "Editable in read-only document" ;
 };
 String STR_LAYOUT_SPLIT
@@ -279,102 +265,103 @@ String STR_LINCOUNT_START
 
 String STR_LUMINANCE
 {
-	Text [ en-US ] = "Brightness: ";
+	Text [ en-US ] = "Brightness: " ;
 };
 
 String STR_CHANNELR
 {
-	Text [ en-US ] = "Red: ";
+	Text [ en-US ] = "Red: " ;
 };
 
 String STR_CHANNELG
 {
-	Text [ en-US ] = "Green: ";
+	Text [ en-US ] = "Green: " ;
 };
 
 String STR_CHANNELB
 {
-	Text [ en-US ] = "Blue: ";
+	Text [ en-US ] = "Blue: " ;
 };
 
 String STR_CONTRAST
 {
-	Text [ en-US ] = "Contrast: ";
+	Text [ en-US ] = "Contrast: " ;
 };
 
 String STR_GAMMA
 {
-	Text [ en-US ] = "Gamma: ";
+	Text [ en-US ] = "Gamma: " ;
 };
 
 String STR_TRANSPARENCY
 {
-	Text [ en-US ] = "Transparency: ";
+	Text [ en-US ] = "Transparency: " ;
 };
 
 String STR_INVERT
 {
-	Text [ en-US ] = "Invert";
+	Text [ en-US ] = "Invert" ;
 };
 String STR_INVERT_NOT
 {
-	Text [ en-US ] = "do not invert";
+	Text [ en-US ] = "do not invert" ;
 };
 
 String STR_DRAWMODE
 {
-	Text [ en-US ] = "Graphics mode: ";
+	Text [ en-US ] = "Graphics mode: " ;
 };
 
 String STR_DRAWMODE_STD
 {
-	Text [ en-US ] = "Standard";
+	Text [ en-US ] = "Standard" ;
 };
 String STR_DRAWMODE_GREY
 {
-	Text [ en-US ] = "Grayscales";
+	Text [ en-US ] = "Grayscales" ;
 };
 String STR_DRAWMODE_BLACKWHITE
 {
-	Text [ en-US ] = "Black & White";
+	Text [ en-US ] = "Black & White" ;
 };
 String STR_DRAWMODE_WATERMARK
 {
-	Text [ en-US ] = "Watermark";
+	Text [ en-US ] = "Watermark" ;
 };
 String STR_ROTATION
 {
-	Text [ en-US ] = "Rotation";
+	Text [ en-US ] = "Rotation" ;
 };
 
 String STR_GRID_NONE
 {
-	Text [ en-US ] = "No grid";
+	Text [ en-US ] = "No grid" ;
 };
 
 String STR_GRID_LINES_ONLY
 {
-	Text [ en-US ] = "Grid (lines only)";
+	Text [ en-US ] = "Grid (lines only)" ;
 };
 
 String STR_GRID_LINES_CHARS
 {
-	Text [ en-US ] = "Grid (lines and characters)";
+	Text [ en-US ] = "Grid (lines and characters)" ;
 };
 String STR_FOLLOW_TEXT_FLOW
 {
-    Text [ en-US ] = "Follow text flow";
+	Text [ en-US ] = "Follow text flow" ;
 };
 String STR_DONT_FOLLOW_TEXT_FLOW
 {
-    Text [ en-US ] = "Do not follow text flow";
+	Text [ en-US ] = "Do not follow text flow" ;
 };
 String STR_CONNECT_BORDER_ON
 {
-    Text [ en-US ] = "Merge borders";
+	Text [ en-US ] = "Merge borders" ;
 };
 String STR_CONNECT_BORDER_OFF
 {
-    Text [ en-US ] = "Do not merge borders";
+	Text [ en-US ] = "Do not merge borders" ;
 };
 
+// ********************************************************************** EOF

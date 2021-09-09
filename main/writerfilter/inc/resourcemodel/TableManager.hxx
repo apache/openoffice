@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -112,7 +112,7 @@ class TableManager
 {
 #ifdef DEBUG_TABLE
     TagLogger::Pointer_t mpTableLogger;
-#endif    
+#endif
 
     class TableManagerState
     {
@@ -120,37 +120,37 @@ class TableManager
          properties at the current point in document
          */
         PropertiesPointer mpProps;
-        
+
         /**
          properties of the current cell
          */
         PropertiesPointer mpCellProps;
-        
+
         /**
          properties of the current row
          */
         PropertiesPointer mpRowProps;
-        
+
         /**
          properties of the current table
          */
         stack<PropertiesPointer> mTableProps;
-        
+
         /**
          true if at the end of a row
          */
         bool mbRowEnd;
-        
+
         /**
          true when in a cell
          */
         bool mbInCell;
-        
+
         /**
          true when at the end of a cell
          */
-        bool mbCellEnd; 
-		
+        bool mbCellEnd;
+
     public:
 		/**
 		 Constructor
@@ -159,17 +159,17 @@ class TableManager
 		: mbRowEnd(false), mbInCell(false), mbCellEnd(false)
 		{
 		}
-        
+
         virtual ~TableManagerState()
         {
         }
-        
+
         void startLevel()
         {
             PropertiesPointer pProps;
             mTableProps.push(pProps);
         }
-        
+
         void endLevel()
         {
             mTableProps.pop();
@@ -245,10 +245,10 @@ class TableManager
         PropertiesPointer getTableProps()
         {
             PropertiesPointer pResult;
-            
+
             if (mTableProps.size() > 0)
                 pResult = mTableProps.top();
-            
+
             return pResult;
         }
 
@@ -452,18 +452,18 @@ private:
        Resolve the current table to the TableDataHandler.
      */
     void resolveCurrentTable();
-    
+
     /**
      Open a cell at current level.
      */
-     
+
     void openCell(const T & handle, PropertiesPointer pProps);
-     
+
     /**
      Close a cell at current level.
      */
     void closeCell(const T & handle);
-    
+
     /**
      Ensure a cell is open at the current level.
     */
@@ -533,7 +533,7 @@ public:
     virtual void endParagraphGroup();
 
     /**
-       Handle an SPRM at curent handle.
+       Handle an SPRM at current handle.
 
        @param rSprm   the SPRM
      */
@@ -542,7 +542,7 @@ public:
     /**
        Handle properties at current handle.
 
-       @param pProps   the properites
+       @param pProps   the properties
      */
     virtual void props(PropertiesPointer pProps);
 
@@ -604,7 +604,7 @@ public:
      */
     virtual bool isIgnore() const;
 
-    
+
 #ifdef DEBUG_TABLE
     void setTagLogger(TagLogger::Pointer_t _tagLogger)
     {
@@ -701,17 +701,17 @@ void TableManager<T, PropertiesPointer>::startLevel()
     if (mpTableLogger.get() != NULL)
     {
         typename TableData<T, PropertiesPointer>::Pointer_t pTableData;
-        
+
         if (mTableDataStack.size() > 0)
             pTableData = mTableDataStack.top();
-        
+
         mpTableLogger->startElement("tablemanager.startLevel");
         mpTableLogger->attribute("level", mTableDataStack.size());
-        
+
         if (pTableData.get() != NULL)
-            mpTableLogger->attribute("openCell", 
+            mpTableLogger->attribute("openCell",
                                      pTableData->isCellOpen() ? "yes" : "no");
-        
+
         mpTableLogger->endElement("tablemanager.startLevel");
     }
 #endif
@@ -731,12 +731,12 @@ void TableManager<T, PropertiesPointer>::endLevel()
 
     mState.endLevel();
     mTableDataStack.pop();
-    
+
 #ifdef DEBUG_TABLE
     if (mpTableLogger.get() != NULL)
     {
         typename TableData<T, PropertiesPointer>::Pointer_t pTableData;
-        
+
         if (mTableDataStack.size() > 0)
             pTableData = mTableDataStack.top();
 
@@ -744,9 +744,9 @@ void TableManager<T, PropertiesPointer>::endLevel()
         mpTableLogger->attribute("level", mTableDataStack.size());
 
         if (pTableData.get() != NULL)
-            mpTableLogger->attribute("openCell", 
+            mpTableLogger->attribute("openCell",
                                      pTableData->isCellOpen() ? "yes" : "no");
-        
+
         mpTableLogger->endElement("tablemanager.endLevel");
     }
 #endif
@@ -765,7 +765,7 @@ void TableManager<T, PropertiesPointer>::endParagraphGroup()
     sal_Int32 nTableDepthDifference = mnTableDepthNew - mnTableDepth;
 
     PropertiesPointer pEmptyProps;
-    
+
     while (nTableDepthDifference > 0)
     {
         ensureOpenCell(pEmptyProps);
@@ -894,7 +894,7 @@ void TableManager<T, PropertiesPointer>::cellProps(PropertiesPointer pProps)
     if (mpTableLogger.get() != NULL)
         mpTableLogger->startElement("tablemanager.cellProps");
 #endif
-    
+
     if(getCellProps().get())
         getCellProps()->insert( pProps );
     else
@@ -1021,12 +1021,12 @@ void TableManager<T, PropertiesPointer>::endOfRowAction()
 template <typename T, typename PropertiesPointer>
 bool TableManager<T, PropertiesPointer>::isIgnore() const
 {
-    return isRowEnd();
+	return isRowEnd();
 }
 
 template <typename T, typename PropertiesPointer>
-void  TableManager<T, PropertiesPointer>::openCell
-(const T & rHandle, PropertiesPointer pProps) 
+void TableManager<T, PropertiesPointer>::openCell
+(const T & rHandle, PropertiesPointer pProps)
 {
 #ifdef DEBUG_TABLE
     mpTableLogger->startElement("tablemanager.openCell");
@@ -1038,32 +1038,32 @@ void  TableManager<T, PropertiesPointer>::openCell
     {
         typename TableData<T, PropertiesPointer>::Pointer_t
         pTableData = mTableDataStack.top();
-        
+
         pTableData->addCell(rHandle, pProps);
     }
 }
 
 template <typename T, typename PropertiesPointer>
-void  TableManager<T, PropertiesPointer>::closeCell
-(const T & rHandle) 
+void TableManager<T, PropertiesPointer>::closeCell
+(const T & rHandle)
 {
 #ifdef DEBUG_TABLE
     mpTableLogger->startElement("tablemanager.closeCell");
     mpTableLogger->chars(toString(rHandle));
     mpTableLogger->endElement("tablemanager.closeCell");
 #endif
-    
+
     if (mTableDataStack.size() > 0)
     {
-        typename TableData<T, PropertiesPointer>::Pointer_t 
+        typename TableData<T, PropertiesPointer>::Pointer_t
         pTableData = mTableDataStack.top();
-        
+
         pTableData->endCell(rHandle);
     }
 }
 
 template <typename T, typename PropertiesPointer>
-void  TableManager<T, PropertiesPointer>::ensureOpenCell(PropertiesPointer pProps)
+void TableManager<T, PropertiesPointer>::ensureOpenCell(PropertiesPointer pProps)
 {
 #ifdef DEBUG_TABLE
     mpTableLogger->startElement("tablemanager.ensureOpenCell");
@@ -1071,22 +1071,22 @@ void  TableManager<T, PropertiesPointer>::ensureOpenCell(PropertiesPointer pProp
 
     if (mTableDataStack.size() > 0)
     {
-        typename TableData<T, PropertiesPointer>::Pointer_t 
+        typename TableData<T, PropertiesPointer>::Pointer_t
         pTableData = mTableDataStack.top();
-        
+
         if (pTableData.get() != NULL)
         {
             if (!pTableData->isCellOpen())
                 openCell(getHandle(), pProps);
-            else 
+            else
                 pTableData->insertCellProperties(pProps);
         }
     }
 #ifdef DEBUG_TABLE
-    mpTableLogger->endElement("tablemanager.ensureOpenCell");
+	mpTableLogger->endElement("tablemanager.ensureOpenCell");
 #endif
 }
-        
+
 }
 
 #endif // INCLUDED_TABLE_MANAGER_HXX

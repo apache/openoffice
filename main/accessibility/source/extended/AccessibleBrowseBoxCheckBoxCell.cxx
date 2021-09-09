@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ namespace accessibility
 	using namespace com::sun::star::accessibility;
 	using namespace com::sun::star::uno;
 	using namespace com::sun::star::accessibility::AccessibleEventId;
-    using namespace ::svt;
+	using namespace ::svt;
 
 	AccessibleCheckBoxCell::AccessibleCheckBoxCell(const Reference<XAccessible >& _rxParent,
 								IAccessibleTableProvider& _rBrowseBox,
@@ -42,7 +42,7 @@ namespace accessibility
 								,const TriState& _eState,
 								sal_Bool _bEnabled,
 								sal_Bool _bIsTriState)
-        :AccessibleBrowseBoxCell(_rxParent, _rBrowseBox, _xFocusWindow, _nRowPos, _nColPos, BBTYPE_CHECKBOXCELL)
+		:AccessibleBrowseBoxCell(_rxParent, _rBrowseBox, _xFocusWindow, _nRowPos, _nColPos, BBTYPE_CHECKBOXCELL)
 		,m_eState(_eState)
 		,m_bEnabled(_bEnabled)
 		,m_bIsTriState(_bIsTriState)
@@ -61,16 +61,16 @@ namespace accessibility
 	// -----------------------------------------------------------------------------
 	::utl::AccessibleStateSetHelper* AccessibleCheckBoxCell::implCreateStateSetHelper()
 	{
-        ::utl::AccessibleStateSetHelper* pStateSetHelper =
-            AccessibleBrowseBoxCell::implCreateStateSetHelper();
-        if( isAlive() )
-        {
-            mpBrowseBox->FillAccessibleStateSetForCell(
-                *pStateSetHelper, getRowPos(), static_cast< sal_uInt16 >( getColumnPos() ) );
-            if ( m_eState == STATE_CHECK )
-                pStateSetHelper->AddState( AccessibleStateType::CHECKED );
-        }
-        return pStateSetHelper;
+		::utl::AccessibleStateSetHelper* pStateSetHelper =
+			AccessibleBrowseBoxCell::implCreateStateSetHelper();
+		if( isAlive() )
+		{
+			mpBrowseBox->FillAccessibleStateSetForCell(
+				*pStateSetHelper, getRowPos(), static_cast< sal_uInt16 >( getColumnPos() ) );
+			if ( m_eState == STATE_CHECK )
+				pStateSetHelper->AddState( AccessibleStateType::CHECKED );
+		}
+		return pStateSetHelper;
 	}
 	// -----------------------------------------------------------------------------
 	// -----------------------------------------------------------------------------
@@ -116,7 +116,7 @@ namespace accessibility
 			aValue <<= (sal_Int32) 2;
 		else
 			aValue <<= (sal_Int32) 1;
-					
+
 		return aValue;
 	}
 
@@ -126,7 +126,7 @@ namespace accessibility
 	{
 		Any aValue;
 		aValue <<= (sal_Int32) 0;
-		
+
 		return aValue;
 	}
 	// -----------------------------------------------------------------------------
@@ -145,24 +145,23 @@ namespace accessibility
 	{
 		return ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.comp.svtools.TableCheckBoxCell" ) );
 	}
-    // -----------------------------------------------------------------------------
-    sal_Int32 SAL_CALL AccessibleCheckBoxCell::getAccessibleIndexInParent()
-            throw ( ::com::sun::star::uno::RuntimeException )
-    {
-        ::osl::MutexGuard aGuard( getOslMutex() );
+	// -----------------------------------------------------------------------------
+	sal_Int32 SAL_CALL AccessibleCheckBoxCell::getAccessibleIndexInParent()
+			throw ( ::com::sun::star::uno::RuntimeException )
+	{
+		::osl::MutexGuard aGuard( getOslMutex() );
 
-        return ( getRowPos() * mpBrowseBox->GetColumnCount() ) + getColumnPos();
-    }
-    // -----------------------------------------------------------------------------
-    void AccessibleCheckBoxCell::SetChecked( sal_Bool _bChecked )
-    {
-        m_eState = _bChecked ? STATE_CHECK : STATE_NOCHECK;
-        Any aOldValue, aNewValue;
-        if ( _bChecked )
-            aNewValue <<= AccessibleStateType::CHECKED;
-        else
-            aOldValue <<= AccessibleStateType::CHECKED;
-        commitEvent( AccessibleEventId::STATE_CHANGED, aNewValue, aOldValue );
-    }
+		return ( getRowPos() * mpBrowseBox->GetColumnCount() ) + getColumnPos();
+	}
+	// -----------------------------------------------------------------------------
+	void AccessibleCheckBoxCell::SetChecked( sal_Bool _bChecked )
+	{
+		m_eState = _bChecked ? STATE_CHECK : STATE_NOCHECK;
+		Any aOldValue, aNewValue;
+		if ( _bChecked )
+			aNewValue <<= AccessibleStateType::CHECKED;
+		else
+			aOldValue <<= AccessibleStateType::CHECKED;
+		commitEvent( AccessibleEventId::STATE_CHANGED, aNewValue, aOldValue );
+	}
 }
-
