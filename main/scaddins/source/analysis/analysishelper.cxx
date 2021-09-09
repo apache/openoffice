@@ -2644,7 +2644,7 @@ ConvertDataList::ConvertDataList( void )
     NEWD( "HP",     1.341022E-03,           CDC_Power ); // Horsepower
     NEWD( "h",      1.341022E-03,           CDC_Power ); // Horsepower also
     NEWD( "PS",     1.359622E-03,           CDC_Power ); // *** German Pferdestaerke
-//  NEWD( "HP",     1.4102006031908E-03,    CDC_Power ); // Excel seams to be a little bit wrong... either this doesn't fit to J -> HPh
+//  NEWD( "HP",     1.4102006031908E-03,    CDC_Power ); // Excel seems to be a little bit wrong... either this doesn't fit to J -> HPh
 
     // MAGNETISM: 1 Tesla is...
     NEWDP( "T",     1.0000000000000000E00,  CDC_Magnetism ); // Tesla

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package mod._forms;
@@ -89,7 +90,7 @@ import util.utils;
 *    {@link util.DBTools DBTools} class for more information.</li>
 * </ul> <p>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.io.XPersistObject
 * @see com.sun.star.awt.UnoControlDateFieldModel
 * @see com.sun.star.form.XReset
@@ -134,31 +135,31 @@ public class GenericModelTest extends TestCase {
     private static Object m_dbSrc = null;
     private static DBTools.DataSourceInfo m_srcInf = null;
     /**
-     * This is the name of the Data Base which the test uses: "APITestDatabase"
-     */    
+     * This is the name of the Database which the test uses: "APITestDatabase"
+     */
     protected final static String m_dbSourceName = "APITestDatabase";
     protected final static String m_TestDB = "TestDB";
     private DBTools m_dbTools = null;
-    
+
     private static boolean m_ConnectionColsed = false;
-    
+
     /**
-     * descibes the kind of the shape which should be created.
+     * describes the kind of the shape which should be created.
      * Example: m_kindOfshape=DateFiled
-     */    
+     */
     public static String m_kindOfControl = null;
-    
+
     /**
-     * If your object needs some special propery values you can specify them with this
+     * If your object needs some special property values you can specify them with this
      * <CODE>ArrayList</CODE>. You have to add a <CODE>NamedValue</CODE> to this list.
      * Example:
      * NamedValue myProp = new NamedValue();
      * myProp.Name = "Test";
      * myProp.Value = "My special Value";
      * m_propertiesToSet.add(myProp);
-     */    
+     */
     public static ArrayList m_propertiesToSet = new ArrayList();
-    
+
     /**
      * This variable contains the name of the property which should be changed while
      * interface <CODE>com::sun::star::form::XUpdateBroadcaster</CODE> is tested. The
@@ -166,61 +167,61 @@ public class GenericModelTest extends TestCase {
      * "XUpdateBroadcaster.Checker" which is a <CODE>ifc.form._XUpdateBroadcaster.UpdateChecker</CODE>.
      * @see ifc.form._XUpdateBroadcaster.UpdateChecker
      * @see ifc.form._XUpdateBroadcaster
-     */    
+     */
     public static String m_ChangePropertyName = null;
     /**
      * This variable contains the value the property should be set while
      * interface <CODE>com::sun::star::form::XUpdateBroadcaster</CODE> is tested.
      * The interface test needs the <CODE>ObjectRelation</CODE>
      * "XUpdateBroadcaster.Checker" which is a <CODE>ifc.form._XUpdateBroadcaster.UpdateChecker</CODE>.
-     * Normaly the <CODE>Checker</CODE> uses <CODE>util.ValueChanger</CODE> to change
+     * Normally the <CODE>Checker</CODE> uses <CODE>util.ValueChanger</CODE> to change
      * the value of the property. If the current of this property is NULL the
      * <CODE>ValueChanger</CODE> is unable to change the value. In this case the value
      * of this variable was used.
-     */    
+     */
     public static Object m_ChangePropertyValue = null;
-    
+
     /**
-     * This variable contains the implelemtation name of the object.
-     */    
+     * This variable contains the implementation name of the object.
+     */
     public static String m_ObjectName = null;
-    
+
     /**
-     * For local implementaions of <CODE>Checker</CODE> this variable contains the
+     * For local implementations of <CODE>Checker</CODE> this variable contains the
      * <CODE>FormLoader</CODE>
-     */    
+     */
     protected static XLoadable m_XFormLoader = null;
     /**
-     * For local implementaions of <CODE>Checker</CODE> this variable contains the
+     * For local implementations of <CODE>Checker</CODE> this variable contains the
      * <CODE>XPropertySet</CODE>
-     */    
+     */
     protected static XPropertySet m_XPS = null;
     /**
-     * For local implementaions of <CODE>Checker</CODE> this variable contains the
+     * For local implementations of <CODE>Checker</CODE> this variable contains the
      * <CODE>Control</CODE>
-     */    
+     */
     protected static XInterface m_XCtrl = null;
     /**
-     * The insterface test of <CODE>ifc.form._DataWareControlModel</CODE> expects an
+     * The interface test of <CODE>ifc.form._DataWareControlModel</CODE> expects an
      * object relation <CODE>'LC'</CODE>. This is a <CODE>XControlModel</CODE> of a shape.
      * This variable contains the kind of shape to create for the interface test,
      * f.e. "FixedText"
      * @see ifc.form._DataAwareControlModel
      */
     protected static String m_LCShape_Type = null;
-    
+
     protected static String m_XPropertyAccess_propertyToChange = "HelpText";
-    
+
     protected static String m_XPropertyContainer_propertyNotRemovable = "HelpText";
     /**
-     * If this variable is true some more debug info was logged. It was set by the parameter variable 
+     * If this variable is true some more debug info was logged. It was set by the parameter variable
      * <code>debug_is_active</code>
      */
     protected static boolean debug = false;
-    
+
     /**
      * Creates Writer document where controls are placed.
-     * @param tParam the test paremter
+     * @param tParam the test parameter
      * @param log the log writer
      */
     protected void initialize(TestParameters tParam, PrintWriter log) {
@@ -241,30 +242,30 @@ public class GenericModelTest extends TestCase {
      */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("closing connection...");
-        
+
         // some interface tests call cleanup to reset the environment. If such
         // a test is the last one cleanup was called twice. The second call
         // causes then nasty exceptions...
         if (m_ConnectionColsed) return;
-        
+
         try {
             XIndexAccess forms = UnoRuntime.queryInterface( XIndexAccess.class,
                 FormTools.getForms( WriterTools.getDrawPage( m_xTextDoc ) ) );
-            XForm myForm = (XForm) AnyConverter.toObject(new Type(XForm.class), 
+            XForm myForm = (XForm) AnyConverter.toObject(new Type(XForm.class),
                                                  forms.getByIndex(0));
-            
+
             if (debug){
                 if (myForm == null){
                     log.println("ERROR: could not get 'Standard' from drawpage!");
                 }
-                log.println("the draw page contains following elemtens:");
+                log.println("the draw page contains following elements:");
                 String[] elements = FormTools.getForms(WriterTools.getDrawPage(m_xTextDoc)).getElementNames();
                 for (int i = 0; i< elements.length; i++){
                     log.println("Element[" + i + "] :" + elements[i]);
                 }
-                
+
             }
-            
+
             XPropertySet xSetProp = UnoRuntime.queryInterface( XPropertySet.class, myForm );
             XConnection connection = UnoRuntime.queryInterface( XConnection.class, xSetProp.getPropertyValue( "ActiveConnection" ) );
             if ( connection == null )
@@ -304,7 +305,7 @@ public class GenericModelTest extends TestCase {
         } catch (Exception e) {
             log.println("ERROR: couldn't close data source: " + e.toString());
         }
-        
+
         log.println("disposing data source...");
         try {
             XComponent dataSourceComp = (XComponent)UnoRuntime.queryInterface(
@@ -314,7 +315,7 @@ public class GenericModelTest extends TestCase {
         catch (Exception e) {
             log.println("couldn't dispose the data source");
         }
-        
+
         log.println("closing document...");
 
         try {
@@ -336,7 +337,7 @@ public class GenericModelTest extends TestCase {
         } catch (com.sun.star.uno.Exception e) {
             log.println("ERROR: Error while object test cleaning up: " + e.toString());
         }
-        
+
         m_ConnectionColsed = true;
     }
 
@@ -375,40 +376,40 @@ public class GenericModelTest extends TestCase {
      * @param log the log writer
      * @return a test environment
      */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         XInterface oObj = null;
         XControlShape aShape = null;
         XMultiServiceFactory xMSF = (XMultiServiceFactory) Param.getMSF();
-        
+
         try{
-            log.println("adding contol shape '" + m_kindOfControl + "'");
-            aShape = FormTools.createControlShape(m_xTextDoc, 3000, 
-                                                            4500, 15000, 10000, 
+            log.println("adding control shape '" + m_kindOfControl + "'");
+            aShape = FormTools.createControlShape(m_xTextDoc, 3000,
+                                                            4500, 15000, 10000,
                                                             m_kindOfControl);
         } catch (Exception e){
             e.printStackTrace(log);
-            throw new StatusException("Couldn't create following control shape (m_kindOfControl): '" + 
+            throw new StatusException("Couldn't create following control shape (m_kindOfControl): '" +
                                         m_kindOfControl + "': ", e);
-            
+
         }
 
         WriterTools.getDrawPage(m_xTextDoc).add((XShape) aShape);
         oObj = aShape.getControl();
-        
+
         log.println("Implementation name: " + util.utils.getImplName(oObj));
 
         try {
             String sourceTestDB = utils.getFullURL(utils.getFullTestDocName("TestDB/testDB.dbf"));
             String destTestDB = utils.getOfficeTemp(xMSF);
             destTestDB = utils.getFullURL(destTestDB + "testDB.dbf");
-            
+
             log.println("copy '"+sourceTestDB + "' -> '" + destTestDB + "'");
             utils.copyFile(xMSF, sourceTestDB, destTestDB);
-            
+
             m_dbTools = new DBTools( xMSF, log );
             String tmpDir = utils.getOfficeTemp((xMSF));
-        
+
             m_srcInf = m_dbTools.newDataSourceInfo();
             m_srcInf.URL = "sdbc:dbase:" + DBTools.dirToUrl(tmpDir);
             log.println("data source: " + m_srcInf.URL);
@@ -416,7 +417,7 @@ public class GenericModelTest extends TestCase {
             m_dbSrc = m_srcInf.getDataSourceService();
             m_dbTools.reRegisterDB(m_dbSourceName, m_dbSrc);
 
-            m_XFormLoader = FormTools.bindForm(m_xTextDoc, m_dbSourceName, 
+            m_XFormLoader = FormTools.bindForm(m_xTextDoc, m_dbSourceName,
                                             m_TestDB);
         } catch (com.sun.star.uno.Exception e) {
             log.println("!!! Can't access TestDB !!!");
@@ -427,25 +428,25 @@ public class GenericModelTest extends TestCase {
         log.println("creating a new environment for object");
 
         TestEnvironment tEnv = new TestEnvironment(oObj);
-        
+
         tEnv.addObjRelation("OBJNAME", m_ObjectName);
-        
+
         log.println("adding shape '" + m_LCShape_Type +"' for DataAwareControlModel test");
-        aShape = FormTools.createControlShape(m_xTextDoc, 6000, 4500, 15000, 
+        aShape = FormTools.createControlShape(m_xTextDoc, 6000, 4500, 15000,
                                               10000, m_LCShape_Type);
         WriterTools.getDrawPage(m_xTextDoc).add((XShape) aShape);
 
         m_XPS = (XPropertySet) UnoRuntime.queryInterface(
                                         XPropertySet.class, oObj);
-                                        
+
         int i = 0;
         NamedValue prop = null;
         try {
             for (i = 0; i < m_propertiesToSet.size(); i++){
                 prop = (NamedValue) m_propertiesToSet.get(i);
-                
+
                 log.println("setting property: '"+prop.Name+"' to value '"+prop.Value.toString()+"'");
-                
+
                 m_XPS.setPropertyValue(prop.Name, prop.Value);
             }
         } catch (com.sun.star.lang.WrappedTargetException e) {
@@ -473,12 +474,12 @@ public class GenericModelTest extends TestCase {
 
         // adding relation for XUpdateBroadcaster
         m_XCtrl = oObj;
-        
-    tEnv.addObjRelation("XUpdateBroadcaster.Checker", 
+
+    tEnv.addObjRelation("XUpdateBroadcaster.Checker",
                             new Checker(m_XFormLoader, m_XPS, m_XCtrl, m_ChangePropertyName, m_ChangePropertyValue));
 
         // adding relation for DataAwareControlModel service
-        tEnv.addObjRelation("DataAwareControlModel.NewFieldName", 
+        tEnv.addObjRelation("DataAwareControlModel.NewFieldName",
                             DBTools.TST_DATE_F);
 
         //adding ObjRelation for XPersistObject
@@ -488,18 +489,18 @@ public class GenericModelTest extends TestCase {
         java.util.HashSet exclude = new java.util.HashSet();
         exclude.add("FormatKey");
         tEnv.addObjRelation("XFastPropertySet.ExcludeProps", exclude);
-        
+
         PropertyValue propVal = new PropertyValue();
         propVal.Name = m_XPropertyAccess_propertyToChange;
         propVal.Value = "Text since XPropertyAccess";
         tEnv.addObjRelation("XPropertyAccess.propertyToChange", propVal);
         tEnv.addObjRelation("XPropertyContainer.propertyNotRemovable", m_XPropertyContainer_propertyNotRemovable);
-        
+
 
         return tEnv;
     } // finish method getTestEnvironment
-    
-    
+
+
     static class Checker implements ifc.form._XUpdateBroadcaster.UpdateChecker {
             private Object lastValue = null;
             XLoadable formLoaderF = null;
@@ -507,7 +508,7 @@ public class GenericModelTest extends TestCase {
             XInterface ctrl = null;
             String ChangePropertyName = null;
             Object ChangePropertyValue = null;
-            
+
             public Checker(XLoadable xl, XPropertySet ps, XInterface ctrl, String ChangePropertyName, Object ChangePropertyValue) {
                 formLoaderF = xl;
                 this.ps = ps;
@@ -515,26 +516,26 @@ public class GenericModelTest extends TestCase {
                 this.ChangePropertyName=ChangePropertyName;
                 this.ChangePropertyValue=ChangePropertyValue;
             }
-            
+
             public void update() throws com.sun.star.uno.Exception {
                 if (!formLoaderF.isLoaded()) {
                     formLoaderF.load();
                 }
 
                 lastValue = util.ValueChanger.changePValue(ps.getPropertyValue(ChangePropertyName));
-                
+
                 if (lastValue == null){
 
                     if (ChangePropertyValue != null){
-                        
+
                         lastValue = ChangePropertyValue;
-                       
+
                     } else {
-                        
+
                         String msg = "The initial value of the property '" + ChangePropertyName + "' is NULL\n";
                         msg += "The member variable 'm_ChangePropertyValue' is NULL\n";
                         msg += "Could not change Property.";
-                        
+
                         throw new StatusException(Status.failed(msg));
                     }
                 }
@@ -545,7 +546,7 @@ public class GenericModelTest extends TestCase {
                 XBoundComponent bound = (XBoundComponent) UnoRuntime.queryInterface(
                                                 XBoundComponent.class, ctrl);
                 XResultSetUpdate update = (XResultSetUpdate) UnoRuntime.queryInterface(
-                                                  XResultSetUpdate.class, 
+                                                  XResultSetUpdate.class,
                                                   formLoaderF);
 
                 bound.commit();
@@ -561,3 +562,4 @@ public class GenericModelTest extends TestCase {
             }
         }
 } // finish class GenericModelTest
+

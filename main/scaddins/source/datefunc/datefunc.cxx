@@ -708,7 +708,7 @@ sal_Int32 GetNullDate( const uno::Reference< beans::XPropertySet >& xOptions )
  * shall be the first day of the week.
  *
  * A week that lies partly in one year and partly in another
- * is assigned a number in the the year in which most of its days lie.
+ * is assigned a number in the year in which most of its days lie.
  *
  * That means that week 1 of any year is the week that contains the 4. January
  *

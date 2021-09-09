@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@
 #define PARAM_PATCH         TEXT( " /update " )
 #define PARAM_REG_ALL_MSO_TYPES TEXT( "REGISTER_ALL_MSO_TYPES=1 " )
 #define PARAM_REG_NO_MSO_TYPES  TEXT( "REGISTER_NO_MSO_TYPES=1 " )
-#define PARAM_SILENTINSTALL     TEXT( " /QB" )
+#define PARAM_SILENTINSTALL     TEXT( " /Q" )
 
 #define PARAM_RUNNING           TEXT( "ignore_running" )
 #define CMDLN_REG_ALL_MSO_TYPES TEXT( "msoreg=1" )
@@ -170,7 +170,7 @@ SetupAppX::~SetupAppX()
     tm *pTime = localtime( &aTime );   // Convert time to struct tm form
 
     Log( TEXT( "End: %s\n\r\n\r\n" ), _tasctime( pTime ) );
-    
+
     if ( m_pLogFile ) fclose( m_pLogFile );
 
     if ( m_pTmpName )
@@ -221,16 +221,16 @@ boolean SetupAppX::Initialize( HINSTANCE hInst )
 
     m_hMapFile = CreateFileMapping(
                  INVALID_HANDLE_VALUE,      // use paging file
-                 NULL,                      // default security 
+                 NULL,                      // default security
                  PAGE_READWRITE,            // read/write access
-                 0,                         // max. object size 
-                 sizeof( int ),             // buffer size  
+                 0,                         // max. object size
+                 sizeof( int ),             // buffer size
                  sMemMapName );
     if ( m_hMapFile )
     {
         m_pMSIErrorCode = (int*) MapViewOfFile( m_hMapFile,  // handle to map object
                         FILE_MAP_ALL_ACCESS,   // read/write permission
-                        0,                   
+                        0,
                         0,
                         sizeof( int ) );
         if ( m_pMSIErrorCode )
@@ -243,7 +243,7 @@ boolean SetupAppX::Initialize( HINSTANCE hInst )
 
     Log( TEXT("Starting: %s\r\n"), m_pModuleFile );
     Log( TEXT(" CommandLine=<%s>\r\n"), m_pCmdLine );
-    
+
     if ( m_bQuiet )
         Log( TEXT(" Using quiet install mode\r\n") );
 
@@ -282,7 +282,7 @@ boolean SetupAppX::GetProfileSection( LPCTSTR pFileName, LPCTSTR pSection,
     if ( !nRet )
     {
         SetError( WIN::GetLastError() );
-    
+
         TCHAR sBuf[80];
         StringCchPrintf( sBuf, 80, TEXT("ERROR: GetPrivateProfileSection(): GetLastError returned %u\r\n"), GetError() );
         Log( sBuf );
@@ -339,7 +339,7 @@ boolean SetupAppX::ReadProfile()
                 LPTSTR pValue = 0;
 
                 pCurLine += GetNameValue( pCurLine, &pName, &pValue );
-                
+
                 if ( lstrcmpi( TEXT( "database" ), pName ) == 0 )
                 {
                     m_pDatabase = pValue;
@@ -405,7 +405,7 @@ boolean SetupAppX::ReadProfile()
                 pCurLine += nNext;
                 delete [] pValue;
             }
-            
+
             m_ppLanguageList = new LanguageDataX*[ m_nLanguageCount ];
 
             for ( int i=0; i < m_nLanguageCount; i++ )
@@ -415,7 +415,7 @@ boolean SetupAppX::ReadProfile()
                     m_nLanguageCount = i;
                     break;
                 }
-                
+
                 pCurLine += GetNameValue( pCurLine, &pName, &pValue );
                 m_ppLanguageList[ i ] = new LanguageDataX( pValue );
                 Log( TEXT( "    Language = %s\r\n" ), pValue );
@@ -426,7 +426,7 @@ boolean SetupAppX::ReadProfile()
                 delete [] pValue;
             }
         }
-        
+
         if ( pRetBuf )
             delete [] pRetBuf;
     }
@@ -474,16 +474,16 @@ boolean SetupAppX::GetPatches()
             *pFilePart = '\0';
         StringCchCopy( pBaseDir, nPatternLen, pPattern );
         StringCchCat( pPattern, nPatternLen, TEXT("*.msp") );
-    
+
         WIN32_FIND_DATA aFindFileData;
-    
+
         HANDLE hFindPatches = FindFirstFile( pPattern, &aFindFileData );
-    
+
         if ( hFindPatches != INVALID_HANDLE_VALUE )
         {
             if ( ! IsPatchInstalled( pBaseDir, aFindFileData.cFileName ) )
                 AddFileToPatchList( pBaseDir, aFindFileData.cFileName );
-    
+
             while ( FindNextFile( hFindPatches, &aFindFileData ) )
             {
                 if ( ! IsPatchInstalled( pBaseDir, aFindFileData.cFileName ) )
@@ -499,15 +499,15 @@ boolean SetupAppX::GetPatches()
 
     delete [] pPattern;
     delete [] pBaseDir;
- 
+
     return bRet;
 }
 
 //--------------------------------------------------------------------------
 boolean SetupAppX::GetPathToFile( TCHAR* pFileName, TCHAR** pPath )
 {
-    // generate the path to the file =  szModuleFile + FileName
-    //   note: FileName is a relative path
+    // generate the path to the file = szModuleFile + FileName
+    // note: FileName is a relative path
 
     boolean bRet = true;
 
@@ -533,17 +533,17 @@ boolean SetupAppX::GetPathToFile( TCHAR* pFileName, TCHAR** pPath )
 
         // normalize the path
         int nReturn = GetFullPathName( pTempPath, nPath, *pPath, &pFilePart );
-        
+
         if ( nReturn > nPath )
         {
             // try again, with larger buffer
             delete [] (*pPath);
             nPath = nReturn;
             *pPath = new TCHAR[ nPath ];
-            
+
             nReturn = GetFullPathName( pTempPath, nPath, *pPath, &pFilePart );
         }
-        
+
         if ( 0 == nReturn )
         {
             // error -- invalid path
@@ -577,13 +577,13 @@ int SetupAppX::GetNameValue( TCHAR* pLine, TCHAR** pName, TCHAR** pValue )
     if ( nRet == 1 )
         return nRet;
 
-    LPTSTR  pChar = pLine;
-    LPTSTR  pLast = NULL;
-    
+    LPTSTR pChar = pLine;
+    LPTSTR pLast = NULL;
+
     // Skip leading spaces.
     while (' ' == *pChar || '\t' == *pChar)
         pChar = CharNext( pChar );
-    
+
     *pName = pChar;
 
     // look for the end of the name
@@ -619,7 +619,7 @@ boolean SetupAppX::ChooseLanguage( long& rLanguage )
 
     if ( m_bQuiet )
         return true;
-    
+
     // When there are none or only one language, there is nothing
     // to do here
     if ( m_nLanguageCount > 1 )
@@ -628,7 +628,7 @@ boolean SetupAppX::ChooseLanguage( long& rLanguage )
 
         LANGID nUserDefLang = GetUserDefaultLangID();
         LANGID nSysDefLang = GetSystemDefaultLangID();
-        
+
         int nUserPrimary = PRIMARYLANGID( nUserDefLang );
         int nSysPrimary = PRIMARYLANGID( nSysDefLang );
 
@@ -703,7 +703,7 @@ HMODULE SetupAppX::LoadMsiLibrary()
 {
     HMODULE hMsi = NULL;
     HKEY    hInstKey = NULL;
-    
+
     // find registered location of Msi.dll
     if ( ERROR_SUCCESS == RegOpenKeyEx( HKEY_LOCAL_MACHINE, sInstKey, 0, KEY_READ, &hInstKey ) )
     {
@@ -736,7 +736,7 @@ HMODULE SetupAppX::LoadMsiLibrary()
             }
         }
     }
-    
+
     if ( !hMsi ) // use the default location
     {
         hMsi = LoadLibrary( sMsiDll );
@@ -752,7 +752,7 @@ LPCTSTR SetupAppX::GetPathToMSI()
     HKEY    hInstKey = NULL;
     TCHAR  *sMsiFolder = new TCHAR[ MAX_PATH + 1 ];
     DWORD   nMsiFolderSize = MAX_PATH + 1;
-    
+
     sMsiFolder[0] = '\0';
 
     // find registered location of Msi.dll
@@ -775,7 +775,7 @@ LPCTSTR SetupAppX::GetPathToMSI()
         if ( ERROR_SUCCESS != nRet || dwType != REG_SZ || nMsiFolderSize == 0 )
             sMsiFolder[0] = '\0';
     }
-    
+
     if ( sMsiFolder[0] == '\0' ) // use the default location
     {
         Log( TEXT( "  Could not find path to msiexec.exe in registry" ) );
@@ -820,22 +820,22 @@ LPCTSTR SetupAppX::GetPathToMSI()
 boolean SetupAppX::LaunchInstaller( LPCTSTR pParam )
 {
     LPCTSTR sMsiPath = GetPathToMSI();
-    
+
     if ( !sMsiPath )
     {
         Log( TEXT( "ERROR: msiexec not found!" ) );
         SetError( ERROR_FILE_NOT_FOUND );
         return false;
     }
-    
+
     STARTUPINFO         aSUI;
     PROCESS_INFORMATION aPI;
 
     Log( TEXT( " Will install using <%s>\r\n" ), sMsiPath );
-    Log( TEXT( "   Prameters are: %s\r\n" ), pParam );
+    Log( TEXT( "   Parameters are: %s\r\n" ), pParam );
 
     OutputDebugStringFormat( TEXT( " Will install using <%s>\r\n" ), sMsiPath );
-    OutputDebugStringFormat( TEXT( "   Prameters are: %s\r\n" ), pParam );
+    OutputDebugStringFormat( TEXT( "   Parameters are: %s\r\n" ), pParam );
 
     ZeroMemory( (void*)&aPI, sizeof( PROCESS_INFORMATION ) );
     ZeroMemory( (void*)&aSUI, sizeof( STARTUPINFO ) );
@@ -945,9 +945,9 @@ boolean SetupAppX::Install( long nLanguage )
         nParLen += lstrlen( PARAM_MINOR_UPGRADE );
     else
         nParLen += lstrlen( PARAM_PACKAGE );
-    
+
     nParLen += lstrlen( pDataBasePath ) + 3;        // two quotes, one null
-    
+
     if ( NeedReboot() )
         nParLen += lstrlen( PARAM_REBOOT );
 
@@ -1051,7 +1051,7 @@ void SetupAppX::DisplayError( UINT nErr ) const
                                 break;
         case ERROR_OUTOFMEMORY: WIN::LoadString( m_hInst, IDS_OUTOFMEM, sError, MAX_TEXT_LENGTH );
                                 break;
-        case ERROR_INSTALL_USEREXIT: 
+        case ERROR_INSTALL_USEREXIT:
                                 WIN::LoadString( m_hInst, IDS_USER_CANCELLED, sError, MAX_TEXT_LENGTH );
                                 break;
         case ERROR_INSTALL_ALREADY_RUNNING: // 1618
@@ -1166,11 +1166,11 @@ boolean SetupAppX::CheckVersion()
     else
     {
         PFnDllGetVersion pDllGetVersion = (PFnDllGetVersion) GetProcAddress( hMsi, MSIAPI_DllGetVersion );
-        
+
         if ( pDllGetVersion )
         {
             DLLVERSIONINFO aInfo;
-            
+
             aInfo.cbSize = sizeof( DLLVERSIONINFO );
             if ( NOERROR == pDllGetVersion( &aInfo ) )
             {
@@ -1196,7 +1196,7 @@ boolean SetupAppX::CheckVersion()
                     Log( TEXT("Warning: Patching not supported! MSI-Version <%s>\r\n"), pMsiVersion );
             }
         }
-        
+
         FreeLibrary( hMsi );
     }
 
@@ -1235,8 +1235,8 @@ boolean SetupAppX::CheckForUpgrade()
 
     if ( m_pProductVersion && ( _tcslen( m_pProductVersion ) > 0 ) )
     {
-        TCHAR  *sProductVersion = new TCHAR[ MAX_PATH + 1 ];
-        DWORD   nSize = MAX_PATH + 1;
+        TCHAR *sProductVersion = new TCHAR[ MAX_PATH + 1 ];
+        DWORD  nSize = MAX_PATH + 1;
 
         sProductVersion[0] = '\0';
 
@@ -1459,16 +1459,16 @@ DWORD SetupAppX::GetNextArgument( LPCTSTR pStr, LPTSTR *pArg, LPTSTR *pNext,
             nCount += 1;
         }
     }
-    
+
     if ( pArg )
     {
         *pArg = new TCHAR[ nCount ];
         StringCchCopyN ( *pArg, nCount, pFirst, nCount-1 );
     }
-    
+
     if ( pNext )
         *pNext = CharNext( pChar );
-    
+
     return ERROR_SUCCESS;
 }
 
@@ -1558,7 +1558,7 @@ boolean SetupAppX::GetCmdLineParameters( LPTSTR *pCmdLine )
                         m_pLogFile = _tfopen( pFileName, TEXT( "ab" ) );
                     else
                         m_pLogFile = _tfopen( pFileName, TEXT( "wb" ) );
-                    
+
                     delete [] pFileName;
                 }
             }
@@ -1655,7 +1655,7 @@ boolean SetupAppX::IsAdmin()
 
     PSID aPsidAdmin;
     SID_IDENTIFIER_AUTHORITY aAuthority = SECURITY_NT_AUTHORITY;
-    
+
     if ( !AllocateAndInitializeSid( &aAuthority, 2, SECURITY_BUILTIN_DOMAIN_RID,
                                     DOMAIN_ALIAS_RID_ADMINS, 0, 0, 0, 0, 0, 0,
                                     &aPsidAdmin ) )
@@ -1663,10 +1663,10 @@ boolean SetupAppX::IsAdmin()
 
     BOOL bIsAdmin = FALSE;
 
-    if ( GetOSVersion() >= 5 ) 
+    if ( GetOSVersion() >= 5 )
     {
         HMODULE hAdvapi32 = LoadLibrary( ADVAPI32_DLL );
-        
+
         if ( !hAdvapi32 )
             bIsAdmin = FALSE;
         else
@@ -1704,7 +1704,7 @@ boolean SetupAppX::IsAdmin()
             }
 
             WIN::CloseHandle( hAccessToken );
-            
+
             if ( bSuccess )
             {
                 PTOKEN_GROUPS pGroups = (PTOKEN_GROUPS)(UCHAR*) szInfoBuffer;
@@ -1717,11 +1717,11 @@ boolean SetupAppX::IsAdmin()
                     }
                 }
             }
-            
+
             delete [] szInfoBuffer;
         }
     }
-    
+
     WIN::FreeSid( aPsidAdmin );
 
     return bIsAdmin ? true : false;
@@ -1737,7 +1737,7 @@ LPTSTR SetupAppX::CopyIniFile( LPCTSTR pIniFile )
         Log( TEXT( "ERROR: Could not create temp file\n" ) );
         return NULL;
     }
-    
+
     FILE *pOut  = _tfopen( m_pTmpName, TEXT( "wb" ) );
     FILE *pIn   = _tfopen( pIniFile, TEXT( "rb" ) );
 
@@ -1761,7 +1761,7 @@ LPTSTR SetupAppX::CopyIniFile( LPCTSTR pIniFile )
 
     if ( pOut ) fclose( pOut );
     if ( pIn ) fclose( pIn );
-    
+
     return m_pTmpName;
 }
 
@@ -1769,7 +1769,7 @@ LPTSTR SetupAppX::CopyIniFile( LPCTSTR pIniFile )
 void SetupAppX::ConvertNewline( LPTSTR pText ) const
 {
     int i=0;
-    
+
     while ( pText[i] != 0 )
     {
         if ( ( pText[i] == '\\' ) && ( pText[i+1] == 'n' ) )
@@ -1789,8 +1789,8 @@ LPTSTR SetupAppX::SetProdToAppTitle( LPCTSTR pProdName )
     if ( !pProdName ) return m_pAppTitle;
 
     LPTSTR pAppProdTitle = new TCHAR[ MAX_STR_CAPTION ];
-           pAppProdTitle[0]  = '\0';
-    
+           pAppProdTitle[0] = '\0';
+
     WIN::LoadString( m_hInst, IDS_APP_PROD_TITLE, pAppProdTitle, MAX_STR_CAPTION );
 
     int nAppLen = lstrlen( pAppProdTitle );

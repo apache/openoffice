@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,12 +39,12 @@ using namespace ::com::sun::star::uno; // for basic types
 namespace my_sc_impl
 {
 
-extern Sequence< OUString > SAL_CALL  getSupportedServiceNames_MyService1Impl();
+extern Sequence< OUString > SAL_CALL getSupportedServiceNames_MyService1Impl();
 extern OUString SAL_CALL getImplementationName_MyService1Impl();
 extern Reference< XInterface > SAL_CALL create_MyService1Impl(
     Reference< XComponentContext > const & xContext )
     SAL_THROW( () );
-    
+
 static Sequence< OUString > getSupportedServiceNames_MyService2Impl()
 {
     Sequence<OUString> names(1);
@@ -57,12 +57,12 @@ static OUString getImplementationName_MyService2Impl()
     return OUString( RTL_CONSTASCII_USTRINGPARAM(
                          "my_module.my_sc_implementation.MyService2") );
 }
-    
+
 class MyService2Impl : public ::cppu::WeakImplHelper3<
       ::my_module::XSomething, lang::XServiceInfo, lang::XInitialization >
 {
     OUString m_sData;
-    // it's good practise to store the context for further use when you use
+    // it's good practice to store the context for further use when you use
     // other UNO API's in your implementation
     Reference< XComponentContext > m_xContext;
 public:
@@ -74,7 +74,7 @@ public:
 
     // focus on three given interfaces,
     // no need to implement XInterface, XTypeProvider, XWeak
-    
+
     // XInitialization will be called upon
     // createInstanceWithArguments[AndContext]()
     virtual void SAL_CALL initialize( Sequence< Any > const & args )
@@ -93,7 +93,7 @@ public:
         throw (RuntimeException);
 };
 
-// XInitialization implemention
+// XInitialization implementation
 void MyService2Impl::initialize( Sequence< Any > const & args )
     throw (Exception)
 {
@@ -196,7 +196,7 @@ SAL_DLLPUBLIC_EXPORT void SAL_CALL component_getImplementationEnvironment(
 
 // This method not longer necessary since OOo 3.4 where the component registration was
 // was changed to passive component registration. For more details see
-// http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+// https://wiki.openoffice.org/wiki/Passive_Component_Registration
 //
 // sal_Bool SAL_CALL component_writeInfo(
 //     lang::XMultiServiceFactory * xMgr, registry::XRegistryKey * xRegistry )
@@ -215,5 +215,4 @@ SAL_DLLPUBLIC_EXPORT void * SAL_CALL component_getFactory(
 }
 
 }
-
 

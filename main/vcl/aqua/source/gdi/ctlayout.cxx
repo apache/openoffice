@@ -533,7 +533,7 @@ bool CTLayout::GetBoundRect( SalGraphics& rGraphics, Rectangle& rVCLRect ) const
 // =======================================================================
 
 // glyph fallback is supported directly by Aqua
-// so methods used only by MultiSalLayout can be dummy implementated
+// so methods used only by MultiSalLayout can be dummy implemented
 bool CTLayout::GetGlyphOutlines( SalGraphics&, PolyPolyVector& ) const { return false; }
 void CTLayout::InitFont() const {}
 void CTLayout::MoveGlyph( int /*nStart*/, long /*nNewXPos*/ ) {}

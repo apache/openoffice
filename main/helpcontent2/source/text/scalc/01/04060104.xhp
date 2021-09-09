@@ -627,7 +627,7 @@
 <paragraph role="tablecontent" id="par_id3159198" xml-lang="en-US" l10n="U" oldref="176">
 <item type="input">=CELL("ADDRESS";Sheet3.D2)</item> returns $Sheet3.$D$2.</paragraph>
 <paragraph role="tablecontent" id="par_id3150245" xml-lang="en-US" l10n="U" oldref="177">
-<item type="input">=CELL("ADDRESS";'X:\dr\test.sxc'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.sxc'#$Sheet1.$D$2.</paragraph>
+<item type="input">=CELL("ADDRESS";'X:\dr\test.ods'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.ods'#$Sheet1.$D$2.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>
@@ -637,9 +637,9 @@
 <tablecell>
 <paragraph role="tablecontent" id="par_id3151328" xml-lang="en-US" l10n="U" oldref="179">Returns the file name and the sheet number of the referenced cell.</paragraph>
 <paragraph role="tablecontent" id="par_id3148896" xml-lang="en-US" l10n="U" oldref="180">
-<item type="input">=CELL("FILENAME";D2)</item> returns 'file:///X:/dr/own.sxc'#$Sheet1, if the formula in the current document X:\dr\own.sxc is located in Sheet1.</paragraph>
+<item type="input">=CELL("FILENAME";D2)</item> returns 'file:///X:/dr/own.ods'#$Sheet1, if the formula in the current document X:\dr\own.ods is located in Sheet1.</paragraph>
 <paragraph role="tablecontent" id="par_id3155144" xml-lang="en-US" l10n="U" oldref="181">
-<item type="input">=CELL("FILENAME";'X:\dr\test.sxc'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.sxc'#$Sheet1.</paragraph>
+<item type="input">=CELL("FILENAME";'X:\dr\test.ods'#$Sheet1.D2)</item> returns 'file:///X:/dr/test.ods'#$Sheet1.</paragraph>
 </tablecell>
 </tablerow>
 <tablerow>

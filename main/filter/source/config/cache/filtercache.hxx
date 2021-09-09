@@ -102,7 +102,7 @@ class FilterCache : public BaseLock
                         the first document. After this first document was loaded successfully,
                         a special "load-on-demand-thread" will be started to fill this cache
                         with ALL other informations, which was not readed before.
-                        Thats the second step. All operations on top of this cache will be
+                        That's the second step. All operations on top of this cache will be
                         blocked then.
          */
         enum EFillState
@@ -310,14 +310,14 @@ class FilterCache : public BaseLock
                     removed.
 
                     The original container will get these new data automatically
-                    because it listen for changes on the internal used configuration layer.
+                    because it listens for changes on the internal used configuration layer.
                     If the new data are needed immediately inside the original container,
                     the method takeOver() can be used to copy all changes back.
                     The may be following notifications of the configuration will be superflous then.
                     But they can't be stopped ...
 
                     All internal structures will be copied here. But the internal used
-                    configuration (update) access wont be copied. The cloned instance contains
+                    configuration (update) access won't be copied. The cloned instance contains
                     a different one.
 
             @note   The cloned instance is created on the heap. The user of this instance
@@ -335,12 +335,12 @@ class FilterCache : public BaseLock
 
         /** @short      force special fill state of this cache.
 
-            @descr      This method check if all requested items/properties already
-                        exists. Only missing informations will be readed.
-                        Otherwhise this method does nothing!
+            @descr      This method checks if all requested items/properties already
+                        exist. Only missing informations will be read.
+                        Otherwise this method does nothing!
 
                         This method must be called from every user of this cache
-                        everytimes it need a filled cache. Normaly we load
+                        everytimes it need a filled cache. Normally we load
                         only standard informations into this cache on startup.
                         After a few seconds we start a special thread, which
                         may fill this cache completely. But if somehwere outside
@@ -349,8 +349,8 @@ class FilterCache : public BaseLock
                         This method "load(xxx)" synchronize such load-on-demand requests.
 
                         Of course it would be possible to suppress this special load thread
-                        in general and start it manualy inside this load() request.
-                        The outside code decide then, if and when this cache will be filled
+                        in general and start it manually inside this load() request.
+                        The outside code decides then, if and when this cache will be filled
                         with all available informations ...
 
             @param      bByThread
@@ -429,8 +429,8 @@ class FilterCache : public BaseLock
         /** @short      indicates if the requested sub container
                         contains some items.
 
-            @descr      We dont provide any information about the count
-                        of such items. Because we dont implement any index
+            @descr      We don't provide any information about the count
+                        of such items. Because we don't implement any index
                         based interface! The information "we have items or not"
                         must be enough for the outside code ... till somewhere
                         give us a good reason. :-)
@@ -441,7 +441,7 @@ class FilterCache : public BaseLock
 
             @return     [sal_Bool]
                         True, if the requested sub container contains some items;
-                        False otherwhise.
+                        False otherwise.
 
             @throw      [css::uno::Exception]
                         if some input parameter are wrong or the cache itself is not valid
@@ -567,7 +567,7 @@ class FilterCache : public BaseLock
 
             @attention  These properties are not part of the normal CacheItem
                         returned by the method getItem(). Because getItem() is
-                        used internaly too but these specialized properties
+                        used internally too but these specialized properties
                         are needed at our container services only. So these
                         function sets are different to allow different handling.
 
@@ -713,7 +713,7 @@ class FilterCache : public BaseLock
 
             @return     A valid reference, if the configuration access could be opened
                         and initialized within the requested modes successfully;
-                        a NULL reference otherwhise.
+                        a NULL reference otherwise.
          */
         css::uno::Reference< css::uno::XInterface > impl_createConfigAccess(const ::rtl::OUString& sRoot       ,
                                                                                   sal_Bool         bReadOnly   ,
@@ -785,7 +785,7 @@ class FilterCache : public BaseLock
             @descr      Because detect services, frame loader or content handler
                         are not listed inside the xml configuration as separated
                         items (they are properties of any type entry!), this method update
-                        the internal lists of such items. Thats necessary to have
+                        the internal lists of such items. That's necessary to have
                         it accessible for our container interfaces of detect, frame loader
                         and content handler services.
 
@@ -882,7 +882,7 @@ class FilterCache : public BaseLock
         /** @short  try to load the requested item on demand from the underlying configuration
                     layer.
 
-            @descr  The outside code has to be shure, that the item does not already exists
+            @descr  The outside code has to be sure, that the item does not already exists
                     inside this cachse. Otherwise it will be loaded twice. This method
                     doesn't check such constellations!
 

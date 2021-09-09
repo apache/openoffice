@@ -416,7 +416,7 @@ void LockHelper::downgradeWriteAccess()
     @short      return a reference to a static lock helper
     @descr      Sometimes we need the global mutex or rw-lock! (e.g. in our own static methods)
                 But it's not a good idea to use these global one very often ...
-                Thats why we use this little helper method.
+                That's why we use this little helper method.
                 We create our own "class global static" lock.
                 It will be created at first call only!
                 All other requests use these created one then directly.
@@ -457,7 +457,7 @@ LockHelper& LockHelper::getGlobalLock( ::vos::IMutex* pSolarMutex )
     @descr      Sometimes we need a osl-mutex for sharing with our uno helper ...
                 What can we do?
                 a) If we have an initialized "own mutex" ... we can use it!
-                b) Otherwhise we must use a different mutex member :-(
+                b) Otherwise we must use a different mutex member :-(
                 I HOPE IT WORKS!
 
     @seealso    -

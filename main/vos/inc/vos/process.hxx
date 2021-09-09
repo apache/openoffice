@@ -301,7 +301,7 @@ public:
     /** get the nArg-th extended command argument
         @param nArg [in] the number of extended argument to return.
         @param strCommandArg [out] the string that receives the argument.
-        @return sal_True   if the nArg-th argument has been retriveded successfully
+        @return sal_True   if the nArg-th argument has been retrieved successfully
         @return sal_False  on all other cases
     */
     sal_Bool SAL_CALL getCommandArg(sal_uInt32 nArg, ::rtl::OUString& strCommandArg);

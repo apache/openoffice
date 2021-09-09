@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -273,11 +273,11 @@ sal_Bool MigrationImpl::doMigration()
 {
     // compile file list for migration
     m_vrFileList = compileFileList();
-    
+
     sal_Bool result = sal_False;
     try
 	{
-		NewVersionUIInfo aNewVersionUIInfo;		
+		NewVersionUIInfo aNewVersionUIInfo;
 		::std::vector< MigrationModuleInfo > vModulesInfo = dectectUIChangesForAllModules();
 		aNewVersionUIInfo.init(vModulesInfo);
 
@@ -334,7 +334,7 @@ sal_Bool MigrationImpl::doMigration()
 					::rtl::OUString sParent;
 					compareOldAndNewConfig(sParent, xOldVersionToolbarSettings, xNewVersionToolbarSettings, sToolbarResourceURL);
 					mergeOldToNewVersion(xCfgManager, xNewVersionToolbarSettings, sModuleIdentifier, sToolbarResourceURL);
-				}                
+				}
 			}
 
 			m_aOldVersionItemsHashMap.clear();
@@ -422,7 +422,7 @@ bool MigrationImpl::readAvailableMigrations(migrations_available& rAvailableMigr
     // get supported version names
 	uno::Reference< XNameAccess > aMigrationAccess(getConfigAccess("org.openoffice.Setup/Migration/SupportedVersions"), uno::UNO_QUERY_THROW);
     uno::Sequence< OUString > seqSupportedVersions = aMigrationAccess->getElementNames();
-    
+
     const OUString aVersionIdentifiers( RTL_CONSTASCII_USTRINGPARAM( "VersionIdentifiers" ));
     const OUString aPriorityIdentifier( RTL_CONSTASCII_USTRINGPARAM( "Priority" ));
 
@@ -450,7 +450,7 @@ migrations_vr MigrationImpl::readMigrationSteps(const ::rtl::OUString& rMigratio
     // get migration access
 	uno::Reference< XNameAccess > aMigrationAccess(getConfigAccess("org.openoffice.Setup/Migration/SupportedVersions"), uno::UNO_QUERY_THROW);
     uno::Reference< XNameAccess > xMigrationData( aMigrationAccess->getByName(rMigrationName), uno::UNO_QUERY_THROW );
-    
+
     // get migration description from from org.openoffice.Setup/Migration
     // and build vector of migration steps
 	OUString aMigrationSteps( RTL_CONSTASCII_USTRINGPARAM( "MigrationSteps" ));
@@ -479,7 +479,7 @@ migrations_vr MigrationImpl::readMigrationSteps(const ::rtl::OUString& rMigratio
             }
         }
 
-        // exluded files...
+        // excluded files...
         if (tmpAccess->getByName(OUString::createFromAscii("ExcludedFiles")) >>= tmpSeq)
         {
             for (sal_Int32 j=0; j<tmpSeq.getLength(); j++)
@@ -558,7 +558,7 @@ install_info MigrationImpl::findInstallation(const strings_v& rVersions)
 			aProfileName = (*i_ver).copy( nSeparatorIndex+1 );
 		}
 
-		if ( aVersion.getLength() && aProfileName.getLength() && 
+		if ( aVersion.getLength() && aProfileName.getLength() &&
 				( !aInfo.userdata.getLength() || !aProfileName.toAsciiLowerCase().compareTo( aProductName, aProductName.getLength() ) )
 		   )
 		{
@@ -591,7 +591,7 @@ sal_Int32 MigrationImpl::findPreferedMigrationProcess(const migrations_available
 {
     sal_Int32    nIndex( -1 );
     sal_Int32    i( 0 );
-    
+
     migrations_available::const_iterator rIter = rAvailableMigrations.begin();
     while ( rIter != rAvailableMigrations.end() )
     {
@@ -837,7 +837,7 @@ void MigrationImpl::substract(strings_v& va, const strings_v& vb_c) const
                 va.erase(i_in);
                 i_in = i_next;
                 // we can only find one match since we
-                // ensured uniquness of the entries. ergo:
+                // ensured uniqueness of the entries. ergo:
                 break;
             }
             else
@@ -932,7 +932,7 @@ void MigrationImpl::runServices()
     // and execute the migration job
 	uno::Reference< XJob > xMigrationJob;
 
-    migrations_v::const_iterator i_mig  = m_vrMigrations->begin();
+    migrations_v::const_iterator i_mig = m_vrMigrations->begin();
     while (i_mig != m_vrMigrations->end())
     {
         if( i_mig->service.getLength() > 0)
@@ -944,8 +944,8 @@ void MigrationImpl::runServices()
                 uno::Sequence< rtl::OUString > seqExtBlackList;
                 sal_uInt32 nSize = i_mig->excludeExtensions.size();
                 if ( nSize > 0 )
-                    seqExtBlackList = comphelper::arrayToSequence< ::rtl::OUString >( 
-                        &i_mig->excludeExtensions[0], nSize ); 
+                    seqExtBlackList = comphelper::arrayToSequence< ::rtl::OUString >(
+                        &i_mig->excludeExtensions[0], nSize );
                 seqArguments[2] = uno::makeAny(NamedValue(
                     OUString::createFromAscii("ExtensionBlackList"),
                     uno::makeAny( seqExtBlackList )));
@@ -1025,7 +1025,7 @@ void MigrationImpl::runServices()
 				for (sal_Int32 j=0; j<lToolbars.getLength(); ++j)
 				{
                     ::rtl::OUString sToolbarName = lToolbars[j];
-                    if (sToolbarName.getLength()>=nCustomLen && 
+                    if (sToolbarName.getLength()>=nCustomLen &&
 						sToolbarName.copy(0, nCustomLen).equals(RESOURCEURL_CUSTOM_ELEMENT))
 						continue;
 
@@ -1113,7 +1113,7 @@ void MigrationImpl::compareOldAndNewConfig(const ::rtl::OUString& sParent,
 		}
 		else if (pFound == vNewItems.end())
 		{
-			MigrationItem aMigrationItem(sParent, sSibling, it->m_sCommandURL, it->m_xPopupMenu);	
+			MigrationItem aMigrationItem(sParent, sSibling, it->m_sCommandURL, it->m_xPopupMenu);
 			if (m_aOldVersionItemsHashMap.find(sResourceURL)==m_aOldVersionItemsHashMap.end())
 			{
 				::std::vector< MigrationItem > vMigrationItems;
@@ -1146,7 +1146,7 @@ void MigrationImpl::compareOldAndNewConfig(const ::rtl::OUString& sParent,
 		}
 		else if (::std::find(vOldItems.begin(), vOldItems.end(), *it) == vOldItems.end())
 		{
-			MigrationItem aMigrationItem(sParent, sSibling, it->m_sCommandURL, it->m_xPopupMenu);	
+			MigrationItem aMigrationItem(sParent, sSibling, it->m_sCommandURL, it->m_xPopupMenu);
 			if (m_aNewVersionItemsHashMap.find(sResourceURL)==m_aNewVersionItemsHashMap.end())
 			{
 				::std::vector< MigrationItem > vMigrationItems;
@@ -1162,9 +1162,9 @@ void MigrationImpl::compareOldAndNewConfig(const ::rtl::OUString& sParent,
 	}
 }
 
-void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurationManager >& xCfgManager, 
-										 const uno::Reference< container::XIndexContainer>& xIndexContainer, 
-										 const ::rtl::OUString& sModuleIdentifier, 
+void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurationManager >& xCfgManager,
+										 const uno::Reference< container::XIndexContainer>& xIndexContainer,
+										 const ::rtl::OUString& sModuleIdentifier,
 										 const ::rtl::OUString& sResourceURL)
 {
 	MigrationHashMap::iterator pFound = m_aOldVersionItemsHashMap.find(sResourceURL);
@@ -1178,7 +1178,7 @@ void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurat
 
 		::rtl::OUString sParentNodeName = it->m_sParentNodeName;
 		sal_Int32 nIndex = 0;
-		do 
+		do
 		{
 			::rtl::OUString sToken = sParentNodeName.getToken(0, '|', nIndex).trim();
 			if (sToken.getLength()<=0)
@@ -1191,7 +1191,7 @@ void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurat
 				::rtl::OUString sLabel;
 				uno::Reference< container::XIndexContainer > xChild;
 
-				uno::Sequence< beans::PropertyValue > aPropSeq;					
+				uno::Sequence< beans::PropertyValue > aPropSeq;
 				xTemp->getByIndex(i) >>= aPropSeq;
 				for (sal_Int32 j=0; j<aPropSeq.getLength(); ++j)
 				{
@@ -1233,7 +1233,7 @@ void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurat
 				for (; i<nCount; ++i)
 				{
 					::rtl::OUString sCmd;
-					uno::Sequence< beans::PropertyValue > aTempPropSeq;			
+					uno::Sequence< beans::PropertyValue > aTempPropSeq;
 					xTemp->getByIndex(i) >>= aTempPropSeq;
 					for (sal_Int32 j=0; j<aTempPropSeq.getLength(); ++j)
 					{
@@ -1263,14 +1263,14 @@ void MigrationImpl::mergeOldToNewVersion(const uno::Reference< ui::XUIConfigurat
 }
 
 uno::Reference< ui::XUIConfigurationManager > NewVersionUIInfo::getConfigManager(const ::rtl::OUString& sModuleShortName) const
-{ 
+{
 	uno::Reference< ui::XUIConfigurationManager > xCfgManager;
 
 	for (sal_Int32 i=0; i<m_lCfgManagerSeq.getLength(); ++i)
 	{
 		if (m_lCfgManagerSeq[i].Name.equals(sModuleShortName))
 		{
-			m_lCfgManagerSeq[i].Value >>= xCfgManager; 
+			m_lCfgManagerSeq[i].Value >>= xCfgManager;
 			break;
 		}
 	}
@@ -1368,3 +1368,4 @@ void NewVersionUIInfo::init(const ::std::vector< MigrationModuleInfo >& vModules
 }
 
 } // namespace desktop
+

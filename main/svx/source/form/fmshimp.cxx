@@ -964,7 +964,7 @@ void FmXFormShell::disposing()
 		aGuard.clear();
 
 		DBG_ASSERT(!m_nInvalidationEvent, "FmXFormShell::~FmXFormShell : still have an invalidation event !");
-			// should habe been deleted while beeing disposed
+			// should have been deleted while being disposed
 
 		m_aMarkTimer.Stop();
 	}

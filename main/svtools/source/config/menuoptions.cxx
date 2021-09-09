@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ class SvtMenuOptions_Impl : public ConfigItem
 
 		/*-****************************************************************************************************//**
 			@short		called for notify of configmanager
-			@descr		These method is called from the ConfigManager before application ends or from the
+			@descr		This method is called from the ConfigManager before application ends or from the
 			 			PropertyChangeListener if the sub tree broadcasts changes. You must update your
 						internal values.
 
@@ -129,7 +129,7 @@ class SvtMenuOptions_Impl : public ConfigItem
 
 		/*-****************************************************************************************************//**
 			@short		write changes to configuration
-			@descr		These method writes the changed values into the sub tree
+			@descr		This method writes the changed values into the sub tree
 						and should always called in our destructor to guarantee consistency of config data.
 
 			@seealso	baseclass ConfigItem
@@ -148,8 +148,8 @@ class SvtMenuOptions_Impl : public ConfigItem
 
 		/*-****************************************************************************************************//**
 			@short		access method to get internal values
-			@descr		These method give us a chance to regulate acces to ouer internal values.
-						It's not used in the moment - but it's possible for the feature!
+			@descr		This method gives us a chance to regulate access to our internal values.
+						It's not used in the moment - but it's possible for the future!
 
 			@seealso	-
 
@@ -202,7 +202,7 @@ class SvtMenuOptions_Impl : public ConfigItem
 	private:
 
 		/*-****************************************************************************************************//**
-			@short		return list of fix key names of ouer configuration management which represent oue module tree
+			@short		return list of fix key names of our configuration management which represent our module tree
 			@descr		These methods return a static const list of key names. We need it to get needed values from our
 						configuration management.
 
@@ -244,7 +244,7 @@ SvtMenuOptions_Impl::SvtMenuOptions_Impl()
     sal_Bool bMenuIcons = true;
     sal_Bool bSystemMenuIcons = true;
 
-	// Copy values from list in right order to ouer internal member.
+	// Copy values from list in right order to our internal member.
 	sal_Int32 nPropertyCount	=	seqValues.getLength()	;
 	sal_Int32 nProperty			=	0						;
 	for( nProperty=0; nProperty<nPropertyCount; ++nProperty )
@@ -410,7 +410,7 @@ Sequence< OUString > SvtMenuOptions_Impl::impl_GetPropertyNames()
         PROPERTYNAME_SHOWICONSINMENUES			,
         PROPERTYNAME_SYSTEMICONSINMENUES
 	};
-	// Initialize return sequence with these list ...
+	// Initialize return sequence with this list ...
 	static const Sequence< OUString > seqPropertyNames( pProperties, PROPERTYCOUNT );
 	// ... and return it.
 	return seqPropertyNames;
@@ -448,9 +448,9 @@ SvtMenuOptions::SvtMenuOptions()
 {
     // Global access, must be guarded (multithreading!).
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Increase ouer refcount ...
+	// Increase our refcount ...
 	++m_nRefCount;
-	// ... and initialize ouer data container only if it not already!
+	// ... and initialize our data container only if it not already!
     if( m_pDataContainer == NULL )
 	{
         RTL_LOGFILE_CONTEXT(aLog, "svtools ( ??? ) ::SvtMenuOptions_Impl::ctor()");
@@ -467,10 +467,10 @@ SvtMenuOptions::~SvtMenuOptions()
 {
     // Global access, must be guarded (multithreading!)
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Decrease ouer refcount.
+	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
-	// we must destroy ouer static data container!
+	// we must destroy our static data container!
     if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
@@ -539,13 +539,13 @@ Mutex& SvtMenuOptions::GetOwnStaticMutex()
 {
 	// Initialize static mutex only for one time!
     static Mutex* pMutex = NULL;
-	// If these method first called (Mutex not already exist!) ...
+	// If this method is first called (Mutex not already exist!) ...
     if( pMutex == NULL )
     {
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         MutexGuard aGuard( Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

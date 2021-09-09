@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,37 +130,37 @@ void SmDocShell::SFX_NOTIFY(SfxBroadcaster&, const TypeId&,
 	{
 		case HINT_FORMATCHANGED:
 			SetFormulaArranged(sal_False);
-            
-            nModifyCount++;     //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
 
-            Repaint();
+			nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
+
+			Repaint();
 			break;
 	}
 }
 
 void SmDocShell::LoadSymbols()
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::LoadSymbols" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::LoadSymbols" );
 
-    SmModule *pp = SM_MOD();
-    pp->GetSymbolManager().Load();
+	SmModule *pp = SM_MOD();
+	pp->GetSymbolManager().Load();
 }
 
 
 const String SmDocShell::GetComment() const
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetComment" );
-    uno::Reference<document::XDocumentPropertiesSupplier> xDPS(
-        const_cast<SmDocShell*>(this)->GetModel(), uno::UNO_QUERY_THROW);
-    uno::Reference<document::XDocumentProperties> xDocProps(
-        xDPS->getDocumentProperties());
-    return xDocProps->getDescription();
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::GetComment" );
+	uno::Reference<document::XDocumentPropertiesSupplier> xDPS(
+		const_cast<SmDocShell*>(this)->GetModel(), uno::UNO_QUERY_THROW);
+	uno::Reference<document::XDocumentProperties> xDocProps(
+		xDPS->getDocumentProperties());
+	return xDocProps->getDescription();
 }
 
 
 void SmDocShell::SetText(const String& rBuffer)
 {
-    RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetText" );
+	RTL_LOGFILE_CONTEXT( aLog, "starmath: SmDocShell::SetText" );
 
 	if (rBuffer != aText)
 	{
@@ -169,14 +169,14 @@ void SmDocShell::SetText(const String& rBuffer)
 			EnableSetModified( sal_False );
 
 		aText = rBuffer;
-        SetFormulaArranged( sal_False );
+		SetFormulaArranged( sal_False );
 
-        Parse();
-        //Repaint();
+		Parse();
+		//Repaint();
 
-        SmViewShell *pViewSh = SmGetActiveView();
+		SmViewShell *pViewSh = SmGetActiveView();
 		if( pViewSh )
-        {
+		{
 			pViewSh->GetViewFrame()->GetBindings().Invalidate(SID_TEXT);
             if ( SFX_CREATE_MODE_EMBEDDED == GetCreateMode() )
             {
@@ -220,7 +220,7 @@ void SmDocShell::SetFormat(SmFormat& rFormat)
 	SetFormulaArranged( sal_False );
 	SetModified( sal_True );
 
-    nModifyCount++;     //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
+    nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
 
     // don't use SmGetActiveView since the view shell might not be active (0 pointer)
     // if for example the Basic Macro dialog currently has the focus. Thus:
@@ -255,7 +255,7 @@ void SmDocShell::Parse()
 		delete pTree;
     ReplaceBadChars();
 	pTree = aInterpreter.Parse(aText);
-	nModifyCount++;     //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
+	nModifyCount++; //! see comment for SID_GAPHIC_SM in SmDocShell::GetState
     SetFormulaArranged( sal_False );
 
     aUsedSymbols = aInterpreter.GetUsedSymbols();
@@ -269,7 +269,7 @@ void SmDocShell::ArrangeFormula()
 	if (IsFormulaArranged())
 		return;
 
-	//! Nur f�r die Dauer der Existenz dieses Objekts sind am Drucker die
+	//! Nur für die Dauer der Existenz dieses Objekts sind am Drucker die
 	//! richtigen Einstellungen garantiert.
     SmPrinterAccess  aPrtAcc(*this);
 //	OutputDevice	*pOutDev = aPrtAcc.GetPrinter();
@@ -282,7 +282,7 @@ void SmDocShell::ArrangeFormula()
 #endif
     }
 
-    // falls n�tig ein anderes OutputDevice holen f�r das formatiert wird
+    // falls nötig ein anderes OutputDevice holen für das formatiert wird
 	if (!pOutDev)
 	{
 		SmViewShell *pView = SmGetActiveView();
@@ -429,7 +429,7 @@ EditEngine& SmDocShell::GetEditEngine()
 		pEditEngine->ClearModifyFlag();
 
 		// forces new settings to be used if the itempool was modified
-		// after cthe creation of the EditEngine
+		// after the creation of the EditEngine
 		//pEditEngine->Clear();	//#77957 incorrect font size
 	}
 	return *pEditEngine;
@@ -461,7 +461,7 @@ void SmDocShell::Draw(OutputDevice &rDev, Point &rPosition)
 	//Problem: Was passiert mit dem WYSIWYG? Wir haben waehrend wir inplace aktiv
 	//sind kein Referenzdevice und sind auch nicht darauf ausgerichtet. Es kann
 	//also jetzt eine Differenz zwischen der VisArea (spricht die Groesse im Client)
-	//und der jetzt vorliegenden Groese geben.
+	//und der jetzt vorliegenden Groesse geben.
 	//Idee: Die Differenz koennte, zumindest behelfsmaessig, mit SmNod::SetSize
 	//angepasst werden.
 
@@ -469,7 +469,7 @@ void SmDocShell::Draw(OutputDevice &rDev, Point &rPosition)
 	rPosition.Y() += aFormat.GetDistance( DIS_TOPSPACE	);
 
     //! in case of high contrast-mode (accessibility option!)
-    //! the draw mode needs to be set to default, because when imbedding
+    //! the draw mode needs to be set to default, because when embedding
     //! Math for example in Calc in "a over b" the fraction bar may not
     //! be visible else. More generally: the FillColor may have been changed.
     sal_uLong nOldDrawMode = DRAWMODE_DEFAULT;
@@ -539,11 +539,11 @@ SmPrinterAccess::SmPrinterAccess( SmDocShell &rDocShell )
 		pPrinter->Push( PUSH_MAPMODE );
         if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
 		{
-			// if it is an embedded object (without it's own printer)
+			// if it is an embedded object (without its own printer)
 			// we change the MapMode temporarily.
-			//!If it is a document with it's own printer the MapMode should
+			//!If it is a document with its own printer the MapMode should
 			//!be set correct (once) elsewhere(!), in order to avoid numerous
-			//!superfluous pushing and poping of the MapMode when using
+			//!superfluous pushing and popping of the MapMode when using
 			//!this class.
 
 			const MapUnit eOld = pPrinter->GetMapMode().GetMapUnit();
@@ -564,11 +564,11 @@ SmPrinterAccess::SmPrinterAccess( SmDocShell &rDocShell )
         pRefDev->Push( PUSH_MAPMODE );
         if ( SFX_CREATE_MODE_EMBEDDED == rDocShell.GetCreateMode() )
         {
-            // if it is an embedded object (without it's own printer)
+            // if it is an embedded object (without its own printer)
             // we change the MapMode temporarily.
-            //!If it is a document with it's own printer the MapMode should
+            //!If it is a document with its own printer the MapMode should
             //!be set correct (once) elsewhere(!), in order to avoid numerous
-            //!superfluous pushing and poping of the MapMode when using
+            //!superfluous pushing and popping of the MapMode when using
             //!this class.
 
             const MapUnit eOld = pRefDev->GetMapMode().GetMapUnit();
@@ -1247,7 +1247,7 @@ void SmDocShell::GetState(SfxItemSet &rSet)
 
         case SID_GAPHIC_SM:
             //! very old (pre UNO) and ugly hack to invalidate the SmGraphicWindow.
-            //! If nModifyCount gets changed then the call below will implicitly notify 
+            //! If nModifyCount gets changed then the call below will implicitly notify
             //! SmGraphicController::StateChanged and there the window gets invalidated.
             //! Thus all the 'nModifyCount++' before invalidating this slot.
             rSet.Put(SfxInt16Item(SID_GAPHIC_SM, nModifyCount));
@@ -1355,7 +1355,7 @@ void SmDocShell::SetVisArea(const Rectangle & rVisArea)
 		EnableSetModified( sal_False );
 
     //TODO/LATER: it's unclear how this interacts with the SFX code
-    // If outplace editing, then dont resize the OutplaceWindow. But the
+    // If outplace editing, then don't resize the OutplaceWindow. But the
 	// ObjectShell has to resize. Bug 56470
 	sal_Bool bUnLockFrame;
     if( GetCreateMode() == SFX_CREATE_MODE_EMBEDDED && !IsInPlaceActive() && GetFrame() )
@@ -1428,5 +1428,4 @@ sal_Bool SmDocShell::WriteAsMathType3( SfxMedium& rMedium )
     sal_Bool bRet = 0 != aEquation.ConvertFromStarMath( rMedium );
     return bRet;
 }
-
 

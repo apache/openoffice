@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -26,7 +26,7 @@
 #include "helpid.hrc"
 #include "hyperdlg.hrc"
 
-#define HYPERDLG_IMGBUTTON_HEIGHT RSC_CD_PUSHBUTTON_HEIGHT+2
+#define HYPERDLG_IMGBUTTON_HEIGHT RSC_CD_PUSHBUTTON_HEIGHT + 2
 
 /*************************************************************************
 | Tabpage : Internet
@@ -120,12 +120,12 @@ TabPage RID_SVXPAGE_HYPERLINK_INTERNET
 		QuickHelpText [ en-US ] = "WWW Browser" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "browse.png" ; };
+			ImageBitmap = Bitmap {File = "browse.png" ;} ;
 		};
 	};
 	Image IMG_BROWSE_HC
 	{
-		ImageBitmap = Bitmap { File = "browse_hc.png" ; };
+		ImageBitmap = Bitmap {File = "browse_hc.png" ;} ;
 	};
 	ImageButton BTN_TARGET
 	{
@@ -138,12 +138,12 @@ TabPage RID_SVXPAGE_HYPERLINK_INTERNET
 		QuickHelpText [ en-US ] = "Target in Document" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "target.png" ; };
+			ImageBitmap = Bitmap {File = "target.png" ;} ;
 		};
 	};
 	Image IMG_TARGET_HC
 	{
-		ImageBitmap = Bitmap { File = "target_hc.png" ; };
+		ImageBitmap = Bitmap {File = "target_hc.png" ;} ;
 	};
 	FixedLine GRP_MORE
 	{
@@ -185,8 +185,8 @@ TabPage RID_SVXPAGE_HYPERLINK_INTERNET
 		DDExtraWidth = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Text" ; Default ; > ;
-			< "Button" ; Default ; > ;
+			< "Text" ; Default ;	> ;
+			< "Button" ; Default ;	> ;
 		};
 	};
 	FixedText FT_INDICATION
@@ -225,13 +225,13 @@ TabPage RID_SVXPAGE_HYPERLINK_INTERNET
 		QuickHelpText [ en-US ] = "Events" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "script.png" ; };
+			ImageBitmap = Bitmap {File = "script.png" ;} ;
 		};
 		Text [ en-US ] = "Events" ;
 	};
 	Image IMG_SCRIPT_HC
 	{
-		ImageBitmap = Bitmap { File = "script_hc.png" ; };
+		ImageBitmap = Bitmap {File = "script_hc.png" ;} ;
 	};
 };
 
@@ -296,7 +296,7 @@ TabPage RID_SVXPAGE_HYPERLINK_MAIL
 
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "adrbook.png" ; };
+			ImageBitmap = Bitmap {File = "adrbook.png" ;} ;
 		};
 
 		Text [ en-US ] = "Data Sources..." ;
@@ -304,7 +304,7 @@ TabPage RID_SVXPAGE_HYPERLINK_MAIL
 	};
 	Image IMG_ADRESSBOOK_HC
 	{
-		ImageBitmap = Bitmap { File = "adrbook_hc.png" ; };
+		ImageBitmap = Bitmap {File = "adrbook_hc.png" ;} ;
 	};
 
 	FixedLine GRP_MORE
@@ -347,8 +347,8 @@ TabPage RID_SVXPAGE_HYPERLINK_MAIL
 		DDExtraWidth = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Text" ; Default ; > ;
-			< "Button" ; Default ; > ;
+			< "Text" ; Default ;	> ;
+			< "Button" ; Default ;	> ;
 		};
 	};
 	FixedText FT_INDICATION
@@ -386,13 +386,13 @@ TabPage RID_SVXPAGE_HYPERLINK_MAIL
 		QuickHelpText [ en-US ] = "Events" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "script.png" ; };
+			ImageBitmap = Bitmap {File = "script.png" ;} ;
 		};
-		Text [ en-US ] = "Events";
+		Text [ en-US ] = "Events" ;
 	};
 	Image IMG_SCRIPT_HC
 	{
-		ImageBitmap = Bitmap { File = "script_hc.png" ; };
+		ImageBitmap = Bitmap {File = "script_hc.png" ;} ;
 	};
 };
 
@@ -430,13 +430,13 @@ TabPage RID_SVXPAGE_HYPERLINK_DOCUMENT
 		QuickHelpText [ en-US ] = "Open File" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "fileopen.png" ; };
+			ImageBitmap = Bitmap {File = "fileopen.png" ;} ;
 		};
-		Text [ en-US ] = "Open File";
+		Text [ en-US ] = "Open File" ;
 	};
 	Image IMG_FILEOPEN_HC
 	{
-		ImageBitmap = Bitmap { File = "fileopen_hc.png" ; };
+		ImageBitmap = Bitmap {File = "fileopen_hc.png" ;} ;
 	};
 
 	FixedLine GRP_TARGET
@@ -479,13 +479,13 @@ TabPage RID_SVXPAGE_HYPERLINK_DOCUMENT
 		QuickHelpText [ en-US ] = "Target in Document" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "target.png" ; };
+			ImageBitmap = Bitmap {File = "target.png" ;} ;
 		};
 		Text [ en-US ] = "Target in Document" ;
 	};
 	Image IMG_BROWSE_HC
 	{
-		ImageBitmap = Bitmap { File = "target_hc.png" ; };
+		ImageBitmap = Bitmap {File = "target_hc.png" ;} ;
 	};
 
 	FixedLine GRP_MORE
@@ -528,8 +528,8 @@ TabPage RID_SVXPAGE_HYPERLINK_DOCUMENT
 		DDExtraWidth = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Text" ; Default ; > ;
-			< "Button" ; Default ; > ;
+			< "Text" ; Default ;	> ;
+			< "Button" ; Default ;	> ;
 		};
 	};
 	FixedText FT_INDICATION
@@ -567,13 +567,13 @@ TabPage RID_SVXPAGE_HYPERLINK_DOCUMENT
 		QuickHelpText [ en-US ] = "Events" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "script.png" ; };
+			ImageBitmap = Bitmap {File = "script.png" ;} ;
 		};
-		Text [ en-US ] = "Events";
+		Text [ en-US ] = "Events" ;
 	};
 	Image IMG_SCRIPT_HC
 	{
-		ImageBitmap = Bitmap { File = "script_hc.png" ; };
+		ImageBitmap = Bitmap {File = "script_hc.png" ;} ;
 	};
 };
 
@@ -584,7 +584,7 @@ TabPage RID_SVXPAGE_HYPERLINK_DOCUMENT
 TabPage RID_SVXPAGE_HYPERLINK_NEWDOCUMENT
 {
 	Hide = TRUE ;
-	HelpID = HID_HYPERLINK_NEWDOCUMENT;
+	HelpID = HID_HYPERLINK_NEWDOCUMENT ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 	Size = MAP_APPFONT ( 260, 162 ) ;
@@ -648,13 +648,13 @@ TabPage RID_SVXPAGE_HYPERLINK_NEWDOCUMENT
 		QuickHelpText [ en-US ] = "Select Path" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "newdoc.png" ; };
+			ImageBitmap = Bitmap {File = "newdoc.png" ;} ;
 		};
-		Text [ en-US ] = "Select Path";
+		Text [ en-US ] = "Select Path" ;
 	};
 	Image IMG_CREATE_HC
 	{
-		ImageBitmap = Bitmap { File = "newdoc_hc.png" ; };
+		ImageBitmap = Bitmap {File = "newdoc_hc.png" ;} ;
 	};
 
 	FixedLine GRP_MORE
@@ -697,8 +697,8 @@ TabPage RID_SVXPAGE_HYPERLINK_NEWDOCUMENT
 		DDExtraWidth = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "Text" ; Default ; > ;
-			< "Button" ; Default ; > ;
+			< "Text" ; Default ;	> ;
+			< "Button" ; Default ;	> ;
 		};
 	};
 	FixedText FT_INDICATION
@@ -736,13 +736,13 @@ TabPage RID_SVXPAGE_HYPERLINK_NEWDOCUMENT
 		QuickHelpText [ en-US ] = "Events" ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "script.png" ; };
+			ImageBitmap = Bitmap {File = "script.png" ;} ;
 		};
 		Text [ en-US ] = "Events" ;
 	};
 	Image IMG_SCRIPT_HC
 	{
-		ImageBitmap = Bitmap { File = "script_hc.png" ; };
+		ImageBitmap = Bitmap {File = "script_hc.png" ;} ;
 	};
 };
 
@@ -751,7 +751,7 @@ TabPage RID_SVXPAGE_HYPERLINK_NEWDOCUMENT
 *************************************************************************/
 ModalDialog RID_SVXDLG_NEWHYPERLINK
 {
-	HelpID = CMD_SID_HYPERLINK_DIALOG;
+	HelpID = CMD_SID_HYPERLINK_DIALOG ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
 	Size = MAP_APPFONT ( 325, 185 ) ;
@@ -842,40 +842,42 @@ String RID_SVXSTR_HYPERDLG_QUERYOVERWRITE
 
 Image RID_SVXBMP_HLINETTP
 {
-	ImageBitmap = Bitmap { File = "hlinettp.png" ; };
+	ImageBitmap = Bitmap {File = "hlinettp.png" ;} ;
 };
 
 Image RID_SVXBMP_HLMAILTP
 {
-	ImageBitmap = Bitmap { File = "hlmailtp.png" ; };
+	ImageBitmap = Bitmap {File = "hlmailtp.png" ;} ;
 };
 
 Image RID_SVXBMP_HLDOCTP
 {
-	ImageBitmap = Bitmap { File = "hldoctp.png" ; };
+	ImageBitmap = Bitmap {File = "hldoctp.png" ;} ;
 };
 
 Image RID_SVXBMP_HLDOCNTP
 {
-	ImageBitmap = Bitmap { File = "hldocntp.png" ; };
+	ImageBitmap = Bitmap {File = "hldocntp.png" ;} ;
 };
 
 Image RID_SVXBMP_HLINETTP_H
 {
-	ImageBitmap = Bitmap { File = "hlinettp_h.png" ; };
+	ImageBitmap = Bitmap {File = "hlinettp_h.png" ;} ;
 };
 
 Image RID_SVXBMP_HLMAILTP_H
 {
-	ImageBitmap = Bitmap { File = "hlmailtp_h.png" ; };
+	ImageBitmap = Bitmap {File = "hlmailtp_h.png" ;} ;
 };
 
 Image RID_SVXBMP_HLDOCTP_H
 {
-	ImageBitmap = Bitmap { File = "hldoctp_h.png" ; };
+	ImageBitmap = Bitmap {File = "hldoctp_h.png" ;} ;
 };
 
 Image RID_SVXBMP_HLDOCNTP_H
 {
-	ImageBitmap = Bitmap { File = "hldocntp_h.png" ; };
+	ImageBitmap = Bitmap {File = "hldocntp_h.png" ;} ;
 };
+
+// ********************************************************************** EOF

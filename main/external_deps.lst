@@ -103,10 +103,10 @@ if (SYSTEM_REDLAND != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (GUI!=UNX || SYSTEM_ZLIB!=YES)
-    MD5 = 2ab442d169156f34c379c968f3f482dd
-    name = zlib-1.2.7.tar.bz2
-    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
-    URL2 = http://zlib.net/zlib-1.2.7.tar.bz2
+    MD5 = 60df6a37c56e7c1366cca812414f7b85
+    name = zlib-1.2.7.tar.gz
+    URL1 = https://www.zlib.net/fossils/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
     MD5 = 2c9b0f83ed5890af02c0df1c1776f39b
@@ -151,20 +151,20 @@ if (SOLAR_JAVA==TRUE)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
-    MD5 = ef66581b80f06eae42f5268bc0b50c6d
-    name = openssl-1.0.2t.tar.gz
-    URL1 = https://www.openssl.org/source/$(name)
+    MD5 = cdc2638f789ecc2db2c91488265686c1
+    name = openssl-1.0.2u.tar.gz
+    URL1 = https://www.openssl.org/source/old/1.0.2/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 98492e965963f852ab29f9e61b2ad700
-    name = apr-1.5.2.tar.gz
+    MD5 = 0759294408daace192c935b7c9e76e04
+    name = apr-1.6.5.tar.gz
     URL1 = https://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if ( true )
-    MD5 = 866825c04da827c6e5f53daff5569f42
-    name = apr-util-1.5.4.tar.gz
+    MD5 = bd502b9a8670a8012c4d90c31a84955f
+    name = apr-util-1.6.1.tar.gz
     URL1 = https://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -199,9 +199,9 @@ if (ENABLE_MEDIAWIKI == YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_PYTHON != YES)
-    MD5 = 27a7919fa8d1364bae766949aaa91a5b
-    name = Python-2.7.17.tgz
-    URL1 = https://www.python.org/ftp/python/2.7.17/$(name)
+    MD5 = 38c84292658ed4456157195f1c9bcbe1
+    name = Python-2.7.18.tgz
+    URL1 = https://www.python.org/ftp/python/2.7.18/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_BOOST != YES)
@@ -213,18 +213,18 @@ if (SYSTEM_BOOST != YES)
 if (SYSTEM_VIGRA != YES)
     MD5 = d62650a6f908e85643e557a236ea989c
     name = vigra1.6.0.tar.gz
-    URL1 = http://hci.iwr.uni-heidelberg.de/vigra-old-versions/vigra1.6.0.tar.gz
+    URL1 = https://src.fedoraproject.org/lookaside/extras/vigra/vigra1.6.0.tar.gz/d62650a6f908e85643e557a236ea989c/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_EXPAT != YES)
-    MD5 = 875a2c2ff3e8eb9e5a5cd62db2033ab5
-    name = expat-2.2.9.tar.bz2
-    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.9/$(name)
+    MD5 = 9d60de01cc0126dfd11121b04838e154
+    name = expat-2.2.10.tar.bz2
+    URL1 = https://sourceforge.net/projects/expat/files/expat/2.2.10/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_CURL != YES)
-    MD5 = 8cb2898a9adc106075ac3cdc2b965bf6
-    name = curl-7.66.0.tar.gz
+    MD5 = 7422feb126df677d2d33294a1fd079ea
+    name = curl-7.72.0.tar.gz
     URL1 = https://curl.haxx.se/download/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
@@ -260,10 +260,10 @@ if (RAT_JAR_HOME==BUILD)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
-    MD5 = beeca87be45ec87d241ddd0e1bad80c1
-    name = bsh-2.0b6-src.zip
-    URL1 = https://bintray.com/artifact/download/beanshell/Beanshell/org/apache-extras/beanshell/bsh/2.0b6/$(name)
-    URL2 = http://central.maven.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/$(name)
+    MD5 = 34c726044fc4e2c7c3cf489fc239cdd5
+    name = bsh-2.1.0-src.zip
+    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 ###############################################################################
 # Libraries with category B license

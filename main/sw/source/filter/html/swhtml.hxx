@@ -455,7 +455,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 
 	sal_Bool bOldIsHTMLMode : 1;	// War's mal ein HTML-Dokument?
 
-	sal_Bool bDocInitalized : 1;	// Dokument bzw. Shell wurden initialisiert
+	sal_Bool bDocInitialized : 1;	// Dokument bzw. Shell wurden initialisiert
 								// Flag um doppeltes init durch Rekursion
 								// zu verhindern.
 	sal_Bool bViewCreated : 1;		// die View wurde schon erzeugt (asynchron)

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ inline sal_uInt16 _uInt16( sal_Int32 nValue )
 {
 	OSL_ENSURE( (nValue >= 0) && ((sal_uInt32)nValue <= 0xffff), "overflow while converting sal_Int32 to sal_uInt16" );
 	return (sal_uInt16)nValue;
-} 
+}
 
 inline sal_Int16 _Int16( sal_Int32 nValue )
 {
@@ -307,7 +307,7 @@ public:
 
 	/** defines a bitmap and returns its flash id.
 	*/
-	sal_uInt16 defineBitmap( const BitmapEx& bmpSource, sal_Int32 nJPEGQualityLevel  );
+	sal_uInt16 defineBitmap( const BitmapEx& bmpSource, sal_Int32 nJPEGQualityLevel );
 
 	// control tags
 
@@ -329,7 +329,7 @@ public:
 		Only one sprite can be edited at one time */
 	sal_uInt16 startSprite();
 
-	/** ends editing of the curent sprites and adds it to the movie stream */
+	/** ends editing of the current sprites and adds it to the movie stream */
 	void endSprite();
 
 	/** inserts a doaction tag with an ActionStop */
@@ -343,9 +343,9 @@ public:
 	void gotoFrame( sal_uInt16 nFrame );
 
 #ifdef AUGUSTUS
-	/** stream out a sound.  Should make it more intelligent so it interleaves with other items.*/
+	/** stream out a sound. Should make it more intelligent so it interleaves with other items.*/
 	sal_Bool streamSound( const char * filename );
-#endif 
+#endif
 
 private:
 	Point					map( const Point& rPoint ) const;
@@ -360,8 +360,8 @@ private:
 	void Impl_writeBmp( sal_uInt16 nBitmapId, sal_uInt32 width, sal_uInt32 height, sal_uInt8 *pCompressed, sal_uInt32 compressed_size );
 	void Impl_writeImage( const BitmapEx& rBmpEx, const Point& rPt, const Size& rSz, const Point& rSrcPt, const Size& rSrcSz, const Rectangle& rClipRect, bool bMap );
 	void Impl_writeJPEG(sal_uInt16 nBitmapId, const sal_uInt8* pJpgData, sal_uInt32 nJpgDataLength, sal_uInt8 *pCompressed, sal_uInt32 compressed_size );
-    void Impl_handleLineInfoPolyPolygons(const LineInfo& rInfo, const basegfx::B2DPolygon& rLinePolygon);
-    void Impl_writeActions( const GDIMetaFile& rMtf );
+	void Impl_handleLineInfoPolyPolygons(const LineInfo& rInfo, const basegfx::B2DPolygon& rLinePolygon);
+	void Impl_writeActions( const GDIMetaFile& rMtf );
 	void Impl_writePolygon( const Polygon& rPoly, sal_Bool bFilled );
 	void Impl_writePolygon( const Polygon& rPoly, sal_Bool bFilled, const Color& rFillColor, const Color& rLineColor );
 	void Impl_writePolyPolygon( const PolyPolygon& rPolyPoly, sal_Bool bFilled, sal_uInt8 nTransparence = 0);
@@ -378,7 +378,7 @@ private:
 	FlashFont& Impl_getFont( const Font& rFont );
 
 	static void Impl_addPolygon( BitStream& rBits, const Polygon& rPoly, sal_Bool bFilled );
-	
+
 	static void Impl_addShapeRecordChange( BitStream& rBits, sal_Int16 dx, sal_Int16 dy, sal_Bool bFilled );
 	static void Impl_addStraightEdgeRecord( BitStream& rBits, sal_Int16 dx, sal_Int16 dy );
 	static void Impl_addCurvedEdgeRecord( BitStream& rBits, sal_Int16 control_dx, sal_Int16 control_dy, sal_Int16 anchor_dx, sal_Int16 anchor_dy );

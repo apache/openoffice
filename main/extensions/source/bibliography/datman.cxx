@@ -1427,7 +1427,7 @@ Reference< awt::XControlModel >	BibDataManager::createGridModel(const ::rtl::OUS
 		Any aAny; aAny <<= aControlName;
 		xPropSet->setPropertyValue( C2U("DefaultControl"),aAny );
 
-		// the the helpURL
+		// the helpURL
 		::rtl::OUString uProp(C2U("HelpURL"));
 		Reference< XPropertySetInfo > xPropInfo = xPropSet->getPropertySetInfo();
 		if (xPropInfo->hasPropertyByName(uProp))

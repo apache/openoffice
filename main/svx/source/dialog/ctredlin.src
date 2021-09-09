@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 #include "ctredlin.hrc"
 #include "helpid.hrc"
-
-#define MASKCOLOR	MaskColor = Color { Red = 0xFFFF; Green = 0x0000; Blue = 0xFFFF; } ;
 
 TabPage SID_REDLIN_FILTER_PAGE
 {
@@ -35,12 +33,12 @@ TabPage SID_REDLIN_FILTER_PAGE
 	HelpId = HID_REDLINING_FILTER_PAGE ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-    Size = MAP_APPFONT ( 261 , 86 ) ;
+	Size = MAP_APPFONT ( 261, 86 ) ;
 	Hide = TRUE ;
 	CheckBox CB_DATE
 	{
-        Pos = MAP_APPFONT ( 6 , 8 ) ;
-        Size = MAP_APPFONT ( 50 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 8 ) ;
+		Size = MAP_APPFONT ( 50, 10 ) ;
 		TabStop = TRUE ;
 		HelpId = HID_REDLINING_FILTER_CB_DATE ;
 		Text [ en-US ] = "~Date" ;
@@ -50,18 +48,18 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_LB_DATE ;
 		Border = TRUE ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 60 , 6 ) ;
-        Size = MAP_APPFONT ( 78 , 99 ) ;
+		Pos = MAP_APPFONT ( 60, 6 ) ;
+		Size = MAP_APPFONT ( 78, 99 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "earlier than" ; Default ; > ;
-			< "since" ; Default ; > ;
-			< "equal to " ; Default ; > ;
-			< "not equal to" ; Default ; > ;
-			< "between" ; Default ; > ;
-			< "since saving" ; Default ; > ;
+			< "earlier than" ; Default ;	> ;
+			< "since" ; Default ;			> ;
+			< "equal to " ; Default ;		> ;
+			< "not equal to" ; Default ;	> ;
+			< "between" ; Default ;			> ;
+			< "since saving" ; Default ;	> ;
 		};
 	};
 	DateField DF_DATE
@@ -69,8 +67,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_DF_DATE ;
 		Disable = TRUE ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 144 , 6 ) ;
-        Size = MAP_APPFONT ( 57 , 12 ) ;
+		Pos = MAP_APPFONT ( 144, 6 ) ;
+		Size = MAP_APPFONT ( 57, 12 ) ;
 		TabStop = TRUE ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
@@ -92,8 +90,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_TF_DATE ;
 		Disable = TRUE ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 203 , 6 ) ;
-        Size = MAP_APPFONT ( 35 , 12 ) ;
+		Pos = MAP_APPFONT ( 203, 6 ) ;
+		Size = MAP_APPFONT ( 35, 12 ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -102,22 +100,21 @@ TabPage SID_REDLIN_FILTER_PAGE
 	{
 		HelpId = HID_REDLINING_FILTER_IB_CLOCK ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 240 , 5 ) ;
-        Size = MAP_APPFONT ( 13 , 15 ) ;
+		Pos = MAP_APPFONT ( 240, 5 ) ;
+		Size = MAP_APPFONT ( 13, 15 ) ;
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "time.png" ; };
-			MASKCOLOR
+			ImageBitmap = Bitmap {File = "time.png" ;} ;
 		};
 		//QuickHelpText [ en-US ] = "Set Date/Time" ;
 		QuickHelpText [ en-US ] = "Set Start Date/Time" ;
 	};
 	FixedText FT_DATE2
 	{
-        Pos = MAP_APPFONT ( 60 , 24 ) ;
-        Size = MAP_APPFONT ( 78 , 8 ) ;
-        Right = TRUE ;
+		Pos = MAP_APPFONT ( 60, 24 ) ;
+		Size = MAP_APPFONT ( 78, 8 ) ;
+		Right = TRUE ;
 		Disable = TRUE ;
 		Text [ en-US ] = "and" ;
 	};
@@ -126,8 +123,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_DF_DATE2 ;
 		Border = TRUE ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 144 , 22 ) ;
-        Size = MAP_APPFONT ( 57 , 12 ) ;
+		Pos = MAP_APPFONT ( 144, 22 ) ;
+		Size = MAP_APPFONT ( 57, 12 ) ;
 		TabStop = TRUE ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
@@ -149,8 +146,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_TF_DATE2 ;
 		Border = TRUE ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 203 , 22 ) ;
-		Size = MAP_APPFONT ( 35 , 12 ) ;
+		Pos = MAP_APPFONT ( 203, 22 ) ;
+		Size = MAP_APPFONT ( 35, 12 ) ;
 		TabStop = TRUE ;
 		Spin = TRUE ;
 		Repeat = TRUE ;
@@ -159,13 +156,12 @@ TabPage SID_REDLIN_FILTER_PAGE
 	{
 		HelpId = HID_REDLINING_FILTER_IB_CLOCK2 ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 240 , 21 ) ;
-        Size = MAP_APPFONT ( 13 , 15 ) ;
+		Pos = MAP_APPFONT ( 240, 21 ) ;
+		Size = MAP_APPFONT ( 13, 15 ) ;
 		TabStop = TRUE ;
 		ButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "time.png" ; };
-			MASKCOLOR
+			ImageBitmap = Bitmap {File = "time.png" ;} ;
 		};
 		//QuickHelpText [ en-US ] = "Set Date/Time" ;
 		QuickHelpText [ en-US ] = "Set End Date/Time" ;
@@ -173,8 +169,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 	CheckBox CB_AUTOR
 	{
 		HelpId = HID_REDLINING_FILTER_CB_AUTOR ;
-        Pos = MAP_APPFONT ( 6 , 40 ) ;
-        Size = MAP_APPFONT ( 50 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 40 ) ;
+		Size = MAP_APPFONT ( 50, 10 ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "~Author" ;
 	};
@@ -182,8 +178,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 	{
 		HelpId = HID_REDLINING_FILTER_LB_AUTOR ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 60 , 38 ) ;
-        Size = MAP_APPFONT ( 178 , 100 ) ;
+		Pos = MAP_APPFONT ( 60, 38 ) ;
+		Size = MAP_APPFONT ( 178, 100 ) ;
 		TabStop = TRUE ;
 		Disable = TRUE ;
 		DropDown = TRUE ;
@@ -191,8 +187,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 	CheckBox CB_RANGE
 	{
 		HelpId = HID_REDLINING_FILTER_CB_RANGE ;
-        Pos = MAP_APPFONT ( 6 , 56 ) ;
-		Size = MAP_APPFONT ( 50 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 56 ) ;
+		Size = MAP_APPFONT ( 50, 10 ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "~Range" ;
 	};
@@ -201,8 +197,8 @@ TabPage SID_REDLIN_FILTER_PAGE
 		HelpId = HID_REDLINING_FILTER_ED_RANGE ;
 		Disable = TRUE ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 60 , 54 ) ;
-        Size = MAP_APPFONT ( 178 , 12 ) ;
+		Pos = MAP_APPFONT ( 60, 54 ) ;
+		Size = MAP_APPFONT ( 178, 12 ) ;
 		TabStop = TRUE ;
 	};
 	String STR_ACTION
@@ -215,16 +211,16 @@ TabPage SID_REDLIN_FILTER_PAGE
 		Border = TRUE ;
 		Hide = TRUE ;
 		Disable = TRUE ;
-        Pos = MAP_APPFONT ( 60 , 54 ) ;
-        Size = MAP_APPFONT ( 178 , 100 ) ;
+		Pos = MAP_APPFONT ( 60, 54 ) ;
+		Size = MAP_APPFONT ( 178, 100 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 	};
 	PushButton BTN_REF
 	{
 		HelpId = HID_REDLINING_FILTER_BTN_REF ;
-        Pos = MAP_APPFONT ( 240 , 54 ) ;
-		Size = MAP_APPFONT ( 12 , 12 ) ;
+		Pos = MAP_APPFONT ( 240, 54 ) ;
+		Size = MAP_APPFONT ( 12, 12 ) ;
 		Disable = TRUE ;
 		TabStop = TRUE ;
 		QuickHelpText [ en-US ] = "Set Reference" ;
@@ -233,25 +229,24 @@ TabPage SID_REDLIN_FILTER_PAGE
 	CheckBox CB_COMMENT
 	{
 		HelpId = HID_REDLINING_FILTER_CB_COMMENT ;
-        Pos = MAP_APPFONT ( 6 , 72 ) ;
-		Size = MAP_APPFONT ( 50 , 10 ) ;
+		Pos = MAP_APPFONT ( 6, 72 ) ;
+		Size = MAP_APPFONT ( 50, 10 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "Comment";
+		Text [ en-US ] = "Comment" ;
 	};
 	Edit ED_COMMENT
 	{
 		HelpId = HID_REDLINING_FILTER_ED_COMMENT ;
 		Disable = TRUE ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( 60 , 70 ) ;
-        Size = MAP_APPFONT ( 178 , 12 ) ;
+		Pos = MAP_APPFONT ( 60, 70 ) ;
+		Size = MAP_APPFONT ( 178, 12 ) ;
 		TabStop = TRUE ;
 	};
-    Image IMG_TIME_H
-    {
-        ImageBitmap = Bitmap { File = "time_h.png" ; };
-        MASKCOLOR
-    };
+	Image IMG_TIME_H
+	{
+		ImageBitmap = Bitmap {File = "time_h.png" ;} ;
+	};
 	String STR_DATE_COMBOX
 	{
 		Text [ en-US ] = "Date Condition" ;
@@ -282,7 +277,7 @@ TabPage SID_REDLIN_VIEW_PAGE
 	HelpId = HID_REDLINING_VIEW_PAGE ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 270 , 126 ) ;
+	Size = MAP_APPFONT ( 270, 126 ) ;
 	Hide = TRUE ;
 	String STR_VIEW
 	{
@@ -291,46 +286,46 @@ TabPage SID_REDLIN_VIEW_PAGE
 	Control DG_VIEW
 	{
 		HelpId = HID_REDLINING_VIEW_DG_VIEW ;
-		Pos = MAP_APPFONT ( 3 , 1 ) ;
-		Size = MAP_APPFONT ( 221 , 65 ) ;
+		Pos = MAP_APPFONT ( 3, 1 ) ;
+		Size = MAP_APPFONT ( 221, 65 ) ;
 		Border = TRUE ;
 	};
 	PushButton PB_ACCEPT
 	{
 		HelpId = HID_REDLINING_VIEW_PB_ACCEPT ;
-		Pos = MAP_APPFONT ( 3 , 69 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		Pos = MAP_APPFONT ( 3, 69 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "~Accept" ;
 	};
 	PushButton PB_REJECT
 	{
 		HelpId = HID_REDLINING_VIEW_PB_REJECT ;
-		Pos = MAP_APPFONT ( 69 , 69 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		Pos = MAP_APPFONT ( 69, 69 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "~Reject" ;
 	};
 	PushButton PB_ACCEPTALL
 	{
 		HelpId = HID_REDLINING_VIEW_PB_ACCEPTALL ;
-		Pos = MAP_APPFONT ( 141 , 69 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		Pos = MAP_APPFONT ( 141, 69 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "A~ccept All" ;
 	};
 	PushButton PB_REJECTALL
 	{
 		HelpId = HID_REDLINING_VIEW_PB_REJECTALL ;
-		Pos = MAP_APPFONT ( 207 , 69 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
+		Pos = MAP_APPFONT ( 207, 69 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
 		Text [ en-US ] = "R~eject All" ;
 	};
 
 	PushButton PB_UNDO
 	{
 		HelpId = HID_REDLINING_VIEW_PB_UNDO ;
-		Hide = TRUE;
-		Pos  = MAP_APPFONT ( 279 , 69 ) ;
-		Size = MAP_APPFONT ( 60 , 14 ) ;
-		Text [ en-US ] = "Undo";
+		Hide = TRUE ;
+		Pos = MAP_APPFONT ( 279, 69 ) ;
+		Size = MAP_APPFONT ( 60, 14 ) ;
+		Text [ en-US ] = "Undo" ;
 	};
 	String STR_TITLE1
 	{
@@ -354,34 +349,4 @@ TabPage SID_REDLIN_VIEW_PAGE
 	};
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

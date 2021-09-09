@@ -285,8 +285,8 @@ public class CheckXComponentLoader
                   )
             {
                 loadURL(m_xLoader, RESULT_VALID_DOC, sURL, "_blank", 0, lProps);
-                // Its not needed to reset this using states!
-                // Its done internaly ...
+                // It's not needed to reset this using states!
+                // It's done internally ...
                 if (!xIndicator.wasUsed())
                 {
                     System.out.println("External progress was not used for loading.");

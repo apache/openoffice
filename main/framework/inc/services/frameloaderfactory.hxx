@@ -131,7 +131,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		standard destructor to delete instance
-			@descr		We use it to clear ouer cache.
+			@descr		We use it to clear our cache.
 
 			@seealso	class RegistryCache
 
@@ -195,7 +195,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		not supported
-			@descr		Please use XNameAcces instead of these!
+			@descr		Please use XNameAccess instead of these!
 
 			@seealso	-
 
@@ -255,7 +255,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 
 		/*-****************************************************************************************************//**
 			@short		check if searched frame loader exist in configuration
-			@descr		Normaly nobody needs really these method (use getElementNames() in combination with getByName()).
+			@descr		Normally nobody needs really these method (use getElementNames() in combination with getByName()).
 						We guarantee correctness of these mechanism. There is no reason to check for existing elements then ...
 						but if you have an unknown name and has no fun to search it in returned sequence ...
 						you can call these ...
@@ -292,7 +292,7 @@ class FrameLoaderFactory	:	public ThreadHelpBase							,		// Struct for right in
 		/*-****************************************************************************************************//**
 			@short		return state if informations about frame loader available
 			@descr		If these method return false - no information could'nt read from configuration ...
-						I think nothing will work then. Normaly we return sal_True!
+						I think nothing will work then. Normally we return sal_True!
 
 			@seealso	class FilterCache!
 

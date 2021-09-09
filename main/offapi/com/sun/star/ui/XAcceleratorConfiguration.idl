@@ -175,7 +175,7 @@ interface XAcceleratorConfiguration
                
     //-------------------------------------------
     /** optimized access to the relation "command-key" instead
-        of "key-command" which is provided normaly by this interface.
+        of "key-command" which is provided normally by this interface.
         
         <p>
         It can be used to implement collision handling, if more then one
@@ -254,7 +254,7 @@ interface XAcceleratorConfiguration
         
         <p>
         This is an optimized method, which can perform removing of commands
-        from this configuration set. Because normaly Commands are "foreign keys"
+        from this configuration set. Because normally Commands are "foreign keys"
         and key identifier the "primary keys" - it needs some work to remove
         all commands outside this container ...
         </p>

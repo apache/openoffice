@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,9 +29,9 @@ import com.sun.star.uno.UnoRuntime;
  *
  * @since OOo 2.0.0
  */
-public class Frame 
+public class Frame
 	extends Wrapper
-	implements 
+	implements
 		com.sun.star.frame.XFrame,
 		com.sun.star.frame.XDispatchProvider,
 		com.sun.star.frame.XDispatchProviderInterception
@@ -39,7 +39,7 @@ public class Frame
 	private com.sun.star.frame.XFrame xFrame;
 	private com.sun.star.frame.XDispatchProvider xDispatchProvider;
 	private com.sun.star.frame.XDispatchProviderInterception xDispatchProviderInterception;
-	
+
 	public Frame( com.sun.star.frame.XFrame xFrame )
 	{
 		super( xFrame );
@@ -55,7 +55,7 @@ public class Frame
 	//==============================================================
 	// com.sun.star.frame.XFrame
 	//--------------------------------------------------------------
-	
+
 	public void initialize( /*IN*/com.sun.star.awt.XWindow xWindow )
 	{
 		xFrame.initialize( xWindow );
@@ -144,16 +144,16 @@ public class Frame
 	//==============================================================
 	// com.sun.star.frame.XDispatchProvider
 	//--------------------------------------------------------------
-	
-	public com.sun.star.frame.XDispatch queryDispatch( 
-			/*IN*/ com.sun.star.util.URL aURL, 
-			/*IN*/ String aTargetFrameName, 
+
+	public com.sun.star.frame.XDispatch queryDispatch(
+			/*IN*/ com.sun.star.util.URL aURL,
+			/*IN*/ String aTargetFrameName,
 			/*IN*/ int nSearchFlags )
 	{
 		return xDispatchProvider.queryDispatch( aURL, aTargetFrameName, nSearchFlags );
 	}
 
-	public com.sun.star.frame.XDispatch[] queryDispatches( 
+	public com.sun.star.frame.XDispatch[] queryDispatches(
 			/*IN*/ com.sun.star.frame.DispatchDescriptor[] aRequests )
 	{
 		return xDispatchProvider.queryDispatches( aRequests );
@@ -162,14 +162,14 @@ public class Frame
 	//==============================================================
 	// com.sun.star.frame.XDispatchProviderInterception
 	//--------------------------------------------------------------
-	
-	public void registerDispatchProviderInterceptor( 
+
+	public void registerDispatchProviderInterceptor(
 			/*IN*/ com.sun.star.frame.XDispatchProviderInterceptor xInterceptor )
 	{
 		xDispatchProviderInterception.registerDispatchProviderInterceptor( xInterceptor );
 	}
 
-	public void releaseDispatchProviderInterceptor( 
+	public void releaseDispatchProviderInterceptor(
 			/*IN*/ com.sun.star.frame.XDispatchProviderInterceptor xInterceptor )
 	{
 		xDispatchProviderInterception.releaseDispatchProviderInterceptor( xInterceptor );

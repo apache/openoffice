@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,21 +8,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 <!--
-	For further documentation and updates visit http://xml.openoffice.org/odf2xhtml
+	For further documentation and updates visit https://xml.openoffice.org/odf2xhtml
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:java="http://xml.apache.org/xslt/java" xmlns:urlencoder="http://www.jclark.com/xt/java/java.net.URLEncoder" exclude-result-prefixes="chart config dc dom dr3d draw fo form math meta number office ooo oooc ooow script style svg table text xforms xlink xsd xsi java urlencoder">
 
@@ -70,7 +70,7 @@
 	</xsl:template>
 
 	<!-- currentSolution: 8 non-breakable-spaces instead of a TAB is an approximation.
-		 Sometimes less spaces than 8 might be needed and the output might be more difficult to read-->
+		 Sometimes less spaces than 8 might be needed and the output might be more difficult to read -->
 	<xsl:template match="text:tab">
 		<xsl:param name="globalData"/>
 
@@ -158,7 +158,7 @@
 		</xsl:element>
 	</xsl:template>
 
-    <xsl:template match="@text:name">
+	<xsl:template match="@text:name">
 		<xsl:attribute name="id">
 			<xsl:choose>
 				<xsl:when test="number(substring(.,1,1))">
@@ -170,15 +170,15 @@
 					<xsl:value-of select="translate(., '&#xA;&amp;&lt;&gt;.,;: %()[]/\+', '___________________________')"/>
 				</xsl:otherwise>
 			</xsl:choose>
-        </xsl:attribute>
-    </xsl:template>
-    
+		</xsl:attribute>
+	</xsl:template>
+		
 	<xsl:template match="text:sequence">
 		<xsl:param name="globalData"/>
 
 		<xsl:element namespace="{$namespace}" name="a">
 			<xsl:apply-templates select="@*" />
-			<xsl:attribute name="id">			
+			<xsl:attribute name="id">
 				<xsl:choose>
 					<xsl:when test="number(substring(@text:ref-name,1,1))">
 					<!-- Heuristic: If the first character is a number a 'a_' will be set
@@ -188,7 +188,7 @@
 					<xsl:otherwise>
 						<xsl:value-of select="translate(@text:ref-name, '&#xA;&amp;&lt;&gt;.,;: %()[]/\+', '___________________________')"/>
 					</xsl:otherwise>
-				</xsl:choose>			
+				</xsl:choose>
 			</xsl:attribute>
 		</xsl:element>
 
@@ -212,7 +212,7 @@
 					<xsl:otherwise>
 						<xsl:value-of select="translate(@text:name, '&#xA;&amp;&lt;&gt;.,;: %()[]/\+', '___________________________')"/>
 					</xsl:otherwise>
-				</xsl:choose>					
+				</xsl:choose>
 			</xsl:attribute>
 		</xsl:element>
 
@@ -258,60 +258,60 @@
 		<xsl:apply-templates/>
 	</xsl:template>
 
-   
-    <xsl:template match="office:annotation">
-        <xsl:element name="span">
-            <xsl:attribute name="title">annotation</xsl:attribute>       
-            <xsl:attribute name="class">annotation_style_by_filter</xsl:attribute>                    
-            <xsl:apply-templates select="@*" />
-            <br/>            
-            <xsl:text>[ANNOTATION:</xsl:text>
-            <br/>
-            <xsl:apply-templates select="*" mode="annotation"/>
-            <xsl:text>]</xsl:text>           
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="text:p" mode="annotation">
-        <br/>    
-        <xsl:element name="span">
-            <xsl:text>NOTE: '</xsl:text>            
-            <xsl:apply-templates />
-            <xsl:text>'</xsl:text>                        
-        </xsl:element>
-    </xsl:template>
-        
-    <xsl:template match="dc:creator" mode="annotation">
-        <br/>     
-        <xsl:element name="span">
-            <xsl:attribute name="title">dc:creator</xsl:attribute>  
-            <xsl:text>BY '</xsl:text>            
-            <xsl:apply-templates />
-            <xsl:text>'</xsl:text>
-        </xsl:element>   
-    </xsl:template>
-    
-    <xsl:template match="dc:date" mode="annotation">  
-        <br/>     
-        <xsl:element name="span">
-            <xsl:attribute name="title">dc:date</xsl:attribute>
-            <xsl:text>ON '</xsl:text>                    
-            <xsl:apply-templates />
-            <xsl:text>'</xsl:text>
-        </xsl:element>       
-    </xsl:template>    
-    
-    <xsl:template match="meta:date-string" mode="annotation">
-        <br/>    
-        <xsl:element name="span">
-            <xsl:attribute name="title">meta-date-string</xsl:attribute>  
-            <xsl:text>META DATE '</xsl:text>                            
-            <xsl:apply-templates />
-            <xsl:text>'</xsl:text>            
-        </xsl:element>           
-    </xsl:template>    
-        
-    
+
+	<xsl:template match="office:annotation">
+		<xsl:element name="span">
+			<xsl:attribute name="title">annotation</xsl:attribute>
+			<xsl:attribute name="class">annotation_style_by_filter</xsl:attribute>
+			<xsl:apply-templates select="@*" />
+			<br/>
+			<xsl:text>[ANNOTATION:</xsl:text>
+			<br/>
+			<xsl:apply-templates select="*" mode="annotation"/>
+			<xsl:text>]</xsl:text>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="text:p" mode="annotation">
+		<br/>
+		<xsl:element name="span">
+			<xsl:text>NOTE: '</xsl:text>
+			<xsl:apply-templates />
+			<xsl:text>'</xsl:text>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="dc:creator" mode="annotation">
+		<br/>
+		<xsl:element name="span">
+			<xsl:attribute name="title">dc:creator</xsl:attribute>
+			<xsl:text>BY '</xsl:text>
+			<xsl:apply-templates />
+			<xsl:text>'</xsl:text>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="dc:date" mode="annotation">
+		<br/>
+		<xsl:element name="span">
+			<xsl:attribute name="title">dc:date</xsl:attribute>
+			<xsl:text>ON '</xsl:text>
+			<xsl:apply-templates />
+			<xsl:text>'</xsl:text>
+		</xsl:element>
+	</xsl:template>
+
+	<xsl:template match="meta:date-string" mode="annotation">
+		<br/>
+		<xsl:element name="span">
+			<xsl:attribute name="title">meta-date-string</xsl:attribute>
+			<xsl:text>META DATE '</xsl:text>
+			<xsl:apply-templates />
+			<xsl:text>'</xsl:text>
+		</xsl:element>
+	</xsl:template>
+
+
 	<!-- *************** -->
 	<!-- *** HELPER  *** -->
 	<!-- *************** -->
@@ -321,7 +321,7 @@
 		<xsl:param name="href"/>
 
 		<xsl:choose>
-			<!-- internal OOo URL used in content tables -->
+			<!-- internal AOO URL used in content tables -->
 			<xsl:when test="contains($href, '%7Coutline')">
 				<!-- the simple workaround for content tables in a single document is to create create an anchor from every heading element
 					 work-around downside: Multiple identical headings won't refer always to the first.
@@ -338,10 +338,10 @@
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:choose>
-					 <!-- in case of packed open office document -->
+					 <!-- in case of packed OpenOffice document -->
 					<xsl:when test="starts-with($sourceBaseURL, 'jar:') or $isPackageFormat">
 						<xsl:choose>
-							 <!-- for images relative to open office document -->
+							 <!-- for images relative to OpenOffice document -->
 							<xsl:when test="starts-with($href, '../')">
 								<!-- creating an absolute http URL to the packed image file (removing the '.')-->
 								<xsl:value-of select="concat(substring-after(substring-before($sourceBaseURL, '!'), 'jar:'), '/', $href, $optionalURLSuffix)"/>
@@ -350,7 +350,7 @@
 							<xsl:when test="contains($href, ':') or starts-with($href, '/')">
 								<xsl:value-of select="concat($href, $optionalURLSuffix)"/>
 							</xsl:when>
-							<!-- for images jared in open office document -->
+							<!-- for images jared in OpenOffice document -->
 							<xsl:otherwise>
 								<xsl:value-of select="concat($sourceBaseURL, $href, $optionalURLSuffix)"/>
 							</xsl:otherwise>

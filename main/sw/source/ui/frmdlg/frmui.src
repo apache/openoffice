@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,24 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "frmui.hrc"
 
 /*-----------------------------------------------------------------------
-	Beschreibung: V-Align
+ Description: V-Align
  -----------------------------------------------------------------------*/
 String STR_TOP
 {
@@ -35,14 +36,14 @@ String STR_BOTTOM
 };
 String STR_CENTER_VERT
 {
-    Text [ en-US ] = "C~enter" ;
+	Text [ en-US ] = "C~enter" ;
 };
 String STR_CENTER_HORI
 {
 	Text [ en-US ] = "~Center" ;
 };
 /*-----------------------------------------------------------------------
-	Beschreibung: V-Rel
+ Description: V-Rel
  -----------------------------------------------------------------------*/
 String STR_TOPPRT
 {
@@ -50,13 +51,13 @@ String STR_TOPPRT
 };
 
 /*-----------------------------------------------------------------------
-	Beschreibung: H-Rel
+ Description: H-Rel
  -----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------
-	Beschreibung: V-Rel Zeichenausrichtungen
+ Description: V-Rel Zeichenausrichtungen
  -----------------------------------------------------------------------*/
 /*-----------------------------------------------------------------------
-	Beschreibung: Zeichenausrichtungen fuer frmsh.cxx - Kontextmenue
+ Description: Zeichenausrichtungen fuer frmsh.cxx - Kontextmenue
  -----------------------------------------------------------------------*/
 String STR_TOP_BASE
 {
@@ -96,7 +97,6 @@ String STR_CHAR_CENTER
 };
 String STR_OLE_INSERT
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Objekt einfügen : Objekt einf³gen */
 	Text [ en-US ] = "Insert object" ;
 };
 String STR_OLE_EDIT
@@ -123,7 +123,7 @@ InfoBox MSG_COLUMN_ERR_BOUNDWIDTH
 {
 	BUTTONS = WB_OK ;
 	DEFBUTTON = WB_DEF_OK ;
-	/* ### ACHTUNG: Neuer Text in Resource? Der Spaltenabstand ist zu groß für die Spaltenbreite. : Der Spaltenabstand ist zu gro˜ f³r die Spaltenbreite. */
 	Message [ en-US ] = "Column spacing exceeds the column width." ;
 };
 
+// ********************************************************************** EOF

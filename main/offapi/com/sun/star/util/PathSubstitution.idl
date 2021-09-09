@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ module com {  module sun {  module star {  module  util {
 /** A service to support the substitution and resubstitution of path variables.
 
         <p>
-        A path variable must be specified with the following synatx: "$("&lt;variable-name&gt;")".
+        A path variable must be specified with the following syntax: "$("&lt;variable-name&gt;")".
         Path variables are not case sensitive and are always provided as a UCB-complient URL's
         (for example: "file:///c:/temp" or "file:///usr/install"). This is mandatory to support an
         optional remote file system.<br>
@@ -60,7 +60,7 @@ module com {  module sun {  module star {  module  util {
         <dt>$(prog)</dt>
         <dd>Program path of the Office Basis layer.</dd>
     <dt>$(brandbaseurl)</dt>
-    <dd>Installation path of the the Office Brand layer.</dd>
+    <dd>Installation path of the Office Brand layer.</dd>
         <dt>$(user)</dt>
         <dd>The user installation directory.</dd>
         <dt>$(work)</dt>
@@ -86,7 +86,7 @@ module com {  module sun {  module star {  module  util {
         The only exceptions are: $(lang), $(langid) and $(vlang). 
         Therefore the service implementation should only substitute variables which
         are located at the start of a provided path string or are part of a multi-path. 
-        This special service is not designed to be a text substiution but shall
+        This special service is not designed to be a text substitution but shall
         provide (a) valid substituted path(s).
         </p>
 

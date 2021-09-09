@@ -37,7 +37,7 @@ namespace vos
 	The IExecutable-interface is to be understood as wrapper around
 	your application-code, which allows it to be executed asynchronously.
 
-	Wether you want real asynchronous behaviour or just pseudo-multitasking
+	Whether you want real asynchronous behaviour or just pseudo-multitasking
 	depends on which kind of execution-service you use to execute your executable.
 
 	(E.g. Threadpool/Fiberpool)

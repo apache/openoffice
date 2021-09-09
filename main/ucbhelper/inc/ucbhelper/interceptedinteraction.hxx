@@ -159,7 +159,7 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
             /** none of the specified interceptions match the incoming request */
             E_NOT_INTERCEPTED,
             /** the request could be intercepted - but the specified continuation could not be located.
-                Thats normaly an error of the programmer. May be the interaction request does not use
+                That's normally an error of the programmer. May be the interaction request does not use
                 the right set of continuations ... or the interception list contains the wrong continuation. */
             E_NO_CONTINUATION_FOUND,
             /** the request could be intercepted and the specified continuation could be selected successfully. */
@@ -244,7 +244,7 @@ class UCBHELPER_DLLPUBLIC InterceptedInteraction : public ::cppu::WeakImplHelper
                     by checking its interface type.
                     
             @return A valid reference to the continuation, if it could be located ...
-                    or an empty reference otherwhise.
+                    or an empty reference otherwise.
          */
         static ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > extractContinuation(
                     const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionContinuation > >& lContinuations,

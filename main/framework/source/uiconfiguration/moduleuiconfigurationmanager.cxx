@@ -846,7 +846,7 @@ void SAL_CALL ModuleUIConfigurationManager::initialize( const Sequence< Any >& a
             {
                 m_pStorageHandler[i] = new PresetHandler( m_xServiceManager );
                 m_pStorageHandler[i]->connectToResource( PresetHandler::E_MODULES,
-                                                         aResourceType, // this path wont be used later ... seee next lines!
+                                                         aResourceType, // this path won't be used later ... see next lines!
                                                          m_aModuleShortName,
                                                          css::uno::Reference< css::embed::XStorage >()); // no document root used here!
             }

@@ -1,6 +1,6 @@
 #!/bin/sh
 # *************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -8,30 +8,30 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 # *************************************************************
 URI_ENCODE="`dirname "$0"`/uri-encode"
 FOPTS=""
 
-# linux file utility needs -L option to resolve symlinks
+# Linux file utility needs -L option to resolve symlinks
 if [ "`uname -s`" = "Linux" ]
 then
   FOPTS="-L"
 fi
 
-# do not confuse the system mail clients with OOo and Java libraries
+# do not confuse the system mail clients with AOO and Java libraries
 unset LD_LIBRARY_PATH
 
-# tries to locate the executable specified 
+# tries to locate the executable specified
 # as first parameter in the user's path.
 which() {
 	if [ ! -z "$1" ]; then
@@ -44,7 +44,7 @@ which() {
 	fi
 }
 
-# checks for the original mozilla start script(s) 
+# checks for the original Mozilla start script(s)
 # and restrict the "-remote" semantics to those.
 run_mozilla() {
 	# find mozilla script in PATH if necessary
@@ -76,7 +76,7 @@ fi
 case `basename "$MAILER" | sed 's/-.*$//'` in
 
 	iceape | mozilla | netscape | seamonkey | icedove | thunderbird)
-	
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--to)
@@ -127,60 +127,60 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 		if [ "$ATTACH" != "" ]; then
 			COMMAND=${COMMAND:-}${COMMAND:+,}attachment=\'${ATTACH}\'
 		fi
-		
+
 		run_mozilla "$MAILER" "$COMMAND"
 		;;
-		
-    kmail)
 
-        while [ "$1" != "" ]; do
-            case $1 in
-                --to)
-                    TO="${TO:-}${TO:+,}$2"
-                    shift
-                    ;;
-                --cc)
-                    CC="${CC:-}${CC:+,}$2"
-                    shift
-                    ;;
-                --bcc)
-                    BCC="${BCC:-}${BCC:+,}$2"
-                    shift
-                    ;;
-                --subject)
-                    SUBJECT="$2"
-                    shift
-                    ;;
-                --body)
-                    BODY="$2"
-                    shift
-                    ;;
-                --from)
-                    FROM="$2"
-                    shift
-                    ;;
-                --attach)
-                    ATTACH="${ATTACH:-}${ATTACH:+ }--attach "`echo "file://$2" | "${URI_ENCODE}"`
-                    shift
-                    ;;
-                *)
-                    ;;
-            esac
-            shift;
-        done
+	kmail)
 
-        ${MAILER} --composer \
-            ${CC:+--cc} ${CC:+"${CC}"}  \
-            ${BCC:+--bcc} ${BCC:+"${BCC}"} \
-            ${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"}  \
-            ${BODY:+--body} ${BODY:+"${BODY}"} \
-            ${FROM:+--header} ${FROM:+"From: ${FROM}"} \
-            ${ATTACH:+${ATTACH}}  \
-            ${TO:+"${TO}"}
-        ;;
-		
+		while [ "$1" != "" ]; do
+			case $1 in
+				--to)
+					TO="${TO:-}${TO:+,}$2"
+					shift
+					;;
+				--cc)
+					CC="${CC:-}${CC:+,}$2"
+					shift
+					;;
+				--bcc)
+					BCC="${BCC:-}${BCC:+,}$2"
+					shift
+					;;
+				--subject)
+					SUBJECT="$2"
+					shift
+					;;
+				--body)
+					BODY="$2"
+					shift
+					;;
+				--from)
+					FROM="$2"
+					shift
+					;;
+				--attach)
+					ATTACH="${ATTACH:-}${ATTACH:+ }--attach "`echo "file://$2" | "${URI_ENCODE}"`
+					shift
+					;;
+				*)
+					;;
+			esac
+			shift;
+		done
+
+		${MAILER} --composer \
+			${CC:+--cc} ${CC:+"${CC}"} \
+			${BCC:+--bcc} ${BCC:+"${BCC}"} \
+			${SUBJECT:+--subject} ${SUBJECT:+"${SUBJECT}"} \
+			${BODY:+--body} ${BODY:+"${BODY}"} \
+			${FROM:+--header} ${FROM:+"From: ${FROM}"} \
+			${ATTACH:+${ATTACH}} \
+			${TO:+"${TO}"}
+		;;
+
 	mutt)
-	
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--from)
@@ -218,7 +218,7 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			esac
 			shift;
 		done
-		
+
 		x-terminal-emulator -e ${MAILER} \
 			${FROM:+-e} ${FROM:+"set from=\"${FROM}\""} \
 			${CC:+-c} ${CC:+"${CC}"} \
@@ -229,9 +229,9 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			${TO:+"${TO}"} &
 		rm -f $BODY
 		;;
-		
+
 	evolution)
-	
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--to)
@@ -267,13 +267,13 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			esac
 			shift;
 		done
-		
+
 		MAILTO="mailto:${TO}?${MAILTO}"
 		${MAILER} "${MAILTO}" &
 		;;
- 
+
 	groupwise)
-	
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--to)
@@ -309,13 +309,13 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			esac
 			shift;
 		done
-		
+
 		MAILTO="mailto:${TO}?${MAILTO}"
 		${MAILER} "${MAILTO}" &
 		;;
 
 	dtmail)
-	 
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--to)
@@ -331,12 +331,12 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			esac
 			shift;
 		done
-		 
+
 		${MAILER} ${TO:+-T} ${TO:-} ${ATTACH:+-a} ${ATTACH:+"${ATTACH}"}
 		;;
 
-	sylpheed | claws)
-	 
+	sylpheed | claws | claws-mail)
+
 		while [ "$1" != "" ]; do
 			case $1 in
 				--to)
@@ -352,7 +352,7 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			esac
 			shift;
 		done
-		 
+
 		 ${MAILER} ${TO:+--compose} "${TO:-}" ${ATTACH:+--attach} "${ATTACH:-}"
 		;;
 
@@ -374,7 +374,7 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 		;;
 
 	"")
-	
+
 		# DESKTOP_LAUNCH, see http://freedesktop.org/pipermail/xdg/2004-August/004489.html
 		if [ -n "$DESKTOP_LAUNCH" ]; then
 			while [ "$1" != "" ]; do
@@ -412,7 +412,7 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 				esac
 				shift;
 			done
-		
+
 			MAILTO="mailto:${TO}?${MAILTO}"
 			${DESKTOP_LAUNCH} "${MAILTO}" &
 		else
@@ -420,11 +420,11 @@ case `basename "$MAILER" | sed 's/-.*$//'` in
 			exit 2
 		fi
 		;;
-		
+
 	*)
 		echo "Unsupported mail client: `basename $MAILER | sed 's/-.*^//'`"
 		exit 2
 		;;
-esac  
-  
+esac
+
 exit 0

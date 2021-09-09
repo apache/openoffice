@@ -170,7 +170,7 @@ class ResetableGuard : private INonCopyable
 		/*-****************************************************************************************************//**
 			@short		disable using of these functions!
 			@descr		It's not allowed to use this methods. Different problems can occur otherwise.
-						Thats why we disable it by make it private.
+						That's why we disable it by making it private.
 
 			@seealso	other ctor
 

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #include "precompiled_sc.hxx"
@@ -61,7 +62,7 @@ SFX_IMPL_TOOLBOX_CONTROL( ScZoomSliderControl, SvxZoomSliderItem );
 ScZoomSliderControl::ScZoomSliderControl(
     sal_uInt16     nSlotId,
     sal_uInt16	   nId,
-    ToolBox&   rTbx ) 
+    ToolBox&   rTbx )
     :SfxToolBoxControl( nSlotId, nId, rTbx )
 {
     rTbx.Invalidate();
@@ -108,10 +109,10 @@ Window* ScZoomSliderControl::CreateItemWindow( Window *pParent )
 {
     // #i98000# Don't try to get a value via SfxViewFrame::Current here.
     // The view's value is always notified via StateChanged later.
-    ScZoomSliderWnd* pSlider    = new ScZoomSliderWnd( pParent,
+    ScZoomSliderWnd* pSlider = new ScZoomSliderWnd( pParent,
         ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchProvider >( m_xFrame->getController(),
         ::com::sun::star::uno::UNO_QUERY ), m_xFrame, 100 );
-    return  pSlider;
+    return pSlider;
 }
 
 // -----------------------------------------------------------------------
@@ -141,7 +142,7 @@ struct ScZoomSliderWnd::ScZoomSliderWnd_Impl
         maIncreaseButton(),
         maDecreaseButton(),
         mbValuesSet( true ),
-        mbOmitPaint( false ) 
+        mbOmitPaint( false )
         {
 
         }
@@ -153,8 +154,8 @@ const long nButtonWidth     = 10;
 const long nButtonHeight    = 10;
 const long nIncDecWidth     = 11;
 const long nIncDecHeight    = 11;
-const long nSliderHeight    = 2;      //  
-const long nSliderWidth     = 4;      //
+const long nSliderHeight    = 2; //
+const long nSliderWidth     = 4; //
 const long nSnappingHeight  = 4;
 const long nSliderXOffset   = 20;
 const long nSnappingEpsilon = 5; // snapping epsilon in pixels
@@ -168,7 +169,7 @@ sal_uInt16 ScZoomSliderWnd::Offset2Zoom( long nOffset ) const
     Size aSliderWindowSize = GetOutputSizePixel();
     const long nControlWidth = aSliderWindowSize.Width();
     sal_uInt16 nRet = 0;
-    
+
     if( nOffset < nSliderXOffset )
         return mpImpl->mnMinZoom;
     if( nOffset > nControlWidth - nSliderXOffset )
@@ -215,7 +216,7 @@ sal_uInt16 ScZoomSliderWnd::Offset2Zoom( long nOffset ) const
 
     if( nRet < mpImpl->mnMinZoom )
         return mpImpl->mnMinZoom;
-    
+
     else if( nRet > mpImpl->mnMaxZoom )
         return mpImpl->mnMaxZoom;
 
@@ -235,7 +236,7 @@ long ScZoomSliderWnd::Zoom2Offset( sal_uInt16 nCurrentZoom ) const
     {
         nCurrentZoom = nCurrentZoom - mpImpl->mnMinZoom;
         const long nFirstHalfRange = mpImpl->mnSliderCenter - mpImpl->mnMinZoom;
-        const long nSliderPixelPerZoomPercent = 1000 * nHalfSliderWidth  / nFirstHalfRange;
+        const long nSliderPixelPerZoomPercent = 1000 * nHalfSliderWidth / nFirstHalfRange;
         const long nOffset = (nSliderPixelPerZoomPercent * nCurrentZoom) / 1000;
         nRect += nOffset;
     }
@@ -243,7 +244,7 @@ long ScZoomSliderWnd::Zoom2Offset( sal_uInt16 nCurrentZoom ) const
     {
         nCurrentZoom = nCurrentZoom - mpImpl->mnSliderCenter;
         const long nSecondHalfRange = mpImpl->mnMaxZoom - mpImpl->mnSliderCenter;
-        const long nSliderPixelPerZoomPercent = 1000 * nHalfSliderWidth  / nSecondHalfRange;
+        const long nSliderPixelPerZoomPercent = 1000 * nHalfSliderWidth / nSecondHalfRange;
         const long nOffset = (nSliderPixelPerZoomPercent * nCurrentZoom) / 1000;
         nRect += nHalfSliderWidth + nOffset;
     }
@@ -279,7 +280,7 @@ ScZoomSliderWnd::~ScZoomSliderWnd()
 // -----------------------------------------------------------------------
 
 void ScZoomSliderWnd::MouseButtonDown( const MouseEvent& rMEvt )
-{   
+{
     if ( !mpImpl->mbValuesSet )
         return ;
     Size aSliderWindowSize = GetOutputSizePixel();
@@ -316,19 +317,19 @@ void ScZoomSliderWnd::MouseButtonDown( const MouseEvent& rMEvt )
         return ;
 
     Rectangle aRect( Point( 0, 0 ), aSliderWindowSize );
-    
+
     Paint( aRect );
     mpImpl->mbOmitPaint = true;
-    
+
     SvxZoomSliderItem   aZoomSliderItem( mpImpl->mnCurrentZoom );
 
     ::com::sun::star::uno::Any  a;
     aZoomSliderItem.QueryValue( a );
-    
+
     ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue > aArgs( 1 );
     aArgs[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "ScalingFactor" ));
     aArgs[0].Value = a;
-    
+
     SfxToolBoxControl::Dispatch( m_xDispatchProvider, String::CreateFromAscii(".uno:ScalingFactor"), aArgs );
 
     mpImpl->mbOmitPaint = false;
@@ -354,7 +355,7 @@ void ScZoomSliderWnd::MouseMove( const MouseEvent& rMEvt )
         {
             mpImpl->mnCurrentZoom = Offset2Zoom( aPoint.X() );
 
-            Rectangle aRect( Point( 0, 0 ), aSliderWindowSize  );
+            Rectangle aRect( Point( 0, 0 ), aSliderWindowSize );
             Paint( aRect );
 
             mpImpl->mbOmitPaint = true; // optimization: paint before executing command,
@@ -387,7 +388,7 @@ void ScZoomSliderWnd::UpdateFromItem( const SvxZoomSliderItem* pZoomSliderItem )
         mpImpl->mnMaxZoom     = pZoomSliderItem->GetMaxZoom();
 
         DBG_ASSERT( mpImpl->mnMinZoom <= mpImpl->mnCurrentZoom &&
-            mpImpl->mnMinZoom <  mpImpl->mnSliderCenter &&
+            mpImpl->mnMinZoom < mpImpl->mnSliderCenter &&
             mpImpl->mnMaxZoom >= mpImpl->mnCurrentZoom &&
             mpImpl->mnMaxZoom > mpImpl->mnSliderCenter,
             "Looks like the zoom slider item is corrupted" );
@@ -423,7 +424,7 @@ void ScZoomSliderWnd::UpdateFromItem( const SvxZoomSliderItem* pZoomSliderItem )
 
     Size aSliderWindowSize = GetOutputSizePixel();
     Rectangle aRect( Point( 0, 0 ), aSliderWindowSize );
-   
+
     if ( !mpImpl->mbOmitPaint )
        Paint(aRect);
 }
@@ -444,7 +445,7 @@ void ScZoomSliderWnd::DoPaint( const Rectangle& /*rRect*/ )
 
     Size aSliderWindowSize = GetOutputSizePixel();
     Rectangle aRect( Point( 0, 0 ), aSliderWindowSize );
-    
+
     VirtualDevice* pVDev = new VirtualDevice( *this );
     pVDev->SetOutputSizePixel( aSliderWindowSize );
 
@@ -483,11 +484,11 @@ void ScZoomSliderWnd::DoPaint( const Rectangle& /*rRect*/ )
     pVDev->DrawGradient( aRect, g );
 
     // draw slider
-    pVDev->SetLineColor( Color ( COL_WHITE ) );
+    pVDev->SetLineColor( Color ( COL_GRAY ) );
     pVDev->DrawRect( aSecondLine );
     pVDev->DrawRect( aRight );
 
-    pVDev->SetLineColor( Color( COL_GRAY ) );
+    pVDev->SetLineColor( Color ( COL_GRAY ) );
     pVDev->DrawRect( aFirstLine );
     pVDev->DrawRect( aLeft );
 
@@ -499,7 +500,7 @@ void ScZoomSliderWnd::DoPaint( const Rectangle& /*rRect*/ )
     {
         pVDev->SetLineColor( Color( COL_GRAY ) );
         Rectangle aSnapping( aRect );
-        aSnapping.Bottom()   = aSlider.Top();
+        aSnapping.Bottom() = aSlider.Top();
         aSnapping.Top() = aSnapping.Bottom() - nSnappingHeight;
         aSnapping.Left() += *aSnappingPointIter;
         aSnapping.Right() = aSnapping.Left();
@@ -526,11 +527,10 @@ void ScZoomSliderWnd::DoPaint( const Rectangle& /*rRect*/ )
     // draw increase button
     aImagePoint.X() = aRect.TopLeft().X() + aSliderWindowSize.Width() - nIncDecWidth - (nSliderXOffset - nIncDecWidth)/2;
     pVDev->DrawImage( aImagePoint, mpImpl->maIncreaseButton );
-    
+
     DrawOutDev( Point(0, 0), aSliderWindowSize, Point(0, 0), aSliderWindowSize, *pVDev );
 
     delete pVDev;
-
 }
 
 // -----------------------------------------------------------------------

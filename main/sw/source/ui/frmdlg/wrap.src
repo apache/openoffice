@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -32,7 +32,7 @@ TabPage TP_FRM_WRAP
 	HelpID = HID_FRM_EXT ;
 	Pos = MAP_APPFONT ( 0, 0 ) ;
 	Size = MAP_APPFONT ( 260, 185 ) ;
-	Hide = TRUE;
+	Hide = TRUE ;
 	FixedLine C_WRAP_FL
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
@@ -44,17 +44,17 @@ TabPage TP_FRM_WRAP
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_NO_WRAP" ;
 		Pos = MAP_APPFONT ( 6, 14 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
+		WordBreak = TRUE ;
 		Text [ en-US ] = "~None" ;
-		TopImage = True ;
+		TopImage = TRUE ;
 	};
 	ImageRadioButton RB_WRAP_LEFT
 	{
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_WRAP_LEFT" ;
 		Pos = MAP_APPFONT ( 65, 14 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
-		TopImage = True ;
+		WordBreak = TRUE ;
+		TopImage = TRUE ;
 		Text [ en-US ] = "Before" ;
 	};
 	ImageRadioButton RB_WRAP_RIGHT
@@ -62,8 +62,8 @@ TabPage TP_FRM_WRAP
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_WRAP_RIGHT" ;
 		Pos = MAP_APPFONT ( 121, 14 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
-		TopImage = True ;
+		WordBreak = TRUE ;
+		TopImage = TRUE ;
 		Text [ en-US ] = "After" ;
 	};
 	ImageRadioButton RB_WRAP_PARALLEL
@@ -71,26 +71,26 @@ TabPage TP_FRM_WRAP
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_WRAP_PARALLEL" ;
 		Pos = MAP_APPFONT ( 177, 14 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
+		WordBreak = TRUE ;
 		Text [ en-US ] = "~Parallel" ;
-		TopImage = True ;
+		TopImage = TRUE ;
 	};
 	ImageRadioButton RB_WRAP_THROUGH
 	{
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_WRAP_THROUGH" ;
 		Pos = MAP_APPFONT ( 6, 57 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
+		WordBreak = TRUE ;
 		Text [ en-US ] = "Thro~ugh" ;
-		TopImage = True ;
+		TopImage = TRUE ;
 	};
 	ImageRadioButton RB_WRAP_IDEAL
 	{
 		HelpID = "sw:ImageRadioButton:TP_FRM_WRAP:RB_WRAP_IDEAL" ;
 		Pos = MAP_APPFONT ( 65, 57 ) ;
 		Size = MAP_APPFONT ( 40, 37 ) ;
-		WordBreak = TRUE;
-		TopImage = True ;
+		WordBreak = TRUE ;
+		TopImage = TRUE ;
 		Text [ en-US ] = "~Optimal" ;
 	};
 
@@ -134,7 +134,7 @@ TabPage TP_FRM_WRAP
 	{
 		Pos = MAP_APPFONT ( 128, 111 ) ;
 		Size = MAP_APPFONT ( 4, 60 ) ;
-		Vert = TRUE;
+		Vert = TRUE ;
 	};
 	FixedText FT_LEFT_MARGIN
 	{
@@ -235,21 +235,21 @@ TabPage TP_FRM_WRAP
 		Text [ en-US ] = "Spacing" ;
 	};
 #define WRAP_IDLIST			\
-	IdList =			\
-	{				\
-		IMG_NONE ;		\
-		IMG_LEFT ;		\
-		IMG_RIGHT ;		\
+	IdList =				\
+	{						\
+		IMG_NONE ;			\
+		IMG_LEFT ;			\
+		IMG_RIGHT ;			\
 		IMG_PARALLEL ;		\
 		IMG_THROUGH ;		\
-		IMG_IDEAL ;		\
+		IMG_IDEAL ;			\
 		IMG_KON_NONE ;		\
 		IMG_KON_LEFT ;		\
 		IMG_KON_RIGHT ;		\
-		IMG_KON_PARALLEL;	\
+		IMG_KON_PARALLEL ;	\
 		IMG_KON_IDEAL ;		\
-	};				\
-	IdCount = { 11 ; };
+	};						\
+	IdCount = { 11 ; } ;
 
 	ImageList IL_WRAP
 	{
@@ -264,3 +264,5 @@ TabPage TP_FRM_WRAP
 		WRAP_IDLIST
 	};
 };
+
+// ********************************************************************** EOF

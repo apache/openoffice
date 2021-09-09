@@ -1154,7 +1154,7 @@ IMPL_LINK( SvxPageDescPage, SwapOrientation_Impl, RadioButton *, pBtn )
 		const long lWidth = GetCoreValue( aPaperWidthEdit, SFX_MAPUNIT_100TH_MM );
 		const long lHeight = GetCoreValue( aPaperHeightEdit, SFX_MAPUNIT_100TH_MM );
 
-        // swap with and height
+        // swap width and height
 		SetMetricValue( aPaperWidthEdit, lHeight, SFX_MAPUNIT_100TH_MM );
 		SetMetricValue( aPaperHeightEdit, lWidth, SFX_MAPUNIT_100TH_MM );
 

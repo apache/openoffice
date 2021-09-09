@@ -2251,11 +2251,11 @@ bool isNodeActive( OptionsNode* pNode, Module* pModule )
 {
     if ( pNode )
     {
-        // Node for all modules actine?
+        // Node for all modules active?
         if ( pNode->m_bAllModules )
             return true;
 
-        // OOo-Nodes (Writer, Calc, Impress...) are active if node is already inserted
+        // AOO-Nodes (Writer, Calc, Impress...) are active if node is already inserted
         if ( getGroupName( pNode->m_sId, false ).Len() > 0 )
             return true;
 
@@ -2637,7 +2637,7 @@ short OfaTreeOptionsDialog::Execute()
 		{
 			GetColorTable()->Save();
 
-			// notify current viewframe it it uses the same color table
+			// notify current viewframe if it uses the same color table
 			if ( SfxViewFrame::Current() && SfxViewFrame::Current()->GetDispatcher() )
 			{
 				const SvxColorTableItem* pPtr = dynamic_cast< const SvxColorTableItem* >(

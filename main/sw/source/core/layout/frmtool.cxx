@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -104,7 +106,7 @@ SwFrmNotify::SwFrmNotify( SwFrm *pF ) :
 	aPrt( pF->Prt() ),
     bInvaKeep( sal_False ),
     bValidSize( pF->GetValidSizeFlag() ),
-    mbFrmDeleted( false )     // #i49383#
+    mbFrmDeleted( false ) // #i49383#
 {
     if ( pF->IsTxtFrm() )
     {
@@ -576,7 +578,7 @@ SwLayNotify::~SwLayNotify()
                 pLay->InvaPercentLowers( pLay->Prt().Height() - aPrt.Height() );
 		}
 		if ( pLay->IsTabFrm() )
-			//Damit _nur_ der Shatten bei Groessenaenderungen gemalt wird.
+			//Damit _nur_ der Schatten bei Groessenaenderungen gemalt wird.
 			((SwTabFrm*)pLay)->SetComplete();
         else
         {
@@ -616,7 +618,7 @@ SwLayNotify::~SwLayNotify()
 	if ( !IsLowersComplete() &&
 		 !(pLay->GetType()&(FRM_FLY|FRM_SECTION) &&
 			pLay->Lower() && pLay->Lower()->IsColumnFrm()) &&
-		 (bPos || bNotify) && !(pLay->GetType() & 0x1823) )  //Tab, Row, FtnCont, Root, Page
+		 (bPos || bNotify) && !(pLay->GetType() & 0x1823) ) //Tab, Row, FtnCont, Root, Page
 	{
         // --> OD 2005-03-11 #i44016# - force unlock of position of lower objects.
         // --> OD 2005-03-30 #i43913# - no unlock of position of objects,
@@ -835,7 +837,7 @@ SwCntntNotify::~SwCntntNotify()
 			pCell = pCell->GetUpper();
 		ASSERT( pCell->IsCellFrm(), "Where's my cell?" );
         if ( text::VertOrientation::NONE != pCell->GetFmt()->GetVertOrient().GetVertOrient() )
-			pCell->InvalidatePrt();	//fuer vertikale Ausrichtung.
+			pCell->InvalidatePrt();	// for vertical alignment
 	}
 
     // OD 2004-02-26 #i25029#
@@ -891,7 +893,7 @@ SwCntntNotify::~SwCntntNotify()
 	{
 		//Aktive PlugIn's oder OLE-Objekte sollten etwas von der Veraenderung
 		//mitbekommen, damit sie Ihr Window entsprechend verschieben.
-		ViewShell *pSh  = pCnt->getRootFrm()->GetCurrShell();
+		ViewShell *pSh = pCnt->getRootFrm()->GetCurrShell();
 		if ( pSh )
 		{
             SwOLENode *pNd;
@@ -900,8 +902,8 @@ SwCntntNotify::~SwCntntNotify()
 				  pNd->IsOLESizeInvalid()) )
 			{
                 // --> OD #i117189#
-                const bool bNoTxtFrmPrtAreaChanged = 
-                        ( aPrt.SSize().Width() != 0 && 
+                const bool bNoTxtFrmPrtAreaChanged =
+                        ( aPrt.SSize().Width() != 0 &&
                           aPrt.SSize().Height() != 0 ) &&
                         aPrt.SSize() != pCnt->Prt().SSize();
                 // <--
@@ -919,7 +921,7 @@ SwCntntNotify::~SwCntntNotify()
                         // if the frame is formatted for the first time.
                         // Unfortunately this is not valid anymore since the
                         // SwNoTxtFrm already gets a width during CalcLowerPreps.
-                        // Nevertheless, the indention of !bFirst seemed to be
+                        // Nevertheless, the intention of !bFirst seemed to be
                         // to assure that the OLE objects have already been notified
                         // if necessary before calling CalcAndSetScale.
                         // So I replaced !bFirst by !IsOLESizeInvalid. There is
@@ -931,7 +933,7 @@ SwCntntNotify::~SwCntntNotify()
                         // uiview/view.cxx.
                         if ( !pNd->IsOLESizeInvalid() &&
                              !pSh->GetDoc()->IsUpdateExpFld() )
-                            pFESh->CalcAndSetScale( xObj, 
+                            pFESh->CalcAndSetScale( xObj,
                                                     &pFly->Prt(), &pFly->Frm(),
                                                     bNoTxtFrmPrtAreaChanged );
 					}
@@ -963,16 +965,16 @@ SwCntntNotify::~SwCntntNotify()
 		if ( pDoc->GetSpzFrmFmts()->Count() &&
 			 pDoc->DoesContainAtPageObjWithContentAnchor() && !pDoc->IsNewDoc() )
 		{
-            // If certain import filters for foreign file format import 
-            // AT_PAGE anchored objects, the corresponding page number is 
+            // If certain import filters for foreign file format import
+            // AT_PAGE anchored objects, the corresponding page number is
             // typically not known. In this case the content position is
-            // stored at which the anchored object is found in the 
+            // stored at which the anchored object is found in the
             // imported document.
-            // When this content is formatted it is the time at which 
+            // When this content is formatted it is the time at which
             // the page is known. Thus, this data can be corrected now.
 
             const SwPageFrm* pPage = 0;
-            SwNodeIndex *pIdx  = 0;
+            SwNodeIndex *pIdx = 0;
             SwSpzFrmFmts *pTbl = pDoc->GetSpzFrmFmts();
             for ( sal_uInt16 i = 0; i < pTbl->Count(); ++i )
             {
@@ -1179,9 +1181,9 @@ void AppendAllObjs( const SwSpzFrmFmts *pTbl, const SwFrm* pSib )
 {
 	//Verbinden aller Objekte, die in der SpzTbl beschrieben sind mit dem
 	//Layout.
-	//Wenn sich nix mehr tut hoeren wir auf. Dann koennen noch Formate
-	//uebrigbleiben, weil wir weder zeichengebunde Rahmen verbinden noch
-	//Objecte die in zeichengebundenen verankert sind.
+	//Wenn sich nichts mehr tut hoeren wir auf. Dann koennen noch Formate
+	//uebrigbleiben, weil wir weder zeichengebundene Rahmen verbinden noch
+	//Objekte die in zeichengebundenen verankert sind.
 
 	SwSpzFrmFmts aCpy( 255, 255 );
 	aCpy.Insert( pTbl, 0 );
@@ -1263,9 +1265,9 @@ void MA_FASTCALL _InsertCnt( SwLayoutFrm *pLay, SwDoc *pDoc,
 	//lange Kette von Absaetzen teuer verschoben werden muss, bis sie sich auf
 	//ertraegliches mass reduziert hat.
 	//Wir gehen mal davon aus, da? 20 Absaetze auf eine Seite passen
-	//Damit es in extremen Faellen nicht gar so heftig rechenen wir je nach
+	//Damit es in extremen Faellen nicht gar so heftig rechnen wir je nach
 	//Node noch etwas drauf.
-	//Wenn in der DocStatistik eine brauchebare Seitenzahl angegeben ist
+	//Wenn in der DocStatistik eine brauchbare Seitenzahl angegeben ist
 	//(wird beim Schreiben gepflegt), so wird von dieser Seitenanzahl
 	//ausgegengen.
 	const sal_Bool bStartPercent = bPages && !nEndIndex;
@@ -1996,7 +1998,7 @@ long SwBorderAttrs::CalcLeft( const SwFrm *pCaller ) const
 |*
 |*	Beschreibung		Berechnung der Groessen fuer Umrandung und Schatten.
 |* 						Es kann auch ohne Linien ein Abstand erwuenscht sein,
-|* 						dieser wird  dann nicht vom Attribut sondern hier
+|* 						dieser wird dann nicht vom Attribut sondern hier
 |* 						beruecksichtigt (bBorderDist, z.B. fuer Zellen).
 |*
 |*************************************************************************/
@@ -2058,7 +2060,7 @@ void SwBorderAttrs::_IsLine()
 |*		   Zusaetzlich muss der Absatz mindestens rechts oder links oder
 |*		   unten eine Umrandung haben.
 |*		2. Die Umrandung unten faellt weg, wenn der Nachfolger dieselbe
-|*		   Umrandung untern aufweist und 3. Zustrifft.
+|*		   Umrandung unten aufweist und 3. zutrifft.
 |*		   Zusaetzlich muss der Absatz mindestens rechts oder links oder
 |*		   oben eine Umrandung haben.
 |*		3. Die Umrandungen links und rechts vor Vorgaenger bzw. Nachfolger
@@ -2272,13 +2274,13 @@ const SdrObject *SwOrderIter::Top()
 	if ( pPage->GetSortedObjs() )
 	{
 		sal_uInt32 nTopOrd = 0;
-        const SwSortedObjs *pObjs = pPage->GetSortedObjs();
+		const SwSortedObjs *pObjs = pPage->GetSortedObjs();
 		if ( pObjs->Count() )
 		{
-            (*pObjs)[0]->GetDrawObj()->GetOrdNum();  //Aktualisieren erzwingen!
+			(*pObjs)[0]->GetDrawObj()->GetOrdNum(); //Aktualisieren erzwingen!
 			for ( sal_uInt16 i = 0; i < pObjs->Count(); ++i )
 			{
-                const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
+				const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
 				if ( bFlysOnly && !pObj->ISA(SwVirtFlyDrawObj) )
 					continue;
 				sal_uInt32 nTmp = pObj->GetOrdNumDirect();
@@ -2301,13 +2303,13 @@ const SdrObject *SwOrderIter::Bottom()
 	if ( pPage->GetSortedObjs() )
 	{
 		sal_uInt32 nBotOrd = USHRT_MAX;
-        const SwSortedObjs *pObjs = pPage->GetSortedObjs();
+		const SwSortedObjs *pObjs = pPage->GetSortedObjs();
 		if ( pObjs->Count() )
 		{
-            (*pObjs)[0]->GetDrawObj()->GetOrdNum();  //Aktualisieren erzwingen!
+			(*pObjs)[0]->GetDrawObj()->GetOrdNum(); //Aktualisieren erzwingen!
 			for ( sal_uInt16 i = 0; i < pObjs->Count(); ++i )
 			{
-                const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
+				const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
 				if ( bFlysOnly && !pObj->ISA(SwVirtFlyDrawObj) )
 					continue;
 				sal_uInt32 nTmp = pObj->GetOrdNumDirect();
@@ -2334,7 +2336,7 @@ const SdrObject *SwOrderIter::Next()
         const SwSortedObjs *pObjs = pPage->GetSortedObjs();
 		if ( pObjs->Count() )
 		{
-            (*pObjs)[0]->GetDrawObj()->GetOrdNum();  //Aktualisieren erzwingen!
+            (*pObjs)[0]->GetDrawObj()->GetOrdNum(); //Aktualisieren erzwingen!
 			for ( sal_uInt16 i = 0; i < pObjs->Count(); ++i )
 			{
                 const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
@@ -2364,7 +2366,7 @@ const SdrObject *SwOrderIter::Prev()
         const SwSortedObjs *pObjs = pPage->GetSortedObjs();
 		if ( pObjs->Count() )
 		{
-            (*pObjs)[0]->GetDrawObj()->GetOrdNum();  //Aktualisieren erzwingen!
+            (*pObjs)[0]->GetDrawObj()->GetOrdNum(); //Aktualisieren erzwingen!
 			for ( sal_uInt16 i = 0; i < pObjs->Count(); ++i )
 			{
                 const SdrObject* pObj = (*pObjs)[i]->GetDrawObj();
@@ -2629,7 +2631,7 @@ void RestoreCntnt( SwFrm *pSav, SwLayoutFrm *pParent, SwFrm *pSibling, bool bGro
     SWRECTFN( pParent )
 
 	//Wenn es bereits FlowFrms unterhalb des neuen Parent gibt, so wird die
-	//Kette, beginnend mit pSav,  hinter dem letzten angehaengt.
+	//Kette, beginnend mit pSav, hinter dem letzten angehaengt.
 	//Die Teile werden kurzerhand insertet und geeignet invalidiert.
 	//Unterwegs werden die Flys der CntntFrms bei der Seite angemeldet.
 
@@ -2638,7 +2640,7 @@ void RestoreCntnt( SwFrm *pSav, SwLayoutFrm *pParent, SwFrm *pSibling, bool bGro
 	if ( pPage )
 		pPage->InvalidatePage( pPage ); //Invalides Layout anmelden.
 
-	//Vorgaenger festellen und die Verbindung herstellen bzw. initialisieren.
+	//Vorgaenger feststellen und die Verbindung herstellen bzw. initialisieren.
 	pSav->pPrev = pSibling;
 	SwFrm* pNxt;
 	if ( pSibling )
@@ -2709,8 +2711,8 @@ void RestoreCntnt( SwFrm *pSav, SwLayoutFrm *pParent, SwFrm *pSibling, bool bGro
 		pNxt->pPrev = pLast;
 	}
 
-    if ( bGrow )
-        pParent->Grow( nGrowVal );
+	if ( bGrow )
+		pParent->Grow( nGrowVal );
 }
 
 /*************************************************************************
@@ -2845,7 +2847,7 @@ void RegistFlys( SwPageFrm *pPage, const SwLayoutFrm *pLay )
 |*	void Notify()
 |*
 |*	Beschreibung		Benachrichtigt den Hintergrund je nach der
-|*		Veraenderung zwischen altem und neuem Rechteckt.
+|*		Veraenderung zwischen altem und neuem Rechteck.
 |*
 |*************************************************************************/
 
@@ -3146,8 +3148,8 @@ void Notify_Background( const SdrObject* pObj,
                         pFlyFrm && !pFly->IsLowerOf( pFlyFrm ) )
 				{
 					const SwFmtHoriOrient &rH = pFly->GetFmt()->GetHoriOrient();
-                    if ( text::HoriOrientation::NONE != rH.GetHoriOrient()  &&
-                            text::HoriOrientation::CENTER != rH.GetHoriOrient()  &&
+                    if ( text::HoriOrientation::NONE != rH.GetHoriOrient() &&
+                            text::HoriOrientation::CENTER != rH.GetHoriOrient() &&
                             ( !pFly->IsAutoPos() || text::RelOrientation::CHAR != rH.GetRelationOrient() ) &&
 							(pFly->Frm().Bottom() >= rRect.Top() &&
 							pFly->Frm().Top() <= rRect.Bottom()) )
@@ -3362,7 +3364,7 @@ class SwFrmHolder : private SfxListener
 {
     SwFrm* pFrm;
     bool bSet;
-    virtual void Notify(  SfxBroadcaster& rBC, const SfxHint& rHint );
+    virtual void Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
 public:
     SwFrmHolder() : pFrm(0), bSet(false) {}
     void SetFrm( SwFrm* pHold );
@@ -3372,18 +3374,18 @@ public:
 };
 
 void SwFrmHolder::SetFrm( SwFrm* pHold )
-{ 
-    bSet = true; 
-    pFrm = pHold; 
-    StartListening(*pHold); 
+{
+    bSet = true;
+    pFrm = pHold;
+    StartListening(*pHold);
 }
 
-void SwFrmHolder::Reset() 
-{ 
-    if (pFrm) 
-        EndListening(*pFrm); 
-    bSet = false; 
-    pFrm = 0; 
+void SwFrmHolder::Reset()
+{
+    if (pFrm)
+        EndListening(*pFrm);
+    bSet = false;
+    pFrm = 0;
 }
 
 void SwFrmHolder::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
@@ -3442,9 +3444,9 @@ SwFrm* GetFrmOfModify( const SwRootFrm* pLayout, SwModify const& rMod, sal_uInt1
                     }
 
                     // #127369#
-                    // aIter.IsChanged checks if the current pTmpFrm has been deleted while 
+                    // aIter.IsChanged checks if the current pTmpFrm has been deleted while
                     // it is the current iterator
-                    // FrmHolder watches for deletion of the current pMinFrm 
+                    // FrmHolder watches for deletion of the current pMinFrm
                     if( aIter.IsChanged() || ( aHolder.IsSet() && !aHolder.GetFrm() ) )
                     {
                         // restart iteration
@@ -3587,30 +3589,29 @@ const SwCntntFrm* GetCellCntnt( const SwLayoutFrm& rCell )
 
                 pCntnt = pCntnt->FindNextCnt();
 
-        }
-        else
-            break;
-    }
-    return pCntnt;
+		}
+		else
+			break;
+	}
+	return pCntnt;
 }
 
 /** Can be used to check if a frame has been deleted
  */
 bool SwDeletionChecker::HasBeenDeleted()
 {
-    if ( !mpFrm || !mpRegIn )
-        return false;
+	if ( !mpFrm || !mpRegIn )
+		return false;
 
-    SwIterator<SwFrm,SwModify> aIter(*mpRegIn);
-    SwFrm* pLast = aIter.First();
-    while ( pLast )
-    {
-        if ( pLast == mpFrm )
-            return false;
-        pLast = aIter.Next();
-    }
+	SwIterator<SwFrm,SwModify> aIter(*mpRegIn);
+	SwFrm* pLast = aIter.First();
+	while ( pLast )
+	{
+		if ( pLast == mpFrm )
+			return false;
+		pLast = aIter.Next();
+	}
 
-    return true;
+	return true;
 }
-
 

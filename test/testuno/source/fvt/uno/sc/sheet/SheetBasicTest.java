@@ -313,7 +313,8 @@ public class SheetBasicTest {
 	/**
 	 * test insert sheet from other file
 	 */
-	@Test
+	// FIXME: locks up on update link confirmation dialog.
+	@Test(timeout = 15000)
 	public void insertSheetFromfile() throws Exception {
 		// New a document source.xls, add value to 3 sheet
 		scDocument = SCUtil.getSCDocument(scComponent);

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,52 +63,52 @@ using namespace ::xmloff::token;
 
 SvXMLEnumMapEntry aXML_AnimationEffect_EnumMap[] =
 {
-	{ XML_NONE,		    EK_none },
-	{ XML_FADE,		    EK_fade },
-	{ XML_MOVE,		    EK_move },
+	{ XML_NONE,			EK_none },
+	{ XML_FADE,			EK_fade },
+	{ XML_MOVE,			EK_move },
 	{ XML_STRIPES,		EK_stripes },
-	{ XML_OPEN,		    EK_open },
+	{ XML_OPEN,			EK_open },
 	{ XML_CLOSE,		EK_close },
-	{ XML_DISSOLVE,	    EK_dissolve },
-	{ XML_WAVYLINE,	    EK_wavyline },
+	{ XML_DISSOLVE,		EK_dissolve },
+	{ XML_WAVYLINE,		EK_wavyline },
 	{ XML_RANDOM,		EK_random },
 	{ XML_LINES,		EK_lines },
 	{ XML_LASER,		EK_laser },
 	{ XML_APPEAR,		EK_appear },
-	{ XML_HIDE,		    EK_hide },
+	{ XML_HIDE,			EK_hide },
 	{ XML_MOVE_SHORT,	EK_move_short },
-    { XML_CHECKERBOARD, EK_checkerboard },
+	{ XML_CHECKERBOARD,	EK_checkerboard },
 	{ XML_ROTATE,		EK_rotate },
 	{ XML_STRETCH,		EK_stretch },
-    { XML_TOKEN_INVALID, 0 }
+	{ XML_TOKEN_INVALID, 0 }
 };
 
 SvXMLEnumMapEntry aXML_AnimationDirection_EnumMap[] =
 {
-	{ XML_NONE,			    ED_none },
+	{ XML_NONE,				ED_none },
 	{ XML_FROM_LEFT,		ED_from_left },
-	{ XML_FROM_TOP,		    ED_from_top },
+	{ XML_FROM_TOP,			ED_from_top },
 	{ XML_FROM_RIGHT,		ED_from_right },
 	{ XML_FROM_BOTTOM,		ED_from_bottom },
 	{ XML_FROM_CENTER,		ED_from_center },
 	{ XML_FROM_UPPER_LEFT,	ED_from_upperleft },
-	{ XML_FROM_UPPER_RIGHT, ED_from_upperright },
+	{ XML_FROM_UPPER_RIGHT,	ED_from_upperright },
 	{ XML_FROM_LOWER_LEFT,	ED_from_lowerleft },
-    { XML_FROM_LOWER_RIGHT, ED_from_lowerright },
+	{ XML_FROM_LOWER_RIGHT,	ED_from_lowerright },
 	{ XML_TO_LEFT,			ED_to_left },
 	{ XML_TO_TOP,			ED_to_top },
-	{ XML_TO_RIGHT,		    ED_to_right },
+	{ XML_TO_RIGHT,			ED_to_right },
 	{ XML_TO_BOTTOM,		ED_to_bottom },
 	{ XML_TO_UPPER_LEFT,	ED_to_upperleft },
 	{ XML_TO_UPPER_RIGHT,	ED_to_upperright },
 	{ XML_TO_LOWER_RIGHT,	ED_to_lowerright },
 	{ XML_TO_LOWER_LEFT,	ED_to_lowerleft },
-	{ XML_PATH,			    ED_path },
-	{ XML_SPIRAL_INWARD_LEFT, ED_spiral_inward_left },
-	{ XML_SPIRAL_INWARD_RIGHT,ED_spiral_inward_right },
-	{ XML_SPIRAL_OUTWARD_LEFT, ED_spiral_outward_left },
-	{ XML_SPIRAL_OUTWARD_RIGHT, ED_spiral_outward_right },
-	{ XML_VERTICAL,		    ED_vertical },
+	{ XML_PATH,				ED_path },
+	{ XML_SPIRAL_INWARD_LEFT,	ED_spiral_inward_left },
+	{ XML_SPIRAL_INWARD_RIGHT,	ED_spiral_inward_right },
+	{ XML_SPIRAL_OUTWARD_LEFT,	ED_spiral_outward_left },
+	{ XML_SPIRAL_OUTWARD_RIGHT,	ED_spiral_outward_right },
+	{ XML_VERTICAL,			ED_vertical },
 	{ XML_HORIZONTAL,		ED_horizontal },
 	{ XML_TO_CENTER,		ED_to_center },
 	{ XML_CLOCKWISE,		ED_clockwise },
@@ -118,9 +118,9 @@ SvXMLEnumMapEntry aXML_AnimationDirection_EnumMap[] =
 
 SvXMLEnumMapEntry aXML_AnimationSpeed_EnumMap[] =
 {
-	{ XML_SLOW,	    AnimationSpeed_SLOW },
+	{ XML_SLOW,		AnimationSpeed_SLOW },
 	{ XML_MEDIUM,	AnimationSpeed_MEDIUM },
-	{ XML_FAST,	    AnimationSpeed_FAST },
+	{ XML_FAST,		AnimationSpeed_FAST },
 	{ XML_TOKEN_INVALID, 0 }
 };
 
@@ -198,7 +198,7 @@ AnimationEffect ImplSdXMLgetEffect( XMLEffect eKind, XMLEffectDirection eDirecti
 			case ED_from_center:		return AnimationEffect_ZOOM_OUT_FROM_CENTER;
 			case ED_spiral_inward_left:	return AnimationEffect_ZOOM_OUT_SPIRAL;
 			default:					return AnimationEffect_ZOOM_OUT;
-			}			
+			}
 		}
 		else
 		{
@@ -414,7 +414,7 @@ public:
 
 class XMLAnimationsSoundContext : public SvXMLImportContext
 {
-	XMLAnimationsEffectContext*	mpParent;
+	XMLAnimationsEffectContext* mpParent;
 
 public:
 	TYPEINFO();
@@ -463,7 +463,7 @@ XMLAnimationsSoundContext::~XMLAnimationsSoundContext()
 
 TYPEINIT1( XMLAnimationsEffectContext, SvXMLImportContext );
 
-XMLAnimationsEffectContext::XMLAnimationsEffectContext( SvXMLImport& rImport,  sal_uInt16 nPrfx, const OUString& rLocalName,  const Reference< XAttributeList >& xAttrList, AnimImpImpl* pImpl )
+XMLAnimationsEffectContext::XMLAnimationsEffectContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const OUString& rLocalName, const Reference< XAttributeList >& xAttrList, AnimImpImpl* pImpl )
 :	SvXMLImportContext(rImport, nPrfx, rLocalName),
 	mpImpl( pImpl ),
 	meKind( XMLE_SHOW ), mbTextEffect( sal_False ),
@@ -615,9 +615,9 @@ void XMLAnimationsEffectContext::EndElement()
 					aAny <<= (sal_Bool)sal_True;
 					xSet->setPropertyValue( mpImpl->msIsAnimation, aAny );
 
-                    // #42894# speed is not supported for the old group animation fallback, so no need to set it
-                    // aAny <<= meSpeed;
-                    // xSet->setPropertyValue( mpImpl->msSpeed, aAny );
+					// #42894# speed is not supported for the old group animation fallback, so no need to set it
+					// aAny <<= meSpeed;
+					// xSet->setPropertyValue( mpImpl->msSpeed, aAny );
 				}
 				else
 				{
@@ -664,7 +664,7 @@ void XMLAnimationsEffectContext::EndElement()
 	}
 	catch( Exception e )
 	{
-		DBG_ERROR( "exception catched while importing animation information!" );
+		DBG_ERROR( "exception caught while importing animation information!" );
 	}
 }
 
@@ -672,7 +672,7 @@ void XMLAnimationsEffectContext::EndElement()
 
 TYPEINIT1( XMLAnimationsContext, SvXMLImportContext );
 
-XMLAnimationsContext::XMLAnimationsContext( SvXMLImport& rImport, sal_uInt16 nPrfx,	const rtl::OUString& rLocalName,
+XMLAnimationsContext::XMLAnimationsContext( SvXMLImport& rImport, sal_uInt16 nPrfx, const rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& )
 : SvXMLImportContext(rImport, nPrfx, rLocalName)
 {
@@ -687,5 +687,5 @@ XMLAnimationsContext::~XMLAnimationsContext()
 SvXMLImportContext * XMLAnimationsContext::CreateChildContext( sal_uInt16 nPrefix, const ::rtl::OUString& rLocalName,
 		const com::sun::star::uno::Reference< com::sun::star::xml::sax::XAttributeList>& xAttrList )
 {
-	return new XMLAnimationsEffectContext( GetImport(), nPrefix, rLocalName,  xAttrList, mpImpl );
+	return new XMLAnimationsEffectContext( GetImport(), nPrefix, rLocalName, xAttrList, mpImpl );
 }

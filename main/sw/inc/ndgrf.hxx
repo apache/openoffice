@@ -86,7 +86,7 @@ class SW_DLLPUBLIC SwGrfNode: public SwNoTxtNode
         OD, MAV 2005-08-17 #i53025#
         Storage, which should contain the stream of the embedded graphic, is
         provided via parameter. Otherwise the returned stream will be closed
-        after the the method returns, because its parent stream is closed and deleted.
+        after the method returns, because its parent stream is closed and deleted.
         Proposed name of embedded graphic stream is also provided by parameter.
 
         @author OD

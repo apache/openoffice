@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,14 +46,14 @@ module com {  module sun {  module star {  module util {
         <li>closed   (if it supports <member>XCloseable::close()</member>)</li>
     </ul>
     First version gives the object no chance to disagree with that (e.g. if a
-    process is still running and can't be really cancelled). Last version
+    process is still running and can't be really canceled). Last version
     provides this possibility, but can't guarantee real termination of called object.
     It depends from the environment of an object, if one or both mechanism are necessary.
     </p>
 
     <p>
     Base interface <type>XCloseBroadcaster</type> makes it possible that any listener
-    which is interrested on life time of listened object ...
+    which is interested on life time of listened object...
     <ul>
         <li>can get a notification about closing of it</li>
         <li>or can have a veto to break that.</li>
@@ -72,13 +72,13 @@ published interface XCloseable: XCloseBroadcaster
         <p>
         Must definitely be called before <member scope="com::sun::star::lang">XComponent::dispose()</member>.
         But nobody can guarantee real closing of called object - because it can disagree with that if any
-        still running processes can't be cancelled yet. It's not allowed to block this call till internal
-        operations will be finished here. They must be cancelled or call must return imediatly by throwing
-        the <type>CloseVetoException</type>.  Otherwise (if nothing exist to disagree) it must return normaly.
+        still running processes can't be canceled yet. It's not allowed to block this call till internal
+        operations will be finished here. They must be canceled or call must return immediately by throwing
+        the <type>CloseVetoException</type>.  Otherwise (if nothing exist to disagree) it must return normally.
         </p>
 
         <p>
-        Before any internal processes will be cancelled, all registered <type>XCloseListener</type>
+        Before any internal processes will be canceled, all registered <type>XCloseListener</type>
         must be notified. Any of them can disagree with a <type>CloseVetoException</type> too.
         It's forbidden to catch this exception inside the called close() method because the caller must
         get this information!
@@ -92,14 +92,14 @@ published interface XCloseable: XCloseBroadcaster
         If it is set to <TRUE/> the caller gives up his ownership. If a XCloseListener throw the veto exception
         he will be the new owner of the closing object. This information is passed to the listener by a parameter of
         his notification method <member>XCloseListener::queryClosing()</member>. After his operations was finished
-        he MUST try to close it again. If the closing object itselfs disagree by an exception and the parameter
+        he MUST try to close it again. If the closing object itself disagrees by an exception and the parameter
         <var>DeliverOwnership</var> was set to <TRUE/> the object will be his own owner with all consequences of that.
         <br><strong>Note:</strong><br>
         There is no way to get the ownership back if it was delivered!
         </p>
 
         <p>
-        If this method was already called on an object it should return without any reaction. Normaly it's possible to throw
+        If this method was already called on an object it should return without any reaction. Normally it's possible to throw
         a <type scope="com::sun::star::lang">DisposedException</type> for already disposed or closed objects
         (which represent a <type scope="com::sun::star::uno">RuntimeException</type> and can be thrown by every interface call),
         but it shouldn't be used here. The veto exception should be the only way to indicates the result.

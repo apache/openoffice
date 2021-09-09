@@ -765,14 +765,14 @@ void SwpHints::BuildPortions( SwTxtNode& rNode, SwTxtAttr& rNewHint,
                 }
                 else
                 {
-                    // remove all attributes from auto styles, which are explicitely set in
+                    // remove all attributes from auto styles, which are explicitly set in
                     // the new character format:
                     ASSERT( RES_TXTATR_AUTOFMT == (*aIter)->Which(), "AUTOSTYLES - Misc trouble" )
                     SwTxtAttr* pOther = *aIter;
                     boost::shared_ptr<SfxItemSet> pOldStyle = static_cast<const SwFmtAutoFmt&>(pOther->GetAttr()).GetStyleHandle();
 
                     // For each attribute in the automatic style check if it
-                    // is also set the the new character style:
+                    // is also set to the new character style:
                     SfxItemSet aNewSet( *pOldStyle->GetPool(),
                         aCharAutoFmtSetRange);
                     SfxItemIter aItemIter( *pOldStyle );
@@ -1790,13 +1790,13 @@ void SwTxtNode::DelSoftHyph( const xub_StrLen nStt, const xub_StrLen nEnd )
 }
 
 //Modify here for #119405, by easyfan, 2012-05-24
-//In MS Word, the font underline setting of the paragraph end position wont affect the formatting of numbering, escapement, etc, so we ignore them
+//In MS Word, the font underline setting of the paragraph end position won't affect the formatting of numbering, escapement, etc, so we ignore them
 bool lcl_IsIgnoredCharFmtForNumbering(const sal_uInt16 nWhich)
 {
 	return (nWhich == RES_CHRATR_UNDERLINE || nWhich == RES_CHRATR_ESCAPEMENT);
 }
 
-//In MS Word, following properties of the paragraph end position wont affect the formatting of bullets, so we ignore them:
+//In MS Word, following properties of the paragraph end position won't affect the formatting of bullets, so we ignore them:
 //Font underline;
 //Font Italic of Western, CJK and CTL;
 //Font Bold of Wertern, CJK and CTL;

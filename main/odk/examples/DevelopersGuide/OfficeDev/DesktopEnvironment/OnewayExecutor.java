@@ -26,7 +26,7 @@ import java.util.Vector;
 // __________ Implementation __________
 
 /**
- * It's not allowed to call synchronoues back inside an oneway interface call.
+ * It's not allowed to call synchronous back inside an oneway interface call.
  * (see IOnewayLink too). So we start a thread (implemented by this class), which
  * gets all necessary parameters from the original called object and
  * call it back later inside his run() method. So the execution of such oneway call
@@ -111,7 +111,7 @@ class OnewayExecutor extends Thread
      * implements the thread function
      * Here we call the internal set link object back and
      * give it all necessary parameters.
-     * After that we die by ouerself ...
+     * After that we die by ourself ...
      */
     public void run()
     {

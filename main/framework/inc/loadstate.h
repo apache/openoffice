@@ -47,7 +47,7 @@ enum ELoadState
 {
     E_UNSPECIFIED   =   0,  // indicates the operation was not already started
     E_SUCCESS       =   1,  // the load request was successful
-    E_IOERROR       =   2,  // there was an io error internaly
+    E_IOERROR       =   2,  // there was an io error internally
     E_INTERACTION   =   3,  // there was an interaction, which couldn't be handled (doesn't include IO interactions => see E_IOERROR before)
     E_FAILED        =   4   // for unknown or unspecified errors
 };

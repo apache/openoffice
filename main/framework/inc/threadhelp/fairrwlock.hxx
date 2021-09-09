@@ -245,7 +245,7 @@ class FairRWLock : public  IRWLock
         {
             // You must be a writer to call this method!
             // We can't check it - but otherwise it's your problem ...
-            // Thats why you don't need any mutex here.
+            // That's why you don't need any mutex here.
 
             #ifdef ENABLE_MUTEXDEBUG
             // A writer is an exclusiv accessor!

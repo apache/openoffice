@@ -136,10 +136,10 @@ css::uno::Any LoadDispatcher::impl_dispatch( const css::util::URL& rURL,
     ReadGuard aReadLock(m_aLock);
 
     // We are the only client of this load env object ... but
-    // may a dispatch request before is still in progress (?!).
+    // maybe a dispatch request before is still in progress (?!).
     // Then we should wait a little bit and block this new request.
     // In case we run into the timeout, we should reject this new request
-    // and return "FAILED" as result. Otherwhise we can start this new operation.
+    // and return "FAILED" as result. Otherwise we can start this new operation.
     if (!m_aLoader.waitWhileLoading(2000)) // => 2 sec.
     {
         if (xListener.is())

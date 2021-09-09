@@ -160,7 +160,7 @@ class WriteGuard : private INonCopyable
         /*-****************************************************************************************************//**
             @short      unset write lock
             @descr      Call this method to unlock the rw-lock temp.!
-                        Normaly we do it at dtor automatically for you ...
+                        Normally we do it at dtor automatically for you ...
 
             @seealso    method lock()
 
@@ -234,7 +234,7 @@ class WriteGuard : private INonCopyable
 		/*-****************************************************************************************************//**
 			@short		disable using of these functions!
 			@descr		It's not allowed to use this methods. Different problem can occur otherwise.
-						Thats why we disable it by make it private.
+						That's why we disable it by making it private.
 
 			@seealso	other ctor
 

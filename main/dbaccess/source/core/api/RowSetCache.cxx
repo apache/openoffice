@@ -910,7 +910,7 @@ sal_Bool ORowSetCache::moveWindow()
 				}
 			}
 			else
-			{ // normaly this should never happen
+			{ // normally this should never happen
 				OSL_ENSURE(0,"What the hell is happen here!");
 				return sal_False;
 			}
@@ -987,7 +987,7 @@ sal_Bool ORowSetCache::moveWindow()
 			sal_Bool bCheck = m_pCacheSet->absolute(nPos);
 			bCheck = fill(aIter,aEnd,nPos,bCheck); // refill the region wew don't need anymore
 
-			// we have to read one row forward to enshure that we know when we are on last row
+			// we have to read one row forward to ensure that we know when we are on last row
 			// but only when we don't know it already
 			sal_Bool bOk = sal_True;
 			if(bCheck && !m_bRowCountFinal)

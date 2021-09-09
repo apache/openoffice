@@ -2,7 +2,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,16 +10,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -39,7 +39,7 @@
 <paragraph role="paragraph" id="par_id3148572" xml-lang="en-US" l10n="U" oldref="2"><variable id="silben"><ahelp hid=".">Inserts hyphens in words that are too long to fit at the end of a line.</ahelp> $[officename] searches the document and suggests hyphenation that you can accept or reject. If text is selected, the Hyphenation dialog works on the selected text only. If no text is selected, the Hyphenation dialog works on the whole document.</variable></paragraph>
 </section>
 <section id="howtoget">
-  <embed href="text/swriter/00/00000406.xhp#silbentrennung"/>
+<embed href="text/swriter/00/00000406.xhp#silbentrennung"/>
 </section>
 <embed href="text/swriter/guide/using_hyphen.xhp#using_hyphen"/>
 <paragraph role="paragraph" id="par_id3153811" xml-lang="en-US" l10n="U" oldref="3">To automatically hyphenate the current or selected paragraphs, choose <emph>Format - Paragraph</emph>, and then click the <link href="text/swriter/01/05030200.xhp" name="Text Flow">Text Flow</link> tab. You can also apply automatic hyphenation to a paragraph style. In text where automatic hyphenation is enabled, the Hyphenation dialog will not find any word to hyphenate.</paragraph>
@@ -69,7 +69,7 @@
 <paragraph role="paragraph" id="par_id3152950" xml-lang="en-US" l10n="U" oldref="17">To manually enter a hyphen directly in the document, click in the word where you want to add the hyphen, and then press <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Minus sign (-).</paragraph>
 <paragraph role="paragraph" id="par_id3147523" xml-lang="en-US" l10n="U" oldref="32">To insert a non-breaking (protected) hyphen directly in the document, click in the word that you want to hyphenate, and then press Shift+<switchinline select="sys"><caseinline select="MAC">Command
-</caseinline><defaultinline>+Ctrl </defaultinline></switchinline>+Minus sign(-).</paragraph>
+</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Minus sign(-).</paragraph>
 <paragraph role="paragraph" id="par_id3154573" xml-lang="en-US" l10n="U" oldref="33">To hide custom hyphens, choose <emph><switchinline select="sys"><caseinline select="MAC">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href="text/shared/optionen/01040600.xhp" name="Text Document - Formatting Aids">%PRODUCTNAME Writer - Formatting Aids</link></emph>, and then clear the <emph>Custom hyphens</emph> check box.</paragraph>
 <paragraph role="heading" id="hd_id3150360" xml-lang="en-US" level="2" l10n="U" oldref="20">Word</paragraph>
 <bookmark xml-lang="en-US" branch="hid/svx:Edit:RID_SVXDLG_HYPHENATE:ED_WORD" id="bm_id3155903" localize="false"/>

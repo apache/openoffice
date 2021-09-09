@@ -98,7 +98,7 @@ public:
 	void			ResetButtonText();
 						  
 	//------
-	//use this to manipulate the dialog bevore executing it:
+	//use this to manipulate the dialog before executing it:
 	void			SetDialogCreatedHdl( const Link& rLink ) { maDialogCreatedHdl = rLink; }
 	const Link& 	GetDialogCreatedHdl() const { return maDialogCreatedHdl; }
 };

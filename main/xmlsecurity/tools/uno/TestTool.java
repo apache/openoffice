@@ -234,7 +234,7 @@ public class TestTool extends JFrame implements ActionListener
 	 ******************************************************************************/
 
 	/*
-	 * initalizes the UI.
+	 * initializes the UI.
 	 */
 	private void initUI()
 	{

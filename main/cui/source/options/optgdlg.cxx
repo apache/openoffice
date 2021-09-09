@@ -730,14 +730,14 @@ OfaViewTabPage::OfaViewTabPage(Window* pParent, const SfxItemSet& rSet ) :
 	aAAPointLimitUnits.SetPosSizePixel( aPos, aSize );
 #else
 	// on this platform, we do not have the anti aliasing options - move the other checkboxes accordingly
-	// (in the resource, the coordinates are calculated for the AA options beeing present)
+	// (in the resource, the coordinates are calculated for the AA options being present)
 	Control* pMiscOptions[] =
 	{
         &aMenuFL, &aMenuIconsFT, &aMenuIconsLB,
         &aFontListsFL, &aFontShowCB, &aFontHistoryCB
 	};
 
-	// temporaryly create the checkbox for the anti aliasing (we need to to determine it's pos)
+	// temporarily create the checkbox for the anti aliasing (we need to determine its pos)
 	CheckBox* pFontAntiAliasing	= new CheckBox( this, CUI_RES( CB_FONTANTIALIASING ) );
     sal_Int32 nMoveUp = aMenuFL.GetPosPixel().Y() - pFontAntiAliasing->GetPosPixel().Y();
 	DELETEZ( pFontAntiAliasing );
@@ -1280,7 +1280,7 @@ OfaLanguagesTabPage::OfaLanguagesTabPage( Window* pParent, const SfxItemSet& rSe
     }
     catch (Exception &e)
     {
-        // we'll just leave the box in it's default setting and won't
+        // we'll just leave the box in its default setting and won't
         // even give it event handler...
         OString aMsg = OUStringToOString(e.Message, RTL_TEXTENCODING_ASCII_US);
         OSL_ENSURE(sal_False, aMsg.getStr());
@@ -1463,7 +1463,7 @@ sal_Bool OfaLanguagesTabPage::FillItemSet( SfxItemSet& rSet )
     }
     catch (Exception& e)
     {
-        // we'll just leave the box in it's default setting and won't
+        // we'll just leave the box in its default setting and won't
         // even give it event handler...
         OString aMsg = OUStringToOString(e.Message, RTL_TEXTENCODING_ASCII_US);
         OSL_ENSURE(sal_False, aMsg.getStr());

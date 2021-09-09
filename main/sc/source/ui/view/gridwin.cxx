@@ -1505,7 +1505,7 @@ void ScGridWindow::HandleMouseButtonDown( const MouseEvent& rMEvt )
     // active inplace client. In that case we have to ignore the event.
     // Otherwise we would crash (context menu has been
     // opened by inplace client and we would deactivate the inplace client,
-    // the contex menu is closed by VCL asynchronously which in the end
+    // the context menu is closed by VCL asynchronously which in the end
     // would work on deleted objects or the context menu has no parent anymore)
     // See #126086# and #128122#
 	SfxViewShell* pViewSh = pViewData->GetViewShell();

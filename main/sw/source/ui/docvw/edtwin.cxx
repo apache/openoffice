@@ -2634,7 +2634,7 @@ void SwEditWin::MouseButtonDown(const MouseEvent& _rMEvt)
     // active inplace client. In that case we have to ignore the mouse
     // button down event. Otherwise we would crash (context menu has been
     // opened by inplace client and we would deactivate the inplace client,
-    // the contex menu is closed by VCL asynchronously which in the end
+    // the context menu is closed by VCL asynchronously which in the end
     // would work on deleted objects or the context menu has no parent anymore)
     // See #126086# and #128122#
     SfxInPlaceClient* pIPClient = rSh.GetSfxViewShell()->GetIPClient();
@@ -3577,7 +3577,7 @@ void SwEditWin::MouseMove(const MouseEvent& _rMEvt)
             }
 
             if ( USHRT_MAX != nPointer &&
-                // Enhanced table selection is explicitely allowed in table mode
+                // Enhanced table selection is explicitly allowed in table mode
                 ( !bChkTblSel || !rSh.IsTableMode() ) )
             {
                 SetPointer( nPointer );

@@ -256,7 +256,7 @@ System::String* mapUnoPolymorphicName(System::String* unoName)
 			System::String * sParam = unoName->Substring(index, cur - index);
 			//skip the comma
 			cur++;
-			//the the index to the beginning of the next param
+			//the index to the beginning of the next param
 			index = cur;
 			builder->Append(mapUnoTypeName(sParam));
 		}
@@ -1881,7 +1881,7 @@ Assembly * TypeEmitter::type_resolve(
 												  __typeof(System::String)};
 			ilGen->Emit(Emit::OpCodes::Call,
 						__typeof(System::String)->GetMethod(S"Concat", arConcatParams));
-			//load contex argument
+			//load context argument
 			ilGen->Emit(Emit::OpCodes::Ldarg_0);
 			ilGen->Emit(Emit::OpCodes::Newobj, ctorDeploymentException);
 			ilGen->Emit(Emit::OpCodes::Throw);//Exception(typeDeploymentExc);

@@ -173,7 +173,7 @@ if( aPreviewSizePixel.Width() && aPreviewSizePixel.Height() )
 
 	if( GraphicConverter::Export( aSvOutputStream, aMtfGraphic.GetBitmapEx( &aPreviewSizePixel ), CVT_PNG ) )
 	{
-		// handle errror case here
+		// handle error case here
 	}
 	else
 	{

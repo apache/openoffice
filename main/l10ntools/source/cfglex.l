@@ -1,6 +1,6 @@
 %{
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 /*
  * lexer for parsing cfg source files
@@ -50,7 +50,7 @@
 #pragma warning(push, 1)
 #endif
 
-/* external functions (C++ code, declared as extren "C" */
+/* external functions (C++ code, declared as extern "C" */
 extern int WorkOnTokenSet( int, char* );
 extern int InitCfgExport( char * , char *);
 extern int EndCfgExport();
@@ -106,8 +106,8 @@ int bText=0;
 	pChar[1] = 0x00;
 	pChar[0] = c3;
 
-	WorkOnTokenSet( COMMEND, yytext );
-	WorkOnTokenSet( COMMEND, pChar );
+	WorkOnTokenSet( COMMENT, yytext );
+	WorkOnTokenSet( COMMENT, pChar );
 
 	for(;;) {
 		if ( c3 == EOF )
@@ -118,7 +118,7 @@ int bText=0;
 		c2 = c3;
 		c3 = input();
 		pChar[0] = c3;
-		WorkOnTokenSet( COMMEND, pChar );
+		WorkOnTokenSet( COMMENT, pChar );
 	}
 }
 
@@ -130,7 +130,7 @@ int bText=0;
 \<[^\>\!]*\> {
 	bText = 0;
 	if ( yytext[ 1 ] == '!' && yytext[ 2 ] == '-' && yytext[ 3 ] == '-' )
-		WorkOnTokenSet( COMMEND, yytext );
+		WorkOnTokenSet( COMMENT, yytext );
 	else
 		WorkOnTokenSet( CFG_UNKNOWNTAG, yytext );
 }
@@ -158,7 +158,7 @@ void YYWarning( char *s )
 {
 	/* write warning to stderr */
 	fprintf( stderr,
-		"Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+		"Warning: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 }
 
 /*****************************************************************************/
@@ -171,7 +171,7 @@ void yyerror ( char *s )
 {
 	/* write error to stderr */
 	fprintf( stderr,
-		"Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext  );
+		"Error: \"%s\" in line %d: \"%s\"\n", s, yylineno, yytext );
 	SetError();
 }
 
@@ -190,14 +190,14 @@ main( int argc, char* argv[])
 
 	pOutput = GetOutputFile( argc, argv );
 
-    if ( !pOutput ) {
+	if ( !pOutput ) {
 		fprintf( stdout, "Syntax: CFGEX[-p Prj][-r PrjRoot]-i FileIn [-o FileOut][-m DataBase][-e][-b][-u][-f][-d DoneFile][-g[:dtd] ][-L l1,l2,...]\n" );
 		fprintf( stdout, " Prj:      Project\n" );
 		fprintf( stdout, " PrjRoot:  Path to project root (..\\.. etc.)\n" );
 		fprintf( stdout, " FileIn:   Source files (*.src)\n" );
 		fprintf( stdout, " FileOut:  Destination file (*.*)\n" );
 		fprintf( stdout, " DataBase: Mergedata (*.sdf)\n" );
-        fprintf( stdout, " -e: Disable writing errorlog\n" );
+		fprintf( stdout, " -e: Disable writing errorlog\n" );
 		fprintf( stdout, " -b: Break when Token \"HelpText\" found in source\n" );
 		fprintf( stdout, " -u: [english] and [german] are allowed, Id is Taken from DataBase \n" );
 		fprintf( stdout, " -f: force extraction and merge even if only one language is existent\n" );
@@ -216,22 +216,21 @@ main( int argc, char* argv[])
 	if ( !pFile )
 		return 1;
 
-   	yyin = pFile;
+	yyin = pFile;
 
 	/* create global instance of class CfgExport */
 	//InitCfgExport( pOutput );
 
 	/* start parser */
-   	yylex();
+	yylex();
 
 	/* get error info. and end export */
 	nRetValue = GetError();
 	EndCfgExport();
 
-    
-    removeTempFile();
+
+	removeTempFile();
 /* return error level */
 	return nRetValue;
 }
-
 

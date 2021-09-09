@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #define _FLDUI_SRC
@@ -35,9 +36,9 @@ String STR_FLD_EDIT_DLG
 /*--------------------------------------------------------------------
 	Beschreibung: Strings fuer die Types
  --------------------------------------------------------------------*/
- //
- // Bereich Dokument
- //
+//
+// Bereich Dokument
+//
 String STR_DATEFLD
 {
 	Text [ en-US ] = "Date" ;
@@ -78,9 +79,9 @@ String STR_EXTUSERFLD
 {
 	Text [ en-US ] = "Sender" ;
 };
- //
- // Bereich Funktionen
- //
+//
+// Bereich Funktionen
+//
 String STR_SETFLD
 {
 	Text [ en-US ] = "Set variable" ;
@@ -99,11 +100,6 @@ String STR_INPUTFLD
 };
 String STR_SETINPUTFLD
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Eingabefeld (Variable) : Eingabefeld (Varibale) */
-	/* ### ACHTUNG: Neuer Text in Resource? Eingabefeld (Variable) : Eingabefeld (Varibale) */
-	/* ### ACHTUNG: Neuer Text in Resource? Eingabefeld (Variable) : Eingabefeld (Varibale) */
-	/* ### ACHTUNG: Neuer Text in Resource? Eingabefeld (Variable) : Eingabefeld (Varibale) */
-	/* ### ACHTUNG: Neuer Text in Resource? Eingabefeld (Variable) : Eingabefeld (Varibale) */
 	Text [ en-US ] = "Input field (variable)" ;
 };
 String STR_USRINPUTFLD
@@ -144,15 +140,15 @@ String STR_JUMPEDITFLD
 };
 String STR_COMBINED_CHARS
 {
-	Text [ en-US ] = "Combine characters";
+	Text [ en-US ] = "Combine characters" ;
 };
 String STR_DROPDOWN
 {
-    Text [ en-US ] = "Input list" ;
+	Text [ en-US ] = "Input list" ;
 };
- //
- // Bereich Referenzen
- //
+//
+// Bereich Referenzen
+//
 String STR_SETREFFLD
 {
 	Text [ en-US ] = "Set Reference" ;
@@ -161,12 +157,12 @@ String STR_GETREFFLD
 {
 	Text [ en-US ] = "Insert Reference" ;
 };
- //
- //  Bereich Datenbank
- //
+//
+// Bereich Datenbank
+//
 String STR_DBFLD
 {
-    Text [ en-US ] = "Mail merge fields" ;
+	Text [ en-US ] = "Mail merge fields" ;
 };
 String STR_DBNEXTSETFLD
 {
@@ -192,9 +188,9 @@ String STR_HIDDENTXTFLD
 {
 	Text [ en-US ] = "Hidden text" ;
 };
- //
- //  Bereich Benutzerfelder
- //
+//
+// Bereich Benutzerfelder
+//
 String STR_USERFLD
 {
 	Text [ en-US ] = "User Field" ;
@@ -209,15 +205,15 @@ String STR_SCRIPTFLD
 };
 String STR_AUTHORITY
 {
-	Text [ en-US ] = "Bibliography entry";
+	Text [ en-US ] = "Bibliography entry" ;
 };
 String STR_HIDDENPARAFLD
 {
 	Text [ en-US ] = "Hidden Paragraph" ;
 };
- //
- // Bereich DokumentInfo
- //
+//
+// Bereich DokumentInfo
+//
 String STR_DOCINFOFLD
 {
 	Text [ en-US ] = "DocInformation" ;
@@ -227,7 +223,7 @@ String STR_DOCINFOFLD
  --------------------------------------------------------------------*/
 String FLD_DATE_STD
 {
-	Text [ en-US ] = "Date";
+	Text [ en-US ] = "Date" ;
 };
 String FLD_DATE_FIX
 {
@@ -235,15 +231,15 @@ String FLD_DATE_FIX
 };
 String FLD_TIME_STD
 {
-	Text [ en-US ] = "Time";
+	Text [ en-US ] = "Time" ;
 };
 String FLD_TIME_FIX
 {
 	Text [ en-US ] = "Time (fixed)" ;
 };
- //
- //  SubCmd Statistik
- //
+//
+// SubCmd Statistik
+//
 String FLD_STAT_TABLE
 {
 	Text [ en-US ] = "Tables" ;
@@ -272,8 +268,8 @@ String FLD_STAT_PAGE
 {
 	Text [ en-US ] = "Pages" ;
 };
- //  SubCmd DDETypen
- //
+// SubCmd DDETypen
+//
 String FMT_DDE_HOT
 {
 	Text [ en-US ] = "DDE automatic" ;
@@ -339,7 +335,7 @@ String FLD_EU_TELFIRMA
 };
 String FLD_EU_FAX
 {
-    Text [ en-US ] = "FAX" ;
+	Text [ en-US ] = "Fax" ;
 };
 String FLD_EU_EMAIL
 {
@@ -360,7 +356,7 @@ String FLD_PAGEREF_ON
 /*--------------------------------------------------------------------
 	Beschreibung: Pfadname
  --------------------------------------------------------------------*/
- // Formate FileName
+// Formate FileName
 String FMT_FF_NAME
 {
 	Text [ en-US ] = "File name" ;
@@ -402,7 +398,6 @@ String FMT_CHAPTER_NO_NOSEPARATOR
 };
 String FMT_CHAPTER_NAMENO
 {
-	/* ### ACHTUNG: Neuer Text in Resource? Kapitelnummer und Name : Nummer und Name */
 	Text [ en-US ] = "Chapter number and name" ;
 };
 /*--------------------------------------------------------------------
@@ -456,7 +451,7 @@ String FMT_AUTHOR_SCUT
 	Text [ en-US ] = "Initials" ;
 };
 /*--------------------------------------------------------------------
-	Beschreibung:   Varibale setzen
+	Beschreibung: Varibale setzen
  --------------------------------------------------------------------*/
 String FMT_SETVAR_SYS
 {
@@ -538,19 +533,19 @@ String FMT_REF_ONLYCAPTION
 };
 String FMT_REF_ONLYSEQNO
 {
-	Text [ en-US ] = "Numbering";
+	Text [ en-US ] = "Numbering" ;
 };
 String FMT_REF_NUMBER
 {
-    Text [ en-US ] = "Number";
+	Text [ en-US ] = "Number" ;
 };
 String FMT_REF_NUMBER_NO_CONTEXT
 {
-    Text [ en-US ] = "Number (no context)";
+	Text [ en-US ] = "Number (no context)" ;
 };
 String FMT_REF_NUMBER_FULL_CONTEXT
 {
-    Text [ en-US ] = "Number (full context)";
+	Text [ en-US ] = "Number (full context)" ;
 };
 /*--------------------------------------------------------------------
 	Beschreibung: Platzhalter
@@ -594,7 +589,7 @@ String STR_INSERT
 	Text [ en-US ] = "Insert" ;
 };
 /*--------------------------------------------------------------------
-	Beschreibung:   AustauschStrings fuer Edit/NameFT
+	Beschreibung: AustauschStrings fuer Edit/NameFT
  --------------------------------------------------------------------*/
 String STR_COND
 {
@@ -622,7 +617,7 @@ String STR_PROMPT
 };
 String STR_COMBCHRS_FT
 {
-	Text [ en-US ] = "Ch~aracters";
+	Text [ en-US ] = "Ch~aracters" ;
 };
 String STR_SETNO
 {
@@ -650,24 +645,24 @@ String STR_ALL_DATABASE
 };
 ImageButton BTN_FLDEDT_PREV
 {
-	Pos = MAP_APPFONT ( 263 , 115 ) ;
-	Size = MAP_APPFONT ( 24 , 14 ) ;
+	Pos = MAP_APPFONT ( 263, 115 ) ;
+	Size = MAP_APPFONT ( 24, 14 ) ;
 	TabStop = TRUE ;
 	SYMBOL = IMAGEBUTTON_PREV ;
 	Helpid = HID_DLG_FLDEDT_PREV ;
 };
 ImageButton BTN_FLDEDT_NEXT
 {
-	Pos = MAP_APPFONT ( 294 , 115 ) ;
-	Size = MAP_APPFONT ( 24 , 14 ) ;
+	Pos = MAP_APPFONT ( 294, 115 ) ;
+	Size = MAP_APPFONT ( 24, 14 ) ;
 	TabStop = TRUE ;
 	SYMBOL = IMAGEBUTTON_NEXT ;
 	Helpid = HID_DLG_FLDEDT_NEXT ;
 };
 PushButton PB_FLDEDT_ADDRESS
 {
-	Pos = MAP_APPFONT ( 294 , 100 ) ;
-	Size = MAP_APPFONT ( 24 , 14 ) ;
+	Pos = MAP_APPFONT ( 294, 100 ) ;
+	Size = MAP_APPFONT ( 24, 14 ) ;
 	TabStop = TRUE ;
 	Hide = TRUE ;
 	Text [ en-US ] = "Edit" ;
@@ -675,6 +670,7 @@ PushButton PB_FLDEDT_ADDRESS
 };
 String STR_CUSTOM
 {
-    Text [ en-US ] = "Custom" ;
+	Text [ en-US ] = "Custom" ;
 };
 
+// ********************************************************************** EOF

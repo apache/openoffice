@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -138,12 +138,12 @@ void TabWindow::implts_LayoutWindows() const
     aLock.unlock();
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
 
-    // Convert relativ size to output size.
+    // Convert relative size to output size.
     if ( xWindow.is() && xDevice.is() )
     {
         css::awt::Rectangle  aRectangle  = xWindow->getPosSize();
         css::awt::DeviceInfo aInfo       = xDevice->getInfo();
-        css::awt::Size       aSize       (  aRectangle.Width  - aInfo.LeftInset - aInfo.RightInset  ,
+        css::awt::Size       aSize       (  aRectangle.Width  - aInfo.LeftInset - aInfo.RightInset ,
                                             aRectangle.Height - aInfo.TopInset  - aInfo.BottomInset );
 
         css::awt::Size  aContainerWindowSize;
@@ -285,7 +285,7 @@ IMPL_LINK( TabWindow, Deactivate, TabControl*, pTabControl )
 }
 
 //---------------------------------------------------------------------------------------------------------
-// XInitilization
+// XInitialization
 //---------------------------------------------------------------------------------------------------------
 
 void SAL_CALL TabWindow::initialize( const css::uno::Sequence< css::uno::Any >& aArguments )
@@ -299,12 +299,12 @@ throw (css::uno::Exception, css::uno::RuntimeException)
 
     /* SAFE AREA ----------------------------------------------------------------------------------------------- */
     ResetableGuard aLock( m_aLock );
-    sal_Bool                                               bInitalized( m_bInitialized );
+    sal_Bool                                               bInitialized( m_bInitialized );
 	css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR( m_xServiceManager );
 	aLock.unlock();
 	/* SAFE AREA ----------------------------------------------------------------------------------------------- */
 
-    if ( !bInitalized )
+    if ( !bInitialized )
     {
 		css::beans::PropertyValue				    aPropValue;
 		css::uno::Reference< css::awt::XTopWindow > xTopWindow;
@@ -878,7 +878,7 @@ throw( css::uno::Exception )
 {
 }
 
-void SAL_CALL TabWindow::getFastPropertyValue( css::uno::Any& aValue  ,
+void SAL_CALL TabWindow::getFastPropertyValue( css::uno::Any& aValue ,
                                                sal_Int32      nHandle    ) const
 {
     switch( nHandle )
@@ -895,7 +895,7 @@ void SAL_CALL TabWindow::getFastPropertyValue( css::uno::Any& aValue  ,
 ::cppu::IPropertyArrayHelper& SAL_CALL TabWindow::getInfoHelper()
 {
 	// Optimize this method !
-	// We initialize a static variable only one time. And we don't must use a mutex at every call!
+	// We initialize a static variable only one time. And we don't need to use a mutex at every call!
 	// For the first call; pInfoHelper is NULL - for the second call pInfoHelper is different from NULL!
     static ::cppu::OPropertyArrayHelper* pInfoHelper = NULL;
 
@@ -922,7 +922,7 @@ css::uno::Reference< css::beans::XPropertySetInfo > SAL_CALL TabWindow::getPrope
 throw ( css::uno::RuntimeException )
 {
 	// Optimize this method !
-	// We initialize a static variable only one time. And we don't must use a mutex at every call!
+	// We initialize a static variable only one time. And we don't need to use a mutex at every call!
 	// For the first call; pInfo is NULL - for the second call pInfo is different from NULL!
     static css::uno::Reference< css::beans::XPropertySetInfo >* pInfo = NULL;
 
@@ -946,7 +946,7 @@ throw ( css::uno::RuntimeException )
 const css::uno::Sequence< css::beans::Property > TabWindow::impl_getStaticPropertyDescriptor()
 {
 	// Create a new static property array to initialize sequence!
-	// Table of all predefined properties of this class. Its used from OPropertySetHelper-class!
+	// Table of all predefined properties of this class. It's used from OPropertySetHelper-class!
 	// Don't forget to change the defines (see begin of this file), if you add, change or delete a property in this list!!!
 	// It's necessary for methods of OPropertySetHelper.
 	// ATTENTION:
@@ -970,3 +970,4 @@ const css::uno::Sequence< css::beans::Property > TabWindow::impl_getStaticProper
 }
 
 }
+

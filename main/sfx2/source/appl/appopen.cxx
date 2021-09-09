@@ -148,45 +148,42 @@ void SAL_CALL SfxOpenDocStatusListener_Impl::disposing( const EventObject& ) thr
 
 SfxObjectShellRef SfxApplication::DocAlreadyLoaded
 (
-    const String&   rName,      // Name des Dokuments mit Pfad
-    sal_Bool            bSilent,    // sal_True: nicht nach neuer Sicht fragen
-    sal_Bool            bActivate,   // soll bestehende Sicht aktiviert werden
+    const String&   rName,      // Name of the Document including path
+    sal_Bool            bSilent,    // sal_True: do not ask for new view
+    sal_Bool            bActivate,   // should current view be activated 
     sal_Bool            bForbidVisible,
 	const String*   pPostStr
 )
 
-/*  [Beschreibung]
-
-    Stellt fest, ob ein Dokument mit dem Namen 'rName' bereits geladen
-    ist und liefert einen Pointer darauf zu"uck.
-
-    Ist das Dokument noch nicht geladen, wird ein 0-Pointer zur"uckgeliefert.
+/*  [description]
+    assert if Document with the name 'rname' has been loaded and delivers the
+    pointer. Otherwise a zeropointer will be returned
 */
 
 {
-    // zu suchenden Namen als URL aufbereiten
+    // create URL from searchable name
     INetURLObject aUrlToFind( rName );
     DBG_ASSERT( aUrlToFind.GetProtocol() != INET_PROT_NOT_VALID, "Invalid URL" );
 	String aPostString;
 	if (  pPostStr )
 		aPostString = *pPostStr;
 
-    // noch offen?
+    // still open?
     SfxObjectShellRef xDoc;
 
     if ( !aUrlToFind.HasError() )
     {
-		// dann bei den normal geoeffneten Docs
+		// check at normal opened documents
 		if ( !xDoc.Is() )
 		{
-			xDoc = SfxObjectShell::GetFirst( 0, sal_False ); // auch hidden Docs
+			xDoc = SfxObjectShell::GetFirst( 0, sal_False ); // include hidden files
 			while( xDoc.Is() )
 			{
 				if ( xDoc->GetMedium() &&
 					 xDoc->GetCreateMode() == SFX_CREATE_MODE_STANDARD &&
 					 !xDoc->IsAbortingImport() && !xDoc->IsLoading() )
 				{
-					// Vergleiche anhand der URLs
+					// compare by URLs
                     INetURLObject aUrl( xDoc->GetMedium()->GetName() );
 					if ( !aUrl.HasError() && aUrl == aUrlToFind &&
                          (!bForbidVisible || !SfxViewFrame::GetFirst( xDoc, sal_True )) &&
@@ -200,11 +197,11 @@ SfxObjectShellRef SfxApplication::DocAlreadyLoaded
 		}
     }
 
-    // gefunden?
+    // found?
     if ( xDoc.Is() && bActivate )
     {
         DBG_ASSERT(
-            !bForbidVisible, "Unsichtbares kann nicht aktiviert werden" );
+            !bForbidVisible, "Invisible files cannot be activated" );
 
 		SfxViewFrame* pFrame;
         for( pFrame = SfxViewFrame::GetFirst( xDoc );
@@ -297,19 +294,17 @@ private:
 
 sal_uInt32 CheckPasswd_Impl
 (
-    //Window *pWin,             // Parent des Dialogs
+    //Window *pWin,             // Parent of dialog
     SfxObjectShell*  pDoc,
-    SfxItemPool&     /*rPool*/, // Pool, falls ein Set erzeugt werden mus
-    SfxMedium*       pFile      // das Medium, dessen Passwort gfs. erfragt werden soll
+    SfxItemPool&     /*rPool*/, // Pool, if we need to create a set
+    SfxMedium*       pFile      // Medium that needs a password (if necessary)
 )
 
-/*  [Beschreibung]
-
-    Zu einem Medium das Passwort erfragen; funktioniert nur, wenn es sich
-    um einen Storage handelt.
-    Wenn in der Documentinfo das Passwort-Flag gesetzt ist, wird
-    das Passwort vom Benutzer per Dialog erfragt und an dem Set
-    des Mediums gesetzt; das Set wird, wenn nicht vorhanden, erzeugt.
+/*  [description]
+    To query a passwort on a medium works only if the medium is a storage.
+    If in documentinfo the password-flag is set, a dialog will query the user 
+    for the password. The password will be saved in a set. If the set does not 
+    exist, a set will be created.
 */
 {
     sal_uIntPtr nRet = ERRCODE_NONE;
@@ -572,7 +567,7 @@ void SfxApplication::NewDocExec_Impl( SfxRequest& rReq )
 {
     DBG_MEMTEST();
 
-    // keine Parameter vom BASIC nur Factory angegeben?
+    // No Parameters given and only factory given by BASIC ?
     SFX_REQUEST_ARG(rReq, pTemplNameItem, SfxStringItem, SID_TEMPLATE_NAME, sal_False);
     SFX_REQUEST_ARG(rReq, pTemplFileNameItem, SfxStringItem, SID_FILE_NAME, sal_False);
     SFX_REQUEST_ARG(rReq, pTemplRegionNameItem, SfxStringItem, SID_TEMPLATE_REGIONNAME, sal_False);
@@ -580,7 +575,7 @@ void SfxApplication::NewDocExec_Impl( SfxRequest& rReq )
     SfxObjectShellLock xDoc;
 
     String  aTemplateRegion, aTemplateName, aTemplateFileName;
-    sal_Bool    bDirect = sal_False; // "uber FileName anstelle Region/Template
+    sal_Bool    bDirect = sal_False; // use filename instead of region/template
     SfxErrorContext aEc(ERRCTX_SFX_NEWDOC);
     if ( !pTemplNameItem && !pTemplFileNameItem )
     {
@@ -793,8 +788,7 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
                 rReq.RemoveItem( SID_FILE_NAME );
                 rReq.AppendItem( SfxStringItem( SID_FILE_NAME, aURL ) );
 
-                // synchron ausf"uhren, damit beim Reschedulen nicht schon das n"achste Dokument
-                // geladen wird
+                // execute synchronous, to avoid next document load at reschedule
                 // TODO/LATER: use URLList argument and always remove one document after another, each step in asychronous execution, until finished
                 // but only if reschedule is a problem
                 GetDispatcher_Impl()->Execute( SID_OPENDOC, SFX_CALLMODE_SYNCHRON, *rReq.GetArgs() );
@@ -846,7 +840,7 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
         rReq.AppendItem( SfxBoolItem( SID_TEMPLATE, sal_False ) );
     }
     // pass URL to OS by using ShellExecuter or open it internal
-    // if it seams to be an own format.
+    // if it seems to be an own format.
     /* Attention!
             There exist two possibilities to open hyperlinks:
             a) using SID_OPENHYPERLINK (new)
@@ -932,45 +926,11 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 			Reference < XURLTransformer > xTrans( ::comphelper::getProcessServiceFactory()->createInstance(
 													::rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer" )), UNO_QUERY );
 			xTrans->parseStrict( aURL );
-
-			INetProtocol aINetProtocol = INetURLObject( aURL.Complete ).GetProtocol();
+            INetURLObject aINetURLObject(aURL.Complete);
+			INetProtocol aINetProtocol = aINetURLObject.GetProtocol();
 			SvtExtendedSecurityOptions aExtendedSecurityOptions;
 			SvtExtendedSecurityOptions::OpenHyperlinkMode eMode = aExtendedSecurityOptions.GetOpenHyperlinkMode();
-			if ( eMode == SvtExtendedSecurityOptions::OPEN_WITHSECURITYCHECK )
-			{
-				if ( aINetProtocol == INET_PROT_FILE )
-				{
-/*!!! pb: #i49802# no security warning any longer
-					// Check if file URL is a directory. This is not insecure!
-					osl::Directory aDir( aURL.Main );
-					sal_Bool bIsDir = ( aDir.open() == osl::Directory::E_None );
-
-                    if ( !bIsDir && !aExtendedSecurityOptions.IsSecureHyperlink( aURL.Complete ) )
-					{
-						// Security check for local files depending on the extension
-						vos::OGuard aGuard( Application::GetSolarMutex() );
-						Window *pWindow = SFX_APP()->GetTopWindow();
-
-						String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
-						WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
-						aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
-
-						// Replace %s with the real file name
-						String aMsgText = aSecurityWarningBox.GetMessText();
-						String aMainURL( aURL.Main );
-						String aFileName;
-
-						utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileName );
-						aMsgText.SearchAndReplaceAscii( "%s", aFileName );
-						aSecurityWarningBox.SetMessText( aMsgText );
-
-						if( aSecurityWarningBox.Execute() == RET_NO )
-							return;
-					}
-*/
-				}
-			}
-            else if ( eMode == SvtExtendedSecurityOptions::OPEN_NEVER && aINetProtocol != INET_PROT_VND_SUN_STAR_HELP )
+            if ( eMode == SvtExtendedSecurityOptions::OPEN_NEVER && aINetProtocol != INET_PROT_VND_SUN_STAR_HELP )
 			{
                 vos::OGuard aGuard( Application::GetSolarMutex() );
                 Window *pWindow = SFX_APP()->GetTopWindow();
@@ -1086,7 +1046,40 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 							if (SFX_APP()->IsSecureURL(rtl::OUString(), &aReferer))
 							{
 								::rtl::OUString aURLString( aURL.Complete );
+                                // Before letting the OS execute the URL, we may have to request for
+                                // confirmation
+                                if ( eMode == SvtExtendedSecurityOptions::OPEN_WITHSECURITYCHECK ) {
+                                    // Check if file URL is a directory. This is not insecure!
+                                    sal_Bool bIsDir = aINetURLObject.hasFinalSlash() ||
+                                        ( osl::Directory(aURL.Main).open() ==
+                                          osl::Directory::E_None );
+                                    // Use SvtExtendedSecurityOptions::IsSecureHyperlink()
+                                    // to check the extension of the link destination.
+                                    sal_Bool bSafeExtension = aExtendedSecurityOptions.IsSecureHyperlink(aURL.Complete);
+                                    if (!bIsDir && !bSafeExtension) {
+                                        // Security check for local files depending on the extension
+                                        vos::OGuard aGuard( Application::GetSolarMutex() );
+                                        Window *pWindow = SFX_APP()->GetTopWindow();
 
+                                        String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
+                                        WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
+                                        aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
+
+                                        // Replace %s with the real file name
+                                        String aMsgText = aSecurityWarningBox.GetMessText();
+                                        String aMainURL( aURL.Main );
+                                        String aFileNameInMsg;
+
+                                        if (!utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileNameInMsg )) {
+                                            aFileNameInMsg = aMainURL;
+                                        }
+                                        aMsgText.SearchAndReplaceAscii( "%s", aFileNameInMsg );
+                                        aSecurityWarningBox.SetMessText( aMsgText );
+
+                                        if( aSecurityWarningBox.Execute() == RET_NO )
+                                            return;
+                                    }
+                                }
 								try
 								{
 									// give os this file

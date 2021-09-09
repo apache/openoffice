@@ -182,7 +182,7 @@ extern "C" {
 
     <p>A note about bootstrap parameters. The implementation of the bootstrap
     parameter mechanism interprets the characters '\', '$', '{', '}' as
-    escape characters. Thats why the Windows path contain double back-slashes.
+    escape characters. That's why the Windows path contains double back-slashes.
     One should also take into account that a console may have also special
     escape characters.</p>
     
@@ -330,7 +330,7 @@ JVMFWK_DLLPUBLIC sal_Bool SAL_CALL jfw_areEqualJavaInfo(
 
 /** determines if a Java Virtual Machine is already running.
     
-    <p>As long as the the office and the JREs only support one
+    <p>As long as the office and the JREs only support one
     Virtual Machine per process the Java settings, particularly the
     selected Java, are not effective immediately after changing when
     a VM has already been running. That is, if a JRE A was used to start

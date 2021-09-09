@@ -70,7 +70,7 @@ typedef enum
   }
 SANE_Status;
 
-/* following are for later sane version, older frontends wont support */
+/* following are for later sane version, older frontends won't support */
 #if 0
 #define SANE_STATUS_WARMING_UP 12 /* lamp not ready, please retry */
 #define SANE_STATUS_HW_LOCKED  13 /* scanner mechanism locked for transport */

@@ -206,7 +206,7 @@ void SAL_CALL ModuleManager::replaceByName(const ::rtl::OUString& sName ,
     // Note: Dont use impl_getConfig() method here. Because it creates a readonly access only, further
     // it cache it as a member of this module manager instance. If we change some props there ... but dont
     // flush changes (because an error occurred) we will read them later. If we use a different config access
-    // we can close it without a flush ... and our read data wont be affected .-)
+    // we can close it without a flush ... and our read data won't be affected .-)
     css::uno::Reference< css::uno::XInterface >         xCfg      = ::comphelper::ConfigurationHelper::openConfig(
                                                                         xSMGR,
                                                                         CFGPATH_FACTORIES,
@@ -392,8 +392,8 @@ css::uno::Reference< css::container::XNameAccess > ModuleManager::implts_getConf
 ::rtl::OUString ModuleManager::implts_identify(const css::uno::Reference< css::uno::XInterface >& xComponent)
 {
     // Search for an optional (!) interface XModule first.
-    // Its used to overrule an existing service name. Used e.g. by our database form designer
-    // which uses a writer module internaly.
+    // It's used to overrule an existing service name. Used e.g. by our database form designer
+    // which uses a writer module internally.
     css::uno::Reference< css::frame::XModule > xModule(xComponent, css::uno::UNO_QUERY);
     if (xModule.is())
         return xModule->getIdentifier();

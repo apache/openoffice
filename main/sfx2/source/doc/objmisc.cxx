@@ -75,6 +75,9 @@
 #include <com/sun/star/task/ErrorCodeRequest.hpp>
 #include <unotools/securityoptions.hxx>
 
+#include "com/sun/star/uri/XUriReferenceFactory.hpp"
+#include <com/sun/star/uri/XVndSunStarScriptUrlReference.hpp>
+
 #include <comphelper/processfactory.hxx>
 #include <comphelper/componentcontext.hxx>
 #include <comphelper/configurationhelper.hxx>
@@ -1695,16 +1698,20 @@ ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptCon
     OSL_TRACE( "in CallXScript" );
 	ErrCode nErr = ERRCODE_NONE;
 
-    bool bIsDocumentScript = ( _rScriptURL.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "location=document" ) ) >= 0 );
-        // TODO: we should parse the URL, and check whether there is a parameter with this name.
-        // Otherwise, we might find too much.
-    if ( bIsDocumentScript && !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
-        return ERRCODE_IO_ACCESSDENIED;
-
 	bool bCaughtException = false;
     Any aException;
     try
     {
+        uno::Reference< lang::XMultiServiceFactory > xServiceManager( ::comphelper::getProcessServiceFactory(), uno::UNO_SET_THROW );
+        Reference< uri::XUriReferenceFactory > xFac (
+            xServiceManager->createInstance( rtl::OUString::createFromAscii(
+                "com.sun.star.uri.UriReferenceFactory") ) , UNO_QUERY_THROW );
+        Reference< uri::XVndSunStarScriptUrlReference > xScriptUri( xFac->parse( _rScriptURL ), UNO_QUERY_THROW );
+        ::rtl::OUString sLocation = xScriptUri->getParameter( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "location" ) ) );
+        bool bIsDocumentScript = ( sLocation == ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "document" ) ) );
+        if ( bIsDocumentScript && !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
+            return ERRCODE_IO_ACCESSDENIED;
+
         // obtain/create a script provider
         Reference< provider::XScriptProvider > xScriptProvider;
         Reference< provider::XScriptProviderSupplier > xSPS( _rxScriptContext, UNO_QUERY );

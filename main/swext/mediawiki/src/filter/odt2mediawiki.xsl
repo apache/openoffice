@@ -316,11 +316,11 @@
 	</template>
 
 	<!-- 
-		Funktion generating a token consisting of the given character 
+		Function generating a token consisting of the given character 
 		repeated 'level' times.
 		
 		@param level
-			The lengh of the result.
+			The length of the result.
 		@param char
 			The character that should be repeated 'level' times.
 	-->
@@ -478,7 +478,7 @@
 	 -->
 
     <!--
-       Make sure to join sibling node that are all formated with WikiMath style without repeating
+       Make sure to join sibling node that are all formatted with WikiMath style without repeating
        the <math>..</math> markup.
 
        Do not apply any transformation to the contents marked as WikiMath.
@@ -1071,7 +1071,7 @@
 		Function for looking up the position of a node identified by the given 
 		'current-id' within a node set 'context'. 
 		
-		The search starts with the the index 'test-index'. The search is recursive 
+		The search starts with the index 'test-index'. The search is recursive 
 		in the 'test-index' argument. To save recursion depth, each recursive call 
 		iteratively tests a fixed number of indexes (by loop unrolling).
 	 -->

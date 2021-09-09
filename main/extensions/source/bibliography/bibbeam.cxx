@@ -174,7 +174,7 @@ namespace bib
 					m_xDispatchProviderInterception=uno::Reference< frame::XDispatchProviderInterception > (m_xControl, UNO_QUERY );
 					m_xGridWin->setVisible( sal_True );
 					m_xControl->setDesignMode( sal_True );
-						// initially switch on the desing mode - switch it off _after_ loading the form
+						// initially switch on the design mode - switch it off _after_ loading the form
 						// 17.10.2001 - 93107 - frank.schoenheit@sun.com
 
 					::Size aSize = GetOutputSizePixel();

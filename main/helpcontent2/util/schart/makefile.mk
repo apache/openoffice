@@ -931,7 +931,6 @@ LINKLINKFILES= \
    text$/shared$/optionen$/01160100.xhp \
    text$/shared$/optionen$/01160200.xhp \
    text$/shared$/optionen$/01160201.xhp \
-   text$/shared$/optionen$/improvement.xhp \
    text$/shared$/optionen$/java.xhp \
    text$/shared$/optionen$/javaclasspath.xhp \
    text$/shared$/optionen$/javaparameters.xhp \

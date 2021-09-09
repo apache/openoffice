@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ OAccessibleMenuBaseComponent::OAccessibleMenuBaseComponent( Menu* pMenu )
 	,m_pMenu( pMenu )
 	,m_bEnabled( sal_False )
 	,m_bFocused( sal_False )
-    ,m_bVisible( sal_False )
+	,m_bVisible( sal_False )
 	,m_bSelected( sal_False )
 	,m_bChecked( sal_False )
 {
@@ -123,7 +123,7 @@ void OAccessibleMenuBaseComponent::SetStates()
 {
 	m_bEnabled = IsEnabled();
 	m_bFocused = IsFocused();
-    m_bVisible = IsVisible();
+	m_bVisible = IsVisible();
 	m_bSelected = IsSelected();
 	m_bChecked = IsChecked();
 }
@@ -139,20 +139,20 @@ void OAccessibleMenuBaseComponent::SetEnabled( sal_Bool bEnabled )
 		{
 			nStateType = AccessibleStateType::VISIBLE;
 		}
-        Any aOldValue[2], aNewValue[2];
+		Any aOldValue[2], aNewValue[2];
 		if ( m_bEnabled )
-        {
-            aOldValue[0] <<= AccessibleStateType::SENSITIVE;
-            aOldValue[1] <<= nStateType;
-        }
+		{
+			aOldValue[0] <<= AccessibleStateType::SENSITIVE;
+			aOldValue[1] <<= nStateType;
+		}
 		else
-        {
-            aNewValue[0] <<= nStateType;
-            aNewValue[1] <<= AccessibleStateType::SENSITIVE;
-        }
+		{
+			aNewValue[0] <<= nStateType;
+			aNewValue[1] <<= AccessibleStateType::SENSITIVE;
+		}
 		m_bEnabled = bEnabled;
-        NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[0], aNewValue[0] );
-        NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[1], aNewValue[1] );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[0], aNewValue[0] );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[1], aNewValue[1] );
 	}
 }
 
@@ -176,14 +176,14 @@ void OAccessibleMenuBaseComponent::SetFocused( sal_Bool bFocused )
 
 void OAccessibleMenuBaseComponent::SetVisible( sal_Bool bVisible )
 {
-    if ( m_bVisible != bVisible )
+	if ( m_bVisible != bVisible )
 	{
 		Any aOldValue, aNewValue;
-        if ( m_bVisible )
+		if ( m_bVisible )
 			aOldValue <<= AccessibleStateType::VISIBLE;
 		else
 			aNewValue <<= AccessibleStateType::VISIBLE;
-        m_bVisible = bVisible;
+		m_bVisible = bVisible;
 		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
@@ -192,16 +192,16 @@ void OAccessibleMenuBaseComponent::SetVisible( sal_Bool bVisible )
 
 void OAccessibleMenuBaseComponent::SetSelected( sal_Bool bSelected )
 {
-    if ( m_bSelected != bSelected )
-    {
-        Any aOldValue, aNewValue;
-        if ( m_bSelected )
-            aOldValue <<= AccessibleStateType::SELECTED;
-        else
-            aNewValue <<= AccessibleStateType::SELECTED;
-        m_bSelected = bSelected;
-        NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
-    }
+	if ( m_bSelected != bSelected )
+	{
+		Any aOldValue, aNewValue;
+		if ( m_bSelected )
+			aOldValue <<= AccessibleStateType::SELECTED;
+		else
+			aNewValue <<= AccessibleStateType::SELECTED;
+		m_bSelected = bSelected;
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -240,23 +240,23 @@ void OAccessibleMenuBaseComponent::UpdateEnabled( sal_Int32 i, sal_Bool bEnabled
 
 void OAccessibleMenuBaseComponent::UpdateFocused( sal_Int32 i, sal_Bool bFocused )
 {
-    if ( i >= 0 && i < (sal_Int32)m_aAccessibleChildren.size() )
-    {
-        Reference< XAccessible > xChild( m_aAccessibleChildren[i] );
-        if ( xChild.is() )
-        {
-            OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xChild.get() );
-            if ( pComp )
-                pComp->SetFocused( bFocused );
-        }
-    }
+	if ( i >= 0 && i < (sal_Int32)m_aAccessibleChildren.size() )
+	{
+		Reference< XAccessible > xChild( m_aAccessibleChildren[i] );
+		if ( xChild.is() )
+		{
+			OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xChild.get() );
+			if ( pComp )
+				pComp->SetFocused( bFocused );
+		}
+	}
 }
 
 // -----------------------------------------------------------------------------
 
 void OAccessibleMenuBaseComponent::UpdateVisible()
 {
-    SetVisible( IsVisible() );
+	SetVisible( IsVisible() );
 	for ( sal_uInt32 i = 0; i < m_aAccessibleChildren.size(); ++i )
 	{
 		Reference< XAccessible > xChild( m_aAccessibleChildren[i] );
@@ -264,7 +264,7 @@ void OAccessibleMenuBaseComponent::UpdateVisible()
 		{
 			OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xChild.get() );
 			if ( pComp )
-                pComp->SetVisible( pComp->IsVisible() );
+				pComp->SetVisible( pComp->IsVisible() );
 		}
 	}
 }
@@ -382,7 +382,7 @@ Reference< XAccessible > OAccessibleMenuBaseComponent::GetChild( sal_Int32 i )
 		}
 	}
 
-    return xChild;
+	return xChild;
 }
 
 // -----------------------------------------------------------------------------
@@ -394,8 +394,8 @@ Reference< XAccessible > OAccessibleMenuBaseComponent::GetChildAt( const awt::Po
 	{
 		Reference< XAccessible > xAcc = getAccessibleChild( i );
 		if ( xAcc.is() )
-		{			
-			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );				
+		{
+			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );
 			if ( xComp.is() )
 			{
 				Rectangle aRect = VCLRectangle( xComp->getBounds() );
@@ -496,23 +496,23 @@ sal_Bool OAccessibleMenuBaseComponent::IsHighlighted()
 
 sal_Bool OAccessibleMenuBaseComponent::IsChildHighlighted()
 {
-    sal_Bool bChildHighlighted = sal_False;
+	sal_Bool bChildHighlighted = sal_False;
 
-    for ( sal_uInt32 i = 0; i < m_aAccessibleChildren.size(); ++i )
-    {
-        Reference< XAccessible > xChild( m_aAccessibleChildren[i] );
-        if ( xChild.is() )
-        {
-            OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xChild.get() );
-            if ( pComp && pComp->IsHighlighted() )
-            {
-                bChildHighlighted = sal_True;
-                break;
-            }
-        }
-    }
+	for ( sal_uInt32 i = 0; i < m_aAccessibleChildren.size(); ++i )
+	{
+		Reference< XAccessible > xChild( m_aAccessibleChildren[i] );
+		if ( xChild.is() )
+		{
+			OAccessibleMenuBaseComponent* pComp = static_cast< OAccessibleMenuBaseComponent* >( xChild.get() );
+			if ( pComp && pComp->IsHighlighted() )
+			{
+				bChildHighlighted = sal_True;
+				break;
+			}
+		}
+	}
 
-    return bChildHighlighted;
+	return bChildHighlighted;
 }
 
 // -----------------------------------------------------------------------------
@@ -525,7 +525,7 @@ void OAccessibleMenuBaseComponent::SelectChild( sal_Int32 i )
 
 	// highlight the child
 	if ( m_pMenu )
-        m_pMenu->HighlightItem( (sal_uInt16)i );
+		m_pMenu->HighlightItem( (sal_uInt16)i );
 }
 
 // -----------------------------------------------------------------------------
@@ -540,12 +540,12 @@ void OAccessibleMenuBaseComponent::DeSelectAll()
 
 sal_Bool OAccessibleMenuBaseComponent::IsChildSelected( sal_Int32 i )
 {
-    sal_Bool bSelected = sal_False;
+	sal_Bool bSelected = sal_False;
 
-    if ( m_pMenu && m_pMenu->IsHighlighted( (sal_uInt16)i ) )
-        bSelected = sal_True;
+	if ( m_pMenu && m_pMenu->IsHighlighted( (sal_uInt16)i ) )
+		bSelected = sal_True;
 
-    return bSelected;
+	return bSelected;
 }
 
 // -----------------------------------------------------------------------------
@@ -570,7 +570,7 @@ void OAccessibleMenuBaseComponent::Click()
 
 sal_Bool OAccessibleMenuBaseComponent::IsPopupMenuOpen()
 {
-    return sal_False;
+	return sal_False;
 }
 
 // -----------------------------------------------------------------------------
@@ -594,24 +594,24 @@ void OAccessibleMenuBaseComponent::ProcessMenuEvent( const VclMenuEvent& rVclMen
 
 	switch ( rVclMenuEvent.GetId() )
 	{
-        case VCLEVENT_MENU_SHOW:
-        case VCLEVENT_MENU_HIDE:
-        {
-            UpdateVisible();
-        }
-        break;
+		case VCLEVENT_MENU_SHOW:
+		case VCLEVENT_MENU_HIDE:
+		{
+			UpdateVisible();
+		}
+		break;
 		case VCLEVENT_MENU_HIGHLIGHT:
 		{
-            SetFocused( sal_False );
-            UpdateFocused( nItemPos, sal_True );
-            UpdateSelected( nItemPos, sal_True );
-        }
+			SetFocused( sal_False );
+			UpdateFocused( nItemPos, sal_True );
+			UpdateSelected( nItemPos, sal_True );
+		}
 		break;
 		case VCLEVENT_MENU_DEHIGHLIGHT:
 		{
-            UpdateFocused( nItemPos, sal_False );
-            UpdateSelected( nItemPos, sal_False );
-        }
+			UpdateFocused( nItemPos, sal_False );
+			UpdateSelected( nItemPos, sal_False );
+		}
 		break;
 		case VCLEVENT_MENU_SUBMENUACTIVATE:
 		{
@@ -619,7 +619,7 @@ void OAccessibleMenuBaseComponent::ProcessMenuEvent( const VclMenuEvent& rVclMen
 		break;
 		case VCLEVENT_MENU_SUBMENUDEACTIVATE:
 		{
-            UpdateFocused( nItemPos, sal_True );
+			UpdateFocused( nItemPos, sal_True );
 		}
 		break;
 		case VCLEVENT_MENU_ENABLE:
@@ -669,8 +669,8 @@ void OAccessibleMenuBaseComponent::ProcessMenuEvent( const VclMenuEvent& rVclMen
 			UpdateChecked( nItemPos, sal_False );
 		}
 		break;
-        case VCLEVENT_OBJECT_DYING:
-        {
+		case VCLEVENT_OBJECT_DYING:
+		{
 			if ( m_pMenu )
 			{
 				m_pMenu->RemoveEventListener( LINK( this, OAccessibleMenuBaseComponent, MenuEventListener ) );
@@ -686,8 +686,8 @@ void OAccessibleMenuBaseComponent::ProcessMenuEvent( const VclMenuEvent& rVclMen
 				}
 				m_aAccessibleChildren.clear();
 			}
-        }
-        break;
+		}
+		break;
 		default:
 		{
 		}
@@ -775,7 +775,7 @@ Reference< XAccessibleStateSet > OAccessibleMenuBaseComponent::getAccessibleStat
 	}
 	else
 	{
-        pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
+		pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
 	}
 
 	return xSet;
@@ -783,8 +783,7 @@ Reference< XAccessibleStateSet > OAccessibleMenuBaseComponent::getAccessibleStat
 
 // -----------------------------------------------------------------------------
 
-sal_Bool OAccessibleMenuBaseComponent::IsMenuHideDisabledEntries() 
+sal_Bool OAccessibleMenuBaseComponent::IsMenuHideDisabledEntries()
 {
 	return sal_False;
 }
-

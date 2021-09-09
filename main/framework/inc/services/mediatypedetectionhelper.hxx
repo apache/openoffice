@@ -85,7 +85,7 @@ class MediaTypeDetectionHelper	:	public ::cppu::WeakImplHelper2< ::com::sun::sta
 
 			@seealso	-
 
-			@param		"xFactory", reference to factory which has created ouer owner(!). We can use these to create new uno-services.
+			@param		"xFactory", reference to factory which has created our owner(!). We can use these to create new uno-services.
 			@return		-
 
 			@onerror	-

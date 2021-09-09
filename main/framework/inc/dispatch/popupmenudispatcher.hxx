@@ -101,7 +101,7 @@ typedef ::cppu::OMultiTypeInterfaceContainerHelperVar<	::rtl::OUString			,
 /*-************************************************************************************************************//**
 	@short			helper for desktop only(!) to create new tasks on demand for dispatches
 	@descr			Use this class as member only! Never use it as baseclass.
-					XInterface will be ambigous and we hold a weakcss::uno::Reference to ouer OWNER - not to our SUPERCLASS!
+					XInterface will be ambiguous and we hold a weakcss::uno::Reference to our OWNER - not to our SUPERCLASS!
 
 	@implements		XInterface
 					XDispatch

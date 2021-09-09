@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,9 +25,9 @@
 
 ModalDialog RID_SCDLG_TEXT_IMPORT_OPTIONS
 {
-    HelpID = "sc:ModalDialog:RID_SCDLG_TEXT_IMPORT_OPTIONS";
+	HelpID = "sc:ModalDialog:RID_SCDLG_TEXT_IMPORT_OPTIONS" ;
     Text [ en-US ] = "Import Options" ;
-    Size = MAP_APPFONT ( 230 , 101 ) ;
+    Size = MAP_APPFONT ( 230, 101 ) ;
     Moveable = TRUE ;
     Closeable = TRUE ;
     OutputSize = TRUE ;
@@ -53,56 +53,57 @@ ModalDialog RID_SCDLG_TEXT_IMPORT_OPTIONS
 
     FixedLine FL_CHOOSE_LANG
     {
-        Pos = MAP_APPFONT( 6, 3 ) ;
-        Size = MAP_APPFONT( 165, 14 ) ;
+        Pos = MAP_APPFONT ( 6, 3 ) ;
+        Size = MAP_APPFONT ( 165, 14 ) ;
 
-        Text [ en-US ] = "Select the language to use for import" ; 
+        Text [ en-US ] = "Select the language to use for import" ;
     };
 
     RadioButton RB_AUTOMATIC
     {
-        HelpID = "sc:RadioButton:RID_SCDLG_TEXT_IMPORT_OPTIONS:RB_AUTOMATIC";
-        Pos = MAP_APPFONT( 12, 20 ) ;
-        Size = MAP_APPFONT( 159, 10 ) ;
+        HelpID = "sc:RadioButton:RID_SCDLG_TEXT_IMPORT_OPTIONS:RB_AUTOMATIC" ;
+        Pos = MAP_APPFONT ( 12, 20 ) ;
+        Size = MAP_APPFONT ( 159, 10 ) ;
         TabStop = TRUE ;
 
-        Text [ en-US ] = "Automatic" ; 
+        Text [ en-US ] = "Automatic" ;
     };
 
     RadioButton RB_CUSTOM
     {
-        HelpID = "sc:RadioButton:RID_SCDLG_TEXT_IMPORT_OPTIONS:RB_CUSTOM";
-        Pos = MAP_APPFONT( 12, 34 ) ;
-        Size = MAP_APPFONT( 159, 10 ) ;
+        HelpID = "sc:RadioButton:RID_SCDLG_TEXT_IMPORT_OPTIONS:RB_CUSTOM" ;
+        Pos = MAP_APPFONT ( 12, 34 ) ;
+        Size = MAP_APPFONT ( 159, 10 ) ;
         TabStop = TRUE ;
 
-        Text [ en-US ] = "Custom" ; 
-    };
+        Text [ en-US ] = "Custom" ;
+	};
 
     ListBox LB_CUSTOM_LANG
     {
-        HelpID = "sc:ListBox:RID_SCDLG_TEXT_IMPORT_OPTIONS:LB_CUSTOM_LANG";
-        Pos = MAP_APPFONT( 20, 50 ) ;
-        Size = MAP_APPFONT( 140, 120 ) ;
+        HelpID = "sc:ListBox:RID_SCDLG_TEXT_IMPORT_OPTIONS:LB_CUSTOM_LANG" ;
+        Pos = MAP_APPFONT ( 20, 50 ) ;
+        Size = MAP_APPFONT ( 140, 120 ) ;
         TabStop = TRUE ;
         DropDown = TRUE ;
-        Sort = TRUE ;
-    };
+		Sort = TRUE ;
+	};
 
-    FixedLine FL_OPTION
-    {
-	   Pos = MAP_APPFONT( 6, 70 );
-	   Size = MAP_APPFONT( 165, 14 );
-	   Text [ en-US ] = "Options" ;
-    };
+	FixedLine FL_OPTION
+	{
+		Pos = MAP_APPFONT ( 6, 70 ) ;
+		Size = MAP_APPFONT ( 165, 14 ) ;
+		Text [ en-US ] = "Options" ;
+	};
 
-    CheckBox BTN_CONVERT_DATE
-    {
-        HelpID = "sc:CheckBox:RID_SCDLG_TEXT_IMPORT_OPTIONS:BTN_CONVERT_DATE";
-    	Pos = MAP_APPFONT( 12, 86 );
-        Size = MAP_APPFONT( 159, 10 );
-        TabStop = TRUE ;
-        Text [ en-US ] = "Detect special numbers (such as dates)." ;
-    };
+	CheckBox BTN_CONVERT_DATE
+	{
+		HelpID = "sc:CheckBox:RID_SCDLG_TEXT_IMPORT_OPTIONS:BTN_CONVERT_DATE" ;
+		Pos = MAP_APPFONT ( 12, 86 ) ;
+		Size = MAP_APPFONT ( 159, 10 ) ;
+		TabStop = TRUE ;
+		Text [ en-US ] = "Detect special numbers (such as dates)" ;
+	};
 };
 
+// ********************************************************************** EOF

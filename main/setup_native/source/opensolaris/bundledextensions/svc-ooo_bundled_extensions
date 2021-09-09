@@ -82,7 +82,7 @@ case "$1" in
     #Now check for extensions which need to be uninstalled
     #(unopkg). This is the case if the list of extensions in the file
     #installed contains the name of an extension which does not exist
-    #in the the folder <..>/share/extension/install.
+    #in the folder <..>/share/extension/install.
 #     LINE=""
 #     NEWCONTENT=""
 #     REMOVED=""

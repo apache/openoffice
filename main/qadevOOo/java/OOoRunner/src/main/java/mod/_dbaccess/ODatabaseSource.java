@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -94,18 +94,18 @@ public class ODatabaseSource extends TestCase {
     protected void initialize ( TestParameters Param, PrintWriter log) {
         uniqueSuffix = uniqueSuffixStat++ ;
     }
-    
+
     protected void cleanup(TestParameters tParam, PrintWriter log) {
         log.println("    disposing not longer needed docs... ");
         DesktopTools.closeDoc(xDBDoc);
     }
-    
-    
+
+
 
     /**
     * Creating a Testenvironment for the interfaces to be tested.
     *
-    * Creates new <code>DataSource</code> which represents DBase database
+    * Creates new <code>DataSource</code> which represents dBASE database
     * located in temporary directory, and then registers it in service
     * <code>com.sun.star.sdb.DatabaseContext</code>.
     *
@@ -129,7 +129,7 @@ public class ODatabaseSource extends TestCase {
         try{
             oInterface = xMSF.createInstance( "com.sun.star.sdb.DatabaseContext" );
 
-            if (oInterface == null) 
+            if (oInterface == null)
 				throw new StatusException("Could not get service 'com.sun.star.sdb.DatabaseContext'", new Exception());
 
         }catch( Exception e ) {
@@ -149,8 +149,8 @@ public class ODatabaseSource extends TestCase {
         try{
             XInterface oDatabaseDoc = (XInterface) xMSF.createInstance
                                     ("com.sun.star.sdb.OfficeDatabaseDocument") ;
-            
-            if (oDatabaseDoc == null) 
+
+            if (oDatabaseDoc == null)
 				throw new StatusException("Could not get service 'com.sun.star.sdb.OfficeDatabaseDocument'", new Exception());
 
             xDBDoc = (XOfficeDatabaseDocument) UnoRuntime.queryInterface(
@@ -165,12 +165,12 @@ public class ODatabaseSource extends TestCase {
 
         oObj = (XInterface) xDBDoc.getDataSource();
         log.println("ImplementationName: " + utils.getImplName(oObj));
-        
-        // Creating new DBase data source in the TEMP directory
+
+        // Creating new dBASE data source in the TEMP directory
 
         XPropertySet xSrcProp = (XPropertySet)
             UnoRuntime.queryInterface(XPropertySet.class, oObj);
-        
+
         try{
             xSrcProp.setPropertyValue("URL", tmpDatabaseUrl) ;
         } catch ( UnknownPropertyException e){
@@ -194,7 +194,7 @@ public class ODatabaseSource extends TestCase {
 
         // registering source in DatabaseContext
         XStorable store = (XStorable) UnoRuntime.queryInterface(XStorable.class, xDBDoc);
-        String aFile = utils.getOfficeTemp ((XMultiServiceFactory) Param.getMSF ())+"DataSource.odb";     
+        String aFile = utils.getOfficeTemp ((XMultiServiceFactory) Param.getMSF ())+"DataSource.odb";
         try{
             store.storeAsURL(aFile,new PropertyValue[]{});
         } catch (IOException e){
@@ -206,16 +206,16 @@ public class ODatabaseSource extends TestCase {
             e.printStackTrace ();
             throw new StatusException("Could not save ", e) ;
         }
-        
+
 
         try{
-            xDBContextNameServ.registerObject(databaseName, oObj) ;            
+            xDBContextNameServ.registerObject(databaseName, oObj) ;
         } catch (Exception e){
             log.println("Could not register data source" );
             e.printStackTrace ();
             throw new StatusException("Could not register ", e) ;
         }
-        
+
         log.println( "    creating a new environment for object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
 
@@ -229,7 +229,7 @@ public class ODatabaseSource extends TestCase {
             e.printStackTrace(log) ;
         }
 
-        // dbase does not need user and password
+        // dBASE does not need user and password
         tEnv.addObjRelation("UserAndPassword", new String[]{"",""}) ;
 
         tEnv.addObjRelation("XCompletedConnection.Handler",
@@ -239,3 +239,4 @@ public class ODatabaseSource extends TestCase {
     } // finish method getTestEnvironment
 
 }
+

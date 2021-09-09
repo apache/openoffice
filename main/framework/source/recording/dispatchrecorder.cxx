@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -35,7 +34,7 @@ using namespace ::com::sun::star::uno;
 
 namespace framework{
 
-// used to mark a dispatch as comment (mostly it indicates an error) Changing of this wdefine will impact all using of such comments ...
+// used to mark a dispatch as comment (mostly it indicates an error). Changing of this wdefine will impact all using of such comments...
 #define REM_AS_COMMENT    "rem "
 
 //*****************************************************************************************************************
@@ -155,8 +154,8 @@ void SAL_CALL DispatchRecorder::recordDispatch( const css::util::URL& aURL,
 }
 
 //*************************************************************************
-void SAL_CALL  DispatchRecorder::recordDispatchAsComment( const css::util::URL& aURL,
-                                                          const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException )
+void SAL_CALL DispatchRecorder::recordDispatchAsComment( const css::util::URL& aURL,
+                                                         const css::uno::Sequence< css::beans::PropertyValue >& lArguments ) throw( css::uno::RuntimeException )
 {
 	::rtl::OUString aTarget;
 
@@ -428,7 +427,7 @@ com::sun::star::uno::Type SAL_CALL DispatchRecorder::getElementType() throw (::c
 	return ::getCppuType((const com::sun::star::frame::DispatchStatement *)NULL);
 }
 
-sal_Bool SAL_CALL DispatchRecorder::hasElements()  throw (::com::sun::star::uno::RuntimeException)
+sal_Bool SAL_CALL DispatchRecorder::hasElements() throw (::com::sun::star::uno::RuntimeException)
 {
 	return (! m_aStatements.empty());
 }
@@ -438,7 +437,7 @@ sal_Int32 SAL_CALL DispatchRecorder::getCount() throw (::com::sun::star::uno::Ru
 	return m_aStatements.size();
 }
 
-com::sun::star::uno::Any SAL_CALL DispatchRecorder::getByIndex(sal_Int32 idx)  throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
+com::sun::star::uno::Any SAL_CALL DispatchRecorder::getByIndex(sal_Int32 idx) throw (::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException)
 {
     if (idx >= (sal_Int32)m_aStatements.size()) {
 		throw com::sun::star::lang::IndexOutOfBoundsException(

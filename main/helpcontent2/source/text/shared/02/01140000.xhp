@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textshared0201140000xml" indexer="include" status="PUBLISH">
          <title xml-lang="en-US" id="tit">Show Draw Functions</title>
@@ -48,14 +47,14 @@
       <bookmark_value>ellipse drawing</bookmark_value>
       <bookmark_value>rectangle drawing</bookmark_value>
       <bookmark_value>shapes</bookmark_value>
-</bookmark><comment>MW moved "frames;" and "selecting;"  to the shared guide groups.xhp</comment><comment>MW added 5 entries</comment>
+</bookmark><comment>MW moved "frames;" and "selecting;" to the shared guide groups.xhp</comment><comment>MW added 5 entries</comment>
 <paragraph xml-lang="en-US" id="par_id3150476" role="paragraph" l10n="E" oldref="96"
                  localize="false"/>
       <section id="zeichnen">
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertDraw" id="bm_id484265" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:InsertDraw" id="bm_id3149205" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3152363" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/02/01140000.xhp" name="Show Draw Functions">Show Draw Functions</link></paragraph>
-         <paragraph xml-lang="en-US" id="par_id3150789" role="paragraph" l10n="CHG" oldref="72"><ahelp hid=".uno:InsertDraw">Click to open or close the <emph>Drawing </emph>bar, where you can add shapes, lines, text, and callouts to the current document.</ahelp></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3150789" role="paragraph" l10n="CHG" oldref="72"><ahelp hid=".uno:InsertDraw">Click to open or close the <emph>Drawing</emph> bar, where you can add shapes, lines, text, and callouts to the current document.</ahelp></paragraph>
       </section>
       <section id="syzeichnen">
          <paragraph xml-lang="en-US" id="par_idN10849" role="paragraph" l10n="NEW">You can switch on and off the Drawing toolbar of Writer and Calc documents using an icon on the Standard toolbar.</paragraph>
@@ -178,7 +177,7 @@
 	</image></paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3148878" role="paragraph" l10n="U" oldref="57"><variable id="kurvetext"><ahelp hid=".uno:Bezier_Unfilled">Draws a smooth Bezier curve. Click where you want the curve to start, drag, release, and then move the pointer to where you want the curve to end and click. Move the pointer and click again to add a straight line segment to the curve. Double-click to finish drawing the curve. To create a closed shape, double click the starting point of the curve.</ahelp> The arc of the curve is determined by the distance you drag. 
+               <paragraph xml-lang="en-US" id="par_id3148878" role="paragraph" l10n="U" oldref="57"><variable id="kurvetext"><ahelp hid=".uno:Bezier_Unfilled">Draws a smooth Bézier curve. Click where you want the curve to start, drag, release, and then move the pointer to where you want the curve to end and click. Move the pointer and click again to add a straight line segment to the curve. Double-click to finish drawing the curve. To create a closed shape, double click the starting point of the curve.</ahelp> The arc of the curve is determined by the distance you drag. 
 </variable></paragraph>
             </tablecell>
          </tablerow>
@@ -365,7 +364,7 @@
 
       </section>
       <section id="relatedtopics">
-         <paragraph xml-lang="en-US" id="par_id3155555" role="paragraph" l10n="CHG" oldref="74"><link href="text/shared/guide/insert_graphic_drawit.xhp" name="Tips">Tips for working with the <emph>Drawing </emph>bar.</link></paragraph>
+         <paragraph xml-lang="en-US" id="par_id3155555" role="paragraph" l10n="CHG" oldref="74"><link href="text/shared/guide/insert_graphic_drawit.xhp" name="Tips">Tips for working with the <emph>Drawing</emph> bar.</link></paragraph>
       </section>
    </body>
 </helpdocument>

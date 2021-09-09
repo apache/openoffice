@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,7 +75,7 @@ VCLXAccessibleListItem::VCLXAccessibleListItem( ::accessibility::IComboListBoxHe
 	m_nIndexInParent( _nIndexInParent ),
 	m_bSelected		( sal_False ),
 	m_bVisible		( sal_False ),
-    m_nClientId     ( 0 ),
+	m_nClientId		( 0 ),
 	m_pListBoxHelper( _pListBoxHelper ),
 	m_xParent		( _xParent )
 
@@ -105,7 +105,7 @@ void VCLXAccessibleListItem::SetSelected( sal_Bool _bSelected )
 		else
 			aNewValue <<= AccessibleStateType::SELECTED;
 		m_bSelected = _bSelected;
-        NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
 // -----------------------------------------------------------------------------
@@ -129,8 +129,8 @@ void VCLXAccessibleListItem::NotifyAccessibleEvent( sal_Int16 _nEventId,
 	AccessibleEventObject aEvt;
 	aEvt.Source = *this;
 	aEvt.EventId = _nEventId;
-    aEvt.OldValue = _aOldValue;
-    aEvt.NewValue = _aNewValue;
+	aEvt.OldValue = _aOldValue;
+	aEvt.NewValue = _aNewValue;
 
 	if (m_nClientId)
 		comphelper::AccessibleEventNotifier::addEvent( m_nClientId, aEvt );
@@ -211,14 +211,14 @@ void SAL_CALL VCLXAccessibleListItem::disposing()
 		m_xParentContext	= NULL;
 
 		nId = m_nClientId;
-		m_nClientId =  0;
+		m_nClientId = 0;
 		if ( nId )
 			xEventSource = *this;
 	}
 
-    // Send a disposing to all listeners.
+	// Send a disposing to all listeners.
 	if ( nId )
-        	comphelper::AccessibleEventNotifier::revokeClientNotifyDisposing( nId, *this );
+		comphelper::AccessibleEventNotifier::revokeClientNotifyDisposing( nId, *this );
 }
 // -----------------------------------------------------------------------------
 // XServiceInfo
@@ -283,7 +283,7 @@ sal_Int32 SAL_CALL VCLXAccessibleListItem::getAccessibleIndexInParent(  ) throw 
 sal_Int16 SAL_CALL VCLXAccessibleListItem::getAccessibleRole(  ) throw (RuntimeException)
 {
 	return AccessibleRole::LIST_ITEM;
-    //	return AccessibleRole::LABEL;
+	//	return AccessibleRole::LABEL;
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL VCLXAccessibleListItem::getAccessibleDescription(  ) throw (RuntimeException)
@@ -302,30 +302,30 @@ sal_Int16 SAL_CALL VCLXAccessibleListItem::getAccessibleRole(  ) throw (RuntimeE
 // -----------------------------------------------------------------------------
 Reference< XAccessibleRelationSet > SAL_CALL VCLXAccessibleListItem::getAccessibleRelationSet(  ) throw (RuntimeException)
 {
-    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 // -----------------------------------------------------------------------------
 Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleListItem::getAccessibleStateSet(  ) throw (RuntimeException)
 {
 	::osl::MutexGuard aGuard( m_aMutex );
 
-    utl::AccessibleStateSetHelper* pStateSetHelper = new utl::AccessibleStateSetHelper;
+	utl::AccessibleStateSetHelper* pStateSetHelper = new utl::AccessibleStateSetHelper;
 	Reference< XAccessibleStateSet > xStateSet = pStateSetHelper;
 
 	if ( !rBHelper.bDisposed && !rBHelper.bInDispose )
 	{
-        pStateSetHelper->AddState( AccessibleStateType::TRANSIENT );
+		pStateSetHelper->AddState( AccessibleStateType::TRANSIENT );
 
-		if(m_pListBoxHelper->IsEnabled())	
+		if(m_pListBoxHelper->IsEnabled())
 		{
-	    	pStateSetHelper->AddState( AccessibleStateType::SELECTABLE );
-	    	pStateSetHelper->AddState( AccessibleStateType::ENABLED );
-	    	pStateSetHelper->AddState( AccessibleStateType::SENSITIVE );
+			pStateSetHelper->AddState( AccessibleStateType::SELECTABLE );
+			pStateSetHelper->AddState( AccessibleStateType::ENABLED );
+			pStateSetHelper->AddState( AccessibleStateType::SENSITIVE );
 		}
 
-        if ( m_bSelected )
+		if ( m_bSelected )
 			pStateSetHelper->AddState( AccessibleStateType::SELECTED );
 		if ( m_bVisible )
 		{
@@ -334,9 +334,9 @@ Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleListItem::getAccessibleS
 		}
 	}
 	else
-        pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
+		pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
 
-    return xStateSet;
+	return xStateSet;
 }
 // -----------------------------------------------------------------------------
 Locale SAL_CALL VCLXAccessibleListItem::getLocale(  ) throw (IllegalAccessibleComponentStateException, RuntimeException)
@@ -344,7 +344,7 @@ Locale SAL_CALL VCLXAccessibleListItem::getLocale(  ) throw (IllegalAccessibleCo
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( m_aMutex );
 
-    return implGetLocale();
+	return implGetLocale();
 }
 // -----------------------------------------------------------------------------
 // XAccessibleComponent
@@ -439,8 +439,8 @@ sal_Bool SAL_CALL VCLXAccessibleListItem::setCaretPosition( sal_Int32 nIndex ) t
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( m_aMutex );
 
-    if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -459,8 +459,8 @@ Sequence< PropertyValue > SAL_CALL VCLXAccessibleListItem::getCharacterAttribute
 	::osl::MutexGuard aGuard( m_aMutex );
 
 	::rtl::OUString sText( implGetText() );
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return Sequence< PropertyValue >();
 }
@@ -471,8 +471,8 @@ awt::Rectangle SAL_CALL VCLXAccessibleListItem::getCharacterBounds( sal_Int32 nI
 	::osl::MutexGuard aGuard( m_aMutex );
 
 	::rtl::OUString sText( implGetText() );
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	awt::Rectangle aBounds( 0, 0, 0, 0 );
 	if ( m_pListBoxHelper )
@@ -502,15 +502,15 @@ sal_Int32 SAL_CALL VCLXAccessibleListItem::getIndexAtPoint( const awt::Point& aP
 	sal_Int32 nIndex = -1;
 	if ( m_pListBoxHelper )
 	{
-        sal_uInt16 nPos = LISTBOX_ENTRY_NOTFOUND;
-        Rectangle aItemRect = m_pListBoxHelper->GetBoundingRectangle( (sal_uInt16)m_nIndexInParent );
+		sal_uInt16 nPos = LISTBOX_ENTRY_NOTFOUND;
+		Rectangle aItemRect = m_pListBoxHelper->GetBoundingRectangle( (sal_uInt16)m_nIndexInParent );
 		Point aPnt( VCLPoint( aPoint ) );
 		aPnt += aItemRect.TopLeft();
-        sal_Int32 nI = m_pListBoxHelper->GetIndexForPoint( aPnt, nPos );
-        if ( nI != -1 && (sal_uInt16)m_nIndexInParent == nPos )
-            nIndex = nI;
+		sal_Int32 nI = m_pListBoxHelper->GetIndexForPoint( aPnt, nPos );
+		if ( nI != -1 && (sal_uInt16)m_nIndexInParent == nPos )
+			nIndex = nI;
 	}
-    return nIndex;
+	return nIndex;
 }
 // -----------------------------------------------------------------------------
 ::rtl::OUString SAL_CALL VCLXAccessibleListItem::getSelectedText() throw (RuntimeException)
@@ -542,8 +542,8 @@ sal_Bool SAL_CALL VCLXAccessibleListItem::setSelection( sal_Int32 nStartIndex, s
 	vos::OGuard aSolarGuard( Application::GetSolarMutex() );
 	::osl::MutexGuard aGuard( m_aMutex );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -616,7 +616,7 @@ sal_Bool SAL_CALL VCLXAccessibleListItem::copyText( sal_Int32 nStartIndex, sal_I
 		}
 	}
 
-    return bRet;
+	return bRet;
 }
 // -----------------------------------------------------------------------------
 // XAccessibleEventBroadcaster
@@ -624,18 +624,18 @@ sal_Bool SAL_CALL VCLXAccessibleListItem::copyText( sal_Int32 nStartIndex, sal_I
 void SAL_CALL VCLXAccessibleListItem::addEventListener( const Reference< XAccessibleEventListener >& xListener ) throw (RuntimeException)
 {
 	if (xListener.is())
-    {
+	{
 		if (!m_nClientId)
-            m_nClientId = comphelper::AccessibleEventNotifier::registerClient( );
+			m_nClientId = comphelper::AccessibleEventNotifier::registerClient( );
 		comphelper::AccessibleEventNotifier::addEventListener( m_nClientId, xListener );
-    }
+	}
 }
 // -----------------------------------------------------------------------------
 void SAL_CALL VCLXAccessibleListItem::removeEventListener( const Reference< XAccessibleEventListener >& xListener ) throw (RuntimeException)
 {
 	if ( xListener.is() && m_nClientId )
 	{
-        sal_Int32 nListenerCount = comphelper::AccessibleEventNotifier::removeEventListener( m_nClientId, xListener );
+		sal_Int32 nListenerCount = comphelper::AccessibleEventNotifier::removeEventListener( m_nClientId, xListener );
 		if ( !nListenerCount )
 		{
 			// no listeners anymore
@@ -655,21 +655,21 @@ void SAL_CALL VCLXAccessibleListItem::removeEventListener( const Reference< XAcc
 
 
 
-// AF (Oct. 29 2002): Return black as constant foreground color.  This is an
+// AF (Oct. 29 2002): Return black as constant foreground color. This is an
 // initial implementation and has to be substituted by code that determines
 // the color that is actually used.
 sal_Int32 SAL_CALL VCLXAccessibleListItem::getForeground (void)
-    throw (::com::sun::star::uno::RuntimeException)
+	throw (::com::sun::star::uno::RuntimeException)
 {
-    return COL_BLACK;
+	return COL_BLACK;
 }
 
-// AF (Oct. 29 2002): Return white as constant background color.  This is an
+// AF (Oct. 29 2002): Return white as constant background color. This is an
 // initial implementation and has to be substituted by code that determines
 // the color that is actually used.
 sal_Int32 SAL_CALL VCLXAccessibleListItem::getBackground (void)
-    throw (::com::sun::star::uno::RuntimeException)
+	throw (::com::sun::star::uno::RuntimeException)
 {
-    return COL_WHITE;
+	return COL_WHITE;
 }
 // -----------------------------------------------------------------------------

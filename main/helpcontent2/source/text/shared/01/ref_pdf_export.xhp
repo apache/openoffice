@@ -24,7 +24,6 @@
 
 
 
-
 <meta>
       <topic id="textshared01ref_pdf_exportxml" indexer="include">
          <title xml-lang="en-US" id="tit">Export as PDF</title>
@@ -125,7 +124,7 @@
       <paragraph xml-lang="en-US" id="par_id8551896" role="paragraph" l10n="NEW"><ahelp hid=".">If switched on, automatically inserted blank pages are being exported to pdf file. This is best if you are printing the pdf file double-sided. Example: In a book a chapter paragraph style is set to always start with an odd numbered page. The previous chapter ends on an odd page. %PRODUCTNAME inserts an even numbered blank page. This option controls whether to export that even numbered page or not.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/filter:CheckBox:RID_PDF_TAB_GENER:CB_EMBEDSTANDARDFONTS" id="bm_id50656619" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3954548" role="heading" level="2" l10n="NEW">Embed standard fonts</paragraph>
-<paragraph xml-lang="en-US" id="par_id853434896" role="paragraph" l10n="NEW"><ahelp hid=".">Normally the 14 standard Postscript fonts are not embedded in a PDF file, because every PDF reader software already contains these fonts. Enable this option to embed the standard fonts that are installed on your system and that are used in the document.</ahelp> Use this option if you expect to have a better looking or more useful standard font than the font that is available in the recipients' PDF reader software.</paragraph>
+<paragraph xml-lang="en-US" id="par_id853434896" role="paragraph" l10n="NEW"><ahelp hid=".">Normally the 14 standard PostScript fonts are not embedded in a PDF file, because every PDF reader software already contains these fonts. Enable this option to embed the standard fonts that are installed on your system and that are used in the document.</ahelp> Use this option if you expect to have a better looking or more useful standard font than the font that is available in the recipients' PDF reader software.</paragraph>
 <bookmark xml-lang="en-US" branch="hid/filter:CheckBox:RID_PDF_TAB_GENER:CB_ADDSTREAM" id="bm_id0804200803552411" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id080420080355360" role="heading" level="2" l10n="NEW">Embed this document inside the PDF</paragraph>
       <paragraph xml-lang="en-US" id="par_id0804200803553767" role="paragraph" l10n="NEW"><ahelp hid=".">The document being exported will be embedded inside the PDF file.</ahelp> Some PDF tools or %PRODUCTNAME extensions may allow to extract the file from the PDF and save it; in this way, the original %PRODUCTNAME document can be edited back without the need of a PDF editing application.</paragraph>

@@ -98,7 +98,7 @@ class QuietInteraction : public  css::lang::XTypeProvider
             @interface  XInteractionHandler
             @short      called from outside to handle a problem
             @descr      The only interaction we can handle here is to
-                        decide which of two ambigous filters should be really used.
+                        decide which of two ambiguous filters should be really used.
                         We use the user selected one every time.
                         All other request will be aborted and can break the code,
                         which use this interaction handler.
@@ -127,10 +127,10 @@ class QuietInteraction : public  css::lang::XTypeProvider
 
         //_________________________________
         /**
-            @short      return the handled interaction request
-            @descr      We saved any getted interaction request internaly.
-                        May the outside user of this class is interessted
-                        on that. Especially we gotted an unknown interaction
+            @short      returns the handled interaction request
+            @descr      We saved any getted interaction request internally.
+                        Maybe the outside user of this class is interested
+                        in that. Especially if we got an unknown interaction
                         and aborted it hard.
 
             @return     [com.sun.star.uno.Any]
@@ -144,11 +144,11 @@ class QuietInteraction : public  css::lang::XTypeProvider
         //_________________________________
         /**
             @short      returns information if interaction was used
-            @descr      It can be usefully to know the reason for a failed operation.
+            @descr      It can be useful to know the reason for a failed operation.
 
             @return     [boolean]
                             <TRUE/> for used interaction
-                            <FALSE/> otherwhise
+                            <FALSE/> otherwise
 
             @threadsafe yes
         */

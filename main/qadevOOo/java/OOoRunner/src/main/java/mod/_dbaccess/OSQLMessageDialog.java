@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@ import com.sun.star.uno.XInterface;
  *  <li> <code>com::sun::star::beans::XPropertySet</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.lang.XInitialization
  * @see com.sun.star.sdb.ErrorMessageDialog
@@ -108,7 +108,7 @@ public class OSQLMessageDialog extends TestCase {
             log.println("could not create instacne of 'com.sun.star.awt.Toolkit'" );
             throw new StatusException("could not create instacne of 'com.sun.star.awt.Toolkit'", e) ;
         }
-        
+
         // Describe the properties of the container window.
         com.sun.star.awt.WindowDescriptor aDescriptor =
         new com.sun.star.awt.WindowDescriptor();
@@ -127,7 +127,7 @@ public class OSQLMessageDialog extends TestCase {
 
         com.sun.star.awt.XWindowPeer xPeer = null;
         try{
-        
+
             xPeer = xToolkit.createWindow(aDescriptor) ;
 
         } catch (com.sun.star.lang.IllegalArgumentException e){
@@ -136,8 +136,8 @@ public class OSQLMessageDialog extends TestCase {
         }
 
         com.sun.star.awt.XWindow xWindow = (com.sun.star.awt.XWindow)UnoRuntime.queryInterface (
-        com.sun.star.awt.XWindow .class, xPeer);        
-        
+        com.sun.star.awt.XWindow .class, xPeer);
+
         log.println( "    creating a new environment for object" );
         TestEnvironment tEnv = new TestEnvironment( oObj );
 

@@ -404,7 +404,7 @@ namespace dbaui
 
 	protected:
 		// ----------------------------------------------------------------
-		// initalizing members
+		// initializing members
 		/** forces usage of a connection which we do not own
 			<p>To be used from within XInitialization::initialize only.</p>
 		*/

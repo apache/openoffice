@@ -47,7 +47,7 @@ module com { module sun { module star { module accessibility {
     methods.</p>
         
     <p>Furhtermore, the object that implements this interface has to be
-    connected implicitely or explicitely with an object that implements the
+    connected implicitly or explicitly with an object that implements the
     the <type>XAccessibleText</type> interface.  The
     <member>XAccessibleHyperlink::getStartIndex</member> and
     <member>XAccessibleHyperlink::getEndIndex</member> methods return

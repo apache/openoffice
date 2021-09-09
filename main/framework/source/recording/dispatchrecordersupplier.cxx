@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ namespace framework{
 // declarations
 
 //*****************************************************************************************************************
-//  XInterface, XTypeProvider
+// XInterface, XTypeProvider
 //*****************************************************************************************************************
 DEFINE_XINTERFACE_3(
     DispatchRecorderSupplier,
@@ -79,7 +79,7 @@ DEFINE_INIT_SERVICE(
     DispatchRecorderSupplier,
     {
         /*Attention
-            I think we don't need any mutex or lock here ... because we are called by our own static method impl_createInstance()
+            I think we don't need any mutex or lock here... because we are called by our own static method impl_createInstance()
             to create a new instance of this class by our own supported service factory.
             see macro DEFINE_XSERVICEINFO_MULTISERVICE and "impl_initService()" for further informations!
         */
@@ -106,7 +106,7 @@ DispatchRecorderSupplier::DispatchRecorderSupplier( const css::uno::Reference< c
 //_____________________________________________________________________________
 /**
     @short  standard destructor
-    @descr  We are a helper and not a real service. So we doesn't provide
+    @descr  We are a helper and not a real service. So we don't provide
             dispose() functionality. This supplier dies by ref count mechanism
             and should release all internal used ones too.
  */
@@ -119,7 +119,7 @@ DispatchRecorderSupplier::~DispatchRecorderSupplier()
 //_____________________________________________________________________________
 /**
     @short      set a new dispatch recorder on this supplier
-    @descr      Because there can exist more then one recorder implementations
+    @descr      Because there can exist more than one recorder implementations
                 (to generate java/basic/... scripts from recorded data) it must
                 be possible to set it on a supplier.
 
@@ -145,7 +145,7 @@ void SAL_CALL DispatchRecorderSupplier::setDispatchRecorder( const css::uno::Ref
 /**
     @short      provides access to the dispatch recorder of this supplier
     @descr      Such recorder can be used outside to record dispatches.
-                But normaly he is used internaly only. Of course he must used
+                But normally he is used internally only. Of course he must be used
                 from outside to get the recorded data e.g. for saving it as a
                 script.
 
@@ -168,7 +168,7 @@ css::uno::Reference< css::frame::XDispatchRecorder > SAL_CALL DispatchRecorderSu
 /**
     @short      execute a dispatch request and record it
     @descr      If given dispatch object provides right recording interface it
-                will be used. If it's not supported it record the pure dispatch
+                will be used. If it's not supported it records the pure dispatch
                 parameters only. There is no code neither the possibility to
                 check if recording is enabled or not.
 
@@ -195,7 +195,7 @@ void SAL_CALL DispatchRecorderSupplier::dispatchAndRecord( const css::util::URL&
     if (!xRecorder.is())
         throw css::uno::RuntimeException(DECLARE_ASCII("specification violation: no valid dispatch recorder available"), static_cast< ::cppu::OWeakObject* >(this));
 
-    // check, if given dispatch supports record functionality by itself ...
+    // check, if given dispatch supports record functionality by itself...
     // or must be wrapped.
     css::uno::Reference< css::frame::XRecordableDispatch > xRecordable(
         xDispatcher,
@@ -207,7 +207,7 @@ void SAL_CALL DispatchRecorderSupplier::dispatchAndRecord( const css::util::URL&
     {
         // There is no reason to wait for information about success
         // of this request. Because status information of a dispatch
-        // are not guaranteed. So we execute it and record used
+        // is not guaranteed. So we execute it and record used
         // parameters only.
         xDispatcher->dispatch(aURL,lArguments);
         xRecorder->recordDispatch(aURL,lArguments);

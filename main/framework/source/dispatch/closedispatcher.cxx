@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ css::uno::Sequence< css::frame::DispatchInformation > SAL_CALL CloseDispatcher::
 {
     if (nCommandGroup == css::frame::CommandGroup::VIEW)
     {
-        /* Attention: Dont add .uno:CloseFrame here. Because its not really
+        /* Attention: Don't add .uno:CloseFrame here. Because it's not really
                       a configurable feature ... and further it does not have
                       a valid UIName entry inside the GenericCommands.xcu ... */
         css::uno::Sequence< css::frame::DispatchInformation > lViewInfos(1);
@@ -172,12 +172,12 @@ void SAL_CALL CloseDispatcher::dispatchWithNotification(const css::util::URL&   
     // SAFE -> ----------------------------------
     WriteGuard aWriteLock(m_aLock);
 
-    // This reference indicates, that we was already called before and
+    // This reference indicates, that we already called before and
     // our asynchronous process was not finished yet.
-    // We have to reject double calls. Otherwhise we risk,
+    // We have to reject double calls. Otherwise we risk,
     // that we try to close an already closed resource ...
-    // And its no problem to do nothing then. The UI user will try it again, if
-    // non of these jobs was successfully.
+    // And it's no problem to do nothing then. The UI user will try it again, if
+    // none of these jobs was successfully.
     if (m_xSelfHold.is())
     {
         aWriteLock.unlock();
@@ -218,9 +218,9 @@ void SAL_CALL CloseDispatcher::dispatchWithNotification(const css::util::URL&   
     // But we can't execute synchronously :-)
     // May we are called from a generic key-input handler,
     // which isn't aware that this call kill its own environment ...
-    // Do it asynchronous everytimes!
+    // Do it asynchronous every time!
 
-    // But dont forget to hold usself alive.
+    // But don't forget to hold usself alive.
     // We are called back from an environment, which doesn't know an uno reference.
     // They call us back by using our c++ interface.
 
@@ -249,7 +249,7 @@ void SAL_CALL CloseDispatcher::dispatchWithNotification(const css::util::URL&   
 //-----------------------------------------------
 /**
     @short      asynchronous callback
-    @descr      We start all actions inside this object asnychronoue.
+    @descr      We start all actions inside this object asynchronous.
                 (see comments there).
                 Now we do the following:
                 - close all views to the same document, if needed and possible
@@ -258,7 +258,7 @@ void SAL_CALL CloseDispatcher::dispatchWithNotification(const css::util::URL&   
                     document inside the frame. May the document shows a dialog and
                     the user ignore it. Then the state of the office can be changed
                     during we try to close frame and document.
-                - check the environment (menas count open frames - exlcuding our
+                - check the environment (means count open frames - excluding our
                   current one)
                 - decide then, if we must close this frame only, establish the backing mode
                   or shutdown the whole application.
@@ -268,7 +268,7 @@ IMPL_LINK( CloseDispatcher, impl_asyncCallback, void*, EMPTYARG )
     try
     {
 
-    // Allow calling of XController->suspend() everytimes.
+    // Allow calling of XController->suspend() every time.
     // Dispatch is an UI functionality. We implement such dispatch object here.
     // And further XController->suspend() was designed to bring an UI ...
     sal_Bool bAllowSuspend        = sal_True;
@@ -305,7 +305,7 @@ IMPL_LINK( CloseDispatcher, impl_asyncCallback, void*, EMPTYARG )
     css::uno::Reference< css::frame::XFramesSupplier > xDesktop(xSMGR->createInstance(SERVICENAME_DESKTOP), css::uno::UNO_QUERY_THROW);
     FrameListAnalyzer aCheck1(xDesktop, xCloseFrame, FrameListAnalyzer::E_HELP | FrameListAnalyzer::E_BACKINGCOMPONENT);
 
-    // a) If the curent frame (where the close dispatch was requested for) does not have
+    // a) If the current frame (where the close dispatch was requested for) does not have
     //    any parent frame ... it will close this frame only. Such frame isn't part of the
     //    global desktop tree ... and such frames are used as "implementation details" only.
     //    E.g. the live previews of our wizards doing such things. And then the owner of the frame
@@ -333,7 +333,7 @@ IMPL_LINK( CloseDispatcher, impl_asyncCallback, void*, EMPTYARG )
         bTerminateApp = sal_True;
     else
 
-    // d) Otherwhise we have to: close all views to the same document, close the
+    // d) Otherwise we have to: close all views to the same document, close the
     //    document inside our own frame and decide then again, what has to be done!
     {
         if (implts_prepareFrameForClosing(m_xCloseFrame, bAllowSuspend, bCloseAllViewsToo, bControllerSuspended))
@@ -361,7 +361,7 @@ IMPL_LINK( CloseDispatcher, impl_asyncCallback, void*, EMPTYARG )
 
 			else
             // c3) there is no other (visible) frame open ...
-            //     The help module will be ignored everytimes!
+            //     The help module will be ignored every time!
             //     But we have to decide if we must terminate the
             //     application or establish the backing mode now.
             //     And that depends from the dispatched URL ...
@@ -435,7 +435,7 @@ IMPL_LINK( CloseDispatcher, impl_asyncCallback, void*, EMPTYARG )
     // This method was called asynchronous from our main thread by using a pointer.
     // We reached this method only, by using a reference to ourself :-)
     // Further this member is used to detect still running and not yet finished
-    // ansynchronous operations. So its time now to release this reference.
+    // asynchronous operations. So its time now to release this reference.
     // But hold it temp alive. Otherwise we die before we can finish this method really :-))
     css::uno::Reference< css::uno::XInterface > xTempHold = m_xSelfHold;
     m_xSelfHold.clear();
@@ -464,14 +464,14 @@ sal_Bool CloseDispatcher::implts_prepareFrameForClosing(const css::uno::Referenc
         return sal_True;
 
     // Close all views to the same document ... if forced to do so.
-    // But dont touch our own frame here!
+    // But don't touch our own frame here!
     // We must do so ... because the may be following controller->suspend()
     // will show the "save/discard/cancel" dialog for the last view only!
     if (bCloseAllOtherViewsToo)
     {
         // SAFE -> ----------------------------------
         ReadGuard aReadLock(m_aLock);
-        css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR  = m_xSMGR;
+        css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR = m_xSMGR;
         aReadLock.unlock();
         // <- SAFE ----------------------------------
 
@@ -492,7 +492,7 @@ sal_Bool CloseDispatcher::implts_prepareFrameForClosing(const css::uno::Referenc
     if (bAllowSuspend)
     {
         css::uno::Reference< css::frame::XController > xController = xFrame->getController();
-        if (xController.is()) // some views dont uses a controller .-( (e.g. the help window)
+        if (xController.is()) // some views don't uses a controller .-( (e.g. the help window)
         {
             bControllerSuspended = xController->suspend(sal_True);
             if (! bControllerSuspended)
@@ -500,7 +500,7 @@ sal_Bool CloseDispatcher::implts_prepareFrameForClosing(const css::uno::Referenc
         }
     }
 
-    // dont remove the component really by e.g. calling setComponent(null, null).
+    // don't remove the component really by e.g. calling setComponent(null, null).
     // It's enough to suspend the controller.
     // If we close the frame later this controller doesn't show the same dialog again.
     return sal_True;
@@ -519,8 +519,8 @@ sal_Bool CloseDispatcher::implts_closeFrame()
     if ( ! xFrame.is() )
         return sal_True;
 
-    // dont deliver owner ship; our "UI user" will try it again if it failed.
-    // OK - he will get an empty frame then. But normaly an empty frame
+    // don't deliver ownership; our "UI user" will try it again if it failed.
+    // OK - he will get an empty frame then. But normally an empty frame
     // should be closeable always :-)
     if (!fpf::closeIt(xFrame, sal_False))
         return sal_False;
@@ -539,7 +539,7 @@ sal_Bool CloseDispatcher::implts_establishBackingMode()
 {
     // SAFE -> ----------------------------------
     ReadGuard aReadLock(m_aLock);
-    css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR  = m_xSMGR;
+    css::uno::Reference< css::lang::XMultiServiceFactory > xSMGR = m_xSMGR;
     css::uno::Reference< css::frame::XFrame >              xFrame (m_xCloseFrame.get(), css::uno::UNO_QUERY);
     aReadLock.unlock();
     // <- SAFE ----------------------------------
@@ -611,7 +611,7 @@ css::uno::Reference< css::frame::XFrame > CloseDispatcher::static_impl_searchRig
     css::uno::Reference< css::frame::XFrame > xTarget = xFrame;
     while(sal_True)
     {
-        // a) top frames wil be closed
+        // a) top frames will be closed
         if (xTarget->isTop())
             return xTarget;
 

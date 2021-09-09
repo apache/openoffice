@@ -54,7 +54,7 @@ public class FormulaInDifferentWays {
 
 	@After
 	public void tearDown() throws Exception {
-		close();
+		discard();
 		app.stop();
 	}
 
@@ -89,6 +89,7 @@ public class FormulaInDifferentWays {
 		// commands window
 		mathElementsRelations.click();
 		mathElementsRelationsNotEqual.click();
+		sleep(1);
 		typeKeys("a");
 		app.dispatch(".uno:NextMark");
 		typeKeys("b");
@@ -167,6 +168,7 @@ public class FormulaInDifferentWays {
 		// commands window
 		mathElementsUnaryBinary.click();
 		mathElementsUnaryBinaryPlus.click();
+		sleep(1);
 		typeKeys("a"); // "+a";
 
 		// Undo and verify if it works fine

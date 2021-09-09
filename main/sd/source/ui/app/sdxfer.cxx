@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -119,7 +119,7 @@ SdTransferable::SdTransferable( SdDrawDocument* pSrcDoc, ::sd::View* pWorkView, 
 ,	mbPageTransferable( sal_False )
 ,	mbPageTransferablePersistent( sal_False )
 ,	mbIsUnoObj( false )
-,   maUserData()
+,	maUserData()
 {
 	if( mpSourceDoc )
 		StartListening( *mpSourceDoc );
@@ -127,8 +127,8 @@ SdTransferable::SdTransferable( SdDrawDocument* pSrcDoc, ::sd::View* pWorkView, 
 	if( pWorkView )
 		StartListening( *pWorkView );
 
-    if( !mbLateInit )
-	    CreateData();
+	if( !mbLateInit )
+		CreateData();
 }
 
 // -----------------------------------------------------------------------------
@@ -143,19 +143,19 @@ SdTransferable::~SdTransferable()
 
 	Application::GetSolarMutex().acquire();
 
-    ObjectReleased();
+	ObjectReleased();
 
-    for( void* p = maPageBookmarks.First(); p; p = maPageBookmarks.Next() )
-        delete static_cast< String* >( p );
+	for( void* p = maPageBookmarks.First(); p; p = maPageBookmarks.Next() )
+		delete static_cast< String* >( p );
 
 	if( mbOwnView )
 		delete mpSdViewIntern;
 
-    delete mpOLEDataHelper;
+	delete mpOLEDataHelper;
 
 	if( maDocShellRef.Is() )
 	{
-        SfxObjectShell* pObj = maDocShellRef;
+		SfxObjectShell* pObj = maDocShellRef;
 		::sd::DrawDocShell* pDocSh = static_cast< ::sd::DrawDocShell*>(pObj);
 		pDocSh->DoClose();
 	}
@@ -181,7 +181,7 @@ void SdTransferable::CreateObjectReplacement( SdrObject* pObj )
 {
 	if( pObj )
 	{
-        delete mpOLEDataHelper, mpOLEDataHelper = NULL;
+		delete mpOLEDataHelper, mpOLEDataHelper = NULL;
 		delete mpGraphic, mpGraphic = NULL;
 		delete mpBookmark, mpBookmark = NULL;
 		delete mpImageMap, mpImageMap = NULL;
@@ -374,10 +374,10 @@ void SdTransferable::CreateData()
 
 sal_Bool lcl_HasOnlyControls( SdrModel* pModel )
 {
-    sal_Bool bOnlyControls = sal_False;         // default if there are no objects
+	sal_Bool bOnlyControls = sal_False; // default if there are no objects
 
-    if ( pModel )
-    {
+	if ( pModel )
+	{
         SdrPage* pPage = pModel->GetPage(0);
         if (pPage)
         {
@@ -385,7 +385,7 @@ sal_Bool lcl_HasOnlyControls( SdrModel* pModel )
             SdrObject* pObj = aIter.Next();
             if ( pObj )
             {
-                bOnlyControls = sal_True;   // only set if there are any objects at all
+                bOnlyControls = sal_True; // only set if there are any objects at all
                 while ( pObj )
                 {
                     if (!pObj->ISA(SdrUnoObj))
@@ -397,20 +397,20 @@ sal_Bool lcl_HasOnlyControls( SdrModel* pModel )
                 }
             }
         }
-    }
+	}
 
-    return bOnlyControls;
+	return bOnlyControls;
 }
 
 // -----------------------------------------------------------------------------
 
 bool lcl_HasOnlyOneTable( SdrModel* pModel )
 {
-    if ( pModel )
-    {
-        SdrPage* pPage = pModel->GetPage(0);
-        if (pPage && pPage->GetObjCount() == 1 )
-        {
+	if ( pModel )
+	{
+		SdrPage* pPage = pModel->GetPage(0);
+		if (pPage && pPage->GetObjCount() == 1 )
+		{
 			if( dynamic_cast< sdr::table::SdrTableObj* >( pPage->GetObj(0) ) != 0 )
 				return true;
 		}
@@ -422,26 +422,26 @@ bool lcl_HasOnlyOneTable( SdrModel* pModel )
 
 void SdTransferable::AddSupportedFormats()
 {
-    if( !mbPageTransferable || mbPageTransferablePersistent )
-    {
-        if( !mbLateInit )
-            CreateData();
+	if( !mbPageTransferable || mbPageTransferablePersistent )
+	{
+		if( !mbLateInit )
+			CreateData();
 
-	    if( mpObjDesc )
-            AddFormat( SOT_FORMATSTR_ID_OBJECTDESCRIPTOR );
+		if( mpObjDesc )
+			AddFormat( SOT_FORMATSTR_ID_OBJECTDESCRIPTOR );
 
-        if( mpOLEDataHelper )
-	    {
-		    AddFormat( SOT_FORMATSTR_ID_EMBED_SOURCE );
+		if( mpOLEDataHelper )
+		{
+			AddFormat( SOT_FORMATSTR_ID_EMBED_SOURCE );
 
-		    DataFlavorExVector				aVector( mpOLEDataHelper->GetDataFlavorExVector() );
-		    DataFlavorExVector::iterator	aIter( aVector.begin() ), aEnd( aVector.end() );
+			DataFlavorExVector				aVector( mpOLEDataHelper->GetDataFlavorExVector() );
+			DataFlavorExVector::iterator	aIter( aVector.begin() ), aEnd( aVector.end() );
 
-		    while( aIter != aEnd )
-			    AddFormat( *aIter++ );
-	    }
-	    else if( mpGraphic )
-	    {
+			while( aIter != aEnd )
+				AddFormat( *aIter++ );
+		}
+		else if( mpGraphic )
+		{
 			// #i25616#
 		    AddFormat( SOT_FORMATSTR_ID_DRAWING );
 
@@ -495,7 +495,7 @@ sal_Bool SdTransferable::GetData( const DataFlavor& rFlavor )
 	sal_uInt32	nFormat = SotExchange::GetFormat( rFlavor );
 	sal_Bool	bOK = sal_False;
 
-    CreateData();
+	CreateData();
 
 	if( nFormat == SOT_FORMAT_RTF && lcl_HasOnlyOneTable( mpSdDrawDocument ) )
 	{
@@ -660,7 +660,7 @@ sal_Bool SdTransferable::WriteObject( SotStorageStreamRef& rxOStm, void* pObject
 			}
 			catch( Exception& )
 			{
-				DBG_ERROR( "sd::SdTransferable::WriteObject(), exception catched!" );
+				DBG_ERROR( "sd::SdTransferable::WriteObject(), exception caught!" );
 				bRet = sal_False;
 			}
 		}
@@ -740,28 +740,28 @@ void SdTransferable::SetObjectDescriptor( const TransferableObjectDescriptor& rO
 {
 	delete mpObjDesc;
 	mpObjDesc = new TransferableObjectDescriptor( rObjDesc );
-    PrepareOLE( rObjDesc );
+	PrepareOLE( rObjDesc );
 }
 
 // -----------------------------------------------------------------------------
 
 void SdTransferable::SetPageBookmarks( const List& rPageBookmarks, sal_Bool bPersistent )
 {
-    if( mpSourceDoc )
-    {
-	    if( mpSdViewIntern )
-		    mpSdViewIntern->HideSdrPage();
+	if( mpSourceDoc )
+	{
+		if( mpSdViewIntern )
+			mpSdViewIntern->HideSdrPage();
 
 		// #116168#
-        mpSdDrawDocument->ClearModel(sal_False);
+		mpSdDrawDocument->ClearModel(sal_False);
 
 		mpPageDocShell = NULL;
 
-        for( void* p = maPageBookmarks.First(); p; p = maPageBookmarks.Next() )
+		for( void* p = maPageBookmarks.First(); p; p = maPageBookmarks.Next() )
             delete static_cast< String* >( p );
 
-        if( bPersistent )
-        {
+		if( bPersistent )
+		{
             mpSdDrawDocument->CreateFirstPages(mpSourceDoc);
             mpSdDrawDocument->InsertBookmarkAsPage( const_cast< List* >( &rPageBookmarks ), NULL, sal_False, sal_True, 1, sal_True, mpSourceDoc->GetDocSh(), sal_True, sal_True, sal_False );
         }
@@ -773,8 +773,8 @@ void SdTransferable::SetPageBookmarks( const List& rPageBookmarks, sal_Bool bPer
                 maPageBookmarks.Insert( new String( *static_cast< String* >( rPageBookmarks.GetObject( i ) ) ), LIST_APPEND );
         }
 
-	    if( mpSdViewIntern && mpSdDrawDocument )
-	    {
+		if( mpSdViewIntern && mpSdDrawDocument )
+		{
 		    SdPage* pPage = mpSdDrawDocument->GetSdPage( 0, PK_STANDARD );
 
 		    if( pPage )
@@ -784,7 +784,7 @@ void SdTransferable::SetPageBookmarks( const List& rPageBookmarks, sal_Bool bPer
 	    }
 
         // set flags for page transferable; if ( mbPageTransferablePersistent == sal_False ),
-        // don't offer any formats => it's just for internal puposes
+        // don't offer any formats => it's just for internal purposes
         mbPageTransferable = sal_True;
         mbPageTransferablePersistent = bPersistent;
     }
@@ -794,16 +794,16 @@ void SdTransferable::SetPageBookmarks( const List& rPageBookmarks, sal_Bool bPer
 
 sal_Int64 SAL_CALL SdTransferable::getSomething( const ::com::sun::star::uno::Sequence< sal_Int8 >& rId ) throw( ::com::sun::star::uno::RuntimeException )
 {
-    sal_Int64 nRet;
+	sal_Int64 nRet;
 
-    if( ( rId.getLength() == 16 ) &&
-        ( 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), rId.getConstArray(), 16 ) ) )
-    {
-		nRet = sal::static_int_cast<sal_Int64>(reinterpret_cast<sal_IntPtr>(this));
-    }
-    else
+	if( ( rId.getLength() == 16 ) &&
+		( 0 == rtl_compareMemory( getUnoTunnelId().getConstArray(), rId.getConstArray(), 16 ) ) )
 	{
-        nRet = 0;
+		nRet = sal::static_int_cast<sal_Int64>(reinterpret_cast<sal_IntPtr>(this));
+	}
+	else
+	{
+		nRet = 0;
 	}
 
 	return nRet;
@@ -814,7 +814,7 @@ sal_Int64 SAL_CALL SdTransferable::getSomething( const ::com::sun::star::uno::Se
 
 SdDrawDocument* SdTransferable::GetSourceDoc (void) const
 {
-    return mpSourceDoc;
+	return mpSourceDoc;
 }
 
 
@@ -822,7 +822,7 @@ SdDrawDocument* SdTransferable::GetSourceDoc (void) const
 
 void SdTransferable::AddUserData (const ::boost::shared_ptr<UserData>& rpData)
 {
-    maUserData.push_back(rpData);
+	maUserData.push_back(rpData);
 }
 
 
@@ -830,7 +830,7 @@ void SdTransferable::AddUserData (const ::boost::shared_ptr<UserData>& rpData)
 
 void SdTransferable::RemoveUserData (const ::boost::shared_ptr<UserData>& rpData)
 {
-    maUserData.erase(::std::find(maUserData.begin(), maUserData.end(), rpData));
+	maUserData.erase(::std::find(maUserData.begin(), maUserData.end(), rpData));
 }
 
 
@@ -838,7 +838,7 @@ void SdTransferable::RemoveUserData (const ::boost::shared_ptr<UserData>& rpData
 
 sal_Int32 SdTransferable::GetUserDataCount (void) const
 {
-    return maUserData.size();
+	return maUserData.size();
 }
 
 
@@ -846,10 +846,10 @@ sal_Int32 SdTransferable::GetUserDataCount (void) const
 
 ::boost::shared_ptr<SdTransferable::UserData> SdTransferable::GetUserData (const sal_Int32 nIndex) const
 {
-    if (nIndex>=0 && nIndex<sal_Int32(maUserData.size()))
-        return maUserData[nIndex];
-    else
-        return ::boost::shared_ptr<UserData>();
+	if (nIndex>=0 && nIndex<sal_Int32(maUserData.size()))
+		return maUserData[nIndex];
+	else
+		return ::boost::shared_ptr<UserData>();
 }
 
 
@@ -859,30 +859,30 @@ sal_Int32 SdTransferable::GetUserDataCount (void) const
 
 const ::com::sun::star::uno::Sequence< sal_Int8 >& SdTransferable::getUnoTunnelId()
 {
-    static ::com::sun::star::uno::Sequence< sal_Int8 > aSeq;
+	static ::com::sun::star::uno::Sequence< sal_Int8 > aSeq;
 
 	if( !aSeq.getLength() )
 	{
 		static osl::Mutex   aCreateMutex;
-    	osl::MutexGuard     aGuard( aCreateMutex );
+		osl::MutexGuard     aGuard( aCreateMutex );
 
 		aSeq.realloc( 16 );
-    	rtl_createUuid( reinterpret_cast< sal_uInt8* >( aSeq.getArray() ), 0, sal_True );
+		rtl_createUuid( reinterpret_cast< sal_uInt8* >( aSeq.getArray() ), 0, sal_True );
 	}
 
-    return aSeq;
+	return aSeq;
 }
 
 // -----------------------------------------------------------------------------
 
 SdTransferable* SdTransferable::getImplementation( const Reference< XInterface >& rxData ) throw()
 {
-    try
-    {
+	try
+	{
 		Reference< ::com::sun::star::lang::XUnoTunnel > xUnoTunnel( rxData, UNO_QUERY_THROW );
 		return reinterpret_cast<SdTransferable*>(sal::static_int_cast<sal_uIntPtr>(xUnoTunnel->getSomething( SdTransferable::getUnoTunnelId()) ) );
-    }
-    catch( const ::com::sun::star::uno::Exception& )
+	}
+	catch( const ::com::sun::star::uno::Exception& )
 	{
 	}
 	return NULL;
@@ -919,16 +919,16 @@ void SdTransferable::Notify( SfxBroadcaster& rBC, const SfxHint& rHint )
 
 sal_Bool SdTransferable::SetTableRTF( SdDrawDocument* pModel, const DataFlavor& rFlavor)
 {
-    if ( pModel )
-    {
-        SdrPage* pPage = pModel->GetPage(0);
-        if (pPage && pPage->GetObjCount() == 1 )
-        {
+	if ( pModel )
+	{
+		SdrPage* pPage = pModel->GetPage(0);
+		if (pPage && pPage->GetObjCount() == 1 )
+		{
 			sdr::table::SdrTableObj* pTableObj = dynamic_cast< sdr::table::SdrTableObj* >( pPage->GetObj(0) );
 			if( pTableObj )
 			{
 				SvMemoryStream aMemStm( 65535, 65535 );
-				sdr::table::SdrTableObj::ExportAsRTF( aMemStm, *pTableObj );				
+				sdr::table::SdrTableObj::ExportAsRTF( aMemStm, *pTableObj );
 				return SetAny( Any( Sequence< sal_Int8 >( reinterpret_cast< const sal_Int8* >( aMemStm.GetData() ), aMemStm.Seek( STREAM_SEEK_TO_END ) ) ), rFlavor );
 			}
 		}

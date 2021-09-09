@@ -111,7 +111,7 @@ public:
 		@param		_nResizeFactor		the factor which is used for resizing the sequence when necessary. In every
 										resize step, the new sequence size will be calculated by multiplying the current
 										size with this factor, rounded off to the next multiple of 4.
-		@param		_nMinimumResize		the minmal number of bytes which is additionally allocated on resizing
+		@param		_nMinimumResize		the minimal number of bytes which is additionally allocated on resizing
 		@param		_nMaximumResize		as the growth of the stream size is exponential, you may want to specify a
 										maxmimum amount of memory which the sequence will grow by. If -1 is used,
 										no limit is applied

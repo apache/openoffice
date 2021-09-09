@@ -945,7 +945,7 @@ void LayoutManager::implts_backupProgressBarWrapper()
     m_xProgressBarBackup = m_aProgressBarElement.m_xUIElement;
 
     // remove the relation between this old progress bar and our old status bar.
-    // Otherwhise we work on disposed items ...
+    // Otherwise we work on disposed items ...
     // The internal used ProgressBarWrapper can handle a NULL reference.
     if ( m_xProgressBarBackup.is() )
     {
@@ -2487,7 +2487,7 @@ sal_Bool LayoutManager::implts_resizeContainerWindow( const awt::Size& rContaine
         if (( rContainerSize.Width > aWorkArea.Width ) || ( rContainerSize.Height > aWorkArea.Height ))
             return sal_False;
         // Strictly, this is not correct. If we have a multi-screen display (css.awt.DisplayAccess.MultiDisplay == true),
-        // the the "effective work area" would be much larger than the work area of a single display, since we could in theory
+        // the "effective work area" would be much larger than the work area of a single display, since we could in theory
         // position the container window across multiple screens.
         // However, this should suffice as a heuristics here ... (nobody really wants to check whether the different screens are
         // stacked horizontally or vertically, whether their work areas can really be combined, or are separated by non-work-areas,

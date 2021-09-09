@@ -2746,7 +2746,7 @@ SfxMedium::GetAuthenticationInteractionHandler()
             return xHandler;
     }
 
-    // otherwhise return cached default handler ... if it exist.
+    // otherwise return cached default handler ... if it exist.
     if ( pImp->xCredentialInteraction.is() )
         return pImp->xCredentialInteraction;
 
@@ -2784,7 +2784,7 @@ SfxMedium::GetInteractionHandler()
     if ( !pImp->bAllowDefaultIntHdl )
         return ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >();
 
-    // otherwhise return cached default handler ... if it exist.
+    // otherwise return cached default handler ... if it exist.
     if ( pImp->xInteraction.is() )
         return pImp->xInteraction;
 
@@ -3333,7 +3333,7 @@ SfxMedium::~SfxMedium()
 {
     /* Attention
         Don't enable CancelTransfers() till you know that the writer/web has changed his asynchronous load
-        behaviour. Otherwhise may StyleSheets inside a html file will be loaded at the right time.
+        behaviour. Otherwise maybe StyleSheets inside a html file will not be loaded at the right time.
         => further the help will be empty then ... #100490#
      */
     //CancelTransfers();

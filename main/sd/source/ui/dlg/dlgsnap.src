@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -130,7 +130,7 @@ ModalDialog DLG_SNAPLINE
 		TabStop = TRUE ;
 		RadioButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "hlppoint.png" ; };
+			ImageBitmap = Bitmap {File = "hlppoint.png" ;} ;
 		};
 	};
 	ImageRadioButton RB_VERTICAL
@@ -142,7 +142,7 @@ ModalDialog DLG_SNAPLINE
 		TabStop = TRUE ;
 		RadioButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "hlplvert.png" ; };
+			ImageBitmap = Bitmap {File = "hlplvert.png" ;} ;
 		};
 	};
 	ImageRadioButton RB_HORIZONTAL
@@ -154,22 +154,24 @@ ModalDialog DLG_SNAPLINE
 		TabStop = TRUE ;
 		RadioButtonImage = Image
 		{
-			ImageBitmap = Bitmap { File = "hlplhorz.png" ; };
+			ImageBitmap = Bitmap {File = "hlplhorz.png" ;} ;
 		};
 	};
 
 	Image BMP_POINT_H
 	{
-		ImageBitmap = Bitmap { File = "hlppoint_h.png" ; };
+		ImageBitmap = Bitmap {File = "hlppoint_h.png" ;} ;
 	};
 
 	Image BMP_VERTICAL_H
 	{
-		ImageBitmap = Bitmap { File = "hlplvert_h.png" ; };
+		ImageBitmap = Bitmap {File = "hlplvert_h.png" ;} ;
 	};
 
 	Image BMP_HORIZONTAL_H
 	{
-		ImageBitmap = Bitmap { File = "hlplhorz_h.png" ; };
+		ImageBitmap = Bitmap {File = "hlplhorz_h.png" ;} ;
 	};
 };
+
+// ********************************************************************** EOF

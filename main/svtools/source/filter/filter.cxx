@@ -566,7 +566,7 @@ static sal_Bool ImpPeekGraphicFormat( SvStream& rStream, String& rFormatExtensio
 			
 			if (x1 > x2 || y1 > y2 || // bad bdbox
 			    (x1 == x2 && y1 == y2) || // 1 pixel picture
-			    x2-x1 > 2048 || y2-y1 > 2048 ) // picture anormaly big
+			    x2-x1 > 2048 || y2-y1 > 2048 ) // picture abnormally big
 			  bdBoxOk = sal_False;
 
 			// read version op

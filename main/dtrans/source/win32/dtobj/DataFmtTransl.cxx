@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@
 #if defined _MSC_VER
 #pragma warning(pop)
 #endif
- 
+
 
 //------------------------------------------------------------------------
 // namespace directives
@@ -79,52 +79,52 @@ const OUString HTML_FORMAT_NAME_WINDOWS = OUString::createFromAscii( "HTML Forma
 const OUString HTML_FORMAT_NAME_SOFFICE = OUString::createFromAscii( "HTML (HyperText Markup Language)" );
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CDataFormatTranslator::CDataFormatTranslator( const Reference< XMultiServiceFactory >& aServiceManager ) :
 	m_SrvMgr( aServiceManager )
 {
 	m_XDataFormatTranslator = Reference< XDataFormatTranslator >(
-		m_SrvMgr->createInstance( OUString::createFromAscii( "com.sun.star.datatransfer.DataFormatTranslator" ) ), UNO_QUERY );	
+		m_SrvMgr->createInstance( OUString::createFromAscii( "com.sun.star.datatransfer.DataFormatTranslator" ) ), UNO_QUERY );
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc CDataFormatTranslator::getFormatEtcFromDataFlavor( const DataFlavor& aDataFlavor ) const
-{	
+{
 	sal_Int32 cf = CF_INVALID;
 
 	try
 	{
-        if( m_XDataFormatTranslator.is( ) )
-        {
-		    Any aFormat = m_XDataFormatTranslator->getSystemDataTypeFromDataFlavor( aDataFlavor );
-		    
-		    if ( aFormat.hasValue( ) )
-		    {
-			    if ( aFormat.getValueType( ) == CPPUTYPE_SALINT32 )
-			    {
-				    aFormat >>= cf;	
-				    OSL_ENSURE( CF_INVALID != cf, "Invalid Clipboard format delivered" );
-			    }
-			    else if ( aFormat.getValueType( ) == CPPUTYPE_OUSTRING )
-			    {
-				    OUString aClipFmtName;
-				    aFormat >>= aClipFmtName;
-		    
-				    OSL_ASSERT( aClipFmtName.getLength( ) );
-				    cf = RegisterClipboardFormatW( reinterpret_cast<LPCWSTR>(aClipFmtName.getStr( )) );			
+		if( m_XDataFormatTranslator.is( ) )
+		{
+			Any aFormat = m_XDataFormatTranslator->getSystemDataTypeFromDataFlavor( aDataFlavor );
 
-				    OSL_ENSURE( CF_INVALID != cf, "RegisterClipboardFormat failed" );
-			    }
-			    else
-				    OSL_ENSURE( sal_False, "Wrong Any-Type detected" );
-		    }
-        }
-    }
+			if ( aFormat.hasValue( ) )
+			{
+				if ( aFormat.getValueType( ) == CPPUTYPE_SALINT32 )
+				{
+					aFormat >>= cf;
+					OSL_ENSURE( CF_INVALID != cf, "Invalid Clipboard format delivered" );
+				}
+				else if ( aFormat.getValueType( ) == CPPUTYPE_OUSTRING )
+				{
+					OUString aClipFmtName;
+					aFormat >>= aClipFmtName;
+
+					OSL_ASSERT( aClipFmtName.getLength( ) );
+					cf = RegisterClipboardFormatW( reinterpret_cast<LPCWSTR>(aClipFmtName.getStr( )) );
+
+					OSL_ENSURE( CF_INVALID != cf, "RegisterClipboardFormat failed" );
+				}
+				else
+					OSL_ENSURE( sal_False, "Wrong Any-Type detected" );
+			}
+		}
+	}
 	catch( ... )
 	{
 		OSL_ENSURE( sal_False, "Unexpected error" );
@@ -134,13 +134,13 @@ CFormatEtc CDataFormatTranslator::getFormatEtcFromDataFlavor( const DataFlavor& 
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 DataFlavor CDataFormatTranslator::getDataFlavorFromFormatEtc( const FORMATETC& aFormatEtc, LCID lcid ) const
 {
 	DataFlavor aFlavor;
-   
+
 	try
 	{
 		CLIPFORMAT aClipformat = aFormatEtc.cfFormat;
@@ -149,37 +149,37 @@ DataFlavor CDataFormatTranslator::getDataFlavorFromFormatEtc( const FORMATETC& a
 		aAny <<= static_cast< sal_Int32 >( aClipformat );
 
 		if ( isOemOrAnsiTextFormat( aClipformat ) )
-		{	
+		{
 			aFlavor.MimeType             = TEXT_PLAIN_CHARSET;
 			aFlavor.MimeType            += getTextCharsetFromLCID( lcid, aClipformat );
 
 			aFlavor.HumanPresentableName = HPNAME_OEM_ANSI_TEXT;
-			aFlavor.DataType             = CPPUTYPE_SEQSALINT8;			
+			aFlavor.DataType             = CPPUTYPE_SEQSALINT8;
 		}
 		else if ( CF_INVALID != aClipformat )
 		{
-            if ( m_XDataFormatTranslator.is( ) )
-            {
-			    aFlavor = m_XDataFormatTranslator->getDataFlavorFromSystemDataType( aAny );
+			if ( m_XDataFormatTranslator.is( ) )
+			{
+				aFlavor = m_XDataFormatTranslator->getDataFlavorFromSystemDataType( aAny );
 
-			    if ( !aFlavor.MimeType.getLength( ) )
-			    {
-				    // lookup of DataFlavor from clipboard format id
-				    // failed, so we try to resolve via clipboard
-				    // format name
-				    OUString clipFormatName = getClipboardFormatName( aClipformat );
-				    
-				    // if we could not get a clipboard format name an
-				    // error must have occurred or it is a standard
-				    // clipboard format that we don't translate, e.g.
-				    // CF_BITMAP (the office only uses CF_DIB)
-				    if ( clipFormatName.getLength( ) )
-				    {
-					    aAny <<= clipFormatName;
-					    aFlavor = m_XDataFormatTranslator->getDataFlavorFromSystemDataType( aAny );
-				    }
-			    }
-            }
+				if ( !aFlavor.MimeType.getLength( ) )
+				{
+					// lookup of DataFlavor from clipboard format id
+					// failed, so we try to resolve via clipboard
+					// format name
+					OUString clipFormatName = getClipboardFormatName( aClipformat );
+
+					// if we could not get a clipboard format name an
+					// error must have occurred or it is a standard
+					// clipboard format that we don't translate, e.g.
+					// CF_BITMAP (the office only uses CF_DIB)
+					if ( clipFormatName.getLength( ) )
+					{
+						aAny <<= clipFormatName;
+						aFlavor = m_XDataFormatTranslator->getDataFlavorFromSystemDataType( aAny );
+					}
+				}
+			}
 		}
 	}
 	catch( ... )
@@ -191,7 +191,7 @@ DataFlavor CDataFormatTranslator::getDataFlavorFromFormatEtc( const FORMATETC& a
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc SAL_CALL CDataFormatTranslator::getFormatEtcForClipformatName( const OUString& aClipFmtName ) const
@@ -205,7 +205,7 @@ CFormatEtc SAL_CALL CDataFormatTranslator::getFormatEtcForClipformatName( const 
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 OUString CDataFormatTranslator::getClipboardFormatName( CLIPFORMAT aClipformat ) const
@@ -219,7 +219,7 @@ OUString CDataFormatTranslator::getClipboardFormatName( CLIPFORMAT aClipformat )
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 CFormatEtc SAL_CALL CDataFormatTranslator::getFormatEtcForClipformat( CLIPFORMAT cf ) const
@@ -240,23 +240,23 @@ CFormatEtc SAL_CALL CDataFormatTranslator::getFormatEtcForClipformat( CLIPFORMAT
 		fetc.setTymed( TYMED_HGLOBAL /*| TYMED_ISTREAM*/ );
 	}
 
-    /*
-        hack: in order to paste urls copied by Internet Explorer
-        with "copy link" we set the lindex member to 0 
-        but if we really want to support CFSTR_FILECONTENT and
-        the accompany format CFSTR_FILEDESCRIPTOR (FileGroupDescriptor)
-        the client of the clipboard service has to provide a id 
-        of which FileContents it wants to paste
-        see MSDN: "Handling Shell Data Transfer Scenarios"
-    */
-    if ( cf == RegisterClipboardFormatA( CFSTR_FILECONTENTS ) )
-         fetc.setLindex( 0 );
+	/*
+		hack: in order to paste urls copied by Internet Explorer
+		with "copy link" we set the lindex member to 0
+		but if we really want to support CFSTR_FILECONTENT and
+		the accompany format CFSTR_FILEDESCRIPTOR (FileGroupDescriptor)
+		the client of the clipboard service has to provide a id
+		of which FileContents it wants to paste
+		see MSDN: "Handling Shell Data Transfer Scenarios"
+	*/
+	if ( cf == RegisterClipboardFormatA( CFSTR_FILECONTENTS ) )
+		fetc.setLindex( 0 );
 
 	return fetc;
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Bool SAL_CALL CDataFormatTranslator::isOemOrAnsiTextFormat( CLIPFORMAT cf ) const
@@ -265,7 +265,7 @@ sal_Bool SAL_CALL CDataFormatTranslator::isOemOrAnsiTextFormat( CLIPFORMAT cf ) 
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Bool SAL_CALL CDataFormatTranslator::isUnicodeTextFormat( CLIPFORMAT cf ) const
@@ -274,16 +274,16 @@ sal_Bool SAL_CALL CDataFormatTranslator::isUnicodeTextFormat( CLIPFORMAT cf ) co
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
-sal_Bool SAL_CALL CDataFormatTranslator::isTextFormat( CLIPFORMAT cf ) const 
+sal_Bool SAL_CALL CDataFormatTranslator::isTextFormat( CLIPFORMAT cf ) const
 {
 	return ( isOemOrAnsiTextFormat( cf ) || isUnicodeTextFormat( cf ) );
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Bool SAL_CALL CDataFormatTranslator::isHTMLFormat( CLIPFORMAT cf ) const
@@ -293,17 +293,17 @@ sal_Bool SAL_CALL CDataFormatTranslator::isHTMLFormat( CLIPFORMAT cf ) const
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 sal_Bool SAL_CALL CDataFormatTranslator::isTextHtmlFormat( CLIPFORMAT cf ) const
 {
-	OUString clipFormatName = getClipboardFormatName( cf );	
+	OUString clipFormatName = getClipboardFormatName( cf );
 	return ( clipFormatName.equalsIgnoreAsciiCase( HTML_FORMAT_NAME_SOFFICE ) );
 }
 
 //------------------------------------------------------------------------
-// 
+//
 //------------------------------------------------------------------------
 
 OUString SAL_CALL CDataFormatTranslator::getTextCharsetFromLCID( LCID lcid, CLIPFORMAT aClipformat ) const
@@ -312,21 +312,21 @@ OUString SAL_CALL CDataFormatTranslator::getTextCharsetFromLCID( LCID lcid, CLIP
 
 	OUString charset;
 	if ( CF_TEXT == aClipformat )
-	{							
-		charset = getMimeCharsetFromLocaleId( 
-					lcid, 
-					LOCALE_IDEFAULTANSICODEPAGE, 
+	{
+		charset = getMimeCharsetFromLocaleId(
+					lcid,
+					LOCALE_IDEFAULTANSICODEPAGE,
 					PRE_WINDOWS_CODEPAGE );
 	}
 	else if ( CF_OEMTEXT == aClipformat )
-	{						
-		charset = getMimeCharsetFromLocaleId( 
-					lcid, 
-					LOCALE_IDEFAULTCODEPAGE, 
-					PRE_OEM_CODEPAGE );					
+	{
+		charset = getMimeCharsetFromLocaleId(
+					lcid,
+					LOCALE_IDEFAULTCODEPAGE,
+					PRE_OEM_CODEPAGE );
 	}
 	else // CF_UNICODE
 		OSL_ASSERT( sal_False );
-	
+
 	return charset;
 }

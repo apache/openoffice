@@ -28,7 +28,7 @@ AC_ARG_WITH(dmake-path,
 ])
 AC_ARG_WITH(dmake-url,
 [  --with-dmake-url=<URL>   Specify the location of downloadable dmake source code. For example:
-                          https://sourceforge.net/projects/oooextras.mirror/files/dmake-4.12.tar.bz2
+                          https://github.com/jimjag/dmake/archive/v4.13.1/dmake-4.13.1.tar.gz
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
@@ -118,20 +118,18 @@ AC_ARG_WITH(afms,
                           are known to be available.
 ],,)
 AC_ARG_ENABLE(epm,
-[  --disable-epm           AOO includes self-packaging code, that requires
-                          epm, however epm is useless for large scale
-                          package building.
+[  --disable-epm           AOO includes self-packaging code, that requires EPM.
 ],,enable_epm="yes")
 AC_ARG_WITH(epm,
-[  --with-epm		  Decides which epm to use. Default is to use
-			  the one from the system if one is built. When
+[  --with-epm		  Decides which EPM to use. Default is to use
+			  the one installed on the system if one is there. When
 			  either this is not there or you say =internal
-			  epm will be built.
+			  EPM will be built.
 ],,)
 AC_ARG_WITH(epm-url,
 [  --with-epm-url=<URL>    Specify the location of downloadable epm source code. For example:
-                            https://sourceforge.net/projects/oooextras.mirror/files/epm-3.7.tar.gz
-                          Version 3.7 or later is required. Note that epm is under GPL license.
+                            https://github.com/jimjag/epm/archive/v5.0.0/epm-5.0.0.tar.gz
+                          Version 5.0.0 or later is required.
 ],[  EPM_URL="$withval"
 ])
 AC_ARG_WITH(package-format,
@@ -836,13 +834,13 @@ AC_ARG_WITH(intro-bitmaps,
                           commas), the order means priority of fallback if the
                           first does not exist (in the installed tree).
 
-                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.bmp
+                          Usage: --with-intro-bitmaps=/path/my_ooo_intro.png
 ],,)
 AC_ARG_WITH(about-bitmaps,
 [  --with-about-bitmaps    Similarly to --with-intro-bitmaps, this allows
                           specification of bitmaps for the About box.
 
-                          Usage: --with-about-bitmaps=/path/my_ooo_about.bmp
+                          Usage: --with-about-bitmaps=/path/my_ooo_about.png
 ],,)
 AC_ARG_WITH(vendor,
 [  --with-vendor           Set vendor of the build.
@@ -933,8 +931,14 @@ AC_ARG_WITH(arm-target,
 AC_ARG_WITH(macosx-target,
 [  --macosx-target            The minimal macOS/OSX deployment and build target
 
-                              Usage: --with-macosx-target=10.7
-],with_macosx_target=$withval,with_macosx_target=10.7)
+                              Usage: --with-macosx-target=10.9
+],with_macosx_target=$withval,with_macosx_target=10.9)
+AC_ARG_WITH(macosx-sdk,
+[  --macosx-sdk            The macOS SDK to build against
+
+                              Usage: --with-macosx-sdk=10.11
+                              (or full path: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk)
+],with_macosx_sdk=$withval,)
 AC_ARG_WITH(rat-scan,
 [  --with-rat-scan         Scan source code for license headers.
                           Use as --with-rat-scan to automatically download pre-built Rat binaries.
@@ -1150,14 +1154,16 @@ case "$build_os" in
          	   echo "Disabling gtk-quickstarter - not supported on Mac. Use --disable-systray" >>warn
          	   enable_systray=no
       		fi
+		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
 		if test ! -n "$CC"; then
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -arch x86_64"
+		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
+		# FIXME: Assumes 10.x, breaks w/ Big Sur
 		_osx_version="10.`expr $_darwin_version - 4`"
 		AC_MSG_NOTICE([Detected Darwin version: $_darwin_version ($_osx_version)])
 		;;
@@ -1322,7 +1328,7 @@ if test -n "$enable_werror" && test "$enable_werror" != "no"; then
    ENABLE_WERROR="TRUE"
    AC_MSG_RESULT([yes])
    AC_MSG_WARN([Turning warnings to errors has no effect in modules or])
-   AC_MSG_WARN([on platforms where it has been disabled explicitely])
+   AC_MSG_WARN([on platforms where it has been disabled explicitly])
    echo "Turning warnings to errors has no effect in modules or on platforms where it has been disabled explicitly" >> warn
 else
    ENABLE_WERROR="FALSE"
@@ -2237,15 +2243,15 @@ case $COM in
 		# The version in tg_compv.mk for darwin does not look correct
 		# CCNUMVER = `echo ${CCVER} | sed -e"s/\.//";
 		case "$build_os" in
-			darwin*) # Mac OS X
-				COMID="s5abi";
-				COMNAME="s5abi";
-				;;
-			*)
-				COMID="gcc3";
-				COMNAME="gcc3";
-				;;
-		esac
+ 			darwin*) # Mac OS X
+ 				COMID="s5abi";
+ 				COMNAME="s5abi";
+ 				;;
+ 			*)
+ 				COMID="gcc3";
+ 				COMNAME="gcc3";
+ 				;;
+ 		esac
 		;;
 	MSC)
 		CCVER=`${CC} 2>&1 | $AWK -f ${_solenv}/bin/getcompver.awk`;
@@ -3419,44 +3425,24 @@ if test "$enable_epm" = "yes"; then
          BUILD_TYPE="$BUILD_TYPE EPM"
       else
          if test "$EPM" = "no" ; then
-	    AC_MSG_ERROR([no. Install ESP Package Manager (https://www.msweet.org/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
-	 else
-	    # Gentoo has some epm which is something different...
-            AC_MSG_CHECKING([whether the found epm is the right epm])
-            if $EPM | $GREP "ESP Package Manager" >/dev/null 2>/dev/null; then
+	         AC_MSG_ERROR([no. Install ESP Package Manager (EPM) (https://jimjag.github.io/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-5.0.0 (or later) source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
+	      else
+	         # Gentoo has some epm which is something different...
+            AC_MSG_CHECKING([whether the found EPM is the right EPM])
+            if $EPM --version | $GREP "ESP Package Manager" >/dev/null 2>/dev/null; then
                AC_MSG_RESULT([yes])
             else
-	       AC_MSG_ERROR([no. Install ESP Package Manager (https://www.msweet.org/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-3.7 source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
+	            AC_MSG_ERROR([no. Install ESP Package Manager (https://jimjag.github.io/epm/) and/or specify the path to the right epm (--with-epm). Or specify an URL to an epm-5.0.0 (or later) source package (--with-epm-url); run configure with the --help option for a list of possible URLs.])
             fi
-            AC_MSG_CHECKING([epm version])
-            EPM_VERSION=`$EPM | $GREP 'ESP Package Manager' | cut -d' ' -f4 | $SED -e s/v//`
-	    if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "3" || \
-	       	    test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "3" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "7"; then
-               AC_MSG_RESULT([OK, >= 3.7])
+            AC_MSG_CHECKING([EPM version])
+            EPM_VERSION=`$EPM --version | $GREP 'ESP Package Manager' | cut -d' ' -f5 | $SED -e s/v//`
+	         if test "`echo $EPM_VERSION | cut -d'.' -f1`" -ge "5"; then
+               AC_MSG_RESULT([OK, >= 5.0])
                BUILD_EPM=NO
-	       if test "$_os" = "Darwin"; then
-	          _osxpkgbuild='no'
-	          AC_MSG_CHECKING([checking if OS X pkgbuild is supported])
-	          if test "`echo $EPM_VERSION | cut -d'.' -f1`" -gt "4" || \
-	       	     test "`echo $EPM_VERSION | cut -d'.' -f1`" -eq "4" -a "`echo $EPM_VERSION | cut -d'.' -f2`" -ge "3"; then
-                   AC_MSG_RESULT([OK, >= 4.3])
-                   _osxpkgbuild='yes'
-              else
-                  AC_MSG_CHECKING([which PackageMaker EPM thinks to use])
-        	      _pm=`strings $EPM | $GREP PackageMaker | cut -d" " -f1`
-        	      if test "$_pm" = "/Developer/Applications/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	         AC_MSG_ERROR([$_pm; PackageMaker expected in wrong path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-        	      elif test "$_pm" = "/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker"; then
-          	         AC_MSG_RESULT([$_pm, ok])
-        	      else # we never should get here, but go safe
-		             AC_MSG_ERROR([$_pm; PackageMaker expected in unknown path. Either patch your epm with the right path (/Developer/Applications/Utilities/PackageMaker.app/Contents/MacOS/PackageMaker)])
-		          fi
-		      fi
-	       fi
-	    else
-               AC_MSG_ERROR([too old. epm >= 3.7 is required.])
-	    fi
-      	 fi
+	         else
+               AC_MSG_ERROR([too old. EPM >= 5.0.0 is required.])
+	         fi
+      	fi
       fi
    fi
 
@@ -3560,7 +3546,7 @@ msi - Windows .msi
       fi
       AC_PATH_PROG(FAKEROOT, fakeroot, no)
       if test "$FAKEROOT" = "no"; then
-         AC_MSG_WARN([fakeroot recommended for deb creation. Will try with getuid.so hack.])
+         AC_MSG_ERROR([fakeroot needed for deb creation. Install fakeroot.])
       fi
    fi
    if echo "$PKGFORMAT" | $EGREP osx 2>&1 >/dev/null; then
@@ -3576,30 +3562,6 @@ msi - Windows .msi
       else
          AC_MSG_ERROR([PackageMaker needed to build OSX packages and you are not on OSX...])
        fi
-   fi
-   if echo "$PKGFORMAT" | $EGREP rpm 2>&1 >/dev/null || \
-      echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
-      	if test "$EPM" != "no" && test "$EPM" != "internal"; then
-               AC_MSG_CHECKING([whether epm is patched for AOOs needs])
-               if $GREP "Patched for .*OpenOffice" $EPM >/dev/null 2>/dev/null; then
-                  AC_MSG_RESULT([yes])
-               else
-                  AC_MSG_RESULT([no])
-                  if echo "$PKGFORMAT" | $GREP -q rpm; then
-                      _pt="rpm"
-                      AC_MSG_WARN([the rpms will need to be installed with --nodeps])
-                      echo "the rpms will need to be installed with --nodeps" >> warn
-                  else
-                      _pt="pkg"
-                  fi
-                  AC_MSG_WARN([the ${_pt}s will not be relocateable])
-                  echo "the ${_pt}s will not be relocatable" >> warn
-                  AC_MSG_WARN([if you want to make sure installation without --nodeps and
-                  relocation will work, you need to patch your epm with the
-                  patch in epm/epm-3.7.patch or build with
-                  --with-epm=internal which will build a suitable epm])
-               fi
-        fi
    fi
    if echo "$PKGFORMAT" | $EGREP pkg 2>&1 >/dev/null; then
       AC_PATH_PROG(PKGMK, pkgmk, no)
@@ -3929,7 +3891,7 @@ AC_SUBST(LIBXML_LIBS)
 
 
 dnl ===================================================================
-dnl Checks for a MacOS platform SDK compatible with an OSX 10.7 deployment target
+dnl Checks for a MacOS platform SDK compatible with deployment target
 dnl ===================================================================
 if test  "$_os" = "Darwin"; then
    sdk_target=$with_macosx_target
@@ -3937,20 +3899,35 @@ if test  "$_os" = "Darwin"; then
 
    sdk_minor=`echo $sdk_target | cut -d"." -f2`
 
-   if test "$sdk_minor" -lt "7"; then
-      AC_MSG_ERROR([SDK version < 10.7 is not longer supported])
+   if test "$sdk_minor" -lt "9"; then
+      AC_MSG_ERROR([SDK version < 10.9 is not longer supported])
    else
       MACOSX_DEPLOYMENT_TARGET=$sdk_target
-
-      dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
-      sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(7|8|10|11)" | sed -e "s/.*sdk //" | tail -n1`
-      if test -z "$sdk_found"; then
-         AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
-      else
-         AC_MSG_RESULT([yes, by using SDK $sdk_found])
+      sdk_path=$with_macosx_sdk
+      if test -z "$sdk_path"; then
+          dnl --macosx-sdk not used (or blank): We look for the SDK
+          dnl Why not MacOSX10.9.sdk? It lacks Python.h (!?)
+          dnl First look for macOS10.x SDKs (Up thru Xcode 12.1)
+          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
+          dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
+          if test -z "$sdk_found"; then
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1)" | sed -e "s/.*sdk //" | tail -n1`
+          fi
+          if test -z "$sdk_found"; then
+             AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
+          else
+             AC_MSG_RESULT([yes, by using SDK $sdk_found])
+          fi
+          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
+      elif test ! -d "$sdk_path"; then
+          sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx${sdk_path}" | sed -e "s/.*sdk //" | tail -n1`
+          if test -z "$sdk_found"; then
+             AC_MSG_ERROR([SDK macosx${sdk_path} not found by xcodebuild])
+          else
+             AC_MSG_RESULT([SDK $sdk_found])
+          fi
+          sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
       fi
-
-      sdk_path=`xcodebuild -version -sdk ${sdk_found} Path`
       AC_MSG_CHECKING([for $sdk_path])
       if test -d "$sdk_path"; then
          AC_MSG_RESULT([yes])
@@ -5044,16 +5021,11 @@ AC_SUBST(NSS_LIBS)
 dnl ===================================================================
 dnl Check for system openssl
 dnl ===================================================================
-if test "$_os" = "Darwin" && test "$with_system_openssl" != "no"; then
-   with_system_openssl=yes
-fi
 AC_MSG_CHECKING([which libssl to use])
 if test -n "$with_system_openssl" -o -n "$with_system_libs" && \
         test "$with_system_openssl" != "no"; then
     AC_MSG_RESULT([external])
-    # Mac OS builds should get out without extra stuff is the Mac porters'
-    # wish. And pkg-config is although Xcode ships a .pc for openssl
-    if test "$_os" = "Darwin" -o "$_os" = "FreeBSD"; then
+    if test "$_os" = "FreeBSD"; then
         OPENSSL_CFLAGS=
         OPENSSL_LIBS="-lssl -lcrypto"
     else
@@ -6356,9 +6328,9 @@ AC_SUBST(LIBREPOSITORY_JAR)
 AC_SUBST(LIBFONTS_JAR)
 AC_SUBST(LIBSERIALIZER_JAR)
 
-# this has to be here because both the wiki publisher and the SRB use
-# commons-logging, while the non-optional PostgreSQL connector uses
-# commons-lang.
+# this has to be here because both the Wiki Publisher and the Report
+# Builder use commons-logging, while the non-optional PostgreSQL
+# connector uses commons-lang.
 AC_MSG_CHECKING([which Apache commons-* libs to use])
 if test "$with_system_apache_commons" = "yes"; then
   SYSTEM_APACHE_COMMONS=YES
@@ -7356,8 +7328,8 @@ if test -z "$with_intro_bitmaps" -o "$with_intro_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_intro_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([Intro bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          INTRO_BITMAPS="$INTRO_BITMAPS $bitmap"
@@ -7375,8 +7347,8 @@ if test -z "$with_about_bitmaps" -o "$with_about_bitmaps" = "no" ; then
 else
    for bitmap in `echo $with_about_bitmaps | tr ',' ' '` ; do
       case "$bitmap" in
-         *.bmp) ;;
-         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .bmp files!]) ;;
+         *.png) ;;
+         *)     bitmap= ; AC_MSG_WARN([About bitmaps should be .png files!]) ;;
       esac
       if test -n "$bitmap" ; then
          ABOUT_BITMAPS="$ABOUT_BITMAPS $bitmap"
@@ -7516,4 +7488,5 @@ else
    fi
    echo
 fi
+
 

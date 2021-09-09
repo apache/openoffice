@@ -3,7 +3,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +11,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 
 
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textshared0102210101xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Floating Frame Properties</title>
@@ -37,7 +37,7 @@
 <!-- removed HID SFX2:TABPAGE:TP_FRAMEPROPERTIES --><paragraph role="heading" id="hd_id3150347" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/shared/01/02210101.xhp" name="Floating Frame Properties">Floating Frame Properties</link></paragraph>
 <paragraph role="paragraph" id="par_id3149031" xml-lang="en-US" l10n="CHG" oldref="2"><ahelp hid="SFX2:TABPAGE:TP_FRAMEPROPERTIES">Changes the properties of the selected floating frame. Floating frames work best when they contain an html document, and when they are inserted in another html document.</ahelp></paragraph>
 <section id="howtoget">
-  <embed href="text/shared/00/00000402.xhp#rahmeneigenschaften"/>
+<embed href="text/shared/00/00000402.xhp#rahmeneigenschaften"/>
 </section>
 <!-- removed HID SFX2:EDIT:TP_FRAMEPROPERTIES:ED_FRAMENAME -->
 <bookmark xml-lang="en-US" branch="hid/cui:Edit:MD_INSERT_OBJECT_IFRAME:ED_FRAMENAME" id="bm_id8971221.00000001" localize="false"/><paragraph role="heading" id="hd_id3155364" xml-lang="en-US" level="2" l10n="U" oldref="3">Name</paragraph>
@@ -85,7 +85,9 @@
 <paragraph role="paragraph" id="par_id3149670" xml-lang="en-US" l10n="U" oldref="33"><ahelp hid="SFX2:NUMERICFIELD:TP_FRAMEPROPERTIES:NM_MARGINHEIGHT">Enter the amount of vertical space that you want to leave between the top and bottom edges of the floating frame and the contents of the frame. Both documents inside and outside the floating frame must be HTML documents.</ahelp></paragraph>
 <!-- removed HID SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINWIDTHDEFAULT -->
 <!-- removed HID SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINHEIGHTDEFAULT -->
+<bookmark xml-lang="en-US" branch="hid/cui:CheckBox:MD_INSERT_OBJECT_IFRAME:CB_MARGINWIDTHDEFAULT" id="bm_" localize="false"/><paragraph role="heading" id="hd_" xml-lang="en-US" level="3" l10n="U" oldref="34">Default</paragraph>
+<paragraph role="paragraph" id="par_" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINWIDTHDEFAULT">Applies the default spacing (Width).</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/cui:CheckBox:MD_INSERT_OBJECT_IFRAME:CB_MARGINHEIGHTDEFAULT" id="bm_id1459089" localize="false"/><paragraph role="heading" id="hd_id3150865" xml-lang="en-US" level="3" l10n="U" oldref="34">Default</paragraph>
-<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINHEIGHTDEFAULT">Applies the default spacing.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150400" xml-lang="en-US" l10n="U" oldref="35"><ahelp hid="SFX2:CHECKBOX:TP_FRAMEPROPERTIES:CB_MARGINHEIGHTDEFAULT">Applies the default spacing (Height).</ahelp></paragraph>
 </body>
 </helpdocument>

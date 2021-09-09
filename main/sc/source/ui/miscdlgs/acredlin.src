@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,47 +28,47 @@ ModelessDialog RID_SCDLG_CHANGES
 	HelpId = CMD_FID_CHG_ACCEPT ;
 	Hide = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 282 , 142 ) ;
+	Size = MAP_APPFONT ( 282, 142 ) ;
 	Moveable = TRUE ;
 	Sizeable = TRUE ;
 	Closeable = TRUE ;
-	 // Dieser Dialog hat einen Cancel-Button !
+	// This dialog has a Cancel button!
 	Control CTR_REDLINING
 	{
 		HelpId = HID_SC_REDLIN_CTR ;
-		Pos = MAP_APPFONT ( 2 , 2 ) ;
-		Size = MAP_APPFONT ( 270 , 105 ) ;
+		Pos = MAP_APPFONT ( 2, 2 ) ;
+		Size = MAP_APPFONT ( 270, 105 ) ;
 	};
 	CancelButton BTN_CANCEL
 	{
-		Pos = MAP_APPFONT ( 271 , 105 ) ;
-		Size = MAP_APPFONT ( 1 , 1 ) ;
+		Pos = MAP_APPFONT ( 271, 105 ) ;
+		Size = MAP_APPFONT ( 1, 1 ) ;
 		TabStop = FALSE ;
 	};
 	FixedText FT_ASSIGN
 	{
 		Hide = TRUE ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 105 ) ;
-		Size = MAP_APPFONT ( 128 , 12 ) ;
+		Pos = MAP_APPFONT ( 12, 105 ) ;
+		Size = MAP_APPFONT ( 128, 12 ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "Range" ;
 	};
 	Edit ED_ASSIGN
 	{
-	    HelpID = "sc:Edit:RID_SCDLG_CHANGES:ED_ASSIGN";
+		HelpID = "sc:Edit:RID_SCDLG_CHANGES:ED_ASSIGN" ;
 		Hide = TRUE ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 12 , 119 ) ;
-		Size = MAP_APPFONT ( 128 , 12 ) ;
+		Pos = MAP_APPFONT ( 12, 119 ) ;
+		Size = MAP_APPFONT ( 128, 12 ) ;
 		TabStop = TRUE ;
 	};
 	ImageButton RB_ASSIGN
 	{
-	    HelpID = "sc:ImageButton:RID_SCDLG_CHANGES:RB_ASSIGN";
+		HelpID = "sc:ImageButton:RID_SCDLG_CHANGES:RB_ASSIGN" ;
 		Hide = TRUE ;
-		Pos = MAP_APPFONT ( 142 , 118 ) ;
-		Size = MAP_APPFONT ( 13 , 15 ) ;
+		Pos = MAP_APPFONT ( 142, 118 ) ;
+		Size = MAP_APPFONT ( 13, 15 ) ;
 		TabStop = FALSE ;
 		QuickHelpText [ en-US ] = "Minimize/Maximize" ;
 	};
@@ -214,43 +214,4 @@ Menu RID_POPUP_CHANGES
 	};
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF

@@ -3,7 +3,7 @@
 
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -11,22 +11,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
 
 
-		<helpdocument version="1.0">
+<helpdocument version="1.0">
 <meta>
 <topic id="textsharedmain0227xml" indexer="include" status="PUBLISH">
 <title id="tit" xml-lang="en-US">Edit Points Bar</title>
@@ -40,7 +40,7 @@
 <bookmark_value>Edit Points bar</bookmark_value>
 </bookmark><comment>mw deleted "points;editing"</comment>
 <bookmark xml-lang="en-US" branch="hid/HID_BEZIER_TOOLBOX" id="bm_id3156418" localize="false"/><paragraph role="heading" id="hd_id3149987" xml-lang="en-US" level="1" l10n="CHG" oldref="39"><link href="text/shared/main0227.xhp" name="Edit Points Bar">Edit Points Bar</link></paragraph>
-<paragraph role="paragraph" id="par_id3150402" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid="HID_BEZIER_TOOLBOX">The <emph>Edit Points </emph>Bar appears when you select a polygon object and click <emph>Edit Points</emph>.</ahelp></paragraph>
+<paragraph role="paragraph" id="par_id3150402" xml-lang="en-US" l10n="CHG" oldref="40"><ahelp hid="HID_BEZIER_TOOLBOX">The <emph>Edit Points</emph> Bar appears when you select a polygon object and click <emph>Edit Points</emph>.</ahelp></paragraph>
 </section>
 <switch select="appl">
 <case select="IMPRESS"><embed href="text/simpress/guide/3d_create.xhp#3d_create"/>
@@ -113,7 +113,7 @@
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:BezierCutLine" id="bm_id1077279" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:BezierCutLine" id="bm_id3163807" localize="false"/><paragraph role="heading" id="hd_id3147361" xml-lang="en-US" level="2" l10n="U" oldref="59">Split Curve</paragraph>
-<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="60"><ahelp hid=".uno:BezierCutLine">The<emph> Split Curve </emph>icon splits a curve. Select the point or points where you want to split the curve, then click the icon</ahelp>.</paragraph>
+<paragraph role="paragraph" id="par_id3151248" xml-lang="en-US" l10n="U" oldref="60"><ahelp hid=".uno:BezierCutLine">The <emph>Split Curve</emph> icon splits a curve. Select the point or points where you want to split the curve, then click the icon.</ahelp></paragraph>
 <table id="tbl_id3145766">
 <tablerow>
 <tablecell colspan="" rowspan="">
@@ -204,7 +204,7 @@
 </table>
 <bookmark xml-lang="en-US" branch="hid/.uno:BezierEliminatePoints" id="bm_id3240924" localize="false"/>
 <bookmark xml-lang="en-US" branch="hid/.uno:BezierEliminatePoints" id="bm_id3154958" localize="false"/><paragraph role="heading" id="hd_id3156351" xml-lang="en-US" level="2" l10n="U" oldref="36">Eliminate Points</paragraph>
-<paragraph role="paragraph" id="par_id3149441" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".uno:BezierEliminatePoints">Marks the current point or the selected points for deletion.</ahelp> This happens in the event that the point is located on a straight line. If you convert a curve or a polygon with the <emph>Convert to Curve </emph>icon into a straight line or you change a curve with the mouse so that a point lies on the straight line, it is removed. The angle from which the point reduction is to take place <switchinline select="appl"><caseinline select="DRAW">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Drawing - Grid"><emph>%PRODUCTNAME Draw - Grid</emph></link> in the Options dialog box</caseinline><caseinline select="IMPRESS">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Presentation - Grid"><emph>%PRODUCTNAME Impress - Grid</emph></link> in the Options dialog box</caseinline><defaultinline>is 15° by default.</defaultinline></switchinline></paragraph>
+<paragraph role="paragraph" id="par_id3149441" xml-lang="en-US" l10n="U" oldref="38"><ahelp hid=".uno:BezierEliminatePoints">Marks the current point or the selected points for deletion.</ahelp> This happens in the event that the point is located on a straight line. If you convert a curve or a polygon with the <emph>Convert to Curve</emph> icon into a straight line or you change a curve with the mouse so that a point lies on the straight line, it is removed. The angle from which the point reduction is to take place <switchinline select="appl"><caseinline select="DRAW">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Drawing - Grid"><emph>%PRODUCTNAME Draw - Grid</emph></link> in the Options dialog box</caseinline><caseinline select="IMPRESS">can be set by choosing <link href="text/shared/optionen/01070300.xhp" name="Presentation - Grid"><emph>%PRODUCTNAME Impress - Grid</emph></link> in the Options dialog box</caseinline><defaultinline>is 15° by default.</defaultinline></switchinline></paragraph>
 <table id="tbl_id3150892">
 <tablerow>
 <tablecell colspan="" rowspan="">

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,8 +76,8 @@ namespace framework{
     @descr      This helper implements the complete XDispatchProviderInterception interface with
                 master/slave functionality AND using of optional features like registration of URL pattern!
 
-    @attention  Don't use this class as direct member - use it dynamicly. Do not derive from this class.
-                We hold a weakreference to ouer owner not to ouer superclass.
+    @attention  Don't use this class as direct member - use it dynamically. Do not derive from this class.
+                We hold a weak reference to our owner not to our superclass.
  */
 class InterceptionHelper : public  css::frame::XDispatchProvider
                          , public  css::frame::XDispatchProviderInterception
@@ -89,17 +89,17 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
     //_____________________________________________________
     // structs, helper
 
-    /** @short bind an interceptor component to it's URL pattern registration. */
+    /** @short bind an interceptor component to its URL pattern registration. */
     struct InterceptorInfo
     {
         /** @short reference to the interceptor component. */
         css::uno::Reference< css::frame::XDispatchProvider > xInterceptor;
 
-        /** @short it's registration for URL patterns.
+        /** @short its registration for URL patterns.
 
             @descr If the interceptor component does not support the optional interface
                    XInterceptorInfo, it will be registered for one pattern "*" by default.
-                   That would make it possible to handle it in the same manner then real
+                   That would make it possible to handle it in the same manner like real
                    registered interceptor objects and we must not implement any special code. */
         css::uno::Sequence< ::rtl::OUString > lURLPattern;
     };
@@ -118,7 +118,7 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
 
             //_____________________________________________
 
-            /** @short search for an interceptor inside this list using it's reference.
+            /** @short search for an interceptor inside this list using its reference.
 
                 @param xInterceptor
                         points to the interceptor object, which should be located inside this list.
@@ -140,7 +140,7 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
 
             //_____________________________________________
 
-            /** @short search for an interceptor inside this list using it's reference.
+            /** @short search for an interceptor inside this list using its reference.
 
                 @param xInterceptor
                         points to the interceptor object, which should be located inside this list.
@@ -172,12 +172,12 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
 
     private:
 
-        /** @short reference to the frame, which uses this instance to implement it's own interception.
+        /** @short reference to the frame, which uses this instance to implement its own interception.
 
             @descr We hold a weak reference only, to make disposing operations easy. */
         css::uno::WeakReference< css::frame::XFrame > m_xOwnerWeak;
 
-        /** @short this interception helper implements the top level master of an interceptor list ...
+        /** @short this interception helper implements the top level master of an interceptor list...
                    but this member is the lowest possible slave! */
         css::uno::Reference< css::frame::XDispatchProvider > m_xSlave;
 
@@ -198,7 +198,7 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
         /** @short creates a new interception helper instance.
 
             @param xOwner
-                    points to the frame, which use this instances to support it's own interception interfaces.
+                    points to the frame, which use this instances to support its own interception interfaces.
 
             @param xSlave
                     an outside creates dispatch provider, which has to be used here as lowest slave "interceptor".
@@ -213,7 +213,7 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
         /** @short standard destructor.
 
             @descr This method destruct an instance of this class and clear some member.
-                   This method is protected, because its not allowed to use this class as a direct member!
+                   This method is protected, because it's not allowed to use this class as a direct member!
                    You MUST use a dynamical instance (pointer). That's the reason for a protected dtor.
          */
         virtual ~InterceptionHelper();
@@ -238,15 +238,15 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
                         describes the requested dispatch functionality.
 
             @param  sTargetFrameName
-                        the name of the target frame or a special name like "_blank", "_top" ...
-                        Won't be used here ... but may by one of our registered interceptor objects
+                        the name of the target frame or a special name like "_blank", "_top"...
+                        Won't be used here... but maybe one of our registered interceptor objects
                         or our slave.
 
             @param  nSearchFlags
                         optional search parameter for targeting, if sTargetFrameName isn't a special one.
 
             @return A valid dispatch object, if any interceptor or at least our slave is interested on the given URL;
-                    or NULL otherwhise.
+                    or NULL otherwise.
          */
         virtual css::uno::Reference< css::frame::XDispatch > SAL_CALL queryDispatch(const css::util::URL&  aURL            ,
                                                                                     const ::rtl::OUString& sTargetFrameName,
@@ -258,8 +258,8 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
 
         /** @short implements an optimized queryDispatch() for remote.
 
-            @descr It capsulate more then one queryDispatch() requests and return a lits of dispatch objects
-                   as result. Because both lists (in and out) coreespond together, it's not allowed to
+            @descr It capsulate more than one queryDispatch() requests and returns a list of dispatched objects
+                   as result. Because both lists (in and out) correspond together, it's not allowed to
                    pack it - means suppress NULL references!
 
             @param lDescriptor
@@ -309,8 +309,8 @@ class InterceptionHelper : public  css::frame::XDispatchProvider
 
         /** @short      Is called from our owner frame, in case he will be disposed.
 
-            @descr      We have to relaease all references to him then.
-                        Normaly we will die by ref count too ...
+            @descr      We have to release all references to him then.
+                        Normally we will die by ref count too...
          */
         virtual void SAL_CALL disposing(const css::lang::EventObject& aEvent)
             throw(css::uno::RuntimeException);

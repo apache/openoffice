@@ -253,40 +253,43 @@ static void Execute( ANY& aEventData, const css::document::DocumentEvent& aTrigg
 				aURL.Complete = aScript;
 				xTrans->parseStrict( aURL );
 
-				::com::sun::star::uno::Reference
-					< ::com::sun::star::frame::XDispatchProvider > xProv;
-
-				if ( pView != NULL )
+				if ( aURL.Protocol.equals( ::rtl::OUString::createFromAscii( "vnd.sun.star.script:" ) ) )
 				{
-					xProv = ::com::sun::star::uno::Reference
-						< ::com::sun::star::frame::XDispatchProvider > (
-							pView->GetFrame().GetFrameInterface(), UNO_QUERY );
-				}
-				else
-				{
-					xProv = ::com::sun::star::uno::Reference
-						< ::com::sun::star::frame::XDispatchProvider > (
-							::comphelper::getProcessServiceFactory()->createInstance(
-								rtl::OUString::createFromAscii(
-									"com.sun.star.frame.Desktop" ) ),
-							UNO_QUERY );
-				}
+					::com::sun::star::uno::Reference
+						< ::com::sun::star::frame::XDispatchProvider > xProv;
 
-				::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > xDisp;
-				if ( xProv.is() )
-					xDisp = xProv->queryDispatch( aURL, ::rtl::OUString(), 0 );
+					if ( pView != NULL )
+					{
+						xProv = ::com::sun::star::uno::Reference
+							< ::com::sun::star::frame::XDispatchProvider > (
+								pView->GetFrame().GetFrameInterface(), UNO_QUERY );
+					}
+					else
+					{
+						xProv = ::com::sun::star::uno::Reference
+							< ::com::sun::star::frame::XDispatchProvider > (
+								::comphelper::getProcessServiceFactory()->createInstance(
+									rtl::OUString::createFromAscii(
+										"com.sun.star.frame.Desktop" ) ),
+								UNO_QUERY );
+					}
 
-				if ( xDisp.is() )
-				{
-					//::com::sun::star::uno::Sequence < ::com::sun::star::beans::PropertyValue > aArgs(1);
-					//aArgs[0].Name = rtl::OUString::createFromAscii("Referer");
-                    //aArs[0].Value <<= ::rtl::OUString( pDoc->GetMedium()->GetName() );
-					//xDisp->dispatch( aURL, aArgs );
+					::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > xDisp;
+					if ( xProv.is() )
+						xDisp = xProv->queryDispatch( aURL, ::rtl::OUString(), 0 );
 
-                    css::beans::PropertyValue aEventParam;
-                    aEventParam.Value <<= aTrigger;
-                    css::uno::Sequence< css::beans::PropertyValue > aDispatchArgs( &aEventParam, 1 );
-					xDisp->dispatch( aURL, aDispatchArgs );
+					if ( xDisp.is() )
+					{
+						//::com::sun::star::uno::Sequence < ::com::sun::star::beans::PropertyValue > aArgs(1);
+						//aArgs[0].Name = rtl::OUString::createFromAscii("Referer");
+						//aArs[0].Value <<= ::rtl::OUString( pDoc->GetMedium()->GetName() );
+						//xDisp->dispatch( aURL, aArgs );
+
+						css::beans::PropertyValue aEventParam;
+						aEventParam.Value <<= aTrigger;
+						css::uno::Sequence< css::beans::PropertyValue > aDispatchArgs( &aEventParam, 1 );
+						xDisp->dispatch( aURL, aDispatchArgs );
+					}
 				}
 			}
 		}

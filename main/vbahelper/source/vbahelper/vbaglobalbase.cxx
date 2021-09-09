@@ -40,7 +40,7 @@ const uno::Reference< uno::XComponentContext >& xContext, const rtl::OUString& s
 :  Globals_BASE( xParent, xContext ), msDocCtxName( sDocCtxName )
 {
     // overwrite context with custom one ( that contains the application )
-    // wrap the service manager as we don't want the disposing context to tear down the 'normal' ServiceManager ( or at least thats what the code appears like it wants to do )
+    // wrap the service manager as we don't want the disposing context to tear down the 'normal' ServiceManager ( or at least that's what the code appears like it wants to do )
     uno::Any aSrvMgr;
     if ( xContext.is() && xContext->getServiceManager().is() )
     {

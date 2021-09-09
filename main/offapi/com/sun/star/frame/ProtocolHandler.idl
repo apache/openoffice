@@ -79,7 +79,7 @@ published service ProtocolHandler
 
         <p>
         Please note: if this mechanism is used it does not seem useful (nor possible) to implement a ProtocolHandler
-        as a singleton. Otherwhise the implementation can't distinguish between different environments
+        as a singleton. Otherwise the implementation can't distinguish between different environments
         and her corresponding dispatch requests.
         </p>
         */

@@ -3533,10 +3533,10 @@ ScVbaRange::End( ::sal_Int32 Direction )  throw (uno::RuntimeException)
 	// #FIXME #TODO
 	// euch! found my orig implementation sucked, so 
 	// trying this even suckier one ( really need to use/expose code in
-	// around  ScTabView::MoveCursorArea(), thats the bit that calcutes
+	// around  ScTabView::MoveCursorArea(), that's the bit that calculates
 	// where the cursor should go ) 
 	// Main problem with this method is the ultra hacky attempt to preserve
-	// the ActiveCell, there should be no need to go to these extreems
+	// the ActiveCell, there should be no need to go to these extremes
 	
 	// Save ActiveCell pos ( to restore later )
 	uno::Any aDft;
@@ -4107,7 +4107,7 @@ ScVbaRange::getTop() throw (uno::RuntimeException)
 uno::Reference< excel::XWorksheet >
 ScVbaRange::getWorksheet() throw (uno::RuntimeException)
 {
-	// #TODO #FIXME parent should always be set up ( currently thats not
+	// #TODO #FIXME parent should always be set up ( currently that's not
 	// the case )
 	uno::Reference< excel::XWorksheet > xSheet( getParent(), uno::UNO_QUERY );
 	if ( !xSheet.is() )

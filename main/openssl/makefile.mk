@@ -42,10 +42,10 @@ TARGET=openssl
 	@echo "openssl disabled...."
 .ENDIF
 
-OPENSSL_NAME=openssl-1.0.2t
+OPENSSL_NAME=openssl-1.0.2u
 
 TARFILE_NAME=$(OPENSSL_NAME)
-TARFILE_MD5=ef66581b80f06eae42f5268bc0b50c6d
+TARFILE_MD5=cdc2638f789ecc2db2c91488265686c1
 
 CONFIGURE_DIR=.
 CONFIGURE_ACTION=config
@@ -108,6 +108,10 @@ UNAME=$(shell uname)
 	.ELSE
 	   CONFIGURE_ACTION=Configure solaris-sparcv9-cc
 	.ENDIF
+.ENDIF
+
+.IF "$(OS)" == "MACOSX"
+	CONFIGURE_ACTION=Configure darwin64-x86_64-cc no-dso no-shared $(NO_ASM)
 .ENDIF
 
 .IF "$(OS)" == "WNT"

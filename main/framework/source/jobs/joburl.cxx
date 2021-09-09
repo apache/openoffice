@@ -145,7 +145,7 @@ sal_Bool JobURL::isValid() const
     @short      get the event item of this job URL
     @descr      Because the three possible parts of such URL (event, alias, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 event value.
 
     @param      sEvent
@@ -178,7 +178,7 @@ sal_Bool JobURL::getEvent( /*OUT*/ ::rtl::OUString& sEvent ) const
     @short      get the alias item of this job URL
     @descr      Because the three possible parts of such URL (event, alias, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 alias value.
 
     @param      sAlias
@@ -211,7 +211,7 @@ sal_Bool JobURL::getAlias( /*OUT*/ ::rtl::OUString& sAlias ) const
     @short      get the service item of this job URL
     @descr      Because the three possible parts of such URL (event, service, service)
                 can't be combined, this method can(!) return a valid value - but it's
-                not a must. Thats why the return value must be used too, to detect a missing
+                not a must. That's why the return value must be used too, to detect a missing
                 service value.
 
     @param      sAlias
@@ -263,7 +263,7 @@ sal_Bool JobURL::getService( /*OUT*/ ::rtl::OUString& sService ) const
                     returns the part arguments if <var>sPart</var> was splitted successfully
 
     @return     <TRUE/> if the identifier could be found and the string was splitted.
-                <FALSE/> otherwhise.
+                <FALSE/> otherwise.
 */
 sal_Bool JobURL::implst_split( /*IN*/  const ::rtl::OUString& sPart           ,
                                /*IN*/  const sal_Char*        pPartIdentifier ,
@@ -274,8 +274,8 @@ sal_Bool JobURL::implst_split( /*IN*/  const ::rtl::OUString& sPart           ,
     // first search for the given identifier
     sal_Bool bPartFound = (sPart.matchIgnoreAsciiCaseAsciiL(pPartIdentifier,nPartLength,0));
 
-    // If it exist - we can split the part and return sal_True.
-    // Otherwhise we do nothing and return sal_False.
+    // If it exists - we can split the part and return sal_True.
+    // Otherwise we do nothing and return sal_False.
     if (bPartFound)
     {
         // But may the part has optional arguments - separated by a "?".

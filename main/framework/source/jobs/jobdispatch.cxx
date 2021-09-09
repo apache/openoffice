@@ -125,7 +125,7 @@ JobDispatch::~JobDispatch()
 
 //________________________________
 /**
-    @short  implementation of XInitalization
+    @short  implementation of XInitialization
     @descr  A protocol handler can provide this functionality, if it wish to get additional informations
             about the context it runs. In this case the frame reference would be given by the outside code.
 
@@ -327,10 +327,10 @@ void JobDispatch::impl_dispatchEvent( /*IN*/ const ::rtl::OUString&             
             continue;
 
         // Special mode for listener.
-        // We dont notify it directly here. We delegate that
+        // We don't notify it directly here. We delegate that
         // to the job implementation. But we must set ourself there too.
         // Because this job must fake the source address of the event.
-        // Otherwhise the listener may will ignore it.
+        // Otherwise the listener maybe will ignore it.
         if (xListener.is())
             pJob->setDispatchResultFake(xListener, xThis);
         pJob->execute(Converter::convert_seqPropVal2seqNamedVal(lArgs));
@@ -389,10 +389,10 @@ void JobDispatch::impl_dispatchService( /*IN*/ const ::rtl::OUString&           
     css::uno::Reference< css::frame::XDispatchResultListener > xThis( static_cast< ::cppu::OWeakObject* >(this), css::uno::UNO_QUERY );
 
     // Special mode for listener.
-    // We dont notify it directly here. We delegate that
+    // We don't notify it directly here. We delegate that
     // to the job implementation. But we must set ourself there too.
     // Because this job must fake the source address of the event.
-    // Otherwhise the listener may will ignore it.
+    // Otherwise the listener maybe will ignore it.
     if (xListener.is())
         pJob->setDispatchResultFake(xListener, xThis);
     pJob->execute(Converter::convert_seqPropVal2seqNamedVal(lArgs));
@@ -440,10 +440,10 @@ void JobDispatch::impl_dispatchAlias( /*IN*/ const ::rtl::OUString&             
     css::uno::Reference< css::frame::XDispatchResultListener > xThis( static_cast< ::cppu::OWeakObject* >(this), css::uno::UNO_QUERY );
 
     // Special mode for listener.
-    // We dont notify it directly here. We delegate that
+    // We don't notify it directly here. We delegate that
     // to the job implementation. But we must set ourself there too.
     // Because this job must fake the source address of the event.
-    // Otherwhise the listener may will ignore it.
+    // Otherwise the listener maybe will ignore it.
     if (xListener.is())
         pJob->setDispatchResultFake(xListener, xThis);
     pJob->execute(Converter::convert_seqPropVal2seqNamedVal(lArgs));

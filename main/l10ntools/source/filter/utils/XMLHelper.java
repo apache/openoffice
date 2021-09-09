@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,46 +43,46 @@ public class XMLHelper
     //___________________________________________
     // public const
 
-    /** its a possible value of the xml attribute "oor:type" and identify an integer type. */
+    /** it's a possible value of the xml attribute "oor:type" and identify an integer type. */
     public static final java.lang.String XMLTYPE_INTEGER = "xs:int";
 
-    /** its a possible value of the xml attribute "oor:type" and identify an boolean type. */
+    /** it's a possible value of the xml attribute "oor:type" and identify an boolean type. */
     public static final java.lang.String XMLTYPE_BOOLEAN = "xs:boolean";
 
-    /** its a possible value of the xml attribute "oor:type" and identify an string type. */
+    /** it's a possible value of the xml attribute "oor:type" and identify an string type. */
     public static final java.lang.String XMLTYPE_STRING = "xs:string";
 
-    /** its a possible value of the xml attribute "oor:type" and identify an string list type. */
+    /** it's a possible value of the xml attribute "oor:type" and identify an string list type. */
     public static final java.lang.String XMLTYPE_STRINGLIST = "oor:string-list";
 
-    /** its a xml attribute, which specify a property name. */
+    /** it's a xml attribute, which specify a property name. */
     public static final java.lang.String XMLATTRIB_OOR_NAME = "oor:name";
 
-    /** its a xml attribute, which specify a property type. */
+    /** it's a xml attribute, which specify a property type. */
     public static final java.lang.String XMLATTRIB_OOR_TYPE = "oor:type";
 
-    /** its a xml attribute, which specify a list separator. */
+    /** it's a xml attribute, which specify a list separator. */
     public static final java.lang.String XMLATTRIB_OOR_SEPARATOR = "oor:separator";
 
-    /** its a xml attribute, which specify a localized value. */
+    /** it's a xml attribute, which specify a localized value. */
     public static final java.lang.String XMLATTRIB_OOR_LOCALIZED = "oor:localized";
 
-    /** its a xml attribute, which specify a merge operation for cfg layering. */
+    /** it's a xml attribute, which specify a merge operation for cfg layering. */
     public static final java.lang.String XMLATTRIB_OOR_OP = "oor:op";
 
     /** can be used as value for XMLATTRIB_OOR_OP. */
     public static final java.lang.String XMLATTRIB_OP_REPLACE = "replace";
 
-    /** its a xml attribute, which specify a locale value. */
+    /** it's a xml attribute, which specify a locale value. */
     public static final java.lang.String XMLATTRIB_XML_LANG = "xml:lang";
 
-    /** its the tag name of a <value ...> entry. */
+    /** it's the tag name of a <value ...> entry. */
     public static final java.lang.String XMLTAG_VALUE = "value";
 
-    /** its the tag name of a <prop ...> entry. */
+    /** it's the tag name of a <prop ...> entry. */
     public static final java.lang.String XMLTAG_PROP = "prop";
 
-    /** its the tag name of a <node ...> entry. */
+    /** it's the tag name of a <node ...> entry. */
     public static final java.lang.String XMLTAG_NODE = "node";
 
     //___________________________________________
@@ -92,7 +92,7 @@ public class XMLHelper
     private static final java.lang.String[] DELIMS = {" ", ",", ";", ".", ":", "-", "_", "#", "'", "+", "*", "~", "=", "?"};
 
     /** index of the default separator inside list DELIMS.
-     *  Its necessary to know such default separator; because it can
+     *  It's necessary to know such default separator; because it can
      *  be suppressed as xml attribute of the corresponding value tag. */
     private static final int DEFAULT_SEPARATOR = 0;
 
@@ -141,7 +141,7 @@ public class XMLHelper
             {
                 /** Special patch:
                  *      If an xml tag has no type information set ... we can restore it
-                 *      by analyzing the already readed tag name :-)
+                 *      by analyzing the already read tag name :-)
                  *      Not very nice - but it can help to read stripped xml files too. */
                 sChildType = XMLHelper.getTypeForTag(sChildName);
                 if (sChildType == null)
@@ -327,7 +327,7 @@ public class XMLHelper
                 continue;
             }
 
-            // its a localized value?
+            // it's a localized value?
             if (aVal instanceof java.util.HashMap)
             {
                 java.util.HashMap lVal = (java.util.HashMap)aVal;
@@ -480,8 +480,8 @@ public class XMLHelper
         // (we use a list of possible ones!) clash with an item.
         // If it clash - we step to the next possible separator.
         // If our list of possible separator values runs out of range we throw
-        // an exception :-) Its better then generating of wrong values
-        // If we found a valid seperator - we use it to replace our "\n" place holder
+        // an exception :-) It's better then generating of wrong values
+        // If we found a valid separator - we use it to replace our "\n" place holder
         // at the end of the following loop ...
 
         int                    d        = 0;
@@ -497,7 +497,7 @@ public class XMLHelper
 
             sValue = encodeHTMLSigns(sValue);
 
-            // append item with default separator, which isn a valid separator at all
+            // append item with default separator, which isn't a valid separator at all
             // But suppress adding of the separator if last element is reached.
             sValBuff.append(sValue);
             if (i<(c-1))
@@ -574,7 +574,7 @@ public class XMLHelper
 
         for (int t=0; t<nPrettyTabs; ++t)
             sXML.append("\t");
-        // !Our localized values must be formatted at a deeper coloum
+        // !Our localized values must be formatted at a deeper column
         // then its property name!
         ++nPrettyTabs;
 
@@ -620,8 +620,8 @@ public class XMLHelper
 
     /** returns the value of an attribute of the given node.
      *
-     *  If the given node represent an lement node, may it supports some attributes.
-     *  Then this method search for an attribute with the specified name and return it's value.
+     *  If the given node represent an element node, may it supports some attributes.
+     *  Then this method search for an attribute with the specified name and return its value.
      *  If nothing could be found ... or the given node isn't a suitable node ... it returns null.
      *
      *  @param  aNode
@@ -712,8 +712,8 @@ public class XMLHelper
 
     /** returns a list of childs, which supports the right node type.
      *
-     *  It analyze the list of all possible child nodes. If a node represent the right node type
-     *  it is added to the return list. Otherwhise it will be ignored.
+     *  It analyzes the list of all possible child nodes. If a node represents the right node type
+     *  it is added to the return list. Otherwise it will be ignored.
      *
      *  @param  aNode
      *          provides access to the list of possible children nodes.
@@ -762,7 +762,7 @@ public class XMLHelper
      *  @param  sPackage
      *          name of the configuration package.
      *
-     *  @param  bLanguagepack     
+     *  @param  bLanguagepack
      *          force creation of a special header,
      *          which is needed for language packs only.
      *
@@ -807,7 +807,7 @@ public class XMLHelper
             sHeader.append(sPackage);
             sHeader.append("\">\n");
         }
-        
+
         return sHeader.toString();
     }
 

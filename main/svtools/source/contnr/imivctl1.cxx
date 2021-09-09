@@ -3601,7 +3601,7 @@ void SvxIconChoiceCtrl_Impl::ShowEntryFocusRect( const SvxIconChoiceCtrlEntry* p
 ////////////////////////////////////////////////////////////////////////////////////////////////
 //
 // Draw my own focusrect, because the focusrect of the outputdevice has got the inverted color
-// of the background. But what will we see, if the the backgroundcolor is gray ? - We will see
+// of the background. But what will we see, if the backgroundcolor is gray ? - We will see
 // a gray focusrect on a gray background !!!
 //
 void SvxIconChoiceCtrl_Impl::ShowFocus ( Rectangle& rRect )

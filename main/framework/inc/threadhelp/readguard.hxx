@@ -148,7 +148,7 @@ class ReadGuard : private INonCopyable
         /*-****************************************************************************************************//**
             @short      unset read lock
             @descr      Call this method to unlock the rw-lock temp.!
-                        Normaly we do it at dtor automatically for you ...
+                        Normally we do it at dtor automatically for you ...
 
             @seealso    method lock()
 
@@ -174,7 +174,7 @@ class ReadGuard : private INonCopyable
 		/*-****************************************************************************************************//**
 			@short		disable using of these functions!
 			@descr		It's not allowed to use this methods. Different problems can occur otherwise.
-						Thats why we disable it by make it private.
+						That's why we disable it by making it private.
 
 			@seealso	other ctor
 

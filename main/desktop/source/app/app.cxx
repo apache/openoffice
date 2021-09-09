@@ -353,10 +353,10 @@ OUString MakeStartupConfigAccessErrorMessage( OUString const & aInternalErrMsg )
 // setup again.
 //
 // On the other side we must make sure that no further actions will be possible within
-// the current office process ! No pipe requests, no menu/toolbar/shortuct actions
+// the current office process ! No pipe requests, no menu/toolbar/shortcut actions
 // are allowed. Otherwise we will force a "crash inside a crash".
 //
-// Thats why we have to use a special native message box here which does not use yield :-)
+// That's why we have to use a special native message box here which does not use yield :-)
 //=============================================================================
 void FatalError(const ::rtl::OUString& sMessage, const sal_Bool isDisplayErrorString)
 {
@@ -987,7 +987,7 @@ void Desktop::Init()
     SetBootstrapStatus(BS_OK);
 
     // Check for lastsynchronized file for pre-registered bundled extensions in the user directory
-    // and test if synchronzation is necessary!
+    // and test if synchronization is necessary!
     {
         ::rtl::OUString aUserLastSyncFilePathURL = getLastSyncFileURLFromUserInstallation();
         ::rtl::OUString aPreregSyncFilePathURL = getLastSyncFileURLFromBrandInstallation();
@@ -1641,7 +1641,7 @@ sal_Bool impl_callRecoveryUI(sal_Bool bEmergencySave     ,
 
 /*
  * Save all open documents so they will be reopened
- * the next time the application ist started
+ * the next time the application is started
  *
  * returns sal_True if at least one document could be saved...
  *
@@ -1755,7 +1755,7 @@ sal_uInt16 Desktop::Exception(sal_uInt16 nError)
                                                     ( !pArgs->IsNoRestore()                    ) && // some use cases of office must work without recovery
                                                     ( !pArgs->IsHeadless()                     ) &&
                                                     ( !pArgs->IsServer()                       ) &&
-                                                    (( nError & EXC_MAJORTYPE ) != EXC_DISPLAY ) && // recovery can't work without UI ... but UI layer seams to be the reason for this crash
+                                                    (( nError & EXC_MAJORTYPE ) != EXC_DISPLAY ) && // recovery can't work without UI ... but UI layer seems to be the reason for this crash
                                                     ( Application::IsInExecute()               )    // crashes during startup and shutdown should be ignored (they indicates a corrupt installation ...)
                                                   );
     if ( bAllowRecoveryAndSessionManagement )
@@ -1981,7 +1981,7 @@ void Desktop::Main()
             SvtPathOptions().SetWorkPath( aWorkPath );
         }
 
-	    // create service for loadin SFX (still needed in startup)
+	    // create service for loading SFX (still needed in startup)
         pExecGlobals->xGlobalBroadcaster = Reference < css::document::XEventListener >
 			( xSMgr->createInstance(
             DEFINE_CONST_UNICODE( "com.sun.star.frame.GlobalEventBroadcaster" ) ), UNO_QUERY );
@@ -2396,7 +2396,7 @@ void Desktop::FlushConfiguration()
     }
     else
     {
-        // because there is no method to flush the condiguration data, we must dispose the ConfigManager
+        // because there is no method to flush the configuration data, we must dispose the ConfigManager
         Reference < XComponent > xCFGDispose( ::utl::ConfigManager::GetConfigManager()->GetConfigurationProvider(), UNO_QUERY );
         if (xCFGDispose.is())
             xCFGDispose->dispose();
@@ -2559,7 +2559,7 @@ IMPL_LINK( Desktop, OpenClients_Impl, void*, EMPTYARG )
     return 0;
 }
 
-// enable acceptos
+// enable acceptors
 IMPL_LINK( Desktop, EnableAcceptors_Impl, void*, EMPTYARG )
 {
     enableAcceptors();
@@ -2567,7 +2567,7 @@ IMPL_LINK( Desktop, EnableAcceptors_Impl, void*, EMPTYARG )
 }
 
 
-// Registers a COM class factory of the service manager with the windows operating system.
+// Registers a COM class factory of the service manager with the Windows operating system.
 void Desktop::EnableOleAutomation()
 {
       RTL_LOGFILE_CONTEXT( aLog, "desktop (jl97489) ::Desktop::EnableOleAutomation" );
@@ -2941,7 +2941,7 @@ void Desktop::PreloadConfigurationData()
 void Desktop::OpenClients()
 {
 
-    // check if a document has been recovered - if there is one of if a document was loaded by cmdline, no default document
+    // check if a document has been recovered - if there is one or if a document was loaded by cmdline, no default document
     // should be created
     Reference < XComponent > xFirst;
     sal_Bool bLoaded = sal_False;
@@ -3095,9 +3095,9 @@ void Desktop::OpenClients()
                     bExistsRecoveryData);
                 /* TODO we can't be sure, that at least one document could be recovered here successfully
                     So we set bLoaded=sal_True to suppress opening of the default document.
-                    But we should make it more safe. Otherwhise we have an office without an UI ...
+                    But we should make it more safe. Otherwise we have an office without an UI ...
                     ...
-                    May be we can check the desktop if some documents are existing there.
+                    Maybe we can check the desktop if some documents are existing there.
                  */
                 Reference< XFramesSupplier > xTasksSupplier(
                         ::comphelper::getProcessServiceFactory()->createInstance( OUSTRING(RTL_CONSTASCII_USTRINGPARAM("com.sun.star.frame.Desktop")) ),
@@ -3296,7 +3296,7 @@ String GetURL_Impl(
     const String& rName, boost::optional< rtl::OUString > const & cwdUrl )
 {
     // if rName is a vnd.sun.star.script URL do not attempt to parse it
-    // as INetURLObj does not handle handle there URLs
+    // as INetURLObj does not handle their URLs
     if (rName.CompareToAscii("vnd.sun.star.script" , 19) == COMPARE_EQUAL)
     {
         return rName;
@@ -3316,7 +3316,7 @@ String GetURL_Impl(
 
     // Add path seperator to these directory and make given URL (rName) absolute by using of current working directory
     // Attention: "setFianlSlash()" is necessary for calling "smartRel2Abs()"!!!
-    // Otherwhise last part will be ignored and wrong result will be returned!!!
+    // Otherwise last part will be ignored and wrong result will be returned!!!
     // "smartRel2Abs()" interpret given URL as file not as path. So he truncate last element to get the base path ...
     // But if we add a seperator - he doesn't do it anymore.
     INetURLObject aObj;

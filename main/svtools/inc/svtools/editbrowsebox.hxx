@@ -488,7 +488,7 @@ namespace svt
 			// In ActivateCell, we grab the focus asynchronously, but if between requesting activation
 			// and the asynchornous event the focus has changed, we won't grab it for ourself.
 
-		long	nPaintRow;	// row beeing painted
+		long	nPaintRow;	// row being painted
 		long	nEditRow, nOldEditRow;
 		sal_uInt16	nEditCol, nOldEditCol;
 
@@ -559,7 +559,7 @@ namespace svt
         virtual void    ImplEndTracking();
 
         // when changing a row:
-		// CursorMoving:	cursor is beeing moved, but GetCurRow() still provides the old row
+		// CursorMoving:	cursor is being moved, but GetCurRow() still provides the old row
 		virtual sal_Bool CursorMoving(long nNewRow, sal_uInt16 nNewCol);
 
 		// cursor has been moved

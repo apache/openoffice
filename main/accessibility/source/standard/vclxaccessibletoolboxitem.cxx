@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -74,7 +74,7 @@ VCLXAccessibleToolBoxItem::VCLXAccessibleToolBoxItem( ToolBox* _pToolBox, sal_In
 	m_nItemId		( 0 ),
 	m_bHasFocus		( sal_False ),
 	m_bIsChecked	( sal_False ),
-    m_bIndeterminate( false )
+	m_bIndeterminate( false )
 
 {
 	DBG_CTOR( VCLXAccessibleToolBoxItem, NULL );
@@ -84,18 +84,18 @@ VCLXAccessibleToolBoxItem::VCLXAccessibleToolBoxItem( ToolBox* _pToolBox, sal_In
 	DBG_ASSERT( m_pToolBox, "invalid toolbox" );
 	m_nItemId = m_pToolBox->GetItemId( (sal_uInt16)m_nIndexInParent );
 	m_sOldName = GetText( true );
-    m_bIsChecked = m_pToolBox->IsItemChecked( m_nItemId );
-    m_bIndeterminate = ( m_pToolBox->GetItemState( m_nItemId ) == STATE_DONTKNOW );
+	m_bIsChecked = m_pToolBox->IsItemChecked( m_nItemId );
+	m_bIndeterminate = ( m_pToolBox->GetItemState( m_nItemId ) == STATE_DONTKNOW );
 	ToolBoxItemType eType = m_pToolBox->GetItemType( (sal_uInt16)m_nIndexInParent );
 	switch ( eType )
 	{
 		case TOOLBOXITEM_BUTTON :
 		{
-    		ToolBoxItemBits nBits = m_pToolBox->GetItemBits( m_nItemId );
-            if (( nBits & TIB_DROPDOWN ) == TIB_DROPDOWN)
+			ToolBoxItemBits nBits = m_pToolBox->GetItemBits( m_nItemId );
+			if (( nBits & TIB_DROPDOWN ) == TIB_DROPDOWN)
 				m_nRole	= AccessibleRole::BUTTON_DROPDOWN;
 			else if (( ( nBits & TIB_CHECKABLE ) == TIB_CHECKABLE ) ||
-                ( ( nBits & TIB_AUTOCHECK ) == TIB_AUTOCHECK ) )
+				( ( nBits & TIB_AUTOCHECK ) == TIB_AUTOCHECK ) )
 				m_nRole	= AccessibleRole::TOGGLE_BUTTON;
 			else if ( (nBits & TIB_DROPDOWN) == TIB_DROPDOWN )
 			{
@@ -148,7 +148,7 @@ VCLXAccessibleToolBoxItem::~VCLXAccessibleToolBoxItem()
 //				sRet += String( RTL_CONSTASCII_USTRINGPARAM( " " ) );
 //			sRet += sWinText;
 //		}
-		if (  sRet.isEmpty() )
+		if ( sRet.isEmpty() )
 		{
 			Window* pItemWindow = m_pToolBox->GetItemWindow( m_nItemId );
 			if ( m_nRole == AccessibleRole::PANEL && pItemWindow && pItemWindow->GetAccessible().is() &&
@@ -175,7 +175,7 @@ void VCLXAccessibleToolBoxItem::SetFocus( sal_Bool _bFocus )
 		else
 			aNewValue <<= AccessibleStateType::FOCUSED;
 		m_bHasFocus = _bFocus;
- 	    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
 // -----------------------------------------------------------------------------
@@ -192,7 +192,7 @@ void VCLXAccessibleToolBoxItem::SetChecked( sal_Bool _bCheck )
 		else
 			aNewValue <<= AccessibleStateType::CHECKED;
 		m_bIsChecked = _bCheck;
-	    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
 // -----------------------------------------------------------------------------
@@ -206,7 +206,7 @@ void VCLXAccessibleToolBoxItem::SetIndeterminate( bool _bIndeterminate )
 		else
 			aNewValue <<= AccessibleStateType::INDETERMINATE;
 		m_bIndeterminate = _bIndeterminate;
-	    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
 // -----------------------------------------------------------------------------
@@ -226,32 +226,32 @@ void VCLXAccessibleToolBoxItem::NameChanged()
 // -----------------------------------------------------------------------------
 void VCLXAccessibleToolBoxItem::SetChild( const Reference< XAccessible >& _xChild )
 {
-    m_xChild = _xChild;
+	m_xChild = _xChild;
 }
 // -----------------------------------------------------------------------------
 void VCLXAccessibleToolBoxItem::NotifyChildEvent( const Reference< XAccessible >& _xChild, bool _bShow )
 {
-    Any aOld = _bShow ? Any() : makeAny( _xChild );
-    Any aNew = _bShow ? makeAny( _xChild ) : Any();
-    NotifyAccessibleEvent( AccessibleEventId::CHILD, aOld, aNew );
+	Any aOld = _bShow ? Any() : makeAny( _xChild );
+	Any aNew = _bShow ? makeAny( _xChild ) : Any();
+	NotifyAccessibleEvent( AccessibleEventId::CHILD, aOld, aNew );
 }
 // -----------------------------------------------------------------------------
 void VCLXAccessibleToolBoxItem::ToggleEnableState()
 {
-    Any aOldValue[2], aNewValue[2];
-    if ( m_pToolBox->IsItemEnabled( m_nItemId ) )
-    {
-        aNewValue[0] <<= AccessibleStateType::SENSITIVE;
-        aNewValue[1] <<= AccessibleStateType::ENABLED;
-    }
-    else
-    {
-        aOldValue[0] <<= AccessibleStateType::ENABLED;
-        aOldValue[1] <<= AccessibleStateType::SENSITIVE;
-    }
+	Any aOldValue[2], aNewValue[2];
+	if ( m_pToolBox->IsItemEnabled( m_nItemId ) )
+	{
+		aNewValue[0] <<= AccessibleStateType::SENSITIVE;
+		aNewValue[1] <<= AccessibleStateType::ENABLED;
+	}
+	else
+	{
+		aOldValue[0] <<= AccessibleStateType::ENABLED;
+		aOldValue[1] <<= AccessibleStateType::SENSITIVE;
+	}
 
-    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[0], aNewValue[0] );
-    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[1], aNewValue[1] );
+	NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[0], aNewValue[0] );
+	NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue[1], aNewValue[1] );
 }
 // -----------------------------------------------------------------------------
 awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::implGetBounds(  ) throw (RuntimeException)
@@ -367,7 +367,7 @@ Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleParent
 {
 	OContextEntryGuard aGuard( this );
 
-    return m_pToolBox->GetAccessible();
+	return m_pToolBox->GetAccessible();
 }
 // -----------------------------------------------------------------------------
 sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleIndexInParent(  ) throw (RuntimeException)
@@ -388,7 +388,7 @@ sal_Int16 SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleRole(  ) throw (Runti
 {
 	OExternalLockGuard aGuard( this );
 
-	
+
 	if(m_nRole	== AccessibleRole::PANEL && getAccessibleChildCount() > 0 )
 	{
 		return ::rtl::OUString( TK_RES_STRING( RID_STR_ACC_PANEL_DESCRIPTION ) );
@@ -417,39 +417,39 @@ Reference< XAccessibleRelationSet > SAL_CALL VCLXAccessibleToolBoxItem::getAcces
 
 	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 // -----------------------------------------------------------------------------
 Reference< XAccessibleStateSet > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleStateSet(  ) throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
 
-    utl::AccessibleStateSetHelper* pStateSetHelper = new utl::AccessibleStateSetHelper;
+	utl::AccessibleStateSetHelper* pStateSetHelper = new utl::AccessibleStateSetHelper;
 	Reference< XAccessibleStateSet > xStateSet = pStateSetHelper;
 
 	if ( m_pToolBox && !rBHelper.bDisposed && !rBHelper.bInDispose )
 	{
-        pStateSetHelper->AddState( AccessibleStateType::FOCUSABLE );
-		if ( m_bIsChecked && m_nRole != AccessibleRole::PANEL ) 
-	        pStateSetHelper->AddState( AccessibleStateType::CHECKED );
-        if ( m_bIndeterminate )
-	        pStateSetHelper->AddState( AccessibleStateType::INDETERMINATE );
-		if ( m_pToolBox->IsEnabled() && m_pToolBox->IsItemEnabled( m_nItemId ) ) 
-        {
-            pStateSetHelper->AddState( AccessibleStateType::ENABLED );
-            pStateSetHelper->AddState( AccessibleStateType::SENSITIVE );
-        }
+		pStateSetHelper->AddState( AccessibleStateType::FOCUSABLE );
+		if ( m_bIsChecked && m_nRole != AccessibleRole::PANEL )
+			pStateSetHelper->AddState( AccessibleStateType::CHECKED );
+		if ( m_bIndeterminate )
+			pStateSetHelper->AddState( AccessibleStateType::INDETERMINATE );
+		if ( m_pToolBox->IsEnabled() && m_pToolBox->IsItemEnabled( m_nItemId ) )
+		{
+			pStateSetHelper->AddState( AccessibleStateType::ENABLED );
+			pStateSetHelper->AddState( AccessibleStateType::SENSITIVE );
+		}
 		if ( m_pToolBox->IsItemVisible( m_nItemId ) )
-	        pStateSetHelper->AddState( AccessibleStateType::VISIBLE );
-        if ( m_pToolBox->IsItemReallyVisible( m_nItemId ) )
+			pStateSetHelper->AddState( AccessibleStateType::VISIBLE );
+		if ( m_pToolBox->IsItemReallyVisible( m_nItemId ) )
 			pStateSetHelper->AddState( AccessibleStateType::SHOWING );
 		if ( m_bHasFocus )
-	        pStateSetHelper->AddState( AccessibleStateType::FOCUSED );
+			pStateSetHelper->AddState( AccessibleStateType::FOCUSED );
 	}
 	else
-        pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
+		pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
 
-    return xStateSet;
+	return xStateSet;
 }
 // -----------------------------------------------------------------------------
 // XAccessibleText
@@ -463,8 +463,8 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setCaretPosition( sal_Int32 nIndex 
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -475,8 +475,8 @@ Sequence< PropertyValue > SAL_CALL VCLXAccessibleToolBoxItem::getCharacterAttrib
 
 	::rtl::OUString sText( implGetText() );
 
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return Sequence< PropertyValue >();
 }
@@ -487,8 +487,8 @@ awt::Rectangle SAL_CALL VCLXAccessibleToolBoxItem::getCharacterBounds( sal_Int32
 
 	::rtl::OUString sText( implGetText() );
 
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	awt::Rectangle aBounds( 0, 0, 0, 0 );
 	if ( m_pToolBox && m_pToolBox->GetButtonType() != BUTTON_SYMBOL ) // symbol buttons have no character bounds
@@ -525,8 +525,8 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::setSelection( sal_Int32 nStartIndex
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -535,8 +535,8 @@ sal_Bool SAL_CALL VCLXAccessibleToolBoxItem::copyText( sal_Int32 nStartIndex, sa
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	sal_Bool bReturn = sal_False;
 
@@ -573,17 +573,17 @@ Reference< XAccessible > SAL_CALL VCLXAccessibleToolBoxItem::getAccessibleAtPoin
 // -----------------------------------------------------------------------------
 void SAL_CALL VCLXAccessibleToolBoxItem::grabFocus(  ) throw (RuntimeException)
 {
-    Reference< XAccessible > xParent(getAccessibleParent());
-    
-    if( xParent.is() )
-    {
-        Reference< XAccessibleSelection > rxAccessibleSelection(xParent->getAccessibleContext(), UNO_QUERY);
-       
-        if ( rxAccessibleSelection.is() )
-        {
-            rxAccessibleSelection -> selectAccessibleChild ( getAccessibleIndexInParent() );
-        }
-    }
+	Reference< XAccessible > xParent(getAccessibleParent());
+
+	if( xParent.is() )
+	{
+		Reference< XAccessibleSelection > rxAccessibleSelection(xParent->getAccessibleContext(), UNO_QUERY);
+
+		if ( rxAccessibleSelection.is() )
+		{
+			rxAccessibleSelection -> selectAccessibleChild ( getAccessibleIndexInParent() );
+		}
+	}
 }
 // -----------------------------------------------------------------------------
 sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getForeground(  ) throw (RuntimeException)
@@ -592,7 +592,7 @@ sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getForeground(  ) throw (RuntimeEx
 
 	sal_Int32 nColor = 0;
 	if ( m_pToolBox )
-	   nColor = m_pToolBox->GetControlForeground().GetColor();
+		nColor = m_pToolBox->GetControlForeground().GetColor();
 
 	return nColor;
 }
@@ -603,7 +603,7 @@ sal_Int32 SAL_CALL VCLXAccessibleToolBoxItem::getBackground(  ) throw (RuntimeEx
 
 	sal_Int32 nColor = 0;
 	if ( m_pToolBox )
-	   nColor = m_pToolBox->GetControlBackground().GetColor();
+		nColor = m_pToolBox->GetControlBackground().GetColor();
 
 	return nColor;
 }
@@ -638,10 +638,10 @@ awt::FontDescriptor SAL_CALL VCLXAccessibleToolBoxItem::getFontMetrics( const Re
 	::rtl::OUString sRet;
 	if ( m_pToolBox )
 	{
-        if ( Help::IsExtHelpEnabled() )
-            sRet = m_pToolBox->GetHelpText( m_nItemId );
-        else
-            sRet = m_pToolBox->GetQuickHelpText( m_nItemId );
+		if ( Help::IsExtHelpEnabled() )
+			sRet = m_pToolBox->GetHelpText( m_nItemId );
+		else
+			sRet = m_pToolBox->GetQuickHelpText( m_nItemId );
 		if ( sRet.isEmpty() )
 			// no help text set, so use item text
 			sRet = m_pToolBox->GetItemText( m_nItemId );
@@ -662,7 +662,7 @@ sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex ) thro
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	if ( m_pToolBox )
 		m_pToolBox->TriggerItem( m_nItemId );
@@ -675,7 +675,7 @@ sal_Bool VCLXAccessibleToolBoxItem::doAccessibleAction ( sal_Int32 nIndex ) thro
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	return ::rtl::OUString( TK_RES_STRING( RID_STR_ACC_ACTION_CLICK ) );
 }
@@ -685,7 +685,7 @@ Reference< XAccessibleKeyBinding > VCLXAccessibleToolBoxItem::getAccessibleActio
 	OContextEntryGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	return Reference< XAccessibleKeyBinding >();
 }

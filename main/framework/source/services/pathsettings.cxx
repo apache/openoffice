@@ -26,7 +26,7 @@
 // ______________________________________________
 // my own includes
 
-/** Attention: stl headers must(!) be included at first. Otherwhise it can make trouble
+/** Attention: stl headers must(!) be included at first. Otherwise it can make trouble
                with solaris headers ...
 */
 #include <vector>
@@ -505,7 +505,7 @@ css::uno::Sequence< sal_Int32 > PathSettings::impl_mapPathName2IDList(const ::rt
     ::rtl::OUString sWriteProp    = sPath+POSTFIX_WRITE_PATH;
 
     // Attention: The default set of IDs is fix and must follow these schema.
-    // Otherwhise the outside code ant work for new added properties.
+    // Otherwise the outside code ant work for new added properties.
     // Why ?
     // The outside code must fire N events for every changed property.
     // And the knowing about packaging of variables of the structure PathInfo
@@ -1103,7 +1103,7 @@ css::uno::Reference< css::util::XStringSubstitution > PathSettings::fa_getSubsti
         // create the needed substitution service.
         // We must replace all used variables inside readed path values.
         // In case we can't do so ... the whole office can't work really.
-        // That's why it seams to be OK to throw a RuntimeException then.
+        // That's why it seems to be OK to throw a RuntimeException then.
         xSubst = css::uno::Reference< css::util::XStringSubstitution >(
                                 xSMGR->createInstance(SERVICENAME_SUBSTITUTEPATHVARIABLES),
                                 css::uno::UNO_QUERY_THROW);

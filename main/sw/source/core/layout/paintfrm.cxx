@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -958,7 +960,7 @@ void SwSubsRects::PaintSubsidiary( OutputDevice *pOut,
                         case SUBCOL_FLY: pCol = &SwViewOption::GetObjectBoundariesColor(); break;
                         case SUBCOL_TAB: pCol = &SwViewOption::GetTableBoundariesColor(); break;
                         case SUBCOL_SECT: pCol = &SwViewOption::GetSectionBoundColor(); break;
-                        case SUBCOL_BREAK:    pCol = &SwViewOption::GetPageBreakColor(); break;
+                        case SUBCOL_BREAK: pCol = &SwViewOption::GetPageBreakColor(); break;
 					}
 
                     if ( pOut->GetFillColor() != *pCol )
@@ -1417,12 +1419,12 @@ void MA_FASTCALL lcl_ExtendLeftAndRight( SwRect&                _rRect,
 //            // have not to be subtracted from given region.
 //            // But, if method is called for a fly frame and
 //            // <pFly> is a direct lower of this fly frame and
-//            // <pFly> inherites its transparent background brush from its parent,
+//            // <pFly> inherits its transparent background brush from its parent,
 //            // then <pFly> frame area have to be subtracted from given region.
 //            // NOTE: Because in Status Quo transparent backgrounds can only be
 //            //     assigned to fly frames, the handle of this special case
 //            //     avoids drawing of transparent areas more than once, if
-//            //     a fly frame inherites a transparent background from its
+//            //     a fly frame inherits a transparent background from its
 //            //     parent fly frame.
 //            if ( pFrm->IsFlyFrm() &&
 //                 (pFly->GetAnchorFrm()->FindFlyFrm() == pFrm) &&
@@ -1500,7 +1502,7 @@ void MA_FASTCALL lcl_ExtendLeftAndRight( SwRect&                _rRect,
     output device the background has to be drawn in.
 
     @param _rPaintRect
-    paint retangle in the output device, which has to be drawn with the background.
+    paint rectangle in the output device, which has to be drawn with the background.
     rectangle have to be aligned by method ::SwAlignRect
 
     @param _rGraphicObj
@@ -1631,8 +1633,8 @@ void lcl_DrawGraphic( const SvxBrushItem& rBrush, OutputDevice *pOut,
 } // end of method <lcl_DrawGraphic>
 
 bool MA_FASTCALL DrawFillAttributes(
-    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes, 
-    const SwRect& rOriginalLayoutRect, 
+    const drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes,
+    const SwRect& rOriginalLayoutRect,
     const SwRect& rPaintRect,
     OutputDevice& rOut)
 {
@@ -1647,8 +1649,8 @@ bool MA_FASTCALL DrawFillAttributes(
             rPaintRect.Right(),
             rPaintRect.Bottom());
 
-        if(!aPaintRange.isEmpty() && 
-            !basegfx::fTools::equalZero(aPaintRange.getWidth()) && 
+        if(!aPaintRange.isEmpty() &&
+            !basegfx::fTools::equalZero(aPaintRange.getWidth()) &&
             !basegfx::fTools::equalZero(aPaintRange.getHeight()))
         {
             const SvtOptionsDrawinglayer aSvtOptionsDrawinglayer;
@@ -1660,10 +1662,10 @@ bool MA_FASTCALL DrawFillAttributes(
             if(aSvtOptionsDrawinglayer.IsAntiAliasing())
             {
                 // if AAed in principle expand by 0.5 in all directions. Since painting edges of
-                // AAed regions does not add to no transparence (0.5 opacity covered by 0.5 opacity
+                // AAed regions does not add to no transparency (0.5 opacity covered by 0.5 opacity
                 // is not full opacity but 0.75 opacity) we need some overlap here to avoid paint
                 // artifacts. Checked experimentally - a little bit more in Y is needed, probably
-                // due to still existing integer alignment and cruncing in writer.
+                // due to still existing integer alignment and crunching in Writer.
                 static double fExpandX = 0.55;
                 static double fExpandY = 0.70;
                 const basegfx::B2DVector aSingleUnit(rOut.GetInverseViewTransformation() * basegfx::B2DVector(fExpandX, fExpandY));
@@ -1693,14 +1695,14 @@ bool MA_FASTCALL DrawFillAttributes(
             if(rSequence.getLength())
             {
                 const drawinglayer::geometry::ViewInformation2D aViewInformation2D(
-                    basegfx::B2DHomMatrix(), 
-                    rOut.GetViewTransformation(), 
-                    aPaintRange, 
+                    basegfx::B2DHomMatrix(),
+                    rOut.GetViewTransformation(),
+                    aPaintRange,
                     0,
-                    0.0, 
+                    0.0,
                     uno::Sequence< beans::PropertyValue >());
                 drawinglayer::processor2d::BaseProcessor2D* pProcessor = drawinglayer::processor2d::createProcessor2DFromOutputDevice(
-                    rOut, 
+                    rOut,
                     aViewInformation2D);
 
                 if(pProcessor)
@@ -1721,7 +1723,7 @@ bool MA_FASTCALL DrawFillAttributes(
     return false;
 }
 
-void MA_FASTCALL DrawGraphic( 
+void MA_FASTCALL DrawGraphic(
     const SvxBrushItem *pBrush,
     OutputDevice *pOutDev,
     const SwRect &rOrg,
@@ -1862,7 +1864,7 @@ void MA_FASTCALL DrawGraphic(
                 // n_chars = k1 *  ---------- + k2 * A_bitmap
                 //                  A_bitmap
                 //
-                // minimum n_chars is obtained for (derive for  A_bitmap,
+                // minimum n_chars is obtained for (derive for A_bitmap,
                 // set to 0, take positive solution):
                 //                   k1
                 // A_bitmap = Sqrt( ---- A_out )
@@ -2218,7 +2220,7 @@ SwLineEntry::SwLineEntry( SwTwips nKey,
     ----------    rNew
 */
 
-SwLineEntry::OverlapType SwLineEntry::Overlaps( const SwLineEntry& rNew )  const
+SwLineEntry::OverlapType SwLineEntry::Overlaps( const SwLineEntry& rNew ) const
 {
     SwLineEntry::OverlapType eRet = OVERLAP3;
 
@@ -2825,8 +2827,8 @@ namespace
                                                         rOriginal, rDisplayInfo );
             }
     };
-    
-} // end of anonymous namespace            
+
+} // end of anonymous namespace
 // <--
 
 /*************************************************************************
@@ -2834,12 +2836,12 @@ namespace
 |*	SwRootFrm::Paint()
 |*
 |*	Beschreibung
-|*		Fuer jede sichtbare Seite, die von Rect ber?hrt wird einmal Painten.
+|*		Fuer jede sichtbare Seite, die von Rect berührt wird einmal Painten.
 |*		1. Umrandungen und Hintergruende Painten.
-|*		2. Den Draw Layer (Ramen und Zeichenobjekte) der unter dem Dokument
+|*		2. Den Draw Layer (Rahmen und Zeichenobjekte) der unter dem Dokument
 |* 		   liegt painten (Hoelle).
 |*		3. Den Dokumentinhalt (Text) Painten.
-|*		4. Den Drawlayer der ueber dem Dokuemnt liegt painten.
+|*		4. Den Drawlayer der ueber dem Dokument liegt painten.
 |*
 |*	Ersterstellung		MA 01. Jun. 92
 |*	Letzte Aenderung	MA 10. Oct. 97
@@ -2882,7 +2884,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
 	::SwCalcPixStatics( pSh->GetOut() );
 	aGlobalRetoucheColor = pSh->Imp()->GetRetoucheColor();
 
-	//Ggf. eine Action ausloesen um klare Verhaeltnisse zu schaffen.
+	//Ggf. eine Aktion ausloesen um klare Verhaeltnisse zu schaffen.
 	//Durch diesen Kunstgriff kann in allen Paints davon ausgegangen werden,
 	//das alle Werte gueltigt sind - keine Probleme, keine Sonderbehandlung(en).
     // --> OD 2008-10-07 #i92745#
@@ -2948,7 +2950,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
 
     while ( pPage )
     {
-        const bool bPaintRightShadow =  !bBookMode || (pPage == Lower()) || (!bLTR && !pPage->OnRightPage()) || (bLTR && pPage->OnRightPage());
+        const bool bPaintRightShadow = !bBookMode || (pPage == Lower()) || (!bLTR && !pPage->OnRightPage()) || (bLTR && pPage->OnRightPage());
         const bool bRightSidebar = pPage->SidebarPosition() == sw::sidebarwindows::SIDEBAR_RIGHT;
 
         if ( !pPage->IsEmptyPage() )
@@ -2998,7 +3000,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 // moved paint pre-process for DrawingLayer overlay here since the above
                 // code dependent from bExtraData may expand the PaintRect
                 {
-                    // #i75172# if called from ViewShell::ImplEndAction it sould no longer
+                    // #i75172# if called from ViewShell::ImplEndAction it should no longer
                     // really be used but handled by ViewShell::ImplEndAction already
                     const Region aDLRegion(aPaintRect.SVRect());
                     pSh->DLPrePaint2(aDLRegion);
@@ -3032,10 +3034,10 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 {
                     pLines->LockLines( sal_True );
                     const IDocumentDrawModelAccess* pIDDMA = pSh->getIDocumentDrawModelAccess();
-                    pSh->Imp()->PaintLayer( pIDDMA->GetHellId(), 
-                                            pPrintData, 
+                    pSh->Imp()->PaintLayer( pIDDMA->GetHellId(),
+                                            pPrintData,
                                             aPaintRect,
-                                            &aPageBackgrdColor, 
+                                            &aPageBackgrdColor,
                                             (pPage->IsRightToLeft() ? true : false),
                                             &aSwRedirector );
                     pLines->PaintLines( pSh->GetOut() );
@@ -3066,8 +3068,8 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 {
                     /// OD 29.08.2002 #102450# - add 3rd parameter
                     // OD 09.12.2002 #103045# - add 4th parameter for horizontal text direction.
-                    pSh->Imp()->PaintLayer( pSh->GetDoc()->GetHeavenId(), 
-                                            pPrintData, 
+                    pSh->Imp()->PaintLayer( pSh->GetDoc()->GetHeavenId(),
+                                            pPrintData,
                                             aPaintRect,
                                             &aPageBackgrdColor,
                                             (pPage->IsRightToLeft() ? true : false),
@@ -3117,7 +3119,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
 
             if ( aRect.IsOver( aEmptyPageRect ) )
             {
-                // #i75172# if called from ViewShell::ImplEndAction it sould no longer
+                // #i75172# if called from ViewShell::ImplEndAction it should no longer
                 // really be used but handled by ViewShell::ImplEndAction already
                 {
                     const Region aDLRegion(aPaintRect.SVRect());
@@ -3518,7 +3520,7 @@ sal_Bool SwFlyFrm::IsPaint( SdrObject *pObj, const ViewShell *pSh )
         // --> OD #i117962#
         if ( pObj->ISA(SwFlyDrawObj) )
         {
-            bPaint = false;        
+            bPaint = false;
         }
         // <--
         else if ( pObj->ISA(SwVirtFlyDrawObj) )
@@ -3804,7 +3806,7 @@ void SwFlyFrm::Paint(SwRect const& rRect, SwPrintData const*const) const
 		}
 	}
 
-    // OD 19.12.2002 #106318# - fly frame will paint it's subsidiary lines and
+    // OD 19.12.2002 #106318# - fly frame will paint its subsidiary lines and
     // the subsidiary lines of its lowers on its own, due to overlapping with
     // other fly frames or other objects.
     if( pGlobalShell->GetWin()
@@ -3833,7 +3835,7 @@ void SwFlyFrm::Paint(SwRect const& rRect, SwPrintData const*const) const
         }
         else
         {
-            // create new special subsidiardy lines
+            // create new special subsidiary lines
             pSpecSubsLines = new SwSubsRects;
             bSpecSubsLineRectsCreated = true;
         }
@@ -4101,7 +4103,7 @@ void SwFrm::PaintShadow( const SwRect& rRect, SwRect& rOutRect,
     if( aRegion.Count() && pGlobalShell->GetWin() &&
         Application::GetSettings().GetStyleSettings().GetHighContrastMode() )
     {
-        // Is heigh contrast mode, the output device has already set the
+        // In high contrast mode, the output device has already set the
         // DRAWMODE_SETTINGSFILL flag. This causes the SetFillColor function
         // to ignore the setting of a new color. Therefore we have to reset
         // the drawing mode
@@ -5548,19 +5550,19 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
     _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
     // paint right shadow
-    if ( bPaintRightShadow )
-    {
-        _pViewShell->GetOut()->SetFillColor( rColor );
-        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-    }
+//    if ( bPaintRightShadow )
+//    {
+//        _pViewShell->GetOut()->SetFillColor( rColor );
+//        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+//    }
 
     // paint bottom shadow
-    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+//    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
-    _pViewShell->GetOut()->SetFillColor( aFill );
-    _pViewShell->GetOut()->SetLineColor( aLine );
+//    _pViewShell->GetOut()->SetFillColor( aFill );
+//    _pViewShell->GetOut()->SetLineColor( aLine );
 }
 
 //mod #i6193# paint sidebar for notes
@@ -5975,11 +5977,11 @@ void SwFrm::PaintBackground( const SwRect &rRect, const SwPageFrm *pPage,
                             ///     background transparency have to be considered
                             ///     Set missing 5th parameter to the default value GRFNUM_NO
                             ///         - see declaration in /core/inc/frmtool.hxx.
-                        ::DrawGraphic( 
-                                pItem, 
-                                pOut, 
-                                aOrigBackRect, 
-                                aRect, // aRegion[i], 
+                        ::DrawGraphic(
+                                pItem,
+                                pOut,
+                                aOrigBackRect,
+                                aRect, // aRegion[i],
                                 GRFNUM_NO,
                                 bConsiderBackgroundTransparency );
                         //}
@@ -6115,7 +6117,7 @@ void SwLayoutFrm::RefreshLaySubsidiary( const SwPageFrm *pPage,
 		}
 	}
 
-	if ( bSubsOther || bSubsSect  || bSubsBody || bSubsTable || bSubsFly )
+	if ( bSubsOther || bSubsSect || bSubsBody || bSubsTable || bSubsFly )
 		PaintSubsidiaryLines( pPage, rRect );
 
     const SwFrm *pLow = Lower();
@@ -6487,7 +6489,7 @@ void SwLayoutFrm::RefreshExtraData( const SwRect &rRect ) const
 		if ( pCnt->IsTxtFrm() && ( bRedLine ||
 			 ( !pCnt->IsInTab() &&
 			   ((bLineInBody && pCnt->IsInDocBody()) ||
-			   (bLineInFly  && pCnt->IsInFly())) ) ) &&
+			   (bLineInFly && pCnt->IsInFly())) ) ) &&
 			 pCnt->Frm().Top() <= rRect.Bottom() &&
 			 pCnt->Frm().Bottom() >= rRect.Top() )
 		{
@@ -6709,7 +6711,7 @@ void SwFrm::Retouche( const SwPageFrm * pPage, const SwRect &rRect ) const
 
     @return true, if a background brush for the frame is found
 */
-sal_Bool SwFrm::GetBackgroundBrush( 
+sal_Bool SwFrm::GetBackgroundBrush(
     drawinglayer::attribute::SdrAllFillAttributesHelperPtr& rFillAttributes,
     const SvxBrushItem* & rpBrush,
     const Color*& rpCol,
@@ -6767,8 +6769,8 @@ sal_Bool SwFrm::GetBackgroundBrush(
 
         // #i125189# Do not base the decision for using the parent's fill style for this
         // frame when the new DrawingLayer FillAttributes are used on the SdrAllFillAttributesHelper
-        // information. There the data is already optimized to no fill in the case that the 
-        // transparence is at 100% while no fill is the criteria for derivation
+        // information. There the data is already optimized to no fill in the case that the
+        // transparency is at 100% while no fill is the criteria for derivation
         bool bNewDrawingLayerFillStyleIsUsedAndNotNoFill(false);
 
         if(rFillAttributes.get())
@@ -6797,7 +6799,7 @@ sal_Bool SwFrm::GetBackgroundBrush(
         ///     If <bConsiderBackgroundTransparency> is set - see above -,
         ///     return brush of frame <pFrm>, if its color is *not* "no fill"/"auto fill"
         if (
-            // #i125189# Done when the new DrawingLayer FillAttributes are used and 
+            // #i125189# Done when the new DrawingLayer FillAttributes are used and
             // not XFILL_NONE (see above)
             bNewDrawingLayerFillStyleIsUsedAndNotNoFill ||
 

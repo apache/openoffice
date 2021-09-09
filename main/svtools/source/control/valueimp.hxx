@@ -233,7 +233,7 @@ private:
     ValueSetItem* getItem (sal_uInt16 nIndex) const;
 
     /** Check whether or not the object has been disposed (or is in the
-        state of beeing disposed).  If that is the case then
+        state of being disposed).  If that is the case then
         DisposedException is thrown to inform the (indirect) caller of the
         foul deed.
     */
@@ -241,7 +241,7 @@ private:
         throw (::com::sun::star::lang::DisposedException);
 
     /** Check whether or not the object has been disposed (or is in the
-        state of beeing disposed).
+        state of being disposed).
 
         @return sal_True, if the object is disposed or in the course
         of being disposed. Otherwise, sal_False is returned.

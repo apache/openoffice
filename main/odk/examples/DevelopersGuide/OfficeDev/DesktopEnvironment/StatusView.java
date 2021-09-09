@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,15 +38,15 @@ import java.lang.String;
  * and actualize it automatically if frame broadcast changes of
  * his contained document.
  * Threads are necessary to prevent this view against deadlocks.
- * These deadlocks can occure if a listener will be notified
+ * These deadlocks can occur if a listener will be notified
  * by the office in an "oneway" method and try to call back
  * to the office by using a synchronous method.
  * UNO must guarantee order of all these calls ... and if
  * the source of arrived event holds a mutex and our synchronous
- * call needs this mutex too => a deadlock occure.
+ * call needs this mutex too => a deadlock occur.
  * Why? UNO had created a new thread for our synchronous call
  * inside the office process and so exist different threads
- * for this constallation.
+ * for this constellation.
  *
  * @author     Andreas Schl&uuml;ns
  * @created    20.06.2002 15:08
@@ -197,10 +197,10 @@ public class StatusView extends    JPanel
     // ____________________
 
     /**
-     * Set new frame for this view and start listening for events imedatly.
-     * We create one status listener for every control we whish to update.
+     * Set new frame for this view and start listening for events immediately.
+     * We create one status listener for every control we wish to update.
      * And because the environment of the frame can be changed - these
-     * listener refresh himself internaly for frame action events too.
+     * listener refresh himself internally for frame action events too.
      * So we register it as such frame action listener only here.
      * Rest is done automatically ...
      *
@@ -214,7 +214,7 @@ public class StatusView extends    JPanel
 
         // create some listener on given frame for available status events
         // Created listener instances will register herself on this frame and
-        // show her received informations automatically on setted UI controls.
+        // show her received informations automatically on set UI controls.
         m_aFontListener      = new StatusListener(m_laFontValue     ,FONT_ON     ,FONT_OFF     ,xFrame, FEATUREURL_FONT     );
         m_aSizeListener      = new StatusListener(m_laSizeValue     ,SIZE_ON     ,SIZE_OFF     ,xFrame, FEATUREURL_SIZE     );
         m_aBoldListener      = new StatusListener(m_laBoldValue     ,BOLD_ON     ,BOLD_OFF     ,xFrame, FEATUREURL_BOLD     );
@@ -232,7 +232,7 @@ public class StatusView extends    JPanel
 
     /**
      * If this java application shutdown - we must cancel all current existing
-     * listener connections. Otherwhise the office will run into some
+     * listener connections. Otherwise the office will run into some
      * DisposedExceptions if it tries to use these forgotten listener references.
      * And of course it can die doing that.
      * We are registered at a central object to be informed if the VM will exit.

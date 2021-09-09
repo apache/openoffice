@@ -46,7 +46,7 @@ TARFILE_NAME=$(PRJNAME)-$(LIBSERFVERSION)
 # thankfully, does not care.
 TARFILE_MD5=f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
 
-PATCH_FILES=
+PATCH_FILES=NULbytes.patch
 
 .IF "$(OS)"=="WNT"
 

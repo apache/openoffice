@@ -94,7 +94,7 @@ namespace drawinglayer
             // The logic position
 			basegfx::B2DPoint						maBasePosition;
 
-            // The stripe colors and legth
+            // The stripe colors and length
 			basegfx::BColor							maRGBColorA;
 			basegfx::BColor							maRGBColorB;
 			double									mfDiscreteDashLength;
@@ -198,7 +198,7 @@ namespace drawinglayer
             // the style
             HelplineStyle                           meStyle;
 
-            // The stripe colors and legth
+            // The stripe colors and length
 			basegfx::BColor							maRGBColorA;
 			basegfx::BColor							maRGBColorB;
 			double									mfDiscreteDashLength;
@@ -243,7 +243,7 @@ namespace drawinglayer
             // The logic range
 			basegfx::B2DRange						maRollingRectangle;
 
-            // The stripe colors and legth
+            // The stripe colors and length
 			basegfx::BColor							maRGBColorA;
 			basegfx::BColor							maRGBColorB;
 			double									mfDiscreteDashLength;

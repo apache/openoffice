@@ -40,7 +40,7 @@
 <bookmark xml-lang="en-US" branch="index" id="bm_id3154136"><bookmark_value>Len function</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3154136" xml-lang="en-US" level="1" l10n="U" oldref="1"><link href="text/sbasic/shared/03120402.xhp" name="Len Function [Runtime]">Len Function [Runtime]</link></paragraph>
-<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2">Returns the number of characters in a string, or the number of bytes that are required to store a variable.</paragraph>
+<paragraph role="paragraph" id="par_id3147576" xml-lang="en-US" l10n="U" oldref="2">Returns the number of characters in a string.</paragraph>
 </section>
 <paragraph role="heading" id="hd_id3159177" xml-lang="en-US" level="2" l10n="U" oldref="3">Syntax:</paragraph>
 <paragraph role="paragraph" id="par_id3150669" xml-lang="en-US" l10n="U" oldref="4">Len (Text As String)</paragraph>
@@ -48,7 +48,7 @@
 <paragraph role="paragraph" id="par_id3143270" xml-lang="en-US" l10n="U" oldref="6">Long</paragraph>
 <paragraph role="heading" id="hd_id3147531" xml-lang="en-US" level="2" l10n="U" oldref="7">Parameters:</paragraph>
 <paragraph role="paragraph" id="par_id3147265" xml-lang="en-US" l10n="U" oldref="8">
-<emph>Text:</emph> Any string expression or a variable of another type.</paragraph>
+<emph>Text:</emph> Any string expression.</paragraph>
 <embed href="text/sbasic/shared/00000003.xhp#errorcode"/>
 <embed href="text/sbasic/shared/00000003.xhp#err5"/>
 <paragraph role="heading" id="hd_id3153360" xml-lang="en-US" level="2" l10n="U" oldref="9">Example:</paragraph>

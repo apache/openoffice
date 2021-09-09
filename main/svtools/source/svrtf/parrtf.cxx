@@ -179,7 +179,7 @@ int SvRTFParser::_GetNextToken()
 										nUCharOverread = nUCharOverread;
 #endif
 							}
-							aToken.Erase(); // #i47831# erase token to prevent the token from beeing treated as text
+							aToken.Erase(); // #i47831# erase token to prevent the token from being treated as text
 							// read next token
 							nRet = 0;
 							break;

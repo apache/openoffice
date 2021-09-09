@@ -138,7 +138,7 @@ public class InteractionHandler implements XInteractionHandler
             }
         }
 
-        // otherwhise we can abort this interaction only
+        // otherwise we can abort this interaction only
         if (xAbort != null)
         {
             xAbort.select();

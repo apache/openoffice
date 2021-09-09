@@ -37,8 +37,8 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=curl-7.66.0
-TARFILE_MD5=8cb2898a9adc106075ac3cdc2b965bf6
+TARFILE_NAME=curl-7.72.0
+TARFILE_MD5=7422feb126df677d2d33294a1fd079ea
 PATCH_FILES=buildssh.patch
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
@@ -110,11 +110,11 @@ BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 DEBUG=yes EXCFLAGS=$
 .ENDIF
 
 .IF "$(CPUNAME)"=="INTEL"
-OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.dll
-OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.lib
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-schannel/bin/libcurl.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-schannel/lib/libcurl.lib
 .ELIF "$(CPUNAME)"=="X86_64"
-OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.dll
-OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-winssl-obj-lib/libcurl.lib
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-schannel/bin/libcurl.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-schannel/lib/libcurl.lib
 .ENDIF
 
 .ENDIF

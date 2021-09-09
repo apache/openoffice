@@ -48,6 +48,7 @@ TARFILE_MD5=a39f6c07ddb20d7dd2ff1f95fa21e2cd
 ADDITIONAL_FILES=src/makefile.mk src/raptor_config.h
 
 OOO_PATCH_FILES= \
+    $(TARFILE_NAME).patch.nspace \
     $(TARFILE_NAME).patch.dmake \
 
 PATCH_FILES=$(OOO_PATCH_FILES)
@@ -100,6 +101,13 @@ LDFLAGS:=-Wl,-rpath,'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib' -Wl,-noinhibit-exec
 LDFLAGS:=-Wl,-R'$$$$ORIGIN:$$$$ORIGIN/../ure-link/lib'
 .ENDIF                  # "$(OS)$(COM)"=="SOLARISC52"
 
+# Apple added availability annotiations to __darwin_check_fd_set_overflow to avoid the use of weak
+# and building with older deployment target fundamentally requires weak imports
+# Grrrrrr
+.IF "$(OS)"=="MACOSX"
+LDFLAGS+:=-Wl,-U,___darwin_check_fd_set_overflow
+.ENDIF                  #
+
 .IF "$(COM)"=="C52" && "$(CPU)"=="U"
 CFLAGS=-m64
 .EXPORT: CFLAGS
@@ -128,7 +136,7 @@ XSLTLIB!:=$(XSLTLIB) # expand dmake variables for xslt-config
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure
 # do not enable grddl parser (#i93768#)
-CONFIGURE_FLAGS=--disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --with-www=xml --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
+CONFIGURE_FLAGS=--with-threads --with-curl-config=no --with-icu-config=no --disable-static --disable-gtk-doc --enable-parsers="rdfxml ntriples turtle trig guess rss-tag-soup" --without-bdb --without-sqlite --without-mysql --without-postgresql --without-threestore --with-regex-library=posix --with-decimal=none --with-www=xml --prefix=$(PDW)/$(OUT) --includedir=$(PWD)/$(INCCOM) --libdir=$(PWD)/$(LB)
 .IF "$(SYSTEM_LIBXML)" == "NO"
 CONFIGURE_FLAGS+=--with-xml2-config=${SOLARVERSION}/${INPATH}/bin/xml2-config \
 	--with-xslt-config=${SOLARVERSION}/${INPATH}/bin/xslt-config

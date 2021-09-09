@@ -189,7 +189,7 @@ sal_Bool SAL_CALL URLTransformer::parseStrict( URL& aURL ) throw( RuntimeExcepti
 		}
 		else
 		{
-			// Minmal support for unknown protocols. This is mandatory to support the "Protocol Handlers" implemented
+			// Minimal support for unknown protocols. This is mandatory to support the "Protocol Handlers" implemented
 			// in framework!
 			aURL.Protocol	= aProtocol;
 			aURL.Main		= aURL.Complete;
@@ -229,7 +229,7 @@ sal_Bool SAL_CALL URLTransformer::parseSmart(			URL&		aURL			,
 	}
 	else
 	{
-		// Minmal support for unknown protocols. This is mandatory to support the "Protocol Handlers" implemented
+		// Minimal support for unknown protocols. This is mandatory to support the "Protocol Handlers" implemented
 		// in framework!
 		if ( INetURLObject::CompareProtocolScheme( sSmartProtocol ) == INET_PROT_NOT_VALID )
 		{

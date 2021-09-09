@@ -1322,7 +1322,7 @@ void AccessibleShape::ViewForwarderChanged (ChangeType aChangeType,
 
     //}
 
-    //// Put a space between name and index because of Gnopernicus othewise
+    //// Put a space between name and index because of Gnopernicus otherwise
     //// spells the name.
     //sName += OUString (RTL_CONSTASCII_USTRINGPARAM(" ")) + OUString::valueOf (nIndex);
 
@@ -1674,7 +1674,7 @@ throw (uno::RuntimeException)
     
     std::sort( vXShapes.begin(), vXShapes.end(), XShapePosCompareHelper() );
 
-    //get the the index of the selected object in the group
+    //get the index of the selected object in the group
     std::vector< uno::Reference<drawing::XShape> >::iterator aIter;
     //we start counting position from 1
     sal_Int32 nPos = 1;

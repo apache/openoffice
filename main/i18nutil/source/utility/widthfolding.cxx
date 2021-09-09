@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ OUString widthfolding::decompose_ja_voiced_sound_marks (const OUString& inStr, s
   // Prepare pointers of unicode character arrays.
   const sal_Unicode* src = inStr.getStr() + startPos;
   sal_Unicode* dst = newStr->buffer;
-  
+
   // Decomposition: GA --> KA + voice-mark
   while (nCount -- > 0) {
     sal_Unicode c = *src++;
@@ -137,7 +137,7 @@ OUString widthfolding::compose_ja_voiced_sound_marks (const OUString& inStr, sal
       position = startPos;
   }
 
-  // 
+  //
   sal_Unicode previousChar = *src ++;
   sal_Unicode currentChar;
 
@@ -173,7 +173,7 @@ OUString widthfolding::compose_ja_voiced_sound_marks (const OUString& inStr, sal
             position ++;
             *p ++ = position ++;
         }
-	*dst ++ =  composition_table[i][j];
+	*dst ++ = composition_table[i][j];
 	previousChar = *src ++;
 	nCount --;
 	continue;
@@ -220,10 +220,10 @@ oneToOneMapping& widthfolding::getfull2halfTableForASC()
 
     // bluedwarf: dirty hack!
     // There is an exception. Additional conversion is required following:
-    //  0xFFE5 (FULLWIDTH YEN SIGN)  --> 0x005C (REVERSE SOLIDUS)
+    //  0xFFE5 (FULLWIDTH YEN SIGN) --> 0x005C (REVERSE SOLIDUS)
     //
     //  See the following page for detail:
-    // http://wiki.services.openoffice.org/wiki/Calc/Features/JIS_and_ASC_functions
+    // https://wiki.openoffice.org/wiki/Calc/Features/JIS_and_ASC_functions
     int i, j, high, low;
     int n = sizeof(full2halfASCException) / sizeof(UnicodePairWithFlag);
     for( i = 0; i < n; i++ )
@@ -257,7 +257,7 @@ oneToOneMapping& widthfolding::gethalf2fullTableForJIS()
     //  0x0060 (GRAVE ACCENT)    --> 0x2018 (LEFT SINGLE QUOTATION MARK)
     //
     //  See the following page for detail:
-    // http://wiki.services.openoffice.org/wiki/Calc/Features/JIS_and_ASC_functions
+    // https://wiki.openoffice.org/wiki/Calc/Features/JIS_and_ASC_functions
     int i, j, high, low;
     int n = sizeof(half2fullJISException) / sizeof(UnicodePairWithFlag);
     for( i = 0; i < n; i++ )
@@ -293,3 +293,4 @@ oneToOneMapping& widthfolding::gethalfKana2fullKanaTable()
 }
 
 } } } }
+

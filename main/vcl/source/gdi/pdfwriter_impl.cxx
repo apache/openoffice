@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -111,11 +111,11 @@ void PDFTestOutputStream::write( const com::sun::star::uno::Reference< com::sun:
 // the embedding of such elements in actual run
 void doTestCode()
 {
-    static const char* pHome = getenv( "HOME"  );
+    static const char* pHome = getenv( "HOME" );
     rtl::OUString aTestFile( RTL_CONSTASCII_USTRINGPARAM( "file://" ) );
     aTestFile += rtl::OUString( pHome, strlen( pHome ), RTL_TEXTENCODING_MS_1252 );
     aTestFile += rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "/pdf_export_test.pdf" ) );
-    
+
     PDFWriter::PDFWriterContext aContext;
     aContext.URL			= aTestFile;
     aContext.Version		= PDFWriter::PDF_1_4;
@@ -185,7 +185,7 @@ void doTestCode()
     aWriter.SetTextColor( Color( COL_BLACK ) );
     aWriter.SetFont( Font( String( RTL_CONSTASCII_USTRINGPARAM( "Times" ) ), Size( 0, 500 ) ) );
     aWriter.DrawText( Rectangle( Point( 4500, 1500 ), Size( 12000, 3000 ) ),
-                      String( RTL_CONSTASCII_USTRINGPARAM( "Here's where all things come to an end ... well at least the paragaph from the last page." ) ),
+                      String( RTL_CONSTASCII_USTRINGPARAM( "Here's where all things come to an end ... well at least the paragraph from the last page." ) ),
                       TEXT_DRAW_MULTILINE | TEXT_DRAW_WORDBREAK
                       );
     aWriter.EndStructureElement();
@@ -218,7 +218,7 @@ void doTestCode()
     aWriter.BeginStructureElement( PDFWriter::Caption );
     aWriter.DrawText( Point( 4500, 9000 ), String( RTL_CONSTASCII_USTRINGPARAM( "Some drawing stuff inside the structure" ) ) );
     aWriter.EndStructureElement();
-    
+
     // test clipping
     basegfx::B2DPolyPolygon aClip;
     basegfx::B2DPolygon aClipPoly;
@@ -229,7 +229,7 @@ void doTestCode()
     aClipPoly.setClosed( true );
     //aClipPoly.flip();
     aClip.append( aClipPoly );
-    
+
     aWriter.Push( PUSH_CLIPREGION | PUSH_FILLCOLOR );
     aWriter.SetClipRegion( aClip );
     aWriter.DrawEllipse( Rectangle( Point( 4500, 9600 ), Size( 12000, 3000 ) ) );
@@ -519,7 +519,7 @@ static void appendHex( sal_Int8 nInt, OStringBuffer& rBuffer )
 static void appendName( const OUString& rStr, OStringBuffer& rBuffer )
 {
 // FIXME i59651 add a check for max length of 127 chars? Per PDF spec 1.4, appendix C.1
-// I guess than when reading the #xx sequence it will count for a single character.
+// I guess that when reading the #xx sequence it will count for a single character.
     OString aStr( OUStringToOString( rStr, RTL_TEXTENCODING_UTF8 ) );
     const sal_Char* pStr = aStr.getStr();
     int nLen = aStr.getLength();
@@ -528,7 +528,7 @@ static void appendName( const OUString& rStr, OStringBuffer& rBuffer )
         /*  #i16920# PDF recommendation: output UTF8, any byte
          *  outside the interval [33(=ASCII'!');126(=ASCII'~')]
          *  should be escaped hexadecimal
-         *  for the sake of ghostscript which also reads PDF
+         *  for the sake of GhostScript which also reads PDF
          *  but has a narrower acceptance rate we only pass
          *  alphanumerics and '-' literally.
          */
@@ -625,8 +625,8 @@ static void appendLiteralString( const sal_Char* pStr, sal_Int32 nLength, OStrin
  * even though they expose the content of PDF file (e.g. guessing the PDF content from the
  * destination name).
  *
- * Fhurter limitation: it is advisable to use standard ASCII characters for
- * OOo bookmarks.
+ * Further limitation: it is advisable to use standard ASCII characters for
+ * AOO bookmarks.
 */
 static void appendDestinationName( const rtl::OUString& rString, OStringBuffer& rBuffer )
 {
@@ -692,7 +692,7 @@ void PDFWriterImpl::createWidgetFieldName( sal_Int32 i_nWidgetIndex, const PDFWr
             appendHex( (sal_Int8)pStr[i], aBuffer );
         }
     }
-    
+
     OString aFullName( aBuffer.makeStringAndClear() );
 
     /* #i82785# create hierarchical fields down to the for each dot in i_rName */
@@ -727,7 +727,7 @@ void PDFWriterImpl::createWidgetFieldName( sal_Int32 i_nWidgetIndex, const PDFWr
                     OString aParentDomain( aDomain.copy( 0, nLastTokenIndex-1 ) );
                     it = m_aFieldNameMap.find( aParentDomain );
                     OSL_ENSURE( it != m_aFieldNameMap.end(), "field name not found" );
-                    if( it != m_aFieldNameMap.end()  )
+                    if( it != m_aFieldNameMap.end() )
                     {
                         OSL_ENSURE( it->second < sal_Int32(m_aWidgets.size()), "invalid field number entry" );
                         if( it->second < sal_Int32(m_aWidgets.size()) )
@@ -765,7 +765,7 @@ void PDFWriterImpl::createWidgetFieldName( sal_Int32 i_nWidgetIndex, const PDFWr
             }
         }
     } while( nTokenIndex != -1 );
-    
+
     // insert widget into its hierarchy field
     if( aDomain.getLength() )
     {
@@ -781,7 +781,7 @@ void PDFWriterImpl::createWidgetFieldName( sal_Int32 i_nWidgetIndex, const PDFWr
             }
         }
     }
-    
+
     if( aPartialName.getLength() == 0 )
     {
         // how funny, an empty field name
@@ -797,7 +797,7 @@ void PDFWriterImpl::createWidgetFieldName( sal_Int32 i_nWidgetIndex, const PDFWr
     if( ! m_aContext.AllowDuplicateFieldNames )
     {
         std::hash_map<OString, sal_Int32, OStringHash>::iterator it = m_aFieldNameMap.find( aFullName );
-    
+
         if( it != m_aFieldNameMap.end() ) // not unique
         {
             std::hash_map< OString, sal_Int32, OStringHash >::const_iterator check_it;
@@ -1123,7 +1123,7 @@ PDFWriterImpl::PDFPage::PDFPage( PDFWriterImpl* pWriter, sal_Int32 nPageWidth, s
         m_nPageWidth( nPageWidth ),
         m_nPageHeight( nPageHeight ),
         m_eOrientation( eOrientation ),
-        m_nPageObject( 0 ),  // invalid object number
+        m_nPageObject( 0 ), // invalid object number
         m_nPageIndex( -1 ), // invalid index
         m_nStreamLengthObject( 0 ),
         m_nBeginStreamPos( 0 ),
@@ -1339,7 +1339,7 @@ bool PDFWriterImpl::PDFPage::emit(sal_Int32 nParentObject )
             aLine.append( pM );
             aLine.append( "\n" );
         }
-        if( pDi  )
+        if( pDi )
         {
             aLine.append( "/Di " );
             aLine.append( pDi );
@@ -1532,7 +1532,7 @@ void PDFWriterImpl::PDFPage::appendPolygon( const basegfx::B2DPolygon& rPoly, OS
             if( i != nPoints || aPoly.isClosed() )
             {
                 sal_uInt32 nCurPoint  = i % nPoints;
-                sal_uInt32 nLastPoint = i-1; 
+                sal_uInt32 nLastPoint = i-1;
                 basegfx::B2DPoint aPoint( aPoly.getB2DPoint( nCurPoint ) );
                 if( aPoly.isNextControlPointUsed( nLastPoint ) &&
                     aPoly.isPrevControlPointUsed( nCurPoint ) )
@@ -1798,7 +1798,7 @@ void PDFWriterImpl::PDFPage::appendWaveLine( sal_Int32 nWidth, sal_Int32 nY, sal
         return;
 
     m_bOpen = true;
-    
+
     // setup DocInfo
     setupDocInfo();
 
@@ -1808,10 +1808,10 @@ void PDFWriterImpl::PDFPage::appendWaveLine( sal_Int32 nWidth, sal_Int32 nY, sal
 
 	/* the size of the Codec default maximum */
 	checkEncryptionBufferSize( 0x4000 );
-	
+
 	if( xEnc.is() )
 	    prepareEncryption( xEnc );
-	
+
 	if( m_aContext.Encryption.Encrypt() )
 	{
 	    // sanity check
@@ -1890,7 +1890,7 @@ void PDFWriterImpl::computeDocumentIdentifier( std::vector< sal_uInt8 >& o_rIden
                                                )
 {
     o_rIdentifier.clear();
-    
+
     //build the document id
 	rtl::OString aInfoValuesOut;
 	OStringBuffer aID( 1024 );
@@ -1933,7 +1933,7 @@ void PDFWriterImpl::computeDocumentIdentifier( std::vector< sal_uInt8 >& o_rIden
     // according to ISO 19005-1:2005 6.7.3 the date is corrected for
     // local time zone offset UTC only, whereas Acrobat 8 seems
     // to use the localtime notation only
-    // according to a raccomandation in XMP Specification (Jan 2004, page 75)
+    // according to a recommendation in XMP Specification (Jan 2004, page 75)
     // the Acrobat way seems the right approach
     aCreationMetaDateString.append( (sal_Char)('0' + ((aDT.Year/1000)%10)) );
     aCreationMetaDateString.append( (sal_Char)('0' + ((aDT.Year/100)%10)) );
@@ -2080,7 +2080,7 @@ void PDFWriterImpl::appendLiteralStringEncrypt( const rtl::OUString& rInString, 
 	sal_Int32 nLen = aBufferString.getLength();
 	rtl::OStringBuffer aBuf( nLen );
 	const sal_Char* pT = aBufferString.getStr();
-	
+
 	for( sal_Int32 i = 0; i < nLen; i++, pT++ )
 	{
 	    if( (*pT & 0x80) == 0 )
@@ -3152,19 +3152,19 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitSystemFont( const ImplFontDa
         Int32Vector aGlyphWidths;
         Ucs2UIntMap aUnicodeMap;
         m_pReferenceDevice->mpGraphics->GetGlyphWidths( pFont, false, aGlyphWidths, aUnicodeMap );
-        
+
         OUString aTmpName;
         osl_createTempFile( NULL, NULL, &aTmpName.pData );
         sal_GlyphId aGlyphIds[ 256 ];
         sal_uInt8 pEncoding[ 256 ];
         sal_Ucs   pUnicodes[ 256 ];
         sal_Int32 pDuWidths[ 256 ];
-        
+
         memset( aGlyphIds, 0, sizeof( aGlyphIds ) );
         memset( pEncoding, 0, sizeof( pEncoding ) );
         memset( pUnicodes, 0, sizeof( pUnicodes ) );
         memset( pDuWidths, 0, sizeof( pDuWidths ) );
-        
+
         for( sal_Ucs c = 32; c < 256; c++ )
         {
             pUnicodes[c] = c;
@@ -3173,7 +3173,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitSystemFont( const ImplFontDa
             if( aUnicodeMap.find( c ) != aUnicodeMap.end() )
                 pWidths[ c ] = aGlyphWidths[ aUnicodeMap[ c ] ];
         }
-        
+
         m_pReferenceDevice->mpGraphics->CreateFontSubset( aTmpName, pFont, aGlyphIds, pEncoding, pDuWidths, 256, aInfo );
         osl_removeFile( aTmpName.pData );
     }
@@ -3213,12 +3213,12 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitSystemFont( const ImplFontDa
             aLine.append( " 0 R>>\n"
                           "endobj\n\n" );
             writeBuffer( aLine.getStr(), aLine.getLength() );
-    
-            nFontObject = nObject;    
+
+            nFontObject = nObject;
             aRet[ rEmbed.m_nNormalFontID ] = nObject;
         }
     }
-    
+
     return aRet;
 }
 
@@ -3299,7 +3299,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
             }
         }
     }
-    
+
     FontSubsetInfo aInfo;
     sal_Int32 pWidths[256];
     const unsigned char* pFontData = NULL;
@@ -3328,7 +3328,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 ((sal_Int32)pFontData[nIndex+5]) << 24;
                 nIndex += nBytes+6;
             }
-            
+
             // search for eexec
             // TODO: use getPfbSegmentLengths() if possible to skip the search thingies below
             nIndex = 0;
@@ -3353,7 +3353,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
             // this should end the ascii part
             if( nIndex > nFontLen-5 )
                 throw FontException();
-            
+
             nEndAsciiIndex = nIndex+4;
             // now count backwards until we can account for 512 '0'
             // which is the endmarker of the (hopefully) binary data
@@ -3380,10 +3380,10 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 }
                 nIndex--;
             }
-            
+
             if( nIndex < 1 || nIndex <= nEndAsciiIndex )
                 throw FontException();
-            
+
             // nLength3 is the rest of the file - excluding any section headers
             // nIndex now points to the first of the 512 '0' characters marking the
             // fixed content portion
@@ -3401,7 +3401,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         nLength3 -= (nFontLen - *it);
                 }
             }
-            
+
             // there may be whitespace to ignore before the 512 '0'
             while( pFontData[nIndex] == '\r' || pFontData[nIndex] == '\n' )
             {
@@ -3415,7 +3415,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 }
             }
             nEndBinaryIndex = nIndex;
-            
+
             // search for beginning of binary section
             nBeginBinaryIndex = nEndAsciiIndex;
             do
@@ -3427,7 +3427,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         ( pFontData[nBeginBinaryIndex] == '\r'	||
                             pFontData[nBeginBinaryIndex] == '\n'	||
                             it != aSections.end() ) );
-                    
+
                     // it seems to be vital to copy the exact whitespace between binary data
                     // and eexec, else a invalid font results. so make nEndAsciiIndex
                     // always immediate in front of nBeginBinaryIndex
@@ -3436,11 +3436,11 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         ;
                     if( it != aSections.end() )
                         nEndAsciiIndex = (*it)-1;
-                    
+
                     nLength1 = nEndAsciiIndex+1; // including the last character
                     for( it = aSections.begin(); it != aSections.end() && *it < nEndAsciiIndex; ++it )
                         nLength1 -= 6; // decrease by pfb section size
-                    
+
                     // if the first four bytes are all ascii hex characters, then binary data
                     // has to be converted to real binary data
                     for( nIndex = 0; nIndex < 4 &&
@@ -3483,7 +3483,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         DBG_ASSERT( !(nLength2 & 1), "uneven number of hex chars in binary pfa section" );
                         nLength2 /= 2;
                     }
-                    
+
                     // now we can actually write the font stream !
                     #if OSL_DEBUG_LEVEL > 1
                     emitComment( " PDFWriterImpl::emitEmbeddedFont" );
@@ -3511,13 +3511,13 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         "stream\n" );
                     if( !writeBuffer( aLine.getStr(), aLine.getLength() ) )
                         throw FontException();
-                    
+
                     sal_uInt64 nBeginStreamPos = 0;
                     osl_getFilePos( m_aFile, &nBeginStreamPos );
-                    
+
                     beginCompression();
                     checkAndEnableStreamEncryption( nStreamObject );
-                    
+
                     // write ascii section
                     if( aSections.begin() == aSections.end() )
                     {
@@ -3541,7 +3541,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         if( ! writeBuffer( pFontData+nIndex, nEndAsciiIndex-nIndex+1 ) )
                             throw FontException();
                     }
-                    
+
                     // write binary section
                     if( ! bConvertHexData )
                     {
@@ -3576,7 +3576,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                         boost::shared_array<unsigned char> pWriteBuffer( new unsigned char[ nLength2 ] );
                         rtl_zeroMemory( pWriteBuffer.get(), nLength2 );
                         int nWriteIndex = 0;
-                        
+
                         int nNextSectionIndex = 0;
                         for( it = aSections.begin(); it != aSections.end() && *it < nBeginBinaryIndex; ++it )
                             ;
@@ -3636,17 +3636,17 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                     }
                     endCompression();
                     disableStreamEncryption();
-                    
-                    
+
+
                     sal_uInt64 nEndStreamPos = 0;
                     osl_getFilePos( m_aFile, &nEndStreamPos );
-                    
+
                     // and finally close the stream
                     aLine.setLength( 0 );
                     aLine.append( "\nendstream\nendobj\n\n" );
                     if( ! writeBuffer( aLine.getStr(), aLine.getLength() ) )
                         throw FontException();
-                    
+
                     // write stream length object
                     aLine.setLength( 0 );
                     if( ! updateObject( nStreamLengthObject ) )
@@ -3672,21 +3672,21 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
             aErrorComment.append( sal_Int32(pFont->GetWeight()) );
             emitComment( aErrorComment.getStr() );
         }
-        
+
         if( nStreamObject )
             // write font descriptor
         nFontDescriptor = emitFontDescriptor( pFont, aInfo, 0, nStreamObject );
-        
+
         if( nFontDescriptor )
         {
             if( pEncoding )
                 nToUnicodeStream = createToUnicodeCMap( nEncoding, &aUnicodes[0], pUnicodesPerGlyph, pEncToUnicodeIndex, sizeof(nEncoding)/sizeof(nEncoding[0]) );
-            
+
             // write font object
             sal_Int32 nObject = createObject();
             if( ! updateObject( nObject ) )
                 throw FontException();
-            
+
             OStringBuffer aLine( 1024 );
             aLine.append( nObject );
             aLine.append( " 0 obj\n"
@@ -3715,11 +3715,11 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 "endobj\n\n" );
             if( ! writeBuffer( aLine.getStr(), aLine.getLength() ) )
                 throw FontException();
-            
+
             nFontObject = nObject;
-            
+
             aRet[ rEmbed.m_nNormalFontID ] = nObject;
-            
+
             // write additional encodings
             for( std::list< EmbedEncoding >::iterator enc_it = rEmbed.m_aExtendedEncodings.begin(); enc_it != rEmbed.m_aExtendedEncodings.end(); ++enc_it )
             {
@@ -3728,7 +3728,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 sal_Int32 nEncObject = createObject();
                 if( ! updateObject( nEncObject ) )
                     throw FontException();
-                
+
                 OutputDevice* pRef = getReferenceDevice();
                 pRef->Push( PUSH_FONT | PUSH_MAPMODE );
                 pRef->SetMapMode( MapMode( MAP_PIXEL ) );
@@ -3738,7 +3738,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 aFont.SetPitch( pFont->GetPitch() );
                 pRef->SetFont( aFont );
                 pRef->ImplNewFont();
-                
+
                 aLine.setLength( 0 );
                 aLine.append( nEncObject );
                 aLine.append( " 0 obj\n"
@@ -3754,7 +3754,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                     pEncToUnicodeIndex[nEncoded] = static_cast<sal_Int32>(aUnicodes.size());
                     aUnicodes.push_back( nEncodedCodes[nEncoded] );
                     pUnicodesPerGlyph[nEncoded] = 1;
-                    
+
                     aLine.append( " /" );
                     aLine.append( str_it->m_aName );
                     if( !((++nEncoded) & 15) )
@@ -3762,18 +3762,18 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                 }
                 aLine.append( "]>>\n"
                     "endobj\n\n" );
-                
+
                 pRef->Pop();
-                
+
                 if( ! writeBuffer( aLine.getStr(), aLine.getLength() ) )
                     throw FontException();
-                
+
                 nToUnicodeStream = createToUnicodeCMap( nEncoding, &aUnicodes[0], pUnicodesPerGlyph, pEncToUnicodeIndex, nEncoded );
-                
+
                 nObject = createObject();
                 if( ! updateObject( nObject ) )
                     throw FontException();
-                
+
                 aLine.setLength( 0 );
                 aLine.append( nObject );
                 aLine.append( " 0 obj\n"
@@ -3806,7 +3806,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
                     "endobj\n\n" );
                 if( ! writeBuffer( aLine.getStr(), aLine.getLength() ) )
                     throw FontException();
-                
+
                 aRet[ enc_it->m_nFontID ] = nObject;
             }
         }
@@ -3817,7 +3817,7 @@ std::map< sal_Int32, sal_Int32 > PDFWriterImpl::emitEmbeddedFont( const ImplFont
         endCompression();
         disableStreamEncryption();
     }
-    
+
     if( pFontData )
         m_pReferenceDevice->mpGraphics->FreeEmbedFontData( pFontData, nFontLen );
 
@@ -3994,7 +3994,7 @@ sal_Int32 PDFWriterImpl::emitFontDescriptor( const ImplFontData* pFont, FontSubs
                   "/CapHeight " );
     aLine.append( (sal_Int32)rInfo.m_nCapHeight );
     // According to PDF reference 1.4 StemV is required
-    // seems a tad strange to me, but well ...
+    // seems a tad strange to me, but well...
     aLine.append( "\n"
                   "/StemV 80\n" );
     if( nFontStream )
@@ -4040,11 +4040,11 @@ bool PDFWriterImpl::emitFonts()
 {
     if( ! m_pReferenceDevice->ImplGetGraphics() )
         return false;
-    
+
     OStringBuffer aLine( 1024 );
-    
+
     std::map< sal_Int32, sal_Int32 > aFontIDToObject;
-    
+
     OUString aTmpName;
     osl_createTempFile( NULL, NULL, &aTmpName.pData );
     for( FontSubsetData::iterator it = m_aSubsets.begin(); it != m_aSubsets.end(); ++it )
@@ -4061,7 +4061,7 @@ bool PDFWriterImpl::emitFonts()
             int nGlyphs = 1;
             // fill arrays and prepare encoding index map
             sal_Int32 nToUnicodeStream = 0;
-            
+
             rtl_zeroMemory( aGlyphIds, sizeof( aGlyphIds ) );
             rtl_zeroMemory( pEncoding, sizeof( pEncoding ) );
             rtl_zeroMemory( pUnicodesPerGlyph, sizeof( pUnicodesPerGlyph ) );
@@ -4069,10 +4069,10 @@ bool PDFWriterImpl::emitFonts()
             for( FontEmitMapping::iterator fit = lit->m_aMapping.begin(); fit != lit->m_aMapping.end();++fit )
             {
                 sal_uInt8 nEnc = fit->second.getGlyphId();
-                
+
                 DBG_ASSERT( aGlyphIds[nEnc] == 0 && pEncoding[nEnc] == 0, "duplicate glyph" );
                 DBG_ASSERT( nEnc <= lit->m_aMapping.size(), "invalid glyph encoding" );
-                
+
                 aGlyphIds[ nEnc ] = fit->first;
                 pEncoding[ nEnc ] = nEnc;
                 pEncToUnicodeIndex[ nEnc ] = static_cast<sal_Int32>(aUnicodes.size());
@@ -4099,7 +4099,7 @@ bool PDFWriterImpl::emitFonts()
                 CHECK_RETURN( (osl_File_E_None == osl_setFilePos( aFontFile, osl_Pos_End, 0 ) ) );
                 CHECK_RETURN( (osl_File_E_None == osl_getFilePos( aFontFile, &nLength1 ) ) );
                 CHECK_RETURN( (osl_File_E_None == osl_setFilePos( aFontFile, osl_Pos_Absolut, 0 ) ) );
-                
+
                 #if OSL_DEBUG_LEVEL > 1
                 emitComment( "PDFWriterImpl::emitFonts" );
                 #endif
@@ -4116,17 +4116,17 @@ bool PDFWriterImpl::emitFonts()
                              "/Filter/FlateDecode"
                              #endif
                              "/Length1 " );
-                
+
                 sal_uInt64 nStartPos = 0;
                 if( aSubsetInfo.m_nFontType == FontSubsetInfo::SFNT_TTF )
                 {
                     aLine.append( (sal_Int32)nLength1 );
-                    
+
                     aLine.append( ">>\n"
                                  "stream\n" );
                     CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
                     CHECK_RETURN( (osl_File_E_None == osl_getFilePos( m_aFile, &nStartPos ) ) );
-                    
+
                     // copy font file
                     beginCompression();
                     checkAndEnableStreamEncryption( nFontStream );
@@ -4148,7 +4148,7 @@ bool PDFWriterImpl::emitFonts()
                 else if( (aSubsetInfo.m_nFontType & FontSubsetInfo::TYPE1_PFB) != 0 ) // TODO: also support PFA?
                 {
                     boost::shared_array<unsigned char> pBuffer( new unsigned char[ nLength1 ] );
-                    
+
                     sal_uInt64 nBytesRead = 0;
                     CHECK_RETURN( (osl_File_E_None == osl_readFile( aFontFile, pBuffer.get(), nLength1, &nBytesRead ) ) );
                     DBG_ASSERT( nBytesRead==nLength1, "PDF-FontSubset read incomplete!" );
@@ -4163,12 +4163,12 @@ bool PDFWriterImpl::emitFonts()
                     aLine.append( (sal_Int32)aSegmentLengths[1] );
                     aLine.append( "/Length3 " );
                     aLine.append( (sal_Int32)aSegmentLengths[2] );
-                    
+
                     aLine.append( ">>\n"
                                  "stream\n" );
                     CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
                     CHECK_RETURN( (osl_File_E_None == osl_getFilePos( m_aFile, &nStartPos ) ) );
-                    
+
                     // emit PFB-sections without section headers
                     beginCompression();
                     checkAndEnableStreamEncryption( nFontStream );
@@ -4181,19 +4181,19 @@ bool PDFWriterImpl::emitFonts()
                     fprintf( stderr, "PDF: CreateFontSubset result in not yet supported format=%d\n",aSubsetInfo.m_nFontType);
                     aLine.append( "0 >>\nstream\n" );
                 }
-                
+
                 endCompression();
                 disableStreamEncryption();
                 // close the file
                 osl_closeFile( aFontFile );
-                
+
                 sal_uInt64 nEndPos = 0;
                 CHECK_RETURN( (osl_File_E_None == osl_getFilePos( m_aFile, &nEndPos ) ) );
                 // end the stream
                 aLine.setLength( 0 );
                 aLine.append( "\nendstream\nendobj\n\n" );
                 CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
-                
+
                 // emit stream length object
                 CHECK_RETURN( updateObject( nStreamLengthObject ) );
                 aLine.setLength( 0 );
@@ -4202,18 +4202,18 @@ bool PDFWriterImpl::emitFonts()
                 aLine.append( (sal_Int64)(nEndPos-nStartPos) );
                 aLine.append( "\nendobj\n\n" );
                 CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
-                
+
                 // write font descriptor
                 sal_Int32 nFontDescriptor = emitFontDescriptor( it->first, aSubsetInfo, lit->m_nFontID, nFontStream );
-                
+
                 if( nToUnicodeStream )
                     nToUnicodeStream = createToUnicodeCMap( pEncoding, &aUnicodes[0], pUnicodesPerGlyph, pEncToUnicodeIndex, nGlyphs );
-                
+
                 sal_Int32 nFontObject = createObject();
                 CHECK_RETURN( updateObject( nFontObject ) );
                 aLine.setLength( 0 );
                 aLine.append( nFontObject );
-                
+
                 aLine.append( " 0 obj\n" );
                 aLine.append( ((aSubsetInfo.m_nFontType & FontSubsetInfo::ANY_TYPE1) != 0) ?
                              "<</Type/Font/Subtype/Type1/BaseFont/" :
@@ -4243,7 +4243,7 @@ bool PDFWriterImpl::emitFonts()
                 aLine.append( ">>\n"
                              "endobj\n\n" );
                 CHECK_RETURN( writeBuffer( aLine.getStr(), aLine.getLength() ) );
-                
+
                 aFontIDToObject[ lit->m_nFontID ] = nFontObject;
             }
             else
@@ -4264,7 +4264,7 @@ bool PDFWriterImpl::emitFonts()
         }
     }
     osl_removeFile( aTmpName.pData );
-    
+
     // emit embedded fonts
     for( FontEmbedData::iterator eit = m_aEmbeddedFonts.begin(); eit != m_aEmbeddedFonts.end(); ++eit )
     {
@@ -4311,7 +4311,7 @@ bool PDFWriterImpl::emitFonts()
     }
     appendBuiltinFontsToDict( aFontDict );
     aFontDict.append( "\n>>\nendobj\n\n" );
-    
+
     CHECK_RETURN( updateObject( getFontDictObject() ) );
     CHECK_RETURN( writeBuffer( aFontDict.getStr(), aFontDict.getLength() ) );
     return true;
@@ -4355,7 +4355,7 @@ sal_Int32 PDFWriterImpl::updateOutlineItemCount( std::vector< sal_Int32 >& rCoun
 
     sal_Int32 nCount = 0;
 
-    if( m_aContext.OpenBookmarkLevels < 0           || // all levels arevisible
+    if( m_aContext.OpenBookmarkLevels < 0           || // all levels are visible
         m_aContext.OpenBookmarkLevels >= nItemLevel    // this level is visible
       )
     {
@@ -5019,7 +5019,7 @@ void PDFWriterImpl::createDefaultEditAppearance( PDFWidget& rEdit, const PDFWrit
     aDA.append( ' ' );
     m_aPages[ m_nCurrentPage ].appendMappedLength( sal_Int32( aFont.GetHeight() ), aDA );
     aDA.append( " Tf" );
-    
+
     /*  create an empty appearance stream, let the viewer create
         the appearance at runtime. This is because AR5 seems to
         paint the widget appearance always, and a dynamically created
@@ -5331,7 +5331,7 @@ void PDFWriterImpl::createDefaultRadioButtonAppearance( PDFWidget& rBox, const P
     rBox.m_aDAString = aDA.makeStringAndClear();
 //to encrypt this (el)
     rBox.m_aMKDict = "/CA";
-//after this assignement, to m_aMKDic cannot be added anything
+//after this assignment, to m_aMKDic cannot be added anything
     rBox.m_aMKDictCAString = "l";
 
     rBox.m_aRect = aCheckRect;
@@ -5499,7 +5499,7 @@ bool PDFWriterImpl::emitWidgetAnnotations()
                     // for radio buttons only the RadioButton field, not the
                     // CheckBox children should have a value, else acrobat reader
                     // does not always check the right button
-                    // of course real check boxes (not belonging to a readio group)
+                    // of course real check boxes (not belonging to a radio group)
                     // need their values, too
                     if( rWidget.m_eType == PDFWriter::RadioButton || rWidget.m_nRadioGroup < 0 )
                     {
@@ -5710,7 +5710,7 @@ bool PDFWriterImpl::emitWidgetAnnotations()
             else if( rWidget.m_nTextStyle & TEXT_DRAW_RIGHT )
                 aLine.append( "/Q 2\n" );
         }
-        // appearance charactristics for terminal fields
+        // appearance characteristics for terminal fields
         // which are supposed to have an appearance constructed
         // by the viewer application
         if( rWidget.m_aMKDict.getLength() )
@@ -6870,10 +6870,10 @@ sal_Int32 PDFWriterImpl::getSystemFont( const Font& i_rFont )
         m_aSystemFonts[ pDevFont ] = EmbedFont();
         m_aSystemFonts[ pDevFont ].m_nNormalFontID = nFontID;
     }
-    
+
     getReferenceDevice()->Pop();
     getReferenceDevice()->ImplNewFont();
-    
+
     return nFontID;
 }
 
@@ -7483,12 +7483,12 @@ void PDFWriterImpl::drawLayout( SalLayout& rLayout, const String& rText, bool bT
                 if( i < nGlyphs-1 )
                 {
                     nChars = pCharPosAry[i+1] - pCharPosAry[i];
-                    // #i115618# fix for simple RTL+CTL cases	
-                    // TODO: sanitize for RTL ligatures, more complex CTL, etc.	
+                    // #i115618# fix for simple RTL+CTL cases
+                    // TODO: sanitize for RTL ligatures, more complex CTL, etc.
                     if( nChars < 0 )
-                        nChars = -nChars;		    
-		    else if( nChars == 0 )
-                        nChars = 1;		    
+                        nChars = -nChars;
+                    else if( nChars == 0 )
+                        nChars = 1;
                     pUnicodesPerGlyph[i] = nChars;
                     for( int n = 1; n < nChars; n++ )
                         aUnicodes.push_back( rText.GetChar( sal::static_int_cast<xub_StrLen>(pCharPosAry[i]+n) ) );
@@ -9151,7 +9151,7 @@ void PDFWriterImpl::drawPolyLine( const Polygon& rPoly, const PDFWriter::ExtLine
     aLine.append( "q " );
     m_aPages.back().appendMappedLength( rInfo.m_fLineWidth, aLine );
     aLine.append( " w" );
-    if( rInfo.m_aDashArray.size() < 10 ) // implmentation limit of acrobat reader
+    if( rInfo.m_aDashArray.size() < 10 ) // implementation limit of acrobat reader
     {
         switch( rInfo.m_eCap )
         {
@@ -9498,7 +9498,7 @@ bool PDFWriterImpl::writeGradientFunction( GradientEmit& rObject )
     aDev.SetMapMode( MapMode( MAP_PIXEL ) );
     if( m_aContext.ColorMode == PDFWriter::DrawGreyscale )
         aDev.SetDrawMode( aDev.GetDrawMode() |
-                          ( DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL | DRAWMODE_GRAYTEXT | 
+                          ( DRAWMODE_GRAYLINE | DRAWMODE_GRAYFILL | DRAWMODE_GRAYTEXT |
                             DRAWMODE_GRAYBITMAP | DRAWMODE_GRAYGRADIENT ) );
     aDev.DrawGradient( Rectangle( Point( 0, 0 ), rObject.m_aSize ), rObject.m_aGradient );
 
@@ -9908,7 +9908,7 @@ bool PDFWriterImpl::writeBitmapObject( BitmapEmit& rObject, bool bMask )
         if( ! bTrueColor || pAccess->GetScanlineFormat() == BMP_FORMAT_24BIT_TC_RGB )
         {
             const int nScanLineBytes = 1 + ( pAccess->GetBitCount() * ( pAccess->Width() - 1 ) / 8U );
-            
+
             for( int i = 0; i < pAccess->Height(); i++ )
             {
                 CHECK_RETURN( writeBuffer( pAccess->GetScanline( i ), nScanLineBytes ) );
@@ -9970,7 +9970,7 @@ void PDFWriterImpl::drawJPGBitmap( SvStream& rDCTData, bool bIsTrueColor, const 
         return;
     if( ! (rSizePixel.Width() && rSizePixel.Height()) )
         return;
-    
+
     rDCTData.Seek( 0 );
     if( bIsTrueColor && m_aContext.ColorMode == PDFWriter::DrawGreyscale )
     {
@@ -10023,7 +10023,7 @@ void PDFWriterImpl::drawJPGBitmap( SvStream& rDCTData, bool bIsTrueColor, const 
     aLine.append( "q " );
     sal_Int32 nCheckWidth = 0;
     m_aPages.back().appendMappedLength( (sal_Int32)rTargetArea.GetWidth(), aLine, false, &nCheckWidth );
-    aLine.append( " 0 0 " );    
+    aLine.append( " 0 0 " );
     sal_Int32 nCheckHeight = 0;
     m_aPages.back().appendMappedLength( (sal_Int32)rTargetArea.GetHeight(), aLine, true, &nCheckHeight );
     aLine.append( ' ' );
@@ -10261,7 +10261,7 @@ void PDFWriterImpl::drawGradient( const PolyPolygon& rPolyPoly, const Gradient& 
         drawPolyPolygon( rPolyPoly );
         return;
     }
-    
+
     Rectangle aBoundRect = rPolyPoly.GetBoundRect();
     sal_Int32 nGradient = createGradient( rGradient, aBoundRect.GetSize() );
 
@@ -10723,7 +10723,7 @@ void PDFWriterImpl::pop()
     OSL_ENSURE( m_aGraphicsStack.size() > 1, "pop without push" );
     if( m_aGraphicsStack.size() < 2 )
         return;
-    
+
     GraphicsState aState = m_aGraphicsStack.front();
     m_aGraphicsStack.pop_front();
     GraphicsState& rOld = m_aGraphicsStack.front();
@@ -11295,7 +11295,7 @@ void PDFWriterImpl::endStructureElement()
  * This function adds an internal structure list container to overcome the 8191 elements array limitation
  * in kids element emission.
  * Recursive function
- * 
+ *
  */
 void PDFWriterImpl::addInternalStructureContainer( PDFStructureElement& rEle )
 {
@@ -11362,12 +11362,12 @@ void PDFWriterImpl::addInternalStructureContainer( PDFStructureElement& rEle )
                     //add the object to the kid list of the parent
                     aNewKids.push_back( PDFStructureElementKid( rEleNew.m_nObject ) );
                     aNewChildren.push_back( nNewId );
-                    
+
                     std::list< sal_Int32 >::iterator aChildEndIt( rEle.m_aChildren.begin() );
                     std::list< PDFStructureElementKid >::iterator aKidEndIt( rEle.m_aKids.begin() );
                     advance( aChildEndIt, ncMaxPDFArraySize );
                     advance( aKidEndIt, ncMaxPDFArraySize );
-                    
+
                     rEleNew.m_aKids.splice( rEleNew.m_aKids.begin(),
                                             rEle.m_aKids,
                                             rEle.m_aKids.begin(),
@@ -11386,7 +11386,7 @@ void PDFWriterImpl::addInternalStructureContainer( PDFStructureElement& rEle )
                 //finally add the new kids resulting from the container added
                 rEle.m_aKids.insert( rEle.m_aKids.begin(), aNewKids.begin(), aNewKids.end() );
                 rEle.m_aChildren.insert( rEle.m_aChildren.begin(), aNewChildren.begin(), aNewChildren.end() );
-            }        
+            }
         }
     }
 }
@@ -12214,6 +12214,4 @@ void PDFWriterImpl::addStream( const String& rMimeType, PDFOutputStream* pStream
         rStream.m_bCompress = bCompress;
     }
 }
-
-
 

@@ -549,13 +549,17 @@ sub create_package
 	}
 	else
 	{
-		# getting the path of the getuid.so (only required for Solaris and Linux)
+		# getting the path of the getuid.so (Solaris) or fakeroot (Linux)
 		my $getuidlibrary = "";
 		my $ldpreloadstring = "";
-		if (( $installer::globals::issolarisbuild ) || ( $installer::globals::islinuxbuild ))
+		if ( $installer::globals::issolarisbuild )
 		{
 			$getuidlibrary = installer::download::get_path_for_library($includepatharrayref);
 			if ( $getuidlibrary ne "" ) { $ldpreloadstring = "LD_PRELOAD=" . $getuidlibrary; }
+		}
+		elsif ( $installer::globals::islinuxbuild )
+		{
+			$ldpreloadstring = $ENV{'FAKEROOT'};
 		}
 
 		$systemcall = "cd $tempdir; $ldpreloadstring tar -cf - . | gzip > $archive";

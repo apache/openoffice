@@ -882,7 +882,7 @@ namespace slideshow
                         }
 
                         // render on new layer (only if not
-                        // explicitely disabled)
+                        // explicitly disabled)
                         if( !(bBackgroundLayerPainted && bIsBackgroundLayer) )
                             maUpdateShapes.insert( pCurrShape );
                     }

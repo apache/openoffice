@@ -1258,7 +1258,7 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 			}
 			else if( bGaps )
 			{
-				// gaps and item not set in paragraph, thats a dont care
+				// gaps and item not set in paragraph, that's a dont care
 				return SFX_ITEM_DONTCARE;
 			}
 		}

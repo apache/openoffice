@@ -146,7 +146,7 @@ class ModuleManager : public  css::lang::XTypeProvider
         //---------------------------------------
         /** @short  open the underlying configuration.
 
-            @descr  This method must be called everytimes
+            @descr  This method must be called every time
                     a (reaonly!) configuration is needed. Because
                     method works together with the member
                     m_xCFG, open it on demand and cache it
@@ -155,7 +155,7 @@ class ModuleManager : public  css::lang::XTypeProvider
                     Note: A writable configuration access
                     must be created explicitly. Otherwise
                     we can't make sure that broken write requests
-                    wont affect our read access !
+                    won't affect our read access !
 
             @return [com.sun.star.container.XNameAccess]
                     the configuration object
@@ -175,7 +175,7 @@ class ModuleManager : public  css::lang::XTypeProvider
                     XModule first. If this module does not exists at the
                     given component it tries to use XServiceInfo instead.
                     
-                    Note: This method try to locate a suitable module name.
+                    Note: This method tries to locate a suitable module name.
                     Nothing else. Selecting the right component and throwing suitable
                     exceptions must be done outside.
                     

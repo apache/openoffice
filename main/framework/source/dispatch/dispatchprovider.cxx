@@ -261,8 +261,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryDeskt
     // I.I) "_blank"
     //  It's not the right place to create a new task here - because we are queried for a dispatch object
     //  only, which can handle such request. Such dispatcher should create the required task on demand.
-    //  Normaly the functionality for "_blank" is provided by findFrame() - but that would create it directly
-    //  here. Thats why we must "intercept" here.
+    //  Normally the functionality for "_blank" is provided by findFrame() - but that would create it directly
+    //  here. That's why we must "intercept" here.
     //-----------------------------------------------------------------------------------------------------
     if (sTargetFrameName==SPECIALTARGET_BLANK)
     {
@@ -287,7 +287,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryDeskt
     //-----------------------------------------------------------------------------------------------------
     // I.III) "_self", "", "_top"
     //  The desktop can't load any document - but he can handle some special protocols like "uno", "slot" ...
-    //  Why is "top" here handled too? Because the desktop is the topest frame. Normaly it's superflous
+    //  Why is "top" here handled too? Because the desktop is the topest frame. Normally it's superfluous
     //  to use this target - but we can handle it in the same manner then "_self".
     //-----------------------------------------------------------------------------------------------------
     else
@@ -351,8 +351,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
     //-----------------------------------------------------------------------------------------------------
     // I.I) "_blank", "_default"
     //  It's not the right place to create a new task here. Only the desktop can do that.
-    //  Normaly the functionality for "_blank" is provided by findFrame() - but that would create it directly
-    //  here. Thats why we must "intercept" here.
+    //  Normally the functionality for "_blank" is provided by findFrame() - but that would create it directly
+    //  here. That's why we must "intercept" here.
     //-----------------------------------------------------------------------------------------------------
     if (
         (sTargetName==SPECIALTARGET_BLANK  ) ||
@@ -450,8 +450,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
         else
         {
             css::uno::Reference< css::frame::XDispatchProvider > xParent( xFrame->getCreator(), css::uno::UNO_QUERY );
-            // Normaly if isTop() returned sal_False ... the parent frame MUST(!) exist ...
-            // But it seams to be better to check that here to prevent us against an access violation.
+            // Normally if isTop() returned sal_False ... the parent frame MUST(!) exist ...
+            // But it seems to be better to check that here to prevent us against an access violation.
             if (xParent.is())
                 xDispatcher = xParent->queryDispatch(aURL, SPECIALTARGET_TOP, 0);
         }
@@ -539,9 +539,9 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
         {
 			// Attention: Found target is our own owner frame!
 			// Don't ask him for his dispatcher. We know it already - it's our self dispatch helper.
-			// Otherwhise we can start a never ending recursiv call. Why?
-			// Somewere called our owner frame - he called some interceptor objects - and may by this dispatch provider
-			// is called. If wa use queryDispatch() on our owner frame again - we start this call stack again ... and again.
+			// Otherwise we can start a never ending recursiv call. Why?
+			// Somewhere called our owner frame - he called some interceptor objects - and maybe this dispatch provider
+			// is called. If we use queryDispatch() on our owner frame again - we start this call stack again ... and again.
 			if (xFoundFrame==xFrame)
 		        xDispatcher = implts_getOrCreateDispatchHelper( E_SELFDISPATCHER, xFrame );
 			else
@@ -580,7 +580,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_queryFrame
     @param      aURL
                     the dispatch URL for which may a handler is registered
 
-    @return     A dispatch object if a handler was found and agree with the given URL or <NULL/> otherwhise.
+    @return     A dispatch object if a handler was found and agree with the given URL or <NULL/> otherwise.
 
     @threadsafe yes
     @modified   05.09.2002 13:43, as96863
@@ -643,7 +643,7 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_searchProt
     @descr      Sometimes we need some helper implementations to support dispatching of special URLs or commands.
                 But it's not a good idea to hold these services for the whole life time of this provider instance.
                 We should create it on demand ...
-                Thats why we implement this method. It return an already existing helper or create a new one otherwise.
+                That's why we implement this method. It returns an already existing helper or creates a new one otherwise.
 
     @attention  The parameter sTarget and nSearchFlags are defaulted to "" and 0!
                 Please use it only, if you can be sure, that the really given by the outside calli!
@@ -679,8 +679,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_getOrCreat
     {
         case E_MENUDISPATCHER :
                 {
-                    // Attention: Such menue dispatcher must be a singleton for this frame - means our owner frame.
-                    // Otherwhise he can make some trouble.
+                    // Attention: Such menu dispatcher must be a singleton for this frame - means our owner frame.
+                    // Otherwise he can make some trouble.
                     /* SAFE { */
                     WriteGuard aWriteLock( m_aLock );
                     if ( ! m_xMenuDispatcher.is() )
@@ -772,8 +772,8 @@ css::uno::Reference< css::frame::XDispatch > DispatchProvider::implts_getOrCreat
 /**
     @short      check URL for support by our used loader or handler
     @descr      If we must return our own dispatch helper implementations (self, blank, create dispatcher!)
-                we should be shure, that URL describe any loadable content. Otherwise slot/uno URLs
-                will be detected ... but there exist nothing for ral loading into a target frame!
+                we should be sure, that URL describe any loadable content. Otherwise slot/uno URLs
+                will be detected ... but there exist nothing for real loading into a target frame!
 
     @param      aURL
                     URL which should be "detected"

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -136,7 +136,7 @@ SessionListener::SessionListener(const css::uno::Reference< css::lang::XMultiSer
         , m_bSessionStoreRequested( sal_False )
         , m_bAllowUserInteractionOnQuit( sal_False )
         , m_bTerminated( sal_False )
-{   
+{
 }
 
 SessionListener::~SessionListener()
@@ -150,8 +150,8 @@ SessionListener::~SessionListener()
 
 void SessionListener::StoreSession( sal_Bool bAsync )
 {
-    ResetableGuard aGuard(m_aLock);    
-    try 
+    ResetableGuard aGuard(m_aLock);
+    try
     {
         // xd create SERVICENAME_AUTORECOVERY -> XDispatch
         // xd->dispatch("vnd.sun.star.autorecovery:/doSessionSave, async=bAsync
@@ -174,7 +174,7 @@ void SessionListener::StoreSession( sal_Bool bAsync )
     } catch (com::sun::star::uno::Exception& e) {
         OString aMsg = OUStringToOString(e.Message, RTL_TEXTENCODING_UTF8);
         OSL_ENSURE(sal_False, aMsg.getStr());
-        // save failed, but tell manager to go on if we havent yet dispatched the request
+        // save failed, but tell manager to go on if we haven't yet dispatched the request
         // in case of synchronous saving the notification is done by the caller
         if ( bAsync && m_rSessionManager.is() )
             m_rSessionManager->saveDone(this);
@@ -183,8 +183,8 @@ void SessionListener::StoreSession( sal_Bool bAsync )
 
 void SessionListener::QuitSessionQuietly()
 {
-    ResetableGuard aGuard(m_aLock);    
-    try 
+    ResetableGuard aGuard(m_aLock);
+    try
     {
         // xd create SERVICENAME_AUTORECOVERY -> XDispatch
         // xd->dispatch("vnd.sun.star.autorecovery:/doSessionQuietQuit, async=false
@@ -209,7 +209,7 @@ void SAL_CALL SessionListener::disposing(const com::sun::star::lang::EventObject
 {
 }
 
-void SAL_CALL SessionListener::initialize(const Sequence< Any  >& args)
+void SAL_CALL SessionListener::initialize(const Sequence< Any >& args)
     throw (RuntimeException)
 {
 
@@ -307,7 +307,7 @@ void SAL_CALL SessionListener::approveInteraction( sal_Bool bInteractionGranted 
     throw (RuntimeException)
 {
     // do AutoSave as the first step
-    ResetableGuard aGuard(m_aLock);    
+    ResetableGuard aGuard(m_aLock);
 
     if ( bInteractionGranted )
     {
@@ -322,7 +322,7 @@ void SAL_CALL SessionListener::approveInteraction( sal_Bool bInteractionGranted 
 
             if ( m_rSessionManager.is() )
             {
-                // false means that the application closing has been cancelled
+                // false means that the application closing has been canceled
                 if ( !m_bTerminated )
                     m_rSessionManager->cancelShutdown();
                 else

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -121,7 +121,7 @@ WCHAR * getInstallPath()
 
     DWORD  cChars = GetEnvironmentVariable(UNO_PATH, NULL, 0);
     if (cChars > 0)
-    {	
+    {
         szInstallPath = new WCHAR[cChars+1];
         cChars = GetEnvironmentVariable(UNO_PATH, szInstallPath, cChars+1);
 		//If PATH is not set then it is no error
@@ -155,7 +155,7 @@ WCHAR * getInstallPath()
 }
 
 
-/*We extend the path to contain the Ure/bin folder,
+/*We extend the path to contain the URE/bin folder,
   so that components can use osl_loadModule with arguments, such as
   "reg3.dll". That is, the arguments are only the library names.
 */
@@ -167,7 +167,7 @@ void extendPath(LPCWSTR szUreBinPath)
     WCHAR * sEnvPath = NULL;
     DWORD  cChars = GetEnvironmentVariable(L"PATH", sEnvPath, 0);
     if (cChars > 0)
-    {	
+    {
         sEnvPath = new WCHAR[cChars];
         cChars = GetEnvironmentVariable(L"PATH", sEnvPath, cChars);
 		//If PATH is not set then it is no error
@@ -188,7 +188,7 @@ void extendPath(LPCWSTR szUreBinPath)
 		lstrcat(sNewPath, sEnvPath);
 	}
     BOOL bSet = SetEnvironmentVariable(L"PATH", sNewPath);
-    
+
     delete[] sEnvPath;
     delete[] sNewPath;
 }
@@ -199,7 +199,7 @@ HMODULE loadFromPath(LPCWSTR sLibName)
 	if (sLibName == NULL)
 		return NULL;
 
-	WCHAR * szUreBinPath =  getInstallPath();
+	WCHAR * szUreBinPath = getInstallPath();
 	if (!szUreBinPath)
 		return NULL;
 
@@ -212,14 +212,14 @@ HMODULE loadFromPath(LPCWSTR sLibName)
     lstrcat(szFullPath, sLibName);
     HMODULE handle = LoadLibraryEx(szFullPath, NULL,
 		LOAD_WITH_ALTERED_SEARCH_PATH);
-	
+
     delete[] szFullPath;
     delete[] szUreBinPath;
 	return handle;
 }
 
 /*Hook for delayed loading of libraries which this library is linked with.
-    This is a failure hook. That is, it is only called when the loading of 
+    This is a failure hook. That is, it is only called when the loading of
     a library failed. It will be called when loading of cppuhelper failed.
     Because we extend the PATH to the URE/bin folder while this function is
     executed (see extendPath), all other libraries are found.
@@ -264,30 +264,30 @@ namespace util
     in an URE installation. To find and load these libraries the Windows
     registry keys HKEY_CURRENT_USER\Software\OpenOffice\UNO\InstallPath
     and HKEY_LOCAL_MACHINE\Software\OpenOffice\UNO\InstallPath are examined.
-    The default value contain the path to the office prgoram dir. No seaparate URE
+    The default value contain the path to the office program dir. No separate URE
     anymore.
 */
 public __sealed __gc class Bootstrap
 {
     inline Bootstrap() {}
-    
+
 public:
-    
+
     /** Bootstraps the initial component context from a native UNO installation.
-        
+
         @see cppuhelper/bootstrap.hxx:defaultBootstrap_InitialComponentContext()
     */
     static ::unoidl::com::sun::star::uno::XComponentContext *
         defaultBootstrap_InitialComponentContext();
-    
+
     /** Bootstraps the initial component context from a native UNO installation.
-        
+
         @param ini_file
                a file URL of an ini file, e.g. uno.ini/unorc. (The ini file must
                reside next to the cppuhelper library)
         @param bootstrap_parameters
                bootstrap parameters (maybe null)
-               
+
         @see cppuhelper/bootstrap.hxx:defaultBootstrap_InitialComponentContext()
     */
     static ::unoidl::com::sun::star::uno::XComponentContext *
@@ -321,12 +321,12 @@ Bootstrap::defaultBootstrap_InitialComponentContext(
             OUString value(
                 String_to_ustring( __try_cast< ::System::String * >(
                                        bootstrap_parameters->get_Value() ) ) );
-            
+
             ::rtl::Bootstrap::set( key, value );
         }
     }
-    
-    // bootstrap native uno
+
+    // bootstrap native UNO
     Reference< XComponentContext > xContext;
     if (0 == ini_file)
     {
@@ -337,7 +337,7 @@ Bootstrap::defaultBootstrap_InitialComponentContext(
         xContext = ::cppu::defaultBootstrap_InitialComponentContext(
             String_to_ustring( __try_cast< ::System::String * >( ini_file ) ) );
     }
-    
+
     return __try_cast< ::unoidl::com::sun::star::uno::XComponentContext * >(
         to_cli( xContext ) );
 }
@@ -354,7 +354,7 @@ Bootstrap::defaultBootstrap_InitialComponentContext()
     Reference<XComponentContext> xContext = ::cppu::bootstrap();
     return __try_cast< ::unoidl::com::sun::star::uno::XComponentContext * >(
         to_cli( xContext ) );
-        
+
 }
 
 }

@@ -51,7 +51,7 @@
 				<value/>
             </prop>
 			<prop oor:name="Preferred" oor:type="xs:boolean">
-                <info><desc>In case of ambigoues registrations (e.g. for extensions doc/txt) it specify the prefererred type.</desc></info>
+                <info><desc>In case of ambiguous registrations (e.g. for extensions doc/txt) it specify the prefererred type.</desc></info>
 				<value>false</value>
 			</prop>
             <prop oor:name="PreferredFilter" oor:type="xs:string">

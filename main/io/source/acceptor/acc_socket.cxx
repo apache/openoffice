@@ -293,7 +293,7 @@ namespace io_acceptor {
 			throw(::com::sun::star::io::IOException,
 				  ::com::sun::star::uno::RuntimeException)
 	{
-		// enshure close is called only once
+		// ensure close is called only once
 		if(  1 == osl_incrementInterlockedCount( (&m_nStatus) ) )
 		{
 			m_socket.shutdown();

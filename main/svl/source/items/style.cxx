@@ -1123,7 +1123,7 @@ sal_Bool SfxStyleSheetBasePool::Store( SvStream& rStream, sal_Bool bUsed )
 	// die StyleSheets in einen MultiVarRecord
 	{
 		// Bug 79478:
-		// make a check loop, to be shure, that the converted names are also
+		// make a check loop, to be sure, that the converted names are also
 		// unique like the originals! In other cases we get a loop.
 		SvStringsSortDtor aSortOrigNames( 0, 128 );
 		SvStrings aOrigNames( 0, 128 );

@@ -27,7 +27,7 @@ package com.sun.star.comp.beans;
 /** Helper class to watch calls into AOO with a timeout.
  */
 // Do not add the thread instances to a threadgroup. When testing the bean in
-// an applet it turned out the the ThreadGroup was in an inconsistent state
+// an applet it turned out the ThreadGroup was in an inconsistent state
 // after navigating off the site that contains the applet and back to it.
 // That was tested with a Sun JRE 1.4.2_06
 public class CallWatchThread extends Thread
@@ -117,3 +117,4 @@ public class CallWatchThread extends Thread
 			System.err.println( "OOoBean: " + aMessage );
 	}
 }
+

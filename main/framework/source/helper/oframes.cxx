@@ -122,8 +122,8 @@ void SAL_CALL OFrames::append( const css::uno::Reference< XFrame >& xFrame ) thr
 		// Set owner of this instance as parent of the new frame in container!
 		xFrame->setCreator( xOwner );
 	}
-	// Else; Do nothing! Ouer owner is dead.
-	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::append()\nOuer owner is dead - you can't append any frames ...!\n" )
+	// Else; Do nothing! Our owner is dead.
+	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::append()\nOur owner is dead - you can't append any frames ...!\n" )
 }
 
 //*****************************************************************************************************************
@@ -149,8 +149,8 @@ void SAL_CALL OFrames::remove( const css::uno::Reference< XFrame >& xFrame ) thr
 		// This must do the caller of this method himself.
 		// See documentation of interface XFrames for further informations.
 	}
-	// Else; Do nothing! Ouer owner is dead.
-	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::remove()\nOuer owner is dead - you can't remove any frames ...!\n" )
+	// Else; Do nothing! Our owner is dead.
+	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::remove()\nOur owner is dead - you can't remove any frames ...!\n" )
 }
 
 //*****************************************************************************************************************
@@ -256,8 +256,8 @@ Sequence< css::uno::Reference< XFrame > > SAL_CALL OFrames::queryFrames( sal_Int
 			}
 		}
 	}
-	// Else; Do nothing! Ouer owner is dead.
-	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::queryFrames()\nOuer owner is dead - you can't query for frames ...!\n" )
+	// Else; Do nothing! Our owner is dead.
+	LOG_ASSERT( !(xOwner.is()==sal_False), "OFrames::queryFrames()\nOur owner is dead - you can't query for frames ...!\n" )
 
 	// Resturn result of this operation.
 	return seqFrames;
@@ -362,7 +362,7 @@ void OFrames::impl_resetObject()
 	// Attention:
 	// Write this for multiple calls - NOT AT THE SAME TIME - but for more then one call again)!
 	// It exist two ways to call this method. From destructor and from disposing().
-	// I can't say, which one is the first. Normaly the disposing-call - but other way ....
+	// I can't say, which one is the first. Normally the disposing-call - but other way ....
 
 	// This instance can't work if the weakreference to owner is invalid!
 	// Destroy this to reset this object.
@@ -428,8 +428,8 @@ void OFrames::impl_appendSequence(			Sequence< css::uno::Reference< XFrame > >&	
 
 //*****************************************************************************************************************
 // An instance of this class can only work with valid initialization.
-// We share the mutex with ouer owner class, need a valid factory to instanciate new services and
-// use the access to ouer owner for some operations.
+// We share the mutex with our owner class, need a valid factory to instanciate new services and
+// use the access to our owner for some operations.
 sal_Bool OFrames::impldbg_checkParameter_OFramesCtor(	const	css::uno::Reference< XMultiServiceFactory >&	xFactory		,
 														const	css::uno::Reference< XFrame >&				xOwner			,
 																FrameContainer*						pFrameContainer	)

@@ -473,7 +473,7 @@ void SAL_CALL BackingComp::attachFrame( /*IN*/ const css::uno::Reference< css::f
 
     if (!m_xWindow.is())
         throw css::uno::RuntimeException(
-                ::rtl::OUString::createFromAscii("instance seams to be not or wrong initialized"),
+                ::rtl::OUString::createFromAscii("instance seems to be not or wrong initialized"),
                 static_cast< ::cppu::OWeakObject* >(this));
 
     // safe the frame reference
@@ -599,7 +599,7 @@ void SAL_CALL BackingComp::restoreViewData( /*IN*/ const css::uno::Any& )
 
     @see    attachFrame()
 
-    @return The internaly saved frame reference.
+    @return The internally saved frame reference.
             Can be null, if attachFrame() was not called before.
  */
 
@@ -859,10 +859,10 @@ void SAL_CALL BackingComp::keyReleased( /*IN*/ const css::awt::KeyEvent& )
     throw(css::uno::RuntimeException)
 {
     /* Attention
-        Please use keyPressed() instead of this method. Otherwhise it would be possible, that
+        Please use keyPressed() instead of this method. Otherwise it would be possible, that
         - a key input may be first switch to the backing mode
         - and this component register itself as key listener too
-        - and it's first event will be a keyRealeased() for the already well known event, which switched to the backing mode!
+        - and its first event will be a keyRealeased() for the already well known event, which switched to the backing mode!
         So it will be handled twice! document => backing mode => exit app ...
      */
 }

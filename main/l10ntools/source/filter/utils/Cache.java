@@ -276,8 +276,8 @@ public class Cache
      *  methods of this cache.
      *
      *  If the given string does not match to any well known format,
-     *  the return value will be FORMAT_UNSUPPORTED. The calli have to
-     *  check that. Otherwhise a called interface method at this cache
+     *  the return value will be FORMAT_UNSUPPORTED. The calls have to
+     *  check that. Otherwise a called interface method at this cache
      *  instance will be rejected by an exception!
      *
      *  @param  sFormat
@@ -2165,14 +2165,14 @@ public class Cache
             // move the preferred filter information to any type
             // Set the filter name to the type for which the filter is registered.
             // If this type already have a set PreferredFilter value, check if the current filter
-            // has the preferred flag set. If not ignore it - otherwhise overwrite the
+            // has the preferred flag set. If not ignore it - otherwise overwrite the
             // current information at the type. But look for multiple preferred filter relations ...
-            // means: look if more the one filter has set the preferred flag for the same type!
+            // means: look if more than one filter has set the preferred flag for the same type!
 
             /* Attention!
              *
-             * Dont remove the preferred flag from any filter! ... not here.
-             * Otherwhise next loop can't detect ambigous preferred registrations!
+             * Don't remove the preferred flag from any filter! ... not here.
+             * Otherwise next loop can't detect ambigous preferred registrations!
              * Add filter to a temp. list, which can be used later to remove the preferred
              * flag ...
              */

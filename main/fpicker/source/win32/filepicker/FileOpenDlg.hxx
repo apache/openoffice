@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -123,13 +123,13 @@ typedef _LPOPENFILENAMEA _LPOPENFILENAME;
         #define _OPENFILENAME_SIZE_VERSION_400  _OPENFILENAME_SIZE_VERSION_400A
     #endif // !UNICODE
 #else
-    #error _WIN32_WINNT seams not to be valid.
+    #error _WIN32_WINNT seems not to be valid.
 #endif // (_WIN32_WINNT >= 0x0500)
 
 
 //-------------------------------------------------------------
 // A simple wrapper class around the Win32 GetOpenFileName API.
-// This class is not thread-safe and only one instance at a 
+// This class is not thread-safe and only one instance at a
 // time is allowed
 //-------------------------------------------------------------
 
@@ -137,15 +137,15 @@ class CFileOpenDialog
 {
 public:
 	// ctor
-	// bFileOpenDialog idicates if we want a FileOpen or FileSave 
+	// bFileOpenDialog idicates if we want a FileOpen or FileSave
 	// dialog
 	// dwFlags see OPENFILENAME
 	// dwTemplateId - an ID for custom templates
 	// hInstance    - an instance handle for the module
 	// which provides the custom template, unused if dwTemplateId
 	// is 0
-	CFileOpenDialog( 
-		bool bFileOpenDialog = sal_True, 
+	CFileOpenDialog(
+		bool bFileOpenDialog = sal_True,
 		sal_uInt32 dwFlags = OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT,
 		sal_uInt32 dwTemplateId = 0,
 		HINSTANCE hInstance = 0);
@@ -153,12 +153,12 @@ public:
 	virtual ~CFileOpenDialog();
 
 	virtual void SAL_CALL setTitle(const rtl::OUString& aTitle);
-	
+
 	// to set a filter string using the M$ format
 	// e.g. FltName\0*.txt;*.rtf\0...\0\0
 	void SAL_CALL setFilter(const rtl::OUString& aFilter);
 
-	// set the index of the current filter when the 
+	// set the index of the current filter when the
 	// dialog is about to shown, the index starts with 1
 	// the function succeeded if the given filter index
 	// is greater than zero and is a valid position
@@ -168,8 +168,8 @@ public:
 	// get the index of the currently selected filter
 	// the index of the returned filter starts with 1
 	sal_uInt32 SAL_CALL getSelectedFilterIndex() const;
-	
-	// set the name and optional the path of the 
+
+	// set the name and optional the path of the
 	// file that will be initially be shown when
 	// the dialog will be displayed
 	virtual void SAL_CALL setDefaultName(const rtl::OUString& aName);
@@ -202,8 +202,8 @@ public:
 
 	// returns whether multi-selection mode is enabled or not
 	bool SAL_CALL getMultiSelectionMode() const;
-	
-	// shows the dialog, calls preModal before 
+
+	// shows the dialog, calls preModal before
 	// showing the dialog and postModal after
 	// showing the dialog
 	// the method returns:
@@ -214,17 +214,17 @@ public:
 
 	// returns the last dialog error that occurred
 	sal_uInt32 SAL_CALL getLastDialogError() const;
-	
-	// retrievs the currently selected file
+
+	// retrieves the currently selected file
 	// including path and drive information
 	// can be called only if the dialog is
 	// already displayed
 	rtl::OUString SAL_CALL getCurrentFilePath() const;
 
-	// retrievs the currently selected folder
+	// retrieves the currently selected folder
 	rtl::OUString SAL_CALL getCurrentFolderPath() const;
 
-	// retrievs the currently selected file name
+	// retrieves the currently selected file name
 	// without drive and path
 	rtl::OUString SAL_CALL getCurrentFileName() const;
 
@@ -250,25 +250,25 @@ protected:
 	virtual void SAL_CALL onHelp();
 
 	// only called back if OFN_EXPLORER is set
-	virtual void SAL_CALL onInitDone();	
+	virtual void SAL_CALL onInitDone();
 	virtual void SAL_CALL onFolderChanged();
 	virtual void SAL_CALL onTypeChanged(sal_uInt32 nFilterIndex);
-	
+
 	virtual void SAL_CALL onInitDialog(HWND hwndDlg) = 0;
 
 	virtual sal_uInt32 SAL_CALL onCtrlCommand(HWND hwndDlg, sal_uInt16 ctrlId, sal_uInt16 notifyCode);
-	
+
 	sal_uInt32 SAL_CALL onWMNotify(HWND hwndChild, LPOFNOTIFYW lpOfNotify);
 
 	// we use non-virtual functions to do necessary work before
-	// calling the virtual funtions (see Gamma: Template method)
+	// calling the virtual functions (see Gamma: Template method)
 	void SAL_CALL handleInitDialog(HWND hwndDlg, HWND hwndChild);
 
 protected:
-	
-	// handle to the window of the 
+
+	// handle to the window of the
 	// FileOpen/FileSave dialog
-	// will be set on message 
+	// will be set on message
 	// WM_INITDIALOG, before this
 	// value is undefined
 	HWND	m_hwndFileOpenDlg;
@@ -276,7 +276,7 @@ protected:
 
 	_OPENFILENAME	m_ofn;
 
-    // we connect the instance with the dialog window using 
+    // we connect the instance with the dialog window using
     // SetProp, with this function we can reconnect from
     // callback functions to this instance
     static CFileOpenDialog* SAL_CALL getCurrentInstance(HWND hwnd);
@@ -290,9 +290,9 @@ private:
 	rtl::OUString	m_displayDirectory;
 	rtl::OUString	m_defaultExtension;
 
-	mutable	rtl::OUStringBuffer m_filterBuffer;	
-	mutable	rtl::OUStringBuffer m_fileTitleBuffer;	
-	mutable rtl::OUStringBuffer	m_helperBuffer;	
+	mutable	rtl::OUStringBuffer m_filterBuffer;
+	mutable	rtl::OUStringBuffer m_fileTitleBuffer;
+	mutable rtl::OUStringBuffer	m_helperBuffer;
 	mutable rtl::OUStringBuffer m_fileNameBuffer;
 
     CGetFileNameWrapper m_GetFileNameWrapper;
@@ -300,18 +300,18 @@ private:
     WNDPROC	    		m_pfnBaseDlgProc;
 
 	// callback function
-	static unsigned int CALLBACK ofnHookProc( 
+	static unsigned int CALLBACK ofnHookProc(
 		HWND hChildDlg, // handle to child dialog box
 		unsigned int uiMsg,     // message identifier
 		WPARAM wParam,  // message parameter
 		LPARAM lParam   // message parameter
 	);
 
-    // we have to subclass the dialog in order 
-    // to clean up the window property we are 
+    // we have to subclass the dialog in order
+    // to clean up the window property we are
     // using to connect the window with a class
     // instance in WM_NCDESTROY
-    static LRESULT CALLBACK BaseDlgProc( 
+    static LRESULT CALLBACK BaseDlgProc(
         HWND hWnd, UINT wMessage, WPARAM wParam, LPARAM lParam );
 
 private:

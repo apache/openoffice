@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -92,8 +92,8 @@ void ScGlobal::InitAddIns()
 						// no assertion if AddIn directory doesn't exist
 					}
 
-    				if ( xResultSet.is() )
-    				{
+					if ( xResultSet.is() )
+					{
 						Reference< sdbc::XRow > xRow( xResultSet, UNO_QUERY );
 						Reference< XContentAccess >
 							xContentAccess( xResultSet, UNO_QUERY );
@@ -109,15 +109,15 @@ void ScGlobal::InitAddIns()
 								while ( xResultSet->next() );
 							}
 						}
-    					catch ( Exception& )
-    					{
-        					DBG_ERRORFILE( "ResultSetException catched!" );
-    					}
-    				}
+						catch ( Exception& )
+						{
+							DBG_ERRORFILE( "ResultSetException caught!" );
+						}
+					}
 				}
 				catch ( Exception& )
 				{
-    				DBG_ERRORFILE( "Exception catched!" );
+					DBG_ERRORFILE( "Exception caught!" );
 				}
 				catch ( ... )
 				{
@@ -133,35 +133,35 @@ void ScGlobal::InitAddIns()
 // static
 String ScGlobal::GetOrdinalSuffix( sal_Int32 nNumber)
 {
-    if (!xOrdinalSuffix.is())
-    {
-        try
-        {
-            Reference< lang::XMultiServiceFactory > xServiceManager =
-                ::comphelper::getProcessServiceFactory();
-            Reference< XInterface > xInterface =
-                xServiceManager->createInstance(
-                    ::rtl::OUString::createFromAscii("com.sun.star.i18n.OrdinalSuffix"));
-            if  (xInterface.is())
-                xOrdinalSuffix = Reference< i18n::XOrdinalSuffix >( xInterface, UNO_QUERY);
-        }
-        catch ( Exception& )
-        {
-            DBG_ERRORFILE( "GetOrdinalSuffix: exception caught during init" );
-        }
-    }
-    DBG_ASSERT( xOrdinalSuffix.is(), "GetOrdinalSuffix: createInstance failed");
-    if (xOrdinalSuffix.is())
-    {
-        try
-        {
-            return xOrdinalSuffix->getOrdinalSuffix( nNumber,
-                    ScGlobal::pLocaleData->getLocale());
-        }
-        catch ( Exception& )
-        {
-            DBG_ERRORFILE( "GetOrdinalSuffix: exception caught during getOrdinalSuffix" );
-        }
-    }
-    return String();
+	if (!xOrdinalSuffix.is())
+	{
+		try
+		{
+			Reference< lang::XMultiServiceFactory > xServiceManager =
+				::comphelper::getProcessServiceFactory();
+			Reference< XInterface > xInterface =
+				xServiceManager->createInstance(
+					::rtl::OUString::createFromAscii("com.sun.star.i18n.OrdinalSuffix"));
+			if  (xInterface.is())
+				xOrdinalSuffix = Reference< i18n::XOrdinalSuffix >( xInterface, UNO_QUERY);
+		}
+		catch ( Exception& )
+		{
+			DBG_ERRORFILE( "GetOrdinalSuffix: exception caught during init" );
+		}
+	}
+	DBG_ASSERT( xOrdinalSuffix.is(), "GetOrdinalSuffix: createInstance failed");
+	if (xOrdinalSuffix.is())
+	{
+		try
+		{
+			return xOrdinalSuffix->getOrdinalSuffix( nNumber,
+					ScGlobal::pLocaleData->getLocale());
+		}
+		catch ( Exception& )
+		{
+			DBG_ERRORFILE( "GetOrdinalSuffix: exception caught during getOrdinalSuffix" );
+		}
+	}
+	return String();
 }

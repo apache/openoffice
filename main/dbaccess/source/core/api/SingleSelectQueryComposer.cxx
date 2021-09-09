@@ -632,7 +632,7 @@ void SAL_CALL OSingleSelectQueryComposer::setElementaryQuery( const ::rtl::OUStr
     for ( SQLPart eLoopParts = Where; eLoopParts != SQLPartCount; incSQLPart( eLoopParts ) )
         m_aElementaryParts[ eLoopParts ] = getSQLPart( eLoopParts, m_aSqlIterator, sal_False );
 
-    // reset the the AdditiveIterator: m_aPureSelectSQL may have changed
+    // reset the AdditiveIterator: m_aPureSelectSQL may have changed
     try
     {
         parseAndCheck_throwError( m_aSqlParser, composeStatementFromParts( aAdditiveClauses ), m_aAdditiveIterator, *this );

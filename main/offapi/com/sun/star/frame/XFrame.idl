@@ -96,7 +96,7 @@ published interface XFrame: com::sun::star::lang::XComponent
         Only the creator is allowed to call this method.
         But creator doesn't mean the implementation which creates this instance ...
         it means the parent frame of the frame hierarchy.
-        Because; normaly a frame should be created by using the api
+        Because; normally a frame should be created by using the api
         and is necessary for searches inside the tree (e.g. <member>XFrame::findFrame()</member>)
         </p>
 

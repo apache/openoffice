@@ -30,7 +30,7 @@
 
 
 /**	@descr	MultiPropertySetHandler handles the two slightly different
-		interfaces XPropertySet and XMultiPorpertySet for accessing
+		interfaces XPropertySet and XMultiPropertySet for accessing
 		properties of an object.
 
 		It uses the classes PropertyWrapperBase and the template
@@ -138,7 +138,7 @@ public:
 	MultiPropertySetHandler	(::com::sun::star::uno::Reference<
 		::com::sun::star::uno::XInterface> xObject);
 	~MultiPropertySetHandler	(void);
-	/**	@descr	Add a property to handle.  The type given implicitely by the
+	/**	@descr	Add a property to handle.  The type given implicitly by the
 			reference to a variable is used to create an instance of
 			the PropertyWrapper template class.
 		@param	sName	Name of the property.

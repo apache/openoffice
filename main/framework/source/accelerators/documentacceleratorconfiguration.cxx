@@ -216,8 +216,8 @@ void DocumentAcceleratorConfiguration::impl_ts_fillCache()
 	}
 	/*
 
-	Sometimes the configuration seams to be corrupted ..
-	So it would be nice if we dont crash the office then .-)
+	Sometimes the configuration seems to be corrupted...
+	So it would be nice if we don't crash the office then .-)
 	#121559#
 
 	catch(const css::uno::RuntimeException& exRun)

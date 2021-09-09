@@ -42,7 +42,7 @@ all:
 APRVERSION=$(APR_MAJOR).$(APR_MINOR).$(APR_MICRO)
 
 TARFILE_NAME=$(PRJNAME)-$(APRVERSION)
-TARFILE_MD5=98492e965963f852ab29f9e61b2ad700
+TARFILE_MD5=0759294408daace192c935b7c9e76e04
 
 .IF "$(OS)"=="WNT"
 
@@ -61,7 +61,15 @@ BUILD_ACTION=INCLUDE="$(INCLUDE);./include" USEMAK=1  nmake -f Makefile.win buil
 
 CONFIGURE_DIR=
 CONFIGURE_ACTION=.$/configure --prefix=$(OUTDIR) --includedir=$(OUTDIR)$/inc$/apr
+
+# Recent versions of clang (clang-12xxx) on macOS break some tests in APR 1.6 (and older)
+# configure (mostly around testing sizeof) due to errors now being fatal.
+# Work around this by ignoring all errors but only with the later versions of Xcode
+.IF "$(OS)"=="MACOSX" && "$(COM)"=="CLANG" && "$(CCNUMVER)" > "001100000003"
+CONFIGURE_FLAGS=CPPFLAGS="-Wno-error=all"
+.ELSE
 CONFIGURE_FLAGS=
+.ENDIF
 
 BUILD_DIR=$(CONFIGURE_DIR)
 BUILD_ACTION=$(GNUMAKE) --debug=b

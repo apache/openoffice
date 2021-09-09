@@ -1182,11 +1182,11 @@ void SbiRuntime::StepINPUT()
 			BasResId aId( IDS_SBERR_START + 4 );
 			String aMsg( aId );
 
-            //****** DONT CHECK IN, TEST ONLY *******
-            //****** DONT CHECK IN, TEST ONLY *******
+            //****** DON'T CHECK IN, TEST ONLY *******
+            //****** DON'T CHECK IN, TEST ONLY *******
 			// ErrorBox( NULL, WB_OK, aMsg ).Execute();
-            //****** DONT CHECK IN, TEST ONLY *******
-            //****** DONT CHECK IN, TEST ONLY *******
+            //****** DON'T CHECK IN, TEST ONLY *******
+            //****** DON'T CHECK IN, TEST ONLY *******
             
 			pCode = pRestart;
 		}

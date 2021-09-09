@@ -758,9 +758,9 @@ void ViewShellBase::Execute (SfxRequest& rRequest)
 
 void ViewShellBase::GetState (SfxItemSet& rSet)
 {
-    // The full screen mode is not supported.  Disable the the slot so that
+    // The full screen mode is not supported.  Disable the slot so that
     // it appears grayed out when somebody uses configures the menu to show
-    // an menu item for it.
+    // a menu item for it.
     //    if (rSet.GetItemState(SID_WIN_FULLSCREEN) == SFX_ITEM_AVAILABLE)
     //        rSet.DisableItem(SID_WIN_FULLSCREEN);
 

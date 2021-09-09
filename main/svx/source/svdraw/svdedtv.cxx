@@ -151,7 +151,7 @@ sal_Bool SdrEditView::ImpDelLayerCheck(SdrObjList* pOL, SdrLayerID nDelID) const
 		SdrObject* pObj = pOL->GetObj(nObjNum);
 		SdrObjList* pSubOL = pObj->GetSubList();
 
-		// #104809# Test explicitely for group objects and 3d scenes
+		// #104809# Test explicitly for group objects and 3d scenes
 		if(pSubOL && (pObj->ISA(SdrObjGroup) || pObj->ISA(E3dScene)))
 		{
 			if(!ImpDelLayerCheck(pSubOL, nDelID))
@@ -187,7 +187,7 @@ void SdrEditView::ImpDelLayerDelObjs(SdrObjList* pOL, SdrLayerID nDelID)
 		SdrObjList* pSubOL = pObj->GetSubList();
 
 
-		// #104809# Test explicitely for group objects and 3d scenes
+		// #104809# Test explicitly for group objects and 3d scenes
 		if(pSubOL && (pObj->ISA(SdrObjGroup) || pObj->ISA(E3dScene)))
 		{
 			if(ImpDelLayerCheck(pSubOL, nDelID))
@@ -256,7 +256,7 @@ void SdrEditView::DeleteLayer(const XubString& rName)
 					SdrObject* pObj = pPage->GetObj(nObjNum);
 					SdrObjList* pSubOL = pObj->GetSubList();
 
-					// #104809# Test explicitely for group objects and 3d scenes
+					// #104809# Test explicitly for group objects and 3d scenes
 					if(pSubOL && (pObj->ISA(SdrObjGroup) || pObj->ISA(E3dScene)))
 					{
 						if(ImpDelLayerCheck(pSubOL, nDelID))

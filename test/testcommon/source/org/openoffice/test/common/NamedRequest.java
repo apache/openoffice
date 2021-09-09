@@ -55,7 +55,7 @@ public class NamedRequest extends Request {
 				name = name.substring(0, 128) + "...";
 			}
 		}
-		suite = new Suite(name);
+		suite = new Suite(null, name);
 		return arg;
 	}
 	
@@ -123,6 +123,9 @@ public class NamedRequest extends Request {
 		String[] methods = arg.split(",");
 		for (String m : methods) {
 			int i = m.lastIndexOf(".");
+			if (i < 0) {
+				throw new RuntimeException("-tm parameter needs to have the form className.methodName");
+			}
 			String className = m.substring(0, i);
 			String methodName = m.substring(++i);
 			try {
@@ -153,9 +156,9 @@ public class NamedRequest extends Request {
 		protected final List<Runner> fRunners = new ArrayList<Runner>();
 
 		protected String name;
-		
-		protected Suite(String name) throws InitializationError {
-			super(null);
+
+		protected Suite(Class<?> testClass, String name) throws InitializationError {
+			super(testClass);
 			this.name = name;
 		}
 

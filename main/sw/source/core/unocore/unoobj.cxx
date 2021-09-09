@@ -1743,7 +1743,7 @@ throw (uno::RuntimeException)
 
 	sal_Bool bRet = sal_False;
     SwUnoCursorHelper::SelectPam(rUnoCursor, Expand);
-    // if we're at the para start then we wont move
+    // if we're at the para start then we won't move
     // but bRet is also true if GoSentence failed but
     // the start of the sentence is reached
     bRet = SwUnoCursorHelper::IsStartOfPara(rUnoCursor)

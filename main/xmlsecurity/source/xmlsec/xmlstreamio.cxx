@@ -70,7 +70,7 @@ int xmlStreamMatch( const char* uri )
 		xInputStream = m_xUriBinding->getUriBinding( sUri ) ;
         if (!xInputStream.is())
         {
-            //Try the the passed in uri directly.
+            //Try the passed in uri directly.
             //For old documents prior OOo 3.0. We did not use URIs then.   
             xInputStream = m_xUriBinding->getUriBinding( 
                 ::rtl::OUString::createFromAscii(uri));
@@ -101,7 +101,7 @@ void* xmlStreamOpen( const char* uri )
         if (!xInputStream.is())
         {
             //For old documents.
-            //try the the passed in uri directly.
+            //try the passed in uri directly.
             xInputStream = m_xUriBinding->getUriBinding( 
                 ::rtl::OUString::createFromAscii(uri));
         }

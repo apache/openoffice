@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,61 +30,60 @@
 #endif
 
 
-
 // =======================================================================
 
 DECLARE_LIST( ImplMoreWindowList, Window* )
 
 struct ImplMoreButtonData
 {
-    ImplMoreWindowList *mpItemList;
-    XubString           maMoreText;
-    XubString           maLessText;
+	ImplMoreWindowList *mpItemList;
+	XubString			maMoreText;
+	XubString			maLessText;
 };
 
 // =======================================================================
 
 void MoreButton::ImplInit( Window* pParent, WinBits nStyle )
 {
-    mpMBData     = new ImplMoreButtonData;
-	mnDelta 	 = 0;
-	meUnit		 = MAP_PIXEL;
-	mbState 	 = sal_False;
+	mpMBData	= new ImplMoreButtonData;
+	mnDelta		= 0;
+	meUnit		= MAP_PIXEL;
+	mbState		= sal_False;
 
 	mpMBData->mpItemList = NULL;
 
 	PushButton::ImplInit( pParent, nStyle );
 
 	mpMBData->maMoreText = Button::GetStandardText( BUTTON_MORE );
-    mpMBData->maLessText = Button::GetStandardText( BUTTON_LESS );
+	mpMBData->maLessText = Button::GetStandardText( BUTTON_LESS );
 
 	SetHelpText( Button::GetStandardHelpText( BUTTON_MORE ) );
 
-    ShowState();
+	ShowState();
 
-    SetSymbolAlign( SYMBOLALIGN_RIGHT );
-    ImplSetSmallSymbol( sal_True );
+	SetSymbolAlign( SYMBOLALIGN_RIGHT );
+	ImplSetSmallSymbol( sal_True );
 
-    if ( ! ( nStyle & ( WB_RIGHT | WB_LEFT ) ) )
-    {
-        nStyle |= WB_CENTER;
-        SetStyle( nStyle );
-    }
+	if ( ! ( nStyle & ( WB_RIGHT | WB_LEFT ) ) )
+	{
+		nStyle |= WB_CENTER;
+		SetStyle( nStyle );
+	}
 }
 
 // -----------------------------------------------------------------------
 void MoreButton::ShowState()
 {
-    if ( mbState )
-    {
-        SetSymbol( SYMBOL_PAGEUP );
-        SetText( mpMBData->maLessText );
-    }
-    else
-    {
-        SetSymbol( SYMBOL_PAGEDOWN );
-        SetText( mpMBData->maMoreText );
-    }
+	if ( mbState )
+	{
+		SetSymbol( SYMBOL_SPIN_UP );
+		SetText( mpMBData->maLessText );
+	}
+	else
+	{
+		SetSymbol( SYMBOL_SPIN_DOWN );
+		SetText( mpMBData->maMoreText );
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -122,7 +121,7 @@ void MoreButton::ImplLoadRes( const ResId& rResId )
 		// Nicht Methode rufen, da Dialog nicht umgeschaltet werden soll
 		mbState = (sal_Bool)ReadShortRes();
 		// SetText( GetText() );
-        ShowState();
+		ShowState();
 	}
 	if ( nObjMask & RSC_MOREBUTTON_MAPUNIT )
 		meUnit = (MapUnit)ReadLongRes();
@@ -137,7 +136,7 @@ MoreButton::~MoreButton()
 {
 	if ( mpMBData->mpItemList )
 		delete mpMBData->mpItemList;
-    delete mpMBData;
+	delete mpMBData;
 }
 
 // -----------------------------------------------------------------------
@@ -151,7 +150,7 @@ void MoreButton::Click()
 
 	// Status aendern
 	mbState = !mbState;
-    ShowState();
+	ShowState();
 
 	// Je nach Status die Fenster updaten
 	if ( mbState )
@@ -237,37 +236,37 @@ XubString MoreButton::GetText() const
 void MoreButton::SetMoreText( const XubString& rText )
 {
 	if ( mpMBData )
-        mpMBData->maMoreText = rText;
+		mpMBData->maMoreText = rText;
 
-    if ( !mbState )
-        SetText( rText );
+	if ( !mbState )
+		SetText( rText );
 }
 
 // -----------------------------------------------------------------------
 XubString MoreButton::GetMoreText() const
 {
 	if ( mpMBData )
-        return mpMBData->maMoreText;
-    else
-        return PushButton::GetText();
+		return mpMBData->maMoreText;
+	else
+		return PushButton::GetText();
 }
 
 // -----------------------------------------------------------------------
 void MoreButton::SetLessText( const XubString& rText )
 {
 	if ( mpMBData )
-        mpMBData->maLessText = rText;
+		mpMBData->maLessText = rText;
 
-    if ( mbState )
-        SetText( rText );
+	if ( mbState )
+		SetText( rText );
 }
 
 // -----------------------------------------------------------------------
 XubString MoreButton::GetLessText() const
 {
 	if ( mpMBData )
-        return mpMBData->maLessText;
-    else
-        return PushButton::GetText();
+		return mpMBData->maLessText;
+	else
+		return PushButton::GetText();
 }
 

@@ -29,7 +29,7 @@
 
 #include <macros/generic.hxx>
 
-/* Normaly XInterface isn't used here ...
+/* Normally XInterface isn't used here ...
    But we need it to be able to define namespace alias css to anything related to ::com::sun::star
    :-) */
 #include <com/sun/star/uno/XInterface.hpp>
@@ -43,7 +43,7 @@
 /** will make our code more readable if we can use such short name css instead
     of typing ::com::sun::star everytimes.
     
-    On the other side we had so many problems with "using namespace" so we dont use
+    On the other side we had so many problems with "using namespace" so we don't use
     it here any longer.
  */
 namespace css = ::com::sun::star;
@@ -59,8 +59,8 @@ namespace framework {
 static const ::rtl::OUString FEATUREDESCRIPTOR_LOADSTATE = DECLARE_ASCII("loadFinishedOrCancelled");
 
 //-----------------------------------------------------------------------------
-/** Those macro is used to make it more clear where a synchronized block will start.
-    Because normal documentation code wont be recognized by some developers to be real
+/** This macro is used to make it more clear where a synchronized block will start.
+    Because normal documentation code won't be recognized by some developers to be real
     I need something where they are thinking about.
 
     At least this macro will do nothing ... it's empty.

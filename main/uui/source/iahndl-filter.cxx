@@ -194,7 +194,7 @@ handleNoSuchFilterRequest_(
         return;
     }
 
-    // otherwhise set it for return
+    // otherwise set it for return
     xFilterTransport->setFilter( sSelectedFilter );
     xFilterTransport->select();
 }

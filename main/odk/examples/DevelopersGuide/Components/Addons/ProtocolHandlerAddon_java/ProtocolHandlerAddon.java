@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,14 +51,14 @@ public class ProtocolHandlerAddon {
      */
     public static class ProtocolHandlerAddonImpl extends WeakBase implements
                                                  XDispatchProvider,
-                                                 XDispatch,                  
+                                                 XDispatch,
                                                  XInitialization,
                                                  XServiceInfo {
 
         /** The service name, that must be used to get an instance of this service.
          */
         static private final String[] m_serviceNames = { "com.sun.star.frame.ProtocolHandler" };
-    
+
         /** The component context, that gives access to the service manager and all registered services.
          */
         private XComponentContext m_xCmpCtx;
@@ -72,7 +72,7 @@ public class ProtocolHandlerAddon {
         private XFrame m_xFrame;
         private XStatusListener m_xStatusListener;
 
-        
+
         /** The constructor of the inner class has a XMultiServiceFactory parameter.
          * @param xmultiservicefactoryInitialization A special service factory
          * could be introduced while initializing.
@@ -80,7 +80,7 @@ public class ProtocolHandlerAddon {
         public ProtocolHandlerAddonImpl( XComponentContext xComponentContext ) {
             m_xCmpCtx = xComponentContext;
         }
-    
+
         /** This method is a member of the interface for initializing an object
          * directly after its creation.
          * @param object This array of arbitrary objects will be passed to the
@@ -103,7 +103,7 @@ public class ProtocolHandlerAddon {
                 m_xCmpCtx.getServiceManager().createInstanceWithContext("com.sun.star.awt.Toolkit",
                                                                         m_xCmpCtx));
         }
-    
+
         /** This method returns an array of all supported service names.
          * @return Array of supported service names.
          */
@@ -114,7 +114,7 @@ public class ProtocolHandlerAddon {
         public static String[] getServiceNames() {
             return m_serviceNames;
         }
-        
+
         /** This method returns true, if the given service will be
          * supported by the component.
          * @param stringService Service name.
@@ -122,22 +122,22 @@ public class ProtocolHandlerAddon {
          */
         public boolean supportsService( String sService ) {
             int len = m_serviceNames.length;
-        
+
             for( int i=0; i < len; i++) {
                 if ( sService.equals( m_serviceNames[i] ) )
                     return true;
             }
-        
+
             return false;
         }
-    
+
         /** Return the class name of the component.
          * @return Class name of the component.
          */
         public String getImplementationName() {
             return ProtocolHandlerAddonImpl.class.getName();
         }
-        
+
         // XDispatchProvider
         public XDispatch queryDispatch( /*IN*/com.sun.star.util.URL aURL,
                                         /*IN*/String sTargetFrameName,
@@ -153,23 +153,23 @@ public class ProtocolHandlerAddon {
             }
             return xRet;
         }
-        
+
         public XDispatch[] queryDispatches( /*IN*/DispatchDescriptor[] seqDescripts ) {
             int nCount = seqDescripts.length;
             XDispatch[] lDispatcher = new XDispatch[nCount];
-            
+
             for( int i=0; i<nCount; ++i )
                 lDispatcher[i] = queryDispatch( seqDescripts[i].FeatureURL,
                                                 seqDescripts[i].FrameName,
                                                 seqDescripts[i].SearchFlags );
-            
-            return lDispatcher;           
+
+            return lDispatcher;
         }
 
         // XDispatch
         public void dispatch( /*IN*/com.sun.star.util.URL aURL,
                               /*IN*/com.sun.star.beans.PropertyValue[] aArguments ) {
-            
+
             if ( aURL.Protocol.compareTo("org.openoffice.Office.addon.example:") == 0 )
             {
                 if ( aURL.Path.compareTo( "Function1" ) == 0 )
@@ -186,11 +186,11 @@ public class ProtocolHandlerAddon {
                 }
             }
         }
-        
+
         public void addStatusListener( /*IN*/XStatusListener xControl,
                                        /*IN*/com.sun.star.util.URL aURL ) {
         }
-        
+
         public void removeStatusListener( /*IN*/XStatusListener xControl,
                                           /*IN*/com.sun.star.util.URL aURL ) {
         }
@@ -210,7 +210,7 @@ public class ProtocolHandlerAddon {
                     aDescriptor.WindowAttributes  = WindowAttribute.BORDER |
                         WindowAttribute.MOVEABLE |
                         WindowAttribute.CLOSEABLE;
-                    
+
                     XWindowPeer xPeer = m_xToolkit.createWindow( aDescriptor );
                     if ( null != xPeer ) {
                         XMessageBox xMsgBox = (XMessageBox)UnoRuntime.queryInterface(
@@ -224,12 +224,12 @@ public class ProtocolHandlerAddon {
                     }
                 }
             } catch ( com.sun.star.uno.Exception e) {
-                // do your error handling 
+                // do your error handling
             }
         }
     }
-            
-  
+
+
     /** Gives a factory for creating the service.
      * This method is called by the <code>JavaLoader</code>
      * <p>
@@ -245,14 +245,14 @@ public class ProtocolHandlerAddon {
      */
     public static XSingleComponentFactory __getComponentFactory( String sImplementationName ) {
         XSingleComponentFactory xFactory = null;
-    
+
         if ( sImplementationName.equals( ProtocolHandlerAddonImpl.class.getName() ) )
             xFactory = Factory.createComponentFactory(ProtocolHandlerAddonImpl.class,
                                                       ProtocolHandlerAddonImpl.getServiceNames());
-        
+
         return xFactory;
     }
-  
+
     /** Writes the service information into the given registry key.
      * This method is called by the <code>JavaLoader</code>.
      * @return returns true if the operation succeeded
@@ -264,7 +264,7 @@ public class ProtocolHandlerAddon {
      */
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
 //     public static boolean __writeRegistryServiceInfo(
 //         XRegistryKey xRegistryKey ) {
@@ -274,3 +274,4 @@ public class ProtocolHandlerAddon {
 //             xRegistryKey );
 //   }
 }
+

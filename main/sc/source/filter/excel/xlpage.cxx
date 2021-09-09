@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ static const XclPaperSize pPaperSizeTable[] =
         { PAPER_A4,         MM2TWIPS( 210 ),    MM2TWIPS( 297 )     },  // A4
 /* 10*/ { PAPER_USER,       MM2TWIPS( 210 ),    MM2TWIPS( 297 )     },  // A4 Small
         { PAPER_A5,         MM2TWIPS( 148 ),    MM2TWIPS( 210 )     },  // A5
-        //See: http://wiki.services.openoffice.org/wiki/DefaultPaperSize comments
+        //See: https://wiki.openoffice.org/wiki/DefaultPaperSize comments
         //near DMPAPER_B4 in vcl
         //i.e.
         //http://msdn.microsoft.com/en-us/library/bb241398.aspx makes the claim:

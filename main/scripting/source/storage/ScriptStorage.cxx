@@ -153,11 +153,11 @@ throw ( RuntimeException, Exception )
 {
     OSL_TRACE( "Entering ScriptStorage::initialize\n" );
 
-    // Should not be renitialised
+    // Should not be renitialized
     if ( m_bInitialised )
     {
         throw RuntimeException( 
-            OUSTR( "ScriptStorage::initalize already initialized" ),
+            OUSTR( "ScriptStorage::initialize already initialized" ),
             Reference<XInterface> () );
     }
 
@@ -220,14 +220,14 @@ throw ( RuntimeException, Exception )
     {
         OSL_TRACE( "caught com::sun::star::uno::RuntimeException in ScriptStorage::initialize" );
         throw RuntimeException(
-            OUSTR( "ScriptStorage::initalize RuntimeException: " ).concat( re.Message ),
+            OUSTR( "ScriptStorage::initialize RuntimeException: " ).concat( re.Message ),
             Reference< XInterface > () );
     }
     catch ( Exception & ue )
     {
         OSL_TRACE( "caught com::sun::star::uno::Exception in ScriptStorage::initialize" );
         throw RuntimeException(
-            OUSTR( "ScriptStorage::initalize Exception: " ).concat( ue.Message ),
+            OUSTR( "ScriptStorage::initialize Exception: " ).concat( ue.Message ),
             Reference< XInterface > () );
     }
 #ifdef _DEBUG
@@ -235,7 +235,7 @@ throw ( RuntimeException, Exception )
     {
         OSL_TRACE( "caught unknown Exception in ScriptStorage::initialize" );
         throw RuntimeException(
-            OUSTR( "ScriptStorage::initalize unknown exception: " ),
+            OUSTR( "ScriptStorage::initialize unknown exception: " ),
             Reference< XInterface > () );
     }
 #endif
@@ -390,7 +390,7 @@ throw ( RuntimeException, Exception )
     {
         OSL_TRACE( "caught unknown Exception in ScriptStorage::create" );
         throw RuntimeException(
-            OUSTR( "ScriptStorage::initalize unknown exception: " ),
+            OUSTR( "ScriptStorage::initialize unknown exception: " ),
             Reference< XInterface > () );
     }
 #endif

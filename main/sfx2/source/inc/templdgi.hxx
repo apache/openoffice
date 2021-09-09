@@ -267,7 +267,7 @@ public:
 	inline sal_Bool			CanDel( void ) const	{ return bCanDel; }
 	inline sal_Bool			CanNew( void ) const	{ return bCanNew; }
 
-	// normaly for derivates from SvTreeListBoxes, but in this case the dialog handles context menus
+	// normally for derivates from SvTreeListBoxes, but in this case the dialog handles context menus
 	virtual PopupMenu*	CreateContextMenu( void );
 
     // Rechnet von den SFX_STYLE_FAMILY Ids auf 1-5 um

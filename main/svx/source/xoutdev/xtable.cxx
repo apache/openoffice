@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
@@ -28,11 +28,11 @@
 
 #define GLOBALOVERFLOW
 
-// Vergleichsstrings
+// reference strings
 sal_Unicode __FAR_DATA pszStandard[] = { 's', 't', 'a', 'n', 'd', 'a', 'r', 'd', 0 };
 
-// Konvertiert in echte RGB-Farben, damit in den Listboxen
-// endlich mal richtig selektiert werden kann.
+// Convert to real RGB colors, so that you can
+// at last select correctly in the listboxes.
 Color RGB_Color( ColorData nColorName )
 {
 	Color aColor( nColorName );
@@ -44,14 +44,14 @@ Color RGB_Color( ColorData nColorName )
 // class XColorEntry
 
 XColorEntry::XColorEntry(const Color& rColor, const String& rName)
-:   XPropertyEntry(rName), 
-    aColor(rColor) 
+:   XPropertyEntry(rName),
+    aColor(rColor)
 {
 }
 
 XColorEntry::XColorEntry(const XColorEntry& rOther)
-:   XPropertyEntry(rOther), 
-aColor(rOther.aColor) 
+:   XPropertyEntry(rOther),
+aColor(rOther.aColor)
 {
 }
 
@@ -65,7 +65,7 @@ XLineEndEntry::XLineEndEntry(const basegfx::B2DPolyPolygon& rB2DPolyPolygon, con
 }
 
 XLineEndEntry::XLineEndEntry(const XLineEndEntry& rOther)
-:   XPropertyEntry(rOther), 
+:   XPropertyEntry(rOther),
     aB2DPolyPolygon(rOther.aB2DPolyPolygon)
 {
 }
@@ -74,14 +74,14 @@ XLineEndEntry::XLineEndEntry(const XLineEndEntry& rOther)
 // class XDashEntry
 
 XDashEntry::XDashEntry(const XDash& rDash, const String& rName)
-:   XPropertyEntry(rName), 
-    aDash(rDash) 
+:   XPropertyEntry(rName),
+    aDash(rDash)
 {
 }
 
 XDashEntry::XDashEntry(const XDashEntry& rOther)
-:   XPropertyEntry(rOther), 
-aDash(rOther.aDash) 
+:   XPropertyEntry(rOther),
+aDash(rOther.aDash)
 {
 }
 
@@ -89,14 +89,14 @@ aDash(rOther.aDash)
 // class XHatchEntry
 
 XHatchEntry::XHatchEntry(const XHatch& rHatch, const String& rName)
-:   XPropertyEntry(rName), 
-    aHatch(rHatch) 
+:   XPropertyEntry(rName),
+    aHatch(rHatch)
 {
 }
 
 XHatchEntry::XHatchEntry(const XHatchEntry& rOther)
-:   XPropertyEntry(rOther), 
-    aHatch(rOther.aHatch) 
+:   XPropertyEntry(rOther),
+    aHatch(rOther.aHatch)
 {
 }
 
@@ -104,14 +104,14 @@ XHatchEntry::XHatchEntry(const XHatchEntry& rOther)
 // class XGradientEntry
 
 XGradientEntry::XGradientEntry(const XGradient& rGradient, const String& rName)
-:   XPropertyEntry(rName), 
-    aGradient(rGradient) 
+:   XPropertyEntry(rName),
+    aGradient(rGradient)
 {
 }
 
 XGradientEntry::XGradientEntry(const XGradientEntry& rOther)
-:   XPropertyEntry(rOther), 
-    aGradient(rOther.aGradient) 
+:   XPropertyEntry(rOther),
+    aGradient(rOther.aGradient)
 {
 }
 
@@ -119,14 +119,14 @@ XGradientEntry::XGradientEntry(const XGradientEntry& rOther)
 // class XBitmapEntry
 
 XBitmapEntry::XBitmapEntry(const GraphicObject& rGraphicObject, const String& rName)
-:   XPropertyEntry(rName), 
-    maGraphicObject(rGraphicObject) 
+:   XPropertyEntry(rName),
+    maGraphicObject(rGraphicObject)
 {
 }
 
-XBitmapEntry::XBitmapEntry(const XBitmapEntry& rOther) 
-:   XPropertyEntry(rOther), 
-    maGraphicObject(rOther.maGraphicObject) 
+XBitmapEntry::XBitmapEntry(const XBitmapEntry& rOther)
+:   XPropertyEntry(rOther),
+    maGraphicObject(rOther.maGraphicObject)
 {
 }
 

@@ -151,7 +151,7 @@ ucbhelper::InterceptedInteraction::EInterceptionState StillReadWriteInteraction:
 		return ::ucbhelper::InterceptedInteraction::E_INTERCEPTED;
 	}
 
-	// Otherwhise use internal handler.
+	// Otherwise use internal handler.
 	if (m_xInterceptedHandler.is())
 	{
 		m_bHandledByInternalHandler = sal_True;

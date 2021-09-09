@@ -67,8 +67,8 @@ namespace framework{
 
 /*-************************************************************************************************************//**
 	@short			implement XEnumerationAccess interface as helper to create many oneway enumeration of components
-	@descr			We share mutex and framecontainer with ouer owner and have full access to his child tasks.
-					(Ouer owner can be the Desktop only!) We create oneway enumerations on demand. These "lists"
+	@descr			We share mutex and framecontainer with our owner and have full access to his child tasks.
+					(Our owner can be the Desktop only!) We create oneway enumerations on demand. These "lists"
 					can be used for one time only. Step during the list from first to last element.
 					(The type of created enumerations is OComponentEnumeration.)
 
@@ -105,7 +105,7 @@ class OComponentAccess	:	private ThreadHelpBase                      ,   // Must
 			@seealso	class Desktop
 			@seealso	class OComponentEnumeration
 
-			@param		"xOwner" is a reference to ouer owner and must be the desktop!
+			@param		"xOwner" is a reference to our owner and must be the desktop!
 			@return		-
 
 			@onerror	Do nothing and reset this object to default with an empty list.
@@ -177,9 +177,9 @@ class OComponentAccess	:	private ThreadHelpBase                      ,   // Must
 		/*-****************************************************************************************************//**
 			@short		standard destructor
 			@descr		This method destruct an instance of this class and clear some member.
-						Don't use an instance of this class as normal member. Use it dynamicly with a pointer.
-						We hold a weakreference to ouer owner and not to ouer superclass!
-						Thats the reason for a protected dtor.
+						Don't use an instance of this class as normal member. Use it dynamically with a pointer.
+						We hold a weakreference to our owner and not to our superclass!
+						That's the reason for a protected dtor.
 
 			@seealso	class Desktop
 

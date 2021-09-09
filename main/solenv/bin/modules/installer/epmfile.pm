@@ -832,6 +832,7 @@ sub find_epm_on_system
 #################################################
 # Determining the epm patch state
 # saved in $installer::globals::is_special_epm
+# NOTE: W/ EPM 5.0.0 and later, it is ALWAYS special
 #################################################
 
 sub set_patch_state
@@ -846,7 +847,8 @@ sub set_patch_state
 	while (<EPMPATCH>)
 	{
 		chop;
-		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; }
+		if ( $_ =~ /Patched for .*OpenOffice/ ) { $installer::globals::is_special_epm = 1; last; }
+		if ( $_ =~ /Apache OpenOffice compatible/ ) { $installer::globals::is_special_epm = 1; last; }
 	}
 			
 	close (EPMPATCH);
@@ -883,26 +885,7 @@ sub set_patch_state
 
 sub get_ld_preload_string
 {
-	my ($includepatharrayref) = @_;
-
-	my $getuidlibraryname = "getuid.so";
-
-	my $ldpreloadstring;
-
-	my $getuidlibraryref = installer::scriptitems::get_sourcepath_from_filename_and_includepath(\$getuidlibraryname, $includepatharrayref, 0);
-
-	if ($ENV{'FAKEROOT'} ne "no") {
-
-		$ldpreloadstring = $ENV{'FAKEROOT'};
-
-	} else {
-
-		if ($$getuidlibraryref eq "") { installer::exiter::exit_program("ERROR: Could not find $getuidlibraryname!", "get_ld_preload_string"); }
-
-		my $ldpreloadstring = "LD_PRELOAD=" . $$getuidlibraryref;
-	}
-	
-	return $ldpreloadstring;
+	return $ENV{'FAKEROOT'};
 }
 
 #################################################
@@ -924,14 +907,15 @@ sub call_epm
 	my $outdirstring = "";
 	if ( $installer::globals::epmoutpath ne "" ) { $outdirstring = " --output-dir $installer::globals::epmoutpath"; }
 	
-	# Debian package build needs fakeroot or our LD_PRELOAD hack for correct rights
+	# Debian package build needs fakeroot which we check for at configure time
+	# NOTE: EPM 5.0.0 or later also uses fakeroot w/ dpkg if available
 	
 	my $ldpreloadstring = "";
 	
-	if ( $installer::globals::debian ) { $ldpreloadstring = get_ld_preload_string($includepatharrayref) . " "; }
+	if ( $installer::globals::debian ) { $ldpreloadstring = get_ld_preload_string() . " "; }
 
 	my $extraflags = "";
-        if ($ENV{'EPM_FLAGS'}) { $extraflags = $ENV{'EPM_FLAGS'}; }
+    if ($ENV{'EPM_FLAGS'}) { $extraflags = $ENV{'EPM_FLAGS'}; }
 
     my $verboseflag = "-v";
     if ( ! $installer::globals::quiet ) { $verboseflag = "-v2"; };

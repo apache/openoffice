@@ -57,7 +57,7 @@ published interface XKeyHandler : ::com::sun::star::lang::XEventListener
         when known, with that of other handlers.</p>
 
         <p>Consuming this event does not prevent the pending key-release
-        event from beeing broadcasted.</p>
+        event from being broadcasted.</p>
 
         @param aEvent
             The key event informs about the pressed key.

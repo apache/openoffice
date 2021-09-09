@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,7 +140,7 @@ void ReferenceSizeProvider::setValuesAtAllDataSeries()
                 ASSERT_EXCEPTION( ex );
             }
 
-            //it is important to correct the datapoint properties first as they do reference the series properties
+            // it is important to correct the datapoint properties first as they do reference the series properties
             setValuesAtPropertySet( xSeriesProp );
         }
     }
@@ -154,7 +154,7 @@ void ReferenceSizeProvider::setValuesAtPropertySet(
         return;
 
     static const OUString aRefSizeName( RTL_CONSTASCII_USTRINGPARAM("ReferencePageSize"));
-    
+
     try
     {
         awt::Size aRefSize( getPageSize() );
@@ -206,7 +206,7 @@ void ReferenceSizeProvider::getAutoResizeFromPropSet(
         }
     }
 
-    // curent state unknown => nothing changes.  Otherwise if current state
+    // current state unknown => nothing changes. Otherwise if current state
     // differs from state so far, we have an ambiguity
     if( rInOutState == AUTO_RESIZE_UNKNOWN )
     {
@@ -232,11 +232,11 @@ void ReferenceSizeProvider::impl_getAutoResizeFromTitled(
 }
 
 /** Retrieves the state auto-resize from all objects that support this
-    feature.  If all objects return the same state, AUTO_RESIZE_YES or
+    feature. If all objects return the same state, AUTO_RESIZE_YES or
     AUTO_RESIZE_NO is returned.
 
     If no object supporting the feature is found, AUTO_RESIZE_UNKNOWN is
-    returned.  If there are multiple objects, some with state YES and some
+    returned. If there are multiple objects, some with state YES and some
     with state NO, AUTO_RESIZE_AMBIGUOUS is returned.
 */
 ReferenceSizeProvider::AutoResizeState ReferenceSizeProvider::getAutoResizeState(

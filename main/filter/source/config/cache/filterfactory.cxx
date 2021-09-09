@@ -158,7 +158,7 @@ css::uno::Reference< css::uno::XInterface > SAL_CALL FilterFactory::createInstan
             }
 
             // prevent outside code against NoSuchElementException!
-            // But dont implement such defensive strategy for our new create handling :-)
+            // But don't implement such defensive strategy for our new create handling :-)
             if (!m_rCache->hasItem(FilterCache::E_FILTER, sRealFilter))
                 return css::uno::Reference< css::uno::XInterface>();
         }
@@ -208,7 +208,7 @@ css::uno::Sequence< ::rtl::OUString > SAL_CALL FilterFactory::getAvailableServic
     throw(css::uno::RuntimeException)
 {
     /* Attention: Instead of getElementNames() this method have to return only filter names,
-                  which can be created as UNO Services really. Thats why we search for filters,
+                  which can be created as UNO Services really. That's why we search for filters,
                   which dont have a valid value for the property "FilterService".
                   Of course we can't check for corrupted service names here. We can check
                   for empty strings only ...

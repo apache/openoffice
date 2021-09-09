@@ -455,11 +455,11 @@ ModalDialog RID_SCDLG_INSCONT
     FixedLine FL_SEP1
     {
         Pos = MAP_APPFONT( 102 , 14 ) ;
-        Size = MAP_APPFONT( 1 , 96 ) ;
+        Size = MAP_APPFONT( 1 , 110 ) ;
     };
     FixedLine FL_SEP2
     {
-        Pos = MAP_APPFONT( 102 , 127 ) ;
+        Pos = MAP_APPFONT( 102 , 141 ) ;
         Size = MAP_APPFONT( 1 , 38 ) ;
     };
 };
@@ -1199,7 +1199,7 @@ ModalDialog RID_SCDLG_GROUP
 	{
 		Pos = MAP_APPFONT ( 6 , 3 ) ;
         Size = MAP_APPFONT ( 80 , 8 ) ;
-		Text = "Aktivieren für" ;
+		Text = "Aktivieren fÃ¼r" ;
 	};
 	String STR_GROUP
 	{

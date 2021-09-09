@@ -1261,7 +1261,7 @@ void OAppDetailPageHelper::showPreview( const ::rtl::OUString& _sDataSourceName,
 
                 // work-around for #150518#: no layout manager (and thus no toolbars) in the preview
                 // Must be called after initialize ... but before any other call to this frame.
-                // Otherwhise frame throws "life time exceptions" as e.g. NON_INITIALIZED
+                // Otherwise frame throws "life time exceptions" as e.g. NON_INITIALIZED
                 Reference< XPropertySet > xFrameProps( m_xFrame, UNO_QUERY_THROW );
                 xFrameProps->setPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LayoutManager" ) ), makeAny(Reference< XLayoutManager >()) );
 

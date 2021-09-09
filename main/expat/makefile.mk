@@ -38,10 +38,10 @@ all:
 
 # --- Files --------------------------------------------------------
 
-TARFILE_NAME=expat-2.2.9
-TARFILE_MD5=875a2c2ff3e8eb9e5a5cd62db2033ab5
+TARFILE_NAME=expat-2.2.10
+TARFILE_MD5=9d60de01cc0126dfd11121b04838e154
 ADDITIONAL_FILES=lib$/makefile.mk
-PATCH_FILES=$(TARFILE_NAME).patch
+PATCH_FILES=$(TARFILE_NAME).patch expat-2.2.11.patch
 
 CONFIGURE_DIR=
 .IF "$(OS)"=="WNT"

@@ -1,0 +1,11 @@
+--- misc/build/apr-1.6.5/Makefile.win	2018-03-05 05:48:04.021330400 +0200
++++ misc/build/apr-1.6.5/Makefile.win	2018-03-05 05:58:03.647346500 +0200
+@@ -41,7 +41,7 @@
+ PREFIX=..\apr-dist
+ 
+ !IF [$(COMSPEC) /c cl /nologo /? \
+-	| $(SystemRoot)\System32\find.exe "x64" >NUL ] == 0
++	| findstr.exe "x64" >NUL ] == 0
+ ARCH=x64 Release
+ !ELSE
+ ARCH=Win32 Release

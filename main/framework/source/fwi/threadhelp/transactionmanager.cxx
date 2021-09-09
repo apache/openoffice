@@ -340,9 +340,9 @@ void TransactionManager::impl_throwExceptions( EExceptionMode eMode, ERejectReas
             case E_UNINITIALIZED   :    if( eMode == E_HARDEXCEPTIONS )
                                         {
                                             // Help programmer to find out, why this exception is thrown!
-                                            LOG_ERROR( "TransactionManager...", "Owner instance not right initialized yet. Call was rejected! Normaly it's an algorithm error ... wrong usin of class!" )
+                                            LOG_ERROR( "TransactionManager...", "Owner instance not right initialized yet. Call was rejected! Normally it's an algorithm error ... wrong using of class!" )
                                             //ATTENTION: temp. disabled - till all bad code positions are detected and changed! */
-                                            // throw css::uno::RuntimeException( DECLARE_ASCII("TransactionManager...\nOwner instance not right initialized yet. Call was rejected! Normaly it's an algorithm error ... wrong usin of class!\n" ), css::uno::Reference< css::uno::XInterface >() );
+                                            // throw css::uno::RuntimeException( DECLARE_ASCII("TransactionManager...\nOwner instance not right initialized yet. Call was rejected! Normally it's an algorithm error ... wrong using of class!\n" ), css::uno::Reference< css::uno::XInterface >() );
                                         }
                                         break;
             case E_INCLOSE         :    if( eMode == E_HARDEXCEPTIONS )

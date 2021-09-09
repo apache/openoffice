@@ -574,7 +574,7 @@ DynCoreTextSyms::DynCoreTextSyms( void )
 {
 	mbIsActive = false;
 
-	// check if CoreText has been explicitely disabled
+	// check if CoreText has been explicitly disabled
 	const char* pEnvStr = getenv( "SAL_DISABLE_CORETEXT");
 	if( pEnvStr && (pEnvStr[0] != '0') )
 		return;

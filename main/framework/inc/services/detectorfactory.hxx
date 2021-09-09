@@ -219,7 +219,7 @@ class DetectorFactory : // interfaces
                     Note: Missing values will be created with defaults!
 
             @exception  com::sun::star::lang::IllegalArgumentException
-                        if one of the incoming parameters seams to be invalid.
+                        if one of the incoming parameters seems to be invalid.
                         That doesn't include the check, if this item already exist!
 
             @exception  com::sun::star::container::ElementExistException
@@ -280,7 +280,7 @@ class DetectorFactory : // interfaces
                     Note: Missing properties will be untouched.
 
             @exception  com::sun::star::lang::IllegalArgumentException
-                        if one of the incoming parameters seams to be invalid.
+                        if one of the incoming parameters seems to be invalid.
                         That doesn't include the check, if this item exist!
 
             @exception  com::sun::star::container::NoSuchElementException
@@ -327,8 +327,8 @@ class DetectorFactory : // interfaces
             @param  sName
                     the uno implementation name the requested detector.
 
-            @return A property set, which describe this detect service.
-                    It uses a sequence< com::sun::star::beans::PropertyValue > internaly.
+            @return A property set, which describes this detect service.
+                    It uses a sequence< com::sun::star::beans::PropertyValue > internally.
 
             @exception  com::sun::star::container::NoSuchElementException
                         if the requested entry does not exist inside this container.
@@ -389,7 +389,7 @@ class DetectorFactory : // interfaces
 
         /** @short  return fill state of this cache.
 
-            @return sal_True if any item exist inside this conatiner; sal_False otherwhise.
+            @return sal_True if any item exist inside this conatiner; sal_False otherwise.
          */
 
         virtual sal_Bool SAL_CALL hasElements()
@@ -409,7 +409,7 @@ class DetectorFactory : // interfaces
                     Note: Before all these operations are started really, all changes will be
                     verified and if necessary some corrections will be done.
                     In case the cache will be invalid and could not be repaired an exception is thrown!
-                    Normaly this container will not work correctly afterwards ...
+                    Normally this container will not work correctly afterwards ...
 
             @exception  com::sun::star::uno::RuntimeException
                         if the changes on this container was invald and could not be repaired.

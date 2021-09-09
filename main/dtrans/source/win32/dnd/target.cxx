@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -88,7 +88,7 @@ void SAL_CALL DropTarget::disposing()
 	HRESULT hr= S_OK;
 	if( m_threadIdTarget)
 	{
-        // Call RevokeDragDrop and wait for the OLE thread to die;
+		// Call RevokeDragDrop and wait for the OLE thread to die;
 		PostThreadMessage( m_threadIdTarget, WM_REVOKEDRAGDROP, (WPARAM)this, 0);
 		WaitForSingleObject( m_hOleThread, INFINITE);
 		CloseHandle( m_hOleThread);
@@ -100,38 +100,38 @@ void SAL_CALL DropTarget::disposing()
 		m_hWnd= 0;
 	}
 	if( m_pDropTarget)
-    {
-        CoLockObjectExternal( m_pDropTarget, FALSE, TRUE);
-        m_pDropTarget->Release();
-    }
+	{
+		CoLockObjectExternal( m_pDropTarget, FALSE, TRUE);
+		m_pDropTarget->Release();
+	}
 
 	if( m_oleThreadId)
-    {
-        if( m_oleThreadId == CoGetCurrentProcess() )
-            OleUninitialize();
-    }
+	{
+		if( m_oleThreadId == CoGetCurrentProcess() )
+			OleUninitialize();
+	}
 
 }
 
 void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
 		throw(Exception, RuntimeException)
 {
-    // The window must be registered for Dnd by RegisterDragDrop. We must ensure
+	// The window must be registered for Dnd by RegisterDragDrop. We must ensure
 	// that RegisterDragDrop is called from an STA ( OleInitialize) thread.
 	// As long as the window is registered we need to receive OLE messages in
 	// an OLE thread. That is to say, if DropTarget::initialize was called from an
 	// MTA thread then we create an OLE thread in which the window is registered.
-    // The thread will stay alive until aver RevokeDragDrop has been called.
+	// The thread will stay alive until aver RevokeDragDrop has been called.
 
 	// Additionally even if RegisterDragDrop is called from an STA thread we have
 	// to ensure that it is called from the same thread that created the Window
-	// otherwise meesages sent during DND won't reach the windows message queue.
+	// otherwise messages sent during DND won't reach the windows message queue.
 	// Calling AttachThreadInput first would resolve this problem but would block
-	// the message queue of the calling thread. So if the current thread 
+	// the message queue of the calling thread. So if the current thread
 	// (even if it's an STA thread) and the thread that created the window are not
 	// identical we need to create a new thread as we do when the calling thread is
 	// an MTA thread.
-	
+
 	if( aArguments.getLength() > 0)
 	{
 		// Get the window handle from aArgument. It is needed for RegisterDragDrop.
@@ -144,7 +144,7 @@ void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
 		HRESULT hr= OleInitialize( NULL);
 
 		// Current thread is MTA or Current thread and Window thread are not identical
-		if( hr == RPC_E_CHANGED_MODE || GetCurrentThreadId() != m_threadIdWindow  )
+		if( hr == RPC_E_CHANGED_MODE || GetCurrentThreadId() != m_threadIdWindow )
 		{
 			OSL_ENSURE( ! m_threadIdTarget,"initialize was called twice");
 			// create the IDropTargetImplementation
@@ -183,7 +183,7 @@ void SAL_CALL DropTarget::initialize( const Sequence< Any >& aArguments )
 			// CoLockObjectExternal is prescribed by the protocol. It bumps up the ref count
 			if( SUCCEEDED( CoLockObjectExternal( m_pDropTarget, TRUE, FALSE)))
 			{
-				if( FAILED( RegisterDragDrop( m_hWnd,  m_pDropTarget) ) )
+				if( FAILED( RegisterDragDrop( m_hWnd, m_pDropTarget) ) )
 				{
 					// do clean up if drag and drop is not possible
 					CoLockObjectExternal( m_pDropTarget, FALSE, FALSE);
@@ -247,7 +247,7 @@ DWORD WINAPI DndTargetOleSTAFunc(LPVOID pParams)
 				pTarget->m_hWnd= 0;
 				break;
 			}
-			TranslateMessage(  &msg);
+			TranslateMessage( &msg);
 			DispatchMessage( &msg);
 		}
 		OleUninitialize();
@@ -261,20 +261,20 @@ DWORD WINAPI DndTargetOleSTAFunc(LPVOID pParams)
 // XServiceInfo
 OUString SAL_CALL DropTarget::getImplementationName(  ) throw (RuntimeException)
 {
-    return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_IMPL_NAME));;
+	return OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_IMPL_NAME));;
 }
 // XServiceInfo
 sal_Bool SAL_CALL DropTarget::supportsService( const OUString& ServiceName ) throw (RuntimeException)
 {
-    if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME ))))
-        return sal_True;
-    return sal_False;
+	if( ServiceName.equals(OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME ))))
+		return sal_True;
+	return sal_False;
 }
 
 Sequence< OUString > SAL_CALL DropTarget::getSupportedServiceNames(  ) throw (RuntimeException)
 {
-    OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME))};
-    return Sequence<OUString>(names, 1);
+	OUString names[1]= {OUString(RTL_CONSTASCII_USTRINGPARAM(DNDTARGET_SERVICE_NAME))};
+	return Sequence<OUString>(names, 1);
 }
 
 
@@ -300,7 +300,7 @@ sal_Bool SAL_CALL DropTarget::isActive(  ) throw(RuntimeException)
 void SAL_CALL DropTarget::setActive( sal_Bool _b ) throw(RuntimeException)
 {
 	MutexGuard g(m_mutex);
-    m_bActive= _b;
+	m_bActive= _b;
 }
 
 
@@ -319,22 +319,22 @@ void SAL_CALL DropTarget::setDefaultActions( sal_Int8 actions ) throw(RuntimeExc
 HRESULT DropTarget::DragEnter( IDataObject *pDataObj,
 									DWORD grfKeyState,
 									POINTL pt,
-									DWORD  *pdwEffect)
+									DWORD *pdwEffect)
 {
 #if defined DBG_CONSOLE_OUT
 	printf("\nDropTarget::DragEnter state: %x effect %d", grfKeyState, *pdwEffect);
 #endif
-    if( m_bActive )
-    {
-	    // Intersection of pdwEffect and the allowed actions ( setDefaultActions)
-	    m_nCurrentDropAction= getFilteredActions( grfKeyState, *pdwEffect);
+	if( m_bActive )
+	{
+		// Intersection of pdwEffect and the allowed actions ( setDefaultActions)
+		m_nCurrentDropAction= getFilteredActions( grfKeyState, *pdwEffect);
 		// m_nLastDropAction has to be set by a listener. If no listener calls
 		//XDropTargetDragContext::acceptDrag and specifies an action then pdwEffect
 		// will be DROPEFFECT_NONE throughout
 		m_nLastDropAction= ACTION_DEFAULT | ACTION_MOVE;
 
-	    m_currentDragContext= static_cast<XDropTargetDragContext*>( new TargetDragContext(
-		    static_cast<DropTarget*>(this) ) );
+		m_currentDragContext= static_cast<XDropTargetDragContext*>( new TargetDragContext(
+			static_cast<DropTarget*>(this) ) );
 
 		//--> TRA
 
@@ -350,8 +350,8 @@ HRESULT DropTarget::DragEnter( IDataObject *pDataObj,
 
 		//<-- TRA
 
-	    if( m_nCurrentDropAction != ACTION_NONE)
-	    {
+		if( m_nCurrentDropAction != ACTION_NONE)
+		{
 		    DropTargetDragEnterEvent e;
 		    e.SupportedDataFlavors= m_currentData->getTransferDataFlavors();
 		    e.DropAction= m_nCurrentDropAction;
@@ -366,32 +366,32 @@ HRESULT DropTarget::DragEnter( IDataObject *pDataObj,
 		    fire_dragEnter( e);
 		    // Check if the action derived from grfKeyState (m_nCurrentDropAction) or the action set
 		    // by the listener (m_nCurrentDropAction) is allowed by the source. Only a allowed action is set
-		    // in pdwEffect. The listener notification is asynchron, that is we cannot expext that the listener
+		    // in pdwEffect. The listener notification is asynchronous, that is we cannot expect that the listener
 			// has already reacted to the notification.
 		    // If there is more then one valid action which is the case when ALT or RIGHT MOUSE BUTTON is pressed
 		    // then getDropEffect returns DROPEFFECT_MOVE which is the default value if no other modifier is pressed.
 		    // On drop the target should present the user a dialog from which the user may change the action.
 		    sal_Int8 allowedActions= dndOleDropEffectsToActions( *pdwEffect);
 			*pdwEffect= dndActionsToSingleDropEffect( m_nLastDropAction & allowedActions);
-	    }
-	    else
-	    {
-		    *pdwEffect= DROPEFFECT_NONE;
-	    }
-    }
+		}
+		else
+		{
+			*pdwEffect= DROPEFFECT_NONE;
+		}
+	}
 	return S_OK;
 }
 
 HRESULT DropTarget::DragOver( DWORD grfKeyState,
 								   POINTL pt,
-								   DWORD  *pdwEffect)
+								   DWORD *pdwEffect)
 {
-    if( m_bActive)
-    {
-	    m_nCurrentDropAction= getFilteredActions( grfKeyState, *pdwEffect);
+	if( m_bActive)
+	{
+		m_nCurrentDropAction= getFilteredActions( grfKeyState, *pdwEffect);
 
-	    if( m_nCurrentDropAction)
-	    {
+		if( m_nCurrentDropAction)
+		{
 		    DropTargetDragEvent e;
 		    e.DropAction= m_nCurrentDropAction;
 		    e.Source= Reference<XInterface>(static_cast<XDropTarget*>(this),UNO_QUERY);
@@ -414,7 +414,7 @@ HRESULT DropTarget::DragOver( DWORD grfKeyState,
 		    fire_dragOver( e);
 		    // Check if the action derived from grfKeyState (m_nCurrentDropAction) or the action set
 		    // by the listener (m_nCurrentDropAction) is allowed by the source. Only a allowed action is set
-		    // in pdwEffect. The listener notification is asynchron, that is we cannot expext that the listener
+		    // in pdwEffect. The listener notification is asynchronous, that is we cannot expect that the listener
 			// has already reacted to the notification.
 		    // If there is more then one valid action which is the case when ALT or RIGHT MOUSE BUTTON is pressed
 		    // then getDropEffect returns DROPEFFECT_MOVE which is the default value if no other modifier is pressed.
@@ -422,12 +422,12 @@ HRESULT DropTarget::DragOver( DWORD grfKeyState,
 		    sal_Int8 allowedActions= dndOleDropEffectsToActions( *pdwEffect);
 			// set the last action to the current if listener has not changed the value yet
 			*pdwEffect= dndActionsToSingleDropEffect( m_nLastDropAction & allowedActions);
-	    }
-	    else
-	    {
-		    *pdwEffect= DROPEFFECT_NONE;
-	    }
-    }
+		}
+		else
+		{
+			*pdwEffect= DROPEFFECT_NONE;
+		}
+	}
 #if defined DBG_CONSOLE_OUT
 	printf("\nDropTarget::DragOver %d", *pdwEffect );
 #endif
@@ -439,8 +439,8 @@ HRESULT DropTarget::DragLeave( void)
 #if defined DBG_CONSOLE_OUT
 	printf("\nDropTarget::DragLeave");
 #endif
-    if( m_bActive)
-    {
+	if( m_bActive)
+	{
 
 	    m_currentData=0;
 	    m_currentDragContext= 0;
@@ -450,15 +450,15 @@ HRESULT DropTarget::DragLeave( void)
 	    if( m_nDefaultActions != ACTION_NONE)
 	    {
 		    DropTargetEvent e;
-		    e.Source=  static_cast<XDropTarget*>(this);
+		    e.Source= static_cast<XDropTarget*>(this);
 
 		    fire_dragExit( e);
 	    }
-    }
+	}
 	return S_OK;
 }
 
-HRESULT DropTarget::Drop( IDataObject  * /*pDataObj*/,
+HRESULT DropTarget::Drop( IDataObject * /*pDataObj*/,
 				   DWORD grfKeyState,
 				   POINTL pt,
 				   DWORD *pdwEffect)
@@ -466,13 +466,13 @@ HRESULT DropTarget::Drop( IDataObject  * /*pDataObj*/,
 #if defined DBG_CONSOLE_OUT
 	printf("\nDropTarget::Drop");
 #endif
-    if( m_bActive)
-    {
+	if( m_bActive)
+	{
 
 	    m_bDropComplete= sal_False;
 
 	    m_nCurrentDropAction= getFilteredActions( grfKeyState, *pdwEffect);
-	    m_currentDropContext= static_cast<XDropTargetDropContext*>( new TargetDropContext( static_cast<DropTarget*>(this ))  );
+	    m_currentDropContext= static_cast<XDropTargetDropContext*>( new TargetDropContext( static_cast<DropTarget*>(this )) );
 	    if( m_nCurrentDropAction)
 	    {
 		    DropTargetDropEvent e;
@@ -487,7 +487,7 @@ HRESULT DropTarget::Drop( IDataObject  * /*pDataObj*/,
 		    e.Transferable= m_currentData;
 		    fire_drop( e);
 
-		    //if fire_drop returns than a listener might have modified m_nCurrentDropAction
+		    // if fire_drop returns than a listener might have modified m_nCurrentDropAction
 		    if( m_bDropComplete == sal_True)
 		    {
 			    sal_Int8 allowedActions= dndOleDropEffectsToActions( *pdwEffect);
@@ -503,7 +503,7 @@ HRESULT DropTarget::Drop( IDataObject  * /*pDataObj*/,
 	    m_currentDragContext= 0;
 	    m_currentDropContext= 0;
 		m_nLastDropAction= 0;
-    }
+	}
 	return S_OK;
 }
 
@@ -616,7 +616,7 @@ void DropTarget::_dropComplete(sal_Bool success, const Reference<XDropTargetDrop
 }
 // --------------------------------------------------------------------------------------
 // DropTarget fires events to XDropTargetListeners. The event object can contains an
-// XDropTargetDragContext implementaion. When the listener calls on that interface
+// XDropTargetDragContext implementation. When the listener calls on that interface
 // then the calls are delegated from DragContext (XDropTargetDragContext) to these
 // functions.
 // Only one listener which visible area is affected is allowed to call on
@@ -641,17 +641,16 @@ void DropTarget::_rejectDrag( const Reference<XDropTargetDragContext>& context)
 //--------------------------------------------------------------------------------------
 
 
-// This function determines the action dependend on the pressed
+// This function determines the action dependent on the pressed
 // key modifiers ( CTRL, SHIFT, ALT, Right Mouse Button). The result
 // is then checked against the allowed actions which can be set through
 // XDropTarget::setDefaultActions. Only those values which are also
 // default actions are returned. If setDefaultActions has not been called
-// beforehand the the default actions comprise all possible actions.
+// beforehand the default actions comprise all possible actions.
 // params: grfKeyState - the modifier keys and mouse buttons currently pressed
 inline sal_Int8 DropTarget::getFilteredActions( DWORD grfKeyState, DWORD dwEffect)
 {
 	sal_Int8 actions= dndOleKeysToAction( grfKeyState, dndOleDropEffectsToActions( dwEffect));
-	return actions &  m_nDefaultActions;
+	return actions & m_nDefaultActions;
 }
-
 

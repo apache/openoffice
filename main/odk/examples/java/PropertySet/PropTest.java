@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
 
 /*
-This example shows a UNO component that inherits com.sun.star.lib.uno.helper.PropertySet in 
-order to provide implementations of  these interfaces:
+This example shows a UNO component that inherits com.sun.star.lib.uno.helper.PropertySet in
+order to provide implementations of these interfaces:
 
       com.sun.star.beans.XPropertySet
       com.sun.star.beans.XMultiPropertySet
@@ -45,7 +45,7 @@ import com.sun.star.lang.XTypeProvider;
 import com.sun.star.beans.PropertyAttribute;
 
 /**
-   This component contains the followin properties:
+   This component contains the following properties:
  *  <table border>
  *  <tr>
  *  <th> Property Name </th>
@@ -129,11 +129,11 @@ public class PropTest extends PropertySet implements XServiceInfo
     public Object[] arObjectA; // MAYBEVOID
     public Any[] arAnyA; // MAYBEVOID
     public XInterface[] arXinterfaceA; // MAYBEVOID
-    public boolean[][] ar2BoolA; // MAYBEVOID 
+    public boolean[][] ar2BoolA; // MAYBEVOID
     public Boolean boolClassA; // MAYBEVOID
     public Character charClassA; // MAYBEVOID
-    public Byte byteClassA; // MAYBEVOID 
-    public Short shortClassA; // MAYBEVOID 
+    public Byte byteClassA; // MAYBEVOID
+    public Short shortClassA; // MAYBEVOID
     public Integer intClassA; // MAYBEVOID
     public Long longClassA; // MAYBEVOID
     public Float floatClassA; // MAYBEVOID
@@ -141,7 +141,7 @@ public class PropTest extends PropertySet implements XServiceInfo
 
     // readonly
     public int roIntA= 100;
-    public Integer roIntClassA= new Integer(100); 
+    public Integer roIntClassA= new Integer(100);
     public Object roObjectA= new Integer(101);
     public Any roAnyA= new Any( new Type(int.class), new Integer(102));
 
@@ -149,14 +149,14 @@ public class PropTest extends PropertySet implements XServiceInfo
     public boolean bcBoolA;
     public Boolean bcBoolClassA; // MAYBEVOID
     public Object bcObjectA; // MAYBEVOID
-    public Any bcAnyA;       // MAYBEVOID
+    public Any bcAnyA; // MAYBEVOID
 
     // MAYBEVOID
     public Integer mvIntA;
     public Object mvObjectA;
     public Any mvAnyA;
     public XInterface mvXinterfaceA;
-    
+
     public static final String __serviceName="PropTest";
 
     public PropTest() {
@@ -208,7 +208,7 @@ public class PropTest extends PropertySet implements XServiceInfo
         registerProperty("mvAnyA", PropertyAttribute.MAYBEVOID);
         registerProperty("mvXinterfaceA", PropertyAttribute.MAYBEVOID);
     }
-            
+
 
     // XServiceName
     public String getImplementationName(  )
@@ -223,7 +223,7 @@ public class PropTest extends PropertySet implements XServiceInfo
             return true;
         return false;
     }
-    
+
     //XServiceName
     public String[] getSupportedServiceNames(  )
     {
@@ -248,11 +248,12 @@ public class PropTest extends PropertySet implements XServiceInfo
 
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
-//     public static boolean __writeRegistryServiceInfo(XRegistryKey regKey) 
+//     public static boolean __writeRegistryServiceInfo(XRegistryKey regKey)
 //     {
 //         return FactoryHelper.writeRegistryServiceInfo( PropTest.class.getName(),
 //         PropTest.__serviceName, regKey);
 //     }
 }
+

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,8 +53,8 @@ namespace com { namespace sun { namespace star { namespace awt {
 
 /*************************************************************************
 |*
-|* Von SfxTabPage abgeleitet, um vom Control ueber virtuelle Methode
-|* benachrichtigt werden zu koennen.
+|* Derived from SfxTabPage to be able to be notified by the control 
+|* via virtual method.
 |*
 \************************************************************************/
 class SvxTabPage : public SfxTabPage
@@ -69,8 +69,8 @@ public:
 
 /*************************************************************************
 |*
-|*	Control zur Darstellung und Auswahl der Eckpunkte (und Mittelpunkt)
-|*	eines Objekts
+|*	Control for displaying and selecting the corner points
+|*	(and center point) of an object
 |*
 \************************************************************************/
 typedef sal_uInt16 CTL_STATE;
@@ -147,8 +147,8 @@ public:
 
 /*************************************************************************
 |*
-|*	Control zur Darstellung und Auswahl des Winkels der Eckpunkte
-|*	eines Objekts
+|*	Control to display and select the angle of the corner points
+|*	of an object
 |*
 \************************************************************************/
 class SvxAngleCtl : public SvxRectCtl
@@ -172,7 +172,7 @@ public:
 
 /*************************************************************************
 |*
-|*	Preview-Control zur Darstellung von Bitmaps
+|*	Preview-Control to display bitmaps
 |*
 \************************************************************************/
 
@@ -198,7 +198,7 @@ public:
 
 /*************************************************************************
 |*
-|*	Control zum Editieren von Bitmaps
+|*	Control to edit bitmaps
 |*
 \************************************************************************/
 class SVX_DLLPUBLIC SvxPixelCtl : public Control
@@ -263,7 +263,7 @@ public:
 
 /*************************************************************************
 |*
-|* ColorLB kann mit Farben und Namen gefuellt werden
+|* ColorLB can be filled with colors and names
 |*
 \************************************************************************/
 
@@ -356,7 +356,7 @@ private:
 
 /*************************************************************************
 |*
-|* FillAttrLB vereint alle Fuellattribute in einer ListBox
+|* FillAttrLB combines all fill attributes in one list bBox
 |*
 \************************************************************************/
 class FillAttrLB : public ColorListBox
@@ -438,7 +438,7 @@ public:
                           LineEndLB( Window* pParent, ResId Id );
                           LineEndLB( Window* pParent, WinBits aWB );
                  virtual ~LineEndLB (void);
-                 
+
 	virtual void Fill( const XLineEndListSharedPtr aList, bool bStart = true );
 
 	void	Append( const XLineEndEntry& rEntry, const Bitmap& rBitmap, bool bStart = true );
@@ -490,8 +490,8 @@ private:
 	SdrObject*										mpLineObjA;
 	SdrObject*										mpLineObjB;
 	SdrObject*										mpLineObjC;
-	
-	//#58425# Symbole auf einer Linie (z.B. StarChart)
+
+	//#58425# Symbols at on line (e.g. StarChart)
 	Graphic*										mpGraphic;
 	sal_Bool										mbWithSymbol;
 	Size											maSymbolSize;
@@ -548,7 +548,7 @@ public:
 	void SetRectangleAttributes(const SfxItemSet& rItemSet);
 	void SetShadowAttributes(const SfxItemSet& rItemSet);
 	void SetShadowPosition(const Point& rPos);
-	
+
 	virtual void	Paint( const Rectangle& rRect );
 };
 

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,30 +8,30 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
-<oor:component-schema 
-    xmlns:oor="http://openoffice.org/2001/registry" 
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+<oor:component-schema
+    xmlns:oor="http://openoffice.org/2001/registry"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    oor:name="WikiExtension" 
-    oor:package="org.openoffice.Office.Custom" 
+    oor:name="WikiExtension"
+    oor:package="org.openoffice.Office.Custom"
     xml:lang="en-US">
     <info>
         <desc>Configuration parameters for the accounts.</desc>
     </info>
-    
+
     <templates>
         <group oor:name="RequestArgument">
             <info><desc>An argument for a request.</desc></info>
@@ -70,7 +70,7 @@
             </prop>
         </group>
     </templates>
-    
+
     <component>
         <set oor:name="SpecialData" oor:node-type="WikiServerSpecialData">
             <info><desc>The set of smart configurations for MediaWiki Servers.</desc></info>
@@ -78,8 +78,8 @@
         <set oor:name="ConnectionList" oor:node-type="ConnectionURL">
             <info><desc>The list of the MediaWiki servers.</desc></info>
         </set>
-	    <set oor:name="RecentDocs" oor:node-type="Document">
-            <info><desc>The recenly stored documents.</desc></info>
+        <set oor:name="RecentDocs" oor:node-type="Document">
+            <info><desc>The recently stored documents.</desc></info>
         </set>
         <group oor:name="Settings">
             <info><desc>The addon related settings.</desc></info>
@@ -95,7 +95,7 @@
 				<info><desc>The general error shown in case the document could not be sent to the wiki server.</desc></info>
 			</prop>
             <prop oor:name="NoWikiFilter" oor:type="xs:string" oor:localized="true">
-				<info><desc>The error is shown in case wiki filter is not evailable.</desc></info>
+				<info><desc>The error is shown in case wiki filter is not available.</desc></info>
 			</prop>
             <prop oor:name="NoConnectionToURL" oor:type="xs:string" oor:localized="true">
 				<info><desc>The error is shown in case no wiki system was found on specified URL.</desc></info>
@@ -122,7 +122,7 @@
 				<info><desc>"No" button in dialog.</desc></info>
 			</prop>
             <prop oor:name="Dlg_OK" oor:type="xs:string" oor:localized="true">
-				<info><desc>"Ok" button in dialog.</desc></info>
+				<info><desc>"OK" button in dialog.</desc></info>
 			</prop>
             <prop oor:name="Dlg_Yes" oor:type="xs:string" oor:localized="true">
 				<info><desc>"Yes" button in dialog.</desc></info>

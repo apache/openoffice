@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,21 +7,21 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
-# --- OS2-Environment ----------------------------------------------
+# --- OS/2-Environment ---
 
 .IF "$(GUI)" == "OS2"
 
@@ -115,7 +115,7 @@ AFLAGS=/ml /oi
 CXX=icc
 CC=icc
 .IF "$(COMEX)"=="3"
-CFLAGS=/C+ /Q+ /Gf+ /Sp1 /G4 /Se /Gs+ /Gt+ /Gd+ /J- /W2 /D__EXTENDED__ /Si+ /Xi+ $(MINUS_I)$(INCLUDE)  /Wvft-
+CFLAGS=/C+ /Q+ /Gf+ /Sp1 /G4 /Se /Gs+ /Gt+ /Gd+ /J- /W2 /D__EXTENDED__ /Si+ /Xi+ $(MINUS_I)$(INCLUDE) /Wvft-
 .ELSE
 .IF "$(COMEX)"=="I"
 CFLAGS=/C+ /Tl10 /Q+ /Gf+ /Sp4 /G4 /Sc /Gs- /D__EXTENDED__ /Si+ /Su4
@@ -124,7 +124,7 @@ CFLAGS=/C+ /Tl10 /Q+ /Gf+ /Sp1 /G4 /Sc /Gs+ /D__EXTENDED__ /Si+
 .ENDIF
 .ENDIF
 
-CFLAGSCXX=/Tdp 
+CFLAGSCXX=/Tdp
 
 CFLAGSEXCEPTIONS=-Gx-
 CFLAGS_NO_EXCEPTIONS=-Gx+
@@ -132,7 +132,7 @@ CFLAGS_NO_EXCEPTIONS=-Gx+
 CFLAGSOBJGUIST=/Ge+
 CFLAGSOBJCUIST=/Ge+
 .IF "$(COMEX)"=="I"
-CFLAGSOBJGUIMT=/Ge+ /Gm+ 
+CFLAGSOBJGUIMT=/Ge+ /Gm+
 CFLAGSOBJCUIMT=/Ge+ /Gm+
 CFLAGSSLOGUIMT=/Ge- /Gm+
 CFLAGSSLOCUIMT=/Ge- /Gm+
@@ -154,7 +154,7 @@ CDEFS+=-D_STD_NO_NAMESPACE -D_VOS_NO_NAMESPACE -D_UNO_NO_NAMESPACE
 LINK=ilink
 #LINKFLAGS=/PACKCODE:8192 /ALIGN:16 /NOD /NOE /NOI /MAP /NOFREE
 
-#bei too many segments ist /SEGMENTS:nnnn hilfreich. 3072 ist max!
+# In case of too many segments /SEGMENTS:nnnn is helpful. 3072 is max!
 .IF "$(CPPRTST)"!=""
 LINKFLAGS=/NOFREE /NOD /NOE /NOI /MAP /OPTFUNC /PACKD:65536 /EXEPACK:2
 .ELSE
@@ -250,7 +250,7 @@ AFLAGS=/ml /4pr
 CC=wcl386
 CXX=wcl386
 .IF "$(e2p)" != ""
-CFLAGS=-c -W3 -Zp4 -Zld $(MINUS_I)$(INCLUDE) -bt=os2 -zq  -zm -ep -ee
+CFLAGS=-c -W3 -Zp4 -Zld $(MINUS_I)$(INCLUDE) -bt=os2 -zq -zm -ep -ee
 .ELSE
 CFLAGS=-c -Zp4 -W3 -Zl -Zld $(MINUS_I)$(INCLUDE) -bt=os2 -zq -s
 .ENDIF
@@ -315,7 +315,7 @@ DLLPOSTFIX=wo
 
 .ENDIF
 
-# --- OS2 Allgemein ---
+# --- OS/2-General ---
 HC=toipf
 HCFLAGS=
 PATH_SEPERATOR*=;

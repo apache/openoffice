@@ -125,8 +125,8 @@ class SvtLocalisationOptions_Impl : public ConfigItem
 
 		/*-****************************************************************************************************//**
 			@short		access method to get internal values
-			@descr		These method give us a chance to regulate acces to ouer internal values.
-						It's not used in the moment - but it's possible for the feature!
+			@descr		This method gives us a chance to regulate access to our internal values.
+						It's not used in the moment - but it's possible for the future!
 
 			@seealso	-
 
@@ -148,7 +148,7 @@ class SvtLocalisationOptions_Impl : public ConfigItem
 	private:
 
 		/*-****************************************************************************************************//**
-			@short		return list of key names of ouer configuration management which represent oue module tree
+			@short		return list of key names of our configuration management which represent our module tree
 			@descr		These methods return a static const list of key names. We need it to get needed values from our
 						configuration management.
 
@@ -195,7 +195,7 @@ SvtLocalisationOptions_Impl::SvtLocalisationOptions_Impl()
 	// Follow assignment use order of values in relation to our list of key names!
 	DBG_ASSERT( !(seqNames.getLength()!=seqValues.getLength()), "SvtLocalisationOptions_Impl::SvtLocalisationOptions_Impl()\nI miss some values of configuration keys!\n" );
 
-	// Copy values from list in right order to ouer internal member.
+	// Copy values from list in right order to our internal member.
 	sal_Int32 nPropertyCount = seqValues.getLength();
 	for( sal_Int32 nProperty=0; nProperty<nPropertyCount; ++nProperty )
 	{
@@ -218,8 +218,8 @@ SvtLocalisationOptions_Impl::SvtLocalisationOptions_Impl()
         }
 	}
 
-	// Enable notification mechanism of ouer baseclass.
-	// We need it to get information about changes outside these class on ouer used configuration keys!
+	// Enable notification mechanism of our baseclass.
+	// We need it to get information about changes outside these class on our used configuration keys!
 	EnableNotification( seqNames );
 }
 
@@ -362,9 +362,9 @@ SvtLocalisationOptions::SvtLocalisationOptions()
 {
     // Global access, must be guarded (multithreading!).
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Increase ouer refcount ...
+	// Increase our refcount ...
 	++m_nRefCount;
-	// ... and initialize ouer data container only if it not already exist!
+	// ... and initialize our data container only if it not already exists!
     if( m_pDataContainer == NULL )
 	{
         RTL_LOGFILE_CONTEXT(aLog, "unotools ( ??? ) ::SvtLocalisationOptions_Impl::ctor()");
@@ -381,10 +381,10 @@ SvtLocalisationOptions::~SvtLocalisationOptions()
 {
     // Global access, must be guarded (multithreading!)
     MutexGuard aGuard( GetOwnStaticMutex() );
-	// Decrease ouer refcount.
+	// Decrease our refcount.
 	--m_nRefCount;
 	// If last instance was deleted ...
-	// we must destroy ouer static data container!
+	// we must destroy our static data container!
     if( m_nRefCount <= 0 )
 	{
 		delete m_pDataContainer;
@@ -441,7 +441,7 @@ Mutex& SvtLocalisationOptions::GetOwnStaticMutex()
 		// ... we must create a new one. Protect follow code with the global mutex -
 		// It must be - we create a static variable!
         MutexGuard aGuard( Mutex::getGlobalMutex() );
-		// We must check our pointer again - because it can be that another instance of ouer class will be fastr then these!
+		// We must check our pointer again - because it can be that another instance of our class will be faster than these!
         if( pMutex == NULL )
         {
 			// Create the new mutex and set it for return on static variable.

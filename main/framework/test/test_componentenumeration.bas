@@ -45,7 +45,7 @@ Sub Main
 	rem	Test interface XElementAccess of helper OComponentAcces.
 
 	rem	Method hasElements() must return TRUE, because if you call this from the basic IDE at least one task must exist ...
-	rem	the IDE by himself. Normaly two tasks exist - an empty writer document and a basic frame.
+	rem	the IDE by himself. Normally two tasks exist - an empty writer document and a basic frame.
 	rem Attention: Not all tasks or frames must support a full implemented component!
 	if( xComponentAccess.hasElements <> TRUE ) then
 		msgbox "Error: xComponentAccess has no elements - but I can't believe it!"
