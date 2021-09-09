@@ -35,6 +35,9 @@ if soenv['OS'] == 'FREEBSD':
 elif soenv['OS'] == 'WNT':
     from windows import *
     platform = Windows()
+elif soenv['OS'] == 'LINUX':
+    from linux import *
+    platform = Linux()
 else:
     raise Exception ('Unsupported OS: ' + soenv['OS'])
 
