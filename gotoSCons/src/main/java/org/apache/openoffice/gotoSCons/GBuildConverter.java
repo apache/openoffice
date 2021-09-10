@@ -29,9 +29,18 @@ import org.apache.openoffice.gotoSCons.targets.Module;
 import org.apache.openoffice.gotoSCons.targets.Repository;
 
 public class GBuildConverter {
+    /** Print usage information */
+    static void usage() {
+        System.err.println("Usage:");
+        System.err.println("   gotoSCons parsingAnalysis /path/to/main");
+        System.err.println("   gotoSCons parseModule /path/to/Module_xxx.mk");
+        System.err.println("   gotoSCons parseLibrary /path/to/Library_xxx.mk");
+    }
+
+
     public static void main(String[] args) throws Exception {
         if (args.length < 1) {
-            System.err.println("Needs args");
+            usage();
             System.exit(1);
         }
         if (args[0].equals("parsingAnalysis")) {
@@ -51,11 +60,15 @@ public class GBuildConverter {
             Library library = new Library(new File(args[1]));
             System.out.println(library);
         } else {
-            throw new Exception("Unsupported args");
+            usage();
+            System.exit(1);
         }
     }
 
     public static void parsingAnalysis(String[] args) throws Exception {
+        if (args.length < 2) {
+            throw new Exception("Needs path to OpenOffice main source directory");
+        }
         File dir = new File(args[1]);
         int modules = 0;
         int parsable = 0;
