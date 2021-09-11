@@ -220,7 +220,7 @@ public class AllLangResTarget extends BaseTarget {
     }
     
     @Override
-    protected void parseCall(Node argsNode) throws Exception {
+    protected void parseEvalCall(Node argsNode) throws Exception {
         if (argsNode instanceof ValueNode) {
             String value = ((ValueNode)argsNode).value;
             String[] tokens = value.split(",");

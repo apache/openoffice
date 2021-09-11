@@ -29,8 +29,15 @@ import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
+/** Parser of gbuild files. */
 public class GBuildParser {
     
+    /** Parses a gbuild file.
+     *
+     * @param reader object to read the gbuild file's contents.
+     *
+     * @throws Exception in case of problems in the input.
+     */
     public ListNode parse(BufferedReader reader) throws Exception {
         String fullLine = "";
         String line;

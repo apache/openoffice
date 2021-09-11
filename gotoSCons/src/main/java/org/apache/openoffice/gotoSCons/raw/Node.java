@@ -21,6 +21,7 @@
 
 package org.apache.openoffice.gotoSCons.raw;
 
+/** Output of the parsing. */
 public abstract class Node {
     public final void dump() {
         dump("");

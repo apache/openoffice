@@ -23,6 +23,7 @@ package org.apache.openoffice.gotoSCons.raw;
 
 import java.util.Arrays;
 
+/** Node that consists of a list of Node's */
 public class ListNode extends Node {
     public Node[] children;
     

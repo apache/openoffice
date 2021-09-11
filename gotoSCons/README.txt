@@ -14,6 +14,14 @@ $ cd gotoSCons
 $ java -jar target/gotoSCons-0.1-SNAPSHOT.jar parsingAnalysis ../main
 
 
+Javadoc
+=======
+$ cd gotoSCons
+$ mvn javadoc:javadoc
+
+Open target/site/apidocs/index.html.
+
+
 Other sources of information
 ============================
 Check the following threads on the dev@ mailing list:

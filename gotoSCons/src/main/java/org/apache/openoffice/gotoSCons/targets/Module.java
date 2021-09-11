@@ -61,7 +61,7 @@ public class Module extends BaseTarget {
     }
     
     @Override
-    protected void parseCall(Node argsNode) throws Exception {
+    protected void parseEvalCall(Node argsNode) throws Exception {
         if (argsNode instanceof ValueNode) {
             String value = ((ValueNode)argsNode).value;
             String[] tokens = value.split(",");
@@ -104,43 +104,47 @@ public class Module extends BaseTarget {
         }
         for (String arg : Utils.spaceSeparatedTokens(args[1])) {
             File makefile = new File(filename.getParentFile(), arg + ".mk");
-            if (arg.startsWith("AllLangResTarget_")) {
-                AllLangResTarget allLangResTarget = new AllLangResTarget(makefile);
-                if (allLangResTargets.put(arg, allLangResTarget) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
+            try {
+                if (arg.startsWith("AllLangResTarget_")) {
+                    AllLangResTarget allLangResTarget = new AllLangResTarget(makefile);
+                    if (allLangResTargets.put(arg, allLangResTarget) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("Executable_")) {
+                    Executable exe = new Executable(makefile);
+                    if (executables.put(arg, exe) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("Library_")) {
+                    Library library = new Library(makefile);
+                    if (libraries.put(arg, library) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("StaticLibrary_")) {
+                    StaticLibrary staticLibrary = new StaticLibrary(makefile);
+                    if (staticLibraries.put(arg, staticLibrary) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("Ant_")) {
+                    AntTarget antTarget = new AntTarget(makefile);
+                    if (antTargets.put(arg, antTarget) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("Zip_")) {
+                    ZipTarget zipTarget = new ZipTarget(makefile);
+                    if (zipTargets.put(arg, zipTarget) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else if (arg.startsWith("Package_")) {
+                    Pkg pkg = new Pkg(makefile);
+                    if (packages.put(arg, pkg) != null) {
+                        throw new Exception("Duplicate add of target " + arg);
+                    }
+                } else {
+                    throw new Exception("Unsupported target " + arg);
                 }
-            } else if (arg.startsWith("Executable_")) {
-                Executable exe = new Executable(makefile);
-                if (executables.put(arg, exe) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else if (arg.startsWith("Library_")) {
-                Library library = new Library(makefile);
-                if (libraries.put(arg, library) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else if (arg.startsWith("StaticLibrary_")) {
-                StaticLibrary staticLibrary = new StaticLibrary(makefile);
-                if (staticLibraries.put(arg, staticLibrary) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else if (arg.startsWith("Ant_")) {
-                AntTarget antTarget = new AntTarget(makefile);
-                if (antTargets.put(arg, antTarget) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else if (arg.startsWith("Zip_")) {
-                ZipTarget zipTarget = new ZipTarget(makefile);
-                if (zipTargets.put(arg, zipTarget) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else if (arg.startsWith("Package_")) {
-                Pkg pkg = new Pkg(makefile);
-                if (packages.put(arg, pkg) != null) {
-                    throw new Exception("Duplicate add of target " + arg);
-                }
-            } else {
-                throw new Exception("Unsupported target " + arg);
+            } catch (Exception ex) {
+                throw new Exception(makefile.getPath() + ":" + ex.getMessage());
             }
         }
     }

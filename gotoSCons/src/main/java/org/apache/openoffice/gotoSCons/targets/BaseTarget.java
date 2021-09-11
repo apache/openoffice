@@ -26,8 +26,15 @@ import org.apache.openoffice.gotoSCons.raw.ListNode;
 import org.apache.openoffice.gotoSCons.raw.Node;
 import org.apache.openoffice.gotoSCons.raw.ValueNode;
 
+/** The base class for all targets */
 public abstract class BaseTarget {
     
+    /** Parse the contents of a gbuild file.
+     *
+     * @param root root node representing the gbuild file.
+     *
+     * @throws Exception in case of problems.
+     */
     protected void parse(ListNode root) throws Exception {
         for (Node child : root.children) {
             if (child instanceof FunctionNode) {
@@ -46,11 +53,15 @@ public abstract class BaseTarget {
         }
     }
     
+    /** Parse an eval expression.
+     *
+     * @throws Exception if the expression is not recognized.
+     */
     protected void parseEval(FunctionNode functionNode) throws Exception {
         if (functionNode.child instanceof FunctionNode) {
             FunctionNode nestedFunction = (FunctionNode)functionNode.child;
             if (nestedFunction.function.equals("call")) {
-                parseCall(nestedFunction.child);
+                parseEvalCall(nestedFunction.child);
             } else {
                 throw new Exception("eval's nested function isn't \"call\" but \"" + functionNode.function + "\"");
             }
@@ -59,5 +70,9 @@ public abstract class BaseTarget {
         }
     }
 
-    abstract protected void parseCall(Node child) throws Exception;
+    /** Parse a call expression found inside an eval expression.
+     *
+     * @param child node representing the function to call.
+     */
+    abstract protected void parseEvalCall(Node child) throws Exception;
 }
