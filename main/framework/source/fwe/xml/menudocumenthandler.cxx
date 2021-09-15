@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,14 +55,14 @@
 //	defines
 //_________________________________________________________________________________________________________________
 
-#define XMLNS_MENU				    "http://openoffice.org/2001/menu"
-#define XMLNS_PREFIX			    "menu:"
+#define XMLNS_MENU					"http://openoffice.org/2001/menu"
+#define XMLNS_PREFIX				"menu:"
 
-#define ELEMENT_MENUBAR			    "http://openoffice.org/2001/menu^menubar"
-#define ELEMENT_MENU			    "http://openoffice.org/2001/menu^menu"
-#define ELEMENT_MENUPOPUP		    "http://openoffice.org/2001/menu^menupopup"
-#define ELEMENT_MENUITEM		    "http://openoffice.org/2001/menu^menuitem"
-#define ELEMENT_MENUSEPARATOR	    "http://openoffice.org/2001/menu^menuseparator"
+#define ELEMENT_MENUBAR				"http://openoffice.org/2001/menu^menubar"
+#define ELEMENT_MENU				"http://openoffice.org/2001/menu^menu"
+#define ELEMENT_MENUPOPUP			"http://openoffice.org/2001/menu^menupopup"
+#define ELEMENT_MENUITEM			"http://openoffice.org/2001/menu^menuitem"
+#define ELEMENT_MENUSEPARATOR		"http://openoffice.org/2001/menu^menuseparator"
 
 #define ELEMENT_NS_MENUBAR			"menu:menubar"
 #define ELEMENT_NS_MENU				"menu:menu"
@@ -70,43 +70,43 @@
 #define ELEMENT_NS_MENUITEM			"menu:menuitem"
 #define ELEMENT_NS_MENUSEPARATOR	"menu:menuseparator"
 
-#define ATTRIBUTE_ID			    "http://openoffice.org/2001/menu^id"
-#define ATTRIBUTE_LABEL			    "http://openoffice.org/2001/menu^label"
-#define ATTRIBUTE_HELPID		    "http://openoffice.org/2001/menu^helpid"
-#define ATTRIBUTE_LINEBREAK		    "http://openoffice.org/2001/menu^linebreak"
-#define ATTRIBUTE_STYLE		    "http://openoffice.org/2001/menu^style"
+#define ATTRIBUTE_ID				"http://openoffice.org/2001/menu^id"
+#define ATTRIBUTE_LABEL				"http://openoffice.org/2001/menu^label"
+#define ATTRIBUTE_HELPID			"http://openoffice.org/2001/menu^helpid"
+#define ATTRIBUTE_LINEBREAK			"http://openoffice.org/2001/menu^linebreak"
+#define ATTRIBUTE_STYLE				"http://openoffice.org/2001/menu^style"
 
-#define ATTRIBUTE_NS_ID			    "menu:id"
-#define ATTRIBUTE_NS_LABEL		    "menu:label"
-#define ATTRIBUTE_NS_HELPID		    "menu:helpid"
-#define ATTRIBUTE_NS_LINEBREAK	    "menu:linebreak"
-#define ATTRIBUTE_NS_STYLE		    "menu:style"
+#define ATTRIBUTE_NS_ID				"menu:id"
+#define ATTRIBUTE_NS_LABEL			"menu:label"
+#define ATTRIBUTE_NS_HELPID			"menu:helpid"
+#define ATTRIBUTE_NS_LINEBREAK		"menu:linebreak"
+#define ATTRIBUTE_NS_STYLE			"menu:style"
 
-#define ATTRIBUTE_XMLNS_MENU	    "xmlns:menu"
+#define ATTRIBUTE_XMLNS_MENU		"xmlns:menu"
 
-#define ATTRIBUTE_TYPE_CDATA	    "CDATA"
+#define ATTRIBUTE_TYPE_CDATA		"CDATA"
 
-#define MENUBAR_DOCTYPE			    "<!DOCTYPE menu:menubar PUBLIC \"-//OpenOffice.org//DTD OfficeDocument 1.0//EN\" \"menubar.dtd\">"
+#define MENUBAR_DOCTYPE				"<!DOCTYPE menu:menubar PUBLIC \"-//OpenOffice.org//DTD OfficeDocument 1.0//EN\" \"menubar.dtd\">"
 
-#define ATTRIBUTE_ITEMSTYLE_TEXT    "text"
-#define ATTRIBUTE_ITEMSTYLE_IMAGE    "image"
-#define ATTRIBUTE_ITEMSTYLE_RADIO    "radio"
+#define ATTRIBUTE_ITEMSTYLE_TEXT	"text"
+#define ATTRIBUTE_ITEMSTYLE_IMAGE	"image"
+#define ATTRIBUTE_ITEMSTYLE_RADIO	"radio"
 
 // Property names of a menu/menu item ItemDescriptor
-static const char ITEM_DESCRIPTOR_COMMANDURL[]  = "CommandURL";
-static const char ITEM_DESCRIPTOR_HELPURL[]     = "HelpURL";
-static const char ITEM_DESCRIPTOR_CONTAINER[]   = "ItemDescriptorContainer";
-static const char ITEM_DESCRIPTOR_LABEL[]       = "Label";
-static const char ITEM_DESCRIPTOR_TYPE[]        = "Type";
-static const char ITEM_DESCRIPTOR_STYLE[]       = "Style";
+static const char ITEM_DESCRIPTOR_COMMANDURL[]	= "CommandURL";
+static const char ITEM_DESCRIPTOR_HELPURL[]		= "HelpURL";
+static const char ITEM_DESCRIPTOR_CONTAINER[]	= "ItemDescriptorContainer";
+static const char ITEM_DESCRIPTOR_LABEL[]		= "Label";
+static const char ITEM_DESCRIPTOR_TYPE[]		= "Type";
+static const char ITEM_DESCRIPTOR_STYLE[]		= "Style";
 
 // special popup menus (filled during runtime) must be saved as an empty popup menu or menuitem!!!
-static const sal_Int32 CMD_PROTOCOL_SIZE        = 5;
-static const char CMD_PROTOCOL[]                = ".uno:";
-static const char ADDDIRECT_CMD[]               = ".uno:AddDirect" ;
-static const char AUTOPILOTMENU_CMD[]           = ".uno:AutoPilotMenu" ;
-static const char FILEMENU_CMD[]                = ".uno:Picklist" ;
-static const char WINDOWMENU_CMD[]              = ".uno:WindowList" ;
+static const sal_Int32 CMD_PROTOCOL_SIZE		= 5;
+static const char CMD_PROTOCOL[]				= ".uno:";
+static const char ADDDIRECT_CMD[]				= ".uno:AddDirect" ;
+static const char AUTOPILOTMENU_CMD[]			= ".uno:AutoPilotMenu" ;
+static const char FILEMENU_CMD[]				= ".uno:Picklist" ;
+static const char WINDOWMENU_CMD[]				= ".uno:WindowList" ;
 
 //_________________________________________________________________________________________________________________
 //	using namespaces
@@ -124,55 +124,55 @@ namespace framework
 
 struct MenuStyleItem
 {
-    sal_Int16 nBit;
-    const char* attrName;
+	sal_Int16 nBit;
+	const char* attrName;
 };
 
 MenuStyleItem MenuItemStyles[ ] = {
-    { ::com::sun::star::ui::ItemStyle::ICON, ATTRIBUTE_ITEMSTYLE_IMAGE },
-    { ::com::sun::star::ui::ItemStyle::TEXT, ATTRIBUTE_ITEMSTYLE_TEXT },
-    { ::com::sun::star::ui::ItemStyle::RADIO_CHECK, ATTRIBUTE_ITEMSTYLE_RADIO }
+	{ ::com::sun::star::ui::ItemStyle::ICON, ATTRIBUTE_ITEMSTYLE_IMAGE },
+	{ ::com::sun::star::ui::ItemStyle::TEXT, ATTRIBUTE_ITEMSTYLE_TEXT },
+	{ ::com::sun::star::ui::ItemStyle::RADIO_CHECK, ATTRIBUTE_ITEMSTYLE_RADIO }
 };
 
 
 sal_Int32 nMenuStyleItemEntries = sizeof( MenuItemStyles ) / sizeof( MenuItemStyles[ 0 ] );
 
-static void ExtractMenuParameters( const Sequence< PropertyValue > rProp,
-                                   ::rtl::OUString&                       rCommandURL,
-                                   ::rtl::OUString&                       rLabel,
-                                   ::rtl::OUString&                       rHelpURL,
-                                   Reference< XIndexAccess >&      rSubMenu,
-                                   sal_Int16&                      rType,
-                                   sal_Int16&                      rStyle )
+static void ExtractMenuParameters( const Sequence< PropertyValue >	rProp,
+								   ::rtl::OUString&					rCommandURL,
+								   ::rtl::OUString&					rLabel,
+								   ::rtl::OUString&					rHelpURL,
+								   Reference< XIndexAccess >&		rSubMenu,
+								   sal_Int16&						rType,
+								   sal_Int16&						rStyle )
 {
-    for ( sal_Int32 i = 0; i < rProp.getLength(); i++ )
-    {
-        if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_COMMANDURL ))
-        {
-            rProp[i].Value >>= rCommandURL;
-            rCommandURL = rCommandURL.intern();
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_HELPURL ))
-        {
-            rProp[i].Value >>= rHelpURL;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_CONTAINER ))
-        {
-            rProp[i].Value >>= rSubMenu;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_LABEL ))
-        {
-            rProp[i].Value >>= rLabel;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_TYPE ))
-        {
-            rProp[i].Value >>= rType;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_STYLE ))
-        {
-            rProp[i].Value >>= rStyle;
-        }
-    }
+	for ( sal_Int32 i = 0; i < rProp.getLength(); i++ )
+	{
+		if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_COMMANDURL ))
+		{
+			rProp[i].Value >>= rCommandURL;
+			rCommandURL = rCommandURL.intern();
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_HELPURL ))
+		{
+			rProp[i].Value >>= rHelpURL;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_CONTAINER ))
+		{
+			rProp[i].Value >>= rSubMenu;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_LABEL ))
+		{
+			rProp[i].Value >>= rLabel;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_TYPE ))
+		{
+			rProp[i].Value >>= rType;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_STYLE ))
+		{
+			rProp[i].Value >>= rStyle;
+		}
+	}
 }
 
 
@@ -186,8 +186,8 @@ ReadMenuDocumentHandlerBase::ReadMenuDocumentHandlerBase() :
 	m_aLabel( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_LABEL )),
 	m_aContainer( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_CONTAINER )),
 	m_aHelpURL( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_HELPURL )),
-    m_aCommandURL( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_COMMANDURL )),
-    m_aStyle( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_STYLE ))
+	m_aCommandURL( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_COMMANDURL )),
+	m_aStyle( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_STYLE ))
 {
 }
 
@@ -229,22 +229,22 @@ throw(	SAXException, RuntimeException )
 
 void ReadMenuDocumentHandlerBase::initPropertyCommon(
 	Sequence< PropertyValue > &rProps, const rtl::OUString &rCommandURL,
-    const rtl::OUString &rHelpId, const rtl::OUString &rLabel, sal_Int16 nItemStyleBits )
+	const rtl::OUString &rHelpId, const rtl::OUString &rLabel, sal_Int16 nItemStyleBits )
 {
 	rProps[0].Name = m_aCommandURL;
 	rProps[1].Name = m_aHelpURL;
 	rProps[2].Name = m_aContainer;
 	rProps[3].Name = m_aLabel;
-    rProps[4].Name = m_aStyle;
-    rProps[5].Name = m_aType;
+	rProps[4].Name = m_aStyle;
+	rProps[5].Name = m_aType;
 
 	// Common values
 	rProps[0].Value <<= rCommandURL.intern();
 	rProps[1].Value <<= rHelpId;
 	rProps[2].Value <<= Reference< XIndexContainer >();
 	rProps[3].Value <<= rLabel;
-    rProps[4].Value <<= nItemStyleBits;
-    rProps[5].Value <<= ::com::sun::star::ui::ItemType::DEFAULT;
+	rProps[4].Value <<= nItemStyleBits;
+	rProps[5].Value <<= ::com::sun::star::ui::ItemType::DEFAULT;
 }
 
 // -----------------------------------------------------------------------------
@@ -255,7 +255,7 @@ OReadMenuDocumentHandler::OReadMenuDocumentHandler(
 :	m_nElementDepth( 0 ),
 	m_bMenuBarMode( sal_False ),
 	m_xMenuBarContainer( rMenuBarContainer ),
-      m_xContainerFactory( rMenuBarContainer, UNO_QUERY ),
+	m_xContainerFactory( rMenuBarContainer, UNO_QUERY ),
 	mxServiceFactory(xServiceFactory)
 {
 }
@@ -347,12 +347,12 @@ void SAL_CALL OReadMenuDocumentHandler::endElement( const ::rtl::OUString& aName
 // #110897#
 OReadMenuBarHandler::OReadMenuBarHandler(
 	const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& xServiceFactory,
-    const Reference< XIndexContainer >& rMenuBarContainer,
-    const Reference< XSingleComponentFactory >& rFactory          )
+	const Reference< XIndexContainer >& rMenuBarContainer,
+	const Reference< XSingleComponentFactory >& rFactory )
 :	m_nElementDepth( 0 ),
 	m_bMenuMode( sal_False ),
 	m_xMenuBarContainer( rMenuBarContainer ),
-      m_xContainerFactory( rFactory ),
+	m_xContainerFactory( rFactory ),
 	mxServiceFactory( xServiceFactory )
 {
 }
@@ -397,72 +397,72 @@ throw( SAXException, RuntimeException )
 		::rtl::OUString aHelpId;
 		::rtl::OUString aCommandId;
 		::rtl::OUString aLabel;
-        sal_Int16 nItemBits(0);
+		sal_Int16 nItemBits(0);
 
 		m_bMenuMode = sal_True;
 
-        // Container must be factory to create sub container
-        Reference< XComponentContext > xComponentContext;
-        Reference< XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY );
-        xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>=
-            xComponentContext;
+		// Container must be factory to create sub container
+		Reference< XComponentContext > xComponentContext;
+		Reference< XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY );
+		xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))) >>=
+			xComponentContext;
 
-        Reference< XIndexContainer > xSubItemContainer;
-        if ( m_xContainerFactory.is() )
-            xSubItemContainer = Reference< XIndexContainer >( m_xContainerFactory->createInstanceWithContext( xComponentContext ), UNO_QUERY );
+		Reference< XIndexContainer > xSubItemContainer;
+		if ( m_xContainerFactory.is() )
+			xSubItemContainer = Reference< XIndexContainer >( m_xContainerFactory->createInstanceWithContext( xComponentContext ), UNO_QUERY );
 
 		if ( xSubItemContainer.is() )
-        {
-            // read attributes for menu
-		    for ( sal_Int16 i=0; i< xAttrList->getLength(); i++ )
-		    {
-			    ::rtl::OUString aName = xAttrList->getNameByIndex( i );
-			    ::rtl::OUString aValue = xAttrList->getValueByIndex( i );
-			    if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ID )))
-				    aCommandId = aValue;
-			    else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_LABEL )))
-				    aLabel = aValue;
-			    else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_HELPID )))
-				    aHelpId = aValue;
-                else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
-                {
-                    ::rtl::OUString aTemp( aValue );
-                    sal_Int32 nIndex = 0;
-                    do
-                    {
-                        ::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
-                        if ( aToken.getLength() > 0 )
-                        {
-                            if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
-                                nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
-                            else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
-                                nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
-                            else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
-                                nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
-                        }
-                    }
-                    while ( nIndex >= 0 );                    
-                }
-		    }
+		{
+			// read attributes for menu
+			for ( sal_Int16 i=0; i< xAttrList->getLength(); i++ )
+			{
+				::rtl::OUString aName = xAttrList->getNameByIndex( i );
+				::rtl::OUString aValue = xAttrList->getValueByIndex( i );
+				if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ID )))
+					aCommandId = aValue;
+				else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_LABEL )))
+					aLabel = aValue;
+				else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_HELPID )))
+					aHelpId = aValue;
+				else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
+				{
+					::rtl::OUString aTemp( aValue );
+					sal_Int32 nIndex = 0;
+					do
+					{
+						::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
+						if ( aToken.getLength() > 0 )
+						{
+							if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
+								nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
+							else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
+								nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
+							else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
+								nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
+						}
+					}
+					while ( nIndex >= 0 );
+				}
+			}
 
-		    if ( aCommandId.getLength() > 0 )
-		    {
-                Sequence< PropertyValue > aSubMenuProp( 6 );
-                initPropertyCommon( aSubMenuProp, aCommandId, aHelpId, aLabel, nItemBits );
+			if ( aCommandId.getLength() > 0 )
+			{
+				Sequence< PropertyValue > aSubMenuProp( 6 );
+				initPropertyCommon( aSubMenuProp, aCommandId, aHelpId, aLabel, nItemBits );
 				aSubMenuProp[2].Value <<= xSubItemContainer;
 
-                m_xMenuBarContainer->insertByIndex( m_xMenuBarContainer->getCount(), makeAny( aSubMenuProp ) );
-		    }
-		    else
-		    {
-			    ::rtl::OUString aErrorMessage = getErrorLineString();
-			    aErrorMessage += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "attribute id for element menu required!" ));
-			    throw SAXException( aErrorMessage, Reference< XInterface >(), Any() );
-		    }
+				m_xMenuBarContainer->insertByIndex( m_xMenuBarContainer->getCount(), makeAny( aSubMenuProp ) );
+			}
+			else
+			{
+				::rtl::OUString aErrorMessage = getErrorLineString();
+				aErrorMessage += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "attribute id for element menu required!" ));
+				throw SAXException( aErrorMessage, Reference< XInterface >(), Any() );
+			}
 
-		    m_xReader = Reference< XDocumentHandler >( new OReadMenuHandler( xSubItemContainer, m_xContainerFactory ));
-		    m_xReader->startDocument();
-        }
+			m_xReader = Reference< XDocumentHandler >( new OReadMenuHandler( xSubItemContainer, m_xContainerFactory ));
+			m_xReader->startDocument();
+		}
 	}
 	else
 	{
@@ -507,12 +507,12 @@ void OReadMenuBarHandler::endElement( const ::rtl::OUString& aName )
 
 
 OReadMenuHandler::OReadMenuHandler(
-    const Reference< XIndexContainer >& rMenuContainer,
-    const Reference< XSingleComponentFactory >& rFactory          ) :
-    m_nElementDepth( 0 ),
-    m_bMenuPopupMode( sal_False ),
-    m_xMenuContainer( rMenuContainer ),
-    m_xContainerFactory( rFactory )
+	const Reference< XIndexContainer >& rMenuContainer,
+	const Reference< XSingleComponentFactory >& rFactory ) :
+	m_nElementDepth( 0 ),
+	m_bMenuPopupMode( sal_False ),
+	m_xMenuContainer( rMenuContainer ),
+	m_xContainerFactory( rFactory )
 {
 }
 
@@ -593,13 +593,13 @@ void SAL_CALL OReadMenuHandler::endElement( const ::rtl::OUString& aName )
 
 
 OReadMenuPopupHandler::OReadMenuPopupHandler(
-    const Reference< XIndexContainer >& rMenuContainer,
-    const Reference< XSingleComponentFactory >& rFactory          ) :
-    m_nElementDepth( 0 ),
-    m_bMenuMode( sal_False ),
-    m_xMenuContainer( rMenuContainer ),
-    m_xContainerFactory( rFactory ),
-    m_nNextElementExpected( ELEM_CLOSE_NONE )
+	const Reference< XIndexContainer >& rMenuContainer,
+	const Reference< XSingleComponentFactory >& rFactory ) :
+	m_nElementDepth( 0 ),
+	m_bMenuMode( sal_False ),
+	m_xMenuContainer( rMenuContainer ),
+	m_xContainerFactory( rFactory ),
+	m_nNextElementExpected( ELEM_CLOSE_NONE )
 {
 }
 
@@ -633,22 +633,22 @@ throw( SAXException, RuntimeException )
 		::rtl::OUString aHelpId;
 		::rtl::OUString aCommandId;
 		::rtl::OUString aLabel;
-        sal_Int16 nItemBits(0);
+		sal_Int16 nItemBits(0);
 
 		m_bMenuMode = sal_True;
 
-        // Container must be factory to create sub container
-        if ( !m_xComponentContext.is() )
-        {
-            const Reference< XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY_THROW );
-            m_xComponentContext.set(xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))), UNO_QUERY_THROW );
-        }
+		// Container must be factory to create sub container
+		if ( !m_xComponentContext.is() )
+		{
+			const Reference< XPropertySet > xProps( ::comphelper::getProcessServiceFactory(), UNO_QUERY_THROW );
+			m_xComponentContext.set(xProps->getPropertyValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "DefaultContext" ))), UNO_QUERY_THROW );
+		}
 
-        Reference< XIndexContainer > xSubItemContainer;
-        if ( m_xContainerFactory.is() )
-            xSubItemContainer = Reference< XIndexContainer >( m_xContainerFactory->createInstanceWithContext( m_xComponentContext ), UNO_QUERY );
+		Reference< XIndexContainer > xSubItemContainer;
+		if ( m_xContainerFactory.is() )
+			xSubItemContainer = Reference< XIndexContainer >( m_xContainerFactory->createInstanceWithContext( m_xComponentContext ), UNO_QUERY );
 
-        // read attributes for menu
+		// read attributes for menu
 		for ( sal_Int16 i=0; i< xAttrList->getLength(); i++ )
 		{
 			::rtl::OUString aName = xAttrList->getNameByIndex( i );
@@ -659,35 +659,35 @@ throw( SAXException, RuntimeException )
 				aLabel = aValue;
 			else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_HELPID )))
 				aHelpId = aValue;
-            else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
-            {
-                ::rtl::OUString aTemp( aValue );
-                sal_Int32 nIndex = 0;
-                do
-                {
-                    ::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
-                    if ( aToken.getLength() > 0 )
-                    {
-                        if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
-                        else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
-                        else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
-                    }
-                }
-                while ( nIndex >= 0 );                    
-            }
+			else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
+			{
+				::rtl::OUString aTemp( aValue );
+				sal_Int32 nIndex = 0;
+				do
+				{
+					::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
+					if ( aToken.getLength() > 0 )
+					{
+						if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
+						else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
+						else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
+					}
+				}
+				while ( nIndex >= 0 );
+			}
 
 		}
 
 		if ( aCommandId.getLength() > 0 )
 		{
-            Sequence< PropertyValue > aSubMenuProp( 6 );
-            initPropertyCommon( aSubMenuProp, aCommandId, aHelpId, aLabel, nItemBits );
+			Sequence< PropertyValue > aSubMenuProp( 6 );
+			initPropertyCommon( aSubMenuProp, aCommandId, aHelpId, aLabel, nItemBits );
 			aSubMenuProp[2].Value <<= xSubItemContainer;
 
-            m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aSubMenuProp ) );
+			m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aSubMenuProp ) );
 		}
 		else
 		{
@@ -704,7 +704,7 @@ throw( SAXException, RuntimeException )
 		::rtl::OUString aHelpId;
 		::rtl::OUString aCommandId;
 		::rtl::OUString aLabel;
-        sal_Int16 nItemBits(0);
+		sal_Int16 nItemBits(0);
 		// read attributes for menu item
 		for ( sal_Int16 i=0; i< xAttrList->getLength(); i++ )
 		{
@@ -716,48 +716,48 @@ throw( SAXException, RuntimeException )
 				aLabel = aValue;
 			else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_HELPID )))
 				aHelpId = aValue;
-            else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
-            {
-                ::rtl::OUString aTemp( aValue );
-                sal_Int32 nIndex = 0;
-                do
-                {
-                    ::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
-                    if ( aToken.getLength() > 0 )
-                    {
-                        if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
-                        else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
-                        else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
-                            nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
-                    }
-                }
-                while ( nIndex >= 0 );                    
-            }
+			else if ( aName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_STYLE )))
+			{
+				::rtl::OUString aTemp( aValue );
+				sal_Int32 nIndex = 0;
+				do
+				{
+					::rtl::OUString aToken = aTemp.getToken( 0, '+', nIndex );
+					if ( aToken.getLength() > 0 )
+					{
+						if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_TEXT ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::TEXT;
+						else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_IMAGE ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::ICON;
+						else if ( aToken.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ITEMSTYLE_RADIO ) ) )
+							nItemBits |= ::com::sun::star::ui::ItemStyle::RADIO_CHECK;
+					}
+				}
+				while ( nIndex >= 0 );
+			}
 
 		}
 
 		if ( aCommandId.getLength() > 0 )
 		{
-            Sequence< PropertyValue > aMenuItem( 6 );
-            initPropertyCommon( aMenuItem, aCommandId, aHelpId, aLabel, nItemBits );
+			Sequence< PropertyValue > aMenuItem( 6 );
+			initPropertyCommon( aMenuItem, aCommandId, aHelpId, aLabel, nItemBits );
 			aMenuItem[2].Value <<= Reference< XIndexContainer >();
 
-            m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aMenuItem ) );
+			m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aMenuItem ) );
 		}
 
 		m_nNextElementExpected = ELEM_CLOSE_MENUITEM;
 	}
 	else if ( rName.equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ELEMENT_MENUSEPARATOR )))
 	{
-        Sequence< PropertyValue > aMenuSeparator( 1 );
-        aMenuSeparator[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_TYPE ));
-        aMenuSeparator[0].Value <<= ::com::sun::star::ui::ItemType::SEPARATOR_LINE;
+		Sequence< PropertyValue > aMenuSeparator( 1 );
+		aMenuSeparator[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_TYPE ));
+		aMenuSeparator[0].Value <<= ::com::sun::star::ui::ItemType::SEPARATOR_LINE;
 
-        m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aMenuSeparator ) );
+		m_xMenuContainer->insertByIndex( m_xMenuContainer->getCount(), makeAny( aMenuSeparator ) );
 
-        m_nNextElementExpected = ELEM_CLOSE_MENUSEPARATOR;
+		m_nNextElementExpected = ELEM_CLOSE_MENUSEPARATOR;
 	}
 	else
 	{
@@ -825,8 +825,8 @@ void SAL_CALL OReadMenuPopupHandler::endElement( const ::rtl::OUString& aName )
 
 
 OWriteMenuDocumentHandler::OWriteMenuDocumentHandler(
-    const Reference< XIndexAccess >& rMenuBarContainer,
-    const Reference< XDocumentHandler >& rDocumentHandler ) :
+	const Reference< XIndexAccess >& rMenuBarContainer,
+	const Reference< XDocumentHandler >& rDocumentHandler ) :
 	m_xMenuBarContainer( rMenuBarContainer ),
 	m_xWriteDocumentHandler( rDocumentHandler )
 {
@@ -880,80 +880,80 @@ throw ( SAXException, RuntimeException )
 void OWriteMenuDocumentHandler::WriteMenu( const Reference< XIndexAccess >& rMenuContainer )
 throw ( SAXException, RuntimeException )
 {
-	sal_Int32  nItemCount = rMenuContainer->getCount();
-	sal_Bool   bSeparator = sal_False;
-    Any        aAny;
+	sal_Int32	nItemCount = rMenuContainer->getCount();
+	sal_Bool	bSeparator = sal_False;
+	Any			aAny;
 
 	for ( sal_Int32 nItemPos = 0; nItemPos < nItemCount; nItemPos++ )
 	{
-        Sequence< PropertyValue > aProps;
-        aAny = rMenuContainer->getByIndex( nItemPos );
-        if ( aAny >>= aProps )
-        {
-            ::rtl::OUString    aCommandURL;
-            ::rtl::OUString    aLabel;
-            ::rtl::OUString    aHelpURL;
-            sal_Int16   nType( ::com::sun::star::ui::ItemType::DEFAULT );
-            sal_Int16   nItemBits( 0 );
-            Reference< XIndexAccess > xSubMenu;
+		Sequence< PropertyValue > aProps;
+		aAny = rMenuContainer->getByIndex( nItemPos );
+		if ( aAny >>= aProps )
+		{
+			::rtl::OUString		aCommandURL;
+			::rtl::OUString		aLabel;
+			::rtl::OUString		aHelpURL;
+			sal_Int16	nType( ::com::sun::star::ui::ItemType::DEFAULT );
+			sal_Int16	nItemBits( 0 );
+			Reference< XIndexAccess > xSubMenu;
 
-            ExtractMenuParameters( aProps, aCommandURL, aLabel, aHelpURL, xSubMenu, nType, nItemBits );
-            if ( xSubMenu.is() )
-		    {
-                if ( aCommandURL.equalsAscii( ADDDIRECT_CMD ) ||
-                    aCommandURL.equalsAscii( AUTOPILOTMENU_CMD ))
-                {
-                    WriteMenuItem( aCommandURL, aLabel, aHelpURL, nItemBits );
-                    bSeparator = sal_False;
-                }
-			    else if (( aCommandURL.getLength() > 0 ) && !AddonPopupMenu::IsCommandURLPrefix ( aCommandURL ))
-			    {
-				    ::comphelper::AttributeList* pListMenu = new ::comphelper::AttributeList;
-				    Reference< XAttributeList > xListMenu( (XAttributeList *)pListMenu , UNO_QUERY );
+			ExtractMenuParameters( aProps, aCommandURL, aLabel, aHelpURL, xSubMenu, nType, nItemBits );
+			if ( xSubMenu.is() )
+			{
+				if ( aCommandURL.equalsAscii( ADDDIRECT_CMD ) ||
+					aCommandURL.equalsAscii( AUTOPILOTMENU_CMD ))
+				{
+					WriteMenuItem( aCommandURL, aLabel, aHelpURL, nItemBits );
+					bSeparator = sal_False;
+				}
+				else if (( aCommandURL.getLength() > 0 ) && !AddonPopupMenu::IsCommandURLPrefix ( aCommandURL ))
+				{
+					::comphelper::AttributeList* pListMenu = new ::comphelper::AttributeList;
+					Reference< XAttributeList > xListMenu( (XAttributeList *)pListMenu , UNO_QUERY );
 
-                    pListMenu->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_ID )),
-                                            m_aAttributeType,
-                                            aCommandURL );
+					pListMenu->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_ID )),
+											 m_aAttributeType,
+											 aCommandURL );
 
-				    if ( !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
-                        pListMenu->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_LABEL )),
-						    					 m_aAttributeType,
-							    				 aLabel );
+					if ( !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
+						pListMenu->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_LABEL )),
+												 m_aAttributeType,
+												 aLabel );
 
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
-				    m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENU )), xListMenu );
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
-				    m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENUPOPUP )), m_xEmptyList );
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENU )), xListMenu );
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENUPOPUP )), m_xEmptyList );
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 
-				    WriteMenu( xSubMenu );
+					WriteMenu( xSubMenu );
 
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
-				    m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENUPOPUP )) );
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
-				    m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENU )) );
-				    m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
-				    bSeparator = sal_False;
-			    }
-		    }
-		    else
-		    {
-                if ( nType == ::com::sun::star::ui::ItemType::DEFAULT )
-                {
-                    if ( aCommandURL.getLength() > 0 )
-                    {
-                        bSeparator = sal_False;
-                        WriteMenuItem( aCommandURL, aLabel, aHelpURL, nItemBits );
-                    }
-			    }
-			    else if ( !bSeparator )
-			    {
-                    // Don't write two separators together
-				    WriteMenuSeparator();
-				    bSeparator = sal_True;
-			    }
-		    }
-        }
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENUPOPUP )) );
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENU )) );
+					m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
+					bSeparator = sal_False;
+				}
+			}
+			else
+			{
+				if ( nType == ::com::sun::star::ui::ItemType::DEFAULT )
+				{
+					if ( aCommandURL.getLength() > 0 )
+					{
+						bSeparator = sal_False;
+						WriteMenuItem( aCommandURL, aLabel, aHelpURL, nItemBits );
+					}
+				}
+				else if ( !bSeparator )
+				{
+					// Don't write two separators together
+					WriteMenuSeparator();
+					bSeparator = sal_True;
+				}
+			}
+		}
 	}
 }
 
@@ -963,9 +963,9 @@ void OWriteMenuDocumentHandler::WriteMenuItem( const ::rtl::OUString& aCommandUR
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
 	Reference< XAttributeList > xList( (XAttributeList *) pList , UNO_QUERY );
 
-    pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_ID )),
-                                m_aAttributeType,
-                                aCommandURL );
+	pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_ID )),
+						 m_aAttributeType,
+						 aCommandURL );
 
 	if ( aHelpURL.getLength() > 0 )
 	{
@@ -974,30 +974,30 @@ void OWriteMenuDocumentHandler::WriteMenuItem( const ::rtl::OUString& aCommandUR
 							 aHelpURL );
 	}
 
-    if (( aLabel.getLength() > 0 ) && !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
-    {
-        pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_LABEL )),
-							    m_aAttributeType,
-							    aLabel );
-    }
-    if (( nStyle > 0 ) && !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
-    {
-        rtl::OUString aValue;
-        MenuStyleItem* pStyle = MenuItemStyles;
+	if (( aLabel.getLength() > 0 ) && !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
+	{
+		pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_LABEL )),
+							 m_aAttributeType,
+							 aLabel );
+	}
+	if (( nStyle > 0 ) && !( aCommandURL.copy( CMD_PROTOCOL_SIZE ).equalsAscii( CMD_PROTOCOL )))
+	{
+		rtl::OUString aValue;
+		MenuStyleItem* pStyle = MenuItemStyles;
 
-        for ( sal_Int32 nIndex = 0; nIndex < nMenuStyleItemEntries; ++nIndex, ++pStyle )
-        {
-            if ( nStyle & pStyle->nBit )
-            {
-                if ( aValue.getLength() )
-                    aValue = aValue.concat( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("+") ) );
-                aValue += rtl::OUString::createFromAscii( pStyle->attrName );
-            }
-        }
-        pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_STYLE )),
-                                m_aAttributeType,
-                                aValue );
-    }
+		for ( sal_Int32 nIndex = 0; nIndex < nMenuStyleItemEntries; ++nIndex, ++pStyle )
+		{
+			if ( nStyle & pStyle->nBit )
+			{
+				if ( aValue.getLength() )
+					aValue = aValue.concat( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("+") ) );
+				aValue += rtl::OUString::createFromAscii( pStyle->attrName );
+			}
+		}
+		pList->AddAttribute( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_NS_STYLE )),
+							 m_aAttributeType,
+							 aValue );
+	}
 
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_MENUITEM )), xList );
@@ -1015,4 +1015,3 @@ void OWriteMenuDocumentHandler::WriteMenuSeparator()
 }
 
 } // namespace framework
-
