@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,12 +64,12 @@ namespace framework
 
 sal_Bool MenuConfiguration::IsPickListItemId( sal_uInt16 nId )
 {
-    return (( START_ITEMID_PICKLIST <= nId ) && ( nId <= END_ITEMID_PICKLIST ));
+	return (( START_ITEMID_PICKLIST <= nId ) && ( nId <= END_ITEMID_PICKLIST ));
 }
 
 sal_Bool MenuConfiguration::IsWindowListItemId( sal_uInt16 nId )
 {
-    return (( START_ITEMID_WINDOWLIST <= nId ) && ( nId <= END_ITEMID_WINDOWLIST ));
+	return (( START_ITEMID_WINDOWLIST <= nId ) && ( nId <= END_ITEMID_WINDOWLIST ));
 }
 
 
@@ -86,7 +86,7 @@ MenuConfiguration::~MenuConfiguration()
 
 
 Reference< XIndexAccess > MenuConfiguration::CreateMenuBarConfigurationFromXML(
-    Reference< XInputStream >& rInputStream )
+	Reference< XInputStream >& rInputStream )
 throw ( WrappedTargetException )
 {
 	Reference< XParser > xParser( m_rxServiceManager->createInstance(SERVICENAME_SAXPARSER),UNO_QUERY);
@@ -98,7 +98,7 @@ throw ( WrappedTargetException )
 
 
 	// create menu bar
-    Reference< XIndexContainer > xItemContainer( static_cast< cppu::OWeakObject *>( new RootItemContainer()), UNO_QUERY );
+	Reference< XIndexContainer > xItemContainer( static_cast< cppu::OWeakObject *>( new RootItemContainer()), UNO_QUERY );
 
 	// create namespace filter and set menudocument handler inside to support xml namespaces
 
@@ -148,8 +148,8 @@ throw ( ::com::sun::star::lang::WrappedTargetException )
 }
 
 void MenuConfiguration::StoreMenuBarConfigurationToXML(
-    Reference< XIndexAccess >& rMenuBarConfiguration,
-    Reference< XOutputStream >& rOutputStream )
+	Reference< XIndexAccess >& rMenuBarConfiguration,
+	Reference< XOutputStream >& rOutputStream )
 throw ( WrappedTargetException )
 {
 	Reference< XDocumentHandler > xWriter;
@@ -162,7 +162,7 @@ throw ( WrappedTargetException )
 
 	try
 	{
-        OWriteMenuDocumentHandler aWriteMenuDocumentHandler( rMenuBarConfiguration, xWriter );
+		OWriteMenuDocumentHandler aWriteMenuDocumentHandler( rMenuBarConfiguration, xWriter );
 		aWriteMenuDocumentHandler.WriteMenuDocument();
 	}
 	catch ( RuntimeException& e )
@@ -180,4 +180,3 @@ throw ( WrappedTargetException )
 }
 
 }
-
