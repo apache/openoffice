@@ -220,10 +220,7 @@ void XSecController::setDate( rtl::OUString& ouDate )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
 	convertDateTime( isi.signatureInfor.stDateTime, ouDate );
-	isi.signatureInfor.ouDateTime = ouDate;
-	/* When signing with the following code we get a 0 date time.
 	setIfEmpty(isi.signatureInfor.ouDateTime, ouDate);
-	*/
 }
 
 /*
