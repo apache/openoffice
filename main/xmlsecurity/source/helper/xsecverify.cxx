@@ -35,6 +35,25 @@
 #include <com/sun/star/xml/crypto/sax/XSignatureVerifyResultBroadcaster.hpp>
 #include <com/sun/star/xml/sax/SAXParseException.hpp>
 
+// FIXME: copied from main/sal/rtl/source/strimp.c
+static sal_Bool rtl_ImplIsWhitespace( sal_Unicode c )
+{
+	/* Space or Control character? */
+	if ( (c <= 32) && c )
+		return sal_True;
+
+	/* Only in the General Punctuation area Space or Control characters are included? */
+	if ( (c < 0x2000) || (c > 0x206F) )
+		return sal_False;
+
+	if ( ((c >= 0x2000) && (c <= 0x200B)) ||	/* All Spaces			*/
+		 (c == 0x2028) ||						/* LINE SEPARATOR		*/
+		 (c == 0x2029) )						/* PARAGRAPH SEPARATOR	*/
+		return sal_True;
+
+	return sal_False;
+}
+
 namespace cssu = com::sun::star::uno;
 namespace cssl = com::sun::star::lang;
 namespace cssxc = com::sun::star::xml::crypto;
@@ -200,7 +219,44 @@ void XSecController::setX509SerialNumber( rtl::OUString& ouX509SerialNumber )
 void XSecController::setX509Certificate( rtl::OUString& ouX509Certificate )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
-	setIfEmpty(isi.signatureInfor.ouX509Certificate, ouX509Certificate);
+    setIfEmpty(isi.signatureInfor.ouX509Certificate, ouX509Certificate);
+    if (isi.signatureInfor.ouX509Certificate.getLength()) {
+        // We allow to re-set the same certificate only.
+        // Whitespace may change.
+        const sal_Int32 l1 = isi.signatureInfor.ouX509Certificate.getLength();
+        const sal_Int32 l2 = ouX509Certificate.getLength();
+        const sal_Unicode *s1 = isi.signatureInfor.ouX509Certificate.getStr();
+        const sal_Unicode *s2 = ouX509Certificate.getStr();
+        sal_Int32 i1 = 0, i2 = 0;
+        while ((i1 < l1) && (i2 < l2)) {
+            const sal_Unicode &c1 = s1[i1];
+            const sal_Unicode &c2 = s2[i2];
+            if (rtl_ImplIsWhitespace(c1)) {
+                ++i1;
+                continue;
+            }
+            if (rtl_ImplIsWhitespace(c2)) {
+                ++i2;
+                continue;
+            }
+            if (c1 != c2) {
+                throw cssu::RuntimeException(rtl::OUString::createFromAscii("Value already set. Tampering?"), *this);
+            }
+            ++i1;
+            ++i2;
+        }
+        // We could still have whitespace at the end of both strings
+        while ((i1 < l1) && rtl_ImplIsWhitespace(s1[l1])) {
+            ++i1;
+        }
+        while ((i2 < l2) && rtl_ImplIsWhitespace(s2[l2])) {
+            ++i2;
+        }
+        if ((i1 != l1) || (i2 != l2)) {
+            throw cssu::RuntimeException(rtl::OUString::createFromAscii("Value already set. Tampering?"), *this);
+        }
+    }
+    isi.signatureInfor.ouX509Certificate = ouX509Certificate;
 }
 
 void XSecController::setSignatureValue( rtl::OUString& ouSignatureValue )
