@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -83,61 +83,61 @@ namespace sdr
 				return false;
 			}
 
-            // Test for Calc object hiding (for OLE and Graphic it's extra, see there)
-            const SdrPageView* pSdrPageView = GetObjectContact().TryToGetSdrPageView();
+			// Test for Calc object hiding (for OLE and Graphic it's extra, see there)
+			const SdrPageView* pSdrPageView = GetObjectContact().TryToGetSdrPageView();
 
-            if(pSdrPageView)
-            {
-            	const SdrView& rSdrView = pSdrPageView->GetView();
-                const bool bHideOle(rSdrView.getHideOle());
-			    const bool bHideChart(rSdrView.getHideChart());
-			    const bool bHideDraw(rSdrView.getHideDraw());
-                const bool bHideFormControl(rSdrView.getHideFormControl());
+			if(pSdrPageView)
+			{
+				const SdrView& rSdrView = pSdrPageView->GetView();
+				const bool bHideOle(rSdrView.getHideOle());
+				const bool bHideChart(rSdrView.getHideChart());
+				const bool bHideDraw(rSdrView.getHideDraw());
+				const bool bHideFormControl(rSdrView.getHideFormControl());
 
-                if(bHideOle || bHideChart || bHideDraw || bHideFormControl)
-			    {
-				    if(OBJ_OLE2 == rObject.GetObjIdentifier())
-				    {
-					    if(((SdrOle2Obj&)rObject).IsChart())
-					    {
-						    // chart
-						    if(bHideChart)
-						    {
-							    return false;
-						    }
-					    }
-					    else
-					    {
-						    // OLE
-						    if(bHideOle)
-						    {
-							    return false;
-						    }
-					    }
-				    }
-				    else if(OBJ_GRAF == rObject.GetObjIdentifier())
-				    {
-					    // graphic handled like OLE
-					    if(bHideOle)
-					    {
-						    return false;
-					    }
-				    }
-				    else
-				    {
-                        const bool bIsFormControl = dynamic_cast< const FmFormObj * >( &rObject ) != 0;
-                        if(bIsFormControl && bHideFormControl)
-                        {
-                            return false;
-                        }
-					    // any other draw object
-                        if(!bIsFormControl && bHideDraw)
-					    {
-						    return false;
-					    }
-				    }
-                }
-            }
+				if(bHideOle || bHideChart || bHideDraw || bHideFormControl)
+				{
+					if(OBJ_OLE2 == rObject.GetObjIdentifier())
+					{
+						if(((SdrOle2Obj&)rObject).IsChart())
+						{
+							// chart
+							if(bHideChart)
+							{
+								return false;
+							}
+						}
+						else
+						{
+							// OLE
+							if(bHideOle)
+							{
+								return false;
+							}
+						}
+					}
+					else if(OBJ_GRAF == rObject.GetObjIdentifier())
+					{
+						// graphic handled like OLE
+						if(bHideOle)
+						{
+							return false;
+						}
+					}
+					else
+					{
+						const bool bIsFormControl = dynamic_cast< const FmFormObj * >( &rObject ) != 0;
+						if(bIsFormControl && bHideFormControl)
+						{
+							return false;
+						}
+						// any other draw object
+						if(!bIsFormControl && bHideDraw)
+						{
+							return false;
+						}
+					}
+				}
+			}
 
 			return true;
 		}
