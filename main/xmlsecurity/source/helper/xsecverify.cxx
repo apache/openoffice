@@ -219,7 +219,6 @@ void XSecController::setX509SerialNumber( rtl::OUString& ouX509SerialNumber )
 void XSecController::setX509Certificate( rtl::OUString& ouX509Certificate )
 {
 	InternalSignatureInformation &isi = m_vInternalSignatureInformations[m_vInternalSignatureInformations.size()-1];
-    setIfEmpty(isi.signatureInfor.ouX509Certificate, ouX509Certificate);
     if (isi.signatureInfor.ouX509Certificate.getLength()) {
         // We allow to re-set the same certificate only.
         // Whitespace may change.
