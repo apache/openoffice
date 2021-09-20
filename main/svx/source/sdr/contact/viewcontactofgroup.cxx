@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -71,7 +71,7 @@ namespace sdr
 				{
 					const ViewContact& rCandidate(GetViewContact(a));
 					const drawinglayer::primitive2d::Primitive2DSequence aCandSeq(rCandidate.getViewIndependentPrimitive2DSequence());
-                    
+
 					drawinglayer::primitive2d::appendPrimitive2DSequenceToPrimitive2DSequence(xRetval, aCandSeq);
 				}
 			}
@@ -80,9 +80,9 @@ namespace sdr
 				// append an invisible outline for the cases where no visible content exists
 				const Rectangle aCurrentBoundRect(GetSdrObjGroup().GetLastBoundRect());
 				const basegfx::B2DRange aCurrentRange(
-					aCurrentBoundRect.Left(), aCurrentBoundRect.Top(), 
+					aCurrentBoundRect.Left(), aCurrentBoundRect.Top(),
 					aCurrentBoundRect.Right(), aCurrentBoundRect.Bottom());
-				
+
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
 					drawinglayer::primitive2d::createHiddenGeometryPrimitives2D(
 						false, aCurrentRange));
@@ -90,7 +90,7 @@ namespace sdr
 				xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 			}
 
-            return xRetval;
+			return xRetval;
 		}
 	} // end of namespace contact
 } // end of namespace sdr

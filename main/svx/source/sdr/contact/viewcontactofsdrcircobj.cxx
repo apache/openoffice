@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,14 +52,14 @@ namespace sdr
 			const SfxItemSet& rItemSet = GetCircObj().GetMergedItemSet();
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
-                    rItemSet, 
-                    GetCircObj().getText(0),
-                    false));
+					rItemSet,
+					GetCircObj().getText(0),
+					false));
 
 			// take unrotated snap rect (direct model data) for position and size
 			const Rectangle& rRectangle = GetCircObj().GetGeoRect();
 			const basegfx::B2DRange aObjectRange(
-				rRectangle.Left(), rRectangle.Top(), 
+				rRectangle.Left(), rRectangle.Top(),
 				rRectangle.Right(), rRectangle.Bottom());
 			const GeoStat& rGeoStat(GetCircObj().GetGeoStat());
 
@@ -81,9 +81,9 @@ namespace sdr
 			{
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
 					new drawinglayer::primitive2d::SdrEllipsePrimitive2D(
-						aObjectMatrix, 
+						aObjectMatrix,
 						aAttribute));
-				
+
 				return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 			}
 			else
@@ -97,13 +97,13 @@ namespace sdr
 
 				const drawinglayer::primitive2d::Primitive2DReference xReference(
 					new drawinglayer::primitive2d::SdrEllipseSegmentPrimitive2D(
-						aObjectMatrix, 
-						aAttribute, 
-						fStart, 
-						fEnd, 
-						bCloseSegment, 
+						aObjectMatrix,
+						aAttribute,
+						fStart,
+						fEnd,
+						bCloseSegment,
 						bCloseUsingCenter));
-				
+
 				return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 			}
 		}

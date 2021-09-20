@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -82,16 +82,16 @@ namespace sdr
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfPageObj::createViewIndependentPrimitive2DSequence() const
 		{
-			// ceate graphical visualisation data. Since this is the view-independent version which should not be used,
-			// create a replacement graphic visualisation here. Use GetLastBoundRect to access the model data directly
+			// create graphical visualization data. Since this is the view-independent version which should not be used,
+			// create a replacement graphic visualization here. Use GetLastBoundRect to access the model data directly
 			// which is aOutRect for SdrPageObj.
 			const Rectangle aModelRectangle(GetPageObj().GetLastBoundRect());
 			const basegfx::B2DRange aModelRange(aModelRectangle.Left(), aModelRectangle.Top(), aModelRectangle.Right(), aModelRectangle.Bottom());
-            const basegfx::B2DPolygon aOutline(basegfx::tools::createPolygonFromRect(aModelRange));
+			const basegfx::B2DPolygon aOutline(basegfx::tools::createPolygonFromRect(aModelRange));
 			const basegfx::BColor aYellow(1.0, 1.0, 0.0);
 			const drawinglayer::primitive2d::Primitive2DReference xReference(new drawinglayer::primitive2d::PolygonHairlinePrimitive2D(aOutline, aYellow));
 
-            return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
+			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
 		}
 
 	} // end of namespace contact

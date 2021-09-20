@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace sdr
 		{
 		}
 
-        drawinglayer::primitive2d::Primitive2DSequence ViewObjectContactOfGroup::getPrimitive2DSequenceHierarchy(DisplayInfo& rDisplayInfo) const
+		drawinglayer::primitive2d::Primitive2DSequence ViewObjectContactOfGroup::getPrimitive2DSequenceHierarchy(DisplayInfo& rDisplayInfo) const
 		{
 			drawinglayer::primitive2d::Primitive2DSequence xRetval;
 
@@ -63,7 +63,7 @@ namespace sdr
 				if(nSubHierarchyCount)
 				{
 					const sal_Bool bDoGhostedDisplaying(
-						GetObjectContact().DoVisualizeEnteredGroup() 
+						GetObjectContact().DoVisualizeEnteredGroup()
 						&& !GetObjectContact().isOutputToPrinter()
 						&& GetObjectContact().getActiveViewContact() == &GetViewContact());
 
@@ -81,7 +81,7 @@ namespace sdr
 						const drawinglayer::geometry::ViewInformation2D& rViewInformation2D(GetObjectContact().getViewInformation2D());
 						const ::basegfx::B2DRange aObjectRange(drawinglayer::primitive2d::getB2DRangeFromPrimitive2DSequence(xRetval, rViewInformation2D));
 						const basegfx::B2DRange aViewRange(rViewInformation2D.getViewport());
-						
+
 						// check geometrical visibility
 						if(!aViewRange.isEmpty() && !aViewRange.overlaps(aObjectRange))
 						{
