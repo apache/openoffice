@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -37,14 +37,14 @@ using ::rtl::OUString;
 namespace sd { namespace slidesorter { namespace view {
 
 ToolTip::ToolTip (SlideSorter& rSlideSorter)
-    : mrSlideSorter(rSlideSorter),
-      msDefaultHelpText(),
-      msCurrentHelpText(),
-      mnHelpWindowHandle(0),
-      maTimer()
+	: mrSlideSorter(rSlideSorter),
+	  msDefaultHelpText(),
+	  msCurrentHelpText(),
+	  mnHelpWindowHandle(0),
+	  maTimer()
 {
-    maTimer.SetTimeout(rSlideSorter.GetTheme()->GetIntegerValue(Theme::Integer_ToolTipDelay));
-    maTimer.SetTimeoutHdl(LINK(this, ToolTip, DelayTrigger));
+	maTimer.SetTimeout(rSlideSorter.GetTheme()->GetIntegerValue(Theme::Integer_ToolTipDelay));
+	maTimer.SetTimeoutHdl(LINK(this, ToolTip, DelayTrigger));
 }
 
 
@@ -52,8 +52,8 @@ ToolTip::ToolTip (SlideSorter& rSlideSorter)
 
 ToolTip::~ToolTip (void)
 {
-    maTimer.Stop();
-    Hide();
+	maTimer.Stop();
+	Hide();
 }
 
 
@@ -61,39 +61,39 @@ ToolTip::~ToolTip (void)
 
 void ToolTip::SetPage (const model::SharedPageDescriptor& rpDescriptor)
 {
-    if (mpDescriptor != rpDescriptor)
-    {
-        maTimer.Stop();
-        Hide();
-        
-        mpDescriptor = rpDescriptor;
+	if (mpDescriptor != rpDescriptor)
+	{
+		maTimer.Stop();
+		Hide();
 
-        if (mpDescriptor)
-        {
-            SdPage* pPage = mpDescriptor->GetPage();
-            OUString sHelpText;
-            if (pPage != NULL)
-                sHelpText = pPage->GetName();
-            else
-            {
-                OSL_ASSERT(mpDescriptor->GetPage() != NULL);
-            }
-            if (sHelpText.getLength() == 0)
-            {
-                sHelpText = String(SdResId(STR_PAGE));
-                sHelpText += String::CreateFromInt32(mpDescriptor->GetPageIndex()+1);
-            }
+		mpDescriptor = rpDescriptor;
 
-            msDefaultHelpText = sHelpText;
-            msCurrentHelpText = sHelpText;
-            Show(false);
-        }
-        else
-        {
-            msDefaultHelpText = OUString();
-            msCurrentHelpText = OUString();
-        }
-    }
+		if (mpDescriptor)
+		{
+			SdPage* pPage = mpDescriptor->GetPage();
+			OUString sHelpText;
+			if (pPage != NULL)
+				sHelpText = pPage->GetName();
+			else
+			{
+				OSL_ASSERT(mpDescriptor->GetPage() != NULL);
+			}
+			if (sHelpText.getLength() == 0)
+			{
+				sHelpText = String(SdResId(STR_PAGE));
+				sHelpText += String::CreateFromInt32(mpDescriptor->GetPageIndex()+1);
+			}
+
+			msDefaultHelpText = sHelpText;
+			msCurrentHelpText = sHelpText;
+			Show(false);
+		}
+		else
+		{
+			msDefaultHelpText = OUString();
+			msCurrentHelpText = OUString();
+		}
+	}
 }
 
 
@@ -101,15 +101,15 @@ void ToolTip::SetPage (const model::SharedPageDescriptor& rpDescriptor)
 
 void ToolTip::ShowDefaultHelpText (const ::rtl::OUString& rsHelpText)
 {
-    if (msDefaultHelpText != rsHelpText)
-    {
-        const bool bIsVisible (Hide());
+	if (msDefaultHelpText != rsHelpText)
+	{
+		const bool bIsVisible (Hide());
 
-        msDefaultHelpText = rsHelpText;
-        msCurrentHelpText = rsHelpText;
+		msDefaultHelpText = rsHelpText;
+		msCurrentHelpText = rsHelpText;
 
-        Show(bIsVisible);
-    }
+		Show(bIsVisible);
+	}
 }
 
 
@@ -117,14 +117,14 @@ void ToolTip::ShowDefaultHelpText (const ::rtl::OUString& rsHelpText)
 
 void ToolTip::ShowDefaultHelpText (void)
 {
-    if (msCurrentHelpText != msDefaultHelpText)
-    {
-        const bool bIsVisible (Hide());
+	if (msCurrentHelpText != msDefaultHelpText)
+	{
+		const bool bIsVisible (Hide());
 
-        msCurrentHelpText = msDefaultHelpText;
+		msCurrentHelpText = msDefaultHelpText;
 
-        Show(bIsVisible);
-    }
+		Show(bIsVisible);
+	}
 }
 
 
@@ -132,14 +132,14 @@ void ToolTip::ShowDefaultHelpText (void)
 
 void ToolTip::ShowHelpText (const ::rtl::OUString& rsHelpText)
 {
-    if (msCurrentHelpText != rsHelpText)
-    {
-        const bool bIsVisible (Hide());
+	if (msCurrentHelpText != rsHelpText)
+	{
+		const bool bIsVisible (Hide());
 
-        msCurrentHelpText = rsHelpText;
+		msCurrentHelpText = rsHelpText;
 
-        Show(bIsVisible);
-    }
+		Show(bIsVisible);
+	}
 }
 
 
@@ -147,10 +147,10 @@ void ToolTip::ShowHelpText (const ::rtl::OUString& rsHelpText)
 
 void ToolTip::Show (const bool bNoDelay)
 {
-    if (bNoDelay)
-        DoShow();
-    else
-        maTimer.Start();
+	if (bNoDelay)
+		DoShow();
+	else
+		maTimer.Start();
 }
 
 
@@ -158,44 +158,44 @@ void ToolTip::Show (const bool bNoDelay)
 
 void ToolTip::DoShow (void)
 {
-    if (maTimer.IsActive())
-    {
-        // The delay timer is active.  Wait for it to trigger the showing of
-        // the tool tip.
-        return;
-    }
-    
-    SharedSdWindow pWindow (mrSlideSorter.GetContentWindow());
-    if (msCurrentHelpText.getLength()>0 && pWindow)
-    {
-        Rectangle aBox (
-            mrSlideSorter.GetView().GetLayouter().GetPageObjectLayouter()->GetBoundingBox(
-                mpDescriptor,
-                PageObjectLayouter::Preview,
-                PageObjectLayouter::WindowCoordinateSystem));
+	if (maTimer.IsActive())
+	{
+		// The delay timer is active. Wait for it to trigger the showing of
+		// the tool tip.
+		return;
+	}
 
-        // Do not show the help text when the (lower edge of the ) preview
-        // is not visible.  The tool tip itself may still be outside the
-        // window.
-        if (aBox.Bottom() >= pWindow->GetSizePixel().Height())
-            return;
+	SharedSdWindow pWindow (mrSlideSorter.GetContentWindow());
+	if (msCurrentHelpText.getLength()>0 && pWindow)
+	{
+		Rectangle aBox (
+			mrSlideSorter.GetView().GetLayouter().GetPageObjectLayouter()->GetBoundingBox(
+				mpDescriptor,
+				PageObjectLayouter::Preview,
+				PageObjectLayouter::WindowCoordinateSystem));
 
-        ::Window* pParent (pWindow.get());
-        while (pParent!=NULL && pParent->GetParent()!=NULL)
-            pParent = pParent->GetParent();
-        const Point aOffset (pWindow->GetWindowExtentsRelative(pParent).TopLeft());
+		// Do not show the help text when the (lower edge of the ) preview
+		// is not visible. The tool tip itself may still be outside the
+		// window.
+		if (aBox.Bottom() >= pWindow->GetSizePixel().Height())
+			return;
 
-        // We do not know how high the tool tip will be but want its top
-        // edge not its bottom to be at a specific position (a little below
-        // the preview).  Therefore we use a little trick and place the tool
-        // tip at the top of a rectangle that is placed below the preview.
-        aBox.Move(aOffset.X(), aOffset.Y() + aBox.GetHeight() + 3);
-        mnHelpWindowHandle = Help::ShowTip(
-            pWindow.get(),
-            aBox,
-            msCurrentHelpText,
-            QUICKHELP_CENTER | QUICKHELP_TOP);
-    }
+		::Window* pParent (pWindow.get());
+		while (pParent!=NULL && pParent->GetParent()!=NULL)
+			pParent = pParent->GetParent();
+		const Point aOffset (pWindow->GetWindowExtentsRelative(pParent).TopLeft());
+
+		// We do not know how high the tool tip will be but want its top
+		// edge not its bottom to be at a specific position (a little below
+		// the preview). Therefore we use a little trick and place the tool
+		// tip at the top of a rectangle that is placed below the preview.
+		aBox.Move(aOffset.X(), aOffset.Y() + aBox.GetHeight() + 3);
+		mnHelpWindowHandle = Help::ShowTip(
+			pWindow.get(),
+			aBox,
+			msCurrentHelpText,
+			QUICKHELP_CENTER | QUICKHELP_TOP);
+	}
 }
 
 
@@ -203,14 +203,14 @@ void ToolTip::DoShow (void)
 
 bool ToolTip::Hide (void)
 {
-    if (mnHelpWindowHandle>0)
-    {
-        Help::HideTip(mnHelpWindowHandle);
-        mnHelpWindowHandle = 0;
-        return true;
-    }
-    else
-        return false;
+	if (mnHelpWindowHandle>0)
+	{
+		Help::HideTip(mnHelpWindowHandle);
+		mnHelpWindowHandle = 0;
+		return true;
+	}
+	else
+		return false;
 }
 
 
@@ -218,9 +218,9 @@ bool ToolTip::Hide (void)
 
 IMPL_LINK(ToolTip, DelayTrigger, void*, EMPTYARG)
 {
-    DoShow();
-    
-    return 0;
+	DoShow();
+
+	return 0;
 }
 
 } } } // end of namespace ::sd::slidesorter::view
