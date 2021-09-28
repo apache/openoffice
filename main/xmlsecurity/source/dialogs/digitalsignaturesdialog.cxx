@@ -223,6 +223,7 @@ DigitalSignaturesDialog::DigitalSignaturesDialog(
         maSigsInvalidImg.SetImage( Image( XMLSEC_RES( IMG_STATE_BROKEN_HC ) ) );
         maSigsNotvalidatedImg.SetImage( Image( XMLSEC_RES( IMG_STATE_NOTVALIDATED_HC ) ) );
     }
+    m_sInvalidSignaturesMessage = String(XMLSEC_RES(STR_INVALID_SIGNATURE));
 
     FreeResource();
 
@@ -726,6 +727,7 @@ void DigitalSignaturesDialog::ImplFillSignaturesBox()
 //Otherwise the real signature stream is used.
 void DigitalSignaturesDialog::ImplGetSignatureInformations(bool bUseTempStream)
 {
+    bool successful = false;
     maCurrentSignatureInformations.clear();
 
     maSignatureHelper.StartMission();
@@ -735,11 +737,16 @@ void DigitalSignaturesDialog::ImplGetSignatureInformations(bool bUseTempStream)
     if ( aStreamHelper.xSignatureStream.is() )
     {
         uno::Reference< io::XInputStream > xInputStream( aStreamHelper.xSignatureStream, uno::UNO_QUERY );
-	    maSignatureHelper.ReadAndVerifySignature( xInputStream );
+	    successful = maSignatureHelper.ReadAndVerifySignature( xInputStream );
     }
     maSignatureHelper.EndMission();
-
-    maCurrentSignatureInformations = maSignatureHelper.GetSignatureInformations();
+    if (successful) {
+        maCurrentSignatureInformations = maSignatureHelper.GetSignatureInformations();
+    } else {
+        // An exception was thrown. Better not trust the signature information.
+        ErrorBox err(this, WB_OK, m_sInvalidSignaturesMessage);
+        err.Execute();
+    }
 
     mbVerifySignatures = false;
 }

@@ -92,6 +92,8 @@ private:
 	OKButton			maOKBtn;
 	HelpButton			maHelpBtn;
 
+    /// Localized error message.
+    ::rtl::OUString m_sInvalidSignaturesMessage;
     ::rtl::OUString m_sODFVersion;
     //Signals if the document contains already a document signature. This is only 
     //importent when we are signing macros and if the value is true.
