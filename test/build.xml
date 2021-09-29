@@ -183,6 +183,7 @@
 		</condition>
 		<property name="test.executable" value="./run"/>
 		<property name="test.args" value="-tp bvt"/>
+		<echo message="Executing: ${test.executable} ${test.arg0} ${test.args}" level="info"/>
 		<exec executable="${test.executable}">
 			<arg value="${test.arg0}"/>
 			<arg line="${test.args}"/>
