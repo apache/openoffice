@@ -107,3 +107,10 @@ By default, the testing output is stored in `test/testspace/output.***` where **
 * screenshot/: Screenshot pictures when test assert is failed.
 
 Open `test/testspace/output.***/result.html` in your browser to see the testing report.
+
+## Cleaning Up
+Running clean will delete compiled classes and build directories.
+```shell
+ant clean
+```
+The `test/testspace` directory, test results and "installed" office if used need to be manually deleted when no longer needed.
