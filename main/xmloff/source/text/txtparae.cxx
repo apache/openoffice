@@ -2253,13 +2253,15 @@ void XMLTextParagraphExport::exportTextRangeEnumeration(
             }
             else if ( sType.equals( sAnnotationEnd ) )
             {
-                Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
-                const OUString& rName = xBookmark->getName();
-                if ( rName.getLength() > 0 )
-                {
-                    GetExport().AddAttribute(XML_NAMESPACE_OFFICE, XML_NAME, rName);
-                }
-                SvXMLElementExport aElem( GetExport(), !bAutoStyles, XML_NAMESPACE_OFFICE, XML_ANNOTATION_END, sal_False, sal_False );
+                if (!bAutoStyles) {
+                    Reference<XNamed> xBookmark(xPropSet->getPropertyValue(sBookmark), UNO_QUERY);
+                    const OUString& rName = xBookmark->getName();
+                    if ( rName.getLength() > 0 )
+                    {
+                        GetExport().AddAttribute(XML_NAMESPACE_OFFICE, XML_NAME, rName);
+                    }
+                    SvXMLElementExport aElem( GetExport(), true, XML_NAMESPACE_OFFICE, XML_ANNOTATION_END, sal_False, sal_False );
+                } // else: there is nothing to do for automatic styles here
             }
             else if( sType.equals( sFrame ) )
             {
