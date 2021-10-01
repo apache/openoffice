@@ -63,7 +63,8 @@ $opt_r      = 0;            # create 'remote' subdirs
                 'res'   => 1,
                 'slb'   => 1,
                 'slo'   => 1,
-                'srs'   => 1
+                'srs'   => 1,
+                'tmp'   => 1
             );
 
 #### main ####

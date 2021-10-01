@@ -52,6 +52,13 @@ DONT_REMOVE_PACKAGE:=TRUE
 .EXPORT: DONT_REMOVE_PACKAGE
 .ENDIF          # "$(OS)"=="LINUX"
 
+.IF "$(OS)"=="MACOSX"
+# $TMPDIR may be under /var, that may be a symbolic link and Perl may
+# consider it unsafe
+TMPDIR:=$(OUTDIR)/tmp
+.EXPORT: TMPDIR
+.ENDIF
+
 .INCLUDE .IGNORE: $(SRC_ROOT)$/cwsname.mk
 
 SHARED_COM_SDK_PATH*:=.

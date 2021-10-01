@@ -146,6 +146,7 @@ OUT2INC+=src/raptor.h src/raptor2.h src/raptor_config.h
 
 .IF "$(OS)"=="MACOSX"
 OUT2LIB+=src$/.libs$/libraptor2.$(RAPTOR_MAJOR).dylib src$/.libs$/libraptor2.dylib
+OOO_PATCH_FILES+=$(TARFILE_NAME).patch.macos
 .ELIF "$(OS)"=="WNT"
 .IF "$(COM)"=="GCC"
 OUT2LIB+=src$/.libs$/*.a

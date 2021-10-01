@@ -90,8 +90,14 @@
     <and>
       <os family="mac"/>
       <os family="unix"/>
-      <contains string="${java.version}" substring="1.7" casesensitive="false" /> 
-      <contains string="${java.vendor}" substring="Oracle" casesensitive="false" /> 
+      <or>
+        <contains string="${java.version}" substring="1.7" casesensitive="false" />
+        <contains string="${java.version}" substring="1.8" casesensitive="false" />
+      </or>
+      <or>
+        <contains string="${java.vendor}" substring="Oracle" casesensitive="false" />
+        <contains string="${java.vendor}" substring="adoptopenjdk" casesensitive="false" />
+      </or>
     </and>
   </condition>
 

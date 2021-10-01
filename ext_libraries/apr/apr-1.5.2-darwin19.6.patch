@@ -1,0 +1,106 @@
+--- misc/build/apr-1.5.2/configure	2015-04-25 08:04:18.000000000 -0400
++++ misc/build/apr-1.5.2/configure	2021-07-02 15:40:06.000000000 -0400
+@@ -22256,6 +22256,7 @@
+ #include <errno.h>
+ #include <string.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ main()
+ {
+   char buf[1024];
+@@ -23550,6 +23551,7 @@
+ /* end confdefs.h.  */
+ #include <stdio.h>
+ #include <sys/types.h>
++#include <stdlib.h>
+ #ifdef WIN32
+ #define binmode "b"
+ #else
+@@ -23785,6 +23787,7 @@
+ /* end confdefs.h.  */
+ #include <stdio.h>
+ #include <sys/types.h>
++#include <stdlib.h>
+ #ifdef WIN32
+ #define binmode "b"
+ #else
+@@ -23848,6 +23851,7 @@
+ /* end confdefs.h.  */
+ #include <stdio.h>
+ #include <stddef.h>
++#include <stdlib.h>
+ #ifdef WIN32
+ #define binmode "b"
+ #else
+@@ -23911,6 +23915,7 @@
+ /* end confdefs.h.  */
+ #include <stdio.h>
+ #include <sys/types.h>
++#include <stdlib.h>
+ #ifdef WIN32
+ #define binmode "b"
+ #else
+@@ -24061,6 +24066,7 @@
+   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <stdio.h>
++#include <stdlib.h>
+ $ac_includes_default
+ #ifdef WIN32
+ #define binmode "b"
+@@ -24349,6 +24355,7 @@
+ #include <stdio.h>
+ #include <sys/types.h>
+ #include <sys/uio.h>
++#include <stdlib.h>
+ #ifdef WIN32
+ #define binmode "b"
+ #else
+@@ -24973,6 +24980,7 @@
+ #include <sys/types.h>
+ #include <sys/time.h>
+ #include <sys/resource.h>
++#include <stdlib.h>
+ main()
+ {
+     struct rlimit limit;
+@@ -25417,6 +25425,7 @@
+ 
+ #include <sys/types.h>
+ #include <pthread.h>
++#include <stdlib.h>
+         int main()
+         {
+             pthread_mutex_t mutex;
+@@ -27143,6 +27152,7 @@
+ /* end confdefs.h.  */
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #ifdef HAVE_SYS_TYPES_H
+ #include <sys/types.h>
+ #endif
+@@ -27992,6 +28002,7 @@
+ #ifdef HAVE_SYS_SOCKET_H
+ #include <sys/socket.h>
+ #endif
++#include <stdlib.h>
+ 
+ int main(void) {
+     struct addrinfo hints, *ai;
+@@ -28055,6 +28066,7 @@
+ #ifdef HAVE_NETDB_H
+ #include <netdb.h>
+ #endif
++#include <stdlib.h>
+ 
+ int main(void) {
+     if (EAI_ADDRFAMILY < 0) {
+@@ -28116,6 +28128,7 @@
+ #ifdef HAVE_NETINET_IN_H
+ #include <netinet/in.h>
+ #endif
++#include <stdlib.h>
+ 
+ int main(void) {
+     struct sockaddr_in sa;
