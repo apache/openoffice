@@ -1193,7 +1193,7 @@ void SvXMLExport::ImplExportStyles( sal_Bool )
 
 //	AddAttribute( XML_NAMESPACE_NONE, XML_ID, XML_STYLES_ID );
 	{
-		// <style:styles>
+		// <office:styles>
 		SvXMLElementExport aElem( *this, XML_NAMESPACE_OFFICE, XML_STYLES,
 								sal_True, sal_True );
 
@@ -1237,7 +1237,7 @@ void SvXMLExport::ImplExportAutoStyles( sal_Bool )
 
 //	AddAttributeASCII( XML_NAMESPACE_NONE, XML_ID, XML_AUTO_STYLES_ID );
 	{
-		// <style:automatic-styles>
+		// <office:automatic-styles>
 		SvXMLElementExport aElem( *this, XML_NAMESPACE_OFFICE,
 								  XML_AUTOMATIC_STYLES, sal_True, sal_True );
 
@@ -1249,7 +1249,7 @@ void SvXMLExport::ImplExportAutoStyles( sal_Bool )
 				   	  pNamespaceMap->GetQNameByKey( XML_NAMESPACE_OFFICE,
                                                GetXMLToken(XML_STYLESHEET)) );
 		{
-			// <style:use-styles>
+			// <office:use-styles>
 			SvXMLElementExport aElem( *this, XML_NAMESPACE_OFFICE,
 									  XML_USE_STYLES, sal_True, sal_True );
 		}
@@ -1261,7 +1261,7 @@ void SvXMLExport::ImplExportAutoStyles( sal_Bool )
 void SvXMLExport::ImplExportMasterStyles( sal_Bool )
 {
 	{
-		// <style:master-styles>
+		// <office:master-styles>
 		SvXMLElementExport aElem( *this, XML_NAMESPACE_OFFICE, XML_MASTER_STYLES,
 								sal_True, sal_True );
 
@@ -1276,7 +1276,7 @@ void SvXMLExport::ImplExportMasterStyles( sal_Bool )
 				  pNamespaceMap->GetQNameByKey( XML_NAMESPACE_OFFICE,
                                                 GetXMLToken(XML_STYLESHEET) ) );
 	{
-		// <style:use-styles>
+		// <office:use-styles>
 		SvXMLElementExport aElem( *this, XML_NAMESPACE_OFFICE,
 								  XML_USE_STYLES, sal_True, sal_True );
 	}
