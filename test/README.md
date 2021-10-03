@@ -13,6 +13,10 @@ and idlc.
 This README is documentation for using the test suites without requiring an office build environment or having built the 
 office from source in this **standalone-test** branch.
 
+## Prerequisites
+
+Apache Ant 1.10.x and Java JDK 1.8 are known to work. Windows platforms can use the 64-bit JDK even if OpenOffice has to use a 32-bit JRE.
+
 ## Caution
 When switching branches especially between AOO versions it's recommended to delete the jars in `test/lib` which will make 
 sure you get the correct versions of **JUnit** and **Hamcrest** libraries for your build since the test build will try to use the jars that are present but download the correct version if not found.
@@ -68,6 +72,10 @@ Or an office in the standard Linux installation directory:
 ```shell
 ant -Dopenoffice.home="/opt/openoffice4" compile
 ```
+Or Windows
+```shell
+ant -Dopenoffice.home="C:\Program Files (x86)\OpenOffice 4" compile
+```
 
 ## Running Tests
 There are three test suites available. Build Verification Test (BVT), Function Verification Test (FVT), and Performance Verification Test (PVT).
@@ -78,9 +86,13 @@ The **Functional Verification Test** Suite includes almost nine hundred unit tes
 _Not all tests are ran for each platform._
 
 ### Running a Complete Test Suite
-BVT Example:
+BVT Example (Linux):
 ```shell
 ./run -Dopenoffice.home="$PWD/testspace/install/openoffice4" -tp bvt
+```
+BVT Example (Windows):
+```shell
+.\run.bat -Dopenoffice.home="C:\Program Files (x86)\OpenOffice 4" -tp bvt
 ```
 FVT Example:
 ```shell
