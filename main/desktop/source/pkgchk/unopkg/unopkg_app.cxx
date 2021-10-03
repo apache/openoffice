@@ -111,7 +111,7 @@ const char s_usingText [] =
 "     <context>\n"
 "\n"
 "To learn more about the Extension Manager and extensions, see:\n"
-"http://wiki.services.openoffice.org/wiki/Documentation/DevGuide/Extensions/Extensions\n\n";
+"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Extensions/Extensions\n\n";
 
 //------------------------------------------------------------------------------
 const OptionInfo s_option_infos [] = {
@@ -693,7 +693,7 @@ extern "C" int unopkg_main()
 
         dp_misc::writeConsoleError(
             OUSTR("\nERROR: ") +
-            OUString(option_verbose  ? e.Message + OUSTR("\nException details: \n") +
+            OUString(option_verbose ? e.Message + OUSTR("\nException details: \n") +
             ::comphelper::anyToString(exc) : e.Message) +
             OUSTR("\n"));
     }

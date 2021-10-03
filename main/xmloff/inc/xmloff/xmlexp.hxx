@@ -681,14 +681,27 @@ inline void SvXMLExport::SetGraphicResolver(
 	mxGraphicResolver = _xGraphicResolver;
 }
 
-// Helper class to export an element.
+/** Helper class to export an element.
+ *
+ * The constructor prints a start tag that has the common attributes
+ * of the XMLExport instance attached. The destructor prints an end
+ * tag.
+ *
+ * Object of this class can be turned into a no-op by a parameter to
+ * the constructor.
+ */
 class XMLOFF_DLLPUBLIC SvXMLElementExport
 {
+    /** Object on which the element is emitted. */
     SvXMLExport& mrExport;
+    /** Name of this element */
     ::rtl::OUString maElementName;
+    /** Parameter passed to the export object */
     const sal_Bool mbIgnoreWhitespaceInside :1;
+    /** When false, this object is a no-op */
     const sal_Bool mbDoSomething :1;
 
+    /** Start the XML element */
     SAL_DLLPRIVATE
     void StartElement(
         const sal_uInt16 nPrefix,
@@ -696,9 +709,6 @@ class XMLOFF_DLLPUBLIC SvXMLElementExport
         const sal_Bool bIgnoreWhitespaceOutside );
 
 public:
-
-	// The constructor prints a start tag that has the common attributes
-	// of the XMLExport instance attached.
 	SvXMLElementExport( SvXMLExport& rExp, sal_uInt16 nPrefix,
 						const sal_Char *pName,
 					    sal_Bool bIgnWSOutside, sal_Bool bIgnWSInside );
@@ -723,7 +733,7 @@ public:
                         enum ::xmloff::token::XMLTokenEnum eName,
 					    sal_Bool bIgnWSOutside, sal_Bool bIgnWSInside );
 
-	// The destructor prints an end tag.
+	/** Prints an end tag. */
 	~SvXMLElementExport();
 };
 

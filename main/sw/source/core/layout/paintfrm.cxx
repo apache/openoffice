@@ -5550,19 +5550,19 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
     _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
     // paint right shadow
-    if ( bPaintRightShadow )
-    {
-        _pViewShell->GetOut()->SetFillColor( rColor );
-        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-    }
+//    if ( bPaintRightShadow )
+//    {
+//        _pViewShell->GetOut()->SetFillColor( rColor );
+//        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+//    }
 
     // paint bottom shadow
-    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+//    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
-    _pViewShell->GetOut()->SetFillColor( aFill );
-    _pViewShell->GetOut()->SetLineColor( aLine );
+//    _pViewShell->GetOut()->SetFillColor( aFill );
+//    _pViewShell->GetOut()->SetLineColor( aLine );
 }
 
 //mod #i6193# paint sidebar for notes

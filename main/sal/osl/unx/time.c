@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,18 +7,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
-
 
 
 
@@ -43,7 +42,7 @@ sal_Bool SAL_CALL osl_getSystemTime(TimeValue* TimeValue)
 {
 	struct timeval tp;
 
-    /* FIXME: use higher resolution */
+	/* FIXME: use higher resolution */
 	gettimeofday(&tp, NULL);
 
 	TimeValue->Seconds = tp.tv_sec;
@@ -60,11 +59,11 @@ sal_Bool SAL_CALL osl_getSystemTime(TimeValue* TimeValue)
 sal_Bool SAL_CALL osl_getDateTimeFromTimeValue( TimeValue* pTimeVal, oslDateTime* pDateTime )
 {
 	struct tm *pSystemTime;
-    struct tm tmBuf;
+	struct tm tmBuf;
 	time_t atime;
 
 	atime = (time_t)pTimeVal->Seconds;
-	
+
 	/* Convert time from type time_t to struct tm */
 	pSystemTime = gmtime_r( &atime, &tmBuf );
 
@@ -79,7 +78,7 @@ sal_Bool SAL_CALL osl_getDateTimeFromTimeValue( TimeValue* pTimeVal, oslDateTime
 		pDateTime->Day			=	pSystemTime->tm_mday;
 		pDateTime->DayOfWeek	=	pSystemTime->tm_wday;
 		pDateTime->Month		=	pSystemTime->tm_mon + 1;
-		pDateTime->Year			=	pSystemTime->tm_year  + 1900;
+		pDateTime->Year			=	pSystemTime->tm_year + 1900;
 
 		return sal_True;
 	}
@@ -105,51 +104,51 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
 
 	if ( pDateTime->Month > 0 )
 		aTime.tm_mon = pDateTime->Month - 1;
-	else 
+	else
 		return sal_False;
 
 	if ( pDateTime->Year >= 1900 )
 		aTime.tm_year = pDateTime->Year - 1900;
-	else 
+	else
 		return sal_False;
 
-    aTime.tm_isdst = -1;
+	aTime.tm_isdst = -1;
 	aTime.tm_wday  = 0;
 	aTime.tm_yday  = 0;
 
 	/* Convert time to calendar value */
 	nSeconds = mktime( &aTime );
 
-    /*
-     * mktime expects the struct tm to be in local timezone, so we have to adjust 
-     * the returned value to be timezone neutral.
-     */
-     
+	/*
+	 * mktime expects the struct tm to be in local timezone, so we have to adjust
+	 * the returned value to be timezone neutral.
+	 */
+
 	if ( nSeconds != (time_t) -1 )
 	{
-        time_t bias;
-        
+		time_t bias;
+
 		/* timezone corrections */
 		tzset();
 
 #if defined(STRUCT_TM_HAS_GMTOFF)
-        /* members of struct tm are corrected by mktime */
-        bias = 0 - aTime.tm_gmtoff;
+		/* members of struct tm are corrected by mktime */
+		bias = 0 - aTime.tm_gmtoff;
 
 #elif defined(HAS_ALTZONE)
-        /* check if daylight saving time is in effect */
-        bias = aTime.tm_isdst > 0 ? altzone : timezone;
+		/* check if daylight saving time is in effect */
+		bias = aTime.tm_isdst > 0 ? altzone : timezone;
 #else
-        /* exspect daylight saving time to be one hour */
-        bias = aTime.tm_isdst > 0 ? timezone - 3600 : timezone;
+		/* expect daylight saving time to be one hour */
+		bias = aTime.tm_isdst > 0 ? timezone - 3600 : timezone;
 #endif
-        
-        pTimeVal->Seconds = nSeconds;
+
+		pTimeVal->Seconds = nSeconds;
 		pTimeVal->Nanosec = pDateTime->NanoSeconds;
 
-        if ( nSeconds > bias )
-		    pTimeVal->Seconds -= bias;
-           
+		if ( nSeconds > bias )
+			pTimeVal->Seconds -= bias;
+
 		return sal_True;
 	}
 
@@ -162,25 +161,25 @@ sal_Bool SAL_CALL osl_getTimeValueFromDateTime( oslDateTime* pDateTime, TimeValu
  *--------------------------------------------------*/
 
 sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, TimeValue* pLocalTimeVal )
-{ 
-    struct tm *pLocalTime;
-    struct tm tmBuf;
-    time_t bias;
+{
+	struct tm *pLocalTime;
+	struct tm tmBuf;
+	time_t bias;
 	time_t atime;
 
-    atime = (time_t) pSystemTimeVal->Seconds;
-    pLocalTime = localtime_r( &atime, &tmBuf );
+	atime = (time_t) pSystemTimeVal->Seconds;
+	pLocalTime = localtime_r( &atime, &tmBuf );
 
 #if defined(STRUCT_TM_HAS_GMTOFF)
-    /* members of struct tm are corrected by mktime */
-    bias = 0 - pLocalTime->tm_gmtoff;
-       
+	/* members of struct tm are corrected by mktime */
+	bias = 0 - pLocalTime->tm_gmtoff;
+
 #elif defined(HAS_ALTZONE)
-    /* check if daylight saving time is in effect */
-    bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
+	/* check if daylight saving time is in effect */
+	bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
 #else
-    /* exspect daylight saving time to be one hour */
-    bias = pLocalTime->tm_isdst > 0 ? timezone - 3600 : timezone;
+	/* expect daylight saving time to be one hour */
+	bias = pLocalTime->tm_isdst > 0 ? timezone - 3600 : timezone;
 #endif
 
 	if ( (sal_Int64) pSystemTimeVal->Seconds > bias )
@@ -201,32 +200,32 @@ sal_Bool SAL_CALL osl_getLocalTimeFromSystemTime( TimeValue* pSystemTimeVal, Tim
 sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, TimeValue* pSystemTimeVal )
 {
 	struct tm *pLocalTime;
-    struct tm tmBuf;
+	struct tm tmBuf;
 	time_t bias;
 	time_t atime;
 
-    atime = (time_t) pLocalTimeVal->Seconds;
+	atime = (time_t) pLocalTimeVal->Seconds;
 
-    /* Convert atime, which is a local time, to it's GMT equivalent. Then, get
-     * the timezone offset for the local time for the GMT equivalent time. Note
-     * that we cannot directly use local time to determine the timezone offset
-     * because GMT is the only reliable time that we can determine timezone
-     * offset from.
-     */
+	/* Convert atime, which is a local time, to its GMT equivalent. Then, get
+	 * the timezone offset for the local time for the GMT equivalent time. Note
+	 * that we cannot directly use local time to determine the timezone offset
+	 * because GMT is the only reliable time that we can determine timezone
+	 * offset from.
+	 */
 
-    atime = mktime( gmtime_r( &atime, &tmBuf ) );
-    pLocalTime = localtime_r( &atime, &tmBuf );
+	atime = mktime( gmtime_r( &atime, &tmBuf ) );
+	pLocalTime = localtime_r( &atime, &tmBuf );
 
 #if defined(STRUCT_TM_HAS_GMTOFF)
-    /* members of struct tm are corrected by mktime */
-    bias = 0 - pLocalTime->tm_gmtoff;
-       
+	/* members of struct tm are corrected by mktime */
+	bias = 0 - pLocalTime->tm_gmtoff;
+
 #elif defined(HAS_ALTZONE)
-    /* check if daylight saving time is in effect */
-    bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
+	/* check if daylight saving time is in effect */
+	bias = pLocalTime->tm_isdst > 0 ? altzone : timezone;
 #else
-    /* exspect daylight saving time to be one hour */
-    bias = pLocalTime->tm_isdst > 0 ? timezone - 3600 : timezone;
+	/* expect daylight saving time to be one hour */
+	bias = pLocalTime->tm_isdst > 0 ? timezone - 3600 : timezone;
 #endif
 
 	if ( (sal_Int64) pLocalTimeVal->Seconds + bias > 0 )
@@ -237,7 +236,7 @@ sal_Bool SAL_CALL osl_getSystemTimeFromLocalTime( TimeValue* pLocalTimeVal, Time
 		return sal_True;
 	}
 
-	return sal_False; 
+	return sal_False;
 }
 
 
@@ -247,19 +246,19 @@ static sal_Bool bGlobalTimer = sal_False;
 
 sal_uInt32 SAL_CALL osl_getGlobalTimer()
 {
-  struct timeval currentTime;
-  sal_uInt32 nSeconds;
+	struct timeval currentTime;
+	sal_uInt32 nSeconds;
 
-  // FIXME: not thread safe !!
-  if ( bGlobalTimer == sal_False )
-  {
-      gettimeofday( &startTime, NULL );
-      bGlobalTimer=sal_True;
-  }
-  
-  gettimeofday( &currentTime, NULL );
-  
-  nSeconds = (sal_uInt32)( currentTime.tv_sec - startTime.tv_sec );
+	// FIXME: not thread safe !!
+	if ( bGlobalTimer == sal_False )
+	{
+		gettimeofday( &startTime, NULL );
+		bGlobalTimer=sal_True;
+	}
 
-  return ( nSeconds * 1000 ) + (long) (( currentTime.tv_usec - startTime.tv_usec) / 1000 );
+	gettimeofday( &currentTime, NULL );
+
+	nSeconds = (sal_uInt32)( currentTime.tv_sec - startTime.tv_sec );
+
+	return ( nSeconds * 1000 ) + (long) (( currentTime.tv_usec - startTime.tv_usec) / 1000 );
 }

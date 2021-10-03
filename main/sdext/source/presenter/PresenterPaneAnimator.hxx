@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,43 +47,43 @@ class PresenterController;
 class PresenterPaneContainer;
 class PresenterWindowManager;
 
-/** Base class for different types of pane animations.  Each of these
+/** Base class for different types of pane animations. Each of these
     animations either shows or hides a single pane.
 */
 class PresenterPaneAnimator
-    : private ::boost::noncopyable
+	: private ::boost::noncopyable
 {
 public:
-    virtual void ShowPane (void) = 0;
-    virtual void HidePane (void) = 0;
+	virtual void ShowPane (void) = 0;
+	virtual void HidePane (void) = 0;
 
 protected:
-    virtual ~PresenterPaneAnimator (void) {};
+	virtual ~PresenterPaneAnimator (void) {};
 };
 
 
 typedef ::std::vector< ::boost::function<void()> > EndActions;
 
 ::boost::shared_ptr<PresenterPaneAnimator> CreateUnfoldInCenterAnimator (
-        const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
-        const ::rtl::Reference<PresenterController>& rpPresenterController,
-        const bool bAnimate,
-        const EndActions& rShowEndActions,
-        const EndActions& rEndEndActions);
+		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
+		const ::rtl::Reference<PresenterController>& rpPresenterController,
+		const bool bAnimate,
+		const EndActions& rShowEndActions,
+		const EndActions& rEndEndActions);
 
 ::boost::shared_ptr<PresenterPaneAnimator> CreateMoveInFromBottomAnimator (
-        const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
-        const ::rtl::Reference<PresenterController>& rpPresenterController,
-        const bool bAnimate,
-        const EndActions& rShowEndActions,
-        const EndActions& rEndEndActions);
+		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
+		const ::rtl::Reference<PresenterController>& rpPresenterController,
+		const bool bAnimate,
+		const EndActions& rShowEndActions,
+		const EndActions& rEndEndActions);
 
 ::boost::shared_ptr<PresenterPaneAnimator> CreateTransparentOverlay (
-        const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
-        const ::rtl::Reference<PresenterController>& rpPresenterController,
-        const bool bAnimate,
-        const EndActions& rShowEndActions,
-        const EndActions& rEndEndActions);
+		const css::uno::Reference<css::drawing::framework::XResourceId>& rxPaneId,
+		const ::rtl::Reference<PresenterController>& rpPresenterController,
+		const bool bAnimate,
+		const EndActions& rShowEndActions,
+		const EndActions& rEndEndActions);
 
 } }
 

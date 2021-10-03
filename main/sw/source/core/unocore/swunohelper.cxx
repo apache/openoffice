@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -50,7 +52,7 @@
 #include <svx/xfillit0.hxx>
 #include <svl/itemset.hxx>
 
-namespace SWUnoHelper 
+namespace SWUnoHelper
 {
 
 sal_Int32 GetEnumAsInt32( const UNO_NMSPC::Any& rVal )
@@ -74,19 +76,19 @@ sal_Bool UCB_DeleteFile( const String& rURL )
 {
 	sal_Bool bRemoved;
 	try
-    {
+	{
 		ucbhelper::Content aTempContent( rURL,
 								STAR_REFERENCE( ucb::XCommandEnvironment )());
 		aTempContent.executeCommand(
 						rtl::OUString::createFromAscii( "delete" ),
 						UNO_NMSPC::makeAny( sal_Bool( sal_True ) ) );
 		bRemoved = sal_True;
-    }
-    catch( UNO_NMSPC::Exception& )
-    {
+	}
+	catch( UNO_NMSPC::Exception& )
+	{
 		bRemoved = sal_False;
-		ASSERT( sal_False, "Exeception from executeCommand( delete )" );
-    }
+		ASSERT( sal_False, "Exception from executeCommand( delete )" );
+	}
 	return bRemoved;
 }
 
@@ -116,8 +118,8 @@ sal_Bool UCB_CopyFile( const String& rURL, const String& rNewURL, sal_Bool bCopy
 	}
 	catch( UNO_NMSPC::Exception& )
 	{
-		ASSERT( sal_False, "Exeception from executeCommand( transfer )" );
-    	bCopyCompleted = sal_False;
+		ASSERT( sal_False, "Exception from executeCommand( transfer )" );
+		bCopyCompleted = sal_False;
 	}
 	return bCopyCompleted;
 }
@@ -150,7 +152,7 @@ sal_Bool UCB_IsCaseSensitiveFileName( const String& rURL )
 	catch( UNO_NMSPC::Exception& )
 	{
 		bCaseSensitive = sal_False;
-		ASSERT( sal_False, "Exeception from compareContentIds()" );
+		ASSERT( sal_False, "Exception from compareContentIds()" );
 	}
 	return bCaseSensitive;
 }
@@ -175,31 +177,31 @@ sal_Bool UCB_IsReadOnlyFileName( const String& rURL )
 
 sal_Bool UCB_IsFile( const String& rURL )
 {
-    sal_Bool bExists = sal_False;
-    try
-    {
-        ::ucbhelper::Content aContent( rURL, STAR_REFERENCE( ucb::XCommandEnvironment )() );
-        bExists = aContent.isDocument();
-    }
-    catch (UNO_NMSPC::Exception &)
-    {
-    }
-    return bExists;
+	sal_Bool bExists = sal_False;
+	try
+	{
+		::ucbhelper::Content aContent( rURL, STAR_REFERENCE( ucb::XCommandEnvironment )() );
+		bExists = aContent.isDocument();
+	}
+	catch (UNO_NMSPC::Exception &)
+	{
+	}
+	return bExists;
 }
 
 sal_Bool UCB_IsDirectory( const String& rURL )
 {
-    sal_Bool bExists = sal_False;
-    try
-    {
-        ::ucbhelper::Content aContent( rURL, STAR_REFERENCE( ucb::XCommandEnvironment )() );
-        bExists = aContent.isFolder();
-    }
-    catch (UNO_NMSPC::Exception &)
-    {
-    }
-    return bExists;
-} 
+	sal_Bool bExists = sal_False;
+	try
+	{
+		::ucbhelper::Content aContent( rURL, STAR_REFERENCE( ucb::XCommandEnvironment )() );
+		bExists = aContent.isFolder();
+	}
+	catch (UNO_NMSPC::Exception &)
+	{
+	}
+	return bExists;
+}
 
 	// get a list of files from the folder of the URL
 	// options: pExtension = 0 -> all, else this specific extension
@@ -223,17 +225,17 @@ sal_Bool UCB_GetFileListOfFolder( const String& rURL, SvStrings& rList,
 		if( pDateTimeList )
 			pProps[ 1 ] = rtl::OUString::createFromAscii( "DateModified" );
 
-    	try
-    	{
-        	xResultSet = aCnt.createCursor( aProps, ::ucbhelper::INCLUDE_DOCUMENTS_ONLY );
-    	}
-    	catch( UNO_NMSPC::Exception& )
-    	{
-        	DBG_ERRORFILE( "create cursor failed!" );
-    	}
+		try
+		{
+			xResultSet = aCnt.createCursor( aProps, ::ucbhelper::INCLUDE_DOCUMENTS_ONLY );
+		}
+		catch( UNO_NMSPC::Exception& )
+		{
+			DBG_ERRORFILE( "create cursor failed!" );
+		}
 
-    	if( xResultSet.is() )
-    	{
+		if( xResultSet.is() )
+		{
 			STAR_REFERENCE( sdbc::XRow ) xRow( xResultSet, UNO_NMSPC::UNO_QUERY );
 			xub_StrLen nExtLen = pExtension ? pExtension->Len() : 0;
         	try
@@ -281,7 +283,7 @@ sal_Bool UCB_GetFileListOfFolder( const String& rURL, SvStrings& rList,
 	{
 		DBG_ERRORFILE( "Exception caught!" );
 		bOk = sal_False;
-    }
+	}
 	return bOk;
 }
 
@@ -290,27 +292,27 @@ bool needToMapFillItemsToSvxBrushItemTypes(const SfxItemSet& rSet)
 {
     const XFillStyleItem* pXFillStyleItem(static_cast< const XFillStyleItem*  >(rSet.GetItem(XATTR_FILLSTYLE, false)));
 
-    if(!pXFillStyleItem)
-    {
-        return false;
-    }
+	if(!pXFillStyleItem)
+	{
+		return false;
+	}
 
-    // here different FillStyles can be excluded for export; it will depend on the
-    // quality these fallbacks can reach. That again is done in getSvxBrushItemFromSourceSet,
-    // take a look there how the superset of DrawObject FillStyles is mapped to SvxBrushItem.
-    // For now, take them all - except XFILL_NONE
+	// here different FillStyles can be excluded for export; it will depend on the
+	// quality these fallbacks can reach. That again is done in getSvxBrushItemFromSourceSet,
+	// take a look there how the superset of DrawObject FillStyles is mapped to SvxBrushItem.
+	// For now, take them all - except XFILL_NONE
 
-    if(XFILL_NONE != pXFillStyleItem->GetValue())
-    {
-        return true;
-    }
+	if(XFILL_NONE != pXFillStyleItem->GetValue())
+	{
+		return true;
+	}
 
-    // if(XFILL_SOLID == pXFillStyleItem->GetValue() || XFILL_BITMAP == pXFillStyleItem->GetValue())
-    // {
-    //     return true;
-    // }
+	// if(XFILL_SOLID == pXFillStyleItem->GetValue() || XFILL_BITMAP == pXFillStyleItem->GetValue())
+	// {
+	//     return true;
+	// }
 
-    return false;
+	return false;
 }
 
 }

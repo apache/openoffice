@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,12 +56,12 @@ public:
 		throw(::com::sun::star::lang::IndexOutOfBoundsException, ::com::sun::star::lang::WrappedTargetException,
 			::com::sun::star::uno::RuntimeException);
 
-    // XIndexReplace
+	// XIndexReplace
 	virtual void SAL_CALL replaceByIndex( sal_Int32 nIndex, const ::com::sun::star::uno::Any& aElement )
 		throw(::com::sun::star::lang::IllegalArgumentException, ::com::sun::star::lang::IndexOutOfBoundsException,
 			::com::sun::star::lang::WrappedTargetException, ::com::sun::star::uno::RuntimeException);
 
-    // XIndexAccess
+	// XIndexAccess
 	virtual sal_Int32 SAL_CALL getCount(  )
 		throw(::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Any SAL_CALL getByIndex( sal_Int32 nIndex )
@@ -79,10 +79,10 @@ public:
 	virtual sal_Bool SAL_CALL supportsService( const ::rtl::OUString& ServiceName ) throw(::com::sun::star::uno::RuntimeException);
 	virtual ::com::sun::star::uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames(  ) throw(::com::sun::star::uno::RuntimeException);
 
-    // XServiceInfo - static versions (used for component registration)
-    static ::rtl::OUString SAL_CALL getImplementationName_static();
-    static uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
-    static uno::Reference< uno::XInterface > SAL_CALL Create( const uno::Reference< uno::XComponentContext >& );
+	// XServiceInfo - static versions (used for component registration)
+	static ::rtl::OUString SAL_CALL getImplementationName_static();
+	static uno::Sequence< ::rtl::OUString > SAL_CALL getSupportedServiceNames_static();
+	static uno::Reference< uno::XInterface > SAL_CALL Create( const uno::Reference< uno::XComponentContext >& );
 
 private:
 	IndexedPropertyValues maProperties;
@@ -255,12 +255,12 @@ sal_Bool SAL_CALL IndexedPropertyValuesContainer::supportsService( const ::rtl::
 
 
 uno::Reference< uno::XInterface > SAL_CALL IndexedPropertyValuesContainer::Create(
-                const uno::Reference< uno::XComponentContext >&)
+				const uno::Reference< uno::XComponentContext >&)
 {
 	return (cppu::OWeakObject*)new IndexedPropertyValuesContainer();
 }
 
 void createRegistryInfo_IndexedPropertyValuesContainer()
 {
-    static ::comphelper::module::OAutoRegistration< IndexedPropertyValuesContainer > aAutoRegistration;
+	static ::comphelper::module::OAutoRegistration< IndexedPropertyValuesContainer > aAutoRegistration;
 }

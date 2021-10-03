@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,7 +64,7 @@ VCLXAccessibleTabPage::VCLXAccessibleTabPage( TabControl* pTabControl, sal_uInt1
 	m_pExternalLock = static_cast< VCLExternalSolarLock* >( getExternalLock() );
 	m_bFocused	= IsFocused();
 	m_bSelected = IsSelected();
-    m_sPageText = GetPageText();
+	m_sPageText = GetPageText();
 }
 
 // -----------------------------------------------------------------------------
@@ -79,24 +79,24 @@ VCLXAccessibleTabPage::~VCLXAccessibleTabPage()
 
 bool VCLXAccessibleTabPage::IsFocused()
 {
-    bool bFocused = false;
+	bool bFocused = false;
 
-    if ( m_pTabControl && m_pTabControl->HasFocus() && m_pTabControl->GetCurPageId() == m_nPageId )
-        bFocused = true;
+	if ( m_pTabControl && m_pTabControl->HasFocus() && m_pTabControl->GetCurPageId() == m_nPageId )
+		bFocused = true;
 
-    return bFocused;
+	return bFocused;
 }
 
 // -----------------------------------------------------------------------------
 
 bool VCLXAccessibleTabPage::IsSelected()
 {
-    bool bSelected = false;
+	bool bSelected = false;
 
-    if ( m_pTabControl && m_pTabControl->GetCurPageId() == m_nPageId )
-        bSelected = true;
+	if ( m_pTabControl && m_pTabControl->GetCurPageId() == m_nPageId )
+		bSelected = true;
 
-    return bSelected;
+	return bSelected;
 }
 
 // -----------------------------------------------------------------------------
@@ -127,7 +127,7 @@ void VCLXAccessibleTabPage::SetSelected( bool bSelected )
 		else
 			aNewValue <<= AccessibleStateType::SELECTED;
 		m_bSelected = bSelected;
-	    NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
+		NotifyAccessibleEvent( AccessibleEventId::STATE_CHANGED, aOldValue, aNewValue );
 	}
 }
 
@@ -135,16 +135,16 @@ void VCLXAccessibleTabPage::SetSelected( bool bSelected )
 
 void VCLXAccessibleTabPage::SetPageText( const ::rtl::OUString& sPageText )
 {
-    Any aOldValue, aNewValue;
-    if ( OCommonAccessibleText::implInitTextChangedEvent( m_sPageText, sPageText, aOldValue, aNewValue ) )
-    {
-        Any aOldName, aNewName;
-        aOldName <<= m_sPageText;
-        aNewName <<= sPageText;
-        m_sPageText = sPageText;
-        NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldName, aNewName );
-        NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
-    }
+	Any aOldValue, aNewValue;
+	if ( OCommonAccessibleText::implInitTextChangedEvent( m_sPageText, sPageText, aOldValue, aNewValue ) )
+	{
+		Any aOldName, aNewName;
+		aOldName <<= m_sPageText;
+		aNewName <<= sPageText;
+		m_sPageText = sPageText;
+		NotifyAccessibleEvent( AccessibleEventId::NAME_CHANGED, aOldName, aNewName );
+		NotifyAccessibleEvent( AccessibleEventId::TEXT_CHANGED, aOldValue, aNewValue );
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -162,23 +162,23 @@ void VCLXAccessibleTabPage::SetPageText( const ::rtl::OUString& sPageText )
 
 void VCLXAccessibleTabPage::Update( bool bNew )
 {
-    if ( m_pTabControl )
-    {
-        TabPage* pTabPage = m_pTabControl->GetTabPage( m_nPageId );
-        if ( pTabPage )
-        {
-	        Reference< XAccessible > xChild( pTabPage->GetAccessible( bNew ) );
-	        if ( xChild.is() )
-	        {
-		        Any aOldValue, aNewValue;                
-                if ( bNew )
-			        aNewValue <<= xChild;
-                else
-                    aOldValue <<= xChild;
-		        NotifyAccessibleEvent( AccessibleEventId::CHILD, aOldValue, aNewValue );
-	        }
-        }                       
-    }
+	if ( m_pTabControl )
+	{
+		TabPage* pTabPage = m_pTabControl->GetTabPage( m_nPageId );
+		if ( pTabPage )
+		{
+			Reference< XAccessible > xChild( pTabPage->GetAccessible( bNew ) );
+			if ( xChild.is() )
+			{
+				Any aOldValue, aNewValue;
+				if ( bNew )
+					aNewValue <<= xChild;
+				else
+					aOldValue <<= xChild;
+				NotifyAccessibleEvent( AccessibleEventId::CHILD, aOldValue, aNewValue );
+			}
+		}
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -186,7 +186,7 @@ void VCLXAccessibleTabPage::Update( bool bNew )
 void VCLXAccessibleTabPage::FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet )
 {
 	rStateSet.AddState( AccessibleStateType::ENABLED );
-    rStateSet.AddState( AccessibleStateType::SENSITIVE );
+	rStateSet.AddState( AccessibleStateType::SENSITIVE );
 
 	rStateSet.AddState( AccessibleStateType::FOCUSABLE );
 
@@ -197,22 +197,22 @@ void VCLXAccessibleTabPage::FillAccessibleStateSet( utl::AccessibleStateSetHelpe
 
 	rStateSet.AddState( AccessibleStateType::SHOWING );
 
-    rStateSet.AddState( AccessibleStateType::SELECTABLE );
+	rStateSet.AddState( AccessibleStateType::SELECTABLE );
 
 	if ( IsSelected() )
-	    rStateSet.AddState( AccessibleStateType::SELECTED );
+		rStateSet.AddState( AccessibleStateType::SELECTED );
 }
 
 // -----------------------------------------------------------------------------
-// OCommonAccessibleComponent 
+// OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
 awt::Rectangle VCLXAccessibleTabPage::implGetBounds() throw (RuntimeException)
 {
-	awt::Rectangle aBounds( 0, 0, 0, 0 );	
+	awt::Rectangle aBounds( 0, 0, 0, 0 );
 
 	if ( m_pTabControl )
-        aBounds = AWTRectangle( m_pTabControl->GetTabBounds( m_nPageId ) );
+		aBounds = AWTRectangle( m_pTabControl->GetTabBounds( m_nPageId ) );
 
 	return aBounds;
 }
@@ -223,7 +223,7 @@ awt::Rectangle VCLXAccessibleTabPage::implGetBounds() throw (RuntimeException)
 
 ::rtl::OUString VCLXAccessibleTabPage::implGetText()
 {
-    return GetPageText();
+	return GetPageText();
 }
 
 // -----------------------------------------------------------------------------
@@ -262,7 +262,7 @@ void VCLXAccessibleTabPage::disposing()
 	AccessibleTextHelper_BASE::disposing();
 
 	m_pTabControl = NULL;
-    m_sPageText = ::rtl::OUString();
+	m_sPageText = ::rtl::OUString();
 }
 
 // -----------------------------------------------------------------------------
@@ -320,7 +320,7 @@ sal_Int32 VCLXAccessibleTabPage::getAccessibleChildCount() throw (RuntimeExcepti
 	{
 		TabPage* pTabPage = m_pTabControl->GetTabPage( m_nPageId );
 		if ( pTabPage && pTabPage->IsVisible() )
-            nCount = 1;
+			nCount = 1;
 	}
 
 	return nCount;
@@ -340,7 +340,7 @@ Reference< XAccessible > VCLXAccessibleTabPage::getAccessibleChild( sal_Int32 i 
 	{
 		TabPage* pTabPage = m_pTabControl->GetTabPage( m_nPageId );
 		if ( pTabPage && pTabPage->IsVisible() )
-            xChild = pTabPage->GetAccessible();
+			xChild = pTabPage->GetAccessible();
 	}
 
 	return xChild;
@@ -385,13 +385,13 @@ sal_Int16 VCLXAccessibleTabPage::getAccessibleRole(  ) throw (RuntimeException)
 
 ::rtl::OUString VCLXAccessibleTabPage::getAccessibleDescription(	) throw (RuntimeException)
 {
-    OExternalLockGuard aGuard( this );
+	OExternalLockGuard aGuard( this );
 
-    ::rtl::OUString sDescription;
-    if ( m_pTabControl )
-        sDescription = m_pTabControl->GetHelpText( m_nPageId );
+	::rtl::OUString sDescription;
+	if ( m_pTabControl )
+		sDescription = m_pTabControl->GetHelpText( m_nPageId );
 
-    return sDescription;
+	return sDescription;
 }
 
 // -----------------------------------------------------------------------------
@@ -400,7 +400,7 @@ sal_Int16 VCLXAccessibleTabPage::getAccessibleRole(  ) throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
 
-    return GetPageText();
+	return GetPageText();
 }
 
 // -----------------------------------------------------------------------------
@@ -409,9 +409,9 @@ Reference< XAccessibleRelationSet > VCLXAccessibleTabPage::getAccessibleRelation
 {
 	OExternalLockGuard aGuard( this );
 
-    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 
 // -----------------------------------------------------------------------------
@@ -429,7 +429,7 @@ Reference< XAccessibleStateSet > VCLXAccessibleTabPage::getAccessibleStateSet(  
 	}
 	else
 	{
-        pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
+		pStateSetHelper->AddState( AccessibleStateType::DEFUNC );
 	}
 
 	return xSet;
@@ -457,8 +457,8 @@ Reference< XAccessible > VCLXAccessibleTabPage::getAccessibleAtPoint( const awt:
 	{
 		Reference< XAccessible > xAcc = getAccessibleChild( i );
 		if ( xAcc.is() )
-		{			
-			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );				
+		{
+			Reference< XAccessibleComponent > xComp( xAcc->getAccessibleContext(), UNO_QUERY );
 			if ( xComp.is() )
 			{
 				Rectangle aRect = VCLRectangle( xComp->getBounds() );
@@ -482,10 +482,10 @@ void VCLXAccessibleTabPage::grabFocus(  ) throw (RuntimeException)
 	OExternalLockGuard aGuard( this );
 
 	if ( m_pTabControl )
-    {
+	{
 		m_pTabControl->SelectTabPage( m_nPageId );
-        m_pTabControl->GrabFocus();
-    }
+		m_pTabControl->GrabFocus();
+	}
 }
 
 // -----------------------------------------------------------------------------
@@ -500,7 +500,7 @@ sal_Int32 VCLXAccessibleTabPage::getForeground(	) throw (RuntimeException)
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getForeground();	
+			nColor = xParentComp->getForeground();
 	}
 
 	return nColor;
@@ -518,7 +518,7 @@ sal_Int32 VCLXAccessibleTabPage::getBackground(  ) throw (RuntimeException)
 	{
 		Reference< XAccessibleComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			nColor = xParentComp->getBackground();	
+			nColor = xParentComp->getBackground();
 	}
 
 	return nColor;
@@ -538,7 +538,7 @@ Reference< awt::XFont > VCLXAccessibleTabPage::getFont(  ) throw (RuntimeExcepti
 	{
 		Reference< XAccessibleExtendedComponent > xParentComp( xParent->getAccessibleContext(), UNO_QUERY );
 		if ( xParentComp.is() )
-			xFont = xParentComp->getFont();	
+			xFont = xParentComp->getFont();
 	}
 
 	return xFont;
@@ -579,8 +579,8 @@ sal_Bool VCLXAccessibleTabPage::setCaretPosition( sal_Int32 nIndex ) throw (Inde
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nIndex, nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -594,19 +594,19 @@ Sequence< PropertyValue > VCLXAccessibleTabPage::getCharacterAttributes( sal_Int
 	Sequence< PropertyValue > aValues;
 	::rtl::OUString sText( implGetText() );
 
-    if ( !implIsValidIndex( nIndex, sText.getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, sText.getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	if ( m_pTabControl )
 	{
 		Font aFont = m_pTabControl->GetFont();
 		sal_Int32 nBackColor = getBackground();
 		sal_Int32 nColor = getForeground();
-        ::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
+		::std::auto_ptr< CharacterAttributesHelper > pHelper( new CharacterAttributesHelper( aFont, nBackColor, nColor ) );
 		aValues = pHelper->GetCharacterAttributes( aRequestedAttributes );
 	}
 
-    return aValues;
+	return aValues;
 }
 
 // -----------------------------------------------------------------------------
@@ -615,8 +615,8 @@ awt::Rectangle VCLXAccessibleTabPage::getCharacterBounds( sal_Int32 nIndex ) thr
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidIndex( nIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	awt::Rectangle aBounds( 0, 0, 0, 0 );
 	if ( m_pTabControl )
@@ -641,14 +641,14 @@ sal_Int32 VCLXAccessibleTabPage::getIndexAtPoint( const awt::Point& aPoint ) thr
 	{
 		sal_uInt16 nPageId = 0;
 		Rectangle aPageRect = m_pTabControl->GetTabBounds( m_nPageId );
-        Point aPnt( VCLPoint( aPoint ) );
+		Point aPnt( VCLPoint( aPoint ) );
 		aPnt += aPageRect.TopLeft();
 		sal_Int32 nI = m_pTabControl->GetIndexForPoint( aPnt, nPageId );
 		if ( nI != -1 && m_nPageId == nPageId )
 			nIndex = nI;
 	}
 
-    return nIndex;
+	return nIndex;
 }
 
 // -----------------------------------------------------------------------------
@@ -657,8 +657,8 @@ sal_Bool VCLXAccessibleTabPage::setSelection( sal_Int32 nStartIndex, sal_Int32 n
 {
 	OExternalLockGuard aGuard( this );
 
-    if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
-        throw IndexOutOfBoundsException();
+	if ( !implIsValidRange( nStartIndex, nEndIndex, implGetText().getLength() ) )
+		throw IndexOutOfBoundsException();
 
 	return sal_False;
 }
@@ -685,14 +685,14 @@ sal_Bool VCLXAccessibleTabPage::copyText( sal_Int32 nStartIndex, sal_Int32 nEndI
 			Reference< datatransfer::clipboard::XFlushableClipboard > xFlushableClipboard( xClipboard, uno::UNO_QUERY );
 			if( xFlushableClipboard.is() )
 				xFlushableClipboard->flushClipboard();
-			
+
 			Application::AcquireSolarMutex( nRef );
 
 			bReturn = sal_True;
 		}
 	}
 
-    return bReturn;
+	return bReturn;
 }
 
 // -----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,7 +129,7 @@ public:
     virtual bool show( bool );
     virtual void hide();
 
-    virtual basegfx::B2ISize getSlideSize() const;            
+    virtual basegfx::B2ISize getSlideSize() const;
     virtual uno::Reference<drawing::XDrawPage > getXDrawPage() const;
     virtual uno::Reference<animations::XAnimationNode> getXAnimationNode() const;
     virtual PolyPolygonVector getPolygons();
@@ -178,14 +178,14 @@ private:
     bool isShowing() const;
 
     /// Set all Shapes to their initial attributes for slideshow
-    bool applyInitialShapeAttributes( const ::com::sun::star::uno::Reference< 
+    bool applyInitialShapeAttributes( const ::com::sun::star::uno::Reference<
                                       ::com::sun::star::animations::XAnimationNode >& xRootAnimationNode );
 
     /// Renders current slide content to bitmap
     SlideBitmapSharedPtr createCurrentSlideBitmap(
         const UnoViewSharedPtr& rView,
         ::basegfx::B2ISize const & rSlideSize ) const;
-        
+
     /// Prefetch all shapes (not the animations)
     bool loadShapes();
 
@@ -206,7 +206,7 @@ private:
 
     /// Add Polygons to the member maPolygons
     void addPolygons(PolyPolygonVector aPolygons);
-    
+
     // Types
     // =====
 
@@ -235,9 +235,9 @@ private:
 
     /// The page model object
     uno::Reference< drawing::XDrawPage >                mxDrawPage;
-    uno::Reference< drawing::XDrawPagesSupplier >       mxDrawPagesSupplier;    
+    uno::Reference< drawing::XDrawPagesSupplier >       mxDrawPagesSupplier;
     uno::Reference< animations::XAnimationNode >        mxRootNode;
-    
+
     LayerManagerSharedPtr                               mpLayerManager;
     boost::shared_ptr<ShapeManagerImpl>                 mpShapeManager;
     boost::shared_ptr<SubsettableShapeManager>          mpSubsettableShapeManager;
@@ -251,11 +251,11 @@ private:
     /// Handles the animation and event generation for us
     SlideAnimations										maAnimations;
     PolyPolygonVector                                   maPolygons;
-        
+
     RGBColor                                            maUserPaintColor;
     double                                              mdUserPaintStrokeWidth;
     UserPaintOverlaySharedPtr							mpPaintOverlay;
-    
+
     /// Bitmaps with slide content at various states
     mutable VectorOfVectorOfSlideBitmaps                maSlideBitmaps;
 
@@ -293,9 +293,9 @@ private:
     */
     bool												mbMainSequenceFound;
 
-    /// When true, show() was called. Slide hidden oherwise.
+    /// When true, show() was called. Slide hidden otherwise.
     bool                                                mbActive;
-    
+
     ///When true, enablePaintOverlay was called and mbUserPaintOverlay = true
     bool                                                mbPaintOverlayActive;
 };
@@ -333,7 +333,7 @@ public:
 
         // clear clip (might have been changed, e.g. from comb
         // transition)
-        pBitmap->clip( ::basegfx::B2DPolyPolygon() ); 
+        pBitmap->clip( ::basegfx::B2DPolyPolygon() );
         pBitmap->draw( pDevicePixelCanvas );
     }
 
@@ -367,7 +367,7 @@ SlideImpl::SlideImpl( const uno::Reference< drawing::XDrawPage >&			xDrawPage,
     mxDrawPage( xDrawPage ),
     mxDrawPagesSupplier( xDrawPages ),
     mxRootNode( xRootNode ),
-    mpLayerManager( new LayerManager( 
+    mpLayerManager( new LayerManager(
                         rViewContainer,
                         getSlideRect(),
                         bDisableAnimationZOrder) ),
@@ -379,10 +379,10 @@ SlideImpl::SlideImpl( const uno::Reference< drawing::XDrawPage >&			xDrawPage,
                         rShapeCursorMap)),
     mpSubsettableShapeManager( mpShapeManager ),
     maContext( mpSubsettableShapeManager,
-               rEventQueue, 
+               rEventQueue,
                rEventMultiplexer,
                rScreenUpdater,
-               rActivitiesQueue, 
+               rActivitiesQueue,
                rUserEventQueue,
                *this,
                rViewContainer,
@@ -435,7 +435,7 @@ SlideImpl::~SlideImpl()
 
         // TODO(Q3): Make sure LayerManager (and thus Shapes) dies
         // first, because SlideShowContext has SubsettableShapeManager
-        // as reference member. 
+        // as reference member.
         mpLayerManager.reset();
     }
 }
@@ -509,13 +509,13 @@ bool SlideImpl::show( bool bSlideBackgoundPainted )
         std::for_each(maContext.mrViewContainer.begin(),
                       maContext.mrViewContainer.end(),
                       boost::mem_fn(&View::clearAll));
-        
+
         std::for_each( maContext.mrViewContainer.begin(),
                        maContext.mrViewContainer.end(),
                        SlideRenderer(*this) );
         maContext.mrScreenUpdater.notifyUpdate();
     }
-        
+
     // ---------------------------------------------------------------
 
     // fire up animations
@@ -585,7 +585,7 @@ void SlideImpl::hide()
 
     // disable shape management & event broadcasting for shapes of this
     // slide. Also disables LayerManager.
-    mpShapeManager->deactivate();        
+    mpShapeManager->deactivate();
 
     // vanish from view
     resetCursor();
@@ -595,7 +595,7 @@ void SlideImpl::hide()
 }
 
 basegfx::B2ISize SlideImpl::getSlideSize() const
-{    
+{
     return maSlideSize;
 }
 
@@ -627,8 +627,8 @@ SlideBitmapSharedPtr SlideImpl::getCurrentSlideBitmap( const UnoViewSharedPtr& r
                              boost::bind(
                                  std::equal_to<UnoViewSharedPtr>(),
                                  rView,
-                                 // select view:    
-                                 boost::bind( 
+                                 // select view:
+                                 boost::bind(
                                      std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
                                      _1 )))) == aEnd )
     {
@@ -659,7 +659,7 @@ SlideBitmapSharedPtr SlideImpl::getCurrentSlideBitmap( const UnoViewSharedPtr& r
     }
 
     SlideBitmapSharedPtr&     rBitmap( aIter->second.at( meAnimationState ));
-    const ::basegfx::B2ISize& rSlideSize( 
+    const ::basegfx::B2ISize& rSlideSize(
         getSlideSizePixel( getSlideSize(),
                            rView ));
 
@@ -681,8 +681,8 @@ SlideBitmapSharedPtr SlideImpl::getCurrentSlideBitmap( const UnoViewSharedPtr& r
 
 void SlideImpl::viewAdded( const UnoViewSharedPtr& rView )
 {
-    maSlideBitmaps.push_back( 
-        std::make_pair( rView, 
+    maSlideBitmaps.push_back(
+        std::make_pair( rView,
                         VectorOfSlideBitmaps(SlideAnimationState_NUM_ENTRIES) ));
 
     if( mpLayerManager )
@@ -701,10 +701,10 @@ void SlideImpl::viewRemoved( const UnoViewSharedPtr& rView )
                         boost::bind(
                             std::equal_to<UnoViewSharedPtr>(),
                             rView,
-                            // select view:    
-                            boost::bind( 
+                            // select view:
+                            boost::bind(
                                 std::select1st<VectorOfVectorOfSlideBitmaps::value_type>(),
-                                _1 ))), 
+                                _1 ))),
         aEnd );
 }
 
@@ -750,22 +750,22 @@ bool SlideImpl::isAnimated()
     return mbHaveAnimations && maAnimations.isAnimated();
 }
 
-SlideBitmapSharedPtr SlideImpl::createCurrentSlideBitmap( const UnoViewSharedPtr&   rView, 
+SlideBitmapSharedPtr SlideImpl::createCurrentSlideBitmap( const UnoViewSharedPtr&   rView,
                                                           const ::basegfx::B2ISize& rBmpSize ) const
 {
-    ENSURE_OR_THROW( rView && rView->getCanvas(), 
+    ENSURE_OR_THROW( rView && rView->getCanvas(),
                       "SlideImpl::createCurrentSlideBitmap(): Invalid view" );
-    ENSURE_OR_THROW( mpLayerManager, 
+    ENSURE_OR_THROW( mpLayerManager,
                       "SlideImpl::createCurrentSlideBitmap(): Invalid layer manager" );
-    ENSURE_OR_THROW( mbShowLoaded, 
+    ENSURE_OR_THROW( mbShowLoaded,
                       "SlideImpl::createCurrentSlideBitmap(): No show loaded" );
 
     ::cppcanvas::CanvasSharedPtr pCanvas( rView->getCanvas() );
 
     // create a bitmap of appropriate size
-    ::cppcanvas::BitmapSharedPtr pBitmap( 
-        ::cppcanvas::BaseGfxFactory::getInstance().createBitmap( 
-            pCanvas, 
+    ::cppcanvas::BitmapSharedPtr pBitmap(
+        ::cppcanvas::BaseGfxFactory::getInstance().createBitmap(
+            pCanvas,
             rBmpSize ) );
 
     ENSURE_OR_THROW( pBitmap,
@@ -776,7 +776,7 @@ SlideBitmapSharedPtr SlideImpl::createCurrentSlideBitmap( const UnoViewSharedPtr
     ENSURE_OR_THROW( pBitmapCanvas,
                       "SlideImpl::createCurrentSlideBitmap(): Cannot create page bitmap canvas" );
 
-    // apply linear part of destination canvas transformation (linear means in this context: 
+    // apply linear part of destination canvas transformation (linear means in this context:
     // transformation without any translational components)
     ::basegfx::B2DHomMatrix aLinearTransform( rView->getTransformation() );
     aLinearTransform.set( 0, 2, 0.0 );
@@ -804,7 +804,7 @@ namespace
         void operator()( const uno::Reference< animations::XAnimationNode >& xChildNode )
         {
             uno::Sequence< beans::NamedValue > aUserData( xChildNode->getUserData() );
-                
+
             if( findNamedValue( aUserData, maSearchKey ) )
             {
                 maMainSequence = xChildNode;
@@ -827,9 +827,9 @@ bool SlideImpl::implPrefetchShow()
     if( mbShowLoaded )
         return true;
 
-    ENSURE_OR_RETURN_FALSE( mxDrawPage.is(), 
+    ENSURE_OR_RETURN_FALSE( mxDrawPage.is(),
                        "SlideImpl::implPrefetchShow(): Invalid draw page" );
-    ENSURE_OR_RETURN_FALSE( mpLayerManager, 
+    ENSURE_OR_RETURN_FALSE( mpLayerManager,
                        "SlideImpl::implPrefetchShow(): Invalid layer manager" );
 
     // fetch desired page content
@@ -855,7 +855,7 @@ bool SlideImpl::implPrefetchShow()
                 // _although_ some animation nodes are there -
                 // this is an error (not finding animations at
                 // all is okay - might be a static slide)
-                return false; 
+                return false;
             }
 
             // now check whether we've got a main sequence (if
@@ -919,15 +919,15 @@ void SlideImpl::activatePaintOverlay()
 
 void SlideImpl::drawPolygons() const
 {
-    if( mpPaintOverlay  )
+    if( mpPaintOverlay )
         mpPaintOverlay->drawPolygons();
 }
-    
+
 void SlideImpl::addPolygons(PolyPolygonVector aPolygons)
 {
     if(!aPolygons.empty())
     {
-        for( PolyPolygonVector::iterator aIter=aPolygons.begin(), 
+        for( PolyPolygonVector::iterator aIter=aPolygons.begin(),
                  aEnd=aPolygons.end();
              aIter!=aEnd;
              ++aIter )
@@ -941,7 +941,7 @@ bool SlideImpl::isPaintOverlayActive() const
 {
     return mbPaintOverlayActive;
 }
-    
+
 void SlideImpl::deactivatePaintOverlay()
 {
     if(mbPaintOverlayActive)
@@ -969,12 +969,12 @@ void SlideImpl::startIntrinsicAnimations()
     mpSubsettableShapeManager->notifyIntrinsicAnimationsEnabled();
 }
 
-bool SlideImpl::applyInitialShapeAttributes( 
+bool SlideImpl::applyInitialShapeAttributes(
     const uno::Reference< animations::XAnimationNode >& xRootAnimationNode )
 {
     if( !implPrefetchShow() )
         return false;
-        
+
     if( !xRootAnimationNode.is() )
     {
         meAnimationState = INITIAL_STATE;
@@ -990,28 +990,28 @@ bool SlideImpl::applyInitialShapeAttributes(
         ENSURE_OR_RETURN_FALSE( maContext.mxComponentContext.is(),
                            "SlideImpl::applyInitialShapeAttributes(): Invalid component context" );
 
-        uno::Reference<lang::XMultiComponentFactory> xFac( 
+        uno::Reference<lang::XMultiComponentFactory> xFac(
             maContext.mxComponentContext->getServiceManager() );
 
         xPropsCreator.set(
             xFac->createInstanceWithContext(
                 ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM(
                                      "com.sun.star.animations.TargetPropertiesCreator") ),
-                maContext.mxComponentContext ), 
+                maContext.mxComponentContext ),
             uno::UNO_QUERY_THROW );
     }
     catch( uno::RuntimeException& )
     {
         throw;
     }
-    catch( uno::Exception& ) 
+    catch( uno::Exception& )
     {
         OSL_ENSURE(
             false,
             rtl::OUStringToOString(
                 comphelper::anyToString(cppu::getCaughtException()),
                 RTL_TEXTENCODING_UTF8 ) );
-            
+
         // could not determine initial shape attributes - this
         // is an error, as some effects might then be plainly
         // invisible
@@ -1031,11 +1031,11 @@ bool SlideImpl::applyInitialShapeAttributes(
         uno::Reference< drawing::XShape > xShape( aProps[i].Target,
                                                   uno::UNO_QUERY );
 
-        if( !xShape.is() ) 
+        if( !xShape.is() )
         {
             // not a shape target. Maybe a ParagraphTarget?
             presentation::ParagraphTarget aParaTarget;
-                
+
             if( (aProps[i].Target >>= aParaTarget) )
             {
                 // yep, ParagraphTarget found - extract shape
@@ -1056,7 +1056,7 @@ bool SlideImpl::applyInitialShapeAttributes(
                 continue;
             }
 
-            AttributableShapeSharedPtr pAttrShape( 
+            AttributableShapeSharedPtr pAttrShape(
                 ::boost::dynamic_pointer_cast< AttributableShape >( pShape ) );
 
             if( !pAttrShape )
@@ -1073,7 +1073,7 @@ bool SlideImpl::applyInitialShapeAttributes(
                 // this up first.
                 const DocTreeNodeSupplier& rNodeSupplier( pAttrShape->getTreeNodeSupplier() );
 
-                pAttrShape = pAttrShape->getSubset( 
+                pAttrShape = pAttrShape->getSubset(
                     rNodeSupplier.getTreeNode(
                         nParaIndex,
                         DocTreeNode::NODETYPE_LOGICAL_PARAGRAPH ) );
@@ -1120,9 +1120,9 @@ bool SlideImpl::loadShapes()
     if( mbShapesLoaded )
         return true;
 
-    ENSURE_OR_RETURN_FALSE( mxDrawPage.is(), 
+    ENSURE_OR_RETURN_FALSE( mxDrawPage.is(),
                        "SlideImpl::loadShapes(): Invalid draw page" );
-    ENSURE_OR_RETURN_FALSE( mpLayerManager, 
+    ENSURE_OR_RETURN_FALSE( mpLayerManager,
                        "SlideImpl::loadShapes(): Invalid layer manager" );
 
     // fetch desired page content
@@ -1133,12 +1133,12 @@ bool SlideImpl::loadShapes()
     uno::Reference< drawing::XShapes >   xMasterPageShapes;
     sal_Int32                            nCurrCount(0);
 
-    uno::Reference< drawing::XMasterPageTarget > xMasterPageTarget( mxDrawPage, 
+    uno::Reference< drawing::XMasterPageTarget > xMasterPageTarget( mxDrawPage,
                                                                     uno::UNO_QUERY );
     if( xMasterPageTarget.is() )
     {
         xMasterPage = xMasterPageTarget->getMasterPage();
-        xMasterPageShapes.set( xMasterPage, 
+        xMasterPageShapes.set( xMasterPage,
                                uno::UNO_QUERY );
 
         if( xMasterPage.is() && xMasterPageShapes.is() )
@@ -1150,25 +1150,25 @@ bool SlideImpl::loadShapes()
             {
                 // load the masterpage shapes
                 // -------------------------------------------------------------------------
-                ShapeImporter aMPShapesFunctor( xMasterPage, 
+                ShapeImporter aMPShapesFunctor( xMasterPage,
                                                 mxDrawPage,
                                                 mxDrawPagesSupplier,
                                                 maContext,
                                                 0, /* shape num starts at 0 */
                                                 true );
 
-                mpLayerManager->addShape( 
+                mpLayerManager->addShape(
                     aMPShapesFunctor.importBackgroundShape() );
 
                 while( !aMPShapesFunctor.isImportDone() )
                 {
-                    ShapeSharedPtr const& rShape( 
+                    ShapeSharedPtr const& rShape(
                         aMPShapesFunctor.importShape() );
                     if( rShape )
                         mpLayerManager->addShape( rShape );
                 }
                 addPolygons(aMPShapesFunctor.getPolygons());
-                
+
                 nCurrCount = xMasterPageShapes->getCount() + 1;
             }
             catch( uno::RuntimeException& )
@@ -1188,7 +1188,7 @@ bool SlideImpl::loadShapes()
                 OSL_ENSURE( false,
                             rtl::OUStringToOString(
                                 comphelper::anyToString( cppu::getCaughtException() ),
-                                RTL_TEXTENCODING_UTF8 ).getStr() ); 
+                                RTL_TEXTENCODING_UTF8 ).getStr() );
 
                 return false;
             }
@@ -1200,16 +1200,16 @@ bool SlideImpl::loadShapes()
         // load the normal page shapes
         // -------------------------------------------------------------------------
 
-        ShapeImporter aShapesFunctor( mxDrawPage, 
+        ShapeImporter aShapesFunctor( mxDrawPage,
                                       mxDrawPage,
                                       mxDrawPagesSupplier,
                                       maContext,
-                                      nCurrCount, 
+                                      nCurrCount,
                                       false );
 
         while( !aShapesFunctor.isImportDone() )
         {
-            ShapeSharedPtr const& rShape( 
+            ShapeSharedPtr const& rShape(
                 aShapesFunctor.importShape() );
             if( rShape )
                 mpLayerManager->addShape( rShape );
@@ -1243,10 +1243,10 @@ bool SlideImpl::loadShapes()
 }
 
 basegfx::B2ISize SlideImpl::getSlideSizeImpl() const
-{    
+{
     uno::Reference< beans::XPropertySet > xPropSet(
         mxDrawPage, uno::UNO_QUERY_THROW );
-        
+
     sal_Int32 nDocWidth = 0;
     sal_Int32 nDocHeight = 0;
     xPropSet->getPropertyValue( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM("Width") ) ) >>= nDocWidth;
@@ -1280,7 +1280,7 @@ SlideSharedPtr createSlide( const uno::Reference< drawing::XDrawPage >&			xDrawP
 {
     boost::shared_ptr<SlideImpl> pRet( new SlideImpl( xDrawPage, xDrawPages, xRootNode, rEventQueue,
                                                       rEventMultiplexer, rScreenUpdater,
-                                                      rActivitiesQueue, rUserEventQueue, 
+                                                      rActivitiesQueue, rUserEventQueue,
                                                       rCursorManager, rViewContainer,
                                                       xComponentContext, rShapeListenerMap,
                                                       rShapeCursorMap, rPolyPolygonVector, rUserPaintColor,

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -28,19 +28,19 @@
 
 #if defined(LINUX) || defined(SOLARIS) || defined(FREEBSD)
 #define HAVE_DLFCN_H
-#endif  /* LINUX || SOLARIS || FREEBSD */
+#endif /* LINUX || SOLARIS || FREEBSD */
 
-#endif  /* HAVE_DLFCN_H */
+#endif /* HAVE_DLFCN_H */
 
 
-#ifdef  HAVE_DLFCN_H
+#ifdef HAVE_DLFCN_H
 
 #ifndef INCLUDED_DLFCN_H
 #include <dlfcn.h>
 #define INCLUDED_DLFCN_H
 #endif
 
-#endif  /* HAVE_DLFCN_H */
+#endif /* HAVE_DLFCN_H */
 #include "osl/thread.h"
 
 #ifndef INCLUDED_PTHREAD_H
@@ -112,7 +112,7 @@ static void osl_diagnose_frame_Impl (
 			  sname ? sname : "???",
 			  offset);
 
-    OSL_DIAGNOSE_OUTPUTMESSAGE(f, szMessage);
+	OSL_DIAGNOSE_OUTPUTMESSAGE(f, szMessage);
 }
 #endif
 
@@ -232,7 +232,7 @@ static void osl_diagnose_backtrace_Impl (oslDebugMessageFunc f)
 	}
 }
 
-#else  /* (LINUX || SOLARIS || FREEBSD) */
+#else /* (LINUX || SOLARIS || FREEBSD) */
 
 static void osl_diagnose_backtrace_Impl (oslDebugMessageFunc f)
 {
@@ -250,23 +250,23 @@ sal_Bool SAL_CALL osl_assertFailedLine (
 	const sal_Char* pszMessage)
 {
 	oslDebugMessageFunc f = g_pDebugMessageFunc;
-	char                szMessage[1024];
+	char szMessage[1024];
 
-    // after reporting the assertion, abort if told so by SAL_DIAGNOSE_ABORT, but *not* if
-    // assertions are routed to some external instance
-    char const * env = getenv( "SAL_DIAGNOSE_ABORT" );
-    sal_Bool const doAbort = ( ( env != NULL ) && ( *env != '\0' ) && ( f == NULL ) );
+	// after reporting the assertion, abort if told so by SAL_DIAGNOSE_ABORT, but *not* if
+	// assertions are routed to some external instance
+	char const * env = getenv( "SAL_DIAGNOSE_ABORT" );
+	sal_Bool const doAbort = ( ( env != NULL ) && ( *env != '\0' ) && ( f == NULL ) );
 
-    /* If there's a callback for detailed messages, use it */
-    if ( g_pDetailedDebugMessageFunc != NULL )
-    {
-        g_pDetailedDebugMessageFunc( pszFileName, nLine, pszMessage );
-        return sal_False;
-    }
+	/* If there's a callback for detailed messages, use it */
+	if ( g_pDetailedDebugMessageFunc != NULL )
+	{
+		g_pDetailedDebugMessageFunc( pszFileName, nLine, pszMessage );
+		return sal_False;
+	}
 
-    /* if SAL assertions are disabled in general, stop here */
-    if ( getenv("DISABLE_SAL_DBGBOX") )
-        return doAbort;
+	/* if SAL assertions are disabled in general, stop here */
+	if ( getenv("DISABLE_SAL_DBGBOX") )
+		return doAbort;
 
 	/* format message into buffer */
 	if (pszMessage != NULL)
@@ -286,7 +286,7 @@ sal_Bool SAL_CALL osl_assertFailedLine (
 	pthread_mutex_lock(&g_mutex);
 
 	/* output message buffer */
-    OSL_DIAGNOSE_OUTPUTMESSAGE(f, szMessage);
+	OSL_DIAGNOSE_OUTPUTMESSAGE(f, szMessage);
 
 	/* output backtrace */
 	osl_diagnose_backtrace_Impl(f);
@@ -294,7 +294,7 @@ sal_Bool SAL_CALL osl_assertFailedLine (
 	/* release lock and leave */
 	pthread_mutex_unlock(&g_mutex);
 
-    return doAbort;
+	return doAbort;
 }
 
 /************************************************************************/
@@ -309,10 +309,10 @@ void SAL_CALL osl_breakDebug()
 /* osl_reportError */
 /************************************************************************/
 sal_Int32 SAL_CALL osl_reportError (
-	sal_uInt32      nType,
+	sal_uInt32 nType,
 	const sal_Char* pszMessage)
 {
-    (void) nType; /* unused */
+	(void) nType; /* unused */
 	fputs(pszMessage, stderr);
 	return 0;
 }
@@ -332,19 +332,19 @@ oslDebugMessageFunc SAL_CALL osl_setDebugMessageFunc (
 /* osl_setDetailedDebugMessageFunc */
 /************************************************************************/
 pfunc_osl_printDetailedDebugMessage SAL_CALL osl_setDetailedDebugMessageFunc (
-    pfunc_osl_printDetailedDebugMessage pNewFunc)
+	pfunc_osl_printDetailedDebugMessage pNewFunc)
 {
-    oslDetailedDebugMessageFunc pOldFunc = g_pDetailedDebugMessageFunc;
-    g_pDetailedDebugMessageFunc = pNewFunc;
-    return pOldFunc;
+	oslDetailedDebugMessageFunc pOldFunc = g_pDetailedDebugMessageFunc;
+	g_pDetailedDebugMessageFunc = pNewFunc;
+	return pOldFunc;
 }
 
 /************************************************************************/
 /* osl_trace */
 /************************************************************************/
 void osl_trace(char const * pszFormat, ...) {
-    va_list args;
-    va_start(args, pszFormat);
-    printTrace((unsigned long) getpid(), pszFormat, args);
-    va_end(args);
+	va_list args;
+	va_start(args, pszFormat);
+	printTrace((unsigned long) getpid(), pszFormat, args);
+	va_end(args);
 }

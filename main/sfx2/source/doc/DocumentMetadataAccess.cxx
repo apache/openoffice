@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@
 #include <sfx2/docfile.hxx>
 #include <sfx2/XmlIdRegistry.hxx>
 
-#include <libxml/tree.h>    // for xmlValidateNCName
+#include <libxml/tree.h> // for xmlValidateNCName
 
 #include <boost/bind.hpp>
 #include <boost/shared_array.hpp>
@@ -473,8 +473,8 @@ mkException( ::rtl::OUString const & i_rMessage,
     <ul><li>(default:) cancel import, raise exception</li>
         <li>ignore the error and continue</li>
         <li>retry the action that led to the error</li></ul></p>
-    N.B.: must not be called before DMA is fully initalized!
-    @returns true iff caller should retry
+    N.B.: must not be called before DMA is fully initialized!
+    @returns true if caller should retry
  */
 static bool
 handleError( ucb::InteractiveAugmentedIOException const & i_rException,

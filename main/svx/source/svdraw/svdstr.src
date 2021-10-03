@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,23 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
-/* StarView resource file */
 
 #include "svx/svdstr.hrc"
- // Ab hier gecachte Strings
+// Beginning of cached strings
 String STR_ObjNameSingulNONE
 {
 	Text [ en-US ] = "draw object" ;
@@ -32,7 +31,7 @@ String STR_ObjNamePluralNONE
 {
 	Text [ en-US ] = "draw objects" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulGRUP
 {
 	Text [ en-US ] = "group object" ;
@@ -49,7 +48,7 @@ String STR_ObjNamePluralGRUPEMPTY
 {
 	Text [ en-US ] = "Blank group objects" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulLINE
 {
 	Text [ en-US ] = "Line" ;
@@ -70,7 +69,7 @@ String STR_ObjNamePluralLINE
 {
 	Text [ en-US ] = "Lines" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulRECT
 {
 	Text [ en-US ] = "Rectangle" ;
@@ -135,7 +134,7 @@ String STR_ObjNamePluralRAUTERND
 {
 	Text [ en-US ] = "Rounded rhombuses" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulCIRC
 {
 	Text [ en-US ] = "Circle" ;
@@ -200,7 +199,7 @@ String STR_ObjNamePluralCCUTE
 {
 	Text [ en-US ] = "Ellipse Segments" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulPOLY
 {
 	Text [ en-US ] = "Polygon" ;
@@ -273,7 +272,7 @@ String STR_ObjNamePluralCOMBFILL
 {
 	Text [ en-US ] = "Curve objects" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulNATSPLN
 {
 	Text [ en-US ] = "Natural Spline" ;
@@ -290,7 +289,7 @@ String STR_ObjNamePluralPERSPLN
 {
 	Text [ en-US ] = "Periodic Splines" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulTEXT
 {
 	Text [ en-US ] = "Text Frame" ;
@@ -307,36 +306,36 @@ String STR_ObjNamePluralTEXTLNK
 {
 	Text [ en-US ] = "Linked text frames" ;
 };
- //String STR_ObjNameSingulXTXT {
- //    Text="Textfortsetzungsrahmen";
- //    Text[ENGLISH]="drawobject";
- //    Text[norwegian]="Tegneobjekt";
- //    Text[italian]="Disegna oggetto";
- //    Text[portuguese_brazilian]="Desenhar objeto";
- //    Text[portuguese]="Desenhar objecto";
- //    Text[finnish]="Piirto-objekti";
- //    Text[danish]="Tegneobjekt";
- //    Text[french]="Drawobject";
- //    Text[swedish]="Ritobjekt";
- //    Text[dutch]="Tekenobject";
- //    Text[spanish]="Objeto de dibujo";
- //    Text[english_us]="drawobject";
- //};
- //String STR_ObjNamePluralXTXT {
- //    Text="Textfortsetzungsrahmen";
- //    Text[ENGLISH]="drawobjects";
- //    Text[norwegian]="Tegneobjektr";
- //    Text[italian]="Disegna  oggetti";
- //    Text[portuguese_brazilian]="Desenhar objetos";
- //    Text[portuguese]="Desenhar objectos";
- //    Text[finnish]="Piirto-objektit";
- //    Text[danish]="Tegneobjekter";
- //    Text[french]="Drawobjects";
- //    Text[swedish]="Ritobjekt";
- //    Text[dutch]="Tekenobjecten";
- //    Text[spanish]="Objetos de dibujo";
- //    Text[english_us]="drawobjects";
- //};
+//String STR_ObjNameSingulXTXT {
+//	Text="Textfortsetzungsrahmen" ;
+//	Text[ENGLISH]="drawobject" ;
+//	Text[norwegian]="Tegneobjekt" ;
+//	Text[italian]="Disegna oggetto" ;
+//	Text[portuguese_brazilian]="Desenhar objeto" ;
+//	Text[portuguese]="Desenhar objecto" ;
+//	Text[finnish]="Piirto-objekti" ;
+//	Text[danish]="Tegneobjekt" ;
+//	Text[french]="Drawobject" ;
+//	Text[swedish]="Ritobjekt" ;
+//	Text[dutch]="Tekenobject" ;
+//	Text[spanish]="Objeto de dibujo" ;
+//	Text[english_us]="drawobject" ;
+//};
+//String STR_ObjNamePluralXTXT {
+//	Text="Textfortsetzungsrahmen" ;
+//	Text[ENGLISH]="drawobjects" ;
+//	Text[norwegian]="Tegneobjektr" ;
+//	Text[italian]="Disegna oggetti" ;
+//	Text[portuguese_brazilian]="Desenhar objetos" ;
+//	Text[portuguese]="Desenhar objectos" ;
+//	Text[finnish]="Piirto-objektit" ;
+//	Text[danish]="Tegneobjekter" ;
+//	Text[french]="Drawobjects" ;
+//	Text[swedish]="Ritobjekt" ;
+//	Text[dutch]="Tekenobjecten" ;
+//	Text[spanish]="Objetos de dibujo" ;
+//	Text[english_us]="drawobjects" ;
+//};
 String STR_ObjNameSingulFITTEXT
 {
 	Text [ en-US ] = "Fit-to-size text object" ;
@@ -369,7 +368,7 @@ String STR_ObjNamePluralOUTLINETEXT
 {
 	Text [ en-US ] = "Outline Texts" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulGRAF
 {
 	Text [ en-US ] = "graphic" ;
@@ -452,11 +451,11 @@ String STR_ObjNamePluralGRAFBMPTRANSLNK
 };
 String STR_ObjNameSingulCUSTOMSHAPE
 {
-	Text [ en-US ] =  "Shape";
+	Text [ en-US ] = "Shape" ;
 };
 String STR_ObjNamePluralCUSTOMSHAPE
 {
-	Text [ en-US ] =  "Shapes";
+	Text [ en-US ] = "Shapes" ;
 };
 String STR_ObjNameSingulGRAFMAC
 {
@@ -499,11 +498,11 @@ String STR_ObjNamePluralOLE2
 };
 String STR_ObjNameSingulUno
 {
-	Text [ en-US ] = "Control";
+	Text [ en-US ] = "Control" ;
 };
 String STR_ObjNamePluralUno
 {
-	Text [ en-US ] = "Controls";
+	Text [ en-US ] = "Controls" ;
 };
 String STR_ObjNameSingulOLE2LNK
 {
@@ -517,7 +516,7 @@ String STR_ObjOLE2NamePrefix
 {
 	Text [ en-US ] = "Object" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulFrame
 {
 	Text [ en-US ] = "Frame" ;
@@ -530,7 +529,7 @@ String STR_ObjFrameNamePrefix
 {
 	Text [ en-US ] = "Frame" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulEDGE
 {
 	Text [ en-US ] = "Object Connectors" ;
@@ -547,7 +546,7 @@ String STR_ObjNamePluralCAPTION
 {
 	Text [ en-US ] = "Callouts" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ObjNameSingulPAGE
 {
 	Text [ en-US ] = "Preview object" ;
@@ -581,93 +580,88 @@ String STR_ObjNameSingulPlural
 	Text [ en-US ] = "draw object(s)" ;
 };
 
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Neu ab 537: Namen fuer 3D-Objekte
 String STR_ObjNameSingulCube3d
 {
-	Text [ en-US ] = "3D cube";
+	Text [ en-US ] = "3D cube" ;
 };
 
 String STR_ObjNamePluralCube3d
 {
-	Text [ en-US ] = "3D cubes";
+	Text [ en-US ] = "3D cubes" ;
 };
 
 String STR_ObjNameSingulExtrude3d
 {
-	Text [ en-US ] = "Extrusion object";
+	Text [ en-US ] = "Extrusion object" ;
 };
 
 String STR_ObjNamePluralExtrude3d
 {
-	Text [ en-US ] = "Extrusion objects";
+	Text [ en-US ] = "Extrusion objects" ;
 };
 
 String STR_ObjNameSingulLabel3d
 {
-	Text [ en-US ] = "3D text";
+	Text [ en-US ] = "3D text" ;
 };
 
 String STR_ObjNamePluralLabel3d
 {
-	Text [ en-US ] = "3D texts";
+	Text [ en-US ] = "3D texts" ;
 };
 
 String STR_ObjNameSingulLathe3d
 {
-	Text [ en-US ] = "rotation object";
+	Text [ en-US ] = "rotation object" ;
 };
 
 String STR_ObjNamePluralLathe3d
 {
-	Text [ en-US ] = "rotation objects";
+	Text [ en-US ] = "rotation objects" ;
 };
 
 String STR_ObjNameSingulObj3d
 {
-	Text [ en-US ] = "3D object";
+	Text [ en-US ] = "3D object" ;
 };
 
 String STR_ObjNamePluralObj3d
 {
-	Text [ en-US ] = "3D objects";
+	Text [ en-US ] = "3D objects" ;
 };
 
 String STR_ObjNamePluralPoly3d
 {
-	Text [ en-US ] = "3D polygons";
+	Text [ en-US ] = "3D polygons" ;
 };
 
 String STR_ObjNameSingulScene3d
 {
-	Text [ en-US ] = "3D scene";
+	Text [ en-US ] = "3D scene" ;
 };
 
 String STR_ObjNamePluralScene3d
 {
-	Text [ en-US ] = "3D scenes";
+	Text [ en-US ] = "3D scenes" ;
 };
 
 String STR_ObjNameSingulSphere3d
 {
-	Text [ en-US ] = "sphere";
+	Text [ en-US ] = "sphere" ;
 };
 
 String STR_ObjNamePluralSphere3d
 {
-	Text [ en-US ] = "spheres";
+	Text [ en-US ] = "spheres" ;
 };
 
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
-
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_EditWithCopy
 {
-	Text [ en-US ] = "with copy" ;
+	Text [ en-US ] = " with copy" ;
 };
 String STR_EditPosSize
 {
@@ -807,11 +801,11 @@ String STR_EditConvToCurves
 };
 String STR_EditConvToContour
 {
-	Text [ en-US ] = "Convert %1 to contour";
+	Text [ en-US ] = "Convert %1 to contour" ;
 };
 String STR_EditConvToContours
 {
-	Text [ en-US ] = "Convert %1 to contours";
+	Text [ en-US ] = "Convert %1 to contours" ;
 };
 String STR_EditAlign
 {
@@ -855,19 +849,19 @@ String STR_EditCombine_PolyPoly
 };
 String STR_EditMergeMergePoly
 {
-	Text [ en-US ] = "Merge %1";
+	Text [ en-US ] = "Merge %1" ;
 };
 String STR_EditMergeSubstractPoly
 {
-	Text [ en-US ] = "Subtract %1";
+	Text [ en-US ] = "Subtract %1" ;
 };
 String STR_EditMergeIntersectPoly
 {
-	Text [ en-US ] = "Intersect %1";
+	Text [ en-US ] = "Intersect %1" ;
 };
 String STR_DistributeMarkedObjects
 {
-	Text [ en-US ] = "Distribute selected objects";
+	Text [ en-US ] = "Distribute selected objects" ;
 };
 String STR_EditCombine_OnePoly
 {
@@ -963,11 +957,11 @@ String STR_DragMethMirrorFree
 };
 String STR_DragMethGradient
 {
-	Text [ en-US ] = "Interactive gradient for %1";
+	Text [ en-US ] = "Interactive gradient for %1" ;
 };
 String STR_DragMethTransparence
 {
-	Text [ en-US ] = "Interactive transparency for %1";
+	Text [ en-US ] = "Interactive transparency for %1" ;
 };
 String STR_DragMethShear
 {
@@ -1137,24 +1131,23 @@ String STR_UndoMovLayer
 // --> OD 2009-07-09 #i73249#
 String STR_UndoObjName
 {
-    Text [ en-US ] = "Change object name of %1 to" ;
+	Text [ en-US ] = "Change object name of %1 to" ;
 };
 String STR_UndoObjTitle
 {
-    Text [ en-US ] = "Change object title of %1" ;
+	Text [ en-US ] = "Change object title of %1" ;
 };
 String STR_UndoObjDescription
 {
-    Text [ en-US ] = "Change object description of %1" ;
+	Text [ en-US ] = "Change object description of %1" ;
 };
 // <--
 String STR_StandardLayerName
 {
 	Text [ en-US ] = "Standard" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValON
 {
 	Text [ en-US ] = "on" ;
@@ -1171,7 +1164,7 @@ String STR_ItemValNO
 {
 	Text [ en-US ] = "No" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValCAPTIONTYPE1
 {
 	Text [ en-US ] = "Type 1" ;
@@ -1200,7 +1193,7 @@ String STR_ItemValCAPTIONESCBESTFIT
 {
 	Text [ en-US ] = "Automatic" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValFITTOSIZENONE
 {
 	Text [ en-US ] = "Off" ;
@@ -1217,7 +1210,7 @@ String STR_ItemValFITTOSIZERESIZEAT
 {
 	Text [ en-US ] = "Use hard attributes" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValTEXTVADJTOP
 {
 	Text [ en-US ] = "Top" ;
@@ -1258,7 +1251,7 @@ String STR_ItemValTEXTHADJSTRETCH
 {
 	Text [ en-US ] = "Stretched" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValTEXTANI_NONE
 {
 	Text [ en-US ] = "off" ;
@@ -1295,7 +1288,7 @@ String STR_ItemValTEXTANI_DOWN
 {
 	Text [ en-US ] = "down" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValEDGE_ORTHOLINES
 {
 	Text [ en-US ] = "Standard Connector" ;
@@ -1312,7 +1305,7 @@ String STR_ItemValEDGE_BEZIER
 {
 	Text [ en-US ] = "Curved Connector" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValMEASURE_STD
 {
 	Text [ en-US ] = "Standard" ;
@@ -1357,7 +1350,7 @@ String STR_ItemValMEASURETEXT_VERTICALCEN
 {
 	Text [ en-US ] = "centered" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemValCIRC_FULL
 {
 	Text [ en-US ] = "full circle" ;
@@ -1374,8 +1367,8 @@ String STR_ItemValCIRC_ARC
 {
 	Text [ en-US ] = "Arc" ;
 };
- ///////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 String STR_ItemNam_SHADOW
 {
 	Text [ en-US ] = "Shadow" ;
@@ -1503,39 +1496,39 @@ String STR_ItemNam_TEXT_FITTOSIZE
 
 String STR_ItemNam_GRAFRED
 {
-	Text [ en-US ] = "Red";
+	Text [ en-US ] = "Red" ;
 };
 String STR_ItemNam_GRAFGREEN
 {
-	Text [ en-US ] = "Green";
+	Text [ en-US ] = "Green" ;
 };
 String STR_ItemNam_GRAFBLUE
 {
-	Text [ en-US ] = "Blue";
+	Text [ en-US ] = "Blue" ;
 };
 String STR_ItemNam_GRAFLUMINANCE
 {
-	Text [ en-US ] = "Brightness";
+	Text [ en-US ] = "Brightness" ;
 };
 String STR_ItemNam_GRAFCONTRAST
 {
-	Text [ en-US ] = "Contrast";
+	Text [ en-US ] = "Contrast" ;
 };
 String STR_ItemNam_GRAFGAMMA
 {
-	Text [ en-US ] = "Gamma";
+	Text [ en-US ] = "Gamma" ;
 };
 String STR_ItemNam_GRAFTRANSPARENCE
 {
-	Text [ en-US ] = "Transparency";
+	Text [ en-US ] = "Transparency" ;
 };
 String STR_ItemNam_GRAFINVERT
 {
-	Text [ en-US ] = "Invert";
+	Text [ en-US ] = "Invert" ;
 };
 String STR_ItemNam_GRAFMODE
 {
-	Text [ en-US ] = "Graphics mode";
+	Text [ en-US ] = "Graphics mode" ;
 };
 String STR_ItemNam_GRAFRESERVE2	{ Text = "" ; };
 String STR_ItemNam_GRAFRESERVE3	{ Text = "" ; };
@@ -1543,7 +1536,7 @@ String STR_ItemNam_GRAFRESERVE4	{ Text = "" ; };
 String STR_ItemNam_GRAFRESERVE5	{ Text = "" ; };
 String STR_ItemNam_GRAFRESERVE6	{ Text = "" ; };
 
-String STR_ItemNam_RESERVE19 { Text = "" ; };
+String STR_ItemNam_RESERVE19 { Text = "" ; } ;
 String STR_ItemNamSET_MISC
 {
 	Text [ en-US ] = "Various attributes" ;
@@ -1604,1166 +1597,1165 @@ String STR_ItemNam_SHEARANGLE
 {
 	Text [ en-US ] = "Shear angle" ;
 };
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- ////////////////////////////////////////////////////////////////////////////////////////////////////
- // Ende der gecachten Strings
 
- // und hier noch Bitmaps
-Bitmap BMAP_GrafikEi { File = "grafikei.png" ; };
-Bitmap BMAP_GrafikDe { File = "grafikde.png" ; };
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// End of cached strings
+
+// und hier noch Bitmaps
+Bitmap BMAP_GrafikEi { File = "grafikei.png" ; } ;
+Bitmap BMAP_GrafikDe { File = "grafikde.png" ; } ;
 
 // Strings fuer den Vorlagen-Dialog
 String SIP_UNKNOWN_ATTR
 {
-	Text [ en-US ] = "Unknown attribute";
+	Text [ en-US ] = "Unknown attribute" ;
 };
 
 // Strings fuer den Vorlagen-Dialog
 String SIP_XA_LINESTYLE
 {
-	Text [ en-US ] = "Line style";
+	Text [ en-US ] = "Line style" ;
 };
 
 String SIP_XA_LINEDASH
 {
-	Text [ en-US ] = "Line pattern";
+	Text [ en-US ] = "Line pattern" ;
 };
 
 String SIP_XA_LINEWIDTH
 {
-	Text [ en-US ] = "Line width";
+	Text [ en-US ] = "Line width" ;
 };
 
 String SIP_XA_LINECOLOR
 {
-	Text [ en-US ] = "Line color";
+	Text [ en-US ] = "Line color" ;
 };
 
 String SIP_XA_LINESTART
 {
-	Text [ en-US ] = "Line head";
+	Text [ en-US ] = "Line head" ;
 };
 
 String SIP_XA_LINEEND
 {
-	Text [ en-US ] = "Line end";
+	Text [ en-US ] = "Line end" ;
 };
 
 String SIP_XA_LINESTARTWIDTH
 {
-	Text [ en-US ] = "Line head width";
+	Text [ en-US ] = "Line head width" ;
 };
 
 String SIP_XA_LINEENDWIDTH
 {
-	Text [ en-US ] = "Line end width";
+	Text [ en-US ] = "Line end width" ;
 };
 
 String SIP_XA_LINESTARTCENTER
 {
-	Text [ en-US ] = "Center arrowhead";
+	Text [ en-US ] = "Center arrowhead" ;
 };
 
 String SIP_XA_LINEENDCENTER
 {
-	Text [ en-US ] = "Center arrowend";
+	Text [ en-US ] = "Center arrowend" ;
 };
 
 String SIP_XA_LINETRANSPARENCE
 {
-	Text [ en-US ] = "Line transparency";
+	Text [ en-US ] = "Line transparency" ;
 };
 
 String SIP_XA_LINEJOINT
 {
-	Text [ en-US ] = "Line joint";
+	Text [ en-US ] = "Line joint" ;
 };
 
 String SIP_XA_LINERESERVED2
 {
-	Text [ en-US ] = "Line reserved for 2";
+	Text [ en-US ] = "Line reserved for 2" ;
 };
 
 String SIP_XA_LINERESERVED3
 {
-	Text [ en-US ] = "Line reserved for 3";
+	Text [ en-US ] = "Line reserved for 3" ;
 };
 
 String SIP_XA_LINERESERVED4
 {
-	Text [ en-US ] = "Line reserved for 4";
+	Text [ en-US ] = "Line reserved for 4" ;
 };
 
 String SIP_XA_LINERESERVED5
 {
-	Text [ en-US ] = "Line reserved for 5";
+	Text [ en-US ] = "Line reserved for 5" ;
 };
 
 String SIP_XA_LINERESERVED_LAST
 {
-	Text [ en-US ] = "Line reserved for 6";
+	Text [ en-US ] = "Line reserved for 6" ;
 };
 
 String SIP_XATTRSET_LINE
 {
-	Text [ en-US ] = "Line attributes";
+	Text [ en-US ] = "Line attributes" ;
 };
 
 String SIP_XA_FILLSTYLE
 {
-	Text [ en-US ] = "Fill style";
+	Text [ en-US ] = "Fill style" ;
 };
 
 String SIP_XA_FILLCOLOR
 {
-	Text [ en-US ] = "Fillcolor";
+	Text [ en-US ] = "Fillcolor" ;
 };
 
 String SIP_XA_FILLGRADIENT
 {
-	Text [ en-US ] = "Gradient";
+	Text [ en-US ] = "Gradient" ;
 };
 
 String SIP_XA_FILLHATCH
 {
-	Text [ en-US ] = "Hatching";
+	Text [ en-US ] = "Hatching" ;
 };
 
 String SIP_XA_FILLBITMAP
 {
-	Text [ en-US ] = "Fillbitmap";
+	Text [ en-US ] = "Fillbitmap" ;
 };
 
 String SIP_XA_FILLTRANSPARENCE
 {
-	Text [ en-US ] = "Transparency";
+	Text [ en-US ] = "Transparency" ;
 };
 
 String SIP_XA_GRADIENTSTEPCOUNT
 {
-	Text [ en-US ] = "Number of gradient steps";
+	Text [ en-US ] = "Number of gradient steps" ;
 };
 
 String SIP_XA_FILLBMP_TILE
 {
-	Text [ en-US ] = "Tile fill";
+	Text [ en-US ] = "Tile fill" ;
 };
 
 String SIP_XA_FILLBMP_POS
 {
-	Text [ en-US ] = "Fillbitmap position";
+	Text [ en-US ] = "Fillbitmap position" ;
 };
 
 String SIP_XA_FILLBMP_SIZEX
 {
-	Text [ en-US ] = "Fillbitmap width";
+	Text [ en-US ] = "Fillbitmap width" ;
 };
 
 String SIP_XA_FILLBMP_SIZEY
 {
-	Text [ en-US ] = "Height of fillbitmap";
+	Text [ en-US ] = "Height of fillbitmap" ;
 };
 
 String SIP_XA_FILLFLOATTRANSPARENCE
 {
-	Text [ en-US ] = "Transparent gradient";
+	Text [ en-US ] = "Transparent gradient" ;
 };
 
 String SIP_XA_SECONDARYFILLCOLOR
 {
-	Text [ en-US ] = "Fill reserved for 2";
+	Text [ en-US ] = "Fill reserved for 2" ;
 };
 
 String SIP_XA_FILLBMP_SIZELOG
 {
-	Text [ en-US ] = "Tile size not in %";
+	Text [ en-US ] = "Tile size not in %" ;
 };
 
 String SIP_XA_FILLBMP_TILEOFFSETX
 {
-	Text [ en-US ] = "Tile offset X in %";
+	Text [ en-US ] = "Tile offset X in %" ;
 };
 
 String SIP_XA_FILLBMP_TILEOFFSETY
 {
-	Text [ en-US ] = "Tile offset Y in %";
+	Text [ en-US ] = "Tile offset Y in %" ;
 };
 
 String SIP_XA_FILLBMP_STRETCH
 {
-	Text [ en-US ] = "Bitmap scaling";
+	Text [ en-US ] = "Bitmap scaling" ;
 };
 
 String SIP_XA_FILLRESERVED3
 {
-	Text [ en-US ] = "Bitmap reserved for 3";
+	Text [ en-US ] = "Bitmap reserved for 3" ;
 };
 
 String SIP_XA_FILLRESERVED4
 {
-	Text [ en-US ] = "Bitmap reserved for 4";
+	Text [ en-US ] = "Bitmap reserved for 4" ;
 };
 
 String SIP_XA_FILLRESERVED5
 {
-	Text [ en-US ] = "Bitmap reserved for 5";
+	Text [ en-US ] = "Bitmap reserved for 5" ;
 };
 
 String SIP_XA_FILLRESERVED6
 {
-	Text [ en-US ] = "Bitmap reserved for 6";
+	Text [ en-US ] = "Bitmap reserved for 6" ;
 };
 
 String SIP_XA_FILLRESERVED7
 {
-	Text [ en-US ] = "Bitmap reserved for 7";
+	Text [ en-US ] = "Bitmap reserved for 7" ;
 };
 
 String SIP_XA_FILLRESERVED8
 {
-	Text [ en-US ] = "Bitmap reserved for 8";
+	Text [ en-US ] = "Bitmap reserved for 8" ;
 };
 
 String SIP_XA_FILLBMP_POSOFFSETX
 {
-	Text [ en-US ] = "Tile position X in %";
+	Text [ en-US ] = "Tile position X in %" ;
 };
 
 String SIP_XA_FILLBMP_POSOFFSETY
 {
-	Text [ en-US ] = "Tile position Y in %";
+	Text [ en-US ] = "Tile position Y in %" ;
 };
 
 String SIP_XA_FILLBACKGROUND
 {
-	Text [ en-US ] = "Background fill";
+	Text [ en-US ] = "Background fill" ;
 };
 
 String SIP_XA_FILLRESERVED10
 {
-	Text [ en-US ] = "Fill reserved for 10";
+	Text [ en-US ] = "Fill reserved for 10" ;
 };
 
 String SIP_XA_FILLRESERVED11
 {
-	Text [ en-US ] = "Fill reserved for 11";
+	Text [ en-US ] = "Fill reserved for 11" ;
 };
 
 String SIP_XA_FILLRESERVED_LAST
 {
-	Text [ en-US ] = "Fill reserved for 12";
+	Text [ en-US ] = "Fill reserved for 12" ;
 };
 
 String SIP_XATTRSET_FILL
 {
-	Text [ en-US ] = "Area attributes";
+	Text [ en-US ] = "Area attributes" ;
 };
 
 String SIP_XA_FORMTXTSTYLE
 {
-	Text [ en-US ] = "Fontwork style";
+	Text [ en-US ] = "Fontwork style" ;
 };
 
 String SIP_XA_FORMTXTADJUST
 {
-	Text [ en-US ] = "Fontwork alignment";
+	Text [ en-US ] = "Fontwork alignment" ;
 };
 
 String SIP_XA_FORMTXTDISTANCE
 {
-	Text [ en-US ] = "Fontwork spacing";
+	Text [ en-US ] = "Fontwork spacing" ;
 };
 
 String SIP_XA_FORMTXTSTART
 {
-	Text [ en-US ] = "Fontwork font begin";
+	Text [ en-US ] = "Fontwork font begin" ;
 };
 
 String SIP_XA_FORMTXTMIRROR
 {
-	Text [ en-US ] = "Fontwork mirror";
+	Text [ en-US ] = "Fontwork mirror" ;
 };
 
 String SIP_XA_FORMTXTOUTLINE
 {
-	Text [ en-US ] = "Fontwork outline";
+	Text [ en-US ] = "Fontwork outline" ;
 };
 
 String SIP_XA_FORMTXTSHADOW
 {
-	Text [ en-US ] = "Fontwork shadow";
+	Text [ en-US ] = "Fontwork shadow" ;
 };
 
 String SIP_XA_FORMTXTSHDWCOLOR
 {
-	Text [ en-US ] = "Fontwork shadow color";
+	Text [ en-US ] = "Fontwork shadow color" ;
 };
 
 String SIP_XA_FORMTXTSHDWXVAL
 {
-	Text [ en-US ] = "Fontwork shadow offset X";
+	Text [ en-US ] = "Fontwork shadow offset X" ;
 };
 
 String SIP_XA_FORMTXTSHDWYVAL
 {
-	Text [ en-US ] = "Fontwork shadow offset Y";
+	Text [ en-US ] = "Fontwork shadow offset Y" ;
 };
 
 String SIP_XA_FORMTXTHIDEFORM
 {
-	Text [ en-US ] = "Hide fontwork outline";
+	Text [ en-US ] = "Hide fontwork outline" ;
 };
 
 String SIP_XA_FORMTXTSHDWTRANSP
 {
-	Text [ en-US ] = "Fontwork shadow transparency";
+	Text [ en-US ] = "Fontwork shadow transparency" ;
 };
 
 String SIP_XA_FTRESERVED2
 {
-	Text [ en-US ] = "Fontwork reserved for 2";
+	Text [ en-US ] = "Fontwork reserved for 2" ;
 };
 
 String SIP_XA_FTRESERVED3
 {
-	Text [ en-US ] = "Fontwork reserved for 3";
+	Text [ en-US ] = "Fontwork reserved for 3" ;
 };
 
 String SIP_XA_FTRESERVED4
 {
-	Text [ en-US ] = "Fontwork reserved for 4";
+	Text [ en-US ] = "Fontwork reserved for 4" ;
 };
 
 String SIP_XA_FTRESERVED5
 {
-	Text [ en-US ] = "Fontwork reserved for 5";
+	Text [ en-US ] = "Fontwork reserved for 5" ;
 };
 
 String SIP_XA_FTRESERVED_LAST
 {
-	Text [ en-US ] = "Fontwork reserved for 6";
+	Text [ en-US ] = "Fontwork reserved for 6" ;
 };
 
 String SIP_SA_SHADOW
 {
-	Text [ en-US ] = "Shadow";
+	Text [ en-US ] = "Shadow" ;
 };
 
 String SIP_SA_SHADOWCOLOR
 {
-	Text [ en-US ] = "Shadow color";
+	Text [ en-US ] = "Shadow color" ;
 };
 
 String SIP_SA_SHADOWXDIST
 {
-	Text [ en-US ] = "Shadow spacing X";
+	Text [ en-US ] = "Shadow spacing X" ;
 };
 
 String SIP_SA_SHADOWYDIST
 {
-	Text [ en-US ] = "Shadow spacing Y";
+	Text [ en-US ] = "Shadow spacing Y" ;
 };
 
 String SIP_SA_SHADOWTRANSPARENCE
 {
-	Text [ en-US ] = "Shadow transparency";
+	Text [ en-US ] = "Shadow transparency" ;
 };
 
 String SIP_SA_SHADOW3D
 {
-	Text [ en-US ] = "3D shadow";
+	Text [ en-US ] = "3D shadow" ;
 };
 
 String SIP_SA_SHADOWPERSP
 {
-	Text [ en-US ] = "Perspective shadow";
+	Text [ en-US ] = "Perspective shadow" ;
 };
 
 String SIP_SA_CAPTIONTYPE
 {
-	Text [ en-US ] = "Type of legend";
+	Text [ en-US ] = "Type of legend" ;
 };
 
 String SIP_SA_CAPTIONFIXEDANGLE
 {
-	Text [ en-US ] = "Fixed legend angle";
+	Text [ en-US ] = "Fixed legend angle" ;
 };
 
 String SIP_SA_CAPTIONANGLE
 {
-	Text [ en-US ] = "Legend angle";
+	Text [ en-US ] = "Legend angle" ;
 };
 
 String SIP_SA_CAPTIONGAP
 {
-	Text [ en-US ] = "Legend lines spacing";
+	Text [ en-US ] = "Legend lines spacing" ;
 };
 
 String SIP_SA_CAPTIONESCDIR
 {
-	Text [ en-US ] = "Legend exit alignment";
+	Text [ en-US ] = "Legend exit alignment" ;
 };
 
 String SIP_SA_CAPTIONESCISREL
 {
-	Text [ en-US ] = "Relative exit legend";
+	Text [ en-US ] = "Relative exit legend" ;
 };
 
 String SIP_SA_CAPTIONESCREL
 {
-	Text [ en-US ] = "Relative exit legend";
+	Text [ en-US ] = "Relative exit legend" ;
 };
 
 String SIP_SA_CAPTIONESCABS
 {
-	Text [ en-US ] = "Absolute exit of legend";
+	Text [ en-US ] = "Absolute exit of legend" ;
 };
 
 String SIP_SA_CAPTIONLINELEN
 {
-	Text [ en-US ] = "Legend line length";
+	Text [ en-US ] = "Legend line length" ;
 };
 
 String SIP_SA_CAPTIONFITLINELEN
 {
-	Text [ en-US ] = "AutoLength of legend lines";
+	Text [ en-US ] = "AutoLength of legend lines" ;
 };
 
 String SIP_SA_ECKENRADIUS
 {
-	Text [ en-US ] = "Corner radius";
+	Text [ en-US ] = "Corner radius" ;
 };
 
 String SIP_SA_TEXT_MINFRAMEHEIGHT
 {
-	Text [ en-US ] = "Minimal frame height";
+	Text [ en-US ] = "Minimal frame height" ;
 };
 
 String SIP_SA_TEXT_AUTOGROWHEIGHT
 {
-	Text [ en-US ] = "AutoFit height";
+	Text [ en-US ] = "AutoFit height" ;
 };
 
 String SIP_SA_TEXT_FITTOSIZE
 {
-	Text [ en-US ] = "Fit text to frame";
+	Text [ en-US ] = "Fit text to frame" ;
 };
 
 String SIP_SA_TEXT_LEFTDIST
 {
-	Text [ en-US ] = "Left text frame spacing";
+	Text [ en-US ] = "Left text frame spacing" ;
 };
 
 String SIP_SA_TEXT_RIGHTDIST
 {
-	Text [ en-US ] = "Right text frame spacing";
+	Text [ en-US ] = "Right text frame spacing" ;
 };
 
 String SIP_SA_TEXT_UPPERDIST
 {
-	Text [ en-US ] = "Upper text frame spacing";
+	Text [ en-US ] = "Upper text frame spacing" ;
 };
 
 String SIP_SA_TEXT_LOWERDIST
 {
-	Text [ en-US ] = "Lower text frame spacing";
+	Text [ en-US ] = "Lower text frame spacing" ;
 };
 
 String SIP_SA_TEXT_VERTADJUST
 {
-	Text [ en-US ] = "Vertical text anchor";
+	Text [ en-US ] = "Vertical text anchor" ;
 };
 
 String SIP_SA_TEXT_MAXFRAMEHEIGHT
 {
-	Text [ en-US ] = "Maximal frame height";
+	Text [ en-US ] = "Maximal frame height" ;
 };
 
 String SIP_SA_TEXT_MINFRAMEWIDTH
 {
-	Text [ en-US ] = "Minimal frame width";
+	Text [ en-US ] = "Minimal frame width" ;
 };
 
 String SIP_SA_TEXT_MAXFRAMEWIDTH
 {
-	Text [ en-US ] = "Maximal frame width";
+	Text [ en-US ] = "Maximal frame width" ;
 };
 
 String SIP_SA_TEXT_AUTOGROWWIDTH
 {
-	Text [ en-US ] = "AutoFit width";
+	Text [ en-US ] = "AutoFit width" ;
 };
 
 String SIP_SA_TEXT_HORZADJUST
 {
-	Text [ en-US ] = "Horizontal text anchor";
+	Text [ en-US ] = "Horizontal text anchor" ;
 };
 
 String SIP_SA_TEXT_ANIKIND
 {
-	Text [ en-US ] = "Ticker";
+	Text [ en-US ] = "Ticker" ;
 };
 
 String SIP_SA_TEXT_ANIDIRECTION
 {
-	Text [ en-US ] = "Ticker direction";
+	Text [ en-US ] = "Ticker direction" ;
 };
 
 String SIP_SA_TEXT_ANISTARTINSIDE
 {
-	Text [ en-US ] = "Ticker start inside";
+	Text [ en-US ] = "Ticker start inside" ;
 };
 
 String SIP_SA_TEXT_ANISTOPINSIDE
 {
-	Text [ en-US ] = "Ticker stop inside";
+	Text [ en-US ] = "Ticker stop inside" ;
 };
 
 String SIP_SA_TEXT_ANICOUNT
 {
-	Text [ en-US ] = "Number of ticker runs";
+	Text [ en-US ] = "Number of ticker runs" ;
 };
 
 String SIP_SA_TEXT_ANIDELAY
 {
-	Text [ en-US ] = "Speed of ticker";
+	Text [ en-US ] = "Speed of ticker" ;
 };
 
 String SIP_SA_TEXT_ANIAMOUNT
 {
-	Text [ en-US ] = "Ticker step size";
+	Text [ en-US ] = "Ticker step size" ;
 };
 
 String SIP_SA_TEXT_CONTOURFRAME
 {
-	Text [ en-US ] = "Outline text flow";
+	Text [ en-US ] = "Outline text flow" ;
 };
 
 String SIP_SA_CUSTOMSHAPE_ADJUSTMENT
 {
-	Text[ en-US ] = "Shape Adjustment";
+	Text[ en-US ] = "Shape Adjustment" ;
 };
 
 String SIP_SA_XMLATTRIBUTES
 {
-	Text [ en-US ] = "User-defined attributes";
+	Text [ en-US ] = "User-defined attributes" ;
 };
 
 String SIP_SA_TEXT_USEFIXEDCELLHEIGHT
 {
-	Text [ en-US ] = "Use font-independent line spacing";	
+	Text [ en-US ] = "Use font-independent line spacing" ;
 };
 
 String SIP_SA_WORDWRAP
 {
-	Text[ en-US ] = "Word wrap text in shape";
+	Text[ en-US ] = "Word wrap text in shape" ;
 };
 
 String SIP_SA_AUTOGROWSIZE
 {
-	Text[ en-US ] = "Auto grow shape to fit text";
+	Text[ en-US ] = "Auto grow shape to fit text" ;
 };
 
 String SIP_SA_RESERVE18
 {
-	Text [ en-US ] = "SvDraw reserved for 18";
+	Text [ en-US ] = "SvDraw reserved for 18" ;
 };
 
 String SIP_SA_RESERVE19
 {
-	Text [ en-US ] = "SvDraw reserved for 19";
+	Text [ en-US ] = "SvDraw reserved for 19" ;
 };
 
 String SIP_SA_EDGEKIND
 {
-	Text [ en-US ] = "Type of connector";
+	Text [ en-US ] = "Type of connector" ;
 };
 
 String SIP_SA_EDGENODE1HORZDIST
 {
-	Text [ en-US ] = "Horz. spacing object 1";
+	Text [ en-US ] = "Horz. spacing object 1" ;
 };
 
 String SIP_SA_EDGENODE1VERTDIST
 {
-	Text [ en-US ] = "Vert. spacing object 1";
+	Text [ en-US ] = "Vert. spacing object 1" ;
 };
 
 String SIP_SA_EDGENODE2HORZDIST
 {
-	Text [ en-US ] = "Horz. spacing object 2";
+	Text [ en-US ] = "Horz. spacing object 2" ;
 };
 
 String SIP_SA_EDGENODE2VERTDIST
 {
-	Text [ en-US ] = "Vert. spacing object 2";
+	Text [ en-US ] = "Vert. spacing object 2" ;
 };
 
 String SIP_SA_EDGENODE1GLUEDIST
 {
-	Text [ en-US ] = "Glue spacing object 1";
+	Text [ en-US ] = "Glue spacing object 1" ;
 };
 
 String SIP_SA_EDGENODE2GLUEDIST
 {
-	Text [ en-US ] = "Glue spacing object 2";
+	Text [ en-US ] = "Glue spacing object 2" ;
 };
 
 String SIP_SA_EDGELINEDELTAANZ
 {
-	Text [ en-US ] = "Number of movable lines";
+	Text [ en-US ] = "Number of movable lines" ;
 };
 
 String SIP_SA_EDGELINE1DELTA
 {
-	Text [ en-US ] = "Offset line 1";
+	Text [ en-US ] = "Offset line 1" ;
 };
 
 String SIP_SA_EDGELINE2DELTA
 {
-	Text [ en-US ] = "Offset line 2";
+	Text [ en-US ] = "Offset line 2" ;
 };
 
 String SIP_SA_EDGELINE3DELTA
 {
-	Text [ en-US ] = "Offset line 3";
+	Text [ en-US ] = "Offset line 3" ;
 };
 
 String SIP_SA_MEASUREKIND
 {
-	Text [ en-US ] = "Type of dimensioning";
+	Text [ en-US ] = "Type of dimensioning" ;
 };
 
 String SIP_SA_MEASURETEXTHPOS
 {
-	Text [ en-US ] = "Dimension value - horizontal position";
+	Text [ en-US ] = "Dimension value - horizontal position" ;
 };
 
 String SIP_SA_MEASURETEXTVPOS
 {
-	Text [ en-US ] = "Dimension value - vertical position";
+	Text [ en-US ] = "Dimension value - vertical position" ;
 };
 
 String SIP_SA_MEASURELINEDIST
 {
-	Text [ en-US ] = "Dimension line space";
+	Text [ en-US ] = "Dimension line space" ;
 };
 
 String SIP_SA_MEASUREHELPLINEOVERHANG
 {
-	Text [ en-US ] = "Dimension help line overhang";
+	Text [ en-US ] = "Dimension help line overhang" ;
 };
 
 String SIP_SA_MEASUREHELPLINEDIST
 {
-	Text [ en-US ] = "Dimension help line spacing";
+	Text [ en-US ] = "Dimension help line spacing" ;
 };
 
 String SIP_SA_MEASUREHELPLINE1LEN
 {
-	Text [ en-US ] = "Backlog of dimension help line 1";
+	Text [ en-US ] = "Backlog of dimension help line 1" ;
 };
 
 String SIP_SA_MEASUREHELPLINE2LEN
 {
-	Text [ en-US ] = "Backlog of dimension help line 2";
+	Text [ en-US ] = "Backlog of dimension help line 2" ;
 };
 
 String SIP_SA_MEASUREBELOWREFEDGE
 {
-	Text [ en-US ] = "Lower edge dimensioning";
+	Text [ en-US ] = "Lower edge dimensioning" ;
 };
 
 String SIP_SA_MEASURETEXTROTA90
 {
-	Text [ en-US ] = "Dimension value across dimension line";
+	Text [ en-US ] = "Dimension value across dimension line" ;
 };
 
 String SIP_SA_MEASURETEXTUPSIDEDOWN
 {
-	Text [ en-US ] = "Rotate dimension value by 180 degree";
+	Text [ en-US ] = "Rotate dimension value by 180 degree" ;
 };
 
 String SIP_SA_MEASUREOVERHANG
 {
-	Text [ en-US ] = "Dimension line overhang";
+	Text [ en-US ] = "Dimension line overhang" ;
 };
 
 String SIP_SA_MEASUREUNIT
 {
-	Text [ en-US ] = "Measure unit";
+	Text [ en-US ] = "Measure unit" ;
 };
 
 String SIP_SA_MEASURESCALE
 {
-	Text [ en-US ] = "Additional scale factor";
+	Text [ en-US ] = "Additional scale factor" ;
 };
 
 String SIP_SA_MEASURESHOWUNIT
 {
-	Text [ en-US ] = "Measure unit display";
+	Text [ en-US ] = "Measure unit display" ;
 };
 
 String SIP_SA_MEASUREFORMATSTRING
 {
-	Text [ en-US ] = "Dimension value format";
+	Text [ en-US ] = "Dimension value format" ;
 };
 
 String SIP_SA_MEASURETEXTAUTOANGLE
 {
-	Text [ en-US ] = "AutoPositioning of the dimension value";
+	Text [ en-US ] = "AutoPositioning of the dimension value" ;
 };
 
 String SIP_SA_MEASURETEXTAUTOANGLEVIEW
 {
-	Text [ en-US ] = "Angle for the automatic positioning of the dimension value";
+	Text [ en-US ] = "Angle for the automatic positioning of the dimension value" ;
 };
 
 String SIP_SA_MEASURETEXTISFIXEDANGLE
 {
-	Text [ en-US ] = "Determination of the dimension value angle";
+	Text [ en-US ] = "Determination of the dimension value angle" ;
 };
 
 String SIP_SA_MEASURETEXTFIXEDANGLE
 {
-	Text [ en-US ] = "Angle of the dimension value";
+	Text [ en-US ] = "Angle of the dimension value" ;
 };
 
 String SIP_SA_MEASUREDECIMALPLACES
 {
-	Text [ en-US ] = "Decimal places";
+	Text [ en-US ] = "Decimal places" ;
 };
 
 String SIP_SA_MEASURERESERVE05
 {
-	Text [ en-US ] = "Dimensioning reserved for 5";
+	Text [ en-US ] = "Dimensioning reserved for 5" ;
 };
 
 String SIP_SA_MEASURERESERVE06
 {
-	Text [ en-US ] = "Dimensioning reserved for 6";
+	Text [ en-US ] = "Dimensioning reserved for 6" ;
 };
 
 String SIP_SA_MEASURERESERVE07
 {
-	Text [ en-US ] = "Dimensioning reserved for 7";
+	Text [ en-US ] = "Dimensioning reserved for 7" ;
 };
 
 String SIP_SA_CIRCKIND
 {
-	Text [ en-US ] = "Type of circle";
+	Text [ en-US ] = "Type of circle" ;
 };
 
 String SIP_SA_CIRCSTARTANGLE
 {
-	Text [ en-US ] = "Start angle";
+	Text [ en-US ] = "Start angle" ;
 };
 
 String SIP_SA_CIRCENDANGLE
 {
-	Text [ en-US ] = "End angle";
+	Text [ en-US ] = "End angle" ;
 };
 
 String SIP_SA_CIRCRESERVE0
 {
-	Text [ en-US ] = "Circle reserved for 0";
+	Text [ en-US ] = "Circle reserved for 0" ;
 };
 
 String SIP_SA_CIRCRESERVE1
 {
-	Text [ en-US ] = "Circle reserved for 1";
+	Text [ en-US ] = "Circle reserved for 1" ;
 };
 
 String SIP_SA_CIRCRESERVE2
 {
-	Text [ en-US ] = "Circle reserved for 2";
+	Text [ en-US ] = "Circle reserved for 2" ;
 };
 
 String SIP_SA_CIRCRESERVE3
 {
-	Text [ en-US ] = "Circle reserved for 3";
+	Text [ en-US ] = "Circle reserved for 3" ;
 };
 
 String SIP_SA_OBJMOVEPROTECT
 {
-	Text [ en-US ] = "Protected object position";
+	Text [ en-US ] = "Protected object position" ;
 };
 
 String SIP_SA_OBJSIZEPROTECT
 {
-	Text [ en-US ] = "Protected object size";
+	Text [ en-US ] = "Protected object size" ;
 };
 
 String SIP_SA_OBJPRINTABLE
 {
-	Text [ en-US ] = "Object, printable";
+	Text [ en-US ] = "Object, printable" ;
 };
 
 String SIP_SA_OBJVISIBLE
 {
-	Text [ en-US ] = "Object, visible";
+	Text [ en-US ] = "Object, visible" ;
 };
 
 String SIP_SA_LAYERID
 {
-	Text [ en-US ] = "Level ID";
+	Text [ en-US ] = "Level ID" ;
 };
 
 String SIP_SA_LAYERNAME
 {
-	Text [ en-US ] = "Layer";
+	Text [ en-US ] = "Layer" ;
 };
 
 String SIP_SA_OBJECTNAME
 {
-	Text [ en-US ] = "Object name";
+	Text [ en-US ] = "Object name" ;
 };
 
 String SIP_SA_ALLPOSITIONX
 {
-	Text [ en-US ] = "Position X, complete";
+	Text [ en-US ] = "Position X, complete" ;
 };
 
 String SIP_SA_ALLPOSITIONY
 {
-	Text [ en-US ] = "Position Y, complete";
+	Text [ en-US ] = "Position Y, complete" ;
 };
 
 String SIP_SA_ALLSIZEWIDTH
 {
-	Text [ en-US ] = "Total Width";
+	Text [ en-US ] = "Total Width" ;
 };
 
 String SIP_SA_ALLSIZEHEIGHT
 {
-	Text [ en-US ] = "Height, complete";
+	Text [ en-US ] = "Height, complete" ;
 };
 
 String SIP_SA_ONEPOSITIONX
 {
-	Text [ en-US ] = "Single position X";
+	Text [ en-US ] = "Single position X" ;
 };
 
 String SIP_SA_ONEPOSITIONY
 {
-	Text [ en-US ] = "Single position Y";
+	Text [ en-US ] = "Single position Y" ;
 };
 
 String SIP_SA_ONESIZEWIDTH
 {
-	Text [ en-US ] = "Single width";
+	Text [ en-US ] = "Single width" ;
 };
 
 String SIP_SA_ONESIZEHEIGHT
 {
-	Text [ en-US ] = "Single height";
+	Text [ en-US ] = "Single height" ;
 };
 
 String SIP_SA_LOGICSIZEWIDTH
 {
-	Text [ en-US ] = "Logical width";
+	Text [ en-US ] = "Logical width" ;
 };
 
 String SIP_SA_LOGICSIZEHEIGHT
 {
-	Text [ en-US ] = "Logical height";
+	Text [ en-US ] = "Logical height" ;
 };
 
 String SIP_SA_ROTATEANGLE
 {
-	Text [ en-US ] = "Single rotation angle";
+	Text [ en-US ] = "Single rotation angle" ;
 };
 
 String SIP_SA_SHEARANGLE
 {
-	Text [ en-US ] = "Single shear angle";
+	Text [ en-US ] = "Single shear angle" ;
 };
 
 String SIP_SA_MOVEX
 {
-	Text [ en-US ] = "Move horizontally";
+	Text [ en-US ] = "Move horizontally" ;
 };
 
 String SIP_SA_MOVEY
 {
-	Text [ en-US ] = "Move vertically";
+	Text [ en-US ] = "Move vertically" ;
 };
 
 String SIP_SA_RESIZEXONE
 {
-	Text [ en-US ] = "Resize X, single";
+	Text [ en-US ] = "Resize X, single" ;
 };
 
 String SIP_SA_RESIZEYONE
 {
-	Text [ en-US ] = "Resize Y, single";
+	Text [ en-US ] = "Resize Y, single" ;
 };
 
 String SIP_SA_ROTATEONE
 {
-	Text [ en-US ] = "Single rotation";
+	Text [ en-US ] = "Single rotation" ;
 };
 
 String SIP_SA_HORZSHEARONE
 {
-	Text [ en-US ] = "Single horizontal shear";
+	Text [ en-US ] = "Single horizontal shear" ;
 };
 
 String SIP_SA_VERTSHEARONE
 {
-	Text [ en-US ] = "Single vertical shear";
+	Text [ en-US ] = "Single vertical shear" ;
 };
 
 String SIP_SA_RESIZEXALL
 {
-	Text [ en-US ] = "Resize X, complete";
+	Text [ en-US ] = "Resize X, complete" ;
 };
 
 String SIP_SA_RESIZEYALL
 {
-	Text [ en-US ] = "Resize Y, complete";
+	Text [ en-US ] = "Resize Y, complete" ;
 };
 
 String SIP_SA_ROTATEALL
 {
-	Text [ en-US ] = "Rotate all";
+	Text [ en-US ] = "Rotate all" ;
 };
 
 String SIP_SA_HORZSHEARALL
 {
-	Text [ en-US ] = "Shear horizontal, complete";
+	Text [ en-US ] = "Shear horizontal, complete" ;
 };
 
 String SIP_SA_VERTSHEARALL
 {
-	Text [ en-US ] = "Shear vertical, complete";
+	Text [ en-US ] = "Shear vertical, complete" ;
 };
 
 String SIP_SA_TRANSFORMREF1X
 {
-	Text [ en-US ] = "Reference point 1 X";
+	Text [ en-US ] = "Reference point 1 X" ;
 };
 
 String SIP_SA_TRANSFORMREF1Y
 {
-	Text [ en-US ] = "Reference point 1 Y";
+	Text [ en-US ] = "Reference point 1 Y" ;
 };
 
 String SIP_SA_TRANSFORMREF2X
 {
-	Text [ en-US ] = "Reference point 2 X";
+	Text [ en-US ] = "Reference point 2 X" ;
 };
 
 String SIP_SA_TRANSFORMREF2Y
 {
-	Text [ en-US ] = "Reference point 2 Y";
+	Text [ en-US ] = "Reference point 2 Y" ;
 };
 
 String SIP_EE_PARA_HYPHENATE
 {
-	Text [ en-US ] = "Hyphenation";
+	Text [ en-US ] = "Hyphenation" ;
 };
 
 String SIP_EE_PARA_BULLETSTATE
 {
-	Text [ en-US ] = "Display bullets";
+	Text [ en-US ] = "Display bullets" ;
 };
 
 String SIP_EE_PARA_OUTLLRSPACE
 {
-	Text [ en-US ] = "Numbering indents";
+	Text [ en-US ] = "Numbering indents" ;
 };
 
 String SIP_EE_PARA_OUTLLEVEL
 {
-	Text [ en-US ] = "Numbering level";
+	Text [ en-US ] = "Numbering level" ;
 };
 
 String SIP_EE_PARA_BULLET
 {
-	Text [ en-US ] = "Bullets and Numberings";
+	Text [ en-US ] = "Bullets and Numberings" ;
 };
 
 String SIP_EE_PARA_LRSPACE
 {
-	Text [ en-US ] = "Indents";
+	Text [ en-US ] = "Indents" ;
 };
 
 String SIP_EE_PARA_ULSPACE
 {
-	Text [ en-US ] = "Paragraph spacing";
+	Text [ en-US ] = "Paragraph spacing" ;
 };
 
 String SIP_EE_PARA_SBL
 {
-	Text [ en-US ] = "Line spacing";
+	Text [ en-US ] = "Line spacing" ;
 };
 
 String SIP_EE_PARA_JUST
 {
-	Text [ en-US ] = "Paragraph alignment";
+	Text [ en-US ] = "Paragraph alignment" ;
 };
 
 String SIP_EE_PARA_TABS
 {
-	Text [ en-US ] = "Tabulators";
+	Text [ en-US ] = "Tabulators" ;
 };
 
 String SIP_EE_CHAR_COLOR
 {
-	Text [ en-US ] = "Font color";
+	Text [ en-US ] = "Font color" ;
 };
 
 String SIP_EE_CHAR_FONTINFO
 {
-	Text [ en-US ] = "Character set";
+	Text [ en-US ] = "Character set" ;
 };
 
 String SIP_EE_CHAR_FONTHEIGHT
 {
-	Text [ en-US ] = "Font size";
+	Text [ en-US ] = "Font size" ;
 };
 
 String SIP_EE_CHAR_FONTWIDTH
 {
-	Text [ en-US ] = "Font width";
+	Text [ en-US ] = "Font width" ;
 };
 
 String SIP_EE_CHAR_WEIGHT
 {
-	Text [ en-US ] = "Bold (thickness)";
+	Text [ en-US ] = "Bold (thickness)" ;
 };
 
 String SIP_EE_CHAR_UNDERLINE
 {
-	Text [ en-US ] = "Underline";
+	Text [ en-US ] = "Underline" ;
 };
 
 String SIP_EE_CHAR_OVERLINE
 {
-	Text [ en-US ] = "Overline";
+	Text [ en-US ] = "Overline" ;
 };
 
 String SIP_EE_CHAR_STRIKEOUT
 {
-	Text [ en-US ] = "Strikethrough";
+	Text [ en-US ] = "Strikethrough" ;
 };
 
 String SIP_EE_CHAR_ITALIC
 {
-	Text [ en-US ] = "Italic";
+	Text [ en-US ] = "Italic" ;
 };
 
 String SIP_EE_CHAR_OUTLINE
 {
-	Text [ en-US ] = "Outline";
+	Text [ en-US ] = "Outline" ;
 };
 
 String SIP_EE_CHAR_SHADOW
 {
-	Text [ en-US ] = "Font shadow";
+	Text [ en-US ] = "Font shadow" ;
 };
 
 String SIP_EE_CHAR_ESCAPEMENT
 {
-	Text [ en-US ] = "Superscript/subscript";
+	Text [ en-US ] = "Superscript/subscript" ;
 };
 
 String SIP_EE_CHAR_PAIRKERNING
 {
-	Text [ en-US ] = "Kerning";
+	Text [ en-US ] = "Kerning" ;
 };
 
 String SIP_EE_CHAR_KERNING
 {
-	Text [ en-US ] = "Manual kerning";
+	Text [ en-US ] = "Manual kerning" ;
 };
 
 String SIP_EE_CHAR_WLM
 {
-	Text [ en-US ] = "No underline for spaces";
+	Text [ en-US ] = "No underline for spaces" ;
 };
 
 String SIP_EE_FEATURE_TAB
 {
-	Text [ en-US ] = "Tabulator";
+	Text [ en-US ] = "Tabulator" ;
 };
 
 String SIP_EE_FEATURE_LINEBR
 {
-	Text [ en-US ] = "Optional line break";
+	Text [ en-US ] = "Optional line break" ;
 };
 
 String SIP_EE_FEATURE_NOTCONV
 {
-	Text [ en-US ] = "Non-convertible character";
+	Text [ en-US ] = "Non-convertible character" ;
 };
 
 String SIP_EE_FEATURE_FIELD
 {
-	Text [ en-US ] = "Fields";
+	Text [ en-US ] = "Fields" ;
 };
 
 String SIP_SA_GRAFRED
 {
-	Text [ en-US ] = "Red";
+	Text [ en-US ] = "Red" ;
 };
 String SIP_SA_GRAFGREEN
 {
-	Text [ en-US ] = "Green";
+	Text [ en-US ] = "Green" ;
 };
 String SIP_SA_GRAFBLUE
 {
-	Text [ en-US ] = "Blue";
+	Text [ en-US ] = "Blue" ;
 };
 String SIP_SA_GRAFLUMINANCE
 {
-	Text [ en-US ] = "Brightness";
+	Text [ en-US ] = "Brightness" ;
 };
 String SIP_SA_GRAFCONTRAST
 {
-	Text [ en-US ] = "Contrast";
+	Text [ en-US ] = "Contrast" ;
 };
 String SIP_SA_GRAFGAMMA
 {
-	Text [ en-US ] = "Gamma";
+	Text [ en-US ] = "Gamma" ;
 };
 String SIP_SA_GRAFTRANSPARENCE
 {
-	Text [ en-US ] = "Transparency";
+	Text [ en-US ] = "Transparency" ;
 };
 String SIP_SA_GRAFINVERT
 {
-	Text [ en-US ] = "Invert";
+	Text [ en-US ] = "Invert" ;
 };
 String SIP_SA_GRAFMODE
 {
-	Text [ en-US ] = "Graphics mode";
+	Text [ en-US ] = "Graphics mode" ;
 };
 String SIP_SA_GRAFCROP
 {
-	Text [ en-US ] = "Crop";
+	Text [ en-US ] = "Crop" ;
 
 };
-String SIP_SA_GRAFRESERVE3 { Text = "" ; };
-String SIP_SA_GRAFRESERVE4 { Text = "" ; };
-String SIP_SA_GRAFRESERVE5 { Text = "" ; };
-String SIP_SA_GRAFRESERVE6 { Text = "" ; };
+String SIP_SA_GRAFRESERVE3 { Text = "" ; } ;
+String SIP_SA_GRAFRESERVE4 { Text = "" ; } ;
+String SIP_SA_GRAFRESERVE5 { Text = "" ; } ;
+String SIP_SA_GRAFRESERVE6 { Text = "" ; } ;
 
 Bitmap SIP_SA_PAGESHADOW35X35
 {
-	File = "pageshadow35x35.png";
+	File = "pageshadow35x35.png" ;
 };
 
 Bitmap SIP_SA_MARKERS
 {
-	File = "markers.png";
+	File = "markers.png" ;
 };
 
 Bitmap SIP_SA_FINE_MARKERS
 {
-	File = "markers2.png";
+	File = "markers2.png" ;
 };
 
 // #100499#
@@ -2775,7 +2767,7 @@ Bitmap BMP_SVXOLEOBJ
 // #101928#
 Bitmap SIP_SA_ACCESSIBILITY_MARKERS
 {
-	File = "markersACC.png";
+	File = "markersACC.png" ;
 };
 
 String STR_ObjNameSingulMEDIA
@@ -2848,36 +2840,36 @@ String STR_TABLE_STYLE_SETTINGS
 
 String STR_ObjNameSingulTable
 {
-	Text [ en-US ] = "Table";
+	Text [ en-US ] = "Table" ;
 };
 String STR_ObjNamePluralTable
 {
-	Text [ en-US ] = "Tables";
+	Text [ en-US ] = "Tables" ;
 };
 
 Bitmap SIP_SA_CROP_MARKERS
 {
-	File = "cropmarkers.png";
+	File = "cropmarkers.png" ;
 };
 
 Bitmap SIP_SA_CROP_FINE_MARKERS
 {
-	File = "cropmarkers2.png";
+	File = "cropmarkers2.png" ;
 };
 
 Bitmap SIP_SA_ACCESSIBILITY_CROP_MARKERS
 {
-	File = "cropmarkersACC.png";
+	File = "cropmarkersACC.png" ;
 };
 
 // DialControl bitmaps
 Bitmap IMG_DIACONTROL_NORMAL
 {
-    File = "rotation.png";
+	File = "rotation.png" ;
 };
 Bitmap IMG_DIACONTROL_H
 {
-    File = "rotation_h.png";
+	File = "rotation_h.png" ;
 };
 
 String STR_ObjNameSingulFONTWORK
@@ -2889,3 +2881,4 @@ String STR_ObjNamePluralFONTWORK
 	Text [ en-US ] = "font works" ;
 };
 
+// ********************************************************************** EOF

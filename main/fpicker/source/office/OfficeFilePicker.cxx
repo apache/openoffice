@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -61,17 +61,17 @@
 
 // define ----------------------------------------------------------------
 
-#define MAKE_ANY    ::com::sun::star::uno::makeAny
+#define MAKE_ANY	::com::sun::star::uno::makeAny
 
 // using ----------------------------------------------------------------
 
-using namespace     ::com::sun::star::container;
-using namespace     ::com::sun::star::lang;
-using namespace     ::com::sun::star::ui::dialogs;
-using namespace     ::com::sun::star::uno;
-using namespace     ::com::sun::star::beans;
-using namespace     ::com::sun::star::awt;
-using namespace     ::utl;
+using namespace		::com::sun::star::container;
+using namespace		::com::sun::star::lang;
+using namespace		::com::sun::star::ui::dialogs;
+using namespace		::com::sun::star::uno;
+using namespace		::com::sun::star::beans;
+using namespace		::com::sun::star::awt;
+using namespace		::utl;
 
 //=====================================================================
 
@@ -139,29 +139,29 @@ struct ElementEntry_Impl
 {
 	sal_Int16		m_nElementID;
 	sal_Int16		m_nControlAction;
-	Any			m_aValue;
-	rtl::OUString		m_aLabel;
-    sal_Bool        m_bEnabled      : 1;
+	Any				m_aValue;
+	rtl::OUString	m_aLabel;
+	sal_Bool		m_bEnabled		: 1;
 
-    sal_Bool        m_bHasValue     : 1;
-    sal_Bool        m_bHasLabel     : 1;
-    sal_Bool        m_bHasEnabled   : 1;
+	sal_Bool		m_bHasValue		: 1;
+	sal_Bool		m_bHasLabel		: 1;
+	sal_Bool		m_bHasEnabled	: 1;
 
-                    ElementEntry_Impl( sal_Int16 nId );
+					ElementEntry_Impl( sal_Int16 nId );
 
-    void            setValue( const Any& rVal ) { m_aValue = rVal; m_bHasValue = sal_True; }
-    void            setAction( sal_Int16 nAction ) { m_nControlAction = nAction; }
-    void            setLabel( const rtl::OUString& rVal ) { m_aLabel = rVal; m_bHasLabel = sal_True; }
-    void            setEnabled( sal_Bool bEnabled ) { m_bEnabled = bEnabled; m_bHasEnabled = sal_True; }
+	void			setValue( const Any& rVal ) { m_aValue = rVal; m_bHasValue = sal_True; }
+	void			setAction( sal_Int16 nAction ) { m_nControlAction = nAction; }
+	void			setLabel( const rtl::OUString& rVal ) { m_aLabel = rVal; m_bHasLabel = sal_True; }
+	void			setEnabled( sal_Bool bEnabled ) { m_bEnabled = bEnabled; m_bHasEnabled = sal_True; }
 };
 
 ElementEntry_Impl::ElementEntry_Impl( sal_Int16 nId )
-    : m_nElementID( nId )
-    , m_nControlAction( 0 )
-    , m_bEnabled( sal_False )
-    , m_bHasValue( sal_False )
-    , m_bHasLabel( sal_False )
-    , m_bHasEnabled( sal_False )
+	: m_nElementID( nId )
+	, m_nControlAction( 0 )
+	, m_bEnabled( sal_False )
+	, m_bHasValue( sal_False )
+	, m_bHasLabel( sal_False )
+	, m_bHasEnabled( sal_False )
 {}
 
 //------------------------------------------------------------------------------------
@@ -201,69 +201,69 @@ void SvtFilePicker::prepareExecute()
 	}
 	else
 	{
-		// Default-Standard-Dir setzen
+		// set default-standard-dir
 		INetURLObject aStdDirObj( SvtPathOptions().GetWorkPath() );
 		getDialog()->SetPath( aStdDirObj.GetMainURL( INetURLObject::NO_DECODE ) );
 	}
 
 	// set the control values and set the control labels, too
-    if ( m_pElemList && !m_pElemList->empty() )
-    {
+	if ( m_pElemList && !m_pElemList->empty() )
+	{
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
 
-        ElementList::iterator aListIter;
+		ElementList::iterator aListIter;
 		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( rEntry.m_bHasValue )
+			if ( rEntry.m_bHasValue )
 				aAccess.setValue( rEntry.m_nElementID, rEntry.m_nControlAction, rEntry.m_aValue );
-            if ( rEntry.m_bHasLabel )
+			if ( rEntry.m_bHasLabel )
 				aAccess.setLabel( rEntry.m_nElementID, rEntry.m_aLabel );
-            if ( rEntry.m_bHasEnabled )
+			if ( rEntry.m_bHasEnabled )
 				aAccess.enableControl( rEntry.m_nElementID, rEntry.m_bEnabled );
 		}
 
-        getDialog()->updateListboxLabelSizes();
-    }
+		getDialog()->updateListboxLabelSizes();
+	}
 
-    if ( m_pFilterList && !m_pFilterList->empty() )
-    {
-        for (   FilterList::iterator aListIter = m_pFilterList->begin();
-                aListIter != m_pFilterList->end();
-                ++aListIter
-            )
-        {
-            if ( aListIter->hasSubFilters() )
-            {   // it's a filter group
-                UnoFilterList aSubFilters;
-                aListIter->getSubFilters( aSubFilters );
+	if ( m_pFilterList && !m_pFilterList->empty() )
+	{
+		for (   FilterList::iterator aListIter = m_pFilterList->begin();
+				aListIter != m_pFilterList->end();
+				++aListIter
+			)
+		{
+			if ( aListIter->hasSubFilters() )
+			{   // it's a filter group
+				UnoFilterList aSubFilters;
+				aListIter->getSubFilters( aSubFilters );
 
-                getDialog()->AddFilterGroup( aListIter->getTitle(), aSubFilters );
-             }
-            else
-                // it's a single filter
-                getDialog()->AddFilter( aListIter->getTitle(), aListIter->getFilter() );
-        }
-    }
+				getDialog()->AddFilterGroup( aListIter->getTitle(), aSubFilters );
+			}
+			else
+				// it's a single filter
+				getDialog()->AddFilter( aListIter->getTitle(), aListIter->getFilter() );
+		}
+	}
 
-    // set the default filter
-    if ( m_aCurrentFilter.getLength() > 0 )
-        getDialog()->SetCurFilter( m_aCurrentFilter );
+	// set the default filter
+	if ( m_aCurrentFilter.getLength() > 0 )
+		getDialog()->SetCurFilter( m_aCurrentFilter );
 
 }
 
 //-----------------------------------------------------------------------------
 IMPL_LINK( SvtFilePicker, DialogClosedHdl, Dialog*, pDlg )
 {
-    if ( m_xDlgClosedListener.is() )
-    {
-        sal_Int16 nRet = static_cast< sal_Int16 >( pDlg->GetResult() );
-        ::com::sun::star::ui::dialogs::DialogClosedEvent aEvent( *this, nRet );
-        m_xDlgClosedListener->dialogClosed( aEvent );
-        m_xDlgClosedListener.clear();
-    }
-    return 0;
+	if ( m_xDlgClosedListener.is() )
+	{
+		sal_Int16 nRet = static_cast< sal_Int16 >( pDlg->GetResult() );
+		::com::sun::star::ui::dialogs::DialogClosedEvent aEvent( *this, nRet );
+		m_xDlgClosedListener->dialogClosed( aEvent );
+		m_xDlgClosedListener.clear();
+	}
+	return 0;
 }
 
 //------------------------------------------------------------------------------------
@@ -275,10 +275,10 @@ WinBits SvtFilePicker::getWinBits( WinBits& rExtraBits )
 {
 	// set the winbits for creating the filedialog
 	WinBits nBits = 0L;
-    rExtraBits = 0L;
+	rExtraBits = 0L;
 
 	// set the standard bits according to the service name
-    if ( m_nServiceType == TemplateDescription::FILEOPEN_SIMPLE )
+	if ( m_nServiceType == TemplateDescription::FILEOPEN_SIMPLE )
 	{
 		nBits = WB_OPEN;
 	}
@@ -289,48 +289,48 @@ WinBits SvtFilePicker::getWinBits( WinBits& rExtraBits )
 	else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION )
 	{
 		nBits = WB_SAVEAS;
-        rExtraBits = SFX_EXTRA_AUTOEXTENSION;
+		rExtraBits = SFX_EXTRA_AUTOEXTENSION;
 	}
 	else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_PASSWORD )
 	{
 		nBits = WB_SAVEAS | SFXWB_PASSWORD;
-        rExtraBits = SFX_EXTRA_AUTOEXTENSION;
+		rExtraBits = SFX_EXTRA_AUTOEXTENSION;
 	}
-    else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_PASSWORD_FILTEROPTIONS )
+	else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_PASSWORD_FILTEROPTIONS )
 	{
 		nBits = WB_SAVEAS | SFXWB_PASSWORD;
-        rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_FILTEROPTIONS;
+		rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_FILTEROPTIONS;
 	}
-    else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_TEMPLATE )
+	else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_TEMPLATE )
 	{
 		nBits = WB_SAVEAS;
-        rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_TEMPLATES;
+		rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_TEMPLATES;
 	}
-    else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_SELECTION )
+	else if ( m_nServiceType == TemplateDescription::FILESAVE_AUTOEXTENSION_SELECTION )
 	{
 		nBits = WB_SAVEAS;
-        rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_SELECTION;
-    }
+		rExtraBits = SFX_EXTRA_AUTOEXTENSION | SFX_EXTRA_SELECTION;
+	}
 
-    else if ( m_nServiceType == TemplateDescription::FILEOPEN_LINK_PREVIEW_IMAGE_TEMPLATE )
+	else if ( m_nServiceType == TemplateDescription::FILEOPEN_LINK_PREVIEW_IMAGE_TEMPLATE )
 	{
 		nBits = WB_OPEN;
-        rExtraBits = SFX_EXTRA_INSERTASLINK | SFX_EXTRA_SHOWPREVIEW | SFX_EXTRA_IMAGE_TEMPLATE;
+		rExtraBits = SFX_EXTRA_INSERTASLINK | SFX_EXTRA_SHOWPREVIEW | SFX_EXTRA_IMAGE_TEMPLATE;
 	}
-    else if ( m_nServiceType == TemplateDescription::FILEOPEN_PLAY )
+	else if ( m_nServiceType == TemplateDescription::FILEOPEN_PLAY )
 	{
 		nBits = WB_OPEN;
-        rExtraBits = SFX_EXTRA_PLAYBUTTON;
-    }
-    else if ( m_nServiceType == TemplateDescription::FILEOPEN_READONLY_VERSION )
+		rExtraBits = SFX_EXTRA_PLAYBUTTON;
+	}
+	else if ( m_nServiceType == TemplateDescription::FILEOPEN_READONLY_VERSION )
 	{
 		nBits = WB_OPEN | SFXWB_READONLY;
-        rExtraBits = SFX_EXTRA_SHOWVERSIONS;
+		rExtraBits = SFX_EXTRA_SHOWVERSIONS;
 	}
-    else if ( m_nServiceType == TemplateDescription::FILEOPEN_LINK_PREVIEW )
+	else if ( m_nServiceType == TemplateDescription::FILEOPEN_LINK_PREVIEW )
 	{
 		nBits = WB_OPEN;
-        rExtraBits = SFX_EXTRA_INSERTASLINK | SFX_EXTRA_SHOWPREVIEW;
+		rExtraBits = SFX_EXTRA_INSERTASLINK | SFX_EXTRA_SHOWPREVIEW;
 	}
 	if ( m_bMultiSelection && ( ( nBits & WB_OPEN ) == WB_OPEN ) )
 		nBits |= SFXWB_MULTISELECTION;
@@ -344,7 +344,7 @@ void SvtFilePicker::notify( sal_Int16 _nEventId, sal_Int16 _nControlId )
 	if ( !m_xListener.is() )
 		return;
 
-    FilePickerEvent aEvent( *this, _nControlId );
+	FilePickerEvent aEvent( *this, _nControlId );
 
 	switch ( _nEventId )
 	{
@@ -408,9 +408,9 @@ namespace {
 //------------------------------------------------------------------------------------
 sal_Bool SvtFilePicker::FilterNameExists( const ::rtl::OUString& rTitle )
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
-    if ( m_pFilterList )
+	if ( m_pFilterList )
 		bRet =
 			m_pFilterList->end() != ::std::find_if(
 				m_pFilterList->begin(),
@@ -418,13 +418,13 @@ sal_Bool SvtFilePicker::FilterNameExists( const ::rtl::OUString& rTitle )
 				FilterTitleMatch( rTitle )
 			);
 
-    return bRet;
+	return bRet;
 }
 
 //------------------------------------------------------------------------------------
 sal_Bool SvtFilePicker::FilterNameExists( const UnoFilterList& _rGroupedFilters )
 {
-    sal_Bool bRet = sal_False;
+	sal_Bool bRet = sal_False;
 
 	if ( m_pFilterList )
 	{
@@ -444,13 +444,13 @@ sal_Bool SvtFilePicker::FilterNameExists( const UnoFilterList& _rGroupedFilters 
 void SvtFilePicker::ensureFilterList( const ::rtl::OUString& _rInitialCurrentFilter )
 {
 	if ( !m_pFilterList )
-    {
+	{
 		m_pFilterList = new FilterList;
 
-        // set the first filter to the current filter
-        if ( ! m_aCurrentFilter.getLength() )
-            m_aCurrentFilter = _rInitialCurrentFilter;
-    }
+		// set the first filter to the current filter
+		if ( ! m_aCurrentFilter.getLength() )
+			m_aCurrentFilter = _rInitialCurrentFilter;
+	}
 }
 
 //------------------------------------------------------------------------------------
@@ -481,11 +481,11 @@ sal_Int16 SvtFilePicker::implExecutePicker( )
 {
 	getDialog()->SetFileCallback( this );
 
-    prepareExecute();
+	prepareExecute();
 
-    getDialog()->EnableAutocompletion( sal_True );
-    // now we are ready to execute the dialog
-    sal_Int16 nRet = getDialog()->Execute();
+	getDialog()->EnableAutocompletion( sal_True );
+	// now we are ready to execute the dialog
+	sal_Int16 nRet = getDialog()->Execute();
 
 	// the execution of the dialog yields, so it is possible the at this point the window or the dialog is closed
 	if ( getDialog() )
@@ -546,17 +546,17 @@ sal_Int16 SAL_CALL SvtFilePicker::execute(  ) throw (RuntimeException)
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::setDialogTitle( const ::rtl::OUString& _rTitle ) throw (RuntimeException)
 {
-    setTitle( _rTitle );
+	setTitle( _rTitle );
 }
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::startExecuteModal( const Reference< ::com::sun::star::ui::dialogs::XDialogClosedListener >& xListener ) throw (RuntimeException)
 {
-    m_xDlgClosedListener = xListener;
-    prepareDialog();
-    prepareExecute();
-    getDialog()->EnableAutocompletion( sal_True );
-    getDialog()->StartExecuteModal( LINK( this, SvtFilePicker, DialogClosedHdl ) );
+	m_xDlgClosedListener = xListener;
+	prepareDialog();
+	prepareExecute();
+	getDialog()->EnableAutocompletion( sal_True );
+	getDialog()->StartExecuteModal( LINK( this, SvtFilePicker, DialogClosedHdl ) );
 }
 
 //------------------------------------------------------------------------------------
@@ -567,7 +567,7 @@ void SAL_CALL SvtFilePicker::setMultiSelectionMode( sal_Bool bMode ) throw( Runt
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	m_bMultiSelection = bMode;
 }
 
@@ -575,16 +575,16 @@ void SAL_CALL SvtFilePicker::setDefaultName( const rtl::OUString& aName ) throw(
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	m_aDefaultName = aName;
 }
 
 void SAL_CALL SvtFilePicker::setDisplayDirectory( const rtl::OUString& aDirectory )
-    throw( IllegalArgumentException, RuntimeException )
+	throw( IllegalArgumentException, RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	m_aDisplayDirectory = aDirectory;
 }
 
@@ -592,10 +592,10 @@ rtl::OUString SAL_CALL SvtFilePicker::getDisplayDirectory() throw( RuntimeExcept
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( getDialog() )
-    {
-        rtl::OUString aPath = getDialog()->GetPath();
+	{
+		rtl::OUString aPath = getDialog()->GetPath();
 
 		// #97148# ----
 		if( m_aOldHideDirectory == aPath )
@@ -604,23 +604,23 @@ rtl::OUString SAL_CALL SvtFilePicker::getDisplayDirectory() throw( RuntimeExcept
 
 		// #102204# -----
 		if( !getDialog()->ContentIsFolder( aPath ) )
-        {
-            INetURLObject aFolder( aPath );
-            aFolder.CutLastName();
-            aPath = aFolder.GetMainURL( INetURLObject::NO_DECODE );
-        }
+		{
+			INetURLObject aFolder( aPath );
+			aFolder.CutLastName();
+			aPath = aFolder.GetMainURL( INetURLObject::NO_DECODE );
+		}
 		m_aOldDisplayDirectory = aPath;
-        return aPath;
-    }
-    else
-        return m_aDisplayDirectory;
+		return aPath;
+	}
+	else
+		return m_aDisplayDirectory;
 }
 
 Sequence< rtl::OUString > SAL_CALL SvtFilePicker::getFiles() throw( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( ! getDialog() )
 	{
 		Sequence< rtl::OUString > aEmpty;
@@ -660,13 +660,13 @@ Sequence< rtl::OUString > SAL_CALL SvtFilePicker::getFiles() throw( RuntimeExcep
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SvtFilePicker::setValue( sal_Int16 nElementID,
-                                       sal_Int16 nControlAction,
-                                       const Any& rValue )
-    throw( RuntimeException )
+									   sal_Int16 nControlAction,
+									   const Any& rValue )
+	throw( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( getDialog() )
 	{
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
@@ -677,41 +677,41 @@ void SAL_CALL SvtFilePicker::setValue( sal_Int16 nElementID,
 		if ( !m_pElemList )
 			m_pElemList = new ElementList;
 
-        sal_Bool bFound = sal_False;
+		sal_Bool bFound = sal_False;
 		ElementList::iterator aListIter;
 
-        for ( aListIter = m_pElemList->begin();
+		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( ( rEntry.m_nElementID == nElementID ) &&
-                 ( !rEntry.m_bHasValue || ( rEntry.m_nControlAction == nControlAction ) ) )
-            {
-                rEntry.setAction( nControlAction );
-                rEntry.setValue( rValue );
-                bFound = sal_True;
-            }
+			if ( ( rEntry.m_nElementID == nElementID ) &&
+				( !rEntry.m_bHasValue || ( rEntry.m_nControlAction == nControlAction ) ) )
+			{
+				rEntry.setAction( nControlAction );
+				rEntry.setValue( rValue );
+				bFound = sal_True;
+			}
 		}
 
-        if ( !bFound )
-        {
-            ElementEntry_Impl aNew( nElementID );
-            aNew.setAction( nControlAction );
-            aNew.setValue( rValue );
-            m_pElemList->insert( m_pElemList->end(), aNew );
-        }
+		if ( !bFound )
+		{
+			ElementEntry_Impl aNew( nElementID );
+			aNew.setAction( nControlAction );
+			aNew.setValue( rValue );
+			m_pElemList->insert( m_pElemList->end(), aNew );
+		}
 	}
 }
 
 //------------------------------------------------------------------------------------
 
 Any SAL_CALL SvtFilePicker::getValue( sal_Int16 nElementID, sal_Int16 nControlAction )
-    throw( RuntimeException )
+	throw( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-	Any      aAny;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	Any aAny;
 
 	// execute() called?
 	if ( getDialog() )
@@ -719,34 +719,34 @@ Any SAL_CALL SvtFilePicker::getValue( sal_Int16 nElementID, sal_Int16 nControlAc
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
 		aAny = aAccess.getValue( nElementID, nControlAction );
 	}
-    else if ( m_pElemList && !m_pElemList->empty() )
-    {
+	else if ( m_pElemList && !m_pElemList->empty() )
+	{
 		ElementList::iterator aListIter;
 		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( ( rEntry.m_nElementID == nElementID ) &&
-                 ( rEntry.m_bHasValue ) &&
-                 ( rEntry.m_nControlAction == nControlAction ) )
-            {
-                aAny = rEntry.m_aValue;
-                break;
-            }
+			if ( ( rEntry.m_nElementID == nElementID ) &&
+				 ( rEntry.m_bHasValue ) &&
+				 ( rEntry.m_nControlAction == nControlAction ) )
+			{
+				aAny = rEntry.m_aValue;
+				break;
+			}
 		}
-    }
+	}
 
-    return aAny;
+	return aAny;
 }
 
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::setLabel( sal_Int16 nLabelID, const rtl::OUString& rValue )
-    throw ( RuntimeException )
+	throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ( getDialog() )
 	{
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
@@ -757,100 +757,100 @@ void SAL_CALL SvtFilePicker::setLabel( sal_Int16 nLabelID, const rtl::OUString& 
 		if ( !m_pElemList )
 			m_pElemList = new ElementList;
 
-        sal_Bool bFound = sal_False;
+		sal_Bool bFound = sal_False;
 		ElementList::iterator aListIter;
 
-        for ( aListIter = m_pElemList->begin();
+		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( rEntry.m_nElementID == nLabelID )
-            {
-                rEntry.setLabel( rValue );
-                bFound = sal_True;
-            }
+			if ( rEntry.m_nElementID == nLabelID )
+			{
+				rEntry.setLabel( rValue );
+				bFound = sal_True;
+			}
 		}
 
-        if ( !bFound )
-        {
-            ElementEntry_Impl aNew( nLabelID );
-            aNew.setLabel( rValue );
-            m_pElemList->insert( m_pElemList->end(), aNew );
-        }
+		if ( !bFound )
+		{
+			ElementEntry_Impl aNew( nLabelID );
+			aNew.setLabel( rValue );
+			m_pElemList->insert( m_pElemList->end(), aNew );
+		}
 	}
 }
 
 //------------------------------------------------------------------------------------
 rtl::OUString SAL_CALL SvtFilePicker::getLabel( sal_Int16 nLabelID )
-    throw ( RuntimeException )
+	throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	rtl::OUString aLabel;
 
-    if ( getDialog() )
+	if ( getDialog() )
 	{
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
 		aLabel = aAccess.getLabel( nLabelID );
 	}
-    else if ( m_pElemList && !m_pElemList->empty() )
-    {
+	else if ( m_pElemList && !m_pElemList->empty() )
+	{
 		ElementList::iterator aListIter;
 		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( rEntry.m_nElementID == nLabelID )
-            {
-                if ( rEntry.m_bHasLabel )
-                    aLabel = rEntry.m_aLabel;
-                break;
-            }
+			if ( rEntry.m_nElementID == nLabelID )
+			{
+				if ( rEntry.m_bHasLabel )
+					aLabel = rEntry.m_aLabel;
+				break;
+			}
 		}
-    }
+	}
 
 	return aLabel;
 }
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::enableControl( sal_Int16 nElementID, sal_Bool bEnable )
-    throw( RuntimeException )
+	throw( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    if ( getDialog() )
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	if ( getDialog() )
 	{
 		::svt::OControlAccess aAccess( getDialog(), getDialog()->GetView() );
 		aAccess.enableControl( nElementID, bEnable );
 	}
-    else
-    {
+	else
+	{
 		if ( !m_pElemList )
 			m_pElemList = new ElementList;
 
-        sal_Bool bFound = sal_False;
+		sal_Bool bFound = sal_False;
 		ElementList::iterator aListIter;
 
-        for ( aListIter = m_pElemList->begin();
+		for ( aListIter = m_pElemList->begin();
 			  aListIter != m_pElemList->end(); ++aListIter )
 		{
 			ElementEntry_Impl& rEntry = *aListIter;
-            if ( rEntry.m_nElementID == nElementID )
-            {
-                rEntry.setEnabled( bEnable );
-                bFound = sal_True;
-            }
+			if ( rEntry.m_nElementID == nElementID )
+			{
+				rEntry.setEnabled( bEnable );
+				bFound = sal_True;
+			}
 		}
 
-        if ( !bFound )
-        {
-            ElementEntry_Impl aNew( nElementID );
-            aNew.setEnabled( bEnable );
-            m_pElemList->insert( m_pElemList->end(), aNew );
-        }
-    }
+		if ( !bFound )
+		{
+			ElementEntry_Impl aNew( nElementID );
+			aNew.setEnabled( bEnable );
+			m_pElemList->insert( m_pElemList->end(), aNew );
+		}
+	}
 }
 
 //------------------------------------------------------------------------------------
@@ -861,7 +861,7 @@ void SAL_CALL SvtFilePicker::addFilePickerListener( const Reference< XFilePicker
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	m_xListener = xListener;
 }
 
@@ -870,7 +870,7 @@ void SAL_CALL SvtFilePicker::removeFilePickerListener( const Reference< XFilePic
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	m_xListener.clear();
 }
 
@@ -879,16 +879,16 @@ void SAL_CALL SvtFilePicker::removeFilePickerListener( const Reference< XFilePic
 //------------------------------------------------------------------------------------
 
 Sequence< sal_Int16 > SAL_CALL SvtFilePicker::getSupportedImageFormats()
-    throw ( RuntimeException )
+	throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    Sequence< sal_Int16 > aFormats( 1 );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	Sequence< sal_Int16 > aFormats( 1 );
 
-    aFormats[0] = FilePreviewImageFormats::BITMAP;
+	aFormats[0] = FilePreviewImageFormats::BITMAP;
 
-    return aFormats;
+	return aFormats;
 }
 
 //------------------------------------------------------------------------------------
@@ -896,13 +896,13 @@ sal_Int32 SAL_CALL SvtFilePicker::getTargetColorDepth() throw ( RuntimeException
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    sal_Int32 nDepth = 0;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	sal_Int32 nDepth = 0;
 
-    if ( getDialog() )
-        nDepth = getDialog()->getTargetColorDepth();
+	if ( getDialog() )
+		nDepth = getDialog()->getTargetColorDepth();
 
-    return nDepth;
+	return nDepth;
 }
 
 //------------------------------------------------------------------------------------
@@ -910,13 +910,13 @@ sal_Int32 SAL_CALL SvtFilePicker::getAvailableWidth() throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    sal_Int32 nWidth = 0;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	sal_Int32 nWidth = 0;
 
-    if ( getDialog() )
-        nWidth = getDialog()->getAvailableWidth();
+	if ( getDialog() )
+		nWidth = getDialog()->getAvailableWidth();
 
-    return nWidth;
+	return nWidth;
 }
 
 //------------------------------------------------------------------------------------
@@ -924,39 +924,39 @@ sal_Int32 SAL_CALL SvtFilePicker::getAvailableHeight() throw ( RuntimeException 
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    sal_Int32 nHeigth = 0;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	sal_Int32 nHeigth = 0;
 
-    if ( getDialog() )
-        nHeigth = getDialog()->getAvailableHeight();
+	if ( getDialog() )
+		nHeigth = getDialog()->getAvailableHeight();
 
-    return nHeigth;
+	return nHeigth;
 }
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::setImage( sal_Int16 aImageFormat, const Any& rImage )
-    throw ( IllegalArgumentException, RuntimeException )
+	throw ( IllegalArgumentException, RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    if ( getDialog() )
-        getDialog()->setImage( aImageFormat, rImage );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	if ( getDialog() )
+		getDialog()->setImage( aImageFormat, rImage );
 }
 
 //------------------------------------------------------------------------------------
 sal_Bool SAL_CALL SvtFilePicker::setShowState( sal_Bool bShowState )
-    throw ( RuntimeException )
+	throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    sal_Bool bRet = sal_False;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	sal_Bool bRet = sal_False;
 
-    if ( getDialog() )
-        bRet = getDialog()->setShowState( bShowState );
+	if ( getDialog() )
+		bRet = getDialog()->setShowState( bShowState );
 
-    return bRet;
+	return bRet;
 }
 
 //------------------------------------------------------------------------------------
@@ -964,13 +964,13 @@ sal_Bool SAL_CALL SvtFilePicker::getShowState() throw ( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    sal_Bool bRet = sal_False;
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	sal_Bool bRet = sal_False;
 
-    if ( getDialog() )
-        bRet = getDialog()->getShowState();
+	if ( getDialog() )
+		bRet = getDialog()->getShowState();
 
-    return bRet;
+	return bRet;
 }
 
 //------------------------------------------------------------------------------------
@@ -983,13 +983,13 @@ void SAL_CALL SvtFilePicker::appendFilterGroup(	const ::rtl::OUString& sGroupTit
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 
 	// check the names
 	if ( FilterNameExists( aFilters ) )
-        throw IllegalArgumentException(
-            rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("filter name exists")),
-            static_cast< OWeakObject * >(this), 1);
+		throw IllegalArgumentException(
+			rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("filter name exists")),
+			static_cast< OWeakObject * >(this), 1);
 
 	// ensure that we have a filter list
 	::rtl::OUString sInitialCurrentFilter;
@@ -1006,16 +1006,16 @@ void SAL_CALL SvtFilePicker::appendFilterGroup(	const ::rtl::OUString& sGroupTit
 //------------------------------------------------------------------------------------
 
 void SAL_CALL SvtFilePicker::appendFilter( const rtl::OUString& aTitle,
-                                           const rtl::OUString& aFilter )
-    throw( IllegalArgumentException, RuntimeException )
+										   const rtl::OUString& aFilter )
+	throw( IllegalArgumentException, RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	// check the name
 	if ( FilterNameExists( aTitle ) )
 		// TODO: a more precise exception message
-        throw IllegalArgumentException();
+		throw IllegalArgumentException();
 
 	// ensure that we have a filter list
 	ensureFilterList( aTitle );
@@ -1026,29 +1026,29 @@ void SAL_CALL SvtFilePicker::appendFilter( const rtl::OUString& aTitle,
 
 //------------------------------------------------------------------------------------
 void SAL_CALL SvtFilePicker::setCurrentFilter( const rtl::OUString& aTitle )
-    throw( IllegalArgumentException, RuntimeException )
+	throw( IllegalArgumentException, RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    if ( ! FilterNameExists( aTitle ) )
-        throw IllegalArgumentException();
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	if ( ! FilterNameExists( aTitle ) )
+		throw IllegalArgumentException();
 
 	m_aCurrentFilter = aTitle;
 
-    if ( getDialog() )
-        getDialog()->SetCurFilter( aTitle );
+	if ( getDialog() )
+		getDialog()->SetCurFilter( aTitle );
 }
 
 //------------------------------------------------------------------------------------
 rtl::OUString SAL_CALL SvtFilePicker::getCurrentFilter()
-    throw( RuntimeException )
+	throw( RuntimeException )
 {
 	checkAlive();
 
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
 	rtl::OUString aFilter = getDialog() ? rtl::OUString( getDialog()->GetCurFilter() ) :
-                                            rtl::OUString( m_aCurrentFilter );
+										  rtl::OUString( m_aCurrentFilter );
 	return aFilter;
 }
 
@@ -1150,16 +1150,16 @@ rtl::OUString SAL_CALL SvtFilePicker::getImplementationName() throw( RuntimeExce
 /* XServiceInfo */
 sal_Bool SAL_CALL SvtFilePicker::supportsService( const rtl::OUString& sServiceName ) throw( RuntimeException )
 {
-    Sequence< rtl::OUString > seqServiceNames = getSupportedServiceNames();
-    const rtl::OUString* pArray = seqServiceNames.getConstArray();
-    for ( sal_Int32 i = 0; i < seqServiceNames.getLength(); i++ )
+	Sequence< rtl::OUString > seqServiceNames = getSupportedServiceNames();
+	const rtl::OUString* pArray = seqServiceNames.getConstArray();
+	for ( sal_Int32 i = 0; i < seqServiceNames.getLength(); i++ )
 	{
-        if ( sServiceName == pArray[i] )
+		if ( sServiceName == pArray[i] )
 		{
-            return sal_True ;
+			return sal_True ;
 		}
 	}
-    return sal_False ;
+	return sal_False ;
 }
 
 /* XServiceInfo */
@@ -1171,16 +1171,16 @@ Sequence< rtl::OUString > SAL_CALL SvtFilePicker::getSupportedServiceNames() thr
 /* Helper for XServiceInfo */
 Sequence< rtl::OUString > SvtFilePicker::impl_getStaticSupportedServiceNames()
 {
-    Sequence< rtl::OUString > seqServiceNames( 1 );
-    rtl::OUString* pArray = seqServiceNames.getArray();
-    pArray[0] = rtl::OUString::createFromAscii( "com.sun.star.ui.dialogs.OfficeFilePicker" );
-    return seqServiceNames ;
+	Sequence< rtl::OUString > seqServiceNames( 1 );
+	rtl::OUString* pArray = seqServiceNames.getArray();
+	pArray[0] = rtl::OUString::createFromAscii( "com.sun.star.ui.dialogs.OfficeFilePicker" );
+	return seqServiceNames ;
 }
 
 /* Helper for XServiceInfo */
 rtl::OUString SvtFilePicker::impl_getStaticImplementationName()
 {
-    return rtl::OUString::createFromAscii( "com.sun.star.svtools.OfficeFilePicker" );
+	return rtl::OUString::createFromAscii( "com.sun.star.svtools.OfficeFilePicker" );
 }
 
 /* Helper for registry */

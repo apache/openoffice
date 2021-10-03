@@ -526,35 +526,35 @@ int main(int argc, char **argv)
 #endif
 
 	/// print the information. 
-	printf("#\n#Retrived system information is below:\n");
+	printf("#\n#Retrieved system information is below:\n");
 	
 	printf("Computer Name:              ");
 	if ( strComputerName == aNullURL ) 
-		printf(" Not retrived\n" );
+		printf(" Not retrieved\n" );
 	else
 		printUString( strComputerName );
 	
 	printf("Current User Name:          ");
 	if ( strUserName == aNullURL ) 
-		printf(" Not retrived\n" );
+		printf(" Not retrieved\n" );
 	else
 		printUString( strUserName );
 	
 	printf("Current User Home Directory:");
 	if ( strHomeDirectory == aNullURL ) 
-		printf(" Not retrived\n" );
+		printf(" Not retrieved\n" );
 	else
 		printUString( strHomeDirectory );
 
 	printf("Current Config Directory:   ");
 	if ( strConfigDirectory == aNullURL ) 
-		printf(" Not retrived\n" );
+		printf(" Not retrieved\n" );
 	else
 		printUString( strConfigDirectory );
 
 	printf("Current UserID:             "); 
 	if ( strUserID == aNullURL ) 
-		printf(" Not retrived\n" );
+		printf(" Not retrieved\n" );
 	else
 		printUString( strUserID );
 

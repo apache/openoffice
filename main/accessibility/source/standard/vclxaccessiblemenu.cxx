@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,28 +57,28 @@ VCLXAccessibleMenu::~VCLXAccessibleMenu()
 
 sal_Bool VCLXAccessibleMenu::IsFocused()
 {
-    sal_Bool bFocused = sal_False;
+	sal_Bool bFocused = sal_False;
 
-    if ( IsHighlighted() && !IsChildHighlighted() )
-        bFocused = sal_True;
+	if ( IsHighlighted() && !IsChildHighlighted() )
+		bFocused = sal_True;
 
-    return bFocused;
+	return bFocused;
 }
 
 // -----------------------------------------------------------------------------
 
 sal_Bool VCLXAccessibleMenu::IsPopupMenuOpen()
 {
-    sal_Bool bPopupMenuOpen = sal_False;
+	sal_Bool bPopupMenuOpen = sal_False;
 
-    if ( m_pParent )
-    {
-        PopupMenu* pPopupMenu = m_pParent->GetPopupMenu( m_pParent->GetItemId( m_nItemPos ) );
-        if ( pPopupMenu && pPopupMenu->IsMenuVisible() )
-            bPopupMenuOpen = sal_True;
-    }
+	if ( m_pParent )
+	{
+		PopupMenu* pPopupMenu = m_pParent->GetPopupMenu( m_pParent->GetItemId( m_nItemPos ) );
+		if ( pPopupMenu && pPopupMenu->IsMenuVisible() )
+			bPopupMenuOpen = sal_True;
+	}
 
-    return bPopupMenuOpen;
+	return bPopupMenuOpen;
 }
 
 // -----------------------------------------------------------------------------
@@ -119,7 +119,7 @@ sal_Int32 VCLXAccessibleMenu::getAccessibleChildCount(  ) throw (RuntimeExceptio
 {
 	OExternalLockGuard aGuard( this );
 
-	return GetChildCount(); 
+	return GetChildCount();
 }
 
 // -----------------------------------------------------------------------------
@@ -171,13 +171,13 @@ void VCLXAccessibleMenu::selectAccessibleChild( sal_Int32 nChildIndex ) throw (I
 // -----------------------------------------------------------------------------
 
 sal_Bool VCLXAccessibleMenu::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
-{	
+{
 	OExternalLockGuard aGuard( this );
 
 	if ( nChildIndex < 0 || nChildIndex >= GetChildCount() )
 		throw IndexOutOfBoundsException();
 
-	return IsChildSelected( nChildIndex );	
+	return IsChildSelected( nChildIndex );
 }
 
 // -----------------------------------------------------------------------------
@@ -205,7 +205,7 @@ sal_Int32 VCLXAccessibleMenu::getSelectedAccessibleChildCount(  ) throw (Runtime
 	sal_Int32 nRet = 0;
 
 	for ( sal_Int32 i = 0, nCount = GetChildCount(); i < nCount; i++ )
-	{		
+	{
 		if ( IsChildSelected( i ) )
 			++nRet;
 	}
@@ -225,7 +225,7 @@ Reference< XAccessible > VCLXAccessibleMenu::getSelectedAccessibleChild( sal_Int
 	Reference< XAccessible > xChild;
 
 	for ( sal_Int32 i = 0, j = 0, nCount = GetChildCount(); i < nCount; i++ )
-	{		
+	{
 		if ( IsChildSelected( i ) && ( j++ == nSelectedChildIndex ) )
 		{
 			xChild = GetChild( i );
@@ -255,8 +255,7 @@ void VCLXAccessibleMenu::deselectAccessibleChild( sal_Int32 nChildIndex ) throw 
 	OExternalLockGuard aGuard( this );
 
 	if ( nIndex < 0 || nIndex >= getAccessibleActionCount() )
-        throw IndexOutOfBoundsException();
+		throw IndexOutOfBoundsException();
 
 	return ::rtl::OUString(  );
 }
-

@@ -298,7 +298,7 @@ public class GraphicalDifferenceCheck
 // LLA: old!         if(inputDocumentPath.indexOf(File.separator) != -1)
 // LLA: old!             inputDocumentPath = inputDocumentPath.substring(inputDocumentPath.lastIndexOf(File.separator) + 1, inputDocumentPath.length());
 // LLA: old! 
-// LLA: old! 		// exchange any arbitray suffix against the refence suffix (.prn)
+// LLA: old! 		// exchange any arbitrary suffix against the reference suffix (.prn)
 // LLA: old!         if(inputDocumentPath.indexOf('.') != -1)
 // LLA: old!             inputDocumentPath = inputDocumentPath.substring(0, inputDocumentPath.lastIndexOf('.'));
 // LLA: old!         inputDocumentPath = inputDocumentPath + ".prn";

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,18 +47,18 @@
 #endif
 
 module com { module sun { module star { module awt {
-    
+
 /** specifies accessibility support for a check box.
-    
-    @since OpenOffice 1.1.2    
- */    
+
+    @since OpenOffice 1.1.2
+ */
 published service AccessibleCheckBox
 {
     /** This interface gives access to the structural information of a
         check box:
 
         <ul>
-        <li>Role: The role of a check box is <const 
+        <li>Role: The role of a check box is <const
             scope="com::sun::star::accessibility"
             >AccessibleRole::CHECK_BOX</const>.</li>
         <li>Name: The name of a check box is its localized label.</li>
@@ -71,11 +71,11 @@ published service AccessibleCheckBox
             <ul>
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::CHECKED</const> is set
-                if the object is currently checked.</li>        
+                if the object is currently checked.</li>
             <li><const scope="com::sun::star::accessibility"
                 >AccessibleStateType::DEFUNC</const>
                 is set if the object has already been disposed
-                and subsequent calls to this object result in				
+                and subsequent calls to this object result in
                 <type scope="com::sun::star::lang">DisposedException</type>
                 exceptions.</li>
             <li><const scope="com::sun::star::accessibility"
@@ -96,18 +96,18 @@ published service AccessibleCheckBox
         </ul>
      */
     interface ::com::sun::star::accessibility::XAccessibleContext;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleEventBroadcaster;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleComponent;
-    
+
     interface ::com::sun::star::accessibility::XAccessibleExtendedComponent;
-    
+
     /** This interface gives read-only access to the text representation
         of a check box.
      */
     interface ::com::sun::star::accessibility::XAccessibleText;
-    
+
     /** This interface gives access to the actions that can be executed for
         a check box. The supported actions for a check box are:
         <ul>

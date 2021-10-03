@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -31,10 +31,10 @@ import com.sun.star.lang.XSingleServiceFactory;
 
 // supported Interfaces
 import com.sun.star.linguistic2.XThesaurus;
-import com.sun.star.lang.XInitialization;		
+import com.sun.star.lang.XInitialization;
 import com.sun.star.lang.XComponent;
-import com.sun.star.lang.XServiceInfo;		
-import com.sun.star.lang.XServiceDisplayName;		
+import com.sun.star.lang.XServiceInfo;
+import com.sun.star.lang.XServiceDisplayName;
 
 // Exceptions
 import com.sun.star.uno.Exception;
@@ -63,7 +63,7 @@ public class SampleThesaurus extends ComponentBase implements
     PropChgHelper               aPropChgHelper;
     ArrayList                   aEvtListeners;
     boolean                     bDisposing;
-    
+
     public SampleThesaurus()
     {
         // names of relevant properties to be used
@@ -73,25 +73,25 @@ public class SampleThesaurus extends ComponentBase implements
                 "IsUseDictionaryList",
                 "IsGermanPreReform",
             };
-        
+
         // this service has no listeners thus we may use the base class,
-        // which is here basically used only to keep track of the 
+        // which is here basically used only to keep track of the
         // property set (and it's lifetime) since it gets used in the
         // 'GetValueToUse' function
-        aPropChgHelper  = new PropChgHelper( (XThesaurus) this, aProps );
-        
-        aEvtListeners   = new ArrayList();
-        bDisposing      = false;
+        aPropChgHelper = new PropChgHelper( (XThesaurus) this, aProps );
+
+        aEvtListeners  = new ArrayList();
+        bDisposing     = false;
     }
 
     private boolean IsEqual( Locale aLoc1, Locale aLoc2 )
     {
         return aLoc1.Language.equals( aLoc2.Language ) &&
-               aLoc1.Country .equals( aLoc2.Country )  &&
-               aLoc1.Variant .equals( aLoc2.Variant );  
+               aLoc1.Country .equals( aLoc2.Country ) &&
+               aLoc1.Variant .equals( aLoc2.Variant );
     }
 
-    private boolean GetValueToUse( 
+    private boolean GetValueToUse(
             String          aPropName,
             boolean         bDefaultVal,
             PropertyValue[] aProps )
@@ -101,7 +101,7 @@ public class SampleThesaurus extends ComponentBase implements
         try
         {
             // use temporary value if supplied
-            for (int i = 0;  i < aProps.length;  ++i)
+            for (int i = 0; i < aProps.length; ++i)
             {
                 if (aPropName.equals( aProps[i].Name ))
                 {
@@ -116,7 +116,7 @@ public class SampleThesaurus extends ComponentBase implements
 
             // otherwise use value from property set (if available)
             XPropertySet xPropSet = aPropChgHelper.GetPropSet();
-            if (xPropSet != null)   // should always be the case
+            if (xPropSet != null) // should always be the case
             {
                 Object aObj = xPropSet.getPropertyValue( aPropName );
                 if (AnyConverter.isBoolean( aObj ))
@@ -126,40 +126,40 @@ public class SampleThesaurus extends ComponentBase implements
         catch (Exception e) {
             bRes = bDefaultVal;
         }
-        
+
         return bRes;
     }
-                    
+
     // __________ interface methods __________
-    
-    
+
+
     //*****************
     //XSupportedLocales
     //*****************
     public Locale[] getLocales()
         throws com.sun.star.uno.RuntimeException
     {
-        Locale aLocales[] = 
+        Locale aLocales[] =
         {
             new Locale( "en", "US", "" )
         };
 
         return aLocales;
     }
-    
-    public boolean hasLocale( Locale aLocale ) 
+
+    public boolean hasLocale( Locale aLocale )
         throws com.sun.star.uno.RuntimeException
     {
         boolean bRes = false;
         if (IsEqual( aLocale, new Locale( "en", "US", "" ) ))
             bRes = true;
-        return bRes;        
+        return bRes;
     }
-    
+
     //**********
     //XThesaurus
     //**********
-    public XMeaning[] queryMeanings( 
+    public XMeaning[] queryMeanings(
             String aTerm, Locale aLocale,
             PropertyValue[] aProperties )
         throws com.sun.star.lang.IllegalArgumentException,
@@ -167,9 +167,9 @@ public class SampleThesaurus extends ComponentBase implements
     {
         if (IsEqual( aLocale, new Locale() ) || aTerm.length() == 0)
             return null;
-        
+
         // linguistic is currently not allowed to throw exceptions
-        // thus we return null fwhich means 'word cannot be looked up'
+        // thus we return null which means 'word cannot be looked up'
         if (!hasLocale( aLocale ))
             return null;
 
@@ -177,43 +177,43 @@ public class SampleThesaurus extends ComponentBase implements
         //! The values for 'IsIgnoreControlCharacters' and 'IsUseDictionaryList'
         //! are handled by the dispatcher! Thus there is no need to access
         //! them here.
-        boolean bIsGermanPreReform      = GetValueToUse( "IsGermanPreReform", false, aProperties );
+        boolean bIsGermanPreReform = GetValueToUse( "IsGermanPreReform", false, aProperties );
 
         XMeaning[] aRes = null;
 
-        //!! This code needs to be replaced by code calling the actual 
+        //!! This code needs to be replaced by code calling the actual
         //!! implementation of your thesaurus
         if (aTerm.equals( "house" ) &&
             IsEqual( aLocale, new Locale( "en", "US", "" ) ) )
         {
             aRes = new XMeaning[]
                 {
-                    new XMeaning_impl( "a building where one lives", 
+                    new XMeaning_impl( "a building where one lives",
                             new String[]{ "home", "place", "dwelling" } ),
-                    new XMeaning_impl( "a group of people sharing common ancestry", 
+                    new XMeaning_impl( "a group of people sharing common ancestry",
                             new String[]{ "family", "clan", "kindred" } ),
-                    new XMeaning_impl( "to provide with lodging", 
+                    new XMeaning_impl( "to provide with lodging",
                             new String[]{ "room", "board", "put up" } )
                 };
         }
 
         return aRes;
     }
-    
-    
+
+
     //********************
     // XServiceDisplayName
     //********************
-    public String getServiceDisplayName( Locale aLocale ) 
+    public String getServiceDisplayName( Locale aLocale )
         throws com.sun.star.uno.RuntimeException
     {
-        return "Java Samples";                                                    
+        return "Java Samples";
     }
 
     //****************
     // XInitialization
     //****************
-    public void initialize( Object[] aArguments ) 
+    public void initialize( Object[] aArguments )
         throws com.sun.star.uno.Exception,
                com.sun.star.uno.RuntimeException
     {
@@ -248,17 +248,17 @@ public class SampleThesaurus extends ComponentBase implements
     {
         return _aSvcImplName;
     }
-        
+
     public String[] getSupportedServiceNames()
         throws com.sun.star.uno.RuntimeException
     {
         return getSupportedServiceNames_Static();
     }
-    
+
     // __________ static things __________
 
     public static String _aSvcImplName = SampleThesaurus.class.getName();
-    
+
     public static String[] getSupportedServiceNames_Static()
     {
         String[] aResult = { "com.sun.star.linguistic2.Thesaurus" };
@@ -302,9 +302,9 @@ public class SampleThesaurus extends ComponentBase implements
      */
     // This method not longer necessary since OOo 3.4 where the component registration
     // was changed to passive component registration. For more details see
-    // http://wiki.services.openoffice.org/wiki/Passive_Component_Registration
+    // https://wiki.openoffice.org/wiki/Passive_Component_Registration
 
-//     public static boolean __writeRegistryServiceInfo( 
+//     public static boolean __writeRegistryServiceInfo(
 //             com.sun.star.registry.XRegistryKey xRegKey )
 //     {
 //         boolean bResult = true;

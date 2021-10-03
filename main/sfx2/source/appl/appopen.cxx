@@ -926,45 +926,11 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 			Reference < XURLTransformer > xTrans( ::comphelper::getProcessServiceFactory()->createInstance(
 													::rtl::OUString::createFromAscii("com.sun.star.util.URLTransformer" )), UNO_QUERY );
 			xTrans->parseStrict( aURL );
-
-			INetProtocol aINetProtocol = INetURLObject( aURL.Complete ).GetProtocol();
+            INetURLObject aINetURLObject(aURL.Complete);
+			INetProtocol aINetProtocol = aINetURLObject.GetProtocol();
 			SvtExtendedSecurityOptions aExtendedSecurityOptions;
 			SvtExtendedSecurityOptions::OpenHyperlinkMode eMode = aExtendedSecurityOptions.GetOpenHyperlinkMode();
-			if ( eMode == SvtExtendedSecurityOptions::OPEN_WITHSECURITYCHECK )
-			{
-				if ( aINetProtocol == INET_PROT_FILE )
-				{
-/*!!! pb: #i49802# no security warning any longer
-					// Check if file URL is a directory. This is not insecure!
-					osl::Directory aDir( aURL.Main );
-					sal_Bool bIsDir = ( aDir.open() == osl::Directory::E_None );
-
-                    if ( !bIsDir && !aExtendedSecurityOptions.IsSecureHyperlink( aURL.Complete ) )
-					{
-						// Security check for local files depending on the extension
-						vos::OGuard aGuard( Application::GetSolarMutex() );
-						Window *pWindow = SFX_APP()->GetTopWindow();
-
-						String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
-						WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
-						aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
-
-						// Replace %s with the real file name
-						String aMsgText = aSecurityWarningBox.GetMessText();
-						String aMainURL( aURL.Main );
-						String aFileName;
-
-						utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileName );
-						aMsgText.SearchAndReplaceAscii( "%s", aFileName );
-						aSecurityWarningBox.SetMessText( aMsgText );
-
-						if( aSecurityWarningBox.Execute() == RET_NO )
-							return;
-					}
-*/
-				}
-			}
-            else if ( eMode == SvtExtendedSecurityOptions::OPEN_NEVER && aINetProtocol != INET_PROT_VND_SUN_STAR_HELP )
+            if ( eMode == SvtExtendedSecurityOptions::OPEN_NEVER && aINetProtocol != INET_PROT_VND_SUN_STAR_HELP )
 			{
                 vos::OGuard aGuard( Application::GetSolarMutex() );
                 Window *pWindow = SFX_APP()->GetTopWindow();
@@ -1080,7 +1046,40 @@ void SfxApplication::OpenDocExec_Impl( SfxRequest& rReq )
 							if (SFX_APP()->IsSecureURL(rtl::OUString(), &aReferer))
 							{
 								::rtl::OUString aURLString( aURL.Complete );
+                                // Before letting the OS execute the URL, we may have to request for
+                                // confirmation
+                                if ( eMode == SvtExtendedSecurityOptions::OPEN_WITHSECURITYCHECK ) {
+                                    // Check if file URL is a directory. This is not insecure!
+                                    sal_Bool bIsDir = aINetURLObject.hasFinalSlash() ||
+                                        ( osl::Directory(aURL.Main).open() ==
+                                          osl::Directory::E_None );
+                                    // Use SvtExtendedSecurityOptions::IsSecureHyperlink()
+                                    // to check the extension of the link destination.
+                                    sal_Bool bSafeExtension = aExtendedSecurityOptions.IsSecureHyperlink(aURL.Complete);
+                                    if (!bIsDir && !bSafeExtension) {
+                                        // Security check for local files depending on the extension
+                                        vos::OGuard aGuard( Application::GetSolarMutex() );
+                                        Window *pWindow = SFX_APP()->GetTopWindow();
 
+                                        String aSecurityWarningBoxTitle( SfxResId( RID_SECURITY_WARNING_TITLE ));
+                                        WarningBox	aSecurityWarningBox( pWindow, SfxResId( RID_SECURITY_WARNING_HYPERLINK ));
+                                        aSecurityWarningBox.SetText( aSecurityWarningBoxTitle );
+
+                                        // Replace %s with the real file name
+                                        String aMsgText = aSecurityWarningBox.GetMessText();
+                                        String aMainURL( aURL.Main );
+                                        String aFileNameInMsg;
+
+                                        if (!utl::LocalFileHelper::ConvertURLToPhysicalName( aMainURL, aFileNameInMsg )) {
+                                            aFileNameInMsg = aMainURL;
+                                        }
+                                        aMsgText.SearchAndReplaceAscii( "%s", aFileNameInMsg );
+                                        aSecurityWarningBox.SetMessText( aMsgText );
+
+                                        if( aSecurityWarningBox.Execute() == RET_NO )
+                                            return;
+                                    }
+                                }
 								try
 								{
 									// give os this file

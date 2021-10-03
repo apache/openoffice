@@ -262,8 +262,8 @@ if (RAT_JAR_HOME==BUILD)
 if (SOLAR_JAVA==TRUE && SYSTEM_BSH!=YES)
     MD5 = 34c726044fc4e2c7c3cf489fc239cdd5
     name = bsh-2.1.0-src.zip
-#    URL1 = https://bintray.com/artifact/download/beanshell/Beanshell/org/apache-extras/beanshell/bsh/2.0b6/$(name)
-    URL2 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    URL1 = https://github.com/beanshell/beanshell/releases/download/2.1.0/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 ###############################################################################
 # Libraries with category B license

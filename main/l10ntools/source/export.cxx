@@ -1080,16 +1080,6 @@ int Export::Execute( int nToken, const char * pToken )
 				}
 			}
 		break;
-		case NEWTEXTINRES: {
-			bDontWriteOutput = sal_True;
-			// this means something like // ### Achtung : Neuer Text ...
-			/*ByteString sLang( "GERMAN" );
-			ByteString sText = sToken.GetToken( 2, ':' ).GetToken( 0, '*' );
-			CleanValue( sText );
-			if ( sText.Len())
-            	pResData->sText[ sLang ] = sText;*/
-		}
-		break;
 		case APPFONTMAPPING: {
 			bDontWriteOutput = sal_False;
 			// this is a AppfontMapping, so look if it's a definition

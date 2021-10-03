@@ -108,7 +108,7 @@ class SW_DLLPUBLIC SwOneExampleFrame
 public:
 	SwOneExampleFrame(Window& rWin,
 					sal_uInt32 nStyleFlags = EX_SHOW_ONLINE_LAYOUT,
-					const Link* pInitalizedLink = 0,
+					const Link* pInitializedLink = 0,
 					String* pURL = 0);
 	~SwOneExampleFrame();
 

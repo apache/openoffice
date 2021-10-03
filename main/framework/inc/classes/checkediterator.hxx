@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -58,7 +58,7 @@ namespace framework{
 //_________________________________________________________________________________________________________________
 
 /*-************************************************************************************************************//**
-	@short          implement a iterator which support 2 end states!
+	@short			implement a iterator which support 2 end states!
 	@descr			For our search methods we need a "walking" iterator object with special functionality!
 					We must check for 3 different states of an iterator - normal position, exact end, after end.
 					It's necessary to detect if we have not found a entry and must return our default or
@@ -215,7 +215,7 @@ class CheckedIterator
 
 		inline CheckedIterator& operator++()
 		{
-			// Warn programmer if he forget to initailize object!
+			// Warn programmer if he forget to initialize object!
             LOG_ASSERT2( m_pContainer==NULL, "CheckedIterator::operator++()", "Object not initialized!" )
 			// Step to next element if any exist or set our end states.
 			switch( m_eEndState )
@@ -245,7 +245,7 @@ class CheckedIterator
 			@seealso	class FilterCache
 
 			@param		-
-			@return		True if internalk state E_UNKNOWN - false otherwise.
+			@return		True if internal state E_UNKNOWN - false otherwise.
 
 			@onerror	-
 		*//*-*****************************************************************************************************/
@@ -309,11 +309,11 @@ class CheckedIterator
 		inline typename TContainer::const_iterator getEntry()
 		{
 			// Warn programmer if he forget to initialize these object ...
-            LOG_ASSERT2( m_pContainer==NULL, "CheckedIterator::getEntry()", "Object not initialized!" )
+			LOG_ASSERT2( m_pContainer==NULL, "CheckedIterator::getEntry()", "Object not initialized!" )
 			// or try to read a non existing element!
-            LOG_ASSERT2( m_eEndState!=E_BEFOREEND, "CheckedIterator::getEntry()", "Wrong using of class detected!" )
+			LOG_ASSERT2( m_eEndState!=E_BEFOREEND, "CheckedIterator::getEntry()", "Wrong using of class detected!" )
 
-            return m_pPosition;
+			return m_pPosition;
 		}
 
 	//-------------------------------------------------------------------------------------------------------------
@@ -322,7 +322,7 @@ class CheckedIterator
 
 	private:
 
-		// These enum defines our four states for an iterator position in curent container.
+		// These enum defines our four states for an iterator position in current container.
 		enum EEndState
 		{
 			E_UNKNOWN	,

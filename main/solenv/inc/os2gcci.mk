@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,23 +7,23 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
 
-# --- OS2-Environment ----------------------------------------------
+# --- OS/2-Environment ---
 
-#change output dir name using the object binary format.
+# change output dir name using the object binary format.
 #.IF "$(aout)"==""
 #OUTFMT=omf
 #.ELSE
@@ -45,7 +45,7 @@ EMXOMFOPT = -q
 JAVAFLAGSDEBUG=-g
 
 # filter for suppressing verbose messages from linker
-#not needed at the moment
+# not needed at the moment
 #LINKOUTPUT_FILTER=" |& $(SOLARENV)/bin/msg_filter"
 
 .IF "$(ttt)"!=""
@@ -88,7 +88,7 @@ CFLAGSEXCEPTIONS=-fexceptions
 CFLAGS_NO_EXCEPTIONS=-fno-exceptions
 
 CFLAGSCXX= -frtti $(ARCH_FLAGS)
-CFLAGSCXX+= -Wno-ctor-dtor-privacy  -fmessage-length=0
+CFLAGSCXX+= -Wno-ctor-dtor-privacy -fmessage-length=0
 PICSWITCH:=
 
 # Compiler flags for compiling static object in single threaded environment with graphical user interface
@@ -108,11 +108,11 @@ CFLAGSPROF=
 # Compiler flags for debugging
 CFLAGSDEBUG=-g
 CFLAGSDBGUTIL=
-# Compiler flags for enabling optimazations
+# Compiler flags for enabling optimizations
 CFLAGSOPT=-s -O1 -march=pentium -mtune=pentium4
-# Compiler flags for disabling optimazations
+# Compiler flags for disabling optimizations
 CFLAGSNOOPT=-O0
-# Compiler flags for discibing the output path
+# Compiler flags for describing the output path
 CFLAGSOUTOBJ=-o
 
 # Warnings switched off for CXX:
@@ -167,8 +167,8 @@ MODULES_WITH_WARNINGS := \
 
 
 # switches for dynamic and static linking
-STATIC		= 
-DYNAMIC		= 
+STATIC		=
+DYNAMIC		=
 
 # this is needed to allow stl headers to include os2.h instead of svpm.h
 # in earlier stages of project build. Once svpm.h is in place, we can
@@ -184,7 +184,7 @@ CFLAGSCXX+=$(LIBXML_CFLAGS) -I$(JAVA_HOME)/include -I$(JAVA_HOME)/include/os2
 # name of linker
 LINK*=gcc
 # default linker flags
-LINKFLAGS= -Zbin-files -Zmap 
+LINKFLAGS= -Zbin-files -Zmap
 #27/01/06 bin-files confuses transex/rsc work, removed.
 LINKFLAGS= -Zno-fork -Zhigh-mem -Zmap
 LINKFLAGS+=-lcx
@@ -259,7 +259,7 @@ STDLIBGUIST=$(STDLIBCPP)
 STDSHLGUIMT=$(STDLIBCPP)
 STDSHLCUIMT=$(STDLIBCPP)
 
-LIBSTLPORT=$(DYNAMIC) 
+LIBSTLPORT=$(DYNAMIC)
 LIBSTLPORTST=$(STATIC) $(DYNAMIC)
 
 

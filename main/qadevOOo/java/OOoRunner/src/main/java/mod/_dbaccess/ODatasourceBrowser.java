@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package mod._dbaccess;
@@ -72,7 +73,7 @@ import com.sun.star.view.XControlAccess;
  *  <li> <code>com::sun::star::lang::XComponent</code></li>
  * </ul> <p>
  * This object test <b> is NOT </b> designed to be run in several
- * threads concurently.
+ * threads concurrently.
  *
  * @see com.sun.star.container.XChild
  * @see com.sun.star.lang.XInitialization
@@ -103,7 +104,7 @@ public class ODatasourceBrowser extends TestCase {
      * Creates the Desktop service (<code>com.sun.star.frame.Desktop</code>).
      */
     protected void initialize(TestParameters Param, PrintWriter log) {
-        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class, 
+        the_Desk = (XDesktop) UnoRuntime.queryInterface(XDesktop.class,
                                                         DesktopTools.createDesktop(
                                                                 (XMultiServiceFactory)Param.getMSF()));
         System.setProperty("hideMe", "false");
@@ -178,7 +179,7 @@ public class ODatasourceBrowser extends TestCase {
      * @see com.sun.star.frame.XController
      * @see com.sun.star.frame.XDispatchProvider
      */
-    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected synchronized TestEnvironment createTestEnvironment(TestParameters Param,
                                                                  PrintWriter log) {
         log.println("creating a test environment");
 
@@ -203,14 +204,14 @@ public class ODatasourceBrowser extends TestCase {
             log.println("creating a text document");
             xTextDoc = SOF.createTextDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }
 
         shortWait();
 
-        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class, 
+        XModel aModel1 = (XModel) UnoRuntime.queryInterface(XModel.class,
                                                             xTextDoc);
 
         XController secondController = aModel1.getCurrentController();
@@ -262,33 +263,33 @@ public class ODatasourceBrowser extends TestCase {
                                             XInitialization.class, oObj);
             xInit.initialize(params);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't initialize document", e);
         }
 
         shortWait();
 
-        XControlShape aShape = FormTools.createControlShape(xTextDoc, 3000, 
-                                                            4500, 15000, 10000, 
+        XControlShape aShape = FormTools.createControlShape(xTextDoc, 3000,
+                                                            4500, 15000, 10000,
                                                             "CommandButton");
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
 
         XControlModel shapeModel = aShape.getControl();
 
         XControlAccess xCtrlAccess = (XControlAccess) UnoRuntime.queryInterface(
-                                             XControlAccess.class, 
+                                             XControlAccess.class,
                                              secondController);
         XControl xCtrl = null;
 
         try {
             xCtrl = xCtrlAccess.getControl(shapeModel);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             e.printStackTrace(log);
         }
 
-        XWindow docWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow docWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                                 xCtrl);
         log.println("creating a new environment for ODatasourceBrowser object");
 
@@ -307,15 +308,15 @@ public class ODatasourceBrowser extends TestCase {
         tEnv.addObjRelation("HasViewData", new Boolean(false));
 
 
-        // Addig relation for XDispatchProvider
-        tEnv.addObjRelation("XDispatchProvider.URL", 
+        // Adding relation for XDispatchProvider
+        tEnv.addObjRelation("XDispatchProvider.URL",
                             ".uno:DataSourceBrowser/FormLetter");
 
         return tEnv;
     } // finish method getTestEnvironment
 
     /**
-    * Sleeps for 0.2 sec. to allow StarOffice to react on <code>
+    * Sleeps for 0.2 sec. to allow OpenOffice to react on <code>
     * reset</code> call.
     */
     private void shortWait() {
@@ -326,3 +327,4 @@ public class ODatasourceBrowser extends TestCase {
         }
     }
 } // finish class oDatasourceBrowser
+

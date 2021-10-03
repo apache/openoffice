@@ -60,10 +60,15 @@ distclean .PHONY: clean
 
 clean .PHONY:
 	@test -n "$(INPATH)" || (echo Build environment not set; exit 1)
+	@test -n "$(OUTPATH)" || (echo Build environment not set; exit 1)
 	-rm -rf */$(INPATH)
+	-rm -rf */$(OUTPATH)
 	-rm -rf solver/*/$(INPATH)
+	-rm -rf solver/*/$(OUTPATH)
+	-rm -rf solenv/inc/reporevision.lst
 .IF "$(ADDITIONAL_REPOSITORIES)"!=""
 	-rm -rf $(foreach,f,$(ADDITIONAL_REPOSITORIES) $f/*/$(INPATH))
+	-rm -rf $(foreach,f,$(ADDITIONAL_REPOSITORIES) $f/*/$(OUTPATH))
 .ENDIF
 .IF "$(BUILD_DMAKE)"!="NO"
 	-echo cleaning up dmake...

@@ -103,11 +103,6 @@ ifneq ($(COM),GCC)
 	gb_CXXFLAGS += -DHAVE_STL_INCLUDE_PATH -I../v1/
 endif
 
-ifeq ($(MACOSX_DEPLOYMENT_TARGET),$(filter $(MACOSX_DEPLOYMENT_TARGET), 10.7 10.8))
-	gb_CXXFLAGS += -std=c++11 -stdlib=libc++
-	gb_macos_LDFLAGS := -std=c++11 -stdlib=libc++
-endif
-
 # these are to get g++ to switch to Objective-C++ mode
 # (see toolkit module for a case where it is necessary to do it this way)
 gb_OBJCFLAGS := -x objective-c -fobjc-exceptions

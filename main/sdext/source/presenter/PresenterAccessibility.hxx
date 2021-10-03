@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,94 +54,94 @@ class PresenterController;
 class PresenterTextView;
 
 namespace {
-    typedef ::cppu::WeakComponentImplHelper3 <
-        css::accessibility::XAccessible,
-        css::lang::XInitialization,
-        css::awt::XFocusListener
-    > PresenterAccessibleInterfaceBase;
+	typedef ::cppu::WeakComponentImplHelper3 <
+		css::accessibility::XAccessible,
+		css::lang::XInitialization,
+		css::awt::XFocusListener
+	> PresenterAccessibleInterfaceBase;
 }
 
 class PresenterAccessible
-    : public ::cppu::BaseMutex,
-      public PresenterAccessibleInterfaceBase
+	: public ::cppu::BaseMutex,
+	  public PresenterAccessibleInterfaceBase
 {
 public:
-    PresenterAccessible (
-        const css::uno::Reference<css::uno::XComponentContext>& rxContext,
-        const ::rtl::Reference<PresenterController>& rpPresenterController,
-        const css::uno::Reference<css::drawing::framework::XPane>& rxMainPane);
-    virtual ~PresenterAccessible (void);
+	PresenterAccessible (
+		const css::uno::Reference<css::uno::XComponentContext>& rxContext,
+		const ::rtl::Reference<PresenterController>& rpPresenterController,
+		const css::uno::Reference<css::drawing::framework::XPane>& rxMainPane);
+	virtual ~PresenterAccessible (void);
 
-    void SetAccessibleParent (const cssu::Reference<cssa::XAccessible>& rxAccessibleParent);
+	void SetAccessibleParent (const cssu::Reference<cssa::XAccessible>& rxAccessibleParent);
 
-    void UpdateAccessibilityHierarchy (void);
-        
-    void NotifyCurrentSlideChange (
-        const sal_Int32 nCurrentSlideIndex,
-        const sal_Int32 nSlideCount);
+	void UpdateAccessibilityHierarchy (void);
 
-    /** Return whether accessibility support is active, i.e. whether
-        somebody has called getAccessibleContext() yet.
-    */
-    bool IsAccessibilityActive (void) const;
+	void NotifyCurrentSlideChange (
+		const sal_Int32 nCurrentSlideIndex,
+		const sal_Int32 nSlideCount);
 
-    virtual void SAL_CALL disposing (void);
+	/** Return whether accessibility support is active, i.e. whether
+		somebody has called getAccessibleContext() yet.
+	*/
+	bool IsAccessibilityActive (void) const;
 
-
-    //----- XAccessible -------------------------------------------------------
-
-    virtual cssu::Reference<cssa::XAccessibleContext> SAL_CALL
-        getAccessibleContext (void) 
-        throw (cssu::RuntimeException);
+	virtual void SAL_CALL disposing (void);
 
 
-    //----- XFocusListener ----------------------------------------------------
+	//----- XAccessible -------------------------------------------------------
 
-    virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent)
-        throw (cssu::RuntimeException);
-
-    virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent)
-        throw (cssu::RuntimeException);
-
-    
-    //----- XEventListener ----------------------------------------------------
-
-    virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
-        throw (cssu::RuntimeException);
+	virtual cssu::Reference<cssa::XAccessibleContext> SAL_CALL
+		getAccessibleContext (void)
+		throw (cssu::RuntimeException);
 
 
-    //----- XInitialization ---------------------------------------------------
+	//----- XFocusListener ----------------------------------------------------
 
-    virtual void SAL_CALL initialize (const cssu::Sequence<cssu::Any>& rArguments)
-        throw (cssu::RuntimeException);
+	virtual void SAL_CALL focusGained (const css::awt::FocusEvent& rEvent)
+		throw (cssu::RuntimeException);
 
-    
-    class AccessibleObject;
-    class AccessibleParagraph;
+	virtual void SAL_CALL focusLost (const css::awt::FocusEvent& rEvent)
+		throw (cssu::RuntimeException);
+
+
+	//----- XEventListener ----------------------------------------------------
+
+	virtual void SAL_CALL disposing (const css::lang::EventObject& rEvent)
+		throw (cssu::RuntimeException);
+
+
+	//----- XInitialization ---------------------------------------------------
+
+	virtual void SAL_CALL initialize (const cssu::Sequence<cssu::Any>& rArguments)
+		throw (cssu::RuntimeException);
+
+
+	class AccessibleObject;
+	class AccessibleParagraph;
 
 private:
-    const css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
-    ::rtl::Reference<PresenterController> mpPresenterController;
-    css::uno::Reference<css::drawing::framework::XResourceId> mxMainPaneId;
-    css::uno::Reference<css::drawing::framework::XPane2> mxMainPane;
-    css::uno::Reference<css::awt::XWindow> mxMainWindow;
-    css::uno::Reference<css::awt::XWindow> mxPreviewContentWindow;
-    css::uno::Reference<css::awt::XWindow> mxPreviewBorderWindow;
-    css::uno::Reference<css::awt::XWindow> mxNotesContentWindow;
-    css::uno::Reference<css::awt::XWindow> mxNotesBorderWindow;
-    ::rtl::Reference<AccessibleObject> mpAccessibleConsole;
-    ::rtl::Reference<AccessibleObject> mpAccessiblePreview;
-    ::rtl::Reference<AccessibleObject> mpAccessibleNotes;
-    css::uno::Reference<css::accessibility::XAccessible> mxAccessibleParent;
+	const css::uno::Reference<css::uno::XComponentContext> mxComponentContext;
+	::rtl::Reference<PresenterController> mpPresenterController;
+	css::uno::Reference<css::drawing::framework::XResourceId> mxMainPaneId;
+	css::uno::Reference<css::drawing::framework::XPane2> mxMainPane;
+	css::uno::Reference<css::awt::XWindow> mxMainWindow;
+	css::uno::Reference<css::awt::XWindow> mxPreviewContentWindow;
+	css::uno::Reference<css::awt::XWindow> mxPreviewBorderWindow;
+	css::uno::Reference<css::awt::XWindow> mxNotesContentWindow;
+	css::uno::Reference<css::awt::XWindow> mxNotesBorderWindow;
+	::rtl::Reference<AccessibleObject> mpAccessibleConsole;
+	::rtl::Reference<AccessibleObject> mpAccessiblePreview;
+	::rtl::Reference<AccessibleObject> mpAccessibleNotes;
+	css::uno::Reference<css::accessibility::XAccessible> mxAccessibleParent;
 
-    void UpdateAccessibilityHierarchy (
-        const css::uno::Reference<css::awt::XWindow>& rxPreviewContentWindow,
-        const css::uno::Reference<css::awt::XWindow>& rxPreviewBorderWindow,
-        const ::rtl::OUString& rsTitle,
-        const css::uno::Reference<css::awt::XWindow>& rxNotesContentWindow,
-        const css::uno::Reference<css::awt::XWindow>& rxNotesBorderWindow,
-        const ::boost::shared_ptr<PresenterTextView>& rpNotesTextView);
-    PresenterPaneContainer::SharedPaneDescriptor GetPreviewPane (void) const;
+	void UpdateAccessibilityHierarchy (
+		const css::uno::Reference<css::awt::XWindow>& rxPreviewContentWindow,
+		const css::uno::Reference<css::awt::XWindow>& rxPreviewBorderWindow,
+		const ::rtl::OUString& rsTitle,
+		const css::uno::Reference<css::awt::XWindow>& rxNotesContentWindow,
+		const css::uno::Reference<css::awt::XWindow>& rxNotesBorderWindow,
+		const ::boost::shared_ptr<PresenterTextView>& rpNotesTextView);
+	PresenterPaneContainer::SharedPaneDescriptor GetPreviewPane (void) const;
 };
 
 

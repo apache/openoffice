@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ namespace {
 class AddRemoveEventListener : public ::std::unary_function<void, Reference<XAccessible> >
 {
 public:
-    explicit AddRemoveEventListener(const Reference<XAccessibleEventListener>& rListener, bool bAdd) : 
+    explicit AddRemoveEventListener(const Reference<XAccessibleEventListener>& rListener, bool bAdd) :
         mxListener(rListener), mbAdd(bAdd) {}
 
     void operator() (const Reference<XAccessible>& xAccessible) const
@@ -125,13 +125,13 @@ void ScAccessibleFilterMenu::grabFocus()
 {
 }
 
-sal_Int32 ScAccessibleFilterMenu::getForeground() 
+sal_Int32 ScAccessibleFilterMenu::getForeground()
     throw (RuntimeException)
 {
     return 0;
 }
 
-sal_Int32 ScAccessibleFilterMenu::getBackground() 
+sal_Int32 ScAccessibleFilterMenu::getBackground()
     throw (RuntimeException)
 {
     return 0;
@@ -144,13 +144,13 @@ OUString ScAccessibleFilterMenu::getAccessibleName() throw (RuntimeException)
     return ScAccessibleContextBase::getAccessibleName();
 }
 
-sal_Int32 ScAccessibleFilterMenu::getAccessibleChildCount() 
+sal_Int32 ScAccessibleFilterMenu::getAccessibleChildCount()
     throw (RuntimeException)
 {
     return getMenuItemCount();
 }
 
-Reference<XAccessible> ScAccessibleFilterMenu::getAccessibleChild(sal_Int32 nIndex) 
+Reference<XAccessible> ScAccessibleFilterMenu::getAccessibleChild(sal_Int32 nIndex)
     throw (RuntimeException, IndexOutOfBoundsException)
 {
     if (maMenuItems.size() <= static_cast<size_t>(nIndex))
@@ -159,14 +159,14 @@ Reference<XAccessible> ScAccessibleFilterMenu::getAccessibleChild(sal_Int32 nInd
     return maMenuItems[nIndex];
 }
 
-Reference<XAccessibleStateSet> ScAccessibleFilterMenu::getAccessibleStateSet() 
+Reference<XAccessibleStateSet> ScAccessibleFilterMenu::getAccessibleStateSet()
     throw (RuntimeException)
 {
     updateStates();
     return mxStateSet;
 }
 
-OUString ScAccessibleFilterMenu::getImplementationName() 
+OUString ScAccessibleFilterMenu::getImplementationName()
     throw (RuntimeException)
 {
     return OUString::createFromAscii("ScAccessibleFilterMenu");
@@ -194,7 +194,7 @@ void ScAccessibleFilterMenu::removeEventListener(
 
 // XAccessibleSelection
 
-void ScAccessibleFilterMenu::selectAccessibleChild(sal_Int32 nChildIndex) 
+void ScAccessibleFilterMenu::selectAccessibleChild(sal_Int32 nChildIndex)
     throw (IndexOutOfBoundsException, RuntimeException)
 {
     if (static_cast<size_t>(nChildIndex) >= maMenuItems.size())
@@ -203,7 +203,7 @@ void ScAccessibleFilterMenu::selectAccessibleChild(sal_Int32 nChildIndex)
     mpWindow->setSelectedMenuItem(nChildIndex, false, true);
 }
 
-sal_Bool ScAccessibleFilterMenu::isAccessibleChildSelected(sal_Int32 nChildIndex) 
+sal_Bool ScAccessibleFilterMenu::isAccessibleChildSelected(sal_Int32 nChildIndex)
     throw (IndexOutOfBoundsException, RuntimeException)
 {
     if (static_cast<size_t>(nChildIndex) >= maMenuItems.size())
@@ -219,7 +219,7 @@ void ScAccessibleFilterMenu::clearAccessibleSelection() throw (RuntimeException)
 
 void ScAccessibleFilterMenu::selectAllAccessibleChildren() throw (RuntimeException)
 {
-    // not suported - this is a menu, you can't select all menu items.
+    // not supported - this is a menu, you can't select all menu items.
 }
 
 sal_Int32 ScAccessibleFilterMenu::getSelectedAccessibleChildCount() throw (RuntimeException)
@@ -228,7 +228,7 @@ sal_Int32 ScAccessibleFilterMenu::getSelectedAccessibleChildCount() throw (Runti
     return mpWindow->getSelectedMenuItem() == ScMenuFloatingWindow::MENU_NOT_SELECTED ? 0 : 1;
 }
 
-Reference<XAccessible> ScAccessibleFilterMenu::getSelectedAccessibleChild(sal_Int32 nChildIndex) 
+Reference<XAccessible> ScAccessibleFilterMenu::getSelectedAccessibleChild(sal_Int32 nChildIndex)
     throw (IndexOutOfBoundsException, RuntimeException)
 {
     if (static_cast<size_t>(nChildIndex) >= maMenuItems.size())
@@ -269,7 +269,7 @@ void SAL_CALL ScAccessibleFilterMenu::release() throw ()
 
 // XTypeProvider
 
-Sequence<sal_Int8> ScAccessibleFilterMenu::getImplementationId() 
+Sequence<sal_Int8> ScAccessibleFilterMenu::getImplementationId()
     throw (RuntimeException)
 {
     Sequence<sal_Int8> aId(16);
@@ -281,8 +281,8 @@ Rectangle ScAccessibleFilterMenu::GetBoundingBoxOnScreen() const
 {
     if (mnMenuPos == ScMenuFloatingWindow::MENU_NOT_SELECTED)
         return Rectangle();
-    
-    // Menu object's bounding box is the bounding box of the menu item that 
+
+    // Menu object's bounding box is the bounding box of the menu item that
     // launches the menu, which belongs to the parent window.
     ScMenuFloatingWindow* pParentWin = mpWindow->getParentMenuWindow();
     if (!pParentWin)
@@ -305,7 +305,7 @@ Rectangle ScAccessibleFilterMenu::GetBoundingBox() const
     if (mnMenuPos == ScMenuFloatingWindow::MENU_NOT_SELECTED)
         return Rectangle();
 
-    // Menu object's bounding box is the bounding box of the menu item that 
+    // Menu object's bounding box is the bounding box of the menu item that
     // launches the menu, which belongs to the parent window.
     ScMenuFloatingWindow* pParentWin = mpWindow->getParentMenuWindow();
     if (!pParentWin)
@@ -323,13 +323,13 @@ Rectangle ScAccessibleFilterMenu::GetBoundingBox() const
 
 void ScAccessibleFilterMenu::appendMenuItem(const OUString& rName, bool bEnabled, size_t nMenuPos)
 {
-    // Check weather this menu item is a sub menu or a regular menu item.
+    // Check whether this menu item is a sub menu or a regular menu item.
     ScMenuFloatingWindow* pSubMenu = mpWindow->getSubMenuWindow(nMenuPos);
     Reference<XAccessible> xAccessible;
     if (pSubMenu)
     {
         xAccessible = pSubMenu->CreateAccessible();
-        ScAccessibleFilterMenu* p = 
+        ScAccessibleFilterMenu* p =
             static_cast<ScAccessibleFilterMenu*>(xAccessible.get());
         p->setEnabled(bEnabled);
         p->setMenuPos(nMenuPos);
@@ -337,7 +337,7 @@ void ScAccessibleFilterMenu::appendMenuItem(const OUString& rName, bool bEnabled
     else
     {
         xAccessible.set(new ScAccessibleFilterMenuItem(this, mpWindow, rName, nMenuPos));
-        ScAccessibleFilterMenuItem* p = 
+        ScAccessibleFilterMenuItem* p =
             static_cast<ScAccessibleFilterMenuItem*>(xAccessible.get());
         p->setEnabled(bEnabled);
     }

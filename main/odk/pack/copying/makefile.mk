@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,16 +7,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -167,16 +167,16 @@ DIR_FILE_LIST=\
 	$(SETTINGSLIST) \
 	$(DOCUFILES) \
 	$(INSTALLSCRIPT) \
-	$(DESTIDLLIST)  \
+	$(DESTIDLLIST) \
 	$(DESTINCLUDELIST) \
 	$(DESTCLASSESLIST) \
-    $(IDL_DOCU_INDEX_FILE) \
-    $(CONVERTTAGFLAG) 
+	$(IDL_DOCU_INDEX_FILE) \
+	$(CONVERTTAGFLAG)
 
 .IF "$(OS)"=="MACOSX"
 DIR_FILE_LIST += $(DESTDIRBIN)/addsym-macosx.sh
 .ENDIF
-    
+
 .IF "$(SOLAR_JAVA)" != ""
 DIR_FILE_LIST += $(DESTDIRJAR)/win/unowinreg.dll
 .ENDIF
@@ -216,7 +216,7 @@ all : CLEAN_DKVERSION_CHECK \
 
 CLEANUP_DKVERSION_FILE=$(DESTDIRSETTINGS)/dk.mk
 
-    
+
 CLEAN_DKVERSION_CHECK:
 	@@-rm -f $(CLEANUP_DKVERSION_FILE)
 
@@ -231,22 +231,24 @@ $(DESTDIRSETTINGS)/dk.mk : dk.mk
 	tr -d "\015" < dk.mk | sed -e 's/@@RELEASE@@/$(PRODUCT_RELEASE)/' -e 's/@@BUILDID@@/$(RSCREVISION)/' -e 's/@@SCMREVISION@@/$(SCMREVISION)/'> $@
 
 $(CONVERTTAGFLAG) : $(DOCUHTMLFILES)
-#    $(PERL) $(CONVERTTAGSCRIPT) 1 "$(TITLE)" "$(OFFICEPRODUCTNAME)" $(DOCUHTMLFILES)
-    @echo "tags converted" > $@
+#	$(PERL) $(CONVERTTAGSCRIPT) 1 "$(TITLE)" "$(OFFICEPRODUCTNAME)" $(DOCUHTMLFILES)
+	@echo "tags converted" > $@
 
 $(IDL_DOCU_CLEANUP_FLAG) : $(IDL_CHAPTER_REFS) $(PRJ)/docs/common/ref/idl.css $(DESTIDLLIST)
 	@@-$(MY_DELETE_RECURSIVE) $(DESTDIRGENIDLREF)
 	$(TOUCH) $@
 
-$(IDL_DOCU_INDEX_FILE) : $(IDL_DOCU_CLEANUP_FLAG) 
-	-$(MKDIRHIER) $(@:d) 
-	$(MY_AUTODOC) -html $(DESTDIRGENIDLREF) -dvgroot "http://wiki.services.openoffice.org/wiki" \
+$(IDL_DOCU_INDEX_FILE) : $(IDL_DOCU_CLEANUP_FLAG)
+	-$(MKDIRHIER) $(@:d)
+	$(MY_AUTODOC) -html $(DESTDIRGENIDLREF) -dvgroot "https://wiki.openoffice.org/wiki" \
 		-name $(IDLDOCREFNAME) -lg idl -dvgfile $(IDL_CHAPTER_REFS) -t $(DESTDIRIDL)
 	-rm $(@:d)/idl.css
 	$(MY_TEXTCOPY) $(MY_TEXTCOPY_SOURCEPRE) $(PRJ)/docs/common/ref/idl.css $(MY_TEXTCOPY_TARGETPRE) $(@:d:d)/idl.css
 
- 
+
 .IF "$(SOLAR_JAVA)" != ""
 $(MYZIPTARGET) : $(BIN)/unowinreg.dll $(DESTCLASSESLIST)
-    cd $(MYZIPDIR) && zip $(MYZIPFLAGS) ../../../bin/$(MYZIPTARGET:b) $(MYZIPLIST)
+	cd $(MYZIPDIR) && zip $(MYZIPFLAGS) ../../../bin/$(MYZIPTARGET:b) $(MYZIPLIST)
 .ENDIF
+
+# vim: set noet ts=4 sw=4:

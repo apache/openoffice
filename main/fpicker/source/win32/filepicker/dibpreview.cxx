@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -59,7 +59,7 @@ using rtl::OUString;
 
 namespace /* private */
 {
-    const LPTSTR CURRENT_INSTANCE = TEXT("CurrInst");
+	const LPTSTR CURRENT_INSTANCE = TEXT("CurrInst");
 };
 
 //------------------------------------------------------------------------
@@ -69,10 +69,10 @@ namespace /* private */
 #define PREVIEWWND_CLASS_NAME TEXT("DIBPreviewWnd###")
 
 // means 3 pixel left and 3 pixel right
-#define HORZ_BODER_SPACE    6
+#define HORZ_BORDER_SPACE	6
 
 // means 3 pixel top and 3 pixel bottom
-#define VERT_BORDER_SPACE   6
+#define VERT_BORDER_SPACE	6
 
 //---------------------------------------------------
 // static member initialization
@@ -102,13 +102,13 @@ CDIBPreview::CDIBPreview(HINSTANCE instance,HWND parent,sal_Bool bShowWindow) :
 		TEXT(""),
 		dwStyle,
 		0, 0, 0, 0,
-        parent,
+		parent,
 		(HMENU)0x0, // for child windows this will
 					// be used as child window identifier
 		m_Instance,
-        (LPVOID)this // pass a pointer to the current
-                     // instance of this class
-    );
+		(LPVOID)this // pass a pointer to the current
+					 // instance of this class
+	);
 
 	bool bSuccess = IsWindow(m_Hwnd);
 
@@ -127,12 +127,12 @@ CDIBPreview::CDIBPreview(HINSTANCE instance,HWND parent,sal_Bool bShowWindow) :
 
 CDIBPreview::~CDIBPreview( )
 {
-    // remember: we don't have to destroy the
-    // preview window because it will be destroyed
-    // by it's parent window (the FileOpen dialog)
-    // but we have to unregister the window class
-    //if ( m_bWndClassRegistered )
-    UnregisterDibPreviewWindowClass();
+	// remember: we don't have to destroy the
+	// preview window because it will be destroyed
+	// by its parent window (the FileOpen dialog)
+	// but we have to unregister the window class
+	//if ( m_bWndClassRegistered )
+	UnregisterDibPreviewWindowClass();
 }
 
 //-------------------------------
@@ -142,12 +142,12 @@ CDIBPreview::~CDIBPreview( )
 sal_Int32 SAL_CALL CDIBPreview::getTargetColorDepth() throw (RuntimeException)
 {
 	HDC hdc = GetDC(m_Hwnd);
-    int clrRes = 0;
+	int clrRes = 0;
 
-    if (hdc)
-        clrRes = GetDeviceCaps(hdc, COLORRES);
+	if (hdc)
+		clrRes = GetDeviceCaps(hdc, COLORRES);
 
-    return clrRes;
+	return clrRes;
 }
 
 //-------------------------------
@@ -161,8 +161,8 @@ sal_Int32 SAL_CALL CDIBPreview::getAvailableWidth() throw (RuntimeException)
 
 	sal_Int32 cx = 0;
 
-    if ( bRet )
-        cx = rect.right;
+	if ( bRet )
+		cx = rect.right;
 
 	return cx;
 }
@@ -178,8 +178,8 @@ sal_Int32 SAL_CALL CDIBPreview::getAvailableHeight() throw (RuntimeException)
 
 	sal_Int32 cy = 0;
 
-    if ( bRet )
-        cy = rect.bottom;
+	if ( bRet )
+		cy = rect.bottom;
 
 	return cy;
 }
@@ -215,7 +215,7 @@ sal_Bool SAL_CALL CDIBPreview::setShowState(sal_Bool bShowState) throw (RuntimeE
 {
 	PreviewBase::setShowState(bShowState);
 	ShowWindow(m_Hwnd, m_bShowState ? SW_SHOW : SW_HIDE);
-    return sal_True;
+	return sal_True;
 }
 
 //-------------------------------
@@ -243,10 +243,10 @@ HWND SAL_CALL CDIBPreview::getWindowHandle() const
 void SAL_CALL CDIBPreview::onPaint(HWND hWnd, HDC hDC)
 {
 	BITMAPFILEHEADER*  pbmfh;
-    BITMAPINFO      *  pbmi;
-    sal_uInt8            *  pBits;
-    int                cxDib;
-    int                cyDib;
+	BITMAPINFO      *  pbmi;
+	sal_uInt8            *  pBits;
+	int                cxDib;
+	int                cyDib;
 
 	osl::MutexGuard aGuard(m_PaintLock);
 
@@ -272,12 +272,12 @@ void SAL_CALL CDIBPreview::onPaint(HWND hWnd, HDC hDC)
 			int nY = abs(nHeight - cyDib) / 2;
 
 			int GDIError = GDI_ERROR;
-            GDIError = StretchDIBits(
+			GDIError = StretchDIBits(
 				hDC, nX, nY, cxDib, cyDib,
 				0, 0, cxDib, cyDib, pBits, pbmi,
 				DIB_RGB_COLORS, SRCCOPY);
-			
-            OSL_ASSERT(GDI_ERROR != GDIError);
+
+			OSL_ASSERT(GDI_ERROR != GDIError);
 
 			// paint the border
 			RECT rc;
@@ -334,16 +334,16 @@ void SAL_CALL CDIBPreview::onPaint(HWND hWnd, HDC hDC)
 //---------------------------------------------------
 
 LRESULT CALLBACK CDIBPreview::WndProc(
-    HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+	HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	LRESULT lResult = 0;
 
 	switch(uMsg)
 	{
 
-    // we connect a pointer to the current instance
-    // with a window instance via SetProp
-    case WM_CREATE:
+	// we connect a pointer to the current instance
+	// with a window instance via SetProp
+	case WM_CREATE:
         {
             LPCREATESTRUCT lpcs =
                 reinterpret_cast< LPCREATESTRUCT >(lParam);
@@ -403,7 +403,7 @@ LRESULT CALLBACK CDIBPreview::WndProc(
 
 ATOM SAL_CALL CDIBPreview::RegisterDibPreviewWindowClass()
 {
-    osl::MutexGuard aGuard( s_Mutex );
+	osl::MutexGuard aGuard( s_Mutex );
 
     if (0 == s_ClassAtom)
     {
@@ -425,7 +425,7 @@ ATOM SAL_CALL CDIBPreview::RegisterDibPreviewWindowClass()
 	    //				 if the dll is unloaded
 	    s_ClassAtom = RegisterClassEx(&wndClsEx);
 
-		OSL_POSTCOND(s_ClassAtom,"Could  not register preview window class");
+		OSL_POSTCOND(s_ClassAtom,"Could not register preview window class");
 
 		if (0 == s_ClassAtom)
 			throw std::runtime_error("Preview window class could not be registered");
@@ -446,23 +446,24 @@ ATOM SAL_CALL CDIBPreview::RegisterDibPreviewWindowClass()
 
 void SAL_CALL CDIBPreview::UnregisterDibPreviewWindowClass()
 {
-    osl::MutexGuard aGuard( s_Mutex );
+	osl::MutexGuard aGuard( s_Mutex );
 
-    OSL_ASSERT( ( (0 != s_ClassAtom) && (s_RegisterDibPreviewWndCount > 0)) ||
-                ( (0 == s_ClassAtom) && (0 == s_RegisterDibPreviewWndCount) ) );
+	OSL_ASSERT( ( (0 != s_ClassAtom) && (s_RegisterDibPreviewWndCount > 0)) ||
+				( (0 == s_ClassAtom) && (0 == s_RegisterDibPreviewWndCount) ) );
 
-    // update the register class counter
-    // and unregister the window class if
-    // counter drops to zero
-    if (0 != s_ClassAtom)
-    {
-        s_RegisterDibPreviewWndCount--;
-        OSL_ASSERT(s_RegisterDibPreviewWndCount >= 0);
-    }
+	// update the register class counter
+	// and unregister the window class if
+	// counter drops to zero
+	if (0 != s_ClassAtom)
+	{
+		s_RegisterDibPreviewWndCount--;
+		OSL_ASSERT(s_RegisterDibPreviewWndCount >= 0);
+	}
 
-    if (0 == s_RegisterDibPreviewWndCount)
-    {
-        UnregisterClass((LPCTSTR)MAKELONG(s_ClassAtom,0),m_Instance);
-        s_ClassAtom = 0;
-    }
+	if (0 == s_RegisterDibPreviewWndCount)
+	{
+		UnregisterClass((LPCTSTR)MAKELONG(s_ClassAtom,0),m_Instance);
+		s_ClassAtom = 0;
+	}
 }
+

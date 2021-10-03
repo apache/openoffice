@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -65,12 +65,12 @@ VCLXAccessibleMenuBar::~VCLXAccessibleMenuBar()
 
 sal_Bool VCLXAccessibleMenuBar::IsFocused()
 {
-    sal_Bool bFocused = sal_False;
+	sal_Bool bFocused = sal_False;
 
-    if ( m_pWindow && m_pWindow->HasFocus() && !IsChildHighlighted() )
-        bFocused = sal_True;
+	if ( m_pWindow && m_pWindow->HasFocus() && !IsChildHighlighted() )
+		bFocused = sal_True;
 
-    return bFocused;
+	return bFocused;
 }
 
 // -----------------------------------------------------------------------------
@@ -81,9 +81,9 @@ IMPL_LINK( VCLXAccessibleMenuBar, WindowEventListener, VclSimpleEvent*, pEvent )
 	if ( pEvent && pEvent->ISA( VclWindowEvent ) )
 	{
 		DBG_ASSERT( ((VclWindowEvent*)pEvent)->GetWindow(), "VCLXAccessibleMenuBar::WindowEventListener: no window!" );
-        if ( !((VclWindowEvent*)pEvent)->GetWindow()->IsAccessibilityEventsSuppressed() || ( pEvent->GetId() == VCLEVENT_OBJECT_DYING ) )
+		if ( !((VclWindowEvent*)pEvent)->GetWindow()->IsAccessibilityEventsSuppressed() || ( pEvent->GetId() == VCLEVENT_OBJECT_DYING ) )
 		{
-		    ProcessWindowEvent( *(VclWindowEvent*)pEvent );
+			ProcessWindowEvent( *(VclWindowEvent*)pEvent );
 		}
 	}
 	return 0;

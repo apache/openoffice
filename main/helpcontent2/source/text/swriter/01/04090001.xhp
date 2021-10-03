@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
       <topic id="textswriter0104090001xml" indexer="include">
          <title xml-lang="en-US" id="tit">Document</title>
@@ -117,7 +116,7 @@
                <paragraph xml-lang="en-US" id="par_id3153302" role="tablecontent" l10n="U" oldref="16">Templates</paragraph>
             </tablecell>
             <tablecell>
-               <paragraph xml-lang="en-US" id="par_id3156123" role="tablecontent" l10n="U" oldref="17">Inserts the filename, the path, or the filename without the file extension of the current template. You can also insert the names of the "Category" and the "Style" formats used in the current template. To view the names of the template categories and the styles used in the templates, choose <emph>File - Templates -</emph><link href="text/shared/01/01110100.xhp" name="Organize"><emph>Organize</emph></link>.</paragraph>
+               <paragraph xml-lang="en-US" id="par_id3156123" role="tablecontent" l10n="U" oldref="17">Inserts the filename, the path, or the filename without the file extension of the current template. You can also insert the names of the "Category" and the "Style" formats used in the current template. To view the names of the template categories and the styles used in the templates, choose <emph>File - Templates - </emph><link href="text/shared/01/01110100.xhp" name="Organize"><emph>Organize</emph></link>.</paragraph>
             </tablecell>
          </tablerow>
          <tablerow>
@@ -138,7 +137,7 @@
 <paragraph xml-lang="en-US" id="hd_id3150660" role="heading" level="2" l10n="CHG"
                     oldref="27">Select<comment>on "Document" and "DocInformation" tab page this is called "Select", on the other tab pages "Selection"</comment></paragraph>
          <paragraph xml-lang="en-US" id="par_id3150678" role="paragraph" l10n="U" oldref="28"><ahelp hid="SW:LISTBOX:TP_FLD_DOK:LB_DOKSELECTION">Lists the available fields for the field type selected in the <emph>Type </emph>list. To insert a field, click the field, and then click <emph>Insert</emph>.</ahelp></paragraph>
-         <paragraph xml-lang="en-US" id="par_id3155537" role="tip" l10n="U" oldref="53">To quickly insert a field from the list, hold down <switchinline select="sys"><caseinline select="MAC">Command 
+         <paragraph xml-lang="en-US" id="par_id3155537" role="tip" l10n="U" oldref="53">To quickly insert a field from the list, hold down <switchinline select="sys"><caseinline select="MAC">Command
 </caseinline><defaultinline>Ctrl</defaultinline></switchinline> and double-click the field.</paragraph>
          <table id="tbl_id3148722">
             <tablerow>
@@ -191,7 +190,7 @@
                     oldref="41">Format</paragraph>
          <paragraph xml-lang="en-US" id="par_id3145613" role="paragraph" l10n="U" oldref="42"><ahelp hid="SW:LISTBOX:TP_FLD_DOK:LB_DOKFORMAT">Click the format that you want to apply to the selected field, or click "Additional formats" to define a custom format.</ahelp></paragraph>
       </section>
-      <paragraph xml-lang="en-US" id="par_id3150138" role="paragraph" l10n="U" oldref="49"><variable id="datumuhrzeitformat">When you click "Additional formats", the <link href="text/shared/01/05020300.xhp" name="Number Format"><emph>Number Format</emph></link> dialog opens, where you can define a custom format. 
+      <paragraph xml-lang="en-US" id="par_id3150138" role="paragraph" l10n="U" oldref="49"><variable id="datumuhrzeitformat">When you click "Additional formats", the <link href="text/shared/01/05020300.xhp" name="Number Format"><emph>Number Format</emph></link> dialog opens, where you can define a custom format.
 </variable></paragraph>
       <paragraph xml-lang="en-US" id="par_id3154867" role="paragraph" l10n="U" oldref="50">If you choose "Chapter number without separator" for a chapter field, the separators that are specified for chapter number in <link href="text/swriter/01/06060000.xhp" name="Tools - Outline numbering"><emph>Tools - Outline numbering</emph></link> are not displayed.</paragraph>
       <paragraph xml-lang="en-US" id="par_id3156079" role="paragraph" l10n="U" oldref="63">If you choose "chapter number" as the <emph>format</emph> for reference fields, only the number of the chapter heading containing the referenced object is displayed in the field. If the paragraph style for the chapter heading is not numbered, the field is left blank.</paragraph>

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,22 +48,22 @@ namespace sdr
 		{
 			const basegfx::B2DPolygon& rEdgeTrack = GetEdgeObj().getEdgeTrack();
 
-            // what to do when no EdgeTrack is provided (HitTest and selectability) ?
+			// what to do when no EdgeTrack is provided (HitTest and selectability) ?
 			OSL_ENSURE(0 != rEdgeTrack.count(), "Connectors with no geometry are not allowed (!)");
 
 			// ckeck attributes
 			const SfxItemSet& rItemSet = GetEdgeObj().GetMergedItemSet();
 			const drawinglayer::attribute::SdrLineShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineShadowTextAttribute(
-                    rItemSet, 
-                    GetEdgeObj().getText(0)));
+					rItemSet,
+					GetEdgeObj().getText(0)));
 
-			// create primitive. Always create primitives to allow the decomposition of 
+			// create primitive. Always create primitives to allow the decomposition of
 			// SdrConnectorPrimitive2D to create needed invisible elements for HitTest
 			// and/or BoundRect
 			const drawinglayer::primitive2d::Primitive2DReference xReference(
 				new drawinglayer::primitive2d::SdrConnectorPrimitive2D(
-					aAttribute, 
+					aAttribute,
 					rEdgeTrack));
 
 			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);

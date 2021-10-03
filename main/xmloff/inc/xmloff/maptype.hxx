@@ -44,7 +44,7 @@ struct XMLPropertyMapEntry
 	sal_Int32		mnType;			/** Bit 0..23 : XML-Type of its value
 									    Bit 24..31: The flags specifies
 			                                        additional rules how
-													to im/export the porperty */
+													to im/export the property */
 	sal_Int16		mnContextId;	/// User defined id for context filtering
     SvtSaveOptions::ODFDefaultVersion   mnEarliestODFVersionForExport;// no export when the used ODF version is lower than this
 };

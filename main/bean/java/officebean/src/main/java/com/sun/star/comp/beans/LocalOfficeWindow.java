@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,7 +45,7 @@ import com.sun.star.uno.Type;
 import com.sun.star.beans.NamedValue;
 
 /**
- * This class represents a local office window. 
+ * This class represents a local office window.
  *
  * @since OOo 2.0.0
  */
@@ -59,9 +59,9 @@ public class LocalOfficeWindow
 	private boolean 			bPeer = false;
 
 	/**
-	 * Construnctor.
+	 * Constructor.
 	 *
-	 * @param connection The office connection object the window 
+	 * @param connection The office connection object the window
 	 *	belongs to.
 	 */
 	protected LocalOfficeWindow(OfficeConnection connection)
@@ -71,7 +71,7 @@ public class LocalOfficeWindow
 	}
 
 	/**
-	 * Retrives an AWT component object associated with the OfficeWindow.
+	 * Retrieves an AWT component object associated with the OfficeWindow.
 	 *
 	 * @return The AWT component object associated with the OfficeWindow.
 	 */
@@ -81,7 +81,7 @@ public class LocalOfficeWindow
 	}
 
 	/**
-	 * Retrives an UNO XWindowPeer object associated with the OfficeWindow.
+	 * Retrieves an UNO XWindowPeer object associated with the OfficeWindow.
 	 *
 	 * @return The UNO XWindowPeer object associated with the OfficeWindow.
 	 */
@@ -109,10 +109,10 @@ public class LocalOfficeWindow
 	* Returns an AWT toolkit.
         */
        private XToolkit queryAWTToolkit()
-               throws com.sun.star.uno.Exception 
-       {
+               throws com.sun.star.uno.Exception
+		{
 			// Create a UNO toolkit.
-			XMultiComponentFactory  compfactory;
+			XMultiComponentFactory compfactory;
 			XComponentContext xContext = mConnection.getComponentContext();
 			if ( xContext != null )
 			{
@@ -125,8 +125,8 @@ public class LocalOfficeWindow
 			}
 			else
 				return null;
-       }
- 
+		}
+
        	/// called when system parent is available, reparents the bean window
 	private synchronized void aquireSystemWindow()
 	{
@@ -173,25 +173,25 @@ public class LocalOfficeWindow
 			aquireSystemWindow();
 		else
 			releaseSystemWindow();
-	}	
-	 
+	}
+
        /** Factory method for a UNO AWT toolkit window as a child of this Java window.
 	*
 	*/
        private synchronized XWindowPeer createUNOWindowPeer()
        {
-		try 
+		try
 		{
 			// get this windows native window type
-            int type = getNativeWindowSystemType();
+			int type = getNativeWindowSystemType();
 
-            // Java AWT windows only have a system window when showing.
-            XWindowPeer parentPeer;
-            if ( isShowing() )
-            {
+			// Java AWT windows only have a system window when showing.
+			XWindowPeer parentPeer;
+			if ( isShowing() )
+			{
 				// create direct parent relationship
 				//setVisible( true );
-                parentPeer = new JavaWindowPeerFake(getWrappedWindowHandle(), type);
+				parentPeer = new JavaWindowPeerFake(getWrappedWindowHandle(), type);
 				bPeer = true;
                         }
                         else
@@ -208,15 +208,15 @@ public class LocalOfficeWindow
 			desc.Parent = parentPeer;
 			desc.Bounds = aRect;
 			desc.WindowServiceName = "workwindow";
-			desc.WindowAttributes = (type == SystemDependent.SYSTEM_WIN32)	
+			desc.WindowAttributes = (type == SystemDependent.SYSTEM_WIN32)
 				? WindowAttribute.SHOW : 0;
 			mWindow	= queryAWTToolkit().createWindow(desc);
 
 
 			// set initial visibility
-            XWindow aWindow = (XWindow)UnoRuntime.queryInterface(XWindow.class, mWindow);
+			XWindow aWindow = (XWindow)UnoRuntime.queryInterface(XWindow.class, mWindow);
 			aWindow.setVisible( bPeer );
-		} 
+		}
 		catch (com.sun.star.uno.Exception exp) {
 		}
 
@@ -224,7 +224,7 @@ public class LocalOfficeWindow
 	}
     /** We make sure that the office window is notified that the parent
      *  will be removed.
-     */   
+     */
     public void removeNotify()
     {
         try {
@@ -238,47 +238,48 @@ public class LocalOfficeWindow
     }
 
 	/**
-	 * Retrives a platform dependent system window identifier.
+	 * Retrieves a platform dependent system window identifier.
 	 *
 	 * @return The system window identifier.
 	 */
-    private native long getNativeWindow();
+	private native long getNativeWindow();
 
 	/**
-	 * Retrives a platform dependent system window type.
+	 * Retrieves a platform dependent system window type.
 	 *
 	 * @return The system window type.
 	 */
 	private native int getNativeWindowSystemType();
 
-    /**
-    Returns an Any containing a sequences of com.sun.star.beans.NamedValue. One NamedValue
-    contains the name "WINDOW" and the value is a Long representing the window handle.
-    The second NamedValue  has the name "XEMBED" and the value is true, when the XEmbed
-    protocol shall be used fore embedding the native Window.
-    */
-    protected Any getWrappedWindowHandle()
-    {
-                
-        NamedValue window = new NamedValue(
-            "WINDOW", new Any(new Type(Long.class), getNativeWindow()));
-        NamedValue xembed = new NamedValue(
-            "XEMBED", new Any(new Type(Boolean.class), false));
+	/**
+	Returns an Any containing a sequences of com.sun.star.beans.NamedValue. One NamedValue
+	contains the name "WINDOW" and the value is a Long representing the window handle.
+	The second NamedValue has the name "XEMBED" and the value is true, when the XEmbed
+	protocol shall be used fore embedding the native Window.
+	*/
+	protected Any getWrappedWindowHandle()
+	{
 
-        if (getNativeWindowSystemType() == SystemDependent.SYSTEM_XWINDOW )
-        {
-            String vendor = System.getProperty("java.vendor");
-            if (vendor.equals("Sun Microsystems Inc.")
-                && Boolean.valueOf(System.getProperty("sun.awt.xembedserver")).booleanValue())
-            {
-                xembed = new NamedValue(
-                    "XEMBED",
-                    new Any(new Type(Boolean.class), true));
-            }
-        }
-        return new Any(
-            new Type("[]com.sun.star.beans.NamedValue"),
-            new NamedValue[] {window, xembed});
-    }
+		NamedValue window = new NamedValue(
+			"WINDOW", new Any(new Type(Long.class), getNativeWindow()));
+		NamedValue xembed = new NamedValue(
+			"XEMBED", new Any(new Type(Boolean.class), false));
+
+		if (getNativeWindowSystemType() == SystemDependent.SYSTEM_XWINDOW )
+		{
+			String vendor = System.getProperty("java.vendor");
+			if (vendor.equals("Sun Microsystems Inc.")
+				&& Boolean.valueOf(System.getProperty("sun.awt.xembedserver")).booleanValue())
+			{
+				xembed = new NamedValue(
+					"XEMBED",
+					new Any(new Type(Boolean.class), true));
+			}
+		}
+		return new Any(
+			new Type("[]com.sun.star.beans.NamedValue"),
+			new NamedValue[] {window, xembed});
+	}
 
 }
+

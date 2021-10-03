@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -75,12 +75,12 @@ sal_Bool OAccessibleMenuComponent::IsEnabled()
 
 sal_Bool OAccessibleMenuComponent::IsVisible()
 {
-    sal_Bool bVisible = sal_False;
+	sal_Bool bVisible = sal_False;
 
 	if ( m_pMenu )
-        bVisible = m_pMenu->IsMenuVisible();
+		bVisible = m_pMenu->IsMenuVisible();
 
-    return bVisible;
+	return bVisible;
 }
 
 // -----------------------------------------------------------------------------
@@ -88,27 +88,27 @@ sal_Bool OAccessibleMenuComponent::IsVisible()
 void OAccessibleMenuComponent::FillAccessibleStateSet( utl::AccessibleStateSetHelper& rStateSet )
 {
 	if ( IsEnabled() )
-    {
-        rStateSet.AddState( AccessibleStateType::ENABLED );
-        rStateSet.AddState( AccessibleStateType::SENSITIVE );
-    }
+	{
+		rStateSet.AddState( AccessibleStateType::ENABLED );
+		rStateSet.AddState( AccessibleStateType::SENSITIVE );
+	}
 
 	rStateSet.AddState( AccessibleStateType::FOCUSABLE );
 
 	if ( IsFocused() )
 		rStateSet.AddState( AccessibleStateType::FOCUSED );
 
-    if ( IsVisible() )
-    {
-        rStateSet.AddState( AccessibleStateType::VISIBLE );
-        rStateSet.AddState( AccessibleStateType::SHOWING );
-    }
+	if ( IsVisible() )
+	{
+		rStateSet.AddState( AccessibleStateType::VISIBLE );
+		rStateSet.AddState( AccessibleStateType::SHOWING );
+	}
 
-    rStateSet.AddState( AccessibleStateType::OPAQUE );
+	rStateSet.AddState( AccessibleStateType::OPAQUE );
 }
 
 // -----------------------------------------------------------------------------
-// OCommonAccessibleComponent 
+// OCommonAccessibleComponent
 // -----------------------------------------------------------------------------
 
 awt::Rectangle OAccessibleMenuComponent::implGetBounds() throw (RuntimeException)
@@ -128,7 +128,7 @@ awt::Rectangle OAccessibleMenuComponent::implGetBounds() throw (RuntimeException
 			Reference< XAccessible > xParent = getAccessibleParent();
 			if ( xParent.is() )
 			{
-				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );				
+				Reference< XAccessibleComponent > xParentComponent( xParent->getAccessibleContext(), UNO_QUERY );
 				if ( xParentComponent.is() )
 				{
 					awt::Point aParentScreenLoc = xParentComponent->getLocationOnScreen();
@@ -164,7 +164,7 @@ sal_Int32 OAccessibleMenuComponent::getAccessibleChildCount() throw (RuntimeExce
 {
 	OExternalLockGuard aGuard( this );
 
-	return GetChildCount(); 
+	return GetChildCount();
 }
 
 // -----------------------------------------------------------------------------
@@ -242,9 +242,9 @@ Reference< XAccessibleRelationSet > OAccessibleMenuComponent::getAccessibleRelat
 {
 	OExternalLockGuard aGuard( this );
 
-    utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
+	utl::AccessibleRelationSetHelper* pRelationSetHelper = new utl::AccessibleRelationSetHelper;
 	Reference< XAccessibleRelationSet > xSet = pRelationSetHelper;
-    return xSet;
+	return xSet;
 }
 
 // -----------------------------------------------------------------------------
@@ -281,7 +281,7 @@ awt::Point OAccessibleMenuComponent::getLocationOnScreen(  ) throw (RuntimeExcep
 		if ( pWindow )
 		{
 			Rectangle aRect = pWindow->GetWindowExtentsRelative( NULL );
-			aPos = AWTPoint( aRect.TopLeft() );			
+			aPos = AWTPoint( aRect.TopLeft() );
 		}
 	}
 
@@ -308,7 +308,7 @@ sal_Int32 OAccessibleMenuComponent::getForeground(	) throw (RuntimeException)
 {
 	OExternalLockGuard aGuard( this );
 
-    const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
+	const StyleSettings& rStyleSettings = Application::GetSettings().GetStyleSettings();
 	sal_Int32 nColor = rStyleSettings.GetMenuTextColor().GetColor();
 
 	return nColor;
@@ -387,13 +387,13 @@ void OAccessibleMenuComponent::selectAccessibleChild( sal_Int32 nChildIndex ) th
 // -----------------------------------------------------------------------------
 
 sal_Bool OAccessibleMenuComponent::isAccessibleChildSelected( sal_Int32 nChildIndex ) throw (IndexOutOfBoundsException, RuntimeException)
-{	
+{
 	OExternalLockGuard aGuard( this );
 
 	if ( nChildIndex < 0 || nChildIndex >= GetChildCount() )
 		throw IndexOutOfBoundsException();
 
-	return IsChildSelected( nChildIndex );	
+	return IsChildSelected( nChildIndex );
 }
 
 // -----------------------------------------------------------------------------
@@ -421,7 +421,7 @@ sal_Int32 OAccessibleMenuComponent::getSelectedAccessibleChildCount(  ) throw (R
 	sal_Int32 nRet = 0;
 
 	for ( sal_Int32 i = 0, nCount = GetChildCount(); i < nCount; i++ )
-	{		
+	{
 		if ( IsChildSelected( i ) )
 			++nRet;
 	}
@@ -441,7 +441,7 @@ Reference< XAccessible > OAccessibleMenuComponent::getSelectedAccessibleChild( s
 	Reference< XAccessible > xChild;
 
 	for ( sal_Int32 i = 0, j = 0, nCount = GetChildCount(); i < nCount; i++ )
-	{		
+	{
 		if ( IsChildSelected( i ) && ( j++ == nSelectedChildIndex ) )
 		{
 			xChild = GetChild( i );

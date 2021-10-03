@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -129,19 +129,19 @@ namespace accessibility
 	{
 		SolarMethodGuard aGuard( *this );
 
-        // TODO: localize this!
-        //String sName = mpBrowseBox->GetColumnDescription( getColumnPos( ) );
-		
-        //if ( 0 == sName.Len() )
-        //{
-        //    sName = String::CreateFromAscii( "Column " );
-			String  sName = String::CreateFromAscii( "Column " );
-            sName += String::CreateFromInt32( getColumnPos( ) - 1 );
-        //}
-        sName += String::CreateFromAscii( ", Row " );
-        sName += String::CreateFromInt32( getRowPos( ) );
+		// TODO: localize this!
+		//String sName = mpBrowseBox->GetColumnDescription( getColumnPos( ) );
 
-        return ::rtl::OUString( sName );
+		//if ( 0 == sName.Len() )
+		//{
+		//	sName = String::CreateFromAscii( "Column " );
+			String sName = String::CreateFromAscii( "Column " );
+			sName += String::CreateFromInt32( getColumnPos( ) - 1 );
+		//}
+		sName += String::CreateFromAscii( ", Row " );
+		sName += String::CreateFromInt32( getRowPos( ) );
+
+		return ::rtl::OUString( sName );
 	}
 
 	// -----------------------------------------------------------------------------
@@ -230,41 +230,42 @@ namespace accessibility
 	{
 		if ( !m_pBrowseBox || !m_xControlAccessible.is() )
 			throw DisposedException();
-	        Reference< XAccessibleContext > xMyContext( m_aContext );
-        	if ( !xMyContext.is() )
-	        {
-		    Reference< XAccessibleContext > xInnerContext = m_xControlAccessible->getAccessibleContext();
-		    Reference< XAccessible > xMe( this );
+			Reference< XAccessibleContext > xMyContext( m_aContext );
+			if ( !xMyContext.is() )
+			{
+			Reference< XAccessibleContext > xInnerContext = m_xControlAccessible->getAccessibleContext();
+			Reference< XAccessible > xMe( this );
 
-        	    xMyContext = new EditBrowseBoxTableCell( m_xParent, xMe, xInnerContext, *m_pBrowseBox, m_xFocusWindow, m_nRowPos, m_nColPos );
-           	 m_aContext = xMyContext;
-        	}
+				xMyContext = new EditBrowseBoxTableCell( m_xParent, xMe, xInnerContext, *m_pBrowseBox, m_xFocusWindow, m_nRowPos, m_nColPos );
+			m_aContext = xMyContext;
+			}
 		return xMyContext;
 	}
 	//--------------------------------------------------------------------
 	void SAL_CALL EditBrowseBoxTableCellAccess::disposing()
 	{
-        // dispose our context, if it still alive
-        Reference< XComponent > xMyContext( (Reference< XAccessibleContext >)m_aContext, UNO_QUERY );
-        if ( xMyContext.is() )
-        {
-            try
-            {
-                xMyContext->dispose();
-            }
-            catch( const Exception& e )
-            {
-                (void)e;
-                OSL_ENSURE( false, "EditBrowseBoxTableCellAccess::disposing: caught an exception while disposing the context!" );
-            }
-        }
+		// dispose our context, if it is still alive
+		Reference< XComponent > xMyContext( (Reference< XAccessibleContext >)m_aContext, UNO_QUERY );
+		if ( xMyContext.is() )
+		{
+			try
+			{
+				xMyContext->dispose();
+			}
+			catch( const Exception& e )
+			{
+				(void)e;
+				OSL_ENSURE( false, "EditBrowseBoxTableCellAccess::disposing: caught an exception while disposing the context!" );
+			}
+		}
 
-        m_pBrowseBox = NULL;
-        m_xControlAccessible.clear();
-        m_aContext = Reference< XAccessibleContext >( );
-        // NO dispose of the inner object there: it is the XAccessible of an window, and disposing
-        // it would delete the respective VCL window
+		m_pBrowseBox = NULL;
+		m_xControlAccessible.clear();
+		m_aContext = Reference< XAccessibleContext >( );
+		// NO dispose of the inner object there: it is the XAccessible of an window, and disposing
+		// it would delete the respective VCL window
 	}
+
 // .................................................................................
 } // namespace accessibility
 // .................................................................................

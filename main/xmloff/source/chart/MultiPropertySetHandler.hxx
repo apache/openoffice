@@ -30,7 +30,7 @@
 
 
 /**	@descr	MultiPropertySetHandler handles the two slightly different
-		interfaces XPropertySet and XMultiPorpertySet for accessing
+		interfaces XPropertySet and XMultiPropertySet for accessing
 		properties of an object.
 
 		It uses the classes PropertyWrapperBase and the template

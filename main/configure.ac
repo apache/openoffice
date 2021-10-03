@@ -1154,14 +1154,16 @@ case "$build_os" in
          	   echo "Disabling gtk-quickstarter - not supported on Mac. Use --disable-systray" >>warn
          	   enable_systray=no
       		fi
+		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
 		if test ! -n "$CC"; then
 		   CC="`xcrun -f clang` -arch x86_64"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -stdlib=libc++ -arch x86_64"
+		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
+		# FIXME: Assumes 10.x, breaks w/ Big Sur
 		_osx_version="10.`expr $_darwin_version - 4`"
 		AC_MSG_NOTICE([Detected Darwin version: $_darwin_version ($_osx_version)])
 		;;

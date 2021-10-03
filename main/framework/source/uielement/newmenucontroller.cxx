@@ -547,8 +547,8 @@ void SAL_CALL NewMenuController::initialize( const Sequence< Any >& aArguments )
 {
     osl::MutexGuard aLock( m_aMutex );
 
-    sal_Bool bInitalized( m_bInitialized );
-    if ( !bInitalized )
+    sal_Bool bInitialized( m_bInitialized );
+    if ( !bInitialized )
     {
 		svt::PopupMenuControllerBase::initialize( aArguments );
 

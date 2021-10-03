@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package mod._dbaccess;
@@ -88,7 +89,7 @@ import com.sun.star.view.XControlAccess;
 *  <li> <code>com::sun::star::container::XContainer</code></li>
 * </ul>
 * This object test <b> is NOT </b> designed to be run in several
-* threads concurently.
+* threads concurrently.
 * @see com.sun.star.util.XModifyBroadcaster
 * @see com.sun.star.form.XGridFieldDataSupplier
 * @see com.sun.star.view.XSelectionSupplier
@@ -137,7 +138,7 @@ public class SbaXGridControl extends TestCase {
             log.println("creating a textdocument");
             xTextDoc = SOF.createTextDoc(null);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             e.printStackTrace(log);
             throw new StatusException("Couldn't create document", e);
         }
@@ -147,7 +148,7 @@ public class SbaXGridControl extends TestCase {
     * Disposes Writer document.
     */
     protected void cleanup(TestParameters tParam, PrintWriter log) {
-        //closing the appearing dialog before disposing the document
+        // closing the appearing dialog before disposing the document
         XInterface toolkit = null;
 
         try {
@@ -164,12 +165,12 @@ public class SbaXGridControl extends TestCase {
 
         Object atw = tk.getActiveTopWindow();
 
-        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class, 
+        XWindow xWindow = (XWindow) UnoRuntime.queryInterface(XWindow.class,
                                                               atw);
 
         XAccessible xRoot = AccessibilityTools.getAccessibleObject(xWindow);
 
-        XInterface button = AccessibilityTools.getAccessibleObjectForRole(xRoot, 
+        XInterface button = AccessibilityTools.getAccessibleObjectForRole(xRoot,
                                                           AccessibleRole.PUSH_BUTTON);
 
         XAccessibleAction action = (XAccessibleAction) UnoRuntime.queryInterface(
@@ -230,7 +231,7 @@ public class SbaXGridControl extends TestCase {
     *      inserted into collection. Is a column instance.</li>
     * </ul>
     */
-    protected TestEnvironment createTestEnvironment(TestParameters Param, 
+    protected TestEnvironment createTestEnvironment(TestParameters Param,
                                                     PrintWriter log) {
         XInterface oObj = null;
         XWindowPeer the_win = null;
@@ -243,7 +244,7 @@ public class SbaXGridControl extends TestCase {
         XPropertySet aControl4 = null;
         XGridColumnFactory columns = null;
 
-        //Insert a ControlShape and get the ControlModel
+        // Insert a ControlShape and get the ControlModel
         XControlShape aShape = createGrid(xTextDoc, 3000, 4500, 15000, 10000);
 
         XControlModel the_Model = aShape.getControl();
@@ -252,9 +253,9 @@ public class SbaXGridControl extends TestCase {
 
         XLoadable formLoader = FormTools.bindForm(xTextDoc);
 
-        //Try to query XControlAccess
+        // Try to query XControlAccess
         XControlAccess the_access = (XControlAccess) UnoRuntime.queryInterface(
-                                            XControlAccess.class, 
+                                            XControlAccess.class,
                                             xTextDoc.getCurrentController());
 
         try {
@@ -273,19 +274,19 @@ public class SbaXGridControl extends TestCase {
             aControl4.setPropertyValue("DataField", "Title");
             aControl4.setPropertyValue("Label", "Title");
         } catch (com.sun.star.lang.IllegalArgumentException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         } catch (com.sun.star.lang.WrappedTargetException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         } catch (com.sun.star.beans.PropertyVetoException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         } catch (com.sun.star.beans.UnknownPropertyException e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             log.println("!!! Couldn't create instance : " + e);
             throw new StatusException("Can't create column instances.", e);
         }
@@ -302,7 +303,7 @@ public class SbaXGridControl extends TestCase {
             throw new StatusException("Can't insert columns", e);
         }
 
-        //now get the OGridControl
+        // now get the OGridControl
         try {
             oObj = the_access.getControl(the_Model);
             the_win = the_access.getControl(the_Model).getPeer();
@@ -317,7 +318,7 @@ public class SbaXGridControl extends TestCase {
 
 
         // creating another window
-        aShape = FormTools.createControlShape(xTextDoc, 3000, 4500, 15000, 
+        aShape = FormTools.createControlShape(xTextDoc, 3000, 4500, 15000,
                                               10000, "TextField");
 
         WriterTools.getDrawPage(xTextDoc).add((XShape) aShape);
@@ -325,12 +326,12 @@ public class SbaXGridControl extends TestCase {
         the_Model = aShape.getControl();
 
 
-        //Try to query XControlAccess
+        // Try to query XControlAccess
         the_access = (XControlAccess) UnoRuntime.queryInterface(
-                             XControlAccess.class, 
+                             XControlAccess.class,
                              xTextDoc.getCurrentController());
 
-        //now get the TextControl
+        // now get the TextControl
         XWindow win = null;
         Object cntrl = null;
 
@@ -348,12 +349,12 @@ public class SbaXGridControl extends TestCase {
         TestEnvironment tEnv = new TestEnvironment(oObj);
 
 
-        //Relations for XSelectionSupplier
-        tEnv.addObjRelation("Selections", 
+        // Relations for XSelectionSupplier
+        tEnv.addObjRelation("Selections",
                             new Object[] {
             new Object[] { new Integer(0) }, new Object[] { new Integer(1) }
         });
-        tEnv.addObjRelation("Comparer", 
+        tEnv.addObjRelation("Comparer",
                             new Comparator() {
             public int compare(Object o1, Object o2) {
                 return ((Integer) o1).compareTo((Integer)o2);
@@ -365,17 +366,17 @@ public class SbaXGridControl extends TestCase {
         });
 
 
-        //Realtion for XContainer
+        // Relation for XContainer
         tEnv.addObjRelation("XContainer.Container", aContainer);
         tEnv.addObjRelation("INSTANCE", aControl3);
         tEnv.addObjRelation("INSTANCE2", aControl4);
 
 
-        //Adding ObjRelation for XView
+        // Adding ObjRelation for XView
         tEnv.addObjRelation("GRAPHICS", aGraphic);
 
 
-        //Adding ObjRelation for XControl
+        // Adding ObjRelation for XControl
         tEnv.addObjRelation("CONTEXT", xTextDoc);
         tEnv.addObjRelation("WINPEER", the_win);
         tEnv.addObjRelation("TOOLKIT", the_kit);
@@ -403,7 +404,7 @@ public class SbaXGridControl extends TestCase {
         final XLoadable formLoaderF = formLoader;
         final XPropertySet ps = (XPropertySet) UnoRuntime.queryInterface(
                                         XPropertySet.class, aControl2);
-        tEnv.addObjRelation("XUpdateBroadcaster.Checker", 
+        tEnv.addObjRelation("XUpdateBroadcaster.Checker",
                             new ifc.form._XUpdateBroadcaster.UpdateChecker() {
             private String lastText = "";
 
@@ -420,7 +421,7 @@ public class SbaXGridControl extends TestCase {
                 XBoundComponent bound = (XBoundComponent) UnoRuntime.queryInterface(
                                                 XBoundComponent.class, ctrl);
                 XResultSetUpdate update = (XResultSetUpdate) UnoRuntime.queryInterface(
-                                                  XResultSetUpdate.class, 
+                                                  XResultSetUpdate.class,
                                                   formLoaderF);
 
                 bound.commit();
@@ -437,16 +438,16 @@ public class SbaXGridControl extends TestCase {
         return tEnv;
     } // finish method getTestEnvironment
 
-    public static XControlShape createGrid(XComponent oDoc, int height, 
+    public static XControlShape createGrid(XComponent oDoc, int height,
                                            int width, int x, int y) {
         Size size = new Size();
         Point position = new Point();
         XControlShape oCShape = null;
         XControlModel aControl = null;
 
-        //get MSF
+        // get MSF
         XMultiServiceFactory oDocMSF = (XMultiServiceFactory) UnoRuntime.queryInterface(
-                                               XMultiServiceFactory.class, 
+                                               XMultiServiceFactory.class,
                                                oDoc);
 
         try {
@@ -456,7 +457,7 @@ public class SbaXGridControl extends TestCase {
                                   "com.sun.star.form.component.GridControl");
             XPropertySet model_props = (XPropertySet) UnoRuntime.queryInterface(
                                                XPropertySet.class, aCon);
-            model_props.setPropertyValue("DefaultControl", 
+            model_props.setPropertyValue("DefaultControl",
                                          "com.sun.star.form.control.InteractionGridControl");
             aControl = (XControlModel) UnoRuntime.queryInterface(
                                XControlModel.class, aCon);
@@ -469,7 +470,7 @@ public class SbaXGridControl extends TestCase {
             oCShape.setSize(size);
             oCShape.setPosition(position);
         } catch (com.sun.star.uno.Exception e) {
-            // Some exception occured.FAILED
+            // Some exception occurred.FAILED
             System.out.println("Couldn't create Grid" + e);
             throw new StatusException("Couldn't create Grid", e);
         }
@@ -479,3 +480,4 @@ public class SbaXGridControl extends TestCase {
         return oCShape;
     } // finish createGrid
 }
+

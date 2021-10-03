@@ -484,7 +484,7 @@ void ScPrintFunc::DrawToDev( ScDocument* pDoc, OutputDevice* pDev, double /* nPr
 	long nTwipsSizeY = (long) pDoc->GetRowHeight( nY1, nY2, nTab );
 
 	//	wenn keine Linien, dann trotzdem Platz fuer den Aussenrahmen (20 Twips = 1pt)
-	//	(HasLines initalisiert aLines auf 0,0,0,0)
+	//	(HasLines initialisiert aLines auf 0,0,0,0)
 	nTwipsSizeX += aLines.Left() + Max( aLines.Right(), 20L );
 	nTwipsSizeY += aLines.Top() +  Max( aLines.Bottom(), 20L );
 
@@ -626,7 +626,7 @@ void ScPrintFunc::DrawToDev( ScDocument* pDoc, OutputDevice* pDev, double /* nPr
 
 void lcl_FillHFParam( ScPrintHFParam& rParam, const SfxItemSet* pHFSet )
 {
-	//	nDistance muss vorher unterschiedlich initalisiert sein
+	//	nDistance muss vorher unterschiedlich initialisiert sein
 
 	if ( pHFSet == NULL )
 	{
