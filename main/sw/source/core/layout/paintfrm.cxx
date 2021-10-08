@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -2736,8 +2736,8 @@ namespace
                                                         rOriginal, rDisplayInfo );
             }
     };
-    
-} // end of anonymous namespace            
+
+} // end of anonymous namespace
 // <--
 
 /*************************************************************************
@@ -2943,10 +2943,10 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 {
                     pLines->LockLines( sal_True );
                     const IDocumentDrawModelAccess* pIDDMA = pSh->getIDocumentDrawModelAccess();
-                    pSh->Imp()->PaintLayer( pIDDMA->GetHellId(), 
-                                            pPrintData, 
+                    pSh->Imp()->PaintLayer( pIDDMA->GetHellId(),
+                                            pPrintData,
                                             aPaintRect,
-                                            &aPageBackgrdColor, 
+                                            &aPageBackgrdColor,
                                             (pPage->IsRightToLeft() ? true : false),
                                             &aSwRedirector );
                     pLines->PaintLines( pSh->GetOut() );
@@ -2977,8 +2977,8 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 {
                     /// OD 29.08.2002 #102450# - add 3rd parameter
                     // OD 09.12.2002 #103045# - add 4th parameter for horizontal text direction.
-                    pSh->Imp()->PaintLayer( pSh->GetDoc()->GetHeavenId(), 
-                                            pPrintData, 
+                    pSh->Imp()->PaintLayer( pSh->GetDoc()->GetHeavenId(),
+                                            pPrintData,
                                             aPaintRect,
                                             &aPageBackgrdColor,
                                             (pPage->IsRightToLeft() ? true : false),
@@ -3421,7 +3421,7 @@ sal_Bool SwFlyFrm::IsPaint( SdrObject *pObj, const ViewShell *pSh )
         // --> OD #i117962#
         if ( pObj->ISA(SwFlyDrawObj) )
         {
-            bPaint = false;        
+            bPaint = false;
         }
         // <--
         else if ( pObj->ISA(SwVirtFlyDrawObj) )
@@ -5456,20 +5456,20 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
     SwPageFrm::GetBorderRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
     _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
-    // paint right shadow
-    if ( bPaintRightShadow )
-    {
-        _pViewShell->GetOut()->SetFillColor( rColor );
-        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-    }
+	// paint right shadow
+//	if ( bPaintRightShadow )
+//	{
+//		_pViewShell->GetOut()->SetFillColor( rColor );
+//		SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//		_pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+//	}
 
-    // paint bottom shadow
-    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
+	// paint bottom shadow
+//	SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
+//	_pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
 
-    _pViewShell->GetOut()->SetFillColor( aFill );
-    _pViewShell->GetOut()->SetLineColor( aLine );
+//	_pViewShell->GetOut()->SetFillColor( aFill );
+//	_pViewShell->GetOut()->SetLineColor( aLine );
 }
 
 //mod #i6193# paint sidebar for notes
@@ -6796,5 +6796,4 @@ Graphic SwDrawFrmFmt::MakeGraphic( ImageMap* )
 	}
 	return aRet;
 }
-
 
