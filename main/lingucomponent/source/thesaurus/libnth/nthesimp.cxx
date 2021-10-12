@@ -575,7 +575,7 @@ OUString SAL_CALL Thesaurus::getServiceDisplayName( const Locale& /*rLocale*/ )
 		throw(RuntimeException)
 {
 	MutexGuard	aGuard( GetLinguMutex() );
-	return A2OU( "OpenOffice.org New Thesaurus" );
+	return A2OU( "New Thesaurus" );
 }
 
 
