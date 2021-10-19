@@ -163,11 +163,9 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
             bool bIsDocumentScript = ( xStringUri.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
 
-            if ( bIsDocumentScript )
-            {
-                // obtain the component for our security check
-                Reference< XEmbeddedScripts > xDocumentScripts;
-                if ( getScriptInvocation() )
+            // obtain the component for our security check. We could check bIsDocumentScript but the "location" could be forged
+            if ( getScriptInvocation() ) {
+                    Reference< XEmbeddedScripts > xDocumentScripts;
                     xDocumentScripts.set( m_xScriptInvocation->getScriptContainer(), UNO_SET_THROW );
 
                 OSL_ENSURE( xDocumentScripts.is(), "ScriptProtocolHandler::dispatchWithNotification: can't do the security check!" );
