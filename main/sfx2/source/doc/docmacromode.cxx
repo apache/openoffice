@@ -159,27 +159,14 @@ namespace sfx2
         return sal_False;
     }
 
-	//--------------------------------------------------------------------
-    sal_Bool DocumentMacroMode::adjustMacroMode( const Reference< XInteractionHandler >& rxInteraction )
+    /** Change the indicated macro execution mode depending on the current macro security level.
+     *
+     * @param nMacroExecutionMode current execution mode (must be one of MacroExecMode::USE_XXX).
+     *
+     * Changes nMacroExecutionMode according to the current security options, if applicable.
+     */
+    static void adjustMacroExecModeSecurity(sal_uInt16 &nMacroExecutionMode)
     {
-        sal_uInt16 nMacroExecutionMode = m_pData->m_rDocumentAccess.getCurrentMacroExecMode();
-
-        if ( SvtSecurityOptions().IsMacroDisabled() )
-        {
-            // no macro should be executed at all
-            lcl_showMacrosDisabledError( rxInteraction, m_pData->m_bMacroDisabledMessageShown );
-            return disallowMacroExecution();
-        }
-
-        // get setting from configuration if required
-        enum AutoConfirmation
-        {
-            eNoAutoConfirm,
-            eAutoConfirmApprove,
-            eAutoConfirmReject
-        };
-        AutoConfirmation eAutoConfirm( eNoAutoConfirm );
-
         if  (   ( nMacroExecutionMode == MacroExecMode::USE_CONFIG )
             ||  ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_REJECT_CONFIRMATION )
             ||  ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_APPROVE_CONFIRMATION )
@@ -205,11 +192,35 @@ namespace sfx2
                     nMacroExecutionMode = MacroExecMode::NEVER_EXECUTE;
             }
 
-            if ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_REJECT_CONFIRMATION )
-                eAutoConfirm = eAutoConfirmReject;
-            else if ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_APPROVE_CONFIRMATION )
-                eAutoConfirm = eAutoConfirmApprove;
         }
+    }
+
+	//--------------------------------------------------------------------
+    sal_Bool DocumentMacroMode::adjustMacroMode( const Reference< XInteractionHandler >& rxInteraction )
+    {
+        sal_uInt16 nMacroExecutionMode = m_pData->m_rDocumentAccess.getCurrentMacroExecMode();
+
+        if ( SvtSecurityOptions().IsMacroDisabled() )
+        {
+            // no macro should be executed at all
+            lcl_showMacrosDisabledError( rxInteraction, m_pData->m_bMacroDisabledMessageShown );
+            return disallowMacroExecution();
+        }
+
+        // get setting from configuration if required
+        enum AutoConfirmation
+        {
+            eNoAutoConfirm,
+            eAutoConfirmApprove,
+            eAutoConfirmReject
+        };
+        AutoConfirmation eAutoConfirm( eNoAutoConfirm );
+
+        adjustMacroExecModeSecurity(nMacroExecutionMode);
+        if ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_REJECT_CONFIRMATION )
+            eAutoConfirm = eAutoConfirmReject;
+        else if ( nMacroExecutionMode == MacroExecMode::USE_CONFIG_APPROVE_CONFIRMATION )
+            eAutoConfirm = eAutoConfirmApprove;
 
         if ( nMacroExecutionMode == MacroExecMode::NEVER_EXECUTE )
             return sal_False;
@@ -420,8 +431,25 @@ namespace sfx2
             }
             else if ( !isMacroExecutionDisallowed() )
             {
-                // if macros will be added by the user later, the security check is obsolete
-                bAllow = allowMacroExecution();
+                // There are no macros (yet) but we want to be careful anyway
+                sal_uInt16 nMacroExecutionMode = m_pData->m_rDocumentAccess.getCurrentMacroExecMode();
+                adjustMacroExecModeSecurity(nMacroExecutionMode);
+                switch (nMacroExecutionMode) {
+                case MacroExecMode::NEVER_EXECUTE:
+                case MacroExecMode::USE_CONFIG:
+                case MacroExecMode::USE_CONFIG_REJECT_CONFIRMATION:
+                case MacroExecMode::FROM_LIST_NO_WARN:
+                case MacroExecMode::FROM_LIST_AND_SIGNED_WARN:
+                case MacroExecMode::FROM_LIST_AND_SIGNED_NO_WARN:
+                    bAllow = sal_False;
+                    break;
+                case MacroExecMode::FROM_LIST:
+                case MacroExecMode::ALWAYS_EXECUTE:
+                case MacroExecMode::ALWAYS_EXECUTE_NO_WARN:
+                case MacroExecMode::USE_CONFIG_APPROVE_CONFIRMATION:
+                    bAllow = sal_True;
+                    break;
+                }
             }
         }
         return bAllow;
