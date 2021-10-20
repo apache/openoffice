@@ -432,7 +432,7 @@ SdrObject* SdPage::CreatePresObj(PresObjKind eObjKind, sal_Bool bVertical, const
 					aTempAttr.Put(SdrTextAutoGrowHeightItem(sal_False));
 			}
 
-			// check if we need another vertical adjustment than the default
+			// check if we need another vertical adjustment then the default
 			SdrTextVertAdjust eV = SDRTEXTVERTADJUST_TOP;
 
 			if( (eObjKind == PRESOBJ_FOOTER) && (mePageKind != PK_STANDARD) )
@@ -1547,12 +1547,12 @@ void SdPage::SetAutoLayout(AutoLayout eLayout, sal_Bool bInit, sal_Bool bCreate 
 
 	meAutoLayout = eLayout;
 
-	// if needed, creates and initialises the presentation shapes on this slides master page
+	// if needed, creates and initializes the presentation shapes on this slides master page
 	CreateTitleAndLayout(bInit, bCreate);
 
 	if((meAutoLayout == AUTOLAYOUT_NONE && maPresentationShapeList.isEmpty()) || mbMaster)
 	{
-		// MasterPage or no layout and no presentation shapes available, noting to do
+		// MasterPage or no layout and no presentation shapes available, nothing to do
 		return;
 	}
 
@@ -1985,7 +1985,7 @@ void SdPage::ScaleObjects(const Size& rNewPageSize, const Rectangle& rNewBorderR
 									((SdStyleSheet*) pOutlineSheet)->AdjustToFontHeight(aTempSet, sal_False);
 
 									// Sonderbehandlung: die INVALIDS auf NULL-Pointer
-									// zurueckgesetzen (sonst landen INVALIDs oder
+									// zuruecksetzen (sonst landen INVALIDs oder
 									// Pointer auf die DefaultItems in der Vorlage;
 									// beides wuerde die Attribut-Vererbung unterbinden)
 									aTempSet.ClearInvalidItems();
@@ -2563,7 +2563,7 @@ const String& SdPage::GetName() const
 			if( GetModel()->GetPageNumType() == SVX_NUMBER_NONE )
 			{
 				// if the document has number none as a formating
-				// for page numbers we still default to arabic numbering
+				// for page numbers we still default to Arabic numbering
 				// to keep the default page names unique
 				aCreatedPageName += String::CreateFromInt32( (sal_Int32)nNum );
 			}
@@ -2962,7 +2962,7 @@ void SdPage::CalculateHandoutAreas( SdDrawDocument& rModel, AutoLayout eLayout, 
 	{
 		Size aArea = rHandoutMaster.GetSize();
 
-		const long nGapW = 1000; // gap is 1cm
+		const long nGapW = 1000; // gap is 1 cm
 		const long nGapH = 1000;
 
 		long nLeftBorder = rHandoutMaster.GetLftBorder();
