@@ -1707,9 +1707,7 @@ ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptCon
             xServiceManager->createInstance( rtl::OUString::createFromAscii(
                 "com.sun.star.uri.UriReferenceFactory") ) , UNO_QUERY_THROW );
         Reference< uri::XVndSunStarScriptUrlReference > xScriptUri( xFac->parse( _rScriptURL ), UNO_QUERY_THROW );
-        ::rtl::OUString sLocation = xScriptUri->getParameter( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "location" ) ) );
-        bool bIsDocumentScript = ( sLocation == ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "document" ) ) );
-        if ( bIsDocumentScript && !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
+        if ( !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
             return ERRCODE_IO_ACCESSDENIED;
 
         // obtain/create a script provider
