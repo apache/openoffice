@@ -1695,16 +1695,13 @@ ErrCode SfxObjectShell::CallXScript( const Reference< XInterface >& _rxScriptCon
     OSL_TRACE( "in CallXScript" );
 	ErrCode nErr = ERRCODE_NONE;
 
-    bool bIsDocumentScript = ( _rScriptURL.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "location=document" ) ) >= 0 );
-        // TODO: we should parse the URL, and check whether there is a parameter with this name.
-        // Otherwise, we might find too much.
-    if ( bIsDocumentScript && !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
-        return ERRCODE_IO_ACCESSDENIED;
-
 	bool bCaughtException = false;
     Any aException;
     try
     {
+        if ( !lcl_isScriptAccessAllowed_nothrow( _rxScriptContext ) )
+            return ERRCODE_IO_ACCESSDENIED;
+
         // obtain/create a script provider
         Reference< provider::XScriptProvider > xScriptProvider;
         Reference< provider::XScriptProviderSupplier > xSPS( _rxScriptContext, UNO_QUERY );
