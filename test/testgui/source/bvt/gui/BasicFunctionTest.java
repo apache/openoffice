@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,22 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
+
+
 /**
- * 
+ *
  */
 package bvt.gui;
 
@@ -45,7 +47,7 @@ import org.openoffice.test.common.Logger;
 import testlib.gui.SCTool;
 
 /**
- * 
+ *
  */
 public class BasicFunctionTest {
 
@@ -61,13 +63,13 @@ public class BasicFunctionTest {
 	public static void afterClass() {
 		app.stop();
 	}
-	
+
 	@Before
 	public void before() {
 		app.stop();
 		app.start();
 	}
-	
+
 
 	@Test
 	public void smokeTest() {
@@ -87,7 +89,7 @@ public class BasicFunctionTest {
 		assertTrue("No Error", !smoketestlog.contains("error") && !testclosurelog.contains("error"));
 
 	}
-	
+
 	@Test
 	public void testExportAsPDF() throws Exception {
 		String file = prepareData("bvt/pdf.odt");
@@ -103,7 +105,7 @@ public class BasicFunctionTest {
 		sleep(1);
 		String magic = FileUtil.readFileAsString(exportTo1).substring(0, 4);
 		assertEquals("PDF is exported?", "%PDF", magic);
-		
+
 		button(".uno:ExportDirectToPDF").click();//Click via toolbar
 		submitSaveDlg(exportTo2);
 		sleep(1);
@@ -113,7 +115,7 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test the File -- Print Dialog show
-	 * 
+	 *
 	 */
 	@Test
 	public void testPrinter() {
@@ -122,13 +124,13 @@ public class BasicFunctionTest {
 		app.dispatch(".uno:PrinterSetup");
 		if (activeMsgBox.exists(2))
 			activeMsgBox.ok();
-		
+
 //		PrintService[] ps = PrintServiceLookup.lookupPrintServices(null, null);
 //		String[] names = new String[ps.length];
 //		for (int i = 0; i < ps.length; i++) {
 //			names[i] = ps[i].getName();
 //		}
-//		
+//
 //		assertArrayEquals("Printers Names", names, printerSetUpDlgPrinterNames.getItemsText());
 		assertTrue("Printer Setup dialog appears", printerSetUpDlg.exists(3));
 		printerSetUpDlg.cancel();
@@ -136,7 +138,7 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test the File -- Java Dialog show
-	 * 
+	 *
 	 */
 //	@Test
 //	public void testJavaDialog() {
@@ -163,7 +165,7 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test the Tools / Macros / Organize Dialogs" show
-	 * 
+	 *
 	 */
 	@Test
 	public void testRunMacro() {
@@ -182,7 +184,7 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test the About Dialog show
-	 * 
+	 *
 	 */
 	@Test
 	public void testHelp() {
@@ -197,7 +199,7 @@ public class BasicFunctionTest {
 
 	/**
 	 * Test inserting a picture in text document
-	 * 
+	 *
 	 * @throws Exception
 	 */
 
@@ -242,7 +244,7 @@ public class BasicFunctionTest {
 		// Verify if the picture is inserted successfully
 		Rectangle rectangle = GraphicsUtil.findRectangle(calc.getScreenRectangle(), 0xFF00FF00);
 		assertTrue("Green Picture is inserted?" + rectangle, rectangle != null && rectangle.getWidth() > 10);
-		
+
 		SCTool.selectRange("C1");
 		// insert another picture
 		app.dispatch(".uno:InsertGraphic");
@@ -327,39 +329,39 @@ public class BasicFunctionTest {
 		findDlg.close();
 		sleep(1);
 		assertEquals(
-				"Apache Awesome OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. Awesome OpenOffice is released on Windows, Solaris, Linux and Macintosh operation systems, with more communities joining, including a mature FreeBSD port. Awesome OpenOffice is localized, supporting over 110 languages worldwide. ",
+				"Apache OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. OpenOffice is released on Windows, Solaris, Linux and Macintosh operating systems, with more communities joining, including a mature FreeBSD port. OpenOffice is localized, supporting over 110 languages worldwide. ",
 				copyAll());
 		discard();
 	}
-	
+
 	@Test
 	public void testFindFormulasAndValues() {
-	    open(prepareData("bvt/searchFormulasValues.ods"));
-	    calc.waitForExistence(10, 2);
-	    
-	    // Searching for 2003 by formula finds A2
-	    SCTool.selectRange("A1");
-	    app.dispatch(".uno:SearchDialog");
-        findDlgFor.setText("2003");
-        findDlgMore.click();
-        findDlgCalcSearchIn.select("Formulas");
-        findDlgFind.click();
-        sleep(1);
-	    assertEquals("wrong cell found for formulas search", "A2", scInputBarPosition.getText());
-	    findDlg.close();
-	    
-	    // Searching for October by value finds A2
-	    SCTool.selectRange("A1");
-	    app.dispatch(".uno:SearchDialog");
-	    findDlgFor.setText("October");
-	    findDlgMore.click();
-	    findDlgCalcSearchIn.select("Values");
-	    findDlgFind.click();
-	    sleep(1);
-	    assertEquals("wrong cell found for values search", "A2", scInputBarPosition.getText());
-	    findDlg.close();
-	    
-	    discard();
+		open(prepareData("bvt/searchFormulasValues.ods"));
+		calc.waitForExistence(10, 2);
+
+		// Searching for 2003 by formula finds A2
+		SCTool.selectRange("A1");
+		app.dispatch(".uno:SearchDialog");
+		findDlgFor.setText("2003");
+		findDlgMore.click();
+		findDlgCalcSearchIn.select("Formulas");
+		findDlgFind.click();
+		sleep(1);
+		assertEquals("wrong cell found for formulas search", "A2", scInputBarPosition.getText());
+		findDlg.close();
+
+		// Searching for October by value finds A2
+		SCTool.selectRange("A1");
+		app.dispatch(".uno:SearchDialog");
+		findDlgFor.setText("October");
+		findDlgMore.click();
+		findDlgCalcSearchIn.select("Values");
+		findDlgFind.click();
+		sleep(1);
+		assertEquals("wrong cell found for values search", "A2", scInputBarPosition.getText());
+		findDlg.close();
+
+		discard();
 	}
 
 	@Test
@@ -479,7 +481,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a chart in a draw document 1. New a draw document 2. Insert a
 	 * chart 3. Check if the chart is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -502,7 +504,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a chart in a text document 1. New a text document 2. Insert a
 	 * chart 3. Check if the chart is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -525,7 +527,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a chart in a spreadsheet document 1. New a spreadsheet
 	 * document 2. Insert a chart 3. Check if the chart is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -549,7 +551,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a chart in a presentation document 1. New a presentation
 	 * document 2. Insert a chart 3. Check if the chart is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -571,7 +573,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a table in a draw document 1. New a draw document 2. Insert a
 	 * default table 3. Check if the table is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -591,7 +593,7 @@ public class BasicFunctionTest {
 	/**
 	 * Test insert a table in a text document 1. New a text document 2. Insert a
 	 * default table 3. Check if the table is inserted successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -613,7 +615,7 @@ public class BasicFunctionTest {
 	 * Test insert a table in a presentation document 1. New a presentation
 	 * document 2. Insert a default table 3. Check if the table is inserted
 	 * successfully
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -635,7 +637,7 @@ public class BasicFunctionTest {
 	 * Test insert a function in a spreadsheet document via Sum button 1. New a
 	 * spreadsheet document 2. Insert a function via Sum button 3. Check if the
 	 * result is correct
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -663,7 +665,7 @@ public class BasicFunctionTest {
 	 * Test insert a function in a spreadsheet document via inputbar 1. New a
 	 * spreadsheet document 2. Insert a function via inputbar: COS 3. Check if
 	 * the result is correct
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -680,11 +682,11 @@ public class BasicFunctionTest {
 		SCTool.selectRange("D1");
 		scInputBarInput.inputKeys("=COS(A1)");
 		typeKeys("<enter>");
-        sleep(1);
-		// Verify if the calculated result is equal to the expected result
-        String result = SCTool.getCellText("D1");
 		sleep(1);
-        assertEquals("The calculated result", expectedResult, result);
+		// Verify if the calculated result is equal to the expected result
+		String result = SCTool.getCellText("D1");
+		sleep(1);
+		assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 
@@ -692,7 +694,7 @@ public class BasicFunctionTest {
 	 * Test insert a function in a spreadsheet document via Function Wizard
 	 * Dialog 1. New a spreadsheet document 2. Insert a function via Function
 	 * Wizard Dialog: ABS 3. Check if the result is correct
-	 * 
+	 *
 	 * @throws Exception
 	 */
 	@Test
@@ -716,9 +718,9 @@ public class BasicFunctionTest {
 		scFunctionWizardDlg.ok();
 		sleep(1);
 		// Verify if the calculated result is equal to the expected result
-        String result = SCTool.getCellText("B1");
+		String result = SCTool.getCellText("B1");
 		sleep(1);
-        assertEquals("The calculated result", expectedResult, result);
+		assertEquals("The calculated result", expectedResult, result);
 		discard();
 	}
 
