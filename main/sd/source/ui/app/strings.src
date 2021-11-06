@@ -20,6 +20,7 @@
  *************************************************************/
 
 
+
 #include "strings.hrc"
 #include "sdstring.hrc"
 #include "glob.hrc"
@@ -435,41 +436,41 @@ String STR_EDIT_OBJ
 };
 ModalDialog RID_UNDO_DELETE_WARNING
 {
-	OutputSize = TRUE;
-	Size = MAP_APPFONT( 175 + 39 + (3 * 6), (7 * 12) + 6 );
-	Moveable = TRUE;
-	Closeable = TRUE;
+	OutputSize = TRUE ;
+	Size = MAP_APPFONT ( 175 + 39 + (3 * 6), (7 * 12) + 6 ) ;
+	Moveable = TRUE ;
+	Closeable = TRUE ;
 
-	HelpID = HID_UNDO_DELETE_WARNING;
+	HelpID = HID_UNDO_DELETE_WARNING ;
 
 	FixedImage IMG_UNDO_DELETE_WARNING
 	{
-		Pos = MAP_APPFONT( 6, 6 );
-		Size = MAP_APPFONT( 30, 30 );
+		Pos = MAP_APPFONT ( 6, 6 ) ;
+		Size = MAP_APPFONT ( 30, 30 ) ;
 	};
 	FixedText FT_UNDO_DELETE_WARNING
 	{
-		Pos = MAP_APPFONT( 39, 6 );
-		Size = MAP_APPFONT( 175, 4 * 12 );
-		WordBreak = TRUE;
+		Pos = MAP_APPFONT ( 39, 6 ) ;
+		Size = MAP_APPFONT ( 175, 4 * 12 ) ;
+		WordBreak = TRUE ;
 		Text [ en-US ] = "This action deletes the list of actions that can\nbe undone. Previous changes made to the document are still valid,\nbut cannot be undone. Do you want to continue and\nthus assign the new slide design?" ;
 	};
 	CheckBox CB_UNDO_DELETE_DISABLE
 	{
 		HelpID = "sd:CheckBox:RID_UNDO_DELETE_WARNING:CB_UNDO_DELETE_DISABLE" ;
-		Pos = MAP_APPFONT( 39, (4 * 12) + 9 );
-		Size = MAP_APPFONT( 175, 12 );
+		Pos = MAP_APPFONT ( 39, (4 * 12) + 9 ) ;
+		Size = MAP_APPFONT ( 175, 12 ) ;
 		Text [ en-US ] = "~Do not show this warning again" ;
 	};
 	OKButton BTN_UNDO_DELETE_YES
 	{
-		Pos = MAP_APPFONT( 60, (5 * 12) + 13 );
-		Size = MAP_APPFONT( 50, 14 );
+		Pos = MAP_APPFONT ( 60, (5 * 12) + 13 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 	};
 	CancelButton BTN_UNDO_DELETE_NO
 	{
-		Pos = MAP_APPFONT( 120, (5 * 12) + 13 );
-		Size = MAP_APPFONT( 50, 14 );
+		Pos = MAP_APPFONT ( 120, (5 * 12) + 13 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		DefButton = TRUE;
 	};
 	Text [ en-US ] = "%PRODUCTNAME %PRODUCTVERSION" ;
@@ -1245,7 +1246,7 @@ String RID_ANNOTATIONS_START
 
 String STR_RESET_LAYOUT
 {
-	Text[ en-US ] = "Reset Slide Layout" ;
+	Text [ en-US ] = "Reset Slide Layout" ;
 };
 
 String STR_INSERT_TABLE
@@ -1312,3 +1313,5 @@ String STR_SAR_WRAP_BACKWARD_DRAW
 {
 	Text [ en-US ] = "%PRODUCTNAME Draw has searched to the beginning of the document. Do you want to continue at the end?" ;
 };
+
+// ********************************************************************** EOF
