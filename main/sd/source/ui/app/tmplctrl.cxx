@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -53,7 +53,7 @@ public:
 private:
 	sal_uInt16			nCurId;
 
-	virtual void    Select();
+	virtual void Select();
 };
 
 // -----------------------------------------------------------------------
@@ -74,9 +74,9 @@ void TemplatePopup_Impl::Select()
 // class SdTemplateControl ------------------------------------------
 
 SdTemplateControl::SdTemplateControl( sal_uInt16 _nSlotId,
-                                      sal_uInt16 _nId,
-	                                  StatusBar& rStb ) :
-    SfxStatusBarControl( _nSlotId, _nId, rStb )
+									  sal_uInt16 _nId,
+									  StatusBar& rStb ) :
+	SfxStatusBarControl( _nSlotId, _nId, rStb )
 {
 }
 
@@ -89,7 +89,7 @@ SdTemplateControl::~SdTemplateControl()
 // -----------------------------------------------------------------------
 
 void SdTemplateControl::StateChanged(
-    sal_uInt16 /*nSID*/, SfxItemState eState, const SfxPoolItem* pState )
+	sal_uInt16 /*nSID*/, SfxItemState eState, const SfxPoolItem* pState )
 {
 	if( eState != SFX_ITEM_AVAILABLE || pState->ISA( SfxVoidItem ) )
 		GetStatusBar().SetItemText( GetId(), String() );
@@ -102,7 +102,7 @@ void SdTemplateControl::StateChanged(
 
 // -----------------------------------------------------------------------
 
-void SdTemplateControl::Paint( const UserDrawEvent&  )
+void SdTemplateControl::Paint( const UserDrawEvent& )
 {
 	GetStatusBar().SetItemText( GetId(), msTemplate );
 }
@@ -127,18 +127,18 @@ void SdTemplateControl::Command( const CommandEvent& rCEvt )
 		TemplatePopup_Impl aPop;
 		{
 			const sal_uInt16 nMasterCount = pDoc->GetMasterSdPageCount(PK_STANDARD);
-	
+
 			sal_uInt16 nCount = 0;
 			for( sal_uInt16 nPage = 0; nPage < nMasterCount; ++nPage )
 			{
 				SdPage* pMaster = pDoc->GetMasterSdPage(nPage, PK_STANDARD);
 				if( pMaster )
-					aPop.InsertItem( ++nCount, pMaster->GetName() );				
+					aPop.InsertItem( ++nCount, pMaster->GetName() );
 			}
 			aPop.Execute( &GetStatusBar(), rCEvt.GetMousePosPixel());
 
 			sal_uInt16 nCurrId = aPop.GetCurId()-1;
-            if( nCurrId < nMasterCount )
+			if( nCurrId < nMasterCount )
 			{
 				SdPage* pMaster = pDoc->GetMasterSdPage(nCurrId, PK_STANDARD);
 				SfxStringItem aStyle( ATTR_PRESLAYOUT_NAME, pMaster->GetName() );
@@ -151,6 +151,3 @@ void SdTemplateControl::Command( const CommandEvent& rCEvt )
 		ReleaseMouse();
 	}
 }
-
-
-
