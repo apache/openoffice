@@ -1,9 +1,9 @@
-diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
---- misc/openssl-1.0.2u/Configure	2018-08-14 05:49:04.000000000 -0700
-+++ misc/build/openssl-1.0.2u/Configure	2018-08-26 14:51:25.397910000 -0700
+diff -ur misc/openssl-1.1.1l/Configure misc/build/openssl-1.1.1l/Configure
+--- misc/openssl-1.1.1l/Configure	2018-08-14 05:49:04.000000000 -0700
++++ misc/build/openssl-1.1.1l/Configure	2018-08-26 14:51:25.397910000 -0700
 @@ -477,19 +477,20 @@
  "android-mips","gcc:-mandroid -I\$(ANDROID_DEV)/include -B\$(ANDROID_DEV)/lib -O3 -Wall::-D_REENTRANT::-ldl:BN_LLONG RC4_CHAR RC4_CHUNK DES_INT DES_UNROLL BF_PTR:${mips32_asm}:o32:dlfcn:linux-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
- 
+
  #### *BSD [do see comment about ${BSDthreads} above!]
 -"BSD-generic32","gcc:-O3 -fomit-frame-pointer -Wall::${BSDthreads}:::BN_LLONG RC2_CHAR RC4_INDEX DES_INT DES_UNROLL:${no_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
 -"BSD-x86",	"gcc:-DL_ENDIAN -O3 -fomit-frame-pointer -Wall::${BSDthreads}:::BN_LLONG ${x86_gcc_des} ${x86_gcc_opts}:${x86_asm}:a.out:dlfcn:bsd-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
@@ -15,7 +15,7 @@ diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
 +"BSD-x86-elf",	"$ENV{'FREEBSDCC'}:-DL_ENDIAN -O3 -fomit-frame-pointer -Wall $ENV{'CFLAGS'}::${BSDthreads}:::BN_LLONG ${x86_gcc_des} ${x86_gcc_opts}:${x86_elf_asm}:dlfcn:bsd-shared:-fPIC::.so.\$(SHLIBVER)",
 +"debug-BSD-x86-elf",	"$ENV{'FREEBSDCC'}:-DL_ENDIAN -O3 -Wall -g $ENV{'CFLAGS'}::${BSDthreads}:::BN_LLONG ${x86_gcc_des} ${x86_gcc_opts}:${x86_elf_asm}:dlfcn:bsd-shared:-fPIC::.so.\$(SHLIBVER)",
 +"BSD-sparcv8", "$ENV{'FREEBSDCC'}:-DB_ENDIAN -O3 -mcpu=v8 -Wall $ENV{'CFLAGS'}::${BSDthreads}:::BN_LLONG RC2_CHAR RC4_INDEX DES_INT DES_UNROLL:${sparcv8_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIBVER)",
- 
+
 -"BSD-generic64","gcc:-O3 -Wall::${BSDthreads}:::SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${no_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
 +"BSD-generic64","$ENV{'FREEBSDCC'}:-O3 -Wall $ENV{'CFLAGS'}::${BSDthreads}:::SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${no_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIBVER)",
  # -DMD32_REG_T=int doesn't actually belong in sparc64 target, it
@@ -28,9 +28,9 @@ diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
 +"BSD-ia64",	"$ENV{'FREEBSDCC'}:-DL_ENDIAN -O3 -Wall $ENV{'CFLAGS'}::${BSDthreads}:::SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_UNROLL DES_INT:${ia64_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIBVER)",
 +"BSD-x86_64",	"$ENV{'FREEBSDCC'}:-DL_ENDIAN -O3 -Wall $ENV{'CFLAGS'}::${BSDthreads}:::SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_INT DES_UNROLL:${x86_64_asm}:elf:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIBVER)",
 +"BSD-alpha",	"$ENV{'FREEBSDCC'}:-DL_ENDIAN -O -Wall $ENV{'CFLAGS'}::${BSDthreads}:::SIXTY_FOUR_BIT_LONG RC4_CHUNK DES_UNROLL DES_RISC1:${no_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIBVER)",
- 
+
  "bsdi-elf-gcc",     "gcc:-DPERL5 -DL_ENDIAN -fomit-frame-pointer -O3 -march=i486 -Wall::(unknown)::-ldl:BN_LLONG ${x86_gcc_des} ${x86_gcc_opts}:${x86_elf_asm}:dlfcn:bsd-gcc-shared:-fPIC::.so.\$(SHLIB_MAJOR).\$(SHLIB_MINOR)",
- 
+
 @@ -592,9 +593,9 @@
  "debug-VC-WIN64A","cl:-W3 -Gs0 -Gy -Zi -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -DUNICODE -D_UNICODE -D_CRT_SECURE_NO_DEPRECATE:::WIN64A::SIXTY_FOUR_BIT RC4_CHUNK_LL DES_INT EXPORT_VAR_AS_FN:".eval{my $asm=$x86_64_asm;$asm=~s/x86_64-gcc\.o/bn_asm.o/;$asm}.":auto:win32",
  # x86 Win32 target defaults to ANSI API, if you want UNICODE, complement
@@ -41,7 +41,7 @@ diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
 -"debug-VC-WIN32","cl:-W3 -WX -Gs0 -GF -Gy -Zi -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -D_WINSOCK_DEPRECATED_NO_WARNINGS:::WIN32::BN_LLONG RC4_INDEX EXPORT_VAR_AS_FN ${x86_gcc_opts}:${x86_asm}:win32n:win32",
 +"debug-VC-WIN32","cl:-W3 -W44129 -WX -Gs0 -GF -Gy -Zi -nologo -DOPENSSL_SYSNAME_WIN32 -DWIN32_LEAN_AND_MEAN -DL_ENDIAN -D_CRT_SECURE_NO_DEPRECATE -D_WINSOCK_DEPRECATED_NO_WARNINGS:::WIN32::BN_LLONG RC4_INDEX EXPORT_VAR_AS_FN ${x86_gcc_opts}:${x86_asm}:win32n:win32",
  "VC-CE","cl::::WINCE::BN_LLONG RC4_INDEX EXPORT_VAR_AS_FN ${x86_gcc_opts}:${no_asm}:win32",
- 
+
  # Borland C++ 4.5
 @@ -2065,10 +2066,12 @@
  	if ( $perl =~ m@^/@) {
@@ -56,9 +56,9 @@ diff -ur misc/openssl-1.0.2u/Configure misc/build/openssl-1.0.2u/Configure
  	}
  	if ($depflags ne $default_depflags && !$make_depend) {
  	    $warn_make_depend++;
-diff -ur misc/openssl-1.0.2u/config misc/build/openssl-1.0.2u/config
---- misc/openssl-1.0.2u/config	2018-08-14 05:48:56.000000000 -0700
-+++ misc/build/openssl-1.0.2u/config	2018-08-26 14:49:34.431584000 -0700
+diff -ur misc/openssl-1.1.1l/config misc/build/openssl-1.1.1l/config
+--- misc/openssl-1.1.1l/config	2018-08-14 05:48:56.000000000 -0700
++++ misc/build/openssl-1.1.1l/config	2018-08-26 14:49:34.431584000 -0700
 @@ -762,14 +762,8 @@
    sparc64-*-*bsd*)	OUT="BSD-sparc64" ;;
    ia64-*-*bsd*)		OUT="BSD-ia64" ;;
@@ -71,16 +71,16 @@ diff -ur misc/openssl-1.0.2u/config misc/build/openssl-1.0.2u/config
 -			    libc=`(ls /usr/lib/libc.so.* /lib/libc.so.* | tail -1) 2>/dev/null`
 -			fi
 -			case "`(file -L $libc) 2>/dev/null`" in
-+  *86*-*-*bsd*)	
++  *86*-*-*bsd*)
 +			case "`(file -L /bin/sh) 2>/dev/null`" in
  			*ELF*)	OUT="BSD-x86-elf" ;;
  			*)	OUT="BSD-x86"; options="$options no-sse2" ;;
  			esac ;;
-diff -ur misc/openssl-1.0.2u/ms/do_ms.bat misc/build/openssl-1.0.2u/ms/do_ms.bat
---- misc/openssl-1.0.2u/ms/do_ms.bat	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2u/ms/do_ms.bat	2018-08-26 14:49:34.432106000 -0700
+diff -ur misc/openssl-1.1.1l/ms/do_ms.bat misc/build/openssl-1.1.1l/ms/do_ms.bat
+--- misc/openssl-1.1.1l/ms/do_ms.bat	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.1.1l/ms/do_ms.bat	2018-08-26 14:49:34.432106000 -0700
 @@ -1,11 +1,11 @@
- 
+
 -perl util\mkfiles.pl >MINFO
 -perl util\mk1mf.pl no-asm VC-WIN32 >ms\nt.mak
 -perl util\mk1mf.pl dll no-asm VC-WIN32 >ms\ntdll.mak
@@ -93,56 +93,56 @@ diff -ur misc/openssl-1.0.2u/ms/do_ms.bat misc/build/openssl-1.0.2u/ms/do_ms.bat
 +%1 util\mk1mf.pl no-asm VC-CE >ms\ce.mak
 +%1 util\mk1mf.pl dll no-asm VC-CE >ms\cedll.mak
  :skipce
- 
+
 -perl util\mkdef.pl 32 libeay > ms\libeay32.def
 -perl util\mkdef.pl 32 ssleay > ms\ssleay32.def
 +%1 util\mkdef.pl 32 libeay > ms\libeay32.def
 +%1 util\mkdef.pl 32 ssleay > ms\ssleay32.def
-diff -ur misc/openssl-1.0.2u/ms/do_win64a.bat misc/build/openssl-1.0.2u/ms/do_win64a.bat
---- misc/openssl-1.0.2u/ms/do_win64a.bat	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2u/ms/do_win64a.bat	2018-08-26 14:49:34.432647000 -0700
+diff -ur misc/openssl-1.1.1l/ms/do_win64a.bat misc/build/openssl-1.1.1l/ms/do_win64a.bat
+--- misc/openssl-1.1.1l/ms/do_win64a.bat	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.1.1l/ms/do_win64a.bat	2018-08-26 14:49:34.432647000 -0700
 @@ -1,19 +1,19 @@
 -perl util\mkfiles.pl >MINFO
 +%1 util\mkfiles.pl >MINFO
- 
+
  cmd /c "nasm -f win64 -v" >NUL 2>&1
  if %errorlevel% neq 0 goto ml64
- 
+
 -perl ms\uplink-x86_64.pl nasm > ms\uptable.asm
 +%1 ms\uplink-x86_64.pl nasm > ms\uptable.asm
  nasm -f win64 -o ms\uptable.obj ms\uptable.asm
  goto proceed
- 
+
  :ml64
 -perl ms\uplink-x86_64.pl masm > ms\uptable.asm
 +%1 ms/uplink-x86_64.pl masm > ms/uptable.asm
  ml64 -c -Foms\uptable.obj ms\uptable.asm
- 
+
  :proceed
 -perl util\mk1mf.pl VC-WIN64A >ms\nt.mak
 -perl util\mk1mf.pl dll VC-WIN64A >ms\ntdll.mak
 +%1 util\mk1mf.pl VC-WIN64A >ms\nt.mak
 +%1 util\mk1mf.pl dll VC-WIN64A >ms\ntdll.mak
- 
+
 -perl util\mkdef.pl 32 libeay > ms\libeay32.def
 -perl util\mkdef.pl 32 ssleay > ms\ssleay32.def
 +%1 util\mkdef.pl 32 libeay > ms\libeay32.def
 +%1 util\mkdef.pl 32 ssleay > ms\ssleay32.def
-diff -ur misc/openssl-1.0.2u/util/mk1mf.pl misc/build/openssl-1.0.2u/util/mk1mf.pl
---- misc/openssl-1.0.2u/util/mk1mf.pl	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2u/util/mk1mf.pl	2018-08-26 14:49:34.433421000 -0700
+diff -ur misc/openssl-1.1.1l/util/mk1mf.pl misc/build/openssl-1.1.1l/util/mk1mf.pl
+--- misc/openssl-1.1.1l/util/mk1mf.pl	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.1.1l/util/mk1mf.pl	2018-08-26 14:49:34.433421000 -0700
 @@ -163,7 +163,7 @@
  $inc_def="outinc";
  $tmp_def="tmp";
- 
+
 -$perl="perl" unless defined $perl;
 +$perl="$ENV{PERL}" unless defined $perl;
  $mkdir="-mkdir" unless defined $mkdir;
- 
+
  ($ssl,$crypto)=("ssl","crypto");
 @@ -346,6 +346,11 @@
  	s/\s*$//; # was chop, didn't work in mixture of perls for Windows...
- 
+
  	($key,$val)=/^([^=]+)=(.*)/;
 +
 +	# On some Windows machines, $val has linefeeds at the end, which confuses
@@ -152,12 +152,12 @@ diff -ur misc/openssl-1.0.2u/util/mk1mf.pl misc/build/openssl-1.0.2u/util/mk1mf.
  	if ($key eq "RELATIVE_DIRECTORY")
  		{
  		if ($lib ne "")
-diff -ur misc/openssl-1.0.2u/util/pl/VC-32.pl misc/build/openssl-1.0.2u/util/pl/VC-32.pl
---- misc/openssl-1.0.2u/util/pl/VC-32.pl	2018-08-14 05:48:59.000000000 -0700
-+++ misc/build/openssl-1.0.2u/util/pl/VC-32.pl	2018-08-26 14:49:57.553776000 -0700
+diff -ur misc/openssl-1.1.1l/util/pl/VC-32.pl misc/build/openssl-1.1.1l/util/pl/VC-32.pl
+--- misc/openssl-1.1.1l/util/pl/VC-32.pl	2018-08-14 05:48:59.000000000 -0700
++++ misc/build/openssl-1.1.1l/util/pl/VC-32.pl	2018-08-26 14:49:57.553776000 -0700
 @@ -30,7 +30,7 @@
  my $ff = "";
- 
+
  # C compiler stuff
 -$cc='cl';
 +$cc=$ENV{'CC'};
