@@ -1,0 +1,26 @@
+diff -u -r misc/openssl-1.1.1l/crypto/rand/rand_unix.c misc/build/openssl-1.1.1l/crypto/rand/rand_unix.c
+--- misc/openssl-1.1.1l/crypto/rand/rand_unix.c	2021-08-24 09:38:47.000000000 -0400
++++ misc/build/openssl-1.1.1l/crypto/rand/rand_unix.c	2021-11-09 11:17:48.000000000 -0500
+@@ -34,9 +34,6 @@
+ #if defined(__OpenBSD__)
+ # include <sys/param.h>
+ #endif
+-#if defined(__APPLE__)
+-# include <CommonCrypto/CommonRandom.h>
+-#endif
+
+ #if defined(OPENSSL_SYS_UNIX) || defined(__DJGPP__)
+ # include <sys/types.h>
+@@ -381,11 +378,6 @@
+         if (errno != ENOSYS)
+             return -1;
+     }
+-#  elif defined(__APPLE__)
+-    if (CCRandomGenerateBytes(buf, buflen) == kCCSuccess)
+-	    return (ssize_t)buflen;
+-
+-    return -1;
+ #  else
+     union {
+         void *p;
+Only in openssl-1.1.1l: pod2htmd.tmp
