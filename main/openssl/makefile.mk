@@ -42,10 +42,10 @@ TARGET=openssl
 	@echo "openssl disabled...."
 .ENDIF
 
-OPENSSL_NAME=openssl-1.1.1l
+OPENSSL_NAME=openssl-1.0.2u
 
 TARFILE_NAME=$(OPENSSL_NAME)
-TARFILE_MD5=ac0d4387f3ba0ad741b0580dd45f6ff3
+TARFILE_MD5=cdc2638f789ecc2db2c91488265686c1
 
 CONFIGURE_DIR=.
 CONFIGURE_ACTION=config
@@ -111,7 +111,6 @@ UNAME=$(shell uname)
 .ENDIF
 
 .IF "$(OS)" == "MACOSX"
-	PATCH_FILES=opensslmacos.patch
 	CONFIGURE_ACTION=Configure darwin64-x86_64-cc no-dso no-shared $(NO_ASM)
 .ENDIF
 
