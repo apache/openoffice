@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -176,10 +176,8 @@ void SetFontWorkShapeTypeState( SdrView* pSdrView, SfxItemSet& rSet )
 }
 
 /*************************************************************************
-|*
 |* Standardinterface deklarieren (Die Slotmap darf nicht leer sein, also
 |* tragen wir etwas ein, was hier (hoffentlich) nie vorkommt).
-|*
 \************************************************************************/
 
 #define ShellClass FontworkBar
@@ -198,9 +196,7 @@ TYPEINIT1( FontworkBar, SfxShell );
 
 
 /*************************************************************************
-|*
 |* Standard-Konstruktor
-|*
 \************************************************************************/
 
 FontworkBar::FontworkBar(SfxViewShell* pViewShell )
@@ -216,9 +212,7 @@ FontworkBar::FontworkBar(SfxViewShell* pViewShell )
 
 
 /*************************************************************************
-|*
 |* Destruktor
-|*
 \************************************************************************/
 
 FontworkBar::~FontworkBar()
@@ -231,11 +225,11 @@ static Window* ImpGetViewWin(SdrView* pView)
 	if( pView )
 	{
 		const sal_uInt32 nAnz(pView->PaintWindowCount());
-		for(sal_uInt32 nNum(0L); nNum < nAnz; nNum++) 
+		for(sal_uInt32 nNum(0L); nNum < nAnz; nNum++)
 		{
 			OutputDevice* pOut = &(pView->GetPaintWindow(nNum)->GetOutputDevice());
 
-			if(OUTDEV_WINDOW == pOut->GetOutDevType()) 
+			if(OUTDEV_WINDOW == pOut->GetOutDevType())
 			{
 				return (Window*)pOut;
 			}
@@ -373,7 +367,7 @@ void GetGeometryForCustomShape( SdrCustomShapeGeometryItem& rGeometryItem, const
 	rGeometryItem.ClearPropertyValue( sPath );
 
 	/* SJ: CustomShapes that are available in the gallery are having the highest
-	   priority, so we will take a look there before taking the internal default */
+		   priority, so we will take a look there before taking the internal default */
 
 	if ( GalleryExplorer::GetSdrObjCount( GALLERY_THEME_POWERPOINT ) )
 	{
@@ -508,7 +502,7 @@ void FontworkBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rBi
 						pObj->BroadcastObjectChange();
 						if( bUndo )
 							pSdrView->EndUndo();
-						pSdrView->AdjustMarkHdl(); //HMH sal_True );
+						pSdrView->AdjustMarkHdl(); // HMH sal_True );
 						rBindings.Invalidate( SID_FONTWORK_SHAPE_TYPE );
 					}
 				}
@@ -629,7 +623,7 @@ void FontworkBar::getState( SdrView* pSdrView, SfxItemSet& rSet )
 	}
 	if ( rSet.GetItemState( SID_FONTWORK_SHAPE_TYPE ) != SFX_ITEM_UNKNOWN )
 	{
-		if ( !checkForSelectedFontWork( pSdrView, nCheckStatus  ) )
+		if ( !checkForSelectedFontWork( pSdrView, nCheckStatus ) )
 			rSet.DisableItem( SID_FONTWORK_SHAPE_TYPE );
 		else
 			SetFontWorkShapeTypeState( pSdrView, rSet );
