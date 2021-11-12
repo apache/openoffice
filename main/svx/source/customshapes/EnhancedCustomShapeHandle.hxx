@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -34,7 +34,7 @@
 #include <cppuhelper/weakref.hxx>
 
 class EnhancedCustomShapeHandle : public cppu::WeakImplHelper2
-< 
+<
 	com::sun::star::drawing::XCustomShapeHandle,
 	com::sun::star::lang::XInitialization
 >
@@ -46,11 +46,11 @@ public:
 
 			EnhancedCustomShapeHandle( com::sun::star::uno::Reference< com::sun::star::drawing::XShape >& xCustomShape, sal_uInt32 nIndex );
 	virtual ~EnhancedCustomShapeHandle();
-											
-	// XInterface							
-    virtual void SAL_CALL acquire() throw();
-    virtual void SAL_CALL release() throw();
-    
+
+	// XInterface
+	virtual void SAL_CALL acquire() throw();
+	virtual void SAL_CALL release() throw();
+
 	// XCustomShapeHandle
 	virtual com::sun::star::awt::Point SAL_CALL getPosition()
 		throw ( com::sun::star::uno::RuntimeException );
@@ -58,7 +58,7 @@ public:
 		throw ( com::sun::star::uno::RuntimeException );
 
 	// XInitialization
-	virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments ) 
+	virtual void SAL_CALL initialize( const com::sun::star::uno::Sequence< com::sun::star::uno::Any >& aArguments )
 		throw ( com::sun::star::uno::Exception, com::sun::star::uno::RuntimeException );
 };
 
