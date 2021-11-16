@@ -91,7 +91,7 @@ UCBHELPERLIB=-lucbhelper$(COMID)
 OPENSSLLIB=$(OPENSSL_LIBS)
 OPENSSLLIBST=$(STATIC) $(OPENSSL_LIBS) $(DYNAMIC)
 .ELSE           # "$(SYSTEM_OPENSSL)" == "YES
-OPENSSLLIB=-lssl -lcrypto
+OPENSSLLIB=-lssl -lcrypto -lpthread
 .IF "$(GUI)$(COM)"=="WNTGCC"
 OPENSSLLIBST=-lssl_static -lcrypto_static
 .ELSE          # "$(GUI)$(COM)"=="WNTGCC"
