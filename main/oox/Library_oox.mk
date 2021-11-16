@@ -58,6 +58,9 @@ $(eval $(call gb_Library_add_linked_libs,oox,\
 ))
 
 $(call gb_Library_use_external,oox,openssl)
+ifeq ($(OS),LINUX)
+$(call gb_Library_add_libs,oox,-lpthread)
+endif
 
 # object files ----------------------------------------------------------------
 
