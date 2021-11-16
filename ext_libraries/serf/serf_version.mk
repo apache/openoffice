@@ -20,5 +20,5 @@
 #**************************************************************
 
 SERF_MAJOR=1
-SERF_MINOR=2
-SERF_MICRO=1
+SERF_MINOR=3
+SERF_MICRO=9

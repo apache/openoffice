@@ -2056,9 +2056,9 @@ File gid_File_Lib_Serf
 	#ifdef MACOSX
             Name = STRING(CONCAT3(libserf-,SERF_MAJOR,UNXSUFFIX));
 	#elif FREEBSD
-            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0));
+            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.1));
 	#else
-            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.0.0.0));
+            Name = STRING(CONCAT3(libserf-1,UNXSUFFIX,.1.3.0));
 	#endif
     #endif
     PACKED_LIB_FILE_BODY;
