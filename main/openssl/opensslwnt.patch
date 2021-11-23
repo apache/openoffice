@@ -1,0 +1,51 @@
+--- misc/openssl-1.1.1l/Configurations/windows-makefile.tmpl	2021-11-20 13:57:05.680575200 +0100
++++ misc/build/openssl-1.1.1l/Configurations/windows-makefile.tmpl	2021-11-20 15:54:39.030601100 +0100
+@@ -175,7 +175,7 @@
+ LDFLAGS={- join(' ', @{$config{LDFLAGS}}) -}
+ EX_LIBS={- join(' ', @{$config{LDLIBS}}) -}
+ 
+-PERL={- $config{PERL} -}
++PERL={- $config{PERL_WINPATH} -}
+ 
+ AR={- $config{AR} -}
+ ARFLAGS= {- join(' ', @{$config{ARFLAGS}}) -}
+Only in wntmsci12.pro/misc/build/openssl-1.1.1l/Configurations: windows-makefile.tmpl~
+diff -ru wntmsci12.pro/misc/openssl-1.1.1l/Configure wntmsci12.pro/misc/build/openssl-1.1.1l/Configure
+--- misc/openssl-1.1.1l/Configure	2021-11-20 13:57:05.514359400 +0100
++++ misc/build/openssl-1.1.1l/Configure	2021-11-20 15:55:21.051561800 +0100
+@@ -1,4 +1,4 @@
+-#! /usr/bin/env perl
++#!/usr/bin/env perl
+ # -*- mode: perl; -*-
+ # Copyright 2016-2021 The OpenSSL Project Authors. All Rights Reserved.
+ #
+@@ -568,13 +568,14 @@
+     CPPDEFINES  => [],  # Alternative for -D
+     CPPINCLUDES => [],  # Alternative for -I
+     CROSS_COMPILE => env('CROSS_COMPILE'),
+-    HASHBANGPERL=> env('HASHBANGPERL') || env('PERL'),
++    HASHBANGPERL=> env('HASHBANGPERL') || cygpath(env('PERL')),
+     LD          => undef,
+     LDFLAGS     => [ env('LDFLAGS') || () ],  # -L, -Wl,
+     LDLIBS      => [ env('LDLIBS') || () ],  # -l
+     MT          => undef,
+     MTFLAGS     => [],
+-    PERL        => env('PERL') || ($^O ne "VMS" ? $^X : "perl"),
++    PERL        => cygpath(env('PERL')) || ($^O ne "VMS" ? $^X : "perl"),
++    PERL_WINPATH => env('PERL'),
+     RANLIB      => env('RANLIB'),
+     RC          => env('RC') || env('WINDRES'),
+     RCFLAGS     => [ env('RCFLAGS') || () ],
+@@ -3610,3 +3611,12 @@
+     }
+     return @result;
+ }
++
++sub cygpath {
++    my $escapedPath = $_[0];
++    $escapedPath =~ s/\\/\\\\/g;
++    open(my $output, "-|",  "cygpath", "-u", $escapedPath);
++    my $retval = <$output>;
++    chomp($retval);
++    return $retval;
++}

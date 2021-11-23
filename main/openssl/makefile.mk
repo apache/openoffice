@@ -116,6 +116,7 @@ UNAME=$(shell uname)
 .ENDIF
 
 .IF "$(OS)" == "WNT"
+PATCH_FILES+=opensslwnt.patch
 
 .IF "$(COM)"=="GCC"
 PATCH_FILES=opensslmingw.patch
@@ -127,8 +128,6 @@ OUT2LIB = libcrypto_static.*
 OUT2LIB += libssl_static.*
 OUT2LIB += libcrypto.*
 OUT2LIB += libssl.*
-OUT2BIN = ssleay32.dll
-OUT2BIN += libeay32.dll
 .ELSE
 CONFIGURE_ACTION=
 BUILD_ACTION=cmd /c "ms\mingw32"
@@ -136,12 +135,9 @@ OUT2LIB = out/libcrypto_static.*
 OUT2LIB += out/libssl_static.*
 OUT2LIB += out/libcrypto.*
 OUT2LIB += out/libssl.*
-OUT2BIN = out/ssleay32.dll
-OUT2BIN += out/libeay32.dll
 .ENDIF
 .ELSE
 
-		PATCH_FILES=openssl.patch
 		.IF "$(MAKETARGETS)" == ""
 			# The env. vars CC and PERL are used by nmake, and nmake insists on '\'s
 			# If WRAPCMD is set it is prepended before the compiler, don't touch that.
@@ -156,25 +152,17 @@ OUT2BIN += out/libeay32.dll
 		.ENDIF
 
 		#CONFIGURE_ACTION=cmd /c $(PERL:s!\!/!) configure
+		# We must set the env variable CONFIGURE_INSIST
+		# so that Configurations/windows-checker.pm does not
+		# complain about our Perl using unix-like paths
 		.IF "$(CPUNAME)"=="INTEL"
-			CONFIGURE_ACTION=$(PERL) configure $(NO_ASM)
+			CONFIGURE_ACTION=CONFIGURE_INSIST=1 $(PERL) configure $(NO_ASM)
 			CONFIGURE_FLAGS=VC-WIN32
-			.IF "$(NASM_PATH)"=="NO_NASM_HOME"
-			  BUILD_ACTION=cmd /c "ms$(EMQ)\do_ms.bat $(subst,/,\ $(normpath,1 $(PERL)))" && nmake -f ms/ntdll.mak
-			.ELSE
-			  BUILD_ACTION=cmd /c "ms$(EMQ)\do_nasm.bat $(subst,/,\ $(normpath,1 $(PERL)))" && nmake -f ms/ntdll.mak
-			.ENDIF
 		.ELIF "$(CPUNAME)"=="X86_64"
-			CONFIGURE_ACTION=$(PERL) configure $(NO_ASM)
+			CONFIGURE_ACTION=CONFIGURE_INSIST=1 $(PERL) configure $(NO_ASM)
 			CONFIGURE_FLAGS=VC-WIN64A
-			BUILD_ACTION=cmd /c "ms$(EMQ)\do_win64a.bat $(subst,/,\ $(normpath,1 $(PERL)))" && cmd /c "nmake -f ms/ntdll.mak"
 		.ENDIF
-
-		OUT2LIB = out32dll$/ssleay32.lib
-		OUT2LIB += out32dll$/libeay32.lib
-		OUT2BIN = out32dll$/ssleay32.dll
-		OUT2BIN += out32dll$/libeay32.dll
-		OUT2INC = inc32$/openssl$/*
+		BUILD_ACTION=nmake
 	.ENDIF
 .ENDIF
 
