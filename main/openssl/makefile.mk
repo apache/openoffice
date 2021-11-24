@@ -128,6 +128,8 @@ OUT2LIB = libcrypto_static.*
 OUT2LIB += libssl_static.*
 OUT2LIB += libcrypto.*
 OUT2LIB += libssl.*
+OUT2BIN = libssl*.dll
+OUT2BIN += libcrypto*.dll
 .ELSE
 CONFIGURE_ACTION=
 BUILD_ACTION=cmd /c "ms\mingw32"
@@ -135,6 +137,8 @@ OUT2LIB = out/libcrypto_static.*
 OUT2LIB += out/libssl_static.*
 OUT2LIB += out/libcrypto.*
 OUT2LIB += out/libssl.*
+OUT2BIN = out/libssl*.dll
+OUT2BIN += out/libcrypto*.dll
 .ENDIF
 .ELSE
 
@@ -162,6 +166,10 @@ OUT2LIB += out/libssl.*
 			CONFIGURE_ACTION=CONFIGURE_INSIST=1 $(PERL) configure $(NO_ASM)
 			CONFIGURE_FLAGS=VC-WIN64A
 		.ENDIF
+		OUT2LIB = libssl.lib
+		OUT2LIB += libcrypto.lib
+		OUT2BIN = libssl*.dll
+		OUT2BIN += libcrypto*.dll
 		BUILD_ACTION=nmake
 	.ENDIF
 .ENDIF
