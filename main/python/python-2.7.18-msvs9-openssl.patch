@@ -1,0 +1,74 @@
+--- misc//Python-2.7.18/PC/VS9.0/_ssl.vcproj	2021-11-23 22:25:19.674332100 +0100
++++ misc/build/Python-2.7.18/PC/VS9.0/_ssl.vcproj	2021-11-23 22:31:24.955359600 +0100
+@@ -58,7 +58,7 @@
+ 			<Tool
+ 				Name="VCLinkerTool"
+ 				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -122,7 +122,7 @@
+ 			<Tool
+ 				Name="VCLinkerTool"
+ 				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -186,7 +186,7 @@
+ 			<Tool
+ 				Name="VCLinkerTool"
+ 				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libssl.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -251,7 +251,7 @@
+ 			<Tool
+ 				Name="VCLinkerTool"
+ 				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libssl.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -315,7 +315,7 @@
+ 			<Tool
+ 				Name="VCLinkerTool"
+ 				AdditionalOptions="/SAFESEH /NXCOMPAT /DYNAMICBASE"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libeay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(SOLARVER)\$(INPATH)\lib$(UPDMINOREXT)\libcrypto.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -379,7 +379,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out64\libeay32.lib $(opensslDir)\out64\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\libcrypto.lib $(opensslDir)\libssl.lib"
+ 				TargetMachine="17"
+ 			/>
+ 			<Tool
+@@ -443,7 +443,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out32\libeay32.lib $(opensslDir)\out32\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\libcrypto.lib $(opensslDir)\libssl.lib"
+ 			/>
+ 			<Tool
+ 				Name="VCALinkTool"
+@@ -507,7 +507,7 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\out64\libeay32.lib $(opensslDir)\out64\ssleay32.lib"
++				AdditionalDependencies="ws2_32.lib crypt32.lib $(opensslDir)\libcrypto.lib $(opensslDir)\libssl.lib"
+ 				TargetMachine="17"
+ 			/>
+ 			<Tool

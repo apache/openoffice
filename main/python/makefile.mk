@@ -54,7 +54,8 @@ PATCH_FILES=\
 
 .IF "$(GUI)"=="WNT"
 .IF "$(CPUNAME)"=="INTEL"
-PATCH_FILES += python-$(PYVERSION)-msvs9.patch
+PATCH_FILES += python-$(PYVERSION)-msvs9.patch \
+	python-$(PYVERSION)-msvs9-openssl.patch
 .ELIF "$(CPUNAME)"=="X86_64"
 PATCH_FILES += \
 	python-$(PYVERSION)-msvs9-win64.patch \
