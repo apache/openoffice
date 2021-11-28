@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,51 +54,49 @@ namespace sd {
 #define TOKEN (sal_Unicode(';'))
 
 /*************************************************************************
-|*
 |* Dialog zum Kopieren von Objekten
-|*
 \************************************************************************/
 
 CopyDlg::CopyDlg(
-    ::Window* pWindow, 
-    const SfxItemSet& rInAttrs,
-    XColorListSharedPtr aColTab, 
-    ::sd::View* pInView ) 
-    : SfxModalDialog     ( pWindow, SdResId( DLG_COPY ) ),
-      maFtCopies           ( this, SdResId( FT_COPIES ) ),
-      maNumFldCopies       ( this, SdResId( NUM_FLD_COPIES ) ),
-      maBtnSetViewData     ( this, SdResId( BTN_SET_VIEWDATA ) ),
-      maGrpMovement        ( this, SdResId( GRP_MOVEMENT ) ),
-      maFtMoveX            ( this, SdResId( FT_MOVE_X ) ),
-      maMtrFldMoveX        ( this, SdResId( MTR_FLD_MOVE_X ) ),
-      maFtMoveY            ( this, SdResId( FT_MOVE_Y ) ),
-      maMtrFldMoveY        ( this, SdResId( MTR_FLD_MOVE_Y ) ),
-      maFtAngle            ( this, SdResId( FT_ANGLE ) ),
-      maMtrFldAngle        ( this, SdResId( MTR_FLD_ANGLE ) ),
-      maGrpEnlargement     ( this, SdResId( GRP_ENLARGEMENT ) ),
-      maFtWidth            ( this, SdResId( FT_WIDTH ) ),
-      maMtrFldWidth        ( this, SdResId( MTR_FLD_WIDTH ) ),
-      maFtHeight           ( this, SdResId( FT_HEIGHT ) ),
-      maMtrFldHeight       ( this, SdResId( MTR_FLD_HEIGHT ) ),
-      maGrpColor           ( this, SdResId( GRP_COLOR ) ),
-      maFtStartColor       ( this, SdResId( FT_START_COLOR ) ),
-      maLbStartColor       ( this, SdResId( LB_START_COLOR ) ),
-      maFtEndColor         ( this, SdResId( FT_END_COLOR ) ),
-      maLbEndColor         ( this, SdResId( LB_END_COLOR ) ),
-      maBtnOK              ( this, SdResId( BTN_OK ) ),
-      maBtnCancel          ( this, SdResId( BTN_CANCEL ) ),
-      maBtnHelp            ( this, SdResId( BTN_HELP ) ),
-      maBtnSetDefault      ( this, SdResId( BTN_SET_DEFAULT ) ),
-      mrOutAttrs			( rInAttrs ),
-      maColorTab			( aColTab ),
+	::Window* pWindow,
+	const SfxItemSet& rInAttrs,
+	XColorListSharedPtr aColTab,
+	::sd::View* pInView )
+	: SfxModalDialog		( pWindow, SdResId( DLG_COPY ) ),
+	  maFtCopies			( this, SdResId( FT_COPIES ) ),
+	  maNumFldCopies		( this, SdResId( NUM_FLD_COPIES ) ),
+	  maBtnSetViewData		( this, SdResId( BTN_SET_VIEWDATA ) ),
+	  maGrpMovement			( this, SdResId( GRP_MOVEMENT ) ),
+	  maFtMoveX				( this, SdResId( FT_MOVE_X ) ),
+	  maMtrFldMoveX			( this, SdResId( MTR_FLD_MOVE_X ) ),
+	  maFtMoveY				( this, SdResId( FT_MOVE_Y ) ),
+	  maMtrFldMoveY			( this, SdResId( MTR_FLD_MOVE_Y ) ),
+	  maFtAngle				( this, SdResId( FT_ANGLE ) ),
+	  maMtrFldAngle			( this, SdResId( MTR_FLD_ANGLE ) ),
+	  maGrpEnlargement		( this, SdResId( GRP_ENLARGEMENT ) ),
+	  maFtWidth				( this, SdResId( FT_WIDTH ) ),
+	  maMtrFldWidth			( this, SdResId( MTR_FLD_WIDTH ) ),
+	  maFtHeight			( this, SdResId( FT_HEIGHT ) ),
+	  maMtrFldHeight		( this, SdResId( MTR_FLD_HEIGHT ) ),
+	  maGrpColor			( this, SdResId( GRP_COLOR ) ),
+	  maFtStartColor		( this, SdResId( FT_START_COLOR ) ),
+	  maLbStartColor		( this, SdResId( LB_START_COLOR ) ),
+	  maFtEndColor			( this, SdResId( FT_END_COLOR ) ),
+	  maLbEndColor			( this, SdResId( LB_END_COLOR ) ),
+	  maBtnOK				( this, SdResId( BTN_OK ) ),
+	  maBtnCancel			( this, SdResId( BTN_CANCEL ) ),
+	  maBtnHelp				( this, SdResId( BTN_HELP ) ),
+	  maBtnSetDefault		( this, SdResId( BTN_SET_DEFAULT ) ),
+	  mrOutAttrs			( rInAttrs ),
+	  maColorTab			( aColTab ),
 	  maUIScale(pInView->GetDoc()->GetUIScale()),
-      mpView				( pInView )
+	  mpView				( pInView )
 {
 	FreeResource();
 
-    // Set up the view data button (image and accessible name).
+	// Set up the view data button (image and accessible name).
 	maBtnSetViewData.SetModeImage( Image( SdResId( IMG_PIPETTE_H ) ), BMP_COLOR_HIGHCONTRAST );
-    maBtnSetViewData.SetAccessibleName (maBtnSetViewData.GetQuickHelpText());
+	maBtnSetViewData.SetAccessibleName (maBtnSetViewData.GetQuickHelpText());
 
 	// Farbtabellen
 	DBG_ASSERT( maColorTab.get(), "Keine gueltige ColorTable uebergeben!" );
@@ -121,9 +119,7 @@ CopyDlg::CopyDlg(
 }
 
 /*************************************************************************
-|*
 |* Dtor
-|*
 \************************************************************************/
 
 CopyDlg::~CopyDlg()
@@ -155,9 +151,7 @@ CopyDlg::~CopyDlg()
 }
 
 /*************************************************************************
-|*
 |* Liest uebergebenen Item-Set oder wertet den INI-String aus
-|*
 \************************************************************************/
 
 IMPL_LINK( CopyDlg, Reset, void*, EMPTYARG )
@@ -243,9 +237,7 @@ IMPL_LINK( CopyDlg, Reset, void*, EMPTYARG )
 }
 
 /*************************************************************************
-|*
 |* Fuellt uebergebenen Item-Set mit Dialogbox-Attributen
-|*
 \************************************************************************/
 
 void CopyDlg::GetAttr( SfxItemSet& rOutAttrs )
@@ -277,9 +269,7 @@ void CopyDlg::GetAttr( SfxItemSet& rOutAttrs )
 }
 
 /*************************************************************************
-|*
 |* Enabled und selektiert Endfarben-LB
-|*
 \************************************************************************/
 
 IMPL_LINK( CopyDlg, SelectColorHdl, void *, EMPTYARG )
