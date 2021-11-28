@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,27 +47,25 @@
 namespace sd {
 
 /*************************************************************************
-|*
 |* Dialog zum aufbrechen von Metafiles
-|*
 \************************************************************************/
 
 BreakDlg::BreakDlg(
-    ::Window* pWindow, 
-    DrawView* _pDrView, 
-    DrawDocShell* pShell,
-    sal_uLong nSumActionCount, 
-    sal_uLong nObjCount ) 
-    : SfxModalDialog     ( pWindow, SdResId( DLG_BREAK ) ),
-      aFtObjInfo			( this, SdResId( FT_OBJ_INFO ) ),
-      aFtActInfo			( this, SdResId( FT_ACT_INFO ) ),
-      aFtInsInfo			( this, SdResId( FT_INS_INFO ) ),
-      aFiObjInfo			( this, SdResId( FI_OBJ_INFO ) ),
-      aFiActInfo			( this, SdResId( FI_ACT_INFO ) ),
-      aFiInsInfo			( this, SdResId( FI_INS_INFO ) ),
-      aBtnCancel			( this, SdResId( BTN_CANCEL ) ),
-      aLink				( LINK( this, BreakDlg, UpDate)),
-      mpProgress			( NULL )
+	::Window* pWindow,
+	DrawView* _pDrView,
+	DrawDocShell* pShell,
+	sal_uLong nSumActionCount,
+	sal_uLong nObjCount )
+	: SfxModalDialog		( pWindow, SdResId( DLG_BREAK ) ),
+	  aFtObjInfo			( this, SdResId( FT_OBJ_INFO ) ),
+	  aFtActInfo			( this, SdResId( FT_ACT_INFO ) ),
+	  aFtInsInfo			( this, SdResId( FT_INS_INFO ) ),
+	  aFiObjInfo			( this, SdResId( FI_OBJ_INFO ) ),
+	  aFiActInfo			( this, SdResId( FI_ACT_INFO ) ),
+	  aFiInsInfo			( this, SdResId( FI_INS_INFO ) ),
+	  aBtnCancel			( this, SdResId( BTN_CANCEL ) ),
+	  aLink					( LINK( this, BreakDlg, UpDate)),
+	  mpProgress			( NULL )
 {
 	aBtnCancel.SetClickHdl( LINK( this, BreakDlg, CancelButtonHdl));
 
@@ -95,15 +93,15 @@ BreakDlg::~BreakDlg()
 // Control-Handler fuer den Abbruch Button
 IMPL_LINK( BreakDlg, CancelButtonHdl, void *, EMPTYARG )
 {
-  bCancel = sal_True;
-  aBtnCancel.Disable();
-  return( 0L );
+	bCancel = sal_True;
+	aBtnCancel.Disable();
+	return( 0L );
 }
 
 // Die UpDate Methode muss regelmaessig von der Arbeitsfunktion
 // ausgeuehrt werden.
-// Beim ersten aufruf wird die gesamtanzahl der actions uebergeben.
-// Jeder weitere sollte die bearbeiteten actions seit dem letzten aufruf von
+// Beim ersten aufruf wird die Gesamtanzahl der actions uebergeben.
+// Jeder weitere sollte die bearbeiteten actions seit dem letzten Aufruf von
 // UpDate erhalten.
 
 IMPL_LINK( BreakDlg, UpDate, void*, nInit )
@@ -111,7 +109,7 @@ IMPL_LINK( BreakDlg, UpDate, void*, nInit )
 	String aEmptyStr;
 
 	if(pProgrInfo == NULL)
-	  return 1L;
+		return 1L;
 
 	// Statuszeile updaten oder Fehlermeldung?
 	if(nInit == (void*)1L)
@@ -165,11 +163,11 @@ IMPL_LINK( BreakDlg, UpDate, void*, nInit )
 // nach oeffnen des Dialogs ausfuehrt
 short BreakDlg::Execute()
 {
-  aTimer.SetTimeout( 10 );
-  aTimer.SetTimeoutHdl( LINK( this, BreakDlg, InitialUpdate ) );
-  aTimer.Start();
+	aTimer.SetTimeout( 10 );
+	aTimer.SetTimeoutHdl( LINK( this, BreakDlg, InitialUpdate ) );
+	aTimer.Start();
 
-  return SfxModalDialog::Execute();
+	return SfxModalDialog::Execute();
 }
 
 // Linkmethode welche die Arbeitsfunktion startet
