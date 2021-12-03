@@ -94,7 +94,7 @@ namespace sdr
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfPageBackground::createViewIndependentPrimitive2DSequence() const
 		{
 			// We have only the page information, not the view information. Use the
-			// svtools::DOCCOLOR color for initialisation
+			// svtools::DOCCOLOR color for initialization
 			const svtools::ColorConfig aColorConfig;
 			const Color aInitColor(aColorConfig.GetColorValue(svtools::DOCCOLOR).nColor);
 			const basegfx::BColor aRGBColor(aInitColor.getBColor());
@@ -339,9 +339,9 @@ namespace sdr
 			const SdrPage& rPage = getPage();
 			const basegfx::B2DRange aPageBorderRange(0.0, 0.0, (double)rPage.GetWdt(), (double)rPage.GetHgt());
 
-			// Changed to 0x949599 for renaissance, before svtools::FONTCOLOR was used.
+			// Changed to 0x000000 as in Writer, before svtools::FONTCOLOR was used.
 			// Added old case as fallback for HighContrast.
-			basegfx::BColor aRGBBorderColor(0x94 / (double)0xff, 0x95 / (double)0xff, 0x99 / (double)0xff);
+			basegfx::BColor aRGBBorderColor(0x00 / (double)0xff, 0x00 / (double)0xff, 0x00 / (double)0xff);
 
 			if(Application::GetSettings().GetStyleSettings().GetHighContrastMode())
 			{
@@ -411,7 +411,7 @@ namespace sdr
 			const basegfx::B2DPolygon aPageBorderPolygon(basegfx::tools::createPolygonFromRect(aPageBorderRange));
 
 			// We have only the page information, not the view information. Use the
-			// svtools::FONTCOLOR or svtools::DOCBOUNDARIES color for initialisation
+			// svtools::FONTCOLOR or svtools::DOCBOUNDARIES color for initialization
 			const svtools::ColorConfig aColorConfig;
 			Color aBorderColor;
 

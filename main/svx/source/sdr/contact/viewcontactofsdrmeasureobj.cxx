@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,8 +55,8 @@ namespace sdr
 			const SfxItemSet& rItemSet = GetMeasureObj().GetMergedItemSet();
 			const drawinglayer::attribute::SdrLineShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineShadowTextAttribute(
-                    rItemSet, 
-                    GetMeasureObj().getText(0)));
+					rItemSet,
+					GetMeasureObj().getText(0)));
 
 			// take properties which are the model data.
 			const ::basegfx::B2DPoint aStart(GetMeasureObj().GetPoint(0).X(), GetMeasureObj().GetPoint(0).Y());
@@ -119,15 +119,15 @@ namespace sdr
 				}
 			}
 
-			// create primitive with the model data. Always create primitives to allow the 
+			// create primitive with the model data. Always create primitives to allow the
 			// decomposition of SdrMeasurePrimitive2D to create needed invisible elements for HitTest
 			// and/or BoundRect
 			const drawinglayer::primitive2d::Primitive2DReference xReference(
 				new drawinglayer::primitive2d::SdrMeasurePrimitive2D(
-					aAttribute, aStart, aEnd, 
-					aMTPHor, aMTPVer, fDistance, 
-					fUpperDistance, fLowerDistance, 
-					fLeftDelta, fRightDelta, bBelow, 
+					aAttribute, aStart, aEnd,
+					aMTPHor, aMTPVer, fDistance,
+					fUpperDistance, fLowerDistance,
+					fLeftDelta, fRightDelta, bBelow,
 					bTextRotation, bTextAutoAngle));
 
 			return drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
