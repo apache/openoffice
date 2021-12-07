@@ -1770,7 +1770,7 @@ File gid_File_Lib_Openssl
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
   #ifdef WNT
-    Name = "ssleay32.dll";
+    Name = "libssl-1_1.dll";
   #endif
 End
 #endif
@@ -1782,7 +1782,7 @@ File gid_File_Lib_Crypto
     Dir = SCP2_OOO_BIN_DIR;
 
 	#ifdef WNT
-	  Name = "libeay32.dll";
+	  Name = "libcrypto-1_1.dll";
 	#endif
 End
 #endif
@@ -2049,7 +2049,7 @@ End
 #ifdef SERF_MAJOR
 File gid_File_Lib_Serf
     #ifdef WNT
-        Name = SPECIAL_NAME(serf);
+        Name = STRING(CONCAT3(libserf-,SERF_MAJOR,.dll));
     #else
 	// Looks like the major version number is part of the name, not
 	// part of the suffix.  An error?
