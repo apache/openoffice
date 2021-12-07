@@ -32,6 +32,9 @@ AC_ARG_WITH(dmake-url,
                           Note that dmake is under GPL license.],
 [  DMAKE_URL="$withval"
 ])
+AC_ARG_WITH(scons,
+[  --with-scons           Specify location of the SCons executable
+],,)
 AC_ARG_WITH(packager-list,
 [  --with-packager-list=<PATH TO PACK LIST>   Specify a file to drive the packaging process.
                           The file must follow the format explained in
@@ -1915,6 +1918,32 @@ AC_SUBST(DMAKE_URL)
 AC_SUBST(DMAKE_PATH)
 AC_SUBST(IS_SYSTEM_DMAKE)
 
+dnl ***************************************
+dnl testing that SCons exists
+dnl ***************************************
+if test -z "$with_scons"; then
+   AC_PATH_PROG(SCONS, scons)
+   if test -z "$SCONS"; then
+      AC_MSG_ERROR([\"scons\" not found in \$PATH, install the development tool named \"scons"\])
+   fi
+else
+   if test -x "$with_scons"; then
+      if test "$_os" = "WINNT"; then
+          with_scons=`cygpath -u "$with_scons"`
+      fi
+      SCONS=$with_scons
+   else
+      AC_MSG_ERROR([--with-scons did not point to an executable])
+   fi
+fi
+AC_MSG_CHECKING([if SCons works])
+$SCONS > /dev/null
+if test $? = 0 ; then
+   AC_MSG_RESULT([yes])
+else
+   AC_MSG_ERROR([SCons test failed. Please see error message above.])
+fi
+AC_SUBST(SCONS)
 
 dnl ===================================================================
 dnl Search all the common names for GNU or BSD tar
