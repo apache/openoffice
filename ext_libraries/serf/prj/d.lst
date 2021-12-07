@@ -2,6 +2,10 @@ mkdir: %_DEST%\inc%_EXT%\serf
 ..\%__SRC%\inc\serf\serf*.h %_DEST%\inc%_EXT%\serf
 ..\serf_version.mk %_DEST%\inc%_EXT%
 
+# Wnt
+..\%__SRC%\lib\libserf-1.dll %_DEST%\bin%_EXT%
+..\%__SRC%\lib\libserf-1.lib %_DEST%\lib%_EXT%\libserf.lib
+
 # Mac
 ..\%__SRC%\lib\libserf-1.*dylib %_DEST%\lib%_EXT%
 
