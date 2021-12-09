@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -198,18 +198,16 @@ void SdOptionsGeneric::Store()
 bool SdOptionsGeneric::isMetricSystem()
 {
 	SvtSysLocale aSysLocale;
-    MeasurementSystem eSys = aSysLocale.GetLocaleDataPtr()->getMeasurementSystemEnum();
+	MeasurementSystem eSys = aSysLocale.GetLocaleDataPtr()->getMeasurementSystemEnum();
 
 	return ( eSys == MEASURE_METRIC );
 }
 
 /*************************************************************************
-|*
 |* SdOptionsLayout
-|*
 \************************************************************************/
 
-SdOptionsLayout::SdOptionsLayout(  sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
+SdOptionsLayout::SdOptionsLayout( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
 	SdOptionsGeneric( nConfigId, bUseConfig ?
 					  ( ( SDCFG_DRAW == nConfigId ) ?
 						B2U( "Office.Draw/Layout" ) :
@@ -221,7 +219,7 @@ SdOptionsLayout::SdOptionsLayout(  sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
 	bHandlesBezier( sal_False ),
 	bHelplines( sal_True ),
 	nMetric((sal_uInt16)(isMetricSystem() ? FUNIT_CM : FUNIT_INCH)),
-	nDefTab( 1250 )  
+	nDefTab( 1250 )
 {
 	EnableModify( sal_True );
 }
@@ -304,9 +302,7 @@ sal_Bool SdOptionsLayout::WriteData( Any* pValues ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsLayoutItem
-|*
 \************************************************************************/
 
 SdOptionsLayoutItem::SdOptionsLayoutItem( sal_uInt16 _nWhich )
@@ -358,7 +354,7 @@ SfxPoolItem* SdOptionsLayoutItem::Clone( SfxItemPool* ) const
 int SdOptionsLayoutItem::operator==( const SfxPoolItem& rAttr ) const
 {
 	const bool bSameType = SfxPoolItem::operator==( rAttr );
-	DBG_ASSERT( bSameType, "SdOptionsLayoutItem::operator==(), differen pool item type!" );
+	DBG_ASSERT( bSameType, "SdOptionsLayoutItem::operator==(), different pool item type!" );
 	return bSameType && ( maOptionsLayout == static_cast< const SdOptionsLayoutItem& >( rAttr ).maOptionsLayout );
 }
 
@@ -379,9 +375,7 @@ void SdOptionsLayoutItem::SetOptions( SdOptions* pOpts ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsContents
-|*
 \************************************************************************/
 
 SdOptionsContents::SdOptionsContents( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
@@ -398,7 +392,7 @@ SdOptionsContents::SdOptionsContents( sal_uInt16 nConfigId, sal_Bool bUseConfig 
 
 sal_Bool SdOptionsContents::operator==(const SdOptionsContents&) const
 {
-    return true;
+	return true;
 }
 
 // -----------------------------------------------------------------------------
@@ -438,9 +432,7 @@ sal_Bool SdOptionsContents::WriteData( Any* pValues ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsContentsItem
-|*
 \************************************************************************/
 
 SdOptionsContentsItem::SdOptionsContentsItem(sal_uInt16 _nWhich, SdOptions*, ::sd::FrameView*)
@@ -461,7 +453,7 @@ SfxPoolItem* SdOptionsContentsItem::Clone( SfxItemPool* ) const
 int SdOptionsContentsItem::operator==( const SfxPoolItem& rAttr ) const
 {
 	const bool bSameType = SfxPoolItem::operator==(rAttr);
-	DBG_ASSERT( bSameType, "SdOptionsContentsItem::operator==(), differen pool item type!" );
+	DBG_ASSERT( bSameType, "SdOptionsContentsItem::operator==(), different pool item type!" );
 	return bSameType && ( maOptionsContents == static_cast<const SdOptionsContentsItem&>( rAttr ).maOptionsContents );
 }
 
@@ -472,9 +464,7 @@ void SdOptionsContentsItem::SetOptions(SdOptions*) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsMisc
-|*
 \************************************************************************/
 
 SdOptionsMisc::SdOptionsMisc( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
@@ -494,18 +484,18 @@ SdOptionsMisc::SdOptionsMisc( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
 	bMasterPageCache( sal_True ),
 	bDragWithCopy( sal_False ),
 	bPickThrough( sal_True ),
-	bBigHandles( sal_True ),    // new default: Use big handles
+	bBigHandles( sal_True ), // new default: Use big handles
 	bDoubleClickTextEdit( sal_True ),
 	bClickChangeRotation( sal_False ),
 	bStartWithActualPage( sal_False ),
-    bStartWithPresenterScreen( sal_True ), // default: Enable the Presenter Screen
+	bStartWithPresenterScreen( sal_True ), // default: Enable the Presenter Screen
 	bSolidDragging( sal_True ),
-	bSolidMarkHdl( sal_True ),  // default: Use nice handles
+	bSolidMarkHdl( sal_True ), // default: Use nice handles
 	bSummationOfParagraphs( sal_False ),
 	// #90356#
 	bShowUndoDeleteWarning( sal_True ),
-    bSlideshowRespectZOrder( sal_True ),
-    bShowComments( sal_True ),
+	bSlideshowRespectZOrder( sal_True ),
+	bShowComments( sal_True ),
 	bPreviewNewEffects( sal_True ),
 	bPreviewChangedEffects( sal_False ),
 	bPreviewTransitions( sal_True ),
@@ -514,7 +504,7 @@ SdOptionsMisc::SdOptionsMisc( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
 	mnPenWidth( 150.0 ),
 
 	// The default for 6.1-and-above documents is to use printer-independent
-    // formatting.
+	// formatting.
 	mnPrinterIndependentLayout (1)
 {
 	EnableModify( sal_True );
@@ -536,7 +526,7 @@ sal_Bool SdOptionsMisc::operator==( const SdOptionsMisc& rOpt ) const
 			IsDoubleClickTextEdit() == rOpt.IsDoubleClickTextEdit() &&
 			IsClickChangeRotation() == rOpt.IsClickChangeRotation() &&
 			IsStartWithActualPage() == rOpt.IsStartWithActualPage() &&
-            IsStartWithPresenterScreen() == rOpt.IsStartWithPresenterScreen() &&
+			IsStartWithPresenterScreen() == rOpt.IsStartWithPresenterScreen() &&
 			IsSummationOfParagraphs() == rOpt.IsSummationOfParagraphs() &&
 			IsSolidDragging() == rOpt.IsSolidDragging() &&
 			IsSolidMarkHdl() == rOpt.IsSolidMarkHdl() &&
@@ -580,7 +570,7 @@ void SdOptionsMisc::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 		"DefaultObjectSize/Width",
 		"DefaultObjectSize/Height",
 
-        "Compatibility/PrinterIndependentLayout",
+		"Compatibility/PrinterIndependentLayout",
 
 		"ShowComments",
 
@@ -590,7 +580,7 @@ void SdOptionsMisc::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 		"Compatibility/AddBetween",
 		// #90356#
 		"ShowUndoDeleteWarning",
-        "SlideshowRespectZOrder",
+		"SlideshowRespectZOrder",
 
 		"PreviewNewEffects",
 		"PreviewChangedEffects",
@@ -601,7 +591,7 @@ void SdOptionsMisc::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 		"PenColor",
 		"PenWidth",
 
-        "Start/PresenterScreen"
+		"Start/PresenterScreen"
 	};
 
 	rCount = ( ( GetConfigId() == SDCFG_IMPRESS ) ? 28 : 16 );
@@ -621,7 +611,7 @@ sal_Bool SdOptionsMisc::ReadData( const Any* pValues )
 	if( pValues[6].hasValue() ) SetBigHandles( *(sal_Bool*) pValues[ 6 ].getValue() );
 	if( pValues[7].hasValue() ) SetDoubleClickTextEdit( *(sal_Bool*) pValues[ 7 ].getValue() );
 	if( pValues[8].hasValue() ) SetClickChangeRotation( *(sal_Bool*) pValues[ 8 ].getValue() );
-    //	if( pValues[9].hasValue() ) SetPreviewQuality( FRound( *(double*) pValues[ 9 ].getValue() ) );
+	//	if( pValues[9].hasValue() ) SetPreviewQuality( FRound( *(double*) pValues[ 9 ].getValue() ) );
 	if( pValues[10].hasValue() ) SetSolidDragging( *(sal_Bool*) pValues[ 10 ].getValue() );
 	if( pValues[11].hasValue() ) SetSolidMarkHdl( *(sal_Bool*) pValues[ 11 ].getValue() );
 	// #97016#
@@ -629,8 +619,8 @@ sal_Bool SdOptionsMisc::ReadData( const Any* pValues )
 	if( pValues[13].hasValue() ) SetDefaultObjectSizeHeight( *(sal_uInt32*) pValues[ 13 ].getValue() );
 	if( pValues[14].hasValue() ) SetPrinterIndependentLayout( *(sal_uInt16*) pValues[ 14 ].getValue() );
 
-    if( pValues[15].hasValue() )
-		SetShowComments(  *(sal_Bool*) pValues[ 15 ].getValue() );
+	if( pValues[15].hasValue() )
+		SetShowComments( *(sal_Bool*) pValues[ 15 ].getValue() );
 
 	// just for Impress
 	if( GetConfigId() == SDCFG_IMPRESS )
@@ -642,11 +632,11 @@ sal_Bool SdOptionsMisc::ReadData( const Any* pValues )
 		if( pValues[18].hasValue() )
 			SetSummationOfParagraphs( *(sal_Bool*) pValues[ 18 ].getValue() );
 		// #90356#
-		if( pValues[19].hasValue() ) 
+		if( pValues[19].hasValue() )
 			SetShowUndoDeleteWarning( *(sal_Bool*) pValues[ 19 ].getValue() );
 
 		if( pValues[20].hasValue() )
-            SetSlideshowRespectZOrder(*(sal_Bool*) pValues[ 20 ].getValue());
+			SetSlideshowRespectZOrder(*(sal_Bool*) pValues[ 20 ].getValue());
 
 		if( pValues[21].hasValue() )
 			SetPreviewNewEffects(*(sal_Bool*) pValues[ 21 ].getValue());
@@ -666,8 +656,8 @@ sal_Bool SdOptionsMisc::ReadData( const Any* pValues )
 		if( pValues[26].hasValue() )
 			SetPresentationPenWidth( getSafeValue< double >( pValues[ 26 ] ) );
 
-        if( pValues[27].hasValue() )
-            SetStartWithPresenterScreen( *(sal_Bool*) pValues[ 27 ].getValue() );
+		if( pValues[27].hasValue() )
+			SetStartWithPresenterScreen( *(sal_Bool*) pValues[ 27 ].getValue() );
 	}
 
 	return sal_True;
@@ -686,7 +676,7 @@ sal_Bool SdOptionsMisc::WriteData( Any* pValues ) const
 	pValues[ 6 ] <<= IsBigHandles();
 	pValues[ 7 ] <<= IsDoubleClickTextEdit();
 	pValues[ 8 ] <<= IsClickChangeRotation();
-    // The preview is not supported anymore.  Use a dummy value.
+	// The preview is not supported anymore. Use a dummy value.
 	pValues[ 9 ] <<= (double)0;// GetPreviewQuality();
 	pValues[ 10 ] <<= IsSolidDragging();
 	pValues[ 11 ] <<= IsSolidMarkHdl();
@@ -694,8 +684,8 @@ sal_Bool SdOptionsMisc::WriteData( Any* pValues ) const
 	pValues[ 12 ] <<= GetDefaultObjectSizeWidth();
 	pValues[ 13 ] <<= GetDefaultObjectSizeHeight();
 	pValues[ 14 ] <<= GetPrinterIndependentLayout();
-    pValues[ 15 ] <<= (sal_Bool)IsShowComments();
-    
+	pValues[ 15 ] <<= (sal_Bool)IsShowComments();
+
 	// just for Impress
 	if( GetConfigId() == SDCFG_IMPRESS )
 	{
@@ -715,16 +705,14 @@ sal_Bool SdOptionsMisc::WriteData( Any* pValues ) const
 		pValues[ 25 ] <<= GetPresentationPenColor();
 		pValues[ 26 ] <<= GetPresentationPenWidth();
 
-        pValues[ 27 ] <<= IsStartWithPresenterScreen();
+		pValues[ 27 ] <<= IsStartWithPresenterScreen();
 	}
 
 	return sal_True;
 }
 
 /*************************************************************************
-|*
 |* SdOptionsMiscItem
-|*
 \************************************************************************/
 
 SdOptionsMiscItem::SdOptionsMiscItem( sal_uInt16 _nWhich )
@@ -743,7 +731,7 @@ SdOptionsMiscItem::SdOptionsMiscItem( sal_uInt16 _nWhich, SdOptions* pOpts, ::sd
 	{
 		maOptionsMisc.SetStartWithTemplate( pOpts->IsStartWithTemplate() );
 		maOptionsMisc.SetStartWithActualPage( pOpts->IsStartWithActualPage() );
-        maOptionsMisc.SetStartWithPresenterScreen( pOpts->IsStartWithPresenterScreen() );
+		maOptionsMisc.SetStartWithPresenterScreen( pOpts->IsStartWithPresenterScreen() );
 		maOptionsMisc.SetSummationOfParagraphs( pOpts->IsSummationOfParagraphs() );
 		// #90356#
 		maOptionsMisc.SetShowUndoDeleteWarning( pOpts->IsShowUndoDeleteWarning() );
@@ -811,7 +799,7 @@ SfxPoolItem* SdOptionsMiscItem::Clone( SfxItemPool* ) const
 int SdOptionsMiscItem::operator==( const SfxPoolItem& rAttr ) const
 {
 	const bool bSameType = SfxPoolItem::operator==(rAttr);
-	DBG_ASSERT( bSameType, "SdOptionsMiscItem::operator==(), differen pool item type!" );
+	DBG_ASSERT( bSameType, "SdOptionsMiscItem::operator==(), different pool item type!" );
 	return bSameType && ( maOptionsMisc == static_cast< const SdOptionsMiscItem& >(rAttr).maOptionsMisc );
 }
 
@@ -833,7 +821,7 @@ void SdOptionsMiscItem::SetOptions( SdOptions* pOpts ) const
 		pOpts->SetDoubleClickTextEdit( maOptionsMisc.IsDoubleClickTextEdit() );
 		pOpts->SetClickChangeRotation( maOptionsMisc.IsClickChangeRotation() );
 		pOpts->SetStartWithActualPage( maOptionsMisc.IsStartWithActualPage() );
-        pOpts->SetStartWithPresenterScreen( maOptionsMisc.IsStartWithPresenterScreen() );
+		pOpts->SetStartWithPresenterScreen( maOptionsMisc.IsStartWithPresenterScreen() );
 		pOpts->SetSummationOfParagraphs( maOptionsMisc.IsSummationOfParagraphs() );
 		pOpts->SetSolidDragging( maOptionsMisc.IsSolidDragging() );
 		pOpts->SetSolidMarkHdl( maOptionsMisc.IsSolidMarkHdl() );
@@ -850,22 +838,20 @@ void SdOptionsMiscItem::SetOptions( SdOptions* pOpts ) const
 		pOpts->SetPreviewTransitions( maOptionsMisc.IsPreviewTransitions() );
 
 		pOpts->SetDisplay( maOptionsMisc.GetDisplay() );
-		
+
 		pOpts->SetPresentationPenColor( maOptionsMisc.GetPresentationPenColor() );
 		pOpts->SetPresentationPenWidth( maOptionsMisc.GetPresentationPenWidth() );
 	}
 }
 
 /*************************************************************************
-|*
 |* SdOptionsSnap
-|*
 \************************************************************************/
 
 SdOptionsSnap::SdOptionsSnap( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
-	SdOptionsGeneric( nConfigId, bUseConfig ? 
-					  ( ( SDCFG_DRAW == nConfigId ) ? 
-						B2U( "Office.Draw/Snap" ) : 
+	SdOptionsGeneric( nConfigId, bUseConfig ?
+					  ( ( SDCFG_DRAW == nConfigId ) ?
+						B2U( "Office.Draw/Snap" ) :
 						B2U( "Office.Impress/Snap" ) ) :
 					  OUString() ),
 	bSnapHelplines( sal_True ),
@@ -916,7 +902,7 @@ void SdOptionsSnap::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 		"Position/RotatingValue",
 		"Position/PointReduction"
 	};
-	
+
 	rCount = 10;
 	ppNames = aPropNames;
 }
@@ -925,16 +911,16 @@ void SdOptionsSnap::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 
 sal_Bool SdOptionsSnap::ReadData( const Any* pValues )
 {
-	if( pValues[0].hasValue() ) SetSnapHelplines( *(sal_Bool*) pValues[ 0 ].getValue() ); 
-	if( pValues[1].hasValue() ) SetSnapBorder( *(sal_Bool*)pValues[ 1 ].getValue() );  
-	if( pValues[2].hasValue() ) SetSnapFrame( *(sal_Bool*) pValues[ 2 ].getValue() ); 
-	if( pValues[3].hasValue() ) SetSnapPoints( *(sal_Bool*) pValues[ 3 ].getValue() ); 
-	if( pValues[4].hasValue() ) SetOrtho( *(sal_Bool*) pValues[ 4 ].getValue() ); 
-	if( pValues[5].hasValue() ) SetBigOrtho( *(sal_Bool*) pValues[ 5 ].getValue() ); 
-	if( pValues[6].hasValue() ) SetRotate( *(sal_Bool*) pValues[ 6 ].getValue() ); 
-	if( pValues[7].hasValue() ) SetSnapArea( (sal_Int16) *(sal_Int32*) pValues[ 7 ].getValue() ); 
-	if( pValues[8].hasValue() ) SetAngle( (sal_Int16) *(sal_Int32*) pValues[ 8 ].getValue() ); 
-	if( pValues[9].hasValue() ) SetEliminatePolyPointLimitAngle( (sal_Int16) *(sal_Int32*) pValues[ 9 ].getValue() ); 
+	if( pValues[0].hasValue() ) SetSnapHelplines( *(sal_Bool*) pValues[ 0 ].getValue() );
+	if( pValues[1].hasValue() ) SetSnapBorder( *(sal_Bool*)pValues[ 1 ].getValue() );
+	if( pValues[2].hasValue() ) SetSnapFrame( *(sal_Bool*) pValues[ 2 ].getValue() );
+	if( pValues[3].hasValue() ) SetSnapPoints( *(sal_Bool*) pValues[ 3 ].getValue() );
+	if( pValues[4].hasValue() ) SetOrtho( *(sal_Bool*) pValues[ 4 ].getValue() );
+	if( pValues[5].hasValue() ) SetBigOrtho( *(sal_Bool*) pValues[ 5 ].getValue() );
+	if( pValues[6].hasValue() ) SetRotate( *(sal_Bool*) pValues[ 6 ].getValue() );
+	if( pValues[7].hasValue() ) SetSnapArea( (sal_Int16) *(sal_Int32*) pValues[ 7 ].getValue() );
+	if( pValues[8].hasValue() ) SetAngle( (sal_Int16) *(sal_Int32*) pValues[ 8 ].getValue() );
+	if( pValues[9].hasValue() ) SetEliminatePolyPointLimitAngle( (sal_Int16) *(sal_Int32*) pValues[ 9 ].getValue() );
 
 	return sal_True;
 }
@@ -943,24 +929,22 @@ sal_Bool SdOptionsSnap::ReadData( const Any* pValues )
 
 sal_Bool SdOptionsSnap::WriteData( Any* pValues ) const
 {
-	pValues[ 0 ] <<= IsSnapHelplines(); 
-	pValues[ 1 ] <<= IsSnapBorder(); 
-	pValues[ 2 ] <<= IsSnapFrame(); 
-	pValues[ 3 ] <<= IsSnapPoints(); 
-	pValues[ 4 ] <<= IsOrtho(); 
-	pValues[ 5 ] <<= IsBigOrtho(); 
-	pValues[ 6 ] <<= IsRotate(); 
-	pValues[ 7 ] <<= (sal_Int32) GetSnapArea(); 
-	pValues[ 8 ] <<= (sal_Int32) GetAngle(); 
-	pValues[ 9 ] <<= (sal_Int32) GetEliminatePolyPointLimitAngle(); 
+	pValues[ 0 ] <<= IsSnapHelplines();
+	pValues[ 1 ] <<= IsSnapBorder();
+	pValues[ 2 ] <<= IsSnapFrame();
+	pValues[ 3 ] <<= IsSnapPoints();
+	pValues[ 4 ] <<= IsOrtho();
+	pValues[ 5 ] <<= IsBigOrtho();
+	pValues[ 6 ] <<= IsRotate();
+	pValues[ 7 ] <<= (sal_Int32) GetSnapArea();
+	pValues[ 8 ] <<= (sal_Int32) GetAngle();
+	pValues[ 9 ] <<= (sal_Int32) GetEliminatePolyPointLimitAngle();
 
 	return sal_True;
 }
 
 /*************************************************************************
-|*
 |* SdOptionsSnapItem
-|*
 \************************************************************************/
 
 SdOptionsSnapItem::SdOptionsSnapItem( sal_uInt16 _nWhich )
@@ -1016,7 +1000,7 @@ SfxPoolItem* SdOptionsSnapItem::Clone( SfxItemPool* ) const
 int SdOptionsSnapItem::operator==( const SfxPoolItem& rAttr ) const
 {
 	const bool bSameType = SfxPoolItem::operator==(rAttr);
-	DBG_ASSERT( bSameType, "SdOptionsSnapItem::operator==(), differen pool item type!" );
+	DBG_ASSERT( bSameType, "SdOptionsSnapItem::operator==(), different pool item type!" );
 	return bSameType && ( maOptionsSnap == static_cast< const SdOptionsSnapItem& >(rAttr).maOptionsSnap );
 }
 
@@ -1040,18 +1024,16 @@ void SdOptionsSnapItem::SetOptions( SdOptions* pOpts ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsZoom
-|*
 \************************************************************************/
 
 SdOptionsZoom::SdOptionsZoom( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
-	SdOptionsGeneric( nConfigId, ( bUseConfig &&  ( SDCFG_DRAW == nConfigId ) ) ? 
-								 B2U( "Office.Draw/Zoom" ) : 
-							     OUString() ),
+	SdOptionsGeneric( nConfigId, ( bUseConfig && ( SDCFG_DRAW == nConfigId ) ) ?
+								 B2U( "Office.Draw/Zoom" ) :
+								 OUString() ),
 	nX( 1 ),
-    nY( 1 )
-    
+	nY( 1 )
+
 {
 	EnableModify( sal_True );
 }
@@ -1065,7 +1047,7 @@ sal_Bool SdOptionsZoom::operator==( const SdOptionsZoom& rOpt ) const
 	GetScale( nX1, nY1 );
 	rOpt.GetScale( nX2, nY2 );
 
-	return( ( nX1 == nX2 ) && 
+	return( ( nX1 == nX2 ) &&
 			( nY1 == nY2 ) );
 }
 
@@ -1078,7 +1060,7 @@ void SdOptionsZoom::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 		"ScaleX",
 		"ScaleY"
 	};
-	
+
 	rCount = ( GetConfigId() == SDCFG_DRAW ) ? 2 : 0;
 	ppNames = aPropNames;
 }
@@ -1089,9 +1071,9 @@ sal_Bool SdOptionsZoom::ReadData( const Any* pValues )
 {
 	sal_Int32 x = 1, y = 1;
 
-	if( pValues[0].hasValue() ) x = ( *(sal_Int32*) pValues[ 0 ].getValue() ); 
-	if( pValues[1].hasValue() ) y = ( *(sal_Int32*) pValues[ 1 ].getValue() );  
-	
+	if( pValues[0].hasValue() ) x = ( *(sal_Int32*) pValues[ 0 ].getValue() );
+	if( pValues[1].hasValue() ) y = ( *(sal_Int32*) pValues[ 1 ].getValue() );
+
 	SetScale( x, y );
 
 	return sal_True;
@@ -1105,22 +1087,20 @@ sal_Bool SdOptionsZoom::WriteData( Any* pValues ) const
 
 	GetScale( x, y );
 
-	pValues[ 0 ] <<= (sal_Int32) x; 
-	pValues[ 1 ] <<= (sal_Int32) y; 
+	pValues[ 0 ] <<= (sal_Int32) x;
+	pValues[ 1 ] <<= (sal_Int32) y;
 
 	return sal_True;
 }
 
 /*************************************************************************
-|*
 |* SdOptionsGrid
-|*
 \************************************************************************/
 
 SdOptionsGrid::SdOptionsGrid( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
-	SdOptionsGeneric( nConfigId, bUseConfig ? 
-					  ( ( SDCFG_DRAW == nConfigId ) ? 
-						B2U( "Office.Draw/Grid" ) : 
+	SdOptionsGeneric( nConfigId, bUseConfig ?
+					  ( ( SDCFG_DRAW == nConfigId ) ?
+						B2U( "Office.Draw/Grid" ) :
 						B2U( "Office.Impress/Grid" ) ) :
 					  OUString() )
 {
@@ -1213,27 +1193,27 @@ void SdOptionsGrid::GetPropNameArray( const char**& ppNames, sal_uLong& rCount )
 
 sal_Bool SdOptionsGrid::ReadData( const Any* pValues )
 {
-	if( pValues[0].hasValue() ) SetFldDrawX( *(sal_Int32*) pValues[ 0 ].getValue() ); 
-	if( pValues[1].hasValue() ) SetFldDrawY( *(sal_Int32*) pValues[ 1 ].getValue() ); 
+	if( pValues[0].hasValue() ) SetFldDrawX( *(sal_Int32*) pValues[ 0 ].getValue() );
+	if( pValues[1].hasValue() ) SetFldDrawY( *(sal_Int32*) pValues[ 1 ].getValue() );
 
 	if( pValues[2].hasValue() )
 	{
 		const sal_uInt32 nDivX = FRound( *(double*) pValues[ 2 ].getValue() );
-		SetFldDivisionX( SvxOptionsGrid::GetFldDrawX() / ( nDivX + 1 ) ); 
+		SetFldDivisionX( SvxOptionsGrid::GetFldDrawX() / ( nDivX + 1 ) );
 	}
 
 	if( pValues[3].hasValue() )
 	{
 		const sal_uInt32 nDivY = FRound( *(double*) pValues[ 3 ].getValue() );
-		SetFldDivisionY( SvxOptionsGrid::GetFldDrawY() / ( nDivY + 1 ) ); 
+		SetFldDivisionY( SvxOptionsGrid::GetFldDrawY() / ( nDivY + 1 ) );
 	}
 
-	if( pValues[4].hasValue() ) SetFldSnapX( *(sal_Int32*) pValues[ 4 ].getValue() ); 
-	if( pValues[5].hasValue() ) SetFldSnapY( *(sal_Int32*) pValues[ 5 ].getValue() ); 
-	if( pValues[6].hasValue() ) SetUseGridSnap( *(sal_Bool*) pValues[ 6 ].getValue() ); 
-	if( pValues[7].hasValue() ) SetSynchronize( *(sal_Bool*) pValues[ 7 ].getValue() ); 
-	if( pValues[8].hasValue() ) SetGridVisible( *(sal_Bool*) pValues[ 8 ].getValue() ); 
-	if( pValues[9].hasValue() ) SetEqualGrid( *(sal_Bool*) pValues[ 9 ].getValue() ); 
+	if( pValues[4].hasValue() ) SetFldSnapX( *(sal_Int32*) pValues[ 4 ].getValue() );
+	if( pValues[5].hasValue() ) SetFldSnapY( *(sal_Int32*) pValues[ 5 ].getValue() );
+	if( pValues[6].hasValue() ) SetUseGridSnap( *(sal_Bool*) pValues[ 6 ].getValue() );
+	if( pValues[7].hasValue() ) SetSynchronize( *(sal_Bool*) pValues[ 7 ].getValue() );
+	if( pValues[8].hasValue() ) SetGridVisible( *(sal_Bool*) pValues[ 8 ].getValue() );
+	if( pValues[9].hasValue() ) SetEqualGrid( *(sal_Bool*) pValues[ 9 ].getValue() );
 
 	return sal_True;
 }
@@ -1242,24 +1222,22 @@ sal_Bool SdOptionsGrid::ReadData( const Any* pValues )
 
 sal_Bool SdOptionsGrid::WriteData( Any* pValues ) const
 {
-	pValues[ 0 ] <<= (sal_Int32) GetFldDrawX(); 
-	pValues[ 1 ] <<= (sal_Int32) GetFldDrawY(); 
+	pValues[ 0 ] <<= (sal_Int32) GetFldDrawX();
+	pValues[ 1 ] <<= (sal_Int32) GetFldDrawY();
 	pValues[ 2 ] <<= ( GetFldDivisionX() ? ( (double) GetFldDrawX() / GetFldDivisionX() - 1.0 ) : (double) 0 );
 	pValues[ 3 ] <<= ( GetFldDivisionY() ? ( (double) GetFldDrawY() / GetFldDivisionY() - 1.0 ) : (double) 0 );
-	pValues[ 4 ] <<= (sal_Int32) GetFldSnapX(); 
-	pValues[ 5 ] <<= (sal_Int32) GetFldSnapY(); 
-	pValues[ 6 ] <<= IsUseGridSnap(); 
-	pValues[ 7 ] <<= IsSynchronize(); 
-	pValues[ 8 ] <<= IsGridVisible(); 
-	pValues[ 9 ] <<= IsEqualGrid(); 
+	pValues[ 4 ] <<= (sal_Int32) GetFldSnapX();
+	pValues[ 5 ] <<= (sal_Int32) GetFldSnapY();
+	pValues[ 6 ] <<= IsUseGridSnap();
+	pValues[ 7 ] <<= IsSynchronize();
+	pValues[ 8 ] <<= IsGridVisible();
+	pValues[ 9 ] <<= IsEqualGrid();
 
 	return sal_True;
 }
 
 /*************************************************************************
-|*
 |* SdOptionsGridItem
-|*
 \************************************************************************/
 
 SdOptionsGridItem::SdOptionsGridItem( sal_uInt16 _nWhich, SdOptions* pOpts, ::sd::FrameView* pView ) :
@@ -1309,15 +1287,13 @@ void SdOptionsGridItem::SetOptions( SdOptions* pOpts ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsPrint
-|*
 \************************************************************************/
 
 SdOptionsPrint::SdOptionsPrint( sal_uInt16 nConfigId, sal_Bool bUseConfig ) :
-	SdOptionsGeneric( nConfigId, bUseConfig ? 
-					  ( ( SDCFG_DRAW == nConfigId ) ? 
-						B2U( "Office.Draw/Print" ) : 
+	SdOptionsGeneric( nConfigId, bUseConfig ?
+					  ( ( SDCFG_DRAW == nConfigId ) ?
+						B2U( "Office.Draw/Print" ) :
 						B2U( "Office.Impress/Print" ) ) :
 					  OUString() ),
 	bDraw( sal_True ),
@@ -1436,25 +1412,25 @@ void SdOptionsPrint::GetPropNameArray( const char**& ppNames, sal_uLong& rCount 
 
 sal_Bool SdOptionsPrint::ReadData( const Any* pValues )
 {
-	if( pValues[0].hasValue() ) SetDate( *(sal_Bool*) pValues[ 0 ].getValue() ); 
-	if( pValues[1].hasValue() ) SetTime( *(sal_Bool*) pValues[ 1 ].getValue() ); 
-	if( pValues[2].hasValue() ) SetPagename( *(sal_Bool*) pValues[ 2 ].getValue() ); 
-	if( pValues[3].hasValue() ) SetHiddenPages( *(sal_Bool*) pValues[ 3 ].getValue() ); 
-	if( pValues[4].hasValue() ) SetPagesize( *(sal_Bool*) pValues[ 4 ].getValue() ); 
-	if( pValues[5].hasValue() ) SetPagetile( *(sal_Bool*) pValues[ 5 ].getValue() ); 
-	if( pValues[6].hasValue() ) SetBooklet( *(sal_Bool*) pValues[ 6 ].getValue() ); 
-	if( pValues[7].hasValue() ) SetFrontPage( *(sal_Bool*) pValues[ 7 ].getValue() ); 
-	if( pValues[8].hasValue() ) SetBackPage( *(sal_Bool*) pValues[ 8 ].getValue() ); 
-	if( pValues[9].hasValue() ) SetPaperbin( *(sal_Bool*) pValues[ 9 ].getValue() ); 
-	if( pValues[10].hasValue() ) SetOutputQuality( (sal_uInt16) *(sal_Int32*) pValues[ 10 ].getValue() ); 
-	if( pValues[11].hasValue() ) SetDraw( *(sal_Bool*) pValues[ 11 ].getValue() ); 
+	if( pValues[0].hasValue() ) SetDate( *(sal_Bool*) pValues[ 0 ].getValue() );
+	if( pValues[1].hasValue() ) SetTime( *(sal_Bool*) pValues[ 1 ].getValue() );
+	if( pValues[2].hasValue() ) SetPagename( *(sal_Bool*) pValues[ 2 ].getValue() );
+	if( pValues[3].hasValue() ) SetHiddenPages( *(sal_Bool*) pValues[ 3 ].getValue() );
+	if( pValues[4].hasValue() ) SetPagesize( *(sal_Bool*) pValues[ 4 ].getValue() );
+	if( pValues[5].hasValue() ) SetPagetile( *(sal_Bool*) pValues[ 5 ].getValue() );
+	if( pValues[6].hasValue() ) SetBooklet( *(sal_Bool*) pValues[ 6 ].getValue() );
+	if( pValues[7].hasValue() ) SetFrontPage( *(sal_Bool*) pValues[ 7 ].getValue() );
+	if( pValues[8].hasValue() ) SetBackPage( *(sal_Bool*) pValues[ 8 ].getValue() );
+	if( pValues[9].hasValue() ) SetPaperbin( *(sal_Bool*) pValues[ 9 ].getValue() );
+	if( pValues[10].hasValue() ) SetOutputQuality( (sal_uInt16) *(sal_Int32*) pValues[ 10 ].getValue() );
+	if( pValues[11].hasValue() ) SetDraw( *(sal_Bool*) pValues[ 11 ].getValue() );
 
-	// just for impress
+	// just for Impress
 	if( GetConfigId() == SDCFG_IMPRESS )
 	{
-		if( pValues[12].hasValue() ) SetNotes( *(sal_Bool*) pValues[ 12 ].getValue() ); 
-		if( pValues[13].hasValue() ) SetHandout( *(sal_Bool*) pValues[ 13 ].getValue() ); 
-		if( pValues[14].hasValue() ) SetOutline( *(sal_Bool*) pValues[ 14 ].getValue() ); 
+		if( pValues[12].hasValue() ) SetNotes( *(sal_Bool*) pValues[ 12 ].getValue() );
+		if( pValues[13].hasValue() ) SetHandout( *(sal_Bool*) pValues[ 13 ].getValue() );
+		if( pValues[14].hasValue() ) SetOutline( *(sal_Bool*) pValues[ 14 ].getValue() );
 		if( pValues[15].hasValue() ) SetHandoutHorizontal( *(sal_Bool*) pValues[15].getValue() );
 		if( pValues[16].hasValue() ) SetHandoutPages( (sal_uInt16)*(sal_Int32*) pValues[16].getValue() );
 	}
@@ -1466,25 +1442,25 @@ sal_Bool SdOptionsPrint::ReadData( const Any* pValues )
 
 sal_Bool SdOptionsPrint::WriteData( Any* pValues ) const
 {
-	pValues[ 0 ] <<= IsDate(); 
-	pValues[ 1 ] <<= IsTime(); 
+	pValues[ 0 ] <<= IsDate();
+	pValues[ 1 ] <<= IsTime();
 	pValues[ 2 ] <<= IsPagename();
 	pValues[ 3 ] <<= IsHiddenPages();
-	pValues[ 4 ] <<= IsPagesize(); 
+	pValues[ 4 ] <<= IsPagesize();
 	pValues[ 5 ] <<= IsPagetile();
 	pValues[ 6 ] <<= IsBooklet();
-	pValues[ 7 ] <<= IsFrontPage(); 
-	pValues[ 8 ] <<= IsBackPage(); 
+	pValues[ 7 ] <<= IsFrontPage();
+	pValues[ 8 ] <<= IsBackPage();
 	pValues[ 9 ] <<= IsPaperbin();
-	pValues[ 10 ] <<= (sal_Int32) GetOutputQuality(); 
+	pValues[ 10 ] <<= (sal_Int32) GetOutputQuality();
 	pValues[ 11 ] <<= IsDraw();
-	
-	// just for impress
+
+	// just for Impress
 	if( GetConfigId() == SDCFG_IMPRESS )
 	{
-		pValues[ 12 ] <<= IsNotes(); 
-		pValues[ 13 ] <<= IsHandout(); 
-		pValues[ 14 ] <<= IsOutline(); 
+		pValues[ 12 ] <<= IsNotes();
+		pValues[ 13 ] <<= IsHandout();
+		pValues[ 14 ] <<= IsOutline();
 		pValues[ 15 ] <<= IsHandoutHorizontal();
 		pValues[ 16 ] <<= GetHandoutPages();
 	}
@@ -1493,9 +1469,7 @@ sal_Bool SdOptionsPrint::WriteData( Any* pValues ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptionsPrintItem
-|*
 \************************************************************************/
 
 SdOptionsPrintItem::SdOptionsPrintItem( sal_uInt16 _nWhich )
@@ -1546,7 +1520,7 @@ SfxPoolItem* SdOptionsPrintItem::Clone( SfxItemPool* ) const
 int SdOptionsPrintItem::operator==( const SfxPoolItem& rAttr ) const
 {
 	const bool bSameType = SfxPoolItem::operator==(rAttr);
-	DBG_ASSERT( bSameType, "SdOptionsPrintItem::operator==(), differen pool item type!" );
+	DBG_ASSERT( bSameType, "SdOptionsPrintItem::operator==(), different pool item type!" );
 	return bSameType && ( maOptionsPrint == static_cast< const SdOptionsPrintItem& >( rAttr ).maOptionsPrint );
 }
 
@@ -1579,9 +1553,7 @@ void SdOptionsPrintItem::SetOptions( SdOptions* pOpts ) const
 }
 
 /*************************************************************************
-|*
 |* SdOptions
-|*
 \************************************************************************/
 
 SdOptions::SdOptions( sal_uInt16 nConfigId ) :
