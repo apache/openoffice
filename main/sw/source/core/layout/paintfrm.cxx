@@ -167,7 +167,7 @@ SV_DECL_VARARR( SwLRects, SwLineRect, 100, 100 )
 
 class SwLineRects : public SwLRects
 {
-	sal_uInt16 nLastCount;	//unuetze Durchlaeufe im PaintLines verhindern.
+	sal_uInt16 nLastCount;	// unnuetze Durchlaeufe im PaintLines verhindern.
 public:
 	SwLineRects() : nLastCount( 0 ) {}
 	void AddLineRect( const SwRect& rRect,	const Color *pColor,
@@ -193,7 +193,7 @@ public:
 
 static ViewShell *pGlobalShell = 0;
 
-//Wenn durchsichtige FlyInCnts im PaintBackground gepainted werden so soll der
+//Wenn durchsichtige FlyInCnts im PaintBackground gepaintet werden so soll der
 //Hintergrund nicht mehr retouchiert werden.
 //static sal_Bool bLockFlyBackground = sal_False;
 
@@ -226,7 +226,7 @@ static double aEdgeScale = 0.5;
 //In pSubsLines werden Hilfslinien gesammelt und zusammengefasst. Diese
 //werden vor der Ausgabe mit pLines abgeglichen, so dass moeglichst keine
 //Umrandungen von den Hilfslinen verdeckt werden.
-//bTablines ist waerend des Paints einer Tabelle sal_True.
+//bTablines ist waehrend des Paints einer Tabelle sal_True.
 static SwLineRects *pLines = 0;
 static SwSubsRects *pSubsLines = 0;
 // OD 18.11.2002 #99672# - global variable for sub-lines of body, header, footer,
@@ -4748,7 +4748,7 @@ void SwFrm::PaintBorder( const SwRect& rRect, const SwPageFrm *pPage,
     if ( bLine || bShadow || bFoundCellForTopOrBorderAttrs )
 	{
 		//Wenn das Rechteck vollstandig innerhalb der PrtArea liegt,
-		//so braucht kein Rand gepainted werden.
+		//so braucht kein Rand gepaintet werden.
 		//Fuer die PrtArea muss der Aligned'e Wert zugrunde gelegt werden,
 		//anderfalls wuerden u.U. Teile nicht verarbeitet.
 		SwRect aRect( Prt() );
@@ -6712,7 +6712,7 @@ Graphic SwFlyFrmFmt::MakeGraphic( ImageMap* pMap )
 		aDev.SetFillColor();
 		aDev.SetFont( pOld->GetFont() );
 
-		//Rechteck ggf. ausdehnen, damit die Umrandunge mit aufgezeichnet werden.
+		//Rechteck ggf. ausdehnen, damit die Umrandungen mit aufgezeichnet werden.
 		SwRect aOut( pFly->Frm() );
 		SwBorderAttrAccess aAccess( SwFrm::GetCache(), pFly );
 		const SwBorderAttrs &rAttrs = *aAccess.Get();
