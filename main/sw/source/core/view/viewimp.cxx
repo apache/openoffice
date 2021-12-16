@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -48,18 +50,16 @@
 #include <drawdoc.hxx>
 
 /*************************************************************************
-|*
 |*	SwViewImp::Init()
 |*
 |*	Ersterstellung		MA 25. Jul. 94
 |*	Letzte Aenderung	MA 03. Nov. 95
-|*
-|*************************************************************************/
+**************************************************************************/
 
 void SwViewImp::Init( const SwViewOption *pNewOpt )
 {
 	ASSERT( pDrawView, "SwViewImp::Init without DrawView" );
-	//Jetzt die PageView erzeugen wenn sie noch nicht existiert.
+	// Jetzt die PageView erzeugen wenn sie noch nicht existiert.
     SwRootFrm *pRoot = pSh->GetLayout();	//swmod 071108//swmod 071225
 	if ( !pSdrPageView )
 	{
@@ -102,13 +102,11 @@ void SwViewImp::Init( const SwViewOption *pNewOpt )
 }
 
 /*************************************************************************
-|*
 |*	SwViewImp::SwViewImp()	CTor fuer die Core-Internas
 |*
 |*	Ersterstellung		MA 25. Jul. 94
 |*	Letzte Aenderung	MA 06. Sep. 96
-|*
-|*************************************************************************/
+**************************************************************************/
 
 SwViewImp::SwViewImp( ViewShell *pParent ) :
 	pSh( pParent ),
@@ -132,12 +130,10 @@ SwViewImp::SwViewImp( ViewShell *pParent ) :
 }
 
 /******************************************************************************
-|*
 |*	SwViewImp::~SwViewImp()
 |*
 |*	Ersterstellung		MA 25. Jul. 94
 |*	Letzte Aenderung	MA 16. Dec. 94
-|*
 ******************************************************************************/
 
 SwViewImp::~SwViewImp()
@@ -160,12 +156,10 @@ SwViewImp::~SwViewImp()
 }
 
 /******************************************************************************
-|*
 |*	SwViewImp::DelRegions()
 |*
 |*	Ersterstellung		MA 14. Apr. 94
 |*	Letzte Aenderung	MA 14. Apr. 94
-|*
 ******************************************************************************/
 
 void SwViewImp::DelRegion()
@@ -174,12 +168,10 @@ void SwViewImp::DelRegion()
 }
 
 /******************************************************************************
-|*
 |*	SwViewImp::AddPaintRect()
 |*
 |*	Ersterstellung		MA ??
 |*	Letzte Aenderung	MA 27. Jul. 94
-|*
 ******************************************************************************/
 
 sal_Bool SwViewImp::AddPaintRect( const SwRect &rRect )
@@ -196,12 +188,10 @@ sal_Bool SwViewImp::AddPaintRect( const SwRect &rRect )
 
 
 /******************************************************************************
-|*
 |*	ViewImp::CheckWaitCrsr()
 |*
 |*	Ersterstellung		MA 10. Aug. 94
 |*	Letzte Aenderung	MA 10. Aug. 94
-|*
 ******************************************************************************/
 
 void SwViewImp::CheckWaitCrsr()
@@ -211,12 +201,10 @@ void SwViewImp::CheckWaitCrsr()
 }
 
 /******************************************************************************
-|*
 |*	ViewImp::IsCalcLayoutProgress()
 |*
 |*	Ersterstellung		MA 12. Aug. 94
 |*	Letzte Aenderung	MA 12. Aug. 94
-|*
 ******************************************************************************/
 
 sal_Bool SwViewImp::IsCalcLayoutProgress() const
@@ -227,12 +215,10 @@ sal_Bool SwViewImp::IsCalcLayoutProgress() const
 }
 
 /******************************************************************************
-|*
 |*	ViewImp::IsUpdateExpFlds()
 |*
 |*	Ersterstellung		MA 28. Mar. 96
 |*	Letzte Aenderung	MA 28. Mar. 96
-|*
 ******************************************************************************/
 
 sal_Bool SwViewImp::IsUpdateExpFlds()
@@ -247,21 +233,19 @@ sal_Bool SwViewImp::IsUpdateExpFlds()
 
 
 /******************************************************************************
-|*
 |*	SwViewImp::SetFirstVisPage(), ImplGetFirstVisPage();
 |*
 |*	Ersterstellung		MA 21. Sep. 93
 |*	Letzte Aenderung	MA 08. Mar. 94
-|*
 ******************************************************************************/
 
 void SwViewImp::SetFirstVisPage()
 {
 	if ( pSh->bDocSizeChgd && pSh->VisArea().Top() > pSh->GetLayout()->Frm().Height() )
 	{
-		//Wir stecken in einer Action und die VisArea sitzt wegen
+		//Wir stecken in einer Aktion und die VisArea sitzt wegen
 		//Loeschoperationen hinter der erste sichtbaren Seite.
-		//Damit nicht zu heftig Formatiert wird, liefern wir die letzte Seite
+		//Damit nicht zu heftig formatiert wird, liefern wir die letzte Seite
 		//zurueck.
 		pFirstVisPage = (SwPageFrm*)pSh->GetLayout()->Lower();
 		while ( pFirstVisPage && pFirstVisPage->GetNext() )
@@ -293,23 +277,21 @@ void SwViewImp::SetFirstVisPage()
 }
 
 /******************************************************************************
-|*
 |*	SwViewImp::MakeDrawView();
 |*
 |*	Ersterstellung		AMA 01. Nov. 95
 |*	Letzte Aenderung	AMA 01. Nov. 95
-|*
 ******************************************************************************/
 
 void SwViewImp::MakeDrawView()
 {
-    IDocumentDrawModelAccess* pIDDMA = GetShell()->getIDocumentDrawModelAccess();
+	IDocumentDrawModelAccess* pIDDMA = GetShell()->getIDocumentDrawModelAccess();
 
 	// the else here is not an error, _MakeDrawModel() calls this method again
 	// after the DrawModel is created to create DrawViews for all shells...
 	if( !pIDDMA->GetDrawModel() )
 	{
-        pIDDMA->_MakeDrawModel();
+		pIDDMA->_MakeDrawModel();
 	}
 	else
 	{
@@ -360,29 +342,27 @@ void SwViewImp::MakeDrawView()
 }
 
 /******************************************************************************
-|*
 |*	SwViewImp::GetRetoucheColor()
 |*
 |*	Ersterstellung		MA 24. Jun. 98
 |*	Letzte Aenderung	MA 24. Jun. 98
-|*
 ******************************************************************************/
 
 Color SwViewImp::GetRetoucheColor() const
 {
-    Color aRet( COL_TRANSPARENT );
+	Color aRet( COL_TRANSPARENT );
 	const ViewShell &rSh = *GetShell();
 	if ( rSh.GetWin() )
 	{
-        if ( rSh.GetViewOptions()->getBrowseMode() &&
+		if ( rSh.GetViewOptions()->getBrowseMode() &&
 			 COL_TRANSPARENT != rSh.GetViewOptions()->GetRetoucheColor().GetColor() )
 			aRet = rSh.GetViewOptions()->GetRetoucheColor();
-        else if(rSh.GetViewOptions()->IsPagePreview()  &&
-                    !SW_MOD()->GetAccessibilityOptions().GetIsForPagePreviews())
-            aRet.SetColor(COL_WHITE);
-        else
-            aRet = SwViewOption::GetDocColor();
-    }
+		else if(rSh.GetViewOptions()->IsPagePreview() &&
+					!SW_MOD()->GetAccessibilityOptions().GetIsForPagePreviews())
+			aRet.SetColor(COL_WHITE);
+		else
+			aRet = SwViewOption::GetDocColor();
+	}
 	return aRet;
 }
 
@@ -455,7 +435,7 @@ void SwViewImp::FireSectionChangeEvent(sal_uInt16 nOldSection, sal_uInt16 nNewSe
 void SwViewImp::FireColumnChangeEvent(sal_uInt16 nOldColumn, sal_uInt16 nNewColumn)
 {
 	if( IsAccessible() )
-		GetAccessibleMap().FireColumnChangeEvent(nOldColumn,  nNewColumn);
+		GetAccessibleMap().FireColumnChangeEvent(nOldColumn, nNewColumn);
 }
 void SwViewImp::InvalidateAccessibleFrmContent( const SwFrm *pFrm )
 {
@@ -477,7 +457,7 @@ void SwViewImp::InvalidateAccessibleCursorPosition( const SwFrm *pFrm )
 }
 
 void SwViewImp::InvalidateAccessibleEditableState( sal_Bool bAllShells,
-	   											   const SwFrm *pFrm	)
+												   const SwFrm *pFrm	)
 {
 	if( bAllShells )
 	{
@@ -497,7 +477,7 @@ void SwViewImp::InvalidateAccessibleEditableState( sal_Bool bAllShells,
 }
 
 void SwViewImp::InvalidateAccessibleRelationSet( const SwFlyFrm *pMaster,
-                                                 const SwFlyFrm *pFollow )
+												 const SwFlyFrm *pFollow )
 {
 	ViewShell *pVSh = GetShell();
 	ViewShell *pTmp = pVSh;
@@ -624,4 +604,3 @@ IMPL_LINK(SwViewImp, SetStopPrt, void *, EMPTYARG)
 
 	return 0;
 }
-
