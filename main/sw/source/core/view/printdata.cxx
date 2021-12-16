@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -69,7 +69,7 @@ SwRenderData::~SwRenderData()
     DBG_ASSERT( !m_pPostItShell, "m_pPostItShell should already have been deleted" );
     DBG_ASSERT( !m_pPostItDoc, "m_pPostItDoc should already have been deleted" );
     DBG_ASSERT( !m_pPostItFields, " should already have been deleted" );
-}    
+}
 
 
 void SwRenderData::CreatePostItData( SwDoc *pDoc, const SwViewOption *pViewOpt, OutputDevice *pOutDev )
@@ -83,29 +83,29 @@ void SwRenderData::CreatePostItData( SwDoc *pDoc, const SwViewOption *pViewOpt, 
     //!! Disable spell and grammar checking in the temporary document.
     //!! Otherwise the grammar checker might process it and crash if we later on
     //!! simply delete this document while he is still at it.
-    SwViewOption  aViewOpt( *pViewOpt );
+    SwViewOption aViewOpt( *pViewOpt );
     aViewOpt.SetOnlineSpell( sal_False );
 
-    m_pPostItShell  = new ViewShell( *m_pPostItDoc, 0, &aViewOpt, pOutDev );
+    m_pPostItShell = new ViewShell( *m_pPostItDoc, 0, &aViewOpt, pOutDev );
 }
-    
+
 
 void SwRenderData::DeletePostItData()
 {
     if (HasPostItData())
     {
-        m_pPostItDoc->setPrinter( 0, false, false );  //damit am echten DOC der Drucker bleibt
+        m_pPostItDoc->setPrinter( 0, false, false ); // damit am echten DOC der Drucker bleibt
         delete m_pPostItShell;
-        m_pPostItShell  = 0;
+        m_pPostItShell = 0;
         delete m_pPostItFields;
         m_pPostItFields = 0;
         if ( !m_pPostItDoc->release() )
         {
             delete m_pPostItDoc;
         }
-        m_pPostItDoc    = 0;
+        m_pPostItDoc = 0;
     }
-}    
+}
 
 bool SwRenderData::NeedNewViewOptionAdjust( const ViewShell& rCompare ) const
 {
@@ -170,7 +170,7 @@ void SwRenderData::MakeSwPrtOptions(
     rOptions.bPrintProspectRTL      = pOpt->IsPrintProspectRTL();
     // bPrintSingleJobs         <-- not set here; mail merge and or configuration
     // bModified                <-- not set here; mail merge only
-    rOptions.bPrintBlackFont        = pOpt->IsPrintWithBlackTextColor(); 
+    rOptions.bPrintBlackFont        = pOpt->IsPrintWithBlackTextColor();
     rOptions.bPrintHiddenText       = pOpt->IsPrintHiddenText();
     rOptions.bPrintTextPlaceholder  = pOpt->IsPrintTextPlaceholders();
     rOptions.nPrintPostIts          = pOpt->GetPrintPostItsType();
@@ -184,11 +184,11 @@ void SwRenderData::MakeSwPrtOptions(
 
 //////////////////////////////////////////////////////////////////////
 
-SwPrintUIOptions::SwPrintUIOptions( 
-    bool bWeb, 
-    bool bSwSrcView, 
-    bool bHasSelection, 
-    bool bHasPostIts, 
+SwPrintUIOptions::SwPrintUIOptions(
+    bool bWeb,
+    bool bSwSrcView,
+    bool bHasSelection,
+    bool bHasPostIts,
     const SwPrintData &rDefaultPrintData ) :
     m_pLast( NULL ),
     m_rDefaultPrintData( rDefaultPrintData )
@@ -198,15 +198,15 @@ SwPrintUIOptions::SwPrintUIOptions(
     DBG_ASSERT( aLocalizedStrings.Count() >= 30, "resource incomplete" );
     if( aLocalizedStrings.Count() < 30 ) // bad resource ?
         return;
-    
+
     // printing HTML sources does not have any valid UI options.
-    // Its just the source code that gets printed ...
+    // It's just the source code that gets printed...
     if (bSwSrcView)
     {
         m_aUIProperties.realloc( 0 );
         return;
     }
-    
+
     // check if CTL is enabled
     SvtLanguageOptions aLangOpt;
     bool bCTL = aLangOpt.IsCTLFontEnabled();
@@ -218,14 +218,14 @@ SwPrintUIOptions::SwPrintUIOptions(
     m_aUIProperties.realloc( nNumProps );
     int nIdx = 0;
 
-    // create "writer" section (new tab page in dialog)
+    // create "Writer" section (new tab page in dialog)
     SvtModuleOptions aModOpt;
     String aAppGroupname( aLocalizedStrings.GetString( 0 ) );
     aAppGroupname.SearchAndReplace( String( RTL_CONSTASCII_USTRINGPARAM( "%s" ) ),
-                                    aModOpt.GetModuleName( SvtModuleOptions::E_SWRITER ) ); 
+                                    aModOpt.GetModuleName( SvtModuleOptions::E_SWRITER ) );
     m_aUIProperties[ nIdx++ ].Value = getGroupControlOpt( aAppGroupname, rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".HelpID:vcl:PrintDialog:TabPage:AppPage" ) ) );
 
-    // create sub section for Contents 
+    // create sub section for Contents
     m_aUIProperties[ nIdx++ ].Value = getSubgroupControlOpt( aLocalizedStrings.GetString( 1 ), rtl::OUString() );
 
     // create a bool option for background
@@ -307,7 +307,7 @@ SwPrintUIOptions::SwPrintUIOptions(
                                                            rtl::OUString(),
                                                            aPrintRangeOpt
                                                            );
-    
+
     // create a choice for the content to create
     rtl::OUString aPrintRangeName( RTL_CONSTASCII_USTRINGPARAM( "PrintContent" ) );
     uno::Sequence< rtl::OUString > aChoices( 3 );
@@ -337,7 +337,7 @@ SwPrintUIOptions::SwPrintUIOptions(
                                                        rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PageRange" ) ),
                                                        rtl::OUString(),
                                                        aPageRangeOpt
-                                                       ); 
+                                                       );
     // print content selection
     vcl::PrinterOptionsHelper::UIControlOptions aContentsOpt;
     aContentsOpt.maGroupHint = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "JobPage" ) );
@@ -366,7 +366,7 @@ SwPrintUIOptions::SwPrintUIOptions(
                                                            uno::Sequence< sal_Bool >(),
                                                            aAnnotOpt
                                                            );
-    
+
     // create subsection for Page settings
     vcl::PrinterOptionsHelper::UIControlOptions aPageSetOpt;
     aPageSetOpt.maGroupHint = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "LayoutPage" ) );
@@ -387,7 +387,7 @@ SwPrintUIOptions::SwPrintUIOptions(
         // 0 : all pages (left & right)
         // 1 : left pages
         // 2 : right pages
-        DBG_ASSERT( rDefaultPrintData.IsPrintLeftPage() || rDefaultPrintData.IsPrintRightPage(), 
+        DBG_ASSERT( rDefaultPrintData.IsPrintLeftPage() || rDefaultPrintData.IsPrintRightPage(),
                 "unexpected value combination" );
         sal_Int16 nPagesChoice = 0;
         if (rDefaultPrintData.IsPrintLeftPage() && !rDefaultPrintData.IsPrintRightPage())
@@ -397,12 +397,12 @@ SwPrintUIOptions::SwPrintUIOptions(
         m_aUIProperties[ nIdx++ ].Value = getChoiceControlOpt( aLocalizedStrings.GetString( 22 ),
                                                    aRLHelp,
                                                    rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PrintLeftRightPages" ) ),
-                                                   aRLChoices, 
-                                                   nPagesChoice, 
+                                                   aRLChoices,
+                                                   nPagesChoice,
                                                    rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "List" ) )
                                                    );
     }
-    
+
     // create a bool option for brochure
     bDefaultVal = rDefaultPrintData.IsPrintProspect();
     rtl::OUString aBrochurePropertyName( RTL_CONSTASCII_USTRINGPARAM( "PrintProspect" ) );
@@ -412,7 +412,7 @@ SwPrintUIOptions::SwPrintUIOptions(
                                                          bDefaultVal,
                                                          aPageSetOpt
                                                          );
-    
+
     if (bCTL)
     {
         // create a bool option for brochure RTL dependent on brochure
@@ -430,14 +430,14 @@ SwPrintUIOptions::SwPrintUIOptions(
         m_aUIProperties[ nIdx++ ].Value = getChoiceControlOpt( rtl::OUString(),
                                                                aBRTLHelpIds,
                                                                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "PrintProspectRTL" ) ),
-                                                               aBRTLChoices, 
-                                                               nBRTLChoice, 
+                                                               aBRTLChoices,
+                                                               nBRTLChoice,
                                                                rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "List" ) ),
                                                                uno::Sequence< sal_Bool >(),
                                                                aBrochureRTLOpt
                                                                );
     }
-    
+
 
     DBG_ASSERT( nIdx == nNumProps, "number of added properties is not as expected" );
 }
@@ -446,7 +446,7 @@ SwPrintUIOptions::SwPrintUIOptions(
 SwPrintUIOptions::~SwPrintUIOptions()
 {
 }
-    
+
 bool SwPrintUIOptions::IsPrintLeftPages() const
 {
     // take care of different property names for the option.
@@ -477,7 +477,7 @@ bool SwPrintUIOptions::IsPrintEmptyPages( bool bIsPDFExport ) const
     // take care of different property names for the option.
 
     bool bRes = bIsPDFExport ?
-            !getBoolValue( "IsSkipEmptyPages", sal_True ) : 
+            !getBoolValue( "IsSkipEmptyPages", sal_True ) :
             getBoolValue( "PrintEmptyPages", sal_True );
     return bRes;
 }
@@ -518,22 +518,21 @@ bool SwPrintUIOptions::processPropertiesAndCheckFormat( const uno::Sequence< bea
 {
     bool bChanged = processProperties( i_rNewProp );
 
-    uno::Reference< awt::XDevice >  xRenderDevice;
+    uno::Reference< awt::XDevice > xRenderDevice;
     uno::Any aVal( getValue( rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "RenderDevice" ) ) ) );
     aVal >>= xRenderDevice;
 
     OutputDevice* pOut = 0;
     if (xRenderDevice.is())
     {
-        VCLXDevice*     pDevice = VCLXDevice::GetImplementation( xRenderDevice );
+        VCLXDevice* pDevice = VCLXDevice::GetImplementation( xRenderDevice );
         pOut = pDevice ? pDevice->GetOutputDevice() : 0;
     }
     bChanged = bChanged || (pOut != m_pLast);
     if( pOut )
         m_pLast = pOut;
-    
+
     return bChanged;
 }
 
 //////////////////////////////////////////////////////////////////////
-
