@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -46,7 +46,7 @@
 
 #if defined _MSC_VER
 #pragma warning(pop)
-#endif 
+#endif
 
 #if _RICHEDIT_VER >= 0x0200
 #define RICHEDIT	TEXT("riched20.dll")
@@ -94,8 +94,8 @@
 using namespace ::std;
 
 
-wstring  g_wstrProductKey;
-string  g_strDefaultLanguage;
+wstring	g_wstrProductKey;
+string	g_strDefaultLanguage;
 FILE	*g_fpStackFile = NULL;
 FILE	*g_fpChecksumFile = NULL;
 DWORD	g_dwExceptionCode = 0;
@@ -156,12 +156,12 @@ static FILE *_tmpfile(void)
 
 		if ( GetTempFileName( szTempPath, TEXT("CRT"), 0, szFileName ) )
 		{
-			HANDLE	hFile =  CreateFile( 
-				szFileName, 
-				GENERIC_READ | GENERIC_WRITE, 
-				0, NULL, 
-				OPEN_EXISTING, 
-				FILE_FLAG_DELETE_ON_CLOSE | FILE_ATTRIBUTE_NORMAL, 
+			HANDLE	hFile =  CreateFile(
+				szFileName,
+				GENERIC_READ | GENERIC_WRITE,
+				0, NULL,
+				OPEN_EXISTING,
+				FILE_FLAG_DELETE_ON_CLOSE | FILE_ATTRIBUTE_NORMAL,
 				NULL );
 
 			if ( IsValidHandle( hFile ) )
@@ -208,7 +208,7 @@ static BOOL GetCrashDataPath( LPTSTR szBuffer )
 static FILE *_open_reportfile( LPCTSTR lpExt, LPCTSTR lpMode )
 {
 	FILE	*fp = NULL;
-	TCHAR	szAppDataPath[MAX_PATH] = _T("");	
+	TCHAR	szAppDataPath[MAX_PATH] = _T("");
 
 	if ( GetCrashDataPath( szAppDataPath ) )
 	{
@@ -298,9 +298,9 @@ void CrashReportParams::ReadFromRegistry()
 {
 	TCHAR	szBuffer[2048];
 
-	if ( ERROR_SUCCESS == RegReadValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"),
+	if ( ERROR_SUCCESS == RegReadValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
 		TEXT("HTTPProxyServer"),
 		szBuffer,
 		sizeof(szBuffer) ) )
@@ -308,9 +308,9 @@ void CrashReportParams::ReadFromRegistry()
 
 	DWORD	dwProxyPort;
 
-	if ( ERROR_SUCCESS == RegReadValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"),
+	if ( ERROR_SUCCESS == RegReadValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
 		TEXT("HTTPProxyPort"),
 		&dwProxyPort,
 		sizeof(dwProxyPort) ) )
@@ -319,24 +319,24 @@ void CrashReportParams::ReadFromRegistry()
 		sProxyPort = szBuffer;
 	}
 
-	if ( ERROR_SUCCESS == RegReadValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"),
+	if ( ERROR_SUCCESS == RegReadValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
 		TEXT("ReturnAddress"),
 		szBuffer,
 		sizeof(szBuffer) ) )
 		sEmail = szBuffer;
 
-	RegReadValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"),
+	RegReadValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
 		TEXT("AllowContact"),
 		&fAllowContact,
 		sizeof(fAllowContact) );
 
-	RegReadValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"),
+	RegReadValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
 		TEXT("HTTPConnection"),
 		&uInternetConnection,
 		sizeof(uInternetConnection) );
@@ -346,43 +346,43 @@ void CrashReportParams::ReadFromRegistry()
 
 void CrashReportParams::WriteToRegistry()
 {
-	RegWriteValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"), 
-		TEXT("HTTPProxyServer"), REG_SZ, 
-		sProxyServer.c_str(), 
+	RegWriteValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
+		TEXT("HTTPProxyServer"), REG_SZ,
+		sProxyServer.c_str(),
 		sizeof(TCHAR) * (sProxyServer.length() + 1) );
 
 	LPTSTR endptr = NULL;
 	DWORD dwProxyPort = _tcstoul( sProxyPort.c_str(), &endptr, 10 );
 
-	RegWriteValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"), 
-		TEXT("HTTPProxyPort"), REG_DWORD, 
-		&dwProxyPort, 
+	RegWriteValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
+		TEXT("HTTPProxyPort"), REG_DWORD,
+		&dwProxyPort,
 		sizeof(DWORD) );
 
-	RegWriteValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"), 
-		TEXT("AllowContact"), REG_DWORD, 
-		&fAllowContact, 
+	RegWriteValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
+		TEXT("AllowContact"), REG_DWORD,
+		&fAllowContact,
 		sizeof(DWORD) );
 
 
-	RegWriteValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"), 
-		TEXT("HTTPConnection"), REG_DWORD, 
-		&uInternetConnection, 
+	RegWriteValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
+		TEXT("HTTPConnection"), REG_DWORD,
+		&uInternetConnection,
 		sizeof(DWORD) );
 
-	RegWriteValue( 
-		HKEY_CURRENT_USER, 
-		TEXT("SOFTWARE\\OpenOffice.org\\CrashReport"), 
-		TEXT("ReturnAddress"), REG_SZ, 
-		sEmail.c_str(), 
+	RegWriteValue(
+		HKEY_CURRENT_USER,
+		TEXT("SOFTWARE\\OpenOffice\\CrashReport"),
+		TEXT("ReturnAddress"), REG_SZ,
+		sEmail.c_str(),
 		sizeof(TCHAR) * (sEmail.length() + 1) );
 }
 
@@ -445,11 +445,11 @@ void CrashReportParams::ReadFromEnvironment()
 			{
 				TCHAR	aBuffer[256+1];
 
-				DWORD	dwCharacters = MultiByteToWideChar( CP_UTF8, 0, aUTF8Buffer, nBytesRead, aBuffer, elementsof(aBuffer) - 1 ); 
+				DWORD	dwCharacters = MultiByteToWideChar( CP_UTF8, 0, aUTF8Buffer, nBytesRead, aBuffer, elementsof(aBuffer) - 1 );
 				aBuffer[dwCharacters] = 0;
 				sComment += aBuffer;
 			}
-			
+
 			fclose( fp );
 		}
 	}
@@ -458,14 +458,14 @@ void CrashReportParams::ReadFromEnvironment()
 //***************************************************************************
 
 typedef BOOL (WINAPI *MiniDumpWriteDump_PROC)(
-    IN HANDLE hProcess,
-    IN DWORD ProcessId,
-    IN HANDLE hFile,
-    IN MINIDUMP_TYPE DumpType,
-    IN CONST PMINIDUMP_EXCEPTION_INFORMATION ExceptionParam, OPTIONAL
-    IN CONST PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam, OPTIONAL
-    IN CONST PMINIDUMP_CALLBACK_INFORMATION CallbackParam OPTIONAL
-    );
+	IN HANDLE hProcess,
+	IN DWORD ProcessId,
+	IN HANDLE hFile,
+	IN MINIDUMP_TYPE DumpType,
+	IN CONST PMINIDUMP_EXCEPTION_INFORMATION ExceptionParam, OPTIONAL
+	IN CONST PMINIDUMP_USER_STREAM_INFORMATION UserStreamParam, OPTIONAL
+	IN CONST PMINIDUMP_CALLBACK_INFORMATION CallbackParam OPTIONAL
+	);
 
 //***************************************************************************
 
@@ -486,18 +486,18 @@ static BOOL WINAPI DeinitRichEdit()
 static string trim_string( const string& rString )
 {
 	string temp = rString;
-	
+
 	while ( temp.length() && temp[0] == ' ' || temp[0] == '\t' )
 		temp.erase( 0, 1 );
-		
+
 	string::size_type	len = temp.length();
-	
+
 	while ( len && temp[len-1] == ' ' || temp[len-1] == '\t' )
 	{
 		temp.erase( len - 1, 1 );
 		len = temp.length();
 	}
-	
+
 	return temp;
 }
 
@@ -563,19 +563,19 @@ static string wstring2utf8( const wstring &rString )
 static string xml_encode( const string &rString )
 {
 	string temp = rString;
-    string::size_type pos = 0;
+	string::size_type pos = 0;
 
-	// First replace all occurences of '&' because it may occur in further
-	// encoded chardters too
+	// First replace all occurrences of '&' because it may occur in further
+	// encoded characters too
 
-    for( pos = 0; (pos = temp.find( '&', pos )) != string::npos; pos += 4 )
-        temp.replace( pos, 1, "&amp;" );
+	for( pos = 0; (pos = temp.find( '&', pos )) != string::npos; pos += 4 )
+		temp.replace( pos, 1, "&amp;" );
 
 	for( pos = 0; (pos = temp.find( '<', pos )) != string::npos; pos += 4 )
-        temp.replace( pos, 1, "&lt;" );
+		temp.replace( pos, 1, "&lt;" );
 
-    for( pos = 0; (pos = temp.find( '>', pos )) != string::npos; pos += 4 )
-        temp.replace( pos, 1, "&gt;" );
+	for( pos = 0; (pos = temp.find( '>', pos )) != string::npos; pos += 4 )
+		temp.replace( pos, 1, "&gt;" );
 
 	return temp;
 }
@@ -626,7 +626,7 @@ static string GetModuleDirectory( HMODULE hModule )
 string GetFileDirectory( const string& rFilePath )
 {
 	string aDir = rFilePath;
-    size_t pos = aDir.rfind( '\\' );
+	size_t pos = aDir.rfind( '\\' );
 
 	if ( string::npos != pos )
 		aDir.erase( pos + 1 );
@@ -641,8 +641,8 @@ string GetFileDirectory( const string& rFilePath )
 string GetFileName( const string& rFilePath )
 {
 	string aName = rFilePath;
-    size_t pos = aName.rfind( '\\' );
-	
+	size_t pos = aName.rfind( '\\' );
+
 	if ( string::npos != pos )
 		return aName.substr( pos + 1 );
 	else
@@ -666,7 +666,7 @@ BOOL WriteReportFile( CrashReportParams *pParams )
 
 			if ( hFile )
 			{
-				int	fd = _open_osfhandle( (LONG)hFile, _O_TEXT );				
+				int	fd = _open_osfhandle( (LONG)hFile, _O_TEXT );
 				FILE	*fp = _fdopen( fd, "w+t" );
 				CHAR	szTitle[1024] = "";
 				CHAR	szBuildId[1024] = "";
@@ -676,8 +676,8 @@ BOOL WriteReportFile( CrashReportParams *pParams )
 				WideCharToMultiByte( CP_UTF8, 0, pParams->sTitle.c_str(), -1, szTitle, sizeof(szTitle), NULL, NULL );
 				WideCharToMultiByte( CP_UTF8, 0, g_szBuildId, -1, szBuildId, sizeof(szBuildId), NULL, NULL );
 				WideCharToMultiByte( CP_UTF8, 0, pParams->sEmail.c_str(), -1, szEmail, sizeof(szEmail), NULL, NULL );
-				
-				fprintf( fp, 
+
+				fprintf( fp,
 					"<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
 					"<!DOCTYPE errormail:errormail PUBLIC \"-//OpenOffice.org//DTD ErrorMail 1.0//EN\" \"errormail.dtd\">\n"
 					"<errormail:errormail xmlns:errormail=\"http://openoffice.org/2002/errormail\" usertype=\"%s\">\n"
@@ -696,7 +696,7 @@ BOOL WriteReportFile( CrashReportParams *pParams )
 					"<reportmail:attachment name=\"user.dmp\" media-type=\"application/octet-stream\" class=\"UserDump\"/>\n"
 					"</reportmail:mail>\n"
 
-					"<officeinfo:officeinfo xmlns:officeinfo=\"http://openoffice.org/2002/officeinfo\" build=\"%s\" platform=\"%s\" language=\"%s\" procpath=\"%s\" exceptiontype=\"0x%08X\" product=\"%s\"/>\n", 
+					"<officeinfo:officeinfo xmlns:officeinfo=\"http://openoffice.org/2002/officeinfo\" build=\"%s\" platform=\"%s\" language=\"%s\" procpath=\"%s\" exceptiontype=\"0x%08X\" product=\"%s\"/>\n",
 					szBuildId,
 					_INPATH,
 					xml_encode(g_strDefaultLanguage).c_str(),
@@ -824,8 +824,8 @@ static BOOL GrowWindow( HWND hwnd, LONG dxClient, LONG dyClient, BOOL fRepaint )
 }
 
 BOOL CALLBACK GrowChildWindows(
-  HWND hwnd,      // handle to child window
-  LPARAM lParam   // application-defined value
+	HWND hwnd, // handle to child window
+	LPARAM lParam // application-defined value
 )
 {
 	LONG	cx = (SHORT)LOWORD( lParam );
@@ -837,32 +837,32 @@ BOOL CALLBACK GrowChildWindows(
 }
 
 /*
-BOOL CALLBACK EnumChildProc(HWND hwndChild, LPARAM lParam) 
+BOOL CALLBACK EnumChildProc(HWND hwndChild, LPARAM lParam)
 {
-    HFONT aFont = *((HFONT*) lParam);
-    HDC hDC = GetDC( hwndChild );
-    SelectObject( hDC, aFont );
-    ReleaseDC( hwndChild, hDC );
-    return TRUE;
+	HFONT aFont = *((HFONT*) lParam);
+	HDC hDC = GetDC( hwndChild );
+	SelectObject( hDC, aFont );
+	ReleaseDC( hwndChild, hDC );
+	return TRUE;
 }
 
 void ApplySystemFont( HWND hwndDlg )
 {
-    NONCLIENTMETRICSA aNonClientMetrics;
-    aNonClientMetrics.cbSize = sizeof( aNonClientMetrics );
-    if ( SystemParametersInfoA( SPI_GETNONCLIENTMETRICS, sizeof( aNonClientMetrics ), &aNonClientMetrics, 0 ) )
-    {
-        HFONT aSysFont = CreateFontIndirectA( &aNonClientMetrics.lfMessageFont );
-        EnumChildWindows(hwndDlg, EnumChildProc, (LPARAM) &aSysFont); 
-    }
+	NONCLIENTMETRICSA aNonClientMetrics;
+	aNonClientMetrics.cbSize = sizeof( aNonClientMetrics );
+	if ( SystemParametersInfoA( SPI_GETNONCLIENTMETRICS, sizeof( aNonClientMetrics ), &aNonClientMetrics, 0 ) )
+	{
+		HFONT aSysFont = CreateFontIndirectA( &aNonClientMetrics.lfMessageFont );
+		EnumChildWindows(hwndDlg, EnumChildProc, (LPARAM) &aSysFont);
+	}
 }
 */
 
-BOOL CALLBACK PreviewDialogProc( 
-	HWND hwndDlg, 
-	UINT uMsg, 
-	WPARAM wParam, 
-	LPARAM lParam 
+BOOL CALLBACK PreviewDialogProc(
+	HWND hwndDlg,
+	UINT uMsg,
+	WPARAM wParam,
+	LPARAM lParam
 	)
 {
 	static RECT	rcClient;
@@ -894,7 +894,7 @@ BOOL CALLBACK PreviewDialogProc(
 			TCHAR	szBuffer[256] = TEXT("");
 			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong( hwndDlg, GWL_HINSTANCE );
 			HWND	hwndParent = (HWND)GetWindowLong( hwndDlg, GWL_HWNDPARENT );
-			
+
 			GetWindowText( hwndParent, szBuffer, elementsof(szBuffer) );
 			SetWindowText( hwndDlg, szBuffer );
 
@@ -1001,8 +1001,8 @@ static void PreviewReport( HWND hwndParent, CrashReportParams *pParams )
 
 	WriteReportFile( pParams );
 
-	DialogBoxParam( 
-		hInstance, 
+	DialogBoxParam(
+		hInstance,
 		MAKEINTRESOURCE(IDD_PREVIEW_FRAME),
 		hwndParent,
 		PreviewDialogProc,
@@ -1028,11 +1028,11 @@ void UpdateOptionsDialogControls( HWND hwndDlg )
 
 //***************************************************************************
 
-BOOL CALLBACK OptionsDialogProc( 
-	HWND hwndDlg, 
-	UINT uMsg, 
-	WPARAM wParam, 
-	LPARAM lParam 
+BOOL CALLBACK OptionsDialogProc(
+	HWND hwndDlg,
+	UINT uMsg,
+	WPARAM wParam,
+	LPARAM lParam
 	)
 {
 	static CrashReportParams *pParams;
@@ -1079,10 +1079,10 @@ BOOL CALLBACK OptionsDialogProc(
 
 			Button_SetCheck( GetDlgItem(hwndDlg, IDC_RADIO_SYSTEM + pParams->uInternetConnection), BST_CHECKED );
 
-			SendMessage( 
-				GetDlgItem(hwndDlg, IDC_PROXY_DESCRIPTION), 
-				EM_SETBKGNDCOLOR, 
-				(WPARAM)FALSE, 
+			SendMessage(
+				GetDlgItem(hwndDlg, IDC_PROXY_DESCRIPTION),
+				EM_SETBKGNDCOLOR,
+				(WPARAM)FALSE,
 				GetSysColor( COLOR_3DFACE ) );
 			LoadAndFormatString( hInstance, IDS_PROXY_DESCRIPTION, szBuffer, elementsof(szBuffer) );
 			Edit_SetText( GetDlgItem(hwndDlg, IDC_PROXY_DESCRIPTION), szBuffer );
@@ -1134,8 +1134,8 @@ static void OptionsDialog( HWND hwndParent, CrashReportParams *pParams )
 {
 	HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndParent, GWL_HINSTANCE );
 
-	if ( IDOK == DialogBoxParam( 
-		hInstance, 
+	if ( IDOK == DialogBoxParam(
+		hInstance,
 		MAKEINTRESOURCE(IDD_OPTIONS_FRAME),
 		hwndParent,
 		OptionsDialogProc,
@@ -1148,28 +1148,28 @@ static void OptionsDialog( HWND hwndParent, CrashReportParams *pParams )
 
 void UpdateReportDialogControls( HWND hwndDlg )
 {
-	EnableWindow( 
-		GetDlgItem(hwndDlg, IDC_EDIT_EMAIL), 
+	EnableWindow(
+		GetDlgItem(hwndDlg, IDC_EDIT_EMAIL),
 		Button_GetCheck(GetDlgItem(hwndDlg, IDC_ALLOW_CONTACT)) & BST_CHECKED ? TRUE : FALSE );
-	EnableWindow( 
-		GetDlgItem(hwndDlg, IDC_LABEL_EMAIL), 
+	EnableWindow(
+		GetDlgItem(hwndDlg, IDC_LABEL_EMAIL),
 		Button_GetCheck(GetDlgItem(hwndDlg, IDC_ALLOW_CONTACT)) & BST_CHECKED ? TRUE : FALSE );
 }
 
 //***************************************************************************
 
-BOOL CALLBACK ReportDialogProc( 
-	HWND hwndDlg, 
-	UINT uMsg, 
-	WPARAM wParam, 
-	LPARAM 
+BOOL CALLBACK ReportDialogProc(
+	HWND hwndDlg,
+	UINT uMsg,
+	WPARAM wParam,
+	LPARAM
 	)
 {
 	switch ( uMsg )
 	{
 	case WM_INITDIALOG:
 		{
-		    CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
+			CrashReportParams	*pParams = (CrashReportParams*)GetWindowLong( GetParent(hwndDlg), GWL_USERDATA );
 			HINSTANCE	hInstance = (HINSTANCE)GetWindowLong(hwndDlg, GWL_HINSTANCE );
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
@@ -1235,12 +1235,12 @@ BOOL CALLBACK ReportDialogProc(
 			Edit_SetText( GetDlgItem(hwndDlg, IDC_EDIT_TITLE), pParams->sTitle.c_str() );
 			Edit_SetText( GetDlgItem(hwndDlg, IDC_EDIT_DESCRIPTION), pParams->sComment.c_str() );
 
-            /*
-			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE, 
-                GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE) | BS_DEFPUSHBUTTON );
-			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE, 
-                GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE) &~ BS_DEFPUSHBUTTON );
-                */
+			/*
+			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE,
+				GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDFINISH), GWL_STYLE) | BS_DEFPUSHBUTTON );
+			SetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE,
+				GetWindowLong( GetDlgItem(GetParent(hwndDlg),IDBACK), GWL_STYLE) &~ BS_DEFPUSHBUTTON );
+				*/
 			SetFocus( GetDlgItem(hwndDlg,IDC_EDIT_TITLE) );
 		}
 		break;
@@ -1303,10 +1303,10 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 			TCHAR	szURL[256];
 			TCHAR	szCaption[256];
 
-			SendMessage( 
-				hwndRichEdit, 
-				EM_SETBKGNDCOLOR, 
-				(WPARAM)FALSE, 
+			SendMessage(
+				hwndRichEdit,
+				EM_SETBKGNDCOLOR,
+				(WPARAM)FALSE,
 				GetSysColor( COLOR_3DFACE ) );
 
 			SendMessage( hwndRichEdit, EM_SETEVENTMASK, 0, ENM_LINK );
@@ -1323,7 +1323,7 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 
 			LoadAndFormatString( hInstance, IDS_WELCOME_CAPTION, szCaption, elementsof(szCaption) );
 			SetWindowText( GetParent(hwndDlg), szCaption );
-			 
+
 		}
 		return TRUE;
 	case WM_SHOWWINDOW:
@@ -1351,7 +1351,7 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 	case WM_NOTIFY:
 		{
 			LPNMHDR	pnmh = (LPNMHDR)lParam;
-			
+
 			if ( pnmh->idFrom == IDC_RICHEDIT21 && pnmh->code == EN_LINK )
 			{
 				ENLINK	*plink = (ENLINK*)lParam;
@@ -1375,7 +1375,7 @@ BOOL CALLBACK WelcomeDialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM 
 	default:
 		break;
 	}
-	
+
 	return FALSE;
 }
 //***************************************************************************
@@ -1393,13 +1393,13 @@ BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam 
 			TCHAR		szBuffer[FORMATBUFSIZE];
 
 			SetWindowLong( hwndDlg, GWL_USERDATA, (LONG)lParam );
-			hwndPages[0] = CreateDialog( 
+			hwndPages[0] = CreateDialog(
 				hInstance,
 				MAKEINTRESOURCE(IDD_WELCOME_PAGE),
 				hwndDlg,
 				WelcomeDialogProc );
 
-			hwndPages[1] = CreateDialog( 
+			hwndPages[1] = CreateDialog(
 				hInstance,
 				MAKEINTRESOURCE(IDD_REPORT_PAGE),
 				hwndDlg,
@@ -1411,7 +1411,7 @@ BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam 
 			chfmt.dwMask = CFM_BOLD;
 			chfmt.dwEffects = CFE_BOLD;
 
-			SendMessage( 
+			SendMessage(
 				GetDlgItem(hwndDlg, IDC_HEADER),
 				EM_SETCHARFORMAT,
 				SCF_ALL,
@@ -1478,7 +1478,7 @@ BOOL CALLBACK DialogProc( HWND hwndDlg, UINT uMsg, WPARAM wParam, LPARAM lParam 
 					LoadAndFormatString( GetModuleHandle(NULL), IDS_ERROR_MSG_NOEMAILADDRESS, szMessage, elementsof(szMessage) );
 
 					MessageBox( hwndDlg, szMessage, NULL, MB_ICONERROR | MB_OK );
-					break;  // Don't end the dialog
+					break; // Don't end the dialog
 				}
 				else
 				{
@@ -1565,12 +1565,12 @@ static void repatch_soffice_exe( void *pBuffer, size_t nBufSize )
 // same algorithm otherwise there could be problems with stack reports.
 static void normalize_pe_image(sal_uInt8* buffer, size_t nBufferSize)
 {
-	const int OFFSET_PE_OFFSET                  = 0x3c;
-	const int OFFSET_COFF_TIMEDATESTAMP         = 4;
-	const int PE_SIGNATURE_SIZE                 = 4;
-	const int COFFHEADER_SIZE                   = 20;
-	const int OFFSET_PE_OPTIONALHEADER_CHECKSUM = 64;
-	
+	const int OFFSET_PE_OFFSET					= 0x3c;
+	const int OFFSET_COFF_TIMEDATESTAMP			= 4;
+	const int PE_SIGNATURE_SIZE					= 4;
+	const int COFFHEADER_SIZE					= 20;
+	const int OFFSET_PE_OPTIONALHEADER_CHECKSUM	= 64;
+
 	// Check the header part of the file buffer
 	if (buffer[0] == 'M' && buffer[1] == 'Z')
 	{
@@ -1607,10 +1607,10 @@ static void normalize_pe_image(sal_uInt8* buffer, size_t nBufferSize)
 	}
 }
 
-static sal_uInt32 calc_md5_checksum(  const char *filename, sal_uInt8 *pChecksum, sal_uInt32 nChecksumLen )
+static sal_uInt32 calc_md5_checksum( const char *filename, sal_uInt8 *pChecksum, sal_uInt32 nChecksumLen )
 {
 	const int MINIMAL_FILESIZE = 512;
-	
+
 	sal_uInt32	nBytesProcessed = 0;
 
 	FILE *fp = fopen( filename, "rb" );
@@ -1625,7 +1625,7 @@ static sal_uInt32 calc_md5_checksum(  const char *filename, sal_uInt8 *pChecksum
 
 			sal_uInt8 *pBuffer = new sal_uInt8[nFileSize];
 			size_t nBytesRead = fread( pBuffer, 1, nFileSize, fp );
-			
+
 			if ( sal::static_int_cast<long>(nBytesRead) == nFileSize )
 			{
 				if ( 0 == stricmp( GetFileName(filename).c_str(), "soffice.bin" ) )
@@ -1634,7 +1634,7 @@ static sal_uInt32 calc_md5_checksum(  const char *filename, sal_uInt8 *pChecksum
 					normalize_pe_image( pBuffer, nBytesRead );
 
 				rtlDigestError error = rtl_digest_MD5 (
-					pBuffer,   nBytesRead,
+					pBuffer, nBytesRead,
 					pChecksum, nChecksumLen	);
 
 				if ( rtl_Digest_E_None == error )
@@ -1671,7 +1671,7 @@ static sal_uInt32 calc_md5_checksum( const char *filename, sal_uInt8 *pChecksum,
 			while ( rtl_Digest_E_None == error &&
 				0 != (nBytesRead = fread( buffer, 1, sizeof(buffer), fp )) )
 			{
-				error = rtl_digest_updateMD5( digest, buffer, nBytesRead );	
+				error = rtl_digest_updateMD5( digest, buffer, nBytesRead );
 				nBytesProcessed += nBytesRead;
 			}
 
@@ -1708,17 +1708,17 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 			EXCEPTION_POINTERS	aExceptionPointers;
 			CONTEXT				aContextRecord;
 
-			ReadProcessMemory( 
-				hProcess, 
-				pExceptionPointers, 
-				&aExceptionPointers, 
+			ReadProcessMemory(
+				hProcess,
+				pExceptionPointers,
+				&aExceptionPointers,
 				sizeof(aExceptionPointers),
 				NULL );
 
-			ReadProcessMemory( 
-				hProcess, 
-				aExceptionPointers.ContextRecord, 
-				&aContextRecord, 
+			ReadProcessMemory(
+				hProcess,
+				aExceptionPointers.ContextRecord,
+				&aContextRecord,
 				sizeof(aContextRecord),
 				NULL );
 
@@ -1741,7 +1741,7 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 			{
 				fSuccess = true;
 
-				bSuccess = StackWalk( IMAGE_FILE_MACHINE_I386, 
+				bSuccess = StackWalk( IMAGE_FILE_MACHINE_I386,
 					hProcess,
 					NULL,
 					&frame,
@@ -1798,7 +1798,7 @@ static bool WriteStackFile( FILE *fout, hash_map< string, string >& rLibraries, 
 					else
 						fprintf( fout, "<errormail:StackInfo pos=\"%d\" ip=\"0x%p\"/>\n",
 							frameNum,
-							frame.AddrPC.Offset 
+							frame.AddrPC.Offset
 							);
 
 					frameNum++;
@@ -1828,21 +1828,21 @@ bool WriteChecksumFile( FILE *fchksum, const hash_map< string, string >& rLibrar
 
 		hash_map< string, string >::const_iterator iter;
 
-		for ( iter = rLibraries.begin(); 
-			iter != rLibraries.end(); 
+		for ( iter = rLibraries.begin();
+			iter != rLibraries.end();
 			iter++ )
 		{
 			sal_uInt8 checksum[RTL_DIGEST_LENGTH_MD5];
-			sal_uInt32 nBytesProcessed = calc_md5_checksum( 
-				iter->second.c_str(), 
+			sal_uInt32 nBytesProcessed = calc_md5_checksum(
+				iter->second.c_str(),
 				checksum, sizeof(checksum) );
 
 			if ( nBytesProcessed )
 			{
 				fprintf( fchksum, "<errormail:Checksum sum=\"0x" );
 				for ( int i = 0; i < sizeof(checksum); fprintf( fchksum, "%02X", checksum[i++] ) );
-				fprintf( fchksum, "\" bytes=\"%d\" file=\"%s\"/>\n", 
-					nBytesProcessed, 
+				fprintf( fchksum, "\" bytes=\"%d\" file=\"%s\"/>\n",
+					nBytesProcessed,
 					GetFileName( iter->first ).c_str() );
 			}
 		}
@@ -1865,11 +1865,11 @@ BOOL FindDumpFile()
 	{
 		_tcscat( szFileName, _T("\\crashdat.dmp") );
 
-		HANDLE	hFile =  CreateFile( 
-			szFileName, 
-			GENERIC_READ, 
-			0, NULL, 
-			OPEN_EXISTING, 
+		HANDLE	hFile = CreateFile(
+			szFileName,
+			GENERIC_READ,
+			0, NULL,
+			OPEN_EXISTING,
 			FILE_ATTRIBUTE_NORMAL, NULL );
 
 		if ( hFile )
@@ -1898,7 +1898,7 @@ BOOL WriteDumpFile( DWORD dwProcessId, PEXCEPTION_POINTERS pExceptionPointers, D
 	if ( hDbgHelp )
 	{
 		pMiniDumpWriteDump = (MiniDumpWriteDump_PROC)GetProcAddress( hDbgHelp, "MiniDumpWriteDump" );
-		
+
 		if ( !pMiniDumpWriteDump )
 		{
 			FreeLibrary( hDbgHelp );
@@ -1924,11 +1924,11 @@ BOOL WriteDumpFile( DWORD dwProcessId, PEXCEPTION_POINTERS pExceptionPointers, D
 			_tcscpy( szFileName, szTempPath );
 			_tcscat( szFileName, _T("\\crashdat.dmp") );
 			{
-				HANDLE	hFile =  CreateFile( 
-					szFileName, 
-					GENERIC_READ | GENERIC_WRITE, 
-					0, NULL, 
-//					OPEN_EXISTING, 
+				HANDLE	hFile = CreateFile(
+					szFileName,
+					GENERIC_READ | GENERIC_WRITE,
+					0, NULL,
+//					OPEN_EXISTING,
 					CREATE_ALWAYS,
 					FILE_ATTRIBUTE_NORMAL, NULL );
 
@@ -1943,18 +1943,18 @@ BOOL WriteDumpFile( DWORD dwProcessId, PEXCEPTION_POINTERS pExceptionPointers, D
 						EXCEPTION_POINTERS	aExceptionPointers;
 						EXCEPTION_RECORD	aExceptionRecord;
 
-						ReadProcessMemory( 
-							hProcess, 
-							pExceptionPointers, 
-							&aExceptionPointers, 
+						ReadProcessMemory(
+							hProcess,
+							pExceptionPointers,
+							&aExceptionPointers,
 							sizeof(aExceptionPointers),
 							NULL );
 
 
 						ReadProcessMemory(
-							hProcess, 
-							aExceptionPointers.ExceptionRecord, 
-							&aExceptionRecord, 
+							hProcess,
+							aExceptionPointers.ExceptionRecord,
+							&aExceptionRecord,
 							sizeof(aExceptionRecord),
 							NULL );
 
@@ -2088,7 +2088,7 @@ static bool ParseCommandArgs( LPDWORD pdwProcessId, PEXCEPTION_POINTERS* ppExcep
 			LoadAndFormatString( hInstance, IDS_MSG_PARAM_PROCESSID_DESCRIPTION, szProcessDescription, elementsof(szProcessDescription) );
 			LoadAndFormatString( hInstance, IDS_MSG_PARAM_HELP_DESCRIPTION, szHelpDescription, elementsof(szHelpDescription) );
 
-			_tprintf( 
+			_tprintf(
 				TEXT("\n%s: crashrep %s\n\n")
 				TEXT("/?, -h[elp]          %s\n\n")
 				TEXT("%-20s %s\n\n"),
@@ -2106,33 +2106,33 @@ static bool ParseCommandArgs( LPDWORD pdwProcessId, PEXCEPTION_POINTERS* ppExcep
 				bSuccess = false;
 		}
 		else if ( 0 == _tcsicmp( argv[argn], _T("-excp") ) ||
-			      0 == _tcsicmp( argv[argn], _T("/excp") ) )
+				  0 == _tcsicmp( argv[argn], _T("/excp") ) )
 		{
 			if ( ++argn < argc )
 				*ppException = (PEXCEPTION_POINTERS)_tcstoul( argv[argn], NULL, 0 );
 			else
 				bSuccess = false;
 		}
-		else if ( 0 == _tcsicmp( argv[argn], _T("-t") ) || 
-			      0 == _tcsicmp( argv[argn], _T("/t") ) )
+		else if ( 0 == _tcsicmp( argv[argn], _T("-t") ) ||
+				  0 == _tcsicmp( argv[argn], _T("/t") ) )
 		{
 			if ( ++argn < argc )
 				*pdwThreadId = _tcstoul( argv[argn], NULL, 0 );
 			else
 				bSuccess = false;
 		}
-		else if ( 0 == _tcsicmp( argv[argn], _T("-noui") ) || 
-			      0 == _tcsicmp( argv[argn], _T("/noui") ) )
+		else if ( 0 == _tcsicmp( argv[argn], _T("-noui") ) ||
+				  0 == _tcsicmp( argv[argn], _T("/noui") ) )
 		{
 			g_bNoUserInterface = true;
 		}
-		else if ( 0 == _tcsicmp( argv[argn], _T("-send") ) || 
-			      0 == _tcsicmp( argv[argn], _T("/send") ) )
+		else if ( 0 == _tcsicmp( argv[argn], _T("-send") ) ||
+				  0 == _tcsicmp( argv[argn], _T("/send") ) )
 		{
 			g_bSendReport = true;
 		}
-		else if ( 0 == _tcsicmp( argv[argn], _T("-load") ) || 
-			      0 == _tcsicmp( argv[argn], _T("/load") ) )
+		else if ( 0 == _tcsicmp( argv[argn], _T("-load") ) ||
+				  0 == _tcsicmp( argv[argn], _T("/load") ) )
 		{
 			g_bLoadReport = true;
 		}
@@ -2185,7 +2185,7 @@ BOOL WriteCommentFile( LPCTSTR lpComment )
 
 		if ( GetTempFileName( szTempPath, TEXT("CMT"), 0, szFileName ) )
 		{
-			HANDLE	hFile =  CreateFile( szFileName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL );
+			HANDLE	hFile = CreateFile( szFileName, GENERIC_READ | GENERIC_WRITE, 0, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL );
 
 			if ( hFile )
 			{
@@ -2238,22 +2238,22 @@ static bool read_line( FILE *fp, string& rLine )
 	bool bEOL = false;
 	string	line;
 
-		
+
 	while ( !bEOL && fgets( szBuffer, sizeof(szBuffer), fp ) )
 	{
 		int	len = strlen(szBuffer);
-		
+
 		bSuccess = true;
-		
+
 		while ( len && szBuffer[len - 1] == '\n' )
 		{
 			szBuffer[--len] = 0;
 			bEOL = true;
 		}
-			
+
 		line.append( szBuffer );
 	}
-	
+
 	rLine = line;
 	return bSuccess;
 }
@@ -2262,24 +2262,24 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 {
 	FILE	*fp = fopen( pFileName, "rt" );
 	string	retValue;
-	
+
 	if ( fp )
 	{
 		string line;
 		string section;
-		
+
 		while ( read_line( fp, line ) )
 		{
 			line = trim_string( line );
-			
 
-			string::size_type iEqualSign = line.find( '=', 0 ); 
+
+			string::size_type iEqualSign = line.find( '=', 0 );
 
 			if ( iEqualSign != string::npos )
 			{
 				string	keyname = line.substr( 0, iEqualSign );
 				keyname = trim_string( keyname );
-				
+
 				string	value = line.substr( sal::static_int_cast<string::size_type>(iEqualSign + 1) );
 				value = trim_string( value );
 
@@ -2292,7 +2292,7 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 					if ( iQuotes != string::npos )
 						value.erase( iQuotes );
 				}
-				
+
 				if ( 0 == stricmp( keyname.c_str(), pKeyName ) )
 				{
 					retValue = value;
@@ -2300,10 +2300,10 @@ static string get_script_string( const char *pFileName, const char *pKeyName )
 				}
 			}
 		}
-		
+
 		fclose( fp );
 	}
-	
+
 	return retValue;
 }
 
@@ -2325,14 +2325,14 @@ static bool ReadBootstrapParams( CrashReportParams &rParams )
 	_tmakepath( szModuleName, szDrive, szDir, _T("bootstrap"), _T(".ini") );
 	_tmakepath( szModuleVersionName, szDrive, szDir, _T("version"), _T(".ini") );
 
-	if ( 
-		GetPrivateProfileString( 
-		TEXT("Bootstrap"), 
-		TEXT("ProductKey"), 
-		TEXT("OpenOffice.org"), 
-		szBuffer, 
-		elementsof(szBuffer), 
-		szModuleName ) 
+	if (
+		GetPrivateProfileString(
+		TEXT("Bootstrap"),
+		TEXT("ProductKey"),
+		TEXT("OpenOffice"),
+		szBuffer,
+		elementsof(szBuffer),
+		szModuleName )
 		)
 	{
 		TCHAR	*pVersion = _tcschr( szBuffer, ' ' );
@@ -2355,11 +2355,11 @@ static bool ReadBootstrapParams( CrashReportParams &rParams )
 			_tsetenv( TEXT("PRODUCTVERSION"), pVersion );
 	}
 
-	GetPrivateProfileString( 
-		TEXT("Version"), 
-		TEXT("buildid"), 
-		TEXT("unknown"), 
-		g_szBuildId, elementsof(g_szBuildId), 
+	GetPrivateProfileString(
+		TEXT("Version"),
+		TEXT("buildid"),
+		TEXT("unknown"),
+		g_szBuildId, elementsof(g_szBuildId),
 		szModuleVersionName );
 
 	g_strDefaultLanguage = get_script_string( "instdb.inf", "DefaultLanguage" );
@@ -2406,17 +2406,17 @@ static bool ReadBootstrapParams( CrashReportParams &rParams )
 
 //***************************************************************************
 
-bool SendHTTPRequest( 
-				FILE *fp, 
-				const char *pszServer, 
-				unsigned short uPort = 80, 
-				const char *pszProxyServer = NULL, 
+bool SendHTTPRequest(
+				FILE *fp,
+				const char *pszServer,
+				unsigned short uPort = 80,
+				const char *pszProxyServer = NULL,
 				unsigned short uProxyPort = 8080 )
 {
 	bool success = false;
 
 	struct hostent *hp;
-	
+
 	if ( pszProxyServer )
 		hp = gethostbyname( pszProxyServer );
 	else
@@ -2447,7 +2447,7 @@ bool SendHTTPRequest(
 				char buffer[2048];
 
 				if ( pszProxyServer )
-					sprintf( buffer, 
+					sprintf( buffer,
 					"POST http://%s:%d/soap/servlet/rpcrouter HTTP/1.0\r\n"
 						"Content-Type: text/xml; charset=\"utf-8\"\r\n"
 						"Content-Length: %d\r\n"
@@ -2457,7 +2457,7 @@ bool SendHTTPRequest(
 						length
 						);
 				else
-					sprintf( buffer, 
+					sprintf( buffer,
 						"POST /soap/servlet/rpcrouter HTTP/1.0\r\n"
 						"Content-Type: text/xml; charset=\"utf-8\"\r\n"
 						"Content-Length: %d\r\n"
@@ -2468,7 +2468,7 @@ bool SendHTTPRequest(
 				if ( SOCKET_ERROR != send( s, buffer, strlen(buffer), 0 ) )
 				{
 					size_t nBytes;
-					
+
 					do
 					{
 						nBytes = fread( buffer, 1, sizeof(buffer), fp );
@@ -2517,14 +2517,14 @@ static void WriteSOAPRequest( FILE *fp )
 		"<SOAP-ENV:Body>\n"
 		);
 
-	fprintf( fp, "<rds:submitReport>\n"  );
+	fprintf( fp, "<rds:submitReport>\n" );
 	fprintf( fp, "<body xsi:type=\"xsd:string\">This is an autogenerated crash report mail.</body>\n" );
 	fprintf( fp, "<hash xsi:type=\"apache:Map\">\n" );
 
 	FILE	*fpin = fopen( g_szReportFileNameA, "r" );
 	if ( fpin )
 	{
-		fprintf( fp, 
+		fprintf( fp,
 			"<item>\n"
 			"<key xsi:type=\"xsd:string\">reportmail.xml</key>\n"
 			"<value xsi:type=\"xsd:string\"><![CDATA[" );
@@ -2536,7 +2536,7 @@ static void WriteSOAPRequest( FILE *fp )
 	fpin = fopen( g_szCommentFileNameA, "r" );
 	if ( fpin )
 	{
-		fprintf( fp, 
+		fprintf( fp,
 			"<item>\n"
 			"<key xsi:type=\"xsd:string\">description.txt</key>\n"
 			"<value xsi:type=\"xsd:string\"><![CDATA[" );
@@ -2556,7 +2556,7 @@ static void WriteSOAPRequest( FILE *fp )
 			if ( base64_encode( fpin, fptemp ) )
 			{
 				fseek( fptemp, 0, SEEK_SET );
-				fprintf( fp, 
+				fprintf( fp,
 					"<item>\n"
 					"<key xsi:type=\"xsd:string\">user.dmp</key>\n"
 					"<value xsi:type=\"xsd:string\">" );
@@ -2568,11 +2568,11 @@ static void WriteSOAPRequest( FILE *fp )
 		fclose( fpin );
 	}
 
-	fprintf( fp, 
+	fprintf( fp,
 		"</hash>\n"
 		"</rds:submitReport>\n"
-		"</SOAP-ENV:Body>\n" 
-		"</SOAP-ENV:Envelope>\n" 
+		"</SOAP-ENV:Body>\n"
+		"</SOAP-ENV:Envelope>\n"
 		);
 }
 
@@ -2593,18 +2593,18 @@ void _cdecl SendingThread( void *lpArgs )
 {
 	RequestParams *pParams = (RequestParams *)lpArgs;
 
-    pParams->success = SendHTTPRequest( pParams->fpin, pParams->lpServer, pParams->uPort, pParams->lpProxyServer, pParams->uProxyPort );
+	pParams->success = SendHTTPRequest( pParams->fpin, pParams->lpServer, pParams->uPort, pParams->lpProxyServer, pParams->uProxyPort );
 
 	PostMessage( pParams->hwndStatus, WM_COMMAND, IDOK, 0 );
 }
 
 //***************************************************************************
 
-BOOL CALLBACK SendingStatusDialogProc( 
-	HWND hwndDlg, 
-	UINT uMsg, 
-	WPARAM wParam, 
-	LPARAM lParam 
+BOOL CALLBACK SendingStatusDialogProc(
+	HWND hwndDlg,
+	UINT uMsg,
+	WPARAM wParam,
+	LPARAM lParam
 	)
 {
 	static RequestParams *pRequest = NULL;
@@ -2666,8 +2666,8 @@ bool SendCrashReport( HWND hwndParent, const CrashReportParams &rParams )
 	{
 	case 2:
 		{
-			WideCharToMultiByte( 
-				CP_ACP, 0, rParams.sProxyServer.c_str(), -1, 
+			WideCharToMultiByte(
+				CP_ACP, 0, rParams.sProxyServer.c_str(), -1,
 				szProxyServer, sizeof(szProxyServer), NULL, NULL );
 			uProxyPort = (unsigned short)_tcstoul( rParams.sProxyPort.c_str(), &endptr, 10 );
 		}
@@ -2676,7 +2676,7 @@ bool SendCrashReport( HWND hwndParent, const CrashReportParams &rParams )
 		{
 			DWORD	dwProxyEnable = 0;
 
-			RegReadValue( HKEY_CURRENT_USER, 
+			RegReadValue( HKEY_CURRENT_USER,
 				TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings"),
 				TEXT("ProxyEnable"),
 				&dwProxyEnable,
@@ -2686,8 +2686,9 @@ bool SendCrashReport( HWND hwndParent, const CrashReportParams &rParams )
 			{
 				TCHAR	tszProxyServers[1024] = TEXT("");
 
-				if ( ERROR_SUCCESS == RegReadValue( HKEY_CURRENT_USER, 
-					TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings"),				TEXT("ProxyServer"),
+				if ( ERROR_SUCCESS == RegReadValue( HKEY_CURRENT_USER,
+					TEXT("Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings"),
+					TEXT("ProxyServer"),
 					tszProxyServers,
 					sizeof(tszProxyServers) ) )
 				{
@@ -2747,8 +2748,8 @@ bool SendCrashReport( HWND hwndParent, const CrashReportParams &rParams )
 
 		if ( hwndParent )
 		{
-			int retid = DialogBoxParam( 
-				GetModuleHandle(NULL), 
+			int retid = DialogBoxParam(
+				GetModuleHandle(NULL),
 				MAKEINTRESOURCE(IDD_SENDING_STATUS),
 				hwndParent,
 				SendingStatusDialogProc,
@@ -2855,8 +2856,8 @@ int WINAPI _tWinMain( HINSTANCE hInstance, HINSTANCE, LPTSTR /*lpCmdLine*/, int 
 	DWORD				dwProcessId = 0;
 	DWORD				dwThreadId = 0;
 
-	WSADATA wsaData;
-	WORD    wVersionRequested;
+	WSADATA	wsaData;
+	WORD	wVersionRequested;
 
 	wVersionRequested = MAKEWORD(1, 1);
 	WSAStartup(wVersionRequested, &wsaData);
@@ -2866,7 +2867,7 @@ int WINAPI _tWinMain( HINSTANCE hInstance, HINSTANCE, LPTSTR /*lpCmdLine*/, int 
 	Params.ReadFromRegistry();
 	Params.ReadFromEnvironment();
 
-	if ( ReadBootstrapParams( Params ) && 
+	if ( ReadBootstrapParams( Params ) &&
 		ParseCommandArgs( &dwProcessId, &pExceptionPointers, &dwThreadId ) )
 	{
 		bool	bGotDumpFile;
@@ -2946,7 +2947,7 @@ int WINAPI _tWinMain( HINSTANCE hInstance, HINSTANCE, LPTSTR /*lpCmdLine*/, int 
 					if ( SendCrashReport( NULL, Params ) )
 						exitcode = 0;
 				}
-			
+
 
 				if ( g_szReportFileNameA[0] )
 					DeleteFileA( g_szReportFileNameA );
@@ -2975,4 +2976,3 @@ int WINAPI _tWinMain( HINSTANCE hInstance, HINSTANCE, LPTSTR /*lpCmdLine*/, int 
 
 	return exitcode;
 }
-
