@@ -552,7 +552,14 @@ void SerfRequestProcessor::postprocessProcessor( const apr_status_t inStatus )
         break;
 
     default:
-        mpDAVException = new DAVException( DAVException::DAV_HTTP_ERROR );
+        {
+            // APR can help us describe this error
+            char *buff = new char[512];
+            apr_strerror(inStatus, buff, 512);
+            rtl::OUString message(buff, strlen(buff), RTL_TEXTENCODING_DONTKNOW);
+            delete[] buff;
+            mpDAVException = new DAVException( DAVException::DAV_HTTP_ERROR, message );
+        }
         break;
     }
 }
