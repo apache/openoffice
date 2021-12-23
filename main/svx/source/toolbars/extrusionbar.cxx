@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -60,10 +60,8 @@ using namespace ::com::sun::star::drawing;
 using namespace ::com::sun::star::uno;
 
 /*************************************************************************
-|*
 |* Standardinterface deklarieren (Die Slotmap darf nicht leer sein, also
 |* tragen wir etwas ein, was hier (hoffentlich) nie vorkommt).
-|*
 \************************************************************************/
 
 #define ShellClass ExtrusionBar
@@ -82,9 +80,7 @@ TYPEINIT1( ExtrusionBar, SfxShell );
 
 
 /*************************************************************************
-|*
 |* Standard-Konstruktor
-|*
 \************************************************************************/
 
 ExtrusionBar::ExtrusionBar(SfxViewShell* pViewShell )
@@ -100,9 +96,7 @@ ExtrusionBar::ExtrusionBar(SfxViewShell* pViewShell )
 
 
 /*************************************************************************
-|*
 |* Destruktor
-|*
 \************************************************************************/
 
 ExtrusionBar::~ExtrusionBar()
@@ -151,7 +145,7 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 	static const rtl::OUString	sViewPoint( RTL_CONSTASCII_USTRINGPARAM ( "ViewPoint" ) );
 	static const rtl::OUString	sOrigin( RTL_CONSTASCII_USTRINGPARAM ( "Origin" ) );
 	static const rtl::OUString	sSkew( RTL_CONSTASCII_USTRINGPARAM ( "Skew" ) );
-	static const rtl::OUString  sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
+	static const rtl::OUString	sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
 
 	sal_uInt16 nSID = rReq.GetSlot();
 	switch( nSID )
@@ -273,7 +267,7 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 			aPropValue.Value <<= aViewPoint;
 			rGeometryItem.SetPropertyValue( sExtrusion,	 aPropValue );
 
-			
+
 			EnhancedCustomShapeParameterPair aOriginPropPair;
 			aOriginPropPair.First.Value <<= fOriginX;
 			aOriginPropPair.First.Type = EnhancedCustomShapeParameterType::NORMAL;
@@ -328,7 +322,7 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 	break;
 	case SID_EXTRUSION_3D_COLOR:
 	{
-		static const rtl::OUString  sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
+		static const rtl::OUString	sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
 
 		if( rReq.GetArgs() && rReq.GetArgs()->GetItemState( SID_EXTRUSION_3D_COLOR ) == SFX_ITEM_SET)
 		{
@@ -417,7 +411,7 @@ static void impl_execute( SdrView*, SfxRequest& rReq, SdrCustomShapeGeometryItem
 		if( rReq.GetArgs() && rReq.GetArgs()->GetItemState( SID_EXTRUSION_LIGHTING_INTENSITY ) == SFX_ITEM_SET)
 		{
 			sal_Int32 nLevel = ((const SfxInt32Item*)rReq.GetArgs()->GetItem(SID_EXTRUSION_LIGHTING_INTENSITY))->GetValue();
-			
+
 			double fBrightness;
 			sal_Bool bHarsh2;
 			double fLevel1;
@@ -594,17 +588,17 @@ void ExtrusionBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rB
 					if( bUndo )
 						pSdrView->EndUndo();
 
-                    // simulate a context change:
-                    // force SelectionHasChanged() being called
-                    // so that extrusion bar will be visible/hidden
-                    pSdrView->MarkListHasChanged();
+					// simulate a context change:
+					// force SelectionHasChanged() being called
+					// so that extrusion bar will be visible/hidden
+					pSdrView->MarkListHasChanged();
 				}
 			}
 		}
 		break;
 
 		case SID_EXTRUSION_DEPTH_DIALOG:
-			if( rReq.GetArgs() && 
+			if( rReq.GetArgs() &&
 				(rReq.GetArgs()->GetItemState( SID_EXTRUSION_DEPTH ) == SFX_ITEM_SET) &&
 				(rReq.GetArgs()->GetItemState( SID_ATTR_METRIC ) == SFX_ITEM_SET))
 			{
@@ -628,7 +622,7 @@ void ExtrusionBar::execute( SdrView* pSdrView, SfxRequest& rReq, SfxBindings& rB
 	if( nSID == SID_EXTRUSION_TOOGLE )
 	{
 			static sal_uInt16 SidArray[] = {
-				SID_EXTRUSION_TILT_DOWN, 
+				SID_EXTRUSION_TILT_DOWN,
 				SID_EXTRUSION_TILT_UP,
 				SID_EXTRUSION_TILT_LEFT,
 				SID_EXTRUSION_TILT_RIGHT,
@@ -659,7 +653,7 @@ void getExtrusionDirectionState( SdrView* pSdrView, SfxItemSet& rSet )
 	static const rtl::OUString	sOrigin( RTL_CONSTASCII_USTRINGPARAM ( "Origin" ) );
 	static const rtl::OUString	sSkew( RTL_CONSTASCII_USTRINGPARAM ( "Skew" ) );
 	static const rtl::OUString	sProjectionMode( RTL_CONSTASCII_USTRINGPARAM ( "ProjectionMode" ) );
-	
+
 	com::sun::star::uno::Any* pAny;
 
 	double fFinalSkewAngle = -1;
@@ -807,7 +801,7 @@ void getExtrusionProjectionState( SdrView* pSdrView, SfxItemSet& rSet )
 
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
 	static const rtl::OUString	sProjectionMode( RTL_CONSTASCII_USTRINGPARAM ( "ProjectionMode" ) );
-	
+
 	com::sun::star::uno::Any* pAny;
 
 	sal_Int32 nFinalProjection = -1;
@@ -866,7 +860,7 @@ void getExtrusionSurfaceState( SdrView* pSdrView, SfxItemSet& rSet )
 	static const rtl::OUString	sSpecularity( RTL_CONSTASCII_USTRINGPARAM ( "Specularity" ) );
 	static const rtl::OUString	sDiffusion( RTL_CONSTASCII_USTRINGPARAM ( "Diffusion" ) );
 	static const rtl::OUString	sMetal( RTL_CONSTASCII_USTRINGPARAM ( "Metal" ) );
-	
+
 	com::sun::star::uno::Any* pAny;
 
 	sal_Int32 nFinalSurface = -1;
@@ -890,7 +884,7 @@ void getExtrusionSurfaceState( SdrView* pSdrView, SfxItemSet& rSet )
 					continue;
 			}
 
-			sal_Int32 nSurface = 0; // wire frame
+			sal_Int32 nSurface = 0; // wireframe
 
 			ShadeMode eShadeMode( ShadeMode_FLAT );
 			pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sShadeMode );
@@ -909,7 +903,7 @@ void getExtrusionSurfaceState( SdrView* pSdrView, SfxItemSet& rSet )
 					nSurface = 3; // metal
 				}
 				else
-				{	
+				{
 					double fSpecularity = 0;
 					pAny = aGeometryItem.GetPropertyValueByName( sExtrusion, sSpecularity );
 					if( pAny )
@@ -952,7 +946,7 @@ void getExtrusionDepthState( SdrView* pSdrView, SfxItemSet& rSet )
 
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
 	static const rtl::OUString	sDepth( RTL_CONSTASCII_USTRINGPARAM ( "Depth" ) );
-	
+
 	com::sun::star::uno::Any* pAny;
 
 	double fFinalDepth = -1;
@@ -1113,7 +1107,7 @@ void getExtrusionLightingIntensityState( SdrView* pSdrView, SfxItemSet& rSet )
 
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
 	static const rtl::OUString	sBrightness( RTL_CONSTASCII_USTRINGPARAM ( "Brightness" ) );
-	
+
 	com::sun::star::uno::Any* pAny;
 
 	int nFinalLevel = -1;
@@ -1149,7 +1143,7 @@ void getExtrusionLightingIntensityState( SdrView* pSdrView, SfxItemSet& rSet )
 			}
 			else if( fBrightness >= 10.0 )
 			{
-				nLevel = 1; // Noraml;
+				nLevel = 1; // Normal
 			}
 			else
 			{
@@ -1180,7 +1174,7 @@ void getExtrusionColorState( SdrView* pSdrView, SfxItemSet& rSet )
 	sal_uIntPtr nCount = rMarkList.GetMarkCount(), i;
 
 	static const rtl::OUString	sExtrusion( RTL_CONSTASCII_USTRINGPARAM ( "Extrusion" ) );
-	static const rtl::OUString  sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
+	static const rtl::OUString	sExtrusionColor( RTL_CONSTASCII_USTRINGPARAM ( "Color" ) );
 
 	com::sun::star::uno::Any* pAny;
 
@@ -1288,8 +1282,8 @@ void ExtrusionBar::getState( SdrView* pSdrView, SfxItemSet& rSet )
 	{
 		getExtrusionProjectionState( pSdrView, rSet );
 	}
-    const bool bOnlyExtrudedCustomShapes =
-        checkForSelectedCustomShapes( pSdrView, true );
+	const bool bOnlyExtrudedCustomShapes =
+		checkForSelectedCustomShapes( pSdrView, true );
 	if (rSet.GetItemState(SID_EXTRUSION_TILT_DOWN) != SFX_ITEM_UNKNOWN)
 	{
 		if (! bOnlyExtrudedCustomShapes)
@@ -1322,7 +1316,7 @@ void ExtrusionBar::getState( SdrView* pSdrView, SfxItemSet& rSet )
 	}
 	if (rSet.GetItemState(SID_EXTRUSION_DEPTH_FLOATER) != SFX_ITEM_UNKNOWN)
 	{
-        if (! bOnlyExtrudedCustomShapes)
+		if (! bOnlyExtrudedCustomShapes)
 			rSet.DisableItem( SID_EXTRUSION_DEPTH_FLOATER );
 	}
 	if (rSet.GetItemState(SID_EXTRUSION_DIRECTION_FLOATER) != SFX_ITEM_UNKNOWN)

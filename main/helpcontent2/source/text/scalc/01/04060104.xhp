@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <helpdocument version="1.0">
-	
+
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,21 +10,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
- 
-	
+
 <meta>
 <topic id="textscalc0104060104xml" indexer="include">
 <title id="tit" xml-lang="en-US">Information Functions</title>
@@ -37,7 +36,7 @@
 <bookmark_value>functions; information functions</bookmark_value>
 </bookmark>
 <paragraph role="heading" id="hd_id3147247" xml-lang="en-US" level="1" l10n="U" oldref="1">Information Functions</paragraph>
-<paragraph role="paragraph" id="par_id3147499" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="informationtext">This category contains the <emph>Information</emph> functions. 
+<paragraph role="paragraph" id="par_id3147499" xml-lang="en-US" l10n="CHG" oldref="2"><variable id="informationtext">This category contains the <emph>Information</emph> functions.
 </variable></paragraph>
 <section id="howtoget">
 <embed href="text/scalc/00/00000404.xhp#eikain"/>
@@ -256,7 +255,7 @@
 <paragraph role="paragraph" id="par_id3994567" xml-lang="en-US" l10n="NEW">
 <item type="input">=INFO("release")</item> returns the product release number of the %PRODUCTNAME in use.<comment>Do not translate "release"</comment></paragraph>
 <paragraph role="paragraph" id="par_id2873622" xml-lang="en-US" l10n="NEW">
-<item type="input">=INFO(D5)</item> with cell <item type="literal">D5</item> containing a text string <item type="literal">system</item> returns the operation system type.<comment>Do not translate the hlp_literal system</comment></paragraph>
+<item type="input">=INFO(D5)</item> with cell <item type="literal">D5</item> containing a text string <item type="literal">system</item> returns the operating system type.<comment>Do not translate the hlp_literal system</comment></paragraph>
 </section>
 <section id="current">
 <bookmark xml-lang="en-US" branch="index" id="bm_id3155625"><bookmark_value>CURRENT function</bookmark_value>

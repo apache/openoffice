@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -49,13 +51,11 @@
 #include <drawdoc.hxx>
 
 /*************************************************************************
-|*
 |*	SwSaveHdl
 |*
 |*	Ersterstellung		MA 14. Feb. 95
 |*	Letzte Aenderung	MA 02. Jun. 98
-|*
-|*************************************************************************/
+**************************************************************************/
 //SwSaveHdl::SwSaveHdl( SwViewImp *pI ) :
 //	pImp( pI ),
 //	bXorVis( sal_False )
@@ -77,13 +77,11 @@
 
 
 /*************************************************************************
-|*
 |*	SwViewImp::StartAction(), EndAction()
 |*
 |*	Ersterstellung		MA 14. Feb. 95
 |*	Letzte Aenderung	MA 14. Sep. 98
-|*
-|*************************************************************************/
+**************************************************************************/
 
 
 void SwViewImp::StartAction()
@@ -113,13 +111,11 @@ void SwViewImp::EndAction()
 }
 
 /*************************************************************************
-|*
 |*	SwViewImp::LockPaint(), UnlockPaint()
 |*
 |*	Ersterstellung		MA 11. Jun. 96
 |*	Letzte Aenderung	MA 11. Jun. 96
-|*
-|*************************************************************************/
+**************************************************************************/
 
 
 void SwViewImp::LockPaint()
@@ -151,13 +147,11 @@ void SwViewImp::UnlockPaint()
 
 
 /*************************************************************************
-|*
 |*	SwViewImp::PaintLayer(), PaintDispatcher()
 |*
 |*	Ersterstellung		MA 20. Dec. 94
 |*	Letzte Aenderung	AMA 04. Jun. 98
-|*
-|*************************************************************************/
+**************************************************************************/
 // OD 29.08.2002 #102450#
 // add 3rd parameter <const Color* pPageBackgrdColor> for setting this
 // color as the background color at the outliner of the draw view.
@@ -238,13 +232,11 @@ void SwViewImp::PaintLayer( const SdrLayerID _nLayerID,
 }
 
 /*************************************************************************
-|*
 |*	SwViewImp::IsDragPossible()
 |*
 |*	Ersterstellung		MA 19. Jan. 93
 |*	Letzte Aenderung	MA 16. Jan. 95
-|*
-|*************************************************************************/
+**************************************************************************/
 #define WIEDUWILLST 400
 
 sal_Bool SwViewImp::IsDragPossible( const Point &rPoint )
@@ -277,13 +269,11 @@ sal_Bool SwViewImp::IsDragPossible( const Point &rPoint )
 }
 
 /*************************************************************************
-|*
 |*	SwViewImp::NotifySizeChg()
 |*
 |*	Ersterstellung		MA 23. Jun. 93
 |*	Letzte Aenderung	MA 05. Oct. 98
-|*
-|*************************************************************************/
+**************************************************************************/
 
 void SwViewImp::NotifySizeChg( const Size &rNewSz )
 {
@@ -294,7 +284,7 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 		GetPageView()->GetPage()->SetSize( rNewSz );
 
 	//Begrenzung des Arbeitsbereiches.
-    const Rectangle aRect( Point( DOCUMENTBORDER, DOCUMENTBORDER ), rNewSz );
+	const Rectangle aRect( Point( DOCUMENTBORDER, DOCUMENTBORDER ), rNewSz );
 	const Rectangle &rOldWork = GetDrawView()->GetWorkArea();
 	sal_Bool bCheckDrawObjs = sal_False;
 	if ( aRect != rOldWork )
@@ -306,8 +296,8 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 	if ( !bCheckDrawObjs )
 		return;
 
-    ASSERT( pSh->getIDocumentDrawModelAccess()->GetDrawModel(), "NotifySizeChg without DrawModel" );
-    SdrPage* pPage = pSh->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage( 0 );
+	ASSERT( pSh->getIDocumentDrawModelAccess()->GetDrawModel(), "NotifySizeChg without DrawModel" );
+	SdrPage* pPage = pSh->getIDocumentDrawModelAccess()->GetDrawModel()->GetPage( 0 );
 	const sal_uLong nObjs = pPage->GetObjCount();
 	for( sal_uLong nObj = 0; nObj < nObjs; ++nObj )
 	{
@@ -349,7 +339,7 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 				if ( aSz.Width() || aSz.Height() )
 					pObj->Move( aSz );
 
-				//Notanker: Grosse Objekte nicht nach oben verschwinden lassen.
+				// Notanker: Grosse Objekte nicht nach oben verschwinden lassen.
 				aSz.Width() = aSz.Height() = 0;
 				if ( aBound.Bottom() < aRect.Top() )
 					aSz.Width() = (aBound.Bottom() - aRect.Top()) - MINFLY;
@@ -361,6 +351,3 @@ void SwViewImp::NotifySizeChg( const Size &rNewSz )
 		}
 	}
 }
-
-
-

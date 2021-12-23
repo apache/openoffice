@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@
 #include <hints.hxx>
 #include <fntcache.hxx>
 
-#include <statstr.hrc>	// Text fuer SfxProgress
+#include <statstr.hrc>	// Text for SfxProgress
 #include <comcore.hrc>
 
 #include <IDocumentFieldsAccess.hxx>
@@ -73,7 +73,7 @@ void ViewShell::AdjustOptionsForPagePreview(SwPrintData const& rPrintOptions)
 {
     if ( !IsPreView() )
     {
-        ASSERT( false, "view shell doesn't belongs to a page preview - no adjustment of its view options");
+        ASSERT( false, "view shell doesn't belong to a page preview - no adjustment of its view options");
         return;
     }
 
@@ -85,7 +85,7 @@ void ViewShell::AdjustOptionsForPagePreview(SwPrintData const& rPrintOptions)
 // print brochure
 // OD 05.05.2003 #i14016# - consider empty pages on calculation of the scaling
 // for a page to be printed.
-void ViewShell::PrintProspect( 
+void ViewShell::PrintProspect(
     OutputDevice *pOutDev,
     const SwPrintData &rPrintData,
     sal_Int32 nRenderer // the index in the vector of prospect pages to be printed
@@ -103,7 +103,7 @@ void ViewShell::PrintProspect(
     // output device is now provided by a call from outside the Writer)
     pPrinter->Push();
 
-    std::pair< sal_Int32, sal_Int32 > rPagesToPrint = 
+    std::pair< sal_Int32, sal_Int32 > rPagesToPrint =
             rPrintData.GetRenderData().GetPagePairsForProspectPrinting()[ nRenderer ];
 // const sal_uInt16 nPageMax = static_cast< sal_uInt16 >(rPagesToPrint.first > rPagesToPrint.second ?
 //            rPagesToPrint.first : rPagesToPrint.second);
@@ -112,14 +112,14 @@ void ViewShell::PrintProspect(
     DBG_ASSERT( rPagesToPrint.second == -1 || rPrintData.GetRenderData().GetValidPagesSet().count( rPagesToPrint.second ) == 1, "second Page not valid" );
 #endif
 
-	// eine neue Shell fuer den Printer erzeugen
+	// create new shell for printer
     ViewShell aShell( *this, 0, pPrinter );
-    
+
     SET_CURR_SHELL( &aShell );
 
     aShell.PrepareForPrint( rPrintData );
 
-    //!! applying view options and formatting the dcoument should now only be done in getRendererCount!
+    //!! applying view options and formatting the document should now only be done in getRendererCount!
 
     MapMode aMapMode( MAP_TWIP );
     Size aPrtSize( pPrinter->PixelToLogic( pPrinter->GetPaperSizePixel(), aMapMode ) );
@@ -200,7 +200,7 @@ void ViewShell::PrintProspect(
             aScY = aScX;
 
         {
-            // fuer Drawing, damit diese ihre Objecte vernuenftig Painten
+            // fuer Drawing, damit diese ihre Objekte vernuenftig Painten
             // koennen, auf "glatte" Prozentwerte setzen
             aScY *= Fraction( 1000, 1 );
             long nTmp = (long)aScY;
@@ -218,7 +218,7 @@ void ViewShell::PrintProspect(
     Size aTmpPrtSize( pPrinter->PixelToLogic( pPrinter->GetPaperSizePixel(), aMapMode ) );
 
     // calculate start point for equal border on all sides
-    Point aSttPt( (aTmpPrtSize.Width() - nMaxColSz) / 2, 
+    Point aSttPt( (aTmpPrtSize.Width() - nMaxColSz) / 2,
                   (aTmpPrtSize.Height() - nMaxRowSz) / 2 );
     for( int nC = 0; nC < 2; ++nC )
     {
@@ -241,13 +241,11 @@ void ViewShell::PrintProspect(
 
     SwPaintQueue::Repaint();
 
-    //!! applying/modifying view options and formatting the dcoument should now only be done in getRendererCount!
-    
+    //!! applying/modifying view options and formatting the document should now only be done in getRendererCount!
+
     pFntCache->Flush();
 
     // restore settings of OutputDevice (should be done always now since the
     // output device is now provided by a call from outside the Writer)
     pPrinter->Pop();
 }
-
-

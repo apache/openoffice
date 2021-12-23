@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,37 +50,37 @@ namespace sdr
 		{
 		}
 
-        drawinglayer::primitive3d::Primitive3DSequence ViewObjectContactOfE3d::createPrimitive3DSequence(const DisplayInfo& rDisplayInfo) const
-        {
-            // get the view-independent Primitive from the viewContact
-            const ViewContactOfE3d& rViewContactOfE3d(dynamic_cast< const ViewContactOfE3d& >(GetViewContact()));
-            drawinglayer::primitive3d::Primitive3DSequence xRetval(rViewContactOfE3d.getViewIndependentPrimitive3DSequence());
+		drawinglayer::primitive3d::Primitive3DSequence ViewObjectContactOfE3d::createPrimitive3DSequence(const DisplayInfo& rDisplayInfo) const
+		{
+			// get the view-independent Primitive from the viewContact
+			const ViewContactOfE3d& rViewContactOfE3d(dynamic_cast< const ViewContactOfE3d& >(GetViewContact()));
+			drawinglayer::primitive3d::Primitive3DSequence xRetval(rViewContactOfE3d.getViewIndependentPrimitive3DSequence());
 
-            // handle ghosted
-            if(isPrimitiveGhosted(rDisplayInfo))
-            {
-                const ::basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
-                const ::basegfx::BColorModifierSharedPtr aBColorModifier(
-                    new basegfx::BColorModifier_interpolate(
-                        aRGBWhite, 
-                        0.5));
-                const drawinglayer::primitive3d::Primitive3DReference xReference(
-                    new drawinglayer::primitive3d::ModifiedColorPrimitive3D(
-                        xRetval, 
-                        aBColorModifier));
+			// handle ghosted
+			if(isPrimitiveGhosted(rDisplayInfo))
+			{
+				const ::basegfx::BColor aRGBWhite(1.0, 1.0, 1.0);
+				const ::basegfx::BColorModifierSharedPtr aBColorModifier(
+					new basegfx::BColorModifier_interpolate(
+						aRGBWhite,
+						0.5));
+				const drawinglayer::primitive3d::Primitive3DReference xReference(
+					new drawinglayer::primitive3d::ModifiedColorPrimitive3D(
+						xRetval,
+						aBColorModifier));
 
-                xRetval = drawinglayer::primitive3d::Primitive3DSequence(&xReference, 1);
-            }
+				xRetval = drawinglayer::primitive3d::Primitive3DSequence(&xReference, 1);
+			}
 
-            return xRetval;
-        }
+			return xRetval;
+		}
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewObjectContactOfE3d::createPrimitive2DSequence(const DisplayInfo& rDisplayInfo) const
 		{
-    		const ViewContactOfE3d& rViewContact = static_cast< const ViewContactOfE3d& >(GetViewContact());
+			const ViewContactOfE3d& rViewContact = static_cast< const ViewContactOfE3d& >(GetViewContact());
 
 			// get 3d primitive vector, isPrimitiveVisible() is done in 3d creator
-    		return rViewContact.impCreateWithGivenPrimitive3DSequence(getPrimitive3DSequence(rDisplayInfo));
+			return rViewContact.impCreateWithGivenPrimitive3DSequence(getPrimitive3DSequence(rDisplayInfo));
 		}
 
 		drawinglayer::primitive3d::Primitive3DSequence ViewObjectContactOfE3d::getPrimitive3DSequence(const DisplayInfo& rDisplayInfo) const

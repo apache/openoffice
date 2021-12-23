@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,15 +44,15 @@ namespace sdr {	namespace contact {
 // ----------------------------------
 // - ViewObjectContactOfSdrMediaObj -
 // ----------------------------------
-		
-ViewObjectContactOfSdrMediaObj::ViewObjectContactOfSdrMediaObj( ObjectContact& rObjectContact, 
+
+ViewObjectContactOfSdrMediaObj::ViewObjectContactOfSdrMediaObj( ObjectContact& rObjectContact,
 																ViewContact& rViewContact,
 																const ::avmedia::MediaItem& rMediaItem ) :
 	ViewObjectContactOfSdrObj( rObjectContact, rViewContact ),
 	mpMediaWindow( NULL )
 {
 	Window* pWindow = getWindow();
-	
+
 	if( pWindow )
 	{
 		mpMediaWindow = new SdrMediaWindow( pWindow, *this );
@@ -91,7 +91,7 @@ Window*	ViewObjectContactOfSdrMediaObj::getWindow() const
 		}
 
 		OutputDevice& rOutDev = pPaintWindow->GetOutputDevice();
-		
+
 		if(OUTDEV_WINDOW == rOutDev.GetOutDevType())
 		{
 			pRetval = static_cast< Window* >(&rOutDev);
@@ -113,28 +113,28 @@ bool ViewObjectContactOfSdrMediaObj::hasPreferredSize() const
 Size ViewObjectContactOfSdrMediaObj::getPreferredSize() const
 {
 	Size aRet;
-	
+
 	if( mpMediaWindow )
 		aRet = mpMediaWindow->getPreferredSize();
-	
+
 	return aRet;
 }
 
 // ------------------------------------------------------------------------------
-		
+
 void ViewObjectContactOfSdrMediaObj::updateMediaItem( ::avmedia::MediaItem& rItem ) const
 {
 	if( mpMediaWindow )
-    {
+	{
 		mpMediaWindow->updateMediaItem( rItem );
 
-        // show/hide is now dependent of play state
-        if(avmedia::MEDIASTATE_STOP == rItem.getState())
-        {
-		    mpMediaWindow->hide();
-        }
-        else
-        {
+		// show/hide is now dependent of play state
+		if(avmedia::MEDIASTATE_STOP == rItem.getState())
+		{
+			mpMediaWindow->hide();
+		}
+		else
+		{
 			basegfx::B2DRange aViewRange(getObjectRange());
 			aViewRange.transform(GetObjectContact().getViewInformation2D().getViewTransformation());
 
@@ -143,21 +143,21 @@ void ViewObjectContactOfSdrMediaObj::updateMediaItem( ::avmedia::MediaItem& rIte
 				(sal_Int32)ceil(aViewRange.getMaxX()), (sal_Int32)ceil(aViewRange.getMaxY()));
 
 			mpMediaWindow->setPosSize(aViewRectangle);
-		    mpMediaWindow->show();
-        }
-    }
+			mpMediaWindow->show();
+		}
+	}
 }
 
 // ------------------------------------------------------------------------------
-			
+
 void ViewObjectContactOfSdrMediaObj::executeMediaItem( const ::avmedia::MediaItem& rItem )
 {
 	if( mpMediaWindow )
 	{
 		::avmedia::MediaItem aUpdatedItem;
-	
+
 		mpMediaWindow->executeMediaItem( rItem );
-		
+
 		// query new properties after trying to set the new properties
 		updateMediaItem( aUpdatedItem );
 		static_cast< ViewContactOfSdrMediaObj& >( GetViewContact() ).mediaPropertiesChanged( aUpdatedItem );

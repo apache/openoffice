@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -45,8 +45,6 @@ SFX_IMPL_TOOLBOX_CONTROL(SvxTbxCtlCustomShapes, SfxBoolItem);
 
 /*************************************************************************
 |*
-|*
-|*
 \************************************************************************/
 
 SvxTbxCtlCustomShapes::SvxTbxCtlCustomShapes( sal_uInt16 nSlotId, sal_uInt16 nId, ToolBox& rTbx ) :
@@ -61,21 +59,21 @@ SvxTbxCtlCustomShapes::SvxTbxCtlCustomShapes( sal_uInt16 nSlotId, sal_uInt16 nId
 		}
 		case SID_DRAWTBX_CS_BASIC :
 		{
-            m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:BasicShapes.diamond" ) );
-            m_aSubTbName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "basicshapes" ) );
+			m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:BasicShapes.diamond" ) );
+			m_aSubTbName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "basicshapes" ) );
 		}
 		break;
 
 		case SID_DRAWTBX_CS_SYMBOL :
 		{
-            m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:SymbolShapes.smiley" ) );
+			m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:SymbolShapes.smiley" ) );
 			m_aSubTbName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "symbolshapes" ) );
 		}
 		break;
 
 		case SID_DRAWTBX_CS_ARROW :
 		{
-            m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:ArrowShapes.left-right-arrow" ) );
+			m_aCommand = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ".uno:ArrowShapes.left-right-arrow" ) );
 			m_aSubTbName = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "arrowshapes" ) );
 		}
 		break;
@@ -98,27 +96,23 @@ SvxTbxCtlCustomShapes::SvxTbxCtlCustomShapes( sal_uInt16 nSlotId, sal_uInt16 nId
 		}
 		break;
 	}
-    m_aSubTbxResName += m_aSubTbName;
+	m_aSubTbxResName += m_aSubTbName;
 	rTbx.SetItemBits( nId, TIB_DROPDOWN | rTbx.GetItemBits( nId ) );
 	rTbx.Invalidate();
 }
 
 /*************************************************************************
-|*
 |* Benachrichtigung, wenn sich der Applikationsstatus geaendert hat
-|*
 \************************************************************************/
 
 void SvxTbxCtlCustomShapes::StateChanged( sal_uInt16 nSID, SfxItemState eState,
-								  const SfxPoolItem* pState )
+									const SfxPoolItem* pState )
 {
-    SfxToolBoxControl::StateChanged( nSID, eState, pState );
+	SfxToolBoxControl::StateChanged( nSID, eState, pState );
 }
 
 /*************************************************************************
-|*
 |* Wenn man ein PopupWindow erzeugen will
-|*
 \************************************************************************/
 
 SfxPopupWindowType SvxTbxCtlCustomShapes::GetPopupWindowType() const
@@ -127,16 +121,14 @@ SfxPopupWindowType SvxTbxCtlCustomShapes::GetPopupWindowType() const
 }
 
 /*************************************************************************
-|*
 |* Hier wird das Fenster erzeugt
 |* Lage der Toolbox mit GetToolBox() abfragbar
 |* rItemRect sind die Screen-Koordinaten
-|*
 \************************************************************************/
 
 SfxPopupWindow* SvxTbxCtlCustomShapes::CreatePopupWindow()
 {
-    createAndPositionSubToolBar( m_aSubTbxResName );
+	createAndPositionSubToolBar( m_aSubTbxResName );
 	return NULL;
 }
 
@@ -146,7 +138,7 @@ void SvxTbxCtlCustomShapes::Select( sal_Bool /*bMod1*/ )
 {
  	if ( m_aCommand.getLength() > 0 )
 	{
-        com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > aParamSeq( 0 );
+		com::sun::star::uno::Sequence< com::sun::star::beans::PropertyValue > aParamSeq( 0 );
 		Dispatch( m_aCommand, aParamSeq );
 	}
 }
@@ -154,47 +146,46 @@ void SvxTbxCtlCustomShapes::Select( sal_Bool /*bMod1*/ )
 
 ::sal_Bool SAL_CALL SvxTbxCtlCustomShapes::opensSubToolbar() throw (::com::sun::star::uno::RuntimeException)
 {
-    // We control a sub-toolbar therefor, we have to return true.
-    return sal_True;
+	// We control a sub-toolbar therefor, we have to return true.
+	return sal_True;
 }
 
 ::rtl::OUString SAL_CALL SvxTbxCtlCustomShapes::getSubToolbarName() throw (::com::sun::star::uno::RuntimeException)
 {
-    // Provide the controlled sub-toolbar name, so we are notified whenever
-    // this toolbar executes a function.
-    return m_aSubTbName;
+	// Provide the controlled sub-toolbar name, so we are notified whenever
+	// this toolbar executes a function.
+	return m_aSubTbName;
 }
 
 void SAL_CALL SvxTbxCtlCustomShapes::functionSelected( const ::rtl::OUString& rCommand ) throw (::com::sun::star::uno::RuntimeException)
 {
-    // remind the new command
-    m_aCommand = rCommand;
-    // Our sub-toolbar wants to execute a function.
-    // We have to change the image of our toolbar button to reflect the new function.
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    if ( !m_bDisposed )
-    {
-        if ( m_aCommand.getLength() > 0 )
-        {
-            ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > xFrame( getFrameInterface());
-            Image aImage = GetImage( xFrame, m_aCommand, hasBigImages(), isHighContrast() );
-            if ( !!aImage )
-                GetToolBox().SetItemImage( GetId(), aImage );
-        }
-    }
+	// remind the new command
+	m_aCommand = rCommand;
+	// Our sub-toolbar wants to execute a function.
+	// We have to change the image of our toolbar button to reflect the new function.
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	if ( !m_bDisposed )
+	{
+		if ( m_aCommand.getLength() > 0 )
+		{
+			::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > xFrame( getFrameInterface());
+			Image aImage = GetImage( xFrame, m_aCommand, hasBigImages(), isHighContrast() );
+			if ( !!aImage )
+				GetToolBox().SetItemImage( GetId(), aImage );
+		}
+	}
 }
 
 void SAL_CALL SvxTbxCtlCustomShapes::updateImage(  ) throw (::com::sun::star::uno::RuntimeException)
 {
-    // We should update the button image of our parent (toolbar).
-    // Use the stored command to set the correct current image.
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
-    if ( m_aCommand.getLength() > 0 )
-    {
-        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > xFrame( getFrameInterface());
-        Image aImage = GetImage( xFrame, m_aCommand, hasBigImages(), isHighContrast() );
-        if ( !!aImage )
-            GetToolBox().SetItemImage( GetId(), aImage );
-    }
+	// We should update the button image of our parent (toolbar).
+	// Use the stored command to set the correct current image.
+	::vos::OGuard aGuard( Application::GetSolarMutex() );
+	if ( m_aCommand.getLength() > 0 )
+	{
+		::com::sun::star::uno::Reference< ::com::sun::star::frame::XFrame > xFrame( getFrameInterface());
+		Image aImage = GetImage( xFrame, m_aCommand, hasBigImages(), isHighContrast() );
+		if ( !!aImage )
+			GetToolBox().SetItemImage( GetId(), aImage );
+	}
 }
-

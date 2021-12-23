@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -50,7 +50,7 @@
 
 #include <svx/sdr/contact/displayinfo.hxx>
 
-#define _SD_DLL                 // fuer SD_MOD()
+#define _SD_DLL // fuer SD_MOD()
 #include "sdmod.hxx"
 #include "sddll.hxx"
 #include "app.hrc"
@@ -104,19 +104,19 @@ static SdPage* GetCurrentPage( sd::ViewShell* pViewSh, EditFieldInfo* pInfo, boo
 	if( pViewSh && pViewSh->ISA(sd::OutlineViewShell))
 		pSdView = static_cast<sd::OutlineView*> (static_cast<sd::OutlineViewShell*>(pViewSh)->GetView());
 
-	if (pSdView != NULL && (pOutliner ==  pSdView->GetOutliner()))
-    {
-        // outline mode
-        int nPgNum = 0;
-        Outliner* pOutl = pSdView->GetOutliner();
-        long nPos = pInfo->GetPara();
-        sal_uLong nParaPos = 0;
+	if (pSdView != NULL && (pOutliner == pSdView->GetOutliner()))
+	{
+		// outline mode
+		int nPgNum = 0;
+		Outliner* pOutl = pSdView->GetOutliner();
+		long nPos = pInfo->GetPara();
+		sal_uLong nParaPos = 0;
 
-        for( Paragraph* pPara = pOutl->GetParagraph( 0 ); pPara && nPos >= 0; pPara = pOutl->GetParagraph( ++nParaPos ), nPos-- )
-        {
-            if( pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE ) )
-                nPgNum++;
-        }
+		for( Paragraph* pPara = pOutl->GetParagraph( 0 ); pPara && nPos >= 0; pPara = pOutl->GetParagraph( ++nParaPos ), nPos-- )
+		{
+			if( pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE ) )
+				nPgNum++;
+		}
 
 		pPage = pViewSh->GetDoc()->GetSdPage( (sal_uInt16)nPgNum, PK_STANDARD );
 	}
@@ -132,7 +132,7 @@ static SdPage* GetCurrentPage( sd::ViewShell* pViewSh, EditFieldInfo* pInfo, boo
 		// is no longer needed. I debugged and checked all usages of PageNumber decompositions
 		// which all use the new possibility of setting the visualized page at the SdrOutliner.
 
-		// if all else failed, geht the current page from the object that is
+		// if all else failed, get the current page from the object that is
 		// currently formatted from the document
 		if(!pPage)
 		{
@@ -154,9 +154,7 @@ static SdPage* GetCurrentPage( sd::ViewShell* pViewSh, EditFieldInfo* pInfo, boo
 }
 
 /*************************************************************************
-|*
 |* Link fuer CalcFieldValue des Outliners
-|*
 \************************************************************************/
 
 IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
@@ -164,23 +162,23 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 	if (pInfo)
 	{
 		const SvxFieldData* pField = pInfo->GetField().GetField();
-        ::sd::DrawDocShell*     pDocShell = NULL;
+		::sd::DrawDocShell* pDocShell = NULL;
 		SdDrawDocument* pDoc = 0;
 
 		SdrOutliner* pSdrOutliner = dynamic_cast< SdrOutliner* >( pInfo->GetOutliner() );
-        if( pSdrOutliner )
-        {
-            const SdrTextObj* pTextObj = pSdrOutliner->GetTextObj();
+		if( pSdrOutliner )
+		{
+			const SdrTextObj* pTextObj = pSdrOutliner->GetTextObj();
 
 			if( pTextObj )
 				pDoc = dynamic_cast< SdDrawDocument* >( pTextObj->GetModel() );
 
 			if( pDoc )
-                pDocShell = pDoc->GetDocSh();
-        }
+				pDocShell = pDoc->GetDocSh();
+		}
 
-        if( !pDocShell )
-            pDocShell = dynamic_cast< ::sd::DrawDocShell *>( SfxObjectShell::Current() );
+		if( !pDocShell )
+			pDocShell = dynamic_cast< ::sd::DrawDocShell *>( SfxObjectShell::Current() );
 
 		const SvxDateField* pDateField = 0;
 		const SvxExtTimeField* pExtTimeField = 0;
@@ -213,32 +211,32 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 			pInfo->SetRepresentation( pExtFileField->GetFormatted() );
 
 		}
-		else if( (pAuthorField = dynamic_cast< const SvxAuthorField* >( pField )) != 0  )
+		else if( (pAuthorField = dynamic_cast< const SvxAuthorField* >( pField )) != 0 )
 		{
 			if( pAuthorField->GetType() != SVXAUTHORTYPE_FIX )
 			{
-                SvtUserOptions aUserOptions;
-                SvxAuthorField aAuthorField(
-                        aUserOptions.GetFirstName(), aUserOptions.GetLastName(), aUserOptions.GetID(),
-                        pAuthorField->GetType(), pAuthorField->GetFormat() );
+				SvtUserOptions aUserOptions;
+				SvxAuthorField aAuthorField(
+						aUserOptions.GetFirstName(), aUserOptions.GetLastName(), aUserOptions.GetID(),
+						pAuthorField->GetType(), pAuthorField->GetFormat() );
 
-                *(const_cast< SvxAuthorField* >(pAuthorField)) = aAuthorField;
+				*(const_cast< SvxAuthorField* >(pAuthorField)) = aAuthorField;
 			}
 			pInfo->SetRepresentation( pAuthorField->GetFormatted() );
 
 		}
-		else if( dynamic_cast< const SvxPageField*  >(pField) )
+		else if( dynamic_cast< const SvxPageField* >(pField) )
 		{
 			String aRepresentation;
 			aRepresentation += sal_Unicode( ' ' );
 
 			::sd::ViewShell* pViewSh = pDocShell ? pDocShell->GetViewShell() : NULL;
 			if(pViewSh == NULL)
-            {
-                ::sd::ViewShellBase* pBase = PTR_CAST(::sd::ViewShellBase, SfxViewShell::Current());
-                if(pBase)
-                    pViewSh = pBase->GetMainViewShell().get();
-            }
+			{
+				::sd::ViewShellBase* pBase = PTR_CAST(::sd::ViewShellBase, SfxViewShell::Current());
+				if(pBase)
+					pViewSh = pBase->GetMainViewShell().get();
+			}
 			if( !pDoc && pViewSh )
 				pDoc = pViewSh->GetDoc();
 
@@ -267,40 +265,40 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 
 			pInfo->SetRepresentation( aRepresentation );
 		}
-		else if( dynamic_cast< const SvxPagesField*  >(pField) )
+		else if( dynamic_cast< const SvxPagesField* >(pField) )
 		{
 			String aRepresentation;
 			aRepresentation += sal_Unicode( ' ' );
 
 			::sd::ViewShell* pViewSh = pDocShell ? pDocShell->GetViewShell() : NULL;
 			if(pViewSh == NULL)
-            {
-                ::sd::ViewShellBase* pBase = PTR_CAST(::sd::ViewShellBase, SfxViewShell::Current());
-                if(pBase)
-                    pViewSh = pBase->GetMainViewShell().get();
-            }
+			{
+				::sd::ViewShellBase* pBase = PTR_CAST(::sd::ViewShellBase, SfxViewShell::Current());
+				if(pBase)
+					pViewSh = pBase->GetMainViewShell().get();
+			}
 			if( !pDoc && pViewSh )
 				pDoc = pViewSh->GetDoc();
 
 			bool bMasterView;
 			SdPage* pPage = GetCurrentPage( pViewSh, pInfo, bMasterView );
 
-            sal_uInt16 nPageCount = 0;
+			sal_uInt16 nPageCount = 0;
 
-            if( !bMasterView )
-            {
-			    if( pPage && (pPage->GetPageKind() == PK_HANDOUT) && pViewSh )
-			    {
-				    nPageCount = pViewSh->GetPrintedHandoutPageCount();
-			    }
-			    else if( pDoc )
-			    {
-                    nPageCount = (sal_uInt16)pDoc->GetSdPageCount(PK_STANDARD);
-                }
-            }
+			if( !bMasterView )
+			{
+				if( pPage && (pPage->GetPageKind() == PK_HANDOUT) && pViewSh )
+				{
+					nPageCount = pViewSh->GetPrintedHandoutPageCount();
+				}
+				else if( pDoc )
+				{
+					nPageCount = (sal_uInt16)pDoc->GetSdPageCount(PK_STANDARD);
+				}
+			}
 
-            if( nPageCount > 0 )
-            {
+			if( nPageCount > 0 )
+			{
 				aRepresentation = pDoc->CreatePageNumValue(nPageCount);
 			}
 			else
@@ -327,9 +325,9 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 
 			String aURL = pURLField->GetURL();
 
-            svtools::ColorConfig aConfig;
-            svtools::ColorConfigEntry eEntry =
-                INetURLHistory::GetOrCreate()->QueryUrl( aURL ) ? svtools::LINKSVISITED : svtools::LINKS;
+			svtools::ColorConfig aConfig;
+			svtools::ColorConfigEntry eEntry =
+				INetURLHistory::GetOrCreate()->QueryUrl( aURL ) ? svtools::LINKSVISITED : svtools::LINKS;
 			pInfo->SetTxtColor( aConfig.GetColorValue(eEntry).nColor );
 		}
 		else if ( dynamic_cast< const SdrMeasureField* >(pField))
@@ -401,7 +399,7 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 				DBG_ERROR("sd::SdModule::CalcFieldValueHdl(), unknown field type!");
 			}
 
-			if( aRepresentation.Len() == 0 )				// TODO: Edit engine doesn't handle empty fields?
+			if( aRepresentation.Len() == 0 ) // TODO: Edit engine doesn't handle empty fields?
 				aRepresentation += sal_Unicode( ' ' );
 			pInfo->SetRepresentation( aRepresentation );
 		}
@@ -413,9 +411,7 @@ IMPL_LINK(SdModule, CalcFieldValueHdl, EditFieldInfo*, pInfo)
 
 
 /*************************************************************************
-|*
 |* virt. Methoden fuer Optionendialog
-|*
 \************************************************************************/
 SfxItemSet*	 SdModule::CreateItemSet( sal_uInt16 nSlot )
 {
@@ -441,7 +437,7 @@ SfxItemSet*	 SdModule::CreateItemSet( sal_uInt16 nSlot )
 
 		pViewShell = pDocSh->GetViewShell();
 		if (pViewShell != NULL)
-            pViewShell->WriteFrameViewData();
+			pViewShell->WriteFrameViewData();
 	}
 
 	SdOptions* pOptions = GetSdOptions(eDocType);
@@ -492,13 +488,13 @@ SfxItemSet*	 SdModule::CreateItemSet( sal_uInt16 nSlot )
 	pRet->Put( SdOptionsContentsItem( ATTR_OPTIONS_CONTENTS, pOptions, pFrameView ) );
 
 	// TP_OPTIONS_MISC:
-    SdOptionsMiscItem aSdOptionsMiscItem( ATTR_OPTIONS_MISC, pOptions, pFrameView );
-    if ( pFrameView )
-    {
-        aSdOptionsMiscItem.GetOptionsMisc().SetSummationOfParagraphs( pDoc->IsSummationOfParagraphs() );
-        aSdOptionsMiscItem.GetOptionsMisc().SetPrinterIndependentLayout (
-            (sal_uInt16)pDoc->GetPrinterIndependentLayout());
-    }
+	SdOptionsMiscItem aSdOptionsMiscItem( ATTR_OPTIONS_MISC, pOptions, pFrameView );
+	if ( pFrameView )
+	{
+		aSdOptionsMiscItem.GetOptionsMisc().SetSummationOfParagraphs( pDoc->IsSummationOfParagraphs() );
+		aSdOptionsMiscItem.GetOptionsMisc().SetPrinterIndependentLayout (
+			(sal_uInt16)pDoc->GetPrinterIndependentLayout());
+	}
 	pRet->Put( aSdOptionsMiscItem );
 
 
@@ -520,7 +516,7 @@ SfxItemSet*	 SdModule::CreateItemSet( sal_uInt16 nSlot )
 
 	if(pFrameView)
 	{
-		const Fraction& rFraction =  pDoc->GetUIScale();
+		const Fraction& rFraction = pDoc->GetUIScale();
 		nX=rFraction.GetNumerator();
 		nY=rFraction.GetDenominator();
 	}
@@ -571,8 +567,8 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 			pFrameView = pDocSh->GetFrameView();
 
 		pViewShell = pDocSh->GetViewShell();
-        if (pViewShell != NULL)
-            pViewShell->WriteFrameViewData();
+		if (pViewShell != NULL)
+			pViewShell->WriteFrameViewData();
 	}
 	SdOptions* pOptions = GetSdOptions(eDocType);
 	// Raster
@@ -608,26 +604,26 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 		bNewDefTab = sal_True;
 	}
 
-    // Massstab
-    if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_SCALE_X, sal_False, &pItem ) )
-    {
-        sal_Int32 nX = ( (SfxInt32Item*) pItem )->GetValue();
-        if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_SCALE_Y, sal_False, &pItem ) )
-        {
-            sal_Int32 nY = ( (SfxInt32Item*) pItem )->GetValue();
-            pOptions->SetScale( nX, nY );
+	// Massstab
+	if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_SCALE_X, sal_False, &pItem ) )
+	{
+		sal_Int32 nX = ( (SfxInt32Item*) pItem )->GetValue();
+		if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_SCALE_Y, sal_False, &pItem ) )
+		{
+			sal_Int32 nY = ( (SfxInt32Item*) pItem )->GetValue();
+			pOptions->SetScale( nX, nY );
 
-            // #92067# Apply to document only if doc type match
-            if( pDocSh && pDoc && eDocType == pDoc->GetDocumentType() )
-            {
-                pDoc->SetUIScale( Fraction( nX, nY ) );
-                if( pViewShell )
-                    pViewShell->SetRuler( pViewShell->HasRuler() );
-            }
-        }
-    }
+			// #92067# Apply to document only if doc type match
+			if( pDocSh && pDoc && eDocType == pDoc->GetDocumentType() )
+			{
+				pDoc->SetUIScale( Fraction( nX, nY ) );
+				if( pViewShell )
+					pViewShell->SetRuler( pViewShell->HasRuler() );
+			}
+		}
+	}
 
-	// Contents (Inhalte)
+	// Contents
 	const SdOptionsContentsItem* pContentsItem = NULL;
 	if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_CONTENTS,
 							sal_False, (const SfxPoolItem**) &pContentsItem ))
@@ -635,7 +631,7 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 		pContentsItem->SetOptions( pOptions );
 	}
 
-	// Misc (Sonstiges)
+	// Misc
 	const SdOptionsMiscItem* pMiscItem = NULL;
 	if( SFX_ITEM_SET == rSet.GetItemState( ATTR_OPTIONS_MISC,
 							sal_False, (const SfxPoolItem**) &pMiscItem ))
@@ -670,8 +666,8 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 		SfxFlagItem aFlagItem( SID_PRINTER_CHANGESTODOC );
 		sal_uInt16		nFlags = 0;
 
-		nFlags =  (aPrintItem.GetOptionsPrint().IsWarningSize() ? SFX_PRINTER_CHG_SIZE : 0) |
-				(aPrintItem.GetOptionsPrint().IsWarningOrientation() ? SFX_PRINTER_CHG_ORIENTATION : 0);
+		nFlags = (aPrintItem.GetOptionsPrint().IsWarningSize() ? SFX_PRINTER_CHG_SIZE : 0) |
+				 (aPrintItem.GetOptionsPrint().IsWarningOrientation() ? SFX_PRINTER_CHG_ORIENTATION : 0);
 		aFlagItem.SetValue( nFlags );
 
 		aPrintSet.Put( aPrintItem );
@@ -689,7 +685,7 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 			pDocSh->GetPrinter(sal_True)->SetOptions( aPrintSet );
 		}
 
-		// Am Model den DefTab setzen
+		// Am Modell den DefTab setzen
 		if( bNewDefTab )
 		{
 			SdDrawDocument* pDocument = pDocSh->GetDoc();
@@ -705,7 +701,7 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 		}
 		if ( bMiscOptions )
 		{
-            pDoc->SetSummationOfParagraphs( pMiscItem->GetOptionsMisc().IsSummationOfParagraphs() );
+			pDoc->SetSummationOfParagraphs( pMiscItem->GetOptionsMisc().IsSummationOfParagraphs() );
 			sal_uInt32 nSum = pMiscItem->GetOptionsMisc().IsSummationOfParagraphs() ? EE_CNTRL_ULSPACESUMMATION : 0;
 			sal_uInt32 nCntrl;
 
@@ -726,9 +722,9 @@ void SdModule::ApplyItemSet( sal_uInt16 nSlot, const SfxItemSet& rSet )
 				pOutl->SetControlWord( nCntrl | nSum );
 			}
 
-            // Set printer independent layout mode.
+			// Set printer independent layout mode.
 			if( pDoc->GetPrinterIndependentLayout() != pMiscItem->GetOptionsMisc().GetPrinterIndependentLayout() )
-	            pDoc->SetPrinterIndependentLayout (pMiscItem->GetOptionsMisc().GetPrinterIndependentLayout());
+				pDoc->SetPrinterIndependentLayout (pMiscItem->GetOptionsMisc().GetPrinterIndependentLayout());
 		}
 	}
 

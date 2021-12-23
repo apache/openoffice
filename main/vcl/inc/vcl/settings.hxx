@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -443,8 +443,8 @@ private:
     sal_Bool                        mbPreviewUsesCheckeredBackground;
 };
 
-#define DEFAULT_WORKSPACE_GRADIENT_START_COLOR Color( 0xa3, 0xae, 0xb8 )
-#define DEFAULT_WORKSPACE_GRADIENT_END_COLOR Color( 0x73, 0x7e, 0x88 )
+#define DEFAULT_WORKSPACE_GRADIENT_START_COLOR Color( 0x86, 0x8f, 0x97 )
+#define DEFAULT_WORKSPACE_GRADIENT_END_COLOR Color( 0x86, 0x8f, 0x97 )
 
 // -----------------
 // - StyleSettings -
@@ -499,7 +499,7 @@ private:
 #define STYLE_SYMBOLS_INDUSTRIAL	((sal_uLong)3)
 #define STYLE_SYMBOLS_CLASSIC		((sal_uLong)4)
 #define STYLE_SYMBOLS_THEMES_MAX	((sal_uLong)5)
-#define STYLE_CURSOR_NOBLINKTIME    ((sal_uLong)0xFFFFFFFF)
+#define STYLE_CURSOR_NOBLINKTIME	((sal_uLong)0xFFFFFFFF)
 
 class VCL_DLLPUBLIC StyleSettings
 {
@@ -730,7 +730,7 @@ public:
                                         { return (sal_Bool) mpData->mnSkipDisabledInMenus; }
 
     void                            SetCairoFontOptions( const void *pOptions )
-                                        { CopyData(); mpData->mpFontOptions = pOptions;  }
+                                        { CopyData(); mpData->mpFontOptions = pOptions; }
     const void*                     GetCairoFontOptions() const
                                         { return mpData->mpFontOptions; }
 
@@ -909,7 +909,7 @@ public:
     void							SetPreferredSymbolsStyleName( const ::rtl::OUString &rName );
     sal_uLong							GetPreferredSymbolsStyle() const
     									{ return mpData->mnPreferredSymbolsStyle; }
-    // check whether the symbols style is supported (icons are installed)									
+    // check whether the symbols style is supported (icons are installed)
     bool							CheckSymbolStyle( sal_uLong nStyle ) const;
     sal_uLong                           GetAutoSymbolsStyle() const;
 
@@ -921,7 +921,7 @@ public:
 										{ return ImplSymbolsStyleToName( GetSymbolsStyle() ); }
     ::rtl::OUString					GetCurrentSymbolsStyleName() const
 										{ return ImplSymbolsStyleToName( GetCurrentSymbolsStyle() ); }
-                                        
+
     const Wallpaper&                GetWorkspaceGradient() const
                                         { return mpData->maWorkspaceGradient; }
     void                            SetWorkspaceGradient( const Wallpaper& rWall )
@@ -940,13 +940,13 @@ public:
     const Color& GetEdgeBlendingBottomRightColor() const { return mpData->maEdgeBlendingBottomRightColor; }
 
     // maximum line count for ListBox control; to use this, call AdaptDropDownLineCountToMaximum() at the
-    // ListBox after it's ItemCount has changed/got filled. Default is 25. If more Items exist, a scrollbar
+    // ListBox after its ItemCount has changed/got filled. Default is 25. If more Items exist, a scrollbar
     // will be used
     void SetListBoxMaximumLineCount(sal_uInt16 nCount) { CopyData(); mpData->mnListBoxMaximumLineCount = nCount; }
     sal_uInt16 GetListBoxMaximumLineCount() const { return mpData->mnListBoxMaximumLineCount; }
 
     // maximum column count for the ColorValueSet control. Default is 12 and this is optimized for the
-    // color scheme which has 12-color alogned layout for the part taken over from Symphony. Do
+    // color scheme which has 12-color aligned layout for the part taken over from Symphony. Do
     // only change this if you know what you are doing.
     void SetColorValueSetColumnCount(sal_uInt16 nCount) { CopyData(); mpData->mnColorValueSetColumnCount = nCount; }
     sal_uInt16 GetColorValueSetColumnCount() const { return mpData->mnColorValueSetColumnCount; }
@@ -958,7 +958,7 @@ public:
 
     // the logical size for preview graphics in the ListBoxes (e.g. FillColor, FillGradient, FillHatch, FillGraphic, ..). The
     // default defines a UI-Scale independent setting which will be scaled using MAP_APPFONT. This ensures that the size will
-    // fit independent from the used SystemFont (as all the ressources for UI elements). The default is Size(15, 7) which gives
+    // fit independent from the used SystemFont (as all the resources for UI elements). The default is Size(15, 7) which gives
     // the correct height and a decent width. Do not change the height, but you may adapt the width to change the preview width.
     // GetListBoxPreviewDefaultPixelSize() is for convenience so that not everyone has to do the scaling itself and contains
     // the logical size scaled by MAP_APPFONT.
@@ -970,7 +970,7 @@ public:
     void SetListBoxPreviewDefaultLineWidth(sal_uInt16 nWidth) { CopyData(); mpData->mnListBoxPreviewDefaultLineWidth = nWidth; }
     sal_uInt16 GetListBoxPreviewDefaultLineWidth() const { return mpData->mnListBoxPreviewDefaultLineWidth; }
 
-    // defines if previews which containn potentially transparent objects (e.g. the dash/line/LineStartEnd previews and others)
+    // defines if previews which contain potentially transparent objects (e.g. the dash/line/LineStartEnd previews and others)
     // use the default transparent visualization background (checkered background) as it has got standard in graphic programs nowadays
     void SetPreviewUsesCheckeredBackground(bool bNew) { CopyData(); mpData->mbPreviewUsesCheckeredBackground = bNew; }
     bool GetPreviewUsesCheckeredBackground() const { return mpData->mbPreviewUsesCheckeredBackground; }

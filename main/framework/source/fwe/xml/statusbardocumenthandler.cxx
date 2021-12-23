@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ using namespace ::com::sun::star::container;
 #define ATTRIBUTE_OFFSET			"offset"
 #define ATTRIBUTE_AUTOSIZE			"autosize"
 #define ATTRIBUTE_OWNERDRAW			"ownerdraw"
-#define ATTRIBUTE_HELPURL           "helpid"
+#define ATTRIBUTE_HELPURL			"helpid"
 
 #define ELEMENT_NS_STATUSBAR		"statusbar:statusbar"
 #define ELEMENT_NS_STATUSBARITEM	"statusbar:statusbaritem"
@@ -107,45 +107,45 @@ namespace framework
 {
 
 // Property names of a menu/menu item ItemDescriptor
-static const char ITEM_DESCRIPTOR_COMMANDURL[]  = "CommandURL";
-static const char ITEM_DESCRIPTOR_HELPURL[]     = "HelpURL";
-static const char ITEM_DESCRIPTOR_OFFSET[]      = "Offset";
-static const char ITEM_DESCRIPTOR_STYLE[]       = "Style";
-static const char ITEM_DESCRIPTOR_WIDTH[]       = "Width";
-static const char ITEM_DESCRIPTOR_TYPE[]        = "Type";
+static const char ITEM_DESCRIPTOR_COMMANDURL[]	= "CommandURL";
+static const char ITEM_DESCRIPTOR_HELPURL[]		= "HelpURL";
+static const char ITEM_DESCRIPTOR_OFFSET[]		= "Offset";
+static const char ITEM_DESCRIPTOR_STYLE[]		= "Style";
+static const char ITEM_DESCRIPTOR_WIDTH[]		= "Width";
+static const char ITEM_DESCRIPTOR_TYPE[]		= "Type";
 
 static void ExtractStatusbarItemParameters(
-    const Sequence< PropertyValue > rProp,
-    ::rtl::OUString&                       rCommandURL,
-    ::rtl::OUString&                       rHelpURL,
-    sal_Int16&                      rOffset,
-    sal_Int16&                      rStyle,
-    sal_Int16&                      rWidth )
+	const Sequence< PropertyValue >	rProp,
+	::rtl::OUString&				rCommandURL,
+	::rtl::OUString&				rHelpURL,
+	sal_Int16&						rOffset,
+	sal_Int16&						rStyle,
+	sal_Int16&						rWidth )
 {
-    for ( sal_Int32 i = 0; i < rProp.getLength(); i++ )
-    {
-        if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_COMMANDURL ))
-        {
-            rProp[i].Value >>= rCommandURL;
-            rCommandURL = rCommandURL.intern();
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_HELPURL ))
-        {
-            rProp[i].Value >>= rHelpURL;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_OFFSET ))
-        {
-            rProp[i].Value >>= rOffset;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_STYLE ))
-        {
-            rProp[i].Value >>= rStyle;
-        }
-        else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_WIDTH ))
-        {
-            rProp[i].Value >>= rWidth;
-        }
-    }
+	for ( sal_Int32 i = 0; i < rProp.getLength(); i++ )
+	{
+		if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_COMMANDURL ))
+		{
+			rProp[i].Value >>= rCommandURL;
+			rCommandURL = rCommandURL.intern();
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_HELPURL ))
+		{
+			rProp[i].Value >>= rHelpURL;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_OFFSET ))
+		{
+			rProp[i].Value >>= rOffset;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_STYLE ))
+		{
+			rProp[i].Value >>= rStyle;
+		}
+		else if ( rProp[i].Name.equalsAscii( ITEM_DESCRIPTOR_WIDTH ))
+		{
+			rProp[i].Value >>= rWidth;
+		}
+	}
 }
 
 struct StatusBarEntryProperty
@@ -165,14 +165,14 @@ StatusBarEntryProperty StatusBarEntries[OReadStatusBarDocumentHandler::SB_XML_EN
 	{ OReadStatusBarDocumentHandler::SB_NS_STATUSBAR,	ATTRIBUTE_OWNERDRAW		},
 	{ OReadStatusBarDocumentHandler::SB_NS_STATUSBAR,	ATTRIBUTE_WIDTH			},
 	{ OReadStatusBarDocumentHandler::SB_NS_STATUSBAR,	ATTRIBUTE_OFFSET		},
-    { OReadStatusBarDocumentHandler::SB_NS_STATUSBAR,   ATTRIBUTE_HELPURL       }
+	{ OReadStatusBarDocumentHandler::SB_NS_STATUSBAR,	ATTRIBUTE_HELPURL		}
 };
 
 
 OReadStatusBarDocumentHandler::OReadStatusBarDocumentHandler(
-    const Reference< XIndexContainer >& rStatusBarItems ) :
+	const Reference< XIndexContainer >& rStatusBarItems ) :
 	ThreadHelpBase( &Application::GetSolarMutex() ),
-    m_aStatusBarItems( rStatusBarItems )
+	m_aStatusBarItems( rStatusBarItems )
 {
 	::rtl::OUString aNamespaceStatusBar( RTL_CONSTASCII_USTRINGPARAM( XMLNS_STATUSBAR ));
 	::rtl::OUString aNamespaceXLink( RTL_CONSTASCII_USTRINGPARAM( XMLNS_XLINK ));
@@ -266,12 +266,12 @@ throw(	SAXException, RuntimeException )
 					throw SAXException( aErrorMessage, Reference< XInterface >(), Any() );
 				}
 
-				::rtl::OUString    aCommandURL;
-                ::rtl::OUString    aHelpURL;
-                sal_Int16   nItemBits( ItemStyle::ALIGN_CENTER|ItemStyle::DRAW_IN3D );
-                sal_Int16   nWidth( 0 );
-                sal_Int16   nOffset( STATUSBAR_OFFSET );
-				sal_Bool    bCommandURL( sal_False );
+				::rtl::OUString		aCommandURL;
+				::rtl::OUString		aHelpURL;
+				sal_Int16	nItemBits( ItemStyle::ALIGN_CENTER|ItemStyle::DRAW_IN3D );
+				sal_Int16	nWidth( 0 );
+				sal_Int16	nOffset( STATUSBAR_OFFSET );
+				sal_Bool	bCommandURL( sal_False );
 
 				m_bStatusBarItemStartFound = sal_True;
 				for ( sal_Int16 n = 0; n < xAttribs->getLength(); n++ )
@@ -292,7 +292,7 @@ throw(	SAXException, RuntimeException )
 							{
 								if ( xAttribs->getValueByIndex( n ).equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ALIGN_LEFT )) )
 								{
-                                    nItemBits |= ItemStyle::ALIGN_LEFT;
+									nItemBits |= ItemStyle::ALIGN_LEFT;
 									nItemBits &= ~ItemStyle::ALIGN_CENTER;
 								}
 								else if ( xAttribs->getValueByIndex( n ).equalsAsciiL( RTL_CONSTASCII_STRINGPARAM( ATTRIBUTE_ALIGN_CENTER )) )
@@ -380,14 +380,14 @@ throw(	SAXException, RuntimeException )
 							}
 							break;
 
-                                          case SB_ATTRIBUTE_HELPURL:
-                                          {
-                                                aHelpURL = xAttribs->getValueByIndex( n );
-                                          }
-                                          break;
+							case SB_ATTRIBUTE_HELPURL:
+							{
+								aHelpURL = xAttribs->getValueByIndex( n );
+							}
+							break;
 
-                                          default:
-                                              break;
+								default:
+									break;
 						}
 					}
 				} // for
@@ -398,30 +398,30 @@ throw(	SAXException, RuntimeException )
 					aErrorMessage += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Required attribute statusbar:url must have a value!" ));
 					throw SAXException( aErrorMessage, Reference< XInterface >(), Any() );
 				}
-                        else
-                        {
-                            Sequence< PropertyValue > aStatusbarItemProp( 6 );
-                            aStatusbarItemProp[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_COMMANDURL ));
-                            aStatusbarItemProp[1].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_HELPURL ));
-                            aStatusbarItemProp[2].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_OFFSET ));
-                            aStatusbarItemProp[3].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_STYLE ));
-                            aStatusbarItemProp[4].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_WIDTH ));
-                            aStatusbarItemProp[5].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_TYPE ));
+					else
+					{
+						Sequence< PropertyValue > aStatusbarItemProp( 6 );
+						aStatusbarItemProp[0].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_COMMANDURL ));
+						aStatusbarItemProp[1].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_HELPURL ));
+						aStatusbarItemProp[2].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_OFFSET ));
+						aStatusbarItemProp[3].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_STYLE ));
+						aStatusbarItemProp[4].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_WIDTH ));
+						aStatusbarItemProp[5].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ITEM_DESCRIPTOR_TYPE ));
 
-                            aStatusbarItemProp[0].Value <<= aCommandURL;
-                            aStatusbarItemProp[1].Value <<= aHelpURL;
-                            aStatusbarItemProp[2].Value <<= nOffset;
-                            aStatusbarItemProp[3].Value <<= nItemBits;
-                            aStatusbarItemProp[4].Value <<= nWidth;
-                            aStatusbarItemProp[5].Value = makeAny( ::com::sun::star::ui::ItemType::DEFAULT );
+						aStatusbarItemProp[0].Value <<= aCommandURL;
+						aStatusbarItemProp[1].Value <<= aHelpURL;
+						aStatusbarItemProp[2].Value <<= nOffset;
+						aStatusbarItemProp[3].Value <<= nItemBits;
+						aStatusbarItemProp[4].Value <<= nWidth;
+						aStatusbarItemProp[5].Value = makeAny( ::com::sun::star::ui::ItemType::DEFAULT );
 
-                            m_aStatusBarItems->insertByIndex( m_aStatusBarItems->getCount(), makeAny( aStatusbarItemProp ) );
-                       }
+						m_aStatusBarItems->insertByIndex( m_aStatusBarItems->getCount(), makeAny( aStatusbarItemProp ) );
+					}
 			}
 			break;
 
-                  default:
-                      break;
+				default:
+					break;
 		}
 	}
 }
@@ -462,8 +462,8 @@ throw(	SAXException, RuntimeException )
 			}
 			break;
 
-                  default:
-                      break;
+				default:
+					break;
 		}
 	}
 }
@@ -514,9 +514,9 @@ throw(	SAXException, RuntimeException )
 //_________________________________________________________________________________________________________________
 
 OWriteStatusBarDocumentHandler::OWriteStatusBarDocumentHandler(
-    const Reference< XIndexAccess >& aStatusBarItems,
-    const Reference< XDocumentHandler >& rWriteDocumentHandler ) :
-    ThreadHelpBase( &Application::GetSolarMutex() ),
+	const Reference< XIndexAccess >& aStatusBarItems,
+	const Reference< XDocumentHandler >& rWriteDocumentHandler ) :
+	ThreadHelpBase( &Application::GetSolarMutex() ),
 	m_aStatusBarItems( aStatusBarItems ),
 	m_xWriteDocumentHandler( rWriteDocumentHandler )
 {
@@ -560,33 +560,33 @@ void OWriteStatusBarDocumentHandler::WriteStatusBarDocument() throw
 	m_xWriteDocumentHandler->startElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_STATUSBAR )), pList );
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 
-	sal_Int32  nItemCount = m_aStatusBarItems->getCount();
-    Any        aAny;
+	sal_Int32	nItemCount = m_aStatusBarItems->getCount();
+	Any			aAny;
 
 	for ( sal_Int32 nItemPos = 0; nItemPos < nItemCount; nItemPos++ )
 	{
-        Sequence< PropertyValue > aProps;
-        aAny = m_aStatusBarItems->getByIndex( nItemPos );
-        if ( aAny >>= aProps )
-        {
-            ::rtl::OUString    aCommandURL;
-            ::rtl::OUString    aHelpURL;
-            sal_Int16   nStyle( ItemStyle::ALIGN_CENTER|ItemStyle::DRAW_IN3D );
-            sal_Int16   nWidth( 0 );
-            sal_Int16   nOffset( STATUSBAR_OFFSET );
+		Sequence< PropertyValue > aProps;
+		aAny = m_aStatusBarItems->getByIndex( nItemPos );
+		if ( aAny >>= aProps )
+		{
+			::rtl::OUString		aCommandURL;
+			::rtl::OUString		aHelpURL;
+			sal_Int16	nStyle( ItemStyle::ALIGN_CENTER|ItemStyle::DRAW_IN3D );
+			sal_Int16	nWidth( 0 );
+			sal_Int16	nOffset( STATUSBAR_OFFSET );
 
-            ExtractStatusbarItemParameters(
-                aProps,
-                aCommandURL,
-                aHelpURL,
-                nOffset,
-                nStyle,
-                nWidth );
+			ExtractStatusbarItemParameters(
+				aProps,
+				aCommandURL,
+				aHelpURL,
+				nOffset,
+				nStyle,
+				nWidth );
 
-            if ( aCommandURL.getLength() > 0 )
-                WriteStatusBarItem( aCommandURL, aHelpURL, nOffset, nStyle, nWidth );
-        }
-    }
+			if ( aCommandURL.getLength() > 0 )
+				WriteStatusBarItem( aCommandURL, aHelpURL, nOffset, nStyle, nWidth );
+		}
+	}
 
 	m_xWriteDocumentHandler->ignorableWhitespace( ::rtl::OUString() );
 	m_xWriteDocumentHandler->endElement( ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ELEMENT_NS_STATUSBAR )) );
@@ -599,11 +599,11 @@ void OWriteStatusBarDocumentHandler::WriteStatusBarDocument() throw
 //_________________________________________________________________________________________________________________
 
 void OWriteStatusBarDocumentHandler::WriteStatusBarItem(
-    const rtl::OUString& rCommandURL,
-    const rtl::OUString& /*rHelpURL*/,
-    sal_Int16            nOffset,
-    sal_Int16            nStyle,
-    sal_Int16            nWidth )
+	const rtl::OUString&	rCommandURL,
+	const rtl::OUString&	/*rHelpURL*/,
+	sal_Int16				nOffset,
+	sal_Int16				nStyle,
+	sal_Int16				nWidth )
 throw ( SAXException, RuntimeException )
 {
 	::comphelper::AttributeList* pList = new ::comphelper::AttributeList;
@@ -615,7 +615,7 @@ throw ( SAXException, RuntimeException )
 		m_aAttributeURL += ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( ATTRIBUTE_URL ));
 	}
 
-    // save required attribute (URL)
+	// save required attribute (URL)
 	pList->AddAttribute( m_aAttributeURL, m_aAttributeType, rCommandURL );
 
 	// alignment
@@ -691,4 +691,3 @@ throw ( SAXException, RuntimeException )
 }
 
 } // namespace framework
-

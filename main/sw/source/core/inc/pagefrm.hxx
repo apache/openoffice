@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _PAGEFRM_HXX
@@ -66,19 +67,19 @@ class SwPageFrm: public SwFtnBossFrm
 
 	sal_uInt16	nPhyPageNum;		//Physikalische Seitennummer.
 
-	sal_Bool bInvalidCntnt		:1;
-	sal_Bool bInvalidLayout		:1;
-	sal_Bool bInvalidFlyCntnt	:1;
-	sal_Bool bInvalidFlyLayout	:1;
-	sal_Bool bInvalidFlyInCnt	:1;
-	sal_Bool bFtnPage			:1;	//Diese Seite ist fuer Dokumentende-Fussnoten.
-	sal_Bool bEmptyPage			:1; //Dies ist eine explizite Leerseite
-    sal_Bool bEndNotePage       :1; //'Fussnotenseite' fuer Endnoten
-    sal_Bool bInvalidSpelling   :1; //Das Online-Spelling ist gefordert
-    sal_Bool bInvalidSmartTags :1;  //checking for smarttags is needed  // SMARTTAGS
-    sal_Bool bInvalidAutoCmplWrds :1; //Auto-Complete Wordliste aktualisieren
-    sal_Bool bInvalidWordCount  :1;
-    sal_Bool bHasGrid           :1; // Grid for Asian layout
+	sal_Bool bInvalidCntnt			:1;
+	sal_Bool bInvalidLayout			:1;
+	sal_Bool bInvalidFlyCntnt		:1;
+	sal_Bool bInvalidFlyLayout		:1;
+	sal_Bool bInvalidFlyInCnt		:1;
+	sal_Bool bFtnPage				:1;	//Diese Seite ist fuer Dokumentende-Fussnoten.
+	sal_Bool bEmptyPage				:1; //Dies ist eine explizite Leerseite
+	sal_Bool bEndNotePage			:1; //'Fussnotenseite' fuer Endnoten
+	sal_Bool bInvalidSpelling		:1; //Das Online-Spelling ist gefordert
+	sal_Bool bInvalidSmartTags		:1; //checking for smarttags is needed // SMARTTAGS
+	sal_Bool bInvalidAutoCmplWrds	:1; //Auto-Complete Wordliste aktualisieren
+	sal_Bool bInvalidWordCount		:1;
+	sal_Bool bHasGrid				:1; // Grid for Asian layout
 
     // OD 2004-05-17 #i28701# - boolean, indicating that layout of page frame
     // is in progress.
@@ -167,7 +168,7 @@ class SwPageFrm: public SwFtnBossFrm
                                      SwRect&       _orBottomShadowRect,
                                      bool bRightSidebar );
 
-    /** adds the sidebar used for notes to right and left border
+    /** adds the sidebar used for comments to right and left border
         mod 20.10.2007 for #i6193#
 
         @author mod
@@ -253,12 +254,12 @@ public:
 
 	virtual void Cut();
 	virtual void Paste( SwFrm* pParent, SwFrm* pSibling = 0 );
-    virtual void  CheckDirection( sal_Bool bVert );
-    void CheckGrid( sal_Bool bInvalidate );
-    void PaintGrid( OutputDevice* pOut, SwRect &rRect ) const;
-    sal_Bool HasGrid() const { return bHasGrid; }
+	virtual void CheckDirection( sal_Bool bVert );
+	void CheckGrid( sal_Bool bInvalidate );
+	void PaintGrid( OutputDevice* pOut, SwRect &rRect ) const;
+	sal_Bool HasGrid() const { return bHasGrid; }
 
-	//Zeilennummern usw malen
+	//Zeilennummern usw. malen
 	void RefreshExtraData( const SwRect & ) const;
 
 	//Hilfslinien malen.
@@ -283,18 +284,18 @@ public:
 	inline void	InvalidateLayout() const;
 	inline void	InvalidateCntnt() const;
 	inline void	InvalidateSpelling() const;
-    inline void InvalidateSmartTags() const;
+	inline void InvalidateSmartTags() const;
 	inline void	InvalidateAutoCompleteWords() const;
-    inline void InvalidateWordCount() const;
+	inline void InvalidateWordCount() const;
 	inline void ValidateFlyLayout() const;
 	inline void ValidateFlyCntnt() const;
 	inline void ValidateFlyInCnt() const;
 	inline void	ValidateLayout() const;
 	inline void	ValidateCntnt()	const;
 	inline void	ValidateSpelling()	const;
-    inline void ValidateSmartTags() const;        // SMARTTAGS
-    inline void ValidateAutoCompleteWords() const;
-    inline void ValidateWordCount() const;
+	inline void ValidateSmartTags() const; // SMARTTAGS
+	inline void ValidateAutoCompleteWords() const;
+	inline void ValidateWordCount() const;
 	inline sal_Bool IsInvalid() const;
 	inline sal_Bool IsInvalidFly() const;
 	sal_Bool IsInvalidFlyLayout() const { return bInvalidFlyLayout; }
@@ -303,9 +304,9 @@ public:
 	sal_Bool IsInvalidLayout() const { return bInvalidLayout; }
 	sal_Bool IsInvalidCntnt() const { return (bInvalidCntnt || bInvalidFlyInCnt); }
 	sal_Bool IsInvalidSpelling() const { return bInvalidSpelling; }
-    sal_Bool IsInvalidSmartTags() const { return bInvalidSmartTags; }   // SMARTTAGS
+	sal_Bool IsInvalidSmartTags() const { return bInvalidSmartTags; } // SMARTTAGS
 	sal_Bool IsInvalidAutoCompleteWords() const { return bInvalidAutoCmplWrds; }
-    sal_Bool IsInvalidWordCount() const { return bInvalidWordCount; }
+	sal_Bool IsInvalidWordCount() const { return bInvalidWordCount; }
 
     /** SwPageFrm::GetDrawBackgrdColor - for #102450#
 
@@ -388,7 +389,7 @@ public:
 	/**
 		mod #6i193#
 
-		asks the page on which side a margin should be shown, e.g for notes
+		asks the page on which side a margin should be shown, e.g. for comments
 		returns true for left side, false for right side
 	*/
     sw::sidebarwindows::SidebarPosition SidebarPosition() const;
@@ -466,17 +467,17 @@ inline void	SwPageFrm::InvalidateSpelling() const
 	((SwPageFrm*)this)->bInvalidSpelling = sal_True;
 }
 // SMARTTAGS
-inline void    SwPageFrm::InvalidateSmartTags() const
+inline void SwPageFrm::InvalidateSmartTags() const
 {
-   ((SwPageFrm*)this)->bInvalidSmartTags = sal_True;
+	((SwPageFrm*)this)->bInvalidSmartTags = sal_True;
 }
 inline void	SwPageFrm::InvalidateAutoCompleteWords() const
 {
-    ((SwPageFrm*)this)->bInvalidAutoCmplWrds = sal_True;
+	((SwPageFrm*)this)->bInvalidAutoCmplWrds = sal_True;
 }
 inline void SwPageFrm::InvalidateWordCount() const
 {
-    ((SwPageFrm*)this)->bInvalidWordCount = sal_True;
+	((SwPageFrm*)this)->bInvalidWordCount = sal_True;
 }
 inline void	SwPageFrm::ValidateFlyLayout() const
 {
@@ -503,9 +504,9 @@ inline void	SwPageFrm::ValidateSpelling() const
 	((SwPageFrm*)this)->bInvalidSpelling = sal_False;
 }
 // SMARTTAGS
-inline void    SwPageFrm::ValidateSmartTags() const
+inline void SwPageFrm::ValidateSmartTags() const
 {
-   ((SwPageFrm*)this)->bInvalidSmartTags = sal_False;
+	((SwPageFrm*)this)->bInvalidSmartTags = sal_False;
 }
 inline void SwPageFrm::ValidateAutoCompleteWords() const
 {
@@ -513,7 +514,7 @@ inline void SwPageFrm::ValidateAutoCompleteWords() const
 }
 inline void SwPageFrm::ValidateWordCount() const
 {
-    ((SwPageFrm*)this)->bInvalidWordCount = sal_False;
+	((SwPageFrm*)this)->bInvalidWordCount = sal_False;
 }
 
 inline sal_Bool SwPageFrm::IsInvalid() const
@@ -530,9 +531,8 @@ inline sal_Bool SwPageFrm::IsInvalidFly() const
      GetPageDesc()->GetMaster().GetFmtAttr(RES_TEXTGRID))->GetGridType() ) \
     pGrid = NULL;}
 
-#define GETGRIDWIDTH( pGrid , pDoc )  pDoc->IsSquaredPageMode() ? \
+#define GETGRIDWIDTH( pGrid , pDoc ) pDoc->IsSquaredPageMode() ? \
 	pGrid->GetBaseHeight(): pGrid->GetBaseWidth()
-
 
 
 #endif	//_PAGEFRM_HXX
