@@ -2199,7 +2199,7 @@ void SdrObjEditView::ApplyFormatPaintBrushToText( SfxItemSet& rFormatSet, SdrTex
 
 	    if(nParaCount)
 	    {
-		    for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+		    for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 		    {
 			    if( !bNoCharacterFormats )
 				    rOutliner.QuickRemoveCharAttribs( nPara, /* remove all */0 );
@@ -2209,7 +2209,7 @@ void SdrObjEditView::ApplyFormatPaintBrushToText( SfxItemSet& rFormatSet, SdrTex
 			    rOutliner.SetParaAttribs(nPara, aSet);
 		    }
 
-		    OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, (sal_uInt16)nParaCount);
+		    OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, nParaCount);
 		    rOutliner.Clear();
 
 		    rTextObj.NbcSetOutlinerParaObjectForText(pTemp,pText);

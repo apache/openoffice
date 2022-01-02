@@ -473,7 +473,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 			long nUpper = 0L;
 			for( sal_uLong nPara = nStartPara; nPara <= nEndPara; nPara++ )
 			{
-				const SfxItemSet& rItems = pOLV->GetOutliner()->GetParaAttribs( (sal_uInt16)nPara );
+				const SfxItemSet& rItems = pOLV->GetOutliner()->GetParaAttribs( nPara );
                 const SvxULSpaceItem& rItem = (const SvxULSpaceItem&) rItems.Get( EE_PARA_ULSPACE );
 				nUpper = Max( nUpper, (long)rItem.GetUpper() );
 			}

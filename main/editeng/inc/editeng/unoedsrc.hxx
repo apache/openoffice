@@ -153,7 +153,7 @@ public:
 	virtual sal_uInt16		GetTextLen( sal_uInt32 nParagraph ) const = 0;
 	virtual String		GetText( const ESelection& rSel ) const = 0;
 	virtual SfxItemSet	GetAttribs( const ESelection& rSel, sal_Bool bOnlyHardAttrib = 0 ) const = 0;
-	virtual	SfxItemSet  GetParaAttribs( sal_uInt16 nPara ) const = 0;
+	virtual	SfxItemSet  GetParaAttribs( sal_uInt32 nPara ) const = 0;
 	virtual void		SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet ) = 0;
     virtual void        RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich ) = 0;
 	virtual void		GetPortions( sal_uInt16 nPara, SvUShorts& rList ) const = 0;

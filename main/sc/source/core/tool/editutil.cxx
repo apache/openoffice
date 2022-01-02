@@ -467,8 +467,8 @@ void ScEditEngineDefaulter::RemoveParaAttribs()
 	sal_Bool bUpdateMode = GetUpdateMode();
 	if ( bUpdateMode )
 		SetUpdateMode( sal_False );
-	sal_uInt16 nParCount = GetParagraphCount();
-	for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+	sal_uInt32 nParCount = GetParagraphCount();
+	for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
 	{
 		const SfxItemSet& rParaAttribs = GetParaAttribs( nPar );
 		sal_uInt16 nWhich;

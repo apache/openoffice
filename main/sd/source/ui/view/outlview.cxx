@@ -907,7 +907,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 		{
 			SfxStyleSheet* pStyleSheet = NULL;
 			sal_uLong nPara = pOutliner->GetAbsPos( pPara );
-			sal_Int16 nDepth = pOutliner->GetDepth( (sal_uInt16) nPara );
+			sal_Int16 nDepth = pOutliner->GetDepth( nPara );
 			bool bSubTitle = pPage->GetPresObj(PRESOBJ_TEXT) != NULL;
 
 			if( pOutliner->HasParaFlag(pPara, PARAFLAG_ISPAGE) )
@@ -934,7 +934,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 
 			// before we set the style sheet we need to preserve the bullet item
 			// since all items will be deleted while setting a new style sheet
- 			SfxItemSet aOldAttrs( pOutliner->GetParaAttribs( (sal_uInt16)nPara ) );
+ 			SfxItemSet aOldAttrs( pOutliner->GetParaAttribs( nPara ) );
 
 			pOutliner->SetStyleSheet( nPara, pStyleSheet );
 
@@ -942,7 +942,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 			if ( pOutliner->GetPrevDepth() != -1 && nDepth != -1 &&
 				 aOldAttrs.GetItemState( EE_PARA_NUMBULLET ) == SFX_ITEM_ON )
 			{
-				SfxItemSet aAttrs( pOutliner->GetParaAttribs( (sal_uInt16)nPara ) );
+				SfxItemSet aAttrs( pOutliner->GetParaAttribs( nPara ) );
 				aAttrs.Put( *aOldAttrs.GetItem( EE_PARA_NUMBULLET ) );
 				pOutliner->SetParaAttribs( (sal_uInt16)nPara, aAttrs );
 			}

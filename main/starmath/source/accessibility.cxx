@@ -1061,7 +1061,7 @@ SfxItemSet SmTextForwarder::GetAttribs( const ESelection& rSel, sal_Bool bOnlyHa
 	}
 }
 
-SfxItemSet SmTextForwarder::GetParaAttribs( sal_uInt16 nPara ) const
+SfxItemSet SmTextForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	DBG_ASSERT( pEditEngine, "EditEngine missing" );

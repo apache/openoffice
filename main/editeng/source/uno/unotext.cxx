@@ -515,7 +515,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValue( const OUString& PropertyNa
 				while( nPara <= nEndPara )
 				{
 					// we have a paragraph
-					SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nPara ) );
+					SfxItemSet aSet( pForwarder->GetParaAttribs( nPara ) );
 					setPropertyValue( pMap, aValue, maSelection, aSet, aSet );
 					pForwarder->SetParaAttribs( (sal_uInt16)nPara, aSet );
 					nPara++;
@@ -650,7 +650,7 @@ uno::Any SAL_CALL SvxUnoTextRangeBase::_getPropertyValue(const OUString& Propert
 		{
 			SfxItemSet* pAttribs = NULL;
 			if( nPara != -1 )
-				pAttribs = pForwarder->GetParaAttribs( (sal_uInt16)nPara ).Clone();
+				pAttribs = pForwarder->GetParaAttribs( nPara ).Clone();
 			else
 				pAttribs = pForwarder->GetAttribs( GetSelection() ).Clone();
 
@@ -859,7 +859,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValues( const uno::Sequence< ::rt
 				{
 					if( NULL == pNewParaSet )
 					{
-						const SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nTempPara ) );
+						const SfxItemSet aSet( pForwarder->GetParaAttribs( nTempPara ) );
 						pOldParaSet = new SfxItemSet( aSet );
 						pNewParaSet = new SfxItemSet( *pOldParaSet->GetPool(), pOldParaSet->GetRanges() );
 					}
@@ -887,7 +887,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValues( const uno::Sequence< ::rt
 			{
 				while( nTempPara <= nEndPara )
 				{
-					SfxItemSet aSet( pForwarder->GetParaAttribs( (sal_uInt16)nTempPara ) );
+					SfxItemSet aSet( pForwarder->GetParaAttribs( nTempPara ) );
 					aSet.Put( *pNewParaSet );
 					pForwarder->SetParaAttribs( (sal_uInt16)nTempPara, aSet );
 					nTempPara++;
@@ -935,7 +935,7 @@ uno::Sequence< uno::Any > SAL_CALL SvxUnoTextRangeBase::_getPropertyValues( cons
 	{
 		SfxItemSet* pAttribs = NULL;
 		if( nPara != -1 )
-			pAttribs = pForwarder->GetParaAttribs( (sal_uInt16)nPara ).Clone();
+			pAttribs = pForwarder->GetParaAttribs( nPara ).Clone();
 		else
 			pAttribs = pForwarder->GetAttribs( GetSelection() ).Clone();
 
@@ -1103,7 +1103,7 @@ uno::Sequence< beans::PropertyState > SvxUnoTextRangeBase::_getPropertyStates(co
 		SfxItemSet* pSet = NULL;
 		if( nPara != -1 )
 		{
-			pSet = new SfxItemSet( pForwarder->GetParaAttribs( (sal_uInt16)nPara ) );
+			pSet = new SfxItemSet( pForwarder->GetParaAttribs( nPara ) );
 		}
 		else
 		{
@@ -2534,7 +2534,7 @@ SfxItemSet SvxDummyTextSource::GetAttribs( const ESelection&, sal_Bool ) const
 	return SfxItemSet(EditEngine::GetGlobalItemPool());
 }
 
-SfxItemSet SvxDummyTextSource::GetParaAttribs( sal_uInt16 ) const
+SfxItemSet SvxDummyTextSource::GetParaAttribs( sal_uInt32 ) const
 {
 	return GetAttribs(ESelection());
 }

@@ -552,7 +552,7 @@ SfxItemSet SvxAccessibleTextAdapter::GetAttribs( const ESelection& rSel, sal_Boo
                                         bOnlyHardAttrib );
 }
 
-SfxItemSet SvxAccessibleTextAdapter::GetParaAttribs( sal_uInt16 nPara ) const
+SfxItemSet SvxAccessibleTextAdapter::GetParaAttribs( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

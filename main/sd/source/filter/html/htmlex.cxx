@@ -353,7 +353,7 @@ String HtmlState::SetLink( const String& aLink, const String& aTarget )
 // class HtmlExport Methoden
 // *********************************************************************
 
-static String getParagraphStyle( SdrOutliner* pOutliner, sal_uInt16 nPara )
+static String getParagraphStyle( SdrOutliner* pOutliner, sal_uInt32 nPara )
 {
     SfxItemSet aParaSet( pOutliner->GetParaAttribs( nPara ) );
 

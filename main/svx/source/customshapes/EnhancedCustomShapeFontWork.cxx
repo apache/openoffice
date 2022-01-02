@@ -118,7 +118,7 @@ sal_Bool InitializeFontWorkData( const SdrObject* pCustomShape, const sal_uInt16
 			sal_Int64 nParagraphsLeft = rTextObj.GetParagraphCount();
 
 			rFWData.nMaxParagraphsPerTextArea = ( ( nParagraphsLeft - 1 ) / nTextAreaCount ) + 1;
-			sal_Int16 j = 0;
+			sal_uInt32 j = 0;
 			while( nParagraphsLeft && nTextAreaCount )
 			{
 				FWTextArea aTextArea;

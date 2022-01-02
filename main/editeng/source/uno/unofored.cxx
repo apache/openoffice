@@ -97,7 +97,7 @@ SfxItemSet SvxEditEngineForwarder::GetAttribs( const ESelection& rSel, sal_Bool 
 	}
 }
 
-SfxItemSet SvxEditEngineForwarder::GetParaAttribs( sal_uInt16 nPara ) const
+SfxItemSet SvxEditEngineForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 {
 	SfxItemSet aSet( rEditEngine.GetParaAttribs( nPara ) );
 

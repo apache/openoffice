@@ -142,7 +142,7 @@ SfxItemSet SvxOutlinerForwarder::GetAttribs( const ESelection& rSel, sal_Bool bO
 	return aSet;
 }
 
-SfxItemSet SvxOutlinerForwarder::GetParaAttribs( sal_uInt16 nPara ) const
+SfxItemSet SvxOutlinerForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 {
 	if( mpParaAttribsCache )
 	{
