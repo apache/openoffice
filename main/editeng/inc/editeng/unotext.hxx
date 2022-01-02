@@ -500,7 +500,7 @@ class SvxUnoTextContentEnumeration : public ::cppu::WeakAggImplHelper1< ::com::s
 private:
 	::com::sun::star::uno::Reference< ::com::sun::star::text::XText > mxParentText;
 	SvxEditSource*			mpEditSource;
-	sal_uInt16				mnNextParagraph;
+	sal_uInt32				mnNextParagraph;
 	const SvxUnoTextBase&	mrText;
 
 public:
@@ -525,7 +525,7 @@ class SvxUnoTextContent : public SvxUnoTextRangeBase,
 	friend class SvxUnoTextContentEnumeration;
 private:
 	::com::sun::star::uno::Reference< ::com::sun::star::text::XText > mxParentText;
-	sal_uInt16				mnParagraph;
+	sal_uInt32				mnParagraph;
 	const SvxUnoTextBase&	mrParentText;
 
 	// for xComponent
@@ -541,7 +541,7 @@ protected:
 
 public:
 	SvxUnoTextContent() throw();
-	SvxUnoTextContent( const SvxUnoTextBase& rText, sal_uInt16 nPara ) throw();
+	SvxUnoTextContent( const SvxUnoTextBase& rText, sal_uInt32 nPara ) throw();
 	SvxUnoTextContent( const SvxUnoTextContent& rContent ) throw();
 	virtual	~SvxUnoTextContent() throw();
 
@@ -600,12 +600,12 @@ private:
 	SvxEditSource*		mpEditSource;
 	::com::sun::star::uno::Reference< ::com::sun::star::text::XText > mxParentText;
 	const SvxUnoTextBase&	mrParentText;
-	sal_uInt16			mnParagraph;
+	sal_uInt32			mnParagraph;
 	SvUShorts*			mpPortions;
 	sal_uInt16			mnNextPortion;
 
 public:
-	SvxUnoTextRangeEnumeration( const SvxUnoTextBase& rText, sal_uInt16 nPara ) throw();
+	SvxUnoTextRangeEnumeration( const SvxUnoTextBase& rText, sal_uInt32 nPara ) throw();
 	virtual ~SvxUnoTextRangeEnumeration() throw();
 
 	// ::com::sun::star::container::XEnumeration
