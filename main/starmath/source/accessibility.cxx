@@ -1323,7 +1323,7 @@ sal_uInt16 SmTextForwarder::GetFieldCount( sal_uInt32 nPara ) const
 	return pEditEngine ? pEditEngine->GetFieldCount(nPara) : 0;
 }
 
-EFieldInfo SmTextForwarder::GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const
+EFieldInfo SmTextForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetFieldInfo( nPara, nField ) : EFieldInfo();

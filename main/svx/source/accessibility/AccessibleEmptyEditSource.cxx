@@ -117,7 +117,7 @@ namespace accessibility
         void			GetPortions( sal_uInt32 /*nPara*/, SvUShorts& /*rList*/ ) const {}
 
         sal_uInt16			GetItemState( const ESelection& /*rSel*/, sal_uInt16 /*nWhich*/ ) const { return 0; }
-        sal_uInt16			GetItemState( sal_uInt16 /*nPara*/, sal_uInt16 /*nWhich*/ ) const { return 0; }
+        sal_uInt16			GetItemState( sal_uInt32 /*nPara*/, sal_uInt16 /*nWhich*/ ) const { return 0; }
         
         SfxItemPool* 	GetPool() const { return NULL; }
 
@@ -143,9 +143,9 @@ namespace accessibility
         sal_Bool			IsValid() const { return sal_True; }
 
         void 			SetNotifyHdl( const Link& ) {}
-        LanguageType 	GetLanguage( sal_uInt16, sal_uInt16 ) const { return LANGUAGE_DONTKNOW; }
-        sal_uInt16			GetFieldCount( sal_uInt16 ) const { return 0; }
-        EFieldInfo		GetFieldInfo( sal_uInt16, sal_uInt16 ) const { return EFieldInfo(); }
+        LanguageType 	GetLanguage( sal_uInt32, sal_uInt16 ) const { return LANGUAGE_DONTKNOW; }
+        sal_uInt16			GetFieldCount( sal_uInt32 ) const { return 0; }
+        EFieldInfo		GetFieldInfo( sal_uInt32, sal_uInt16 ) const { return EFieldInfo(); }
         EBulletInfo     GetBulletInfo( sal_uInt16 ) const { return EBulletInfo(); }
         Rectangle		GetCharBounds( sal_uInt16, sal_uInt16 ) const { return Rectangle(); }
         Rectangle		GetParaBounds( sal_uInt16 ) const { return Rectangle(); }

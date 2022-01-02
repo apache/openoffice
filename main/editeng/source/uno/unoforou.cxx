@@ -288,7 +288,7 @@ sal_uInt16 SvxOutlinerForwarder::GetFieldCount( sal_uInt32 nPara ) const
     return rOutliner.GetEditEngine().GetFieldCount(nPara);
 }
 
-EFieldInfo SvxOutlinerForwarder::GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const
+EFieldInfo SvxOutlinerForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const
 {
     return rOutliner.GetEditEngine().GetFieldInfo( nPara, nField );
 }

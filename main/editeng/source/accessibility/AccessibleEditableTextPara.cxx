@@ -1370,7 +1370,7 @@ namespace accessibility
 		sal_Int32 nFieldType = -1;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);
@@ -1933,7 +1933,7 @@ namespace accessibility
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);
@@ -1969,7 +1969,7 @@ namespace accessibility
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)
 		{
-			ree = rCacheTF.GetFieldInfo(sal_uInt16(nParaIndex), j);
+			ree = rCacheTF.GetFieldInfo(nParaIndex, j);
 			reeBegin  = ree.aPosition.nIndex + nAllFieldLen;
 			reeEnd = reeBegin + ree.aCurrentText.Len();
 			nAllFieldLen += (ree.aCurrentText.Len() - 1);

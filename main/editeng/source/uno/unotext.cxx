@@ -2610,7 +2610,7 @@ sal_uInt16 SvxDummyTextSource::GetFieldCount( sal_uInt32 ) const
     return 0;
 }
 
-EFieldInfo SvxDummyTextSource::GetFieldInfo( sal_uInt16, sal_uInt16 ) const
+EFieldInfo SvxDummyTextSource::GetFieldInfo( sal_uInt32, sal_uInt16 ) const
 {
     return EFieldInfo();
 }

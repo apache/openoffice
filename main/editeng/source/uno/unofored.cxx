@@ -325,7 +325,7 @@ sal_uInt16 SvxEditEngineForwarder::GetFieldCount( sal_uInt32 nPara ) const
     return rEditEngine.GetFieldCount(nPara); 
 }
 
-EFieldInfo SvxEditEngineForwarder::GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const
+EFieldInfo SvxEditEngineForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const
 {
     return rEditEngine.GetFieldInfo( nPara, nField );
 }

@@ -210,7 +210,7 @@ public:
     virtual void 			SetNotifyHdl( const Link& );
     virtual LanguageType 	GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const;
     virtual sal_uInt16			GetFieldCount( sal_uInt32 nPara ) const;
-    virtual EFieldInfo		GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const;
+    virtual EFieldInfo		GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const;
     virtual EBulletInfo     GetBulletInfo( sal_uInt16 nPara ) const;
     virtual Rectangle		GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const;
     virtual Rectangle		GetParaBounds( sal_uInt16 nPara ) const;

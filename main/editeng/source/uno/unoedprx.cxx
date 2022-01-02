@@ -723,7 +723,7 @@ sal_uInt16 SvxAccessibleTextAdapter::GetFieldCount( sal_uInt32 nPara ) const
     return mrTextForwarder->GetFieldCount( nPara );
 }
 
-EFieldInfo SvxAccessibleTextAdapter::GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const
+EFieldInfo SvxAccessibleTextAdapter::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

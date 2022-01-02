@@ -211,7 +211,7 @@ public:
         @param nField[0 .. m-1]
         Index of field to query information of
      */
-    virtual EFieldInfo		GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const = 0;
+    virtual EFieldInfo		GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const = 0;
 
     /** Query information regarding bullets for given paragraph on the underlying edit engine
 
