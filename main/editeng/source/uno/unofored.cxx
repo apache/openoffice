@@ -167,7 +167,7 @@ XubString SvxEditEngineForwarder::CalcFieldValue( const SvxFieldItem& rField, sa
 	return rEditEngine.CalcFieldValue( rField, nPara, nPos, rpTxtColor, rpFldColor );
 }
 
-void SvxEditEngineForwarder::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos )
+void SvxEditEngineForwarder::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos )
 {
     rEditEngine.FieldClicked( rField, nPara, nPos );
 }

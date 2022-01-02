@@ -751,7 +751,7 @@ String __EXPORT ScFieldEditEngine::CalcFieldValue( const SvxFieldItem& rField,
 	return aRet;
 }
 
-void __EXPORT ScFieldEditEngine::FieldClicked( const SvxFieldItem& rField, sal_uInt16, sal_uInt16 )
+void __EXPORT ScFieldEditEngine::FieldClicked( const SvxFieldItem& rField, sal_uInt32, sal_uInt16 )
 {
 	const SvxFieldData* pFld = rField.GetField();
 

@@ -138,7 +138,7 @@ namespace accessibility
         {
             return  XubString();
         }
-	    void            FieldClicked( const SvxFieldItem&, sal_uInt16, xub_StrLen ) {;}
+	    void            FieldClicked( const SvxFieldItem&, sal_uInt32, xub_StrLen ) {;}
 
         sal_Bool			IsValid() const { return sal_True; }
 

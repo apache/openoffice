@@ -212,7 +212,7 @@ public:
 
 	void	SetExecuteURL(sal_Bool bSet)	{ bExecuteURL = bSet; }
 
-	virtual void	FieldClicked( const SvxFieldItem& rField, sal_uInt16, sal_uInt16 );
+	virtual void	FieldClicked( const SvxFieldItem& rField, sal_uInt32, sal_uInt16 );
 	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor );
 };
 

@@ -237,7 +237,7 @@ XubString SvxOutlinerForwarder::CalcFieldValue( const SvxFieldItem& rField, sal_
 	return rOutliner.CalcFieldValue( rField, nPara, nPos, rpTxtColor, rpFldColor );
 }
 
-void SvxOutlinerForwarder::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos )
+void SvxOutlinerForwarder::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos )
 {
     rOutliner.FieldClicked( rField, nPara, nPos );
 }

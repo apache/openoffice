@@ -167,7 +167,7 @@ public:
 	virtual void		QuickInsertLineBreak( const ESelection& rSel ) = 0;
 
 	virtual XubString    CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor ) = 0;
-	virtual void 	     FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos ) = 0;
+	virtual void 	     FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos ) = 0;
 
 	virtual SfxItemPool* GetPool() const = 0;
 

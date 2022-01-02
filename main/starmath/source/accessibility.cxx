@@ -1154,7 +1154,7 @@ XubString SmTextForwarder::CalcFieldValue( const SvxFieldItem& rField, sal_uInt3
 	return aTxt;
 }
 
-void SmTextForwarder::FieldClicked(const SvxFieldItem&, sal_uInt16, sal_uInt16)
+void SmTextForwarder::FieldClicked(const SvxFieldItem&, sal_uInt32, sal_uInt16)
 {
 }
 

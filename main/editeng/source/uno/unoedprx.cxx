@@ -668,7 +668,7 @@ XubString SvxAccessibleTextAdapter::CalcFieldValue( const SvxFieldItem& rField, 
     return mrTextForwarder->CalcFieldValue( rField, nPara, nPos, rpTxtColor, rpFldColor );
 }
 
-void SvxAccessibleTextAdapter::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos )
+void SvxAccessibleTextAdapter::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 
