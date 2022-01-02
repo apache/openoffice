@@ -1103,7 +1103,7 @@ sal_Int16 SvxAccessibleTextAdapter::GetDepth( sal_uInt32 nPara ) const
     return mrTextForwarder->GetDepth( nPara );
 }
 
-sal_Bool SvxAccessibleTextAdapter::SetDepth( sal_uInt16 nPara, sal_Int16 nNewDepth )
+sal_Bool SvxAccessibleTextAdapter::SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

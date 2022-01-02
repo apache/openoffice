@@ -2685,7 +2685,7 @@ sal_Int16 SvxDummyTextSource::GetDepth( sal_uInt32 ) const
     return -1;
 }
 
-sal_Bool SvxDummyTextSource::SetDepth( sal_uInt16, sal_Int16 nNewDepth )
+sal_Bool SvxDummyTextSource::SetDepth( sal_uInt32, sal_Int16 nNewDepth )
 {
     return nNewDepth == 0 ? sal_True : sal_False;
 }

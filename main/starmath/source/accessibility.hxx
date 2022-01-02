@@ -255,7 +255,7 @@ public:
     virtual sal_Bool		QuickFormatDoc( sal_Bool bFull=sal_False );
 
     virtual sal_Int16       GetDepth( sal_uInt32 nPara ) const;
-    virtual sal_Bool        SetDepth( sal_uInt16 nPara, sal_Int16 nNewDepth );
+    virtual sal_Bool        SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth );
     
     virtual const SfxItemSet*   GetEmptyItemSetPtr();
     // implementation functions for XParagraphAppend and XTextPortionAppend

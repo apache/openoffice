@@ -2032,10 +2032,10 @@ sal_uLong OutlineViewShell::Read(SvStream& rInput, const String& rBaseURL, sal_u
 	SfxStyleSheet* pTitleSheet = pPage->GetStyleSheetForPresObj( PRESOBJ_TITLE );
 	SfxStyleSheet* pOutlSheet = pPage->GetStyleSheetForPresObj( PRESOBJ_OUTLINE );
 
-	sal_uInt16 nParaCount = (sal_uInt16)pOutl->GetParagraphCount();
+	sal_uInt32 nParaCount = pOutl->GetParagraphCount();
 	if ( nParaCount > 0 )
 	{
-		for ( sal_uInt16 nPara = 0; nPara < nParaCount; nPara++ )
+		for ( sal_uInt32 nPara = 0; nPara < nParaCount; nPara++ )
 		{
 			pOlView->UpdateParagraph( nPara );
 

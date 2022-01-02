@@ -475,7 +475,7 @@ sal_Int16 SvxOutlinerForwarder::GetDepth( sal_uInt32 nPara ) const
     return nLevel;
 }
 
-sal_Bool SvxOutlinerForwarder::SetDepth( sal_uInt16 nPara, sal_Int16 nNewDepth )
+sal_Bool SvxOutlinerForwarder::SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth )
 {
     DBG_ASSERT( nPara < GetParagraphCount(), "SvxOutlinerForwarder::SetDepth: Invalid paragraph index");
 

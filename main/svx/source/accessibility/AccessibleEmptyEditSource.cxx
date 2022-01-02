@@ -171,7 +171,7 @@ namespace accessibility
         sal_Bool		InsertText( const String&, const ESelection& ) { return sal_False; }
         sal_Bool		QuickFormatDoc( sal_Bool ) { return sal_True; }
         sal_Int16		GetDepth( sal_uInt32 ) const { return -1; }
-        sal_Bool		SetDepth( sal_uInt16, sal_Int16 ) { return sal_True; }
+        sal_Bool		SetDepth( sal_uInt32, sal_Int16 ) { return sal_True; }
 
         Rectangle		GetVisArea() const { return Rectangle(); }
         Point			LogicToPixel( const Point& rPoint, const MapMode& /*rMapMode*/ ) const { return rPoint; }

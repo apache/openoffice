@@ -508,7 +508,7 @@ sal_Int16 SvxEditEngineForwarder::GetDepth( sal_uInt32 ) const
     return -1;
 }
 
-sal_Bool SvxEditEngineForwarder::SetDepth( sal_uInt16, sal_Int16 nNewDepth )
+sal_Bool SvxEditEngineForwarder::SetDepth( sal_uInt32, sal_Int16 nNewDepth )
 {
     // EditEngine does not support outline depth
     return nNewDepth == -1 ? sal_True : sal_False;

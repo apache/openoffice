@@ -1471,7 +1471,7 @@ sal_Int16 SmTextForwarder::GetDepth( sal_uInt32 /*nPara*/ ) const
     return -1;
 }
 
-sal_Bool SmTextForwarder::SetDepth( sal_uInt16 /*nPara*/, sal_Int16 nNewDepth )
+sal_Bool SmTextForwarder::SetDepth( sal_uInt32 /*nPara*/, sal_Int16 nNewDepth )
 {
     // math has no outliner...
     return -1 == nNewDepth;  // is it the value from 'GetDepth' ?
