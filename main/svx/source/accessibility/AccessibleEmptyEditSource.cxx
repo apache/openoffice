@@ -102,7 +102,7 @@ namespace accessibility
 
         // SvxTextForwarder
         sal_uInt32			GetParagraphCount() const { return 1; }
-        sal_uInt16			GetTextLen( sal_uInt16 /*nParagraph*/ ) const { return 0; }
+        sal_uInt16			GetTextLen( sal_uInt32 /*nParagraph*/ ) const { return 0; }
         String			GetText( const ESelection& /*rSel*/ ) const { return String(); }
         SfxItemSet		GetAttribs( const ESelection& /*rSel*/, sal_Bool /*bOnlyHardAttrib*/ = 0 ) const
         {

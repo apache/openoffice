@@ -237,7 +237,7 @@ namespace accessibility
         DBG_ASSERT(nParaIndex >= 0 && nParaIndex <= USHRT_MAX,
                    "AccessibleEditableTextPara::implGetLineBoundary: paragraph index value overflow");
 
-        const sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+        const sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
         CheckPosition(nIndex);
 
@@ -511,7 +511,7 @@ namespace accessibility
     {
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
 
-        return GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        return GetTextForwarder().GetTextLen( GetParagraphIndex() );
     }
 
     sal_Bool AccessibleEditableTextPara::IsVisible() const
@@ -2048,7 +2048,7 @@ namespace accessibility
             // implGetAttributeRunBoundary() method there
             case AccessibleTextType::ATTRIBUTE_RUN:
             {
-                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( GetParagraphIndex() );
 
                 if( nIndex == nTextLen )
                 {
@@ -2085,7 +2085,7 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2: Not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2: Not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
                 CheckPosition(nIndex);
 		if (nIndex != 0  && nIndex == getCharacterCount())
 			--nIndex;
@@ -2163,7 +2163,7 @@ namespace accessibility
             // implGetAttributeRunBoundary() method there
             case AccessibleTextType::ATTRIBUTE_RUN:
             {
-                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+                const sal_Int32 nTextLen = GetTextForwarder().GetTextLen( GetParagraphIndex() );
                 sal_uInt16 nStartIndex, nEndIndex;
 
                 if( nIndex == nTextLen )
@@ -2198,7 +2198,7 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
                 CheckPosition(nIndex);
 
@@ -2351,7 +2351,7 @@ namespace accessibility
             {
                 SvxTextForwarder&	rCacheTF = GetTextForwarder();
                 sal_Int32			nParaIndex = GetParagraphIndex();
-                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( static_cast< sal_uInt16 >( nParaIndex ) );
+                // MT IA2 not needed? sal_Int32 nTextLen = rCacheTF.GetTextLen( nParaIndex );
 
                 CheckPosition(nIndex);
 
@@ -2701,7 +2701,7 @@ namespace accessibility
             // AccessibleEmptyEditSource relies on this behaviour
             GetEditViewForwarder( sal_True );
             SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();	// MUST be after GetEditViewForwarder(), see method docs
-            sal_uInt16 nPara = static_cast< sal_uInt16 >( GetParagraphIndex() );
+            sal_uInt32 nPara = GetParagraphIndex();
 
             DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                        "AccessibleEditableTextPara::setAttributes: index value overflow");

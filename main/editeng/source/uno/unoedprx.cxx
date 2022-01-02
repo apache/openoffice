@@ -458,7 +458,7 @@ sal_uInt32 SvxAccessibleTextAdapter::GetParagraphCount() const
     return mrTextForwarder->GetParagraphCount();
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetTextLen( sal_uInt16 nParagraph ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetTextLen( sal_uInt32 nParagraph ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

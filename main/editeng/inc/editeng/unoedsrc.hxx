@@ -150,7 +150,7 @@ public:
 	virtual				~SvxTextForwarder();
 	
 	virtual sal_uInt32		GetParagraphCount() const = 0;
-	virtual sal_uInt16		GetTextLen( sal_uInt16 nParagraph ) const = 0;
+	virtual sal_uInt16		GetTextLen( sal_uInt32 nParagraph ) const = 0;
 	virtual String		GetText( const ESelection& rSel ) const = 0;
 	virtual SfxItemSet	GetAttribs( const ESelection& rSel, sal_Bool bOnlyHardAttrib = 0 ) const = 0;
 	virtual	SfxItemSet  GetParaAttribs( sal_uInt16 nPara ) const = 0;

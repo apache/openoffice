@@ -1015,7 +1015,7 @@ sal_uInt32 SmTextForwarder::GetParagraphCount() const
 	return pEditEngine ? pEditEngine->GetParagraphCount() : 0;
 }
 
-sal_uInt16 SmTextForwarder::GetTextLen( sal_uInt16 nParagraph ) const
+sal_uInt16 SmTextForwarder::GetTextLen( sal_uInt32 nParagraph ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetTextLen( nParagraph ) : 0;
@@ -1167,7 +1167,7 @@ sal_uInt16 GetSvxEditEngineItemState( EditEngine& rEditEngine, const ESelection&
 	SfxItemState eState = SFX_ITEM_DEFAULT;
 
 	// check all paragraphs inside the selection
-	for( sal_uInt16 nPara = rSel.nStartPara; nPara <= rSel.nEndPara; nPara++ )
+	for( sal_uInt32 nPara = rSel.nStartPara; nPara <= rSel.nEndPara; nPara++ )
 	{
 		SfxItemState eParaState = SFX_ITEM_DEFAULT;
 

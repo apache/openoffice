@@ -64,7 +64,7 @@ sal_uInt32 SvxOutlinerForwarder::GetParagraphCount() const
 	return rOutliner.GetParagraphCount();
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetTextLen( sal_uInt16 nParagraph ) const
+sal_uInt16 SvxOutlinerForwarder::GetTextLen( sal_uInt32 nParagraph ) const
 {
 	return rOutliner.GetEditEngine().GetTextLen( nParagraph );
 }

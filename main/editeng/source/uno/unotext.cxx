@@ -1407,7 +1407,7 @@ sal_Bool SvxUnoTextRangeBase::GoLeft(sal_Int16 nCount, sal_Bool Expand) throw()
 
 	//	#75098# use end position, as in Writer (start is anchor, end is cursor)
 	sal_uInt16 nNewPos = maSelection.nEndPos;
-	sal_uInt16 nNewPar = maSelection.nEndPara;
+	sal_uInt32 nNewPar = maSelection.nEndPara;
 
 	sal_Bool bOk = sal_True;
 	SvxTextForwarder* pForwarder = NULL;
@@ -1448,7 +1448,7 @@ sal_Bool SvxUnoTextRangeBase::GoRight(sal_Int16 nCount, sal_Bool Expand)  throw(
 
 
 		sal_uInt16 nNewPos = maSelection.nEndPos + nCount;			//! Ueberlauf ???
-		sal_uInt16 nNewPar = maSelection.nEndPara;
+		sal_uInt32 nNewPar = maSelection.nEndPara;
 
 		sal_Bool bOk = sal_True;
 		sal_uInt32 nParCount = pForwarder->GetParagraphCount();
@@ -2516,7 +2516,7 @@ sal_uInt32 SvxDummyTextSource::GetParagraphCount() const
 	return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetTextLen( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetTextLen( sal_uInt32 ) const
 {
 	return 0;
 }
