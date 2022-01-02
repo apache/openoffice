@@ -559,7 +559,7 @@ void SvxOutlinerForwarder::AppendParagraph()
     rEditEngine.InsertParagraph( rEditEngine.GetParagraphCount(), String::EmptyString() );
 }
 
-xub_StrLen SvxOutlinerForwarder::AppendTextPortion( sal_uInt16 nPara, const String &rText, const SfxItemSet & /*rSet*/ )
+xub_StrLen SvxOutlinerForwarder::AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet & /*rSet*/ )
 {
     xub_StrLen nLen = 0;
 

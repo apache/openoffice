@@ -1182,7 +1182,7 @@ void SvxAccessibleTextAdapter::AppendParagraph()
     DBG_ERROR( "not implemented" );
 }
 
-xub_StrLen SvxAccessibleTextAdapter::AppendTextPortion( sal_uInt16, const String &, const SfxItemSet & )
+xub_StrLen SvxAccessibleTextAdapter::AppendTextPortion( sal_uInt32, const String &, const SfxItemSet & )
 {
     DBG_ERROR( "not implemented" );
     return 0;

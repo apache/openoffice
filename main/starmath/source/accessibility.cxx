@@ -1525,7 +1525,7 @@ void SmTextForwarder::AppendParagraph()
     }
 }
 
-xub_StrLen SmTextForwarder::AppendTextPortion( sal_uInt16 nPara, const String &rText, const SfxItemSet &rSet )
+xub_StrLen SmTextForwarder::AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet )
 {
     xub_StrLen nRes = 0;
     EditEngine *pEditEngine = rEditAcc.GetEditEngine();

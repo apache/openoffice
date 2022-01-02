@@ -129,7 +129,7 @@ namespace accessibility
         const SfxItemSet * GetEmptyItemSetPtr() { return 0; }
 
         void        AppendParagraph() {}
-        xub_StrLen  AppendTextPortion( sal_uInt16 /*nPara*/, const String & /*rText*/, const SfxItemSet & /*rSet*/ ) { return 0; }
+        xub_StrLen  AppendTextPortion( sal_uInt32 /*nPara*/, const String & /*rText*/, const SfxItemSet & /*rSet*/ ) { return 0; }
 
         //XTextCopy
         void        CopyText(const SvxTextForwarder& ){} 

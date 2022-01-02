@@ -175,7 +175,7 @@ public:
  
     // implementation functions for XParagraphAppend and XTextPortionAppend
     virtual void        AppendParagraph() = 0;
-    virtual xub_StrLen  AppendTextPortion( sal_uInt16 nPara, const String &rText, const SfxItemSet &rSet ) = 0;
+    virtual xub_StrLen  AppendTextPortion( sal_uInt32 nPara, const String &rText, const SfxItemSet &rSet ) = 0;
     
     // XTextCopy
     virtual void        CopyText(const SvxTextForwarder& rSource) = 0; 

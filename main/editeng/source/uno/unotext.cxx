@@ -2709,7 +2709,7 @@ void SvxDummyTextSource::AppendParagraph()
 {
 }
 
-xub_StrLen SvxDummyTextSource::AppendTextPortion( sal_uInt16, const String &, const SfxItemSet & )
+xub_StrLen SvxDummyTextSource::AppendTextPortion( sal_uInt32, const String &, const SfxItemSet & )
 {
     return 0;
 }
