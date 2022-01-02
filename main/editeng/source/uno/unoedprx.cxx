@@ -592,7 +592,7 @@ sal_uInt16 SvxAccessibleTextAdapter::GetItemState( const ESelection& rSel, sal_u
                                           nWhich );
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

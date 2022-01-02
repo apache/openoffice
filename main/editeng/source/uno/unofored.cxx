@@ -309,7 +309,7 @@ sal_uInt16 SvxEditEngineForwarder::GetItemState( const ESelection& rSel, sal_uIn
 	return GetSvxEditEngineItemState( rEditEngine, rSel, nWhich );
 }
 
-sal_uInt16 SvxEditEngineForwarder::GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+sal_uInt16 SvxEditEngineForwarder::GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
 	const SfxItemSet& rSet = rEditEngine.GetParaAttribs( nPara );
 	return rSet.GetItemState( nWhich );

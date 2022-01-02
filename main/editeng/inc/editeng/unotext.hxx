@@ -193,7 +193,7 @@ public:
     virtual void            GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const;
     
 	sal_uInt16				GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const;
-	sal_uInt16				GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const;
+	sal_uInt16				GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const;
 
 	virtual SfxItemPool* 	GetPool() const;
 

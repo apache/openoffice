@@ -256,7 +256,7 @@ sal_uInt16 SvxOutlinerForwarder::GetItemState( const ESelection& rSel, sal_uInt1
 	return GetSvxEditEngineItemState( (EditEngine&)rOutliner.GetEditEngine(), rSel, nWhich );
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+sal_uInt16 SvxOutlinerForwarder::GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
 	const SfxItemSet& rSet = rOutliner.GetParaAttribs( nPara );
 	return rSet.GetItemState( nWhich );

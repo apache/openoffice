@@ -49,7 +49,7 @@ public:
 	virtual void		GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const;
 	
 	virtual sal_uInt16		GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const;
-	virtual sal_uInt16		GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const;
+	virtual sal_uInt16		GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const;
 
 	virtual void		QuickInsertText( const String& rText, const ESelection& rSel );
 	virtual void		QuickInsertField( const SvxFieldItem& rFld, const ESelection& rSel );

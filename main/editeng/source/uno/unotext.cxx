@@ -1003,7 +1003,7 @@ beans::PropertyState SAL_CALL SvxUnoTextRangeBase::_getPropertyState(const SfxIt
 				    while( *pWhichId )
 				    {
 					    if(nPara != -1)
-						    eTempItemState = pForwarder->GetItemState( (sal_uInt16)nPara, *pWhichId );
+						    eTempItemState = pForwarder->GetItemState( nPara, *pWhichId );
 					    else
 						    eTempItemState = pForwarder->GetItemState( GetSelection(), *pWhichId );
 
@@ -1052,7 +1052,7 @@ beans::PropertyState SAL_CALL SvxUnoTextRangeBase::_getPropertyState(const SfxIt
 		    if( nWID != 0 )
 		    {
 			    if( nPara != -1 )
-				    eItemState = pForwarder->GetItemState( (sal_uInt16)nPara, nWID );
+				    eItemState = pForwarder->GetItemState( nPara, nWID );
 			    else
 				    eItemState = pForwarder->GetItemState( GetSelection(), nWID );
 		    }
@@ -2556,7 +2556,7 @@ sal_uInt16 SvxDummyTextSource::GetItemState( const ESelection&, sal_uInt16 ) con
 	return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetItemState( sal_uInt16, sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetItemState( sal_uInt32, sal_uInt16 ) const
 {
 	return 0;
 }
