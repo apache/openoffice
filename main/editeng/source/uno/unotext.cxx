@@ -2605,7 +2605,7 @@ LanguageType SvxDummyTextSource::GetLanguage( sal_uInt32, sal_uInt16 ) const
     return LANGUAGE_DONTKNOW;
 }
 
-sal_uInt16 SvxDummyTextSource::GetFieldCount( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetFieldCount( sal_uInt32 ) const
 {
     return 0;
 }

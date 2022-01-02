@@ -716,7 +716,7 @@ LanguageType SvxAccessibleTextAdapter::GetLanguage( sal_uInt32 nPara, sal_uInt16
     return mrTextForwarder->GetLanguage( nPara, aIndex.GetEEIndex() );
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetFieldCount( sal_uInt16 nPara ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetFieldCount( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

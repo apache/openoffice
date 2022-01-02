@@ -283,7 +283,7 @@ LanguageType SvxOutlinerForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 nIn
     return rOutliner.GetLanguage(nPara, nIndex);
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetFieldCount( sal_uInt16 nPara ) const
+sal_uInt16 SvxOutlinerForwarder::GetFieldCount( sal_uInt32 nPara ) const
 {
     return rOutliner.GetEditEngine().GetFieldCount(nPara);
 }

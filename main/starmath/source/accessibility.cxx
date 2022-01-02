@@ -1317,7 +1317,7 @@ LanguageType SmTextForwarder::GetLanguage( sal_uInt16 nPara, sal_uInt16 nIndex )
 	return pEditEngine ? pEditEngine->GetLanguage(nPara, nIndex) : LANGUAGE_NONE;
 }
 
-sal_uInt16 SmTextForwarder::GetFieldCount( sal_uInt16 nPara ) const
+sal_uInt16 SmTextForwarder::GetFieldCount( sal_uInt32 nPara ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetFieldCount(nPara) : 0;

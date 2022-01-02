@@ -222,7 +222,7 @@ public:
 	virtual void		GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const;
 
 	virtual sal_uInt16		GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const;
-	virtual sal_uInt16		GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const;
+	virtual sal_uInt16		GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const;
 
 	virtual void		QuickInsertText( const String& rText, const ESelection& rSel );
 	virtual void		QuickInsertField( const SvxFieldItem& rFld, const ESelection& rSel );
@@ -235,8 +235,8 @@ public:
 	virtual void 		FieldClicked(const SvxFieldItem&, sal_uInt32, sal_uInt16);
 	virtual sal_Bool		 IsValid() const;
 
-    virtual LanguageType 	GetLanguage( sal_uInt16, sal_uInt16 ) const;
-    virtual sal_uInt16			GetFieldCount( sal_uInt16 nPara ) const;
+    virtual LanguageType 	GetLanguage( sal_uInt32, sal_uInt16 ) const;
+    virtual sal_uInt16			GetFieldCount( sal_uInt32 nPara ) const;
     virtual EFieldInfo		GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const;
     virtual EBulletInfo     GetBulletInfo( sal_uInt16 nPara ) const;
     virtual Rectangle		GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const;

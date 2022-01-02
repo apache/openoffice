@@ -320,7 +320,7 @@ LanguageType SvxEditEngineForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 n
     return rEditEngine.GetLanguage(nPara, nIndex);
 }
 
-sal_uInt16 SvxEditEngineForwarder::GetFieldCount( sal_uInt16 nPara ) const
+sal_uInt16 SvxEditEngineForwarder::GetFieldCount( sal_uInt32 nPara ) const
 {
     return rEditEngine.GetFieldCount(nPara); 
 }

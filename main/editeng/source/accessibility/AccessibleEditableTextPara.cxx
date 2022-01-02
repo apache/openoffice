@@ -1364,7 +1364,7 @@ namespace accessibility
 		//For field object info
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin, reeEnd;
 		sal_Int32 nFieldType = -1;
@@ -1928,7 +1928,7 @@ namespace accessibility
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)
@@ -1964,7 +1964,7 @@ namespace accessibility
 		sal_Int32 nParaIndex = GetParagraphIndex();
 		SvxAccessibleTextAdapter& rCacheTF = GetTextForwarder();
 		sal_Int32 nAllFieldLen = 0;
-		sal_Int32 nField = rCacheTF.GetFieldCount(sal_uInt16(nParaIndex)), nFoundFieldIndex = -1;
+		sal_Int32 nField = rCacheTF.GetFieldCount(nParaIndex), nFoundFieldIndex = -1;
 		EFieldInfo ree;
 		sal_Int32  reeBegin=0, reeEnd=0;
 		for(sal_uInt16 j = 0; j < nField; j++)

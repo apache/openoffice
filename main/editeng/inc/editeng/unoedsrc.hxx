@@ -201,7 +201,7 @@ public:
         @param nPara[0 .. n-1]
         Index of paragraph to query field number in
      */
-    virtual sal_uInt16			GetFieldCount( sal_uInt16 nPara ) const = 0;
+    virtual sal_uInt16			GetFieldCount( sal_uInt32 nPara ) const = 0;
 
     /** Query information for given field number in the underlying edit engine
 
