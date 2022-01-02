@@ -535,7 +535,7 @@ sal_Bool SvxOutlinerForwarder::IsParaIsNumberingRestart( sal_uInt32 nPara )
     }
 }
 
-void SvxOutlinerForwarder::SetParaIsNumberingRestart(  sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart )
+void SvxOutlinerForwarder::SetParaIsNumberingRestart(  sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart )
 {
     if( nPara < GetParagraphCount() )
     {
@@ -602,7 +602,7 @@ sal_Bool SvxTextForwarder::IsParaIsNumberingRestart( sal_uInt32  )
     return sal_False;
 }
 
-void SvxTextForwarder::SetParaIsNumberingRestart( sal_uInt16, sal_Bool )
+void SvxTextForwarder::SetParaIsNumberingRestart( sal_uInt32, sal_Bool )
 {
 }
 

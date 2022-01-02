@@ -107,7 +107,7 @@ public:
     virtual void            SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue );
 
     virtual sal_Bool        IsParaIsNumberingRestart( sal_uInt32 nPara );   
-    virtual void            SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart );
+    virtual void            SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart );
 
 	/* this method flushes internal caches for this forwarder */
 	void				flushCache();

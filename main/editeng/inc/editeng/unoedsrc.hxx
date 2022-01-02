@@ -446,7 +446,7 @@ public:
     virtual void SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue );
 
     virtual sal_Bool IsParaIsNumberingRestart( sal_uInt32 nPara );
-    virtual void SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart );
+    virtual void SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart );
 };
 
 /** Encapsulates the document view for the purpose of unified
