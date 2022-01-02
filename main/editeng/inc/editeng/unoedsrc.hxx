@@ -373,7 +373,7 @@ public:
         Index of line in paragraph to query line length of
 
      */
-    virtual void            GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 nParagraph, sal_uInt16 nLine ) const = 0;
+    virtual void            GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nParagraph, sal_uInt16 nLine ) const = 0;
     
     /** Query the line number for a index in the paragraphs text
 

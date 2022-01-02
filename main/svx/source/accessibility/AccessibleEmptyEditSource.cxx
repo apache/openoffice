@@ -156,7 +156,7 @@ namespace accessibility
 	sal_Bool 		GetAttributeRun( sal_uInt16&, sal_uInt16&, sal_uInt32, sal_uInt16, sal_Bool) const { return sal_False; }
         sal_uInt16			GetLineCount( sal_uInt32 nPara ) const { return nPara == 0 ? 1 : 0; }
         sal_uInt16			GetLineLen( sal_uInt16, sal_uInt16 ) const { return 0; }
-        void            GetLineBoundaries( /*out*/sal_uInt16 & rStart, /*out*/sal_uInt16 & rEnd, sal_uInt16 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const  { rStart = rEnd = 0; }
+        void            GetLineBoundaries( /*out*/sal_uInt16 & rStart, /*out*/sal_uInt16 & rEnd, sal_uInt32 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const  { rStart = rEnd = 0; }
         sal_uInt16          GetLineNumberAtIndex( sal_uInt16 /*nPara*/, sal_uInt16 /*nIndex*/ ) const   { return 0; }
 
         // the following two methods would, strictly speaking, require

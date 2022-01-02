@@ -2665,7 +2665,7 @@ sal_uInt16 SvxDummyTextSource::GetLineLen( sal_uInt16, sal_uInt16 ) const
     return 0;
 }
 
-void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const
+void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 /*nParagraph*/, sal_uInt16 /*nLine*/ ) const
 {
     rStart = rEnd = 0;
 }

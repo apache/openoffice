@@ -468,7 +468,7 @@ sal_uInt16 SvxEditEngineForwarder::GetLineLen( sal_uInt16 nPara, sal_uInt16 nLin
     return rEditEngine.GetLineLen(nPara, nLine);
 }
     
-void SvxEditEngineForwarder::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 nPara, sal_uInt16 nLine ) const
+void SvxEditEngineForwarder::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     rEditEngine.GetLineBoundaries(rStart, rEnd, nPara, nLine);
 }

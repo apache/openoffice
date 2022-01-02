@@ -1053,10 +1053,10 @@ sal_uInt16 SvxAccessibleTextAdapter::GetLineLen( sal_uInt16 nPara, sal_uInt16 nL
         return static_cast< sal_uInt16 >(aEndIndex.GetIndex());
 }
 
-void SvxAccessibleTextAdapter::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 nParagraph, sal_uInt16 nLine ) const
+void SvxAccessibleTextAdapter::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nParagraph, sal_uInt16 nLine ) const
 {
     mrTextForwarder->GetLineBoundaries( rStart, rEnd, nParagraph, nLine );
-}    
+}
 
 sal_uInt16 SvxAccessibleTextAdapter::GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const
 {
