@@ -98,8 +98,8 @@ sal_Unicode cNewLine(0x0a);
                    nEndIndex >= 0 && nEndIndex <= USHRT_MAX ,
                    "AccessibleStaticTextBase_Impl::MakeSelection: index value overflow");
 
-        return ESelection( static_cast< sal_uInt16 >(nStartPara), static_cast< sal_uInt16 >(nStartIndex),
-                           static_cast< sal_uInt16 >(nEndPara), static_cast< sal_uInt16 >(nEndIndex) );
+        return ESelection( nStartPara, static_cast< sal_uInt16 >(nStartIndex),
+                           nEndPara, static_cast< sal_uInt16 >(nEndIndex) );
     }
 
 	//------------------------------------------------------------------------
@@ -394,7 +394,7 @@ sal_Unicode cNewLine(0x0a);
                            nFlatIndex - nCurrIndex + nCurrCount >= 0 && nFlatIndex - nCurrIndex + nCurrCount <= USHRT_MAX ,
                            "AccessibleStaticTextBase_Impl::Index2Internal: index value overflow");
 
-                return EPosition( static_cast< sal_uInt16 >(nCurrPara), static_cast< sal_uInt16 >(nFlatIndex - nCurrIndex + nCurrCount) );
+                return EPosition( nCurrPara, static_cast< sal_uInt16 >(nFlatIndex - nCurrIndex + nCurrCount) );
             }
         }
 
@@ -406,7 +406,7 @@ sal_Unicode cNewLine(0x0a);
                        nFlatIndex - nCurrIndex + nCurrCount >= 0 && nFlatIndex - nCurrIndex + nCurrCount <= USHRT_MAX ,
                        "AccessibleStaticTextBase_Impl::Index2Internal: index value overflow");
 
-            return EPosition( static_cast< sal_uInt16 >(nCurrPara-1), static_cast< sal_uInt16 >(nFlatIndex - nCurrIndex + nCurrCount) );
+            return EPosition( nCurrPara-1, static_cast< sal_uInt16 >(nFlatIndex - nCurrIndex + nCurrCount) );
         }
 
         // not found? Out of bounds
@@ -775,7 +775,7 @@ sal_Unicode cNewLine(0x0a);
 
             // #112814# Use correct index offset
             if ( ( nIndex = rPara.getIndexAtPoint( aPoint ) ) != -1 )
-                return mpImpl->Internal2Index( EPosition(sal::static_int_cast<sal_uInt16>(i),
+                return mpImpl->Internal2Index( EPosition(i,
                                                          sal::static_int_cast<sal_uInt16>(nIndex)) );
         }
 

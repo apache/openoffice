@@ -401,7 +401,7 @@ namespace accessibility
                    GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                    "AccessibleEditableTextPara::MakeSelection: index value overflow");
 
-		sal_uInt16 nParaIndex = static_cast< sal_uInt16 >( GetParagraphIndex() );
+		sal_uInt32 nParaIndex = GetParagraphIndex();
         return ESelection( nParaIndex, static_cast< sal_uInt16 >( nStartEEIndex ),
                            nParaIndex, static_cast< sal_uInt16 >( nEndEEIndex ) );
     }
@@ -453,7 +453,7 @@ namespace accessibility
         DBG_CHKTHIS( AccessibleEditableTextPara, NULL );
 
         ESelection aSelection;
-        sal_uInt16 nPara = static_cast< sal_uInt16 > ( GetParagraphIndex() );
+        sal_uInt32 nPara = GetParagraphIndex();
         if( !GetEditViewForwarder().GetSelection( aSelection ) )
             return sal_False;
 
