@@ -431,7 +431,7 @@ void SvxOutlinerForwarder::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/
     return rOutliner.GetEditEngine().GetLineBoundaries( rStart, rEnd, nPara, nLine );
 }
     
-sal_uInt16 SvxOutlinerForwarder::GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+sal_uInt16 SvxOutlinerForwarder::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return rOutliner.GetEditEngine().GetLineNumberAtIndex( nPara, nIndex );
 }    

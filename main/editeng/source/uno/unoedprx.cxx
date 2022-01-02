@@ -1058,7 +1058,7 @@ void SvxAccessibleTextAdapter::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*o
     mrTextForwarder->GetLineBoundaries( rStart, rEnd, nParagraph, nLine );
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return mrTextForwarder->GetLineNumberAtIndex( nPara, nIndex );
 }    

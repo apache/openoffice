@@ -80,7 +80,7 @@ public:
     virtual sal_uInt16		GetLineCount( sal_uInt32 nPara ) const;
     virtual sal_uInt16		GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const;
     virtual void            GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt32 nParagraph, sal_uInt16 nLine ) const;
-    virtual sal_uInt16          GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const;
+    virtual sal_uInt16          GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const;
     
     virtual sal_Bool        Delete( const ESelection& );
     virtual sal_Bool		InsertText( const String&, const ESelection& );

@@ -2670,7 +2670,7 @@ void SvxDummyTextSource::GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sa
     rStart = rEnd = 0;
 }
     
-sal_uInt16 SvxDummyTextSource::GetLineNumberAtIndex( sal_uInt16 /*nPara*/, sal_uInt16 /*nIndex*/ ) const
+sal_uInt16 SvxDummyTextSource::GetLineNumberAtIndex( sal_uInt32 /*nPara*/, sal_uInt16 /*nIndex*/ ) const
 {
     return 0;
 }    

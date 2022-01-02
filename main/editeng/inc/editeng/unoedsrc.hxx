@@ -386,7 +386,7 @@ public:
         @returns [0 .. k-1]
         The line number of the chara in the paragraph
      */
-    virtual sal_uInt16          GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const = 0;
+    virtual sal_uInt16          GetLineNumberAtIndex( sal_uInt32 nPara, sal_uInt16 nIndex ) const = 0;
 
     /** Delete given text range and reformat text
 
