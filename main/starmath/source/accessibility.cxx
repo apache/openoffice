@@ -1329,7 +1329,7 @@ EFieldInfo SmTextForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) 
 	return pEditEngine ? pEditEngine->GetFieldInfo( nPara, nField ) : EFieldInfo();
 }
 
-EBulletInfo SmTextForwarder::GetBulletInfo( sal_uInt16 /*nPara*/ ) const
+EBulletInfo SmTextForwarder::GetBulletInfo( sal_uInt32 /*nPara*/ ) const
 {
     return EBulletInfo();
 }

@@ -2615,7 +2615,7 @@ EFieldInfo SvxDummyTextSource::GetFieldInfo( sal_uInt32, sal_uInt16 ) const
     return EFieldInfo();
 }
 
-EBulletInfo SvxDummyTextSource::GetBulletInfo( sal_uInt16 ) const
+EBulletInfo SvxDummyTextSource::GetBulletInfo( sal_uInt32 ) const
 {
     return EBulletInfo();
 }

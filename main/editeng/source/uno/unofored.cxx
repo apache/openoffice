@@ -330,7 +330,7 @@ EFieldInfo SvxEditEngineForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nF
     return rEditEngine.GetFieldInfo( nPara, nField );
 }
 
-EBulletInfo SvxEditEngineForwarder::GetBulletInfo( sal_uInt16 ) const
+EBulletInfo SvxEditEngineForwarder::GetBulletInfo( sal_uInt32 ) const
 {
     return EBulletInfo();
 }

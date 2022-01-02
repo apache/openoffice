@@ -505,8 +505,8 @@ String SvxAccessibleTextAdapter::GetText( const ESelection& rSel ) const
         sStr = sStr.Copy(0, static_cast< sal_uInt16 > (sStr.Len() - (aEndIndex.GetFieldLen() - aEndIndex.GetFieldOffset())) );
     }
 
-    EBulletInfo aBulletInfo1 = GetBulletInfo( static_cast< sal_uInt16 >(aStartIndex.GetParagraph()) );
-    EBulletInfo aBulletInfo2 = GetBulletInfo( static_cast< sal_uInt16 >(aEndIndex.GetParagraph()) );
+    EBulletInfo aBulletInfo1 = GetBulletInfo( aStartIndex.GetParagraph() );
+    EBulletInfo aBulletInfo2 = GetBulletInfo( aEndIndex.GetParagraph() );
 
     if( aEndIndex.InBullet() )
     {
@@ -730,7 +730,7 @@ EFieldInfo SvxAccessibleTextAdapter::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 
     return mrTextForwarder->GetFieldInfo( nPara, nField );
 }
 
-EBulletInfo SvxAccessibleTextAdapter::GetBulletInfo( sal_uInt16 nPara ) const
+EBulletInfo SvxAccessibleTextAdapter::GetBulletInfo( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

@@ -293,7 +293,7 @@ EFieldInfo SvxOutlinerForwarder::GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nFie
     return rOutliner.GetEditEngine().GetFieldInfo( nPara, nField );
 }
 
-EBulletInfo SvxOutlinerForwarder::GetBulletInfo( sal_uInt16 nPara ) const
+EBulletInfo SvxOutlinerForwarder::GetBulletInfo( sal_uInt32 nPara ) const
 {
     return rOutliner.GetBulletInfo( nPara );
 }

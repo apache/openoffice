@@ -218,7 +218,7 @@ public:
         @param nPara[0 .. n-1]
         Index of paragraph to query bullet info on
      */
-    virtual EBulletInfo     GetBulletInfo( sal_uInt16 nPara ) const = 0;
+    virtual EBulletInfo     GetBulletInfo( sal_uInt32 nPara ) const = 0;
      virtual String       GetNumStr(sal_uInt16) const { return XubString();};
     //IAccessible2 migration fix
     virtual void					SetUpdateModeForAcc( sal_Bool ) {};

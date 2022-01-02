@@ -146,7 +146,7 @@ namespace accessibility
         LanguageType 	GetLanguage( sal_uInt32, sal_uInt16 ) const { return LANGUAGE_DONTKNOW; }
         sal_uInt16			GetFieldCount( sal_uInt32 ) const { return 0; }
         EFieldInfo		GetFieldInfo( sal_uInt32, sal_uInt16 ) const { return EFieldInfo(); }
-        EBulletInfo     GetBulletInfo( sal_uInt16 ) const { return EBulletInfo(); }
+        EBulletInfo     GetBulletInfo( sal_uInt32 ) const { return EBulletInfo(); }
         Rectangle		GetCharBounds( sal_uInt16, sal_uInt16 ) const { return Rectangle(); }
         Rectangle		GetParaBounds( sal_uInt16 ) const { return Rectangle(); }
         MapMode		 	GetMapMode() const { return MapMode(); }

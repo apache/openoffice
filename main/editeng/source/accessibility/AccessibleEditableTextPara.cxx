@@ -1115,7 +1115,7 @@ namespace accessibility
             SvxTextForwarder& rCacheTF = GetTextForwarder();
             Point aLogPoint( GetViewForwarder().PixelToLogic( aPoint, rCacheTF.GetMapMode() ) );
 
-            EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 > (GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
                 aBulletInfo.bVisible &&
@@ -1273,7 +1273,7 @@ namespace accessibility
             GetParagraphIndex() == aSelection.nEndPara )
         {
             // caret is always nEndPara,nEndPos
-			EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+			EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
 			if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
 				aBulletInfo.bVisible && 
 				aBulletInfo.nType != SVX_NUM_BITMAP )
@@ -1448,7 +1448,7 @@ namespace accessibility
 	
 		//Skip the bullet range to ingnore the bullet text 
 		SvxTextForwarder& rCacheTF = GetTextForwarder();
-		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+		EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 		if (aBulletInfo.bVisible)
 			nIndex += aBulletInfo.aText.Len();
 		if (nIndex != 0 && nIndex >= getCharacterCount())
@@ -2003,7 +2003,7 @@ namespace accessibility
 			if( bExtend )
 			{				
 				//If there is a bullet before the field, should add the bullet length into the segment.
-				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(sal_uInt16(nParaIndex));
+				EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo(nParaIndex);
 				int nBulletLen = aBulletInfo.aText.Len();
 				if (nBulletLen > 0)
 				{
@@ -2061,7 +2061,7 @@ namespace accessibility
 					//For the bullet paragraph, the bullet string is ingnored for IAText::attributes() function.
 					SvxTextForwarder&	rCacheTF = GetTextForwarder();
 					// MT IA2: Not used? sal_Int32 nBulletLen = 0;
-					EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+					EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
 					if (aBulletInfo.bVisible)
 						nIndex += aBulletInfo.aText.Len();
 					if (nIndex != 0  && nIndex >= getCharacterCount())
@@ -2099,7 +2099,7 @@ namespace accessibility
                 {
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
@@ -2214,7 +2214,7 @@ namespace accessibility
                     nLastIndex = nCurIndex;
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
@@ -2366,7 +2366,7 @@ namespace accessibility
                 {
                     if (nLine == 0)
                     {
-                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( static_cast< sal_uInt16 >(nParaIndex) );
+                        EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( nParaIndex );
                         if (aBulletInfo.bVisible)
                         {
                             //in bullet or numbering;
@@ -2465,7 +2465,7 @@ namespace accessibility
 
             //Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             // save current selection
@@ -2504,7 +2504,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
@@ -2541,7 +2541,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             //if( !rCacheTF.IsEditable( MakeSelection(nIndex) ) )
@@ -2580,7 +2580,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
@@ -2622,7 +2622,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
 
@@ -2665,7 +2665,7 @@ namespace accessibility
 
             // Because bullet may occupy one or more characters, the TextAdapter will include bullet to calculate the selection. Add offset to handle bullet
             sal_Int32 nBulletLen = 0;
-            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+            EBulletInfo aBulletInfo = GetTextForwarder().GetBulletInfo( GetParagraphIndex() );
             if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND && aBulletInfo.bVisible )
                         nBulletLen = aBulletInfo.aText.Len();
             ESelection aSelection = MakeSelection (nStartIndex + nBulletLen, nEndIndex + nBulletLen);
