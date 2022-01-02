@@ -104,7 +104,7 @@ public:
     virtual sal_Int16		GetDepth( sal_uInt32 nPara ) const;
     virtual sal_Bool		SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth );
     virtual sal_Int16       GetNumberingStartValue( sal_uInt32 nPara );
-    virtual void            SetNumberingStartValue( sal_uInt16 nPara, sal_Int16 nNumberingStartValue );
+    virtual void            SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue );
 
     virtual sal_Bool        IsParaIsNumberingRestart( sal_uInt16 nPara );   
     virtual void            SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart );

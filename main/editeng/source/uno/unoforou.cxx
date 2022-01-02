@@ -510,7 +510,7 @@ sal_Int16 SvxOutlinerForwarder::GetNumberingStartValue( sal_uInt32 nPara )
     }
 }
 
-void SvxOutlinerForwarder::SetNumberingStartValue(  sal_uInt16 nPara, sal_Int16 nNumberingStartValue )
+void SvxOutlinerForwarder::SetNumberingStartValue(  sal_uInt32 nPara, sal_Int16 nNumberingStartValue )
 {
     if( nPara < GetParagraphCount() )
     {
@@ -593,7 +593,7 @@ sal_Int16 SvxTextForwarder::GetNumberingStartValue( sal_uInt32 )
     return -1;
 }
 
-void SvxTextForwarder::SetNumberingStartValue( sal_uInt16, sal_Int16 )
+void SvxTextForwarder::SetNumberingStartValue( sal_uInt32, sal_Int16 )
 {
 }
 
