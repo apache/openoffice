@@ -1358,7 +1358,7 @@ Rectangle SmTextForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) 
 	return aRect;
 }
 
-Rectangle SmTextForwarder::GetParaBounds( sal_uInt16 nPara ) const
+Rectangle SmTextForwarder::GetParaBounds( sal_uInt32 nPara ) const
 {
 	Rectangle aRect(0,0,0,0);
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();

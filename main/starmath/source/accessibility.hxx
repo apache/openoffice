@@ -240,7 +240,7 @@ public:
     virtual EFieldInfo		GetFieldInfo( sal_uInt32 nPara, sal_uInt16 nField ) const;
     virtual EBulletInfo     GetBulletInfo( sal_uInt32 nPara ) const;
     virtual Rectangle		GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const;
-    virtual Rectangle		GetParaBounds( sal_uInt16 nPara ) const;
+    virtual Rectangle		GetParaBounds( sal_uInt32 nPara ) const;
     virtual MapMode			GetMapMode() const;
 	virtual OutputDevice*	GetRefDevice() const;
     virtual sal_Bool		GetIndexAtPoint( const Point&, sal_uInt16& nPara, sal_uInt16& nIndex ) const;

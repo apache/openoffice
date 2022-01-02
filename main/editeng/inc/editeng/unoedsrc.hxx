@@ -255,7 +255,7 @@ public:
         left corner of text. The coordinates returned here are to be
         interpreted in the map mode given by GetMapMode().
      */
-    virtual Rectangle		GetParaBounds( sal_uInt16 nPara ) const = 0;
+    virtual Rectangle		GetParaBounds( sal_uInt32 nPara ) const = 0;
 
     /** Query the map mode of the underlying EditEngine/Outliner
 

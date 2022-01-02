@@ -268,7 +268,7 @@ namespace accessibility
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
         EBulletInfo aBulletInfo = rCacheTF.GetBulletInfo( GetParagraphIndex() );
-        Rectangle aParentRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        Rectangle aParentRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
 
         if( aBulletInfo.nParagraph != EE_PARA_NOT_FOUND &&
             aBulletInfo.bVisible &&

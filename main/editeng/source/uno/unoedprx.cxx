@@ -804,7 +804,7 @@ Rectangle SvxAccessibleTextAdapter::GetCharBounds( sal_uInt32 nPara, sal_uInt16 
     return aRect;
 }
 
-Rectangle SvxAccessibleTextAdapter::GetParaBounds( sal_uInt16 nPara ) const
+Rectangle SvxAccessibleTextAdapter::GetParaBounds( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

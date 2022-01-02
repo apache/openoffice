@@ -2625,7 +2625,7 @@ Rectangle SvxDummyTextSource::GetCharBounds( sal_uInt32, sal_uInt16 ) const
     return Rectangle();
 }
 
-Rectangle SvxDummyTextSource::GetParaBounds( sal_uInt16 ) const
+Rectangle SvxDummyTextSource::GetParaBounds( sal_uInt32 ) const
 {
     return Rectangle();
 }

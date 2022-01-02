@@ -148,7 +148,7 @@ namespace accessibility
         EFieldInfo		GetFieldInfo( sal_uInt32, sal_uInt16 ) const { return EFieldInfo(); }
         EBulletInfo     GetBulletInfo( sal_uInt32 ) const { return EBulletInfo(); }
         Rectangle		GetCharBounds( sal_uInt32, sal_uInt16 ) const { return Rectangle(); }
-        Rectangle		GetParaBounds( sal_uInt16 ) const { return Rectangle(); }
+        Rectangle		GetParaBounds( sal_uInt32 ) const { return Rectangle(); }
         MapMode		 	GetMapMode() const { return MapMode(); }
         OutputDevice*	GetRefDevice() const { return NULL; }
         sal_Bool		GetIndexAtPoint( const Point&, sal_uInt16&, sal_uInt16& ) const { return sal_False; }

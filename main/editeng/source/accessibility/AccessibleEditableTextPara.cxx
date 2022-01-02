@@ -1142,7 +1142,7 @@ namespace accessibility
                    "AccessibleEditableTextPara::getBounds: index value overflow");
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
-        Rectangle aRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        Rectangle aRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
 
         // convert to screen coordinates
         Rectangle aScreenRect = AccessibleEditableTextPara::LogicToPixel( aRect,
@@ -1633,7 +1633,7 @@ namespace accessibility
         Point aLogPoint( GetViewForwarder().PixelToLogic( aPoint, rCacheTF.GetMapMode() ) );
 
         // re-offset to parent (paragraph)
-        Rectangle aParaRect = rCacheTF.GetParaBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ) );
+        Rectangle aParaRect = rCacheTF.GetParaBounds( GetParagraphIndex() );
         aLogPoint.Move( aParaRect.Left(), aParaRect.Top() );
 
         if( rCacheTF.GetIndexAtPoint( aLogPoint, nPara, nIndex ) &&

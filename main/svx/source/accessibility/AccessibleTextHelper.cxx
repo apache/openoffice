@@ -1763,7 +1763,7 @@ namespace accessibility
             DBG_ASSERT(nChild >= 0 && nChild <= USHRT_MAX,
                        "AccessibleTextHelper_Impl::getAccessibleAt: index value overflow");
 
-            Rectangle aParaBounds( rCacheTF.GetParaBounds( static_cast< sal_uInt16 > (nChild) ) );
+            Rectangle aParaBounds( rCacheTF.GetParaBounds( nChild ) );
 
             if( aParaBounds.IsInside( aLogPoint ) )
                 return getAccessibleChild( nChild - mnFirstVisibleChild + GetStartIndex() );

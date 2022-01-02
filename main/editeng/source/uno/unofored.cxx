@@ -383,7 +383,7 @@ Rectangle SvxEditEngineForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nI
     }
 }
 
-Rectangle SvxEditEngineForwarder::GetParaBounds( sal_uInt16 nPara ) const
+Rectangle SvxEditEngineForwarder::GetParaBounds( sal_uInt32 nPara ) const
 {
     const Point aPnt = rEditEngine.GetDocPosTopLeft( nPara );
     sal_uLong nWidth; 

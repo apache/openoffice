@@ -346,7 +346,7 @@ Rectangle SvxOutlinerForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nInd
     }
 }
 
-Rectangle SvxOutlinerForwarder::GetParaBounds( sal_uInt16 nPara ) const
+Rectangle SvxOutlinerForwarder::GetParaBounds( sal_uInt32 nPara ) const
 {
     Point aPnt = rOutliner.GetDocPosTopLeft( nPara );
     Size aSize = rOutliner.CalcTextSize();
