@@ -99,8 +99,8 @@ public:
     virtual void        CopyText(const SvxTextForwarder& rSource); 
     
     void                    SetForwarder( SvxTextForwarder& );
-    sal_Bool			  	HaveImageBullet( sal_uInt16 nPara ) const;
-    sal_Bool			  	HaveTextBullet( sal_uInt16 nPara ) const;
+    sal_Bool			  	HaveImageBullet( sal_uInt32 nPara ) const;
+    sal_Bool			  	HaveTextBullet( sal_uInt32 nPara ) const;
 
     /** Query whether all text in given selection is editable
 

@@ -662,7 +662,7 @@ namespace accessibility
         DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
                    "AccessibleEditableTextPara::HaveChildren: paragraph index value overflow");
 
-        return GetTextForwarder().HaveImageBullet( static_cast< sal_uInt16 >(GetParagraphIndex()) );
+        return GetTextForwarder().HaveImageBullet( GetParagraphIndex() );
     }
 
     sal_Bool AccessibleEditableTextPara::IsActive() const SAL_THROW((uno::RuntimeException))

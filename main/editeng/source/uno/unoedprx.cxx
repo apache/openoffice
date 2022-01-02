@@ -1115,7 +1115,7 @@ void SvxAccessibleTextAdapter::SetForwarder( SvxTextForwarder& rForwarder )
     mrTextForwarder = &rForwarder;
 }
 
-sal_Bool SvxAccessibleTextAdapter::HaveImageBullet( sal_uInt16 nPara ) const
+sal_Bool SvxAccessibleTextAdapter::HaveImageBullet( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 
@@ -1133,7 +1133,7 @@ sal_Bool SvxAccessibleTextAdapter::HaveImageBullet( sal_uInt16 nPara ) const
     }
 }
 
-sal_Bool SvxAccessibleTextAdapter::HaveTextBullet( sal_uInt16 nPara ) const
+sal_Bool SvxAccessibleTextAdapter::HaveTextBullet( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 
