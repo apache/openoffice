@@ -968,7 +968,7 @@ IMPL_LINK( EditMainWindow, TBSelect, ToolBox *, p )
 		case TB_PARATTR1:
 		{
 			pEditEngine->SetUpdateMode( FALSE );
-			USHORT nPara = 0;
+			sal_uInt32 nPara = 0;
 			SfxItemSet aSet( pEditEngine->GetEmptyItemSet() );
 			aSet.Put( SvxFontItem( FAMILY_DECORATIVE, String( RTL_CONSTASCII_USTRINGPARAM( "StarBats" ) ), String(),PITCH_DONTKNOW, RTL_TEXTENCODING_MS_1252, EE_CHAR_FONTINFO ) );
 			aSet.Put( SvxColorItem( Color(COL_MAGENTA), EE_CHAR_COLOR ) );

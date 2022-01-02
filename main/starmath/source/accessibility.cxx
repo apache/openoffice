@@ -1082,7 +1082,7 @@ SfxItemSet SmTextForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 	return aSet;
 }
 
-void SmTextForwarder::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void SmTextForwarder::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	if (pEditEngine)

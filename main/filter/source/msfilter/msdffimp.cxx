@@ -3687,7 +3687,7 @@ void SvxMSDffManager::ReadObjText( const String& rText, SdrObject* pObj ) const
 		rOutliner.SetUpdateMode( sal_False );
 		rOutliner.SetVertical( pText->IsVerticalWriting() );
 
-		sal_uInt16 nParaIndex = 0;
+		sal_uInt32 nParaIndex = 0;
 		sal_uInt32 nParaSize;
 		const sal_Unicode* pCurrent, *pBuf = rText.GetBuffer();
 		const sal_Unicode* pEnd = rText.GetBuffer() + rText.Len();

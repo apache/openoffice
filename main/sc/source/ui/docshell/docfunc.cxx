@@ -868,10 +868,10 @@ void ScDocFunc::NotifyInputHandler( const ScAddress& rPos )
 
 		struct ScMyRememberItem
 		{
-			sal_uInt16		nIndex;
+			sal_uInt32		nIndex;
 			SfxItemSet	aItemSet;
 
-			ScMyRememberItem(const SfxItemSet& rItemSet, sal_uInt16 nTempIndex) :
+			ScMyRememberItem(const SfxItemSet& rItemSet, sal_uInt32 nTempIndex) :
                 nIndex(nTempIndex), aItemSet(rItemSet) {}
 		};
 

@@ -115,7 +115,7 @@ SfxItemSet SvxEditEngineForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 	return aSet;
 }
 
-void SvxEditEngineForwarder::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void SvxEditEngineForwarder::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	rEditEngine.SetParaAttribs( nPara, rSet );
 }

@@ -559,7 +559,7 @@ SfxItemSet SvxAccessibleTextAdapter::GetParaAttribs( sal_uInt32 nPara ) const
     return mrTextForwarder->GetParaAttribs( nPara );
 }
 
-void SvxAccessibleTextAdapter::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void SvxAccessibleTextAdapter::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

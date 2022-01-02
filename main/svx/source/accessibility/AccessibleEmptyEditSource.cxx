@@ -112,7 +112,7 @@ namespace accessibility
             return SfxItemSet(SdrObject::GetGlobalDrawObjectItemPool());
         }
         SfxItemSet		GetParaAttribs( sal_uInt32 /*nPara*/ ) const { return GetAttribs(ESelection()); }
-        void			SetParaAttribs( sal_uInt16 /*nPara*/, const SfxItemSet& /*rSet*/ ) {}
+        void			SetParaAttribs( sal_uInt32 /*nPara*/, const SfxItemSet& /*rSet*/ ) {}
         void            RemoveAttribs( const ESelection& /*rSelection*/, sal_Bool /*bRemoveParaAttribs*/, sal_uInt16 /*nWhich*/ ){}
         void			GetPortions( sal_uInt16 /*nPara*/, SvUShorts& /*rList*/ ) const {}
 

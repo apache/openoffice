@@ -944,7 +944,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 			{
 				SfxItemSet aAttrs( pOutliner->GetParaAttribs( nPara ) );
 				aAttrs.Put( *aOldAttrs.GetItem( EE_PARA_NUMBULLET ) );
-				pOutliner->SetParaAttribs( (sal_uInt16)nPara, aAttrs );
+				pOutliner->SetParaAttribs( nPara, aAttrs );
 			}
 		}
 	}
@@ -1327,7 +1327,7 @@ void OutlineView::FillOutliner()
 			mpOutliner->SetDepth(pPara, -1);
 
 			// Keine harten Attribute vom vorherigen Absatz uebernehmen
-			mpOutliner->SetParaAttribs( (sal_uInt16)mpOutliner->GetAbsPos(pPara),
+			mpOutliner->SetParaAttribs( mpOutliner->GetAbsPos(pPara),
 									   mpOutliner->GetEmptyItemSet() );
 
 			mpOutliner->SetStyleSheet( mpOutliner->GetAbsPos( pPara ), pPage->GetStyleSheetForPresObj( PRESOBJ_TITLE ) );

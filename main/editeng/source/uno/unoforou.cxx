@@ -172,7 +172,7 @@ SfxItemSet SvxOutlinerForwarder::GetParaAttribs( sal_uInt32 nPara ) const
 	return *mpParaAttribsCache;
 }
 
-void SvxOutlinerForwarder::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void SvxOutlinerForwarder::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	flushCache();
 

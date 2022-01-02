@@ -131,7 +131,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 			SfxItemSet aEmptyEEAttr(mpDoc->GetPool(), EE_ITEMS_START, EE_ITEMS_END);
 			sal_uLong nParaCount1 = pOutl->GetParagraphCount();
 
-			for (sal_uInt16 nPara = 0; nPara < nParaCount1; nPara++)
+			for (sal_uInt32 nPara = 0; nPara < nParaCount1; nPara++)
 			{
 				pOutl->QuickRemoveCharAttribs(nPara);
 				pOutl->SetParaAttribs(nPara, aEmptyEEAttr);

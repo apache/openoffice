@@ -517,7 +517,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValue( const OUString& PropertyNa
 					// we have a paragraph
 					SfxItemSet aSet( pForwarder->GetParaAttribs( nPara ) );
 					setPropertyValue( pMap, aValue, maSelection, aSet, aSet );
-					pForwarder->SetParaAttribs( (sal_uInt16)nPara, aSet );
+					pForwarder->SetParaAttribs( nPara, aSet );
 					nPara++;
 				}
 			}
@@ -889,7 +889,7 @@ void SAL_CALL SvxUnoTextRangeBase::_setPropertyValues( const uno::Sequence< ::rt
 				{
 					SfxItemSet aSet( pForwarder->GetParaAttribs( nTempPara ) );
 					aSet.Put( *pNewParaSet );
-					pForwarder->SetParaAttribs( (sal_uInt16)nTempPara, aSet );
+					pForwarder->SetParaAttribs( nTempPara, aSet );
 					nTempPara++;
 				}
 				bNeedsUpdate = sal_True;
@@ -1277,7 +1277,7 @@ void SvxUnoTextRangeBase::_setPropertyToDefault(SvxTextForwarder* pForwarder, co
 		}
 
 		if(nPara != -1)
-			pForwarder->SetParaAttribs( (sal_uInt16)nPara, aSet );
+			pForwarder->SetParaAttribs( nPara, aSet );
 		else
 			pForwarder->QuickSetAttribs( aSet, GetSelection() );
 
@@ -2539,7 +2539,7 @@ SfxItemSet SvxDummyTextSource::GetParaAttribs( sal_uInt32 ) const
 	return GetAttribs(ESelection());
 }
 
-void SvxDummyTextSource::SetParaAttribs( sal_uInt16, const SfxItemSet& )
+void SvxDummyTextSource::SetParaAttribs( sal_uInt32, const SfxItemSet& )
 {
 }
 

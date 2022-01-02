@@ -334,8 +334,8 @@ void ScEditEngineDefaulter::SetDefaults( const SfxItemSet& rSet, sal_Bool bRemem
 	sal_Bool bUpdateMode = GetUpdateMode();
 	if ( bUpdateMode )
 		SetUpdateMode( sal_False );
-	sal_uInt16 nPara = GetParagraphCount();
-	for ( sal_uInt16 j=0; j<nPara; j++ )
+	sal_uInt32 nPara = GetParagraphCount();
+	for ( sal_uInt32 j=0; j<nPara; j++ )
 	{
 		SetParaAttribs( j, rNewSet );
 	}
@@ -455,8 +455,8 @@ void ScEditEngineDefaulter::RepeatDefaults()
 {
     if ( pDefaults )
     {
-        sal_uInt16 nPara = GetParagraphCount();
-        for ( sal_uInt16 j=0; j<nPara; j++ )
+        sal_uInt32 nPara = GetParagraphCount();
+        for ( sal_uInt32 j=0; j<nPara; j++ )
             SetParaAttribs( j, *pDefaults );
     }
 }
