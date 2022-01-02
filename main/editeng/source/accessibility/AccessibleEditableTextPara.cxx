@@ -1622,7 +1622,8 @@ namespace accessibility
         ::vos::OGuard aGuard( Application::GetSolarMutex() );
 	if ((rPoint.X <= 0) && (rPoint.Y <= 0))
 		return 0;
-        sal_uInt16 nPara, nIndex;
+        sal_uInt32 nPara;
+        sal_uInt16 nIndex;
 
         // offset from surrounding cell/shape
         Point aOffset( GetEEOffset() );

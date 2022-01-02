@@ -2640,7 +2640,7 @@ OutputDevice* SvxDummyTextSource::GetRefDevice() const
     return NULL;
 }
 
-sal_Bool SvxDummyTextSource::GetIndexAtPoint( const Point&, sal_uInt16&, sal_uInt16& ) const
+sal_Bool SvxDummyTextSource::GetIndexAtPoint( const Point&, sal_uInt32&, sal_uInt16& ) const
 {
     return sal_False;
 }

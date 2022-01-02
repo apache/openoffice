@@ -839,7 +839,7 @@ OutputDevice* SvxAccessibleTextAdapter::GetRefDevice() const
     return mrTextForwarder->GetRefDevice();
 }
 
-sal_Bool SvxAccessibleTextAdapter::GetIndexAtPoint( const Point& rPoint, sal_uInt16& nPara, sal_uInt16& nIndex ) const
+sal_Bool SvxAccessibleTextAdapter::GetIndexAtPoint( const Point& rPoint, sal_uInt32& nPara, sal_uInt16& nIndex ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

@@ -72,7 +72,7 @@ public:
     virtual Rectangle		GetParaBounds( sal_uInt32 nPara ) const;
     virtual MapMode			GetMapMode() const;
 	virtual OutputDevice*	GetRefDevice() const;
-    virtual sal_Bool		GetIndexAtPoint( const Point&, sal_uInt16& nPara, sal_uInt16& nIndex ) const;
+    virtual sal_Bool		GetIndexAtPoint( const Point&, sal_uInt32& nPara, sal_uInt16& nIndex ) const;
     virtual sal_Bool		GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const;
 	virtual void	SetUpdateModeForAcc( sal_Bool bUp);
 	virtual sal_Bool	GetUpdateModeForAcc() const;

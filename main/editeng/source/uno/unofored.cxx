@@ -421,7 +421,7 @@ OutputDevice* SvxEditEngineForwarder::GetRefDevice() const
     return rEditEngine.GetRefDevice();
 }
 
-sal_Bool SvxEditEngineForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt16& nPara, sal_uInt16& nIndex ) const
+sal_Bool SvxEditEngineForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32& nPara, sal_uInt16& nIndex ) const
 {
     // #101701#
     Size aSize( rEditEngine.CalcTextWidth(), rEditEngine.GetTextHeight() );

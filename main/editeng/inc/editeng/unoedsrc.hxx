@@ -292,7 +292,7 @@ public:
         @return sal_True, if the point is over any text and both rPara and rIndex are valid
 
      */
-    virtual sal_Bool		GetIndexAtPoint( const Point& rPoint, sal_uInt16& rPara, sal_uInt16& rIndex ) const = 0;
+    virtual sal_Bool		GetIndexAtPoint( const Point& rPoint, sal_uInt32& rPara, sal_uInt16& rIndex ) const = 0;
 
     /** Get the start and the end index of the word at the given index
 

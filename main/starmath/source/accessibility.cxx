@@ -1386,7 +1386,7 @@ OutputDevice* SmTextForwarder::GetRefDevice() const
 	return pEditEngine ? pEditEngine->GetRefDevice() : 0;
 }
 
-sal_Bool SmTextForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt16& nPara, sal_uInt16& nIndex ) const
+sal_Bool SmTextForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32& nPara, sal_uInt16& nIndex ) const
 {
 	sal_Bool bRes = sal_False;
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();

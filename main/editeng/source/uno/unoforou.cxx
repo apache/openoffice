@@ -379,7 +379,7 @@ OutputDevice* SvxOutlinerForwarder::GetRefDevice() const
     return rOutliner.GetRefDevice();
 }
 
-sal_Bool SvxOutlinerForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt16& nPara, sal_uInt16& nIndex ) const
+sal_Bool SvxOutlinerForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32& nPara, sal_uInt16& nIndex ) const
 {
     // #101701#
     Size aSize( rOutliner.CalcTextSize() );
