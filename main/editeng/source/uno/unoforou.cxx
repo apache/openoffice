@@ -497,7 +497,7 @@ sal_Bool SvxOutlinerForwarder::SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth )
     return sal_False;
 }
 
-sal_Int16 SvxOutlinerForwarder::GetNumberingStartValue( sal_uInt16 nPara )
+sal_Int16 SvxOutlinerForwarder::GetNumberingStartValue( sal_uInt32 nPara )
 {
     if( nPara < GetParagraphCount() )
     {
@@ -588,7 +588,7 @@ void  SvxOutlinerForwarder::CopyText(const SvxTextForwarder& rSource)
 //------------------------------------------------------------------------
 
 
-sal_Int16 SvxTextForwarder::GetNumberingStartValue( sal_uInt16 )
+sal_Int16 SvxTextForwarder::GetNumberingStartValue( sal_uInt32 )
 {
     return -1;
 }

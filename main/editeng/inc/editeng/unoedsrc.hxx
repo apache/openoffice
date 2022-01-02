@@ -442,7 +442,7 @@ public:
      */
     virtual sal_Bool		SetDepth( sal_uInt32 nPara, sal_Int16 nNewDepth ) = 0;
 
-    virtual sal_Int16 GetNumberingStartValue( sal_uInt16 nPara );
+    virtual sal_Int16 GetNumberingStartValue( sal_uInt32 nPara );
     virtual void SetNumberingStartValue( sal_uInt16 nPara, sal_Int16 nNumberingStartValue );
 
     virtual sal_Bool IsParaIsNumberingRestart( sal_uInt16 nPara );
