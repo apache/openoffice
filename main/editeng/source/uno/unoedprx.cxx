@@ -87,7 +87,7 @@ public:
         The text forwarder to use in the calculations
      */
     void SetIndex( sal_Int32 nIndex, const SvxTextForwarder& rTF );
-    void SetIndex( sal_uInt16 nPara, sal_Int32 nIndex, const SvxTextForwarder& rTF ) { SetParagraph(nPara); SetIndex(nIndex, rTF); }
+    void SetIndex( sal_uInt32 nPara, sal_Int32 nIndex, const SvxTextForwarder& rTF ) { SetParagraph(nPara); SetIndex(nIndex, rTF); }
     sal_Int32 GetIndex() const { return mnIndex; }
 
     /** Set the index in the edit engine semantic
@@ -102,7 +102,7 @@ public:
         The text forwarder to use in the calculations
      */
     void SetEEIndex( sal_uInt16 nEEIndex, const SvxTextForwarder& rTF );
-    void SetEEIndex( sal_uInt16 nPara, sal_uInt16 nEEIndex, const SvxTextForwarder& rTF ) { SetParagraph(nPara); SetEEIndex(nEEIndex, rTF); }
+    void SetEEIndex( sal_uInt32 nPara, sal_uInt16 nEEIndex, const SvxTextForwarder& rTF ) { SetParagraph(nPara); SetEEIndex(nEEIndex, rTF); }
     sal_uInt16 GetEEIndex() const;
 
     void SetFieldOffset( sal_Int32 nOffset, sal_Int32 nLen ) { mnFieldOffset = nOffset; mnFieldLen = nLen; }
