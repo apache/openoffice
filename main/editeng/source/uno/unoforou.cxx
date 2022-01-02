@@ -196,7 +196,7 @@ SfxItemPool* SvxOutlinerForwarder::GetPool() const
 	return rOutliner.GetEmptyItemSet().GetPool();
 }
 
-void SvxOutlinerForwarder::GetPortions( sal_uInt16 nPara, SvUShorts& rList ) const
+void SvxOutlinerForwarder::GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const
 {
 	((EditEngine&)rOutliner.GetEditEngine()).GetPortions( nPara, rList );
 }

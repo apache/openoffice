@@ -130,7 +130,7 @@ SfxItemPool* SvxEditEngineForwarder::GetPool() const
 	return rEditEngine.GetEmptyItemSet().GetPool();
 }
 
-void SvxEditEngineForwarder::GetPortions( sal_uInt16 nPara, SvUShorts& rList ) const
+void SvxEditEngineForwarder::GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const
 {
 	rEditEngine.GetPortions( nPara, rList );
 }

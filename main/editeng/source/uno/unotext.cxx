@@ -2547,7 +2547,7 @@ void SvxDummyTextSource::RemoveAttribs( const ESelection& , sal_Bool , sal_uInt1
 {
 }
 
-void SvxDummyTextSource::GetPortions( sal_uInt16, SvUShorts& ) const
+void SvxDummyTextSource::GetPortions( sal_uInt32, SvUShorts& ) const
 {
 }
 

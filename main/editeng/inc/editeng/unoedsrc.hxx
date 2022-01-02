@@ -156,7 +156,7 @@ public:
 	virtual	SfxItemSet  GetParaAttribs( sal_uInt32 nPara ) const = 0;
 	virtual void		SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet ) = 0;
     virtual void        RemoveAttribs( const ESelection& rSelection, sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich ) = 0;
-	virtual void		GetPortions( sal_uInt16 nPara, SvUShorts& rList ) const = 0;
+	virtual void		GetPortions( sal_uInt32 nPara, SvUShorts& rList ) const = 0;
 	
 	virtual sal_uInt16		GetItemState( const ESelection& rSel, sal_uInt16 nWhich ) const = 0;
 	virtual sal_uInt16		GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const = 0;

@@ -1368,7 +1368,7 @@ String HtmlExport::ParagraphToHTMLString( SdrOutliner* pOutliner, sal_uLong nPar
 
 	HtmlState aState( (mbUserAttr || mbDocColors)  ? maTextColor : Color(COL_BLACK) );
 	SvUShorts aPortionList;
-	rEditEngine.GetPortions( (sal_uInt16) nPara, aPortionList );
+	rEditEngine.GetPortions( nPara, aPortionList );
 	sal_uInt16 nPortionCount = aPortionList.Count();
 
 	sal_uInt16 nPos1 = 0;
@@ -1376,7 +1376,7 @@ String HtmlExport::ParagraphToHTMLString( SdrOutliner* pOutliner, sal_uLong nPar
 	{
 		sal_uInt16 nPos2 = aPortionList.GetObject(nPortion);
 
-		ESelection aSelection( (sal_uInt16) nPara, nPos1, (sal_uInt16) nPara, nPos2);
+		ESelection aSelection( nPara, nPos1, nPara, nPos2);
 
 		SfxItemSet aSet( rEditEngine.GetAttribs( aSelection ) );
 
