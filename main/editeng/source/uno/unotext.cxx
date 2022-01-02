@@ -2655,7 +2655,7 @@ sal_Bool SvxDummyTextSource::GetAttributeRun( sal_uInt16&, sal_uInt16&, sal_uInt
     return sal_False;
 }
 
-sal_uInt16 SvxDummyTextSource::GetLineCount( sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetLineCount( sal_uInt32 ) const
 {
     return 0;
 }

@@ -77,7 +77,7 @@ public:
 	virtual void	SetUpdateModeForAcc( sal_Bool bUp);
 	virtual sal_Bool	GetUpdateModeForAcc() const;
     virtual sal_Bool 		GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell = sal_False ) const;
-    virtual sal_uInt16		GetLineCount( sal_uInt16 nPara ) const;
+    virtual sal_uInt16		GetLineCount( sal_uInt32 nPara ) const;
     virtual sal_uInt16		GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const;
     virtual void            GetLineBoundaries( /*out*/sal_uInt16 &rStart, /*out*/sal_uInt16 &rEnd, sal_uInt16 nParagraph, sal_uInt16 nLine ) const;
     virtual sal_uInt16          GetLineNumberAtIndex( sal_uInt16 nPara, sal_uInt16 nIndex ) const;

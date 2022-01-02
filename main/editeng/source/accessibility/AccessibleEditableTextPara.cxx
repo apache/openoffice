@@ -243,7 +243,7 @@ namespace accessibility
 
         rBoundary.startPos = rBoundary.endPos = -1;
 
-        const sal_uInt16 nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) );
+        const sal_uInt16 nLineCount=rCacheTF.GetLineCount( nParaIndex );
 
         if( nIndex == nTextLen )
         {
@@ -2090,7 +2090,7 @@ namespace accessibility
                 CheckPosition(nIndex);
 		if (nIndex != 0  && nIndex == getCharacterCount())
 			--nIndex;
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
                 sal_Int32 nCurIndex;
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
@@ -2203,7 +2203,7 @@ namespace accessibility
 
                 CheckPosition(nIndex);
 
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex ); 
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed
                 //by the IAText::attributes(). So here must do special support for bullet line.
@@ -2356,7 +2356,7 @@ namespace accessibility
 
                 CheckPosition(nIndex);
 
-                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( static_cast< sal_uInt16 >( nParaIndex ) ); 
+                sal_uInt16 nLine, nLineCount=rCacheTF.GetLineCount( nParaIndex );
                 sal_Int32 nCurIndex; 
                 //the problem is that rCacheTF.GetLineLen() will include the bullet length. But for the bullet line,
                 //the text value doesn't contain the bullet characters. all of the bullet and numbering info are exposed

@@ -341,7 +341,7 @@ sal_Unicode cNewLine(0x0a);
 
         sal_Int32 nIndex = 0;
         if( mpTextParagraph )
-            nIndex = mpTextParagraph->GetTextForwarder().GetLineCount( static_cast< sal_uInt16 >(nParagraph) );
+            nIndex = mpTextParagraph->GetTextForwarder().GetLineCount( nParagraph );
         return nIndex;
     }    
 

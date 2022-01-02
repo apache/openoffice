@@ -345,7 +345,7 @@ public:
         @return number of lines in given paragraph
 
      */
-    virtual sal_uInt16			GetLineCount( sal_uInt16 nPara ) const = 0;
+    virtual sal_uInt16			GetLineCount( sal_uInt32 nPara ) const = 0;
 
     /** Query line length
 

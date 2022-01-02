@@ -1268,7 +1268,7 @@ XubString SdrView::GetStatusText()
 		ESelection aSel(pTextEditOutlinerView->GetSelection());
 		long nPar=aSel.nEndPara,nLin=0,nCol=aSel.nEndPos;
 		if (aSel.nEndPara>0) {
-			for (sal_uInt16 nParaNum=0; nParaNum<aSel.nEndPara; nParaNum++) {
+			for (sal_uInt32 nParaNum=0; nParaNum<aSel.nEndPara; nParaNum++) {
 				nLin+=pTextEditOutliner->GetLineCount(nParaNum);
 			}
 		}

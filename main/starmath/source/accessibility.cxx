@@ -1429,7 +1429,7 @@ sal_Bool SmTextForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& 
 		: sal_False;
 }
 
-sal_uInt16 SmTextForwarder::GetLineCount( sal_uInt16 nPara ) const
+sal_uInt16 SmTextForwarder::GetLineCount( sal_uInt32 nPara ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetLineCount(nPara) : 0;

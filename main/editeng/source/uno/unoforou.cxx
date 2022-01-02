@@ -416,7 +416,7 @@ sal_Bool SvxOutlinerForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uIn
     return SvxEditSourceHelper::GetAttributeRun( nStartIndex, nEndIndex, rOutliner.GetEditEngine(), nPara, nIndex, bInCell );
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetLineCount( sal_uInt16 nPara ) const
+sal_uInt16 SvxOutlinerForwarder::GetLineCount( sal_uInt32 nPara ) const
 {
     return static_cast < sal_uInt16 >( rOutliner.GetLineCount(nPara) );
 }

@@ -1020,7 +1020,7 @@ sal_Bool SvxAccessibleTextAdapter::GetAttributeRun( sal_uInt16& nStartIndex, sal
     return sal_True;
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetLineCount( sal_uInt16 nPara ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetLineCount( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 
