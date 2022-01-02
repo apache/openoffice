@@ -2118,7 +2118,7 @@ void SvxPropertyValuesToItemSet(
 		const uno::Sequence< beans::PropertyValue > rPropertyVaules,
         const SfxItemPropertySet *pPropSet,
         SvxTextForwarder *pForwarder /*needed for WID_NUMLEVEL*/,
-        sal_uInt16 nPara /*needed for WID_NUMLEVEL*/)
+        sal_uInt32 nPara /*needed for WID_NUMLEVEL*/)
 	throw(lang::IllegalArgumentException, beans::UnknownPropertyException, uno::RuntimeException)
 {
     sal_Int32 nProps = rPropertyVaules.getLength();
@@ -2233,7 +2233,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::finishParagraph(
         pTextForwarder->AppendParagraph();
 
         // set properties for the previously last paragraph
-        sal_uInt16 nPara = nParaCount - 1;
+        sal_uInt32 nPara = nParaCount - 1;
         ESelection aSel( nPara, 0, nPara, 0 );
         SfxItemSet aItemSet( *pTextForwarder->GetEmptyItemSetPtr() );
         SvxPropertyValuesToItemSet( aItemSet, rCharAndParaProps, 
