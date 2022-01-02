@@ -278,7 +278,7 @@ void SvxOutlinerForwarder::flushCache()
 	}
 }
 
-LanguageType SvxOutlinerForwarder::GetLanguage( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+LanguageType SvxOutlinerForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return rOutliner.GetLanguage(nPara, nIndex);
 }

@@ -193,7 +193,7 @@ namespace accessibility
                    "AccessibleEditableTextPara::getLocale: paragraph index value overflow");
 
         // return locale of first character in the paragraph
-        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( static_cast< sal_uInt16 >( GetParagraphIndex() ), 0 ));
+        return SvxLanguageToLocale(aLocale, GetTextForwarder().GetLanguage( GetParagraphIndex(), 0 ));
     }
 
     void AccessibleEditableTextPara::implGetSelection( sal_Int32& nStartIndex, sal_Int32& nEndIndex )

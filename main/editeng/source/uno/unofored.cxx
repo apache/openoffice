@@ -315,7 +315,7 @@ sal_uInt16 SvxEditEngineForwarder::GetItemState( sal_uInt32 nPara, sal_uInt16 nW
 	return rSet.GetItemState( nWhich );
 }
 
-LanguageType SvxEditEngineForwarder::GetLanguage( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+LanguageType SvxEditEngineForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     return rEditEngine.GetLanguage(nPara, nIndex);
 }

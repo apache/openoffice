@@ -194,7 +194,7 @@ public:
         @param nIndex[0 .. m-1]
         Index of character to query language of
      */
-    virtual LanguageType	GetLanguage( sal_uInt16 nPara, sal_uInt16 nIndex ) const = 0;
+    virtual LanguageType	GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const = 0;
 
     /** Query number of fields in the underlying edit engine
 

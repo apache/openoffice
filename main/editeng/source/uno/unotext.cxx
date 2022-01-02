@@ -2600,7 +2600,7 @@ void SvxDummyTextSource::SetNotifyHdl( const Link& )
 {
 }
 
-LanguageType SvxDummyTextSource::GetLanguage( sal_uInt16, sal_uInt16 ) const
+LanguageType SvxDummyTextSource::GetLanguage( sal_uInt32, sal_uInt16 ) const
 {
     return LANGUAGE_DONTKNOW;
 }

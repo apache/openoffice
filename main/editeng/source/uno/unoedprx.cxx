@@ -705,7 +705,7 @@ sal_Bool SvxAccessibleTextAdapter::IsValid() const
         return sal_False;
 }
 
-LanguageType SvxAccessibleTextAdapter::GetLanguage( sal_uInt16 nPara, sal_uInt16 nPos ) const
+LanguageType SvxAccessibleTextAdapter::GetLanguage( sal_uInt32 nPara, sal_uInt16 nPos ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

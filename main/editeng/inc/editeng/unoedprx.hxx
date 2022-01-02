@@ -64,7 +64,7 @@ public:
 	
 	virtual sal_Bool			IsValid() const;
 
-    virtual LanguageType 	GetLanguage( sal_uInt16, sal_uInt16 ) const;
+    virtual LanguageType 	GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const;
     virtual sal_uInt16			GetFieldCount( sal_uInt16 nPara ) const;
     virtual EFieldInfo		GetFieldInfo( sal_uInt16 nPara, sal_uInt16 nField ) const;
     virtual EBulletInfo     GetBulletInfo( sal_uInt16 nPara ) const;
