@@ -1305,7 +1305,7 @@ void View::OnEndPasteOrDrop( PasteOrDropInfos* pInfos )
 			// new paragraph, depending on the paragraph depth
 			SfxStyleSheetBasePool* pStylePool = GetDoc()->GetStyleSheetPool();
 
-			for ( sal_uInt16 nPara = pInfos->nStartPara; nPara <= pInfos->nEndPara; nPara++ )
+			for ( sal_uInt32 nPara = pInfos->nStartPara; nPara <= pInfos->nEndPara; nPara++ )
 			{
 				sal_Int16 nDepth = pOutliner->GetDepth( nPara );
 

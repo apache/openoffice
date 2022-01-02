@@ -2680,7 +2680,7 @@ sal_Bool SvxDummyTextSource::QuickFormatDoc( sal_Bool )
     return sal_False;
 }
 
-sal_Int16 SvxDummyTextSource::GetDepth( sal_uInt16 ) const
+sal_Int16 SvxDummyTextSource::GetDepth( sal_uInt32 ) const
 {
     return -1;
 }

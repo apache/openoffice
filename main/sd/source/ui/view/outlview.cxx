@@ -764,7 +764,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 			Paragraph*	  pParagraph   = (Paragraph*)pList->First();
 			while (pParagraph)
 			{
-				if( !pOutliner->HasParaFlag( pParagraph, PARAFLAG_ISPAGE ) && (pOutliner->GetDepth( (sal_uInt16) pOutliner->GetAbsPos( pParagraph ) ) <= 0) )
+				if( !pOutliner->HasParaFlag( pParagraph, PARAFLAG_ISPAGE ) && (pOutliner->GetDepth( pOutliner->GetAbsPos( pParagraph ) ) <= 0) )
 					mnPagesToProcess++;
 				pParagraph = (Paragraph*)pList->Next();
 			}
@@ -866,7 +866,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 		}
 		pOutliner->UpdateFields();
 	}
-	else if ( (pOutliner->GetPrevDepth() == 1) && ( pOutliner->GetDepth( (sal_uInt16) pOutliner->GetAbsPos( pPara ) ) == 2 ) )
+	else if ( (pOutliner->GetPrevDepth() == 1) && ( pOutliner->GetDepth( pOutliner->GetAbsPos( pPara ) ) == 2 ) )
 	{
 		// wieviele Titel sind vor dem fraglichen Titelabsatz?
 		sal_Int32 nPos = -1L;

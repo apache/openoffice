@@ -1096,7 +1096,7 @@ sal_Bool SvxAccessibleTextAdapter::QuickFormatDoc( sal_Bool bFull )
     return mrTextForwarder->QuickFormatDoc( bFull );
 }
 
-sal_Int16 SvxAccessibleTextAdapter::GetDepth( sal_uInt16 nPara ) const
+sal_Int16 SvxAccessibleTextAdapter::GetDepth( sal_uInt32 nPara ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

@@ -143,7 +143,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 			while (pPara)
 			{
 				sal_uLong nParaPos = pOutl->GetAbsPos( pPara );
-				sal_Int16 nDepth = pOutl->GetDepth( (sal_uInt16) nParaPos );
+				sal_Int16 nDepth = pOutl->GetDepth( nParaPos );
 				if ( nDepth == 0 )
 				{
 					// Seite mit Titel & Gliederung!
@@ -239,7 +239,7 @@ void FuExpandPage::DoExecute( SfxRequest& )
 						{
 							pTempOutl->SetDepth (
                                 pTempOutl->GetParagraph( nPara ), 
-                                pTempOutl->GetDepth((sal_uInt16) nPara ) - 1);
+                                pTempOutl->GetDepth( nPara ) - 1);
 						}
 
 						delete pOPO;

@@ -2046,11 +2046,11 @@ sal_uInt16 SdrObjEditView::GetSelectionLevel() const
 		{
 			//start and end position
 			ESelection aSelect = pTextEditOutlinerView->GetSelection();
-			sal_uInt16 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
-			sal_uInt16 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt32 nStartPara = ::std::min( aSelect.nStartPara, aSelect.nEndPara );
+			sal_uInt32 nEndPara = ::std::max( aSelect.nStartPara, aSelect.nEndPara );
 			//get level from each paragraph
 			nLevel = 0;
-			for( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++ )
+			for( sal_uInt32 nPara = nStartPara; nPara <= nEndPara; nPara++ )
 			{
 				sal_uInt16 nParaDepth = 1 << pTextEditOutliner->GetDepth( nPara );
 				if( !(nLevel & nParaDepth) )

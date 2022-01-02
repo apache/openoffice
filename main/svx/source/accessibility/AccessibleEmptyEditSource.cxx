@@ -170,7 +170,7 @@ namespace accessibility
         sal_Bool		Delete( const ESelection& ) { return sal_False; }
         sal_Bool		InsertText( const String&, const ESelection& ) { return sal_False; }
         sal_Bool		QuickFormatDoc( sal_Bool ) { return sal_True; }
-        sal_Int16		GetDepth( sal_uInt16 ) const { return -1; }
+        sal_Int16		GetDepth( sal_uInt32 ) const { return -1; }
         sal_Bool		SetDepth( sal_uInt16, sal_Int16 ) { return sal_True; }
 
         Rectangle		GetVisArea() const { return Rectangle(); }

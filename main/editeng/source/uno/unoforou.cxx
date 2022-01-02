@@ -461,7 +461,7 @@ sal_Bool SvxOutlinerForwarder::InsertText( const String& rStr, const ESelection&
     return sal_True;
 }
 
-sal_Int16 SvxOutlinerForwarder::GetDepth( sal_uInt16 nPara ) const
+sal_Int16 SvxOutlinerForwarder::GetDepth( sal_uInt32 nPara ) const
 {
     DBG_ASSERT( nPara < GetParagraphCount(), "SvxOutlinerForwarder::GetDepth: Invalid paragraph index");
 

@@ -1465,7 +1465,7 @@ sal_Bool SmTextForwarder::QuickFormatDoc( sal_Bool /*bFull*/ )
     return bRes;
 }
 
-sal_Int16 SmTextForwarder::GetDepth( sal_uInt16 /*nPara*/ ) const
+sal_Int16 SmTextForwarder::GetDepth( sal_uInt32 /*nPara*/ ) const
 {
     // math has no outliner...
     return -1;

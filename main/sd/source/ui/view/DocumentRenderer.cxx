@@ -1820,7 +1820,7 @@ private:
                     for (sal_Int32 nPara=nParaCount1; nPara<nParaCount2; ++nPara)
                     {
                         Paragraph* pP = pOutliner->GetParagraph(nPara);
-                        if (pP!=NULL && pOutliner->GetDepth((sal_uInt16)nPara) > 0)
+                        if (pP!=NULL && pOutliner->GetDepth(nPara) > 0)
                             pOutliner->SetDepth(pP, 0);
                     }
                 }

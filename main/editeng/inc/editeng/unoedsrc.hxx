@@ -425,7 +425,7 @@ public:
         @return the outline level of the given paragraph. The range is
         [0,n), where n is the maximal outline level.
      */
-    virtual sal_Int16		GetDepth( sal_uInt16 nPara ) const = 0;
+    virtual sal_Int16		GetDepth( sal_uInt32 nPara ) const = 0;
 
     /** Set the outline depth of given paragraph
 

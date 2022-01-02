@@ -502,7 +502,7 @@ sal_Bool SvxEditEngineForwarder::InsertText( const String& rStr, const ESelectio
     return sal_True;
 }
 
-sal_Int16 SvxEditEngineForwarder::GetDepth( sal_uInt16 ) const
+sal_Int16 SvxEditEngineForwarder::GetDepth( sal_uInt32 ) const
 {
     // EditEngine does not support outline depth
     return -1;

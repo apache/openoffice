@@ -313,7 +313,7 @@ void TextObjectBar::GetAttrState( SfxItemSet& rSet )
 
 					while (pPara)
 					{
-						sal_Int16 nDepth = pOutl->GetDepth( (sal_uInt16) pOutl->GetAbsPos( pPara ) );
+						sal_Int16 nDepth = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 
 						if (nDepth > 0 || (bOutlineViewSh && (nDepth <= 0) && !pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE )) )
 						{

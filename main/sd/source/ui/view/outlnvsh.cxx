@@ -878,11 +878,11 @@ void OutlineViewShell::GetMenuState( SfxItemSet &rSet )
 	Paragraph* pPara = (Paragraph*)pList->First();
 
 	sal_Int16 nDepth;
-	sal_Int16 nTmpDepth = pOutl->GetDepth( (sal_uInt16) pOutl->GetAbsPos( pPara ) );
+	sal_Int16 nTmpDepth = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 	bool bPage = pOutl->HasParaFlag( pPara, PARAFLAG_ISPAGE );
 	while (pPara)
 	{
-		nDepth = pOutl->GetDepth( (sal_uInt16) pOutl->GetAbsPos( pPara ) );
+		nDepth = pOutl->GetDepth( pOutl->GetAbsPos( pPara ) );
 
 		if( nDepth != nTmpDepth )
 			bUnique = sal_False;
