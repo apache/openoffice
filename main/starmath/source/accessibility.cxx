@@ -1334,7 +1334,7 @@ EBulletInfo SmTextForwarder::GetBulletInfo( sal_uInt32 /*nPara*/ ) const
     return EBulletInfo();
 }
 
-Rectangle SmTextForwarder::GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+Rectangle SmTextForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
 	Rectangle aRect(0,0,0,0);
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();

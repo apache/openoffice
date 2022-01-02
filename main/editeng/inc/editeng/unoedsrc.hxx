@@ -244,7 +244,7 @@ public:
         left corner of text. The coordinates returned here are to be
         interpreted in the map mode given by GetMapMode().
     */
-    virtual Rectangle		GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const = 0;
+    virtual Rectangle		GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const = 0;
 
     /** Query the bounding rectangle of the given paragraph
 

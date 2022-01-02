@@ -744,7 +744,7 @@ sal_Bool	SvxAccessibleTextAdapter::GetUpdateModeForAcc( ) const
 {
 	return mrTextForwarder->GetUpdateModeForAcc( );
 }
-Rectangle SvxAccessibleTextAdapter::GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+Rectangle SvxAccessibleTextAdapter::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

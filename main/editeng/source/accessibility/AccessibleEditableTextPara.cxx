@@ -1582,7 +1582,7 @@ namespace accessibility
         CheckPosition( nIndex );
 
         SvxTextForwarder& rCacheTF = GetTextForwarder();
-        Rectangle aRect = rCacheTF.GetCharBounds( static_cast< sal_uInt16 >( GetParagraphIndex() ), static_cast< sal_uInt16 >( nIndex ) );
+        Rectangle aRect = rCacheTF.GetCharBounds( GetParagraphIndex(), static_cast< sal_uInt16 >( nIndex ) );
 
         // convert to screen
         Rectangle aScreenRect = AccessibleEditableTextPara::LogicToPixel( aRect,

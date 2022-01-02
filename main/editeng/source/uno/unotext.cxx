@@ -2620,7 +2620,7 @@ EBulletInfo SvxDummyTextSource::GetBulletInfo( sal_uInt32 ) const
     return EBulletInfo();
 }
 
-Rectangle SvxDummyTextSource::GetCharBounds( sal_uInt16, sal_uInt16 ) const
+Rectangle SvxDummyTextSource::GetCharBounds( sal_uInt32, sal_uInt16 ) const
 {
     return Rectangle();
 }

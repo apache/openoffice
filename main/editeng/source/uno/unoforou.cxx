@@ -298,7 +298,7 @@ EBulletInfo SvxOutlinerForwarder::GetBulletInfo( sal_uInt32 nPara ) const
     return rOutliner.GetBulletInfo( nPara );
 }
 
-Rectangle SvxOutlinerForwarder::GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+Rectangle SvxOutlinerForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     // #101701#
     // EditEngine's 'internal' methods like GetCharacterBounds()

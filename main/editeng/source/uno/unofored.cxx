@@ -335,7 +335,7 @@ EBulletInfo SvxEditEngineForwarder::GetBulletInfo( sal_uInt32 ) const
     return EBulletInfo();
 }
 
-Rectangle SvxEditEngineForwarder::GetCharBounds( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+Rectangle SvxEditEngineForwarder::GetCharBounds( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
     // #101701#
     // EditEngine's 'internal' methods like GetCharacterBounds()
