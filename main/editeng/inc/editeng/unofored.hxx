@@ -71,7 +71,7 @@ public:
     virtual MapMode			GetMapMode() const;
 	virtual OutputDevice*	GetRefDevice() const;
     virtual sal_Bool		GetIndexAtPoint( const Point&, sal_uInt32& nPara, sal_uInt16& nIndex ) const;
-    virtual sal_Bool		GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const;
+    virtual sal_Bool		GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const;
     virtual sal_Bool 		GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell = sal_False ) const;
     virtual sal_uInt16			GetLineCount( sal_uInt16 nPara ) const;
     virtual sal_uInt16			GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const;

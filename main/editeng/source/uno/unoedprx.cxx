@@ -914,7 +914,7 @@ sal_Bool SvxAccessibleTextAdapter::GetIndexAtPoint( const Point& rPoint, sal_uIn
     return sal_True;
 }
 
-sal_Bool SvxAccessibleTextAdapter::GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
+sal_Bool SvxAccessibleTextAdapter::GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

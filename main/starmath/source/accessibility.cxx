@@ -1400,7 +1400,7 @@ sal_Bool SmTextForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32& nPara,
 	return bRes;
 }
 
-sal_Bool SmTextForwarder::GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
+sal_Bool SmTextForwarder::GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
 {
 	sal_Bool bRes = sal_False;
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();

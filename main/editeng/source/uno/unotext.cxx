@@ -2645,7 +2645,7 @@ sal_Bool SvxDummyTextSource::GetIndexAtPoint( const Point&, sal_uInt32&, sal_uIn
     return sal_False;
 }
 
-sal_Bool SvxDummyTextSource::GetWordIndices( sal_uInt16, sal_uInt16, sal_uInt16&, sal_uInt16& ) const
+sal_Bool SvxDummyTextSource::GetWordIndices( sal_uInt32, sal_uInt16, sal_uInt16&, sal_uInt16& ) const
 {
     return sal_False;
 }

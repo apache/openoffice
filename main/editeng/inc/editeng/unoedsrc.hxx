@@ -317,7 +317,7 @@ public:
 
         @return sal_True, if the result is non-empty
      */
-    virtual sal_Bool		GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& rStart, sal_uInt16& rEnd ) const = 0;
+    virtual sal_Bool		GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt16& rStart, sal_uInt16& rEnd ) const = 0;
 
     /** Query range of similar attributes
 

@@ -396,7 +396,7 @@ sal_Bool SvxOutlinerForwarder::GetIndexAtPoint( const Point& rPos, sal_uInt32& n
     return sal_True;
 }
 
-sal_Bool SvxOutlinerForwarder::GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
+sal_Bool SvxOutlinerForwarder::GetWordIndices( sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt16& nStart, sal_uInt16& nEnd ) const
 {
     ESelection aRes = rOutliner.GetEditEngine().GetWord( ESelection(nPara, nIndex, nPara, nIndex), com::sun::star::i18n::WordType::DICTIONARY_WORD );
 
