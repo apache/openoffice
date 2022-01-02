@@ -421,7 +421,7 @@ sal_uInt16 SvxOutlinerForwarder::GetLineCount( sal_uInt32 nPara ) const
     return static_cast < sal_uInt16 >( rOutliner.GetLineCount(nPara) );
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const
+sal_uInt16 SvxOutlinerForwarder::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     return rOutliner.GetLineLen(nPara, nLine);
 }

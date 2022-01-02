@@ -251,7 +251,7 @@ namespace accessibility
             if( nLineCount <= 1 )
                 rBoundary.startPos = 0;
             else
-                rBoundary.startPos = nTextLen - rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ),
+                rBoundary.startPos = nTextLen - rCacheTF.GetLineLen( nParaIndex,
                                                                      nLineCount-1 );
 
             rBoundary.endPos = nTextLen;
@@ -263,11 +263,11 @@ namespace accessibility
             sal_Int32 nCurIndex;
             for( nLine=0, nCurIndex=0; nLine<nLineCount; ++nLine )
             {
-                nCurIndex += rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
 
                 if( nCurIndex > nIndex )
                 {
-                    rBoundary.startPos = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    rBoundary.startPos = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                     rBoundary.endPos = nCurIndex;
                     break;
                 }
@@ -2107,8 +2107,8 @@ namespace accessibility
                             nBulletLen = aBulletInfo.aText.Len();
                         }
                     }
-                    //nCurIndex += rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
-                    sal_Int32 nLineLen = rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    //nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
+                    sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
                     else 
@@ -2117,7 +2117,7 @@ namespace accessibility
                     {
                         if (nLine ==0)
                         {
-                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                             aResult.SegmentStart = 0;
                             aResult.SegmentEnd = nCurIndex;
                             //aResult.SegmentText = GetTextRange( aResult.SegmentStart, aResult.SegmentEnd );
@@ -2126,7 +2126,7 @@ namespace accessibility
                         }
                         else
                         {
-                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                            //aResult.SegmentStart = nCurIndex - rCacheTF.GetLineLen(nParaIndex, nLine);
                             aResult.SegmentStart = nCurIndex - nLineLen;
                             aResult.SegmentEnd = nCurIndex;
                             //aResult.SegmentText = GetTextRange( aResult.SegmentStart, aResult.SegmentEnd );
@@ -2226,7 +2226,7 @@ namespace accessibility
                         nLastLineLen = nCurLineLen - nBulletLen;
                     else
                         nLastLineLen = nCurLineLen;
-                    nCurLineLen = rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    nCurLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     //nCurIndex += nCurLineLen;
                     if (nLine == 0)
                         nCurIndex += nCurLineLen - nBulletLen;
@@ -2374,8 +2374,8 @@ namespace accessibility
                             nBulletLen = aBulletInfo.aText.Len();
                         }
                     }
-                    //nCurIndex += rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine);
-                    sal_Int32 nLineLen = rCacheTF.GetLineLen( static_cast< sal_uInt16 >( nParaIndex ), nLine);
+                    //nCurIndex += rCacheTF.GetLineLen(nParaIndex, nLine);
+                    sal_Int32 nLineLen = rCacheTF.GetLineLen(nParaIndex, nLine);
                     
                     if (nLine == 0)
                         nCurIndex += nLineLen - nBulletLen;
@@ -2386,7 +2386,7 @@ namespace accessibility
                         nLine < nLineCount-1 )
                     {
                         aResult.SegmentStart = nCurIndex;
-                        aResult.SegmentEnd = nCurIndex + rCacheTF.GetLineLen(static_cast< sal_uInt16 >( nParaIndex ), nLine+1);
+                        aResult.SegmentEnd = nCurIndex + rCacheTF.GetLineLen(nParaIndex, nLine+1);
                         aResult.SegmentText = GetTextRange( aResult.SegmentStart + nBulletLen, aResult.SegmentEnd + nBulletLen);
                         break;
                     }                

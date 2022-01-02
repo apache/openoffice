@@ -463,7 +463,7 @@ sal_uInt16 SvxEditEngineForwarder::GetLineCount( sal_uInt32 nPara ) const
     return rEditEngine.GetLineCount(nPara);
 }
 
-sal_uInt16 SvxEditEngineForwarder::GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const
+sal_uInt16 SvxEditEngineForwarder::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     return rEditEngine.GetLineLen(nPara, nLine);
 }

@@ -1435,7 +1435,7 @@ sal_uInt16 SmTextForwarder::GetLineCount( sal_uInt32 nPara ) const
 	return pEditEngine ? pEditEngine->GetLineCount(nPara) : 0;
 }
 
-sal_uInt16 SmTextForwarder::GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const
+sal_uInt16 SmTextForwarder::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetLineLen(nPara, nLine) : 0;

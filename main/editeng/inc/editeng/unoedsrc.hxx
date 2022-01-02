@@ -356,7 +356,7 @@ public:
         Index of line in paragraph to query line length of
 
      */
-    virtual sal_uInt16			GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const = 0;
+    virtual sal_uInt16			GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const = 0;
     
     /** Query bounds of line in paragraph
 

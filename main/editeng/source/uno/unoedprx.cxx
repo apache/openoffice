@@ -1027,7 +1027,7 @@ sal_uInt16 SvxAccessibleTextAdapter::GetLineCount( sal_uInt32 nPara ) const
     return mrTextForwarder->GetLineCount( nPara );
 }
 
-sal_uInt16 SvxAccessibleTextAdapter::GetLineLen( sal_uInt16 nPara, sal_uInt16 nLine ) const
+sal_uInt16 SvxAccessibleTextAdapter::GetLineLen( sal_uInt32 nPara, sal_uInt16 nLine ) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

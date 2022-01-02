@@ -2660,7 +2660,7 @@ sal_uInt16 SvxDummyTextSource::GetLineCount( sal_uInt32 ) const
     return 0;
 }
 
-sal_uInt16 SvxDummyTextSource::GetLineLen( sal_uInt16, sal_uInt16 ) const
+sal_uInt16 SvxDummyTextSource::GetLineLen( sal_uInt32, sal_uInt16 ) const
 {
     return 0;
 }
