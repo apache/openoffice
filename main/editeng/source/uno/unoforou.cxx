@@ -522,7 +522,7 @@ void SvxOutlinerForwarder::SetNumberingStartValue(  sal_uInt32 nPara, sal_Int16 
     }
 }
 
-sal_Bool SvxOutlinerForwarder::IsParaIsNumberingRestart( sal_uInt16 nPara )
+sal_Bool SvxOutlinerForwarder::IsParaIsNumberingRestart( sal_uInt32 nPara )
 {
     if( nPara < GetParagraphCount() )
     {
@@ -597,7 +597,7 @@ void SvxTextForwarder::SetNumberingStartValue( sal_uInt32, sal_Int16 )
 {
 }
 
-sal_Bool SvxTextForwarder::IsParaIsNumberingRestart( sal_uInt16  )
+sal_Bool SvxTextForwarder::IsParaIsNumberingRestart( sal_uInt32  )
 {
     return sal_False;
 }
