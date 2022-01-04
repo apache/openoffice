@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "AreaTransparencyGradientControl.hxx"
 #include "AreaPropertyPanel.hxx"
@@ -56,27 +58,27 @@ namespace svx { namespace sidebar {
 
 
 AreaTransparencyGradientControl::AreaTransparencyGradientControl (
-    Window* pParent,
-    AreaPropertyPanel& rPanel)
-    : PopupControl( pParent,SVX_RES(RID_POPUPPANEL_AREAPAGE_TRGR)),
-      maFtTrgrCenterX(this, SVX_RES(FT_TRGR_CENTER_X)),
-      maMtrTrgrCenterX(this, SVX_RES(MTR_TRGR_CENTER_X)),
-      maFtTrgrCenterY(this, SVX_RES(FT_TRGR_CENTER_Y)),
-      maMtrTrgrCenterY(this, SVX_RES(MTR_TRGR_CENTER_Y)),
-      maFtTrgrAngle(this, SVX_RES(FT_TRGR_ANGLE)),
-      maMtrTrgrAngle(this, SVX_RES(MTR_TRGR_ANGLE)),	
-      maBtnLeft45(this, SVX_RES(BTN_LEFT_SECOND)),
-      maBtnRight45(this, SVX_RES(BTN_RIGHT_FIRST)),
-      maFtTrgrStartValue(this, SVX_RES(FT_TRGR_START_VALUE)),
-      maMtrTrgrStartValue(this, SVX_RES(MTR_TRGR_START_VALUE)),
-      maFtTrgrEndValue(this, SVX_RES(FT_TRGR_END_VALUE)),
-      maMtrTrgrEndValue(this, SVX_RES(MTR_TRGR_END_VALUE)),
-      maFtTrgrBorder(this, SVX_RES(FT_TRGR_BORDER)),
-      maMtrTrgrBorder(this, SVX_RES(MTR_TRGR_BORDER)),
-      maRotLeft( SVX_RES(IMG_ROT_LEFT)),
-      maRotRight( SVX_RES(IMG_ROT_RIGHT)),
-      mrAreaPropertyPanel(rPanel),
-      mpBindings(NULL)
+	Window* pParent,
+	AreaPropertyPanel& rPanel)
+	: PopupControl( pParent,SVX_RES(RID_POPUPPANEL_AREAPAGE_TRGR)),
+	  maFtTrgrCenterX(this, SVX_RES(FT_TRGR_CENTER_X)),
+	  maMtrTrgrCenterX(this, SVX_RES(MTR_TRGR_CENTER_X)),
+	  maFtTrgrCenterY(this, SVX_RES(FT_TRGR_CENTER_Y)),
+	  maMtrTrgrCenterY(this, SVX_RES(MTR_TRGR_CENTER_Y)),
+	  maFtTrgrAngle(this, SVX_RES(FT_TRGR_ANGLE)),
+	  maMtrTrgrAngle(this, SVX_RES(MTR_TRGR_ANGLE)),
+	  maBtnLeft45(this, SVX_RES(BTN_LEFT_SECOND)),
+	  maBtnRight45(this, SVX_RES(BTN_RIGHT_FIRST)),
+	  maFtTrgrStartValue(this, SVX_RES(FT_TRGR_START_VALUE)),
+	  maMtrTrgrStartValue(this, SVX_RES(MTR_TRGR_START_VALUE)),
+	  maFtTrgrEndValue(this, SVX_RES(FT_TRGR_END_VALUE)),
+	  maMtrTrgrEndValue(this, SVX_RES(MTR_TRGR_END_VALUE)),
+	  maFtTrgrBorder(this, SVX_RES(FT_TRGR_BORDER)),
+	  maMtrTrgrBorder(this, SVX_RES(MTR_TRGR_BORDER)),
+	  maRotLeft( SVX_RES(IMG_ROT_LEFT)),
+	  maRotRight( SVX_RES(IMG_ROT_RIGHT)),
+	  mrAreaPropertyPanel(rPanel),
+	  mpBindings(NULL)
 {
 	Link aLink = LINK( this, AreaTransparencyGradientControl, ModifiedTrgrHdl_Impl);
 	maMtrTrgrCenterX.SetModifyHdl( aLink );
@@ -92,12 +94,12 @@ AreaTransparencyGradientControl::AreaTransparencyGradientControl (
 	maBtnLeft45.SetItemImage(1,maRotLeft);
 	Size aTbxSize = maBtnLeft45.CalcWindowSizePixel();
 	maBtnLeft45.SetOutputSizePixel( aTbxSize );
-	maBtnLeft45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_LEFT)));	//acc wj
+	maBtnLeft45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_LEFT))); // acc wj
 
 	maBtnRight45.SetItemImage(1,maRotRight);
 	aTbxSize = maBtnRight45.CalcWindowSizePixel();
 	maBtnRight45.SetOutputSizePixel( aTbxSize );
-	maBtnRight45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_RIGHT)));	//acc wj
+	maBtnRight45.SetQuickHelpText(1, String(SVX_RES(STR_HELP_RIGHT))); // acc wj
 
 	maBtnLeft45.SetBackground(Wallpaper());
 	maBtnLeft45.SetPaintTransparent(true);
@@ -105,7 +107,7 @@ AreaTransparencyGradientControl::AreaTransparencyGradientControl (
 	maBtnRight45.SetPaintTransparent(true);
 
 	FreeResource();
-    mpBindings = mrAreaPropertyPanel.GetBindings();
+	mpBindings = mrAreaPropertyPanel.GetBindings();
 }
 
 
@@ -132,7 +134,7 @@ void AreaTransparencyGradientControl::ToGetFocus()
 void AreaTransparencyGradientControl::Rearrange(XFillFloatTransparenceItem* pGradientItem)
 {
 	InitStatus(pGradientItem);
-	const XGradient& rGradient = pGradientItem->GetGradientValue();	
+	const XGradient& rGradient = pGradientItem->GetGradientValue();
 	XGradientStyle eXGS(rGradient.GetGradientStyle());
 	Size aSize(POP_WIDTH,POP_HEIGHT);
 	aSize = LogicToPixel( aSize, MapMode(MAP_APPFONT) );
@@ -247,26 +249,26 @@ void AreaTransparencyGradientControl::InitStatus(XFillFloatTransparenceItem* pGr
 	XGradient aGradient;
 
 	if (rGradient.GetXOffset() == AreaPropertyPanel::DEFAULT_CENTERX
-        && rGradient.GetYOffset() == AreaPropertyPanel::DEFAULT_CENTERY
-        && (rGradient.GetAngle() / 10) == AreaPropertyPanel::DEFAULT_ANGLE
-        && ((sal_uInt16)((((sal_uInt16)rGradient.GetStartColor().GetRed() + 1) * 100) / 255))
-            == AreaPropertyPanel::DEFAULT_STARTVALUE
-        && ((sal_uInt16)((((sal_uInt16)rGradient.GetEndColor().GetRed() + 1) * 100) / 255))
-            == AreaPropertyPanel::DEFAULT_ENDVALUE
-        && rGradient.GetBorder() == AreaPropertyPanel::DEFAULT_BORDER)
+		&& rGradient.GetYOffset() == AreaPropertyPanel::DEFAULT_CENTERY
+		&& (rGradient.GetAngle() / 10) == AreaPropertyPanel::DEFAULT_ANGLE
+		&& ((sal_uInt16)((((sal_uInt16)rGradient.GetStartColor().GetRed() + 1) * 100) / 255))
+			== AreaPropertyPanel::DEFAULT_STARTVALUE
+		&& ((sal_uInt16)((((sal_uInt16)rGradient.GetEndColor().GetRed() + 1) * 100) / 255))
+			== AreaPropertyPanel::DEFAULT_ENDVALUE
+		&& rGradient.GetBorder() == AreaPropertyPanel::DEFAULT_BORDER)
 	{
-        aGradient = mrAreaPropertyPanel.GetGradient(rGradient.GetGradientStyle());
+		aGradient = mrAreaPropertyPanel.GetGradient(rGradient.GetGradientStyle());
 	}
 	else
-    {
+	{
 		aGradient = rGradient;
-    }
+	}
 	maMtrTrgrCenterX.SetValue(aGradient.GetXOffset());
 	maMtrTrgrCenterY.SetValue(aGradient.GetYOffset());
 	maMtrTrgrAngle.SetValue(aGradient.GetAngle() / 10);
 	maMtrTrgrStartValue.SetValue((sal_uInt16)((((sal_uInt16)aGradient.GetStartColor().GetRed() + 1) * 100) / 255));
 	maMtrTrgrEndValue.SetValue((sal_uInt16)((((sal_uInt16)aGradient.GetEndColor().GetRed() + 1) * 100) / 255));
-	maMtrTrgrBorder.SetValue(aGradient.GetBorder());	
+	maMtrTrgrBorder.SetValue(aGradient.GetBorder());
 }
 
 
@@ -274,14 +276,14 @@ void AreaTransparencyGradientControl::InitStatus(XFillFloatTransparenceItem* pGr
 
 void AreaTransparencyGradientControl::ExecuteValueModify( sal_uInt8 nStartCol, sal_uInt8 nEndCol )
 {
-	//Added 
+	// Added
 	sal_Int16 aMtrValue = (sal_Int16)maMtrTrgrAngle.GetValue();
 	while(aMtrValue<0)
 		aMtrValue += 360;
 	sal_uInt16 nVal = aMtrValue/360;
 	nVal = aMtrValue - nVal*360;
 	maMtrTrgrAngle.SetValue(nVal);
-	//End of new code
+	// End of new code
 	XGradient aTmpGradient(
 		Color(nStartCol, nStartCol, nStartCol),
 		Color(nEndCol, nEndCol, nEndCol),
@@ -292,10 +294,10 @@ void AreaTransparencyGradientControl::ExecuteValueModify( sal_uInt8 nStartCol, s
 		(sal_uInt16)maMtrTrgrBorder.GetValue(),
 		100, 100);
 
-    mrAreaPropertyPanel.SetGradient(aTmpGradient);
+	mrAreaPropertyPanel.SetGradient(aTmpGradient);
 
 	SfxItemPool* pPool = NULL;
-	bool bEnable = true;		
+	bool bEnable = true;
 	XFillFloatTransparenceItem aGradientItem(pPool,aTmpGradient, bEnable );
 
 	mpBindings->GetDispatcher()->Execute( SID_ATTR_FILL_FLOATTRANSPARENCE, SFX_CALLMODE_RECORD, &aGradientItem, 0L );
