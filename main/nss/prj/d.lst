@@ -17,6 +17,7 @@ mkdir: %_DEST%\inc%_EXT%\mozilla\nss
 ..\%__SRC%\lib\libnss3.* %_DEST%\lib%_EXT%\libnss3.*
 ..\%__SRC%\lib\libnssckbi.* %_DEST%\lib%_EXT%\libnssckbi.*
 ..\%__SRC%\lib\libnssdbm3.* %_DEST%\lib%_EXT%\libnssdbm3.*
+..\%__SRC%\lib\libnsssysinit.* %_DEST%\lib%_EXT%\libnsssysinit.*
 ..\%__SRC%\lib\libnssutil3.* %_DEST%\lib%_EXT%\libnssutil3.*
 ..\%__SRC%\lib\libplc4.* %_DEST%\lib%_EXT%\libplc4.*
 ..\%__SRC%\lib\libplds4.* %_DEST%\lib%_EXT%\libplds4.*
