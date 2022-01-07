@@ -551,6 +551,11 @@ void SerfRequestProcessor::postprocessProcessor( const apr_status_t inStatus )
         }
         break;
 
+    case SERF_SSL_CERT_UNKNOWN_FAILURE:
+        mpDAVException = new DAVException(DAVException::DAV_HTTP_ERROR,
+                                          rtl::OUString::createFromAscii("SSL certificate failure"));
+        break;
+
     default:
         {
             // APR can help us describe this error
