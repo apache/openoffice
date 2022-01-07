@@ -591,6 +591,16 @@ apr_status_t SerfSession::verifySerfCertificateChain (
                 (security::CertificateValidity::INVALID | security::CertificateValidity::REVOKED)) != 0)
         {
             // Certificate (chain) is invalid.
+            if (nVerificationResult & security::CertificateValidity::INVALID) {
+                OSL_TRACE("Certificate \"%s\" for host \"%s\" is invalid",
+                          rtl::OUStringToOString(sServerCertificateSubject, RTL_TEXTENCODING_UTF8).getStr(),
+                          rtl::OUStringToOString(getHostName(), RTL_TEXTENCODING_UTF8).getStr());
+            }
+            if (nVerificationResult & security::CertificateValidity::REVOKED) {
+                OSL_TRACE("Certificate \"%s\" for host \"%s\" was revoked",
+                          rtl::OUStringToOString(sServerCertificateSubject, RTL_TEXTENCODING_UTF8).getStr(),
+                          rtl::OUStringToOString(getHostName(), RTL_TEXTENCODING_UTF8).getStr());
+            }
             xCertificateContainer->addCertificate(getHostName(), sServerCertificateSubject,  sal_False);
             return SERF_SSL_CERT_UNKNOWN_FAILURE;
         }
