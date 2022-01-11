@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ public:
         translation not in scale.  Both relate to pixel values in the window.
         A position in the model coordinate system does not change when the window content is
         scrolled up or down.  In the window coordinate system (relative
-        to the top left point of the window)scrolling leads to different values.
+        to the top left point of the window) scrolling leads to different values.
     */
     enum CoordinateSystem {
         WindowCoordinateSystem,
@@ -86,7 +86,7 @@ public:
     };
 
     /** Return the bounding box of the page object or one of its graphical
-        parts.  
+        parts.
         @param rWindow
             This device is used to translate between model and window
             coordinates.
@@ -114,7 +114,7 @@ public:
         const CoordinateSystem eCoordinateSystem);
 
     Image GetTransitionEffectIcon (void) const;
-    
+
 private:
     SharedSdWindow mpWindow;
     Size maPageObjectSize;
