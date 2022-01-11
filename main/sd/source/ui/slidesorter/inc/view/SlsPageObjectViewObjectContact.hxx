@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -52,7 +52,7 @@ namespace sd { namespace slidesorter { namespace view {
 class SlideSorterView;
 
 /** This object-view-contact of page objects maintains a preview bitmap for
-    the page to speed up redraws of the same.  It does so by colaborating
+    the page to speed up redraws of the same.  It does so by collaborating
     with a cache of bitmaps (see ../cache).
 */
 
@@ -73,7 +73,7 @@ public:
             preview is created every time when requested.
     */
     PageObjectViewObjectContact (
-        ::sdr::contact::ObjectContact& rObjectContact, 
+        ::sdr::contact::ObjectContact& rObjectContact,
         ::sdr::contact::ViewContact& rViewContact,
         const ::boost::shared_ptr<cache::PageCache>& rpCache,
         const ::boost::shared_ptr<controller::Properties>& rpProperties);
@@ -153,7 +153,7 @@ public:
     enum CoordinateSystem { ModelCoordinateSystem, PixelCoordinateSystem };
 
     /** Return the bounding box of the page object or one of its graphical
-        parts.  
+        parts.
         @param rDevice
             This device is used to translate between model and window
             coordinates.
@@ -169,10 +169,10 @@ public:
         BoundingBoxType eType,
         CoordinateSystem eCoordinateSystem) const;
 
-	// create the graphical visualisation data
+	// create the graphical visualization data
 	virtual drawinglayer::primitive2d::Primitive2DSequence createPrimitive2DSequence(const sdr::contact::DisplayInfo& rDisplayInfo) const;
 
-    // access to the current page content primitive vector which may be used for visualisation
+    // access to the current page content primitive vector which may be used for visualization
     const drawinglayer::primitive2d::Primitive2DSequence& getCurrentPageContents() const { return mxCurrentPageContents; }
 
     virtual void ActionChanged (void);
@@ -199,7 +199,7 @@ private:
     bool mbInDestructor;
 
     /// The primitive sequence of the page contents, completely scaled
-    /// and prepared for painiting
+    /// and prepared for painting
     drawinglayer::primitive2d::Primitive2DSequence      mxCurrentPageContents;
 
     ::boost::shared_ptr<cache::PageCache> mpCache;

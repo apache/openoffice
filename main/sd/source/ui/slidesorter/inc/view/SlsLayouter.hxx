@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -44,7 +44,7 @@ class InsertPosition;
 
 
 
-/** Calculate the size and position of page objects displayed by a slide 
+/** Calculate the size and position of page objects displayed by a slide
     sorter.  The layouter takes into account various input values:
     1.) Size of the window in which the slide sorter is displayed.
     2.) Desired and minimal and maximal widths of page objects.
@@ -58,7 +58,7 @@ class InsertPosition;
     2.) The number of columns.
     3.) The size of the enclosing page.
 
-    <p>Sizes and lengths are all in pixel except where explicitly stated 
+    <p>Sizes and lengths are all in pixel except where explicitly stated
     otherwise.</p>
 
     <p>The GetIndex... methods may return indices that are larger than or
@@ -106,7 +106,7 @@ public:
         @param nMaximalColumnCount
             The default value is 5.
     */
-    void SetColumnCount (sal_Int32 nMinimalColumnCount, 
+    void SetColumnCount (sal_Int32 nMinimalColumnCount,
         sal_Int32 nMaximalColumnCount);
 
     /** Central method of this class.  It takes the input values and
@@ -241,7 +241,7 @@ private:
 
 
 /** Collect all values concerning the logical and visual properties of the
-    insertion position that is used for drag-and-drop and copy-and-past.
+    insertion position that is used for drag-and-drop and copy-and-paste.
 */
 class InsertPosition
 {

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -63,7 +63,7 @@ public:
         const model::SharedPageDescriptor& rpDescriptor,
         const Point aMouseModelLocation,
         const bool bIsMouseButtonDown);
-    
+
     void ResetPage (void);
 
     /** Return the number of buttons that are to be displayed in page
@@ -74,7 +74,7 @@ public:
             excluded from the slide show.
     */
     sal_Int32 GetButtonCount (const bool bIsExcluded) const;
-    
+
     /** Return the specified button.
         @param nIndex
             Valid values lie in the range [0,GetButtonCount()).
@@ -128,8 +128,8 @@ public:
         const model::SharedPageDescriptor& rpDescriptor,
         const bool bAnimate);
 
-    /** Return whether the button bar is visible for the givn descriptor (or
-        being faded in.)
+    /** Return whether the button bar is visible for the given descriptor (or
+        being faded in).
     */
     bool IsVisible (const model::SharedPageDescriptor& rpDescriptor);
 
@@ -139,7 +139,7 @@ public:
 
     /** While at least one Lock object exists the button bar will not be
         displayed.  Used, e.g. during a mouse multiselection to avoid
-        confusing and unhelpfull visual signals.
+        confusing and unhelpful visual signals.
     */
     class Lock
     {
@@ -149,7 +149,7 @@ public:
     private:
         ButtonBar& mrButtonBar;
     };
-    
+
 private:
     SlideSorter& mrSlideSorter;
     Size maPageObjectSize;
@@ -173,7 +173,7 @@ private:
         @return
             The returned flag indicates whether the mpDescriptor member
             is set to a new value.
-    */        
+    */
     bool SetPage (const model::SharedPageDescriptor& rpDescriptor);
     SharedButton GetButtonAt (const Point aModelLocation);
     bool SetButtonUnderMouse (const SharedButton& rButton = SharedButton());
