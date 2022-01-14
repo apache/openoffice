@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -43,7 +43,7 @@ namespace sd { namespace slidesorter { namespace controller {
     focused state of the focus page can be toggled with the ToggleFocus()
     method.
 */
-class FocusManager 
+class FocusManager
 {
 public:
     /** Create a new focus manager that operates on the pages of the model
@@ -133,7 +133,7 @@ public:
 
     void SetFocusedPageToCurrentPage (void);
 
-    /** Return <TRUE/> when the focus inidcator is currently shown.  A
+    /** Return <TRUE/> when the focus indicator is currently shown.  A
         prerequisite is that the window managed by this focus manager has
         the input focus as indicated by a <TRUE/> return value of
         HasFocus().  It is not necessary that the focus indicator is
@@ -161,7 +161,7 @@ public:
         typically the tool bar with the close button.
     */
     void SetFocusToToolBox (void);
-    
+
     /** Create an instance of this class to temporarily hide the focus
         indicator.  It is restored to its former visibility state when the
         FocusHider is destroyed.
@@ -227,4 +227,3 @@ private:
 } } } // end of namespace ::sd::slidesorter::controller
 
 #endif
-

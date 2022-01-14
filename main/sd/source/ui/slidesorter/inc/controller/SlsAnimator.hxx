@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,16 +66,16 @@ public:
 
     typedef sal_Int32 AnimationId;
     static const AnimationId NotAnAnimationId = -1;
-    
+
     /** Schedule a new animation for execution.  The () operator of that
         animation will be called with increasing values between 0 and 1 for
         the specified duration.
         @param rAnimation
             The animation operation.
         @param nStartOffset
-            Time in milli seconds before the animation is started.
+            Time in milliseconds before the animation is started.
         @param nDuration
-            The duration in milli seconds.
+            The duration in milliseconds.
     */
     AnimationId AddAnimation (
         const AnimationFunctor& rAnimation,
@@ -112,12 +112,12 @@ private:
     ::boost::scoped_ptr<view::SlideSorterView::DrawLock> mpDrawLock;
 
     AnimationId mnNextAnimationId;
-    
+
     DECL_LINK(TimeoutHandler, Timer*);
 
     /** Execute one step of every active animation.
         @param nTime
-            Time measured in milli seconds with some arbitrary reference point.
+            Time measured in milliseconds with some arbitrary reference point.
         @return
             When one or more animation has finished then <TRUE/> is
             returned.  Call CleanUpAnimationList() in this case.
