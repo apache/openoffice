@@ -59,7 +59,7 @@ class RequestData;
     bitmaps as needing an update but use them while the new bitmap in the
     correct size is not available.</li>
     <li>Give the UI the chance to handle user events between the rendering
-    of differe slides.</li>
+    of different slides.</li>
     <li>Limit the amount of space that may be used for storing preview
     bitmaps and throw.</li>
     </p>
