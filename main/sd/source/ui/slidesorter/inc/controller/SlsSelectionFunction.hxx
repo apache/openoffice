@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -48,7 +48,7 @@ class SlideSorterController;
 class DragAndDropContext;
 
 
-class SelectionFunction 
+class SelectionFunction
     : public FuPoor,
       private ::boost::noncopyable
 {
@@ -56,37 +56,37 @@ public:
     TYPEINFO();
 
 	static FunctionReference Create( SlideSorter& rSlideSorter, SfxRequest& rRequest );
-                                
+
     // Mouse- & Key-Events
 	virtual sal_Bool KeyInput(const KeyEvent& rKEvt);
 	virtual sal_Bool MouseMove(const MouseEvent& rMEvt);
 	virtual sal_Bool MouseButtonUp(const MouseEvent& rMEvt);
 	virtual sal_Bool MouseButtonDown(const MouseEvent& rMEvt);
-                                
+
 	virtual void Activate();
 	virtual void Deactivate();
-                                
+
 	virtual void ScrollStart();
 	virtual void ScrollEnd();
 
-    /// Forward to the clipboard manager.
+    // Forward to the clipboard manager.
 	virtual void DoCut (void);
 
-    /// Forward to the clipboard manager.
+    // Forward to the clipboard manager.
 	virtual void DoCopy (void);
 
-    /// Forward to the clipboard manager.
+    // Forward to the clipboard manager.
 	virtual void DoPaste (void);
 
 	/** is called when the current function should be aborted. <p>
 		This is used when a function gets a KEY_ESCAPE but can also
 		be called directly.
 
-		@returns 
+		@returns
             true if a active function was aborted
 	*/
 	virtual bool cancel();
-    
+
     void MouseDragged (
         const AcceptDropEvent& rEvent,
         const sal_Int8 nDragAction);
@@ -122,7 +122,7 @@ public:
         being interpreted as drag-and-drop start.
     */
     void ResetMouseAnchor (void);
-    
+
 protected:
     SlideSorter& mrSlideSorter;
     SlideSorterController& mrController;
@@ -135,13 +135,13 @@ protected:
 
 private:
 
-    /// The rectangle of the mouse drag selection.
+    // The rectangle of the mouse drag selection.
 	Rectangle maDragSelectionRectangle;
 	bool mbDragSelection;
 
-    /// Box of the insert marker in model coordinates.
+    // Box of the insert marker in model coordinates.
     Rectangle maInsertionMarkerBox;
-    
+
     /** We use this flag to filter out the cases where MouseMotion() is called
         with a pressed mouse button but without a prior MouseButtonDown()
         call.  This is an indication that the mouse button was pressed over
