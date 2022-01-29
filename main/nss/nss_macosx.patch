@@ -1,6 +1,6 @@
-diff -ur misc/nss-3.25/nss/lib/sqlite/config.mk misc/build/nss-3.25/nss/lib/sqlite/config.mk
---- misc/nss-3.25/nss/lib/sqlite/config.mk	2016-06-20 10:11:28.000000000 -0700
-+++ misc/build/nss-3.25/nss/lib/sqlite/config.mk	2016-07-14 23:54:14.437879000 -0700
+diff -ur misc/nss-3.39/nss/lib/sqlite/config.mk misc/build/nss-3.39/nss/lib/sqlite/config.mk
+--- misc/nss-3.39/nss/lib/sqlite/config.mk	2018-08-31 05:55:53.000000000 -0700
++++ misc/build/nss-3.39/nss/lib/sqlite/config.mk	2018-09-10 10:36:01.074375000 -0700
 @@ -35,9 +35,9 @@
  # OSAtomicCompareAndSwapPtrBarrier, which is only available on Mac OS X 10.5
  # (Darwin 9.0) and later. Define SQLITE_WITHOUT_ZONEMALLOC to disable

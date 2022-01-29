@@ -39,13 +39,10 @@ all:
 
 .ELSE
 
-TARFILE_NAME=nss-3.25-with-nspr-4.12
-TARFILE_MD5=4ec9a36c0f7c9360b149491c013b8d50
-TARFILE_ROOTDIR=nss-3.25
-PATCH_FILES=nss.patch \
-	nss_bug_1438426.patch \
-	nss_bug_1348767.patch \
-	nss_bug_1437734.patch
+TARFILE_NAME=nss-3.39-with-nspr-4.20
+TARFILE_MD5=8ac77166663de5c33bba6cb3d0066929
+TARFILE_ROOTDIR=nss-3.39
+PATCH_FILES=nss.patch
 
 .IF "$(OS)"=="MACOSX"
 MACOS_SDK_DIR=$(SDK_PATH)
@@ -65,7 +62,7 @@ USE_64:=1
 .EXPORT : USE_64
 .ENDIF # "$(BUILD64)"=="1"
 
-OUT2LIB=dist$/out$/lib$/*$(DLLPOST)
+OUT2LIB=dist$/*.OBJ$/lib$/*$(DLLPOST)
 
 BUILD_DIR=nss
 BUILD_ACTION= $(GNUMAKE) nss_build_all
@@ -106,20 +103,21 @@ BUILD_DIR=nss
 BUILD_ACTION= NSS_DISABLE_GTESTS=1 NS_USE_GCC=1 CC="$(nss_CC)" CXX="$(nss_CXX)" OS_LIBS="$(nss_LIBS)" OS_TARGET=WIN95 _WIN32_IE=0x500 PATH="$(PATH)" DEFINES=-D_WIN32_IE=0x500 $(GNUMAKE) nss_build_all
 
 OUT2LIB= \
-	dist$/out$/lib$/libnspr4.a \
-	dist$/out$/lib$/libnss3.a \
-	dist$/out$/lib$/libnssdbm3.a \
-	dist$/out$/lib$/libnssutil3.a \
-	dist$/out$/lib$/libplc4.a \
-	dist$/out$/lib$/libplds4.a \
-	dist$/out$/lib$/libsmime3.a \
-	dist$/out$/lib$/libsoftokn3.a \
-	dist$/out$/lib$/libsqlite3.a \
-	dist$/out$/lib$/libssl3.a
+	dist$/*.OBJ$/lib$/libnspr4.a \
+	dist$/*.OBJ$/lib$/libnss3.a \
+	dist$/*.OBJ$/lib$/libnssdbm3.a \
+	dist$/*.OBJ$/lib$/libnssutil3.a \
+	dist$/*.OBJ$/lib$/libplc4.a \
+	dist$/*.OBJ$/lib$/libplds4.a \
+	dist$/*.OBJ$/lib$/libsmime3.a \
+	dist$/*.OBJ$/lib$/libsoftokn3.a \
+	dist$/*.OBJ$/lib$/libsqlite3.a \
+	dist$/*.OBJ$/lib$/libssl3.a
 
 .ELSE			# "$(COM)"=="GCC"
 MOZ_MSVCVERSION= 9
 .EXPORT : MOZ_MSVCVERSION
+PATCH_FILES+=nss_win.patch
 moz_build:=$(shell cygpath -p $(MOZILLABUILD))
 
 #Using WINNT will cause at least that nspr4.dll, plc4.dll, plds4.dll 
@@ -138,24 +136,24 @@ BUILD_ACTION= PATH="$(PATH):$(moz_build)/msys/bin:$(moz_build)/bin:$(moz_build)/
 	-c "cd $(NSS_BUILD_DIR) && make nss_build_all NSS_DISABLE_GTESTS=1"
 
 OUT2LIB= \
-	dist$/out$/lib$/nspr4.lib \
-	dist$/out$/lib$/nss3.lib \
-	dist$/out$/lib$/nssdbm3.lib \
-	dist$/out$/lib$/nssutil3.lib \
-	dist$/out$/lib$/plc4.lib \
-	dist$/out$/lib$/plds4.lib \
-	dist$/out$/lib$/smime3.lib \
-	dist$/out$/lib$/softokn3.lib \
-	dist$/out$/lib$/sqlite3.lib \
-	dist$/out$/lib$/ssl3.lib
+	dist$/WIN954.0_OPT.OBJ$/lib$/nspr4.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/nss3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/nssdbm3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/nssutil3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/plc4.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/plds4.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/smime3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/softokn3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/sqlite3.lib \
+	dist$/WIN954.0_OPT.OBJ$/lib$/ssl3.lib
 
 .ENDIF			# "$(COM)"=="GCC"
 
-OUT2BIN=dist$/out$/lib$/*$(DLLPOST)
+OUT2BIN=dist$/WIN954.0_OPT.OBJ$/lib$/*$(DLLPOST)
 .ENDIF			# "$(GUI)"=="WNT"
 
 
-OUTDIR2INC=dist$/public$/nss dist$/out$/include
+OUTDIR2INC=dist$/public$/nss dist$/*.OBJ$/include
 
 # --- Targets ------------------------------------------------------
 
