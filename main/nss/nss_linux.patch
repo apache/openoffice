@@ -1,6 +1,35 @@
 diff -ur misc/nss-3.39/nss/lib/freebl/Makefile misc/build/nss-3.39/nss/lib/freebl/Makefile
---- misc/nss-3.39/nss/lib/freebl/Makefile	2018-08-31 05:55:53.000000000 -0700
-+++ misc/build/nss-3.39/nss/lib/freebl/Makefile	2018-09-10 10:33:50.973984000 -0700
+--- misc/nss-3.39/nss/lib/freebl/Makefile	2018-08-31 14:55:53.000000000 +0200
++++ misc/build/nss-3.39/nss/lib/freebl/Makefile	2022-01-29 21:49:32.000000000 +0100
+@@ -108,17 +108,17 @@
+ # NSS_X86 means the target is a 32-bits x86 CPU architecture
+ # NSS_X64 means the target is a 64-bits 64 CPU architecture
+ # NSS_X86_OR_X64 means the target is either x86 or x64
+-ifeq (,$(filter-out i386 x386 x86 x86_64,$(CPU_ARCH)))
+-        DEFINES += -DNSS_X86_OR_X64
+-        EXTRA_SRCS += gcm-x86.c aes-x86.c
+-$(OBJDIR)/gcm-x86.o: CFLAGS += -mpclmul -maes
+-$(OBJDIR)/aes-x86.o: CFLAGS += -mpclmul -maes
+-ifneq (,$(USE_64)$(USE_X32))
+-        DEFINES += -DNSS_X64
+-else
+-        DEFINES += -DNSS_X86
+-endif
+-endif
++#ifeq (,$(filter-out i386 x386 x86 x86_64,$(CPU_ARCH)))
++#        DEFINES += -DNSS_X86_OR_X64
++#        EXTRA_SRCS += gcm-x86.c aes-x86.c
++#$(OBJDIR)/gcm-x86.o: CFLAGS += -mpclmul -maes
++#$(OBJDIR)/aes-x86.o: CFLAGS += -mpclmul -maes
++#ifneq (,$(USE_64)$(USE_X32))
++#        DEFINES += -DNSS_X64
++#else
++#        DEFINES += -DNSS_X86
++#endif
++#endif
+ 
+ ifeq ($(OS_TARGET),OSF1)
+     DEFINES += -DMP_ASSEMBLY_MULTIPLY -DMP_NO_MP_WORD
 @@ -156,8 +156,8 @@
      # The Intel AES assembly code requires Visual C++ 2010.
      # if $(_MSC_VER) >= 1600 (Visual C++ 2010)
@@ -12,18 +41,54 @@ diff -ur misc/nss-3.39/nss/lib/freebl/Makefile misc/build/nss-3.39/nss/lib/freeb
  	EXTRA_SRCS += intel-gcm-wrap.c
  	ifeq ($(CLANG_CL),1)
  	    INTEL_GCM_CLANG_CL = 1
-@@ -221,10 +221,10 @@
+@@ -224,8 +224,8 @@
      DEFINES += -DMP_IS_LITTLE_ENDIAN
  #   DEFINES += -DMPI_AMD64_ADD
      # comment the next four lines to turn off Intel HW acceleration.
 -    DEFINES += -DUSE_HW_AES -DINTEL_GCM
 -    ASFILES += intel-aes.s intel-gcm.s
--    EXTRA_SRCS += intel-gcm-wrap.c
--    INTEL_GCM = 1
 +    #DEFINES += -DUSE_HW_AES -DINTEL_GCM
 +    #ASFILES += intel-aes.s intel-gcm.s
-+    EXTRA_SRCS += intel-gcm-wrap.c
-+    INTEL_GCM = 1
+     EXTRA_SRCS += intel-gcm-wrap.c
+     INTEL_GCM = 1
      MPI_SRCS += mpi_amd64.c mp_comba.c
- endif
- ifeq ($(CPU_ARCH),x86)
+diff -ur misc/nss-3.39/nss/lib/freebl/verified/kremlib.h misc/build/nss-3.39/nss/lib/freebl/verified/kremlib.h
+--- misc/nss-3.39/nss/lib/freebl/verified/kremlib.h	2018-08-31 14:55:53.000000000 +0200
++++ misc/build/nss-3.39/nss/lib/freebl/verified/kremlib.h	2022-01-29 21:57:32.000000000 +0100
+@@ -182,11 +182,13 @@
+ /******************************************************************************/
+ 
+ /* ... for Linux */
+-#if defined(__linux__) || defined(__CYGWIN__)
+ #include <endian.h>
++#define __BYTE_ORDER__ __BYTE_ORDER
++#define __ORDER_LITTLE_ENDIAN__ __LITTLE_ENDIAN
++#define __ORDER_BIG_ENDIAN__ __BIG_ENDIAN
+ 
+ /* ... for OSX */
+-#elif defined(__APPLE__)
++#if defined(__APPLE__)
+ #include <libkern/OSByteOrder.h>
+ #define htole64(x) OSSwapHostToLittleInt64(x)
+ #define le64toh(x) OSSwapLittleToHostInt64(x)
+diff -ur misc/nss-3.39/nss/lib/softoken/sdb.c misc/build/nss-3.39/nss/lib/softoken/sdb.c
+--- misc/nss-3.39/nss/lib/softoken/sdb.c	2018-08-31 14:55:53.000000000 +0200
++++ misc/build/nss-3.39/nss/lib/softoken/sdb.c	2022-01-29 22:01:18.000000000 +0100
+@@ -37,7 +37,7 @@
+ #elif defined(XP_UNIX)
+ #include <unistd.h>
+ #endif
+-#if defined(LINUX) && !defined(ANDROID)
++#if defined(LINUX) && !defined(ANDROID) && 0
+ #include <linux/magic.h>
+ #include <sys/vfs.h>
+ #endif
+@@ -1944,7 +1944,7 @@
+     }
+ 
+     if (checkFSType) {
+-#if defined(LINUX) && !defined(ANDROID)
++#if defined(LINUX) && !defined(ANDROID) && 0
+         struct statfs statfs_s;
+         if (statfs(dbname, &statfs_s) == 0) {
+             switch (statfs_s.f_type) {
