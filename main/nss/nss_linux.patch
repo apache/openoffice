@@ -1,79 +1,72 @@
 diff -ur misc/nss-3.39/nss/lib/freebl/Makefile misc/build/nss-3.39/nss/lib/freebl/Makefile
 --- misc/nss-3.39/nss/lib/freebl/Makefile	2018-08-31 14:55:53.000000000 +0200
-+++ misc/build/nss-3.39/nss/lib/freebl/Makefile	2022-01-29 21:49:32.000000000 +0100
-@@ -108,17 +108,17 @@
- # NSS_X86 means the target is a 32-bits x86 CPU architecture
++++ misc/build/nss-3.39/nss/lib/freebl/Makefile	2022-02-01 19:27:40.141084376 +0100
+@@ -109,6 +109,8 @@
  # NSS_X64 means the target is a 64-bits 64 CPU architecture
  # NSS_X86_OR_X64 means the target is either x86 or x64
--ifeq (,$(filter-out i386 x386 x86 x86_64,$(CPU_ARCH)))
--        DEFINES += -DNSS_X86_OR_X64
--        EXTRA_SRCS += gcm-x86.c aes-x86.c
--$(OBJDIR)/gcm-x86.o: CFLAGS += -mpclmul -maes
--$(OBJDIR)/aes-x86.o: CFLAGS += -mpclmul -maes
--ifneq (,$(USE_64)$(USE_X32))
--        DEFINES += -DNSS_X64
--else
--        DEFINES += -DNSS_X86
--endif
--endif
-+#ifeq (,$(filter-out i386 x386 x86 x86_64,$(CPU_ARCH)))
-+#        DEFINES += -DNSS_X86_OR_X64
-+#        EXTRA_SRCS += gcm-x86.c aes-x86.c
-+#$(OBJDIR)/gcm-x86.o: CFLAGS += -mpclmul -maes
-+#$(OBJDIR)/aes-x86.o: CFLAGS += -mpclmul -maes
-+#ifneq (,$(USE_64)$(USE_X32))
-+#        DEFINES += -DNSS_X64
-+#else
-+#        DEFINES += -DNSS_X86
-+#endif
-+#endif
+ ifeq (,$(filter-out i386 x386 x86 x86_64,$(CPU_ARCH)))
++# Only on GCC > 4.3
++ifeq (,$(filter 4.1 4.2 4.3,$(word 1,$(GCC_VERSION)).$(word 2,$(GCC_VERSION))))
+         DEFINES += -DNSS_X86_OR_X64
+         EXTRA_SRCS += gcm-x86.c aes-x86.c
+ $(OBJDIR)/gcm-x86.o: CFLAGS += -mpclmul -maes
+@@ -119,6 +121,7 @@
+         DEFINES += -DNSS_X86
+ endif
+ endif
++endif
  
  ifeq ($(OS_TARGET),OSF1)
      DEFINES += -DMP_ASSEMBLY_MULTIPLY -DMP_NO_MP_WORD
-@@ -156,8 +156,8 @@
-     # The Intel AES assembly code requires Visual C++ 2010.
-     # if $(_MSC_VER) >= 1600 (Visual C++ 2010)
-     ifeq ($(firstword $(sort $(_MSC_VER) 1600)),1600)
--	DEFINES += -DUSE_HW_AES -DINTEL_GCM
--	ASFILES += intel-aes-x86-masm.asm intel-gcm-x86-masm.asm
-+	#DEFINES += -DUSE_HW_AES -DINTEL_GCM
-+	#ASFILES += intel-aes-x86-masm.asm intel-gcm-x86-masm.asm
- 	EXTRA_SRCS += intel-gcm-wrap.c
- 	ifeq ($(CLANG_CL),1)
- 	    INTEL_GCM_CLANG_CL = 1
-@@ -224,8 +224,8 @@
+@@ -224,8 +227,11 @@
      DEFINES += -DMP_IS_LITTLE_ENDIAN
  #   DEFINES += -DMPI_AMD64_ADD
      # comment the next four lines to turn off Intel HW acceleration.
--    DEFINES += -DUSE_HW_AES -DINTEL_GCM
--    ASFILES += intel-aes.s intel-gcm.s
-+    #DEFINES += -DUSE_HW_AES -DINTEL_GCM
-+    #ASFILES += intel-aes.s intel-gcm.s
++ifeq (,$(filter 4.1 4.2 4.3,$(word 1,$(GCC_VERSION)).$(word 2,$(GCC_VERSION))))
++    # Only on GCC > 4.3
+     DEFINES += -DUSE_HW_AES -DINTEL_GCM
+     ASFILES += intel-aes.s intel-gcm.s
++endif
      EXTRA_SRCS += intel-gcm-wrap.c
      INTEL_GCM = 1
      MPI_SRCS += mpi_amd64.c mp_comba.c
 diff -ur misc/nss-3.39/nss/lib/freebl/verified/kremlib.h misc/build/nss-3.39/nss/lib/freebl/verified/kremlib.h
 --- misc/nss-3.39/nss/lib/freebl/verified/kremlib.h	2018-08-31 14:55:53.000000000 +0200
-+++ misc/build/nss-3.39/nss/lib/freebl/verified/kremlib.h	2022-01-29 21:57:32.000000000 +0100
-@@ -182,11 +182,13 @@
++++ misc/build/nss-3.39/nss/lib/freebl/verified/kremlib.h	2022-02-01 19:27:47.193464234 +0100
+@@ -179,12 +179,28 @@
+ 
+ /******************************************************************************/
+ /* Endian-ness macros that can only be implemented in C                       */
++/* Patched to allow build AOO on older and newer systems                      */
  /******************************************************************************/
  
- /* ... for Linux */
+-/* ... for Linux */
 -#if defined(__linux__) || defined(__CYGWIN__)
++/* We are under Linux */
  #include <endian.h>
+ 
++#if defined(__BYTE_ORDER__)
++#define AOO_BYTE_ORDER_OK
++#else
++/* Older headers use different names for these macros */
 +#define __BYTE_ORDER__ __BYTE_ORDER
 +#define __ORDER_LITTLE_ENDIAN__ __LITTLE_ENDIAN
 +#define __ORDER_BIG_ENDIAN__ __BIG_ENDIAN
- 
++#endif
++
++#ifdef AOO_BYTE_ORDER_OK
++/* All required macros are defined */
++
++/* Otherwise, we will end up in the #ifdef's that will define the ones
++   we miss.
++   Please ignore further comments about different architectures.
++*/
  /* ... for OSX */
--#elif defined(__APPLE__)
-+#if defined(__APPLE__)
+ #elif defined(__APPLE__)
  #include <libkern/OSByteOrder.h>
- #define htole64(x) OSSwapHostToLittleInt64(x)
- #define le64toh(x) OSSwapLittleToHostInt64(x)
 diff -ur misc/nss-3.39/nss/lib/softoken/sdb.c misc/build/nss-3.39/nss/lib/softoken/sdb.c
 --- misc/nss-3.39/nss/lib/softoken/sdb.c	2018-08-31 14:55:53.000000000 +0200
-+++ misc/build/nss-3.39/nss/lib/softoken/sdb.c	2022-01-29 22:01:18.000000000 +0100
++++ misc/build/nss-3.39/nss/lib/softoken/sdb.c	2022-02-01 19:27:40.141084376 +0100
 @@ -37,7 +37,7 @@
  #elif defined(XP_UNIX)
  #include <unistd.h>
