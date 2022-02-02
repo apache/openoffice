@@ -94,31 +94,31 @@ Menu RID_SVXMNU_ZOOM
 		{
 			Identifier = ZOOM_200 ;
 			HelpId = HID_MNU_ZOOM_200 ;
-			Text [ en-US ] = "200 %" ;
+			Text = "200 %" ;
 		};
 		MenuItem
 		{
 			Identifier = ZOOM_150 ;
 			HelpId = HID_MNU_ZOOM_150 ;
-			Text [ en-US ] = "150 %" ;
+			Text = "150 %" ;
 		};
 		MenuItem
 		{
 			Identifier = ZOOM_100 ;
 			HelpId = HID_MNU_ZOOM_100 ;
-			Text [ en-US ] = "100 %" ;
+			Text = "100 %" ;
 		};
 		MenuItem
 		{
 			Identifier = ZOOM_75 ;
 			HelpId = HID_MNU_ZOOM_75 ;
-			Text [ en-US ] = "75 %" ;
+			Text = "75 %" ;
 		};
 		MenuItem
 		{
 			Identifier = ZOOM_50 ;
 			HelpId = HID_MNU_ZOOM_50 ;
-			Text [ en-US ] = "50 %" ;
+			Text = "50 %" ;
 		};
 		MenuItem
 		{
@@ -236,7 +236,7 @@ Image RID_SVXBMP_SIGNET_NOTVALIDATED
 {
 	ImageBitmap = Bitmap
 	{
-		File = "notcertificate_11x16.png" ;
+		File = "notcertificate_16.png" ;
 	};
 };
 Image RID_SVXBMP_SIGNET_H
@@ -257,7 +257,7 @@ Image RID_SVXBMP_SIGNET_NOTVALIDATED_H
 {
     ImageBitmap = Bitmap
     {
-        File = "notcertificate_11x16_h.png" ;
+        File = "notcertificate_16_h.png" ;
     };
 };
 
