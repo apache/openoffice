@@ -75,7 +75,7 @@
 
 //==================================================================
 
-#define SC_PREVIEW_SHADOWSIZE	2
+//#define SC_PREVIEW_SHADOWSIZE	2
 
 long lcl_GetDisplayStart( SCTAB nTab, ScDocument* pDoc, long* pPages )
 {
@@ -548,22 +548,22 @@ void ScPreview::DoPrint( ScPreviewLocationData* pFillLocation )
 
 			//	draw shadow
 
-			SetLineColor();
-			SetFillColor( aBorderColor );
+//			SetLineColor();
+//			SetFillColor( aBorderColor );
 
-			Rectangle aPixel;
+//			Rectangle aPixel;
 
-			aPixel = LogicToPixel( Rectangle( nPageEndX, -aOffset.Y(), nPageEndX, nPageEndY ) );
-			aPixel.Top() += SC_PREVIEW_SHADOWSIZE;
-			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
-			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
-			DrawRect( PixelToLogic( aPixel ) );
+//			aPixel = LogicToPixel( Rectangle( nPageEndX, -aOffset.Y(), nPageEndX, nPageEndY ) );
+//			aPixel.Top() += SC_PREVIEW_SHADOWSIZE;
+//			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
+//			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
+//			DrawRect( PixelToLogic( aPixel ) );
 
-			aPixel = LogicToPixel( Rectangle( -aOffset.X(), nPageEndY, nPageEndX, nPageEndY ) );
-			aPixel.Left() += SC_PREVIEW_SHADOWSIZE;
-			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
-			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
-			DrawRect( PixelToLogic( aPixel ) );
+//			aPixel = LogicToPixel( Rectangle( -aOffset.X(), nPageEndY, nPageEndX, nPageEndY ) );
+//			aPixel.Left() += SC_PREVIEW_SHADOWSIZE;
+//			aPixel.Right() += SC_PREVIEW_SHADOWSIZE - 1;
+//			aPixel.Bottom() += SC_PREVIEW_SHADOWSIZE - 1;
+//			DrawRect( PixelToLogic( aPixel ) );
 		}
 	}
 }
