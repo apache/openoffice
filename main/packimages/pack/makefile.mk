@@ -1,5 +1,5 @@
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -7,24 +7,25 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
+
 
 
 PRJ=..
 PRJNAME=packimages
 TARGET=packimages
 
-.INCLUDE:  settings.mk
+.INCLUDE: settings.mk
 # point to an existing directory as default that poses no threat
 # to a "find" that looks for "*.png"
 RSCCUSTOMIMG*=$(PRJ)
@@ -41,10 +42,10 @@ VERBOSESWITCH=
 
 IMAGES := $(COMMONBIN)$/images.zip
 SORTED_LIST=$(RES)$/img$/sorted.lst
-# Custom sets, at 24x24 & 16x16 fall-back to industrial preferentially
+# Custom sets, at 24x24 & 16x16 fall-back to Galaxy preferentially
 CUSTOM_IMAGE_SETS=hicontrast industrial classic
 CUSTOM_IMAGES+=$(foreach,i,$(CUSTOM_IMAGE_SETS) images_$i)
-CUSTOM_PREFERRED_FALLBACK_1*=-c $(SOLARSRC)$/ooo_custom_images$/industrial
+CUSTOM_PREFERRED_FALLBACK_1*=-c $(SOLARSRC)$/default_images$/
 
 CLASSIC_TARBALL=$(SOLARSRC)$/ooo_custom_images$/classic/classic_images.tar.gz
 
@@ -79,14 +80,14 @@ $(MISC)$/hicontrast.flag .PHONY :
 # unpack the classic icon set
 $(MISC)$/classic.flag : $(CLASSIC_TARBALL)
 .IF "$(GUI)"=="OS2"
-    cd $(MISC) && tar zxf $(CLASSIC_TARBALL) && $(TOUCH) $(@:f)
+	cd $(MISC) && tar zxf $(CLASSIC_TARBALL) && $(TOUCH) $(@:f)
 .ELSE
-    cd $(MISC) && gunzip -c $(CLASSIC_TARBALL) | ( tar -xf - ) && $(TOUCH) $(@:f)
+	cd $(MISC) && gunzip -c $(CLASSIC_TARBALL) | ( tar -xf - ) && $(TOUCH) $(@:f)
 .ENDIF
 .IF "$(GUI)"=="UNX"
 	chmod -R g+w $(MISC)$/classic
 .ENDIF
-    @$(TYPE) $@ || echo "ERROR: unpacking $(CLASSIC_TARBALL) failed"
+	@$(TYPE) $@ || echo "ERROR: unpacking $(CLASSIC_TARBALL) failed"
 
 # dependencies
 images_hicontrast : $(MISC)$/hicontrast.flag $(RES)$/img$/commandimagelist.ilst
