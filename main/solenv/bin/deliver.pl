@@ -1002,6 +1002,7 @@ sub push_default_actions
                     'pck',
                     'rdb',
                     'res',
+                    'tmp',
                     'xml'
                 );
     push(@subdirs, 'zip') if $opt_zip;
