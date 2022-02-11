@@ -97,6 +97,7 @@
       <or>
         <contains string="${java.vendor}" substring="Oracle" casesensitive="false" />
         <contains string="${java.vendor}" substring="adoptopenjdk" casesensitive="false" />
+        <contains string="${java.vendor}" substring="azul" casesensitive="false" />
       </or>
     </and>
   </condition>
