@@ -9,11 +9,11 @@ diff -ur misc/nss-3.39/nss/lib/cryptohi/secvfy.c misc/build/nss-3.39/nss/lib/cry
 +checkedSignatureLen(const SECKEYPublicKey *pubk)
 +{
 +    unsigned int sigLen = SECKEY_SignatureLen(pubk);
++    unsigned int maxSigLen;
 +    if (sigLen == 0) {
 +        /* Error set by SECKEY_SignatureLen */
 +        return sigLen;
 +    }
-+    unsigned int maxSigLen;
 +    switch (pubk->keyType) {
 +        case rsaKey:
 +        case rsaPssKey:
