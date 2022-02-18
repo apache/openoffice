@@ -1191,7 +1191,7 @@ void XMLDocumentTransformerContext_Impl::StartElement(
 				bDOM = sal_True;
 			else if( IsXMLToken( rAttrValue, XML_N_DC ) )
 				bDC = sal_True;
-			else if( IsXMLToken( rAttrValue, XML_N_SVG ) )
+			else if( IsXMLToken( rAttrValue, XML_N_SVG_COMPAT ) )
 				bSVG = sal_True;
 		}
 	}
