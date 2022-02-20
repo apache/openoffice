@@ -57,7 +57,7 @@ extern void SwCalcPixStatics( OutputDevice *pOut );
 SwPagePreviewLayout::SwPagePreviewLayout( ViewShell& _rParentViewShell,
                                           const SwRootFrm& _rLayoutRootFrm )
     : mnXFree ( 3 * 142 ),
-      mnYFree ( 4 * 142 ),
+      mnYFree ( 3 * 142 ),
       mrParentViewShell( _rParentViewShell ),
       mrLayoutRootFrm ( _rLayoutRootFrm )
 {
