@@ -3269,16 +3269,15 @@ void ToolBox::ImplDrawMenubutton( ToolBox *pThis, sal_Bool bHighlight )
         }
         else
         {
-            // improve visibility, no gradient anymore. TODO: code cleanup
+            // improve visibility by using a dark gradient
             Gradient g;
             g.SetAngle( pThis->mbHorz ? 0 : 900 );
             g.SetStyle( GRADIENT_LINEAR );
 
-            g.SetStartColor( COL_LIGHTGRAY );
-            g.SetEndColor( COL_LIGHTGRAY );
+            g.SetStartColor( pThis->GetSettings().GetStyleSettings().GetFaceColor() );
+            g.SetEndColor( pThis->GetSettings().GetStyleSettings().GetShadowColor() );
 
             pThis->DrawGradient( aInnerRect, g );
-            pThis->DrawRect( aInnerRect );
         }
 
         Rectangle aRect( aInnerRect );
@@ -3670,7 +3669,7 @@ void ToolBox::ImplDrawItem( sal_uInt16 nPos, sal_Bool bHighlight, sal_Bool bPain
         {
             // left align also to leave space for drop down arrow
             // and when drawing text+image
-            // just center in y, except for vertical (i.e. rotated text)
+            // just center in y, except for vertical (ie rotated text)
             if( mbHorz || !bText )
                 nImageOffY += (nBtnHeight-aImageSize.Height())/2;
         }
@@ -5562,7 +5561,7 @@ void ToolBox::LoseFocus()
 
 // -----------------------------------------------------------------------
 
-// performs the action associated with an item, i.e. simulates clicking the item
+// performs the action associated with an item, ie simulates clicking the item
 void ToolBox::TriggerItem( sal_uInt16 nItemId, sal_Bool bShift, sal_Bool bCtrl )
 {
     mnHighItemId = nItemId;
