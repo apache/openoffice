@@ -3269,13 +3269,13 @@ void ToolBox::ImplDrawMenubutton( ToolBox *pThis, sal_Bool bHighlight )
         }
         else
         {
-            // improve visibility, no gradient anymore. TODO: code cleanup
+            // improve visibility by using a dark gradient
             Gradient g;
             g.SetAngle( pThis->mbHorz ? 0 : 900 );
             g.SetStyle( GRADIENT_LINEAR );
 
-            g.SetStartColor( COL_LIGHTGRAY );
-            g.SetEndColor( COL_LIGHTGRAY );
+            g.SetStartColor( pThis->GetSettings().GetStyleSettings().GetFaceColor() );
+            g.SetEndColor( pThis->GetSettings().GetStyleSettings().GetShadowColor() );
 
             pThis->DrawGradient( aInnerRect, g );
         }
