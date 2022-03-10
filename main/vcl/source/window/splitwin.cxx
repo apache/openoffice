@@ -276,41 +276,41 @@ void SplitWindow::ImplDrawBorder( SplitWindow* pWin )
 
 void SplitWindow::ImplDrawBorderLine( SplitWindow* pWin )
 {
-    if ( pWin->mbFadeOut || pWin->mbAutoHide )
-    {
-        const StyleSettings&	rStyleSettings = pWin->GetSettings().GetStyleSettings();
-        long					nDX = pWin->mnDX;
-        long					nDY = pWin->mnDY;
+	if ( pWin->mbFadeOut || pWin->mbAutoHide )
+	{
+		const StyleSettings&	rStyleSettings = pWin->GetSettings().GetStyleSettings();
+		long					nDX = pWin->mnDX;
+		long					nDY = pWin->mnDY;
 
-        if ( pWin->meAlign == WINDOWALIGN_LEFT )
-        {
-            pWin->SetLineColor( rStyleSettings.GetShadowColor() );
-            pWin->DrawLine( Point( nDX-SPLITWIN_SPLITSIZEEXLN-1, 0 ), Point( nDX-SPLITWIN_SPLITSIZEEXLN-1, nDY-3 ) );
-            pWin->SetLineColor( rStyleSettings.GetLightColor() );
-            pWin->DrawLine( Point( nDX-SPLITWIN_SPLITSIZEEXLN, 1 ), Point( nDX-SPLITWIN_SPLITSIZEEXLN, nDY-4 ) );
-        }
-        else if ( pWin->meAlign == WINDOWALIGN_RIGHT )
-        {
-            pWin->SetLineColor( rStyleSettings.GetShadowColor() );
-            pWin->DrawLine( Point( SPLITWIN_SPLITSIZEEXLN-1, 0 ), Point( SPLITWIN_SPLITSIZEEXLN-1, nDY-3 ) );
-            pWin->SetLineColor( rStyleSettings.GetLightColor() );
-            pWin->DrawLine( Point( SPLITWIN_SPLITSIZEEXLN, 1 ), Point( SPLITWIN_SPLITSIZEEXLN, nDY-4 ) );
-        }
-        else if ( pWin->meAlign == WINDOWALIGN_TOP )
-        {
-            pWin->SetLineColor( rStyleSettings.GetShadowColor() );
-            pWin->DrawLine( Point( 0, nDY-SPLITWIN_SPLITSIZEEXLN-1 ), Point( nDX-3, nDY-SPLITWIN_SPLITSIZEEXLN-1 ) );
-            pWin->SetLineColor( rStyleSettings.GetLightColor() );
-            pWin->DrawLine( Point( 1, nDY-SPLITWIN_SPLITSIZEEXLN ), Point( nDX-4, nDY-SPLITWIN_SPLITSIZEEXLN ) );
-        }
-        else if ( pWin->meAlign == WINDOWALIGN_BOTTOM )
-        {
-            pWin->SetLineColor( rStyleSettings.GetShadowColor() );
-            pWin->DrawLine( Point( 0, SPLITWIN_SPLITSIZEEXLN-1 ), Point( nDX-3, SPLITWIN_SPLITSIZEEXLN-1 ) );
-            pWin->SetLineColor( rStyleSettings.GetLightColor() );
-            pWin->DrawLine( Point( 1, SPLITWIN_SPLITSIZEEXLN ), Point( nDX-4, SPLITWIN_SPLITSIZEEXLN ) );
-        }
-    }
+		if ( pWin->meAlign == WINDOWALIGN_LEFT )
+		{
+			pWin->SetLineColor( rStyleSettings.GetShadowColor() );
+			pWin->DrawLine( Point( nDX-SPLITWIN_SPLITSIZEEXLN-1, 0 ), Point( nDX-SPLITWIN_SPLITSIZEEXLN-1, nDY-3 ) );
+			pWin->SetLineColor( rStyleSettings.GetLightColor() );
+			pWin->DrawLine( Point( nDX-SPLITWIN_SPLITSIZEEXLN, 1 ), Point( nDX-SPLITWIN_SPLITSIZEEXLN, nDY-4 ) );
+		}
+		else if ( pWin->meAlign == WINDOWALIGN_RIGHT )
+		{
+			pWin->SetLineColor( rStyleSettings.GetShadowColor() );
+			pWin->DrawLine( Point( SPLITWIN_SPLITSIZEEXLN-1, 0 ), Point( SPLITWIN_SPLITSIZEEXLN-1, nDY-3 ) );
+			pWin->SetLineColor( rStyleSettings.GetLightColor() );
+			pWin->DrawLine( Point( SPLITWIN_SPLITSIZEEXLN, 1 ), Point( SPLITWIN_SPLITSIZEEXLN, nDY-4 ) );
+		}
+		else if ( pWin->meAlign == WINDOWALIGN_TOP )
+		{
+			pWin->SetLineColor( rStyleSettings.GetShadowColor() );
+			pWin->DrawLine( Point( 0, nDY-SPLITWIN_SPLITSIZEEXLN-1 ), Point( nDX-3, nDY-SPLITWIN_SPLITSIZEEXLN-1 ) );
+			pWin->SetLineColor( rStyleSettings.GetLightColor() );
+			pWin->DrawLine( Point( 1, nDY-SPLITWIN_SPLITSIZEEXLN ), Point( nDX-4, nDY-SPLITWIN_SPLITSIZEEXLN ) );
+		}
+		else if ( pWin->meAlign == WINDOWALIGN_BOTTOM )
+		{
+			pWin->SetLineColor( rStyleSettings.GetShadowColor() );
+			pWin->DrawLine( Point( 0, SPLITWIN_SPLITSIZEEXLN-1 ), Point( nDX-3, SPLITWIN_SPLITSIZEEXLN-1 ) );
+			pWin->SetLineColor( rStyleSettings.GetLightColor() );
+			pWin->DrawLine( Point( 1, SPLITWIN_SPLITSIZEEXLN ), Point( nDX-4, SPLITWIN_SPLITSIZEEXLN ) );
+		}
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -616,7 +616,7 @@ static void ImplCalcSet( ImplSplitSet* pSet,
 					}
 				}
 			}
-			// Rundungsfehler werden hier nicht ausgelichen
+			// Rundungsfehler werden hier nicht ausgeglichen
 			if ( (nAbsItems < (sal_uInt16)(Abs( nSizeDelta ))) && nSizeWinSize )
 			{
 				for ( i = 0; i < nItems; i++ )
@@ -803,7 +803,7 @@ static void ImplCalcSet( ImplSplitSet* pSet,
 				pItems[i].mnSplitSize = pSet->mnSplitSize;
 				if ( bDown )
 				{
-					pItems[i].mnSplitPos  = nPos+pItems[i].mnPixSize;
+					pItems[i].mnSplitPos = nPos+pItems[i].mnPixSize;
 					if ( pItems[i].mnSplitPos+pItems[i].mnSplitSize > nMaxPos )
 						pItems[i].mnSplitSize = nMaxPos-pItems[i].mnSplitPos;
 				}
@@ -1501,7 +1501,7 @@ void SplitWindow::ImplSetWindowSize( long nDelta )
 	}
 	else if ( meAlign == WINDOWALIGN_BOTTOM )
 	{
-        maDragRect.Top() += nDelta;
+		maDragRect.Top() += nDelta;
 		Point aPos = GetPosPixel();
 		aPos.Y() -= nDelta;
 		aSize.Height() += nDelta;
@@ -1514,7 +1514,7 @@ void SplitWindow::ImplSetWindowSize( long nDelta )
 	}
 	else // meAlign == WINDOWALIGN_RIGHT
 	{
-        maDragRect.Left() += nDelta;
+		maDragRect.Left() += nDelta;
 		Point aPos = GetPosPixel();
 		aPos.X() -= nDelta;
 		aSize.Width() += nDelta;
@@ -1534,7 +1534,7 @@ Size SplitWindow::CalcLayoutSizePixel( const Size& aNewSize )
 	if ( mbAutoHide || mbFadeOut )
 		nSplitSize += SPLITWIN_SPLITSIZEEXLN;
 
-	// Wenn Fenster sizeable ist, wird die groesse automatisch nach
+	// Wenn Fenster sizeable ist, wird die Groesse automatisch nach
 	// dem MainSet festgelegt, wenn kein relatives Fenster enthalten
 	// ist
 	if ( mnWinStyle & WB_SIZEABLE )
@@ -1602,7 +1602,7 @@ void SplitWindow::ImplCalcLayout()
 	if ( mbAutoHide || mbFadeOut )
 		nSplitSize += SPLITWIN_SPLITSIZEEXLN;
 
-	// Wenn Fenster sizeable ist, wird die groesse automatisch nach
+	// Wenn Fenster sizeable ist, wird die Groesse automatisch nach
 	// dem MainSet festgelegt, wenn kein relatives Fenster enthalten
 	// ist
 	if ( mnWinStyle & WB_SIZEABLE )
@@ -1700,7 +1700,7 @@ void SplitWindow::ImplUpdateSet( ImplSplitSet* pSet )
 		if ( mbCalc )
 		{
 			// Wenn nicht NOSPLITDRAW gesetzt ist, koennen wir uns das
-			// invalidieren sparen, da bei ImplCalcSet2() die freien flaechen
+			// invalidieren sparen, da bei ImplCalcSet2() die freien Flaechen
 			// sowieso invalidiert werden
 			if ( !mpMainSet->mpItems || (mnWinStyle & WB_NOSPLITDRAW) )
 				pSet = mpMainSet;
@@ -1958,24 +1958,24 @@ void SplitWindow::ImplDrawAutoHide( sal_Bool bInPaint )
 		{
 			if ( !pSVData->maCtrlData.mpSplitHPinImgList )
 			{
-                ResMgr* pResMgr = ImplGetResMgr();
-                if( pResMgr )
+				ResMgr* pResMgr = ImplGetResMgr();
+				if( pResMgr )
 				{
 					Color aNonAlphaMask( 0x00, 0x00, 0xFF );
 					pSVData->maCtrlData.mpSplitHPinImgList = new ImageList(4);
 					pSVData->maCtrlData.mpSplitHPinImgList->InsertFromHorizontalBitmap
 						( ResId( SV_RESID_BITMAP_SPLITHPIN, *pResMgr ), 4, &aNonAlphaMask );
 				}
-		        }
+			}
 			pImageList = pSVData->maCtrlData.mpSplitHPinImgList;
 		}
 		else
 		{
 			if ( !pSVData->maCtrlData.mpSplitVPinImgList )
 			{
-                ResMgr* pResMgr = ImplGetResMgr();
+				ResMgr* pResMgr = ImplGetResMgr();
 				pSVData->maCtrlData.mpSplitVPinImgList = new ImageList(4);
-                if( pResMgr )
+				if( pResMgr )
 				{
 					Color aNonAlphaMask( 0x00, 0x00, 0xFF );
 					pSVData->maCtrlData.mpSplitVPinImgList->InsertFromHorizontalBitmap
@@ -1983,7 +1983,7 @@ void SplitWindow::ImplDrawAutoHide( sal_Bool bInPaint )
 				}
 			}
 			pImageList = pSVData->maCtrlData.mpSplitVPinImgList;
-                }
+		}
 
 		// Image ermitteln und zurueckgeben
 		sal_uInt16 nId;
@@ -2020,10 +2020,10 @@ void SplitWindow::ImplDrawAutoHide( sal_Bool bInPaint )
 
 void SplitWindow::ImplDrawFadeArrow( const Point& rPt, sal_Bool bHorz, sal_Bool bLeft )
 {
-    const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
+	const StyleSettings& rStyleSettings = GetSettings().GetStyleSettings();
 
-    int x( rPt.X() );
-    int y( rPt.Y() );
+	int x( rPt.X() );
+	int y( rPt.Y() );
 
     Color aCol;
     if( !bHorz )
@@ -2095,14 +2095,10 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
         {
 
             DrawPixel( Point(i, y), rStyleSettings.GetDarkShadowColor() );
-            DrawPixel( Point(i+1, y), rStyleSettings.GetShadowColor() );
+            DrawPixel( Point(i+1, y), rStyleSettings.GetDarkShadowColor() );
 
             DrawPixel( Point(i, y+1), rStyleSettings.GetShadowColor() );
-            DrawPixel( Point(i+1, y+1), rStyleSettings.GetFaceColor() );
-            DrawPixel( Point(i+2, y+1), Color(COL_WHITE) );
-
-            DrawPixel( Point(i+1, y+2), Color(COL_WHITE) );
-            DrawPixel( Point(i+2, y+2), Color(COL_WHITE) );
+            DrawPixel( Point(i+1, y+1), rStyleSettings.GeShadowColor() );
             i+=4;
         }
         ImplDrawFadeArrow( Point( i+3, y), bHorz, bLeft );
@@ -2118,14 +2114,10 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
         {
 
             DrawPixel( Point(x, i), rStyleSettings.GetDarkShadowColor() );
-            DrawPixel( Point(x+1, i), rStyleSettings.GetShadowColor() );
+            DrawPixel( Point(x+1, i), rStyleSettings.GetDarkShadowColor() );
 
             DrawPixel( Point(x, i+1), rStyleSettings.GetShadowColor() );
-            DrawPixel( Point(x+1, i+1), rStyleSettings.GetFaceColor() );
-            DrawPixel( Point(x+2, i+1), Color(COL_WHITE) );
-
-            DrawPixel( Point(x+1, i+2), Color(COL_WHITE) );
-            DrawPixel( Point(x+2, i+2), Color(COL_WHITE) );
+            DrawPixel( Point(x+1, i+1), rStyleSettings.GetShadowColor() );
             i+=4;
         }
         ImplDrawFadeArrow( Point( x, i+3), bHorz, bLeft );
@@ -2155,7 +2147,7 @@ void SplitWindow::ImplDrawFadeIn( sal_Bool bInPaint )
 		if ( !bInPaint )
 			Erase( aTempRect );
 
-        ImplDrawGrip( aTempRect, (meAlign == WINDOWALIGN_TOP) || (meAlign == WINDOWALIGN_BOTTOM), bLeft );
+		ImplDrawGrip( aTempRect, (meAlign == WINDOWALIGN_TOP) || (meAlign == WINDOWALIGN_BOTTOM), bLeft );
 	}
 }
 
@@ -2184,49 +2176,49 @@ void SplitWindow::ImplDrawFadeOut( sal_Bool bInPaint )
 		if ( !bInPaint )
 			Erase( aTempRect );
 
-        ImplDrawGrip( aTempRect, (meAlign == WINDOWALIGN_TOP) || (meAlign == WINDOWALIGN_BOTTOM), bLeft );
+		ImplDrawGrip( aTempRect, (meAlign == WINDOWALIGN_TOP) || (meAlign == WINDOWALIGN_BOTTOM), bLeft );
 	}
 }
 
 // -----------------------------------------------------------------------
 void SplitWindow::ImplStartSplit( const MouseEvent& rMEvt )
 {
-    Point aMousePosPixel = rMEvt.GetPosPixel();
-    mnSplitTest = ImplTestSplit( this, aMousePosPixel, mnMouseOff, &mpSplitSet, mnSplitPos );
+	Point aMousePosPixel = rMEvt.GetPosPixel();
+	mnSplitTest = ImplTestSplit( this, aMousePosPixel, mnMouseOff, &mpSplitSet, mnSplitPos );
 
-    if ( mnSplitTest && !(mnSplitTest & SPLIT_NOSPLIT) )
-    {
-        ImplSplitItem*	pSplitItem;
-        long			nCurMaxSize;
-        sal_uInt16			nTemp;
-        sal_Bool			bDown;
-        sal_Bool			bPropSmaller;
+	if ( mnSplitTest && !(mnSplitTest & SPLIT_NOSPLIT) )
+	{
+		ImplSplitItem*	pSplitItem;
+		long			nCurMaxSize;
+		sal_uInt16			nTemp;
+		sal_Bool			bDown;
+		sal_Bool			bPropSmaller;
 
-        mnMouseModifier = rMEvt.GetModifier();
-        if ( !(mnMouseModifier & KEY_SHIFT) || (mnSplitPos+1 >= mpSplitSet->mnItems) )
-            bPropSmaller = sal_False;
-        else
-            bPropSmaller = sal_True;
+		mnMouseModifier = rMEvt.GetModifier();
+		if ( !(mnMouseModifier & KEY_SHIFT) || (mnSplitPos+1 >= mpSplitSet->mnItems) )
+			bPropSmaller = sal_False;
+		else
+			bPropSmaller = sal_True;
 
-        // Hier kann noch die maximale Groesse gesetzt werden
-        StartSplit();
+		// Hier kann noch die maximale Groesse gesetzt werden
+		StartSplit();
 
-        if ( mnMaxSize )
-            nCurMaxSize = mnMaxSize;
-        else
-        {
-            Size aSize = GetParent()->GetOutputSizePixel();
-            if ( mbHorz )
-                nCurMaxSize = aSize.Height();
-            else
-                nCurMaxSize = aSize.Width();
-        }
+		if ( mnMaxSize )
+			nCurMaxSize = mnMaxSize;
+		else
+		{
+			Size aSize = GetParent()->GetOutputSizePixel();
+			if ( mbHorz )
+				nCurMaxSize = aSize.Height();
+			else
+				nCurMaxSize = aSize.Width();
+		}
 
-        if ( mpSplitSet->mpItems )
-        {
-            bDown = sal_True;
-            if ( (mpSplitSet == mpMainSet) && mbBottomRight )
-                bDown = sal_False;
+		if ( mpSplitSet->mpItems )
+		{
+			bDown = sal_True;
+			if ( (mpSplitSet == mpMainSet) && mbBottomRight )
+				bDown = sal_False;
 
             pSplitItem			= &(mpSplitSet->mpItems[mnSplitPos]);
             maDragRect.Left()	= pSplitItem->mnLeft;
@@ -2323,9 +2315,9 @@ void SplitWindow::ImplStartSplit( const MouseEvent& rMEvt )
                     nTemp++;
                 }
             }
-        }
-        else
-        {
+		}
+		else
+		{
             maDragRect.Left()	= mnLeftBorder;
             maDragRect.Top()	= mnTopBorder;
             maDragRect.Right()	= mnDX-mnRightBorder-1;
@@ -2344,38 +2336,38 @@ void SplitWindow::ImplStartSplit( const MouseEvent& rMEvt )
                 else
                     maDragRect.Right() += nCurMaxSize-mnDX-mnLeftBorder;
             }
-        }
+		}
 
-        StartTracking();
+		StartTracking();
 
-        mbDragFull = (GetSettings().GetStyleSettings().GetDragFullOptions() & DRAGFULL_OPTION_SPLIT) != 0;
+		mbDragFull = (GetSettings().GetStyleSettings().GetDragFullOptions() & DRAGFULL_OPTION_SPLIT) != 0;
 
-        ImplSplitMousePos( aMousePosPixel );
+		ImplSplitMousePos( aMousePosPixel );
 
-        if ( !mbDragFull )
-            ImplDrawSplitTracking( this, aMousePosPixel );
-        else
-        {
-            ImplSplitItem*	pItems = mpSplitSet->mpItems;
-            sal_uInt16			nItems = mpSplitSet->mnItems;
-            mpLastSizes = new long[nItems*2];
-            for ( sal_uInt16 i = 0; i < nItems; i++ )
-            {
-                mpLastSizes[i*2]   = pItems[i].mnSize;
-                mpLastSizes[i*2+1] = pItems[i].mnPixSize;
-            }
-        }
-        mnMStartPos = mnMSplitPos;
+		if ( !mbDragFull )
+			ImplDrawSplitTracking( this, aMousePosPixel );
+		else
+		{
+			ImplSplitItem*	pItems = mpSplitSet->mpItems;
+			sal_uInt16			nItems = mpSplitSet->mnItems;
+			mpLastSizes = new long[nItems*2];
+			for ( sal_uInt16 i = 0; i < nItems; i++ )
+			{
+				mpLastSizes[i*2]   = pItems[i].mnSize;
+				mpLastSizes[i*2+1] = pItems[i].mnPixSize;
+			}
+		}
+		mnMStartPos = mnMSplitPos;
 
 		PointerStyle eStyle = POINTER_ARROW;
-        if ( mnSplitTest & SPLIT_HORZ )
-            eStyle = POINTER_HSPLIT;
-        else if ( mnSplitTest & SPLIT_VERT )
-            eStyle = POINTER_VSPLIT;
+		if ( mnSplitTest & SPLIT_HORZ )
+			eStyle = POINTER_HSPLIT;
+		else if ( mnSplitTest & SPLIT_VERT )
+			eStyle = POINTER_VSPLIT;
 
 		Pointer aPtr( eStyle );
 		SetPointer( aPtr );
-    }
+	}
 }
 
 
@@ -2472,7 +2464,7 @@ void SplitWindow::MouseButtonDown( const MouseEvent& rMEvt )
 	if ( mbAutoHideDown || mbFadeInDown || mbFadeOutDown )
 		StartTracking();
 	else
-        ImplStartSplit( rMEvt );
+		ImplStartSplit( rMEvt );
 }
 
 // -----------------------------------------------------------------------
@@ -2700,7 +2692,7 @@ void SplitWindow::Tracking( const TrackingEvent& rTEvt )
 
 long SplitWindow::PreNotify( NotifyEvent& rNEvt )
 {
-    const MouseEvent* pMouseEvt = NULL;
+	const MouseEvent* pMouseEvt = NULL;
 
     if( (rNEvt.GetType() == EVENT_MOUSEMOVE) && (pMouseEvt = rNEvt.GetMouseEvent()) != NULL )
     {
@@ -2735,7 +2727,7 @@ void SplitWindow::Paint( const Rectangle& )
 		ImplDrawBorder( this );
 
 	ImplDrawBorderLine( this );
-    ImplDrawFadeOut( sal_True );
+	ImplDrawFadeOut( sal_True );
 	ImplDrawFadeIn( sal_True );
 	ImplDrawAutoHide( sal_True );
 
@@ -2810,9 +2802,9 @@ void SplitWindow::RequestHelp( const HelpEvent& rHEvt )
 
 			// Text ermitteln und anzeigen
 			XubString aStr;
-            ResMgr* pResMgr = ImplGetResMgr();
-            if( pResMgr )
-                aStr = XubString( ResId( nHelpResId, *pResMgr ) );
+			ResMgr* pResMgr = ImplGetResMgr();
+			if( pResMgr )
+				aStr = XubString( ResId( nHelpResId, *pResMgr ) );
 			if ( rHEvt.GetMode() & HELPMODE_BALLOON )
 				Help::ShowBalloon( this, aHelpRect.Center(), aHelpRect, aStr );
 			else
@@ -2900,8 +2892,8 @@ void SplitWindow::InsertItem( sal_uInt16 nId, Window* pWindow, long nSize,
 	pItem->mnSize	= nSize;
 	pItem->mnId 	= nId;
 	pItem->mnBits	= nBits;
-    pItem->mnMinSize=-1;
-    pItem->mnMaxSize=-1;
+	pItem->mnMinSize=-1;
+	pItem->mnMaxSize=-1;
 
 	if ( pWindow )
 	{
@@ -3026,7 +3018,7 @@ void SplitWindow::RemoveItem( sal_uInt16 nId, sal_Bool bHide )
 	Window* 		pWindow = pItem->mpWindow;
 	Window* 		pOrgParent = pItem->mpOrgParent;
 
-	// Evt. Set loeschen
+	// Evtl. Set loeschen
 	if ( !pWindow )
 		ImplDeleteSet( pItem->mpSet );
 
