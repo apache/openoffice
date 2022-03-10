@@ -2098,7 +2098,7 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
             DrawPixel( Point(i+1, y), rStyleSettings.GetDarkShadowColor() );
 
             DrawPixel( Point(i, y+1), rStyleSettings.GetShadowColor() );
-            DrawPixel( Point(i+1, y+1), rStyleSettings.GeShadowColor() );
+            DrawPixel( Point(i+1, y+1), rStyleSettings.GetShadowColor() );
             i+=4;
         }
         ImplDrawFadeArrow( Point( i+3, y), bHorz, bLeft );
