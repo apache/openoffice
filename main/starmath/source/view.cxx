@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -162,7 +162,7 @@ void SmGraphicWindow::MouseButtonDown(const MouseEvent& rMEvt)
 	if ( rMEvt.IsLeft() && pViewShell->GetEditWindow() )
 	{
 		const SmNode *pTree = pViewShell->GetDoc()->GetFormulaTree();
-		//! kann NULL sein! ZB wenn bereits beim laden des Dokuments (bevor der
+		//! kann NULL sein! Z.B. wenn bereits beim laden des Dokuments (bevor der
 		//! Parser angeworfen wurde) ins Fenster geklickt wird.
 		if (!pTree)
 			return;
@@ -182,7 +182,7 @@ void SmGraphicWindow::MouseButtonDown(const MouseEvent& rMEvt)
 
 #ifdef notnow
 			// include introducing symbols of special char and text
-			// (ie '%' and '"')
+			// (i.e. '%' and '"')
 			sal_uInt16  nExtra = (aToken.eType == TSPECIAL  ||  aToken.eType == TTEXT) ? 1 : 0;
 
 			// set selection to the beginning of the token
@@ -279,7 +279,7 @@ void SmGraphicWindow::SetCursor(const Rectangle &rRect)
 }
 
 const SmNode * SmGraphicWindow::SetCursorPos(sal_uInt16 nRow, sal_uInt16 nCol)
-	// looks for a VISIBLE node in the formula tree with it's token at
+	// looks for a VISIBLE node in the formula tree with its token at
 	// (or around) the position 'nRow', 'nCol' in the edit window
 	// (row and column numbering starts with 1 there!).
 	// If there is such a node the formula-cursor is set to cover that nodes
@@ -543,9 +543,9 @@ void SmCmdBoxWindow::Resize()
 	}
 
 	DecorationView aView(this);
-	aRect.Left() += 8; aRect.Top()	 += 8;
-	aRect.Right()-= 8; aRect.Bottom()-= 8;
-	aRect = aView.DrawFrame( aRect, FRAME_DRAW_DOUBLEIN );
+	aRect.Left() += 6; aRect.Top()	 += 6;
+	aRect.Right()-= 6; aRect.Bottom()-= 6;
+	aRect = aView.DrawFrame( aRect, FRAME_DRAW_IN );
 
 	aEdit.SetPosSizePixel(aRect.TopLeft(), aRect.GetSize());
 	SfxDockingWindow::Resize();
@@ -589,9 +589,9 @@ void SmCmdBoxWindow::Paint(const Rectangle& /*rRect*/)
 		DrawLine( aFrom, aTo );
 		aView.DrawFrame(aRect, FRAME_DRAW_OUT);
 	}
-	aRect.Left() += 8; aRect.Top()	 += 8;
-	aRect.Right()-= 8; aRect.Bottom()-= 8;
-	aRect = aView.DrawFrame( aRect, FRAME_DRAW_DOUBLEIN );
+	aRect.Left() += 6; aRect.Top()	 += 6;
+	aRect.Right()-= 6; aRect.Bottom()-= 6;
+	aRect = aView.DrawFrame( aRect, FRAME_DRAW_IN );
 }
 
 
@@ -654,9 +654,9 @@ IMPL_LINK( SmCmdBoxWindow, InitialFocusTimerHdl, Timer *, EMPTYARG /*pTimer*/ )
     // We want to have the focus in the edit window once Math has been opened
     // to allow for immediate typing.
     // Problem: There is no proper way to do this
-    // Thus: this timer based soultion has been implemented (see GrabFocus below)
+    // Thus: this timer based solution has been implemented (see GrabFocus below)
     //
-    // Follow-up problem (#i114910): grabing the focus may bust the help system since 
+    // Follow-up problem (#i114910): grabbing the focus may bust the help system since
     // it relies on getting the current frame which conflicts with grabbing the focus.
     // Thus aside from the 'GrabFocus' call everything else is to get the
     // help reliably working despite using 'GrabFocus'.
@@ -1046,7 +1046,7 @@ void SmViewShell::DrawText(OutputDevice& rDevice, const Point& rPosition, const 
 }
 
 void SmViewShell::Impl_Print(
-        OutputDevice &rOutDev, 
+        OutputDevice &rOutDev,
         const SmPrintUIOptions &rPrintUIOptions,
         Rectangle aOutRect, Point aZeroPoint )
 {
@@ -1932,4 +1932,3 @@ void SmViewShell::Notify( SfxBroadcaster& , const SfxHint& rHint )
 		}
 	}
 }
-
