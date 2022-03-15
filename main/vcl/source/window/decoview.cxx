@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -269,8 +269,8 @@ static void ImplDrawSymbol( OutputDevice* pDev, const Rectangle& rRect,
 		{
 			if ( !( nSize & 0x01 ))
 			{
-				// An even rectangle size means we have to use a smaller size for 
-				// our arrows as we want to use one pixel for the spearhead! Otherwise 
+				// An even rectangle size means we have to use a smaller size for
+				// our arrows as we want to use one pixel for the spearhead! Otherwise
 				// it will be clipped!
 				nCenterX++;
 				n2 = ( nMin-1 ) / 2;
@@ -742,12 +742,12 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
         pWin = (Window*) pDev;
 
     // UseFlatBorders disables 3D style for all frames except menus
-    // menus may use different border colors (eg on XP)
-    // normal frames will be drawn using the shadow color 
+    // menus may use different border colors (e.g. on XP)
+    // normal frames will be drawn using the shadow color
     // whereas window frame borders will use black
     sal_Bool bFlatBorders = ( !bMenuStyle && rStyleSettings.GetUseFlatBorders() );
 
-    // no flat borders for standard VCL controls (ie formcontrols that keep their classic look)
+    // no flat borders for standard VCL controls (i.e. formcontrols that keep their classic look)
     // will not affect frame windows (like dropdowns)
     if( bFlatBorders && pWin && pWin->GetType() == WINDOW_BORDERWINDOW && (pWin != pWin->ImplGetFrameWindow()) )
     {
@@ -821,7 +821,7 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
             Rectangle aBound, aContent;
             Rectangle aNatRgn( rRect );
             if(	pWin->GetNativeControlRegion(CTRL_FRAME, PART_BORDER,
-				aNatRgn, 0, aControlValue, rtl::OUString(), aBound, aContent) ) 
+				aNatRgn, 0, aControlValue, rtl::OUString(), aBound, aContent) )
             {
                 if( pWin->DrawNativeControl( CTRL_FRAME, PART_BORDER, aContent, CTRL_STATE_ENABLED,
                              aControlValue, rtl::OUString()) )
@@ -918,7 +918,7 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
                                                    rStyleSettings.GetDarkShadowColor() :
 												   rStyleSettings.GetLightBorderColor(),
 												   rStyleSettings.GetDarkShadowColor() );
-                                                   
+
 					}
 
 					rRect.Left()++;
@@ -940,7 +940,7 @@ static void ImplDrawFrame( OutputDevice* pDev, Rectangle& rRect,
 					}
 					else
 					{
-                        // flat menues have no shadow border
+                        // flat menus have no shadow border
                         if( !bMenuStyle || !rStyleSettings.GetUseFlatMenues() )
 						    pDev->ImplDraw2ColorFrame( rRect,
 												    rStyleSettings.GetLightColor(),
@@ -1262,7 +1262,7 @@ void DecorationView::DrawSeparator( const Point& rStart, const Point& rStop, boo
         mpOutDev->SetLineColor( Color( COL_BLACK ) );
     else
         mpOutDev->SetLineColor( rStyleSettings.GetShadowColor() );
-    
+
     mpOutDev->DrawLine( aStart, aStop );
     if ( !(rStyleSettings.GetOptions() & STYLE_OPTION_MONO) )
     {
@@ -1281,4 +1281,3 @@ void DecorationView::DrawSeparator( const Point& rStart, const Point& rStop, boo
     }
     mpOutDev->Pop();
 }
-

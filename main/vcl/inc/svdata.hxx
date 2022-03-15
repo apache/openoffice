@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -174,7 +174,7 @@ struct ImplSVAppData
                                                             // in window arrangers
 
     bool                    mbConversionMode;               // true allows further optimizations during document conversion in different code areas.
-    
+
     /** Controls whether showing any IME status window is toggled on or off.
 
         Only meaningful if showing IME status windows can be toggled on and off
@@ -184,7 +184,7 @@ struct ImplSVAppData
 
 	long m_bEnableAccessInterface;
                             DECL_STATIC_LINK( ImplSVAppData, ImplQuitMsg, void* );
-                           
+
 };
 
 
@@ -207,7 +207,7 @@ struct ImplSVGDIData
     ImplPrnQueueList*       mpPrinterQueueList; // List of all printer queue
     ImplDevFontList*        mpScreenFontList;   // Screen-Font-List
     ImplFontCache*          mpScreenFontCache;  // Screen-Font-Cache
-    ImplDirectFontSubstitution* mpDirectFontSubst;// Font-Substitutons defined in Tools->Options->Fonts
+    ImplDirectFontSubstitution* mpDirectFontSubst;// Font-Substitutions defined in Tools - Options - OpenOffice - Fonts
     GraphicConverter*       mpGrfConverter;     // Converter for graphics
     long                    mnRealAppFontX;     // AppFont X-Numenator for 40/tel Width
     long                    mnAppFontX;         // AppFont X-Numenator for 40/tel Width + DialogScaleX
@@ -245,7 +245,7 @@ struct ImplSVWinData
     sal_uInt16                  mnTrackFlags;       // tracking flags
     sal_uInt16                  mnAutoScrollFlags;  // auto scroll flags
     sal_Bool                    mbNoDeactivate;     // sal_True: keine Deactivate durchfuehren
-	sal_Bool					mbNoSaveFocus;		// sal_True: menues must not save/restore focus
+	sal_Bool					mbNoSaveFocus;		// sal_True: menus must not save/restore focus
     sal_Bool                    mbNoSaveBackground; // sal_True: save background is unnecessary or even less performant
 };
 
@@ -261,10 +261,10 @@ struct ImplSVCtrlData
     ImageList*              mpCheckImgList;     // ImageList for CheckBoxes
     ImageList*              mpRadioImgList;     // ImageList for RadioButtons
     ImageList*              mpPinImgList;       // ImageList for PIN
-    ImageList*              mpSplitHPinImgList; // ImageList for Horizontale SplitWindows
-    ImageList*              mpSplitVPinImgList; // ImageList for Vertikale SplitWindows (PIN's)
-    ImageList*              mpSplitHArwImgList; // ImageList for Horizontale SplitWindows (Arrows)
-    ImageList*              mpSplitVArwImgList; // ImageList for Vertikale SplitWindows (Arrows)
+    ImageList*              mpSplitHPinImgList; // ImageList for Horizontal SplitWindows
+    ImageList*              mpSplitVPinImgList; // ImageList for Vertical SplitWindows (PIN's)
+    ImageList*              mpSplitHArwImgList; // ImageList for Horizontal SplitWindows (Arrows)
+    ImageList*              mpSplitVArwImgList; // ImageList for Vertical SplitWindows (Arrows)
     Image*                  mpDisclosurePlus;
     Image*                  mpDisclosurePlusHC;
     Image*                  mpDisclosureMinus;
@@ -415,9 +415,9 @@ FieldUnitStringList* ImplGetCleanedFieldUnits();
 
 // Empty-SV-String
 
-inline const String& ImplGetSVEmptyStr() 
+inline const String& ImplGetSVEmptyStr()
     { return String::EmptyString(); }
-inline const ByteString& ImplGetSVEmptyByteStr() 
+inline const ByteString& ImplGetSVEmptyByteStr()
     { return ByteString::EmptyString(); }
 
 // -----------------------------------------------------------------------
