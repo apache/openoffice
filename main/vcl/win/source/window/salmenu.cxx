@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@
 #include <impbmp.hxx>
 #include <salgdi.hxx>
 
-// uncomment the following line to have ownerdrawn menues, ie, with bitmaps
+// uncomment the following line to have ownerdrawn menus, i.e. with bitmaps
 // however, this is incompatible with OLE inplace editing
 // so it is not activated by default
 //#define OWNERDRAW
@@ -107,9 +107,9 @@ SalMenuItem* WinSalInstance::CreateMenuItem( const SalItemParams* pItemData )
 
         // 'translate' mnemonics
         pSalMenuItem->mText.SearchAndReplace( '~', '&' );
-        
+
         pSalMenuItem->mInfo.fMask = MIIM_TYPE | MIIM_STATE | MIIM_ID | MIIM_DATA;
-        pSalMenuItem->mInfo.fType = MFT_STRING; 
+        pSalMenuItem->mInfo.fType = MFT_STRING;
 #ifdef OWNERDRAW
         if( pItemData->pMenu && !pItemData->pMenu->IsMenuBar() )
             pSalMenuItem->mInfo.fType |= MFT_OWNERDRAW;
@@ -117,7 +117,7 @@ SalMenuItem* WinSalInstance::CreateMenuItem( const SalItemParams* pItemData )
 #endif
         pSalMenuItem->mInfo.dwTypeData = (LPWSTR) pSalMenuItem->mText.GetBuffer();
         pSalMenuItem->mInfo.cch = pSalMenuItem->mText.Len();
-        
+
         pSalMenuItem->mInfo.wID = pItemData->nId;
         pSalMenuItem->mInfo.dwItemData = (ULONG_PTR) pSalMenuItem; // user data
     }
@@ -171,12 +171,12 @@ WinSalMenu::~WinSalMenu()
 sal_Bool WinSalMenu::VisibleMenuBar()
 {
     // The Win32 implementation never shows a native
-    // menubar. Thus, native menues are only visible
+    // menubar. Thus, native menus are only visible
     // when the menu is merged with an OLE container.
     // The reason are missing tooltips, ownerdraw
     // issues and accessibility which are better supported
-    // by VCL menues.
-    // Nevertheless, the native menues are always created
+    // by VCL menus.
+    // Nevertheless, the native menus are always created
     // and the application will properly react to all native
     // menu messages.
 
@@ -407,4 +407,3 @@ WinSalMenuItem::~WinSalMenuItem()
 }
 
 // -------------------------------------------------------------------
-
