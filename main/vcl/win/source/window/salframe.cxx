@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -187,7 +187,7 @@ static void ImplSaveFrameState( WinSalFrame* pFrame )
             if ( bVisible )
                 pFrame->mnShowState = SW_SHOWMAXIMIZED;
             pFrame->mbRestoreMaximize = TRUE;
-            
+
             WINDOWPLACEMENT aPlacement;
             aPlacement.length = sizeof(aPlacement);
             if( GetWindowPlacement( pFrame->mhWnd, &aPlacement ) )
@@ -200,7 +200,7 @@ static void ImplSaveFrameState( WinSalFrame* pFrame )
                 long nLeftDeco = abs( aRect.left - aRect2.left );
                 long nBottomDeco = abs( aRect.bottom - aRect2.bottom );
                 long nRightDeco = abs( aRect.right - aRect2.right );
-                
+
                 pFrame->maState.mnX      = aRect.left + nLeftDeco;
                 pFrame->maState.mnY      = aRect.top + nTopDeco;
                 pFrame->maState.mnWidth  = aRect.right - aRect.left - nLeftDeco - nRightDeco;
@@ -400,7 +400,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
         // this breaks SAL_FRAME_STYLE_SYSTEMCHILD handling, which is not
         // used currently. Probably SAL_FRAME_STYLE_SYSTEMCHILD should be
         // removed again.
-        
+
         // nSysStyle  |= WS_CLIPCHILDREN;
         if ( hWndParent )
         {
@@ -410,7 +410,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
         }
         else
         {
-            // Only with WS_OVRLAPPED we get a useful default position/size
+            // Only with WS_OVERLAPPED we get a useful default position/size
             if ( (nSalFrameStyle & (SAL_FRAME_STYLE_SIZEABLE | SAL_FRAME_STYLE_MOVEABLE)) ==
                  (SAL_FRAME_STYLE_SIZEABLE | SAL_FRAME_STYLE_MOVEABLE) )
                 nSysStyle |= WS_OVERLAPPED;
@@ -418,7 +418,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
             {
                 nSysStyle |= WS_POPUP;
                 if ( !(nSalFrameStyle & SAL_FRAME_STYLE_MOVEABLE) )
-                    nExSysStyle |= WS_EX_TOOLWINDOW;    // avoid taskbar appearance, for eg splash screen
+                    nExSysStyle |= WS_EX_TOOLWINDOW;    // avoid taskbar appearance, for e.g. splash screen
             }
         }
 
@@ -445,7 +445,7 @@ SalFrame* ImplSalCreateFrame( WinSalInstance* pInst,
                 nExSysStyle |= WS_EX_APPWINDOW;
         }
         if( nSalFrameStyle & SAL_FRAME_STYLE_TOOLWINDOW
-            // #100656# toolwindows lead to bad alt-tab behaviour, if they have the focus
+            // #100656# toolwindows lead to bad alt-tab behavior, if they have the focus
             // you must press it twice to leave the application
             // so toolwindows are only used for non sizeable windows
             // which are typically small, so a small caption makes sense
@@ -911,7 +911,7 @@ static void ImplSalCalcFullScreenSize( const WinSalFrame* pFrame,
                     if( xMonitor->getPropertyValue( OUString( RTL_CONSTASCII_USTRINGPARAM( "ScreenArea" ) ) ) >>= aRect )
                     {
                         aCombined.Union( Rectangle( aRect.X, aRect.Y, aRect.X+aRect.Width, aRect.Y+aRect.Height ) );
-                    }  
+                    }
                 }
             }
             nScreenX  = aCombined.Left();
@@ -1313,12 +1313,12 @@ static void ImplSalShow( HWND hWnd, sal_Bool bVisible, sal_Bool bNoActivate )
             HDC dc = GetDC( hWnd );
             RECT aRect;
             GetClientRect( hWnd, &aRect );
-            FillRect( dc, &aRect, (HBRUSH) (COLOR_MENU+1) ); // choose the menucolor, because its mostly noticeable for menues
+            FillRect( dc, &aRect, (HBRUSH) (COLOR_MENU+1) ); // choose the menucolor, because it's mostly noticeable for menus
             ReleaseDC( hWnd, dc );
         }
 
         // #i4715, matrox centerpopup might have changed our position
-        // reposition popups without caption (menues, dropdowns, tooltips)
+        // reposition popups without caption (menus, dropdowns, tooltips)
         GetWindowRect( hWnd, &aRectPostMatrox );
         if( (GetWindowStyle( hWnd ) & WS_POPUP) &&
             !pFrame->mbCaption &&
@@ -1519,7 +1519,7 @@ void WinSalFrame::SetPosSize( long nX, long nY, long nWidth, long nHeight,
             }
     }
 
-    // #i3338# to be conformant to UNIX we must position the client window, ie without the decoration
+    // #i3338# to be conformant to UNIX we must position the client window, i.e. without the decoration
     // #i43250# if the position was read from the system (GetWindowRect(), see above), it must not be modified
     if ( nFlags & SAL_FRAME_POSSIZE_X )
         nX += aWinRect.left;
@@ -1896,7 +1896,7 @@ void WinSalFrame::SetWindowState( const SalFrameState* pState )
         nHeight = aWinRect.bottom-aWinRect.top;
 
     // Adjust Window in the screen:
-    // if it does not fit into the screen do nothing, ie default pos/size will be used
+    // if it does not fit into the screen do nothing, i.e. default pos/size will be used
     // if there is an overlap with the screen border move the window while keeping its size
 
     if( nWidth > nScreenWidth || nHeight > nScreenHeight )
@@ -2185,7 +2185,7 @@ static void ImplSalToTop( HWND hWnd, sal_uInt16 nFlags )
     WinSalFrame* pToTopFrame = GetWindowPtr( hWnd );
     if( pToTopFrame && (pToTopFrame->mnStyle & SAL_FRAME_STYLE_SYSTEMCHILD) != 0 )
         BringWindowToTop( hWnd );
-    
+
     if ( nFlags & SAL_FRAME_TOTOP_FOREGROUNDTASK )
     {
         // This magic code is necessary to connect the input focus of the
@@ -2979,8 +2979,8 @@ void WinSalFrame::UpdateSettings( AllSettings& rSettings )
             aStyleSettings.SetMenuBarColor( ImplWinColorToSal( GetSysColor( COLOR_MENUBAR ) ) );
             aStyleSettings.SetMenuHighlightColor( ImplWinColorToSal( GetSysColor( COLOR_MENUHILIGHT ) ) );
             aStyleSettings.SetMenuBorderColor( ImplWinColorToSal( GetSysColor( COLOR_3DSHADOW ) ) );
-            
-            // flat borders for our controls etc. as well in this mode (ie, no 3d borders)
+
+            // flat borders for our controls etc. as well in this mode (i.e. no 3D borders)
             // this is not active in the classic style appearance
             aStyleSettings.SetUseFlatBorders( TRUE );
         }
@@ -2992,7 +2992,7 @@ void WinSalFrame::UpdateSettings( AllSettings& rSettings )
        ImplDwmIsCompositionEnabled()
        )
     {
-        // in aero menuitem highlight text is drawn in the same color as normal
+        // in Aero menuitem highlight text is drawn in the same color as normal
         aStyleSettings.SetMenuHighlightTextColor( aStyleSettings.GetMenuTextColor() );
         pSVData->maNWFData.mnMenuFormatExtraBorder = 2;
         pSVData->maNWFData.maMenuBarHighlightTextColor = aStyleSettings.GetMenuTextColor();
@@ -3065,7 +3065,7 @@ void WinSalFrame::UpdateSettings( AllSettings& rSettings )
     aStyleSettings.SetFloatTitleFont( aFloatTitleFont );
     aStyleSettings.SetHelpFont( aHelpFont );
     aStyleSettings.SetIconFont( aIconFont );
-    // We prefer Arial in the russian version, because MS Sans Serif
+    // We prefer Arial in the Russian version, because MS Sans Serif
     // is to wide for the dialogs
     if ( rSettings.GetLanguage() == LANGUAGE_RUSSIAN )
     {
@@ -3406,7 +3406,7 @@ static long ImplHandleMouseMsg( HWND hWnd, UINT nMsg,
                 pSalData->mpMouseLeaveTimer = new AutoTimer;
                 pSalData->mpMouseLeaveTimer->SetTimeout( SAL_MOUSELEAVE_TIMEOUT );
                 pSalData->mpMouseLeaveTimer->Start();
-                // We dont need to set a timeout handler, because we test
+                // We don't need to set a timeout handler, because we test
                 // for mouseleave in the timeout callback
             }
             aMouseEvt.mnButton = 0;
@@ -3426,7 +3426,7 @@ static long ImplHandleMouseMsg( HWND hWnd, UINT nMsg,
                     delete pSalData->mpMouseLeaveTimer;
                     pSalData->mpMouseLeaveTimer = NULL;
                 }
-                // Mouse-Coordinaates are relativ to the screen
+                // Mouse-Coordinates are relative to the screen
                 POINT aPt;
                 aPt.x = (short)LOWORD( lParam );
                 aPt.y = (short)HIWORD( lParam );
@@ -3473,7 +3473,7 @@ static long ImplHandleMouseMsg( HWND hWnd, UINT nMsg,
     }
 
 	// check if this window was destroyed - this might happen if we are the help window
-	// and sent a mouse leave message to the application which killed the help window, ie ourself
+	// and sent a mouse leave message to the application which killed the help window, i.e. ourself
 	if( !IsWindow( hWnd ) )
 		return 0;
 
@@ -3689,7 +3689,7 @@ sal_Bool WinSalFrame::MapUnicodeToKeyCode( sal_Unicode aUnicode, LanguageType aL
             BYTE vkeycode   = LOBYTE(scan);
             BYTE shiftstate = HIBYTE(scan);
 
-            // Last argument is set to FALSE, because there's no decission made
+            // Last argument is set to FALSE, because there's no decision made
             // yet which key should be assigned to MOD3 modifier on Windows.
             // Windows key - user's can be confused, because it should display
             //               Windows menu (applies to both left/right key)
@@ -3955,14 +3955,14 @@ static long ImplHandleKeyMsg( HWND hWnd, UINT nMsg,
                 aKeyEvt.mnTime      = GetMessageTime();
                 aKeyEvt.mnCode     |= nModCode;
                 aKeyEvt.mnRepeat    = nRepeat;
-                
+
                 if( (nModCode & (KEY_MOD1|KEY_MOD2)) == (KEY_MOD1|KEY_MOD2) &&
                     aKeyEvt.mnCharCode )
                 {
                      // this is actually AltGr and should not be handled as Alt
                      aKeyEvt.mnCode &= ~(KEY_MOD1|KEY_MOD2);
                 }
-                
+
                 bIgnoreCharMsg = bCharPeek ? TRUE : FALSE;
                 long nRet = pFrame->CallCallback( nEvent, &aKeyEvt );
                 // independent part only reacts on keyup but Windows does not send
@@ -4749,7 +4749,7 @@ static int ImplHandleMinMax( HWND hWnd, LPARAM lParam )
 
                 ImplSalAddBorder( pFrame, nWidth, nHeight );
 
-                if( nWidth > 0 && nHeight > 0 ) // protect against int overflow due to INT_MAX initialisation
+                if( nWidth > 0 && nHeight > 0 ) // protect against int overflow due to INT_MAX initialization
                 {
                     if ( pMinMax->ptMaxTrackSize.x > nWidth )
                         pMinMax->ptMaxTrackSize.x = nWidth;
@@ -4769,7 +4769,7 @@ static int ImplHandleMinMax( HWND hWnd, LPARAM lParam )
 
 // retrieves the SalMenuItem pointer from a hMenu
 // the pointer is stored in every item, so if no position
-// is specified we just use the first item (ie, pos=0)
+// is specified we just use the first item (i.e. pos=0)
 // if bByPosition is FALSE then nPos denotes a menu id instead of a position
 static WinSalMenuItem* ImplGetSalMenuItem( HMENU hMenu, UINT nPos, sal_Bool bByPosition=TRUE )
 {
@@ -5074,8 +5074,8 @@ static int ImplHandleMenuActivate( HWND hWnd, WPARAM wParam, LPARAM )
     // WORD nPos = LOWORD (lParam);
     // sal_Bool bWindowMenu = (sal_Bool) HIWORD(lParam);
 
-    // Send activate and deactivate together, so we have not keep track of opened menues
-    // this will be enough to have the menues updated correctly
+    // Send activate and deactivate together, so we have not keep track of opened menus
+    // this will be enough to have the menus updated correctly
     SalMenuEvent aMenuEvt;
     WinSalMenuItem *pSalMenuItem = ImplGetSalMenuItem( hMenu, 0 );
     if( pSalMenuItem )
@@ -5114,7 +5114,7 @@ static int ImplHandleMenuSelect( HWND hWnd, WPARAM wParam, LPARAM lParam )
     long nRet = 0;
     if ( hMenu && !pFrame->mLastActivatedhMenu )
     {
-        // we never activated a menu (ie, no WM_INITMENUPOPUP has occurred yet)
+        // we never activated a menu (i.e. no WM_INITMENUPOPUP has occurred yet)
         // which means this must be the menubar -> send activation/deactivation
         SalMenuEvent aMenuEvt;
         WinSalMenuItem *pSalMenuItem = ImplGetSalMenuItem( hMenu, nId, bByPosition );
@@ -5494,7 +5494,7 @@ static sal_Bool ImplHandleIMECompositionInput( WinSalFrame* pFrame,
             else
             {
                 // Because Cursor-Position and DeltaStart never updated
-                // from the korean input engine, we must handle this here
+                // from the Korean input engine, we must handle this here
                 if ( lParam & CS_INSERTCHAR )
                 {
                     aEvt.mnCursorPos = nTextLen;
@@ -5714,10 +5714,10 @@ static LRESULT ImplHandleIMEReconvertString( HWND hWnd, LPARAM lParam )
     {
 	// The first call for reconversion.
 	pFrame->CallCallback( SALEVENT_STARTRECONVERSION, (void*)NULL );
-	
+
 	// Retrieve the surrounding text from the focused control.
 	pFrame->CallCallback( SALEVENT_SURROUNDINGTEXTREQUEST, (void*)&aEvt );
-    
+
 	if( aEvt.maText.Len() == 0 )
 	{
 	    return 0;
@@ -5830,7 +5830,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
     static int  bInWheelMsg = FALSE;
 	static int	bInQueryEnd = FALSE;
 
-    // By WM_CRETAE we connect the frame with the window handle
+    // By WM_CREATE we connect the frame with the window handle
     if ( nMsg == WM_CREATE )
     {
         // Window-Instanz am Windowhandle speichern
@@ -6169,7 +6169,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
             break;
 
         case WM_IME_CHAR:
-            // #103487#, some IMEs (eg, those that do not work onspot)
+            // #103487#, some IMEs (e.g. those that do not work onspot)
             //           may send WM_IME_CHAR instead of WM_IME_COMPOSITION
             // we just handle it like a WM_CHAR message - seems to work fine
             ImplSalYieldMutexAcquireWithWait();
@@ -6211,7 +6211,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 
 					if (Application::GetSettings().GetMiscSettings().GetEnableATToolSupport())
 					{
-						// Make sure to launch Accessibiliity only the following criteria are satisfied to avoid RFT interrupts regular acc processing
+						// Make sure to launch Accessibility only the following criteria are satisfied to avoid RFT interrupts regular acc processing
 						if (g_acc_manager1 == NULL)
 						{
 							sal_Bool bCancelled(sal_False);
@@ -6235,7 +6235,7 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 								long RetResult = g_acc_manager1->getAccObjectPtr((long)hWnd, lParam, wParam);
 								if(RetResult != 0)
 								{
-									rDef = FALSE;					
+									rDef = FALSE;
 									return (HRESULT)RetResult;
 								}
 							}
@@ -6244,11 +6244,11 @@ LRESULT CALLBACK SalFrameWndProc( HWND hWnd, UINT nMsg, WPARAM wParam, LPARAM lP
 				}
 				break;
 			}
-#endif			
+#endif
 
         case WM_APPCOMMAND:
             if( ImplHandleAppCommand( hWnd, lParam ) )
-            {                
+            {
                 rDef = false;
                 nRet = 1;
             }
@@ -6477,12 +6477,12 @@ bool WNTEnableAccessInterface(bool bEnable)
 {
     ImplSVData* pSVData = ImplGetSVData();
 
-	BOOL bPreVal = pSVData->maAppData.m_bEnableAccessInterface; 
+	BOOL bPreVal = pSVData->maAppData.m_bEnableAccessInterface;
 	long nEnable= bEnable;
 	::InterlockedExchange(
 		(LPLONG)&(pSVData->maAppData.m_bEnableAccessInterface),
 		nEnable);
-	
+
 	return bPreVal;
 }
 #endif
