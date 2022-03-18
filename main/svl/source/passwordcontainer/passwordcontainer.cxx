@@ -481,6 +481,26 @@ void SAL_CALL PasswordContainer::disposing( const EventObject& ) throw(RuntimeEx
 
 //-------------------------------------------------------------------------
 
+/**
+ * @brief Decode a master password.
+ *
+ * @param aMasterPassword master password to decode.
+ * It must contain RTL_DIGEST_LENGTH_MD5 * 2 characters.
+ * @param code buffer to hold the decoded password.
+ * It must contain RTL_DIGEST_LENGTH_MD5 characters.
+ */
+static void decodeMasterPassword(const ::rtl::OUString& aMasterPasswd,
+                                 unsigned char *code)
+{
+    OSL_ENSURE( aMasterPasswd.getLength() == RTL_DIGEST_LENGTH_MD5 * 2, "Wrong master password format!\n" );
+    const sal_Unicode *aMasterBuf = aMasterPasswd.getStr();
+    for( int ind = 0; ind < RTL_DIGEST_LENGTH_MD5; ind++ )
+        code[ ind ] = (char)((((aMasterBuf[ind * 2] - 'a') & 15) << 4) |
+                             ((aMasterBuf[ind * 2 + 1] - 'a') & 15));
+}
+
+//-------------------------------------------------------------------------
+
 vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPasswd ) throw(RuntimeException)
 {
     if( aMasterPasswd.getLength() )
@@ -490,11 +510,8 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
         if( aDecoder )
         {
-            OSL_ENSURE( aMasterPasswd.getLength() == RTL_DIGEST_LENGTH_MD5 * 2, "Wrong master password format!\n" );
-
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
-            for( int ind = 0; ind < RTL_DIGEST_LENGTH_MD5; ind++ )
-                code[ ind ] = (char)(aMasterPasswd.copy( ind*2, 2 ).toInt32(16));
+            decodeMasterPassword(aMasterPasswd, code);
 
             rtlCipherError result = rtl_cipher_init (
                     aDecoder, rtl_Cipher_DirectionDecode,
@@ -544,11 +561,9 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
         if( aEncoder )
         {
-            OSL_ENSURE( aMasterPasswd.getLength() == RTL_DIGEST_LENGTH_MD5 * 2, "Wrong master password format!\n" );
 
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
-            for( int ind = 0; ind < RTL_DIGEST_LENGTH_MD5; ind++ )
-                code[ ind ] = (char)(aMasterPasswd.copy( ind*2, 2 ).toInt32(16));
+            decodeMasterPassword(aMasterPasswd, code);
 
             rtlCipherError result = rtl_cipher_init (
                     aEncoder, rtl_Cipher_DirectionEncode,
