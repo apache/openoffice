@@ -87,7 +87,6 @@ ToolBox RID_BIB_TOOLBAR
 		{
 			Identifier = TBC_BT_FILTERCRIT ;
 //			ItemBitmap = Bitmap {File = "sc10715.png" ;} ;
-//			Text [ de ] = "Standard Filter" ;
 			Command = ".uno:Bib/standardFilter" ;
 			Text [ en-US ] = "Standard Filter" ;
 		};
