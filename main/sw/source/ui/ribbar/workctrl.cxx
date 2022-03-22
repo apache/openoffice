@@ -817,13 +817,13 @@ void    SwZoomBox_Impl::Select()
     {
         String sEntry(GetText());
         sEntry.EraseAllChars( '%' );
-        sal_uInt16 nZoom = (sal_uInt16)sEntry.ToInt32();
+        sal_Int32 nZoom = sEntry.ToInt32();
         if(nZoom < MINZOOM)
             nZoom = MINZOOM;
         if(nZoom > MAXZOOM)
             nZoom = MAXZOOM;
 
-        SfxUInt16Item aItem( nSlotId, nZoom );
+        SfxUInt16Item aItem( nSlotId, (sal_uInt16)nZoom );
         if ( FN_PREVIEW_ZOOM == nSlotId )
         {
             Any a;
