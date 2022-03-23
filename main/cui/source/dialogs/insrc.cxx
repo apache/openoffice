@@ -56,14 +56,14 @@ SvxInsRowColDlg::SvxInsRowColDlg(Window* pParent, bool bCol, const rtl::OString&
 	bColumn( bCol )
 {
 	FreeResource();
-	String aTmp( GetText() );
+	String aTmp;
 	if( bColumn )
 	{
-		aTmp += aCol;
+		aTmp = aCol;
 	}
 	else
 	{
-		aTmp += aRow;
+		aTmp = aRow;
 	}
 	SetText( aTmp );
 	SetHelpId( sHelpId );
