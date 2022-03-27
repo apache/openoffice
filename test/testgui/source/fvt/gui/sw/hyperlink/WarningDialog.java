@@ -70,8 +70,11 @@ public class WarningDialog {
                 {"smb://nonexistant.url.com/evil", "smb with path"},
                 // host only
                 {"nfs://nonexistant.url.com", "nfs host only"},
-                {"dav://nonexistant.url.com", "dav host only"},
-                {"smb://nonexistant.url.com", "smb host only"}
+                {"dav://nonexistant.url.com", "dav host only"}
+                // disabled next smb test per this email thread
+                // https://lists.apache.org/thread/k1m3wqz04bj8b5kdg814h24qf45sv811
+                // AOO keeps appending a final / thus changing the intent of the test
+                // {"smb://nonexistant.url.com", "smb host only"}
         });
     }
 
