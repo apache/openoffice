@@ -3987,7 +3987,13 @@ elif test -n "$with_system_python" -o -n "$with_system_libs" && \
 
    python_include=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('INCLUDEPY'));"`
    python_version=`$PYTHON -c "import distutils.sysconfig; print(distutils.sysconfig.get_config_var('VERSION'));"`
-   PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
+   # Python 3.8 and later distinguish building Python modules from linking to the libpython:
+   # (https://bugs.python.org/issue36721)
+   if test "$python_version" -lt "3.8"; then
+       PKG_CHECK_MODULES(PYTHON, python-$python_version, PYTHON_PC="TRUE", PYTHON_PC="" )
+   else
+       PKG_CHECK_MODULES(PYTHON, python-$python_version-embed, PYTHON_PC="TRUE", PYTHON_PC="" )
+   fi
    if test "$PYTHON_PC" != "TRUE"; then
        PYTHON_CFLAGS="-I$python_include"
        PYTHON_LIBS="-lpython$python_version"
