@@ -126,12 +126,6 @@ if ( true )
     URL1 = https://sourceforge.net/projects/icu/files/ICU4C/4.0.1/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
-if ( true )
-    SHA1 = f65fbbd72926c8e7cf0dbd4ada03b0d226f461fd
-    name = serf-1.2.1.tar.bz2
-    URL1 = https://archive.apache.org/dist/serf/serf-1.2.1.tar.bz2
-    URL2 = $(OOO_EXTRAS)$(SHA1)-$(name)
-
 if (SOLAR_JAVA==TRUE && (ENABLE_MEDIAWIKI==YES || ENABLE_REPORTBUILDER==YES))
     MD5 = e8e197d628436490886d17cffa108fe3
     name = commons-logging-1.1.3-src.tar.gz
@@ -154,18 +148,6 @@ if (SYSTEM_OPENSSL!=YES && DISABLE_OPENSSL!=TRUE)
     MD5 = cdc2638f789ecc2db2c91488265686c1
     name = openssl-1.0.2u.tar.gz
     URL1 = https://www.openssl.org/source/old/1.0.2/$(name)
-    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
-
-if ( true )
-    MD5 = 0759294408daace192c935b7c9e76e04
-    name = apr-1.6.5.tar.gz
-    URL1 = https://archive.apache.org/dist/apr/$(name)
-    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
-
-if ( true )
-    MD5 = bd502b9a8670a8012c4d90c31a84955f
-    name = apr-util-1.6.1.tar.gz
-    URL1 = https://archive.apache.org/dist/apr/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SYSTEM_LIBXML != YES)

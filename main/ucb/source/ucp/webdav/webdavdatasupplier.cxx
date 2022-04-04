@@ -39,7 +39,7 @@
 #ifndef _WEBDAV_SESSION_HXX
 #include "DAVSession.hxx"
 #endif
-#include "SerfUri.hxx"
+#include "CurlUri.hxx"
 
 using namespace com::sun::star;
 using namespace http_dav_ucp;
@@ -399,7 +399,7 @@ sal_Bool DataSupplier::getData()
         {
             try
             {
-                SerfUri aURI( 
+                CurlUri aURI( 
                     m_pImpl->m_xContent->getResourceAccess().getURL() );
                 rtl::OUString aPath = aURI.GetPath();
 
@@ -407,7 +407,7 @@ sal_Bool DataSupplier::getData()
                      == sal_Unicode( '/' ) )
                     aPath = aPath.copy( 0, aPath.getLength() - 1 );
 
-                aPath = SerfUri::unescape( aPath );
+                aPath = CurlUri::unescape( aPath );
                 bool bFoundParent = false;
 
                 for ( sal_uInt32 n = 0; n < resources.size(); ++n )
@@ -420,7 +420,7 @@ sal_Bool DataSupplier::getData()
                     {
                         try
                         {
-                            SerfUri aCurrURI( rRes.uri );
+                            CurlUri aCurrURI( rRes.uri );
                             rtl::OUString aCurrPath = aCurrURI.GetPath();
                             if ( aCurrPath.getStr()[ 
                                      aCurrPath.getLength() - 1 ] 
@@ -430,7 +430,7 @@ sal_Bool DataSupplier::getData()
                                         0, 
                                         aCurrPath.getLength() - 1 );
 
-                            aCurrPath = SerfUri::unescape( aCurrPath );
+                            aCurrPath = CurlUri::unescape( aCurrPath );
                             if ( aPath == aCurrPath )
                             {
                                 bFoundParent = true;

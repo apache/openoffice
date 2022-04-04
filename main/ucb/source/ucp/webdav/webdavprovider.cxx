@@ -39,9 +39,7 @@
 #include <comphelper/processfactory.hxx>
 #include <com/sun/star/beans/NamedValue.hpp>
 #include <com/sun/star/container/XNameAccess.hpp>
-#include <apr_version.h>
-#include <apu_version.h>
-#include <serf.h>
+#include <curl/curl.h>
 
 using namespace com::sun::star;
 using namespace http_dav_ucp;
@@ -53,20 +51,9 @@ rtl::OUString &WebDAVUserAgent::operator()() const
     aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( "Apache " ));
     aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( "$ooName/$ooSetupVersion" ));
 #if OSL_DEBUG_LEVEL > 0
-    aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( " apr/" ) );
-    aBuffer.appendAscii(apr_version_string());
-
-    aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( " apr-util/" ) );
-    aBuffer.appendAscii(apu_version_string());
-
-    int major, minor, patch;
-    serf_lib_version(&major, &minor, &patch);
-    aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( " serf/" ) );
-    aBuffer.append( sal_Int32 ( major ) );
-    aBuffer.append( sal_Unicode( L'.' ) );
-    aBuffer.append( sal_Int32 ( minor ) );
-    aBuffer.append( sal_Unicode( L'.' ) );
-    aBuffer.append( sal_Int32 ( patch ) );
+    curl_version_info_data *curl_ver = curl_version_info(CURLVERSION_NOW);
+    aBuffer.appendAscii( RTL_CONSTASCII_STRINGPARAM( " curl/" ) );
+    aBuffer.appendAscii( curl_ver->version );
 #endif
     static rtl::OUString aUserAgent( aBuffer.makeStringAndClear() );
     return aUserAgent;

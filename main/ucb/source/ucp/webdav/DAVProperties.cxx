@@ -57,8 +57,8 @@ const ::rtl::OUString DAVProperties::EXECUTABLE =
 
 // -------------------------------------------------------------------
 // static
-void DAVProperties::createSerfPropName( const rtl::OUString & rFullName,
-                                        SerfPropName & rName )
+void DAVProperties::createCurlPropName( const rtl::OUString & rFullName,
+                                        CurlPropName & rName )
 {
     if ( rFullName.compareToAscii( RTL_CONSTASCII_STRINGPARAM( "DAV:" ) ) == 0 )
     {
@@ -186,7 +186,7 @@ void DAVProperties::createUCBPropName( const char * nspace,
 
 // -------------------------------------------------------------------
 // static
-bool DAVProperties::isUCBDeadProperty( const SerfPropName & rName )
+bool DAVProperties::isUCBDeadProperty( const CurlPropName & rName )
 {
     return ( rName.nspace &&
              ( rtl_str_compareIgnoreAsciiCase(

@@ -772,15 +772,6 @@ AC_ARG_WITH(local-solver,
 AC_ARG_ENABLE(javascript,
 [  --disable-javascript    Disables support for JavaScript macros.
 ],,)
-AC_ARG_WITH(system-apr,
-[  --with-system-apr       Use apr library already installed on the system
-],,)
-AC_ARG_WITH(system-apr-util,
-[  --with-system-apr-util  Use apr-util library already installed on the system
-],,)
-AC_ARG_WITH(system-serf,
-[  --with-system-serf      Use serf library already installed on the system
-],,)
 AC_ARG_WITH(system-coinmp,
 [  --with-system-coinmp    Use CoinMP library already installed on the system
 ],,)
@@ -4429,70 +4420,6 @@ AC_SUBST(ENABLE_JAVASCRIPT)
 
 
 dnl ===================================================================
-dnl Check for system apr
-dnl ===================================================================
-SYSTEM_APR=NO
-APR_CFLAGS=
-APR_LIBS=
-AC_MSG_CHECKING([which libapr to use])
-if test "x$with_system_apr" = "xyes" -o -n "$with_system_libs"; then
-    AC_MSG_RESULT([system])
-    PKG_CHECK_MODULES([APR], [apr-1 >= 1.0])
-    SYSTEM_APR=YES
-else
-    AC_MSG_RESULT([internal])
-    SYSTEM_APR=NO
-    BUILD_TYPE="$BUILD_TYPE APR"
-fi
-AC_SUBST(SYSTEM_APR)
-AC_SUBST(APR_CFLAGS)
-AC_SUBST(APR_LIBS)
-
-
-dnl ===================================================================
-dnl Check for system apr-util
-dnl ===================================================================
-SYSTEM_APR_UTIL=NO
-APR_UTIL_CFLAGS=
-APR_UTIL_LIBS=
-AC_MSG_CHECKING([which libapr-util to use])
-if test "x$with_system_apr_util" = "xyes" -o -n "$with_system_libs"; then
-    AC_MSG_RESULT([system])
-    PKG_CHECK_MODULES([APR_UTIL], [apr-util-1 >= 1.0])
-    SYSTEM_APR_UTIL=YES
-else
-    AC_MSG_RESULT([internal])
-    SYSTEM_APR_UTIL=NO
-    BUILD_TYPE="$BUILD_TYPE APR_UTIL"
-fi
-AC_SUBST(SYSTEM_APR_UTIL)
-AC_SUBST(APR_UTIL_CFLAGS)
-AC_SUBST(APR_UTIL_LIBS)
-
-
-dnl ===================================================================
-dnl Check for system serf
-dnl ===================================================================
-SYSTEM_SERF=NO
-SERF_CFLAGS=
-SERF_LIBS=
-AC_MSG_CHECKING([which libserf to use])
-if test -n "$with_system_serf" -o -n "$with_system_libs" && \
-  test "$with_system_serf" != "no"; then
-    AC_MSG_RESULT([system])
-    PKG_CHECK_MODULES([SERF], [serf-1 >= 1.1])
-    SYSTEM_SERF=YES
-else
-    AC_MSG_RESULT([internal])
-    SYSTEM_SERF=NO
-    BUILD_TYPE="$BUILD_TYPE SERF"
-fi
-AC_SUBST(SYSTEM_SERF)
-AC_SUBST(SERF_CFLAGS)
-AC_SUBST(SERF_LIBS)
-
-
-dnl ===================================================================
 dnl Check for CoinMP
 dnl ===================================================================
 ENABLE_COINMP=
@@ -4555,6 +4482,15 @@ if test -n "$with_system_curl" -o -n "$with_system_libs" && \
    else
       AC_MSG_RESULT([yes])
    fi
+
+   # Does curl use OpenSSL as its SSL implementation? Needed for ucb/source/ucp/webdav.
+   AC_MSG_CHECKING([whether curl uses OpenSSL as its SSL backend])
+   if $CURLCONFIG --ssl-backends | $GREP -q 'OpenSSL'; then
+      AC_MSG_RESULT([yes])
+   else
+      AC_MSG_ERROR([no, cannot use system curl whose SSL backend isn't OpenSSL])
+   fi
+
    CURL_LIBS=`$CURLCONFIG --libs`
    CURL_CFLAGS=`$CURLCONFIG --cflags`
 else
