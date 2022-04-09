@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -85,9 +85,7 @@
 #include "tmplctrl.hxx"
 
 /*************************************************************************
-|*
 |* Register all Controllers
-|*
 \************************************************************************/
 
 
@@ -120,8 +118,8 @@ void SdDLL::RegisterControllers()
 	SdTbxCtlGlueEscDir::RegisterControl( SID_GLUE_ESCDIR, pMod );
 
 	::sd::AnimationChildWindow::RegisterChildWindow(0, pMod);
-    ::sd::NavigatorChildWindow::RegisterChildWindowContext( (sal_uInt16) ::sd::DrawViewShell::GetInterfaceId(), pMod );
-    ::sd::NavigatorChildWindow::RegisterChildWindowContext( (sal_uInt16) ::sd::GraphicViewShell::GetInterfaceId(), pMod );
+	::sd::NavigatorChildWindow::RegisterChildWindowContext( (sal_uInt16) ::sd::DrawViewShell::GetInterfaceId(), pMod );
+	::sd::NavigatorChildWindow::RegisterChildWindowContext( (sal_uInt16) ::sd::GraphicViewShell::GetInterfaceId(), pMod );
 	::sd::LayerDialogChildWindow::RegisterChildWindow(0, pMod);
 
 	Svx3DChildWindow::RegisterChildWindow(0, pMod);
@@ -137,7 +135,7 @@ void SdDLL::RegisterControllers()
 	::avmedia::MediaPlayer::RegisterChildWindow(0, pMod);
 	::sd::LeftPaneImpressChildWindow::RegisterChildWindow(0, pMod);
 	::sd::LeftPaneDrawChildWindow::RegisterChildWindow(0, pMod);
-    ::sfx2::sidebar::SidebarChildWindow::RegisterChildWindow(NULL, pMod);
+	::sfx2::sidebar::SidebarChildWindow::RegisterChildWindow(NULL, pMod);
 
 	SvxFillToolBoxControl::RegisterControl(0, pMod);
 	SvxLineStyleToolBoxControl::RegisterControl(0, pMod);
@@ -160,21 +158,21 @@ void SdDLL::RegisterControllers()
 	SvxGrafContrastToolBoxControl::RegisterControl( SID_ATTR_GRAF_CONTRAST, pMod );
 	SvxGrafGammaToolBoxControl::RegisterControl( SID_ATTR_GRAF_GAMMA, pMod );
 	SvxGrafTransparenceToolBoxControl::RegisterControl( SID_ATTR_GRAF_TRANSPARENCE, pMod );
-    SvxVertTextTbxCtrl::RegisterControl(SID_TEXTDIRECTION_TOP_TO_BOTTOM, pMod);
-    SvxVertTextTbxCtrl::RegisterControl(SID_TEXTDIRECTION_LEFT_TO_RIGHT, pMod);
-    SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_CAPTION_VERTICAL, pMod);
-    SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_FONTWORK_VERTICAL, pMod);
-    SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_TEXT_VERTICAL, pMod);
-    SvxVertTextTbxCtrl::RegisterControl(SID_TEXT_FITTOSIZE_VERTICAL, pMod);
-    SvxCTLTextTbxCtrl::RegisterControl(SID_ATTR_PARA_LEFT_TO_RIGHT, pMod);
-    SvxCTLTextTbxCtrl::RegisterControl(SID_ATTR_PARA_RIGHT_TO_LEFT, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_TEXTDIRECTION_TOP_TO_BOTTOM, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_TEXTDIRECTION_LEFT_TO_RIGHT, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_CAPTION_VERTICAL, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_FONTWORK_VERTICAL, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_DRAW_TEXT_VERTICAL, pMod);
+	SvxVertTextTbxCtrl::RegisterControl(SID_TEXT_FITTOSIZE_VERTICAL, pMod);
+	SvxCTLTextTbxCtrl::RegisterControl(SID_ATTR_PARA_LEFT_TO_RIGHT, pMod);
+	SvxCTLTextTbxCtrl::RegisterControl(SID_ATTR_PARA_RIGHT_TO_LEFT, pMod);
 
 	// StatusBarControls registrieren
 	SvxZoomStatusBarControl::RegisterControl( SID_ATTR_ZOOM, pMod );
 	SvxPosSizeStatusBarControl::RegisterControl( SID_ATTR_SIZE, pMod );
 	SvxModifyControl::RegisterControl( SID_DOC_MODIFIED, pMod );
 	//SvxInsertStatusBarControl::RegisterControl(0, pModd);
-    SvxZoomSliderControl::RegisterControl( SID_ATTR_ZOOMSLIDER, pMod );
+	SvxZoomSliderControl::RegisterControl( SID_ATTR_ZOOMSLIDER, pMod );
 
 	// MenuControls fuer PopupMenu
 	SvxFontMenuControl::RegisterControl( SID_ATTR_CHAR_FONT, pMod );
@@ -188,7 +186,7 @@ void SdDLL::RegisterControllers()
 	SvxUndoRedoControl::RegisterControl( SID_UNDO , pMod );
 	SvxUndoRedoControl::RegisterControl( SID_REDO , pMod );
 
-    svx::FormatPaintBrushToolBoxControl::RegisterControl(SID_FORMATPAINTBRUSH, pMod );
+	svx::FormatPaintBrushToolBoxControl::RegisterControl(SID_FORMATPAINTBRUSH, pMod );
 
 	SvxClipBoardControl::RegisterControl( SID_PASTE, pMod );
 

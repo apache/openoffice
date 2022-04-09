@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -55,9 +55,7 @@ using namespace ::com::sun::star;
 
 
 /*************************************************************************
-|*
 |* Init
-|*
 \************************************************************************/
 
 void SdDLL::Init()
@@ -91,15 +89,15 @@ void SdDLL::Init()
 
 	if (SvtModuleOptions().IsImpress())
 	{
-        // Register the Impress shape types in order to make the shapes accessible.
-        ::accessibility::RegisterImpressShapeTypes ();
-        ::sd::DrawDocShell::Factory().SetDocumentServiceName( String( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.presentation.PresentationDocument" ) ) );
+		// Register the Impress shape types in order to make the shapes accessible.
+		::accessibility::RegisterImpressShapeTypes ();
+		::sd::DrawDocShell::Factory().SetDocumentServiceName( String( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.presentation.PresentationDocument" ) ) );
 	}
 
-    if (SvtModuleOptions().IsDraw())
+	if (SvtModuleOptions().IsDraw())
 	{
-        ::sd::GraphicDocShell::Factory().SetDocumentServiceName( String( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.drawing.DrawingDocument" ) ) );
-    }
+		::sd::GraphicDocShell::Factory().SetDocumentServiceName( String( RTL_CONSTASCII_USTRINGPARAM( "com.sun.star.drawing.DrawingDocument" ) ) );
+	}
 
 	// register your view-factories here
 	RegisterFactorys();
@@ -110,14 +108,14 @@ void SdDLL::Init()
 	// register your controllers here
 	RegisterControllers();
 
-    // SvDraw-Felder registrieren
-    SdrRegisterFieldClasses();
+	// SvDraw-Felder registrieren
+	SdrRegisterFieldClasses();
 
-    // 3D-Objekt-Factory eintragen
-    E3dObjFactory();
+	// 3D-Objekt-Factory eintragen
+	E3dObjFactory();
 
-    // ::com::sun::star::form::component::Form-Objekt-Factory eintragen
-    FmFormObjFactory();
+	// ::com::sun::star::form::component::Form-Objekt-Factory eintragen
+	FmFormObjFactory();
 
 	// Objekt-Factory eintragen
 	SdrObjFactory::InsertMakeUserDataHdl(LINK(&aSdObjectFactory, SdObjectFactory, MakeUserData));
@@ -126,14 +124,12 @@ void SdDLL::Init()
 
 
 /*************************************************************************
-|*
 |* Exit
-|*
 \************************************************************************/
 
 void SdDLL::Exit()
 {
-	// called directly befor unloading the DLL
+	// called directly before unloading the DLL
 	// do whatever you want, Sd-DLL is accessible
 
 	// Objekt-Factory austragen
@@ -144,4 +140,3 @@ void SdDLL::Exit()
 	delete (*ppShlPtr);
 	(*ppShlPtr) = NULL;
 }
-

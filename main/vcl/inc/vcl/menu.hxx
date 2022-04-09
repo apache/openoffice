@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -140,14 +140,14 @@ private:
 	Link				aDeactivateHdl; 	// Deactivate-Handler
 	Link				aHighlightHdl;		// Highlight-Handler
 	Link				aSelectHdl; 		// Highlight-Handler
-	
+
     VclEventListeners   maEventListeners;
     VclEventListeners   maChildEventListeners;
 
 	XubString			aTitleText; 		// PopupMenu-Text
 
 	sal_uLong				nEventId;
-	sal_uInt16				mnHighlightedItemPos; // for native menues: keeps track of the highlighted item 
+	sal_uInt16				mnHighlightedItemPos; // for native menus: keeps track of the highlighted item
 	sal_uInt16				nMenuFlags;
 	sal_uInt16				nDefaultItem;		// Id vom Default-Item
 	sal_uInt16				nSelectedId;
@@ -189,9 +189,9 @@ protected:
     SAL_DLLPRIVATE SalMenu*         ImplGetSalMenu() { return mpSalMenu; }
     SAL_DLLPRIVATE void             ImplSetSalMenu( SalMenu *pMenu );
     SAL_DLLPRIVATE const XubString& ImplGetHelpText( sal_uInt16 nItemId ) const;
-    
+
     // returns native check and option menu symbol height;
-    // return value is Max( rCheckHeight, rRadioHeight ) 
+    // return value is Max( rCheckHeight, rRadioHeight )
     SAL_DLLPRIVATE long             ImplGetNativeCheckAndRadioSize( Window*, long& rCheckHeight, long& rRadioHeight, long &rMaxWidth ) const;
 
     SAL_DLLPRIVATE void                ImplAddDel( ImplMenuDelData &rDel );
@@ -204,7 +204,7 @@ public:
     explicit                Menu( sal_Bool bMenuBar );
 	SAL_DLLPRIVATE Window*  ImplGetWindow() const { return pWindow; }
 
-    
+
     SAL_DLLPRIVATE void ImplSelectWithStart( Menu* pStartMenu = NULL );
 public:
 	virtual 			~Menu();
@@ -304,7 +304,7 @@ public:
 
     void                SetHelpCommand( sal_uInt16 nItemId, const XubString& rString );
     const XubString&    GetHelpCommand( sal_uInt16 nItemId ) const;
-    
+
     void				SetHelpId( sal_uInt16 nItemId, const rtl::OString& rHelpId );
     rtl::OString		GetHelpId( sal_uInt16 nItemId ) const;
 
@@ -324,18 +324,18 @@ public:
 	void				SetLogo();
 	sal_Bool				HasLogo() const { return pLogo ? sal_True : sal_False; }
 	MenuLogo			GetLogo() const;
-	
+
     void                AddEventListener( const Link& rEventListener );
     void                RemoveEventListener( const Link& rEventListener );
     //void                AddChildEventListener( const Link& rEventListener );
     //void                RemoveChildEventListener( const Link& rEventListener );
-	
+
 	Menu&				operator =( const Menu& rMenu );
 
 	// Fuer Menu-'Funktionen'
 	MenuItemList*		GetItemList() const 					{ return pItemList; }
 
-    // returns the system's menu handle if native menues are supported
+    // returns the system's menu handle if native menus are supported
     // pData must point to a SystemMenuData structure
     sal_Bool                GetSystemMenuData( SystemMenuData* pData ) const;
 
@@ -377,14 +377,14 @@ public:
 	void				SetAccessibleDescription( sal_uInt16 nItemId, const XubString& rStr );
 	XubString			GetAccessibleDescription( sal_uInt16 nItemId ) const;
 	Menu* GetStartedFromMenu(){ return pStartedFrom ;}
-    
+
     // returns whether the item a position nItemPos is highlighted or not.
     bool  IsHighlighted( sal_uInt16 nItemPos ) const;
 
     void                HighlightItem( sal_uInt16 nItemPos );
     void                DeHighlight() { HighlightItem( 0xFFFF ); } // MENUITEMPOS_INVALID
-    
-    
+
+
     void doLazyDelete();
 };
 
@@ -447,7 +447,7 @@ public:
     //  - by default a menubar is displayable
     //  - if a menubar is not displayable, its MenuBarWindow will never be shown
     //    and it will be hidden if it was visible before
-    //  - note: if a menubar is diplayable, this does not necessarily mean that it is currently visible
+    //  - note: if a menubar is displayable, this does not necessarily mean that it is currently visible
     void                SetDisplayable( sal_Bool bDisplayable );
     sal_Bool                IsDisplayable() const                       { return mbDisplayable; }
 
@@ -533,4 +533,3 @@ inline PopupMenu& PopupMenu::operator =( const PopupMenu& rMenu )
 }
 
 #endif // _SV_MENU_HXX
-

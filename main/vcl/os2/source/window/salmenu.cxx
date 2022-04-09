@@ -32,7 +32,7 @@
 
 SalMenu* Os2SalInstance::CreateMenu( sal_Bool bMenuBar, Menu* )
 {
-    return NULL;  // no support for native menues
+    return NULL;  // no support for native menus
 }
 
 void Os2SalInstance::DestroyMenu( SalMenu* pSalMenu )
@@ -43,7 +43,7 @@ void Os2SalInstance::DestroyMenu( SalMenu* pSalMenu )
 
 SalMenuItem* Os2SalInstance::CreateMenuItem( const SalItemParams* pItemData )
 {
-    return NULL;  // no support for native menues
+    return NULL;  // no support for native menus
 }
 
 void Os2SalInstance::DestroyMenuItem( SalMenuItem* pSalMenuItem )
@@ -66,7 +66,7 @@ Os2SalMenu::~Os2SalMenu()
 
 sal_Bool Os2SalMenu::VisibleMenuBar()
 {
-    return FALSE; 
+    return FALSE;
 }
 
 void Os2SalMenu::SetFrame( const SalFrame *pFrame )

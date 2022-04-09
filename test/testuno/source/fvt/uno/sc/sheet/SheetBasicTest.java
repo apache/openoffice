@@ -1,20 +1,22 @@
-/* Licensed to the Apache Software Foundation (ASF) under one
+/**************************************************************
+ *
+ * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
  * regarding copyright ownership.  The ASF licenses this file
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 package fvt.uno.sc.sheet;
@@ -86,7 +88,7 @@ public class SheetBasicTest {
 				(short) 1);
 		SCUtil.setCurrentSheet(scDocument, newSpreadSheet);
 
-		// get the new speadsheet name
+		// get the new spreadsheet name
 		assertEquals("actual should equals aa", sheetname,
 				SCUtil.getSCSheetNameByIndex(scDocument, (short) 1));
 
@@ -115,7 +117,7 @@ public class SheetBasicTest {
 	}
 
 	/**
-	 * Test copy and past sheet
+	 * Test copy and paste sheet
 	 */
 	@Test
 	public void copypastesheet() throws Exception {
@@ -295,7 +297,7 @@ public class SheetBasicTest {
 		int firstSheetcolorid = (Integer) sheet1PropertySet
 				.getPropertyValue("TabColor");
 
-		// Get the copyed sheet color
+		// Get the copied sheet color
 		XPropertySet newsheetPropertySet = (XPropertySet) UnoRuntime
 				.queryInterface(XPropertySet.class,
 						SCUtil.getSCSheetByIndex(scDocument, (short) 3));
@@ -416,11 +418,11 @@ public class SheetBasicTest {
 		assertEquals("Expect formula result should be blank", "",
 				SCUtil.getTextFromCell(thirdexternalsheet, 1, 2));
 		
-		//save and close document
+		// save and close document
 		SCUtil.save(scDocument);
 		SCUtil.closeFile(scDocument);
 		
-		//Open souce document and change the value in souce document
+		// Open source document and change the value in source document
 		XSpreadsheetDocument sourcescDocument = SCUtil.reloadFile(unoApp,
 				scDocument, "source.xls");
 		firstSheet = SCUtil.getSCSheetByIndex(sourcescDocument, (short) 0);
@@ -432,7 +434,7 @@ public class SheetBasicTest {
 		SCUtil.save(sourcescDocument);
 		SCUtil.closeFile(sourcescDocument);
 
-		//Open link document
+		// Open link document
 		tempscDocument = SCUtil.reloadFile(unoApp, scDocument, "linked.ods");
 		scDocument = tempscDocument;
 		spreadsheets = scDocument.getSheets();
@@ -441,7 +443,7 @@ public class SheetBasicTest {
 		secondexternalsheet = SCUtil.getSCSheetByIndex(scDocument, (short) 4);
 		thirdexternalsheet = SCUtil.getSCSheetByIndex(scDocument, (short) 5);
 		
-		//get Object SheetLinks for document
+		// get Object SheetLinks for document
 		XPropertySet sheetpropertyset = (XPropertySet) UnoRuntime
 				.queryInterface(XPropertySet.class, scDocument);
 		Object sheetLinks = sheetpropertyset.getPropertyValue("SheetLinks");
@@ -449,7 +451,7 @@ public class SheetBasicTest {
 		XIndexAccess xsheetlinks = (XIndexAccess) UnoRuntime.queryInterface(
 				XIndexAccess.class, sheetLinks);
 		
-		//Refresh all links
+		// Refresh all links
 		for (int i = 0; i < xsheetlinks.getCount(); i++) {
 			Object sheetlink = xsheetlinks.getByIndex(i);
 			XRefreshable xsheetRefreshable = (XRefreshable) UnoRuntime
@@ -475,7 +477,7 @@ public class SheetBasicTest {
 		assertEquals("Expect formula result should be blank", "",
 				SCUtil.getTextFromCell(thirdexternalsheet, 1, 2));
 		
-		//Save the document before close
+		// Save the document before close
 		SCUtil.save(scDocument);
 
 	}

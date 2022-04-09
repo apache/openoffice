@@ -136,6 +136,8 @@ const sal_uInt8 SC_NESTEDBUTTON_UP   = 2;
 #define SC_AUTOFILTER_ALL		0
 #define	SC_AUTOFILTER_TOP10     1
 #define	SC_AUTOFILTER_CUSTOM    2
+#define SC_AUTOFILTER_EMPTY     3
+#define SC_AUTOFILTER_NOTEMPTY  4
 
 //	Modi fuer die FilterListBox
 enum ScFilterBoxMode
@@ -975,7 +977,7 @@ void ScGridWindow::DoAutoFilterMenue( SCCOL nCol, SCROW nRow, sal_Bool bDataSele
 		long nMaxText = 0;
 
 		//	default entries
-        static const sal_uInt16 nDefIDs[] = { SCSTR_ALLFILTER, SCSTR_TOP10FILTER, SCSTR_STDFILTER };
+        static const sal_uInt16 nDefIDs[] = { SCSTR_ALLFILTER, SCSTR_TOP10FILTER, SCSTR_STDFILTER, SCSTR_EMPTY, SCSTR_NOTEMPTY };
 		const sal_uInt16 nDefCount = sizeof(nDefIDs) / sizeof(sal_uInt16);
 		for (i=0; i<nDefCount; i++)
 		{
@@ -1311,7 +1313,20 @@ void ScGridWindow::ExecFilter( sal_uLong nSel,
 						rNewEntry.eOp	= SC_TOPVAL;
 						*rNewEntry.pStr	= String::CreateFromAscii(RTL_CONSTASCII_STRINGPARAM("10"));
 					}
-					else
+					else if ( nSel == SC_AUTOFILTER_EMPTY) {
+                        rNewEntry.pStr->Erase();
+                        rNewEntry.bQueryByString = sal_False;
+                        rNewEntry.eOp   = SC_EQUAL;
+                        rNewEntry.nVal  = SC_EMPTYFIELDS;
+                    }
+                    else if (nSel == SC_AUTOFILTER_NOTEMPTY)
+                    {
+                        rNewEntry.pStr->Erase();
+                        rNewEntry.bQueryByString = sal_False;
+                        rNewEntry.eOp   = SC_EQUAL;
+                        rNewEntry.nVal  = SC_NONEMPTYFIELDS;
+                    }
+                    else
 					{
 						rNewEntry.eOp	= SC_EQUAL;
 						*rNewEntry.pStr	= aValue;

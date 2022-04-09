@@ -29,41 +29,41 @@ ModalDialog DLG_INS_ROW_COL
 	HelpID = "cui:ModalDialog:DLG_INS_ROW_COL" ;
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 136 , 84 ) ;
-	Text [ en-US ] = "Insert" ;
+	Size = MAP_APPFONT ( 136, 84 ) ;
+	Text = "-" ; // Dummy text, will be overwritten later
 	Moveable = TRUE ;
 	OKButton BT_OK
 	{
-		Pos = MAP_APPFONT ( 80 , 6 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 80, 6 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 		DefButton = TRUE ;
 	};
 	CancelButton BT_CANCEL
 	{
-		Pos = MAP_APPFONT ( 80 , 23 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 80, 23 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	HelpButton BT_HELP
 	{
-		Pos = MAP_APPFONT ( 80 , 43 ) ;
-		Size = MAP_APPFONT ( 50 , 14 ) ;
+		Pos = MAP_APPFONT ( 80, 43 ) ;
+		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
 	};
 	RadioButton CB_POS_BEFORE
 	{
 		HelpID = "cui:RadioButton:DLG_INS_ROW_COL:CB_POS_BEFORE" ;
-		Pos = MAP_APPFONT ( 12 , 49 ) ;
-		Size = MAP_APPFONT ( 56 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 49 ) ;
+		Size = MAP_APPFONT ( 56, 10 ) ;
 		Text [ en-US ] = "~Before" ;
 		TabStop = TRUE ;
 	};
 	RadioButton CB_POS_AFTER
 	{
 		HelpID = "cui:RadioButton:DLG_INS_ROW_COL:CB_POS_AFTER" ;
-		Pos = MAP_APPFONT ( 12 , 62 ) ;
-		Size = MAP_APPFONT ( 56 , 10 ) ;
+		Pos = MAP_APPFONT ( 12, 62 ) ;
+		Size = MAP_APPFONT ( 56, 10 ) ;
 		Text [ en-US ] = "A~fter" ;
 		TabStop = TRUE ;
 		Check = TRUE ;
@@ -72,8 +72,8 @@ ModalDialog DLG_INS_ROW_COL
 	{
 		HelpID = "cui:NumericField:DLG_INS_ROW_COL:ED_COUNT" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 44 , 14 ) ;
-		Size = MAP_APPFONT ( 24 , 12 ) ;
+		Pos = MAP_APPFONT ( 44, 14 ) ;
+		Size = MAP_APPFONT ( 24, 12 ) ;
 		TabStop = TRUE ;
 		Left = TRUE ;
 		Repeat = TRUE ;
@@ -86,30 +86,30 @@ ModalDialog DLG_INS_ROW_COL
 	};
 	FixedLine FL_INS
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-		Size = MAP_APPFONT ( 68 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 68, 8 ) ;
 		Text [ en-US ] = "Insert" ;
 	};
 	FixedLine FL_POS
 	{
-		Pos = MAP_APPFONT ( 6 , 38 ) ;
-		Size = MAP_APPFONT ( 68 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 38 ) ;
+		Size = MAP_APPFONT ( 68, 8 ) ;
 		Text [ en-US ] = "Position" ;
 	};
 	FixedText FT_COUNT
 	{
-		Pos = MAP_APPFONT ( 12 , 16 ) ;
-		Size = MAP_APPFONT ( 30 , 8 ) ;
+		Pos = MAP_APPFONT ( 12, 16 ) ;
+		Size = MAP_APPFONT ( 30, 8 ) ;
 		Text [ en-US ] = "~Number" ;
 		Left = TRUE ;
 	};
 	String STR_ROW
 	{
-		Text [ en-US ] = " Rows" ;
+		Text [ en-US ] = "Insert Rows" ;
 	};
 	String STR_COL
 	{
-		Text [ en-US ] = " Columns" ;
+		Text [ en-US ] = "Insert Columns" ;
 	};
 };
 

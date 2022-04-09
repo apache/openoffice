@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,9 +42,7 @@
 #include "DrawDocShell.hxx"
 
 /*************************************************************************
-|*
 |* PopupMenu zum Bearbeiten von Feldbefehlen
-|*
 \************************************************************************/
 
 SdFieldPopup::SdFieldPopup( const SvxFieldData* pInField, LanguageType eLanguage ) :
@@ -55,9 +53,7 @@ SdFieldPopup::SdFieldPopup( const SvxFieldData* pInField, LanguageType eLanguage
 }
 
 /*************************************************************************
-|*
 |* Dtor
-|*
 \************************************************************************/
 
 SdFieldPopup::~SdFieldPopup()
@@ -65,9 +61,7 @@ SdFieldPopup::~SdFieldPopup()
 }
 
 /*************************************************************************
-|*
 |* Fill
-|*
 \************************************************************************/
 
 void SdFieldPopup::Fill( LanguageType eLanguage )
@@ -88,8 +82,8 @@ void SdFieldPopup::Fill( LanguageType eLanguage )
 		else
 			CheckItem( 2 );
 
-		//SVXDATEFORMAT_APPDEFAULT, 	// Wird nicht benutzt
-		//SVXDATEFORMAT_SYSTEM, 		// Wird nicht benutzt
+		//SVXDATEFORMAT_APPDEFAULT,		// Wird nicht benutzt
+		//SVXDATEFORMAT_SYSTEM,			// Wird nicht benutzt
 		InsertItem( nID++, String( SdResId( STR_STANDARD_SMALL ) ), nStyle );
 		InsertItem( nID++, String( SdResId( STR_STANDARD_BIG ) ), nStyle );
 
@@ -120,8 +114,8 @@ void SdFieldPopup::Fill( LanguageType eLanguage )
 		else
 			CheckItem( 2 );
 
-		//SVXTIMEFORMAT_APPDEFAULT, 	// Wird nicht benutzt
-		//SVXTIMEFORMAT_SYSTEM, 		// Wird nicht benutzt
+		//SVXTIMEFORMAT_APPDEFAULT,		// Wird nicht benutzt
+		//SVXTIMEFORMAT_SYSTEM,			// Wird nicht benutzt
 		InsertItem( nID++, String( SdResId( STR_STANDARD_NORMAL ) ), nStyle );
 
 		SvNumberFormatter* pNumberFormatter = SD_MOD()->GetNumberFormatter();
@@ -181,10 +175,8 @@ void SdFieldPopup::Fill( LanguageType eLanguage )
 }
 
 /*************************************************************************
-|*
 |* Gibt das neue Feld zurueck, gehoert dem Caller.
 |* Liefert NULL, wenn sich nichts geaendert hat.
-|*
 \************************************************************************/
 
 SvxFieldData* SdFieldPopup::GetField()
@@ -282,7 +274,7 @@ SvxFieldData* SdFieldPopup::GetField()
 			pFileField->GetType() != eType )
 		{
 			::sd::DrawDocShell* pDocSh = PTR_CAST(::sd::DrawDocShell,
-                SfxObjectShell::Current() );
+				SfxObjectShell::Current() );
 
 			if( pDocSh )
 			{
@@ -322,13 +314,11 @@ SvxFieldData* SdFieldPopup::GetField()
 			pAuthorField->GetType() != eType )
 		{
 			// #91225# Get current state of address, not the old one
-            SvtUserOptions aUserOptions;
-            pNewField = new SvxAuthorField( aUserOptions.GetFirstName(), aUserOptions.GetLastName(), aUserOptions.GetID() );
+			SvtUserOptions aUserOptions;
+			pNewField = new SvxAuthorField( aUserOptions.GetFirstName(), aUserOptions.GetLastName(), aUserOptions.GetID() );
 			( (SvxAuthorField*) pNewField )->SetType( eType );
 			( (SvxAuthorField*) pNewField )->SetFormat( eFormat );
 		}
 	}
 	return( pNewField );
 }
-
-

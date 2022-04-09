@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -98,12 +98,12 @@ namespace sdr
 		{
 			maViewObjectContactVector.push_back(&rVOContact);
 		}
-        
+
 		// A ViewObjectContact was deleted and shall be forgotten.
 		void ObjectContact::RemoveViewObjectContact(ViewObjectContact& rVOContact)
 		{
 			std::vector< ViewObjectContact* >::iterator aFindResult = std::find(maViewObjectContactVector.begin(), maViewObjectContactVector.end(), &rVOContact);
-			
+
 			if(aFindResult != maViewObjectContactVector.end())
 			{
 				maViewObjectContactVector.erase(aFindResult);
@@ -129,7 +129,7 @@ namespace sdr
 			// default has no active VC
 			return 0;
 		}
-		
+
 		// Invalidate given rectangle at the window/output which is represented by
 		// this ObjectContact.
 		void ObjectContact::InvalidatePartOfView(const basegfx::B2DRange& /*rRange*/) const
@@ -164,7 +164,7 @@ namespace sdr
 		}
 
 		// method to get the EventHandler. It will
-		// return a existing one or create a new one using CreateEventHandler().
+		// return an existing one or create a new one using CreateEventHandler().
 		sdr::event::TimerEventHandler& ObjectContact::GetEventHandler() const
 		{
 			if(!HasEventHandler())
@@ -205,7 +205,7 @@ namespace sdr
 			return true;
 		}
 
-		// check if asynchronious graphis loading is allowed. Default is false.
+		// check if asynchronous graphics loading is allowed. Default is false.
 		bool ObjectContact::IsAsynchronGraphicsLoadingAllowed() const
 		{
 			return false;
@@ -279,37 +279,37 @@ namespace sdr
 			return false;
 		}
 
-        // access to SdrPageView. Default implementation returns NULL
+		// access to SdrPageView. Default implementation returns NULL
 		SdrPageView* ObjectContact::TryToGetSdrPageView() const
-        {
-            return 0;
-        }
-        
+		{
+			return 0;
+		}
+
 		// access to OutputDevice. Default implementation returns NULL
 		OutputDevice* ObjectContact::TryToGetOutputDevice() const
-        {
-            return 0;
-        }
+		{
+			return 0;
+		}
 
-        void ObjectContact::resetViewPort()
-        {
+		void ObjectContact::resetViewPort()
+		{
 			const drawinglayer::geometry::ViewInformation2D& rCurrentVI2D = getViewInformation2D();
 
-            if(!rCurrentVI2D.getViewport().isEmpty())
-            {
-                const basegfx::B2DRange aEmptyRange;
+			if(!rCurrentVI2D.getViewport().isEmpty())
+			{
+				const basegfx::B2DRange aEmptyRange;
 
-                drawinglayer::geometry::ViewInformation2D aNewVI2D(
-                    rCurrentVI2D.getObjectTransformation(),
-                    rCurrentVI2D.getViewTransformation(),
-                    aEmptyRange,
-                    rCurrentVI2D.getVisualizedPage(),
-                    rCurrentVI2D.getViewTime(),
-                    rCurrentVI2D.getExtendedInformationSequence());
+				drawinglayer::geometry::ViewInformation2D aNewVI2D(
+					rCurrentVI2D.getObjectTransformation(),
+					rCurrentVI2D.getViewTransformation(),
+					aEmptyRange,
+					rCurrentVI2D.getVisualizedPage(),
+					rCurrentVI2D.getViewTime(),
+					rCurrentVI2D.getExtendedInformationSequence());
 
-                updateViewInformation2D(aNewVI2D);
-            }
-        }
+				updateViewInformation2D(aNewVI2D);
+			}
+		}
 
 	} // end of namespace contact
 } // end of namespace sdr

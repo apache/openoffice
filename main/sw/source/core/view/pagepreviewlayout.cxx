@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -56,8 +56,8 @@ extern void SwCalcPixStatics( OutputDevice *pOut );
 // =============================================================================
 SwPagePreviewLayout::SwPagePreviewLayout( ViewShell& _rParentViewShell,
                                           const SwRootFrm& _rLayoutRootFrm )
-    : mnXFree ( 4*142 ),
-      mnYFree ( 4*142 ),
+    : mnXFree ( 3 * 142 ),
+      mnYFree ( 3 * 142 ),
       mrParentViewShell( _rParentViewShell ),
       mrLayoutRootFrm ( _rLayoutRootFrm )
 {
@@ -211,7 +211,7 @@ bool SwPagePreviewLayout::Init( const sal_uInt16 _nCols,
             return false;
     }
 
-    // environment and parameters ok
+    // environment and parameters OK
 
     // clear existing preview settings
     _Clear();
@@ -355,7 +355,7 @@ bool SwPagePreviewLayout::Prepare( const sal_uInt16 _nProposedStartPageNum,
             nProposedStartPageNum = 1;
     }
 
-    // environment and parameter ok
+    // environment and parameter OK
 
     // update window size at preview setting data
     maWinSize = mrParentViewShell.GetOut()->PixelToLogic( _rPxWinSize );
@@ -462,7 +462,7 @@ bool SwPagePreviewLayout::Prepare( const sal_uInt16 _nProposedStartPageNum,
     }
 
     // OD 20.01.2003 #103492# - shift visible preview document area to the top,
-    // if on the botton is an area left blank.
+    // if at the bottom is an area left blank.
     if ( mbBookPreviewModeToggled &&
          maPaintedPrevwDocRect.Bottom() == maPreviewDocRect.Bottom() &&
          maPaintedPrevwDocRect.GetHeight() < maWinSize.Height() )
@@ -598,7 +598,7 @@ void SwPagePreviewLayout::_CalcPreviewPages()
     sal_uInt16 nCurrCol = mnPaintStartCol;
     sal_uInt16 nConsideredRows = 0;
     Point aCurrPaintOffset = aInitialPaintOffset;
-    // loop on pages to determine preview background retangles
+    // loop on pages to determine preview background rectangles
     while ( pPage &&
             (!mbDoesLayoutRowsFitIntoWindow || nConsideredRows < mnRows) &&
             aCurrPaintOffset.Y() < maWinSize.Height()
@@ -615,7 +615,7 @@ void SwPagePreviewLayout::_CalcPreviewPages()
         // consider only pages, which have to be painted.
         if ( nCurrCol < mnPaintStartCol )
         {
-            // calculate data of unvisible page needed for accessibility
+            // calculate data of invisible page needed for accessibility
             PrevwPage* pPrevwPage = new PrevwPage;
             Point aCurrAccOffset = aCurrPaintOffset -
                            Point( (mnPaintStartCol-nCurrCol) * mnColWidth, 0 );
@@ -649,7 +649,7 @@ void SwPagePreviewLayout::_CalcPreviewPages()
         }
         else
         {
-            // calculate data of unvisible page needed for accessibility
+            // calculate data of invisible page needed for accessibility
             PrevwPage* pPrevwPage = new PrevwPage;
             _CalcPreviewDataForPage( *(pPage), aCurrPaintOffset, pPrevwPage );
             pPrevwPage->bVisible = false;
@@ -825,7 +825,7 @@ Point SwPagePreviewLayout::GetPreviewStartPosForNewScale(
 
     OD 12.12.2002 #103492#
 
-    @author OD, _nPageNum is absolut!
+    @author OD, _nPageNum is absolute!
 */
 bool SwPagePreviewLayout::IsPageVisible( const sal_uInt16 _nPageNum ) const
 {
@@ -1047,7 +1047,7 @@ SwTwips SwPagePreviewLayout::GetWinPagesScrollAmount(
 
     @author OD
 */
-bool SwPagePreviewLayout::Paint( const Rectangle  _aOutRect ) const
+bool SwPagePreviewLayout::Paint( const Rectangle _aOutRect ) const
 {
     // check environment and parameters
     {
@@ -1324,14 +1324,14 @@ void SwPagePreviewLayout::_PaintSelectMarkAtPage(
     Perform paint for current selected page in order to unmark it.
     Set new selected page and perform paint to mark this page.
 
-    @author OD, _nSelectedPage, mnSelectedPage are absolut
+    @author OD, _nSelectedPage, mnSelectedPage are absolute
 */
 void SwPagePreviewLayout::MarkNewSelectedPage( const sal_uInt16 _nSelectedPage )
 {
     sal_uInt16 nOldSelectedPageNum = mnSelectedPageNum;
     mnSelectedPageNum = _nSelectedPage;
 
-    // re-paint for current selected page in order to umark it.
+    // re-paint for current selected page in order to unmark it.
     const PrevwPage* pOldSelectedPrevwPage = _GetPrevwPageByPageNum( nOldSelectedPageNum );
     if ( pOldSelectedPrevwPage && pOldSelectedPrevwPage->bVisible )
     {
