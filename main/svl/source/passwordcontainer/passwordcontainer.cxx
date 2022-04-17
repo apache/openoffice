@@ -427,7 +427,7 @@ void StorageItem::Commit()
 //-------------------------------------------------------------------------
 
 PasswordContainer::PasswordContainer( const Reference<XMultiServiceFactory>& xServiceFactory ):
-    m_pStorageFile( NULL )
+    m_pStorageFile( NULL ), mOldPasswordEncoding(false)
 {
     // m_pStorageFile->Notify() can be called
     ::osl::MutexGuard aGuard( mMutex );
@@ -488,15 +488,21 @@ void SAL_CALL PasswordContainer::disposing( const EventObject& ) throw(RuntimeEx
  * It must contain RTL_DIGEST_LENGTH_MD5 * 2 characters.
  * @param code buffer to hold the decoded password.
  * It must contain RTL_DIGEST_LENGTH_MD5 characters.
+ * @param oldEncoding use the encoding pre-AOO-4.1.12 if true
  */
 static void decodeMasterPassword(const ::rtl::OUString& aMasterPasswd,
-                                 unsigned char *code)
+                                 unsigned char *code, bool oldEncoding)
 {
     OSL_ENSURE( aMasterPasswd.getLength() == RTL_DIGEST_LENGTH_MD5 * 2, "Wrong master password format!\n" );
     const sal_Unicode *aMasterBuf = aMasterPasswd.getStr();
-    for( int ind = 0; ind < RTL_DIGEST_LENGTH_MD5; ind++ )
-        code[ ind ] = (char)((((aMasterBuf[ind * 2] - 'a') & 15) << 4) |
-                             ((aMasterBuf[ind * 2 + 1] - 'a') & 15));
+    for( int ind = 0; ind < RTL_DIGEST_LENGTH_MD5; ind++ ) {
+        if (!oldEncoding) {
+            code[ ind ] = (char)((((aMasterBuf[ind * 2] - 'a') & 15) << 4) |
+                                 ((aMasterBuf[ind * 2 + 1] - 'a') & 15));
+        } else {
+            code[ ind ] = (char)(aMasterPasswd.copy( ind*2, 2 ).toInt32(16));
+        }
+    }
 }
 
 //-------------------------------------------------------------------------
@@ -511,7 +517,7 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
         if( aDecoder )
         {
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
-            decodeMasterPassword(aMasterPasswd, code);
+            decodeMasterPassword(aMasterPasswd, code, mOldPasswordEncoding);
 
             rtlCipherError result = rtl_cipher_init (
                     aDecoder, rtl_Cipher_DirectionDecode,
@@ -563,7 +569,7 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
         {
 
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
-            decodeMasterPassword(aMasterPasswd, code);
+            decodeMasterPassword(aMasterPasswd, code, false);
 
             rtlCipherError result = rtl_cipher_init (
                     aEncoder, rtl_Cipher_DirectionEncode,
@@ -623,6 +629,29 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
     // problems with encoding
     OSL_ENSURE( sal_False, "Problem with encoding\n" );
     throw RuntimeException( ::rtl::OUString::createFromAscii( "Can't encode!" ), Reference< XInterface >() );
+}
+
+//-------------------------------------------------------------------------
+
+void PasswordContainer::doChangeMasterPassword(const ::rtl::OUString& aPass) {
+    // get all the persistent entries if it is possible
+    Sequence< UrlRecord > aPersistent = getAllPersistent( uno::Reference< task::XInteractionHandler >() );
+
+    // remove the master password and the entries persistence
+    removeMasterPassword();
+
+    // store the new master password
+    m_aMasterPasswd = aPass;
+    vector< ::rtl::OUString > aMaster( 1, m_aMasterPasswd );
+    m_pStorageFile->setEncodedMP( EncodePasswords( aMaster, m_aMasterPasswd ) );
+
+    // store all the entries with the new password
+    for ( int nURLInd = 0; nURLInd < aPersistent.getLength(); nURLInd++ )
+        for ( int nNameInd = 0; nNameInd< aPersistent[nURLInd].UserList.getLength(); nNameInd++ )
+            addPersistent( aPersistent[nURLInd].Url,
+                           aPersistent[nURLInd].UserList[nNameInd].UserName,
+                           aPersistent[nURLInd].UserList[nNameInd].Passwords,
+                           uno::Reference< task::XInteractionHandler >() );
 }
 
 //-------------------------------------------------------------------------
@@ -952,6 +981,17 @@ UrlRecord PasswordContainer::find(
                         vector< ::rtl::OUString > aRM( DecodePasswords( aEncodedMP, aPass ) );
                         if( !aRM.size() || !aPass.equals( aRM[0] ) )
                         {
+                            // Try the old encoding
+                            mOldPasswordEncoding = true;
+                            aRM = DecodePasswords( aEncodedMP, aPass );
+                            if (aRM.size() && aPass.equals(aRM[0])) {
+                                // Update the master password to the new encoding and update all stored passwords.
+                                m_aMasterPasswd = aPass;
+                                doChangeMasterPassword(aPass);
+                            }
+                        }
+                        if( !aRM.size() || !aPass.equals( aRM[0] ) )
+                        {
                             bAskAgain = sal_True;
                             aRMode = PasswordRequestMode_PASSWORD_REENTER;
                         }
@@ -1214,25 +1254,7 @@ sal_Bool SAL_CALL PasswordContainer::changeMasterPassword( const uno::Reference<
 
             if ( aPass.getLength() )
             {
-                // get all the persistent entries if it is possible
-                Sequence< UrlRecord > aPersistent = getAllPersistent( uno::Reference< task::XInteractionHandler >() );
-
-                // remove the master password and the entries persistence
-                removeMasterPassword();
-
-                // store the new master password
-                m_aMasterPasswd = aPass;
-                vector< ::rtl::OUString > aMaster( 1, m_aMasterPasswd );
-                m_pStorageFile->setEncodedMP( EncodePasswords( aMaster, m_aMasterPasswd ) );
-
-                // store all the entries with the new password
-                for ( int nURLInd = 0; nURLInd < aPersistent.getLength(); nURLInd++ )
-                    for ( int nNameInd = 0; nNameInd< aPersistent[nURLInd].UserList.getLength(); nNameInd++ )
-                        addPersistent( aPersistent[nURLInd].Url,
-                                       aPersistent[nURLInd].UserList[nNameInd].UserName,
-                                       aPersistent[nURLInd].UserList[nNameInd].Passwords,
-                                       uno::Reference< task::XInteractionHandler >() );
-
+                doChangeMasterPassword(aPass);
                 bResult = sal_True;
             }
         }
@@ -1247,6 +1269,9 @@ void SAL_CALL PasswordContainer::removeMasterPassword()
 {
     // remove all the stored passwords and the master password
     removeAllPersistent();
+
+    // Make sure we will not use the older encoding in the future
+    mOldPasswordEncoding = false;
 
     ::osl::MutexGuard aGuard( mMutex );
     if ( m_pStorageFile )
