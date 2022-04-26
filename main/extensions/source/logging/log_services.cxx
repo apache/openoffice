@@ -39,6 +39,7 @@ namespace logging
     extern void createRegistryInfo_ConsoleHandler();
     extern void createRegistryInfo_PlainTextFormatter();
     extern void createRegistryInfo_CsvFormatter();
+    extern void createRegistryInfo_SyslogHandler();
 
     static void initializeModule()
     {
@@ -53,6 +54,7 @@ namespace logging
                 createRegistryInfo_ConsoleHandler();
                 createRegistryInfo_PlainTextFormatter();
                 createRegistryInfo_CsvFormatter();
+                createRegistryInfo_SyslogHandler();
             }
         }
     }
