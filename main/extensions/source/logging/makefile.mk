@@ -41,6 +41,7 @@ EXCEPTIONSFILES= \
         $(SLO)$/loggerconfig.obj        \
         $(SLO)$/loghandler.obj          \
         $(SLO)$/plaintextformatter.obj  \
+        $(SLO)$/sysloghandler.obj       \
 
 SLOFILES= \
         $(EXCEPTIONSFILES) \
