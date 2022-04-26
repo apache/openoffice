@@ -339,10 +339,10 @@ public:
     void PaintMarginArea( const SwRect& _rOutputRect,
                           ViewShell* _pViewShell ) const;
 
-    /** paint page border and shadow
+    /** paint page border (shadow removed now)
 
         OD 12.02.2003 for #i9719# and #105645#
-        implement paint of page border and shadow
+        implement painting of page border
 
         @author OD
 
@@ -357,7 +357,6 @@ public:
     */
     static void PaintBorderAndShadow( const SwRect& _rPageRect,
                                       ViewShell*    _pViewShell,
-                                      bool bPaintRightShadow,
                                       bool bRightSidebar );
 
     /** get bound rectangle of border and shadow for repaints
