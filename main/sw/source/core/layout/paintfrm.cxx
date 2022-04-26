@@ -2950,7 +2950,6 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
 
     while ( pPage )
     {
-        const bool bPaintRightShadow = !bBookMode || (pPage == Lower()) || (!bLTR && !pPage->OnRightPage()) || (bLTR && pPage->OnRightPage());
         const bool bRightSidebar = pPage->SidebarPosition() == sw::sidebarwindows::SIDEBAR_RIGHT;
 
         if ( !pPage->IsEmptyPage() )
@@ -3058,7 +3057,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 if( pSh->GetWin() && pSh->GetDoc()->GetDocShell() &&
                     !pSh->GetDoc()->GetDocShell()->IsInPlaceActive() )
                 {
-                    SwPageFrm::PaintBorderAndShadow( pPage->Frm(), pSh, bPaintRightShadow, bRightSidebar );
+                    SwPageFrm::PaintBorderAndShadow( pPage->Frm(), pSh, bRightSidebar );
                     SwPageFrm::PaintNotesSidebar( pPage->Frm(), pSh, pPage->GetPhyPageNum(), bRightSidebar);
                 }
 
@@ -3150,10 +3149,9 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                                     TEXT_DRAW_CLIP );
 
                 pSh->GetOut()->SetFont( aOldFont );
-                // paint shadow and border for empty page
-                // OD 19.02.2003 #107369# - use new method to paint page border and
-                // shadow
-                SwPageFrm::PaintBorderAndShadow( aEmptyPageRect, pSh, bPaintRightShadow, bRightSidebar );
+                // paint border for empty page (shadow removed now)
+                // OD 19.02.2003 #107369# - use new method to paint page border
+                SwPageFrm::PaintBorderAndShadow( aEmptyPageRect, pSh, bRightSidebar );
                 SwPageFrm::PaintNotesSidebar( aEmptyPageRect, pSh, pPage->GetPhyPageNum(), bRightSidebar);
 
                 {
@@ -4877,7 +4875,7 @@ void SwFrm::PaintBorder( const SwRect& rRect, const SwPageFrm *pPage,
         {
             // OD 27.09.2002 #103636# - paint shadow, if background is transparent.
             // Because of introduced transparent background for fly frame #99657#,
-            // the shadow have to be drawn if the background is transparent,
+            // the shadow has to be drawn if the background is transparent,
             // in spite the fact that the paint rectangle <rRect> lies fully
             // in the printing area.
             // NOTE to chosen solution:
@@ -5433,7 +5431,7 @@ void SwPageFrm::PaintMarginArea( const SwRect& _rOutputRect,
 // ----------------------------------------------------------------------
 
 const sal_Int8 SwPageFrm::mnBorderPxWidth = 1;
-const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
+const sal_Int8 SwPageFrm::mnShadowPxWidth = 0;
 
 /** determine rectangle for page border
 
@@ -5519,23 +5517,22 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
             SwRect( _pViewShell->GetOut()->PixelToLogic( aBottomShadowPxRect ) );
 }
 
-/** paint page border and shadow
+/** paint page border (shadow removed now)
 
     OD 12.02.2003 for #i9719# and #105645#
-    implement paint of page border and shadow
+    implement paint of page border
 
     @author OD
 */
 /*static*/ void SwPageFrm::PaintBorderAndShadow( const SwRect& _rPageRect,
                                                  ViewShell*    _pViewShell,
-                                                 bool bPaintRightShadow,
                                                  bool bRightSidebar )
 {
     // --> FME 2004-06-24 #i16816# tagged pdf support
     SwTaggedPDFHelper aTaggedPDFHelper( 0, 0, 0, *_pViewShell->GetOut() );
     // <--
 
-    // get color for page border and shadow paint
+    // get color for page border
     const Color& rColor = SwViewOption::GetFontColor();
 
     // save current fill and line color of output device
@@ -5548,21 +5545,6 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
     SwRect aPaintRect;
     SwPageFrm::GetBorderRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
     _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-
-    // paint right shadow
-//    if ( bPaintRightShadow )
-//    {
-//        _pViewShell->GetOut()->SetFillColor( rColor );
-//        SwPageFrm::GetRightShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-//        _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-//    }
-
-    // paint bottom shadow
-//    SwPageFrm::GetBottomShadowRect( _rPageRect, _pViewShell, aPaintRect, bRightSidebar );
-//    _pViewShell->GetOut()->DrawRect( aPaintRect.SVRect() );
-
-//    _pViewShell->GetOut()->SetFillColor( aFill );
-//    _pViewShell->GetOut()->SetLineColor( aLine );
 }
 
 //mod #i6193# paint sidebar for notes
@@ -6000,7 +5982,7 @@ void SwFrm::PaintBackground( const SwRect &rRect, const SwPageFrm *pPage,
     delete pTmpBackBrush;
 
     //Jetzt noch Lower und dessen Nachbarn.
-	//Wenn ein Frn dabei die Kette verlaesst also nicht mehr Lower von mir ist
+	//Wenn ein Frm dabei die Kette verlaesst also nicht mehr Lower von mir ist
 	//so hoert der Spass auf.
 	const SwFrm *pFrm = GetLower();
     if ( pFrm )
