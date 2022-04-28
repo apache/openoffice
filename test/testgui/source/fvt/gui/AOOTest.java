@@ -26,11 +26,14 @@ import static testlib.gui.AppTool.*;
 import static testlib.gui.UIMap.*;
 
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Rule;
 import org.junit.Test;
 import org.openoffice.test.common.Logger;
 
+import testlib.gui.AppTool;
 import testlib.gui.SCTool;
 
 /**
@@ -50,14 +53,34 @@ public class AOOTest {
 	public Logger log = Logger.getLogger(this);
 
 	/**
+	 * Do some setup task before running class
+	 *
+	 * @throws Exception
+	 */
+	@BeforeClass
+	public static void beforeClass() {
+		app.clean();
+	}
+
+	/**
+	 * Clean class after testing
+	 *
+	 * @throws Exception
+	 */
+	@AfterClass
+	public static void afterClass() {
+		app.stop();
+	}
+
+	/**
 	 * Do some setup task before running test
 	 * 
 	 * @throws Exception
 	 */
 	@Before
 	public void setUp() throws Exception {
-		// Start OpenOffice with a clean user profile
-		app.start(true);
+		app.stop();
+		app.start();
 	}
 
 	/**
@@ -67,7 +90,8 @@ public class AOOTest {
 	 */
 	@After
 	public void tearDown() throws Exception {
-
+		// stopping app here causes a late screenshot
+		// moved to setUp
 	}
 
 	/**
@@ -75,10 +99,10 @@ public class AOOTest {
 	 */
 	@Test
 	public void testHello() {
-		startcenter.menuItem("File->New->Spreadsheet").select();
-		calc.waitForExistence(10, 3);
+		AppTool.newSpreadsheet();
 		typeKeys("Hello");
-		assertEquals("Assert", "Hello", SCTool.getCellInput("A1"));
+		String result = SCTool.getCellInput("A1");
+		assertEquals("assert cell A1 contents", "Hello", result);
 	}
 
 }
