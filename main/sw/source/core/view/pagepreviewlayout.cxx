@@ -1112,8 +1112,6 @@ bool SwPagePreviewLayout::Paint( const Rectangle _aOutRect ) const
 
     const Font& rEmptyPgFont = SwPageFrm::GetEmptyPageFont();
 
-//    Color aEmptyPgShadowBorderColor = SwViewOption::GetFontColor(); // Is this used anywhere?
-
     for ( std::vector<PrevwPage*>::const_iterator aPageIter = maPrevwPages.begin();
           aPageIter != maPrevwPages.end();
           ++aPageIter )
@@ -1228,7 +1226,7 @@ void SwPagePreviewLayout::Repaint( const Rectangle _aInvalidCoreRect ) const
             return;
     }
 
-    // environment and parameter ok
+    // environment and parameter OK
 
     // prepare paint
     if ( maPrevwPages.size() > 0 )

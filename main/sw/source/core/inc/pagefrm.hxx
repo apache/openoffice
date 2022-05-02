@@ -87,7 +87,6 @@ class SwPageFrm: public SwFtnBossFrm
 
     // OD 12.02.2003 #i9719#, #105645#
     static const sal_Int8 mnBorderPxWidth;
-    static const sal_Int8 mnShadowPxWidth;
 
 	void _UpdateAttr( const SfxPoolItem*, const SfxPoolItem*, sal_uInt8 &,
 					  SwAttrSetChg *pa = 0, SwAttrSetChg *pb = 0 );
@@ -399,10 +398,6 @@ public:
     inline sal_Int8 BorderPxWidth() const
     {
         return mnBorderPxWidth;
-    }
-    inline sal_Int8 ShadowPxWidth() const
-    {
-        return mnShadowPxWidth;
     }
 
     // OD 22.09.2003 #110978#
