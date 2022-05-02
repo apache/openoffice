@@ -1782,12 +1782,11 @@ File gid_File_Lib_Crypto
     TXT_FILE_BODY;
     Styles = (PACKED);
     Dir = SCP2_OOO_BIN_DIR;
-
-	#ifdef WNT
-	  Name = "libeay32.dll";
-        #else
-          Name = "libcrypto.so";
-	#endif
+  #ifdef WNT
+    Name = "libeay32.dll";
+  #else
+    Name = "libcrypto.so";
+  #endif
 End
 #endif
 
