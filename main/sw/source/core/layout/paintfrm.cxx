@@ -5431,7 +5431,6 @@ void SwPageFrm::PaintMarginArea( const SwRect& _rOutputRect,
 // ----------------------------------------------------------------------
 
 const sal_Int8 SwPageFrm::mnBorderPxWidth = 1;
-const sal_Int8 SwPageFrm::mnShadowPxWidth = 0;
 
 /** determine rectangle for page border
 
@@ -5477,10 +5476,10 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 0;
             _pViewShell->GetOut()->LogicToPixel( aAlignedPageRect.SVRect() );
 
     Rectangle aRightShadowPxRect(
-                    aPagePxRect.Right() + mnShadowPxWidth,
+                    aPagePxRect.Right(),
                     aPagePxRect.Top() + 1,
-                    aPagePxRect.Right() + mnBorderPxWidth + mnShadowPxWidth,
-                    aPagePxRect.Bottom() + mnBorderPxWidth + mnShadowPxWidth );
+                    aPagePxRect.Right() + mnBorderPxWidth,
+                    aPagePxRect.Bottom() + mnBorderPxWidth );
 
     if ( bRightSidebar )
 	    AddSidebarBorders(aRightShadowPxRect,_pViewShell, bRightSidebar, true);
@@ -5507,9 +5506,9 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 0;
 
     Rectangle aBottomShadowPxRect(
                     aPagePxRect.Left() + 1,
-                    aPagePxRect.Bottom() + mnShadowPxWidth,
-                    aPagePxRect.Right() + mnBorderPxWidth + mnShadowPxWidth,
-                    aPagePxRect.Bottom() + mnBorderPxWidth + mnShadowPxWidth );
+                    aPagePxRect.Bottom(),
+                    aPagePxRect.Right() + mnBorderPxWidth,
+                    aPagePxRect.Bottom() + mnBorderPxWidth );
 
 	AddSidebarBorders(aBottomShadowPxRect,_pViewShell, bRightSidebar, true);
 
@@ -6182,7 +6181,7 @@ void MA_FASTCALL lcl_RefreshLine( const SwLayoutFrm *pLay,
 		//hinter den Fly gesetzt.
 		//Wenn der Endpunkt in einem Fly sitzt oder zwischen Start und Endpunkt
 		//ein Fly sitzt, so wird der Endpunkt eben an den Start herangezogen.
-		//Auf diese art und weise wird eine Portion nach der anderen
+		//Auf diese Art und Weise wird eine Portion nach der anderen
 		//ausgegeben.
 
 		//Wenn ich selbst ein Fly bin, weiche ich nur denjenigen Flys aus,
@@ -6599,7 +6598,7 @@ void SwFrm::Retouche( const SwPageFrm * pPage, const SwRect &rRect ) const
 
 	if ( aRetouche.HasArea() )
 	{
-        //Uebergebenes Rect ausparen. Dafuer brauchen wir leider eine Region
+        //Uebergebenes Rect aussparen. Dafuer brauchen wir leider eine Region
 		//zum ausstanzen.
 		SwRegionRects aRegion( aRetouche );
 		aRegion -= rRect;
@@ -6679,7 +6678,7 @@ void SwFrm::Retouche( const SwPageFrm * pPage, const SwRect &rRect ) const
     set under special conditions, if background brush is taken from an index section.
 
     @param rOrigRect
-    in-/output parameter - reference to the retangle the background brush is
+    in-/output parameter - reference to the rectangle the background brush is
     considered for - adjusted to the frame, from which the background brush is
     taken.
 
