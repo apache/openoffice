@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,7 +149,9 @@ using namespace ::com::sun::star::container;
 #include "../appl/app.hrc"
 #include <sfx2/sfxdlg.hxx>
 #include "appbaslib.hxx"
-#include <openflag.hxx>                 // SFX_STREAM_READWRITE
+#include <openflag.hxx> // SFX_STREAM_READWRITE
+
+#define C2S(cChar) String::CreateFromAscii( cChar )
 
 using namespace ::com::sun::star;
 
@@ -183,7 +185,7 @@ sal_uInt16 __READONLY_DATA aTitleMap_Impl[3][2] =
 {
 								//	local				remote
 	/*	SFX_TITLE_CAPTION	*/	{ 	SFX_TITLE_FILENAME, SFX_TITLE_TITLE },
-	/*	SFX_TITLE_PICKLIST  */	{ 	32,					SFX_TITLE_FULLNAME },
+	/*	SFX_TITLE_PICKLIST	*/	{ 	32,					SFX_TITLE_FULLNAME },
 	/*	SFX_TITLE_HISTORY	*/	{ 	32,					SFX_TITLE_FULLNAME }
 };
 
@@ -324,8 +326,8 @@ void SfxObjectShell::SetTemplate(sal_Bool bIs)
 void SfxObjectShell::EnableSetModified( sal_Bool bEnable )
 {
 #ifdef DBG_UTIL
-    if ( bEnable == pImp->m_bEnableSetModified )
-        DBG_WARNING( "SFX_PERSIST: EnableSetModified 2x mit dem gleichen Wert gerufen" );
+	if ( bEnable == pImp->m_bEnableSetModified )
+		DBG_WARNING( "SFX_PERSIST: EnableSetModified called twice with the same value" );
 #endif
 	pImp->m_bEnableSetModified = bEnable;
 }
@@ -382,8 +384,8 @@ sal_Bool SfxObjectShell::IsModified()
 void SfxObjectShell::SetModified( sal_Bool bModifiedP )
 {
 #ifdef DBG_UTIL
-    if ( !bModifiedP && !IsEnableSetModified() )
-        DBG_WARNING( "SFX_PERSIST: SetModified( sal_False ), obwohl IsEnableSetModified() == sal_False" );
+	if ( !bModifiedP && !IsEnableSetModified() )
+		DBG_WARNING( "SFX_PERSIST: SetModified( sal_False ), although IsEnableSetModified() == sal_False" );
 #endif
 
 	if( !IsEnableSetModified() )
@@ -472,22 +474,22 @@ void SfxObjectShell::SetReadOnlyUI( sal_Bool bReadOnly )
 
 void SfxObjectShell::SetReadOnly()
 {
-    // Let the document be completely readonly, means that the 
-    // medium open mode is adjusted accordingly, and the write lock
-    // on the file is removed.
+	// Let the document be completely readonly, means that the
+	// medium open mode is adjusted accordingly, and the write lock
+	// on the file is removed.
 
  	if ( pMedium && !IsReadOnlyMedium() )
     {
         sal_Bool bWasROUI = IsReadOnly();
 
-        pMedium->UnlockFile( sal_False );
- 
+		pMedium->UnlockFile( sal_False );
+
         // the storage-based mediums are already based on the temporary file
         // so UnlockFile has already closed the locking stream
         if ( !pMedium->HasStorage_Impl() && IsLoadingFinished() )
             pMedium->CloseInStream();
 
-        pMedium->SetOpenMode( SFX_STREAM_READONLY, pMedium->IsDirect(), sal_True ); 
+        pMedium->SetOpenMode( SFX_STREAM_READONLY, pMedium->IsDirect(), sal_True );
         pMedium->GetItemSet()->Put( SfxBoolItem( SID_DOC_READONLY, sal_True ) );
 
         if ( !bWasROUI )
@@ -815,7 +817,7 @@ void SfxObjectShell::SetTitle
 
 	Mit dieser Methode kann der Titel des Dokuments gesetzt werden.
 	Dieser entspricht initial dem kompletten Dateinamen. Ein Setzen
-	des Titels wirkt jedoch nicht zu"uck auf den Dateinamen; er wird
+	des Titels wirkt jedoch nicht zurück auf den Dateinamen; er wird
 	jedoch in den Caption-Bars der MDI-Fenster angezeigt.
 */
 
@@ -849,7 +851,7 @@ void SfxObjectShell::SetTitle
 
 	// Title setzen
 	pImp->aTitle = rTitle;
-//  Wieso denn in der DocInfo?
+//	Wieso denn in der DocInfo?
 //	GetDocInfo().SetTitle( rTitle );
 //	FlushDocInfo();
 
@@ -978,7 +980,7 @@ String SfxObjectShell::GetTitle
 	// Picklist/Caption wird gemappt
 	if ( pMed && ( nMaxLength == SFX_TITLE_CAPTION || nMaxLength == SFX_TITLE_PICKLIST ) )
 	{
-		// Wenn ein spezieller Titel beim "Offnen mitgegeben wurde;
+		// Wenn ein spezieller Titel beim Öffnen mitgegeben wurde;
 		// wichtig bei URLs, die INET_PROT_FILE verwenden, denn bei denen
 		// wird der gesetzte Titel nicht beachtet.
 		// (s.u., Auswertung von aTitleMap_Impl)
@@ -988,20 +990,21 @@ String SfxObjectShell::GetTitle
 	}
 
 	// noch unbenannt?
-	DBG_ASSERT( !HasName() || pMed, "HasName() aber kein Medium?!?" );
+	DBG_ASSERT( !HasName() || pMed, "HasName() but no Medium?" );
 	if ( !HasName() || !pMed )
 	{
-		// schon Titel gesezt?
+		// schon Titel gesetzt?
 		if ( pImp->aTitle.Len() )
 			return X(pImp->aTitle);
 
-		// mu\s es durchnumeriert werden?
+		// muß es durchnumeriert werden?
 		String aNoName( SfxResId( STR_NONAME ) );
 		if ( pImp->bIsNamedVisible )
-			// Nummer hintenanh"angen
+			// Leerzeichen und Nummer hinten anhängen
+			aNoName += C2S(" ");
 			aNoName += String::CreateFromInt32( pImp->nVisualDocumentNumber );
 
-		// Dokument hei\st vorerst 'unbenannt#'
+		// Dokument heißt vorerst 'Unbenannt #'
 		return X(aNoName);
 	}
 
@@ -1016,7 +1019,7 @@ String SfxObjectShell::GetTitle
 		nMaxLength = aTitleMap_Impl[nMaxLength-SFX_TITLE_CAPTION][nRemote];
 	}
 
-	// lokale Datei?
+	// local file?
 	if ( aURL.GetProtocol() == INET_PROT_FILE )
 	{
         String aName( aURL.HasMark() ? INetURLObject( aURL.GetURLNoMark() ).PathToFileName() : aURL.PathToFileName() );
@@ -1075,7 +1078,7 @@ void SfxObjectShell::InvalidateName()
 /*	[Beschreibung]
 
 	Ermittelt den Titel des Dokuments neu aus 'unbenannt', DocInfo-Titel
-	bzw. Dateinamen. Wird nach Laden aus Template oder SaveAs ben"otigt.
+	bzw. Dateinamen. Wird nach Laden aus Template oder SaveAs benötigt.
 */
 
 {
@@ -1359,7 +1362,7 @@ void SfxObjectShell::InitOwnModel_Impl()
 		}
 
 		pMedium->GetItemSet()->ClearItem( SID_REFERER );
-		uno::Reference< frame::XModel >  xModel ( GetModel(), uno::UNO_QUERY );
+		uno::Reference< frame::XModel > xModel ( GetModel(), uno::UNO_QUERY );
 		if ( xModel.is() )
 		{
 			::rtl::OUString aURL = GetMedium()->GetOrigURL();
@@ -1799,7 +1802,7 @@ void SfxHeaderAttributes_Impl::SetAttribute( const SvKeyValue& rKV )
 	String aValue = rKV.GetValue();
 	if( rKV.GetKey().CompareIgnoreCaseToAscii( "refresh" ) == COMPARE_EQUAL && rKV.GetValue().Len() )
 	{
-		sal_uInt32 nTime = aValue.GetToken(  0, ';' ).ToInt32() ;
+		sal_uInt32 nTime = aValue.GetToken( 0, ';' ).ToInt32() ;
 		String aURL = aValue.GetToken( 1, ';' );
 		aURL.EraseTrailingChars().EraseLeadingChars();
         uno::Reference<document::XDocumentProperties> xDocProps(
@@ -2411,4 +2414,3 @@ void SfxObjectShell::StoreLog()
         }
     }
 }
-
