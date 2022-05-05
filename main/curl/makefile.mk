@@ -55,10 +55,17 @@ curl_CFLAGS+:=$(ARCH_FLAGS)
 curl_LDFLAGS+:=$(ARCH_FLAGS)
 .ENDIF
 
+.IF "$(SYSTEM_OPENSSL)"=="YES"
+ssl_param=--with-ssl
+.ELSE
+ssl_param=--with-ssl=$(OUTDIR)
+PATCH_FILES+= curl-bundled_openssl.patch
+.ENDIF
+
 CONFIGURE_DIR=.$/
 #relative to CONFIGURE_DIR
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS= --with-ssl --without-libidn --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
+CONFIGURE_FLAGS= $(ssl_param) --without-libidn --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
 
 BUILD_DIR=$(CONFIGURE_DIR)$/lib
 BUILD_ACTION=$(GNUMAKE)
