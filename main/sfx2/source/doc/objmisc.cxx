@@ -999,10 +999,11 @@ String SfxObjectShell::GetTitle
 
 		// muß es durchnumeriert werden?
 		String aNoName( SfxResId( STR_NONAME ) );
-		if ( pImp->bIsNamedVisible )
+		if ( pImp->bIsNamedVisible ) {
 			// Leerzeichen und Nummer hinten anhängen
 			aNoName += C2S(" ");
 			aNoName += String::CreateFromInt32( pImp->nVisualDocumentNumber );
+		}
 
 		// Dokument heißt vorerst 'Unbenannt #'
 		return X(aNoName);
