@@ -528,7 +528,7 @@ ModalDialog DLG_ASS
 		Pos = MAP_APPFONT ( 112, 170 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "<< ~Back" ;
+		Text [ en-US ] = "< ~Back" ;
 	};
 
 	PushButton BUT_NEXT
@@ -539,7 +539,7 @@ ModalDialog DLG_ASS
 		Pos = MAP_APPFONT ( 165, 170 ) ;
 		Size = MAP_APPFONT ( 50, 14 ) ;
 		TabStop = TRUE ;
-		Text [ en-US ] = "~Next >>" ;
+		Text [ en-US ] = "~Next >" ;
 	};
 
 	OKButton BUT_FINISH
