@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -87,7 +87,7 @@ Size ViewContactOfSdrMediaObj::getPreferredSize() const
 	{
 		ViewObjectContact* pCandidate = getViewObjectContact(a);
 		Size aSize(pCandidate ? static_cast< ViewObjectContactOfSdrMediaObj* >(pCandidate)->getPreferredSize() : Size());
-		
+
 		if(0 != aSize.getWidth() || 0 != aSize.getHeight())
 		{
 			return aSize;
@@ -98,7 +98,7 @@ Size ViewContactOfSdrMediaObj::getPreferredSize() const
 }
 
 // ------------------------------------------------------------------------------
-		
+
 void ViewContactOfSdrMediaObj::updateMediaItem( ::avmedia::MediaItem& rItem ) const
 {
 	// #i71805# Since we may have a whole bunch of VOCs here, make a loop
@@ -116,7 +116,7 @@ void ViewContactOfSdrMediaObj::updateMediaItem( ::avmedia::MediaItem& rItem ) co
 }
 
 // ------------------------------------------------------------------------------
-			
+
 void ViewContactOfSdrMediaObj::executeMediaItem( const ::avmedia::MediaItem& rItem )
 {
 	const sal_uInt32 nCount(getViewObjectContactCount());
@@ -148,11 +148,11 @@ namespace sdr
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfSdrMediaObj::createViewIndependentPrimitive2DSequence() const
 		{
 			// create range using the model data directly. This is in SdrTextObj::aRect which i will access using
-            // GetGeoRect() to not trigger any calculations. It's the unrotated geometry which is okay for MediaObjects ATM.
+			// GetGeoRect() to not trigger any calculations. It's the unrotated geometry which is okay for MediaObjects ATM.
 			const Rectangle& rRectangle(GetSdrMediaObj().GetGeoRect());
 			const basegfx::B2DRange aRange(
-                rRectangle.Left(), rRectangle.Top(), 
-                rRectangle.Right(), rRectangle.Bottom());
+				rRectangle.Left(), rRectangle.Top(),
+				rRectangle.Right(), rRectangle.Bottom());
 
 			// create object transform
 			basegfx::B2DHomMatrix aTransform;
@@ -161,15 +161,15 @@ namespace sdr
 			aTransform.set(0, 2, aRange.getMinX());
 			aTransform.set(1, 2, aRange.getMinY());
 
-			// create media primitive. Always create primitives to allow the 
+			// create media primitive. Always create primitives to allow the
 			// decomposition of MediaPrimitive2D to create needed invisible elements for HitTest
 			// and/or BoundRect
 			const basegfx::BColor aBackgroundColor(67.0 / 255.0, 67.0 / 255.0, 67.0 / 255.0);
 			const rtl::OUString& rURL(GetSdrMediaObj().getURL());
 			const sal_uInt32 nPixelBorder(4L);
 			const drawinglayer::primitive2d::Primitive2DReference xRetval(
-                new drawinglayer::primitive2d::MediaPrimitive2D(
-				    aTransform, rURL, aBackgroundColor, nPixelBorder));
+				new drawinglayer::primitive2d::MediaPrimitive2D(
+					aTransform, rURL, aBackgroundColor, nPixelBorder));
 
 			return drawinglayer::primitive2d::Primitive2DSequence(&xRetval, 1);
 		}
