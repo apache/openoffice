@@ -304,6 +304,7 @@ bool createUrlRecord(
 
     /** Decode passwords on a line with the given master password.
      *
+     * @param aName name for the passwords. It can be a user name, for example.
      * @param aLine line with passwords to decode.
      * @param aMasterPassword master password to use.
      *
@@ -311,10 +312,20 @@ bool createUrlRecord(
      *
      * @return the decoded passwords.
      */
-    ::std::vector< ::rtl::OUString > DecodePasswords( const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPassword )
+    ::std::vector< ::rtl::OUString > DecodePasswords( const ::rtl::OUString& aName, const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPassword )
                                                         throw(::com::sun::star::uno::RuntimeException);
     
-    ::rtl::OUString EncodePasswords( ::std::vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPassword )
+    /** Encode passwords on a line with the given master password.
+     *
+     * @param aName name for the passwords. It can be a user name, for example.
+     * @param lines lines with passwords to decode.
+     * @param aMasterPassword master password to use.
+     *
+     * The encoding is selected by mOldPasswordEncoding.
+     *
+     * @return the decoded passwords.
+     */
+    ::rtl::OUString EncodePasswords( const ::rtl::OUString& aName, ::std::vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPassword )
                                                         throw(::com::sun::star::uno::RuntimeException);
 
     /** Actually change the master password, re-encoding all stored passwords.

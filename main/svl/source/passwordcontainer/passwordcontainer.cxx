@@ -507,7 +507,24 @@ static void decodeMasterPassword(const ::rtl::OUString& aMasterPasswd,
 
 //-------------------------------------------------------------------------
 
-vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPasswd ) throw(RuntimeException)
+/** Prepare the IV.
+ *
+ * @param iv vector to prepare. Its contents are destroyed.
+ * @param masterPasswdCode master password as output from decodeMasterPassword.
+ * @param name name of the password to decrypt.
+ */
+static void prepareIV(std::vector<sal_uInt8>& iv, const unsigned char *masterPasswordCode, const ::rtl::OUString &aName) {
+    std::vector<sal_uInt8> ivSource;
+    ivSource.assign(masterPasswordCode, masterPasswordCode + RTL_DIGEST_LENGTH_MD5);
+    ::rtl::OString encodedName = ::rtl::OUStringToOString(aName, RTL_TEXTENCODING_UTF8 );
+    ivSource.insert(ivSource.end(), encodedName.getStr(), encodedName.getStr() + encodedName.getLength());
+    iv.resize(RTL_DIGEST_LENGTH_MD5);
+    rtl_digest_MD5(ivSource.data(), ivSource.size(),
+                   iv.data(), iv.size());
+}
+
+//-------------------------------------------------------------------------
+vector< ::rtl::OUString > PasswordContainer::DecodePasswords(const ::rtl::OUString& aName, const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPasswd ) throw(RuntimeException)
 {
     if( aMasterPasswd.getLength() )
     {
@@ -516,13 +533,16 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
         if( aDecoder )
         {
+            std::vector<sal_uInt8> iv;
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
             decodeMasterPassword(aMasterPasswd, code, mOldPasswordEncoding);
+            if (!mOldPasswordEncoding) {
+                prepareIV(iv, code, aName);
+            }
 
             rtlCipherError result = rtl_cipher_init (
                     aDecoder, rtl_Cipher_DirectionDecode,
-                    code, RTL_DIGEST_LENGTH_MD5, NULL, 0 );
-
+                    code, RTL_DIGEST_LENGTH_MD5, iv.data(), iv.size() );
             if( result == rtl_Cipher_E_None )
             {
                 ::rtl::ByteSequence aSeq = getBufFromAsciiLine( aLine );
@@ -556,7 +576,7 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
 //-------------------------------------------------------------------------
 
-::rtl::OUString PasswordContainer::EncodePasswords( vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPasswd ) throw(RuntimeException)
+::rtl::OUString PasswordContainer::EncodePasswords( const ::rtl::OUString& aName, vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPasswd ) throw(RuntimeException)
 {
     if( aMasterPasswd.getLength() )
     {
@@ -567,13 +587,16 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
         if( aEncoder )
         {
-
+            std::vector<sal_uInt8> iv;
             unsigned char code[RTL_DIGEST_LENGTH_MD5];
             decodeMasterPassword(aMasterPasswd, code, false);
+            if (!mOldPasswordEncoding) {
+                prepareIV(iv, code, aName);
+            }
 
             rtlCipherError result = rtl_cipher_init (
                     aEncoder, rtl_Cipher_DirectionEncode,
-                    code, RTL_DIGEST_LENGTH_MD5, NULL, 0 );
+                    code, RTL_DIGEST_LENGTH_MD5, iv.data(), iv.size() );
 
             if( result == rtl_Cipher_E_None )
             {
@@ -633,6 +656,15 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords( const ::rtl::OUStr
 
 //-------------------------------------------------------------------------
 
+
+/** Return the "name" to use for the master password. */
+static const ::rtl::OUString& getMasterPasswordName(void) {
+    static const ::rtl::OUString value = ::rtl::OUString::createFromAscii( "Master" );
+    return value;
+}
+
+//-------------------------------------------------------------------------
+
 void PasswordContainer::doChangeMasterPassword(const ::rtl::OUString& aPass) {
     // get all the persistent entries if it is possible
     Sequence< UrlRecord > aPersistent = getAllPersistent( uno::Reference< task::XInteractionHandler >() );
@@ -643,7 +675,7 @@ void PasswordContainer::doChangeMasterPassword(const ::rtl::OUString& aPass) {
     // store the new master password
     m_aMasterPasswd = aPass;
     vector< ::rtl::OUString > aMaster( 1, m_aMasterPasswd );
-    m_pStorageFile->setEncodedMP( EncodePasswords( aMaster, m_aMasterPasswd ) );
+    m_pStorageFile->setEncodedMP( EncodePasswords( getMasterPasswordName(), aMaster, m_aMasterPasswd ) );
 
     // store all the entries with the new password
     for ( int nURLInd = 0; nURLInd < aPersistent.getLength(); nURLInd++ )
@@ -700,7 +732,7 @@ UserRecord PasswordContainer::CopyToUserRecord( const NamePassRecord& aRecord, s
     {
         try
         {
-            ::std::vector< ::rtl::OUString > aDecodedPasswords = DecodePasswords( aRecord.GetPersPasswords(), GetMasterPassword( aHandler ) );
+            ::std::vector< ::rtl::OUString > aDecodedPasswords = DecodePasswords( aRecord.GetUserName(), aRecord.GetPersPasswords(), GetMasterPassword( aHandler ) );
             aPasswords.insert( aPasswords.end(), aDecodedPasswords.begin(), aDecodedPasswords.end() );
         }
         catch( NoMasterException& )
@@ -757,7 +789,7 @@ void PasswordContainer::PrivateAdd( const ::rtl::OUString& Url, const ::rtl::OUS
     ::std::vector< ::rtl::OUString > aStorePass = copySequenceToVector( Passwords );
 
     if( Mode == PERSISTENT_RECORD )
-        aRecord.SetPersPasswords( EncodePasswords( aStorePass, GetMasterPassword( aHandler ) ) );
+        aRecord.SetPersPasswords( EncodePasswords( aRecord.GetUserName(), aStorePass, GetMasterPassword( aHandler ) ) );
     else if( Mode == MEMORY_RECORD )
         aRecord.SetMemPasswords( aStorePass );
     else
@@ -974,20 +1006,26 @@ UrlRecord PasswordContainer::find(
                         m_aMasterPasswd = aPass;
                         vector< ::rtl::OUString > aMaster( 1, m_aMasterPasswd );
 
-                        m_pStorageFile->setEncodedMP( EncodePasswords( aMaster, m_aMasterPasswd ) );
+                        m_pStorageFile->setEncodedMP( EncodePasswords( getMasterPasswordName(), aMaster, m_aMasterPasswd ) );
                     }
                     else
                     {
-                        vector< ::rtl::OUString > aRM( DecodePasswords( aEncodedMP, aPass ) );
+                        vector< ::rtl::OUString > aRM( DecodePasswords( getMasterPasswordName(), aEncodedMP, aPass ) );
                         if( !aRM.size() || !aPass.equals( aRM[0] ) )
                         {
                             // Try the old encoding
                             mOldPasswordEncoding = true;
-                            aRM = DecodePasswords( aEncodedMP, aPass );
-                            if (aRM.size() && aPass.equals(aRM[0])) {
-                                // Update the master password to the new encoding and update all stored passwords.
-                                m_aMasterPasswd = aPass;
-                                doChangeMasterPassword(aPass);
+                            try {
+                                aRM = DecodePasswords( getMasterPasswordName(), aEncodedMP, aPass );
+                                if (aRM.size() && aPass.equals(aRM[0])) {
+                                    // Update all passwords to the new encoding
+                                    m_aMasterPasswd = aPass;
+                                    doChangeMasterPassword(aPass);
+                                }
+                                mOldPasswordEncoding = false;
+                            } catch (...) {
+                                mOldPasswordEncoding = false;
+                                throw;
                             }
                         }
                         if( !aRM.size() || !aPass.equals( aRM[0] ) )
@@ -1156,7 +1194,7 @@ Sequence< UrlRecord > SAL_CALL PasswordContainer::getAllPersistent( const Refere
             {
                 sal_Int32 oldLen = aUsers.getLength();
                 aUsers.realloc( oldLen + 1 );
-                aUsers[ oldLen ] = UserRecord( aNPIter->GetUserName(), copyVectorToSequence( DecodePasswords( aNPIter->GetPersPasswords(), GetMasterPassword( xHandler ) ) ) );
+                aUsers[ oldLen ] = UserRecord( aNPIter->GetUserName(), copyVectorToSequence( DecodePasswords( aNPIter->GetUserName(), aNPIter->GetPersPasswords(), GetMasterPassword( xHandler ) ) ) );
             }
 
         if( aUsers.getLength() )
