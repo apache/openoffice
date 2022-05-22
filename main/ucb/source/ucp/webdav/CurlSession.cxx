@@ -770,9 +770,40 @@ void CurlSession::processResponse( CurlRequest &curlRequest, CURLcode curlCode )
     if ( curlCode != 0 )
     {
         m_aLogger.log( LogLevel::WARNING, "Curl request failed with CURLcode $1$", (sal_Int64)curlCode );
-        throw DAVException( DAVException::DAV_HTTP_LOOKUP,
-                            CurlUri::makeConnectionEndPointString( getHostName(),
-                                                                   getPort() ) );
+        DAVException::ExceptionCode exCode = DAVException::DAV_HTTP_ERROR;
+        rtl::OUString exData;
+        switch (curlCode) {
+        case CURLE_COULDNT_RESOLVE_HOST:
+            exCode = DAVException::DAV_HTTP_LOOKUP;
+            exData = CurlUri::makeConnectionEndPointString( getHostName(),
+                                                            getPort() );
+            break;
+        case CURLE_COULDNT_CONNECT:
+            exCode = DAVException::DAV_HTTP_CONNECT;
+            exData = CurlUri::makeConnectionEndPointString( getHostName(),
+                                                            getPort() );
+            break;
+        case CURLE_OPERATION_TIMEDOUT:
+            exCode = DAVException::DAV_HTTP_TIMEOUT;
+            exData = CurlUri::makeConnectionEndPointString( getHostName(),
+                                                            getPort() );
+            break;
+        case CURLE_LOGIN_DENIED:
+        case CURLE_AUTH_ERROR:
+            exCode = DAVException::DAV_HTTP_AUTH;
+            exData = CurlUri::makeConnectionEndPointString( getHostName(),
+                                                            getPort() );
+            break;
+        default:
+            {
+                const char *s = curl_easy_strerror(curlCode);
+                exCode = DAVException::DAV_HTTP_ERROR;
+                exData = ::rtl::OUString(s, strlen(s),
+                                         RTL_TEXTENCODING_UTF8);
+                break;
+            }
+        }
+        throw DAVException( exCode, exData );
     }
     
     rtl::OUString reasonPhrase = rtl::OStringToOUString( curlRequest.getReasonPhrase(), RTL_TEXTENCODING_UTF8 );
