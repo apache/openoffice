@@ -519,8 +519,8 @@ static void prepareIV(std::vector<sal_uInt8>& iv, const unsigned char *masterPas
     ::rtl::OString encodedName = ::rtl::OUStringToOString(aName, RTL_TEXTENCODING_UTF8 );
     ivSource.insert(ivSource.end(), encodedName.getStr(), encodedName.getStr() + encodedName.getLength());
     iv.resize(RTL_DIGEST_LENGTH_MD5);
-    rtl_digest_MD5(ivSource.data(), ivSource.size(),
-                   iv.data(), iv.size());
+    rtl_digest_MD5(&ivSource[0], ivSource.size(),
+                   &iv[0], iv.size());
 }
 
 //-------------------------------------------------------------------------
@@ -542,7 +542,7 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords(const ::rtl::OUStri
 
             rtlCipherError result = rtl_cipher_init (
                     aDecoder, rtl_Cipher_DirectionDecode,
-                    code, RTL_DIGEST_LENGTH_MD5, iv.data(), iv.size() );
+                    code, RTL_DIGEST_LENGTH_MD5, &iv[0], iv.size() );
             if( result == rtl_Cipher_E_None )
             {
                 ::rtl::ByteSequence aSeq = getBufFromAsciiLine( aLine );
@@ -596,7 +596,7 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords(const ::rtl::OUStri
 
             rtlCipherError result = rtl_cipher_init (
                     aEncoder, rtl_Cipher_DirectionEncode,
-                    code, RTL_DIGEST_LENGTH_MD5, iv.data(), iv.size() );
+                    code, RTL_DIGEST_LENGTH_MD5, &iv[0], iv.size() );
 
             if( result == rtl_Cipher_E_None )
             {
