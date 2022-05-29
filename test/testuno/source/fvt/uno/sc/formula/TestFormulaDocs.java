@@ -105,7 +105,7 @@ public class TestFormulaDocs {
 	// FIXME: only needs a timeout for running tests against AOO41X due to fixes for i112383 and i117960 present in trunk
 	// haven't been backported to AOO41X yet and causes these tests to hang on an error dialog.
 	@Test(timeout = 15000)
-	public void testOneDoc( String filename) throws Exception {
+	public void testOneDoc() throws Exception {
 		// open the spreadsheet document
 		String sample = Testspace.prepareData(filename);
 		// enable macros
