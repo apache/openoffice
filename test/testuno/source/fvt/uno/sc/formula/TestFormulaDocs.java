@@ -23,10 +23,17 @@ package fvt.uno.sc.formula;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
+import org.junit.runners.Parameterized.Parameters;
+
+import java.util.Arrays;
+import java.util.Collection;
 
 import org.openoffice.test.common.Testspace;
 import org.openoffice.test.common.Logger;
@@ -50,43 +57,57 @@ import com.sun.star.util.XModifiable;
 
 import java.util.logging.Level;
 
-
+@RunWith(Parameterized.class)
 public class TestFormulaDocs {
+
+	private String filename;
+	private String type;
+
+	@Parameters
+	public static Collection<Object[]> data() {
+		return Arrays.asList(new Object[][]{
+				// test documents
+				{"uno/sc/fvt/FormulaTest1.ods", "FormulaTest1.ods"},
+				{"uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods", "StarBasicYearMonthDateHourMinuteSecondTests.ods"},
+				{"uno/sc/fvt/StarBasicCLng.ods", "StarBasicCLng.ods"},
+				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas.ods"},
+				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input.ods"}
+		});
+	}
 
 	@Rule
 	public Logger log = Logger.getLogger(this);
 
-	UnoApp unoApp = new UnoApp();
+	static UnoApp unoApp = new UnoApp();
 	XComponent scComponent = null;
 
-	@Before
-	public void setUp() throws Exception {
-		unoApp.start();
-	}
-
-	@After
-	public void tearDown() throws Exception {
+	/**
+	 * Clean class after testing
+	 *
+	 * @throws Exception
+	 */
+	@AfterClass
+	public static void afterClass() {
 		unoApp.close();
 	}
 
-	/**
-	 * Test evaluation of formulas in a sample document
-	 * 
-	 * @throws Exception
-	 */
-
-	@Test
-	public void testFormulaDocs() throws Exception {
-		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
-		testOneDoc( "uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods");
-		testOneDoc( "uno/sc/fvt/StarBasicCLng.ods");
-		testOneDoc( "uno/sc/fvt/DGET on formulas.ods");
-		testOneDoc( "uno/sc/fvt/Basic Line as variable and Line Input.ods");
+	@Before
+	public void setUp() throws Exception {
+		unoApp.close(); // moved here from tearDown because stopping app there causes a late screenshot
+		unoApp.start();
 	}
 
+	public TestFormulaDocs(String filename, String type) {
+		this.filename = filename;
+		this.type = type;
+	}
+
+	// FIXME: only needs a timeout for running tests against AOO41X due to fixes for i112383 and i117960 present in trunk
+	// haven't been backported to AOO41X yet and causes these tests to hang on an error dialog.
+	@Test(timeout = 15000)
 	public void testOneDoc( String filename) throws Exception {
 		// open the spreadsheet document
-		String sample = Testspace.prepareData( filename);
+		String sample = Testspace.prepareData(filename);
 		// enable macros
 		PropertyValue prop = new PropertyValue();
 		prop.Name = "MacroExecutionMode";
@@ -146,7 +167,7 @@ public class TestFormulaDocs {
 			}
 		}
 
-		assertTrue( (""+nFailCount+" of "+nTestCount+" tests failed"), nFailCount==0);
+		assertTrue( (""+nFailCount+" of "+nTestCount+" tests failed for " + type), nFailCount==0);
 
 		XModifiable modified = (XModifiable)UnoRuntime.queryInterface( XModifiable.class, scDoc);
 		modified.setModified( false);
@@ -154,4 +175,3 @@ public class TestFormulaDocs {
 	}
 
 }
-
