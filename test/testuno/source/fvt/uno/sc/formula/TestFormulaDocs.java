@@ -76,6 +76,8 @@ public class TestFormulaDocs {
 	@Test
 	public void testFormulaDocs() throws Exception {
 		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
+                testOneDoc( "uno/sc/fvt/StarBasicCLng.ods");
+                testOneDoc( "uno/sc/fvt/Basic Line as variable and Line Input.ods");
 	}
 
 	public void testOneDoc( String filename) throws Exception {
