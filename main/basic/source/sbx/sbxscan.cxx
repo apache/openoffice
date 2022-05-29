@@ -424,7 +424,7 @@ sal_Bool ImpConvStringExt( ::rtl::OUString& rSrc, SbxDataType eTargetType )
 	sal_Bool bChanged = sal_False;
 	::rtl::OUString aNewString;
 
-	// Nur Spezial-F\E4lle behandeln, als Default tun wir nichts
+	// Nur Spezial-Fälle behandeln, als Default tun wir nichts
 	switch( eTargetType )
 	{
 		// Bei Fliesskomma International beruecksichtigen
