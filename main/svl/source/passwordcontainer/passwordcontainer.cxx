@@ -857,7 +857,7 @@ Sequence< UserRecord > PasswordContainer::FindUsr( const list< NamePassRecord >&
 //-------------------------------------------------------------------------
 
 bool PasswordContainer::createUrlRecord(
-    const PassMap::iterator & rIter,
+    const PairUrlRecord & rPair,
     bool bName,
     const ::rtl::OUString & aName,
     const Reference< XInteractionHandler >& aHandler,
@@ -867,18 +867,18 @@ bool PasswordContainer::createUrlRecord(
     if ( bName )
     {
         Sequence< UserRecord > aUsrRec
-            = FindUsr( rIter->second, aName, aHandler );
+            = FindUsr( rPair.second, aName, aHandler );
         if( aUsrRec.getLength() )
         {
-            rRec = UrlRecord( rIter->first, aUsrRec );
+            rRec = UrlRecord( rPair.first, aUsrRec );
             return true;
         }
     }
     else
     {
         rRec = UrlRecord(
-            rIter->first,
-            CopyToUserRecordSequence( rIter->second, aHandler ) );
+            rPair.first,
+            CopyToUserRecordSequence( rPair.second, aHandler ) );
         return true;
     }
     return false;
@@ -904,10 +904,14 @@ UrlRecord PasswordContainer::find(
         {
             // first look for <url>/somename and then look for <url>/somename/...
             PassMap::iterator aIter = m_aContainer.find( aUrl );
+            // Note that this iterator may be invalidated by the
+            // side-effects of createUrlRecord(), so we have to work with a
+            // copy of the pointed elements
             if( aIter != m_aContainer.end() )
             {
+                const PairUrlRecord rPairUrlRecord = *aIter;
                 UrlRecord aRec;
-                if ( createUrlRecord( aIter, bName, aName, aHandler, aRec ) )
+                if ( createUrlRecord( rPairUrlRecord, bName, aName, aHandler, aRec ) )
                   return aRec;
             }
             else
@@ -919,8 +923,9 @@ UrlRecord PasswordContainer::find(
                 aIter = m_aContainer.lower_bound( tmpUrl );
                 if( aIter != m_aContainer.end() && aIter->first.match( tmpUrl ) )
                 {
+                    const PairUrlRecord rPairUrlRecord = *aIter;
                     UrlRecord aRec;
-                    if ( createUrlRecord( aIter, bName, aName, aHandler, aRec ) )
+                    if ( createUrlRecord( rPairUrlRecord, bName, aName, aHandler, aRec ) )
                       return aRec;
                 }
             }
