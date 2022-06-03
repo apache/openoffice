@@ -270,7 +270,7 @@ private:
                                         const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& Handler )
                                                         throw(::com::sun::star::uno::RuntimeException);
 bool createUrlRecord( 
-    const PassMap::iterator & rIter, 
+    const PairUrlRecord & rPair,
     bool bName,
     const ::rtl::OUString & aName,
     const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler,
