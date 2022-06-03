@@ -1154,9 +1154,6 @@ void SAL_CALL PasswordContainer::removeAllPersistent() throw(RuntimeException)
             {
                 // TODO/LATER: should the password be converted to MemoryPassword?
                 aNPIter->RemovePasswords( PERSISTENT_RECORD );
-
-                if ( m_pStorageFile )
-                    m_pStorageFile->remove( aIter->first, aNPIter->GetUserName() ); // remove record ( aURL, aName )
             }
 
             if( !aNPIter->HasPasswords( MEMORY_RECORD ) )
