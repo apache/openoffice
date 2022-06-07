@@ -2031,46 +2031,52 @@ void SplitWindow::ImplDrawFadeArrow( const Point& rPt, sal_Bool bHorz, sal_Bool 
         int dx = 1;
         if( bLeft )
         {
-            x ++;
+            x = x+3;
             dx = -1;
         }
 
-        x++; y++;
-        aCol = Color( COL_WHITE );
-        DrawPixel( Point(x, y), aCol );
-        DrawPixel( Point(x, y+1), aCol );
-        DrawPixel( Point(x, y+2), aCol );
-        DrawPixel( Point(x+dx, y+1), aCol );
-
-        x--; y--;
+        x = x-1;
         aCol = rStyleSettings.GetDarkShadowColor();
         DrawPixel( Point(x, y), aCol );
-        DrawPixel( Point(x, y+1), aCol );
-        DrawPixel( Point(x, y+2), aCol );
+        DrawPixel( Point(x, y+6), aCol );
         DrawPixel( Point(x+dx, y+1), aCol );
+        DrawPixel( Point(x+dx, y+5), aCol );
+        DrawPixel( Point(x+dx+dx, y+2), aCol );
+        DrawPixel( Point(x+dx+dx, y+4), aCol );
+        DrawPixel( Point(x+dx+dx+dx, y+3), aCol );
+
+        aCol = rStyleSettings.GetShadowColor();
+        DrawPixel( Point(x, y+1), aCol );
+        DrawPixel( Point(x, y+5), aCol );
+        DrawPixel( Point(x+dx, y+2), aCol );
+        DrawPixel( Point(x+dx, y+4), aCol );
+        DrawPixel( Point(x+dx+dx, y+3), aCol );
     }
     else
     {
         int dy = 1;
         if( bLeft )
         {
-            y ++;
+            y = y+3;
             dy = -1;
         }
 
-        x++; y++;
-        aCol = Color( COL_WHITE );
-        DrawPixel( Point(x, y), aCol );
-        DrawPixel( Point(x+1, y), aCol );
-        DrawPixel( Point(x+2, y), aCol );
-        DrawPixel( Point(x+1, y+dy), aCol );
-
-        x--; y--;
+        y = y-1;
         aCol = rStyleSettings.GetDarkShadowColor();
         DrawPixel( Point(x, y), aCol );
-        DrawPixel( Point(x+1, y), aCol );
-        DrawPixel( Point(x+2, y), aCol );
+        DrawPixel( Point(x+6, y), aCol );
         DrawPixel( Point(x+1, y+dy), aCol );
+        DrawPixel( Point(x+5, y+dy), aCol );
+        DrawPixel( Point(x+2, y+dy+dy), aCol );
+        DrawPixel( Point(x+4, y+dy+dy), aCol );
+        DrawPixel( Point(x+3, y+dy+dy+dy), aCol );
+
+        aCol = rStyleSettings.GetShadowColor();
+        DrawPixel( Point(x+1, y), aCol );
+        DrawPixel( Point(x+5, y), aCol );
+        DrawPixel( Point(x+2, y+dy), aCol );
+        DrawPixel( Point(x+4, y+dy), aCol );
+        DrawPixel( Point(x+3, y+dy+dy), aCol );
     }
 }
 
@@ -2090,7 +2096,7 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
         int i = rRect.nLeft + (rRect.getWidth() - width) / 2;
         width += i;
         const int y = rRect.nTop + 1;
-        ImplDrawFadeArrow( Point( i-8, y), bHorz, bLeft );
+        ImplDrawFadeArrow( Point( i-9, y), bHorz, bLeft );
         while( i <= width )
         {
 
@@ -2101,7 +2107,7 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
             DrawPixel( Point(i+1, y+1), rStyleSettings.GetShadowColor() );
             i+=4;
         }
-        ImplDrawFadeArrow( Point( i+3, y), bHorz, bLeft );
+        ImplDrawFadeArrow( Point( i, y), bHorz, bLeft );
     }
     else
     {
@@ -2109,7 +2115,7 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
         int i = rRect.nTop + (rRect.getHeight() - height) / 2;
         height += i;
         const int x = rRect.nLeft + 1;
-        ImplDrawFadeArrow( Point( x, i-8), bHorz, bLeft );
+        ImplDrawFadeArrow( Point( x, i-9), bHorz, bLeft );
         while( i <= height )
         {
 
@@ -2120,7 +2126,7 @@ void SplitWindow::ImplDrawGrip( const Rectangle& rRect, sal_Bool bHorz, sal_Bool
             DrawPixel( Point(x+1, i+1), rStyleSettings.GetShadowColor() );
             i+=4;
         }
-        ImplDrawFadeArrow( Point( x, i+3), bHorz, bLeft );
+        ImplDrawFadeArrow( Point( x, i), bHorz, bLeft );
     }
 }
 
@@ -2142,7 +2148,7 @@ void SplitWindow::ImplDrawFadeIn( sal_Bool bInPaint )
 		else if ( meAlign == WINDOWALIGN_RIGHT )
 			bLeft	= sal_True;
 		else
-			bLeft   = sal_True;
+			bLeft	= sal_True;
 
 		if ( !bInPaint )
 			Erase( aTempRect );
@@ -2171,7 +2177,7 @@ void SplitWindow::ImplDrawFadeOut( sal_Bool bInPaint )
 		else if ( meAlign == WINDOWALIGN_RIGHT )
 			bLeft	= sal_False;
 		else
-			bLeft   = sal_True;
+			bLeft	= sal_True;
 
 		if ( !bInPaint )
 			Erase( aTempRect );
