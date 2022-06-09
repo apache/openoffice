@@ -202,7 +202,7 @@ SbxError ImpScan( const ::rtl::OUString& rWSrc, double& nVal, SbxDataType& rType
 			case 'H': break;
 			default : bRes = sal_False;
 		}
-		long l = 0;
+		sal_Int32 l = 0;
 		int i;
 		while( isalnum( *p ) )
 		{
@@ -424,7 +424,7 @@ sal_Bool ImpConvStringExt( ::rtl::OUString& rSrc, SbxDataType eTargetType )
 	sal_Bool bChanged = sal_False;
 	::rtl::OUString aNewString;
 
-	// Nur Spezial-Fälle behandeln, als Default tun wir nichts
+	// Nur Spezial-FÃ¤lle behandeln, als Default tun wir nichts
 	switch( eTargetType )
 	{
 		// Bei Fliesskomma International beruecksichtigen

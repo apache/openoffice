@@ -36,6 +36,8 @@ import org.openoffice.test.uno.UnoApp;
 import testlib.uno.SCUtil;
 import static testlib.uno.TestUtil.*;
 
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.document.MacroExecMode;
 import com.sun.star.lang.XComponent;
 import com.sun.star.sheet.XSpreadsheet;
 import com.sun.star.sheet.XSpreadsheetDocument;
@@ -75,13 +77,21 @@ public class TestFormulaDocs {
 
 	@Test
 	public void testFormulaDocs() throws Exception {
-		testOneDoc( "uno/sc/fvt/FormulaTest1.ods");
+		testOneDoc("uno/sc/fvt/FormulaTest1.ods");
+                testOneDoc("uno/sc/fvt/StarBasicCLng.ods");
+                testOneDoc("uno/sc/fvt/Basic Line as variable and Line Input.ods");
+                testOneDoc("uno/sc/fvt/comment-in-single-line-if-then-else.ods");
 	}
 
 	public void testOneDoc( String filename) throws Exception {
 		// open the spreadsheet document
 		String sample = Testspace.prepareData( filename);
-		XSpreadsheetDocument scDoc = SCUtil.openFile( sample, unoApp);
+		// enable macros
+		PropertyValue prop = new PropertyValue();
+		prop.Name = "MacroExecutionMode";
+		prop.Value = MacroExecMode.ALWAYS_EXECUTE_NO_WARN;
+		XSpreadsheetDocument scDoc = (XSpreadsheetDocument) UnoRuntime.queryInterface(
+				XSpreadsheetDocument.class, unoApp.loadDocument(sample, prop));
 		XSpreadsheet xSheet = SCUtil.getCurrentSheet( scDoc);
 
 		// find the "TestID" and "TestOK" markers
