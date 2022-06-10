@@ -72,6 +72,7 @@ public class TestFormulaDocs {
 				{"uno/sc/fvt/StarBasicCLng.ods", "Basic Convert to Long Function Test"},
 				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas Test"},
 				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
+				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"},
 				{"uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml", "Bug 100989 fractional seconds are silently ignored during import"}
 		});
 	}
