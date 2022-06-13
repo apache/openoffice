@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -673,15 +673,15 @@ StyleSettings::~StyleSettings()
         mpData->mnRefCount--;
 }
 
-const Size& StyleSettings::GetListBoxPreviewDefaultPixelSize() const 
+const Size& StyleSettings::GetListBoxPreviewDefaultPixelSize() const
 {
     if(0 == mpData->maListBoxPreviewDefaultPixelSize.Width() || 0 == mpData->maListBoxPreviewDefaultPixelSize.Height())
     {
-        const_cast< StyleSettings* >(this)->mpData->maListBoxPreviewDefaultPixelSize = 
+        const_cast< StyleSettings* >(this)->mpData->maListBoxPreviewDefaultPixelSize =
             Application::GetDefaultDevice()->LogicToPixel(mpData->maListBoxPreviewDefaultLogicSize, MAP_APPFONT);
     }
 
-    return mpData->maListBoxPreviewDefaultPixelSize; 
+    return mpData->maListBoxPreviewDefaultPixelSize;
 }
 
 // -----------------------------------------------------------------------
@@ -750,7 +750,7 @@ sal_uLong StyleSettings::ImplNameToSymbolsStyle( const ::rtl::OUString &rName ) 
 
 /**
 	The preferred style name can be read from the desktop setting. We
-	need to find the closest theme name registered in OOo. Therefore
+	need to find the closest theme name registered in AOO. Therefore
 	we check if any registered style name is a case-insensitive
 	substring of the preferred style name.
 */
@@ -770,7 +770,7 @@ void StyleSettings::SetPreferredSymbolsStyleName( const ::rtl::OUString &rName )
 
 sal_uLong StyleSettings::GetCurrentSymbolsStyle() const
 {
-	// style selected in Tools -> Options... -> OpenOffice.org -> View
+	// style selected in Tools - Options - OpenOffice - View
 	sal_uLong nStyle = GetSymbolsStyle();
 
 	if ( nStyle == STYLE_SYMBOLS_AUTO || ( !CheckSymbolStyle (nStyle) ) )
@@ -924,7 +924,7 @@ void StyleSettings::CopyData()
 
 // -----------------------------------------------------------------------
 
-inline sal_Bool ImplIsBackOrWhite( const Color& rColor )
+inline sal_Bool ImplIsBlackOrWhite( const Color& rColor )
 {
     sal_uInt8 nLuminance = rColor.GetLuminance();
     return ( nLuminance < 8 ) || ( nLuminance > 250 );
@@ -940,31 +940,31 @@ sal_Bool StyleSettings::IsHighContrastBlackAndWhite() const
 
     // Unfortunately, GNOME uses a very very dark color (0x000033) instead of BLACK (0x000000)
 
-    if ( !ImplIsBackOrWhite( GetFaceColor() ) )
+    if ( !ImplIsBlackOrWhite( GetFaceColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetHighlightTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetHighlightTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetWindowColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetWindowColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetWindowTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetWindowTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetButtonTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetButtonTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetButtonTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetButtonTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetGroupTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetGroupTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetLabelTextColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetLabelTextColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetDialogColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetDialogColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetFieldColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetFieldColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetMenuColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetMenuColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetMenuBarColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetMenuBarColor() ) )
         bBWOnly = sal_False;
-    else if ( !ImplIsBackOrWhite( GetMenuHighlightColor() ) )
+    else if ( !ImplIsBlackOrWhite( GetMenuHighlightColor() ) )
         bBWOnly = sal_False;
 
     return bBWOnly;

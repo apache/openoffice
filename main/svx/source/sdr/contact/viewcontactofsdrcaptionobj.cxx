@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -64,17 +64,17 @@ namespace sdr
 			const SfxItemSet& rItemSet = rCaptionObj.GetMergedItemSet();
 			const drawinglayer::attribute::SdrLineFillShadowTextAttribute aAttribute(
 				drawinglayer::primitive2d::createNewSdrLineFillShadowTextAttribute(
-                    rItemSet, 
-                    rCaptionObj.getText(0),
-                    false));
+					rItemSet,
+					rCaptionObj.getText(0),
+					false));
 
 			// take unrotated snap rect (direct model data) for position and size
 			const Rectangle& rRectangle = rCaptionObj.GetGeoRect();
 			const ::basegfx::B2DRange aObjectRange(
-				rRectangle.Left(), rRectangle.Top(), 
+				rRectangle.Left(), rRectangle.Top(),
 				rRectangle.Right(), rRectangle.Bottom());
 			const GeoStat& rGeoStat(rCaptionObj.GetGeoStat());
-			
+
 			// fill object matrix
 			basegfx::B2DHomMatrix aObjectMatrix(basegfx::tools::createScaleShearXRotateTranslateB2DHomMatrix(
 				aObjectRange.getWidth(), aObjectRange.getHeight(),
@@ -92,10 +92,10 @@ namespace sdr
 			// of SdrCaptionPrimitive2D create needed invisible elements for HitTest and BoundRect
 			const drawinglayer::primitive2d::Primitive2DReference xReference(
 				new drawinglayer::primitive2d::SdrCaptionPrimitive2D(
-					aObjectMatrix, 
-					aAttribute, 
-					rCaptionObj.getTailPolygon(), 
-					fCornerRadiusX, 
+					aObjectMatrix,
+					aAttribute,
+					rCaptionObj.getTailPolygon(),
+					fCornerRadiusX,
 					fCornerRadiusY));
 
 			xRetval = drawinglayer::primitive2d::Primitive2DSequence(&xReference, 1);
@@ -144,41 +144,41 @@ namespace sdr
 					const sal_uInt32 nXDist(((SdrShadowXDistItem&)(rItemSet.Get(SDRATTR_SHADOWXDIST))).GetValue());
 					const sal_uInt32 nYDist(((SdrShadowYDistItem&)(rItemSet.Get(SDRATTR_SHADOWYDIST))).GetValue());
 
-                    if(nXDist || nYDist)
-                    {
-                        // #119750# create obect and shadow outline, clip shadow outline
-                        // on object outline. If there is a rest, create shadow. Do this to
-                        // emulate that shadow is *not* visible behind the object for
-                        // transparent object fill for comments in excel
-                        basegfx::B2DPolygon aObjectOutline(
-                            basegfx::tools::createPolygonFromRect(
-                                basegfx::B2DRange(0.0, 0.0, 1.0, 1.0), 
-                                fCornerRadiusX, 
-                                fCornerRadiusY));
-                        aObjectOutline.transform(aObjectMatrix);
+					if(nXDist || nYDist)
+					{
+						// #119750# create object and shadow outline, clip shadow outline
+						// on object outline. If there is a rest, create shadow. Do this to
+						// emulate that shadow is *not* visible behind the object for
+						// transparent object fill for comments in excel
+						basegfx::B2DPolygon aObjectOutline(
+							basegfx::tools::createPolygonFromRect(
+								basegfx::B2DRange(0.0, 0.0, 1.0, 1.0),
+								fCornerRadiusX,
+								fCornerRadiusY));
+						aObjectOutline.transform(aObjectMatrix);
 
-                        // create shadow outline
-                        basegfx::B2DPolygon aShadowOutline(aObjectOutline);
-                        aShadowOutline.transform(
-                            basegfx::tools::createTranslateB2DHomMatrix(nXDist, nYDist));
+						// create shadow outline
+						basegfx::B2DPolygon aShadowOutline(aObjectOutline);
+						aShadowOutline.transform(
+							basegfx::tools::createTranslateB2DHomMatrix(nXDist, nYDist));
 
-                        // clip shadow outline against object outline
-                        const basegfx::B2DPolyPolygon aClippedShadow(
-                            basegfx::tools::clipPolygonOnPolyPolygon(
-                                aShadowOutline, 
-                                basegfx::B2DPolyPolygon(aObjectOutline), 
-                                false, // take the outside
-                                false));
+						// clip shadow outline against object outline
+						const basegfx::B2DPolyPolygon aClippedShadow(
+							basegfx::tools::clipPolygonOnPolyPolygon(
+								aShadowOutline,
+								basegfx::B2DPolyPolygon(aObjectOutline),
+								false, // take the outside
+								false));
 
-                        if(aClippedShadow.count())
-                        {
-                            // if there is shadow, create the specialized shadow primitive
-                            xSpecialShadow = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
-                                aClippedShadow, 
-                                aFill,
-                                drawinglayer::attribute::FillGradientAttribute());
-                        }
-                    }
+						if(aClippedShadow.count())
+						{
+							// if there is shadow, create the specialized shadow primitive
+							xSpecialShadow = drawinglayer::primitive2d::createPolyPolygonFillPrimitive(
+								aClippedShadow,
+								aFill,
+								drawinglayer::attribute::FillGradientAttribute());
+						}
+					}
 				}
 
 				if(xSpecialShadow.is())
@@ -186,7 +186,7 @@ namespace sdr
 					// if we really got a special shadow, create a two-element retval with the shadow
 					// behind the standard object's geometry
 					xRetval.realloc(2);
-					
+
 					xRetval[0] = xSpecialShadow;
 					xRetval[1] = xReference;
 				}

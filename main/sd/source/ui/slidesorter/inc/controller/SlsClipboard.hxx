@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -91,16 +91,16 @@ public:
 
     sal_Int8 AcceptDrop (
         const AcceptDropEvent& rEvt,
-        DropTargetHelper& rTargetHelper, 
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        DropTargetHelper& rTargetHelper,
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND );
 
 	sal_Int8 ExecuteDrop (
-        const ExecuteDropEvent& rEvt, 
+        const ExecuteDropEvent& rEvt,
         DropTargetHelper& rTargetHelper,
-        ::sd::Window* pTargetWindow = NULL, 
-        sal_uInt16 nPage = SDRPAGE_NOTFOUND, 
+        ::sd::Window* pTargetWindow = NULL,
+        sal_uInt16 nPage = SDRPAGE_NOTFOUND,
         sal_uInt16 nLayer = SDRPAGE_NOTFOUND);
 
     void Abort (void);
@@ -144,9 +144,9 @@ private:
 
     ::boost::scoped_ptr<SelectionObserver::Context> mpSelectionObserverContext;
     sal_uLong mnDragFinishedUserEventId;
-    
+
     void CreateSlideTransferable (
-        ::Window* pWindow, 
+        ::Window* pWindow,
         bool bDrag);
 
     /** Select the pages stored in the maPagesToSelect member.  The list in
@@ -176,7 +176,7 @@ private:
     */
     sal_Int32 PasteTransferable (sal_Int32 nInsertPosition);
 
-    /** Select a range of pages of the model.  Typicall usage is the
+    /** Select a range of pages of the model.  Typical usage is the
         selection of newly inserted pages.
         @param nFirstIndex
             The index of the first page to select.
@@ -210,7 +210,7 @@ private:
         @param pDropEvent
             Event though the AcceptDropEvent and ExecuteDropEvent are very
             similar they do not have a common base class.  Because of that
-            we have to use a void* to pase these structs.
+            we have to use a void* to pass these structs.
         @param nPage
             When the page number is given as 0xffff then it is replaced by
             the number of the page at the mouse position.  If the mouse is
@@ -228,7 +228,7 @@ private:
         sal_uInt16 nLayer);
 
     /** Return whether the insertion defined by the transferable is
-        trivial, ie would not change either source nor target document.
+        trivial, i.e. would not change either source nor target document.
     */
     bool IsInsertionTrivial (
         SdTransferable* pTransferable,
@@ -245,4 +245,3 @@ private:
 } } } // end of namespace ::sd::slidesorter::controller
 
 #endif
-

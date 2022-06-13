@@ -35,12 +35,10 @@
 Image RID_SVX_RELOAD_NORMAL
 {
 	ImageBitmap = Bitmap { File = "reload.png" ; };
-	MASKCOLOR
 };
 Image RID_SVX_RELOAD_SPECIAL
 {
 	ImageBitmap = Bitmap { File = "reloads.png" ; };
-	MASKCOLOR
 };
 ImageList RID_SVXIL_FRAME
 {
@@ -106,72 +104,58 @@ String RID_SVXSTR_PAGES
 Image RID_SVXIMG_GRAF_RED
 {
 	ImageBitmap = Bitmap { File = "sc10865.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_GREEN
 {
 	ImageBitmap = Bitmap { File = "sc10866.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_BLUE
 {
 	ImageBitmap = Bitmap { File = "sc10867.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_LUMINANCE
 {
 	ImageBitmap = Bitmap { File = "sc10863.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_CONTRAST
 {
 	ImageBitmap = Bitmap { File = "sc10864.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_GAMMA
 {
 	ImageBitmap = Bitmap { File = "sc10868.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_TRANSPARENCE
 {
 	ImageBitmap = Bitmap { File = "sc10869.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_RED_H
 {
 	ImageBitmap = Bitmap { File = "sch10865.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_GREEN_H
 {
 	ImageBitmap = Bitmap { File = "sch10866.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_BLUE_H
 {
 	ImageBitmap = Bitmap { File = "sch10867.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_LUMINANCE_H
 {
 	ImageBitmap = Bitmap { File = "sch10863.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_CONTRAST_H
 {
 	ImageBitmap = Bitmap { File = "sch10864.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_GAMMA_H
 {
 	ImageBitmap = Bitmap { File = "sch10868.png" ; };
-	MASKCOLOR
 };
 Image RID_SVXIMG_GRAF_TRANSPARENCE_H
 {
 	ImageBitmap = Bitmap { File = "sch10869.png" ; };
-	MASKCOLOR
 };
 String RID_SVXSTR_CLEARFORM
 {

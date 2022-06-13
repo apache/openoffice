@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,21 +7,23 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #ifndef _SVX_SIDEBAR_UNDERLINE_CONTROL_HXX_
 #define _SVX_SIDEBAR_UNDERLINE_CONTROL_HXX_
- 
+
 #include "svx/sidebar/PopupControl.hxx"
 #include <sfx2/bindings.hxx>
 #include <svtools/ctrlbox.hxx>
@@ -38,14 +40,14 @@ namespace svx{ namespace sidebar {
 class TextUnderlineControl:public svx::sidebar::PopupControl
 {
 public:
-    TextUnderlineControl (
-        Window* pParent,
-        svx::sidebar::TextPropertyPanel& rPanel,
-        SfxBindings* pBindings);
-    void Rearrange(FontUnderline eLine);
+	TextUnderlineControl (
+		Window* pParent,
+		svx::sidebar::TextPropertyPanel& rPanel,
+		SfxBindings* pBindings);
+	void Rearrange(FontUnderline eLine);
 
 private:
-	svx::sidebar::TextPropertyPanel&     mrTextPropertyPanel;
+	svx::sidebar::TextPropertyPanel& mrTextPropertyPanel;
 	SfxBindings*		mpBindings;
 	ValueSet			maVSUnderline;
 	PushButton			maPBOptions;
@@ -61,7 +63,7 @@ private:
 	Image				maIMGDashDotDot;
 	Image				maIMGWave;
 
-	//add  for high contract
+	//add for high contract
 	Image				maIMGSingleH;
 	Image				maIMGDoubleH;
 	Image				maIMGBoldH;
@@ -93,4 +95,3 @@ private:
 
 
 #endif
-

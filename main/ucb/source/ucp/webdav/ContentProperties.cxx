@@ -31,7 +31,7 @@
  *************************************************************************/
 #include <osl/diagnose.h>
 #include <com/sun/star/util/DateTime.hpp>
-#include "SerfUri.hxx"
+#include "CurlUri.hxx"
 #include "DAVResource.hxx"
 #include "DAVProperties.hxx"
 #include "DateTimeHelper.hxx"
@@ -97,7 +97,7 @@ ContentProperties::ContentProperties( const DAVResource& rResource )
     // Title
     try
     {
-        SerfUri aURI( rResource.uri );
+        CurlUri aURI( rResource.uri );
         m_aEscapedTitle = aURI.GetPathBaseName();
 
         (*m_xProps)[ rtl::OUString::createFromAscii( "Title" ) ]

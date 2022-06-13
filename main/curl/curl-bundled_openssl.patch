@@ -1,0 +1,28 @@
+--- misc/curl-7.72.0/configure	2020-08-17 00:34:29.000000000 +0200
++++ misc/build/curl-7.72.0/configure	2022-05-05 19:03:39.766880970 +0200
+@@ -23617,14 +23617,14 @@
+       { $as_echo "$as_me:${as_lineno-$LINENO}: PKG_CONFIG_LIBDIR will be set to \"$OPENSSL_PCDIR\"" >&5
+ $as_echo "$as_me: PKG_CONFIG_LIBDIR will be set to \"$OPENSSL_PCDIR\"" >&6;}
+       PKGTEST="yes"
+-    elif test ! -f "$PREFIX_OPENSSL/include/openssl/ssl.h"; then
++    elif test ! -f "$PREFIX_OPENSSL/inc/external/openssl/ssl.h"; then
+       as_fn_error $? "$PREFIX_OPENSSL is a bad --with-ssl prefix!" "$LINENO" 5
+     fi
+ 
+             LIB_OPENSSL="$PREFIX_OPENSSL/lib$libsuff"
+     if test "$PREFIX_OPENSSL" != "/usr" ; then
+       SSL_LDFLAGS="-L$LIB_OPENSSL"
+-      SSL_CPPFLAGS="-I$PREFIX_OPENSSL/include"
++      SSL_CPPFLAGS="-I$PREFIX_OPENSSL/inc/external"
+     fi
+     SSL_CPPFLAGS="$SSL_CPPFLAGS -I$PREFIX_OPENSSL/include/openssl"
+     ;;
+@@ -23841,7 +23841,7 @@
+      LDFLAGS="$CLEANLDFLAGS -L$LIB_OPENSSL"
+      if test "$PKGCONFIG" = "no" ; then
+        # only set this if pkg-config wasn't used
+-       CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/include/openssl -I$PREFIX_OPENSSL/include"
++       CPPFLAGS="$CLEANCPPFLAGS -I$PREFIX_OPENSSL/inc/external/openssl -I$PREFIX_OPENSSL/inc/external"
+      fi
+      # Linking previously failed, try extra paths from --with-ssl or pkg-config.
+      # Use a different function name to avoid reusing the earlier cached result.

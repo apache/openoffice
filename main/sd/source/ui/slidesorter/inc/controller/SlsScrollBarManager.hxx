@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -51,7 +51,7 @@ namespace sd { namespace slidesorter { namespace controller {
 
 /** Manage the horizontal and vertical scroll bars.  Listen for events, set
     their sizes, place them in the window, determine their visibilities.
-    
+
     <p>Handle auto scrolling, i.e. the scrolling of the window when the
     mouse comes near the window border while dragging a selection.</p>
 
@@ -86,12 +86,12 @@ public:
     */
     void Connect (void);
 
-    /** Remove listeners from the scroll bars.  This method is called whent
+    /** Remove listeners from the scroll bars.  This method is called when
         the slide sorter is destroyed or when it is suspended, e.g. put
         into a cache for later reuse.
     */
     void Disconnect (void);
-    
+
     /** Set up the scroll bar, i.e. thumb size and position.  Call this
         method when the content of the browser window changed, i.e. pages
         were inserted or deleted, the layout or the zoom factor has
@@ -193,7 +193,7 @@ private:
         objects of this class.  It is given to the constructor.
     */
     ::boost::shared_ptr<ScrollBar> mpHorizontalScrollBar;
-    
+
     /** The vertical scroll bar.  Note that is used but not owned by
         objects of this class.  It is given to the constructor.
     */

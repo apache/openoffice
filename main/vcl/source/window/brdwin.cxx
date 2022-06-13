@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -57,9 +57,9 @@ static void ImplGetPinImage( sal_uInt16 nStyle, sal_Bool bPinIn, Image& rImage )
 	ImplSVData* pSVData = ImplGetSVData();
 	if ( !pSVData->maCtrlData.mpPinImgList )
 	{
-        ResMgr* pResMgr = ImplGetResMgr();
+		ResMgr* pResMgr = ImplGetResMgr();
 		pSVData->maCtrlData.mpPinImgList = new ImageList();
-        if( pResMgr )
+		if( pResMgr )
 		{
 			Color aMaskColor( 0x00, 0x00, 0xFF );
 			pSVData->maCtrlData.mpPinImgList->InsertFromHorizontalBitmap
@@ -126,13 +126,13 @@ static void ImplDrawBrdWinSymbolButton( OutputDevice* pDev,
 										const Rectangle& rRect,
 										SymbolType eSymbol, sal_uInt16 nState )
 {
-    sal_Bool bMouseOver = (nState & BUTTON_DRAW_HIGHLIGHT) != 0;
-    nState &= ~BUTTON_DRAW_HIGHLIGHT;
+	sal_Bool bMouseOver = (nState & BUTTON_DRAW_HIGHLIGHT) != 0;
+	nState &= ~BUTTON_DRAW_HIGHLIGHT;
 
 	Rectangle aTempRect;
-    Window *pWin = dynamic_cast< Window* >(pDev);
-    if( pWin )
-    {
+	Window *pWin = dynamic_cast< Window* >(pDev);
+	if( pWin )
+	{
         if( bMouseOver )
         {
             // provide a bright background for selection effect
@@ -147,12 +147,12 @@ static void ImplDrawBrdWinSymbolButton( OutputDevice* pDev,
         aTempRect.nRight-=4;
         aTempRect.nTop+=3;
         aTempRect.nBottom-=4;
-    }
-    else
-    {
-	    DecorationView aDecoView( pDev );
-	    aTempRect = aDecoView.DrawButton( rRect, nState|BUTTON_DRAW_FLAT );
-    }
+	}
+	else
+	{
+		DecorationView aDecoView( pDev );
+		aTempRect = aDecoView.DrawButton( rRect, nState|BUTTON_DRAW_FLAT );
+	}
 	ImplDrawBrdWinSymbol( pDev, aTempRect, eSymbol );
 }
 
@@ -199,7 +199,7 @@ String ImplBorderWindowView::RequestHelp( const Point&, Rectangle& )
 
 Rectangle ImplBorderWindowView::GetMenuRect() const
 {
-    return Rectangle();
+	return Rectangle();
 }
 
 // -----------------------------------------------------------------------
@@ -271,12 +271,12 @@ sal_uInt16 ImplBorderWindowView::ImplHitTest( ImplBorderFrameData* pData, const 
 		if ( nSizeWidth < 16 )
 			nSizeWidth = 16;
 
-        // no corner resize for floating toolbars, which would lead to jumps while formatting
-        // setting nSizeWidth = 0 will only return pure left,top,right,bottom
-        if( pBorderWindow->GetStyle() & WB_OWNERDRAWDECORATION )
-            nSizeWidth = 0;
+		// no corner resize for floating toolbars, which would lead to jumps while formatting
+		// setting nSizeWidth = 0 will only return pure left,top,right,bottom
+		if( pBorderWindow->GetStyle() & WB_OWNERDRAWDECORATION )
+			nSizeWidth = 0;
 
-        if ( rPos.X() < pData->mnLeftBorder )
+		if ( rPos.X() < pData->mnLeftBorder )
 		{
 			if ( rPos.Y() < nSizeWidth )
 				return BORDERWINDOW_HITTEST_TOPLEFT;
@@ -321,10 +321,10 @@ sal_uInt16 ImplBorderWindowView::ImplHitTest( ImplBorderFrameData* pData, const 
 
 sal_Bool ImplBorderWindowView::ImplMouseMove( ImplBorderFrameData* pData, const MouseEvent& rMEvt )
 {
-    sal_uInt16 oldCloseState = pData->mnCloseState;
-    sal_uInt16 oldMenuState = pData->mnMenuState;
-    pData->mnCloseState &= ~BUTTON_DRAW_HIGHLIGHT;
-    pData->mnMenuState &= ~BUTTON_DRAW_HIGHLIGHT;
+	sal_uInt16 oldCloseState = pData->mnCloseState;
+	sal_uInt16 oldMenuState = pData->mnMenuState;
+	pData->mnCloseState &= ~BUTTON_DRAW_HIGHLIGHT;
+	pData->mnMenuState &= ~BUTTON_DRAW_HIGHLIGHT;
 
 	Point aMousePos = rMEvt.GetPosPixel();
 	sal_uInt16 nHitTest = ImplHitTest( pData, aMousePos );
@@ -351,10 +351,10 @@ sal_Bool ImplBorderWindowView::ImplMouseMove( ImplBorderFrameData* pData, const 
 		pData->mnMenuState |= BUTTON_DRAW_HIGHLIGHT;
 	pData->mpBorderWindow->SetPointer( Pointer( ePtrStyle ) );
 
-    if( pData->mnCloseState != oldCloseState )
-        pData->mpBorderWindow->Invalidate( pData->maCloseRect );
-    if( pData->mnMenuState != oldMenuState )
-        pData->mpBorderWindow->Invalidate( pData->maMenuRect );
+	if( pData->mnCloseState != oldCloseState )
+		pData->mpBorderWindow->Invalidate( pData->maCloseRect );
+	if( pData->mnMenuState != oldMenuState )
+		pData->mpBorderWindow->Invalidate( pData->maMenuRect );
 
 	return sal_True;
 }
@@ -395,7 +395,7 @@ sal_Bool ImplBorderWindowView::ImplMouseButtonDown( ImplBorderFrameData* pData, 
 				pData->mnMenuState |= BUTTON_DRAW_PRESSED;
 				DrawWindow( BORDERWINDOW_DRAW_MENU );
 
-                // call handler already on mouse down
+				// call handler already on mouse down
 				if ( pBorderWindow->ImplGetClientWindow()->IsSystemWindow() )
 				{
 					SystemWindow* pClientWindow = (SystemWindow*)(pBorderWindow->ImplGetClientWindow());
@@ -449,7 +449,7 @@ sal_Bool ImplBorderWindowView::ImplMouseButtonDown( ImplBorderFrameData* pData, 
 						if ( pBorderWindow->ImplGetClientWindow()->IsSystemWindow() )
 						{
 							SystemWindow* pClientWindow = (SystemWindow*)(pBorderWindow->ImplGetClientWindow());
-							if ( sal_True /*pBorderWindow->mbDockBtn*/ )   // always perform docking on double click, no button required
+							if ( sal_True /*pBorderWindow->mbDockBtn*/ ) // always perform docking on double click, no button required
 								pClientWindow->TitleButtonClick( TITLE_BUTTON_DOCKING );
 							else if ( pBorderWindow->GetStyle() & WB_ROLLABLE )
 							{
@@ -468,7 +468,7 @@ sal_Bool ImplBorderWindowView::ImplMouseButtonDown( ImplBorderFrameData* pData, 
 			{
 				pData->mbDragFull = sal_False;
 				if ( nDragFullTest )
-                    pData->mbDragFull = sal_True;   // always fulldrag for proper docking, ignore system settings
+					pData->mbDragFull = sal_True; // always fulldrag for proper docking, ignore system settings
 				pBorderWindow->StartTracking();
 			}
 			else if ( bHitTest )
@@ -559,7 +559,7 @@ sal_Bool ImplBorderWindowView::ImplTracking( ImplBorderFrameData* pData, const T
 				pData->mnMenuState &= ~BUTTON_DRAW_PRESSED;
 				DrawWindow( BORDERWINDOW_DRAW_MENU );
 
-                // handler already called on mouse down
+				// handler already called on mouse down
 			}
 		}
 		else if ( nHitTest & BORDERWINDOW_HITTEST_HIDE )
@@ -777,8 +777,8 @@ sal_Bool ImplBorderWindowView::ImplTracking( ImplBorderFrameData* pData, const T
 		}
 		else
 		{
-            /*
-            // adjusting mousepos not required, we allow the whole screen (no desktop anymore...)
+			/*
+			// adjusting mousepos not required, we allow the whole screen (no desktop anymore...)
 			Point	aFrameMousePos = pBorderWindow->ImplOutputToFrame( aMousePos );
 			Size	aFrameSize = pBorderWindow->ImplGetFrameWindow()->GetOutputSizePixel();
 			if ( aFrameMousePos.X() < 0 )
@@ -790,7 +790,7 @@ sal_Bool ImplBorderWindowView::ImplTracking( ImplBorderFrameData* pData, const T
 			if ( aFrameMousePos.Y() > aFrameSize.Height()-1 )
 				aFrameMousePos.Y() = aFrameSize.Height()-1;
 			aMousePos = pBorderWindow->ImplFrameToOutput( aFrameMousePos );
-            */
+			*/
 
 			aMousePos.X()	 -= pData->maMouseOff.X();
 			aMousePos.Y()	 -= pData->maMouseOff.Y();
@@ -939,7 +939,7 @@ String ImplBorderWindowView::ImplRequestHelp( ImplBorderFrameData* pData,
 											  Rectangle& rHelpRect )
 {
 	sal_uInt16 nHelpId = 0;
-    String aHelpStr;
+	String aHelpStr;
 	sal_uInt16 nHitTest = ImplHitTest( pData, rPos );
 	if ( nHitTest )
 	{
@@ -961,7 +961,7 @@ String ImplBorderWindowView::ImplRequestHelp( ImplBorderFrameData* pData,
 			nHelpId 	= SV_HELPTEXT_MAXIMIZE;
 			rHelpRect	= pData->maDockRect;
 		}
-        /* no help string available
+		/* no help string available
 		else if ( nHitTest & BORDERWINDOW_HITTEST_MENU )
 		{
 			nHelpId 	= SV_HELPTEXT_MENU;
@@ -983,7 +983,7 @@ String ImplBorderWindowView::ImplRequestHelp( ImplBorderFrameData* pData,
 			rHelpRect	= pData->maPinRect;
 		}
 		else if ( nHitTest & BORDERWINDOW_HITTEST_TITLE )
-        {
+		{
             if( !pData->maTitleRect.IsEmpty() )
             {
                 // tooltip only if title truncated
@@ -994,13 +994,13 @@ String ImplBorderWindowView::ImplRequestHelp( ImplBorderFrameData* pData,
                     aHelpStr    = pData->mpBorderWindow->GetText();
                 }
             }
-        }
+		}
 	}
 
-    if( nHelpId && ImplGetResMgr() )
-	    aHelpStr = String( ResId( nHelpId, *ImplGetResMgr() ) );
+	if( nHelpId && ImplGetResMgr() )
+		aHelpStr = String( ResId( nHelpId, *ImplGetResMgr() ) );
 
-    return aHelpStr;
+	return aHelpStr;
 }
 
 // -----------------------------------------------------------------------
@@ -1084,7 +1084,7 @@ void ImplSmallBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHei
 	mpOutDev	= pDev;
 	mnWidth 	= nWidth;
 	mnHeight	= nHeight;
-    mbNWFBorder = false;
+	mbNWFBorder = false;
 
 	sal_uInt16 nBorderStyle = mpBorderWindow->GetBorderStyle();
 	if ( nBorderStyle & WINDOW_BORDER_NOBORDER )
@@ -1105,7 +1105,7 @@ void ImplSmallBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHei
             Window *pWin = NULL, *pCtrl = NULL;
             if( mpOutDev->GetOutDevType() == OUTDEV_WINDOW )
                 pWin = (Window*) mpOutDev;
-        
+
             ControlType aCtrlType = 0;
             if( pWin && (pCtrl = mpBorderWindow->GetWindow( WINDOW_CLIENT )) != NULL )
             {
@@ -1161,18 +1161,18 @@ void ImplSmallBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHei
                     mnBottomBorder  = aBounds.Bottom() - aContent.Bottom();
                     if( mnWidth && mnHeight )
                     {
-    
+
                         mpBorderWindow->SetPaintTransparent( sal_True );
                         mpBorderWindow->SetBackground();
                         pCtrl->SetPaintTransparent( sal_True );
-                        
+
                         Window* pCompoundParent = NULL;
                         if( pWin->GetParent() && pWin->GetParent()->IsCompoundControl() )
                             pCompoundParent = pWin->GetParent();
-                        
+
                         if( pCompoundParent )
                             pCompoundParent->SetPaintTransparent( sal_True );
-    
+
                         if( mnWidth < aBounds.GetWidth() || mnHeight < aBounds.GetHeight() )
                         {
                             if( ! pCompoundParent ) // compound controls have to fix themselves
@@ -1191,7 +1191,7 @@ void ImplSmallBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHei
                     mbNWFBorder = false;
             }
         }
-        
+
         if( ! mbNWFBorder )
         {
             sal_uInt16 nStyle = FRAME_DRAW_NODRAW;
@@ -1203,7 +1203,7 @@ void ImplSmallBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHei
                 nStyle |= FRAME_DRAW_DOUBLEIN;
             if ( nBorderStyle & WINDOW_BORDER_MONO )
                 nStyle |= FRAME_DRAW_MONO;
-    
+
             DecorationView	aDecoView( mpOutDev );
             Rectangle		aRect( 0, 0, 10, 10 );
             Rectangle		aCalcRect = aDecoView.DrawFrame( aRect, nStyle );
@@ -1241,15 +1241,15 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
 	if ( nBorderStyle & WINDOW_BORDER_NOBORDER )
 		return;
 
-    sal_Bool bNativeOK = sal_False;
-    // for native widget drawing we must find out what
-    // control this border belongs to
-    Window *pWin = NULL, *pCtrl = NULL;
-    if( mpOutDev->GetOutDevType() == OUTDEV_WINDOW )
-        pWin = (Window*) mpOutDev;
+	sal_Bool bNativeOK = sal_False;
+	// for native widget drawing we must find out what
+	// control this border belongs to
+	Window *pWin = NULL, *pCtrl = NULL;
+	if( mpOutDev->GetOutDevType() == OUTDEV_WINDOW )
+		pWin = (Window*) mpOutDev;
 
-    ControlType aCtrlType = 0;
-    ControlPart aCtrlPart = PART_ENTIRE_CONTROL;
+	ControlType aCtrlType = 0;
+	ControlPart aCtrlPart = PART_ENTIRE_CONTROL;
 
     if( pWin && (pCtrl = mpBorderWindow->GetWindow( WINDOW_CLIENT )) != NULL )
     {
@@ -1289,12 +1289,12 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
                 break;
 
             case WINDOW_COMBOBOX:
-            case WINDOW_PATTERNBOX:			
-            case WINDOW_NUMERICBOX:			
-            case WINDOW_METRICBOX:			
+            case WINDOW_PATTERNBOX:
+            case WINDOW_NUMERICBOX:
+            case WINDOW_METRICBOX:
             case WINDOW_CURRENCYBOX:
-            case WINDOW_DATEBOX:		
-            case WINDOW_TIMEBOX:			
+            case WINDOW_DATEBOX:
+            case WINDOW_TIMEBOX:
             case WINDOW_LONGCURRENCYBOX:
                 if( pCtrl->GetStyle() & WB_DROPDOWN )
                 {
@@ -1312,7 +1312,7 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
                 break;
         }
     }
-    
+
     if ( aCtrlType && pCtrl->IsNativeControlSupported(aCtrlType, aCtrlPart) )
     {
         ImplControlValue aControlValue;
@@ -1331,18 +1331,18 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
             if( pCtrl->HasFocus() || pCtrl->HasChildPathFocus() )
                 nState |= CTRL_STATE_FOCUSED;
         }
-        
+
         sal_Bool bMouseOver = sal_False;
         Window *pCtrlChild = pCtrl->GetWindow( WINDOW_FIRSTCHILD );
         while( pCtrlChild && (bMouseOver = pCtrlChild->IsMouseOver()) == sal_False )
             pCtrlChild = pCtrlChild->GetWindow( WINDOW_NEXT );
-    	
+
         if( bMouseOver )
             nState |= CTRL_STATE_ROLLOVER;
 
         Point aPoint;
         Rectangle aCtrlRegion( aPoint, Size( mnWidth, mnHeight ) );
-        
+
         Rectangle aBoundingRgn( aPoint, Size( mnWidth, mnHeight ) );
         Rectangle aContentRgn( aCtrlRegion );
         if( ! ImplGetSVData()->maNWFData.mbCanDrawWidgetAnySize &&
@@ -1352,7 +1352,7 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
         {
             aCtrlRegion=aContentRgn;
         }
-        
+
         bNativeOK = pWin->DrawNativeControl( aCtrlType, aCtrlPart, aCtrlRegion, nState,
                 aControlValue, rtl::OUString() );
 
@@ -1362,12 +1362,12 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
         {
             Edit *pEdit = ((Edit*) pCtrl)->GetSubEdit();
             if ( pEdit )
-                pCtrl->Paint( Rectangle() );  // make sure the buttons are also drawn as they might overwrite the border
+                pCtrl->Paint( Rectangle() ); // make sure the buttons are also drawn as they might overwrite the border
         }
     }
 
-    if( bNativeOK )
-        return;
+	if( bNativeOK )
+		return;
 
 	if ( nDrawFlags & BORDERWINDOW_DRAW_FRAME )
 	{
@@ -1394,11 +1394,11 @@ void ImplSmallBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice*
 				nStyle |= FRAME_DRAW_MONO;
 			if ( nBorderStyle & WINDOW_BORDER_MENU )
 				nStyle |= FRAME_DRAW_MENU;
-            // tell DrawFrame that we're drawing a window border of a frame window to avoid round corners
-            if( pWin && pWin == pWin->ImplGetFrameWindow() )
-                nStyle |= FRAME_DRAW_WINDOWBORDER;  
+			// tell DrawFrame that we're drawing a window border of a frame window to avoid round corners
+			if( pWin && pWin == pWin->ImplGetFrameWindow() )
+				nStyle |= FRAME_DRAW_WINDOWBORDER;
 
-            DecorationView	aDecoView( mpOutDev );
+			DecorationView	aDecoView( mpOutDev );
 			Point			aTmpPoint;
 			Rectangle		aInRect( aTmpPoint, Size( mnWidth, mnHeight ) );
 			aDecoView.DrawFrame( aInRect, nStyle );
@@ -1472,7 +1472,7 @@ String ImplStdBorderWindowView::RequestHelp( const Point& rPos, Rectangle& rHelp
 
 Rectangle ImplStdBorderWindowView::GetMenuRect() const
 {
-    return maFrameData.maMenuRect;
+	return maFrameData.maMenuRect;
 }
 
 // -----------------------------------------------------------------------
@@ -1512,13 +1512,13 @@ void ImplStdBorderWindowView::Init( OutputDevice* pDev, long nWidth, long nHeigh
 	ImplInitTitle( &maFrameData );
 	if ( pData->mnTitleHeight )
 	{
-        // to improve symbol display force a minum title height
-        if( pData->mnTitleHeight < MIN_CAPTION_HEIGHT )
-            pData->mnTitleHeight = MIN_CAPTION_HEIGHT;
+		// to improve symbol display force a minimum title height
+		if( pData->mnTitleHeight < MIN_CAPTION_HEIGHT )
+			pData->mnTitleHeight = MIN_CAPTION_HEIGHT;
 
-        // set a proper background for drawing
-        // highlighted buttons in the title
-        pBorderWindow->SetBackground( rStyleSettings.GetWindowColor() );
+		// set a proper background for drawing
+		// highlighted buttons in the title
+		pBorderWindow->SetBackground( rStyleSettings.GetWindowColor() );
 
 		pData->maTitleRect.Left()	 = pData->mnLeftBorder;
 		pData->maTitleRect.Right()	 = nWidth-pData->mnRightBorder-1;
@@ -1661,22 +1661,22 @@ void ImplStdBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice* p
 	Rectangle				aInRect( aTmpPoint, Size( pData->mnWidth, pData->mnHeight ) );
 	const StyleSettings&	rStyleSettings = pData->mpOutDev->GetSettings().GetStyleSettings();
 	DecorationView			aDecoView( pDev );
-    Color                   aFrameColor( rStyleSettings.GetFaceColor() );
+	Color					aFrameColor( rStyleSettings.GetFaceColor() );
 
-    aFrameColor.DecreaseContrast( (sal_uInt8) (0.50 * 255));
+	aFrameColor.DecreaseContrast( (sal_uInt8) (0.50 * 255));
 
 	// Draw Frame
 	if ( nDrawFlags & BORDERWINDOW_DRAW_FRAME )
-    {
-        // single line frame
-	    pDev->SetLineColor( aFrameColor );
-        pDev->SetFillColor();
-        pDev->DrawRect( aInRect );
-        aInRect.nLeft++; aInRect.nRight--;
-        aInRect.nTop++; aInRect.nBottom--;
-    }
+	{
+		// single line frame
+		pDev->SetLineColor( aFrameColor );
+		pDev->SetFillColor();
+		pDev->DrawRect( aInRect );
+		aInRect.nLeft++; aInRect.nRight--;
+		aInRect.nTop++; aInRect.nBottom--;
+	}
 	else
-	    aInRect = aDecoView.DrawFrame( aInRect, FRAME_DRAW_DOUBLEOUT | FRAME_DRAW_NODRAW);
+		aInRect = aDecoView.DrawFrame( aInRect, FRAME_DRAW_DOUBLEOUT | FRAME_DRAW_NODRAW);
 
 	// Draw Border
 	pDev->SetLineColor();
@@ -1699,13 +1699,13 @@ void ImplStdBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice* p
 	{
 		aInRect = pData->maTitleRect;
 
-        // use no gradient anymore, just a static titlecolor
+		// use no gradient anymore, just a static titlecolor
 		pDev->SetFillColor( aFrameColor );
 		pDev->SetTextColor( rStyleSettings.GetButtonTextColor() );
-        Rectangle aTitleRect( pData->maTitleRect );
-        if( pOffset )
-            aTitleRect.Move( pOffset->X(), pOffset->Y() );
-        pDev->DrawRect( aTitleRect );
+		Rectangle aTitleRect( pData->maTitleRect );
+		if( pOffset )
+			aTitleRect.Move( pOffset->X(), pOffset->Y() );
+		pDev->DrawRect( aTitleRect );
 
 
 		if ( pData->mnTitleType != BORDERWINDOW_TITLE_TEAROFF )
@@ -1732,12 +1732,12 @@ void ImplStdBorderWindowView::DrawWindow( sal_uInt16 nDrawFlags, OutputDevice* p
 			if ( pOffset )
 				aInRect.Move( pOffset->X(), pOffset->Y() );
 
-            sal_uInt16 nTextStyle = TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER | TEXT_DRAW_ENDELLIPSIS | TEXT_DRAW_CLIP;
+			sal_uInt16 nTextStyle = TEXT_DRAW_LEFT | TEXT_DRAW_VCENTER | TEXT_DRAW_ENDELLIPSIS | TEXT_DRAW_CLIP;
 
-            // must show tooltip ?
-            TextRectInfo aInfo;
+			// must show tooltip ?
+			TextRectInfo aInfo;
 			pDev->GetTextRect( aInRect, pBorderWindow->GetText(), nTextStyle, &aInfo );
-            pData->mbTitleClipped = aInfo.IsEllipses();
+			pData->mbTitleClipped = aInfo.IsEllipses();
 
 			pDev->DrawText( aInRect, pBorderWindow->GetText(), nTextStyle );
 		}
@@ -1855,16 +1855,16 @@ void ImplBorderWindow::ImplInit( Window* pParent,
 		    mpWindowImpl->mbOverlapWin	= sal_True;
 		    mpWindowImpl->mbFrame 		= sal_True;
 		    mbFrameBorder	= (nOrgStyle & WB_NOBORDER) ? sal_False : sal_True;
-        }
-        else
-        {
+		}
+		else
+		{
 		    mpWindowImpl->mbOverlapWin	= sal_True;
 		    mpWindowImpl->mbFrame 		= sal_True;
 		    mbFrameBorder	= sal_False;
-            // closeable windows may have a border as well, eg. system floating windows without caption
+            // closeable windows may have a border as well, e.g. system floating windows without caption
 		    if ( (nOrgStyle & (WB_BORDER | WB_NOBORDER | WB_MOVEABLE | WB_SIZEABLE/* | WB_CLOSEABLE*/)) == WB_BORDER )
 			    mbSmallOutBorder = sal_True;
-        }
+		}
 	}
 	else if ( nTypeStyle & BORDERWINDOW_STYLE_OVERLAP )
 	{
@@ -2002,12 +2002,12 @@ void ImplBorderWindow::RequestHelp( const HelpEvent& rHEvt )
 	{
 		Point		aMousePosPixel = ScreenToOutputPixel( rHEvt.GetMousePosPixel() );
 		Rectangle	aHelpRect;
-		String      aHelpStr( mpBorderView->RequestHelp( aMousePosPixel, aHelpRect ) );
+		String		aHelpStr( mpBorderView->RequestHelp( aMousePosPixel, aHelpRect ) );
 
 		// Rechteck ermitteln
 		if ( aHelpStr.Len() )
 		{
-            aHelpRect.SetPos( OutputToScreenPixel( aHelpRect.TopLeft() ) );
+			aHelpRect.SetPos( OutputToScreenPixel( aHelpRect.TopLeft() ) );
 			if ( rHEvt.GetMode() & HELPMODE_BALLOON )
 				Help::ShowBalloon( this, aHelpRect.Center(), aHelpRect, aHelpStr );
 			else
@@ -2116,12 +2116,12 @@ void ImplBorderWindow::InitView()
 	if ( mbSmallOutBorder )
 		mpBorderView = new ImplSmallBorderWindowView( this );
 	else if ( mpWindowImpl->mbFrame )
-    {
-        if( mbFrameBorder )
-		    mpBorderView = new ImplStdBorderWindowView( this );
-        else
-		    mpBorderView = new ImplNoBorderWindowView( this );
-    }
+	{
+		if( mbFrameBorder )
+			mpBorderView = new ImplStdBorderWindowView( this );
+		else
+			mpBorderView = new ImplNoBorderWindowView( this );
+	}
 	else if ( !mbFrameBorder )
 		mpBorderView = new ImplSmallBorderWindowView( this );
 	else

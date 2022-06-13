@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -76,7 +76,7 @@ public:
     */
     SlideSorterController (SlideSorter& rSlideSorter);
 
-    /** Late initialization.  Call this method once a new new object has been 
+    /** Late initialization.  Call this method once a new new object has been
         created.
     */
     virtual void Init (void);
@@ -137,7 +137,7 @@ public:
 	void FuPermanent (SfxRequest& rRequest);
 	void FuSupport (SfxRequest& rRequest);
     bool Command (
-        const CommandEvent& rEvent, 
+        const CommandEvent& rEvent,
         ::sd::Window* pWindow);
 
 	void GetCtrlState (SfxItemSet &rSet);
@@ -187,7 +187,7 @@ public:
         an empty reference.
     */
     ::rtl::Reference<SelectionFunction> GetCurrentSelectionFunction (void);
-    
+
     /** Prepare for a change of the edit mode.  Depending on the current
         edit mode we may save the selection so that it can be restored when
         later changing back to the current edit mode.
@@ -310,7 +310,7 @@ private:
 
     /** Prepare for several model changes, i.e. prevent time-consuming and
         non-critical operations like repaints until UnlockModelChange() is
-        called.  Ciritcal operations like releasing references to pages that
+        called.  Critical operations like releasing references to pages that
         do not exist anymore are executed.
     */
     void LockModelChange (void);

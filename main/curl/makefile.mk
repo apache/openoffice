@@ -39,7 +39,7 @@ all:
 
 TARFILE_NAME=curl-7.72.0
 TARFILE_MD5=7422feb126df677d2d33294a1fd079ea
-PATCH_FILES=buildssh.patch
+PATCH_FILES=curl-wnt.patch
 
 #ADDITIONAL_FILES= lib$/config-os2.h lib$/Makefile.os2
 
@@ -55,10 +55,17 @@ curl_CFLAGS+:=$(ARCH_FLAGS)
 curl_LDFLAGS+:=$(ARCH_FLAGS)
 .ENDIF
 
+.IF "$(SYSTEM_OPENSSL)"=="YES"
+ssl_param=--with-ssl
+.ELSE
+ssl_param=--with-ssl=$(OUTDIR)
+PATCH_FILES+= curl-bundled_openssl.patch
+.ENDIF
+
 CONFIGURE_DIR=.$/
 #relative to CONFIGURE_DIR
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS= --without-ssl --without-libidn --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
+CONFIGURE_FLAGS= $(ssl_param) --without-libidn --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --disable-static CPPFLAGS="$(curl_CFLAGS)"  LDFLAGS="$(curl_LDFLAGS)"
 
 BUILD_DIR=$(CONFIGURE_DIR)$/lib
 BUILD_ACTION=$(GNUMAKE)
@@ -81,7 +88,7 @@ curl_LIBS+=$(MINGW_SHARED_LIBSTDCPP)
 CONFIGURE_DIR=.$/
 #relative to CONFIGURE_DIR
 CONFIGURE_ACTION=.$/configure
-CONFIGURE_FLAGS= --without-ssl --enable-ftp --enable-ipv6 --disable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --build=i586-pc-mingw32 --host=i586-pc-mingw32 CC="$(curl_CC)" CPPFLAGS="$(INCLUDE)" OBJDUMP="objdump" LDFLAGS="-L$(ILIB:s/;/ -L/)" LIBS="$(curl_LIBS)"
+CONFIGURE_FLAGS= --with-ssl --enable-ftp --enable-ipv6 --enable-http --disable-gopher --disable-file --disable-ldap --disable-telnet --disable-dict --build=i586-pc-mingw32 --host=i586-pc-mingw32 CC="$(curl_CC)" CPPFLAGS="$(INCLUDE)" OBJDUMP="objdump" LDFLAGS="-L$(ILIB:s/;/ -L/)" LIBS="$(curl_LIBS)"
 BUILD_DIR=$(CONFIGURE_DIR)$/lib
 BUILD_ACTION=make
 OUT2BIN=$(BUILD_DIR)$/.libs$/libcurl*.dll
@@ -104,17 +111,17 @@ curl_MACHINE:="X64"
 
 BUILD_DIR=.$/winbuild
 .IF "$(debug)"==""
-BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE)
+BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE) RTLIBCFG=static WITH_DEVEL=$(OUTDIR) WITH_ZLIB=dll WITH_SSL=dll
 .ELSE
-BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 DEBUG=yes EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE)
+BUILD_ACTION=CC="cl.exe" nmake -f Makefile.vc mode=dll VC=9 DEBUG=yes EXCFLAGS=$(EXCFLAGS) MACHINE=$(curl_MACHINE) RTLIBCFG=static WITH_DEVEL=$(OUTDIR) WITH_ZLIB=dll WITH_SSL=dll
 .ENDIF
 
 .IF "$(CPUNAME)"=="INTEL"
-OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-schannel/bin/libcurl.dll
-OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ipv6-sspi-schannel/lib/libcurl.lib
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X86-release-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl.lib
 .ELIF "$(CPUNAME)"=="X86_64"
-OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-schannel/bin/libcurl.dll
-OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ipv6-sspi-schannel/lib/libcurl.lib
+OUT2BIN=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ssl-dll-zlib-dll-ipv6-sspi/bin/libcurl.dll
+OUT2LIB=$(BUILD_DIR)$/../builds/libcurl-vc9-X64-release-dll-ssl-dll-zlib-dll-ipv6-sspi/lib/libcurl.lib
 .ENDIF
 
 .ENDIF

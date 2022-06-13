@@ -185,7 +185,7 @@ void SmGraphicWindow::MouseButtonDown(const MouseEvent& rMEvt)
 
 #ifdef notnow
 			// include introducing symbols of special char and text
-			// (ie '%' and '"')
+			// (i.e. '%' and '"')
 			sal_uInt16 nExtra = (aToken.eType == TSPECIAL || aToken.eType == TTEXT) ? 1 : 0;
 
 			// set selection to the beginning of the token
@@ -546,9 +546,9 @@ void SmCmdBoxWindow::Resize()
 	}
 
 	DecorationView aView(this);
-	aRect.Left() += 8; aRect.Top()	 += 8;
-	aRect.Right()-= 8; aRect.Bottom()-= 8;
-	aRect = aView.DrawFrame( aRect, FRAME_DRAW_DOUBLEIN );
+	aRect.Left() += 6; aRect.Top()	 += 6;
+	aRect.Right()-= 6; aRect.Bottom()-= 6;
+	aRect = aView.DrawFrame( aRect, FRAME_DRAW_IN );
 
 	aEdit.SetPosSizePixel(aRect.TopLeft(), aRect.GetSize());
 	SfxDockingWindow::Resize();
@@ -592,9 +592,9 @@ void SmCmdBoxWindow::Paint(const Rectangle& /*rRect*/)
 		DrawLine( aFrom, aTo );
 		aView.DrawFrame(aRect, FRAME_DRAW_OUT);
 	}
-	aRect.Left() += 8; aRect.Top()	 += 8;
-	aRect.Right()-= 8; aRect.Bottom()-= 8;
-	aRect = aView.DrawFrame( aRect, FRAME_DRAW_DOUBLEIN );
+	aRect.Left() += 6; aRect.Top()	 += 6;
+	aRect.Right()-= 6; aRect.Bottom()-= 6;
+	aRect = aView.DrawFrame( aRect, FRAME_DRAW_IN );
 }
 
 
@@ -2006,4 +2006,3 @@ void SmViewShell::Notify( SfxBroadcaster& , const SfxHint& rHint )
 		}
 	}
 }
-

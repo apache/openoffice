@@ -1058,7 +1058,7 @@ void DAVResourceAccess::initialize()
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     if ( m_aPath.getLength() == 0 )
     {
-        SerfUri aURI( m_aURL );
+        CurlUri aURI( m_aURL );
         rtl::OUString aPath( aURI.GetPath() );
 
         /* #134089# - Check URI */
@@ -1140,10 +1140,10 @@ sal_Bool DAVResourceAccess::detectRedirectCycle(
 {
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
 
-    SerfUri aUri( rRedirectURL );
+    CurlUri aUri( rRedirectURL );
 
-    std::vector< SerfUri >::const_iterator it  = m_aRedirectURIs.begin();
-    std::vector< SerfUri >::const_iterator end = m_aRedirectURIs.end();
+    std::vector< CurlUri >::const_iterator it  = m_aRedirectURIs.begin();
+    std::vector< CurlUri >::const_iterator end = m_aRedirectURIs.end();
 
     while ( it != end )
     {
@@ -1162,9 +1162,9 @@ void DAVResourceAccess::resetUri()
     osl::Guard< osl::Mutex > aGuard( m_aMutex );
     if ( m_aRedirectURIs.size() > 0 )
     {
-        std::vector< SerfUri >::const_iterator it  = m_aRedirectURIs.begin();
+        std::vector< CurlUri >::const_iterator it  = m_aRedirectURIs.begin();
 
-        SerfUri aUri( (*it) );
+        CurlUri aUri( (*it) );
         m_aRedirectURIs.clear();
         setURL ( aUri.GetURI() );
         initialize();

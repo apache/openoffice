@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ public:
     bool IsShowSelection (void) const;
     void SetShowSelection (const bool bIsShowSelection);
 
-    /** When this method returns <TRUE/> then the focusdselection is indicated in
+    /** When this method returns <TRUE/> then the focusdeselection is indicated in
         the view (typically by drawing dotted rectangles around the selected
         slides.)  The default value is <TRUE/>.
     */
@@ -69,7 +69,7 @@ public:
     bool IsCenterSelection (void) const;
     void SetCenterSelection (const bool bIsCenterSelection);
 
-    /** When this mehod returns <TRUE/> then the view may try to change the
+    /** When this method returns <TRUE/> then the view may try to change the
         visible area by scrolling it smoothly on the screen.  Experimental.
         Default value is <FALSE/>.
     */
@@ -103,7 +103,7 @@ public:
     Color GetHighlightColor (void) const;
     void SetHighlightColor (const Color& rColor);
 
-    /** The UI can be set to be read only indepently from the model status.
+    /** The UI can be set to be read only independently from the model status.
         Used for instance in the presenter view.
     */
     bool IsUIReadOnly (void) const;
@@ -115,7 +115,7 @@ public:
     */
     bool IsOnlyPreviewTriggersMouseOver (void) const;
     void SetOnlyPreviewTriggersMouseOver (const bool bFlag);
-    
+
     bool IsHighContrastModeActive (void) const;
 
 private:
@@ -137,4 +137,3 @@ private:
 } } } // end of namespace ::sd::slidesorter::controller
 
 #endif
-

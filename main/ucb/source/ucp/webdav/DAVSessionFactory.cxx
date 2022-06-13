@@ -24,8 +24,8 @@
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_webdav.hxx"
 #include "DAVSessionFactory.hxx"
-#include "SerfSession.hxx"
-#include "SerfUri.hxx"
+#include "CurlSession.hxx"
+#include "CurlUri.hxx"
 #include <com/sun/star/lang/XMultiServiceFactory.hpp>
 
 using namespace http_dav_ucp;
@@ -60,10 +60,10 @@ rtl::Reference< DAVSession > DAVSessionFactory::createDAVSession(
 
     if ( aIt == aEnd )
     {
-        SerfUri aURI( inUri );
+        CurlUri aURI( inUri );
 
         std::auto_ptr< DAVSession > xElement(
-            new SerfSession( this, inUri, *m_xProxyDecider.get() ) );
+            new CurlSession( this, inUri, *m_xProxyDecider.get() ) );
 
         aIt = m_aMap.insert( Map::value_type( inUri, xElement.get() ) ).first;
         aIt->second->m_aContainerIt = aIt;
@@ -84,9 +84,9 @@ rtl::Reference< DAVSession > DAVSessionFactory::createDAVSession(
         // If URL scheme is different from http or https we definitely
         // have to use a proxy and therefore can optimize the getProxy
         // call a little:
-        SerfUri aURI( inUri );
+        CurlUri aURI( inUri );
 
-        aIt->second = new SerfSession( this, inUri, *m_xProxyDecider.get() );
+        aIt->second = new CurlSession( this, inUri, *m_xProxyDecider.get() );
         aIt->second->m_aContainerIt = aIt;
         return aIt->second;
     }

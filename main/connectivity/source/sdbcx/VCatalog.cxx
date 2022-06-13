@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -101,7 +101,7 @@ Reference< XNameAccess > SAL_CALL OCatalog::getTables(  ) throw(RuntimeException
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OCatalog_BASE::rBHelper.bDisposed);
-		
+
 	try
 	{
 		if(!m_pTables)
@@ -125,7 +125,7 @@ Reference< XNameAccess > SAL_CALL OCatalog::getViews(  ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OCatalog_BASE::rBHelper.bDisposed);
-     
+
 	try
 	{
 		if(!m_pViews)
@@ -149,7 +149,7 @@ Reference< XNameAccess > SAL_CALL OCatalog::getUsers(  ) throw(RuntimeException)
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OCatalog_BASE::rBHelper.bDisposed);
-     
+
 	try
 	{
 		if(!m_pUsers)
@@ -173,7 +173,7 @@ Reference< XNameAccess > SAL_CALL OCatalog::getGroups(  ) throw(RuntimeException
 {
 	::osl::MutexGuard aGuard(m_aMutex);
 	checkDisposed(OCatalog_BASE::rBHelper.bDisposed);
-        
+
 	try
 	{
 		if(!m_pGroups)
@@ -197,15 +197,15 @@ Reference< XNameAccess > SAL_CALL OCatalog::getGroups(  ) throw(RuntimeException
 	::rtl::OUString sCatalog = _xRow->getString(1);
 	if ( _xRow->wasNull() )
 		sCatalog = ::rtl::OUString();
-	::rtl::OUString sSchema  = _xRow->getString(2);
+	::rtl::OUString sSchema = _xRow->getString(2);
 	if ( _xRow->wasNull() )
 		sSchema = ::rtl::OUString();
-	::rtl::OUString sTable	 = _xRow->getString(3);
+	::rtl::OUString sTable = _xRow->getString(3);
 	if ( _xRow->wasNull() )
 		sTable = ::rtl::OUString();
 
 	::rtl::OUString sComposedName(
-	    ::dbtools::composeTableName( m_xMetaData, sCatalog, sSchema, sTable, sal_False, ::dbtools::eInDataManipulation ) );
+		::dbtools::composeTableName( m_xMetaData, sCatalog, sSchema, sTable, sal_False, ::dbtools::eInDataManipulation ) );
 	return sComposedName;
 }
 // -----------------------------------------------------------------------------
@@ -226,7 +226,7 @@ void OCatalog::fillNames(Reference< XResultSet >& _xResult,TStringVector& _rName
 // -------------------------------------------------------------------------
 void ODescriptor::construct()
 {
-    sal_Int32 nAttrib = isNew() ? 0 : ::com::sun::star::beans::PropertyAttribute::READONLY;
+	sal_Int32 nAttrib = isNew() ? 0 : ::com::sun::star::beans::PropertyAttribute::READONLY;
 	registerProperty(OMetaConnection::getPropMap().getNameByIndex(PROPERTY_ID_NAME), PROPERTY_ID_NAME ,nAttrib,&m_Name,::getCppuType(static_cast< ::rtl::OUString*>(NULL)));
 }
 // -------------------------------------------------------------------------
@@ -234,4 +234,3 @@ ODescriptor::~ODescriptor()
 {
 }
 // -----------------------------------------------------------------------------
-

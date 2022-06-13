@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,19 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 // MARKER(update_precomp.py): autogen include statement, do not remove
 #include "precompiled_sw.hxx"
@@ -113,7 +115,7 @@ void ViewShell::DLPrePaint2(const Region& rRegion)
 		if ( !HasDrawView() )
 			MakeDrawView();
 
-		// Prefer window; if tot available, get pOut (e.g. printer)
+		// Prefer window; if not available, get pOut (e.g. printer)
 		mpPrePostOutDev = (GetWin() ? GetWin() : GetOut());
 
 		// #i74769# use SdrPaintWindow now direct
@@ -236,7 +238,7 @@ void ViewShell::ImplEndAction( const sal_Bool bIdleEnd )
 
 			//JP 27.11.97: wer die Selection hided, muss sie aber auch
 			//				wieder Showen. Sonst gibt es Paintfehler!
-			//	z.B.: addional Mode, Seite vertikal hab zu sehen, in der
+			//	z.B.: addional Mode, Seite vertikal halb zu sehen, in der
 			// Mitte eine Selektion und mit einem anderen Cursor an linken
 			// rechten Rand springen. Ohne ShowCrsr verschwindet die
 			// Selektion
@@ -250,7 +252,7 @@ void ViewShell::ImplEndAction( const sal_Bool bIdleEnd )
 
                 Imp()->pRegion = NULL;
 
-                //Erst Invert dann Compress, niemals andersherum!
+                //Erst Invert, dann Compress, niemals andersherum!
 				pRegion->Invert();
 
                 pRegion->Compress();
@@ -326,7 +328,7 @@ void ViewShell::ImplEndAction( const sal_Bool bIdleEnd )
 						// need to do begin/end DrawingLayer preparation for each single rectangle of the
 						// repaint region. I already tried to prepare only once for the whole Region. This
 						// seems to work (and does technically) but fails with transparent objects. Since the
-						// region given to BeginDarwLayers() defines the clip region for DrawingLayer paint,
+						// region given to BeginDrawLayers() defines the clip region for DrawingLayer paint,
 						// transparent objects in the single rectangles will indeed be painted multiple times.
 						DLPrePaint2(Region(aRect.SVRect()));
 
@@ -380,7 +382,7 @@ void ViewShell::ImplEndAction( const sal_Bool bIdleEnd )
 		else
 		{
             Imp()->DelRegion();
-			bPaintWorks =  sal_True;
+			bPaintWorks = sal_True;
 		}
 	}
 	else
@@ -393,7 +395,7 @@ void ViewShell::ImplEndAction( const sal_Bool bIdleEnd )
 
 	//Damit sich die automatischen Scrollbars auch richtig anordnen k?nnen
 	//muessen wir die Aktion hier kuenstlich beenden (EndAction loesst ein
-	//Notify aus, und das muss Start-/EndAction rufen um die  Scrollbars
+	//Notify aus, und das muss Start-/EndAction rufen um die Scrollbars
 	//klarzubekommen.
 	--nStartAction;
 	UISizeNotify();
@@ -1185,12 +1187,9 @@ void ViewShell::VisPortChgd( const SwRect &rRect)
 
                 if ( aPageRect.IsOver( aBoth ) )
 				{
-                    // OD 12.02.2003 #i9719#, #105645# - consider new border
-                    // and shadow width
+                    // OD 12.02.2003 #i9719#, #105645# - consider border width (shadow removed now)
                     const SwTwips nBorderWidth =
                             GetOut()->PixelToLogic( Size( pPage->BorderPxWidth(), 0 ) ).Width();
-                    const SwTwips nShadowWidth =
-                            GetOut()->PixelToLogic( Size( pPage->ShadowPxWidth(), 0 ) ).Width();
 
                     SwTwips nPageLeft = 0;
 					SwTwips nPageRight = 0;
@@ -1199,13 +1198,13 @@ void ViewShell::VisPortChgd( const SwRect &rRect)
                         case sw::sidebarwindows::SIDEBAR_LEFT:
                         {
                             nPageLeft =  aPageRect.Left() - nBorderWidth - nSidebarWidth;
-                            nPageRight = aPageRect.Right() + nBorderWidth + nShadowWidth;
+                            nPageRight = aPageRect.Right() + nBorderWidth;
                         }
                         break;
                         case sw::sidebarwindows::SIDEBAR_RIGHT:
                         {
                             nPageLeft =  aPageRect.Left() - nBorderWidth;
-                            nPageRight = aPageRect.Right() + nBorderWidth + nShadowWidth + nSidebarWidth;
+                            nPageRight = aPageRect.Right() + nBorderWidth + nSidebarWidth;
                         }
                         break;
                         case sw::sidebarwindows::SIDEBAR_NONE:
@@ -1335,7 +1334,7 @@ sal_Bool ViewShell::SmoothScroll( long lXDiff, long lYDiff, const Rectangle *pRe
     (void) bOnlyYScroll;
     (void) bAllowedWithChildWindows;
 #else
-    const bool bSmoothScrollAllowed(bOnlyYScroll && bEnableSmooth && GetViewOptions()->IsSmoothScroll() &&  bAllowedWithChildWindows);
+    const bool bSmoothScrollAllowed(bOnlyYScroll && bEnableSmooth && GetViewOptions()->IsSmoothScroll() && bAllowedWithChildWindows);
 #endif
 // <-
 	const bool bIAmCursorShell(ISA(SwCrsrShell));
@@ -1347,7 +1346,7 @@ sal_Bool ViewShell::SmoothScroll( long lXDiff, long lYDiff, const Rectangle *pRe
 	// #i75172# with cursors on overlay, smooth scroll should be allowed with it
 	const bool bAllowedForMultipleCursors(true || (bIAmCursorShell && ((SwCrsrShell*)this)->GetCrsrCnt() < 2));
 
-	if(bSmoothScrollAllowed  && bAllowedForSelection && bAllowedForMultipleCursors)
+	if(bSmoothScrollAllowed && bAllowedForSelection && bAllowedForMultipleCursors)
 	{
 		Imp()->bStopSmooth = sal_False;
 
@@ -1438,7 +1437,7 @@ sal_Bool ViewShell::SmoothScroll( long lXDiff, long lYDiff, const Rectangle *pRe
 			aVisArea = aOldVis;
 
 			//Jetzt Stueckchenweise schieben und die neuen Pixel aus dem
-			//VirDev  kopieren.
+			//VirDev kopieren.
 
 			// ??????????????????????
 			// or is it better to get the scrollfactor from the User
@@ -2205,7 +2204,7 @@ void ViewShell::ApplyViewOptions( const SwViewOption &rOpt )
 	ImplApplyViewOptions( rOpt );
 
     // swmod 080115
-	// With one layout per view it is not longer necessary 
+	// With one layout per view it is not longer necessary
     // to sync these "layout related" view options
     // But as long as we have to disable "multiple layout"
 	pSh = (ViewShell*)this->GetNext();
@@ -2437,7 +2436,7 @@ void ViewShell::SetReadonlyOption(sal_Bool bSet)
 /* -----------------28.08.2003 15:45-----------------
 
  --------------------------------------------------*/
-void  ViewShell::SetPDFExportOption(sal_Bool bSet)
+void ViewShell::SetPDFExportOption(sal_Bool bSet)
 {
     if( bSet != pOpt->IsPDFExport() )
     {
@@ -2449,7 +2448,7 @@ void  ViewShell::SetPDFExportOption(sal_Bool bSet)
 /* -----------------------------2002/07/31 17:06------------------------------
 
  ---------------------------------------------------------------------------*/
-void  ViewShell::SetReadonlySelectionOption(sal_Bool bSet)
+void ViewShell::SetReadonlySelectionOption(sal_Bool bSet)
 {
     if( bSet != pOpt->IsSelectionInReadonly() )
     {
@@ -2493,7 +2492,7 @@ void ViewShell::UISizeNotify()
 }
 
 
-void    ViewShell::SetRestoreActions(sal_uInt16 nSet)
+void ViewShell::SetRestoreActions(sal_uInt16 nSet)
 {
 	DBG_ASSERT(!GetRestoreActions()||!nSet, "mehrfaches Restore der Actions ?");
 	Imp()->SetRestoreActions(nSet);
@@ -2533,7 +2532,7 @@ ViewShell::CreateAccessiblePreview()
 	ASSERT( GetWin(), "no window, no access" );
 
     // OD 15.01.2003 #103492# - add condition <IsPreView()>
-    if ( IsPreView() && GetLayout()&& GetWin() )	
+    if ( IsPreView() && GetLayout()&& GetWin() )
     {
         // OD 14.01.2003 #103492# - adjustment for new method signature
         return Imp()->GetAccessibleMap().GetDocumentPreview(
@@ -2730,7 +2729,7 @@ void ViewShell::DeleteReplacementBitmaps()
 
 SwPostItMgr* ViewShell::GetPostItMgr()
 {
-    SwView* pView =  GetDoc()->GetDocShell() ? GetDoc()->GetDocShell()->GetView() : 0;
+    SwView* pView = GetDoc()->GetDocShell() ? GetDoc()->GetDocShell()->GetView() : 0;
     if ( pView )
         return pView->GetPostItMgr();
 

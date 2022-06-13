@@ -194,6 +194,7 @@ public class TableGeneral {
 		swTableSTCSYNC.uncheck();
 		// set left spacing to content
 		swTableSTCLeft.focus();
+		sleep(0.2);
 		typeKeys("<ctrl a>");
 		typeKeys("<delete>");
 		typeKeys("0.5");

@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -66,7 +66,7 @@ String RID_EDITUNDO_SETSTYLE
 
 String RID_EDITUNDO_TRANSLITERATE
 {
-	Text [ en-US ] = "Case/Characters";
+	Text [ en-US ] = "Case/Characters" ;
 };
 
 
@@ -77,13 +77,13 @@ Menu RID_MENU_SPELL
 		MenuItem
 		{
 			Identifier = MN_SPELLING ;
-			HelpId = HID_EDITENG_SPELLER_START;
+			HelpId = HID_EDITENG_SPELLER_START ;
 			Text [ en-US ] = "~Spellcheck..." ;
 		};
 		MenuItem
 		{
 			Identifier = MN_INSERT ;
-			HelpId = HID_EDITENG_SPELLER_ADDWORD;
+			HelpId = HID_EDITENG_SPELLER_ADDWORD ;
 			SubMenu = Menu
 			{
 			};
@@ -92,13 +92,13 @@ Menu RID_MENU_SPELL
 		MenuItem
 		{
 			Identifier = MN_IGNORE ;
-			HelpId = HID_EDITENG_SPELLER_IGNORE;
+			HelpId = HID_EDITENG_SPELLER_IGNORE ;
 			Text [ en-US ] = "Ignore All" ;
 		};
 		MenuItem
 		{
 			Identifier = MN_AUTOCORR ;
-			HelpId = HID_EDITENG_SPELLER_AUTOCORRECT;
+			HelpId = HID_EDITENG_SPELLER_AUTOCORRECT ;
 			SubMenu = Menu
 			{
 			};
@@ -110,11 +110,12 @@ Menu RID_MENU_SPELL
 
 String RID_STR_WORD
 {
-	Text [ en-US ] = "Word is %x";
+	Text [ en-US ] = "Word is %x" ;
 };
 
 String RID_STR_PARAGRAPH
 {
-	Text [ en-US ] = "Paragraph is %x";
+	Text [ en-US ] = "Paragraph is %x" ;
 };
 
+// ********************************************************************** EOF

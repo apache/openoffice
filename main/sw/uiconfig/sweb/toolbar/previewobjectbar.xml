@@ -23,10 +23,9 @@
 
 
 <toolbar:toolbar xmlns:toolbar="http://openoffice.org/2001/toolbar" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <toolbar:toolbaritem xlink:href=".uno:GoToStartOfDoc"/>
  <toolbar:toolbaritem xlink:href=".uno:PageUp"/>
  <toolbar:toolbaritem xlink:href=".uno:PageDown"/>
- <toolbar:toolbarseparator/>
- <toolbar:toolbaritem xlink:href=".uno:GoToStartOfDoc"/>
  <toolbar:toolbaritem xlink:href=".uno:GoToEndOfDoc"/>
  <toolbar:toolbarseparator/>
  <toolbar:toolbaritem xlink:href=".uno:ShowTwoPages"/>

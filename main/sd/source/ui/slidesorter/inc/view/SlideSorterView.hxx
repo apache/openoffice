@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,7 +78,7 @@ public:
         @param rViewShell
             This reference is simply passed to the base class and not used
             by this class.
-        
+
     */
     SlideSorterView (SlideSorter& rSlideSorter);
     void Init (void);
@@ -161,7 +161,7 @@ public:
     ::boost::shared_ptr<cache::PageCache> GetPreviewCache (void);
 
     /** Set the bounding box of the insertion marker in model coordinates.
-        
+
         It will be painted as a dark rectangle that fills the given box.
     */
     void SetInsertionMarker (const Rectangle& rBBox);
@@ -171,7 +171,7 @@ public:
     void SetInsertionMarkerVisibility (bool bVisible);
 
     /** Set the size and position of the selection rectangle.
-        
+
         It will be painted as a dashed rectangle.
     */
     void SetSelectionRectangle (const Rectangle& rBox);
@@ -235,7 +235,7 @@ public:
 
     ::boost::shared_ptr<PageObjectPainter> GetPageObjectPainter (void);
     ::boost::shared_ptr<LayeredDevice> GetLayeredDevice (void) const;
-    
+
     class DrawLock
     {
     public:

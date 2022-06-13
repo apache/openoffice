@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,7 +67,7 @@ import com.sun.star.text.XTextRange;
 
 /**
  *
- * @author  dschulten
+ * @author dschulten
  */
 public class HelloTextTableShape {
 
@@ -96,7 +96,7 @@ public class HelloTextTableShape {
 
     }
 
-    protected void useDocuments() throws java.lang.Exception  {
+    protected void useDocuments() throws java.lang.Exception {
         useWriter();
         useCalc();
         useDraw();
@@ -214,13 +214,13 @@ public class HelloTextTableShape {
         try {
             // create new calc document and manipulate cell text
             XComponent xCalcComponent = newDocComponent("scalc");
-            XSpreadsheetDocument  xSpreadsheetDocument  =
+            XSpreadsheetDocument xSpreadsheetDocument =
                 (XSpreadsheetDocument)UnoRuntime.queryInterface(
                     XSpreadsheetDocument .class, xCalcComponent);
             Object sheets = xSpreadsheetDocument.getSheets();
             XIndexAccess xIndexedSheets = (XIndexAccess)UnoRuntime.queryInterface(
                 XIndexAccess.class, sheets);
-            Object sheet =  xIndexedSheets.getByIndex(0);
+            Object sheet = xIndexedSheets.getByIndex(0);
 
             //get cell A2 in first sheet
             XCellRange xSpreadsheetCells = (XCellRange)UnoRuntime.queryInterface(
@@ -273,7 +273,7 @@ public class HelloTextTableShape {
 
     protected void useDraw() throws java.lang.Exception {
         try {
-            //create new draw document and insert ractangle shape
+            //create new draw document and insert rectangle shape
             XComponent xDrawComponent = newDocComponent("sdraw");
             XDrawPagesSupplier xDrawPagesSupplier =
                 (XDrawPagesSupplier)UnoRuntime.queryInterface(
@@ -407,7 +407,7 @@ public class HelloTextTableShape {
         int col = theLine.Color;
         System.out.println(col);
     }
-    
+
     protected void manipulateShape(XShape xShape) throws com.sun.star.uno.Exception {
         XPropertySet xShapeProps = (XPropertySet)UnoRuntime.queryInterface(XPropertySet.class, xShape);
         xShapeProps.setPropertyValue("FillColor", new Integer(0x99CCFF));
@@ -417,7 +417,7 @@ public class HelloTextTableShape {
         xShapeProps.setPropertyValue("TextLeftDistance", new Integer(0));
         xShapeProps.setPropertyValue("TextRightDistance", new Integer(0));
         xShapeProps.setPropertyValue("TextUpperDistance", new Integer(0));
-        xShapeProps.setPropertyValue("TextLowerDistance", new Integer(0));        
+        xShapeProps.setPropertyValue("TextLowerDistance", new Integer(0));
     }
 
 
@@ -438,13 +438,13 @@ public class HelloTextTableShape {
                 // First step: get the remote office component context
                 xRemoteContext = com.sun.star.comp.helper.Bootstrap.bootstrap();
                 System.out.println("Connected to a running office ...");
-                    
+
                 xRemoteServiceManager = xRemoteContext.getServiceManager();
             }
             catch( Exception e) {
                 e.printStackTrace();
                 System.exit(1);
-            }            
+            }
         }
         return xRemoteServiceManager;
     }

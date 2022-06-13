@@ -65,11 +65,9 @@ $(eval $(call gb_Library_add_linked_libs,ucpdav1,\
 ))
 endif
 
-$(call gb_Library_use_external,ucpdav1,apr)
-$(call gb_Library_use_external,ucpdav1,apr_util)
+$(call gb_Library_use_external,ucpdav1,curl)
 $(call gb_Library_use_external,ucpdav1,libxml2)
 $(call gb_Library_use_external,ucpdav1,openssl)
-$(call gb_Library_use_external,ucpdav1,serf)
 
 $(eval $(call gb_Library_add_exception_objects,ucpdav1,\
 	ucb/source/ucp/webdav/webdavservices \
@@ -82,29 +80,15 @@ $(eval $(call gb_Library_add_exception_objects,ucpdav1,\
 	ucb/source/ucp/webdav/DAVProperties \
 	ucb/source/ucp/webdav/DAVSessionFactory \
 	ucb/source/ucp/webdav/DAVResourceAccess \
-	ucb/source/ucp/webdav/AprEnv \
 	ucb/source/ucp/webdav/webdavresponseparser \
-	ucb/source/ucp/webdav/SerfUri \
-	ucb/source/ucp/webdav/SerfRequestProcessor \
-	ucb/source/ucp/webdav/SerfRequestProcessorImpl \
-	ucb/source/ucp/webdav/SerfRequestProcessorImplFac \
-	ucb/source/ucp/webdav/SerfPropFindReqProcImpl \
-	ucb/source/ucp/webdav/SerfPropPatchReqProcImpl \
-	ucb/source/ucp/webdav/SerfGetReqProcImpl \
-	ucb/source/ucp/webdav/SerfHeadReqProcImpl \
-	ucb/source/ucp/webdav/SerfPutReqProcImpl \
-	ucb/source/ucp/webdav/SerfPostReqProcImpl \
-	ucb/source/ucp/webdav/SerfDeleteReqProcImpl \
-	ucb/source/ucp/webdav/SerfMkColReqProcImpl \
-	ucb/source/ucp/webdav/SerfCopyReqProcImpl \
-	ucb/source/ucp/webdav/SerfMoveReqProcImpl \
-	ucb/source/ucp/webdav/SerfLockReqProcImpl \
-	ucb/source/ucp/webdav/SerfLockRefreshProcImpl \
-	ucb/source/ucp/webdav/SerfUnlockProcImpl \
-	ucb/source/ucp/webdav/SerfLockStore \
-	ucb/source/ucp/webdav/SerfSession \
-	ucb/source/ucp/webdav/SerfCallbacks \
-	ucb/source/ucp/webdav/SerfInputStream \
+	ucb/source/ucp/webdav/CurlSession \
+	ucb/source/ucp/webdav/CurlRequest \
+	ucb/source/ucp/webdav/CurlLockStore \
+	ucb/source/ucp/webdav/LockRequest \
+	ucb/source/ucp/webdav/PropfindRequest \
+	ucb/source/ucp/webdav/ProppatchRequest \
+	ucb/source/ucp/webdav/CurlUri \
+	ucb/source/ucp/webdav/CurlInputStream \
 	ucb/source/ucp/webdav/DateTimeHelper \
 	ucb/source/ucp/webdav/UCBDeadPropertyValue \
 ))
