@@ -432,7 +432,7 @@ String STR_UNDO_CHANGE_PAGEBORDER
 };
 String STR_EDIT_OBJ
 {
-	Text [ en-US ] = "~Edit" ;
+	Text [ en-US ] = "Edit" ;
 };
 ModalDialog RID_UNDO_DELETE_WARNING
 {
@@ -460,7 +460,7 @@ ModalDialog RID_UNDO_DELETE_WARNING
 		HelpID = "sd:CheckBox:RID_UNDO_DELETE_WARNING:CB_UNDO_DELETE_DISABLE" ;
 		Pos = MAP_APPFONT ( 39, (4 * 12) + 9 ) ;
 		Size = MAP_APPFONT ( 175, 12 ) ;
-		Text [ en-US ] = "~Do not show this warning again" ;
+		Text [ en-US ] = "Do not show this warning again" ;
 	};
 	OKButton BTN_UNDO_DELETE_YES
 	{
@@ -570,11 +570,11 @@ String STR_STRING_NOTFOUND
 };
 String STR_PLAY
 {
-	Text [ en-US ] = "~Play" ;
+	Text [ en-US ] = "Play" ;
 };
 String STR_STOP
 {
-	Text [ en-US ] = "Sto~p" ;
+	Text [ en-US ] = "Stop" ;
 };
 String STR_UNDO_ORIGINALSIZE
 {
@@ -662,7 +662,7 @@ String STR_EFFECTDLG_JUMP
 };
 String STR_EFFECTDLG_ACTION
 {
-	Text [ en-US ] = "Act~ion" ;
+	Text [ en-US ] = "Action" ;
 };
 String STR_EFFECTDLG_SOUND
 {
@@ -1167,11 +1167,11 @@ String STR_TASKPANEL_MASTER_PAGE_MENU_TITLE
 };
 String STR_TASKPANEL_MASTER_PAGE_MENU_LOCK
 {
-	Text [ en-US ] = "~Dock Task Pane" ;
+	Text [ en-US ] = "Dock Task Pane" ;
 };
 String STR_TASKPANEL_MASTER_PAGE_MENU_UNLOCK
 {
-	Text [ en-US ] = "~Undock Task Pane" ;
+	Text [ en-US ] = "Undock Task Pane" ;
 };
 String STR_TASKPANEL_CURRENT_MASTER_PAGES_TITLE
 {
