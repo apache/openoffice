@@ -542,7 +542,8 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords(const ::rtl::OUStri
 
             rtlCipherError result = rtl_cipher_init (
                     aDecoder, rtl_Cipher_DirectionDecode,
-                    code, RTL_DIGEST_LENGTH_MD5, &iv[0], iv.size() );
+                    code, RTL_DIGEST_LENGTH_MD5, (iv.size()? &iv[0] : NULL),
+                    iv.size() );
             if( result == rtl_Cipher_E_None )
             {
                 ::rtl::ByteSequence aSeq = getBufFromAsciiLine( aLine );
@@ -596,7 +597,8 @@ vector< ::rtl::OUString > PasswordContainer::DecodePasswords(const ::rtl::OUStri
 
             rtlCipherError result = rtl_cipher_init (
                     aEncoder, rtl_Cipher_DirectionEncode,
-                    code, RTL_DIGEST_LENGTH_MD5, &iv[0], iv.size() );
+                    code, RTL_DIGEST_LENGTH_MD5, (iv.size()? &iv[0] : NULL),
+                    iv.size() );
 
             if( result == rtl_Cipher_E_None )
             {
