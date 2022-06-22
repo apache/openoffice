@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -78,10 +78,10 @@ ListBox::ListBox( Window* pParent, const ResId& rResId ) :
 
 ListBox::~ListBox()
 {
-    //#109201#
-    ImplCallEventListeners( VCLEVENT_OBJECT_DYING );
+	//#109201#
+	ImplCallEventListeners( VCLEVENT_OBJECT_DYING );
 
-    delete mpImplLB;
+	delete mpImplLB;
 
 	// Beim zerstoeren des FloatWins macht TH ein GrabFocus auf den Parent,
 	// also diese ListBox => PreNotify()...
@@ -101,9 +101,9 @@ void ListBox::ImplInitListBoxData()
 	mpBtn			= NULL;
 	mnDDHeight		= 0;
 	mnSaveValue 	= LISTBOX_ENTRY_NOTFOUND;
-    mnLineCount     = 0;
+	mnLineCount		= 0;
 	mbDDAutoSize	= true;
-    mbEdgeBlending  = false;
+	mbEdgeBlending	= false;
 }
 
 // -----------------------------------------------------------------------
@@ -117,48 +117,48 @@ void ListBox::ImplInit( Window* pParent, WinBits nStyle )
 	Control::ImplInit( pParent, nStyle, NULL );
 	SetBackground();
 
-    ::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetListener> xDrop = new DNDEventDispatcher(this);
+	::com::sun::star::uno::Reference< ::com::sun::star::datatransfer::dnd::XDropTargetListener> xDrop = new DNDEventDispatcher(this);
 
 	if( nStyle & WB_DROPDOWN )
 	{
-        sal_Int32 nLeft, nTop, nRight, nBottom;
-        GetBorder( nLeft, nTop, nRight, nBottom );
-        mnDDHeight = (sal_uInt16)(GetTextHeight() + nTop + nBottom + 4);
+		sal_Int32 nLeft, nTop, nRight, nBottom;
+		GetBorder( nLeft, nTop, nRight, nBottom );
+		mnDDHeight = (sal_uInt16)(GetTextHeight() + nTop + nBottom + 4);
 
-        if( IsNativeWidgetEnabled() &&
-            IsNativeControlSupported( CTRL_LISTBOX, PART_ENTIRE_CONTROL ) )
-        {
-                ImplControlValue aControlValue;
-                Rectangle aCtrlRegion( Point( 0, 0 ), Size( 20, mnDDHeight ) );
-                Rectangle aBoundingRgn( aCtrlRegion );
-                Rectangle aContentRgn( aCtrlRegion );
-                if( GetNativeControlRegion( CTRL_LISTBOX, PART_ENTIRE_CONTROL, aCtrlRegion,
-                                            CTRL_STATE_ENABLED, aControlValue, rtl::OUString(),
-                                            aBoundingRgn, aContentRgn ) )
-                {
-                    sal_Int32 nHeight = aBoundingRgn.GetHeight();
-                    if( nHeight > mnDDHeight )
-                        mnDDHeight = static_cast<sal_uInt16>(nHeight);
-                }
-        }
+		if( IsNativeWidgetEnabled() &&
+			IsNativeControlSupported( CTRL_LISTBOX, PART_ENTIRE_CONTROL ) )
+		{
+				ImplControlValue aControlValue;
+				Rectangle aCtrlRegion( Point( 0, 0 ), Size( 20, mnDDHeight ) );
+				Rectangle aBoundingRgn( aCtrlRegion );
+				Rectangle aContentRgn( aCtrlRegion );
+				if( GetNativeControlRegion( CTRL_LISTBOX, PART_ENTIRE_CONTROL, aCtrlRegion,
+											CTRL_STATE_ENABLED, aControlValue, rtl::OUString(),
+											aBoundingRgn, aContentRgn ) )
+				{
+					sal_Int32 nHeight = aBoundingRgn.GetHeight();
+					if( nHeight > mnDDHeight )
+						mnDDHeight = static_cast<sal_uInt16>(nHeight);
+				}
+		}
 
 		mpFloatWin = new ImplListBoxFloatingWindow( this );
 		mpFloatWin->SetAutoWidth( sal_True );
 		mpFloatWin->SetPopupModeEndHdl( LINK( this, ListBox, ImplPopupModeEndHdl ) );
-        mpFloatWin->GetDropTarget()->addDropTargetListener(xDrop);
+		mpFloatWin->GetDropTarget()->addDropTargetListener(xDrop);
 
 		mpImplWin = new ImplWin( this, (nStyle & (WB_LEFT|WB_RIGHT|WB_CENTER))|WB_NOBORDER );
 		mpImplWin->SetMBDownHdl( LINK( this, ListBox, ImplClickBtnHdl ) );
 		mpImplWin->SetUserDrawHdl( LINK( this, ListBox, ImplUserDrawHdl ) );
 		mpImplWin->Show();
-        mpImplWin->GetDropTarget()->addDropTargetListener(xDrop);
-        mpImplWin->SetEdgeBlending(GetEdgeBlending());
+		mpImplWin->GetDropTarget()->addDropTargetListener(xDrop);
+		mpImplWin->SetEdgeBlending(GetEdgeBlending());
 
 		mpBtn = new ImplBtn( this, WB_NOLIGHTBORDER | WB_RECTSTYLE );
 		ImplInitDropDownButton( mpBtn );
 		mpBtn->SetMBDownHdl( LINK( this, ListBox, ImplClickBtnHdl ) );
 		mpBtn->Show();
-        mpBtn->GetDropTarget()->addDropTargetListener(xDrop);
+		mpBtn->GetDropTarget()->addDropTargetListener(xDrop);
 	}
 
 	Window* pLBParent = this;
@@ -173,11 +173,11 @@ void ListBox::ImplInit( Window* pParent, WinBits nStyle )
 	mpImplLB->SetFocusHdl( LINK( this, ListBox, ImplFocusHdl ) );
 	mpImplLB->SetListItemSelectHdl( LINK( this, ListBox, ImplListItemSelectHdl ) );
 	mpImplLB->SetPosPixel( Point() );
-    mpImplLB->SetEdgeBlending(GetEdgeBlending());
+	mpImplLB->SetEdgeBlending(GetEdgeBlending());
 	mpImplLB->Show();
-    
-    mpImplLB->GetDropTarget()->addDropTargetListener(xDrop);
-    mpImplLB->SetDropTraget(xDrop);
+
+	mpImplLB->GetDropTarget()->addDropTargetListener(xDrop);
+	mpImplLB->SetDropTraget(xDrop);
 
 	if ( mpFloatWin )
 	{
@@ -216,7 +216,7 @@ void ListBox::ImplLoadRes( const ResId& rResId )
 
 		long nId = ReadLongRes();
 		if( nId )
-			SetEntryData( nPos, (void *)nId );	// ID als UserData
+			SetEntryData( nPos, (void *)nId );	// ID as UserData
 	}
 
 	if( nSelPos < nNumber )
@@ -253,12 +253,12 @@ IMPL_LINK( ListBox, ImplSelectHdl, void*, EMPTYARG )
 }
 IMPL_LINK( ListBox, ImplFocusHdl, void *, nPos )
 {
-    ImplCallEventListeners( VCLEVENT_LISTBOX_FOCUS , nPos);
+	ImplCallEventListeners( VCLEVENT_LISTBOX_FOCUS , nPos);
 	return 1;
 }
 IMPL_LINK( ListBox, ImplListItemSelectHdl, void*, EMPTYARG )
 {
-    ImplCallEventListeners( VCLEVENT_DROPDOWN_SELECT );
+	ImplCallEventListeners( VCLEVENT_DROPDOWN_SELECT );
 	return 1;
 }
 
@@ -266,7 +266,7 @@ IMPL_LINK( ListBox, ImplListItemSelectHdl, void*, EMPTYARG )
 
 IMPL_LINK( ListBox, ImplScrollHdl, void*, EMPTYARG )
 {
-    ImplCallEventListeners( VCLEVENT_LISTBOX_SCROLLED );
+	ImplCallEventListeners( VCLEVENT_LISTBOX_SCROLLED );
 	return 1;
 }
 
@@ -327,17 +327,17 @@ IMPL_LINK( ListBox, ImplClickBtnHdl, void*, EMPTYARG )
 {
 	if( !mpFloatWin->IsInPopupMode() )
 	{
-        ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
+		ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
 		mpImplWin->GrabFocus();
 		mpBtn->SetPressed( sal_True );
 		mpFloatWin->StartFloat( sal_True );
-        ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
+		ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
 
-        ImplClearLayoutData();
-        if( mpImplLB )
-            mpImplLB->GetMainWindow()->ImplClearLayoutData();
-        if( mpImplWin )
-            mpImplWin->ImplClearLayoutData();
+		ImplClearLayoutData();
+		if( mpImplLB )
+			mpImplLB->GetMainWindow()->ImplClearLayoutData();
+		if( mpImplWin )
+			mpImplWin->ImplClearLayoutData();
 	}
 
 	return 0;
@@ -347,34 +347,34 @@ IMPL_LINK( ListBox, ImplClickBtnHdl, void*, EMPTYARG )
 
 IMPL_LINK( ListBox, ImplPopupModeEndHdl, void*, EMPTYARG )
 {
-    if( mpFloatWin->IsPopupModeCanceled() )
-    {
-        if ( ( mpFloatWin->GetPopupModeStartSaveSelection() != LISTBOX_ENTRY_NOTFOUND )
-                && !IsEntryPosSelected( mpFloatWin->GetPopupModeStartSaveSelection() ) )
-        {
-            mpImplLB->SelectEntry( mpFloatWin->GetPopupModeStartSaveSelection(), sal_True );
-            sal_Bool bTravelSelect = mpImplLB->IsTravelSelect();
-            mpImplLB->SetTravelSelect( sal_True );
+	if( mpFloatWin->IsPopupModeCanceled() )
+	{
+		if ( ( mpFloatWin->GetPopupModeStartSaveSelection() != LISTBOX_ENTRY_NOTFOUND )
+				&& !IsEntryPosSelected( mpFloatWin->GetPopupModeStartSaveSelection() ) )
+		{
+			mpImplLB->SelectEntry( mpFloatWin->GetPopupModeStartSaveSelection(), sal_True );
+			sal_Bool bTravelSelect = mpImplLB->IsTravelSelect();
+			mpImplLB->SetTravelSelect( sal_True );
 
-            ImplDelData aCheckDelete;
-            ImplAddDel( &aCheckDelete );
-            Select();
-            if ( aCheckDelete.IsDelete() )
-                return 0;
-            ImplRemoveDel( &aCheckDelete );
+			ImplDelData aCheckDelete;
+			ImplAddDel( &aCheckDelete );
+			Select();
+			if ( aCheckDelete.IsDelete() )
+				return 0;
+			ImplRemoveDel( &aCheckDelete );
 
-            mpImplLB->SetTravelSelect( bTravelSelect );
-        }
-    }
+			mpImplLB->SetTravelSelect( bTravelSelect );
+		}
+	}
 
-    ImplClearLayoutData();
-    if( mpImplLB )
-        mpImplLB->GetMainWindow()->ImplClearLayoutData();
-    if( mpImplWin )
-        mpImplWin->ImplClearLayoutData();
+	ImplClearLayoutData();
+	if( mpImplLB )
+		mpImplLB->GetMainWindow()->ImplClearLayoutData();
+	if( mpImplWin )
+		mpImplWin->ImplClearLayoutData();
 
-    mpBtn->SetPressed( sal_False );
-    ImplCallEventListeners( VCLEVENT_DROPDOWN_CLOSE );
+	mpBtn->SetPressed( sal_False );
+	ImplCallEventListeners( VCLEVENT_DROPDOWN_CLOSE );
 	return 0;
 }
 
@@ -382,19 +382,19 @@ IMPL_LINK( ListBox, ImplPopupModeEndHdl, void*, EMPTYARG )
 
 void ListBox::ToggleDropDown()
 {
-    if( IsDropDownBox() )
-    {
-        if( mpFloatWin->IsInPopupMode() )
-            mpFloatWin->EndPopupMode();
-        else
-        {
-            ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
-            mpImplWin->GrabFocus();
-            mpBtn->SetPressed( sal_True );
-            mpFloatWin->StartFloat( sal_True );
-            ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
-        }
-    }
+	if( IsDropDownBox() )
+	{
+		if( mpFloatWin->IsInPopupMode() )
+			mpFloatWin->EndPopupMode();
+		else
+		{
+			ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
+			mpImplWin->GrabFocus();
+			mpBtn->SetPressed( sal_True );
+			mpFloatWin->StartFloat( sal_True );
+			ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
+		}
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -423,7 +423,7 @@ void ListBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sa
 		Rectangle aRect( aPos, aSize );
 		if ( bBorder )
 		{
-            ImplDrawFrame( pDev, aRect );
+			ImplDrawFrame( pDev, aRect );
 		}
 		if ( bBackground )
 		{
@@ -450,21 +450,21 @@ void ListBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sa
 		}
 	}
 
-	long        nOnePixel = GetDrawPixel( pDev, 1 );
-    sal_uInt16      nTextStyle = TEXT_DRAW_VCENTER;
-    Rectangle   aTextRect( aPos, aSize );
+	long		nOnePixel = GetDrawPixel( pDev, 1 );
+	sal_uInt16	nTextStyle = TEXT_DRAW_VCENTER;
+	Rectangle	aTextRect( aPos, aSize );
 
-    if ( GetStyle() & WB_CENTER )
-        nTextStyle |= TEXT_DRAW_CENTER;
-    else if ( GetStyle() & WB_RIGHT )
-        nTextStyle |= TEXT_DRAW_RIGHT;
-    else
-        nTextStyle |= TEXT_DRAW_LEFT;
+	if ( GetStyle() & WB_CENTER )
+		nTextStyle |= TEXT_DRAW_CENTER;
+	else if ( GetStyle() & WB_RIGHT )
+		nTextStyle |= TEXT_DRAW_RIGHT;
+	else
+		nTextStyle |= TEXT_DRAW_LEFT;
 
-    aTextRect.Left() += 3*nOnePixel;
-    aTextRect.Right() -= 3*nOnePixel;
+	aTextRect.Left() += 3*nOnePixel;
+	aTextRect.Right() -= 3*nOnePixel;
 
-    if ( IsDropDownBox() )
+	if ( IsDropDownBox() )
 	{
 		XubString	aText = GetSelectEntry();
 		long		nTextHeight = pDev->GetTextHeight();
@@ -479,7 +479,7 @@ void ListBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sa
 		{
 			Rectangle aClip( aPos, aSize );
 			if ( nTextHeight > aSize.Height() )
-				aClip.Bottom() += nTextHeight-aSize.Height()+1;  // Damit HP-Drucker nicht 'weg-optimieren'
+				aClip.Bottom() += nTextHeight-aSize.Height()+1; // Damit HP-Drucker nicht 'weg-optimieren'
 			pDev->IntersectClipRegion( aClip );
 		}
 
@@ -491,12 +491,12 @@ void ListBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sa
 		sal_uInt16		nLines = (sal_uInt16)(aSize.Height() / nTextHeight);
 		Rectangle	aClip( aPos, aSize );
 
-        pDev->IntersectClipRegion( aClip );
+		pDev->IntersectClipRegion( aClip );
 
-        if ( !nLines )
+		if ( !nLines )
 			nLines = 1;
 
-        for ( sal_uInt16 n = 0; n < nLines; n++ )
+		for ( sal_uInt16 n = 0; n < nLines; n++ )
 		{
 			sal_uInt16 nEntry = n+mpImplLB->GetTopEntry();
 			sal_Bool bSelected = mpImplLB->GetEntryList()->IsEntryPosSelected( nEntry );
@@ -509,12 +509,12 @@ void ListBox::Draw( OutputDevice* pDev, const Point& rPos, const Size& rSize, sa
 				pDev->SetTextColor( COL_WHITE );
 			}
 
-            aTextRect.Top() = aPos.Y() + n*nTextHeight;
-            aTextRect.Bottom() = aTextRect.Top() + nTextHeight;
+			aTextRect.Top() = aPos.Y() + n*nTextHeight;
+			aTextRect.Bottom() = aTextRect.Top() + nTextHeight;
 
-            pDev->DrawText( aTextRect, mpImplLB->GetEntryList()->GetEntryText( nEntry ), nTextStyle );
+			pDev->DrawText( aTextRect, mpImplLB->GetEntryList()->GetEntryText( nEntry ), nTextStyle );
 
-            if ( bSelected )
+			if ( bSelected )
 				pDev->SetTextColor( COL_BLACK );
 		}
 	}
@@ -575,14 +575,14 @@ void ListBox::DataChanged( const DataChangedEvent& rDCEvt )
 		 ((rDCEvt.GetType() == DATACHANGED_SETTINGS) &&
 		  (rDCEvt.GetFlags() & SETTINGS_STYLE)) )
 	{
-        SetBackground();    // due to a hack in Window::UpdateSettings the background must be reset
-                            // otherwise it will overpaint NWF drawn listboxes
+		SetBackground();	// due to a hack in Window::UpdateSettings the background must be reset
+							// otherwise it will overpaint NWF drawn listboxes
 		Resize();
 		mpImplLB->Resize(); // Wird nicht durch ListBox::Resize() gerufen, wenn sich die ImplLB nicht aendert.
 
 		if ( mpImplWin )
 		{
-			mpImplWin->SetSettings( GetSettings() );	// Falls noch nicht eingestellt...
+			mpImplWin->SetSettings( GetSettings() ); // Falls noch nicht eingestellt...
 			ImplInitFieldSettings( mpImplWin, sal_True, sal_True, sal_True );
 
 			mpBtn->SetSettings( GetSettings() );
@@ -603,14 +603,14 @@ void ListBox::EnableAutoSize( bool bAuto )
 	if ( mpFloatWin )
 	{
 		if ( bAuto && !mpFloatWin->GetDropDownLineCount() )
-        {
-            // use GetListBoxMaximumLineCount here; before, was on fixed number of five
-            AdaptDropDownLineCountToMaximum();
-        }
+		{
+			// use GetListBoxMaximumLineCount here; before, was on fixed number of five
+			AdaptDropDownLineCountToMaximum();
+		}
 		else if ( !bAuto )
-        {
+		{
 			mpFloatWin->SetDropDownLineCount( 0 );
-        }
+		}
 	}
 }
 
@@ -618,22 +618,22 @@ void ListBox::EnableAutoSize( bool bAuto )
 
 void ListBox::EnableDDAutoWidth( sal_Bool b )
 {
-    if ( mpFloatWin )
-        mpFloatWin->SetAutoWidth( b );
+	if ( mpFloatWin )
+		mpFloatWin->SetAutoWidth( b );
 }
 
 // -----------------------------------------------------------------------
 
 sal_Bool ListBox::IsDDAutoWidthEnabled() const
 {
-    return mpFloatWin ? mpFloatWin->IsAutoWidth() : sal_False;
+	return mpFloatWin ? mpFloatWin->IsAutoWidth() : sal_False;
 }
 
 // -----------------------------------------------------------------------
 
 void ListBox::SetDropDownLineCount( sal_uInt16 nLines )
 {
-    mnLineCount = nLines;
+	mnLineCount = nLines;
 	if ( mpFloatWin )
 		mpFloatWin->SetDropDownLineCount( mnLineCount );
 }
@@ -642,16 +642,16 @@ void ListBox::SetDropDownLineCount( sal_uInt16 nLines )
 
 void ListBox::AdaptDropDownLineCountToMaximum()
 {
-    // adapt to maximum allowed number
-    SetDropDownLineCount(std::min(GetEntryCount(), GetSettings().GetStyleSettings().GetListBoxMaximumLineCount()));
+	// adapt to maximum allowed number
+	SetDropDownLineCount(std::min(GetEntryCount(), GetSettings().GetStyleSettings().GetListBoxMaximumLineCount()));
 }
 
 // -----------------------------------------------------------------------
 
 sal_uInt16 ListBox::GetDropDownLineCount() const
 {
-    if ( mpFloatWin )
-        return mpFloatWin->GetDropDownLineCount();
+	if ( mpFloatWin )
+		return mpFloatWin->GetDropDownLineCount();
 	return mnLineCount;
 }
 
@@ -684,10 +684,10 @@ void ListBox::Resize()
 	{
 		// initialize the dropdown button size with the standard scrollbar width
 		long nSBWidth = GetSettings().GetStyleSettings().GetScrollBarSize();
-		long	nTop = 0;
-		long	nBottom = aOutSz.Height();
+		long nTop = 0;
+		long nBottom = aOutSz.Height();
 
-        // note: in case of no border, pBorder will actually be this
+		// note: in case of no border, pBorder will actually be this
 		Window *pBorder = GetWindow( WINDOW_BORDER );
 		ImplControlValue aControlValue;
 		Point aPoint;
@@ -715,18 +715,18 @@ void ListBox::Resize()
 				aContent.Move( -aPoint.X(), -aPoint.Y() );
 
 				// use the themes drop down size
-                if( ! (GetStyle() & WB_BORDER) && ImplGetSVData()->maNWFData.mbNoFocusRects )
-                {
-                    // no border but focus ring behavior -> we have a problem; the
-                    // native rect relies on the border to draw the focus
-                    // let's do the best we can and center vertically, so it doesn't look
-                    // completely wrong.
-                    Size aSz( GetOutputSizePixel() );
-                    long nDiff = aContent.Top() - (aSz.Height() - aContent.GetHeight())/2;
-                    aContent.Top() -= nDiff;
-                    aContent.Bottom() -= nDiff;
-                }
-                mpImplWin->SetPosSizePixel( aContent.TopLeft(), aContent.GetSize() );
+				if( ! (GetStyle() & WB_BORDER) && ImplGetSVData()->maNWFData.mbNoFocusRects )
+				{
+					// no border but focus ring behavior -> we have a problem; the
+					// native rect relies on the border to draw the focus
+					// let's do the best we can and center vertically, so it doesn't look
+					// completely wrong.
+					Size aSz( GetOutputSizePixel() );
+					long nDiff = aContent.Top() - (aSz.Height() - aContent.GetHeight())/2;
+					aContent.Top() -= nDiff;
+					aContent.Bottom() -= nDiff;
+				}
+				mpImplWin->SetPosSizePixel( aContent.TopLeft(), aContent.GetSize() );
 			}
 			else
 				mpImplWin->SetSizePixel( aOutSz );
@@ -748,90 +748,90 @@ void ListBox::Resize()
 	if ( mpFloatWin )
 		mpFloatWin->SetSizePixel( mpFloatWin->CalcFloatSize() );
 
-    Control::Resize();
+	Control::Resize();
 }
 
 // -----------------------------------------------------------------------
 
 void ListBox::FillLayoutData() const
 {
-    mpControlData->mpLayoutData = new vcl::ControlLayoutData();
-    const Control* pMainWin = mpImplLB->GetMainWindow();
-    if( mpFloatWin )
-    {
-        // dropdown mode
-        AppendLayoutData( *mpImplWin );
-        mpImplWin->SetLayoutDataParent( this );
-        if( mpFloatWin->IsReallyVisible() )
-        {
-            AppendLayoutData( *pMainWin );
-            pMainWin->SetLayoutDataParent( this );
-        }
-    }
-    else
-    {
-        AppendLayoutData( *pMainWin );
-        pMainWin->SetLayoutDataParent( this );
-    }
+	mpControlData->mpLayoutData = new vcl::ControlLayoutData();
+	const Control* pMainWin = mpImplLB->GetMainWindow();
+	if( mpFloatWin )
+	{
+		// dropdown mode
+		AppendLayoutData( *mpImplWin );
+		mpImplWin->SetLayoutDataParent( this );
+		if( mpFloatWin->IsReallyVisible() )
+		{
+			AppendLayoutData( *pMainWin );
+			pMainWin->SetLayoutDataParent( this );
+		}
+	}
+	else
+	{
+		AppendLayoutData( *pMainWin );
+		pMainWin->SetLayoutDataParent( this );
+	}
 }
 
 // -----------------------------------------------------------------------
 
 long ListBox::GetIndexForPoint( const Point& rPoint, sal_uInt16& rPos ) const
 {
-    if( !HasLayoutData() )
-        FillLayoutData();
+	if( !HasLayoutData() )
+		FillLayoutData();
 
-    // check whether rPoint fits at all
-    long nIndex = Control::GetIndexForPoint( rPoint );
-    if( nIndex != -1 )
-    {
-        // point must be either in main list window
-        // or in impl window (dropdown case)
-        ImplListBoxWindow* pMain = mpImplLB->GetMainWindow();
-    
-        // convert coordinates to ImplListBoxWindow pixel coordinate space
-        Point aConvPoint = LogicToPixel( rPoint );
-        aConvPoint = OutputToAbsoluteScreenPixel( aConvPoint );
-        aConvPoint = pMain->AbsoluteScreenToOutputPixel( aConvPoint );
-        aConvPoint = pMain->PixelToLogic( aConvPoint );
+	// check whether rPoint fits at all
+	long nIndex = Control::GetIndexForPoint( rPoint );
+	if( nIndex != -1 )
+	{
+		// point must be either in main list window
+		// or in impl window (dropdown case)
+		ImplListBoxWindow* pMain = mpImplLB->GetMainWindow();
 
-        // try to find entry
-        sal_uInt16 nEntry = pMain->GetEntryPosForPoint( aConvPoint );
-        if( nEntry == LISTBOX_ENTRY_NOTFOUND )
-        {
-            // not found, maybe dropdown case
-            if( mpImplWin && mpImplWin->IsReallyVisible() )
-            {
-                // convert to impl window pixel coordinates
-                aConvPoint = LogicToPixel( rPoint );
-                aConvPoint = OutputToAbsoluteScreenPixel( aConvPoint );
-                aConvPoint = mpImplWin->AbsoluteScreenToOutputPixel( aConvPoint );
+		// convert coordinates to ImplListBoxWindow pixel coordinate space
+		Point aConvPoint = LogicToPixel( rPoint );
+		aConvPoint = OutputToAbsoluteScreenPixel( aConvPoint );
+		aConvPoint = pMain->AbsoluteScreenToOutputPixel( aConvPoint );
+		aConvPoint = pMain->PixelToLogic( aConvPoint );
 
-                // check whether converted point is inside impl window
-                Size aImplWinSize = mpImplWin->GetOutputSizePixel();
-                if( aConvPoint.X() >= 0 && aConvPoint.Y() >= 0 && aConvPoint.X() < aImplWinSize.Width() && aConvPoint.Y() < aImplWinSize.Height() )
-                {
-                    // inside the impl window, the position is the current item pos
-                    rPos = mpImplWin->GetItemPos();
-                }
-                else
-                    nIndex = -1;
-            }
-            else
-                nIndex = -1;
-        }
-        else
-            rPos = nEntry;
+		// try to find entry
+		sal_uInt16 nEntry = pMain->GetEntryPosForPoint( aConvPoint );
+		if( nEntry == LISTBOX_ENTRY_NOTFOUND )
+		{
+			// not found, maybe dropdown case
+			if( mpImplWin && mpImplWin->IsReallyVisible() )
+			{
+				// convert to impl window pixel coordinates
+				aConvPoint = LogicToPixel( rPoint );
+				aConvPoint = OutputToAbsoluteScreenPixel( aConvPoint );
+				aConvPoint = mpImplWin->AbsoluteScreenToOutputPixel( aConvPoint );
 
-        DBG_ASSERT( nIndex != -1, "found index for point, but relative index failed" );
-    }
+				// check whether converted point is inside impl window
+				Size aImplWinSize = mpImplWin->GetOutputSizePixel();
+				if( aConvPoint.X() >= 0 && aConvPoint.Y() >= 0 && aConvPoint.X() < aImplWinSize.Width() && aConvPoint.Y() < aImplWinSize.Height() )
+				{
+					// inside the impl window, the position is the current item pos
+					rPos = mpImplWin->GetItemPos();
+				}
+				else
+					nIndex = -1;
+			}
+			else
+				nIndex = -1;
+		}
+		else
+			rPos = nEntry;
 
-    // get line relative index
-    if( nIndex != -1 )
-        nIndex = ToRelativeLineIndex( nIndex );
+		DBG_ASSERT( nIndex != -1, "found index for point, but relative index failed" );
+	}
 
-    return nIndex;
+	// get line relative index
+	if( nIndex != -1 )
+		nIndex = ToRelativeLineIndex( nIndex );
+
+	return nIndex;
 }
 
 // -----------------------------------------------------------------------
@@ -923,21 +923,21 @@ void ListBox::StateChanged( StateChangedType nType )
 	{
 		SetStyle( ImplInitStyle( GetStyle() ) );
 		mpImplLB->GetMainWindow()->EnableSort( ( GetStyle() & WB_SORT ) ? sal_True : sal_False );
-	    sal_Bool bSimpleMode = ( GetStyle() & WB_SIMPLEMODE ) ? sal_True : sal_False;
-	    mpImplLB->SetMultiSelectionSimpleMode( bSimpleMode );
+		sal_Bool bSimpleMode = ( GetStyle() & WB_SIMPLEMODE ) ? sal_True : sal_False;
+		mpImplLB->SetMultiSelectionSimpleMode( bSimpleMode );
 	}
-    else if( nType == STATE_CHANGE_MIRRORING )
-    {
-        if( mpBtn )
-        {
-            mpBtn->EnableRTL( IsRTLEnabled() );
-            ImplInitDropDownButton( mpBtn );
-        }
-        mpImplLB->EnableRTL( IsRTLEnabled() );
-        if( mpImplWin )
-            mpImplWin->EnableRTL( IsRTLEnabled() );
-        Resize();
-    }
+	else if( nType == STATE_CHANGE_MIRRORING )
+	{
+		if( mpBtn )
+		{
+			mpBtn->EnableRTL( IsRTLEnabled() );
+			ImplInitDropDownButton( mpBtn );
+		}
+		mpImplLB->EnableRTL( IsRTLEnabled() );
+		if( mpImplWin )
+			mpImplWin->EnableRTL( IsRTLEnabled() );
+		Resize();
+	}
 
 	Control::StateChanged( nType );
 }
@@ -959,10 +959,10 @@ long ListBox::PreNotify( NotifyEvent& rNEvt )
 					if( mpFloatWin && !mpFloatWin->IsInPopupMode() &&
 						aKeyEvt.GetKeyCode().IsMod2() )
 					{
-                        ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
+						ImplCallEventListeners( VCLEVENT_DROPDOWN_PRE_OPEN );
 						mpBtn->SetPressed( sal_True );
 						mpFloatWin->StartFloat( sal_False );
-                        ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
+						ImplCallEventListeners( VCLEVENT_DROPDOWN_OPEN );
 						nDone = 1;
 					}
 					else
@@ -996,9 +996,9 @@ long ListBox::PreNotify( NotifyEvent& rNEvt )
 				break;
 
 				default:
-                {
+				{
 					nDone = mpImplLB->ProcessKeyInput( aKeyEvt );
-                }
+				}
 			}
 		}
 		else if ( rNEvt.GetType() == EVENT_LOSEFOCUS )
@@ -1010,19 +1010,19 @@ long ListBox::PreNotify( NotifyEvent& rNEvt )
 				  (rNEvt.GetCommandEvent()->GetCommand() == COMMAND_WHEEL) &&
 				  (rNEvt.GetWindow() == mpImplWin) )
 		{
-            sal_uInt16 nWheelBehavior( GetSettings().GetMouseSettings().GetWheelBehavior() );
-            if  (   ( nWheelBehavior == MOUSE_WHEEL_ALWAYS )
-                ||  (   ( nWheelBehavior == MOUSE_WHEEL_FOCUS_ONLY )
-                    &&  HasChildPathFocus()
-                    )
-                )
-            {
-                nDone = mpImplLB->HandleWheelAsCursorTravel( *rNEvt.GetCommandEvent() );
-            }
-            else
-            {
-                nDone = 0;  // don't eat this event, let the default handling happen (i.e. scroll the context)
-            }
+			sal_uInt16 nWheelBehavior( GetSettings().GetMouseSettings().GetWheelBehavior() );
+			if ( ( nWheelBehavior == MOUSE_WHEEL_ALWAYS )
+				 || ( ( nWheelBehavior == MOUSE_WHEEL_FOCUS_ONLY )
+				 && HasChildPathFocus()
+				 )
+			   )
+			{
+				nDone = mpImplLB->HandleWheelAsCursorTravel( *rNEvt.GetCommandEvent() );
+			}
+			else
+			{
+				nDone = 0; // don't eat this event, let the default handling happen (i.e. scroll the context)
+			}
 		}
 	}
 
@@ -1033,14 +1033,14 @@ long ListBox::PreNotify( NotifyEvent& rNEvt )
 
 void ListBox::Select()
 {
-    ImplCallEventListenersAndHandler( VCLEVENT_LISTBOX_SELECT, maSelectHdl, this );
+	ImplCallEventListenersAndHandler( VCLEVENT_LISTBOX_SELECT, maSelectHdl, this );
 }
 
 // -----------------------------------------------------------------------
 
 void ListBox::DoubleClick()
 {
-    ImplCallEventListenersAndHandler( VCLEVENT_LISTBOX_DOUBLECLICK, maDoubleClickHdl, this );
+	ImplCallEventListenersAndHandler( VCLEVENT_LISTBOX_DOUBLECLICK, maDoubleClickHdl, this );
 }
 
 // -----------------------------------------------------------------------
@@ -1056,7 +1056,7 @@ void ListBox::Clear()
 		mpImplWin->SetImage( aImage );
 		mpImplWin->Invalidate();
 	}
-    CallEventListeners( VCLEVENT_LISTBOX_ITEMREMOVED, (void*) sal_IntPtr(-1) );
+	CallEventListeners( VCLEVENT_LISTBOX_ITEMREMOVED, (void*) sal_IntPtr(-1) );
 }
 
 // -----------------------------------------------------------------------
@@ -1081,7 +1081,7 @@ sal_uInt16 ListBox::InsertEntry( const XubString& rStr, sal_uInt16 nPos )
 {
 	sal_uInt16 nRealPos = mpImplLB->InsertEntry( nPos + mpImplLB->GetEntryList()->GetMRUCount(), rStr );
 	nRealPos = sal::static_int_cast<sal_uInt16>(nRealPos - mpImplLB->GetEntryList()->GetMRUCount());
-    CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
+	CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
 	return nRealPos;
 }
 
@@ -1091,7 +1091,7 @@ sal_uInt16 ListBox::InsertEntry( const Image& rImage, sal_uInt16 nPos )
 {
 	sal_uInt16 nRealPos = mpImplLB->InsertEntry( nPos + mpImplLB->GetEntryList()->GetMRUCount(), rImage );
 	nRealPos = sal::static_int_cast<sal_uInt16>(nRealPos - mpImplLB->GetEntryList()->GetMRUCount());
-    CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
+	CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
 	return nRealPos;
 }
 
@@ -1101,7 +1101,7 @@ sal_uInt16 ListBox::InsertEntry( const XubString& rStr, const Image& rImage, sal
 {
 	sal_uInt16 nRealPos = mpImplLB->InsertEntry( nPos + mpImplLB->GetEntryList()->GetMRUCount(), rStr, rImage );
 	nRealPos = sal::static_int_cast<sal_uInt16>(nRealPos - mpImplLB->GetEntryList()->GetMRUCount());
-    CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
+	CallEventListeners( VCLEVENT_LISTBOX_ITEMADDED, (void*) sal_IntPtr(nRealPos) );
 	return nRealPos;
 }
 
@@ -1117,16 +1117,16 @@ void ListBox::RemoveEntry( const XubString& rStr )
 void ListBox::RemoveEntry( sal_uInt16 nPos )
 {
 	mpImplLB->RemoveEntry( nPos + mpImplLB->GetEntryList()->GetMRUCount() );
-    CallEventListeners( VCLEVENT_LISTBOX_ITEMREMOVED, (void*) sal_IntPtr(nPos) );
+	CallEventListeners( VCLEVENT_LISTBOX_ITEMREMOVED, (void*) sal_IntPtr(nPos) );
 }
 
 // -----------------------------------------------------------------------
 
 Image ListBox::GetEntryImage( sal_uInt16 nPos ) const
 {
-    if ( mpImplLB->GetEntryList()->HasEntryImage( nPos ) )
-        return mpImplLB->GetEntryList()->GetEntryImage( nPos );
-    return Image();
+	if ( mpImplLB->GetEntryList()->HasEntryImage( nPos ) )
+		return mpImplLB->GetEntryList()->GetEntryImage( nPos );
+	return Image();
 }
 
 // -----------------------------------------------------------------------
@@ -1289,14 +1289,14 @@ sal_uInt16 ListBox::GetTopEntry() const
 
 void ListBox::SetProminentEntryType( ProminentEntry eType )
 {
-    mpImplLB->SetProminentEntryType( eType );
+	mpImplLB->SetProminentEntryType( eType );
 }
 
 // -----------------------------------------------------------------------
 
 ProminentEntry ListBox::GetProminentEntryType() const
 {
-    return mpImplLB->GetProminentEntryType();
+	return mpImplLB->GetProminentEntryType();
 }
 
 // -----------------------------------------------------------------------
@@ -1322,10 +1322,10 @@ long ListBox::CalcWindowSizePixel( sal_uInt16 nLines ) const
 
 Rectangle ListBox::GetBoundingRectangle( sal_uInt16 nItem ) const
 {
-    Rectangle aRect = mpImplLB->GetMainWindow()->GetBoundingRectangle( nItem );
-    Rectangle aOffset = mpImplLB->GetMainWindow()->GetWindowExtentsRelative( (Window*)this );
-    aRect.Move( aOffset.TopLeft().X(), aOffset.TopLeft().Y() );
-    return aRect;
+	Rectangle aRect = mpImplLB->GetMainWindow()->GetBoundingRectangle( nItem );
+	Rectangle aOffset = mpImplLB->GetMainWindow()->GetWindowExtentsRelative( (Window*)this );
+	aRect.Move( aOffset.TopLeft().X(), aOffset.TopLeft().Y() );
+	return aRect;
 }
 
 // -----------------------------------------------------------------------
@@ -1340,8 +1340,8 @@ void ListBox::EnableMultiSelection( sal_Bool bMulti, sal_Bool bStackSelection )
 	mpImplLB->EnableMultiSelection( bMulti, bStackSelection );
 
 	// WB_SIMPLEMODE:
-	// Die MultiListBox verh�lt sich wie eine normale ListBox.
-	// Die Mehrfachselektion kann nur �ber entsprechende Zusatztasten erfolgen.
+	// Die MultiListBox verhält sich wie eine normale ListBox.
+	// Die Mehrfachselektion kann nur über entsprechende Zusatztasten erfolgen.
 
 	sal_Bool bSimpleMode = ( GetStyle() & WB_SIMPLEMODE ) ? sal_True : sal_False;
 	mpImplLB->SetMultiSelectionSimpleMode( bSimpleMode );
@@ -1364,49 +1364,49 @@ Size ListBox::CalcMinimumSize() const
 {
 	Size aSz;
 	if ( !IsDropDownBox() )
-        aSz = mpImplLB->CalcSize (mnLineCount ? mnLineCount : mpImplLB->GetEntryList()->GetEntryCount());
+		aSz = mpImplLB->CalcSize (mnLineCount ? mnLineCount : mpImplLB->GetEntryList()->GetEntryCount());
 	else
 	{
 		aSz.Height() = mpImplLB->CalcSize( 1 ).Height();
 		aSz.Height() += 4; // add a space between entry and border
-        // size to maxmimum entry width and add a little breathing space
+		// size to maximum entry width and add a little breathing space
 		aSz.Width() = mpImplLB->GetMaxEntryWidth() + 4;
-        // do not create ultrathin ListBoxes, it doesn't look good
-        if( aSz.Width() < GetSettings().GetStyleSettings().GetScrollBarSize() )
-            aSz.Width() = GetSettings().GetStyleSettings().GetScrollBarSize();
+		// do not create ultrathin ListBoxes, it doesn't look good
+		if( aSz.Width() < GetSettings().GetStyleSettings().GetScrollBarSize() )
+			aSz.Width() = GetSettings().GetStyleSettings().GetScrollBarSize();
 
-        // try native borders; scrollbar size may not be a good indicator
-        // see how large the edit area inside is to estimate what is needed for the dropdown
+		// try native borders; scrollbar size may not be a good indicator
+		// see how large the edit area inside is to estimate what is needed for the dropdown
 		ImplControlValue aControlValue;
 		Point aPoint;
 		Rectangle aContent, aBound;
-        Size aTestSize( 100, 20 );
+		Size aTestSize( 100, 20 );
 		Rectangle aArea( aPoint, aTestSize );
-        if( const_cast<ListBox*>(this)->GetNativeControlRegion(
-                       CTRL_LISTBOX, PART_SUB_EDIT, aArea, 0, aControlValue, rtl::OUString(), aBound, aContent) )
-        {
-            // use the themes drop down size
-            aSz.Width() += aTestSize.Width() - aContent.GetWidth();
-        }
-        else
-            aSz.Width() += GetSettings().GetStyleSettings().GetScrollBarSize();
+		if( const_cast<ListBox*>(this)->GetNativeControlRegion(
+					   CTRL_LISTBOX, PART_SUB_EDIT, aArea, 0, aControlValue, rtl::OUString(), aBound, aContent) )
+		{
+			// use the themes drop down size
+			aSz.Width() += aTestSize.Width() - aContent.GetWidth();
+		}
+		else
+			aSz.Width() += GetSettings().GetStyleSettings().GetScrollBarSize();
 	}
 
 	aSz = CalcWindowSize( aSz );
-    
+
 	if ( IsDropDownBox() ) // check minimum height of dropdown box
-    {
-        ImplControlValue aControlValue;
-        Rectangle aRect( Point( 0, 0 ), aSz );
-        Rectangle aContent, aBound;
-        if( const_cast<ListBox*>(this)->GetNativeControlRegion(
-                       CTRL_LISTBOX, PART_ENTIRE_CONTROL, aRect, 0, aControlValue, rtl::OUString(), aBound, aContent) )
-        {
-            if( aBound.GetHeight() > aSz.Height() )
-                aSz.Height() = aBound.GetHeight();
-        }
-    }
-    
+	{
+		ImplControlValue aControlValue;
+		Rectangle aRect( Point( 0, 0 ), aSz );
+		Rectangle aContent, aBound;
+		if( const_cast<ListBox*>(this)->GetNativeControlRegion(
+					   CTRL_LISTBOX, PART_ENTIRE_CONTROL, aRect, 0, aControlValue, rtl::OUString(), aBound, aContent) )
+		{
+			if( aBound.GetHeight() > aSz.Height() )
+				aSz.Height() = aBound.GetHeight();
+		}
+	}
+
 	return aSz;
 }
 
@@ -1414,12 +1414,12 @@ Size ListBox::CalcMinimumSize() const
 
 Size ListBox::GetOptimalSize(WindowSizeType eType) const
 {
-    switch (eType) {
-    case WINDOWSIZE_MINIMUM:
-        return CalcMinimumSize();
-    default:
-        return Control::GetOptimalSize( eType );
-    }
+	switch (eType) {
+	case WINDOWSIZE_MINIMUM:
+		return CalcMinimumSize();
+	default:
+		return Control::GetOptimalSize( eType );
+	}
 }
 
 // -----------------------------------------------------------------------
@@ -1458,7 +1458,7 @@ Size ListBox::CalcSize( sal_uInt16 nColumns, sal_uInt16 nLines ) const
 
 	Size aSz;
 
-	// Hoehe
+	// Height
 	if ( nLines )
 	{
 		if ( !IsDropDownBox() )
@@ -1469,7 +1469,7 @@ Size ListBox::CalcSize( sal_uInt16 nColumns, sal_uInt16 nLines ) const
 	else
 		aSz.Height() = aMinSz.Height();
 
-	// Breite
+	// Width
 	if ( nColumns )
 		aSz.Width() = nColumns * GetTextWidth( XubString( 'X' ) );
 	else
@@ -1640,7 +1640,7 @@ sal_uInt16 ListBox::GetMRUCount() const
 
 sal_uInt16 ListBox::GetDisplayLineCount() const
 {
-    return mpImplLB->GetDisplayLineCount();
+	return mpImplLB->GetDisplayLineCount();
 }
 
 // -----------------------------------------------------------------------
@@ -1649,54 +1649,54 @@ sal_uInt16 ListBox::GetDisplayLineCount() const
 
 void ListBox::EnableMirroring()
 {
-    mpImplLB->EnableMirroring();
+	mpImplLB->EnableMirroring();
 }
 
 // -----------------------------------------------------------------------
 
 Rectangle ListBox::GetDropDownPosSizePixel() const
 {
-    return mpFloatWin ? mpFloatWin->GetWindowExtentsRelative( const_cast<ListBox*>(this) ) : Rectangle();
+	return mpFloatWin ? mpFloatWin->GetWindowExtentsRelative( const_cast<ListBox*>(this) ) : Rectangle();
 }
 
 // -----------------------------------------------------------------------
 
 const Wallpaper& ListBox::GetDisplayBackground() const
 {
-    // !!! recursion does not occur because the ImplListBox is default
-    // initialized to a nontransparent color in Window::ImplInitData
-    return mpImplLB->GetDisplayBackground();
+	// !!! recursion does not occur because the ImplListBox is default
+	// initialized to a nontransparent color in Window::ImplInitData
+	return mpImplLB->GetDisplayBackground();
 }
 
 // -----------------------------------------------------------------------
 
 void ListBox::SetEdgeBlending(bool bNew)
 {
-    if(mbEdgeBlending != bNew)
-    {
-        mbEdgeBlending = bNew;
+	if(mbEdgeBlending != bNew)
+	{
+		mbEdgeBlending = bNew;
 
-        if(IsDropDownBox())
-        {
-            mpImplWin->Invalidate();
-        }
-        else
-        {
-            mpImplLB->Invalidate();
-        }
+		if(IsDropDownBox())
+		{
+			mpImplWin->Invalidate();
+		}
+		else
+		{
+			mpImplLB->Invalidate();
+		}
 
-        if(mpImplWin)
-        {
-            mpImplWin->SetEdgeBlending(GetEdgeBlending());
-        }
+		if(mpImplWin)
+		{
+			mpImplWin->SetEdgeBlending(GetEdgeBlending());
+		}
 
-        if(mpImplLB)
-        {
-            mpImplLB->SetEdgeBlending(GetEdgeBlending());
-        }
+		if(mpImplLB)
+		{
+			mpImplLB->SetEdgeBlending(GetEdgeBlending());
+		}
 
-        Invalidate();
-    }
+		Invalidate();
+	}
 }
 
 // =======================================================================

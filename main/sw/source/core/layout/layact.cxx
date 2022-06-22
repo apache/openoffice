@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -149,7 +149,7 @@ static void BreakPoint()
 
 #define RESCHEDULE \
 	{ \
-		if ( IsReschedule() )  \
+		if ( IsReschedule() ) \
         { \
             if (pProgress) pProgress->Reschedule(); \
 			::RescheduleProgress( pImp->GetShell()->GetDoc()->GetDocShell() ); \
@@ -839,7 +839,7 @@ void SwLayAction::InternalAction()
 		//Wenn ein Input anliegt wollen wir keinen Inhalt mehr Formatieren,
 		//Das Layout muessen wir aber schon in Ordnung bringen.
 		//Andernfalls kann folgende Situation auftreten (Bug: 3244):
-		//Am Ende des Absatz der letzten Seite wird Text eingegeben, so das
+		//Am Ende des Absatz der letzten Seite wird Text eingegeben, so dass
 		//der Absatz einen Follow fuer die nachste Seite erzeugt, ausserdem
 		//wird gleich schnell weitergetippt - Es liegt waehrend der
 		//Verarbeitung ein Input an. Der Absatz auf der neuen Seite wurde
@@ -1223,17 +1223,17 @@ sal_Bool SwLayAction::IsShortCut( SwPageFrm *&prPage )
 	{
 		bRet = sal_True;
 
-		//Jetzt wird es ein bischen unangenehm: Der erste CntntFrm dieser Seite
-		//im Bodytext muss Formatiert werden, wenn er dabei die Seite
+		//Jetzt wird es ein bisschen unangenehm: Der erste CntntFrm dieser Seite
+		//im Bodytext muss formatiert werden, wenn er dabei die Seite
 		//wechselt, muss ich nochmal eine Seite zuvor anfangen, denn
 		//es wurde ein PageBreak verarbeitet.
 //Noch unangenehmer: Der naechste CntntFrm ueberhaupt muss
-		//Formatiert werden, denn es kann passieren, dass kurzfristig
+		//formatiert werden, denn es kann passieren, dass kurzfristig
 		//leere Seiten existieren (Bsp. Absatz ueber mehrere Seiten
 		//wird geloescht oder verkleinert).
 
 		//Ist fuer den Browser uninteressant, wenn der letzte Cnt davor bereits
-		//nicht mehr sichbar ist.
+		//nicht mehr sichtbar ist.
 
 		const SwPageFrm *p2ndPage = prPage;
 		const SwCntntFrm *pCntnt;
@@ -1450,15 +1450,13 @@ sal_Bool SwLayAction::FormatLayout( SwLayoutFrm *pLay, sal_Bool bAddRect )
 		if ( !bNoPaint && IsPaint() && bAddRect && (pLay->IsCompletePaint() || bChanged) )
 		{
 			SwRect aPaint( pLay->Frm() );
-            // OD 13.02.2003 #i9719#, #105645# - consider border and shadow for
+            // OD 13.02.2003 #i9719#, #105645# - consider border (shadow removed now) for
             // page frames -> enlarge paint rectangle correspondingly.
             if ( pLay->IsPageFrm() )
             {
                 SwPageFrm* pPageFrm = static_cast<SwPageFrm*>(pLay);
                 const int nBorderWidth =
                         pImp->GetShell()->GetOut()->PixelToLogic( Size( pPageFrm->BorderPxWidth(), 0 ) ).Width();
-                const int nShadowWidth =
-                        pImp->GetShell()->GetOut()->PixelToLogic( Size( pPageFrm->ShadowPxWidth(), 0 ) ).Width();
 
 				//mod #i6193# added sidebar width
                 const SwPostItMgr* pPostItMgr = pImp->GetShell()->GetPostItMgr();
@@ -1468,13 +1466,13 @@ sal_Bool SwLayAction::FormatLayout( SwLayoutFrm *pLay, sal_Bool bAddRect )
                     case sw::sidebarwindows::SIDEBAR_LEFT:
                     {
                         aPaint.Left( aPaint.Left() - nBorderWidth - nSidebarWidth);
-                        aPaint.Right( aPaint.Right() + nBorderWidth + nShadowWidth);
+                        aPaint.Right( aPaint.Right() + nBorderWidth );
                     }
                     break;
                     case sw::sidebarwindows::SIDEBAR_RIGHT:
                     {
                         aPaint.Left( aPaint.Left() - nBorderWidth );
-                        aPaint.Right( aPaint.Right() + nBorderWidth + nShadowWidth + nSidebarWidth);
+                        aPaint.Right( aPaint.Right() + nBorderWidth + nSidebarWidth);
                     }
                     break;
                     case sw::sidebarwindows::SIDEBAR_NONE:
@@ -1482,7 +1480,7 @@ sal_Bool SwLayAction::FormatLayout( SwLayoutFrm *pLay, sal_Bool bAddRect )
                     break;
                 }
 				aPaint.Top( aPaint.Top() - nBorderWidth );
-				aPaint.Bottom( aPaint.Bottom() + nBorderWidth + nShadowWidth);
+				aPaint.Bottom( aPaint.Bottom() + nBorderWidth );
             }
 
             sal_Bool bPageInBrowseMode = pLay->IsPageFrm();
@@ -1815,7 +1813,7 @@ sal_Bool SwLayAction::FormatLayoutTab( SwTabFrm *pTab, sal_Bool bAddRect )
 	if ( IsAgain() )
 		return sal_False;
 
-    // OD 20.10.2003 #112464# - for savety reasons:
+    // OD 20.10.2003 #112464# - for safety reasons:
     // check page number before formatting lowers.
     if ( pOldPage->GetPhyPageNum() > (pTab->FindPageFrm()->GetPhyPageNum() + 1) )
         SetNextCycle( sal_True );
@@ -1920,7 +1918,7 @@ sal_Bool SwLayAction::FormatCntnt( const SwPageFrm *pPage )
 			if ( pOldUpper != pCntnt->GetUpper() )
 			{
 				const sal_uInt16 nCurNum = pCntnt->FindPageFrm()->GetPhyPageNum();
-				if (  nCurNum < pPage->GetPhyPageNum() )
+				if ( nCurNum < pPage->GetPhyPageNum() )
 					nPreInvaPage = nCurNum;
 
 				//Wenn der Frm mehr als eine Seite rueckwaerts geflossen ist, so
@@ -2619,4 +2617,3 @@ SwLayIdle::~SwLayIdle()
 {
 	pImp->pIdleAct = 0;
 }
-

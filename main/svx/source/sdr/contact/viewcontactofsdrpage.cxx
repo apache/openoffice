@@ -131,7 +131,7 @@ namespace sdr
 
 		drawinglayer::primitive2d::Primitive2DSequence ViewContactOfPageShadow::createViewIndependentPrimitive2DSequence() const
 		{
-			static bool bUseOldPageShadow(false);
+			static bool bUseOldPageShadow(true);
 			const SdrPage& rPage = getPage();
 			basegfx::B2DHomMatrix aPageMatrix;
 			aPageMatrix.set(0, 0, (double)rPage.GetWdt());
@@ -140,16 +140,16 @@ namespace sdr
 			if(bUseOldPageShadow)
 			{
 				// create page shadow polygon
-				const double fPageBorderFactor(1.0 / 256.0);
+//				const double fPageBorderFactor(1.0 / 256.0);
 				basegfx::B2DPolygon aPageShadowPolygon;
-				aPageShadowPolygon.append(basegfx::B2DPoint(1.0, fPageBorderFactor));
-				aPageShadowPolygon.append(basegfx::B2DPoint(1.0 + fPageBorderFactor, fPageBorderFactor));
-				aPageShadowPolygon.append(basegfx::B2DPoint(1.0 + fPageBorderFactor, 1.0 + fPageBorderFactor));
-				aPageShadowPolygon.append(basegfx::B2DPoint(fPageBorderFactor, 1.0 + fPageBorderFactor));
-				aPageShadowPolygon.append(basegfx::B2DPoint(fPageBorderFactor, 1.0));
-				aPageShadowPolygon.append(basegfx::B2DPoint(1.0, 1.0));
-				aPageShadowPolygon.setClosed(true);
-				aPageShadowPolygon.transform(aPageMatrix);
+//				aPageShadowPolygon.append(basegfx::B2DPoint(1.0, fPageBorderFactor));
+//				aPageShadowPolygon.append(basegfx::B2DPoint(1.0 + fPageBorderFactor, fPageBorderFactor));
+//				aPageShadowPolygon.append(basegfx::B2DPoint(1.0 + fPageBorderFactor, 1.0 + fPageBorderFactor));
+//				aPageShadowPolygon.append(basegfx::B2DPoint(fPageBorderFactor, 1.0 + fPageBorderFactor));
+//				aPageShadowPolygon.append(basegfx::B2DPoint(fPageBorderFactor, 1.0));
+//				aPageShadowPolygon.append(basegfx::B2DPoint(1.0, 1.0));
+//				aPageShadowPolygon.setClosed(true);
+//				aPageShadowPolygon.transform(aPageMatrix);
 
 				// We have only the page information, not the view information. Use the
 				// svtools::FONTCOLOR color for initialization

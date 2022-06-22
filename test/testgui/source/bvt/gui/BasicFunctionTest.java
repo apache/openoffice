@@ -329,7 +329,7 @@ public class BasicFunctionTest {
 		findDlg.close();
 		sleep(1);
 		assertEquals(
-				"Apache OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. OpenOffice is released on Windows, Solaris, Linux and Macintosh operating systems, with more communities joining, including a mature FreeBSD port. OpenOffice is localized, supporting over 110 languages worldwide. ",
+				"Apache Awesome OpenOffice is comprised of six personal productivity applications: a word processor (and its web-authoring component), spreadsheet, presentation graphics, drawing, equation editor, and database. Awesome OpenOffice is released on Windows, Solaris, Linux and Macintosh operation systems, with more communities joining, including a mature FreeBSD port. Awesome OpenOffice is localized, supporting over 110 languages worldwide. ",
 				copyAll());
 		discard();
 	}

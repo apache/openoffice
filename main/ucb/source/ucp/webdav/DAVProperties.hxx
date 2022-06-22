@@ -24,7 +24,7 @@
 #define _DAVPROPERTIES_HXX_
 
 #include <rtl/ustring.hxx>
-#include "SerfTypes.hxx"
+#include "CurlTypes.hxx"
 
 namespace http_dav_ucp
 {
@@ -43,13 +43,13 @@ struct DAVProperties
 	static const ::rtl::OUString SUPPORTEDLOCK;
 	static const ::rtl::OUString EXECUTABLE;
 
-	static void createSerfPropName( const rtl::OUString & rFullName,
-									SerfPropName & rName );
+	static void createCurlPropName( const rtl::OUString & rFullName,
+									CurlPropName & rName );
 	static void createUCBPropName ( const char * nspace,
 									const char * name,
 									rtl::OUString & rFullName );
 
-	static bool isUCBDeadProperty( const SerfPropName & rName );
+	static bool isUCBDeadProperty( const CurlPropName & rName );
     static bool isUCBSpecialProperty( const rtl::OUString & rFullName,
                                       rtl::OUString & rParsedName );
 };

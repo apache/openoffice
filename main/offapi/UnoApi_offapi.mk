@@ -91,6 +91,7 @@ $(eval $(call gb_UnoApiTarget_add_idlfiles_nohdl,offapi,\
 	offapi/com/sun/star/logging/LoggerPool \
 	offapi/com/sun/star/logging/PlainTextFormatter \
 	offapi/com/sun/star/logging/SimpleLogRing \
+	offapi/com/sun/star/logging/SyslogHandler \
 	offapi/com/sun/star/mail/MailMessage \
 	offapi/com/sun/star/mail/MailServiceProvider \
 	offapi/com/sun/star/media/Manager \
