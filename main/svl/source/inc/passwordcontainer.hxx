@@ -249,6 +249,8 @@ private:
     StorageItem* m_pStorageFile;
     ::osl::Mutex mMutex;
     ::rtl::OUString m_aMasterPasswd; // master password is set when the string is not empty
+    /// True if we detected the older password encoding (pre-4.1.13)
+    bool mOldPasswordEncoding;
     ::com::sun::star::uno::Reference< ::com::sun::star::lang::XComponent > mComponent;
     SysCredentialsConfig mUrlContainer;
 
@@ -268,7 +270,7 @@ private:
                                         const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& Handler )
                                                         throw(::com::sun::star::uno::RuntimeException);
 bool createUrlRecord( 
-    const PassMap::iterator & rIter, 
+    const PairUrlRecord & rPair,
     bool bName,
     const ::rtl::OUString & aName,
     const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& aHandler,
@@ -300,12 +302,39 @@ bool createUrlRecord(
                               const ::com::sun::star::uno::Reference< ::com::sun::star::task::XInteractionHandler >& Handler )
                                                         throw(::com::sun::star::uno::RuntimeException);
 
-    ::std::vector< ::rtl::OUString > DecodePasswords( const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPassword )
+    /** Decode passwords on a line with the given master password.
+     *
+     * @param aName name for the passwords. It can be a user name, for example.
+     * @param aLine line with passwords to decode.
+     * @param aMasterPassword master password to use.
+     *
+     * The encoding is selected by mOldPasswordEncoding.
+     *
+     * @return the decoded passwords.
+     */
+    ::std::vector< ::rtl::OUString > DecodePasswords( const ::rtl::OUString& aName, const ::rtl::OUString& aLine, const ::rtl::OUString& aMasterPassword )
                                                         throw(::com::sun::star::uno::RuntimeException);
     
-    ::rtl::OUString EncodePasswords( ::std::vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPassword )
+    /** Encode passwords on a line with the given master password.
+     *
+     * @param aName name for the passwords. It can be a user name, for example.
+     * @param lines lines with passwords to decode.
+     * @param aMasterPassword master password to use.
+     *
+     * The encoding is selected by mOldPasswordEncoding.
+     *
+     * @return the decoded passwords.
+     */
+    ::rtl::OUString EncodePasswords( const ::rtl::OUString& aName, ::std::vector< ::rtl::OUString > lines, const ::rtl::OUString& aMasterPassword )
                                                         throw(::com::sun::star::uno::RuntimeException);
-    
+
+    /** Actually change the master password, re-encoding all stored passwords.
+     *
+     * @param apass new password to set.
+     *
+     * Updates m_aMasterPasswd.
+     */
+    void doChangeMasterPassword(const ::rtl::OUString& aPass);
 public:
     PasswordContainer( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& );
     ~PasswordContainer();

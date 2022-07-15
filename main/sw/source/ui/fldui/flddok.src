@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,52 +29,52 @@ TabPage TP_FLD_DOK
 	HelpID = HID_FLD_DOK ;
 	SVLook = TRUE ;
 	Hide = TRUE ;
-	Size = MAP_APPFONT ( 260 , 185 ) ;
+	Size = MAP_APPFONT ( 260, 185 ) ;
 	FixedText FT_DOKTYPE
 	{
-		Pos = MAP_APPFONT ( 6 , 3 ) ;
-		Size = MAP_APPFONT ( 76 , 8 ) ;
+		Pos = MAP_APPFONT ( 6, 3 ) ;
+		Size = MAP_APPFONT ( 76, 8 ) ;
 		Text [ en-US ] = "~Type" ;
 		Left = TRUE ;
 	};
 	ListBox LB_DOKTYPE
 	{
-	    HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKTYPE";
+		HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKTYPE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 14 ) ;
-		Size = MAP_APPFONT ( 76 , 165 ) ;
+		Pos = MAP_APPFONT ( 6, 14 ) ;
+		Size = MAP_APPFONT ( 76, 165 ) ;
 		TabStop = TRUE ;
 		Sort = TRUE ;
 		AutoHScroll = TRUE ;
 	};
 	FixedText FT_DOKSELECTION
 	{
-		Pos = MAP_APPFONT ( 88 , 3 ) ;
-		Size = MAP_APPFONT ( 76 , 8 ) ;
+		Pos = MAP_APPFONT ( 88, 3 ) ;
+		Size = MAP_APPFONT ( 76, 8 ) ;
 		Text [ en-US ] = "S~elect" ;
 		Left = TRUE ;
 	};
 	ListBox LB_DOKSELECTION
 	{
-	    HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKSELECTION";
+		HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKSELECTION" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 88 , 15 ) ;
-		Size = MAP_APPFONT ( 76 , 165 ) ;
+		Pos = MAP_APPFONT ( 88, 15 ) ;
+		Size = MAP_APPFONT ( 76, 165 ) ;
 		TabStop = TRUE ;
 	};
 	FixedText FT_DOKFORMAT
 	{
-		Pos = MAP_APPFONT ( 170 , 3 ) ;
-		Size = MAP_APPFONT ( 84 , 8 ) ;
+		Pos = MAP_APPFONT ( 170, 3 ) ;
+		Size = MAP_APPFONT ( 84, 8 ) ;
 		Left = TRUE ;
 		Text [ en-US ] = "F~ormat" ;
 	};
 	ListBox LB_DOKFORMAT
 	{
-	    HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKFORMAT";
+		HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKFORMAT" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 170 , 14 ) ;
-		Size = MAP_APPFONT ( 84 , 151 ) ;
+		Pos = MAP_APPFONT ( 170, 14 ) ;
+		Size = MAP_APPFONT ( 84, 151 ) ;
 		TabStop = TRUE ;
 		DropDown = FALSE ;
 		Sort = TRUE ;
@@ -82,38 +82,38 @@ TabPage TP_FLD_DOK
 	};
 	ListBox LB_DOKNUMFORMAT
 	{
-	    HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKNUMFORMAT";
+		HelpID = "sw:ListBox:TP_FLD_DOK:LB_DOKNUMFORMAT" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 170 , 14 ) ;
-		Size = MAP_APPFONT ( 84 , 151 ) ;
+		Pos = MAP_APPFONT ( 170, 14 ) ;
+		Size = MAP_APPFONT ( 84, 151 ) ;
 		TabStop = TRUE ;
 		AutoHScroll = TRUE ;
 		Hide = TRUE ;
 	};
 	FixedText FT_DOKVALUE
 	{
-		Pos = MAP_APPFONT ( 170 , 155 ) ;
-		Size = MAP_APPFONT ( 84 , 8 ) ;
+		Pos = MAP_APPFONT ( 170, 155 ) ;
+		Size = MAP_APPFONT ( 84, 8 ) ;
 		Text [ en-US ] = "O~ffset" ;
 		Left = TRUE ;
 		Hide = TRUE ;
 	};
 	Edit ED_DOKVALUE
 	{
-	    HelpID = "sw:Edit:TP_FLD_DOK:ED_DOKVALUE";
+		HelpID = "sw:Edit:TP_FLD_DOK:ED_DOKVALUE" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 170 , 167 ) ;
-		Size = MAP_APPFONT ( 84 , 12 ) ;
+		Pos = MAP_APPFONT ( 170, 167 ) ;
+		Size = MAP_APPFONT ( 84, 12 ) ;
 		TabStop = TRUE ;
 		Left = TRUE ;
 		Hide = TRUE ;
 	};
 	NumericField ED_DOKLEVEL
 	{
-	    HelpID = "sw:NumericField:TP_FLD_DOK:ED_DOKLEVEL";
+		HelpID = "sw:NumericField:TP_FLD_DOK:ED_DOKLEVEL" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 170 , 167 ) ;
-		Size = MAP_APPFONT ( 84 , 12 ) ;
+		Pos = MAP_APPFONT ( 170, 167 ) ;
+		Size = MAP_APPFONT ( 84, 12 ) ;
 		Text = "1" ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -127,10 +127,10 @@ TabPage TP_FLD_DOK
 	};
 	NumericField ED_DOKDATEOFF
 	{
-	    HelpID = "sw:NumericField:TP_FLD_DOK:ED_DOKDATEOFF";
+		HelpID = "sw:NumericField:TP_FLD_DOK:ED_DOKDATEOFF" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 170 , 167 ) ;
-		Size = MAP_APPFONT ( 84 , 12 ) ;
+		Pos = MAP_APPFONT ( 170, 167 ) ;
+		Size = MAP_APPFONT ( 84, 12 ) ;
 		Text = "0" ;
 		TabStop = TRUE ;
 		Left = TRUE ;
@@ -141,9 +141,9 @@ TabPage TP_FLD_DOK
 	};
 	CheckBox CB_DOKFIXEDCONTENT
 	{
-	    HelpID = "sw:CheckBox:TP_FLD_DOK:CB_DOKFIXEDCONTENT";
-		Pos = MAP_APPFONT ( 170 , 170 ) ;
-		Size = MAP_APPFONT ( 72 , 10 ) ;
+		HelpID = "sw:CheckBox:TP_FLD_DOK:CB_DOKFIXEDCONTENT" ;
+		Pos = MAP_APPFONT ( 170, 170 ) ;
+		Size = MAP_APPFONT ( 72, 10 ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "~Fixed content" ;
 	};
@@ -166,34 +166,4 @@ TabPage TP_FLD_DOK
 	Text [ en-US ] = "Document" ;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ********************************************************************** EOF
