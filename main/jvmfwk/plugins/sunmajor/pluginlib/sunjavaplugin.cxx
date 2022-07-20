@@ -508,16 +508,16 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
     // be encoded with the system encoding (i.e., osl_getThreadTextEncoding):
     JavaVMInitArgs vm_args;
 
-    boost::scoped_array<JavaVMOption> sarOptions(
-        new JavaVMOption[cOptions + 1]);
-    JavaVMOption * options = sarOptions.get();
+    std::vector<JavaVMOption> vecOptions;
+    vecOptions.reserve(cOptions + 1);
     
     // We set an abort handler which is called when the VM calls _exit during
     // JNI_CreateJavaVM. This happens when the LD_LIBRARY_PATH does not contain
     // all some directories of the Java installation. This is necessary for
     // all versions below 1.5.1
-    options[0].optionString= (char *) "abort";
-    options[0].extraInfo= (void* )(sal_IntPtr)abort_handler;
+    vecOptions.push_back(JavaVMOption());
+    vecOptions.back().optionString = (char *) "abort";
+    vecOptions.back().extraInfo = (void* )(sal_IntPtr)abort_handler;
     rtl::OString sClassPathProp("-Djava.class.path=");
     rtl::OString sClassPathOption;
     for (int i = 0; i < cOptions; i++)
@@ -528,25 +528,35 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
         rtl::OString sClassPath = arOptions[i].optionString;
         if (sClassPath.match(sClassPathProp, 0) == sal_True)
         {
+            bool emptyClassPath = (sClassPath == sClassPathProp);
             char sep[] =  {SAL_PATHSEPARATOR, 0};
             OString sAddPath = getPluginJarPath(pInfo->sVendor, pInfo->sLocation,pInfo->sVersion);
-            if (sAddPath.getLength())
-                sClassPathOption = sClassPath + rtl::OString(sep) + sAddPath;
-            else
+            if (sAddPath.getLength()) {
                 sClassPathOption = sClassPath;
-            options[i+1].optionString = (char *) sClassPathOption.getStr();
-            options[i+1].extraInfo = arOptions[i].extraInfo;
+                if (!emptyClassPath) {
+                    sClassPathOption += rtl::OString(sep);
+                }
+                sClassPathOption += sAddPath;
+                emptyClassPath = false;
+            } else
+                sClassPathOption = sClassPath;
+            if (!emptyClassPath) {
+                vecOptions.push_back(JavaVMOption());
+                vecOptions.back().optionString = (char *) sClassPathOption.getStr();
+                vecOptions.back().extraInfo = arOptions[i].extraInfo;
+            } // else avoid empty class path
         }
         else
         {
-#endif        
-            options[i+1].optionString = arOptions[i].optionString;
-            options[i+1].extraInfo = arOptions[i].extraInfo;
+#endif
+            vecOptions.push_back(JavaVMOption());
+            vecOptions.back().optionString = arOptions[i].optionString;
+            vecOptions.back().extraInfo = arOptions[i].extraInfo;
 #ifdef UNX
         }
 #endif
 #if OSL_DEBUG_LEVEL >= 2
-        JFW_TRACE2(OString("VM option: ") + OString(options[i+1].optionString) +
+        JFW_TRACE2(OString("VM option: ") + OString(vecOptions.back().optionString) +
                    OString("\n"));
 #endif
     }
@@ -556,8 +566,8 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
 #else
     vm_args.version= JNI_VERSION_1_2;
 #endif
-    vm_args.options= options;
-    vm_args.nOptions= cOptions + 1;
+    vm_args.options= &vecOptions[0];
+    vm_args.nOptions= vecOptions.size();
     vm_args.ignoreUnrecognized= JNI_TRUE;
 
     /* We set a global flag which is used by the abort handler in order to
