@@ -290,8 +290,11 @@ STDMETHODIMP CXMergeFilter::NextConvertFile(int nConversion, CFF_CONVERTINFO *pc
 
 	
 	// Need to build the entire command line for calling out to Java	
-	appArgs =  appName + " -Djava.class.path=";
-	appArgs += m_szClasspath;
+	appArgs = appName;
+        if (*m_szClasspath) {
+            appArgs += " -Djava.class.path=";
+            appArgs += m_szClasspath;
+        } // else avoid empty class path
 	appArgs += " org.openoffice.xmerge.util.ActiveSyncDriver ";
 
 	if (!lstrcmp(psf->szExtension, "sxw"))
