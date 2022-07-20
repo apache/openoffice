@@ -213,10 +213,8 @@ SfxMenuControl::SfxMenuControl(sal_uInt16 nSlotId, SfxBindings& rBindings):
 {
 	DBG_MEMTEST();
 
-	// Dieser Ctor soll es erm"oglichen, w"ahrend der Konstruktion schon
-	// auf die Bindings zur"uckgreifen zu k"onnen, aber gebunden wird
-	// wie immer erst sp"ater. Anwendung z.B. wenn im ctor der abgeleiteten
-	// Klasse z.B. ein StatusForwarder erzeugt werden soll.
+	// This Ctor should enable the use of bindings during construction. However the binding is done later
+	// Usage i.E.: activate a State forwarding within ctor in a derived class 
 	UnBind();
 }
 
@@ -254,7 +252,7 @@ void SfxMenuControl::StateChanged
 	bool bIsObjMenu =
 				GetId() >= SID_OBJECTMENU0 && GetId() < SID_OBJECTMENU_LAST;
 
-	// enabled/disabled-Flag pauschal korrigieren
+	// blanket fix of enabled/disabled-Flag
 
 #ifdef UNIX
 	if (nSID == SID_PASTE)
@@ -267,27 +265,23 @@ void SfxMenuControl::StateChanged
 
 	if ( eState != SFX_ITEM_AVAILABLE )
 	{
-		// checken nur bei nicht-Object-Menus
+		// checkon none obect menus
 		if ( !bIsObjMenu )
 			pOwnMenu->CheckItem( GetId(), sal_False );
 
-		// SetItemText flackert in MenuBar insbes. unter OS/2 (Bug #20658)
-		if ( // !bIsObjMenu && nicht wegen "Format/Datenbank"
+		// SetItemText flickers in MenuBar especcially on OS/2 (Bug #20658)
+		if ( // !bIsObjMenu && not because of "Format/Datbase"
 			 pOwnMenu->GetSVMenu()->GetItemText( GetId() ) != GetTitle() )
         {
 			 DBG_WARNING("Title of menu item changed - please check if this needs correction!");
-			// pOwnMenu->SetItemText( GetId(), GetTitle() );
         }
 		return;
 	}
 
-	// ggf. das alte Enum-Menu entfernen/loeschen
-	//! delete pOwnMenu->GetMenu().ChangePopupMenu( GetId(), 0 );
-
 	bool bCheck = false;
 	if ( pState->ISA(SfxBoolItem) )
 	{
-		// BoolItem fuer checken
+		// check BoolItem
 		DBG_ASSERT( GetId() < SID_OBJECTMENU0 || GetId() > SID_OBJECTMENU_LAST,
 					"SfxBoolItem not allowed for SID_OBJECTMENUx" );
 		bCheck = ((const SfxBoolItem*)pState)->GetValue();
@@ -297,7 +291,7 @@ void SfxMenuControl::StateChanged
 	else if ( pState->ISA(SfxEnumItemInterface) &&
 			  ((SfxEnumItemInterface *)pState)->HasBoolValue() )
 	{
-		// EnumItem wie Bool behandeln
+		// treat EnumItem as Bool
 		DBG_ASSERT( GetId() < SID_OBJECTMENU0 || GetId() > SID_OBJECTMENU_LAST,
 					"SfxEnumItem not allowed for SID_OBJECTMENUx" );
 		bCheck = ((SfxEnumItemInterface *)pState)->GetBoolValue();
@@ -306,7 +300,7 @@ void SfxMenuControl::StateChanged
 	}
 	else if ( ( b_ShowStrings || bIsObjMenu ) && pState->ISA(SfxStringItem) )
 	{
-		// MenuText aus SfxStringItem holen
+		// get MenuText from SfxStringItem
 		String aStr( ((const SfxStringItem*)pState)->GetValue() );
 		if ( aStr.CompareToAscii("($1)",4) == COMPARE_EQUAL )
 		{
