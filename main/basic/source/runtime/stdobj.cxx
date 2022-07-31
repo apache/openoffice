@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -40,8 +40,8 @@
 #define _TYPEMASK   0xF000  // Maske fuer den Typ des Eintrags
 
 #define _READ       0x0100  // kann gelesen werden
-#define _BWRITE     0x0200  // kann as Lvalue verwendet werden
-#define _LVALUE     _BWRITE // kann as Lvalue verwendet werden
+#define _BWRITE     0x0200  // kann als Lvalue verwendet werden
+#define _LVALUE     _BWRITE // kann als Lvalue verwendet werden
 #define _READWRITE  0x0300  // beides
 #define _OPT        0x0400  // Parameter ist optional
 #define	_CONST		0x0800	// Property ist const
@@ -522,6 +522,7 @@ static Methods aMethods[] = {
   { "Expression",   SbxVARIANT, 0,NULL,0 },
   { "Value",        SbxVARIANT, 0,NULL,0 },
 { "Tab",          	SbxSTRING,      1 | _FUNCTION, RTLNAME(Tab),0           },
+  { "Count",        SbxLONG, 0,NULL,0 },
 { "Tan",            SbxDOUBLE,    1 | _FUNCTION, RTLNAME(Tan),0             },
   { "number",       SbxDOUBLE, 0,NULL,0 },
 { "Time",           SbxVARIANT,       _LFUNCTION,RTLNAME(Time),0            },
@@ -723,7 +724,7 @@ SbxVariable* SbiStdObject::Find( const String& rName, SbxClassType t )
 	return pVar;
 }
 
-// SetModified muﬂ bei der RTL abgklemmt werden
+// SetModified muss bei der RTL abgeklemmt werden
 void SbiStdObject::SetModified( sal_Bool )
 {
 }
@@ -769,7 +770,7 @@ void SbiStdObject::SFX_NOTIFY( SfxBroadcaster& rBC, const TypeId& rBCType,
 }
 
 // Zusammenbau der Infostruktur fuer einzelne Elemente
-// Falls nIdx = 0, nix erzeugen (sind Std-Props!)
+// Falls nIdx = 0, nichts erzeugen (sind Std-Props!)
 
 SbxInfo* SbiStdObject::GetInfo( short nIdx )
 {
