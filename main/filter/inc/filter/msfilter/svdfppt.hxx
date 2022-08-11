@@ -1150,7 +1150,7 @@ class PPTConvertOCXControls : public SvxMSConvertOCXControls
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Powerpoint Recordtypen
+// PowerPoint Recordtypen
 #define PPT_PST_Unknown							0
 #define PPT_PST_SubContainerCompleted			1
 #define PPT_PST_IRRAtom							2

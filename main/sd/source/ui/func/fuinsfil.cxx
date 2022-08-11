@@ -174,7 +174,7 @@ void FuInsertFile::DoExecute( SfxRequest& rReq )
 				if( pFilter )
 					xFilterManager->appendFilter( pFilter->GetUIName(), pFilter->GetDefaultExtension() );
 
-                // get Powerpoint filter
+                // get PowerPoint filter
                 aExt = UniString::CreateFromAscii( RTL_CONSTASCII_STRINGPARAM( ".ppt" ) );
 				pFilter = aMatch.GetFilter4Extension( aExt );
 				if( pFilter )

@@ -18,7 +18,7 @@
 '  under the License.
 '
 '*************************************************************************
-'### Support Module for running macros in Word. Excel and Powerpoint
+'### Support Module for running macros in Word. Excel and PowerPoint
 '### using automation
 
 CONST CDA_TITLE = "Document Analysis Run Macro"
@@ -26,7 +26,7 @@ CONST CDA_ANALYSIS_INI = "analysis.ini"
 Const CDA_ERR_STD_DELAY = 10
 Const CDA_APPNAME_WORD = "Word"
 Const CDA_APPNAME_EXCEL = "Excel"
-Const CDA_APPNAME_POWERPOINT = "Powerpoint"
+Const CDA_APPNAME_POWERPOINT = "PowerPoint"
 
 Dim daWrd 
 Dim daDoc 
