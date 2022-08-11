@@ -276,7 +276,7 @@ Size PptDocumentAtom::GetPageSize(const Size& rSiz) const
     Size aRet;
     switch ( eSlidesPageFormat )
 	{
-        // Wenn man in Powerpoint als Seitenformat "Bildschirmgroesse"
+        // Wenn man in PowerPoint als Seitenformat "Bildschirmgroesse"
         // einstellt, dann zeigt dieser Dialog zwar 24x18cm an, die
         // angezeigte Seite ist aber anders. Das sieht man, wenn man
         // ein Rechteck seitenfuellend aufzieht und sich dessen Groesse
