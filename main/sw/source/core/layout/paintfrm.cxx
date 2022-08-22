@@ -5476,7 +5476,7 @@ const sal_Int8 SwPageFrm::mnShadowPxWidth = 2;
 //IMPORTANT: if you change the rects here, also change SwPostItMgr::ScrollbarHit
 /*static*/void SwPageFrm::PaintNotesSidebar(const SwRect& _rPageRect, ViewShell* _pViewShell, sal_uInt16 nPageNum, bool bRight)
 {
-	//TOOD: cut out scrollbar area and arrows out of sidepane rect, otherwise it could flicker when pressing arrow buttons
+	//TODO: cut out scrollbar area and arrows out of sidepane rect, otherwise it could flicker when pressing arrow buttons
     if (!_pViewShell )
         return;
 
