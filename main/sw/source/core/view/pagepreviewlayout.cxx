@@ -1149,7 +1149,7 @@ bool SwPagePreviewLayout::Paint( const Rectangle _aOutRect ) const
                 pOutputDev->SetFont( aOldFont );
                 // paint border for empty page (shadow removed now)
                 // OD 19.02.2003 #107369# - use new method to paint page border
-                SwPageFrm::PaintBorderAndShadow( aPageRect, &mrParentViewShell, true );
+                SwPageFrm::PaintPageBorder( aPageRect, &mrParentViewShell, true );
             }
             else
             {
@@ -1164,7 +1164,7 @@ bool SwPagePreviewLayout::Paint( const Rectangle _aOutRect ) const
                     SwPageFrm::GetBorderAndShadowBoundRect( SwRect( aPageRect ), &mrParentViewShell, aPageBorderRect, true );
                     const Region aDLRegion(aPageBorderRect.SVRect());
                     mrParentViewShell.DLPrePaint2(aDLRegion);
-                    SwPageFrm::PaintBorderAndShadow( aPageRect, &mrParentViewShell, true );
+                    SwPageFrm::PaintPageBorder( aPageRect, &mrParentViewShell, true );
                     mrParentViewShell.DLPostPaint2(true);
                 }
                 // <--
@@ -1289,7 +1289,7 @@ void SwPagePreviewLayout::_PaintSelectMarkAtPage(
     SwRect aPageRect( _aSelectedPrevwPage->aLogicPos,
                          _aSelectedPrevwPage->aPageSize );
     // OD 19.02.2003 #107369# - use aligned page rectangle, as it is used for
-    // page border paint - see <SwPageFrm::PaintBorderAndShadow(..)>
+    // page border paint - see <SwPageFrm::PaintPageBorder(..)>
     ::SwAlignRect( aPageRect, &mrParentViewShell);
     Rectangle aPxPageRect = pOutputDev->LogicToPixel( aPageRect.SVRect() );
 

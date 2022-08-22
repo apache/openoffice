@@ -3053,11 +3053,11 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
 
                 pPage->Paint( aPaintRect );
 
-                // no paint of page border and shadow, if writer is in place mode.
+                // no paint of page border if writer is in place mode.
                 if( pSh->GetWin() && pSh->GetDoc()->GetDocShell() &&
                     !pSh->GetDoc()->GetDocShell()->IsInPlaceActive() )
                 {
-                    SwPageFrm::PaintBorderAndShadow( pPage->Frm(), pSh, bRightSidebar );
+                    SwPageFrm::PaintPageBorder( pPage->Frm(), pSh, bRightSidebar );
                     SwPageFrm::PaintNotesSidebar( pPage->Frm(), pSh, pPage->GetPhyPageNum(), bRightSidebar);
                 }
 
@@ -3151,7 +3151,7 @@ SwRootFrm::Paint(SwRect const& rRect, SwPrintData const*const pPrintData) const
                 pSh->GetOut()->SetFont( aOldFont );
                 // paint border for empty page (shadow removed now)
                 // OD 19.02.2003 #107369# - use new method to paint page border
-                SwPageFrm::PaintBorderAndShadow( aEmptyPageRect, pSh, bRightSidebar );
+                SwPageFrm::PaintPageBorder( aEmptyPageRect, pSh, bRightSidebar );
                 SwPageFrm::PaintNotesSidebar( aEmptyPageRect, pSh, pPage->GetPhyPageNum(), bRightSidebar);
 
                 {
@@ -5523,9 +5523,9 @@ const sal_Int8 SwPageFrm::mnBorderPxWidth = 1;
 
     @author OD
 */
-/*static*/ void SwPageFrm::PaintBorderAndShadow( const SwRect& _rPageRect,
-                                                 ViewShell*    _pViewShell,
-                                                 bool bRightSidebar )
+/*static*/ void SwPageFrm::PaintPageBorder( const SwRect& _rPageRect,
+                                            ViewShell*    _pViewShell,
+                                            bool bRightSidebar )
 {
     // --> FME 2004-06-24 #i16816# tagged pdf support
     SwTaggedPDFHelper aTaggedPDFHelper( 0, 0, 0, *_pViewShell->GetOut() );
