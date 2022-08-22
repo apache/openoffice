@@ -354,9 +354,9 @@ public:
         input parameter - instance of the view shell, on which the output
         has to be generated.
     */
-    static void PaintBorderAndShadow( const SwRect& _rPageRect,
-                                      ViewShell*    _pViewShell,
-                                      bool bRightSidebar );
+    static void PaintPageBorder( const SwRect& _rPageRect,
+                                 ViewShell*    _pViewShell,
+                                 bool bRightSidebar );
 
     /** get bound rectangle of border and shadow for repaints
 
