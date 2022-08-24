@@ -150,7 +150,7 @@ void SwEditWin::RequestHelp(const HelpEvent &rEvt)
             switch( aCntntAtPos.eCntntAtPos )
             {
             case SwContentAtPos::SW_TABLEBOXFML:
-                sTxt.AssignAscii( RTL_CONSTASCII_STRINGPARAM( "= " ));
+                sTxt.AssignAscii( RTL_CONSTASCII_STRINGPARAM( "=" ));
                 sTxt += ((SwTblBoxFormula*)aCntntAtPos.aFnd.pAttr)->GetFormula();
                 break;
 #ifdef DBG_UTIL
