@@ -24,7 +24,7 @@ LIBSMKREV!:="$$Revision$$"
 .IF ("$(GUI)"=="UNX" || "$(COM)"=="GCC")
 
 #
-#externe libs in plattform.mk
+#external libs in platform.mk
 #
 .IF "$(GUI)$(COM)"=="WNTGCC"
 AWTLIB*=$(JAVA_HOME)/lib/jawt.lib

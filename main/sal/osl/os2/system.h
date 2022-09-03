@@ -353,7 +353,7 @@ char *macxp_tempnam( const char *tmpdir, const char *prefix );
     !defined(LINUX)   && !defined(NETBSD) && !defined(FREEBSD) && !defined(SCO)  && \
 	!defined(AIX)     && !defined(HPUX)   && \
 	!defined(SOLARIS) && !defined(MACOSX)
-#	error "Target plattform not specified !"
+#	error "Target platform not specified !"
 #endif
 
 #if defined(NETBSD)
