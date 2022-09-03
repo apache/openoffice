@@ -23,7 +23,7 @@ Option Explicit
 
 Global Const WIZARD_NAME = "Analysis"
 
-'Implementation details - not required for localisation
+'Implementation details - not required for localization
 Public Const CWORD_DRIVER_FILE = "_OOoDocAnalysisWordDriver.doc"
 Public Const CEXCEL_DRIVER_FILE = "_OOoDocAnalysisExcelDriver.xls"
 Public Const CPP_DRIVER_FILE = "_OOoDocAnalysisPPTDriver.ppt"

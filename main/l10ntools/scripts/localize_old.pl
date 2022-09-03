@@ -268,7 +268,7 @@ sub get_license_header{
 "#    #   #  #   #    #  ##  #   #    #      #      #   #    #      #    \n".
 "#    ####    ###     #   #   ###     #      #####  ####   #####    #    \n".
 "#\n".
-"#    DO NOT EDIT! This file will be overwritten by localisation process\n".
+"#    DO NOT EDIT! This file will be overwritten by localization process\n".
 "#\n".
 "#**************************************************************\n".
 "#  \n".
