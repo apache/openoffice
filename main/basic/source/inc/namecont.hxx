@@ -593,7 +593,7 @@ private:
 	sal_Bool mbSharedIndexFile;
 	sal_Bool mbExtension;
 
-	// Additional functionality for localisation
+	// Additional functionality for localization
 	// Provide modify state including resources
 	virtual sal_Bool isModified( void ) = 0;
 	virtual void storeResources( void ) = 0;
