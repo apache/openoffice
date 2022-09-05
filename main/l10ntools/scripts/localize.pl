@@ -412,7 +412,7 @@ sub collectfiles{
                               };
 
                     } #switch
-                } #for each
+                } #foreach
               } # if
         } # if
         if ( $bVerbose ) { print STDOUT $command.$args."\n"; }

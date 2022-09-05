@@ -908,7 +908,7 @@ int _cdecl main( int argc, char *argv[] )
 	Treeconfig treeconfig;
 	vector<string> repos;
 	bool hasPwd = treeconfig.getActiveRepositories( repos );
-	if( hasPwd ) cout << " Found special path!\n";
+	if( hasPwd ) cout << "\nFound special path!\n";
 
 	string minor_ext;
 	bool has_minor_ext;
