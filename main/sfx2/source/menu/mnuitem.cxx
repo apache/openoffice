@@ -277,6 +277,7 @@ void SfxMenuControl::StateChanged
         }
 		return;
 	}
+	}
 
 	bool bCheck = false;
 	if ( pState->ISA(SfxBoolItem) )
