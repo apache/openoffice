@@ -327,7 +327,7 @@ IMPL_LINK( SwChangeDBDlg, TreeSelectHdl, SvTreeListBox *, EMPTYARG )
 }
 
 /*--------------------------------------------------------------------
-	Description: transform Datenbasename for screen
+	Description: transform databasename for screen
  --------------------------------------------------------------------*/
 
 void SwChangeDBDlg::ShowDBName(const SwDBData& rDBData)
