@@ -334,7 +334,7 @@ void SwChangeDBDlg::ShowDBName(const SwDBData& rDBData)
 {
 	String sName;
 	String sTmp(rDBData.sDataSource);
-	if (rDBData.sDataSource.is() and rDBData.sCommand.is()) {
+	if (rDBData.sDataSource.is() && rDBData.sCommand.is()) {
 		sTmp += '.';
 	}
 	sTmp += (String)rDBData.sCommand;
