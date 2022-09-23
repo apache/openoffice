@@ -86,14 +86,14 @@ ModalDialog DLG_CHANGE_DB
 	};
 	FixedText FT_DOCDBTEXT
 	{
-		Pos = MAP_APPFONT ( 6, 161 ) ;
+		Pos = MAP_APPFONT ( 12, 161 ) ;
 		Size = MAP_APPFONT ( 100, 8 ) ;
 		Left = TRUE ;
 		Text [ en-US ] = "Database applied to document:" ;
 	};
 	FixedText FT_DOCDBNAME
 	{
-		Pos = MAP_APPFONT ( 109, 161 ) ;
+		Pos = MAP_APPFONT ( 118, 161 ) ;
 		Size = MAP_APPFONT ( 114, 8 ) ;
 		Left = TRUE ;
 		Text [ en-US ] = "Addresses.Addresses" ;
