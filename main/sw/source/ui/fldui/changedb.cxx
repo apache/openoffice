@@ -327,14 +327,16 @@ IMPL_LINK( SwChangeDBDlg, TreeSelectHdl, SvTreeListBox *, EMPTYARG )
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung: Datenbankname fuer Anzeige wandeln
+	Description: transform databasename for screen
  --------------------------------------------------------------------*/
 
 void SwChangeDBDlg::ShowDBName(const SwDBData& rDBData)
 {
-	String sTmp(rDBData.sDataSource);
 	String sName;
-	sTmp += '.';
+	String sTmp(rDBData.sDataSource);
+	if (!rDBData.sDataSource.isEmpty() && !rDBData.sCommand.isEmpty()) {
+		sTmp += '.';
+	}
 	sTmp += (String)rDBData.sCommand;
 
 	for (sal_uInt16 i = 0; i < sTmp.Len(); i++)
