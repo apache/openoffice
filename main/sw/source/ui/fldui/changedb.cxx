@@ -94,6 +94,7 @@ SwChangeDBDlg::SwChangeDBDlg(SwView& rVw) :
 	aOKBT		(this, SW_RES(BT_OK      	)),
 	aCancelBT	(this, SW_RES(BT_CANCEL  	)),
 	aHelpBT		(this, SW_RES(BT_HELP    	)),
+    aApplDBFL   (this, SW_RES(FL_APPLDB     )),
 //	aChangeBT	(this, SW_RES(BT_CHANGEDB    )),
     aImageList      (SW_RES(ILIST_DB_DLG    )),
     aImageListHC    (SW_RES(ILIST_DB_DLG_HC )),
