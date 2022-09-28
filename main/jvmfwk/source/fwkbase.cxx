@@ -386,7 +386,7 @@ rtl::OString BootParams::getClasspath()
             sCP, osl_getThreadTextEncoding());
 #if OSL_DEBUG_LEVEL >=2
         fprintf(stderr,"[Java framework] Using bootstrap parameter "
-            UNO_JAVA_JFW_CLASSPATH " = %s.\n", sClassPath.getStr());
+            UNO_JAVA_JFW_CLASSPATH " = \"%s\".\n", sClassPath.getStr());
 #endif
     }
     
@@ -521,7 +521,7 @@ rtl::OUString BootParams::getClasspathUrls()
 #if OSL_DEBUG_LEVEL >=2
     rtl::OString sValue = rtl::OUStringToOString(sParams, osl_getThreadTextEncoding());
     fprintf(stderr,"[Java framework] Using bootstrap parameter "
-            UNO_JAVA_JFW_CLASSPATH_URLS " = %s.\n", sValue.getStr());
+            UNO_JAVA_JFW_CLASSPATH_URLS " = \"%s\".\n", sValue.getStr());
 #endif
     return sParams;
 }
