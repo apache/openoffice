@@ -518,6 +518,10 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
     vecOptions.push_back(JavaVMOption());
     vecOptions.back().optionString = (char *) "abort";
     vecOptions.back().extraInfo = (void* )(sal_IntPtr)abort_handler;
+#if OSL_DEBUG_LEVEL >= 2
+        JFW_TRACE2(OString("VM option: ") + OString(vecOptions.back().optionString) +
+                   OString("\n"));
+#endif
     rtl::OString sClassPathProp("-Djava.class.path=");
     rtl::OString sClassPathOption;
     for (int i = 0; i < cOptions; i++)
@@ -525,21 +529,21 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
 #ifdef UNX
     // Until java 1.5 we need to put a plugin.jar or javaplugin.jar (<1.4.2)
     // in the class path in order to have applet support.
-        rtl::OString sClassPath = arOptions[i].optionString;
-        if (sClassPath.match(sClassPathProp, 0) == sal_True)
+        rtl::OString sOptionString = arOptions[i].optionString;
+        if (sOptionString.match(sClassPathProp, 0) == sal_True)
         {
-            bool emptyClassPath = (sClassPath == sClassPathProp);
+            bool emptyClassPath = (sOptionString == sClassPathProp);
             char sep[] =  {SAL_PATHSEPARATOR, 0};
             OString sAddPath = getPluginJarPath(pInfo->sVendor, pInfo->sLocation,pInfo->sVersion);
             if (sAddPath.getLength()) {
-                sClassPathOption = sClassPath;
+                sClassPathOption = sOptionString;
                 if (!emptyClassPath) {
                     sClassPathOption += rtl::OString(sep);
                 }
                 sClassPathOption += sAddPath;
                 emptyClassPath = false;
             } else
-                sClassPathOption = sClassPath;
+                sClassPathOption = sOptionString;
             if (!emptyClassPath) {
                 vecOptions.push_back(JavaVMOption());
                 vecOptions.back().optionString = (char *) sClassPathOption.getStr();
@@ -555,6 +559,27 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
 #ifdef UNX
         }
 #endif
+        sOptionString = vecOptions.back().optionString;
+        if (sOptionString.match(sClassPathProp, 0) == sal_True) {
+            // Check for empty entries in the class path
+            sal_Int32 nIndex = sClassPathProp.getLength();
+            rtl::OString sToken;
+            char empty1[] = {'.', 0};
+            char empty2[] = {'.', SAL_PATHDELIMITER, 0};
+            const rtl::OString sEmpty1 = rtl::OString(empty1);
+            const rtl::OString sEmpty2 = rtl::OString(empty2);
+            do {
+                sToken = sOptionString.getToken(0, SAL_PATHSEPARATOR, nIndex);
+                if ((sToken.getLength() == 0) ||
+                    (sToken == sEmpty1) ||
+                    (sToken == sEmpty2)) {
+                    fprintf(stderr,"[Java framework]sunjavaplugin"
+                            SAL_DLLEXTENSION
+                            " Rejecting empty class path entry !\n");
+                    return JFW_PLUGIN_E_INVALID_ARG;
+                }
+            } while (nIndex >= 0);
+        }
 #if OSL_DEBUG_LEVEL >= 2
         JFW_TRACE2(OString("VM option: ") + OString(vecOptions.back().optionString) +
                    OString("\n"));
