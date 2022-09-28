@@ -266,7 +266,6 @@ javaFrameworkError SAL_CALL jfw_startVM(JavaVMOption *arOptions, sal_Int32 cOpti
 
         std::vector<rtl::OString> vmParams;
         rtl::OString sUserClassPath;
-        rtl::OString sClassPathProp("-Djava.class.path=");
 		jfw::CJavaInfo aInfo;
 		jfw::JFW_MODE mode = jfw::getMode();
 		if (mode == jfw::JFW_MODE_APPLICATION)
@@ -338,7 +337,7 @@ javaFrameworkError SAL_CALL jfw_startVM(JavaVMOption *arOptions, sal_Int32 cOpti
             //of the form UNO_JAVA_JFW_PARAMETER_1 .. UNO_JAVA_JFW_PARAMETER_n
             vmParams = jfw::BootParams::getVMParameters();
             sUserClassPath = 
-                sClassPathProp + jfw::BootParams::getClasspath();
+                "-Djava.class.path=" + jfw::BootParams::getClasspath();
 		}
 		else
             OSL_ASSERT(0);
@@ -362,44 +361,41 @@ javaFrameworkError SAL_CALL jfw_startVM(JavaVMOption *arOptions, sal_Int32 cOpti
 		// create JavaVMOptions array that is passed to the plugin
 		// it contains the classpath and all options set in the
 		//options dialog
-        std::vector<JavaVMOption> vecJOptions;
-        vecJOptions.reserve(cOptions + 2 + vmParams.size());
-
-		//The first argument is the classpath (if not empty)
-        if (sUserClassPath != sClassPathProp) {
-            vecJOptions.push_back(JavaVMOption());
-            vecJOptions.back().optionString= (char*) sUserClassPath.getStr();
-            vecJOptions.back().extraInfo = NULL;
-        }
+		boost::scoped_array<JavaVMOption> sarJOptions(
+            new JavaVMOption[cOptions + 2 + vmParams.size()]);
+		JavaVMOption * arOpt = sarJOptions.get();
+		if (! arOpt)
+			return JFW_E_ERROR;
+	    
+		//The first argument is the classpath
+		arOpt[0].optionString= (char*) sUserClassPath.getStr();
+		arOpt[0].extraInfo = NULL;
 		// Set a flag that this JVM has been created via the JNI Invocation API
 		// (used, for example, by UNO remote bridges to share a common thread pool
 		// factory among Java and native bridge implementations):
-        vecJOptions.push_back(JavaVMOption());
-		vecJOptions.back().optionString = (char *) "-Dorg.openoffice.native=";
-		vecJOptions.back().extraInfo = 0;
+		arOpt[1].optionString = (char *) "-Dorg.openoffice.native=";
+		arOpt[1].extraInfo = 0;
 
-        //add the options set by options dialog, avoiding empty class paths
+        //add the options set by options dialog
+        int index = 2;
         typedef std::vector<rtl::OString>::const_iterator cit;
         for (cit i = vmParams.begin(); i != vmParams.end(); i ++)
         {
-            if (i->getStr() != sClassPathProp) {
-                vecJOptions.push_back(JavaVMOption());
-                vecJOptions.back().optionString = const_cast<sal_Char*>(i->getStr());
-                vecJOptions.back().extraInfo = 0;
-            }
+            arOpt[index].optionString = const_cast<sal_Char*>(i->getStr());
+            arOpt[index].extraInfo = 0;
+            index ++;
         }
-        //add all options of the arOptions argument, avoiding empty class paths
+        //add all options of the arOptions argument
         for (int ii = 0; ii < cOptions; ii++)
         {
-            if (arOptions[ii].optionString != sClassPathProp) {
-                vecJOptions.push_back(JavaVMOption());
-                vecJOptions.back().optionString = arOptions[ii].optionString;
-                vecJOptions.back().extraInfo = arOptions[ii].extraInfo;
-            }
+            arOpt[index].optionString = arOptions[ii].optionString;
+            arOpt[index].extraInfo = arOptions[ii].extraInfo;
+            index++;
         }
+    
 		//start Java
 		JavaVM *pVm = NULL;
-		javaPluginError plerr = (*pFunc)(aInfo, &vecJOptions[0], vecJOptions.size(), & pVm, ppEnv);
+		javaPluginError plerr = (*pFunc)(aInfo, arOpt, index, & pVm, ppEnv);
 		if (plerr == JFW_PLUGIN_E_VM_CREATION_FAILED)
 		{
 			errcode = JFW_E_VM_CREATION_FAILED;
