@@ -526,10 +526,10 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
     rtl::OString sClassPathOption;
     for (int i = 0; i < cOptions; i++)
     {
+        rtl::OString sOptionString = arOptions[i].optionString;
 #ifdef UNX
     // Until java 1.5 we need to put a plugin.jar or javaplugin.jar (<1.4.2)
     // in the class path in order to have applet support.
-        rtl::OString sOptionString = arOptions[i].optionString;
         if (sOptionString.match(sClassPathProp, 0) == sal_True)
         {
             bool emptyClassPath = (sOptionString == sClassPathProp);
