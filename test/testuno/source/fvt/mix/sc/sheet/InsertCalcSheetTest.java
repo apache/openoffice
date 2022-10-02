@@ -56,6 +56,8 @@ import org.openoffice.test.vcl.widgets.VclDialog;
 import org.openoffice.test.vcl.client.Constant;
 import static org.openoffice.test.vcl.Tester.sleep;
 
+import org.openoffice.test.vcl.client.VclHookException;
+
 import testlib.uno.SCUtil;
 
 /**
