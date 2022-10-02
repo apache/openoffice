@@ -56,14 +56,12 @@ import org.openoffice.test.vcl.widgets.VclDialog;
 import org.openoffice.test.vcl.client.Constant;
 import static org.openoffice.test.vcl.Tester.sleep;
 
-import org.openoffice.test.vcl.client.VclHookException;
-
 import testlib.uno.SCUtil;
 
 /**
- * test inserting linked and non-linked sheets from an XLS spreadsheet.
+ * test inserting linked and non-linked sheets from another Calc spreadsheet.
  */
-public class InsertExcelSheetTest {
+public class InsertCalcSheetTest {
 
     OpenOffice aoo;
     UnoApp unoApp;
@@ -118,7 +116,7 @@ public class InsertExcelSheetTest {
         // New a SC document
         scComponent = unoApp.newDocument("scalc");
 
-        // New a document source.xls, add value to 3 sheet
+        // New a document source.ods, add value to 3 sheet
         scDocument = SCUtil.getSCDocument(scComponent);
         XSpreadsheets spreadsheets = scDocument.getSheets();
         XSpreadsheet firstSheet = SCUtil.getSCSheetByIndex(scDocument,
@@ -132,7 +130,7 @@ public class InsertExcelSheetTest {
         SCUtil.setFormulaToCell(thirdSheet, 1, 2, "=3*2");
 
         // Save and close this document
-        SCUtil.saveFileAs(scComponent, "source", "xls");
+        SCUtil.saveFileAs(scComponent, "source", "ods");
         SCUtil.closeFile(scDocument);
 
     }
@@ -153,7 +151,7 @@ public class InsertExcelSheetTest {
 
         // get source document URL
         String SourcestoreUrl = Testspace.getUrl("output/sc/" + "source" + "."
-                + "xls");
+                + "ods");
 
         // New a document
         scComponent = unoApp.newDocument("scalc");
@@ -164,7 +162,6 @@ public class InsertExcelSheetTest {
         // and the link mode is NORMAL
 
         // using VCL
-        // need to set sheet 3 active
         boolean retry = false;
         try {
             vclApp.dispatch(".uno:SelectTables");
@@ -178,7 +175,7 @@ public class InsertExcelSheetTest {
             log.info("worked the second time");
             retry = false;
         }
-
+        
         // select sheet3
         scSheetsList.select(2);
 
@@ -281,13 +278,13 @@ public class InsertExcelSheetTest {
         SCUtil.save(scDocument);
         SCUtil.closeFile(scDocument);
 
-        log.info("opening source.xls to modify first sheet...");
+        log.info("opening source.ods to modify first sheet...");
         // Open source document and change the value in source document
         XSpreadsheetDocument sourcescDocument = SCUtil.reloadFile(unoApp,
-                scDocument, "source.xls");
+                scDocument, "source.ods");
         XSpreadsheet firstSheet = SCUtil.getSCSheetByIndex(sourcescDocument, (short) 0);
         SCUtil.setFormulaToCell(firstSheet, 1, 2, "=1*3");
-        log.info("saving and closing source.xls...");
+        log.info("saving and closing source.ods...");
         SCUtil.save(sourcescDocument);
         SCUtil.closeFile(sourcescDocument);
 
@@ -364,7 +361,7 @@ public class InsertExcelSheetTest {
 
         // get source document URL
         String SourcestoreUrl = Testspace.getUrl("output/sc/" + "source" + "."
-                + "xls");
+                + "ods");
 
         // New a document
         scComponent = unoApp.newDocument("scalc");
@@ -497,7 +494,7 @@ public class InsertExcelSheetTest {
 
         // Open source document and change the value in source document
         XSpreadsheetDocument sourcescDocument = SCUtil.reloadFile(unoApp,
-                scDocument, "source.xls");
+                scDocument, "source.ods");
         XSpreadsheet secondSheet = SCUtil.getSCSheetByIndex(sourcescDocument, (short) 1);
         SCUtil.setFormulaToCell(secondSheet, 1, 2, "=2*3");
         SCUtil.save(sourcescDocument);
@@ -577,12 +574,13 @@ public class InsertExcelSheetTest {
 
         // get source document URL
         String SourcestoreUrl = Testspace.getUrl("output/sc/" + "source" + "."
-                + "xls");
+                + "ods");
 
         // New a document
         scComponent = unoApp.newDocument("scalc");
         scDocument = SCUtil.getSCDocument(scComponent);
         XSpreadsheets spreadsheets = scDocument.getSheets();
+
 
         // Insert firstexternalsheet sheet, link with Sheet1 in source document
         // and the link mode is NORMAL
@@ -700,7 +698,7 @@ public class InsertExcelSheetTest {
 
         // Open source document and change the value in source document
         XSpreadsheetDocument sourcescDocument = SCUtil.reloadFile(unoApp,
-                scDocument, "source.xls");
+                scDocument, "source.ods");
         XSpreadsheet thirdSheet = SCUtil.getSCSheetByIndex(sourcescDocument, (short) 2);
         SCUtil.setFormulaToCell(thirdSheet, 1, 2, "=3*3");
         SCUtil.save(sourcescDocument);
@@ -747,5 +745,5 @@ public class InsertExcelSheetTest {
         SCUtil.save(scDocument);
 
     }
-
+    
 } // end class
