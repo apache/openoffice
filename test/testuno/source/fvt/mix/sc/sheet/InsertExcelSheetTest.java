@@ -164,20 +164,24 @@ public class InsertExcelSheetTest {
         // and the link mode is NORMAL
 
         // using VCL
-        // need to set sheet 3 active
         boolean retry = false;
-        try {
-            vclApp.dispatch(".uno:SelectTables");
-        } catch (java.lang.Exception e) {
-            // e.printStackTrace();
-            log.info("VclHookException caught!");
-            retry = true;
-        }
-        if (retry) {
-            vclApp.dispatch(".uno:SelectTables");
-            log.info("worked the second time");
+        int tryCount = 0;
+        int maxTries = 5;
+        do {
+            tryCount++; // starts at 1
             retry = false;
-        }
+            try {
+                vclApp.dispatch(".uno:SelectTables");
+            } catch (java.lang.Exception e) {
+                // e.printStackTrace();
+                log.info("Exception " + tryCount + "Caught !");
+                retry = true;
+                if (tryCount == maxTries) {
+                    throw e; // throw the exception
+                }
+                sleep(1);
+            }
+        } while ((retry) && (tryCount < maxTries));
 
         // select sheet3
         scSheetsList.select(2);
@@ -376,18 +380,23 @@ public class InsertExcelSheetTest {
 
         // using VCL
         boolean retry = false;
-        try {
-            vclApp.dispatch(".uno:SelectTables");
-        } catch (java.lang.Exception e) {
-            // e.printStackTrace();
-            log.info("VclHookException caught!");
-            retry = true;
-        }
-        if (retry) {
-            vclApp.dispatch(".uno:SelectTables");
-            log.info("worked the second time");
+        int tryCount = 0;
+        int maxTries = 5;
+        do {
+            tryCount++; // starts at 1
             retry = false;
-        }
+            try {
+                vclApp.dispatch(".uno:SelectTables");
+            } catch (java.lang.Exception e) {
+                // e.printStackTrace();
+                log.info("Exception " + tryCount + "Caught !");
+                retry = true;
+                if (tryCount == maxTries) {
+                    throw e; // throw the exception
+                }
+                sleep(1);
+            }
+        } while ((retry) && (tryCount < maxTries));
         
         // select sheet3
         scSheetsList.select(2);
@@ -589,18 +598,23 @@ public class InsertExcelSheetTest {
 
         // try with VCL
         boolean retry = false;
-        try {
-            vclApp.dispatch(".uno:SelectTables");
-        } catch (java.lang.Exception e) {
-            // e.printStackTrace();
-            log.info("VclHookException caught!");
-            retry = true;
-        }
-        if (retry) {
-            vclApp.dispatch(".uno:SelectTables");
-            log.info("worked the second time");
+        int tryCount = 0;
+        int maxTries = 5;
+        do {
+            tryCount++; // starts at 1
             retry = false;
-        }
+            try {
+                vclApp.dispatch(".uno:SelectTables");
+            } catch (java.lang.Exception e) {
+                // e.printStackTrace();
+                log.info("Exception " + tryCount + "Caught !");
+                retry = true;
+                if (tryCount == maxTries) {
+                    throw e; // throw the exception
+                }
+                sleep(1);
+            }
+        } while ((retry) && (tryCount < maxTries));
         
         // select sheet3
         scSheetsList.select(2);
