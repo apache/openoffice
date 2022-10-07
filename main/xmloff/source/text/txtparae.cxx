@@ -895,7 +895,7 @@ void XMLTextParagraphExport::exportListChange(
             sal_Int16 nRestartValueForContinuedRootList( -1 );
             // --> OD 2008-11-26 #158694#
             bool bContinuingPreviousSubList = !bRootListToBeStarted &&
-                                              rNextInfo.IsContinueingPreviousSubTree();
+                                              rNextInfo.IsContinuingPreviousSubTree();
             // <--
             do {
                 GetExport().CheckAttrList();

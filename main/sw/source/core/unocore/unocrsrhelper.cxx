@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -161,7 +161,7 @@ sal_Bool getCrsrPropertyValue(
 
                 if ( pTmpNode &&
                      pTmpNode->GetNum() &&
-                     pTmpNode->GetNum()->IsContinueingPreviousSubTree() )
+                     pTmpNode->GetNum()->IsContinuingPreviousSubTree() )
                 {
                     bRet = true;
                 }
@@ -391,13 +391,13 @@ sal_Bool getCrsrPropertyValue(
                         //SwTable& rTable = ((SwTableNode*)pSttNode)->GetTable();
                         if(FN_UNO_TEXT_TABLE == rEntry.nWID)
                         {
-                            uno::Reference< XTextTable >  xTable = SwXTextTables::GetObject(*pTableFmt);
+                            uno::Reference< XTextTable > xTable = SwXTextTables::GetObject(*pTableFmt);
                             pAny->setValue(&xTable, ::getCppuType((uno::Reference<XTextTable>*)0));
                         }
                         else
                         {
                             SwTableBox* pBox = pSttNode->GetTblBox();
-                            uno::Reference< XCell >  xCell = SwXCell::CreateXCell(pTableFmt, pBox);
+                            uno::Reference< XCell > xCell = SwXCell::CreateXCell(pTableFmt, pBox);
                             pAny->setValue(&xCell, ::getCppuType((uno::Reference<XCell>*)0));
                         }
                     }
@@ -417,7 +417,7 @@ sal_Bool getCrsrPropertyValue(
                 {
                     if( pAny )
                     {
-                        uno::Reference< XTextFrame >  xFrm = (SwXTextFrame*) SwXFrames::GetObject(*pFmt, FLYCNTTYPE_FRM);
+                        uno::Reference< XTextFrame > xFrm = (SwXTextFrame*) SwXFrames::GetObject(*pFmt, FLYCNTTYPE_FRM);
                         pAny->setValue(&xFrm, ::getCppuType((uno::Reference<XTextFrame>*)0));
                     }
                 }
@@ -433,7 +433,7 @@ sal_Bool getCrsrPropertyValue(
                 {
                     if( pAny )
                     {
-                        uno::Reference< XTextSection >  xSect = SwXTextSections::GetObject( *pSect->GetFmt() );
+                        uno::Reference< XTextSection > xSect = SwXTextSections::GetObject( *pSect->GetFmt() );
                         pAny->setValue(&xSect, ::getCppuType((uno::Reference<XTextSection>*)0) );
                     }
                 }
@@ -478,7 +478,7 @@ sal_Bool getCrsrPropertyValue(
                     if( pAny )
                     {   // hmm... can only return 1 here
                         const SwFmtRefMark& rRef = (*marks.begin())->GetRefMark();
-                        uno::Reference< XTextContent >  xRef = SwXReferenceMarks::GetObject( rPam.GetDoc(), &rRef );
+                        uno::Reference< XTextContent > xRef = SwXReferenceMarks::GetObject( rPam.GetDoc(), &rRef );
                         pAny->setValue(&xRef, ::getCppuType((uno::Reference<XTextContent>*)0));
                     }
                 }
@@ -621,7 +621,7 @@ void setNumberingProperty(const Any& rValue, SwPaM& rPam)
 			if(pSwNum->GetNumRule())
 			{
 				SwNumRule aRule(*pSwNum->GetNumRule());
-				const String* pNewCharStyles =  pSwNum->GetNewCharStyleNames();
+				const String* pNewCharStyles = pSwNum->GetNewCharStyleNames();
 				const String* pBulletFontNames = pSwNum->GetBulletFontNames();
 				for(sal_uInt16 i = 0; i < MAXLEVEL; i++)
 				{
@@ -686,7 +686,7 @@ void setNumberingProperty(const Any& rValue, SwPaM& rPam)
 				}
                 UnoActionContext aAction(pDoc);
 
-                if ( rPam.GetNext() != &rPam )           // Mehrfachselektion ?
+                if ( rPam.GetNext() != &rPam ) // Mehrfachselektion ?
                 {
                     pDoc->GetIDocumentUndoRedo().StartUndo( UNDO_START, NULL );
                     SwPamRanges aRangeArr( rPam );
@@ -731,12 +731,12 @@ void setNumberingProperty(const Any& rValue, SwPaM& rPam)
 /* -----------------25.05.98 11:40-------------------
  *
  * --------------------------------------------------*/
-void  getNumberingProperty(SwPaM& rPam, PropertyState& eState, Any * pAny )
+void getNumberingProperty(SwPaM& rPam, PropertyState& eState, Any * pAny )
 {
 	const SwNumRule* pNumRule = rPam.GetDoc()->GetNumRuleAtPos( *rPam.GetPoint() );
 	if(pNumRule)
 	{
-		uno::Reference< XIndexReplace >  xNum = new SwXNumberingRules(*pNumRule);
+		uno::Reference< XIndexReplace > xNum = new SwXNumberingRules(*pNumRule);
 		if ( pAny )
 			pAny->setValue(&xNum, ::getCppuType((const uno::Reference<XIndexReplace>*)0));
 		eState = PropertyState_DIRECT_VALUE;
@@ -759,7 +759,7 @@ void GetCurPageStyle(SwPaM& rPaM, String &rString)
 void resetCrsrPropertyValue(const SfxItemPropertySimpleEntry& rEntry, SwPaM& rPam)
 {
 	SwDoc* pDoc = rPam.GetDoc();
-    switch(rEntry.nWID)
+	switch(rEntry.nWID)
 	{
 		case FN_UNO_PARA_STYLE :
 //			lcl_SetTxtFmtColl(aValue, pUnoCrsr);
@@ -902,7 +902,7 @@ void InsertFile(SwUnoCrsr* pUnoCrsr,
 	if( !pMed )
 		return;
 
-    // this sourcecode is not responsible for the lifetime of the shell, SfxObjectShellLock should not be used
+	// this sourcecode is not responsible for the lifetime of the shell, SfxObjectShellLock should not be used
 	SfxObjectShellRef aRef( pDocSh );
 
 	pDocSh->RegisterTransfer( *pMed );
@@ -912,8 +912,8 @@ void InsertFile(SwUnoCrsr* pUnoCrsr,
 		SwReader* pRdr;
 		SfxItemSet* pSet = 	pMed->GetItemSet();
 		pSet->Put(SfxBoolItem(FN_API_CALL, sal_True));
-        if(sPassword.getLength())
-            pSet->Put(SfxStringItem(SID_PASSWORD, sPassword));
+		if(sPassword.getLength())
+			pSet->Put(SfxStringItem(SID_PASSWORD, sPassword));
 		Reader *pRead = pDocSh->StartConvertFrom( *pMed, &pRdr, 0, pUnoCrsr);
 		if( pRead )
 		{
@@ -926,7 +926,7 @@ void InsertFile(SwUnoCrsr* pUnoCrsr,
 			SwNodeIndex aSave(  pUnoCrsr->GetPoint()->nNode, -1 );
 			xub_StrLen nCntnt = pUnoCrsr->GetPoint()->nContent.GetIndex();
 
-            sal_uInt32 nErrno = pRdr->Read( *pRead );   // und Dokument einfuegen
+			sal_uInt32 nErrno = pRdr->Read( *pRead ); // und Dokument einfuegen
 
 			if(!nErrno)
 			{
@@ -1117,4 +1117,3 @@ bool    SwAnyMapHelper::FillValue( sal_uInt16 nWhichId, sal_uInt16 nMemberId, co
 }
 
 }//namespace SwUnoCursorHelper
-
