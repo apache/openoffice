@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -170,7 +170,7 @@ public:
     SwNumberTree::tSwNumTreeNumber GetNumber( bool bValidate = true ) const;
 
     // --> OD 2008-11-26 #158694#
-    bool IsContinueingPreviousSubTree() const;
+    bool IsContinuingPreviousSubTree() const;
     // <--
 
     /**
@@ -181,7 +181,7 @@ public:
     SwNumberTree::tNumberVector GetNumberVector() const;
 
     /**
-       Return if numbering is restartet at this node.
+       Return if numbering is restarted at this node.
      */
     virtual bool IsRestart() const = 0;
 
@@ -317,7 +317,7 @@ public:
     /** Invalidation and notification of complete numbering tree
 
         OD 2006-04-26 #i64010#
-        Usage: on <IsCounted()> state change its needed to invalidate the
+        Usage: on <IsCounted()> state change is needed to invalidate the
                complete numbering tree due to wide influence of this change.
     */
     inline void InvalidateAndNotifyTree()
@@ -553,7 +553,7 @@ protected:
     /**
        Set this node as last valid child of its parent.
 
-       @param bValidation    see aboce
+       @param bValidation    see above
      */
     void SetLastValid(bool bValidating) const;
 
