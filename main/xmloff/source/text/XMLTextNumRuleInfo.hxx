@@ -51,7 +51,7 @@ class XMLTextNumRuleInfo
     const ::rtl::OUString msPropNameListId;
     const ::rtl::OUString msPropNameStartWith;
     // --> OD 2008-11-26 #158694#
-    const ::rtl::OUString msContinueingPreviousSubTree;
+    const ::rtl::OUString msContinuingPreviousSubTree;
     const ::rtl::OUString msListLabelStringProp;
     // <--
 
