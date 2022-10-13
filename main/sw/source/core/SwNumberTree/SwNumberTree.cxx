@@ -41,7 +41,7 @@ SwNumberTreeNode::SwNumberTreeNode()
       mpParent( 0 ),
       mnNumber( 0 ),
       // --> OD 2008-11-26 #158694#
-      mbContinueingPreviousSubTree( false ),
+      mbContinuingPreviousSubTree( false ),
       // <--
       mbPhantom( false ),
       mItLastValid()
@@ -191,7 +191,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
         {
             aIt = mChildren.begin();
             // --> OD 2008-11-26 #158694#
-            (*aIt)->mbContinueingPreviousSubTree = false;
+            (*aIt)->mbContinuingPreviousSubTree = false;
             // <--
 
             // determine default start value
@@ -223,7 +223,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
                     if ( pPrevNode->GetChildCount() > 0 )
                     {
                         // --> OD 2008-11-26 #158694#
-                        (*aIt)->mbContinueingPreviousSubTree = true;
+                        (*aIt)->mbContinuingPreviousSubTree = true;
                         // <--
                         nTmpNumber = (*(pPrevNode->mChildren.rbegin()))->GetNumber();
                         // --> OD 2005-10-27 #126009#
@@ -255,7 +255,7 @@ void SwNumberTreeNode::ValidateHierarchical(const SwNumberTreeNode * pNode) cons
         {
             ++aIt;
             // --> OD 2008-11-26 #158694#
-            (*aIt)->mbContinueingPreviousSubTree = false;
+            (*aIt)->mbContinuingPreviousSubTree = false;
             // <--
 
             // --> OD 2005-10-19 #126009# - only for counted nodes the number
@@ -786,7 +786,7 @@ SwNumberTree::tSwNumTreeNumber SwNumberTreeNode::GetNumber(bool bValidate)
 // --> OD 2008-11-26 #158694#
 bool SwNumberTreeNode::IsContinuingPreviousSubTree() const
 {
-    return mbContinueingPreviousSubTree;
+    return mbContinuingPreviousSubTree;
 }
 // <--
 
