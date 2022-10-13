@@ -77,7 +77,7 @@ class XMLTextNumRuleInfo
     // <--
 
     // --> OD 2008-11-26 #158694#
-    sal_Bool mbContinueingPreviousSubTree;
+    sal_Bool mbContinuingPreviousSubTree;
     ::rtl::OUString msListLabelString;
     // <--
 public:
@@ -147,7 +147,7 @@ public:
     // --> OD 2008-11-26 #158694#
     inline sal_Bool IsContinuingPreviousSubTree() const
     {
-        return mbContinueingPreviousSubTree;
+        return mbContinuingPreviousSubTree;
     }
     inline const ::rtl::OUString& ListLabelString() const
     {
@@ -170,7 +170,7 @@ inline XMLTextNumRuleInfo& XMLTextNumRuleInfo::operator=(
     mbOutlineStyleAsNormalListStyle = rInfo.mbOutlineStyleAsNormalListStyle;
     // <--
     // --> OD 2008-11-26 #158694#
-    mbContinueingPreviousSubTree = rInfo.mbContinueingPreviousSubTree;
+    mbContinuingPreviousSubTree = rInfo.mbContinuingPreviousSubTree;
     msListLabelString = rInfo.msListLabelString;
     // <--
 
@@ -189,7 +189,7 @@ inline void XMLTextNumRuleInfo::Reset()
     mbOutlineStyleAsNormalListStyle = sal_False;
     // <--
     // --> OD 2008-11-26 #158694#
-    mbContinueingPreviousSubTree = sal_False;
+    mbContinuingPreviousSubTree = sal_False;
     msListLabelString = ::rtl::OUString();
     // <--
 }

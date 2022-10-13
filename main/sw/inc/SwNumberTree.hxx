@@ -463,8 +463,8 @@ protected:
     //   1. kshdkjfs
     //     1.1. lskjf
     //      sdfjlksaf <-- not counted parent node
-    //     1.2. lfjlaskf <-- <mbContinueingPreviousSubTree = true>
-    mutable bool mbContinueingPreviousSubTree;
+    //     1.2. lfjlaskf <-- <mbContinuingPreviousSubTree = true>
+    mutable bool mbContinuingPreviousSubTree;
     // <--
 
     /**

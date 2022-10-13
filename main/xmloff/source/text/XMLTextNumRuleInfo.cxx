@@ -54,7 +54,7 @@ XMLTextNumRuleInfo::XMLTextNumRuleInfo()
     , msPropNameListId(RTL_CONSTASCII_USTRINGPARAM("ListId"))
     , msPropNameStartWith(RTL_CONSTASCII_USTRINGPARAM("StartWith"))
     // --> OD 2008-11-26 #158694#
-    , msContinuingPreviousSubTree(RTL_CONSTASCII_USTRINGPARAM("ContinueingPreviousSubTree"))
+    , msContinuingPreviousSubTree(RTL_CONSTASCII_USTRINGPARAM("ContinueingPreviousSubTree")) // misspelling kept for compatibility
     , msListLabelStringProp(RTL_CONSTASCII_USTRINGPARAM("ListLabelString"))
     // <--
     , mxNumRules()
@@ -168,10 +168,10 @@ void XMLTextNumRuleInfo::Set(
         }
 
         // --> OD 2008-11-26 #158694#
-        mbContinueingPreviousSubTree = sal_False;
+        mbContinuingPreviousSubTree = sal_False;
         if( xPropSetInfo->hasPropertyByName( msContinuingPreviousSubTree ) )
         {
-            xPropSet->getPropertyValue( msContinuingPreviousSubTree ) >>= mbContinueingPreviousSubTree;
+            xPropSet->getPropertyValue( msContinuingPreviousSubTree ) >>= mbContinuingPreviousSubTree;
         }
         // <--
 
