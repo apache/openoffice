@@ -688,6 +688,88 @@ void ScInterpreter::ScNPV()
     }
 }
 
+void ScInterpreter::ScDateDif()
+{
+    RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScDateDif");
+    if ( MustHaveParamCount( GetByte(), 3 ) )
+    {
+        String ReturnFormat = GetString();
+        double StartDate  = GetDouble();
+        Date tmpDate = *( pFormatter->GetNullDate() );
+        tmpDate += (long) ::rtl::math::approxFloor( tmpDate );
+        sal_Int32 StartDays = tmpDate.GetDay(); 
+        sal_Int32 StartMonth = tmpDate.GetMonth();
+        sal_Int32 StartYear = tmpDate.GetYear();
+
+        double EndDate  = GetDouble();
+        tmpDate = *( pFormatter->GetNullDate() );
+        tmpDate += (long) ::rtl::math::approxFloor( EndDate );
+        sal_Int32 EndDays = tmpDate.GetDay(); 
+        sal_Int32 EndMonth = tmpDate.GetMonth();
+        sal_Int32 EndYear = tmpDate.GetYear();
+
+
+        switch(ReturnFormat.ToLowerAscii()) {
+            case d:
+                // return number of days
+                PushDouble( EndDate - StartDate);
+                break;
+            case m:
+                // return number of months
+                sal_Int32 diffMonth = EndMonth - StartMonth + 12 * (EndYear - StartYear);
+                if (StartDate > EndDate && StartDays > EndDays )
+                {
+                    diffMonth -= 1;
+                }
+                else if ( EndDays > StartDays )
+                {
+                    diffMonth += 1;
+                }
+                PushInt(diffMonth);
+                break;
+            case ym:
+                // return number of months, ignoring years
+                sal_Int32 diffMonth = EndMonth - StartMonth;
+                if (StartDate > EndDate && StartDays > EndDays )
+                {
+                    diffMonth -= 1;
+                }
+                else if ( EndMonth > StartMonth && StartDays > EndDays )
+                {
+                    diffMonth += 1;
+                }
+                PushInt(diffMonth);
+                break;
+            case md:
+                // return number of days, ignoring months and years
+                tmpDate = Date(EndDays,StartMonth,StartYear)
+                double sameYear =  double(tmpDate - *( pFormatter->GetNullDate() );
+                PushDouble( fabs(sameYear - StartDate));
+               break;
+            case yd:
+                // return number of days, ignoring years
+                tmpDate = Date(EndDays,EndMonth,StartYear)
+                double sameYear =  double(tmpDate - *( pFormatter->GetNullDate() );
+                PushDouble( fabs(sameYear - StartDate));
+                break;
+            case y:
+                // return number of years
+                sal_Int32 diffYears = EndYear - StartYear;
+                if (EndYear > StartYear) {
+                    if((EndMonth = StartMonth && StartDate >= EndDate) || (EndMonth > StartMonth))
+                        diffYears -= 1;
+                }
+                else if ((EndMonth = StartMonth && EndDate >= StartDate) || (StartMonth > EndMonth))
+                    diffYears += 1;
+                PushInt(diffYears);
+                break;
+            default:
+            // unsupported format
+                PushIllegalArgument(); 
+        }
+    }
+}
+
 void ScInterpreter::ScIRR()
 {
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIRR" );
