@@ -266,7 +266,7 @@
 		</node>
 		<node oor:name="m49" oor:op="replace">
 			<prop oor:name="Extension" oor:type="xs:string">
-				<value>pcx</value>
+				<value>heif</value>
 			</prop>
 		</node>
 		<node oor:name="m50" oor:op="replace">
@@ -762,6 +762,46 @@
 		<node oor:name="m148" oor:op="replace">
 			<prop oor:name="Extension" oor:type="xs:string">
 				<value>m4a</value>
+			</prop>
+		</node>
+		<node oor:name="m149" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>mp4</value>
+			</prop>
+		</node>
+		<node oor:name="m150" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>heifs</value>
+			</prop>
+		</node>
+		<node oor:name="m151" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>heic</value>
+			</prop>
+		</node>
+		<node oor:name="m152" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>heics</value>
+			</prop>
+		</node>
+		<node oor:name="m153" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>avci</value>
+			</prop>
+		</node>
+		<node oor:name="m154" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>avcs</value>
+			</prop>
+		</node>
+		<node oor:name="m155" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>avif</value>
+			</prop>
+		</node>
+		<node oor:name="m156" oor:op="replace">
+			<prop oor:name="Extension" oor:type="xs:string">
+				<value>avifs</value>
 			</prop>
 		</node>
 	</node>
