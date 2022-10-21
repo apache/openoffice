@@ -550,7 +550,7 @@ bool ParseCMAP( const unsigned char* pCmap, int nLength, CmapResult& rResult )
             }
         }
 
-        rtl_destroyTextToUnicodeConverter( aCvtContext );
+        rtl_destroyTextToUnicodeContext( aConverter, aCvtContext );
         rtl_destroyTextToUnicodeConverter( aConverter );
 
         // convert the set of supported unicodes to ranges
