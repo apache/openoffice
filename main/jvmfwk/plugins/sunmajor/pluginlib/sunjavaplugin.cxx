@@ -527,23 +527,38 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
     for (int i = 0; i < cOptions; i++)
     {
         rtl::OString sOptionString = arOptions[i].optionString;
-#ifdef UNX
-    // Until java 1.5 we need to put a plugin.jar or javaplugin.jar (<1.4.2)
-    // in the class path in order to have applet support.
         if (sOptionString.match(sClassPathProp, 0) == sal_True)
         {
+            // This option sets the class path
             bool emptyClassPath = (sOptionString == sClassPathProp);
             char sep[] =  {SAL_PATHSEPARATOR, 0};
-            OString sAddPath = getPluginJarPath(pInfo->sVendor, pInfo->sLocation,pInfo->sVersion);
+            OString sAddPath;
+            sClassPathOption = sOptionString;
+            // Add the installation directory as default class path
+            OUString macro(RTL_CONSTASCII_USTRINGPARAM("$OOO_BASE_DIR/program"));
+            rtl::Bootstrap::expandMacros(macro);
+            OUString instDirectory;
+            osl_getSystemPathFromFileURL(macro.pData, &instDirectory.pData);
+            sAddPath = rtl::OUStringToOString(instDirectory, RTL_TEXTENCODING_UTF8);
             if (sAddPath.getLength()) {
-                sClassPathOption = sOptionString;
                 if (!emptyClassPath) {
                     sClassPathOption += rtl::OString(sep);
                 }
                 sClassPathOption += sAddPath;
                 emptyClassPath = false;
-            } else
-                sClassPathOption = sOptionString;
+            }
+#ifdef UNX
+            // Until java 1.5 we need to put a plugin.jar or javaplugin.jar (<1.4.2)
+            // in the class path in order to have applet support.
+            sAddPath = getPluginJarPath(pInfo->sVendor, pInfo->sLocation,pInfo->sVersion);
+            if (sAddPath.getLength()) {
+                if (!emptyClassPath) {
+                    sClassPathOption += rtl::OString(sep);
+                }
+                sClassPathOption += sAddPath;
+                emptyClassPath = false;
+            }
+#endif
             if (!emptyClassPath) {
                 vecOptions.push_back(JavaVMOption());
                 vecOptions.back().optionString = (char *) sClassPathOption.getStr();
@@ -552,13 +567,10 @@ javaPluginError jfw_plugin_startJavaVirtualMachine(
         }
         else
         {
-#endif
             vecOptions.push_back(JavaVMOption());
             vecOptions.back().optionString = arOptions[i].optionString;
             vecOptions.back().extraInfo = arOptions[i].extraInfo;
-#ifdef UNX
         }
-#endif
         sOptionString = vecOptions.back().optionString;
         if (sOptionString.match(sClassPathProp, 0) == sal_True) {
             // Check for empty entries in the class path
