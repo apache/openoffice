@@ -398,7 +398,10 @@ rtl::OString BootParams::getClasspath()
         char * pCp = getenv("CLASSPATH");
         if (pCp)
         {
-            sClassPath += rtl::OString(szSep) + rtl::OString(pCp);
+            if (sClassPath.getLength()) {
+                sClassPath += rtl::OString(szSep);
+            }
+            sClassPath += rtl::OString(pCp);
         }
 #if OSL_DEBUG_LEVEL >=2
         fprintf(stderr,"[Java framework] Using bootstrap parameter "
