@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef SW_NDTXT_HXX
@@ -58,10 +59,10 @@ class SfxItemSet;
 class SwUndoTransliterate;
 
 
-struct SwSpellArgs;             // for Spell(), splargs.hxx
-struct SwConversionArgs;        // for Convert(), splargs.hxx
-class SwInterHyphInfo;          // for Hyphenate(), splargs.hxx
-class SwWrongList;      // fuer OnlineSpelling
+struct SwSpellArgs; // for Spell(), splargs.hxx
+struct SwConversionArgs; // for Convert(), splargs.hxx
+class SwInterHyphInfo; // for Hyphenate(), splargs.hxx
+class SwWrongList; // for OnlineSpelling
 class SwGrammarMarkUp;
 class OutputDevice;
 class SwScriptInfo;
@@ -69,10 +70,10 @@ struct SwDocStat;
 struct SwParaIdleData_Impl;
 
 namespace com { namespace sun { namespace star {
-    namespace uno {
-        template < class > class Sequence;
-    }
-    namespace text { class XTextContent; }
+	namespace uno {
+		template < class > class Sequence;
+	}
+	namespace text { class XTextContent; }
 } } }
 
 typedef std::set< xub_StrLen > SwSoftPageBreakList;
@@ -87,46 +88,46 @@ class SW_DLLPUBLIC SwTxtNode: public SwCntntNode, public ::sfx2::Metadatable
 	friend class SwDoc; 		// CTOR und AppendTxtNode()
 	friend class SwNodes;
 	friend class SwTxtFrm;
-    friend class SwScriptInfo;
+	friend class SwScriptInfo;
 
 	//Kann 0 sein, nur dann nicht 0 wenn harte Attribute drin stehen.
 	//Also niemals direkt zugreifen!
-    SwpHints    *m_pSwpHints;
+	SwpHints    *m_pSwpHints;
 
-    mutable SwNodeNum* mpNodeNum;  // Numerierung fuer diesen Absatz
-    XubString   m_Text;
+	mutable SwNodeNum* mpNodeNum; // Numerierung fuer diesen Absatz
+	XubString   m_Text;
 
-    SwParaIdleData_Impl* m_pParaIdleData_Impl;
+	SwParaIdleData_Impl* m_pParaIdleData_Impl;
 
-    // Some of the chars this para are hidden. Paragraph has to be reformatted
-    // on changing the view to print preview.
-    mutable bool m_bContainsHiddenChars : 1;
-    // The whole paragraph is hidden because of the hidden text attribute
-    mutable bool m_bHiddenCharsHidePara : 1;
-    // The last two flags have to be recalculated if this flag is set:
-    mutable bool m_bRecalcHiddenCharFlags : 1;
+	// Some of the chars this para are hidden. Paragraph has to be reformatted
+	// on changing the view to print preview.
+	mutable bool m_bContainsHiddenChars : 1;
+	// The whole paragraph is hidden because of the hidden text attribute
+	mutable bool m_bHiddenCharsHidePara : 1;
+	// The last two flags have to be recalculated if this flag is set:
+	mutable bool m_bRecalcHiddenCharFlags : 1;
 
-    mutable bool m_bLastOutlineState : 1;
-    bool m_bNotifiable;
+	mutable bool m_bLastOutlineState : 1;
+	bool m_bNotifiable;
 
-    // sal_uInt8 nOutlineLevel; //#outline level, removed by zhaojianwei.
+	// sal_uInt8 nOutlineLevel; //#outline level, removed by zhaojianwei.
 
-    bool mbEmptyListStyleSetDueToSetOutlineLevelAttr;
+	bool mbEmptyListStyleSetDueToSetOutlineLevelAttr;
 
-    // boolean, indicating that a <SetAttr(..)> or <ResetAttr(..)> or
-    // <ResetAllAttr(..)> method is running.
-    // Needed to avoid duplicate handling of attribute change actions.
-    bool mbInSetOrResetAttr;
-    // pointer to the list, to whose the text node is added to
-    SwList* mpList;
-    /// #i111677# cached expansion (for clipboard)
-    ::std::auto_ptr< ::rtl::OUString > m_pNumStringCache;
+	// boolean, indicating that a <SetAttr(..)> or <ResetAttr(..)> or
+	// <ResetAllAttr(..)> method is running.
+	// Needed to avoid duplicate handling of attribute change actions.
+	bool mbInSetOrResetAttr;
+	// pointer to the list, to whose the text node is added to
+	SwList* mpList;
+	/// #i111677# cached expansion (for clipboard)
+	::std::auto_ptr< ::rtl::OUString > m_pNumStringCache;
 
-    ::com::sun::star::uno::WeakReference<
-        ::com::sun::star::text::XTextContent> m_wXParagraph;
+	::com::sun::star::uno::WeakReference<
+		::com::sun::star::text::XTextContent> m_wXParagraph;
 
-    //UUUU DrawingLayer FillAttributes in a preprocessed form for primitive usage
-    drawinglayer::attribute::SdrAllFillAttributesHelperPtr  maFillAttributes;
+	//UUUU DrawingLayer FillAttributes in a preprocessed form for primitive usage
+	drawinglayer::attribute::SdrAllFillAttributesHelperPtr maFillAttributes;
 
     SW_DLLPRIVATE SwTxtNode( const SwNodeIndex &rWhere, SwTxtFmtColl *pTxtColl,
                              const SfxItemSet* pAutoAttr = 0 );
@@ -142,8 +143,8 @@ class SW_DLLPUBLIC SwTxtNode: public SwCntntNode, public ::sfx2::Metadatable
           const SwIndex & rStart, /*const*/ xub_StrLen nLen,
           const bool bUpdate = true );
 
-    // Verlagere alles umfassende harte Attribute in den AttrSet des Absatzes
-	SW_DLLPRIVATE void MoveTxtAttr_To_AttrSet();  // wird von SplitNode gerufen.
+	// Verlagere alles umfassende harte Attribute in den AttrSet des Absatzes
+	SW_DLLPRIVATE void MoveTxtAttr_To_AttrSet(); // wird von SplitNode gerufen.
 
 	// lege den spz. AttrSet an
 	SW_DLLPRIVATE virtual void NewAttrSet( SwAttrPool& );
@@ -198,12 +199,12 @@ public:
     bool IsWordCountDirty() const;
     bool IsWrongDirty() const;
     bool IsGrammarCheckDirty() const;
-    bool IsSmartTagDirty() const;   // SMARTTAGS
+    bool IsSmartTagDirty() const; // SMARTTAGS
     bool IsAutoCompleteWordDirty() const;
     void SetWordCountDirty( bool bNew ) const;
     void SetWrongDirty( bool bNew ) const;
     void SetGrammarCheckDirty( bool bNew ) const;
-    void SetSmartTagDirty( bool bNew ) const;  // SMARTTAGS
+    void SetSmartTagDirty( bool bNew ) const; // SMARTTAGS
     void SetAutoCompleteWordDirty( bool bNew ) const;
     void SetWrong( SwWrongList* pNew, bool bDelete = true );
     SwWrongList* GetWrong();
@@ -217,26 +218,26 @@ public:
 	bool TryCharSetExpandToNum(const SfxItemSet& pCharSet);
 	//End of modification, by easyfan
 
-    //
-    // End: Data collected during idle time
-    //
+	//
+	// End: Data collected during idle time
+	//
 protected:
 	// fuers Umhaengen der TxtFmtCollections (Outline-Nummerierung!!)
-    virtual void Modify( const SfxPoolItem*, const SfxPoolItem* );
-    virtual void SwClientNotify( const SwModify&, const SfxHint& );
+	virtual void Modify( const SfxPoolItem*, const SfxPoolItem* );
+	virtual void SwClientNotify( const SwModify&, const SfxHint& );
 
 public:
-    using SwCntntNode::GetAttr;
+	using SwCntntNode::GetAttr;
 
-    const String& GetTxt() const { return m_Text; }
+	const String& GetTxt() const { return m_Text; }
 
-    // getters for SwpHints
-    inline       SwpHints &GetSwpHints();
-    inline const SwpHints &GetSwpHints() const;
-    inline       SwpHints *GetpSwpHints()       { return m_pSwpHints; }
-    inline const SwpHints *GetpSwpHints() const { return m_pSwpHints; }
-    inline       bool   HasHints() const { return m_pSwpHints ? true : false; }
-    inline       SwpHints &GetOrCreateSwpHints();
+	// getters for SwpHints
+	inline       SwpHints &GetSwpHints();
+	inline const SwpHints &GetSwpHints() const;
+	inline       SwpHints *GetpSwpHints()       { return m_pSwpHints; }
+	inline const SwpHints *GetpSwpHints() const { return m_pSwpHints; }
+	inline       bool   HasHints() const { return m_pSwpHints ? true : false; }
+	inline       SwpHints &GetOrCreateSwpHints();
 
 	virtual ~SwTxtNode();
 
@@ -291,7 +292,7 @@ public:
     // loesche alle Attribute aus dem SwpHintsArray.
     void    ClearSwpHintsArr( bool bDelFields );
 
-    /// Insert pAttr into hints array. @return true iff inserted successfully
+    /// Insert pAttr into hints array. @return true if inserted successfully
     bool    InsertHint( SwTxtAttr * const pAttr,
                   const SetAttrMode nMode = nsSetAttrMode::SETATTR_DEFAULT );
     /// create new text attribute from rAttr and insert it
@@ -316,7 +317,7 @@ public:
     // corresponding node has not its own indent attributes and the
     // position-and-space mode of the list level is SvxNumberFormat::LABEL_ALIGNMENT.
     sal_Bool GetAttr( SfxItemSet& rSet, xub_StrLen nStt, xub_StrLen nEnd,
-                  sal_Bool bOnlyTxtAttr  = sal_False,
+                  sal_Bool bOnlyTxtAttr = sal_False,
                   sal_Bool bGetFromChrFmt = sal_True,
                   const bool bMergeIndentValuesOfNumRule = false ) const;
     // <--
@@ -409,9 +410,9 @@ public:
         const bool bIncludeInputFldAtStart = false ) const;
 
 	// Aktuelles Wort zurueckliefern
-    XubString GetCurWord(xub_StrLen) const;
+	XubString GetCurWord(xub_StrLen) const;
 	sal_uInt16 Spell(SwSpellArgs*);
-    sal_uInt16 Convert( SwConversionArgs & );
+	sal_uInt16 Convert( SwConversionArgs & );
 
 	inline SwTxtFmtColl *GetTxtColl() const;
 	virtual SwFmtColl *ChgFmtColl( SwFmtColl* );
@@ -430,7 +431,7 @@ public:
     /**
        Returns numbering rule of this text node.
 
-       @param bInParent     serach in parent attributes, too
+       @param bInParent     search in parent attributes, too
 
        @return numbering rule of this text node or NULL if none is set
      */
@@ -745,7 +746,7 @@ public:
 
     // is the paragraph visible?
     inline bool HasHiddenParaField() const
-        { return m_pSwpHints ? m_pSwpHints->HasHiddenParaField()  : false; }
+        { return m_pSwpHints ? m_pSwpHints->HasHiddenParaField() : false; }
 
     //
     // Hidden Paragraph Field:
@@ -791,7 +792,7 @@ public:
     // to economize notifications
     bool IsNotificationEnabled() const;
 
-    // Checks a temporary notification blocker and the global conditons of IsNotificationEnabled()
+    // Checks a temporary notification blocker and the global conditions of IsNotificationEnabled()
     bool IsNotifiable() const;
 
     void SetListRestart( bool bRestart );
@@ -871,7 +872,7 @@ inline SwTxtFmtColl* SwTxtNode::GetTxtColl() const
 
 // fuer den IBM-Compiler nicht inlinen wg. 42876
 #ifndef ICC
-// Inline Metoden aus Node.hxx - erst hier ist der TxtNode bekannt !!
+// Inline Methoden aus Node.hxx - erst hier ist der TxtNode bekannt !!
 inline       SwTxtNode   *SwNode::GetTxtNode()
 {
 	 return ND_TEXTNODE == nNodeType ? static_cast<SwTxtNode*>(this) : 0;
