@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _TBLAFMT_HXX
@@ -28,14 +29,14 @@
 JP 20.07.95:
 
 	Die akt. Struktur der Autoformatierung darf nicht mehr veraendert werden.
-	Diese wird durch unterschiedlichen Code vom StartWriter und vom StarCalc
+	Diese wird durch unterschiedlichen Code von Writer und Calc
 	eingelesen/geschrieben.
-	Sollte sich doch mal eine Aenderung nicht vermeiden lassen, dann auf
-	jedenfall in beiden Applikationen aendern.
+	Sollte sich doch mal eine Änderung nicht vermeiden lassen, dann auf
+	jeden Fall in beiden Applikationen ändern.
 
-    The structure of table auto formatting should not changed. It is used
-    by different code of Writer and Calc. If a change is necessary, the
-    source code of both applications must be changed!
+	The structure of table auto formatting should not changed. It is used
+	by different code of Writer and Calc. If a change is necessary, the
+	source code of both applications must be changed!
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 **************************************************************************/
@@ -68,22 +69,22 @@ class SvNumberFormatter;
 
 class SwBoxAutoFmt
 {
-    // common attributes of Calc and Writer
-    // --- from 641 on: CJK and CTL font settings
-    SvxFontItem         aFont;
-    SvxFontHeightItem   aHeight;
-    SvxWeightItem       aWeight;
-    SvxPostureItem      aPosture;
+	// common attributes of Calc and Writer
+	// --- from 641 on: CJK and CTL font settings
+	SvxFontItem			aFont;
+	SvxFontHeightItem	aHeight;
+	SvxWeightItem		aWeight;
+	SvxPostureItem		aPosture;
 
-    SvxFontItem         aCJKFont;
-    SvxFontHeightItem   aCJKHeight;
-    SvxWeightItem       aCJKWeight;
-    SvxPostureItem      aCJKPosture;
+	SvxFontItem			aCJKFont;
+	SvxFontHeightItem	aCJKHeight;
+	SvxWeightItem		aCJKWeight;
+	SvxPostureItem		aCJKPosture;
 
-    SvxFontItem         aCTLFont;
-    SvxFontHeightItem   aCTLHeight;
-    SvxWeightItem       aCTLWeight;
-    SvxPostureItem      aCTLPosture;
+	SvxFontItem			aCTLFont;
+	SvxFontHeightItem	aCTLHeight;
+	SvxWeightItem		aCTLWeight;
+	SvxPostureItem		aCTLPosture;
 
 	SvxUnderlineItem	aUnderline;
 	SvxOverlineItem		aOverline;
@@ -92,23 +93,23 @@ class SwBoxAutoFmt
 	SvxShadowedItem		aShadowed;
 	SvxColorItem		aColor;
 	SvxBoxItem			aBox;
-    SvxLineItem         aTLBR;
-    SvxLineItem         aBLTR;
+	SvxLineItem			aTLBR;
+	SvxLineItem			aBLTR;
 	SvxBrushItem		aBackground;
 
-    // Writer specific
+	// Writer specific
 	SvxAdjustItem		aAdjust;
 
-    // Calc specific
+	// Calc specific
 	SvxHorJustifyItem	aHorJustify;
 	SvxVerJustifyItem	aVerJustify;
-    SfxBoolItem         aStacked;
+	SfxBoolItem			aStacked;
 	SvxMarginItem		aMargin;
 	SfxBoolItem			aLinebreak;
 	SfxInt32Item		aRotateAngle;
 	SvxRotateModeItem	aRotateMode;
 
-    // number format
+	// number format
 	String				sNumFmtString;
 	LanguageType		eSysLanguage, eNumFmtLanguage;
 
@@ -122,64 +123,64 @@ public:
 
 	// die Get-Methoden
 	const SvxFontItem		&GetFont() const		{ return aFont; }
-	const SvxFontHeightItem	&GetHeight() const 		{ return aHeight; }
-	const SvxWeightItem		&GetWeight() const 		{ return aWeight; }
-	const SvxPostureItem	&GetPosture() const 	{ return aPosture; }
-    const SvxFontItem       &GetCJKFont() const     { return aCJKFont; }
-    const SvxFontHeightItem &GetCJKHeight() const   { return aCJKHeight; }
-    const SvxWeightItem     &GetCJKWeight() const   { return aCJKWeight; }
-    const SvxPostureItem    &GetCJKPosture() const  { return aCJKPosture; }
-    const SvxFontItem       &GetCTLFont() const     { return aCTLFont; }
-    const SvxFontHeightItem &GetCTLHeight() const   { return aCTLHeight; }
-    const SvxWeightItem     &GetCTLWeight() const   { return aCTLWeight; }
-    const SvxPostureItem    &GetCTLPosture() const  { return aCTLPosture; }
-	const SvxUnderlineItem	&GetUnderline() const 	{ return aUnderline; }
-	const SvxOverlineItem	&GetOverline() const 	{ return aOverline; }
-	const SvxCrossedOutItem	&GetCrossedOut() const 	{ return aCrossedOut; }
-	const SvxContourItem	&GetContour() const 	{ return aContour; }
-	const SvxShadowedItem	&GetShadowed() const 	{ return aShadowed; }
-	const SvxColorItem		&GetColor() const 		{ return aColor; }
+	const SvxFontHeightItem	&GetHeight() const		{ return aHeight; }
+	const SvxWeightItem		&GetWeight() const		{ return aWeight; }
+	const SvxPostureItem	&GetPosture() const		{ return aPosture; }
+	const SvxFontItem		&GetCJKFont() const		{ return aCJKFont; }
+	const SvxFontHeightItem	&GetCJKHeight() const	{ return aCJKHeight; }
+	const SvxWeightItem		&GetCJKWeight() const	{ return aCJKWeight; }
+	const SvxPostureItem	&GetCJKPosture() const	{ return aCJKPosture; }
+	const SvxFontItem		&GetCTLFont() const		{ return aCTLFont; }
+	const SvxFontHeightItem	&GetCTLHeight() const	{ return aCTLHeight; }
+	const SvxWeightItem		&GetCTLWeight() const	{ return aCTLWeight; }
+	const SvxPostureItem	&GetCTLPosture() const	{ return aCTLPosture; }
+	const SvxUnderlineItem	&GetUnderline() const	{ return aUnderline; }
+	const SvxOverlineItem	&GetOverline() const	{ return aOverline; }
+	const SvxCrossedOutItem	&GetCrossedOut() const	{ return aCrossedOut; }
+	const SvxContourItem	&GetContour() const		{ return aContour; }
+	const SvxShadowedItem	&GetShadowed() const	{ return aShadowed; }
+	const SvxColorItem		&GetColor() const		{ return aColor; }
 	const SvxAdjustItem		&GetAdjust() const		{ return aAdjust; }
-	const SvxBoxItem		&GetBox() const 		{ return aBox; }
-    const SvxLineItem       &GetTLBR() const        { return aTLBR; }
-    const SvxLineItem       &GetBLTR() const        { return aBLTR; }
-	const SvxBrushItem		&GetBackground() const 	{ return aBackground; }
+	const SvxBoxItem		&GetBox() const			{ return aBox; }
+	const SvxLineItem		&GetTLBR() const		{ return aTLBR; }
+	const SvxLineItem		&GetBLTR() const		{ return aBLTR; }
+	const SvxBrushItem		&GetBackground() const	{ return aBackground; }
 	void GetValueFormat( String& rFmt, LanguageType& rLng, LanguageType& rSys ) const
 		{ rFmt = sNumFmtString; rLng = eNumFmtLanguage; rSys = eSysLanguage; }
 
 	// die SetMethoden
-	void SetFont( const SvxFontItem& rNew ) 			{ aFont = rNew; }
-	void SetHeight( const SvxFontHeightItem& rNew ) 	{ aHeight = rNew; }
-	void SetWeight( const SvxWeightItem& rNew ) 		{ aWeight = rNew; }
-	void SetPosture( const SvxPostureItem& rNew ) 		{ aPosture = rNew; }
-    void SetCJKFont( const SvxFontItem& rNew )          { aCJKFont = rNew; }
-    void SetCJKHeight( const SvxFontHeightItem& rNew )  { aCJKHeight = rNew; }
-    void SetCJKWeight( const SvxWeightItem& rNew )      { aCJKWeight = rNew; }
-    void SetCJKPosture( const SvxPostureItem& rNew )    { aCJKPosture = rNew; }
-    void SetCTLFont( const SvxFontItem& rNew )          { aCTLFont = rNew; }
-    void SetCTLHeight( const SvxFontHeightItem& rNew )  { aCTLHeight = rNew; }
-    void SetCTLWeight( const SvxWeightItem& rNew )      { aCTLWeight = rNew; }
-    void SetCTLPosture( const SvxPostureItem& rNew )    { aCTLPosture = rNew; }
-	void SetUnderline( const SvxUnderlineItem& rNew ) 	{ aUnderline = rNew; }
-	void SetOverline( const SvxOverlineItem& rNew ) 	{ aOverline = rNew; }
+	void SetFont( const SvxFontItem& rNew )				{ aFont = rNew; }
+	void SetHeight( const SvxFontHeightItem& rNew )		{ aHeight = rNew; }
+	void SetWeight( const SvxWeightItem& rNew )			{ aWeight = rNew; }
+	void SetPosture( const SvxPostureItem& rNew )		{ aPosture = rNew; }
+	void SetCJKFont( const SvxFontItem& rNew )			{ aCJKFont = rNew; }
+	void SetCJKHeight( const SvxFontHeightItem& rNew )	{ aCJKHeight = rNew; }
+	void SetCJKWeight( const SvxWeightItem& rNew )		{ aCJKWeight = rNew; }
+	void SetCJKPosture( const SvxPostureItem& rNew )	{ aCJKPosture = rNew; }
+	void SetCTLFont( const SvxFontItem& rNew )			{ aCTLFont = rNew; }
+	void SetCTLHeight( const SvxFontHeightItem& rNew )	{ aCTLHeight = rNew; }
+	void SetCTLWeight( const SvxWeightItem& rNew )		{ aCTLWeight = rNew; }
+	void SetCTLPosture( const SvxPostureItem& rNew )	{ aCTLPosture = rNew; }
+	void SetUnderline( const SvxUnderlineItem& rNew )	{ aUnderline = rNew; }
+	void SetOverline( const SvxOverlineItem& rNew )		{ aOverline = rNew; }
 	void SetCrossedOut( const SvxCrossedOutItem& rNew )	{ aCrossedOut = rNew; }
-	void SetContour( const SvxContourItem& rNew ) 		{ aContour = rNew; }
-	void SetShadowed( const SvxShadowedItem& rNew ) 	{ aShadowed = rNew; }
-	void SetColor( const SvxColorItem& rNew ) 			{ aColor = rNew; }
+	void SetContour( const SvxContourItem& rNew )		{ aContour = rNew; }
+	void SetShadowed( const SvxShadowedItem& rNew )		{ aShadowed = rNew; }
+	void SetColor( const SvxColorItem& rNew )			{ aColor = rNew; }
 	void SetAdjust( const SvxAdjustItem& rNew )
 		{
 			aAdjust.SetAdjust( rNew.GetAdjust() );
 			aAdjust.SetOneWord( rNew.GetOneWord() );
 			aAdjust.SetLastBlock( rNew.GetLastBlock() );
 		}
-	void SetBox( const SvxBoxItem& rNew ) 				{ aBox = rNew; }
-    void SetBackground( const SvxBrushItem& rNew )      { aBackground = rNew; }
+	void SetBox( const SvxBoxItem& rNew )				{ aBox = rNew; }
+	void SetBackground( const SvxBrushItem& rNew )		{ aBackground = rNew; }
 	void SetValueFormat( const String& rFmt, LanguageType eLng, LanguageType eSys )
 		{ sNumFmtString = rFmt; eNumFmtLanguage = eLng; eSysLanguage = eSys; }
 
 	sal_Bool Load( SvStream& rStream, const SwAfVersions& rVersions, sal_uInt16 nVer );
 	sal_Bool Save( SvStream& rStream ) const;
-	sal_Bool SaveVerionNo( SvStream& rStream ) const;
+	sal_Bool SaveVersionNo( SvStream& rStream ) const;
 
 #ifdef READ_OLDVERS
 	// lade alte Version
@@ -195,14 +196,14 @@ class SW_DLLPUBLIC SwTableAutoFmt
 	String aName;
 	sal_uInt16 nStrResId;
 
-    // common flags of Calc and Writer
+	// common flags of Calc and Writer
 	sal_Bool bInclFont : 1;
 	sal_Bool bInclJustify : 1;
 	sal_Bool bInclFrame : 1;
 	sal_Bool bInclBackground : 1;
 	sal_Bool bInclValueFormat : 1;
 
-    // Calc specific flags
+	// Calc specific flags
 	sal_Bool bInclWidthHeight : 1;
 
 	SwBoxAutoFmt* aBoxAutoFmt[ 16 ];
@@ -226,14 +227,14 @@ public:
 	void UpdateToSet( sal_uInt8 nPos, SfxItemSet& rSet, UpdateFlags eFlags,
 						SvNumberFormatter* ) const ;
 
-	sal_Bool IsFont() const 		{ return bInclFont; }
-	sal_Bool IsJustify() const 		{ return bInclJustify; }
-	sal_Bool IsFrame() const 		{ return bInclFrame; }
+	sal_Bool IsFont() const			{ return bInclFont; }
+	sal_Bool IsJustify() const		{ return bInclJustify; }
+	sal_Bool IsFrame() const		{ return bInclFrame; }
 	sal_Bool IsBackground() const	{ return bInclBackground; }
 	sal_Bool IsValueFormat() const	{ return bInclValueFormat; }
 
 	void SetFont( const sal_Bool bNew )			{ bInclFont = bNew; }
-	void SetJustify( const  sal_Bool bNew )		{ bInclJustify = bNew; }
+	void SetJustify( const sal_Bool bNew )		{ bInclJustify = bNew; }
 	void SetFrame( const sal_Bool bNew )		{ bInclFrame = bNew; }
 	void SetBackground( const sal_Bool bNew )	{ bInclBackground = bNew; }
 	void SetValueFormat( const sal_Bool bNew )	{ bInclValueFormat = bNew; }
