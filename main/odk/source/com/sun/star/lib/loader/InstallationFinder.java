@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -47,10 +47,10 @@ import java.util.Vector;
  * environment variable won't work with those Java versions.
  * If no UNO installation is specified by the user, the default installation
  * on the system will be returned.</p>
- *   
+ *
  * <p>On the Windows platform the default installation is read from the Windows
  * Registry.</p>
- *   
+ *
  * <p>On the Unix/Linux platforms the default installation is found from the
  * PATH environment variable. Note, that for Java 1.3.1 and Java 1.4 the
  * default installation is found by using the 'which' command, because
@@ -68,19 +68,19 @@ final class InstallationFinder {
         "com.sun.star.lib.loader.unopath";
     private static final String ENVVAR_NAME = "UNO_PATH";
     private static final String SOFFICE = "soffice"; // Unix/Linux only
-    
+
     private InstallationFinder() {} // do not instantiate
-    
+
     /**
      * Gets the path of a UNO installation.
-     *                                 
+     *
      * @return the installation path or <code>null</code>, if no installation
-     *         was specified or found, or if an error occurred     
-     */    
+     *         was specified or found, or if an error occurred
+     */
     public static String getPath() {
-        
+
         String path = null;
-        
+
         // get the installation path from the Java system property
         // com.sun.star.lib.loader.unopath
         // (all platforms)
@@ -112,7 +112,7 @@ final class InstallationFinder {
                             // get the installation path from the 'which'
                             // command (Unix/Linux platforms only)
                             path = getPathFromWhich();
-                            if ( path == null ) {                   
+                            if ( path == null ) {
                                 // get the installation path from the
                                 // .sversionrc file (Unix/Linux platforms only,
                                 // for older versions than OOo 2.0)
@@ -123,10 +123,10 @@ final class InstallationFinder {
                 }
             }
         }
-        
+
         return path;
     }
-    
+
     /**
      * Gets the installation path from a Java system property.
      *
@@ -134,97 +134,97 @@ final class InstallationFinder {
      * The Java system property can be passed into the application by using
      * the -D flag, e.g.
      * java -D<property name>=<installation path> -jar application.jar.</p>
-     *                          
+     *
      * @return the installation path or <code>null</code>, if no installation
      *         was specified in the Java system property or if an error occurred
-     */    
+     */
     private static String getPathFromProperty( String prop ) {
 
         String path = null;
-        
+
         try {
             path = System.getProperty( prop );
         } catch ( SecurityException e ) {
             // if a SecurityException was thrown, return <code>null</code>
         }
 
-        return path;        
+        return path;
     }
 
     /**
      * Gets the installation path from an environment variable.
-     *   
+     *
      * <p>This method is called on all platforms.
-     * Note, that in Java 1.3.1 and Java 1.4 System.getenv() throws 
-     * java.lang.Error and therefore this method returns null for those 
+     * Note, that in Java 1.3.1 and Java 1.4 System.getenv() throws
+     * java.lang.Error and therefore this method returns null for those
      * Java versions.</p>
      *
      * @return the installation path or <code>null</code>, if no installation
      *         was specified in the environment variable or if an error occurred
      */
-    private static String getPathFromEnvVar( String var ) {        
+    private static String getPathFromEnvVar( String var ) {
 
         String path = null;
-        
+
         try {
-            path = System.getenv( var );            
+            path = System.getenv( var );
         } catch ( SecurityException e ) {
             // if a SecurityException was thrown, return <code>null</code>
         } catch ( java.lang.Error err ) {
-            // System.getenv() throws java.lang.Error in Java 1.3.1 and 
+            // System.getenv() throws java.lang.Error in Java 1.3.1 and
             // Java 1.4
         }
-        
+
         return path;
     }
-    
+
     /**
      * Gets the installation path from the Windows Registry.
      *
      * <p>This method is called on the Windows platform only.</p>
-     *   
+     *
      * @return the installation path or <code>null</code>, if no installation
-     *         was found or if an error occurred     
-     */    
+     *         was found or if an error occurred
+     */
     private static String getPathFromWindowsRegistry() {
 
         final String SUBKEYNAME = "Software\\OpenOffice\\UNO\\InstallPath";
         final String SUBKEYNAME64 = "Software\\Wow6432Node\\OpenOffice\\UNO\\InstallPath";
 
         String path = null;
-        
+
         try {
             // read the key's default value from HKEY_CURRENT_USER
             WinRegKey key = new WinRegKey( "HKEY_CURRENT_USER", SUBKEYNAME );
-            path = key.getStringValue( "" ); // default            
+            path = key.getStringValue( "" ); // default
         } catch ( WinRegKeyException e ) {
             try {
                 // read the key's default value from HKEY_LOCAL_MACHINE
                 WinRegKey key = new WinRegKey( "HKEY_CURRENT_USER",
                                                SUBKEYNAME64 );
-                path = key.getStringValue( "" ); // default                
+                path = key.getStringValue( "" ); // default
             } catch ( WinRegKeyException e64 ) {
                 try {
                     // read the key's default value from HKEY_LOCAL_MACHINE
                     WinRegKey key = new WinRegKey( "HKEY_LOCAL_MACHINE",
                                                    SUBKEYNAME );
-                    path = key.getStringValue( "" ); // default                
+                    path = key.getStringValue( "" ); // default
                 } catch ( WinRegKeyException we ) {
                     try {
                         // read the key's default value from HKEY_LOCAL_MACHINE
                         WinRegKey key = new WinRegKey( "HKEY_LOCAL_MACHINE",
                                                        SUBKEYNAME64 );
-                        path = key.getStringValue( "" ); // default                
+                        path = key.getStringValue( "" ); // default
                     } catch ( WinRegKeyException we64 ) {
                         System.err.println( "com.sun.star.lib.loader." +
                                             "InstallationFinder::getPathFromWindowsRegistry: " +
                                             "reading key from Windows Registry failed: " + we64 );
-                    } 
-                } 
+                    }
+                }
             }
         }
-        
-        return path;        
+
+        return path;
     }
 
     /**
@@ -243,17 +243,17 @@ final class InstallationFinder {
     private static String getPathFromPathEnvVar() {
 
         final String PATH_ENVVAR_NAME = "PATH";
-        
+
         String path = null;
         String str = null;
-        
+
         try {
             str = System.getenv( PATH_ENVVAR_NAME );
         } catch ( SecurityException e ) {
             // if a SecurityException was thrown, return <code>null</code>
             return null;
         } catch ( java.lang.Error err ) {
-            // System.getenv() throws java.lang.Error in Java 1.3.1 and 
+            // System.getenv() throws java.lang.Error in Java 1.3.1 and
             // Java 1.4
             return null;
         }
@@ -265,7 +265,7 @@ final class InstallationFinder {
                 File file = new File( tokens.nextToken(), SOFFICE );
                 try {
                     if ( file.exists() ) {
-                        try {                   
+                        try {
                             // resolve symlink
                             path = file.getCanonicalFile().getParent();
                             if ( path != null )
@@ -276,7 +276,7 @@ final class InstallationFinder {
                             System.err.println( "com.sun.star.lib.loader." +
                                 "InstallationFinder::getPathFromEnvVar: " +
                                 "bad path: " + e );
-                        }  
+                        }
                     }
                 } catch ( SecurityException e ) {
                     // if a SecurityException was thrown, ignore this path
@@ -284,10 +284,10 @@ final class InstallationFinder {
                 }
             }
         }
-        
+
         return path;
     }
-    
+
     /**
      * Gets the installation path from the 'which' command on Unix/Linux
      * platforms.
@@ -295,16 +295,16 @@ final class InstallationFinder {
      * <p>This method is called on Unix/Linux platforms only.
      * An installation is found, if the executable 'soffice' or a symbolic link
      * is in one of the directories listed in the PATH environment variable.</p>
-     *   
+     *
      * @return the installation path or <code>null</code>, if no installation
      *         was found or if an error occurred
-     */    
+     */
     private static String getPathFromWhich() {
 
         final String WHICH = "which";
-        
+
         String path = null;
-        
+
         // start the which process
         String[] cmdArray = new String[2];
         cmdArray[0] = WHICH;
@@ -322,15 +322,15 @@ final class InstallationFinder {
                 "which command failed: " + e );
             return null;
         }
-            
+
         // empty standard error stream in a separate thread
         StreamGobbler gobbler = new StreamGobbler( proc.getErrorStream() );
         gobbler.start();
-            
+
         // read the which output from standard input stream
         BufferedReader br = new BufferedReader(
             new InputStreamReader( proc.getInputStream() ) );
-        String line = null;        
+        String line = null;
         try {
             while ( ( line = br.readLine() ) != null ) {
                 if ( path == null ) {
@@ -362,30 +362,30 @@ final class InstallationFinder {
             return null;
         } finally {
             if ( br != null ) {
-                try {                            
+                try {
                     br.close();
                 } catch ( IOException e ) {
                     // closing standard input stream failed, ignore
-                }   
+                }
             }
-        }        
-            
+        }
+
         try {
             // wait until the which process has terminated
             proc.waitFor();
         } catch ( InterruptedException e ) {
             // the current thread was interrupted by another thread,
             // kill the which process
-            proc.destroy();            
+            proc.destroy();
             // set the interrupted status
-            Thread.currentThread().interrupt();                
+            Thread.currentThread().interrupt();
         }
-            
+
         return path;
     }
-    
+
     /**
-     * Gets the installation path from the .sverionrc file in the user's home
+     * Gets the installation path from the .sversionrc file in the user's home
      * directory.
      *
      * <p>This method is called on Unix/Linux platforms only.
@@ -393,16 +393,16 @@ final class InstallationFinder {
      * OOo 2.0.</p>
      *
      * @return the installation path or <code>null</code>, if no installation
-     *         was found or if an error occurred     
+     *         was found or if an error occurred
      */
     private static String getPathFromSVersionFile() {
 
         final String SVERSION = ".sversionrc"; // Unix/Linux only
         final String VERSIONS = "[Versions]";
-        
+
         String path = null;
-        
-        try {        
+
+        try {
             File fSVersion = new File(
                 System.getProperty( "user.home" ) ,SVERSION );
             if ( fSVersion.exists() ) {
@@ -411,7 +411,7 @@ final class InstallationFinder {
                 try {
                     br = new BufferedReader( new InputStreamReader(
                         new FileInputStream( fSVersion ), "UTF-8" ) );
-                    String line = null;                
+                    String line = null;
                     while ( ( line = br.readLine() ) != null &&
                             ( line.equals( VERSIONS ) ) != true ) {
                         // read lines until [Versions] is found
@@ -429,32 +429,32 @@ final class InstallationFinder {
                         "reading .sversionrc file failed: " + e );
                 } finally {
                     if ( br != null ) {
-                        try {                            
+                        try {
                             br.close();
                         } catch ( IOException e ) {
                             // closing .sversionrc failed, ignore
-                        }   
+                        }
                     }
-                }            
+                }
                 for ( int i = lines.size() - 1; i >= 0; i-- ) {
                     StringTokenizer tokens = new StringTokenizer(
                         (String)lines.elementAt( i ), "=" );
                     if ( tokens.countTokens() != 2 )
-                        continue;                
+                        continue;
                     String key = tokens.nextToken();
                     String url = tokens.nextToken();
-                    path = getCanonicalPathFromFileURL( url );                
+                    path = getCanonicalPathFromFileURL( url );
                     if ( path != null )
-                        break;                
-                }            
-            }            
+                        break;
+                }
+            }
         } catch ( SecurityException e ) {
             return null;
-        }        
-        
+        }
+
         return path;
     }
-    
+
     /**
      * Translates an OOo-internal absolute file URL reference (encoded using
      * UTF-8) into a Java canonical pathname.
@@ -467,14 +467,14 @@ final class InstallationFinder {
      * <code>null</code> is returned
      */
     private static String getCanonicalPathFromFileURL( String oooUrl ) {
-        
+
         String prefix = "file://";
         if (oooUrl.length() < prefix.length()
             || !oooUrl.substring(0, prefix.length()).toLowerCase().equals(
                 prefix))
         {
             return null;
-        }        
+        }
         StringBuffer buf = new StringBuffer(prefix);
         int n = oooUrl.indexOf('/', prefix.length());
         if (n < 0) {
@@ -557,12 +557,12 @@ final class InstallationFinder {
                     ret = file.getCanonicalFile().getParent();
                 } catch ( IOException e ) {
                     return null;
-                }     
+                }
             }
         } catch ( SecurityException e ) {
             return null;
         }
-        
+
         return ret;
     }
 
