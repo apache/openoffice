@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,7 +42,7 @@ class SourceDirectoryList;
 class CodedDependency : public ByteString
 {
 private:
-	sal_uInt16 nOSType;							// operating systems where dependeny exists
+	sal_uInt16 nOSType;							// operating systems where dependency exists
 
 public:
 	/* create a dependency instance with given coded directory name
@@ -91,7 +91,7 @@ public:
 class Dependency : public ByteString
 {
 private:
-	sal_uInt16 nOSType;							// operating systems where dependecy exists
+	sal_uInt16 nOSType;							// operating systems where dependency exists
 
 public:
 	/* create a dependency instance with given directory name
@@ -127,8 +127,8 @@ private:
 
 	SByteStringList *pDependencies;			// dependencies on other directories in this depth
 
-	SByteStringList *pCodedDependencies;   	// dependencies on other directories in different depth
-	SByteStringList *pCodedIdentifier;     	// symbolic identifier to resolve dependencies
+	SByteStringList *pCodedDependencies;	// dependencies on other directories in different depth
+	SByteStringList *pCodedIdentifier;		// symbolic identifier to resolve dependencies
 
 	/* try to resolve a single dependency
 	 */
@@ -148,7 +148,7 @@ private:
 
 public:
 
-    /* create a directory instance with given parent and name, no parent means this is the root
+	/* create a directory instance with given parent and name, no parent means this is the root
 	 * (not the file system root but the root of the source tree, e.g. o:\569)
 	 */
 	SourceDirectory(
@@ -233,7 +233,7 @@ public:
 		return pCodedIdentifier;
 	}
 
-	/* create dependencies on other directory, coded dependecies are used
+	/* create dependencies on other directory, coded dependencies are used
 	 */
 	void ResolveDependencies();
 
@@ -249,14 +249,14 @@ public:
 	 */
 	static SourceDirectory *CreateRootDirectory(
 		const ByteString &rRoot, 	// the root directory in file system
-		const ByteString &rVersion,	// the solar verion (r.g. SRC590, SRC591 etc.)
+		const ByteString &rVersion,	// the solar version (r.g. SRC590, SRC591 etc.)
 		sal_Bool bAll = sal_False			// add all directories or only buildable ones
 	);
 
 	/* create the makefile.rc in file system
 	 */
 	sal_Bool CreateRecursiveMakefile(
-		sal_Bool bAllChilds = sal_False 	// create rcursive for all sub directories
+		sal_Bool bAllChilds = sal_False 	// create recursive for all sub directories
 	);
 };
 
