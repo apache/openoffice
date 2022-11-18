@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -113,7 +113,7 @@ public:
 	sal_uInt16 nShadowedVersion;
 	sal_uInt16 nColorVersion;
 	sal_uInt16 nBoxVersion;
-    sal_uInt16 nLineVersion;
+	sal_uInt16 nLineVersion;
 	sal_uInt16 nBrushVersion;
 
 	sal_uInt16 nAdjustVersion;
@@ -144,7 +144,7 @@ SwAfVersions::SwAfVersions() :
 	nShadowedVersion(0),
 	nColorVersion(0),
 	nBoxVersion(0),
-    nLineVersion(0),
+	nLineVersion(0),
 	nBrushVersion(0),
 	nAdjustVersion(0),
 	nHorJustifyVersion(0),
@@ -165,15 +165,15 @@ void SwAfVersions::Load( SvStream& rStream, sal_uInt16 nVer )
 	rStream >> nWeightVersion;
 	rStream >> nPostureVersion;
 	rStream >> nUnderlineVersion;
-    if ( nVer >= AUTOFORMAT_ID_300OVRLN )
-    	rStream >> nOverlineVersion;
+	if ( nVer >= AUTOFORMAT_ID_300OVRLN )
+		rStream >> nOverlineVersion;
 	rStream >> nCrossedOutVersion;
 	rStream >> nContourVersion;
 	rStream >> nShadowedVersion;
 	rStream >> nColorVersion;
 	rStream >> nBoxVersion;
-    if ( nVer >= AUTOFORMAT_ID_680DR14 )
-        rStream >> nLineVersion;
+	if ( nVer >= AUTOFORMAT_ID_680DR14 )
+		rStream >> nLineVersion;
 	rStream >> nBrushVersion;
 	rStream >> nAdjustVersion;
 	rStream >> nHorJustifyVersion;
@@ -193,37 +193,37 @@ void SwAfVersions::Load( SvStream& rStream, sal_uInt16 nVer )
 
 SwBoxAutoFmt::SwBoxAutoFmt()
 	: aFont( *(SvxFontItem*)GetDfltAttr( RES_CHRATR_FONT ) ),
-    aHeight( 240, 100, RES_CHRATR_FONTSIZE ),
-    aWeight( WEIGHT_NORMAL, RES_CHRATR_WEIGHT ),
-    aPosture( ITALIC_NONE, RES_CHRATR_POSTURE ),
+	aHeight( 240, 100, RES_CHRATR_FONTSIZE ),
+	aWeight( WEIGHT_NORMAL, RES_CHRATR_WEIGHT ),
+	aPosture( ITALIC_NONE, RES_CHRATR_POSTURE ),
 
-    aCJKFont( *(SvxFontItem*)GetDfltAttr( RES_CHRATR_CJK_FONT ) ),
-    aCJKHeight( 240, 100, RES_CHRATR_CJK_FONTSIZE ),
-    aCJKWeight( WEIGHT_NORMAL, RES_CHRATR_CJK_WEIGHT ),
-    aCJKPosture( ITALIC_NONE, RES_CHRATR_CJK_POSTURE ),
+	aCJKFont( *(SvxFontItem*)GetDfltAttr( RES_CHRATR_CJK_FONT ) ),
+	aCJKHeight( 240, 100, RES_CHRATR_CJK_FONTSIZE ),
+	aCJKWeight( WEIGHT_NORMAL, RES_CHRATR_CJK_WEIGHT ),
+	aCJKPosture( ITALIC_NONE, RES_CHRATR_CJK_POSTURE ),
 
-    aCTLFont( *(SvxFontItem*)GetDfltAttr( RES_CHRATR_CTL_FONT ) ),
-    aCTLHeight( 240, 100, RES_CHRATR_CTL_FONTSIZE ),
-    aCTLWeight( WEIGHT_NORMAL, RES_CHRATR_CTL_WEIGHT ),
-    aCTLPosture( ITALIC_NONE, RES_CHRATR_CTL_POSTURE ),
+	aCTLFont( *(SvxFontItem*)GetDfltAttr( RES_CHRATR_CTL_FONT ) ),
+	aCTLHeight( 240, 100, RES_CHRATR_CTL_FONTSIZE ),
+	aCTLWeight( WEIGHT_NORMAL, RES_CHRATR_CTL_WEIGHT ),
+	aCTLPosture( ITALIC_NONE, RES_CHRATR_CTL_POSTURE ),
 
-    aUnderline( UNDERLINE_NONE, RES_CHRATR_UNDERLINE ),
-    aOverline( UNDERLINE_NONE, RES_CHRATR_OVERLINE ),
-    aCrossedOut( STRIKEOUT_NONE, RES_CHRATR_CROSSEDOUT ),
-    aContour( sal_False, RES_CHRATR_CONTOUR ),
-    aShadowed( sal_False, RES_CHRATR_SHADOWED ),
-    aColor( RES_CHRATR_COLOR ),
-    aBox( RES_BOX ),
-    aTLBR( 0 ),
-    aBLTR( 0 ),
-    aBackground( RES_BACKGROUND ),
-    aAdjust( SVX_ADJUST_LEFT, RES_PARATR_ADJUST ),
-    aHorJustify( SVX_HOR_JUSTIFY_STANDARD, 0),
-    aVerJustify( SVX_VER_JUSTIFY_STANDARD, 0),
-    aStacked( 0 ),
-    aMargin( 0 ),
-    aLinebreak( 0 ),
-    aRotateAngle( 0 ),
+	aUnderline( UNDERLINE_NONE, RES_CHRATR_UNDERLINE ),
+	aOverline( UNDERLINE_NONE, RES_CHRATR_OVERLINE ),
+	aCrossedOut( STRIKEOUT_NONE, RES_CHRATR_CROSSEDOUT ),
+	aContour( sal_False, RES_CHRATR_CONTOUR ),
+	aShadowed( sal_False, RES_CHRATR_SHADOWED ),
+	aColor( RES_CHRATR_COLOR ),
+	aBox( RES_BOX ),
+	aTLBR( 0 ),
+	aBLTR( 0 ),
+	aBackground( RES_BACKGROUND ),
+	aAdjust( SVX_ADJUST_LEFT, RES_PARATR_ADJUST ),
+	aHorJustify( SVX_HOR_JUSTIFY_STANDARD, 0),
+	aVerJustify( SVX_VER_JUSTIFY_STANDARD, 0),
+	aStacked( 0 ),
+	aMargin( 0 ),
+	aLinebreak( 0 ),
+	aRotateAngle( 0 ),
 
 // FIXME - add attribute IDs for the diagonal line items
 //    aTLBR( RES_... ),
@@ -240,14 +240,14 @@ SwBoxAutoFmt::SwBoxAutoFmt( const SwBoxAutoFmt& rNew )
 	aHeight( rNew.aHeight ),
 	aWeight( rNew.aWeight ),
 	aPosture( rNew.aPosture ),
-    aCJKFont( rNew.aCJKFont ),
-    aCJKHeight( rNew.aCJKHeight ),
-    aCJKWeight( rNew.aCJKWeight ),
-    aCJKPosture( rNew.aCJKPosture ),
-    aCTLFont( rNew.aCTLFont ),
-    aCTLHeight( rNew.aCTLHeight ),
-    aCTLWeight( rNew.aCTLWeight ),
-    aCTLPosture( rNew.aCTLPosture ),
+	aCJKFont( rNew.aCJKFont ),
+	aCJKHeight( rNew.aCJKHeight ),
+	aCJKWeight( rNew.aCJKWeight ),
+	aCJKPosture( rNew.aCJKPosture ),
+	aCTLFont( rNew.aCTLFont ),
+	aCTLHeight( rNew.aCTLHeight ),
+	aCTLWeight( rNew.aCTLWeight ),
+	aCTLPosture( rNew.aCTLPosture ),
 	aUnderline( rNew.aUnderline ),
 	aOverline( rNew.aOverline ),
 	aCrossedOut( rNew.aCrossedOut ),
@@ -255,13 +255,13 @@ SwBoxAutoFmt::SwBoxAutoFmt( const SwBoxAutoFmt& rNew )
 	aShadowed( rNew.aShadowed ),
 	aColor( rNew.aColor ),
 	aBox( rNew.aBox ),
-    aTLBR( rNew.aTLBR ),
-    aBLTR( rNew.aBLTR ),
+	aTLBR( rNew.aTLBR ),
+	aBLTR( rNew.aBLTR ),
 	aBackground( rNew.aBackground ),
 	aAdjust( rNew.aAdjust ),
 	aHorJustify( rNew.aHorJustify ),
 	aVerJustify( rNew.aVerJustify ),
-    aStacked( rNew.aStacked ),
+	aStacked( rNew.aStacked ),
 	aMargin( rNew.aMargin ),
 	aLinebreak( rNew.aLinebreak ),
 	aRotateAngle( rNew.aRotateAngle ),
@@ -283,14 +283,14 @@ SwBoxAutoFmt& SwBoxAutoFmt::operator=( const SwBoxAutoFmt& rNew )
 	aHeight = rNew.aHeight;
 	aWeight = rNew.aWeight;
 	aPosture = rNew.aPosture;
-    aCJKFont = rNew.aCJKFont;
-    aCJKHeight = rNew.aCJKHeight;
-    aCJKWeight = rNew.aCJKWeight;
-    aCJKPosture = rNew.aCJKPosture;
-    aCTLFont = rNew.aCTLFont;
-    aCTLHeight = rNew.aCTLHeight;
-    aCTLWeight = rNew.aCTLWeight;
-    aCTLPosture = rNew.aCTLPosture;
+	aCJKFont = rNew.aCJKFont;
+	aCJKHeight = rNew.aCJKHeight;
+	aCJKWeight = rNew.aCJKWeight;
+	aCJKPosture = rNew.aCJKPosture;
+	aCTLFont = rNew.aCTLFont;
+	aCTLHeight = rNew.aCTLHeight;
+	aCTLWeight = rNew.aCTLWeight;
+	aCTLPosture = rNew.aCTLPosture;
 	aUnderline = rNew.aUnderline;
 	aOverline = rNew.aOverline;
 	aCrossedOut = rNew.aCrossedOut;
@@ -299,13 +299,13 @@ SwBoxAutoFmt& SwBoxAutoFmt::operator=( const SwBoxAutoFmt& rNew )
 	aColor = rNew.aColor;
 	SetAdjust( rNew.aAdjust );
 	aBox = rNew.aBox;
-    aTLBR = rNew.aTLBR;
-    aBLTR = rNew.aBLTR;
+	aTLBR = rNew.aTLBR;
+	aBLTR = rNew.aBLTR;
 	aBackground = rNew.aBackground;
 
 	aHorJustify = rNew.aHorJustify;
 	aVerJustify = rNew.aVerJustify;
-    aStacked.SetValue( rNew.aStacked.GetValue() );
+	aStacked.SetValue( rNew.aStacked.GetValue() );
 	aMargin = rNew.aMargin;
 	aLinebreak.SetValue( rNew.aLinebreak.GetValue() );
 	aRotateAngle.SetValue( rNew.aRotateAngle.GetValue() );
@@ -490,7 +490,7 @@ sal_Bool SwBoxAutoFmt::Save( SvStream& rStream ) const
 }
 
 
-sal_Bool SwBoxAutoFmt::SaveVerionNo( SvStream& rStream ) const
+sal_Bool SwBoxAutoFmt::SaveVersionNo( SvStream& rStream ) const
 {
 	rStream << aFont.GetVersion( SOFFICE_FILEFORMAT_40 );
 	rStream << aHeight.GetVersion( SOFFICE_FILEFORMAT_40 );
@@ -520,8 +520,6 @@ sal_Bool SwBoxAutoFmt::SaveVerionNo( SvStream& rStream ) const
 
 	return 0 == rStream.GetError();
 }
-
-/*  */
 
 
 SwTableAutoFmt::SwTableAutoFmt( const String& rName )
@@ -670,7 +668,7 @@ SwBoxAutoFmt& SwTableAutoFmt::UpdateFromSet( sal_uInt8 nPos,
 								  static_cast<LanguageType>(::GetAppLanguage() ));
 		}
 	}
-	// den Rest koennen wir nicht, StarCalc spezifisch
+	// den Rest koennen wir nicht, Calc spezifisch
 
 	return *pFmt;
 }
@@ -760,7 +758,7 @@ void SwTableAutoFmt::UpdateToSet( sal_uInt8 nPos, SfxItemSet& rSet,
 		}
 	}
 
-	// den Rest koennen wir nicht, StarCalc spezifisch
+	// den Rest koennen wir nicht, Calc spezifisch
 }
 
 
@@ -1083,7 +1081,7 @@ sal_Bool SwTableAutoFmtTbl::Save( SvStream& rStream ) const
 
 		//-----------------------------------------------------------
 		// die VersionsNummer fuer alle Attribute schreiben
-		(*this)[ 0 ]->GetBoxFmt( 0 ).SaveVerionNo( rStream );
+		(*this)[ 0 ]->GetBoxFmt( 0 ).SaveVersionNo( rStream );
 
 		rStream << (sal_uInt16)(Count() - 1);
 		bRet = 0 == rStream.GetError();
@@ -1097,6 +1095,3 @@ sal_Bool SwTableAutoFmtTbl::Save( SvStream& rStream ) const
 	rStream.Flush();
 	return bRet;
 }
-
-
-
