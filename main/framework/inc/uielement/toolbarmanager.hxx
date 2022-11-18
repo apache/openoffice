@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -96,32 +96,32 @@ class ToolBarManager : public ::com::sun::star::frame::XFrameActionListener     
 					   public ::cppu::OWeakObject
 {
     public:
-        ToolBarManager( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rServicveManager, 
-                        const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& rFrame, 
+        ToolBarManager( const com::sun::star::uno::Reference< com::sun::star::lang::XMultiServiceFactory >& rServicveManager,
+                        const com::sun::star::uno::Reference< com::sun::star::frame::XFrame >& rFrame,
                         const rtl::OUString& rResourceName,
                         ToolBar* pToolBar );
         virtual ~ToolBarManager();
 
-        //  XInterface, XTypeProvider, XServiceInfo
+        // XInterface, XTypeProvider, XServiceInfo
         FWK_DECLARE_XINTERFACE
         FWK_DECLARE_XTYPEPROVIDER
-		
+
         ToolBox* GetToolBar() const;
-        
+
         // XFrameActionListener
 		virtual void SAL_CALL frameAction( const com::sun::star::frame::FrameActionEvent& Action ) throw ( ::com::sun::star::uno::RuntimeException );
-        
+
         // XStatusListener
 		virtual void SAL_CALL statusChanged( const ::com::sun::star::frame::FeatureStateEvent& Event ) throw ( ::com::sun::star::uno::RuntimeException );
-        
+
         // XEventListener
 		virtual void SAL_CALL disposing( const com::sun::star::lang::EventObject& Source ) throw ( ::com::sun::star::uno::RuntimeException );
-        
+
         // XUIConfigurationListener
         virtual void SAL_CALL elementInserted( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
         virtual void SAL_CALL elementRemoved( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
-        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException); 
-        
+        virtual void SAL_CALL elementReplaced( const ::com::sun::star::ui::ConfigurationEvent& Event ) throw (::com::sun::star::uno::RuntimeException);
+
         // XComponent
         void SAL_CALL dispose() throw ( ::com::sun::star::uno::RuntimeException );
         void SAL_CALL addEventListener( const com::sun::star::uno::Reference< XEventListener >& xListener ) throw( com::sun::star::uno::RuntimeException );
@@ -154,11 +154,11 @@ class ToolBarManager : public ::com::sun::star::frame::XFrameActionListener     
             sal_Int16 nWidth;
         };
         typedef std::vector< ControllerParams > ControllerParamsVector;
-        
+
     protected:
 		//added for 33668 by shizhoubo : 2008:04
 		DECL_LINK( Command, CommandEvent * );
-		PopupMenu * GetToolBarCustomMeun(ToolBox* pToolBar);
+		PopupMenu * GetToolBarCustomMenu(ToolBox* pToolBar);
 		//end
         DECL_LINK( Click, ToolBox * );
         DECL_LINK( DropdownClick, ToolBox * );
@@ -193,7 +193,7 @@ class ToolBarManager : public ::com::sun::star::frame::XFrameActionListener     
         void ImplClearPopupMenu( ToolBox *pToolBar );
         void RequestImages();
         sal_uInt16 ConvertStyleToToolboxItemBits( sal_Int32 nStyle );
-        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > GetModelFromFrame() const; 
+        ::com::sun::star::uno::Reference< ::com::sun::star::frame::XModel > GetModelFromFrame() const;
         sal_Bool IsPluginMode() const;
 		Image QueryAddonsImage( const ::rtl::OUString& aCommandURL, bool bBigImages, bool bHiContrast );
         long HandleClick(void ( SAL_CALL ::com::sun::star::frame::XToolbarController::*_pClick )(  ));
@@ -247,7 +247,7 @@ class ToolBarManager : public ::com::sun::star::frame::XFrameActionListener     
         ::com::sun::star::uno::Reference< ::com::sun::star::ui::XAcceleratorConfiguration >    m_xModuleAcceleratorManager;
         ::com::sun::star::uno::Reference< ::com::sun::star::ui::XAcceleratorConfiguration >    m_xGlobalAcceleratorManager;
 };
-    
+
 }
 
 #endif // __FRAMEWORK_UIELEMENT_TOOLBARMANAGER_HXX_

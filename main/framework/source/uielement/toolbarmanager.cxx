@@ -1759,7 +1759,7 @@ bool ToolBarManager::MenuItemAllowed( sal_uInt16 ) const
 }
 
 // added for i33668 by shizhoubo : 200804
-PopupMenu * ToolBarManager::GetToolBarCustomMeun(ToolBox* pToolBar)
+PopupMenu * ToolBarManager::GetToolBarCustomMenu(ToolBox* pToolBar)
 {
 	PopupMenu *pMenu = pToolBar->GetMenu();
 	// remove all entries before inserting new ones
@@ -1892,7 +1892,7 @@ IMPL_LINK( ToolBarManager, Command, CommandEvent*, pCmdEvt )
 	if ( pCmdEvt->GetCommand() != COMMAND_CONTEXTMENU )
 		return 0;
 
-	PopupMenu * pMenu = GetToolBarCustomMeun(m_pToolBar);
+	PopupMenu * pMenu = GetToolBarCustomMenu(m_pToolBar);
 	if (pMenu)
 	{
 		// make sure all disabled entries will be shown
@@ -1912,7 +1912,7 @@ IMPL_LINK( ToolBarManager, MenuButton, ToolBox*, pToolBar )
 	if ( m_bDisposed )
 		return 1;
 	// modify for i33668 by shizhoubo:2008:04
-	GetToolBarCustomMeun(pToolBar);
+	GetToolBarCustomMenu(pToolBar);
 	//end
 	return 0;
  }
