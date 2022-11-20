@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:uof="http://schemas.uof.org/cn/2003/uof" xmlns:表="http://schemas.uof.org/cn/2003/uof-spreadsheet" xmlns:演="http://schemas.uof.org/cn/2003/uof-slideshow" xmlns:字="http://schemas.uof.org/cn/2003/uof-wordproc" xmlns:图="http://schemas.uof.org/cn/2003/graph" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" office:version="1.0">
 	<xsl:output method="xml" indent="no" encoding="UTF-8" version="1.0"/>
@@ -192,7 +192,7 @@
 										<xsl:element name="table:filter">
 											<xsl:element name="table:filter-and">
 												<xsl:call-template name="auto-filter-condition">
-													<xsl:with-param name="conditon-set" select="$filter/表:条件"/>
+													<xsl:with-param name="condition-set" select="$filter/表:条件"/>
 													<xsl:with-param name="zone-left-column-num" select="$zone-left-column-num"/>
 												</xsl:call-template>
 											</xsl:element>
@@ -633,7 +633,7 @@
 					</xsl:otherwise>
 				</xsl:choose>
 			</xsl:for-each>
-			<!--Redoffie comment liliang SC0008 06.02.14-->
+			<!--Redoffice comment liliang SC0008 06.02.14-->
 			<!--1新增内容-->
 			<xsl:if test="uof:单元格式样">
 				<xsl:for-each select="uof:单元格式样">
@@ -1826,7 +1826,7 @@
 			<xsl:value-of select="substring( $complexive-string, 1, 1)"/>
 		</xsl:variable>
 		<xsl:choose>
-			<xsl:when test="$first-char = '1' or $first-char =  '2' or $first-char =  '3' or $first-char =  '4' or $first-char =  '5' or $first-char =  '6' or $first-char = '7' or $first-char =  '8' or $first-char =  '9' or $first-char = '0' ">
+			<xsl:when test="$first-char = '1' or $first-char = '2' or $first-char = '3' or $first-char = '4' or $first-char = '5' or $first-char = '6' or $first-char = '7' or $first-char = '8' or $first-char = '9' or $first-char = '0' ">
 				<xsl:variable name="temp">
 					<xsl:call-template name="get-digit-length">
 						<xsl:with-param name="complexive-string" select="substring( $complexive-string, 2)"/>
@@ -2415,7 +2415,7 @@
 									</xsl:variable>
 									<xsl:if test="$number-repeated &gt; 0">
 										<xsl:element name="table:table-row">
-											<xsl:if test="($rowpath/@表:隐藏 = '1') or  ($rowpath/@表:隐藏 = 'true')">
+											<xsl:if test="($rowpath/@表:隐藏 = '1') or ($rowpath/@表:隐藏 = 'true')">
 												<xsl:attribute name="table:visibility">collapse</xsl:attribute>
 											</xsl:if>
 											<xsl:attribute name="table:style-name"><xsl:value-of select="concat('ro',$table-pos)"/></xsl:attribute>
@@ -2431,7 +2431,7 @@
 										</xsl:element>
 									</xsl:if>
 									<xsl:element name="table:table-row">
-										<xsl:if test="($colpath/@表:隐藏 = '1') or  ($colpath/@表:隐藏 = 'true')">
+										<xsl:if test="($colpath/@表:隐藏 = '1') or ($colpath/@表:隐藏 = 'true')">
 											<xsl:attribute name="table:visibility">collapse</xsl:attribute>
 										</xsl:if>
 										<xsl:attribute name="table:style-name"><xsl:value-of select="concat('rob',$table-pos)"/></xsl:attribute>
@@ -2548,7 +2548,7 @@
 							<xsl:if test="ancestor::表:工作表/表:工作表内容/@表:式样引用">
 								<xsl:attribute name="table:default-cell-style-name"><xsl:value-of select="ancestor::表:工作表/表:工作表内容/@表:式样引用"/></xsl:attribute>
 							</xsl:if>
-							<xsl:if test="($colpath/@表:隐藏 = '1') or  ($colpath/@表:隐藏 = 'true')">
+							<xsl:if test="($colpath/@表:隐藏 = '1') or ($colpath/@表:隐藏 = 'true')">
 								<xsl:attribute name="table:visibility">collapse</xsl:attribute>
 							</xsl:if>
 							<xsl:attribute name="table:style-name"><xsl:value-of select="concat('co',$table-pos)"/></xsl:attribute>
@@ -2559,7 +2559,7 @@
 						<xsl:if test="ancestor::表:工作表/表:工作表内容/@表:式样引用">
 							<xsl:attribute name="table:default-cell-style-name"><xsl:value-of select="ancestor::表:工作表/表:工作表内容/@表:式样引用"/></xsl:attribute>
 						</xsl:if>
-						<xsl:if test="($colpath/@表:隐藏 = '1') or  ($colpath/@表:隐藏 = 'true')">
+						<xsl:if test="($colpath/@表:隐藏 = '1') or ($colpath/@表:隐藏 = 'true')">
 							<xsl:attribute name="table:visibility">collapse</xsl:attribute>
 						</xsl:if>
 						<xsl:attribute name="table:style-name"><xsl:value-of select="concat('cob',$table-pos)"/></xsl:attribute>
@@ -2595,7 +2595,7 @@
 				<xsl:choose>
 					<xsl:when test="$currentColumnNode">
 						<xsl:choose>
-							<xsl:when test="$currentColumnNode/@表:列号 - $finishedColumns  &gt; 1">
+							<xsl:when test="$currentColumnNode/@表:列号 - $finishedColumns &gt; 1">
 								<xsl:call-template name="create-default-column">
 									<xsl:with-param name="currentColumn" select="$currentColumn"/>
 									<xsl:with-param name="currentColumnNode" select="$currentColumnNode"/>
@@ -2611,7 +2611,7 @@
 							</xsl:when>
 							<xsl:otherwise>
 								<xsl:element name="table:table-column">
-									<xsl:if test="($currentColumnNode/@表:隐藏 = '1') or  ($currentColumnNode/@表:隐藏 = 'true')">
+									<xsl:if test="($currentColumnNode/@表:隐藏 = '1') or ($currentColumnNode/@表:隐藏 = 'true')">
 										<xsl:attribute name="table:visibility">collapse</xsl:attribute>
 									</xsl:if>
 									<xsl:if test="$currentColumnNode/@表:跨度">
@@ -2673,7 +2673,7 @@
 					<xsl:variable name="number-repeated">
 						<xsl:choose>
 							<xsl:when test="preceding-sibling::表:分页符[@表:列号][position()=count(.)]/@表:列号 + 1 = $index-value">
-								<xsl:value-of select="$each-column-value - preceding-sibling::表:分页符[@表:列号  and (position()=count(.))]/@表:列号 - 1"/>
+								<xsl:value-of select="$each-column-value - preceding-sibling::表:分页符[@表:列号 and (position()=count(.))]/@表:列号 - 1"/>
 							</xsl:when>
 							<xsl:when test="preceding-sibling::表:分页符[@表:列号 and (position()=count(.))]/@表:列号 + 1 &gt; $index-value">
 								<xsl:value-of select="$each-column-value - preceding-sibling::表:分页符[@表:列号][position()=count(.)]/@表:列号 - 1"/>
@@ -3552,7 +3552,7 @@
 		<xsl:variable name="maodian" select="boolean($next-cell/uof:锚点)"/>
 		<xsl:variable name="cell-is-repeatable" select="not(current()/*) and not($next-cell/*) and not($next-cell/text()) and (@表:式样引用 = $next-cell/@表:式样引用) and not($next-cell/@表:列号)"/>
 		<xsl:if test="$col-repeated = 1">
-			<xsl:if test="@表:列号  != ($col-pos-before + 1)">
+			<xsl:if test="@表:列号 != ($col-pos-before + 1)">
 				<xsl:call-template name="get-cell-span-in">
 					<xsl:with-param name="row-pos" select="$row-pos"/>
 					<xsl:with-param name="c-start" select="$col-pos-before + 1"/>
@@ -3668,7 +3668,7 @@
 						<xsl:element name="draw:image">
 							<xsl:if test="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=$tuxing1]/uof:路径">
 								<xsl:attribute name="xlink:href"><xsl:value-of select="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=	$tuxing1]/uof:路径"/></xsl:attribute>
-							</xsl:if>                        
+							</xsl:if>
 							<xsl:if test="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=$tuxing1]/uof:数据">
 								<office:binary-data>
 									<xsl:value-of select="/uof:UOF/uof:对象集/uof:其他对象[@uof:标识符=$tuxing1]/uof:数据"/>
@@ -4023,7 +4023,7 @@
 			<xsl:attribute name="draw:z-index"><xsl:value-of select="@图:层次"/></xsl:attribute>
 			<xsl:if test="图:预定义图形/图:属性/图:旋转角度 and not(图:预定义图形/图:属性/图:旋转角度='0.0')">
 				<xsl:variable name="rotate-angle">
-					<xsl:value-of select="(图:预定义图形/图:属性/图:旋转角度 *  2 * 3.14159265 ) div 360"/>
+					<xsl:value-of select="(图:预定义图形/图:属性/图:旋转角度 * 2 * 3.14159265 ) div 360"/>
 				</xsl:variable>
 				<xsl:attribute name="draw:transform"><xsl:value-of select="concat('rotate (',$rotate-angle,') translate (-0.0194027777777778cm 3.317875cm)')"/></xsl:attribute>
 			</xsl:if>
@@ -4914,7 +4914,7 @@
 			</xsl:when>
 			<xsl:when test="starts-with($number-format-unit,'MM')">
 				<xsl:choose>
-					<xsl:when test="starts-with(substring($number-format-unit,3),'S') or (starts-with(substring($number-format-unit,3),'&quot;')  and starts-with(substring-after(substring-after($number-format-unit,'&quot;'),'&quot;'),'S'))">
+					<xsl:when test="starts-with(substring($number-format-unit,3),'S') or (starts-with(substring($number-format-unit,3),'&quot;') and starts-with(substring-after(substring-after($number-format-unit,'&quot;'),'&quot;'),'S'))">
 						<number:minutes number:style="long"/>
 					</xsl:when>
 					<xsl:otherwise>
@@ -5321,10 +5321,10 @@
 		</xsl:element>
 	</xsl:template>
 	<xsl:template name="auto-filter-condition">
-		<xsl:param name="conditon-set"/>
+		<xsl:param name="condition-set"/>
 		<xsl:param name="zone-left-column-num"/>
-		<xsl:if test="$conditon-set">
-			<xsl:variable name="first-condition" select="$conditon-set[1]"/>
+		<xsl:if test="$condition-set">
+			<xsl:variable name="first-condition" select="$condition-set[1]"/>
 			<xsl:element name="table:filter-condition">
 				<xsl:attribute name="table:field-number"><xsl:value-of select="$first-condition/@表:列号 - $zone-left-column-num"/></xsl:attribute>
 				<xsl:attribute name="office:value"><xsl:choose><xsl:when test="$first-condition/表:普通"><xsl:value-of select="$first-condition/表:普通/@表:值"/></xsl:when><xsl:when test="$first-condition/表:自定义"><xsl:value-of select="$first-condition/表:自定义/表:操作条件/表:值"/></xsl:when></xsl:choose></xsl:attribute>
@@ -5360,7 +5360,7 @@
 				<xsl:attribute name="table:operator"><xsl:value-of select="$operator"/></xsl:attribute>
 			</xsl:element>
 			<xsl:call-template name="auto-filter-condition">
-				<xsl:with-param name="conditon-set" select="$conditon-set[position()!=1]"/>
+				<xsl:with-param name="condition-set" select="$condition-set[position()!=1]"/>
 				<xsl:with-param name="zone-left-column-num" select="$zone-left-column-num"/>
 			</xsl:call-template>
 		</xsl:if>
@@ -5881,8 +5881,8 @@
 
 	<xsl:template name="create-master-styles">
 	</xsl:template>
-    <xsl:template  name="表:工作表属性">
-    </xsl:template-->
+	<xsl:template name="表:工作表属性">
+	</xsl:template-->
 	<!--00000000000-->
 	<xsl:template match="uof:元数据">
 		<office:meta>
@@ -8969,7 +8969,7 @@
 			<xsl:otherwise>
 				<xsl:value-of select="''"/>
 				<!-- <xsl:variable name="style-is-default">
-					<xsl:call-template name="is-default-or-not-condition-format"> 
+					<xsl:call-template name="is-default-or-not-condition-format">
 						<xsl:with-param name="column-num" select="$cell/@表:列号"/>
 						<xsl:with-param name="cell" select="$cell"/>
 						<xsl:with-param name="preceding-cellstylename" select="''"/>
