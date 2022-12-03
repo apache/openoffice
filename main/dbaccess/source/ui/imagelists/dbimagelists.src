@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -33,7 +33,7 @@
 //-------------------------------------------------------------------------
 #define IL_TOOL_2 \
 \
-    IdList = {\
+	IdList = {\
 		ID_INDEX_NEW;\
 		ID_INDEX_DROP;\
 		ID_INDEX_RENAME;\
@@ -47,71 +47,63 @@
 
 ImageList IMG_INDEX_DLG_SC
 {
-	MASKCOLOR;
-	prefix = "sc";
+	MASKCOLOR ;
+	prefix = "sc" ;
 	IL_TOOL_2 ;
 };
 
 ImageList IMG_INDEX_DLG_SCH
 {
-	MASKCOLOR;
-	prefix = "sch";
+	MASKCOLOR ;
+	prefix = "sch" ;
 	IL_TOOL_2 ;
 };
 
 ImageList IMG_INDEX_DLG_LC
 {
-	MASKCOLOR;
-	prefix = "lc";
+	MASKCOLOR ;
+	prefix = "lc" ;
 	IL_TOOL_2 ;
 };
 
 ImageList IMG_INDEX_DLG_LCH
 {
-	MASKCOLOR;
-	prefix = "lch";
+	MASKCOLOR ;
+	prefix = "lch" ;
 	IL_TOOL_2 ;
 };
 
 Image IMG_FORMFOLDER_TREE_L
 {
-	ImageBitmap = Bitmap { File = "forms_32"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "forms_32.png"; };
 };
 Image IMG_FORMFOLDER_TREE_LHC
 {
-	ImageBitmap = Bitmap { File = "forms_32_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "forms_32_h.png"; };
 };
 Image IMG_REPORTFOLDER_TREE_L
 {
-	ImageBitmap = Bitmap { File = "reports_32"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "reports_32.png"; };
 };
 Image IMG_REPORTFOLDER_TREE_LHC
 {
-	ImageBitmap = Bitmap { File = "reports_32_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "reports_32_h.png"; };
 };
 Image IMG_QUERYFOLDER_TREE_L
 {
-	ImageBitmap = Bitmap { File = "queries_32"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "queries_32.png"; };
 };
 Image IMG_QUERYFOLDER_TREE_LHC
 {
-	ImageBitmap = Bitmap { File = "queries_32_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "queries_32_h.png"; };
 };
 Image IMG_TABLEFOLDER_TREE_L
 {
-	ImageBitmap = Bitmap { File = "tables_32"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "tables_32.png"; };
 };
 Image IMG_TABLEFOLDER_TREE_LHC
 {
-	ImageBitmap = Bitmap { File = "tables_32_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "tables_32_h.png"; };
 };
 
 //========================================================================
@@ -123,13 +115,11 @@ Image IMG_TABLEFOLDER_TREE_LHC
 Image DATABASE_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "db.png"; };
-	MaskColor = Color { Red = 0xff00 ; Green = 0x0000 ; Blue = 0xff00 ; };
 };
 
 Image DATABASE_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "db_sch.png"; };
-	MaskColor = Color { Red = 0xff00 ; Green = 0x0000 ; Blue = 0xff00 ; };
 };
 
 //------------------------------------------------------------------------
@@ -138,25 +128,21 @@ Image DATABASE_TREE_ICON_SCH
 Image TABLE_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "sx03188.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image TABLE_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "sxh03188.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image TABLEFOLDER_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "sx03187.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image TABLEFOLDER_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "sxh03187.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 //------------------------------------------------------------------------
@@ -165,13 +151,11 @@ Image TABLEFOLDER_TREE_ICON_SCH
 Image VIEW_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "sx16670.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image VIEW_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "sxh16670.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 //------------------------------------------------------------------------
@@ -180,25 +164,21 @@ Image VIEW_TREE_ICON_SCH
 Image QUERY_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "sx03202.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERY_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "sxh03202.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERYFOLDER_TREE_ICON
 {
 	ImageBitmap = Bitmap { File = "sx03201.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 Image QUERYFOLDER_TREE_ICON_SCH
 {
 	ImageBitmap = Bitmap { File = "sxh03201.png"; };
-	MaskColor = Color { Red = 0xFFFF; Green = 0x0; Blue = 0xFFFF; };
 };
 
 //------------------------------------------------------------------------
@@ -206,26 +186,22 @@ Image QUERYFOLDER_TREE_ICON_SCH
 
 Image FORM_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "form_16"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "form_16.png"; };
 };
 
 Image FORM_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "form_16_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "form_16_h.png"; };
 };
 
 Image FORMFOLDER_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "forms_16"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "forms_16.png"; };
 };
 
 Image FORMFOLDER_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "forms_16_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "forms_16_h.png"; };
 };
 
 //------------------------------------------------------------------------
@@ -233,26 +209,21 @@ Image FORMFOLDER_TREE_ICON_SCH
 
 Image REPORT_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "report_16"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "report_16.png"; };
 };
 
 Image REPORT_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "report_16_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "report_16_h.png"; };
 };
 Image REPORTFOLDER_TREE_ICON
 {
-	ImageBitmap = Bitmap { File = "reports_16"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "reports_16.png"; };
 };
 
 Image REPORTFOLDER_TREE_ICON_SCH
 {
-	ImageBitmap = Bitmap { File = "reports_16_h"; };
-	MASKCOLOR;
+	ImageBitmap = Bitmap { File = "reports_16_h.png"; };
 };
 
-//========================================================================
-
+// ********************************************************************** EOF
