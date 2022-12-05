@@ -347,7 +347,7 @@ ModalDialog RID_SCDLG_DPSUBTOTAL_OPT
 		Size = MAP_APPFONT ( 114, 120 ) ;
 		TabStop = TRUE ;
 		Border = TRUE ;
-		DropDown = TR UE ;
+		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
 			< "Tabular layout" ; Default;								> ;
