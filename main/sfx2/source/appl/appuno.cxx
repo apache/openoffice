@@ -1949,6 +1949,9 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
     else
     {
         // direct API call on a specified object
+        if ( !pCurrent->AdjustMacroMode( String() ) )
+            // check forbids execution
+            return ERRCODE_IO_ACCESSDENIED;
         String aCall( '[' );
         aCall += String(INetURLObject::decode(aMacro.Copy(6), INET_HEX_ESCAPE,
         INetURLObject::DECODE_WITH_CHARSET));
