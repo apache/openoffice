@@ -1768,24 +1768,36 @@ void SdrPage::TRG_ClearMasterPage()
 SdrPage& SdrPage::TRG_GetMasterPage() const
 {
 	DBG_ASSERT(mpMasterPageDescriptor != 0L, "TRG_GetMasterPage(): No MasterPage available. Use TRG_HasMasterPage() before access (!)");
+        if (mpMasterPageDescriptor == NULL) {
+            throw uno::RuntimeException(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("No master page descriptor")), NULL);
+        }
 	return mpMasterPageDescriptor->GetUsedPage();
 }
 
 const SetOfByte& SdrPage::TRG_GetMasterPageVisibleLayers() const
 {
 	DBG_ASSERT(mpMasterPageDescriptor != 0L, "TRG_GetMasterPageVisibleLayers(): No MasterPage available. Use TRG_HasMasterPage() before access (!)");
+        if (mpMasterPageDescriptor == NULL) {
+            throw uno::RuntimeException(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("No master page descriptor")), NULL);
+        }
 	return mpMasterPageDescriptor->GetVisibleLayers();
 }
 
 void SdrPage::TRG_SetMasterPageVisibleLayers(const SetOfByte& rNew)
 {
 	DBG_ASSERT(mpMasterPageDescriptor != 0L, "TRG_SetMasterPageVisibleLayers(): No MasterPage available. Use TRG_HasMasterPage() before access (!)");
+        if (mpMasterPageDescriptor == NULL) {
+            throw uno::RuntimeException(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("No master page descriptor")), NULL);
+        }
 	mpMasterPageDescriptor->SetVisibleLayers(rNew);
 }
 
 sdr::contact::ViewContact& SdrPage::TRG_GetMasterPageDescriptorViewContact() const
 {
 	DBG_ASSERT(mpMasterPageDescriptor != 0L, "TRG_GetMasterPageDescriptorViewContact(): No MasterPage available. Use TRG_HasMasterPage() before access (!)");
+        if (mpMasterPageDescriptor == NULL) {
+            throw uno::RuntimeException(::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("No master page descriptor")), NULL);
+        }
 	return mpMasterPageDescriptor->GetViewContact();
 }
 
