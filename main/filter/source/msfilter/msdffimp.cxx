@@ -3012,12 +3012,18 @@ void DffRecordManager::Consume( SvStream& rIn, sal_Bool bAppend, sal_uInt32 nStO
 		pCList = (DffRecordList*)this;
 		while ( pCList->pNext )
 			pCList = pCList->pNext;
+        sal_Size nLastPosition;
 		while ( ( rIn.GetError() == 0 ) && ( ( rIn.Tell() + 8 ) <=  nStOfs ) )
 		{
+            nLastPosition = rIn.Tell();
 			if ( pCList->nCount == DFF_RECORD_MANAGER_BUF_SIZE )
 				pCList = new DffRecordList( pCList );
 			rIn >> pCList->mHd[ pCList->nCount ];
 			pCList->mHd[ pCList->nCount++ ].SeekToEndOfRecord( rIn );
+            if (rIn.Tell() == nLastPosition) {
+                // We are inside an endless loop
+                break;
+            }
 		}
 		rIn.Seek( nOldPos );
 	}
