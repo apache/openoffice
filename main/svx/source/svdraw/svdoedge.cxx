@@ -2262,7 +2262,7 @@ void SdrEdgeObj::NbcResize(const Point& rRefPnt, const Fraction& aXFact, const F
 	ResizeXPoly(*pEdgeTrack,rRefPnt,aXFact,aYFact);
 
 	// #75371# if resize is not from paste, forget user distances
-	if(!GetModel()->IsPasteResize())
+	if(GetModel() && !GetModel()->IsPasteResize())
 	{
 		// #75735#
 		aEdgeInfo.aObj1Line2 = Point();
