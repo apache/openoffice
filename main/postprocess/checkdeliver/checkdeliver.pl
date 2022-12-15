@@ -2,7 +2,7 @@
 eval 'exec perl -wS $0 ${1+"$@"}'
     if 0;
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -10,16 +10,16 @@ eval 'exec perl -wS $0 ${1+"$@"}'
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 
@@ -70,7 +70,7 @@ sub get_globals
 {
     my $help;
 
-    # set global variables according to environnment
+    # set global variables according to environment
     $platform      = $ENV{INPATH};
     $srcrootdir    = $ENV{SOURCE_ROOT_DIR};
     $solverdir     = $ENV{SOLARVERSION};
@@ -186,7 +186,7 @@ sub check
 
     my $path = "$srcrootdir/$repository/$module";
     # is module physically accessible?
-    # there are valid use cases where we build against a prebuild solver whithout having
+    # there are valid use cases where we build against a prebuild solver without having
     # all modules at disk
     my $canread = is_moduledirectory( $path );
     if ( ! $canread ) {
@@ -196,7 +196,7 @@ sub check
             return $error;
         }
         # in a master build it is considered an error to have deliver leftovers
-        # from non exising (removed) modules
+        # from non existing (removed) modules
         print_logged( "Error: module '$module' not found.\n" );
         $error++;
         return $error;
@@ -221,20 +221,20 @@ sub check
         my $delivered_stats = lstat($sfile);
         next if ( -d _ );  # compare files, not directories
         if ( $^O !~ /^MSWin/ ) {
-            # windows does not know about links.
+            # Windows does not know about links.
             # Therefore lstat() is not a lstat, and the following check would break
             next if ( -l _ );  # compare files, not links
         }
 
         if ( $orgfile_stats && $delivered_stats ) {
-            # Stripping (on unix like platforms) and signing (for windows)
+            # Stripping (on unix like platforms) and signing (for Windows)
             # changes file size. Therefore we have to compare for file dates.
             # File modification time also can change after deliver, f.e. by
             # rebasing, but only increase. It must not happen that a file on
-            # solver is older than it's source.
+            # solver is older than its source.
             if ( ( $orgfile_stats->mtime - $delivered_stats->mtime ) gt 1 ) {
                 print_logged( "Error: " );
-                print_logged( "delivered file is older than it's source '$ofile' '$sfile'\n" );
+                print_logged( "delivered file is older than its source '$ofile' '$sfile'\n" );
                 $error ++;
             }
         } elsif ( !$orgfile_stats && $delivered_stats ) {
@@ -274,7 +274,7 @@ sub is_moduledirectory
 
 sub print_logged
 # Print routine.
-# If a log file name is specified with '-l' option, print_logged() prints to that file 
+# If a log file name is specified with '-l' option, print_logged() prints to that file
 # as well as to STDOUT. If '-l' option is not set, print_logged() just writes to STDOUT
 {
     my $message = shift;
@@ -299,4 +299,3 @@ sub usage
 
     exit $retval;
 }
-
