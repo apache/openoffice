@@ -82,7 +82,7 @@ diff -ur misc/nss-3.39/nss/coreconf/Darwin.mk misc/build/nss-3.39/nss/coreconf/D
 -CCC    ?= g++
 +# CC is taken from environment automatically.
 +#CC     ?= gcc
-+CCC    ?= $(CXX) -stdlib=libc++ -std=c++11
++CCC    ?= $(CXX)
  RANLIB ?= ranlib
  
  include $(CORE_DEPTH)/coreconf/UNIX.mk

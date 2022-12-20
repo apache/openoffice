@@ -1151,6 +1151,11 @@ case "$build_os" in
 		fi
 		if test ! -n "$CXX"; then
 		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
+		   macos_c11=`pwd`/macos_c11
+		   echo "#!/bin/sh" > $macos_c11
+		   echo "$CXX \$@" >> $macos_c11
+		   chmod 755 $macos_c11
+		   CXX="$macos_c11"
 		fi
 		# Don't use OSVERSION until we know no conflicts result from it
 		_darwin_version="`uname -r | $AWK -F . '{ print $1 }'`"
