@@ -1147,13 +1147,13 @@ case "$build_os" in
       		fi
 		SDKROOT="`xcrun --sdk macosx --show-sdk-path`"
 		if test ! -n "$CC"; then
-		   CC="`xcrun -f clang` -arch x86_64"
+		   CC="`xcrun -f clang`"
 		fi
 		if test ! -n "$CXX"; then
-		   CXX="`xcrun -f clang++` -std=c++11 -stdlib=libc++ -arch x86_64"
+		   CXX="`xcrun -f clang++` -std=c++11"
 		   macos_c11=`pwd`/macos_c11
 		   echo "#!/bin/sh" > $macos_c11
-		   echo "$CXX \$@" >> $macos_c11
+		   echo "$CXX \"\$@\"" >> $macos_c11
 		   chmod 755 $macos_c11
 		   CXX="$macos_c11"
 		fi
@@ -3907,7 +3907,11 @@ if test  "$_os" = "Darwin"; then
           sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx10.(10|11|12|13|14|15)" | sed -e "s/.*sdk //" | tail -n1`
           dnl If not found, look for macOS11.x SDKs (Xcode 12.2 and later)
           if test -z "$sdk_found"; then
-             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1)" | sed -e "s/.*sdk //" | tail -n1`
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx11.(0|1|2|3)" | sed -e "s/.*sdk //" | tail -n1`
+          fi
+          dnl If not found, look for macOS12.x SDKs (Xcode 13.0 and later)
+          if test -z "$sdk_found"; then
+             sdk_found=`xcodebuild -showsdks | $EGREP "sdk macosx12.(0|1|2)" | sed -e "s/.*sdk //" | tail -n1`
           fi
           if test -z "$sdk_found"; then
              AC_MSG_ERROR([No SDK with OSX $sdk_target compatibility found])
