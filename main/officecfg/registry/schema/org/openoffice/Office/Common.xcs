@@ -1594,13 +1594,6 @@
 					</info>
 					<value oor:separator=":">$(insturl)/share/basic:$(userurl)/basic</value>
 				</prop>
-				<prop oor:name="Bitmap" oor:type="xs:string">
-					<info>
-						<author>MBA</author>
-						<desc>Contains the bitmap files which can be used for menu and toolbar icons.</desc>
-					</info>
-					<value>$(insturl)/share/config/symbol</value>
-				</prop>
 				<prop oor:name="Config" oor:type="xs:string">
 					<info>
 						<author>MBA</author>
@@ -1764,12 +1757,6 @@
 						<desc>Specifies the default directory where the Basic files, used by the AutoPilots, are located.</desc>
 					</info>
 					<value oor:separator=":">$(insturl)/share/basic:$(userurl)/basic</value>
-				</prop>
-				<prop oor:name="Bitmap" oor:type="xs:string">
-					<info>
-						<desc>Specifies the default directory where the bitmap files, which can be used for the menu and toolbar icons, are located.</desc>
-					</info>
-					<value>$(insturl)/share/config/symbol</value>
 				</prop>
 				<prop oor:name="Config" oor:type="xs:string">
 					<info>
