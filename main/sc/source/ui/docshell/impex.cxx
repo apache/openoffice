@@ -1231,7 +1231,7 @@ sal_Bool ScImportExport::ExtText2Doc( SvStream& rStrm )
         for( ;; )
         {
             rStrm.ReadCsvLine( aLine, !bFixed, rSeps, cStr);
-            if ( rStrm.IsEof() )
+            if ( rStrm.IsEof() && aLine.Len() == 0 )
                 break;
 
             xub_StrLen nLineLen = aLine.Len();
