@@ -281,14 +281,26 @@ public:
 };
 
 typedef ContentNode* ContentNodePtr;
-SV_DECL_PTRARR( DummyContentList, ContentNodePtr, 0, 4 )
 
-class ContentList : public DummyContentList
+class ContentList
 {
-  sal_uInt16 nLastCache;
+    std::vector<ContentNode*> contents;
+    sal_uInt16 nLastCache;
 public:
-  ContentList() : DummyContentList( 0, 4 ), nLastCache(0) {}
-  sal_uInt16 GetPos( const ContentNodePtr &rPtr ) const;
+    ContentList() : nLastCache(0) {}
+    sal_uInt16 GetPos( const ContentNodePtr &rPtr ) const;
+    sal_uInt32 Count() const { return contents.size(); }
+    ContentNode* GetObject( sal_uInt32 index ) const { return contents[index]; }
+    ContentNode* operator[]( std::size_t index ) const { return contents[index]; }
+    ContentNode* const* GetData() const { return &contents[0]; }
+    void Insert( ContentNode *node, sal_uInt32 position ) { contents.insert( contents.begin() + position, node); }
+    void Remove( sal_uInt32 first, sal_uInt32 count = 1 ) { contents.erase( contents.begin() + first, contents.begin() + first + count ); }
+    void DeleteAndDestroy( sal_uInt32 first, sal_uInt32 count )
+    {
+        for ( sal_uInt32 n = first; n < first + count; n++ )
+            delete GetObject( n );
+        Remove( first, first + count );
+    }
 };
 
 // -------------------------------------------------------------------------

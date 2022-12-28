@@ -250,8 +250,6 @@ sal_uInt16 aV5Map[] = {
 	4035, 4036, 4037, 4038
 };
 
-SV_IMPL_PTRARR( DummyContentList, ContentNode* );
-
 int SAL_CALL CompareStart( const void* pFirst, const void* pSecond )
 {
 	if ( (*((EditCharAttrib**)pFirst))->GetStart() < (*((EditCharAttrib**)pSecond))->GetStart() )
