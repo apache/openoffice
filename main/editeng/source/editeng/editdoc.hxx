@@ -282,18 +282,16 @@ public:
 
 typedef ContentNode* ContentNodePtr;
 
-class ContentList
+template<class T>
+class BaseList
 {
-    std::vector<ContentNode*> contents;
-    sal_uInt16 nLastCache;
+    std::vector<T*> contents;
 public:
-    ContentList() : nLastCache(0) {}
-    sal_uInt16 GetPos( const ContentNodePtr &rPtr ) const;
     sal_uInt32 Count() const { return contents.size(); }
-    ContentNode* GetObject( sal_uInt32 index ) const { return contents[index]; }
-    ContentNode* operator[]( std::size_t index ) const { return contents[index]; }
-    ContentNode* const* GetData() const { return &contents[0]; }
-    void Insert( ContentNode *node, sal_uInt32 position ) { contents.insert( contents.begin() + position, node); }
+    T* GetObject( sal_uInt32 index ) const { return contents[index]; }
+    T* operator[]( std::size_t index ) const { return contents[index]; }
+    T* const* GetData() const { return &contents[0]; }
+    void Insert( T *node, sal_uInt32 position ) { contents.insert( contents.begin() + position, node); }
     void Remove( sal_uInt32 first, sal_uInt32 count = 1 ) { contents.erase( contents.begin() + first, contents.begin() + first + count ); }
     void DeleteAndDestroy( sal_uInt32 first, sal_uInt32 count )
     {
@@ -301,6 +299,14 @@ public:
             delete GetObject( n );
         Remove( first, first + count );
     }
+};
+
+class ContentList : public BaseList<ContentNode>
+{
+    sal_uInt32 nLastCache;
+public:
+    ContentList() : nLastCache(0) {}
+    sal_uInt32 GetPos( const ContentNodePtr &rPtr ) const;
 };
 
 // -------------------------------------------------------------------------
@@ -621,26 +627,25 @@ public:
 };
 
 typedef ParaPortion* ParaPortionPtr;
-SV_DECL_PTRARR( DummyParaPortionList, ParaPortionPtr, 0, 4 )
 
 // -------------------------------------------------------------------------
 // class ParaPortionList
 // -------------------------------------------------------------------------
-class ParaPortionList : public DummyParaPortionList
+class ParaPortionList : public BaseList<ParaPortion>
 {
-	sal_uInt16 nLastCache;
+	sal_uInt32 nLastCache;
 public:
 					ParaPortionList();
 					~ParaPortionList();
 
 	void			Reset();
 	long			GetYOffset( ParaPortion* pPPortion );
-	sal_uInt16			FindParagraph( long nYOffset );
+	sal_uInt32			FindParagraph( long nYOffset );
 
-	inline ParaPortion*	SaveGetObject( sal_uInt16 nPos ) const
+	inline ParaPortion*	SaveGetObject( sal_uInt32 nPos ) const
 		{ return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
 
-	sal_uInt16                  GetPos( const ParaPortionPtr &rPtr ) const;
+	sal_uInt32                  GetPos( const ParaPortionPtr &rPtr ) const;
 
 	// temporaer:
 	void			DbgCheck( EditDoc& rDoc );
