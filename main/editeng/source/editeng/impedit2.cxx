@@ -2989,7 +2989,7 @@ EditPaM ImpEditEngine::ImpInsertParaBreak( const EditPaM& rPaM, sal_Bool bKeepEn
 
 	// Optimieren: Nicht unnoetig viele GetPos auf die Listen ansetzen!
 	// Hier z.B. bei Undo, aber auch in allen anderen Methoden.
-	sal_uInt16 nPos = GetParaPortions().GetPos( pPortion );
+	sal_uInt32 nPos = GetParaPortions().GetPos( pPortion );
 	ParaPortion* pNewPortion = new ParaPortion( aPaM.GetNode() );
 	GetParaPortions().Insert( pNewPortion, nPos + 1 );
 	ParaAttribsChanged( pNewPortion->GetNode() );

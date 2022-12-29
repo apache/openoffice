@@ -379,7 +379,7 @@ sal_uInt32 ContentList::GetPos( const ContentNodePtr &rPtr ) const
 
 void ParaPortionList::Reset()
 {
-	for ( sal_uInt16 nPortion = 0; nPortion < Count(); nPortion++ )
+	for ( sal_uInt32 nPortion = 0; nPortion < Count(); nPortion++ )
 		delete GetObject( nPortion );
 	Remove( 0, Count() );
 }
