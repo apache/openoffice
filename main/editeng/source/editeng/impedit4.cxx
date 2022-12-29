@@ -295,7 +295,7 @@ sal_uInt32 ImpEditEngine::WriteText( SvStream& rOutput, EditSelection aSel )
 	return rOutput.GetError();
 }
 
-sal_Bool ImpEditEngine::WriteItemListAsRTF( ItemList& rLst, SvStream& rOutput, sal_uInt16 nPara, sal_uInt16 nPos,
+sal_Bool ImpEditEngine::WriteItemListAsRTF( ItemList& rLst, SvStream& rOutput, sal_uInt32 nPara, sal_uInt16 nPos,
 						SvxFontTable& rFontTable, SvxColorList& rColorList )
 {
 	const SfxPoolItem* pAttrItem = rLst.First();
@@ -737,7 +737,7 @@ sal_uInt32 ImpEditEngine::WriteRTF( SvStream& rOutput, EditSelection aSel )
 }
 
 
-void ImpEditEngine::WriteItemAsRTF( const SfxPoolItem& rItem, SvStream& rOutput, sal_uInt16 nPara, sal_uInt16 nPos,
+void ImpEditEngine::WriteItemAsRTF( const SfxPoolItem& rItem, SvStream& rOutput, sal_uInt32 nPara, sal_uInt16 nPos,
 							SvxFontTable& rFontTable, SvxColorList& rColorList )
 {
 	sal_uInt16 nWhich = rItem.Which();
@@ -1265,7 +1265,7 @@ EditSelection ImpEditEngine::InsertBinTextObject( BinTextObject& rTextObject, Ed
 	}
 
 	sal_uInt16 nContents = rTextObject.GetContents().Count();
-	sal_uInt16 nPara = aEditDoc.GetPos( aPaM.GetNode() );
+	sal_uInt32 nPara = aEditDoc.GetPos( aPaM.GetNode() );
 
 	for ( sal_uInt16 n = 0; n < nContents; n++, nPara++ )
 	{

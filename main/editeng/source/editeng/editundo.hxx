@@ -44,13 +44,13 @@ class EditUndoDelContent : public EditUndo
 {
 private:
 	sal_Bool 			bDelObject;
-	sal_uInt16			nNode;
+	sal_uInt32			nNode;
 	ContentNode* 	pContentNode;	// Zeigt auf das gueltige,
 									// nicht zerstoerte Objekt!
 
 public:
 					TYPEINFO();
-					EditUndoDelContent( ImpEditEngine* pImpEE, ContentNode* pNode, sal_uInt16 nPortio );
+					EditUndoDelContent( ImpEditEngine* pImpEE, ContentNode* pNode, sal_uInt32 nPortio );
 					~EditUndoDelContent();
 
 	virtual void 	Undo();
@@ -93,12 +93,12 @@ public:
 class EditUndoSplitPara : public EditUndo
 {
 private:
-	sal_uInt16			nNode;
+	sal_uInt32			nNode;
 	sal_uInt16			nSepPos;
 
 public:
 					TYPEINFO();
-					EditUndoSplitPara( ImpEditEngine* pImpEE, sal_uInt16 nNode, sal_uInt16 nSepPos );
+					EditUndoSplitPara( ImpEditEngine* pImpEE, sal_uInt32 nNode, sal_uInt16 nSepPos );
 					~EditUndoSplitPara();
 
 	virtual void 	Undo();
@@ -173,11 +173,11 @@ class EditUndoMoveParagraphs: public EditUndo
 {
 private:
 	Range			nParagraphs;
-	sal_uInt16 			nDest;
+	sal_uInt32 			nDest;
 
 public:
 					TYPEINFO();
-					EditUndoMoveParagraphs( ImpEditEngine* pImpEE, const Range& rParas, sal_uInt16 nDest );
+					EditUndoMoveParagraphs( ImpEditEngine* pImpEE, const Range& rParas, sal_uInt32 nDest );
 					~EditUndoMoveParagraphs();
 
 	virtual void	Undo();

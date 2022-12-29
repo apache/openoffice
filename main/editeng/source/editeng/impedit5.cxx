@@ -49,7 +49,7 @@ void ImpEditEngine::SetStyleSheetPool( SfxStyleSheetPool* pSPool )
 	}
 }
 
-SfxStyleSheet* ImpEditEngine::GetStyleSheet( sal_uInt16 nPara ) const
+SfxStyleSheet* ImpEditEngine::GetStyleSheet( sal_uInt32 nPara ) const
 {
 	ContentNode* pNode = aEditDoc.SaveGetObject( nPara );
 	return pNode ? pNode->GetContentAttribs().GetStyleSheet() : NULL;
@@ -71,7 +71,7 @@ void ImpEditEngine::SetStyleSheet( EditSelection aSel, SfxStyleSheet* pStyle )
 	SetUpdateMode( _bUpdate, 0 );
 }
 
-void ImpEditEngine::SetStyleSheet( sal_uInt16 nPara, SfxStyleSheet* pStyle )
+void ImpEditEngine::SetStyleSheet( sal_uInt32 nPara, SfxStyleSheet* pStyle )
 {
 	DBG_ASSERT( GetStyleSheetPool() || !pStyle, "SetStyleSheet: No StyleSheetPool registered!" );
 	ContentNode* pNode = aEditDoc.SaveGetObject( nPara );
@@ -434,7 +434,7 @@ SfxItemSet ImpEditEngine::GetAttribs( EditSelection aSel, sal_Bool bOnlyHardAttr
 }
 
 
-SfxItemSet ImpEditEngine::GetAttribs( sal_uInt16 nPara, sal_uInt16 nStart, sal_uInt16 nEnd, sal_uInt8 nFlags ) const
+SfxItemSet ImpEditEngine::GetAttribs( sal_uInt32 nPara, sal_uInt16 nStart, sal_uInt16 nEnd, sal_uInt8 nFlags ) const
 {
     // MT: #94002# Optimized function with less Puts(), which cause unnecessary cloning from default items.
     // If this works, change GetAttribs( EditSelection ) to use this for each paragraph and merge the results!
@@ -638,8 +638,8 @@ void ImpEditEngine::RemoveCharAttribs( EditSelection aSel, sal_Bool bRemoveParaA
 {
 	aSel.Adjust( aEditDoc );
 
-	sal_uInt16 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
-	sal_uInt16 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
+	sal_uInt32 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
+	sal_uInt32 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
 
 	const SfxItemSet* _pEmptyItemSet = bRemoveParaAttribs ? &GetEmptyItemSet() : 0;
 
@@ -654,7 +654,7 @@ void ImpEditEngine::RemoveCharAttribs( EditSelection aSel, sal_Bool bRemoveParaA
 	}
 
 	// ueber die Absaetze iterieren...
-	for ( sal_uInt16 nNode = nStartNode; nNode <= nEndNode; nNode++	)
+	for ( sal_uInt32 nNode = nStartNode; nNode <= nEndNode; nNode++	)
 	{
 		ContentNode* pNode = aEditDoc.GetObject( nNode );
 		ParaPortion* pPortion = GetParaPortions().GetObject( nNode );
@@ -702,7 +702,7 @@ void ImpEditEngine::RemoveCharAttribs( EditSelection aSel, sal_Bool bRemoveParaA
 
 typedef EditCharAttrib* EditCharAttribPtr;
 
-void ImpEditEngine::RemoveCharAttribs( sal_uInt16 nPara, sal_uInt16 nWhich, sal_Bool bRemoveFeatures )
+void ImpEditEngine::RemoveCharAttribs( sal_uInt32 nPara, sal_uInt16 nWhich, sal_Bool bRemoveFeatures )
 {
 	ContentNode* pNode = aEditDoc.SaveGetObject( nPara );
 	ParaPortion* pPortion = GetParaPortions().SaveGetObject( nPara );
@@ -731,7 +731,7 @@ void ImpEditEngine::RemoveCharAttribs( sal_uInt16 nPara, sal_uInt16 nWhich, sal_
 	pPortion->MarkSelectionInvalid( 0, pNode->Len() );
 }
 
-void ImpEditEngine::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void ImpEditEngine::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	ContentNode* pNode = aEditDoc.SaveGetObject( nPara );
 
@@ -771,14 +771,14 @@ void ImpEditEngine::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
 	}
 }
 
-const SfxItemSet& ImpEditEngine::GetParaAttribs( sal_uInt16 nPara ) const
+const SfxItemSet& ImpEditEngine::GetParaAttribs( sal_uInt32 nPara ) const
 {
 	ContentNode* pNode = aEditDoc.GetObject( nPara );
 	DBG_ASSERT( pNode, "Node nicht gefunden: GetParaAttribs" );
 	return pNode->GetContentAttribs().GetItems();
 }
 
-sal_Bool ImpEditEngine::HasParaAttrib( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+sal_Bool ImpEditEngine::HasParaAttrib( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
 	ContentNode* pNode = aEditDoc.GetObject( nPara );
 	DBG_ASSERT( pNode, "Node nicht gefunden: HasParaAttrib" );
@@ -786,7 +786,7 @@ sal_Bool ImpEditEngine::HasParaAttrib( sal_uInt16 nPara, sal_uInt16 nWhich ) con
 	return pNode->GetContentAttribs().HasItem( nWhich );
 }
 
-const SfxPoolItem& ImpEditEngine::GetParaAttrib( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+const SfxPoolItem& ImpEditEngine::GetParaAttrib( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
 	ContentNode* pNode = aEditDoc.GetObject( nPara );
 	DBG_ASSERT( pNode, "Node nicht gefunden: GetParaAttrib" );
@@ -794,7 +794,7 @@ const SfxPoolItem& ImpEditEngine::GetParaAttrib( sal_uInt16 nPara, sal_uInt16 nW
     return pNode->GetContentAttribs().GetItem( nWhich );
 }
 
-void ImpEditEngine::GetCharAttribs( sal_uInt16 nPara, EECharAttribArray& rLst ) const
+void ImpEditEngine::GetCharAttribs( sal_uInt32 nPara, EECharAttribArray& rLst ) const
 {
 	rLst.Remove( 0, rLst.Count() );
 	ContentNode* pNode = aEditDoc.GetObject( nPara );

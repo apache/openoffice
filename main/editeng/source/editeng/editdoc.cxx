@@ -1373,7 +1373,7 @@ XubString EditDoc::GetText( LineEnd eEnd ) const
 	xub_Unicode* pStr = new xub_Unicode[nLen+1];
 	xub_Unicode* pCur = pStr;
 	sal_uInt16 nLastNode = nNodes-1;
-	for ( sal_uInt16 nNode = 0; nNode < nNodes; nNode++ )
+	for ( sal_uInt32 nNode = 0; nNode < nNodes; nNode++ )
 	{
 		XubString aTmp( GetParaAsString( GetObject(nNode) ) );
 		memcpy( pCur, aTmp.GetBuffer(), aTmp.Len()*sizeof(sal_Unicode) );
@@ -1390,7 +1390,7 @@ XubString EditDoc::GetText( LineEnd eEnd ) const
 	return aASCIIText;
 }
 
-XubString EditDoc::GetParaAsString( sal_uInt16 nNode ) const
+XubString EditDoc::GetParaAsString( sal_uInt32 nNode ) const
 {
 	return GetParaAsString( SaveGetObject( nNode ) );
 }

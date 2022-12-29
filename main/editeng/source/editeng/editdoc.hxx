@@ -58,11 +58,11 @@ class EditDoc;
 
 struct EPaM
 {
-	sal_uInt16 nPara;
+	sal_uInt32 nPara;
 	sal_uInt16 nIndex;
 
 	EPaM()								{ nPara = 0; nIndex = 0; }
-	EPaM( sal_uInt16 nP, sal_uInt16 nI )		{ nPara = nP; nIndex = nI; }
+	EPaM( sal_uInt32 nP, sal_uInt16 nI )		{ nPara = nP; nIndex = nI; }
 	EPaM( const EPaM& r)				{ nPara = r.nPara; nIndex = r.nIndex; }
 	EPaM& operator = ( const EPaM& r )	{ nPara = r.nPara; nIndex = r.nIndex; return *this; }
 	inline sal_Bool operator == ( const EPaM& r ) const;
@@ -691,15 +691,15 @@ class DeletedNodeInfo
 {
 private:
 	sal_uIntPtr 	nInvalidAdressPtr;
-	sal_uInt16	nInvalidParagraph;
+	sal_uInt32	nInvalidParagraph;
 
 public:
-			DeletedNodeInfo( sal_uIntPtr nInvAdr, sal_uInt16 nPos )
+			DeletedNodeInfo( sal_uIntPtr nInvAdr, sal_uInt32 nPos )
 											{ 	nInvalidAdressPtr = nInvAdr;
 												nInvalidParagraph = nPos; }
 
 	sal_uIntPtr	GetInvalidAdress()				{	return nInvalidAdressPtr; }
-	sal_uInt16	GetPosition()					{	return nInvalidParagraph; }
+	sal_uInt32	GetPosition()					{	return nInvalidParagraph; }
 };
 
 typedef DeletedNodeInfo* DeletedNodeInfoPtr;
@@ -759,7 +759,7 @@ public:
 	String			GetText( LineEnd eEnd ) const;
 	sal_uLong			GetTextLen() const;
 
-	XubString 		GetParaAsString( sal_uInt16 nNode ) const;
+	XubString 		GetParaAsString( sal_uInt32 nNode ) const;
 	XubString 		GetParaAsString( ContentNode* pNode, sal_uInt16 nStartPos = 0, sal_uInt16 nEndPos = 0xFFFF, sal_Bool bResolveFields = sal_True ) const;
 
 	inline EditPaM	GetStartPaM() const;
@@ -777,8 +777,8 @@ public:
 	sal_Bool			RemoveAttribs( ContentNode* pNode, sal_uInt16 nStart, sal_uInt16 nEnd, EditCharAttrib*& rpStarting, EditCharAttrib*& rpEnding, sal_uInt16 nWhich = 0 );
 	void			FindAttribs( ContentNode* pNode, sal_uInt16 nStartPos, sal_uInt16 nEndPos, SfxItemSet& rCurSet );
 
-	sal_uInt16			GetPos( ContentNode* pNode ) const { return ContentList::GetPos(pNode); }
-	ContentNode*	SaveGetObject( sal_uInt16 nPos ) const { return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
+	sal_uInt32			GetPos( ContentNode* pNode ) const { return ContentList::GetPos(pNode); }
+	ContentNode*	SaveGetObject( sal_uInt32 nPos ) const { return ( nPos < Count() ) ? GetObject( nPos ) : 0; }
 
 	static XubString	GetSepStr( LineEnd eEnd );
 };

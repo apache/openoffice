@@ -186,7 +186,7 @@ XubString __EXPORT EditUndo::GetComment() const
 // -----------------------------------------------------------------------
 // EditUndoDelContent
 // ------------------------------------------------------------------------
-EditUndoDelContent::EditUndoDelContent( ImpEditEngine* _pImpEE, ContentNode* pNode, sal_uInt16 n )
+EditUndoDelContent::EditUndoDelContent( ImpEditEngine* _pImpEE, ContentNode* pNode, sal_uInt32 n )
 					: EditUndo( EDITUNDO_DELCONTENT, _pImpEE )
 {
 	pContentNode = pNode;
@@ -315,7 +315,7 @@ void __EXPORT EditUndoConnectParas::Redo()
 // -----------------------------------------------------------------------
 // EditUndoSplitPara
 // ------------------------------------------------------------------------
-EditUndoSplitPara::EditUndoSplitPara( ImpEditEngine* _pImpEE, sal_uInt16 nN, sal_uInt16 nSP )
+EditUndoSplitPara::EditUndoSplitPara( ImpEditEngine* _pImpEE, sal_uInt32 nN, sal_uInt16 nSP )
 					: EditUndo( EDITUNDO_SPLITPARA, _pImpEE )
 {
 	nNode	= nN;
@@ -459,7 +459,7 @@ void __EXPORT EditUndoInsertFeature::Redo()
 // EditUndoMoveParagraphs
 // ------------------------------------------------------------------------
 EditUndoMoveParagraphs::EditUndoMoveParagraphs
-							( ImpEditEngine* _pImpEE, const Range& rParas, sal_uInt16 n )
+							( ImpEditEngine* _pImpEE, const Range& rParas, sal_uInt32 n )
 							: 	EditUndo( EDITUNDO_MOVEPARAGRAPHS, _pImpEE ),
 								nParagraphs( rParas )
 {

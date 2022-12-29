@@ -2924,7 +2924,7 @@ EFieldInfo::EFieldInfo()
 }
 
 
-EFieldInfo::EFieldInfo( const SvxFieldItem& rFieldItem, sal_uInt16 nPara, sal_uInt16 nPos ) : aPosition( nPara, nPos )
+EFieldInfo::EFieldInfo( const SvxFieldItem& rFieldItem, sal_uInt32 nPara, sal_uInt16 nPos ) : aPosition( nPara, nPos )
 {
     pFieldItem = new SvxFieldItem( rFieldItem );
 }

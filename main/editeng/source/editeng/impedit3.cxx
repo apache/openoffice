@@ -590,7 +590,7 @@ static sal_Int32 ImplCalculateFontIndependentLineSpacing( const sal_Int32 nFontH
 	return ( nFontHeight * 12 ) / 10;	// + 20%
 }
 
-sal_Bool ImpEditEngine::CreateLines( sal_uInt16 nPara, sal_uInt32 nStartPosY )
+sal_Bool ImpEditEngine::CreateLines( sal_uInt32 nPara, sal_uInt32 nStartPosY )
 {
 	ParaPortion* pParaPortion = GetParaPortions().GetObject( nPara );
 
@@ -1648,7 +1648,7 @@ void ImpEditEngine::CreateAndInsertEmptyLine( ParaPortion* pParaPortion, sal_uIn
 
 	if ( !aStatus.IsOutliner() )
 	{
-        sal_uInt16 nPara = GetParaPortions().GetPos( pParaPortion );
+        sal_uInt32 nPara = GetParaPortions().GetPos( pParaPortion );
 		SvxAdjust eJustification = GetJustification( nPara );
 		long nMaxLineWidth = !IsVertical() ? aPaperSize.Width() : aPaperSize.Height();
 		nMaxLineWidth -= GetXValue( rLRItem.GetRight() );
@@ -1681,7 +1681,7 @@ void ImpEditEngine::CreateAndInsertEmptyLine( ParaPortion* pParaPortion, sal_uIn
 		}
 		else if ( rLSItem.GetInterLineSpaceRule() == SVX_INTER_LINE_SPACE_PROP )
 		{
-            sal_uInt16 nPara = GetParaPortions().GetPos( pParaPortion );
+            sal_uInt32 nPara = GetParaPortions().GetPos( pParaPortion );
 			if ( nPara || IsFixedCellHeight() || pTmpLine->GetStartPortion() ) // Nicht die aller erste Zeile
 			{
                 // #100508# There are documents with PropLineSpace 0, why?
@@ -1748,7 +1748,7 @@ sal_Bool ImpEditEngine::FinishCreateLines( ParaPortion* pParaPortion )
 //	CalcCharPositions( pParaPortion );
 	pParaPortion->SetValid();
 	long nOldHeight = pParaPortion->GetHeight();
-//	sal_uInt16 nPos = GetParaPortions().GetPos( pParaPortion );
+//	sal_uInt32 nPos = GetParaPortions().GetPos( pParaPortion );
 //	DBG_ASSERT( nPos != USHRT_MAX, "FinishCreateLines: Portion nicht in Liste!" );
 //	ParaPortion* pPrev = nPos ? GetParaPortions().GetObject( nPos-1 ) : 0;
 	CalcHeight( pParaPortion );
@@ -3897,7 +3897,7 @@ void ImpEditEngine::Paint( ImpEditView* pView, const Rectangle& rRec, OutputDevi
 
 }
 
-void ImpEditEngine::InsertContent( ContentNode* pNode, sal_uInt16 nPos )
+void ImpEditEngine::InsertContent( ContentNode* pNode, sal_uInt32 nPos )
 {
 	DBG_ASSERT( pNode, "NULL-Poointer in InsertContent! " );
 	DBG_ASSERT( IsInUndo(), "InsertContent nur fuer Undo()!" );
@@ -3908,7 +3908,7 @@ void ImpEditEngine::InsertContent( ContentNode* pNode, sal_uInt16 nPos )
 		GetEditEnginePtr()->ParagraphInserted( nPos );
 }
 
-EditPaM ImpEditEngine::SplitContent( sal_uInt16 nNode, sal_uInt16 nSepPos )
+EditPaM ImpEditEngine::SplitContent( sal_uInt32 nNode, sal_uInt16 nSepPos )
 {
 	ContentNode* pNode = aEditDoc.SaveGetObject( nNode );
 	DBG_ASSERT( pNode, "Ungueltiger Node in SplitContent" );
@@ -3918,7 +3918,7 @@ EditPaM ImpEditEngine::SplitContent( sal_uInt16 nNode, sal_uInt16 nSepPos )
 	return ImpInsertParaBreak( aPaM );
 }
 
-EditPaM ImpEditEngine::ConnectContents( sal_uInt16 nLeftNode, sal_Bool bBackward )
+EditPaM ImpEditEngine::ConnectContents( sal_uInt32 nLeftNode, sal_Bool bBackward )
 {
 	ContentNode* pLeftNode = aEditDoc.SaveGetObject( nLeftNode );
 	ContentNode* pRightNode = aEditDoc.SaveGetObject( nLeftNode+1 );
@@ -3964,7 +3964,7 @@ void ImpEditEngine::SetUpdateMode( sal_Bool bUp, EditView* pCurView, sal_Bool bF
 		FormatAndUpdate( pCurView );
 }
 
-void ImpEditEngine::ShowParagraph( sal_uInt16 nParagraph, sal_Bool bShow )
+void ImpEditEngine::ShowParagraph( sal_uInt32 nParagraph, sal_Bool bShow )
 {
 	ParaPortion* pPPortion = GetParaPortions().SaveGetObject( nParagraph );
 	DBG_ASSERT( pPPortion, "ShowParagraph: Absatz existiert nicht!" );
@@ -4018,7 +4018,7 @@ void ImpEditEngine::ShowParagraph( sal_uInt16 nParagraph, sal_Bool bShow )
 	}
 }
 
-sal_Bool ImpEditEngine::IsParagraphVisible( sal_uInt16 nParagraph )
+sal_Bool ImpEditEngine::IsParagraphVisible( sal_uInt32 nParagraph )
 {
 	ParaPortion* pPPortion = GetParaPortions().SaveGetObject( nParagraph );
 	DBG_ASSERT( pPPortion, "IsParagraphVisible: Absatz existiert nicht!" );
@@ -4027,7 +4027,7 @@ sal_Bool ImpEditEngine::IsParagraphVisible( sal_uInt16 nParagraph )
 	return sal_False;
 }
 
-EditSelection ImpEditEngine::MoveParagraphs( Range aOldPositions, sal_uInt16 nNewPos, EditView* pCurView )
+EditSelection ImpEditEngine::MoveParagraphs( Range aOldPositions, sal_uInt32 nNewPos, EditView* pCurView )
 {
 	DBG_ASSERT( GetParaPortions().Count() != 0, "Keine Absaetze gefunden: MoveParagraphs" );
 	if ( GetParaPortions().Count() == 0 )
@@ -4046,8 +4046,8 @@ EditSelection ImpEditEngine::MoveParagraphs( Range aOldPositions, sal_uInt16 nNe
 	{
 		// in diesem Fall kann ich direkt neu malen, ohne die
 		// Portions zu Invalidieren.
-		sal_uInt16 nFirstPortion = Min( (sal_uInt16)aOldPositions.Min(), nNewPos );
-		sal_uInt16 nLastPortion = Max( (sal_uInt16)aOldPositions.Max(), nNewPos );
+		sal_uInt32 nFirstPortion = Min( (sal_uInt32)aOldPositions.Min(), nNewPos );
+		sal_uInt32 nLastPortion = Max( (sal_uInt32)aOldPositions.Max(), nNewPos );
 
 		ParaPortion* pUpperPortion = GetParaPortions().SaveGetObject( nFirstPortion );
 		ParaPortion* pLowerPortion = GetParaPortions().SaveGetObject( nLastPortion );
@@ -4063,13 +4063,13 @@ EditSelection ImpEditEngine::MoveParagraphs( Range aOldPositions, sal_uInt16 nNe
 	else
 	{
 		// aber der oberen ungueltigen Position neu painten...
-		sal_uInt16 nFirstInvPara = Min( (sal_uInt16)aOldPositions.Min(), nNewPos );
+		sal_uInt32 nFirstInvPara = Min( (sal_uInt32)aOldPositions.Min(), nNewPos );
 		InvalidateFromParagraph( nFirstInvPara );
 	}
 	return aSel;
 }
 
-void ImpEditEngine::InvalidateFromParagraph( sal_uInt16 nFirstInvPara )
+void ImpEditEngine::InvalidateFromParagraph( sal_uInt32 nFirstInvPara )
 {
 	// Es werden nicht die folgenden Absaetze invalidiert,
 	// da ResetHeight() => Groessenanderung => alles folgende wird
@@ -4150,7 +4150,7 @@ ParaPortion* ImpEditEngine::GetNextVisPortion( ParaPortion* pCurPortion )
 	return pPortion;
 }
 
-EditPaM ImpEditEngine::InsertParagraph( sal_uInt16 nPara )
+EditPaM ImpEditEngine::InsertParagraph( sal_uInt32 nPara )
 {
 	EditPaM aPaM;
 	if ( nPara != 0 )
@@ -4170,7 +4170,7 @@ EditPaM ImpEditEngine::InsertParagraph( sal_uInt16 nPara )
 	return ImpInsertParaBreak( aPaM );
 }
 
-EditSelection* ImpEditEngine::SelectParagraph( sal_uInt16 nPara )
+EditSelection* ImpEditEngine::SelectParagraph( sal_uInt32 nPara )
 {
 	EditSelection* pSel = 0;
 	ContentNode* pNode = GetEditDoc().SaveGetObject( nPara );
@@ -4494,7 +4494,7 @@ void ImpEditEngine::ImplInitDigitMode( OutputDevice* pOutDev, String* pString, x
 	}
 }
 
-void ImpEditEngine::ImplInitLayoutMode( OutputDevice* pOutDev, sal_uInt16 nPara, sal_uInt16 nIndex )
+void ImpEditEngine::ImplInitLayoutMode( OutputDevice* pOutDev, sal_uInt32 nPara, sal_uInt16 nIndex )
 {
     sal_Bool bCTL = sal_False;
     sal_uInt8 bR2L = sal_False;
