@@ -1011,7 +1011,7 @@ sal_Bool EditEngine::PostKeyEvent( const KeyEvent& rKeyEvent, EditView* pEditVie
 						// now on and that will be all. Otherwise continue as usual.
 						// ...
 
-						sal_uInt16 nPara = pImpEditEngine->GetEditDoc().GetPos( pNode );
+						sal_uInt32 nPara = pImpEditEngine->GetEditDoc().GetPos( pNode );
 						SfxBoolItem aBulletState( (const SfxBoolItem&) pImpEditEngine->GetParaAttrib( nPara, EE_PARA_BULLETSTATE ) );
 						bool bBulletIsVisible = aBulletState.GetValue() ? true : false;
 
@@ -1963,7 +1963,7 @@ void EditEngine::QuickMarkInvalid( const ESelection& rSel )
 	DBG_CHKTHIS( EditEngine, 0 );
 	DBG_ASSERT( rSel.nStartPara < pImpEditEngine->GetEditDoc().Count(), "MarkInvalid: Start out of Range!" );
 	DBG_ASSERT( rSel.nEndPara < pImpEditEngine->GetEditDoc().Count(), "MarkInvalid: End out of Range!" );
-	for ( sal_uInt16 nPara = rSel.nStartPara; nPara <= rSel.nEndPara; nPara++ )
+	for ( sal_uInt32 nPara = rSel.nStartPara; nPara <= rSel.nEndPara; nPara++ )
 	{
 		ParaPortion* pPortion = pImpEditEngine->GetParaPortions().SaveGetObject( nPara );
 		if ( pPortion )
