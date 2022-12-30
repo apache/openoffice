@@ -28,6 +28,7 @@
 #include <com/sun/star/i18n/XExtendedInputSequenceChecker.hpp>
 #endif
 
+#include <baselist.hxx>
 #include <editattr.hxx>
 #include <edtspell.hxx>
 #include <editeng/svxfont.hxx>
@@ -281,25 +282,6 @@ public:
 };
 
 typedef ContentNode* ContentNodePtr;
-
-template<class T>
-class BaseList
-{
-    std::vector<T*> contents;
-public:
-    sal_uInt32 Count() const { return contents.size(); }
-    T* GetObject( sal_uInt32 index ) const { return contents[index]; }
-    T* operator[]( std::size_t index ) const { return contents[index]; }
-    T* const* GetData() const { return &contents[0]; }
-    void Insert( T *node, sal_uInt32 position ) { contents.insert( contents.begin() + position, node); }
-    void Remove( sal_uInt32 first, sal_uInt32 count = 1 ) { contents.erase( contents.begin() + first, contents.begin() + first + count ); }
-    void DeleteAndDestroy( sal_uInt32 first, sal_uInt32 count )
-    {
-        for ( sal_uInt32 n = first; n < first + count; n++ )
-            delete GetObject( n );
-        Remove( first, first + count );
-    }
-};
 
 class ContentList : public BaseList<ContentNode>
 {

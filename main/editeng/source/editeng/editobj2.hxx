@@ -24,6 +24,7 @@
 #ifndef _EDITOBJ2_HXX
 #define _EDITOBJ2_HXX
 
+#include <baselist.hxx>
 #include <editeng/editobj.hxx>
 #include <editdoc.hxx>
 
@@ -181,7 +182,8 @@ public:
 };
 
 typedef ContentInfo* ContentInfoPtr;
-SV_DECL_PTRARR( ContentInfoList, ContentInfoPtr, 1, 4 )
+
+typedef BaseList<ContentInfo> ContentInfoList;
 
 // MT 05/00: Sollte mal direkt EditTextObjekt werden => keine virtuellen Methoden mehr.
 
@@ -244,11 +246,11 @@ public:
 	void					SetPortionInfo( XParaPortionList* pP )
 								{ pPortionInfo = pP; }
 
-	virtual sal_uInt16			GetParagraphCount() const;
-	virtual String			GetText( sal_uInt16 nParagraph ) const;
-	virtual void			Insert( const EditTextObject& rObj, sal_uInt16 nPara );
-	virtual EditTextObject*	CreateTextObject( sal_uInt16 nPara, sal_uInt16 nParas = 1 ) const;
-	virtual void			RemoveParagraph( sal_uInt16 nPara );
+	virtual sal_uInt32			GetParagraphCount() const;
+	virtual String			GetText( sal_uInt32 nParagraph ) const;
+	virtual void			Insert( const EditTextObject& rObj, sal_uInt32 nPara );
+	virtual EditTextObject*	CreateTextObject( sal_uInt32 nPara, sal_uInt32 nParas = 1 ) const;
+	virtual void			RemoveParagraph( sal_uInt32 nPara );
 
 	virtual sal_Bool			HasPortionInfo() const;
 	virtual void			ClearPortionInfo();
@@ -256,7 +258,7 @@ public:
 	virtual sal_Bool			HasOnlineSpellErrors() const;
 
 	virtual sal_Bool			HasCharAttribs( sal_uInt16 nWhich = 0 ) const;
-	virtual void			GetCharAttribs( sal_uInt16 nPara, EECharAttribArray& rLst ) const;
+	virtual void			GetCharAttribs( sal_uInt32 nPara, EECharAttribArray& rLst ) const;
 
 	virtual sal_Bool			RemoveCharAttribs( sal_uInt16 nWhich = 0 );
 	virtual sal_Bool			RemoveParaAttribs( sal_uInt16 nWhich = 0 );
@@ -267,12 +269,12 @@ public:
 	virtual const SvxFieldItem*	GetField() const;
 	virtual sal_Bool			HasField( TypeId Type = NULL ) const;
 
-	SfxItemSet 				GetParaAttribs( sal_uInt16 nPara ) const;
-	void 					SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rAttribs );
+	SfxItemSet 				GetParaAttribs( sal_uInt32 nPara ) const;
+	void 					SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rAttribs );
 
 	virtual sal_Bool			HasStyleSheet( const XubString& rName, SfxStyleFamily eFamily ) const;
-	virtual void			GetStyleSheet( sal_uInt16 nPara, XubString& rName, SfxStyleFamily& eFamily ) const;
-	virtual void			SetStyleSheet( sal_uInt16 nPara, const XubString& rName, const SfxStyleFamily& eFamily );
+	virtual void			GetStyleSheet( sal_uInt32 nPara, XubString& rName, SfxStyleFamily& eFamily ) const;
+	virtual void			SetStyleSheet( sal_uInt32 nPara, const XubString& rName, const SfxStyleFamily& eFamily );
 	virtual sal_Bool			ChangeStyleSheets( 	const XubString& rOldName, SfxStyleFamily eOldFamily,
 												const String& rNewName, SfxStyleFamily eNewFamily );
 	virtual void			ChangeStyleSheetName( SfxStyleFamily eFamily, const XubString& rOldName, const XubString& rNewName );
