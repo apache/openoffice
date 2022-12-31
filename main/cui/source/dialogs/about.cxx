@@ -314,7 +314,7 @@ AboutDialog::AboutDialog( Window* pParent, const ResId  & rId ) :
 // TODO:
 //   This date needs to be updated each year... do this automagically
 //
-    rtl::OUString sYear( RTL_CONSTASCII_USTRINGPARAM("2022") );
+    rtl::OUString sYear( RTL_CONSTASCII_USTRINGPARAM("2023") );
     if (vendor.EqualsAscii("Apache Software Foundation")) {
         sbcopyright.append(sYear);
         sbcopyright.appendAscii(" The Apache Software Foundation.\n\n");
