@@ -681,7 +681,7 @@ const String* EdtAutoCorrDoc::GetPrevPara( sal_Bool )
 	bAllowUndoAction = sal_False;	// Jetzt nicht mehr...
 
 	ContentList& rNodes = pImpEE->GetEditDoc();
-	sal_uInt16 nPos = rNodes.GetPos( pCurNode );
+	sal_uInt32 nPos = rNodes.GetPos( pCurNode );
 
 	// Sonderbehandlung: Bullet => Absatzanfang => einfach NULL returnen...
 	const SfxBoolItem& rBulletState = (const SfxBoolItem&)
@@ -698,7 +698,7 @@ const String* EdtAutoCorrDoc::GetPrevPara( sal_Bool )
 	if ( bBullet )
 		return NULL;
 
-	for ( sal_uInt16 n = nPos; n; )
+	for ( sal_uInt32 n = nPos; n; )
 	{
 		n--;
 		ContentNode* pNode = rNodes[n];
@@ -751,7 +751,7 @@ LanguageType EdtAutoCorrDoc::GetLanguage( sal_uInt16 nPos, sal_Bool ) const
 
 void EdtAutoCorrDoc::ImplStartUndoAction()
 {
-	sal_uInt16 nPara = pImpEE->GetEditDoc().GetPos( pCurNode );
+	sal_uInt32 nPara = pImpEE->GetEditDoc().GetPos( pCurNode );
 	ESelection aSel( nPara, nCursor, nPara, nCursor );
 	pImpEE->UndoActionStart( EDITUNDO_INSERT, aSel );
 	bUndoAction = sal_True;
