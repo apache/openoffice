@@ -63,7 +63,7 @@ public:
 class EditUndoConnectParas : public EditUndo
 {
 private:
-	sal_uInt16			nNode;
+	sal_uInt32			nNode;
 	sal_uInt16			nSepPos;
 	SfxItemSet		aLeftParaAttribs;
 	SfxItemSet		aRightParaAttribs;
@@ -78,7 +78,7 @@ private:
 
 public:
 					TYPEINFO();
-					EditUndoConnectParas( ImpEditEngine* pImpEE, sal_uInt16 nNode, sal_uInt16 nSepPos,
+					EditUndoConnectParas( ImpEditEngine* pImpEE, sal_uInt32 nNode, sal_uInt16 nSepPos,
 											const SfxItemSet& rLeftParaAttribs, const SfxItemSet& rRightParaAttribs,
 											const SfxStyleSheet* pLeftStyle, const SfxStyleSheet* pRightStyle, sal_Bool bBackward );
 					~EditUndoConnectParas();
@@ -190,7 +190,7 @@ public:
 class EditUndoSetStyleSheet: public EditUndo
 {
 private:
-	sal_uInt16			nPara;
+	sal_uInt32			nPara;
 	XubString		aPrevName;
 	XubString		aNewName;
 	SfxStyleFamily	ePrevFamily;
@@ -200,7 +200,7 @@ private:
 public:
 					TYPEINFO();
 					
-					EditUndoSetStyleSheet( ImpEditEngine* pImpEE, sal_uInt16 nPara,
+					EditUndoSetStyleSheet( ImpEditEngine* pImpEE, sal_uInt32 nPara,
 						const XubString& rPrevName, SfxStyleFamily ePrevFamily,
 						const XubString& rNewName, SfxStyleFamily eNewFamily,
 						const SfxItemSet& rPrevParaAttribs );

@@ -1372,7 +1372,7 @@ XubString EditDoc::GetText( LineEnd eEnd ) const
 	}
 	xub_Unicode* pStr = new xub_Unicode[nLen+1];
 	xub_Unicode* pCur = pStr;
-	sal_uInt16 nLastNode = nNodes-1;
+	sal_uInt32 nLastNode = nNodes-1;
 	for ( sal_uInt32 nNode = 0; nNode < nNodes; nNode++ )
 	{
 		XubString aTmp( GetParaAsString( GetObject(nNode) ) );
