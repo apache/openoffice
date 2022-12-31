@@ -599,7 +599,7 @@ void BinTextObject::ObjectInDestruction(const SfxItemPool& rSfxItemPool)
 		    pNewPool->SetDefaultMetric(pPool->GetMetric(DEF_METRIC));
         }
 
-	    for(sal_uInt16 n(0); n < aContents.Count(); n++)
+	    for(sal_uInt32 n(0); n < aContents.Count(); n++)
 	    {
             // clone ContentInfos for new pool
 		    ContentInfo* pOrg = aContents.GetObject(n);
@@ -709,7 +709,7 @@ BinTextObject::BinTextObject( const BinTextObject& r ) :
     if ( bOwnerOfPool && pPool && r.pPool )
 		pPool->SetDefaultMetric( r.pPool->GetMetric( DEF_METRIC ) );
 
-	for ( sal_uInt16 n = 0; n < r.aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < r.aContents.Count(); n++ )
 	{
 		ContentInfo* pOrg = r.aContents.GetObject( n );
 		DBG_ASSERT( pOrg, "NULL-Pointer in ContentList!" );
@@ -783,7 +783,7 @@ void BinTextObject::SetScriptType( sal_uInt16 nType )
 
 void BinTextObject::DeleteContents()
 {
-	for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 	{
 		ContentInfo* p = aContents.GetObject( n );
 		DBG_ASSERT( p, "NULL-Pointer in ContentList!" );
@@ -905,7 +905,7 @@ void BinTextObject::ClearPortionInfo()
 sal_Bool BinTextObject::HasOnlineSpellErrors() const
 {
 #ifndef SVX_LIGHT
-	for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 	{
 		ContentInfo* p = aContents.GetObject( n );
 		if ( p->GetWrongList() && p->GetWrongList()->Count() )
@@ -918,7 +918,7 @@ sal_Bool BinTextObject::HasOnlineSpellErrors() const
 
 sal_Bool BinTextObject::HasCharAttribs( sal_uInt16 _nWhich ) const
 {
-	for ( sal_uInt16 nPara = GetContents().Count(); nPara; )
+	for ( sal_uInt32 nPara = GetContents().Count(); nPara; )
 	{
 		ContentInfo* pC = GetContents().GetObject( --nPara );
 
@@ -1595,7 +1595,7 @@ void __EXPORT BinTextObject::CreateData( SvStream& rIStream )
 	// Wirkt nur wenn auch Tab-Positionen eingestellt wurden, nicht beim DefTab.
 	if ( nVersion < 500 )
 	{
-		for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+		for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 		{
 			ContentInfo* pC = aContents.GetObject( n );
 			const SvxLRSpaceItem& rLRSpace = (const SvxLRSpaceItem&) pC->GetParaAttribs().Get( EE_PARA_LRSPACE );
@@ -1633,7 +1633,7 @@ bool BinTextObject::operator==( const BinTextObject& rCompare ) const
 			( bVertical != rCompare.bVertical ) )
 		return false;
 
-	sal_uInt16 n;
+	sal_uInt32 n;
 	for( n = 0; n < aContents.Count(); n++ )
 	{
 		if( !( *aContents.GetObject( n ) == *rCompare.aContents.GetObject( n ) ) )
@@ -1651,7 +1651,7 @@ bool BinTextObject::isWrongListEqual(const BinTextObject& rCompare) const
         return false;
     }
 
-    for(sal_uInt16 a(0); a < GetContents().Count(); a++)
+    for(sal_uInt32 a(0); a < GetContents().Count(); a++)
     {
         const ContentInfo& rCandA(*GetContents().GetObject(a));
         const ContentInfo& rCandB(*rCompare.GetContents().GetObject(a));
