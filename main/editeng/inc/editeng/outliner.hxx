@@ -163,20 +163,20 @@ private:
 
 struct ParaRange
 {
-	sal_uInt16 	nStartPara;
-	sal_uInt16 	nEndPara;
+	sal_uInt32 	nStartPara;
+	sal_uInt32 	nEndPara;
 
-			ParaRange( sal_uInt16 nS, sal_uInt16 nE ) { nStartPara = nS, nEndPara = nE; }
+			ParaRange( sal_uInt32 nS, sal_uInt32 nE ) { nStartPara = nS, nEndPara = nE; }
 
 	void 	Adjust();
-	sal_uInt16	Len() const { return 1 + ( ( nEndPara > nStartPara ) ? (nEndPara-nStartPara) : (nStartPara-nEndPara) ); }
+	sal_uInt32	Len() const { return 1 + ( ( nEndPara > nStartPara ) ? (nEndPara-nStartPara) : (nStartPara-nEndPara) ); }
 };
 
 inline void ParaRange::Adjust()
 {
 	if ( nStartPara > nEndPara )
 	{
-		sal_uInt16 nTmp = nStartPara;
+		sal_uInt32 nTmp = nStartPara;
 		nStartPara = nEndPara;
 		nEndPara = nTmp;
 	}

@@ -576,7 +576,7 @@ ParaRange OutlinerView::ImpGetSelectedParagraphs( sal_Bool bIncludeHiddenChilds 
 		Paragraph* pLast = pOwner->pParaList->GetParagraph( aParas.nEndPara );
 		if ( pOwner->pParaList->HasHiddenChilds( pLast ) )
 			aParas.nEndPara =
-                sal::static_int_cast< sal_uInt16 >(
+                sal::static_int_cast< sal_uInt32 >(
                     aParas.nEndPara +
                     pOwner->pParaList->GetChildCount( pLast ) );
 	}
