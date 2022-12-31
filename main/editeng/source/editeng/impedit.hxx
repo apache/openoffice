@@ -1132,7 +1132,7 @@ inline ::svl::IUndoManager* ImpEditEngine::SetUndoManager(::svl::IUndoManager* p
 
 inline ParaPortion*	ImpEditEngine::FindParaPortion( ContentNode* pNode ) const
 {
-	sal_uInt16 nPos = aEditDoc.GetPos( pNode );
+	sal_uInt32 nPos = aEditDoc.GetPos( pNode );
 	DBG_ASSERT( nPos < GetParaPortions().Count(), "Portionloser Node?" );
 	return GetParaPortions()[ nPos ];
 }
