@@ -361,7 +361,7 @@ void ImpEditEngine::CheckIdleFormatter()
 
 void ImpEditEngine::FormatFullDoc()
 {
-	for ( sal_uInt16 nPortion = 0; nPortion < GetParaPortions().Count(); nPortion++ )
+	for ( sal_uInt32 nPortion = 0; nPortion < GetParaPortions().Count(); nPortion++ )
 		GetParaPortions()[nPortion]->MarkSelectionInvalid( 0, GetParaPortions()[nPortion]->GetNode()->Len() );
 	FormatDoc();
 }
@@ -388,7 +388,7 @@ void ImpEditEngine::FormatDoc()
 	sal_Bool bMapChanged = ImpCheckRefMapMode();
 
 	aInvalidRec = Rectangle();	// leermachen
-	for ( sal_uInt16 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
+	for ( sal_uInt32 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
 	{
 		ParaPortion* pParaPortion = GetParaPortions().GetObject( nPara );
 		if ( pParaPortion->MustRepaint() || ( pParaPortion->IsInvalid() && pParaPortion->IsVisible() ) )
@@ -413,7 +413,7 @@ void ImpEditEngine::FormatDoc()
 				{
 					// Bei einer Aenderung der Hoehe muss alles weiter unten
 					// neu formatiert werden...
-					for ( sal_uInt16 n = nPara+1; n < GetParaPortions().Count(); n++ )
+					for ( sal_uInt32 n = nPara+1; n < GetParaPortions().Count(); n++ )
 					{
 						ParaPortion* pPP = GetParaPortions().GetObject( n );
 						pPP->MarkSelectionInvalid( 0, pPP->GetNode()->Len() );
@@ -546,7 +546,7 @@ void ImpEditEngine::CheckAutoPageSize()
 		{
 			// Falls davor zentriert/rechts oder Tabs...
 			aStatus.GetStatusWord() |= !IsVertical() ? EE_STAT_TEXTWIDTHCHANGED : EE_STAT_TEXTHEIGHTCHANGED;
-			for ( sal_uInt16 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
+			for ( sal_uInt32 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
 			{
 				// Es brauchen nur Absaetze neu formatiert werden,
 				// die nicht linksbuendig sind.
@@ -2515,7 +2515,7 @@ void ImpEditEngine::SetTextRanger( TextRanger* pRanger )
 		delete pTextRanger;
 		pTextRanger = pRanger;
 
-		for ( sal_uInt16 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
+		for ( sal_uInt32 nPara = 0; nPara < GetParaPortions().Count(); nPara++ )
 		{
 			ParaPortion* pParaPortion = GetParaPortions().GetObject( nPara );
 			pParaPortion->MarkSelectionInvalid( 0, pParaPortion->GetNode()->Len() );
@@ -2900,7 +2900,7 @@ void ImpEditEngine::Paint( OutputDevice* pOutDev, Rectangle aClipRec, Point aSta
 	// --------------------------------------------------
 	// Ueber alle Absaetze...
 	// --------------------------------------------------
-	for ( sal_uInt16 n = 0; n < GetParaPortions().Count(); n++ )
+	for ( sal_uInt32 n = 0; n < GetParaPortions().Count(); n++ )
 	{
 		ParaPortion* pPortion = GetParaPortions().GetObject( n );
 		DBG_ASSERT( pPortion, "NULL-Pointer in TokenList in Paint" );
@@ -4130,7 +4130,7 @@ ContentNode* ImpEditEngine::GetNextVisNode( ContentNode* pCurNode )
 
 ParaPortion* ImpEditEngine::GetPrevVisPortion( ParaPortion* pCurPortion )
 {
-	sal_uInt16 nPara = GetParaPortions().GetPos( pCurPortion );
+	sal_uInt32 nPara = GetParaPortions().GetPos( pCurPortion );
 	DBG_ASSERT( nPara < GetParaPortions().Count() , "Portion nicht gefunden: GetPrevVisPortion" );
 	ParaPortion* pPortion = nPara ? GetParaPortions()[--nPara] : 0;
 	while ( pPortion && !pPortion->IsVisible() )
@@ -4141,7 +4141,7 @@ ParaPortion* ImpEditEngine::GetPrevVisPortion( ParaPortion* pCurPortion )
 
 ParaPortion* ImpEditEngine::GetNextVisPortion( ParaPortion* pCurPortion )
 {
-	sal_uInt16 nPara = GetParaPortions().GetPos( pCurPortion );
+	sal_uInt32 nPara = GetParaPortions().GetPos( pCurPortion );
 	DBG_ASSERT( nPara < GetParaPortions().Count() , "Portion nicht gefunden: GetPrevVisNode" );
 	ParaPortion* pPortion = GetParaPortions().SaveGetObject( ++nPara );
 	while ( pPortion && !pPortion->IsVisible() )
@@ -4236,8 +4236,8 @@ void ImpEditEngine::SetCharStretching( sal_uInt16 nX, sal_uInt16 nY )
 void ImpEditEngine::DoStretchChars( sal_uInt16 nX, sal_uInt16 nY )
 {
 	UndoActionStart( EDITUNDO_STRETCH );
-	sal_uInt16 nParas = GetEditDoc().Count();
-	for ( sal_uInt16 nPara = 0; nPara < nParas; nPara++ )
+	sal_uInt32 nParas = GetEditDoc().Count();
+	for ( sal_uInt32 nPara = 0; nPara < nParas; nPara++ )
 	{
 		ContentNode* pNode = GetEditDoc()[nPara];
 		SfxItemSet aTmpSet( pNode->GetContentAttribs().GetItems() );
@@ -4390,9 +4390,9 @@ const SvxNumberFormat* ImpEditEngine::GetNumberFormat( const ContentNode *pNode 
     if (pNode)
     {
         // get index of paragraph
-        sal_uInt16 nPara = GetEditDoc().GetPos( const_cast< ContentNode * >(pNode) );
-        DBG_ASSERT( nPara < USHRT_MAX, "node not found in array" );
-        if (nPara < USHRT_MAX)
+        sal_uInt32 nPara = GetEditDoc().GetPos( const_cast< ContentNode * >(pNode) );
+        DBG_ASSERT( nPara < SAL_MAX_UINT32, "node not found in array" );
+        if (nPara < SAL_MAX_UINT32)
         {
             // the called function may be overloaded by an OutlinerEditEng object to provide
             // access to the SvxNumberFormat of the Outliner.

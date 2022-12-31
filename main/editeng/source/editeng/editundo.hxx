@@ -216,13 +216,13 @@ public:
 class EditUndoSetParaAttribs: public EditUndo
 {
 private:
-	sal_uInt16			nPara;
+	sal_uInt32			nPara;
 	SfxItemSet		aPrevItems;
 	SfxItemSet		aNewItems;
 
 public:
 					TYPEINFO();
-					EditUndoSetParaAttribs( ImpEditEngine* pImpEE, sal_uInt16 nPara, const SfxItemSet& rPrevItems, const SfxItemSet& rNewItems );
+					EditUndoSetParaAttribs( ImpEditEngine* pImpEE, sal_uInt32 nPara, const SfxItemSet& rPrevItems, const SfxItemSet& rNewItems );
 					~EditUndoSetParaAttribs();
 
 	virtual void	Undo();

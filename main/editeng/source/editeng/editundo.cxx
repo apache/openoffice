@@ -537,7 +537,7 @@ void __EXPORT EditUndoSetStyleSheet::Redo()
 // -----------------------------------------------------------------------
 // EditUndoSetParaAttribs
 // ------------------------------------------------------------------------
-EditUndoSetParaAttribs::EditUndoSetParaAttribs( ImpEditEngine* _pImpEE, sal_uInt16 nP, const SfxItemSet& rPrevItems, const SfxItemSet& rNewItems )
+EditUndoSetParaAttribs::EditUndoSetParaAttribs( ImpEditEngine* _pImpEE, sal_uInt32 nP, const SfxItemSet& rPrevItems, const SfxItemSet& rNewItems )
 	: EditUndo( EDITUNDO_PARAATTRIBS, _pImpEE ), 
 	  aPrevItems( rPrevItems ),
 	  aNewItems(rNewItems )

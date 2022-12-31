@@ -59,13 +59,13 @@ void ImpEditEngine::SetStyleSheet( EditSelection aSel, SfxStyleSheet* pStyle )
 {
 	aSel.Adjust( aEditDoc );
 
-	sal_uInt16 nStartPara = aEditDoc.GetPos( aSel.Min().GetNode() );
-	sal_uInt16 nEndPara = aEditDoc.GetPos( aSel.Max().GetNode() );
+	sal_uInt32 nStartPara = aEditDoc.GetPos( aSel.Min().GetNode() );
+	sal_uInt32 nEndPara = aEditDoc.GetPos( aSel.Max().GetNode() );
 
 	sal_Bool _bUpdate = GetUpdateMode();
 	SetUpdateMode( sal_False );
 
-	for ( sal_uInt16 n = nStartPara; n <= nEndPara; n++ )
+	for ( sal_uInt32 n = nStartPara; n <= nEndPara; n++ )
 		SetStyleSheet( n, pStyle );
 
 	SetUpdateMode( _bUpdate, 0 );
@@ -110,7 +110,7 @@ void ImpEditEngine::UpdateParagraphsWithStyleSheet( SfxStyleSheet* pStyle )
 	CreateFont( aFontFromStyle, pStyle->GetItemSet() );
 
 	sal_Bool bUsed = sal_False;
-	for ( sal_uInt16 nNode = 0; nNode < aEditDoc.Count(); nNode++ )
+	for ( sal_uInt32 nNode = 0; nNode < aEditDoc.Count(); nNode++ )
 	{
 		ContentNode* pNode = aEditDoc.GetObject( nNode );
 		if ( pNode->GetStyleSheet() == pStyle )
@@ -133,7 +133,7 @@ void ImpEditEngine::UpdateParagraphsWithStyleSheet( SfxStyleSheet* pStyle )
 
 void ImpEditEngine::RemoveStyleFromParagraphs( SfxStyleSheet* pStyle )
 {
-	for ( sal_uInt16 nNode = 0; nNode < aEditDoc.Count(); nNode++ )
+	for ( sal_uInt32 nNode = 0; nNode < aEditDoc.Count(); nNode++ )
 	{
 		ContentNode* pNode = aEditDoc.GetObject(nNode);
 		if ( pNode->GetStyleSheet() == pStyle )
@@ -203,8 +203,8 @@ EditUndoSetAttribs* ImpEditEngine::CreateAttribUndo( EditSelection aSel, const S
 
 	ESelection aESel( CreateESel( aSel ) );
 
-	sal_uInt16 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
-	sal_uInt16 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
+	sal_uInt32 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
+	sal_uInt32 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
 
 	DBG_ASSERT( nStartNode <= nEndNode, "CreateAttribUndo: Start > End ?!" );
 
@@ -222,7 +222,7 @@ EditUndoSetAttribs* ImpEditEngine::CreateAttribUndo( EditSelection aSel, const S
 
 	SfxItemPool* pPool = pUndo->GetNewAttribs().GetPool();
 
-	for ( sal_uInt16 nPara = nStartNode; nPara <= nEndNode; nPara++ )
+	for ( sal_uInt32 nPara = nStartNode; nPara <= nEndNode; nPara++ )
 	{
 		ContentNode* pNode = aEditDoc.GetObject( nPara );
 		DBG_ASSERT( aEditDoc.SaveGetObject( nPara ), "Node nicht gefunden: CreateAttribUndo" );
@@ -347,11 +347,11 @@ SfxItemSet ImpEditEngine::GetAttribs( EditSelection aSel, sal_Bool bOnlyHardAttr
 
 	SfxItemSet aCurSet( GetEmptyItemSet() );
 
-	sal_uInt16 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
-	sal_uInt16 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
+	sal_uInt32 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
+	sal_uInt32 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
 
 	// ueber die Absaetze iterieren...
-	for ( sal_uInt16 nNode = nStartNode; nNode <= nEndNode; nNode++	)
+	for ( sal_uInt32 nNode = nStartNode; nNode <= nEndNode; nNode++	)
 	{
 		ContentNode* pNode = aEditDoc.GetObject( nNode );
 		DBG_ASSERT( aEditDoc.SaveGetObject( nNode ), "Node nicht gefunden: GetAttrib" );
@@ -534,8 +534,8 @@ void ImpEditEngine::SetAttribs( EditSelection aSel, const SfxItemSet& rSet, sal_
 	if ( ( nSpecial == ATTRSPECIAL_WHOLEWORD ) && !aSel.HasRange() )
 		aSel = SelectWord( aSel, ::com::sun::star::i18n::WordType::ANYWORD_IGNOREWHITESPACES, sal_False );
 
-	sal_uInt16 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
-	sal_uInt16 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
+	sal_uInt32 nStartNode = aEditDoc.GetPos( aSel.Min().GetNode() );
+	sal_uInt32 nEndNode = aEditDoc.GetPos( aSel.Max().GetNode() );
 
 	if ( IsUndoEnabled() && !IsInUndo() && aStatus.DoUndoAttribs() )
 	{
@@ -553,7 +553,7 @@ void ImpEditEngine::SetAttribs( EditSelection aSel, const SfxItemSet& rSet, sal_
 	}
 
 	// ueber die Absaetze iterieren...
-	for ( sal_uInt16 nNode = nStartNode; nNode <= nEndNode; nNode++	)
+	for ( sal_uInt32 nNode = nStartNode; nNode <= nEndNode; nNode++	)
 	{
 		sal_Bool bParaAttribFound = sal_False;
 		sal_Bool bCharAttribFound = sal_False;

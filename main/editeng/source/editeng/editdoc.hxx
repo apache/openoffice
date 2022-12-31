@@ -447,8 +447,8 @@ private:
 	sal_uInt16			nStartPosX;
 	sal_uInt16			nStart;		// koennte durch nStartPortion ersetzt werden
 	sal_uInt16			nEnd;       // koennte durch nEndPortion ersetzt werden
-	sal_uInt16			nStartPortion;
-	sal_uInt16 			nEndPortion;
+	sal_uInt16			nStartPortion; // index of TextPortion in TextPortionList
+	sal_uInt16 			nEndPortion; // index of TextPortion in TextPortionList
 	sal_uInt16			nHeight;	// Gesamthoehe der Zeile
 	sal_uInt16			nTxtHeight;	// Reine Texthoehe
 	sal_uInt16			nCrsrHeight;	// Bei Konturfluss hohe Zeilen => Cursor zu gro?.

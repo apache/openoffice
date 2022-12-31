@@ -116,7 +116,7 @@ struct DragAndDropInfo
 	sal_uInt16			nCursorWidth;
     ESelection          aBeginDragSel;
 	EditPaM				aDropDest;
-    sal_uInt16              nOutlinerDropDest;
+    sal_uInt32              nOutlinerDropDest;
 	ESelection			aDropSel;
 	VirtualDevice*		pBackground;
 	const SvxFieldItem*	pField;
