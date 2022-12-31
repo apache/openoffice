@@ -1785,7 +1785,7 @@ const SvxFieldItem* OutlinerView::GetFieldUnderMousePointer() const
 }
 
 
-const SvxFieldItem* OutlinerView::GetFieldUnderMousePointer( sal_uInt16& nPara, sal_uInt16& nPos ) const
+const SvxFieldItem* OutlinerView::GetFieldUnderMousePointer( sal_uInt32& nPara, sal_uInt16& nPos ) const
 {
 	DBG_CHKTHIS(OutlinerView,0);
 	return pEditView->GetFieldUnderMousePointer( nPara, nPos );

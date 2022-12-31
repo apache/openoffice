@@ -326,7 +326,7 @@ public:
     void            AddDragAndDropListeners();
     void            RemoveDragAndDropListeners();
 
-    sal_Bool            IsBulletArea( const Point& rPos, sal_uInt16* pPara );
+    sal_Bool            IsBulletArea( const Point& rPos, sal_uInt32* pPara );
 
 //	Fuer die SelectionEngine...
 	void			CreateAnchor();
@@ -366,7 +366,7 @@ public:
 	sal_Bool			IsWrongSpelledWord( const EditPaM& rPaM, sal_Bool bMarkIfWrong );
 	String			SpellIgnoreOrAddWord( sal_Bool bAdd );
 
-    const SvxFieldItem* GetField( const Point& rPos, sal_uInt16* pPara, sal_uInt16* pPos ) const;
+    const SvxFieldItem* GetField( const Point& rPos, sal_uInt32* pPara, sal_uInt16* pPos ) const;
     void                DeleteSelected();
 
 	// Ggf. mehr als OutputArea invalidieren, fuer den DrawingEngine-Textrahmen...

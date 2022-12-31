@@ -165,17 +165,17 @@ public:
 	void			Redo();
 
 	// speziell fuer Olli
-	sal_uInt16			GetParagraph( const Point& rMousePosPixel );
-	Point			GetWindowPosTopLeft( sal_uInt16 nParagraph );
-	void			MoveParagraphs( Range aParagraphs, sal_uInt16 nNewPos );
+	sal_uInt32			GetParagraph( const Point& rMousePosPixel );
+	Point			GetWindowPosTopLeft( sal_uInt32 nParagraph );
+	void			MoveParagraphs( Range aParagraphs, sal_uInt32 nNewPos );
     void            MoveParagraphs( long nDiff );
 
 	const SfxItemSet& 	GetEmptyItemSet();
 	SfxItemSet			GetAttribs();
 	void				SetAttribs( const SfxItemSet& rSet );
-	void				SetParaAttribs( const SfxItemSet& rSet, sal_uInt16 nPara );
+	void				SetParaAttribs( const SfxItemSet& rSet, sal_uInt32 nPara );
     void                RemoveAttribs( sal_Bool bRemoveParaAttribs = sal_False, sal_uInt16 nWhich = 0 );
-	void 				RemoveCharAttribs( sal_uInt16 nPara, sal_uInt16 nWhich = 0 );
+	void 				RemoveCharAttribs( sal_uInt32 nPara, sal_uInt16 nWhich = 0 );
     void                RemoveAttribsKeepLanguages( sal_Bool bRemoveParaAttribs = sal_False );
 
     sal_uLong           Read( SvStream& rInput, const String& rBaseURL, EETextFormat eFormat, sal_Bool bSelect = sal_False, SvKeyValueIterator* pHTTPHeaderAttrs = NULL );
@@ -226,8 +226,8 @@ public:
 
 	void 				InsertField( const SvxFieldItem& rFld );
 	const SvxFieldItem*	GetFieldUnderMousePointer() const;
-	const SvxFieldItem*	GetFieldUnderMousePointer( sal_uInt16& nPara, xub_StrLen& nPos ) const;
-	const SvxFieldItem*	GetField( const Point& rPos, sal_uInt16* pnPara = NULL, xub_StrLen* pnPos = NULL ) const;
+	const SvxFieldItem*	GetFieldUnderMousePointer( sal_uInt32& nPara, xub_StrLen& nPos ) const;
+	const SvxFieldItem*	GetField( const Point& rPos, sal_uInt32* pnPara = NULL, xub_StrLen* pnPos = NULL ) const;
 
 	const SvxFieldItem*	GetFieldAtSelection() const;
 

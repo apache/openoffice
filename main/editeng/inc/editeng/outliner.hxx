@@ -365,7 +365,7 @@ public:
 
 	void                InsertField( const SvxFieldItem& rFld );
 	const SvxFieldItem* GetFieldUnderMousePointer() const;
-	const SvxFieldItem*	GetFieldUnderMousePointer( sal_uInt16& nPara, xub_StrLen& nPos ) const;
+	const SvxFieldItem*	GetFieldUnderMousePointer( sal_uInt32& nPara, xub_StrLen& nPos ) const;
 	const SvxFieldItem* GetFieldAtSelection() const;
 
     /** enables bullets for the selected paragraphs if the bullets/numbering of the first paragraph is off

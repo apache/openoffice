@@ -1198,7 +1198,7 @@ void ImpEditView::DeleteSelected()
 	ShowCursor( DoAutoScroll(), sal_True );
 }
 
-const SvxFieldItem* ImpEditView::GetField( const Point& rPos, sal_uInt16* pPara, sal_uInt16* pPos ) const
+const SvxFieldItem* ImpEditView::GetField( const Point& rPos, sal_uInt32* pPara, sal_uInt16* pPos ) const
 {
 	if( !GetOutputArea().IsInside( rPos ) )
 		return 0;
@@ -1231,10 +1231,10 @@ const SvxFieldItem* ImpEditView::GetField( const Point& rPos, sal_uInt16* pPara,
 	return NULL;
 }
 
-sal_Bool ImpEditView::IsBulletArea( const Point& rPos, sal_uInt16* pPara )
+sal_Bool ImpEditView::IsBulletArea( const Point& rPos, sal_uInt32* pPara )
 {
     if ( pPara )
-        *pPara = 0xFFFF;
+        *pPara = 0xFFFFFFFF;
 
     if( !GetOutputArea().IsInside( rPos ) )
 		return sal_False;
@@ -1244,7 +1244,7 @@ sal_Bool ImpEditView::IsBulletArea( const Point& rPos, sal_uInt16* pPara )
 
 	if ( aPaM.GetIndex() == 0 )
 	{
-        sal_uInt16 nPara = pEditEngine->pImpEditEngine->aEditDoc.GetPos( aPaM.GetNode() );
+        sal_uInt32 nPara = pEditEngine->pImpEditEngine->aEditDoc.GetPos( aPaM.GetNode() );
 		Rectangle aBulletArea = pEditEngine->GetBulletArea( nPara );
         long nY = pEditEngine->GetDocPosTopLeft( nPara ).Y();
         ParaPortion* pParaPortion = pEditEngine->pImpEditEngine->GetParaPortions().GetObject( nPara );
@@ -1569,7 +1569,8 @@ void ImpEditView::dragGestureRecognized( const ::com::sun::star::datatransfer::d
     else
     {
 	    // Field?!
-		sal_uInt16 nPara, nPos;
+		sal_uInt32 nPara;
+		sal_uInt16 nPos;
 	    Point aMousePos = GetWindow()->PixelToLogic( aMousePosPixel );
 		const SvxFieldItem* pField = GetField( aMousePos, &nPara, &nPos );
 		if ( pField )
