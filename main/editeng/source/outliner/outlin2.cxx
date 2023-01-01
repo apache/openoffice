@@ -326,7 +326,7 @@ Size Outliner::CalcTextSize()
 Point Outliner::GetDocPos( Paragraph* pPara )
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetDocPosTopLeft( (sal_uInt16)pParaList->GetAbsPos( pPara ) );
+	return pEditEngine->GetDocPosTopLeft( pParaList->GetAbsPos( pPara ) );
 }
 
 void Outliner::SetStyleSheetPool( SfxStyleSheetPool* pSPool )
@@ -344,7 +344,7 @@ SfxStyleSheetPool* Outliner::GetStyleSheetPool()
 SfxStyleSheet* Outliner::GetStyleSheet( sal_uLong nPara )
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetStyleSheet( (sal_uInt16)nPara );
+	return pEditEngine->GetStyleSheet( nPara );
 }
 
 sal_Bool Outliner::IsInSelectionMode() const
@@ -430,19 +430,19 @@ sal_Bool Outliner::IsInUndo()
 sal_uLong Outliner::GetLineCount( sal_uLong nParagraph ) const
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetLineCount( (sal_uInt16)nParagraph );
+	return pEditEngine->GetLineCount( nParagraph );
 }
 
 sal_uInt16 Outliner::GetLineLen( sal_uLong nParagraph, sal_uInt16 nLine ) const
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetLineLen( (sal_uInt16)nParagraph, nLine );
+	return pEditEngine->GetLineLen( nParagraph, nLine );
 }
 
 sal_uLong Outliner::GetLineHeight( sal_uLong nParagraph, sal_uLong nLine )
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetLineHeight( (sal_uInt16)nParagraph, (sal_uInt16)nLine );
+	return pEditEngine->GetLineHeight( nParagraph, (sal_uInt16)nLine );
 }
 
 void Outliner::QuickRemoveCharAttribs( sal_uInt32 nPara, sal_uInt16 nWhich )
@@ -563,13 +563,13 @@ OutputDevice* Outliner::GetRefDevice() const
 sal_uInt16 Outliner::GetFirstLineOffset( sal_uLong nParagraph )
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetFirstLineOffset( (sal_uInt16)nParagraph );
+	return pEditEngine->GetFirstLineOffset( nParagraph );
 }
 
 sal_uLong Outliner::GetTextHeight( sal_uLong nParagraph ) const
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetTextHeight((sal_uInt16)nParagraph );
+	return pEditEngine->GetTextHeight( nParagraph );
 }
 
 Point Outliner::GetDocPos( const Point& rPaperPos ) const
@@ -581,7 +581,7 @@ Point Outliner::GetDocPos( const Point& rPaperPos ) const
 Point Outliner::GetDocPosTopLeft( sal_uLong nParagraph )
 {
 	DBG_CHKTHIS(Outliner,0);
-	return pEditEngine->GetDocPosTopLeft( (sal_uInt16)nParagraph );
+	return pEditEngine->GetDocPosTopLeft( nParagraph );
 }
 
 sal_Bool Outliner::IsTextPos( const Point& rPaperPos, sal_uInt16 nBorder )
