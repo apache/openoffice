@@ -469,7 +469,7 @@ void OutlinerView::ImpPaintDDCursor()
 sal_uLong OutlinerView::ImpGetInsertionPara( const Point& rPosPixel  )
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uInt32 nCurPara = pEditView->GetParagraph( rPosPixel );
+	sal_uLong nCurPara = pEditView->GetParagraph( rPosPixel );
 	ParagraphList* pParaList = pOwner->pParaList;
 
 	if ( nCurPara == EE_PARA_NOT_FOUND )
