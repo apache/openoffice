@@ -925,7 +925,7 @@ void OutlinerView::CollapseAll()
 	ImplExpandOrCollaps( 0, (sal_uInt16)(pOwner->pParaList->GetParagraphCount()-1), sal_False );
 }
 
-void OutlinerView::ImplExpandOrCollaps( sal_uInt16 nStartPara, sal_uInt16 nEndPara, sal_Bool bExpand )
+void OutlinerView::ImplExpandOrCollaps( sal_uInt32 nStartPara, sal_uInt32 nEndPara, sal_Bool bExpand )
 {
 	DBG_CHKTHIS( OutlinerView, 0 );
 
@@ -936,7 +936,7 @@ void OutlinerView::ImplExpandOrCollaps( sal_uInt16 nStartPara, sal_uInt16 nEndPa
 	if( bUndo )
 		pOwner->UndoActionStart( bExpand ? OLUNDO_EXPAND : OLUNDO_COLLAPSE );
 
-	for ( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++ )
+	for ( sal_uInt32 nPara = nStartPara; nPara <= nEndPara; nPara++ )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 		sal_Bool bDone = bExpand ? pOwner->Expand( pPara ) : pOwner->Collapse( pPara );

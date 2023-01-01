@@ -151,7 +151,7 @@ Paragraph* Outliner::Insert(const XubString& rText, sal_uLong nAbsPos, sal_Int16
 }
 
 
-void Outliner::ParagraphInserted( sal_uInt16 nPara )
+void Outliner::ParagraphInserted( sal_uInt32 nPara )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -189,7 +189,7 @@ void Outliner::ParagraphInserted( sal_uInt16 nPara )
 	}
 }
 
-void Outliner::ParagraphDeleted( sal_uInt16 nPara )
+void Outliner::ParagraphDeleted( sal_uInt32 nPara )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -314,14 +314,14 @@ void Outliner::SetDepth( Paragraph* pPara, sal_Int16 nNewDepth )
 	}
 }
 
-sal_Int16 Outliner::GetNumberingStartValue( sal_uInt16 nPara )
+sal_Int16 Outliner::GetNumberingStartValue( sal_uInt32 nPara )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
 	DBG_ASSERT( pPara, "Outliner::GetNumberingStartValue - Paragraph not found!" );
 	return pPara ? pPara->GetNumberingStartValue() : -1;
 }
 
-void Outliner::SetNumberingStartValue( sal_uInt16 nPara, sal_Int16 nNumberingStartValue )
+void Outliner::SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
 	DBG_ASSERT( pPara, "Outliner::GetNumberingStartValue - Paragraph not found!" );
@@ -342,14 +342,14 @@ void Outliner::SetNumberingStartValue( sal_uInt16 nPara, sal_Int16 nNumberingSta
     }
 }
 
-sal_Bool Outliner::IsParaIsNumberingRestart( sal_uInt16 nPara )
+sal_Bool Outliner::IsParaIsNumberingRestart( sal_uInt32 nPara )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
 	DBG_ASSERT( pPara, "Outliner::IsParaIsNumberingRestart - Paragraph not found!" );
 	return pPara ? pPara->IsParaIsNumberingRestart() : sal_False;
 }
 
-void Outliner::SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart )
+void Outliner::SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
 	DBG_ASSERT( pPara, "Outliner::SetParaIsNumberingRestart - Paragraph not found!" );
@@ -371,8 +371,8 @@ void Outliner::SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumb
 }
 
 sal_Int16 Outliner::GetBulletsNumberingStatus(
-    const sal_uInt16 nParaStart,
-    const sal_uInt16 nParaEnd ) const
+    const sal_uInt32 nParaStart,
+    const sal_uInt32 nParaEnd ) const
 {
     if ( nParaStart > nParaEnd
          || nParaEnd >= pParaList->GetParagraphCount() )
@@ -381,9 +381,9 @@ sal_Int16 Outliner::GetBulletsNumberingStatus(
         return 2;
     }
 
-    sal_uInt16 nBulletsCount = 0;
-    sal_uInt16 nNumberingCount = 0;
-    for (sal_uInt16 nPara = nParaStart; nPara <= nParaEnd; nPara++)
+    sal_uInt32 nBulletsCount = 0;
+    sal_uInt32 nNumberingCount = 0;
+    for (sal_uInt32 nPara = nParaStart; nPara <= nParaEnd; nPara++)
     {
         if ( !pParaList->GetParagraph(nPara) )
         {
@@ -407,7 +407,7 @@ sal_Int16 Outliner::GetBulletsNumberingStatus(
         }
     }
 
-    const sal_uInt16 nParaCount = nParaEnd - nParaStart + 1;
+    const sal_uInt32 nParaCount = nParaEnd - nParaStart + 1;
     if ( nBulletsCount == nParaCount )
     {
         return 0;
@@ -426,7 +426,7 @@ sal_Int16 Outliner::GetBulletsNumberingStatus() const
            : 2;
 }
 
-OutlinerParaObject* Outliner::CreateParaObject( sal_uInt16 nStartPara, sal_uInt16 nCount ) const
+OutlinerParaObject* Outliner::CreateParaObject( sal_uInt32 nStartPara, sal_uInt32 nCount ) const
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -718,7 +718,7 @@ void Outliner::AddText( const OutlinerParaObject& rPObj )
 	pEditEngine->SetUpdateMode( bUpdate );
 }
 
-void __EXPORT Outliner::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos )
+void __EXPORT Outliner::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -731,7 +731,7 @@ void __EXPORT Outliner::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPa
 }
 
 
-void __EXPORT Outliner::FieldSelected( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos )
+void __EXPORT Outliner::FieldSelected( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos )
 {
 	DBG_CHKTHIS(Outliner,0);
 	if ( !aFieldClickedHdl.IsSet() )
@@ -743,7 +743,7 @@ void __EXPORT Outliner::FieldSelected( const SvxFieldItem& rField, sal_uInt16 nP
 }
 
 
-XubString __EXPORT Outliner::CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor )
+XubString __EXPORT Outliner::CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor )
 {
 	DBG_CHKTHIS(Outliner,0);
 	if ( !aCalcFieldValueHdl.IsSet() )
@@ -792,14 +792,14 @@ void Outliner::SetVisible( Paragraph* pPara, sal_Bool bVisible )
         }
 }
 
-void Outliner::ImplCheckNumBulletItem( sal_uInt16 nPara )
+void Outliner::ImplCheckNumBulletItem( sal_uInt32 nPara )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
         if (pPara)
             pPara->aBulSize.Width() = -1;
 }
 
-void Outliner::ImplSetLevelDependendStyleSheet( sal_uInt16 nPara, SfxStyleSheet* pLevelStyle )
+void Outliner::ImplSetLevelDependendStyleSheet( sal_uInt32 nPara, SfxStyleSheet* pLevelStyle )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -834,7 +834,7 @@ void Outliner::ImplSetLevelDependendStyleSheet( sal_uInt16 nPara, SfxStyleSheet*
 	}
 }
 
-void Outliner::ImplInitDepth( sal_uInt16 nPara, sal_Int16 nDepth, sal_Bool bCreateUndo, sal_Bool bUndoAction )
+void Outliner::ImplInitDepth( sal_uInt32 nPara, sal_Int16 nDepth, sal_Bool bCreateUndo, sal_Bool bUndoAction )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -875,7 +875,7 @@ void Outliner::ImplInitDepth( sal_uInt16 nPara, sal_Int16 nDepth, sal_Bool bCrea
 	}
 }
 
-void Outliner::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void Outliner::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -947,7 +947,7 @@ sal_Bool Outliner::Collapse( Paragraph* pPara )
 }
 
 
-Font Outliner::ImpCalcBulletFont( sal_uInt16 nPara ) const
+Font Outliner::ImpCalcBulletFont( sal_uInt32 nPara ) const
 {
     const SvxNumberFormat* pFmt = GetNumberFormat( nPara );
 	DBG_ASSERT( pFmt && ( pFmt->GetNumberingType() != SVX_NUM_BITMAP ) && ( pFmt->GetNumberingType() != SVX_NUM_NUMBER_NONE ), "ImpCalcBulletFont: Missing or BitmapBullet!" );
@@ -1003,7 +1003,7 @@ Font Outliner::ImpCalcBulletFont( sal_uInt16 nPara ) const
 	return aBulletFont;
 }
 
-void Outliner::PaintBullet( sal_uInt16 nPara, const Point& rStartPos,
+void Outliner::PaintBullet( sal_uInt32 nPara, const Point& rStartPos,
 	const Point& rOrigin, short nOrientation, OutputDevice* pOutDev )
 {
 	DBG_CHKTHIS(Outliner,0);
@@ -1516,7 +1516,7 @@ sal_Bool Outliner::HasChilds( Paragraph* pParagraph ) const
 	return pParaList->HasChilds( pParagraph );
 }
 
-bool Outliner::ImplHasNumberFormat( sal_uInt16 nPara ) const
+bool Outliner::ImplHasNumberFormat( sal_uInt32 nPara ) const
 {
     return GetNumberFormat(nPara) != 0;
 	if ( GetNumberFormat(nPara) )
@@ -1528,7 +1528,7 @@ bool Outliner::ImplHasNumberFormat( sal_uInt16 nPara ) const
 		return sal_False;
 }
 
-const SvxNumberFormat* Outliner::GetNumberFormat( sal_uInt16 nPara ) const
+const SvxNumberFormat* Outliner::GetNumberFormat( sal_uInt32 nPara ) const
 {
     const SvxNumberFormat* pFmt = NULL;
 
@@ -1548,7 +1548,7 @@ const SvxNumberFormat* Outliner::GetNumberFormat( sal_uInt16 nPara ) const
     return pFmt;
 }
 
-Size Outliner::ImplGetBulletSize( sal_uInt16 nPara )
+Size Outliner::ImplGetBulletSize( sal_uInt32 nPara )
 {
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
         if (!pPara)
@@ -1583,13 +1583,13 @@ Size Outliner::ImplGetBulletSize( sal_uInt16 nPara )
 	return pPara->aBulSize;
 }
 
-void Outliner::ImplCheckParagraphs( sal_uInt16 nStart, sal_uInt16 nEnd )
+void Outliner::ImplCheckParagraphs( sal_uInt32 nStart, sal_uInt32 nEnd )
 {
 	DBG_CHKTHIS( Outliner, 0 );
 
     // --> OD 2009-03-10 #i100014#
     // assure that the following for-loop does not loop forever
-    for ( sal_uInt16 n = nStart; n < nEnd; n++ )
+    for ( sal_uInt32 n = nStart; n < nEnd; n++ )
     // <--
 	{
 		Paragraph* pPara = pParaList->GetParagraph( n );
@@ -1612,7 +1612,7 @@ void Outliner::SetRefDevice( OutputDevice* pRefDev )
 	}
 }
 
-void Outliner::ParaAttribsChanged( sal_uInt16 nPara )
+void Outliner::ParaAttribsChanged( sal_uInt32 nPara )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -1659,7 +1659,7 @@ void Outliner::StyleSheetChanged( SfxStyleSheet* pStyle )
 	}
 }
 
-Rectangle Outliner::ImpCalcBulletArea( sal_uInt16 nPara, sal_Bool bAdjust, sal_Bool bReturnPaperPos )
+Rectangle Outliner::ImpCalcBulletArea( sal_uInt32 nPara, sal_Bool bAdjust, sal_Bool bReturnPaperPos )
 {
 	// Bullet-Bereich innerhalb des Absatzes...
 	Rectangle aBulletArea;
@@ -1767,7 +1767,7 @@ void Outliner::ExpandHdl()
 	aExpandHdl.Call( this );
 }
 
-EBulletInfo Outliner::GetBulletInfo( sal_uInt16 nPara )
+EBulletInfo Outliner::GetBulletInfo( sal_uInt32 nPara )
 {
     EBulletInfo aInfo;
 
@@ -1841,7 +1841,7 @@ void Outliner::StripPortions()
 
 // #101498#
 void Outliner::DrawingText( const Point& rStartPos, const XubString& rText, sal_uInt16 nTextStart, sal_uInt16 nTextLen, const sal_Int32* pDXArray,const SvxFont& rFont,
-    sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt8 nRightToLeft,
+    sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt8 nRightToLeft,
     const EEngineData::WrongSpellVector* pWrongSpellVector,
     const SvxFieldData* pFieldData,
     bool bEndOfLine,
@@ -1879,7 +1879,7 @@ sal_Bool Outliner::ImpCanDeleteSelectedPages( OutlinerView* pCurView, sal_uInt16
 	return (sal_Bool)RemovingPagesHdl( pCurView );
 }
 
-SfxItemSet Outliner::GetParaAttribs( sal_uInt16 nPara )
+SfxItemSet Outliner::GetParaAttribs( sal_uInt32 nPara )
 {
 	DBG_CHKTHIS(Outliner,0);
 	return pEditEngine->GetParaAttribs( nPara );
@@ -1951,7 +1951,7 @@ static bool isSameNumbering( const SvxNumberFormat& rN1, const SvxNumberFormat& 
     return true;
 }
 
-sal_uInt16 Outliner::ImplGetNumbering( sal_uInt16 nPara, const SvxNumberFormat* pParaFmt )
+sal_uInt16 Outliner::ImplGetNumbering( sal_uInt32 nPara, const SvxNumberFormat* pParaFmt )
 {
     sal_uInt16 nNumber = pParaFmt->GetStart() - 1;
 
@@ -2005,7 +2005,7 @@ sal_uInt16 Outliner::ImplGetNumbering( sal_uInt16 nPara, const SvxNumberFormat* 
     return nNumber;
 }
 
-void Outliner::ImplCalcBulletText( sal_uInt16 nPara, sal_Bool bRecalcLevel, sal_Bool bRecalcChilds )
+void Outliner::ImplCalcBulletText( sal_uInt32 nPara, sal_Bool bRecalcLevel, sal_Bool bRecalcChilds )
 {
 	DBG_CHKTHIS(Outliner,0);
 
@@ -2092,7 +2092,7 @@ void Outliner::SetFlatMode( sal_Bool bFlat )
 	}
 }
 
-String Outliner::ImplGetBulletText( sal_uInt16 nPara )
+String Outliner::ImplGetBulletText( sal_uInt32 nPara )
 {
         String aRes;
 	Paragraph* pPara = pParaList->GetParagraph( nPara );
@@ -2107,7 +2107,7 @@ String Outliner::ImplGetBulletText( sal_uInt16 nPara )
 }
 
 // this is needed for StarOffice Api
-void Outliner::SetLevelDependendStyleSheet( sal_uInt16 nPara )
+void Outliner::SetLevelDependendStyleSheet( sal_uInt32 nPara )
 {
 	SfxItemSet aOldAttrs( pEditEngine->GetParaAttribs( nPara ) );
 	ImplSetLevelDependendStyleSheet( nPara );

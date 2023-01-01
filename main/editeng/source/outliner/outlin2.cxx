@@ -214,7 +214,7 @@ String Outliner::GetWordDelimiters() const
 	return pEditEngine->GetWordDelimiters();
 }
 
-String Outliner::GetWord( sal_uInt16 nPara, sal_uInt16 nIndex )
+String Outliner::GetWord( sal_uInt32 nPara, sal_uInt16 nIndex )
 {
 	DBG_CHKTHIS(Outliner,0);
 	return pEditEngine->GetWord( nPara, nIndex );
@@ -445,7 +445,7 @@ sal_uLong Outliner::GetLineHeight( sal_uLong nParagraph, sal_uLong nLine )
 	return pEditEngine->GetLineHeight( (sal_uInt16)nParagraph, (sal_uInt16)nLine );
 }
 
-void Outliner::QuickRemoveCharAttribs( sal_uInt16 nPara, sal_uInt16 nWhich )
+void Outliner::QuickRemoveCharAttribs( sal_uInt32 nPara, sal_uInt16 nWhich )
 {
 	DBG_CHKTHIS(Outliner,0);
 	pEditEngine->QuickRemoveCharAttribs( nPara, nWhich );
@@ -598,7 +598,7 @@ sal_Bool Outliner::IsTextPos( const Point& rPaperPos, sal_uInt16 nBorder, sal_Bo
 	if ( !bTextPos )
 	{
 		Point aDocPos = GetDocPos( rPaperPos );
-		sal_uInt16 nPara = pEditEngine->FindParagraph( aDocPos.Y() );
+		sal_uInt32 nPara = pEditEngine->FindParagraph( aDocPos.Y() );
 		if ( ( nPara != EE_PARA_NOT_FOUND ) && ImplHasNumberFormat( nPara ) )
 		{
 			Rectangle aBulArea = ImpCalcBulletArea( nPara, sal_True, sal_True );
@@ -737,7 +737,7 @@ sal_uInt16 Outliner::GetScriptType( const ESelection& rSelection ) const
 	return pEditEngine->GetScriptType( rSelection );
 }
 
-LanguageType Outliner::GetLanguage( sal_uInt16 nPara, sal_uInt16 nPos ) const
+LanguageType Outliner::GetLanguage( sal_uInt32 nPara, sal_uInt16 nPos ) const
 {
 	DBG_CHKTHIS(Outliner,0);
 	return pEditEngine->GetLanguage( nPara, nPos );

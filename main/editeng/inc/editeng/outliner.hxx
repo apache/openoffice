@@ -226,7 +226,7 @@ private:
 
 #ifdef _OUTLINER_CXX
 
-	EDITENG_DLLPRIVATE void 		ImplExpandOrCollaps( sal_uInt16 nStartPara, sal_uInt16 nEndPara, sal_Bool bExpand );
+	EDITENG_DLLPRIVATE void 		ImplExpandOrCollaps( sal_uInt32 nStartPara, sal_uInt32 nEndPara, sal_Bool bExpand );
 
 	EDITENG_DLLPRIVATE sal_uLong       ImpCheckMousePos( const Point& rPosPixel, MouseTarget& reTarget);
 	EDITENG_DLLPRIVATE void        ImpToggleExpand( Paragraph* pParentPara );
@@ -442,7 +442,7 @@ public:
     const String&       mrText;
     sal_uInt16          mnTextStart;
     sal_uInt16          mnTextLen;
-    sal_uInt16          mnPara;
+    sal_uInt32          mnPara;
 	xub_StrLen          mnIndex;
     const SvxFont&      mrFont;
     const sal_Int32*    mpDXArray;
@@ -470,7 +470,7 @@ public:
         sal_uInt16 nTxtStart,
         sal_uInt16 nTxtLen,
 		const SvxFont& rFnt,
-        sal_uInt16 nPar,
+        sal_uInt32 nPar,
         xub_StrLen nIdx,
         const sal_Int32* pDXArr,
         const EEngineData::WrongSpellVector* pWrongSpellVector,
@@ -521,14 +521,14 @@ public:
 
 struct EDITENG_DLLPUBLIC PaintFirstLineInfo
 {
-	sal_uInt16 mnPara;
+	sal_uInt32 mnPara;
 	const Point& mrStartPos;
 	long mnBaseLineY;
 	const Point& mrOrigin;
 	short mnOrientation;
 	OutputDevice* mpOutDev;
 
-	PaintFirstLineInfo( sal_uInt16 nPara, const Point& rStartPos, long nBaseLineY, const Point& rOrigin, short nOrientation, OutputDevice* pOutDev )
+	PaintFirstLineInfo( sal_uInt32 nPara, const Point& rStartPos, long nBaseLineY, const Point& rOrigin, short nOrientation, OutputDevice* pOutDev )
 		: mnPara( nPara ), mrStartPos( rStartPos ), mnBaseLineY( nBaseLineY ), mrOrigin( rOrigin ), mnOrientation( nOrientation ), mpOutDev( pOutDev )
 	{}
 };
@@ -546,7 +546,7 @@ private:
 
 	String              aRepresentation;
 
-	sal_uInt16              nPara;
+	sal_uInt32              nPara;
 	xub_StrLen			nPos;
 	sal_Bool                bSimpleClick;
 
@@ -556,7 +556,7 @@ private:
 	SdrPage*			mpSdrPage;
 
 public:
-					EditFieldInfo( Outliner* pOutl, const SvxFieldItem& rFItem, sal_uInt16 nPa, xub_StrLen nPo )
+					EditFieldInfo( Outliner* pOutl, const SvxFieldItem& rFItem, sal_uInt32 nPa, xub_StrLen nPo )
 						: rFldItem( rFItem )
 					{
 						pOutliner = pOutl;
@@ -584,7 +584,7 @@ public:
 	void            ClearFldColor()
 						{ delete pFldColor; pFldColor = 0; }
 
-	sal_uInt16          GetPara() const { return nPara; }
+	sal_uInt32          GetPara() const { return nPara; }
 	xub_StrLen          GetPos() const { return nPos; }
 
 	sal_Bool            IsSimpleClick() const { return bSimpleClick; }
@@ -681,19 +681,19 @@ class EDITENG_DLLPUBLIC Outliner : public SfxBroadcaster
 	DECL_LINK( 				EndPasteOrDropHdl, PasteOrDropInfos* );
 	DECL_LINK( 				EditEngineNotifyHdl, EENotify* );
 
-    void ImplCheckParagraphs( sal_uInt16 nStart, sal_uInt16 nEnd );
-    bool ImplHasNumberFormat( sal_uInt16 nPara ) const;
-    Size ImplGetBulletSize( sal_uInt16 nPara );
-    sal_uInt16 ImplGetNumbering( sal_uInt16 nPara, const SvxNumberFormat* pParaFmt );
-    void ImplCalcBulletText( sal_uInt16 nPara, sal_Bool bRecalcLevel, sal_Bool bRecalcChilds );
-    String ImplGetBulletText( sal_uInt16 nPara );
-    void ImplCheckNumBulletItem( sal_uInt16 nPara );
-    void ImplInitDepth( sal_uInt16 nPara, sal_Int16 nDepth, sal_Bool bCreateUndo, sal_Bool bUndoAction = sal_False );
-    void ImplSetLevelDependendStyleSheet( sal_uInt16 nPara, SfxStyleSheet* pLevelStyle = NULL );
+    void ImplCheckParagraphs( sal_uInt32 nStart, sal_uInt32 nEnd );
+    bool ImplHasNumberFormat( sal_uInt32 nPara ) const;
+    Size ImplGetBulletSize( sal_uInt32 nPara );
+    sal_uInt16 ImplGetNumbering( sal_uInt32 nPara, const SvxNumberFormat* pParaFmt );
+    void ImplCalcBulletText( sal_uInt32 nPara, sal_Bool bRecalcLevel, sal_Bool bRecalcChilds );
+    String ImplGetBulletText( sal_uInt32 nPara );
+    void ImplCheckNumBulletItem( sal_uInt32 nPara );
+    void ImplInitDepth( sal_uInt32 nPara, sal_Int16 nDepth, sal_Bool bCreateUndo, sal_Bool bUndoAction = sal_False );
+    void ImplSetLevelDependendStyleSheet( sal_uInt32 nPara, SfxStyleSheet* pLevelStyle = NULL );
 
     void                    ImplBlockInsertionCallbacks( sal_Bool b );
 
-	void 				ImplCheckStyleSheet( sal_uInt16 nPara, sal_Bool bReplaceExistingStyle );
+	void 				ImplCheckStyleSheet( sal_uInt32 nPara, sal_Bool bReplaceExistingStyle );
 	void                ImpRecalcBulletIndent( sal_uLong nPara );
 
 	const SvxBulletItem& ImpGetBullet( sal_uLong nPara, sal_uInt16& );
@@ -701,9 +701,9 @@ class EDITENG_DLLPUBLIC Outliner : public SfxBroadcaster
 	bool		ImpConvertEdtToOut( sal_uInt32 nPara, EditView* pView = 0 );
 
 	void        ImpTextPasted( sal_uLong nStartPara, sal_uInt16 nCount );
-	long 		ImpCalcMaxBulletWidth( sal_uInt16 nPara, const SvxBulletItem& rBullet );
-	Font        ImpCalcBulletFont( sal_uInt16 nPara ) const;
-	Rectangle   ImpCalcBulletArea( sal_uInt16 nPara, sal_Bool bAdjust, sal_Bool bReturnPaperPos );
+	long 		ImpCalcMaxBulletWidth( sal_uInt32 nPara, const SvxBulletItem& rBullet );
+	Font        ImpCalcBulletFont( sal_uInt32 nPara ) const;
+	Rectangle   ImpCalcBulletArea( sal_uInt32 nPara, sal_Bool bAdjust, sal_Bool bReturnPaperPos );
 	long 		ImpGetTextIndent( sal_uLong nPara );
 	sal_Bool        ImpCanIndentSelectedPages( OutlinerView* pCurView );
 	sal_Bool        ImpCanDeleteSelectedPages( OutlinerView* pCurView );
@@ -714,20 +714,20 @@ class EDITENG_DLLPUBLIC Outliner : public SfxBroadcaster
 #endif
 
 protected:
-	void        	ParagraphInserted( sal_uInt16 nParagraph );
-	void        	ParagraphDeleted( sal_uInt16 nParagraph );
-	void			ParaAttribsChanged( sal_uInt16 nParagraph );
+	void        	ParagraphInserted( sal_uInt32 nParagraph );
+	void        	ParagraphDeleted( sal_uInt32 nParagraph );
+	void			ParaAttribsChanged( sal_uInt32 nParagraph );
 
 	virtual void 	StyleSheetChanged( SfxStyleSheet* pStyle );
 
 	void        InvalidateBullet( Paragraph* pPara, sal_uLong nPara );
-	void        PaintBullet( sal_uInt16 nPara, const Point& rStartPos,
+	void        PaintBullet( sal_uInt32 nPara, const Point& rStartPos,
 					const Point& rOrigin, short nOrientation,
 					OutputDevice* pOutDev );
 
     // used by OutlinerEditEng. Allows Outliner objects to provide
     // bullet access to the EditEngine.
-    virtual const SvxNumberFormat*  GetNumberFormat( sal_uInt16 nPara ) const;
+    virtual const SvxNumberFormat*  GetNumberFormat( sal_uInt32 nPara ) const;
 
 public:
 
@@ -747,7 +747,7 @@ public:
     EEHorizontalTextDirection   GetDefaultHorizontalTextDirection() const;
 
     sal_uInt16			GetScriptType( const ESelection& rSelection ) const;
-    LanguageType    GetLanguage( sal_uInt16 nPara, sal_uInt16 nPos ) const;
+    LanguageType    GetLanguage( sal_uInt32 nPara, sal_uInt16 nPos ) const;
 
 	void            SetAsianCompressionMode( sal_uInt16 nCompressionMode );
 	sal_uInt16          GetAsianCompressionMode() const;
@@ -770,7 +770,7 @@ public:
 	void            SetText( const String& rText, Paragraph* pParagraph );
 	String          GetText( Paragraph* pPara, sal_uLong nParaCount=1 ) const;
 
-	OutlinerParaObject* CreateParaObject( sal_uInt16 nStartPara = 0, sal_uInt16 nParaCount = 0xFFFF ) const;
+	OutlinerParaObject* CreateParaObject( sal_uInt32 nStartPara = 0, sal_uInt32 nParaCount = 0xFFFFFFFF ) const;
 
 	const SfxItemSet& GetEmptyItemSet() const;
 
@@ -909,18 +909,18 @@ public:
     void            ForceAutoColor( sal_Bool b );
     sal_Bool            IsForceAutoColor() const;
 
-    EBulletInfo     GetBulletInfo( sal_uInt16 nPara );
+    EBulletInfo     GetBulletInfo( sal_uInt32 nPara );
 
 	void        SetWordDelimiters( const String& rDelimiters );
 	String      GetWordDelimiters() const;
-	String      GetWord( sal_uInt16 nPara, xub_StrLen nIndex );
+	String      GetWord( sal_uInt32 nPara, xub_StrLen nIndex );
 
 	void            StripPortions();
 
 	// #101498#
 	virtual void DrawingText(
         const Point& rStartPos, const String& rText, sal_uInt16 nTextStart, sal_uInt16 nTextLen,
-		const sal_Int32* pDXArray, const SvxFont& rFont, sal_uInt16 nPara, xub_StrLen nIndex, sal_uInt8 nRightToLeft,
+		const sal_Int32* pDXArray, const SvxFont& rFont, sal_uInt32 nPara, xub_StrLen nIndex, sal_uInt8 nRightToLeft,
         const EEngineData::WrongSpellVector* pWrongSpellVector,
         const SvxFieldData* pFieldData,
         bool bEndOfLine,
@@ -942,8 +942,8 @@ public:
 	void            SetStyleSheet( sal_uLong nPara, SfxStyleSheet* pStyle );
 	SfxStyleSheet*	GetStyleSheet( sal_uLong nPara );
 
-	void            SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& );
-	SfxItemSet      GetParaAttribs( sal_uInt16 nPara );
+	void            SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& );
+	SfxItemSet      GetParaAttribs( sal_uInt32 nPara );
 
 	void            Remove( Paragraph* pPara, sal_uLong nParaCount );
 	sal_Bool            Expand( Paragraph* );
@@ -983,15 +983,15 @@ public:
 	// nur fuer EditEngine-Modus
 	void            QuickInsertText( const String& rText, const ESelection& rSel );
 	void            QuickDelete( const ESelection& rSel );
-	void            QuickRemoveCharAttribs( sal_uInt16 nPara, sal_uInt16 nWhich = 0 );
+	void            QuickRemoveCharAttribs( sal_uInt32 nPara, sal_uInt16 nWhich = 0 );
 	void            QuickFormatDoc( sal_Bool bFull = sal_False );
 
 	sal_Bool            UpdateFields();
 	void 			RemoveFields( sal_Bool bKeepFieldText, TypeId aType = NULL );
 
-	virtual void    FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos );
-	virtual void    FieldSelected( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos );
-	virtual String  CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, xub_StrLen nPos, Color*& rTxtColor, Color*& rFldColor );
+	virtual void    FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos );
+	virtual void    FieldSelected( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos );
+	virtual String  CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, xub_StrLen nPos, Color*& rTxtColor, Color*& rFldColor );
 
 	void			SetSpeller( ::com::sun::star::uno::Reference<
 							::com::sun::star::linguistic2::XSpellChecker1 > &xSpeller );
@@ -1049,7 +1049,7 @@ public:
 	const EditEngine& GetEditEngine() const { return *((EditEngine*)pEditEngine); }
 
 	// this is needed for StarOffice Api
-	void SetLevelDependendStyleSheet( sal_uInt16 nPara );
+	void SetLevelDependendStyleSheet( sal_uInt32 nPara );
 
 	sal_uInt16	GetOutlinerMode() const { return nOutlinerMode & OUTLINERMODE_USERMASK; }
 
@@ -1078,11 +1078,11 @@ public:
     void            SetEndPasteOrDropHdl( const Link& rLink );
     Link            GetEndPasteOrDropHdl() const { return maEndPasteOrDropHdl; }
 
-    virtual sal_Int16 GetNumberingStartValue( sal_uInt16 nPara );
-    virtual void SetNumberingStartValue( sal_uInt16 nPara, sal_Int16 nNumberingStartValue );
+    virtual sal_Int16 GetNumberingStartValue( sal_uInt32 nPara );
+    virtual void SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingStartValue );
 
-    virtual sal_Bool IsParaIsNumberingRestart( sal_uInt16 nPara );
-    virtual void SetParaIsNumberingRestart( sal_uInt16 nPara, sal_Bool bParaIsNumberingRestart );
+    virtual sal_Bool IsParaIsNumberingRestart( sal_uInt32 nPara );
+    virtual void SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumberingRestart );
 
     /** determine the bullets/numbering status of the given paragraphs
 
@@ -1098,8 +1098,8 @@ public:
         2 : otherwise
     */
     sal_Int16 GetBulletsNumberingStatus(
-        const sal_uInt16 nParaStart,
-        const sal_uInt16 nParaEnd ) const;
+        const sal_uInt32 nParaStart,
+        const sal_uInt32 nParaEnd ) const;
 
     // convenient method to determine the bullets/numbering status for all paragraphs
     sal_Int16 GetBulletsNumberingStatus() const;
