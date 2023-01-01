@@ -1136,14 +1136,14 @@ void OutlinerView::Command( const CommandEvent& rCEvt )
 }
 
 
-void OutlinerView::SelectRange( sal_uLong nFirst, sal_uInt16 nCount )
+void OutlinerView::SelectRange( sal_uInt32 nFirst, sal_uInt32 nCount )
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uLong nLast = nFirst+nCount;
-	nCount = (sal_uInt16)pOwner->pParaList->GetParagraphCount();
+	sal_uInt32 nLast = nFirst+nCount;
+	nCount = pOwner->pParaList->GetParagraphCount();
 	if( nLast <= nCount )
 		nLast = nCount - 1;
-	ESelection aSel( (sal_uInt16)nFirst, 0, (sal_uInt16)nLast, 0xffff );
+	ESelection aSel( nFirst, 0, nLast, 0xffff );
 	pEditView->SetSelection( aSel );
 }
 

@@ -291,7 +291,7 @@ public:
 					sal_Bool bWChilds=sal_True);
 
 	String      GetSelected() const;
-	void        SelectRange( sal_uLong nFirst, sal_uInt16 nCount );
+	void        SelectRange( sal_uInt32 nFirst, sal_uInt32 nCount );
 	void        SetAttribs( const SfxItemSet& );
 	void 		Indent( short nDiff );
 	void        AdjustDepth( short nDX );	// Spaeter gegeb Indent ersetzen!
