@@ -230,12 +230,12 @@ sal_Bool OutlinerView::PostKeyEvent( const KeyEvent& rKEvt )
 							if( nChilds && !pOwner->pParaList->HasVisibleChilds(pPara))
 							{
 								pOwner->UndoActionStart( OLUNDO_INSERT );
-								sal_uLong nTemp = aSel.nEndPara;
+								sal_uInt32 nTemp = aSel.nEndPara;
 								nTemp += nChilds;
 								nTemp++; // einfuegen ueber naechstem Non-Child
 								pOwner->Insert( String(),nTemp,pPara->GetDepth());
 								// Cursor positionieren
-								ESelection aTmpSel((sal_uInt16)nTemp,0,(sal_uInt16)nTemp,0);
+								ESelection aTmpSel(nTemp,0,nTemp,0);
 								pEditView->SetSelection( aTmpSel );
 								pEditView->ShowCursor( sal_True, sal_True );
 								pOwner->UndoActionEnd( OLUNDO_INSERT );
@@ -253,7 +253,7 @@ sal_Bool OutlinerView::PostKeyEvent( const KeyEvent& rKEvt )
 						pOwner->Insert( String(), nTemp, pPara->GetDepth()+1 );
 
 						// Cursor positionieren
-						ESelection aTmpSel((sal_uInt16)nTemp,0,(sal_uInt16)nTemp,0);
+						ESelection aTmpSel(nTemp,0,nTemp,0);
 						pEditView->SetSelection( aTmpSel );
 						pEditView->ShowCursor( sal_True, sal_True );
 						pOwner->UndoActionEnd( OLUNDO_INSERT );
@@ -344,18 +344,18 @@ sal_Bool __EXPORT OutlinerView::MouseButtonDown( const MouseEvent& rMEvt )
     pEditView->GetWindow()->SetPointer( aPointer );
 
 	MouseTarget eTarget;
-	sal_uLong nPara = ImpCheckMousePos( rMEvt.GetPosPixel(), eTarget );
+	sal_uInt32 nPara = ImpCheckMousePos( rMEvt.GetPosPixel(), eTarget );
     if ( eTarget == MouseBullet )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 		sal_Bool bHasChilds = (pPara && pOwner->pParaList->HasChilds(pPara));
 		if( rMEvt.GetClicks() == 1 )
 		{
-			sal_uLong nEndPara = nPara;
+			sal_uInt32 nEndPara = nPara;
 			if ( bHasChilds && pOwner->pParaList->HasVisibleChilds(pPara) )
 				nEndPara += pOwner->pParaList->GetChildCount( pPara );
 			// umgekehrt rum selektieren, damit EditEngine nicht scrollt
-			ESelection aSel((sal_uInt16)nEndPara, 0xffff,(sal_uInt16)nPara, 0 );
+			ESelection aSel(nEndPara, 0xffff, nPara, 0 );
 			pEditView->SetSelection( aSel );
         }
 		else if( rMEvt.GetClicks() == 2 && bHasChilds )
@@ -442,16 +442,16 @@ void OutlinerView::ImpPaintDDCursor()
 	}
 	else
 	{
-		sal_uLong nPara = nDDCurPara;
+		sal_uInt32 nPara = nDDCurPara;
 		if ( nDDCurPara == LIST_APPEND )
 		{
 			Paragraph* pTemp = pOwner->pParaList->LastVisible();
 			nPara = pOwner->pParaList->GetAbsPos( pTemp );
 		}
-		aStartPointWin = pEditView->GetWindowPosTopLeft((sal_uInt16) nPara );
+		aStartPointWin = pEditView->GetWindowPosTopLeft( nPara );
 		if ( nDDCurPara == LIST_APPEND )
 		{
-			long nHeight = pOwner->pEditEngine->GetTextHeight((sal_uInt16)nPara );
+			long nHeight = pOwner->pEditEngine->GetTextHeight( nPara );
 			aStartPointWin.Y() += nHeight;
 		}
 		aStartPointWin.X() = aOutputArWin.Left();
@@ -469,7 +469,7 @@ void OutlinerView::ImpPaintDDCursor()
 sal_uLong OutlinerView::ImpGetInsertionPara( const Point& rPosPixel  )
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uLong nCurPara = pEditView->GetParagraph( rPosPixel );
+	sal_uInt32 nCurPara = pEditView->GetParagraph( rPosPixel );
 	ParagraphList* pParaList = pOwner->pParaList;
 
 	if ( nCurPara == EE_PARA_NOT_FOUND )
@@ -477,8 +477,8 @@ sal_uLong OutlinerView::ImpGetInsertionPara( const Point& rPosPixel  )
 	else
 	{
 		Point aPosWin = pEditView->GetWindow()->PixelToLogic( rPosPixel );
-		Point aParaPosWin = pEditView->GetWindowPosTopLeft((sal_uInt16)nCurPara);
-		long nHeightRef = pOwner->pEditEngine->GetTextHeight((sal_uInt16)nCurPara);
+		Point aParaPosWin = pEditView->GetWindowPosTopLeft(nCurPara);
+		long nHeightRef = pOwner->pEditEngine->GetTextHeight(nCurPara);
 		long nParaYOffs = aPosWin.Y() - aParaPosWin.Y();
 
 		if ( nParaYOffs > nHeightRef / 2  )
@@ -496,7 +496,7 @@ void OutlinerView::ImpToggleExpand( Paragraph* pPara )
 {
 	DBG_CHKTHIS(OutlinerView,0);
 
-	sal_uInt16 nPara = (sal_uInt16) pOwner->pParaList->GetAbsPos( pPara );
+	sal_uInt32 nPara = pOwner->pParaList->GetAbsPos( pPara );
 	pEditView->SetSelection( ESelection( nPara, 0, nPara, 0 ) );
 	ImplExpandOrCollaps( nPara, nPara, !pOwner->pParaList->HasVisibleChilds( pPara ) );
 	pEditView->ShowCursor();
@@ -526,7 +526,7 @@ sal_uLong OutlinerView::Select( Paragraph* pParagraph, sal_Bool bSelect,
 	if ( bWithChilds )
 		nChildCount = pOwner->pParaList->GetChildCount( pParagraph );
 
-	ESelection aSel( (sal_uInt16)nPara, 0,(sal_uInt16)(nPara+nChildCount), nEnd );
+	ESelection aSel( nPara, 0, nPara+nChildCount, nEnd );
 	pEditView->SetSelection( aSel );
 	return nChildCount+1;
 }
@@ -547,7 +547,7 @@ void OutlinerView::SetAttribs( const SfxItemSet& rAttrs )
 	pEditView->SetAttribs( rAttrs );
 
 	// Bullet-Texte aktualisieren
-	for( sal_uInt16 nPara= aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+	for( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
 	{
 		pOwner->ImplCheckNumBulletItem( nPara );
 		pOwner->ImplCalcBulletText( nPara, sal_False, sal_False );
@@ -608,7 +608,7 @@ void OutlinerView::Indent( short nDiff )
 	sal_Int16 nMinDepth = -1;	// Optimierung: Nicht unnoetig viele Absatze neu berechnen
 
 	ParaRange aSel = ImpGetSelectedParagraphs( sal_True );
-	for ( sal_uInt16 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+	for ( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 
@@ -711,8 +711,8 @@ void OutlinerView::Indent( short nDiff )
 	// pOwner->ImpSetBulletTextsFrom( aSel.nStartPara+1, nMinDepth );
 	// Wird jetzt direkt in Schleife mit ImplCalcBulletText() erledigt.
 	// Jetzt fehlen nur noch die folgenden Ansaetze, die davon betroffen sind.
-	sal_uInt16 nParas = (sal_uInt16)pOwner->pParaList->GetParagraphCount();
-	for ( sal_uInt16 n = aSel.nEndPara+1; n < nParas; n++ )
+	sal_uInt32 nParas = pOwner->pParaList->GetParagraphCount();
+	for ( sal_uInt32 n = aSel.nEndPara+1; n < nParas; n++ )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( n );
 		if ( pPara->GetDepth() < nMinDepth )
@@ -740,11 +740,11 @@ sal_Bool OutlinerView::AdjustHeight( long nDY )
 void OutlinerView::AdjustDepth( Paragraph* pPara, short nDX, sal_Bool bWithChilds)
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uLong nStartPara = pOwner->pParaList->GetAbsPos( pPara );
-	sal_uLong nEndPara = nStartPara;
+	sal_uInt32 nStartPara = pOwner->pParaList->GetAbsPos( pPara );
+	sal_uInt32 nEndPara = nStartPara;
 	if ( bWithChilds )
 		nEndPara += pOwner->pParaList->GetChildCount( pPara );
-	ESelection aSel((sal_uInt16)nStartPara, 0,(sal_uInt16)nEndPara, 0xffff );
+	ESelection aSel(nStartPara, 0,nEndPara, 0xffff );
 	pEditView->SetSelection( aSel );
 	AdjustDepth( nDX );
 }
@@ -752,11 +752,11 @@ void OutlinerView::AdjustDepth( Paragraph* pPara, short nDX, sal_Bool bWithChild
 void OutlinerView::AdjustHeight( Paragraph* pPara, long nDY, sal_Bool bWithChilds )
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uLong nStartPara = pOwner->pParaList->GetAbsPos( pPara );
-	sal_uLong nEndPara = nStartPara;
+	sal_uInt32 nStartPara = pOwner->pParaList->GetAbsPos( pPara );
+	sal_uInt32 nEndPara = nStartPara;
 	if ( bWithChilds )
 		nEndPara += pOwner->pParaList->GetChildCount( pPara );
-	ESelection aSel( (sal_uInt16)nStartPara, 0, (sal_uInt16)nEndPara, 0xffff );
+	ESelection aSel( nStartPara, 0, nEndPara, 0xffff );
 	pEditView->SetSelection( aSel );
 	AdjustHeight( nDY );
 }
@@ -915,14 +915,14 @@ void OutlinerView::Collapse()
 void OutlinerView::ExpandAll()
 {
 	DBG_CHKTHIS( OutlinerView, 0 );
-	ImplExpandOrCollaps( 0, (sal_uInt16)(pOwner->pParaList->GetParagraphCount()-1), sal_True );
+	ImplExpandOrCollaps( 0, pOwner->pParaList->GetParagraphCount()-1, sal_True );
 }
 
 
 void OutlinerView::CollapseAll()
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	ImplExpandOrCollaps( 0, (sal_uInt16)(pOwner->pParaList->GetParagraphCount()-1), sal_False );
+	ImplExpandOrCollaps( 0, pOwner->pParaList->GetParagraphCount()-1, sal_False );
 }
 
 void OutlinerView::ImplExpandOrCollaps( sal_uInt32 nStartPara, sal_uInt32 nEndPara, sal_Bool bExpand )
@@ -992,9 +992,9 @@ void OutlinerView::InsertText( const OutlinerParaObject& rParaObj )
 	pOwner->UndoActionStart( OLUNDO_INSERT );
 
 	pOwner->pEditEngine->SetUpdateMode( sal_False );
-	sal_uLong nStart, nParaCount;
+	sal_uInt32 nStart, nParaCount;
 	nParaCount = pOwner->pEditEngine->GetParagraphCount();
-	sal_uInt16 nSize = ImpInitPaste( nStart );
+	sal_uInt32 nSize = ImpInitPaste( nStart );
 	pEditView->InsertText( rParaObj.GetTextObject() );
 	ImpPasted( nStart, nParaCount, nSize);
 	pEditView->SetEditEngineUpdateMode( sal_True );
@@ -1032,9 +1032,9 @@ void OutlinerView::PasteSpecial()
 
 		if ( pOwner->ImplGetOutlinerMode() == OUTLINERMODE_OUTLINEOBJECT )
 		{
-        	const sal_uInt16 nParaCount = pOwner->pEditEngine->GetParagraphCount();
+        	const sal_uInt32 nParaCount = pOwner->pEditEngine->GetParagraphCount();
 
-		    for( sal_uInt16 nPara = 0; nPara < nParaCount; nPara++ )
+		    for( sal_uInt32 nPara = 0; nPara < nParaCount; nPara++ )
 			    pOwner->ImplSetLevelDependendStyleSheet( nPara );
 	    }
 
@@ -1050,7 +1050,7 @@ List* OutlinerView::CreateSelectionList()
 
 	ParaRange aParas = ImpGetSelectedParagraphs( sal_True );
 	List* pSelList = new List;
-	for ( sal_uInt16 nPara = aParas.nStartPara; nPara <= aParas.nEndPara; nPara++ )
+	for ( sal_uInt32 nPara = aParas.nStartPara; nPara <= aParas.nEndPara; nPara++ )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 		pSelList->Insert( pPara, LIST_APPEND );
@@ -1070,7 +1070,7 @@ void OutlinerView::SetStyleSheet( SfxStyleSheet* pStyle )
 	pEditView->SetStyleSheet( pStyle );
 
 	ParaRange aSel = ImpGetSelectedParagraphs( sal_True );
-	for( sal_uInt16 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+	for( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
 	{
 		pOwner->ImplCheckNumBulletItem( nPara );
 		pOwner->ImplCalcBulletText( nPara, sal_False, sal_False );
@@ -1102,29 +1102,27 @@ Pointer OutlinerView::GetPointer( const Point& rPosPixel )
 }
 
 
-sal_uInt16 OutlinerView::ImpInitPaste( sal_uLong& rStart )
+sal_uInt32 OutlinerView::ImpInitPaste( sal_uInt32& rStart )
 {
 	DBG_CHKTHIS(OutlinerView,0);
 	pOwner->bPasting = sal_True;
 	ESelection aSelection( pEditView->GetSelection() );
 	aSelection.Adjust();
 	rStart = aSelection.nStartPara;
-	sal_uInt16 nSize = aSelection.nEndPara - aSelection.nStartPara + 1;
+	sal_uInt32 nSize = aSelection.nEndPara - aSelection.nStartPara + 1;
 	return nSize;
 }
 
 
-void OutlinerView::ImpPasted( sal_uLong nStart, sal_uLong nPrevParaCount, sal_uInt16 nSize)
+void OutlinerView::ImpPasted( sal_uInt32 nStart, sal_uInt32 nPrevParaCount, sal_uInt32 nSize)
 {
 	DBG_CHKTHIS(OutlinerView,0);
 	pOwner->bPasting = sal_False;
-	sal_uLong nCurParaCount = (sal_uLong)pOwner->pEditEngine->GetParagraphCount();
+	sal_uInt32 nCurParaCount = pOwner->pEditEngine->GetParagraphCount();
 	if( nCurParaCount < nPrevParaCount )
-		nSize = sal::static_int_cast< sal_uInt16 >(
-            nSize - ( nPrevParaCount - nCurParaCount ) );
+		nSize = nSize - ( nPrevParaCount - nCurParaCount );
 	else
-		nSize = sal::static_int_cast< sal_uInt16 >(
-            nSize + ( nCurParaCount - nPrevParaCount ) );
+		nSize = nSize + ( nCurParaCount - nPrevParaCount );
 	pOwner->ImpTextPasted( nStart, nSize );
 }
 
@@ -1160,7 +1158,7 @@ sal_uInt16 OutlinerView::ImpCalcSelectedPages( sal_Bool bIncludeFirstSelected )
 	sal_uInt16 nStartPara = aSel.nStartPara;
 	if ( !bIncludeFirstSelected )
 		nStartPara++;	// alle nach StartPara kommenden Absaetze werden geloescht
-	for ( sal_uInt16 nPara = nStartPara; nPara <= aSel.nEndPara; nPara++ )
+	for ( sal_uInt32 nPara = nStartPara; nPara <= aSel.nEndPara; nPara++ )
 	{
 		Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 		DBG_ASSERT(pPara, "ImpCalcSelectedPages: ungueltige Selection? ");
@@ -1196,7 +1194,7 @@ void OutlinerView::ToggleBullets()
     sal_Int16 nNewDepth = -2;
     const SvxNumRule* pDefaultBulletNumRule = 0;
 
-    for ( sal_uInt16 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+    for ( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
     {
         Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
         DBG_ASSERT(pPara, "OutlinerView::ToggleBullets(), illegal selection?");
@@ -1248,7 +1246,7 @@ void OutlinerView::ToggleBullets()
         }
     }
 
-    const sal_uInt16 nParaCount = (sal_uInt16) (pOwner->pParaList->GetParagraphCount());
+    const sal_uInt32 nParaCount = pOwner->pParaList->GetParagraphCount();
     pOwner->ImplCheckParagraphs( aSel.nStartPara, nParaCount );
     pOwner->pEditEngine->QuickMarkInvalid( ESelection( aSel.nStartPara, 0, nParaCount, 0 ) );
 
@@ -1307,7 +1305,7 @@ void OutlinerView::EnableBullets()
     const bool bUpdate = pOwner->pEditEngine->GetUpdateMode();
     pOwner->pEditEngine->SetUpdateMode( sal_False );
 
-    for ( sal_uInt16 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+    for ( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
     {
         Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
         DBG_ASSERT(pPara, "OutlinerView::EnableBullets(), illegal selection?");
@@ -1318,7 +1316,7 @@ void OutlinerView::EnableBullets()
         }
     }
 
-    sal_uInt16 nParaCount = (sal_uInt16) (pOwner->pParaList->GetParagraphCount());
+    sal_uInt32 nParaCount = pOwner->pParaList->GetParagraphCount();
     pOwner->ImplCheckParagraphs( aSel.nStartPara, nParaCount );
     pOwner->pEditEngine->QuickMarkInvalid( ESelection( aSel.nStartPara, 0, nParaCount, 0 ) );
 
@@ -1343,8 +1341,8 @@ void OutlinerView::ApplyBulletsNumbering(
     const sal_Bool bUpdate = pOwner->pEditEngine->GetUpdateMode();
     pOwner->pEditEngine->SetUpdateMode(sal_False);
 
-    sal_uInt16 nStartPara = 0;
-    sal_uInt16 nEndPara = 0;
+    sal_uInt32 nStartPara = 0;
+    sal_uInt32 nEndPara = 0;
     if ( bAtSelection )
     {
         ESelection aSel( pEditView->GetSelection() );
@@ -1358,7 +1356,7 @@ void OutlinerView::ApplyBulletsNumbering(
         nEndPara = pOwner->pParaList->GetParagraphCount() - 1;
     }
 
-    for (sal_uInt16 nPara = nStartPara; nPara <= nEndPara; nPara++)
+    for (sal_uInt32 nPara = nStartPara; nPara <= nEndPara; nPara++)
     {
         Paragraph* pPara = pOwner->pParaList->GetParagraph(nPara);
         DBG_ASSERT(pPara, "OutlinerView::ApplyBulletsNumbering(..), illegal selection?");
@@ -1451,7 +1449,7 @@ void OutlinerView::ApplyBulletsNumbering(
         }
     }
 
-    const sal_uInt16 nParaCount = (sal_uInt16) (pOwner->pParaList->GetParagraphCount());
+    const sal_uInt32 nParaCount = pOwner->pParaList->GetParagraphCount();
     pOwner->ImplCheckParagraphs( nStartPara, nParaCount );
     pOwner->pEditEngine->QuickMarkInvalid( ESelection( nStartPara, 0, nParaCount, 0 ) );
 
@@ -1466,8 +1464,8 @@ void OutlinerView::ApplyBulletsNumbering(
 void OutlinerView::SwitchOffBulletsNumbering(
     const bool bAtSelection )
 {
-    sal_uInt16 nStartPara = 0;
-    sal_uInt16 nEndPara = 0;
+    sal_uInt32 nStartPara = 0;
+    sal_uInt32 nEndPara = 0;
     if ( bAtSelection )
     {
         ESelection aSel( pEditView->GetSelection() );
@@ -1485,7 +1483,7 @@ void OutlinerView::SwitchOffBulletsNumbering(
     const bool bUpdate = pOwner->pEditEngine->GetUpdateMode();
     pOwner->pEditEngine->SetUpdateMode( sal_False );
 
-    for ( sal_uInt16 nPara = nStartPara; nPara <= nEndPara; ++nPara )
+    for ( sal_uInt32 nPara = nStartPara; nPara <= nEndPara; ++nPara )
     {
         Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
         DBG_ASSERT(pPara, "OutlinerView::SwitchOffBulletsNumbering(...), illegal paragraph index?");
@@ -1504,7 +1502,7 @@ void OutlinerView::SwitchOffBulletsNumbering(
         }
     }
 
-    const sal_uInt16 nParaCount = (sal_uInt16) (pOwner->pParaList->GetParagraphCount());
+    const sal_uInt32 nParaCount = pOwner->pParaList->GetParagraphCount();
     pOwner->ImplCheckParagraphs( nStartPara, nParaCount );
     pOwner->pEditEngine->QuickMarkInvalid( ESelection( nStartPara, 0, nParaCount, 0 ) );
 
@@ -1533,7 +1531,7 @@ void OutlinerView::RemoveAttribs( sal_Bool bRemoveParaAttribs, sal_uInt16 nWhich
 		// Ueber alle Absaetze, und Einrueckung und Level einstellen
 		ESelection aSel = pEditView->GetSelection();
 		aSel.Adjust();
-		for ( sal_uInt16 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
+		for ( sal_uInt32 nPara = aSel.nStartPara; nPara <= aSel.nEndPara; nPara++ )
 		{
 			Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
             pOwner->ImplInitDepth( nPara, pPara->GetDepth(), sal_False, sal_False );
@@ -1642,7 +1640,7 @@ XubString OutlinerView::GetSelected() const
 void OutlinerView::RemoveCharAttribs( sal_uLong nPara, sal_uInt16 nWhich)
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	pEditView->RemoveCharAttribs( (sal_uInt16)nPara, nWhich);
+	pEditView->RemoveCharAttribs( nPara, nWhich);
 }
 
 
@@ -1841,7 +1839,7 @@ void OutlinerView::ExecuteSpellPopup( const Point& rPosPixel, Link* pStartDlg )
 sal_uLong OutlinerView::Read( SvStream& rInput,  const String& rBaseURL, EETextFormat eFormat, sal_Bool bSelect, SvKeyValueIterator* pHTTPHeaderAttrs )
 {
 	DBG_CHKTHIS(OutlinerView,0);
-	sal_uInt16 nOldParaCount = pEditView->GetEditEngine()->GetParagraphCount();
+	sal_uInt32 nOldParaCount = pEditView->GetEditEngine()->GetParagraphCount();
 	ESelection aOldSel = pEditView->GetSelection();
 	aOldSel.Adjust();
 
@@ -1851,10 +1849,10 @@ sal_uLong OutlinerView::Read( SvStream& rInput,  const String& rBaseURL, EETextF
 	// Mal anpassen, wenn dieses ImplInitPaste und ImpPasted-Geraffel ueberarbeitet ist.
 
 	long nParaDiff = pEditView->GetEditEngine()->GetParagraphCount() - nOldParaCount;
-	sal_uInt16 nChangesStart = aOldSel.nStartPara;
-	sal_uInt16 nChangesEnd = sal::static_int_cast< sal_uInt16 >(nChangesStart + nParaDiff + (aOldSel.nEndPara-aOldSel.nStartPara));
+	sal_uInt32 nChangesStart = aOldSel.nStartPara;
+	sal_uInt32 nChangesEnd = nChangesStart + nParaDiff + (aOldSel.nEndPara-aOldSel.nStartPara);
 
-	for ( sal_uInt16 n = nChangesStart; n <= nChangesEnd; n++ )
+	for ( sal_uInt32 n = nChangesStart; n <= nChangesEnd; n++ )
 	{
 		if ( eFormat == EE_FORMAT_BIN )
 		{

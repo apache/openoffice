@@ -1293,7 +1293,7 @@ void Outliner::ImpFilterIndents( sal_uLong nFirstPara, sal_uLong nLastPara )
 	return pEditEngine->SetUndoManager(pNew);
 }
 
-void Outliner::ImpTextPasted( sal_uLong nStartPara, sal_uInt16 nCount )
+void Outliner::ImpTextPasted( sal_uInt32 nStartPara, sal_uInt32 nCount )
 {
 	DBG_CHKTHIS(Outliner,0);
 

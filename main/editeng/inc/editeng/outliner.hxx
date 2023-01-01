@@ -244,8 +244,8 @@ private:
 	EDITENG_DLLPRIVATE sal_uLong       ImpGetInsertionPara( const Point& rPosPixel );
 	EDITENG_DLLPRIVATE Point       ImpGetDocPos( const Point& rPosPixel );
 	EDITENG_DLLPRIVATE Pointer     ImpGetMousePointer( MouseTarget eTarget );
-	EDITENG_DLLPRIVATE sal_uInt16      ImpInitPaste( sal_uLong& rStart );
-	EDITENG_DLLPRIVATE void        ImpPasted( sal_uLong nStart, sal_uLong nPrevParaCount, sal_uInt16 nSize);
+	EDITENG_DLLPRIVATE sal_uInt32      ImpInitPaste( sal_uInt32& rStart );
+	EDITENG_DLLPRIVATE void        ImpPasted( sal_uInt32 nStart, sal_uInt32 nPrevParaCount, sal_uInt32 nSize);
 	EDITENG_DLLPRIVATE sal_uInt16      ImpCalcSelectedPages( sal_Bool bIncludeFirstSelected );
 	EDITENG_DLLPRIVATE sal_Bool        ImpIsIndentingPages();
 
@@ -700,7 +700,7 @@ class EDITENG_DLLPUBLIC Outliner : public SfxBroadcaster
 	void        ImpFilterIndents( sal_uLong nFirstPara, sal_uLong nLastPara );
 	bool		ImpConvertEdtToOut( sal_uInt32 nPara, EditView* pView = 0 );
 
-	void        ImpTextPasted( sal_uLong nStartPara, sal_uInt16 nCount );
+	void        ImpTextPasted( sal_uInt32 nStartPara, sal_uInt32 nCount );
 	long 		ImpCalcMaxBulletWidth( sal_uInt32 nPara, const SvxBulletItem& rBullet );
 	Font        ImpCalcBulletFont( sal_uInt32 nPara ) const;
 	Rectangle   ImpCalcBulletArea( sal_uInt32 nPara, sal_Bool bAdjust, sal_Bool bReturnPaperPos );
