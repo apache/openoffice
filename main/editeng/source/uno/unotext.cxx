@@ -2582,7 +2582,7 @@ void SvxDummyTextSource::QuickInsertLineBreak( const ESelection& )
 {
 };
 
-XubString SvxDummyTextSource::CalcFieldValue( const SvxFieldItem&, sal_uInt16, sal_uInt16, Color*&, Color*& )
+XubString SvxDummyTextSource::CalcFieldValue( const SvxFieldItem&, sal_uInt32, sal_uInt16, Color*&, Color*& )
 {
 	return XubString();
 }

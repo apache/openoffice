@@ -192,12 +192,12 @@ class MyEditEngine : public EditEngine
 {
 public:
 	MyEditEngine( SfxItemPool* pPool ) : EditEngine( pPool ) { ; }
-	virtual String	CalcFieldValue( const SvxFieldItem& rField, USHORT nPara, USHORT nPos, Color*& rTxtColor, Color*& rFldColor );
+	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos, Color*& rTxtColor, Color*& rFldColor );
 	virtual void	FieldClicked( const SvxFieldItem& rField, USHORT nPara, USHORT nPos );
 	virtual void	FieldSelected( const SvxFieldItem& rField, USHORT nPara, USHORT nPos );
 };
 
-XubString __EXPORT MyEditEngine::CalcFieldValue( const SvxFieldItem& rField, USHORT nPara, USHORT nPos, Color*& rpTxtColor, Color*& rpFldColor )
+XubString __EXPORT MyEditEngine::CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, USHORT nPos, Color*& rpTxtColor, Color*& rpFldColor )
 {
 	const SvxFieldData* pField = rField.GetField();
 	if ( !pField )

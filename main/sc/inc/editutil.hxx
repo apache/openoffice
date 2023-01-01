@@ -213,7 +213,7 @@ public:
 	void	SetExecuteURL(sal_Bool bSet)	{ bExecuteURL = bSet; }
 
 	virtual void	FieldClicked( const SvxFieldItem& rField, sal_uInt16, sal_uInt16 );
-	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor );
+	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor );
 };
 
 
@@ -225,7 +225,7 @@ private:
 
 public:
 	ScHeaderEditEngine( SfxItemPool* pEnginePool, sal_Bool bDeleteEnginePool = sal_False );
-	virtual String CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor );
+	virtual String CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor );
 
 	void SetTitle(const String& rNew)				{ aData.aTitle = rNew; }
 	void SetLongDocName(const String& rNew)			{ aData.aLongDocName = rNew; }

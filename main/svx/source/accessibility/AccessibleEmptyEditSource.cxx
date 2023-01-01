@@ -134,7 +134,7 @@ namespace accessibility
         //XTextCopy
         void        CopyText(const SvxTextForwarder& ){} 
 
-        XubString		CalcFieldValue( const SvxFieldItem& /*rField*/, sal_uInt16 /*nPara*/, sal_uInt16 /*nPos*/, Color*& /*rpTxtColor*/, Color*& /*rpFldColor*/ )
+        XubString		CalcFieldValue( const SvxFieldItem& /*rField*/, sal_uInt32 /*nPara*/, sal_uInt16 /*nPos*/, Color*& /*rpTxtColor*/, Color*& /*rpFldColor*/ )
         {
             return  XubString();
         }

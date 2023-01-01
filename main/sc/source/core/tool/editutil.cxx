@@ -642,7 +642,7 @@ ScHeaderEditEngine::ScHeaderEditEngine( SfxItemPool* pEnginePoolP, sal_Bool bDel
 }
 
 String __EXPORT ScHeaderEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-                                    sal_uInt16 /* nPara */, sal_uInt16 /* nPos */,
+                                    sal_uInt32 /* nPara */, sal_uInt16 /* nPos */,
                                     Color*& /* rTxtColor */, Color*& /* rFldColor */ )
 {
 	String aRet;
@@ -708,7 +708,7 @@ ScFieldEditEngine::ScFieldEditEngine( SfxItemPool* pEnginePoolP,
 }
 
 String __EXPORT ScFieldEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-                                    sal_uInt16 /* nPara */, sal_uInt16 /* nPos */,
+                                    sal_uInt32 /* nPara */, sal_uInt16 /* nPos */,
                                     Color*& rTxtColor, Color*& /* rFldColor */ )
 {
 	String aRet;
