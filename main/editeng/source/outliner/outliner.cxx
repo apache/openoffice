@@ -336,7 +336,7 @@ void Outliner::SetNumberingStartValue( sal_uInt32 nPara, sal_Int16 nNumberingSta
         // --> OD 2009-03-10 #i100014#
         // It is not a good idea to subtract 1 from a count and cast the result
         // to sal_uInt16 without check, if the count is 0.
-        ImplCheckParagraphs( nPara, (sal_uInt16) (pParaList->GetParagraphCount()) );
+        ImplCheckParagraphs( nPara, (sal_uInt32) (pParaList->GetParagraphCount()) );
         // <--
         pEditEngine->SetModified();
     }
@@ -364,7 +364,7 @@ void Outliner::SetParaIsNumberingRestart( sal_uInt32 nPara, sal_Bool bParaIsNumb
         // --> OD 2009-03-10 #i100014#
         // It is not a good idea to subtract 1 from a count and cast the result
         // to sal_uInt16 without check, if the count is 0.
-        ImplCheckParagraphs( nPara, (sal_uInt16) (pParaList->GetParagraphCount()) );
+        ImplCheckParagraphs( nPara, (sal_uInt32) (pParaList->GetParagraphCount()) );
         // <--
         pEditEngine->SetModified();
     }
@@ -664,7 +664,7 @@ void Outliner::SetText( const OutlinerParaObject& rPObj )
     // --> OD 2009-03-10 #i100014#
     // It is not a good idea to subtract 1 from a count and cast the result
     // to sal_uInt16 without check, if the count is 0.
-    ImplCheckParagraphs( 0, (sal_uInt16) (pParaList->GetParagraphCount()) );
+    ImplCheckParagraphs( 0, (sal_uInt32) (pParaList->GetParagraphCount()) );
     // <--
 
 	EnableUndo( bUndo );
@@ -684,7 +684,7 @@ void Outliner::AddText( const OutlinerParaObject& rPObj )
 	pEditEngine->SetUpdateMode( sal_False );
 
 	ImplBlockInsertionCallbacks( sal_True );
-	sal_uLong nPara;
+	sal_uInt32 nPara;
 	if( bFirstParaIsEmpty )
 	{
 		pParaList->Clear( sal_True );
@@ -698,11 +698,11 @@ void Outliner::AddText( const OutlinerParaObject& rPObj )
 	}
 	bFirstParaIsEmpty = sal_False;
 
-	for( sal_uInt16 n = 0; n < rPObj.Count(); n++ )
+	for( sal_uInt32 n = 0; n < rPObj.Count(); n++ )
 	{
 		pPara = new Paragraph( rPObj.GetParagraphData(n) );
 		pParaList->Insert( pPara, LIST_APPEND );
-		sal_uInt16 nP = sal::static_int_cast< sal_uInt16 >(nPara+n);
+		sal_uInt32 nP = nPara + n;
 		DBG_ASSERT(pParaList->GetAbsPos(pPara)==nP,"AddText:Out of sync");
 		ImplInitDepth( nP, pPara->GetDepth(), sal_False );
 	}
@@ -711,7 +711,7 @@ void Outliner::AddText( const OutlinerParaObject& rPObj )
     // --> OD 2009-03-10 #i100014#
     // It is not a good idea to subtract 1 from a count and cast the result
     // to sal_uInt16 without check, if the count is 0.
-    ImplCheckParagraphs( (sal_uInt16)nPara, (sal_uInt16) (pParaList->GetParagraphCount()) );
+    ImplCheckParagraphs( nPara, (sal_uInt32) (pParaList->GetParagraphCount()) );
     // <--
 
 	ImplBlockInsertionCallbacks( sal_False );
