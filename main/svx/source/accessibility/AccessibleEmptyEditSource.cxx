@@ -101,7 +101,7 @@ namespace accessibility
         SfxBroadcaster&			GetBroadcaster() const { return *(const_cast<AccessibleEmptyEditSource_Impl*>(this)); }
 
         // SvxTextForwarder
-        sal_uInt16			GetParagraphCount() const { return 1; }
+        sal_uInt32			GetParagraphCount() const { return 1; }
         sal_uInt16			GetTextLen( sal_uInt16 /*nParagraph*/ ) const { return 0; }
         String			GetText( const ESelection& /*rSel*/ ) const { return String(); }
         SfxItemSet		GetAttribs( const ESelection& /*rSel*/, sal_Bool /*bOnlyHardAttrib*/ = 0 ) const

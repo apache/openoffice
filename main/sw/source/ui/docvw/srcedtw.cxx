@@ -64,7 +64,7 @@
 
 struct SwTextPortion
 {
-	sal_uInt16 nLine;
+	sal_uInt32 nLine;
 	sal_uInt16 nStart, nEnd;
     svtools::ColorConfigEntry eType;
 };
@@ -621,11 +621,11 @@ IMPL_LINK( SwSrcEditWindow, SyntaxTimerHdl, Timer *, pTimer )
 	// pTextEngine->SetUpdateMode( sal_False );
 
 	bHighlighting = sal_True;
-	sal_uInt16 nLine;
+	sal_uInt32 nLine;
 	sal_uInt16 nCount  = 0;
 	// zuerst wird der Bereich um dem Cursor bearbeitet
 	TextSelection aSel = pTextView->GetSelection();
-    sal_uInt16 nCur = (sal_uInt16)aSel.GetStart().GetPara();
+    sal_uInt32 nCur = aSel.GetStart().GetPara();
 	if(nCur > 40)
 		nCur -= 40;
 	else
@@ -653,11 +653,10 @@ IMPL_LINK( SwSrcEditWindow, SyntaxTimerHdl, Timer *, pTimer )
 	void* p = aSyntaxLineTable.First();
 	while ( p && nCount < MAX_SYNTAX_HIGHLIGHT)
 	{
-		nLine = (sal_uInt16)aSyntaxLineTable.GetCurKey();
+		nLine = (sal_uInt32)aSyntaxLineTable.GetCurKey();
 		DoSyntaxHighlight( nLine );
-        sal_uInt16 nCurKey = (sal_uInt16)aSyntaxLineTable.GetCurKey();
 		p = aSyntaxLineTable.Next();
-        aSyntaxLineTable.Remove(nCurKey);
+        aSyntaxLineTable.Remove(nLine);
 		nCount ++;
         if(Time().GetTime() - aSyntaxCheckStart.GetTime() > MAX_HIGHLIGHTTIME)
         {
@@ -692,7 +691,7 @@ IMPL_LINK( SwSrcEditWindow, SyntaxTimerHdl, Timer *, pTimer )
 
 --------------------------------------------------*/
 
-void SwSrcEditWindow::DoSyntaxHighlight( sal_uInt16 nPara )
+void SwSrcEditWindow::DoSyntaxHighlight( sal_uInt32 nPara )
 {
 	// Durch das DelayedSyntaxHighlight kann es passieren,
 	// dass die Zeile nicht mehr existiert!
@@ -723,7 +722,7 @@ void SwSrcEditWindow::DoSyntaxHighlight( sal_uInt16 nPara )
 
 --------------------------------------------------*/
 
-void SwSrcEditWindow::DoDelayedSyntaxHighlight( sal_uInt16 nPara )
+void SwSrcEditWindow::DoDelayedSyntaxHighlight( sal_uInt32 nPara )
 {
 	if ( !bHighlighting && bDoSyntaxHighlight )
 	{
@@ -736,7 +735,7 @@ void SwSrcEditWindow::DoDelayedSyntaxHighlight( sal_uInt16 nPara )
 
 --------------------------------------------------*/
 
-void SwSrcEditWindow::ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff )
+void SwSrcEditWindow::ImpDoHighlight( const String& rSource, sal_uInt32 nLineOff )
 {
 	SwTextPortions aPortionList;
 	lcl_Highlight(rSource, aPortionList);
@@ -767,7 +766,7 @@ void SwSrcEditWindow::ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff
 		sal_uInt16 nLastEnd = 0;
 
 #ifdef DBG_UTIL
-        sal_uInt16 nLine = aPortionList[0].nLine;
+        sal_uInt32 nLine = aPortionList[0].nLine;
 #endif
 		for ( size_t i = 0; i < nCount; i++ )
 		{
@@ -799,7 +798,7 @@ void SwSrcEditWindow::ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff
             r.eType != svtools::HTMLUNKNOWN)
                 r.eType = svtools::HTMLUNKNOWN;
         Color aColor((ColorData)SW_MOD()->GetColorConfig().GetColorValue((svtools::ColorConfigEntry)r.eType).nColor);
-        sal_uInt16 nLine = nLineOff+r.nLine; //
+        sal_uInt32 nLine = nLineOff+r.nLine; //
         pTextEngine->SetAttrib( TextAttribFontColor( aColor ), nLine, r.nStart, r.nEnd+1, sal_True );
 	}
 }
@@ -828,7 +827,7 @@ void SwSrcEditWindow::Notify( SfxBroadcaster& /*rBC*/, const SfxHint& rHint )
 		else if( ( rTextHint.GetId() == TEXT_HINT_PARAINSERTED ) ||
 		         ( rTextHint.GetId() == TEXT_HINT_PARACONTENTCHANGED ) )
 		{
-            DoDelayedSyntaxHighlight( (sal_uInt16)rTextHint.GetValue() );
+            DoDelayedSyntaxHighlight( rTextHint.GetValue() );
 		}
 	}
 }

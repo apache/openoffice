@@ -795,8 +795,8 @@ void lcl_SetSpace( String& rStr, const ESelection& rSel )
 sal_Bool lcl_ConvertFields(EditEngine& rEng, const String* pCommands)
 {
 	sal_Bool bChange = sal_False;
-	sal_uInt16 nParCnt = rEng.GetParagraphCount();
-	for (sal_uInt16 nPar = 0; nPar<nParCnt; nPar++)
+	sal_uInt32 nParCnt = rEng.GetParagraphCount();
+	for (sal_uInt32 nPar = 0; nPar<nParCnt; nPar++)
 	{
 		String aStr = rEng.GetText( nPar );
 		xub_StrLen nPos;

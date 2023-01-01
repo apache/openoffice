@@ -183,7 +183,7 @@ public:
 	virtual void					UpdateData();
 
     // SvxTextForwarder
-	virtual sal_uInt16		GetParagraphCount() const;
+	virtual sal_uInt32		GetParagraphCount() const;
 	virtual sal_uInt16		GetTextLen( sal_uInt16 nParagraph ) const;
 	virtual String			GetText( const ESelection& rSel ) const;
 	virtual SfxItemSet		GetAttribs( const ESelection& rSel, sal_Bool bOnlyHardAttrib = 0 ) const;

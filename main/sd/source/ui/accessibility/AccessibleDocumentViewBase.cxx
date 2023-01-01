@@ -928,7 +928,7 @@ uno::Any SAL_CALL AccessibleDocumentViewBase::getExtendedAttributes()
 				{
 					sValue += rtl::OUString::createFromAscii("note:");
 					const EditTextObject& rEdit = pPara->GetTextObject();
-					for (sal_uInt16 i=0;i<rEdit.GetParagraphCount();i++)
+					for (sal_uInt32 i=0;i<rEdit.GetParagraphCount();i++)
 					{
 						String strNote = rEdit.GetText(i);
 						strNote.SearchAndReplace( String::CreateFromAscii( "\\" ), String::CreateFromAscii("\\\\" ));

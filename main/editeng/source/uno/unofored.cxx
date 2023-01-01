@@ -52,7 +52,7 @@ SvxEditEngineForwarder::~SvxEditEngineForwarder()
 	//	die EditEngine muss ggf. von aussen geloescht werden
 }
 
-sal_uInt16 SvxEditEngineForwarder::GetParagraphCount() const
+sal_uInt32 SvxEditEngineForwarder::GetParagraphCount() const
 {
 	return rEditEngine.GetParagraphCount();
 }
@@ -528,7 +528,7 @@ xub_StrLen SvxEditEngineForwarder::AppendTextPortion( sal_uInt16 nPara, const St
 {
     xub_StrLen nLen = 0;
 
-    sal_uInt16 nParaCount = rEditEngine.GetParagraphCount();
+    sal_uInt32 nParaCount = rEditEngine.GetParagraphCount();
     DBG_ASSERT( nPara < nParaCount, "paragraph index out of bounds" );
     if (/*0 <= nPara && */nPara < nParaCount)
     {

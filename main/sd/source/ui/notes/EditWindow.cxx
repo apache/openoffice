@@ -727,7 +727,7 @@ void EditWindow::SelNextMark()
         sal_uInt16     Pos        = eSelection.nEndPos;
         String     aMark (UniString::CreateFromAscii("<?>"));
         String     aText;
-        sal_uInt16     nCounts    = pEditEngine->GetParagraphCount();
+        sal_uInt32     nCounts    = pEditEngine->GetParagraphCount();
 
         while (eSelection.nEndPara < nCounts)
         {
@@ -758,7 +758,7 @@ void EditWindow::SelPrevMark()
         xub_StrLen Max        = eSelection.nStartPos;
         String     Text( pEditEngine->GetText( eSelection.nStartPara ) );
         String     aMark (UniString::CreateFromAscii("<?>"));
-        sal_uInt16     nCounts    = pEditEngine->GetParagraphCount();
+        sal_uInt32     nCounts    = pEditEngine->GetParagraphCount();
 
         do
         {

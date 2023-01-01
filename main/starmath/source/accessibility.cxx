@@ -1009,7 +1009,7 @@ IMPL_LINK(SmTextForwarder, NotifyHdl, EENotify*, aNotify)
     return 0;
 }
 
-sal_uInt16 SmTextForwarder::GetParagraphCount() const
+sal_uInt32 SmTextForwarder::GetParagraphCount() const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetParagraphCount() : 0;
@@ -1520,7 +1520,7 @@ void SmTextForwarder::AppendParagraph()
     EditEngine *pEditEngine = rEditAcc.GetEditEngine();
     if (pEditEngine)
     {
-        sal_uInt16 nParaCount = pEditEngine->GetParagraphCount();
+        sal_uInt32 nParaCount = pEditEngine->GetParagraphCount();
         pEditEngine->InsertParagraph( nParaCount, String() );
     }
 }

@@ -59,9 +59,9 @@ SvxOutlinerForwarder::~SvxOutlinerForwarder()
 	flushCache();
 }
 
-sal_uInt16 SvxOutlinerForwarder::GetParagraphCount() const
+sal_uInt32 SvxOutlinerForwarder::GetParagraphCount() const
 {
-	return (sal_uInt16)rOutliner.GetParagraphCount();
+	return rOutliner.GetParagraphCount();
 }
 
 sal_uInt16 SvxOutlinerForwarder::GetTextLen( sal_uInt16 nParagraph ) const
@@ -564,7 +564,7 @@ xub_StrLen SvxOutlinerForwarder::AppendTextPortion( sal_uInt16 nPara, const Stri
     xub_StrLen nLen = 0;
 
     EditEngine& rEditEngine = const_cast< EditEngine& >( rOutliner.GetEditEngine() );
-    sal_uInt16 nParaCount = rEditEngine.GetParagraphCount();
+    sal_uInt32 nParaCount = rEditEngine.GetParagraphCount();
     DBG_ASSERT( nPara < nParaCount, "paragraph index out of bounds" );
     if (/*0 <= nPara && */nPara < nParaCount)
     {

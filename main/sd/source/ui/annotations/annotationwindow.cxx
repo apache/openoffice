@@ -505,7 +505,7 @@ void AnnotationWindow::SetLanguage(const SvxLanguageItem aNewItem)
 	Engine()->SetModifyHdl( Link() );
 	ESelection aOld = getView()->GetSelection();
 
-    ESelection aNewSelection( 0, 0, (sal_uInt16)Engine()->GetParagraphCount()-1, USHRT_MAX );
+    ESelection aNewSelection( 0, 0, Engine()->GetParagraphCount()-1, USHRT_MAX );
 	getView()->SetSelection( aNewSelection );
 	SfxItemSet aEditAttr(getView()->GetAttribs());
 	aEditAttr.Put(aNewItem);

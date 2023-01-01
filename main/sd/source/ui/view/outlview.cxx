@@ -1355,14 +1355,14 @@ void OutlineView::FillOutliner()
 			OutlinerParaObject* pOPO = pTO->GetOutlinerParaObject();
 			if (pOPO)
 			{
-				sal_uInt16 nParaCount1 = (sal_uInt16)mpOutliner->GetParagraphCount();
+				sal_uInt32 nParaCount1 = mpOutliner->GetParagraphCount();
 				sal_Bool bVertical = pOPO->IsVertical();
 				pOPO->SetVertical( sal_False );
 				mpOutliner->AddText(*pOPO);
 				pOPO->SetVertical( bVertical );
 
-                sal_uInt16 nParaCount2 = (sal_uInt16)mpOutliner->GetParagraphCount();
-				for (sal_uInt16 n = nParaCount1; n < nParaCount2; n++)
+                sal_uInt32 nParaCount2 = mpOutliner->GetParagraphCount();
+				for (sal_uInt32 n = nParaCount1; n < nParaCount2; n++)
 				{
                     if( bSubTitle )
                     {

@@ -1488,7 +1488,7 @@ sal_Bool SdrObjEditView::ImpIsTextEditAllSelected() const
 	        Paragraph* pLastPara=pTextEditOutliner->GetParagraph( nParaAnz > 1 ? nParaAnz - 1 : 0 );
 
 			ESelection aESel(pTextEditOutlinerView->GetSelection());
-            if (aESel.nStartPara==0 && aESel.nStartPos==0 && aESel.nEndPara==sal_uInt16(nParaAnz-1))
+            if (aESel.nStartPara==0 && aESel.nStartPos==0 && aESel.nEndPara==(nParaAnz-1))
 			{
                 XubString aStr(pTextEditOutliner->GetText(pLastPara));
 
@@ -1496,7 +1496,7 @@ sal_Bool SdrObjEditView::ImpIsTextEditAllSelected() const
 					bRet = sal_True;
             }
             // und nun auch noch fuer den Fall, das rueckwaerts selektiert wurde
-            if (!bRet && aESel.nEndPara==0 && aESel.nEndPos==0 && aESel.nStartPara==sal_uInt16(nParaAnz-1))
+            if (!bRet && aESel.nEndPara==0 && aESel.nEndPos==0 && aESel.nStartPara==(nParaAnz-1))
 			{
                 XubString aStr(pTextEditOutliner->GetText(pLastPara));
 

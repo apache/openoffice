@@ -82,7 +82,7 @@ private:
     utl::SourceViewConfig* pSourceViewConfig;
 
 	long			nCurTextWidth;
-	sal_uInt16			nStartLine;
+	sal_uInt32			nStartLine;
     rtl_TextEncoding eSourceEncoding;
 	sal_Bool			bReadonly;
 	sal_Bool			bDoSyntaxHighlight;
@@ -91,7 +91,7 @@ private:
 	Timer			aSyntaxIdleTimer;
 	Table			aSyntaxLineTable;
 
-	void			ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff );
+	void			ImpDoHighlight( const String& rSource, sal_uInt32 nLineOff );
 
 	using OutputDevice::SetFont;
     void            SetFont();
@@ -110,7 +110,7 @@ protected:
 //	virtual void 	LoseFocus();
 
 	void 			CreateTextEngine();
-	void			DoSyntaxHighlight( sal_uInt16 nPara );
+	void			DoSyntaxHighlight( sal_uInt32 nPara );
 
 	virtual void	Notify( SfxBroadcaster& rBC, const SfxHint& rHint );
     virtual void    ConfigurationChanged( utl::ConfigurationBroadcaster*, sal_uInt32 );
@@ -147,9 +147,9 @@ public:
 	void			SetReadonly(sal_Bool bSet){bReadonly = bSet;}
 	sal_Bool			IsReadonly(){return bReadonly;}
 
-	void			DoDelayedSyntaxHighlight( sal_uInt16 nPara );
+	void			DoDelayedSyntaxHighlight( sal_uInt32 nPara );
 
-	void			SetStartLine(sal_uInt16 nLine){nStartLine = nLine;}
+	void			SetStartLine(sal_uInt32 nLine){nStartLine = nLine;}
 
 	virtual void	Command( const CommandEvent& rCEvt );
 	void 			HandleWheelCommand( const CommandEvent& rCEvt );

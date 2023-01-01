@@ -1247,7 +1247,7 @@ String HtmlExport::CreateTextForPage( SdrOutliner* pOutliner,
 				if(pPara == 0)
 					continue;
 
-				const sal_Int16 nDepth = (sal_uInt16) pOutliner->GetDepth( (sal_uInt16) nPara );
+				const sal_Int16 nDepth = (sal_uInt16) pOutliner->GetDepth( nPara );
 				aParaText = ParagraphToHTMLString(pOutliner,nPara,rBackgroundColor);
 
 				if(aParaText.Len() == 0)

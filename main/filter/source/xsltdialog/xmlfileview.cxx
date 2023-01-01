@@ -152,7 +152,7 @@ XMLFileWindow::XMLFileWindow( Window* pParent ) :
 	pHScrollbar(0),
 	pVScrollbar(0),
 	nCurTextWidth(0),
-    nStartLine(USHRT_MAX),
+    nStartLine(SAL_MAX_UINT32),
     eSourceEncoding(gsl_getSystemTextEncoding()),
 	bHighlighting(false)
 {
@@ -428,7 +428,7 @@ void XMLFileWindow::Notify( SfxBroadcaster& /* rBC */, const SfxHint& rHint )
 		}
 		else if( rTextHint.GetId() == TEXT_HINT_FORMATPARA )
 		{
-            DoDelayedSyntaxHighlight( (sal_uInt16)rTextHint.GetValue() );
+            DoDelayedSyntaxHighlight( rTextHint.GetValue() );
 		}
 	}
 }
@@ -819,7 +819,7 @@ void lcl_Highlight(const String& rSource, SwTextPortions& aPortionList)
 	}
 }
 
-void XMLFileWindow::DoDelayedSyntaxHighlight( sal_uInt16 nPara )
+void XMLFileWindow::DoDelayedSyntaxHighlight( sal_uInt32 nPara )
 {
 	if ( !bHighlighting )
 	{
@@ -828,7 +828,7 @@ void XMLFileWindow::DoDelayedSyntaxHighlight( sal_uInt16 nPara )
 	}
 }
 
-void XMLFileWindow::ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff )
+void XMLFileWindow::ImpDoHighlight( const String& rSource, sal_uInt32 nLineOff )
 {
 	SwTextPortions aPortionList;
 	lcl_Highlight(rSource, aPortionList);
@@ -889,7 +889,7 @@ void XMLFileWindow::ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff )
             r.eType != svtools::HTMLUNKNOWN)
                 r.eType = (svtools::ColorConfigEntry)svtools::HTMLUNKNOWN;
         Color aColor((ColorData)aConfig.GetColorValue((svtools::ColorConfigEntry)r.eType).nColor);
-        sal_uInt16 nLine = nLineOff+r.nLine; //
+        sal_uInt32 nLine = nLineOff+r.nLine; //
         pTextEngine->SetAttrib( TextAttribFontColor( aColor ), nLine, r.nStart, r.nEnd+1 );
 	}
 }
@@ -901,11 +901,11 @@ IMPL_LINK( XMLFileWindow, SyntaxTimerHdl, Timer *, pTimer )
 	pTextEngine->SetUpdateMode( sal_False );
 
 	bHighlighting = sal_True;
-	sal_uInt16 nLine;
+	sal_uInt32 nLine;
 	sal_uInt16 nCount  = 0;
 	// zuerst wird der Bereich um dem Cursor bearbeitet
 	TextSelection aSel = pTextView->GetSelection();
-    sal_uInt16 nCur = (sal_uInt16)aSel.GetStart().GetPara();
+    sal_uInt32 nCur = aSel.GetStart().GetPara();
 	if(nCur > 40)
 		nCur -= 40;
 	else
@@ -933,7 +933,7 @@ IMPL_LINK( XMLFileWindow, SyntaxTimerHdl, Timer *, pTimer )
 	void* p = aSyntaxLineTable.First();
 	while ( p && nCount < MAX_SYNTAX_HIGHLIGHT)
 	{
-		nLine = (sal_uInt16)aSyntaxLineTable.GetCurKey();
+		nLine = (sal_uInt32)aSyntaxLineTable.GetCurKey();
 		DoSyntaxHighlight( nLine );
 		sal_uInt16 nC = (sal_uInt16)aSyntaxLineTable.GetCurKey();
 		p = aSyntaxLineTable.Next();
@@ -966,7 +966,7 @@ IMPL_LINK( XMLFileWindow, SyntaxTimerHdl, Timer *, pTimer )
     return 0;
 }
 
-void XMLFileWindow::DoSyntaxHighlight( sal_uInt16 nPara )
+void XMLFileWindow::DoSyntaxHighlight( sal_uInt32 nPara )
 {
 	// Durch das DelayedSyntaxHighlight kann es passieren,
 	// dass die Zeile nicht mehr existiert!

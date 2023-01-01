@@ -133,7 +133,7 @@ void ScViewFunc::PasteRTF( SCCOL nStartCol, SCROW nStartRow,
 			}
 
 			SCROW nRow = nStartRow;
-			for( sal_uInt16 n = 0; n < nParCnt; n++ )
+			for( sal_uInt32 n = 0; n < nParCnt; n++ )
 			{
 				EditTextObject* pObject = pEngine->CreateTextObject( n );
 				EnterData( nStartCol, nRow, nTab, pObject, sal_False, sal_True );
@@ -781,7 +781,7 @@ void ScViewFunc::InsertBookmark( const String& rDescription, const String& rURL,
 		}
 	}
 
-	sal_uInt16 nPara = aEngine.GetParagraphCount();
+	sal_uInt32 nPara = aEngine.GetParagraphCount();
 	if (nPara)
 		--nPara;
 	xub_StrLen nTxtLen = aEngine.GetTextLen(nPara);

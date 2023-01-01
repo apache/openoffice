@@ -126,7 +126,7 @@ void GetSelection( struct ESelection& rSel, SvxTextForwarder* pForwarder ) throw
 	DBG_ASSERT( pForwarder, "I need a valid SvxTextForwarder!" );
 	if( pForwarder )
 	{
-		sal_Int16 nParaCount = pForwarder->GetParagraphCount();
+		sal_Int32 nParaCount = pForwarder->GetParagraphCount();
 		if(nParaCount>0)
 			nParaCount--;
 
@@ -1451,7 +1451,7 @@ sal_Bool SvxUnoTextRangeBase::GoRight(sal_Int16 nCount, sal_Bool Expand)  throw(
 		sal_uInt16 nNewPar = maSelection.nEndPara;
 
 		sal_Bool bOk = sal_True;
-		sal_uInt16 nParCount = pForwarder->GetParagraphCount();
+		sal_uInt32 nParCount = pForwarder->GetParagraphCount();
 		sal_uInt16 nThisLen = pForwarder->GetTextLen( nNewPar );
 		while ( nNewPos > nThisLen && bOk )
 		{
@@ -1496,7 +1496,7 @@ void SvxUnoTextRangeBase::GotoEnd(sal_Bool Expand) throw()
 	if( pForwarder )
 	{
 
-		sal_uInt16 nPar = pForwarder->GetParagraphCount();
+		sal_uInt32 nPar = pForwarder->GetParagraphCount();
 		if (nPar)
 			--nPar;
 
@@ -2197,7 +2197,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendParagraph(
     SvxTextForwarder *pTextForwarder = pEditSource ? pEditSource->GetTextForwarder() : 0;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
 		pTextForwarder->AppendParagraph();
 
@@ -2228,7 +2228,7 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::finishParagraph(
     SvxTextForwarder *pTextForwarder = pEditSource ? pEditSource->GetTextForwarder() : 0;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
         pTextForwarder->AppendParagraph();
 
@@ -2260,9 +2260,9 @@ uno::Reference< text::XTextRange > SAL_CALL SvxUnoTextBase::appendTextPortion(
 	uno::Reference< text::XTextRange > xRet;
     if (pTextForwarder)
     {
-        sal_uInt16 nParaCount = pTextForwarder->GetParagraphCount();
+        sal_uInt32 nParaCount = pTextForwarder->GetParagraphCount();
         DBG_ASSERT( nParaCount > 0, "paragraph count is 0 or negative" );
-		sal_uInt16 nPara = nParaCount - 1;
+		sal_uInt32 nPara = nParaCount - 1;
         SfxItemSet aSet( pTextForwarder->GetParaAttribs( nPara ) );
 		xub_StrLen nStart = pTextForwarder->AppendTextPortion( nPara, rText, aSet );
         pEditSource->UpdateData();
@@ -2511,7 +2511,7 @@ void SvxDummyTextSource::UpdateData()
 {
 }
 
-sal_uInt16 SvxDummyTextSource::GetParagraphCount() const
+sal_uInt32 SvxDummyTextSource::GetParagraphCount() const
 {
 	return 0;
 }

@@ -684,7 +684,7 @@ void View::SelectAll()
 	{
 		OutlinerView* pOLV = GetTextEditOutlinerView();
 		const ::Outliner* pOutliner = GetTextEditOutliner();
-		pOLV->SelectRange( 0, (sal_uInt16) pOutliner->GetParagraphCount() );
+		pOLV->SelectRange( 0, pOutliner->GetParagraphCount() );
 	}
 	else
 	{
@@ -1471,7 +1471,7 @@ void View::ChangeMarkedObjectsBulletsNumbering(
                         pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
                     }
 					sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
-					pText->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+					pText->SetOutlinerParaObject(pOutliner->CreateParaObject(0, nParaCount));
 					pOutliner->Clear();
 				}
 			}
@@ -1502,7 +1502,7 @@ void View::ChangeMarkedObjectsBulletsNumbering(
                 pOutlinerView->ApplyBulletsNumbering( bHandleBullets, pNumRule, bToggle );
             }
 			sal_uInt32 nParaCount = pOutliner->GetParagraphCount();
-			pTextObj->SetOutlinerParaObject(pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount));
+			pTextObj->SetOutlinerParaObject(pOutliner->CreateParaObject(0, nParaCount));
 			pOutliner->Clear();
 		}
 	}

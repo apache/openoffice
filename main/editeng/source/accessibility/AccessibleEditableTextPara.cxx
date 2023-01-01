@@ -3039,8 +3039,8 @@ namespace accessibility
         if (bValidPara)
         {
             // we explicitly allow for the index to point at the character right behind the text
-            if (0 <= nIndex && nIndex <= rCacheTF.GetTextLen( static_cast< sal_uInt16 >(nPara) ))
-                nRes = rCacheTF.GetLineNumberAtIndex( static_cast< sal_uInt16 >(nPara), static_cast< sal_uInt16 >(nIndex) );
+            if (0 <= nIndex && nIndex <= rCacheTF.GetTextLen( nPara ))
+                nRes = rCacheTF.GetLineNumberAtIndex( nPara, static_cast< sal_uInt16 >(nIndex) );
             else
                 throw lang::IndexOutOfBoundsException();
         }
@@ -3059,10 +3059,10 @@ namespace accessibility
         DBG_ASSERT( bValidPara, "getTextAtLineNumber: current paragraph index out of range" );
         if (bValidPara)
         {
-            if (0 <= nLineNo && nLineNo < rCacheTF.GetLineCount( static_cast< sal_uInt16 >(nPara) ))
+            if (0 <= nLineNo && nLineNo < rCacheTF.GetLineCount( nPara ))
             {
                 sal_uInt16 nStart = 0, nEnd = 0;
-                rCacheTF.GetLineBoundaries( nStart, nEnd, static_cast< sal_uInt16 >(nPara), static_cast< sal_uInt16 >(nLineNo) );
+                rCacheTF.GetLineBoundaries( nStart, nEnd, nPara, static_cast< sal_uInt16 >(nLineNo) );
                 if (nStart != 0xFFFF && nEnd != 0xFFFF)
                 {
                     try

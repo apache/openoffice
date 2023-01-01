@@ -761,7 +761,7 @@ void SmEditWindow::SelNextMark()
         sal_uInt16     Pos        = eSelection.nEndPos;
         String     aMark (C2S("<?>"));
         String     aText;
-        sal_uInt16     nCounts    = pEditEngine->GetParagraphCount();
+        sal_uInt32     nCounts    = pEditEngine->GetParagraphCount();
 
         while (eSelection.nEndPara < nCounts)
         {

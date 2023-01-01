@@ -80,8 +80,8 @@ String ScEditUtil::ModifyDelimiters( const String& rOld )
 static String lcl_GetDelimitedString( const EditEngine& rEngine, const sal_Char c )
 {
 	String aRet;
-	sal_uInt16 nParCount = rEngine.GetParagraphCount();
-	for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+	sal_uInt32 nParCount = rEngine.GetParagraphCount();
+	for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
 	{
 		if (nPar > 0)
 			aRet += c;

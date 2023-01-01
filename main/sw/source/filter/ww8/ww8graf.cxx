@@ -466,9 +466,9 @@ SdrObject* SwWW8ImplReader::ReadPolyLine( WW8_DPHEAD* pHd, const WW8_DO* pDo,
 
 ESelection SwWW8ImplReader::GetESelection( long nCpStart, long nCpEnd )
 {
-    sal_uInt16 nPCnt = mpDrawEditEngine->GetParagraphCount();
-    sal_uInt16 nSP = 0;
-    sal_uInt16 nEP = 0;
+    sal_uInt32 nPCnt = mpDrawEditEngine->GetParagraphCount();
+    sal_uInt32 nSP = 0;
+    sal_uInt32 nEP = 0;
     while(      (nSP < nPCnt)
             &&  (nCpStart >= mpDrawEditEngine->GetTextLen( nSP ) + 1) )
     {
