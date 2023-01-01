@@ -797,12 +797,12 @@ namespace accessibility
         DBG_ASSERT(nIndex >= 0 && nIndex <= USHRT_MAX,
                    "AccessibleEditableTextPara::GetAttributeRun: index value overflow");
 
-        DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= USHRT_MAX,
+        DBG_ASSERT(GetParagraphIndex() >= 0 && GetParagraphIndex() <= SAL_MAX_UINT32,
                    "AccessibleEditableTextPara::getLocale: paragraph index value overflow");
 
         return GetTextForwarder().GetAttributeRun( nStartIndex,
                                                    nEndIndex,
-                                                   static_cast< sal_uInt16 >(GetParagraphIndex()),
+                                                   GetParagraphIndex(),
                                                    static_cast< sal_uInt16 >(nIndex) );
     }
 

@@ -72,11 +72,11 @@ public:
     ~SvxAccessibleTextIndex() {};
 
     // Get/Set current paragraph
-    void SetParagraph( sal_uInt16 nPara )
+    void SetParagraph( sal_uInt32 nPara )
     {
         mnPara = nPara;
     }
-    sal_uInt16 GetParagraph() const { return mnPara; }
+    sal_uInt32 GetParagraph() const { return mnPara; }
 
     /** Set the index in the UAA semantic
 
@@ -124,7 +124,7 @@ public:
     sal_Bool IsEditableRange( const SvxAccessibleTextIndex& rEnd ) const;
 
 private:
-    sal_uInt16 	  mnPara;
+    sal_uInt32 	  mnPara;
     sal_Int32 mnIndex;
     sal_Int32 mnEEIndex;
     sal_Int32 mnFieldOffset;
@@ -968,7 +968,7 @@ sal_Bool SvxAccessibleTextAdapter::GetWordIndices( sal_uInt16 nPara, sal_uInt16 
 
     return sal_True;
 }
-sal_Bool SvxAccessibleTextAdapter::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool /* bInCell */) const
+sal_Bool SvxAccessibleTextAdapter::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool /* bInCell */) const
 {
     DBG_ASSERT(mrTextForwarder, "SvxAccessibleTextAdapter: no forwarder");
 

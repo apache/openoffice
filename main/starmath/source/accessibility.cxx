@@ -1421,7 +1421,7 @@ sal_Bool SmTextForwarder::GetWordIndices( sal_uInt16 nPara, sal_uInt16 nIndex, s
     return bRes;
 }
 
-sal_Bool SmTextForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool bInCell ) const
+sal_Bool SmTextForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
     return pEditEngine ? 

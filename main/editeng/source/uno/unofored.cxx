@@ -453,7 +453,7 @@ sal_Bool SvxEditEngineForwarder::GetWordIndices( sal_uInt16 nPara, sal_uInt16 nI
 
     return sal_False;
 }
-sal_Bool SvxEditEngineForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt16 nPara, sal_uInt16 nIndex, sal_Bool bInCell ) const
+sal_Bool SvxEditEngineForwarder::GetAttributeRun( sal_uInt16& nStartIndex, sal_uInt16& nEndIndex, sal_uInt32 nPara, sal_uInt16 nIndex, sal_Bool bInCell ) const
 {
     return SvxEditSourceHelper::GetAttributeRun( nStartIndex, nEndIndex, rEditEngine, nPara, nIndex, bInCell );
 }
