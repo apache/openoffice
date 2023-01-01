@@ -605,7 +605,7 @@ struct EBulletInfo
     String      aText;
     SvxFont		aFont;
     Graphic     aGraphic;
-    sal_uInt16      nParagraph;
+    sal_uInt32      nParagraph;
     Rectangle   aBounds;
 
     EBulletInfo() : bVisible( sal_False ), nType( 0 ), nParagraph( EE_PARA_NOT_FOUND ) {}
