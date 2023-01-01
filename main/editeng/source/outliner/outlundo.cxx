@@ -189,7 +189,7 @@ void OLUndoExpand::Restore( sal_Bool bUndo )
 		bExpand = sal_True;
 	if( !pParas )
 	{
-		pPara = pOutliner->GetParagraph( (sal_uLong)nCount );
+		pPara = pOutliner->GetParagraph( nCount );
 		if( bExpand )
 			pOutliner->Expand( pPara );
 		else
@@ -197,9 +197,9 @@ void OLUndoExpand::Restore( sal_Bool bUndo )
 	}
 	else
 	{
-		for( sal_uInt16 nIdx = 0; nIdx < nCount; nIdx++ )
+		for( sal_uInt32 nIdx = 0; nIdx < nCount; nIdx++ )
 		{
-			pPara = pOutliner->GetParagraph( (sal_uLong)(pParas[nIdx]) );
+			pPara = pOutliner->GetParagraph( pParas[nIdx] );
 			if( bExpand )
 				pOutliner->Expand( pPara );
 			else

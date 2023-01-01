@@ -128,9 +128,9 @@ public:
 	virtual void Redo();
 	virtual void Repeat();
 
-	sal_uInt16* pParas;  // 0 == nCount enthaelt Absatznummer
+	sal_uInt32* pParas;  // 0 == nCount enthaelt Absatznummer
 	Outliner* pOutliner;
-	sal_uInt16 nCount;
+	sal_uInt32 nCount;
 };
 
 #endif
