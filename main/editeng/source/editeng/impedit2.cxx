@@ -2934,9 +2934,9 @@ EditPaM ImpEditEngine::ImpInsertParaBreak( const EditSelection& rCurSel, sal_Boo
 
 EditPaM ImpEditEngine::ImpInsertParaBreak( const EditPaM& rPaM, sal_Bool bKeepEndingAttribs )
 {
-	if ( aEditDoc.Count() >= 0xFFFE )
+	if ( aEditDoc.Count() >= (EE_PARA_MAX - 1) )
 	{
-		DBG_ERROR( "Can't process more than 64K paragraphs!" );
+		DBG_ERROR( "Can't process more than (2^32 - 1) paragraphs!" );
 		return rPaM;
 	}
 
