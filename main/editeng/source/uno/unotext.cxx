@@ -139,7 +139,7 @@ void CheckSelection( struct ESelection& rSel, SvxTextForwarder* pForwarder ) thr
 	DBG_ASSERT( pForwarder, "I need a valid SvxTextForwarder!" );
 	if( pForwarder )
 	{
-		if( rSel.nStartPara == 0xffff )
+		if( rSel.nStartPara == EE_PARA_ALL )
 		{
 			::GetSelection( rSel, pForwarder );
 		}
@@ -318,7 +318,7 @@ void SvxUnoTextRangeBase::SetEditSource( SvxEditSource* pSource ) throw()
 
 	mpEditSource = pSource;
 
-	maSelection.nStartPara = 0xffff;
+	maSelection.nStartPara = EE_PARA_MAX; // or EE_PARA_NOT_FOUND? EE_PARA_ALL? What is the intent?
 
 	if( mpEditSource )
 		mpEditSource->addRange( this );

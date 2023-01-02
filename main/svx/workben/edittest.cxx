@@ -1534,7 +1534,7 @@ void __EXPORT EditViewWindow::KeyInput( const KeyEvent& rKEvt )
 	USHORT nCode = rKEvt.GetKeyCode().GetCode();
 	// Auswertung fuer besondere Einstellungen....
 	if ( ( nCode == KEY_A) && rKEvt.GetKeyCode().IsMod1() )
-		pEditView->SetSelection( ESelection( 0, 0, 0xFFFF, 0xFFFF ) );
+		pEditView->SetSelection( ESelection( 0, 0, EE_PARA_MAX, EE_INDEX_MAX ) );
 	else if ( ( nCode == KEY_R ) && rKEvt.GetKeyCode().IsMod2() )
 		Invalidate();
 	else if ( ( nCode == KEY_L ) && rKEvt.GetKeyCode().IsMod2() )

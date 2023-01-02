@@ -4519,7 +4519,7 @@ void ImpEditEngine::IndentBlock( EditView* pEditView, sal_Bool bRight )
 	{
 		ESelection aNewSel = aESel;
 		aNewSel.nStartPos = 0;
-		aNewSel.nEndPos = 0xFFFF;
+		aNewSel.nEndPos = EE_INDEX_MAX;
 
 		if ( aESel.nEndPos == 0 )
 		{

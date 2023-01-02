@@ -697,8 +697,7 @@ void EditWindow::SelectAll()
 	DBG_ASSERT( mpEditView, "NULL pointer" );
 	if (mpEditView)
 	{
-		// 0xFFFF as last two parameters refers to the end of the text
-		mpEditView->SetSelection( ESelection( 0, 0, 0xFFFF, 0xFFFF ) );
+		mpEditView->SetSelection( ESelection( 0, 0, EE_PARA_MAX, EE_INDEX_MAX ) );
 	}
 }
 

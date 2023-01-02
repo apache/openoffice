@@ -398,7 +398,7 @@ void AnnotationWindow::InitControls()
 
 void AnnotationWindow::StartEdit()
 {
-    getView()->SetSelection(ESelection(0xFFFF,0xFFFF,0xFFFF,0xFFFF));
+    getView()->SetSelection(ESelection(EE_PARA_MAX, EE_INDEX_MAX));
     getView()->ShowCursor();
 }
 

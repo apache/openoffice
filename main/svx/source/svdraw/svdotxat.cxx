@@ -419,7 +419,7 @@ void SdrTextObj::RemoveOutlinerCharacterAttribs( const std::vector<sal_uInt16>& 
 				pOutliner->SetText(*pOutlinerParaObject);
 			}
 
-			ESelection aSelAll( 0, 0, 0xffff, 0xffff );
+			ESelection aSelAll( 0, 0, EE_PARA_MAX, EE_INDEX_MAX );
 			std::vector<sal_uInt16>::const_iterator aIter( rCharWhichIds.begin() );
 			while( aIter != rCharWhichIds.end() )
 			{

@@ -355,7 +355,7 @@ sal_Bool __EXPORT OutlinerView::MouseButtonDown( const MouseEvent& rMEvt )
 			if ( bHasChilds && pOwner->pParaList->HasVisibleChilds(pPara) )
 				nEndPara += pOwner->pParaList->GetChildCount( pPara );
 			// umgekehrt rum selektieren, damit EditEngine nicht scrollt
-			ESelection aSel(nEndPara, 0xffff, nPara, 0 );
+			ESelection aSel(nEndPara, EE_INDEX_MAX, nPara, 0 );
 			pEditView->SetSelection( aSel );
         }
 		else if( rMEvt.GetClicks() == 2 && bHasChilds )
@@ -520,7 +520,7 @@ sal_uLong OutlinerView::Select( Paragraph* pParagraph, sal_Bool bSelect,
 	sal_uLong nPara = pOwner->pParaList->GetAbsPos( pParagraph );
 	sal_uInt16 nEnd = 0;
 	if ( bSelect )
-		nEnd = 0xffff;
+		nEnd = EE_INDEX_MAX;
 
 	sal_uLong nChildCount = 0;
 	if ( bWithChilds )
@@ -744,7 +744,7 @@ void OutlinerView::AdjustDepth( Paragraph* pPara, short nDX, sal_Bool bWithChild
 	sal_uInt32 nEndPara = nStartPara;
 	if ( bWithChilds )
 		nEndPara += pOwner->pParaList->GetChildCount( pPara );
-	ESelection aSel(nStartPara, 0,nEndPara, 0xffff );
+	ESelection aSel(nStartPara, 0, nEndPara, EE_INDEX_MAX );
 	pEditView->SetSelection( aSel );
 	AdjustDepth( nDX );
 }
@@ -756,7 +756,7 @@ void OutlinerView::AdjustHeight( Paragraph* pPara, long nDY, sal_Bool bWithChild
 	sal_uInt32 nEndPara = nStartPara;
 	if ( bWithChilds )
 		nEndPara += pOwner->pParaList->GetChildCount( pPara );
-	ESelection aSel( nStartPara, 0, nEndPara, 0xffff );
+	ESelection aSel( nStartPara, 0, nEndPara, EE_INDEX_MAX );
 	pEditView->SetSelection( aSel );
 	AdjustHeight( nDY );
 }
@@ -1141,7 +1141,7 @@ void OutlinerView::SelectRange( sal_uInt32 nFirst, sal_uInt32 nCount )
 	nCount = pOwner->pParaList->GetParagraphCount();
 	if( nLast <= nCount )
 		nLast = nCount - 1;
-	ESelection aSel( nFirst, 0, nLast, 0xffff );
+	ESelection aSel( nFirst, 0, nLast, EE_INDEX_MAX );
 	pEditView->SetSelection( aSel );
 }
 

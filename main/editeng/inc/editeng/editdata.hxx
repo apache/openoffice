@@ -47,10 +47,12 @@ enum EVAnchorMode		{
 			ANCHOR_TOP_RIGHT,	ANCHOR_VCENTER_RIGHT,	ANCHOR_BOTTOM_RIGHT };
 
 #define EE_PARA_NOT_FOUND		0xFFFFFFFF
+#define EE_PARA_MAX				0xFFFFFFFF
 #define EE_PARA_APPEND			0xFFFFFFFF
 #define EE_PARA_ALL				0xFFFFFFFF
 #define EE_APPEND				0xFFFF
 #define EE_INDEX_NOT_FOUND		0xFFFF
+#define EE_INDEX_MAX			0xFFFF
 
 // Fehlermeldungen fuer Read/Write-Methode
 #define EE_READWRITE_OK				 (SVSTREAM_OK)
@@ -321,7 +323,7 @@ struct PasteOrDropInfos
     sal_uInt32  nStartPara;
     sal_uInt32  nEndPara;
 
-    PasteOrDropInfos() : nAction(0), nStartPara(0xFFFFFFFF), nEndPara(0xFFFFFFFF)  {}
+    PasteOrDropInfos() : nAction(0), nStartPara(EE_PARA_MAX), nEndPara(EE_PARA_MAX)  {}
 };
 
 enum EENotifyType

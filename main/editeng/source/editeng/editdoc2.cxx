@@ -348,7 +348,7 @@ static sal_uInt32 FastGetPos( const VoidPtr *pPtrArray, sal_uInt32 nPtrArrayLen,
   for( sal_uInt32 nIdx = 0; nIdx < nPtrArrayLen; nIdx++ )
 	if (pPtrArray[ nIdx ] == pPtr )
 	  return rLastPos = nIdx;
-  return SAL_MAX_UINT32;
+  return EE_PARA_NOT_FOUND;
 }
 
 // -------------------------------------------------------------------------
@@ -407,7 +407,7 @@ sal_uInt32 ParaPortionList::FindParagraph( long nYOffset )
 		if ( nY > nYOffset )
 			return nPortion;
 	}
-	return SAL_MAX_UINT32;	// solte mal ueber EE_PARA_NOT_FOUND erreicht werden!
+	return EE_PARA_NOT_FOUND;
 }
 
 void ParaPortionList::DbgCheck( EditDoc&

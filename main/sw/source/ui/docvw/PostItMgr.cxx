@@ -1873,7 +1873,7 @@ sal_uInt16 SwPostItMgr::SearchReplace(const SwFmtFld &pFld, const ::com::sun::st
 		if (bSrchForward)
             pWin->GetOutlinerView()->SetSelection(ESelection(0,0,0,0));
 		else
-            pWin->GetOutlinerView()->SetSelection(ESelection(0xFFFF,0xFFFF,0xFFFF,0xFFFF));
+            pWin->GetOutlinerView()->SetSelection(ESelection(EE_PARA_MAX, EE_INDEX_MAX));
 		SvxSearchItem aItem(SID_SEARCH_ITEM );
 		aItem.SetSearchOptions(rSearchOptions);
 		aItem.SetBackward(!bSrchForward);

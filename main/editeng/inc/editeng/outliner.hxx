@@ -770,7 +770,7 @@ public:
 	void            SetText( const String& rText, Paragraph* pParagraph );
 	String          GetText( Paragraph* pPara, sal_uLong nParaCount=1 ) const;
 
-	OutlinerParaObject* CreateParaObject( sal_uInt32 nStartPara = 0, sal_uInt32 nParaCount = 0xFFFFFFFF ) const;
+	OutlinerParaObject* CreateParaObject( sal_uInt32 nStartPara = 0, sal_uInt32 nParaCount = EE_PARA_MAX ) const;
 
 	const SfxItemSet& GetEmptyItemSet() const;
 

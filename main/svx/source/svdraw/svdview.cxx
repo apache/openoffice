@@ -1386,7 +1386,7 @@ SdrViewContext SdrView::GetContext() const
 void SdrView::MarkAll()
 {
 	if (IsTextEdit()) {
-		GetTextEditOutlinerView()->SetSelection(ESelection(0,0,0xFFFF,0xFFFF));
+		GetTextEditOutlinerView()->SetSelection(ESelection(0,0,EE_PARA_MAX,EE_INDEX_MAX));
 #ifdef DBG_UTIL
 		if (pItemBrowser!=NULL) pItemBrowser->SetDirty();
 #endif

@@ -4391,8 +4391,8 @@ const SvxNumberFormat* ImpEditEngine::GetNumberFormat( const ContentNode *pNode 
     {
         // get index of paragraph
         sal_uInt32 nPara = GetEditDoc().GetPos( const_cast< ContentNode * >(pNode) );
-        DBG_ASSERT( nPara < SAL_MAX_UINT32, "node not found in array" );
-        if (nPara < SAL_MAX_UINT32)
+        DBG_ASSERT( nPara < EE_PARA_MAX, "node not found in array" );
+        if (nPara < EE_PARA_MAX)
         {
             // the called function may be overloaded by an OutlinerEditEng object to provide
             // access to the SvxNumberFormat of the Outliner.

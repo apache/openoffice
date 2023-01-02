@@ -671,7 +671,7 @@ void ImpEditView::ShowCursor( sal_Bool bGotoCursor, sal_Bool bForceVisCursor, sa
 
     sal_uInt16 nTextPortionStart = 0;
     sal_uInt32 nPara = pEditEngine->pImpEditEngine->aEditDoc.GetPos( aPaM.GetNode() );
-    if (nPara == SAL_MAX_UINT32) // #i94322
+    if (nPara == EE_PARA_MAX) // #i94322
         return;
     ParaPortion* pParaPortion = pEditEngine->pImpEditEngine->GetParaPortions().GetObject( nPara );
 
@@ -1234,7 +1234,7 @@ const SvxFieldItem* ImpEditView::GetField( const Point& rPos, sal_uInt32* pPara,
 sal_Bool ImpEditView::IsBulletArea( const Point& rPos, sal_uInt32* pPara )
 {
     if ( pPara )
-        *pPara = 0xFFFFFFFF;
+        *pPara = EE_PARA_NOT_FOUND;
 
     if( !GetOutputArea().IsInside( rPos ) )
 		return sal_False;
