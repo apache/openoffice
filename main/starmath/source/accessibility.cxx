@@ -1299,7 +1299,7 @@ sal_uInt16 SmTextForwarder::GetItemState( const ESelection& rSel, sal_uInt16 nWh
 	return nState;
 }
 
-sal_uInt16 SmTextForwarder::GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) const
+sal_uInt16 SmTextForwarder::GetItemState( sal_uInt32 nPara, sal_uInt16 nWhich ) const
 {
 	sal_uInt16 nState = SFX_ITEM_DISABLED;
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
@@ -1311,7 +1311,7 @@ sal_uInt16 SmTextForwarder::GetItemState( sal_uInt16 nPara, sal_uInt16 nWhich ) 
 	return nState;
 }
 
-LanguageType SmTextForwarder::GetLanguage( sal_uInt16 nPara, sal_uInt16 nIndex ) const
+LanguageType SmTextForwarder::GetLanguage( sal_uInt32 nPara, sal_uInt16 nIndex ) const
 {
 	EditEngine *pEditEngine = rEditAcc.GetEditEngine();
 	return pEditEngine ? pEditEngine->GetLanguage(nPara, nIndex) : LANGUAGE_NONE;
