@@ -278,6 +278,7 @@ static HTML_CharEntry __FAR_DATA aHTMLCharNameTab[] = {
 	{{OOO_STRING_SVTOOLS_HTML_C_lt},			 60},
 	{{OOO_STRING_SVTOOLS_HTML_C_gt},			 62},
 	{{OOO_STRING_SVTOOLS_HTML_C_amp},		 38},
+	{{OOO_STRING_SVTOOLS_HTML_C_apos},		 39},
 	{{OOO_STRING_SVTOOLS_HTML_C_quot},		 34},
 
 	{{OOO_STRING_SVTOOLS_HTML_C_Agrave},		192},
