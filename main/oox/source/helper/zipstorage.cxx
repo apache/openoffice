@@ -172,6 +172,23 @@ Reference< XInputStream > ZipStorage::implOpenInputStream( const OUString& rElem
     }
     catch( Exception& )
     {
+        // Bug 126720 - sometimes the relationship says the file is "sharedStrings.xml" but the file is actually "SharedStrings.xml".
+        // Do a case-insensitive search:
+        ::com::sun::star::uno::Sequence< ::rtl::OUString > aNames = mxStorage->getElementNames( );
+        for ( sal_Int32 i = 0; i < aNames.getLength(); i++ )
+        {
+            if ( aNames[i].equalsIgnoreAsciiCase( rElementName ) )
+            {
+                try
+                {
+                    xInStream.set( mxStorage->openStreamElement( aNames[i], ::com::sun::star::embed::ElementModes::READ ), UNO_QUERY );
+                }
+                catch( Exception& )
+                {
+                }
+                break;
+            }
+        }
     }
     return xInStream;
 }
