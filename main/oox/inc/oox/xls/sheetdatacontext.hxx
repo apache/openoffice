@@ -44,6 +44,8 @@ struct SheetDataContextBase
     CellModel           maCellData;         /// Position, contents, formatting of current imported cell.
     CellFormulaModel    maFmlaData;         /// Settings for a cell formula.
     sal_Int16           mnSheet;            /// Index of the current sheet.
+    ::com::sun::star::table::CellAddress
+                        maLastCellAddress;  /// The address of the most recently populated cell.
 
     explicit            SheetDataContextBase( const WorksheetHelper& rHelper );
     virtual             ~SheetDataContextBase();
