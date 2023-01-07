@@ -79,7 +79,7 @@ Reference< XFastContextHandler > RelationsFragment::createFastChildContext(
             Relation aRelation;
             aRelation.maId     = aAttribs.getString( XML_Id, OUString() );
             aRelation.maType   = aAttribs.getString( XML_Type, OUString() );
-            aRelation.maTarget = aAttribs.getString( XML_Target, OUString() );
+            aRelation.maTarget = removeDuplicateSlashes( aAttribs.getString( XML_Target, OUString() ) );
             if( (aRelation.maId.getLength() > 0) && (aRelation.maType.getLength() > 0) && (aRelation.maTarget.getLength() > 0) )
             {
                 sal_Int32 nTargetMode = aAttribs.getToken( XML_TargetMode, XML_Internal );
@@ -98,6 +98,30 @@ Reference< XFastContextHandler > RelationsFragment::createFastChildContext(
         break;
     }
     return xRet;
+}
+
+OUString RelationsFragment::removeDuplicateSlashes( const OUString &path )
+{
+    rtl::OUStringBuffer buffer;
+    bool hadSlash = false;
+    for ( sal_Int32 i = 0; i < path.getLength(); i++ )
+    {
+        sal_Unicode ch = path[i];
+        if ( ch == '/' )
+        {
+            if ( !hadSlash )
+            {
+                hadSlash = true;
+                buffer.append( sal_Unicode( '/' ) );
+            }
+        }
+        else
+        {
+            hadSlash = false;
+            buffer.append( ch );
+        }
+    }
+    return buffer.makeStringAndClear();
 }
 
 // ============================================================================

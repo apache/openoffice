@@ -44,6 +44,10 @@ public:
                             const ::com::sun::star::uno::Reference< ::com::sun::star::xml::sax::XFastAttributeList >& rxAttribs )
                         throw (::com::sun::star::xml::sax::SAXException, ::com::sun::star::uno::RuntimeException);
 
+    static ::rtl::OUString
+                        removeDuplicateSlashes(
+                            const ::rtl::OUString &path );
+
 private:
     RelationsRef        mxRelations;
 };
