@@ -29,6 +29,7 @@
 #include <openssl/evp.h>
 #include <rtl/digest.h>
 #include "oox/core/fastparser.hxx"
+#include "oox/core/relationshandler.hxx"
 #include "oox/helper/attributelist.hxx"
 #include "oox/helper/binaryinputstream.hxx"
 #include "oox/helper/binaryoutputstream.hxx"
@@ -158,7 +159,7 @@ void FilterDetectDocHandler::parseRelationship( const AttributeList& rAttribs )
 {
     OUString aType = rAttribs.getString( XML_Type, OUString() );
     if( aType.equalsAscii( "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" ) )
-        maTargetPath = OUString( sal_Unicode( '/' ) ) + rAttribs.getString( XML_Target, OUString() );
+        maTargetPath = RelationsFragment::removeDuplicateSlashes( OUString( sal_Unicode( '/' ) ) + rAttribs.getString( XML_Target, OUString() ) );
 }
 
 OUString FilterDetectDocHandler::getFilterNameFromContentType( const OUString& rContentType ) const
