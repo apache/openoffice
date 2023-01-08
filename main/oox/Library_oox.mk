@@ -183,6 +183,7 @@ $(eval $(call gb_Library_add_exception_objects,oox,\
 	oox/source/helper/binaryoutputstream \
 	oox/source/helper/binarystreambase \
 	oox/source/helper/containerhelper \
+	oox/source/helper/datetimehelper \
 	oox/source/helper/graphichelper \
 	oox/source/helper/modelobjecthelper \
 	oox/source/helper/progressbar \
