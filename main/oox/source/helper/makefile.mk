@@ -42,6 +42,7 @@ SLOFILES =	\
 		$(SLO)$/binaryoutputstream.obj		\
 		$(SLO)$/binarystreambase.obj		\
 		$(SLO)$/containerhelper.obj			\
+		$(SLO)$/datetimehelper.obj			\
 		$(SLO)$/graphichelper.obj			\
 		$(SLO)$/modelobjecthelper.obj		\
 		$(SLO)$/progressbar.obj				\

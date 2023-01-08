@@ -27,7 +27,9 @@
 #include <com/sun/star/table/XCell.hpp>
 #include <com/sun/star/table/XCellRange.hpp>
 #include <com/sun/star/text/XText.hpp>
+#include <com/sun/star/util/DateTime.hpp>
 #include "oox/helper/attributelist.hxx"
+#include "oox/helper/datetimehelper.hxx"
 #include "oox/helper/propertyset.hxx"
 #include "oox/xls/addressconverter.hxx"
 #include "oox/xls/biffinputstream.hxx"
@@ -44,6 +46,7 @@ using namespace ::com::sun::star::sheet;
 using namespace ::com::sun::star::table;
 using namespace ::com::sun::star::text;
 using namespace ::com::sun::star::uno;
+using namespace ::com::sun::star::util;
 
 using ::oox::core::ContextHandlerRef;
 using ::rtl::OUString;
@@ -211,6 +214,15 @@ void SheetDataContext::onEndElement()
             {
                 case XML_n:
                     mrSheetData.setValueCell( maCellData, maCellValue.toDouble() );
+                break;
+                case XML_d:
+                {
+                    DateTime dateTime;
+                    if ( parseISO8601DateTime( maCellValue, dateTime ) )
+                        mrSheetData.setDateTimeCell( maCellData, dateTime );
+                    else
+                        mrSheetData.setErrorCell( maCellData, maCellValue );
+                }
                 break;
                 case XML_b:
                     mrSheetData.setBooleanCell( maCellData, maCellValue.toDouble() != 0.0 );
