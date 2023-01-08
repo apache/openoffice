@@ -190,7 +190,7 @@ double UnitConverter::calcSerialFromDateTime( const DateTime& rDateTime ) const
     sal_Int32 nDays = lclGetDays( Date( rDateTime.Day, rDateTime.Month, rDateTime.Year ) ) - mnNullDate;
     OSL_ENSURE( nDays >= 0, "UnitConverter::calcDateTimeSerial - invalid date" );
     OSL_ENSURE( (rDateTime.Hours <= 23) && (rDateTime.Minutes <= 59) && (rDateTime.Seconds <= 59), "UnitConverter::calcDateTimeSerial - invalid time" );
-    return nDays + rDateTime.Hours / 24.0 + rDateTime.Minutes / 1440.0 + rDateTime.Seconds / 86400.0;
+    return nDays + rDateTime.Hours / 24.0 + rDateTime.Minutes / 1440.0 + rDateTime.Seconds / 86400.0 + rDateTime.HundredthSeconds / 8640000.0;
 }
 
 DateTime UnitConverter::calcDateTimeFromSerial( double fSerial ) const

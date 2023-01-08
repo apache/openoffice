@@ -22,6 +22,7 @@
 
 
 #include "oox/helper/attributelist.hxx"
+#include "oox/helper/datetimehelper.hxx"
 
 #include <osl/diagnose.h>
 #include <rtl/ustrbuf.hxx>
@@ -233,17 +234,7 @@ OptValue< DateTime > AttributeList::getDateTime( sal_Int32 nAttrToken ) const
 {
     OUString aValue = mxAttribs->getOptionalValue( nAttrToken );
     DateTime aDateTime;
-    bool bValid = (aValue.getLength() == 19) && (aValue[ 4 ] == '-') && (aValue[ 7 ] == '-') &&
-        (aValue[ 10 ] == 'T') && (aValue[ 13 ] == ':') && (aValue[ 16 ] == ':');
-    if( bValid )
-    {
-        aDateTime.Year    = static_cast< sal_uInt16 >( aValue.copy( 0, 4 ).toInt32() );
-        aDateTime.Month   = static_cast< sal_uInt16 >( aValue.copy( 5, 2 ).toInt32() );
-        aDateTime.Day     = static_cast< sal_uInt16 >( aValue.copy( 8, 2 ).toInt32() );
-        aDateTime.Hours   = static_cast< sal_uInt16 >( aValue.copy( 11, 2 ).toInt32() );
-        aDateTime.Minutes = static_cast< sal_uInt16 >( aValue.copy( 14, 2 ).toInt32() );
-        aDateTime.Seconds = static_cast< sal_uInt16 >( aValue.copy( 17, 2 ).toInt32() );
-    }
+    bool bValid = parseISO8601DateTime( aValue, aDateTime );
     return OptValue< DateTime >( bValid, aDateTime );
 }
 
