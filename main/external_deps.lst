@@ -100,11 +100,10 @@ if (SYSTEM_REDLAND != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (GUI!=UNX || SYSTEM_ZLIB!=YES)
-    MD5 = 2ab442d169156f34c379c968f3f482dd
-    name = zlib-1.2.7.tar.bz2
-    URL1 = $(OOO_EXTRAS)$(MD5)-$(name)
-    # Zlib keeps only a copy of the gzipped tar
-    # URL2 = http://zlib.net/fossils/zlib-1.2.7.tar.gz
+    MD5 = 60df6a37c56e7c1366cca812414f7b85
+    name = zlib-1.2.7.tar.gz
+    URL1 = https://www.zlib.net/fossils/$(name)
+    URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (SOLAR_JAVA==TRUE && ENABLE_MEDIAWIKI==YES)
     MD5 = 2c9b0f83ed5890af02c0df1c1776f39b
