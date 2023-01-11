@@ -8215,11 +8215,23 @@
 		<xsl:param name="row-number"/>
 		<xsl:param name="column-pos-style"/>
 		<xsl:param name="row-pos-style"/>
+		<xsl:variable name="zero-based-column-number">
+			<xsl:value-of select="$column-number - 1"/>
+		</xsl:variable>
 		<xsl:variable name="column-number1">
-			<xsl:value-of select="floor( $column-number div 26 )"/>
+			<xsl:value-of select="floor( $zero-based-column-number div 676 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-remainder1">
+			<xsl:value-of select="floor( $zero-based-column-number mod 676 )"/>
 		</xsl:variable>
 		<xsl:variable name="column-number2">
-			<xsl:value-of select="$column-number mod 26"/>
+			<xsl:value-of select="floor( $column-remainder1 div 26 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-remainder2">
+			<xsl:value-of select="floor( $column-remainder1 mod 26 )"/>
+		</xsl:variable>
+		<xsl:variable name="column-number3">
+			<xsl:value-of select="( $column-remainder2 mod 26 ) + 1"/>
 		</xsl:variable>
 		<xsl:variable name="column-character1">
 			<xsl:call-template name="number-to-character">
@@ -8231,13 +8243,18 @@
 				<xsl:with-param name="number" select="$column-number2"/>
 			</xsl:call-template>
 		</xsl:variable>
+		<xsl:variable name="column-character3">
+			<xsl:call-template name="number-to-character">
+				<xsl:with-param name="number" select="$column-number3"/>
+			</xsl:call-template>
+		</xsl:variable>
 		<!-- position styles are 'absolute' or 'relative', -->
 		<xsl:choose>
 			<xsl:when test="$column-pos-style = 'absolute'">
-				<xsl:value-of select="concat( '$', $column-character1, $column-character2)"/>
+				<xsl:value-of select="concat( '$', $column-character1, $column-character2, $column-character3)"/>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="concat( $column-character1, $column-character2)"/>
+				<xsl:value-of select="concat( $column-character1, $column-character2, $column-character3)"/>
 			</xsl:otherwise>
 		</xsl:choose>
 		<xsl:choose>
