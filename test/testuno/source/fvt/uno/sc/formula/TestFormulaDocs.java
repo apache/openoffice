@@ -73,7 +73,8 @@ public class TestFormulaDocs {
 				{"uno/sc/fvt/StarBasicTab.ods", "Basic Tab Function Test"},
 				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas Test"},
 				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
-				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"}
+				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"},
+				{"uno/sc/fvt/Bug81233ColumnZReference.xml", "Bug 81233 column Z reference wrongly converts to column A"}
 		});
 	}
 
