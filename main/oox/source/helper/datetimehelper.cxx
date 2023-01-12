@@ -21,6 +21,8 @@
 
 #include "oox/helper/datetimehelper.hxx"
 
+#include <math.h>
+
 namespace oox {
 
 // ============================================================================
