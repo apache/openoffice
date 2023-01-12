@@ -6652,7 +6652,7 @@
 						</xsl:call-template>
 					</xsl:element>
 					<!-- ss:MergeAcross (column spanned) indicates a covered table-cell in Open Document XML-->
-					<xsl:if test="@ss:MergeAcross">
+					<xsl:if test="@ss:MergeAcross &gt; 0">
 						<xsl:element name="table:covered-table-cell">
 							<xsl:if test="@ss:MergeAcross &gt; 1">
 								<xsl:attribute name="table:number-columns-repeated">
