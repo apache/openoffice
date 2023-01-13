@@ -6866,20 +6866,10 @@
 					</xsl:attribute>
 				</xsl:when>
 				<xsl:when test="ss:Data/@ss:Type = 'DateTime'">
-					<xsl:choose>
-						<xsl:when test="(contains( $data-format, 'Date') or contains($data-format,'y') or contains($data-format,'g') or contains($data-format,'d') or contains($data-format,'e') or starts-with( substring( ss:Data, 11), 'T00:00:00.000' ) ) and (not (contains( $data-format, 'Time') ) )">
-							<xsl:attribute name="office:value-type">date</xsl:attribute>
-							<xsl:attribute name="office:date-value">
-								<xsl:value-of select="substring-before(ss:Data, 'T')"/>
-							</xsl:attribute>
-						</xsl:when>
-						<xsl:otherwise>
-							<xsl:attribute name="office:value-type">time</xsl:attribute>
-							<xsl:attribute name="office:time-value">
-								<xsl:value-of select="concat('P',substring(ss:Data, 11, 3), 'H', substring(ss:Data, 15, 2), 'M', substring(ss:Data, 18,2), 'S')"/>
-							</xsl:attribute>
-						</xsl:otherwise>
-					</xsl:choose>
+					<xsl:attribute name="office:value-type">date</xsl:attribute>
+					<xsl:attribute name="office:date-value">
+						<xsl:value-of select="substring(ss:Data, 1, 19)"/>
+					</xsl:attribute>
 				</xsl:when>
 				<xsl:when test="ss:Data/@ss:Type = 'Boolean'">
 					<xsl:attribute name="office:value-type">boolean</xsl:attribute>
