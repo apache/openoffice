@@ -75,7 +75,8 @@ public class TestFormulaDocs {
 				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
 				{"uno/sc/fvt/comment-in-single-line-if-then-else.ods", "Basic comment after single line if statement Test"},
 				{"uno/sc/fvt/Bug81233ColumnZReference.xml", "Bug 81233 column Z reference wrongly converts to column A"},
-				{"uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml", "Bug 100989 ss:MergeCross=\"0\" adds an extra empty cell to the right"}
+				{"uno/sc/fvt/Bug100989MergeAcross0AddsExtraEmptyCell.xml", "Bug 100989 ss:MergeCross=\"0\" adds an extra empty cell to the right"},
+				{"uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml", "Bug 100989 fractional seconds are silently ignored during import"}
 		});
 	}
 

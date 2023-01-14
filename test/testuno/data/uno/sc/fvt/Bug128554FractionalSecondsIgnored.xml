@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns:c="urn:schemas-microsoft-com:office:component:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x2="http://schemas.microsoft.com/office/excel/2003/xml" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+    <Colors>
+      <Color>
+        <Index>3</Index>
+        <RGB>#000000</RGB>
+      </Color>
+      <Color>
+        <Index>4</Index>
+        <RGB>#c0c0c0</RGB>
+      </Color>
+      <Color>
+        <Index>5</Index>
+        <RGB>#ff0000</RGB>
+      </Color>
+    </Colors>
+  </OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>9000</WindowHeight>
+    <WindowWidth>13860</WindowWidth>
+    <WindowTopX>240</WindowTopX>
+    <WindowTopY>75</WindowTopY>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Default"/>
+    <Style ss:ID="Result" ss:Name="Result">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+    </Style>
+    <Style ss:ID="Result2" ss:Name="Result2">
+      <Font ss:Bold="1" ss:Italic="1" ss:Underline="Single"/>
+      <NumberFormat ss:Format="Currency"/>
+    </Style>
+    <Style ss:ID="Heading" ss:Name="Heading">
+      <Alignment ss:Horizontal="Center"/>
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="Heading1" ss:Name="Heading1">
+      <Alignment ss:Horizontal="Center" ss:Rotate="90"/>
+      <Font ss:Bold="1" ss:Italic="1" ss:Size="16"/>
+    </Style>
+    <Style ss:ID="Normal" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom"/>
+      <Font ss:Color="#000000" ss:FontName="Calibri" ss:Size="11"/>
+    </Style>
+    <Style ss:ID="co1"/>
+    <Style ss:ID="co2"/>
+    <Style ss:ID="co3"/>
+    <Style ss:ID="co4"/>
+    <Style ss:ID="co5"/>
+    <Style ss:ID="co6"/>
+    <Style ss:ID="ta1"/>
+    <Style ss:ID="ce1">
+      <Font ss:Bold="1" ss:Color="#000000" ss:FontName="Calibri" ss:Size="11"/>
+    </Style>
+    <Style ss:ID="ce2">
+      <NumberFormat ss:Format="General Date"/>
+    </Style>
+  </Styles>
+  <ss:Worksheet ss:Name="Sheet1">
+    <Table ss:StyleID="ta1">
+      <Column ss:Width="64.4904"/>
+      <Column ss:Width="134.784"/>
+      <Column ss:Width="115.5096"/>
+      <Column ss:Width="93.204"/>
+      <Column ss:Width="119.5344"/>
+      <Column ss:Width="64.4904"/>
+      <Row ss:AutoFitHeight="0" ss:Height="11.988">
+        <Cell>
+          <Data ss:Type="String">TestID</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Date/Time</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In numeric form</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Should be</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">TestOK</Data>
+        </Cell>
+      </Row>
+      <Row ss:AutoFitHeight="0" ss:Height="11.988">
+        <Cell ss:StyleID="Default">
+          <Data ss:Type="String">Time</Data>
+        </Cell>
+        <Cell ss:StyleID="ce2">
+          <Data ss:Type="DateTime">2023-01-14T04:05:06.78000</Data>
+        </Cell>
+        <Cell ss:StyleID="Default" ss:Formula="=VALUE(RC[-1])">
+          <Data ss:Type="Number">44940.1702173611</Data>
+        </Cell>
+        <Cell ss:StyleID="Default">
+          <Data ss:Type="Number">44940.1702173611</Data>
+        </Cell>
+        <Cell ss:StyleID="Default" ss:Formula="=RC[-2]=RC[-1]">
+          <Data ss:Type="Boolean">1</Data>
+        </Cell>
+      </Row>
+    </Table>
+    <x:WorksheetOptions/>
+  </ss:Worksheet>
+</Workbook>

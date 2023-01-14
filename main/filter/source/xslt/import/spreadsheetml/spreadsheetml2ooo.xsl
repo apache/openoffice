@@ -6868,7 +6868,7 @@
 				<xsl:when test="ss:Data/@ss:Type = 'DateTime'">
 					<xsl:attribute name="office:value-type">date</xsl:attribute>
 					<xsl:attribute name="office:date-value">
-						<xsl:value-of select="substring(ss:Data, 1, 19)"/>
+						<xsl:value-of select="ss:Data"/>
 					</xsl:attribute>
 				</xsl:when>
 				<xsl:when test="ss:Data/@ss:Type = 'Boolean'">
