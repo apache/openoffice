@@ -46,7 +46,7 @@ bool parseISO8601DateTime( OUString &aValue, DateTime &dateTime )
         dateTime.Minutes = static_cast< sal_uInt16 >( aValue.copy( 14, 2 ).toInt32() );
         double seconds = aValue.copy( 17 ).toDouble();
         dateTime.Seconds = static_cast< sal_uInt16 >( floor( seconds ) );
-        dateTime.HundredthSeconds = static_cast< sal_uInt16 >( round ( 100 * ( seconds - floor( seconds ) ) ) );
+        dateTime.HundredthSeconds = static_cast< sal_uInt16 >( ::rtl::math::round ( 100 * ( seconds - floor( seconds ) ) ) );
     }
     return bValid;
 }
