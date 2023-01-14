@@ -68,10 +68,11 @@ public class TestFormulaDocs {
 		return Arrays.asList(new Object[][]{
 				// test documents
 				{"uno/sc/fvt/FormulaTest1.ods", "FormulaTest1.ods"},
-				{"uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods", "StarBasicYearMonthDateHourMinuteSecondTests.ods"},
-				{"uno/sc/fvt/StarBasicCLng.ods", "StarBasicCLng.ods"},
-				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas.ods"},
-				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input.ods"}
+				{"uno/sc/fvt/StarBasicYearMonthDateHourMinuteSecondTests.ods", "Basic Year Month Date Hour Minute Second Test"},
+				{"uno/sc/fvt/StarBasicCLng.ods", "Basic Convert to Long Function Test"},
+				{"uno/sc/fvt/DGET on formulas.ods", "DGET on formulas Test"},
+				{"uno/sc/fvt/Basic Line as variable and Line Input.ods", "Basic Line as variable and Line Input Test"},
+				{"uno/sc/fvt/Bug128554FractionalSecondsIgnored.xml", "Bug 100989 fractional seconds are silently ignored during import"}
 		});
 	}
 
