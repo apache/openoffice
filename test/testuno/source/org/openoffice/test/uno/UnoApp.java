@@ -23,7 +23,6 @@ package org.openoffice.test.uno;
 
 import java.io.File;
 import java.util.Timer;
-import java.util.TimerTask;
 
 import org.openoffice.test.OpenOffice;
 import org.openoffice.test.common.FileUtil;
@@ -119,29 +118,26 @@ public class UnoApp {
 
 	private Timer timer = new Timer(true);
 
-	private TimerTask timerTask = null;
-
 	/**
 	 * Shut down the connection and close OpenOffice
 	 */
 	public void close() {
 		try {
-			timerTask = new TimerTask() {
-				public void run() {
-					if (openOffice != null)
-						openOffice.kill();
-				}
-			};
-			timer.schedule(timerTask, 1000 * 2);
 			desktop.terminate();
+			if (openOffice != null) {
+				// Wait 5 seconds for exit, checking every 500 ms:
+				for (int i = 0; i < 10; i++) {
+					if (!openOffice.isRunning())
+						break;
+					Thread.sleep(500);
+				}
+			}
 		} catch (Exception e) {
 			// e.printStackTrace(); // for debugging
 		} finally {
-			if (openOffice != null)
+			if (openOffice != null && openOffice.isRunning())
 				openOffice.kill();
 
-			timerTask.cancel();
-			timerTask = null;
 			componentContext = null;
 			componentFactory = null;
 			serviceFactory = null;
