@@ -100,8 +100,8 @@ if (SYSTEM_REDLAND != YES)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
 if (GUI!=UNX || SYSTEM_ZLIB!=YES)
-    MD5 = 60df6a37c56e7c1366cca812414f7b85
-    name = zlib-1.2.7.tar.gz
+    MD5 = 9b8aa094c4e5765dabf4da391f00d15c
+    name = zlib-1.2.13.tar.gz
     URL1 = https://www.zlib.net/fossils/$(name)
     URL2 = $(OOO_EXTRAS)$(MD5)-$(name)
 
