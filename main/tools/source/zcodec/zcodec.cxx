@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -30,7 +30,7 @@
 #else
 #include "zlib/zlib.h"
 #endif
-#endif 
+#endif
 #include <tools/zcodec.hxx>
 #include <rtl/crc.h>
 #include <osl/endian.h>
@@ -57,7 +57,7 @@ static int gz_magic[2] = { 0x1f, 0x8b }; /* gzip magic header */
 // ----------
 
 ZCodec::ZCodec( sal_uIntPtr nInBufSize, sal_uIntPtr nOutBufSize, sal_uIntPtr nMemUsage )
-    : mnCRC(0)
+	: mnCRC(0)
 {
 	mnMemUsage = nMemUsage;
 	mnInBufSize = nInBufSize;
@@ -66,7 +66,7 @@ ZCodec::ZCodec( sal_uIntPtr nInBufSize, sal_uIntPtr nOutBufSize, sal_uIntPtr nMe
 }
 
 ZCodec::ZCodec( void )
-    : mnCRC(0)
+	: mnCRC(0)
 {
 	mnMemUsage = MAX_MEM_USAGE;
 	mnInBufSize = DEFAULT_IN_BUFSIZE;
@@ -75,7 +75,7 @@ ZCodec::ZCodec( void )
 }
 
 // ------------------------------------------------------------------------
-														
+
 ZCodec::~ZCodec()
 {
 	delete (z_stream*) mpsC_Stream;
@@ -94,8 +94,8 @@ void ZCodec::BeginCompression( sal_uIntPtr nCompressMethod )
 	PZSTREAM->total_out = PZSTREAM->total_in = 0;
 	mnCompressMethod = nCompressMethod;
 	PZSTREAM->zalloc = ( alloc_func )0;
-    PZSTREAM->zfree = ( free_func )0;
-    PZSTREAM->opaque = ( voidpf )0;
+	PZSTREAM->zfree = ( free_func )0;
+	PZSTREAM->opaque = ( voidpf )0;
 	PZSTREAM->avail_out = PZSTREAM->avail_in = 0;
 }
 
@@ -110,7 +110,7 @@ long ZCodec::EndCompression()
 		if ( mbInit & 2 )	// 1->decompress, 3->compress
 		{
 			do
-			{		
+			{
 				ImplWriteBack();
 			}
 			while ( deflate( PZSTREAM, Z_FINISH ) != Z_STREAM_END );
@@ -120,7 +120,7 @@ long ZCodec::EndCompression()
 			retvalue = PZSTREAM->total_in;
 			deflateEnd( PZSTREAM );
 		}
-		else 
+		else
 		{
 			retvalue = PZSTREAM->total_out;
 			inflateEnd( PZSTREAM );
@@ -135,9 +135,9 @@ long ZCodec::EndCompression()
 // ------------------------------------------------------------------------
 
 long ZCodec::Compress( SvStream& rIStm, SvStream& rOStm )
-{	
+{
 	long nOldTotal_In = PZSTREAM->total_in;
-	
+
 	if ( mbInit == 0 )
 	{
 		mpIStm = &rIStm;
@@ -147,9 +147,9 @@ long ZCodec::Compress( SvStream& rIStm, SvStream& rOStm )
 	}
 	while (( PZSTREAM->avail_in = mpIStm->Read( PZSTREAM->next_in = mpInBuf, mnInBufSize )) != 0 )
 	{
-		if ( PZSTREAM->avail_out == 0 ) 
+		if ( PZSTREAM->avail_out == 0 )
 			ImplWriteBack();
-		if ( deflate( PZSTREAM, Z_NO_FLUSH ) < 0 ) 
+		if ( deflate( PZSTREAM, Z_NO_FLUSH ) < 0 )
 		{
 			mbStatus = sal_False;
 			break;
@@ -166,7 +166,7 @@ long ZCodec::Decompress( SvStream& rIStm, SvStream& rOStm )
 	sal_uIntPtr	nInToRead;
 	long	nOldTotal_Out = PZSTREAM->total_out;
 
-	if ( mbFinish )	
+	if ( mbFinish )
 		return PZSTREAM->total_out - nOldTotal_Out;
 
 	if ( mbInit == 0 )
@@ -180,7 +180,7 @@ long ZCodec::Decompress( SvStream& rIStm, SvStream& rOStm )
 	{
 		if ( PZSTREAM->avail_out == 0 ) ImplWriteBack();
 		if ( PZSTREAM->avail_in == 0 && mnInToRead )
-		{		
+		{
 			nInToRead = ( mnInBufSize > mnInToRead ) ? mnInToRead : mnInBufSize;
 			PZSTREAM->avail_in = mpIStm->Read( PZSTREAM->next_in = mpInBuf, nInToRead );
 			mnInToRead -= nInToRead;
@@ -195,40 +195,40 @@ long ZCodec::Decompress( SvStream& rIStm, SvStream& rOStm )
 			mbStatus = sal_False;
 			break;
 		}
-		
-	}		
-	while ( ( err != Z_STREAM_END)  && ( PZSTREAM->avail_in || mnInToRead ) );
+
+	}
+	while ( ( err != Z_STREAM_END) && ( PZSTREAM->avail_in || mnInToRead ) );
 	ImplWriteBack();
-	
-	if ( err == Z_STREAM_END ) 
-		mbFinish = sal_True;	
+
+	if ( err == Z_STREAM_END )
+		mbFinish = sal_True;
 	return ( mbStatus ) ? (long)(PZSTREAM->total_out - nOldTotal_Out) : -1;
 }
 
 // ------------------------------------------------------------------------
 
 long ZCodec::Write( SvStream& rOStm, const sal_uInt8* pData, sal_uIntPtr nSize )
-{		
+{
 	if ( mbInit == 0 )
 	{
 		mpOStm = &rOStm;
 		ImplInitBuf( sal_False );
 	}
-		
+
 	PZSTREAM->avail_in = nSize;
 	PZSTREAM->next_in = (unsigned char*)pData;
-	
-    while ( PZSTREAM->avail_in || ( PZSTREAM->avail_out == 0 ) )
-    {
-        if ( PZSTREAM->avail_out == 0 )
+
+	while ( PZSTREAM->avail_in || ( PZSTREAM->avail_out == 0 ) )
+	{
+		if ( PZSTREAM->avail_out == 0 )
 			ImplWriteBack();
 
 		if ( deflate( PZSTREAM, Z_NO_FLUSH ) < 0 )
-		{	
+		{
 			mbStatus = sal_False;
 			break;
 		}
-    }
+	}
 	return ( mbStatus ) ? (long)nSize : -1;
 }
 
@@ -239,7 +239,7 @@ long ZCodec::Read( SvStream& rIStm, sal_uInt8* pData, sal_uIntPtr nSize )
 	int err;
 	sal_uIntPtr	nInToRead;
 
-	if ( mbFinish )	
+	if ( mbFinish )
 		return 0;			// PZSTREAM->total_out;
 
 	mpIStm = &rIStm;
@@ -273,7 +273,7 @@ long ZCodec::Read( SvStream& rIStm, sal_uInt8* pData, sal_uIntPtr nSize )
 	while ( (err != Z_STREAM_END) &&
 			(PZSTREAM->avail_out != 0) &&
 			(PZSTREAM->avail_in || mnInToRead) );
-	if ( err == Z_STREAM_END ) 
+	if ( err == Z_STREAM_END )
 		mbFinish = sal_True;
 
 	return (mbStatus ? (long)(nSize - PZSTREAM->avail_out) : -1);
@@ -286,7 +286,7 @@ long ZCodec::ReadAsynchron( SvStream& rIStm, sal_uInt8* pData, sal_uIntPtr nSize
 	int err = 0;
 	sal_uIntPtr	nInToRead;
 
-	if ( mbFinish )	
+	if ( mbFinish )
 		return 0;			// PZSTREAM->total_out;
 
 	if ( mbInit == 0 )
@@ -332,7 +332,7 @@ long ZCodec::ReadAsynchron( SvStream& rIStm, sal_uInt8* pData, sal_uIntPtr nSize
 	while ( (err != Z_STREAM_END) &&
 			(PZSTREAM->avail_out != 0) &&
 			(PZSTREAM->avail_in || mnInToRead) );
-	if ( err == Z_STREAM_END ) 
+	if ( err == Z_STREAM_END )
 		mbFinish = sal_True;
 
 	return (mbStatus ? (long)(nSize - PZSTREAM->avail_out) : -1);
@@ -343,7 +343,7 @@ long ZCodec::ReadAsynchron( SvStream& rIStm, sal_uInt8* pData, sal_uIntPtr nSize
 void ZCodec::ImplWriteBack()
 {
 	sal_uIntPtr nAvail = mnOutBufSize - PZSTREAM->avail_out;
-	
+
 	if ( nAvail )
 	{
 		if ( mbInit & 2 && ( mnCompressMethod & ZCODEC_UPDATE_CRC ) )
@@ -388,7 +388,7 @@ void ZCodec::ImplInitBuf ( sal_Bool nIOFlag )
 	if ( mbInit == 0 )
 	{
 		if ( nIOFlag )
-		{	
+		{
 			mbInit = 1;
 			if ( mbStatus && ( mnCompressMethod & ZCODEC_GZ_LIB ) )
 			{
@@ -407,19 +407,19 @@ void ZCodec::ImplInitBuf ( sal_Bool nIOFlag )
 					mbStatus = sal_False;
 				/* Discard time, xflags and OS code: */
 				mpIStm->SeekRel( 6 );
-			    /* skip the extra field */
+				/* skip the extra field */
 				if ( nFlags & GZ_EXTRA_FIELD )
 				{
 					*mpIStm >> n1 >> n2;
 					mpIStm->SeekRel( n1 + ( n2 << 8 ) );
 				}
 				/* skip the original file name */
-			    if ( nFlags & GZ_ORIG_NAME)
+				if ( nFlags & GZ_ORIG_NAME)
 				{
 					do
 					{
 						*mpIStm >> j;
-					}									
+					}
 					while ( j && !mpIStm->IsEof() );
 				}
 				/* skip the .gz file comment */
@@ -432,10 +432,10 @@ void ZCodec::ImplInitBuf ( sal_Bool nIOFlag )
 					while ( j && !mpIStm->IsEof() );
 				}
 				/* skip the header crc */
-				if ( nFlags & GZ_HEAD_CRC ) 
+				if ( nFlags & GZ_HEAD_CRC )
 					mpIStm->SeekRel( 2 );
 				if ( mbStatus )
-				    mbStatus = ( inflateInit2( PZSTREAM, -MAX_WBITS) != Z_OK ) ? sal_False : sal_True;
+					mbStatus = ( inflateInit2( PZSTREAM, -MAX_WBITS) != Z_OK ) ? sal_False : sal_True;
 			}
 			else
 			{
@@ -444,11 +444,11 @@ void ZCodec::ImplInitBuf ( sal_Bool nIOFlag )
 			mpInBuf = new sal_uInt8[ mnInBufSize ];
 		}
 		else
-		{	
+		{
 			mbInit = 3;
 
-			mbStatus = ( deflateInit2_( PZSTREAM, mnCompressMethod & 0xff, Z_DEFLATED, 
-				MAX_WBITS, mnMemUsage, ( mnCompressMethod >> 8 ) & 0xff, 
+			mbStatus = ( deflateInit2_( PZSTREAM, mnCompressMethod & 0xff, Z_DEFLATED,
+				MAX_WBITS, mnMemUsage, ( mnCompressMethod >> 8 ) & 0xff,
 					ZLIB_VERSION, sizeof( z_stream ) ) >= 0 );
 
 			PZSTREAM->next_out = mpOutBuf = new sal_uInt8[ PZSTREAM->avail_out = mnOutBufSize ];
@@ -480,5 +480,3 @@ void GZCodec::BeginCompression( sal_uIntPtr nCompressMethod )
 {
 	ZCodec::BeginCompression( nCompressMethod | ZCODEC_GZ_LIB );
 };
-
-
