@@ -84,3 +84,14 @@ main/winaccessibility/source/UAccCOMIDL/dlldata.c
 
 # RepoRevision hash file
 /main/solenv/inc/reporevision.lst
+
+# added by peter
+.vscode/settings.json
+ext_libraries/*
+external/*
+main/.sconsign.dblite
+main/log_*.txt
+*.kdev4
+main/.idea/*
+*.ext
+*.err
