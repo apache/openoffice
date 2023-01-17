@@ -52,13 +52,16 @@
 			</fileset>
 			<globmapper from="*" to="junit.jar" />
         </copy>
+		<available file="lib/junit.jar" property="junit.jar.exists"/>
+	</target>
+
+	<target name="check.hamcrest">
 		<copy todir="lib" >
 			<fileset dir="${junit.home}" erroronmissingdir="false">
 				<include name="hamcrest*.jar" />
 			</fileset>
 			<globmapper from="*" to="hamcrest.jar" />
 		</copy>
-		<available file="lib/junit.jar" property="junit.jar.exists"/>
 		<available file="lib/hamcrest.jar" property="hamcrest.jar.exists"/>
 	</target>
 
