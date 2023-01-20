@@ -187,7 +187,7 @@ ScHFEditPage::ScHFEditPage( Window* 			pParent,
 	{
 		(void)pEdit;
 	    aBtnText.GrabFocus();
-	    return NULL;	
+	    return 0;
 	}
 
 // -----------------------------------------------------------------------

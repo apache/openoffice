@@ -408,9 +408,10 @@ void RehearseTimingsActivity::viewsChanged()
         maSpriteRectangle = calcSpriteRectangle( maViews.front().first );
     
         // reposition sprites
+        ::basegfx::B2DPoint aSpriteRectangleMinimum = maSpriteRectangle.getMinimum();
         for_each_sprite( boost::bind( &cppcanvas::Sprite::move,
                                       _1,
-                                      boost::cref(maSpriteRectangle.getMinimum())) );
+                                      boost::cref( aSpriteRectangleMinimum ) ) );
 
         // sprites changed, need screen update  
         mrScreenUpdater.notifyUpdate();

@@ -463,10 +463,11 @@ namespace vclcanvas
             // clip here, since we're only repainting _parts_ of the
             // sprite
             rOutDev.Push( PUSH_CLIPREGION );
+            const Sprite::Reference& rSprite = aFirst->second.getSprite();
             ::std::for_each( aUnscrollableAreas.begin(),
                              aUnscrollableAreas.end(),
                              ::boost::bind( &opaqueUpdateSpriteArea,
-                                            ::boost::cref(aFirst->second.getSprite()),
+                                            ::boost::cref(rSprite),
                                             ::boost::ref(rOutDev),
                                             _1 ) );
             rOutDev.Pop();
@@ -584,12 +585,12 @@ namespace vclcanvas
         
         // repaint all affected sprites on top of background into
         // VDev.
+        ::basegfx::B2DPoint aPoint = ::vcl::unotools::b2DPointFromPoint(aOutputPosition);
         ::std::for_each( rSortedUpdateSprites.begin(),
                          rSortedUpdateSprites.end(),
                          ::boost::bind( &spriteRedrawStub2,
                                         ::boost::ref( maVDev.get() ),
-                                        ::boost::cref(
-                                            ::vcl::unotools::b2DPointFromPoint(aOutputPosition)),
+                                        ::boost::cref( aPoint ),
                                         _1 ) );
 
         // flush to screen

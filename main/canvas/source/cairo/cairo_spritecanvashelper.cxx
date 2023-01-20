@@ -390,11 +390,12 @@ namespace cairocanvas
         ::basegfx::computeSetDifference( aUncoveredAreas,
                                          rUpdateArea.maTotalBounds,
                                          ::basegfx::B2DRange( rDestRect ) );
+        SurfaceSharedPtr pBufferSurface = mpOwningSpriteCanvas->getBufferSurface();
         ::std::for_each( aUncoveredAreas.begin(),
                          aUncoveredAreas.end(),
                          ::boost::bind( &repaintBackground,
                                         boost::cref(pCompositingCairo),
-                                        boost::cref(mpOwningSpriteCanvas->getBufferSurface()),
+                                        boost::cref(pBufferSurface),
                                         _1 ) );
 
         cairo_rectangle( pWindowCairo.get(), 0, 0, rSize.getX(), rSize.getY() );
