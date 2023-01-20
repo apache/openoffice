@@ -1644,8 +1644,18 @@ if test $_os = "WINNT"; then
    dnl ===================================================================
    dnl As long as awk instead of $AWK is used somewhere in the sources,
    dnl check for $AWK and awk. $AWK is pointing to gawk in cygwin.
-      if test -L $AWK -o -L `which awk` -o -L `which tar` -o -L `which gunzip` ; then
-         AC_MSG_ERROR([$AWK, awk, tar or gunzip is a cygwin symlink!
+      if test -L $AWK -o -L `which awk` ; then
+         AC_MSG_ERROR([$AWK / awk is a cygwin symlink!
+Native Windows programs cannot use cygwin symlinks. Remove the symbolic
+link, and copy the program to the name of the link.])
+      fi
+      if test -L `which tar` ; then
+         AC_MSG_ERROR([tar is a cygwin symlink!
+Native Windows programs cannot use cygwin symlinks. Remove the symbolic
+link, and copy the program to the name of the link.])
+      fi
+      if test -L `which gunzip` ; then
+         AC_MSG_ERROR([gunzip is a cygwin symlink!
 Native Windows programs cannot use cygwin symlinks. Remove the symbolic
 link, and copy the program to the name of the link.])
       fi
