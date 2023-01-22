@@ -1875,6 +1875,9 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
                     // check forbids execution
                     return ERRCODE_IO_ACCESSDENIED;
             }
+            /* XXX in the original sources this branch was present but its
+               condition does not make sense.
+               Let's keep it in case it may be useful for more in-depth checks.
             else if ( pDoc && pDoc->GetMedium() )
             {
                 pDoc->AdjustMacroMode( String() );
@@ -1883,6 +1886,10 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
                 if ( pUpdateDocItem && pMacroExecModeItem
                   && pUpdateDocItem->GetValue() == document::UpdateDocMode::NO_UPDATE
                   && pMacroExecModeItem->GetValue() == document::MacroExecMode::NEVER_EXECUTE )
+                    return ERRCODE_IO_ACCESSDENIED;
+            }*/
+            else if ( pCurrent ) {
+                if ( !pCurrent->AdjustMacroMode( String() ) )
                     return ERRCODE_IO_ACCESSDENIED;
             }
 
