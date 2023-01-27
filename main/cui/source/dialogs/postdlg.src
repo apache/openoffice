@@ -33,20 +33,20 @@ ModalDialog RID_SVXDLG_POSTIT
 	HelpId = HID_POSTIT_DIALOG ;
 	OutputSize = TRUE ;
 	SvLook = TRUE ;
-	Size = MAP_APPFONT ( 198, 134 ) ;
-	Text [ en-US ] = "Note" ;
+	Size = MAP_APPFONT ( 228, 120 ) ;
+	Text [ en-US ] = "Comment" ;
 	Moveable = TRUE ;
 	FixedText FT_LASTEDITLABEL
 	{
 		Pos = MAP_APPFONT ( 12, 14 ) ;
 		Size = MAP_APPFONT ( 34, 8 ) ;
-		Text [ en-US ] = "Author" ;
+		Text [ en-US ] = "Author:" ;
 		Left = TRUE ;
 	};
 	FixedText FT_LASTEDIT
 	{
-		Pos = MAP_APPFONT ( 48, 14 ) ;
-		Size = MAP_APPFONT ( 83, 8 ) ;
+		Pos = MAP_APPFONT ( 45, 14 ) ;
+		Size = MAP_APPFONT ( 120, 8 ) ;
 		Left = TRUE ;
 	};
 	FixedText FT_EDIT
@@ -61,7 +61,7 @@ ModalDialog RID_SVXDLG_POSTIT
 		HelpID = "cui:MultiLineEdit:RID_SVXDLG_POSTIT:ED_EDIT" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( 12, 38 ) ;
-		Size = MAP_APPFONT ( 123, 72 ) ;
+		Size = MAP_APPFONT ( 153, 75 ) ;
 		Left = TRUE ;
 		VScroll = TRUE ;
 		HScroll = TRUE ;
@@ -70,61 +70,61 @@ ModalDialog RID_SVXDLG_POSTIT
 	FixedLine FL_POSTIT
 	{
 		Pos = MAP_APPFONT ( 6, 3 ) ;
-		Size = MAP_APPFONT ( 129, 8 ) ;
+		Size = MAP_APPFONT ( 159, 8 ) ;
 		Text [ en-US ] = "Contents" ;
 	};
 	OKButton BTN_POST_OK
 	{
-		Pos = MAP_APPFONT ( 141, 6 ) ;
+		Pos = MAP_APPFONT ( 171, 6 ) ;
 		Size = MAP_APPFONT ( 50, 15 ) ;
 		DefButton = TRUE ;
 	};
 	CancelButton BTN_POST_CANCEL
 	{
-		Pos = MAP_APPFONT ( 141, 23 ) ;
+		Pos = MAP_APPFONT ( 171, 23 ) ;
 		Size = MAP_APPFONT ( 50, 15 ) ;
 	};
 	HelpButton BTN_POST_HELP
 	{
-		Pos = MAP_APPFONT ( 141, 40 ) ;
+		Pos = MAP_APPFONT ( 171, 40 ) ;
 		Size = MAP_APPFONT ( 50, 15 ) ;
 	};
 	ImageButton BTN_PREV
 	{
 		HelpID = "cui:ImageButton:RID_SVXDLG_POSTIT:BTN_PREV" ;
-		Pos = MAP_APPFONT ( 141, 60 ) ;
+		Pos = MAP_APPFONT ( 171, 60 ) ;
 		Size = MAP_APPFONT ( 24, 14 ) ;
 		Symbol = IMAGEBUTTON_ARROW_LEFT ;
 	};
 	ImageButton BTN_NEXT
 	{
 		HelpID = "cui:ImageButton:RID_SVXDLG_POSTIT:BTN_NEXT" ;
-		Pos = MAP_APPFONT ( 167, 60 ) ;
+		Pos = MAP_APPFONT ( 197, 60 ) ;
 		Size = MAP_APPFONT ( 24, 14 ) ;
 		Symbol = IMAGEBUTTON_ARROW_RIGHT ;
 	};
-	FixedText FT_AUTHOR
-	{
-		Pos = MAP_APPFONT ( 12, 116 ) ;
-		Size = MAP_APPFONT ( 60, 8 ) ;
-		Text [ en-US ] = "~Insert" ;
-	};
-	PushButton BTN_AUTHOR
-	{
-		HelpID = "cui:PushButton:RID_SVXDLG_POSTIT:BTN_AUTHOR" ;
-		Pos = MAP_APPFONT ( 75, 114 ) ;
-		Size = MAP_APPFONT ( 60, 14 ) ;
-		Text [ en-US ] = "Author" ;
-	};
-	// local strings
-	String STR_NOTIZ_EDIT
-	{
-		Text [ en-US ] = "Edit Note" ;
-	};
-	String STR_NOTIZ_INSERT
-	{
-		Text [ en-US ] = "Insert note" ;
-	};
+//	FixedText FT_AUTHOR
+//	{
+//		Pos = MAP_APPFONT ( 12, 116 ) ;
+//		Size = MAP_APPFONT ( 60, 8 ) ;
+//		Text [ en-US ] = "~Insert" ;
+//	};
+//	PushButton BTN_AUTHOR
+//	{
+//		HelpID = "cui:PushButton:RID_SVXDLG_POSTIT:BTN_AUTHOR" ;
+//		Pos = MAP_APPFONT ( 75, 114 ) ;
+//		Size = MAP_APPFONT ( 60, 14 ) ;
+//		Text [ en-US ] = "Author" ;
+//	};
+//	// local strings
+//	String STR_NOTIZ_EDIT
+//	{
+//		Text [ en-US ] = "Edit Note" ;
+//	};
+//	String STR_NOTIZ_INSERT
+//	{
+//		Text [ en-US ] = "Insert note" ;
+//	};
 };
 
 // ********************************************************************** EOF
