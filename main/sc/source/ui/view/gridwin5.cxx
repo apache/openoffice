@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -80,7 +80,7 @@ ScHideTextCursor::~ScHideTextCursor()
 	Window* pWin = pViewData->GetView()->GetWindowByPos( eWhich );
 	if (pWin)
 	{
-		//	restore text cursor
+		// restore text cursor
 		if ( pViewData->HasEditView(eWhich) && pWin->HasFocus() )
 			pViewData->GetEditView(eWhich)->ShowCursor( sal_False, sal_True );
 	}
@@ -99,7 +99,7 @@ sal_Bool ScGridWindow::ShowNoteMarker( SCsCOL nPosX, SCsROW nPosY, sal_Bool bKey
 	String aTrackText;
 	sal_Bool bLeftEdge = sal_False;
 
-	//	Change-Tracking
+	// Change-Tracking
 
 	ScChangeTrack* pTrack = pDoc->GetChangeTrack();
 	ScChangeViewSettings* pSettings = pDoc->GetChangeViewSettings();
@@ -128,7 +128,7 @@ sal_Bool ScGridWindow::ShowNoteMarker( SCsCOL nPosX, SCsROW nPosY, sal_Bool bKey
 
 					if ( aRange.In( aCellPos ) )
 					{
-						pFound = pAction;		// der letzte gewinnt
+						pFound = pAction; // der letzte gewinnt
 						switch ( eType )
 						{
 							case SC_CAT_CONTENT :
@@ -137,10 +137,10 @@ sal_Bool ScGridWindow::ShowNoteMarker( SCsCOL nPosX, SCsROW nPosY, sal_Bool bKey
 							case SC_CAT_MOVE :
 								pFoundMove = pAction;
 							break;
-                            default:
-                            {
-                                // added to avoid warnings
-                            }
+							default:
+							{
+								// added to avoid warnings
+							}
 						}
 						++nModified;
 					}
@@ -163,28 +163,28 @@ sal_Bool ScGridWindow::ShowNoteMarker( SCsCOL nPosX, SCsROW nPosY, sal_Bool bKey
 		if ( pFound )
 		{
 			if ( pFoundContent && pFound->GetType() != SC_CAT_CONTENT )
-				pFound = pFoundContent;		// Content gewinnt
+				pFound = pFoundContent; // Content gewinnt
 			if ( pFoundMove && pFound->GetType() != SC_CAT_MOVE &&
 					pFoundMove->GetActionNumber() >
 					pFound->GetActionNumber() )
-				pFound = pFoundMove;		// Move gewinnt
+				pFound = pFoundMove; // Move gewinnt
 
-			//	bei geloeschten Spalten: Pfeil auf die linke Seite der Zelle
+			// bei geloeschten Spalten: Pfeil auf die linke Seite der Zelle
 			if ( pFound->GetType() == SC_CAT_DELETE_COLS )
 				bLeftEdge = sal_True;
 
 			DateTime aDT = pFound->GetDateTime();
-			aTrackText  = pFound->GetUser();
-			aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( ", " ));
-            aTrackText += ScGlobal::pLocaleData->getDate(aDT);
+			aTrackText = pFound->GetUser();
+			aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( " - " ));
+			aTrackText += ScGlobal::pLocaleData->getDate(aDT);
 			aTrackText += ' ';
-            aTrackText += ScGlobal::pLocaleData->getTime(aDT);
-			aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( ":\n" ));
+			aTrackText += ScGlobal::pLocaleData->getTime(aDT);
+			aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( "\n" ));
 			String aComStr=pFound->GetComment();
 			if(aComStr.Len()>0)
 			{
 				aTrackText += aComStr;
-				aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( "\n( " ));
+				aTrackText.AppendAscii(RTL_CONSTASCII_STRINGPARAM( "\n(" ));
 			}
 			pFound->GetDescription( aTrackText, pDoc );
 			if(aComStr.Len()>0)
@@ -194,56 +194,55 @@ sal_Bool ScGridWindow::ShowNoteMarker( SCsCOL nPosX, SCsROW nPosY, sal_Bool bKey
 		}
 	}
 
-	//	Notiz nur, wenn sie nicht schon auf dem Drawing-Layer angezeigt wird:
+	// Notiz nur, wenn sie nicht schon auf dem Drawing-Layer angezeigt wird:
 	const ScPostIt* pNote = pDoc->GetNote( aCellPos );
 	if ( (aTrackText.Len() > 0) || (pNote && !pNote->IsCaptionShown()) )
 	{
 		sal_Bool bNew = sal_True;
 		sal_Bool bFast = sal_False;
-		if ( pNoteMarker )			// schon eine Notiz angezeigt
+		if ( pNoteMarker ) // schon eine Notiz angezeigt
 		{
 			if ( pNoteMarker->GetDocPos() == aCellPos )	// dieselbe
 				bNew = sal_False;							// dann stehenlassen
 			else
 				bFast = sal_True;							// sonst sofort
 
-			//	marker which was shown for ctrl-F1 isn't removed by mouse events
+			// marker which was shown for ctrl-F1 isn't removed by mouse events
 			if ( pNoteMarker->IsByKeyboard() && !bKeyboard )
 				bNew = sal_False;
 		}
 		if ( bNew )
 		{
 			if ( bKeyboard )
-				bFast = sal_True;			// keyboard also shows the marker immediately
+				bFast = sal_True; // keyboard also shows the marker immediately
 
 			delete pNoteMarker;
 
-            bool bHSplit = pViewData->GetHSplitMode() != SC_SPLIT_NONE;
-            bool bVSplit = pViewData->GetVSplitMode() != SC_SPLIT_NONE;
+			bool bHSplit = pViewData->GetHSplitMode() != SC_SPLIT_NONE;
+			bool bVSplit = pViewData->GetVSplitMode() != SC_SPLIT_NONE;
 
 			Window* pLeft = pViewData->GetView()->GetWindowByPos( bVSplit ? SC_SPLIT_TOPLEFT : SC_SPLIT_BOTTOMLEFT );
 			Window* pRight = bHSplit ? pViewData->GetView()->GetWindowByPos( bVSplit ? SC_SPLIT_TOPRIGHT : SC_SPLIT_BOTTOMRIGHT ) : 0;
 			Window* pBottom = bVSplit ? pViewData->GetView()->GetWindowByPos( SC_SPLIT_BOTTOMLEFT ) : 0;
 			Window* pDiagonal = (bHSplit && bVSplit) ? pViewData->GetView()->GetWindowByPos( SC_SPLIT_BOTTOMRIGHT ) : 0;
-            DBG_ASSERT( pLeft, "ScGridWindow::ShowNoteMarker - missing top-left grid window" );
+			DBG_ASSERT( pLeft, "ScGridWindow::ShowNoteMarker - missing top-left grid window" );
 
-            /*  If caption is shown from right or bottom windows, adjust
-                mapmode to include size of top-left window. */
-            MapMode aMapMode = GetDrawMapMode( sal_True );
-            Size aLeftSize = pLeft->PixelToLogic( pLeft->GetOutputSizePixel(), aMapMode );
-            Point aOrigin = aMapMode.GetOrigin();
-            if( (this == pRight) || (this == pDiagonal) )
-                aOrigin.X() += aLeftSize.Width();
-            if( (this == pBottom) || (this == pDiagonal) )
-                aOrigin.Y() += aLeftSize.Height();
-            aMapMode.SetOrigin( aOrigin );
+			/* If caption is shown from right or bottom windows, adjust mapmode to include size of top-left window. */
+			MapMode aMapMode = GetDrawMapMode( sal_True );
+			Size aLeftSize = pLeft->PixelToLogic( pLeft->GetOutputSizePixel(), aMapMode );
+			Point aOrigin = aMapMode.GetOrigin();
+			if( (this == pRight) || (this == pDiagonal) )
+				aOrigin.X() += aLeftSize.Width();
+			if( (this == pBottom) || (this == pDiagonal) )
+				aOrigin.Y() += aLeftSize.Height();
+			aMapMode.SetOrigin( aOrigin );
 
 			pNoteMarker = new ScNoteMarker( pLeft, pRight, pBottom, pDiagonal,
 											pDoc, aCellPos, aTrackText,
 											aMapMode, bLeftEdge, bFast, bKeyboard );
 		}
 
-		bDone = sal_True;		// something is shown (old or new)
+		bDone = sal_True; // something is shown (old or new)
 	}
 
 	return bDone;
@@ -261,18 +260,18 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 	if (pDrView)
 		bDrawTextEdit = pDrView->IsTextEdit();
 
-	//	notes or change tracking
+	// notes or change tracking
 
 	if ( bHelpEnabled && !bDrawTextEdit )
 	{
 		Point		aPosPixel = ScreenToOutputPixel( rHEvt.GetMousePosPixel() );
-        SCsCOL nPosX;
-        SCsROW nPosY;
-        pViewData->GetPosFromPixel( aPosPixel.X(), aPosPixel.Y(), eWhich, nPosX, nPosY );
+		SCsCOL nPosX;
+		SCsROW nPosY;
+		pViewData->GetPosFromPixel( aPosPixel.X(), aPosPixel.Y(), eWhich, nPosX, nPosY );
 
 		if ( ShowNoteMarker( nPosX, nPosY, sal_False ) )
 		{
-			Window::RequestHelp( rHEvt );	// alte Tip/Balloon ausschalten
+			Window::RequestHelp( rHEvt ); // alte Tip/Balloon ausschalten
 			bDone = sal_True;
 		}
 	}
@@ -281,21 +280,21 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 	{
 		if ( pNoteMarker->IsByKeyboard() )
 		{
-			//	marker which was shown for ctrl-F1 isn't removed by mouse events
+			// marker which was shown for ctrl-F1 isn't removed by mouse events
 		}
 		else
 			DELETEZ(pNoteMarker);
 	}
 
-	//	Image-Map / Text-URL
+	// Image-Map / Text-URL
 
-	if ( bHelpEnabled && !bDone && !nButtonDown )		// nur ohne gedrueckten Button
+	if ( bHelpEnabled && !bDone && !nButtonDown ) // nur ohne gedrueckten Button
 	{
 		String aHelpText;
 		Rectangle aPixRect;
 		Point aPosPixel = ScreenToOutputPixel( rHEvt.GetMousePosPixel() );
 
-		if ( pDrView )										// URL / Image-Map
+		if ( pDrView ) // URL / Image-Map
 		{
 			SdrViewEvent aVEvt;
 			MouseEvent aMEvt( aPosPixel, 1, 0, MOUSE_LEFT );
@@ -312,49 +311,49 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 
 					if ( pIMapObj )
 					{
-						//	#44990# Bei ImageMaps die Description anzeigen, wenn vorhanden
+						// #44990# Bei ImageMaps die Description anzeigen, wenn vorhanden
 						aHelpText = pIMapObj->GetAltText();
 						if (!aHelpText.Len())
 							aHelpText = pIMapObj->GetURL();
 						aPixRect = LogicToPixel(aVEvt.pObj->GetLogicRect());
 					}
 				}
-                // URL in shape text or at shape itself (URL in text overrides object URL)
-                if ( aHelpText.Len() == 0 )
-                {
-                    if( aVEvt.eEvent == SDREVENT_EXECUTEURL )
-                    {
-                        aHelpText = aVEvt.pURLField->GetURL();
-                        aPixRect = LogicToPixel(aVEvt.pObj->GetLogicRect());
-                    }
-                    else
-                    {
-                        SdrObject* pObj = 0;
-                        SdrPageView* pPV = 0;
-                        Point aMDPos = PixelToLogic( aPosPixel );
-                        if ( pDrView->PickObj(aMDPos, pDrView->getHitTolLog(), pObj, pPV, SDRSEARCH_ALSOONMASTER) )
-                        {
-                            if ( pObj->IsGroupObject() )
-                            {
-                                    SdrObject* pHit = 0;
-                                    if ( pDrView->PickObj(aMDPos, pDrView->getHitTolLog(), pHit, pPV, SDRSEARCH_DEEP ) )
-                                        pObj = pHit;
-                            }
+				// URL in shape text or at shape itself (URL in text overrides object URL)
+				if ( aHelpText.Len() == 0 )
+				{
+					if( aVEvt.eEvent == SDREVENT_EXECUTEURL )
+					{
+						aHelpText = aVEvt.pURLField->GetURL();
+						aPixRect = LogicToPixel(aVEvt.pObj->GetLogicRect());
+					}
+					else
+					{
+						SdrObject* pObj = 0;
+						SdrPageView* pPV = 0;
+						Point aMDPos = PixelToLogic( aPosPixel );
+						if ( pDrView->PickObj(aMDPos, pDrView->getHitTolLog(), pObj, pPV, SDRSEARCH_ALSOONMASTER) )
+						{
+							if ( pObj->IsGroupObject() )
+							{
+								SdrObject* pHit = 0;
+								if ( pDrView->PickObj(aMDPos, pDrView->getHitTolLog(), pHit, pPV, SDRSEARCH_DEEP ) )
+									pObj = pHit;
+							}
 #ifdef ISSUE66550_HLINK_FOR_SHAPES
-                            ScMacroInfo* pInfo = ScDrawLayer::GetMacroInfo( pObj );
-                            if ( pInfo && (pInfo->GetHlink().getLength() > 0) )
-                            {
-                                aPixRect = LogicToPixel(aVEvt.pObj->GetLogicRect());
-                                aHelpText = pInfo->GetHlink();
-                            }
+							ScMacroInfo* pInfo = ScDrawLayer::GetMacroInfo( pObj );
+							if ( pInfo && (pInfo->GetHlink().getLength() > 0) )
+							{
+								aPixRect = LogicToPixel(aVEvt.pObj->GetLogicRect());
+								aHelpText = pInfo->GetHlink();
+							}
 #endif
-                        }
-                    }
-                }
+					}
+					}
+				}
 			}
 		}
 
-		if ( !aHelpText.Len() )									// Text-URL
+		if ( !aHelpText.Len() ) // Text-URL
 		{
 			String aUrl;
 			if ( GetEditUrl( aPosPixel, NULL, &aUrl, NULL ) )
@@ -363,13 +362,13 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 					INetURLObject::DECODE_UNAMBIGUOUS );
 
 				ScDocument* pDoc = pViewData->GetDocument();
-                SCsCOL nPosX;
-                SCsROW nPosY;
-                SCTAB		nTab = pViewData->GetTabNo();
+				SCsCOL nPosX;
+				SCsROW nPosY;
+				SCTAB  nTab = pViewData->GetTabNo();
 				pViewData->GetPosFromPixel( aPosPixel.X(), aPosPixel.Y(), eWhich, nPosX, nPosY );
 				const ScPatternAttr* pPattern = pDoc->GetPattern( nPosX, nPosY, nTab );
 
-				ScHideTextCursor aHideCursor( pViewData, eWhich );		// MapMode is changed in GetEditArea
+				ScHideTextCursor aHideCursor( pViewData, eWhich ); // MapMode is changed in GetEditArea
 
 				// bForceToTop = sal_False, use the cell's real position
 				aPixRect = pViewData->GetEditArea( eWhich, nPosX, nPosY, this, pPattern, sal_False );
@@ -390,7 +389,7 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 		}
 	}
 
-	//	Basic-Controls
+	// Basic-Controls
 
 	if ( pDrView && bHelpEnabled && !bDone )
 	{
@@ -400,7 +399,7 @@ void ScGridWindow::RequestHelp(const HelpEvent& rHEvt)
 			bDone = ((ScDrawPage*)pPV->GetPage())->RequestHelp( this, pDrView, rHEvt );
 	}
 
-	//	Wenn QuickHelp fuer AutoFill angezeigt wird, nicht wieder wegnehmen lassen
+	// Wenn QuickHelp fuer AutoFill angezeigt wird, nicht wieder wegnehmen lassen
 
 	if ( nMouseStatus == SC_GM_TABDOWN && pViewData->GetRefType() == SC_REFTYPE_FILL &&
 			Help::IsQuickHelpEnabled() )
@@ -439,7 +438,7 @@ com::sun::star::uno::Reference< ::com::sun::star::accessibility::XAccessible >
 	return xAcc;
 }
 // MT: Removed Windows::SwitchView() introduced with IA2 CWS.
-// There are other notifications for this when the active view has chnaged, so please update the code to use that event mechanism
+// There are other notifications for this when the active view has changed, so please update the code to use that event mechanism
 void ScGridWindow::SwitchView()
 {
 	if (!Application::IsAccessibilityEnabled())
@@ -450,6 +449,5 @@ void ScGridWindow::SwitchView()
 	if (pAccDoc)
 	{
 		pAccDoc->SwitchViewFireFocus();
-	}		
+	}
 }
-
