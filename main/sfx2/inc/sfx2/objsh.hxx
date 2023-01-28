@@ -369,15 +369,37 @@ public:
     ErrCode                     CallBasic( const String& rMacro, const String& rBasicName,
                                     SbxArray* pArgs = 0, SbxValue* pRet = 0 );
 
+    /** Execute a script URL.
+     *
+     * @param rScriptURL URL of the script.
+     * @param aParams parameters for the macro.
+     * @param aRet variable that will hold the return value.
+     * @param aOutParamIndex index of output parameters.
+     * @param aOutParam output parameters.
+     * @param aReferer "Referer" calling the script.
+     * @param bRaiseError true to show a dialog in case of error.
+     */
     ErrCode     CallXScript(
         const String& rScriptURL,
         const ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aParams,
         ::com::sun::star::uno::Any& aRet,
         ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam,
+        const ::rtl::OUString& aReferer = ::rtl::OUString(),
         bool bRaiseError = true 
     );
 
+    /** Execute a script URL.
+     *
+     * @param _rxScriptContext script context.
+     * @param rScriptURL URL of the script.
+     * @param aParams parameters for the macro.
+     * @param aRet variable that will hold the return value.
+     * @param aOutParamIndex index of output parameters.
+     * @param aOutParam output parameters.
+     * @param aReferer "Referer" calling the script.
+     * @param bRaiseError true to show a dialog in case of error.
+     */
     static ErrCode  CallXScript(
         const ::com::sun::star::uno::Reference< ::com::sun::star::uno::XInterface >& _rxScriptContext,
         const ::rtl::OUString& rScriptURL,
@@ -385,6 +407,7 @@ public:
         ::com::sun::star::uno::Any& aRet,
         ::com::sun::star::uno::Sequence< sal_Int16 >& aOutParamIndex,
         ::com::sun::star::uno::Sequence< ::com::sun::star::uno::Any >& aOutParam,
+        const ::rtl::OUString& aReferer = ::rtl::OUString(),
         bool bRaiseError = true 
     );
 

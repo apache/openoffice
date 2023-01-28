@@ -975,7 +975,7 @@ EventListener::firing_Impl(const ScriptEvent& evt, Any* /*pRet*/ ) throw(Runtime
                         {
                             uno::Any aRet;
                             mpShell->CallXScript( url,
-                                aArguments, aRet, aOutArgsIndex, aOutArgs, false );
+                                aArguments, aRet, aOutArgsIndex, aOutArgs, ::rtl::OUString(), false );
                         }
                     }
                     catch ( uno::Exception& e )
