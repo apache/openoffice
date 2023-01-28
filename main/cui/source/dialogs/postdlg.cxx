@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -35,8 +35,8 @@
 #include <unotools/useroptions.hxx>
 #include <unotools/localedatawrapper.hxx>
 #include <comphelper/processfactory.hxx>
-#include <svx/svxids.hrc>	// SID_ATTR_...
-#include <svx/dialogs.hrc>  // RID_SVXDLG_POSTIT
+#include <svx/svxids.hrc> // SID_ATTR_...
+#include <svx/dialogs.hrc> // RID_SVXDLG_POSTIT
 
 #define _SVX_POSTDLG_CXX
 
@@ -66,24 +66,24 @@ SvxPostItDialog::SvxPostItDialog( Window* pParent,
 
 	SfxModalDialog( pParent, CUI_RES( RID_SVXDLG_POSTIT ) ),
 
-    aPostItFL       ( this, CUI_RES( FL_POSTIT ) ),
-    aLastEditLabelFT( this, CUI_RES( FT_LASTEDITLABEL ) ),
+	aPostItFL		( this, CUI_RES( FL_POSTIT ) ),
+	aLastEditLabelFT( this, CUI_RES( FT_LASTEDITLABEL ) ),
 	aLastEditFT 	( this, CUI_RES( FT_LASTEDIT ) ),
 	aEditFT 		( this, CUI_RES( FT_EDIT ) ),
 	aEditED 		( this, CUI_RES( ED_EDIT ) ),
-    aAuthorFT       ( this, CUI_RES( FT_AUTHOR) ),
-    aAuthorBtn      ( this, CUI_RES( BTN_AUTHOR ) ),
-    aOKBtn          ( this, CUI_RES( BTN_POST_OK ) ),
+	aAuthorFT		( this, CUI_RES( FT_AUTHOR) ),
+	aAuthorBtn		( this, CUI_RES( BTN_AUTHOR ) ),
+	aOKBtn			( this, CUI_RES( BTN_POST_OK ) ),
 	aCancelBtn		( this, CUI_RES( BTN_POST_CANCEL ) ),
-    aHelpBtn        ( this, CUI_RES( BTN_POST_HELP ) ),
-    aPrevBtn        ( this, CUI_RES( BTN_PREV ) ),
+	aHelpBtn		( this, CUI_RES( BTN_POST_HELP ) ),
+	aPrevBtn		( this, CUI_RES( BTN_PREV ) ),
 	aNextBtn		( this, CUI_RES( BTN_NEXT ) ),
 
 	rSet		( rCoreSet ),
 	pOutSet 	( 0 )
 
 {
-	if (bRedline)	// HelpIDs fuer Redlining
+	if (bRedline)	// HelpIDs for Redlining
 	{
 		SetHelpId(HID_REDLINING_DLG);
 		aEditED.SetHelpId(HID_REDLINING_EDIT);
@@ -105,8 +105,8 @@ SvxPostItDialog::SvxPostItDialog( Window* pParent,
 
 	if ( !bPrevNext )
 	{
-		aPrevBtn.Hide();
-		aNextBtn.Hide();
+		aPrevBtn.Disable();
+		aNextBtn.Disable();
 	}
 
 	nWhich = rSet.GetPool()->GetWhich( SID_ATTR_POSTIT_AUTHOR );
@@ -248,7 +248,7 @@ IMPL_LINK( SvxPostItDialog, OKHdl, Button *, EMPTYARG )
 	LocaleDataWrapper aLocaleWrapper( ::comphelper::getProcessServiceFactory(), Application::GetSettings().GetLocale() );
 	pOutSet = new SfxItemSet( rSet );
 	pOutSet->Put( SvxPostItAuthorItem( SvtUserOptions().GetID(),
-				  					   rSet.GetPool()->GetWhich( SID_ATTR_POSTIT_AUTHOR ) ) );
+									   rSet.GetPool()->GetWhich( SID_ATTR_POSTIT_AUTHOR ) ) );
 	pOutSet->Put( SvxPostItDateItem( aLocaleWrapper.getDate( Date() ),
 									 rSet.GetPool()->GetWhich( SID_ATTR_POSTIT_DATE ) ) );
 	pOutSet->Put( SvxPostItTextItem( aEditED.GetText(),
@@ -256,4 +256,3 @@ IMPL_LINK( SvxPostItDialog, OKHdl, Button *, EMPTYARG )
 	EndDialog( RET_OK );
 	return 0;
 }
-
