@@ -1132,13 +1132,9 @@ IMPL_LINK( MenuBarManager, Select, Menu *, pMenu )
 					aTargetURL.Complete = pMenuItemHandler->aMenuItemURL;
                     m_xURLTransformer->parseStrict( aTargetURL );
 
-                    if ( m_bIsBookmarkMenu )
-					{
-						// bookmark menu item selected
-						aArgs.realloc( 1 );
-						aArgs[0].Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Referer" ));
-						aArgs[0].Value <<= ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( SFX_REFERER_USER ));
-					}
+                    aArgs.realloc( 1 );
+                    aArgs[0].Name = ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Referer" ));
+                    aArgs[0].Value <<= ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( SFX_REFERER_USER ));
 
 					xDispatch = pMenuItemHandler->xMenuItemDispatch;
 				}
