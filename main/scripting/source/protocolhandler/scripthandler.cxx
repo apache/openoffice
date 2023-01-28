@@ -154,14 +154,32 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
     Any invokeResult;
 	bool bCaughtException = sal_False;
 	Any aException;
+    Sequence< Any > inArgs( 0 );
 
     if ( m_bInitialised )
     {
+        ::rtl::OUString aReferer;
+        if ( lArgs.getLength() > 0 )
+        {
+            int argCount = 0;
+            for ( int index = 0; index < lArgs.getLength(); index++ )
+            {
+                // The propertyval named "Referer"
+                // is not an argument to be passed to script
+                if ( lArgs[ index ].Name.compareToAscii("Referer") == 0 ) {
+                    lArgs [ index ].Value >>= aReferer;
+                } else {
+                    inArgs.realloc( ++argCount );
+                    inArgs[ argCount - 1 ] = lArgs[ index ].Value;
+                }
+            }
+        }
         try
         {
             ::rtl::OUString xStringUri = ::rtl::Uri::decode( aURL.Complete,
                 rtl_UriDecodeWithCharset, RTL_TEXTENCODING_UTF8 );
             bool bIsDocumentScript = ( xStringUri.indexOfAsciiL( RTL_CONSTASCII_STRINGPARAM( "document" ) ) !=-1 );
+            bool bRefererIsTrusted = ( aReferer.compareToAscii("private:", 8) == 0 );
 
             // obtain the component for our security check. We could check bIsDocumentScript but the "location" could be forged
             if ( getScriptInvocation() ) {
@@ -169,7 +187,8 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                     xDocumentScripts.set( m_xScriptInvocation->getScriptContainer(), UNO_SET_THROW );
 
                 OSL_ENSURE( xDocumentScripts.is(), "ScriptProtocolHandler::dispatchWithNotification: can't do the security check!" );
-                if ( !xDocumentScripts.is() || !xDocumentScripts->getAllowMacroExecution() )
+                if ( !xDocumentScripts.is() ||
+                     ( !bRefererIsTrusted && !xDocumentScripts->getAllowMacroExecution() ) )
                     return;
             }
 
@@ -182,26 +201,8 @@ void SAL_CALL ScriptProtocolHandler::dispatchWithNotification(
                 "ScriptProtocolHandler::dispatchWithNotification: validate xFunc - unable to obtain XScript interface" );
 
            
-            Sequence< Any > inArgs( 0 );
             Sequence< Any > outArgs( 0 );
             Sequence< sal_Int16 > outIndex;
-
-            if ( lArgs.getLength() > 0 )
-            {
-               int argCount = 0;
-               for ( int index = 0; index < lArgs.getLength(); index++ )
-               {
-                   // Sometimes we get a propertyval with name = "Referer"
-                   // this is not an argument to be passed to script, so
-                   // ignore.
-                   if ( lArgs[ index ].Name.compareToAscii("Referer") != 0  ||
-                        lArgs[ index ].Name.getLength() == 0 )
-                   {
-                       inArgs.realloc( ++argCount ); 
-                       inArgs[ argCount - 1 ] = lArgs[ index ].Value;
-                   }
-               }
-            }
 
             // attempt to protect the document against the script tampering with its Undo Context
             ::std::auto_ptr< ::framework::DocumentUndoGuard > pUndoGuard;
