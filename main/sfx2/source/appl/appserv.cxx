@@ -1037,7 +1037,8 @@ void SfxApplication::OfaExec_Impl( SfxRequest& rReq )
                 if ( !xScriptContext.is() )
                     xScriptContext = xController;
 
-                SfxObjectShell::CallXScript( xScriptContext, pDlg->GetScriptURL(), args, ret, outIndex, outArgs );
+                SfxObjectShell::CallXScript( xScriptContext, pDlg->GetScriptURL(), args, ret, outIndex, outArgs,
+                                             ::rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "private:user" ) ) );
             }
             while ( false );
 			rReq.Done();
