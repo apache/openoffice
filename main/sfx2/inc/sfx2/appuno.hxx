@@ -90,7 +90,18 @@ public:
     SfxMacroLoader( const ::com::sun::star::uno::Reference< ::com::sun::star::lang::XMultiServiceFactory >& )
 	{}
 
-	static ErrCode loadMacro( const ::rtl::OUString& aURL, ::com::sun::star::uno::Any& rRetval, SfxObjectShell* pDoc=NULL ) throw( ::com::sun::star::uno::RuntimeException );
+    /**
+     * Execute a BASIC macro.
+     *
+     * @param aURL URL pointing to the macro (in the form macro:...)
+     * @param rRetval will be set with the macro's return value.
+     * @param aReferer "Referer" identifying the source of this request. May be empty.
+     * @param pDoc shell to use. Default is NULL for using
+     * SfxObjectShell::Current().
+     *
+     * @return ERRCODE_NONE if all went smoothly.
+     */
+    static ErrCode loadMacro( const ::rtl::OUString& aURL, ::com::sun::star::uno::Any& rRetval, const ::rtl::OUString& aReferer, SfxObjectShell* pDoc=NULL ) throw( ::com::sun::star::uno::RuntimeException );
 
     virtual ::com::sun::star::uno::Reference < ::com::sun::star::frame::XDispatch > SAL_CALL
                     queryDispatch( const ::com::sun::star::util::URL& aURL, const ::rtl::OUString& sTargetFrameName,

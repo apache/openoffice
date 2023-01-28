@@ -205,6 +205,7 @@ static void Execute( ANY& aEventData, const css::document::DocumentEvent& aTrigg
 		OUSTRING		aScript;
 		OUSTRING		aLibrary;
 		OUSTRING		aMacroName;
+        OUSTRING        aReferer;
 
         sal_Int32 nCount = aProperties.getLength();
 
@@ -222,6 +223,8 @@ static void Execute( ANY& aEventData, const css::document::DocumentEvent& aTrigg
 				aProperties[ nIndex ].Value >>= aLibrary;
 			else if ( aProperties[ nIndex ].Name.compareToAscii( PROP_MACRO_NAME ) == 0 )
 				aProperties[ nIndex ].Value >>= aMacroName;
+            else if ( aProperties[ nIndex ].Name.compareToAscii( "Referer" ) == 0 )
+                aProperties[ nIndex ].Value >>= aReferer;
 			else {
 				DBG_ERROR("Unknown property value!");
             }
@@ -231,7 +234,7 @@ static void Execute( ANY& aEventData, const css::document::DocumentEvent& aTrigg
 		if ( aType.compareToAscii( STAR_BASIC ) == 0 && aScript.getLength() )
 		{
 			com::sun::star::uno::Any aAny;
-            SfxMacroLoader::loadMacro( aScript, aAny, pDoc );
+            SfxMacroLoader::loadMacro( aScript, aAny, aReferer, pDoc );
 		}
 		else if ( aType.compareToAscii( "Service" ) == 0 ||
                   aType.compareToAscii( "Script" ) == 0 )

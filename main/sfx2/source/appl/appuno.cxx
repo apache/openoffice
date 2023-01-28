@@ -1729,14 +1729,33 @@ SfxObjectShell* SfxMacroLoader::GetObjectShell_Impl()
     return lDispatcher;
 }
 
-// -----------------------------------------------------------------------
-void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::util::URL&                                                          aURL      ,
-                                                        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >&            lArgs     ,
-                                                        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& xListener )
-              throw (::com::sun::star::uno::RuntimeException)
+/**
+ * @brief Check if a "Referer" is trusted.
+ *
+ * @param aReferer "Referer" to validate.
+ *
+ * @return sal_True if trusted.
+ */
+static sal_Bool refererIsTrusted(const ::rtl::OUString &aReferer)
 {
-    ::vos::OGuard aGuard( Application::GetSolarMutex() );
+    if (aReferer.compareToAscii("private:", 8) == 0) {
+        return sal_True;
+    } else {
+        return sal_False;
+    }
+}
 
+
+/**
+ * @brief Check if a sequence of parameters contains a "Referer" and
+ * returns it.
+ *
+ * @param lArgs sequence of parameters.
+ *
+ * @return the value of the "Referer" parameter, or an empty string.
+ */
+static ::rtl::OUString findReferer(const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArgs)
+{
     sal_uInt32 nPropertyCount = lArgs.getLength();
     ::rtl::OUString aReferer;
     for( sal_uInt32 nProperty=0; nProperty<nPropertyCount; ++nProperty )
@@ -1747,9 +1766,20 @@ void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::
             break;
         }
     }
+    return aReferer;
+}
+
+
+// -----------------------------------------------------------------------
+void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::util::URL&                                                          aURL      ,
+                                                        const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >&            lArgs     ,
+                                                        const ::com::sun::star::uno::Reference< ::com::sun::star::frame::XDispatchResultListener >& xListener )
+              throw (::com::sun::star::uno::RuntimeException)
+{
+    ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
     ::com::sun::star::uno::Any aAny;
-    ErrCode nErr = loadMacro( aURL.Complete, aAny, GetObjectShell_Impl() );
+    ErrCode nErr = loadMacro( aURL.Complete, aAny, findReferer(lArgs), GetObjectShell_Impl() );
     if( xListener.is() )
     {
         // always call dispatchFinished(), because we didn't load a document but
@@ -1768,10 +1798,10 @@ void SAL_CALL SfxMacroLoader::dispatchWithNotification( const ::com::sun::star::
 
 ::com::sun::star::uno::Any SAL_CALL SfxMacroLoader::dispatchWithReturnValue(
     const ::com::sun::star::util::URL& aURL,
-    const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& ) throw (::com::sun::star::uno::RuntimeException)
+    const ::com::sun::star::uno::Sequence< ::com::sun::star::beans::PropertyValue >& lArgs) throw (::com::sun::star::uno::RuntimeException)
 {
     ::com::sun::star::uno::Any aRet;
-        /*ErrCode nErr = */loadMacro( aURL.Complete, aRet, GetObjectShell_Impl() );
+    /*ErrCode nErr = */loadMacro( aURL.Complete, aRet, findReferer(lArgs), GetObjectShell_Impl() );
     return aRet;
 }
 
@@ -1782,19 +1812,8 @@ void SAL_CALL SfxMacroLoader::dispatch( const ::com::sun::star::util::URL&      
 {
     ::vos::OGuard aGuard( Application::GetSolarMutex() );
 
-    sal_uInt32 nPropertyCount = lArgs.getLength();
-    ::rtl::OUString aReferer;
-    for( sal_uInt32 nProperty=0; nProperty<nPropertyCount; ++nProperty )
-    {
-        if( lArgs[nProperty].Name == ::rtl::OUString(RTL_CONSTASCII_USTRINGPARAM("Referer")) )
-        {
-            lArgs[nProperty].Value >>= aReferer;
-            break;
-        }
-    }
-
     ::com::sun::star::uno::Any aAny;
-    /*ErrCode nErr = */loadMacro( aURL.Complete, aAny, GetObjectShell_Impl() );
+    /*ErrCode nErr = */loadMacro( aURL.Complete, aAny, findReferer(lArgs), GetObjectShell_Impl() );
 }
 
 // -----------------------------------------------------------------------
@@ -1817,7 +1836,7 @@ void SAL_CALL SfxMacroLoader::removeStatusListener(
 {
 }
 
-ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::uno::Any& rRetval, SfxObjectShell* pSh )
+ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::uno::Any& rRetval, const ::rtl::OUString& aReferer, SfxObjectShell* pSh )
     throw ( ::com::sun::star::uno::RuntimeException )
 {
     SfxObjectShell* pCurrent = pSh;
@@ -1868,29 +1887,32 @@ ErrCode SfxMacroLoader::loadMacro( const ::rtl::OUString& rURL, com::sun::star::
             const bool bIsAppBasic = ( pBasMgr == pAppMgr );
             const bool bIsDocBasic = ( pBasMgr != pAppMgr );
 
-            if ( pDoc )
-            {
-                // security check for macros from document basic if an SFX doc is given
-                if ( !pDoc->AdjustMacroMode( String() ) )
-                    // check forbids execution
-                    return ERRCODE_IO_ACCESSDENIED;
-            }
-            /* XXX in the original sources this branch was present but its
-               condition does not make sense.
-               Let's keep it in case it may be useful for more in-depth checks.
-            else if ( pDoc && pDoc->GetMedium() )
-            {
-                pDoc->AdjustMacroMode( String() );
-                SFX_ITEMSET_ARG( pDoc->GetMedium()->GetItemSet(), pUpdateDocItem, SfxUInt16Item, SID_UPDATEDOCMODE, sal_False);
-                SFX_ITEMSET_ARG( pDoc->GetMedium()->GetItemSet(), pMacroExecModeItem, SfxUInt16Item, SID_MACROEXECMODE, sal_False);
-                if ( pUpdateDocItem && pMacroExecModeItem
-                  && pUpdateDocItem->GetValue() == document::UpdateDocMode::NO_UPDATE
-                  && pMacroExecModeItem->GetValue() == document::MacroExecMode::NEVER_EXECUTE )
-                    return ERRCODE_IO_ACCESSDENIED;
-            }*/
-            else if ( pCurrent ) {
-                if ( !pCurrent->AdjustMacroMode( String() ) )
-                    return ERRCODE_IO_ACCESSDENIED;
+            if ( !refererIsTrusted(aReferer) ) {
+                // Not trusted
+                if ( pDoc )
+                {
+                    // security check for macros from document basic if an SFX doc is given
+                    if ( !pDoc->AdjustMacroMode( String() ) )
+                        // check forbids execution
+                        return ERRCODE_IO_ACCESSDENIED;
+                }
+                /* XXX in the original sources this branch was present but its
+                   condition does not make sense.
+                   Let's keep it in case it may be useful for more in-depth checks.
+                else if ( pDoc && pDoc->GetMedium() )
+                {
+                    pDoc->AdjustMacroMode( String() );
+                    SFX_ITEMSET_ARG( pDoc->GetMedium()->GetItemSet(), pUpdateDocItem, SfxUInt16Item, SID_UPDATEDOCMODE, sal_False);
+                    SFX_ITEMSET_ARG( pDoc->GetMedium()->GetItemSet(), pMacroExecModeItem, SfxUInt16Item, SID_MACROEXECMODE, sal_False);
+                    if ( pUpdateDocItem && pMacroExecModeItem
+                    && pUpdateDocItem->GetValue() == document::UpdateDocMode::NO_UPDATE
+                    && pMacroExecModeItem->GetValue() == document::MacroExecMode::NEVER_EXECUTE )
+                           return ERRCODE_IO_ACCESSDENIED;
+                }*/
+                else if ( pCurrent ) {
+                    if ( !pCurrent->AdjustMacroMode( String() ) )
+                        return ERRCODE_IO_ACCESSDENIED;
+                }
             }
 
             // find BASIC method
