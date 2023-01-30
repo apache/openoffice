@@ -70,7 +70,7 @@ double ScInterpreter::GetDateSerial( sal_Int16 nYear, sal_Int16 nMonth, sal_Int1
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::GetDateSerial" );
     if ( nYear < 100 && !bStrict )
         nYear = pFormatter->ExpandTwoDigitYear( nYear );
-    // Do not use a default Date ctor here because it asks system time with a 
+    // Do not use a default Date ctor here because it asks system time with a
     // performance penalty.
     sal_Int16 nY, nM, nD;
     if (bStrict)
@@ -1138,10 +1138,10 @@ double ScInterpreter::ScGetRmz(double fRate, double fNper, double fPv,
     else
     {
         if (fPaytype > 0.0) // payment in advance
-            fPayment = (fFv + fPv * exp( fNper * ::boost::math::log1p(fRate) ) ) * fRate / 
+            fPayment = (fFv + fPv * exp( fNper * ::boost::math::log1p(fRate) ) ) * fRate /
                 (::boost::math::expm1( (fNper + 1) * ::boost::math::log1p(fRate) ) - fRate);
         else  // payment in arrear
-            fPayment = (fFv + fPv * exp(fNper * ::boost::math::log1p(fRate) ) ) * fRate / 
+            fPayment = (fFv + fPv * exp(fNper * ::boost::math::log1p(fRate) ) ) * fRate /
                 ::boost::math::expm1( fNper * ::boost::math::log1p(fRate) );
     }
     return -fPayment;
@@ -1803,7 +1803,7 @@ void ScInterpreter::ScIntersect()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScIntersect" );
     formula::FormulaTokenRef p2nd = PopToken();
     formula::FormulaTokenRef p1st = PopToken();
-    
+
     if (nGlobalError || !p2nd || !p1st)
     {
         PushIllegalArgument();
@@ -1951,7 +1951,7 @@ void ScInterpreter::ScRangeFunc()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScRangeFunc" );
     formula::FormulaTokenRef x2 = PopToken();
     formula::FormulaTokenRef x1 = PopToken();
-    
+
     if (nGlobalError || !x2 || !x1)
     {
         PushIllegalArgument();
@@ -1970,7 +1970,7 @@ void ScInterpreter::ScUnionFunc()
     RTL_LOGFILE_CONTEXT_AUTHOR( aLogger, "sc", "er", "ScInterpreter::ScUnionFunc" );
     formula::FormulaTokenRef p2nd = PopToken();
     formula::FormulaTokenRef p1st = PopToken();
-    
+
     if (nGlobalError || !p2nd || !p1st)
     {
         PushIllegalArgument();
@@ -1989,7 +1989,7 @@ void ScInterpreter::ScUnionFunc()
     ScToken* x1 = static_cast<ScToken*>(p1st.get());
     ScToken* x2 = static_cast<ScToken*>(p2nd.get());
 
-    
+
     ScTokenRef xRes;
     // Append to an existing RefList if there is one.
     if (sv1 == svRefList)
@@ -2671,7 +2671,8 @@ sal_Bool lclConvertMoney( const String& aSearchUnit, double& rfRate, int& rnDec 
         { "SKK", 30.1260,  2 },
         { "EEK", 15.6466,  2 },
         { "LVL", 0.702804, 2 },
-        { "LTL", 3.45280,  2 }
+        { "LTL", 3.45280,  2 },
+        { "HRK", 7.53450,  2 }
     };
 
     const size_t nConversionCount = sizeof( aConvertTable ) / sizeof( aConvertTable[0] );
@@ -2976,7 +2977,7 @@ void ScInterpreter::ScGetPivotData()
                 //! should allow numeric constraint values
                 aFilters[i].mbValIsStr = sal_True;
                 aFilters[i].maValStr = GetString();
-                
+
                 aFilters[i].maFieldName = GetString();
             }
         }
@@ -3014,7 +3015,7 @@ void ScInterpreter::ScGetPivotData()
                 goto failed;
         }
         else
-            aTarget.maFieldName = GetString();      // new syntax: first parameter is data field name
+            aTarget.maFieldName = GetString(); // new syntax: first parameter is data field name
 
         if( pDPObj->GetPivotData( aTarget, aFilters ) )
         {
@@ -3029,4 +3030,3 @@ void ScInterpreter::ScGetPivotData()
 failed :
     PushError( errNoRef );
 }
-
