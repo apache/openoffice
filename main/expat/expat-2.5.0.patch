@@ -1,0 +1,475 @@
+--- misc/expat-2.5.0/lib/makefile.mk	Wed Aug 20 14:33:55 2008
++++ misc/build/expat-2.5.0/lib/makefile.mk	Wed Aug 20 14:26:42 2008
+@@ -1 +1,79 @@
+-dummy
++#**************************************************************
++#  
++#  Licensed to the Apache Software Foundation (ASF) under one
++#  or more contributor license agreements.  See the NOTICE file
++#  distributed with this work for additional information
++#  regarding copyright ownership.  The ASF licenses this file
++#  to you under the Apache License, Version 2.0 (the
++#  "License"); you may not use this file except in compliance
++#  with the License.  You may obtain a copy of the License at
++#  
++#    http://www.apache.org/licenses/LICENSE-2.0
++#  
++#  Unless required by applicable law or agreed to in writing,
++#  software distributed under the License is distributed on an
++#  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
++#  KIND, either express or implied.  See the License for the
++#  specific language governing permissions and limitations
++#  under the License.
++#  
++#**************************************************************
++PRJ=..$/..$/..$/..$/..
++
++PRJNAME=expat
++TARGET=expat
++LIBTARGET=NO
++EXTERNAL_WARNINGS_NOT_ERRORS=TRUE
++
++# --- Settings -----------------------------------------------------
++.INCLUDE :  settings.mk
++# --- Files --------------------------------------------------------
++
++CFLAGS+=-I..
++
++.IF "$(OS)"=="WNT"
++CDEFS+=-DWIN32
++.ELSE
++CDEFS+=-DHAVE_EXPAT_CONFIG_H
++.ENDIF
++
++.IF "$(OS)"=="MACOSX" && "$(SYSBASE)"!=""
++CDEFS+=-DHAVE_MEMMOVE -DHAVE_BCOPY
++.ENDIF # "$(OS)"=="MACOSX"
++
++SECOND_BUILD=UNICODE
++UNICODE_SLOFILES=$(SLO)$/xmlparse.obj
++UNICODECDEFS+=-DXML_UNICODE
++
++LIB1ARCHIV=$(LB)$/libascii_$(TARGET)_xmlparse.a
++LIB1TARGET=$(SLB)$/ascii_$(TARGET)_xmlparse.lib
++LIB1OBJFILES=$(SLO)$/xmlparse.obj
++
++LIB2ARCHIV=$(LB)$/lib$(TARGET)_xmlparse.a
++LIB2TARGET=$(SLB)$/$(TARGET)_xmlparse.lib
++LIB2OBJFILES =$(REAL_UNICODE_SLOFILES)
++
++LIB3ARCHIV=$(LB)$/lib$(TARGET)_xmltok.a
++LIB3TARGET=$(SLB)$/$(TARGET)_xmltok.lib
++LIB3OBJFILES=$(SLO)$/xmlrole.obj $(SLO)$/xmltok.obj
++
++.IF "$(BUILD_X64)"!=""
++# ---------------- X64 stuff special ---------------------
++#  use UNICODE only because shell/shlxthandler
++#  doesn't link against ascii_expat_xmlparse
++#---------------------------------------------------------
++SLOFILES_X64=$(SLO_X64)$/xmlparse.obj \
++             $(SLO_X64)$/xmlrole.obj \
++             $(SLO_X64)$/xmltok.obj
++CDEFS_X64+=-DXML_UNICODE -DWIN32
++CFLAGS_X64+=-I..
++LIB1TARGET_X64=$(SLB_X64)$/$(TARGET)_xmlparse.lib
++LIB1OBJFILES_X64=$(SLO_X64)$/xmlparse.obj
++LIB2TARGET_X64=$(SLB_X64)$/$(TARGET)_xmltok.lib
++LIB2OBJFILES_X64=$(SLO_X64)$/xmlrole.obj $(SLO_X64)$/xmltok.obj
++.ENDIF # "$(BUILD_X64)"!=""
++
++# --- Targets ------------------------------------------------------
++.INCLUDE :  set_wntx64.mk
++.INCLUDE :	target.mk
++.INCLUDE :  tg_wntx64.mk
+diff -ru misc/expat-2.5.0/Changes misc/build/expat-2.5.0/Changes
+--- misc/expat-2.5.0/Changes	2022-10-25 17:09:08.000000000 +0200
++++ misc/build/expat-2.5.0/Changes	2023-02-04 17:25:00.661884527 +0100
+@@ -2,6 +2,9 @@
+       https://github.com/libexpat/libexpat/labels/help%20wanted
+       If you can help, please get in touch.  Thanks!
+ 
++Release 2.5.0-aoo Sat February 04 2023
++        Adapted to AOO sources.
++
+ Release 2.5.0 Tue October 25 2022
+         Security fixes:
+   #616 #649 #650  CVE-2022-43680 -- Fix heap use-after-free after overeager
+diff -ru misc/expat-2.5.0/expat_config.h misc/build/expat-2.5.0/expat_config.h
+--- misc/expat-2.5.0/expat_config.h	2022-10-25 17:34:58.000000000 +0200
++++ misc/build/expat-2.5.0/expat_config.h	2023-02-04 18:09:02.956986556 +0100
+@@ -14,7 +14,7 @@
+ /* #undef HAVE_ARC4RANDOM */
+ 
+ /* Define to 1 if you have the `arc4random_buf' function. */
+-#define HAVE_ARC4RANDOM_BUF 1
++/* #undef HAVE_ARC4RANDOM_BUF */
+ 
+ /* Define to 1 if you have the <dlfcn.h> header file. */
+ #define HAVE_DLFCN_H 1
+@@ -74,13 +74,13 @@
+ #define PACKAGE "expat"
+ 
+ /* Define to the address where bug reports for this package should be sent. */
+-#define PACKAGE_BUGREPORT "expat-bugs@libexpat.org"
++#define PACKAGE_BUGREPORT "dev@openoffice.apache.org"
+ 
+ /* Define to the full name of this package. */
+ #define PACKAGE_NAME "expat"
+ 
+ /* Define to the full name and version of this package. */
+-#define PACKAGE_STRING "expat 2.5.0"
++#define PACKAGE_STRING "expat 2.5.0-aoo"
+ 
+ /* Define to the one symbol short name of this package. */
+ #define PACKAGE_TARNAME "expat"
+@@ -89,7 +89,7 @@
+ #define PACKAGE_URL ""
+ 
+ /* Define to the version of this package. */
+-#define PACKAGE_VERSION "2.5.0"
++#define PACKAGE_VERSION "2.5.0-aoo"
+ 
+ /* Define to 1 if all of the C90 standard headers exist (not just the ones
+    required in a freestanding environment). This macro is provided for
+@@ -97,7 +97,7 @@
+ #define STDC_HEADERS 1
+ 
+ /* Version number of package */
+-#define VERSION "2.5.0"
++#define VERSION "2.5.0-aoo"
+ 
+ /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+    significant byte first (like Motorola and SPARC, unlike Intel). */
+@@ -119,8 +119,10 @@
+    point. */
+ #define XML_CONTEXT_BYTES 1024
+ 
++#if ! defined(_WIN32)
+ /* Define to include code reading entropy from `/dev/urandom'. */
+ #define XML_DEV_URANDOM 1
++#endif
+ 
+ /* Define to make parameter entity parsing functionality available. */
+ #define XML_DTD 1
+@@ -128,6 +130,11 @@
+ /* Define to make XML Namespaces functionality available. */
+ #define XML_NS 1
+ 
++/* Define to __FUNCTION__ or "" if `__func__' does not conform to ANSI C. */
++#ifdef _MSC_VER
++#  define __func__ __FUNCTION__
++#endif
++
+ /* Define to empty if `const' does not conform to ANSI C. */
+ /* #undef const */
+ 
+diff -ru misc/expat-2.5.0/lib/siphash.h misc/build/expat-2.5.0/lib/siphash.h
+--- misc/expat-2.5.0/lib/siphash.h	2022-10-23 17:16:56.000000000 +0200
++++ misc/build/expat-2.5.0/lib/siphash.h	2023-02-04 14:42:21.989123778 +0100
+@@ -99,7 +99,15 @@
+ #define SIPHASH_H
+ 
+ #include <stddef.h> /* size_t */
+-#include <stdint.h> /* uint64_t uint32_t uint8_t */
++#if defined(_WIN32) && defined(_MSC_VER) && (_MSC_VER < 1600)
++/* For vs2003/7.1 up to vs2008/9.0; _MSC_VER 1600 is vs2010/10.0 */
++typedef unsigned __int8 uint8_t;
++typedef unsigned __int32 uint32_t;
++typedef unsigned __int64 uint64_t;
++#else
++#  include <stdint.h> /* uint64_t uint32_t uint8_t */
++#endif
++
+ 
+ /*
+  * Workaround to not require a C++11 compiler for using ULL suffix
+diff -ru misc/expat-2.5.0/lib/xmlparse.c misc/build/expat-2.5.0/lib/xmlparse.c
+--- misc/expat-2.5.0/lib/xmlparse.c	2022-10-25 17:09:08.000000000 +0200
++++ misc/build/expat-2.5.0/lib/xmlparse.c	2023-02-04 14:42:21.993123873 +0100
+@@ -60,8 +60,6 @@
+ 
+ #define XML_BUILDING_EXPAT 1
+ 
+-#include <expat_config.h>
+-
+ #if ! defined(_GNU_SOURCE)
+ #  define _GNU_SOURCE 1 /* syscall prototype */
+ #endif
+@@ -79,9 +77,19 @@
+ #include <limits.h> /* UINT_MAX */
+ #include <stdio.h>  /* fprintf */
+ #include <stdlib.h> /* getenv, rand_s */
+-#include <stdint.h> /* uintptr_t */
+ #include <math.h>   /* isnan */
+ 
++#if defined(_WIN32) && defined(_MSC_VER) && (_MSC_VER < 1600)
++/* vs2008/9.0 and earlier lack stdint.h; _MSC_VER 1600 is vs2010/10.0 */
++#  if defined(_WIN64)
++typedef unsigned __int64 uintptr_t;
++#  else
++typedef unsigned __int32 uintptr_t;
++#  endif
++#else
++#  include <stdint.h> /* uintptr_t */
++#endif
++
+ #ifdef _WIN32
+ #  define getpid GetCurrentProcessId
+ #else
+@@ -94,7 +102,13 @@
+ 
+ #ifdef _WIN32
+ #  include "winconfig.h"
++#include <float.h>
++#ifndef isnan
++#define isnan _isnan
+ #endif
++#else
++#  include <expat_config.h>
++#endif /* ndef _WIN32 */
+ 
+ #include "ascii.h"
+ #include "expat.h"
+@@ -720,7 +734,9 @@
+ 
+ XML_Parser XMLCALL
+ XML_ParserCreateNS(const XML_Char *encodingName, XML_Char nsSep) {
+-  XML_Char tmp[2] = {nsSep, 0};
++  XML_Char tmp[2];
++  tmp[0] = nsSep;
++  tmp[1] = 0;
+   return XML_ParserCreate_MM(encodingName, NULL, tmp);
+ }
+ 
+@@ -1354,7 +1370,9 @@
+      would be otherwise.
+   */
+   if (parser->m_ns) {
+-    XML_Char tmp[2] = {parser->m_namespaceSeparator, 0};
++    XML_Char tmp[2];
++    tmp[0] = parser->m_namespaceSeparator;
++    tmp[1] = 0;
+     parser = parserCreate(encodingName, &parser->m_mem, tmp, newDtd);
+   } else {
+     parser = parserCreate(encodingName, &parser->m_mem, NULL, newDtd);
+@@ -3469,6 +3487,8 @@
+   i = 0;
+   if (nPrefixes) {
+     int j; /* hash table index */
++    unsigned int nsAttsSize;
++    unsigned char oldNsAttsPower;
+     unsigned long version = parser->m_nsAttsVersion;
+ 
+     /* Detect and prevent invalid shift */
+@@ -3476,8 +3496,8 @@
+       return XML_ERROR_NO_MEMORY;
+     }
+ 
+-    unsigned int nsAttsSize = 1u << parser->m_nsAttsPower;
+-    unsigned char oldNsAttsPower = parser->m_nsAttsPower;
++    nsAttsSize = 1u << parser->m_nsAttsPower;
++    oldNsAttsPower = parser->m_nsAttsPower;
+     /* size of hash table must be at least 2 * (# of prefixed attributes) */
+     if ((nPrefixes << 1)
+         >> parser->m_nsAttsPower) { /* true for m_nsAttsPower = 0 */
+@@ -3922,6 +3942,7 @@
+   if (parser->m_freeBindingList) {
+     b = parser->m_freeBindingList;
+     if (len > b->uriAlloc) {
++      XML_Char *temp = NULL;
+       /* Detect and prevent integer overflow */
+       if (len > INT_MAX - EXPAND_SPARE) {
+         return XML_ERROR_NO_MEMORY;
+@@ -3937,7 +3958,7 @@
+       }
+ #endif
+ 
+-      XML_Char *temp = (XML_Char *)REALLOC(
++      temp = (XML_Char *)REALLOC(
+           parser, b->uri, sizeof(XML_Char) * (len + EXPAND_SPARE));
+       if (temp == NULL)
+         return XML_ERROR_NO_MEMORY;
+@@ -4638,11 +4659,6 @@
+          ASCII_I, ASCII_O, ASCII_N, ASCII_LPAREN, '\0'};
+   static const XML_Char enumValueSep[] = {ASCII_PIPE, '\0'};
+   static const XML_Char enumValueStart[] = {ASCII_LPAREN, '\0'};
+-
+-#ifndef XML_DTD
+-  UNUSED_P(account);
+-#endif
+-
+   /* save one level of indirection */
+   DTD *const dtd = parser->m_dtd;
+ 
+@@ -4650,6 +4666,10 @@
+   const char **eventEndPP;
+   enum XML_Content_Quant quant;
+ 
++#ifndef XML_DTD
++  UNUSED_P(account);
++#endif
++
+   if (enc == parser->m_encoding) {
+     eventPP = &parser->m_eventPtr;
+     eventEndPP = &parser->m_eventEndPtr;
+@@ -5290,12 +5310,13 @@
+       if (parser->m_prologState.level >= parser->m_groupSize) {
+         if (parser->m_groupSize) {
+           {
++	    char *new_connector = NULL;
+             /* Detect and prevent integer overflow */
+             if (parser->m_groupSize > (unsigned int)(-1) / 2u) {
+               return XML_ERROR_NO_MEMORY;
+             }
+ 
+-            char *const new_connector = (char *)REALLOC(
++            new_connector = (char *)REALLOC(
+                 parser, parser->m_groupConnector, parser->m_groupSize *= 2);
+             if (new_connector == NULL) {
+               parser->m_groupSize /= 2;
+@@ -5309,13 +5330,14 @@
+              * The preprocessor guard addresses the "always false" warning
+              * from -Wtype-limits on platforms where
+              * sizeof(unsigned int) < sizeof(size_t), e.g. on x86_64. */
++	    int *new_scaff_index = NULL;
+ #if UINT_MAX >= SIZE_MAX
+             if (parser->m_groupSize > (size_t)(-1) / sizeof(int)) {
+               return XML_ERROR_NO_MEMORY;
+             }
+ #endif
+ 
+-            int *const new_scaff_index = (int *)REALLOC(
++            new_scaff_index = (int *)REALLOC(
+                 parser, dtd->scaffIndex, parser->m_groupSize * sizeof(int));
+             if (new_scaff_index == NULL)
+               return XML_ERROR_NO_MEMORY;
+@@ -6404,13 +6426,14 @@
+       }
+     } else {
+       DEFAULT_ATTRIBUTE *temp;
++      int count;
+ 
+       /* Detect and prevent integer overflow */
+       if (type->allocDefaultAtts > INT_MAX / 2) {
+         return 0;
+       }
+ 
+-      int count = type->allocDefaultAtts * 2;
++      count = type->allocDefaultAtts * 2;
+ 
+       /* Detect and prevent integer overflow.
+        * The preprocessor guard addresses the "always false" warning
+@@ -7072,22 +7095,26 @@
+     /* check for overflow (table is half full) */
+     if (table->used >> (table->power - 1)) {
+       unsigned char newPower = table->power + 1;
++      size_t newSize;
++      unsigned long newMask;
++      size_t tsize;
++      NAMED **newV = NULL;
+ 
+       /* Detect and prevent invalid shift */
+       if (newPower >= sizeof(unsigned long) * 8 /* bits per byte */) {
+         return NULL;
+       }
+ 
+-      size_t newSize = (size_t)1 << newPower;
+-      unsigned long newMask = (unsigned long)newSize - 1;
++      newSize = (size_t)1 << newPower;
++      newMask = (unsigned long)newSize - 1;
+ 
+       /* Detect and prevent integer overflow */
+       if (newSize > (size_t)(-1) / sizeof(NAMED *)) {
+         return NULL;
+       }
+ 
+-      size_t tsize = newSize * sizeof(NAMED *);
+-      NAMED **newV = table->mem->malloc_fcn(tsize);
++      tsize = newSize * sizeof(NAMED *);
++      newV = table->mem->malloc_fcn(tsize);
+       if (! newV)
+         return NULL;
+       memset(newV, 0, tsize);
+@@ -7489,6 +7516,10 @@
+   DTD *const dtd = parser->m_dtd; /* save one level of indirection */
+   XML_Content *ret;
+   XML_Char *str; /* the current string writing location */
++  size_t allocsize;
++  XML_Content *dest = NULL;
++  XML_Content *destLimit = NULL;
++  XML_Content *jobDest = NULL;
+ 
+   /* Detect and prevent integer overflow.
+    * The preprocessor guard addresses the "always false" warning
+@@ -7507,7 +7538,7 @@
+     return NULL;
+   }
+ 
+-  const size_t allocsize = (dtd->scaffCount * sizeof(XML_Content)
++  allocsize = (dtd->scaffCount * sizeof(XML_Content)
+                             + (dtd->contentStringLen * sizeof(XML_Char)));
+ 
+   ret = (XML_Content *)MALLOC(parser, allocsize);
+@@ -7563,9 +7594,9 @@
+    *
+    * - The algorithm repeats until all target array indices have been processed.
+    */
+-  XML_Content *dest = ret; /* tree node writing location, moves upwards */
+-  XML_Content *const destLimit = &ret[dtd->scaffCount];
+-  XML_Content *jobDest = ret; /* next free writing location in target array */
++  dest = ret; /* tree node writing location, moves upwards */
++  destLimit = &ret[dtd->scaffCount];
++  jobDest = ret; /* next free writing location in target array */
+   str = (XML_Char *)&ret[dtd->scaffCount];
+ 
+   /* Add the starting job, the root node (index 0) of the source tree  */
+@@ -8387,14 +8418,17 @@
+ static unsigned long
+ getDebugLevel(const char *variableName, unsigned long defaultDebugLevel) {
+   const char *const valueOrNull = getenv(variableName);
++  const char *value = NULL;
++  char *afterValue = NULL;
++  unsigned long debugLevel;
+   if (valueOrNull == NULL) {
+     return defaultDebugLevel;
+   }
+-  const char *const value = valueOrNull;
++  value = valueOrNull;
+ 
+   errno = 0;
+-  char *afterValue = (char *)value;
+-  unsigned long debugLevel = strtoul(value, &afterValue, 10);
++  afterValue = (char *)value;
++  debugLevel = strtoul(value, &afterValue, 10);
+   if ((errno != 0) || (afterValue[0] != '\0')) {
+     errno = 0;
+     return defaultDebugLevel;
+diff -ru misc/expat-2.5.0/lib/xmltok.c misc/build/expat-2.5.0/lib/xmltok.c
+--- misc/expat-2.5.0/lib/xmltok.c	2022-10-24 18:32:55.000000000 +0200
++++ misc/build/expat-2.5.0/lib/xmltok.c	2023-02-04 14:42:21.993123873 +0100
+@@ -44,14 +44,22 @@
+    USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+ 
+-#include <expat_config.h>
+-
+ #include <stddef.h>
+ #include <string.h> /* memcpy */
+-#include <stdbool.h>
++
++#if defined(_MSC_VER) && (_MSC_VER <= 1700)
++/* for vs2012/11.0/1700 and earlier Visual Studio compilers */
++#  define bool int
++#  define false 0
++#  define true 1
++#else
++#  include <stdbool.h>
++#endif
+ 
+ #ifdef _WIN32
+ #  include "winconfig.h"
++#else
++#  include <expat_config.h>
+ #endif
+ 
+ #include "expat_external.h"
