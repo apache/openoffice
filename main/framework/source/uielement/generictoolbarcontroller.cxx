@@ -186,11 +186,14 @@ throw ( RuntimeException )
     if ( xDispatch.is() && xURLTransformer.is() )
     {
         com::sun::star::util::URL aTargetURL;
-        Sequence<PropertyValue>   aArgs( 1 );
+        Sequence<PropertyValue>   aArgs( 2 );
 
         // Add key modifier to argument list
         aArgs[0].Name  = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "KeyModifier" ));
         aArgs[0].Value <<= KeyModifier;
+        // Add "Referer" to identify the source of this request
+        aArgs[1].Name = rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "Referer" ));
+        aArgs[1].Value <<= rtl::OUString( RTL_CONSTASCII_USTRINGPARAM( "private:user" ));
 
         aTargetURL.Complete = aCommandURL;
         xURLTransformer->parseStrict( aTargetURL );
