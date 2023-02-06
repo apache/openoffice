@@ -90,9 +90,9 @@
 #include <expfld.hxx>
 #include <poolfmt.hxx>
 #include <pagedesc.hxx>
-#include <IMark.hxx>		// fuer SwBookmark ...
+#include <IMark.hxx>		// for SwBookmark ...
 #include <docsh.hxx>
-#include <editsh.hxx>		// fuer Start/EndAction
+#include <editsh.hxx>		// for Start/EndAction
 #include <docufld.hxx>
 #include <swcss1.hxx>
 #include <htmlvsh.hxx>
@@ -106,7 +106,7 @@
 
 #include <sfx2/viewfrm.hxx>
 
-#include <statstr.hrc>          // ResId fuer Statusleiste
+#include <statstr.hrc>          // ResId for Statusbar
 #include <swerror.h>
 
 #define FONTSIZE_MASK 			7
@@ -209,7 +209,7 @@ int HTMLReader::SetStrmStgPtr()
 
 }
 
-	// Aufruf fuer die allg. Reader-Schnittstelle
+	// Call of generic Read Interface
 sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, const String & rName )
 {
 	if( !pStrm )
@@ -223,8 +223,8 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 		Reader::SetNoOutlineNum( rDoc );
 		Reader::ResetFrmFmts( rDoc );
 
-		// Die HTML-Seitenvorlage setzen, wenn des kein HTML-Dokument ist,
-		// sonst ist sie schon gesetzt.
+		// set HTML-template, if the document is not html,
+		// else it is set.
 		if( !rDoc.get(IDocumentSettingAccess::HTML_MODE) )
 		{
             rDoc.InsertPoolItem( rPam, SwFmtPageDesc(
@@ -232,7 +232,7 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 		}
 	}
 
-	// damit keiner das Doc klaut!
+	// lock to prevent stealing of the Doc!
 	rDoc.acquire();
 	sal_uLong nRet = 0;
 	SvParserRef xParser = new SwHTMLParser( &rDoc, rPam, *pStrm,
@@ -250,7 +250,7 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 		sErr += ',';
 		sErr += String::CreateFromInt32((sal_Int32)xParser->GetLinePos());
 
-		// den Stream als Fehlernummer Transporter benutzen
+		// use Stream as transporter error nummber
 		nRet = *new StringErrorInfo( ERR_FORMAT_ROWCOL, sErr,
 									ERRCODE_BUTTON_OK | ERRCODE_MSG_ERROR );
 	}
@@ -335,7 +335,7 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 	pPam = new SwPaM( *rCrsr.GetPoint() );
 	memset( &aAttrTab, 0, sizeof( _HTMLAttrTable ));
 
-	// Die Font-Groessen 1-7 aus der INI-Datei lesen
+	// read Font-size 1-7 from INI-file 
 	SvxHtmlOptions* pHtmlOptions = SvxHtmlOptions::Get();
 	aFontHeights[0] = pHtmlOptions->GetFontSize( 0 ) * 20;
 	aFontHeights[1] = pHtmlOptions->GetFontSize( 1 ) * 20;
@@ -357,8 +357,8 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
         pDoc->SetDefault( aFontHeight );
     }
 
-	// Waehrend des Imports in den HTML-Modus schalten, damit die
-	// richrigen Vorlagen angelegt werden
+	// during import switch to HTML-Mode, in order
+	// to set correct templates
 	bOldIsHTMLMode = pDoc->get(IDocumentSettingAccess::HTML_MODE);
 	pDoc->set(IDocumentSettingAccess::HTML_MODE, true);
 
@@ -379,13 +379,13 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 	}
 	pCSS1Parser->SetDfltEncoding( gsl_getSystemTextEncoding() );
 
-	// Timer nur bei ganz normalen Dokumenten aufsetzen!
+	// use Timer only with normal Documents!
 	SwDocShell* pDocSh = pDoc->GetDocShell();
 	if( pDocSh )
 	{
-		bViewCreated = sal_True;			// nicht, synchron laden
+		bViewCreated = sal_True;			// do not load synchron
 
-		// es ist ein Sprungziel vorgegeben.
+		// a jumppoint is set.
 
 		if( pMed )
 		{
@@ -412,9 +412,9 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 					else if( sCmp.EqualsAscii( pMarkToOutline ) ||
 							sCmp.EqualsAscii( pMarkToText ) ||
 							sCmp.EqualsAscii( pMarkToFrame ) )
-						eJumpTo = JUMPTO_NONE;	// das ist nichts gueltiges!
+						eJumpTo = JUMPTO_NONE;	// this is not valid!
 					else
-						// ansonsten ist das ein normaler (Book)Mark
+						// else it is h normal (Book)Mark
 						nPos = STRING_LEN;
 				}
 				else
@@ -440,11 +440,11 @@ __EXPORT SwHTMLParser::~SwHTMLParser()
 	if( pDoc->GetDocShell() && nEventId )
 		Application::RemoveUserEvent( nEventId );
 
-	// das DocumentDetected kann ggfs. die DocShells loeschen, darum nochmals
-	// abfragen
+	// DocumentDetected eventual deletes DocShells,
+	// so requst it again
 	if( pDoc->GetDocShell() )
 	{
-		// Gelinkte Bereiche updaten
+		// update linked areas
         sal_uInt16 nLinkMode = pDoc->getLinkUpdateMode( true );
 		if( nLinkMode != NEVER && bAsync &&
 			SFX_CREATE_MODE_INTERNAL!=pDoc->GetDocShell()->GetCreateMode() )
@@ -488,7 +488,7 @@ __EXPORT SwHTMLParser::~SwHTMLParser()
 
 	if( !pDoc->release() )
 	{
-		// keiner will mehr das Doc haben, also weg damit
+		// no more use for Doc, delete it
 		delete pDoc;
         pDoc = NULL;
 	}
@@ -512,7 +512,7 @@ IMPL_LINK( SwHTMLParser, AsyncCallback, void*, /*pVoid*/ )
     if( ( pDoc->GetDocShell() && pDoc->GetDocShell()->IsAbortingImport() )
         || 1 == pDoc->getReferenceCount() )
     {
-        // wurde der Import vom SFX abgebrochen?
+        // Import of SFX aborted?
         eState = SVPAR_ERROR;
     }
     // <--
@@ -523,9 +523,9 @@ IMPL_LINK( SwHTMLParser, AsyncCallback, void*, /*pVoid*/ )
 
 SvParserState __EXPORT SwHTMLParser::CallParser()
 {
-	// einen temporaeren Index anlegen, auf Pos 0 so wird er nicht bewegt!
+	// set tempory Index, on Pos 0 in order avoid moving!
 	pSttNdIdx = new SwNodeIndex( pDoc->GetNodes() );
-	if( !IsNewDoc() )		// in ein Dokument einfuegen ?
+	if( !IsNewDoc() )		// insert to a new document ?
 	{
 		const SwPosition* pPos = pPam->GetPoint();
 
@@ -561,7 +561,7 @@ SvParserState __EXPORT SwHTMLParser::CallParser()
 		}
 	}
 
-	// Laufbalken anzeigen
+	// show progress bar
 	else if( !GetMedium() || !GetMedium()->IsRemote() )
 	{
 		rInput.Seek(STREAM_SEEK_TO_END);
@@ -586,23 +586,22 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 	nContinue++;
 #endif
 
-	// Wenn der Import (vom SFX) abgebrochen wurde, wird ein Fehler
-	// gesetzt aber trotzdem noch weiter gemacht, damit vernuenftig
-	// aufgeraeumt wird.
+	// if Import (vom SFX) has been aborted, an error is set
+	// in order to clean up, the process continues
 	ASSERT( SVPAR_ERROR!=eState,
 			"SwHTMLParser::Continue: bereits ein Fehler gesetzt" );
 	if( pDoc->GetDocShell() && pDoc->GetDocShell()->IsAbortingImport() )
 		eState = SVPAR_ERROR;
 
-	// Die ViewShell vom Dokument holen, merken und als aktuelle setzen.
+	// get ViewShell from Document, memorize and set as current.
 	ViewShell *pInitVSh = CallStartAction();
 
 	if( SVPAR_ERROR != eState && GetMedium() && !bViewCreated )
 	{
-		// Beim ersten Aufruf erstmal returnen, Doc anzeigen
-		// und auf Timer Callback warten.
-		// An dieser Stelle wurde im CallParser gerade mal ein Zeichen
-		// gelesen und ein SaveState(0) gerufen.
+		// returnen at first call, show Doc
+		// and wait for Timer Callback.
+		// At this point CallParser read only one character 
+		//and a SaveState(0) called.
 		eState = SVPAR_PENDING;
 		bViewCreated = sal_True;
 		pDoc->SetInLoadAsynchron( sal_True );
@@ -621,7 +620,7 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 		pDoc->GetDocShell()->EnableSetModified( sal_False );
 	}
 
-	// waehrend des einlesens kein OLE-Modified rufen
+	// during read. do not call OLE-Modify 
 	Link aOLELink( pDoc->GetOle2Link() );
 	pDoc->SetOle2Link( Link() );
 
@@ -629,31 +628,30 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
     bool const bWasUndo = pDoc->GetIDocumentUndoRedo().DoesUndo();
     pDoc->GetIDocumentUndoRedo().DoUndo(false);
 
-	// Wenn der Import abgebrochen wird, kein Continue mehr rufen.
-	// Falls ein Pending-Stack existiert aber durch einen Aufruf
-	// von NextToken dafuer sorgen, dass der Pending-Stack noch
-	// beendet wird.
+	// If Import aborts, do not call Continue.
+	// if a Pending-Stack exists, call NextToken.
+	// NextToken will take care of clean up.
 	if( SVPAR_ERROR == eState )
 	{
 		ASSERT( !pPendStack || pPendStack->nToken,
-				"SwHTMLParser::Continue: Pending-Stack ohne Token" );
+				"SwHTMLParser::Continue: Pending-Stack without Token" );
 		if( pPendStack && pPendStack->nToken )
 			NextToken( pPendStack->nToken );
 		ASSERT( !pPendStack,
-				"SwHTMLParser::Continue: Es gibt wieder einen Pend-Stack" );
+				"SwHTMLParser::Continue: a Pend-Stack exists again" );
 	}
 	else
 	{
 		HTMLParser::Continue( pPendStack ? pPendStack->nToken : nToken );
 	}
 
-	// Laufbalken wieder abschalten
+	// switch progress bar off
 	EndProgress( pDoc->GetDocShell() );
 
 	sal_Bool bLFStripped = sal_False;
 	if( SVPAR_PENDING != GetStatus() )
 	{
-		// noch die letzten Attribute setzen
+		// set last Attributes
 		{
 			if( aScriptSource.Len() )
 			{
@@ -673,11 +671,11 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 					EndObject();
 			}
 
-			// ggf. ein noch vorhandes LF hinter dem letzen Absatz entfernen
+			// remove LF behind last paragaf if exists
 			if( IsNewDoc() )
 				bLFStripped = StripTrailingLF() > 0;
 
-			// noch offene Nummerierungen beenden.
+			// end open nummerations.
 			while( GetNumInfo().GetNumRule() )
 				EndNumBulList();
 
@@ -698,11 +696,11 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 
 			SetAttr( sal_False );
 
-			// Noch die erst verzoegert gesetzten Styles setzen
+			// set deferred Styles
 			pCSS1Parser->SetDelayedStyles();
 		}
 
-		// den Start wieder korrigieren
+		// fix Start
 		if( !IsNewDoc() && pSttNdIdx->GetIndex() )
 		{
 			SwTxtNode* pTxtNode = pSttNdIdx->GetNode().GetTxtNode();
@@ -710,7 +708,7 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 			if( pTxtNode && pTxtNode->CanJoinNext( &aNxtIdx ))
 			{
 				xub_StrLen nStt = pTxtNode->GetTxt().Len();
-				// wenn der Cursor noch in dem Node steht, dann setze in an das Ende
+				// if Cursor is in Node, set it to the end
 				if( pPam->GetPoint()->nNode == aNxtIdx )
 				{
 					pPam->GetPoint()->nNode = *pSttNdIdx;
@@ -718,11 +716,11 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 				}
 
 #ifdef DBG_UTIL
-// !!! sollte nicht moeglich sein, oder ??
+// !!! should not be possible, should it ??
 ASSERT( pSttNdIdx->GetIndex()+1 != pPam->GetBound( sal_True ).nNode.GetIndex(),
-			"Pam.Bound1 steht noch im Node" );
+			"Pam.Bound1 is in Node" );
 ASSERT( pSttNdIdx->GetIndex()+1 != pPam->GetBound( sal_False ).nNode.GetIndex(),
-			"Pam.Bound2 steht noch im Node" );
+			"Pam.Bound2 is in Node" );
 
 if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_True ).nNode.GetIndex() )
 {
@@ -737,7 +735,7 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 					pTxtNode->GetTxt().Len() + nCntPos );
 }
 #endif
-				// Zeichen Attribute beibehalten!
+				// keep character Attribute!
 				SwTxtNode* pDelNd = aNxtIdx.GetNode().GetTxtNode();
 				if( pTxtNode->GetTxt().Len() )
 					pDelNd->FmtToTxtAttr( pTxtNode );
@@ -752,12 +750,12 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 	{
 		if( nMissingImgMaps )
 		{
-			// es fehlen noch ein paar Image-Map zuordungen.
-			// vielleicht sind die Image-Maps ja jetzt da?
+			// some image map assigns are missing.
+			// maybe Image-Maps do exist now?
 			ConnectImageMaps();
 		}
 
-		// jetzt noch den letzten ueberfluessigen Absatz loeschen
+		// now delete the last needless paragraph
 		SwPosition* pPos = pPam->GetPoint();
 		if( !pPos->nContent.GetIndex() && !bLFStripped )
 		{
@@ -816,22 +814,23 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 			}
 		}
 
-		// nun noch das SplitNode vom Anfang aufheben
+		// now cancel the SplitNode from the start
 		else if( !IsNewDoc() )
 		{
-			if( pPos->nContent.GetIndex() ) 	// dann gabs am Ende kein <P>,
-				pPam->Move( fnMoveForward, fnGoNode ); 	// als zum naechsten Node
+			if( pPos->nContent.GetIndex() ) 	// then there was no <P> at the end
+				pPam->Move( fnMoveForward, fnGoNode ); 	// to the next node
 			SwTxtNode* pTxtNode = pPos->nNode.GetNode().GetTxtNode();
 			SwNodeIndex aPrvIdx( pPos->nNode );
 			if( pTxtNode && pTxtNode->CanJoinPrev( &aPrvIdx ) &&
 				*pSttNdIdx <= aPrvIdx )
 			{
-				// eigentlich muss hier ein JoinNext erfolgen, aber alle Cursor
-				// usw. sind im pTxtNode angemeldet, so dass der bestehen
-				// bleiben MUSS.
+				// actually a JoinNext must be done here, but all cursors
+				// etc. are registered in the pTxtNode, 
+				// which MUST remain
 
-				// Absatz in Zeichen-Attribute umwandeln, aus dem Prev die
-				// Absatzattribute und die Vorlage uebernehmen!
+
+				// Convert paragraph to character attributes, 
+				// take over the paragraph attributes and the template from the Prev!
 				SwTxtNode* pPrev = aPrvIdx.GetNode().GetTxtNode();
 				pTxtNode->ChgFmtColl( pPrev->GetTxtColl() );
 				pTxtNode->FmtToTxtAttr( pPrev );
@@ -849,7 +848,7 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 			}
 		}
 
-		// und noch die DocumentInfo aufbereiten
+		// and prepare DocumentInfo
 		if( IsNewDoc() )
 		{
             SwDocShell *pDocShell(pDoc->GetDocShell());
@@ -878,8 +877,8 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 	if( SVPAR_PENDING != GetStatus() )
 		delete pSttNdIdx, pSttNdIdx = 0;
 
-	// sollte der Parser der Letzte sein, der das Doc haelt, dann braucht
-	// man hier auch nichts mehr tun, Doc wird gleich zerstoert!
+	// should the parser be the last one to hold the doc, 
+	// no need to do anything here either, doc is about to be destroyed!
 	if( 1 < pDoc->getReferenceCount() )
 	{
 		if( bWasUndo )
@@ -889,10 +888,10 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
         }
 		else if( !pInitVSh )
 		{
-			// Wenn zu Beginn des Continue keine Shell vorhanden war,
-			// kann trotzdem mitlerweile eine angelegt worden sein.
-			// In dieses Fall stimmt das bWasUndo-Flag nicht und
-			// wir muessen das Undo noch anschalten.
+			// If there was no shell at the beginning of the Continue,
+			// nevertheless one may have been created in the meantime.
+			// In this case the bWasUndo flag is not correct and 
+			// a switch on the undo is necessary.
 			ViewShell *pTmpVSh = CheckActionViewShell();
 			if( pTmpVSh )
             {
@@ -911,10 +910,11 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 	}
 
 
-	// Wenn die Dokuemnt-ViewShell noch existiert und eine Action
-	// offen ist (muss bei Abbruch nicht sein), die Action beenden,
-	// uns von der Shell abmelden und schliesslich die alte Shell
-	// wieder rekonstruieren.
+	// If the Dokuemnt-ViewShell still exists and an Action
+	// is open (doesn't have to be on abort), terminate the action,
+	// log out of the shell and finally reconstruct the old shell
+	// again.
+
 	CallEndAction( sal_True );
 
 #ifdef DBG_UTIL
@@ -929,9 +929,9 @@ void SwHTMLParser::Modify( const SfxPoolItem* pOld, const SfxPoolItem *pNew )
 	case RES_OBJECTDYING:
 		if( ((SwPtrMsgPoolItem *)pOld)->pObject == GetRegisteredIn() )
 		{
-			// dann uns selbst beenden
+			// then finish ourselves
 			GetRegisteredInNonConst()->Remove( this );
-			ReleaseRef();					// ansonsten sind wir fertig!
+			ReleaseRef();					// otherwise we are done!
 		}
 		break;
 	}
@@ -949,22 +949,21 @@ void SwHTMLParser::DocumentDetected()
 		CallEndAction( sal_True, sal_True );
 
         pDoc->GetIDocumentUndoRedo().DoUndo(false);
-		// Durch das DocumentDetected wurde im allgemeinen eine
-		// ViewShell angelegt. Es kann aber auch sein, dass sie
-		// erst spaeter angelegt wird, naemlich dann, wenn die UI
-		// gecaptured ist.
+		// By DocumentDetected a ViewShell has been created. 
+		// But it can also be that it is created later,
+		// namely when the UI is is captured.
 		CallStartAction();
 	}
 }
 
-// wird fuer jedes Token gerufen, das in CallParser erkannt wird
+// is called for each token that is recognized in CallParser
 void __EXPORT SwHTMLParser::NextToken( int nToken )
 {
 	if( ( pDoc->GetDocShell() && pDoc->GetDocShell()->IsAbortingImport() )
 		|| 1 == pDoc->getReferenceCount() )
 	{
-		// wurde der Import vom SFX abgebrochen? Wenn ein Pending-Stack
-		// existiert den noch aufraumen
+		// was the import aborted by the SFX? If a pending stack
+		// still exists to clean it up
 		eState = SVPAR_ERROR;
 		ASSERT( !pPendStack || pPendStack->nToken,
 				"SwHTMLParser::NextToken: Pending-Stack ohne Token" );
@@ -977,12 +976,12 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	{
 		switch( nToken )
 		{
-			// Tabellen werden ueber rekusive Methodenaufrufe gelesen
+			// tables are read via recusive method calls
 		case HTML_TABLE_ON:
-			// Bei CSS-Deklarationen muss evtl. noch auf das
-			// Ende eines File-Downloads gewartet werden.
+			// For CSS declarations you may have to wait for the
+			// end of a file download.
 		case HTML_LINK:
-			// Bei Controls muss evtl. noch die Groesse gesetzt werden.
+			// For controls, the size may still have to be set.
 		case HTML_INPUT:
 		case HTML_TEXTAREA_ON:
 		case HTML_SELECT_ON:
@@ -995,9 +994,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	}
 #endif
 
-	// Die folgeneden Spezialfaelle muessen vor der Filter-Detection behandelt
-	// werden, denn der Inhalt des Titels, etc. wird auch in Netcape nicht
-	// zur Filter-Detection herangezogen.
+	// The following special cases have to be handled before the filter detection
+	// because the content of the title, etc. is not used for filter even in Netcape.
 	if( !pPendStack )
 	{
 		if( bInTitle )
@@ -1055,10 +1053,10 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 	}
 
-	// Wenn wir noch nicht wissen, was fuer ein Dokument wir vor uns haben,
-	// versuchen wir das erstmal rauszufinden. Das muss fuer Controls in
-	// Fall vor dem Einfuegen des Controls passieren, weil beim Einfuegen
-	// bereits eine View benoetigt wird.
+	// If we don't know yet, what kind of document we have in front of us,
+	// let's try to find out first. This must be done for controls in
+	// case before inserting the control, because when inserting the control
+	// a view is already needed.
 	if( !bDocInitialized )
 		DocumentDetected();
 
@@ -1066,14 +1064,14 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	sal_Bool bUpperSpaceSave = bUpperSpace;
 	bUpperSpace = sal_False;
 
-	// Die folgenden Speziallfaelle muessen oder koennen nach der
-	// Filter-Detection erfolgen.
+	// The following special cases must or can be made after the
+	// filter detection.
 	if( !pPendStack )
 	{
 		if( bInFloatingFrame )
 		{
-			// <SCRIPT> wird hier (von uns) ignoriert, weil es auch in
-			// Applets ignoriert wird!
+			// <SCRIPT> is ignored here (by us), because it is also ignored in
+			// applets is ignored!
 			if( HTML_IFRAME_OFF == nToken )
 			{
 				bCallNextToken = sal_False;
@@ -1107,9 +1105,9 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		else if( pAppletImpl )
 		{
-			// in einem Applet interessieren uns (erstmal) nur <PARAM>-Tags
-			// und das </APPLET>.
-			// <SCRIPT> wird hier (von Netscape) ignoriert!
+			// in an applet we are (for now) only interested in <PARAM> tags.
+			// and the </APPLET>.
+			// <SCRIPT> is ignored here (by Netscape)!
 
 			switch( nToken )
 			{
@@ -1131,9 +1129,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		else if( bTextArea )
 		{
-			// in einer TextArea wird alles bis zum </TEXTAREA> als Text
-			// eingefuegt
-			// <SCRIPT> wird hier (von Netscape) ignoriert!
+			// in a TextArea everything up to </TEXTAREA> is inserted as text.
+			// <SCRIPT> is ignored here (by Netscape)!
 
 			switch( nToken )
 			{
@@ -1151,7 +1148,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		else if( bSelect )
 		{
-			// MUSS nach bNoScript kommen!
+			// MUST come after bNoScript!
 			switch( nToken )
 			{
 			case HTML_SELECT_OFF:
@@ -1173,20 +1170,19 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 			case HTML_NOSCRIPT_ON:
 			case HTML_NOSCRIPT_OFF:
 			case HTML_RAWDATA:
-				// im normalen switch bahandeln
+				// handle in the normal switch
 				break;
 
 			default:
-				// ignorieren
+				// ignore
 				return;
 			}
 		}
 		else if( pMarquee )
 		{
-			// in einer TextArea wird alles bis zum </TEXTAREA> als Text
-			// eingefuegt
-			// Die <SCRIPT>-Tags werden vom MS-IE ignoriert, von uns das
-			// geasmte Script
+			// in a TextArea everything up to </TEXTAREA> is inserted as text.
+			// The <SCRIPT> tags will be ignored by MS-IE, by us the
+			// whole script
 			switch( nToken )
 			{
 			case HTML_MARQUEE_OFF:
@@ -1234,9 +1230,9 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		else if( aUnknownToken.Len() )
 		{
-			// Unbekannte Token im Header werden nur durch ein passendes
-			// End-Token, </HEAD> oder <BODY> wieder beendet. Darin wird Text
-			// ignoriert.
+			// Unknown tokens in the header are only terminated by a matching
+			// end token, </HEAD> or <BODY> again. In this text
+			// is ignored.
 			switch( nToken )
 			{
 			case HTML_UNKNOWNCONTROL_OFF:
@@ -1267,8 +1263,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		if( IsNewDoc() )
 		{
 			InsertBodyOptions();
-			// Falls es eine Vorlage fuer die erste oder rechte Seite gibt,
-			// setzen wir die hier.
+			// If there is a template for the first or right side,
+			// we set it here.
 			const SwPageDesc *pPageDesc = 0;
 			if( pCSS1Parser->IsSetFirstPageDesc() )
 				pPageDesc = pCSS1Parser->GetFirstPageDesc();
@@ -1414,7 +1410,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		else
 			bGetIDOption = sal_True;
-			// <BR>s in <PRE> aehneln echten LFs, deshalb kein break
+			// <BR>s in <PRE> resemble real LFs, therefore no break
 
 	case HTML_NEWPARA:
 		// CR in PRE/LISTING/XMP
@@ -1422,10 +1418,10 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 			if( HTML_NEWPARA==nToken ||
 				pPam->GetPoint()->nContent.GetIndex() )
 			{
-				AppendTxtNode(); // lf gibts hier nicht, deshalb unkritisch
+				AppendTxtNode(); // lf does not exist here, therefore uncritical
 				SetTxtCollAttrs();
 			}
-			// Laufbalkenanzeige
+			// progress bar
 			if( !GetMedium() || !GetMedium()->IsRemote() )
 				::SetProgressState( rInput.Tell(), pDoc->GetDocShell() );
 		}
@@ -1450,8 +1446,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_TEXTTOKEN:
-		// dann fuege den String ein, ohne das Attribute am Ende
-		// aufgespannt werden.
+        // then insert the string without adding any attributes to the end
 		if( aToken.Len() && ' '==aToken.GetChar(0) && !IsReadPRE() )
 		{
 			xub_StrLen nPos = pPam->GetPoint()->nContent.GetIndex();
@@ -1479,8 +1474,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 				DocumentDetected();
             pDoc->InsertString( *pPam, aToken );
 
-			// wenn es noch vorlaefige Absatz-Attribute gibt, der Absatz aber
-			// nicht leer ist, dann sind die Absatz-Attribute entgueltig.
+            // if there are still preliminary paragraph attributes, but the paragraph
+			// is not empty, then the paragraph attributes are invalid.
 			if( aParaAttrs.Count() )
 				aParaAttrs.Remove( 0, aParaAttrs.Count() );
 
@@ -1494,8 +1489,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 
 	case HTML_IMAGE:
 		InsertImage();
-		// sollte der Parser der Letzte sein, der das Doc haelt, dann kann
-		// man hier abbrechen und einen Fehler setzen.
+		// If the parser should be the last one to hold the doc, then abort here and set an error.
 		if( 1 == pDoc->getReferenceCount() )
 		{
 			eState = SVPAR_ERROR;
@@ -1532,20 +1526,19 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	case HTML_DT_ON:
 		if( nOpenParaToken )
 			EndPara();
-		EndDefListItem( 0, sal_False );// <DD>/<DT> beenden und keine Vorl. setzen
+		EndDefListItem( 0, sal_False );// <DD>/<DT> quit and set no preliminaries
 		NewDefListItem( nToken );
 		break;
 
 	case HTML_DD_OFF:
 	case HTML_DT_OFF:
-		// siehe HTML_LI_OFF
-		// eigentlich muesste man ein DD/DT jetzt beenden. Da aber sowhl
-		// Netscape als auch Microsoft das nicht tun, machen wir das eben
-		// auch nicht.
+		// see HTML_LI_OFF
+		// actually a DD/DT should be terminated now. But since both
+		// Netscape and Microsoft don't do that, we don't do that either.
 		EndDefListItem( nToken, sal_False );
 		break;
 
-	// Bereiche
+	// Areas
 	case HTML_DIVISION_ON:
 	case HTML_CENTER_ON:
 		if( nOpenParaToken )
@@ -1594,7 +1587,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		EndForm();
 		break;
 
-	// Vorlagen:
+	// Templates:
 	case HTML_PARABREAK_ON:
 		if( nOpenParaToken )
 			EndPara( sal_True );
@@ -1640,7 +1633,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_PREFORMTXT_OFF:
-		bNoParSpace = sal_True; // der letzte PRE-Absatz muss einen Zeilenabstand bekommen
+		bNoParSpace = sal_True; // the last PRE paragraph must get a line spacing
 		EndTxtFmtColl( HTML_PREFORMTXT_OFF );
 		break;
 
@@ -1688,7 +1681,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 				!pPam->GetNode()->FindFootnoteStartNode() ) )
 			{
 				if ( nParaCnt < 5 )
-					Show();		// bis hierhin schon mal anzeigen
+					Show();		// show up to this point
 
 				SvxAdjust eAdjust = aAttrTab.pAdjust
 					? ((const SvxAdjustItem&)aAttrTab.pAdjust->GetItem()).
@@ -1727,11 +1720,11 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 			(pPam->GetPoint()->nContent.GetIndex()
 			|| HTML_PARABREAK_ON==nOpenParaToken) )
 		{
-			// nure bei <P><LI> den Absatz beenden, aber nicht bei <DD><LI>
+			// only <P><LI> end paragraf, not with <DD><LI>
 			EndPara();
 		}
 
-		EndNumBulListItem( 0, sal_False );// <LI>/<LH> beenden und keine Vorl. setzen
+		EndNumBulListItem( 0, sal_False );// <LI>/<LH> quit and set no template
 		NewNumBulListItem( nToken );
 		break;
 
@@ -1740,7 +1733,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		EndNumBulListItem( nToken, sal_False );
 		break;
 
-	// Attribute :
+	// Attributs :
 	case HTML_ITALIC_ON:
 		{
             SvxPostureItem aPosture( ITALIC_NORMAL, RES_CHRATR_POSTURE );
@@ -1899,7 +1892,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	case HTML_HTML_OFF:
 	case HTML_HEAD_ON:
 	case HTML_TITLE_OFF:
-		break;		// nicht weiter auswerten, oder???
+		break;		// do not go on, right???
 	case HTML_HTML_ON:
 		{
 			const HTMLOptions *pHTMLOptions = GetOptions();
@@ -1948,7 +1941,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	case HTML_COMMENT:
 		if( ( aToken.Len() > 5 ) && ( ! bIgnoreHTMLComments ) )
 		{
-			// als Post-It einfuegen
+			// insert as Post-It
 			// MIB 8.12.2000: If there are no space characters right behind
 			// the <!-- and on front of the -->, leave the comment untouched.
 			if( ' ' == aToken.GetChar( 3 ) &&
@@ -1968,10 +1961,9 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_MAP_ON:
-		// Image Maps werden asynchron gelesen: Zunaechst wird nur eine
-		// ImageMap angelegt. Die Bereiche kommen spaeter. Trozdem wird
-		// die ImageMap schon in das IMap-Array eingetragen, denn sie
-		// koennte ja schon verwendet werden.
+		// Image Maps are read asynchron: At first setup only an
+		// ImageMap. The Areas are added later. Never the less add
+		// the ImageMap to the IMap-Array, because it could be used
 		pImageMap = new ImageMap;
 		if( ParseMapOptions( pImageMap) )
 		{
@@ -1987,8 +1979,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_MAP_OFF:
-		// jetzt gibt es keine ImageMap mehr (IMap nicht Loeschen, denn
-		// die stckt ja schon in dem Array!)
+		// the ImageMap does not exist anymore
+		// but do not delete it, since it has been added to the array
 		pImageMap = 0;
 		break;
 
@@ -2009,13 +2001,13 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_UNKNOWNCONTROL_ON:
-		// Im Header muss der Inhalt von unbekannten Token ignoriert werden,
-		// es sei denn, das Token faengt mit einem '!' an.
+	    // Integrate unkown tokens to the header,
+	    // exept token starts with '!'
 		if( IsInHeader() && !IsReadPRE() && !aUnknownToken.Len() &&
 			sSaveToken.Len() && '!' != sSaveToken.GetChar(0) &&
 			'%' != sSaveToken.GetChar(0) )
 			aUnknownToken = sSaveToken;
-		// kein break
+		// no break
 
 	default:
 		bInsertUnknown = bKeepUnknown;
@@ -2041,8 +2033,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		InsertComment( aComment );
 	}
 
-	// wenn es noch vorlaefige Absatz-Attribute gibt, der Absatz aber
-	// nicht leer ist, dann sind die Absatz-Attribute entgueltig.
+    // if temporary paragraph attributes exists and the paragraph is
+	// not empty, then paragraph attributes are final
 	if( aParaAttrs.Count() && pPam->GetPoint()->nContent.GetIndex() )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 }
@@ -2094,13 +2086,13 @@ void lcl_swhtml_getItemInfo( const _HTMLAttr& rAttr,
 
 sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNum )
 {
-	// Ein harter Zeilen-Umbruch am Ende muss immer entfernt werden.
-	// Einen zweiten ersetzen wir durch einen Absatz-Abstand.
+	// A hard line feed has to be always removed.
+	// A second line feed is replaced by a paragraph spacing
 	xub_StrLen nLFStripped = StripTrailingLF();
 	if( (AM_NOSPACE==eMode || AM_SOFTNOSPACE==eMode) && nLFStripped > 1 )
 		eMode = AM_SPACE;
 
-	// die harten Attribute an diesem Absatz werden nie mehr ungueltig
+	// hard attributes in this paragraph can not become invalid
 	if( aParaAttrs.Count() )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 
@@ -2142,8 +2134,8 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 
 	sal_Bool bRet = pDoc->AppendTxtNode( *pPam->GetPoint() );
 
-	// Zeichen-Attribute aufspalten und ggf keine setzen, die ueber den
-	// ganzen Absatz gesetzt sind
+	// split character attributes  and unset if they range over the
+	// complete paragraph
 	const SwNodeIndex& rEndIdx = aOldPos.nNode;
 	xub_StrLen nEndCnt = aOldPos.nContent.GetIndex();
 	const SwPosition& rPos = *pPam->GetPoint();
@@ -2175,7 +2167,7 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 					sal_Bool bInsert = sal_True;
 				   	lcl_swhtml_getItemInfo( *pAttr, bScript, bFont,
 											nScriptItem );
-						// den besehrigen Teil setzen
+					// set parts which we have so far
 					if( bInsert && bScript )
 					{
 						const SwTxtNode *pTxtNd =
@@ -2221,12 +2213,12 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 							pAttr->Clone( rEndIdx, nEndCnt );
 						pSetAttr->nSttCntnt = nStt;
 
-						// Wenn das Attribut den gesamten Absatz umspannt, werden
-						// alle auesseren Attribute nicht mehr beachtet. Deshalb
-						// darf es auch nicht in die Prev-Liste eines ausseren
-						// Attributs eingetragen werden, denn dieses wird ja
-						// erstmal nicht gesetzt. Das fuehrt zu verschiebenungen,
-						// wenn Felder ins Rennen kommen (siehe #51020#)
+						// If the attribute spans the entire paragraph, then
+						// all other attributes are ignored. Therefore
+						// it must not be added to the prev list of an outer
+						// attribute, because this attribute is 
+						// not set for the time being. This leads to shifts,
+						// when fields are added to the race (see #51020#).
 						if( !pNext || bWholePara )
 						{
 							sal_uInt16 nTmp = pSetAttr->bInsAtStart ? 0
@@ -2241,7 +2233,7 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
 						_HTMLAttr *pPrev = pAttr->GetPrev();
 						if( pPrev )
 						{
-							// Die Previous-Attribute muessen trotzdem gesetzt werden.
+							// The Previous attributes must be set anyway.
 							if( !pNext || bWholePara )
 							{
 								sal_uInt16 nTmp = pPrev->bInsAtStart ? 0 : aSetAttrTab.Count();
@@ -2271,7 +2263,7 @@ sal_Bool SwHTMLParser::AppendTxtNode( SwHTMLAppendMode eMode, sal_Bool bUpdateNu
             pPam->GetNode()->GetTxtNode()->ResetAttr( RES_PARATR_NUMRULE );
     }
 
-    // Attrubute im Absatz davor sollte man jetzt setzen (wegen JavaScript)
+    // because of JavaScript, Attributes in the paragraph should be set now
     SetAttr();
 
 	// Now it is time to get rid of all script dependent hints that are
@@ -2393,11 +2385,11 @@ void SwHTMLParser::AddParSpace()
 
 void SwHTMLParser::Show()
 {
-	// Hier wird
-	// - ein EndAction gerufen, damit formatiert wird
-	// - ein Reschedule gerufen,
-	// - die eiegen View-Shell wieder gesetzt
-	// - und Start-Action gerufen
+	// Here
+	// - an EndAction is called, which is formatted
+	// - a Reschedule is called,
+	// - the current view shell is set again
+	// - and start action is called
 
 	ASSERT( SVPAR_WORKING==eState, "Show nicht im Working-State - Das kann ins Auge gehen" );
 	ViewShell *pOldVSh = CallEndAction();
@@ -2407,16 +2399,15 @@ void SwHTMLParser::Show()
 	if( ( pDoc->GetDocShell() && pDoc->GetDocShell()->IsAbortingImport() )
 		|| 1 == pDoc->getReferenceCount() )
 	{
-		// wurde der Import vom SFX abgebrochen?
+		// was the import aborted by SFX?
 		eState = SVPAR_ERROR;
 	}
 
-	// Die ViewShell nochmal holen, denn sie koennte im Reschedule
-	// zerstoert wirden sein.
+	// Get the ViewShell again, because it could be destroyed during reschedule
 	ViewShell *pVSh = CallStartAction( pOldVSh );
 
-	// ist der aktuelle Node nicht mehr sichtbar, dann benutzen wir
-	// eine groessere Schrittweite
+	// if the current node is no longer visible, then we use
+	// a larger step size
 	if( pVSh )
     {
         nParaCnt = (pPam->GetPoint()->nNode.GetNode().IsInVisibleArea(pVSh))
@@ -2426,14 +2417,14 @@ void SwHTMLParser::Show()
 
 void SwHTMLParser::ShowStatline()
 {
-	// Hier wird
-	// - ein Reschedule gerufen, damit gescrollt werden kann
-	// - die eiegen View-Shell wieder gesetzt
-	// - ein Start/End-Action gerufen, wenn gescrollt wurde.
+	// Here
+	// - a reschedule is called, so that scrolling is possible
+	// - the current view shell is set again
+	// - a start/end action is called if scrolling was done.
 
 	ASSERT( SVPAR_WORKING==eState, "ShowStatLine nicht im Working-State - Das kann ins Auge gehen" );
 
-	// Laufbalkenanzeige
+	// progress bar
 	if( !GetMedium() || !GetMedium()->IsRemote() )
 	{
 		::SetProgressState( rInput.Tell(), pDoc->GetDocShell() );
@@ -2445,7 +2436,7 @@ void SwHTMLParser::ShowStatline()
 
 		if( ( pDoc->GetDocShell() && pDoc->GetDocShell()->IsAbortingImport() )
 			|| 1 == pDoc->getReferenceCount() )
-			// wurde der Import vom SFX abgebrochen?
+		// was the import aborted by SFX?
 			eState = SVPAR_ERROR;
 
 		ViewShell *pVSh = CheckActionViewShell();
@@ -2507,7 +2498,7 @@ ViewShell *SwHTMLParser::CallEndAction( sal_Bool bChkAction, sal_Bool bChkPtr )
 
 	if( bSetCrsr )
 	{
-		// an allen CrsrEditShells die Cursor auf den Doc-Anfang setzen
+		// at all CrsrEditShells set the cursors to the doc start.
 		ViewShell *pSh = pActionViewShell;
 		do {
 			if( pSh->IsA( TYPE( SwCrsrShell ) ) )
@@ -2519,7 +2510,7 @@ ViewShell *SwHTMLParser::CallEndAction( sal_Bool bChkAction, sal_Bool bChkPtr )
 	}
 	if( pActionViewShell->ISA( SwEditShell ) )
 	{
-		//Schon gescrollt?, dann dafuer sorgen, dass die View sich nicht bewegt!
+		//Scrolled already?, then make sure that the view does not move!
 		const sal_Bool bOldLock = pActionViewShell->IsViewLocked();
 		pActionViewShell->LockView( sal_True );
 		const sal_Bool bOldEndActionByVirDev = pActionViewShell->IsEndActionByVirDev();
@@ -2528,7 +2519,7 @@ ViewShell *SwHTMLParser::CallEndAction( sal_Bool bChkAction, sal_Bool bChkPtr )
 		pActionViewShell->SetEndActionByVirDev( bOldEndActionByVirDev );
 		pActionViewShell->LockView( bOldLock );
 
-		// bChkJumpMark ist nur gesetzt, wenn das Object auch gefunden wurde
+		// bChkJumpMark is only set if the object was found.
 		if( bChkJumpMark )
 		{
 			const Point aVisSttPos( DOCUMENTBORDER, DOCUMENTBORDER );
@@ -2541,8 +2532,8 @@ ViewShell *SwHTMLParser::CallEndAction( sal_Bool bChkAction, sal_Bool bChkPtr )
 	else
 		pActionViewShell->EndAction();
 
-	// sollte der Parser der Letzte sein, der das Doc haelt, dann kann
-	// man hier abbrechen und einen Fehler setzen.
+	// If the parser should be the last one to hold the doc, then you can
+	// abort here and set an error.
 	if( 1 == pDoc->getReferenceCount() )
 	{
 		eState = SVPAR_ERROR;
@@ -2593,14 +2584,12 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 		sal_Bool bSetAttr;
 		if( bChkEnd )
 		{
-			// fix #42192#: Zechen-Attribute mit Ende moeglich frueh,
-			// also noch im aktuellen Absatz setzen (wegen JavaScript
-			// und diversen Chats). das darf man aber nicht fuer Attribute,
-			// die ueber den ganzen Absatz aufgspannt werden sollen, weil
-			// sie aus Absatzvorlgen stammen, die nicht gesetzt werden
-			// koennen. Weil die Attribute mit SETATTR_DONTREPLACE
-			// eingefuegt werden, sollte man sie auch anchtraeglich
-			// noch setzen koennen.
+			// fix #42192#: set character attributes in current paragraph with end 
+			// as early as possible, because of JavaScript and various chats.
+			// Except attributes, which are spanned over the whole paragraph, because
+			// they come from paragraph occurrences that cannot be set.
+			// Because the attributes are inserted with SETATTR_DONTREPLACE
+			// they should be able to set them subsequently.
 			bSetAttr = ( nEndParaIdx < rEndIdx.GetIndex() &&
 						 (RES_LR_SPACE != nWhich || !GetNumInfo().GetNumRule()) ) ||
 					   ( !pAttr->IsLikePara() &&
@@ -2613,9 +2602,8 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 		}
 		else
 		{
-			// Attribiute im Content-Bereich duerfen nicht gesetzt
-			// werden, wenn wir in einem Sonderbereich stehen, aber
-			// umgekekehrt schon.
+			// Attributes in the content area may not be set in 
+			// special areai, but if the opposite is true.
 			sal_uLong nEndOfIcons = pDoc->GetNodes().GetEndOfExtras().GetIndex();
 			bSetAttr = nEndParaIdx < rEndIdx.GetIndex() ||
 					   rEndIdx.GetIndex() > nEndOfIcons ||
@@ -2624,8 +2612,8 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 
 		if( bSetAttr )
 		{
-			// Das Attribute darf nicht in der liste der vorlaeufigen
-			// Absatz-Attribute stehen, weil es sonst geloescht wurde.
+			// The attribute must not be in the list of previous
+			// paragraph attributes, otherwise it will be deleted.
 			sal_uInt16 ii = aParaAttrs.Count();
 			while( ii-- )
 			{
@@ -2635,7 +2623,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 			}
 
 
-			// dann also setzen
+			// then set
 			aSetAttrTab.Remove( n, 1 );
 
 			while( pAttr )
@@ -2643,7 +2631,7 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 				_HTMLAttr *pPrev = pAttr->GetPrev();
 				if( !pAttr->bValid )
 				{
-					// ungueltige Attribute koennen gloescht werden
+					// invalid attributes can be deleted
 					delete pAttr;
 					pAttr = pPrev;
 					continue; //break;
@@ -2653,14 +2641,14 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
                 pCNd = pAttr->nSttPara.GetNode().GetCntntNode();
 				if( !pCNd )
 				{
-					// durch die elende Loescherei von Nodes kann auch mal
-					// ein Index auf einen End-Node zeigen :-(
+					// due to the miserable deletion of nodes also sometimes
+					// an index can point to an end node :-(
                     if ( (pAttr->GetSttPara() == pAttr->GetEndPara()) &&
                          !isTXTATR_NOEND(nWhich) )
 					{
-						// wenn der End-Index auch auf den Node zeigt
-						// brauchen wir auch kein Attribut mehr zu setzen,
-						// es sei denn, es ist ein Text-Attribut.
+						// if the end index also points to the node
+						// we don't need to set an attribute anymore,
+						// unless it is a text attribute.
 						delete pAttr;
 						pAttr = pPrev;
 						continue; //break;
@@ -2680,8 +2668,8 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 
 
 
-				// durch das Loeschen von BRs kann der Start-Index
-				// auch mal hinter das Ende des Textes zeigen
+				// by deleting BRs, the start index can
+				// can also sometimes point behind the end of the text
 				if( pAttr->nSttCntnt > pCNd->Len() )
 					pAttr->nSttCntnt = pCNd->Len();
 				pAttrPam->GetPoint()->nContent.Assign( pCNd, pAttr->nSttCntnt );
@@ -2713,8 +2701,8 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 					pAttr->nEndCntnt = pCNd->Len();
 				}
 
-				// durch das Loeschen von BRs kann der End-Index
-				// auch mal hinter das Ende des Textes zeigen
+				// by deleting BRs, the end index can
+				// can also sometimes point behind the end of the text
 				if( pAttr->nEndCntnt > pCNd->Len() )
 					pAttr->nEndCntnt = pCNd->Len();
 
@@ -2723,10 +2711,10 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 					pAttrPam->GetPoint()->nNode.GetIndex() ==
 						rEndIdx.GetIndex() )
 				{
-					// wenn wir vor dem Einfuegen einer Tabelle stehen
-					// und das Attribut im aktuellen Node beendet wird,
-					// muessen wir es im Node davor beenden oder wegschmeissen,
-					// wenn es erst in dem Node beginnt
+					// if we are about to insert a table
+					// and the attribute is terminated in the current node,
+					// we must end it in the node before or throw it away,
+					// if it starts in the node before
 					if( nWhich != RES_BREAK && nWhich != RES_PAGEDESC &&
                          !isTXTATR_NOEND(nWhich) )
 					{
@@ -2798,17 +2786,17 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 						pAttrPam->GetMark()->nNode.GetIndex() &&
 						pCNd )
 					{
-						// wegen Numerierungen dieses Attribut direkt
-						// am Node setzen
+						// because of numbering this attribute directly
+						// set at the node
 						pCNd->SetAttr( *pAttr->pItem );
 						break;
 					}
 					ASSERT(	sal_False,
 							"LRSpace set over several paragraphs!" );
-					// kein break (hier sollen wir trotzdem nie hinkommen;
+					// no break (we are never supposed to get here anyway;
 				default:
 
-					// ggfs. ein Bookmark anspringen
+					// jump to a bookmark if necessary
 					if( RES_TXTATR_INETFMT == nWhich &&
 						JUMPTO_MARK == eJumpTo &&
 						sJmpMark == ((SwFmtINetFmt*)pAttr->pItem)->GetName() )
@@ -2910,11 +2898,10 @@ void SwHTMLParser::_SetAttr( sal_Bool bChkEnd, sal_Bool bBeforeTable,
 
 void SwHTMLParser::NewAttr( _HTMLAttr **ppAttr, const SfxPoolItem& rItem )
 {
-	// Font-Hoehen und -Farben- sowie Escapement-Attribute duerfen nicht
-	// zusammengefasst werden. Sie werden deshalb in einer Liste gespeichert,
-	// in der das zuletzt aufgespannte Attribut vorne steht und der Count
-	// immer 1 ist. Fuer alle anderen Attribute wird der Count einfach
-	// hochgezaehlt.
+	// font-height and -color as well as escapement attributes must not be
+	// be combined. Therefore they are stored in a list,
+	// where the last expanded attribute is at the front and the count is always 1.
+	// For all other attributes the count is simply incremented.
 	if( *ppAttr )
 	{
 		_HTMLAttr *pAttr = new _HTMLAttr( *pPam->GetPoint(), rItem,
@@ -2931,33 +2918,33 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 							sal_Bool bChkEmpty )
 {
 	ASSERT( !ppDepAttr, "SwHTMLParser::EndAttr: ppDepAttr-Feature ungetestet?" );
-	// Der Listenkopf ist im Attribut gespeichert
+	// The list header is stored in the attribute
 	_HTMLAttr **ppHead = pAttr->ppHead;
 
 	ASSERT( ppHead, "keinen Attributs-Listenkopf gefunden!" );
 
-	// die aktuelle Psoition als Ende-Position merken
+	// remember the current psoition as the end position
 	const SwNodeIndex* pEndIdx = &pPam->GetPoint()->nNode;
 	xub_StrLen nEndCnt = pPam->GetPoint()->nContent.GetIndex();
 
-	// WIrd das zueltzt gestartete oder ein frueher gestartetes Attribut
-	// beendet?
+	// Is the last started or a previously started attribute
+	// finished?
 	_HTMLAttr *pLast = 0;
 	if( ppHead && pAttr != *ppHead )
 	{
-		// Es wird nicht das zuletzt gestartete Attribut beendet
+		// The last started attribute is not terminated
 
-		// Dann suche wir das unmittelbar danach gestartete Attribut, das
-		// ja ebenfalls noch nicht beendet wurde (sonst stuende es nicht
-		// mehr in der Liste
+		// Then we search for the attribute that was started immediately afterwards, which
+		// has not been finished yet either (otherwise it would not be
+		// more in the list
 		pLast = *ppHead;
 		while( pLast && pLast->GetNext() != pAttr )
 			pLast = pLast->GetNext();
 
 		ASSERT( pLast, "Attribut nicht in eigener Liste gefunden!" );
 
-		// das Attribut nicht an der PaM-Psoition beenden, sondern da,
-		// wo das danch gestartete Attribut anfing???
+		// Do not end the attribute at the PaM psoition, but there,
+		// where the attribute started after that???
 		//pEndIdx = &pPrev->GetSttPara();
 		//nEndCnt = pPrev->GetSttCnt();
 	}
@@ -2967,19 +2954,19 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 	if( /*!pLast &&*/ !nEndCnt && RES_PARATR_BEGIN <= nWhich &&
 		*pEndIdx != pAttr->GetSttPara() )
 	{
-		// dann eine Cntntnt Position zurueck!
+		// then one Cntnt position back!
 		bMoveBack = pPam->Move( fnMoveBackward );
 		nEndCnt = pPam->GetPoint()->nContent.GetIndex();
 	}
 
-	// nun das Attrubut beenden
+	// end this Attrubut
 	_HTMLAttr *pNext = pAttr->GetNext();
 
 
 	sal_Bool bInsert;
     sal_uInt16 nScriptItem = 0;
 	sal_Bool bScript = sal_False, bFont = sal_False;
-	// ein Bereich ??
+	// an area ??
 	if( !bChkEmpty || (RES_PARATR_BEGIN <= nWhich && bMoveBack) ||
 		RES_PAGEDESC == nWhich || RES_BREAK == nWhich ||
 		*pEndIdx != pAttr->GetSttPara() ||
@@ -3039,10 +3026,10 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 
 		if( !pNext )
 		{
-			// keine offenen Attribute dieses Typs mehr da,
-			// dann koennen alle gesetzt werden, es sei denn
-			// sie haengen noch von einem anderen Attribut ab,
-			// dann werden sie dort angehaengt
+			// there are no more open attributes of this type,
+			// then all of them can be set, unless
+			// they still depend on another attribute,
+			// then they will be appended there
 			if( ppDepAttr && *ppDepAttr )
 				(*ppDepAttr)->InsertPrev( pAttr );
 			else
@@ -3053,25 +3040,24 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 		}
 		else
 		{
-			// es gibt noch andere offene Attribute des Typs,
-			// daher muss das Setzen zurueckgestellt werden.
-			// das aktuelle Attribut wird deshalb hinten an die
-			// Previous-Liste des Nachfolgers angehaengt
+			// there are other open attributes of the type,
+			// so the setting must be reset.
+			// the current attribute is therefore appended to the end of the
+			// previous list of the successor.
 			pNext->InsertPrev( pAttr );
 		}
 	}
 	else
 	{
-		// dann nicht einfuegen, sondern Loeschen. Durch das "tuerken" von
-		// Vorlagen durch harte Attributierung koennen sich auch mal andere
-		// leere Attribute in der Prev-Liste befinden, die dann trotzdem
-		// gesetzt werden muessen
+		// Then do not insert, but delete. Through "fakeing" of
+		// templates by hard attributes, there may be other empty attributes in the
+		// empty attributes in the Prev list, which then must be set anyway.
 		_HTMLAttr *pPrev = pAttr->GetPrev();
 		delete pAttr;
 
 		if( pPrev )
 		{
-			// Die Previous-Attribute muessen trotzdem gesetzt werden.
+			// The Previous attributes must be set anyway.
 			if( pNext )
 				pNext->InsertPrev( pPrev );
 			else
@@ -3083,8 +3069,8 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 
 	}
 
-	// wenn das erste Attribut der Liste gesetzt wurde muss noch der
-	// Listenkopf korrigiert werden.
+	// if the first attribute of the list has been set the
+	// list header must be corrected.
 	if( pLast )
 		pLast->pNext = pNext;
 	else if( ppHead )
@@ -3096,28 +3082,28 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 
 void SwHTMLParser::DeleteAttr( _HTMLAttr* pAttr )
 {
-	// Hier darf es keine vorlauefigen Absatz-Attribute geben, den die
-	// koennten jetzt gesetzt werden und dann sind die Zeiger ungueltig!!!
+	// There must not be any leading paragraph attributes here, because the
+	// could be set now and then the pointers are invalid!!!
 	ASSERT( !aParaAttrs.Count(),
 			"Hoechste Gefahr: Es gibt noch nicht-endgueltige Absatz-Attribute" );
 	if( aParaAttrs.Count() )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 
-	// Der Listenkopf ist im Attribut gespeichert
+	// The list header is stored in the attribute
 	_HTMLAttr **ppHead = pAttr->ppHead;
 
 	ASSERT( ppHead, "keinen Attributs-Listenkopf gefunden!" );
 
-	// Wird das zueltzt gestartete oder ein frueher gestartetes Attribut
-	// entfernt?
+	// Is the attribute that was started last or an attribute that was started earlier
+	// removed?
 	_HTMLAttr *pLast = 0;
 	if( ppHead && pAttr != *ppHead )
 	{
-		// Es wird nicht das zuletzt gestartete Attribut beendet
+		// The last started attribute is not terminated
 
-		// Dann suche wir das unmittelbar danach gestartete Attribut, das
-		// ja ebenfalls noch nicht beendet wurde (sonst stuende es nicht
-		// mehr in der Liste
+		// Then we search for the attribute that was started immediately afterwards, which
+		// has not been finished yet either (otherwise it would not be
+		// more in the list
 		pLast = *ppHead;
 		while( pLast && pLast->GetNext() != pAttr )
 			pLast = pLast->GetNext();
@@ -3125,14 +3111,14 @@ void SwHTMLParser::DeleteAttr( _HTMLAttr* pAttr )
 		ASSERT( pLast, "Attribut nicht in eigener Liste gefunden!" );
 	}
 
-	// nun das Attrubut entfernen
+	// now remove the attribute
 	_HTMLAttr *pNext = pAttr->GetNext();
 	_HTMLAttr *pPrev = pAttr->GetPrev();
 	delete pAttr;
 
 	if( pPrev )
 	{
-		// Die Previous-Attribute muessen trotzdem gesetzt werden.
+		// The Previous attributes must be set anyway.
 		if( pNext )
 			pNext->InsertPrev( pPrev );
 		else
@@ -3142,8 +3128,8 @@ void SwHTMLParser::DeleteAttr( _HTMLAttr* pAttr )
 		}
 	}
 
-	// wenn das erste Attribut der Liste entfernt wurde muss noch der
-	// Listenkopf korrigiert werden.
+	// if the first attribute of the list has been removed the
+	// list header must be corrected.
 	if( pLast )
 		pLast->pNext = pNext;
 	else if( ppHead )
@@ -3152,8 +3138,8 @@ void SwHTMLParser::DeleteAttr( _HTMLAttr* pAttr )
 
 void SwHTMLParser::SaveAttrTab( _HTMLAttrTable& rNewAttrTab )
 {
-	// Hier darf es keine vorlauefigen Absatz-Attribute geben, den die
-	// koennten jetzt gesetzt werden und dann sind die Zeiger ungueltig!!!
+	// There must not be any leading paragraph attributes here, because the
+	// could be set now and then the pointers are invalid!!!
 	ASSERT( !aParaAttrs.Count(),
 			"Hoechste Gefahr: Es gibt noch nicht-endgueltige Absatz-Attribute" );
 	if( aParaAttrs.Count() )
@@ -3181,8 +3167,8 @@ void SwHTMLParser::SaveAttrTab( _HTMLAttrTable& rNewAttrTab )
 void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 								 sal_Bool bMoveEndBack )
 {
-	// Hier darf es keine vorlauefigen Absatz-Attribute geben, den die
-	// koennten jetzt gesetzt werden und dann sind die Zeiger ungueltig!!!
+	// There must not be any leading paragraph attributes here, because the
+	// could be set now and then the pointers are invalid!!!
 	ASSERT( !aParaAttrs.Count(),
 			"Hoechste Gefahr: Es gibt noch nicht-endgueltige Absatz-Attribute" );
 	if( aParaAttrs.Count() )
@@ -3191,8 +3177,8 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 	const SwNodeIndex& nSttIdx = pPam->GetPoint()->nNode;
 	SwNodeIndex nEndIdx( nSttIdx );
 
-	// alle noch offenen Attribute beenden und hinter der Tabelle
-	// neu aufspannen
+	// terminate all attributes still open and span behind the table
+	// span again
 	_HTMLAttr** pTbl = (_HTMLAttr**)&aAttrTab;
 	_HTMLAttr** pSaveTbl = (_HTMLAttr**)&rNewAttrTab;
 	sal_Bool bSetAttr = sal_True;
@@ -3210,8 +3196,8 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 		}
 		SwCntntNode* pCNd = pDoc->GetNodes().GoPrevious(&nEndIdx);
 
-		// keine Attribute setzen, wenn der PaM aus dem Content-Bereich
-		// herausgeschoben wurde.
+		// Do not set attributes if the PaM has been moved out of the content area.
+		// has been pushed out.
 		bSetAttr = pCNd && nTmpIdx < nEndIdx.GetIndex();
 
 		nEndCnt = (bSetAttr ? pCNd->Len() : 0);
@@ -3231,11 +3217,11 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 				  (pAttr->GetSttPara() == nEndIdx &&
 				   pAttr->GetSttCnt() != nEndCnt) ) )
 			{
-				// das Attribut muss vor der Liste gesetzt werden. Da wir
-				// das Original noch brauchen, weil Zeiger auf das Attribut
-				// noch in den Kontexten existieren, muessen wir es clonen.
-				// Die Next-Liste geht dabei verloren, aber die
-				// Previous-Liste bleibt erhalten
+				// the attribute must be set before the list. Since we
+				// still need the original because pointers to the attribute
+				// still exist in the contexts, we have to clone it.
+				// The next list will be lost, but the
+				// Previous list is preserved
 				_HTMLAttr *pSetAttr = pAttr->Clone( nEndIdx, nEndCnt );
 
 				if( pNext )
@@ -3249,9 +3235,9 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 			}
 			else if( pPrev )
 			{
-				// Wenn das Attribut nicht gesetzt vor der Tabelle
-				// gesetzt werden muss, muessen der Previous-Attribute
-				// trotzdem gesetzt werden.
+				// If the attribute is not set before the table
+				// the Previous attribute must be set
+				// must be set anyway.
 				if( pNext )
 					pNext->InsertPrev( pPrev );
 				else
@@ -3261,8 +3247,8 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 				}
 			}
 
-			// den Start des Attributs neu setzen und die Verkettungen
-			// aufbrechen
+			// reset the start of the attribute and the concatenations
+			// break
 			pAttr->Reset( nSttIdx, nSttCnt, pSaveTbl );
 
 			if( *pSaveTbl )
@@ -3285,8 +3271,8 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 void SwHTMLParser::RestoreAttrTab( const _HTMLAttrTable& rNewAttrTab,
 								   sal_Bool bSetNewStart )
 {
-	// Hier darf es keine vorlauefigen Absatz-Attribute geben, den die
-	// koennten jetzt gesetzt werden und dann sind die Zeiger ungueltig!!!
+	// There must not be any leading paragraph attributes here, because the
+	// could be set now and then the pointers are invalid!!!
 	ASSERT( !aParaAttrs.Count(),
 			"Hoechste Gefahr: Es gibt noch nicht-endgueltige Absatz-Attribute" );
 	if( aParaAttrs.Count() )
@@ -3378,10 +3364,10 @@ void SwHTMLParser::NewStdAttr( int nToken )
 		}
 	}
 
-	// einen neuen Kontext anlegen
+	// create a new context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken) );
 
-	// Styles parsen
+	// parse styles
 	if( HasStyleOptions( aStyle, aId, aClass, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3396,7 +3382,7 @@ void SwHTMLParser::NewStdAttr( int nToken )
 		}
 	}
 
-	// den Kontext merken
+	// memorize context
 	PushContext( pCntxt );
 }
 
@@ -3431,10 +3417,10 @@ void SwHTMLParser::NewStdAttr( int nToken,
 		}
 	}
 
-	// einen neuen Kontext anlegen
+	// create new context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken) );
 
-	// Styles parsen
+	// parse Styles
 	if( HasStyleOptions( aStyle, aId, aClass, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3466,7 +3452,7 @@ void SwHTMLParser::NewStdAttr( int nToken,
 		}
 	}
 
-	// den Kontext merken
+	// memorize context
 	PushContext( pCntxt );
 }
 
@@ -3476,7 +3462,7 @@ void SwHTMLParser::EndTag( int nToken )
     _HTMLAttrContext *pCntxt = PopContext( static_cast< sal_uInt16 >(nToken & ~1) );
 	if( pCntxt )
 	{
-		// und ggf. die Attribute beenden
+		// and terminate the attributes if necessary
 		EndContext( pCntxt );
 		delete pCntxt;
 	}
@@ -3521,10 +3507,10 @@ void SwHTMLParser::NewBasefontAttr()
 	if( nSize > 7 )
 		nSize = 7;
 
-	// einen neuen Kontext anlegen
+	// set up a new context
 	_HTMLAttrContext *pCntxt = new _HTMLAttrContext( HTML_BASEFONT_ON );
 
-	// Styles parsen
+	// parse styles
 	if( HasStyleOptions( aStyle, aId, aClass, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3552,10 +3538,10 @@ void SwHTMLParser::NewBasefontAttr()
 		InsertAttr( &aAttrTab.pFontHeightCTL, aFontHeight, pCntxt );
 	}
 
-	// den Kontext merken
+	// memorize context
 	PushContext( pCntxt );
 
-	// die Font-Size merken
+	// memorize Font-Size
 	aBaseFontStack.Insert( nSize, aBaseFontStack.Count() );
 }
 
@@ -3563,7 +3549,7 @@ void SwHTMLParser::EndBasefontAttr()
 {
 	EndTag( HTML_BASEFONT_ON );
 
-	// Stack-Unterlauf in Tabellen vermeiden
+	// Avoid stack underflow in tables
 	if( aBaseFontStack.Count() > nBaseFontStMin )
 		aBaseFontStack.Remove( aBaseFontStack.Count()-1, 1 );
 }
@@ -3581,8 +3567,8 @@ void SwHTMLParser::NewFontAttr( int nToken )
 
 	String aFace, aId, aStyle, aClass, aLang, aDir;
 	Color aColor;
-	sal_uLong nFontHeight = 0;	// tatsaechlich einzustellende Font-Hoehe
-	sal_uInt16 nSize = 0;		// Fontgroesse in Netscape-Notation (1-7)
+	sal_uLong nFontHeight = 0;	// real set up font hight
+	sal_uInt16 nSize = 0;		// Font size in Netscape-Notation (1-7)
 	sal_Bool bColor = sal_False;
 
 	const HTMLOptions *pHTMLOptions = GetOptions();
@@ -3641,16 +3627,16 @@ void SwHTMLParser::NewFontAttr( int nToken )
 
 	if( HTML_FONT_ON != nToken )
 	{
-		// HTML_BIGPRINT_ON oder HTML_SMALLPRINT_ON
+		// HTML_BIGPRINT_ON or HTML_SMALLPRINT_ON
 
-		// in Ueberschriften bestimmt die aktuelle Ueberschrift
-		// die Font-Hoehe und nicht BASEFONT
+		// in headings, the current heading determines
+		// the font height and not BASEFONT
 		sal_uInt16 nPoolId = GetCurrFmtColl()->GetPoolFmtId();
 		if( (nPoolId>=RES_POOLCOLL_HEADLINE1 &&
 			 nPoolId<=RES_POOLCOLL_HEADLINE6) )
 		{
-			// wenn die Schriftgroesse in der Ueberschrift noch
-			// nicht veraendert ist, die aus der Vorlage nehmen
+			// if the font size in the heading is not yet changed
+			// is not changed, take the one from the template.
 			if( nFontStHeadStart==aFontStack.Count() )
                 nFontSize = static_cast< sal_uInt16 >(6 - (nPoolId - RES_POOLCOLL_HEADLINE1));
 		}
@@ -3662,8 +3648,8 @@ void SwHTMLParser::NewFontAttr( int nToken )
 		else
 			nSize = ( nFontSize>1 ? nFontSize-1 : 1 );
 
-		// in Ueberschriften wird die neue Fonthoehe wenn moeglich aus
-		// den Vorlagen geholt.
+		// in headlines, the new font height will be taken from the
+		// from the templates.
 		if( nPoolId && nSize>=1 && nSize <=6 )
 			nFontHeight =
 				pCSS1Parser->GetTxtCollFromPool(
@@ -3675,8 +3661,8 @@ void SwHTMLParser::NewFontAttr( int nToken )
 	ASSERT( !nSize == !nFontHeight, "HTML-Font-Size != Font-Height" );
 
 	String aFontName, aStyleName;
-	FontFamily eFamily = FAMILY_DONTKNOW;	// Family und Pitch,
-	FontPitch ePitch = PITCH_DONTKNOW;		// falls nicht gefunden
+	FontFamily eFamily = FAMILY_DONTKNOW;	// Family and Pitch,
+	FontPitch ePitch = PITCH_DONTKNOW;		// in case not found
 	rtl_TextEncoding eEnc = gsl_getSystemTextEncoding();
 
 	if( aFace.Len() && !pCSS1Parser->IsIgnoreFontFamily() )
@@ -3721,10 +3707,10 @@ void SwHTMLParser::NewFontAttr( int nToken )
 	}
 
 
-	// einen neuen Kontext anlegen
+	// set up a new context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken) );
 
-	// Styles parsen
+	// parse styles
 	if( HasStyleOptions( aStyle, aId, aClass, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3781,7 +3767,7 @@ void SwHTMLParser::NewFontAttr( int nToken )
 		}
 	}
 
-	// den Kontext merken
+	// memorize context
 	PushContext( pCntxt );
 
 	aFontStack.Insert( nSize, aFontStack.Count() );
@@ -3791,7 +3777,7 @@ void SwHTMLParser::EndFontAttr( int nToken )
 {
 	EndTag( nToken );
 
-	// Stack-Unterlauf in Tabellen vermeiden
+	// Avoid stack underflow in tables
 	if( aFontStack.Count() > nFontStMin )
 		aFontStack.Remove( aFontStack.Count()-1, 1 );
 }
@@ -3835,14 +3821,14 @@ void SwHTMLParser::NewPara()
 		}
 	}
 
-	// einen neuen Kontext anlegen
+	// set up a new context
 	_HTMLAttrContext *pCntxt =
 		aClass.Len() ? new _HTMLAttrContext( HTML_PARABREAK_ON,
 											 RES_POOLCOLL_TEXT, aClass )
 					 : new _HTMLAttrContext( HTML_PARABREAK_ON );
 
-	// Styles parsen (Class nicht beruecksichtigen. Das geht nur, solange
-	// keine der CSS1-Properties der Klasse hart formatiert werden muss!!!)
+	// parse styles (ignore Class. This only works as long as
+	// none of the CSS1 properties of the class need to be hard formatted!!!)
 	if( HasStyleOptions( aStyle, aId, aEmptyStr, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3860,13 +3846,13 @@ void SwHTMLParser::NewPara()
 	if( SVX_ADJUST_END != eParaAdjust )
         InsertAttr( &aAttrTab.pAdjust, SvxAdjustItem(eParaAdjust, RES_PARATR_ADJUST), pCntxt );
 
-	// und auf den Stack packen
+	// push on stack
 	PushContext( pCntxt );
 
-	// die aktuelle Vorlage oder deren Attribute setzen
+	// set the current template or its attributes
 	SetTxtCollAttrs( aClass.Len() ? pCntxt : 0 );
 
-	// Laufbalkenanzeige
+	// progress bar
 	ShowStatline();
 
 	ASSERT( !nOpenParaToken, "Jetzt geht ein offenes Absatz-Element verloren" );
@@ -3883,7 +3869,7 @@ void SwHTMLParser::EndPara( sal_Bool bReal )
 		ASSERT( pNumRule, "Wo ist die Numrule geblieben" );
 	}
 
-	// leere Absaetze werden von Netscape uebersprungen, von uns jetzt auch
+	// empty paragraphs are skipped by Netscape, now also by us
 	if( bReal )
 	{
 		if( pPam->GetPoint()->nContent.GetIndex() )
@@ -3892,16 +3878,16 @@ void SwHTMLParser::EndPara( sal_Bool bReal )
 			AddParSpace();
 	}
 
-	// wenn ein DD oder DT offen war, handelt es sich um eine
-	// implizite Def-Liste, die jetzt beendet werden muss
+	// if a DD or DT was open, it is an
+	// implicit def list that must now be terminated.
 	if( (nOpenParaToken==HTML_DT_ON || nOpenParaToken==HTML_DD_ON) &&
 		nDefListDeep)
 	{
 		nDefListDeep--;
 	}
 
-	// den Kontext vom Stack holen. Er kann auch von einer implizit
-	// geoeffneten Definitionsliste kommen
+	// get the context from the stack. It can also come from an implicitly
+	// open definition list.
 	_HTMLAttrContext *pCntxt =
         PopContext( static_cast< sal_uInt16 >(nOpenParaToken ? (nOpenParaToken & ~1)
                                    : HTML_PARABREAK_ON) );
@@ -3910,11 +3896,11 @@ void SwHTMLParser::EndPara( sal_Bool bReal )
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
-		SetAttr();	// Absatz-Atts wegen JavaScript moeglichst schnell setzen
+		SetAttr();	// set paragraph-atts as fast as possible because of JavaScript
 		delete pCntxt;
 	}
 
-	// und die bisherige Vorlage neu setzen
+	// and reset previous template
 	if( bReal )
 		SetTxtCollAttrs();
 
@@ -3955,13 +3941,13 @@ void SwHTMLParser::NewHeading( int nToken )
 		}
 	}
 
-	// einen neuen Absatz aufmachen
+	// create new paragraph
 	if( pPam->GetPoint()->nContent.GetIndex() )
 		AppendTxtNode( AM_SPACE );
 	else
 		AddParSpace();
 
-	// die passende Vorlage suchen
+	// search matching template
 	sal_uInt16 nTxtColl;
 	switch( nToken )
 	{
@@ -3974,10 +3960,10 @@ void SwHTMLParser::NewHeading( int nToken )
 	default:					nTxtColl = RES_POOLCOLL_STANDARD;	break;
 	}
 
-	// den Kontext anlegen
+	// set context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken), nTxtColl, aClass );
 
-	// Styles parsen (zu Class siehe auch NewPara)
+	// parse styles (to Class see NewPara)
 	if( HasStyleOptions( aStyle, aId, aEmptyStr, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -3995,27 +3981,27 @@ void SwHTMLParser::NewHeading( int nToken )
 	if( SVX_ADJUST_END != eParaAdjust )
         InsertAttr( &aAttrTab.pAdjust, SvxAdjustItem(eParaAdjust, RES_PARATR_ADJUST), pCntxt );
 
-	// udn auf den Stack packen
+	// push to Stack
 	PushContext( pCntxt );
 
-	// und die Vorlage oder deren Attribute setzen
+	// and set the template or its attributes
 	SetTxtCollAttrs( pCntxt );
 
 	nFontStHeadStart = aFontStack.Count();
 
-	// Laufbalkenanzeige
+	// progress bar
 	ShowStatline();
 }
 
 void SwHTMLParser::EndHeading()
 {
-	// einen neuen Absatz aufmachen
+    // create a new paragraph
 	if( pPam->GetPoint()->nContent.GetIndex() )
 		AppendTxtNode( AM_SPACE );
 	else
 		AddParSpace();
 
-	// Kontext zu dem Token suchen und vom Stack holen
+	// get context of current token from stack
 	_HTMLAttrContext *pCntxt = 0;
 	sal_uInt16 nPos = aContexts.Count();
 	while( !pCntxt && nPos>nContextStMin )
@@ -4034,15 +4020,15 @@ void SwHTMLParser::EndHeading()
 		}
 	}
 
-	// und noch Attribute beenden
+	// and set attributes end
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
-		SetAttr();	// Absatz-Atts wegen JavaScript moeglichst schnell setzen
+		SetAttr();	// set paragraph-atts as fast as possible because of JavaScript
 		delete pCntxt;
 	}
 
-	// die bisherige Vorlage neu setzen
+	// reset the previous template
 	SetTxtCollAttrs();
 
 	nFontStHeadStart = nFontStMin;
@@ -4078,15 +4064,15 @@ void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 		}
 	}
 
-	// einen neuen Absatz aufmachen
+	// create new paragraph
 	SwHTMLAppendMode eMode = AM_NORMAL;
 	switch( nToken )
 	{
 	case HTML_LISTING_ON:
 	case HTML_XMP_ON:
-		// Diese beiden Tags werden jetzt auf die PRE-Vorlage gemappt.
-		// Fuer dem Fall, dass ein CLASS angegeben ist, loeschen wir
-		// es damit wir nicht die CLASS der PRE-Vorlage bekommen.
+		// These two tags are now mapped to the PRE template.
+		// In the case that a CLASS is specified, we delete it
+		// it so we don't get the CLASS of the PRE template.
 		aClass = aEmptyStr;
 	case HTML_BLOCKQUOTE_ON:
 	case HTML_BLOCKQUOTE30_ON:
@@ -4094,7 +4080,7 @@ void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 		eMode = AM_SPACE;
 		break;
 	case HTML_ADDRESS_ON:
-		eMode = AM_NOSPACE;	// ADDRESS kann auf einen <P> ohne </P> folgen
+		eMode = AM_NOSPACE;	// ADDRESS may follow a <P> without </P>.
 		break;
 	case HTML_DT_ON:
 	case HTML_DD_ON:
@@ -4109,10 +4095,10 @@ void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 	else if( AM_SPACE==eMode )
 		AddParSpace();
 
-	// ... und in einem Kontext merken
+	// ... and remember in a context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken), nColl, aClass );
 
-	// Styles parsen (zu Class siehe auch NewPara)
+	// parse styles (to Class see NewPara)
 	if( HasStyleOptions( aStyle, aId, aEmptyStr, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -4129,10 +4115,10 @@ void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 
 	PushContext( pCntxt );
 
-	// die neue Vorlage setzen
+	// set the new template
 	SetTxtCollAttrs( pCntxt );
 
-	// Laufbalkenanzeige aktualisieren
+	// update progress bar
 	ShowStatline();
 }
 
@@ -4162,18 +4148,18 @@ void SwHTMLParser::EndTxtFmtColl( int nToken )
 	else if( AM_SPACE==eMode )
 		AddParSpace();
 
-	// den aktuellen Kontext vom Stack holen
+	// get the current context from the stack
     _HTMLAttrContext *pCntxt = PopContext( static_cast< sal_uInt16 >(nToken & ~1) );
 
-	// und noch Attribute beenden
+	// and close end Attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
-		SetAttr();	// Absatz-Atts wegen JavaScript moeglichst schnell setzen
+		SetAttr();	// set paragraph-atts as fast as possible because of JavaScript
 		delete pCntxt;
 	}
 
-	// und die bisherige Vorlage setzen
+	// and set the previous template
 	SetTxtCollAttrs();
 }
 
@@ -4207,14 +4193,14 @@ void SwHTMLParser::NewDefList()
 		}
 	}
 
-	// einen neuen Absatz aufmachen
+	// create new paragraph
 	sal_Bool bSpace = (GetNumInfo().GetDepth() + nDefListDeep) == 0;
 	if( pPam->GetPoint()->nContent.GetIndex() )
 		AppendTxtNode( bSpace ? AM_SPACE : AM_SOFTNOSPACE );
 	else if( bSpace )
 		AddParSpace();
 
-	// ein Level mehr
+	// one more level
 	nDefListDeep++;
 
 
@@ -4239,22 +4225,21 @@ void SwHTMLParser::NewDefList()
 	}
 
 
-	// ... und in einem Kontext merken
+	// ... and remember in a context
 	_HTMLAttrContext *pCntxt = new _HTMLAttrContext( HTML_DEFLIST_ON );
 
-	// darin auch die Raender merken
+	// remeber the borders, too
 	sal_uInt16 nLeft=0, nRight=0;
 	short nIndent=0;
 	GetMarginsFromContext( nLeft, nRight, nIndent );
 
-	// Die Einrueckung, die sich schon aus einem DL-ergibt, entspricht der
-	// eines DT auf dem aktuellen Level, und die entspricht der eines
-	// DD auf dem Level davor. Fue einen Level >=2 muss also ein DD-Abstand
-	// hinzugefuegt werden
+	// The intend, which already results from a DL-, corresponds to that
+	// of a DT on the current level, and that corresponds to that of a
+	// DD on the level before. So for a level >=2 a DD distance must be added
 	if( !bInDD && nDefListDeep > 1 )
 	{
 
-		// und den der DT-Vorlage des aktuellen Levels
+		// and that of the DT template of the current level
 		SvxLRSpaceItem rLRSpace =
 			pCSS1Parser->GetTxtFmtColl( RES_POOLCOLL_HTML_DD, aEmptyStr )
 					   ->GetLRSpace();
@@ -4263,7 +4248,7 @@ void SwHTMLParser::NewDefList()
 
 	pCntxt->SetMargins( nLeft, nRight, nIndent );
 
-	// Styles parsen
+	// parse styles
 	if( HasStyleOptions( aStyle, aId, aClass, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -4278,7 +4263,7 @@ void SwHTMLParser::NewDefList()
 
 	PushContext( pCntxt );
 
-	// die Attribute der neuen Vorlage setzen
+	// set the attributes of the new template
 	if( nDefListDeep > 1 )
 		SetTxtCollAttrs( pCntxt );
 }
@@ -4291,28 +4276,28 @@ void SwHTMLParser::EndDefList()
 	else if( bSpace )
 		AddParSpace();
 
-	// ein Level weniger
+	// reduce one level
 	if( nDefListDeep > 0 )
 		nDefListDeep--;
 
-	// den aktuellen Kontext vom Stack holen
+	// get the current context from the stack
 	_HTMLAttrContext *pCntxt = PopContext( HTML_DEFLIST_ON );
 
-	// und noch Attribute beenden
+	// and close end Attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
-		SetAttr();	// Absatz-Atts wegen JavaScript moeglichst schnell setzen
+		SetAttr();	// set paragraph-atts as fast as possible because of JavaScript
 		delete pCntxt;
 	}
 
-	// und Vorlage setzen
+	// and set Template
 	SetTxtCollAttrs();
 }
 
 void SwHTMLParser::NewDefListItem( int nToken )
 {
-	// festellen, ob das DD/DT in einer DL vorkommt
+	// determine whether the DD/DT occurs in a DL
 	sal_Bool bInDefList = sal_False, bNotInDefList = sal_False;
 	sal_uInt16 nPos = aContexts.Count();
 	while( !bInDefList && !bNotInDefList && nPos>nContextStMin )
@@ -4332,7 +4317,7 @@ void SwHTMLParser::NewDefListItem( int nToken )
 		}
 	}
 
-	// wenn nicht, implizit eine neue DL aufmachen
+	// if not, implicitly open a new DL
 	if( !bInDefList )
 	{
 		nDefListDeep++;
@@ -4348,11 +4333,11 @@ void SwHTMLParser::NewDefListItem( int nToken )
 void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 								   sal_Bool /*bLastPara*/ )
 {
-	// einen neuen Absatz aufmachen
+	// create new paragraph
 	if( !nToken && pPam->GetPoint()->nContent.GetIndex() )
 		AppendTxtNode( AM_SOFTNOSPACE );
 
-	// Kontext zu dem Token suchen und vom Stack holen
+	// Search context to the token and get it from the stack
 	nToken &= ~1;
 	_HTMLAttrContext *pCntxt = 0;
 	sal_uInt16 nPos = aContexts.Count();
@@ -4370,26 +4355,26 @@ void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 			}
 			break;
 		case HTML_DEFLIST_ON:
-			// keine DD/DT ausserhalb der aktuelen DefListe betrachten
+			// do not consider DD/DT outside the current def list
 		case HTML_DIRLIST_ON:
 		case HTML_MENULIST_ON:
 		case HTML_ORDERLIST_ON:
 		case HTML_UNORDERLIST_ON:
-			// und auch nicht ausserhalb einer anderen Liste
+			// and also not outside of another list
 			nPos = nContextStMin;
 			break;
 		}
 	}
 
-	// und noch Attribute beenden
+	// and close end Attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
-		SetAttr();	// Absatz-Atts wegen JavaScript moeglichst schnell setzen
+		SetAttr();	// set paragraph-atts as fast as possible because of JavaScript
 		delete pCntxt;
 	}
 
-	// und die bisherige Vorlage setzen
+	// and set the previous template
 	if( bSetColl )
 		SetTxtCollAttrs();
 }
@@ -4399,11 +4384,11 @@ void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 									   sal_Bool bSurroundOnly ) const
 {
-	// bNoSurroundOnly:		Der Absatz enthaelt mindestens einen Rahmen
-	//						ohne Umlauf
-	// bSurroundOnly:		Der Absatz enthaelt mindestens einen Rahmen
-	//						mit Umlauf aber keinen ohne Umlauf
-	// sonst:				Der Absatz enthaelt irgendeinen Rahmen
+	// bNoSurroundOnly: The paragraph contains at least one frame
+	//                  without text flow
+	// bSurroundOnly:   The paragraph contains at least one frame
+	//                  with a text flow but none without a text flow
+	// else:            the paragraph contains some frame
 	SwNodeIndex& rNodeIdx = pPam->GetPoint()->nNode;
 
 	const SwSpzFrmFmts& rFrmFmtTbl = *pDoc->GetSpzFrmFmts();
@@ -4413,12 +4398,12 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
     {
         SwFrmFmt *const pFmt = rFrmFmtTbl[i];
         SwFmtAnchor const*const pAnchor = &pFmt->GetAnchor();
-		// Ein Rahmen wurde gefunden, wenn
-		// - er absatzgebunden ist, und
-		// - im aktuellen Absatz verankert ist, und
-		//   - jeder absatzgebunene Rahmen zaehlt, oder
-		//   - (nur Rahmen oder umlauf zaehlen und ) der Rahmen keinen
-		//     Umlauf besitzt
+		// A frame has been found if
+		// - it is paragraph-bound, and
+		// - it is anchored in the current paragraph, and
+		// - every paragraph-bound frame counts, or
+		// - (only frames or text flow counts) the frame has no
+		//   text flow
         SwPosition const*const pAPos = pAnchor->GetCntntAnchor();
         if (pAPos &&
             ((FLY_AT_PARA == pAnchor->GetAnchorId()) ||
@@ -4432,10 +4417,10 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 			}
 			else
 			{
-				// fix #42282#: Wenn Rahmen mit Umlauf gesucht sind,
-				// auch keine mit Durchlauf beachten. Dabei handelt es
-				// sich (noch) um HIDDEN-Controls, und denen weicht man
-				// besser auch nicht aus.
+				// fix #42282#: If frames with circulation are wanted,
+				// do not consider any with circulation either. These are
+				// are (still) HIDDEN controls, and it's better not to // avoid them.
+				// better not to avoid them.
 				SwSurround eSurround = pFmt->GetSurround().GetSurround();
 				if( bNoSurroundOnly )
 				{
@@ -4455,8 +4440,8 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 					else if( SURROUND_THROUGHT!=eSurround )
 					{
 						bFound = sal_True;
-						// weitersuchen: Es koennten ja noch welche ohne
-						// Umlauf kommen ...
+						// continue searching: There might still be some without
+						// circulation ...
 					}
 				}
 			}
@@ -4468,7 +4453,7 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 
 /*  */
 
-// die speziellen Methoden zum Einfuegen von Objecten
+// the special methods for inserting objects
 
 const SwFmtColl *SwHTMLParser::GetCurrFmtColl() const
 {
@@ -4479,16 +4464,16 @@ const SwFmtColl *SwHTMLParser::GetCurrFmtColl() const
 
 void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 {
-	SwTxtFmtColl *pCollToSet = 0;	// die zu setzende Vorlage
-	SfxItemSet *pItemSet = 0;		// der Set fuer harte Attrs
+	SwTxtFmtColl *pCollToSet = 0;	// the template to be set
+	SfxItemSet *pItemSet = 0;		// the set for hard attributes
 	sal_uInt16 nTopColl = pContext ? pContext->GetTxtFmtColl() : 0;
 	const String& rTopClass = pContext ? pContext->GetClass() : (const String&) aEmptyStr;
 	sal_uInt16 nDfltColl = RES_POOLCOLL_TEXT;
 
-	sal_Bool bInPRE=sal_False;							// etwas Kontext Info
+	sal_Bool bInPRE=sal_False;							// some context info
 
-	sal_uInt16 nLeftMargin = 0, nRightMargin = 0;	// die Einzuege und
-	short nFirstLineIndent = 0;					// Abstaende
+	sal_uInt16 nLeftMargin = 0, nRightMargin = 0;	    // the margins and
+	short nFirstLineIndent = 0;					        // Intend
 	sal_uInt16 i;
 
 	for( i = nContextStAttrMin; i < aContexts.Count(); i++ )
@@ -4498,9 +4483,9 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		sal_uInt16 nColl = pCntxt->GetTxtFmtColl();
 		if( nColl )
 		{
-			// Es gibt eine Vorlage, die zu setzen ist. Dann
-			// muss zunaechst einmal entschieden werden,
-			// ob die Vorlage auch gesetzt werden kann
+			// There is a template to be set. Then
+			// a decision has to be made first,
+			// whether the template can also be set
 			sal_Bool bSetThis = sal_True;
 			switch( nColl )
 			{
@@ -4508,14 +4493,14 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 				bInPRE = sal_True;
 				break;
 			case sal_uInt16(RES_POOLCOLL_TEXT):
-				// <TD><P CLASS=xxx> muss TD.xxx werden
+				// <TD><P CLASS=xxx> must become TD.xxx
 				if( nDfltColl==RES_POOLCOLL_TABLE ||
 					nDfltColl==RES_POOLCOLL_TABLE_HDLN )
 					nColl = nDfltColl;
 				break;
 			case sal_uInt16(RES_POOLCOLL_HTML_HR):
-				// <HR> auch in <PRE> als Vorlage setzen, sonst kann man sie
-				// nicht mehr exportieren
+				// <HR> also set in <PRE> as template, otherwise you can't
+				// no longer export
 				break;
 			default:
 				if( bInPRE )
@@ -4528,14 +4513,13 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 
 			if( bSetThis )
 			{
-				// wenn jetzt eine andere Vorlage gesetzt werden soll als
-				// bisher, muss die bishere Vorlage durch harte Attributierung
-				// ersetzt werden
-
+				// if now another template should be set than
+				// previously, the previous template must be replaced by hard attributes
+				// must be replaced
 				if( pCollToSet )
 				{
-					// die Attribute, die die bisherige Vorlage setzt
-					// hart einfuegen
+					// the attributes set by the previous template
+					// insert hard
 					if( !pItemSet )
 						pItemSet = new SfxItemSet( pCollToSet->GetAttrSet() );
 					else
@@ -4546,9 +4530,8 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 						aItemSet.Set( rCollSet );
 						pItemSet->Put( aItemSet );
 					}
-					// aber die Attribute, die aktuelle Vorlage setzt
-					// entfernen, weil sie sonst spaeter ueberschrieben
-					// werden
+					// but remove the attributes that the current template sets
+					// because otherwise they will be overwritten later.
 					pItemSet->Differentiate( pNewColl->GetAttrSet() );
 				}
 
@@ -4556,7 +4539,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 			}
 			else
 			{
-				// hart Attributieren
+				// set attributes hard
 				if( !pItemSet )
 					pItemSet = new SfxItemSet( pNewColl->GetAttrSet() );
 				else
@@ -4571,13 +4554,13 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		}
 		else
 		{
-			// vielliecht gibt es ja eine Default-Vorlage?
+			// Maybe there is a default template?
 			nColl = pCntxt->GetDfltTxtFmtColl();
 			if( nColl )
 				nDfltColl = nColl;
 		}
 
-		// ggf. neue Absatz-Einzuege holen
+		// get new paragraph inserts if necessary
 		if( pCntxt->IsLRSpaceChanged() )
 		{
 			sal_uInt16 nLeft=0, nRight=0;
@@ -4588,11 +4571,11 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		}
 	}
 
-	// wenn im aktuellen Kontext eine neue Vorlage gesetzt werden soll,
-	// muessen deren Absatz-Abstaende noch in den Kontext eingetragen werden
+	// if a new template is to be set in the current context,
+	// its paragraph spacing must still be entered into the context.
 	if( pContext && nTopColl )
 	{
-		// <TD><P CLASS=xxx> muss TD.xxx werden
+	    // <TD><P CLASS=xxx> must become TD.xxx
 		if( nTopColl==RES_POOLCOLL_TEXT &&
 			(nDfltColl==RES_POOLCOLL_TABLE ||
 			 nDfltColl==RES_POOLCOLL_TABLE_HDLN) )
@@ -4611,8 +4594,8 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 			sal_Int32 nRight = pLRItem->GetRight();
 			nFirstLineIndent = pLRItem->GetTxtFirstLineOfst();
 
-			// In Definitions-Listen enthalten die Abstaende auch die der
-			// vorhergehenden Level
+			// In definition lists, the distances also include those of the
+			// previous level
 			if( RES_POOLCOLL_HTML_DD == nTopColl )
 			{
 				const SvxLRSpaceItem& rDTLRSpace = pCSS1Parser
@@ -4627,7 +4610,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 				nRight = 0;
 			}
 
-			// die Absatz-Abstaende addieren sich
+			// the paragraph distances add up
             nLeftMargin = nLeftMargin + static_cast< sal_uInt16 >(nLeft);
             nRightMargin = nRightMargin + static_cast< sal_uInt16 >(nRight);
 
@@ -4642,7 +4625,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		}
 	}
 
-	// wenn gar keine Vorlage im Kontext gesetzt ist, Textkoerper nehmen
+	// if no template is set in context, take text body
 	if( !pCollToSet )
 	{
 		pCollToSet = pCSS1Parser->GetTxtCollFromPool( nDfltColl );
@@ -4655,7 +4638,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 			nFirstLineIndent = rLRItem.GetTxtFirstLineOfst();
 	}
 
-	// bisherige harte Attributierung des Absatzes entfernen
+	// remove previous hard attribution of the paragraph
 	if( aParaAttrs.Count() )
 	{
 		for( i=0; i<aParaAttrs.Count(); i++ )
@@ -4664,10 +4647,10 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 	}
 
-	// Die Vorlage setzen
+	// Set the template
 	pDoc->SetTxtFmtColl( *pPam, pCollToSet );
 
-	// ggf. noch den Absatz-Einzug korrigieren
+	// correct the paragraph indentation if necessary
 	const SvxLRSpaceItem& rLRItem = pCollToSet->GetLRSpace();
 	sal_Bool bSetLRSpace;
 
@@ -4692,7 +4675,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 		}
 	}
 
-	// und nun noch die Attribute setzen
+	// and now set the attributes
 	if( pItemSet )
 	{
 		InsertParaAttrs( *pItemSet );
@@ -4730,15 +4713,15 @@ void SwHTMLParser::NewCharFmt( int nToken )
 		}
 	}
 
-	// einen neuen Kontext anlegen
+	// set up a new context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken) );
 
-	// die Vorlage setzen und im Kontext merken
+	// Set the template und im Kontext merken
     SwCharFmt* pCFmt = pCSS1Parser->GetChrFmt( static_cast< sal_uInt16 >(nToken), aClass );
 	ASSERT( pCFmt, "keine Zeichenvorlage zu Token gefunden" );
 
 
-	// Styles parsen (zu Class siehe auch NewPara)
+	// parse styles (to Class see NewPara)
 	if( HasStyleOptions( aStyle, aId, aEmptyStr, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
@@ -4753,13 +4736,13 @@ void SwHTMLParser::NewCharFmt( int nToken )
 		}
 	}
 
-	// Zeichen-Vorlagen werden in einem eigenen Stack gehalten und
-	// koennen nie durch Styles eingefuegt werden. Das Attribut ist deshalb
-	// auch gar nicht im CSS1-Which-Range enthalten
+	// Character templates are kept in their own stack and
+	// can never be inserted by styles. The attribute is therefore
+	// not included in the CSS1 Which range at all.
 	if( pCFmt )
 		InsertAttr( &aAttrTab.pCharFmts, SwFmtCharFmt( pCFmt ), pCntxt );
 
-	// den Kontext merken
+	// memorize context
 	PushContext( pCntxt );
 }
 
@@ -4768,7 +4751,7 @@ void SwHTMLParser::NewCharFmt( int nToken )
 
 void SwHTMLParser::InsertSpacer()
 {
-	// und es ggf. durch die Optionen veraendern
+	// and change it by the options if necessary
 	String aId;
     sal_Int16 eVertOri = text::VertOrientation::TOP;
     sal_Int16 eHoriOri = text::HoriOrientation::NONE;
@@ -4799,17 +4782,17 @@ void SwHTMLParser::InsertSpacer()
                                   eHoriOri );
 			break;
 		case HTML_O_WIDTH:
-			// erstmal nur als Pixelwerte merken!
+			// remember only as pixel values for now!
 			bPrcWidth = (pOption->GetString().Search('%') != STRING_NOTFOUND);
 			aSize.Width() = (long)pOption->GetNumber();
 			break;
 		case HTML_O_HEIGHT:
-			// erstmal nur als Pixelwerte merken!
+			// remember only as pixel values for now!
 			bPrcHeight = (pOption->GetString().Search('%') != STRING_NOTFOUND);
 			aSize.Height() = (long)pOption->GetNumber();
 			break;
 		case HTML_O_SIZE:
-			// erstmal nur als Pixelwerte merken!
+			// remember only as pixel values for now!
 			nSize = pOption->GetNumber();
 			break;
 		}
@@ -4819,18 +4802,18 @@ void SwHTMLParser::InsertSpacer()
 	{
 	case HTML_SPTYPE_BLOCK:
 		{
-			// einen leeren Textrahmen anlegen
+			// create an empty text frame
 
-			// den Itemset holen
+			// get the itemset
 			SfxItemSet aFrmSet( pDoc->GetAttrPool(),
 								RES_FRMATR_BEGIN, RES_FRMATR_END-1 );
 			if( !IsNewDoc() )
 				Reader::ResetFrmFmtAttrs( aFrmSet );
 
-			// den Anker und die Ausrichtung setzen
+			// set the anchor and the alignment
 			SetAnchorAndAdjustment( eVertOri, eHoriOri, aFrmSet );
 
-			// und noch die Groesse des Rahmens
+			// and still the size of the frame
 			Size aDfltSz( MINFLY, MINFLY );
 			Size aSpace( 0, 0 );
 			SfxItemSet aDummyItemSet( pDoc->GetAttrPool(),
@@ -4841,17 +4824,17 @@ void SwHTMLParser::InsertSpacer()
 						aDummyItemSet, aDummyPropInfo, aFrmSet );
 			SetSpace( aSpace, aDummyItemSet, aDummyPropInfo, aFrmSet );
 
-			// den Inhalt schuetzen
+			// protect the content
             SvxProtectItem aProtectItem( RES_PROTECT) ;
 			aProtectItem.SetCntntProtect( sal_True );
 			aFrmSet.Put( aProtectItem );
 
-			// der Rahmen anlegen
+			// create the frame
 			RndStdIds eAnchorId =
 				((const SwFmtAnchor &)aFrmSet.Get(RES_ANCHOR)).GetAnchorId();
 			SwFrmFmt *pFlyFmt = pDoc->MakeFlySection( eAnchorId,
 											pPam->GetPoint(), &aFrmSet );
-			// Ggf Frames anlegen und auto-geb. Rahmen registrieren
+			// If necessary, create frames and register auto-generated frames
 			RegisterFlyFrm( pFlyFmt );
 		}
 		break;
@@ -4865,21 +4848,21 @@ void SwHTMLParser::InsertSpacer()
 											MapMode(MAP_TWIP) ).Height();
 			}
 
-			// einen Absatz-Abstand setzen
+			// set a paragraph spacing
 			SwTxtNode *pTxtNode = 0;
 			if( !pPam->GetPoint()->nContent.GetIndex() )
 			{
-				// den unteren Absatz-Abstand des vorherigen Nodes aendern,
-				// wenn moeglich
+				// change the lower paragraph spacing of the previous node,
+				// if possible
 
 				SetAttr();	// noch offene Absatz-Attribute setzen
 
 				pTxtNode = pDoc->GetNodes()[pPam->GetPoint()->nNode.GetIndex()-1]
 							   ->GetTxtNode();
 
-				// Wenn der Abstz davor kein Txtenode ist, dann wird jetzt
-				// ein leere Absatz angelegt, der eh schon eine Zeilenhoehe
-				// Abstand erzeugt.
+				// If the paragraph in front of it is not a txttenode, then now
+				// an empty paragraph is created which already creates a line height
+				// spacing is created.
 				if( !pTxtNode )
 					nSize = nSize>HTML_PARSPACE ? nSize-HTML_PARSPACE : 0;
 			}
@@ -4896,15 +4879,15 @@ void SwHTMLParser::InsertSpacer()
                 NewAttr( &aAttrTab.pULSpace, SvxULSpaceItem( 0, (sal_uInt16)nSize, RES_UL_SPACE ) );
 				EndAttr( aAttrTab.pULSpace, 0, sal_False );
 
-				AppendTxtNode();	// nicht am Abstand drehen!
+				AppendTxtNode();	// do not change the distance!
 			}
 		}
 		break;
 	case HTML_SPTYPE_HORI:
 		if( nSize > 0 )
 		{
-			// wenn der Absatz noch leer ist, einen Erstzeilen-Einzug
-			// setzen, sondern Sperrschrift ueber einem Space aufspannen
+			// if the paragraph is still empty, set a first-line indentation
+			// but span blocking font over a space.
 
 			if( nSize && Application::GetDefaultDevice() )
 			{
@@ -5004,27 +4987,27 @@ void SwHTMLParser::InsertIDOption()
 
 void SwHTMLParser::InsertLineBreak()
 {
-	// <BR CLEAR=xxx> wird wie folgt behandelt:
-	// 1.) Es werden nur nur absatzgebundene Rahmen betrachtet, die
-	//     im aktuellen Absatz verankert sind.
-	// 2.) Fuer linksbuendig ausgerichtete Rahmen wird bei CLEAR=LEFT
-	//     oder ALL und auf rechtsbuendige ausgerichtete Rahmen bei
-	//     CLEAR=RIGHT oder ALL der Durchlauf wie folgt geaendert:
-	// 3.) Wenn der Absatz keinen Text enthaelt, bekommt der Rahmen keinen
-	//     Umlauf
-	// 4.) sonst erhaelt ein links ausgerichteter Rahmen eine rechten
-	//     "nur Anker" Umlauf und recht rechst ausg. Rahmen einen linken
-	//     "nur Anker" Umlauf.
-	// 5.) wenn in einem nicht-leeren Absatz der Umlauf eines Rahmens
-	//     geaendert wird, wird ein neuer Absatz aufgemacht
-	// 6.) Wenn von keinem Rahmen der Umlauf geaendert wird, wird ein
-	//     harter Zeilenumbruch eingefuegt
+	// <BR CLEAR=xxx> is handled as follows:
+	// 1.) Only paragraph-bound frames are considered, which are
+	//     are anchored in the current paragraph.
+	// 2.) For left-aligned frames at CLEAR=LEFT
+	//     or ALL and for right oriented frames with
+	//     CLEAR=RIGHT or ALL the pass is changed as follows:
+	// 3.) If the paragraph contains no text, the frame gets no
+	//     text flow
+	// 4.) otherwise a left aligned frame receives a right
+	//     "anchor only" text flow and right aligned frame receives a
+	//      left anchor only" text flow.
+	// 5.) if in a non-empty paragraph the text flow of a frame
+	//     is changed, a new paragraph is opened
+	// 6.) If the text flow is not changed by any frame, a 
+	//     hard line break is inserted
 
-	String aId, aStyle, aClass;			  	// die ID der Bookmark
+	String aId, aStyle, aClass;			  	// the ID of the bookmark
 	sal_Bool bClearLeft = sal_False, bClearRight = sal_False;
-	sal_Bool bCleared = sal_False;	// wurde ein CLEAR ausgefuehrt?
+	sal_Bool bCleared = sal_False;	// was a CLEAR executed?
 
-	// dann holen wir mal die Optionen
+	// then get the options
 	const HTMLOptions *pHTMLOptions = GetOptions();
 	for( sal_uInt16 i = pHTMLOptions->Count(); i; )
 	{
@@ -5057,7 +5040,7 @@ void SwHTMLParser::InsertLineBreak()
 		}
 	}
 
-	// CLEAR wird nur fuer den aktuellen Absaetz unterstuetzt
+	// CLEAR is supported only for the current paragraph
 	if( bClearLeft || bClearRight )
 	{
 		SwNodeIndex& rNodeIdx = pPam->GetPoint()->nNode;
@@ -5103,12 +5086,12 @@ void SwHTMLParser::InsertLineBreak()
                         pFmt->SetFmtAttr( aSurround );
 						bCleared = sal_True;
 					}
-				} // Anker ist nicht im Node
-			} // Schleife ueber Fly-Frames
-		} // kein Text-Node
-	} // kein CLEAR
+				} // Anchor is not in the node
+			} // Loop over fly frames
+		} // no text node
+	} // no CLEAR
 
-	// Styles parsen
+	// parse styles
     SvxFmtBreakItem aBreakItem( SVX_BREAK_NONE, RES_BREAK );
 	sal_Bool bBreakItem = sal_False;
 	if( HasStyleOptions( aStyle, aId, aClass ) )
@@ -5136,18 +5119,18 @@ void SwHTMLParser::InsertLineBreak()
 
 	if( !bCleared && !bBreakItem )
 	{
-		// wenn kein CLEAR ausgefuehrt werden sollte oder konnte, wird
-		// ein Zeilenumbruch eingef?gt
+		// if no CLEAR should be executed or could be executed
+		// a line break is inserted
 		String sTmp( (sal_Unicode)0x0a );	// make the Mac happy :-)
         pDoc->InsertString( *pPam, sTmp );
 	}
 	else if( pPam->GetPoint()->nContent.GetIndex() )
 	{
-		// wenn ein Claer in einem nicht-leeren Absatz ausgefuehrt wurde,
-		// muss anschliessen ein neuer Absatz aufgemacht werden
-		// MIB 21.02.97: Eigentlich muesste man hier den unteren Absatz-
-		// Absatnd auf 0 drehen. Das geht aber bei sowas wie <BR ..><P>
-		// schief (>Netacpe). Deshalb lassen wir das erstmal.
+		// if a claer was executed in a non-empty paragraph,
+		// a new paragraph must be opened afterwards.
+		// MIB 21.02.97: Actually, the lower paragraph should be set to 0.
+		// But this works with something like <BR ..><P>.
+		// (>Netacpe). Therefore we leave it for now.
 		AppendTxtNode( AM_NOSPACE );
 	}
 	if( bBreakItem && SVX_BREAK_PAGE_BEFORE==aBreakItem.GetBreak() )
@@ -5171,7 +5154,7 @@ void SwHTMLParser::InsertHorzRule()
 	Color aColor;
 	String aId;
 
-	// dann holen wir mal die Optionen
+	// get the options
 	const HTMLOptions *pHTMLOptions = GetOptions();
 	for( sal_uInt16 i = pHTMLOptions->Count(); i; )
 	{
@@ -5189,7 +5172,7 @@ void SwHTMLParser::InsertHorzRule()
 			nWidth = (sal_uInt16)pOption->GetNumber();
 			if( bPrcWidth && nWidth>=100 )
 			{
-				// 100%-Linien sind der default-Fall (keine Attrs neotig)
+				// 100% lines are the default case (no attrs needed)
 				nWidth = 0;
 				bPrcWidth = sal_False;
 			}
@@ -5215,22 +5198,22 @@ void SwHTMLParser::InsertHorzRule()
 	AppendTxtNode();
 	pPam->Move( fnMoveBackward );
 
-	// ... und in einem Kontext merken
+	// ... and remember in a context
 	_HTMLAttrContext *pCntxt =
 		new _HTMLAttrContext( HTML_HORZRULE, RES_POOLCOLL_HTML_HR, aEmptyStr );
 
 	PushContext( pCntxt );
 
-	// die neue Vorlage setzen
+	// set the new template
 	SetTxtCollAttrs( pCntxt );
 
-	// die harten Attribute an diesem Absatz werden nie mehr ungueltig
+	// the hard attributes on this paragraph will never be invalid again
 	if( aParaAttrs.Count() )
 		aParaAttrs.Remove( 0, aParaAttrs.Count() );
 
 	if( nSize>0 || bColor || bNoShade )
 	{
-		// Farbe und/oder Breite der Linie setzen
+		// Set color and/or width of the line
 		if( !bColor )
 			aColor.SetColor( COL_GRAY );
 
@@ -5261,18 +5244,18 @@ void SwHTMLParser::InsertHorzRule()
 	}
 	if( nWidth )
 	{
-		// Wenn wir in keiner Tabelle sind, wird die Breitenangabe durch
-		// Absatz-Einzuege "getuerkt". In einer Tabelle macht das wenig
-		// Sinn. Um zu Vermeiden, dass die Linie bei der Breitenberechnung
-		// beruecksichtigt wird, bekommt sie aber trotzdem entsprechendes
-		// LRSpace-Item verpasst.
+		// If we are not in a table, the width specification will be "killed" by
+		// paragraph indents. In a table this makes little
+		// sense. To avoid that the line is taken into account in the width calculation
+		// width calculation, it will still be assigned the appropriate
+		// LRSpace item to the line.
 #ifdef FIX41370
 		const SwFmtColl *pColl = GetCurrFmtColl();
 		SvxLRSpaceItem aLRItem( pColl->GetLRSpace() );
 #endif
 		if( !pTable )
 		{
-			// Laenge und Ausrichtung der Linie ueber Absatz-Einzuege "tuerken"
+			// "Tune" the length and alignment of the line using paragraph indents
 			long nBrowseWidth = GetCurrentBrowseWidth();
 			nWidth = bPrcWidth ? (sal_uInt16)((nWidth*nBrowseWidth) / 100)
 							   : ToTwips( (sal_uInt16)nBrowseWidth );
@@ -5316,18 +5299,18 @@ void SwHTMLParser::InsertHorzRule()
 #endif
 	}
 
-	// Bookmarks koennen nicht in Hyperlinks eingefueht werden
+	// Bookmarks cannot be inserted into hyperlinks
 	if( aId.Len() )
 		InsertBookmark( aId );
 
-	// den aktuellen Kontext vom Stack holen
+	// get the current context from the stack
 	_HTMLAttrContext *pPoppedContext = PopContext( HTML_HORZRULE );
 	ASSERT( pPoppedContext==pCntxt, "wo kommt denn da ein HR-Kontext her?" );
 	delete pPoppedContext;
 
 	pPam->Move( fnMoveForward );
 
-	// und im Absatz danach die dort aktuelle Vorlage setzen
+	// and in the paragraph after that set the template that is current there
 	SetTxtCollAttrs();
 }
 
@@ -5356,10 +5339,10 @@ void SwHTMLParser::ParseMoreMetaOptions()
         }
     }
 
-    // Hier wird es etwas tricky: Wir wissen genau, da? die Dok-Info
-    // nicht geaendert wurde. Deshalb genuegt es, auf Generator und
-    // auf refresh abzufragen, um noch nicht verarbeitete Token zu finden,
-    // denn das sind die einzigen, die die Dok-Info nicht modifizieren.
+    // Here's where it gets a little tricky: we know for a fact that the doc-info
+    // has not been changed. Therefore it is sufficient to query on generator and
+    // refresh to find tokens which have not been processed yet,
+    // because those are the only ones that do not modify the doc info.
     if( aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_generator ) ||
         aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_refresh ) ||
         aName.EqualsIgnoreCaseAscii( OOO_STRING_SVTOOLS_HTML_META_content_type ) ||
@@ -5450,10 +5433,10 @@ _HTMLAttr::~_HTMLAttr()
 
 _HTMLAttr *_HTMLAttr::Clone( const SwNodeIndex& rEndPara, sal_uInt16 nEndCnt ) const
 {
-	// das Attribut mit der alten Start-Position neu anlegen
+	// recreate the attribute with the old start position
 	_HTMLAttr *pNew = new _HTMLAttr( *this, rEndPara, nEndCnt, ppHead );
 
-	// die Previous-Liste muss uebernommen werden, die Next-Liste nicht!
+	// the Previous list must be taken over, the Next list must not!
 	pNew->pPrev = pPrev;
 
 	return pNew;
@@ -5462,13 +5445,13 @@ _HTMLAttr *_HTMLAttr::Clone( const SwNodeIndex& rEndPara, sal_uInt16 nEndCnt ) c
 void _HTMLAttr::Reset( const SwNodeIndex& rSttPara, sal_uInt16 nSttCnt,
 					   _HTMLAttr **ppHd )
 {
-	// den Anfang (und das Ende) neu setzen
+	// reset the beginning (and the end)
 	nSttPara = rSttPara;
 	nSttCntnt = nSttCnt;
 	nEndPara = rSttPara;
 	nEndCntnt = nSttCnt;
 
-	// den Head korrigieren und die Verkettungen aufheben
+	// correct the head and undo the concatenations
 	pNext = 0;
 	pPrev = 0;
 	ppHead = ppHd;
