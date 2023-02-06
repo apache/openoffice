@@ -473,3 +473,18 @@ diff -ru misc/expat-2.5.0/lib/xmltok.c misc/build/expat-2.5.0/lib/xmltok.c
  #endif
  
  #include "expat_external.h"
+diff -ru misc/expat-2.5.0/lib/winconfig.h misc/build/expat-2.5.0/lib/winconfig.h
+--- misc/expat-2.5.0/lib/winconfig.h
++++ misc/build/expat-2.5.0/lib/winconfig.h
+@@ -42,4 +42,11 @@
+ #include <memory.h>
+ #include <string.h>
+ 
++#  define XML_NS 1
++#  define XML_DTD 1
++#  define XML_CONTEXT_BYTES 1024
++
++/* we will assume all Windows platforms are little endian */
++#  define BYTEORDER 1234
++
+ #endif /* ndef WINCONFIG_H */
