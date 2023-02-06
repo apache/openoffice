@@ -1241,7 +1241,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 			case HTML_FRAMESET_ON:
 			case HTML_HEAD_OFF:
 			case HTML_BODY_ON:
-			case HTML_IMAGE:		// Warum auch immer Netscape das tut.
+			case HTML_IMAGE:		// For whatever reason Netscape does this.
 				aUnknownToken.Erase();
 				break;
 			case HTML_TEXTTOKEN:
@@ -1694,7 +1694,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		}
 		break;
 
-	// Listen
+	// Lists
 	case HTML_DIRLIST_ON:
 	case HTML_MENULIST_ON:
 	case HTML_ORDERLIST_ON:
@@ -3458,7 +3458,7 @@ void SwHTMLParser::NewStdAttr( int nToken,
 
 void SwHTMLParser::EndTag( int nToken )
 {
-	// den Kontext holen
+	// get context
     _HTMLAttrContext *pCntxt = PopContext( static_cast< sal_uInt16 >(nToken & ~1) );
 	if( pCntxt )
 	{
