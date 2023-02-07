@@ -393,6 +393,11 @@ Sub InitializeLanguages()
 	LangIDValue(17,0,1) = &quot;LV&quot;
 	LangIDValue(17,0,2) = &quot;-426&quot;
 
+	&apos;Latgalian
+	LangIDValue(17,1,0) = &quot;ltg&quot;
+	LangIDValue(17,1,1) = &quot;LV&quot;
+	LangIDValue(17,1,2) = &quot;-64B&quot;
+
 &apos; CURRENCIES_LITHUANIAN
 	LangIDValue(18,0,0) = &quot;lt&quot;
 	LangIDValue(18,0,1) = &quot;LT&quot;
