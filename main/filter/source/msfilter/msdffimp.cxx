@@ -3693,7 +3693,7 @@ void SvxMSDffManager::ReadObjText( const String& rText, SdrObject* pObj ) const
 		rOutliner.SetUpdateMode( sal_False );
 		rOutliner.SetVertical( pText->IsVerticalWriting() );
 
-		sal_uInt16 nParaIndex = 0;
+		sal_uInt32 nParaIndex = 0;
 		sal_uInt32 nParaSize;
 		const sal_Unicode* pCurrent, *pBuf = rText.GetBuffer();
 		const sal_Unicode* pEnd = rText.GetBuffer() + rText.Len();
@@ -4581,9 +4581,9 @@ SdrObject* SvxMSDffManager::ImportShape( const DffRecordHeader& rHd, SvStream& r
 									sal_Bool bIsRTL = aVirDev.GetTextIsRTL( rOutliner.GetText( rOutliner.GetParagraph( i ) ), 0, STRING_LEN );
 									if ( bIsRTL )
 									{
-										SfxItemSet aSet2( rOutliner.GetParaAttribs( (sal_uInt16)i ) );
+										SfxItemSet aSet2( rOutliner.GetParaAttribs( i ) );
 										aSet2.Put( SvxFrameDirectionItem( FRMDIR_HORI_RIGHT_TOP, EE_PARA_WRITINGDIR ) );
-										rOutliner.SetParaAttribs( (sal_uInt16)i, aSet2 );
+										rOutliner.SetParaAttribs( i, aSet2 );
 										bCreateNewParaObject = sal_True;
 									}
 								}

@@ -789,7 +789,7 @@ sal_Int32 SwSrcView::PrintSource(
     // nLinepPage stimmt nicht, wenn Zeilen umgebrochen werden muessen...
     sal_uInt16 nLinespPage = (sal_uInt16) (aPaperSz.Height() / nLineHeight);
     sal_uInt16 nCharspLine = (sal_uInt16) (aPaperSz.Width()  / pOutDev->GetTextWidth( 'X' ));
-    sal_uInt16 nParas = static_cast< sal_uInt16 >( pTextEngine->GetParagraphCount() );
+    sal_uInt32 nParas = pTextEngine->GetParagraphCount();
 
     sal_uInt16 nPages = (sal_uInt16) (nParas / nLinespPage + 1 );
     sal_uInt16 nCurPage = 1;
@@ -799,7 +799,7 @@ sal_Int32 SwSrcView::PrintSource(
         lcl_PrintHeader( *pOutDev, nPages, nCurPage, aTitle );
     const Point aStartPos( LMARGPRN, TMARGPRN );
     Point aPos( aStartPos );
-    for ( sal_uInt16 nPara = 0; nPara < nParas; ++nPara )
+    for ( sal_uInt32 nPara = 0; nPara < nParas; ++nPara )
     {
         String aLine( pTextEngine->GetText( nPara ) );
         lcl_ConvertTabsToSpaces( aLine );

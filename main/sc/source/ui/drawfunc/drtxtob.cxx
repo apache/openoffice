@@ -215,7 +215,7 @@ void __EXPORT ScDrawTextObjectBar::Execute( SfxRequest &rReq )
 		case SID_SELECTALL:
 			{
 				sal_uLong nCount = pOutliner->GetParagraphCount();
-				ESelection aSel( 0,0,(sal_uInt16)nCount,0 );
+				ESelection aSel( 0,0,nCount,0 );
 				pOutView->SetSelection( aSel );
 			}
 			break;
@@ -647,7 +647,7 @@ void lcl_RemoveFields( OutlinerView& rOutView )
 		if ( nPar >= aSel.nStartPara && nPar <= aSel.nEndPara )
 		{
 			SvUShorts aPortions;
-			rEditEng.GetPortions( (sal_uInt16)nPar, aPortions );
+			rEditEng.GetPortions( nPar, aPortions );
 			//!	GetPortions should use xub_StrLen instead of sal_uInt16
 
 			for ( sal_uInt16 nPos = aPortions.Count(); nPos; )
@@ -660,7 +660,7 @@ void lcl_RemoveFields( OutlinerView& rOutView )
 					 ( nPar > aSel.nStartPara || nStart >= aSel.nStartPos ) &&
 					 ( nPar < aSel.nEndPara   || nEnd   <= aSel.nEndPos ) )
 				{
-					ESelection aFieldSel( (sal_uInt16)nPar, nStart, (sal_uInt16)nPar, nEnd );
+					ESelection aFieldSel( nPar, nStart, nPar, nEnd );
 					SfxItemSet aSet = rEditEng.GetAttribs( aFieldSel );
 					if ( aSet.GetItemState( EE_FEATURE_FIELD ) == SFX_ITEM_ON )
 					{

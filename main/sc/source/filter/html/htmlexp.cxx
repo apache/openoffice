@@ -1163,7 +1163,7 @@ sal_Bool ScHTMLExport::WriteFieldText( const ScEditCell* pCell )
 	// text and anchor of URL fields, Doc-Engine is a ScFieldEditEngine
 	EditEngine& rEngine = pDoc->GetEditEngine();
 	rEngine.SetText( *pData );
-	sal_uInt16 nParas = rEngine.GetParagraphCount();
+	sal_uInt32 nParas = rEngine.GetParagraphCount();
 	if ( nParas )
 	{
 		ESelection aSel( 0, 0, nParas-1, rEngine.GetTextLen( nParas-1 ) );
@@ -1176,7 +1176,7 @@ sal_Bool ScHTMLExport::WriteFieldText( const ScEditCell* pCell )
 	{
 		sal_Bool bOldUpdateMode = rEngine.GetUpdateMode();
 		rEngine.SetUpdateMode( sal_True );		// no portions if not formatted
-		for ( sal_uInt16 nPar=0; nPar < nParas; nPar++ )
+		for ( sal_uInt32 nPar=0; nPar < nParas; nPar++ )
 		{
 			if ( nPar > 0 )
                 TAG_ON( OOO_STRING_SVTOOLS_HTML_linebreak );

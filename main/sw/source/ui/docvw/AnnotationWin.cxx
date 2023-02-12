@@ -232,12 +232,12 @@ void SwAnnotationWin::InitAnswer(OutlinerParaObject* pText)
         GetOutlinerView()->InsertText(rtl::OUString::createFromAscii("..."),false);
     GetOutlinerView()->InsertText(rtl::OUString::createFromAscii("\"\n"),false);
 
-    GetOutlinerView()->SetSelection(ESelection(0x0,0x0,0xFFFF,0xFFFF));
+    GetOutlinerView()->SetSelection(ESelection(0, 0, EE_PARA_MAX, EE_INDEX_MAX));
     SfxItemSet aAnswerSet( DocView().GetDocShell()->GetPool() );
     aAnswerSet.Put(SvxFontHeightItem(200,80,EE_CHAR_FONTHEIGHT));
     aAnswerSet.Put(SvxPostureItem(ITALIC_NORMAL,EE_CHAR_ITALIC));
     GetOutlinerView()->SetAttribs(aAnswerSet);
-    GetOutlinerView()->SetSelection(ESelection(0xFFFF,0xFFFF,0xFFFF,0xFFFF));
+    GetOutlinerView()->SetSelection(ESelection(0, 0, EE_PARA_MAX, EE_INDEX_MAX));
 
     //remove all attributes and reset our standard ones
     GetOutlinerView()->GetEditView().RemoveAttribsKeepLanguages(true);

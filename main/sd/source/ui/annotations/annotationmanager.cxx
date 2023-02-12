@@ -494,7 +494,7 @@ void AnnotationManagerImpl::ExecuteReplyToAnnotation( SfxRequest& rReq )
 	        aAnswerSet.Put(SvxPostureItem(ITALIC_NORMAL,EE_CHAR_ITALIC));	    
     	    
 	        ESelection aSel;
-	        aSel.nEndPara = (sal_uInt16)pOutliner->GetParagraphCount()-2;
+	        aSel.nEndPara = pOutliner->GetParagraphCount()-2;
 	        aSel.nEndPos = pOutliner->GetText( pOutliner->GetParagraph( aSel.nEndPara ) ).Len();
     	    
             pOutliner->QuickSetAttribs( aAnswerSet, aSel );

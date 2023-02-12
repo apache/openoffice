@@ -3078,9 +3078,9 @@ sal_Int32 AnimationImporter::importTargetElementContainer( const Atom* pAtom, An
 
 						const EditTextObject& rEditTextObject = pOPO->GetTextObject();
 
-						const sal_uInt16 nParaCount = rEditTextObject.GetParagraphCount();
+						const sal_uInt32 nParaCount = rEditTextObject.GetParagraphCount();
 
-						sal_uInt16 nPara = 0;
+						sal_uInt32 nPara = 0;
 
 						while( (nPara < nParaCount) && (begin > 0) )
 						{

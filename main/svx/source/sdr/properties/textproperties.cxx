@@ -115,7 +115,7 @@ namespace sdr
 
 					sal_uInt32 nParaCount(pOutliner->GetParagraphCount());
 
-					for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+					for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 					{
 						SfxItemSet aSet(pOutliner->GetParaAttribs(nPara));
 						aSet.Put(rSet);
@@ -259,7 +259,7 @@ namespace sdr
 
 					if(nParaCount)
 					{
-						for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+						for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 						{
 							SfxItemSet* pTempSet = 0L;
 
@@ -276,7 +276,7 @@ namespace sdr
 								{
 									String aNewStyleSheetName(GetStyleSheet()->GetName());
 									aNewStyleSheetName.Erase(aNewStyleSheetName.Len() - 1, 1);
-									sal_Int16 nDepth = rOutliner.GetDepth((sal_uInt16)nPara);
+									sal_Int16 nDepth = rOutliner.GetDepth(nPara);
 									aNewStyleSheetName += String::CreateFromInt32( nDepth <= 0 ? 1 : nDepth + 1);
 
 									SdrModel* pModel = rObj.GetModel();
@@ -340,7 +340,7 @@ namespace sdr
 							}
 						}
 
-						OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, (sal_uInt16)nParaCount);
+						OutlinerParaObject* pTemp = rOutliner.CreateParaObject(0, nParaCount);
 						rOutliner.Clear();
 						rObj.NbcSetOutlinerParaObjectForText(pTemp, pText);
 					}
@@ -420,7 +420,7 @@ namespace sdr
 					{
 						sal_Bool bBurnIn(sal_False);
 
-						for(sal_uInt16 nPara = 0; nPara < nParaCount; nPara++)
+						for(sal_uInt32 nPara = 0; nPara < nParaCount; nPara++)
 						{
 							SfxStyleSheet* pSheet = pOutliner->GetStyleSheet(nPara);
 
@@ -454,7 +454,7 @@ namespace sdr
 								{
 									EditEngine* pEditEngine = const_cast<EditEngine*>(&(pOutliner->GetEditEngine()));
 									EECharAttribArray aAttribs;
-									pEditEngine->GetCharAttribs((sal_uInt16)nPara, aAttribs);
+									pEditEngine->GetCharAttribs(nPara, aAttribs);
 									sal_uInt16 nAttrib;
 
 									for(nAttrib = 0; nAttrib < aAttribs.Count(); nAttrib++)
@@ -486,7 +486,7 @@ namespace sdr
 										SfxItemSet aColorSet(*aSet.GetPool(), EE_CHAR_COLOR, EE_CHAR_COLOR );
 										aColorSet.Put(aSet, sal_False);
 
-										ESelection aSel((sal_uInt16)nPara, 0);
+										ESelection aSel(nPara, 0);
 
 										for(nAttrib = 0; nAttrib < aAttribs.Count(); nAttrib++)
 										{
@@ -505,7 +505,7 @@ namespace sdr
 											}
 										}
 
-										aSel.nEndPos = pEditEngine->GetTextLen((sal_uInt16)nPara);
+										aSel.nEndPos = pEditEngine->GetTextLen(nPara);
 
 										if(aSel.nStartPos != aSel.nEndPos)
 										{
@@ -529,7 +529,7 @@ namespace sdr
 
 						if(bBurnIn)
 						{
-							OutlinerParaObject* pTemp = pOutliner->CreateParaObject(0, (sal_uInt16)nParaCount);
+							OutlinerParaObject* pTemp = pOutliner->CreateParaObject(0, nParaCount);
 							rObj.NbcSetOutlinerParaObjectForText(pTemp,pText);
 						}
 					}
