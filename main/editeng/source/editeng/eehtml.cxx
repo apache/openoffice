@@ -225,7 +225,7 @@ void EditHTMLParser::NextToken( int nToken )
 	case HTML_CENTER_ON:
 	case HTML_CENTER_OFF:	// if ( bInPara )
 							{
-								sal_uInt16 nNode = pImpEditEngine->GetEditDoc().GetPos( aCurSel.Max().GetNode() );
+								sal_uInt32 nNode = pImpEditEngine->GetEditDoc().GetPos( aCurSel.Max().GetNode() );
 								SfxItemSet aItems( aCurSel.Max().GetNode()->GetContentAttribs().GetItems() );
 								aItems.ClearItem( EE_PARA_JUST );
 								if ( nToken == HTML_CENTER_ON )
@@ -551,7 +551,7 @@ void EditHTMLParser::ImpSetAttribs( const SfxItemSet& rItems, EditSelection* pSe
 	}
 
 	ContentNode* pSN = aStartPaM.GetNode();
-	sal_uInt16 nStartNode = pImpEditEngine->GetEditDoc().GetPos( pSN );
+	sal_uInt32 nStartNode = pImpEditEngine->GetEditDoc().GetPos( pSN );
 
 	// Wenn ein Attribut von 0 bis aktuelle Absatzlaenge geht,
 	// soll es ein Absatz-Attribut sein!
@@ -562,12 +562,12 @@ void EditHTMLParser::ImpSetAttribs( const SfxItemSet& rItems, EditSelection* pSe
 	// HTML eigentlich nicht:
 #ifdef DBG_UTIL
 	ContentNode* pEN = aEndPaM.GetNode();
-	sal_uInt16 nEndNode = pImpEditEngine->GetEditDoc().GetPos( pEN );
+	sal_uInt32 nEndNode = pImpEditEngine->GetEditDoc().GetPos( pEN );
 	DBG_ASSERT( nStartNode == nEndNode, "ImpSetAttribs: Mehrere Absaetze?" );
 #endif
 
 /*
-	for ( sal_uInt16 z = nStartNode+1; z < nEndNode; z++ )
+	for ( sal_uInt32 z = nStartNode+1; z < nEndNode; z++ )
 	{
 		DBG_ASSERT( pImpEditEngine->GetEditDoc().SaveGetObject( z ), "Node existiert noch nicht(RTF)" );
 		pImpEditEngine->SetParaAttribs( z, rSet.GetAttrSet() );
@@ -624,7 +624,7 @@ void EditHTMLParser::ImpSetStyleSheet( sal_uInt16 nHLevel )
 			// dass diese auch in der App liegen sollten, damit sie beim
 			// fuettern in eine andere Engine auch noch da sind...
 
-			sal_uInt16 nNode = pImpEditEngine->GetEditDoc().GetPos( aCurSel.Max().GetNode() );
+			sal_uInt32 nNode = pImpEditEngine->GetEditDoc().GetPos( aCurSel.Max().GetNode() );
 //			SfxItemSet aItems( pImpEditEngine->GetEmptyItemSet() );
 			SfxItemSet aItems( aCurSel.Max().GetNode()->GetContentAttribs().GetItems() );
 

@@ -125,7 +125,7 @@ class ScUnoEditEngine : public ScEditEngineDefaulter
 	sal_uInt16				nFieldCount;
 	TypeId				aFieldType;
 	SvxFieldData*		pFound;			// lokale Kopie
-	sal_uInt16				nFieldPar;
+	sal_uInt32				nFieldPar;
 	xub_StrLen			nFieldPos;
 	sal_uInt16				nFieldIndex;
 
@@ -134,14 +134,14 @@ public:
 				~ScUnoEditEngine();
 
 					//!	nPos should be xub_StrLen
-	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos,
+	virtual String	CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos,
 									Color*& rTxtColor, Color*& rFldColor );
 
 	sal_uInt16			CountFields(TypeId aType);
 	SvxFieldData*	FindByIndex(sal_uInt16 nIndex, TypeId aType);
-	SvxFieldData*	FindByPos(sal_uInt16 nPar, xub_StrLen nPos, TypeId aType);
+	SvxFieldData*	FindByPos(sal_uInt32 nPar, xub_StrLen nPos, TypeId aType);
 
-	sal_uInt16			GetFieldPar() const		{ return nFieldPar; }
+	sal_uInt32			GetFieldPar() const		{ return nFieldPar; }
 	xub_StrLen		GetFieldPos() const		{ return nFieldPos; }
 };
 
@@ -166,7 +166,7 @@ ScUnoEditEngine::~ScUnoEditEngine()
 }
 
 String ScUnoEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-			sal_uInt16 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor )
+			sal_uInt32 nPara, sal_uInt16 nPos, Color*& rTxtColor, Color*& rFldColor )
 {
 	String aRet(EditEngine::CalcFieldValue( rField, nPara, nPos, rTxtColor, rFldColor ));
 	if (eMode != SC_UNO_COLLECT_NONE)
@@ -220,7 +220,7 @@ SvxFieldData* ScUnoEditEngine::FindByIndex(sal_uInt16 nIndex, TypeId aType)
 	return pFound;
 }
 
-SvxFieldData* ScUnoEditEngine::FindByPos(sal_uInt16 nPar, xub_StrLen nPos, TypeId aType)
+SvxFieldData* ScUnoEditEngine::FindByPos(sal_uInt32 nPar, xub_StrLen nPos, TypeId aType)
 {
 	eMode = SC_UNO_COLLECT_FINDPOS;
 	nFieldPar = nPar;
@@ -295,7 +295,7 @@ ScCellFieldObj* ScCellFieldsObj::GetObjectByIndex_Impl(sal_Int32 Index) const
 
 	if ( aTempEngine.FindByIndex( (sal_uInt16)Index, NULL ) )	// in der Zelle ist der Typ egal
 	{
-		sal_uInt16 nPar = aTempEngine.GetFieldPar();
+		sal_uInt32 nPar = aTempEngine.GetFieldPar();
 		xub_StrLen nPos = aTempEngine.GetFieldPos();
 		ESelection aSelection( nPar, nPos, nPar, nPos+1 );		// Feld ist 1 Zeichen
 		return new ScCellFieldObj( pDocShell, aCellPos, aSelection );
@@ -928,7 +928,7 @@ ScHeaderFieldObj* ScHeaderFieldsObj::GetObjectByIndex_Impl(sal_Int32 Index) cons
 	SvxFieldData* pData = aTempEngine.FindByIndex( (sal_uInt16)Index, aTypeId );
 	if ( pData )
 	{
-		sal_uInt16 nPar = aTempEngine.GetFieldPar();
+		sal_uInt32 nPar = aTempEngine.GetFieldPar();
 		xub_StrLen nPos = aTempEngine.GetFieldPos();
 
 		sal_uInt16 nFieldType = nType;

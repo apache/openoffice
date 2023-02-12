@@ -306,30 +306,30 @@ __EXPORT EditTextObject::~EditTextObject()
 	DBG_DTOR( EE_EditTextObject, 0 );
 }
 
-sal_uInt16 EditTextObject::GetParagraphCount() const
+sal_uInt32 EditTextObject::GetParagraphCount() const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 	return 0;
 }
 
-XubString EditTextObject::GetText( sal_uInt16 /* nParagraph */ ) const
+XubString EditTextObject::GetText( sal_uInt32 /* nParagraph */ ) const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 	return XubString();
 }
 
-void EditTextObject::Insert( const EditTextObject& /* rObj */, sal_uInt16 /* nPara */)
+void EditTextObject::Insert( const EditTextObject& /* rObj */, sal_uInt32 /* nPara */)
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
 
-EditTextObject* EditTextObject::CreateTextObject( sal_uInt16 /*nPara*/, sal_uInt16 /*nParas*/ ) const
+EditTextObject* EditTextObject::CreateTextObject( sal_uInt32 /*nPara*/, sal_uInt32 /*nParas*/ ) const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 	return 0;
 }
 
-void EditTextObject::RemoveParagraph( sal_uInt16 /*nPara*/ )
+void EditTextObject::RemoveParagraph( sal_uInt32 /*nPara*/ )
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
@@ -357,7 +357,7 @@ sal_Bool EditTextObject::HasCharAttribs( sal_uInt16 ) const
 	return sal_False;
 }
 
-void EditTextObject::GetCharAttribs( sal_uInt16 /*nPara*/, EECharAttribArray& /*rLst*/ ) const
+void EditTextObject::GetCharAttribs( sal_uInt32 /*nPara*/, EECharAttribArray& /*rLst*/ ) const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
@@ -385,13 +385,13 @@ sal_Bool EditTextObject::HasField( TypeId /*aType*/ ) const
 	return sal_False;
 }
 
-SfxItemSet EditTextObject::GetParaAttribs( sal_uInt16 /*nPara*/ ) const
+SfxItemSet EditTextObject::GetParaAttribs( sal_uInt32 /*nPara*/ ) const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 	return SfxItemSet( *(SfxItemPool*)NULL );
 }
 
-void EditTextObject::SetParaAttribs( sal_uInt16 /*nPara*/, const SfxItemSet& /*rAttribs*/ )
+void EditTextObject::SetParaAttribs( sal_uInt32 /*nPara*/, const SfxItemSet& /*rAttribs*/ )
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
@@ -414,12 +414,12 @@ sal_Bool EditTextObject::HasStyleSheet( const XubString& /*rName*/, SfxStyleFami
 	return sal_False;
 }
 
-void EditTextObject::GetStyleSheet( sal_uInt16 /*nPara*/, XubString& /*rName*/, SfxStyleFamily& /*eFamily*/ ) const
+void EditTextObject::GetStyleSheet( sal_uInt32 /*nPara*/, XubString& /*rName*/, SfxStyleFamily& /*eFamily*/ ) const
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
 
-void EditTextObject::SetStyleSheet( sal_uInt16 /*nPara*/, const XubString& /*rName*/, const SfxStyleFamily& /*eFamily*/ )
+void EditTextObject::SetStyleSheet( sal_uInt32 /*nPara*/, const XubString& /*rName*/, const SfxStyleFamily& /*eFamily*/ )
 {
 	DBG_ERROR( "V-Methode direkt vom EditTextObject!" );
 }
@@ -599,7 +599,7 @@ void BinTextObject::ObjectInDestruction(const SfxItemPool& rSfxItemPool)
 		    pNewPool->SetDefaultMetric(pPool->GetMetric(DEF_METRIC));
         }
 
-	    for(sal_uInt16 n(0); n < aContents.Count(); n++)
+	    for(sal_uInt32 n(0); n < aContents.Count(); n++)
 	    {
             // clone ContentInfos for new pool
 		    ContentInfo* pOrg = aContents.GetObject(n);
@@ -709,7 +709,7 @@ BinTextObject::BinTextObject( const BinTextObject& r ) :
     if ( bOwnerOfPool && pPool && r.pPool )
 		pPool->SetDefaultMetric( r.pPool->GetMetric( DEF_METRIC ) );
 
-	for ( sal_uInt16 n = 0; n < r.aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < r.aContents.Count(); n++ )
 	{
 		ContentInfo* pOrg = r.aContents.GetObject( n );
 		DBG_ASSERT( pOrg, "NULL-Pointer in ContentList!" );
@@ -783,7 +783,7 @@ void BinTextObject::SetScriptType( sal_uInt16 nType )
 
 void BinTextObject::DeleteContents()
 {
-	for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 	{
 		ContentInfo* p = aContents.GetObject( n );
 		DBG_ASSERT( p, "NULL-Pointer in ContentList!" );
@@ -815,12 +815,12 @@ ContentInfo* BinTextObject::CreateAndInsertContent()
 	return pC;
 }
 
-sal_uInt16 BinTextObject::GetParagraphCount() const
+sal_uInt32 BinTextObject::GetParagraphCount() const
 {
 	return aContents.Count();
 }
 
-XubString BinTextObject::GetText( sal_uInt16 nPara ) const
+XubString BinTextObject::GetText( sal_uInt32 nPara ) const
 {
 	DBG_ASSERT( nPara < aContents.Count(), "BinTextObject::GetText: Absatz existiert nicht!" );
 	if ( nPara < aContents.Count() )
@@ -831,7 +831,7 @@ XubString BinTextObject::GetText( sal_uInt16 nPara ) const
 	return XubString();
 }
 
-void BinTextObject::Insert( const EditTextObject& rObj, sal_uInt16 nDestPara )
+void BinTextObject::Insert( const EditTextObject& rObj, sal_uInt32 nDestPara )
 {
 	DBG_ASSERT( rObj.Which() == EE_FORMAT_BIN, "UTO: Unbekanntes Textobjekt" );
 
@@ -840,8 +840,8 @@ void BinTextObject::Insert( const EditTextObject& rObj, sal_uInt16 nDestPara )
 	if ( nDestPara > aContents.Count() )
 		nDestPara = aContents.Count();
 
-	const sal_uInt16 nParas = rBinObj.GetContents().Count();
-	for ( sal_uInt16 nP = 0; nP < nParas; nP++ )
+	const sal_uInt32 nParas = rBinObj.GetContents().Count();
+	for ( sal_uInt32 nP = 0; nP < nParas; nP++ )
 	{
 		ContentInfo* pC = rBinObj.GetContents()[ nP ];
 		ContentInfo* pNew = new ContentInfo( *pC, *GetPool() );
@@ -850,7 +850,7 @@ void BinTextObject::Insert( const EditTextObject& rObj, sal_uInt16 nDestPara )
 	ClearPortionInfo();
 }
 
-EditTextObject* BinTextObject::CreateTextObject( sal_uInt16 nPara, sal_uInt16 nParas ) const
+EditTextObject* BinTextObject::CreateTextObject( sal_uInt32 nPara, sal_uInt32 nParas ) const
 {
 	if ( ( nPara >= aContents.Count() ) || !nParas )
 		return NULL;
@@ -864,8 +864,8 @@ EditTextObject* BinTextObject::CreateTextObject( sal_uInt16 nPara, sal_uInt16 nP
 	// If text contains different ScriptTypes, this shouldn't be a problem...
 	pObj->nScriptType = nScriptType;
 
-	const sal_uInt16 nEndPara = nPara+nParas-1;
-	for ( sal_uInt16 nP = nPara; nP <= nEndPara; nP++ )
+	const sal_uInt32 nEndPara = nPara+nParas-1;
+	for ( sal_uInt32 nP = nPara; nP <= nEndPara; nP++ )
 	{
 		ContentInfo* pC = aContents[ nP ];
 		ContentInfo* pNew = new ContentInfo( *pC, *pObj->GetPool() );
@@ -874,7 +874,7 @@ EditTextObject* BinTextObject::CreateTextObject( sal_uInt16 nPara, sal_uInt16 nP
 	return pObj;
 }
 
-void BinTextObject::RemoveParagraph( sal_uInt16 nPara )
+void BinTextObject::RemoveParagraph( sal_uInt32 nPara )
 {
 	DBG_ASSERT( nPara < aContents.Count(), "BinTextObject::GetText: Absatz existiert nicht!" );
 	if ( nPara < aContents.Count() )
@@ -905,7 +905,7 @@ void BinTextObject::ClearPortionInfo()
 sal_Bool BinTextObject::HasOnlineSpellErrors() const
 {
 #ifndef SVX_LIGHT
-	for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+	for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 	{
 		ContentInfo* p = aContents.GetObject( n );
 		if ( p->GetWrongList() && p->GetWrongList()->Count() )
@@ -918,7 +918,7 @@ sal_Bool BinTextObject::HasOnlineSpellErrors() const
 
 sal_Bool BinTextObject::HasCharAttribs( sal_uInt16 _nWhich ) const
 {
-	for ( sal_uInt16 nPara = GetContents().Count(); nPara; )
+	for ( sal_uInt32 nPara = GetContents().Count(); nPara; )
 	{
 		ContentInfo* pC = GetContents().GetObject( --nPara );
 
@@ -936,7 +936,7 @@ sal_Bool BinTextObject::HasCharAttribs( sal_uInt16 _nWhich ) const
 	return sal_False;
 }
 
-void BinTextObject::GetCharAttribs( sal_uInt16 nPara, EECharAttribArray& rLst ) const
+void BinTextObject::GetCharAttribs( sal_uInt32 nPara, EECharAttribArray& rLst ) const
 {
 	rLst.Remove( 0, rLst.Count() );
 	ContentInfo* pC = GetContents().GetObject( nPara );
@@ -959,7 +959,7 @@ void BinTextObject::MergeParaAttribs( const SfxItemSet& rAttribs, sal_uInt16 nSt
 {
 	sal_Bool bChanged = sal_False;
 
-	for ( sal_uInt16 nPara = GetContents().Count(); nPara; )
+	for ( sal_uInt32 nPara = GetContents().Count(); nPara; )
 	{
 		ContentInfo* pC = GetContents().GetObject( --nPara );
 
@@ -1004,8 +1004,8 @@ const SvxFieldItem* BinTextObject::GetField() const
 
 sal_Bool BinTextObject::HasField( TypeId aType ) const
 {
-	sal_uInt16 nParagraphs = GetContents().Count();
-	for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+	sal_uInt32 nParagraphs = GetContents().Count();
+	for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 	{
 		ContentInfo* pC = GetContents().GetObject( nPara );
 		sal_uInt16 nAttrs = pC->GetAttribs().Count();
@@ -1026,13 +1026,13 @@ sal_Bool BinTextObject::HasField( TypeId aType ) const
 	return sal_False;
 }
 
-SfxItemSet BinTextObject::GetParaAttribs( sal_uInt16 nPara ) const
+SfxItemSet BinTextObject::GetParaAttribs( sal_uInt32 nPara ) const
 {
 	ContentInfo* pC = GetContents().GetObject( nPara );
 	return pC->GetParaAttribs();
 }
 
-void BinTextObject::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rAttribs )
+void BinTextObject::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rAttribs )
 {
 	ContentInfo* pC = GetContents().GetObject( nPara );
 	pC->GetParaAttribs().Set( rAttribs );
@@ -1043,7 +1043,7 @@ sal_Bool BinTextObject::RemoveCharAttribs( sal_uInt16 _nWhich )
 {
 	sal_Bool bChanged = sal_False;
 
-	for ( sal_uInt16 nPara = GetContents().Count(); nPara; )
+	for ( sal_uInt32 nPara = GetContents().Count(); nPara; )
 	{
 		ContentInfo* pC = GetContents().GetObject( --nPara );
 
@@ -1069,7 +1069,7 @@ sal_Bool BinTextObject::RemoveParaAttribs( sal_uInt16 _nWhich )
 {
 	sal_Bool bChanged = sal_False;
 
-	for ( sal_uInt16 nPara = GetContents().Count(); nPara; )
+	for ( sal_uInt32 nPara = GetContents().Count(); nPara; )
 	{
 		ContentInfo* pC = GetContents().GetObject( --nPara );
 
@@ -1097,8 +1097,8 @@ sal_Bool BinTextObject::RemoveParaAttribs( sal_uInt16 _nWhich )
 
 sal_Bool BinTextObject::HasStyleSheet( const XubString& rName, SfxStyleFamily eFamily ) const
 {
-	sal_uInt16 nParagraphs = GetContents().Count();
-	for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+	sal_uInt32 nParagraphs = GetContents().Count();
+	for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 	{
 		ContentInfo* pC = GetContents().GetObject( nPara );
 		if ( ( pC->GetFamily() == eFamily ) && ( pC->GetStyle() == rName ) )
@@ -1107,7 +1107,7 @@ sal_Bool BinTextObject::HasStyleSheet( const XubString& rName, SfxStyleFamily eF
 	return sal_False;
 }
 
-void BinTextObject::GetStyleSheet( sal_uInt16 nPara, XubString& rName, SfxStyleFamily& rFamily ) const
+void BinTextObject::GetStyleSheet( sal_uInt32 nPara, XubString& rName, SfxStyleFamily& rFamily ) const
 {
 	if ( nPara < aContents.Count() )
 	{
@@ -1117,7 +1117,7 @@ void BinTextObject::GetStyleSheet( sal_uInt16 nPara, XubString& rName, SfxStyleF
 	}
 }
 
-void BinTextObject::SetStyleSheet( sal_uInt16 nPara, const XubString& rName, const SfxStyleFamily& rFamily )
+void BinTextObject::SetStyleSheet( sal_uInt32 nPara, const XubString& rName, const SfxStyleFamily& rFamily )
 {
 	if ( nPara < aContents.Count() )
 	{
@@ -1131,10 +1131,10 @@ sal_Bool BinTextObject::ImpChangeStyleSheets(
 					const XubString& rOldName, SfxStyleFamily eOldFamily,
 					const XubString& rNewName, SfxStyleFamily eNewFamily )
 {
-	const sal_uInt16 nParagraphs = GetContents().Count();
+	const sal_uInt32 nParagraphs = GetContents().Count();
 	sal_Bool bChanges = sal_False;
 
-	for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+	for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 	{
 		ContentInfo* pC = GetContents().GetObject( nPara );
 		if ( pC->GetFamily() == eOldFamily )
@@ -1169,7 +1169,7 @@ void __EXPORT BinTextObject::ChangeStyleSheetName( SfxStyleFamily eFamily,
 
 void __EXPORT BinTextObject::StoreData( SvStream& rOStream ) const
 {
-	sal_uInt16 nVer = 602;
+	sal_uInt16 nVer = 603;
 	rOStream << nVer;
 
 	rOStream << bOwnerOfPool;
@@ -1187,13 +1187,13 @@ void __EXPORT BinTextObject::StoreData( SvStream& rOStream ) const
 	rOStream << (sal_uInt16) eEncoding;
 
 	// Die Anzahl der Absaetze...
-	sal_uInt16 nParagraphs = GetContents().Count();
+	sal_uInt32 nParagraphs = GetContents().Count();
 	rOStream << nParagraphs;
 
 	char cFeatureConverted = ByteString( CH_FEATURE, eEncoding ).GetChar(0);
 
 	// Die einzelnen Absaetze...
-	for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+	for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 	{
 		ContentInfo* pC = GetContents().GetObject( nPara );
 
@@ -1325,7 +1325,7 @@ void __EXPORT BinTextObject::StoreData( SvStream& rOStream ) const
 	rOStream << bStoreUnicodeStrings;
 	if ( bStoreUnicodeStrings )
 	{
-		for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+		for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 		{
 			ContentInfo* pC = GetContents().GetObject( nPara );
 			sal_uInt16 nL = pC->GetText().Len();
@@ -1375,11 +1375,18 @@ void __EXPORT BinTextObject::CreateData( SvStream& rIStream )
 	rtl_TextEncoding eSrcEncoding = GetSOLoadTextEncoding( (rtl_TextEncoding)nCharSet, (sal_uInt16)rIStream.GetVersion() );
 
 	// Die Anzahl der Absaetze...
-	sal_uInt16 nParagraphs;
-	rIStream >> nParagraphs;
+	sal_uInt32 nParagraphs;
+	if (nVersion >= 603)
+		rIStream >> nParagraphs;
+	else
+	{
+		sal_uInt16 nParagraphs16;
+		rIStream >> nParagraphs16;
+		nParagraphs = nParagraphs16;
+	}
 
 	// Die einzelnen Absaetze...
-	for ( sal_uLong nPara = 0; nPara < nParagraphs; nPara++ )
+	for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 	{
 		ContentInfo* pC = CreateAndInsertContent();
 
@@ -1557,7 +1564,7 @@ void __EXPORT BinTextObject::CreateData( SvStream& rIStream )
 		rIStream >> bUnicodeStrings;
 		if ( bUnicodeStrings )
 		{
-			for ( sal_uInt16 nPara = 0; nPara < nParagraphs; nPara++ )
+			for ( sal_uInt32 nPara = 0; nPara < nParagraphs; nPara++ )
 			{
 				ContentInfo* pC = GetContents().GetObject( nPara );
 				sal_uInt16 nL;
@@ -1588,7 +1595,7 @@ void __EXPORT BinTextObject::CreateData( SvStream& rIStream )
 	// Wirkt nur wenn auch Tab-Positionen eingestellt wurden, nicht beim DefTab.
 	if ( nVersion < 500 )
 	{
-		for ( sal_uInt16 n = 0; n < aContents.Count(); n++ )
+		for ( sal_uInt32 n = 0; n < aContents.Count(); n++ )
 		{
 			ContentInfo* pC = aContents.GetObject( n );
 			const SvxLRSpaceItem& rLRSpace = (const SvxLRSpaceItem&) pC->GetParaAttribs().Get( EE_PARA_LRSPACE );
@@ -1626,7 +1633,7 @@ bool BinTextObject::operator==( const BinTextObject& rCompare ) const
 			( bVertical != rCompare.bVertical ) )
 		return false;
 
-	sal_uInt16 n;
+	sal_uInt32 n;
 	for( n = 0; n < aContents.Count(); n++ )
 	{
 		if( !( *aContents.GetObject( n ) == *rCompare.aContents.GetObject( n ) ) )
@@ -1644,7 +1651,7 @@ bool BinTextObject::isWrongListEqual(const BinTextObject& rCompare) const
         return false;
     }
 
-    for(sal_uInt16 a(0); a < GetContents().Count(); a++)
+    for(sal_uInt32 a(0); a < GetContents().Count(); a++)
     {
         const ContentInfo& rCandA(*GetContents().GetObject(a));
         const ContentInfo& rCandB(*rCompare.GetContents().GetObject(a));

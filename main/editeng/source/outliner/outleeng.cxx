@@ -51,7 +51,7 @@ OutlinerEditEng::~OutlinerEditEng()
 {
 }
 
-void OutlinerEditEng::PaintingFirstLine( sal_uInt16 nPara, const Point& rStartPos, long nBaseLineY, const Point& rOrigin, short nOrientation, OutputDevice* pOutDev )
+void OutlinerEditEng::PaintingFirstLine( sal_uInt32 nPara, const Point& rStartPos, long nBaseLineY, const Point& rOrigin, short nOrientation, OutputDevice* pOutDev )
 {
 	if( GetControlWord() & EE_CNTRL_OUTLINER )
 	{
@@ -62,7 +62,7 @@ void OutlinerEditEng::PaintingFirstLine( sal_uInt16 nPara, const Point& rStartPo
     pOwner->PaintBullet( nPara, rStartPos, rOrigin, nOrientation, pOutDev );
 }
 
-const SvxNumberFormat* OutlinerEditEng::GetNumberFormat( sal_uInt16 nPara ) const
+const SvxNumberFormat* OutlinerEditEng::GetNumberFormat( sal_uInt32 nPara ) const
 {
     const SvxNumberFormat* pFmt = NULL;
     if (pOwner)
@@ -71,7 +71,7 @@ const SvxNumberFormat* OutlinerEditEng::GetNumberFormat( sal_uInt16 nPara ) cons
 }
 
 
-Rectangle OutlinerEditEng::GetBulletArea( sal_uInt16 nPara )
+Rectangle OutlinerEditEng::GetBulletArea( sal_uInt32 nPara )
 {
 	Rectangle aBulletArea = Rectangle( Point(), Point() );
 	if ( nPara < pOwner->pParaList->GetParagraphCount() )
@@ -82,21 +82,21 @@ Rectangle OutlinerEditEng::GetBulletArea( sal_uInt16 nPara )
 	return aBulletArea;
 }
 
-void OutlinerEditEng::ParagraphInserted( sal_uInt16 nNewParagraph )
+void OutlinerEditEng::ParagraphInserted( sal_uInt32 nNewParagraph )
 {
 	pOwner->ParagraphInserted( nNewParagraph );
 
     EditEngine::ParagraphInserted( nNewParagraph );
 }
 
-void OutlinerEditEng::ParagraphDeleted( sal_uInt16 nDeletedParagraph )
+void OutlinerEditEng::ParagraphDeleted( sal_uInt32 nDeletedParagraph )
 {
 	pOwner->ParagraphDeleted( nDeletedParagraph );
 
     EditEngine::ParagraphDeleted( nDeletedParagraph );
 }
 
-void OutlinerEditEng::ParagraphConnected( sal_uInt16 /*nLeftParagraph*/, sal_uInt16 nRightParagraph )
+void OutlinerEditEng::ParagraphConnected( sal_uInt32 /*nLeftParagraph*/, sal_uInt32 nRightParagraph )
 {
     if( pOwner && pOwner->IsUndoEnabled() && !const_cast<EditEngine&>(pOwner->GetEditEngine()).IsInUndo() )
     {
@@ -114,7 +114,7 @@ void OutlinerEditEng::StyleSheetChanged( SfxStyleSheet* pStyle )
 	pOwner->StyleSheetChanged( pStyle );
 }
 
-void OutlinerEditEng::ParaAttribsChanged( sal_uInt16 nPara )
+void OutlinerEditEng::ParaAttribsChanged( sal_uInt32 nPara )
 {
 	pOwner->ParaAttribsChanged( nPara );
 }
@@ -155,7 +155,7 @@ XubString OutlinerEditEng::GetUndoComment( sal_uInt16 nUndoId ) const
 
 // #101498#
 void OutlinerEditEng::DrawingText( const Point& rStartPos, const XubString& rText, sal_uInt16 nTextStart, sal_uInt16 nTextLen,
-    const sal_Int32* pDXArray, const SvxFont& rFont, sal_uInt16 nPara, sal_uInt16 nIndex, sal_uInt8 nRightToLeft,
+    const sal_Int32* pDXArray, const SvxFont& rFont, sal_uInt32 nPara, sal_uInt16 nIndex, sal_uInt8 nRightToLeft,
     const EEngineData::WrongSpellVector* pWrongSpellVector,
     const SvxFieldData* pFieldData,
     bool bEndOfLine,
@@ -200,23 +200,23 @@ void OutlinerEditEng::DrawingText( const Point& rStartPos, const XubString& rTex
         pWrongSpellVector, pFieldData, bEndOfLine, bEndOfParagraph, bEndOfBullet, pLocale, rOverlineColor, rTextLineColor);
 }
 
-void OutlinerEditEng::FieldClicked( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos )
+void OutlinerEditEng::FieldClicked( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos )
 {
 	EditEngine::FieldClicked( rField, nPara, nPos );	// Falls URL
 	pOwner->FieldClicked( rField, nPara, nPos );
 }
 
-void OutlinerEditEng::FieldSelected( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos )
+void OutlinerEditEng::FieldSelected( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos )
 {
 	pOwner->FieldSelected( rField, nPara, nPos );
 }
 
-XubString OutlinerEditEng::CalcFieldValue( const SvxFieldItem& rField, sal_uInt16 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor )
+XubString OutlinerEditEng::CalcFieldValue( const SvxFieldItem& rField, sal_uInt32 nPara, sal_uInt16 nPos, Color*& rpTxtColor, Color*& rpFldColor )
 {
 	return pOwner->CalcFieldValue( rField, nPara, nPos, rpTxtColor, rpFldColor );
 }
 
-void OutlinerEditEng::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
+void OutlinerEditEng::SetParaAttribs( sal_uInt32 nPara, const SfxItemSet& rSet )
 {
 	Paragraph* pPara = pOwner->pParaList->GetParagraph( nPara );
 	if( pPara )
@@ -224,13 +224,13 @@ void OutlinerEditEng::SetParaAttribs( sal_uInt16 nPara, const SfxItemSet& rSet )
 		if ( !IsInUndo() && IsUndoEnabled() )
 			pOwner->UndoActionStart( OLUNDO_ATTR );
 
-        EditEngine::SetParaAttribs( (sal_uInt16)nPara, rSet );
+        EditEngine::SetParaAttribs( nPara, rSet );
 
-		pOwner->ImplCheckNumBulletItem( (sal_uInt16)nPara );
+		pOwner->ImplCheckNumBulletItem( nPara );
         // --> OD 2009-03-10 #i100014#
         // It is not a good idea to subtract 1 from a count and cast the result
         // to sal_uInt16 without check, if the count is 0.
-        pOwner->ImplCheckParagraphs( (sal_uInt16)nPara, (sal_uInt16) (pOwner->pParaList->GetParagraphCount()) );
+        pOwner->ImplCheckParagraphs( nPara, (sal_uInt32) (pOwner->pParaList->GetParagraphCount()) );
         // <--
 
 		if ( !IsInUndo() && IsUndoEnabled() )

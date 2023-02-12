@@ -1352,9 +1352,9 @@ void WW8Export::WriteOutliner(const OutlinerParaObject& rParaObj, sal_uInt8 nTyp
     const EditTextObject& rEditObj = rParaObj.GetTextObject();
     MSWord_SdrAttrIter aAttrIter( *this, rEditObj, nTyp );
 
-    sal_uInt16 nPara = rEditObj.GetParagraphCount();
+    sal_uInt32 nPara = rEditObj.GetParagraphCount();
     sal_uInt8 bNul = 0;
-    for( sal_uInt16 n = 0; n < nPara; ++n )
+    for( sal_uInt32 n = 0; n < nPara; ++n )
     {
         if( n )
             aAttrIter.NextPara( n );

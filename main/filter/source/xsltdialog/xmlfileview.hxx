@@ -85,7 +85,7 @@ private:
 					*pVScrollbar;
 
 	long			nCurTextWidth;
-	sal_uInt16			nStartLine;
+	sal_uInt32			nStartLine;
     rtl_TextEncoding eSourceEncoding;
 
 	Timer			aSyntaxIdleTimer;
@@ -94,7 +94,7 @@ private:
 	bool			bHighlighting;
 protected:
 	DECL_LINK( SyntaxTimerHdl, Timer * );
-	void			ImpDoHighlight( const String& rSource, sal_uInt16 nLineOff );
+	void			ImpDoHighlight( const String& rSource, sal_uInt32 nLineOff );
 
 	virtual void	Resize();
 	virtual void	DataChanged( const DataChangedEvent& );
@@ -106,9 +106,9 @@ protected:
 
 	DECL_LINK(ScrollHdl, ScrollBar*);
 
-	void			DoDelayedSyntaxHighlight( sal_uInt16 nPara );
+	void			DoDelayedSyntaxHighlight( sal_uInt32 nPara );
 
-	void			DoSyntaxHighlight( sal_uInt16 nPara );
+	void			DoSyntaxHighlight( sal_uInt32 nPara );
 
 public:
 					XMLFileWindow( Window* pParent );

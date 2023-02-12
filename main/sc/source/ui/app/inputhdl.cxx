@@ -1459,7 +1459,7 @@ void ScInputHandler::UseColData()			// beim Tippen
 		ESelection aSel = pActiveView->GetSelection();
 		aSel.Adjust();
 
-		sal_uInt16 nParCnt = pEngine->GetParagraphCount();
+		sal_uInt32 nParCnt = pEngine->GetParagraphCount();
 		if ( aSel.nEndPara+1 == nParCnt )
 		{
 			xub_StrLen nParLen = pEngine->GetTextLen( aSel.nEndPara );
@@ -1532,7 +1532,7 @@ void ScInputHandler::NextAutoEntry( sal_Bool bBack )
 
 			ESelection aSel = pActiveView->GetSelection();
 			aSel.Adjust();
-			sal_uInt16 nParCnt = pEngine->GetParagraphCount();
+			sal_uInt32 nParCnt = pEngine->GetParagraphCount();
 			if ( aSel.nEndPara+1 == nParCnt && aSel.nStartPara == aSel.nEndPara )
 			{
 				String aText = GetEditText(pEngine);
@@ -1620,8 +1620,8 @@ void ScInputHandler::UpdateParenthesis()
 						if (bParenthesisShown)
 						{
 							//	alte Hervorhebung wegnehmen
-							sal_uInt16 nCount = pEngine->GetParagraphCount();
-							for (sal_uInt16 i=0; i<nCount; i++)
+							sal_uInt32 nCount = pEngine->GetParagraphCount();
+							for (sal_uInt32 i=0; i<nCount; i++)
 								pEngine->QuickRemoveCharAttribs( i, EE_CHAR_WEIGHT );
 						}
 
@@ -1647,8 +1647,8 @@ void ScInputHandler::UpdateParenthesis()
 
 	if ( bParenthesisShown && !bFound && pTableView )
 	{
-		sal_uInt16 nCount = pEngine->GetParagraphCount();
-		for (sal_uInt16 i=0; i<nCount; i++)
+		sal_uInt32 nCount = pEngine->GetParagraphCount();
+		for (sal_uInt32 i=0; i<nCount; i++)
 			pTableView->RemoveCharAttribs( i, EE_CHAR_WEIGHT );
 	}
 
@@ -1808,8 +1808,8 @@ void ScInputHandler::RemoveAdjust()
 	//	RemoveParaAttribs removes all paragraph attributes, including EE_PARA_JUST
 #if 0
 	sal_Bool bChange = sal_False;
-	sal_uInt16 nCount = pEngine->GetParagraphCount();
-	for (sal_uInt16 i=0; i<nCount; i++)
+	sal_uInt32 nCount = pEngine->GetParagraphCount();
+	for (sal_uInt32 i=0; i<nCount; i++)
 	{
 		const SfxItemSet& rOld = pEngine->GetParaAttribs( i );
 		if ( rOld.GetItemState( EE_PARA_JUST ) == SFX_ITEM_SET )
@@ -1844,8 +1844,8 @@ void ScInputHandler::RemoveRangeFinder()
 	//	pRangeFindList und Farben loeschen
 
 	pEngine->SetUpdateMode(sal_False);
-	sal_uInt16 nCount = pEngine->GetParagraphCount();	// koennte gerade neu eingefuegt worden sein
-	for (sal_uInt16 i=0; i<nCount; i++)
+	sal_uInt32 nCount = pEngine->GetParagraphCount();	// koennte gerade neu eingefuegt worden sein
+	for (sal_uInt32 i=0; i<nCount; i++)
 		pEngine->QuickRemoveCharAttribs( i, EE_CHAR_COLOR );
 	pEngine->SetUpdateMode(sal_True);
 
@@ -2024,7 +2024,7 @@ void lcl_SetTopSelection( EditView* pEditView, ESelection& rSel )
 	DBG_ASSERT( rSel.nStartPara==0 && rSel.nEndPara==0, "SetTopSelection: Para != 0" );
 
 	EditEngine* pEngine = pEditView->GetEditEngine();
-	sal_uInt16 nCount = pEngine->GetParagraphCount();
+	sal_uInt32 nCount = pEngine->GetParagraphCount();
 	if (nCount > 1)
 	{
 		xub_StrLen nParLen = pEngine->GetTextLen(rSel.nStartPara);
@@ -2176,9 +2176,9 @@ void ScInputHandler::UpdateFormulaMode()
 	SfxApplication* pSfxApp = SFX_APP();
 
     if ( pEngine->GetParagraphCount() == 1 &&
-         ( pEngine->GetText((sal_uInt16)0).GetChar(0) == '=' ||
-           pEngine->GetText((sal_uInt16)0).GetChar(0) == '+' ||
-           pEngine->GetText((sal_uInt16)0).GetChar(0) == '-' ) &&
+         ( pEngine->GetText(0).GetChar(0) == '=' ||
+           pEngine->GetText(0).GetChar(0) == '+' ||
+           pEngine->GetText(0).GetChar(0) == '-' ) &&
          !bProtected )
 	{
 		if (!bFormulaMode)
@@ -2330,11 +2330,11 @@ void ScInputHandler::SetMode( ScInputMode eNewMode )
 			}
 		}
 
-		sal_uInt16 nPara    = pEngine->GetParagraphCount()-1;
+		sal_uInt32 nPara    = pEngine->GetParagraphCount()-1;
 		xub_StrLen nLen = pEngine->GetText(nPara).Len();
 		sal_uInt16 nCount   = pEngine->GetViewCount();
 
-		for (sal_uInt16 i=0; i<nCount; i++)
+		for (sal_uInt32 i=0; i<nCount; i++)
 		{
 			if ( eMode == SC_INPUT_TABLE && eOldMode == SC_INPUT_TOP )
 			{
@@ -2388,7 +2388,7 @@ void lcl_SelectionToEnd( EditView* pView )
     if ( pView )
     {
         EditEngine* pEngine = pView->GetEditEngine();
-        sal_uInt16 nParCnt = pEngine->GetParagraphCount();
+        sal_uInt32 nParCnt = pEngine->GetParagraphCount();
         if ( nParCnt == 0 )
             nParCnt = 1;
         ESelection aSel( nParCnt-1, pEngine->GetTextLen(nParCnt-1) );   // empty selection, cursor at the end
@@ -2509,7 +2509,7 @@ void ScInputHandler::EnterHandler( sal_uInt8 nBlockMode )
 
 	if ( bModified && !bForget )			// was wird eingeben (Text/Objekt) ?
 	{
-		sal_uInt16 nParCnt = pEngine->GetParagraphCount();
+		sal_uInt32 nParCnt = pEngine->GetParagraphCount();
 		if ( nParCnt == 0 )
 			nParCnt = 1;
 		ESelection aSel( 0, 0, nParCnt-1, pEngine->GetTextLen(nParCnt-1) );
@@ -3646,7 +3646,7 @@ sal_Bool ScInputHandler::GetTextAndFields( ScEditEngineDefaulter& rDestEngine )
 	{
 		//	Feldbefehle enthalten?
 
-		sal_uInt16 nParCnt = pEngine->GetParagraphCount();
+		sal_uInt32 nParCnt = pEngine->GetParagraphCount();
 		SfxItemSet aSet = pEngine->GetAttribs( ESelection(0,0,nParCnt,0) );
 		SfxItemState eFieldState = aSet.GetItemState( EE_FEATURE_FIELD, sal_False );
 		if ( eFieldState == SFX_ITEM_DONTCARE || eFieldState == SFX_ITEM_SET )
@@ -3659,14 +3659,14 @@ sal_Bool ScInputHandler::GetTextAndFields( ScEditEngineDefaulter& rDestEngine )
 
 			//	Attribute loeschen
 
-			for (sal_uInt16 i=0; i<nParCnt; i++)
+			for (sal_uInt32 i=0; i<nParCnt; i++)
 				rDestEngine.QuickRemoveCharAttribs( i );
 
 			//	Absaetze zusammenfassen
 
 			while ( nParCnt > 1 )
 			{
-				xub_StrLen nLen = rDestEngine.GetTextLen( (sal_uInt16)0 );
+				xub_StrLen nLen = rDestEngine.GetTextLen( 0 );
 				ESelection aSel( 0,nLen, 1,0 );
 				rDestEngine.QuickInsertText( ' ', aSel );		// Umbruch durch Space ersetzen
 				--nParCnt;

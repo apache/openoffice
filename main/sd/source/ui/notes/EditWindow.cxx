@@ -697,8 +697,7 @@ void EditWindow::SelectAll()
 	DBG_ASSERT( mpEditView, "NULL pointer" );
 	if (mpEditView)
 	{
-		// 0xFFFF as last two parameters refers to the end of the text
-		mpEditView->SetSelection( ESelection( 0, 0, 0xFFFF, 0xFFFF ) );
+		mpEditView->SetSelection( ESelection( 0, 0, EE_PARA_MAX, EE_INDEX_MAX ) );
 	}
 }
 
@@ -727,7 +726,7 @@ void EditWindow::SelNextMark()
         sal_uInt16     Pos        = eSelection.nEndPos;
         String     aMark (UniString::CreateFromAscii("<?>"));
         String     aText;
-        sal_uInt16     nCounts    = pEditEngine->GetParagraphCount();
+        sal_uInt32     nCounts    = pEditEngine->GetParagraphCount();
 
         while (eSelection.nEndPara < nCounts)
         {
@@ -758,7 +757,7 @@ void EditWindow::SelPrevMark()
         xub_StrLen Max        = eSelection.nStartPos;
         String     Text( pEditEngine->GetText( eSelection.nStartPara ) );
         String     aMark (UniString::CreateFromAscii("<?>"));
-        sal_uInt16     nCounts    = pEditEngine->GetParagraphCount();
+        sal_uInt32     nCounts    = pEditEngine->GetParagraphCount();
 
         do
         {

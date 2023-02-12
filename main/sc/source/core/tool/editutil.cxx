@@ -80,8 +80,8 @@ String ScEditUtil::ModifyDelimiters( const String& rOld )
 static String lcl_GetDelimitedString( const EditEngine& rEngine, const sal_Char c )
 {
 	String aRet;
-	sal_uInt16 nParCount = rEngine.GetParagraphCount();
-	for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+	sal_uInt32 nParCount = rEngine.GetParagraphCount();
+	for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
 	{
 		if (nPar > 0)
 			aRet += c;
@@ -334,8 +334,8 @@ void ScEditEngineDefaulter::SetDefaults( const SfxItemSet& rSet, sal_Bool bRemem
 	sal_Bool bUpdateMode = GetUpdateMode();
 	if ( bUpdateMode )
 		SetUpdateMode( sal_False );
-	sal_uInt16 nPara = GetParagraphCount();
-	for ( sal_uInt16 j=0; j<nPara; j++ )
+	sal_uInt32 nPara = GetParagraphCount();
+	for ( sal_uInt32 j=0; j<nPara; j++ )
 	{
 		SetParaAttribs( j, rNewSet );
 	}
@@ -455,8 +455,8 @@ void ScEditEngineDefaulter::RepeatDefaults()
 {
     if ( pDefaults )
     {
-        sal_uInt16 nPara = GetParagraphCount();
-        for ( sal_uInt16 j=0; j<nPara; j++ )
+        sal_uInt32 nPara = GetParagraphCount();
+        for ( sal_uInt32 j=0; j<nPara; j++ )
             SetParaAttribs( j, *pDefaults );
     }
 }
@@ -467,8 +467,8 @@ void ScEditEngineDefaulter::RemoveParaAttribs()
 	sal_Bool bUpdateMode = GetUpdateMode();
 	if ( bUpdateMode )
 		SetUpdateMode( sal_False );
-	sal_uInt16 nParCount = GetParagraphCount();
-	for (sal_uInt16 nPar=0; nPar<nParCount; nPar++)
+	sal_uInt32 nParCount = GetParagraphCount();
+	for (sal_uInt32 nPar=0; nPar<nParCount; nPar++)
 	{
 		const SfxItemSet& rParaAttribs = GetParaAttribs( nPar );
 		sal_uInt16 nWhich;
@@ -642,7 +642,7 @@ ScHeaderEditEngine::ScHeaderEditEngine( SfxItemPool* pEnginePoolP, sal_Bool bDel
 }
 
 String __EXPORT ScHeaderEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-                                    sal_uInt16 /* nPara */, sal_uInt16 /* nPos */,
+                                    sal_uInt32 /* nPara */, sal_uInt16 /* nPos */,
                                     Color*& /* rTxtColor */, Color*& /* rFldColor */ )
 {
 	String aRet;
@@ -708,7 +708,7 @@ ScFieldEditEngine::ScFieldEditEngine( SfxItemPool* pEnginePoolP,
 }
 
 String __EXPORT ScFieldEditEngine::CalcFieldValue( const SvxFieldItem& rField,
-                                    sal_uInt16 /* nPara */, sal_uInt16 /* nPos */,
+                                    sal_uInt32 /* nPara */, sal_uInt16 /* nPos */,
                                     Color*& rTxtColor, Color*& /* rFldColor */ )
 {
 	String aRet;
@@ -751,7 +751,7 @@ String __EXPORT ScFieldEditEngine::CalcFieldValue( const SvxFieldItem& rField,
 	return aRet;
 }
 
-void __EXPORT ScFieldEditEngine::FieldClicked( const SvxFieldItem& rField, sal_uInt16, sal_uInt16 )
+void __EXPORT ScFieldEditEngine::FieldClicked( const SvxFieldItem& rField, sal_uInt32, sal_uInt16 )
 {
 	const SvxFieldData* pFld = rField.GetField();
 

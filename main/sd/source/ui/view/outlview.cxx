@@ -764,7 +764,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 			Paragraph*	  pParagraph   = (Paragraph*)pList->First();
 			while (pParagraph)
 			{
-				if( !pOutliner->HasParaFlag( pParagraph, PARAFLAG_ISPAGE ) && (pOutliner->GetDepth( (sal_uInt16) pOutliner->GetAbsPos( pParagraph ) ) <= 0) )
+				if( !pOutliner->HasParaFlag( pParagraph, PARAFLAG_ISPAGE ) && (pOutliner->GetDepth( pOutliner->GetAbsPos( pParagraph ) ) <= 0) )
 					mnPagesToProcess++;
 				pParagraph = (Paragraph*)pList->Next();
 			}
@@ -866,7 +866,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 		}
 		pOutliner->UpdateFields();
 	}
-	else if ( (pOutliner->GetPrevDepth() == 1) && ( pOutliner->GetDepth( (sal_uInt16) pOutliner->GetAbsPos( pPara ) ) == 2 ) )
+	else if ( (pOutliner->GetPrevDepth() == 1) && ( pOutliner->GetDepth( pOutliner->GetAbsPos( pPara ) ) == 2 ) )
 	{
 		// wieviele Titel sind vor dem fraglichen Titelabsatz?
 		sal_Int32 nPos = -1L;
@@ -907,7 +907,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 		{
 			SfxStyleSheet* pStyleSheet = NULL;
 			sal_uLong nPara = pOutliner->GetAbsPos( pPara );
-			sal_Int16 nDepth = pOutliner->GetDepth( (sal_uInt16) nPara );
+			sal_Int16 nDepth = pOutliner->GetDepth( nPara );
 			bool bSubTitle = pPage->GetPresObj(PRESOBJ_TEXT) != NULL;
 
 			if( pOutliner->HasParaFlag(pPara, PARAFLAG_ISPAGE) )
@@ -934,7 +934,7 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 
 			// before we set the style sheet we need to preserve the bullet item
 			// since all items will be deleted while setting a new style sheet
- 			SfxItemSet aOldAttrs( pOutliner->GetParaAttribs( (sal_uInt16)nPara ) );
+ 			SfxItemSet aOldAttrs( pOutliner->GetParaAttribs( nPara ) );
 
 			pOutliner->SetStyleSheet( nPara, pStyleSheet );
 
@@ -942,9 +942,9 @@ IMPL_LINK( OutlineView, DepthChangedHdl, ::Outliner *, pOutliner )
 			if ( pOutliner->GetPrevDepth() != -1 && nDepth != -1 &&
 				 aOldAttrs.GetItemState( EE_PARA_NUMBULLET ) == SFX_ITEM_ON )
 			{
-				SfxItemSet aAttrs( pOutliner->GetParaAttribs( (sal_uInt16)nPara ) );
+				SfxItemSet aAttrs( pOutliner->GetParaAttribs( nPara ) );
 				aAttrs.Put( *aOldAttrs.GetItem( EE_PARA_NUMBULLET ) );
-				pOutliner->SetParaAttribs( (sal_uInt16)nPara, aAttrs );
+				pOutliner->SetParaAttribs( nPara, aAttrs );
 			}
 		}
 	}
@@ -1327,7 +1327,7 @@ void OutlineView::FillOutliner()
 			mpOutliner->SetDepth(pPara, -1);
 
 			// Keine harten Attribute vom vorherigen Absatz uebernehmen
-			mpOutliner->SetParaAttribs( (sal_uInt16)mpOutliner->GetAbsPos(pPara),
+			mpOutliner->SetParaAttribs( mpOutliner->GetAbsPos(pPara),
 									   mpOutliner->GetEmptyItemSet() );
 
 			mpOutliner->SetStyleSheet( mpOutliner->GetAbsPos( pPara ), pPage->GetStyleSheetForPresObj( PRESOBJ_TITLE ) );
@@ -1355,14 +1355,14 @@ void OutlineView::FillOutliner()
 			OutlinerParaObject* pOPO = pTO->GetOutlinerParaObject();
 			if (pOPO)
 			{
-				sal_uInt16 nParaCount1 = (sal_uInt16)mpOutliner->GetParagraphCount();
+				sal_uInt32 nParaCount1 = mpOutliner->GetParagraphCount();
 				sal_Bool bVertical = pOPO->IsVertical();
 				pOPO->SetVertical( sal_False );
 				mpOutliner->AddText(*pOPO);
 				pOPO->SetVertical( bVertical );
 
-                sal_uInt16 nParaCount2 = (sal_uInt16)mpOutliner->GetParagraphCount();
-				for (sal_uInt16 n = nParaCount1; n < nParaCount2; n++)
+                sal_uInt32 nParaCount2 = mpOutliner->GetParagraphCount();
+				for (sal_uInt32 n = nParaCount1; n < nParaCount2; n++)
 				{
                     if( bSubTitle )
                     {

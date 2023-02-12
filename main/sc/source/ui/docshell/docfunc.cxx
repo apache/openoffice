@@ -868,10 +868,10 @@ void ScDocFunc::NotifyInputHandler( const ScAddress& rPos )
 
 		struct ScMyRememberItem
 		{
-			sal_uInt16		nIndex;
+			sal_uInt32		nIndex;
 			SfxItemSet	aItemSet;
 
-			ScMyRememberItem(const SfxItemSet& rItemSet, sal_uInt16 nTempIndex) :
+			ScMyRememberItem(const SfxItemSet& rItemSet, sal_uInt32 nTempIndex) :
                 nIndex(nTempIndex), aItemSet(rItemSet) {}
 		};
 
@@ -903,8 +903,8 @@ sal_Bool ScDocFunc::PutData( const ScAddress& rPos, ScEditEngineDefaulter& rEngi
 		//	not only alignment, so the object doesn't contain the cell attributes as
 		//	paragraph attributes. Before remove the attributes store they in a list to
 		//	set they back to the EditEngine.
-		sal_uInt16 nCount = rEngine.GetParagraphCount();
-		for (sal_uInt16 i=0; i<nCount; i++)
+		sal_uInt32 nCount = rEngine.GetParagraphCount();
+		for (sal_uInt32 i=0; i<nCount; i++)
 		{
 			const SfxItemSet& rOld = rEngine.GetParaAttribs( i );
 			if ( rOld.Count() )
