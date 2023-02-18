@@ -73,11 +73,11 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // #i15222#
-// Due to the ressource problems in Win95/98 with bitmap ressources i
-// will change this handle bitmap provinging class. Old version was splitting
+// Due to the resource problems in Win95/98 with bitmap resources I
+// will change this handle bitmap providing class. Old version was splitting
 // and preparing all small handle bitmaps in device bitmap format, now this will
-// be done on the fly. Thus, tehre is only the one big bitmap remembered. With
-// three source bitmaps, this will be 3 system bitmap ressources instead of hundreds.
+// be done on the fly. Thus, there is only the one big bitmap remembered. With
+// three source bitmaps, this will be 3 system bitmap resources instead of hundreds.
 // The price for that needs to be evaluated. Maybe we will need another change here
 // if this is too expensive.
 class SdrHdlBitmapSet
@@ -443,7 +443,7 @@ void SdrHdl::CreateB2dIAObject()
 			eColIndex = (bSelect) ? Cyan : LightCyan;
 		if(bRot)
 		{
-			// Drehhandles in Rot
+			// Rotation handles in red
 			if(pObj && bSelect)
 				eColIndex = Red;
 			else
@@ -462,7 +462,7 @@ void SdrHdl::CreateB2dIAObject()
 			case HDL_LWLFT:
 			case HDL_LWRGT:
 			{
-				// corner handles
+				// Corner handles
 				if(bRot)
 				{
 					eKindOfMarker = Circ_7x7;
@@ -1686,7 +1686,7 @@ Pointer ImpMeasureHdl::GetPointer() const
 	{
 		case 0: case 1: return Pointer(POINTER_HAND);
 		case 2: case 3: return Pointer(POINTER_MOVEPOINT);
-		case 4: case 5: return SdrHdl::GetPointer(); // wird dann entsprechend gedreht
+		case 4: case 5: return SdrHdl::GetPointer(); // will be rotated accordingly
 	} // switch
 	return Pointer(POINTER_NOTALLOWED);
 }
