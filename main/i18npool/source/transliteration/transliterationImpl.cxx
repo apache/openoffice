@@ -144,8 +144,6 @@ static struct TMlist {
   {(TransliterationModules)0, (TransliterationModulesNew)0,  NULL}
 };
 
-TransliterationImpl::TransBody TransliterationImpl::lastTransBody;
-
 // Constructor/Destructor
 TransliterationImpl::TransliterationImpl(const Reference <XMultiServiceFactory>& xMSF) : xSMgr(xMSF)
 {
@@ -591,15 +589,6 @@ TransliterationImpl::clear()
 void TransliterationImpl::loadBody( OUString &implName, Reference<XExtendedTransliteration>& body ) 
     throw (RuntimeException)
 {
-    ::osl::MutexGuard guard(lastTransBody.mutex);
-
-    if (implName.equals(lastTransBody.Name))
-    {
-        // Use the cached body instead of going through the expensive looping again.
-        body = lastTransBody.Body;
-        return;
-    }
-
     Reference< XContentEnumerationAccess > xEnumAccess( xSMgr, UNO_QUERY );
     Reference< XEnumeration > xEnum(xEnumAccess->createContentEnumeration(
                                     OUString::createFromAscii(TRLT_SERVICELNAME_L10N)));
@@ -616,8 +605,6 @@ void TransliterationImpl::loadBody( OUString &implName, Reference<XExtendedTrans
                             a = xI->queryInterface(::getCppuType((
                                         const Reference<XExtendedTransliteration>*)0));
                             a >>= body;
-                            lastTransBody.Name = implName;
-                            lastTransBody.Body = body;
                             return;
                         }
                     }
