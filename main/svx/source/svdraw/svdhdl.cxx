@@ -2348,12 +2348,12 @@ BitmapEx SdrCropHdl::GetBitmapForHandle( const BitmapEx& rBitmap, int nSize )
 	else if( nSize <=4 )
 	{
 		nPixelSize = 17;
-		nOffset = 36;
+		nOffset = 39;
 	}
 	else
 	{
 		nPixelSize = 21;
-		nOffset = 84;
+		nOffset = 90;
 	}
 
 	switch( eKind )
@@ -2369,7 +2369,7 @@ BitmapEx SdrCropHdl::GetBitmapForHandle( const BitmapEx& rBitmap, int nSize )
 		default: break;
 	}
 
-	Rectangle aSourceRect( Point( nX * (nPixelSize-1) + nOffset, nY * (nPixelSize-1)), Size(nPixelSize, nPixelSize) );
+	Rectangle aSourceRect( Point( nX * (nPixelSize) + nOffset, nY * (nPixelSize)), Size(nPixelSize, nPixelSize) );
 
 	BitmapEx aRetval(rBitmap);
 	aRetval.Crop(aSourceRect);
