@@ -71,7 +71,7 @@ Apache_OpenOffice
             ABOUTBOXPRODUCTVERSION 4.1.15
             BASEPRODUCTVERSION 4.1
             PCPFILENAME openoffice.pcp
-            UPDATEURL https://ooo-updates.apache.org/aoo4113/check.Update
+            UPDATEURL https://ooo-updates.apache.org/aoo4115/check.Update
             ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,userland.txt,version.lst
             REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
             ADDSYSTEMINTEGRATION 1
@@ -130,7 +130,7 @@ Apache_OpenOffice_wJRE
             USERDIRPRODUCTVERSION 4
             ABOUTBOXPRODUCTVERSION 4.1.15
             BASEPRODUCTVERSION 4.1
-            UPDATEURL https://ooo-updates.apache.org/aoo4113/check.Update
+            UPDATEURL https://ooo-updates.apache.org/aoo4115/check.Update
             ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,javaversion2.dat,userland.txt,version.lst
             REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
             ADDSYSTEMINTEGRATION 1
@@ -197,7 +197,7 @@ Apache_OpenOffice_Dev
             UREPACKAGEPREFIX aoodev
             SOLSUREPACKAGEPREFIX aoodev
             REGISTRYLAYERNAME LayerDev
-            UPDATEURL https://ooo-updates.apache.org/aoo4113/check.Update
+            UPDATEURL https://ooo-updates.apache.org/aoo4115/check.Update
             ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,javaversion2.dat,userland.txt,version.lst
             EVAL
             PACKAGEVERSION 4.1.15
@@ -410,7 +410,7 @@ Apache_OpenOffice_Beta
             USERDIRPRODUCTVERSION 4
             ABOUTBOXPRODUCTVERSION 4.1.15
             BASEPRODUCTVERSION 4.1
-            UPDATEURL https://ooo-updates.apache.org/aoo4113/check.Update
+            UPDATEURL https://ooo-updates.apache.org/aoo4115/check.Update
             ADD_INCLUDE_FILES cliureversion.mk,clioootypesversion.mk,userland.txt,version.lst
             REMOVE_UPGRADE_CODE_FILE upgradecode_remove_ooo.txt
             ADDSYSTEMINTEGRATION 0
