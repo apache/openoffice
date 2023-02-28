@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 #ifndef _CUI_RESID_HRC
@@ -200,7 +201,6 @@
 #define RID_SVXSTR_KEY_WORK_PATH            (RID_SVX_START + 1024)//?
 #define RID_SVXSTR_KEY_GRAPHICS_PATH        (RID_SVX_START + 1014)//?
 #define RID_SVXSTR_KEY_BASIC_PATH           (RID_SVX_START + 1007)//?
-#define RID_SVXSTR_KEY_BITMAP_PATH          (RID_SVX_START + 1008)//?
 #define RID_SVXSTR_KEY_USERDICTIONARY_DIR   (RID_SVX_START + 1025)//?
 
 // dialogs
@@ -248,7 +248,7 @@
 #define RID_SVXSTR_HYPERDLG_FROM_TEXT		(RID_SVX_START +  814)
 
 // imap dialog
-#define	RID_SVX_IMAPDLG_START				(RID_SVX_START + 100)			
+#define	RID_SVX_IMAPDLG_START				(RID_SVX_START + 100)
 #define RID_SVXDLG_IMAPURL					(RID_SVX_IMAPDLG_START + 2)
 
 // name dialog

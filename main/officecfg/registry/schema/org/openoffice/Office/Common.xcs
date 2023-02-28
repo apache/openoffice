@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -8,16 +8,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
 
 
@@ -1593,13 +1593,6 @@
 					</info>
 					<value oor:separator=":">$(insturl)/share/basic:$(userurl)/basic</value>
 				</prop>
-				<prop oor:name="Bitmap" oor:type="xs:string">
-					<info>
-						<author>MBA</author>
-						<desc>Contains the bitmap files which can be used for menu and toolbar icons.</desc>
-					</info>
-					<value>$(insturl)/share/config/symbol</value>
-				</prop>
 				<prop oor:name="Config" oor:type="xs:string">
 					<info>
 						<author>MBA</author>
@@ -1763,12 +1756,6 @@
 						<desc>Specifies the default directory where the Basic files, used by the AutoPilots, are located.</desc>
 					</info>
 					<value oor:separator=":">$(insturl)/share/basic:$(userurl)/basic</value>
-				</prop>
-				<prop oor:name="Bitmap" oor:type="xs:string">
-					<info>
-						<desc>Specifies the default directory where the bitmap files, which can be used for the menu and toolbar icons, are located.</desc>
-					</info>
-					<value>$(insturl)/share/config/symbol</value>
 				</prop>
 				<prop oor:name="Config" oor:type="xs:string">
 					<info>
@@ -4816,7 +4803,7 @@
                             </info>
                             <value>true</value>
                         </prop>
-                    </group>            
+                    </group>
 				</group>
 			</group>
 			<group oor:name="HTML">
@@ -6202,7 +6189,7 @@
             <info>
               <author>ALG</author>
               <desc>
-                This option allows to make previews (e.g. UI previews for object attirbutes) show the content with a checkeded 
+                This option allows to make previews (e.g. UI previews for object attributes) show the content with a checked
                 background to allow simple identification and better preview of transparent content, e.g. when a draw object
                 is filled with a transparent graphic (SVG or bitmap) the preview will show the checkered background shine
                 through, so the user can identify that the fill has transparency with a single look.

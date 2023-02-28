@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
+
 ﻿
- // include --------------------------------------------------------------
+// include --------------------------------------------------------------
 #include "optpath.hrc"
 #include <cuires.hrc>
 #ifndef _SFX_HRC
@@ -28,7 +29,7 @@
 #endif
 #include "helpid.hrc"
 
- // RID_SFXPAGE_PATH -----------------------------------------------------
+// RID_SFXPAGE_PATH -----------------------------------------------------
 #define STD_MASKCOLOR Color { Red=0xffff; Green=0x0000; Blue=0xffff; }
 TabPage RID_SFXPAGE_PATH
 {
@@ -71,7 +72,7 @@ TabPage RID_SFXPAGE_PATH
 	    HelpID = "cui:PushButton:RID_SFXPAGE_PATH:BTN_STANDARD";
 		Pos = MAP_APPFONT ( 115 , 165 ) ;
 		Size = MAP_APPFONT ( 65 , 14 ) ;
-		Text [ en-US ] = "~Default" ; 
+		Text [ en-US ] = "~Default" ;
 	};
     FixedLine GB_STD
 	{
@@ -100,7 +101,7 @@ ErrorBox RID_SVXERR_OPT_DOUBLEPATHS
 	DEFBUTTON = WB_DEF_OK ;
 	Message [ en-US ] = "The configuration and mail directories must be specified as separate directories.\nPlease choose a new path." ;
 };
- // ******************************************************************* EOF
+// ******************************************************************* EOF
 String RID_SVXSTR_KEY_CONFIG_DIR
 {
     Text [ en-US ] = "Configuration" ;
@@ -112,10 +113,6 @@ String RID_SVXSTR_KEY_WORK_PATH
 String RID_SVXSTR_KEY_GRAPHICS_PATH
 {
     Text [ en-US ] = "Graphics" ;
-};
-String RID_SVXSTR_KEY_BITMAP_PATH
-{
-    Text [ en-US ] = "Icons" ;
 };
 String RID_SVXSTR_KEY_BASIC_PATH
 {
@@ -195,4 +192,3 @@ String RID_SVXSTR_KEY_LINGUISTIC_DIR
 {
     Text [ en-US ] = "Writing aids";
 };
-
