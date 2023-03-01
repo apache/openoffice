@@ -3126,7 +3126,7 @@ if test "$SOLAR_JAVA" != ""; then
     else
         javacompiler="javac"
     fi
-    if test "$_os" = "OS2"; then
+    if test "$_os" = "WNT" -o "$_os" = "OS2"; then
       if test x`echo "$javacompiler" | $GREP -i '\.exe$'` = x; then
           javacompiler="${javacompiler}.exe"
       fi
@@ -3185,7 +3185,7 @@ if test "$SOLAR_JAVA" != ""; then
         AC_PATH_PROG(JAVADOC, javadoc)
     else
         _javadoc_path="$with_jdk_home/bin/javadoc"
-        if test "$_os" = "OS2"; then
+        if test "$_os" = "WNT" -o "$_os" = "OS2"; then
           if test x`echo "$_javadoc_path" | $GREP -i '\.exe$'` = x; then
               _javadoc_path="${_javadoc_path}.exe"
           fi
