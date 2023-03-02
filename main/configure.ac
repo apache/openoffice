@@ -2977,10 +2977,14 @@ fi
 
 if test "$_os" = "WINNT"; then
    if test -z "$with_jdk_home"; then
+      AC_MSG_CHECKING([for JDK home])
       _jdk_home=`$OOWINTOOL --jdk-home`
-       if test -d "$_jdk_home"; then
+      AC_MSG_RESULT([$_jdk_home])
+      if test -d "$_jdk_home"; then
           with_jdk_home="$_jdk_home"
-       fi
+      else
+          AC_MSG_WARN([$_jdk_home is not a directory, ignoring it])
+      fi
    else
       with_jdk_home=`cygpath -u "$with_jdk_home"`
    fi
