@@ -2983,7 +2983,7 @@ if test "$_os" = "WINNT"; then
       if test -d "$_jdk_home"; then
           with_jdk_home="$_jdk_home"
       else
-          AC_MSG_WARN([$_jdk_home is not a directory, ignoring it])
+          AC_MSG_WARN([$_jdk_home is not a JDK home directory, ignoring it])
       fi
    else
       with_jdk_home=`cygpath -u "$with_jdk_home"`
