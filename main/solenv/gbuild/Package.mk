@@ -24,8 +24,15 @@
 
 # PackagePart class
 
-$(foreach destination,$(call gb_PackagePart_get_destinations), $(destination)/%) :
-	$(call gb_Deliver_deliver,$<,$@)
+define gb_PackagePart_deliver_destination =
+$(1)/% :
+	$$(call gb_Deliver_deliver,$$<,$$@)
+
+endef
+
+$(foreach destination,$(call gb_PackagePart_get_destinations),$(eval $(call gb_PackagePart_deliver_destination,$(destination))))
+
+
 
 define gb_PackagePart_PackagePart
 $(OUTDIR)/$(1) : $(2)
@@ -41,7 +48,7 @@ $(call gb_Package_get_clean_target,%) :
 	$(call gb_Output_announce,$*,$(false),PKG,2)
 	RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),500,$(FILES)) \
 	&& cat $${RESPONSEFILE} | xargs rm -f \
- 	&& rm -f $${RESPONSEFILE}
+	&& rm -f $${RESPONSEFILE}
 
 $(call gb_Package_get_preparation_target,%) :
 	mkdir -p $(dir $@) && touch $@
