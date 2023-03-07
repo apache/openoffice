@@ -24,7 +24,7 @@
 
 # PackagePart class
 
-define gb_PackagePart_deliver_destination =
+define gb_PackagePart_deliver_destination
 $(1)/% :
 	$$(call gb_Deliver_deliver,$$<,$$@)
 
