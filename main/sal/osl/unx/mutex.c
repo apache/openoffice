@@ -30,9 +30,11 @@
 #include <stdlib.h>
 
 #if defined LINUX /* bad hack */
+#if !defined(__USE_XOPEN2K8)
 int pthread_mutexattr_setkind_np(pthread_mutexattr_t *, int);
 #define pthread_mutexattr_settype pthread_mutexattr_setkind_np
 #define PTHREAD_MUTEX_RECURSIVE PTHREAD_MUTEX_RECURSIVE_NP
+#endif
 #endif
 
 /*
