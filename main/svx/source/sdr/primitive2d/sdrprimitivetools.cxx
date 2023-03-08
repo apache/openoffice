@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -38,7 +38,7 @@ namespace drawinglayer
 		{
 			static vcl::DeleteOnDeinit< BitmapEx > aRetVal(0);
 			static basegfx::BColor aColor;
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(!aRetVal.get() || rBColor != aColor)
 			{
@@ -56,7 +56,7 @@ namespace drawinglayer
 				const BitmapColor aMaskColor(0x01);
 
 				// Y,X unusual order (!)
-				pWContent->SetPixel(0, 1, aPixColor); 
+				pWContent->SetPixel(0, 1, aPixColor);
 				pWContent->SetPixel(1, 0, aPixColor);
 				pWContent->SetPixel(1, 1, aPixColor);
 				pWContent->SetPixel(1, 2, aPixColor);
@@ -77,12 +77,13 @@ namespace drawinglayer
 			return aRetVal.get() ? *aRetVal.get() : BitmapEx();
 		}
 
+// TODO: Move this bitmap to markers*.png, so it will be part of the icon theme
 		BitmapEx createDefaultGluepoint_7x7(const basegfx::BColor& rBColorA, const basegfx::BColor& rBColorB)
 		{
 			static vcl::DeleteOnDeinit< BitmapEx > aRetVal(0);
 			static basegfx::BColor aColorA;
 			static basegfx::BColor aColorB;
-		    ::osl::Mutex m_mutex;
+			::osl::Mutex m_mutex;
 
 			if(!aRetVal.get() || rBColorA != aColorA || rBColorB != aColorB)
 			{
@@ -103,26 +104,46 @@ namespace drawinglayer
 				const BitmapColor aMaskColor(0x01);
 
 				// Y,X unusual order (!)
+				pWContent->SetPixel(0, 0, aPixColorA);
 				pWContent->SetPixel(0, 1, aPixColorA);
+				pWContent->SetPixel(0, 2, aPixColorA);
+				pWContent->SetPixel(0, 3, aPixColorA);
+				pWContent->SetPixel(0, 4, aPixColorA);
 				pWContent->SetPixel(0, 5, aPixColorA);
+				pWContent->SetPixel(0, 6, aPixColorA);
 				pWContent->SetPixel(1, 0, aPixColorA);
 				pWContent->SetPixel(1, 2, aPixColorA);
+				pWContent->SetPixel(1, 3, aPixColorA);
 				pWContent->SetPixel(1, 4, aPixColorA);
 				pWContent->SetPixel(1, 6, aPixColorA);
+				pWContent->SetPixel(2, 0, aPixColorA);
 				pWContent->SetPixel(2, 1, aPixColorA);
 				pWContent->SetPixel(2, 3, aPixColorA);
 				pWContent->SetPixel(2, 5, aPixColorA);
+				pWContent->SetPixel(2, 6, aPixColorA);
+				pWContent->SetPixel(3, 0, aPixColorA);
+				pWContent->SetPixel(3, 1, aPixColorA);
 				pWContent->SetPixel(3, 2, aPixColorA);
 				pWContent->SetPixel(3, 4, aPixColorA);
+				pWContent->SetPixel(3, 5, aPixColorA);
+				pWContent->SetPixel(3, 6, aPixColorA);
+				pWContent->SetPixel(4, 0, aPixColorA);
 				pWContent->SetPixel(4, 1, aPixColorA);
 				pWContent->SetPixel(4, 3, aPixColorA);
 				pWContent->SetPixel(4, 5, aPixColorA);
+				pWContent->SetPixel(4, 6, aPixColorA);
 				pWContent->SetPixel(5, 0, aPixColorA);
 				pWContent->SetPixel(5, 2, aPixColorA);
+				pWContent->SetPixel(5, 3, aPixColorA);
 				pWContent->SetPixel(5, 4, aPixColorA);
 				pWContent->SetPixel(5, 6, aPixColorA);
+				pWContent->SetPixel(6, 0, aPixColorA);
 				pWContent->SetPixel(6, 1, aPixColorA);
+				pWContent->SetPixel(6, 2, aPixColorA);
+				pWContent->SetPixel(6, 3, aPixColorA);
+				pWContent->SetPixel(6, 4, aPixColorA);
 				pWContent->SetPixel(6, 5, aPixColorA);
+				pWContent->SetPixel(6, 6, aPixColorA);
 
 				pWContent->SetPixel(1, 1, aPixColorB);
 				pWContent->SetPixel(1, 5, aPixColorB);
@@ -133,27 +154,6 @@ namespace drawinglayer
 				pWContent->SetPixel(4, 4, aPixColorB);
 				pWContent->SetPixel(5, 1, aPixColorB);
 				pWContent->SetPixel(5, 5, aPixColorB);
-				
-				pWMask->SetPixel(0, 0, aMaskColor);
-				pWMask->SetPixel(0, 2, aMaskColor);
-				pWMask->SetPixel(0, 3, aMaskColor);
-				pWMask->SetPixel(0, 4, aMaskColor);
-				pWMask->SetPixel(0, 6, aMaskColor);
-				pWMask->SetPixel(1, 3, aMaskColor);
-				pWMask->SetPixel(2, 0, aMaskColor);
-				pWMask->SetPixel(2, 6, aMaskColor);
-				pWMask->SetPixel(3, 0, aMaskColor);
-				pWMask->SetPixel(3, 1, aMaskColor);
-				pWMask->SetPixel(3, 5, aMaskColor);
-				pWMask->SetPixel(3, 6, aMaskColor);
-				pWMask->SetPixel(4, 0, aMaskColor);
-				pWMask->SetPixel(4, 6, aMaskColor);
-				pWMask->SetPixel(5, 3, aMaskColor);
-				pWMask->SetPixel(6, 0, aMaskColor);
-				pWMask->SetPixel(6, 2, aMaskColor);
-				pWMask->SetPixel(6, 3, aMaskColor);
-				pWMask->SetPixel(6, 4, aMaskColor);
-				pWMask->SetPixel(6, 6, aMaskColor);
 
 				aContent.ReleaseAccess(pWContent);
 				aMask.ReleaseAccess(pWMask);
