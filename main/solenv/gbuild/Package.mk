@@ -24,8 +24,15 @@
 
 # PackagePart class
 
-$(foreach destination,$(call gb_PackagePart_get_destinations), $(destination)/%) :
-	$(call gb_Deliver_deliver,$<,$@)
+define gb_PackagePart_deliver_destination
+$(1)/% :
+	$$(call gb_Deliver_deliver,$$<,$$@)
+
+endef
+
+$(foreach destination,$(call gb_PackagePart_get_destinations),$(eval $(call gb_PackagePart_deliver_destination,$(destination))))
+
+
 
 define gb_PackagePart_PackagePart
 $(OUTDIR)/$(1) : $(2)
