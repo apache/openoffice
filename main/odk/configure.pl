@@ -51,10 +51,10 @@ $main::OFFICE_HOME = "";
 
 $main::OO_SDK_MAKE_HOME = "";
 $main::makeName = "make";
-if ( $main::operatingSystem =~ m/solaris/ || 
+if ( $main::operatingSystem =~ m/solaris/ ||
 	 $main::operatingSystem =~ m/freebsd/ )
 {
-    $main::makeName = "gmake";
+	$main::makeName = "gmake";
 }
 $main::OO_SDK_MAKE_HOME_SUGGESTION = searchprog($main::makeName);
 $main::makeVersion = "3.79.1";
@@ -100,7 +100,7 @@ $main::OO_SDK_JAVA_HOME = "";
 $main::OO_SDK_JAVA_BIN_DIR = "bin";
 if ( $main::operatingSystem =~ m/darwin/ )
 {
-    $main::OO_SDK_JAVA_BIN_DIR="Commands";
+	$main::OO_SDK_JAVA_BIN_DIR="Commands";
 }
 $main::OO_SDK_JAVA_HOME_SUGGESTION = searchprog("javac");
 $main::javaVersion = "1.5.0_01";
@@ -124,97 +124,97 @@ if ( $main::operatingSystem =~ m/darwin/ )
 #    $main::OFFICE_HOME = `cd $main::sdkpath/../../.. && pwd`;
 #    chomp($main::OFFICE_HOME);
 #    print " Used Office = $main::OFFICE_HOME\n";
-    print " Used SDK = $main::OO_SDK_HOME\n\n";
+	print " Used SDK = $main::OO_SDK_HOME\n\n";
 
-    $main::OFFICE_HOME_SUGGESTION = searchMacOffice();
-    while ( (! -d "$main::OFFICE_HOME" ) ||
-	    ((-d "$main::OFFICE_HOME") && (! -d "$main::OFFICE_HOME/Contents/MacOS")) )
-    {
+	$main::OFFICE_HOME_SUGGESTION = searchMacOffice();
+	while ( (! -d "$main::OFFICE_HOME" ) ||
+		((-d "$main::OFFICE_HOME") && (! -d "$main::OFFICE_HOME/Contents/MacOS")) )
+	{
 	print " Enter the Office installation directory [$main::OFFICE_HOME_SUGGESTION]: ";
 	$main::OFFICE_HOME = readStdIn();
 	chop($main::OFFICE_HOME);
-	if ( $main::OFFICE_HOME eq "" ) 
+	if ( $main::OFFICE_HOME eq "" )
 	{
-	    $main::OFFICE_HOME = $main::OFFICE_HOME_SUGGESTION;
+		$main::OFFICE_HOME = $main::OFFICE_HOME_SUGGESTION;
 	}
-	
+
 	if ( ! -d "$main::OFFICE_HOME" )
-	{ 
-	    $main::OFFICE_HOME = "";
-	    print " Error: An office installation is required, please specify the path to a valid installation.\n";
-	} 
-	
+	{
+		$main::OFFICE_HOME = "";
+		print " Error: An office installation is required, please specify the path to a valid installation.\n";
+	}
+
 #	$main::OFFICE_BASE_HOME = "$main::OFFICE_HOME/Contents";
-    }
-} else 
+	}
+} else
 {
-    $main::OFFICE_HOME_SUGGESTION = searchoffice();
-    
-    if ( $main::OFFICE_HOME_SUGGESTION eq "" ) {
+	$main::OFFICE_HOME_SUGGESTION = searchoffice();
+
+	if ( $main::OFFICE_HOME_SUGGESTION eq "" ) {
 	# prepare Office path
 	$main::OFFICE_HOME_SUGGESTION = searchprog("soffice");
-    }
-    
-    if ( ! $main::OFFICE_HOME_SUGGESTION eq "" )
-    {
+	}
+
+	if ( ! $main::OFFICE_HOME_SUGGESTION eq "" )
+	{
 	my $tmpOffice = readlink "$main::OFFICE_HOME_SUGGESTION/soffice";
-	
+
 	if ( $tmpOffice eq "" )
 	{
-	    $tmpOffice = "$main::OFFICE_HOME_SUGGESTION/soffice";
+		$tmpOffice = "$main::OFFICE_HOME_SUGGESTION/soffice";
 	}
-	
+
 	my $offset = rindex($tmpOffice, "/program/soffice");
 	if ( $offset != -1 )
 	{
-	    $main::OFFICE_HOME_SUGGESTION = substr($tmpOffice, 0, $offset);
-	} else 
-	{
-	    $offset = rindex($tmpOffice, "/soffice");
-	    if ( $offset != -1 )
-	    {
 		$main::OFFICE_HOME_SUGGESTION = substr($tmpOffice, 0, $offset);
-	    } else
-	    {
+	} else
+	{
+		$offset = rindex($tmpOffice, "/soffice");
+		if ( $offset != -1 )
+		{
+		$main::OFFICE_HOME_SUGGESTION = substr($tmpOffice, 0, $offset);
+		} else
+		{
 		$main::OFFICE_HOME_SUGGESTION = "";
-	    }
+		}
 	}
-    }
-    
-    while ( (! -d "$main::OFFICE_HOME" ) ||
-	    ((-d "$main::OFFICE_HOME") && (! -d "$main::OFFICE_HOME/program")) )
-    {
+	}
+
+	while ( (! -d "$main::OFFICE_HOME" ) ||
+		((-d "$main::OFFICE_HOME") && (! -d "$main::OFFICE_HOME/program")) )
+	{
 	print " Enter the Office installation directory [$main::OFFICE_HOME_SUGGESTION]: ";
 	$main::OFFICE_HOME = readStdIn();
 	chop($main::OFFICE_HOME);
-	if ( $main::OFFICE_HOME eq "" ) 
+	if ( $main::OFFICE_HOME eq "" )
 	{
-	    $main::OFFICE_HOME = $main::OFFICE_HOME_SUGGESTION;
+		$main::OFFICE_HOME = $main::OFFICE_HOME_SUGGESTION;
 	}
-	
+
 	if ( ! -d "$main::OFFICE_HOME" )
-	{ 
-	    $main::OFFICE_HOME = "";
-	    print " Error: An office installation is required, please specify the path to a valid installation.\n";
+	{
+		$main::OFFICE_HOME = "";
+		print " Error: An office installation is required, please specify the path to a valid installation.\n";
 	} else
 	{
-	    # special work for a network installation, no prgram directory but a link to the soffice binary
-	    if ( (! -d "$main::OFFICE_HOME/program") && (-e "$main::OFFICE_HOME/soffice") )
-	    { 
+		# special work for a network installation, no program directory but a link to the soffice binary
+		if ( (! -d "$main::OFFICE_HOME/program") && (-e "$main::OFFICE_HOME/soffice") )
+		{
 		my $soserver = `ls -l $OFFICE_HOME_SUGGESTION/soffice | sed -n 's/.* -> //p'`;
 		$soserver= substr($soserver, 0, rindex($soserver, "program") - 1);
-		
+
 		if ( ! -d $soserver )
 		{
-		    $main::OFFICE_HOME = "";
-		    print " Error: An office installation is required, please specify the path to a valid installation.\n";
-		} else 
+			$main::OFFICE_HOME = "";
+			print " Error: An office installation is required, please specify the path to a valid installation.\n";
+		} else
 		{
-		    $main::OFFICE_HOME = $soserver;
+			$main::OFFICE_HOME = $soserver;
 		}
-	    }
+		}
 	}
-    }
+	}
 }
 
 
@@ -223,29 +223,29 @@ while ( (!$main::correctVersion) &&
 		((! -d "$main::OO_SDK_MAKE_HOME" ) ||
 		 ((-d "$main::OO_SDK_MAKE_HOME") && (! -e "$main::OO_SDK_MAKE_HOME/$main::makeName"))) )
 {
-    print " Enter GNU make ($main::makeVersion or higher) tools directory [$main::OO_SDK_MAKE_HOME_SUGGESTION]: ";
-    $main::OO_SDK_MAKE_HOME = readStdIn();
-    chop($main::OO_SDK_MAKE_HOME);
-    if ( $main::OO_SDK_MAKE_HOME eq "" ) 
-    {
+	print " Enter GNU make ($main::makeVersion or higher) tools directory [$main::OO_SDK_MAKE_HOME_SUGGESTION]: ";
+	$main::OO_SDK_MAKE_HOME = readStdIn();
+	chop($main::OO_SDK_MAKE_HOME);
+	if ( $main::OO_SDK_MAKE_HOME eq "" )
+	{
 		$main::OO_SDK_MAKE_HOME = $main::OO_SDK_MAKE_HOME_SUGGESTION;
-    }
-    if ( (! -d "$main::OO_SDK_MAKE_HOME") || 
+	}
+	if ( (! -d "$main::OO_SDK_MAKE_HOME") ||
 		 ((-d "$main::OO_SDK_MAKE_HOME") && (! -e "$main::OO_SDK_MAKE_HOME/$main::makeName")) )
-    { 
+	{
 		$main::OO_SDK_MAKE_HOME = "";
 		print " Error: GNU make is required, please specify a GNU make tools directory.\n";
-    } else 
-    {
+	} else
+	{
 		#check version
 		my $testVersion = `$OO_SDK_MAKE_HOME/$main::makeName --version`;
 		if ( $testVersion eq "")
 		{
 			print " Set the environment variable OO_SDK_MAKE_HOME to your GNU build tools directory.\n";
 			print " GNU make version $main::makeVersion can be obtained at ftp://ftp.gnu.org/gnu/make/\n";
-		} else 
+		} else
 		{
-		    if ($testVersion =~ m#((\d+\.)+\d+)# )
+			if ($testVersion =~ m#((\d+\.)+\d+)# )
 			{
 				$testVersion = $1;
 			}
@@ -265,30 +265,30 @@ while ( (!$main::correctVersion) &&
 		((! -d "$main::OO_SDK_ZIP_HOME" ) ||
 		 ((-d "$main::OO_SDK_ZIP_HOME") && (! -e "$main::OO_SDK_ZIP_HOME/zip"))) )
 {
-    print " Enter zip ($main::zipVersion or higher) tool directory [$main::OO_SDK_ZIP_HOME_SUGGESTION]: ";
-    $main::OO_SDK_ZIP_HOME = readStdIn();
-    chop($main::OO_SDK_ZIP_HOME);
-    if ( $main::OO_SDK_ZIP_HOME eq "" ) 
-    {
+	print " Enter zip ($main::zipVersion or higher) tool directory [$main::OO_SDK_ZIP_HOME_SUGGESTION]: ";
+	$main::OO_SDK_ZIP_HOME = readStdIn();
+	chop($main::OO_SDK_ZIP_HOME);
+	if ( $main::OO_SDK_ZIP_HOME eq "" )
+	{
 		$main::OO_SDK_ZIP_HOME = $main::OO_SDK_ZIP_HOME_SUGGESTION;
-    }
-    if ( (! -d "$main::OO_SDK_ZIP_HOME") || 
+	}
+	if ( (! -d "$main::OO_SDK_ZIP_HOME") ||
 		 ((-d "$main::OO_SDK_ZIP_HOME") && (! -e "$main::OO_SDK_ZIP_HOME/zip")) )
-    { 
+	{
 		$main::OO_SDK_ZIP_HOME = "";
 		print " Error: zip tool is required, please specify a zip tool directory.\n";
-    } else 
-    {
+	} else
+	{
 		#check version
-		my $testVersion = `$OO_SDK_ZIP_HOME/zip -h 2>&1 | egrep Zip | head -n 1`;
+		my $testVersion = `$OO_SDK_ZIP_HOME/zip -h 2>&1 | grep -E Zip | head -n 1`;
 		$testVersion =~ s#Zip ([\d.]+) .*#$1#go;
 		if ( $testVersion eq "")
 		{
 			print " Set the environment variable OO_SDK_ZIP_HOME to your zip tool directory.\n";
 			print " zip version $main::zipVersion can be obtained at ftp://www.info-zip.org/\n";
-		} else 
+		} else
 		{
-		    if ($testVersion =~ m#((\d+\.)+\d+)# )
+			if ($testVersion =~ m#((\d+\.)+\d+)# )
 			{
 				$testVersion = $1;
 			}
@@ -305,49 +305,49 @@ while ( (!$main::correctVersion) &&
 # prepare cat path
 $main::correctVersion = 0;
 while ( (!$main::correctVersion) &&
-        ((! -d "$main::OO_SDK_CAT_HOME" ) ||
-         ((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat"))) )
+		((! -d "$main::OO_SDK_CAT_HOME" ) ||
+		((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat"))) )
 {
-    print " Enter cat tool directory [$main::OO_SDK_CAT_HOME_SUGGESTION]: ";
-    $main::OO_SDK_CAT_HOME = readStdIn();
-    chop($main::OO_SDK_CAT_HOME);
-    if ( $main::OO_SDK_CAT_HOME eq "" )
-    {
-        $main::OO_SDK_CAT_HOME = $main::OO_SDK_CAT_HOME_SUGGESTION;
-    }
-    if ( (! -d "$main::OO_SDK_CAT_HOME") ||
-         ((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat")) )
-    {
-        $main::OO_SDK_CAT_HOME = "";
-        print " Error: cat tool is required, please specify a cat tool directory.\n";
-    }
-    # else ...
-    # TODO check version
-    # NOTE: only Linux cat understands --version
+	print " Enter cat tool directory [$main::OO_SDK_CAT_HOME_SUGGESTION]: ";
+	$main::OO_SDK_CAT_HOME = readStdIn();
+	chop($main::OO_SDK_CAT_HOME);
+	if ( $main::OO_SDK_CAT_HOME eq "" )
+	{
+		$main::OO_SDK_CAT_HOME = $main::OO_SDK_CAT_HOME_SUGGESTION;
+	}
+	if ( (! -d "$main::OO_SDK_CAT_HOME") ||
+		((-d "$main::OO_SDK_CAT_HOME") && (! -e "$main::OO_SDK_CAT_HOME/cat")) )
+	{
+		$main::OO_SDK_CAT_HOME = "";
+		print " Error: cat tool is required, please specify a cat tool directory.\n";
+	}
+	# else ...
+	# TODO check version
+	# NOTE: only Linux cat understands --version
 }
 
 # prepare sed path
 $main::correctVersion = 0;
 while ( (!$main::correctVersion) &&
-        ((! -d "$main::OO_SDK_SED_HOME" ) ||
-         ((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed"))) )
+		((! -d "$main::OO_SDK_SED_HOME" ) ||
+		((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed"))) )
 {
-    print " Enter sed tool directory [$main::OO_SDK_SED_HOME_SUGGESTION]: ";
-    $main::OO_SDK_SED_HOME = readStdIn();
-    chop($main::OO_SDK_SED_HOME);
-    if ( $main::OO_SDK_SED_HOME eq "" )
-    {
-        $main::OO_SDK_SED_HOME = $main::OO_SDK_SED_HOME_SUGGESTION;
-    }
-    if ( (! -d "$main::OO_SDK_SED_HOME") ||
-         ((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed")) )
-    {
-        $main::OO_SDK_SED_HOME = "";
-        print " Error: sed tool is required, please specify a sed tool directory.\n";
-    }
-    # else ...
-    # TODO check version
-    # NOTE: only Linux sed understands --version
+	print " Enter sed tool directory [$main::OO_SDK_SED_HOME_SUGGESTION]: ";
+	$main::OO_SDK_SED_HOME = readStdIn();
+	chop($main::OO_SDK_SED_HOME);
+	if ( $main::OO_SDK_SED_HOME eq "" )
+	{
+		$main::OO_SDK_SED_HOME = $main::OO_SDK_SED_HOME_SUGGESTION;
+	}
+	if ( (! -d "$main::OO_SDK_SED_HOME") ||
+		((-d "$main::OO_SDK_SED_HOME") && (! -e "$main::OO_SDK_SED_HOME/sed")) )
+	{
+		$main::OO_SDK_SED_HOME = "";
+		print " Error: sed tool is required, please specify a sed tool directory.\n";
+	}
+	# else ...
+	# TODO check version
+	# NOTE: only Linux sed understands --version
 }
 
 # prepare C++ compiler path
@@ -367,31 +367,31 @@ while ( (!$main::correctVersion) &&
 		# xcrun is used to find the correct clang compiler, just print the result as information
 		$main::OO_SDK_CPP_HOME = $main::OO_SDK_CPP_HOME_SUGGESTION;
 		print " Used clang compiler: $main::OO_SDK_CPP_HOME\n";
-	} else 
+	} else
 	{
 		print " Enter the directory of the C++ compiler, the directory\n";
 		print " where the compiler is located (optional) [$main::OO_SDK_CPP_HOME_SUGGESTION]: ";
-	
+
 		$main::OO_SDK_CPP_HOME = readStdIn();
 		chop($main::OO_SDK_CPP_HOME);
-		if ( $main::OO_SDK_CPP_HOME eq "" ) 
+		if ( $main::OO_SDK_CPP_HOME eq "" )
 		{
 			$main::OO_SDK_CPP_HOME = $main::OO_SDK_CPP_HOME_SUGGESTION;
 		}
 	}
 
-	if ( (!$main::operatingSystem =~ m/darwin/) && (! $main::OO_SDK_CPP_HOME eq "") ) 
+	if ( (!$main::operatingSystem =~ m/darwin/) && (! $main::OO_SDK_CPP_HOME eq "") )
 	{
-		if ( (! -d "$main::OO_SDK_CPP_HOME") || 
+		if ( (! -d "$main::OO_SDK_CPP_HOME") ||
 			 ((-d "$main::OO_SDK_CPP_HOME") && (! -e "$main::OO_SDK_CPP_HOME/$main::cppName")) )
-		{ 
+		{
 			print " Error: Could not find directory '$main::OO_SDK_CPP_HOME'.\n";
 			if ( skipChoice("C++ compiler") == 1 )
 			{
 				$main::correctVersion = 1;
 			}
 			$main::OO_SDK_CPP_HOME = "";
-		} else 
+		} else
 		{
 			#check version
 			if ( $main::cppName eq "gcc" )
@@ -403,7 +403,7 @@ while ( (!$main::correctVersion) &&
 					print " GNU compiler.\nSet the environment variable OO_SDK_CPP_HOME to your GNU build tools ";
 					print " directory.\nA GNU compiler version $main::cppVersion can be obtained at ";
 					print " ftp://ftp.gnu.org/gnu/gcc/\n";
-				} else 
+				} else
 				{
 					$main::correctVersion = testVersion($main::cppVersion, $testVersion, "$main::OO_SDK_CPP_HOME/$main::cppName", 1);
 					if ( !$main::correctVersion )
@@ -427,9 +427,9 @@ while ( (!$main::correctVersion) &&
 				{
 					print " The '$main::cppName' command found at $main::OO_SDK_CPP_HOME/$main::cppName is not a ";
 					print " Solaris C++ compiler.\nSet the environment variable OO_SDK_CPP_HOME to your Solaris C++ compiler directory.\n";
-				} else 
+				} else
 				{
-				    if ($testVersion =~ m#((\d+\.)+\d+)# )
+					if ($testVersion =~ m#((\d+\.)+\d+)# )
 					{
 						$testVersion = $1;
 					}
@@ -447,7 +447,7 @@ while ( (!$main::correctVersion) &&
 						$main::correctVersion = testVersion("5.5", $testVersion, "$main::OO_SDK_CPP_HOME/$main::cppName", 2);
 						if ( $main::correctVersion ) {
 							$main::OO_SDK_CC_55_OR_HIGHER = $testVersion;
-						}					  
+						}
 					}
 				}
 			}
@@ -474,30 +474,30 @@ while ( (!$main::correctVersion) &&
 		((! -d "$main::OO_SDK_JAVA_HOME" ) ||
 		 ((-d "$main::OO_SDK_JAVA_HOME") && (! -e "$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/javac"))) )
 {
-	print " Enter Java SDK (1.5, recommendation is 1.6 or higher) installation directory  (optional) [$main::OO_SDK_JAVA_HOME_SUGGESTION]: ";
+	print " Enter Java SDK (1.5, recommendation is 1.6 or higher) installation directory (optional) [$main::OO_SDK_JAVA_HOME_SUGGESTION]: ";
 	$main::OO_SDK_JAVA_HOME = readStdIn();
 	chop($main::OO_SDK_JAVA_HOME);
-	if ( $main::OO_SDK_JAVA_HOME eq "" ) 
+	if ( $main::OO_SDK_JAVA_HOME eq "" )
 	{
 		$main::OO_SDK_JAVA_HOME = $main::OO_SDK_JAVA_HOME_SUGGESTION;
 	}
-	if ( ! $main::OO_SDK_JAVA_HOME eq "" ) 
+	if ( ! $main::OO_SDK_JAVA_HOME eq "" )
 	{
-		if ( (! -d "$main::OO_SDK_JAVA_HOME") || 
+		if ( (! -d "$main::OO_SDK_JAVA_HOME") ||
 			 ((-d "$main::OO_SDK_JAVA_HOME") && (! -e "$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/javac")) )
-		{ 
+		{
 			print " Error: Could not find directory '$main::OO_SDK_JAVA_HOME' or '$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/javac'.\n";
 			if ( skipChoice("JAVA SDK") == 1 )
 			{
 				$main::correctVersion = 1;
 			}
 			$main::OO_SDK_JAVA_HOME = "";
-		} else 
+		} else
 		{
 			#check version
-			my $testVersion = `$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/java -version 2>&1 | egrep "java version" | head -n 1 | sed -e 's#.*version "##' | sed -e 's#".*##'`;
+			my $testVersion = `$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/java -version 2>&1 | grep -E "java version" | head -n 1 | sed -e 's#.*version "##' | sed -e 's#".*##'`;
 			$testVersion =~ s#([^\n]+)\n#$1#go;
-			
+
 			$main::correctVersion = testVersion($main::javaVersion, $testVersion, "$main::OO_SDK_JAVA_HOME/$main::OO_SDK_JAVA_BIN_DIR/java", 1);
 			if ( !$main::correctVersion )
 			{
@@ -518,26 +518,26 @@ while ( (!$main::correctVersion) &&
 # prepare boost directory (optional)
 while ( (!$main::skipBoostDir) &&
 		((! -d "$main::OO_SDK_BOOST_HOME" ) ||
-         ((-d "$main::OO_SDK_BOOST_HOME") && (! -e "$main::OO_SDK_BOOST_HOME/boost/tr1/unordered_map.hpp"))) )
+		((-d "$main::OO_SDK_BOOST_HOME") && (! -e "$main::OO_SDK_BOOST_HOME/boost/tr1/unordered_map.hpp"))) )
 {
 
-    print " Enter boost directory [$main::OO_SDK_BOOST_HOME_SUGGESTION]: ";
-    $main::OO_SDK_BOOST_HOME = readStdIn();
-    chop($main::OO_SDK_BOOST_HOME);
-    if ( $main::OO_SDK_BOOST_HOME eq "" )
-    {
-        $main::OO_SDK_BOOST_HOME = $main::OO_SDK_BOOST_HOME_SUGGESTION;
-    }
-    if ( (! -d "$main::OO_SDK_BOOST_HOME") ||
-         ((-d "$main::OO_SDK_BOOST_HOME") && (! -e "$main::OO_SDK_BOOST_HOME/boost/tr1/unordered_map.hpp")) )
-    {
-        print " Error: boost couldn't be find or verified, please specify a boost directory.\n";
+	print " Enter boost directory [$main::OO_SDK_BOOST_HOME_SUGGESTION]: ";
+	$main::OO_SDK_BOOST_HOME = readStdIn();
+	chop($main::OO_SDK_BOOST_HOME);
+	if ( $main::OO_SDK_BOOST_HOME eq "" )
+	{
+		$main::OO_SDK_BOOST_HOME = $main::OO_SDK_BOOST_HOME_SUGGESTION;
+	}
+	if ( (! -d "$main::OO_SDK_BOOST_HOME") ||
+		((-d "$main::OO_SDK_BOOST_HOME") && (! -e "$main::OO_SDK_BOOST_HOME/boost/tr1/unordered_map.hpp")) )
+	{
+		print " Error: boost couldn't be find or verified, please specify a boost directory.\n";
 		if ( skipChoice("optional output directory") == 1 )
 		{
 			$main::skipBoostDir = 1;
 		}
-        $main::OO_SDK_BOOST_HOME = "";
-    } else
+		$main::OO_SDK_BOOST_HOME = "";
+	} else
 	{
 		# the boost directory is optional
 		$main::skipBoostDir = 1;
@@ -550,18 +550,18 @@ while ( (!$main::skipOutputDir) &&
 {
 	print " Default output directory is in your HOME directory.\n";
 	print " Enter an existent directory if you prefer a different output directory (optional) [$main::OO_SDK_OUTPUT_DIR_SUGGESTION]: ";
-	
+
 	$main::OO_SDK_OUTPUT_DIR = readStdIn();
 
 	chop($main::OO_SDK_OUTPUT_DIR);
-	if ( $main::OO_SDK_OUTPUT_DIR eq "" ) 
+	if ( $main::OO_SDK_OUTPUT_DIR eq "" )
 	{
 		$main::OO_SDK_OUTPUT_DIR = $main::OO_SDK_OUTPUT_DIR_SUGGESTION;
 	}
-	if ( ! $main::OO_SDK_OUTPUT_DIR eq "" ) 
+	if ( ! $main::OO_SDK_OUTPUT_DIR eq "" )
 	{
 		if ( ! -d "$main::OO_SDK_OUTPUT_DIR" )
-		{ 
+		{
 			print " Error: Could not find directory '$main::OO_SDK_OUTPUT_DIR'.\n";
 			if ( skipChoice("optional output directory") == 1 )
 			{
@@ -577,17 +577,17 @@ while ( (!$main::skipOutputDir) &&
 }
 
 # prepare auto deployment
-while ( $main::SDK_AUTO_DEPLOYMENT eq "" || 
-	((! $main::SDK_AUTO_DEPLOYMENT eq "YES") && 
+while ( $main::SDK_AUTO_DEPLOYMENT eq "" ||
+	((! $main::SDK_AUTO_DEPLOYMENT eq "YES") &&
 	 (! $main::SDK_AUTO_DEPLOYMENT eq "NO")) )
 {
-    print " Automatic deployment of UNO components (YES/NO) [$main::SDK_AUTO_DEPLOYMENT_SUGGESTION]: ";
-    $main::SDK_AUTO_DEPLOYMENT = uc <STDIN>;
-    chop($main::SDK_AUTO_DEPLOYMENT);
-    if ( $main::SDK_AUTO_DEPLOYMENT eq "" )
-    {
+	print " Automatic deployment of UNO components (YES/NO) [$main::SDK_AUTO_DEPLOYMENT_SUGGESTION]: ";
+	$main::SDK_AUTO_DEPLOYMENT = uc <STDIN>;
+	chop($main::SDK_AUTO_DEPLOYMENT);
+	if ( $main::SDK_AUTO_DEPLOYMENT eq "" )
+	{
 	$main::SDK_AUTO_DEPLOYMENT = "YES";
-    }
+	}
 }
 
 prepareScriptFile("setsdkenv_unix.sh.in", "setsdkenv_unix.sh");
@@ -625,30 +625,30 @@ sub skipChoice
 
 sub resolveLink
 {
-    my $base= shift;
-    my $link= shift;
+	my $base= shift;
+	my $link= shift;
 
-    my $resolvedpath = "$base/$link";
-    my $linktarget =  readlink "$resolvedpath"; 
-    my $resolvedlink = "";
+	my $resolvedpath = "$base/$link";
+	my $linktarget = readlink "$resolvedpath";
+	my $resolvedlink = "";
 
-    while ( $linktarget ne "") {
+	while ( $linktarget ne "") {
 
 	if ( $linktarget =~ m/^\/.*/ )
 	{
-	    $resolvedpath = "$linktarget";
+		$resolvedpath = "$linktarget";
 	} else {
-	    $resolvedpath = `cd $base/$linktarget; pwd`;
-	    chop $resolvedpath;
+		$resolvedpath = `cd $base/$linktarget; pwd`;
+		chop $resolvedpath;
 	}
 	$base = dirname("$resolvedpath");
 
 	$linktarget = readlink "$resolvedpath";
-    }
+	}
 
-    $resolvedlink = `cd $resolvedpath; pwd`;
-    chop $resolvedlink;
-    return $resolvedlink;
+	$resolvedlink = `cd $resolvedpath; pwd`;
+	chop $resolvedlink;
+	return $resolvedlink;
 }
 
 sub searchprog
@@ -658,8 +658,8 @@ sub searchprog
 	my @pathList = split(":" , $tmpPath);
 	my $progDir = "";
 
-    if ( $_search eq "javac" )
-    {
+	if ( $_search eq "javac" )
+	{
 		if ( $main::operatingSystem =~ m/darwin/ ) {
 			$progDir = resolveLink("/System/Library/Frameworks/JavaVM.Framework/Versions", "CurrentJDK");
 
@@ -676,18 +676,18 @@ sub searchprog
 				return "$progDir/$main::OO_SDK_JAVA_BIN_DIR";
 			}
 		}
-    }
+	}
 
-    if ( $_search eq "gmake" && $main::operatingSystem =~ m/solaris/ ) {
+	if ( $_search eq "gmake" && $main::operatingSystem =~ m/solaris/ ) {
 		if ( -e "/usr/sfw/bin/gmake" )
 		{
 			return "/usr/sfw/bin";
 		}
-    }
+	}
 
 	foreach $i (@pathList)
 	{
-	    chomp ($i);
+		chomp ($i);
 
 		if ( -e "$i/$_search" )
 		{
@@ -722,7 +722,7 @@ sub searchoffice
 
 #	if ( $main::OO_MINORVERSION > 0) {
 #		$officepath = "$officepath$main::OO_MINORVERSION";
-#	} 
+#	}
 
 	# search corresponding office for this SDK
 	if (-d $officepath && -e "$officepath/program/soffice") {
@@ -745,7 +745,7 @@ sub testVersion
 	my $length = $#mustBeVersion;
 
 	if ($#testVersion < $#mustBeVersion) {
-	    $length = $#testVersion;
+		$length = $#testVersion;
 	}
 
 	for ($i=0; $i <= $length; $i++ )
@@ -773,13 +773,13 @@ sub readStdIn
 	my $tmpstdin = <STDIN>;
 	if ( index($tmpstdin, "\$") != -1)
 	{
-	    return `echo $tmpstdin`;
+		return `echo $tmpstdin`;
 	}
 
 	return $tmpstdin;
 }
 
-sub prepareScriptFile() 
+sub prepareScriptFile()
 {
 	my $inputFile = shift;
 	my $outputFile = shift;
@@ -807,10 +807,10 @@ sub prepareScriptFile()
 		$_ =~ s#\@OO_SDK_BOOST_HOME\@#$main::OO_SDK_BOOST_HOME#go;
 		$_ =~ s#\@SDK_AUTO_DEPLOYMENT\@#$main::SDK_AUTO_DEPLOYMENT#go;
 		$_ =~ s#\@OO_SDK_OUTPUT_DIR\@#$main::OO_SDK_OUTPUT_DIR#go;
-	
-		print FILEOUT $_; 
+
+		print FILEOUT $_;
 	}
-	
+
 	close FILEIN;
 	close FILEOUT;
 }
