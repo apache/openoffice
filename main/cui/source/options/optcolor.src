@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,47 +7,48 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ---------------------------------------------------------------
+
+// include ---------------------------------------------------------------
 #include <sfx2/sfx.hrc>
 #include "helpid.hrc"
 #include <cuires.hrc>
 #include "optcolor.hrc"
- // pragma ----------------------------------------------------------------
+// pragma ----------------------------------------------------------------
 
 TabPage RID_SVXPAGE_COLORCONFIG
 {
-    HelpId = HID_OPTIONS_COLORCONFIG ;
-    OutputSize = TRUE ;
-    SVLook = TRUE ;
+	HelpId = HID_OPTIONS_COLORCONFIG ;
+	OutputSize = TRUE ;
+	SVLook = TRUE ;
 	Hide = TRUE ;
 	Size = MAP_APPFONT ( 260 , 185 ) ;
-    FixedLine FL_COLORSCHEME
-    {
-        Pos = MAP_APPFONT ( 6 , 3 ) ;
-        Size = MAP_APPFONT ( 248 , 8 ) ;
-    	Text [ en-US ] = "Color scheme";
+	FixedLine FL_COLORSCHEME
+	{
+		Pos = MAP_APPFONT ( 6 , 3 ) ;
+		Size = MAP_APPFONT ( 248 , 8 ) ;
+		Text [ en-US ] = "Color scheme";
 	};
-    FixedText FT_COLORSCHEME
-    {
-        Pos = MAP_APPFONT ( 12 , 16 ) ;
-        Size = MAP_APPFONT ( 50 , 8 ) ;
-    	Text [ en-US ] = "Scheme";
+	FixedText FT_COLORSCHEME
+	{
+		Pos = MAP_APPFONT ( 12 , 16 ) ;
+		Size = MAP_APPFONT ( 50 , 8 ) ;
+		Text [ en-US ] = "Scheme";
 	};
-    ListBox LB_COLORSCHEME
-    {
+	ListBox LB_COLORSCHEME
+	{
         HelpID = "cui:ListBox:RID_SVXPAGE_COLORCONFIG:LB_COLORSCHEME";
         Pos = MAP_APPFONT ( 65 , 14 ) ;
         Size = MAP_APPFONT ( 77 , 58 ) ;
@@ -366,7 +367,7 @@ TabPage RID_SVXPAGE_COLORCONFIG
 			FixedText FT_CALCNOTESBACKGROUND
 			{
                 FT_POS_SIZE( 32 );
-				Text [ en-US ] = "Notes background";
+				Text [ en-US ] = "Comment background";
 			};
             LB_WN( CALCNOTESBACKGROUND, 32 )
 
@@ -437,55 +438,55 @@ TabPage RID_SVXPAGE_COLORCONFIG
 				Text [ en-US ] = "Error";
 			};
             LB_WN( BASICERROR, 42 )
-            
+
             FixedText FT_SQL_COMMAND
 			{
                 FT_SEP_POS_SIZE( 43 );
 				Text [ en-US ] = "SQL Syntax Highlighting";
 			};
-			
+
             FixedText FT_SQLIDENTIFIER
 			{
                 FT_POS_SIZE( 44 );
 				Text [ en-US ] = "Identifier";
 			};
 			LB_WN( SQLIDENTIFIER, 44 )
-			
+
 			FixedText FT_SQLNUMBER
 			{
                 FT_POS_SIZE( 45 );
 				Text [ en-US ] = "Number";
 			};
 			LB_WN( SQLNUMBER, 45 )
-			
+
 			FixedText FT_SQLSTRING
 			{
                 FT_POS_SIZE( 46 );
 				Text [ en-US ] = "String";
 			};
 			LB_WN( SQLSTRING, 46 )
-			
+
 			FixedText FT_SQLOPERATOR
 			{
                 FT_POS_SIZE( 47 );
 				Text [ en-US ] = "Operator";
 			};
 			LB_WN( SQLOPERATOR, 47 )
-			
+
 			FixedText FT_SQLKEYWORD
 			{
                 FT_POS_SIZE( 48 );
 				Text [ en-US ] = "Keyword";
 			};
 			LB_WN( SQLKEYWORD, 48 )
-			
+
 			FixedText FT_SQLPARAMETER
 			{
                 FT_POS_SIZE( 49 );
 				Text [ en-US ] = "Parameter";
 			};
 			LB_WN( SQLPARAMETER, 49 )
-			
+
 			FixedText FT_SQLCOMMENT
 			{
                 FT_POS_SIZE( 50 );
@@ -506,51 +507,23 @@ TabPage RID_SVXPAGE_COLORCONFIG
                 Text [ en-US ] = "Grammar check highlighting";
             };
         };
-    };
+	};
 };
 QueryBox RID_SVXQB_DELETE_COLOR_CONFIG
 {
 	Buttons = WB_YES_NO ;
 	DefButton = WB_DEF_NO ;
-    Message [ en-US ] = "Do you really want to delete the color scheme?" ;
+	Message [ en-US ] = "Do you really want to delete the color scheme?" ;
 };
 String RID_SVXSTR_COLOR_CONFIG_DELETE
 {
-    Text [ en-US ] = "Color Scheme Deletion" ;
+	Text [ en-US ] = "Color Scheme Deletion" ;
 };
 String RID_SVXSTR_COLOR_CONFIG_SAVE1
 {
-    Text [ en-US ] = "Save scheme" ;
+	Text [ en-US ] = "Save scheme" ;
 };
 String RID_SVXSTR_COLOR_CONFIG_SAVE2
 {
-    Text [ en-US ] = "Name of color scheme" ;
+	Text [ en-US ] = "Name of color scheme" ;
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
