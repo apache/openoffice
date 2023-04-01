@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -67,26 +67,27 @@ class MouseEvent;
 // Modus selektiert wird.
 // HDL_MOVE...HDL_LWRGT muessen im enum immer zusammen stehen bleiben!
 
-enum SdrHdlKind 
+enum SdrHdlKind
 {
 	HDL_MOVE,		// Handle zum Verschieben des Objekts
-	HDL_UPLFT,		// Oben links
-	HDL_UPPER,		// Oben
-	HDL_UPRGT,		// Oben rechts
-	HDL_LEFT,		// Links
-	HDL_RIGHT,		// Rechts
-	HDL_LWLFT,		// Unten links
-	HDL_LOWER,		// Unten
-	HDL_LWRGT,		// Unten rechts
+	HDL_UPLFT,		// top left
+	HDL_UPPER,		// top
+	HDL_UPRGT,		// top right
+	HDL_LEFT,		// left
+	HDL_RIGHT,		// right
+	HDL_LWLFT,		// bottom left
+	HDL_LOWER,		// bottom
+	HDL_LWRGT,		// bottom right
 	HDL_POLY,		// Punktselektion an Polygon oder Bezierkurve
 	HDL_BWGT,		// Gewicht an einer Bezierkurve
 	HDL_CIRC,		// Winkel an Kreissegmenten, Eckenradius am Rect
 	HDL_REF1,		// Referenzpunkt 1, z.B. Rotationsmitte
 	HDL_REF2,		// Referenzpunkt 2, z.B. Endpunkt der Spiegelachse
 	HDL_MIRX,		// Die Spiegelachse selbst
-	HDL_GLUE,		// GluePoint
+	HDL_GLUE,		// glue point
+	HDL_GLUE_UNSEL,	// glue point unselected
 	HDL_ANCHOR,		// anchor symbol (SD, SW)
-	HDL_TRNS,		// interactive transparence
+	HDL_TRNS,		// interactive transparency
 	HDL_GRAD,		// interactive gradient
 	HDL_COLR,		// interactive color
 	HDL_USER,
@@ -130,9 +131,10 @@ enum BitmapMarkerKind
 	RectPlus_11x11,
 	Crosshair,
 	Glue,
+	Glue_Unselected,
 	Anchor,
 
-	// #98388# add AnchorPressed to be able to aninate anchor control, too.
+	// #98388# add AnchorPressed to be able to animate anchor control, too.
 	AnchorPressed,
 
 	// #101688# AnchorTR for SW
@@ -156,9 +158,9 @@ class SVX_DLLPUBLIC SdrHdl
 	BitmapEx ImpGetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd, sal_Bool bFine, sal_Bool bIsHighContrast);
 
 protected:
-	SdrObject*					pObj;      // Gehoert das Handle zu einem Objekt?
-	SdrPageView*				pPV;       // Gehoert das Handle zu einem Objekt in einer bestimmten PageView?
-	SdrHdlList*					pHdlList;  // Zum Feststelen der Handlegroesse
+	SdrObject*					pObj; // Gehoert das Handle zu einem Objekt?
+	SdrPageView*				pPV; // Gehoert das Handle zu einem Objekt in einer bestimmten PageView?
+	SdrHdlList*					pHdlList; // Zum Feststellen der Handlegroesse
 
 	// OVERLAYMANAGER
 	::sdr::overlay::OverlayObjectList			maOverlayGroup;
@@ -169,16 +171,16 @@ protected:
 
 	long						nDrehWink; // Handles bzw. Mauszeiger drehen
 	sal_uInt32					nObjHdlNum; // wird von der MarkView benoetigt
-	sal_uInt32					nPolyNum;  // Polygonpunktes
-	sal_uInt32					nPPntNum;  // Punktnummer des Polygons
+	sal_uInt32					nPolyNum; // Polygonpunktes
+	sal_uInt32					nPPntNum; // Punktnummer des Polygons
 	sal_uInt32					nSourceHdlNum; // ist noch vollstaendig zu implementieren
 
-	unsigned					bSelect : 1;   // Ein selektierter Polygonpunkt?
+	unsigned					bSelect : 1; // Ein selektierter Polygonpunkt?
 	unsigned					b1PixMore : 1; // True=Handle wird 1 Pixel groesser dargestellt
-	unsigned					bPlusHdl : 1;  // u.a. fuer Hld-Paint Optimierung bei MarkPoint/UnmarkPoint, ...
-	
+	unsigned					bPlusHdl : 1; // u.a. fuer Hld-Paint Optimierung bei MarkPoint/UnmarkPoint, ...
+
 	bool						mbMoveOutside; // forces this handle to be moved outside of the selection rectangle
-	
+
 	// create marker for this kind
 	virtual void CreateB2dIAObject();
 
@@ -186,11 +188,11 @@ protected:
 	void GetRidOfIAObject();
 
 private:
-	bool						mbMouseOver;	// is true if the mouse is over this handle
+	bool						mbMouseOver; // is true if the mouse is over this handle
 
 protected:
 	::sdr::overlay::OverlayObject* CreateOverlayObject(
-		const basegfx::B2DPoint& rPos, 
+		const basegfx::B2DPoint& rPos,
 		BitmapColorIndex eColIndex, BitmapMarkerKind eKindOfMarker, Point aMoveOutsideOffset = Point());
 	BitmapMarkerKind GetNextBigger(BitmapMarkerKind eKnd) const;
 
@@ -211,7 +213,7 @@ public:
 	SdrPageView* GetPageView() const { return pPV; }
 	void SetPageView(SdrPageView* pNewPV) { pPV=pNewPV; }
 
-	SdrObject* GetObj() const { return pObj;  }
+	SdrObject* GetObj() const { return pObj; }
 	void SetObj(SdrObject* pNewObj);
 
 	sal_Bool IsSelected() const { return bSelect; }
@@ -247,11 +249,11 @@ public:
 	void SetMoveOutside( bool bMoveOutside );
 
 	/** is called when the mouse enters the area of this handle. If the handle changes his
-		visualisation during mouse over it must override this method and call Touch(). */
+		visualization during mouse over it must override this method and call Touch(). */
 	virtual void onMouseEnter(const MouseEvent& rMEvt);
 
 	/** is called when the mouse leaves the area of this handle. If the handle changes his
-		visualisation during mouse over it must override this method and call Touch(). */
+		visualization during mouse over it must override this method and call Touch(). */
 	virtual void onMouseLeave();
 
 	bool isMouseOver() const;
@@ -265,14 +267,14 @@ public:
 class SVX_DLLPUBLIC SdrHdlColor : public SdrHdl
 {
 private:
-	// size of colr markers
+	// size of color markers
 	Size						aMarkerSize;
 
 	// color
 	Color						aMarkerColor;
 
 	// callback link when value changed
-    Link						aColorChangeHdl;
+	Link						aColorChangeHdl;
 
 	// use luminance values only
 	unsigned					bUseLuminance : 1;
@@ -297,8 +299,8 @@ public:
 	const Size& GetSize() const { return aMarkerSize; }
 	void SetSize(const Size& rNew);
 
-    void SetColorChangeHdl(const Link& rLink) { aColorChangeHdl = rLink; }
-    const Link& GetColorChangeHdl() const { return aColorChangeHdl; }
+	void SetColorChangeHdl(const Link& rLink) { aColorChangeHdl = rLink; }
+	const Link& GetColorChangeHdl() const { return aColorChangeHdl; }
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -313,7 +315,7 @@ private:
 	// 2nd position
 	Point						a2ndPos;
 
-	// is this a gradient or a transparence
+	// is this a gradient or a transparency
 	unsigned					bGradient : 1;
 
 	// select which handle to move
@@ -436,7 +438,7 @@ public:
 
 class ImpTextframeHdl: public SdrHdl
 {
-    const Rectangle maRect;
+	const Rectangle maRect;
 
 	// create marker for this kind
 	virtual void CreateB2dIAObject();
@@ -445,8 +447,6 @@ public:
 	explicit ImpTextframeHdl(const Rectangle& rRect);
 };
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // #97016# II
@@ -462,7 +462,7 @@ protected:
 
 	unsigned					bRotateShear : 1;
 	unsigned					bDistortShear : 1;
-	unsigned					bMoveOutside : 1;      // Handles nach aussen ruecken (fuer TextEdit)
+	unsigned					bMoveOutside : 1; // Handles nach aussen ruecken (fuer TextEdit)
 	unsigned					bFineHandles : 1;
 
 private:
@@ -519,17 +519,17 @@ public:
 class SVX_DLLPUBLIC SdrCropHdl : public SdrHdl
 {
 private:
-    // evtl. shear and rotation, equal to the object's one to allow adaption of
-    // the visualization handles
-    double          mfShearX;
-    double          mfRotation;
+	// evtl. shear and rotation, equal to the object's one to allow adaption of
+	// the visualization handles
+	double			mfShearX;
+	double			mfRotation;
 
 public:
-    SdrCropHdl(
-        const Point& rPnt, 
-        SdrHdlKind eNewKind,
-        double fShearX,
-        double fRotation);
+	SdrCropHdl(
+		const Point& rPnt,
+		SdrHdlKind eNewKind,
+		double fShearX,
+		double fRotation);
 
 protected:
 	// create marker for this kind
@@ -545,25 +545,25 @@ protected:
 class SVX_DLLPUBLIC SdrCropViewHdl : public SdrHdl
 {
 private:
-    basegfx::B2DHomMatrix       maObjectTransform;
-    Graphic                     maGraphic;
-    double                      mfCropLeft;
-    double                      mfCropTop;
-    double                      mfCropRight;
-    double                      mfCropBottom;
+	basegfx::B2DHomMatrix		maObjectTransform;
+	Graphic						maGraphic;
+	double						mfCropLeft;
+	double						mfCropTop;
+	double						mfCropRight;
+	double						mfCropBottom;
 
 public:
-    SdrCropViewHdl(
-        const basegfx::B2DHomMatrix& rObjectTransform,
-        const Graphic& rGraphic,
-        double fCropLeft,
-        double fCropTop,
-        double fCropRight,
-        double fCropBottom);
+	SdrCropViewHdl(
+		const basegfx::B2DHomMatrix& rObjectTransform,
+		const Graphic& rGraphic,
+		double fCropLeft,
+		double fCropTop,
+		double fCropRight,
+		double fCropBottom);
 
 protected:
-    // create marker for this kind
-    virtual void CreateB2dIAObject();
+	// create marker for this kind
+	virtual void CreateB2dIAObject();
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
