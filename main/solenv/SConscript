@@ -1,0 +1,26 @@
+import os.path
+import config
+
+## Generate the versionlist.hrc file
+def generateVersionList(target, source, env):
+    for t in target:
+        with open(str(t), "w") as f:
+            f.write("""#define VERSION %s
+#define SUBVERSION %s
+#define MICROVERSION %s
+#define VER_DAY %s
+#define VER_MONTH %s
+#define VER_YEAR %s
+""" % (config.version["OOOBASEVERSIONMAJOR"],
+       config.version["OOOBASEVERSIONMINOR"],
+       config.version["OOOBASEVERSIONMICRO"],
+       config.version["OOOBASEVERSIONDAY"],
+       config.version["OOOBASEVERSIONMONTH"],
+       config.version["OOOBASEVERSIONYEAR"]))
+
+# Package versionlist
+env = DefaultEnvironment().Clone()
+env.Command(os.path.join("CustomTarget", "solenv", "inc", "versionlist.hrc"),
+            config.versionFile, generateVersionList)
+env.Command(os.path.join("bin", "version.lst"), os.path.join("inc", "version.lst"),
+            Copy("$TARGET", "$SOURCE"))

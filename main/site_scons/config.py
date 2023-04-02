@@ -24,8 +24,7 @@ import os
 _siteDir, _myFilename = os.path.split(os.path.abspath(__file__))
 _mainDir, _siteDir2 = os.path.split(_siteDir)
 
-# Or should we patch set_soenv to generate us a .py file?
-def loadJavaProperties(filepath):
+def loadProperties(filepath):
     props = {}
     fullLine = ''
     appending = False
@@ -51,5 +50,7 @@ def loadJavaProperties(filepath):
                             props[key] = value
     return props
 
-soenv = loadJavaProperties(_mainDir + '/ant.properties')
-
+# Or should we patch set_soenv to generate us a .py file?
+soenv = loadProperties(os.path.join(_mainDir, 'ant.properties'))
+versionFile = os.path.join(_mainDir, 'solenv', 'inc', 'version.lst')
+version = loadProperties(versionFile)
