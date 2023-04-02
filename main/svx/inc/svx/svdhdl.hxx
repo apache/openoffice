@@ -130,6 +130,7 @@ enum BitmapMarkerKind
 	RectPlus_9x9,
 	RectPlus_11x11,
 	Crosshair,
+	Crosshair_Unselected,
 	Glue,
 	Glue_Unselected,
 	Anchor,
