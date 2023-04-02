@@ -1,0 +1,60 @@
+xml2cmpObjects = AOOSharedObjects()
+xml2cmpObjects.AddInclude([
+    'source/inc',
+    'source/support',
+    'source/xcd'
+])
+xml2cmpObjects.AddCxxExceptionSources([
+    'source/xcd/cr_html.cxx',
+    'source/xcd/cr_index.cxx',
+    'source/xcd/cr_metho.cxx',
+    'source/xcd/filebuff.cxx',
+    'source/xcd/parse.cxx',
+    'source/xcd/xmlelem.cxx',
+    'source/xcd/xmltree.cxx',
+    'source/xcd/main.cxx',
+    'source/support/cmdline.cxx',
+    'source/support/heap.cxx',
+    'source/support/sistr.cxx',
+    'source/support/syshelp.cxx',
+    'source/support/badcast.cxx'
+])
+xml2cmpExecutable = AOOExecutable(
+    'xml2cmp',
+    'NONE',
+    xml2cmpObjects
+)
+xml2cmpExecutable.AddLinkedLibs([
+    STDLIBS # TODO: excluding uwinapi
+])
+
+srvdepyObjects = AOOSharedObjects()
+srvdepyObjects.AddInclude([
+    'source/inc',
+    'source/support',
+    'source/xcd'
+])
+srvdepyObjects.AddCxxExceptionSources([
+    'source/finder/dependy.cxx',
+    'source/finder/dep_main.cxx',
+    'source/xcd/cr_html.cxx',
+    'source/xcd/cr_index.cxx',
+    'source/xcd/cr_metho.cxx',
+    'source/xcd/filebuff.cxx',
+    'source/xcd/parse.cxx',
+    'source/xcd/xmlelem.cxx',
+    'source/xcd/xmltree.cxx',
+    'source/support/cmdline.cxx',
+    'source/support/heap.cxx',
+    'source/support/sistr.cxx',
+    'source/support/syshelp.cxx',
+    'source/support/badcast.cxx',
+])
+srvdepyExecutable = AOOExecutable(
+    'srvdepy',
+    'NONE',
+    srvdepyObjects
+)
+srvdepyExecutable.AddLinkedLibs([
+    STDLIBS # TODO: excluding uwinapi
+])
