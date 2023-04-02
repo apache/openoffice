@@ -105,7 +105,7 @@ public:
 
 SdrHdlBitmapSet::SdrHdlBitmapSet(sal_uInt16 nResId)
 :	maMarkersBitmap(ResId(nResId, *ImpGetResMgr())), // just use resource with alpha channel
-	// 14 kinds (BitmapMarkerKind) use index [0..5], 5 extra
+	// 14 kinds (BitmapMarkerKind) use index [0..5], 6 extra
 	maRealMarkers((KIND_COUNT * INDEX_COUNT) + INDIVIDUAL_COUNT)
 {
 }
@@ -243,30 +243,35 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 
 		case Crosshair:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 68), Size(15, 15)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 66), Size(13, 13)));
+		}
+
+		case Crosshair_Unselected:
+		{
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(0, 79), Size(13, 13)));
 		}
 
 		case Glue:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(15, 74), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(15, 74), Size(9, 9)));
 		}
 
 		case Glue_Unselected:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(15, 83), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(15, 83), Size(9, 9)));
 		}
 
 		case Anchor: // #101688# AnchorTR for SW
 		case AnchorTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(24, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 4, Rectangle(Point(24, 68), Size(24, 24)));
 		}
 
 		// #98388# add AnchorPressed to be able to animate anchor control
 		case AnchorPressed:
 		case AnchorPressedTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 4, Rectangle(Point(48, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 5, Rectangle(Point(48, 68), Size(24, 24)));
 		}
 	}
 
@@ -534,6 +539,10 @@ void SdrHdl::CreateB2dIAObject()
 				eKindOfMarker = Crosshair;
 				break;
 			}
+			{
+				eKindOfMarker = Crosshair_Unselected;
+				break;
+			}
 			case HDL_GLUE:
 			{
 				eKindOfMarker = Glue;
@@ -759,7 +768,7 @@ BitmapEx SdrHdl::ImpGetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd,
 				case RectPlus_11x11:	eNextBigger = Rect_13x13;	break;
 
 				case Crosshair:
-					eNextBigger = Glue;
+					eNextBigger = Crosshair_Unselected;
 					break;
 
 				case Glue:
