@@ -101,7 +101,7 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #define KIND_COUNT			(14)
 #define INDEX_COUNT			(6)
-#define INDIVIDUAL_COUNT	(5)
+#define INDIVIDUAL_COUNT	(6)
 
 SdrHdlBitmapSet::SdrHdlBitmapSet(sal_uInt16 nResId)
 :	maMarkersBitmap(ResId(nResId, *ImpGetResMgr())), // just use resource with alpha channel
