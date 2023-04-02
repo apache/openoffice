@@ -101,11 +101,11 @@ public:
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #define KIND_COUNT			(14)
 #define INDEX_COUNT			(6)
-#define INDIVIDUAL_COUNT	(4)
+#define INDIVIDUAL_COUNT	(5)
 
 SdrHdlBitmapSet::SdrHdlBitmapSet(sal_uInt16 nResId)
 :	maMarkersBitmap(ResId(nResId, *ImpGetResMgr())), // just use resource with alpha channel
-	// 14 kinds (BitmapMarkerKind) use index [0..5], 4 extra
+	// 14 kinds (BitmapMarkerKind) use index [0..5], 6 extra
 	maRealMarkers((KIND_COUNT * INDEX_COUNT) + INDIVIDUAL_COUNT)
 {
 }
@@ -243,25 +243,35 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 
 		case Crosshair:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 68), Size(15, 15)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 0, Rectangle(Point(0, 66), Size(13, 13)));
+		}
+
+		case Crosshair_Unselected:
+		{
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(0, 79), Size(13, 13)));
 		}
 
 		case Glue:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 1, Rectangle(Point(15, 74), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(15, 74), Size(9, 9)));
+		}
+
+		case Glue_Unselected:
+		{
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(15, 83), Size(9, 9)));
 		}
 
 		case Anchor: // #101688# AnchorTR for SW
 		case AnchorTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(24, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 4, Rectangle(Point(24, 68), Size(24, 24)));
 		}
 
 		// #98388# add AnchorPressed to be able to animate anchor control
 		case AnchorPressed:
 		case AnchorPressedTR:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(48, 68), Size(24, 24)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 5, Rectangle(Point(48, 68), Size(24, 24)));
 		}
 	}
 
@@ -529,9 +539,18 @@ void SdrHdl::CreateB2dIAObject()
 				eKindOfMarker = Crosshair;
 				break;
 			}
+			{
+				eKindOfMarker = Crosshair_Unselected;
+				break;
+			}
 			case HDL_GLUE:
 			{
 				eKindOfMarker = Glue;
+				break;
+			}
+			case HDL_GLUE_UNSEL:
+			{
+				eKindOfMarker = Glue_Unselected;
 				break;
 			}
 			case HDL_ANCHOR:
@@ -749,11 +768,11 @@ BitmapEx SdrHdl::ImpGetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd,
 				case RectPlus_11x11:	eNextBigger = Rect_13x13;	break;
 
 				case Crosshair:
-					eNextBigger = Glue;
+					eNextBigger = Crosshair_Unselected;
 					break;
 
 				case Glue:
-					eNextBigger = Crosshair;
+					eNextBigger = Glue_Unselected;
 					break;
 				default:
 					break;
@@ -906,6 +925,7 @@ Pointer SdrHdl::GetPointer() const
 				case HDL_REF2 : ePtr=POINTER_REFHAND;	break;
 				case HDL_BWGT : ePtr=POINTER_MOVEBEZIERWEIGHT;	break;
 				case HDL_GLUE : ePtr=POINTER_MOVEPOINT;	break;
+				case HDL_GLUE_UNSEL : ePtr=POINTER_MOVEPOINT;	break;
 				case HDL_CUSTOMSHAPE1 : ePtr=POINTER_HAND;	break;
 				default:
 					break;
@@ -929,7 +949,7 @@ sal_Bool SdrHdl::IsFocusHdl() const
 		case HDL_LOWER:		// bottom
 		case HDL_LWRGT:		// bottom right
 		{
-			// if it's a activated TextEdit, it's moved to extended points
+			// if it's an activated TextEdit, it's moved to extended points
 			if(pHdlList && pHdlList->IsMoveOutside())
 				return sal_False;
 			else
@@ -943,7 +963,8 @@ sal_Bool SdrHdl::IsFocusHdl() const
 		case HDL_REF1:		// Referenzpunkt 1, z.B. Rotationsmitte
 		case HDL_REF2:		// Referenzpunkt 2, z.B. Endpunkt der Spiegelachse
 		//case HDL_MIRX:		// Die Spiegelachse selbst
-		case HDL_GLUE:		// GluePoint
+		case HDL_GLUE:		// glue point
+		case HDL_GLUE_UNSEL: // glue point unselected
 
 		// #98388# do NOT activate here, let SW implement their own SdrHdl and
 		// overload IsFocusHdl() there to make the anchor accessible
@@ -1773,11 +1794,11 @@ int ImpSdrHdlListSorter::Compare(const void* pElem1, const void* pElem2) const
 	if (eKind1!=eKind2)
 	{
 		if (eKind1==HDL_REF1 || eKind1==HDL_REF2 || eKind1==HDL_MIRX) n1=5;
-		else if (eKind1==HDL_GLUE) n1=2;
+		else if (eKind1==HDL_GLUE || eKind1==HDL_GLUE_UNSEL) n1=2;
 		else if (eKind1==HDL_USER) n1=3;
 		else if (eKind1==HDL_SMARTTAG) n1=0;
 		if (eKind2==HDL_REF1 || eKind2==HDL_REF2 || eKind2==HDL_MIRX) n2=5;
-		else if (eKind2==HDL_GLUE) n2=2;
+		else if (eKind2==HDL_GLUE || eKind1==HDL_GLUE_UNSEL) n2=2;
 		else if (eKind2==HDL_USER) n2=3;
 		else if (eKind2==HDL_SMARTTAG) n2=0;
 	}
@@ -2666,4 +2687,3 @@ void SdrCropViewHdl::CreateB2dIAObject()
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // eof
-
