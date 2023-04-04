@@ -253,12 +253,12 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 
 		case Glue:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(15, 74), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 2, Rectangle(Point(13, 70), Size(11, 11)));
 		}
 
 		case Glue_Unselected:
 		{
-			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(15, 83), Size(9, 9)));
+			return impGetOrCreateTargetBitmap((KIND_COUNT * INDEX_COUNT) + 3, Rectangle(Point(13, 81), Size(11, 11)));
 		}
 
 		case Anchor: // #101688# AnchorTR for SW
