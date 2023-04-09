@@ -247,45 +247,6 @@ void SdrGluePoint::Shear(const Point& rRef, long /*nWink*/, double tn, FASTBOOL 
 	if (pObj!=NULL) SetAbsolutePos(aPt,*pObj); else SetPos(aPt);
 }
 
-// Unused code?!
-void SdrGluePoint::Draw(OutputDevice& rOut, const SdrObject* pObj) const
-{
-	Color aBackPenColor(COL_WHITE);
-	Color aForePenColor(COL_LIGHTBLUE);
-
-	bool bMapMerk=rOut.IsMapModeEnabled();
-	Point aPt(pObj!=NULL ? GetAbsolutePos(*pObj) : GetPos());
-	aPt=rOut.LogicToPixel(aPt);
-	rOut.EnableMapMode(sal_False);
-	long x=aPt.X(),y=aPt.Y(); // Groesse erstmal fest auf 7 Pixel
-
-	rOut.SetLineColor( aBackPenColor );
-	rOut.DrawLine(Point(x-2,y-3),Point(x+3,y+2));
-	rOut.DrawLine(Point(x-3,y-2),Point(x+2,y+3));
-	rOut.DrawLine(Point(x-3,y+2),Point(x+2,y-3));
-	rOut.DrawLine(Point(x-2,y+3),Point(x+3,y-2));
-	
-	if (bNoPercent) 
-	{
-		switch (GetHorzAlign()) 
-		{
-			case SDRHORZALIGN_LEFT  : rOut.DrawLine(Point(x-3,y-1),Point(x-3,y+1)); break;
-			case SDRHORZALIGN_RIGHT : rOut.DrawLine(Point(x+3,y-1),Point(x+3,y+1)); break;
-		}
-
-		switch (GetVertAlign()) 
-		{
-			case SDRVERTALIGN_TOP   : rOut.DrawLine(Point(x-1,y-3),Point(x+1,y-3)); break;
-			case SDRVERTALIGN_BOTTOM: rOut.DrawLine(Point(x-1,y+3),Point(x+1,y+3)); break;
-		}
-	}
-
-	rOut.SetLineColor( aForePenColor );
-	rOut.DrawLine(Point(x-2,y-2),Point(x+2,y+2));
-	rOut.DrawLine(Point(x-2,y+2),Point(x+2,y-2));
-	rOut.EnableMapMode(bMapMerk);
-}
-
 void SdrGluePoint::Invalidate(Window& rWin, const SdrObject* pObj) const
 {
 	bool bMapMerk=rWin.IsMapModeEnabled();
