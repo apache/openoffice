@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,23 +29,22 @@
 #include <svx/svdobj.hxx>
 #include <svx/svdtrans.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGluePoint::SetReallyAbsolute(FASTBOOL bOn, const SdrObject& rObj)
 {
 	if ( bReallyAbsolute != bOn )
 	{
-	   if ( bOn )
-	   {
-		   aPos=GetAbsolutePos(rObj);
-		   bReallyAbsolute=bOn;
-	   }
-	   else
-	   {
-		   bReallyAbsolute=bOn;
-		   Point aPt(aPos);
-		   SetAbsolutePos(aPt,rObj);
-	   }
+		if ( bOn )
+		{
+			aPos=GetAbsolutePos(rObj);
+			bReallyAbsolute=bOn;
+		}
+		else
+		{
+			bReallyAbsolute=bOn;
+			Point aPt(aPos);
+			SetAbsolutePos(aPt,rObj);
+		}
 	}
 }
 
@@ -181,11 +180,11 @@ void SdrGluePoint::Rotate(const Point& rRef, long nWink, double sn, double cs, c
 	Point aPt(pObj!=NULL ? GetAbsolutePos(*pObj) : GetPos());
 	RotatePoint(aPt,rRef,sn,cs);
 	// Bezugskante drehen
-	if(nAlign != (SDRHORZALIGN_CENTER|SDRVERTALIGN_CENTER)) 
+	if(nAlign != (SDRHORZALIGN_CENTER|SDRVERTALIGN_CENTER))
 	{
 		SetAlignAngle(GetAlignAngle()+nWink);
 	}
-	// Austrittsrichtungen drehen
+	// rotate escape directions
 	sal_uInt16 nEscDir0=nEscDir;
 	sal_uInt16 nEscDir1=0;
 	if ((nEscDir0&SDRESC_LEFT  )!=0) nEscDir1|=EscAngleToDir(EscDirToAngle(SDRESC_LEFT  )+nWink);
@@ -208,13 +207,13 @@ void SdrGluePoint::Mirror(const Point& rRef1, const Point& rRef2, long nWink, co
 	Point aPt(pObj!=NULL ? GetAbsolutePos(*pObj) : GetPos());
 	MirrorPoint(aPt,rRef1,rRef2);
 	// Bezugskante spiegeln
-	if(nAlign != (SDRHORZALIGN_CENTER|SDRVERTALIGN_CENTER)) 
+	if(nAlign != (SDRHORZALIGN_CENTER|SDRVERTALIGN_CENTER))
 	{
 		long nAW=GetAlignAngle();
 		nAW+=2*(nWink-nAW);
 		SetAlignAngle(nAW);
 	}
-	// Austrittsrichtungen spiegeln
+	// mirror escape directions
 	sal_uInt16 nEscDir0=nEscDir;
 	sal_uInt16 nEscDir1=0;
 	if ((nEscDir0&SDRESC_LEFT)!=0) {
@@ -248,6 +247,7 @@ void SdrGluePoint::Shear(const Point& rRef, long /*nWink*/, double tn, FASTBOOL 
 	if (pObj!=NULL) SetAbsolutePos(aPt,*pObj); else SetPos(aPt);
 }
 
+// Unused code?!
 void SdrGluePoint::Draw(OutputDevice& rOut, const SdrObject* pObj) const
 {
 	Color aBackPenColor(COL_WHITE);
@@ -292,11 +292,11 @@ void SdrGluePoint::Invalidate(Window& rWin, const SdrObject* pObj) const
 	Point aPt(pObj!=NULL ? GetAbsolutePos(*pObj) : GetPos());
 	aPt=rWin.LogicToPixel(aPt);
 	rWin.EnableMapMode(sal_False);
-	long x=aPt.X(),y=aPt.Y(); // Groesse erstmal fest auf 7 Pixel
+	long x=aPt.X(),y=aPt.Y(); // size 9x9 pixel
 
 	// #111096#
 	// do not erase background, that causes flicker (!)
-	rWin.Invalidate(Rectangle(Point(x-3,y-3),Point(x+3,y+3)), INVALIDATE_NOERASE);
+	rWin.Invalidate(Rectangle(Point(x-4,y-4),Point(x+4,y+4)), INVALIDATE_NOERASE);
 
 	rWin.EnableMapMode(bMapMerk);
 }
@@ -304,12 +304,11 @@ void SdrGluePoint::Invalidate(Window& rWin, const SdrObject* pObj) const
 FASTBOOL SdrGluePoint::IsHit(const Point& rPnt, const OutputDevice& rOut, const SdrObject* pObj) const
 {
 	Point aPt(pObj!=NULL ? GetAbsolutePos(*pObj) : GetPos());
-	Size aSiz=rOut.PixelToLogic(Size(3,3));
+	Size aSiz=rOut.PixelToLogic(Size(4,4));
 	Rectangle aRect(aPt.X()-aSiz.Width(),aPt.Y()-aSiz.Height(),aPt.X()+aSiz.Width(),aPt.Y()+aSiz.Height());
 	return aRect.IsInside(rPnt);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrGluePointList::Clear()
 {
@@ -375,8 +374,8 @@ void SdrGluePointList::Invalidate(Window& rWin, const SdrObject* pObj) const
 
 sal_uInt16 SdrGluePointList::FindGluePoint(sal_uInt16 nId) const
 {
-	// Hier noch einen optimaleren Suchalgorithmus implementieren.
-	// Die Liste sollte stets sortiert sein!!!!
+	// TODO: Hier noch einen optimaleren Suchalgorithmus implementieren.
+	// Die Liste sollte stets sortiert sein!
 	sal_uInt16 nAnz=GetCount();
 	sal_uInt16 nRet=SDRGLUEPOINT_NOTFOUND;
 	for (sal_uInt16 nNum=0; nNum<nAnz && nRet==SDRGLUEPOINT_NOTFOUND; nNum++) {
@@ -443,4 +442,4 @@ void SdrGluePointList::Shear(const Point& rRef, long nWink, double tn, FASTBOOL 
 	}
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */
