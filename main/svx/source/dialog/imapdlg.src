@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,40 +7,41 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // include ---------------------------------------------------------------
+
+// include ---------------------------------------------------------------
 #include "helpid.hrc"
 #include "imapdlg.hrc"
- // pragma ----------------------------------------------------------------
+// pragma ----------------------------------------------------------------
 
- // RID_SVXDLG_IMAP ----------------------------------------------------
+// RID_SVXDLG_IMAP ----------------------------------------------------
 ModelessDialog RID_SVXDLG_IMAP
 {
-    HelpID = "svx:ModelessDialog:RID_SVXDLG_IMAP";
+	HelpID = "svx:ModelessDialog:RID_SVXDLG_IMAP" ;
 	OutputSize = TRUE ;
 	Hide = TRUE ;
 	SVLook = TRUE ;
-	Pos = MAP_APPFONT ( 0 , 0 ) ;
-	Size = MAP_APPFONT ( 270 , 213 ) ;
+	Pos = MAP_APPFONT ( 0, 0 ) ;
+	Size = MAP_APPFONT ( 270, 213 ) ;
 	Sizeable = TRUE ;
 	Moveable = TRUE ;
 	Closeable = TRUE ;
 	ToolBox TBX_IMAPDLG1
 	{
 		SVLook = TRUE ;
-		Pos = MAP_APPFONT ( 6 , 6 ) ;
+		Pos = MAP_APPFONT ( 6, 6 ) ;
 		HelpId = HID_IMAPDLG_TOOLBOX ;
 
 		ItemList =
@@ -184,15 +185,15 @@ ModelessDialog RID_SVXDLG_IMAP
 
 	FixedText FT_URL
 	{
-		Pos = MAP_APPFONT ( 6 , 25 ) ;
-		Size = MAP_APPFONT ( 30 , 12 ) ;
+		Pos = MAP_APPFONT ( 6, 25 ) ;
+		Size = MAP_APPFONT ( 30, 12 ) ;
 		Text [ en-US ] = "Address:" ;
 	};
 	ComboBox CBB_URL
 	{
-	    HelpID = "svx:ComboBox:RID_SVXDLG_IMAP:CBB_URL";
-		Pos = MAP_APPFONT ( 39 , 23 ) ;
-		Size = MAP_APPFONT ( 225 , 69 ) ;
+		HelpID = "svx:ComboBox:RID_SVXDLG_IMAP:CBB_URL" ;
+		Pos = MAP_APPFONT ( 39, 23 ) ;
+		Size = MAP_APPFONT ( 225, 69 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		AutoSize = TRUE ;
@@ -200,17 +201,17 @@ ModelessDialog RID_SVXDLG_IMAP
 	};
 	FixedText FT_TEXT
 	{
-		Pos = MAP_APPFONT ( 6 , 43 ) ;
-		Size = MAP_APPFONT ( 30 , 12 ) ;
+		Pos = MAP_APPFONT ( 6, 43 ) ;
+		Size = MAP_APPFONT ( 30, 12 ) ;
 		Text [ en-US ] = "Text:" ;
 	};
 	Edit EDT_TEXT
 	{
-	    HelpID = "svx:Edit:RID_SVXDLG_IMAP:EDT_TEXT";
+		HelpID = "svx:Edit:RID_SVXDLG_IMAP:EDT_TEXT" ;
 		Border = TRUE ;
 		SVLook = TRUE ;
-		Pos = MAP_APPFONT ( 39 , 41 ) ;
-		Size = MAP_APPFONT ( 143 , 12 ) ;
+		Pos = MAP_APPFONT ( 39, 41 ) ;
+		Size = MAP_APPFONT ( 143, 12 ) ;
 		TabStop = TRUE ;
 		Left = TRUE ;
 	};
@@ -218,65 +219,65 @@ ModelessDialog RID_SVXDLG_IMAP
 
 	FixedText RID_SVXCTL_FT_TARGET
 	{
-		Pos = MAP_APPFONT ( 188 , 43 ) ;
-		Size = MAP_APPFONT ( 22 , 12 ) ;
+		Pos = MAP_APPFONT ( 188, 43 ) ;
+		Size = MAP_APPFONT ( 22, 12 ) ;
 		Text [ en-US ] = "Frame:" ;
 	};
 	 // nur temporaer
 	ComboBox RID_SVXCTL_CBB_TARGET
 	{
-	    HelpID = "svx:ComboBox:RID_SVXDLG_IMAP:RID_SVXCTL_CBB_TARGET";
+		HelpID = "svx:ComboBox:RID_SVXDLG_IMAP:RID_SVXCTL_CBB_TARGET" ;
 		Border = TRUE ;
 		Sort = TRUE ;
-		Pos = MAP_APPFONT ( 213 , 41 ) ;
-		Size = MAP_APPFONT ( 51 , 50 ) ;
+		Pos = MAP_APPFONT ( 213, 41 ) ;
+		Size = MAP_APPFONT ( 51, 50 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		HScroll = TRUE ;
 	};
 
 
-#define IMAPDLG_IDLIST \
-        IdList =            \
-        {                   \
-			TBI_APPLY ;	\
-			TBI_OPEN ;	\
-			TBI_SAVEAS ;	\
-			TBI_SELECT ;	\
-			TBI_RECT ;	\
-			TBI_CIRCLE ;	\
-			TBI_POLY ;	\
-			TBI_FREEPOLY ;	\
-			TBI_POLYEDIT ;	\
-			TBI_POLYMOVE ; \
+#define IMAPDLG_IDLIST			\
+		IdList =				\
+		{						\
+			TBI_APPLY ;			\
+			TBI_OPEN ;			\
+			TBI_SAVEAS ;		\
+			TBI_SELECT ;		\
+			TBI_RECT ;			\
+			TBI_CIRCLE ;		\
+			TBI_POLY ;			\
+			TBI_FREEPOLY ;		\
+			TBI_POLYEDIT ;		\
+			TBI_POLYMOVE ;		\
 			TBI_POLYINSERT ;	\
 			TBI_POLYDELETE ;	\
-			TBI_UNDO ;	\
-			TBI_REDO ;	\
-			TBI_ACTIVE ; \
-			TBI_MACRO ; \
-			TBI_PROPERTY ; \
-        };                 \
-        IdCount = { 17 ; };
+			TBI_UNDO ;			\
+			TBI_REDO ;			\
+			TBI_ACTIVE ;		\
+			TBI_MACRO ;			\
+			TBI_PROPERTY ;		\
+		};						\
+		IdCount = { 17 ; };
 
 	ImageList IL_IMAPDLG
 	{
-        Prefix = "id";
+		Prefix = "id" ;
 		MaskColor = Color { Red = 0xFFFF; Green = 0x0000; Blue = 0xFFFF; } ;
-        IMAPDLG_IDLIST
-    };
-    ImageList ILH_IMAPDLG
+		IMAPDLG_IDLIST
+	};
+	ImageList ILH_IMAPDLG
 	{
-        Prefix = "idh";
+		Prefix = "idh" ;
 		MaskColor = Color { Red = 0xFFFF; Green = 0x0000; Blue = 0xFFFF; } ;
-        IMAPDLG_IDLIST
-    };
+		IMAPDLG_IDLIST
+	};
 };
 Control RID_SVXCTL_IMAP
 {
 	Border = TRUE ;
 	SVLook = TRUE ;
-	Pos = MAP_APPFONT ( 6 , 56 ) ;
+	Pos = MAP_APPFONT ( 6, 56 ) ;
 	HelpId = HID_IMAPDLG_GRAPHWND ;
 };
 
@@ -346,7 +347,7 @@ Menu RID_SVXMN_IMAP
 		};
 		MenuItem
 		{
-            Identifier = MN_DELETE1 ;
+			Identifier = MN_DELETE1 ;
 			Text [ en-US ] = "~Delete" ;
 		};
 	};
@@ -356,10 +357,12 @@ Menu RID_SVXMN_IMAP
 
 String STR_IMAPDLG_SAVE
 {
-	Text [ en-US ] = "The ImageMap has been modified.\nDo you want to save the changes?";
+	Text [ en-US ] = "The ImageMap has been modified.\nDo you want to save the changes?" ;
 };
 
 String STR_IMAPDLG_MODIFY
 {
 	Text [ en-US ] = "The ImageMap has been modified.\nDo you want to save the changes?" ;
 };
+
+// ********************************************************************** EOF
