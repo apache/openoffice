@@ -1,3 +1,5 @@
+SConscript('solenv/SConscript', variant_dir=WORKDIR+'/scons/solenv', duplicate=0)
 SConscript('fileaccess/SConscript', variant_dir=WORKDIR+'/scons/fileaccess', duplicate=0)
 SConscript('store/SConscript', variant_dir=WORKDIR+'/scons/store', duplicate=0)
 SConscript('uui/SConscript', variant_dir=WORKDIR+'/scons/uui', duplicate=0)
+SConscript('xml2cmp/SConscript', variant_dir=WORKDIR+'/scons/xml2cmp', duplicate=0)
