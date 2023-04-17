@@ -2,7 +2,7 @@
 <helpdocument version="1.0">
 
 <!--***********************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -10,19 +10,17 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  ***********************************************************-->
-
-
 
 
 <meta>
@@ -39,7 +37,7 @@
          <bookmark_value>colors; grid lines and cells (Calc)</bookmark_value>
          <bookmark_value>page breaks; displaying (Calc)</bookmark_value>
          <bookmark_value>guides; showing (Calc)</bookmark_value>
-         <bookmark_value>handles; showing simple/large handles (Calc)</bookmark_value>
+         <bookmark_value>handles; showing large handles (Calc)</bookmark_value>
          <bookmark_value>displaying; zero values (Calc)</bookmark_value>
          <bookmark_value>zero values; displaying (Calc)</bookmark_value>
          <bookmark_value>tables in spreadsheets; value highlighting</bookmark_value>
@@ -59,7 +57,7 @@
          <bookmark_value>sheet tabs; displaying</bookmark_value>
          <bookmark_value>tabs; displaying sheet tabs</bookmark_value>
          <bookmark_value>outlines;outline symbols</bookmark_value>
-</bookmark><comment>MW copied "displaying;comments" over to  Calc guide note_insert.xhp and deleted "comments;displaying"</comment>
+</bookmark><comment>MW copied "displaying;comments" over to Calc guide note_insert.xhp and deleted "comments;displaying"</comment>
 <bookmark xml-lang="en-US" branch="hid/SC_HID_SCPAGE_CONTENT" id="bm_id3157898" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3150445" role="heading" level="1" l10n="U" oldref="1"><link href="text/shared/optionen/01060100.xhp" name="View">View</link></paragraph>
          <paragraph xml-lang="en-US" id="par_id3153988" role="paragraph" l10n="U" oldref="2"><ahelp hid="HID_SCPAGE_CONTENT">Defines which elements of the <item type="productname">%PRODUCTNAME</item> Calc main window are displayed. You can also show or hide highlighting of values in tables.</ahelp></paragraph>
@@ -86,10 +84,6 @@
 <paragraph xml-lang="en-US" id="hd_id3149669" role="heading" level="3" l10n="U"
                  oldref="36">Guides while moving</paragraph>
       <paragraph xml-lang="en-US" id="par_id3148550" role="paragraph" l10n="U" oldref="37"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_GUIDELINE">Specifies whether to view guides when moving drawings, frames, graphics and other objects.</ahelp> These guides help you align objects.</paragraph>
-<bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_HANDLES" id="bm_id3153380" localize="false"/>
-<paragraph xml-lang="en-US" id="hd_id3150358" role="heading" level="3" l10n="U"
-                 oldref="38">Simple handles</paragraph>
-      <paragraph xml-lang="en-US" id="par_id3154140" role="paragraph" l10n="U" oldref="39"><ahelp hid="SC_CHECKBOX_RID_SCPAGE_CONTENT_CB_HANDLES">Specifies whether to display the handles (the eight points on a selection box) as simple squares without 3D effect.</ahelp></paragraph>
 <bookmark xml-lang="en-US" branch="hid/sc:CheckBox:RID_SCPAGE_CONTENT:CB_BIGHANDLES" id="bm_id3151176" localize="false"/>
 <paragraph xml-lang="en-US" id="hd_id3149202" role="heading" level="3" l10n="U"
                  oldref="40">Large handles</paragraph>

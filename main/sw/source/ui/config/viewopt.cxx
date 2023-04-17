@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -223,25 +223,24 @@ SwViewOption::SwViewOption() :
 {
 	// Initialisierung ist jetzt etwas einfacher
 	// alle Bits auf 0
-    nCoreOptions =  
-        VIEWOPT_1_HARDBLANK | 
+    nCoreOptions =
+        VIEWOPT_1_HARDBLANK |
         VIEWOPT_1_SOFTHYPH |
         VIEWOPT_1_REF |
         VIEWOPT_1_GRAPHIC |
-        VIEWOPT_1_TABLE | 
-        VIEWOPT_1_DRAW | 
+        VIEWOPT_1_TABLE |
+        VIEWOPT_1_DRAW |
         VIEWOPT_1_CONTROL |
         VIEWOPT_1_PAGEBACK |
-        VIEWOPT_1_SOLIDMARKHDL | // default is enhanced handles
         VIEWOPT_1_POSTITS;
-    
-    nCore2Options = 
-        VIEWOPT_CORE2_BLACKFONT | 
+
+    nCore2Options =
+        VIEWOPT_CORE2_BLACKFONT |
         VIEWOPT_CORE2_HIDDENPARA |
         VIEWOPT_CORE2_BIGMARKHDL; // default is big handles
-    
-    nUIOptions = 
-        VIEWOPT_2_MODIFIED | 
+
+    nUIOptions =
+        VIEWOPT_2_MODIFIED |
         VIEWOPT_2_GRFKEEPZOOM |
         VIEWOPT_2_ANY_RULER;
 
