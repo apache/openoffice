@@ -96,7 +96,6 @@ SwContentOptPage::SwContentOptPage( Window* pParent,
 	SfxTabPage( pParent, SW_RES( TP_CONTENT_OPT ), rCoreSet ),
     aLineFL       ( this,   SW_RES( FL_LINE     ) ),
 	aCrossCB   	  ( this,	SW_RES( CB_CROSS     ) ),
-//	aSolidHandleCB( this, 	SW_RES( CB_HANDLE	) ),
 	aBigHandleCB  ( this, 	SW_RES( CB_BIGHANDLE) ),
 
     aWindowFL     ( this,   SW_RES( FL_WINDOW   ) ),
@@ -2619,5 +2618,4 @@ IMPL_LINK_INLINE_START( SwTestTabPage, AutoClickHdl, CheckBox *, EMPTYARG )
 }
 IMPL_LINK_INLINE_END( SwTestTabPage, AutoClickHdl, CheckBox *, EMPTYARG )
 #endif
-
 

@@ -312,6 +312,8 @@ IMPL_LINK( ScTpContentOptions, CBHdl, CheckBox*, pBtn )
 	else if ( &aBigHandleCB	 	== pBtn )	eOption = VOPT_BIGHANDLES;
 	else if ( &aRowColHeaderCB 	== pBtn )	eOption = VOPT_HEADER;
 
+	pLocalOptions->SetOption( eOption, bChecked );
+
 	return 0;
 }
 /*-----------------11.01.97 13.13-------------------
