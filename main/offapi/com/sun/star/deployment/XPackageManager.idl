@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -72,12 +72,12 @@ interface XPackageManager
     /** interface to notify disposing
      */
     interface com::sun::star::lang::XComponent;
-    
+
     /** interface to notify changes of the set of deployed packages of
         this manager
     */
     interface com::sun::star::util::XModifyBroadcaster;
-    
+
     /** returns the underlying deployment context, that is,
         the name of the repository..
 
@@ -85,27 +85,27 @@ interface XPackageManager
                 underlying deployment context
     */
     string getContext();
-    
+
     /** gets the supported <type>XPackageTypeInfo</type>s.
-        
+
         @return
                 supported <type>XPackageTypeInfo</type>s.
     */
     sequence<XPackageTypeInfo> getSupportedPackageTypes();
-    
+
     /** creates a command channel to be used to asynchronously abort a command.
-        
+
         @return
                 abort channel
     */
     com::sun::star::task::XAbortChannel createAbortChannel();
-    
+
     /** adds an UNO package.
 
         The properties argument is currently only used to suppress the license information
         for shared extensions.
-       
-        
+
+
         @param url
                package URL, must be UCB conform
         @param properties
@@ -134,11 +134,11 @@ interface XPackageManager
     /** adds an extension.
 
         This copies the extension. If it was from the same repository,
-        which is represented by this XPackageManager insterface, then
+        which is represented by this XPackageManager interface, then
         nothing happens.
-        
+
         @param extension
-               
+
         @param xAbortChannel
                abort channel to asynchronously abort the adding process,
                or null
@@ -154,9 +154,9 @@ interface XPackageManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
     /** removes an UNO package.
-        
+
         @param identifier
                package identifier
         @param fileName
@@ -175,9 +175,9 @@ interface XPackageManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
     /** gets a deployed package.
-        
+
         @param identifier
                package identifier
         @param fileName
@@ -194,9 +194,9 @@ interface XPackageManager
         raises (DeploymentException,
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
     /** gets all currently deployed packages.
-        
+
         @param xAbortChannel
                abort channel to asynchronously abort the removing process,
                or null
@@ -212,14 +212,14 @@ interface XPackageManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
     /** Expert feature: erases the underlying registry cache and reinstalls
-        all previously added packages.  Please keep in mind that all
+        all previously added packages. Please keep in mind that all
         registration status get lost.
         <p>
         Please use this in case of suspected cache inconsistencies only.
         </p>
-        
+
         @param xAbortChannel
                abort channel to asynchronously abort the adding process
         @param xCmdEnv
@@ -261,21 +261,21 @@ interface XPackageManager
             removed extensions which must be revoked
        @return
             If true - then at least one extension was removed or added. Otherwise
-            nothing was chaned.
+            nothing was changed.
     */
     boolean synchronize([in] com::sun::star::task::XAbortChannel xAbortChannel,
                      [in] com::sun::star::ucb::XCommandEnvironment xCmdEnv )
         raises (DeploymentException,
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException);
-    
+
 
     /** returns all extensions which are currently not in use
         because the user did not accept the license.
 
         The function will not return any object for the user repository, because
         a user extension will not be kept in the user repository if its license
-        is declined. Only extensions which are registered at start-up of OOo,
+        is declined. Only extensions which are registered at start-up of AOO,
         that is, shared and bundled extensions, can be returned.
 
         Extensions which allow the license to be suppressed, that is, it does not
@@ -289,7 +289,7 @@ interface XPackageManager
     /** checks if the extension can be used.
 
         The extension must be managed by this package manager, that is, it must
-        be recorded in its database.  The package manager calls
+        be recorded in its database. The package manager calls
         XPackage::checkPrerequisites and updates its data base with the
         result. The result, which is from <type>Prerequisites</type> will be
         returned.

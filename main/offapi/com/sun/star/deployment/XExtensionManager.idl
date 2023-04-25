@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,7 +39,7 @@ module com { module sun { module star { module deployment {
 
 /** The <type>XExtensionManager</type> interface is used to manage extensions
     in the user, shared and bundled repository.
-    
+
     @see ExtensionManager
     @since OpenOffice 3.3
 */
@@ -48,32 +48,32 @@ interface XExtensionManager
     /** interface to notify disposing
      */
     interface com::sun::star::lang::XComponent;
-    
+
     /** interface to notify changes of the set of deployed packages of
         this manager
     */
     interface com::sun::star::util::XModifyBroadcaster;
-    
-    
+
+
     /** gets the supported <type>XPackageTypeInfo</type>s.
-        
+
         @return
                 supported <type>XPackageTypeInfo</type>s.
     */
     sequence<XPackageTypeInfo> getSupportedPackageTypes();
-    
+
     /** creates a command channel to be used to asynchronously abort a command.
-        
+
         @return
                 abort channel
     */
     com::sun::star::task::XAbortChannel createAbortChannel();
-    
+
     /** adds an extension.
 
         The properties argument is currently only used to suppress the license information
         for shared extensions.
-        
+
         @param url
                package URL, must be UCB conform
         @param properties
@@ -87,7 +87,7 @@ interface XExtensionManager
         @param xCmdEnv
                command environment for error and progress handling
         @return
-               object representing the extension.                
+               object representing the extension.
     */
     XPackage addExtension( [in] string url,
                            [in] sequence<com::sun::star::beans::NamedValue> properties,
@@ -98,9 +98,9 @@ interface XExtensionManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
     /** removes an extension.
-        
+
         @param identifier
                package identifier
         @param fileName
@@ -123,15 +123,15 @@ interface XExtensionManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::ucb::CommandAbortedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
 
     /** enable an extension.
 
         If the extension is not from the user repository then an
         IllegalArgumentException is thrown.
-        
+
         @param extension
-               the extension which is to be enabled. 
+               the extension which is to be enabled.
         @param xAbortChannel
                abort channel to asynchronously abort the removing process,
                or null
@@ -151,7 +151,7 @@ interface XExtensionManager
 
         If the extension is not from the user repository then an
         IllegalArgumentException is thrown.
-        
+
         @param extension
                the extension which is to be disabled
         @param xAbortChannel
@@ -171,7 +171,7 @@ interface XExtensionManager
 
     /** gets all currently installed extensions, including disabled
         user extensions.
-        
+
         @param repository
                the repository from which the extensions are returned
         @param xAbortChannel
@@ -194,7 +194,7 @@ interface XExtensionManager
 
     /** gets an installed extensions.
 
-        @param repositroy
+        @param repository
                the name of the repository
         @param identifier
                extension identifier
@@ -214,7 +214,7 @@ interface XExtensionManager
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::lang::IllegalArgumentException);
 
-    /** gets all extensions with the same identifer from all repositories.
+    /** gets all extensions with the same identifier from all repositories.
 
         The extension at the first position in the returned sequence represents
         the extension from the user repository. The next element is from the shared
@@ -229,12 +229,12 @@ interface XExtensionManager
         raises (DeploymentException,
                 com::sun::star::ucb::CommandFailedException,
                 com::sun::star::lang::IllegalArgumentException);
-    
+
 
     /** returns a sequence containing all installed extensions.
 
         The members of the returned sequence correspond to an extension with a
-        particular extension identifer. The members are also sequences which
+        particular extension identifier. The members are also sequences which
         contain as many elements as there are repositories. Those are ordered
         according to the priority of the repository. That is, the first member
         is the extension from the user repository, the second is from the shared
@@ -255,7 +255,7 @@ interface XExtensionManager
         <p>
         Please use this in case of suspected cache inconsistencies only.
         </p>
-        @param repositroy
+        @param repository
                the name of the repository
         @param xAbortChannel
                abort channel to asynchronously abort the adding process
@@ -273,16 +273,16 @@ interface XExtensionManager
 
 
     /** synchronizes the extension database with the contents of the extensions
-       folder of shared and bundled extensinos.
+       folder of shared and bundled extensions.
 
        Added extensions will be added to the database and removed extensions
        will be removed from the database.
        The active extensions are determined. That is, shared or bundled extensions
-       are not necessaryly registered (<member>XPackage::registerPackage</member>).
-       
+       are not necessarily registered (<member>XPackage::registerPackage</member>).
+
        @return
               If true - then at least one extension was removed or added. Otherwise
-              nothing was chaned.
+              nothing was changed.
     */
     boolean synchronize(
         [in] com::sun::star::task::XAbortChannel xAbortChannel,
@@ -301,7 +301,7 @@ interface XExtensionManager
        The active extensions are NOT determined, because this function only works
        with bundled extensions.
 
-       This function is intended to be called during the installation of OOo.
+       This function is intended to be called during the installation of AOO.
        OpenOffice will copy parts of the registration data folder to the user installation at the
        first startup.
     */
@@ -317,7 +317,7 @@ interface XExtensionManager
 
         The function will not return any object for the user repository, because
         a user extension will not be kept in the user repository if its license
-        is declined. Only extensions which are registered at start-up of OOo,
+        is declined. Only extensions which are registered at start-up of AOO,
         that is, shared and bundled extensions, can be returned.
 
         Extensions which allow the license to be suppressed, that is, it does not
