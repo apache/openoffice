@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -54,7 +54,7 @@ import com.sun.star.uno.UnoRuntime;
 * <ul> <p>
 * The following predefined files needed to complete the test:
 * <ul>
-*  <li> <code>XDocumentInsertable.sxw</code> : StarWriter document
+*  <li> <code>XDocumentInsertable.sxw</code> : Writer document
 *    which content started with 'XDocumentInsertable test.' string.
 *    The file is needed if no other file name specified by relation.
 *    </li>
@@ -77,15 +77,15 @@ public class _XDocumentInsertable extends MultiMethodTest {
      */
     public static abstract class InsertChecker {
         /**
-         * Must be overriden to check if document was
+         * Must be overridden to check if document was
          * successfully inserted.
          * @return <code>true</code> if document was inserted.
          */
         public abstract boolean isInserted() ;
         /**
-         * Can be overriden to specify different than default
+         * Can be overridden to specify different than default
          * document name. This document must be situated in
-         * the test document disrectory, and its name must
+         * the test document directory, and its name must
          * be specified relational to this directory. By
          * default 'XDocumentInsertable.swx' file name returned.
          * @return File name of the document to be inserted.
@@ -165,15 +165,15 @@ public class _XDocumentInsertable extends MultiMethodTest {
             ex.printStackTrace(log);
             result = false ;
         }
-        
+
         try {
             PropertyValue [] szEmptyArgs = new PropertyValue [0];
             String docURL = "file:///c:/ThisIsAnInvaldURL";
             log.println("Inserting document from URL '" + docURL + "'");
             oObj.insertDocumentFromURL(docURL, szEmptyArgs);
-            
+
             result=false;
-            
+
         } catch (IOException ex) {
             log.println("expected exception was thrown -> ok");
         } catch (com.sun.star.lang.IllegalArgumentException ex) {
@@ -183,12 +183,11 @@ public class _XDocumentInsertable extends MultiMethodTest {
 
         tRes.tested("insertDocumentFromURL()", result);
     }
-    
+
     /**
     * Forces environment recreation.
     */
     protected void after() {
         disposeEnvironment();
-    }        
+    }
 }  // finish class _XDocumentInsertable
-

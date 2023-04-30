@@ -128,7 +128,7 @@ using namespace ::com::sun::star::beans;
 void MyOutputDebugString( char *s) { OutputDebugString( s ); }
 #endif
 
-// misssing prototypes and constants for LayeredWindows
+// missing prototypes and constants for LayeredWindows
 extern "C" {
     //WINUSERAPI sal_Bool WINAPI SetLayeredWindowAttributes(HWND,COLORREF,BYTE,DWORD);
     typedef sal_Bool ( WINAPI * SetLayeredWindowAttributes_Proc_T ) (HWND,COLORREF,BYTE,DWORD);
@@ -2959,7 +2959,7 @@ void WinSalFrame::UpdateSettings( AllSettings& rSettings )
     GetSalData()->mbThemeMenuSupport = FALSE;
     aStyleSettings.SetMenuColor( ImplWinColorToSal( GetSysColor( COLOR_MENU ) ) );
     aStyleSettings.SetMenuBarColor( aStyleSettings.GetMenuColor() );
-    aStyleSettings.SetMenuBorderColor( aStyleSettings.GetLightBorderColor() ); // overriden below for flat menus
+    aStyleSettings.SetMenuBorderColor( aStyleSettings.GetLightBorderColor() ); // overridden below for flat menus
     aStyleSettings.SetUseFlatBorders( FALSE );
     aStyleSettings.SetUseFlatMenues( FALSE );
     aStyleSettings.SetMenuTextColor( ImplWinColorToSal( GetSysColor( COLOR_MENUTEXT ) ) );
@@ -6486,3 +6486,5 @@ bool WNTEnableAccessInterface(bool bEnable)
 	return bPreVal;
 }
 #endif
+
+/* vim: set noet sw=4 ts=4: */

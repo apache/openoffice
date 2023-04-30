@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -39,11 +39,11 @@ namespace vos
 extern "C" typedef void ThreadWorkerFunction_impl(void *);
 ThreadWorkerFunction_impl threadWorkerFunction_impl;
 
-/** OThread is an objectoriented interface for threads.
+/** OThread is an object oriented interface for threads.
 	This class should be the base class for all objects using threads. The
-	main working function is the run() method and should be overriden in the
+	main working function is the run() method and should be overridden in the
 	derived class. To support soft termination of a thread, yield() should
-	be called in regular intervalls and the return value should be checked.
+	be called in regular intervals and the return value should be checked.
 	If yield returned False the run method should return.
 
 	@author  Bernd Hofner
@@ -55,7 +55,7 @@ class VOS_DLLPUBLIC OThread : public vos::IRunnable,
 {
 
 	VOS_DECLARE_CLASSINFO(VOS_NAMESPACE(OThread, vos));
-    
+
     oslCondition m_aCondition;
 
 public:
@@ -71,10 +71,10 @@ public:
 		TPriority_Unknown     = osl_Thread_PriorityUnknown
 	};
 
-	/** 
+	/**
 	*/
-	enum TThreadSleep 
-	{   
+	enum TThreadSleep
+	{
 		TSleep_Normal,
 		TSleep_Cancel,
 		TSleep_Pending,
@@ -85,8 +85,8 @@ public:
 
 	typedef oslThreadIdentifier TThreadIdentifier;
 
-	/// Constructor 
-	OThread();              
+	/// Constructor
+	OThread();
 
 	/// Destructor kills thread if necessary
 	virtual ~OThread();
@@ -101,7 +101,7 @@ public:
 	*/
 	sal_Bool SAL_CALL createSuspended();
 
-	/// Suspend a runnng thread
+	/// Suspend a running thread
 	void SAL_CALL suspend();
 
 	/// Resume a suspended thread
@@ -121,7 +121,7 @@ public:
 	/// Check if thread is running.
 	sal_Bool SAL_CALL isRunning();
 
-	/** Change thread priority. 
+	/** Change thread priority.
 		The valid priority levels are:
 	<ul>
 		<li>ThreadPriorityHighest,
@@ -133,7 +133,7 @@ public:
 	*/
 	void SAL_CALL setPriority(TThreadPriority Priority);
 
-	/** Query thread priority. 
+	/** Query thread priority.
 		Valid return values are:
 	<ul>
 		<li>ThreadPriorityHighest,
@@ -150,25 +150,25 @@ public:
 
 	static TThreadIdentifier SAL_CALL getCurrentIdentifier();
 
-	/** Let thread sleep a specified amout of time.
+	/** Let thread sleep a specified amount of time.
 		@param Delay specifies the number of time to sleep.
 	*/
 	TThreadSleep SAL_CALL sleep(const TimeValue& Delay);
 
-	/** Awake the sleeping thread. 
-		@returns False if at least one of the handles is invalid 
-		or the thread is not sleeping. 
+	/** Awake the sleeping thread.
+		@returns False if at least one of the handles is invalid
+		or the thread is not sleeping.
 	*/
 	sal_Bool SAL_CALL awake();
 
-	/** Let current thread wait a specified amout of time.
+	/** Let current thread wait a specified amount of time.
 		@param Delay specifies the number of time
 		to wait. Note, if you need to interrupt the waiting operation
 		use sleep instead.
 	*/
 	static void SAL_CALL wait(const TimeValue& Delay);
 
-	/** Reschedules threads. 
+	/** Reschedules threads.
 		Call within your loop if you
 		want other threads offer some processing time.
 		This method is static, so it might be used by the
@@ -188,7 +188,7 @@ protected:
 	*/
 	virtual sal_Bool SAL_CALL schedule();
 
-	/** Called when run() is done. 
+	/** Called when run() is done.
 		You might want to override it to do some cleanup.
 	*/
 	virtual void SAL_CALL onTerminated();
@@ -205,10 +205,10 @@ class VOS_DLLPUBLIC OThreadData : public vos::OObject
 	VOS_DECLARE_CLASSINFO(VOS_NAMESPACE(OThreadData, vos));
 
 public:
-	/// Create a thread specific local data key 
-	OThreadData( oslThreadKeyCallbackFunction = 0 );              
+	/// Create a thread specific local data key
+	OThreadData( oslThreadKeyCallbackFunction = 0 );
 
-	/// Destroy a thread specific local data key 
+	/// Destroy a thread specific local data key
 	virtual ~OThreadData();
 
 	/** Set the data associated with the data key.
@@ -217,7 +217,7 @@ public:
 	sal_Bool SAL_CALL setData(void *pData);
 
 	/** Get the data associated with the data key.
-		@returns The data asscoitaed with the data key or 
+		@returns The data associated with the data key or
 		NULL if no data was set
 	*/
 	void* SAL_CALL getData();
@@ -229,4 +229,3 @@ protected:
 }
 
 #endif // _VOS_THREAD_HXX_
-

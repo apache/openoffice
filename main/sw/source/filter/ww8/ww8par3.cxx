@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -86,7 +86,7 @@
 #include "writerhelper.hxx"
 #include "writerwordglue.hxx"
 #include "ww8par.hxx"
-#include "ww8par2.hxx"  // wg. Listen-Attributen in Styles
+#include "ww8par2.hxx" // wg. Listen-Attributen in Styles
 
 #include <IMark.hxx>
 #include <unotools/fltrcfg.hxx>
@@ -104,7 +104,7 @@ using namespace sw::mark;
 //            UNO-Controls
 //-----------------------------------------
 
-//cmc, OCX i.e. word 97 form controls
+//cmc, OCX i.e. Word 97 form controls
 eF_ResT SwWW8ImplReader::Read_F_OCX( WW8FieldDesc*, String& )
 {
     if( bObj && nPicLocFc )
@@ -124,9 +124,9 @@ eF_ResT SwWW8ImplReader::Read_F_FormTextBox( WW8FieldDesc* pF, String& rStr )
     /* #80205#
     Here we have a small complication. This formula control contains
     the default text that is displayed if you edit the form field in
-    the "default text" area. But MSOffice does not display that
+    the "default text" area. But MS Office does not display that
     information, instead it display the result of the field,
-    MSOffice just uses the default text of the control as its
+    MS Office just uses the default text of the control as its
     initial value for the displayed default text. So we will swap in
     the field result into the formula here in place of the default
     text.
@@ -170,7 +170,7 @@ eF_ResT SwWW8ImplReader::Read_F_FormTextBox( WW8FieldDesc* pF, String& rStr )
             String aBookmarkFind=pB->GetBookmark(currentCP-1, currentCP+currentLen-1, bkmFindIdx);
 
             if (aBookmarkFind.Len()>0) {
-                pB->SetStatus(bkmFindIdx, BOOK_FIELD); // mark bookmark as consumed, such that tl'll not get inserted as a "normal" bookmark again
+                pB->SetStatus(bkmFindIdx, BOOK_FIELD); // mark bookmark as consumed, such that it will not get inserted as a "normal" bookmark again
                 if (aBookmarkFind.Len()>0) {
                     aBookmarkName=aBookmarkFind;
                 }
@@ -274,7 +274,7 @@ eF_ResT SwWW8ImplReader::Read_F_FormListBox( WW8FieldDesc* pF, String& rStr)
         if (!aFormula.maListEntries.empty())
         {
             aFld.SetItems(aFormula.maListEntries);
-            int nIndex = aFormula.fDropdownIndex  < aFormula.maListEntries.size() ? aFormula.fDropdownIndex : 0;
+            int nIndex = aFormula.fDropdownIndex < aFormula.maListEntries.size() ? aFormula.fDropdownIndex : 0;
             aFld.SetSelectedItem(aFormula.maListEntries[nIndex]);
         }
 
@@ -317,7 +317,7 @@ eF_ResT SwWW8ImplReader::Read_F_FormListBox( WW8FieldDesc* pF, String& rStr)
                 uno::Sequence< ::rtl::OUString > vListEntries(aFormula.maListEntries.size());
                 ::std::copy(aFormula.maListEntries.begin(), aFormula.maListEntries.end(), ::comphelper::stl_begin(vListEntries));
                 (*pFieldmark->GetParameters())[::rtl::OUString::createFromAscii(ODF_FORMDROPDOWN_LISTENTRY)] = uno::makeAny(vListEntries);
-                sal_Int32 nIndex = aFormula.fDropdownIndex  < aFormula.maListEntries.size() ? aFormula.fDropdownIndex : 0;
+                sal_Int32 nIndex = aFormula.fDropdownIndex < aFormula.maListEntries.size() ? aFormula.fDropdownIndex : 0;
                 (*pFieldmark->GetParameters())[::rtl::OUString::createFromAscii(ODF_FORMDROPDOWN_RESULT)] = uno::makeAny(nIndex);
                 // set field data here...
             }
@@ -396,11 +396,11 @@ struct WW8LFOLVL
     long nStartAt;          // start-at value if bFormat==false and bStartAt == true
                                             // (if bFormat==true, the start-at is stored in the LVL)
     sal_uInt8 nLevel;               // the level to be overridden
-    // dieses Byte ist _absichtlich_ nicht in das folgende Byte hineingepackt   !!
+    // dieses Byte ist _absichtlich_ nicht in das folgende Byte hineingepackt!
     // (siehe Kommentar unten bei struct WW8LFOInfo)
 
     sal_uInt8 bStartAt :1;       // true if the start-at value is overridden
-    sal_uInt8 bFormat :1;        // true if the formatting is overriden
+    sal_uInt8 bFormat :1;        // true if the formatting is overridden
 
     WW8LFOLVL() :
         nStartAt(1), nLevel(0), bStartAt(1), bFormat(0) {}
@@ -425,7 +425,7 @@ struct WW8LSTInfo   // sortiert nach nIdLst (in WW8 verwendete Listen-Id)
         : pNumRule(pNumRule_), nIdLst(aLST.nIdLst),
         bSimpleList(aLST.bSimpleList), bUsedInDoc(0)
     {
-        memcpy( aIdSty, aLST.aIdSty, sizeof( aIdSty   ));
+        memcpy( aIdSty, aLST.aIdSty, sizeof( aIdSty ));
         memset(&aItemSet, 0,  sizeof( aItemSet ));
         memset(&aCharFmt, 0,  sizeof( aCharFmt ));
     }
@@ -545,7 +545,7 @@ bool WW8ListManager::ReadLVL(
     SvxAdjust       eAdj;               // Ausrichtung (Links/rechts/zent.)
     sal_Unicode     cBullet(0x2190);    // default safe bullet
 
-    sal_Unicode     cGrfBulletCP(USHRT_MAX); 
+    sal_Unicode     cGrfBulletCP(USHRT_MAX);
 
     String          sPrefix;
     String          sPostfix;
@@ -623,7 +623,7 @@ bool WW8ListManager::ReadLVL(
             sal_uInt8 *pBegin = pSprm-2;
             for(int i=0;i<4;++i)
                 rParaSprms.push_back(*pBegin++);
-            aLVL.nDxaLeft1 = SVBT16ToShort(  pSprm );
+            aLVL.nDxaLeft1 = SVBT16ToShort( pSprm );
         }
 
         // --> OD 2008-06-04 #i86652# - read tab setting
@@ -692,17 +692,17 @@ bool WW8ListManager::ReadLVL(
     //
 	sal_uInt16 nWitchPicIsBullet = USHRT_MAX;
 	bool bIsPicBullet = false;
-	
+
     if( aLVL.nLenGrpprlChpx )
     {
         sal_uInt8 aGrpprlChpx[ 255 ];
         memset(&aGrpprlChpx, 0, sizeof( aGrpprlChpx ));
         if(aLVL.nLenGrpprlChpx != rSt.Read(&aGrpprlChpx, aLVL.nLenGrpprlChpx))
             return false;
-		
+
 	//For i120928,parse the graphic info of bullets
 	sal_uInt8 *pSprmWhichPis = GrpprlHasSprm(0x6887,aGrpprlChpx[0],aLVL.nLenGrpprlChpx);
-	sal_uInt8 *pSprmIsPicBullet = GrpprlHasSprm(0x4888,aGrpprlChpx[0],aLVL.nLenGrpprlChpx);	
+	sal_uInt8 *pSprmIsPicBullet = GrpprlHasSprm(0x4888,aGrpprlChpx[0],aLVL.nLenGrpprlChpx);
 	if (pSprmWhichPis)
 	{
 		nWitchPicIsBullet = *pSprmWhichPis;
@@ -711,7 +711,7 @@ bool WW8ListManager::ReadLVL(
 	{
 		bIsPicBullet = (*pSprmIsPicBullet) & 0x0001;
 	}
-	
+
         // neues ItemSet fuer die Zeichenattribute anlegen
         rpItemSet = new SfxItemSet( rDoc.GetAttrPool(), RES_CHRATR_BEGIN,
             RES_CHRATR_END - 1 );
@@ -795,11 +795,11 @@ bool WW8ListManager::ReadLVL(
         case 35:
         case 36:
         case 37:
-        case 39: 		
+        case 39:
                     nType = style::NumberingType::NUMBER_LOWER_ZH ;	break;
         case 34: 	nType = style::NumberingType::NUMBER_UPPER_ZH_TW ;	break;
         case 38: 	nType = style::NumberingType::NUMBER_UPPER_ZH ;	break;
-        case 10: 		
+        case 10:
         case 11:
                     nType = style::NumberingType::NUMBER_TRADITIONAL_JA ;	break;
         case 20: 	nType = style::NumberingType::AIU_FULLWIDTH_JA ;	break;
@@ -810,14 +810,14 @@ bool WW8ListManager::ReadLVL(
         case 25:	nType = style::NumberingType::HANGUL_JAMO_KO;		break;
         case 41:	nType = style::NumberingType::NUMBER_HANGUL_KO; break;
         case 44:	nType = style::NumberingType::NUMBER_UPPER_KO; break;
-	
+
         default:
             // take default
         nType = style::NumberingType::ARABIC;
         break;
     }
 
-    //If a number level is not going to be used, then record this fact
+    // If a number level is not going to be used, then record this fact
     if (style::NumberingType::NUMBER_NONE == nType)
         rNotReallyThere[nLevel] = true;
 
@@ -880,9 +880,9 @@ bool WW8ListManager::ReadLVL(
 
         if (!cBullet)  // unsave control code?
             cBullet = 0x2190;
-    }	else if (style::NumberingType::BITMAP == nType)	//For i120928,position index info of graphic
+    }	else if (style::NumberingType::BITMAP == nType)	//For i120928, position index info of graphic
 	{
-		cGrfBulletCP = nWitchPicIsBullet;       // This is a bullet picture ID	
+		cGrfBulletCP = nWitchPicIsBullet;       // This is a bullet picture ID
 	} else
     {
         /*
@@ -933,7 +933,7 @@ bool WW8ListManager::ReadLVL(
             eAdj = SVX_ADJUST_LEFT;
             break;
          default:
-            // undefied value
+            // undefined value
             ASSERT( sal_False, "Value of aLVL.nAlign is not supported" );
             // take default
             eAdj = SVX_ADJUST_LEFT;
@@ -954,7 +954,7 @@ bool WW8ListManager::ReadLVL(
         // SetBulletFont() rufen !!!
     }
 	//For i120928,position index info
-	else if (style::NumberingType::BITMAP == nType)	
+	else if (style::NumberingType::BITMAP == nType)
 	{
 		rNumFmt.SetGrfBulletCP(cGrfBulletCP);
 	}
@@ -1089,7 +1089,7 @@ void WW8ListManager::AdjustLVL( sal_uInt8 nLevel, SwNumRule& rNumRule,
         // Style an das NumFormat haengen
         //
         aNumFmt.SetCharFmt( pFmt );
-    }	
+    }
 	//Modify for #119405 by chengjh, 2012-08-16
 	//Ensure the default char fmt is initialized for any level of num ruler if no customized attr
 	else
@@ -1099,7 +1099,7 @@ void WW8ListManager::AdjustLVL( sal_uInt8 nLevel, SwNumRule& rNumRule,
 		{
 			String aName( sPrefix.Len() ? sPrefix : rNumRule.GetName() );
 	            	(aName += 'z') += String::CreateFromInt32( nLevel );
-	            	
+
 	            	pFmt = rDoc.MakeCharFmt(aName, (SwCharFmt*)rDoc.GetDfltCharFmt());
 	            	bNewCharFmtCreated = true;
 			rCharFmt[ nLevel ] = pFmt;
@@ -1234,7 +1234,7 @@ WW8ListManager::WW8ListManager(
 
             /*
             #i1869#
-            In word 2000 microsoft got rid of creating new "simple lists" with
+            In Word 2000 Microsoft got rid of creating new "simple lists" with
             only 1 level, all new lists are created with 9 levels. To hack it
             so that the list types formerly known as simple lists still have
             their own tab page to themselves one of the reserved bits is used
@@ -1358,8 +1358,8 @@ WW8ListManager::WW8ListManager(
             WW8LFOInfo* pLFOInfo = new WW8LFOInfo(aLFO);
             if ( pParentListInfo != NULL )
             {
-                //Copy the basic paragraph properties for each level from the
-                //original list into the list format override levels.
+                // Copy the basic paragraph properties for each level from the
+                // original list into the list format override levels.
                 int nMaxSize = pParentListInfo->maParaSprms.size();
                 pLFOInfo->maParaSprms.resize(nMaxSize);
                 for (int i = 0; i < nMaxSize; ++i)
@@ -1437,7 +1437,7 @@ WW8ListManager::WW8ListManager(
                 //2.2.2.0 skip inter-group of override header ?
                 //See #i25438# for why I moved this here, compare
                 //that original bugdoc's binary to what it looks like
-                //when resaved with word, i.e. there is always a
+                //when resaved with Word, i.e. there is always a
                 //4 byte header, there might be more than one if
                 //that header was 0xFFFFFFFF, e.g. #114412# ?
                 sal_uInt32 nTest;
@@ -1616,7 +1616,7 @@ bool IsEqualFormatting(const SwNumRule &rOne, const SwNumRule &rTwo)
     {
         for (sal_uInt8 n = 0; n < MAXLEVEL; ++n )
         {
-            //The SvxNumberFormat compare, not the SwNumFmt compare
+            // The SvxNumberFormat compare, not the SwNumFmt compare
             const SvxNumberFormat &rO = rOne.Get(n);
             const SvxNumberFormat &rT = rTwo.Get(n);
             if (!(rO == rT))
@@ -1662,14 +1662,14 @@ SwNumRule* WW8ListManager::GetNumRuleForActivation(sal_uInt16 nLFOPosition,
     nLastLFOPosition = nLFOPosition;
     /*
     #i1869#
-    If this list has had its bits set in word 2000 to pretend that it is a
+    If this list has had its bits set in Word 2000 to pretend that it is a
     simple list from the point of view of the user, then it is almost
     certainly a simple continuous list, and we will try to keep it like that.
     Otherwise when we save again it will be shown as the true outline list
     that it is, confusing the user that just wanted what they thought was a
-    simple list. On the otherhand it is possible that some of the other levels
+    simple list. On the other hand it is possible that some of the other levels
     were used by the user, in which case we will not pretend anymore that it
-    is a simple list. Something that word 2000 does anyway, that 97 didn't, to
+    is a simple list. Something that Word 2000 does anyway, that 97 didn't, to
     my bewilderment.
     */
     if (nLevel && pLFOInfo->pNumRule->IsContinusNum())
@@ -1707,7 +1707,7 @@ SwNumRule* WW8ListManager::GetNumRuleForActivation(sal_uInt16 nLFOPosition,
             bool bNoChangeFromParent =
                 IsEqualFormatting(*pRet, *(pParentListInfo->pNumRule));
 
-            //If so then I think word still uses the parent (maybe)
+            // If so then I think Word still uses the parent (maybe)
             if (bNoChangeFromParent)
             {
                 pRet = pParentListInfo->pNumRule;
@@ -1744,7 +1744,7 @@ SwNumRule* WW8ListManager::GetNumRuleForActivation(sal_uInt16 nLFOPosition,
     {
         pNode->SetAttrListLevel(nLevel);
 
-        if (bRestart || bNewstart)   //#112466# (I think)
+        if (bRestart || bNewstart) // #112466# (I think)
             pNode->SetListRestart(true);
         if (bNewstart)
             pNode->SetAttrListRestartValue(nStart);
@@ -1841,7 +1841,7 @@ void SwWW8ImplReader::SetStylesList(
                  (WW8ListManager::nMaxLevel > nActLevel)
                )
             {
-                rStyleInf.nLFOIndex  = nActLFO;
+                rStyleInf.nLFOIndex = nActLFO;
                 rStyleInf.nListLevel = nActLevel;
 
                 if (
@@ -1866,14 +1866,14 @@ void SwWW8ImplReader::RegisterNumFmtOnStyle( sal_uInt16 nStyle )
     SwWW8StyInf &rStyleInf = pCollA[nStyle];
     if (rStyleInf.bValid && rStyleInf.pFmt)
     {
-        //Save old pre-list modified indent, which are the word indent values
+        // Save old pre-list modified indent, which are the word indent values
         rStyleInf.maWordLR =
             ItemGet<SvxLRSpaceItem>(*rStyleInf.pFmt, RES_LR_SPACE);
 
         // Phase 2: aktualisieren der StyleDef nach einlesen aller Listen
         SwNumRule* pNmRule = 0;
         const sal_uInt16 nLFO = rStyleInf.nLFOIndex;
-        const sal_uInt8  nLevel = rStyleInf.nListLevel;
+        const sal_uInt8 nLevel = rStyleInf.nListLevel;
         if (
              (USHRT_MAX > nLFO) &&
              (WW8ListManager::nMaxLevel > nLevel)
@@ -1966,14 +1966,14 @@ void SwWW8ImplReader::RegisterNumFmtOnTxtNode(
                 /*
                  Take the original paragraph sprms attached to this list level
                  formatting and apply them to the paragraph. I'm convinced that
-                 this is exactly what word does.
+                 this is exactly what Word does.
                 */
                 if (short nLen = static_cast< short >(aParaSprms.size()))
                 {
                     SfxItemSet* pOldAktItemSet = pAktItemSet;
                     SetAktItemSet(&aListIndent);
 
-                    sal_uInt8* pSprms1  = &aParaSprms[0];
+                    sal_uInt8* pSprms1 = &aParaSprms[0];
                     while (0 < nLen)
                     {
                         sal_uInt16 nL1 = ImportSprm(pSprms1);
@@ -2031,9 +2031,9 @@ void SwWW8ImplReader::Read_ListLevel(sal_uInt16, const sal_uInt8* pData,
             /*
             #94672#
             if this is the case, then if the numbering is actually stored in
-            winword 6 format, and its likely that sprmPIlvl has been abused
+            WinWord 6 format, and its likely that sprmPIlvl has been abused
             to set the ww6 list level information which we will need when we
-            reach the true ww6 list def.  So set it now
+            reach the true ww6 list def. So set it now
             */
             pStyles->nWwNumLevel = nListLevel;
         }
@@ -2089,7 +2089,7 @@ void SwWW8ImplReader::Read_LFOPosition(
         {
             /*
             #94672# discussion
-            If you have a paragraph in word with left and/or hanging indent
+            If you have a paragraph in Word with left and/or hanging indent
             and remove its numbering, then the indentation appears to get
             reset, but not back to the base style, instead its goes to a blank
             setting.
@@ -2101,7 +2101,7 @@ void SwWW8ImplReader::Read_LFOPosition(
             if (pAktColl)
             {
                 pAktColl->SetFmtAttr(*GetDfltAttr( RES_PARATR_NUMRULE));
-                pAktColl->SetFmtAttr(SvxLRSpaceItem(RES_LR_SPACE));    //#94672#
+                pAktColl->SetFmtAttr(SvxLRSpaceItem(RES_LR_SPACE)); // #94672#
             }
             else if (SwTxtNode* pTxtNode = pPaM->GetNode()->GetTxtNode())
             {
@@ -2144,9 +2144,9 @@ void SwWW8ImplReader::Read_LFOPosition(
             /*
             #94672#
             If we are a ww8+ style with ww7- style lists then there is a
-            bizarre broken word bug where when the list is removed from a para
+            bizarre broken Word bug where when the list is removed from a para
             the ww6 list first line indent still affects the first line
-            indentation.  Setting this flag will allow us to recover from this
+            indentation. Setting this flag will allow us to recover from this
             braindeadness
             */
             if ( pAktColl
@@ -2158,7 +2158,7 @@ void SwWW8ImplReader::Read_LFOPosition(
             // die Streamdaten sind hier 1 basiert, wir ziehen EINS ab
             if (USHRT_MAX > nLFOPosition)
             {
-                if (nLFOPosition != 2047-1) //Normal ww8+ list behaviour
+                if (nLFOPosition != 2047-1) // Normal ww8+ list behavior
                 {
                     if ( nListLevel == WW8ListManager::nMaxLevel )
                     {
@@ -2202,7 +2202,7 @@ bool SwWW8ImplReader::ImportFormulaControl(WW8FormulaControl &aFormula,
      * Doing so will set the nPicLocFc to the offset to find the hypertext
      * data in the data stream.
      */
-    WW8_CP nEndCp = nStart+1; //Only interested in the single 0x01 character
+    WW8_CP nEndCp = nStart+1; // Only interested in the single 0x01 character
 
     WW8ReaderSave aSave(this,nStart);
 
@@ -2277,7 +2277,7 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
 
     int nType=0;
     *pDataStream >> nHeaderByte;
-    if (nHeaderByte == 0xFF) //Guesswork time, difference between 97 and 95 ?
+    if (nHeaderByte == 0xFF) // Guesswork time, difference between 97 and 95 ?
     {
         pDataStream->SeekRel(3);
         *pDataStream >> nHeaderByte;
@@ -2296,7 +2296,7 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
 
     *pDataStream >> hpsCheckBox;
     if (nType == 0)
-        pDataStream->SeekRel(2); //Guess
+        pDataStream->SeekRel(2); // Guess
 
     rtl_TextEncoding eEnc = rRdr.eStructCharSet;
     sTitle = !nType ? WW8ReadPString(*pDataStream, eEnc, true)
@@ -2310,11 +2310,11 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
         sal_uInt8 iRes = (nHeaderByte >> 2) & 0x1F;
         switch (iRes)
         {
-            case 1:  //checked
+            case 1: // checked
                 nChecked = true;
                 break;
             case 25: //undefined, Undefined checkboxes are treated as unchecked
-            case 0:  //unchecked
+            case 0: // unchecked
                 nChecked = false;
                 break;
             default:
@@ -2336,7 +2336,7 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
     sHelp = !nType ? WW8ReadPString(*pDataStream, eEnc, true)
                    : WW8Read_xstz(*pDataStream, 0, true);
 
-    if (nWhich == WW8_CT_DROPDOWN)      //is this the case ?
+    if (nWhich == WW8_CT_DROPDOWN) // is this the case ?
         fToolTip = true;
 
     if( fToolTip )
@@ -2368,7 +2368,7 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
             *pDataStream >> nDummy2;
             if (nDummy2 != 0xA)
                 bAllOk = false;
-            if (!bAllOk)    //Not as expected, don't risk it at all.
+            if (!bAllOk) // Not as expected, don't risk it at all.
                 nNoStrings = 0;
             for (sal_uInt16 nI = 0; nI < nNoStrings; ++nI)
                 pDataStream->SeekRel(2);
@@ -2381,7 +2381,7 @@ void WW8FormulaControl::FormulaRead(SwWw8ControlType nWhich,
         }
         ASSERT(bAllOk,
             "Unknown formfield dropdown list structure. Report to cmc");
-        if (!bAllOk)    //Not as expected, don't risk it at all.
+        if (!bAllOk) // Not as expected, don't risk it at all.
             nNoStrings = 0;
         maListEntries.reserve(nNoStrings);
         for (sal_uInt32 nI = 0; nI < nNoStrings; ++nI)
@@ -2717,8 +2717,8 @@ sal_Bool SwMSConvertControls::InsertControl(
     aTmp <<= nTemp;
     xShapePropSet->setPropertyValue(C2U("VertOrient"), aTmp );
 
-    uno::Reference< text::XText >  xDummyTxtRef;
-    uno::Reference< text::XTextRange >  xTxtRg =
+    uno::Reference< text::XText > xDummyTxtRef;
+    uno::Reference< text::XTextRange > xTxtRg =
         new SwXTextRange( *pPaM, xDummyTxtRef );
 
     aTmp.setValue(&xTxtRg,::getCppuType((
@@ -2726,9 +2726,9 @@ sal_Bool SwMSConvertControls::InsertControl(
     xShapePropSet->setPropertyValue(C2U("TextRange"), aTmp );
 
     // Das Control-Model am Control-Shape setzen
-    uno::Reference< drawing::XControlShape >  xControlShape( xShape,
+    uno::Reference< drawing::XControlShape > xControlShape( xShape,
         uno::UNO_QUERY );
-    uno::Reference< awt::XControlModel >  xControlModel( rFComp,
+    uno::Reference< awt::XControlModel > xControlModel( rFComp,
         uno::UNO_QUERY );
     xControlShape->setControl( xControlModel );
 
@@ -2738,7 +2738,4 @@ sal_Bool SwMSConvertControls::InsertControl(
     return sal_True;
 }
 
-/* vi:set tabstop=4 shiftwidth=4 expandtab: */
-
-
-
+/* vim: set noet sw=4 ts=4: */
