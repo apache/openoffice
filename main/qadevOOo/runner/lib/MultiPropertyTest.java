@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,18 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
 
 
 package lib;
@@ -51,9 +52,9 @@ import com.sun.star.uno.Type;
  *
  * <p>The testProperty() is called, when the MultiMethodTest's testing method
  * is not found in the subclass. So, by defining such methods for properties
- * the standard testing behavioutr can be changed.
+ * the standard testing behavior can be changed.
  *
- * <p>The testing behaviour also can be changed by overriding compare(),
+ * <p>The testing behavior also can be changed by overriding compare(),
  * getNewVAlue() or toString(Object) methods, or by extending PropertyTester
  * class.
  *
@@ -122,7 +123,7 @@ public class MultiPropertyTest extends MultiMethodTest
     /**
      * PropertyTester class defines how to test a property and defined
      * to allow subclasses of MultiPropertyTest to change the testing
-     * behaviour more flexible, since the behaviour can be customized for
+     * behavior more flexible, since the behavior can be customized for
      * each property separately, by providing subclass of PropertyTester
      * and passing it to testProperty(String, PropertyTester method).
      */
@@ -175,26 +176,26 @@ public class MultiPropertyTest extends MultiMethodTest
             try
             {
                 Object oldValue = oObj.getPropertyValue(propName);
-                
+
                 if( (oldValue==null) || utils.isVoid(oldValue) )
                 {
                     // #i111560# method getNewValue() does not work with an empty oldValue
                     Property prop = info.getPropertyByName(propName);
                     if( (prop.Attributes & PropertyAttribute.MAYBEVOID) != 0 )
                     {
-                        // todo: implement a new test independent from method getNewValue()
-                        log.println("changing initially empty MAYBEVOID properties is not supported by the test framework so far - skip test of property: " + propName);  
+                        // TODO: implement a new test independent from method getNewValue()
+                        log.println("changing initially empty MAYBEVOID properties is not supported by the test framework so far - skip test of property: " + propName);
                         tRes.tested(propName, true);
                         return;
                     }
                     else
                     {
-                        log.println( "property '"+propName+"' is not set but is not MAYBEVOID");  
+                        log.println( "property '"+propName+"' is not set but is not MAYBEVOID");
                         tRes.tested(propName, false);
                         return;
                     }
                 }
-                
+
                 Object newValue;
 
                 // trying to create new value
@@ -271,14 +272,14 @@ public class MultiPropertyTest extends MultiMethodTest
          * (resValue is compared with oldValue with compare method).
          *
          * <p>If the property is not READ_ONLY, checks that the new value has
-         * been successfully set(resValue is compared with newValue with
+         * been successfully set (resValue is compared with newValue with
          * compare method).
          *
-         * <p>If the exception is not null then(except the case of read-only
+         * <p>If the exception is not null then (except the case of read-only
          * property and PropertyVetoException above) it is rethrown to allow
          * further catching it if needed.
          *
-         * <p>Subclasses can override to change this behaviour.
+         * <p>Subclasses can override to change this behavior.
          */
         protected void checkResult(String propName, Object oldValue,
                 Object newValue, Object resValue, Exception exception)
@@ -296,7 +297,7 @@ public class MultiPropertyTest extends MultiMethodTest
             short attr = prop.Attributes;
             boolean readOnly = (prop.Attributes & PropertyAttribute.READONLY) != 0;
             boolean maybeVoid = (prop.Attributes & PropertyAttribute.MAYBEVOID) != 0;
-            //check get-set methods
+            // check get-set methods
             if (maybeVoid)
             {
                 log.println("Property " + propName + " is void");
@@ -460,7 +461,7 @@ public class MultiPropertyTest extends MultiMethodTest
          * The method produces new value of the property from the oldValue.
          * It returns the result of ValueChanger.changePValue method.
          * Subclasses can override the method to return their own value,
-         * when the changePValue beahviour is not enough, for example,
+         * when the changePValue behavior is not enough, for example,
          * when oldValue is null.
          */
         protected Object getNewValue(String propName, Object oldValue)
@@ -472,8 +473,8 @@ public class MultiPropertyTest extends MultiMethodTest
         /**
          * The method compares obj1 and obj2. It calls
          * MultiPropertyTest.compare, but subclasses can override to change
-         * the behaviour, since normally compare calls Object.equals method
-         * which is not appropriate in some cases(e.g., structs with equals
+         * the behavior, since normally compare calls Object.equals method
+         * which is not appropriate in some cases (e.g., structs with equals
          * not overridden).
          */
         protected boolean compare(Object obj1, Object obj2)
@@ -484,7 +485,7 @@ public class MultiPropertyTest extends MultiMethodTest
         /**
          * The method returns a String representation of the obj. It calls
          * MultipropertyTest.toString(Object), but subclasses can override
-         * to change the behaviour.
+         * to change the behavior.
          */
         protected String toString(Object obj)
         {
@@ -520,8 +521,8 @@ public class MultiPropertyTest extends MultiMethodTest
         }
 
         /**
-         * Overriden method of <code>PropertyTester</code> which
-         * retruns new value from two values specified.
+         * Overridden method of <code>PropertyTester</code> which
+         * returns new value from two values specified.
          *
          * @return The second value if old value is equal to the first
          * one, the first value otherwise.
