@@ -95,7 +95,6 @@ public:
 	void         SetHorzAlign(sal_uInt16 nAlg)                  { nAlign=(nAlign&0xFF00)|(nAlg&0x00FF); }
 	sal_uInt16       GetVertAlign() const                       { return nAlign&0xFF00; }
 	void         SetVertAlign(sal_uInt16 nAlg)                  { nAlign=(nAlign&0x00FF)|(nAlg&0xFF00); }
-	void         Draw(OutputDevice& rOut, const SdrObject* pObj) const;
 	FASTBOOL     IsHit(const Point& rPnt, const OutputDevice& rOut, const SdrObject* pObj) const;
 	void         Invalidate(Window& rWin, const SdrObject* pObj) const;
 	Point        GetAbsolutePos(const SdrObject& rObj) const;
