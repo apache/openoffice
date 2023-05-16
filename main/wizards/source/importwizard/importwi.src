@@ -19,6 +19,8 @@
  *
  *************************************************************/
 
+
+
 #define sHelpButton					1000
 #define sCancelButton				1001
 #define sBackButton					1002
@@ -128,12 +130,12 @@ String sCancelButton
 
 String sBackButton
 {
-	Text [ en-US ] = "<< ~Back" ;
+	Text [ en-US ] = "< ~Back" ;
 };
 
 String sNextButton
 {
-	Text [ en-US ] = "Ne~xt >>" ;
+	Text [ en-US ] = "Ne~xt >" ;
 };
 
 String sBeginButton
