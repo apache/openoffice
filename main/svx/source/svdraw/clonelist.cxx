@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -25,7 +25,7 @@
 #include "precompiled_svx.hxx"
 
 // #i13033#
-// New mechanism to hold a ist of all original and cloned objects for later
+// New mechanism to hold a list of all original and cloned objects for later
 // re-creating the connections for contained connectors
 #include <clonelist.hxx>
 #include <svx/svdoedge.hxx>
@@ -59,7 +59,7 @@ void CloneList::AddPair(const SdrObject* pOriginal, SdrObject* pClone)
 		const SdrObjList* pOriginalList = pOriginal->GetSubList();
 		SdrObjList* pCloneList = pClone->GetSubList();
 
-		if(pOriginalList && pCloneList 
+		if(pOriginalList && pCloneList
 			&& pOriginalList->GetObjCount() == pCloneList->GetObjCount())
 		{
 			for(sal_uInt32 a(0); a < pOriginalList->GetObjCount(); a++)
@@ -71,9 +71,9 @@ void CloneList::AddPair(const SdrObject* pOriginal, SdrObject* pClone)
 	}
 }
 
-sal_uInt32 CloneList::Count() const 
-{ 
-	return maOriginalList.Count(); 
+sal_uInt32 CloneList::Count() const
+{
+	return maOriginalList.Count();
 }
 
 const SdrObject* CloneList::GetOriginal(sal_uInt32 nIndex) const
@@ -127,4 +127,4 @@ void CloneList::CopyConnections() const
 	}
 }
 
-// eof
+/* vim: set noet sw=4 ts=4: */

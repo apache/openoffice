@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -29,7 +29,6 @@
 #include <vcl/gdimtf.hxx>
 #include <vcl/svapp.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrPreRenderDevice::SdrPreRenderDevice(OutputDevice& rOriginal)
 :	mrOutputDevice(rOriginal)
@@ -72,34 +71,34 @@ void SdrPreRenderDevice::OutputPreRenderDevice(const Region& rExpandedRegion)
 	mrOutputDevice.EnableMapMode(sal_False);
 	maPreRenderDevice.EnableMapMode(sal_False);
 
-    RectangleVector aRectangles;
-    aRegionPixel.GetRegionRectangles(aRectangles);
+	RectangleVector aRectangles;
+	aRegionPixel.GetRegionRectangles(aRectangles);
 
-    for(RectangleVector::const_iterator aRectIter(aRectangles.begin()); aRectIter != aRectangles.end(); aRectIter++)
-    {
-        // for each rectangle, copy the area
-        const Point aTopLeft(aRectIter->TopLeft());
-        const Size aSize(aRectIter->GetSize());
+	for(RectangleVector::const_iterator aRectIter(aRectangles.begin()); aRectIter != aRectangles.end(); aRectIter++)
+	{
+		// for each rectangle, copy the area
+		const Point aTopLeft(aRectIter->TopLeft());
+		const Size aSize(aRectIter->GetSize());
 
-        mrOutputDevice.DrawOutDev(
-            aTopLeft, aSize, 
-            aTopLeft, aSize, 
-            maPreRenderDevice);
+		mrOutputDevice.DrawOutDev(
+			aTopLeft, aSize,
+			aTopLeft, aSize,
+			maPreRenderDevice);
 
 #ifdef DBG_UTIL
-        // #i74769#
-        static bool bDoPaintForVisualControlRegion(false);
+		// #i74769#
+		static bool bDoPaintForVisualControlRegion(false);
 
-        if(bDoPaintForVisualControlRegion)
-        {
-            const Color aColor((((((rand()&0x7f)|0x80)<<8L)|((rand()&0x7f)|0x80))<<8L)|((rand()&0x7f)|0x80));
+		if(bDoPaintForVisualControlRegion)
+		{
+			const Color aColor((((((rand()&0x7f)|0x80)<<8L)|((rand()&0x7f)|0x80))<<8L)|((rand()&0x7f)|0x80));
 
-            mrOutputDevice.SetLineColor(aColor);
-            mrOutputDevice.SetFillColor();
-            mrOutputDevice.DrawRect(*aRectIter);
-        }
+			mrOutputDevice.SetLineColor(aColor);
+			mrOutputDevice.SetFillColor();
+			mrOutputDevice.DrawRect(*aRectIter);
+		}
 #endif
-    }
+	}
 
 //	while(aRegionPixel.GetEnumRects(aRegionHandle, aRegionRectanglePixel))
 //	{
@@ -108,8 +107,8 @@ void SdrPreRenderDevice::OutputPreRenderDevice(const Region& rExpandedRegion)
 //		const Size aSize(aRegionRectanglePixel.GetSize());
 //
 //		mrOutputDevice.DrawOutDev(
-//			aTopLeft, aSize, 
-//			aTopLeft, aSize, 
+//			aTopLeft, aSize,
+//			aTopLeft, aSize,
 //			maPreRenderDevice);
 //
 //#ifdef DBG_UTIL
@@ -131,7 +130,6 @@ void SdrPreRenderDevice::OutputPreRenderDevice(const Region& rExpandedRegion)
 	maPreRenderDevice.EnableMapMode(bMapModeWasEnabledSource);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void SdrPaintWindow::impCreateOverlayManager()
 {
@@ -144,10 +142,10 @@ void SdrPaintWindow::impCreateOverlayManager()
 			// decide which OverlayManager to use
 			if(GetPaintView().IsBufferedOverlayAllowed() && mbUseBuffer)
 			{
-				// buffered OverlayManager, buffers it's background and refreshes from there
+				// buffered OverlayManager, buffers its background and refreshes from there
 				// for pure overlay changes (no system redraw). The 3rd parameter specifies
 				// if that refresh itself will use a 2nd vdev to avoid flickering.
-				// Also hand over the evtl. existing old OverlayManager; this means to take over 
+				// Also hand over the evtl. existing old OverlayManager; this means to take over
 				// the registered OverlayObjects from it
 				mpOverlayManager = new ::sdr::overlay::OverlayManagerBuffered(GetOutputDevice(), true);
 			}
@@ -155,19 +153,19 @@ void SdrPaintWindow::impCreateOverlayManager()
 			{
 				// unbuffered OverlayManager, just invalidates places where changes
 				// take place
-				// Also hand over the evtl. existing old OverlayManager; this means to take over 
+				// Also hand over the evtl. existing old OverlayManager; this means to take over
 				// the registered OverlayObjects from it
 				mpOverlayManager = new ::sdr::overlay::OverlayManager(GetOutputDevice());
 			}
 
 			OSL_ENSURE(mpOverlayManager, "SdrPaintWindow::SdrPaintWindow: Could not allocate an overlayManager (!)");
 
-            // Request a repaint so that the buffered overlay manager fills
-            // its buffer properly.  This is a workaround for missing buffer
-            // updates.
-            Window* pWindow = dynamic_cast<Window*>(&GetOutputDevice());
-            if (pWindow != NULL)
-                pWindow->Invalidate();
+			// Request a repaint so that the buffered overlay manager fills
+			// its buffer properly. This is a workaround for missing buffer
+			// updates.
+			Window* pWindow = dynamic_cast<Window*>(&GetOutputDevice());
+			if (pWindow != NULL)
+				pWindow->Invalidate();
 
 			Color aColA(GetPaintView().getOptionsDrawinglayer().GetStripeColorA());
 			Color aColB(GetPaintView().getOptionsDrawinglayer().GetStripeColorB());
@@ -191,7 +189,7 @@ SdrPaintWindow::SdrPaintWindow(SdrPaintView& rNewPaintView, OutputDevice& rOut)
 	mpOverlayManager(0L),
 	mpPreRenderDevice(0L),
 	mbTemporaryTarget(false), // #i72889#
-    mbUseBuffer(true)
+	mbUseBuffer(true)
 {
 }
 
@@ -206,11 +204,11 @@ SdrPaintWindow::~SdrPaintWindow()
 	DestroyPreRenderDevice();
 }
 
-::sdr::overlay::OverlayManager* SdrPaintWindow::GetOverlayManager() const 
-{ 
+::sdr::overlay::OverlayManager* SdrPaintWindow::GetOverlayManager() const
+{
 	if(!mpOverlayManager)
 	{
-        // Create buffered overlay manager by default.
+		// Create buffered overlay manager by default.
 		const_cast< SdrPaintWindow* >(this)->impCreateOverlayManager();
 	}
 
@@ -303,15 +301,14 @@ void SdrPaintWindow::HideOverlay(const Region& rRegion)
 	}
 }
 
-const Region& SdrPaintWindow::GetRedrawRegion() const 
-{ 
-	return maRedrawRegion; 
+const Region& SdrPaintWindow::GetRedrawRegion() const
+{
+	return maRedrawRegion;
 }
 
-void SdrPaintWindow::SetRedrawRegion(const Region& rNew) 
-{ 
-	maRedrawRegion = rNew; 
+void SdrPaintWindow::SetRedrawRegion(const Region& rNew)
+{
+	maRedrawRegion = rNew;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */

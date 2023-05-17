@@ -71,7 +71,6 @@
 #include <drawinglayer/primitive2d/unifiedtransparenceprimitive2d.hxx>
 #include <drawinglayer/primitive2d/polygonprimitive2d.hxx>
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 // #i15222#
 // Due to the resource problems in Win95/98 with bitmap resources I
 // will change this handle bitmap providing class. Old version was splitting
@@ -98,7 +97,7 @@ public:
 	const BitmapEx& GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal_uInt16 nInd=0);
 };
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 #define KIND_COUNT			(14)
 #define INDEX_COUNT			(6)
 #define INDIVIDUAL_COUNT	(6)
@@ -279,7 +278,6 @@ const BitmapEx& SdrHdlBitmapSet::GetBitmapEx(BitmapMarkerKind eKindOfMarker, sal
 	return maRealMarkers[0];
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlBitmapSet& getSimpleSet()
 {
@@ -299,7 +297,6 @@ SdrHdlBitmapSet& getHighContrastSet()
 	return *aHighContrastSet.get();
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdl::SdrHdl():
 	pObj(NULL),
@@ -1004,7 +1001,7 @@ bool SdrHdl::isMouseOver() const
 	return mbMouseOver;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // class SdrHdlColor
 
 SdrHdlColor::SdrHdlColor(const Point& rRef, Color aCol, const Size& rSize, sal_Bool bLum)
@@ -1163,7 +1160,7 @@ void SdrHdlColor::SetSize(const Size& rNew)
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // class SdrHdlGradient
 
 SdrHdlGradient::SdrHdlGradient(const Point& rRef1, const Point& rRef2, sal_Bool bGrad)
@@ -1346,7 +1343,6 @@ void SdrHdlGradient::FromIAOToItem(SdrObject* _pObj, sal_Bool bSetItemOnObject, 
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlLine::~SdrHdlLine() {}
 
@@ -1405,7 +1401,6 @@ Pointer SdrHdlLine::GetPointer() const
 	return Pointer(POINTER_REFHAND);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlBezWgt::~SdrHdlBezWgt() {}
 
@@ -1466,7 +1461,6 @@ void SdrHdlBezWgt::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 E3dVolumeMarker::E3dVolumeMarker(const basegfx::B2DPolyPolygon& rWireframePoly)
 {
@@ -1515,7 +1509,6 @@ void E3dVolumeMarker::CreateB2dIAObject()
 		}
 	}
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpEdgeHdl::~ImpEdgeHdl()
 {
@@ -1638,7 +1631,6 @@ sal_Bool ImpEdgeHdl::IsHorzDrag() const
 	return sal_False;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpMeasureHdl::~ImpMeasureHdl()
 {
@@ -1712,7 +1704,6 @@ Pointer ImpMeasureHdl::GetPointer() const
 	return Pointer(POINTER_NOTALLOWED);
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ImpTextframeHdl::ImpTextframeHdl(const Rectangle& rRect) :
 	SdrHdl(rRect.TopLeft(),HDL_MOVE),
@@ -1776,7 +1767,6 @@ void ImpTextframeHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 class ImpSdrHdlListSorter: public ContainerSorter {
 public:
@@ -1931,7 +1921,7 @@ extern "C" int __LOADONCALLAPI ImplSortHdlFunc( const void* pVoid1, const void* 
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+
 // #97016# II
 
 void SdrHdlList::TravelFocusHdl(sal_Bool bForward)
@@ -2125,7 +2115,6 @@ void SdrHdlList::ResetFocusHdl()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 
 SdrHdlList::SdrHdlList(SdrMarkView* pV)
 :	mnFocusIndex(CONTAINER_ENTRY_NOTFOUND),
@@ -2479,7 +2468,6 @@ void SdrCropHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
 // with the correction of crop handling I could get rid of the extra mirroring flag, adapted stuff
 // accordingly
 
@@ -2685,5 +2673,4 @@ void SdrCropViewHdl::CreateB2dIAObject()
 	}
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-// eof
+/* vim: set noet sw=4 ts=4: */
