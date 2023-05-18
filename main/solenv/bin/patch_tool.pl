@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 #**************************************************************
-#  
+#
 #  Licensed to the Apache Software Foundation (ASF) under one
 #  or more contributor license agreements.  See the NOTICE file
 #  distributed with this work for additional information
@@ -9,16 +9,16 @@
 #  to you under the Apache License, Version 2.0 (the
 #  "License"); you may not use this file except in compliance
 #  with the License.  You may obtain a copy of the License at
-#  
+#
 #    http://www.apache.org/licenses/LICENSE-2.0
-#  
+#
 #  Unless required by applicable law or agreed to in writing,
 #  software distributed under the License is distributed on an
 #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 #  KIND, either express or implied.  See the License for the
 #  specific language governing permissions and limitations
 #  under the License.
-#  
+#
 #**************************************************************
 
 use Getopt::Long;
@@ -87,7 +87,7 @@ use strict;
 =cut
 
 # The ImageFamily name has to have 1-8 alphanumeric characters.
-my $ImageFamily = "AOO"; 
+my $ImageFamily = "AOO";
 my $SourceImageName = "Source";
 my $TargetImageName = "Target";
 
@@ -275,7 +275,7 @@ sub DetermineVersions ($$)
     if (defined $context->{'source-version'} && defined $context->{'target-version'})
     {
         # Both source and target version have been specified on the
-        # command line.  There remains nothing to be be done.
+        # command line. There remains nothing to be done.
         return;
     }
 
@@ -298,7 +298,7 @@ sub DetermineVersions ($$)
             $context->{'target-version'});
         die;
     }
-    
+
     if ( ! defined $context->{'source-version'})
     {
         my $releases = installer::patch::ReleasesList::Instance();
@@ -335,7 +335,7 @@ sub DetermineVersions ($$)
 =head2 CheckUpgradeCode($source_msi, $target_msi)
 
     The 'UpgradeCode' values in the 'Property' table differs from source to target
-    
+
 =cut
 sub CheckUpgradeCode($$)
 {
@@ -402,7 +402,7 @@ sub CheckBuildIdCode($$)
 
     my $source_build_id = $source_msi->GetTable("Property")->GetValue("Property", "PRODUCTBUILDID", "Value");
     my $target_build_id = $target_msi->GetTable("Property")->GetValue("Property", "PRODUCTBUILDID", "Value");
-    
+
     if ($source_build_id >= $target_build_id)
     {
         $installer::logger::Info->printf(
@@ -735,7 +735,7 @@ sub GetTableAndMap ($$$)
 sub CheckAddedComponents ($$)
 {
     my ($source_msi, $target_msi) = @_;
-    
+
     # Get the 'Component' tables and maps.
     my ($source_component_table, $source_component_map)
 	= GetTableAndMap($source_msi, "Component", "Component");
@@ -781,7 +781,7 @@ sub CheckAddedComponents ($$)
 	    if (scalar @feature_names == 0)
 	    {
 		$installer::logger::Info->printf("Error: no feature found for component '%s'\n", $component_name);
-		$error = 1;		
+		$error = 1;
 	    }
 	    else
 	    {
@@ -888,7 +888,7 @@ sub CheckComponentValues($$$)
 =head2 CheckFileSequence($source_msi, $target_msi)
 
     In the 'File' table the 'Sequence' numbers for corresponding files has to be identical.
-    
+
 =cut
 sub CheckFileSequence($$)
 {
@@ -946,7 +946,7 @@ sub CheckFileSequence($$)
 =head2 CheckFileSequenceUnique($source_msi, $target_msi)
 
     In the 'File' table the 'Sequence' values have to be unique.
-    
+
 =cut
 sub CheckFileSequenceUnique($$)
 {
@@ -990,12 +990,12 @@ sub CheckFileSequenceUnique($$)
 
     Check the sequence numbers of the target msi if the n files use numbers 1..n or if there are holes.
     Holes are reported as warnings.
-    
+
 =cut
 sub CheckFileSequenceHoles ($$)
 {
     my ($source_msi, $target_msi) = @_;
-    
+
     my $target_file_table = $target_msi->GetTable("File");
     my %sequence_numbers = map {$_->GetValue("Sequence") => $_} @{$target_file_table->GetAllRows()};
     my @sorted_sequence_numbers = sort {$a <=> $b} keys %sequence_numbers;
@@ -1056,7 +1056,7 @@ sub CheckRegistryItems($$$)
 
     my $registry_index = $target_registry_table->GetColumnIndex("Registry");
     my $component_index = $target_registry_table->GetColumnIndex("Component_");
-    
+
     # Create temporary data structures for fast access.
     my %source_registry_map = map {$_->GetValue($registry_index) => $_} @{$source_registry_table->GetAllRows()};
     my %target_registry_map = map {$_->GetValue($registry_index) => $_} @{$target_registry_table->GetAllRows()};
@@ -1084,7 +1084,7 @@ sub CheckRegistryItems($$$)
         my $target_component_name = $source_row->GetValue($component_index);
 
     }
-    
+
     $installer::logger::Info->printf("OK: registry items are OK\n");
     return 1;
 }
@@ -1095,7 +1095,7 @@ sub CheckRegistryItems($$$)
 =head2
 
     Component->KeyPath must not change. (see component.pm/get_component_keypath)
-    
+
 =cut
 sub CheckComponentKeyPath ($$)
 {
@@ -1138,7 +1138,7 @@ sub CheckComponentKeyPath ($$)
                 $item->[1],
                 $item->[2]);
         }
-        
+
         return 0;
     }
     else
@@ -1157,7 +1157,7 @@ sub GetMissingReferences ($$$$$)
     my ($table, $key, $map, $what, $report_key) = @_;
 
     my @missing_references = ();
-    
+
     foreach my $row (@{$table->GetAllRows()})
     {
         my $value = $row->GetValue($key);
@@ -1185,7 +1185,7 @@ sub CheckAllReferences ($)
     my ($msi) = @_;
 
     # Set up tables and maps for easy iteration and fast lookups.
-    
+
     my $feature_table = $msi->GetTable("Feature");
     my $component_table = $msi->GetTable("Component");
     my $feature_component_table = $msi->GetTable("FeatureComponents");
@@ -1198,7 +1198,7 @@ sub CheckAllReferences ($)
     my %directory_map = map {$_->GetValue("Directory") => $_} @{$directory_table->GetAllRows()};
 
     my @missing_references = ();
-    
+
     # Check references from files and registry entries to components.
     push @missing_references, GetMissingReferences(
         $file_table,
@@ -1425,7 +1425,7 @@ sub SetupPropertiesTable ($$)
     my ($pcp, $msp_filename) = @_;
 
     my $table = $pcp->GetTable("Properties");
-    
+
     $table->SetRow(
         "*Name", "PatchOutputPath",
         "Value", installer::patch::Tools::ToWindowsPath($msp_filename)
@@ -1456,7 +1456,7 @@ sub SetupPropertiesTable ($$)
         "Value", 1);
 
     # We don't provide file size and hash values.
-    # This value is set to make this fact explicit (0 should be the default). 
+    # This value is set to make this fact explicit (0 should be the default).
     $table->SetRow(
         "*Name", "TrustMsi",
         "Value", 0);
@@ -1508,7 +1508,7 @@ sub SetupTargetImagesTable ($$)
         "Upgraded", $TargetImageName,
         "Order", 1,
         "ProductValidateFlags", "",
-        "IgnoreMissingSrcFiles", 0); 
+        "IgnoreMissingSrcFiles", 0);
 }
 
 
@@ -1526,7 +1526,7 @@ sub SetAdditionalValues ($%)
         $value =~ /^([^:]+):(.*)$/
             || die("invalid value format");
         my ($value_column,$value_value) = ($1,$2);
-        
+
         my $table = $pcp->GetTable($table_name);
         $table->SetRow(
                 "*".$key_column, $key_value,
@@ -1557,9 +1557,9 @@ sub CreatePcp ($$$$$$%)
         $target_msi->{'version'},
         $context->{'language'});
     my $msp_filename = File::Spec->catfile($msp_path, $msp_basename);
-    
+
     # Setup msp path and filename.
-    unlink($pcp_filename) if -f $pcp_filename;        
+    unlink($pcp_filename) if -f $pcp_filename;
     if ( ! File::Copy::copy($pcp_schema_filename, $pcp_filename))
     {
         $installer::logger::Info->printf("Error: could not create openoffice.pcp as copy of pcp schema\n");
@@ -1589,14 +1589,14 @@ sub CreatePcp ($$$$$$%)
 
     # Remove the PatchSequence table to avoid MsiMsp error message:
     # "Since MSI 3.0 will block installation of major upgrade patches with
-    #  sequencing information, creation of such patches is blocked." 
+    #  sequencing information, creation of such patches is blocked."
     #$pcp->RemoveTable("PatchSequence");
     # TODO: alternatively add property SEQUENCE_DATA_GENERATION_DISABLED to pcp Properties table.
 
 
     $installer::logger::Info->printf("created pcp file at\n");
     $installer::logger::Info->printf("    %s\n", $pcp->{'filename'});
-    
+
     return $pcp;
 }
 
@@ -1641,7 +1641,7 @@ sub ShowLog ($$$$)
             }
             close $in;
             close $out;
-            
+
             my $URL = File::Spec->rel2abs($new_name);
             $URL =~ s/\/cygdrive\/(.)\//$1|\//;
             $URL =~ s/^(.):/$1|/;
@@ -1661,7 +1661,7 @@ sub ShowLog ($$$$)
 sub CreateMsp ($)
 {
     my ($pcp) = @_;
-    
+
     # Prepare log files.
     my $log_path = File::Spec->catfile($pcp->{'path'}, "log");
     my $log_basename = "msp";
@@ -1775,7 +1775,7 @@ sub ProvideMsis ($$$)
 sub CreatePatch ($$)
 {
     my ($context, $variables) = @_;
-    
+
     $installer::logger::Info->printf("patch will update product %s from %s to %s\n",
         $context->{'product-name'},
         $context->{'source-version'},
@@ -1787,7 +1787,7 @@ sub CreatePatch ($$)
     {
         exit(1);
     }
-        
+
     my $release_data = installer::patch::ReleasesList::Instance()
         ->{$context->{'source-version'}}
         ->{$context->{'package-format'}};
@@ -1818,7 +1818,7 @@ sub CreatePatch ($$)
             $target_msi->GetTable($table_name);
             $installer::logger::Info->printf("read %s table (source and target\n", $table_name);
         }
-        
+
         # 3. Check if the source and target msis fullfil all necessary requirements.
         if ( ! Check($source_msi, $target_msi, $variables, $context->{'product-name'}))
         {
@@ -1864,7 +1864,7 @@ sub CreatePatch ($$)
 sub CheckPatchCompatability ($$)
 {
     my ($context, $variables) = @_;
-    
+
     $installer::logger::Info->printf("patch will update product %s from %s to %s\n",
         $context->{'product-name'},
         $context->{'source-version'},
@@ -1900,8 +1900,8 @@ sub CheckPatchCompatability ($$)
             $target_msi->GetTable($table_name);
             $installer::logger::Info->printf("read %s table (source and target\n", $table_name);
         }
-        
-        # 3. Check if the source and target msis fullfil all necessary requirements.
+
+        # 3. Check if the source and target msis fulfill all necessary requirements.
         if ( ! Check($source_msi, $target_msi, $variables, $context->{'product-name'}))
         {
             exit(1);
@@ -1921,7 +1921,7 @@ sub CheckPatchCompatability ($$)
 sub ApplyPatch ($$)
 {
     my ($context, $variables) = @_;
-    
+
     $installer::logger::Info->printf("will apply patches that update product %s from %s to %s\n",
         $context->{'product-name'},
         $context->{'source-version'},
@@ -1953,11 +1953,11 @@ sub ApplyPatch ($$)
         $installer::logger::Info->printf("%s does not point to a valid file\n", $msp_filename);
         next;
     }
-        
+
     my $log_path = File::Spec->catfile(dirname($msp_filename), "log");
     my $log_basename = "apply-msp";
     my $log_filename = File::Spec->catfile($log_path, $log_basename.".log");
-    
+
     my $command = join(" ",
         "msiexec.exe",
         "/update", "'".installer::patch::Tools::ToWindowsPath($msp_filename)."'",
@@ -1966,12 +1966,12 @@ sub ApplyPatch ($$)
 #            "REINSTALLMODE=vomus",
         "REINSTALLMODE=omus",
         "MSIENFORCEUPGRADECOMPONENTRULES=1");
-    
+
     printf("executing command %s\n", $command);
     my $response = qx($command);
     Encode::from_to($response, "UTF16LE", "UTF8");
     printf("response was '%s'\n", $response);
-    
+
     ShowLog($log_path, $log_filename, $log_basename, "msp application");
 }
 
@@ -2024,7 +2024,7 @@ sub CreateReleaseItem ($$$)
     my ($language, $exe_filename, $msi) = @_;
 
     die "can not open installation set at ".$exe_filename unless -f $exe_filename;
-    
+
     open my $in, "<", $exe_filename;
     my $sha256_checksum = new Digest("SHA-256")->addfile($in)->hexdigest();
     close $in;
@@ -2037,7 +2037,7 @@ sub CreateReleaseItem ($$$)
     my $upgrade_code = $msi->GetTable("Property")->GetValue("Property", "UpgradeCode", "Value");
     $upgrade_code =~ s/(^{|}$)//g;
     my $build_id = $msi->GetTable("Property")->GetValue("Property", "PRODUCTBUILDID", "Value");
-    
+
     return {
         'language' => $language,
         'checksum-type' => "sha256",
@@ -2065,7 +2065,7 @@ sub GetReleaseItemForCurrentBuild ($$$)
         "install",
         $language."_download",
         $exe_basename);
-    
+
     printf("        current : %s\n", $filename);
     if ( ! -f $filename)
     {
@@ -2099,7 +2099,7 @@ sub GetReleaseItemForOldBuild ($$$$)
     my $url = $url_template;
     $url =~ s/%L/$language/g;
     $releases_list->{$version}->{$package_format}->{$language}->{'URL'} = $url;
-    
+
     if ( ! installer::patch::InstallationSet::ProvideUnpackedExe(
                $version,
                0,
@@ -2154,7 +2154,7 @@ sub UpdateReleasesXML($$)
         $item_hash = $releases_list->{$target_version}->{$context->{'package-format'}};
     }
     $releases_list->{$target_version} = {$context->{'package-format'} => $item_hash};
-    
+
     my @languages = GetLanguages();
     my %language_items = ();
     foreach my $language (@languages)
@@ -2184,16 +2184,16 @@ sub UpdateReleasesXML($$)
         {
             $item = GetReleaseItemForOldBuild($context, $language, $exe_basename, $url_template);
         }
-        
+
         next unless defined $item;
-        
+
         $language_items{$language} = $item;
         $item_hash->{$language} = $item;
         $item_hash->{'upgrade-code'} = $item->{'upgrade-code'};
         $item_hash->{'build-id'} = $item->{'build-id'};
         $item_hash->{'url-template'} = $url_template;
     }
-    
+
     my @valid_languages = sort keys %language_items;
     $item_hash->{'languages'} = \@valid_languages;
 
@@ -2213,7 +2213,7 @@ sub main ()
 #    installer::logger::starttime();
 #    $installer::logger::Global->add_timestamp("starting logging");
     installer::logger::SetupSimpleLogging(undef);
-    
+
     die "ERROR: list file is not defined, please use --lst-file option"
         unless defined $context->{'lst-file'};
     die "ERROR: product name is not defined, please use --product-name option"
@@ -2240,7 +2240,7 @@ sub main ()
         my $dirname = dirname($filename);
         File::Path::make_path($dirname) unless -d $dirname;
         printf("directing output to $filename\n");
-            
+
         $installer::logger::Lang->set_filename($filename);
         $installer::logger::Lang->copy_lines_from($installer::logger::Global);
         $installer::logger::Lang->set_forward(undef);
