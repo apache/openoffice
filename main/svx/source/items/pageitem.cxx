@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,16 +7,16 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
@@ -42,10 +42,10 @@ using namespace ::com::sun::star;
 
 // STATIC DATA -----------------------------------------------------------
 
-TYPEINIT1_FACTORY( SvxPageItem, SfxPoolItem , new  SvxPageItem(0));
+TYPEINIT1_FACTORY( SvxPageItem, SfxPoolItem , new SvxPageItem(0));
 
 /*--------------------------------------------------------------------
-	Beschreibung: Konstruktor
+	Description: Constructor
  --------------------------------------------------------------------*/
 
 SvxPageItem::SvxPageItem( const sal_uInt16 nId ) : SfxPoolItem( nId ),
@@ -57,7 +57,7 @@ SvxPageItem::SvxPageItem( const sal_uInt16 nId ) : SfxPoolItem( nId ),
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung: Copy-Konstruktor
+	Description: Copy-Constructor
  --------------------------------------------------------------------*/
 
 SvxPageItem::SvxPageItem( const SvxPageItem& rItem )
@@ -69,7 +69,7 @@ SvxPageItem::SvxPageItem( const SvxPageItem& rItem )
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung: Clonen
+	Description: Clone
  --------------------------------------------------------------------*/
 
 SfxPoolItem* SvxPageItem::Clone( SfxItemPool * ) const
@@ -78,7 +78,7 @@ SfxPoolItem* SvxPageItem::Clone( SfxItemPool * ) const
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung: Abfrage auf Gleichheit
+	Description: Query on equality
  --------------------------------------------------------------------*/
 
 int SvxPageItem::operator==( const SfxPoolItem& rAttr ) const
@@ -92,30 +92,29 @@ int SvxPageItem::operator==( const SfxPoolItem& rAttr ) const
 
 inline XubString GetUsageText( const sal_uInt16 eU )
 {
-	if ( eU & SVX_PAGE_LEFT )
-		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_LEFT);
-	if ( eU & SVX_PAGE_RIGHT )
-		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_RIGHT);
-	if ( eU & SVX_PAGE_ALL )
-		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_ALL);
-	if ( eU & SVX_PAGE_MIRROR )
-		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_MIRROR);
-	return String();
+	switch( eU & 0x000f )
+	{
+		case SVX_PAGE_LEFT:		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_LEFT);
+		case SVX_PAGE_RIGHT:	return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_RIGHT);
+		case SVX_PAGE_ALL:		return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_ALL);
+		case SVX_PAGE_MIRROR:	return SVX_RESSTR(RID_SVXITEMS_PAGE_USAGE_MIRROR);
+		default: return String();
+	}
 }
 
 //------------------------------------------------------------------------
 
 SfxItemPresentation SvxPageItem::GetPresentation
 (
-	SfxItemPresentation ePres,
-    SfxMapUnit          /*eCoreUnit*/,
-    SfxMapUnit          /*ePresUnit*/,
-    XubString&          rText, const IntlWrapper *
+	SfxItemPresentation	ePres,
+	SfxMapUnit			/*eCoreUnit*/,
+	SfxMapUnit			/*ePresUnit*/,
+	XubString&			rText, const IntlWrapper *
 )	const
 {
 	rText.Erase();
 
-	switch ( ePres )
+	switch( ePres )
 	{
 		case SFX_ITEM_PRESENTATION_NONE:
 			return SFX_ITEM_PRESENTATION_NONE;
@@ -133,6 +132,7 @@ SfxItemPresentation SvxPageItem::GetPresentation
 				rText += SVX_RESSTR(RID_SVXITEMS_PAGE_LAND_TRUE);
 			else
 				rText += SVX_RESSTR(RID_SVXITEMS_PAGE_LAND_FALSE);
+			rText += cpDelim;
 			rText += GetUsageText( eUse );
 			return SFX_ITEM_PRESENTATION_NAMELESS;
 		}
@@ -151,10 +151,11 @@ SfxItemPresentation SvxPageItem::GetPresentation
 				rText += SVX_RESSTR(RID_SVXITEMS_PAGE_LAND_TRUE);
 			else
 				rText += SVX_RESSTR(RID_SVXITEMS_PAGE_LAND_FALSE);
+			rText += cpDelim;
 			rText += GetUsageText( eUse );
 			return SFX_ITEM_PRESENTATION_COMPLETE;
 		}
-        default: ;//prevent warning
+		default: ; // prevent warning
 	}
 	return SFX_ITEM_PRESENTATION_NONE;
 }
@@ -162,8 +163,8 @@ SfxItemPresentation SvxPageItem::GetPresentation
 //------------------------------------------------------------------------
 sal_Bool SvxPageItem::QueryValue( uno::Any& rVal, sal_uInt8 nMemberId ) const
 {
-//    sal_Bool bConvert = 0!=(nMemberId&CONVERT_TWIPS);
-    nMemberId &= ~CONVERT_TWIPS;
+//	sal_Bool bConvert = 0!=(nMemberId&CONVERT_TWIPS);
+	nMemberId &= ~CONVERT_TWIPS;
 	switch( nMemberId )
 	{
 		case MID_PAGE_NUMTYPE:
@@ -176,17 +177,17 @@ sal_Bool SvxPageItem::QueryValue( uno::Any& rVal, sal_uInt8 nMemberId ) const
 			//Landscape= sal_True
 			rVal = Bool2Any(bLandscape);
 		break;
-		case MID_PAGE_LAYOUT     :
+		case MID_PAGE_LAYOUT :
 		{
 			style::PageStyleLayout eRet;
-			switch(eUse & 0x0f)
+			switch( eUse & 0x0f )
 			{
-				case SVX_PAGE_LEFT	: eRet = style::PageStyleLayout_LEFT;	   break;
-				case SVX_PAGE_RIGHT	: eRet = style::PageStyleLayout_RIGHT;	   break;
-				case SVX_PAGE_ALL	: eRet = style::PageStyleLayout_ALL;	   break;
-				case SVX_PAGE_MIRROR: eRet = style::PageStyleLayout_MIRRORED; break;
+				case SVX_PAGE_LEFT:		eRet = style::PageStyleLayout_LEFT;		break;
+				case SVX_PAGE_RIGHT:	eRet = style::PageStyleLayout_RIGHT;	break;
+				case SVX_PAGE_ALL:		eRet = style::PageStyleLayout_ALL;		break;
+				case SVX_PAGE_MIRROR:	eRet = style::PageStyleLayout_MIRRORED;	break;
 				default:
-					DBG_ERROR("was fuer ein Layout ist das?");
+					DBG_ERROR("What kind of layout is this?");
 					return sal_False;
 			}
 			rVal <<= eRet;
@@ -213,7 +214,7 @@ sal_Bool SvxPageItem::PutValue( const uno::Any& rVal, sal_uInt8 nMemberId )
 		case MID_PAGE_ORIENTATION:
 			bLandscape = Any2Bool(rVal);
 		break;
-		case MID_PAGE_LAYOUT     :
+		case MID_PAGE_LAYOUT :
 		{
 			style::PageStyleLayout eLayout;
 			if(!(rVal >>= eLayout))
@@ -226,12 +227,12 @@ sal_Bool SvxPageItem::PutValue( const uno::Any& rVal, sal_uInt8 nMemberId )
 			eUse &= 0xfff0;
 			switch( eLayout )
 			{
-				case style::PageStyleLayout_LEFT  	 : eUse |= SVX_PAGE_LEFT ; break;
-				case style::PageStyleLayout_RIGHT   : eUse |= SVX_PAGE_RIGHT; break;
-				case style::PageStyleLayout_ALL     : eUse |= SVX_PAGE_ALL  ; break;
-				case style::PageStyleLayout_MIRRORED: eUse |= SVX_PAGE_MIRROR;break;
-                default: ;//prevent warning
-            }
+				case style::PageStyleLayout_LEFT:		eUse |= SVX_PAGE_LEFT ;		break;
+				case style::PageStyleLayout_RIGHT:		eUse |= SVX_PAGE_RIGHT ;	break;
+				case style::PageStyleLayout_ALL:		eUse |= SVX_PAGE_ALL ;		break;
+				case style::PageStyleLayout_MIRRORED:	eUse |= SVX_PAGE_MIRROR ;	break;
+				default: ; // prevent warning
+			}
 		}
 		break;
 	}
@@ -274,7 +275,7 @@ SvStream& SvxPageItem::Store( SvStream &rStrm, sal_uInt16 /*nItemVersion*/ ) con
 }
 
 /*--------------------------------------------------------------------
-	Beschreibung:	HeaderFooterSet
+	Description: HeaderFooterSet
  --------------------------------------------------------------------*/
 
 SvxSetItem::SvxSetItem( const sal_uInt16 nId, const SfxItemSet& rSet ) :
@@ -291,7 +292,7 @@ SvxSetItem::SvxSetItem( const SvxSetItem& rItem ) :
 
 SvxSetItem::SvxSetItem( const sal_uInt16 nId, SfxItemSet* _pSet ) :
 
-    SfxSetItem( nId, _pSet )
+	SfxSetItem( nId, _pSet )
 {
 }
 
@@ -304,10 +305,10 @@ SfxPoolItem* SvxSetItem::Clone( SfxItemPool * ) const
 
 SfxItemPresentation SvxSetItem::GetPresentation
 (
-    SfxItemPresentation /*ePres*/,
-    SfxMapUnit          /*eCoreUnit*/,
-    SfxMapUnit          /*ePresUnit*/,
-    XubString&          rText, const IntlWrapper *
+	SfxItemPresentation	/*ePres*/,
+	SfxMapUnit			/*eCoreUnit*/,
+	SfxMapUnit			/*ePresUnit*/,
+	XubString&			rText, const IntlWrapper *
 )	const
 {
 	rText.Erase();
@@ -316,12 +317,12 @@ SfxItemPresentation SvxSetItem::GetPresentation
 
 SfxPoolItem* SvxSetItem::Create(SvStream &rStrm, sal_uInt16 /*nVersion*/) const
 {
-    SfxItemSet* _pSet = new SfxItemSet( *GetItemSet().GetPool(),
-									   GetItemSet().GetRanges() );
+	SfxItemSet* _pSet = new SfxItemSet( *GetItemSet().GetPool(),
+										 GetItemSet().GetRanges() );
 
-    _pSet->Load( rStrm );
+	_pSet->Load( rStrm );
 
-    return new SvxSetItem( Which(), *_pSet );
+	return new SvxSetItem( Which(), *_pSet );
 }
 
 SvStream& SvxSetItem::Store(SvStream &rStrm, sal_uInt16 nItemVersion) const
@@ -331,4 +332,4 @@ SvStream& SvxSetItem::Store(SvStream &rStrm, sal_uInt16 nItemVersion) const
 	return rStrm;
 }
 
-
+/* vim: set noet sw=4 ts=4: */
