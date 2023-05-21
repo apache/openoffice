@@ -16,8 +16,10 @@
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #ifndef _NBDTMGFACT_HXX
 #include <svx/nbdtmgfact.hxx>
@@ -35,7 +37,7 @@ NBOTypeMgrBase* NBOutlineTypeMgrFact::CreateInstance(const NBOType aType)
 		return BulletsTypeMgr::GetInstance();
 	}else if ( aType == eNBOType::GRAPHICBULLETS )
 	{
-		return GraphyicBulletsTypeMgr::GetInstance();
+		return GraphicBulletsTypeMgr::GetInstance();
 	}else if ( aType == eNBOType::MIXBULLETS )
 	{
 		return MixBulletsTypeMgr::GetInstance();
@@ -51,3 +53,4 @@ NBOTypeMgrBase* NBOutlineTypeMgrFact::CreateInstance(const NBOType aType)
 }
 }}
 
+/* vim: set noet sw=4 ts=4: */
