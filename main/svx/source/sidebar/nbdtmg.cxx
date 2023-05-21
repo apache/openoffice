@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,17 +7,20 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
+
 #include "precompiled_svx.hxx"
 #ifndef _NBDTMG_HXX
 #include <svx/nbdtmg.hxx>
@@ -116,7 +119,7 @@ Font& lcl_GetDefaultBulletFont()
 								String(), Size( 0, 14 ) );
 	if(!bInit)
 	{
-        aDefBulletFont.SetCharSet( RTL_TEXTENCODING_SYMBOL );
+		aDefBulletFont.SetCharSet( RTL_TEXTENCODING_SYMBOL );
 		aDefBulletFont.SetFamily( FAMILY_DONTKNOW );
 		aDefBulletFont.SetPitch( PITCH_DONTKNOW );
 		aDefBulletFont.SetWeight( WEIGHT_DONTKNOW );
@@ -177,8 +180,8 @@ NumSettings_ImplPtr lcl_CreateNumberingSettingsPtr(const Sequence<PropertyValue>
 		else if(pValues[j].Name.equalsAsciiL(RTL_CONSTASCII_STRINGPARAM(sBulletFontName)))
 			pValues[j].Value >>= pNew->sBulletFont;
 	}
-    const sal_Unicode cLocalPrefix = pNew->sPrefix.getLength() ? pNew->sPrefix.getStr()[0] : 0;
-    const sal_Unicode cLocalSuffix = pNew->sSuffix.getLength() ? pNew->sSuffix.getStr()[0] : 0;
+	const sal_Unicode cLocalPrefix = pNew->sPrefix.getLength() ? pNew->sPrefix.getStr()[0] : 0;
+	const sal_Unicode cLocalSuffix = pNew->sSuffix.getLength() ? pNew->sSuffix.getStr()[0] : 0;
 	String aEmptyStr;
 	if( cLocalPrefix == ' ') pNew->sPrefix=aEmptyStr;
 	if( cLocalSuffix == ' ') pNew->sSuffix=aEmptyStr;
@@ -214,7 +217,7 @@ void NBOTypeMgrBase::StoreBulCharFmtName_impl() {
 				
 			if ( pBulletCharFmt )
 			{
-				aNumCharFmtName =  String(pBulletCharFmt->GetValue());
+				aNumCharFmtName = String(pBulletCharFmt->GetValue());
 			}
 		}
 }
@@ -234,13 +237,13 @@ void NBOTypeMgrBase::ImplLoad(String filename)
 		sal_uInt32                      nVersion;
 		sal_Int32                   nNumIndex;
 		*pIStm >> nVersion;
-		if (nVersion==DEFAULT_NUMBERING_CACHE_FORMAT_VERSION) //first version
+		if (nVersion==DEFAULT_NUMBERING_CACHE_FORMAT_VERSION) // first version
 		{
 			*pIStm >> nNumIndex;
 			sal_uInt16 mLevel = 0x1;
 			while (nNumIndex>=0 && nNumIndex<DEFAULT_NUM_VALUSET_COUNT) {
 				SvxNumRule aNum(*pIStm);
-				//bullet color in font properties is not stored correctly. Need set tranparency bits manually
+				// bullet color in font properties is not stored correctly. Need set transparency bits manually
 				for(sal_uInt16 i = 0; i < aNum.GetLevelCount(); i++)
 				{
 					SvxNumberFormat aFmt(aNum.GetLevel(i));
@@ -249,7 +252,7 @@ void NBOTypeMgrBase::ImplLoad(String filename)
 						Color c=aFont.GetColor();
 						c.SetTransparency(0xFF);
 						aFont.SetColor(c);
-						aFmt.SetBulletFont(&aFont);       
+						aFmt.SetBulletFont(&aFont);
 						aNum.SetLevel(i, aFmt);
 					}
 				}
@@ -286,7 +289,7 @@ void NBOTypeMgrBase::ImplStore(String filename)
 			}
 		}
 		nNumIndex = -1;
-		*pOStm << nNumIndex;  //write end flag
+		*pOStm << nNumIndex;  // write end flag
 		delete pOStm;
 	}
 	eCoreUnit = eOldCoreUnit;
@@ -301,7 +304,7 @@ void NBOTypeMgrBase::StoreMapUnit_impl() {
 		{
 			eCoreUnit = pSet->GetPool()->GetMetric(pSet->GetPool()->GetWhich(SID_ATTR_NUMBERING_RULE));
 		} else {
-			//sd use different sid for numbering rule
+			// sd use different sid for numbering rule
 			eState = pSet->GetItemState(EE_PARA_NUMBULLET, sal_False, &pItem);
 			if(eState == SFX_ITEM_SET)
 			{
@@ -519,8 +522,8 @@ sal_Bool BulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uIn
 			aFmt.SetNumberingType( SVX_NUM_CHAR_SPECIAL );			
 			aFmt.SetBulletFont(&rActBulletFont);
 			aFmt.SetBulletChar(cChar );
-			aFmt.SetCharFmtName(sBulletCharFmtName);       
-            if (isResetSize) aFmt.SetBulletRelSize(45);
+			aFmt.SetCharFmtName(sBulletCharFmtName);
+			if (isResetSize) aFmt.SetBulletRelSize(45);
 			aNum.SetLevel(i, aFmt);
 		}
 		nMask <<= 1;
@@ -600,19 +603,19 @@ Font BulletsTypeMgr::GetBulCharFont(sal_uInt16 nIndex)
 /***************************************************************************************************
 **********************Graphic Bullet Type lib***********************************************************
 ****************************************************************************************************/
-GraphyicBulletsTypeMgr* GraphyicBulletsTypeMgr::_instance = 0;
-GraphyicBulletsTypeMgr::GraphyicBulletsTypeMgr(const NBOType aType):
+GraphicBulletsTypeMgr* GraphicBulletsTypeMgr::_instance = 0;
+GraphicBulletsTypeMgr::GraphicBulletsTypeMgr(const NBOType aType):
 	NBOTypeMgrBase(aType)
 {
 	Init();
 }
 
-GraphyicBulletsTypeMgr::GraphyicBulletsTypeMgr(const NBOType aType,const SfxItemSet* pArg):
+GraphicBulletsTypeMgr::GraphicBulletsTypeMgr(const NBOType aType,const SfxItemSet* pArg):
 	NBOTypeMgrBase(aType,pArg)
 {
 	Init();
 }
-GraphyicBulletsTypeMgr::GraphyicBulletsTypeMgr(const GraphyicBulletsTypeMgr& aTypeMgr):
+GraphicBulletsTypeMgr::GraphicBulletsTypeMgr(const GraphicBulletsTypeMgr& aTypeMgr):
 	NBOTypeMgrBase(aTypeMgr)
 {
 	for (sal_uInt16 i=0;i< aTypeMgr.aGrfDataLst.Count();i++)
@@ -632,15 +635,15 @@ GraphyicBulletsTypeMgr::GraphyicBulletsTypeMgr(const GraphyicBulletsTypeMgr& aTy
 			delete pEntry;
 	}
 }
-void GraphyicBulletsTypeMgr::Init()
+void GraphicBulletsTypeMgr::Init()
 {
 	List aGrfNames;
 	GalleryExplorer::FillObjList(GALLERY_THEME_BULLETS, aGrfNames);	
 	for(sal_uInt16 i = 0; i < aGrfNames.Count(); i++)
 	{		
 		String* pGrfNm = (String*) aGrfNames.GetObject(i);
-        	INetURLObject aObj(*pGrfNm);
-        	if(aObj.GetProtocol() == INET_PROT_FILE)
+			INetURLObject aObj(*pGrfNm);
+			if(aObj.GetProtocol() == INET_PROT_FILE)
             		*pGrfNm = aObj.PathToFileName();
 
 		GrfBulDataRelation* pEntry = new GrfBulDataRelation(eNBType::GRAPHICBULLETS);
@@ -659,7 +662,7 @@ void GraphyicBulletsTypeMgr::Init()
 		aGrfDataLst.Insert( pEntry, LIST_APPEND );
 	}
 }
-sal_uInt16 GraphyicBulletsTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 mLevel,sal_uInt16 /* nFromIndex */)
+sal_uInt16 GraphicBulletsTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 mLevel,sal_uInt16 /* nFromIndex */)
 {	
 	if ( mLevel == (sal_uInt16)0xFFFF || mLevel == 0)
 		return (sal_uInt16)0xFFFF;
@@ -696,7 +699,7 @@ sal_uInt16 GraphyicBulletsTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uI
 	return (sal_uInt16)0xFFFF;
 }
 
-sal_Bool GraphyicBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uInt16 mLevel)
+sal_Bool GraphicBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uInt16 mLevel)
 {
 	if ( mLevel == (sal_uInt16)0xFFFF || mLevel > aNum.GetLevelCount() || mLevel == 0)
 		return sal_False;
@@ -743,7 +746,7 @@ sal_Bool GraphyicBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIn
 	return sal_True;
 }
 
-sal_Bool GraphyicBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uInt16 mLevel,sal_Bool /* isDefault */,sal_Bool /* isResetSize */)
+sal_Bool GraphicBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uInt16 mLevel,sal_Bool /* isDefault */,sal_Bool /* isResetSize */)
 {
 	//if ( mLevel == (sal_uInt16)0xFFFF )
 	//	return sal_False;
@@ -788,7 +791,7 @@ sal_Bool GraphyicBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex
 		
 	return sal_True;
 }
-String GraphyicBulletsTypeMgr::GetDescription(sal_uInt16 nIndex,sal_Bool /* isDefault */)
+String GraphicBulletsTypeMgr::GetDescription(sal_uInt16 nIndex,sal_Bool /* isDefault */)
 {
 	String sRet;
 	sal_uInt16 nLength = 0;
@@ -798,7 +801,7 @@ String GraphyicBulletsTypeMgr::GetDescription(sal_uInt16 nIndex,sal_Bool /* isDe
 		return sRet;
 	else
 	{
-		GrfBulDataRelation* pEntry  = (GrfBulDataRelation*) aGrfDataLst.GetObject(nIndex);
+		GrfBulDataRelation* pEntry = (GrfBulDataRelation*) aGrfDataLst.GetObject(nIndex);
 		if ( pEntry )
 		{
 			sRet = pEntry->sDescription;
@@ -806,7 +809,7 @@ String GraphyicBulletsTypeMgr::GetDescription(sal_uInt16 nIndex,sal_Bool /* isDe
 	}
 	return sRet;
 }
-sal_Bool GraphyicBulletsTypeMgr::IsCustomized(sal_uInt16 nIndex)
+sal_Bool GraphicBulletsTypeMgr::IsCustomized(sal_uInt16 nIndex)
 {
 	sal_Bool bRet = sal_False;
 	
@@ -817,7 +820,7 @@ sal_Bool GraphyicBulletsTypeMgr::IsCustomized(sal_uInt16 nIndex)
 		return bRet;
 	else
 	{
-		GrfBulDataRelation* pEntry  = (GrfBulDataRelation*) aGrfDataLst.GetObject(nIndex);
+		GrfBulDataRelation* pEntry = (GrfBulDataRelation*) aGrfDataLst.GetObject(nIndex);
 		if ( pEntry )
 		{
 			bRet = pEntry->bIsCustomized;
@@ -826,7 +829,7 @@ sal_Bool GraphyicBulletsTypeMgr::IsCustomized(sal_uInt16 nIndex)
 		
 	return bRet;
 }
-String GraphyicBulletsTypeMgr::GetGrfName(sal_uInt16 nIndex)
+String GraphicBulletsTypeMgr::GetGrfName(sal_uInt16 nIndex)
 {	
 	String sRet;
 	if ( nIndex < aGrfDataLst.Count() )
@@ -855,7 +858,7 @@ MixBulletsTypeMgr::MixBulletsTypeMgr(const NBOType aType):
 	{
 		pDefaultActualBullets[nItem] = pActualBullets[nItem];
 	}
-	//Initial the first time to store the default value. Then do it again for customized value
+	// Initial the first time to store the default value. Then do it again for customized value
 	Init();
 	ImplLoad(String::CreateFromAscii("standard.sya"));
 }
@@ -868,7 +871,7 @@ MixBulletsTypeMgr::MixBulletsTypeMgr(const NBOType aType,const SfxItemSet* pArg)
 	{
 		pDefaultActualBullets[nItem] = pActualBullets[nItem];
 	}
-	//Initial the first time to store the default value. Then do it again for customized value
+	// Initial the first time to store the default value. Then do it again for customized value
 	Init();
 	ImplLoad(String::CreateFromAscii("standard.sya"));
 }
@@ -881,7 +884,7 @@ MixBulletsTypeMgr::MixBulletsTypeMgr(const MixBulletsTypeMgr& aTypeMgr):
 		if ( aTypeMgr.pActualBullets[i]->eType == eNBType::BULLETS )
 		{
 			pActualBullets[i]->eType = aTypeMgr.pActualBullets[i]->eType;		
-			pActualBullets[i]->nIndex = aTypeMgr.pActualBullets[i]->nIndex; //index in the tab page display
+			pActualBullets[i]->nIndex = aTypeMgr.pActualBullets[i]->nIndex; // index in the tab page display
 			pActualBullets[i]->nIndexDefault = aTypeMgr.pActualBullets[i]->nIndexDefault;
 			pActualBullets[i]->pBullets = new BulletsSettings_Impl(eNBType::BULLETS) ;
 			((BulletsSettings_Impl*)(pActualBullets[i]->pBullets))->cBulletChar = ((BulletsSettings_Impl*)(aTypeMgr.pActualBullets[i]->pBullets))->cBulletChar;
@@ -892,7 +895,7 @@ MixBulletsTypeMgr::MixBulletsTypeMgr(const MixBulletsTypeMgr& aTypeMgr):
 		}else if ( aTypeMgr.pActualBullets[i]->eType == eNBType::GRAPHICBULLETS )
 		{
 			pActualBullets[i]->eType = aTypeMgr.pActualBullets[i]->eType;		
-			pActualBullets[i]->nIndex = aTypeMgr.pActualBullets[i]->nIndex; //index in the tab page display
+			pActualBullets[i]->nIndex = aTypeMgr.pActualBullets[i]->nIndex; // index in the tab page display
 			pActualBullets[i]->nIndexDefault = aTypeMgr.pActualBullets[i]->nIndexDefault;
 			pActualBullets[i]->pBullets = new GrfBulDataRelation(eNBType::GRAPHICBULLETS) ;
 			((GrfBulDataRelation*)(pActualBullets[i]->pBullets))->sGrfName = ((GrfBulDataRelation*)(aTypeMgr.pActualBullets[i]->pBullets))->sGrfName;
@@ -985,7 +988,7 @@ void MixBulletsTypeMgr::Init()
 		((BulletsSettings_Impl*)(pActualBullets[5]->pBullets))->eType = eNBType::BULLETS;
 	}
 
-	GraphyicBulletsTypeMgr* mGrfTMgr = GraphyicBulletsTypeMgr::GetInstance();
+	GraphicBulletsTypeMgr* mGrfTMgr = GraphicBulletsTypeMgr::GetInstance();
 	if ( mGrfTMgr )
 	{
 		//Index 7
@@ -1060,7 +1063,7 @@ sal_uInt16 MixBulletsTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 
 				{
 					GrfBulDataRelation* pEntry = (GrfBulDataRelation*) (pActualBullets[i]->pBullets);
 					//sal_Bool bExist = sal_False;
-					if ( pEntry && pActualBullets[i]->nIndexDefault == (sal_uInt16)0xFFFF  && pEntry->pGrfObj)
+					if ( pEntry && pActualBullets[i]->nIndexDefault == (sal_uInt16)0xFFFF && pEntry->pGrfObj)
 					{
 						if ( pEntry->pGrfObj->GetBitmap().IsEqual(pGrf->GetBitmap()))
 						{
@@ -1130,7 +1133,7 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 			GrfBulDataRelation* pEntry = (GrfBulDataRelation*) (pActualBullets[nIndex]->pBullets);
 			if ( pGrfName )
 				pEntry->sGrfName = *pGrfName;
-			GraphyicBulletsTypeMgr* mGrfTMgr = GraphyicBulletsTypeMgr::GetInstance();
+			GraphicBulletsTypeMgr* mGrfTMgr = GraphicBulletsTypeMgr::GetInstance();
 			if ( mGrfTMgr )
 			{
 				//sal_uInt16 nDIndex = mGrfTMgr->GetNBOIndexForNumRule(aNum,mLevel);
@@ -1140,7 +1143,7 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 				//	sEmpty = mGrfTMgr->GetDescription( nDIndex -1);
 				//}else
 				{
-					pActualBullets[nIndex]->nIndexDefault  = (sal_uInt16)0xFFFF;
+					pActualBullets[nIndex]->nIndexDefault = (sal_uInt16)0xFFFF;
 					sEmpty = String(SVX_RESSTR( RID_SVXSTR_NUMBULLET_CUSTOM_BULLET_DESCRIPTION));
 					String aReplace = String::CreateFromAscii("%LIST_NUM");
 					String sNUM = String::CreateFromInt32( nIndex + 1 );
@@ -1184,7 +1187,7 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 				//	((BulletsSettings_Impl*)(pActualBullets[nIndex]->pBullets))->sDescription = pBTMgr->GetDescription(nDIndex - 1);
 				//}else
 				{
-					pActualBullets[nIndex]->nIndexDefault  = (sal_uInt16)0xFFFF;
+					pActualBullets[nIndex]->nIndexDefault = (sal_uInt16)0xFFFF;
 					String aStrFromRES = String(SVX_RESSTR( RID_SVXSTR_NUMBULLET_CUSTOM_BULLET_DESCRIPTION));
 					String aReplace = String::CreateFromAscii("%LIST_NUM");
 					String sNUM = String::CreateFromInt32( nIndex + 1 );
@@ -1214,7 +1217,7 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 					((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->sGrfName = *pGrfName;				
 				((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->bIsCustomized = sal_True;
 				((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->eType = eNBType::GRAPHICBULLETS;
-				GraphyicBulletsTypeMgr* mGrfTMgr = GraphyicBulletsTypeMgr::GetInstance();
+				GraphicBulletsTypeMgr* mGrfTMgr = GraphicBulletsTypeMgr::GetInstance();
 				if ( mGrfTMgr )
 				{
 					//sal_uInt16 nDIndex = mGrfTMgr->GetNBOIndexForNumRule(aNum,mLevel);
@@ -1224,7 +1227,7 @@ sal_Bool MixBulletsTypeMgr::RelplaceNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,s
 					//	((GrfBulDataRelation*)(pActualBullets[nIndex]->pBullets))->sDescription = mGrfTMgr->GetDescription(nDIndex - 1);
 					//}else
 					{
-						pActualBullets[nIndex]->nIndexDefault  = (sal_uInt16)0xFFFF;
+						pActualBullets[nIndex]->nIndexDefault = (sal_uInt16)0xFFFF;
 						String aStrFromRES = String(SVX_RESSTR( RID_SVXSTR_NUMBULLET_CUSTOM_BULLET_DESCRIPTION));
 						String aReplace = String::CreateFromAscii("%LIST_NUM");
 						String sNUM = String::CreateFromInt32( nIndex + 1 );
@@ -1292,12 +1295,12 @@ sal_Bool MixBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_
 				String aEmptyStr;
 				aFmt.SetPrefix( aEmptyStr );					
 				aFmt.SetSuffix( aEmptyStr );
-	            if (isResetSize) aFmt.SetBulletRelSize(45);
+				if (isResetSize) aFmt.SetBulletRelSize(45);
 				aNum.SetLevel(i, aFmt);
 			}
 			nMask <<= 1;
 		}
-	}else if (  pCurrentBullets->eType == eNBType::GRAPHICBULLETS )
+	}else if ( pCurrentBullets->eType == eNBType::GRAPHICBULLETS )
 	{
 		String sGrfName;
 		GrfBulDataRelation* pEntry = (GrfBulDataRelation*) (pCurrentBullets->pBullets);
@@ -1320,8 +1323,8 @@ sal_Bool MixBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_
 				if ( pCurrentBullets->nIndexDefault == (sal_uInt16)0xFFFF && pEntry->pGrfObj )
 				{
 					Size aSize = pEntry->aSize;
-			        sal_Int16 eOrient = text::VertOrientation::LINE_CENTER;
-  					if (!isResetSize && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
+					sal_Int16 eOrient = text::VertOrientation::LINE_CENTER;
+					if (!isResetSize && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
 					else {
 						if (aSize.Width()==0 && aSize.Height()==0) {
 							aSize = SvxNumberFormat::GetGraphicSizeMM100( pEntry->pGrfObj );
@@ -1337,7 +1340,7 @@ sal_Bool MixBulletsTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_
 					{
 								Size aSize = pEntry->aSize;
 								sal_Int16 eOrient = text::VertOrientation::LINE_CENTER;
-								if (!isResetSize  && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
+								if (!isResetSize && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
 								else {
 									if (aSize.Width()==0 && aSize.Height()==0) {
 							            aSize = SvxNumberFormat::GetGraphicSizeMM100(&aGraphic);
@@ -1462,7 +1465,7 @@ void NumberingTypeMgr::Init()
 	if(xDefNum.is())
 	{
 		Sequence< Sequence< PropertyValue > > aNumberings;
-        	LanguageType eLang = Application::GetSettings().GetLanguage();
+			LanguageType eLang = Application::GetSettings().GetLanguage();
 		Locale aLocale = SvxCreateLocale(eLang);
 		try
 		{
@@ -1512,7 +1515,7 @@ void NumberingTypeMgr::Init()
 					aStrFromRES.SearchAndReplace(aReplace,sText);
 					pNumEntry->sDescription = aStrFromRES;
             	}
-	    //End modification
+		// End modification
 
 				//pNumEntry->sDescription = SVX_RESSTR( RID_SVXSTR_SINGLENUM_DESCRIPTION_0 + i );
 				pNumberSettingsArr->Insert(pNumEntry, pNumberSettingsArr->Count());
@@ -1538,8 +1541,8 @@ sal_uInt16 NumberingTypeMgr::GetNBOIndexForNumRule(SvxNumRule& aNum,sal_uInt16 m
 	String sPreFix = aFmt.GetPrefix();
 	String sSuffix = aFmt.GetSuffix();
 	String sEmpty;
-    	sal_Int16 eNumType = aFmt.GetNumberingType();
-       
+		sal_Int16 eNumType = aFmt.GetNumberingType();
+
 	sal_uInt16 nCount = pNumberSettingsArr->Count();
 	for(sal_uInt16 i = nFromIndex; i < nCount; i++)
 	{
@@ -2010,13 +2013,13 @@ sal_Bool OutlineTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uIn
 
 			aFmt.SetBulletChar(cChar);
 			aFmt.SetCharFmtName( sBulletCharFmtName );
-            if (isResetSize) aFmt.SetBulletRelSize(45);
+			if (isResetSize) aFmt.SetBulletRelSize(45);
 		}else if ((aFmt.GetNumberingType()&(~LINK_TOKEN)) == SVX_NUM_BITMAP ) {
 			if (pLevelSettings->pBrushItem) {
 					const Graphic* pGrf = pLevelSettings->pBrushItem->GetGraphic();;
 					Size aSize = pLevelSettings->aSize;
 					sal_Int16 eOrient = text::VertOrientation::LINE_CENTER;
-					if (!isResetSize  && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
+					if (!isResetSize && aFmt.GetGraphicSize()!=Size(0,0)) aSize=aFmt.GetGraphicSize();
 					else {
 						if (aSize.Width()==0 && aSize.Height()==0 && pGrf) {
 							aSize = SvxNumberFormat::GetGraphicSizeMM100( pGrf );
@@ -2030,7 +2033,7 @@ sal_Bool OutlineTypeMgr::ApplyNumRule(SvxNumRule& aNum,sal_uInt16 nIndex,sal_uIn
 			aFmt.SetIncludeUpperLevels(sal::static_int_cast< sal_uInt8 >(0 != nUpperLevelOrChar ? aNum.GetLevelCount() : 0));
 			aFmt.SetCharFmtName(sBulletCharFmtName);
               	if (isResetSize) aFmt.SetBulletRelSize(100);
-       	}
+		}
 		if(pNumSettingsArr->Count() > i) {
 			aFmt.SetLabelFollowedBy(pLevelSettings->eLabelFollowedBy);
 			aFmt.SetListtabPos(pLevelSettings->nTabValue);
@@ -2087,3 +2090,5 @@ sal_Bool OutlineTypeMgr::IsCustomized(sal_uInt16 nIndex)
 
 
 }}
+
+/* vim: set noet sw=4 ts=4: */
