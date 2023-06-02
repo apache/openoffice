@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
 <script:module xmlns:script="http://openoffice.org/2000/script" script:name="_Main" script:language="StarBasic">&apos; Set of Macros used for Help Authoring
-&apos; =====================================
-&apos; Version
-&apos; -------------------------------------
-&apos;
 
 &apos; #**************************************************************
-&apos; #  
+&apos; #
 &apos; #  Licensed to the Apache Software Foundation (ASF) under one
 &apos; #  or more contributor license agreements.  See the NOTICE file
 &apos; #  distributed with this work for additional information
@@ -15,19 +11,19 @@
 &apos; #  to you under the Apache License, Version 2.0 (the
 &apos; #  "License"); you may not use this file except in compliance
 &apos; #  with the License.  You may obtain a copy of the License at
-&apos; #  
+&apos; #
 &apos; #    http://www.apache.org/licenses/LICENSE-2.0
-&apos; #  
+&apos; #
 &apos; #  Unless required by applicable law or agreed to in writing,
 &apos; #  software distributed under the License is distributed on an
 &apos; #  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
 &apos; #  KIND, either express or implied.  See the License for the
 &apos; #  specific language governing permissions and limitations
 &apos; #  under the License.
-&apos; #  
+&apos; #
 &apos; #**************************************************************
 
-Global Const Version = &quot;v3.20100805&quot;
+Global Const Version = &quot;3.0.1&quot;
 
 Global Const strErr_NoHelpFile = &quot;Not a Help File&quot;
 
@@ -56,7 +52,7 @@ Sub SetMetaDataOnSave(Path as String)
 		Path = document.URL
 	End If
 
-	If not(IsSubDir(Path,sDocRoot)) Then &apos; doesn&apos;tr work when resaving the file since it contains the OLD url (before resave)
+	If not(IsSubDir(Path,sDocRoot)) Then &apos; doesn&apos;t work when resaving the file since it contains the OLD url (before resave)
 		msgbox(&quot;The File&quot;+chr(13)+Path+chr(13)+&quot;is outside of your Document Root&quot;+chr(13)+sDocRoot+chr(13)+chr(13)+&quot;You may want to adjust your document root settings and re-save the file.&quot;,48,&quot;Warning&quot;)
 	Else
 		Path = Right(Path,Len(Path)-Len(sDocRoot))
@@ -66,7 +62,7 @@ Sub SetMetaDataOnSave(Path as String)
 	document.DocumentInfo.SetUserFieldName(1,&quot;ID&quot;)
 &apos;	document.DocumentInfo.SetUserFieldName(2,&quot;Comment&quot;)
 	document.DocumentInfo.SetPropertyValue(&quot;Subject&quot;,Path)
-	
+
 
 End Sub
 
@@ -184,6 +180,6 @@ Sub CheckOnLoad
 End Sub
 
 Sub DisplayVersion
-	msgbox &quot;OpenOffice.org Help Authoring Framework&quot;+chr(13)+&quot;Version &quot;+Version,256
+	msgbox &quot;OpenOffice Help Authoring Framework&quot;+chr(13)+&quot;Version &quot;+Version,256
 End Sub
 </script:module>
