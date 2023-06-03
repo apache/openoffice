@@ -4813,7 +4813,7 @@ void SwHTMLParser::InsertSpacer()
 			// set the anchor and the alignment
 			SetAnchorAndAdjustment( eVertOri, eHoriOri, aFrmSet );
 
-			// and still the size of the frame
+			// also the size of the frame
 			Size aDfltSz( MINFLY, MINFLY );
 			Size aSpace( 0, 0 );
 			SfxItemSet aDummyItemSet( pDoc->GetAttrPool(),
@@ -4855,14 +4855,14 @@ void SwHTMLParser::InsertSpacer()
 				// change the lower paragraph spacing of the previous node,
 				// if possible
 
-				SetAttr();	// noch offene Absatz-Attribute setzen
+				SetAttr();	// Set more open paragraph attributes
 
 				pTxtNode = pDoc->GetNodes()[pPam->GetPoint()->nNode.GetIndex()-1]
 							   ->GetTxtNode();
 
 				// If the paragraph in front of it is not a txttenode, then now
 				// an empty paragraph is created which already creates a line height
-				// spacing is created.
+				// spacing
 				if( !pTxtNode )
 					nSize = nSize>HTML_PARSPACE ? nSize-HTML_PARSPACE : 0;
 			}
@@ -4997,7 +4997,7 @@ void SwHTMLParser::InsertLineBreak()
 	//     text flow
 	// 4.) otherwise a left aligned frame receives a right
 	//     "anchor only" text flow and right aligned frame receives a
-	//      left anchor only" text flow.
+	//      left "anchor only" text flow.
 	// 5.) if in a non-empty paragraph the text flow of a frame
 	//     is changed, a new paragraph is opened
 	// 6.) If the text flow is not changed by any frame, a 
