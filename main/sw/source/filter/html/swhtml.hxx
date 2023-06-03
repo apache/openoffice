@@ -202,8 +202,8 @@ class _HTMLAttrContext_SaveDoc;
 
 enum SwHTMLAppendMode {
 	 AM_NORMAL,// no paragraph spacing treatment
-	 AM_NOSPACE,// Set distance hard to 0cm
-	 AM_SPACE,// Set distance hard to 0.5cm
+	 AM_NOSPACE,// Force 0cm spacing
+	 AM_SPACE,// Force 0.5 cm spacing
 	 AM_SOFTNOSPACE,// Do not set distance but remember 0cm
 	 AM_NONE// no append at all
 };
@@ -234,7 +234,7 @@ class _HTMLAttrContext
 	sal_Bool	bULSpaceChanged : 1;// upper/lower edge changed?
 	sal_Bool	bDfltTxtFmtColl : 1;// nTxtFmtColl is only a default
 	sal_Bool	bSpansSection : 1;// The context spans a SwSection
-	sal_Bool	bPopStack : 1;// Unstack stack elements above.
+	sal_Bool	bPopStack : 1;// Delete the element above in the stack
 	sal_Bool	bFinishPREListingXMP : 1;
 	sal_Bool	bRestartPRE : 1;
 	sal_Bool	bRestartXMP : 1;
