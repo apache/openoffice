@@ -395,12 +395,12 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 				   // Bit 0-2: Font size (1-7)
 				   // Bit 15: Font color was set
 
-	_HTMLAttrs		aSetAttrTab;// "closed", not yet set Attr.
+	_HTMLAttrs		aSetAttrTab;// "closed" attribute, not set yet
 	_HTMLAttrs		aParaAttrs;// leading paragraph attributes
 	_HTMLAttrTable	aAttrTab;// "open" attributes
 	_HTMLAttrContexts aContexts;// the current attribute/token context
 	SwHTMLFrmFmts	aMoveFlyFrms;// Fly-Frames, der Anker wird verschoben
-	SvXub_StrLens	aMoveFlyCnts;// und die Content-Positionen
+	SvXub_StrLens	aMoveFlyCnts;// and the Content-Positions
 
 	SwApplet_Impl *pAppletImpl;// the current applet
 
@@ -419,7 +419,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	SdrObject		*pMarquee;// current marquee
 	SwField			*pField;// current field
 	ImageMap		*pImageMap;// current image map
-	ImageMaps		*pImageMaps;// all read image maps
+	ImageMaps		*pImageMaps;// all image maps read so far
 	SwHTMLFootEndNote_Impl *pFootEndNoteImpl;
 
 	Size 	aHTMLPageSize;// the page size of the HTML template
@@ -759,7 +759,7 @@ private:
 	void InsertCommentText( const sal_Char *pTag = 0 );
 	void InsertComment( const String& rName, const sal_Char *pTag = 0 );
 
-	// are there ::com::sun::star::text::bookmarks in the current paragraph?
+	// are there any ::com::sun::star::text::bookmarks in the current paragraph?
 	sal_Bool HasCurrentParaBookmarks( sal_Bool bIgnoreStack=sal_False ) const;
 
 
@@ -821,7 +821,7 @@ private:
 	void RegisterDrawObjectToTable( HTMLTable *pCurTable, SdrObject* pObj, sal_uInt8 nWidth );
 
 
-	// start a new shape
+	// start a new form
 	void NewForm( sal_Bool bAppend=sal_True );
 	void EndForm( sal_Bool bAppend=sal_True );
 
@@ -852,8 +852,7 @@ public:// is needed in tables
 	HTMLTableCnts *InsertTableContents( sal_Bool bHead );
 
 private:
-	// Create a section for the prefix of the table heading
-	// create
+	// Create a section for the temporary setting of the table heading
 	SwStartNode *InsertTempTableCaptionSection();
 
 	void BuildTableCell( HTMLTable *pTable, sal_Bool bReadOptions, sal_Bool bHead );
@@ -887,6 +886,9 @@ private:
 
 
 	// Remove an empty paragraph at the PaM position.
+	void StripTrailingPara();
+	
+	// Are there any visible Fly-Frames in the current paragraph?
 	sal_Bool HasCurrentParaFlys( sal_Bool bNoSurroundOnly = sal_False, sal_Bool bSurroundOnly = sal_False ) const;
 
 public:// is needed in tables
