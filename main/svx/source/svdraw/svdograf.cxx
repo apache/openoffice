@@ -819,10 +819,13 @@ sal_Bool SdrGrafObj::ImpUpdateGraphicLink( sal_Bool bAsynchron ) const
     sal_Bool bRet = sal_False;
     if( pGraphicLink )
 	{
-		if ( bAsynchron )
-			pGraphicLink->UpdateAsynchron();
-		else
-			pGraphicLink->DataChanged( ImpLoadLinkedGraphic( aFileName, aFilterName ) );
+        sfx2::LinkManager *linkMgr = pGraphicLink->GetLinkManager();
+        if ((linkMgr == NULL) || (linkMgr->GetUserAllowsLinkUpdate(NULL))) {
+            if ( bAsynchron )
+                pGraphicLink->UpdateAsynchron();
+            else
+                pGraphicLink->DataChanged( ImpLoadLinkedGraphic( aFileName, aFilterName ) );
+        } // else links shall not be updated
         bRet = sal_True;
     }
 	return bRet;

@@ -277,7 +277,9 @@ SdDrawDocument::SdDrawDocument(DocumentType eType, SfxObjectShell* pDrDocSh)
 
 	if (mpDocSh)
 	{
-		SetLinkManager( new sfx2::LinkManager(mpDocSh) );
+        sfx2::LinkManager *linkMgr = new sfx2::LinkManager(mpDocSh);
+        linkMgr->SetAutoAskUpdateAllLinks();
+		SetLinkManager( linkMgr );
 	}
 
 	sal_uLong nCntrl = rOutliner.GetControlWord();
