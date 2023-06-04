@@ -1623,6 +1623,7 @@ uno::Sequence< OUString > SAL_CALL SvxShapePolyPolygonBezier::getSupportedServic
 #ifndef _SFXDOCFILE_HXX
 #include <sfx2/docfile.hxx>
 #endif
+#include <sfx2/linkmgr.hxx>
 #include <sfx2/app.hxx>
 #include <sfx2/fcontnr.hxx>
 #endif
@@ -1718,7 +1719,14 @@ bool SvxGraphicObject::setPropertyValueImpl( const ::rtl::OUString& rName, const
 				const SfxFilter*	pSfxFilter = NULL;
 				SfxMedium			aSfxMedium( aURL, STREAM_READ | STREAM_SHARE_DENYNONE, sal_False );
 
-				SFX_APP()->GetFilterMatcher().GuessFilter( aSfxMedium, &pSfxFilter, SFX_FILTER_IMPORT, SFX_FILTER_NOTINSTALLED | SFX_FILTER_EXECUTABLE );
+                // SfxFilterMatcher::GuessFilter() may ``taste'' linked files, so we must be sure we are authorized to access them
+                sfx2::LinkManager *linkManager = NULL;
+                if (mpModel) {
+                    linkManager = mpModel->GetLinkManager();
+                }
+                if ((linkManager == NULL) || (linkManager->GetUserAllowsLinkUpdate(SFX_APP()->GetTopWindow()))) {
+                    SFX_APP()->GetFilterMatcher().GuessFilter( aSfxMedium, &pSfxFilter, SFX_FILTER_IMPORT, SFX_FILTER_NOTINSTALLED | SFX_FILTER_EXECUTABLE );
+                }
 
 				if( !pSfxFilter )
 				{
