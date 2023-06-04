@@ -33,6 +33,7 @@
 #include <svtools/soerr.hxx>
 #include <sfx2/progress.hxx>
 #include <sfx2/docfile.hxx>
+#include <sfx2/linkmgr.hxx>
 #include <sfx2/printer.hxx>
 #include <editeng/udlnitem.hxx>
 #include <editeng/colritem.hxx>
@@ -950,9 +951,11 @@ void SwNoTxtFrm::PaintPicture( OutputDevice* pOut, const SwRect &rGrfArea ) cons
 					!(aTmpSz = pGrfNd->GetTwipSize()).Width() ||
 					!aTmpSz.Height() || !pGrfNd->GetAutoFmtLvl() )
 				{
-                    // --> OD 2006-12-22 #i73788#
-                    pGrfNd->TriggerAsyncRetrieveInputStream();
-                    // <--
+                    if (pShell->GetDoc()->GetLinkManager().GetUserAllowsLinkUpdate(pShell->GetWin())) {
+                        // --> OD 2006-12-22 #i73788#
+                        pGrfNd->TriggerAsyncRetrieveInputStream();
+                        // <--
+                    }
 				}
                 String aTxt( pGrfNd->GetTitle() );
 				if ( !aTxt.Len() )
