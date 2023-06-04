@@ -801,17 +801,18 @@ private:
                                SvxCSS1PropertyInfo& rCSS1PropInfo,
                                sal_Bool bHidden=sal_False );
         ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape >  InsertControl( const ::com::sun::star::uno::Reference< ::com::sun::star::form::XFormComponent > & rFormComp,
-        const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rFCompPropSet,
-        const Size& rSize,
-        sal_Int16 eVertOri,
-        sal_Int16 eHoriOri,
-						SfxItemSet& rCSS1ItemSet,
-						SvxCSS1PropertyInfo& rCSS1PropInfo,
-						const SvxMacroTableDtor& rMacroTbl,
-						const SvStringsDtor& rUnoMacroTbl,
-						const SvStringsDtor& rUnoMacroParamTbl,
-						sal_Bool bSetPropSet = sal_True,
-						sal_Bool bHidden = sal_False );
+                                                                                              const ::com::sun::star::uno::Reference< ::com::sun::star::beans::XPropertySet > & rFCompPropSet,
+                                                                                              const Size& rSize,
+                                                                                              sal_Int16 eVertOri,
+                                                                                              sal_Int16 eHoriOri,
+	                                                                                      SfxItemSet& rCSS1ItemSet,
+                                                                                              SvxCSS1PropertyInfo& rCSS1PropInfo,
+	                                                                                      const SvxMacroTableDtor& rMacroTbl,
+	                                                                                      const SvStringsDtor& rUnoMacroTbl,
+	                                                                                      const SvStringsDtor& rUnoMacroParamTbl,
+                                                                                              sal_Bool bSetPropSet = sal_True,
+                                                                                              sal_Bool bHidden = sal_False );
+											      
 	void SetControlSize( const ::com::sun::star::uno::Reference< ::com::sun::star::drawing::XShape > & rShape, const Size& rTextSz,sal_Bool bMinWidth, sal_Bool bMinHeight, int nToken );
 	void SetPendingControlSize( int nToken );
 
