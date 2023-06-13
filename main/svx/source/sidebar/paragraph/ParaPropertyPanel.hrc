@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,24 +7,26 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
+
+
 
 #include "svx/dialogs.hrc"
 
-#define BT_SUBSTLEFT                                 1     
-#define BT_SUBSTCENTER                               2                  
-#define BT_SUBSTRIGHT                                3    
-#define BT_SUBSTJUSTIFY                              4   
+#define BT_SUBSTLEFT                                 1
+#define BT_SUBSTCENTER                               2
+#define BT_SUBSTRIGHT                                3
+#define BT_SUBSTJUSTIFY                              4
 #define BT_BTX_LINESP                                1
 #define BT_TBX_INDENT_INC                            1
 #define BT_TBX_INDENT_DEC                            2
@@ -37,9 +39,9 @@
 #define MF_BEFORE_INDENT						     2
 #define MF_AFTER_INDENT						         4
 #define MF_FL_INDENT							     6
-#define TBX_HORIZONTALALIGNMENT                      5    
+#define TBX_HORIZONTALALIGNMENT                      5
 #define IMG_INDENT_HANG								 15
-#define FT_INDENT                                    16 
+#define FT_INDENT                                    16
 #define TBX_INDENT_INC_DEC                           17
 #define FI_SPACE1								     18
 #define FI_SPACE2								     19
@@ -82,25 +84,21 @@
 #define TBI_UL_INC			    71
 #define TBI_UL_DEC			    72
 
-//for vertical alignment
+// for vertical alignment
 #define IID_VERT_TOP		1
 #define IID_VERT_CENTER		2
 #define IID_VERT_BOTTOM		3
 
-//for numbering and bullett
+// for numbering and bullet
 #define IID_BULLET			1
 #define IID_NUMBER			2
 //============================== popup bullet and numbering & back color =========================
 #define VS_VALUES			1
 #define IL_BULLET_BITMAPS	2
 #define CB_BULLET_MORE		4
-#define BMP_BULLET_MORE		5
-#define BMP_BULLET_MORE_H	6
 
 #define VS_NUMBERING		10
 #define CB_NUMBERING_MORE	12
-#define BMP_NUMERING_MORE	13
-#define BMP_NUMERING_MORE_H	14
 #define VS_FONT_COLOR		1
 #define STR_NOFILL			2
 
@@ -112,7 +110,7 @@
 
 #define FT_CUSTOM                          14
 #define FT_LINE_SPACING                    15
-#define FT_OF                              16 
+#define FT_OF                              16
 #define IMG_SPACING1                       18
 #define IMG_SPACING115                     19
 #define IMG_SPACING15                      20
@@ -139,8 +137,8 @@
 #define STR_LS_OF					       42
 
 //============================== Help ID ==============================
-#define HID_TBX_HORIZONTALALIGNMENT	"HID_TBX_HORIZONTALALIGNMENT" 
-#define HID_TBI_HOR_ALIGN_LEFT		"HID_TBI_HOR_ALIGN_LEFT" 
+#define HID_TBX_HORIZONTALALIGNMENT	"HID_TBX_HORIZONTALALIGNMENT"
+#define HID_TBI_HOR_ALIGN_LEFT		"HID_TBI_HOR_ALIGN_LEFT"
 #define HID_TBI_HOR_ALIGN_CENTER	"HID_TBI_HOR_ALIGN_CENTER"
 #define HID_TBI_HOR_ALIGN_RIGHT		"HID_TBI_HOR_ALIGN_RIGHT"
 #define HID_TBI_HOR_ALIGN_JUSTIFY	"HID_TBI_HOR_ALIGN_JUSTIFY"
@@ -150,9 +148,9 @@
 #define HID_TBI_VERT_ALIGN_CENTER	"HID_TBI_VERT_ALIGN_CENTER"
 #define HID_TBI_VERT_ALIGN_BOT		"HID_TBI_VERT_ALIGN_BOT"
 
-#define HID_TBX_INDENT "HID_TBX_INDENT" 
+#define HID_TBX_INDENT "HID_TBX_INDENT"
 #define HID_TBI_INDENT "HID_TBI_INDENT"
-//#define HID_TBX_LINESP 705263129 
+//#define HID_TBX_LINESP 705263129
 //#define HID_TBI_LINESP 705262617
 #define HID_TBX_GRSPACE "HID_TBX_GRSPACE"
 #define HID_TBI_GRSPACE "HID_TBI_GRSPACE"
