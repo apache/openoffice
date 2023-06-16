@@ -250,7 +250,7 @@ sal_uLong HTMLReader::Read( SwDoc &rDoc, const String& rBaseURL, SwPaM &rPam, co
 		sErr += ',';
 		sErr += String::CreateFromInt32((sal_Int32)xParser->GetLinePos());
 
-		// use Stream as transporter error nummber
+		// use Stream to carry the error number
 		nRet = *new StringErrorInfo( ERR_FORMAT_ROWCOL, sErr,
 									ERRCODE_BUTTON_OK | ERRCODE_MSG_ERROR );
 	}
@@ -414,7 +414,7 @@ SwHTMLParser::SwHTMLParser( SwDoc* pD, const SwPaM& rCrsr, SvStream& rIn,
 							sCmp.EqualsAscii( pMarkToFrame ) )
 						eJumpTo = JUMPTO_NONE;	// this is not valid!
 					else
-						// else it is h normal (Book)Mark
+						// else it is a normal (Book)Mark
 						nPos = STRING_LEN;
 				}
 				else
@@ -440,7 +440,7 @@ __EXPORT SwHTMLParser::~SwHTMLParser()
 	if( pDoc->GetDocShell() && nEventId )
 		Application::RemoveUserEvent( nEventId );
 
-	// DocumentDetected eventual deletes DocShells,
+	// DocumentDetected may delete DocShells,
 	// so requst it again
 	if( pDoc->GetDocShell() )
 	{
@@ -598,10 +598,9 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 
 	if( SVPAR_ERROR != eState && GetMedium() && !bViewCreated )
 	{
-		// returnen at first call, show Doc
-		// and wait for Timer Callback.
-		// At this point CallParser read only one character 
-		//and a SaveState(0) called.
+		// Return at first call, show Doc and wait for timer callback. 
+		// At this point, CallParser read only one character and called 
+		// SaveState(0)
 		eState = SVPAR_PENDING;
 		bViewCreated = sal_True;
 		pDoc->SetInLoadAsynchron( sal_True );
@@ -638,7 +637,7 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 		if( pPendStack && pPendStack->nToken )
 			NextToken( pPendStack->nToken );
 		ASSERT( !pPendStack,
-				"SwHTMLParser::Continue: a Pend-Stack exists again" );
+				"SwHTMLParser::Continue: there is still a Pend-Stack" );
 	}
 	else
 	{
@@ -700,7 +699,7 @@ void __EXPORT SwHTMLParser::Continue( int nToken )
 			pCSS1Parser->SetDelayedStyles();
 		}
 
-		// fix Start
+		// fix again Start
 		if( !IsNewDoc() && pSttNdIdx->GetIndex() )
 		{
 			SwTxtNode* pTxtNode = pSttNdIdx->GetNode().GetTxtNode();
@@ -750,8 +749,8 @@ if( pSttNdIdx->GetIndex()+1 == pPam->GetBound( sal_False ).nNode.GetIndex() )
 	{
 		if( nMissingImgMaps )
 		{
-			// some image map assigns are missing.
-			// maybe Image-Maps do exist now?
+			// some image maps were not assigned.
+			// Maybe their Image-Maps are already there?
 			ConnectImageMaps();
 		}
 
@@ -1070,8 +1069,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	{
 		if( bInFloatingFrame )
 		{
-			// <SCRIPT> is ignored here (by us), because it is also ignored in
-			// applets is ignored!
+			// <SCRIPT> is ignored here (by us), because it is also ignored in applets!
 			if( HTML_IFRAME_OFF == nToken )
 			{
 				bCallNextToken = sal_False;
@@ -1263,7 +1261,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		if( IsNewDoc() )
 		{
 			InsertBodyOptions();
-			// If there is a template for the first or right side,
+			// If there is a template for the first or right page,
 			// we set it here.
 			const SwPageDesc *pPageDesc = 0;
 			if( pCSS1Parser->IsSetFirstPageDesc() )
@@ -1526,7 +1524,7 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 	case HTML_DT_ON:
 		if( nOpenParaToken )
 			EndPara();
-		EndDefListItem( 0, sal_False );// <DD>/<DT> quit and set no preliminaries
+		EndDefListItem( 0, sal_False );// <DD>/<DT> quit and set no template
 		NewDefListItem( nToken );
 		break;
 
@@ -2001,8 +1999,8 @@ void __EXPORT SwHTMLParser::NextToken( int nToken )
 		break;
 
 	case HTML_UNKNOWNCONTROL_ON:
-	    // Integrate unkown tokens to the header,
-	    // exept token starts with '!'
+	        // In the header we must ignore the content of unknown tokens, 
+		// except for those starting with '!"
 		if( IsInHeader() && !IsReadPRE() && !aUnknownToken.Len() &&
 			sSaveToken.Len() && '!' != sSaveToken.GetChar(0) &&
 			'%' != sSaveToken.GetChar(0) )
@@ -2923,7 +2921,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 
 	ASSERT( ppHead, "no attribute list header found!" );
 
-	// remember the current psoition as the end position
+	// remember the current position as the end position
 	const SwNodeIndex* pEndIdx = &pPam->GetPoint()->nNode;
 	xub_StrLen nEndCnt = pPam->GetPoint()->nContent.GetIndex();
 
@@ -2936,7 +2934,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 
 		// Then we search for the attribute that was started immediately afterwards, which
 		// has not been finished yet either (otherwise it would not be
-		// more in the list
+		// any more in the list
 		pLast = *ppHead;
 		while( pLast && pLast->GetNext() != pAttr )
 			pLast = pLast->GetNext();
@@ -2944,7 +2942,7 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 		ASSERT( pLast, "Attribute not found in own list!" );
 
 		// Do not end the attribute at the PaM psoition, but there,
-		// where the attribute started after that???
+		// where the attribute started???
 		//pEndIdx = &pPrev->GetSttPara();
 		//nEndCnt = pPrev->GetSttCnt();
 	}
@@ -3050,8 +3048,8 @@ void SwHTMLParser::EndAttr( _HTMLAttr* pAttr, _HTMLAttr **ppDepAttr,
 	else
 	{
 		// Then do not insert, but delete. Through "fakeing" of
-		// templates by hard attributes, there may be other empty attributes in the
-		// empty attributes in the Prev list, which then must be set anyway.
+		// templates by hard attributes, there may be other empty attributes 
+		// in the Prev list, which then must be set anyway.
 		_HTMLAttr *pPrev = pAttr->GetPrev();
 		delete pAttr;
 
@@ -3103,7 +3101,7 @@ void SwHTMLParser::DeleteAttr( _HTMLAttr* pAttr )
 
 		// Then we search for the attribute that was started immediately afterwards, which
 		// has not been finished yet either (otherwise it would not be
-		// more in the list
+		// any more in the list
 		pLast = *ppHead;
 		while( pLast && pLast->GetNext() != pAttr )
 			pLast = pLast->GetNext();
@@ -3178,7 +3176,6 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 	SwNodeIndex nEndIdx( nSttIdx );
 
 	// terminate all attributes still open and span behind the table
-	// span again
 	_HTMLAttr** pTbl = (_HTMLAttr**)&aAttrTab;
 	_HTMLAttr** pSaveTbl = (_HTMLAttr**)&rNewAttrTab;
 	sal_Bool bSetAttr = sal_True;
@@ -3236,8 +3233,7 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 			else if( pPrev )
 			{
 				// If the attribute is not set before the table
-				// the Previous attribute must be set
-				// must be set anyway.
+				// the Previous attribute must be set anyway.
 				if( pNext )
 					pNext->InsertPrev( pPrev );
 				else
@@ -3247,8 +3243,7 @@ void SwHTMLParser::SplitAttrTab( _HTMLAttrTable& rNewAttrTab,
 				}
 			}
 
-			// reset the start of the attribute and the concatenations
-			// break
+			// reset the start of the attribute  and break the concatenations break
 			pAttr->Reset( nSttIdx, nSttCnt, pSaveTbl );
 
 			if( *pSaveTbl )
@@ -3567,7 +3562,7 @@ void SwHTMLParser::NewFontAttr( int nToken )
 
 	String aFace, aId, aStyle, aClass, aLang, aDir;
 	Color aColor;
-	sal_uLong nFontHeight = 0;	// real set up font hight
+	sal_uLong nFontHeight = 0;	// font height to be effectively set
 	sal_uInt16 nSize = 0;		// Font size in Netscape-Notation (1-7)
 	sal_Bool bColor = sal_False;
 
@@ -3635,8 +3630,7 @@ void SwHTMLParser::NewFontAttr( int nToken )
 		if( (nPoolId>=RES_POOLCOLL_HEADLINE1 &&
 			 nPoolId<=RES_POOLCOLL_HEADLINE6) )
 		{
-			// if the font size in the heading is not yet changed
-			// is not changed, take the one from the template.
+			// if the font size in the heading is not yet changed, take the one from the template.
 			if( nFontStHeadStart==aFontStack.Count() )
                 nFontSize = static_cast< sal_uInt16 >(6 - (nPoolId - RES_POOLCOLL_HEADLINE1));
 		}
@@ -3648,8 +3642,7 @@ void SwHTMLParser::NewFontAttr( int nToken )
 		else
 			nSize = ( nFontSize>1 ? nFontSize-1 : 1 );
 
-		// in headlines, the new font height will be taken from the
-		// from the templates.
+		// in headlines, the new font height will be taken templates.
 		if( nPoolId && nSize>=1 && nSize <=6 )
 			nFontHeight =
 				pCSS1Parser->GetTxtCollFromPool(
@@ -3661,8 +3654,8 @@ void SwHTMLParser::NewFontAttr( int nToken )
 	ASSERT( !nSize == !nFontHeight, "HTML-Font-Size != Font-Height" );
 
 	String aFontName, aStyleName;
-	FontFamily eFamily = FAMILY_DONTKNOW;	// Family and Pitch,
-	FontPitch ePitch = PITCH_DONTKNOW;		// in case not found
+	FontFamily eFamily = FAMILY_DONTKNOW; // Family and Pitch,
+	FontPitch ePitch = PITCH_DONTKNOW; // in case it is not found
 	rtl_TextEncoding eEnc = gsl_getSystemTextEncoding();
 
 	if( aFace.Len() && !pCSS1Parser->IsIgnoreFontFamily() )
@@ -3828,7 +3821,7 @@ void SwHTMLParser::NewPara()
 					 : new _HTMLAttrContext( HTML_PARABREAK_ON );
 
 	// parse styles (ignore Class. This only works as long as
-	// none of the CSS1 properties of the class need to be hard formatted!!!)
+	// none of the CSS1 properties of the class need to be forcibly formatted!!!)
 	if( HasStyleOptions( aStyle, aId, aEmptyStr, &aLang, &aDir ) )
 	{
 		SfxItemSet aItemSet( pDoc->GetAttrPool(), pCSS1Parser->GetWhichMap() );
