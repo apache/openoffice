@@ -380,7 +380,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	String		aBasicLib;
 	String		aBasicModule;
 	String		aScriptSource;// Content of the current script block
-	String		aScriptType;// Type of the read script (StarBasic/VB/JAVA)
+	String		aScriptType;// Type of the loaded script (StarBasic/VB/JAVA)
 	String		aScriptURL;// URL of a script
 	String		aStyleSource;// Contents of the current style sheet
 	String		aContents;// Text of the actual marquee, field, etc.
@@ -453,8 +453,7 @@ class SwHTMLParser : public SfxHTMLParser, public SwClient
 	sal_Bool bOldIsHTMLMode : 1;// Was it once an HTML document?
 
 	sal_Bool bDocInitialized : 1;// Document or shell were initialized
-                                     // Flag by double init by recursion
-                                     // to prevent.
+                                     // Flag used to avoid double initialization due to recursion
 	sal_Bool bViewCreated : 1;// the view was already created (asynchronous)
 	sal_Bool bSetCrsr : 1;// Set Crsr back to the beginning
 	sal_Bool bSetModEnabled : 1;
@@ -920,7 +919,7 @@ public:
                     SfxMedium* pMed = 0, sal_Bool bReadUTF8 = sal_False,
                     sal_Bool bIgnoreHTMLComments = sal_False );
 
-	virtual SvParserState CallParser();// Calling the parser
+	virtual SvParserState CallParser();// Call the parser
 
 
 	sal_uInt16 ToTwips( sal_uInt16 nPixel ) const;
