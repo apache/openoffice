@@ -1,5 +1,5 @@
 /**************************************************************
- * 
+ *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -7,20 +7,21 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
  * KIND, either express or implied.  See the License for the
  * specific language governing permissions and limitations
  * under the License.
- * 
+ *
  *************************************************************/
 
 
- // pragma ----------------------------------------------------------------
+
+// pragma ----------------------------------------------------------------
 
 #include <svtools/controldims.hrc>
 #include <cuires.hrc>
@@ -31,10 +32,10 @@
 #define MA_HALFBUTTON_WIDTH		7
 #define MA_BUTTON_WIDTH			(2 * MA_HALFBUTTON_WIDTH)
 #define MA_BUTTON_HEIGHT		(2 * MA_HALFBUTTON_WIDTH)
-#define BUTTON_SIZE				MAP_APPFONT( MA_BUTTON_WIDTH, MA_BUTTON_WIDTH )
-#define MA_MOVEBUT_GRACE_X      6
+#define BUTTON_SIZE				MAP_APPFONT ( MA_BUTTON_WIDTH, MA_BUTTON_WIDTH )
+#define MA_MOVEBUT_GRACE_X		6
 
-// height of first group         Text effects
+// height of first group		Text effects
 #define MA_EFFECTSGROUP_HEIGHT	(RSC_CD_FIXEDLINE_HEIGHT + \
 								 RSC_SP_FLGR_INNERBORDER_LEFT + \
 /* direction buttons */			 3*MA_BUTTON_HEIGHT + \
@@ -64,59 +65,59 @@
 #define MA_EFFECTLIST_WIDTH				95
 
 
- // RID_SVXPAGE_TEXTANIMATION ---------------------------------------------
+// RID_SVXPAGE_TEXTANIMATION ---------------------------------------------
 TabPage RID_SVXPAGE_TEXTANIMATION
 {
-    HelpID = "cui:TabPage:RID_SVXPAGE_TEXTANIMATION";
+	HelpID = "cui:TabPage:RID_SVXPAGE_TEXTANIMATION" ;
 	SVLook = TRUE ;
 	Hide = TRUE ;
-	Size = MAP_APPFONT ( MA_TOTAL_WIDTH , 185 ) ;
+	Size = MAP_APPFONT ( MA_TOTAL_WIDTH, 185 ) ;
 	Text [ en-US ] = "Animation" ;
 	FixedLine FL_EFFECT
 	{
-		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT, RSC_SP_TBPG_INNERBORDER_TOP  ) ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT, RSC_SP_TBPG_INNERBORDER_TOP ) ;
 		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
 		Text [ en-US ] = "Text animation effects" ;
 	};
 #define MA_CURR_Y		RSC_SP_TBPG_INNERBORDER_TOP + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP + MA_BUTTON_HEIGHT
 	FixedText FT_EFFECTS
 	{
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y + 3 ) ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y + 3 ) ;
 		Size = MAP_APPFONT ( MA_EFFECTLIST_X - RSC_SP_CTRL_DESC_X - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_FLGR_INNERBORDER_LEFT,
 							 RSC_CD_FIXEDTEXT_HEIGHT ) ;
-        Text [ en-US ] = "E~ffect" ;
+		Text [ en-US ] = "E~ffect" ;
 	};
 	ListBox LB_EFFECT
 	{
-	    HelpID = "cui:ListBox:RID_SVXPAGE_TEXTANIMATION:LB_EFFECT";
+		HelpID = "cui:ListBox:RID_SVXPAGE_TEXTANIMATION:LB_EFFECT" ;
 		Border = TRUE ;
 		Pos = MAP_APPFONT ( MA_EFFECTLIST_X, MA_CURR_Y + 1 ) ;
-		Size = MAP_APPFONT ( MA_EFFECTLIST_WIDTH , 57 ) ;
+		Size = MAP_APPFONT ( MA_EFFECTLIST_WIDTH, 57 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
 		StringList [ en-US ] =
 		{
-			< "No Effect" ; Default ; > ;
-			< "Blink" ; Default ; > ;
-			< "Scroll Through" ; Default ; > ;
-			< "Scroll Back and Forth" ; Default ; > ;
-			< "Scroll In" ; Default ; > ;
+			< "No Effect" ; Default ;				> ;
+			< "Blink" ; Default ;					> ;
+			< "Scroll Through" ; Default ;			> ;
+			< "Scroll Back and Forth" ; Default ;	> ;
+			< "Scroll In" ; Default ;				> ;
 		};
 	};
 	FixedText FT_DIRECTION
 	{
-        Pos = MAP_APPFONT ( MA_EFFECTLIST_X + MA_EFFECTLIST_WIDTH + RSC_SP_CTRL_X, MA_CURR_Y + 3 ) ;
+		Pos = MAP_APPFONT ( MA_EFFECTLIST_X + MA_EFFECTLIST_WIDTH + RSC_SP_CTRL_X, MA_CURR_Y + 3 ) ;
 		Size = MAP_APPFONT ( MA_TOTAL_WIDTH -
-                             (MA_MOVEBUT_GRACE_X + 3*MA_BUTTON_WIDTH + RSC_SP_TBPG_INNERBORDER_RIGHT + RSC_SP_FLGR_INNERBORDER_RIGHT) -
+							 (MA_MOVEBUT_GRACE_X + 3*MA_BUTTON_WIDTH + RSC_SP_TBPG_INNERBORDER_RIGHT + RSC_SP_FLGR_INNERBORDER_RIGHT) -
 							 (MA_EFFECTLIST_X + MA_EFFECTLIST_WIDTH + RSC_SP_CTRL_X + RSC_SP_CTRL_DESC_X + 6),
 							 RSC_CD_FIXEDTEXT_HEIGHT ) ;
-		Right = TRUE;
-        Text [ en-US ] = "Direction" ;
+		Right = TRUE ;
+		Text [ en-US ] = "Direction" ;
 	};
 	ImageButton BTN_UP
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_UP";
-        Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 2*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
+		HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_UP" ;
+		Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 2*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
 							RSC_SP_TBPG_INNERBORDER_TOP + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP );
 		Size = BUTTON_SIZE ;
 		Symbol = IMAGEBUTTON_ARROW_UP ;
@@ -124,8 +125,8 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 	};
 	ImageButton BTN_LEFT
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_LEFT";
-        Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 3*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
+		HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_LEFT" ;
+		Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 3*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
 							RSC_SP_TBPG_INNERBORDER_TOP + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP + MA_BUTTON_HEIGHT);
 		Size = BUTTON_SIZE ;
 		Symbol = IMAGEBUTTON_ARROW_LEFT ;
@@ -133,8 +134,8 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 	};
 	ImageButton BTN_RIGHT
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_RIGHT";
-        Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
+		HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_RIGHT" ;
+		Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
 							RSC_SP_TBPG_INNERBORDER_TOP + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP + MA_BUTTON_HEIGHT ) ;
 		Size = BUTTON_SIZE ;
 		Symbol = IMAGEBUTTON_ARROW_RIGHT ;
@@ -142,8 +143,8 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 	};
 	ImageButton BTN_DOWN
 	{
-	    HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_DOWN";
-        Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 2*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
+		HelpID = "cui:ImageButton:RID_SVXPAGE_TEXTANIMATION:BTN_DOWN" ;
+		Pos = MAP_APPFONT ( MA_TOTAL_WIDTH - MA_MOVEBUT_GRACE_X - 2*MA_BUTTON_WIDTH - RSC_SP_TBPG_INNERBORDER_RIGHT - RSC_SP_FLGR_INNERBORDER_RIGHT,
 							RSC_SP_TBPG_INNERBORDER_TOP + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP + 2*MA_BUTTON_HEIGHT ) ;
 		Size = BUTTON_SIZE ;
 		Symbol = IMAGEBUTTON_ARROW_DOWN ;
@@ -152,52 +153,52 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 
 	FixedLine FL_PROPERTIES
 	{
-		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT , RSC_SP_TBPG_INNERBORDER_TOP + MA_EFFECTSGROUP_HEIGHT  ) ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT, RSC_SP_TBPG_INNERBORDER_TOP + MA_EFFECTSGROUP_HEIGHT ) ;
 		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT, RSC_CD_FIXEDLINE_HEIGHT ) ;
 		Text [ en-US ] = "Properties" ;
 	};
 #define MA_CURR_Y2		RSC_SP_TBPG_INNERBORDER_TOP + MA_EFFECTSGROUP_HEIGHT + RSC_CD_FIXEDLINE_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP
 	TriStateBox TSB_START_INSIDE
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_START_INSIDE";
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_START_INSIDE" ;
 		TabStop = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y2 ) ;
-        Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12, RSC_CD_CHECKBOX_HEIGHT );
+		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12, RSC_CD_CHECKBOX_HEIGHT );
 		Text [ en-US ] = "S~tart inside" ;
 	};
 #define MA_CURR_Y3		MA_CURR_Y2 + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_GROUP_Y
 	TriStateBox TSB_STOP_INSIDE
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_STOP_INSIDE";
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_STOP_INSIDE" ;
 		TabStop = TRUE ;
 		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y3 ) ;
-        Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12, RSC_CD_CHECKBOX_HEIGHT );
-        Text [ en-US ] = "Text visible when exiting" ;
+		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12, RSC_CD_CHECKBOX_HEIGHT );
+		Text [ en-US ] = "Text visible when exiting" ;
 	};
 #define MA_CURR_Y4		MA_CURR_Y3 + RSC_CD_CHECKBOX_HEIGHT + RSC_SP_CTRL_GROUP_Y
 	FixedText FT_COUNT
 	{
 		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y4 ) ;
-        Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
+		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
 							 RSC_CD_FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "Animation cycles" ;
 	};
 #define MA_CURR_Y5		MA_CURR_Y4 + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP
 	TriStateBox TSB_ENDLESS
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_ENDLESS";
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_ENDLESS" ;
 		TabStop = TRUE ;
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9 , MA_CURR_Y5 + 2 ) ;
-		Size = MAP_APPFONT ( 71 , RSC_CD_CHECKBOX_HEIGHT ) ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9, MA_CURR_Y5 + 2 ) ;
+		Size = MAP_APPFONT ( 71, RSC_CD_CHECKBOX_HEIGHT ) ;
 		Text [ en-US ] = "~Continuous" ;
 	};
 	NumericField NUM_FLD_COUNT
 	{
-	    HelpID = "cui:NumericField:RID_SVXPAGE_TEXTANIMATION:NUM_FLD_COUNT";
+		HelpID = "cui:NumericField:RID_SVXPAGE_TEXTANIMATION:NUM_FLD_COUNT" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
 							MA_CURR_Y5 ) ;
-		Size = MAP_APPFONT ( 50 , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Size = MAP_APPFONT ( 50, RSC_CD_TEXTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -208,26 +209,26 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 	FixedText FT_AMOUNT
 	{
 		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y6 ) ;
-        Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
+		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
 							 RSC_CD_FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "Increment" ;
 	};
 #define MA_CURR_Y7		MA_CURR_Y6 + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP
 	TriStateBox TSB_PIXEL
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_PIXEL";
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_PIXEL" ;
 		TabStop = TRUE ;
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9 , MA_CURR_Y7 + 2 ) ;
-		Size = MAP_APPFONT ( 71 , RSC_CD_CHECKBOX_HEIGHT ) ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9, MA_CURR_Y7 + 2 ) ;
+		Size = MAP_APPFONT ( 71, RSC_CD_CHECKBOX_HEIGHT ) ;
 		Text [ en-US ] = "~Pixels" ;
 	};
 	MetricField MTR_FLD_AMOUNT
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_AMOUNT";
+		HelpID = "cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_AMOUNT" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
 							MA_CURR_Y7 ) ;
-		Size = MAP_APPFONT ( 50 , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Size = MAP_APPFONT ( 50, RSC_CD_TEXTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -243,26 +244,26 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 	FixedText FT_DELAY
 	{
 		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT, MA_CURR_Y8 ) ;
-        Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
+		Size = MAP_APPFONT ( MA_TOTAL_WIDTH - RSC_SP_TBPG_INNERBORDER_LEFT - RSC_SP_TBPG_INNERBORDER_RIGHT - 12,
 							 RSC_CD_FIXEDTEXT_HEIGHT ) ;
 		Text [ en-US ] = "Delay" ;
 	};
 #define MA_CURR_Y9		MA_CURR_Y8 + RSC_CD_FIXEDTEXT_HEIGHT + RSC_SP_FLGR_INNERBORDER_TOP
 	TriStateBox TSB_AUTO
 	{
-	    HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_AUTO";
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9 , MA_CURR_Y9 + 2 ) ;
-		Size = MAP_APPFONT ( 71 , RSC_CD_CHECKBOX_HEIGHT ) ;
+		HelpID = "cui:TriStateBox:RID_SVXPAGE_TEXTANIMATION:TSB_AUTO" ;
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 9, MA_CURR_Y9 + 2 ) ;
+		Size = MAP_APPFONT ( 71, RSC_CD_CHECKBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		Text [ en-US ] = "~Automatic" ;
 	};
 	MetricField MTR_FLD_DELAY
 	{
-	    HelpID = "cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_DELAY";
+		HelpID = "cui:MetricField:RID_SVXPAGE_TEXTANIMATION:MTR_FLD_DELAY" ;
 		Border = TRUE ;
-        Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
+		Pos = MAP_APPFONT ( RSC_SP_TBPG_INNERBORDER_LEFT + RSC_SP_FLGR_INNERBORDER_LEFT + 80 + RSC_SP_CTRL_GROUP_X,
 							MA_CURR_Y9 ) ;
-		Size = MAP_APPFONT ( 50 , RSC_CD_TEXTBOX_HEIGHT ) ;
+		Size = MAP_APPFONT ( 50, RSC_CD_TEXTBOX_HEIGHT ) ;
 		TabStop = TRUE ;
 		Repeat = TRUE ;
 		Spin = TRUE ;
@@ -274,19 +275,19 @@ TabPage RID_SVXPAGE_TEXTANIMATION
 		Last = 30000 ;
 	};
 };
- // RID_SVXDLG_TEXT -------------------------------------------------------
+// RID_SVXDLG_TEXT -------------------------------------------------------
 TabDialog RID_SVXDLG_TEXT
 {
 	OutputSize = TRUE ;
 	SVLook = TRUE ;
-	Size = MAP_APPFONT ( 289 , 185 + 46 ) ;
+	Size = MAP_APPFONT ( 289, 185 + 46 ) ;
 	Text [ en-US ] = "Text" ;
 	Moveable = TRUE ;
 	TabControl 1
 	{
 		OutputSize = TRUE ;
-		Pos = MAP_APPFONT ( 3 , 3 ) ;
-		Size = MAP_APPFONT ( 260 , 185 ) ;
+		Pos = MAP_APPFONT ( 3, 3 ) ;
+		Size = MAP_APPFONT ( 260, 185 ) ;
 		PageList =
 		{
 			PageItem
@@ -304,27 +305,5 @@ TabDialog RID_SVXDLG_TEXT
 		};
 	};
 };
- // ******************************************************************* EOF
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// ******************************************************************* EOF
