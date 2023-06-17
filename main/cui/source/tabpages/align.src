@@ -30,8 +30,6 @@
 #define MASKCOLOR \
 	MaskColor = Color { Red = 0xFFFF ; Green = 0x0000 ; Blue = 0xFFFF ; }
 
-// define ---------------------------------------------------------------
-#define IL_LOCK_MCOL Color { Red=0xFFFF; Green=0x0000; Blue=0xFFFF; }
 // RID_SVXPAGE_ALIGNMENT -------------------------------------------------
 TabPage RID_SVXPAGE_ALIGNMENT
 {
@@ -99,7 +97,7 @@ TabPage RID_SVXPAGE_ALIGNMENT
 	{
 		HelpID = "cui:ListBox:RID_SVXPAGE_ALIGNMENT:LB_VERALIGN" ;
 		Border = TRUE ;
-		Pos = MAP_APPFONT ( 160, 25  ) ;
+		Pos = MAP_APPFONT ( 160, 25 ) ;
 		Size = MAP_APPFONT ( 88, 60 ) ;
 		TabStop = TRUE ;
 		DropDown = TRUE ;
@@ -217,7 +215,7 @@ TabPage RID_SVXPAGE_ALIGNMENT
 	ImageList IL_LOCK_BMPS
 	{
 		Prefix = "lo" ;
-		MaskColor = IL_LOCK_MCOL ;
+		MaskColor = MASKCOLOR ;
 		IdList =
 		{
 			IID_BOTTOMLOCK ;
@@ -229,7 +227,7 @@ TabPage RID_SVXPAGE_ALIGNMENT
 	ImageList IL_LOCK_BMPS_HC
 	{
 		Prefix = "loh" ;
-		MaskColor = IL_LOCK_MCOL ;
+		MaskColor = MASKCOLOR ;
 		IdList =
 		{
 			IID_BOTTOMLOCK ;
