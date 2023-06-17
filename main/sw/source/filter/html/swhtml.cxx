@@ -4064,7 +4064,7 @@ void SwHTMLParser::NewTxtFmtColl( int nToken, sal_uInt16 nColl )
 	case HTML_LISTING_ON:
 	case HTML_XMP_ON:
 		// These two tags are now mapped to the PRE template.
-		// In the case that a CLASS is specified, we delete it
+		// In the case that a CLASS is specified, we delete
 		// it so we don't get the CLASS of the PRE template.
 		aClass = aEmptyStr;
 	case HTML_BLOCKQUOTE_ON:
@@ -4144,7 +4144,7 @@ void SwHTMLParser::EndTxtFmtColl( int nToken )
 	// get the current context from the stack
     _HTMLAttrContext *pCntxt = PopContext( static_cast< sal_uInt16 >(nToken & ~1) );
 
-	// and close end Attribute
+	// and set end attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
@@ -4226,7 +4226,7 @@ void SwHTMLParser::NewDefList()
 	short nIndent=0;
 	GetMarginsFromContext( nLeft, nRight, nIndent );
 
-	// The intend, which already results from a DL-, corresponds to that
+	// The indent, which already results from a DL-, corresponds to that
 	// of a DT on the current level, and that corresponds to that of a
 	// DD on the level before. So for a level >=2 a DD distance must be added
 	if( !bInDD && nDefListDeep > 1 )
@@ -4276,7 +4276,7 @@ void SwHTMLParser::EndDefList()
 	// get the current context from the stack
 	_HTMLAttrContext *pCntxt = PopContext( HTML_DEFLIST_ON );
 
-	// and close end Attribute
+	// and set end Attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
@@ -4359,7 +4359,7 @@ void SwHTMLParser::EndDefListItem( int nToken, sal_Bool bSetColl,
 		}
 	}
 
-	// and close end Attribute
+	// and set end Attribute
 	if( pCntxt )
 	{
 		EndContext( pCntxt );
@@ -4381,7 +4381,7 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 	//                  without text flow
 	// bSurroundOnly:   The paragraph contains at least one frame
 	//                  with a text flow but none without a text flow
-	// else:            the paragraph contains some frame
+	// else:            the paragraph contains at least one frame
 	SwNodeIndex& rNodeIdx = pPam->GetPoint()->nNode;
 
 	const SwSpzFrmFmts& rFrmFmtTbl = *pDoc->GetSpzFrmFmts();
@@ -4394,9 +4394,9 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 		// A frame has been found if
 		// - it is paragraph-bound, and
 		// - it is anchored in the current paragraph, and
-		// - every paragraph-bound frame counts, or
-		// - (only frames or text flow counts) the frame has no
-		//   text flow
+		//    - every paragraph-bound frame counts, or
+		//    - (only frames or text flow counts) the frame has no
+		//      text flow
         SwPosition const*const pAPos = pAnchor->GetCntntAnchor();
         if (pAPos &&
             ((FLY_AT_PARA == pAnchor->GetAnchorId()) ||
@@ -4412,8 +4412,7 @@ sal_Bool SwHTMLParser::HasCurrentParaFlys( sal_Bool bNoSurroundOnly,
 			{
 				// fix #42282#: If frames with circulation are wanted,
 				// do not consider any with circulation either. These are
-				// are (still) HIDDEN controls, and it's better not to // avoid them.
-				// better not to avoid them.
+				// are (still) HIDDEN controls, and it's better not to avoid them.
 				SwSurround eSurround = pFmt->GetSurround().GetSurround();
 				if( bNoSurroundOnly )
 				{
@@ -4463,10 +4462,10 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 	const String& rTopClass = pContext ? pContext->GetClass() : (const String&) aEmptyStr;
 	sal_uInt16 nDfltColl = RES_POOLCOLL_TEXT;
 
-	sal_Bool bInPRE=sal_False;							// some context info
+	sal_Bool bInPRE=sal_False; // some context info
 
-	sal_uInt16 nLeftMargin = 0, nRightMargin = 0;	    // the margins and
-	short nFirstLineIndent = 0;					        // Intend
+	sal_uInt16 nLeftMargin = 0, nRightMargin = 0; // the margins and
+	short nFirstLineIndent = 0; // Indent
 	sal_uInt16 i;
 
 	for( i = nContextStAttrMin; i < aContexts.Count(); i++ )
@@ -4508,11 +4507,9 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 			{
 				// if now another template should be set than
 				// previously, the previous template must be replaced by hard attributes
-				// must be replaced
 				if( pCollToSet )
 				{
-					// the attributes set by the previous template
-					// insert hard
+					// Force the attributes set by the previous template
 					if( !pItemSet )
 						pItemSet = new SfxItemSet( pCollToSet->GetAttrSet() );
 					else
@@ -4532,7 +4529,7 @@ void SwHTMLParser::SetTxtCollAttrs( _HTMLAttrContext *pContext )
 			}
 			else
 			{
-				// set attributes hard
+				// Force attributes
 				if( !pItemSet )
 					pItemSet = new SfxItemSet( pNewColl->GetAttrSet() );
 				else
@@ -4709,7 +4706,7 @@ void SwHTMLParser::NewCharFmt( int nToken )
 	// set up a new context
     _HTMLAttrContext *pCntxt = new _HTMLAttrContext( static_cast< sal_uInt16 >(nToken) );
 
-	// Set the template und im Kontext merken
+	// Set the template and store it in the context
     SwCharFmt* pCFmt = pCSS1Parser->GetChrFmt( static_cast< sal_uInt16 >(nToken), aClass );
 	ASSERT( pCFmt, "no character template found for token" );
 
